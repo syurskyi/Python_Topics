@@ -25,9 +25,9 @@ c_ Ui_MainWindow(object):
         horizontalLayout_3.aW..(lineEdit)
         pushButton _ ?W...?PB..(centralwidget)
         pushButton.sT..("")
-        icon _ ?G...QIcon()
-        icon.addPixmap(?G...?P..("images/arrow-circle-225.png"), ?G...QIcon.Normal, ?G...QIcon.Off)
-        pushButton.setIcon(icon)
+        icon _ ?G...?I..
+        icon.aP..(?G...?P..("images/arrow-circle-225.png"), ?G...?I...Normal, ?G...?I...Off)
+        pushButton.sI..(icon)
         pushButton.setObjectName("pushButton")
         horizontalLayout_3.aW..(pushButton)
         verticalLayout.aL..(horizontalLayout_3)
@@ -164,7 +164,7 @@ c_ Ui_MainWindow(object):
         label_5 _ ?W...QLabel(centralwidget)
         font _ ?G...?F..()
         font.setBold( st.
-        font.setWeight(75)
+        font.sW..(75)
         label_5.sF..(font)
         label_5.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         label_5.setObjectName("label_5")
@@ -196,7 +196,7 @@ c_ Ui_MainWindow(object):
         label _ ?W...QLabel(centralwidget)
         font _ ?G...?F..()
         font.setBold( st.
-        font.setWeight(75)
+        font.sW..(75)
         label.sF..(font)
         label.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         label.setObjectName("label")
@@ -232,7 +232,7 @@ c_ Ui_MainWindow(object):
         label_10 _ ?W...QLabel(centralwidget)
         font _ ?G...?F..()
         font.setBold( st.
-        font.setWeight(75)
+        font.sW..(75)
         label_10.sF..(font)
         label_10.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         label_10.setObjectName("label_10")

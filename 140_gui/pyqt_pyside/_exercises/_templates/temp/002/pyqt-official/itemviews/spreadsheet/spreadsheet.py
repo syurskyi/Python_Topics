@@ -41,7 +41,7 @@
 
 
 ____ ?.?C.. ______ ?D.., QPoint, __
-____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, ?P..
+____ ?.?G.. ______ ?C.., ?I.., ?KS.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         ?CB, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
         QLineEdit, ?MW.., ?MB.., ?PB.., ?TW..,
@@ -118,7 +118,7 @@ c_ SpreadSheet ?MW..
         fontAction.sS..(__.CTRL | __.Key_F)
         fontAction.t__.c..(selectFont)
 
-        colorAction _ ?A..(QIcon(?P..(16, 16)), "Background &Color...", self)
+        colorAction _ ?A..(?I..(?P..(16, 16)), "Background &Color...", self)
         colorAction.t__.c..(selectColor)
 
         clearAction _ ?A..("Clear", self)
@@ -130,7 +130,7 @@ c_ SpreadSheet ?MW..
 
         exitAction _ ?A..("E&xit", self)
         exitAction.sS..(?KS...Quit)
-        exitAction.t__.c..(?A...instance().quit)
+        exitAction.t__.c..(?A...i.. .quit)
 
         printAction _ ?A..("&Print", self)
         printAction.sS..(?KS...Print)
@@ -194,14 +194,14 @@ c_ SpreadSheet ?MW..
         painter _ QPainter(pixmap)
         painter.fillRect(0, 0, 16, 16, color)
         lighter _ color.lighter()
-        painter.setPen(lighter)
+        painter.sP..(lighter)
         # light frame
         painter.drawPolyline(QPoint(0, 15), QPoint(0, 0), QPoint(15, 0))
-        painter.setPen(color.darker())
+        painter.sP..(color.darker())
         # dark frame
         painter.drawPolyline(QPoint(1, 15), QPoint(15, 15), QPoint(15, 1))
         painter.end()
-        colorAction.setIcon(QIcon(pixmap))
+        colorAction.sI..(?I..(pixmap))
 
     ___ updateLineEdit  item):
         __ item !_ table.currentItem
@@ -537,7 +537,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     sheet _ SpreadSheet(10, 6)
-    sheet.setWindowIcon(QIcon(?P..(":/images/interview.png")))
+    sheet.setWindowIcon(?I..(?P..(":/images/interview.png")))
     sheet.r..(640, 420)
     sheet.s..
     ___.e.. ?.e..

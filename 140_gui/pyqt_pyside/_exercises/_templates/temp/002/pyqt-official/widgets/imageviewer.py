@@ -82,7 +82,7 @@ c_ ImageViewer ?MW..
                         "Cannot load %s." % fileName)
                 r_
 
-            imageLabel.setPixmap(?P...fromImage(image))
+            imageLabel.sP..(?P...fromImage(image))
             scaleFactor _ 1.0
 
             printAct.sE..( st.
@@ -162,7 +162,7 @@ c_ ImageViewer ?MW..
         aboutAct _ ?A..("&About", self, triggered_self.about)
 
         aboutQtAct _ ?A..("About &Qt", self,
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
         fileMenu _ QMenu("&File", self)

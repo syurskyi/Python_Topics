@@ -25,9 +25,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ random
 
-____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPointF, QRectF,
+____ ?.?C.. ______ (pP.., pS.., pyqtSlot, QPointF, QRectF,
         ?S.., QSizeF, __, ?T..)
-____ ?.?G.. ______ ?B.., ?C.., QPainter, QPen, QRadialGradient
+____ ?.?G.. ______ ?B.., ?C.., QPainter, ?P.., QRadialGradient
 ____ ?.?W.. ______ ?A.., ?W..
 
 
@@ -56,7 +56,7 @@ c_ BaseClass(?W..):
     ___ resetAuthor
         _author _ "David Boddie"
 
-    author _ pyqtProperty(st., getAuthor, setAuthor, resetAuthor)
+    author _ pP..(st., getAuthor, setAuthor, resetAuthor)
 
 
 c_ Bubble:
@@ -115,7 +115,7 @@ c_ BubblesWidget(BaseClass):
 
         super(BubblesWidget, self). - (parent)
 
-        pen _ QPen(?C..("#cccccc"))
+        pen _ ?P..(?C..("#cccccc"))
         bubbles _   # list
         backgroundColor1 _ randomColor()
         backgroundColor2 _ randomColor().darker(150)
@@ -148,7 +148,7 @@ c_ BubblesWidget(BaseClass):
         painter.setRenderHint(QPainter.Antialiasing)
         painter.fillRect(event.rect(), ?B..(background))
 
-        painter.setPen(pen)
+        painter.sP..(pen)
 
         ___ bubble __ bubbles:
 
@@ -282,7 +282,7 @@ c_ BubblesWidget(BaseClass):
         bubblesRemaining.e..(value)
         update()
 
-    numberOfBubbles _ pyqtProperty(int, getBubbles, setBubbles)
+    numberOfBubbles _ pP..(int, getBubbles, setBubbles)
 
     # We provide getter and setter methods for the color1 and color2
     # properties. The red, green and blue components for the QColor
@@ -298,7 +298,7 @@ c_ BubblesWidget(BaseClass):
         backgroundColor1 _ ?C..(value)
         update()
 
-    color1 _ pyqtProperty(?C.., getColor1, setColor1)
+    color1 _ pP..(?C.., getColor1, setColor1)
 
     ___ getColor2
 
@@ -309,7 +309,7 @@ c_ BubblesWidget(BaseClass):
         backgroundColor2 _ ?C..(value)
         update()
 
-    color2 _ pyqtProperty(?C.., getColor2, setColor2)
+    color2 _ pP..(?C.., getColor2, setColor2)
 
     # The stop() and start() slots provide simple control over the animation
     # of the bubbles in the widget.

@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pS.., Q_CLASSINFO,
+____ ?.?C.. ______ (pP.., pS.., Q_CLASSINFO,
          ?CA.., ?D.., ?O.., ?T.., ?U..)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
@@ -95,7 +95,7 @@ c_ ShoeDescription(?O..):
         _brand _ ''
         _price _ 0.0
 
-    @pyqtProperty(int)
+    @pP..(int)
     ___ size
         r_ _size
 
@@ -103,7 +103,7 @@ c_ ShoeDescription(?O..):
     ___ size  size):
         _size _ size
 
-    @pyqtProperty(?C..)
+    @pP..(?C..)
     ___ color
         r_ _color
 
@@ -111,7 +111,7 @@ c_ ShoeDescription(?O..):
     ___ color  color):
         _color _ color
 
-    @pyqtProperty st.
+    @pP.. st.
     ___ brand
         r_ _brand
 
@@ -119,7 +119,7 @@ c_ ShoeDescription(?O..):
     ___ brand  brand):
         _brand _ brand
 
-    @pyqtProperty(float)
+    @pP..(float)
     ___ price
         r_ _price
 
@@ -135,7 +135,7 @@ c_ Person(?O..):
         _name _ ''
         _shoe _ ShoeDescription()
 
-    @pyqtProperty st.
+    @pP.. st.
     ___ name
         r_ _name
 
@@ -143,7 +143,7 @@ c_ Person(?O..):
     ___ name  name):
         _name _ name
 
-    @pyqtProperty(ShoeDescription)
+    @pP..(ShoeDescription)
     ___ shoe
         r_ _shoe
 
@@ -162,7 +162,7 @@ c_ BirthdayPartyAttached(?O..):
 
         _rsvp _ ?D..()
 
-    @pyqtProperty(?D..)
+    @pP..(?D..)
     ___ rsvp
         r_ _rsvp
 
@@ -182,7 +182,7 @@ c_ BirthdayParty(?O..):
         _host _ N..
         _guests _   # list
 
-    @pyqtProperty(Person)
+    @pP..(Person)
     ___ host
         r_ _host
 
@@ -190,7 +190,7 @@ c_ BirthdayParty(?O..):
     ___ host  host):
         _host _ host
 
-    @pyqtProperty(QQmlListProperty)
+    @pP..(QQmlListProperty)
     ___ guests
         r_ QQmlListProperty(Person, self, _guests)
 

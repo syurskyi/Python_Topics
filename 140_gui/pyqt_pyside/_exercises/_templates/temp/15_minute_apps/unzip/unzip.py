@@ -210,7 +210,7 @@ class MainWindow(?MW.., Ui_MainWindow):
 
         dlg = QMessageBox
         dlg.setText(traceback)
-        dlg.setIcon(QMessageBox.Critical)
+        dlg.sI..(QMessageBox.Critical)
         dlg.show()
 
 

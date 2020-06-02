@@ -39,7 +39,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot
+____ ?.?C.. ______ pP.., pS.., pyqtSlot
 ____ ?.?W.. ______ ?A.., ?TE..
 
 
@@ -73,7 +73,7 @@ c_ PyTextViewer(?TE..):
 
     # Define the author property.  This will look like a C++ property to Qt
     # Designer and a Python property to Python.
-    author _ pyqtProperty(st., getAuthor, setAuthor, resetAuthor)
+    author _ pP..(st., getAuthor, setAuthor, resetAuthor)
 
 
 # This is the class that implements the custom widget.
@@ -125,7 +125,7 @@ c_ PyDemo(PyTextViewer):
 
     # Define the zoom property.  Changing the value of this in Qt Designer's
     # property editor causes the zoom level to change dynamically.
-    zoom _ pyqtProperty(int, getZoom, setZoom, resetZoom)
+    zoom _ pP..(int, getZoom, setZoom, resetZoom)
 
 
 # The text displayed in the custom widget.

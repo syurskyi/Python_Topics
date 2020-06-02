@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ (QAbstractTransition, QEasingCurve, QEvent,
-        QParallelAnimationGroup, QPropertyAnimation, qrand, QRect,
+        QParallelAnimationGroup, ?PA.., qrand, QRect,
         QSequentialAnimationGroup, qsrand, QState, QStateMachine, __, ?T..,
         ?T..)
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
@@ -184,30 +184,30 @@ __ ______ __ ______
 
     group.setInitialState(state1)
 
-    animationGroup _ QParallelAnimationGroup()
-    anim _ QPropertyAnimation(button4, b'geometry')
-    anim.setDuration(1000)
+    animationGroup _ ?PAG..
+    anim _ ?PA..(button4, b'geometry')
+    anim.sD..(1000)
     anim.setEasingCurve(QEasingCurve.OutElastic)
     animationGroup.addAnimation(anim)
 
     subGroup _ QSequentialAnimationGroup(animationGroup)
     subGroup.addPause(100)
-    anim _ QPropertyAnimation(button3, b'geometry')
-    anim.setDuration(1000)
+    anim _ ?PA..(button3, b'geometry')
+    anim.sD..(1000)
     anim.setEasingCurve(QEasingCurve.OutElastic)
     subGroup.addAnimation(anim)
 
     subGroup _ QSequentialAnimationGroup(animationGroup)
     subGroup.addPause(150)
-    anim _ QPropertyAnimation(button2, b'geometry')
-    anim.setDuration(1000)
+    anim _ ?PA..(button2, b'geometry')
+    anim.sD..(1000)
     anim.setEasingCurve(QEasingCurve.OutElastic)
     subGroup.addAnimation(anim)
 
     subGroup _ QSequentialAnimationGroup(animationGroup)
     subGroup.addPause(200)
-    anim _ QPropertyAnimation(button1, b'geometry')
-    anim.setDuration(1000)
+    anim _ ?PA..(button1, b'geometry')
+    anim.sD..(1000)
     anim.setEasingCurve(QEasingCurve.OutElastic)
     subGroup.addAnimation(anim)
 

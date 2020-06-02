@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QFile, ?S.., __
-____ ?.?G.. ______ ?B.., ?C.., QImage, QPainter, ?P.., QPen
+____ ?.?G.. ______ ?B.., ?C.., QImage, QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (QActionGroup, ?A.., ?FD..,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
         ?MW.., QMenu, ?MB.., ?W..)
@@ -115,7 +115,7 @@ c_ MainWindow ?MW..
         mB.. .aM..(rendererMenu)
 
         openAction.t__.c..(openFile)
-        quitAction.t__.c..(?A...instance().quit)
+        quitAction.t__.c..(?A...i.. .quit)
         rendererGroup.t__.c..(setRenderer)
 
         sCW..(view)
@@ -222,14 +222,14 @@ c_ SvgView(QGraphicsView):
 
         backgroundItem _ QGraphicsRectItem(svgItem.boundingRect())
         backgroundItem.sB..(__.white)
-        backgroundItem.setPen(QPen(__.NoPen))
+        backgroundItem.sP..(?P..(__.NoPen))
         backgroundItem.setVisible(drawBackground)
         backgroundItem.setZValue(-1)
 
         outlineItem _ QGraphicsRectItem(svgItem.boundingRect())
-        outline _ QPen(__.black, 2, __.DashLine)
+        outline _ ?P..(__.black, 2, __.DashLine)
         outline.setCosmetic( st.
-        outlineItem.setPen(outline)
+        outlineItem.sP..(outline)
         outlineItem.sB..(?B..(__.NoBrush))
         outlineItem.setVisible(drawOutline)
         outlineItem.setZValue(1)

@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ ?D.., QFile, __, QTextStream
-____ ?.?G.. ______ (?F.., QIcon, ?KS.., QTextCharFormat,
+____ ?.?G.. ______ (?F.., ?I.., ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (?A.., ?A.., QDialog, QDockWidget,
@@ -191,20 +191,20 @@ c_ MainWindow ?MW..
                 "standard paragraphs to add them.")
 
     ___ createActions
-        newLetterAct _ ?A..(QIcon(':/images/new.png'), "&New Letter",
+        newLetterAct _ ?A..(?I..(':/images/new.png'), "&New Letter",
                 self, shortcut_QKeySequence.New,
                 statusTip_"Create a new form letter", triggered_self.newLetter)
 
-        saveAct _ ?A..(QIcon(':/images/save.png'), "&Save...", self,
+        saveAct _ ?A..(?I..(':/images/save.png'), "&Save...", self,
                 shortcut_QKeySequence.Save,
                 statusTip_"Save the current form letter", triggered_self.save)
 
-        printAct _ ?A..(QIcon(':/images/print.png'), "&Print...", self,
+        printAct _ ?A..(?I..(':/images/print.png'), "&Print...", self,
                 shortcut_QKeySequence.Print,
                 statusTip_"Print the current form letter",
                 triggered_self.print_)
 
-        undoAct _ ?A..(QIcon(':/images/undo.png'), "&Undo", self,
+        undoAct _ ?A..(?I..(':/images/undo.png'), "&Undo", self,
                 shortcut_QKeySequence.Undo,
                 statusTip_"Undo the last editing action", triggered_self.undo)
 
@@ -217,7 +217,7 @@ c_ MainWindow ?MW..
 
         aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
         fileMenu _ mB.. .aM..("&File")

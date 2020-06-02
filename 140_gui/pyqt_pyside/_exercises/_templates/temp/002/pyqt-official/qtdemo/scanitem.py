@@ -41,7 +41,7 @@
 
 
 ____ ?.?C.. ______ QRect
-____ ?.?G.. ______ ?C.., QImage, QPainter, QPen
+____ ?.?G.. ______ ?C.., QImage, QPainter, ?P..
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -65,12 +65,12 @@ c_ ScanItem(DemoItem):
         painter.setRenderHint(QPainter.Antialiasing)
 
         __ Colors.useEightBitPalette:
-            painter.setPen(QPen(?C..(100, 100, 100), 2))
+            painter.sP..(?P..(?C..(100, 100, 100), 2))
             painter.sB..(?C..(206, 246, 117))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)
         ____
-            painter.setPen(QPen(?C..(0, 0, 0, 15), 1))
+            painter.sP..(?P..(?C..(0, 0, 0, 15), 1))
             painter.sB..(?C..(0, 0, 0, 15))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)

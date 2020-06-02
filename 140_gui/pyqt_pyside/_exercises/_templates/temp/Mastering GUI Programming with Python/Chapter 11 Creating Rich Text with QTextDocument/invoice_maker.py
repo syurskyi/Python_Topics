@@ -87,13 +87,13 @@ c_ InvoiceView(qtw.?TE..):
 
         cursor.setPosition(root.lastPosition())
         cust_addr_frame_fmt _ qtg.QTextFrameFormat()
-        cust_addr_frame_fmt.setWidth(doc_width * .3)
+        cust_addr_frame_fmt.sW..(doc_width * .3)
         cust_addr_frame_fmt.setPosition(qtg.QTextFrameFormat.FloatRight)
         cust_addr_frame _ cursor.insertFrame(cust_addr_frame_fmt)
 
         cursor.setPosition(root.lastPosition())
         terms_frame_fmt _ qtg.QTextFrameFormat()
-        terms_frame_fmt.setWidth(doc_width * .5)
+        terms_frame_fmt.sW..(doc_width * .5)
         terms_frame_fmt.setPosition(qtg.QTextFrameFormat.FloatLeft)
         terms_frame _ cursor.insertFrame(terms_frame_fmt)
 
@@ -168,7 +168,7 @@ c_ InvoiceView(qtw.?TE..):
         ## Line items
         table_format _ qtg.QTextTableFormat()
         table_format.setHeaderRowCount(1)
-        table_format.setWidth(
+        table_format.sW..(
             qtg.QTextLength(qtg.QTextLength.PercentageLength, 100))
 
         headings _ ('Job', 'Rate', 'Hours', 'Cost')

@@ -80,7 +80,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
             pa__ _ QPainterPath()
             pa__.addRect(right)
             pa__.addRect(bottom)
-            painter.setPen(__.NoPen)
+            painter.sP..(__.NoPen)
             painter.sB..(color)
             painter.drawPath(pa__)
         ____ intersectsBottom:

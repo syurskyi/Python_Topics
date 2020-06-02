@@ -42,7 +42,7 @@
 
 ____ ?.?C.. ______ QPointF, QRect, QRectF, ?S.., __
 ____ ?.?G.. ______ (?C.., QImage, QLinearGradient, QPainter,
-        QPainterPath, QPen)
+        QPainterPath, ?P..)
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -77,10 +77,10 @@ c_ ButtonBackground(DemoItem):
         painter _ QPainter(image)
         painter.setRenderHint(QPainter.SmoothPixmapTransform)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
 
         __ Colors.useEightBitPalette:
-            painter.setPen(?C..(120, 120, 120))
+            painter.sP..(?C..(120, 120, 120))
             __ pressed:
                 painter.sB..(?C..(60, 60, 60))
             ____ highlighted:
@@ -107,21 +107,21 @@ c_ ButtonBackground(DemoItem):
                 outlinebrush.setColorAt(0, shadow)
                 outlinebrush.setColorAt(1, highlight)
                 brush.setColorAt(0, sunken)
-                painter.setPen(__.NoPen)
+                painter.sP..(__.NoPen)
             ____
                 outlinebrush.setColorAt(1, shadow)
                 outlinebrush.setColorAt(0, highlight)
                 brush.setColorAt(0, normal1)
                 __ no. highlighted:
                     brush.setColorAt(1, normal2)
-                painter.setPen(QPen(outlinebrush, 1))
+                painter.sP..(?P..(outlinebrush, 1))
 
             painter.sB..(brush)
 
         __ type __ TextButton.PANEL:
             painter.drawRect(0, 0, scaledRect.width(), scaledRect.height())
         ____
-            painter.drawRoundedRect(0, 0, scaledRect.width(),
+            painter.dRR..(0, 0, scaledRect.width(),
                     scaledRect.height(), 10, 90, __.RelativeSize)
 
         r_ image
@@ -136,10 +136,10 @@ c_ ButtonBackground(DemoItem):
         painter _ QPainter(image)
         painter.setRenderHint(QPainter.SmoothPixmapTransform)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
 
         __ Colors.useEightBitPalette:
-            painter.setPen(?C..(120, 120, 120))
+            painter.sP..(?C..(120, 120, 120))
             __ pressed:
                 painter.sB..(?C..(60, 60, 60))
             ____ highlighted:
@@ -161,14 +161,14 @@ c_ ButtonBackground(DemoItem):
                 outlinebrush.setColorAt(0, shadow)
                 outlinebrush.setColorAt(1, highlight)
                 brush.setColorAt(0, sunken)
-                painter.setPen(__.NoPen)
+                painter.sP..(__.NoPen)
             ____
                 outlinebrush.setColorAt(1, shadow)
                 outlinebrush.setColorAt(0, highlight)
                 brush.setColorAt(0, normal1)
                 __ no. highlighted:
                     brush.setColorAt(1, normal2)
-                painter.setPen(QPen(outlinebrush, 1))
+                painter.sP..(?P..(outlinebrush, 1))
 
             painter.sB..(brush);
 
@@ -205,7 +205,7 @@ c_ TextButton(DemoItem):
 
         # Prevent a circular import.
         ____ menumanager ______ MenuManager
-        _menu_manager _ MenuManager.instance()
+        _menu_manager _ MenuManager.i.. 
 
         menuString _ t__
         buttonLabel _ t__
@@ -264,16 +264,16 @@ c_ TextButton(DemoItem):
             y _ 1.5
             stop _ TextButton.BUTTON_WIDTH - scanItem.boundingRect().width() - x
             __ alignment __ TextButton.LEFT:
-                scanAnim.setDuration(2500)
-                scanAnim.setKeyValueAt(0.0, QPointF(x, y))
-                scanAnim.setKeyValueAt(0.5, QPointF(x, y))
-                scanAnim.setKeyValueAt(0.7, QPointF(stop, y))
-                scanAnim.setKeyValueAt(1.0, QPointF(x, y))
+                scanAnim.sD..(2500)
+                scanAnim.sKVA..(0.0, QPointF(x, y))
+                scanAnim.sKVA..(0.5, QPointF(x, y))
+                scanAnim.sKVA..(0.7, QPointF(stop, y))
+                scanAnim.sKVA..(1.0, QPointF(x, y))
                 scanItem.setPos(QPointF(x, y))
             ____
-                scanAnim.setKeyValueAt(0.0, QPointF(stop, y))
-                scanAnim.setKeyValueAt(0.5, QPointF(x, y))
-                scanAnim.setKeyValueAt(1.0, QPointF(stop, y))
+                scanAnim.sKVA..(0.0, QPointF(stop, y))
+                scanAnim.sKVA..(0.5, QPointF(x, y))
+                scanAnim.sKVA..(1.0, QPointF(stop, y))
                 scanItem.setPos(QPointF(stop, y))
 
     ___ setState  state):
@@ -308,8 +308,8 @@ c_ TextButton(DemoItem):
             __ Colors.noAnimations and Colors.useButtonBalls:
                 # Wait a bit in the beginning to enhance the effect.  We have
                 # to do this here so that the adaption can be dynamic.
-                scanAnim.setDuration(1000)
-                scanAnim.setKeyValueAt(0.2, scanAnim.posAt(0))
+                scanAnim.sD..(1000)
+                scanAnim.sKVA..(0.2, scanAnim.posAt(0))
 
             __ (_menu_manager.window.fpsMedian > 10 or Colors.noAdapt or
                     Colors.noTimerUpdate):

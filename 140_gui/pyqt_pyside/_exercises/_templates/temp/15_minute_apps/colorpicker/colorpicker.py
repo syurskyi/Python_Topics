@@ -7,7 +7,7 @@ app = QApplication([])
 app.setQuitOnLastWindowClosed(F..)
 
 # Create the icon
-icon = QIcon(os.pa__.join("images","color.png"))
+icon = ?I..(os.pa__.join("images","color.png"))
 
 clipboard = QApplication.clipboard()
 dialog = QColorDialog()
@@ -34,7 +34,7 @@ def copy_color_hsv():
 
 # Create the tray
 tray = QSystemTrayIcon()
-tray.setIcon(icon)
+tray.sI..(icon)
 tray.setVisible( st.
 
 # Create the menu

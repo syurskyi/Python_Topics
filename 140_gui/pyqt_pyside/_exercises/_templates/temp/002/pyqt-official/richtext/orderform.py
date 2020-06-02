@@ -94,7 +94,7 @@ c_ MainWindow ?MW..
         referenceFrameFormat.setBorder(1)
         referenceFrameFormat.setPadding(8)
         referenceFrameFormat.setPosition(QTextFrameFormat.FloatRight)
-        referenceFrameFormat.setWidth(QTextLength(QTextLength.PercentageLength, 40))
+        referenceFrameFormat.sW..(QTextLength(QTextLength.PercentageLength, 40))
         cursor.insertFrame(referenceFrameFormat)
 
         cursor.insertText("A company", boldFormat)
@@ -121,7 +121,7 @@ c_ MainWindow ?MW..
         cursor.insertBlock()
 
         bodyFrameFormat _ QTextFrameFormat()
-        bodyFrameFormat.setWidth(QTextLength(QTextLength.PercentageLength, 100))
+        bodyFrameFormat.sW..(QTextLength(QTextLength.PercentageLength, 100))
         cursor.insertFrame(bodyFrameFormat)
 
         cursor.insertText("I would like to place an order for the following "

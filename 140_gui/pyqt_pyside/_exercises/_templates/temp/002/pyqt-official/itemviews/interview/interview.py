@@ -53,7 +53,7 @@
 
 ____ ?.?C.. ______ (QAbstractItemModel, QFileInfo, QItemSelectionModel,
         QModelIndex, __)
-____ ?.?G.. ______ QIcon
+____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (QAbstractItemView, ?A..,
         QFileIconProvider, QListView, QSplitter, QTableView, QTreeView)
 
@@ -70,7 +70,7 @@ c_ Node(object):
 c_ Model(QAbstractItemModel):
     ___  -   rows, columns, parent _ N..):
         super(Model, self). - (parent)
-        services _ QIcon(images_dir + '/services.png')
+        services _ ?I..(images_dir + '/services.png')
         rc _ rows
         cc _ columns
         tree _ [Node() ___ node __ ra..(rows)]
@@ -180,7 +180,7 @@ ___ main(args):
     li...viewport().setAttribute(__.WA_StaticContents)
     li...setAttribute(__.WA_MacShowFocusRect, F..)
     page.aW..(li..)
-    page.setWindowIcon(QIcon(images_dir + '/interview.png'))
+    page.setWindowIcon(?I..(images_dir + '/interview.png'))
     page.sWT..("Interview")
     page.s..
     r_ app.e..

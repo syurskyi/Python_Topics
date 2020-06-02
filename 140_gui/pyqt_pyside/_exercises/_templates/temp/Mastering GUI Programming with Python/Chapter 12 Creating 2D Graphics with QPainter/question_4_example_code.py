@@ -20,7 +20,7 @@ c_ ColorButton(qtw.?PB..):
         # update icon
         pixmap _ qtg.?P..(32, 32)
         pixmap.fill(_color)
-        setIcon(qtg.QIcon(pixmap))
+        sI..(qtg.?I..(pixmap))
 
     ___ on_click
         color _ qtw.QColorDialog.getColor(_color)
@@ -211,7 +211,7 @@ c_ MainWindow(qtw.?MW..):
         painter.drawRect(bottom_block_rect)
 
         # Paint the text
-        painter.setPen(data['text_color'])
+        painter.sP..(data['text_color'])
         painter.sF..(data['text_font'])
         flags _ qtc.__.AlignHCenter | qtc.__.TextWordWrap
         painter.drawText(
@@ -250,7 +250,7 @@ c_ MainWindow(qtw.?MW..):
             image _ image.convertToFormat(qtg.QImage.Format_ARGB32)
 
         # show the image
-        image_display.setPixmap(qtg.?P..(image))
+        image_display.sP..(qtg.?P..(image))
 
 
 __ ______ __ ______

@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, Q_CLASSINFO,
+____ ?.?C.. ______ (pP.., pS.., pyqtSlot, Q_CLASSINFO,
          ?CA.., ?D.., ?O.., ?T.., ?T.., ?U..)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
@@ -100,7 +100,7 @@ c_ ShoeDescription(?O..):
 
     shoeChanged _ pS..()
 
-    @pyqtProperty(int, notify_shoeChanged)
+    @pP..(int, notify_shoeChanged)
     ___ size 
         r_ _size
 
@@ -110,7 +110,7 @@ c_ ShoeDescription(?O..):
             _size _ size
             shoeChanged.e..()
 
-    @pyqtProperty(?C.., notify_shoeChanged)
+    @pP..(?C.., notify_shoeChanged)
     ___ color 
         r_ _color
 
@@ -120,7 +120,7 @@ c_ ShoeDescription(?O..):
             _color _ color
             shoeChanged.e..()
 
-    @pyqtProperty(st., notify_shoeChanged)
+    @pP..(st., notify_shoeChanged)
     ___ brand 
         r_ _brand
 
@@ -130,7 +130,7 @@ c_ ShoeDescription(?O..):
             _brand _ brand
             shoeChanged.e..()
 
-    @pyqtProperty(float, notify_shoeChanged)
+    @pP..(float, notify_shoeChanged)
     ___ price 
         r_ _price
 
@@ -150,7 +150,7 @@ c_ Person(?O..):
 
     nameChanged _ pS..()
 
-    @pyqtProperty(st., notify_nameChanged)
+    @pP..(st., notify_nameChanged)
     ___ name 
         r_ _name
 
@@ -160,7 +160,7 @@ c_ Person(?O..):
             _name _ name
             nameChanged.e..()
 
-    @pyqtProperty(ShoeDescription)
+    @pP..(ShoeDescription)
     ___ shoe 
         r_ _shoe
 
@@ -181,7 +181,7 @@ c_ BirthdayPartyAttached(?O..):
 
     rsvpChanged _ pS..()
 
-    @pyqtProperty(?D.., notify_rsvpChanged)
+    @pP..(?D.., notify_rsvpChanged)
     ___ rsvp 
         r_ _rsvp
 
@@ -205,7 +205,7 @@ c_ BirthdayParty(?O..):
 
     hostChanged _ pS..()
 
-    @pyqtProperty(Person, notify_hostChanged)
+    @pP..(Person, notify_hostChanged)
     ___ host 
         r_ _host
 
@@ -215,11 +215,11 @@ c_ BirthdayParty(?O..):
             _host _ host
             hostChanged.e..()
 
-    @pyqtProperty(QQmlListProperty)
+    @pP..(QQmlListProperty)
     ___ guests 
         r_ QQmlListProperty(Person, self, _guests)
 
-    @pyqtProperty st.
+    @pP.. st.
     ___ announcement 
         r_ ''
 
@@ -246,7 +246,7 @@ c_ HappyBirthdaySong(?O.., QQmlPropertyValueSource):
 
     nameChanged _ pS..()
 
-    @pyqtProperty(st., notify_nameChanged)
+    @pP..(st., notify_nameChanged)
     ___ name 
         r_ _name
 
@@ -275,7 +275,7 @@ c_ HappyBirthdaySong(?O.., QQmlPropertyValueSource):
         __ _line < le.(_lyrics):
             _target.w..(_lyrics[_line])
         ____
-             ?CA...instance().quit()
+             ?CA...i.. .quit()
 
 
 app _  ?CA..(___.a..

@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         head = QtWidgets.QLabel(widget)
         head.setGeometry(QtCore.QRect(0, -40, 201, 261))
         head.setText("")
-        head.setPixmap(QtGui.?P..("images/cat-head-glasses.png"))
+        head.sP..(QtGui.?P..("images/cat-head-glasses.png"))
         head.setAlignment(QtCore.Qt.AlignCenter)
         head.setObjectName("head")
         verticalLayoutWidget = QtWidgets.?W..(widget)
@@ -34,7 +34,7 @@ class Ui_MainWindow(object):
         fileBar.setObjectName("fileBar")
         progress_1 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_1.sF..(font)
         progress_1.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_1)
         progress_2 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_2.sF..(font)
         progress_2.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_2)
         progress_3 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_3.sF..(font)
         progress_3.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -70,7 +70,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_3)
         progress_4 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_4.sF..(font)
         progress_4.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -82,7 +82,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_4)
         progress_5 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_5.sF..(font)
         progress_5.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -94,7 +94,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_5)
         progress_6 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_6.sF..(font)
         progress_6.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -106,7 +106,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_6)
         progress_7 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_7.sF..(font)
         progress_7.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -118,7 +118,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_7)
         progress_8 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_8.sF..(font)
         progress_8.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -130,7 +130,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_8)
         progress_9 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_9.sF..(font)
         progress_9.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -142,7 +142,7 @@ class Ui_MainWindow(object):
         fileBar.addWidget(progress_9)
         progress_10 = QtWidgets.QLabel(verticalLayoutWidget)
         font = QtGui.?F..()
-        font.setPointSize(8)
+        font.sPS..(8)
         progress_10.sF..(font)
         progress_10.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
@@ -155,7 +155,7 @@ class Ui_MainWindow(object):
         body = QtWidgets.QLabel(widget)
         body.setGeometry(QtCore.QRect(20, 120, 191, 381))
         body.setText("")
-        body.setPixmap(QtGui.?P..("images/cat-body-space.png"))
+        body.sP..(QtGui.?P..("images/cat-body-space.png"))
         body.setObjectName("body")
         verticalLayoutWidget.raise_()
         body.raise_()

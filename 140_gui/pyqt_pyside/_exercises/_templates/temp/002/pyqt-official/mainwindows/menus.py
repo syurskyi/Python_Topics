@@ -216,7 +216,7 @@ c_ MainWindow ?MW..
         aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_self.aboutQt)
-        aboutQtAct.t__.c..(?A...instance().aboutQt)
+        aboutQtAct.t__.c..(?A...i.. .aboutQt)
 
         leftAlignAct _ ?A..("&Left Align", self, checkable_True,
                 shortcut_"Ctrl+L", statusTip_"Left align the selected text",

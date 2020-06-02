@@ -70,11 +70,11 @@ class Card(QGraphicsPixmapItem):
 
     def turn_face_up 
         side = SIDE_FACE
-        setPixmap(face)
+        sP..(face)
 
     def turn_back_up 
         side = SIDE_BACK
-        setPixmap(back)
+        sP..(back)
 
     @property
     def is_face_up 
@@ -243,7 +243,7 @@ class DeckStack(StackBase):
         color.setAlpha(50)
         brush = ?B..(color)
         sB..(brush)
-        setPen(QPen(Qt.NoPen))
+        sP..(?P..(Qt.NoPen))
 
     def is_valid_drop(self, card):
         return F..
@@ -257,7 +257,7 @@ class DealStack(StackBase):
     spread_from = 0
 
     def setup 
-        setPen(QPen(Qt.NoPen))
+        sP..(?P..(Qt.NoPen))
         color = QColor(Qt.black)
         color.setAlpha(50)
         brush = ?B..(color)
@@ -291,7 +291,7 @@ class WorkStack(StackBase):
     offset_y_back = 5
 
     def setup 
-        setPen(QPen(Qt.NoPen))
+        sP..(?P..(Qt.NoPen))
         color = QColor(Qt.black)
         color.setAlpha(50)
         brush = ?B..(color)
@@ -368,9 +368,9 @@ class DropStack(StackBase):
         signals = Signals()
         color = QColor(Qt.blue)
         color.setAlpha(50)
-        pen = QPen(color)
-        pen.setWidth(5)
-        setPen(pen)
+        pen = ?P..(color)
+        pen.sW..(5)
+        sP..(pen)
 
     def reset 
         super(DropStack, self).reset()
@@ -408,8 +408,8 @@ class DealTrigger(QGraphicsRectItem):
         setRect(QRectF(DEAL_RECT))
         setZValue(1000)
 
-        pen = QPen(Qt.NoPen)
-        setPen(pen)
+        pen = ?P..(Qt.NoPen)
+        sP..(pen)
 
         signals = Signals()
 
@@ -422,8 +422,8 @@ class AnimationCover(QGraphicsRectItem):
         super(AnimationCover, self). - ($ $$)
         setRect(QRectF(0, 0, *WINDOW_SIZE))
         setZValue(5000)
-        pen = QPen(Qt.NoPen)
-        setPen(pen)
+        pen = ?P..(Qt.NoPen)
+        sP..(pen)
 
     def mousePressEvent(self, e):
         e.accept()
@@ -442,7 +442,7 @@ class MainWindow(?MW..):
         scene.setBackgroundBrush(felt)
 
         name = QGraphicsPixmapItem()
-        name.setPixmap(?P..(os.pa__.join('images','ronery.png')))
+        name.sP..(?P..(os.pa__.join('images','ronery.png')))
         name.setPos(QPointF(170, 375))
         scene.aI..(name)
 
@@ -458,7 +458,7 @@ class MainWindow(?MW..):
 
         menu = menuBar().addMenu("&Game")
 
-        deal_action = QAction(QIcon(os.pa__.join('images', 'playing-card.png')), "Deal...", self)
+        deal_action = QAction(?I..(os.pa__.join('images', 'playing-card.png')), "Deal...", self)
         deal_action.triggered.connect(restart_game)
         menu.addAction(deal_action)
 

@@ -43,11 +43,11 @@
 
 
 ____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
-____ ?.?G.. ______ QIcon, QImage, ?P.., ?P..
+____ ?.?G.. ______ ?I.., QImage, ?P.., ?P..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
         ?A.., ?CB, ?FD.., QFrame, QGridLayout, QGroupBox,
         QHBoxLayout, ?HV.., QItemDelegate, QLabel, ?MW..,
-        ?MB.., QRadioButton, QSizePolicy, SB.., QStyle,
+        ?MB.., QRadioButton, QSizePolicy, SB.., ?S..,
         ?SF.., ?TW.., QTableWidgetItem, QVBoxLayout, ?W..)
 
 
@@ -108,7 +108,7 @@ c_ IconPreviewArea(?W..):
         mainLayout _ QGridLayout()
         sL..(mainLayout)
 
-        icon _ QIcon()
+        icon _ ?I..
         size _ ?S..()
         stateLabels _   # list
         modeLabels _   # list
@@ -133,7 +133,7 @@ c_ IconPreviewArea(?W..):
                 pixmapLabels[i].ap..(createPixmapLabel())
                 mainLayout.aW..(pixmapLabels[i][j], j + 1, i + 1)
 
-    ___ setIcon  icon):
+    ___ sI..  icon):
         icon _ icon
         updatePixmapLabels()
 
@@ -161,18 +161,18 @@ c_ IconPreviewArea(?W..):
     ___ updatePixmapLabels 
         ___ i __ ra..(le.(modeLabels)):
             __ i __ 0:
-                mode _ QIcon.Normal
+                mode _ ?I...Normal
             ____ i __ 1:
-                mode _ QIcon.Active
+                mode _ ?I...Active
             ____ i __ 2:
-                mode _ QIcon.Disabled
+                mode _ ?I...Disabled
             ____
-                mode _ QIcon.Selected
+                mode _ ?I...Selected
 
             ___ j __ ra..(le.(stateLabels)):
-                state _ QIcon.Off __ j __ 0 ____ QIcon.On
+                state _ ?I...Off __ j __ 0 ____ ?I...On
                 pixmap _ icon.pixmap(size, mode, state)
-                pixmapLabels[i][j].setPixmap(pixmap)
+                pixmapLabels[i][j].sP..(pixmap)
                 pixmapLabels[i][j].sE..(no. pixmap.isNull())
 
 
@@ -221,17 +221,17 @@ c_ MainWindow ?MW..
         ?A...sS..(style)
 
         setButtonText(smallRadioButton, "Small (%d x %d)",
-                style, QStyle.PM_SmallIconSize)
+                style, ?S...PM_SmallIconSize)
         setButtonText(largeRadioButton, "Large (%d x %d)",
-                style, QStyle.PM_LargeIconSize)
+                style, ?S...PM_LargeIconSize)
         setButtonText(toolBarRadioButton, "Toolbars (%d x %d)",
-                style, QStyle.PM_ToolBarIconSize)
+                style, ?S...PM_ToolBarIconSize)
         setButtonText(listViewRadioButton, "List views (%d x %d)",
-                style, QStyle.PM_ListViewIconSize)
+                style, ?S...PM_ListViewIconSize)
         setButtonText(iconViewRadioButton, "Icon views (%d x %d)",
-                style, QStyle.PM_IconViewIconSize)
+                style, ?S...PM_IconViewIconSize)
         setButtonText(tabBarRadioButton, "Tab bars (%d x %d)",
-                style, QStyle.PM_TabBarIconSize)
+                style, ?S...PM_TabBarIconSize)
 
         changeSize()
 
@@ -248,17 +248,17 @@ c_ MainWindow ?MW..
             extent _ otherSpinBox.v..
         ____
             __ smallRadioButton.isChecked
-                metric _ QStyle.PM_SmallIconSize
+                metric _ ?S...PM_SmallIconSize
             ____ largeRadioButton.isChecked
-                metric _ QStyle.PM_LargeIconSize
+                metric _ ?S...PM_LargeIconSize
             ____ toolBarRadioButton.isChecked
-                metric _ QStyle.PM_ToolBarIconSize
+                metric _ ?S...PM_ToolBarIconSize
             ____ listViewRadioButton.isChecked
-                metric _ QStyle.PM_ListViewIconSize
+                metric _ ?S...PM_ListViewIconSize
             ____ iconViewRadioButton.isChecked
-                metric _ QStyle.PM_IconViewIconSize
+                metric _ ?S...PM_IconViewIconSize
             ____
-                metric _ QStyle.PM_TabBarIconSize
+                metric _ ?S...PM_TabBarIconSize
 
             extent _ ?A...style().pixelMetric(metric)
 
@@ -266,7 +266,7 @@ c_ MainWindow ?MW..
         otherSpinBox.sE..(otherRadioButton.isChecked())
 
     ___ changeIcon 
-        icon _ QIcon()
+        icon _ ?I..
 
         ___ row __ ra..(imagesTable.rowCount()):
             item0 _ imagesTable.item(row, 0)
@@ -275,25 +275,25 @@ c_ MainWindow ?MW..
 
             __ item0.checkState() __ __.Ch..
                 __ item1.t__() __ "Normal":
-                    mode _ QIcon.Normal
+                    mode _ ?I...Normal
                 ____ item1.t__() __ "Active":
-                    mode _ QIcon.Active
+                    mode _ ?I...Active
                 ____ item1.t__() __ "Disabled":
-                    mode _ QIcon.Disabled
+                    mode _ ?I...Disabled
                 ____
-                    mode _ QIcon.Selected
+                    mode _ ?I...Selected
 
                 __ item2.t__() __ "On":
-                    state _ QIcon.On
+                    state _ ?I...On
                 ____
-                    state _ QIcon.Off
+                    state _ ?I...Off
 
                 fileName _ item0.data(__.UserRole)
                 image _ QImage(fileName)
                 __ no. image.isNull
-                    icon.addPixmap(?P...fromImage(image), mode, state)
+                    icon.aP..(?P...fromImage(image), mode, state)
 
-        previewArea.setIcon(icon)
+        previewArea.sI..(icon)
 
     ___ addImage 
         fileNames, _ _ ?FD...getOpenFileNames  "Open Images", '',
@@ -427,7 +427,7 @@ c_ MainWindow ?MW..
         aboutAct _ ?A..("&About", self, triggered_self.about)
 
         aboutQtAct _ ?A..("About &Qt", self,
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus 
         fileMenu _ mB.. .aM..("&File")

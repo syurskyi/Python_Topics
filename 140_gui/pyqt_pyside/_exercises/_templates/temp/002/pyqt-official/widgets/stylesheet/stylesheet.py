@@ -59,8 +59,8 @@ c_ MainWindow ?MW..
         ui.nameLabel.setProperty('class', 'mandatory QLabel')
         styleSheetEditor _ StyleSheetEditor
         sB.. .aW..(QLabel("Ready"))
-        ui.exitAction.t__.c..(?A...instance().quit)
-        ui.aboutQtAction.t__.c..(?A...instance().aboutQt)
+        ui.exitAction.t__.c..(?A...i.. .quit)
+        ui.aboutQtAction.t__.c..(?A...i.. .aboutQt)
 
     ___ on_editStyleAction_triggered
         styleSheetEditor.s..

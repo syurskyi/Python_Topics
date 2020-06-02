@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., __, ?U..
 ____ ?.?M.. ______ ?MC.., ?MP..
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
-        ?PB.., QSizePolicy, ?S.., QStyle, QVBoxLayout, ?W..)
+        ?PB.., QSizePolicy, ?S.., ?S.., QVBoxLayout, ?W..)
 
 
 c_ VideoPlayer(?W..):
@@ -63,7 +63,7 @@ c_ VideoPlayer(?W..):
 
         playButton _ ?PB..()
         playButton.sE.. F..
-        playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
+        playButton.sI..(style().standardIcon(?S...SP_MediaPlay))
         playButton.c__.c..(play)
 
         positionSlider _ ?S..(__.H..)
@@ -110,11 +110,11 @@ c_ VideoPlayer(?W..):
 
     ___ mediaStateChanged  state):
         __ mediaPlayer.s.. __ ?MP...PlayingState:
-            playButton.setIcon(
-                    style().standardIcon(QStyle.SP_MediaPause))
+            playButton.sI..(
+                    style().standardIcon(?S...SP_MediaPause))
         ____
-            playButton.setIcon(
-                    style().standardIcon(QStyle.SP_MediaPlay))
+            playButton.sI..(
+                    style().standardIcon(?S...SP_MediaPlay))
 
     ___ pC..  position):
         positionSlider.sV..(position)

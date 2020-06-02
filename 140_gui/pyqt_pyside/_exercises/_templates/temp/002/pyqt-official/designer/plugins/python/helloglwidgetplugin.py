@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.?G.. ______ QIcon
+____ ?.?G.. ______ ?I..
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ helloglwidget ______ HelloGLWidget
@@ -75,7 +75,7 @@ c_ HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     # Returns the icon used to represent the custom widget in Qt Designer's
     # widget box.
     ___ icon
-        r_ QIcon()
+        r_ ?I..
 
     # Returns a short description of the custom widget for use in a tool tip.
     ___ toolTip

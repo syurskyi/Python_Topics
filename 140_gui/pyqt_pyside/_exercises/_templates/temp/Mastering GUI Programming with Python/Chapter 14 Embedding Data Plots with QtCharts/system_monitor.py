@@ -180,7 +180,7 @@ c_ MemoryChartView(qtch.QChartView):
         chart.setBackgroundBrush(qtg.?B..(gradient))
 
         # Background Pen draws a border around the chart
-        chart.setBackgroundPen(qtg.QPen(qtg.?C..('black'), 5))
+        chart.setBackgroundPen(qtg.?P..(qtg.?C..('black'), 5))
 
         # Set title font and brush
         chart.setTitleBrush(
@@ -194,7 +194,7 @@ c_ MemoryChartView(qtch.QChartView):
         y_axis.setLabelsBrush(axis_brush)
 
         # Grid lines
-        grid_pen _ qtg.QPen(qtg.?C..('silver'))
+        grid_pen _ qtg.?P..(qtg.?C..('silver'))
         grid_pen.setDashPattern([1, 1, 0, 1])
         x_axis.setGridLinePen(grid_pen)
         y_axis.setGridLinePen(grid_pen)

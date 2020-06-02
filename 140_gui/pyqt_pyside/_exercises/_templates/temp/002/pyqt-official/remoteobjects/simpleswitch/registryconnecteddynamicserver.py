@@ -53,7 +53,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot,  ?CA..,
+____ ?.?C.. ______ (pP.., pS.., pyqtSlot,  ?CA..,
         ?O.., ?T.., ?U..)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 
@@ -97,7 +97,7 @@ c_ SimpleSwitch(?O..):
     currStateChanged _ pS..(bool)
 
     # The property exposed to a remote client.
-    currState _ pyqtProperty(bool, fget__get_currState, fset__set_currState,
+    currState _ pP..(bool, fget__get_currState, fset__set_currState,
             notify_currStateChanged)
 
     # The slot exposed to a remote client.

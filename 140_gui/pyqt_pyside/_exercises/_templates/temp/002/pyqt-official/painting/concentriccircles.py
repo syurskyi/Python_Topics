@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QRect, QRectF, ?S.., __, ?T..
-____ ?.?G.. ______ ?C.., QPainter, ?P.., QPen
+____ ?.?G.. ______ ?C.., QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QSizePolicy, ?W..)
 
@@ -86,7 +86,7 @@ c_ CircleWidget(?W..):
             delta _ abs((frameNo % 128) - diameter / 2)
             alpha _ 255 - (delta * delta) / 4 - diameter
             __ alpha > 0:
-                painter.setPen(QPen(?C..(0, diameter / 2, 127, alpha), 3))
+                painter.sP..(?P..(?C..(0, diameter / 2, 127, alpha), 3))
 
                 __ floatBased:
                     painter.drawEllipse(QRectF(-diameter / 2.0,

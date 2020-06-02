@@ -21,13 +21,13 @@ class AboutDialog(QDialog):
 
         title = QLabel("Mozarella Ashbadger")
         font = title.font()
-        font.setPointSize(20)
+        font.sPS..(20)
         title.sF..(font)
 
         layout.addWidget(title)
 
         logo = QLabel()
-        logo.setPixmap(?P..(os.pa__.join('images', 'ma-icon-128.png')))
+        logo.sP..(?P..(os.pa__.join('images', 'ma-icon-128.png')))
         layout.addWidget(logo)
 
         layout.addWidget(QLabel("Version 23.35.211.233232"))
@@ -61,22 +61,22 @@ class MainWindow(?MW..):
         navtb.setIconSize(?S..(16, 16))
         aTB..(navtb)
 
-        back_btn = QAction(QIcon(os.pa__.join('images', 'arrow-180.png')), "Back", self)
+        back_btn = QAction(?I..(os.pa__.join('images', 'arrow-180.png')), "Back", self)
         back_btn.setStatusTip("Back to previous page")
         back_btn.triggered.connect(l___: tabs.currentWidget().back())
         navtb.addAction(back_btn)
 
-        next_btn = QAction(QIcon(os.pa__.join('images', 'arrow-000.png')), "Forward", self)
+        next_btn = QAction(?I..(os.pa__.join('images', 'arrow-000.png')), "Forward", self)
         next_btn.setStatusTip("Forward to next page")
         next_btn.triggered.connect(l___: tabs.currentWidget().forward())
         navtb.addAction(next_btn)
 
-        reload_btn = QAction(QIcon(os.pa__.join('images', 'arrow-circle-315.png')), "Reload", self)
+        reload_btn = QAction(?I..(os.pa__.join('images', 'arrow-circle-315.png')), "Reload", self)
         reload_btn.setStatusTip("Reload page")
         reload_btn.triggered.connect(l___: tabs.currentWidget().reload())
         navtb.addAction(reload_btn)
 
-        home_btn = QAction(QIcon(os.pa__.join('images', 'home.png')), "Home", self)
+        home_btn = QAction(?I..(os.pa__.join('images', 'home.png')), "Home", self)
         home_btn.setStatusTip("Go home")
         home_btn.triggered.connect(navigate_home)
         navtb.addAction(home_btn)
@@ -84,14 +84,14 @@ class MainWindow(?MW..):
         navtb.addSeparator()
 
         httpsicon = QLabel()  # Yes, really!
-        httpsicon.setPixmap(?P..(os.pa__.join('images', 'lock-nossl.png')))
+        httpsicon.sP..(?P..(os.pa__.join('images', 'lock-nossl.png')))
         navtb.addWidget(httpsicon)
 
         urlbar = QLineEdit()
         urlbar.returnPressed.connect(navigate_to_url)
         navtb.addWidget(urlbar)
 
-        stop_btn = QAction(QIcon(os.pa__.join('images', 'cross-circle.png')), "Stop", self)
+        stop_btn = QAction(?I..(os.pa__.join('images', 'cross-circle.png')), "Stop", self)
         stop_btn.setStatusTip("Stop loading current page")
         stop_btn.triggered.connect(l___: tabs.currentWidget().stop())
         navtb.addAction(stop_btn)
@@ -101,34 +101,34 @@ class MainWindow(?MW..):
 
         file_menu = menuBar().addMenu("&File")
 
-        new_tab_action = QAction(QIcon(os.pa__.join('images', 'ui-tab--plus.png')), "New Tab", self)
+        new_tab_action = QAction(?I..(os.pa__.join('images', 'ui-tab--plus.png')), "New Tab", self)
         new_tab_action.setStatusTip("Open a new tab")
         new_tab_action.triggered.connect(l___ _: add_new_tab())
         file_menu.addAction(new_tab_action)
 
-        open_file_action = QAction(QIcon(os.pa__.join('images', 'disk--arrow.png')), "Open file...", self)
+        open_file_action = QAction(?I..(os.pa__.join('images', 'disk--arrow.png')), "Open file...", self)
         open_file_action.setStatusTip("Open from file")
         open_file_action.triggered.connect(open_file)
         file_menu.addAction(open_file_action)
 
-        save_file_action = QAction(QIcon(os.pa__.join('images', 'disk--pencil.png')), "Save Page As...", self)
+        save_file_action = QAction(?I..(os.pa__.join('images', 'disk--pencil.png')), "Save Page As...", self)
         save_file_action.setStatusTip("Save current page to file")
         save_file_action.triggered.connect(save_file)
         file_menu.addAction(save_file_action)
 
-        print_action = QAction(QIcon(os.pa__.join('images', 'printer.png')), "Print...", self)
+        print_action = QAction(?I..(os.pa__.join('images', 'printer.png')), "Print...", self)
         print_action.setStatusTip("Print current page")
         print_action.triggered.connect(print_page)
         file_menu.addAction(print_action)
 
         help_menu = menuBar().addMenu("&Help")
 
-        about_action = QAction(QIcon(os.pa__.join('images', 'question.png')), "About Mozarella Ashbadger", self)
+        about_action = QAction(?I..(os.pa__.join('images', 'question.png')), "About Mozarella Ashbadger", self)
         about_action.setStatusTip("Find out more about Mozarella Ashbadger")  # Hungry!
         about_action.triggered.connect(about)
         help_menu.addAction(about_action)
 
-        navigate_mozarella_action = QAction(QIcon(os.pa__.join('images', 'lifebuoy.png')),
+        navigate_mozarella_action = QAction(?I..(os.pa__.join('images', 'lifebuoy.png')),
                                             "Mozarella Ashbadger Homepage", self)
         navigate_mozarella_action.setStatusTip("Go to Mozarella Ashbadger Homepage")
         navigate_mozarella_action.triggered.connect(navigate_mozarella)
@@ -139,7 +139,7 @@ class MainWindow(?MW..):
         show()
 
         sWT..("Mozarella Ashbadger")
-        setWindowIcon(QIcon(os.pa__.join('images', 'ma-icon-64.png')))
+        setWindowIcon(?I..(os.pa__.join('images', 'ma-icon-64.png')))
 
     def add_new_tab(self, qurl=None, label="Blank"):
 
@@ -235,11 +235,11 @@ class MainWindow(?MW..):
 
         if q.scheme() __ 'https':
             # Secure padlock icon
-            httpsicon.setPixmap(?P..(os.pa__.join('images', 'lock-ssl.png')))
+            httpsicon.sP..(?P..(os.pa__.join('images', 'lock-ssl.png')))
 
         ____:
             # Insecure padlock icon
-            httpsicon.setPixmap(?P..(os.pa__.join('images', 'lock-nossl.png')))
+            httpsicon.sP..(?P..(os.pa__.join('images', 'lock-nossl.png')))
 
         urlbar.setText(q.toString())
         urlbar.setCursorPosition(0)

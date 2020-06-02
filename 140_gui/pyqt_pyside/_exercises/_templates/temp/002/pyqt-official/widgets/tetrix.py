@@ -81,7 +81,7 @@ c_ TetrixWindow(?W..):
 
         startButton.c__.c..(board.start)
         pauseButton.c__.c..(board.pause)
-        quitButton.c__.c..(?A...instance().quit)
+        quitButton.c__.c..(?A...i.. .quit)
         board.scoreChanged.c..(scoreLcd.display)
         board.levelChanged.c..(levelLcd.display)
         board.linesRemovedChanged.c..(linesLcd.display)
@@ -360,7 +360,7 @@ c_ TetrixBoard(QFrame):
 
         painter.end()
 
-        nextPieceLabel.setPixmap(pixmap)
+        nextPieceLabel.sP..(pixmap)
 
     ___ tryMove  newPiece, newX, newY):
         ___ i __ ra..(4):
@@ -385,11 +385,11 @@ c_ TetrixBoard(QFrame):
         painter.fillRect(x + 1, y + 1, squareWidth() - 2,
                 squareHeight() - 2, color)
 
-        painter.setPen(color.lighter())
+        painter.sP..(color.lighter())
         painter.drawLine(x, y + squareHeight() - 1, x, y)
         painter.drawLine(x, y, x + squareWidth() - 1, y)
 
-        painter.setPen(color.darker())
+        painter.sP..(color.darker())
         painter.drawLine(x + 1, y + squareHeight() - 1,
                 x + squareWidth() - 1, y + squareHeight() - 1)
         painter.drawLine(x + squareWidth() - 1,

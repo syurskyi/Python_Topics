@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtProperty,  ?CA.., ?O.., ?U..
+____ ?.?C.. ______ pP..,  ?CA.., ?O.., ?U..
 ____ ?.QtQml ______ qmlRegisterType, QQmlComponent, QQmlEngine
 
 
@@ -65,7 +65,7 @@ c_ Person(?O..):
         _name _ ''
         _shoeSize _ 0
 
-    @pyqtProperty st.
+    @pP.. st.
     ___ name
         r_ _name
 
@@ -73,7 +73,7 @@ c_ Person(?O..):
     ___ name  name):
         _name _ name
 
-    @pyqtProperty(int)
+    @pP..(int)
     ___ shoeSize
         r_ _shoeSize
 

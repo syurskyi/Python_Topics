@@ -38,14 +38,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, QRectF
-____ ?.?G.. ______ ?C.., QPainter, QPen
+____ ?.?C.. ______ pP.., QRectF
+____ ?.?G.. ______ ?C.., QPainter, ?P..
 ____ ?.QtQuick ______ QQuickPaintedItem
 
 
 c_ PieSlice(QQuickPaintedItem):
 
-    @pyqtProperty(?C..)
+    @pP..(?C..)
     ___ color
         r_ _color
 
@@ -53,7 +53,7 @@ c_ PieSlice(QQuickPaintedItem):
     ___ color  color):
         _color _ ?C..(color)
 
-    @pyqtProperty(int)
+    @pP..(int)
     ___ fromAngle
         r_ _fromAngle
 
@@ -61,7 +61,7 @@ c_ PieSlice(QQuickPaintedItem):
     ___ fromAngle  fromAngle):
         _fromAngle _ fromAngle
 
-    @pyqtProperty(int)
+    @pP..(int)
     ___ angleSpan
         r_ _angleSpan
 
@@ -77,7 +77,7 @@ c_ PieSlice(QQuickPaintedItem):
         _angleSpan _ 0
 
     ___ paint  painter):
-        painter.setPen(QPen(_color, 2))
+        painter.sP..(?P..(_color, 2))
         painter.setRenderHints(QPainter.Antialiasing,  st.
 
         rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)

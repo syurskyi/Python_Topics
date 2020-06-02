@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ ?D.., ?S.., __
-____ ?.?G.. ______ QIcon
+____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QListView, QListWidget, QListWidgetItem, ?PB.., SB..,
@@ -215,19 +215,19 @@ c_ ConfigDialog(QDialog):
 
     ___ createIcons 
         configButton _ QListWidgetItem(contentsWidget)
-        configButton.setIcon(QIcon(':/images/config.png'))
+        configButton.sI..(?I..(':/images/config.png'))
         configButton.sT..("Configuration")
         configButton.setTextAlignment(__.AlignHCenter)
         configButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
         updateButton _ QListWidgetItem(contentsWidget)
-        updateButton.setIcon(QIcon(':/images/update.png'))
+        updateButton.sI..(?I..(':/images/update.png'))
         updateButton.sT..("Update")
         updateButton.setTextAlignment(__.AlignHCenter)
         updateButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
         queryButton _ QListWidgetItem(contentsWidget)
-        queryButton.setIcon(QIcon(':/images/query.png'))
+        queryButton.sI..(?I..(':/images/query.png'))
         queryButton.sT..("Query")
         queryButton.setTextAlignment(__.AlignHCenter)
         queryButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)

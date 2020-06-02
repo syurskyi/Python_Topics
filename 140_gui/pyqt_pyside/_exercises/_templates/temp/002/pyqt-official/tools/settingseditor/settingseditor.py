@@ -46,11 +46,11 @@ ______ ___
 
 ____ ?.?C.. ______ (QByteArray, ?D.., ?DT__, QEvent, QPoint, QRect,
         QRegExp, QSettings, ?S.., __, ?T.., ?T..)
-____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
+____ ?.?G.. ______ ?C.., ?I.., QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
         QGroupBox, ?HV.., QInputDialog, QItemDelegate, QLabel, QLineEdit,
-        ?MW.., ?MB.., QStyle, QStyleOptionViewItem, ?TW..,
+        ?MW.., ?MB.., ?S.., QStyleOptionViewItem, ?TW..,
         QTableWidgetItem, QTreeWidget, QTreeWidgetItem, QVBoxLayout)
 
 
@@ -152,7 +152,7 @@ c_ MainWindow ?MW..
         aboutAct _ ?A..("&About", self, triggered_self.about)
 
         aboutQtAct _ ?A..("About &Qt", self,
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
         fileMenu _ mB.. .aM..("&File")
@@ -361,13 +361,13 @@ c_ SettingsTree(QTreeWidget):
         refreshTimer.sI..(2000)
         autoRefresh _ F..
 
-        groupIcon _ QIcon()
-        groupIcon.addPixmap(style().standardPixmap(QStyle.SP_DirClosedIcon),
-                QIcon.Normal, QIcon.Off)
-        groupIcon.addPixmap(style().standardPixmap(QStyle.SP_DirOpenIcon),
-                QIcon.Normal, QIcon.On)
-        keyIcon _ QIcon()
-        keyIcon.addPixmap(style().standardPixmap(QStyle.SP_FileIcon))
+        groupIcon _ ?I..
+        groupIcon.aP..(style().standardPixmap(?S...SP_DirClosedIcon),
+                ?I...Normal, ?I...Off)
+        groupIcon.aP..(style().standardPixmap(?S...SP_DirOpenIcon),
+                ?I...Normal, ?I...On)
+        keyIcon _ ?I..
+        keyIcon.aP..(style().standardPixmap(?S...SP_FileIcon))
 
         refreshTimer.timeout.c..(maybeRefresh)
 
@@ -455,7 +455,7 @@ c_ SettingsTree(QTreeWidget):
             ____
                 child _ createItem(group, parent, dividerIndex)
 
-            child.setIcon(0, groupIcon)
+            child.sI..(0, groupIcon)
             dividerIndex +_ 1
 
             settings.beginGroup(group)
@@ -472,7 +472,7 @@ c_ SettingsTree(QTreeWidget):
                     moveItemForward(parent, childIndex, dividerIndex)
                 ____
                     child _ createItem(key, parent, dividerIndex)
-                child.setIcon(0, keyIcon)
+                child.sI..(0, keyIcon)
                 dividerIndex +_ 1
             ____
                 child _ childAt(parent, childIndex)
@@ -581,7 +581,7 @@ c_ VariantDelegate(QItemDelegate):
             value _ index.model().data(index, __.UserRole)
             __ no. isSupportedType(value):
                 myOption _ QStyleOptionViewItem(option)
-                myOption.state &_ ~QStyle.State_Enabled
+                myOption.state &_ ~?S...State_Enabled
                 super(VariantDelegate, self).paint(painter, myOption, index)
                 r_
 

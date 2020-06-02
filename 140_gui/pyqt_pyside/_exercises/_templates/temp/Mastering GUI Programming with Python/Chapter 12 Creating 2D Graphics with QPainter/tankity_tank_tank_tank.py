@@ -32,11 +32,11 @@ c_ Bullet(qtw.QGraphicsObject):
         setGraphicsEffect(blur)
 
         # Animate the object
-        animation _ qtc.QPropertyAnimation  b'y')
-        animation.setStartValue(y_pos)
+        animation _ qtc.?PA..  b'y')
+        animation.sSV..(y_pos)
         end _ 0 __ up ____ SCREEN_HEIGHT
-        animation.setEndValue(end)
-        animation.setDuration(1000)
+        animation.sEV..(end)
+        animation.sD..(1000)
         yChanged.c..(check_collision)
 
     ___ boundingRect
@@ -77,7 +77,7 @@ c_ Tank(qtw.QGraphicsObject):
         __ side __ TOP:  # We're pointing down
             transform.rotate(180)
         bitmap _ bitmap.transformed(transform)
-        pen _ qtg.QPen(qtg.?C..(color))
+        pen _ qtg.?P..(qtg.?C..(color))
 
         # Define the tank's position
         __ side __ BOTTOM:
@@ -85,10 +85,10 @@ c_ Tank(qtw.QGraphicsObject):
         setPos(0, y_pos)
 
         # Move the tank
-        animation _ qtc.QPropertyAnimation  b'x')
-        animation.setStartValue(0)
-        animation.setEndValue(SCREEN_WIDTH - bitmap.width())
-        animation.setDuration(2000)
+        animation _ qtc.?PA..  b'x')
+        animation.sSV..(0)
+        animation.sEV..(SCREEN_WIDTH - bitmap.width())
+        animation.sD..(2000)
         animation.finished.c..(toggle_direction)
         __ side __ TOP:
             toggle_direction()
@@ -107,21 +107,21 @@ c_ Tank(qtw.QGraphicsObject):
         r_ qtc.QRectF(0, 0, bitmap.width(), bitmap.height())
 
     ___ paint  painter, option, widget):
-        painter.setPen(pen)
+        painter.sP..(pen)
         painter.drawPixmap(0, 0, bitmap)
 
     ___ toggle_direction
-        __ animation.direction() __ qtc.QPropertyAnimation.Forward:
+        __ animation.direction() __ qtc.?PA...Forward:
             left()
         ____
             right()
 
     ___ right
-        animation.setDirection(qtc.QPropertyAnimation.Forward)
+        animation.setDirection(qtc.?PA...Forward)
         animation.start()
 
     ___ left
-        animation.setDirection(qtc.QPropertyAnimation.Backward)
+        animation.setDirection(qtc.?PA...Backward)
         animation.start()
 
     ___ shoot

@@ -286,7 +286,7 @@ c_ LightMaps(?W..):
         p _ QPainter()
         p.begin
         _normalMap.render(p, event.rect())
-        p.setPen(__.black)
+        p.sP..(__.black)
         p.drawText(rect(), __.AlignBottom | __.TextWordWrap,
                    "Map data CCBYSA 2009 OpenStreetMap.org contributors")
         p.end()
@@ -312,7 +312,7 @@ c_ LightMaps(?W..):
                 mask.setRenderHint(QPainter.Antialiasing)
                 mask.setCompositionMode(QPainter.CompositionMode_Source)
                 mask.sB..(g)
-                mask.setPen(__.NoPen)
+                mask.sP..(__.NoPen)
                 mask.drawRect(maskPixmap.rect())
                 mask.sB..(?C..(__.transparent))
                 mask.drawEllipse(g.center(), ring, ring)
@@ -341,7 +341,7 @@ c_ LightMaps(?W..):
             p.drawPixmap(corner, zoomPixmap)
             p.setClipping F..
             p.drawPixmap(corner, maskPixmap)
-            p.setPen(__.gray)
+            p.sP..(__.gray)
             p.drawPath(clipPath)
 
         __ invert:

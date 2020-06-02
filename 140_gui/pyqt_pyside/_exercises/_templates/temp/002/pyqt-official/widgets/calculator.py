@@ -59,7 +59,7 @@ c_ Button(QToolButton):
     ___ sH..
         size _ super(Button, self).sH..()
         size.setHeight(size.height() + 20)
-        size.setWidth(max(size.width(), size.height()))
+        size.sW..(max(size.width(), size.height()))
         r_ size
 
 
@@ -83,7 +83,7 @@ c_ Calculator(?W..):
         display.setMaxLength(15)
 
         font _ display.font()
-        font.setPointSize(font.pointSize() + 8)
+        font.sPS..(font.pointSize() + 8)
         display.sF..(font)
 
         digitButtons _   # list

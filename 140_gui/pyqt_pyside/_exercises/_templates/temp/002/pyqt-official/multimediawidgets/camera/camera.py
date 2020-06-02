@@ -344,7 +344,7 @@ c_ Camera ?MW..
         scaledImage _ img.scaled(ui.viewfinder.size(), __.KeepAspectRatio,
                 __.SmoothTransformation)
 
-        ui.lastImagePreviewLabel.setPixmap(?P...fromImage(scaledImage))
+        ui.lastImagePreviewLabel.sP..(?P...fromImage(scaledImage))
 
         displayCapturedImage()
         ?T...sS..(4000, displayViewfinder)

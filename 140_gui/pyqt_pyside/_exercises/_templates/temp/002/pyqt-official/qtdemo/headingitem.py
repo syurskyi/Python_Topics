@@ -42,7 +42,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ (?C.., QFontMetrics, QImage, QLinearGradient,
-        QPainter, QPen)
+        QPainter, ?P..)
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -79,9 +79,9 @@ c_ HeadingItem(DemoItem):
             brush_shadow.setColorAt(0.0, ?C..(0, 0, 0))
         ____
             brush_shadow.setColorAt(0.0, ?C..(0, 0, 0, 100))
-        pen_shadow _ QPen()
+        pen_shadow _ ?P..()
         pen_shadow.sB..(brush_shadow)
-        painter.setPen(pen_shadow)
+        painter.sP..(pen_shadow)
         painter.drawText(int(xShadow), int(yShadow), int(w), int(h),
                 __.AlignLeft, t__)
 
@@ -91,9 +91,9 @@ c_ HeadingItem(DemoItem):
         brush_text.setColorAt(0.0, ?C..(255, 255, 255))
         brush_text.setColorAt(0.2, ?C..(255, 255, 255))
         brush_text.setColorAt(0.5, ?C..(190, 190, 190))
-        pen_text _ QPen()
+        pen_text _ ?P..()
         pen_text.sB..(brush_text)
-        painter.setPen(pen_text)
+        painter.sP..(pen_text)
         painter.drawText(0, 0, int(w), int(h), __.AlignLeft, t__)
 
         r_ image

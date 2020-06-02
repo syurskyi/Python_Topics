@@ -46,7 +46,7 @@ ______ random
 
 ____ ?.?C.. ______ (pS.., QByteArray, ?DS.., QIODevice,
         QMimeData, QPoint, QRect, ?S.., __)
-____ ?.?G.. ______ QDrag, ?C.., QCursor, QIcon, QPainter, ?P..
+____ ?.?G.. ______ QDrag, ?C.., QCursor, ?I.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
         QListView, QListWidget, QListWidgetItem, ?MW.., ?MB..,
         QSizePolicy, ?W..)
@@ -166,7 +166,7 @@ c_ PuzzleWidget(?W..):
         drag _ QDrag
         drag.setMimeData(mimeData)
         drag.setHotSpot(event.pos() - square.topLeft())
-        drag.setPixmap(pixmap)
+        drag.sP..(pixmap)
 
         __ drag.exec_(__.MoveAction) !_ __.MoveAction:
             pieceLocations.insert(found, location)
@@ -184,7 +184,7 @@ c_ PuzzleWidget(?W..):
 
         __ highlightedRect.isValid
             painter.sB..(?C..("#ffcccc"))
-            painter.setPen(__.NoPen)
+            painter.sP..(__.NoPen)
             painter.drawRect(highlightedRect.adjusted(0, 0, -1, -1))
 
         ___ rect, pixmap __ zip(pieceRects, piecePixmaps):
@@ -237,7 +237,7 @@ c_ PiecesList(QListWidget):
 
     ___ addPiece  pixmap, location):
         pieceItem _ QListWidgetItem
-        pieceItem.setIcon(QIcon(pixmap))
+        pieceItem.sI..(?I..(pixmap))
         pieceItem.setData(__.UserRole, pixmap)
         pieceItem.setData(__.UserRole+1, location)
         pieceItem.setFlags(__.ItemIsEnabled | __.ItemIsSelectable | __.ItemIsDragEnabled)
@@ -258,7 +258,7 @@ c_ PiecesList(QListWidget):
         drag _ QDrag
         drag.setMimeData(mimeData)
         drag.setHotSpot(QPoint(pixmap.width()/2, pixmap.height()/2))
-        drag.setPixmap(pixmap)
+        drag.sP..(pixmap)
 
         __ drag.exec_(__.MoveAction) __ __.MoveAction:
             __ currentItem() __ no. N..:
@@ -337,7 +337,7 @@ c_ MainWindow ?MW..
         restartAction _ gameMenu.aA..("&Restart")
 
         openAction.t__.c..(openImage)
-        exitAction.t__.c..(?A...instance().quit)
+        exitAction.t__.c..(?A...i.. .quit)
         restartAction.t__.c..(setupPuzzle)
 
     ___ setupWidgets

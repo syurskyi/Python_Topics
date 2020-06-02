@@ -66,14 +66,14 @@ c_ CharacterWidget(?W..):
         setMouseTracking( st.
 
     ___ updateFont  fontFamily):
-        displayFont.setFamily(fontFamily)
+        displayFont.sF..(fontFamily)
         squareSize _ max(24, QFontMetrics(displayFont).xHeight() * 3)
         adjustSize()
         update()
 
     ___ updateSize  fontSize):
         fontSize, _ _ fontSize.toInt()
-        displayFont.setPointSize(fontSize)
+        displayFont.sPS..(fontSize)
         squareSize _ max(24, QFontMetrics(displayFont).xHeight() * 3)
         adjustSize()
         update()
@@ -129,7 +129,7 @@ c_ CharacterWidget(?W..):
         beginColumn _ redrawRect.left() // squareSize
         endColumn _ redrawRect.right() // squareSize
 
-        painter.setPen(__.gray)
+        painter.sP..(__.gray)
         ___ row __ ra..(beginRow, endRow + 1):
             ___ column __ ra..(beginColumn, endColumn + 1):
                 painter.drawRect(column * squareSize,
@@ -137,7 +137,7 @@ c_ CharacterWidget(?W..):
                         squareSize)
 
         fontMetrics _ QFontMetrics(displayFont)
-        painter.setPen(__.black)
+        painter.sP..(__.black)
         ___ row __ ra..(beginRow, endRow + 1):
             ___ column __ ra..(beginColumn, endColumn + 1):
                 key _ row * columns + column

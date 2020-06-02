@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ (?B.., QConicalGradient, QLinearGradient, QPainter,
-        QPainterPath, ?P.., QPen, ?P.., QPolygon, QRadialGradient)
+        QPainterPath, ?P.., ?P.., ?P.., QPolygon, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
         QLabel, SB.., ?W..)
 
@@ -65,7 +65,7 @@ c_ RenderArea(?W..):
     ___  -   parent_None):
         super(RenderArea, self). - (parent)
 
-        pen _ QPen()
+        pen _ ?P..()
         brush _ ?B..()
         pixmap _ ?P..()
 
@@ -87,7 +87,7 @@ c_ RenderArea(?W..):
         shape _ shape
         update()
 
-    ___ setPen  pen):
+    ___ sP..  pen):
         pen _ pen
         update()
 
@@ -115,7 +115,7 @@ c_ RenderArea(?W..):
         arcLength _ 120 * 16
 
         painter _ QPainter
-        painter.setPen(pen)
+        painter.sP..(pen)
         painter.sB..(brush)
         __ antialiased:
             painter.setRenderHint(QPainter.Antialiasing)
@@ -141,7 +141,7 @@ c_ RenderArea(?W..):
                 ____ shape __ RenderArea.Rect:
                     painter.drawRect(rect)
                 ____ shape __ RenderArea.RoundedRect:
-                    painter.drawRoundedRect(rect, 25, 25, __.RelativeSize)
+                    painter.dRR..(rect, 25, 25, __.RelativeSize)
                 ____ shape __ RenderArea.Ellipse:
                     painter.drawEllipse(rect)
                 ____ shape __ RenderArea.Arc:
@@ -160,7 +160,7 @@ c_ RenderArea(?W..):
 
                 painter.restore()
 
-        painter.setPen(p...dark().color())
+        painter.sP..(p...dark().color())
         painter.sB..(__.NoBrush)
         painter.drawRect(QRect(0, 0, width() - 1, height() - 1))
 
@@ -309,7 +309,7 @@ c_ Window(?W..):
         join _ __.PenJoinStyle(penJoinComboBox.itemData(
                 penJoinComboBox.currentIndex(), IdRole))
 
-        renderArea.setPen(QPen(__.blue, width, style, cap, join))
+        renderArea.sP..(?P..(__.blue, width, style, cap, join))
 
     ___ brushChanged
         style _ __.BrushStyle(brushStyleComboBox.itemData(

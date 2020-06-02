@@ -112,7 +112,7 @@ c_ Dialog(QDialog):
                     "Selected file is not an image, please select another.")
             r_
 
-        ui.label.setPixmap(?P...fromImage(image))
+        ui.label.sP..(?P...fromImage(image))
 
         # Load into shared memory.
         buf _ QBuffer()
@@ -159,7 +159,7 @@ c_ Dialog(QDialog):
         sharedMemory.unlock()
         sharedMemory.detach()
 
-        ui.label.setPixmap(?P...fromImage(image))
+        ui.label.sP..(?P...fromImage(image))
 
     ___ detach 
         """ This private function is called by the destructor to detach the

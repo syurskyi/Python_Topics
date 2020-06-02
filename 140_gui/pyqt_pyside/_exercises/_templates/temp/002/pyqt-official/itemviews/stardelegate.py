@@ -47,7 +47,7 @@ ______ math
 
 ____ ?.?C.. ______ pS.., QPointF, ?S.., __
 ____ ?.?G.. ______ QPainter, QPolygonF
-____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
+____ ?.?W.. ______ (QAbstractItemView, ?A.., ?S..,
         ?SID.., ?TW.., QTableWidgetItem, ?W..)
 
 
@@ -92,7 +92,7 @@ c_ StarRating(object):
         painter.save()
 
         painter.setRenderHint(QPainter.Antialiasing,  st.
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
 
         __ editMode __ StarRating.Editable:
             painter.sB..(palette.highlight())
@@ -164,7 +164,7 @@ c_ StarDelegate(?SID..):
     ___ paint  painter, option, index):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
-            __ option.state & QStyle.State_Selected:
+            __ option.state & ?S...State_Selected:
                 painter.fillRect(option.rect, option.palette.highlight())
 
             starRating.paint(painter, option.rect, option.palette,

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pS.., QPointF, QPropertyAnimation, QRect,
+____ ?.?C.. ______ (pS.., QPointF, ?PA.., QRect,
         QRectF, QState, QStateMachine, __)
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
@@ -84,7 +84,7 @@ ___ createStates(objects, selectedRect, parent):
 
 ___ createAnimations(objects, machine):
     ___ obj __ objects:
-        animation _ QPropertyAnimation(obj, b'geometry', obj)
+        animation _ ?PA..(obj, b'geometry', obj)
         machine.addDefaultAnimation(animation)
 
 

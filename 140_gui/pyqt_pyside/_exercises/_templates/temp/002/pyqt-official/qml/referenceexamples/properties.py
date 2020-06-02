@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtProperty,  ?CA.., ?O.., ?U..
+____ ?.?C.. ______ pP..,  ?CA.., ?O.., ?U..
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
         QQmlListProperty)
 
@@ -75,7 +75,7 @@ c_ Person(?O..):
         _name _ ''
         _shoeSize _ 0
 
-    @pyqtProperty st.
+    @pP.. st.
     ___ name
         r_ _name
 
@@ -83,7 +83,7 @@ c_ Person(?O..):
     ___ name  name):
         _name _ name
 
-    @pyqtProperty(int)
+    @pP..(int)
     ___ shoeSize
         r_ _shoeSize
 
@@ -99,7 +99,7 @@ c_ BirthdayParty(?O..):
         _host _ N..
         _guests _   # list
 
-    @pyqtProperty(Person)
+    @pP..(Person)
     ___ host
         r_ _host
 
@@ -107,7 +107,7 @@ c_ BirthdayParty(?O..):
     ___ host  host):
         _host _ host
 
-    @pyqtProperty(QQmlListProperty)
+    @pP..(QQmlListProperty)
     ___ guests
         r_ QQmlListProperty(Person, self, _guests)
 

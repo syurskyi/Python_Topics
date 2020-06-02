@@ -69,7 +69,7 @@ c_ DragLabel(QLabel):
         painter.begin(image)
         painter.setRenderHint(QPainter.Antialiasing)
         painter.sB..(__.white)
-        painter.drawRoundedRect(
+        painter.dRR..(
                 QRectF(0.5, 0.5, image.width()-1, image.height()-1),
                 25, 25, __.RelativeSize)
 
@@ -78,7 +78,7 @@ c_ DragLabel(QLabel):
         painter.drawText(QRect(QPoint(6, 6), size), __.AlignCenter, t__)
         painter.end()
 
-        setPixmap(?P...fromImage(image))
+        sP..(?P...fromImage(image))
         labelText _ t__
 
     ___ mousePressEvent  event):
@@ -93,7 +93,7 @@ c_ DragLabel(QLabel):
         drag _ QDrag
         drag.setMimeData(mimeData)
         drag.setHotSpot(event.pos() - rect().topLeft())
-        drag.setPixmap(pixmap())
+        drag.sP..(pixmap())
 
         hide()
 

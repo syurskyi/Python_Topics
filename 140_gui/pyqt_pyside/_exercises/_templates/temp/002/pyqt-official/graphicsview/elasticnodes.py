@@ -47,9 +47,9 @@ ______ math
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
         __, ?T..)
 ____ ?.?G.. ______ (?B.., ?C.., QLinearGradient, QPainter,
-        QPainterPath, QPen, QPolygonF, QRadialGradient)
+        QPainterPath, ?P.., QPolygonF, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
-        QGraphicsView, QStyle)
+        QGraphicsView, ?S..)
 
 
 c_ Edge(QGraphicsItem):
@@ -130,7 +130,7 @@ c_ Edge(QGraphicsItem):
         __ line.length() __ 0.0:
             r_
 
-        painter.setPen(QPen(__.black, 1, __.SolidLine, __.RoundCap,
+        painter.sP..(?P..(__.black, 1, __.SolidLine, __.RoundCap,
                 __.RoundJoin))
         painter.drawLine(line)
 
@@ -233,12 +233,12 @@ c_ Node(QGraphicsItem):
         r_ pa__
 
     ___ paint  painter, option, widget):
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(__.darkGray)
         painter.drawEllipse(-7, -7, 20, 20)
 
         gradient _ QRadialGradient(-3, -3, 10)
-        __ option.state & QStyle.State_Sunken:
+        __ option.state & ?S...State_Sunken:
             gradient.setCenter(3, 3)
             gradient.setFocalPoint(3, 3)
             gradient.setColorAt(1, ?C..(__.yellow).lighter(120))
@@ -248,7 +248,7 @@ c_ Node(QGraphicsItem):
             gradient.setColorAt(1, __.darkYellow)
 
         painter.sB..(?B..(gradient))
-        painter.setPen(QPen(__.black, 0))
+        painter.sP..(?P..(__.black, 0))
         painter.drawEllipse(-10, -10, 20, 20)
 
     ___ itemChange  change, value):
@@ -401,11 +401,11 @@ c_ GraphWidget(QGraphicsView):
 
         font _ painter.font()
         font.setBold( st.
-        font.setPointSize(14)
+        font.sPS..(14)
         painter.sF..(font)
-        painter.setPen(__.lightGray)
+        painter.sP..(__.lightGray)
         painter.drawText(textRect.translated(2, 2), message)
-        painter.setPen(__.black)
+        painter.sP..(__.black)
         painter.drawText(textRect, message)
 
     ___ scaleView  scaleFactor):

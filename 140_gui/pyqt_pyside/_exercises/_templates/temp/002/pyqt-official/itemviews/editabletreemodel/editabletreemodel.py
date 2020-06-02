@@ -314,7 +314,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         ___ column __ ra..(model.columnCount()):
             view.resizeColumnToContents(column)
 
-        exitAction.t__.c..(?A...instance().quit)
+        exitAction.t__.c..(?A...i.. .quit)
 
         view.selectionModel().sC__.c..(updateActions)
 

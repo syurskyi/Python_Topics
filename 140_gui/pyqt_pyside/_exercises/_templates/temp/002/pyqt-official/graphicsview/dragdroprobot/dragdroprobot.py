@@ -43,9 +43,9 @@
 
 
 ____ ?.?C.. ______ (QEasingCurve, QFileInfo, QLineF, QMimeData,
-        QParallelAnimationGroup, QPoint, QPointF, QPropertyAnimation, qrand,
+        QParallelAnimationGroup, QPoint, QPointF, ?PA.., qrand,
         QRectF, qsrand, __, ?T..)
-____ ?.?G.. ______ (?B.., ?C.., QDrag, QImage, QPainter, QPen,
+____ ?.?G.. ______ (?B.., ?C.., QDrag, QImage, QPainter, ?P..,
         ?P.., QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
@@ -70,10 +70,10 @@ c_ ColorItem(QGraphicsItem):
         r_ QRectF(-15.5, -15.5, 34, 34)
 
     ___ paint  painter, option, widget):
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(__.darkGray)
         painter.drawEllipse(-12, -12, 30, 30)
-        painter.setPen(QPen(__.black, 1))
+        painter.sP..(?P..(__.black, 1))
         painter.sB..(?B..(color))
         painter.drawEllipse(-15, -15, 30, 30)
 
@@ -94,7 +94,7 @@ c_ ColorItem(QGraphicsItem):
 
             image _ QImage(root + '/images/head.png')
             mime.setImageData(image)
-            drag.setPixmap(?P...fromImage(image).scaled(30,40))
+            drag.sP..(?P...fromImage(image).scaled(30,40))
             drag.setHotSpot(QPoint(15, 30))
         ____
             mime.setColorData(color)
@@ -111,7 +111,7 @@ c_ ColorItem(QGraphicsItem):
 
             pixmap.setMask(pixmap.createHeuristicMask())
 
-            drag.setPixmap(pixmap)
+            drag.sP..(pixmap)
             drag.setHotSpot(QPoint(15, 20))
 
         drag.e..
@@ -162,14 +162,14 @@ c_ RobotHead(RobotPart):
     ___ paint  painter, option, widget_None):
         __ pixmap.isNull
             painter.sB..(color.lighter(130) __ dragOver ____ color)
-            painter.drawRoundedRect(-10, -30, 20, 30, 25, 25, __.RelativeSize)
+            painter.dRR..(-10, -30, 20, 30, 25, 25, __.RelativeSize)
             painter.sB..(__.white)
             painter.drawEllipse(-7, -3 - 20, 7, 7)
             painter.drawEllipse(0, -3 - 20, 7, 7)
             painter.sB..(__.black)
             painter.drawEllipse(-5, -1 - 20, 2, 2)
             painter.drawEllipse(2, -1 - 20, 2, 2)
-            painter.setPen(QPen(__.black, 2))
+            painter.sP..(?P..(__.black, 2))
             painter.sB..(__.NoBrush)
             painter.drawArc(-6, -2 - 20, 12, 15, 190 * 16, 160 * 16)
         ____
@@ -199,7 +199,7 @@ c_ RobotTorso(RobotPart):
 
     ___ paint  painter, option, widget_None):
         painter.sB..(color.lighter(130) __ dragOver ____ color)
-        painter.drawRoundedRect(-20, -20, 40, 60, 25, 25, __.RelativeSize)
+        painter.dRR..(-20, -20, 40, 60, 25, 25, __.RelativeSize)
         painter.drawEllipse(-25, -20, 20, 20)
         painter.drawEllipse(5, -20, 20, 20)
         painter.drawEllipse(-20, 22, 20, 20)
@@ -212,7 +212,7 @@ c_ RobotLimb(RobotPart):
 
     ___ paint  painter, option, widget_None):
         painter.sB..(color.lighter(130) __ dragOver ____  color)
-        painter.drawRoundedRect(boundingRect(), 50, 50, __.RelativeSize)
+        painter.dRR..(boundingRect(), 50, 50, __.RelativeSize)
         painter.drawEllipse(-5, -5, 10, 10)
 
 
@@ -252,21 +252,21 @@ c_ Robot(RobotPart):
         ___ item, pos_x, pos_y, start_rot, end_rot, scale __ settings: 
             item.setPos(pos_x, pos_y)
 
-            rot_animation _ QPropertyAnimation(item, b'rotation')
-            rot_animation.setStartValue(start_rot)
-            rot_animation.setEndValue(end_rot)
+            rot_animation _ ?PA..(item, b'rotation')
+            rot_animation.sSV..(start_rot)
+            rot_animation.sEV..(end_rot)
             rot_animation.setEasingCurve(QEasingCurve.SineCurve)
-            rot_animation.setDuration(2000)
+            rot_animation.sD..(2000)
             animation.addAnimation(rot_animation)
 
             __ scale > 0:
-                scale_animation _ QPropertyAnimation(item, b'scale')
-                scale_animation.setEndValue(scale)
+                scale_animation _ ?PA..(item, b'scale')
+                scale_animation.sEV..(scale)
                 scale_animation.setEasingCurve(QEasingCurve.SineCurve)
-                scale_animation.setDuration(2000)
+                scale_animation.sD..(2000)
                 animation.addAnimation(scale_animation)
 
-        animation.setLoopCount(-1)
+        animation.sLC..(-1)
         animation.start()
 
     ___ boundingRect

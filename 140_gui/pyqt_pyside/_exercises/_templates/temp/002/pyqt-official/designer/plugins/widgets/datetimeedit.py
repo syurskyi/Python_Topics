@@ -24,7 +24,7 @@
 # OR PERFORMANCE OF THIS SOFTWARE.                                           #
 #----------------------------------------------------------------------------#
 
-____ ?.?C.. ______ pyqtProperty, __
+____ ?.?C.. ______ pP.., __
 ____ ?.?W.. ______ (?A.., QCalendarWidget, ?DE..,
         ?DTE.., QHBoxLayout, ?W..)
 
@@ -71,7 +71,7 @@ c_ PyDateEdit(?DE..):
     #
     ___ getCalendarPopup
         r_ T..
-    calendarPopup _ pyqtProperty(bool, fget_getCalendarPopup)
+    calendarPopup _ pP..(bool, fget_getCalendarPopup)
 
     #
     # Property firstDayOfWeek: Qt::DayOfWeek
@@ -91,7 +91,7 @@ c_ PyDateEdit(?DE..):
             __firstDayOfWeek _ __.Monday
             __ __cw:
                 __cw.setFirstDayOfWeek(__.Monday)
-    firstDayOfWeek _ pyqtProperty(__.DayOfWeek,
+    firstDayOfWeek _ pP..(__.DayOfWeek,
                                          fget_getFirstDayOfWeek,
                                          fset_setFirstDayOfWeek,
                                          freset_resetFirstDayOfWeek)
@@ -114,7 +114,7 @@ c_ PyDateEdit(?DE..):
             __gridVisible _ F..
             __ __cw:
                 __cw.setGridVisible F..
-    gridVisible _ pyqtProperty(bool,
+    gridVisible _ pP..(bool,
                                       fget_isGridVisible,
                                       fset_setGridVisible,
                                       freset_resetGridVisible)
@@ -137,7 +137,7 @@ c_ PyDateEdit(?DE..):
             __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
             __ __cw:
                 __cw.setHorizontalHeaderFormat(QCalendarWidget.ShortDayNames)
-    horizontalHeaderFormat _ pyqtProperty(QCalendarWidget.HorizontalHeaderFormat,
+    horizontalHeaderFormat _ pP..(QCalendarWidget.HorizontalHeaderFormat,
                                                  fget_getHorizontalHeaderFormat,
                                                  fset_setHorizontalHeaderFormat,
                                                  freset_resetHorizontalHeaderFormat)
@@ -160,7 +160,7 @@ c_ PyDateEdit(?DE..):
             __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
             __ __cw:
                 __cw.setVerticalHeaderFormat(QCalendarWidget.ISOWeekNumbers)
-    verticalHeaderFormat _ pyqtProperty(QCalendarWidget.VerticalHeaderFormat,
+    verticalHeaderFormat _ pP..(QCalendarWidget.VerticalHeaderFormat,
                                                fget_getVerticalHeaderFormat,
                                                fset_setVerticalHeaderFormat,
                                                freset_resetVerticalHeaderFormat)
@@ -183,7 +183,7 @@ c_ PyDateEdit(?DE..):
             __navigationBarVisible _ T..
             __ __cw:
                 __cw.setNavigationBarVisible( st.
-    navigationBarVisible _ pyqtProperty(bool,
+    navigationBarVisible _ pP..(bool,
                                                fget_isNavigationBarVisible,
                                                fset_setNavigationBarVisible,
                                                freset_resetNavigationBarVisible)
@@ -231,7 +231,7 @@ c_ PyDateTimeEdit(?DTE..):
     #
     ___ getCalendarPopup
         r_ T..
-    calendarPopup _ pyqtProperty(bool, fget_getCalendarPopup)
+    calendarPopup _ pP..(bool, fget_getCalendarPopup)
 
     #
     # Property firstDayOfWeek: Qt::DayOfWeek
@@ -251,7 +251,7 @@ c_ PyDateTimeEdit(?DTE..):
             __firstDayOfWeek _ __.Monday
             __ __cw:
                 __cw.setFirstDayOfWeek(__.Monday)
-    firstDayOfWeek _ pyqtProperty(__.DayOfWeek,
+    firstDayOfWeek _ pP..(__.DayOfWeek,
                                          fget_getFirstDayOfWeek,
                                          fset_setFirstDayOfWeek,
                                          freset_resetFirstDayOfWeek)
@@ -274,7 +274,7 @@ c_ PyDateTimeEdit(?DTE..):
             __gridVisible _ F..
             __ __cw:
                 __cw.setGridVisible F..
-    gridVisible _ pyqtProperty(bool,
+    gridVisible _ pP..(bool,
                                       fget_isGridVisible,
                                       fset_setGridVisible,
                                       freset_resetGridVisible)
@@ -297,7 +297,7 @@ c_ PyDateTimeEdit(?DTE..):
             __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
             __ __cw:
                 __cw.setHorizontalHeaderFormat(QCalendarWidget.ShortDayNames)
-    horizontalHeaderFormat _ pyqtProperty(QCalendarWidget.HorizontalHeaderFormat,
+    horizontalHeaderFormat _ pP..(QCalendarWidget.HorizontalHeaderFormat,
                                                  fget_getHorizontalHeaderFormat,
                                                  fset_setHorizontalHeaderFormat,
                                                  freset_resetHorizontalHeaderFormat)
@@ -320,7 +320,7 @@ c_ PyDateTimeEdit(?DTE..):
             __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
             __ __cw:
                 __cw.setVerticalHeaderFormat(QCalendarWidget.ISOWeekNumbers)
-    verticalHeaderFormat _ pyqtProperty(QCalendarWidget.VerticalHeaderFormat,
+    verticalHeaderFormat _ pP..(QCalendarWidget.VerticalHeaderFormat,
                                                fget_getVerticalHeaderFormat,
                                                fset_setVerticalHeaderFormat,
                                                freset_resetVerticalHeaderFormat)
@@ -343,7 +343,7 @@ c_ PyDateTimeEdit(?DTE..):
             __navigationBarVisible _ T..
             __ __cw:
                 __cw.setNavigationBarVisible( st.
-    navigationBarVisible _ pyqtProperty(bool,
+    navigationBarVisible _ pP..(bool,
                                                fget_isNavigationBarVisible,
                                                fset_setNavigationBarVisible,
                                                freset_resetNavigationBarVisible)

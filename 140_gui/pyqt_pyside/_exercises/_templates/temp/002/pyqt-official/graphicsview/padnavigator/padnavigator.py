@@ -44,12 +44,12 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
+____ ?.?C.. ______ (pP.., QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
-        QPropertyAnimation, QRectF, QSequentialAnimationGroup, ?S.., QState,
+        ?PA.., QRectF, QSequentialAnimationGroup, ?S.., QState,
         QStateMachine, __)
 ____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
-        ?P.., QPen, ?P.., QTransform)
+        ?P.., ?P.., ?P.., QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
         QKeyEventTransition, ?W..)
@@ -92,53 +92,53 @@ c_ PadNavigator(QGraphicsView):
                 ?C..(__.gray), pad)
         selectionItem.setZValue(0.5)
 
-        smoothSplashMove _ QPropertyAnimation(splash, b'y')
-        smoothSplashOpacity _ QPropertyAnimation(splash, b'opacity')
+        smoothSplashMove _ ?PA..(splash, b'y')
+        smoothSplashOpacity _ ?PA..(splash, b'opacity')
         smoothSplashMove.setEasingCurve(QEasingCurve.InQuad)
-        smoothSplashMove.setDuration(250)
-        smoothSplashOpacity.setDuration(250)
+        smoothSplashMove.sD..(250)
+        smoothSplashOpacity.sD..(250)
 
-        smoothXSelection _ QPropertyAnimation(selectionItem, b'x')
-        smoothYSelection _ QPropertyAnimation(selectionItem, b'y')
-        smoothXRotation _ QPropertyAnimation(xRotation, b'angle')
-        smoothYRotation _ QPropertyAnimation(yRotation, b'angle')
-        smoothXSelection.setDuration(125)
-        smoothYSelection.setDuration(125)
-        smoothXRotation.setDuration(125)
-        smoothYRotation.setDuration(125)
+        smoothXSelection _ ?PA..(selectionItem, b'x')
+        smoothYSelection _ ?PA..(selectionItem, b'y')
+        smoothXRotation _ ?PA..(xRotation, b'angle')
+        smoothYRotation _ ?PA..(yRotation, b'angle')
+        smoothXSelection.sD..(125)
+        smoothYSelection.sD..(125)
+        smoothXRotation.sD..(125)
+        smoothYRotation.sD..(125)
         smoothXSelection.setEasingCurve(QEasingCurve.InOutQuad)
         smoothYSelection.setEasingCurve(QEasingCurve.InOutQuad)
         smoothXRotation.setEasingCurve(QEasingCurve.InOutQuad)
         smoothYRotation.setEasingCurve(QEasingCurve.InOutQuad)
 
-        smoothFlipRotation _ QPropertyAnimation(flipRotation, b'angle')
-        smoothFlipScale _ QPropertyAnimation(pad, b'scale')
-        smoothFlipXRotation _ QPropertyAnimation(xRotation, b'angle')
-        smoothFlipYRotation _ QPropertyAnimation(yRotation, b'angle')
+        smoothFlipRotation _ ?PA..(flipRotation, b'angle')
+        smoothFlipScale _ ?PA..(pad, b'scale')
+        smoothFlipXRotation _ ?PA..(xRotation, b'angle')
+        smoothFlipYRotation _ ?PA..(yRotation, b'angle')
         flipAnimation _ QParallelAnimationGroup
-        smoothFlipScale.setDuration(500)
-        smoothFlipRotation.setDuration(500)
-        smoothFlipXRotation.setDuration(500)
-        smoothFlipYRotation.setDuration(500)
+        smoothFlipScale.sD..(500)
+        smoothFlipRotation.sD..(500)
+        smoothFlipXRotation.sD..(500)
+        smoothFlipYRotation.sD..(500)
         smoothFlipScale.setEasingCurve(QEasingCurve.InOutQuad)
         smoothFlipRotation.setEasingCurve(QEasingCurve.InOutQuad)
         smoothFlipXRotation.setEasingCurve(QEasingCurve.InOutQuad)
         smoothFlipYRotation.setEasingCurve(QEasingCurve.InOutQuad)
-        smoothFlipScale.setKeyValueAt(0, 1.0)
-        smoothFlipScale.setKeyValueAt(0.5, 0.7)
-        smoothFlipScale.setKeyValueAt(1, 1.0)
+        smoothFlipScale.sKVA..(0, 1.0)
+        smoothFlipScale.sKVA..(0.5, 0.7)
+        smoothFlipScale.sKVA..(1, 1.0)
         flipAnimation.addAnimation(smoothFlipRotation)
         flipAnimation.addAnimation(smoothFlipScale)
         flipAnimation.addAnimation(smoothFlipXRotation)
         flipAnimation.addAnimation(smoothFlipYRotation)
 
         setVariablesSequence _ QSequentialAnimationGroup()
-        setFillAnimation _ QPropertyAnimation(pad, b'fill')
-        setBackItemVisibleAnimation _ QPropertyAnimation(backItem, b'visible')
-        setSelectionItemVisibleAnimation _ QPropertyAnimation(selectionItem, b'visible')
-        setFillAnimation.setDuration(0)
-        setBackItemVisibleAnimation.setDuration(0)
-        setSelectionItemVisibleAnimation.setDuration(0)
+        setFillAnimation _ ?PA..(pad, b'fill')
+        setBackItemVisibleAnimation _ ?PA..(backItem, b'visible')
+        setSelectionItemVisibleAnimation _ ?PA..(selectionItem, b'visible')
+        setFillAnimation.sD..(0)
+        setBackItemVisibleAnimation.sD..(0)
+        setSelectionItemVisibleAnimation.sD..(0)
         setVariablesSequence.addPause(250)
         setVariablesSequence.addAnimation(setBackItemVisibleAnimation)
         setVariablesSequence.addAnimation(setSelectionItemVisibleAnimation)
@@ -227,8 +227,8 @@ c_ PadNavigator(QGraphicsView):
                 frontState.assignProperty(icon, "visible",  st.
                 backState.assignProperty(icon, "visible", F..)
 
-                setIconVisibleAnimation _ QPropertyAnimation(icon, b'visible')
-                setIconVisibleAnimation.setDuration(0)
+                setIconVisibleAnimation _ ?PA..(icon, b'visible')
+                setIconVisibleAnimation.sD..(0)
                 setVariablesSequence.addAnimation(setIconVisibleAnimation)
 
         scene _ QGraphicsScene
@@ -284,20 +284,20 @@ c_ RoundRectItem(QGraphicsObject):
     ___ fill
         r_ fillRect
 
-    fill _ pyqtProperty(bool, fill, setFill)
+    fill _ pP..(bool, fill, setFill)
 
     ___ paint  painter, option, widget):
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(?C..(0, 0, 0, 64))
-        painter.drawRoundedRect(bounds.translated(2, 2), 25.0, 25.0)
+        painter.dRR..(bounds.translated(2, 2), 25.0, 25.0)
 
         __ fillRect:
             painter.sB..(?A...p...brush(?P...Window))
         ____
             painter.sB..(gradient)
 
-        painter.setPen(QPen(__.black, 1))
-        painter.drawRoundedRect(bounds, 25.0, 25.0)
+        painter.sP..(?P..(__.black, 1))
+        painter.dRR..(bounds, 25.0, 25.0)
         __ no. pix.isNull
             painter.scale(1.95, 1.95)
             painter.drawPixmap(-pix.width() / 2, -pix.height() / 2, pix)
@@ -308,7 +308,7 @@ c_ RoundRectItem(QGraphicsObject):
     ___ pixmap
         r_ ?P..(pix)
 
-    ___ setPixmap  pixmap):
+    ___ sP..  pixmap):
         pix _ ?P..(pixmap)
         update()
 
@@ -336,7 +336,7 @@ c_ FlippablePad(RoundRectItem):
                 rect _ RoundRectItem(iconRect, iconColor, self)
                 rect.setZValue(1)
                 rect.setPos(posForLocation(x, y, size))
-                rect.setPixmap(pixmaps[n % le.(pixmaps)])
+                rect.sP..(pixmaps[n % le.(pixmaps)])
                 n +_ 1
 
                 row.ap..(rect)
@@ -371,17 +371,17 @@ c_ SplashItem(QGraphicsObject):
         r_ QRectF(0, 0, 400, 175)
 
     ___ paint  painter, option, widget):
-        painter.setPen(QPen(__.black, 2))
+        painter.sP..(?P..(__.black, 2))
         painter.sB..(?C..(245, 245, 255, 220))
         painter.setClipRect(boundingRect())
-        painter.drawRoundedRect(3, -100 + 3, 400 - 6, 250 - 6, 25.0, 25.0)
+        painter.dRR..(3, -100 + 3, 400 - 6, 250 - 6, 25.0, 25.0)
 
         textRect _ boundingRect().adjusted(10, 10, -10, -10)
         flags _ int(__.AlignTop | __.AlignLeft) | __.TextWordWrap
 
         font _ ?F..()
         font.setPixelSize(18)
-        painter.setPen(__.black)
+        painter.sP..(__.black)
         painter.sF..(font)
         painter.drawText(textRect, flags, t__)
 

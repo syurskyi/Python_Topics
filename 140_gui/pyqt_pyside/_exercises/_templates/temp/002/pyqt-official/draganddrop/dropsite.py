@@ -76,7 +76,7 @@ c_ DropArea(QLabel):
     ___ dropEvent  event):
         mimeData _ event.mimeData()
         __ mimeData.hasImage
-            setPixmap(?P..(mimeData.imageData()))
+            sP..(?P..(mimeData.imageData()))
         ____ mimeData.hasHtml
             sT..(mimeData.html())
             setTextFormat(__.RichText)

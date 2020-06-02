@@ -15,17 +15,17 @@ c_ MainWindow(qtw.?MW..):
         navigation _ aTB..('Navigation')
         style _ style()
         back _ navigation.aA..('Back')
-        back.setIcon(style.standardIcon(style.SP_ArrowBack))
+        back.sI..(style.standardIcon(style.SP_ArrowBack))
         forward _ navigation.aA..('Forward')
-        forward.setIcon(style.standardIcon(style.SP_ArrowForward))
+        forward.sI..(style.standardIcon(style.SP_ArrowForward))
         reload _ navigation.aA..('Reload')
-        reload.setIcon(style.standardIcon(style.SP_BrowserReload))
+        reload.sI..(style.standardIcon(style.SP_BrowserReload))
         stop _ navigation.aA..('Stop')
-        stop.setIcon(style.standardIcon(style.SP_BrowserStop))
+        stop.sI..(style.standardIcon(style.SP_BrowserStop))
         urlbar _ qtw.?LE..
         navigation.aW..(urlbar)
         go _ navigation.aA..('Go')
-        go.setIcon(style.standardIcon(style.SP_DialogOkButton))
+        go.sI..(style.standardIcon(style.SP_DialogOkButton))
 
         # single browser view
         #webview = qtwe.QWebEngineView()

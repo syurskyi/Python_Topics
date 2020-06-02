@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ ?D.., QPoint, QRect, ?S.., __
-____ ?.?G.. ______ QImage, QImageWriter, QPainter, QPen, qRgb
+____ ?.?G.. ______ QImage, QImageWriter, QPainter, ?P.., qRgb
 ____ ?.?W.. ______ (?A.., ?A.., QColorDialog, ?FD..,
         QInputDialog, ?MW.., QMenu, ?MB.., ?W..)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
@@ -124,7 +124,7 @@ c_ ScribbleArea(?W..):
 
     ___ drawLineTo  endPoint):
         painter _ QPainter(image)
-        painter.setPen(QPen(myPenColor, myPenWidth, __.SolidLine,
+        painter.sP..(?P..(myPenColor, myPenWidth, __.SolidLine,
                 __.RoundCap, __.RoundJoin))
         painter.drawLine(lastPoint, endPoint)
         modified _ T..
@@ -258,7 +258,7 @@ c_ MainWindow ?MW..
         aboutAct _ ?A..("&About", self, triggered_self.about)
 
         aboutQtAct _ ?A..("About &Qt", self,
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
         saveAsMenu _ QMenu("&Save As", self)

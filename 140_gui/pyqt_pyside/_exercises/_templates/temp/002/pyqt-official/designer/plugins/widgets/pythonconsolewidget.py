@@ -70,7 +70,7 @@ c_ PythonConsoleWidget(QLineEdit):
     ___ execute 
     
         # Define this here to give users something to look at.
-        qApp _ ?A...instance()
+        qApp _ ?A...i.. 
         
         expression _ t__()
         ___

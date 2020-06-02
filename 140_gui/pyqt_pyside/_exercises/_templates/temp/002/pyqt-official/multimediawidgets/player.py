@@ -51,7 +51,7 @@ ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
         ?FL.., QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
-        QSizePolicy, ?S.., QStyle, QToolButton, QVBoxLayout, ?W..)
+        QSizePolicy, ?S.., ?S.., QToolButton, QVBoxLayout, ?W..)
 
 
 c_ VideoWidget(QVideoWidget):
@@ -175,23 +175,23 @@ c_ PlayerControls(?W..):
         playerMuted _ F..
 
         playButton _ QToolButton(c___self.playClicked)
-        playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
+        playButton.sI..(style().standardIcon(?S...SP_MediaPlay))
 
         stopButton _ QToolButton(c___self.stop)
-        stopButton.setIcon(style().standardIcon(QStyle.SP_MediaStop))
+        stopButton.sI..(style().standardIcon(?S...SP_MediaStop))
         stopButton.sE.. F..
 
         nextButton _ QToolButton(c___self.n__)
-        nextButton.setIcon(
-                style().standardIcon(QStyle.SP_MediaSkipForward))
+        nextButton.sI..(
+                style().standardIcon(?S...SP_MediaSkipForward))
 
         previousButton _ QToolButton(c___self.previous)
-        previousButton.setIcon(
-                style().standardIcon(QStyle.SP_MediaSkipBackward))
+        previousButton.sI..(
+                style().standardIcon(?S...SP_MediaSkipBackward))
 
         muteButton _ QToolButton(c___self.muteClicked)
-        muteButton.setIcon(
-                style().standardIcon(QStyle.SP_MediaVolume))
+        muteButton.sI..(
+                style().standardIcon(?S...SP_MediaVolume))
 
         volumeSlider _ ?S..(__.H..,
                 sliderMoved_self.changeVolume)
@@ -223,16 +223,16 @@ c_ PlayerControls(?W..):
 
             __ state __ ?MP...StoppedState:
                 stopButton.sE.. F..
-                playButton.setIcon(
-                        style().standardIcon(QStyle.SP_MediaPlay))
+                playButton.sI..(
+                        style().standardIcon(?S...SP_MediaPlay))
             ____ state __ ?MP...PlayingState:
                 stopButton.sE..( st.
-                playButton.setIcon(
-                        style().standardIcon(QStyle.SP_MediaPause))
+                playButton.sI..(
+                        style().standardIcon(?S...SP_MediaPause))
             ____ state __ ?MP...PausedState:
                 stopButton.sE..( st.
-                playButton.setIcon(
-                        style().standardIcon(QStyle.SP_MediaPlay))
+                playButton.sI..(
+                        style().standardIcon(?S...SP_MediaPlay))
 
     ___ volume
         r_ volumeSlider.v..
@@ -247,9 +247,9 @@ c_ PlayerControls(?W..):
         __ muted !_ playerMuted:
             playerMuted _ muted
 
-            muteButton.setIcon(
+            muteButton.sI..(
                     style().standardIcon(
-                            QStyle.SP_MediaVolumeMuted __ muted ____ QStyle.SP_MediaVolume))
+                            ?S...SP_MediaVolumeMuted __ muted ____ ?S...SP_MediaVolume))
 
     ___ playClicked
         __ playerState __ (?MP...StoppedState, ?MP...PausedState):

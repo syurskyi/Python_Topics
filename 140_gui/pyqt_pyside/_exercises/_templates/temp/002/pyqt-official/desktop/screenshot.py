@@ -99,7 +99,7 @@ c_ Screenshot(?W..):
 
     ___ shootScreen
         __ delaySpinBox.v.. !_ 0:
-            ?A...instance().beep()
+            ?A...i.. .beep()
 
         screen _ ?A...primaryScreen()
         __ screen __ no. N..:
@@ -158,7 +158,7 @@ c_ Screenshot(?W..):
         r_ button
 
     ___ updateScreenshotLabel
-        screenshotLabel.setPixmap(originalPixmap.scaled(
+        screenshotLabel.sP..(originalPixmap.scaled(
                 screenshotLabel.size(), __.KeepAspectRatio,
                 __.SmoothTransformation))
 

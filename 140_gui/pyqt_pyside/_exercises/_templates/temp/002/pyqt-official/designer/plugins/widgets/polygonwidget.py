@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ math
 
-____ ?.?C.. ______ pyqtProperty, pyqtSlot, QPointF, ?S..
+____ ?.?C.. ______ pP.., pyqtSlot, QPointF, ?S..
 ____ ?.?G.. ______ ?B.., ?C.., QPainter, QPainterPath, QRadialGradient
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -106,7 +106,7 @@ c_ PolygonWidget(?W..):
         _angle _ min(max(0, angle), 360)
         update()
     
-    angle _ pyqtProperty(int, getAngle, setAngle)
+    angle _ pP..(int, getAngle, setAngle)
     
     # The innerRadius property is implemented using the getInnerRadius() and
     # setInnerRadius() methods.
@@ -122,7 +122,7 @@ c_ PolygonWidget(?W..):
         createGradient()
         update()
     
-    innerRadius _ pyqtProperty(int, getInnerRadius, setInnerRadius)
+    innerRadius _ pP..(int, getInnerRadius, setInnerRadius)
     
     # The outerRadius property is implemented using the getOuterRadius() and
     # setOuterRadius() methods.
@@ -138,7 +138,7 @@ c_ PolygonWidget(?W..):
         createGradient()
         update()
     
-    outerRadius _ pyqtProperty(int, getOuterRadius, setOuterRadius)
+    outerRadius _ pP..(int, getOuterRadius, setOuterRadius)
     
     # The numberOfSides property is implemented using the getNumberOfSides()
     # and setNumberOfSides() methods.
@@ -153,7 +153,7 @@ c_ PolygonWidget(?W..):
         createPath()
         update()
     
-    numberOfSides _ pyqtProperty(int, getNumberOfSides, setNumberOfSides)
+    numberOfSides _ pP..(int, getNumberOfSides, setNumberOfSides)
     
     # The innerColor property is implemented using the getInnerColor() and
     # setInnerColor() methods.
@@ -166,7 +166,7 @@ c_ PolygonWidget(?W..):
         createGradient()
         update()
     
-    innerColor _ pyqtProperty(?C.., getInnerColor, setInnerColor)
+    innerColor _ pP..(?C.., getInnerColor, setInnerColor)
     
     # The outerColor property is implemented using the getOuterColor() and
     # setOuterColor() methods.
@@ -179,7 +179,7 @@ c_ PolygonWidget(?W..):
         createGradient()
         update()
     
-    outerColor _ pyqtProperty(?C.., getOuterColor, setOuterColor)
+    outerColor _ pP..(?C.., getOuterColor, setOuterColor)
 
 
 __ __name__ __ "__main__":

@@ -70,7 +70,7 @@ c_ DragLabel(QLabel):
 
         drag _ QDrag
         drag.setMimeData(mimeData)
-        drag.setPixmap(pixmap)
+        drag.sP..(pixmap)
         drag.setHotSpot(hotSpot)
 
         dropAction _ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction)

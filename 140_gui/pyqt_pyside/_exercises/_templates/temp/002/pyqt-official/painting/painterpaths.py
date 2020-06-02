@@ -46,7 +46,7 @@ ____ math ______ cos, pi, sin
 
 ____ ?.?C.. ______ ?S.., __
 ____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
-        QPainterPath, ?P.., QPen)
+        QPainterPath, ?P.., ?P..)
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
         QSizePolicy, SB.., ?W..)
 
@@ -96,8 +96,8 @@ c_ RenderArea(?W..):
         painter.rotate(-rotationAngle)
         painter.translate(-50.0, -50.0)
 
-        painter.setPen(
-                QPen(penColor, penWidth, __.SolidLine, __.RoundCap,
+        painter.sP..(
+                ?P..(penColor, penWidth, __.SolidLine, __.RoundCap,
                         __.RoundJoin))
         gradient _ QLinearGradient(0, 0, 0, 100)
         gradient.setColorAt(0.0, fillColor1)

@@ -22,7 +22,7 @@
 #----------------------------------------------------------------------------#
 
 
-____ ?.?G.. ______ QIcon
+____ ?.?G.. ______ ?I..
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ datetimeedit ______ PyDateEdit, PyDateTimeEdit
@@ -56,7 +56,7 @@ c_ PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
         r_ F..
 
     ___ icon 
-        r_ QIcon()
+        r_ ?I..
 
     ___ domXml 
         r_ '<widget class="PyDateEdit" name="pyDateEdit">\n</widget>\n'
@@ -102,7 +102,7 @@ c_ PyDateTimeEditPlugin(QPyDesignerCustomWidgetPlugin):
         r_ F..
 
     ___ icon 
-        r_ QIcon()
+        r_ ?I..
 
     ___ domXml 
         r_ '<widget class="PyDateTimeEdit" name="pyDateTimeEdit">\n</widget>\n'

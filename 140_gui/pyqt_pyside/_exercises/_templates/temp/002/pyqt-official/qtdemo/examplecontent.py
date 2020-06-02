@@ -59,7 +59,7 @@ c_ ExampleContent(DemoItem):
 
         # Prevent a circular import.
         ____ menumanager ______ MenuManager
-        _menu_manager _ MenuManager.instance()
+        _menu_manager _ MenuManager.i.. 
 
         name _ name
         heading _ N..

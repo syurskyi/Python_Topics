@@ -45,9 +45,9 @@ class Ui_MainWindow(object):
         rectButton.sMS..(QtCore.?S..(30, 30))
         rectButton.sMS..(QtCore.?S..(30, 30))
         rectButton.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.?P..("images/layer-shape.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        rectButton.setIcon(icon)
+        icon = QtGui.?I..
+        icon.aP..(QtGui.?P..("images/layer-shape.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        rectButton.sI..(icon)
         rectButton.setCheckable( st.
         rectButton.setObjectName("rectButton")
         gridLayout.addWidget(rectButton, 6, 0, 1, 1)
@@ -55,9 +55,9 @@ class Ui_MainWindow(object):
         polylineButton.sMS..(QtCore.?S..(30, 30))
         polylineButton.sMS..(QtCore.?S..(30, 30))
         polylineButton.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.?P..("images/layer-shape-polyline.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        polylineButton.setIcon(icon1)
+        icon1 = QtGui.?I..
+        icon1.aP..(QtGui.?P..("images/layer-shape-polyline.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        polylineButton.sI..(icon1)
         polylineButton.setCheckable( st.
         polylineButton.setObjectName("polylineButton")
         gridLayout.addWidget(polylineButton, 5, 1, 1, 1)
@@ -70,9 +70,9 @@ class Ui_MainWindow(object):
         selectrectButton.sMS..(QtCore.?S..(30, 30))
         selectrectButton.sMS..(QtCore.?S..(30, 30))
         selectrectButton.setText("")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.?P..("images/selection.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        selectrectButton.setIcon(icon2)
+        icon2 = QtGui.?I..
+        icon2.aP..(QtGui.?P..("images/selection.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        selectrectButton.sI..(icon2)
         selectrectButton.setCheckable( st.
         selectrectButton.setObjectName("selectrectButton")
         gridLayout.addWidget(selectrectButton, 0, 1, 1, 1)
@@ -85,9 +85,9 @@ class Ui_MainWindow(object):
         eraserButton.sMS..(QtCore.?S..(30, 30))
         eraserButton.sMS..(QtCore.?S..(30, 30))
         eraserButton.setText("")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.?P..("images/eraser.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        eraserButton.setIcon(icon3)
+        icon3 = QtGui.?I..
+        icon3.aP..(QtGui.?P..("images/eraser.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        eraserButton.sI..(icon3)
         eraserButton.setCheckable( st.
         eraserButton.setObjectName("eraserButton")
         gridLayout.addWidget(eraserButton, 1, 0, 1, 1)
@@ -100,9 +100,9 @@ class Ui_MainWindow(object):
         stampButton.sMS..(QtCore.?S..(30, 30))
         stampButton.sMS..(QtCore.?S..(30, 30))
         stampButton.setText("")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.?P..("images/cake.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        stampButton.setIcon(icon4)
+        icon4 = QtGui.?I..
+        icon4.aP..(QtGui.?P..("images/cake.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        stampButton.sI..(icon4)
         stampButton.setCheckable( st.
         stampButton.setObjectName("stampButton")
         gridLayout.addWidget(stampButton, 2, 1, 1, 1)
@@ -115,9 +115,9 @@ class Ui_MainWindow(object):
         dropperButton.sMS..(QtCore.?S..(30, 30))
         dropperButton.sMS..(QtCore.?S..(30, 30))
         dropperButton.setText("")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.?P..("images/pipette.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        dropperButton.setIcon(icon5)
+        icon5 = QtGui.?I..
+        icon5.aP..(QtGui.?P..("images/pipette.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        dropperButton.sI..(icon5)
         dropperButton.setCheckable( st.
         dropperButton.setObjectName("dropperButton")
         gridLayout.addWidget(dropperButton, 2, 0, 1, 1)
@@ -130,9 +130,9 @@ class Ui_MainWindow(object):
         selectpolyButton.sMS..(QtCore.?S..(30, 30))
         selectpolyButton.sMS..(QtCore.?S..(30, 30))
         selectpolyButton.setText("")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.?P..("images/selection-poly.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        selectpolyButton.setIcon(icon6)
+        icon6 = QtGui.?I..
+        icon6.aP..(QtGui.?P..("images/selection-poly.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        selectpolyButton.sI..(icon6)
         selectpolyButton.setCheckable( st.
         selectpolyButton.setObjectName("selectpolyButton")
         gridLayout.addWidget(selectpolyButton, 0, 0, 1, 1)
@@ -145,9 +145,9 @@ class Ui_MainWindow(object):
         brushButton.sMS..(QtCore.?S..(30, 30))
         brushButton.sMS..(QtCore.?S..(30, 30))
         brushButton.setText("")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.?P..("images/paint-brush.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        brushButton.setIcon(icon7)
+        icon7 = QtGui.?I..
+        icon7.aP..(QtGui.?P..("images/paint-brush.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        brushButton.sI..(icon7)
         brushButton.setCheckable( st.
         brushButton.setObjectName("brushButton")
         gridLayout.addWidget(brushButton, 3, 1, 1, 1)
@@ -160,9 +160,9 @@ class Ui_MainWindow(object):
         penButton.sMS..(QtCore.?S..(30, 30))
         penButton.sMS..(QtCore.?S..(30, 30))
         penButton.setText("")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.?P..("images/pencil.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        penButton.setIcon(icon8)
+        icon8 = QtGui.?I..
+        icon8.aP..(QtGui.?P..("images/pencil.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        penButton.sI..(icon8)
         penButton.setCheckable( st.
         penButton.setObjectName("penButton")
         gridLayout.addWidget(penButton, 3, 0, 1, 1)
@@ -175,9 +175,9 @@ class Ui_MainWindow(object):
         fillButton.sMS..(QtCore.?S..(30, 30))
         fillButton.sMS..(QtCore.?S..(30, 30))
         fillButton.setText("")
-        icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.?P..("images/paint-can.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        fillButton.setIcon(icon9)
+        icon9 = QtGui.?I..
+        icon9.aP..(QtGui.?P..("images/paint-can.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        fillButton.sI..(icon9)
         fillButton.setCheckable( st.
         fillButton.setObjectName("fillButton")
         gridLayout.addWidget(fillButton, 1, 1, 1, 1)
@@ -190,9 +190,9 @@ class Ui_MainWindow(object):
         textButton.sMS..(QtCore.?S..(30, 30))
         textButton.sMS..(QtCore.?S..(30, 30))
         textButton.setText("")
-        icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.?P..("images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        textButton.setIcon(icon10)
+        icon10 = QtGui.?I..
+        icon10.aP..(QtGui.?P..("images/edit.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        textButton.sI..(icon10)
         textButton.setCheckable( st.
         textButton.setObjectName("textButton")
         gridLayout.addWidget(textButton, 4, 1, 1, 1)
@@ -200,9 +200,9 @@ class Ui_MainWindow(object):
         polygonButton.sMS..(QtCore.?S..(30, 30))
         polygonButton.sMS..(QtCore.?S..(30, 30))
         polygonButton.setText("")
-        icon11 = QtGui.QIcon()
-        icon11.addPixmap(QtGui.?P..("images/layer-shape-polygon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        polygonButton.setIcon(icon11)
+        icon11 = QtGui.?I..
+        icon11.aP..(QtGui.?P..("images/layer-shape-polygon.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        polygonButton.sI..(icon11)
         polygonButton.setCheckable( st.
         polygonButton.setObjectName("polygonButton")
         gridLayout.addWidget(polygonButton, 6, 1, 1, 1)
@@ -210,9 +210,9 @@ class Ui_MainWindow(object):
         roundrectButton.sMS..(QtCore.?S..(30, 30))
         roundrectButton.sMS..(QtCore.?S..(30, 30))
         roundrectButton.setText("")
-        icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.?P..("images/layer-shape-round.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        roundrectButton.setIcon(icon12)
+        icon12 = QtGui.?I..
+        icon12.aP..(QtGui.?P..("images/layer-shape-round.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        roundrectButton.sI..(icon12)
         roundrectButton.setCheckable( st.
         roundrectButton.setObjectName("roundrectButton")
         gridLayout.addWidget(roundrectButton, 7, 1, 1, 1)
@@ -220,9 +220,9 @@ class Ui_MainWindow(object):
         ellipseButton.sMS..(QtCore.?S..(30, 30))
         ellipseButton.sMS..(QtCore.?S..(30, 30))
         ellipseButton.setText("")
-        icon13 = QtGui.QIcon()
-        icon13.addPixmap(QtGui.?P..("images/layer-shape-ellipse.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        ellipseButton.setIcon(icon13)
+        icon13 = QtGui.?I..
+        icon13.aP..(QtGui.?P..("images/layer-shape-ellipse.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        ellipseButton.sI..(icon13)
         ellipseButton.setCheckable( st.
         ellipseButton.setObjectName("ellipseButton")
         gridLayout.addWidget(ellipseButton, 7, 0, 1, 1)
@@ -230,9 +230,9 @@ class Ui_MainWindow(object):
         lineButton.sMS..(QtCore.?S..(30, 30))
         lineButton.sMS..(QtCore.?S..(30, 30))
         lineButton.setText("")
-        icon14 = QtGui.QIcon()
-        icon14.addPixmap(QtGui.?P..("images/layer-shape-line.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        lineButton.setIcon(icon14)
+        icon14 = QtGui.?I..
+        icon14.aP..(QtGui.?P..("images/layer-shape-line.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        lineButton.sI..(icon14)
         lineButton.setCheckable( st.
         lineButton.setObjectName("lineButton")
         gridLayout.addWidget(lineButton, 5, 0, 1, 1)
@@ -245,9 +245,9 @@ class Ui_MainWindow(object):
         sprayButton.sMS..(QtCore.?S..(30, 30))
         sprayButton.sMS..(QtCore.?S..(30, 30))
         sprayButton.setText("")
-        icon15 = QtGui.QIcon()
-        icon15.addPixmap(QtGui.?P..("images/spray.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        sprayButton.setIcon(icon15)
+        icon15 = QtGui.?I..
+        icon15.aP..(QtGui.?P..("images/spray.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        sprayButton.sI..(icon15)
         sprayButton.setCheckable( st.
         sprayButton.setFlat(F..)
         sprayButton.setObjectName("sprayButton")
@@ -645,14 +645,14 @@ class Ui_MainWindow(object):
         actionClearImage = QtWidgets.QAction(MainWindow)
         actionClearImage.setObjectName("actionClearImage")
         actionOpenImage = QtWidgets.QAction(MainWindow)
-        icon16 = QtGui.QIcon()
-        icon16.addPixmap(QtGui.?P..("images/blue-folder-open-image.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        actionOpenImage.setIcon(icon16)
+        icon16 = QtGui.?I..
+        icon16.aP..(QtGui.?P..("images/blue-folder-open-image.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        actionOpenImage.sI..(icon16)
         actionOpenImage.setObjectName("actionOpenImage")
         actionSaveImage = QtWidgets.QAction(MainWindow)
-        icon17 = QtGui.QIcon()
-        icon17.addPixmap(QtGui.?P..("images/disk.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        actionSaveImage.setIcon(icon17)
+        icon17 = QtGui.?I..
+        icon17.aP..(QtGui.?P..("images/disk.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        actionSaveImage.sI..(icon17)
         actionSaveImage.setObjectName("actionSaveImage")
         actionInvertColors = QtWidgets.QAction(MainWindow)
         actionInvertColors.setObjectName("actionInvertColors")
@@ -661,33 +661,33 @@ class Ui_MainWindow(object):
         actionFlipVertical = QtWidgets.QAction(MainWindow)
         actionFlipVertical.setObjectName("actionFlipVertical")
         actionNewImage = QtWidgets.QAction(MainWindow)
-        icon18 = QtGui.QIcon()
-        icon18.addPixmap(QtGui.?P..("images/document-image.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        actionNewImage.setIcon(icon18)
+        icon18 = QtGui.?I..
+        icon18.aP..(QtGui.?P..("images/document-image.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        actionNewImage.sI..(icon18)
         actionNewImage.setObjectName("actionNewImage")
         actionBold = QtWidgets.QAction(MainWindow)
         actionBold.setCheckable( st.
-        icon19 = QtGui.QIcon()
-        icon19.addPixmap(QtGui.?P..("images/edit-bold.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        actionBold.setIcon(icon19)
+        icon19 = QtGui.?I..
+        icon19.aP..(QtGui.?P..("images/edit-bold.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        actionBold.sI..(icon19)
         actionBold.setObjectName("actionBold")
         actionItalic = QtWidgets.QAction(MainWindow)
         actionItalic.setCheckable( st.
-        icon20 = QtGui.QIcon()
-        icon20.addPixmap(QtGui.?P..("images/edit-italic.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        actionItalic.setIcon(icon20)
+        icon20 = QtGui.?I..
+        icon20.aP..(QtGui.?P..("images/edit-italic.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        actionItalic.sI..(icon20)
         actionItalic.setObjectName("actionItalic")
         actionUnderline = QtWidgets.QAction(MainWindow)
         actionUnderline.setCheckable( st.
-        icon21 = QtGui.QIcon()
-        icon21.addPixmap(QtGui.?P..("images/edit-underline.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        actionUnderline.setIcon(icon21)
+        icon21 = QtGui.?I..
+        icon21.aP..(QtGui.?P..("images/edit-underline.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        actionUnderline.sI..(icon21)
         actionUnderline.setObjectName("actionUnderline")
         actionFillShapes = QtWidgets.QAction(MainWindow)
         actionFillShapes.setCheckable( st.
-        icon22 = QtGui.QIcon()
-        icon22.addPixmap(QtGui.?P..("images/paint-can-color.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        actionFillShapes.setIcon(icon22)
+        icon22 = QtGui.?I..
+        icon22.aP..(QtGui.?P..("images/paint-can-color.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        actionFillShapes.sI..(icon22)
         actionFillShapes.setObjectName("actionFillShapes")
         menuFIle.addAction(actionNewImage)
         menuFIle.addAction(actionOpenImage)

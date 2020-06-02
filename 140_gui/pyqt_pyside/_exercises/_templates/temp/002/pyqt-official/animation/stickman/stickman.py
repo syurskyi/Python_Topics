@@ -44,11 +44,11 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtProperty, pS.., ?DS.., ?DT__,
+____ ?.?C.. ______ (pP.., pS.., ?DS.., ?DT__,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
-        QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
+        QPointF, ?PA.., qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, __, ?T..)
-____ ?.?G.. ______ ?C.., QPen, QPainter, QPainterPath, ?P..
+____ ?.?G.. ______ ?C.., ?P.., QPainter, QPainterPath, ?P..
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView)
 
@@ -70,7 +70,7 @@ c_ Node(QGraphicsObject):
         r_ QRectF(-6.0, -6.0, 12.0, 12.0)
 
     ___ paint  painter, option, widget):
-        painter.setPen(__.white)
+        painter.sP..(__.white)
         painter.drawEllipse(QPointF(0.0, 0.0), 5.0, 5.0)
 
     ___ itemChange  change, value):
@@ -242,7 +242,7 @@ c_ StickMan(QGraphicsObject):
     ___ posFor  idx):
         r_ m_nodes[idx].pos()
 
-    @pyqtProperty(?C..)
+    @pP..(?C..)
     ___ penColor
         r_ ?C..(m_penColor)
 
@@ -250,7 +250,7 @@ c_ StickMan(QGraphicsObject):
     ___ penColor  color):
         m_penColor _ ?C..(color)
 
-    @pyqtProperty(?C..)
+    @pP..(?C..)
     ___ fillColor
         r_ ?C..(m_fillColor)
 
@@ -258,7 +258,7 @@ c_ StickMan(QGraphicsObject):
     ___ fillColor  color):
         m_fillColor _ ?C..(color)
 
-    @pyqtProperty(bool)
+    @pP..(bool)
     ___ isDead
         r_ m_isDead
 
@@ -270,7 +270,7 @@ c_ StickMan(QGraphicsObject):
         stabilize()
 
         __ m_sticks:
-            painter.setPen(__.white)
+            painter.sP..(__.white)
 
             ___ n1, n2 __ Bones:
                 node1 _ m_nodes[n1]
@@ -313,7 +313,7 @@ c_ StickMan(QGraphicsObject):
             pa__.lineTo(posFor(14))
             pa__.lineTo(posFor(15))
 
-            painter.setPen(QPen(m_penColor, 5.0, __.SolidLine, __.RoundCap))
+            painter.sP..(?P..(m_penColor, 5.0, __.SolidLine, __.RoundCap))
             painter.drawPath(pa__)
 
             n1, n2 _ Bones[0]
@@ -333,7 +333,7 @@ c_ StickMan(QGraphicsObject):
             painter.drawEllipse(QPointF(0, 0), 50.0, 50.0)
 
             painter.sB..(m_penColor)
-            painter.setPen(QPen(m_penColor, 2.5, __.SolidLine, __.RoundCap))
+            painter.sP..(?P..(m_penColor, 2.5, __.SolidLine, __.RoundCap))
 
             # Eyes.
             __ m_isDead:
@@ -355,7 +355,7 @@ c_ StickMan(QGraphicsObject):
 
             # Pupils.
             __ no. m_isDead:
-                painter.setPen(QPen(m_fillColor, 1.0, __.SolidLine, __.RoundCap))
+                painter.sP..(?P..(m_fillColor, 1.0, __.SolidLine, __.RoundCap))
                 painter.sB..(m_fillColor)
                 painter.drawEllipse(QPointF(-12.0, -25.0), 5.0, 5.0)
                 painter.drawEllipse(QPointF(22.0, -25.0), 5.0, 5.0)
@@ -507,11 +507,11 @@ c_ LifeCycle(object):
         m_keyReceiver _ keyReceiver
 
         # Create animation group to be used for all transitions.
-        m_animationGroup _ QParallelAnimationGroup()
+        m_animationGroup _ ?PAG..
         stickManNodeCount _ m_stickMan.nodeCount()
         _pas _   # list
         ___ i __ ra..(stickManNodeCount):
-            pa _ QPropertyAnimation(m_stickMan.node(i), b'pos')
+            pa _ ?PA..(m_stickMan.node(i), b'pos')
             _pas.ap..(pa)
             m_animationGroup.addAnimation(pa)
 

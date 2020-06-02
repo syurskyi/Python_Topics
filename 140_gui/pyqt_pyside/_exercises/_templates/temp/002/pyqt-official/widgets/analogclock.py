@@ -82,7 +82,7 @@ c_ AnalogClock(?W..):
         painter.translate(width() / 2, height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(AnalogClock.hourColor)
 
         painter.save()
@@ -90,13 +90,13 @@ c_ AnalogClock(?W..):
         painter.drawConvexPolygon(AnalogClock.hourHand)
         painter.restore()
 
-        painter.setPen(AnalogClock.hourColor)
+        painter.sP..(AnalogClock.hourColor)
 
         ___ i __ ra..(12):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(AnalogClock.minuteColor)
 
         painter.save()
@@ -104,7 +104,7 @@ c_ AnalogClock(?W..):
         painter.drawConvexPolygon(AnalogClock.minuteHand)
         painter.restore()
 
-        painter.setPen(AnalogClock.minuteColor)
+        painter.sP..(AnalogClock.minuteColor)
 
         ___ j __ ra..(60):
             __ (j % 5) !_ 0:

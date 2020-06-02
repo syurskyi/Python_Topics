@@ -59,19 +59,19 @@ c_ DragWidget(QFrame):
         setAcceptDrops( st.
 
         boatIcon _ QLabel
-        boatIcon.setPixmap(?P..(':/images/boat.png'))
+        boatIcon.sP..(?P..(':/images/boat.png'))
         boatIcon.move(20, 20)
         boatIcon.s..
         boatIcon.setAttribute(__.WA_DeleteOnClose)
 
         carIcon _ QLabel
-        carIcon.setPixmap(?P..(':/images/car.png'))
+        carIcon.sP..(?P..(':/images/car.png'))
         carIcon.move(120, 20)
         carIcon.s..
         carIcon.setAttribute(__.WA_DeleteOnClose)
 
         houseIcon _ QLabel
-        houseIcon.setPixmap(?P..(':/images/house.png'))
+        houseIcon.sP..(?P..(':/images/house.png'))
         houseIcon.move(20, 120)
         houseIcon.s..
         houseIcon.setAttribute(__.WA_DeleteOnClose)
@@ -98,7 +98,7 @@ c_ DragWidget(QFrame):
             dataStream >> pixmap >> offset
 
             newIcon _ QLabel
-            newIcon.setPixmap(pixmap)
+            newIcon.sP..(pixmap)
             newIcon.move(event.pos() - offset)
             newIcon.s..
             newIcon.setAttribute(__.WA_DeleteOnClose)
@@ -127,7 +127,7 @@ c_ DragWidget(QFrame):
 
         drag _ QDrag
         drag.setMimeData(mimeData)
-        drag.setPixmap(pixmap)
+        drag.sP..(pixmap)
         drag.setHotSpot(event.pos() - child.pos())
 
         tempPixmap _ ?P..(pixmap)
@@ -136,13 +136,13 @@ c_ DragWidget(QFrame):
         painter.fillRect(pixmap.rect(), ?C..(127, 127, 127, 127))
         painter.end()
 
-        child.setPixmap(tempPixmap)
+        child.sP..(tempPixmap)
 
         __ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction) __ __.MoveAction:
             child.c..
         ____
             child.s..
-            child.setPixmap(pixmap)
+            child.sP..(pixmap)
 
 
 __ ______ __ ______

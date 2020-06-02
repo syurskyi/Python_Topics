@@ -122,7 +122,7 @@ c_ MainWindow ?MW..
 
         exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application",
-                triggered_QApplication.instance().closeAllWindows)
+                triggered_QApplication.i.. .closeAllWindows)
 
         aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
@@ -130,7 +130,7 @@ c_ MainWindow ?MW..
 
         aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus 
         fileMenu _ mB.. .aM..("&File")

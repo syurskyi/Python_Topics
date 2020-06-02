@@ -108,7 +108,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
         sendButton.c__.c..(sendClickedSlot)
         actionChangeNickname.t__.c..(changeNickname)
         actionAboutQt.t__.c..(aboutQt)
-        ?A...instance().lastWindowClosed.c..(exiting)
+        ?A...i.. .lastWindowClosed.c..(exiting)
 
         # Add our D-Bus interface and connect to D-Bus.
         ChatAdaptor

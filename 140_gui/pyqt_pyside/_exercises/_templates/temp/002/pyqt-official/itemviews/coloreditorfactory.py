@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, __, QVariant
+____ ?.?C.. ______ pP.., __, QVariant
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout,
         QItemEditorCreatorBase, QItemEditorFactory, ?TW..,
@@ -63,7 +63,7 @@ c_ ColorListEditor(?CB):
     ___ sC..  color):
         sCI..(findData(color, __.DecorationRole))
 
-    color _ pyqtProperty(?C.., getColor, sC.., user_ st.
+    color _ pP..(?C.., getColor, sC.., user_ st.
 
     ___ populateList
         ___ i, colorName __ en..(?C...colorNames()):

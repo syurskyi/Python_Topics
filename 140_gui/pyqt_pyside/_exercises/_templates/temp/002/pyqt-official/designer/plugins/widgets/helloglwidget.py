@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ math
 
-____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, QPoint, ?S.., __
+____ ?.?C.. ______ pP.., pS.., pyqtSlot, QPoint, ?S.., __
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
@@ -76,7 +76,7 @@ c_ HelloGLWidget(QOpenGLWidget):
             xRotationChanged.e..(angle)
             update()
 
-    xRotation _ pyqtProperty(int, getXRotation, setXRotation)
+    xRotation _ pP..(int, getXRotation, setXRotation)
 
     # The rotation of the logo about the y-axis can be controlled using the
     # yRotation property, defined using the following getter and setter
@@ -94,7 +94,7 @@ c_ HelloGLWidget(QOpenGLWidget):
             yRotationChanged.e..(angle)
             update()
 
-    yRotation _ pyqtProperty(int, getYRotation, setYRotation)
+    yRotation _ pP..(int, getYRotation, setYRotation)
 
     # The rotation of the logo about the z-axis can be controlled using the
     # zRotation property, defined using the following getter and setter
@@ -112,7 +112,7 @@ c_ HelloGLWidget(QOpenGLWidget):
             zRotationChanged.e..(angle)
             update()
 
-    zRotation _ pyqtProperty(int, getZRotation, setZRotation)
+    zRotation _ pP..(int, getZRotation, setZRotation)
 
     ___ minimumSizeHint
         r_ ?S..(50, 50)

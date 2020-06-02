@@ -42,7 +42,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
     ___ set_board  marks):
         ___ i, square __ en..(marks):
             __ square __ mark_pngs:
-                mark _ addPixmap(mark_pngs[square])
+                mark _ aP..(mark_pngs[square])
                 mark.setPos(square_rects[i].topLeft())
                 marks.ap..(mark)
 

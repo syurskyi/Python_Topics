@@ -61,8 +61,8 @@ c_ ClassWizard(QWizard):
         addPage(OutputFilesPage())
         addPage(ConclusionPage())
 
-        setPixmap(QWizard.BannerPixmap, ?P..(':/images/banner.png'))
-        setPixmap(QWizard.BackgroundPixmap,
+        sP..(QWizard.BannerPixmap, ?P..(':/images/banner.png'))
+        sP..(QWizard.BackgroundPixmap,
                 ?P..(':/images/background.png'))
 
         sWT..("Class Wizard")
@@ -195,7 +195,7 @@ c_ IntroPage(QWizardPage):
         super(IntroPage, self). - (parent)
 
         setTitle("Introduction")
-        setPixmap(QWizard.WatermarkPixmap,
+        sP..(QWizard.WatermarkPixmap,
                 ?P..(':/images/watermark1.png'))
 
         label _ QLabel("This wizard will generate a skeleton C++ class "
@@ -217,7 +217,7 @@ c_ ClassInfoPage(QWizardPage):
         setTitle("Class Information")
         setSubTitle("Specify basic information about the class for "
                 "which you want to generate skeleton source code files.")
-        setPixmap(QWizard.LogoPixmap, ?P..(':/images/logo1.png'))
+        sP..(QWizard.LogoPixmap, ?P..(':/images/logo1.png'))
 
         classNameLabel _ QLabel("&Class name:")
         classNameLineEdit _ ?LE..
@@ -271,7 +271,7 @@ c_ CodeStylePage(QWizardPage):
 
         setTitle("Code Style Options")
         setSubTitle("Choose the formatting of the generated code.")
-        setPixmap(QWizard.LogoPixmap, ?P..(':/images/logo2.png'))
+        sP..(QWizard.LogoPixmap, ?P..(':/images/logo2.png'))
 
         commentCheckBox _ QCheckBox("&Start generated files with a comment")
         commentCheckBox.sC__( st.
@@ -338,7 +338,7 @@ c_ OutputFilesPage(QWizardPage):
         setTitle("Output Files")
         setSubTitle("Specify where you want the wizard to put the "
                 "generated skeleton code.")
-        setPixmap(QWizard.LogoPixmap, ?P..(':/images/logo3.png'))
+        sP..(QWizard.LogoPixmap, ?P..(':/images/logo3.png'))
 
         outputDirLabel _ QLabel("&Output directory:")
         outputDirLineEdit _ ?LE..
@@ -377,7 +377,7 @@ c_ ConclusionPage(QWizardPage):
         super(ConclusionPage, self). - (parent)
 
         setTitle("Conclusion")
-        setPixmap(QWizard.WatermarkPixmap,
+        sP..(QWizard.WatermarkPixmap,
                 ?P..(':/images/watermark2.png'))
 
         label _ QLabel()

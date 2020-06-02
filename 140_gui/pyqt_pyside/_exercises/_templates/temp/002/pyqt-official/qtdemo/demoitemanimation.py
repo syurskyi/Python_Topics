@@ -40,12 +40,12 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPropertyAnimation, ?T..
+____ ?.?C.. ______ ?PA.., ?T..
 
 ____ colors ______ Colors
 
 
-c_ DemoItemAnimation(QPropertyAnimation):
+c_ DemoItemAnimation(?PA..):
     ANIM_IN, ANIM_OUT, ANIM_UNSPECIFIED _ ra..(3)
 
     ___  -   item, inOrOut_ANIM_UNSPECIFIED):
@@ -64,9 +64,9 @@ c_ DemoItemAnimation(QPropertyAnimation):
     ___ setStartDelay  delay):
         _startDelay _ delay
 
-    ___ setDuration  duration):
+    ___ sD..  duration):
         duration _ int(duration * Colors.animSpeed)
-        super(DemoItemAnimation, self).setDuration(duration)
+        super(DemoItemAnimation, self).sD..(duration)
 
     ___ notOwnerOfItem 
         r_ self __ no. targetObject().currentAnimation
@@ -88,7 +88,7 @@ c_ DemoItemAnimation(QPropertyAnimation):
             __ isVisible
                 # If the item is already visible, start the animation from the
                 # item's current position rather than from the start.
-                setStartValue(item.pos())
+                sSV..(item.pos())
 
             __ fromStart:
                 setCurrentTime(0)
@@ -115,9 +115,9 @@ c_ DemoItemAnimation(QPropertyAnimation):
     ___ updateState  new, old):
         item _ targetObject()
 
-        __ new __ QPropertyAnimation.Running:
+        __ new __ ?PA...Running:
             item.animationStarted(_inOrOut)
-        ____ new __ QPropertyAnimation.Stopped:
+        ____ new __ ?PA...Stopped:
             __ _hideOnFinished:
                 item.setRecursiveVisible F..
 

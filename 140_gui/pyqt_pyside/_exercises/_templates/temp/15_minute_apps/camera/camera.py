@@ -37,12 +37,12 @@ c_ MainWindow ?MW..
         camera_toolbar.setIconSize(?S..(14, 14))
         aTB..(camera_toolbar)
 
-        photo_action _ ?A..(QIcon(__.p__ .join('images', 'camera-black.png')), "Take photo...", self)
+        photo_action _ ?A..(?I..(__.p__ .join('images', 'camera-black.png')), "Take photo...", self)
         photo_action.setStatusTip("Take photo of current view")
         photo_action.t__.c..(take_photo)
         camera_toolbar.aA..(photo_action)
 
-        change_folder_action _ ?A..(QIcon(__.p__ .join('images', 'blue-folder-horizontal-open.png')), "Change save location...", self)
+        change_folder_action _ ?A..(?I..(__.p__ .join('images', 'blue-folder-horizontal-open.png')), "Change save location...", self)
         change_folder_action.setStatusTip("Change folder where photos are saved.")
         change_folder_action.t__.c..(change_folder)
         camera_toolbar.aA..(change_folder_action)

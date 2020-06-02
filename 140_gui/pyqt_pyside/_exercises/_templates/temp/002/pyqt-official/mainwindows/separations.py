@@ -96,7 +96,7 @@ c_ FinalWidget(QFrame):
         mimeData.setData('image/png', output)
 
         drag.setMimeData(mimeData)
-        drag.setPixmap(imageLabel.pixmap().scaled(64, 64, __.KeepAspectRatio))
+        drag.sP..(imageLabel.pixmap().scaled(64, 64, __.KeepAspectRatio))
         drag.setHotSpot(QPoint(drag.pixmap().width() / 2,
                                       drag.pixmap().height()))
         drag.start()
@@ -111,8 +111,8 @@ c_ FinalWidget(QFrame):
     ___ pixmap 
         r_ imageLabel.pixmap()
 
-    ___ setPixmap  pixmap):
-        imageLabel.setPixmap(pixmap)
+    ___ sP..  pixmap):
+        imageLabel.sP..(pixmap)
         hasImage _ T..
 
 
@@ -202,7 +202,7 @@ c_ ScreenWidget(QFrame):
 
                 newImage.setPixel(x, y, newColor.rgb())
 
-        imageLabel.setPixmap(?P...fromImage(newImage))
+        imageLabel.sP..(?P...fromImage(newImage))
 
     ___ image 
         """ Returns a reference to the modified image. """
@@ -315,7 +315,7 @@ c_ Viewer ?MW..
 
         openAction.t__.c..(chooseFile)
         saveAction.t__.c..(saveImage)
-        quitAction.t__.c..(?A...instance().quit)
+        quitAction.t__.c..(?A...i.. .quit)
         brightnessMenu.t__.c..(setBrightness)
 
     ___ createCentralWidget 
@@ -451,7 +451,7 @@ c_ Viewer ?MW..
 
                 newImage.setPixel(x, y, newColor.rgb())
 
-        finalWidget.setPixmap(?P...fromImage(newImage))
+        finalWidget.sP..(?P...fromImage(newImage))
 
     ___ saveImage 
         """ Provides a dialog window to allow the user to save the image file.

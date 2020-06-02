@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, QEasingCurve, ?O.., QPoint, QPointF,
-        QPropertyAnimation, QRect, QRectF, ?S.., __)
-____ ?.?G.. ______ (?B.., ?C.., QIcon, QLinearGradient, QPainter,
+____ ?.?C.. ______ (pP.., QEasingCurve, ?O.., QPoint, QPointF,
+        ?PA.., QRect, QRectF, ?S.., __)
+____ ?.?G.. ______ (?B.., ?C.., ?I.., QLinearGradient, QPainter,
         QPainterPath, ?P..)
 ____ ?.?W.. ______ (?A.., QGraphicsPixmapItem, QGraphicsScene,
         QListWidgetItem, ?W..)
@@ -53,7 +53,7 @@ ______ easing_rc
 ____ ui_form ______ Ui_Form
 
 
-c_ Animation(QPropertyAnimation):
+c_ Animation(?PA..):
     LinearPath, CirclePath _ ra..(2)
 
     ___  -   target, prop):
@@ -103,7 +103,7 @@ c_ PixmapItem(?O..):
     ___ _set_pos  pos):
         pixmap_item.setPos(pos)
 
-    pos _ pyqtProperty(QPointF, fset__set_pos)
+    pos _ pP..(QPointF, fset__set_pos)
 
 
 c_ Window(?W..):
@@ -176,7 +176,7 @@ c_ Window(?W..):
                 curve.addTCBSegment(QPointF(0.7, 0.6), -0.2, 1, 0.2)
                 curve.addTCBSegment(QPointF(1.0, 1.0), 0, 0, 0)
 
-            painter.setPen(?C..(0, 0, 255, 64))
+            painter.sP..(?C..(0, 0, 255, 64))
             xAxis _ m_iconSize.height() / 1.5
             yAxis _ m_iconSize.width() / 3.0
             painter.drawLine(0, xAxis, m_iconSize.width(),  xAxis)
@@ -184,7 +184,7 @@ c_ Window(?W..):
 
             curveScale _ m_iconSize.height() / 2.0;
 
-            painter.setPen(__.NoPen)
+            painter.sP..(__.NoPen)
 
             # Start point.
             painter.sB..(__.red)
@@ -212,17 +212,17 @@ c_ Window(?W..):
             painter.setRenderHint(QPainter.Antialiasing, F..)
 
             item _ QListWidgetItem()
-            item.setIcon(QIcon(pix))
+            item.sI..(?I..(pix))
             item.sT..(curve_name)
             m_ui.easingCurvePicker.aI..(item)
 
         painter.end()
 
     ___ startAnimation
-        m_anim.setStartValue(QPointF(0, 0))
-        m_anim.setEndValue(QPointF(100, 100))
-        m_anim.setDuration(2000)
-        m_anim.setLoopCount(-1)
+        m_anim.sSV..(QPointF(0, 0))
+        m_anim.sEV..(QPointF(100, 100))
+        m_anim.sD..(2000)
+        m_anim.sLC..(-1)
         m_anim.start()
 
     ___ curveChanged  row):

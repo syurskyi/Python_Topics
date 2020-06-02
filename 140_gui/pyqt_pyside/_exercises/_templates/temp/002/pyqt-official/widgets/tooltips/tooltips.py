@@ -45,8 +45,8 @@
 ______ random
 
 ____ ?.?C.. ______ QEvent, QPoint, QPointF, ?S.., __
-____ ?.?G.. ______ ?C.., QIcon, QPainter, QPainterPath, ?P..
-____ ?.?W.. ______ (?A.., QStyle, QToolButton, QToolTip,
+____ ?.?G.. ______ ?C.., ?I.., QPainter, QPainterPath, ?P..
+____ ?.?W.. ______ (?A.., ?S.., QToolButton, QToolTip,
         ?W..)
 
 ______ tooltips_rc
@@ -103,11 +103,11 @@ c_ SortingBox(?W..):
         itemInMotion _ N..
 
         newCircleButton _ createToolButton("New Circle",
-                QIcon(':/images/circle.png'), createNewCircle)
+                ?I..(':/images/circle.png'), createNewCircle)
         newSquareButton _ createToolButton("New Square",
-                QIcon(':/images/square.png'), createNewSquare)
+                ?I..(':/images/square.png'), createNewSquare)
         newTriangleButton _ createToolButton("New Triangle",
-                QIcon(':/images/triangle.png'), createNewTriangle)
+                ?I..(':/images/triangle.png'), createNewTriangle)
 
         circlePath.addEllipse(0, 0, 100, 100)
         squarePath.addRect(0, 0, 100, 100)
@@ -148,7 +148,7 @@ c_ SortingBox(?W..):
         r_ super(SortingBox, self).event(event)
 
     ___ resizeEvent  event):
-        margin _ style().pixelMetric(QStyle.PM_DefaultTopLevelMargin)
+        margin _ style().pixelMetric(?S...PM_DefaultTopLevelMargin)
         x _ width() - margin
         y _ height() - margin
 
@@ -224,7 +224,7 @@ c_ SortingBox(?W..):
         button.setGeometry(x - size.width(), y - size.height(),
                 size.width(), size.height())
 
-        r_ y - size.height() - style().pixelMetric(QStyle.PM_DefaultLayoutSpacing)
+        r_ y - size.height() - style().pixelMetric(?S...PM_DefaultLayoutSpacing)
 
     ___ createShapeItem  pa__, toolTip, pos, color):
         shapeItem _ ShapeItem()
@@ -238,7 +238,7 @@ c_ SortingBox(?W..):
     ___ createToolButton  toolTip, icon, member):
         button _ QToolButton
         button.sTT..(toolTip)
-        button.setIcon(icon)
+        button.sI..(icon)
         button.setIconSize(?S..(32, 32))
         button.c__.c..(member)
 

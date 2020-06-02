@@ -109,5 +109,5 @@ c_ DemoTextItem(DemoItem):
             super(DemoTextItem, self).paint(painter, option, widget)
             r_
 
-        painter.setPen(textColor)
+        painter.sP..(textColor)
         painter.drawText(0, 0, t__)

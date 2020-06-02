@@ -234,7 +234,7 @@ c_ MandelbrotWidget(?W..):
         painter.fillRect(rect(), __.black)
 
         __ pixmap.isNull
-            painter.setPen(__.white)
+            painter.sP..(__.white)
             painter.drawText(rect(), __.AlignCenter,
                     "Rendering initial image, please wait...")
             r_
@@ -261,11 +261,11 @@ c_ MandelbrotWidget(?W..):
         metrics _ painter.fontMetrics()
         textWidth _ metrics.width(t__)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(?C..(0, 0, 0, 127))
         painter.drawRect((width() - textWidth) / 2 - 5, 0, textWidth + 10,
                 metrics.lineSpacing() + 5)
-        painter.setPen(__.white)
+        painter.sP..(__.white)
         painter.drawText((width() - textWidth) / 2,
                 metrics.leading() + metrics.ascent(), t__)
 

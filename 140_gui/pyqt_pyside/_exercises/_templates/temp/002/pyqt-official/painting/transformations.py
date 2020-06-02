@@ -95,7 +95,7 @@ c_ RenderArea(?W..):
         drawCoordinates(painter)
 
     ___ drawCoordinates  painter):
-        painter.setPen(__.red)
+        painter.sP..(__.red)
 
         painter.drawLine(0, 0, 50, 0)
         painter.drawLine(48, -2, 50, 0)
@@ -110,8 +110,8 @@ c_ RenderArea(?W..):
                          60 + yBoundingRect.height() / 2, "y")
 
     ___ drawOutline  painter):
-        painter.setPen(__.darkGreen)
-        painter.setPen(__.DashLine)
+        painter.sP..(__.darkGreen)
+        painter.sP..(__.DashLine)
         painter.sB..(__.NoBrush)
         painter.drawRect(0, 0, 100, 100)
 

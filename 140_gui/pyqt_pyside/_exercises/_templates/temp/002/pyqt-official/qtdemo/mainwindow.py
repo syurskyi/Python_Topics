@@ -90,7 +90,7 @@ c_ MainWindow(QGraphicsView):
         windowRect _ QRect(0, 0, 800, 600)
 
         __ screenRect.width() < 800:
-            windowRect.setWidth(screenRect.width())
+            windowRect.sW..(screenRect.width())
 
         __ screenRect.height() < 600:
             windowRect.setHeight(screenRect.height())
@@ -113,7 +113,7 @@ c_ MainWindow(QGraphicsView):
     ___ start
         switchTimerOnOff( st.
         demoStartTime.restart()
-        MenuManager.instance().itemSelected(MenuManager.ROOT,
+        MenuManager.i.. .itemSelected(MenuManager.ROOT,
                 Colors.rootMenuName)
         Colors.debug("- starting demo")
 
@@ -153,7 +153,7 @@ c_ MainWindow(QGraphicsView):
         scene.setItemIndexMethod(QGraphicsScene.NoIndex)
 
     ___ switchTimerOnOff  on):
-        ticker _ MenuManager.instance().ticker
+        ticker _ MenuManager.i.. .ticker
         __ ticker and ticker.scene
             ticker.tickOnPaint _ no. on or Colors.noTimerUpdate
 
@@ -222,8 +222,8 @@ c_ MainWindow(QGraphicsView):
         __ medianChanged and fpsLabel and Colors.showFps:
             fpsLabel.sT..("FPS: %d" % int(currentFps))
 
-        __ MenuManager.instance().ticker:
-            MenuManager.instance().ticker.tick()
+        __ MenuManager.i.. .ticker:
+            MenuManager.i.. .ticker.tick()
 
         viewport().update()
 
@@ -269,7 +269,7 @@ c_ MainWindow(QGraphicsView):
             r_
 
         __ fpsMedian < 30:
-            ticker _ MenuManager.instance().ticker
+            ticker _ MenuManager.i.. .ticker
             __ ticker and ticker.scene
                 scene.removeItem(ticker)
                 Colors.noTimerUpdate _ T..
@@ -302,8 +302,8 @@ c_ MainWindow(QGraphicsView):
         __ isFullScreen
             enableMask( st.
             showNormal()
-            __ MenuManager.instance().ticker:
-                MenuManager.instance().ticker.pause F..
+            __ MenuManager.i.. .ticker:
+                MenuManager.i.. .ticker.pause F..
         ____
             enableMask F..
             showFullScreen()
@@ -349,10 +349,10 @@ c_ MainWindow(QGraphicsView):
         __ no. Colors.pause:
             r_
 
-        __ MenuManager.instance().ticker:
-            MenuManager.instance().ticker.pause F..
+        __ MenuManager.i.. .ticker:
+            MenuManager.i.. .ticker.pause F..
 
-        code _ MenuManager.instance().currentMenuCode
+        code _ MenuManager.i.. .currentMenuCode
         __ code __ (MenuManager.ROOT, MenuManager.MENU1):
             switchTimerOnOff( st.
 
@@ -362,10 +362,10 @@ c_ MainWindow(QGraphicsView):
         __ no. Colors.pause:
             r_
 
-        __ MenuManager.instance().ticker:
-            MenuManager.instance().ticker.pause( st.
+        __ MenuManager.i.. .ticker:
+            MenuManager.i.. .ticker.pause( st.
 
-        code _ MenuManager.instance().currentMenuCode
+        code _ MenuManager.i.. .currentMenuCode
         __ code __ (MenuManager.ROOT, MenuManager.MENU1):
             switchTimerOnOff F..
 

@@ -121,7 +121,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
             getattr  'forecastTemp%d' % n).sT..("%.1f °C" % forecast['main']['temp'])
 
     ___ set_weather_icon  label, weather):
-        label.setPixmap(
+        label.sP..(
             ?P..(__.p__ .join('images', "%s.png" %
                                  weather[0]['icon']
                                  )

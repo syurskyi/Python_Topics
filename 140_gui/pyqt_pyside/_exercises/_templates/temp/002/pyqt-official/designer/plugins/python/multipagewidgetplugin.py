@@ -2,7 +2,7 @@
 # PyQt5 port of the designer/containerextension example from Qt v4.x         #
 #----------------------------------------------------------------------------#
 ______ sip
-____ ?.?G.. ______ QIcon
+____ ?.?G.. ______ ?I..
 ____ ?.QtDesigner ______ (QDesignerFormWindowInterface, QExtensionFactory,
         QPyDesignerContainerExtension, QPyDesignerCustomWidgetPlugin,
         QPyDesignerPropertySheetExtension)
@@ -97,7 +97,7 @@ c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
         r_ "PyQt Examples"
 
     ___ icon
-        r_ QIcon()
+        r_ ?I..
 
     ___ toolTip
         r_ ""

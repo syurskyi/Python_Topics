@@ -39,8 +39,8 @@ CANVAS_DIMENSIONS = 600, 400
 STAMP_DIR = './stamps'
 STAMPS = [os.pa__.join(STAMP_DIR, f) ___ f __ os.listdir(STAMP_DIR)]
 
-SELECTION_PEN = QPen(QColor(0xff, 0xff, 0xff), 1, Qt.DashLine)
-PREVIEW_PEN = QPen(QColor(0xff, 0xff, 0xff), 1, Qt.SolidLine)
+SELECTION_PEN = ?P..(QColor(0xff, 0xff, 0xff), 1, Qt.DashLine)
+PREVIEW_PEN = ?P..(QColor(0xff, 0xff, 0xff), 1, Qt.SolidLine)
 
 
 def build_font(config):
@@ -51,7 +51,7 @@ def build_font(config):
     :return: QFont
     """
     font = config['font']
-    font.setPointSize(config['fontsize'])
+    font.sPS..(config['fontsize'])
     font.setBold(config['bold'])
     font.setItalic(config['italic'])
     font.setUnderline(config['underline'])
@@ -96,7 +96,7 @@ class Canvas(QLabel):
 
     def reset
         # Create the pixmap for display.
-        setPixmap(?P..(*CANVAS_DIMENSIONS))
+        sP..(?P..(*CANVAS_DIMENSIONS))
 
         # Clear the canvas.
         pixmap().fill(background_color)
@@ -224,7 +224,7 @@ class Canvas(QLabel):
         p = QPainter(bitmap)
         # Construct a mask where the user selected area will be kept, the rest removed from the image is transparent.
         userpoly = QPolygon(history_pos + [current_pos])
-        p.setPen(QPen(Qt.color1))
+        p.sP..(?P..(Qt.color1))
         p.sB..(?B..(Qt.color1))  # Solid color, Qt.color1 == bit on.
         p.drawPolygon(userpoly)
         p.end()
@@ -270,7 +270,7 @@ class Canvas(QLabel):
     def eraser_mouseMoveEvent(self, e):
         if last_pos:
             p = QPainter(pixmap())
-            p.setPen(QPen(eraser_color, 30, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
+            p.sP..(?P..(eraser_color, 30, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
             p.drawLine(last_pos, e.pos())
 
             last_pos = e.pos()
@@ -295,7 +295,7 @@ class Canvas(QLabel):
     def pen_mouseMoveEvent(self, e):
         if last_pos:
             p = QPainter(pixmap())
-            p.setPen(QPen(active_color, config['size'], Qt.SolidLine, Qt.SquareCap, Qt.RoundJoin))
+            p.sP..(?P..(active_color, config['size'], Qt.SolidLine, Qt.SquareCap, Qt.RoundJoin))
             p.drawLine(last_pos, e.pos())
 
             last_pos = e.pos()
@@ -312,7 +312,7 @@ class Canvas(QLabel):
     def brush_mouseMoveEvent(self, e):
         if last_pos:
             p = QPainter(pixmap())
-            p.setPen(QPen(active_color, config['size'] * BRUSH_MULT, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
+            p.sP..(?P..(active_color, config['size'] * BRUSH_MULT, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
             p.drawLine(last_pos, e.pos())
 
             last_pos = e.pos()
@@ -329,7 +329,7 @@ class Canvas(QLabel):
     def spray_mouseMoveEvent(self, e):
         if last_pos:
             p = QPainter(pixmap())
-            p.setPen(QPen(active_color, 1))
+            p.sP..(?P..(active_color, 1))
 
             ___ n __ ra..(config['size'] * SPRAY_PAINT_N):
                 xo = random.gauss(0, config['size'] * SPRAY_PAINT_MULT)
@@ -364,8 +364,8 @@ class Canvas(QLabel):
             p.setRenderHints(QPainter.Antialiasing)
             font = build_font(config)
             p.sF..(font)
-            pen = QPen(primary_color, 1, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin)
-            p.setPen(pen)
+            pen = ?P..(primary_color, 1, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin)
+            p.sP..(pen)
             p.drawText(current_pos, current_text)
             update()
 
@@ -378,7 +378,7 @@ class Canvas(QLabel):
         p = QPainter(pixmap())
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = PREVIEW_PEN
-        p.setPen(pen)
+        p.sP..(pen)
         if last_text:
             font = build_font(last_config)
             p.sF..(font)
@@ -428,7 +428,7 @@ class Canvas(QLabel):
 
         # Now perform the search and fill.
         p = QPainter(pixmap())
-        p.setPen(QPen(active_color))
+        p.sP..(?P..(active_color))
 
         while queue:
             x, y = queue.pop()
@@ -464,14 +464,14 @@ class Canvas(QLabel):
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = preview_pen
         pen.setDashOffset(dash_offset)
-        p.setPen(pen)
+        p.sP..(pen)
         if last_pos:
             getattr(p, active_shape_fn)(QRect(origin_pos, last_pos), *active_shape_args)
 
         if not final:
             dash_offset -= 1
             pen.setDashOffset(dash_offset)
-            p.setPen(pen)
+            p.sP..(pen)
             getattr(p, active_shape_fn)(QRect(origin_pos, current_pos), *active_shape_args)
 
         update()
@@ -486,7 +486,7 @@ class Canvas(QLabel):
             timer_cleanup()
 
             p = QPainter(pixmap())
-            p.setPen(QPen(primary_color, config['size'], Qt.SolidLine, Qt.SquareCap, Qt.MiterJoin))
+            p.sP..(?P..(primary_color, config['size'], Qt.SolidLine, Qt.SquareCap, Qt.MiterJoin))
 
             if config['fill']:
                 p.sB..(?B..(secondary_color))
@@ -507,7 +507,7 @@ class Canvas(QLabel):
         p = QPainter(pixmap())
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = preview_pen
-        p.setPen(pen)
+        p.sP..(pen)
         if last_pos:
             p.drawLine(origin_pos, last_pos)
 
@@ -526,7 +526,7 @@ class Canvas(QLabel):
             timer_cleanup()
 
             p = QPainter(pixmap())
-            p.setPen(QPen(primary_color, config['size'], Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
+            p.sP..(?P..(primary_color, config['size'], Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
 
             p.drawLine(origin_pos, e.pos())
             update()
@@ -553,14 +553,14 @@ class Canvas(QLabel):
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = preview_pen
         pen.setDashOffset(dash_offset)
-        p.setPen(pen)
+        p.sP..(pen)
         if last_history:
             getattr(p, active_shape_fn)(*last_history)
 
         if not final:
             dash_offset -= 1
             pen.setDashOffset(dash_offset)
-            p.setPen(pen)
+            p.sP..(pen)
             getattr(p, active_shape_fn)(*history_pos + [current_pos])
 
         update()
@@ -573,7 +573,7 @@ class Canvas(QLabel):
     def generic_poly_mouseDoubleClickEvent(self, e):
         timer_cleanup()
         p = QPainter(pixmap())
-        p.setPen(QPen(primary_color, config['size'], Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
+        p.sP..(?P..(primary_color, config['size'], Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
 
         # Note the brush is ignored for polylines.
         if secondary_color:
@@ -764,7 +764,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         actionUnderline.triggered.connect(l___ s: canvas.set_config('underline', s))
 
         sizeicon = QLabel()
-        sizeicon.setPixmap(?P..(os.pa__.join('images', 'border-weight.png')))
+        sizeicon.sP..(?P..(os.pa__.join('images', 'border-weight.png')))
         drawingToolbar.addWidget(sizeicon)
         sizeselect = ?S..()
         sizeselect.setRange(1,20)
@@ -797,7 +797,7 @@ class MainWindow(?MW.., Ui_MainWindow):
             current_stamp_n = 0
 
         pixmap = ?P..(STAMPS[current_stamp_n])
-        stampnextButton.setIcon(QIcon(pixmap))
+        stampnextButton.sI..(?I..(pixmap))
 
         canvas.current_stamp = pixmap
 
@@ -805,13 +805,13 @@ class MainWindow(?MW.., Ui_MainWindow):
         clipboard = QApplication.clipboard()
 
         if canvas.mode __ 'selectrect' and canvas.locked:
-            clipboard.setPixmap(canvas.selectrect_copy())
+            clipboard.sP..(canvas.selectrect_copy())
 
         elif canvas.mode __ 'selectpoly' and canvas.locked:
-            clipboard.setPixmap(canvas.selectpoly_copy())
+            clipboard.sP..(canvas.selectpoly_copy())
 
         ____:
-            clipboard.setPixmap(canvas.pixmap())
+            clipboard.sP..(canvas.pixmap())
 
     def open_file
         """
@@ -845,7 +845,7 @@ class MainWindow(?MW.., Ui_MainWindow):
                     QRect(QPoint(woff, 0), QPoint(pixmap.width()-woff, ch))
                 )
 
-            canvas.setPixmap(pixmap)
+            canvas.sP..(pixmap)
 
 
     def save_file
@@ -864,15 +864,15 @@ class MainWindow(?MW.., Ui_MainWindow):
         img.invertPixels()
         pixmap = ?P..()
         pixmap.convertFromImage(img)
-        canvas.setPixmap(pixmap)
+        canvas.sP..(pixmap)
 
     def flip_horizontal
         pixmap = canvas.pixmap()
-        canvas.setPixmap(pixmap.transformed(QTransform().scale(-1, 1)))
+        canvas.sP..(pixmap.transformed(QTransform().scale(-1, 1)))
 
     def flip_vertical
         pixmap = canvas.pixmap()
-        canvas.setPixmap(pixmap.transformed(QTransform().scale(1, -1)))
+        canvas.sP..(pixmap.transformed(QTransform().scale(1, -1)))
 
 
 

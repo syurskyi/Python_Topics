@@ -45,7 +45,7 @@
 ______ math
 
 ____ ?.?C.. ______ QPointF, __, ?T..
-____ ?.?G.. ______ (?B.., ?C.., QLinearGradient, QPen, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., QLinearGradient, ?P.., QPainter,
         ?P.., QRadialGradient)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
         QGraphicsEllipseItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView)
@@ -89,12 +89,12 @@ c_ Lighting(QGraphicsView):
         pixmap.fill(__.transparent)
 
         painter _ QPainter(pixmap)
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(radialGrad)
         painter.drawEllipse(0, 0, 60, 60)
         painter.end()
 
-        m_lightSource _ m_scene.addPixmap(pixmap)
+        m_lightSource _ m_scene.aP..(pixmap)
         m_lightSource.setZValue(2)
 
         ___ i __ ra..(-2, 3):
@@ -104,7 +104,7 @@ c_ Lighting(QGraphicsView):
                 ____
                     item _ QGraphicsRectItem(0, 0, 50, 50)
 
-                item.setPen(QPen(__.black, 1))
+                item.sP..(?P..(__.black, 1))
                 item.sB..(?B..(__.white))
 
                 effect _ QGraphicsDropShadowEffect

@@ -41,15 +41,15 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, QRectF, ?U..
-____ ?.?G.. ______ ?C.., QGuiApplication, QPainter, QPen
+____ ?.?C.. ______ pP.., QRectF, ?U..
+____ ?.?G.. ______ ?C.., QGuiApplication, QPainter, ?P..
 ____ ?.QtQml ______ qmlRegisterType, QQmlListProperty
 ____ ?.QtQuick ______ QQuickItem, QQuickPaintedItem, QQuickView
 
 
 c_ PieSlice(QQuickPaintedItem):
 
-    @pyqtProperty(?C..)
+    @pP..(?C..)
     ___ color
         r_ _color
 
@@ -57,7 +57,7 @@ c_ PieSlice(QQuickPaintedItem):
     ___ color  color):
         _color _ ?C..(color)
 
-    @pyqtProperty(int)
+    @pP..(int)
     ___ fromAngle
         r_ _fromAngle
 
@@ -65,7 +65,7 @@ c_ PieSlice(QQuickPaintedItem):
     ___ fromAngle  fromAngle):
         _fromAngle _ fromAngle
 
-    @pyqtProperty(int)
+    @pP..(int)
     ___ angleSpan
         r_ _angleSpan
 
@@ -81,7 +81,7 @@ c_ PieSlice(QQuickPaintedItem):
         _angleSpan _ 0
 
     ___ paint  painter):
-        painter.setPen(QPen(_color, 2))
+        painter.sP..(?P..(_color, 2))
         painter.setRenderHints(QPainter.Antialiasing,  st.
 
         rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)
@@ -90,12 +90,12 @@ c_ PieSlice(QQuickPaintedItem):
 
 c_ PieChart(QQuickItem):
 
-    @pyqtProperty(QQmlListProperty)
+    @pP..(QQmlListProperty)
     ___ slices
         r_ QQmlListProperty(PieSlice, self,
                 append_lambda pie_ch, pie_sl: pie_sl.setParentItem(pie_ch))
 
-    @pyqtProperty st.
+    @pP.. st.
     ___ name
         r_ _name
 

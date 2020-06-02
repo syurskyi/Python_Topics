@@ -20,12 +20,12 @@ ___ run_in_thread(thread_fn):
         @wraps(f)
         ___ result($ $$
             thread _ thread_fn()
-            r_ Executor.instance().run_in_thread(thread, f, args, kwargs)
+            r_ Executor.i.. .run_in_thread(thread, f, args, kwargs)
         r_ result
     r_ decorator
 
 ___ _main_thread
-    app _ ?A...instance()
+    app _ ?A...i.. 
     __ app:
         r_ app.thread()
     # We reach here in tests that don't (want to) create a QApplication.

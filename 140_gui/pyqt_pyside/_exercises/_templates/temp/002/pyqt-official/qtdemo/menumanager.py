@@ -530,71 +530,71 @@ c_ MenuManager(?O..):
 
                 # Create in-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
-                anim.setDuration(1000 + (i * 20))
-                anim.setStartValue(QPointF(xOffset, -ih))
-                anim.setKeyValueAt(0.20, QPointF(xOffset, -ih))
-                anim.setKeyValueAt(0.50, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (10 * float(i / 4.0))))
-                anim.setKeyValueAt(0.60, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.70, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (5 * float(i / 4.0))))
-                anim.setKeyValueAt(0.80, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.90, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (2 * float(i / 4.0))))
-                anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sD..(1000 + (i * 20))
+                anim.sSV..(QPointF(xOffset, -ih))
+                anim.sKVA..(0.20, QPointF(xOffset, -ih))
+                anim.sKVA..(0.50, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (10 * float(i / 4.0))))
+                anim.sKVA..(0.60, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sKVA..(0.70, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (5 * float(i / 4.0))))
+                anim.sKVA..(0.80, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sKVA..(0.90, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (2 * float(i / 4.0))))
+                anim.sEV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 movieIn.ap..(anim)
 
                 # Create out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
                 anim.setHideOnFinished( st.
-                anim.setDuration(700 + (30 * i))
-                anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.60, QPointF(xOffset, 600 - ih - ih))
-                anim.setKeyValueAt(0.65, QPointF(xOffset + 20, 600 - ih))
-                anim.setEndValue(QPointF(sw + iw, 600 - ih))
+                anim.sD..(700 + (30 * i))
+                anim.sSV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sKVA..(0.60, QPointF(xOffset, 600 - ih - ih))
+                anim.sKVA..(0.65, QPointF(xOffset + 20, 600 - ih))
+                anim.sEV..(QPointF(sw + iw, 600 - ih))
                 movieOut.ap..(anim)
 
                 # Create shake-animation.
                 anim _ DemoItemAnimation(item)
-                anim.setDuration(700)
-                anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.55, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY - i*2.0))
-                anim.setKeyValueAt(0.70, QPointF(xOffset - 10, (i * ihp) + yOffset + Colors.contentStartY - i*1.5))
-                anim.setKeyValueAt(0.80, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY - i*1.0))
-                anim.setKeyValueAt(0.90, QPointF(xOffset - 2, (i * ihp) + yOffset + Colors.contentStartY - i*0.5))
-                anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sD..(700)
+                anim.sSV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sKVA..(0.55, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY - i*2.0))
+                anim.sKVA..(0.70, QPointF(xOffset - 10, (i * ihp) + yOffset + Colors.contentStartY - i*1.5))
+                anim.sKVA..(0.80, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY - i*1.0))
+                anim.sKVA..(0.90, QPointF(xOffset - 2, (i * ihp) + yOffset + Colors.contentStartY - i*0.5))
+                anim.sEV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 movieShake.ap..(anim)
 
                 # Create next-menu top-out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
                 anim.setHideOnFinished( st.
-                anim.setDuration(200 + (30 * i))
-                anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.70, QPointF(xOffset, yOffset + Colors.contentStartY))
-                anim.setEndValue(QPointF(-iw, yOffset + Colors.contentStartY))
+                anim.sD..(200 + (30 * i))
+                anim.sSV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sKVA..(0.70, QPointF(xOffset, yOffset + Colors.contentStartY))
+                anim.sEV..(QPointF(-iw, yOffset + Colors.contentStartY))
                 movieNextTopOut.ap..(anim)
 
                 # Create next-menu bottom-out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
                 anim.setHideOnFinished( st.
-                anim.setDuration(200 + (30 * i))
-                anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.70, QPointF(xOffset, (maxExamples * ihp) + yOffset + Colors.contentStartY))
-                anim.setEndValue(QPointF(-iw, (maxExamples * ihp) + yOffset + Colors.contentStartY))
+                anim.sD..(200 + (30 * i))
+                anim.sSV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sKVA..(0.70, QPointF(xOffset, (maxExamples * ihp) + yOffset + Colors.contentStartY))
+                anim.sEV..(QPointF(-iw, (maxExamples * ihp) + yOffset + Colors.contentStartY))
                 movieNextBottomOut.ap..(anim)
 
                 # Create next-menu top-in-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
-                anim.setDuration(700 - (30 * i))
-                anim.setStartValue(QPointF(-iw, yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.30, QPointF(xOffset, yOffset + Colors.contentStartY))
-                anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sD..(700 - (30 * i))
+                anim.sSV..(QPointF(-iw, yOffset + Colors.contentStartY))
+                anim.sKVA..(0.30, QPointF(xOffset, yOffset + Colors.contentStartY))
+                anim.sEV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 movieNextTopIn.ap..(anim)
 
                 # Create next-menu bottom-in-animation.
                 reverse _ maxExamples - i
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
-                anim.setDuration(1000 - (30 * reverse))
-                anim.setStartValue(QPointF(-iw, (maxExamples * ihp) + yOffset + Colors.contentStartY))
-                anim.setKeyValueAt(0.30, QPointF(xOffset, (maxExamples * ihp) + yOffset + Colors.contentStartY))
-                anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
+                anim.sD..(1000 - (30 * reverse))
+                anim.sSV..(QPointF(-iw, (maxExamples * ihp) + yOffset + Colors.contentStartY))
+                anim.sKVA..(0.30, QPointF(xOffset, (maxExamples * ihp) + yOffset + Colors.contentStartY))
+                anim.sEV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 movieNextBottomIn.ap..(anim)
 
                 i +_ 1
@@ -621,30 +621,30 @@ c_ MenuManager(?O..):
 
         # Create in-animation.
         buttonIn _ DemoItemAnimation(button, DemoItemAnimation.ANIM_IN)
-        buttonIn.setDuration(1800)
-        buttonIn.setStartValue(QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 35))
-        buttonIn.setKeyValueAt(0.5, QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 35))
-        buttonIn.setKeyValueAt(0.7, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
-        buttonIn.setEndValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
+        buttonIn.sD..(1800)
+        buttonIn.sSV..(QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 35))
+        buttonIn.sKVA..(0.5, QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 35))
+        buttonIn.sKVA..(0.7, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
+        buttonIn.sEV..(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
         movieIn.ap..(buttonIn)
 
         # Create out-animation.
         buttonOut _ DemoItemAnimation(button, DemoItemAnimation.ANIM_OUT)
         buttonOut.setHideOnFinished( st.
-        buttonOut.setDuration(400)
-        buttonOut.setStartValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
-        buttonOut.setEndValue(QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 26))
+        buttonOut.sD..(400)
+        buttonOut.sSV..(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
+        buttonOut.sEV..(QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 26))
         movieOut.ap..(buttonOut)
 
         __ movieShake __ no. N..:
             shakeAnim _ DemoItemAnimation(button, DemoItemAnimation.ANIM_UNSPECIFIED)
-            shakeAnim.setDuration(650)
-            shakeAnim.setStartValue(buttonIn.endValue())
-            shakeAnim.setKeyValueAt(0.60, buttonIn.endValue())
-            shakeAnim.setKeyValueAt(0.70, buttonIn.endValue() + QPointF(-3, 0))
-            shakeAnim.setKeyValueAt(0.80, buttonIn.endValue() + QPointF(2, 0))
-            shakeAnim.setKeyValueAt(0.90, buttonIn.endValue() + QPointF(-1, 0))
-            shakeAnim.setEndValue(buttonIn.endValue())
+            shakeAnim.sD..(650)
+            shakeAnim.sSV..(buttonIn.endValue())
+            shakeAnim.sKVA..(0.60, buttonIn.endValue())
+            shakeAnim.sKVA..(0.70, buttonIn.endValue() + QPointF(-3, 0))
+            shakeAnim.sKVA..(0.80, buttonIn.endValue() + QPointF(2, 0))
+            shakeAnim.sKVA..(0.90, buttonIn.endValue() + QPointF(-1, 0))
+            shakeAnim.sEV..(buttonIn.endValue())
             movieShake.ap..(shakeAnim)
 
     ___ createLowRightButton  label, type, movieIn, movieOut, movieShake):
@@ -658,19 +658,19 @@ c_ MenuManager(?O..):
 
         # Create in-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
-        anim.setDuration(1800)
-        anim.setStartValue(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.5, QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.7, QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setEndValue(QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 26))
+        anim.sD..(1800)
+        anim.sSV..(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.5, QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.7, QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sEV..(QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 26))
         movieIn.ap..(anim)
 
         # Create out-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
         anim.setHideOnFinished( st.
-        anim.setDuration(400)
-        anim.setStartValue(QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 26))
-        anim.setEndValue(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 26))
+        anim.sD..(400)
+        anim.sSV..(QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 26))
+        anim.sEV..(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 26))
         movieOut.ap..(anim)
 
     ___ createLowRightLeafButton  label, xOffset, type, movieIn, movieOut, movieShake):
@@ -684,23 +684,23 @@ c_ MenuManager(?O..):
 
         # Create in-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
-        anim.setDuration(1050)
-        anim.setStartValue(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.10, QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.30, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.35, QPointF(xOffset + 30, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.40, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.45, QPointF(xOffset + 5, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setKeyValueAt(0.50, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
-        anim.setEndValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
+        anim.sD..(1050)
+        anim.sSV..(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.10, QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.30, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.35, QPointF(xOffset + 30, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.40, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.45, QPointF(xOffset + 5, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sKVA..(0.50, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
+        anim.sEV..(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
         movieIn.ap..(anim)
 
         # Create out-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
         anim.setHideOnFinished( st.
-        anim.setDuration(300)
-        anim.setStartValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
-        anim.setEndValue(QPointF(xOffset, sh))
+        anim.sD..(300)
+        anim.sSV..(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
+        anim.sEV..(QPointF(xOffset, sh))
         movieOut.ap..(anim)
 
     ___ createInfo  item, name):
@@ -711,21 +711,21 @@ c_ MenuManager(?O..):
 
         xOffset _ 230.0
         infoIn _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
-        infoIn.setDuration(650)
-        infoIn.setStartValue(QPointF(window.scene.sceneRect().width(), Colors.contentStartY))
-        infoIn.setKeyValueAt(0.60, QPointF(xOffset, Colors.contentStartY))
-        infoIn.setKeyValueAt(0.70, QPointF(xOffset + 20, Colors.contentStartY))
-        infoIn.setKeyValueAt(0.80, QPointF(xOffset, Colors.contentStartY))
-        infoIn.setKeyValueAt(0.90, QPointF(xOffset + 7, Colors.contentStartY))
-        infoIn.setEndValue(QPointF(xOffset, Colors.contentStartY))
+        infoIn.sD..(650)
+        infoIn.sSV..(QPointF(window.scene.sceneRect().width(), Colors.contentStartY))
+        infoIn.sKVA..(0.60, QPointF(xOffset, Colors.contentStartY))
+        infoIn.sKVA..(0.70, QPointF(xOffset + 20, Colors.contentStartY))
+        infoIn.sKVA..(0.80, QPointF(xOffset, Colors.contentStartY))
+        infoIn.sKVA..(0.90, QPointF(xOffset + 7, Colors.contentStartY))
+        infoIn.sEV..(QPointF(xOffset, Colors.contentStartY))
         movie_in.ap..(infoIn)
 
         infoOut _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
         infoOut.setCurveShape(QEasingCurve.InQuad)
-        infoOut.setDuration(300)
+        infoOut.sD..(300)
         infoOut.setHideOnFinished( st.
-        infoOut.setStartValue(QPointF(xOffset, Colors.contentStartY))
-        infoOut.setEndValue(QPointF(-600, Colors.contentStartY))
+        infoOut.sSV..(QPointF(xOffset, Colors.contentStartY))
+        infoOut.sEV..(QPointF(-600, Colors.contentStartY))
         movie_out.ap..(infoOut)
 
     ___ createTicker
@@ -746,40 +746,40 @@ c_ MenuManager(?O..):
         qtPosY _ 120
         tickerInAnim _ DemoItemAnimation(ticker,
                 DemoItemAnimation.ANIM_IN)
-        tickerInAnim.setDuration(500)
-        tickerInAnim.setStartValue(QPointF(window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
-        tickerInAnim.setKeyValueAt(0.60, QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        tickerInAnim.setKeyValueAt(0.70, QPointF(qtendpos + 30, Colors.contentStartY + qtPosY))
-        tickerInAnim.setKeyValueAt(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        tickerInAnim.setKeyValueAt(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
-        tickerInAnim.setEndValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        tickerInAnim.sD..(500)
+        tickerInAnim.sSV..(QPointF(window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
+        tickerInAnim.sKVA..(0.60, QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        tickerInAnim.sKVA..(0.70, QPointF(qtendpos + 30, Colors.contentStartY + qtPosY))
+        tickerInAnim.sKVA..(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        tickerInAnim.sKVA..(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
+        tickerInAnim.sEV..(QPointF(qtendpos, Colors.contentStartY + qtPosY))
         movie_in.ap..(tickerInAnim)
 
         # Move ticker out.
         qtOut _ DemoItemAnimation(ticker, DemoItemAnimation.ANIM_OUT)
         qtOut.setHideOnFinished( st.
-        qtOut.setDuration(500)
-        qtOut.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        qtOut.setEndValue(QPointF(window.scene.sceneRect().width() + 700, Colors.contentStartY + qtPosY))
+        qtOut.sD..(500)
+        qtOut.sSV..(QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        qtOut.sEV..(QPointF(window.scene.sceneRect().width() + 700, Colors.contentStartY + qtPosY))
         movie_out.ap..(qtOut)
 
         # Move ticker in on activate.
         qtActivate _ DemoItemAnimation(ticker)
-        qtActivate.setDuration(400)
-        qtActivate.setStartValue(QPointF(window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
-        qtActivate.setKeyValueAt(0.60, QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        qtActivate.setKeyValueAt(0.70, QPointF(qtendpos + 30, Colors.contentStartY + qtPosY))
-        qtActivate.setKeyValueAt(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        qtActivate.setKeyValueAt(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
-        qtActivate.setEndValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        qtActivate.sD..(400)
+        qtActivate.sSV..(QPointF(window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
+        qtActivate.sKVA..(0.60, QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        qtActivate.sKVA..(0.70, QPointF(qtendpos + 30, Colors.contentStartY + qtPosY))
+        qtActivate.sKVA..(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        qtActivate.sKVA..(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
+        qtActivate.sEV..(QPointF(qtendpos, Colors.contentStartY + qtPosY))
         movie_activate.ap..(qtActivate)
 
         # Move ticker out on deactivate.
         qtDeactivate _ DemoItemAnimation(ticker)
         qtDeactivate.setHideOnFinished( st.
-        qtDeactivate.setDuration(400)
-        qtDeactivate.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        qtDeactivate.setEndValue(QPointF(qtendpos, 800))
+        qtDeactivate.sD..(400)
+        qtDeactivate.sSV..(QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        qtDeactivate.sEV..(QPointF(qtendpos, 800))
         movie_deactivate.ap..(qtDeactivate)
 
     ___ createUpnDownButtons
@@ -801,24 +801,24 @@ c_ MenuManager(?O..):
 
         shakeAnim _ DemoItemAnimation(upButton,
                 DemoItemAnimation.ANIM_UNSPECIFIED)
-        shakeAnim.setDuration(650)
-        shakeAnim.setStartValue(upButton.pos())
-        shakeAnim.setKeyValueAt(0.60, upButton.pos())
-        shakeAnim.setKeyValueAt(0.70, upButton.pos() + QPointF(-2, 0))
-        shakeAnim.setKeyValueAt(0.80, upButton.pos() + QPointF(1, 0))
-        shakeAnim.setKeyValueAt(0.90, upButton.pos() + QPointF(-1, 0))
-        shakeAnim.setEndValue(upButton.pos())
+        shakeAnim.sD..(650)
+        shakeAnim.sSV..(upButton.pos())
+        shakeAnim.sKVA..(0.60, upButton.pos())
+        shakeAnim.sKVA..(0.70, upButton.pos() + QPointF(-2, 0))
+        shakeAnim.sKVA..(0.80, upButton.pos() + QPointF(1, 0))
+        shakeAnim.sKVA..(0.90, upButton.pos() + QPointF(-1, 0))
+        shakeAnim.sEV..(upButton.pos())
         movieShake.ap..(shakeAnim)
 
         shakeAnim _ DemoItemAnimation(downButton,
                 DemoItemAnimation.ANIM_UNSPECIFIED)
-        shakeAnim.setDuration(650)
-        shakeAnim.setStartValue(downButton.pos())
-        shakeAnim.setKeyValueAt(0.60, downButton.pos())
-        shakeAnim.setKeyValueAt(0.70, downButton.pos() + QPointF(-5, 0))
-        shakeAnim.setKeyValueAt(0.80, downButton.pos() + QPointF(-3, 0))
-        shakeAnim.setKeyValueAt(0.90, downButton.pos() + QPointF(-1, 0))
-        shakeAnim.setEndValue(downButton.pos())
+        shakeAnim.sD..(650)
+        shakeAnim.sSV..(downButton.pos())
+        shakeAnim.sKVA..(0.60, downButton.pos())
+        shakeAnim.sKVA..(0.70, downButton.pos() + QPointF(-5, 0))
+        shakeAnim.sKVA..(0.80, downButton.pos() + QPointF(-3, 0))
+        shakeAnim.sKVA..(0.90, downButton.pos() + QPointF(-1, 0))
+        shakeAnim.sEV..(downButton.pos())
         movieShake.ap..(shakeAnim)
 
     ___ createBackButton

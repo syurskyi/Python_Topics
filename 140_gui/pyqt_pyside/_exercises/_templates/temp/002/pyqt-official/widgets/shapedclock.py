@@ -72,7 +72,7 @@ c_ ShapedClock(?W..):
         timer.start(1000)
 
         quitAction _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
-                triggered_QApplication.instance().quit)
+                triggered_QApplication.i.. .quit)
         aA..(quitAction)
 
         setContextMenuPolicy(__.ActionsContextMenu)
@@ -99,7 +99,7 @@ c_ ShapedClock(?W..):
         painter.translate(width() / 2, height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(ShapedClock.hourColor)
 
         painter.save()
@@ -107,13 +107,13 @@ c_ ShapedClock(?W..):
         painter.drawConvexPolygon(ShapedClock.hourHand)
         painter.restore()
 
-        painter.setPen(ShapedClock.hourColor)
+        painter.sP..(ShapedClock.hourColor)
 
         ___ i __ ra..(12):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(ShapedClock.minuteColor)
 
         painter.save()
@@ -121,7 +121,7 @@ c_ ShapedClock(?W..):
         painter.drawConvexPolygon(ShapedClock.minuteHand)
         painter.restore()
 
-        painter.setPen(ShapedClock.minuteColor)
+        painter.sP..(ShapedClock.minuteColor)
 
         ___ j __ ra..(60):
             __ (j % 5) !_ 0:

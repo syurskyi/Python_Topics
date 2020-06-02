@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pS.., QPointF, ?U..
+____ ?.?C.. ______ pP.., pS.., QPointF, ?U..
 ____ ?.?G.. ______ ?C.., QGuiApplication
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ (QQuickItem, QQuickView, QSGFlatColorMaterial,
@@ -54,7 +54,7 @@ c_ BezierCurve(QQuickItem):
 
     p1Changed _ pS..(QPointF)
 
-    @pyqtProperty(QPointF, notify_p1Changed)
+    @pP..(QPointF, notify_p1Changed)
     ___ p1
         r_ _p1
 
@@ -67,7 +67,7 @@ c_ BezierCurve(QQuickItem):
 
     p2Changed _ pS..(QPointF)
 
-    @pyqtProperty(QPointF, notify_p2Changed)
+    @pP..(QPointF, notify_p2Changed)
     ___ p2
         r_ _p2
 
@@ -80,7 +80,7 @@ c_ BezierCurve(QQuickItem):
 
     p3Changed _ pS..(QPointF)
 
-    @pyqtProperty(QPointF, notify_p3Changed)
+    @pP..(QPointF, notify_p3Changed)
     ___ p3
         r_ _p3
 
@@ -93,7 +93,7 @@ c_ BezierCurve(QQuickItem):
 
     p4Changed _ pS..(QPointF)
 
-    @pyqtProperty(QPointF, notify_p4Changed)
+    @pP..(QPointF, notify_p4Changed)
     ___ p4
         r_ _p4
 
@@ -106,7 +106,7 @@ c_ BezierCurve(QQuickItem):
 
     segmentCountChanged _ pS..(int)
 
-    @pyqtProperty(int, notify_segmentCountChanged)
+    @pP..(int, notify_segmentCountChanged)
     ___ segmentCount
         r_ _segmentCount
 

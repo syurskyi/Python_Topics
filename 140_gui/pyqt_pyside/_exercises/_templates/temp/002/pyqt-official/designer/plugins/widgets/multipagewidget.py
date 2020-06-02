@@ -3,7 +3,7 @@
 #============================================================================#
 # PyQt5 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
-____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, ?S..
+____ ?.?C.. ______ pP.., pS.., pyqtSlot, ?S..
 ____ ?.?W.. ______ (?A.., ?CB, QLabel, ?SW..,
         QVBoxLayout, ?W..)
 
@@ -86,8 +86,8 @@ c_ PyMultiPageWidget(?W..):
             comboBox.sCI..(index)
             currentIndexChanged.e..(index)
 
-    pageTitle _ pyqtProperty(st., fget_getPageTitle, fset_setPageTitle, stored_False)
-    currentIndex _ pyqtProperty(int, fget_getCurrentIndex, fset_setCurrentIndex)
+    pageTitle _ pP..(st., fget_getPageTitle, fset_setPageTitle, stored_False)
+    currentIndex _ pP..(int, fget_getCurrentIndex, fset_setCurrentIndex)
 
 
 #============================================================================#

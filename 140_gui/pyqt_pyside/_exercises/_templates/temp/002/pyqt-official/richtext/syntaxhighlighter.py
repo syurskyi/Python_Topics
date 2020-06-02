@@ -90,9 +90,9 @@ c_ MainWindow ?MW..
 
     ___ setupEditor
         font _ ?F..()
-        font.setFamily('Courier')
+        font.sF..('Courier')
         font.setFixedPitch( st.
-        font.setPointSize(10)
+        font.sPS..(10)
 
         editor _ ?TE..()
         editor.sF..(font)
@@ -105,14 +105,14 @@ c_ MainWindow ?MW..
 
         fileMenu.aA..("&New...", newFile, "Ctrl+N")
         fileMenu.aA..("&Open...", openFile, "Ctrl+O")
-        fileMenu.aA..("E&xit", ?A...instance().quit, "Ctrl+Q")
+        fileMenu.aA..("E&xit", ?A...i.. .quit, "Ctrl+Q")
 
     ___ setupHelpMenu
         helpMenu _ QMenu("&Help", self)
         mB.. .aM..(helpMenu)
 
         helpMenu.aA..("&About", about)
-        helpMenu.aA..("About &Qt", ?A...instance().aboutQt)
+        helpMenu.aA..("About &Qt", ?A...i.. .aboutQt)
 
 
 c_ Highlighter(QSyntaxHighlighter):

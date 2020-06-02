@@ -47,7 +47,7 @@
 ______ ___
 
 ____ ?.?C.. ______ QFile, QFileInfo, __, QTextCodec
-____ ?.?G.. ______ (?F.., QFontDatabase, QFontInfo, QIcon, ?KS..,
+____ ?.?G.. ______ (?F.., QFontDatabase, QFontInfo, ?I.., ?KS..,
         ?P.., QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
@@ -68,7 +68,7 @@ c_ TextEdit ?MW..
     ___  -   fileName_None, parent_None):
         super(TextEdit, self). - (parent)
 
-        setWindowIcon(QIcon(':/images/logo.png'))
+        setWindowIcon(?I..(':/images/logo.png'))
         setToolButtonStyle(__.ToolButtonFollowStyle)
         setupFileActions()
         setupEditActions()
@@ -77,7 +77,7 @@ c_ TextEdit ?MW..
         helpMenu _ QMenu("Help", self)
         mB.. .aM..(helpMenu)
         helpMenu.aA..("About", about)
-        helpMenu.aA..("About &Qt", ?A...instance().aboutQt)
+        helpMenu.aA..("About &Qt", ?A...i.. .aboutQt)
  
         textEdit _ ?TE..
         textEdit.currentCharFormatChanged.c..(
@@ -133,16 +133,16 @@ c_ TextEdit ?MW..
         mB.. .aM..(menu)
 
         actionNew _ ?A..(
-                QIcon.fromTheme('document-new',
-                        QIcon(rsrcPath + '/filenew.png')),
+                ?I...fromTheme('document-new',
+                        ?I..(rsrcPath + '/filenew.png')),
                 "&New", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.New, triggered_self.fileNew)
         tb.aA..(actionNew)
         menu.aA..(actionNew)
 
         actionOpen _ ?A..(
-                QIcon.fromTheme('document-open',
-                        QIcon(rsrcPath + '/fileopen.png')),
+                ?I...fromTheme('document-open',
+                        ?I..(rsrcPath + '/fileopen.png')),
                 "&Open...", self, shortcut_QKeySequence.Open,
                 triggered_self.fileOpen)
         tb.aA..(actionOpen)
@@ -150,8 +150,8 @@ c_ TextEdit ?MW..
         menu.addSeparator()
 
         actionSave _ ?A..(
-                QIcon.fromTheme('document-save',
-                        QIcon(rsrcPath + '/filesave.png')),
+                ?I...fromTheme('document-save',
+                        ?I..(rsrcPath + '/filesave.png')),
                 "&Save", self, shortcut_QKeySequence.Save,
                 triggered_self.fileSave, enabled_False)
         tb.aA..(actionSave)
@@ -165,24 +165,24 @@ c_ TextEdit ?MW..
         menu.addSeparator()
  
         actionPrint _ ?A..(
-                QIcon.fromTheme('document-print',
-                        QIcon(rsrcPath + '/fileprint.png')),
+                ?I...fromTheme('document-print',
+                        ?I..(rsrcPath + '/fileprint.png')),
                 "&Print...", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Print, triggered_self.filePrint)
         tb.aA..(actionPrint)
         menu.aA..(actionPrint)
 
         actionPrintPreview _ ?A..(
-                QIcon.fromTheme('fileprint',
-                        QIcon(rsrcPath + '/fileprint.png')),
+                ?I...fromTheme('fileprint',
+                        ?I..(rsrcPath + '/fileprint.png')),
                 "Print Preview...", self,
                 shortcut_Qt.CTRL + __.SHIFT + __.Key_P,
                 triggered_self.filePrintPreview)
         menu.aA..(actionPrintPreview)
 
         actionPrintPdf _ ?A..(
-                QIcon.fromTheme('exportpdf',
-                        QIcon(rsrcPath + '/exportpdf.png')),
+                ?I...fromTheme('exportpdf',
+                        ?I..(rsrcPath + '/exportpdf.png')),
                 "&Export PDF...", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_D,
                 triggered_self.filePrintPdf)
@@ -203,15 +203,15 @@ c_ TextEdit ?MW..
         mB.. .aM..(menu)
 
         actionUndo _ ?A..(
-                QIcon.fromTheme('edit-undo',
-                        QIcon(rsrcPath + '/editundo.png')),
+                ?I...fromTheme('edit-undo',
+                        ?I..(rsrcPath + '/editundo.png')),
                 "&Undo", self, shortcut_QKeySequence.Undo)
         tb.aA..(actionUndo)
         menu.aA..(actionUndo)
 
         actionRedo _ ?A..(
-                QIcon.fromTheme('edit-redo',
-                        QIcon(rsrcPath + '/editredo.png')),
+                ?I...fromTheme('edit-redo',
+                        ?I..(rsrcPath + '/editredo.png')),
                 "&Redo", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Redo)
         tb.aA..(actionRedo)
@@ -219,23 +219,23 @@ c_ TextEdit ?MW..
         menu.addSeparator()
 
         actionCut _ ?A..(
-                QIcon.fromTheme('edit-cut', QIcon(rsrcPath + '/editcut.png')),
+                ?I...fromTheme('edit-cut', ?I..(rsrcPath + '/editcut.png')),
                 "Cu&t", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Cut)
         tb.aA..(actionCut)
         menu.aA..(actionCut)
 
         actionCopy _ ?A..(
-                QIcon.fromTheme('edit-copy',
-                        QIcon(rsrcPath + '/editcopy.png')),
+                ?I...fromTheme('edit-copy',
+                        ?I..(rsrcPath + '/editcopy.png')),
                 "&Copy", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Copy)
         tb.aA..(actionCopy)
         menu.aA..(actionCopy)
 
         actionPaste _ ?A..(
-                QIcon.fromTheme('edit-paste',
-                        QIcon(rsrcPath + '/editpaste.png')),
+                ?I...fromTheme('edit-paste',
+                        ?I..(rsrcPath + '/editpaste.png')),
                 "&Paste", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Paste,
                 enabled_(le.(?A...clipboard().t__()) !_ 0))
@@ -251,8 +251,8 @@ c_ TextEdit ?MW..
         mB.. .aM..(menu)
 
         actionTextBold _ ?A..(
-                QIcon.fromTheme('format-text-bold',
-                        QIcon(rsrcPath + '/textbold.png')),
+                ?I...fromTheme('format-text-bold',
+                        ?I..(rsrcPath + '/textbold.png')),
                 "&Bold", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_B, triggered_self.textBold,
                 checkable_ st.
@@ -263,8 +263,8 @@ c_ TextEdit ?MW..
         menu.aA..(actionTextBold)
 
         actionTextItalic _ ?A..(
-                QIcon.fromTheme('format-text-italic',
-                        QIcon(rsrcPath + '/textitalic.png')),
+                ?I...fromTheme('format-text-italic',
+                        ?I..(rsrcPath + '/textitalic.png')),
                 "&Italic", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_I, triggered_self.textItalic,
                 checkable_ st.
@@ -275,8 +275,8 @@ c_ TextEdit ?MW..
         menu.aA..(actionTextItalic)
 
         actionTextUnderline _ ?A..(
-                QIcon.fromTheme('format-text-underline',
-                        QIcon(rsrcPath + '/textunder.png')),
+                ?I...fromTheme('format-text-underline',
+                        ?I..(rsrcPath + '/textunder.png')),
                 "&Underline", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_U, triggered_self.textUnderline,
                 checkable_ st.
@@ -293,34 +293,34 @@ c_ TextEdit ?MW..
         # Make sure the alignLeft is always left of the alignRight.
         __ ?A...isLeftToRight
             actionAlignLeft _ ?A..(
-                    QIcon.fromTheme('format-justify-left',
-                            QIcon(rsrcPath + '/textleft.png')),
+                    ?I...fromTheme('format-justify-left',
+                            ?I..(rsrcPath + '/textleft.png')),
                     "&Left", grp)
             actionAlignCenter _ ?A..(
-                    QIcon.fromTheme('format-justify-center',
-                            QIcon(rsrcPath + '/textcenter.png')),
+                    ?I...fromTheme('format-justify-center',
+                            ?I..(rsrcPath + '/textcenter.png')),
                     "C&enter", grp)
             actionAlignRight _ ?A..(
-                    QIcon.fromTheme('format-justify-right',
-                            QIcon(rsrcPath + '/textright.png')),
+                    ?I...fromTheme('format-justify-right',
+                            ?I..(rsrcPath + '/textright.png')),
                     "&Right", grp)
         ____
             actionAlignRight _ ?A..(
-                    QIcon.fromTheme('format-justify-right',
-                            QIcon(rsrcPath + '/textright.png')),
+                    ?I...fromTheme('format-justify-right',
+                            ?I..(rsrcPath + '/textright.png')),
                     "&Right", grp)
             actionAlignCenter _ ?A..(
-                    QIcon.fromTheme('format-justify-center',
-                            QIcon(rsrcPath + '/textcenter.png')),
+                    ?I...fromTheme('format-justify-center',
+                            ?I..(rsrcPath + '/textcenter.png')),
                     "C&enter", grp)
             actionAlignLeft _ ?A..(
-                    QIcon.fromTheme('format-justify-left',
-                            QIcon(rsrcPath + '/textleft.png')),
+                    ?I...fromTheme('format-justify-left',
+                            ?I..(rsrcPath + '/textleft.png')),
                     "&Left", grp)
  
         actionAlignJustify _ ?A..(
-                QIcon.fromTheme('format-justify-fill',
-                        QIcon(rsrcPath + '/textjustify.png')),
+                ?I...fromTheme('format-justify-fill',
+                        ?I..(rsrcPath + '/textjustify.png')),
                 "&Justify", grp)
 
         actionAlignLeft.sS..(__.CTRL + __.Key_L)
@@ -345,7 +345,7 @@ c_ TextEdit ?MW..
 
         pix _ ?P..(16, 16)
         pix.fill(__.black)
-        actionTextColor _ ?A..(QIcon(pix), "&Color...", self,
+        actionTextColor _ ?A..(?I..(pix), "&Color...", self,
                 triggered_self.textColor)
         tb.aA..(actionTextColor)
         menu.aA..(actionTextColor)
@@ -630,7 +630,7 @@ c_ TextEdit ?MW..
     ___ colorChanged  color):
         pix _ ?P..(16, 16)
         pix.fill(color)
-        actionTextColor.setIcon(QIcon(pix))
+        actionTextColor.sI..(?I..(pix))
 
     ___ alignmentChanged  alignment):
         __ alignment & __.AlignLeft:

@@ -121,10 +121,10 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         )
 
         # Add with icons
-        open_icon _ style().standardIcon(qtw.QStyle.SP_DirOpenIcon)
-        save_icon _ style().standardIcon(qtw.QStyle.SP_DriveHDIcon)
+        open_icon _ style().standardIcon(qtw.?S...SP_DirOpenIcon)
+        save_icon _ style().standardIcon(qtw.?S...SP_DriveHDIcon)
 
-        open_action.setIcon(open_icon)
+        open_action.sI..(open_icon)
         toolbar.aA..(open_action)
         toolbar.aA..(
             save_icon,
@@ -135,7 +135,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         # create a custom QAction
 
         help_action _ qtw.?A..(
-            style().standardIcon(qtw.QStyle.SP_DialogHelpButton),
+            style().standardIcon(qtw.?S...SP_DialogHelpButton),
             'Help',
             self,  # important to pass the parent!
             triggered_lambda: sB.. .sM..(

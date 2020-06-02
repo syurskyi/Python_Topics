@@ -80,7 +80,7 @@ c_ StyleSheetEditor(QDialog):
         ui.applyButton.sE..( st.
 
     ___ on_applyButton_clicked 
-        ?A...instance().sSS..(
+        ?A...i.. .sSS..(
                 ui.styleTextEdit.tPT..
         ui.applyButton.sE.. F..
 
@@ -102,7 +102,7 @@ c_ StyleSheetEditor(QDialog):
             styleSheet _ st.(styleSheet, encoding_'utf8')
 
         ui.styleTextEdit.sPT..(styleSheet)
-        ?A...instance().sSS..(styleSheet)
+        ?A...i.. .sSS..(styleSheet)
         ui.applyButton.sE.. F..
 
     ___ saveStyleSheet  fileName):

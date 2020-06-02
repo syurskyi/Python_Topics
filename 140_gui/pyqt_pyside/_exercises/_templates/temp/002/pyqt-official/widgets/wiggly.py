@@ -56,7 +56,7 @@ c_ WigglyWidget(?W..):
         setAutoFillBackground( st.
 
         newFont _ font()
-        newFont.setPointSize(newFont.pointSize() + 20)
+        newFont.sPS..(newFont.pointSize() + 20)
         sF..(newFont)
 
         timer _ QBasicTimer()
@@ -78,7 +78,7 @@ c_ WigglyWidget(?W..):
         ___ i, ch __ en..(t__):
             index _ (step + i) % 16
             color.setHsv((15 - index) * 16, 255, 191)
-            painter.setPen(color)
+            painter.sP..(color)
             painter.drawText(x, y - ((sineTable[index] * metrics.height()) / 400), ch)
             x +_ metrics.width(ch)
 

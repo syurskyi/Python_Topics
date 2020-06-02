@@ -31,9 +31,9 @@ class Ui_MainWindow(object):
         translateButton.sMS..(QtCore.?S..(75, 50))
         translateButton.sMS..(QtCore.?S..(75, 50))
         translateButton.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.?P..("images/flag.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        translateButton.setIcon(icon)
+        icon = QtGui.?I..
+        icon.aP..(QtGui.?P..("images/flag.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        translateButton.sI..(icon)
         translateButton.setIconSize(QtCore.?S..(75, 50))
         translateButton.setObjectName("translateButton")
         verticalLayout_3.addWidget(translateButton)

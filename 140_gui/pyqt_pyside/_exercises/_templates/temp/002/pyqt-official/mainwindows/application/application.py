@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QRect, QSettings, ?S..,
         __, QTextStream)
-____ ?.?G.. ______ QIcon, ?KS..
+____ ?.?G.. ______ ?I.., ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., ?MW..,
         ?MB.., ?TE..)
 
@@ -112,15 +112,15 @@ c_ MainWindow ?MW..
     ___ createActions 
         root _ QFileInfo(__file__).absolutePath()
 
-        newAct _ ?A..(QIcon(root + '/images/new.png'), "&New", self,
+        newAct _ ?A..(?I..(root + '/images/new.png'), "&New", self,
                 shortcut_QKeySequence.New, statusTip_"Create a new file",
                 triggered_self.newFile)
 
-        openAct _ ?A..(QIcon(root + '/images/open.png'), "&Open...",
+        openAct _ ?A..(?I..(root + '/images/open.png'), "&Open...",
                 self, shortcut_QKeySequence.Open,
                 statusTip_"Open an existing file", triggered_self.o..)
 
-        saveAct _ ?A..(QIcon(root + '/images/save.png'), "&Save", self,
+        saveAct _ ?A..(?I..(root + '/images/save.png'), "&Save", self,
                 shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
@@ -132,17 +132,17 @@ c_ MainWindow ?MW..
         exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application", triggered_self.close)
 
-        cutAct _ ?A..(QIcon(root + '/images/cut.png'), "Cu&t", self,
+        cutAct _ ?A..(?I..(root + '/images/cut.png'), "Cu&t", self,
                 shortcut_QKeySequence.Cut,
                 statusTip_"Cut the current selection's contents to the clipboard",
                 triggered_self.textEdit.cut)
 
-        copyAct _ ?A..(QIcon(root + '/images/copy.png'), "&Copy", self,
+        copyAct _ ?A..(?I..(root + '/images/copy.png'), "&Copy", self,
                 shortcut_QKeySequence.Copy,
                 statusTip_"Copy the current selection's contents to the clipboard",
                 triggered_self.textEdit.copy)
 
-        pasteAct _ ?A..(QIcon(root + '/images/paste.png'), "&Paste",
+        pasteAct _ ?A..(?I..(root + '/images/paste.png'), "&Paste",
                 self, shortcut_QKeySequence.Paste,
                 statusTip_"Paste the clipboard's contents into the current selection",
                 triggered_self.textEdit.paste)
@@ -153,7 +153,7 @@ c_ MainWindow ?MW..
 
         aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
         cutAct.sE.. F..
         copyAct.sE.. F..

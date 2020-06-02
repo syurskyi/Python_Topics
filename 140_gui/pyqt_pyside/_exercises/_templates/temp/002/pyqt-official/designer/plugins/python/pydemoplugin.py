@@ -3,7 +3,7 @@
 # Copyright (c) 2013 Riverbank Computing Limited
 
 
-____ ?.?G.. ______ QIcon, ?P..
+____ ?.?G.. ______ ?I.., ?P..
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ pydemo ______ PyDemo
@@ -48,7 +48,7 @@ c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
     # Return the icon used to represent the custom widget in Designer's widget
     # box.
     ___ icon
-        r_ QIcon(_logo_pixmap)
+        r_ ?I..(_logo_pixmap)
 
     # Return a short description of the custom widget used by Designer in a
     # tool tip.

@@ -167,7 +167,7 @@ c_ MainWindow ?MW..
         aboutAct _ ?A..("&About", self, triggered_self.about)
 
         aboutQtAct _ ?A..("About &Qt", self,
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
         saveAsMenu _ QMenu("&Save As", self)

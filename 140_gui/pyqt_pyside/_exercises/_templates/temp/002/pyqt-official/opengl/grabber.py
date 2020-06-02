@@ -330,10 +330,10 @@ c_ MainWindow ?MW..
 
     ___ grabFrameBuffer
         image _ glWidget.grabFramebuffer()
-        setPixmap(?P...fromImage(image))
+        sP..(?P...fromImage(image))
 
     ___ clearPixmap
-        setPixmap(?P..())
+        sP..(?P..())
 
     ___ about
         ?MB...about  "About Grabber",
@@ -353,7 +353,7 @@ c_ MainWindow ?MW..
         aboutAct _ ?A..("&About", self, triggered_self.about)
 
         aboutQtAct _ ?A..("About &Qt", self,
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
         fileMenu _ mB.. .aM..("&File")
@@ -379,8 +379,8 @@ c_ MainWindow ?MW..
 
         r_ slider
 
-    ___ setPixmap  pixmap):
-        pixmapLabel.setPixmap(pixmap)
+    ___ sP..  pixmap):
+        pixmapLabel.sP..(pixmap)
         size _ pixmap.size()
 
         __ size - ?S..(1, 0) __ pixmapLabelArea.maximumViewportSize

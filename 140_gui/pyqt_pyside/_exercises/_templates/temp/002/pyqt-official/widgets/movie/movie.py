@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFileInfo, ?S.., __
 ____ ?.?G.. ______ QMovie, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        QHBoxLayout, QLabel, QSizePolicy, ?S.., SB.., QStyle,
+        QHBoxLayout, QLabel, QSizePolicy, ?S.., SB.., ?S..,
         QToolButton, QVBoxLayout, ?W..)
 
 
@@ -161,32 +161,32 @@ c_ MoviePlayer(?W..):
         iconSize _ ?S..(36, 36)
 
         openButton _ QToolButton()
-        openButton.setIcon(style().standardIcon(QStyle.SP_DialogOpenButton))
+        openButton.sI..(style().standardIcon(?S...SP_DialogOpenButton))
         openButton.setIconSize(iconSize)
         openButton.sTT..("Open File")
         openButton.c__.c..(o..)
 
         playButton _ QToolButton()
-        playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
+        playButton.sI..(style().standardIcon(?S...SP_MediaPlay))
         playButton.setIconSize(iconSize)
         playButton.sTT..("Play")
         playButton.c__.c..(movie.start)
 
         pauseButton _ QToolButton()
         pauseButton.setCheckable( st.
-        pauseButton.setIcon(style().standardIcon(QStyle.SP_MediaPause))
+        pauseButton.sI..(style().standardIcon(?S...SP_MediaPause))
         pauseButton.setIconSize(iconSize)
         pauseButton.sTT..("Pause")
         pauseButton.c__.c..(movie.setPaused)
 
         stopButton _ QToolButton()
-        stopButton.setIcon(style().standardIcon(QStyle.SP_MediaStop))
+        stopButton.sI..(style().standardIcon(?S...SP_MediaStop))
         stopButton.setIconSize(iconSize)
         stopButton.sTT..("Stop")
         stopButton.c__.c..(movie.stop)
 
         quitButton _ QToolButton()
-        quitButton.setIcon(style().standardIcon(QStyle.SP_DialogCloseButton))
+        quitButton.sI..(style().standardIcon(?S...SP_DialogCloseButton))
         quitButton.setIconSize(iconSize)
         quitButton.sTT..("Quit")
         quitButton.c__.c..(close)

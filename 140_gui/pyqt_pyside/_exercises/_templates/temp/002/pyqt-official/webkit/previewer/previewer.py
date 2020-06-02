@@ -97,7 +97,7 @@ c_ MainWindow ?MW..
 
         aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
-                triggered_QApplication.instance().aboutQt)
+                triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
         fileMenu _ mB.. .aM..("&File")

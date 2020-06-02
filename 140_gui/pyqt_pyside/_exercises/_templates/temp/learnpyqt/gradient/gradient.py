@@ -50,7 +50,7 @@ c_ Gradient(?W...?W..):
         rect _ ?C...QRect(0, 0, width, height)
         painter.fillRect(rect, gradient)
 
-        pen _ ?G...QPen()
+        pen _ ?G...?P..()
 
         y _ painter.device().height() / 2
 
@@ -58,12 +58,12 @@ c_ Gradient(?W...?W..):
         # Draw the stop handles.
         ___ stop, _ __ _gradient:
             pen.sC..(?G...?C..('white'))
-            painter.setPen(pen)
+            painter.sP..(pen)
 
             painter.drawLine(stop * width, y - _handle_h, stop * width, y + _handle_h)
 
             pen.sC..(?G...?C..('red'))
-            painter.setPen(pen)
+            painter.sP..(pen)
 
             rect _ ?C...QRect(
                 stop * width - _handle_w/2,

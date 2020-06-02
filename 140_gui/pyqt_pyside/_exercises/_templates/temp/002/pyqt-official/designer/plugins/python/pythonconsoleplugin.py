@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.?G.. ______ QIcon, ?P..
+____ ?.?G.. ______ ?I.., ?P..
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ pythonconsolewidget ______ PythonConsoleWidget
@@ -76,7 +76,7 @@ c_ PythonConsolePlugin(QPyDesignerCustomWidgetPlugin):
     # Returns the icon used to represent the custom widget in Qt Designer's
     # widget box.
     ___ icon
-        r_ QIcon(_logo_pixmap)
+        r_ ?I..(_logo_pixmap)
 
     # Returns a short description of the custom widget for use in a tool tip.
     ___ toolTip

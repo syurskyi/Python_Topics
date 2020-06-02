@@ -42,10 +42,10 @@
 #############################################################################
 
 
-____ ?.?G.. ______ QIcon
+____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, ?CB,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
-        ?MB.., QMenu, ?PB.., SB.., QStyle, QSystemTrayIcon,
+        ?MB.., QMenu, ?PB.., SB.., ?S.., QSystemTrayIcon,
         ?TE.., QVBoxLayout)
 
 ______ systray_rc
@@ -65,7 +65,7 @@ c_ Window(QDialog):
 
         showMessageButton.c__.c..(sM..)
         showIconCheckBox.t__.c..(trayIcon.setVisible)
-        iconComboBox.currentIndexChanged.c..(setIcon)
+        iconComboBox.currentIndexChanged.c..(sI..)
         trayIcon.messageClicked.c..(messageClicked)
         trayIcon.activated.c..(iconActivated)
 
@@ -95,9 +95,9 @@ c_ Window(QDialog):
             hide()
             event.ignore()
 
-    ___ setIcon  index):
+    ___ sI..  index):
         icon _ iconComboBox.itemIcon(index)
-        trayIcon.setIcon(icon)
+        trayIcon.sI..(icon)
         setWindowIcon(icon)
 
         trayIcon.sTT..(iconComboBox.itemText(index))
@@ -128,9 +128,9 @@ c_ Window(QDialog):
         iconLabel _ QLabel("Icon:")
 
         iconComboBox _ ?CB()
-        iconComboBox.aI..(QIcon(':/images/bad.png'), "Bad")
-        iconComboBox.aI..(QIcon(':/images/heart.png'), "Heart")
-        iconComboBox.aI..(QIcon(':/images/trash.png'), "Trash")
+        iconComboBox.aI..(?I..(':/images/bad.png'), "Bad")
+        iconComboBox.aI..(?I..(':/images/heart.png'), "Heart")
+        iconComboBox.aI..(?I..(':/images/trash.png'), "Trash")
 
         showIconCheckBox _ QCheckBox("Show icon")
         showIconCheckBox.sC__( st.
@@ -150,13 +150,13 @@ c_ Window(QDialog):
         typeComboBox _ ?CB()
         typeComboBox.aI..("None", QSystemTrayIcon.NoIcon)
         typeComboBox.aI..(style().standardIcon(
-                QStyle.SP_MessageBoxInformation), "Information",
+                ?S...SP_MessageBoxInformation), "Information",
                 QSystemTrayIcon.Information)
         typeComboBox.aI..(style().standardIcon(
-                QStyle.SP_MessageBoxWarning), "Warning",
+                ?S...SP_MessageBoxWarning), "Warning",
                 QSystemTrayIcon.Warning)
         typeComboBox.aI..(style().standardIcon(
-                QStyle.SP_MessageBoxCritical), "Critical",
+                ?S...SP_MessageBoxCritical), "Critical",
                 QSystemTrayIcon.Critical)
         typeComboBox.sCI..(1)
 
@@ -205,7 +205,7 @@ c_ Window(QDialog):
         restoreAction _ ?A..("&Restore", self,
                 triggered_self.showNormal)
         quitAction _ ?A..("&Quit", self,
-                triggered_QApplication.instance().quit)
+                triggered_QApplication.i.. .quit)
 
     ___ createTrayIcon
          trayIconMenu _ QMenu

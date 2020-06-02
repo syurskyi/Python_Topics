@@ -306,7 +306,7 @@ class MainWindow(?MW..):
     def notify_error(self, error):
         e, tb = error
         msg = QMessageBox()
-        msg.setIcon(QMessageBox.Warning)
+        msg.sI..(QMessageBox.Warning)
         msg.setText(e.__class__.__name__)
         msg.setInformativeText(st.(e))
         msg.setDetailedText(tb)

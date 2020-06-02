@@ -38,7 +38,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty
+____ ?.?C.. ______ pP..
 ____ ?.QtQml ______ QQmlListProperty
 ____ ?.QtQuick ______ QQuickItem
 
@@ -47,12 +47,12 @@ ____ pieslice ______ PieSlice
 
 c_ PieChart(QQuickItem):
 
-    @pyqtProperty(QQmlListProperty)
+    @pP..(QQmlListProperty)
     ___ slices 
         r_ QQmlListProperty(PieSlice, self,
                 append_lambda pie_ch, pie_sl: pie_sl.setParentItem(pie_ch))
 
-    @pyqtProperty st.
+    @pP.. st.
     ___ name 
         r_ _name
 

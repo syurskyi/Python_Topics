@@ -353,7 +353,7 @@ c_ GLWidget(QOpenGLWidget):
         painter.setRenderHint(QPainter.TextAntialiasing)
         painter.fillRect(QRect(0, 0, width(), rect.height() + 2*border),
                 ?C..(0, 0, 0, 127))
-        painter.setPen(__.white)
+        painter.sP..(__.white)
         painter.fillRect(QRect(0, 0, width(), rect.height() + 2*border),
                 ?C..(0, 0, 0, 127))
         painter.drawText((width() - rect.width())/2, border, rect.width(),

@@ -63,13 +63,13 @@ c_ LetterItem(DemoItem):
         painter _ QPainter(image)
         painter.scale(transform.m11(), transform.m22())
         painter.setRenderHints(QPainter.TextAntialiasing | QPainter.Antialiasing | QPainter.SmoothPixmapTransform)
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
 
         __ Colors.useEightBitPalette:
             painter.sB..(?C..(102, 175, 54))
             painter.drawEllipse(0, 0, 25, 25)
             painter.sF..(Colors.tickerFont())
-            painter.setPen(?C..(255, 255, 255))
+            painter.sP..(?C..(255, 255, 255))
             painter.drawText(10, 15, letter)
         ____
             brush _ QLinearGradient(0, 0, 0, 25)
@@ -79,7 +79,7 @@ c_ LetterItem(DemoItem):
             painter.sB..(brush)
             painter.drawEllipse(0, 0, 25, 25)
             painter.sF..(Colors.tickerFont())
-            painter.setPen(?C..(255, 255, 255, 255))
+            painter.sP..(?C..(255, 255, 255, 255))
             painter.drawText(10, 15, letter)
 
         r_ image

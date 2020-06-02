@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPoint, ?S..,
+____ ?.?C.. ______ (pP.., pS.., pyqtSlot, QPoint, ?S..,
         __, ?T.., ?T..)
-____ ?.?G.. ______ ?B.., ?C.., QPainter, QPen, QPolygon
+____ ?.?G.. ______ ?B.., ?C.., QPainter, ?P.., QPolygon
 ____ ?.?W.. ______ ?A.., ?W..
 
 
@@ -102,7 +102,7 @@ c_ PyAnalogClock(?W..):
         painter.translate(width() / 2, height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(?B..(hourColor))
 
         painter.save()
@@ -110,13 +110,13 @@ c_ PyAnalogClock(?W..):
         painter.drawConvexPolygon(hourHand)
         painter.restore()
 
-        painter.setPen(hourColor)
+        painter.sP..(hourColor)
 
         ___ i __ ra..(0, 12):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(?B..(minuteColor))
 
         painter.save()
@@ -124,7 +124,7 @@ c_ PyAnalogClock(?W..):
         painter.drawConvexPolygon(minuteHand)
         painter.restore()
 
-        painter.setPen(QPen(minuteColor))
+        painter.sP..(?P..(minuteColor))
 
         ___ j __ ra..(0, 60):
             __ (j % 5) !_ 0:
@@ -176,7 +176,7 @@ c_ PyAnalogClock(?W..):
     # Qt-style properties are defined differently to Python's properties.
     # To declare a property, we call pyqtProperty() to specify the type and,
     # in this case, getter, setter and resetter methods.
-    timeZone _ pyqtProperty(int, getTimeZone, setTimeZone, resetTimeZone)
+    timeZone _ pP..(int, getTimeZone, setTimeZone, resetTimeZone)
 
 
 __ __name__ __ "__main__":

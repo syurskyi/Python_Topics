@@ -106,7 +106,7 @@ c_ LanguageChooser(QDialog):
         r_ ?W...eventFilter  object, event)
 
     ___ closeEvent  event):
-        ?A...instance().quit()
+        ?A...i.. .quit()
 
     ___ checkBoxToggled 
         checkBox _ sender()
@@ -181,7 +181,7 @@ c_ MainWindow ?MW..
         centralWidget.sL..(mainLayout)
 
         exitAction _ ?A..(tr("E&xit"), self,
-                triggered_QApplication.instance().quit)
+                triggered_QApplication.i.. .quit)
 
         fileMenu _ mB.. .aM..(tr("&File"))
         fileMenu.sP..(?P..(__.red))

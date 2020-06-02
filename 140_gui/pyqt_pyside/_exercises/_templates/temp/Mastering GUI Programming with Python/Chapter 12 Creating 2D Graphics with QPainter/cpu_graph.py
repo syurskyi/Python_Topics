@@ -52,19 +52,19 @@ c_ GraphWidget ?.?W..
         painter.drawRect(0, 0, width(), height())
 
         # draw the boundary lines
-        pen _ qtg.QPen()
+        pen _ qtg.?P..()
         pen.setDashPattern([1, 0])
 
         # warning line
         warn_y _ val_to_y(warn_val)
         pen.sC..(warn_color)
-        painter.setPen(pen)
+        painter.sP..(pen)
         painter.drawLine(0, warn_y, width(), warn_y)
 
         # critical line
         crit_y _ val_to_y(crit_val)
         pen.sC..(crit_color)
-        painter.setPen(pen)
+        painter.sP..(pen)
         painter.drawLine(0, crit_y, width(), crit_y)
 
         # set up gradient brush
@@ -79,7 +79,7 @@ c_ GraphWidget ?.?W..
             crit_color)
         brush _ qtg.?B..(gradient)
         painter.sB..(brush)
-        painter.setPen(qtc.__.NoPen)
+        painter.sP..(qtc.__.NoPen)
 
         # Draw the paths for the chart
         start_value _ getattr  'start_value', minimum)

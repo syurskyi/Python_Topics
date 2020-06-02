@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, QRectF, ?S.., __
+____ ?.?C.. ______ pP.., pS.., pyqtSlot, QRectF, ?S.., __
 ____ ?.?G.. ______ ?F.., QFontMetricsF, QPainter
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -96,7 +96,7 @@ c_ CounterLabel(?W..):
         rescale()
         reposition()
 
-    font _ pyqtProperty(?F.., getFont, sF..)
+    font _ pP..(?F.., getFont, sF..)
 
     # Provide getter and setter methods for the minimum and maximum properties.
 
@@ -110,7 +110,7 @@ c_ CounterLabel(?W..):
         __ _minimum > _value:
             sV..(_minimum)
 
-    minimum _ pyqtProperty(int, getMinimum, setMinimum)
+    minimum _ pP..(int, getMinimum, setMinimum)
 
     ___ getMaximum 
         r_ _maximum
@@ -123,7 +123,7 @@ c_ CounterLabel(?W..):
         rescale()
         reposition()
 
-    maximum _ pyqtProperty(int, getMaximum, sM..)
+    maximum _ pP..(int, getMaximum, sM..)
 
     # We provide an offset property to allow the value shown to differ from
     # the internal value held by the widget.
@@ -134,7 +134,7 @@ c_ CounterLabel(?W..):
     ___ setOffset  value):
         _offset _ value
 
-    offset _ pyqtProperty(int, getOffset, setOffset)
+    offset _ pP..(int, getOffset, setOffset)
 
     # The value property is implemented using the getValue() and setValue()
     # methods.
@@ -152,7 +152,7 @@ c_ CounterLabel(?W..):
         valueChanged[st.].e..(st.(value + _offset))
         reposition()
 
-    value _ pyqtProperty(int, getValue, sV..)
+    value _ pP..(int, getValue, sV..)
 
     # Like QAbstractSpinBox, we provide stepUp() and stepDown() slots to
     # enable the value to be incremented and decremented.

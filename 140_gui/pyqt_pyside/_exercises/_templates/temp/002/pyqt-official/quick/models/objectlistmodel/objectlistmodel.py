@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pS.., ?O.., ?U..
+____ ?.?C.. ______ pP.., pS.., ?O.., ?U..
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
@@ -52,7 +52,7 @@ c_ DataObject(?O..):
 
     nameChanged _ pS..()
 
-    @pyqtProperty(st., notify_nameChanged)
+    @pP..(st., notify_nameChanged)
     ___ name
         r_ _name
 
@@ -64,7 +64,7 @@ c_ DataObject(?O..):
 
     colorChanged _ pS..()
 
-    @pyqtProperty(st., notify_colorChanged)
+    @pP..(st., notify_colorChanged)
     ___ color
         r_ _color
 

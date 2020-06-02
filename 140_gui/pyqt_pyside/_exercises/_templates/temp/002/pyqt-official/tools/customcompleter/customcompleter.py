@@ -130,7 +130,7 @@ c_ TextEdit(?TE..):
                     _completer.completionModel().index(0, 0))
 
         cr _ cursorRect()
-        cr.setWidth(_completer.popup().sizeHintForColumn(0) + _completer.popup().verticalScrollBar().sH..().width())
+        cr.sW..(_completer.popup().sizeHintForColumn(0) + _completer.popup().verticalScrollBar().sH..().width())
         _completer.complete(cr)
 
 
@@ -157,9 +157,9 @@ c_ MainWindow ?MW..
         aboutAct _ ?A..("About", self)
         aboutQtAct _ ?A..("About Qt", self)
 
-        exitAction.t__.c..(?A...instance().quit)
+        exitAction.t__.c..(?A...i.. .quit)
         aboutAct.t__.c..(about)
-        aboutQtAct.t__.c..(?A...instance().aboutQt)
+        aboutQtAct.t__.c..(?A...i.. .aboutQt)
 
         fileMenu _ mB.. .aM..("File")
         fileMenu.aA..(exitAction)

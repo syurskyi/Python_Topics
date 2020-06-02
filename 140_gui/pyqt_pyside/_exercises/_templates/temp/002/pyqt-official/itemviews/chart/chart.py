@@ -48,9 +48,9 @@ ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
         QItemSelectionModel, QModelIndex, QPoint, QRect, ?S.., __,
         QTextStream)
 ____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QPainter, QPainterPath,
-        ?P.., QPen, QRegion, QStandardItemModel)
+        ?P.., ?P.., QRegion, QStandardItemModel)
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?FD..,
-        ?MW.., QMenu, QRubberBand, QSplitter, QStyle, QTableView)
+        ?MW.., QMenu, QRubberBand, QSplitter, ?S.., QTableView)
 
 ______ chart_rc
 
@@ -274,15 +274,15 @@ c_ PieView(QAbstractItemView):
         state _ option.state
 
         background _ option.palette.base()
-        foreground _ QPen(option.palette.color(?P...WindowText))
-        textPen _ QPen(option.palette.color(?P...Text))
-        highlightedPen _ QPen(option.palette.color(?P...HighlightedText))
+        foreground _ ?P..(option.palette.color(?P...WindowText))
+        textPen _ ?P..(option.palette.color(?P...Text))
+        highlightedPen _ ?P..(option.palette.color(?P...HighlightedText))
 
         painter _ QPainter(viewport())
         painter.setRenderHint(QPainter.Antialiasing)
 
         painter.fillRect(event.rect(), background)
-        painter.setPen(foreground)
+        painter.sP..(foreground)
 
         # Viewport rectangles
         pieRect _ QRect(margin, margin, pieSize,
@@ -334,9 +334,9 @@ c_ PieView(QAbstractItemView):
                     option _ viewOptions()
                     option.rect _ visualRect(labelIndex)
                     __ selections.isSelected(labelIndex):
-                        option.state |_ QStyle.State_Selected
+                        option.state |_ ?S...State_Selected
                     __ currentIndex() __ labelIndex:
-                        option.state |_ QStyle.State_HasFocus
+                        option.state |_ ?S...State_HasFocus
                     itemDelegate().paint(painter, option, labelIndex)
 
                     keyNumber +_ 1
@@ -480,7 +480,7 @@ c_ MainWindow ?MW..
 
         openAction.t__.c..(openFile)
         saveAction.t__.c..(saveFile)
-        quitAction.t__.c..(?A...instance().quit)
+        quitAction.t__.c..(?A...i.. .quit)
 
         mB.. .aM..(fileMenu)
         sB..

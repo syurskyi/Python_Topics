@@ -45,7 +45,7 @@
 
 ____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, __)
-____ ?.?G.. ______ QDrag, QIcon, QImage, QPainter, ?P..
+____ ?.?G.. ______ QDrag, ?I.., QImage, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
         QScrollArea, ?W..)
 ____ ?.QtSvg ______ QSvgWidget
@@ -88,7 +88,7 @@ c_ SourceWidget(?W..):
         instructTopLabel _ QLabel("This is an SVG drawing:")
         instructBottomLabel _ QLabel("Drag the icon to copy the drawing as a PNG file:")
         dragIcon _ ?PB..("Export")
-        dragIcon.setIcon(QIcon(':/images/drag.png'))
+        dragIcon.sI..(?I..(':/images/drag.png'))
         dragIcon.pressed.c..(startDrag)
 
         layout _ QGridLayout()
@@ -122,7 +122,7 @@ c_ SourceWidget(?W..):
 
         drag _ QDrag
         drag.setMimeData(mimeData)
-        drag.setPixmap(?P..(':/images/drag.png'))
+        drag.sP..(?P..(':/images/drag.png'))
         drag.exec_(__.CopyAction)
 
 

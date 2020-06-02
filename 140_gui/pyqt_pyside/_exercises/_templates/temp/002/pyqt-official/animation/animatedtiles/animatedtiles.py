@@ -42,14 +42,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, pS.., QEasingCurve, ?O..,
-        QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
+____ ?.?C.. ______ (pP.., pS.., QEasingCurve, ?O..,
+        QParallelAnimationGroup, QPointF, ?PA.., qrand, QRectF,
         QState, QStateMachine, __, ?T..)
 ____ ?.?G.. ______ (?B.., QLinearGradient, QPainter, QPainterPath,
         ?P..)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsPixmapItem,
         QGraphicsRectItem, QGraphicsScene, QGraphicsView, QGraphicsWidget,
-        QStyle)
+        ?S..)
 
 ______ animatedtiles_rc
 
@@ -66,7 +66,7 @@ c_ Pixmap(?O..):
     ___ _set_pos  pos):
         pixmap_item.setPos(pos)
 
-    pos _ pyqtProperty(QPointF, fset__set_pos)
+    pos _ pP..(QPointF, fset__set_pos)
 
 
 c_ Button(QGraphicsWidget):
@@ -90,11 +90,11 @@ c_ Button(QGraphicsWidget):
         r_ pa__
 
     ___ paint  painter, option, widget):
-        down _ option.state & QStyle.State_Sunken
+        down _ option.state & ?S...State_Sunken
         r _ boundingRect()
 
         grad _ QLinearGradient(r.topLeft(), r.bottomRight())
-        __ option.state & QStyle.State_MouseOver:
+        __ option.state & ?S...State_MouseOver:
             color_0 _ __.white
         ____
             color_0 _ __.lightGray
@@ -107,7 +107,7 @@ c_ Button(QGraphicsWidget):
         grad.setColorAt(0, color_0)
         grad.setColorAt(1, color_1)
 
-        painter.setPen(__.darkGray)
+        painter.sP..(__.darkGray)
         painter.sB..(grad)
         painter.drawEllipse(r)
 
@@ -120,7 +120,7 @@ c_ Button(QGraphicsWidget):
         grad.setColorAt(0, color_0)
         grad.setColorAt(1, color_1)
 
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.sB..(grad)
 
         __ down:
@@ -230,10 +230,10 @@ __ ______ __ ______
     states.setInitialState(rootState)
     rootState.setInitialState(centeredState)
 
-    group _ QParallelAnimationGroup()
+    group _ ?PAG..
     ___ i, item __ en..(i..):
-        anim _ QPropertyAnimation(item, b'pos')
-        anim.setDuration(750 + i * 25)
+        anim _ ?PA..(item, b'pos')
+        anim.sD..(750 + i * 25)
         anim.setEasingCurve(QEasingCurve.InOutBack)
         group.addAnimation(anim)
 

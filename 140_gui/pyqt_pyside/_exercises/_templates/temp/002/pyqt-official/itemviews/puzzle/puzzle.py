@@ -47,7 +47,7 @@ ______ random
 ____ ?.?C.. ______ (pS.., QAbstractListModel, QByteArray,
         ?DS.., QIODevice, QMimeData, QModelIndex, QPoint, QRect, ?S..,
         __)
-____ ?.?G.. ______ ?C.., QCursor, QDrag, QIcon, QPainter, ?P..
+____ ?.?G.. ______ ?C.., QCursor, QDrag, ?I.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
         QListView, ?MW.., ?MB.., QSizePolicy, ?W..)
 
@@ -166,7 +166,7 @@ c_ PuzzleWidget(?W..):
         drag _ QDrag
         drag.setMimeData(mimeData)
         drag.setHotSpot(event.pos() - square.topLeft())
-        drag.setPixmap(pixmap)
+        drag.sP..(pixmap)
 
         __ drag.exec_(__.MoveAction) !_ __.MoveAction:
             pieceLocations.insert(found, location)
@@ -184,7 +184,7 @@ c_ PuzzleWidget(?W..):
 
         __ highlightedRect.isValid
             painter.sB..(?C..("#ffcccc"))
-            painter.setPen(__.NoPen)
+            painter.sP..(__.NoPen)
             painter.drawRect(highlightedRect.adjusted(0, 0, -1, -1))
 
         ___ rect, pixmap __ zip(pieceRects, piecePixmaps):
@@ -208,7 +208,7 @@ c_ PiecesModel(QAbstractListModel):
             r_ N..
 
         __ role __ __.DecorationRole:
-            r_ QIcon(pixmaps[index.row()].scaled(
+            r_ ?I..(pixmaps[index.row()].scaled(
                     60, 60, __.KeepAspectRatio, __.SmoothTransformation))
 
         __ role __ __.UserRole:
@@ -390,7 +390,7 @@ c_ MainWindow ?MW..
         restartAction _ gameMenu.aA..("&Restart")
 
         openAction.t__.c..(openImage)
-        exitAction.t__.c..(?A...instance().quit)
+        exitAction.t__.c..(?A...i.. .quit)
         restartAction.t__.c..(setupPuzzle)
 
     ___ setupWidgets 

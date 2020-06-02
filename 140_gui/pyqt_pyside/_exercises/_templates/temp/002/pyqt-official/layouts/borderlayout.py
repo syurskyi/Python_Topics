@@ -185,7 +185,7 @@ c_ BorderLayout(QLayout):
                 totalSize.setHeight(totalSize.height() + itemSize.height())
 
             __ position __ (West, East, Center):
-                totalSize.setWidth(totalSize.width() + itemSize.width())
+                totalSize.sW..(totalSize.width() + itemSize.width())
 
         r_ totalSize
 

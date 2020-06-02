@@ -52,7 +52,7 @@ c_ Pong(?O..):
 
     @pyqtSlot(st., result_str)
     ___ ping  arg):
-        QMetaObject.invokeMethod( ?CA...instance(), 'quit')
+        QMetaObject.invokeMethod( ?CA...i.. , 'quit')
 
         r_ "ping(\"%s\") got called" % arg
 

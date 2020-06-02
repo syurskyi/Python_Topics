@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, ?U..
 ____ ?.?W.. ______ (?A.., ?A.., QLineEdit, ?MW..,
-        QSizePolicy, QStyle, ?TE..)
+        QSizePolicy, ?S.., ?TE..)
 ____ ?.?N.. ______ QNetworkProxyFactory, ?NR..
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
 
@@ -95,7 +95,7 @@ c_ MainWindow ?MW..
         effectMenu.aA..("Highlight all links", highlightAllLinks)
 
         rotateAction _ ?A..(
-                style().standardIcon(QStyle.SP_FileDialogDetailedView),
+                style().standardIcon(?S...SP_FileDialogDetailedView),
                 "Turn images upside down", self, checkable_True,
                 toggled_self.rotateImages)
         effectMenu.aA..(rotateAction)

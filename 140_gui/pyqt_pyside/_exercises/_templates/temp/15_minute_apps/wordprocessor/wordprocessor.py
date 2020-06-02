@@ -97,25 +97,25 @@ c_ MainWindow ?MW..
         aTB..(file_toolbar)
         file_menu _ mB.. .aM..("&File")
 
-        open_file_action _ ?A..(QIcon(__.p__ .join('images', 'blue-folder-open-document.png')), "Open file...", self)
+        open_file_action _ ?A..(?I..(__.p__ .join('images', 'blue-folder-open-document.png')), "Open file...", self)
         open_file_action.setStatusTip("Open file")
         open_file_action.t__.c..(file_open)
         file_menu.aA..(open_file_action)
         file_toolbar.aA..(open_file_action)
 
-        save_file_action _ ?A..(QIcon(__.p__ .join('images', 'disk.png')), "Save", self)
+        save_file_action _ ?A..(?I..(__.p__ .join('images', 'disk.png')), "Save", self)
         save_file_action.setStatusTip("Save current page")
         save_file_action.t__.c..(file_save)
         file_menu.aA..(save_file_action)
         file_toolbar.aA..(save_file_action)
 
-        saveas_file_action _ ?A..(QIcon(__.p__ .join('images', 'disk--pencil.png')), "Save As...", self)
+        saveas_file_action _ ?A..(?I..(__.p__ .join('images', 'disk--pencil.png')), "Save As...", self)
         saveas_file_action.setStatusTip("Save current page to specified file")
         saveas_file_action.t__.c..(file_saveas)
         file_menu.aA..(saveas_file_action)
         file_toolbar.aA..(saveas_file_action)
 
-        print_action _ ?A..(QIcon(__.p__ .join('images', 'printer.png')), "Print...", self)
+        print_action _ ?A..(?I..(__.p__ .join('images', 'printer.png')), "Print...", self)
         print_action.setStatusTip("Print current page")
         print_action.t__.c..(file_print)
         file_menu.aA..(print_action)
@@ -126,12 +126,12 @@ c_ MainWindow ?MW..
         aTB..(edit_toolbar)
         edit_menu _ mB.. .aM..("&Edit")
 
-        undo_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-curve-180-left.png')), "Undo", self)
+        undo_action _ ?A..(?I..(__.p__ .join('images', 'arrow-curve-180-left.png')), "Undo", self)
         undo_action.setStatusTip("Undo last change")
         undo_action.t__.c..(editor.undo)
         edit_menu.aA..(undo_action)
 
-        redo_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-curve.png')), "Redo", self)
+        redo_action _ ?A..(?I..(__.p__ .join('images', 'arrow-curve.png')), "Redo", self)
         redo_action.setStatusTip("Redo last change")
         redo_action.t__.c..(editor.redo)
         edit_toolbar.aA..(redo_action)
@@ -139,28 +139,28 @@ c_ MainWindow ?MW..
 
         edit_menu.addSeparator()
 
-        cut_action _ ?A..(QIcon(__.p__ .join('images', 'scissors.png')), "Cut", self)
+        cut_action _ ?A..(?I..(__.p__ .join('images', 'scissors.png')), "Cut", self)
         cut_action.setStatusTip("Cut selected text")
         cut_action.sS..(?KS...Cut)
         cut_action.t__.c..(editor.cut)
         edit_toolbar.aA..(cut_action)
         edit_menu.aA..(cut_action)
 
-        copy_action _ ?A..(QIcon(__.p__ .join('images', 'document-copy.png')), "Copy", self)
+        copy_action _ ?A..(?I..(__.p__ .join('images', 'document-copy.png')), "Copy", self)
         copy_action.setStatusTip("Copy selected text")
         cut_action.sS..(?KS...Copy)
         copy_action.t__.c..(editor.copy)
         edit_toolbar.aA..(copy_action)
         edit_menu.aA..(copy_action)
 
-        paste_action _ ?A..(QIcon(__.p__ .join('images', 'clipboard-paste-document-text.png')), "Paste", self)
+        paste_action _ ?A..(?I..(__.p__ .join('images', 'clipboard-paste-document-text.png')), "Paste", self)
         paste_action.setStatusTip("Paste from clipboard")
         cut_action.sS..(?KS...Paste)
         paste_action.t__.c..(editor.paste)
         edit_toolbar.aA..(paste_action)
         edit_menu.aA..(paste_action)
 
-        select_action _ ?A..(QIcon(__.p__ .join('images', 'selection-input.png')), "Select all", self)
+        select_action _ ?A..(?I..(__.p__ .join('images', 'selection-input.png')), "Select all", self)
         select_action.setStatusTip("Select all text")
         cut_action.sS..(?KS...SelectAll)
         select_action.t__.c..(editor.selectAll)
@@ -168,7 +168,7 @@ c_ MainWindow ?MW..
 
         edit_menu.addSeparator()
 
-        wrap_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
+        wrap_action _ ?A..(?I..(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")
         wrap_action.setCheckable( st.
         wrap_action.sC__( st.
@@ -193,7 +193,7 @@ c_ MainWindow ?MW..
         fontsize.currentIndexChanged[st.].c..(l___ s: editor.setFontPointSize(float(s)) )
         format_toolbar.aW..(fontsize)
 
-        bold_action _ ?A..(QIcon(__.p__ .join('images', 'edit-bold.png')), "Bold", self)
+        bold_action _ ?A..(?I..(__.p__ .join('images', 'edit-bold.png')), "Bold", self)
         bold_action.setStatusTip("Bold")
         bold_action.sS..(?KS...Bold)
         bold_action.setCheckable( st.
@@ -201,7 +201,7 @@ c_ MainWindow ?MW..
         format_toolbar.aA..(bold_action)
         format_menu.aA..(bold_action)
 
-        italic_action _ ?A..(QIcon(__.p__ .join('images', 'edit-italic.png')), "Italic", self)
+        italic_action _ ?A..(?I..(__.p__ .join('images', 'edit-italic.png')), "Italic", self)
         italic_action.setStatusTip("Italic")
         italic_action.sS..(?KS...Italic)
         italic_action.setCheckable( st.
@@ -209,7 +209,7 @@ c_ MainWindow ?MW..
         format_toolbar.aA..(italic_action)
         format_menu.aA..(italic_action)
 
-        underline_action _ ?A..(QIcon(__.p__ .join('images', 'edit-underline.png')), "Underline", self)
+        underline_action _ ?A..(?I..(__.p__ .join('images', 'edit-underline.png')), "Underline", self)
         underline_action.setStatusTip("Underline")
         underline_action.sS..(?KS...Underline)
         underline_action.setCheckable( st.
@@ -219,28 +219,28 @@ c_ MainWindow ?MW..
 
         format_menu.addSeparator()
 
-        alignl_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment.png')), "Align left", self)
+        alignl_action _ ?A..(?I..(__.p__ .join('images', 'edit-alignment.png')), "Align left", self)
         alignl_action.setStatusTip("Align text left")
         alignl_action.setCheckable( st.
         alignl_action.t__.c..(l___: editor.setAlignment(__.AlignLeft))
         format_toolbar.aA..(alignl_action)
         format_menu.aA..(alignl_action)
 
-        alignc_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-center.png')), "Align center", self)
+        alignc_action _ ?A..(?I..(__.p__ .join('images', 'edit-alignment-center.png')), "Align center", self)
         alignc_action.setStatusTip("Align text center")
         alignc_action.setCheckable( st.
         alignc_action.t__.c..(l___: editor.setAlignment(__.AlignCenter))
         format_toolbar.aA..(alignc_action)
         format_menu.aA..(alignc_action)
 
-        alignr_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-right.png')), "Align right", self)
+        alignr_action _ ?A..(?I..(__.p__ .join('images', 'edit-alignment-right.png')), "Align right", self)
         alignr_action.setStatusTip("Align text right")
         alignr_action.setCheckable( st.
         alignr_action.t__.c..(l___: editor.setAlignment(__.AlignRight))
         format_toolbar.aA..(alignr_action)
         format_menu.aA..(alignr_action)
 
-        alignj_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-justify.png')), "Justify", self)
+        alignj_action _ ?A..(?I..(__.p__ .join('images', 'edit-alignment-justify.png')), "Justify", self)
         alignj_action.setStatusTip("Justify text")
         alignj_action.setCheckable( st.
         alignj_action.t__.c..(l___: editor.setAlignment(__.AlignJustify))
@@ -302,7 +302,7 @@ c_ MainWindow ?MW..
     ___ dialog_critical  s):
         dlg _ ?MB..
         dlg.sT..(s)
-        dlg.setIcon(?MB...Critical)
+        dlg.sI..(?MB...Critical)
         dlg.s..
 
     ___ file_open

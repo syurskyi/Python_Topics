@@ -109,10 +109,10 @@ c_ Colors(object):
 
         __ ___.platform __ 'darwin':
             font.setPixelSize(14)
-            font.setFamily('Arial')
+            font.sF..('Arial')
         ____
             font.setPixelSize(13)
-            font.setFamily('Verdana')
+            font.sF..('Verdana')
 
         r_ font
 
@@ -123,7 +123,7 @@ c_ Colors(object):
 
         font.setPixelSize(23)
         font.setBold( st.
-        font.setFamily('Verdana')
+        font.sF..('Verdana')
 
         r_ font;
 
@@ -133,7 +133,7 @@ c_ Colors(object):
         font.setStyleStrategy(?F...PreferAntialias)
 
         font.setPixelSize(11)
-        font.setFamily('Verdana')
+        font.sF..('Verdana')
 
         r_ font
 
@@ -145,11 +145,11 @@ c_ Colors(object):
         __ ___.platform __ 'darwin':
             font.setPixelSize(11)
             font.setBold( st.
-            font.setFamily('Arial')
+            font.sF..('Arial')
         ____
             font.setPixelSize(10)
             font.setBold( st.
-            font.setFamily('sans serif')
+            font.sF..('sans serif')
 
         r_ font
 

@@ -48,7 +48,7 @@ ____ ?.?G.. ______ ?B.., qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
         ?FD.., QHBoxLayout, QLabel, ?MW.., ?MB.., QMenu,
-        QProgressDialog, SB.., QStyle, QStyleOptionViewItem, QTableView,
+        QProgressDialog, SB.., ?S.., QStyleOptionViewItem, QTableView,
         QVBoxLayout, ?W..)
 
 ______ pixelator_rc
@@ -64,7 +64,7 @@ c_ PixelDelegate(QAbstractItemDelegate):
         pixelSize _ 12
 
     ___ paint  painter, option, index):
-        __ option.state & QStyle.State_Selected:
+        __ option.state & ?S...State_Selected:
             painter.fillRect(option.rect, option.palette.highlight())
 
         size _ min(option.rect.width(), option.rect.height())
@@ -75,9 +75,9 @@ c_ PixelDelegate(QAbstractItemDelegate):
 
         painter.save()
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
 
-        __ option.state & QStyle.State_Selected:
+        __ option.state & ?S...State_Selected:
             painter.sB..(option.palette.highlightedText())
         ____
             painter.sB..(?B..(__.black))
@@ -172,7 +172,7 @@ c_ MainWindow ?MW..
 
         openAction.t__.c..(chooseImage)
         printAction.t__.c..(printImage)
-        quitAction.t__.c..(?A...instance().quit)
+        quitAction.t__.c..(?A...i.. .quit)
         aboutAction.t__.c..(showAboutBox)
         pixelSizeSpinBox.valueChanged.c..(delegate.setPixelSize)
         pixelSizeSpinBox.valueChanged.c..(updateView)

@@ -46,8 +46,8 @@ ______ math
 
 ____ ?.?C.. ______ (pS.., QLineF, QPointF, QRect, QRectF, ?S..,
         QSizeF, __)
-____ ?.?G.. ______ (?B.., ?C.., ?F.., QIcon, QIntValidator, QPainter,
-        QPainterPath, QPen, ?P.., QPolygonF)
+____ ?.?G.. ______ (?B.., ?C.., ?F.., ?I.., QIntValidator, QPainter,
+        QPainterPath, ?P.., ?P.., QPolygonF)
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
@@ -67,7 +67,7 @@ c_ Arrow(QGraphicsLineItem):
         myEndItem _ endItem
         setFlag(QGraphicsItem.ItemIsSelectable,  st.
         myColor _ __.black
-        setPen(QPen(myColor, 2, __.SolidLine, __.RoundCap,
+        sP..(?P..(myColor, 2, __.SolidLine, __.RoundCap,
                 __.RoundJoin))
 
     ___ sC..  color):
@@ -104,7 +104,7 @@ c_ Arrow(QGraphicsLineItem):
         myPen _ pen()
         myPen.sC..(myColor)
         arrowSize _ 20.0
-        painter.setPen(myPen)
+        painter.sP..(myPen)
         painter.sB..(myColor)
 
         centerLine _ QLineF(myStartItem.pos(), myEndItem.pos())
@@ -139,7 +139,7 @@ c_ Arrow(QGraphicsLineItem):
         painter.drawLine(line)
         painter.drawPolygon(arrowHead)
         __ isSelected
-            painter.setPen(QPen(myColor, 1, __.DashLine))
+            painter.sP..(?P..(myColor, 1, __.DashLine))
             myLine _ QLineF(line)
             myLine.translate(0, 4.0)
             painter.drawLine(myLine)
@@ -233,7 +233,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
         pixmap _ ?P..(250, 250)
         pixmap.fill(__.transparent)
         painter _ QPainter(pixmap)
-        painter.setPen(QPen(__.black, 8))
+        painter.sP..(?P..(__.black, 8))
         painter.translate(125, 125)
         painter.drawPolyline(myPolygon)
         r_ pixmap
@@ -326,7 +326,7 @@ c_ DiagramScene(QGraphicsScene):
         ____ myMode __ InsertLine:
             line _ QGraphicsLineItem(QLineF(mouseEvent.scenePos(),
                     mouseEvent.scenePos()))
-            line.setPen(QPen(myLineColor, 2))
+            line.sP..(?P..(myLineColor, 2))
             aI..(line)
         ____ myMode __ InsertText:
             textItem _ DiagramTextItem()
@@ -504,21 +504,21 @@ c_ MainWindow ?MW..
 
     ___ textColorChanged
         textAction _ sender()
-        fontColorToolButton.setIcon(
+        fontColorToolButton.sI..(
                 createColorToolButtonIcon(':/images/textpointer.png',
                         ?C..(textAction.data())))
         textButtonTriggered()
 
     ___ itemColorChanged
         fillAction _ sender()
-        fillColorToolButton.setIcon(
+        fillColorToolButton.sI..(
                 createColorToolButtonIcon( ':/images/floodfill.png',
                         ?C..(fillAction.data())))
         fillButtonTriggered()
 
     ___ lineColorChanged
         lineAction _ sender()
-        lineColorToolButton.setIcon(
+        lineColorToolButton.sI..(
                 createColorToolButtonIcon(':/images/linecolor.png',
                         ?C..(lineAction.data())))
         lineButtonTriggered()
@@ -534,11 +534,11 @@ c_ MainWindow ?MW..
 
     ___ handleFontChange
         font _ fontCombo.currentFont()
-        font.setPointSize(fontSizeCombo.currentText().toInt()[0])
+        font.sPS..(fontSizeCombo.currentText().toInt()[0])
         __ boldAction.isChecked
-            font.setWeight(?F...Bold)
+            font.sW..(?F...Bold)
         ____
-            font.setWeight(?F...Normal)
+            font.sW..(?F...Normal)
         font.setItalic(italicAction.isChecked())
         font.setUnderline(underlineAction.isChecked())
 
@@ -573,7 +573,7 @@ c_ MainWindow ?MW..
         textButton _ QToolButton()
         textButton.setCheckable( st.
         buttonGroup.addButton(textButton, InsertTextButton)
-        textButton.setIcon(QIcon(?P..(':/images/textpointer.png').scaled(30, 30)))
+        textButton.sI..(?I..(?P..(':/images/textpointer.png').scaled(30, 30)))
         textButton.setIconSize(?S..(50, 50))
 
         textLayout _ QGridLayout()
@@ -616,16 +616,16 @@ c_ MainWindow ?MW..
 
     ___ createActions
         toFrontAction _ ?A..(
-                QIcon(':/images/bringtofront.png'), "Bring to &Front",
+                ?I..(':/images/bringtofront.png'), "Bring to &Front",
                 self, shortcut_"Ctrl+F", statusTip_"Bring item to front",
                 triggered_self.bringToFront)
 
         sendBackAction _ ?A..(
-                QIcon(':/images/sendtoback.png'), "Send to &Back", self,
+                ?I..(':/images/sendtoback.png'), "Send to &Back", self,
                 shortcut_"Ctrl+B", statusTip_"Send item to back",
                 triggered_self.sendToBack)
 
-        deleteAction _ ?A..(QIcon(':/images/delete.png'),
+        deleteAction _ ?A..(?I..(':/images/delete.png'),
                 "&Delete", self, shortcut_"Delete",
                 statusTip_"Delete item from diagram",
                 triggered_self.deleteItem)
@@ -633,16 +633,16 @@ c_ MainWindow ?MW..
         exitAction _ ?A..("E&xit", self, shortcut_"Ctrl+X",
                 statusTip_"Quit Scenediagram example", triggered_self.close)
 
-        boldAction _ ?A..(QIcon(':/images/bold.png'),
+        boldAction _ ?A..(?I..(':/images/bold.png'),
                 "Bold", self, checkable_True, shortcut_"Ctrl+B",
                 triggered_self.handleFontChange)
 
-        italicAction _ ?A..(QIcon(':/images/italic.png'),
+        italicAction _ ?A..(?I..(':/images/italic.png'),
                 "Italic", self, checkable_True, shortcut_"Ctrl+I",
                 triggered_self.handleFontChange)
 
         underlineAction _ ?A..(
-                QIcon(':/images/underline.png'), "Underline", self,
+                ?I..(':/images/underline.png'), "Underline", self,
                 checkable_True, shortcut_"Ctrl+U",
                 triggered_self.handleFontChange)
 
@@ -684,7 +684,7 @@ c_ MainWindow ?MW..
         fontColorToolButton.setMenu(
                 createColorMenu(textColorChanged, __.black))
         textAction _ fontColorToolButton.menu().defaultAction()
-        fontColorToolButton.setIcon(
+        fontColorToolButton.sI..(
                 createColorToolButtonIcon(':/images/textpointer.png',
                         __.black))
         fontColorToolButton.setAutoFillBackground( st.
@@ -695,7 +695,7 @@ c_ MainWindow ?MW..
         fillColorToolButton.setMenu(
                 createColorMenu(itemColorChanged, __.white))
         fillAction _ fillColorToolButton.menu().defaultAction()
-        fillColorToolButton.setIcon(
+        fillColorToolButton.sI..(
                 createColorToolButtonIcon(':/images/floodfill.png',
                         __.white))
         fillColorToolButton.c__.c..(fillButtonTriggered)
@@ -705,7 +705,7 @@ c_ MainWindow ?MW..
         lineColorToolButton.setMenu(
                 createColorMenu(lineColorChanged, __.black))
         lineAction _ lineColorToolButton.menu().defaultAction()
-        lineColorToolButton.setIcon(
+        lineColorToolButton.sI..(
                 createColorToolButtonIcon(':/images/linecolor.png',
                         __.black))
         lineColorToolButton.c__.c..(lineButtonTriggered)
@@ -725,10 +725,10 @@ c_ MainWindow ?MW..
         pointerButton _ QToolButton()
         pointerButton.setCheckable( st.
         pointerButton.sC__( st.
-        pointerButton.setIcon(QIcon(':/images/pointer.png'))
+        pointerButton.sI..(?I..(':/images/pointer.png'))
         linePointerButton _ QToolButton()
         linePointerButton.setCheckable( st.
-        linePointerButton.setIcon(QIcon(':/images/linepointer.png'))
+        linePointerButton.sI..(?I..(':/images/linepointer.png'))
 
         pointerTypeGroup _ QButtonGroup()
         pointerTypeGroup.addButton(pointerButton, DiagramScene.MoveItem)
@@ -749,7 +749,7 @@ c_ MainWindow ?MW..
     ___ createBackgroundCellWidget  t__, image):
         button _ QToolButton()
         button.sT..(t__)
-        button.setIcon(QIcon(image))
+        button.sI..(?I..(image))
         button.setIconSize(?S..(50, 50))
         button.setCheckable( st.
         backgroundButtonGroup.addButton(button)
@@ -765,10 +765,10 @@ c_ MainWindow ?MW..
 
     ___ createCellWidget  t__, diagramType):
         item _ DiagramItem(diagramType, itemMenu)
-        icon _ QIcon(item.image())
+        icon _ ?I..(item.image())
 
         button _ QToolButton()
-        button.setIcon(icon)
+        button.sI..(icon)
         button.setIconSize(?S..(50, 50))
         button.setCheckable( st.
         buttonGroup.addButton(button, diagramType)
@@ -807,16 +807,16 @@ c_ MainWindow ?MW..
         painter.drawPixmap(target, image, source)
         painter.end()
 
-        r_ QIcon(pixmap)
+        r_ ?I..(pixmap)
 
     ___ createColorIcon  color):
         pixmap _ ?P..(20, 20)
         painter _ QPainter(pixmap)
-        painter.setPen(__.NoPen)
+        painter.sP..(__.NoPen)
         painter.fillRect(QRect(0, 0, 20, 20), color)
         painter.end()
 
-        r_ QIcon(pixmap)
+        r_ ?I..(pixmap)
 
 
 __ ______ __ ______

@@ -74,7 +74,7 @@ __ ______ __ ______
                 "large.")
 
     mainWindow _ MainWindow()
-    MenuManager.instance().init(mainWindow)
+    MenuManager.i.. .init(mainWindow)
     mainWindow.setFocus()
 
     __ Colors.fullscreen:
