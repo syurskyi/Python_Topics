@@ -71,8 +71,8 @@ c_ MainWindow ?MW..
         editor.setAutoFormatting(?TE...AutoAll)
         editor.sC__.c..(update_format)
         # Initialize default font size.
-        font _ QFont('Times', 12)
-        editor.setFont(font)
+        font _ ?F..('Times', 12)
+        editor.sF..(font)
         # We need to repeat the size to init the current format.
         editor.setFontPointSize(12)
 
@@ -197,7 +197,7 @@ c_ MainWindow ?MW..
         bold_action.setStatusTip("Bold")
         bold_action.sS..(?KS...Bold)
         bold_action.setCheckable( st.
-        bold_action.t__.c..(l___ x: editor.setFontWeight(QFont.Bold __ x ____ QFont.Normal))
+        bold_action.t__.c..(l___ x: editor.setFontWeight(?F...Bold __ x ____ ?F...Normal))
         format_toolbar.aA..(bold_action)
         format_menu.aA..(bold_action)
 
@@ -290,7 +290,7 @@ c_ MainWindow ?MW..
 
         italic_action.sC__(editor.fontItalic())
         underline_action.sC__(editor.fontUnderline())
-        bold_action.sC__(editor.fontWeight() __ QFont.Bold)
+        bold_action.sC__(editor.fontWeight() __ ?F...Bold)
 
         alignl_action.sC__(editor.alignment() __ __.AlignLeft)
         alignc_action.sC__(editor.alignment() __ __.AlignCenter)

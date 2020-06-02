@@ -147,4 +147,4 @@ __ __name__ __ "__main__":
     app _ ?A..(___.a..
     window _ DataGrid()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

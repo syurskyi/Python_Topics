@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ ?D.., __, ?U..
-____ ?.?M.. ______ ?MC.., QMediaPlayer
+____ ?.?M.. ______ ?MC.., ?MP..
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
         ?PB.., QSizePolicy, ?S.., QStyle, QVBoxLayout, ?W..)
@@ -54,7 +54,7 @@ c_ VideoPlayer(?W..):
     ___  -   parent_None):
         super(VideoPlayer, self). - (parent)
 
-        mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
+        mediaPlayer _ ?MP..(N.., ?MP...VideoSurface)
 
         videoWidget _ ?VW..
 
@@ -89,8 +89,8 @@ c_ VideoPlayer(?W..):
 
         mediaPlayer.setVideoOutput(videoWidget)
         mediaPlayer.stateChanged.c..(mediaStateChanged)
-        mediaPlayer.positionChanged.c..(positionChanged)
-        mediaPlayer.durationChanged.c..(durationChanged)
+        mediaPlayer.pC...c..(pC..)
+        mediaPlayer.dC...c..(dC..)
         mediaPlayer.error.c..(handleError)
 
     ___ openFile 
@@ -103,23 +103,23 @@ c_ VideoPlayer(?W..):
             playButton.sE..( st.
 
     ___ play 
-        __ mediaPlayer.state() __ QMediaPlayer.PlayingState:
+        __ mediaPlayer.s.. __ ?MP...PlayingState:
             mediaPlayer.pause()
         ____
             mediaPlayer.play()
 
     ___ mediaStateChanged  state):
-        __ mediaPlayer.state() __ QMediaPlayer.PlayingState:
+        __ mediaPlayer.s.. __ ?MP...PlayingState:
             playButton.setIcon(
                     style().standardIcon(QStyle.SP_MediaPause))
         ____
             playButton.setIcon(
                     style().standardIcon(QStyle.SP_MediaPlay))
 
-    ___ positionChanged  position):
+    ___ pC..  position):
         positionSlider.setValue(position)
 
-    ___ durationChanged  duration):
+    ___ dC..  duration):
         positionSlider.setRange(0, duration)
 
     ___ setPosition  position):
@@ -140,4 +140,4 @@ __ ______ __ ______
     player.r..(320, 240)
     player.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

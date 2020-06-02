@@ -213,9 +213,9 @@ c_ AudioTest ?MW..
         m_volumeSlider.setValue(m_audioOutput.volume() * 100)
 
     ___ deviceChanged  index):
-        m_pullTimer.stop()
-        m_generator.stop()
-        m_audioOutput.stop()
+        m_pullTimer.s..
+        m_generator.s..
+        m_audioOutput.s..
         m_device _ m_deviceBox.itemData(index)
 
         createAudioOutput()
@@ -231,7 +231,7 @@ c_ AudioTest ?MW..
                 m_audioOutput.processedUSecs()))
 
     ___ pullTimerExpired
-        __ m_audioOutput __ no. N.. and m_audioOutput.state() !_ QAudio.StoppedState:
+        __ m_audioOutput __ no. N.. and m_audioOutput.s.. !_ QAudio.StoppedState:
             chunks _ m_audioOutput.bytesFree() // m_audioOutput.periodSize()
             ___ _ __ ra..(chunks):
                 data _ m_generator.read(m_audioOutput.periodSize())
@@ -241,8 +241,8 @@ c_ AudioTest ?MW..
                 m_output.w..(data)
 
     ___ toggleMode
-        m_pullTimer.stop()
-        m_audioOutput.stop()
+        m_pullTimer.s..
+        m_audioOutput.s..
 
         __ m_pullMode:
             m_modeButton.sT..(PULL_MODE_LABEL)
@@ -257,19 +257,19 @@ c_ AudioTest ?MW..
         m_suspendResumeButton.sT..(SUSPEND_LABEL)
 
     ___ toggleSuspendResume
-        __ m_audioOutput.state() __ QAudio.SuspendedState:
+        __ m_audioOutput.s.. __ QAudio.SuspendedState:
             qWarning("status: Suspended, resume()")
             m_audioOutput.resume()
             m_suspendResumeButton.sT..(SUSPEND_LABEL)
-        ____ m_audioOutput.state() __ QAudio.ActiveState:
+        ____ m_audioOutput.s.. __ QAudio.ActiveState:
             qWarning("status: Active, suspend()")
             m_audioOutput.suspend()
             m_suspendResumeButton.sT..(RESUME_LABEL)
-        ____ m_audioOutput.state() __ QAudio.StoppedState:
+        ____ m_audioOutput.s.. __ QAudio.StoppedState:
             qWarning("status: Stopped, resume()")
             m_audioOutput.resume()
             m_suspendResumeButton.sT..(SUSPEND_LABEL)
-        ____ m_audioOutput.state() __ QAudio.IdleState:
+        ____ m_audioOutput.s.. __ QAudio.IdleState:
             qWarning("status: IdleState")
 
     stateMap _ {
@@ -292,4 +292,4 @@ __ ______ __ ______
     audio _ AudioTest()
     audio.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

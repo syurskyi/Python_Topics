@@ -202,4 +202,4 @@ __ ______ __ ______
 
     tabdialog _ TabDialog(fileName)
     tabdialog.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

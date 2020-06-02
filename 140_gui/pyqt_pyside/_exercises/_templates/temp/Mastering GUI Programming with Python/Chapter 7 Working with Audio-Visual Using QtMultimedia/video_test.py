@@ -6,7 +6,7 @@ app _ QCoreApplication(  # list)
 ___ camera_info __ ?CI__.availableCameras
     print('Camera: ', camera_info.deviceName())
     camera _ QCamera(camera_info)
-    r _ QMediaRecorder(camera)
+    r _ ?MR..(camera)
     print('\tAudio Codecs: ', r.supportedAudioCodecs())
     print('\tVideo Codecs: ', r.supportedVideoCodecs())
     print('\tAudio Sample Rates: ', r.supportedAudioSampleRates())

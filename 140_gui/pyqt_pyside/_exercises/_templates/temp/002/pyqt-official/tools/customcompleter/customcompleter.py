@@ -126,7 +126,7 @@ c_ TextEdit(?TE..):
 
         __ completionPrefix !_ _completer.completionPrefix
             _completer.setCompletionPrefix(completionPrefix)
-            _completer.popup().setCurrentIndex(
+            _completer.popup().sCI..(
                     _completer.completionModel().index(0, 0))
 
         cr _ cursorRect()
@@ -203,4 +203,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

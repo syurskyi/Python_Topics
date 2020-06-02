@@ -209,7 +209,7 @@ c_ Ui_AudioDevicesBase(object):
         AudioDevicesBase.setStatusBar(statusbar)
 
         retranslateUi(AudioDevicesBase)
-        tabWidget.setCurrentIndex(0)
+        tabWidget.sCI..(0)
         ?C...QMetaObject.connectSlotsByName(AudioDevicesBase)
 
     ___ retranslateUi  AudioDevicesBase):

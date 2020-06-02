@@ -114,4 +114,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ FindDialog()
     dialog.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

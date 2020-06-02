@@ -195,7 +195,7 @@ c_ TetrixBoard(QFrame):
 
         isPaused _ no. isPaused
         __ isPaused:
-            timer.stop()
+            timer.s..
         ____
             timer.start(timeoutTime(), self)
 
@@ -338,7 +338,7 @@ c_ TetrixBoard(QFrame):
 
         __ no. tryMove(curPiece, curX, curY):
             curPiece.setShape(NoShape)
-            timer.stop()
+            timer.s..
             isStarted _ F..
 
     ___ showNextPiece 
@@ -501,4 +501,4 @@ __ ______ __ ______
     window _ TetrixWindow()
     window.s..
     random.seed(N..)
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

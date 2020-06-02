@@ -142,7 +142,7 @@ c_ Window(?W..):
         r..(500, 450)
 
         proxyView.sortByColumn(SENDER, __.AscendingOrder)
-        filterColumnComboBox.setCurrentIndex(SENDER)
+        filterColumnComboBox.sCI..(SENDER)
 
         filterPatternLineEdit.sT..("Andy|Grace")
         filterCaseSensitivityCheckBox.sC__( st.
@@ -223,4 +223,4 @@ __ ______ __ ______
     window _ Window()
     window.setSourceModel(createMailModel(window))
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

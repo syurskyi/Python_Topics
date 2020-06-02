@@ -80,7 +80,7 @@ c_ Server(QDialog):
             settings.endGroup()
 
             config _ manager.configurationFromIdentifier(id)
-            __ config.state() & QNetworkConfiguration.Discovered __ 0:
+            __ config.s.. & QNetworkConfiguration.Discovered __ 0:
                 config _ manager.defaultConfiguration()
 
             networkSession _ QNetworkSession(config, self)

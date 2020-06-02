@@ -46,7 +46,7 @@ ______ ___
 ______ math
 
 ____ ?.?C.. ______ QPointF, QRect, QRectF, __, QTimer
-____ ?.?G.. ______ (?B.., ?C.., QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
         ?W..)
@@ -63,7 +63,7 @@ c_ Helper(object):
         circlePen _ QPen(__.black)
         circlePen.setWidth(1)
         textPen _ QPen(__.white)
-        textFont _ QFont()
+        textFont _ ?F..()
         textFont.setPixelSize(50)
 
     ___ paint  painter, event, elapsed):
@@ -87,7 +87,7 @@ c_ Helper(object):
         painter.restore()
 
         painter.setPen(textPen)
-        painter.setFont(textFont)
+        painter.sF..(textFont)
         painter.drawText(QRect(-50, -50, 100, 100), __.AlignCenter, "Qt")
 
 
@@ -169,4 +169,4 @@ __ ______ __ ______
 
     window _ Window()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

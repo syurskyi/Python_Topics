@@ -35,14 +35,14 @@ c_ FontButton(qtw.?PB..):
 
     ___  -   default_family, default_size, changed_None):
         s_. - ()
-        set_font(qtg.QFont(default_family, default_size))
+        set_font(qtg.?F..(default_family, default_size))
         c__.c..(on_click)
         __ changed:
             changed.c..(changed)
 
     ___ set_font  font):
         _font _ font
-        setFont(font)
+        sF..(font)
         sT..(f'{font.family()} {font.pointSize()}')
 
     ___ on_click
@@ -212,7 +212,7 @@ c_ MainWindow(qtw.?MW..):
 
         # Paint the text
         painter.setPen(data['text_color'])
-        painter.setFont(data['text_font'])
+        painter.sF..(data['text_font'])
         flags _ qtc.__.AlignHCenter | qtc.__.TextWordWrap
         painter.drawText(
             image.rect(), flags | qtc.__.AlignTop, data['top_text'])
@@ -258,4 +258,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

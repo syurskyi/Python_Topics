@@ -208,4 +208,4 @@ __ ______ __ ______
     browser _ MainWindow(url)
     browser.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -220,4 +220,4 @@ __ ______ __ ______
 
     window.setAnimating( st.
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

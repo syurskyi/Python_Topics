@@ -275,4 +275,4 @@ __ __name__ __ "__main__":
     app _ ?A..(___.a..
     sortingBox _ SortingBox()
     sortingBox.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

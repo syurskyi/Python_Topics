@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ ?D.., ?S.., QSizeF, __, ?U..
 ____ ?.?G.. ______ QTransform
-____ ?.?M.. ______ ?MC.., QMediaPlayer
+____ ?.?M.. ______ ?MC.., ?MP..
 ____ ?.?MW.. ______ QGraphicsVideoItem
 ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
         QGraphicsView, QHBoxLayout, ?PB.., ?S.., QStyle, QVBoxLayout,
@@ -56,7 +56,7 @@ c_ VideoPlayer(?W..):
     ___  -   parent_None):
         super(VideoPlayer, self). - (parent)
 
-        mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
+        mediaPlayer _ ?MP..(N.., ?MP...VideoSurface)
 
         videoItem _ QGraphicsVideoItem()
         videoItem.setSize(QSizeF(640, 480))
@@ -98,8 +98,8 @@ c_ VideoPlayer(?W..):
 
         mediaPlayer.setVideoOutput(videoItem)
         mediaPlayer.stateChanged.c..(mediaStateChanged)
-        mediaPlayer.positionChanged.c..(positionChanged)
-        mediaPlayer.durationChanged.c..(durationChanged)
+        mediaPlayer.pC...c..(pC..)
+        mediaPlayer.dC...c..(dC..)
 
     ___ sH..
         r_ ?S..(800, 600)
@@ -114,23 +114,23 @@ c_ VideoPlayer(?W..):
             playButton.sE..( st.
 
     ___ play
-        __ mediaPlayer.state() __ QMediaPlayer.PlayingState:
+        __ mediaPlayer.s.. __ ?MP...PlayingState:
             mediaPlayer.pause()
         ____
             mediaPlayer.play()
 
     ___ mediaStateChanged  state):
-        __ mediaPlayer.state() __ QMediaPlayer.PlayingState:
+        __ mediaPlayer.s.. __ ?MP...PlayingState:
             playButton.setIcon(
                     style().standardIcon(QStyle.SP_MediaPause))
         ____
             playButton.setIcon(
                     style().standardIcon(QStyle.SP_MediaPlay))
 
-    ___ positionChanged  position):
+    ___ pC..  position):
         positionSlider.setValue(position)
 
-    ___ durationChanged  duration):
+    ___ dC..  duration):
         positionSlider.setRange(0, duration)
 
     ___ setPosition  position):
@@ -153,4 +153,4 @@ __ ______ __ ______
     player _ VideoPlayer()
     player.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -63,7 +63,7 @@ dontUseCustomDirectoryIconsOption _ QCommandLineOption('c',
         "Set QFileIconProvider.DontUseCustomDirectoryIcons")
 parser.addOption(dontUseCustomDirectoryIconsOption)
 parser.addPositionalArgument('directory', "The directory to start in.")
-parser.process(app)
+parser.process ?)
 ___
     rootPath _ parser.positionalArguments().p.. 0)
 _____ IE..
@@ -93,4 +93,4 @@ tree.setColumnWidth(0, tree.width() / 3)
 tree.sWT..("Dir View")
 tree.s..
 
-___.e..(app.exec_())
+___.e.. ?.exec_())

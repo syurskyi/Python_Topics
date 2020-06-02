@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
         QPropertyAnimation, QRectF, QSequentialAnimationGroup, ?S.., QState,
         QStateMachine, __)
-____ ?.?G.. ______ (?B.., ?C.., QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
         ?P.., QPen, ?P.., QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
@@ -379,10 +379,10 @@ c_ SplashItem(QGraphicsObject):
         textRect _ boundingRect().adjusted(10, 10, -10, -10)
         flags _ int(__.AlignTop | __.AlignLeft) | __.TextWordWrap
 
-        font _ QFont()
+        font _ ?F..()
         font.setPixelSize(18)
         painter.setPen(__.black)
-        painter.setFont(font)
+        painter.sF..(font)
         painter.drawText(textRect, flags, t__)
 
 
@@ -395,4 +395,4 @@ __ ______ __ ______
     navigator _ PadNavigator(?S..(3, 3))
     navigator.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

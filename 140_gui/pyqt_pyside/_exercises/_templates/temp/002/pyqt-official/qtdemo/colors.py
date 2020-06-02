@@ -42,7 +42,7 @@
 
 ______ ___
 
-____ ?.?G.. ______ ?C.., QFont
+____ ?.?G.. ______ ?C.., ?F..
 ____ ?.?W.. ______ ?MB.., ?W..
 
 
@@ -104,8 +104,8 @@ c_ Colors(object):
 
     @staticmethod
     ___ contentFont
-        font _ QFont()
-        font.setStyleStrategy(QFont.PreferAntialias)
+        font _ ?F..()
+        font.setStyleStrategy(?F...PreferAntialias)
 
         __ ___.platform __ 'darwin':
             font.setPixelSize(14)
@@ -118,8 +118,8 @@ c_ Colors(object):
 
     @staticmethod
     ___ headingFont
-        font _ QFont()
-        font.setStyleStrategy(QFont.PreferAntialias)
+        font _ ?F..()
+        font.setStyleStrategy(?F...PreferAntialias)
 
         font.setPixelSize(23)
         font.setBold( st.
@@ -129,8 +129,8 @@ c_ Colors(object):
 
     @staticmethod
     ___ buttonFont
-        font _ QFont()
-        font.setStyleStrategy(QFont.PreferAntialias)
+        font _ ?F..()
+        font.setStyleStrategy(?F...PreferAntialias)
 
         font.setPixelSize(11)
         font.setFamily('Verdana')
@@ -139,8 +139,8 @@ c_ Colors(object):
 
     @staticmethod
     ___ tickerFont
-        font _ QFont()
-        font.setStyleStrategy(QFont.PreferAntialias)
+        font _ ?F..()
+        font.setStyleStrategy(?F...PreferAntialias)
 
         __ ___.platform __ 'darwin':
             font.setPixelSize(11)

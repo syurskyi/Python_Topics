@@ -323,7 +323,7 @@ c_ TextButton(DemoItem):
         setState(TextButton.OFF)
 
         __ Colors.noAnimations and Colors.useButtonBalls:
-            scanAnim.stop()
+            scanAnim.s..
 
     ___ mousePressEvent  event):
         __ state __ TextButton.DISABLED:

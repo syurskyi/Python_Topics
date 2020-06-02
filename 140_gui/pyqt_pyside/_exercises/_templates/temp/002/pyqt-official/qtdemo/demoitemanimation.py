@@ -77,7 +77,7 @@ c_ DemoItemAnimation(QPropertyAnimation):
         # If the item that this animation controls in currently under the
         # control of another animation, stop that animation first.
         __ item.currentAnimation __ no. N..:
-            item.currentAnimation.stop()
+            item.currentAnimation.s..
 
         item.currentAnimation _ self
 

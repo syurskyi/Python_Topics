@@ -85,4 +85,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

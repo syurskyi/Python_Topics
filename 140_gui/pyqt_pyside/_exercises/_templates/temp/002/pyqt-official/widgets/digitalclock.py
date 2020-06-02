@@ -77,4 +77,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     clock _ DigitalClock()
     clock.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

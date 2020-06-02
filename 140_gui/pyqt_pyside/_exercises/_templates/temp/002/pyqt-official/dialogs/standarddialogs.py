@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ ?D.., __
-____ ?.?G.. ______ QFont, ?P..
+____ ?.?G.. ______ ?F.., ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, QColorDialog, QDialog,
         QErrorMessage, ?FD.., QFontDialog, QFrame, QGridLayout,
         QInputDialog, QLabel, QLineEdit, ?MB.., ?PB..)
@@ -131,7 +131,7 @@ c_ Dialog(QDialog):
         itemButton.c__.c..(setItem)
         textButton.c__.c..(sT..)
         colorButton.c__.c..(sC..)
-        fontButton.c__.c..(setFont)
+        fontButton.c__.c..(sF..)
         directoryButton.c__.c..(setExistingDirectory)
         openFileNameButton.c__.c..(setOpenFileName)
         openFileNamesButton.c__.c..(setOpenFileNames)
@@ -219,11 +219,11 @@ c_ Dialog(QDialog):
             colorLabel.sP..(?P..(color))
             colorLabel.setAutoFillBackground( st.
 
-    ___ setFont 
-        font, ok _ QFontDialog.getFont(QFont(fontLabel.t__()), self)
+    ___ sF.. 
+        font, ok _ QFontDialog.getFont(?F..(fontLabel.t__()), self)
         __ ok:
             fontLabel.sT..(font.key())
-            fontLabel.setFont(font)
+            fontLabel.sF..(font)
 
     ___ setExistingDirectory 
         options _ ?FD...DontResolveSymlinks | ?FD...ShowDirsOnly
@@ -319,4 +319,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

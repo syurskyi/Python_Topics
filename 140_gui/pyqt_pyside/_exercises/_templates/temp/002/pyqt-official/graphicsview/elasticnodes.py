@@ -402,7 +402,7 @@ c_ GraphWidget(QGraphicsView):
         font _ painter.font()
         font.setBold( st.
         font.setPointSize(14)
-        painter.setFont(font)
+        painter.sF..(font)
         painter.setPen(__.lightGray)
         painter.drawText(textRect.translated(2, 2), message)
         painter.setPen(__.black)
@@ -427,4 +427,4 @@ __ ______ __ ______
     widget _ GraphWidget()
     widget.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

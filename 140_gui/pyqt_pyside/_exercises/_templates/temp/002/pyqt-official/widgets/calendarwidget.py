@@ -44,7 +44,7 @@
 
 
 ____ ?.?C.. ______ QDate, QLocale, __
-____ ?.?G.. ______ QFont, QTextCharFormat
+____ ?.?G.. ______ ?F.., QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
         ?CB, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
         QLayout, ?W..)
@@ -135,7 +135,7 @@ c_ Window(?W..):
         format _ QTextCharFormat()
 
         __ t__ __ "Bold":
-            format.setFontWeight(QFont.Bold)
+            format.setFontWeight(?F...Bold)
         ____ t__ __ "Italic":
             format.setFontItalic( st.
         ____ t__ __ "Green":
@@ -200,7 +200,7 @@ c_ Window(?W..):
             index +_ 1
 
         __ curLocaleIndex !_ -1:
-            localeCombo.setCurrentIndex(curLocaleIndex)
+            localeCombo.sCI..(curLocaleIndex)
 
         localeLabel _ QLabel("&Locale")
         localeLabel.setBuddy(localeCombo)
@@ -240,7 +240,7 @@ c_ Window(?W..):
                 QCalendarWidget.LongDayNames)
         horizontalHeaderCombo.aI..("None",
                 QCalendarWidget.NoHorizontalHeader)
-        horizontalHeaderCombo.setCurrentIndex(1)
+        horizontalHeaderCombo.sCI..(1)
 
         horizontalHeaderLabel _ QLabel("&Horizontal header:")
         horizontalHeaderLabel.setBuddy(horizontalHeaderCombo)
@@ -340,14 +340,14 @@ c_ Window(?W..):
         textFormatsGroupBox _ QGroupBox("Text Formats")
 
         weekdayColorCombo _ createColorComboBox()
-        weekdayColorCombo.setCurrentIndex(
+        weekdayColorCombo.sCI..(
                 weekdayColorCombo.findText("Black"))
 
         weekdayColorLabel _ QLabel("&Weekday color:")
         weekdayColorLabel.setBuddy(weekdayColorCombo)
 
         weekendColorCombo _ createColorComboBox()
-        weekendColorCombo.setCurrentIndex(
+        weekendColorCombo.sCI..(
                 weekendColorCombo.findText("Red"))
 
         weekendColorLabel _ QLabel("Week&end color:")
@@ -414,4 +414,4 @@ __ ______ __ ______
     window _ Window()
     window.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

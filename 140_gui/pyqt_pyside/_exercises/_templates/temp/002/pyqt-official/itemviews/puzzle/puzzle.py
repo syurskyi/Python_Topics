@@ -428,4 +428,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.openImage(':/images/example.jpg')
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

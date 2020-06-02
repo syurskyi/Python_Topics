@@ -88,7 +88,7 @@ c_ ImageDelegate(QItemDelegate):
             r_
 
         pos _ comboBox.findText(index.model().data(index), __.MatchExactly)
-        comboBox.setCurrentIndex(pos)
+        comboBox.sCI..(pos)
 
     ___ setModelData  editor, model, index):
         comboBox _ editor
@@ -273,7 +273,7 @@ c_ MainWindow ?MW..
             item1 _ imagesTable.item(row, 1)
             item2 _ imagesTable.item(row, 2)
 
-            __ item0.checkState() __ __.Checked:
+            __ item0.checkState() __ __.Ch..
                 __ item1.t__() __ "Normal":
                     mode _ QIcon.Normal
                 ____ item1.t__() __ "Active":
@@ -472,4 +472,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -197,4 +197,4 @@ __ ______ __ ______
     chat _ ChatMainWindow()
     chat.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

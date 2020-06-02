@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QDate, __
-____ ?.?G.. ______ (?C.., QFont, QTextCharFormat, QTextLength,
+____ ?.?G.. ______ (?C.., ?F.., QTextCharFormat, QTextLength,
         QTextTableFormat)
 ____ ?.?W.. ______ (?A.., ?CB, ?DTE..,
         QHBoxLayout, QLabel, ?MW.., SB.., QTextBrowser, QVBoxLayout,
@@ -69,7 +69,7 @@ c_ MainWindow ?MW..
         yearEdit.setDisplayFormat('yyyy')
         yearEdit.setDateRange(QDate(1753, 1, 1), QDate(8000, 1, 1))
 
-        monthCombo.setCurrentIndex(selectedDate.month() - 1)
+        monthCombo.sCI..(selectedDate.month() - 1)
         yearEdit.setDate(selectedDate)
 
         fontSizeLabel _ QLabel("Font size:")
@@ -133,7 +133,7 @@ c_ MainWindow ?MW..
         format.setFontPointSize(fontSize)
 
         boldFormat _ QTextCharFormat(format)
-        boldFormat.setFontWeight(QFont.Bold)
+        boldFormat.setFontWeight(?F...Bold)
 
         highlightedFormat _ QTextCharFormat(boldFormat)
         highlightedFormat.setBackground(__.yellow)
@@ -187,4 +187,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.r..(640, 256)
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

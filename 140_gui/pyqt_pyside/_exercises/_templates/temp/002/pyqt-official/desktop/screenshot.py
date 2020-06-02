@@ -124,7 +124,7 @@ c_ Screenshot(?W..):
 
         delaySpinBox _ SB..()
         delaySpinBox.setSuffix(" s")
-        delaySpinBox.setMaximum(60)
+        delaySpinBox.sM..(60)
         delaySpinBox.valueChanged.c..(updateCheckBox)
 
         delaySpinBoxLabel _ QLabel("Screenshot Delay:")
@@ -170,4 +170,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     screenshot _ Screenshot()
     screenshot.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -196,7 +196,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         """
         current_n = int(pc * 10)
         ___ n __ ra..(1, 11):
-            getattr(self, 'progress_%d' % n).setStyleSheet(
+            getattr(self, 'progress_%d' % n).sSS..(
                 PROGRESS_ON if n > current_n ____ PROGRESS_OFF
             )
 

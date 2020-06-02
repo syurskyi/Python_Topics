@@ -21,7 +21,7 @@ c_ MainWindow(qtw.?MW..):
         )
 
         # TextBrowser background is a widget style, not a document style
-        main.setStyleSheet('background-color: #EEF;')
+        main.sSS..('background-color: #EEF;')
         w__ o..('fight_fighter2.html', 'r') __ fh:
             main.insertHtml(fh.r..
 
@@ -34,4 +34,4 @@ c_ MainWindow(qtw.?MW..):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

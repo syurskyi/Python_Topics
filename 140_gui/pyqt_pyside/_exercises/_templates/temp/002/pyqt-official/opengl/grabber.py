@@ -394,4 +394,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

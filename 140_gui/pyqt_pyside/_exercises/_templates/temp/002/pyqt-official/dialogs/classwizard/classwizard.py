@@ -400,4 +400,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     wizard _ ClassWizard()
     wizard.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

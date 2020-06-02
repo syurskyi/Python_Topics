@@ -421,7 +421,7 @@ class Ui_MainWindow(object):
         colorButton_1.sSP..(sizePolicy)
         colorButton_1.sMS..(QtCore.?S..(20, 20))
         colorButton_1.sMS..(QtCore.?S..(20, 13))
-        colorButton_1.setStyleSheet("")
+        colorButton_1.sSS..("")
         colorButton_1.setText("")
         colorButton_1.setObjectName("colorButton_1")
         gridLayout_2.addWidget(colorButton_1, 0, 0, 1, 1)

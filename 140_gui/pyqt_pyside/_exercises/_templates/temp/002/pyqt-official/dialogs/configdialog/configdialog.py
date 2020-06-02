@@ -142,7 +142,7 @@ c_ QueryPage(?W..):
         hitsSpinBox.setSuffix(" results")
         hitsSpinBox.setSpecialValueText("Return only the first result")
         hitsSpinBox.setMinimum(1)
-        hitsSpinBox.setMaximum(100)
+        hitsSpinBox.sM..(100)
         hitsSpinBox.setSingleStep(10)
 
         startQueryButton _ ?PB..("Start query")
@@ -211,7 +211,7 @@ c_ ConfigDialog(QDialog):
         __ no. current:
             current _ previous
 
-        pagesWidget.setCurrentIndex(contentsWidget.row(current))
+        pagesWidget.sCI..(contentsWidget.row(current))
 
     ___ createIcons 
         configButton _ QListWidgetItem(contentsWidget)

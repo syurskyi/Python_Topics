@@ -77,7 +77,7 @@ c_ FreezeTableWidget(QTableView):
                 QHeaderView.Fixed)
         viewport().stackUnder(frozenTableView)
 
-        frozenTableView.setStyleSheet('''
+        frozenTableView.sSS..('''
             QTableView { border: none;
                          background-color: #8EDE21;
                          selection-background-color: #999;

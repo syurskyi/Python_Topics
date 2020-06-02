@@ -45,7 +45,7 @@
 ____ math ______ cos, pi, sin
 
 ____ ?.?C.. ______ ?S.., __
-____ ?.?G.. ______ (?B.., ?C.., QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
         QPainterPath, ?P.., QPen)
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
         QSizePolicy, SB.., ?W..)
@@ -157,8 +157,8 @@ c_ Window(?W..):
         groupPath.closeSubpath()
 
         textPath _ QPainterPath()
-        timesFont _ QFont('Times', 50)
-        timesFont.setStyleStrategy(QFont.ForceOutline)
+        timesFont _ ?F..('Times', 50)
+        timesFont.setStyleStrategy(?F...ForceOutline)
         textPath.addText(10, 70, timesFont, "Qt")
 
         bezierPath _ QPainterPath()
@@ -188,12 +188,12 @@ c_ Window(?W..):
 
         fillColor1ComboBox _ ?CB()
         populateWithColors(fillColor1ComboBox)
-        fillColor1ComboBox.setCurrentIndex(
+        fillColor1ComboBox.sCI..(
                 fillColor1ComboBox.findText("mediumslateblue"))
 
         fillColor2ComboBox _ ?CB()
         populateWithColors(fillColor2ComboBox)
-        fillColor2ComboBox.setCurrentIndex(
+        fillColor2ComboBox.sCI..(
                 fillColor2ComboBox.findText("cornsilk"))
 
         fillGradientLabel _ QLabel("&Fill Gradient:")
@@ -210,7 +210,7 @@ c_ Window(?W..):
 
         penColorComboBox _ ?CB()
         populateWithColors(penColorComboBox)
-        penColorComboBox.setCurrentIndex(
+        penColorComboBox.sCI..(
                 penColorComboBox.findText('darkslateblue'))
 
         penColorLabel _ QLabel("Pen &Color:")
@@ -295,4 +295,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

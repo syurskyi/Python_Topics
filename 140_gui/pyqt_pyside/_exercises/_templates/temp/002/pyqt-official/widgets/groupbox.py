@@ -166,4 +166,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     clock _ Window()
     clock.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

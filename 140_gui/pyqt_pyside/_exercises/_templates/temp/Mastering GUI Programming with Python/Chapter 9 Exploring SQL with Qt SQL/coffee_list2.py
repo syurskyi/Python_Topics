@@ -86,7 +86,7 @@ c_ CoffeeForm ?.?W..
         la__ .aR..(new_review, delete_review)
 
     ___ show_coffee  coffee_index):
-        mapper.setCurrentIndex(coffee_index.row())
+        mapper.sCI..(coffee_index.row())
         # show the reviews
         id_index _ coffee_index.siblingAtColumn(0)
         coffee_id _ int(coffees_model.data(id_index))
@@ -103,7 +103,7 @@ c_ CoffeeForm ?.?W..
 
     ___ add_review 
         reviews_model _ reviews.model()
-        new_row _ reviews_model.record()
+        new_row _ reviews_model.r..
         defaults _ {
             'coffee_id': coffee_id,
             'review_date': qtc.QDate.currentDate(),
@@ -222,4 +222,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

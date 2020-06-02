@@ -345,7 +345,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
                 model.setHeaderData(column, __.H.., "[No header]",
                         __.ER..)
 
-        view.selectionModel().setCurrentIndex(model.index(0, 0, index),
+        view.selectionModel().sCI..(model.index(0, 0, index),
                 QItemSelectionModel.ClearAndSelect)
         updateActions()
 
@@ -419,4 +419,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

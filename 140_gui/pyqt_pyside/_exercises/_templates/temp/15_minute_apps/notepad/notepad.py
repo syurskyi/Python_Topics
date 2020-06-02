@@ -19,7 +19,7 @@ c_ MainWindow ?MW..
         # Setup the QTextEdit editor configuration
         fixedfont _ QFontDatabase.systemFont(QFontDatabase.FixedFont)
         fixedfont.setPointSize(12)
-        editor.setFont(fixedfont)
+        editor.sF..(fixedfont)
 
         # self.path holds the path of the currently open file.
         # If none, we haven't got a file open yet (or creating new).

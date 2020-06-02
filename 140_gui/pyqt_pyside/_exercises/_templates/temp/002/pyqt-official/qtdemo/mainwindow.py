@@ -164,7 +164,7 @@ c_ MainWindow(QGraphicsView):
             update_mode _ QGraphicsView.NoViewportUpdate
         ____
             useTimer _ F..
-            updateTimer.stop()
+            updateTimer.s..
 
             __ Colors.noTicker:
                 update_mode _ QGraphicsView.MinimalViewportUpdate

@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QByteArray, qFuzzyCompare, __, QTimer
 ____ ?.?G.. ______ ?P.., ?P..
 ____ ?.?M.. ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
-        QMediaRecorder, QMultimedia, QVideoEncoderSettings)
+        ?MR.., QMultimedia, QVideoEncoderSettings)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QDialog,
         ?MW.., ?MB..)
 
@@ -108,7 +108,7 @@ c_ ImageSettings(QDialog):
     ___ selectComboBoxItem(box, value):
         ___ i __ ra..(box.count()):
             __ box.itemData(i) __ value:
-                box.setCurrentIndex(i)
+                box.sCI..(i)
                 break
 
 
@@ -197,7 +197,7 @@ c_ VideoSettings(QDialog):
         ___ i __ ra..(1, ui.videoFramerateBox.count()):
             itemRate _ ui.videoFramerateBox.itemData(i)
             __ qFuzzyCompare(itemRate, settings.frameRate()):
-                ui.videoFramerateBox.setCurrentIndex(i)
+                ui.videoFramerateBox.sCI..(i)
                 break
 
     ___ format
@@ -218,7 +218,7 @@ c_ VideoSettings(QDialog):
     ___ selectComboBoxItem(box, value):
         ___ i __ ra..(box.count()):
             __ box.itemData(i) __ value:
-                box.setCurrentIndex(i)
+                box.sCI..(i)
                 break
 
 
@@ -274,12 +274,12 @@ c_ Camera ?MW..
         camera.stateChanged.c..(updateCameraState)
         camera.error.c..(displayCameraError)
 
-        mediaRecorder _ QMediaRecorder(camera)
+        mediaRecorder _ ?MR..(camera)
         mediaRecorder.stateChanged.c..(updateRecorderState)
 
         imageCapture _ QCameraImageCapture(camera)
 
-        mediaRecorder.durationChanged.c..(updateRecordTime)
+        mediaRecorder.dC...c..(updateRecordTime)
         mediaRecorder.error.c..(displayRecorderError)
 
         mediaRecorder.setMetaData(QMediaMetaData.Title, "Test Title")
@@ -318,10 +318,10 @@ c_ Camera ?MW..
         ____ event.key() __ __.Key_Camera:
             __ camera.captureMode() __ QCamera.CaptureStillImage:
                 takeImage()
-            ____ mediaRecorder.state() __ QMediaRecorder.RecordingState:
-                stop()
+            ____ mediaRecorder.s.. __ ?MR...RS..:
+                s..
             ____
-                record()
+                r..
 
             event.accept()
         ____
@@ -380,14 +380,14 @@ c_ Camera ?MW..
             imageCapture.setEncodingSettings(imageSettings)
 
     ___ record
-        mediaRecorder.record()
+        mediaRecorder.r..
         updateRecordTime()
 
     ___ pause
         mediaRecorder.pause()
 
     ___ stop
-        mediaRecorder.stop()
+        mediaRecorder.s..
 
     ___ setMuted  muted):
         mediaRecorder.setMuted(muted)
@@ -428,7 +428,7 @@ c_ Camera ?MW..
         camera.start()
 
     ___ stopCamera
-        camera.stop()
+        camera.s..
 
     ___ updateCaptureMode
         tabIndex _ ui.captureWidget.currentIndex()
@@ -450,15 +450,15 @@ c_ Camera ?MW..
             ui.actionSettings.sE.. F..
 
     ___ updateRecorderState  state):
-        __ state __ QMediaRecorder.StoppedState:
+        __ state __ ?MR...StoppedState:
             ui.recordButton.sE..( st.
             ui.pauseButton.sE..( st.
             ui.stopButton.sE.. F..
-        ____ state __ QMediaRecorder.PausedState:
+        ____ state __ ?MR...PausedState:
             ui.recordButton.sE..( st.
             ui.pauseButton.sE.. F..
             ui.stopButton.sE..( st.
-        ____ state __ QMediaRecorder.RecordingState:
+        ____ state __ ?MR...RS..:
             ui.recordButton.sE.. F..
             ui.pauseButton.sE..( st.
             ui.stopButton.sE..( st.
@@ -477,10 +477,10 @@ c_ Camera ?MW..
         setCamera(action.data())
 
     ___ displayViewfinder
-        ui.stackedWidget.setCurrentIndex(0)
+        ui.stackedWidget.sCI..(0)
 
     ___ displayCapturedImage
-        ui.stackedWidget.setCurrentIndex(1)
+        ui.stackedWidget.sCI..(1)
 
     ___ readyForCapture  ready):
         ui.takeImageButton.sE..(ready)
@@ -509,4 +509,4 @@ __ ______ __ ______
     camera _ Camera()
     camera.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

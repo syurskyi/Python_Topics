@@ -74,7 +74,7 @@ c_ Window(QDialog):
         mainLayout.aW..(messageGroupBox)
         sL..(mainLayout)
 
-        iconComboBox.setCurrentIndex(1)
+        iconComboBox.sCI..(1)
         trayIcon.s..
 
         sWT..("Systray")
@@ -104,7 +104,7 @@ c_ Window(QDialog):
 
     ___ iconActivated  reason):
         __ reason __ (QSystemTrayIcon.Trigger, QSystemTrayIcon.DoubleClick):
-            iconComboBox.setCurrentIndex(
+            iconComboBox.sCI..(
                     (iconComboBox.currentIndex() + 1)
                     % iconComboBox.count())
         ____ reason __ QSystemTrayIcon.MiddleClick:
@@ -158,7 +158,7 @@ c_ Window(QDialog):
         typeComboBox.aI..(style().standardIcon(
                 QStyle.SP_MessageBoxCritical), "Critical",
                 QSystemTrayIcon.Critical)
-        typeComboBox.setCurrentIndex(1)
+        typeComboBox.sCI..(1)
 
         durationLabel _ QLabel("Duration:")
 
@@ -234,4 +234,4 @@ __ ______ __ ______
 
     window _ Window()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

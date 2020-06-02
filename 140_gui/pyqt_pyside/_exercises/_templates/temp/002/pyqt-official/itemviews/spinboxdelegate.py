@@ -53,7 +53,7 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
         editor _ SB..(parent)
         editor.setFrame F..
         editor.setMinimum(0)
-        editor.setMaximum(100)
+        editor.sM..(100)
 
         r_ editor
 
@@ -92,4 +92,4 @@ __ ______ __ ______
 
     tableView.sWT..("Spin Box Delegate")
     tableView.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

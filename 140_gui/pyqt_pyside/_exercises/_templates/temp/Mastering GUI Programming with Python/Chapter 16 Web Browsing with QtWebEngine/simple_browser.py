@@ -135,7 +135,7 @@ c_ MainWindow(qtw.?MW..):
         tabs.currentWidget().reload()
 
     ___ on_stop 
-        tabs.currentWidget().stop()
+        tabs.currentWidget().s..
 
     ___ on_go 
         tabs.currentWidget().load(
@@ -183,4 +183,4 @@ c_ MainWindow(qtw.?MW..):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

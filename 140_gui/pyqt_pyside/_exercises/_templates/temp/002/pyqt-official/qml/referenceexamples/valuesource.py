@@ -322,4 +322,4 @@ ____
     ___ e __ component.errors
         print("Error:", e.toString());
 
-___.e..(app.exec_())
+___.e.. ?.exec_())

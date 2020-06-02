@@ -75,7 +75,7 @@ c_ DemoTextItem(DemoItem):
         textItem _ QGraphicsTextItem()
         textItem.setHtml(t__)
         textItem.setTextWidth(textWidth)
-        textItem.setFont(font)
+        textItem.sF..(font)
         textItem.setDefaultTextColor(textColor)
         textItem.document().setDocumentMargin(2)
 

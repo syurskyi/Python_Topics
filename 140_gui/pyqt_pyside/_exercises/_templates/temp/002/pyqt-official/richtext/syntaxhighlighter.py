@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QFile, QRegExp, __
-____ ?.?G.. ______ QFont, QSyntaxHighlighter, QTextCharFormat
+____ ?.?G.. ______ ?F.., QSyntaxHighlighter, QTextCharFormat
 ____ ?.?W.. ______ (?A.., ?FD.., ?MW.., QMenu,
         ?MB.., ?TE..)
 
@@ -89,13 +89,13 @@ c_ MainWindow ?MW..
                 editor.sPT..(t__)
 
     ___ setupEditor
-        font _ QFont()
+        font _ ?F..()
         font.setFamily('Courier')
         font.setFixedPitch( st.
         font.setPointSize(10)
 
         editor _ ?TE..()
-        editor.setFont(font)
+        editor.sF..(font)
 
         highlighter _ Highlighter(editor.document())
 
@@ -121,7 +121,7 @@ c_ Highlighter(QSyntaxHighlighter):
 
         keywordFormat _ QTextCharFormat()
         keywordFormat.setForeground(__.darkBlue)
-        keywordFormat.setFontWeight(QFont.Bold)
+        keywordFormat.setFontWeight(?F...Bold)
 
         keywordPatterns _ ["\\bchar\\b", "\\bclass\\b", "\\bconst\\b",
                 "\\bdouble\\b", "\\benum\\b", "\\bexplicit\\b", "\\bfriend\\b",
@@ -137,7 +137,7 @@ c_ Highlighter(QSyntaxHighlighter):
                 ___ pattern __ keywordPatterns]
 
         classFormat _ QTextCharFormat()
-        classFormat.setFontWeight(QFont.Bold)
+        classFormat.setFontWeight(?F...Bold)
         classFormat.setForeground(__.darkMagenta)
         highlightingRules.ap..((QRegExp("\\bQ[A-Za-z]+\\b"),
                 classFormat))
@@ -201,4 +201,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.r..(640, 512)
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -22,7 +22,7 @@ class AboutDialog(QDialog):
         title = QLabel("MooseAche")
         font = title.font()
         font.setPointSize(20)
-        title.setFont(font)
+        title.sF..(font)
 
         layout.addWidget(title)
 

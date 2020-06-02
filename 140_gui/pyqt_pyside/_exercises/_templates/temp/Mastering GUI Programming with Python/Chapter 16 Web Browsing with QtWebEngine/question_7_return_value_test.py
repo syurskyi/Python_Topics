@@ -41,4 +41,4 @@ c_ MainWindow(qtw.?MW..):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

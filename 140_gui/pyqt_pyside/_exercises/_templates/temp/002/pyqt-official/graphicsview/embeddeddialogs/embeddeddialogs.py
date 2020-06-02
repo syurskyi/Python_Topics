@@ -147,13 +147,13 @@ c_ CustomProxy(QGraphicsProxyWidget):
     ___ zoomIn
         __ timeLine.direction() !_ QTimeLine.Forward:
             timeLine.setDirection(QTimeLine.Forward)
-        __ timeLine.state() __ QTimeLine.NotRunning:
+        __ timeLine.s.. __ QTimeLine.NotRunning:
             timeLine.start()
 
     ___ zoomOut
         __ timeLine.direction() !_ QTimeLine.Backward:
             timeLine.setDirection(QTimeLine.Backward)
-        __ timeLine.state() __ QTimeLine.NotRunning:
+        __ timeLine.s.. __ QTimeLine.NotRunning:
             timeLine.start()
 
 
@@ -163,12 +163,12 @@ c_ EmbeddedDialog(QDialog):
 
         ui _ Ui_embeddedDialog()
         ui.setupUi
-        ui.layoutDirection.setCurrentIndex(layoutDirection() !_ __.LeftToRight)
+        ui.layoutDirection.sCI..(layoutDirection() !_ __.LeftToRight)
 
         ___ styleName __ ?SF...keys
             ui.style.aI..(styleName)
             __ style().objectName().lower() __ styleName.lower
-                ui.style.setCurrentIndex(ui.style.count() -1)
+                ui.style.sCI..(ui.style.count() -1)
 
         ui.layoutDirection.activated.c..(layoutDirectionChanged)
         ui.spacing.valueChanged.c..(spacingChanged)
@@ -186,7 +186,7 @@ c_ EmbeddedDialog(QDialog):
         adjustSize()
 
     ___ fontChanged  font):
-        setFont(font)
+        sF..(font)
 
     ___ setStyleHelper  widget, style):
         widget.sS..(style)
@@ -234,4 +234,4 @@ __ ______ __ ______
     view.s..
     view.sWT..("Embedded Dialogs Demo")
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

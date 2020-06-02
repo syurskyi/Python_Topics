@@ -84,7 +84,7 @@ c_ Calculator(?W..):
 
         font _ display.font()
         font.setPointSize(font.pointSize() + 8)
-        display.setFont(font)
+        display.sF..(font)
 
         digitButtons _   # list
         
@@ -354,4 +354,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     calc _ Calculator()
     calc.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

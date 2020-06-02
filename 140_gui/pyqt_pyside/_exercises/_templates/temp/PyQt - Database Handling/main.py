@@ -57,4 +57,4 @@ __ ______ __ ______
     dlg.sL..(layout)
     dlg.sWT..("Database Demo")
     dlg.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

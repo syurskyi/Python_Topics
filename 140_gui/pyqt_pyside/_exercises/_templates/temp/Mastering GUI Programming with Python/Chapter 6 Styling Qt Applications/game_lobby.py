@@ -119,40 +119,40 @@ c_ MainWindow(qtw.?MW..):
         #########
 
         # Configuring Fonts
-        heading_font _ qtg.QFont('Impact', 32, qtg.QFont.Bold)
-        heading_font.setStretch(qtg.QFont.ExtraExpanded)
-        heading.setFont(heading_font)
+        heading_font _ qtg.?F..('Impact', 32, qtg.?F...Bold)
+        heading_font.setStretch(qtg.?F...ExtraExpanded)
+        heading.sF..(heading_font)
 
         # Explicit font configuration
-        label_font _ qtg.QFont()
+        label_font _ qtg.?F..()
         label_font.setFamily('Impact')
         label_font.setPointSize(14)
-        label_font.setWeight(qtg.QFont.DemiBold)
-        label_font.sS..(qtg.QFont.StyleItalic)
+        label_font.setWeight(qtg.?F...DemiBold)
+        label_font.sS..(qtg.?F...StyleItalic)
 
         ___ inp __ inputs.values
-            cx_form.la__ .labelForField(inp).setFont(label_font)
+            cx_form.la__ .labelForField(inp).sF..(label_font)
 
         # Locating Alternative fonts
 
-        button_font _ qtg.QFont('Totally Nonexistant Font Family XYZ', 15.233)
+        button_font _ qtg.?F..('Totally Nonexistant Font Family XYZ', 15.233)
         print(f'Font is {button_font.family()}')
         actual_font _ qtg.QFontInfo(button_font).family()
         print(f'Actual font used is {actual_font}')
 
         # Set a style hint
-        button_font.setStyleHint(qtg.QFont.Fantasy) # Use a "fantasy font"
+        button_font.setStyleHint(qtg.?F...Fantasy) # Use a "fantasy font"
         button_font.setStyleStrategy(
-            qtg.QFont.PreferAntialias |
-            qtg.QFont.PreferQuality
+            qtg.?F...PreferAntialias |
+            qtg.?F...PreferQuality
         )
 
         actual_font _ qtg.QFontInfo(button_font)
         print(f'Actual font used is {actual_font.family()}'
               f' {actual_font.pointSize()}')
 
-        submit.setFont(button_font)
-        cancel.setFont(button_font)
+        submit.sF..(button_font)
+        cancel.sF..(button_font)
 
         #self.show()
         #return
@@ -198,8 +198,8 @@ c_ MainWindow(qtw.?MW..):
         # Loading a font from a resource file
         libsans_id _ qtg.QFontDatabase.addApplicationFont(':/fonts/LiberationSans-Regular.ttf')
         family _ qtg.QFontDatabase.applicationFontFamilies(libsans_id)[0]
-        libsans _ qtg.QFont(family)
-        inputs['Team'].setFont(libsans)
+        libsans _ qtg.?F..(family)
+        inputs['Team'].sF..(libsans)
 
         #self.show()
         #return
@@ -307,7 +307,7 @@ c_ MainWindow(qtw.?MW..):
         #self.setStyleSheet(stylesheet)
         ___ inp __ ('Server', 'Name', 'Password'):
             inp_widget _ inputs[inp]
-            inp_widget.setStyleSheet('background-color: black')
+            inp_widget.sSS..('background-color: black')
 
         #self.show()
         #return
@@ -377,4 +377,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

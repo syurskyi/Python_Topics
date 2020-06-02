@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QDate, QFile, __, QTextStream
-____ ?.?G.. ______ (QFont, QIcon, ?KS.., QTextCharFormat,
+____ ?.?G.. ______ (?F.., QIcon, ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (?A.., ?A.., QDialog, QDockWidget,
@@ -81,7 +81,7 @@ c_ MainWindow ?MW..
 
         textFormat _ QTextCharFormat()
         boldFormat _ QTextCharFormat()
-        boldFormat.setFontWeight(QFont.Bold)
+        boldFormat.setFontWeight(?F...Bold)
         italicFormat _ QTextCharFormat()
         italicFormat.setFontItalic( st.
 
@@ -300,4 +300,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

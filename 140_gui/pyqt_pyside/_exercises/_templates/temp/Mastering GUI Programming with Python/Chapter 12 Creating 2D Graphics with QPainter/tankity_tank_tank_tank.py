@@ -48,7 +48,7 @@ c_ Bullet(qtw.QGraphicsObject):
         painter.drawRect(0, 0, 10, 10)
 
     ___ shoot  x_pos):
-        animation.stop()
+        animation.s..
         setPos(x_pos, y_pos)
         animation.start()
 
@@ -151,7 +151,7 @@ c_ Scene(qtw.QGraphicsScene):
         # Show scores
         top_score _ 0
         bottom_score _ 0
-        score_font _ qtg.QFont('Sans', 32)
+        score_font _ qtg.?F..('Sans', 32)
         top_score_display _ addText(
             str(top_score), score_font)
         top_score_display.setPos(10, 10)
@@ -219,4 +219,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

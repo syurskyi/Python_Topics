@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
         QPoint, QRect, QRectF, __, QTextStream)
-____ ?.?G.. ______ (QDrag, QFont, QFontMetrics, QImage, QPainter,
+____ ?.?G.. ______ (QDrag, ?F.., QFontMetrics, QImage, QPainter,
         ?P.., ?P.., qRgba)
 ____ ?.?W.. ______ ?A.., QLabel, ?W..
 
@@ -62,8 +62,8 @@ c_ DragLabel(QLabel):
                 QImage.Format_ARGB32_Premultiplied)
         image.fill(qRgba(0, 0, 0, 0))
 
-        font _ QFont()
-        font.setStyleStrategy(QFont.ForceOutline)
+        font _ ?F..()
+        font.setStyleStrategy(?F...ForceOutline)
 
         painter _ QPainter()
         painter.begin(image)
@@ -73,7 +73,7 @@ c_ DragLabel(QLabel):
                 QRectF(0.5, 0.5, image.width()-1, image.height()-1),
                 25, 25, __.RelativeSize)
 
-        painter.setFont(font)
+        painter.sF..(font)
         painter.sB..(__.black)
         painter.drawText(QRect(QPoint(6, 6), size), __.AlignCenter, t__)
         painter.end()
@@ -193,4 +193,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ DragWidget()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

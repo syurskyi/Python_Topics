@@ -151,7 +151,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     capture _ FrameCapture()
-    capture.finished.c..(app.quit)
+    capture.finished.c.. ?.quit)
     capture.load(url, fileName)
 
     app.e..

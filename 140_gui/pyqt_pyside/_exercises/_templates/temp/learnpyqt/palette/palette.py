@@ -23,7 +23,7 @@ c_ _PaletteButton(?W...?PB..):
         s_. - ()
         sFS..(?C...?S..(24, 24))
         color _ color
-        setStyleSheet("background-color: %s;" % color)
+        sSS..("background-color: %s;" % color)
 
 c_ _PaletteBase(?W...?W..):
 

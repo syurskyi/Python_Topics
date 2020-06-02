@@ -33,10 +33,10 @@ class Ui_MainWindow(object):
         fileBar.setSpacing(0)
         fileBar.setObjectName("fileBar")
         progress_1 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_1.setFont(font)
-        progress_1.setStyleSheet("QLabel {\n"
+        progress_1.sF..(font)
+        progress_1.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -45,10 +45,10 @@ class Ui_MainWindow(object):
         progress_1.setObjectName("progress_1")
         fileBar.addWidget(progress_1)
         progress_2 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_2.setFont(font)
-        progress_2.setStyleSheet("QLabel {\n"
+        progress_2.sF..(font)
+        progress_2.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -57,10 +57,10 @@ class Ui_MainWindow(object):
         progress_2.setObjectName("progress_2")
         fileBar.addWidget(progress_2)
         progress_3 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_3.setFont(font)
-        progress_3.setStyleSheet("QLabel {\n"
+        progress_3.sF..(font)
+        progress_3.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -69,10 +69,10 @@ class Ui_MainWindow(object):
         progress_3.setObjectName("progress_3")
         fileBar.addWidget(progress_3)
         progress_4 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_4.setFont(font)
-        progress_4.setStyleSheet("QLabel {\n"
+        progress_4.sF..(font)
+        progress_4.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -81,10 +81,10 @@ class Ui_MainWindow(object):
         progress_4.setObjectName("progress_4")
         fileBar.addWidget(progress_4)
         progress_5 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_5.setFont(font)
-        progress_5.setStyleSheet("QLabel {\n"
+        progress_5.sF..(font)
+        progress_5.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -93,10 +93,10 @@ class Ui_MainWindow(object):
         progress_5.setObjectName("progress_5")
         fileBar.addWidget(progress_5)
         progress_6 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_6.setFont(font)
-        progress_6.setStyleSheet("QLabel {\n"
+        progress_6.sF..(font)
+        progress_6.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -105,10 +105,10 @@ class Ui_MainWindow(object):
         progress_6.setObjectName("progress_6")
         fileBar.addWidget(progress_6)
         progress_7 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_7.setFont(font)
-        progress_7.setStyleSheet("QLabel {\n"
+        progress_7.sF..(font)
+        progress_7.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -117,10 +117,10 @@ class Ui_MainWindow(object):
         progress_7.setObjectName("progress_7")
         fileBar.addWidget(progress_7)
         progress_8 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_8.setFont(font)
-        progress_8.setStyleSheet("QLabel {\n"
+        progress_8.sF..(font)
+        progress_8.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -129,10 +129,10 @@ class Ui_MainWindow(object):
         progress_8.setObjectName("progress_8")
         fileBar.addWidget(progress_8)
         progress_9 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_9.setFont(font)
-        progress_9.setStyleSheet("QLabel {\n"
+        progress_9.sF..(font)
+        progress_9.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
@@ -141,10 +141,10 @@ class Ui_MainWindow(object):
         progress_9.setObjectName("progress_9")
         fileBar.addWidget(progress_9)
         progress_10 = QtWidgets.QLabel(verticalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.?F..()
         font.setPointSize(8)
-        progress_10.setFont(font)
-        progress_10.setStyleSheet("QLabel {\n"
+        progress_10.sF..(font)
+        progress_10.sSS..("QLabel {\n"
 "   background-color: rgb(233,30,99);\n"
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"

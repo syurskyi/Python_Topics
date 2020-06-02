@@ -260,7 +260,7 @@ c_ MenuManager(?O..):
         Colors.debug("Sending URL to Assistant:", url)
 
         # Start assistant if it's not already running.
-        __ assistantProcess.state() !_ QProcess.Running:
+        __ assistantProcess.s.. !_ QProcess.Running:
             app _ QLibraryInfo.location(QLibraryInfo.BinariesPath) + ?D...separator()
 
             __ ___.platform __ 'darwin':
@@ -269,7 +269,7 @@ c_ MenuManager(?O..):
                 app +_ 'assistant'
 
             args _ ['-enableRemoteControl']
-            assistantProcess.start(app, args)
+            assistantProcess.start ?, args)
             __ no. assistantProcess.waitForStarted
                 ?MB...c..(N.., "PyQt Demo",
                         "Could not start %s." % app)

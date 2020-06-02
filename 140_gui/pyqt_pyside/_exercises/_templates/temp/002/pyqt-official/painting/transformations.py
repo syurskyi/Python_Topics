@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QPointF, ?S.., __
-____ ?.?G.. ______ ?B.., QFont, QFontMetrics, QPainter, QPainterPath
+____ ?.?G.. ______ ?B.., ?F.., QFontMetrics, QPainter, QPainterPath
 ____ ?.?W.. ______ ?A.., ?CB, QGridLayout, ?W..
 
 
@@ -55,7 +55,7 @@ c_ RenderArea(?W..):
 
         newFont _ font()
         newFont.setPixelSize(12)
-        setFont(newFont)
+        sF..(newFont)
 
         fontMetrics _ QFontMetrics(newFont)
         xBoundingRect _ fontMetrics.boundingRect("x")
@@ -216,7 +216,7 @@ c_ Window(?W..):
         house.addRect(-35.0, -15.0, 25.0, 25.0)
 
         t__ _ QPainterPath()
-        font _ QFont()
+        font _ ?F..()
         font.setPixelSize(50)
         fontBoundingRect _ QFontMetrics(font).boundingRect("Qt")
         t__.addText(-QPointF(fontBoundingRect.center()), font, "Qt")
@@ -246,4 +246,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

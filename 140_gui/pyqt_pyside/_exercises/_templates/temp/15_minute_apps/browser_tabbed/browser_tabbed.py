@@ -22,7 +22,7 @@ class AboutDialog(QDialog):
         title = QLabel("Mozarella Ashbadger")
         font = title.font()
         font.setPointSize(20)
-        title.setFont(font)
+        title.sF..(font)
 
         layout.addWidget(title)
 
@@ -150,7 +150,7 @@ class MainWindow(?MW..):
         browser.setUrl(qurl)
         i = tabs.aT..(browser, label)
 
-        tabs.setCurrentIndex(i)
+        tabs.sCI..(i)
 
         # More difficult! We only want to update the url when it's from the
         # correct tab

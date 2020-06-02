@@ -265,7 +265,7 @@ c_ LightMaps(?W..):
 
     ___ activateZoom 
         zoomed _ T..
-        tapTimer.stop()
+        tapTimer.s..
         _largeMap.zoom _ _normalMap.zoom + 1
         _largeMap.width _ _normalMap.width * 2
         _largeMap.height _ _normalMap.height * 2
@@ -362,7 +362,7 @@ c_ LightMaps(?W..):
 
         pressed _ snapped _ T..
         pressPos _ dragPos _ event.pos()
-        tapTimer.stop()
+        tapTimer.s..
         tapTimer.start(HOLD_TIME, self)
 
     ___ mouseMoveEvent  event):
@@ -385,7 +385,7 @@ c_ LightMaps(?W..):
                     snapped &_ delta.y() > -threshold
 
                 __ no. snapped:
-                    tapTimer.stop()
+                    tapTimer.s..
 
         ____
             dragPos _ event.pos()
@@ -479,4 +479,4 @@ __ ______ __ ______
     w.sWT..("OpenStreetMap")
     w.r..(600, 450)
     w.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

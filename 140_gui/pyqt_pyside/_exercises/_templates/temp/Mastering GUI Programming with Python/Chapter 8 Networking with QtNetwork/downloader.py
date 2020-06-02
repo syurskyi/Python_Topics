@@ -29,4 +29,4 @@ __ ______ __ ______
         ___.e..(1)
     app _ qtc.QCoreApplication(___.a..
     d _ Downloader(___.argv[1])
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -47,7 +47,7 @@
 ______ ___
 
 ____ ?.?C.. ______ QFile, QFileInfo, __, QTextCodec
-____ ?.?G.. ______ (QFont, QFontDatabase, QFontInfo, QIcon, ?KS..,
+____ ?.?G.. ______ (?F.., QFontDatabase, QFontInfo, QIcon, ?KS..,
         ?P.., QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
@@ -256,9 +256,9 @@ c_ TextEdit ?MW..
                 "&Bold", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_B, triggered_self.textBold,
                 checkable_ st.
-        bold _ QFont()
+        bold _ ?F..()
         bold.setBold( st.
-        actionTextBold.setFont(bold)
+        actionTextBold.sF..(bold)
         tb.aA..(actionTextBold)
         menu.aA..(actionTextBold)
 
@@ -268,9 +268,9 @@ c_ TextEdit ?MW..
                 "&Italic", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_I, triggered_self.textItalic,
                 checkable_ st.
-        italic _ QFont()
+        italic _ ?F..()
         italic.setItalic( st.
-        actionTextItalic.setFont(italic)
+        actionTextItalic.sF..(italic)
         tb.aA..(actionTextItalic)
         menu.aA..(actionTextItalic)
 
@@ -280,9 +280,9 @@ c_ TextEdit ?MW..
                 "&Underline", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_U, triggered_self.textUnderline,
                 checkable_ st.
-        underline _ QFont()
+        underline _ ?F..()
         underline.setUnderline( st.
-        actionTextUnderline.setFont(underline)
+        actionTextUnderline.sF..(underline)
         tb.aA..(actionTextUnderline)
         menu.aA..(actionTextUnderline)
 
@@ -383,7 +383,7 @@ c_ TextEdit ?MW..
             comboSize.aI..("%s" % (size))
 
         comboSize.activated[str].c..(textSize)
-        comboSize.setCurrentIndex(
+        comboSize.sCI..(
                 comboSize.findText(
                         "%s" % (?A...font().pointSize())))
 
@@ -515,7 +515,7 @@ c_ TextEdit ?MW..
 
     ___ textBold 
         fmt _ QTextCharFormat()
-        fmt.setFontWeight(actionTextBold.isChecked() and QFont.Bold or QFont.Normal)
+        fmt.setFontWeight(actionTextBold.isChecked() and ?F...Bold or ?F...Normal)
         mergeFormatOnWordOrSelection(fmt)
 
     ___ textUnderline 
@@ -619,9 +619,9 @@ c_ TextEdit ?MW..
         textEdit.mergeCurrentCharFormat(format)
 
     ___ fontChanged  font):
-        comboFont.setCurrentIndex(
+        comboFont.sCI..(
                 comboFont.findText(QFontInfo(font).family()))
-        comboSize.setCurrentIndex(
+        comboSize.sCI..(
                 comboSize.findText("%s" % font.pointSize()))
         actionTextBold.sC__(font.bold())
         actionTextItalic.sC__(font.italic())
@@ -653,4 +653,4 @@ __ ______ __ ______
         textEdit.s..
         mainWindows.ap..(textEdit)
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

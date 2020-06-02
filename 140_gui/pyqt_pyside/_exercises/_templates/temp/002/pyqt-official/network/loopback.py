@@ -128,7 +128,7 @@ c_ Dialog(QDialog):
         bytesReceived +_ tcpServerConnection.bytesAvailable()
         tcpServerConnection.readAll()
 
-        serverProgressBar.setMaximum(Dialog.TotalBytes)
+        serverProgressBar.sM..(Dialog.TotalBytes)
         serverProgressBar.setValue(bytesReceived)
         serverStatusLabel.sT..("Received %dMB" % (bytesReceived / (1024 * 1024)))
 
@@ -143,7 +143,7 @@ c_ Dialog(QDialog):
             bytesToWrite -_ tcpClient.w..(QByteArray(
                                         min(bytesToWrite, Dialog.PayloadSize), '@'))
 
-        clientProgressBar.setMaximum(Dialog.TotalBytes)
+        clientProgressBar.sM..(Dialog.TotalBytes)
         clientProgressBar.setValue(bytesWritten)
         clientStatusLabel.sT..("Sent %dMB" % (bytesWritten / (1024 * 1024)))
 

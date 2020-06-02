@@ -46,7 +46,7 @@ ______ math
 
 ____ ?.?C.. ______ (pS.., QLineF, QPointF, QRect, QRectF, ?S..,
         QSizeF, __)
-____ ?.?G.. ______ (?B.., ?C.., QFont, QIcon, QIntValidator, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., ?F.., QIcon, QIntValidator, QPainter,
         QPainterPath, QPen, ?P.., QPolygonF)
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
@@ -271,7 +271,7 @@ c_ DiagramScene(QGraphicsScene):
         myItemColor _ __.white
         myTextColor _ __.black
         myLineColor _ __.black
-        myFont _ QFont()
+        myFont _ ?F..()
 
     ___ setLineColor  color):
         myLineColor _ color
@@ -292,11 +292,11 @@ c_ DiagramScene(QGraphicsScene):
             item _ selectedItems()[0]
             item.sB..(myItemColor)
 
-    ___ setFont  font):
+    ___ sF..  font):
         myFont _ font
         __ isItemChange(DiagramTextItem):
             item _ selectedItems()[0]
-            item.setFont(myFont)
+            item.sF..(myFont)
 
     ___ setMode  mode):
         myMode _ mode
@@ -330,7 +330,7 @@ c_ DiagramScene(QGraphicsScene):
             aI..(line)
         ____ myMode __ InsertText:
             textItem _ DiagramTextItem()
-            textItem.setFont(myFont)
+            textItem.sF..(myFont)
             textItem.setTextInteractionFlags(__.TextEditorInteraction)
             textItem.setZValue(1000.0)
             textItem.lostFocus.c..(editorLostFocus)
@@ -536,20 +536,20 @@ c_ MainWindow ?MW..
         font _ fontCombo.currentFont()
         font.setPointSize(fontSizeCombo.currentText().toInt()[0])
         __ boldAction.isChecked
-            font.setWeight(QFont.Bold)
+            font.setWeight(?F...Bold)
         ____
-            font.setWeight(QFont.Normal)
+            font.setWeight(?F...Normal)
         font.setItalic(italicAction.isChecked())
         font.setUnderline(underlineAction.isChecked())
 
-        scene.setFont(font)
+        scene.sF..(font)
 
     ___ itemSelected  item):
         font _ item.font()
         color _ item.defaultTextColor()
         fontCombo.setCurrentFont(font)
         fontSizeCombo.setEditText(str(font.pointSize()))
-        boldAction.sC__(font.weight() __ QFont.Bold)
+        boldAction.sC__(font.weight() __ ?F...Bold)
         italicAction.sC__(font.italic())
         underlineAction.sC__(font.underline())
 
@@ -738,7 +738,7 @@ c_ MainWindow ?MW..
 
         sceneScaleCombo _ ?CB()
         sceneScaleCombo.aI..(["50%", "75%", "100%", "125%", "150%"])
-        sceneScaleCombo.setCurrentIndex(2)
+        sceneScaleCombo.sCI..(2)
         sceneScaleCombo.currentIndexChanged[str].c..(sceneScaleChanged)
 
         pointerToolbar _ aTB..("Pointer type")
@@ -829,4 +829,4 @@ __ ______ __ ______
     mainWindow.setGeometry(100, 100, 800, 500)
     mainWindow.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -48,4 +48,4 @@ ____ ?.uic ______ loadUi
 app _ ?A..(___.a..
 widget _ loadUi('demo.ui')
 widget.s..
-___.e..(app.exec_())
+___.e.. ?.exec_())

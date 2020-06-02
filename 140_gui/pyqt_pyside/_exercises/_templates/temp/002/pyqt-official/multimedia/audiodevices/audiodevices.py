@@ -76,9 +76,9 @@ c_ AudioTest(AudioDevicesBase):
         endianBox.activated.c..(endianChanged)
         populateTableButton.c__.c..(populateTable)
 
-        modeBox.setCurrentIndex(0)
+        modeBox.sCI..(0)
         modeChanged(0)
-        deviceBox.setCurrentIndex(0)
+        deviceBox.sCI..(0)
         deviceChanged(0)
 
     ___ test
@@ -138,7 +138,7 @@ c_ AudioTest(AudioDevicesBase):
         ___ deviceInfo __ QAudioDeviceInfo.availableDevices(mode):
             deviceBox.aI..(deviceInfo.deviceName(), deviceInfo)
 
-        deviceBox.setCurrentIndex(0)
+        deviceBox.sCI..(0)
         deviceChanged(0)
 
     ___ deviceChanged  idx):
@@ -276,4 +276,4 @@ __ ______ __ ______
     audio _ AudioTest()
     audio.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

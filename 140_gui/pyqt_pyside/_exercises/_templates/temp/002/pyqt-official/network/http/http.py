@@ -202,7 +202,7 @@ c_ HttpWindow(QDialog):
         __ httpRequestAborted:
             r_
 
-        progressDialog.setMaximum(totalBytes)
+        progressDialog.sM..(totalBytes)
         progressDialog.setValue(bytesRead)
 
     ___ enableDownloadButton 

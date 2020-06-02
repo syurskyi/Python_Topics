@@ -136,7 +136,7 @@ c_ Ui_MainWindow(object):
         countryLabel.setBuddy(countryCombo)
 
         retranslateUi(MainWindow)
-        countryCombo.setCurrentIndex(6)
+        countryCombo.sCI..(6)
         professionList.setCurrentRow(0)
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 

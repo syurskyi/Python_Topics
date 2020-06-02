@@ -104,7 +104,7 @@ c_ EqualizerBar(?W...?W..):
 
     ___ setDecayFrequencyMs  ms):
         __ _timer:
-            _timer.stop()
+            _timer.s..
 
         __ ms:
             _timer _ ?C...?T..

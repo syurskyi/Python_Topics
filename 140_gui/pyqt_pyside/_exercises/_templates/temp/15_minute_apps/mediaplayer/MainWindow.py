@@ -106,7 +106,7 @@ c_ Ui_MainWindow(object):
         label.setObjectName("label")
         horizontalLayout_5.aW..(label)
         volumeSlider _ ?W...?S..(centralWidget)
-        volumeSlider.setMaximum(100)
+        volumeSlider.sM..(100)
         volumeSlider.setProperty("value", 100)
         volumeSlider.setOrientation(?C...__.H..)
         volumeSlider.setObjectName("volumeSlider")

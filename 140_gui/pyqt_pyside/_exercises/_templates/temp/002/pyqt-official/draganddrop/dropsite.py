@@ -176,5 +176,5 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ DropSiteWindow()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())
 

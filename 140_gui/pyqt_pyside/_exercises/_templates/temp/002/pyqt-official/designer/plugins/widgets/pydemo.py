@@ -153,4 +153,4 @@ __ __name__ __ "__main__":
     demo _ PyDemo()
     demo.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

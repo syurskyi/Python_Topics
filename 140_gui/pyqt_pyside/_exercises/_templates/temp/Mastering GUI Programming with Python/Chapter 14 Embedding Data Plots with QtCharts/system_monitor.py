@@ -185,10 +185,10 @@ c_ MemoryChartView(qtch.QChartView):
         # Set title font and brush
         chart.setTitleBrush(
             qtg.?B..(qtc.__.white))
-        chart.setTitleFont(qtg.QFont('Impact', 32, qtg.QFont.Bold))
+        chart.setTitleFont(qtg.?F..('Impact', 32, qtg.?F...Bold))
 
         # Set axes fonts and brushes
-        axis_font _ qtg.QFont('Mono', 16)
+        axis_font _ qtg.?F..('Mono', 16)
         axis_brush _ qtg.?B..(qtg.?C..('#EEF'))
         y_axis.setLabelsFont(axis_font)
         y_axis.setLabelsBrush(axis_brush)
@@ -213,7 +213,7 @@ c_ MemoryChartView(qtch.QChartView):
             qtg.?B..(qtg.?C..('white')))
 
         # Font
-        legend.setFont(qtg.QFont('Courier', 14))
+        legend.sF..(qtg.?F..('Courier', 14))
         legend.setLabelColor(qtc.__.darkRed)
 
         # Markers
@@ -277,4 +277,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

@@ -149,7 +149,7 @@ c_ MainWindow ?MW..
         pixelSizeLabel _ QLabel("Pixel size:")
         pixelSizeSpinBox _ SB..()
         pixelSizeSpinBox.setMinimum(4)
-        pixelSizeSpinBox.setMaximum(32)
+        pixelSizeSpinBox.sM..(32)
         pixelSizeSpinBox.setValue(12)
 
         fileMenu _ QMenu("&File", self)
@@ -299,4 +299,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.s..
     window.openImage(':/images/qt.png')
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

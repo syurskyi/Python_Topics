@@ -91,10 +91,10 @@ c_ SlidersGroup(QGroupBox):
         scrollBar.setMinimum(value)
         dial.setMinimum(value)
 
-    ___ setMaximum  value):    
-        slider.setMaximum(value)
-        scrollBar.setMaximum(value)
-        dial.setMaximum(value)
+    ___ sM..  value):
+        slider.sM..(value)
+        scrollBar.sM..(value)
+        dial.sM..(value)
 
     ___ invertAppearance  invert):
         slider.setInvertedAppearance(invert)
@@ -162,11 +162,11 @@ c_ Window(?W..):
         orientationCombo.aI..("Horizontal slider-like widgets")
         orientationCombo.aI..("Vertical slider-like widgets")
 
-        orientationCombo.activated.c..(stackedWidget.setCurrentIndex)
+        orientationCombo.activated.c..(stackedWidget.sCI..)
         minimumSpinBox.valueChanged.c..(horizontalSliders.setMinimum)
         minimumSpinBox.valueChanged.c..(verticalSliders.setMinimum)
-        maximumSpinBox.valueChanged.c..(horizontalSliders.setMaximum)
-        maximumSpinBox.valueChanged.c..(verticalSliders.setMaximum)
+        maximumSpinBox.valueChanged.c..(horizontalSliders.sM..)
+        maximumSpinBox.valueChanged.c..(verticalSliders.sM..)
         invertedAppearance.t__.c..(horizontalSliders.invertAppearance)
         invertedAppearance.t__.c..(verticalSliders.invertAppearance)
         invertedKeyBindings.t__.c..(horizontalSliders.invertKeyBindings)
@@ -192,4 +192,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

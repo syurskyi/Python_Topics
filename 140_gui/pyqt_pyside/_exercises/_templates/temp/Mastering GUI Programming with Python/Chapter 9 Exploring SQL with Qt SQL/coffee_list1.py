@@ -27,7 +27,7 @@ c_ CoffeeForm ?.?W..
     ___ show_coffee  coffee_data, reviews):
         coffee_brand.sT..(coffee_data.g..('coffee_brand'))
         coffee_name.sT..(coffee_data.g..('coffee_name'))
-        roast.setCurrentIndex(coffee_data.g..('roast_id'))
+        roast.sCI..(coffee_data.g..('roast_id'))
         reviews.c..
         reviews.setHorizontalHeaderLabels(
             ['Reviewer', 'Date', 'Review'])
@@ -153,4 +153,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

@@ -57,7 +57,7 @@ c_ WigglyWidget(?W..):
 
         newFont _ font()
         newFont.setPointSize(newFont.pointSize() + 20)
-        setFont(newFont)
+        sF..(newFont)
 
         timer _ QBasicTimer()
         t__ _ ''
@@ -120,4 +120,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..;
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

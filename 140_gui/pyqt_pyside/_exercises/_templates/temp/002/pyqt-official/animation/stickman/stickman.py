@@ -56,7 +56,7 @@ ______ stickman_rc
 
 
 c_ Node(QGraphicsObject):
-    positionChanged _ pS..()
+    pC.. _ pS..()
 
     ___  -   pos, parent_None):
         super(Node, self). - (parent)
@@ -75,7 +75,7 @@ c_ Node(QGraphicsObject):
 
     ___ itemChange  change, value):
         __ change __ QGraphicsItem.ItemPositionChange:
-            positionChanged.e..()
+            pC...e..()
 
         r_ super(Node, self).itemChange(change, value)
 
@@ -176,7 +176,7 @@ c_ StickMan(QGraphicsObject):
         m_nodes _   # list
         ___ x, y __ Coords:
             node _ Node(QPointF(x, y), self)
-            node.positionChanged.c..(childPositionChanged)
+            node.pC...c..(childPositionChanged)
             m_nodes.ap..(node)
 
         m_perfectBoneLengths _   # list
@@ -654,4 +654,4 @@ __ ______ __ ______
     cycle.addActivity(':/animations/chilling', __.Key_C)
     cycle.start()
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

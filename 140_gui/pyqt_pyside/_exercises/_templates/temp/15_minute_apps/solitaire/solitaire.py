@@ -581,7 +581,7 @@ class MainWindow(?MW..):
 
     def shuffle_and_stack 
         # Stop any ongoing animation.
-        timer.stop()
+        timer.s..
         animation_event_cover.hide()
 
         # Remove cards from all stacks.

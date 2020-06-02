@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (pS.., pyqtSlot, Q_ARG, QAbstractItemModel,
         QThread, ?T.., ?U..)
 ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
-        QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
+        QMediaMetaData, ?MP.., ?MPl.., QVideoFrame, QVideoProbe)
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
         QFormLayout, QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
@@ -116,7 +116,7 @@ c_ PlaylistModel(QAbstractItemModel):
     ___ playlist
         r_ m_playlist
 
-    ___ setPlaylist  playlist):
+    ___ sPl..  playlist):
         __ m_playlist __ no. N..:
             m_playlist.mediaAboutToBeInserted.disconnect(
                     beginInsertItems)
@@ -171,7 +171,7 @@ c_ PlayerControls(?W..):
     ___  -   parent_None):
         super(PlayerControls, self). - (parent)
 
-        playerState _ QMediaPlayer.StoppedState
+        playerState _ ?MP...StoppedState
         playerMuted _ F..
 
         playButton _ QToolButton(c___self.playClicked)
@@ -201,7 +201,7 @@ c_ PlayerControls(?W..):
         rateBox.aI..("0.5x", 0.5)
         rateBox.aI..("1.0x", 1.0)
         rateBox.aI..("2.0x", 2.0)
-        rateBox.setCurrentIndex(1)
+        rateBox.sCI..(1)
 
         layout _ QHBoxLayout()
         layout.setContentsMargins(0, 0, 0, 0)
@@ -221,15 +221,15 @@ c_ PlayerControls(?W..):
         __ state !_ playerState:
             playerState _ state
 
-            __ state __ QMediaPlayer.StoppedState:
+            __ state __ ?MP...StoppedState:
                 stopButton.sE.. F..
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
-            ____ state __ QMediaPlayer.PlayingState:
+            ____ state __ ?MP...PlayingState:
                 stopButton.sE..( st.
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPause))
-            ____ state __ QMediaPlayer.PausedState:
+            ____ state __ ?MP...PausedState:
                 stopButton.sE..( st.
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
@@ -252,9 +252,9 @@ c_ PlayerControls(?W..):
                             QStyle.SP_MediaVolumeMuted __ muted ____ QStyle.SP_MediaVolume))
 
     ___ playClicked
-        __ playerState __ (QMediaPlayer.StoppedState, QMediaPlayer.PausedState):
+        __ playerState __ (?MP...StoppedState, ?MP...PausedState):
             play.e..()
-        ____ playerState __ QMediaPlayer.PlayingState:
+        ____ playerState __ ?MP...PlayingState:
             pause.e..()
 
     ___ muteClicked
@@ -266,11 +266,11 @@ c_ PlayerControls(?W..):
     ___ setPlaybackRate  rate):
         ___ i __ ra..(rateBox.count()):
             __ qFuzzyCompare(rate, rateBox.itemData(i)):
-                rateBox.setCurrentIndex(i)
+                rateBox.sCI..(i)
                 r_
 
         rateBox.aI..("%dx" % rate, rate)
-        rateBox.setCurrentIndex(rateBox.count() - 1)
+        rateBox.sCI..(rateBox.count() - 1)
 
     ___ updateRate
         changeRate.e..(playbackRate())
@@ -388,11 +388,11 @@ c_ Player(?W..):
         duration _ 0
 
         player _ ?MP..
-        playlist _ QMediaPlaylist()
-        player.setPlaylist(playlist)
+        playlist _ ?MPl..()
+        player.sPl..(playlist)
 
-        player.durationChanged.c..(durationChanged)
-        player.positionChanged.c..(positionChanged)
+        player.dC...c..(dC..)
+        player.pC...c..(pC..)
         player.metaDataChanged.c..(metaDataChanged)
         playlist.currentIndexChanged.c..(playlistPositionChanged)
         player.mediaStatusChanged.c..(statusChanged)
@@ -404,11 +404,11 @@ c_ Player(?W..):
         player.setVideoOutput(videoWidget)
 
         playlistModel _ PlaylistModel()
-        playlistModel.setPlaylist(playlist)
+        playlistModel.sPl..(playlist)
 
         playlistView _ ?LV..
         playlistView.sM..(playlistModel)
-        playlistView.setCurrentIndex(
+        playlistView.sCI..(
                 playlistModel.index(playlist.currentIndex(), 0))
 
         playlistView.activated.c..(jump)
@@ -509,19 +509,19 @@ c_ Player(?W..):
                 __ fileInfo.suffix().lower() __ 'm3u':
                     playlist.load(url)
                 ____
-                    playlist.addMedia(?MC..(url))
+                    playlist.aM..(?MC..(url))
             ____
                 url _ ?U..(name)
                 __ url.isValid
-                    playlist.addMedia(?MC..(url))
+                    playlist.aM..(?MC..(url))
 
-    ___ durationChanged  duration):
+    ___ dC..  duration):
         duration /_ 1000
 
         duration _ duration
-        slider.setMaximum(duration)
+        slider.sM..(duration)
 
-    ___ positionChanged  progress):
+    ___ pC..  progress):
         progress /_ 1000
 
         __ no. slider.isSliderDown
@@ -545,11 +545,11 @@ c_ Player(?W..):
 
     ___ jump  index):
         __ index.isValid
-            playlist.setCurrentIndex(index.row())
+            playlist.sCI..(index.row())
             player.play()
 
     ___ playlistPositionChanged  position):
-        playlistView.setCurrentIndex(
+        playlistView.sCI..(
                 playlistModel.index(position, 0))
 
     ___ seek  seconds):
@@ -558,19 +558,19 @@ c_ Player(?W..):
     ___ statusChanged  status):
         handleCursor(status)
 
-        __ status __ QMediaPlayer.LoadingMedia:
+        __ status __ ?MP...LoadingMedia:
             setStatusInfo("Loading...")
-        ____ status __ QMediaPlayer.StalledMedia:
+        ____ status __ ?MP...StalledMedia:
             setStatusInfo("Media Stalled")
-        ____ status __ QMediaPlayer.EndOfMedia:
+        ____ status __ ?MP...EndOfMedia:
             ?A...alert
-        ____ status __ QMediaPlayer.InvalidMedia:
+        ____ status __ ?MP...InvalidMedia:
             displayErrorMessage()
         ____
             setStatusInfo("")
 
     ___ handleCursor  status):
-        __ status __ (QMediaPlayer.LoadingMedia, QMediaPlayer.BufferingMedia, QMediaPlayer.StalledMedia):
+        __ status __ (?MP...LoadingMedia, ?MP...BufferingMedia, ?MP...StalledMedia):
             setCursor(__.BusyCursor)
         ____
             unsetCursor()
@@ -688,4 +688,4 @@ __ ______ __ ______
     player _ Player(___.argv[1:])
     player.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

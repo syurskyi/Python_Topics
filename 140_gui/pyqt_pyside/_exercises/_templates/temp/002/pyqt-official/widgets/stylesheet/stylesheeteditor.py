@@ -59,10 +59,10 @@ c_ StyleSheetEditor(QDialog):
             defaultStyle _ regExp.cap(1)
 
         ui.styleCombo.aI..(?SF...keys())
-        ui.styleCombo.setCurrentIndex(
+        ui.styleCombo.sCI..(
                 ui.styleCombo.findText(defaultStyle, __.MatchContains))
 
-        ui.styleSheetCombo.setCurrentIndex(
+        ui.styleSheetCombo.sCI..(
                 ui.styleSheetCombo.findText('Coffee'))
 
         loadStyleSheet('Coffee')
@@ -80,7 +80,7 @@ c_ StyleSheetEditor(QDialog):
         ui.applyButton.sE..( st.
 
     ___ on_applyButton_clicked 
-        ?A...instance().setStyleSheet(
+        ?A...instance().sSS..(
                 ui.styleTextEdit.tPT..
         ui.applyButton.sE.. F..
 
@@ -102,7 +102,7 @@ c_ StyleSheetEditor(QDialog):
             styleSheet _ str(styleSheet, encoding_'utf8')
 
         ui.styleTextEdit.sPT..(styleSheet)
-        ?A...instance().setStyleSheet(styleSheet)
+        ?A...instance().sSS..(styleSheet)
         ui.applyButton.sE.. F..
 
     ___ saveStyleSheet  fileName):

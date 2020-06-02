@@ -69,7 +69,7 @@ c_ HeadingItem(DemoItem):
                 QImage.Format_ARGB32_Premultiplied)
         image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
-        painter.setFont(Colors.headingFont())
+        painter.sF..(Colors.headingFont())
         painter.scale(sx, sy)
 
         # Draw shadow.

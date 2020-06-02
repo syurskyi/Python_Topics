@@ -45,7 +45,7 @@
 ______ unicodedata
 
 ____ ?.?C.. ______ pS.., ?S.., __
-____ ?.?G.. ______ (QClipboard, QFont, QFontDatabase, QFontMetrics,
+____ ?.?G.. ______ (QClipboard, ?F.., QFontDatabase, QFontMetrics,
         QPainter)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QFontComboBox,
         QHBoxLayout, QLabel, QLineEdit, ?MW.., ?PB.., QScrollArea,
@@ -59,7 +59,7 @@ c_ CharacterWidget(?W..):
     ___  -   parent_None):
         super(CharacterWidget, self). - (parent)
 
-        displayFont _ QFont()
+        displayFont _ ?F..()
         squareSize _ 24
         columns _ 16
         lastKey _ -1
@@ -90,9 +90,9 @@ c_ CharacterWidget(?W..):
 
     ___ updateFontMerging  enable):
         __ enable:
-            displayFont.setStyleStrategy(QFont.PreferDefault)
+            displayFont.setStyleStrategy(?F...PreferDefault)
         ____
-            displayFont.setStyleStrategy(QFont.NoFontMerging)
+            displayFont.setStyleStrategy(?F...NoFontMerging)
         adjustSize()
         update()
 
@@ -121,7 +121,7 @@ c_ CharacterWidget(?W..):
     ___ paintEvent  event):
         painter _ QPainter
         painter.fillRect(event.rect(), __.white)
-        painter.setFont(displayFont)
+        painter.sF..(displayFont)
 
         redrawRect _ event.rect()
         beginRow _ redrawRect.top() // squareSize
@@ -236,9 +236,9 @@ c_ MainWindow ?MW..
 
         styleIndex _ styleCombo.findText(currentItem)
         __ styleIndex __ -1:
-            styleCombo.setCurrentIndex(0)
+            styleCombo.sCI..(0)
         ____
-            styleCombo.setCurrentIndex(styleIndex)
+            styleCombo.sCI..(styleIndex)
 
     ___ findSizes  font):
         fontDatabase _ QFontDatabase()
@@ -259,9 +259,9 @@ c_ MainWindow ?MW..
 
         sizeIndex _ sizeCombo.findText(currentSize)
         __ sizeIndex __ -1:
-            sizeCombo.setCurrentIndex(max(0, sizeCombo.count() / 3))
+            sizeCombo.sCI..(max(0, sizeCombo.count() / 3))
         ____
-            sizeCombo.setCurrentIndex(sizeIndex)
+            sizeCombo.sCI..(sizeIndex)
 
     ___ insertCharacter  character):
         lineEdit.insert(character)
@@ -278,4 +278,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -191,7 +191,7 @@ c_ MainWindow ?MW..
 
         boldFont _ boldAct.font()
         boldFont.setBold( st.
-        boldAct.setFont(boldFont)
+        boldAct.sF..(boldFont)
 
         italicAct _ ?A..("&Italic", self, checkable_True,
                 shortcut_"Ctrl+I", statusTip_"Make the text italic",
@@ -199,7 +199,7 @@ c_ MainWindow ?MW..
 
         italicFont _ italicAct.font()
         italicFont.setItalic( st.
-        italicAct.setFont(italicFont)
+        italicAct.sF..(italicFont)
 
         setLineSpacingAct _ ?A..("Set &Line Spacing...", self,
                 statusTip_"Change the gap between the lines of a paragraph",
@@ -283,4 +283,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

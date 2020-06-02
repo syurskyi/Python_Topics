@@ -68,7 +68,7 @@ c_ LetterItem(DemoItem):
         __ Colors.useEightBitPalette:
             painter.sB..(?C..(102, 175, 54))
             painter.drawEllipse(0, 0, 25, 25)
-            painter.setFont(Colors.tickerFont())
+            painter.sF..(Colors.tickerFont())
             painter.setPen(?C..(255, 255, 255))
             painter.drawText(10, 15, letter)
         ____
@@ -78,7 +78,7 @@ c_ LetterItem(DemoItem):
             brush.setColorAt(1.0, ?C..(102, 175, 54, 60))
             painter.sB..(brush)
             painter.drawEllipse(0, 0, 25, 25)
-            painter.setFont(Colors.tickerFont())
+            painter.sF..(Colors.tickerFont())
             painter.setPen(?C..(255, 255, 255, 255))
             painter.drawText(10, 15, letter)
 

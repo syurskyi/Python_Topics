@@ -209,4 +209,4 @@ __ ______ __ ______
     view.sM..(model)
     view.sWT..("Simple Tree Model")
     view.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -196,7 +196,7 @@ c_ BubblesWidget(BaseClass):
 
             bubbles.ap..(newBubble)
             newBubble _ N..
-            bubbleTimer.stop()
+            bubbleTimer.s..
             bubblesRemaining.e..(le.(bubbles))
 
         event.accept()
@@ -317,7 +317,7 @@ c_ BubblesWidget(BaseClass):
     @pyqtSlot()
     ___ stop
 
-        animation_timer.stop()
+        animation_timer.s..
 
     @pyqtSlot()
     ___ start
@@ -332,4 +332,4 @@ __ __name__ __ "__main__":
     app _ ?A..(___.a..
     widget _ BubblesWidget()
     widget.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

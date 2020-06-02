@@ -72,7 +72,7 @@ c_ MainWindow(MW_Base, MW_Ui):
 
     ___ clear_form
         event_title.c..
-        event_category.setCurrentIndex(0)
+        event_category.sCI..(0)
         event_time.sT..(qtc.?T..(8, 0))
         allday_check.sC__ F..
         event_detail.sPT..('')
@@ -147,7 +147,7 @@ c_ MainWindow(MW_Base, MW_Ui):
         __ t__ __ 'New…':
             dialog _ CategoryWindow()
             dialog.submitted.c..(add_category)
-            event_category.setCurrentIndex(0)
+            event_category.sCI..(0)
 
     ___ add_category  category):
         event_category.aI..(category)
@@ -159,4 +159,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

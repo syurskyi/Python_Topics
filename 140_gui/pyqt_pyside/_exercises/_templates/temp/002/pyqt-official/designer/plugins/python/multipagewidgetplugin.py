@@ -40,8 +40,8 @@ c_ MultiPageWidgetContainerExtension(QPyDesignerContainerExtension):
     ___ remove  index):
         _widget.removePage(index)
     
-    ___ setCurrentIndex  index):
-        _widget.setCurrentIndex(index)
+    ___ sCI..  index):
+        _widget.sCI..(index)
     
     ___ widget  index):
         r_ _widget.widget(index)

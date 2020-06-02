@@ -74,4 +74,4 @@ __ ______ __ ______
     QDBusConnection.sessionBus().registerObject('/', pong,
             QDBusConnection.ExportAllSlots)
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

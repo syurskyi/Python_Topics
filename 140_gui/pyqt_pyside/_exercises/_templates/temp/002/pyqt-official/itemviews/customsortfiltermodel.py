@@ -245,4 +245,4 @@ __ __name__ __ "__main__":
     window.setSourceModel(createMailModel(window))
     window.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

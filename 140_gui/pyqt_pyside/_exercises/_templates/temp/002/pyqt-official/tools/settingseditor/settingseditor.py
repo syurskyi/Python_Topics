@@ -215,7 +215,7 @@ c_ LocationDialog(QDialog):
         applicationComboBox.aI..("Designer")
         applicationComboBox.aI..("Linguist")
         applicationComboBox.setEditable( st.
-        applicationComboBox.setCurrentIndex(3)
+        applicationComboBox.sCI..(3)
 
         formatLabel _ QLabel("&Format:")
         formatLabel.setBuddy(formatComboBox)
@@ -381,7 +381,7 @@ c_ SettingsTree(QTreeWidget):
             __ autoRefresh:
                 refreshTimer.start()
         ____
-            refreshTimer.stop()
+            refreshTimer.s..
 
     ___ sH..
         r_ ?S..(800, 600)
@@ -394,7 +394,7 @@ c_ SettingsTree(QTreeWidget):
                 maybeRefresh()
                 refreshTimer.start()
             ____
-                refreshTimer.stop()
+                refreshTimer.s..
 
     ___ setFallbacksEnabled  enabled):
         __ settings __ no. N..:
@@ -402,7 +402,7 @@ c_ SettingsTree(QTreeWidget):
             refresh()
 
     ___ maybeRefresh
-        __ state() !_ QAbstractItemView.EditingState:
+        __ s.. !_ QAbstractItemView.EditingState:
             refresh()
 
     ___ refresh
@@ -722,4 +722,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

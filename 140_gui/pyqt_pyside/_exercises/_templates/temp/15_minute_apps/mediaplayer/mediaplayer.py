@@ -48,8 +48,8 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         player.play()
 
         # Setup the playlist.
-        playlist _ QMediaPlaylist()
-        player.setPlaylist(playlist)
+        playlist _ ?MPl..()
+        player.sPl..(playlist)
 
         # Add viewer for video playback, separate floating window.
         viewer _ ViewerWindow
@@ -78,8 +78,8 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         selection_model _ playlistView.selectionModel()
         selection_model.sC__.c..(playlist_selection_changed)
 
-        player.durationChanged.c..(update_duration)
-        player.positionChanged.c..(update_position)
+        player.dC...c..(update_duration)
+        player.pC...c..(update_position)
         timeSlider.valueChanged.c..(player.setPosition)
 
         open_file_action.t__.c..(open_file)
@@ -94,23 +94,23 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
     ___ dropEvent  e):
         ___ url __ e.mimeData().urls
-            playlist.addMedia(
+            playlist.aM..(
                 ?MC..(url)
             )
 
         model.layoutChanged.e..()
 
         # If not playing, seeking to first of newly added + play.
-        __ player.state() !_ QMediaPlayer.PlayingState:
+        __ player.s.. !_ ?MP...PlayingState:
             i _ playlist.mediaCount() - le.(e.mimeData().urls())
-            playlist.setCurrentIndex(i)
+            playlist.sCI..(i)
             player.play()
 
     ___ open_file
         pa__, _ _ ?FD...gOFN..  "Open file", "", "mp3 Audio (*.mp3);mp4 Video (*.mp4);Movie files (*.mov);All files (*.*)")
 
         __ pa__:
-            playlist.addMedia(
+            playlist.aM..(
                 ?MC..(
                     ?U...fLF..(pa__)
                 )
@@ -122,7 +122,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         print("!", duration)
         print("?", player.duration())
         
-        timeSlider.setMaximum(duration)
+        timeSlider.sM..(duration)
 
         __ duration >_ 0:
             totalTimeLabel.sT..(hhmmss(duration))
@@ -139,12 +139,12 @@ c_ MainWindow(?MW.., Ui_MainWindow):
     ___ playlist_selection_changed  ix):
         # We receive a QItemSelection from selectionChanged.
         i _ ix.indexes()[0].row()
-        playlist.setCurrentIndex(i)
+        playlist.sCI..(i)
 
     ___ playlist_position_changed  i):
         __ i > -1:
             ix _ model.index(i)
-            playlistView.setCurrentIndex(ix)
+            playlistView.sCI..(ix)
 
     ___ toggle_viewer  state):
         __ state:
@@ -179,7 +179,7 @@ __ ______ __ ______
     palette.sC..(?P...Highlight, ?C..(42, 130, 218))
     palette.sC..(?P...HighlightedText, __.black)
     app.sP..(palette)
-    app.setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
+    app.sSS..("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
 
     window _ MainWindow()
     app.e..

@@ -213,4 +213,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     imageViewer _ ImageViewer()
     imageViewer.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

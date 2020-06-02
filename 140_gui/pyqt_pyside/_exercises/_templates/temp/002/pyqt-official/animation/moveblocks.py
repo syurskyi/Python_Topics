@@ -230,4 +230,4 @@ __ ______ __ ______
 
     qsrand(?T..(0, 0, 0).secsTo(?T...currentTime()))
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

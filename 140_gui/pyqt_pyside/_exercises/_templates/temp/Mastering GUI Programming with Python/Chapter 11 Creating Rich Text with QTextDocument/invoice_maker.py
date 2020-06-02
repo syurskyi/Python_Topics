@@ -107,15 +107,15 @@ c_ InvoiceView(qtw.?TE..):
         std_format _ qtg.QTextCharFormat()
 
         logo_format _ qtg.QTextCharFormat()
-        logo_format.setFont(
-            qtg.QFont('Impact', 24, qtg.QFont.DemiBold))
+        logo_format.sF..(
+            qtg.?F..('Impact', 24, qtg.?F...DemiBold))
         logo_format.setUnderlineStyle(
             qtg.QTextCharFormat.SingleUnderline)
         logo_format.setVerticalAlignment(
             qtg.QTextCharFormat.AlignMiddle)
 
         label_format _ qtg.QTextCharFormat()
-        label_format.setFont(qtg.QFont('Sans', 12, qtg.QFont.Bold))
+        label_format.sF..(qtg.?F..('Sans', 12, qtg.?F...Bold))
 
         # create a format for the block
         cursor.setPosition(logo_frame.firstPosition())
@@ -228,4 +228,4 @@ c_ MainWindow(qtw.?MW..):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QByteArray, QFile, QRegExp, __
-____ ?.?G.. ______ (?C.., QFont, QSyntaxHighlighter, QTextCharFormat,
+____ ?.?G.. ______ (?C.., ?F.., QSyntaxHighlighter, QTextCharFormat,
         QTextCursor, QTextFormat)
 ____ ?.?W.. ______ ?A.., ?MW.., ?TE..
 ____ ?.QtXmlPatterns ______ (QAbstractMessageHandler, QSourceLocation,
@@ -77,7 +77,7 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
         # Tag format.
         format _ QTextCharFormat()
         format.setForeground(__.darkBlue)
-        format.setFontWeight(QFont.Bold)
+        format.setFontWeight(?F...Bold)
         pattern _ QRegExp("(<[a-zA-Z:]+\\b|<\\?[a-zA-Z:]+\\b|\\?>|>|/>|</[a-zA-Z:]+>)")
         highlightingRules.ap..((pattern, format))
 
@@ -236,7 +236,7 @@ c_ MainWindow(?MW.., Ui_SchemaMainWindow):
             background _ __.green
 
         styleSheet _ 'QLabel {background: %s; padding: 3px}' % ?C..(background).lighter(160).name()
-        validationStatus.setStyleSheet(styleSheet)
+        validationStatus.sSS..(styleSheet)
 
     ___ tC..
         instanceEdit.setExtraSelections(  # list)
@@ -272,4 +272,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

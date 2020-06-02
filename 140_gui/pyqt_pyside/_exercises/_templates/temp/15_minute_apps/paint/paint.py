@@ -74,7 +74,7 @@ class Canvas(QLabel):
         'size': 1,
         'fill': T..,
         # Font options.
-        'font': QFont('Times'),
+        'font': ?F..('Times'),
         'fontsize': 12,
         'bold': F..,
         'italic': F..,
@@ -363,7 +363,7 @@ class Canvas(QLabel):
             p = QPainter(pixmap())
             p.setRenderHints(QPainter.Antialiasing)
             font = build_font(config)
-            p.setFont(font)
+            p.sF..(font)
             pen = QPen(primary_color, 1, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin)
             p.setPen(pen)
             p.drawText(current_pos, current_text)
@@ -381,12 +381,12 @@ class Canvas(QLabel):
         p.setPen(pen)
         if last_text:
             font = build_font(last_config)
-            p.setFont(font)
+            p.sF..(font)
             p.drawText(current_pos, last_text)
 
         if not final:
             font = build_font(config)
-            p.setFont(font)
+            p.sF..(font)
             p.drawText(current_pos, current_text)
 
         last_text = current_text
@@ -699,7 +699,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         # Initialize button colours.
         ___ n, hex __ en..(COLORS, 1):
             btn = getattr(self, 'colorButton_%d' % n)
-            btn.setStyleSheet('QPushButton { background-color: %s; }' % hex)
+            btn.sSS..('QPushButton { background-color: %s; }' % hex)
             btn.hex = hex  # For use in the event below
 
             def patch_mousePressEvent(self_, e):
@@ -746,7 +746,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         fontselect = QFontComboBox()
         fontToolbar.addWidget(fontselect)
         fontselect.currentFontChanged.connect(l___ f: canvas.set_config('font', f))
-        fontselect.setCurrentFont(QFont('Times'))
+        fontselect.setCurrentFont(?F..('Times'))
 
         fontsize = ?CB()
         fontsize.aI..([str(s) ___ s __ FONT_SIZES])
@@ -785,11 +785,11 @@ class MainWindow(?MW.., Ui_MainWindow):
 
     def set_primary_color(self, hex):
         canvas.set_primary_color(hex)
-        primaryButton.setStyleSheet('QPushButton { background-color: %s; }' % hex)
+        primaryButton.sSS..('QPushButton { background-color: %s; }' % hex)
 
     def set_secondary_color(self, hex):
         canvas.set_secondary_color(hex)
-        secondaryButton.setStyleSheet('QPushButton { background-color: %s; }' % hex)
+        secondaryButton.sSS..('QPushButton { background-color: %s; }' % hex)
 
     def next_stamp
         current_stamp_n += 1

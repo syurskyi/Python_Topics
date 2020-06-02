@@ -132,4 +132,4 @@ __ ______ __ ______
     window _ Window()
     window.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

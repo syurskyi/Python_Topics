@@ -35,213 +35,213 @@ c_ Ui_MainWindow(object):
         gridLayout.setObjectName("gridLayout")
         pushButton_n4 _ ?W...?PB..(centralWidget)
         pushButton_n4.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n4.setFont(font)
-        pushButton_n4.setStyleSheet("QPushButton {\n"
+        pushButton_n4.sF..(font)
+        pushButton_n4.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n4.setObjectName("pushButton_n4")
         gridLayout.aW..(pushButton_n4, 3, 0, 1, 1)
         pushButton_n1 _ ?W...?PB..(centralWidget)
         pushButton_n1.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n1.setFont(font)
-        pushButton_n1.setStyleSheet("QPushButton {\n"
+        pushButton_n1.sF..(font)
+        pushButton_n1.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n1.setObjectName("pushButton_n1")
         gridLayout.aW..(pushButton_n1, 4, 0, 1, 1)
         pushButton_n8 _ ?W...?PB..(centralWidget)
         pushButton_n8.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n8.setFont(font)
-        pushButton_n8.setStyleSheet("QPushButton {\n"
+        pushButton_n8.sF..(font)
+        pushButton_n8.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n8.setObjectName("pushButton_n8")
         gridLayout.aW..(pushButton_n8, 2, 1, 1, 1)
         pushButton_mul _ ?W...?PB..(centralWidget)
         pushButton_mul.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_mul.setFont(font)
+        pushButton_mul.sF..(font)
         pushButton_mul.setObjectName("pushButton_mul")
         gridLayout.aW..(pushButton_mul, 2, 3, 1, 1)
         pushButton_n7 _ ?W...?PB..(centralWidget)
         pushButton_n7.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n7.setFont(font)
-        pushButton_n7.setStyleSheet("QPushButton {\n"
+        pushButton_n7.sF..(font)
+        pushButton_n7.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n7.setObjectName("pushButton_n7")
         gridLayout.aW..(pushButton_n7, 2, 0, 1, 1)
         pushButton_n6 _ ?W...?PB..(centralWidget)
         pushButton_n6.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n6.setFont(font)
-        pushButton_n6.setStyleSheet("QPushButton {\n"
+        pushButton_n6.sF..(font)
+        pushButton_n6.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n6.setObjectName("pushButton_n6")
         gridLayout.aW..(pushButton_n6, 3, 2, 1, 1)
         pushButton_n5 _ ?W...?PB..(centralWidget)
         pushButton_n5.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n5.setFont(font)
-        pushButton_n5.setStyleSheet("QPushButton {\n"
+        pushButton_n5.sF..(font)
+        pushButton_n5.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n5.setObjectName("pushButton_n5")
         gridLayout.aW..(pushButton_n5, 3, 1, 1, 1)
         pushButton_n0 _ ?W...?PB..(centralWidget)
         pushButton_n0.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n0.setFont(font)
-        pushButton_n0.setStyleSheet("QPushButton {\n"
+        pushButton_n0.sF..(font)
+        pushButton_n0.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n0.setObjectName("pushButton_n0")
         gridLayout.aW..(pushButton_n0, 5, 0, 1, 1)
         pushButton_n2 _ ?W...?PB..(centralWidget)
         pushButton_n2.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n2.setFont(font)
-        pushButton_n2.setStyleSheet("QPushButton {\n"
+        pushButton_n2.sF..(font)
+        pushButton_n2.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n2.setObjectName("pushButton_n2")
         gridLayout.aW..(pushButton_n2, 4, 1, 1, 1)
         pushButton_n9 _ ?W...?PB..(centralWidget)
         pushButton_n9.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n9.setFont(font)
-        pushButton_n9.setStyleSheet("QPushButton {\n"
+        pushButton_n9.sF..(font)
+        pushButton_n9.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n9.setObjectName("pushButton_n9")
         gridLayout.aW..(pushButton_n9, 2, 2, 1, 1)
         pushButton_n3 _ ?W...?PB..(centralWidget)
         pushButton_n3.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_n3.setFont(font)
-        pushButton_n3.setStyleSheet("QPushButton {\n"
+        pushButton_n3.sF..(font)
+        pushButton_n3.sSS..("QPushButton {\n"
 "color: #1976D2;\n"
 "}")
         pushButton_n3.setObjectName("pushButton_n3")
         gridLayout.aW..(pushButton_n3, 4, 2, 1, 1)
         pushButton_div _ ?W...?PB..(centralWidget)
         pushButton_div.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_div.setFont(font)
+        pushButton_div.sF..(font)
         pushButton_div.setObjectName("pushButton_div")
         gridLayout.aW..(pushButton_div, 1, 3, 1, 1)
         pushButton_sub _ ?W...?PB..(centralWidget)
         pushButton_sub.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_sub.setFont(font)
+        pushButton_sub.sF..(font)
         pushButton_sub.setObjectName("pushButton_sub")
         gridLayout.aW..(pushButton_sub, 3, 3, 1, 1)
         pushButton_add _ ?W...?PB..(centralWidget)
         pushButton_add.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_add.setFont(font)
+        pushButton_add.sF..(font)
         pushButton_add.setObjectName("pushButton_add")
         gridLayout.aW..(pushButton_add, 4, 3, 1, 1)
         pushButton_ac _ ?W...?PB..(centralWidget)
         pushButton_ac.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_ac.setFont(font)
-        pushButton_ac.setStyleSheet("QPushButton {\n"
+        pushButton_ac.sF..(font)
+        pushButton_ac.sSS..("QPushButton {\n"
 "    color: #f44336;\n"
 "}")
         pushButton_ac.setObjectName("pushButton_ac")
         gridLayout.aW..(pushButton_ac, 1, 0, 1, 1)
         pushButton_mr _ ?W...?PB..(centralWidget)
         pushButton_mr.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_mr.setFont(font)
-        pushButton_mr.setStyleSheet("QPushButton {\n"
+        pushButton_mr.sF..(font)
+        pushButton_mr.sSS..("QPushButton {\n"
 "   color: #FFC107;\n"
 "}")
         pushButton_mr.setObjectName("pushButton_mr")
         gridLayout.aW..(pushButton_mr, 1, 2, 1, 1)
         pushButton_m _ ?W...?PB..(centralWidget)
         pushButton_m.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_m.setFont(font)
-        pushButton_m.setStyleSheet("QPushButton {\n"
+        pushButton_m.sF..(font)
+        pushButton_m.sSS..("QPushButton {\n"
 "   color: #FFC107;\n"
 "}")
         pushButton_m.setObjectName("pushButton_m")
         gridLayout.aW..(pushButton_m, 1, 1, 1, 1)
         pushButton_pc _ ?W...?PB..(centralWidget)
         pushButton_pc.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold F..
         font.setWeight(50)
-        pushButton_pc.setFont(font)
+        pushButton_pc.sF..(font)
         pushButton_pc.setObjectName("pushButton_pc")
         gridLayout.aW..(pushButton_pc, 5, 1, 1, 1)
         pushButton_eq _ ?W...?PB..(centralWidget)
         pushButton_eq.sMS..(?C...?S..(0, 50))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(27)
         font.setBold( st.
         font.setWeight(75)
-        pushButton_eq.setFont(font)
-        pushButton_eq.setStyleSheet("QPushButton {\n"
+        pushButton_eq.sF..(font)
+        pushButton_eq.sSS..("QPushButton {\n"
 "color: #4CAF50;\n"
 "}")
         pushButton_eq.setObjectName("pushButton_eq")

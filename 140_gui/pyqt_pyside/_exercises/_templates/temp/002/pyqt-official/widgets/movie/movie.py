@@ -95,7 +95,7 @@ c_ MoviePlayer(?W..):
     ___ openFile  fileName):
         currentMovieDirectory _ QFileInfo(fileName).pa__()
 
-        movie.stop()
+        movie.s..
         movieLabel.setMovie(movie)
         movie.setFileName(fileName)
         movie.start()
@@ -114,19 +114,19 @@ c_ MoviePlayer(?W..):
 
         __ hasFrames:
             __ movie.frameCount() > 0:
-                frameSlider.setMaximum(movie.frameCount() - 1)
+                frameSlider.sM..(movie.frameCount() - 1)
             ____ movie.currentFrameNumber() > frameSlider.maximum
-                frameSlider.setMaximum(movie.currentFrameNumber())
+                frameSlider.sM..(movie.currentFrameNumber())
 
             frameSlider.setValue(movie.currentFrameNumber())
         ____
-            frameSlider.setMaximum(0)
+            frameSlider.sM..(0)
 
         frameLabel.sE..(hasFrames)
         frameSlider.sE..(hasFrames)
 
     ___ updateButtons
-        state _ movie.state()
+        state _ movie.s..
 
         playButton.sE..(movie.iV.. and
                 movie.frameCount() !_ 1 and state __ QMovie.NotRunning)
@@ -208,4 +208,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     player _ MoviePlayer()
     player.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -8,4 +8,4 @@ __ __name__ __ "__main__":
     db.sDN..("test.db")
     __ db.o..
         print("open DB success.")
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

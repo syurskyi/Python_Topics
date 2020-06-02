@@ -24,7 +24,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
 ____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, QRectF, ?S.., __
-____ ?.?G.. ______ QFont, QFontMetricsF, QPainter
+____ ?.?G.. ______ ?F.., QFontMetricsF, QPainter
 ____ ?.?W.. ______ ?A.., ?W..
 
 
@@ -46,7 +46,7 @@ c_ CounterLabel(?W..):
 
         setAutoFillBackground F..
 
-        _font _ QFont()
+        _font _ ?F..()
         _minimum _ 1
         _maximum _ 1
         _value _ 1
@@ -59,7 +59,7 @@ c_ CounterLabel(?W..):
         p _ QPainter()
         p.begin
         p.setRenderHint(QPainter.Antialiasing)
-        p.setFont(_font)
+        p.sF..(_font)
         p.translate(width()/2.0, height()/2.0)
         p.scale(_scale, _scale)
         p.drawText(_xpos, _ypos, str(_value))
@@ -91,12 +91,12 @@ c_ CounterLabel(?W..):
     ___ getFont 
         r_ _font
 
-    ___ setFont  font):
+    ___ sF..  font):
         _font _ font
         rescale()
         reposition()
 
-    font _ pyqtProperty(QFont, getFont, setFont)
+    font _ pyqtProperty(?F.., getFont, sF..)
 
     # Provide getter and setter methods for the minimum and maximum properties.
 
@@ -106,7 +106,7 @@ c_ CounterLabel(?W..):
     ___ setMinimum  value):
         _minimum _ value
         __ _minimum > _maximum:
-            setMaximum(_minimum)
+            sM..(_minimum)
         __ _minimum > _value:
             setValue(_minimum)
 
@@ -115,7 +115,7 @@ c_ CounterLabel(?W..):
     ___ getMaximum 
         r_ _maximum
 
-    ___ setMaximum  value):
+    ___ sM..  value):
         _maximum _ value
         _minimum _ min(_minimum, _maximum)
         __ _maximum < _value:
@@ -123,7 +123,7 @@ c_ CounterLabel(?W..):
         rescale()
         reposition()
 
-    maximum _ pyqtProperty(int, getMaximum, setMaximum)
+    maximum _ pyqtProperty(int, getMaximum, sM..)
 
     # We provide an offset property to allow the value shown to differ from
     # the internal value held by the widget.
@@ -174,4 +174,4 @@ __ __name__ __ "__main__":
     widget _ CounterLabel()
     widget.setValue(123)
     widget.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

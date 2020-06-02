@@ -29,7 +29,7 @@ c_ PyMultiPageWidget(?W..):
         # MAGIC
         comboBox.setObjectName('__qt__passive_comboBox')
         stackWidget _ QStackedWidget()
-        comboBox.activated.c..(setCurrentIndex)
+        comboBox.activated.c..(sCI..)
         layout _ ?VBL..
         layout.aW..(comboBox)
         layout.aW..(stackWidget)
@@ -80,10 +80,10 @@ c_ PyMultiPageWidget(?W..):
         r_ stackWidget.currentIndex()
 
     @pyqtSlot(int)
-    ___ setCurrentIndex  index):
+    ___ sCI..  index):
         __ index !_ getCurrentIndex
-            stackWidget.setCurrentIndex(index)
-            comboBox.setCurrentIndex(index)
+            stackWidget.sCI..(index)
+            comboBox.sCI..(index)
             currentIndexChanged.e..(index)
 
     pageTitle _ pyqtProperty(str, fget_getPageTitle, fset_setPageTitle, stored_False)
@@ -100,7 +100,7 @@ __ __name__ __ "__main__":
     widget.addPage(QLabel('This is page #1'))
     widget.addPage(QLabel('This is page #2'))
     widget.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())
 
 #============================================================================#
 # EOF                                                                        #

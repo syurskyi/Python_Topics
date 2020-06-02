@@ -97,7 +97,7 @@ c_ Window(QDialog):
             __ directoryComboBox.findText(directory) __ -1:
                 directoryComboBox.aI..(directory)
 
-            directoryComboBox.setCurrentIndex(directoryComboBox.findText(directory))
+            directoryComboBox.sCI..(directoryComboBox.findText(directory))
 
     @staticmethod
     ___ updateComboBox(comboBox):
@@ -212,4 +212,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

@@ -45,7 +45,7 @@ c_ TcpChatInterface(qtc.?O..):
     ___ send_message  message):
         """Prepare and send a message"""
         raw_message _ f'{username}{delimiter}{message}'
-        __ client_socket.state() !_ qtn.QAbstractSocket.ConnectedState:
+        __ client_socket.s.. !_ qtn.QAbstractSocket.ConnectedState:
             client_socket.connectToHost(recipient, port)
         datastream _ qtc.QDataStream(client_socket)
         #self.datastream.writeUInt32()
@@ -125,4 +125,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..

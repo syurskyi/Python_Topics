@@ -67,4 +67,4 @@ ctxt.setContextProperty('myModel', dataList)
 view.setSource(?U..('qrc:view.qml'))
 view.s..
 
-___.e..(app.exec_())
+___.e.. ?.exec_())

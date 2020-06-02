@@ -140,4 +140,4 @@ __ ______ __ ______
     mainWindow.sWT..("Form Extractor")
     mainWindow.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

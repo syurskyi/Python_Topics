@@ -33,13 +33,13 @@ c_ Ui_MainWindow(object):
         closeButton.sMS..(?C...?S..(25, 20))
         closeButton.sMS..(?C...?S..(25, 20))
         closeButton.setBaseSize(?C...?S..(2, 0))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(30)
         font.setBold( st.
         font.setWeight(75)
-        closeButton.setFont(font)
+        closeButton.sF..(font)
         closeButton.setLayoutDirection(?C...__.LeftToRight)
-        closeButton.setStyleSheet("QPushButton {\n"
+        closeButton.sSS..("QPushButton {\n"
 "    border: 0px;\n"
 "}")
         closeButton.setObjectName("closeButton")
@@ -49,21 +49,21 @@ c_ Ui_MainWindow(object):
         moreButton _ ?W...?PB..(centralWidget)
         moreButton.sMS..(?C...?S..(25, 25))
         moreButton.sMS..(?C...?S..(25, 25))
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(30)
         font.setBold( st.
         font.setWeight(75)
-        moreButton.setFont(font)
-        moreButton.setStyleSheet("QPushButton {\n"
+        moreButton.sF..(font)
+        moreButton.sSS..("QPushButton {\n"
 "    border: 0px;\n"
 "}")
         moreButton.setObjectName("moreButton")
         horizontalLayout.aW..(moreButton)
         verticalLayout.aL..(horizontalLayout)
         textEdit _ ?W...?TE..(centralWidget)
-        font _ ?G...QFont()
+        font _ ?G...?F..()
         font.setPointSize(18)
-        textEdit.setFont(font)
+        textEdit.sF..(font)
         textEdit.setFrameShape(?W...QFrame.NoFrame)
         textEdit.setFrameShadow(?W...QFrame.Plain)
         textEdit.setLineWidth(0)

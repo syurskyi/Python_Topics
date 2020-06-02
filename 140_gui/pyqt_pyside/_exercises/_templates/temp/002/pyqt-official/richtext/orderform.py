@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QDate, __
-____ ?.?G.. ______ (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
+____ ?.?G.. ______ (?F.., QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MW..,
@@ -77,7 +77,7 @@ c_ MainWindow ?MW..
     ___ createLetter  name, address, orderItems, sendOffers):
         editor _ ?TE..()
         tabIndex _ letters.aT..(editor, name)
-        letters.setCurrentIndex(tabIndex)
+        letters.sCI..(tabIndex)
 
         cursor _ editor.textCursor()
         cursor.movePosition(QTextCursor.Start)
@@ -88,7 +88,7 @@ c_ MainWindow ?MW..
 
         textFormat _ QTextCharFormat()
         boldFormat _ QTextCharFormat()
-        boldFormat.setFontWeight(QFont.Bold)
+        boldFormat.setFontWeight(?F...Bold)
 
         referenceFrameFormat _ QTextFrameFormat()
         referenceFrameFormat.setBorder(1)
@@ -300,4 +300,4 @@ __ ______ __ ______
     window.r..(640, 480)
     window.s..
     window.createSample()
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

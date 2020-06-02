@@ -7,7 +7,7 @@ ____ .mainwindow ______ MainWindow
 ___ main
     app _ ?A..(___.a..
     mainwindow _ MainWindow()
-    ___.e..(app.e..
+    ___.e.. ?.e..
 
 __ ______ __ ______
     main()

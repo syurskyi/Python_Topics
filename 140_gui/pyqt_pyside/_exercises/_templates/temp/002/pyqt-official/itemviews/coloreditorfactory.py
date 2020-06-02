@@ -61,7 +61,7 @@ c_ ColorListEditor(?CB):
         r_ color
 
     ___ sC..  color):
-        setCurrentIndex(findData(color, __.DecorationRole))
+        sCI..(findData(color, __.DecorationRole))
 
     color _ pyqtProperty(?C.., getColor, sC.., user_ st.
 
@@ -125,4 +125,4 @@ __ ______ __ ______
     window _ Window()
     window.s..
 
-    ___.e..(app.exec_())
+    ___.e.. ?.exec_())

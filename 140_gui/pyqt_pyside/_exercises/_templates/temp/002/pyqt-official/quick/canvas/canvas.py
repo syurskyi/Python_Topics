@@ -61,9 +61,9 @@ ______ canvas_rc
 app _ QGuiApplication(___.a..
 
 view _ QQuickView()
-view.engine().quit.c..(app.quit)
+view.engine().quit.c.. ?.quit)
 
 view.setSource(?U..('qrc:///canvas/canvas.qml'))
 view.s..
 
-___.e..(app.exec_())
+___.e.. ?.exec_())
