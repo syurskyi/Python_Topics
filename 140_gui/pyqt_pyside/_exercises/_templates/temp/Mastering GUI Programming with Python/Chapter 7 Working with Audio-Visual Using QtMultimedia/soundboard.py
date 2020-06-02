@@ -48,7 +48,7 @@ c_ SoundWidget ?.?W..
 
     ___  - 
         s_. - ()
-        sL..(qtw.QGridLayout())
+        sL..(qtw.?GL..
 
         # Playback
         label _ ?.?L..("No file loaded")
@@ -178,7 +178,7 @@ c_ MainWindow(qtw.?MW..):
         rows _ 3
         columns _ 3
         soundboard _ qtw.?W..
-        soundboard.sL..(qtw.QGridLayout())
+        soundboard.sL..(qtw.?GL..
         sCW..(soundboard)
         ___ c __ ra..(columns):
             ___ r __ ra..(rows):

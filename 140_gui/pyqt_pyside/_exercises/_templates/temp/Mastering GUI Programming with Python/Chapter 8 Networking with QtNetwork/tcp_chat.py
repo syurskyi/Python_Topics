@@ -74,7 +74,7 @@ c_ ChatWindow ?.?W..
 
     ___  -  
         s_. - ()
-        sL..(qtw.QGridLayout())
+        sL..(qtw.?GL..
         message_view _ ?.?TE..readOnly_ st.
         la__ .aW..(message_view, 1, 1, 1, 2)
         message_entry _ ?.?LE..(returnPressed_self.send)
