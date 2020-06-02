@@ -54,7 +54,7 @@ c_ Ui_ImageSettingsUi(object):
         ?C...QMetaObject.connectSlotsByName(ImageSettingsUi)
 
     ___ retranslateUi  ImageSettingsUi):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         ImageSettingsUi.sWT..(_translate("ImageSettingsUi", "Dialog"))
         groupBox_2.setTitle(_translate("ImageSettingsUi", "Image"))
         label_8.sT..(_translate("ImageSettingsUi", "Resolution:"))

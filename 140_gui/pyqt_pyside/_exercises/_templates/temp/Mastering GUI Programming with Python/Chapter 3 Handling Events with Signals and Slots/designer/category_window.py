@@ -32,7 +32,7 @@ c_ Ui_CategoryWindow(object):
         ?C...QMetaObject.connectSlotsByName(CategoryWindow)
 
     ___ retranslateUi  CategoryWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         CategoryWindow.sWT..(_translate("CategoryWindow", "Form"))
         label.sT..(_translate("CategoryWindow", "Please enter a new category name:"))
         submit_btn.sT..(_translate("CategoryWindow", "Submit"))

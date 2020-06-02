@@ -3,7 +3,7 @@ ____ ?.?S.. ______ ?SD..
 ____ ?.?C.. ______ *
 
 __ __name__ __ "__main__":
-    app _ QCoreApplication(___.a..
+    app _  ?CA..(___.a..
     db _ ?SD...aD..("QSQLITE")
     db.sDN..("test.db")
     __ db.o..

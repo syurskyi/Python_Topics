@@ -213,7 +213,7 @@ c_ Ui_AudioDevicesBase(object):
         ?C...QMetaObject.connectSlotsByName(AudioDevicesBase)
 
     ___ retranslateUi  AudioDevicesBase):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         AudioDevicesBase.sWT..(_translate("AudioDevicesBase", "Audio Devices"))
         modeLabel.sT..(_translate("AudioDevicesBase", "Mode"))
         deviceLabel.sT..(_translate("AudioDevicesBase", "Device"))

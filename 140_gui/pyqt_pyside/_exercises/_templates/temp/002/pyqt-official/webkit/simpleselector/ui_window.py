@@ -41,7 +41,7 @@ c_ Ui_Window(object):
         ?C...QMetaObject.connectSlotsByName(Window)
 
     ___ retranslateUi  Window):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Window.sWT..(_translate("Window", "Web Element Selector"))
         elementLabel.sT..(_translate("Window", "&Element:"))
         elementLineEdit.sT..(_translate("Window", "li a"))

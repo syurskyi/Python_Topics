@@ -27,6 +27,6 @@ __ ______ __ ______
     __ le.(___.a.. < 2:
         print(f'Usage: {___.argv[0]} <download url>')
         ___.e..(1)
-    app _ qtc.QCoreApplication(___.a..
+    app _ qtc. ?CA..(___.a..
     d _ Downloader(___.argv[1])
     ___.e.. ?.exec_())

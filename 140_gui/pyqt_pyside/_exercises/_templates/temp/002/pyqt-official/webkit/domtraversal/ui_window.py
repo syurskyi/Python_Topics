@@ -50,7 +50,7 @@ c_ Ui_Window(object):
         ?C...QMetaObject.connectSlotsByName(Window)
 
     ___ retranslateUi  Window):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Window.sWT..(_translate("Window", "Web Element DOM Traversal"))
         dockWidget.sWT..(_translate("Window", "Document Structure"))
 

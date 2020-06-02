@@ -46,14 +46,14 @@
 ______ ___
 
 ____ ?.?C.. ______ (QCommandLineOption, QCommandLineParser,
-        QCoreApplication, ?D.., QT_VERSION_STR)
+         ?CA.., ?D.., QT_VERSION_STR)
 ____ ?.?W.. ______ (?A.., QFileIconProvider, QFileSystemModel,
         QTreeView)
 
 
 app _ ?A..(___.a..
 
-QCoreApplication.setApplicationVersion(QT_VERSION_STR)
+ ?CA...setApplicationVersion(QT_VERSION_STR)
 parser _ QCommandLineParser()
 parser.setApplicationDescription("Qt Dir View Example")
 parser.addHelpOption()

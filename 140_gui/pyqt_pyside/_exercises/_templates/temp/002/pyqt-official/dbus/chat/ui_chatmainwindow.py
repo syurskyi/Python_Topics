@@ -83,7 +83,7 @@ c_ Ui_ChatMainWindow(object):
         ChatMainWindow.setTabOrder(messageLineEdit, sendButton)
 
     ___ retranslateUi  ChatMainWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         ChatMainWindow.sWT..(_translate("ChatMainWindow", "Qt D-Bus Chat"))
         chatHistory.sTT..(_translate("ChatMainWindow", "Messages sent and received from other users"))
         label.sT..(_translate("ChatMainWindow", "Message:"))

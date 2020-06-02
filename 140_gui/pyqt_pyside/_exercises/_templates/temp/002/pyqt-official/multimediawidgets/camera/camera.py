@@ -123,7 +123,7 @@ c_ VideoSettings(QDialog):
         ui.setupUi
 
         ui.audioCodecBox.aI..("Default audio codec", "")
-        ___ codecName __ mediaRecorder.supportedAudioCodecs
+        ___ codecName __ mediaRecorder.sAC..
             description _ mediaRecorder.audioCodecDescription(codecName)
             ui.audioCodecBox.aI..(codecName + ": " + description,
                     codecName)
@@ -135,7 +135,7 @@ c_ VideoSettings(QDialog):
         ui.audioQualitySlider.setRange(0, QMultimedia.VeryHighQuality)
 
         ui.videoCodecBox.aI..("Default video codec", "")
-        ___ codecName __ mediaRecorder.supportedVideoCodecs
+        ___ codecName __ mediaRecorder.sVC..
             description _ mediaRecorder.videoCodecDescription(codecName)
             ui.videoCodecBox.aI..(codecName + ": " + description,
                     codecName)

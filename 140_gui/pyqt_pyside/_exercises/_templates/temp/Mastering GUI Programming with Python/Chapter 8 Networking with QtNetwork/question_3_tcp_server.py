@@ -24,6 +24,6 @@ c_ Server(qtn.QTcpServer):
             cx.disconnectFromHost()
 
 __ ______ __ ______
-    app _ qtc.QCoreApplication(___.a..
+    app _ qtc. ?CA..(___.a..
     server _ Server()
     ___.e.. ?.e..

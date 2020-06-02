@@ -161,7 +161,7 @@ c_ Ui_Camera(object):
         ?C...QMetaObject.connectSlotsByName(Camera)
 
     ___ retranslateUi  Camera):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Camera.sWT..(_translate("Camera", "Camera"))
         lockButton.sT..(_translate("Camera", "Focus"))
         takeImageButton.sT..(_translate("Camera", "Capture Photo"))

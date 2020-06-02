@@ -51,7 +51,7 @@ c_ Ui_embeddedDialog(object):
         ?C...QMetaObject.connectSlotsByName(embeddedDialog)
 
     ___ retranslateUi  embeddedDialog):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         embeddedDialog.sWT..(_translate("embeddedDialog", "Embedded Dialog"))
         label.sT..(_translate("embeddedDialog", "Layout Direction:"))
         layoutDirection.setItemText(0, _translate("embeddedDialog", "Left to Right"))

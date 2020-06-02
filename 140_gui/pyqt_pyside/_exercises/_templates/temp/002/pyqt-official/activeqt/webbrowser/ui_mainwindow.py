@@ -118,7 +118,7 @@ c_ Ui_MainWindow(object):
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "Qt WebBrowser"))
         tbNavigate.sWT..(_translate("MainWindow", "Navigation"))
         tbAddress.sWT..(_translate("MainWindow", "Address"))

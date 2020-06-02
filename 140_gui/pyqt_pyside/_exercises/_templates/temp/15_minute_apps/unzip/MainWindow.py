@@ -167,7 +167,7 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
+        _translate = QtCore. ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "7Pez"))
         progress_1.setText(_translate("MainWindow", "7PEZ"))
         progress_2.setText(_translate("MainWindow", "7PEZ"))

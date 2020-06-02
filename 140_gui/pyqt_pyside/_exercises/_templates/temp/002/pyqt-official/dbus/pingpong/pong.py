@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtSlot, QCoreApplication, QMetaObject, ?O..
+____ ?.?C.. ______ pyqtSlot,  ?CA.., QMetaObject, ?O..
 ____ ?.QtDBus ______ QDBusConnection
 
 
@@ -52,13 +52,13 @@ c_ Pong(?O..):
 
     @pyqtSlot(str, result_str)
     ___ ping  arg):
-        QMetaObject.invokeMethod(QCoreApplication.instance(), 'quit')
+        QMetaObject.invokeMethod( ?CA...instance(), 'quit')
 
         r_ "ping(\"%s\") got called" % arg
 
 
 __ ______ __ ______
-    app _ QCoreApplication(___.a..
+    app _  ?CA..(___.a..
 
     __ no. QDBusConnection.sessionBus().isConnected
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"

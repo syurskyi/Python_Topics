@@ -102,7 +102,7 @@ c_ Ui_VideoSettingsUi(object):
         ?C...QMetaObject.connectSlotsByName(VideoSettingsUi)
 
     ___ retranslateUi  VideoSettingsUi):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         VideoSettingsUi.sWT..(_translate("VideoSettingsUi", "Dialog"))
         groupBox.setTitle(_translate("VideoSettingsUi", "Audio"))
         label_2.sT..(_translate("VideoSettingsUi", "Audio Codec:"))

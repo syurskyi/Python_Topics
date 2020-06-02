@@ -45,7 +45,7 @@
 ______ ___
 ______ random
 
-____ ?.?C.. ______ QCoreApplication, QSemaphore, QThread
+____ ?.?C.. ______  ?CA.., QSemaphore, QThread
 
 
 DataSize _ 100000
@@ -75,7 +75,7 @@ c_ Consumer(QThread):
 
 
 __ ______ __ ______
-    app _ QCoreApplication(___.a..
+    app _  ?CA..(___.a..
     producer _ Producer()
     consumer _ Consumer()
     producer.start()

@@ -69,7 +69,7 @@ c_ Ui_MainWindow(object):
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "My Calendar App"))
         label.sT..(_translate("MainWindow", "Events on Date"))
         groupBox.setTitle(_translate("MainWindow", "Event"))

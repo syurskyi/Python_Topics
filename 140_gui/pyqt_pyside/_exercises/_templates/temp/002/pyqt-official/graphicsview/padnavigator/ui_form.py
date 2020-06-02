@@ -83,7 +83,7 @@ c_ Ui_Form(object):
         Form.setTabOrder(groupBox_2, treeWidget)
 
     ___ retranslateUi  Form):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Form.sWT..(_translate("Form", "BackSide"))
         groupBox.setTitle(_translate("Form", "Settings"))
         label.sT..(_translate("Form", "Title:"))

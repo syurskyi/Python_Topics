@@ -711,7 +711,7 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
+        _translate = QtCore. ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "Piecasso"))
         menuFIle.setTitle(_translate("MainWindow", "FIle"))
         menuEdit.setTitle(_translate("MainWindow", "Edit"))

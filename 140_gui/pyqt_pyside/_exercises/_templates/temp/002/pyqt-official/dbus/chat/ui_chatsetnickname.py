@@ -60,7 +60,7 @@ c_ Ui_NicknameDialog(object):
         ?C...QMetaObject.connectSlotsByName(NicknameDialog)
 
     ___ retranslateUi  NicknameDialog):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         NicknameDialog.sWT..(_translate("NicknameDialog", "Set nickname"))
         label.sT..(_translate("NicknameDialog", "New nickname:"))
         okButton.sT..(_translate("NicknameDialog", "OK"))

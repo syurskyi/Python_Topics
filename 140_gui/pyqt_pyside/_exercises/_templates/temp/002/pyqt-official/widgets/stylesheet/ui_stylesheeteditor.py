@@ -76,7 +76,7 @@ c_ Ui_StyleSheetEditor(object):
         ?C...QMetaObject.connectSlotsByName(StyleSheetEditor)
 
     ___ retranslateUi  StyleSheetEditor):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         StyleSheetEditor.sWT..(_translate("StyleSheetEditor", "Style Editor"))
         styleSheetCombo.setItemText(0, _translate("StyleSheetEditor", "Default"))
         styleSheetCombo.setItemText(1, _translate("StyleSheetEditor", "Coffee"))

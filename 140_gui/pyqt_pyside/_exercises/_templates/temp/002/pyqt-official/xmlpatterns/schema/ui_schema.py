@@ -53,7 +53,7 @@ c_ Ui_SchemaMainWindow(object):
         ?C...QMetaObject.connectSlotsByName(SchemaMainWindow)
 
     ___ retranslateUi  SchemaMainWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         SchemaMainWindow.sWT..(_translate("SchemaMainWindow", "XML Schema Validation"))
         schemaLabel.sT..(_translate("SchemaMainWindow", "XML Schema Document:"))
         instanceLabel.sT..(_translate("SchemaMainWindow", "XML Instance Document:"))

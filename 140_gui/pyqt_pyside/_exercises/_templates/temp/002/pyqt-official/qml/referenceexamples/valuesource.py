@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, Q_CLASSINFO,
-        QCoreApplication, QDate, ?O.., ?T.., QTimer, ?U..)
+         ?CA.., QDate, ?O.., ?T.., QTimer, ?U..)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty, QQmlProperty,
@@ -275,10 +275,10 @@ c_ HappyBirthdaySong(?O.., QQmlPropertyValueSource):
         __ _line < le.(_lyrics):
             _target.w..(_lyrics[_line])
         ____
-            QCoreApplication.instance().quit()
+             ?CA...instance().quit()
 
 
-app _ QCoreApplication(___.a..
+app _  ?CA..(___.a..
 
 qmlRegisterType(BirthdayPartyAttached)
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty",

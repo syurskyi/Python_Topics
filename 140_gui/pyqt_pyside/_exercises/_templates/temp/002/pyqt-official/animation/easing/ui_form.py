@@ -124,7 +124,7 @@ c_ Ui_Form(object):
         ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi  Form):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Form.sWT..(_translate("Form", "Easing curves"))
         groupBox_2.setTitle(_translate("Form", "Path type"))
         lineRadio.sT..(_translate("Form", "Line"))

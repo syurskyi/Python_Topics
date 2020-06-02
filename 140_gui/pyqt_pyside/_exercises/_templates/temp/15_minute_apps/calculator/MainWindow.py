@@ -270,7 +270,7 @@ c_ Ui_MainWindow(object):
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "Calculon"))
         pushButton_n4.sT..(_translate("MainWindow", "4"))
         pushButton_n4.sS..(_translate("MainWindow", "4"))

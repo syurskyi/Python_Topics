@@ -38,7 +38,7 @@ c_ Ui_Controller(object):
         ?C...QMetaObject.connectSlotsByName(Controller)
 
     ___ retranslateUi  Controller):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Controller.sWT..(_translate("Controller", "Controller"))
         label.sT..(_translate("Controller", "Controller"))
         decelerate.sT..(_translate("Controller", "Decelerate"))

@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ QCoreApplication
+____ ?.?C.. ______  ?CA..
 ____ ?.QtDBus ______ QDBusConnection, QDBusInterface
 
 
@@ -83,7 +83,7 @@ ___ method3
 
 
 __ ______ __ ______
-    app _ QCoreApplication(___.a..
+    app _  ?CA..(___.a..
 
     __ no. QDBusConnection.sessionBus().isConnected
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"

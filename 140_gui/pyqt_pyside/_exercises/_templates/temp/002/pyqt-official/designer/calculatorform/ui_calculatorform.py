@@ -83,7 +83,7 @@ c_ Ui_CalculatorForm(object):
         ?C...QMetaObject.connectSlotsByName(CalculatorForm)
 
     ___ retranslateUi  CalculatorForm):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         CalculatorForm.sWT..(_translate("CalculatorForm", "Calculator Form"))
         label_3_2.sT..(_translate("CalculatorForm", "="))
         label_2_2_2.sT..(_translate("CalculatorForm", "Output"))

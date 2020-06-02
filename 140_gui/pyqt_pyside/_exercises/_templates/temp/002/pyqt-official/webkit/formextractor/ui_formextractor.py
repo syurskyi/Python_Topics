@@ -75,7 +75,7 @@ c_ Ui_Form(object):
         ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi  Form):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Form.sWT..(_translate("Form", "Form"))
         webFormGroupBox.setTitle(_translate("Form", "Web Form"))
         dataGroupBox.setTitle(_translate("Form", "Extracted Data"))

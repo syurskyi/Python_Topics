@@ -31,7 +31,7 @@ c_ Ui_Dialog(object):
         ?C...QMetaObject.connectSlotsByName(Dialog)
 
     ___ retranslateUi  Dialog):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Dialog.sWT..(_translate("Dialog", "Dialog"))
         loadFromFileButton.sT..(_translate("Dialog", "Load Image From File..."))
         label.sT..(_translate("Dialog", "Launch two of these dialogs.  In the first, press the top button and load an image from a file.  In the second, press the bottom button and display the loaded image from shared memory."))

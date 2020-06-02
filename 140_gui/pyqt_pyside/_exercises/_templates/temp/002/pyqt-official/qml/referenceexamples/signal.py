@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., Q_CLASSINFO,
-        QCoreApplication, QDate, ?O.., ?T.., ?U..)
+         ?CA.., QDate, ?O.., ?T.., ?U..)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty)
@@ -198,7 +198,7 @@ c_ BirthdayParty(?O..):
         partyStarted.e..(?T...currentTime())
 
 
-app _ QCoreApplication(___.a..
+app _  ?CA..(___.a..
 
 qmlRegisterType(BirthdayPartyAttached)
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty",

@@ -66,7 +66,7 @@ c_ Ui_MainWindow(object):
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "Editable Tree Model"))
         fileMenu.setTitle(_translate("MainWindow", "&File"))
         actionsMenu.setTitle(_translate("MainWindow", "&Actions"))

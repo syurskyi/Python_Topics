@@ -53,7 +53,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pS.., pyqtSlot, QCoreApplication, ?O.., ?U..
+____ ?.?C.. ______ pS.., pyqtSlot,  ?CA.., ?O.., ?U..
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
 
 
@@ -93,7 +93,7 @@ c_ DynamicClient(?O..):
 
 __ ______ __ ______
 
-    app _ QCoreApplication(___.a..
+    app _  ?CA..(___.a..
 
     # Create the remote object node.
     repNode _ QRemoteObjectNode()

@@ -52,7 +52,7 @@ c_ Ui_Form(object):
         ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi  Form):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         Form.sWT..(_translate("Form", "Form"))
         editorBox.setTitle(_translate("Form", "HTML Editor"))
         clearButton.sT..(_translate("Form", "Clear"))

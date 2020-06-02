@@ -53,7 +53,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QCoreApplication,
+____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot,  ?CA..,
         ?O.., QTimer, ?U..)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 
@@ -116,7 +116,7 @@ c_ SimpleSwitch(?O..):
 
 __ ______ __ ______
 
-    app _ QCoreApplication(___.a..
+    app _  ?CA..(___.a..
 
     # Create the simple switch.
     srcSwitch _ SimpleSwitch()

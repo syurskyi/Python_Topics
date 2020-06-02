@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtProperty, QCoreApplication, ?O.., ?U..
+____ ?.?C.. ______ pyqtProperty,  ?CA.., ?O.., ?U..
 ____ ?.QtQml ______ qmlRegisterType, QQmlComponent, QQmlEngine
 
 
@@ -82,7 +82,7 @@ c_ Person(?O..):
         _shoeSize _ shoeSize
 
 
-app _ QCoreApplication(___.a..
+app _  ?CA..(___.a..
 
 qmlRegisterType(Person, "People", 1, 0, "Person")
 

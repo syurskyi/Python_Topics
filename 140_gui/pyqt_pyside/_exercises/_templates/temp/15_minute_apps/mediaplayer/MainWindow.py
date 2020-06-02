@@ -132,7 +132,7 @@ c_ Ui_MainWindow(object):
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ ?C...QCoreApplication.translate
+        _translate _ ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "Failamp"))
         currentTimeLabel.sT..(_translate("MainWindow", "0:00"))
         totalTimeLabel.sT..(_translate("MainWindow", "0:00"))

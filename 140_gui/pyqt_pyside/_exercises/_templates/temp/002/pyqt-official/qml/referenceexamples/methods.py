@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSlot, QCoreApplication, ?O..,
+____ ?.?C.. ______ (pyqtProperty, pyqtSlot,  ?CA.., ?O..,
         ?U..)
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
         QQmlListProperty)
@@ -121,7 +121,7 @@ c_ BirthdayParty(?O..):
         _guests.ap..(person)
 
 
-app _ QCoreApplication(___.a..
+app _  ?CA..(___.a..
 
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty")
 qmlRegisterType(Person, "People", 1, 0, "Person")
