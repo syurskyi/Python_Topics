@@ -715,9 +715,9 @@ class MainWindow(?MW.., Ui_MainWindow):
         actionCopy.triggered.connect(copy_to_clipboard)
 
         # Initialize animation timer.
-        timer = QTimer()
+        timer = ?T..()
         timer.timeout.connect(canvas.on_timer)
-        timer.setInterval(100)
+        timer.sI..(100)
         timer.start()
 
         # Setup to agree with Canvas.

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., QEasingCurve, ?O..,
         QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
-        QState, QStateMachine, __, QTimer)
+        QState, QStateMachine, __, ?T..)
 ____ ?.?G.. ______ (?B.., QLinearGradient, QPainter, QPainterPath,
         ?P..)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsPixmapItem,

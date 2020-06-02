@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPropertyAnimation, QTimer
+____ ?.?C.. ______ QPropertyAnimation, ?T..
 
 ____ colors ______ Colors
 
@@ -99,7 +99,7 @@ c_ DemoItemAnimation(QPropertyAnimation):
 
         __ no. Colors.noAnimations or force:
             __ _startDelay:
-                QTimer.singleShot(_startDelay, start)
+                ?T...sS..(_startDelay, start)
             ____
                 start()
 

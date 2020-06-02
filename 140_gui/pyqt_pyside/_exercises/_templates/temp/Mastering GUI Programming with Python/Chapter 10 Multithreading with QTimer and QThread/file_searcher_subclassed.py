@@ -4,35 +4,35 @@ ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
 
-c_ SlowSearcherThread(qtc.QThread):
+c_ SlowSearcherThread(?.QThread
     """A somewhat deliberately slow searcher."""
 
-    match_found _ qtc.pS.. st.
-    directory_changed _ qtc.pS.. st.
-    finished _ qtc.pS..()
+    match_found _ ?.pS.. st.
+    directory_changed _ ?.pS.. st.
+    finished _ ?.pS..()
 
     ___  -  
         s_. - ()
         term _ N..
 
-    @qtc.pyqtSlot st.
+    @?.pyqtSlot st.
     ___ set_term  term):
         term _ term
 
     ??.?
     ___ run 
         #print(f'Beginning search for: {self.term}')
-        root _ qtc.?D...rootPath()
+        root _ ?.?D...rootPath()
         _search(term, root)
         finished.e..()
 
     ___ _search  term, pa__):
         directory_changed.e..(pa__)
-        directory _ qtc.?D..(pa__)
+        directory _ ?.?D..(pa__)
         directory.setFilter(
             directory.f.. |
-            qtc.?D...NDADD.. |
-            qtc.?D...NSL..
+            ?.?D...NDADD.. |
+            ?.?D...NSL..
         )
         ___ entry __ directory.eIL..
             __ term __ entry.fP..
@@ -44,8 +44,8 @@ c_ SlowSearcherThread(qtc.QThread):
 
 c_ SearchForm ?.?W..
 
-    tC.. _ qtc.pS.. st.
-    rP__ _ qtc.pS..()
+    tC.. _ ?.pS.. st.
+    rP__ _ ?.pS..()
 
     ___  -  
         s_. - ()

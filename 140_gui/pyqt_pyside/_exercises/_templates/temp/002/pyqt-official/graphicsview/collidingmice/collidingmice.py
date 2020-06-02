@@ -45,7 +45,7 @@
 ______ math
 
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, __,
-        ?T.., QTimer)
+        ?T.., ?T..)
 ____ ?.?G.. ______ (?B.., ?C.., QPainter, QPainterPath, ?P..,
         QPolygonF)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,

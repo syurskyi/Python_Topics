@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPoint, ?S.., __, ?T.., QTimer
+____ ?.?C.. ______ QPoint, ?S.., __, ?T.., ?T..
 ____ ?.?G.. ______ ?C.., QPainter, QPolygon, QRegion
 ____ ?.?W.. ______ ?A.., ?A.., ?W..
 
@@ -67,7 +67,7 @@ c_ ShapedClock(?W..):
         super(ShapedClock, self). - (parent,
                 __.FramelessWindowHint | __.WindowSystemMenuHint)
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(update)
         timer.start(1000)
 

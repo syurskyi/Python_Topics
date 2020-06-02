@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (QByteArray, QDate, ?DT__, QEvent, QPoint, QRect,
-        QRegExp, QSettings, ?S.., __, ?T.., QTimer)
+        QRegExp, QSettings, ?S.., __, ?T.., ?T..)
 ____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
@@ -358,7 +358,7 @@ c_ SettingsTree(QTreeWidget):
 
         settings _ N..
         refreshTimer _ ?T..
-        refreshTimer.setInterval(2000)
+        refreshTimer.sI..(2000)
         autoRefresh _ F..
 
         groupIcon _ QIcon()

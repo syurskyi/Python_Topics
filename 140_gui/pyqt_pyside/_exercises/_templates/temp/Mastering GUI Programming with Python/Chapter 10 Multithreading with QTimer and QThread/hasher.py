@@ -9,25 +9,25 @@ c_ HashForm ?.?W..
 
     ___  - 
         s_. - ()
-        sL..(qtw.QFormLayout())
-        source_path _ qtw.?PB..(
+        sL..(?.QFormLayout())
+        source_path _ ?.?PB..(
             'Click to select…', c___self.on_source_click)
         la__ .aR..('Source Path', source_path)
-        destination_file _ qtw.?PB..(
+        destination_file _ ?.?PB..(
             'Click to select…', c___self.on_dest_click)
         la__ .aR..('Destination File', destination_file)
-        threads _ qtw.SB..(minimum_1, maximum_7, value_2)
+        threads _ ?.SB..(minimum_1, maximum_7, value_2)
         la__ .aR..('Threads', threads)
-        submit _ qtw.?PB..('Go', c___self.on_submit)
+        submit _ ?.?PB..('Go', c___self.on_submit)
         la__ .aR..(submit)
 
     ___ on_source_click
-        dirname _ qtw.?FD...getExistingDirectory()
+        dirname _ ?.?FD...getExistingDirectory()
         __ dirname:
             source_path.sT..(dirname)
 
     ___ on_dest_click
-        filename, _ _ qtw.?FD...getSaveFileName()
+        filename, _ _ ?.?FD...getSaveFileName()
         __ filename:
             destination_file.sT..(filename)
 
@@ -95,7 +95,7 @@ c_ HashManager(qtc.?O..):
         finished.e..()
 
 
-c_ MainWindow(qtw.?MW..):
+c_ MainWindow(?.?MW..):
 
     ___  - 
         """MainWindow constructor.
@@ -126,7 +126,7 @@ c_ MainWindow(qtw.?MW..):
 
 
 __ ______ __ ______
-    app _ qtw.?A..(___.a..
+    app _ ?.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

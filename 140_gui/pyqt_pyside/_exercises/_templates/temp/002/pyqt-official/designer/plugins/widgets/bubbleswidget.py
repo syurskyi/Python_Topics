@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ______ random
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPointF, QRectF,
-        ?S.., QSizeF, __, QTimer)
+        ?S.., QSizeF, __, ?T..)
 ____ ?.?G.. ______ ?B.., ?C.., QPainter, QPen, QRadialGradient
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -123,7 +123,7 @@ c_ BubblesWidget(BaseClass):
 
         random.seed()
 
-        animation_timer _ QTimer
+        animation_timer _ ?T..
         animation_timer.setSingleShot F..
         animation_timer.timeout.c..(animate)
         animation_timer.start(25)

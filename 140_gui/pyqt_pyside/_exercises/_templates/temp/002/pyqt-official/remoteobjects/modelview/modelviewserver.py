@@ -54,7 +54,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, ?O.., __,
-        QTimer, ?U..)
+        ?T.., ?U..)
 ____ ?.?G.. ______ ?C.., QStandardItem, QStandardItemModel
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 ____ ?.?W.. ______ ?A.., QTreeView
@@ -160,10 +160,10 @@ __ ______ __ ______
     view.s..
 
     handler _ TimerHandler(sourceModel)
-    QTimer.singleShot(5000, handler.changeData)
-    QTimer.singleShot(10000, handler.insertData)
-    QTimer.singleShot(11000, handler.changeFlags)
-    QTimer.singleShot(12000, handler.removeData)
-    QTimer.singleShot(13000, handler.moveData)
+    ?T...sS..(5000, handler.changeData)
+    ?T...sS..(10000, handler.insertData)
+    ?T...sS..(11000, handler.changeFlags)
+    ?T...sS..(12000, handler.removeData)
+    ?T...sS..(13000, handler.moveData)
 
     ___.e.. ?.e..

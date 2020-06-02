@@ -449,8 +449,8 @@ class MainWindow(?MW..):
         view.setScene(scene)
 
         # Timer for the win animation only.
-        timer = QTimer()
-        timer.setInterval(5)
+        timer = ?T..()
+        timer.sI..(5)
         timer.timeout.connect(win_animation)
 
         animation_event_cover = AnimationCover()

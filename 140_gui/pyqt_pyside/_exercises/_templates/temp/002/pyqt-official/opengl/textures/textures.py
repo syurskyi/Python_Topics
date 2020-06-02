@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pS.., QFileInfo, QPoint, ?S.., __, QTimer
+____ ?.?C.. ______ pS.., QFileInfo, QPoint, ?S.., __, ?T..
 ____ ?.?G.. ______ (?C.., QImage, QMatrix4x4, QOpenGLShader,
         QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
         QSurfaceFormat)
@@ -245,7 +245,7 @@ c_ Window(?W..):
 
         currentGlWidget _ glWidgets[0][0]
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(rotateOneStep)
         timer.start(20)
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPoint, __, ?T.., QTimer
+____ ?.?C.. ______ QPoint, __, ?T.., ?T..
 ____ ?.?G.. ______ ?C.., QPainter, QPolygon
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -66,7 +66,7 @@ c_ AnalogClock(?W..):
     ___  -   parent_None):
         super(AnalogClock, self). - (parent)
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(update)
         timer.start(1000)
 

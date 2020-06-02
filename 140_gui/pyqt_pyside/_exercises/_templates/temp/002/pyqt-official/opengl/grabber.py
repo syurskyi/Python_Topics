@@ -45,7 +45,7 @@
 ______ ___
 ______ math
 
-____ ?.?C.. ______ pS.., ?S.., __, QTimer
+____ ?.?C.. ______ pS.., ?S.., __, ?T..
 ____ ?.?G.. ______ QOpenGLVersionProfile, ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
         QLineEdit, ?MW.., ?MB.., QOpenGLWidget, QScrollArea,
@@ -68,7 +68,7 @@ c_ GLWidget(QOpenGLWidget):
         zRot _ 0
         gear1Rot _ 0
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(advanceGears)
         timer.start(20)
 

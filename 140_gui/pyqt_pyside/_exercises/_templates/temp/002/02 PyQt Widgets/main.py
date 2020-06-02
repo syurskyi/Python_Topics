@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ ?DT__, __, QTimer
+____ ?.?C.. ______ ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
@@ -228,7 +228,7 @@ c_ WidgetGallery(QDialog):
         progressBar.setRange(0, 10000)
         progressBar.setValue(0)
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(advanceProgressBar)
         timer.start(1000)
 

@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QFileInfo, QPoint, QRect, qRound, __, ?T.., QTimer
+____ ?.?C.. ______ QFileInfo, QPoint, QRect, qRound, __, ?T.., ?T..
 ____ ?.?G.. ______ (QFontMetricsF, QImage, QPainter, ?P.., QPolygon,
         QRegion)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsScene,
@@ -59,7 +59,7 @@ c_ MainWindow(QGraphicsView):
 
         imagesDir _ QFileInfo(__file__).absolutePath() + '/images'
 
-        updateTimer _ QTimer
+        updateTimer _ ?T..
         demoStartTime _ ?T..()
         fpsTime _ ?T..()
         background _ ?P..()

@@ -97,7 +97,7 @@ c_ MainWindow(qtw.?MW..):
         sensor.read_time.c..(show_time)
 
         # Connect sensor controls
-        timer _ qtc.QTimer(interval_(60000))
+        timer _ qtc.?T..(interval_(60000))
         timer.timeout.c..(sensor.take_reading)
         timer.start()
 

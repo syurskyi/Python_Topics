@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QRect, QRectF, ?S.., __, QTimer
+____ ?.?C.. ______ QRect, QRectF, ?S.., __, ?T..
 ____ ?.?G.. ______ ?C.., QPainter, ?P.., QPen
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QSizePolicy, ?W..)
@@ -111,7 +111,7 @@ c_ Window(?W..):
         layout.aW..(intLabel, 1, 0)
         layout.aW..(floatLabel, 2, 0)
 
-        timer _ QTimer
+        timer _ ?T..
 
         ___ i __ ra..(2):
             ___ j __ ra..(2):

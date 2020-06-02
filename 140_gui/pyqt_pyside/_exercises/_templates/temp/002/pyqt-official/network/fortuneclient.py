@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ ?DS.., QSettings, QTimer
+____ ?.?C.. ______ ?DS.., QSettings, ?T..
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., ?CB, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MB..,
@@ -167,7 +167,7 @@ c_ Client(QDialog):
 
         nextFortune _ instr.readQString()
         __ nextFortune __ currentFortune:
-            QTimer.singleShot(0, requestNewFortune)
+            ?T...sS..(0, requestNewFortune)
             r_
 
         currentFortune _ nextFortune

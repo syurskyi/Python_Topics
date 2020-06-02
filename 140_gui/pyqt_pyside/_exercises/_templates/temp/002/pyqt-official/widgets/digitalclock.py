@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ ?T.., QTimer
+____ ?.?C.. ______ ?T.., ?T..
 ____ ?.?W.. ______ ?A.., QLCDNumber
 
 
@@ -52,7 +52,7 @@ c_ DigitalClock(QLCDNumber):
 
         setSegmentStyle(QLCDNumber.Filled)
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(showTime)
         timer.start(1000)
 

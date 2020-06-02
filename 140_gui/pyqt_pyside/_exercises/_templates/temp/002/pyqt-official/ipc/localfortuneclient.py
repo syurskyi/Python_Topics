@@ -44,7 +44,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ ?DS.., QTimer
+____ ?.?C.. ______ ?DS.., ?T..
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QGridLayout, QLabel, QLineEdit, ?MB.., ?PB..)
 ____ ?.?N.. ______ QLocalSocket
@@ -112,7 +112,7 @@ c_ Client(QDialog):
 
         nextFortune _ ins.readQString()
         __ nextFortune __ currentFortune:
-            QTimer.singleShot(0, requestNewFortune)
+            ?T...sS..(0, requestNewFortune)
             r_
  
         currentFortune _ nextFortune

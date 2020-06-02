@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPoint, ?S..,
-        __, ?T.., QTimer)
+        __, ?T.., ?T..)
 ____ ?.?G.. ______ ?B.., ?C.., QPainter, QPen, QPolygon
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -68,7 +68,7 @@ c_ PyAnalogClock(?W..):
 
         timeZoneOffset _ 0
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(update)
         timer.timeout.c..(updateTime)
         timer.start(1000)

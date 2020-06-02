@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, Q_CLASSINFO,
-         ?CA.., QDate, ?O.., ?T.., QTimer, ?U..)
+         ?CA.., QDate, ?O.., ?T.., ?T.., ?U..)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty, QQmlProperty,
@@ -242,7 +242,7 @@ c_ HappyBirthdaySong(?O.., QQmlPropertyValueSource):
         _target _ QQmlProperty()
         _name _ ''
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(advance)
         timer.start(1000)
 

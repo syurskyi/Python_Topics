@@ -130,7 +130,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         head.mousePressEvent = types.MethodType(patch_mousePressEvent, head)
         head.paintEvent = types.MethodType(patch_paintEvent, head)
 
-        timer = QTimer()
+        timer = ?T..()
         timer.timeout.connect(timer_triggered)
         timer.start(5)
 

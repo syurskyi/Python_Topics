@@ -44,7 +44,7 @@
 
 ______ math
 
-____ ?.?C.. ______ QPointF, __, QTimer
+____ ?.?C.. ______ QPointF, __, ?T..
 ____ ?.?G.. ______ (?B.., ?C.., QLinearGradient, QPen, QPainter,
         ?P.., QRadialGradient)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
@@ -64,9 +64,9 @@ c_ Lighting(QGraphicsView):
 
         setupScene()
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(animate)
-        timer.setInterval(30)
+        timer.sI..(30)
         timer.start()
 
         setRenderHint(QPainter.Antialiasing)

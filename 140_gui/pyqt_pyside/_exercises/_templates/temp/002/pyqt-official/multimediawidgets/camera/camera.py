@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QByteArray, qFuzzyCompare, __, QTimer
+____ ?.?C.. ______ QByteArray, qFuzzyCompare, __, ?T..
 ____ ?.?G.. ______ ?P.., ?P..
 ____ ?.?M.. ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
@@ -347,7 +347,7 @@ c_ Camera ?MW..
         ui.lastImagePreviewLabel.setPixmap(?P...fromImage(scaledImage))
 
         displayCapturedImage()
-        QTimer.singleShot(4000, displayViewfinder)
+        ?T...sS..(4000, displayViewfinder)
 
     ___ configureCaptureSettings
         __ camera.captureMode() __ QCamera.CaptureStillImage:

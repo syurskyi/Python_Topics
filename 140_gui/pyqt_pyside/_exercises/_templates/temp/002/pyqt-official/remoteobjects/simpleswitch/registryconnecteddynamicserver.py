@@ -54,7 +54,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot,  ?CA..,
-        ?O.., QTimer, ?U..)
+        ?O.., ?T.., ?U..)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 
 
@@ -65,7 +65,7 @@ c_ SimpleSwitch(?O..):
 
         _currState _ F..
 
-        _stateChangeTimer _ QTimer
+        _stateChangeTimer _ ?T..
         _stateChangeTimer.timeout.c..(_timeout)
         _stateChangeTimer.start(2000)
 

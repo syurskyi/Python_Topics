@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ ?D.., __, QTimer
+____ ?.?C.. ______ ?D.., __, ?T..
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, SB..,
@@ -85,7 +85,7 @@ c_ Screenshot(?W..):
             hide()
         newScreenshotButton.sD..( st.
 
-        QTimer.singleShot(delaySpinBox.value() * 1000,
+        ?T...sS..(delaySpinBox.value() * 1000,
                 shootScreen)
 
     ___ saveScreenshot

@@ -15,7 +15,7 @@ c_ Window(?W...?MW..):
         sCW..(equalizer)
 
         _timer _ ?C...?T..
-        _timer.setInterval(100)
+        _timer.sI..(100)
         _timer.timeout.c..(update_values)
         _timer.start()
 

@@ -85,7 +85,7 @@ c_ CPUUsageView(qtch.QChartView):
         setRenderHint(qtg.QPainter.Antialiasing)
 
         # configure timer
-        timer _ qtc.QTimer(
+        timer _ qtc.?T..(
             interval_200, timeout_self.refresh_stats)
         timer.start()
 
@@ -153,7 +153,7 @@ c_ MemoryChartView(qtch.QChartView):
         chart.setAxisY(y_axis, series)
 
         # Start refresh timer
-        timer _ qtc.QTimer(
+        timer _ qtc.?T..(
             interval_1000, timeout_self.refresh_stats)
         timer.start()
 

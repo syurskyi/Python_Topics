@@ -118,7 +118,7 @@ c_ MainWindow(qtw.?MW..):
         sCW..(graph)
 
         timer _ qtc.?T..
-        timer.setInterval(1000)
+        timer.sI..(1000)
         timer.timeout.c..(update_graph)
         timer.start()
 

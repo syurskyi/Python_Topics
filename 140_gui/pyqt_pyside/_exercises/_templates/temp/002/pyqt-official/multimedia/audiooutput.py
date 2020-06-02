@@ -45,7 +45,7 @@
 ____ math ______ pi, sin
 ____ struct ______ pack
 
-____ ?.?C.. ______ QByteArray, QIODevice, __, QTimer, qWarning
+____ ?.?C.. ______ QByteArray, QIODevice, __, ?T.., qWarning
 ____ ?.?M.. ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
 ____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
@@ -182,7 +182,7 @@ c_ AudioTest ?MW..
         sCW..(window)
 
     ___ initializeAudio
-        m_pullTimer _ QTimer  timeout_self.pullTimerExpired)
+        m_pullTimer _ ?T..  timeout_self.pullTimerExpired)
         m_pullMode _ T..
 
         m_format _ QAudioFormat()

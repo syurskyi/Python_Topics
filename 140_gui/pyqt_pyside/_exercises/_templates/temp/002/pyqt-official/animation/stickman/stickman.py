@@ -47,7 +47,7 @@ ______ math
 ____ ?.?C.. ______ (pyqtProperty, pS.., ?DS.., ?DT__,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
-        QState, QStateMachine, __, QTimer)
+        QState, QStateMachine, __, ?T..)
 ____ ?.?G.. ______ ?C.., QPen, QPainter, QPainterPath, ?P..
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView)
@@ -530,9 +530,9 @@ c_ LifeCycle(object):
         lightningBlink.assignProperty(m_stickMan, 'fillColor', __.white)
         lightningBlink.assignProperty(m_stickMan, 'isDead',  st.
 
-        timer _ QTimer(lightningBlink)
+        timer _ ?T..(lightningBlink)
         timer.setSingleShot( st.
-        timer.setInterval(100)
+        timer.sI..(100)
         lightningBlink.entered.c..(timer.start)
         lightningBlink.exited.c..(timer.stop)
 

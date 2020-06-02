@@ -46,7 +46,7 @@ ______ ___
 ______ math, random
 
 ____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, ?S.., __, ?T..,
-        QTimer)
+        ?T..)
 ____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
 ____ ?.?W.. ______ ?A.., QOpenGLWidget

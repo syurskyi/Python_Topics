@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QAbstractTransition, QEasingCurve, QEvent,
         QParallelAnimationGroup, QPropertyAnimation, qrand, QRect,
         QSequentialAnimationGroup, qsrand, QState, QStateMachine, __, ?T..,
-        QTimer)
+        ?T..)
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
@@ -150,7 +150,7 @@ __ ______ __ ______
 
     group _ QState()
     timer _ ?T..
-    timer.setInterval(1250)
+    timer.sI..(1250)
     timer.setSingleShot( st.
     group.entered.c..(timer.start)
 

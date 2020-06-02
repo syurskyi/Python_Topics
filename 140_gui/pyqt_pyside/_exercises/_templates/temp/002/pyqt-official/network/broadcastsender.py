@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QTimer
+____ ?.?C.. ______ ?T..
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
         ?PB.., QVBoxLayout)
 ____ ?.?N.. ______ ?HA.., QUdpSocket
@@ -61,7 +61,7 @@ c_ Sender(QDialog):
         buttonBox.addButton(startButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        timer _ QTimer
+        timer _ ?T..
         udpSocket _ QUdpSocket
         messageNo _ 1
 

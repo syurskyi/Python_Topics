@@ -108,7 +108,7 @@ c_ EqualizerBar(?W...?W..):
 
         __ ms:
             _timer _ ?C...?T..
-            _timer.setInterval(ms)
+            _timer.sI..(ms)
             _timer.timeout.c..(_decay_beat)
             _timer.start()
 

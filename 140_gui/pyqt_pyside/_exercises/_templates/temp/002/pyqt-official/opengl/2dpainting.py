@@ -45,7 +45,7 @@
 ______ ___
 ______ math
 
-____ ?.?C.. ______ QPointF, QRect, QRectF, __, QTimer
+____ ?.?C.. ______ QPointF, QRect, QRectF, __, ?T..
 ____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
@@ -153,7 +153,7 @@ c_ Window(?W..):
         layout.aW..(openGLLabel, 1, 1)
         sL..(layout)
 
-        timer _ QTimer
+        timer _ ?T..
         timer.timeout.c..(native.animate)
         timer.timeout.c..(openGL.animate)
         timer.start(50)
