@@ -306,7 +306,7 @@ c_ Dialog(QDialog):
             warningLabel.sT..("Continue")
 
     ___ errorMessage 
-        errorMessageDialog.showMessage("This dialog shows and remembers "
+        errorMessageDialog.sM..("This dialog shows and remembers "
                 "error messages. If the checkbox is checked (as it is by "
                 "default), the shown message will be shown again, but if the "
                 "user unchecks the box the message will not appear again if "

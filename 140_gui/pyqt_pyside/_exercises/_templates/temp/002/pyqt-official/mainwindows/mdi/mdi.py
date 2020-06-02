@@ -202,18 +202,18 @@ c_ MainWindow ?MW..
 
             child _ createMdiChild()
             __ child.loadFile(fileName):
-                statusBar().showMessage("File loaded", 2000)
+                sB.. .sM..("File loaded", 2000)
                 child.s..
             ____
                 child.c..
 
     ___ save
         __ activeMdiChild() and activeMdiChild().save
-            statusBar().showMessage("File saved", 2000)
+            sB.. .sM..("File saved", 2000)
 
     ___ saveAs
         __ activeMdiChild() and activeMdiChild().saveAs
-            statusBar().showMessage("File saved", 2000)
+            sB.. .sM..("File saved", 2000)
 
     ___ cut
         __ activeMdiChild
@@ -397,7 +397,7 @@ c_ MainWindow ?MW..
         editToolBar.aA..(pasteAct)
 
     ___ createStatusBar
-        statusBar().showMessage("Ready")
+        sB.. .sM..("Ready")
 
     ___ readSettings
         settings _ QSettings('Trolltech', 'MDI Example')

@@ -338,7 +338,7 @@ c_ Camera ?MW..
 
     ___ updateRecordTime
         msg _ "Recorded %d sec" % (mediaRecorder.duration() // 1000)
-        ui.statusbar.showMessage(msg)
+        ui.statusbar.sM..(msg)
 
     ___ processCapturedImage  requestId, img):
         scaledImage _ img.scaled(ui.viewfinder.size(), __.KeepAspectRatio,
@@ -402,18 +402,18 @@ c_ Camera ?MW..
         indicationColor _ __.black
 
         __ status __ QCamera.Searching:
-            ui.statusbar.showMessage("Focusing...")
+            ui.statusbar.sM..("Focusing...")
             ui.lockButton.sT..("Focusing...")
             indicationColor _ __.yellow
         ____ status __ QCamera.Locked:
             ui.lockButton.sT..("Unlock")
-            ui.statusbar.showMessage("Focused", 2000)
+            ui.statusbar.sM..("Focused", 2000)
             indicationColor _ __.darkGreen
         ____ status __ QCamera.Unlocked:
             ui.lockButton.sT..("Focus")
 
             __ reason __ QCamera.LockFailed:
-                ui.statusbar.showMessage("Focus Failed", 2000)
+                ui.statusbar.sM..("Focus Failed", 2000)
                 indicationColor _ __.red
 
         palette _ ui.lockButton.p..

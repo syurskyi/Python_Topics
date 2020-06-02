@@ -175,9 +175,9 @@ c_ MainWindow(qtw.?MW..):
 
     ___ match_count  count):
         __ count:
-            statusBar().showMessage(f'{count} matches ')
+            sB.. .sM..(f'{count} matches ')
         ____
-            statusBar().clearMessage()
+            sB.. .clearMessage()
 
 
 __ ______ __ ______

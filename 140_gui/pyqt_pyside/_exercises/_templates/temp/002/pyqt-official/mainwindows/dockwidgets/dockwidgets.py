@@ -124,7 +124,7 @@ c_ MainWindow ?MW..
 
         document.print_(printer)
 
-        statusBar().showMessage("Ready", 2000)
+        sB.. .sM..("Ready", 2000)
 
     ___ save
         filename, _ _ ?FD...getSaveFileName
@@ -143,7 +143,7 @@ c_ MainWindow ?MW..
         out << textEdit.toHtml()
         ?A...restoreOverrideCursor()
 
-        statusBar().showMessage("Saved '%s'" % filename, 2000)
+        sB.. .sM..("Saved '%s'" % filename, 2000)
 
     ___ undo
         document _ textEdit.document()
@@ -248,7 +248,7 @@ c_ MainWindow ?MW..
         editToolBar.aA..(undoAct)
 
     ___ createStatusBar
-        statusBar().showMessage("Ready")
+        sB.. .sM..("Ready")
 
     ___ createDockWindows
         dock _ QDockWidget("Customers", self)

@@ -80,7 +80,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         pb _ QProgressBar(statusBar())
         pb.setTextVisible F..
         pb.hide()
-        statusBar().addPermanentWidget(pb)
+        sB.. .addPermanentWidget(pb)
 
         WebBrowser.dynamicCall('GoHome()')
 

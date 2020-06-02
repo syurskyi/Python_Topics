@@ -483,7 +483,7 @@ c_ MainWindow ?MW..
         quitAction.t__.c..(?A...instance().quit)
 
         mB.. .aM..(fileMenu)
-        statusBar()
+        sB..
 
         openFile(':/Charts/qtdata.cht')
 
@@ -546,7 +546,7 @@ c_ MainWindow ?MW..
                     line _ stream.readLine()
 
                 f.c..
-                statusBar().showMessage("Loaded %s" % pa__, 2000)
+                sB.. .sM..("Loaded %s" % pa__, 2000)
 
     ___ saveFile
         fileName, _ _ ?FD...getSaveFileName  "Save file as", '',
@@ -576,7 +576,7 @@ c_ MainWindow ?MW..
                     f.w..(b'\n')
 
             f.c..
-            statusBar().showMessage("Saved %s" % fileName, 2000)
+            sB.. .sM..("Saved %s" % fileName, 2000)
 
 
 __ ______ __ ______

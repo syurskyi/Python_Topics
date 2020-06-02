@@ -78,7 +78,7 @@ c_ MainWindow ?MW..
         createMenus()
 
         message _ "A context menu is available by right-clicking"
-        statusBar().showMessage(message)
+        sB.. .sM..(message)
 
         sWT..("Menus")
         sMS..(160,160)

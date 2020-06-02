@@ -30,11 +30,11 @@ c_ SlowSearcherThread(qtc.QThread):
         directory_changed.e..(pa__)
         directory _ qtc.?D..(pa__)
         directory.setFilter(
-            directory.filter() |
-            qtc.?D...NoDotAndDotDot |
-            qtc.?D...NoSymLinks
+            directory.f.. |
+            qtc.?D...NDADD.. |
+            qtc.?D...NSL..
         )
-        ___ entry __ directory.entryInfoList
+        ___ entry __ directory.eIL..
             __ term __ entry.fP..
                 print(entry.fP..())
                 match_found.e..(entry.fP..())
@@ -90,10 +90,10 @@ c_ MainWindow(qtw.?MW..):
         s..
 
     ___ o_f..
-        statusBar().showMessage('Search Finished')
+        sB.. .sM..('Search Finished')
 
     ___ on_directory_changed  pa__):
-        statusBar().showMessage(f'Searching in: {pa__}')
+        sB.. .sM..(f'Searching in: {pa__}')
 
 
 __ ______ __ ______

@@ -63,7 +63,7 @@ c_ Window(QDialog):
         createActions()
         createTrayIcon()
 
-        showMessageButton.c__.c..(showMessage)
+        showMessageButton.c__.c..(sM..)
         showIconCheckBox.t__.c..(trayIcon.setVisible)
         iconComboBox.currentIndexChanged.c..(setIcon)
         trayIcon.messageClicked.c..(messageClicked)
@@ -108,12 +108,12 @@ c_ Window(QDialog):
                     (iconComboBox.currentIndex() + 1)
                     % iconComboBox.count())
         ____ reason __ QSystemTrayIcon.MiddleClick:
-            showMessage()
+            sM..()
 
-    ___ showMessage
+    ___ sM..
         icon _ QSystemTrayIcon.MessageIcon(
                 typeComboBox.itemData(typeComboBox.currentIndex()))
-        trayIcon.showMessage(titleEdit.t__(),
+        trayIcon.sM..(titleEdit.t__(),
                 bodyEdit.toPlainText(), icon,
                 durationSpinBox.value() * 1000)
 

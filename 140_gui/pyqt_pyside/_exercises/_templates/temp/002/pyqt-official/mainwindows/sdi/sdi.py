@@ -220,7 +220,7 @@ c_ MainWindow ?MW..
         editToolBar.aA..(pasteAct)
 
     ___ createStatusBar
-        statusBar().showMessage("Ready")
+        sB.. .sM..("Ready")
 
     ___ readSettings
         settings _ QSettings('Trolltech', 'SDI Example')
@@ -263,7 +263,7 @@ c_ MainWindow ?MW..
         ?A...restoreOverrideCursor()
 
         setCurrentFile(fileName)
-        statusBar().showMessage("File loaded", 2000)
+        sB.. .sM..("File loaded", 2000)
 
     ___ saveFile  fileName):
         file _ QFile(fileName)
@@ -278,7 +278,7 @@ c_ MainWindow ?MW..
         ?A...restoreOverrideCursor()
 
         setCurrentFile(fileName)
-        statusBar().showMessage("File saved", 2000)
+        sB.. .sM..("File saved", 2000)
         r_ T..
 
     ___ setCurrentFile  fileName):

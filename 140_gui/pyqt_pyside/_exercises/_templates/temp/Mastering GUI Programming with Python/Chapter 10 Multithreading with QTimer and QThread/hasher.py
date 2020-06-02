@@ -117,10 +117,10 @@ c_ MainWindow(qtw.?MW..):
 
         form.submitted.c..(manager.do_hashing)
         form.submitted.c..(
-            l___ x, y, z: statusBar().showMessage(
+            l___ x, y, z: sB.. .sM..(
                 f'Processing files in {x} into {y} with {z} threads.'))
         manager.finished.c..(
-            l___: statusBar().showMessage('Finished'))
+            l___: sB.. .sM..('Finished'))
         # End main UI code
         s..
 

@@ -407,9 +407,9 @@ c_ MainWindow(?MW.., Ui_MainWindow):
             row _ view.selectionModel().currentIndex().row()
             column _ view.selectionModel().currentIndex().column()
             __ view.selectionModel().currentIndex().parent().isValid
-                statusBar().showMessage("Position: (%d,%d)" % (row, column))
+                sB.. .sM..("Position: (%d,%d)" % (row, column))
             ____
-                statusBar().showMessage("Position: (%d,%d) in top level" % (row, column))
+                sB.. .sM..("Position: (%d,%d) in top level" % (row, column))
 
 
 __ ______ __ ______

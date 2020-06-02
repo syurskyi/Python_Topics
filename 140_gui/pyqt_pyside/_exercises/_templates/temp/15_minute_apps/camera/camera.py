@@ -67,7 +67,7 @@ c_ MainWindow ?MW..
 
         capture _ QCameraImageCapture(camera)
         capture.error.c..(l___ i, e, s: alert(s))
-        capture.imageCaptured.c..(l___ d, i: status.showMessage("Image %04d captured" % save_seq))
+        capture.imageCaptured.c..(l___ d, i: status.sM..("Image %04d captured" % save_seq))
 
         current_camera_name _ available_cameras[i].description()
         save_seq _ 0
@@ -92,7 +92,7 @@ c_ MainWindow ?MW..
         Handle errors coming from QCamera dn QCameraImageCapture by displaying alerts.
         """
         err _ QErrorMessage
-        err.showMessage(s)
+        err.sM..(s)
 
 
 __ ______ __ ______

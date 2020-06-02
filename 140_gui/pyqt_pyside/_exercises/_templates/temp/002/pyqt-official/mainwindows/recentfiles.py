@@ -64,7 +64,7 @@ c_ MainWindow ?MW..
 
         createActions()
         createMenus()
-        statusBar()
+        sB..
 
         sWT..("Recent Files")
         r..(400, 300)
@@ -164,7 +164,7 @@ c_ MainWindow ?MW..
         ?A...restoreOverrideCursor()
 
         setCurrentFile(fileName)
-        statusBar().showMessage("File loaded", 2000)
+        sB.. .sM..("File loaded", 2000)
 
     ___ saveFile  fileName):
         file _ QFile(fileName)
@@ -179,7 +179,7 @@ c_ MainWindow ?MW..
         ?A...restoreOverrideCursor()
 
         setCurrentFile(fileName)
-        statusBar().showMessage("File saved", 2000)
+        sB.. .sM..("File saved", 2000)
 
     ___ setCurrentFile  fileName):
         curFile _ fileName

@@ -113,7 +113,7 @@ c_ MainWindow(qtw.?MW..):
         s..
 
     ___ show_time  qtime):
-        statusBar().showMessage(
+        sB.. .sM..(
             f'Read at {qtime.toString("HH:mm:ss")}'
             )
 

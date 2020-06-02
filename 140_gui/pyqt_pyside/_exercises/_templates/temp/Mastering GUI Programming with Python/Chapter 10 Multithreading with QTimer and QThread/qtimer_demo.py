@@ -81,16 +81,16 @@ c_ MainWindow(qtw.?MW..):
     ___ update_status
         __ timer.isActive
             time_left _ (timer.remainingTime() // 1000) + 1
-            statusBar().showMessage(
+            sB.. .sM..(
                 f"Next dialog will be shown in {time_left} seconds.")
         ____
-            statusBar().showMessage('Dialogs are off.')
+            sB.. .sM..('Dialogs are off.')
 
     ___ long_blocking_callback
         ____ time ______ sl..
-        statusBar().showMessage('Beginning a long blocking function.')
+        sB.. .sM..('Beginning a long blocking function.')
         sl..(30)
-        statusBar().showMessage('Ending a long blocking function.')
+        sB.. .sM..('Ending a long blocking function.')
 
 __ ______ __ ______
     app _ qtw.?A..(___.a..

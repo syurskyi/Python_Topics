@@ -85,7 +85,7 @@ c_ SpreadSheet ?MW..
         setupContents()
         setupContextMenu()
         sCW..(table)
-        statusBar()
+        sB..
         table.currentItemChanged.c..(updateStatus)
         table.currentItemChanged.c..(updateColor)
         table.currentItemChanged.c..(updateLineEdit)
@@ -180,7 +180,7 @@ c_ SpreadSheet ?MW..
 
     ___ updateStatus  item):
         __ item and item __ table.currentItem
-            statusBar().showMessage(item.data(__.StatusTipRole), 1000)
+            sB.. .sM..(item.data(__.StatusTipRole), 1000)
             cellLabel.sT..("Cell: (%s)" % encode_pos(table.row(item),
                                                                      table.column(item)))
 

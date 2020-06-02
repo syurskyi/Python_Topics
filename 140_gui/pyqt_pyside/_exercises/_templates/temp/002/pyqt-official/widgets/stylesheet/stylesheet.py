@@ -58,7 +58,7 @@ c_ MainWindow ?MW..
         ui.setupUi
         ui.nameLabel.setProperty('class', 'mandatory QLabel')
         styleSheetEditor _ StyleSheetEditor
-        statusBar().aW..(QLabel("Ready"))
+        sB.. .aW..(QLabel("Ready"))
         ui.exitAction.t__.c..(?A...instance().quit)
         ui.aboutQtAction.t__.c..(?A...instance().aboutQt)
 

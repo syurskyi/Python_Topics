@@ -188,7 +188,7 @@ c_ MainWindow ?MW..
         fileMenu.aA..(exitAction)
 
         sWT..(tr("Language: %s") % tr("English"))
-        statusBar().showMessage(tr("Internationalization Example"))
+        sB.. .sM..(tr("Internationalization Example"))
 
         __ tr("LTR") __ "RTL":
             setLayoutDirection(__.RightToLeft)

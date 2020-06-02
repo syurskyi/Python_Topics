@@ -64,7 +64,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         #status_bar.showMessage('Welcome to text_editor.py')
 
         # The short way 'round
-        statusBar().showMessage('Welcome to text_editor.py')
+        sB.. .sM..('Welcome to text_editor.py')
 
         # add widgets to statusbar
         charcount_label _ ?.?L..("chars: 0")
@@ -74,7 +74,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
                 str(le.(textedit.toPlainText()))
                 )
             )
-        statusBar().addPermanentWidget(charcount_label)
+        sB.. .addPermanentWidget(charcount_label)
 
         ###############j
         # The menubar #
@@ -129,7 +129,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         toolbar.aA..(
             save_icon,
             'Save',
-            l___: statusBar().showMessage('File Saved!')
+            l___: sB.. .sM..('File Saved!')
         )
 
         # create a custom QAction
@@ -138,7 +138,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
             style().standardIcon(qtw.QStyle.SP_DialogHelpButton),
             'Help',
             self,  # important to pass the parent!
-            triggered_lambda: statusBar().showMessage(
+            triggered_lambda: sB.. .sM..(
                 'Sorry, no help yet!'
             )
         )

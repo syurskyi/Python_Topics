@@ -119,7 +119,7 @@ c_ Window(QDialog):
         __ no. fileName:
             fileName _ "*"
         files _ currentDir.entryList([fileName],
-                ?D...Files | ?D...NoSymLinks)
+                ?D...Files | ?D...NSL..)
 
         __ t__:
             files _ findFiles(files, t__)
