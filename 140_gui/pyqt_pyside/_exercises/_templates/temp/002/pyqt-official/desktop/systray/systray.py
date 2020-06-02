@@ -115,7 +115,7 @@ c_ Window(QDialog):
                 typeComboBox.itemData(typeComboBox.currentIndex()))
         trayIcon.sM..(titleEdit.t__(),
                 bodyEdit.toPlainText(), icon,
-                durationSpinBox.value() * 1000)
+                durationSpinBox.v.. * 1000)
 
     ___ messageClicked
         ?MB...information(N.., "Systray",

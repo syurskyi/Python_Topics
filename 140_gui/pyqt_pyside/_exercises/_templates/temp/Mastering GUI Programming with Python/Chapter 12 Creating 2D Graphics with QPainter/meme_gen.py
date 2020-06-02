@@ -80,7 +80,7 @@ c_ MemeEditForm ?.?W..
 
     ___  -
         s_. - ()
-        sL..(qtw.QFormLayout())
+        sL..(qtw.?FL..())
 
         # Image
         image_source _ ImageFileButton(changed_self.on_change)
@@ -122,9 +122,9 @@ c_ MemeEditForm ?.?W..
             'text_color': text_color._color,
             'text_font': text_font._font,
             'bg_color': text_bg_color._color,
-            'top_bg_height': top_bg_height.value(),
-            'bottom_bg_height': bottom_bg_height.value(),
-            'bg_padding': bg_padding.value()
+            'top_bg_height': top_bg_height.v..,
+            'bottom_bg_height': bottom_bg_height.v..,
+            'bg_padding': bg_padding.v..
         }
         changed.e..(data)
 

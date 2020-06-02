@@ -301,7 +301,7 @@ c_ Window(?W..):
         renderArea.setShape(shape)
 
     ___ penChanged
-        width _ penWidthSpinBox.value()
+        width _ penWidthSpinBox.v..
         style _ __.PenStyle(penStyleComboBox.itemData(
                 penStyleComboBox.currentIndex(), IdRole))
         cap _ __.PenCapStyle(penCapComboBox.itemData(

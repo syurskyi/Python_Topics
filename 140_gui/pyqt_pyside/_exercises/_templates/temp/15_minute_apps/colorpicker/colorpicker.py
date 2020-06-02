@@ -29,7 +29,7 @@ def copy_color_hsv():
     if dialog.exec_():
         color = dialog.currentColor()
         clipboard.setText("hsv(%d, %d, %d)" % (
-            color.hue(), color.saturation(), color.value()
+            color.hue(), color.saturation(), color.v..
         ))
 
 # Create the tray

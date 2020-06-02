@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pS.., QMutex, QMutexLocker, QPoint, ?S.., __,
+____ ?.?C.. ______ (pS.., QMutex, ?ML.., QPoint, ?S.., __,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ ?C.., QImage, QPainter, ?P.., qRgb
 ____ ?.?W.. ______ ?A.., ?W..
@@ -88,7 +88,7 @@ c_ RenderThread(QThread):
         wait()
 
     ___ render  centerX, centerY, scaleFactor, resultSize):
-        locker _ QMutexLocker(mutex)
+        locker _ ?ML..(mutex)
 
         centerX _ centerX
         centerY _ centerY

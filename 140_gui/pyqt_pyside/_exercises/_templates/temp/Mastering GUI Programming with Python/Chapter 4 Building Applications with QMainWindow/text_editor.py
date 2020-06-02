@@ -9,7 +9,7 @@ c_ SettingsDialog(qtw.QDialog):
 
     ___  -   settings, parent_None):
         s_. - (parent, modal_ st.
-        sL..(qtw.QFormLayout())
+        sL..(qtw.?FL..())
         settings _ settings
         la__ .aR..(
             ?.?L..('<h1>Application Settings</h1>'),

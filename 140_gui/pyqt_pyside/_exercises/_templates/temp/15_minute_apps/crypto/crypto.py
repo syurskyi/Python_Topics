@@ -172,7 +172,7 @@ class MainWindow(?MW..):
 
         listView.setModel(model)
 
-        threadpool = QThreadPool()
+        threadpool = ?TP..()
         worker = F..
 
         layout.addWidget(ax)

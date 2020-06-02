@@ -114,7 +114,7 @@ c_ WidgetGallery(QDialog):
             ?A...sP..(originalPalette)
 
     ___ advanceProgressBar 
-        curVal _ progressBar.value()
+        curVal _ progressBar.v..
         maxVal _ progressBar.maximum()
         progressBar.setValue(curVal + (maxVal - curVal) / 100)
 

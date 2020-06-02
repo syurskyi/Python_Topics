@@ -72,7 +72,7 @@ c_ MainWindow(qtw.?MW..):
         sWT..('Fight Fighter Game Lobby')
         cx_form _ qtw.?W..
         sCW..(cx_form)
-        cx_form.sL..(qtw.QFormLayout())
+        cx_form.sL..(qtw.?FL..())
 
         heading _ ?.?L..("Fight Fighter!")
         cx_form.la__ .aR..(heading)

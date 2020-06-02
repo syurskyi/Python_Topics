@@ -68,7 +68,7 @@ c_ MainWindow(qtw.?MW..):
 
         # Create widget and style it
         widget _ qtw.?W..
-        widget.sL..(qtw.QFormLayout())
+        widget.sL..(qtw.?FL..())
         sCW..(widget)
         p _ widget.p..
         p.sC..(qtg.?P...WindowText, qtg.?C..('cyan'))

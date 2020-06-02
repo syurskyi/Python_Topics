@@ -50,7 +50,7 @@ ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
         QMediaMetaData, ?MP.., ?MPl.., QVideoFrame, QVideoProbe)
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
-        QFormLayout, QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
+        ?FL.., QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
         QSizePolicy, ?S.., QStyle, QToolButton, QVBoxLayout, ?W..)
 
 
@@ -235,7 +235,7 @@ c_ PlayerControls(?W..):
                         style().standardIcon(QStyle.SP_MediaPlay))
 
     ___ volume
-        r_ volumeSlider.value()
+        r_ volumeSlider.v..
 
     ___ setVolume  volume):
         volumeSlider.setValue(volume)

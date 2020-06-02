@@ -26,7 +26,7 @@ c_ UdpChatInterface(qtc.?O..):
             datagram _ socket.receiveDatagram()
             # to convert QByteArray to a string,
             # cast it to bytes then decode
-            raw_message _ bytes(datagram.data()).d..('utf-8')
+            raw_message _ by..(datagram.data()).d..('utf-8')
 
             __ delimiter no. __ raw_message:
                 # invalid message, ignore

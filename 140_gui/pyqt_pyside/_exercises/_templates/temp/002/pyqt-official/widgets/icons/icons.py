@@ -245,7 +245,7 @@ c_ MainWindow ?MW..
             r_
 
         __ otherRadioButton.isChecked
-            extent _ otherSpinBox.value()
+            extent _ otherSpinBox.v..
         ____
             __ smallRadioButton.isChecked
                 metric _ QStyle.PM_SmallIconSize

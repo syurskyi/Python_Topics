@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pS.., ?DS.., QMutex, QMutexLocker,
+____ ?.?C.. ______ (pS.., ?DS.., QMutex, ?ML..,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
@@ -73,7 +73,7 @@ c_ FortuneThread(QThread):
         wait()
 
     ___ requestNewFortune  hostname, port):
-        locker _ QMutexLocker(mutex)
+        locker _ ?ML..(mutex)
         hostName _ hostname
         port _ port
         __ no. isRunning

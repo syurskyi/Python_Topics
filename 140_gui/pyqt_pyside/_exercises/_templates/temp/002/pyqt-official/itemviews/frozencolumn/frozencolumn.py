@@ -113,7 +113,7 @@ c_ FreezeTableWidget(QTableView):
                 current.column() > 0 and
                 visualRect(current).topLeft().x() <
                     frozenTableView.columnWidth(0)):
-            newValue _ (horizontalScrollBar().value() +
+            newValue _ (horizontalScrollBar().v.. +
                         visualRect(current).topLeft().x() -
                         frozenTableView.columnWidth(0))
             horizontalScrollBar().setValue(newValue)

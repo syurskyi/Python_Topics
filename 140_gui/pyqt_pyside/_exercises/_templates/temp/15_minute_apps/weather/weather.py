@@ -81,7 +81,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         pushButton.pressed.c..(update_weather)
 
-        threadpool _ QThreadPool()
+        threadpool _ ?TP..()
 
         s..
 

@@ -76,7 +76,7 @@ ___ method2
 ___ method3
     ___.stdout.w..("Method 3:\n")
 
-    names _ QDBusConnection.sessionBus().interface().registeredServiceNames().value()
+    names _ QDBusConnection.sessionBus().interface().registeredServiceNames().v..
 
     # Mimic the output from the C++ version.
     ___.stdout.w..('("%s")\n' % '", "'.join(names))

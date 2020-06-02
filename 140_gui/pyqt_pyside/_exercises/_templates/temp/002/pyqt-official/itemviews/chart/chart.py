@@ -98,8 +98,8 @@ c_ PieView(QAbstractItemView):
             r_ QModelIndex()
 
         # Transform the view coordinates into contents widget coordinates.
-        wx _ point.x() + horizontalScrollBar().value()
-        wy _ point.y() + verticalScrollBar().value()
+        wx _ point.x() + horizontalScrollBar().v..
+        wy _ point.y() + verticalScrollBar().v..
 
         __ wx < totalSize:
             cx _ wx - totalSize/2
@@ -219,7 +219,7 @@ c_ PieView(QAbstractItemView):
         r_ QRegion()
 
     ___ horizontalOffset
-        r_ horizontalScrollBar().value()
+        r_ horizontalScrollBar().v..
 
     ___ mousePressEvent  event):
         super(PieView, self).mousePressEvent(event)
@@ -287,12 +287,12 @@ c_ PieView(QAbstractItemView):
         # Viewport rectangles
         pieRect _ QRect(margin, margin, pieSize,
                 pieSize)
-        keyPoint _ QPoint(totalSize - horizontalScrollBar().value(),
+        keyPoint _ QPoint(totalSize - horizontalScrollBar().v..,
                 margin - verticalScrollBar().value())
 
         __ validItems > 0:
             painter.save()
-            painter.translate(pieRect.x() - horizontalScrollBar().value(),
+            painter.translate(pieRect.x() - horizontalScrollBar().v..,
                     pieRect.y() - verticalScrollBar().value())
             painter.drawEllipse(0, 0, pieSize, pieSize)
             startAngle _ 0.0
@@ -378,25 +378,25 @@ c_ PieView(QAbstractItemView):
 
         __ rect.left() < area.left
             horizontalScrollBar().setValue(
-                horizontalScrollBar().value() + rect.left() - area.left())
+                horizontalScrollBar().v.. + rect.left() - area.left())
         ____ rect.right() > area.right
             horizontalScrollBar().setValue(
-                horizontalScrollBar().value() + min(
+                horizontalScrollBar().v.. + min(
                     rect.right() - area.right(), rect.left() - area.left()))
 
         __ rect.top() < area.top
             verticalScrollBar().setValue(
-                verticalScrollBar().value() + rect.top() - area.top())
+                verticalScrollBar().v.. + rect.top() - area.top())
         ____ rect.bottom() > area.bottom
             verticalScrollBar().setValue(
-                verticalScrollBar().value() + min(
+                verticalScrollBar().v.. + min(
                     rect.bottom() - area.bottom(), rect.top() - area.top()))
 
     ___ setSelection  rect, command):
         # Use content widget coordinates because we will use the itemRegion()
         # function to check for intersections.
 
-        contentsRect _ rect.translated(horizontalScrollBar().value(),
+        contentsRect _ rect.translated(horizontalScrollBar().v..,
                 verticalScrollBar().value()).normalized()
 
         rows _ model().rowCount(rootIndex())
@@ -440,13 +440,13 @@ c_ PieView(QAbstractItemView):
         verticalScrollBar().setRange(0, max(0, totalSize - viewport().height()))
 
     ___ verticalOffset
-        r_ verticalScrollBar().value()
+        r_ verticalScrollBar().v..
 
     ___ visualRect  index):
         rect _ itemRect(index)
         __ rect.isValid
-            r_ QRect(rect.left() - horizontalScrollBar().value(),
-                         rect.top() - verticalScrollBar().value(),
+            r_ QRect(rect.left() - horizontalScrollBar().v..,
+                         rect.top() - verticalScrollBar().v..,
                          rect.width(), rect.height())
         ____
             r_ rect

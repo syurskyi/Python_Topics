@@ -11,7 +11,7 @@ c_ InvoiceForm ?.?W..
 
     ___  -
         s_. - ()
-        sL..(qtw.QFormLayout())
+        sL..(qtw.?FL..())
         inputs _ dict()
         inputs['Customer Name'] _ qtw.?LE..
         inputs['Customer Address'] _ qtw.?PTE..
@@ -53,8 +53,8 @@ c_ InvoiceForm ?.?W..
             __ no. line_items.item(row, 0):
                 continue
             job _ line_items.item(row, 0).t__()
-            rate _ line_items.cellWidget(row, 1).value()
-            hours _ line_items.cellWidget(row, 2).value()
+            rate _ line_items.cellWidget(row, 1).v..
+            hours _ line_items.cellWidget(row, 2).v..
             total _ rate * hours
             row_data _ [job, rate, hours, total]
             __ an.(row_data):

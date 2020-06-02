@@ -54,7 +54,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         display()
 
     ___ memory_store
-        memory _ lcdNumber.value()
+        memory _ lcdNumber.v..
 
     ___ memory_recall
         state _ INPUT

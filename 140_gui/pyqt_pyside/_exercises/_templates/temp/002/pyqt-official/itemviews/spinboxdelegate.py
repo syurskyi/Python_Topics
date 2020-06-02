@@ -64,7 +64,7 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
 
     ___ setModelData  spinBox, model, index):
         spinBox.interpretText()
-        value _ spinBox.value()
+        value _ spinBox.v..
 
         model.setData(index, value, __.ER..)
 

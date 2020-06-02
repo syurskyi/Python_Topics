@@ -1,133 +1,133 @@
-______ ___
-____ ? ______ ?W.. __ qtw
-____ ? ______ ?C.. __ qtc
-
-
-c_ HashForm ?.?W..
-
-    submitted _ qtc.pS..(str, str, int)
-
-    ___  - 
-        s_. - ()
-        sL..(?.QFormLayout())
-        source_path _ ?.?PB..(
-            'Click to select…', c___self.on_source_click)
-        la__ .aR..('Source Path', source_path)
-        destination_file _ ?.?PB..(
-            'Click to select…', c___self.on_dest_click)
-        la__ .aR..('Destination File', destination_file)
-        threads _ ?.SB..(minimum_1, maximum_7, value_2)
-        la__ .aR..('Threads', threads)
-        submit _ ?.?PB..('Go', c___self.on_submit)
-        la__ .aR..(submit)
-
-    ___ on_source_click
-        dirname _ ?.?FD...getExistingDirectory()
-        __ dirname:
-            source_path.sT..(dirname)
-
-    ___ on_dest_click
-        filename, _ _ ?.?FD...getSaveFileName()
-        __ filename:
-            destination_file.sT..(filename)
-
-    ___ on_submit
-        submitted.e..(
-            source_path.t__(),
-            destination_file.t__(),
-            threads.value()
-        )
-
-
-c_ HashRunner(qtc.QRunnable):
-
-    file_lock _ qtc.QMutex()
-
-    ___  -   infile, outfile):
-        s_. - ()
-        infile _ infile
-        outfile _ outfile
-        hasher _ qtc.QCryptographicHash(
-            qtc.QCryptographicHash.Md5)
-        setAutoDelete( st.
-
-    ___ run
-        print(f'hashing {infile}')
-        hasher.reset()
-        w__ o..(infile, __  __ fh:
-            hasher.addData(fh.r..
-        hash_string _ bytes(hasher.result().toHex()).d..('UTF-8')
-        # Traditional method:
-        #try:
-        #    self.file_lock.lock()
-        #    with open(self.outfile, 'a', encoding='utf-8') as out:
-        #        out.write(f'{self.infile}\t{hash_string}\n')
-        #finally:
-        #    self.file_lock.unlock()
-
-        # Better method:
-        w__ qtc.QMutexLocker(file_lock):
-            w__ o..(outfile, 'a', encoding_'utf-8') __ out:
-                out.w..(f'{infile}\t{hash_string}\n')
-
-
-c_ HashManager(qtc.?O..):
-
-    finished _ qtc.pS..()
-
-    ___  - 
-        s_. - ()
-        pool _ qtc.QThreadPool.globalInstance()
-
-    @qtc.pyqtSlot(str, str, int)
-    ___ do_hashing  source, destination, threads):
-        pool.setMaxThreadCount(threads)
-        qdir _ qtc.?D..(source)
-        ___ filename __ qdir.entryList(qtc.?D...Files):
-            filepath _ qdir.absoluteFilePath(filename)
-            runner _ HashRunner(filepath, destination)
-            pool.start(runner)
-
-        # This call is why we put HashManager in its own thread.
-        # If we don't care about being notified when the process is done,
-        # we could leave this out and run HashManager in the main thread.
-        pool.waitForDone()
-        finished.e..()
-
-
-c_ MainWindow(?.?MW..):
-
-    ___  - 
-        """MainWindow constructor.
-
-        This widget will be our main window.
-        We'll define all the UI components in here.
-        """
-        s_. - ()
-        # Main UI code goes here
-        form _ HashForm()
-        sCW..(form)
-        manager _ HashManager()
-
-        # Move it to another thread so we can notify the user when things
-        # are finished
-        manager_thread _ qtc.QThread()
-        manager.moveToThread(manager_thread)
-        manager_thread.start()
-
-        form.submitted.c..(manager.do_hashing)
-        form.submitted.c..(
-            l___ x, y, z: sB.. .sM..(
-                f'Processing files in {x} into {y} with {z} threads.'))
-        manager.finished.c..(
-            l___: sB.. .sM..('Finished'))
-        # End main UI code
-        s..
-
-
-__ ______ __ ______
-    app _ ?.?A..(___.a..
-    # it's required to save a reference to MainWindow.
-    # if it goes out of scope, it will be destroyed.
-    mw _ MainWindow()
-    ___.e.. ?.e..
+# ______ ___
+# ____ ? ______ ?W.. __ qtw
+# ____ ? ______ ?C.. __ qtc
+#
+#
+# c_ HashForm ?.?W..
+#
+#     submitted _ ?.pS.. st. st. in.
+#
+#     ___  -
+#         s_. -
+#         sL.. ?.?FL..
+#         source_path _ ?.?PB..
+#             'Click to select…', c___.o_s_c..
+#         la__ .aR.. 'Source Path' ?
+#         destination_file _ ?.?PB..
+#             'Click to select…', c___.o_d_c..
+#         la__ .aR.. 'Destination File' ?
+#         threads _ ?.SB.. mi.._1, ma.._7, va.._2
+#         la__ .aR.. 'Threads' ?
+#         submit _ ?.?PB.. 'Go', c___s.o_s..
+#         la__ .aR.. ?
+#
+#     ___ on_source_click
+#         dirname _ ?.?FD...gED..
+#         __ ?
+#             s_p_.sT.. ?
+#
+#     ___ on_dest_click
+#         filename, _ _ ?.?FD...gSFN..
+#         __ ?
+#             d_f_.sT.. ?
+#
+#     ___ on_submit
+#         submitted.e..
+#             s_p_.t__
+#             d_f_.t__
+#             t__.v..
+#
+#
+#
+# c_ HashRunner ?.?R..
+#
+#     file_lock _ ?.?M..
+#
+#     ___  -   infile outfile
+#         s_. -
+#         ? ?
+#         ? ?
+#         hasher _ ?.?CH..
+#             ?.?CH_.Md5
+#         sAD.. st.
+#
+#     ___ run
+#         print _*hashing {infile}')
+#         h__.r..
+#         w__ o.. i.. __  __ fh
+#             h__.aD.. fh.r..
+#         hash_string _ by.. h__.r.. .tH.. .d.. UTF-8
+#         # Traditional method:
+#         #try:
+#         #    self.file_lock.lock()
+#         #    with open(self.outfile, 'a', encoding='utf-8') as out:
+#         #        out.write(f'{self.infile}\t{hash_string}\n')
+#         #finally:
+#         #    self.file_lock.unlock()
+#
+#         # Better method:
+#         w__ ?.?ML.. f_l..
+#             w__ o.. o.. _ en.._ utf-8  __ out
+#                 ou_.w.. _*{infile}\t{hash_string}\n')
+#
+#
+# c_ HashManager ?.?O..
+#
+#     finished _ ?.pS..
+#
+#     ___  -
+#         s_. -
+#         pool _ ?.?TP...gI..
+#
+#     ??.? st. st. in.
+#     ___ do_hashing  source destination threads
+#         p__.sMTC.. th..
+#         qdir _ ?.?D.. s..
+#         ___ filename __ ?.eL.. ?.?D...Fi..
+#             filepath _ ?.aFP.. ?
+#             runner _ ? f.. d..
+#             p__.s.. ?
+#
+#         # This call is why we put HashManager in its own thread.
+#         # If we don't care about being notified when the process is done,
+#         # we could leave this out and run HashManager in the main thread.
+#         p__.wFD..
+#         f__.e..
+#
+#
+# c_ MainWindow ?.?MW..
+#
+#     ___  -
+#         """MainWindow constructor.
+#
+#         This widget will be our main window.
+#         We'll define all the UI components in here.
+#         """
+#         s_. -
+#         # Main UI code goes here
+#         form _ ?
+#         sCW.. ?
+#         manager _ ?
+#
+#         # Move it to another thread so we can notify the user when things
+#         # are finished
+#         manager_thread _ ?.?
+#         m__.mTT.. ?
+#         ?.s..
+#
+#         f__.s__.c.. m__.d_h..
+#         f__.s__.c..
+#             l___ x, y, z: sB.. .sM..
+#                 _*Processing files in ? into ? with ? threads.'))
+#         m__.f__.c..
+#             l___ sB.. .sM.. 'Finished'
+#         # End main UI code
+#         s..
+#
+#
+# __ ______ __ ______
+#     app _ ?.?A.. ___.a..
+#     # it's required to save a reference to MainWindow.
+#     # if it goes out of scope, it will be destroyed.
+#     mw _ ?
+#     ___.e.. ?.e..

@@ -85,7 +85,7 @@ c_ Screenshot(?W..):
             hide()
         newScreenshotButton.sD..( st.
 
-        ?T...sS..(delaySpinBox.value() * 1000,
+        ?T...sS..(delaySpinBox.v.. * 1000,
                 shootScreen)
 
     ___ saveScreenshot
@@ -98,7 +98,7 @@ c_ Screenshot(?W..):
             originalPixmap.save(fileName, f..)
 
     ___ shootScreen
-        __ delaySpinBox.value() !_ 0:
+        __ delaySpinBox.v.. !_ 0:
             ?A...instance().beep()
 
         screen _ ?A...primaryScreen()
@@ -114,7 +114,7 @@ c_ Screenshot(?W..):
             s..
 
     ___ updateCheckBox
-        __ delaySpinBox.value() __ 0:
+        __ delaySpinBox.v.. __ 0:
             hideThisWindowCheckBox.sD..( st.
         ____
             hideThisWindowCheckBox.sD.. F..

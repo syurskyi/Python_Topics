@@ -64,7 +64,7 @@ ___ decode_utf8(qs):
     ___
         r_ QByteArray(qs.d..(encoding_'utf8'))
     _____ AttributeError:
-        r_ QByteArray(bytes(qs, encoding_'utf8'))
+        r_ QByteArray(by..(qs, encoding_'utf8'))
 
 
 c_ XmlSyntaxHighlighter(QSyntaxHighlighter):

@@ -84,7 +84,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         prev_pos = None
 
         # Create a threadpool to run our unzip worker in.
-        threadpool = QThreadPool()
+        threadpool = ?TP..()
 
         head.raise_()
 
