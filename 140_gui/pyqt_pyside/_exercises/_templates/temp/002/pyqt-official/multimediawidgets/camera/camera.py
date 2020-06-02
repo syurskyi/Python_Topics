@@ -362,7 +362,7 @@ c_ Camera ?MW..
         settingsDialog.setVideoSettings(videoSettings)
         settingsDialog.setFormat(videoContainerFormat)
 
-        __ settingsDialog.exec_
+        __ settingsDialog.e..
             audioSettings _ settingsDialog.audioSettings()
             videoSettings _ settingsDialog.videoSettings()
             videoContainerFormat _ settingsDialog.f..()
@@ -375,7 +375,7 @@ c_ Camera ?MW..
 
         settingsDialog.setImageSettings(imageSettings)
 
-        __ settingsDialog.exec_
+        __ settingsDialog.e..
             imageSettings _ settingsDialog.imageSettings()
             imageCapture.setEncodingSettings(imageSettings)
 

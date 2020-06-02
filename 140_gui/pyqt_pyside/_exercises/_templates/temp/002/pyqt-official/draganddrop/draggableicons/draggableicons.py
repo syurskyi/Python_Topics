@@ -138,7 +138,7 @@ c_ DragWidget(QFrame):
 
         child.sP..(tempPixmap)
 
-        __ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction) __ __.MoveAction:
+        __ drag.e..(__.CopyAction | __.MoveAction, __.CopyAction) __ __.MoveAction:
             child.c..
         ____
             child.s..

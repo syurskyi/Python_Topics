@@ -76,7 +76,7 @@ c_ MainWindow ?MW..
         __ locationDialog __ N..:
             locationDialog _ LocationDialog
 
-        __ locationDialog.exec_
+        __ locationDialog.e..
             settings _ QSettings(locationDialog.f..(),
                                         locationDialog.scope(),
                                         locationDialog.organization(),

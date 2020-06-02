@@ -241,7 +241,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
     ___ contextMenuEvent  event):
         scene().clearSelection()
         setSelected( st.
-        myContextMenu.exec_(event.screenPos())
+        myContextMenu.e..(event.screenPos())
 
     ___ itemChange  change, value):
         __ change __ QGraphicsItem.ItemPositionChange:

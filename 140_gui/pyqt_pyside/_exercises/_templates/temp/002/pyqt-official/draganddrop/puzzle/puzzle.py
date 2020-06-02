@@ -168,7 +168,7 @@ c_ PuzzleWidget(?W..):
         drag.setHotSpot(event.pos() - square.topLeft())
         drag.sP..(pixmap)
 
-        __ drag.exec_(__.MoveAction) !_ __.MoveAction:
+        __ drag.e..(__.MoveAction) !_ __.MoveAction:
             pieceLocations.insert(found, location)
             piecePixmaps.insert(found, pixmap)
             pieceRects.insert(found, square)
@@ -260,7 +260,7 @@ c_ PiecesList(QListWidget):
         drag.setHotSpot(QPoint(pixmap.width()/2, pixmap.height()/2))
         drag.sP..(pixmap)
 
-        __ drag.exec_(__.MoveAction) __ __.MoveAction:
+        __ drag.e..(__.MoveAction) __ __.MoveAction:
             __ currentItem() __ no. N..:
                 takeItem(row(item))
 

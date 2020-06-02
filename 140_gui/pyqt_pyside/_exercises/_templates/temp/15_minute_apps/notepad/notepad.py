@@ -169,7 +169,7 @@ c_ MainWindow ?MW..
 
     ___ file_print
         dlg _ QPrintDialog()
-        __ dlg.exec_
+        __ dlg.e..
             editor.print_(dlg.printer())
 
     ___ update_title

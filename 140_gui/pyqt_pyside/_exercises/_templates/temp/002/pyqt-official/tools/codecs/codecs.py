@@ -92,7 +92,7 @@ c_ MainWindow ?MW..
             data _ inFile.rA..
 
             previewForm.setEncodedData(data)
-            __ previewForm.exec_
+            __ previewForm.e..
                 textEdit.sPT..(previewForm.decodedString())
 
     ___ save

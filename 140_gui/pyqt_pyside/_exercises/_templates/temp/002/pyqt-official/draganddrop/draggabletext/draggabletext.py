@@ -73,7 +73,7 @@ c_ DragLabel(QLabel):
         drag.sP..(pixmap)
         drag.setHotSpot(hotSpot)
 
-        dropAction _ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction)
+        dropAction _ drag.e..(__.CopyAction | __.MoveAction, __.CopyAction)
 
         __ dropAction __ __.MoveAction:
             c..

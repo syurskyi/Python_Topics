@@ -123,7 +123,7 @@ c_ SourceWidget(?W..):
         drag _ QDrag
         drag.setMimeData(mimeData)
         drag.sP..(?P..(':/images/drag.png'))
-        drag.exec_(__.CopyAction)
+        drag.e..(__.CopyAction)
 
 
 __ ______ __ ______

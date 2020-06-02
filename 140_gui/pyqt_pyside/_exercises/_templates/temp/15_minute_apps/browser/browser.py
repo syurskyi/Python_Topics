@@ -139,7 +139,7 @@ class MainWindow(?MW..):
 
     def about
         dlg = AboutDialog()
-        dlg.exec_()
+        dlg.e..()
 
     def open_file
         filename, _ = QFileDialog.getOpenFileName(self, "Open file", "",
@@ -166,7 +166,7 @@ class MainWindow(?MW..):
     def print_page
         dlg = QPrintPreviewDialog()
         dlg.paintRequested.connect(browser.print_)
-        dlg.exec_()
+        dlg.e..()
 
     def navigate_home
         browser.setUrl(?U..("http://www.google.com"))
@@ -199,4 +199,4 @@ app.setOrganizationDomain("MooseAche.org")
 
 window = MainWindow()
 
-app.exec_()
+app.e..()

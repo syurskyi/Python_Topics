@@ -94,7 +94,7 @@ c_ ImageViewer ?MW..
 
     ___ print_
         dialog _ QPrintDialog(printer, self)
-        __ dialog.exec_
+        __ dialog.e..
             painter _ QPainter(printer)
             rect _ painter.viewport()
             size _ imageLabel.pixmap().size()

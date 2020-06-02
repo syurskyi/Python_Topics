@@ -168,7 +168,7 @@ c_ PuzzleWidget(?W..):
         drag.setHotSpot(event.pos() - square.topLeft())
         drag.sP..(pixmap)
 
-        __ drag.exec_(__.MoveAction) !_ __.MoveAction:
+        __ drag.e..(__.MoveAction) !_ __.MoveAction:
             pieceLocations.insert(found, location)
             piecePixmaps.insert(found, pixmap)
             pieceRects.insert(found, square)

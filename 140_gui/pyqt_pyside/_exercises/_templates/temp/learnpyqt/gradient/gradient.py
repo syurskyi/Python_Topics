@@ -134,7 +134,7 @@ c_ Gradient(?W...?W..):
         __ current_color:
             dlg.setCurrentColor(?G...?C..(current_color))
 
-        __ dlg.exec_
+        __ dlg.e..
             setColorAtPosition(n, dlg.currentColor().name())
 
     ___ _find_stop_handle_for_event  e, to_exclude_None):

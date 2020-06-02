@@ -89,7 +89,7 @@ c_ MainWindow ?MW..
         menu.aA..(cutAct)
         menu.aA..(copyAct)
         menu.aA..(pasteAct)
-        menu.exec_(event.globalPos())
+        menu.e..(event.globalPos())
 
     ___ newFile
         infoLabel.sT..("Invoked <b>File|New</b>")

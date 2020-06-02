@@ -14,19 +14,19 @@ dialog = QColorDialog()
 
 
 def copy_color_hex():
-    if dialog.exec_():
+    if dialog.e..():
         color = dialog.currentColor()
         clipboard.setText(color.name())
   
 def copy_color_rgb():
-    if dialog.exec_():
+    if dialog.e..():
         color = dialog.currentColor()
         clipboard.setText("rgb(%d, %d, %d)" % (
             color.red(), color.green(), color.blue()
         ))
   
 def copy_color_hsv():
-    if dialog.exec_():
+    if dialog.e..():
         color = dialog.currentColor()
         clipboard.setText("hsv(%d, %d, %d)" % (
             color.hue(), color.saturation(), color.v..
@@ -56,4 +56,4 @@ menu.addAction(action3)
 tray.setContextMenu(menu)
 
 
-app.exec_()
+app.e..()

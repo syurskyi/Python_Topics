@@ -328,7 +328,7 @@ c_ SpreadSheet ?MW..
         vLayout.aW..(equalsLabel)
         vLayout.addStretch(1)
         vLayout.aI..(outLayout)
-        __ addDialog.exec_
+        __ addDialog.e..
             cell1 _ cell1ColInput.currentText() + cell1RowInput.currentText()
             cell2 _ cell2ColInput.currentText() + cell2RowInput.currentText()
             outCell _ outColInput.currentText() + outRowInput.currentText()

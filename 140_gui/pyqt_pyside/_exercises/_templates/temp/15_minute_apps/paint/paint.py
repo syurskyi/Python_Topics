@@ -880,4 +880,4 @@ if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()
-    app.exec_()
+    app.e..()

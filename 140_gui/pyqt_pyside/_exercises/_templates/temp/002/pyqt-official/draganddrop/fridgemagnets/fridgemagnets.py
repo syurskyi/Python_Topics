@@ -97,7 +97,7 @@ c_ DragLabel(QLabel):
 
         hide()
 
-        __ drag.exec_(__.MoveAction | __.CopyAction, __.CopyAction) __ __.MoveAction:
+        __ drag.e..(__.MoveAction | __.CopyAction, __.CopyAction) __ __.MoveAction:
             c..
         ____
             s..

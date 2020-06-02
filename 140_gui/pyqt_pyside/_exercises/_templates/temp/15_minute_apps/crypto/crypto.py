@@ -310,7 +310,7 @@ class MainWindow(?MW..):
         msg.setText(e.__class__.__name__)
         msg.setInformativeText(st.(e))
         msg.setDetailedText(tb)
-        msg.exec_()
+        msg.e..()
 
     def update_plot_scale
         p2.setGeometry(p1.vb.sceneBoundingRect())
@@ -367,4 +367,4 @@ if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()
-    app.exec_()
+    app.e..()

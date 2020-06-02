@@ -77,20 +77,20 @@ ___ createView(title, model):
 ___ createRelationalTables
     query _ QSqlQuery()
 
-    query.exec_("create table employee(id int, name varchar(20), city int, country int)")
-    query.exec_("insert into employee values(1, 'Espen', 5000, 47)")
-    query.exec_("insert into employee values(2, 'Harald', 80000, 49)")
-    query.exec_("insert into employee values(3, 'Sam', 100, 41)")
+    query.e..("create table employee(id int, name varchar(20), city int, country int)")
+    query.e..("insert into employee values(1, 'Espen', 5000, 47)")
+    query.e..("insert into employee values(2, 'Harald', 80000, 49)")
+    query.e..("insert into employee values(3, 'Sam', 100, 41)")
 
-    query.exec_("create table city(id int, name varchar(20))")
-    query.exec_("insert into city values(100, 'San Jose')")
-    query.exec_("insert into city values(5000, 'Oslo')")
-    query.exec_("insert into city values(80000, 'Munich')")
+    query.e..("create table city(id int, name varchar(20))")
+    query.e..("insert into city values(100, 'San Jose')")
+    query.e..("insert into city values(5000, 'Oslo')")
+    query.e..("insert into city values(80000, 'Munich')")
 
-    query.exec_("create table country(id int, name varchar(20))")
-    query.exec_("insert into country values(41, 'USA')")
-    query.exec_("insert into country values(47, 'Norway')")
-    query.exec_("insert into country values(49, 'Germany')")
+    query.e..("create table country(id int, name varchar(20))")
+    query.e..("insert into country values(41, 'USA')")
+    query.e..("insert into country values(47, 'Norway')")
+    query.e..("insert into country values(49, 'Germany')")
 
 
 __ ______ __ ______
