@@ -82,7 +82,7 @@ c_ ExampleContent(DemoItem):
             _prepared _ F..
 
     ___ loadDescription 
-        contents _ _menu_manager.getHtml(name).data().decode('utf8')
+        contents _ _menu_manager.getHtml(name).data().d..('utf8')
         __ contents __ '':
             paragraphs _   # list
         ____

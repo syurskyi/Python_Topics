@@ -62,7 +62,7 @@ ___ encode_utf8(ba):
 
 ___ decode_utf8(qs):
     ___
-        r_ QByteArray(qs.decode(encoding_'utf8'))
+        r_ QByteArray(qs.d..(encoding_'utf8'))
     _____ AttributeError:
         r_ QByteArray(bytes(qs, encoding_'utf8'))
 
@@ -195,7 +195,7 @@ c_ MainWindow(?MW.., Ui_SchemaMainWindow):
 
         schemaFile _ QFile(':/schema_%d.xsd' % index)
         schemaFile.o..(QFile.ReadOnly)
-        schemaData _ schemaFile.readAll()
+        schemaData _ schemaFile.rA..
         schemaView.sPT..(encode_utf8(schemaData))
 
         validate()
@@ -204,7 +204,7 @@ c_ MainWindow(?MW.., Ui_SchemaMainWindow):
         index +_ 2 * schemaSelection.currentIndex()
         instanceFile _ QFile(':/instance_%d.xml' % index)
         instanceFile.o..(QFile.ReadOnly)
-        instanceData _ instanceFile.readAll()
+        instanceData _ instanceFile.rA..
         instanceEdit.sPT..(encode_utf8(instanceData))
 
         validate()

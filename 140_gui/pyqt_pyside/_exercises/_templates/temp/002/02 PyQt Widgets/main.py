@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?DT__, __, QTimer
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
-        ?S.., SB.., ?SF.., QTableWidget, ?TW.., ?TE..,
+        ?S.., SB.., ?SF.., ?TW.., ?TW.., ?TE..,
         QVBoxLayout, ?W..)
 
 
@@ -164,7 +164,7 @@ c_ WidgetGallery(QDialog):
                 QSizePolicy.Ignored)
 
         tab1 _ ?W..
-        tableWidget _ QTableWidget(10, 10)
+        tableWidget _ ?TW..(10, 10)
 
         tab1hbox _ QHBoxLayout()
         tab1hbox.setContentsMargins(5, 5, 5, 5)

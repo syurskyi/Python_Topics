@@ -368,7 +368,7 @@ c_ AddressBook(?W..):
             r_
 
         ___
-            in_file _ o..(str(fileName), 'rb')
+            in_file _ o..(str(fileName), __
         _____ IOError:
             ?MB...information  "Unable to open file",
                     "There was an error opening \"%s\"" % fileName)

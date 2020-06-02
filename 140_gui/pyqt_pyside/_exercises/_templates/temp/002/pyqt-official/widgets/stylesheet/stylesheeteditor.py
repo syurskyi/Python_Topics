@@ -93,7 +93,7 @@ c_ StyleSheetEditor(QDialog):
         file _ QFile(':/qss/%s.qss' % sheetName.lower())
         file.o..(QFile.ReadOnly)
 
-        styleSheet _ file.readAll()
+        styleSheet _ file.rA..
         ___
             # Python v2.
             styleSheet _ unicode(styleSheet, encoding_'utf8')

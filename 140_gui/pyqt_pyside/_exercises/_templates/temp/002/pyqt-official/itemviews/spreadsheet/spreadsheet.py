@@ -44,7 +44,7 @@ ____ ?.?C.. ______ QDate, QPoint, __
 ____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         ?CB, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
-        QLineEdit, ?MW.., ?MB.., ?PB.., QTableWidget,
+        QLineEdit, ?MW.., ?MB.., ?PB.., ?TW..,
         QTableWidgetItem, QToolBar, QVBoxLayout)
 ____ ?.QtPrintSupport ______ QPrinter, QPrintPreviewDialog
 
@@ -72,7 +72,7 @@ c_ SpreadSheet ?MW..
         cellLabel.sMS..(80, 0)
         toolBar.aW..(cellLabel)
         toolBar.aW..(formulaInput)
-        table _ QTableWidget(rows, cols, self)
+        table _ ?TW..(rows, cols, self)
         ___ c __ ra..(cols):
             character _ chr(ord('A') + c)
             table.setHorizontalHeaderItem(c, QTableWidgetItem(character))

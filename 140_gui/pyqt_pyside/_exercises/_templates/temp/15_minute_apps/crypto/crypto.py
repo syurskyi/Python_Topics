@@ -167,7 +167,7 @@ class MainWindow(?MW..):
 
         listView = ?TV..
         model = QStandardItemModel()
-        model.setHorizontalHeaderLabels(["Currency", "Rate"])
+        model.sHHL..(["Currency", "Rate"])
         model.itemChanged.connect(check_check_state)
 
         listView.setModel(model)

@@ -101,7 +101,7 @@ c_ MenuManager(?O..):
         root _ QFileInfo(__file__).absolutePath()
         xml_file _ QFile(root + '/examples.xml')
         xml_file.o..(QFile.ReadOnly | QFile.Text)
-        contents _ xml_file.readAll().data()
+        contents _ xml_file.rA...data()
         xml_file.c..
 
         contentsDoc _ parseString(contents)

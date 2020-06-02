@@ -60,7 +60,7 @@ c_ MainWindow ?MW..
         fd _ QFile(":/jquery.min.js")
 
         __ fd.o..(QIODevice.ReadOnly | QFile.Text):
-            jQuery _ QTextStream(fd).readAll()
+            jQuery _ QTextStream(fd).rA..
             fd.c..
         ____
             jQuery _ ''

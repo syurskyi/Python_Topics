@@ -53,7 +53,7 @@
 
 ____ ?.?C.. ______ QFile, QFileInfo, __
 ____ ?.?G.. ______ QStandardItem, QStandardItemModel
-____ ?.?W.. ______ ?A.., QHeaderView, QTableView
+____ ?.?W.. ______ ?A.., ?HV.., QTableView
 
 
 c_ FreezeTableWidget(QTableView):
@@ -74,7 +74,7 @@ c_ FreezeTableWidget(QTableView):
         frozenTableView.sFP..(__.NF..)
         frozenTableView.verticalHeader().hide()
         frozenTableView.horizontalHeader().setSectionResizeMode(
-                QHeaderView.Fixed)
+                ?HV...Fixed)
         viewport().stackUnder(frozenTableView)
 
         frozenTableView.sSS..('''
@@ -138,12 +138,12 @@ ___ main(args):
     model _ QStandardItemModel()
     file _ QFile(QFileInfo(__file__).absolutePath() + '/grades.txt')
     __ file.o..(QFile.ReadOnly):
-        line _ file.readLine(200).decode('utf-8')
+        line _ file.readLine(200).d..('utf-8')
         header _ split_and_strip(line, ',')
-        model.setHorizontalHeaderLabels(header)
+        model.sHHL..(header)
         row _ 0
         w__ file.canReadLine
-            line _ file.readLine(200).decode('utf-8')
+            line _ file.readLine(200).d..('utf-8')
             __ no. line.s_w_('#') and ',' __ line:
                 fields _ split_and_strip(line, ',')
                 ___ col, field __ en..(fields):

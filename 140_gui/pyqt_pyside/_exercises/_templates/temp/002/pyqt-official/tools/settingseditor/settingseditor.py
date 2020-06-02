@@ -49,8 +49,8 @@ ____ ?.?C.. ______ (QByteArray, QDate, ?DT__, QEvent, QPoint, QRect,
 ____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
-        QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
-        ?MW.., ?MB.., QStyle, QStyleOptionViewItem, QTableWidget,
+        QGroupBox, ?HV.., QInputDialog, QItemDelegate, QLabel, QLineEdit,
+        ?MW.., ?MB.., QStyle, QStyleOptionViewItem, ?TW..,
         QTableWidgetItem, QTreeWidget, QTreeWidgetItem, QVBoxLayout)
 
 
@@ -231,13 +231,13 @@ c_ LocationDialog(QDialog):
 
         locationsGroupBox _ QGroupBox("Setting Locations")
 
-        locationsTable _ QTableWidget()
+        locationsTable _ ?TW..()
         locationsTable.setSelectionMode(QAbstractItemView.SingleSelection)
         locationsTable.setSelectionBehavior(QAbstractItemView.SelectRows)
         locationsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
         locationsTable.setColumnCount(2)
-        locationsTable.setHorizontalHeaderLabels(("Location", "Access"))
-        locationsTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        locationsTable.sHHL..(("Location", "Access"))
+        locationsTable.horizontalHeader().setSectionResizeMode(0, ?HV...Stretch)
         locationsTable.horizontalHeader().resizeSection(1, 180)
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
@@ -353,8 +353,8 @@ c_ SettingsTree(QTreeWidget):
         setItemDelegate(VariantDelegate(self))
 
         setHeaderLabels(("Setting", "Type", "Value"))
-        header().setSectionResizeMode(0, QHeaderView.Stretch)
-        header().setSectionResizeMode(2, QHeaderView.Stretch)
+        header().setSectionResizeMode(0, ?HV...Stretch)
+        header().setSectionResizeMode(2, ?HV...Stretch)
 
         settings _ N..
         refreshTimer _ ?T..

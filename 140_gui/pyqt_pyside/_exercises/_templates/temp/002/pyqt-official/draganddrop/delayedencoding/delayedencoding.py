@@ -77,7 +77,7 @@ c_ SourceWidget(?W..):
 
         imageFile _ QFile(':/images/example.svg')
         imageFile.o..(QIODevice.ReadOnly)
-        imageData _ imageFile.readAll()
+        imageData _ imageFile.rA..
         imageFile.c..
 
         imageArea _ QScrollArea()

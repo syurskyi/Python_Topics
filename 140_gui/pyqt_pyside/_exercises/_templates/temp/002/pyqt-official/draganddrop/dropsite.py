@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ pS.., QMimeData, __
 ____ ?.?G.. ______ ?P.., ?P..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
-        QFrame, QLabel, ?PB.., QTableWidget, QTableWidgetItem,
+        QFrame, QLabel, ?PB.., ?TW.., QTableWidgetItem,
         QVBoxLayout, ?W..)
 
 
@@ -115,10 +115,10 @@ c_ DropSiteWindow(?W..):
         dropArea _ DropArea()
         dropArea.changed.c..(updateFormatsTable)
 
-        formatsTable _ QTableWidget()
+        formatsTable _ ?TW..()
         formatsTable.setColumnCount(2)
         formatsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        formatsTable.setHorizontalHeaderLabels(["Format", "Content"])
+        formatsTable.sHHL..(["Format", "Content"])
         formatsTable.horizontalHeader().setStretchLastSection( st.
 
         clearButton _ ?PB..("Clear")

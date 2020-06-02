@@ -90,7 +90,7 @@ c_ DragWidget(?W..):
         x _ 5
         y _ 5
 
-        ___ word __ QTextStream(dictionaryFile).readAll().sp..
+        ___ word __ QTextStream(dictionaryFile).rA...sp..
             wordLabel _ DragLabel(word, self)
             wordLabel.move(x, y)
             wordLabel.s..

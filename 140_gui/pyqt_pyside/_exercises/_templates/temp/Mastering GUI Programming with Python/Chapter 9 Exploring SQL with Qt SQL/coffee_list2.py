@@ -69,7 +69,7 @@ c_ CoffeeForm ?.?W..
         reviews.hideColumn(0)
         reviews.hideColumn(1)
         reviews.horizontalHeader().setSectionResizeMode(
-            4, qtw.QHeaderView.Stretch)
+            4, qtw.?HV...Stretch)
 
 
         # Using a custom delegate

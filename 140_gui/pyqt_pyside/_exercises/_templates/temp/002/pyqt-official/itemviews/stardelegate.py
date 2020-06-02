@@ -48,7 +48,7 @@ ______ math
 ____ ?.?C.. ______ pS.., QPointF, ?S.., __
 ____ ?.?G.. ______ QPainter, QPolygonF
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
-        QStyledItemDelegate, QTableWidget, QTableWidgetItem, ?W..)
+        QStyledItemDelegate, ?TW.., QTableWidgetItem, ?W..)
 
 
 c_ StarRating(object):
@@ -234,14 +234,14 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
 
-    tableWidget _ QTableWidget(4, 4)
+    tableWidget _ ?TW..(4, 4)
     tableWidget.setItemDelegate(StarDelegate())
     tableWidget.setEditTriggers(
             QAbstractItemView.DoubleClicked | QAbstractItemView.SelectedClicked)
     tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
 
     headerLabels _ ("Title", "Genre", "Artist", "Rating")
-    tableWidget.setHorizontalHeaderLabels(headerLabels)
+    tableWidget.sHHL..(headerLabels)
 
     populateTableWidget(tableWidget)
 

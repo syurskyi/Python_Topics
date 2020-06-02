@@ -125,7 +125,7 @@ c_ MainWindow ?MW..
                         fd.errorString())
                 r_
 
-            output _ QTextStream(fd).readAll()
+            output _ QTextStream(fd).rA..
 
             # Display contents.
             centralWidget.plainTextEdit.sPT..(output)

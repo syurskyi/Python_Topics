@@ -126,7 +126,7 @@ c_ Dialog(QDialog):
 
     ___ updateServerProgress
         bytesReceived +_ tcpServerConnection.bytesAvailable()
-        tcpServerConnection.readAll()
+        tcpServerConnection.rA..
 
         serverProgressBar.sM..(Dialog.TotalBytes)
         serverProgressBar.setValue(bytesReceived)

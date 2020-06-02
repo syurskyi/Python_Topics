@@ -89,7 +89,7 @@ c_ MainWindow ?MW..
                         "Cannot read file %s:\n%s" % (fileName, inFile.errorString()))
                 r_
 
-            data _ inFile.readAll()
+            data _ inFile.rA..
 
             previewForm.setEncodedData(data)
             __ previewForm.exec_
@@ -239,7 +239,7 @@ c_ PreviewForm(QDialog):
         data.setAutoDetectUnicode F..
         data.setCodec(codec)
 
-        decodedStr _ data.readAll()
+        decodedStr _ data.rA..
         textEdit.sPT..(decodedStr)
 
 

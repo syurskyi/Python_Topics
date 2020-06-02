@@ -395,7 +395,7 @@ c_ TextEdit ?MW..
         __ no. fh.o..(QFile.ReadOnly):
             r_ F..
 
-        data _ fh.readAll()
+        data _ fh.rA..
         codec _ QTextCodec.codecForHtml(data)
         unistr _ codec.toUnicode(data)
 

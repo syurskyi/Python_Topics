@@ -126,7 +126,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     sourceModel _ QStandardItemModel()
-    sourceModel.setHorizontalHeaderLabels(
+    sourceModel.sHHL..(
             ["First Column with spacing", "Second Column with spacing"])
 
     ___ i __ ra..(10000):

@@ -46,8 +46,8 @@ ____ ?.?C.. ______ (?D.., QIODevice, QFile, QFileInfo, __, QTextStream,
         ?U..)
 ____ ?.?G.. ______ QDesktopServices
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?CB,
-        QDialog, ?FD.., QGridLayout, QHBoxLayout, QHeaderView, QLabel,
-        QProgressDialog, ?PB.., QSizePolicy, QTableWidget,
+        QDialog, ?FD.., QGridLayout, QHBoxLayout, ?HV.., QLabel,
+        QProgressDialog, ?PB.., QSizePolicy, ?TW..,
         QTableWidgetItem)
 
 
@@ -189,11 +189,11 @@ c_ Window(QDialog):
         r_ comboBox
 
     ___ createFilesTable
-        filesTable _ QTableWidget(0, 2)
+        filesTable _ ?TW..(0, 2)
         filesTable.setSelectionBehavior(QAbstractItemView.SelectRows)
 
-        filesTable.setHorizontalHeaderLabels(("File Name", "Size"))
-        filesTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        filesTable.sHHL..(("File Name", "Size"))
+        filesTable.horizontalHeader().setSectionResizeMode(0, ?HV...Stretch)
         filesTable.verticalHeader().hide()
         filesTable.setShowGrid F..
 

@@ -19,9 +19,9 @@ c_ CoffeeForm ?.?W..
         roast _ ?.?CB..
         roast.aI..(roasts)
         la__ .aR..('Roast: ', roast)
-        reviews _ qtw.QTableWidget(columnCount_3)
+        reviews _ qtw.?TW..(columnCount_3)
         reviews.horizontalHeader().setSectionResizeMode(
-            2, qtw.QHeaderView.Stretch)
+            2, qtw.?HV...Stretch)
         la__ .aR..(reviews)
 
     ___ show_coffee  coffee_data, reviews):
@@ -29,7 +29,7 @@ c_ CoffeeForm ?.?W..
         coffee_name.sT..(coffee_data.g..('coffee_name'))
         roast.sCI..(coffee_data.g..('roast_id'))
         reviews.c..
-        reviews.setHorizontalHeaderLabels(
+        reviews.sHHL..(
             ['Reviewer', 'Date', 'Review'])
         reviews.setRowCount(le.(reviews))
         ___ i, review __ en..(reviews):

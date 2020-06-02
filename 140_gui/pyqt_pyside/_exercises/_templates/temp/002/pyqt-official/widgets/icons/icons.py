@@ -46,9 +46,9 @@ ____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
 ____ ?.?G.. ______ QIcon, QImage, ?P.., ?P..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
         ?A.., ?CB, ?FD.., QFrame, QGridLayout, QGroupBox,
-        QHBoxLayout, QHeaderView, QItemDelegate, QLabel, ?MW..,
+        QHBoxLayout, ?HV.., QItemDelegate, QLabel, ?MW..,
         ?MB.., QRadioButton, QSizePolicy, SB.., QStyle,
-        ?SF.., QTableWidget, QTableWidgetItem, QVBoxLayout, ?W..)
+        ?SF.., ?TW.., QTableWidgetItem, QVBoxLayout, ?W..)
 
 
 c_ IconSizeSpinBox(SB..):
@@ -346,16 +346,16 @@ c_ MainWindow ?MW..
     ___ createImagesGroupBox 
         imagesGroupBox _ QGroupBox("Images")
 
-        imagesTable _ QTableWidget()
+        imagesTable _ ?TW..()
         imagesTable.setSelectionMode(QAbstractItemView.NoSelection)
         imagesTable.setItemDelegate(ImageDelegate(self))
 
         imagesTable.horizontalHeader().setDefaultSectionSize(90)
         imagesTable.setColumnCount(3)
-        imagesTable.setHorizontalHeaderLabels(("Image", "Mode", "State"))
-        imagesTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
-        imagesTable.horizontalHeader().setSectionResizeMode(1, QHeaderView.Fixed)
-        imagesTable.horizontalHeader().setSectionResizeMode(2, QHeaderView.Fixed)
+        imagesTable.sHHL..(("Image", "Mode", "State"))
+        imagesTable.horizontalHeader().setSectionResizeMode(0, ?HV...Stretch)
+        imagesTable.horizontalHeader().setSectionResizeMode(1, ?HV...Fixed)
+        imagesTable.horizontalHeader().setSectionResizeMode(2, ?HV...Fixed)
         imagesTable.verticalHeader().hide()
 
         imagesTable.itemChanged.c..(changeIcon)

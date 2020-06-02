@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ pyqtProperty, __, QVariant
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout,
-        QItemEditorCreatorBase, QItemEditorFactory, QTableWidget,
+        QItemEditorCreatorBase, QItemEditorFactory, ?TW..,
         QTableWidgetItem, ?W..)
 
 
@@ -94,8 +94,8 @@ c_ Window(?W..):
             ("Ferdinand", ?C..('springgreen'))
         ]
 
-        table _ QTableWidget(3, 2)
-        table.setHorizontalHeaderLabels(["Name", "Hair Color"])
+        table _ ?TW..(3, 2)
+        table.sHHL..(["Name", "Hair Color"])
         table.verticalHeader().setVisible F..
         table.r..(150, 50)
 

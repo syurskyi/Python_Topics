@@ -86,7 +86,7 @@ c_ Window(?W..):
             ?MB...warning  "Error Opening File",
                     "Could not open '%s'" % fileName)
 
-        svgData _ file.readAll()
+        svgData _ file.rA..
 
         svgCharFormat _ QTextCharFormat()
         svgCharFormat.setObjectType(Window.SvgTextFormat)

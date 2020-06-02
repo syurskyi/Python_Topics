@@ -77,7 +77,7 @@ c_ MainWindow ?MW..
         __ pa__:
             inFile _ QFile(pa__)
             __ inFile.o..(QFile.ReadOnly | QFile.Text):
-                t__ _ inFile.readAll()
+                t__ _ inFile.rA..
 
                 ___
                     # Python v3.

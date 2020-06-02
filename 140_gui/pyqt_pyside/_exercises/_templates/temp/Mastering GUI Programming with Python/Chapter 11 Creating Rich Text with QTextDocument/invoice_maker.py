@@ -21,12 +21,12 @@ c_ InvoiceForm ?.?W..
         ___ label, widget __ inputs.items
             la__ .aR..(label, widget)
 
-        line_items _ qtw.QTableWidget(
+        line_items _ qtw.?TW..(
             rowCount_10, columnCount_3)
-        line_items.setHorizontalHeaderLabels(
+        line_items.sHHL..(
             ['Job', 'Rate', 'Hours'])
         line_items.horizontalHeader().setSectionResizeMode(
-            qtw.QHeaderView.Stretch)
+            qtw.?HV...Stretch)
         la__ .aR..(line_items)
         ___ row __ ra..(line_items.rowCount()):
             ___ col __ ra..(line_items.columnCount()):

@@ -29,7 +29,7 @@ c_ DataGrid(?W..):
 
     ___ initUI 
         tableView.horizontalHeader().setStretchLastSection( st.
-        tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        tableView.horizontalHeader().setSectionResizeMode(?HV...Stretch)
         layout.aW..(tableView)
 
         hLayout _ QHBoxLayout()

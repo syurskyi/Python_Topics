@@ -165,7 +165,7 @@ c_ Ui_AudioDevicesBase(object):
         populateTableButton _ ?W...?PB..(tab)
         populateTableButton.setObjectName("populateTableButton")
         verticalLayout_2.aW..(populateTableButton)
-        allFormatsTable _ ?W...QTableWidget(tab)
+        allFormatsTable _ ?W...?TW..(tab)
         allFormatsTable.setEditTriggers(?W...QAbstractItemView.NoEditTriggers)
         allFormatsTable.setDragDropOverwriteMode F..
         allFormatsTable.setSelectionMode(?W...QAbstractItemView.NoSelection)

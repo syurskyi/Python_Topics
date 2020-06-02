@@ -8,7 +8,7 @@ c_ TestHandler(BaseHTTPRequestHandler):
     ___ _print_request_data 
         print('POST request received')
         print("Content-length: {}".format(content_length))
-        print(data.decode('utf-8'))
+        print(data.d..('utf-8'))
 
     ___ _send_200 
         send_response(200)

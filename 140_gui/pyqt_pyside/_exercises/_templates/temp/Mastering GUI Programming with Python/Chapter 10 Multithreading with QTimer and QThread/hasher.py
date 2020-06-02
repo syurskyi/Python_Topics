@@ -54,9 +54,9 @@ c_ HashRunner(qtc.QRunnable):
     ___ run
         print(f'hashing {infile}')
         hasher.reset()
-        w__ o..(infile, 'rb') __ fh:
+        w__ o..(infile, __  __ fh:
             hasher.addData(fh.r..
-        hash_string _ bytes(hasher.result().toHex()).decode('UTF-8')
+        hash_string _ bytes(hasher.result().toHex()).d..('UTF-8')
         # Traditional method:
         #try:
         #    self.file_lock.lock()
