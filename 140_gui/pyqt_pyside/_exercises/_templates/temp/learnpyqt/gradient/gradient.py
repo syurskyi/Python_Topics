@@ -151,7 +151,7 @@ c_ Gradient(?W...?W..):
             ___ n, (stop, color) __ en..(_gradient):
                 __ to_exclude and n __ to_exclude:
                     # Allow us to skip the extreme ends of the gradient.
-                    continue
+                    c___
                 __ (
                     e.x() >_ stop * width - _handle_w and
                     e.x() <_ stop * width + _handle_w

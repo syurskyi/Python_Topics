@@ -73,7 +73,7 @@ c_ Receiver(QDialog):
         sWT..("Broadcast Receiver")
 
     ___ processPendingDatagrams
-        w__ udpSocket.hasPendingDatagrams
+        w__ udpSocket.hPD..
             datagram, host, port _ udpSocket.readDatagram(udpSocket.pendingDatagramSize())
 
             ___

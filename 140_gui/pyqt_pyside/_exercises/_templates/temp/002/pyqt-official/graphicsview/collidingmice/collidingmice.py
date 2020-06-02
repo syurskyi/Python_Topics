@@ -158,7 +158,7 @@ c_ Mouse(QGraphicsItem):
 
         ___ item __ dangerMice:
             __ item __ self:
-                continue
+                c___
         
             lineToMouse _ QLineF(QPointF(0, 0), mapFromItem(item, 0, 0))
             angleToMouse _ math.acos(lineToMouse.dx() / lineToMouse.length())

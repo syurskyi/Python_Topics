@@ -35,7 +35,7 @@ c_ TcpChatInterface(qtc.?O..):
         ___ socket __ connections:
             datastream _ qtc.?DS..(socket)
             __ no. socket.bytesAvailable
-                continue
+                c___
             #message_length = self.datastream.readUInt32()
             raw_message _ datastream.readQString()
             __ raw_message and delimiter __ raw_message:
@@ -45,7 +45,7 @@ c_ TcpChatInterface(qtc.?O..):
     ___ send_message  message):
         """Prepare and send a message"""
         raw_message _ f'{username}{delimiter}{message}'
-        __ client_socket.s.. !_ qtn.QAbstractSocket.ConnectedState:
+        __ client_socket.s.. !_ qtn.?AS...ConnectedState:
             client_socket.connectToHost(recipient, port)
         datastream _ qtc.?DS..(client_socket)
         #self.datastream.writeUInt32()
@@ -56,11 +56,11 @@ c_ TcpChatInterface(qtc.?O..):
 
     ___ on_error  socket_error):
         # Magic to get the enum name
-        error_index _ (qtn.QAbstractSocket
-                       .staticMetaObject
+        error_index _ (qtn.?AS..
+                       .sMO..
                        .indexOfEnumerator('SocketError'))
-        error _ (qtn.QAbstractSocket
-                 .staticMetaObject
+        error _ (qtn.?AS..
+                 .sMO..
                  .enumerator(error_index)
                  .valueToKey(socket_error))
         message _ f"There was a network error: {error}"
@@ -86,7 +86,7 @@ c_ ChatWindow ?.?W..
         message_view.ap..(f'<b>{username}: </b> {message}<br>')
 
     ___ send 
-        message _ message_entry.t__().strip()
+        message _ message_entry.t__().s..
         __ message:
             submitted.e..(message)
             message_entry.c..

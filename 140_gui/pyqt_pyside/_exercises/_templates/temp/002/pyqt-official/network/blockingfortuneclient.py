@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (pS.., ?DS.., QMutex, ?ML..,
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
         QLabel, QLineEdit, ?MB.., ?PB.., ?W..)
-____ ?.?N.. ______ (QAbstractSocket, ?HA.., QNetworkInterface,
+____ ?.?N.. ______ (?AS.., ?HA.., QNetworkInterface,
         QTcpSocket)
 
 
@@ -194,11 +194,11 @@ c_ BlockingClient(?W..):
         getFortuneButton.sE..( st.
 
     ___ displayError  socketError, message):
-        __ socketError __ QAbstractSocket.HostNotFoundError:
+        __ socketError __ ?AS...HostNotFoundError:
             ?MB...information  "Blocking Fortune Client",
                     "The host was not found. Please check the host and port "
                     "settings.")
-        ____ socketError __ QAbstractSocket.ConnectionRefusedError:
+        ____ socketError __ ?AS...ConnectionRefusedError:
             ?MB...information  "Blocking Fortune Client",
                     "The connection was refused by the peer. Make sure the "
                     "fortune server is running, and check that the host name "

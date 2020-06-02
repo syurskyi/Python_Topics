@@ -48,7 +48,7 @@ c_ InvoiceForm ?.?W..
         data['line_items'] _   # list
         ___ row __ ra..(line_items.rowCount()):
             __ no. line_items.item(row, 0):
-                continue
+                c___
             job _ line_items.item(row, 0).t__()
             rate _ line_items.cellWidget(row, 1).v..
             hours _ line_items.cellWidget(row, 2).v..

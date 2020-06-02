@@ -299,7 +299,7 @@ c_ LocationDialog(QDialog):
         ___ i __ ra..(2):
             __ i __ 0:
                 __ scope() __ QSettings.SystemScope:
-                    continue
+                    c___
 
                 actualScope _ QSettings.UserScope
             ____
@@ -308,7 +308,7 @@ c_ LocationDialog(QDialog):
             ___ j __ ra..(2):
                 __ j __ 0:
                     __ no. application
-                        continue
+                        c___
 
                     actualApplication _ application()
                 ____

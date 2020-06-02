@@ -188,7 +188,7 @@ c_ Node(QGraphicsItem):
         yvel _ 0.0
         ___ item __ scene().i..
             __ no. isinstance(item, Node):
-                continue
+                c___
 
             line _ QLineF(mapFromItem(item, 0, 0), QPointF(0, 0))
             dx _ line.dx()

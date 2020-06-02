@@ -122,7 +122,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
         dialog _ NicknameDialog()
         dialog.cancelButton.setVisible F..
         dialog.e..
-        m_nickname _ dialog.nickname.t__().strip()
+        m_nickname _ dialog.nickname.t__().s..
         action.e..(m_nickname, "joins the chat")
 
     ___ rebuildHistory 
@@ -164,7 +164,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
 
         __ dialog.e.. __ QDialog.Accepted:
             old _ m_nickname
-            m_nickname _ dialog.nickname.t__().strip()
+            m_nickname _ dialog.nickname.t__().s..
             action.e..(old, "is now known as %s" % m_nickname)
 
     @pyqtSlot()

@@ -47,7 +47,7 @@ ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., ?CB, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MB..,
         ?PB..)
-____ ?.?N.. ______ (QAbstractSocket, QHostInfo, QNetworkConfiguration,
+____ ?.?N.. ______ (?AS.., QHostInfo, QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpSocket)
 
@@ -175,13 +175,13 @@ c_ Client(QDialog):
         getFortuneButton.sE..( st.
 
     ___ displayError  socketError):
-        __ socketError __ QAbstractSocket.RemoteHostClosedError:
+        __ socketError __ ?AS...RemoteHostClosedError:
             pass
-        ____ socketError __ QAbstractSocket.HostNotFoundError:
+        ____ socketError __ ?AS...HostNotFoundError:
             ?MB...information  "Fortune Client",
                     "The host was not found. Please check the host name and "
                     "port settings.")
-        ____ socketError __ QAbstractSocket.ConnectionRefusedError:
+        ____ socketError __ ?AS...ConnectionRefusedError:
             ?MB...information  "Fortune Client",
                     "The connection was refused by the peer. Make sure the "
                     "fortune server is running, and check that the host name "

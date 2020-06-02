@@ -153,9 +153,9 @@ c_ DropSiteWindow(?W..):
             formatItem.setTextAlignment(__.AlignTop | __.AlignLeft)
 
             __ f.. __ 'text/plain':
-                t__ _ mimeData.t__().strip()
+                t__ _ mimeData.t__().s..
             ____ f.. __ 'text/html':
-                t__ _ mimeData.html().strip()
+                t__ _ mimeData.html().s..
             ____ f.. __ 'text/uri-list':
                 t__ _ " ".join([url.tS.. ___ url __ mimeData.urls()])
             ____

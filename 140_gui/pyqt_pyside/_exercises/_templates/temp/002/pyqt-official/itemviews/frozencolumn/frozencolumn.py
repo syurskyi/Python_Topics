@@ -132,7 +132,7 @@ c_ FreezeTableWidget(QTableView):
 
 ___ main(args):
     ___ split_and_strip(s, splitter):
-        r_ [s.strip() ___ s __ line.sp..(splitter)]
+        r_ [s.s.. ___ s __ line.sp..(splitter)]
 
     app _ ?A..(args)
     model _ QStandardItemModel()
