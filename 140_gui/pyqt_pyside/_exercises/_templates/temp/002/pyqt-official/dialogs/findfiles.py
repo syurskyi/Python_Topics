@@ -135,7 +135,7 @@ c_ Window(QDialog):
         foundFiles _   # list
 
         ___ i __ ra..(files.count()):
-            progressDialog.setValue(i)
+            progressDialog.sV..(i)
             progressDialog.setLabelText("Searching file number %d of %d..." % (i, files.count()))
             ?A...processEvents()
 

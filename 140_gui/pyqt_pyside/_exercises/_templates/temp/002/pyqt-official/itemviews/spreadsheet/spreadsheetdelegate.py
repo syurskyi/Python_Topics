@@ -37,7 +37,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, __
+____ ?.?C.. ______ ?D.., __
 ____ ?.?W.. ______ QCompleter, ?DTE.., QItemDelegate, QLineEdit
 
 
@@ -75,7 +75,7 @@ c_ SpreadSheetDelegate(QItemDelegate):
         __ isinstance(editor, QLineEdit):
             editor.sT..(index.model().data(index, __.ER..))
         ____ isinstance(editor, ?DTE..):
-            editor.setDate(QDate.fromString(
+            editor.setDate(?D...fromString(
                 index.model().data(index, __.ER..), parent().currentDateFormat))
 
     ___ setModelData  editor, model, index):

@@ -69,7 +69,7 @@ c_ Screenshot(?W..):
         sL..(mainLayout)
 
         shootScreen()
-        delaySpinBox.setValue(5)
+        delaySpinBox.sV..(5)
 
         sWT..("Screenshot")
         r..(300, 200)

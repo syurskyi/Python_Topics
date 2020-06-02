@@ -62,11 +62,11 @@ c_ Window(?W..):
         zSlider _ createSlider()
 
         xSlider.valueChanged.c..(glWidget.setXRotation)
-        glWidget.xRotationChanged.c..(xSlider.setValue)
+        glWidget.xRotationChanged.c..(xSlider.sV..)
         ySlider.valueChanged.c..(glWidget.setYRotation)
-        glWidget.yRotationChanged.c..(ySlider.setValue)
+        glWidget.yRotationChanged.c..(ySlider.sV..)
         zSlider.valueChanged.c..(glWidget.setZRotation)
-        glWidget.zRotationChanged.c..(zSlider.setValue)
+        glWidget.zRotationChanged.c..(zSlider.sV..)
 
         mainLayout _ QHBoxLayout()
         mainLayout.aW..(glWidget)
@@ -75,9 +75,9 @@ c_ Window(?W..):
         mainLayout.aW..(zSlider)
         sL..(mainLayout)
 
-        xSlider.setValue(15 * 16)
-        ySlider.setValue(345 * 16)
-        zSlider.setValue(0 * 16)
+        xSlider.sV..(15 * 16)
+        ySlider.sV..(345 * 16)
+        zSlider.sV..(0 * 16)
 
         sWT..("Hello GL")
 

@@ -151,7 +151,7 @@ c_ MainWindow(qtw.?MW..):
         webview _ tabs.currentWidget()
         __ webview:
             history _ webview.history()
-            ___ history_item __ reversed(history.items()):
+            ___ history_item __ reversed(history.i..()):
                 list_item _ qtw.QListWidgetItem()
                 list_item.setData(qtc.__.DR.., history_item.url())
                 history_list.aI..(list_item)

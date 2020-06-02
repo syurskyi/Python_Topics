@@ -144,13 +144,13 @@ c_ MainWindow ?MW..
         view.sM..(model)
 
         delegate _ PixelDelegate
-        view.setItemDelegate(delegate)
+        view.sID..(delegate)
 
         pixelSizeLabel _ QLabel("Pixel size:")
         pixelSizeSpinBox _ SB..()
         pixelSizeSpinBox.setMinimum(4)
         pixelSizeSpinBox.sM..(32)
-        pixelSizeSpinBox.setValue(12)
+        pixelSizeSpinBox.sV..(12)
 
         fileMenu _ QMenu("&File", self)
         openAction _ fileMenu.aA..("&Open...")
@@ -256,7 +256,7 @@ c_ MainWindow ?MW..
         y _ ItemSize / 2.0
 
         ___ row __ ra..(rows):
-            progress.setValue(row)
+            progress.sV..(row)
             ?A...processEvents()
             __ progress.wasCanceled
                 break
@@ -271,7 +271,7 @@ c_ MainWindow ?MW..
 
             y +_ ItemSize
 
-        progress.setValue(rows)
+        progress.sV..(rows)
 
         painter.restore()
         painter.end()
@@ -287,8 +287,8 @@ c_ MainWindow ?MW..
                 "representation\nof data in a simple custom model.")
 
     ___ updateView 
-        view.resizeColumnsToContents()
-        view.resizeRowsToContents()
+        view.rCTC..
+        view.rRTC..)
 
 
 __ ______ __ ______

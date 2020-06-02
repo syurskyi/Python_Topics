@@ -94,7 +94,7 @@ c_ LanguageChooser(QDialog):
             __ isinstance(object, MainWindow):
                 window _ object
 
-                ___ checkBox, w __ mainWindowForCheckBoxMap.items
+                ___ checkBox, w __ mainWindowForCheckBoxMap.i..
                     __ w __ window:
                         break
                 ____

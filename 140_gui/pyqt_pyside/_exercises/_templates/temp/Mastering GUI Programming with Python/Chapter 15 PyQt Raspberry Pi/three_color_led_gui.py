@@ -25,7 +25,7 @@ c_ ThreeColorLed
 
         pwms _ dict([
              (name, GPIO.PWM(pin, freq))
-             ___ name, pin __ pins.items()
+             ___ name, pin __ pins.i..()
             ])
         ___ pwm __ pwms.values
             pwm.start(0)

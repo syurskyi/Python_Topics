@@ -377,18 +377,18 @@ c_ PieView(QAbstractItemView):
         rect _ visualRect(index)
 
         __ rect.left() < area.left
-            horizontalScrollBar().setValue(
+            horizontalScrollBar().sV..(
                 horizontalScrollBar().v.. + rect.left() - area.left())
         ____ rect.right() > area.right
-            horizontalScrollBar().setValue(
+            horizontalScrollBar().sV..(
                 horizontalScrollBar().v.. + min(
                     rect.right() - area.right(), rect.left() - area.left()))
 
         __ rect.top() < area.top
-            verticalScrollBar().setValue(
+            verticalScrollBar().sV..(
                 verticalScrollBar().v.. + rect.top() - area.top())
         ____ rect.bottom() > area.bottom
-            verticalScrollBar().setValue(
+            verticalScrollBar().sV..(
                 verticalScrollBar().v.. + min(
                     rect.bottom() - area.bottom(), rect.top() - area.top()))
 

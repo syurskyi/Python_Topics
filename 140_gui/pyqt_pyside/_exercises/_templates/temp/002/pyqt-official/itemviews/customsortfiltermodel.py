@@ -43,10 +43,10 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QDate, ?DT__, QRegExp, QSortFilterProxyModel, __,
+____ ?.?C.. ______ (?D.., ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
 ____ ?.?G.. ______ QStandardItemModel
-____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QDateEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DE..,
         QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView,
         QVBoxLayout, ?W..)
 
@@ -55,8 +55,8 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
     ___  -   parent_None):
         super(MySortFilterProxyModel, self). - (parent)
 
-        minDate _ QDate()
-        maxDate _ QDate()
+        minDate _ ?D..()
+        maxDate _ ?D..()
 
     ___ setFilterMinimumDate  date):
         minDate _ date
@@ -85,7 +85,7 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
         leftData _ sourceModel().data(left)
         rightData _ sourceModel().data(right)
 
-        __ no. isinstance(leftData, QDate):
+        __ no. isinstance(leftData, ?D..):
             emailPattern _ QRegExp("([\\w\\.]*@[\\w\\.]*)")
 
             __ left.column() __ 1 and emailPattern.indexIn(leftData) !_ -1:
@@ -130,13 +130,13 @@ c_ Window(?W..):
         filterSyntaxComboBox.aI..("Regular expression", QRegExp.RegExp)
         filterSyntaxComboBox.aI..("Wildcard", QRegExp.Wildcard)
         filterSyntaxComboBox.aI..("Fixed string", QRegExp.FixedString)
-        fromDateEdit _ QDateEdit()
-        fromDateEdit.setDate(QDate(2006, 12, 22))
+        fromDateEdit _ ?DE..()
+        fromDateEdit.setDate(?D..(2006, 12, 22))
         fromDateEdit.setCalendarPopup( st.
         fromLabel _ QLabel("F&rom:")
         fromLabel.setBuddy(fromDateEdit)
-        toDateEdit _ QDateEdit()
-        toDateEdit.setDate(QDate(2007, 1, 5))
+        toDateEdit _ ?DE..()
+        toDateEdit.setDate(?D..(2007, 1, 5))
         toDateEdit.setCalendarPopup( st.
         toLabel _ QLabel("&To:")
         toLabel.setBuddy(toDateEdit)
@@ -212,25 +212,25 @@ ___ createMailModel(parent):
     model.setHeaderData(2, __.H.., "Date")
 
     addMail(model, "Happy New Year!", "Grace K. <grace@software-inc.com>",
-            ?DT__(QDate(2006, 12, 31), ?T..(17, 3)))
+            ?DT__(?D..(2006, 12, 31), ?T..(17, 3)))
     addMail(model, "Radically new concept", "Grace K. <grace@software-inc.com>",
-            ?DT__(QDate(2006, 12, 22), ?T..(9, 44)))
+            ?DT__(?D..(2006, 12, 22), ?T..(9, 44)))
     addMail(model, "Accounts", "pascale@nospam.com",
-            ?DT__(QDate(2006, 12, 31), ?T..(12, 50)))
+            ?DT__(?D..(2006, 12, 31), ?T..(12, 50)))
     addMail(model, "Expenses", "Joe Bloggs <joe@bloggs.com>",
-            ?DT__(QDate(2006, 12, 25), ?T..(11, 39)))
+            ?DT__(?D..(2006, 12, 25), ?T..(11, 39)))
     addMail(model, "Re: Expenses", "Andy <andy@nospam.com>",
-            ?DT__(QDate(2007, 1, 2), ?T..(16, 5)))
+            ?DT__(?D..(2007, 1, 2), ?T..(16, 5)))
     addMail(model, "Re: Accounts", "Joe Bloggs <joe@bloggs.com>",
-            ?DT__(QDate(2007, 1, 3), ?T..(14, 18)))
+            ?DT__(?D..(2007, 1, 3), ?T..(14, 18)))
     addMail(model, "Re: Accounts", "Andy <andy@nospam.com>",
-            ?DT__(QDate(2007, 1, 3), ?T..(14, 26)))
+            ?DT__(?D..(2007, 1, 3), ?T..(14, 26)))
     addMail(model, "Sports", "Linda Smith <linda.smith@nospam.com>",
-            ?DT__(QDate(2007, 1, 5), ?T..(11, 33)))
+            ?DT__(?D..(2007, 1, 5), ?T..(11, 33)))
     addMail(model, "AW: Sports", "Rolf Newschweinstein <rolfn@nospam.com>",
-            ?DT__(QDate(2007, 1, 5), ?T..(12, 0)))
+            ?DT__(?D..(2007, 1, 5), ?T..(12, 0)))
     addMail(model, "RE: Sports", "Petra Schmidt <petras@nospam.com>",
-            ?DT__(QDate(2007, 1, 5), ?T..(12, 1)))
+            ?DT__(?D..(2007, 1, 5), ?T..(12, 1)))
 
     r_ model
 

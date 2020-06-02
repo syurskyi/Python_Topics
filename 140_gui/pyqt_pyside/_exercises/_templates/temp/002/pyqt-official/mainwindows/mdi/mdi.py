@@ -408,8 +408,8 @@ c_ MainWindow ?MW..
 
     ___ writeSettings
         settings _ QSettings('Trolltech', 'MDI Example')
-        settings.setValue('pos', pos())
-        settings.setValue('size', size())
+        settings.sV..('pos', pos())
+        settings.sV..('size', size())
 
     ___ activeMdiChild
         activeSubWindow _ mdiArea.activeSubWindow()

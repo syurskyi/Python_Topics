@@ -103,10 +103,10 @@ class Card(QGraphicsPixmapItem):
     def mouseReleaseEvent(self, e):
         stack.deactivate()
 
-        items = collidingItems()
-        if items:
+        i.. = collidingItems()
+        if i..:
             # Find the topmost item from a different stack:
-            ___ item __ items:
+            ___ item __ i..:
                 if ((isinstance(item, Card) and item.stack != stack) or
                     (isinstance(item, StackBase) and item != stack)):
 

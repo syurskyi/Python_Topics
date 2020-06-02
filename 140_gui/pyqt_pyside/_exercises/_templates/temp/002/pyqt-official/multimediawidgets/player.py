@@ -238,7 +238,7 @@ c_ PlayerControls(?W..):
         r_ volumeSlider.v..
 
     ___ setVolume  volume):
-        volumeSlider.setValue(volume)
+        volumeSlider.sV..(volume)
 
     ___ isMuted
         r_ playerMuted
@@ -525,7 +525,7 @@ c_ Player(?W..):
         progress /_ 1000
 
         __ no. slider.isSliderDown
-            slider.setValue(progress)
+            slider.sV..(progress)
 
         updateDurationInfo(progress)
 
@@ -635,31 +635,31 @@ c_ Player(?W..):
         __ colorDialog __ N..:
             brightnessSlider _ ?S..(__.H..)
             brightnessSlider.setRange(-100, 100)
-            brightnessSlider.setValue(videoWidget.brightness())
+            brightnessSlider.sV..(videoWidget.brightness())
             brightnessSlider.sliderMoved.c..(
                     videoWidget.setBrightness)
             videoWidget.brightnessChanged.c..(
-                    brightnessSlider.setValue)
+                    brightnessSlider.sV..)
 
             contrastSlider _ ?S..(__.H..)
             contrastSlider.setRange(-100, 100)
-            contrastSlider.setValue(videoWidget.contrast())
+            contrastSlider.sV..(videoWidget.contrast())
             contrastSlider.sliderMoved.c..(videoWidget.setContrast)
-            videoWidget.contrastChanged.c..(contrastSlider.setValue)
+            videoWidget.contrastChanged.c..(contrastSlider.sV..)
 
             hueSlider _ ?S..(__.H..)
             hueSlider.setRange(-100, 100)
-            hueSlider.setValue(videoWidget.hue())
+            hueSlider.sV..(videoWidget.hue())
             hueSlider.sliderMoved.c..(videoWidget.setHue)
-            videoWidget.hueChanged.c..(hueSlider.setValue)
+            videoWidget.hueChanged.c..(hueSlider.sV..)
 
             saturationSlider _ ?S..(__.H..)
             saturationSlider.setRange(-100, 100)
-            saturationSlider.setValue(videoWidget.saturation())
+            saturationSlider.sV..(videoWidget.saturation())
             saturationSlider.sliderMoved.c..(
                     videoWidget.setSaturation)
             videoWidget.saturationChanged.c..(
-                    saturationSlider.setValue)
+                    saturationSlider.sV..)
 
             layout _ ?FL..
             layout.aR..("Brightness", brightnessSlider)

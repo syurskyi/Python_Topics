@@ -67,9 +67,9 @@ c_ SlidersGroup(QGroupBox):
         dial _ QDial()
         dial.sFP..(__.StrongFocus)
 
-        slider.valueChanged.c..(scrollBar.setValue)
-        scrollBar.valueChanged.c..(dial.setValue)
-        dial.valueChanged.c..(slider.setValue)
+        slider.valueChanged.c..(scrollBar.sV..)
+        scrollBar.valueChanged.c..(dial.sV..)
+        dial.valueChanged.c..(slider.sV..)
         dial.valueChanged.c..(valueChanged)
 
         __ orientation __ __.H..:
@@ -83,8 +83,8 @@ c_ SlidersGroup(QGroupBox):
         slidersLayout.aW..(dial)
         sL..(slidersLayout)
 
-    ___ setValue  value):    
-        slider.setValue(value)
+    ___ sV..  value):    
+        slider.sV..(value)
 
     ___ setMinimum  value):    
         slider.setMinimum(value)
@@ -121,18 +121,18 @@ c_ Window(?W..):
 
         createControls("Controls")
 
-        horizontalSliders.valueChanged.c..(verticalSliders.setValue)
-        verticalSliders.valueChanged.c..(valueSpinBox.setValue)
-        valueSpinBox.valueChanged.c..(horizontalSliders.setValue)
+        horizontalSliders.valueChanged.c..(verticalSliders.sV..)
+        verticalSliders.valueChanged.c..(valueSpinBox.sV..)
+        valueSpinBox.valueChanged.c..(horizontalSliders.sV..)
 
         layout _ QHBoxLayout()
         layout.aW..(controlsGroup)
         layout.aW..(stackedWidget)
         sL..(layout)
 
-        minimumSpinBox.setValue(0)
-        maximumSpinBox.setValue(20)
-        valueSpinBox.setValue(5)
+        minimumSpinBox.sV..(0)
+        maximumSpinBox.sV..(20)
+        valueSpinBox.sV..(5)
 
         sWT..("Sliders")
 

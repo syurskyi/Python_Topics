@@ -210,7 +210,7 @@ c_ AudioTest ?MW..
 
         m_generator.start()
         m_audioOutput.start(m_generator)
-        m_volumeSlider.setValue(m_audioOutput.volume() * 100)
+        m_volumeSlider.sV..(m_audioOutput.volume() * 100)
 
     ___ deviceChanged  index):
         m_pullTimer.s..

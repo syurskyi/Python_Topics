@@ -165,7 +165,7 @@ c_ Window(QDialog):
         durationSpinBox _ SB..()
         durationSpinBox.setRange(5, 60)
         durationSpinBox.setSuffix(" s")
-        durationSpinBox.setValue(15)
+        durationSpinBox.sV..(15)
 
         durationWarningLabel _ QLabel("(some systems might ignore this hint)")
         durationWarningLabel.setIndent(10)

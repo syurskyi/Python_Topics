@@ -202,7 +202,7 @@ c_ ImageViewer ?MW..
         zoomOutAct.sE..(scaleFactor > 0.333)
 
     ___ adjustScrollBar  scrollBar, factor):
-        scrollBar.setValue(int(factor * scrollBar.v..
+        scrollBar.sV..(int(factor * scrollBar.v..
                                 + ((factor - 1) * scrollBar.pageStep()/2)))
 
 

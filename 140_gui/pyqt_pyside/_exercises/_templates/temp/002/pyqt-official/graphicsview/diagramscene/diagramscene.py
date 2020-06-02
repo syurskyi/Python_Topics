@@ -351,10 +351,10 @@ c_ DiagramScene(QGraphicsScene):
 
     ___ mouseReleaseEvent  mouseEvent):
         __ line and myMode __ InsertLine:
-            startItems _ items(line.line().p1())
+            startItems _ i..(line.line().p1())
             __ le.(startItems) and startItems[0] __ line:
                 startItems.p.. 0)
-            endItems _ items(line.line().p2())
+            endItems _ i..(line.line().p2())
             __ le.(endItems) and endItems[0] __ line:
                 endItems.p.. 0)
 

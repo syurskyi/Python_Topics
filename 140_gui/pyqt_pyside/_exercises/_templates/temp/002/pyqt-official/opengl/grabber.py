@@ -321,9 +321,9 @@ c_ MainWindow ?MW..
         centralLayout.aW..(zSlider, 3, 0, 1, 2)
         centralWidget.sL..(centralLayout)
 
-        xSlider.setValue(15 * 16)
-        ySlider.setValue(345 * 16)
-        zSlider.setValue(0 * 16)
+        xSlider.sV..(15 * 16)
+        ySlider.sV..(345 * 16)
+        zSlider.sV..(0 * 16)
 
         sWT..("Grabber")
         r..(400, 300)
@@ -375,7 +375,7 @@ c_ MainWindow ?MW..
         slider.setTickPosition(?S...TicksRight)
 
         slider.valueChanged.c..(setterSlot)
-        changedSignal.c..(slider.setValue)
+        changedSignal.c..(slider.sV..)
 
         r_ slider
 

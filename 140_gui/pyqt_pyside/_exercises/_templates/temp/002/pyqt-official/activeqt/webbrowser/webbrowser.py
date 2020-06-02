@@ -98,7 +98,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         pb.s..
         pb.setRange(0, b)
-        pb.setValue(a)
+        pb.sV..(a)
 
     ___ on_WebBrowser_CommandStateChange  cmd, on):
         __ cmd __ 1:

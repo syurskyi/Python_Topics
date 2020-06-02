@@ -93,7 +93,7 @@ c_ MainWindow(qtw.?MW..):
         )
         inputs['Team'].aI..(teams)
 
-        ___ label, widget __ inputs.items
+        ___ label, widget __ inputs.i..
             cx_form.la__ .aR..(label, widget)
         #self.submit = qtw.QPushButton(
         submit _ ColorButton(

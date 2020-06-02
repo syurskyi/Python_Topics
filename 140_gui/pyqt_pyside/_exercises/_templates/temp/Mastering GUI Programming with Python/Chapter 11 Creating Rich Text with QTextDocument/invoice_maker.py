@@ -14,11 +14,11 @@ c_ InvoiceForm ?.?W..
         inputs _   # dict
         inputs['Customer Name'] _ qtw.?LE..
         inputs['Customer Address'] _ qtw.?PTE..
-        inputs['Invoice Date'] _ qtw.QDateEdit(
-            date_qtc.QDate.currentDate(), calendarPopup_ st.
+        inputs['Invoice Date'] _ qtw.?DE..(
+            date_qtc.?D...currentDate(), calendarPopup_ st.
         inputs['Days until Due'] _ qtw.SB..(
             minimum_0, maximum_60, value_30)
-        ___ label, widget __ inputs.items
+        ___ label, widget __ inputs.i..
             la__ .aR..(label, widget)
 
         line_items _ qtw.?TW..(

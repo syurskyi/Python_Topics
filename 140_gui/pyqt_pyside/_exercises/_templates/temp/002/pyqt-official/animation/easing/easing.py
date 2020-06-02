@@ -121,9 +121,9 @@ c_ Window(?W..):
         m_ui.buttonGroup.setId(m_ui.circleRadio, 1)
 
         dummy _ QEasingCurve()
-        m_ui.periodSpinBox.setValue(dummy.period())
-        m_ui.amplitudeSpinBox.setValue(dummy.amplitude())
-        m_ui.overshootSpinBox.setValue(dummy.overshoot())
+        m_ui.periodSpinBox.sV..(dummy.period())
+        m_ui.amplitudeSpinBox.sV..(dummy.amplitude())
+        m_ui.overshootSpinBox.sV..(dummy.overshoot())
 
         m_ui.easingCurvePicker.currentRowChanged.c..(curveChanged)
         m_ui.buttonGroup.buttonClicked[int].c..(pathChanged)
@@ -156,7 +156,7 @@ c_ Window(?W..):
         # The original C++ code uses undocumented calls to get the names of the
         # different curve types.  We do the Python equivalant (but without
         # cheating).
-        curve_types _ [(n, c) ___ n, c __ QEasingCurve.__dict__.items()
+        curve_types _ [(n, c) ___ n, c __ QEasingCurve.__dict__.i..()
                 __ isinstance(c, QEasingCurve.Type) and c !_ QEasingCurve.Custom]
         curve_types.s..(key_lambda ct: ct[1])
 

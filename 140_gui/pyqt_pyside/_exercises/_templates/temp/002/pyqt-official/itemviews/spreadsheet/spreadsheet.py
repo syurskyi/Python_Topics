@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, QPoint, __
+____ ?.?C.. ______ ?D.., QPoint, __
 ____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         ?CB, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
@@ -78,7 +78,7 @@ c_ SpreadSheet ?MW..
             table.setHorizontalHeaderItem(c, QTableWidgetItem(character))
 
         table.setItemPrototype(table.item(rows - 1, cols - 1))
-        table.setItemDelegate(SpreadSheetDelegate(self))
+        table.sID..(SpreadSheetDelegate(self))
         createActions()
         updateColor(0)
         setupMenuBar()
@@ -175,7 +175,7 @@ c_ SpreadSheet ?MW..
         newFormat _ currentDateFormat _ action.t__()
         ___ row __ ra..(table.rowCount()):
             item _ table.item(row, 1)
-            date _ QDate.fromString(item.t__(), oldFormat)
+            date _ ?D...fromString(item.t__(), oldFormat)
             item.sT..(date.toString(newFormat))
 
     ___ updateStatus  item):

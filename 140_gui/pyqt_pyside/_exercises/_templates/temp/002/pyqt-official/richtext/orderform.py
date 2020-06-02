@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, __
+____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ (?F.., QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
@@ -115,7 +115,7 @@ c_ MainWindow ?MW..
         cursor.insertBlock()
         cursor.insertBlock()
 
-        date _ QDate.currentDate()
+        date _ ?D...currentDate()
         cursor.insertText("Date: %s" % date.toString('d MMMM yyyy'),
                 textFormat)
         cursor.insertBlock()
@@ -218,7 +218,7 @@ c_ DetailsDialog(QDialog):
     ___  -   title, parent):
         super(DetailsDialog, self). - (parent)
 
-        items _ ("T-shirt", "Badge", "Reference book", "Coffee cup")
+        i.. _ ("T-shirt", "Badge", "Reference book", "Coffee cup")
 
         nameLabel _ QLabel("Name:")
         addressLabel _ QLabel("Address:")
@@ -249,9 +249,9 @@ c_ DetailsDialog(QDialog):
         sWT..(title)
 
     ___ setupItemsTable
-        itemsTable _ ?TW..(le.(items), 2)
+        itemsTable _ ?TW..(le.(i..), 2)
 
-        ___ row, item __ en..(items):
+        ___ row, item __ en..(i..):
             name _ QTableWidgetItem(item)
             name.setFlags(__.ItemIsEnabled | __.ItemIsSelectable)
             itemsTable.setItem(row, 0, name)
@@ -261,7 +261,7 @@ c_ DetailsDialog(QDialog):
     ___ orderItems
         orderList _   # list
 
-        ___ row __ ra..(le.(items)):
+        ___ row __ ra..(le.(i..)):
             t__ _ itemsTable.item(row, 0).t__()
             quantity _ int(itemsTable.item(row, 1).data(__.DR..))
             orderList.ap..((t__, max(0, quantity)))

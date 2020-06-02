@@ -59,7 +59,7 @@ c_ CounterLabelPlugin(QPyDesignerCustomWidgetPlugin):
     # appropriate parent.
     ___ createWidget  parent):
         widget _ CounterLabel(parent)
-        widget.setValue(1)
+        widget.sV..(1)
         r_ widget
 
     # This method returns the name of the custom widget class that is provided

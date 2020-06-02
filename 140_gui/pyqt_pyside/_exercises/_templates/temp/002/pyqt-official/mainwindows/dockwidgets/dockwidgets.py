@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, QFile, __, QTextStream
+____ ?.?C.. ______ ?D.., QFile, __, QTextStream
 ____ ?.?G.. ______ (?F.., QIcon, ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
@@ -98,7 +98,7 @@ c_ MainWindow ?MW..
         cursor.insertBlock()
         cursor.insertText("Some Country")
         cursor.setPosition(topFrame.lastPosition())
-        cursor.insertText(QDate.currentDate().toString("d MMMM yyyy"),
+        cursor.insertText(?D...currentDate().toString("d MMMM yyyy"),
                 textFormat)
         cursor.insertBlock()
         cursor.insertBlock()

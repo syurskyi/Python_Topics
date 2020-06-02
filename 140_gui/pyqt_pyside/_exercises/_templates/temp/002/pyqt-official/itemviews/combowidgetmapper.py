@@ -75,9 +75,9 @@ c_ Window(?W..):
         # Set up the mapper.
         mapper _ QDataWidgetMapper
         mapper.sM..(model)
-        mapper.addMapping(nameEdit, 0)
-        mapper.addMapping(addressEdit, 1)
-        mapper.addMapping(typeComboBox, 2, b'currentIndex')
+        mapper.aM..(nameEdit, 0)
+        mapper.aM..(addressEdit, 1)
+        mapper.aM..(typeComboBox, 2, b'currentIndex')
 
         # Set up connections and layouts.
         previousButton.c__.c..(mapper.toPrevious)
@@ -99,8 +99,8 @@ c_ Window(?W..):
         mapper.toFirst()
  
     ___ setupModel 
-        items _ ("Home", "Work", "Other")
-        typeModel _ QStringListModel(items, self)
+        i.. _ ("Home", "Work", "Other")
+        typeModel _ QStringListModel(i.., self)
 
         model _ QStandardItemModel(5, 3, self)
 

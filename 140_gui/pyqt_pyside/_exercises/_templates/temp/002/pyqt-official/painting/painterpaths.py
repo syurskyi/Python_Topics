@@ -256,7 +256,7 @@ c_ Window(?W..):
         fillRuleChanged()
         fillGradientChanged()
         penColorChanged()
-        penWidthSpinBox.setValue(2)
+        penWidthSpinBox.sV..(2)
 
         sWT..("Painter Paths")
 

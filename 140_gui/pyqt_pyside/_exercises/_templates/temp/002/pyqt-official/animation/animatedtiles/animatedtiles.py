@@ -156,13 +156,13 @@ __ ______ __ ______
 
     scene _ QGraphicsScene(-350, -350, 700, 700)
 
-    items _   # list
+    i.. _   # list
     ___ i __ ra..(64):
         item _ Pixmap(kineticPix)
         item.pixmap_item.setOffset(-kineticPix.width() / 2,
                 -kineticPix.height() / 2)
         item.pixmap_item.setZValue(i)
-        items.ap..(item)
+        i...ap..(item)
         scene.aI..(item.pixmap_item)
 
     # Buttons.
@@ -193,7 +193,7 @@ __ ______ __ ______
     centeredState _ QState(rootState)
 
     # Values.
-    ___ i, item __ en..(items):
+    ___ i, item __ en..(i..):
         # Ellipse.
         ellipseState.assignProperty(item, 'pos',
                 QPointF(math.cos((i / 63.0) * 6.28) * 250,
@@ -231,7 +231,7 @@ __ ______ __ ______
     rootState.setInitialState(centeredState)
 
     group _ QParallelAnimationGroup()
-    ___ i, item __ en..(items):
+    ___ i, item __ en..(i..):
         anim _ QPropertyAnimation(item, b'pos')
         anim.setDuration(750 + i * 25)
         anim.setEasingCurve(QEasingCurve.InOutBack)

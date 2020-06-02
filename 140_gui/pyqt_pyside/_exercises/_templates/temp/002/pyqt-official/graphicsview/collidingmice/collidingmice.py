@@ -152,7 +152,7 @@ c_ Mouse(QGraphicsItem):
             angle -_ 0.25
 
         # Try not to crash with any other mice.
-        dangerMice _ scene().items(QPolygonF([mapToScene(0, 0),
+        dangerMice _ scene().i..(QPolygonF([mapToScene(0, 0),
                                                          mapToScene(-30, -50),
                                                          mapToScene(30, -50)]))
 

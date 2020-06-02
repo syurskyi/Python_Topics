@@ -43,10 +43,10 @@
 ###########################################################################
 
 
-____ ?.?C.. ______ QDate, QLocale, __
+____ ?.?C.. ______ ?D.., QLocale, __
 ____ ?.?G.. ______ ?F.., QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
-        ?CB, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
+        ?CB, ?DE.., QGridLayout, QGroupBox, QHBoxLayout, QLabel,
         QLayout, ?W..)
 
 
@@ -145,7 +145,7 @@ c_ Window(?W..):
 
     ___ reformatCalendarPage
         __ firstFridayCheckBox.isChecked
-            firstFriday _ QDate(calendar.yearShown(),
+            firstFriday _ ?D..(calendar.yearShown(),
                     calendar.monthShown(), 1)
 
             w__ firstFriday.dayOfWeek() !_ __.Friday:
@@ -158,7 +158,7 @@ c_ Window(?W..):
 
         # May 1st in Red takes precedence.
         __ mayFirstCheckBox.isChecked
-            mayFirst _ QDate(calendar.yearShown(), 5, 1)
+            mayFirst _ ?D..(calendar.yearShown(), 5, 1)
 
             mayFirstFormat _ QTextCharFormat()
             mayFirstFormat.setForeground(__.red)
@@ -169,8 +169,8 @@ c_ Window(?W..):
         previewGroupBox _ QGroupBox("Preview")
 
         calendar _ QCalendarWidget()
-        calendar.setMinimumDate(QDate(1900, 1, 1))
-        calendar.setMaximumDate(QDate(3000, 1, 1))
+        calendar.setMinimumDate(?D..(1900, 1, 1))
+        calendar.setMaximumDate(?D..(3000, 1, 1))
         calendar.setGridVisible( st.
         calendar.currentPageChanged.c..(reformatCalendarPage)
 
@@ -293,7 +293,7 @@ c_ Window(?W..):
     ___ createDatesGroupBox
         datesGroupBox _ QGroupBox(tr("Dates"))
 
-        minimumDateEdit _ QDateEdit()
+        minimumDateEdit _ ?DE..()
         minimumDateEdit.setDisplayFormat('MMM d yyyy')
         minimumDateEdit.setDateRange(calendar.minimumDate(),
                                           calendar.maximumDate())
@@ -302,7 +302,7 @@ c_ Window(?W..):
         minimumDateLabel _ QLabel("&Minimum Date:")
         minimumDateLabel.setBuddy(minimumDateEdit)
 
-        currentDateEdit _ QDateEdit()
+        currentDateEdit _ ?DE..()
         currentDateEdit.setDisplayFormat('MMM d yyyy')
         currentDateEdit.setDate(calendar.selectedDate())
         currentDateEdit.setDateRange(calendar.minimumDate(),
@@ -311,7 +311,7 @@ c_ Window(?W..):
         currentDateLabel _ QLabel("&Current Date:")
         currentDateLabel.setBuddy(currentDateEdit)
 
-        maximumDateEdit _ QDateEdit()
+        maximumDateEdit _ ?DE..()
         maximumDateEdit.setDisplayFormat('MMM d yyyy')
         maximumDateEdit.setDateRange(calendar.minimumDate(),
                 calendar.maximumDate())

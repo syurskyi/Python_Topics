@@ -118,7 +118,7 @@ c_ MoviePlayer(?W..):
             ____ movie.currentFrameNumber() > frameSlider.maximum
                 frameSlider.sM..(movie.currentFrameNumber())
 
-            frameSlider.setValue(movie.currentFrameNumber())
+            frameSlider.sV..(movie.currentFrameNumber())
         ____
             frameSlider.sM..(0)
 
@@ -147,7 +147,7 @@ c_ MoviePlayer(?W..):
 
         speedSpinBox _ SB..()
         speedSpinBox.setRange(1, 9999)
-        speedSpinBox.setValue(100)
+        speedSpinBox.sV..(100)
         speedSpinBox.setSuffix("%")
 
         controlsLayout _ QGridLayout()

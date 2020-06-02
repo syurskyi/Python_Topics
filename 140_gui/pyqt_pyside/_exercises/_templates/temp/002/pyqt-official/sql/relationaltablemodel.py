@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ ?A.., QTableView
-____ ?.?S.. ______ (QSqlQuery, QSqlRelation, QSqlRelationalDelegate,
+____ ?.?S.. ______ (QSqlQuery, QSqlRelation, ?SRD..,
         QSqlRelationalTableModel, ?STM..)
 
 ______ connection
@@ -68,7 +68,7 @@ ___ initializeModel(model):
 ___ createView(title, model):
     view _ ?TV..
     view.sM..(model)
-    view.setItemDelegate(QSqlRelationalDelegate(view))
+    view.sID..(?SRD..(view))
     view.sWT..(title)
 
     r_ view

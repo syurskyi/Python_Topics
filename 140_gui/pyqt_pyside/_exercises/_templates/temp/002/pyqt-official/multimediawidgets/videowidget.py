@@ -117,7 +117,7 @@ c_ VideoPlayer(?W..):
                     style().standardIcon(QStyle.SP_MediaPlay))
 
     ___ pC..  position):
-        positionSlider.setValue(position)
+        positionSlider.sV..(position)
 
     ___ dC..  duration):
         positionSlider.setRange(0, duration)

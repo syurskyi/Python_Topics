@@ -348,7 +348,7 @@ c_ MainWindow ?MW..
 
         imagesTable _ ?TW..()
         imagesTable.setSelectionMode(QAbstractItemView.NoSelection)
-        imagesTable.setItemDelegate(ImageDelegate(self))
+        imagesTable.sID..(ImageDelegate(self))
 
         imagesTable.hH.. .setDefaultSectionSize(90)
         imagesTable.setColumnCount(3)
@@ -377,7 +377,7 @@ c_ MainWindow ?MW..
 
         otherSpinBox _ IconSizeSpinBox()
         otherSpinBox.setRange(8, 128)
-        otherSpinBox.setValue(64)
+        otherSpinBox.sV..(64)
 
         smallRadioButton.t__.c..(changeSize)
         largeRadioButton.t__.c..(changeSize)

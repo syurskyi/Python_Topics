@@ -26,7 +26,7 @@ c_ SettingsDialog(qtw.QDialog):
 
     ___ accept
         #self.settings['show_warnings'] = self.show_warnings_cb.isChecked()
-        settings.setValue(
+        settings.sV..(
             'show_warnings',
             show_warnings_cb.isChecked()
         )

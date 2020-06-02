@@ -72,8 +72,8 @@ c_ Ui_Form(object):
         verticalLayout_2.aW..(groupBox_2)
 
         retranslateUi(Form)
-        horizontalSlider.valueChanged['int'].c..(spinBox.setValue)
-        spinBox.valueChanged['int'].c..(horizontalSlider.setValue)
+        horizontalSlider.valueChanged['int'].c..(spinBox.sV..)
+        spinBox.valueChanged['int'].c..(horizontalSlider.sV..)
         ?C...QMetaObject.connectSlotsByName(Form)
         Form.setTabOrder(groupBox, hostName)
         Form.setTabOrder(hostName, dateTimeEdit)

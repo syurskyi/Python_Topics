@@ -116,7 +116,7 @@ c_ WidgetGallery(QDialog):
     ___ advanceProgressBar 
         curVal _ progressBar.v..
         maxVal _ progressBar.maximum()
-        progressBar.setValue(curVal + (maxVal - curVal) / 100)
+        progressBar.sV..(curVal + (maxVal - curVal) / 100)
 
     ___ createTopLeftGroupBox 
         topLeftGroupBox _ QGroupBox("Group 1")
@@ -198,19 +198,19 @@ c_ WidgetGallery(QDialog):
         lineEdit.setEchoMode(QLineEdit.Password)
 
         spinBox _ SB..(bottomRightGroupBox)
-        spinBox.setValue(50)
+        spinBox.sV..(50)
 
         dateTimeEdit _ ?DTE..(bottomRightGroupBox)
         dateTimeEdit.setDateTime(?DT__.currentDateTime())
 
         slider _ ?S..(__.H.., bottomRightGroupBox)
-        slider.setValue(40)
+        slider.sV..(40)
 
         scrollBar _ QScrollBar(__.H.., bottomRightGroupBox)
-        scrollBar.setValue(60)
+        scrollBar.sV..(60)
 
         dial _ QDial(bottomRightGroupBox)
-        dial.setValue(30)
+        dial.sV..(30)
         dial.setNotchesVisible( st.
 
         layout _ QGridLayout()
@@ -226,7 +226,7 @@ c_ WidgetGallery(QDialog):
     ___ createProgressBar 
         progressBar _ QProgressBar()
         progressBar.setRange(0, 10000)
-        progressBar.setValue(0)
+        progressBar.sV..(0)
 
         timer _ ?T..
         timer.timeout.c..(advanceProgressBar)

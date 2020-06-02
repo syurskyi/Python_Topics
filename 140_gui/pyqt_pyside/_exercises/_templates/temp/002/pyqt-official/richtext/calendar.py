@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, __
+____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ (?C.., ?F.., QTextCharFormat, QTextLength,
         QTextTableFormat)
 ____ ?.?W.. ______ (?A.., ?CB, ?DTE..,
@@ -54,7 +54,7 @@ c_ MainWindow ?MW..
     ___  - 
         super(MainWindow, self). - ()
 
-        selectedDate _ QDate.currentDate()
+        selectedDate _ ?D...currentDate()
         fontSize _ 10
 
         centralWidget _ ?W..
@@ -63,11 +63,11 @@ c_ MainWindow ?MW..
         monthCombo _ ?CB()
 
         ___ month __ ra..(1, 13):
-            monthCombo.aI..(QDate.longMonthName(month))
+            monthCombo.aI..(?D...longMonthName(month))
 
         yearEdit _ ?DTE..()
         yearEdit.setDisplayFormat('yyyy')
-        yearEdit.setDateRange(QDate(1753, 1, 1), QDate(8000, 1, 1))
+        yearEdit.setDateRange(?D..(1753, 1, 1), ?D..(8000, 1, 1))
 
         monthCombo.sCI..(selectedDate.month() - 1)
         yearEdit.setDate(selectedDate)
@@ -75,7 +75,7 @@ c_ MainWindow ?MW..
         fontSizeLabel _ QLabel("Font size:")
         fontSizeSpinBox _ SB..()
         fontSizeSpinBox.setRange(1, 64)
-        fontSizeSpinBox.setValue(10)
+        fontSizeSpinBox.sV..(10)
 
         editor _ QTextBrowser()
         insertCalendar()
@@ -105,7 +105,7 @@ c_ MainWindow ?MW..
         cursor _ editor.textCursor()
         cursor.beginEditBlock()
 
-        date _ QDate(selectedDate.year(), selectedDate.month(), 1)
+        date _ ?D..(selectedDate.year(), selectedDate.month(), 1)
 
         tableFormat _ QTextTableFormat()
         tableFormat.setAlignment(__.AlignHCenter)
@@ -141,7 +141,7 @@ c_ MainWindow ?MW..
         ___ weekDay __ ra..(1, 8):
             cell _ table.cellAt(0, weekDay-1)
             cellCursor _ cell.firstCursorPosition()
-            cellCursor.insertText(QDate.longDayName(weekDay), boldFormat)
+            cellCursor.insertText(?D...longDayName(weekDay), boldFormat)
 
         table.insertRows(table.rows(), 1)
 
@@ -150,7 +150,7 @@ c_ MainWindow ?MW..
             cell _ table.cellAt(table.rows()-1, weekDay-1)
             cellCursor _ cell.firstCursorPosition()
 
-            __ date __ QDate.currentDate
+            __ date __ ?D...currentDate
                 cellCursor.insertText(str(date.day()), highlightedFormat)
             ____
                 cellCursor.insertText(str(date.day()), f..)
@@ -162,19 +162,19 @@ c_ MainWindow ?MW..
 
         cursor.endEditBlock()
 
-        sWT..("Calendar for %s %d" % (QDate.longMonthName(selectedDate.month()), selectedDate.year()))
+        sWT..("Calendar for %s %d" % (?D...longMonthName(selectedDate.month()), selectedDate.year()))
 
     ___ setfontSize  size):
         fontSize _ size
         insertCalendar()
 
     ___ setMonth  month):
-        selectedDate _ QDate(selectedDate.year(), month + 1,
+        selectedDate _ ?D..(selectedDate.year(), month + 1,
                 selectedDate.day())
         insertCalendar()
 
     ___ setYear  date):
-        selectedDate _ QDate(date.year(), selectedDate.month(),
+        selectedDate _ ?D..(date.year(), selectedDate.month(),
                 selectedDate.day())
         insertCalendar()
 

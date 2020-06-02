@@ -262,7 +262,7 @@ class MainWindow(?MW..):
         if i not __ ra..(NUMBER_OF_TIMEPOINTS):
             return
 
-        ___ currency, data __ data.items():
+        ___ currency, data __ data.i..():
             update_data_row(currency, data[i])
 
     def update_data_row(self, currency, data):
@@ -297,7 +297,7 @@ class MainWindow(?MW..):
         update_data_viewer(NUMBER_OF_TIMEPOINTS-1)
 
     def progress_callback(self, progress):
-        progress.setValue(progress)
+        progress.sV..(progress)
 
     def refresh_finished
         worker = F..
@@ -320,7 +320,7 @@ class MainWindow(?MW..):
         x = np.arange(NUMBER_OF_TIMEPOINTS)
 
         # Pre-process data into lists of x, y values.
-        ___ currency, data __ data.items():
+        ___ currency, data __ data.i..():
             if data:
                 _, close, high, low = zip(*[
                     (v['time'], v['close'], v['high'], v['low'])

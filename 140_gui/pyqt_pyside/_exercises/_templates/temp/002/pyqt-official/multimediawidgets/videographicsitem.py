@@ -68,7 +68,7 @@ c_ VideoPlayer(?W..):
 
         rotateSlider _ ?S..(__.H..)
         rotateSlider.setRange(-180,  180)
-        rotateSlider.setValue(0)
+        rotateSlider.sV..(0)
         rotateSlider.valueChanged.c..(rotateVideo)
 
         openButton _ ?PB..("Open...")
@@ -128,7 +128,7 @@ c_ VideoPlayer(?W..):
                     style().standardIcon(QStyle.SP_MediaPlay))
 
     ___ pC..  position):
-        positionSlider.setValue(position)
+        positionSlider.sV..(position)
 
     ___ dC..  duration):
         positionSlider.setRange(0, duration)

@@ -53,10 +53,10 @@ class UnzipWorker(QRunnable):
     @pyqtSlot()
     def run
         ___
-            items = zipfile.infolist()
-            total_n = len(items)
+            i.. = zipfile.infolist()
+            total_n = len(i..)
 
-            ___ n, item __ en..(items, 1):
+            ___ n, item __ en..(i.., 1):
                 if not an.(item.filename.s_w_(p) ___ p __ EXCLUDE_PATHS):
                     zipfile.extract(item)
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, ?S.., __
+____ ?.?C.. ______ ?D.., ?S.., __
 ____ ?.?G.. ______ QIcon
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
@@ -132,7 +132,7 @@ c_ QueryPage(?W..):
         nameEdit _ ?LE..
 
         dateLabel _ QLabel("Released after:")
-        dateEdit _ ?DTE..(QDate.currentDate())
+        dateEdit _ ?DTE..(?D...currentDate())
 
         releasesCheckBox _ QCheckBox("Releases")
         upgradesCheckBox _ QCheckBox("Upgrades")

@@ -117,7 +117,7 @@ c_ Server(QDialog):
 
             settings _ QSettings(QSettings.UserScope, 'QtProject')
             settings.beginGroup('QtNetwork')
-            settings.setValue('DefaultNetworkConfiguration', id)
+            settings.sV..('DefaultNetworkConfiguration', id)
             settings.endGroup();
 
         tcpServer _ QTcpServer

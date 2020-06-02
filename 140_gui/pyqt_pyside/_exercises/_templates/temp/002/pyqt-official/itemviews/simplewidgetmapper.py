@@ -71,9 +71,9 @@ c_ Window(?W..):
         # Set up the mapper.
         mapper _ QDataWidgetMapper
         mapper.sM..(model)
-        mapper.addMapping(nameEdit, 0)
-        mapper.addMapping(addressEdit, 1)
-        mapper.addMapping(ageSpinBox, 2)
+        mapper.aM..(nameEdit, 0)
+        mapper.aM..(addressEdit, 1)
+        mapper.aM..(ageSpinBox, 2)
 
         # Set up connections and layouts.
         previousButton.c__.c..(mapper.toPrevious)

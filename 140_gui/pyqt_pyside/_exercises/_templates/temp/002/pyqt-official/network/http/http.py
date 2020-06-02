@@ -203,7 +203,7 @@ c_ HttpWindow(QDialog):
             r_
 
         progressDialog.sM..(totalBytes)
-        progressDialog.setValue(bytesRead)
+        progressDialog.sV..(bytesRead)
 
     ___ enableDownloadButton 
         downloadButton.sE..(urlLineEdit.t__() !_ '')

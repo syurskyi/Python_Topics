@@ -108,7 +108,7 @@ c_ CounterLabel(?W..):
         __ _minimum > _maximum:
             sM..(_minimum)
         __ _minimum > _value:
-            setValue(_minimum)
+            sV..(_minimum)
 
     minimum _ pyqtProperty(int, getMinimum, setMinimum)
 
@@ -119,7 +119,7 @@ c_ CounterLabel(?W..):
         _maximum _ value
         _minimum _ min(_minimum, _maximum)
         __ _maximum < _value:
-            setValue(_maximum)
+            sV..(_maximum)
         rescale()
         reposition()
 
@@ -144,7 +144,7 @@ c_ CounterLabel(?W..):
 
     # The setter method for the value property can also be used as a slot.
     @pyqtSlot(int)
-    ___ setValue  value):
+    ___ sV..  value):
         __ no. _minimum <_ value <_ _maximum:
             r_
         _value _ value
@@ -152,18 +152,18 @@ c_ CounterLabel(?W..):
         valueChanged[str].e..(str(value + _offset))
         reposition()
 
-    value _ pyqtProperty(int, getValue, setValue)
+    value _ pyqtProperty(int, getValue, sV..)
 
     # Like QAbstractSpinBox, we provide stepUp() and stepDown() slots to
     # enable the value to be incremented and decremented.
 
     @pyqtSlot()
     ___ stepUp 
-        setValue(_value + 1)
+        sV..(_value + 1)
 
     @pyqtSlot()
     ___ stepDown 
-        setValue(_value - 1)
+        sV..(_value - 1)
 
 
 __ __name__ __ "__main__":
@@ -172,6 +172,6 @@ __ __name__ __ "__main__":
 
     app _ ?A..(___.a..
     widget _ CounterLabel()
-    widget.setValue(123)
+    widget.sV..(123)
     widget.s..
     ___.e.. ?.e..

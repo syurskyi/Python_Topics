@@ -44,11 +44,11 @@
 
 ____ ?.?C.. ______ QModelIndex, __
 ____ ?.?G.. ______ QStandardItemModel
-____ ?.?W.. ______ (?A.., SB.., QStyledItemDelegate,
+____ ?.?W.. ______ (?A.., SB.., ?SID..,
         QTableView)
 
 
-c_ SpinBoxDelegate(QStyledItemDelegate):
+c_ SpinBoxDelegate(?SID..):
     ___ createEditor  parent, option, index):
         editor _ SB..(parent)
         editor.setFrame F..
@@ -60,7 +60,7 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
     ___ setEditorData  spinBox, index):
         value _ index.model().data(index, __.ER..)
 
-        spinBox.setValue(value)
+        spinBox.sV..(value)
 
     ___ setModelData  spinBox, model, index):
         spinBox.interpretText()
@@ -83,7 +83,7 @@ __ ______ __ ______
     tableView.sM..(model)
 
     delegate _ SpinBoxDelegate()
-    tableView.setItemDelegate(delegate)
+    tableView.sID..(delegate)
 
     ___ row __ ra..(4):
         ___ column __ ra..(2):

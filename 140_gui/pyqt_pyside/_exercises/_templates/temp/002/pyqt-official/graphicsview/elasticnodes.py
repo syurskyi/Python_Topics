@@ -186,7 +186,7 @@ c_ Node(QGraphicsItem):
         # Sum up all forces pushing this item away.
         xvel _ 0.0
         yvel _ 0.0
-        ___ item __ scene().items
+        ___ item __ scene().i..
             __ no. isinstance(item, Node):
                 continue
 
@@ -349,14 +349,14 @@ c_ GraphWidget(QGraphicsView):
         ____ key __ __.Key_Minus:
             scaleView(1 / 1.2)
         ____ key __ __.Key_Space or key __ __.Key_Enter:
-            ___ item __ scene().items
+            ___ item __ scene().i..
                 __ isinstance(item, Node):
                     item.setPos(-150 + qrand() % 300, -150 + qrand() % 300)
         ____
             super(GraphWidget, self).keyPressEvent(event)
 
     ___ timerEvent  event):
-        nodes _ [item ___ item __ scene().items() __ isinstance(item, Node)]
+        nodes _ [item ___ item __ scene().i..() __ isinstance(item, Node)]
 
         ___ node __ nodes:
             node.calculateForces()

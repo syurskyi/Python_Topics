@@ -65,9 +65,9 @@ c_ FreezeTableWidget(QTableView):
         hH.. .sectionResized.c..(updateSectionWidth)
         verticalHeader().sectionResized.c..(updateSectionHeight)
         frozenTableView.verticalScrollBar().valueChanged.c..(
-            verticalScrollBar().setValue)
+            verticalScrollBar().sV..)
         verticalScrollBar().valueChanged.c..(
-            frozenTableView.verticalScrollBar().setValue)
+            frozenTableView.verticalScrollBar().sV..)
 
     ___ init
         frozenTableView.sM..(model())
@@ -116,7 +116,7 @@ c_ FreezeTableWidget(QTableView):
             newValue _ (horizontalScrollBar().v.. +
                         visualRect(current).topLeft().x() -
                         frozenTableView.columnWidth(0))
-            horizontalScrollBar().setValue(newValue)
+            horizontalScrollBar().sV..(newValue)
         r_ current
 
     ___ scrollTo  index, hint):

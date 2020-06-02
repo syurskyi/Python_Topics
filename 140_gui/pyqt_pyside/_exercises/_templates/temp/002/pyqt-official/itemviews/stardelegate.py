@@ -48,7 +48,7 @@ ______ math
 ____ ?.?C.. ______ pS.., QPointF, ?S.., __
 ____ ?.?G.. ______ QPainter, QPolygonF
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
-        QStyledItemDelegate, ?TW.., QTableWidgetItem, ?W..)
+        ?SID.., ?TW.., QTableWidgetItem, ?W..)
 
 
 c_ StarRating(object):
@@ -160,7 +160,7 @@ c_ StarEditor(?W..):
         r_ -1
 
 
-c_ StarDelegate(QStyledItemDelegate):
+c_ StarDelegate(?SID..):
     ___ paint  painter, option, index):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
@@ -235,7 +235,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     tableWidget _ ?TW..(4, 4)
-    tableWidget.setItemDelegate(StarDelegate())
+    tableWidget.sID..(StarDelegate())
     tableWidget.setEditTriggers(
             QAbstractItemView.DoubleClicked | QAbstractItemView.SelectedClicked)
     tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
@@ -245,7 +245,7 @@ __ ______ __ ______
 
     populateTableWidget(tableWidget)
 
-    tableWidget.resizeColumnsToContents()
+    tableWidget.rCTC..
     tableWidget.r..(500, 300)
     tableWidget.s..
 

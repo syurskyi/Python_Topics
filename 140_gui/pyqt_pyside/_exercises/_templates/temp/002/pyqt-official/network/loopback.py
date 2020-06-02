@@ -129,7 +129,7 @@ c_ Dialog(QDialog):
         tcpServerConnection.rA..
 
         serverProgressBar.sM..(Dialog.TotalBytes)
-        serverProgressBar.setValue(bytesReceived)
+        serverProgressBar.sV..(bytesReceived)
         serverStatusLabel.sT..("Received %dMB" % (bytesReceived / (1024 * 1024)))
 
         __ bytesReceived __ Dialog.TotalBytes:
@@ -144,7 +144,7 @@ c_ Dialog(QDialog):
                                         min(bytesToWrite, Dialog.PayloadSize), '@'))
 
         clientProgressBar.sM..(Dialog.TotalBytes)
-        clientProgressBar.setValue(bytesWritten)
+        clientProgressBar.sV..(bytesWritten)
         clientStatusLabel.sT..("Sent %dMB" % (bytesWritten / (1024 * 1024)))
 
     ___ displayError  socketError):

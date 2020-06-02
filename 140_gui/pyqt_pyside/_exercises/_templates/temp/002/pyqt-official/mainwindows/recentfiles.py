@@ -199,7 +199,7 @@ c_ MainWindow ?MW..
         files.insert(0, fileName)
         del files[MainWindow.MaxRecentFiles:]
 
-        settings.setValue('recentFileList', files)
+        settings.sV..('recentFileList', files)
 
         ___ widget __ ?A...topLevelWidgets
             __ isinstance(widget, MainWindow):

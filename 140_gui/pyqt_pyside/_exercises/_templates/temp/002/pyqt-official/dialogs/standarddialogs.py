@@ -199,10 +199,10 @@ c_ Dialog(QDialog):
             doubleLabel.sT..("$%g" % d)
 
     ___ setItem 
-        items _ ("Spring", "Summer", "Fall", "Winter")
+        i.. _ ("Spring", "Summer", "Fall", "Winter")
 
         item, ok _ QInputDialog.getItem  "QInputDialog.getItem()",
-                "Season:", items, 0, F..)
+                "Season:", i.., 0, F..)
         __ ok and item:
             itemLabel.sT..(item)
 

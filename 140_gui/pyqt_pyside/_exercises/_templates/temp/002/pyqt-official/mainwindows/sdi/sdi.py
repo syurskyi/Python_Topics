@@ -231,8 +231,8 @@ c_ MainWindow ?MW..
 
     ___ writeSettings
         settings _ QSettings('Trolltech', 'SDI Example')
-        settings.setValue('pos', pos())
-        settings.setValue('size', size())
+        settings.sV..('pos', pos())
+        settings.sV..('size', size())
 
     ___ maybeSave
         __ textEdit.document().iM..

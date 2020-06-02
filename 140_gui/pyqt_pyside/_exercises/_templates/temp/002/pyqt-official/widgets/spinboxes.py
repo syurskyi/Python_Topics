@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, ?DT__, __, ?T..
-____ ?.?W.. ______ (?A.., ?CB, QDateEdit, ?DTE..,
+____ ?.?C.. ______ ?D.., ?DT__, __, ?T..
+____ ?.?W.. ______ (?A.., ?CB, ?DE.., ?DTE..,
         QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, SB.., ?TE..,
         QVBoxLayout, ?W..)
 
@@ -71,7 +71,7 @@ c_ Window(?W..):
         integerSpinBox _ SB..()
         integerSpinBox.setRange(-20, 20)
         integerSpinBox.setSingleStep(1)
-        integerSpinBox.setValue(0)
+        integerSpinBox.sV..(0)
 
         zoomLabel _ QLabel("Enter a zoom value between %d and %d:" % (0, 1000))
         zoomSpinBox _ SB..()
@@ -79,14 +79,14 @@ c_ Window(?W..):
         zoomSpinBox.setSingleStep(10)
         zoomSpinBox.setSuffix('%')
         zoomSpinBox.setSpecialValueText("Automatic")
-        zoomSpinBox.setValue(100)
+        zoomSpinBox.sV..(100)
 
         priceLabel _ QLabel("Enter a price between %d and %d:" % (0, 999))
         priceSpinBox _ SB..()
         priceSpinBox.setRange(0, 999)
         priceSpinBox.setSingleStep(1)
         priceSpinBox.setPrefix('$')
-        priceSpinBox.setValue(99)
+        priceSpinBox.sV..(99)
 
         spinBoxLayout _ ?VBL..
         spinBoxLayout.aW..(integerLabel)
@@ -101,8 +101,8 @@ c_ Window(?W..):
         editsGroup _ QGroupBox("Date and time spin boxes")
 
         dateLabel _ QLabel()
-        dateEdit _ QDateEdit(QDate.currentDate())
-        dateEdit.setDateRange(QDate(2005, 1, 1), QDate(2010, 12, 31))
+        dateEdit _ ?DE..(?D...currentDate())
+        dateEdit.setDateRange(?D..(2005, 1, 1), ?D..(2010, 12, 31))
         dateLabel.sT..("Appointment date (between %s and %s):" %
                     (dateEdit.minimumDate().toString(__.ISODate),
                     dateEdit.maximumDate().toString(__.ISODate)))
@@ -145,7 +145,7 @@ c_ Window(?W..):
         meetingEdit.setDisplayFormat(formatString)
 
         __ meetingEdit.displayedSections() & ?DTE...DateSections_Mask:
-            meetingEdit.setDateRange(QDate(2004, 11, 1), QDate(2005, 11, 30))
+            meetingEdit.setDateRange(?D..(2004, 11, 1), ?D..(2005, 11, 30))
             meetingLabel.sT..("Meeting date (between %s and %s):" %
                     (meetingEdit.minimumDate().toString(__.ISODate),
                     meetingEdit.maximumDate().toString(__.ISODate)))
@@ -161,13 +161,13 @@ c_ Window(?W..):
         precisionLabel _ QLabel("Number of decimal places to show:")
         precisionSpinBox _ SB..()
         precisionSpinBox.setRange(0, 100)
-        precisionSpinBox.setValue(2)
+        precisionSpinBox.sV..(2)
 
         doubleLabel _ QLabel("Enter a value between %d and %d:" % (-20, 20))
         doubleSpinBox _ QDoubleSpinBox()
         doubleSpinBox.setRange(-20.0, 20.0)
         doubleSpinBox.setSingleStep(1.0)
-        doubleSpinBox.setValue(0.0)
+        doubleSpinBox.sV..(0.0)
 
         scaleLabel _ QLabel("Enter a scale factor between %d and %d:" % (0, 1000))
         scaleSpinBox _ QDoubleSpinBox()
@@ -175,14 +175,14 @@ c_ Window(?W..):
         scaleSpinBox.setSingleStep(10.0)
         scaleSpinBox.setSuffix('%')
         scaleSpinBox.setSpecialValueText("No scaling")
-        scaleSpinBox.setValue(100.0)
+        scaleSpinBox.sV..(100.0)
 
         priceLabel _ QLabel("Enter a price between %d and %d:" % (0, 1000))
         priceSpinBox _ QDoubleSpinBox()
         priceSpinBox.setRange(0.0, 1000.0)
         priceSpinBox.setSingleStep(1.0)
         priceSpinBox.setPrefix('$')
-        priceSpinBox.setValue(99.99)
+        priceSpinBox.sV..(99.99)
 
         precisionSpinBox.valueChanged.c..(changePrecision)
 

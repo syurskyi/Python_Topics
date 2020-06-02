@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (QByteArray, QDate, ?DT__, QEvent, QPoint, QRect,
+____ ?.?C.. ______ (QByteArray, ?D.., ?DT__, QEvent, QPoint, QRect,
         QRegExp, QSettings, ?S.., __, ?T.., ?T..)
 ____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
@@ -350,7 +350,7 @@ c_ SettingsTree(QTreeWidget):
     ___  -   parent_None):
         super(SettingsTree, self). - (parent)
 
-        setItemDelegate(VariantDelegate(self))
+        sID..(VariantDelegate(self))
 
         setHeaderLabels(("Setting", "Type", "Value"))
         header().sSRM..(0, ?HV...Stretch)
@@ -436,7 +436,7 @@ c_ SettingsTree(QTreeWidget):
             ancestor _ ancestor.parent()
 
         d _ item.data(2, __.UserRole)
-        settings.setValue(key, item.data(2, __.UserRole))
+        settings.sV..(key, item.data(2, __.UserRole))
 
         __ autoRefresh:
             refresh()
@@ -608,7 +608,7 @@ c_ VariantDelegate(QItemDelegate):
             regExp _ byteArrayExp
         ____ isinstance(originalValue, ?C..):
             regExp _ colorExp
-        ____ isinstance(originalValue, QDate):
+        ____ isinstance(originalValue, ?D..):
             regExp _ dateExp
         ____ isinstance(originalValue, ?DT__):
             regExp _ dateTimeExp
@@ -653,8 +653,8 @@ c_ VariantDelegate(QItemDelegate):
                            min(int(colorExp.cap(2)), 255),
                            min(int(colorExp.cap(3)), 255),
                            min(int(colorExp.cap(4)), 255))
-        ____ isinstance(originalValue, QDate):
-            value _ QDate.fromString(t__, __.ISODate)
+        ____ isinstance(originalValue, ?D..):
+            value _ ?D...fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, ?DT__):
@@ -690,7 +690,7 @@ c_ VariantDelegate(QItemDelegate):
     @staticmethod
     ___ isSupportedType(value):
         r_ isinstance(value, (bool, float, int, QByteArray, str, ?C..,
-                QDate, ?DT__, ?T.., QPoint, QRect, ?S.., li..))
+                ?D.., ?DT__, ?T.., QPoint, QRect, ?S.., li..))
 
     @staticmethod
     ___ displayText(value):
@@ -702,7 +702,7 @@ c_ VariantDelegate(QItemDelegate):
             r_ '%g' % value
         ____ isinstance(value, ?C..):
             r_ '(%u,%u,%u,%u)' % (value.red(), value.green(), value.blue(), value.alpha())
-        ____ isinstance(value, (QDate, ?DT__, ?T..)):
+        ____ isinstance(value, (?D.., ?DT__, ?T..)):
             r_ value.toString(__.ISODate)
         ____ isinstance(value, QPoint):
             r_ '(%d,%d)' % (value.x(), value.y())

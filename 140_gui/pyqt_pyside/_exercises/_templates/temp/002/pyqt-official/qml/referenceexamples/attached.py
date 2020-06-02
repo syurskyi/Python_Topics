@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, Q_CLASSINFO,  ?CA.., QDate,
+____ ?.?C.. ______ (pyqtProperty, Q_CLASSINFO,  ?CA.., ?D..,
         ?O.., ?U..)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
@@ -149,9 +149,9 @@ c_ BirthdayPartyAttached(?O..):
     ___  -   parent):
         super(BirthdayPartyAttached, self). - (parent)
 
-        _rsvp _ QDate()
+        _rsvp _ ?D..()
 
-    @pyqtProperty(QDate)
+    @pyqtProperty(?D..)
     ___ rsvp
         r_ _rsvp
 
@@ -213,7 +213,7 @@ __ party __ no. N.. and party.host __ no. N..:
         __ attached __ no. N..:
             rsvpDate _ attached.property('rsvp')
         ____
-            rsvpDate _ QDate()
+            rsvpDate _ ?D..()
 
         __ rsvpDate.isNull
             print("    \"%s\" RSVP date: Hasn't RSVP'd" % guest.name)

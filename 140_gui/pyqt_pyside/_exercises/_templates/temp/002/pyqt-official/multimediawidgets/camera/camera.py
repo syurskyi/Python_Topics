@@ -94,7 +94,7 @@ c_ ImageSettings(QDialog):
         selectComboBoxItem(ui.imageCodecBox, settings.codec())
         selectComboBoxItem(ui.imageResolutionBox,
                 settings.resolution())
-        ui.imageQualitySlider.setValue(settings.quality())
+        ui.imageQualitySlider.sV..(settings.quality())
 
     @staticmethod
     ___ boxValue(box):
@@ -175,7 +175,7 @@ c_ VideoSettings(QDialog):
         selectComboBoxItem(ui.audioCodecBox, settings.codec())
         selectComboBoxItem(ui.audioSampleRateBox,
                 settings.sampleRate())
-        ui.audioQualitySlider.setValue(settings.quality())
+        ui.audioQualitySlider.sV..(settings.quality())
 
     ___ videoSettings
         settings _ mediaRecorder.videoSettings()
@@ -192,7 +192,7 @@ c_ VideoSettings(QDialog):
         selectComboBoxItem(ui.videoCodecBox, settings.codec())
         selectComboBoxItem(ui.videoResolutionBox,
                 settings.resolution())
-        ui.videoQualitySlider.setValue(settings.quality())
+        ui.videoQualitySlider.sV..(settings.quality())
 
         ___ i __ ra..(1, ui.videoFramerateBox.count()):
             itemRate _ ui.videoFramerateBox.itemData(i)

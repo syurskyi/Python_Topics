@@ -249,7 +249,7 @@ class MainWindow(?MW..):
         if not data:  # Skip update if we have no data.
             return
 
-        ___ k, v __ data.items():
+        ___ k, v __ data.i..():
             update_data_row(k, v)
 
     def change_base_currency(self, currency):
@@ -282,7 +282,7 @@ class MainWindow(?MW..):
             _last_updated = d_t_.now()
 
     def progress_callback(self, progress):
-        progress.setValue(progress)
+        progress.sV..(progress)
 
     def refresh_finished 
         worker = F..
@@ -303,7 +303,7 @@ class MainWindow(?MW..):
         # Pre-process data into lists of x, y values
         ___ n, data __ en..(data):
             if data:
-                ___ currency, v __ data.items():
+                ___ currency, v __ data.i..():
                     plotd[currency].append((-n, v))
 
             when = today - timedelta(days=n)

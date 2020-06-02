@@ -133,7 +133,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         # Disable the events to prevent updating triggering a setPosition event (can cause stuttering).
         timeSlider.blockSignals( st.
-        timeSlider.setValue(position)
+        timeSlider.sV..(position)
         timeSlider.blockSignals F..
 
     ___ playlist_selection_changed  ix):

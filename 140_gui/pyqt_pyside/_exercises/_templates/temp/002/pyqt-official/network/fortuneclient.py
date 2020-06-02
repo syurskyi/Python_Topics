@@ -208,7 +208,7 @@ c_ Client(QDialog):
 
         settings _ QSettings(QSettings.UserScope, 'QtProject')
         settings.beginGroup('QtNetwork')
-        settings.setValue('DefaultNetworkConfiguration', id)
+        settings.sV..('DefaultNetworkConfiguration', id)
         settings.endGroup()
 
         statusLabel.sT..("This examples requires that you run the "
