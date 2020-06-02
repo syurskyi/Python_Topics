@@ -46,7 +46,7 @@ ____ ?.?C.. ______ (pS.., pyqtSlot, Q_ARG, QAbstractItemModel,
         QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, ?O.., __,
         QThread, ?T.., QUrl)
 ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
-____ ?.QtMultimedia ______ (QAbstractVideoBuffer, QMediaContent,
+____ ?.?M.. ______ (QAbstractVideoBuffer, QMediaContent,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,

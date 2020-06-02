@@ -46,7 +46,7 @@ ____ math ______ pi, sin
 ____ struct ______ pack
 
 ____ ?.?C.. ______ QByteArray, QIODevice, __, QTimer, qWarning
-____ ?.QtMultimedia ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
+____ ?.?M.. ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
 ____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
         ?MW.., ?PB.., QSlider, QVBoxLayout, ?W..)

@@ -1,7 +1,7 @@
 ____ ?.?W.. ______ *
 ____ ?.?G.. ______ *
 ____ ?.?C.. ______ *
-____ ?.QtMultimedia ______ QSound
+____ ?.?M.. ______ QSound
 
 c_ PlainTextEdit(QPlainTextEdit):
     ___  -

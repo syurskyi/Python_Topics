@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QDir, ?S.., QSizeF, __, QUrl
 ____ ?.?G.. ______ QTransform
-____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
+____ ?.?M.. ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QGraphicsVideoItem
 ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
         QGraphicsView, QHBoxLayout, ?PB.., QSlider, QStyle, QVBoxLayout,

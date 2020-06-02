@@ -1,6 +1,6 @@
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?C.. __ qtc
-____ ? ______ QtMultimedia __ qtmm
+____ ? ______ ?M.. __ qtmm
 ____ ? ______ QtMultimediaWidgets __ qtmmw
 
 

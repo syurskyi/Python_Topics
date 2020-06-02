@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtMultimedia ______ QAudio, QAudioDeviceInfo, QAudioFormat
+____ ?.?M.. ______ QAudio, QAudioDeviceInfo, QAudioFormat
 ____ ?.?W.. ______ ?A.., QTableWidgetItem, ?MW..
 
 ____ ui_audiodevicesbase ______ Ui_AudioDevicesBase

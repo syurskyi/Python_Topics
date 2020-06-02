@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QByteArray, qFuzzyCompare, __, QTimer
 ____ ?.?G.. ______ ?P.., ?P..
-____ ?.QtMultimedia ______ (QAudioEncoderSettings, QCamera,
+____ ?.?M.. ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
         QMediaRecorder, QMultimedia, QVideoEncoderSettings)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QDialog,

@@ -2,7 +2,7 @@ ______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
-____ ? ______ QtMultimedia __ qtmm
+____ ? ______ ?M.. __ qtmm
 
 
 c_ PlayButton(qtw.?PB..):

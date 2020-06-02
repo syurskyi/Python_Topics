@@ -1,7 +1,7 @@
 ____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.?C.. ______ *
-____ ?.QtMultimedia ______ *
+____ ?.?M.. ______ *
 ____ ?.QtMultimediaWidgets ______ *
 
 ____ MainWindow ______ Ui_MainWindow

@@ -1,5 +1,5 @@
 ____ ?.?C.. ______ *
-____ ?.QtMultimedia ______ *
+____ ?.?M.. ______ *
 
 app _ QCoreApplication(  # list)
 

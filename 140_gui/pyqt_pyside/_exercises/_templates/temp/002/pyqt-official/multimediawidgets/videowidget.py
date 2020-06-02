@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QDir, __, QUrl
-____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
+____ ?.?M.. ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
         ?PB.., QSizePolicy, QSlider, QStyle, QVBoxLayout, ?W..)

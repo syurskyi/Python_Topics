@@ -1,11 +1,11 @@
-____ ?.?C.. ______ *
-____ ?.QtMultimedia ______ *
-
-app _ QCoreApplication(  # list)
-
-r _ QAudioRecorder()
-
-print('Inputs: ', r.audioInputs())
-print('Codecs: ', r.supportedAudioCodecs())
-print('Sample Rates: ', r.supportedAudioSampleRates())
-print('Containers: ', r.supportedContainers())
+# ____ ?.?C.. ______ _
+# ____ ?.?M.. ______ _
+#
+# app _ ?CA..  # list)
+#
+# r _ ?AR..
+#
+# print 'Inputs: ' ?.aI..
+# print 'Codecs: ' ?.sAC..
+# print 'Sample Rates: ' ?.sASR..
+# print 'Containers: ' ?.sC..
