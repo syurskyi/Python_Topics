@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
+____ ?.?C.. ______ (QByteArray, ?DS.., QFile, QIODevice, QMimeData,
         QPoint, QRect, QRectF, __, QTextStream)
 ____ ?.?G.. ______ (QDrag, ?F.., QFontMetrics, QImage, QPainter,
         ?P.., ?P.., qRgba)
@@ -83,7 +83,7 @@ c_ DragLabel(QLabel):
 
     ___ mousePressEvent  event):
         itemData _ QByteArray()
-        dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
+        dataStream _ ?DS..(itemData, QIODevice.WriteOnly)
         dataStream << QByteArray(labelText) << QPoint(event.pos() - rect().topLeft())
 
         mimeData _ QMimeData()
@@ -148,7 +148,7 @@ c_ DragWidget(?W..):
         __ event.mimeData().hasFormat('application/x-fridgemagnet'):
             mime _ event.mimeData()
             itemData _ mime.data('application/x-fridgemagnet')
-            dataStream _ QDataStream(itemData, QIODevice.ReadOnly)
+            dataStream _ ?DS..(itemData, QIODevice.ReadOnly)
 
             t__ _ QByteArray()
             offset _ QPoint()

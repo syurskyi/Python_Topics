@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., QFile, QFileInfo, QIODevice, ?U..
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QHBoxLayout, QLabel, QLineEdit, ?MB.., QProgressDialog,
         ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ ?NAM.., ?NR..
+____ ?.?N.. ______ ?NAM.., ?NR..
 
 
 c_ HttpWindow(QDialog):

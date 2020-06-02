@@ -45,7 +45,7 @@
 ______ random
 
 ____ ?.?C.. ______ (pS.., QAbstractListModel, QByteArray,
-        QDataStream, QIODevice, QMimeData, QModelIndex, QPoint, QRect, ?S..,
+        ?DS.., QIODevice, QMimeData, QModelIndex, QPoint, QRect, ?S..,
         __)
 ____ ?.?G.. ______ ?C.., QCursor, QDrag, QIcon, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
@@ -107,7 +107,7 @@ c_ PuzzleWidget(?W..):
     ___ dropEvent  event):
         __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) __ -1:
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
-            stream _ QDataStream(pieceData, QIODevice.ReadOnly)
+            stream _ ?DS..(pieceData, QIODevice.ReadOnly)
             square _ targetSquare(event.pos())
             pixmap _ ?P..()
             location _ QPoint()
@@ -156,7 +156,7 @@ c_ PuzzleWidget(?W..):
         update(square)
 
         itemData _ QByteArray()
-        dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
+        dataStream _ ?DS..(itemData, QIODevice.WriteOnly)
 
         dataStream << pixmap << location
 
@@ -262,7 +262,7 @@ c_ PiecesModel(QAbstractListModel):
         mimeData _ QMimeData()
         encodedData _ QByteArray()
 
-        stream _ QDataStream(encodedData, QIODevice.WriteOnly)
+        stream _ ?DS..(encodedData, QIODevice.WriteOnly)
 
         ___ index __ indexes:
             __ index.isValid
@@ -292,7 +292,7 @@ c_ PiecesModel(QAbstractListModel):
             endRow _ parent.row()
 
         encodedData _ data.data('image/x-puzzle-piece')
-        stream _ QDataStream(encodedData, QIODevice.ReadOnly)
+        stream _ ?DS..(encodedData, QIODevice.ReadOnly)
 
         w__ no. stream.atEnd
             pixmap _ ?P..()

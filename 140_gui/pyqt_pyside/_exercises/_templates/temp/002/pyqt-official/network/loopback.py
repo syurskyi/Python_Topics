@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QByteArray, __
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
         ?MB.., QProgressBar, ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ QHostAddress, QTcpServer, QTcpSocket
+____ ?.?N.. ______ ?HA.., QTcpServer, QTcpSocket
 
 
 c_ Dialog(QDialog):
@@ -110,7 +110,7 @@ c_ Dialog(QDialog):
         serverStatusLabel.sT..("Listening")
         clientStatusLabel.sT..("Connecting")
 
-        tcpClient.connectToHost(QHostAddress(QHostAddress.LocalHost), tcpServer.serverPort())
+        tcpClient.connectToHost(?HA..(?HA...LocalHost), tcpServer.serverPort())
 
     ___ acceptConnection
         tcpServerConnection _ tcpServer.nextPendingConnection()

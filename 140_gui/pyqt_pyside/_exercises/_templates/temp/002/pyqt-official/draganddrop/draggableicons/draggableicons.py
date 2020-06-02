@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QByteArray, QDataStream, QIODevice, QMimeData,
+____ ?.?C.. ______ (QByteArray, ?DS.., QIODevice, QMimeData,
         QPoint, __)
 ____ ?.?G.. ______ ?C.., QDrag, QPainter, ?P..
 ____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, ?W..
@@ -91,7 +91,7 @@ c_ DragWidget(QFrame):
     ___ dropEvent  event):
         __ event.mimeData().hasFormat('application/x-dnditemdata'):
             itemData _ event.mimeData().data('application/x-dnditemdata')
-            dataStream _ QDataStream(itemData, QIODevice.ReadOnly)
+            dataStream _ ?DS..(itemData, QIODevice.ReadOnly)
 
             pixmap _ ?P..()
             offset _ QPoint()
@@ -119,7 +119,7 @@ c_ DragWidget(QFrame):
         pixmap _ ?P..(child.pixmap())
 
         itemData _ QByteArray()
-        dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
+        dataStream _ ?DS..(itemData, QIODevice.WriteOnly)
         dataStream << pixmap << QPoint(event.pos() - child.pos())
 
         mimeData _ QMimeData()

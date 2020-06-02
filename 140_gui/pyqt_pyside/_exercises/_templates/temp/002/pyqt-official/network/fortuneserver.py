@@ -44,10 +44,10 @@
 
 ______ random
 
-____ ?.?C.. ______ QByteArray, QDataStream, QIODevice, QSettings
+____ ?.?C.. ______ QByteArray, ?DS.., QIODevice, QSettings
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?MB.., ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ (QHostAddress, QNetworkConfiguration,
+____ ?.?N.. ______ (?HA.., QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpServer)
 
@@ -128,10 +128,10 @@ c_ Server(QDialog):
             r_
 
         ___ ipAddress __ QNetworkInterface.allAddresses
-            __ ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
+            __ ipAddress !_ ?HA...LocalHost and ipAddress.toIPv4Address() !_ 0:
                 break
         ____
-            ipAddress _ QHostAddress(QHostAddress.LocalHost)
+            ipAddress _ ?HA..(?HA...LocalHost)
 
         ipAddress _ ipAddress.tS..
 
@@ -142,8 +142,8 @@ c_ Server(QDialog):
         fortune _ FORTUNES[random.randint(0, le.(FORTUNES) - 1)]
 
         block _ QByteArray()
-        out _ QDataStream(block, QIODevice.WriteOnly)
-        out.setVersion(QDataStream.Qt_4_0)
+        out _ ?DS..(block, QIODevice.WriteOnly)
+        out.setVersion(?DS...Qt_4_0)
         out.writeUInt16(0)
         out.writeQString(fortune)
         out.device().seek(0)

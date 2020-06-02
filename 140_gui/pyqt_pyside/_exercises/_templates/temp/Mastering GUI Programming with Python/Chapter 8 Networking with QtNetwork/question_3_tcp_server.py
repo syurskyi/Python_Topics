@@ -1,29 +1,29 @@
-______ ___
-____ ? ______ ?C.. __ qtc
-____ ? ______ QtNetwork __ qtn
-
-c_ Server(qtn.QTcpServer):
-
-    ___  -
-        s_. - ()
-        newConnection.c..(on_new_connection)
-        connections _   # list
-        listen(qtn.QHostAddress.Any, 8080)
-
-    ___ on_new_connection
-        w__ hasPendingConnections
-            cx _ nextPendingConnection()
-            connections.ap..(cx)
-            cx.readyRead.c..(process_datastream)
-
-    ___ process_datastream
-        ___ cx __ connections:
-            datastream _ qtc.QDataStream(cx)
-            print(datastream.readRawData(cx.bytesAvailable()))
-            datastream.writeRawData(b'PyQt5 Rocks!')
-            cx.disconnectFromHost()
-
-__ ______ __ ______
-    app _ qtc. ?CA..(___.a..
-    server _ Server()
-    ___.e.. ?.e..
+# ______ ___
+# ____ ? ______ ?C.. __ qtc
+# ____ ? ______ ?N.. __ qtn
+#
+# c_ Server ?.?TS..
+#
+#     ___  -
+#         s_. -
+#         newConnection.c.. o..
+#         connections _   # list
+#         l.. ?.?HA...A.. 8080
+#
+#     ___ on_new_connection
+#         w__ hPC..
+#             cx _ nPC..
+#             c__.ap.. ?
+#             ?.rR__.c.. p_d..
+#
+#     ___ process_datastream
+#         ___ cx __ c..
+#             datastream _ ?.?DS.. ?
+#             print ?.rRD.. ?.bA..
+#             ?.wRD.. _'PyQt5 Rocks!
+#             ?.dFH..
+#
+# __ ______ __ ______
+#     app _ qtc. ?CA.. ___.a..
+#     server _ ?
+#     ___.e.. ?.e..

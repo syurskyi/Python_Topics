@@ -51,7 +51,7 @@ ____ ?.?C.. ______ (pS.., QBasicTimer, ?O.., QPoint, QPointF,
 ____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
         QPainterPath, ?P.., QRadialGradient)
 ____ ?.?W.. ______ ?A.., ?A.., ?MW.., ?W..
-____ ?.QtNetwork ______ (?NAM.., QNetworkDiskCache,
+____ ?.?N.. ______ (?NAM.., QNetworkDiskCache,
         ?NR..)
 
 

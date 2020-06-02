@@ -46,10 +46,10 @@
 
 ______ random
 
-____ ?.?C.. ______ QByteArray, QDataStream, QIODevice
+____ ?.?C.. ______ QByteArray, ?DS.., QIODevice
 ____ ?.?W.. ______ (?A.., QDialog, QLabel, QHBoxLayout,
         ?MB.., ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ QLocalServer
+____ ?.?N.. ______ QLocalServer
 
 
 c_ Server(QDialog):
@@ -98,8 +98,8 @@ c_ Server(QDialog):
 
     ___ sendFortune
         block _ QByteArray()
-        out _ QDataStream(block, QIODevice.WriteOnly)
-        out.setVersion(QDataStream.Qt_4_0)
+        out _ ?DS..(block, QIODevice.WriteOnly)
+        out.setVersion(?DS...Qt_4_0)
         out.writeUInt16(0)
         out.writeQString(random.choice(fortunes))
         out.device().seek(0)

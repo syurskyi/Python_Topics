@@ -44,10 +44,10 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDataStream, QTimer
+____ ?.?C.. ______ ?DS.., QTimer
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QGridLayout, QLabel, QLineEdit, ?MB.., ?PB..)
-____ ?.QtNetwork ______ QLocalSocket
+____ ?.?N.. ______ QLocalSocket
 
 
 c_ Client(QDialog):
@@ -99,8 +99,8 @@ c_ Client(QDialog):
         socket.connectToServer(hostLineEdit.t__())
 
     ___ readFortune
-        ins _ QDataStream(socket)
-        ins.setVersion(QDataStream.Qt_4_0)
+        ins _ ?DS..(socket)
+        ins.setVersion(?DS...Qt_4_0)
 
         __ blockSize __ 0:
             __ socket.bytesAvailable() < 2:

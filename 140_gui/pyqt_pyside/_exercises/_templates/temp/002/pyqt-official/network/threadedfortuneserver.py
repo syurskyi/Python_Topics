@@ -44,11 +44,11 @@
 
 ______ random
 
-____ ?.?C.. ______ (pS.., QByteArray, QDataStream, QIODevice,
+____ ?.?C.. ______ (pS.., QByteArray, ?DS.., QIODevice,
         QThread)
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?MB.., ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ (QHostAddress, QNetworkInterface, QTcpServer,
+____ ?.?N.. ______ (?HA.., QNetworkInterface, QTcpServer,
         QTcpSocket)
 
 
@@ -68,8 +68,8 @@ c_ FortuneThread(QThread):
             r_
 
         block _ QByteArray()
-        outstr _ QDataStream(block, QIODevice.WriteOnly)
-        outstr.setVersion(QDataStream.Qt_4_0)
+        outstr _ ?DS..(block, QIODevice.WriteOnly)
+        outstr.setVersion(?DS...Qt_4_0)
         outstr.writeUInt16(0)
         outstr.writeQString(t__)
         outstr.device().seek(0)
@@ -80,7 +80,7 @@ c_ FortuneThread(QThread):
         tcpSocket.waitForDisconnected()
 
 
-c_ FortuneServer(QTcpServer):
+c_ FortuneServer(?TS..
     FORTUNES _ (
         "You've been leading a dog's life. Stay off the furniture.",
         "You've got to think about tomorrow.",
@@ -116,10 +116,10 @@ c_ Dialog(QDialog):
             r_
 
         ___ ipAddress __ QNetworkInterface.allAddresses
-            __ ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
+            __ ipAddress !_ ?HA...LocalHost and ipAddress.toIPv4Address() !_ 0:
                 break
         ____
-            ipAddress _ QHostAddress(QHostAddress.LocalHost)
+            ipAddress _ ?HA..(?HA...LocalHost)
 
         ipAddress _ ipAddress.tS..
 

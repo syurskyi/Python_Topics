@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QTimer
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
         ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ QHostAddress, QUdpSocket
+____ ?.?N.. ______ ?HA.., QUdpSocket
 
 
 c_ Sender(QDialog):
@@ -83,7 +83,7 @@ c_ Sender(QDialog):
     ___ broadcastDatagramm 
         statusLabel.sT..("Now broadcasting datagram %d" % messageNo)
         datagram _ "Broadcast message %d" % messageNo
-        udpSocket.writeDatagram(datagram, QHostAddress(QHostAddress.Broadcast), 45454)
+        udpSocket.writeDatagram(datagram, ?HA..(?HA...Broadcast), 45454)
         messageNo +_ 1
 
 

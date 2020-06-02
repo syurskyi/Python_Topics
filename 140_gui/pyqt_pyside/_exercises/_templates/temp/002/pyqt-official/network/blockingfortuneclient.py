@@ -42,12 +42,12 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pS.., QDataStream, QMutex, QMutexLocker,
+____ ?.?C.. ______ (pS.., ?DS.., QMutex, QMutexLocker,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
         QLabel, QLineEdit, ?MB.., ?PB.., ?W..)
-____ ?.QtNetwork ______ (QAbstractSocket, QHostAddress, QNetworkInterface,
+____ ?.?N.. ______ (QAbstractSocket, ?HA.., QNetworkInterface,
         QTcpSocket)
 
 
@@ -102,8 +102,8 @@ c_ FortuneThread(QThread):
                     error.e..(socket.error(), socket.errorString())
                     r_
 
-            instr _ QDataStream(socket)
-            instr.setVersion(QDataStream.Qt_4_0)
+            instr _ ?DS..(socket)
+            instr.setVersion(?DS...Qt_4_0)
             blockSize _ instr.readUInt16()
 
             w__ socket.bytesAvailable() < blockSize:
@@ -132,10 +132,10 @@ c_ BlockingClient(?W..):
         portLabel _ QLabel("S&erver port:")
 
         ___ ipAddress __ QNetworkInterface.allAddresses
-            __ ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
+            __ ipAddress !_ ?HA...LocalHost and ipAddress.toIPv4Address() !_ 0:
                 break
         ____
-            ipAddress _ QHostAddress(QHostAddress.LocalHost)
+            ipAddress _ ?HA..(?HA...LocalHost)
 
         ipAddress _ ipAddress.tS..
 

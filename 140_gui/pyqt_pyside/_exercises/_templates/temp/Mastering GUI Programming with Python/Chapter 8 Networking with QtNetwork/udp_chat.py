@@ -1,6 +1,6 @@
 ______ ___
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtNetwork __ qtn
+____ ? ______ ?N.. __ qtn
 ____ ? ______ ?C.. __ qtc
 
 
@@ -17,7 +17,7 @@ c_ UdpChatInterface(qtc.?O..):
         username _ username
 
         socket _ qtn.QUdpSocket()
-        socket.bind(qtn.QHostAddress.Any, port)
+        socket.bind(qtn.?HA...Any, port)
         socket.readyRead.c..(process_datagrams)
         socket.error.c..(on_error)
 
@@ -53,7 +53,7 @@ c_ UdpChatInterface(qtc.?O..):
             ).encode('utf-8')
         socket.writeDatagram(
             qtc.QByteArray(msg_bytes),
-            qtn.QHostAddress.Broadcast,
+            qtn.?HA...Broadcast,
             port
             )
 

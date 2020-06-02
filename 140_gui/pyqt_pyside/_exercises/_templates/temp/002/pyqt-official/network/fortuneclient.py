@@ -42,12 +42,12 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDataStream, QSettings, QTimer
+____ ?.?C.. ______ ?DS.., QSettings, QTimer
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., ?CB, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MB..,
         ?PB..)
-____ ?.QtNetwork ______ (QAbstractSocket, QHostInfo, QNetworkConfiguration,
+____ ?.?N.. ______ (QAbstractSocket, QHostInfo, QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpSocket)
 
@@ -153,8 +153,8 @@ c_ Client(QDialog):
                 int(portLineEdit.t__()))
 
     ___ readFortune
-        instr _ QDataStream(tcpSocket)
-        instr.setVersion(QDataStream.Qt_4_0)
+        instr _ ?DS..(tcpSocket)
+        instr.setVersion(?DS...Qt_4_0)
 
         __ blockSize __ 0:
             __ tcpSocket.bytesAvailable() < 2:

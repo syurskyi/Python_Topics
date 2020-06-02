@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, ?U..
 ____ ?.?W.. ______ (?A.., ?A.., QLineEdit, ?MW..,
         QSizePolicy, QStyle, ?TE..)
-____ ?.QtNetwork ______ QNetworkProxyFactory, ?NR..
+____ ?.?N.. ______ QNetworkProxyFactory, ?NR..
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
 
 ______ jquery_rc

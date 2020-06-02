@@ -44,7 +44,7 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtProperty, pS.., QDataStream, ?DT__,
+____ ?.?C.. ______ (pyqtProperty, pS.., ?DS.., ?DT__,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, __, QTimer)
@@ -437,7 +437,7 @@ c_ Animation(object):
         m_name _ name
 
     ___ save  device):
-        stream _ QDataStream(device)
+        stream _ ?DS..(device)
         stream.writeQString(m_name)
         stream.writeInt(le.(m_frames))
 
@@ -450,7 +450,7 @@ c_ Animation(object):
     ___ load  device):
         m_frames _   # list
 
-        stream _ QDataStream(device)
+        stream _ ?DS..(device)
         m_name _ stream.readQString()
         frameCount _ stream.readInt()
 

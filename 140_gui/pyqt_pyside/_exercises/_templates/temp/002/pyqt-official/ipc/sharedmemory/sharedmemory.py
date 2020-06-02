@@ -44,7 +44,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QBuffer, QDataStream, QSharedMemory
+____ ?.?C.. ______ QBuffer, ?DS.., QSharedMemory
 ____ ?.?G.. ______ QImage, ?P..
 ____ ?.?W.. ______ ?A.., QDialog, ?FD..
 
@@ -117,7 +117,7 @@ c_ Dialog(QDialog):
         # Load into shared memory.
         buf _ QBuffer()
         buf.o..(QBuffer.ReadWrite)
-        out _ QDataStream(buf)
+        out _ ?DS..(buf)
         out << image
         size _ buf.size()
 
@@ -149,7 +149,7 @@ c_ Dialog(QDialog):
             r_
  
         buf _ QBuffer()
-        ins _ QDataStream(buf)
+        ins _ ?DS..(buf)
         image _ QImage()
 
         sharedMemory.lock()

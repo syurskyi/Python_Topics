@@ -1,6 +1,6 @@
 ______ ___
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtNetwork __ qtn
+____ ? ______ ?N.. __ qtn
 ____ ? ______ ?C.. __ qtc
 
 
@@ -18,7 +18,7 @@ c_ TcpChatInterface(qtc.?O..):
         recipient _ recipient
 
         listener _ qtn.QTcpServer()
-        listener.listen(qtn.QHostAddress.Any, port)
+        listener.listen(qtn.?HA...Any, port)
         listener.newConnection.c..(on_connection)
         listener.acceptError.c..(on_error)
         connections _   # list
@@ -33,7 +33,7 @@ c_ TcpChatInterface(qtc.?O..):
 
     ___ process_datastream 
         ___ socket __ connections:
-            datastream _ qtc.QDataStream(socket)
+            datastream _ qtc.?DS..(socket)
             __ no. socket.bytesAvailable
                 continue
             #message_length = self.datastream.readUInt32()
@@ -47,7 +47,7 @@ c_ TcpChatInterface(qtc.?O..):
         raw_message _ f'{username}{delimiter}{message}'
         __ client_socket.s.. !_ qtn.QAbstractSocket.ConnectedState:
             client_socket.connectToHost(recipient, port)
-        datastream _ qtc.QDataStream(client_socket)
+        datastream _ qtc.?DS..(client_socket)
         #self.datastream.writeUInt32()
         datastream.writeQString(raw_message)
 

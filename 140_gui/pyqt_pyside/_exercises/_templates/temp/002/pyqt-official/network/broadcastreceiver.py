@@ -44,7 +44,7 @@
 
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ QUdpSocket
+____ ?.?N.. ______ QUdpSocket
 
 
 c_ Receiver(QDialog):

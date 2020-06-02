@@ -44,7 +44,7 @@
 
 ______ random
 
-____ ?.?C.. ______ (pS.., QByteArray, QDataStream, QIODevice,
+____ ?.?C.. ______ (pS.., QByteArray, ?DS.., QIODevice,
         QMimeData, QPoint, QRect, ?S.., __)
 ____ ?.?G.. ______ QDrag, ?C.., QCursor, QIcon, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
@@ -107,7 +107,7 @@ c_ PuzzleWidget(?W..):
     ___ dropEvent  event):
         __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) __ -1:
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
-            dataStream _ QDataStream(pieceData, QIODevice.ReadOnly)
+            dataStream _ ?DS..(pieceData, QIODevice.ReadOnly)
             square _ targetSquare(event.pos())
             pixmap _ ?P..()
             location _ QPoint()
@@ -156,7 +156,7 @@ c_ PuzzleWidget(?W..):
         update(square)
 
         itemData _ QByteArray()
-        dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
+        dataStream _ ?DS..(itemData, QIODevice.WriteOnly)
 
         dataStream << pixmap << location
 
@@ -223,7 +223,7 @@ c_ PiecesList(QListWidget):
     ___ dropEvent  event):
         __ event.mimeData().hasFormat('image/x-puzzle-piece'):
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
-            dataStream _ QDataStream(pieceData, QIODevice.ReadOnly)
+            dataStream _ ?DS..(pieceData, QIODevice.ReadOnly)
             pixmap _ ?P..()
             location _ QPoint()
             dataStream >> pixmap >> location
@@ -246,7 +246,7 @@ c_ PiecesList(QListWidget):
         item _ currentItem()
 
         itemData _ QByteArray()
-        dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
+        dataStream _ ?DS..(itemData, QIODevice.WriteOnly)
         pixmap _ ?P..(item.data(__.UserRole))
         location _ item.data(__.UserRole+1)
 
