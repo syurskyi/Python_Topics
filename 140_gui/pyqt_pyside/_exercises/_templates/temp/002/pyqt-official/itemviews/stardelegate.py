@@ -249,4 +249,4 @@ __ ______ __ ______
     tableWidget.r..(500, 300)
     tableWidget.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

@@ -111,4 +111,4 @@ __ ______ __ ______
     wizard.sWT..("Trivial Wizard")
     wizard.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

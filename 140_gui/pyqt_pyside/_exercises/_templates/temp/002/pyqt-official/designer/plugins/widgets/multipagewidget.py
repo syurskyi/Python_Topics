@@ -100,7 +100,7 @@ __ __name__ __ "__main__":
     widget.addPage(QLabel('This is page #1'))
     widget.addPage(QLabel('This is page #2'))
     widget.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..
 
 #============================================================================#
 # EOF                                                                        #

@@ -295,7 +295,7 @@ c_ MainWindow ?MW..
         sWT..("%s[*] - SDI" % strippedName(curFile))
 
     ___ strippedName  fullFileName):
-        r_ QFileInfo(fullFileName).fileName()
+        r_ QFileInfo(fullFileName).fN..
 
     ___ findMainWindow  fileName):
         canonicalFilePath _ QFileInfo(fileName).canonicalFilePath()
@@ -314,4 +314,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

@@ -829,4 +829,4 @@ __ ______ __ ______
     mainWindow.setGeometry(100, 100, 800, 500)
     mainWindow.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

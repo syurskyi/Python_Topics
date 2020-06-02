@@ -295,4 +295,4 @@ __ ______ __ ______
     ____
         window.openFile(':/files/bubbles.svg')
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

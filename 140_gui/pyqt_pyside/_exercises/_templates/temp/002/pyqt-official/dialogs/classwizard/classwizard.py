@@ -129,7 +129,7 @@ c_ ClassWizard(QWizard):
 
         __ no. headerFile.o..(QFile.WriteOnly | QFile.Text):
             ?MB...warning(N.., "Class Wizard",
-                    "Cannot write file %s:\n%s" % (headerFile.fileName(), headerFile.errorString()))
+                    "Cannot write file %s:\n%s" % (headerFile.fN.., headerFile.errorString()))
             r_
 
         headerFile.w..(block)
@@ -182,7 +182,7 @@ c_ ClassWizard(QWizard):
 
         __ no. implementationFile.o..(QFile.WriteOnly | QFile.Text):
             ?MB...warning(N.., "Class Wizard",
-                    "Cannot write file %s:\n%s" % (implementationFile.fileName(), implementationFile.errorString()))
+                    "Cannot write file %s:\n%s" % (implementationFile.fN.., implementationFile.errorString()))
             r_
 
         implementationFile.w..(block)
@@ -400,4 +400,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     wizard _ ClassWizard()
     wizard.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, ?U..
 ____ ?.?W.. ______ (?A.., ?A.., QLineEdit, ?MW..,
         QSizePolicy, QStyle, ?TE..)
-____ ?.QtNetwork ______ QNetworkProxyFactory, QNetworkRequest
+____ ?.QtNetwork ______ QNetworkProxyFactory, ?NR..
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
 
 ______ jquery_rc
@@ -112,7 +112,7 @@ c_ MainWindow ?MW..
 
     ___ viewSource 
         accessManager _ view.page().networkAccessManager()
-        request _ QNetworkRequest(view.url())
+        request _ ?NR..(view.url())
         reply _ accessManager.g..(request)
         reply.finished.c..(slotSourceDownloaded)
 
@@ -126,7 +126,7 @@ c_ MainWindow ?MW..
         reply.deleteLater()
 
     ___ adjustLocation 
-        locationEdit.sT..(view.url().toString())
+        locationEdit.sT..(view.u.. .toString())
 
     ___ changeLocation 
         url _ ?U...fromUserInput(locationEdit.t__())
@@ -208,4 +208,4 @@ __ ______ __ ______
     browser _ MainWindow(url)
     browser.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

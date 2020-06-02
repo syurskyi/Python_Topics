@@ -153,7 +153,7 @@ c_ MdiChild(?TE..):
         sWT..(userFriendlyCurrentFile() + "[*]")
 
     ___ strippedName  fullFileName):
-        r_ QFileInfo(fullFileName).fileName()
+        r_ QFileInfo(fullFileName).fN..
 
 
 c_ MainWindow ?MW..
@@ -443,4 +443,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

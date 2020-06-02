@@ -406,11 +406,11 @@ c_ MenuManager(?O..):
 
         pyFile _ QFile(dir.pa__() + '/' + fileName + '.py')
         __ pyFile.e..
-            r_ pyFile.fileName()
+            r_ pyFile.fN..
 
         pywFile _ QFile(dir.pa__() + '/' + fileName + '.pyw')
         __ pywFile.e..
-            r_ pywFile.fileName()
+            r_ pywFile.fN..
 
         Colors.debug("- WARNING: Could not resolve executable:", dir.pa__(),
                 fileName)
@@ -423,7 +423,7 @@ c_ MenuManager(?O..):
 
         qmlFile _ QFile(dir.pa__() + '/' + fileName + '.qml')
         __ qmlFile.e..
-            r_ qmlFile.fileName()
+            r_ qmlFile.fN..
 
         Colors.debug("- WARNING: Could not resolve QML file:", dir.pa__(),
                 fileName)

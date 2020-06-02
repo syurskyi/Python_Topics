@@ -144,4 +144,4 @@ __ __name__ __ "__main__":
     a _ ?A..(___.a..
     w _ MainWindow()
     w.s..
-    ___.e..(a.exec_())
+    ___.e..(a.e..

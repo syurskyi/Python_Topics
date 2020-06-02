@@ -240,4 +240,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     gallery _ WidgetGallery()
     gallery.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

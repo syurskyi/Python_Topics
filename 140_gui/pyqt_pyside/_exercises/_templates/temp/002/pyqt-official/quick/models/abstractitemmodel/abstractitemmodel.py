@@ -123,4 +123,4 @@ __ ______ __ ______
     view.setSource(?U..('qrc:view.qml'))
     view.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

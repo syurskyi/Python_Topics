@@ -17,4 +17,4 @@ ___ createDB
 __ __name__ __ "__main__":
     app _  ?CA..(___.a..
     createDB()
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

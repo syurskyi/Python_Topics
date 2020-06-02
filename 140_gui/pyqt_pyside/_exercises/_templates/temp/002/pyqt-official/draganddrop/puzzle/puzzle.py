@@ -364,4 +364,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.openImage(':/images/example.jpg')
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

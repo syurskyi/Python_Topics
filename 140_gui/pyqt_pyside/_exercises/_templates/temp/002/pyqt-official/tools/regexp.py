@@ -190,4 +190,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ RegExpDialog()
     dialog.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

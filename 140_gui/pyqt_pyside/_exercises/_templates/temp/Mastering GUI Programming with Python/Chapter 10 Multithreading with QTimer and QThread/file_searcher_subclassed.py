@@ -83,13 +83,13 @@ c_ MainWindow(qtw.?MW..):
         form.tC...c..(ss.set_term)
         form.rP__.c..(ss.start)
         ss.match_found.c..(form.addResult)
-        ss.finished.c..(on_finished)
+        ss.finished.c..(o_f..)
         ss.directory_changed.c..(on_directory_changed)
 
         # End main UI code
         s..
 
-    ___ on_finished 
+    ___ o_f..
         statusBar().showMessage('Search Finished')
 
     ___ on_directory_changed  pa__):

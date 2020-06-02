@@ -156,4 +156,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ Window()
     mainWin.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

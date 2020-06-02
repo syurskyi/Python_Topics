@@ -51,8 +51,8 @@ ____ ?.?C.. ______ (pS.., QBasicTimer, ?O.., QPoint, QPointF,
 ____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
         QPainterPath, ?P.., QRadialGradient)
 ____ ?.?W.. ______ ?A.., ?A.., ?MW.., ?W..
-____ ?.QtNetwork ______ (QNetworkAccessManager, QNetworkDiskCache,
-        QNetworkRequest)
+____ ?.QtNetwork ______ (?NAM.., QNetworkDiskCache,
+        ?NR..)
 
 
 # how long (milliseconds) the user need to hold (after a tap on the screen)
@@ -118,7 +118,7 @@ c_ SlippyMap(?O..):
         _offset _ QPoint()
         _tilesRect _ QRect()
         _tilePixmaps _   # dict # Point(x, y) to QPixmap mapping
-        _manager _ QNetworkAccessManager()
+        _manager _ ?NAM..()
         _url _ ?U..()
         # public vars
         width _ 400
@@ -187,8 +187,8 @@ c_ SlippyMap(?O..):
     # slots
     ___ handleNetworkData  reply):
         img _ QImage()
-        tp _ Point(reply.request().attribute(QNetworkRequest.User))
-        url _ reply.url()
+        tp _ Point(reply.request().attribute(?NR...User))
+        url _ reply.u..
         __ no. reply.error
             __ img.load(reply, N..):
                 _tilePixmaps[tp] _ ?P...fromImage(img)
@@ -217,10 +217,10 @@ c_ SlippyMap(?O..):
 
         pa__ _ 'http://tile.openstreetmap.org/%d/%d/%d.png' % (zoom, grab.x(), grab.y())
         _url _ ?U..(pa__)
-        request _ QNetworkRequest()
+        request _ ?NR..()
         request.setUrl(_url)
         request.setRawHeader(b'User-Agent', b'Nokia (PyQt) Graphics Dojo 1.0')
-        request.setAttribute(QNetworkRequest.User, grab)
+        request.setAttribute(?NR...User, grab)
         _manager.g..(request)
 
     ___ tileRect  tp):
@@ -479,4 +479,4 @@ __ ______ __ ______
     w.sWT..("OpenStreetMap")
     w.r..(600, 450)
     w.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

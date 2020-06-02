@@ -223,4 +223,4 @@ __ ______ __ ______
     window _ Window()
     window.setSourceModel(createMailModel(window))
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

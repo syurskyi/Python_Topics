@@ -187,4 +187,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.r..(640, 256)
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

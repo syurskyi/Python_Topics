@@ -234,4 +234,4 @@ __ ______ __ ______
     view.s..
     view.sWT..("Embedded Dialogs Demo")
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

@@ -434,7 +434,7 @@ c_ TextEdit ?MW..
         __ no. fileName:
             shownName _ 'untitled.txt'
         ____
-            shownName _ QFileInfo(fileName).fileName()
+            shownName _ QFileInfo(fileName).fN..
 
         sWT..(tr("%s[*] - %s" % (shownName, "Rich Text")))
         setWindowModified F..
@@ -653,4 +653,4 @@ __ ______ __ ______
         textEdit.s..
         mainWindows.ap..(textEdit)
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

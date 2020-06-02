@@ -201,4 +201,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.r..(640, 512)
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

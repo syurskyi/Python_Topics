@@ -152,4 +152,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ DragWidget()
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

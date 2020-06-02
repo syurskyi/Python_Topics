@@ -93,4 +93,4 @@ tree.setColumnWidth(0, tree.width() / 3)
 tree.sWT..("Dir View")
 tree.s..
 
-___.e.. ?.exec_())
+___.e.. ?.e..

@@ -174,4 +174,4 @@ __ __name__ __ "__main__":
     widget _ CounterLabel()
     widget.setValue(123)
     widget.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

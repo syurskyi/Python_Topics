@@ -540,4 +540,4 @@ __ ______ __ ______
     sheet.setWindowIcon(QIcon(?P..(":/images/interview.png")))
     sheet.r..(640, 420)
     sheet.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

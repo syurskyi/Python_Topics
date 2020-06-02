@@ -332,4 +332,4 @@ __ __name__ __ "__main__":
     app _ ?A..(___.a..
     widget _ BubblesWidget()
     widget.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

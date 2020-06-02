@@ -160,4 +160,4 @@ __ ______ __ ______
     mainWidget.sWT..("Draggable Icons")
     mainWidget.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

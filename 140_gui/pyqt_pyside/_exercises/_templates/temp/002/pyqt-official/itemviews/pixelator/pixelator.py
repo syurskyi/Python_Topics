@@ -299,4 +299,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.s..
     window.openImage(':/images/qt.png')
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

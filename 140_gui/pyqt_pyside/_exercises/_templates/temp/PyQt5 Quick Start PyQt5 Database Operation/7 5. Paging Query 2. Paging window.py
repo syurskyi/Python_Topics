@@ -60,4 +60,4 @@ __ __name__ __ "__main__":
     window _ DataGrid()
     window.initUI()
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

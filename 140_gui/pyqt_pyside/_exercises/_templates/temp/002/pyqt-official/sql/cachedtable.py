@@ -107,4 +107,4 @@ __ ______ __ ______
 
     editor _ TableEditor('person')
     editor.s..
-    ___.e..(editor.exec_())
+    ___.e..(editor.e..

@@ -223,7 +223,7 @@ c_ MainWindow ?MW..
         separatorAct.setVisible((numRecentFiles > 0))
 
     ___ strippedName  fullFileName):
-        r_ QFileInfo(fullFileName).fileName()
+        r_ QFileInfo(fullFileName).fN..
 
 
 __ ______ __ ______
@@ -233,4 +233,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

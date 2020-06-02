@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., QFile, QFileInfo, QIODevice, ?U..
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QHBoxLayout, QLabel, QLineEdit, ?MB.., QProgressDialog,
         ?PB.., QVBoxLayout)
-____ ?.QtNetwork ______ QNetworkAccessManager, QNetworkRequest
+____ ?.QtNetwork ______ ?NAM.., ?NR..
 
 
 c_ HttpWindow(QDialog):
@@ -54,7 +54,7 @@ c_ HttpWindow(QDialog):
         super(HttpWindow, self). - (parent)
 
         url _ ?U..()
-        qnam _ QNetworkAccessManager()
+        qnam _ ?NAM..()
         reply _ N..
         outFile _ N..
         httpGetId _ 0
@@ -101,7 +101,7 @@ c_ HttpWindow(QDialog):
         urlLineEdit.setFocus()
 
     ___ startRequest  url):
-        reply _ qnam.g..(QNetworkRequest(url))
+        reply _ qnam.g..(?NR..(url))
         reply.finished.c..(httpFinished)
         reply.readyRead.c..(httpReadyRead)
         reply.downloadProgress.c..(updateDataReadProgress)
@@ -109,7 +109,7 @@ c_ HttpWindow(QDialog):
     ___ downloadFile 
         url _ ?U..(urlLineEdit.t__())
         fileInfo _ QFileInfo(url.pa__())
-        fileName _ fileInfo.fileName()
+        fileName _ fileInfo.fN..
 
         __ no. fileName:
             fileName _ 'index.html'
@@ -162,7 +162,7 @@ c_ HttpWindow(QDialog):
         outFile.flush()
         outFile.c..
 
-        redirectionTarget _ reply.attribute(QNetworkRequest.RedirectionTargetAttribute)
+        redirectionTarget _ reply.attribute(?NR...RedirectionTargetAttribute)
 
         __ reply.error
             outFile.remove()
@@ -185,7 +185,7 @@ c_ HttpWindow(QDialog):
                 startRequest(url)
                 r_
         ____
-            fileName _ QFileInfo(?U..(urlLineEdit.t__()).pa__()).fileName()
+            fileName _ QFileInfo(?U..(urlLineEdit.t__()).pa__()).fN..
             statusLabel.sT..("Downloaded %s to %s." % (fileName, ?D...currentPath()))
 
             downloadButton.sE..( st.
@@ -242,4 +242,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     httpWin _ HttpWindow()
     httpWin.s..
-    ___.e..(httpWin.exec_())
+    ___.e..(httpWin.e..

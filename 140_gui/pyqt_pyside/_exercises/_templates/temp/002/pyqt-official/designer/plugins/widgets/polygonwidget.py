@@ -189,4 +189,4 @@ __ __name__ __ "__main__":
     app _ ?A..(___.a..
     window _ PolygonWidget()
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

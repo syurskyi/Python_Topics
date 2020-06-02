@@ -112,7 +112,7 @@ c_ FrameCapture(?O..):
         cout("\n")
         # Crude error-checking.
         __ no. ok:
-            cerr("Failed loading %s\n" % _page.mainFrame().url().toString())
+            cerr("Failed loading %s\n" % _page.mainFrame().u.. .toString())
             finished.e..()
             r_
 

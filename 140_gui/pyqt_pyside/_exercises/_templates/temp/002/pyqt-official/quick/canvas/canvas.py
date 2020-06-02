@@ -66,4 +66,4 @@ view.engine().quit.c.. ?.quit)
 view.setSource(?U..('qrc:///canvas/canvas.qml'))
 view.s..
 
-___.e.. ?.exec_())
+___.e.. ?.e..

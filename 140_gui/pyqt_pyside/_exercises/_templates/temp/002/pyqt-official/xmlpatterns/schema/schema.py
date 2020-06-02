@@ -272,4 +272,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

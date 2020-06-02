@@ -86,4 +86,4 @@ __ ______ __ ______
     view2.move(view1.x() + view1.width() + 20, view1.y())
     view2.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

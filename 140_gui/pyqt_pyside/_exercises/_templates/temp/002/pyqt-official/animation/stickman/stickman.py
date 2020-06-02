@@ -654,4 +654,4 @@ __ ______ __ ______
     cycle.addActivity(':/animations/chilling', __.Key_C)
     cycle.start()
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

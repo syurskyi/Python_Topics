@@ -182,7 +182,7 @@ c_ MainWindow ?MW..
         refreshAct.sE..( st.
         autoRefreshAct.sE..( st.
 
-        niceName _ settings.fileName()
+        niceName _ settings.fN..
         niceName.replace('\\', '/')
         niceName _ niceName.sp..('/')[-1]
 
@@ -722,4 +722,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

@@ -344,4 +344,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     widget _ MandelbrotWidget()
     widget.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

@@ -12,13 +12,13 @@ c_ Poster(qtc.?O..):
 
     ___  -
         s_. - ()
-        nam _ qtn.QNetworkAccessManager()
+        nam _ qtn.?NAM..()
         nam.finished.c..(on_reply)
 
     ___ make_request  url, data, filename):
         print(f"Making request to {url}")
         # Create the request object
-        request _ qtn.QNetworkRequest(url)
+        request _ qtn.?NR..(url)
 
         # create the multipart object
         multipart _ qtn.QHttpMultiPart(qtn.QHttpMultiPart.FormDataType)
@@ -27,7 +27,7 @@ c_ Poster(qtc.?O..):
         ___ key, value __ (data or   # dict).items
             http_part _ qtn.QHttpPart()
             http_part.setHeader(
-                qtn.QNetworkRequest.ContentDispositionHeader,
+                qtn.?NR...ContentDispositionHeader,
                 f'form-data; name="{key}"'
             )
             http_part.setBody(value.encode('utf-8'))
@@ -38,7 +38,7 @@ c_ Poster(qtc.?O..):
             file_part _ qtn.QHttpPart()
             filedata _ o..(filename, 'rb').read()
             file_part.setHeader(
-                qtn.QNetworkRequest.ContentDispositionHeader,
+                qtn.?NR...ContentDispositionHeader,
                 f'form-data; name="attachment"; filename="{filename}"'
             )
             file_part.setBody(filedata)

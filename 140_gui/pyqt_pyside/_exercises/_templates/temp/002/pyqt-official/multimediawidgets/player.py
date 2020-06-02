@@ -107,7 +107,7 @@ c_ PlaylistModel(QAbstractItemModel):
         __ index.iV.. and role __ __.DR..:
             __ index.column() __ Title:
                 location _ m_playlist.media(index.row()).canonicalUrl()
-                r_ QFileInfo(location.pa__()).fileName()
+                r_ QFileInfo(location.pa__()).fN..
 
             r_ m_data[index]
 
@@ -688,4 +688,4 @@ __ ______ __ ______
     player _ Player(___.argv[1:])
     player.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

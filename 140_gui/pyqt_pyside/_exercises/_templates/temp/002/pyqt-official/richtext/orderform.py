@@ -300,4 +300,4 @@ __ ______ __ ______
     window.r..(640, 480)
     window.s..
     window.createSample()
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

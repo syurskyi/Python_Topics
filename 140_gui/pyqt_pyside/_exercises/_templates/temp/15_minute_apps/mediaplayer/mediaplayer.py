@@ -31,7 +31,7 @@ c_ PlaylistModel(QAbstractListModel):
     ___ data  index, role):
         __ role __ __.DR..:
             media _ playlist.media(index.row())
-            r_ media.canonicalUrl().fileName()
+            r_ media.canonicalUrl().fN..
 
     ___ rowCount  index):
         r_ playlist.mediaCount()

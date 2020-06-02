@@ -154,4 +154,4 @@ __ ______ __ ______
     createView("Editable Query Model", editableModel)
     createView("Custom Query Model", customModel)
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

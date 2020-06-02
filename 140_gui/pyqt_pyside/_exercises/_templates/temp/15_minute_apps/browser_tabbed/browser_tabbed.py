@@ -165,7 +165,7 @@ class MainWindow(?MW..):
             add_new_tab()
 
     def current_tab_changed(self, i):
-        qurl = tabs.currentWidget().url()
+        qurl = tabs.currentWidget().u..
         update_urlbar(qurl, tabs.currentWidget())
         update_title(tabs.currentWidget())
 

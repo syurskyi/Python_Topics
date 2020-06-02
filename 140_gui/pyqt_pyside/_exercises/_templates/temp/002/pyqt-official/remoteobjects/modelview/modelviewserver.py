@@ -166,4 +166,4 @@ __ ______ __ ______
     QTimer.singleShot(12000, handler.removeData)
     QTimer.singleShot(13000, handler.moveData)
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

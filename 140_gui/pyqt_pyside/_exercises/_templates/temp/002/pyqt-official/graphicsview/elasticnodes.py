@@ -427,4 +427,4 @@ __ ______ __ ______
     widget _ GraphWidget()
     widget.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

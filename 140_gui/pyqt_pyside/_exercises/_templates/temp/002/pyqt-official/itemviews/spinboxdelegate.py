@@ -92,4 +92,4 @@ __ ______ __ ______
 
     tableView.sWT..("Spin Box Delegate")
     tableView.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

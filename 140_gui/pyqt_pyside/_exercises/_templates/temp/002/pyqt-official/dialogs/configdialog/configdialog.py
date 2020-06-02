@@ -241,4 +241,4 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     dialog _ ConfigDialog()
-    ___.e..(dialog.exec_())
+    ___.e..(dialog.e..

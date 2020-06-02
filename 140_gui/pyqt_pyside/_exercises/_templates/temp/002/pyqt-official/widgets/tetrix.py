@@ -501,4 +501,4 @@ __ ______ __ ______
     window _ TetrixWindow()
     window.s..
     random.seed(N..)
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

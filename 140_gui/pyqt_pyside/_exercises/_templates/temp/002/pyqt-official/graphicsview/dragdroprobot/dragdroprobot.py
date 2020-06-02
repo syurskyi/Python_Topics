@@ -311,4 +311,4 @@ __ __name____ '__main__':
     view.sWT..("Drag and Drop Robot")
     view.s..
 
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

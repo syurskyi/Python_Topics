@@ -376,4 +376,4 @@ __ ______ __ ______
 
     window _ GLWidget()
     window.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..

@@ -71,4 +71,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     calculator _ CalculatorForm()
     calculator.s..
-    ___.e.. ?.exec_())
+    ___.e.. ?.e..
