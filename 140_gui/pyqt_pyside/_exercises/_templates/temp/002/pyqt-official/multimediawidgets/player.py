@@ -57,7 +57,7 @@ ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
 c_ VideoWidget(QVideoWidget):
 
     ___  -   parent_None):
-        super(VideoWidget, self). - (parent)
+        s__(VideoWidget, self). - (parent)
 
         sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
 
@@ -75,7 +75,7 @@ c_ VideoWidget(QVideoWidget):
             setFullScreen(no. isFullScreen())
             event.accept()
         ____
-            super(VideoWidget, self).keyPressEvent(event)
+            s__(VideoWidget, self).keyPressEvent(event)
 
     ___ mouseDoubleClickEvent  event):
         setFullScreen(no. isFullScreen())
@@ -87,7 +87,7 @@ c_ PlaylistModel(QAbstractItemModel):
     Title, ColumnCount _ ra..(2)
 
     ___  -   parent_None):
-        super(PlaylistModel, self). - (parent)
+        s__(PlaylistModel, self). - (parent)
 
         m_playlist _ N..
 
@@ -169,7 +169,7 @@ c_ PlayerControls(?W..):
     changeRate _ pS..(float)
 
     ___  -   parent_None):
-        super(PlayerControls, self). - (parent)
+        s__(PlayerControls, self). - (parent)
 
         playerState _ ?MP...StoppedState
         playerMuted _ F..
@@ -322,7 +322,7 @@ c_ FrameProcessor(?O..):
 c_ HistogramWidget(?W..):
 
     ___  -   parent_None):
-        super(HistogramWidget, self). - (parent)
+        s__(HistogramWidget, self). - (parent)
 
         m_levels _ 128
         m_isBusy _ F..
@@ -380,7 +380,7 @@ c_ Player(?W..):
     fullScreenChanged _ pS..(bool)
 
     ___  -   playlist, parent_None):
-        super(Player, self). - (parent)
+        s__(Player, self). - (parent)
 
         colorDialog _ N..
         trackInfo _ ""

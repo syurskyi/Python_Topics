@@ -54,7 +54,7 @@ ______ configdialog_rc
 
 c_ ConfigurationPage(?W..):
     ___  -   parent_None):
-        super(ConfigurationPage, self). - (parent)
+        s__(ConfigurationPage, self). - (parent)
 
         configGroup _ QGroupBox("Server configuration")
 
@@ -83,7 +83,7 @@ c_ ConfigurationPage(?W..):
 
 c_ UpdatePage(?W..):
     ___  -   parent_None):
-        super(UpdatePage, self). - (parent)
+        s__(UpdatePage, self). - (parent)
 
         updateGroup _ QGroupBox("Package selection")
         systemCheckBox _ QCheckBox("Update system")
@@ -124,7 +124,7 @@ c_ UpdatePage(?W..):
 
 c_ QueryPage(?W..):
     ___  -   parent_None):
-        super(QueryPage, self). - (parent)
+        s__(QueryPage, self). - (parent)
 
         packagesGroup _ QGroupBox("Look for packages")
 
@@ -168,7 +168,7 @@ c_ QueryPage(?W..):
 
 c_ ConfigDialog(QDialog):
     ___  -   parent_None):
-        super(ConfigDialog, self). - (parent)
+        s__(ConfigDialog, self). - (parent)
 
         contentsWidget _ QListWidget()
         contentsWidget.setViewMode(QListView.IconMode)

@@ -53,7 +53,7 @@ ______ fridgemagnets_rc
 
 c_ DragLabel(QLabel):
     ___  -   t__, parent):
-        super(DragLabel, self). - (parent)
+        s__(DragLabel, self). - (parent)
 
         metric _ QFontMetrics(font())
         size _ metric.size(__.TextSingleLine, t__)
@@ -105,7 +105,7 @@ c_ DragLabel(QLabel):
 
 c_ DragWidget(?W..):
     ___  -   parent_None):
-        super(DragWidget, self). - (parent)
+        s__(DragWidget, self). - (parent)
 
         dictionaryFile _ QFile(':/dictionary/words.txt')
         dictionaryFile.o..(QFile.ReadOnly)

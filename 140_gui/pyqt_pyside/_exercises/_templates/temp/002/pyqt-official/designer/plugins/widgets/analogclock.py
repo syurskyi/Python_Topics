@@ -64,7 +64,7 @@ c_ PyAnalogClock(?W..):
 
     ___  -   parent_None):
 
-        super(PyAnalogClock, self). - (parent)
+        s__(PyAnalogClock, self). - (parent)
 
         timeZoneOffset _ 0
 

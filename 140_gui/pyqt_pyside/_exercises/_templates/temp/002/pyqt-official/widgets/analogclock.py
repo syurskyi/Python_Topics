@@ -64,7 +64,7 @@ c_ AnalogClock(?W..):
     minuteColor _ ?C..(0, 127, 127, 191)
 
     ___  -   parent_None):
-        super(AnalogClock, self). - (parent)
+        s__(AnalogClock, self). - (parent)
 
         timer _ ?T..
         timer.timeout.c..(update)

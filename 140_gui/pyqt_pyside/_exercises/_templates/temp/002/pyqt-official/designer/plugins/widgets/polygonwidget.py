@@ -39,7 +39,7 @@ c_ PolygonWidget(?W..):
     
     ___  -   parent_None):
     
-        super(PolygonWidget, self). - (parent)
+        s__(PolygonWidget, self). - (parent)
         
         _sides _ 5
         _innerRadius _ 20

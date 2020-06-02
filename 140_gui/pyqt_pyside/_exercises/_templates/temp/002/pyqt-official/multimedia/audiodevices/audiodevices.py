@@ -51,7 +51,7 @@ ____ ui_audiodevicesbase ______ Ui_AudioDevicesBase
 c_ AudioDevicesBase(?MW.., Ui_AudioDevicesBase):
 
     ___  -   parent_None):
-        super(AudioDevicesBase, self). - (parent)
+        s__(AudioDevicesBase, self). - (parent)
 
         setupUi
 
@@ -59,7 +59,7 @@ c_ AudioDevicesBase(?MW.., Ui_AudioDevicesBase):
 c_ AudioTest(AudioDevicesBase):
 
     ___  -   parent_None):
-        super(AudioTest, self). - (parent)
+        s__(AudioTest, self). - (parent)
 
         deviceInfo _ QAudioDeviceInfo()
         settings _ QAudioFormat()

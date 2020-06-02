@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
 
 c_ PreviewWindow(?W..):
     ___  -   parent_None):
-        super(PreviewWindow, self). - (parent)
+        s__(PreviewWindow, self). - (parent)
 
         textEdit _ ?TE..()
         textEdit.setReadOnly( st.
@@ -67,7 +67,7 @@ c_ PreviewWindow(?W..):
         sWT..("Preview")
 
     ___ setWindowFlags  flags):
-        super(PreviewWindow, self).setWindowFlags(flags)
+        s__(PreviewWindow, self).setWindowFlags(flags)
 
         flag_type _ (flags & __.WindowType_Mask)
 
@@ -122,7 +122,7 @@ c_ PreviewWindow(?W..):
 
 c_ ControllerWindow(?W..):
     ___  -
-        super(ControllerWindow, self). - ()
+        s__(ControllerWindow, self). - ()
 
         previewWindow _ PreviewWindow
 

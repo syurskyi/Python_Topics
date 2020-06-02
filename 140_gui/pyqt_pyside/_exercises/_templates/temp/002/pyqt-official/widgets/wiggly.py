@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QDialog, QLineEdit, QVBoxLayout,
 
 c_ WigglyWidget(?W..):
     ___  -   parent_None):
-        super(WigglyWidget, self). - (parent)
+        s__(WigglyWidget, self). - (parent)
 
         setBackgroundRole(?P...Midlight)
         setAutoFillBackground( st.
@@ -90,12 +90,12 @@ c_ WigglyWidget(?W..):
             step +_ 1
             update()
         ____
-            super(WigglyWidget, self).timerEvent(event)
+            s__(WigglyWidget, self).timerEvent(event)
 
 
 c_ Dialog(QDialog):
     ___  -   parent_None):
-        super(Dialog, self). - (parent)
+        s__(Dialog, self). - (parent)
 
         wigglyWidget _ WigglyWidget()
         lineEdit _ ?LE..

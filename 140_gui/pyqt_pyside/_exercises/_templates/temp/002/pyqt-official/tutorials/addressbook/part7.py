@@ -83,7 +83,7 @@ c_ AddressBook(?W..):
     NavigationMode, AddingMode, EditingMode _ ra..(3)
 
     ___  -   parent_None):
-        super(AddressBook, self). - (parent)
+        s__(AddressBook, self). - (parent)
 
         contacts _ SortedDict()
         oldName _ ''
@@ -434,7 +434,7 @@ c_ AddressBook(?W..):
 
 c_ FindDialog(QDialog):
     ___  -   parent_None):
-        super(FindDialog, self). - (parent)
+        s__(FindDialog, self). - (parent)
 
         findLabel _ QLabel("Enter the name of a contact:")
         lineEdit _ ?LE..

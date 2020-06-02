@@ -55,7 +55,7 @@ ______ states_rc
 
 c_ Pixmap(QGraphicsObject):
     ___  -   pix):
-        super(Pixmap, self). - ()
+        s__(Pixmap, self). - ()
 
         p _ ?P..(pix)
 

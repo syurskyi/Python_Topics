@@ -49,7 +49,7 @@ ____ ?.?W.. ______ (?A.., QLayout, ?PB.., QSizePolicy,
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         flowLayout _ FlowLayout()
         flowLayout.aW..(?PB..("Short"))
@@ -64,7 +64,7 @@ c_ Window(?W..):
 
 c_ FlowLayout(QLayout):
     ___  -   parent_None, margin_0, spacing_-1):
-        super(FlowLayout, self). - (parent)
+        s__(FlowLayout, self). - (parent)
 
         __ parent __ no. N..:
             setContentsMargins(margin, margin, margin, margin)
@@ -107,7 +107,7 @@ c_ FlowLayout(QLayout):
         r_ height
 
     ___ setGeometry  rect):
-        super(FlowLayout, self).setGeometry(rect)
+        s__(FlowLayout, self).setGeometry(rect)
         doLayout(rect, F..)
 
     ___ sH..

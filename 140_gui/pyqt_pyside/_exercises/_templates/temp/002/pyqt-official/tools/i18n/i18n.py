@@ -53,7 +53,7 @@ ______ i18n_rc
 
 c_ LanguageChooser(QDialog):
     ___  -   parent_None):
-        super(LanguageChooser, self). - (parent, __.WindowStaysOnTopHint)
+        s__(LanguageChooser, self). - (parent, __.WindowStaysOnTopHint)
 
         qmFileForCheckBoxMap _   # dict
         mainWindowForCheckBoxMap _   # dict
@@ -163,7 +163,7 @@ c_ MainWindow ?MW..
                    QT_TRANSLATE_NOOP("MainWindow", "Third")]
 
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         centralWidget _ ?W..
         sCW..(centralWidget)

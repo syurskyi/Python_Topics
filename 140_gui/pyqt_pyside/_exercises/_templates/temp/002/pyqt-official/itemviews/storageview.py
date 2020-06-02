@@ -108,7 +108,7 @@ c_ StorageModel ?ATM..
     }
 
     ___  -   parent _ N..):
-        super(StorageModel, self). - (parent)
+        s__(StorageModel, self). - (parent)
         volumes _ QStorageInfo.mountedVolumes()
 
     ___ columnCount  parent _ N..):

@@ -50,7 +50,7 @@ ____ demoitem ______ DemoItem
 
 c_ HeadingItem(DemoItem):
     ___  -   t__, parent_None):
-        super(HeadingItem, self). - (parent)
+        s__(HeadingItem, self). - (parent)
 
         t__ _ t__
         noSubPixeling _ T..

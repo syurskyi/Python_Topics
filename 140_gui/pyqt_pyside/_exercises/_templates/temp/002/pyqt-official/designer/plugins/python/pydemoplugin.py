@@ -16,7 +16,7 @@ c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
 
     # Initialise the instance.
     ___  -   parent_None):
-        super(PyDemoPlugin, self). - (parent)
+        s__(PyDemoPlugin, self). - (parent)
 
         _initialized _ F..
 

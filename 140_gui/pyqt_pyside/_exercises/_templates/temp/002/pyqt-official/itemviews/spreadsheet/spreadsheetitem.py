@@ -48,20 +48,20 @@ c_ SpreadSheetItem(QTableWidgetItem):
 
     ___  -   text_None):
         __ t__ __ no. N..:
-            super(SpreadSheetItem, self). - (t__)
+            s__(SpreadSheetItem, self). - (t__)
         ____
-            super(SpreadSheetItem, self). - ()
+            s__(SpreadSheetItem, self). - ()
 
         isResolving _ F..
 
     ___ clone
-        item _ super(SpreadSheetItem, self).clone()
+        item _ s__(SpreadSheetItem, self).clone()
         item.isResolving _ isResolving
 
         r_ item
 
     ___ formula
-        r_ super(SpreadSheetItem, self).data(__.DR..)
+        r_ s__(SpreadSheetItem, self).data(__.DR..)
 
     ___ data  role):
         __ role __ (__.ER.., __.StatusTipRole):
@@ -83,10 +83,10 @@ c_ SpreadSheetItem(QTableWidgetItem):
         __ role __ __.TextAlignmentRole:
             __ t and (t[0].i_d.. or t[0] __ '-'):
                 r_ __.AlignRight | __.AlignVCenter
-        r_ super(SpreadSheetItem, self).data(role)
+        r_ s__(SpreadSheetItem, self).data(role)
 
     ___ setData  role, value):
-        super(SpreadSheetItem, self).setData(role, value)
+        s__(SpreadSheetItem, self).setData(role, value)
         __ tableWidget
             tableWidget().viewport().update()
 

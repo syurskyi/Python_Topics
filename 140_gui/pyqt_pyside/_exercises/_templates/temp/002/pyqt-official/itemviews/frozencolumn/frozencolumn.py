@@ -58,7 +58,7 @@ ____ ?.?W.. ______ ?A.., ?HV.., QTableView
 
 c_ FreezeTableWidget(QTableView):
     ___  -   model):
-        super(FreezeTableWidget, self). - ()
+        s__(FreezeTableWidget, self). - ()
         sM..(model)
         frozenTableView _ QTableView
         init()
@@ -104,11 +104,11 @@ c_ FreezeTableWidget(QTableView):
         frozenTableView.setRowHeight(logicalIndex, newSize)
 
     ___ resizeEvent  event):
-        super(FreezeTableWidget, self).resizeEvent(event)
+        s__(FreezeTableWidget, self).resizeEvent(event)
         updateFrozenTableGeometry()
 
     ___ moveCursor  cursorAction, modifiers):
-        current _ super(FreezeTableWidget, self).moveCursor(cursorAction, modifiers)
+        current _ s__(FreezeTableWidget, self).moveCursor(cursorAction, modifiers)
         __ (cursorAction __ MoveLeft and
                 current.column() > 0 and
                 visualRect(current).topLeft().x() <
@@ -121,7 +121,7 @@ c_ FreezeTableWidget(QTableView):
 
     ___ scrollTo  index, hint):
         __ index.column() > 0:
-            super(FreezeTableWidget, self).scrollTo(index, hint)
+            s__(FreezeTableWidget, self).scrollTo(index, hint)
 
     ___ updateFrozenTableGeometry
         frozenTableView.setGeometry(

@@ -55,7 +55,7 @@ c_ Pixmap(QGraphicsWidget):
     c__ _ pS..()
 
     ___  -   pix, parent_None):
-        super(Pixmap, self). - (parent)
+        s__(Pixmap, self). - (parent)
 
         orig _ ?P..(pix)
         p _ ?P..(pix)
@@ -67,7 +67,7 @@ c_ Pixmap(QGraphicsWidget):
         c__.e..()
 
     ___ setGeometry  rect):
-        super(Pixmap, self).setGeometry(rect)
+        s__(Pixmap, self).setGeometry(rect)
 
         __ rect.size().width() > orig.size().width
             p _ orig.scaled(rect.size().toSize())

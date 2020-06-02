@@ -43,7 +43,7 @@ ____ ?.?W.. ______ QTableView
 
 c_ PrintView(QTableView):
     ___  -
-        super(PrintView, self). - ()
+        s__(PrintView, self). - ()
 
         setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)

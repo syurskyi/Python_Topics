@@ -45,14 +45,14 @@
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ ?A.., QTableView
-____ ?.?S.. ______ QSqlQuery, QSqlQueryModel
+____ ?.?S.. ______ ?SQ.., QSqlQueryModel
 
 ______ connection
 
 
 c_ CustomSqlModel(QSqlQueryModel):
     ___ data  index, role):
-        value _ super(CustomSqlModel, self).data(index, role)
+        value _ s__(CustomSqlModel, self).data(index, role)
         __ value __ no. N.. and role __ __.DR..:
             __ index.column() __ 0:
                 r_ '#%d' % value
@@ -67,7 +67,7 @@ c_ CustomSqlModel(QSqlQueryModel):
 
 c_ EditableSqlModel(QSqlQueryModel):
     ___ flags  index):
-        flags _ super(EditableSqlModel, self).flags(index)
+        flags _ s__(EditableSqlModel, self).flags(index)
 
         __ index.column() __ (1, 2):
             flags |_ __.IIE..
@@ -98,14 +98,14 @@ c_ EditableSqlModel(QSqlQueryModel):
         setHeaderData(2, __.H.., "Last name")
 
     ___ setFirstName  personId, firstName):
-        query _ QSqlQuery()
+        query _ ?SQ..()
         query.prepare('update person set firstname = ? where id = ?')
         query.addBindValue(firstName)
         query.addBindValue(personId)
         r_ query.e..
 
     ___ setLastName  personId, lastName):
-        query _ QSqlQuery()
+        query _ ?SQ..()
         query.prepare('update person set lastname = ? where id = ?')
         query.addBindValue(lastName)
         query.addBindValue(personId)

@@ -48,7 +48,7 @@ ____ ?.uic ______ loadUi
 
 c_ DemoImpl(QDialog):
     ___  -   *args):
-        super(DemoImpl, self). - (*args)
+        s__(DemoImpl, self). - (*args)
 
         loadUi('demo.ui', self)
 

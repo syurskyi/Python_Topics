@@ -10,7 +10,7 @@ import sys
 
 class AboutDialog(QDialog):
     def  - (self, $ $$
-        super(AboutDialog, self). - ($ $$)
+        s__(AboutDialog, self). - ($ $$)
 
         QBtn = QDialogButtonBox.Ok  # No cancel
         buttonBox = QDialogButtonBox(QBtn)
@@ -43,7 +43,7 @@ class AboutDialog(QDialog):
 
 class MainWindow(?MW..):
     def  - (self, $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
 
         browser = QWebEngineView()
         browser.setUrl(?U..("http://google.com"))

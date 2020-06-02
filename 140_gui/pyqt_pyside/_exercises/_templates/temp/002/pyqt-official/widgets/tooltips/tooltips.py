@@ -88,7 +88,7 @@ c_ SortingBox(?W..):
     circle_count _ square_count _ triangle_count _ 1
 
     ___  -
-        super(SortingBox, self). - ()
+        s__(SortingBox, self). - ()
 
         circlePath _ QPainterPath()
         squarePath _ QPainterPath()
@@ -145,7 +145,7 @@ c_ SortingBox(?W..):
 
             r_ T..
 
-        r_ super(SortingBox, self).event(event)
+        r_ s__(SortingBox, self).event(event)
 
     ___ resizeEvent  event):
         margin _ style().pixelMetric(?S...PM_DefaultTopLevelMargin)

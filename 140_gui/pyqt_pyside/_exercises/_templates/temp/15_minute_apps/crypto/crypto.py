@@ -58,7 +58,7 @@ class UpdateWorker(QRunnable):
     signals = WorkerSignals()
 
     def  - (self, base_currency):
-        super(UpdateWorker, self). - ()
+        s__(UpdateWorker, self). - ()
         is_interrupted = F..
         base_currency = base_currency
         signals.cancel.connect(cancel)
@@ -118,7 +118,7 @@ class UpdateWorker(QRunnable):
 class MainWindow(?MW..):
 
     def  - (self, $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
 
         layout = QHBoxLayout()
 

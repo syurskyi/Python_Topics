@@ -61,7 +61,7 @@ ___ codec_name(codec):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         textEdit _ ?TE..()
         textEdit.setLineWrapMode(?TE...NoWrap)
@@ -193,7 +193,7 @@ c_ MainWindow ?MW..
 
 c_ PreviewForm(QDialog):
     ___  -   parent):
-        super(PreviewForm, self). - (parent)
+        s__(PreviewForm, self). - (parent)
 
         encodingComboBox _ ?CB()
         encodingLabel _ QLabel("&Encoding:")

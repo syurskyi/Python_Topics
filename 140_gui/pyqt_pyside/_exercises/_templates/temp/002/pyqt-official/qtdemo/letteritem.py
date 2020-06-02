@@ -49,7 +49,7 @@ ____ demoitem ______ DemoItem
 
 c_ LetterItem(DemoItem):
     ___  -   letter, parent_None):
-        super(LetterItem, self). - (parent)
+        s__(LetterItem, self). - (parent)
 
         letter _ letter
 

@@ -75,7 +75,7 @@ c_ DataObject(?O..):
             colorChanged.e..()
 
     ___  -   name_'', color_'', parent_None):
-        super(DataObject, self). - (parent)
+        s__(DataObject, self). - (parent)
 
         _name _ name
         _color _ color

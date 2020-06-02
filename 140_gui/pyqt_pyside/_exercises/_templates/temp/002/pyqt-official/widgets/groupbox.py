@@ -49,7 +49,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
 
 c_ Window(?W..):
     ___  -   parent_None):
-        super(Window, self). - (parent)
+        s__(Window, self). - (parent)
 
         grid _ QGridLayout()
         grid.aW..(createFirstExclusiveGroup(), 0, 0)

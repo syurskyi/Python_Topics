@@ -53,7 +53,7 @@ c_ Dialog(QDialog):
     NumButtons _ 4
 
     ___  -  
-        super(Dialog, self). - ()
+        s__(Dialog, self). - ()
 
         createMenu()
         createHorizontalGroupBox()

@@ -53,7 +53,7 @@ ____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, ?S..,
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         glWidget _ GLWidget()
 
@@ -99,7 +99,7 @@ c_ GLWidget(QOpenGLWidget):
     zRotationChanged _ pS..(int)
 
     ___  -   parent_None):
-        super(GLWidget, self). - (parent)
+        s__(GLWidget, self). - (parent)
 
         object _ 0
         xRot _ 0

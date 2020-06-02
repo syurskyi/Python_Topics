@@ -71,7 +71,7 @@ c_ Window(?W..):
     SvgData _ 1
 
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         setupGui()
         setupTextObject()

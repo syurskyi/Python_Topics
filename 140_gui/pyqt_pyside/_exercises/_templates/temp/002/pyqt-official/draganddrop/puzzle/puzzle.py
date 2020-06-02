@@ -59,7 +59,7 @@ c_ PuzzleWidget(?W..):
     puzzleCompleted _ pS..()
 
     ___  -   parent_None):
-        super(PuzzleWidget, self). - (parent)
+        s__(PuzzleWidget, self). - (parent)
 
         piecePixmaps _   # list
         pieceRects _   # list
@@ -198,7 +198,7 @@ c_ PuzzleWidget(?W..):
 
 c_ PiecesList(QListWidget):
     ___  -   parent_None):
-        super(PiecesList, self). - (parent)
+        s__(PiecesList, self). - (parent)
 
         setDragEnabled( st.
         setViewMode(QListView.IconMode)
@@ -267,7 +267,7 @@ c_ PiecesList(QListWidget):
 
 c_ MainWindow ?MW..
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         puzzleImage _ ?P..()
 

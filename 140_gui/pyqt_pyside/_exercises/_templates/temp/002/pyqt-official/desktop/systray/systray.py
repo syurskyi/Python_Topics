@@ -53,7 +53,7 @@ ______ systray_rc
 
 c_ Window(QDialog):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         createIconGroupBox()
         createMessageGroupBox()
@@ -84,7 +84,7 @@ c_ Window(QDialog):
         minimizeAction.sE..(visible)
         maximizeAction.sE..(no. isMaximized())
         restoreAction.sE..(isMaximized() or no. visible)
-        super(Window, self).setVisible(visible)
+        s__(Window, self).setVisible(visible)
 
     ___ closeEvent  event):
         __ trayIcon.isVisible

@@ -118,7 +118,7 @@ c_ BezierCurve(QQuickItem):
             update()
 
     ___  -   parent_None):
-        super(BezierCurve, self). - (parent)
+        s__(BezierCurve, self). - (parent)
 
         _p1 _ QPointF(0, 0)
         _p2 _ QPointF(1, 0)

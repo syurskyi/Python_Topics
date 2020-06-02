@@ -68,7 +68,7 @@ BirthdayParty {
 
 c_ Person(?O..):
     ___  -   parent_None):
-        super(Person, self). - (parent)
+        s__(Person, self). - (parent)
 
         _name _ ''
         _shoeSize _ 0
@@ -102,7 +102,7 @@ c_ BirthdayParty(?O..):
     Q_CLASSINFO('DefaultProperty', 'guests')
 
     ___  -   parent_None):
-        super(BirthdayParty, self). - (parent)
+        s__(BirthdayParty, self). - (parent)
 
         _host _ N..
         _guests _   # list

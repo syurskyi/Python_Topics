@@ -52,7 +52,7 @@ ____ ?.?G.. ______ (QGuiApplication, QMatrix4x4, QOpenGLContext,
 
 c_ OpenGLWindow(QWindow):
     ___  -   parent_None):
-        super(OpenGLWindow, self). - (parent)
+        s__(OpenGLWindow, self). - (parent)
 
         m_update_pending _ F..
         m_animating _ F..
@@ -112,7 +112,7 @@ c_ OpenGLWindow(QWindow):
             renderNow()
             r_ T..
 
-        r_ super(OpenGLWindow, self).event(event)
+        r_ s__(OpenGLWindow, self).event(event)
 
     ___ exposeEvent  event):
         renderNow()
@@ -141,7 +141,7 @@ void main() {
 '''
 
     ___  -
-        super(TriangleWindow, self). - ()
+        s__(TriangleWindow, self). - ()
 
         m_program _ 0
         m_frame _ 0

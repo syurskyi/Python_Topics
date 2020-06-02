@@ -57,7 +57,7 @@ c_ Animation(?PA..):
     LinearPath, CirclePath _ ra..(2)
 
     ___  -   target, prop):
-        super(Animation, self). - (target, prop)
+        s__(Animation, self). - (target, prop)
 
         setPathType(Animation.LinearPath)
 
@@ -89,14 +89,14 @@ c_ Animation(?PA..):
             updateCurrentValue(pt)
             valueChanged.e..(pt)
         ____
-            super(Animation, self).updateCurrentTime(currentTime)
+            s__(Animation, self).updateCurrentTime(currentTime)
 
 
 # PyQt doesn't support deriving from more than one wrapped class so we use
 # composition and delegate the property.
 c_ PixmapItem(?O..):
     ___  -   pix):
-        super(PixmapItem, self). - ()
+        s__(PixmapItem, self). - ()
 
         pixmap_item _ QGraphicsPixmapItem(pix)
 
@@ -108,7 +108,7 @@ c_ PixmapItem(?O..):
 
 c_ Window(?W..):
     ___  -   parent_None):
-        super(?W.., self). - (parent)
+        s__(?W.., self). - (parent)
 
         m_iconSize _ ?S..(64, 64)
         m_scene _ QGraphicsScene()

@@ -59,7 +59,7 @@ c_ Edge(QGraphicsItem):
     Type _ QGraphicsItem.UserType + 2
 
     ___  -   sourceNode, destNode):
-        super(Edge, self). - ()
+        s__(Edge, self). - ()
 
         arrowSize _ 10.0
         sourcePoint _ QPointF()
@@ -157,7 +157,7 @@ c_ Node(QGraphicsItem):
     Type _ QGraphicsItem.UserType + 1
 
     ___  -   graphWidget):
-        super(Node, self). - ()
+        s__(Node, self). - ()
 
         graph _ graphWidget
         edgeList _   # list
@@ -257,20 +257,20 @@ c_ Node(QGraphicsItem):
                 edge.adjust()
             graph.itemMoved()
 
-        r_ super(Node, self).itemChange(change, value)
+        r_ s__(Node, self).itemChange(change, value)
 
     ___ mousePressEvent  event):
         update()
-        super(Node, self).mousePressEvent(event)
+        s__(Node, self).mousePressEvent(event)
 
     ___ mouseReleaseEvent  event):
         update()
-        super(Node, self).mouseReleaseEvent(event)
+        s__(Node, self).mouseReleaseEvent(event)
 
 
 c_ GraphWidget(QGraphicsView):
     ___  - 
-        super(GraphWidget, self). - ()
+        s__(GraphWidget, self). - ()
 
         timerId _ 0
 
@@ -353,7 +353,7 @@ c_ GraphWidget(QGraphicsView):
                 __ isinstance(item, Node):
                     item.setPos(-150 + qrand() % 300, -150 + qrand() % 300)
         ____
-            super(GraphWidget, self).keyPressEvent(event)
+            s__(GraphWidget, self).keyPressEvent(event)
 
     ___ timerEvent  event):
         nodes _ [item ___ item __ scene().i..() __ isinstance(item, Node)]

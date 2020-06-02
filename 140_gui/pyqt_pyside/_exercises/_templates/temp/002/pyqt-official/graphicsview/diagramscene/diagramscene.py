@@ -59,7 +59,7 @@ ______ diagramscene_rc
 
 c_ Arrow(QGraphicsLineItem):
     ___  -   startItem, endItem, parent_None, scene_None):
-        super(Arrow, self). - (parent, scene)
+        s__(Arrow, self). - (parent, scene)
 
         arrowHead _ QPolygonF()
 
@@ -86,7 +86,7 @@ c_ Arrow(QGraphicsLineItem):
         r_ QRectF(p1, QSizeF(p2.x() - p1.x(), p2.y() - p1.y())).normalized().adjusted(-extra, -extra, extra, extra)
 
     ___ shape
-        pa__ _ super(Arrow, self).shape()
+        pa__ _ s__(Arrow, self).shape()
         pa__.addPolygon(arrowHead)
         r_ pa__
 
@@ -153,7 +153,7 @@ c_ DiagramTextItem(QGraphicsTextItem):
     selectedChange _ pS..(QGraphicsItem)
 
     ___  -   parent_None, scene_None):
-        super(DiagramTextItem, self). - (parent, scene)
+        s__(DiagramTextItem, self). - (parent, scene)
 
         setFlag(QGraphicsItem.ItemIsMovable)
         setFlag(QGraphicsItem.ItemIsSelectable)
@@ -166,19 +166,19 @@ c_ DiagramTextItem(QGraphicsTextItem):
     ___ focusOutEvent  event):
         setTextInteractionFlags(__.NoTextInteraction)
         lostFocus.e..
-        super(DiagramTextItem, self).focusOutEvent(event)
+        s__(DiagramTextItem, self).focusOutEvent(event)
 
     ___ mouseDoubleClickEvent  event):
         __ textInteractionFlags() __ __.NoTextInteraction:
             setTextInteractionFlags(__.TextEditorInteraction)
-        super(DiagramTextItem, self).mouseDoubleClickEvent(event)
+        s__(DiagramTextItem, self).mouseDoubleClickEvent(event)
 
 
 c_ DiagramItem(QGraphicsPolygonItem):
     Step, Conditional, StartEnd, Io _ ra..(4)
 
     ___  -   diagramType, contextMenu, parent_None):
-        super(DiagramItem, self). - (parent)
+        s__(DiagramItem, self). - (parent)
 
         arrows _   # list
 
@@ -261,7 +261,7 @@ c_ DiagramScene(QGraphicsScene):
     itemSelected _ pS..(QGraphicsItem)
 
     ___  -   itemMenu, parent_None):
-        super(DiagramScene, self). - (parent)
+        s__(DiagramScene, self). - (parent)
 
         myItemMenu _ itemMenu
         myMode _ MoveItem
@@ -340,14 +340,14 @@ c_ DiagramScene(QGraphicsScene):
             textItem.setPos(mouseEvent.scenePos())
             textInserted.e..(textItem)
 
-        super(DiagramScene, self).mousePressEvent(mouseEvent)
+        s__(DiagramScene, self).mousePressEvent(mouseEvent)
 
     ___ mouseMoveEvent  mouseEvent):
         __ myMode __ InsertLine and line:
             newLine _ QLineF(line.line().p1(), mouseEvent.scenePos())
             line.setLine(newLine)
         ____ myMode __ MoveItem:
-            super(DiagramScene, self).mouseMoveEvent(mouseEvent)
+            s__(DiagramScene, self).mouseMoveEvent(mouseEvent)
 
     ___ mouseReleaseEvent  mouseEvent):
         __ line and myMode __ InsertLine:
@@ -376,7 +376,7 @@ c_ DiagramScene(QGraphicsScene):
                 arrow.updatePosition()
 
         line _ N..
-        super(DiagramScene, self).mouseReleaseEvent(mouseEvent)
+        s__(DiagramScene, self).mouseReleaseEvent(mouseEvent)
 
     ___ isItemChange  type):
         ___ item __ selectedItems
@@ -389,7 +389,7 @@ c_ MainWindow ?MW..
     InsertTextButton _ 10
 
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         createActions()
         createMenus()

@@ -63,7 +63,7 @@ c_ Mouse(QGraphicsItem):
     BoundingRect _ QRectF(-20 - adjust, -22 - adjust, 40 + adjust, 83 + adjust)
 
     ___  -
-        super(Mouse, self). - ()
+        s__(Mouse, self). - ()
 
         angle _ 0.0
         speed _ 0.0

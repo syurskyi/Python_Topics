@@ -670,7 +670,7 @@ class Canvas(QLabel):
 class MainWindow(?MW.., Ui_MainWindow):
 
     def  - (self, $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
         setupUi
 
         # Replace canvas placeholder from QtDesigner.

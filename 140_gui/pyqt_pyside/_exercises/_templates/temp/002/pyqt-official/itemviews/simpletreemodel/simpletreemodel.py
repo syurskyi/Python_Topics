@@ -84,7 +84,7 @@ c_ TreeItem(object):
 
 c_ TreeModel(QAbstractItemModel):
     ___  -   data, parent_None):
-        super(TreeModel, self). - (parent)
+        s__(TreeModel, self). - (parent)
 
         rootItem _ TreeItem(("Title", "Summary"))
         setupModelData(data.sp..('\n'), rootItem)

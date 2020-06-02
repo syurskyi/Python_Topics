@@ -64,7 +64,7 @@ c_ MenuManager(?O..):
     pInstance _ N..
 
     ___  - 
-        super(MenuManager, self). - ()
+        s__(MenuManager, self). - ()
 
         contentsDoc _ N..
         assistantProcess _ QProcess()

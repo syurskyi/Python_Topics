@@ -41,7 +41,7 @@ c_ WeatherWorker(QRunnable):
     is_interrupted _ F..
 
     ___  -   location):
-        super(WeatherWorker, self). - ()
+        s__(WeatherWorker, self). - ()
         location _ location
 
     @pyqtSlot()
@@ -76,7 +76,7 @@ c_ WeatherWorker(QRunnable):
 c_ MainWindow(?MW.., Ui_MainWindow):
 
     ___  -   $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
         setupUi
 
         pushButton.pressed.c..(update_weather)

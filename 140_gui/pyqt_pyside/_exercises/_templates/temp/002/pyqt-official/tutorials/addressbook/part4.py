@@ -80,7 +80,7 @@ c_ AddressBook(?W..):
     NavigationMode, AddingMode, EditingMode _ ra..(3)
 
     ___  -   parent_None):
-        super(AddressBook, self). - (parent)
+        s__(AddressBook, self). - (parent)
 
         contacts _ SortedDict()
         oldName _ ''

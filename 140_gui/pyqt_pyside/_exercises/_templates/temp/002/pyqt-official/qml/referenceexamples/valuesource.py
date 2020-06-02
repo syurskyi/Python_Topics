@@ -91,7 +91,7 @@ BirthdayParty {
 
 c_ ShoeDescription(?O..):
     ___  -   parent_None):
-        super(ShoeDescription, self). - (parent)
+        s__(ShoeDescription, self). - (parent)
 
         _size _ 0
         _color _ ?C..()
@@ -143,7 +143,7 @@ c_ ShoeDescription(?O..):
 
 c_ Person(?O..):
     ___  -   parent_None):
-        super(Person, self). - (parent)
+        s__(Person, self). - (parent)
 
         _name _ ''
         _shoe _ ShoeDescription()
@@ -175,7 +175,7 @@ c_ Girl(Person):
 
 c_ BirthdayPartyAttached(?O..):
     ___  -   parent):
-        super(BirthdayPartyAttached, self). - (parent)
+        s__(BirthdayPartyAttached, self). - (parent)
 
         _rsvp _ ?D..()
 
@@ -198,7 +198,7 @@ c_ BirthdayParty(?O..):
     partyStarted _ pS..(?T.., arguments_['time'])
 
     ___  -   parent_None):
-        super(BirthdayParty, self). - (parent)
+        s__(BirthdayParty, self). - (parent)
 
         _host _ N..
         _guests _   # list
@@ -233,7 +233,7 @@ c_ BirthdayParty(?O..):
 
 c_ HappyBirthdaySong(?O.., QQmlPropertyValueSource):
     ___  -   parent_None):
-        super(HappyBirthdaySong, self). - (parent)
+        s__(HappyBirthdaySong, self). - (parent)
 
         _line _ -1
         _lyrics _   # list

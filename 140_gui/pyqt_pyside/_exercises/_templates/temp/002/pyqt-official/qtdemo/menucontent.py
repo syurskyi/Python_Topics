@@ -51,7 +51,7 @@ ____ headingitem ______ HeadingItem
 
 c_ MenuContentItem(DemoItem):
     ___  -   el, parent_None):
-        super(MenuContentItem, self). - (parent)
+        s__(MenuContentItem, self). - (parent)
 
         name _ el.getAttribute('name')
         heading _ N..

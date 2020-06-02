@@ -58,7 +58,7 @@ ____ ui_videosettings ______ Ui_VideoSettingsUi
 c_ ImageSettings(QDialog):
 
     ___  -   imageCapture, parent_None):
-        super(ImageSettings, self). - (parent)
+        s__(ImageSettings, self). - (parent)
 
         ui _ Ui_ImageSettingsUi()
         imagecapture _ imageCapture
@@ -115,7 +115,7 @@ c_ ImageSettings(QDialog):
 c_ VideoSettings(QDialog):
 
     ___  -   mediaRecorder, parent_None):
-        super(VideoSettings, self). - (parent)
+        s__(VideoSettings, self). - (parent)
 
         ui _ Ui_VideoSettingsUi()
         mediaRecorder _ mediaRecorder
@@ -225,7 +225,7 @@ c_ VideoSettings(QDialog):
 c_ Camera ?MW..
 
     ___  -   parent_None):
-        super(Camera, self). - (parent)
+        s__(Camera, self). - (parent)
 
         ui _ Ui_Camera()
         camera _ N..
@@ -325,7 +325,7 @@ c_ Camera ?MW..
 
             event.accept()
         ____
-            super(Camera, self).keyPressEvent(event)
+            s__(Camera, self).keyPressEvent(event)
 
     ___ keyReleaseEvent  event):
         __ event.isAutoRepeat
@@ -334,7 +334,7 @@ c_ Camera ?MW..
         __ event.key() __ __.Key_CameraFocus:
             camera.unlock()
         ____
-            super(Camera, self).keyReleaseEvent(event)
+            s__(Camera, self).keyReleaseEvent(event)
 
     ___ updateRecordTime
         msg _ "Recorded %d sec" % (mediaRecorder.duration() // 1000)

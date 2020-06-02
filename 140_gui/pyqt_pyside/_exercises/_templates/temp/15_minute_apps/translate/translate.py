@@ -87,7 +87,7 @@ LANGUAGES = {
 class MainWindow(?MW.., Ui_MainWindow):
 
     def  - (self, $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
         setupUi
 
         translator = Translator()

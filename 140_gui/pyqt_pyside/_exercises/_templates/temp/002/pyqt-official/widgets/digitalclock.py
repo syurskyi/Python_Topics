@@ -48,7 +48,7 @@ ____ ?.?W.. ______ ?A.., QLCDNumber
 
 c_ DigitalClock(QLCDNumber):
     ___  -   parent_None):
-        super(DigitalClock, self). - (parent)
+        s__(DigitalClock, self). - (parent)
 
         setSegmentStyle(QLCDNumber.Filled)
 

@@ -50,7 +50,7 @@ ____ ?.?N.. ______ ?HA.., QUdpSocket
 
 c_ Sender(QDialog):
     ___  -   parent_None):
-        super(Sender, self). - (parent)
+        s__(Sender, self). - (parent)
 
         statusLabel _ QLabel("Ready to broadcast datagrams on port 45454")
 

@@ -52,7 +52,7 @@ ____ ?.?W.. ______ (?A.., ?CB, ?DTE..,
 
 c_ MainWindow ?MW..
     ___  - 
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         selectedDate _ ?D...currentDate()
         fontSize _ 10

@@ -53,7 +53,7 @@ c_ MainWindow ?MW..
     windowList _   # list
 
     ___  -  
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         recentFileActs _   # list
 

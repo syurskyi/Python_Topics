@@ -62,7 +62,7 @@ c_ DemoItem(QGraphicsObject):
     _transform _ QTransform()
 
     ___  -   parent_None):
-        super(DemoItem, self). - (parent)
+        s__(DemoItem, self). - (parent)
 
         noSubPixeling _ F..
         currentAnimation _ N..

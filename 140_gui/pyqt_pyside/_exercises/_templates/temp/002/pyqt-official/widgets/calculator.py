@@ -51,13 +51,13 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
 
 c_ Button(QToolButton):
     ___  -   t__, parent_None):
-        super(Button, self). - (parent)
+        s__(Button, self). - (parent)
 
         sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
         sT..(t__)
 
     ___ sH..
-        size _ super(Button, self).sH..()
+        size _ s__(Button, self).sH..()
         size.setHeight(size.height() + 20)
         size.sW..(max(size.width(), size.height()))
         r_ size
@@ -67,7 +67,7 @@ c_ Calculator(?W..):
     NumDigitButtons _ 10
     
     ___  -   parent_None):
-        super(Calculator, self). - (parent)
+        s__(Calculator, self). - (parent)
 
         pendingAdditiveOperator _ ''
         pendingMultiplicativeOperator _ ''

@@ -63,7 +63,7 @@ c_ RenderThread(?T..):
     renderedImage _ pS..(QImage, float)
 
     ___  -   parent_None):
-        super(RenderThread, self). - (parent)
+        s__(RenderThread, self). - (parent)
 
         mutex _ QMutex()
         condition _ QWaitCondition()
@@ -211,7 +211,7 @@ c_ RenderThread(?T..):
 
 c_ MandelbrotWidget(?W..):
     ___  -   parent_None):
-        super(MandelbrotWidget, self). - (parent)
+        s__(MandelbrotWidget, self). - (parent)
 
         thread _ RenderThread()
         pixmap _ ?P..()
@@ -287,7 +287,7 @@ c_ MandelbrotWidget(?W..):
         ____ event.key() __ __.Key_Up:
             scroll(0, +ScrollStep)
         ____
-            super(MandelbrotWidget, self).keyPressEvent(event)
+            s__(MandelbrotWidget, self).keyPressEvent(event)
 
     ___ wheelEvent  event):
         numDegrees _ event.angleDelta().y() / 8

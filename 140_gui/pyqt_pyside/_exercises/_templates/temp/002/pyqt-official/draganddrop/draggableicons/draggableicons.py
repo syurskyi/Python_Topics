@@ -52,7 +52,7 @@ ______ draggableicons_rc
 
 c_ DragWidget(QFrame):
     ___  -   parent_None):
-        super(DragWidget, self). - (parent)
+        s__(DragWidget, self). - (parent)
 
         sMS..(200, 200)
         setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)

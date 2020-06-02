@@ -55,7 +55,7 @@ ____ imageitem ______ ImageItem
 
 c_ ExampleContent(DemoItem):
     ___  -   name, parent_None):
-        super(ExampleContent, self). - (parent)
+        s__(ExampleContent, self). - (parent)
 
         # Prevent a circular import.
         ____ menumanager ______ MenuManager

@@ -40,7 +40,7 @@ c_ PyAnalogClockPlugin(QPyDesignerCustomWidgetPlugin):
     # initialized variable.
     ___  -   parent_None):
     
-        super(PyAnalogClockPlugin, self). - (parent)
+        s__(PyAnalogClockPlugin, self). - (parent)
 
         initialized _ F..
 

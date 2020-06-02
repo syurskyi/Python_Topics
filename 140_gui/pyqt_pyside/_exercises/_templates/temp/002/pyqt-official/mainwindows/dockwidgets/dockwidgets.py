@@ -54,7 +54,7 @@ ______ dockwidgets_rc
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         textEdit _ ?TE..()
         sCW..(textEdit)

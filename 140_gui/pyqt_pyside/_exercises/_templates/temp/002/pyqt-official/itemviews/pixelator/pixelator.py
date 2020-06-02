@@ -59,7 +59,7 @@ ItemSize _ 256
 
 c_ PixelDelegate(QAbstractItemDelegate):
     ___  -   parent_None):
-        super(PixelDelegate, self). - (parent)
+        s__(PixelDelegate, self). - (parent)
 
         pixelSize _ 12
 
@@ -98,7 +98,7 @@ c_ PixelDelegate(QAbstractItemDelegate):
 
 c_ ImageModel ?ATM..
     ___  -   parent_None):
-        super(ImageModel, self). - (parent)
+        s__(ImageModel, self). - (parent)
 
         modelImage _ QImage()
 
@@ -128,7 +128,7 @@ c_ ImageModel ?ATM..
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         currentPath _ ?D...homePath()
         model _ ImageModel

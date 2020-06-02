@@ -50,7 +50,7 @@ ____ ui_calculatorform ______ Ui_CalculatorForm
 
 c_ CalculatorForm(?W..):
     ___  -   parent_None):
-        super(CalculatorForm, self). - (parent)
+        s__(CalculatorForm, self). - (parent)
 
         ui _ Ui_CalculatorForm()
 

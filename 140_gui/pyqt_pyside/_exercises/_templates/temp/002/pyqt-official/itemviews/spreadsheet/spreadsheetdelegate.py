@@ -44,7 +44,7 @@ ____ ?.?W.. ______ QCompleter, ?DTE.., QItemDelegate, QLineEdit
 c_ SpreadSheetDelegate(QItemDelegate):
 
     ___  -   parent _ N..):
-        super(SpreadSheetDelegate, self). - (parent)
+        s__(SpreadSheetDelegate, self). - (parent)
 
     ___ createEditor  parent, styleOption, index):
         __ index.column() __ 1:

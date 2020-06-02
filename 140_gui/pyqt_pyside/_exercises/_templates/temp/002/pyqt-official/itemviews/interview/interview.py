@@ -69,7 +69,7 @@ c_ Node(object):
 
 c_ Model(QAbstractItemModel):
     ___  -   rows, columns, parent _ N..):
-        super(Model, self). - (parent)
+        s__(Model, self). - (parent)
         services _ ?I..(images_dir + '/services.png')
         rc _ rows
         cc _ columns
@@ -122,7 +122,7 @@ c_ Model(QAbstractItemModel):
             r_ st.(section)
         __ role __ __.DecorationRole:
             r_ services
-        r_ super(Model, self).hD..(section, orientation, role)
+        r_ s__(Model, self).hD..(section, orientation, role)
 
     ___ hasChildren  parent):
         __ parent.iV.. and parent.column() !_ 0:
@@ -132,7 +132,7 @@ c_ Model(QAbstractItemModel):
     ___ flags  index):
         __ no. index.isValid
             r_ 0
-        r_ __.ItemIsDragEnabled | super(Model, self).flags(index)
+        r_ __.ItemIsDragEnabled | s__(Model, self).flags(index)
 
     ___ node  row, parent):
         __ parent and no. parent.children:

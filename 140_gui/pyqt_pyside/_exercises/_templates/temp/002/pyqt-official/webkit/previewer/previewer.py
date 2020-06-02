@@ -53,7 +53,7 @@ ____ ui_previewer ______ Ui_Form
 
 c_ Previewer(?W.., Ui_Form):
     ___  -   parent_None):
-        super(Previewer, self). - (parent)
+        s__(Previewer, self). - (parent)
 
         setupUi
         baseUrl _ ?U..()
@@ -69,7 +69,7 @@ c_ Previewer(?W.., Ui_Form):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         createActions()
         createMenus()

@@ -36,7 +36,7 @@ ___ create_new_note
 
 c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   $ obj_None, $$):
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
         setupUi
         setWindowFlags(windowFlags() | __.FramelessWindowHint | __.WindowStaysOnTopHint)
         s..

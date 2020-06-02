@@ -71,7 +71,7 @@ c_ PieChart(QQuickPaintedItem):
             colorChanged.e..()
 
     ___  -   parent_None):
-        super(PieChart, self). - (parent)
+        s__(PieChart, self). - (parent)
 
         _name _ ''
         _color _ ?C..()

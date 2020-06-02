@@ -70,7 +70,7 @@ ___ decode_utf8(qs):
 c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
 
     ___  -   parent_None):
-        super(XmlSyntaxHighlighter, self). - (parent)
+        s__(XmlSyntaxHighlighter, self). - (parent)
 
         highlightingRules _   # list
 
@@ -132,7 +132,7 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
 c_ MessageHandler(QAbstractMessageHandler):
 
     ___  -
-        super(MessageHandler, self). - ()
+        s__(MessageHandler, self). - ()
 
         m_description _ ""
         m_sourceLocation _ QSourceLocation()
@@ -154,7 +154,7 @@ c_ MessageHandler(QAbstractMessageHandler):
 c_ MainWindow(?MW.., Ui_SchemaMainWindow):
 
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         setupUi
 

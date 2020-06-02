@@ -51,7 +51,7 @@ ____ ui_window ______ Ui_Window
 
 c_ SimpleSelector(?W.., Ui_Window):
     ___  -   parent_None):
-        super(SimpleSelector, self). - (parent)
+        s__(SimpleSelector, self). - (parent)
 
         setupUi
 

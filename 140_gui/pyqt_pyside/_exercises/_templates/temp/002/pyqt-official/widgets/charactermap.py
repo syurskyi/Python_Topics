@@ -57,7 +57,7 @@ c_ CharacterWidget(?W..):
     characterSelected _ pS.. st.
 
     ___  -   parent_None):
-        super(CharacterWidget, self). - (parent)
+        s__(CharacterWidget, self). - (parent)
 
         displayFont _ ?F..()
         squareSize _ 24
@@ -116,7 +116,7 @@ c_ CharacterWidget(?W..):
                 characterSelected.e..(key_ch)
             update()
         ____
-            super(CharacterWidget, self).mousePressEvent(event)
+            s__(CharacterWidget, self).mousePressEvent(event)
 
     ___ paintEvent  event):
         painter _ QPainter
@@ -167,7 +167,7 @@ c_ CharacterWidget(?W..):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         centralWidget _ ?W..
 

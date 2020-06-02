@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., ?FD.., ?MW.., QMenu,
 
 c_ MainWindow ?MW..
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         setupFileMenu()
         setupHelpMenu()
@@ -117,7 +117,7 @@ c_ MainWindow ?MW..
 
 c_ Highlighter(QSyntaxHighlighter):
     ___  -   parent_None):
-        super(Highlighter, self). - (parent)
+        s__(Highlighter, self). - (parent)
 
         keywordFormat _ QTextCharFormat()
         keywordFormat.setForeground(__.darkBlue)

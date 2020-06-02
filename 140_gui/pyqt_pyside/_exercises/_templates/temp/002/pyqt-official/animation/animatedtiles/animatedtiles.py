@@ -58,7 +58,7 @@ ______ animatedtiles_rc
 # composition and delegate the property.
 c_ Pixmap(?O..):
     ___  -   pix):
-        super(Pixmap, self). - ()
+        s__(Pixmap, self). - ()
 
         pixmap_item _ QGraphicsPixmapItem(pix)
         pixmap_item.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
@@ -73,7 +73,7 @@ c_ Button(QGraphicsWidget):
     pressed _ pS..()
 
     ___  -   pixmap, parent_None):
-        super(Button, self). - (parent)
+        s__(Button, self). - (parent)
 
         _pix _ pixmap
 
@@ -140,7 +140,7 @@ c_ Button(QGraphicsWidget):
 
 c_ View(QGraphicsView):
     ___ resizeEvent  event):
-        super(View, self).resizeEvent(event)
+        s__(View, self).resizeEvent(event)
         fitInView(sceneRect(), __.KeepAspectRatio)
 
 

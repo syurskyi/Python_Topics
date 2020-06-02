@@ -51,7 +51,7 @@ ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 c_ ScribbleArea(?W..):
     ___  -   parent_None):
-        super(ScribbleArea, self). - (parent)
+        s__(ScribbleArea, self). - (parent)
 
         setAttribute(__.WA_StaticContents)
         modified _ F..
@@ -120,7 +120,7 @@ c_ ScribbleArea(?W..):
             resizeImage(image, ?S..(newWidth, newHeight))
             update()
 
-        super(ScribbleArea, self).resizeEvent(event)
+        s__(ScribbleArea, self).resizeEvent(event)
 
     ___ drawLineTo  endPoint):
         painter _ QPainter(image)
@@ -169,7 +169,7 @@ c_ ScribbleArea(?W..):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         saveAsActs _   # list
 

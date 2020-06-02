@@ -71,7 +71,7 @@ c_ MimeData(QMimeData):
 
 c_ SourceWidget(?W..):
     ___  -   parent_None):
-        super(SourceWidget, self). - (parent)
+        s__(SourceWidget, self). - (parent)
 
         mimeData _ N..
 

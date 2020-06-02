@@ -55,7 +55,7 @@ c_ DropArea(QLabel):
     changed _ pS..(QMimeData)
 
     ___  -   parent _ N..):
-        super(DropArea, self). - (parent)
+        s__(DropArea, self). - (parent)
 
         sMS..(200, 200)
         setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
@@ -104,7 +104,7 @@ c_ DropArea(QLabel):
 c_ DropSiteWindow(?W..):
 
     ___  - 
-        super(DropSiteWindow, self). - ()
+        s__(DropSiteWindow, self). - ()
 
         abstractLabel _ QLabel(
                 "This example accepts drags from other applications and "

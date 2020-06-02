@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., ?CB, QDataWidgetMapper,
 
 c_ Window(?W..):
     ___  -   parent_None):
-        super(Window, self). - (parent)
+        s__(Window, self). - (parent)
 
         # Set up the model.
         setupModel()

@@ -52,7 +52,7 @@ ____ stylesheeteditor ______ StyleSheetEditor
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         ui _ Ui_MainWindow()
         ui.setupUi

@@ -55,7 +55,7 @@ ____ menumanager ______ MenuManager
 
 c_ MainWindow(QGraphicsView):
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         imagesDir _ QFileInfo(__file__).absolutePath() + '/images'
 
@@ -343,7 +343,7 @@ c_ MainWindow(QGraphicsView):
             s +_ ["yes", "no"][Colors.noScreenSync]
             ?MB...information(N.., "Current configuration", s)
 
-        super(MainWindow, self).keyPressEvent(event)
+        s__(MainWindow, self).keyPressEvent(event)
 
     ___ focusInEvent  event):
         __ no. Colors.pause:
@@ -375,7 +375,7 @@ c_ MainWindow(QGraphicsView):
         resetTransform()
         scale(event.size().width() / 800.0, event.size().height() / 600.0)
 
-        super(MainWindow, self).resizeEvent(event)
+        s__(MainWindow, self).resizeEvent(event)
 
         DemoItem.setTransform(transform())
 

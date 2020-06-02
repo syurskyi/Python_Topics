@@ -40,7 +40,7 @@
 
 
 ____ ?.?W.. ______ ?MB..
-____ ?.?S.. ______ ?SD.., QSqlQuery
+____ ?.?S.. ______ ?SD.., ?SQ..
 
 
 ___ createConnection
@@ -55,7 +55,7 @@ ___ createConnection
                 ?MB...Cancel)
         r_ F..
     
-    query _ QSqlQuery()
+    query _ ?SQ..()
     query.e..("create table person(id int primary key, "
                 "firstname varchar(20), lastname varchar(20))")
     query.e..("insert into person values(101, 'Danny', 'Young')")

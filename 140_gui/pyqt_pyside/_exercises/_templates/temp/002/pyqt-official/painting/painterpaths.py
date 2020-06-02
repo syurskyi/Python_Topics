@@ -53,7 +53,7 @@ ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
 
 c_ RenderArea(?W..):
     ___  -   pa__, parent_None):
-        super(RenderArea, self). - (parent)
+        s__(RenderArea, self). - (parent)
 
         pa__ _ pa__
 
@@ -110,7 +110,7 @@ c_ Window(?W..):
     NumRenderAreas _ 9
 
     ___  - 
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         rectPath _ QPainterPath()
         rectPath.moveTo(20.0, 30.0)

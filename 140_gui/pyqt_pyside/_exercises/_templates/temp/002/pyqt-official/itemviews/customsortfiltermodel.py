@@ -53,7 +53,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DE..,
 
 c_ MySortFilterProxyModel(QSortFilterProxyModel):
     ___  -   parent_None):
-        super(MySortFilterProxyModel, self). - (parent)
+        s__(MySortFilterProxyModel, self). - (parent)
 
         minDate _ ?D..()
         maxDate _ ?D..()
@@ -106,7 +106,7 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         proxyModel _ MySortFilterProxyModel
         proxyModel.setDynamicSortFilter( st.

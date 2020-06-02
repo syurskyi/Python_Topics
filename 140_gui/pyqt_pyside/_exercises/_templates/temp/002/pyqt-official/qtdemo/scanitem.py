@@ -52,7 +52,7 @@ c_ ScanItem(DemoItem):
     ITEM_HEIGHT _ 16
 
     ___  -   parent_None):
-        super(ScanItem, self). - (parent)
+        s__(ScanItem, self). - (parent)
 
         useSharedImage(__file__)
 

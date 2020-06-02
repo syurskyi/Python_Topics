@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QGroupBox,
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         echoGroup _ QGroupBox("Echo")
 

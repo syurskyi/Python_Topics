@@ -51,7 +51,7 @@ ______ draggabletext_rc
 
 c_ DragLabel(QLabel):
     ___  -   t__, parent):
-        super(DragLabel, self). - (t__, parent)
+        s__(DragLabel, self). - (t__, parent)
 
         setAutoFillBackground( st.
         setFrameShape(QFrame.Panel)
@@ -82,7 +82,7 @@ c_ DragLabel(QLabel):
 
 c_ DragWidget(?W..):
     ___  -   parent_None):
-        super(DragWidget, self). - (parent)
+        s__(DragWidget, self). - (parent)
 
         dictionaryFile _ QFile(':/dictionary/words.txt')
         dictionaryFile.o..(QIODevice.ReadOnly)

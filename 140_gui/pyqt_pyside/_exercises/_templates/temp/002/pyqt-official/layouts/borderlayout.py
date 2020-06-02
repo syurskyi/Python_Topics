@@ -58,7 +58,7 @@ c_ BorderLayout(QLayout):
     MinimumSize, SizeHint _ ra..(2)
 
     ___  -   parent_None, margin_None, spacing_-1):
-        super(BorderLayout, self). - (parent)
+        s__(BorderLayout, self). - (parent)
 
         __ margin __ no. N..:
             setContentsMargins(margin, margin, margin, margin)
@@ -103,7 +103,7 @@ c_ BorderLayout(QLayout):
         southHeight _ 0
         centerHeight _ 0
 
-        super(BorderLayout, self).setGeometry(rect)
+        s__(BorderLayout, self).setGeometry(rect)
 
         ___ wrapper __ li..:
             item _ wrapper.item
@@ -192,7 +192,7 @@ c_ BorderLayout(QLayout):
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         centralWidget _ QTextBrowser()
         centralWidget.sPT..("Central widget")

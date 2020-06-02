@@ -55,7 +55,7 @@ ____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
 c_ Generator(QIODevice):
 
     ___  -   f.., durationUs, sampleRate, parent):
-        super(Generator, self). - (parent)
+        s__(Generator, self). - (parent)
 
         m_pos _ 0
         m_buffer _ QByteArray()
@@ -124,7 +124,7 @@ c_ Generator(QIODevice):
         r_ 0
 
     ___ bA..
-        r_ m_buffer.size() + super(Generator, self).bA..()
+        r_ m_buffer.size() + s__(Generator, self).bA..()
 
 
 c_ AudioTest ?MW..
@@ -139,7 +139,7 @@ c_ AudioTest ?MW..
     DataSampleRateHz _ 44100
 
     ___  - 
-        super(AudioTest, self). - ()
+        s__(AudioTest, self). - ()
 
         m_device _ QAudioDeviceInfo.defaultOutputDevice()
         m_output _ N..

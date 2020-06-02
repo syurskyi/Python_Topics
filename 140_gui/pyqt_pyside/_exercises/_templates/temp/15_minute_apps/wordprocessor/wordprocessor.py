@@ -24,7 +24,7 @@ c_ TextEdit(?TE..):
         __ source.hasImage
             r_ T..
         ____
-            r_ super(TextEdit, self).canInsertFromMimeData(source)
+            r_ s__(TextEdit, self).canInsertFromMimeData(source)
 
     ___ insertFromMimeData  source):
 
@@ -57,13 +57,13 @@ c_ TextEdit(?TE..):
             cursor.insertImage(uuid)
             r_
 
-        super(TextEdit, self).insertFromMimeData(source)
+        s__(TextEdit, self).insertFromMimeData(source)
 
 
 c_ MainWindow ?MW..
 
     ___  -   $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
 
         layout _ ?VBL..
         editor _ TextEdit()

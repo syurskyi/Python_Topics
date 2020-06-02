@@ -53,7 +53,7 @@ ____ scanitem ______ ScanItem
 
 c_ ButtonBackground(DemoItem):
     ___  -   type, highlighted, pressed, logicalSize, parent):
-        super(ButtonBackground, self). - (parent)
+        s__(ButtonBackground, self). - (parent)
 
         type _ type
         highlighted _ highlighted
@@ -201,7 +201,7 @@ c_ TextButton(DemoItem):
     ON, OFF, HIGHLIGHT, DISABLED _ ra..(4)
 
     ___  -   t__, align_LEFT, userCode_0, parent_None, type_SIDEBAR):
-        super(TextButton, self). - (parent)
+        s__(TextButton, self). - (parent)
 
         # Prevent a circular import.
         ____ menumanager ______ MenuManager

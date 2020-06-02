@@ -55,7 +55,7 @@ ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
 c_ FinalWidget(QFrame):
 
     ___  -   parent, name, labelSize):
-        super(FinalWidget, self). - (parent)
+        s__(FinalWidget, self). - (parent)
 
         dragStartPosition _ QPoint()
 
@@ -133,7 +133,7 @@ c_ ScreenWidget(QFrame):
         yellow), connects the color selector and invert checkbox to functions,
         and creates a two-by-two grid layout.
         """
-        super(ScreenWidget, self). - (parent)
+        s__(ScreenWidget, self). - (parent)
 
         originalImage _ QImage()
         newImage _ QImage()
@@ -259,7 +259,7 @@ c_ Viewer ?MW..
             the main menu entries, and constructs a central widget that contains
             enough space for images to be displayed.
         """
-        super(Viewer, self). - ()
+        s__(Viewer, self). - ()
 
         scaledImage _ QImage()
         menuMap _   # dict

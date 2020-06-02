@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QFrame,
 
 c_ MainWindow ?MW..
     ___  - 
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         widget _ ?W..
         sCW..(widget)

@@ -48,7 +48,7 @@ ____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?TE.., ?W..
 
 c_ AddressBook(?W..):
     ___  -   parent_None):
-        super(AddressBook, self). - (parent)
+        s__(AddressBook, self). - (parent)
 
         nameLabel _ QLabel("Name:")
         nameLine _ ?LE..

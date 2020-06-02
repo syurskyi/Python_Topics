@@ -59,7 +59,7 @@ c_ Node(QGraphicsObject):
     pC.. _ pS..()
 
     ___  -   pos, parent_None):
-        super(Node, self). - (parent)
+        s__(Node, self). - (parent)
 
         m_dragging _ F..
 
@@ -77,7 +77,7 @@ c_ Node(QGraphicsObject):
         __ change __ QGraphicsItem.ItemPositionChange:
             pC...e..()
 
-        r_ super(Node, self).itemChange(change, value)
+        r_ s__(Node, self).itemChange(change, value)
 
     ___ mousePressEvent  event):
         m_dragging _ T..
@@ -164,7 +164,7 @@ Bones _ (
 
 c_ StickMan(QGraphicsObject):
     ___  -
-        super(StickMan, self). - ()
+        s__(StickMan, self). - ()
 
         m_sticks _ T..
         m_isDead _ F..
@@ -471,7 +471,7 @@ c_ Animation(object):
 
 c_ KeyPressTransition(QSignalTransition):
     ___  -   receiver, key, target_None):
-        super(KeyPressTransition, self). - (receiver.keyPressed)
+        s__(KeyPressTransition, self). - (receiver.keyPressed)
 
         m_key _ key
 
@@ -479,7 +479,7 @@ c_ KeyPressTransition(QSignalTransition):
             setTargetState(target)
 
     ___ eventTest  e):
-        __ super(KeyPressTransition, self).eventTest(e):
+        __ s__(KeyPressTransition, self).eventTest(e):
             key _ e.arguments()[0]
             r_ key __ m_key
 
@@ -488,7 +488,7 @@ c_ KeyPressTransition(QSignalTransition):
 
 c_ LightningStrikesTransition(QEventTransition):
     ___  -   target):
-        super(LightningStrikesTransition, self). - ()
+        s__(LightningStrikesTransition, self). - ()
 
         setEventSource
         setEventType(QEvent.Timer)
@@ -497,7 +497,7 @@ c_ LightningStrikesTransition(QEventTransition):
         startTimer(1000)
 
     ___ eventTest  e):
-        r_ (super(LightningStrikesTransition, self).eventTest(e) and
+        r_ (s__(LightningStrikesTransition, self).eventTest(e) and
                 (qrand() % 50) __ 0)
 
 

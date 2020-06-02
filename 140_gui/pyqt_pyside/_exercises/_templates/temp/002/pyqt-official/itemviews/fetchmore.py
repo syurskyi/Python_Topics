@@ -53,7 +53,7 @@ c_ FileListModel(QAbstractListModel):
     numberPopulated _ pS..(int)
 
     ___  -   parent_None):
-        super(FileListModel, self). - (parent)
+        s__(FileListModel, self). - (parent)
 
         fileCount _ 0
         fileList _   # list
@@ -107,7 +107,7 @@ c_ FileListModel(QAbstractListModel):
 
 c_ Window(?W..):
     ___  -   parent_None):
-        super(Window, self). - (parent)
+        s__(Window, self). - (parent)
 
         model _ FileListModel
         model.setDirPath(QLibraryInfo.location(QLibraryInfo.PrefixPath))

@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., ?A.., ?FD.., ?MW..,
 
 c_ MainWindow ?MW..
     ___  -  
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         curFile _ ''
 

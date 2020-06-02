@@ -10,7 +10,7 @@ ______ ___
 c_ MainWindow ?MW..
 
     ___  -   $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
 
         layout _ ?VBL..
         editor _ ?PTE..  # Could also use a QTextEdit and set self.editor.setAcceptRichText(False)

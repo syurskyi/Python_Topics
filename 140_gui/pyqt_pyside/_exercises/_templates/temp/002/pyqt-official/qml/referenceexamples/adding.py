@@ -60,7 +60,7 @@ Person {
 
 c_ Person(?O..):
     ___  -   parent_None):
-        super(Person, self). - (parent)
+        s__(Person, self). - (parent)
 
         _name _ ''
         _shoeSize _ 0

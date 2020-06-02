@@ -52,7 +52,7 @@ ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         createPreviewGroupBox()
         createGeneralOptionsGroupBox()

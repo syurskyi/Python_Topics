@@ -73,7 +73,7 @@ c_ ChatAdaptor(QDBusAbstractAdaptor):
     message _ pS..(st., st.)
 
     ___  -   parent):
-        super(ChatAdaptor, self). - (parent)
+        s__(ChatAdaptor, self). - (parent)
 
         setAutoRelaySignals( st.
 
@@ -85,7 +85,7 @@ c_ ChatInterface(QDBusAbstractInterface):
     message _ pS..(st., st.)
 
     ___  -   service, pa__, connection, parent_None):
-        super(ChatInterface, self). - (service, pa__, 'org.example.chat',
+        s__(ChatInterface, self). - (service, pa__, 'org.example.chat',
                 connection, parent)
 
 
@@ -96,7 +96,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
     message _ pS..(st., st.)
 
     ___  -
-        super(ChatMainWindow, self). - ()
+        s__(ChatMainWindow, self). - ()
 
         m_nickname _ "nickname"
         m_messages _   # list
@@ -179,7 +179,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
 c_ NicknameDialog(QDialog, Ui_NicknameDialog):
 
     ___  -   parent_None):
-        super(NicknameDialog, self). - (parent)
+        s__(NicknameDialog, self). - (parent)
 
         setupUi
 

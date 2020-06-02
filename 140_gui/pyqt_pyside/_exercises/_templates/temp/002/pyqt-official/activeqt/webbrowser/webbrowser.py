@@ -55,7 +55,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
     _window_list _   # list
 
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         MainWindow._window_list.ap..
 

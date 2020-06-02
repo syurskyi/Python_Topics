@@ -25,7 +25,7 @@ c_ ViewerWindow ?MW..
 
 c_ PlaylistModel(QAbstractListModel):
     ___  -   playlist, $ $$
-        super(PlaylistModel, self). - ($ $$)
+        s__(PlaylistModel, self). - ($ $$)
         playlist _ playlist
 
     ___ data  index, role):
@@ -39,7 +39,7 @@ c_ PlaylistModel(QAbstractListModel):
 
 c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
         setupUi
 
         player _ ?MP..

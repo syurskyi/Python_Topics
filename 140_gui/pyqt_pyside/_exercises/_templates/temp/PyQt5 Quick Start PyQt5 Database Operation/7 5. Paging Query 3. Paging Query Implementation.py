@@ -1,12 +1,12 @@
 ______ ___
-____ ?.?S.. ______ ?SD.., QSqlQuery, ?STM.., QSqlQueryModel
+____ ?.?S.. ______ ?SD.., ?SQ.., ?STM.., QSqlQueryModel
 ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ______ re
 
 c_ DataGrid(?W..):
     ___  -   parent_None):
-        super(DataGrid, self). - (parent)
+        s__(DataGrid, self). - (parent)
         # Declare Database Connections
         db _ N..
         # Layout Manager

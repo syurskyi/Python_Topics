@@ -56,7 +56,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
 
 c_ MainWindow ?MW..
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         settingsTree _ SettingsTree()
         sCW..(settingsTree)
@@ -194,7 +194,7 @@ c_ MainWindow ?MW..
 
 c_ LocationDialog(QDialog):
     ___  -   parent_None):
-        super(LocationDialog, self). - (parent)
+        s__(LocationDialog, self). - (parent)
 
         formatComboBox _ ?CB()
         formatComboBox.aI..("Native")
@@ -348,7 +348,7 @@ c_ LocationDialog(QDialog):
 
 c_ SettingsTree(QTreeWidget):
     ___  -   parent_None):
-        super(SettingsTree, self). - (parent)
+        s__(SettingsTree, self). - (parent)
 
         sID..(VariantDelegate(self))
 
@@ -425,7 +425,7 @@ c_ SettingsTree(QTreeWidget):
             __ isActiveWindow() and autoRefresh:
                 maybeRefresh()
 
-        r_ super(SettingsTree, self).event(event)
+        r_ s__(SettingsTree, self).event(event)
 
     ___ updateSetting  item):
         key _ item.t__(0)
@@ -535,7 +535,7 @@ c_ SettingsTree(QTreeWidget):
 
 c_ VariantDelegate(QItemDelegate):
     ___  -   parent_None):
-        super(VariantDelegate, self). - (parent)
+        s__(VariantDelegate, self). - (parent)
 
         boolExp _ QRegExp()
         boolExp.setPattern('true|false')
@@ -582,10 +582,10 @@ c_ VariantDelegate(QItemDelegate):
             __ no. isSupportedType(value):
                 myOption _ QStyleOptionViewItem(option)
                 myOption.state &_ ~?S...State_Enabled
-                super(VariantDelegate, self).paint(painter, myOption, index)
+                s__(VariantDelegate, self).paint(painter, myOption, index)
                 r_
 
-        super(VariantDelegate, self).paint(painter, option, index)
+        s__(VariantDelegate, self).paint(painter, option, index)
 
     ___ createEditor  parent, option, index):
         __ index.column() !_ 2:

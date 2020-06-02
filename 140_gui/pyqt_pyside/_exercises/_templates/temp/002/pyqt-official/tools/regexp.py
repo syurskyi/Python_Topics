@@ -52,7 +52,7 @@ c_ RegExpDialog(QDialog):
     MaxCaptures _ 6
 
     ___  -   parent_None):
-        super(RegExpDialog, self). - (parent)
+        s__(RegExpDialog, self). - (parent)
 
         patternComboBox _ ?CB()
         patternComboBox.setEditable( st.

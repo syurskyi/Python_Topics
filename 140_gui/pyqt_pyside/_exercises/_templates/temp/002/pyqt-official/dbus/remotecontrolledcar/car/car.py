@@ -54,7 +54,7 @@ ____ ?.QtDBus ______ QDBusAbstractAdaptor, QDBusConnection
 c_ Car(QGraphicsObject):
 
     ___  -
-        super(Car, self). - ()
+        s__(Car, self). - ()
 
         color _ ?B..(__.green)
         wheelsAngle _ 0.0
@@ -145,7 +145,7 @@ c_ CarInterfaceAdaptor(QDBusAbstractAdaptor):
             '')
 
     ___  -   parent):
-        super(CarInterfaceAdaptor, self). - (parent)
+        s__(CarInterfaceAdaptor, self). - (parent)
 
         setAutoRelaySignals( st.
 

@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
 
 c_ Screenshot(?W..):
     ___  -
-        super(Screenshot, self). - ()
+        s__(Screenshot, self). - ()
 
         screenshotLabel _ QLabel()
         screenshotLabel.sSP..(QSizePolicy.E..,

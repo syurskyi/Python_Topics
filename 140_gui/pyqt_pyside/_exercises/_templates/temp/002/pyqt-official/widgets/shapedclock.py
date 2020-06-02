@@ -64,7 +64,7 @@ c_ ShapedClock(?W..):
     minuteColor _ ?C..(0, 127, 127, 191)
 
     ___  -   parent_None):
-        super(ShapedClock, self). - (parent,
+        s__(ShapedClock, self). - (parent,
                 __.FramelessWindowHint | __.WindowSystemMenuHint)
 
         timer _ ?T..

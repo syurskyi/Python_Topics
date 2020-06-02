@@ -88,7 +88,7 @@ void main(void)
     )
 
     ___  -   parent_None):
-        super(GLWidget, self). - (parent)
+        s__(GLWidget, self). - (parent)
 
         clearColor _ ?C..(__.black)
         xRot _ 0
@@ -215,7 +215,7 @@ c_ Window(?W..):
     NumColumns _ 3
 
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         glWidgets _   # list
 

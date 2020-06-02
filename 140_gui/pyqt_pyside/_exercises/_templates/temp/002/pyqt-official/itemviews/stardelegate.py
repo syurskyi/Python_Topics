@@ -119,7 +119,7 @@ c_ StarEditor(?W..):
     eF__ _ pS..()
 
     ___  -   parent _ N..):
-        super(StarEditor, self). - (parent)
+        s__(StarEditor, self). - (parent)
 
         _starRating _ StarRating()
 
@@ -170,14 +170,14 @@ c_ StarDelegate(?SID..):
             starRating.paint(painter, option.rect, option.palette,
                     StarRating.ReadOnly)
         ____
-            super(StarDelegate, self).paint(painter, option, index)
+            s__(StarDelegate, self).paint(painter, option, index)
 
     ___ sH..  option, index):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
             r_ starRating.sH..()
         ____
-            r_ super(StarDelegate, self).sH..(option, index)
+            r_ s__(StarDelegate, self).sH..(option, index)
 
     ___ createEditor  parent, option, index):
         starRating _ index.data()
@@ -186,21 +186,21 @@ c_ StarDelegate(?SID..):
             editor.eF__.c..(commitAndCloseEditor)
             r_ editor
         ____
-            r_ super(StarDelegate, self).createEditor(parent, option, index)
+            r_ s__(StarDelegate, self).createEditor(parent, option, index)
 
     ___ setEditorData  editor, index):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
             editor.setStarRating(starRating)
         ____
-            super(StarDelegate, self).setEditorData(editor, index)
+            s__(StarDelegate, self).setEditorData(editor, index)
 
     ___ setModelData  editor, model, index):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
             model.setData(index, editor.starRating())
         ____
-            super(StarDelegate, self).setModelData(editor, model, index)
+            s__(StarDelegate, self).setModelData(editor, model, index)
 
     ___ commitAndCloseEditor
         editor _ sender()

@@ -54,7 +54,7 @@ c_ StateSwitchEvent(QEvent):
     StateSwitchType _ QEvent.User + 256
 
     ___  -   rand_0):
-        super(StateSwitchEvent, self). - (StateSwitchEvent.StateSwitchType)
+        s__(StateSwitchEvent, self). - (StateSwitchEvent.StateSwitchType)
 
         m_rand _ rand
 
@@ -69,7 +69,7 @@ c_ QGraphicsRectWidget(QGraphicsWidget):
 
 c_ StateSwitchTransition(QAbstractTransition):
     ___  -   rand):
-        super(StateSwitchTransition, self). - ()
+        s__(StateSwitchTransition, self). - ()
 
         m_rand _ rand
 
@@ -83,7 +83,7 @@ c_ StateSwitchTransition(QAbstractTransition):
 
 c_ StateSwitcher(QState):
     ___  -   machine):
-        super(StateSwitcher, self). - (machine)
+        s__(StateSwitcher, self). - (machine)
 
         m_stateCount _ 0
         m_lastIndex _ 0

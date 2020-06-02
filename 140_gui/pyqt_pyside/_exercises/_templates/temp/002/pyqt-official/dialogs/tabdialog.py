@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
 
 c_ TabDialog(QDialog):
     ___  -   fileName, parent_None):
-        super(TabDialog, self). - (parent)
+        s__(TabDialog, self). - (parent)
 
         fileInfo _ QFileInfo(fileName)
 
@@ -74,7 +74,7 @@ c_ TabDialog(QDialog):
 
 c_ GeneralTab(?W..):
     ___  -   fileInfo, parent_None):
-        super(GeneralTab, self). - (parent)
+        s__(GeneralTab, self). - (parent)
 
         fileNameLabel _ QLabel("File Name:")
         fileNameEdit _ QLineEdit(fileInfo.fileName())
@@ -113,7 +113,7 @@ c_ GeneralTab(?W..):
 
 c_ PermissionsTab(?W..):
     ___  -   fileInfo, parent_None):
-        super(PermissionsTab, self). - (parent)
+        s__(PermissionsTab, self). - (parent)
 
         permissionsGroup _ QGroupBox("Permissions")
 
@@ -161,7 +161,7 @@ c_ PermissionsTab(?W..):
 
 c_ ApplicationsTab(?W..):
     ___  -   fileInfo, parent_None):
-        super(ApplicationsTab, self). - (parent)
+        s__(ApplicationsTab, self). - (parent)
 
         topLabel _ QLabel("Open with:")
 

@@ -54,7 +54,7 @@ ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
 c_ VideoPlayer(?W..):
 
     ___  -   parent_None):
-        super(VideoPlayer, self). - (parent)
+        s__(VideoPlayer, self). - (parent)
 
         mediaPlayer _ ?MP..(N.., ?MP...VideoSurface)
 

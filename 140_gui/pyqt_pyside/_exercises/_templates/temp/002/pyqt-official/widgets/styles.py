@@ -52,7 +52,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
 
 c_ WidgetGallery(QDialog):
     ___  -   parent_None):
-        super(WidgetGallery, self). - (parent)
+        s__(WidgetGallery, self). - (parent)
 
         originalPalette _ ?A...p..
 

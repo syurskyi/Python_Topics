@@ -53,7 +53,7 @@ c_ SlidersGroup(QGroupBox):
     valueChanged _ pS..(int)
 
     ___  -   orientation, title, parent_None):
-        super(SlidersGroup, self). - (title, parent)
+        s__(SlidersGroup, self). - (title, parent)
 
         slider _ ?S..(orientation)
         slider.sFP..(__.StrongFocus)
@@ -109,7 +109,7 @@ c_ SlidersGroup(QGroupBox):
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         horizontalSliders _ SlidersGroup(__.H..,
                 "Horizontal")

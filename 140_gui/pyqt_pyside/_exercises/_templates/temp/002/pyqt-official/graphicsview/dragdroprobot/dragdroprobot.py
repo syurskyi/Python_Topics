@@ -55,7 +55,7 @@ c_ ColorItem(QGraphicsItem):
     n _ 0
 
     ___  -
-        super(ColorItem, self). - ()
+        s__(ColorItem, self). - ()
 
         color _ ?C..(qrand() % 256, qrand() % 256, qrand() % 256)
 
@@ -123,7 +123,7 @@ c_ ColorItem(QGraphicsItem):
 
 c_ RobotPart(QGraphicsObject):
     ___  -   parent_None):
-        super(RobotPart, self). - (parent)
+        s__(RobotPart, self). - (parent)
 
         color _ ?C..(__.lightGray)
         dragOver _ F..
@@ -152,7 +152,7 @@ c_ RobotPart(QGraphicsObject):
 
 c_ RobotHead(RobotPart):
     ___  -   parent_None):
-        super(RobotHead, self). - (parent)
+        s__(RobotHead, self). - (parent)
 
         pixmap _ ?P..()
 
@@ -182,7 +182,7 @@ c_ RobotHead(RobotPart):
             dragOver _ T..
             update()
         ____
-            super(RobotHead, self).dragEnterEvent(event)
+            s__(RobotHead, self).dragEnterEvent(event)
 
     ___ dropEvent  event):
         __ event.mimeData().hasImage
@@ -190,7 +190,7 @@ c_ RobotHead(RobotPart):
             pixmap _ ?P..(event.mimeData().imageData())
             update()
         ____
-            super(RobotHead, self).dropEvent(event)
+            s__(RobotHead, self).dropEvent(event)
 
 
 c_ RobotTorso(RobotPart):
@@ -218,7 +218,7 @@ c_ RobotLimb(RobotPart):
 
 c_ Robot(RobotPart):
     ___  -
-        super(Robot, self). - ()
+        s__(Robot, self). - ()
 
         setFlag(ItemHasNoContents)
 

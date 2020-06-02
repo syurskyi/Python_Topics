@@ -21,7 +21,7 @@ Q_TYPEID _ {
 #----------------------------------------------------------------------------#
 c_ MultiPageWidgetContainerExtension(QPyDesignerContainerExtension):
     ___  -   widget, parent_None):
-        super(MultiPageWidgetContainerExtension, self). - (parent)
+        s__(MultiPageWidgetContainerExtension, self). - (parent)
 
         _widget _ widget
             
@@ -52,7 +52,7 @@ c_ MultiPageWidgetContainerExtension(QPyDesignerContainerExtension):
 #----------------------------------------------------------------------------#
 c_ MultiPageWidgetExtensionFactory(QExtensionFactory):
     ___  -   parent_None):
-        super(MultiPageWidgetExtensionFactory, self). - (parent)
+        s__(MultiPageWidgetExtensionFactory, self). - (parent)
 
     ___ createExtension  obj, iid, parent):
         __ iid !_ Q_TYPEID['QDesignerContainerExtension']:
@@ -68,7 +68,7 @@ c_ MultiPageWidgetExtensionFactory(QExtensionFactory):
 c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
 
     ___  -   parent_None):
-        super(MultiPageWidgetPlugin, self). - (parent)
+        s__(MultiPageWidgetPlugin, self). - (parent)
 
         initialized _ F..
 

@@ -40,7 +40,7 @@ DESIGNER_GROUP_NAME _ "PyQt Examples"
 c_ PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
 
     ___  -   parent_None):
-        super(PyDateEditPlugin, self). - (parent)
+        s__(PyDateEditPlugin, self). - (parent)
 
         initialized _ F..
 
@@ -86,7 +86,7 @@ c_ PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
 c_ PyDateTimeEditPlugin(QPyDesignerCustomWidgetPlugin):
 
     ___  -   parent_None):
-        super(PyDateTimeEditPlugin, self). - (parent)
+        s__(PyDateTimeEditPlugin, self). - (parent)
 
         initialized _ F..
 

@@ -93,7 +93,7 @@ c_ Helper(object):
 
 c_ Widget(?W..):
     ___  -   helper, parent):
-        super(Widget, self). - (parent)
+        s__(Widget, self). - (parent)
 
         helper _ helper
         elapsed _ 0
@@ -113,7 +113,7 @@ c_ Widget(?W..):
 
 c_ GLWidget(QOpenGLWidget):
     ___  -   helper, parent):
-        super(GLWidget, self). - (parent)
+        s__(GLWidget, self). - (parent)
 
         helper _ helper
         elapsed _ 0
@@ -134,7 +134,7 @@ c_ GLWidget(QOpenGLWidget):
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         sWT..("2D Painting on Native and OpenGL Widgets")
 

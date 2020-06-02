@@ -63,7 +63,7 @@ c_ RenderArea(?W..):
             Pie, Path, Text, Pixmap _ ra..(13)
 
     ___  -   parent_None):
-        super(RenderArea, self). - (parent)
+        s__(RenderArea, self). - (parent)
 
         pen _ ?P..()
         brush _ ?B..()
@@ -169,7 +169,7 @@ IdRole _ __.UserRole
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         renderArea _ RenderArea()
 

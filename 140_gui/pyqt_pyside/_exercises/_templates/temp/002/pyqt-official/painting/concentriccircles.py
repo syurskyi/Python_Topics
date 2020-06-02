@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
 
 c_ CircleWidget(?W..):
     ___  -   parent_None):
-        super(CircleWidget, self). - (parent)
+        s__(CircleWidget, self). - (parent)
 
         floatBased _ F..
         antialiased _ F..
@@ -98,7 +98,7 @@ c_ CircleWidget(?W..):
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         aliasedLabel _ createLabel("Aliased")
         antialiasedLabel _ createLabel("Antialiased")

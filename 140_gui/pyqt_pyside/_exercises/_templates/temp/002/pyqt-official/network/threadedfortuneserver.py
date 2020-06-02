@@ -56,7 +56,7 @@ c_ FortuneThread(?T..):
     error _ pS..(QTcpSocket.SocketError)
 
     ___  -   socketDescriptor, fortune, parent):
-        super(FortuneThread, self). - (parent)
+        s__(FortuneThread, self). - (parent)
 
         socketDescriptor _ socketDescriptor
         t__ _ fortune
@@ -100,7 +100,7 @@ c_ FortuneServer(?TS..
 
 c_ Dialog(QDialog):
     ___  -   parent_None):
-        super(Dialog, self). - (parent)
+        s__(Dialog, self). - (parent)
 
         server _ FortuneServer()
 

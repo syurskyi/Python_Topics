@@ -53,7 +53,7 @@ ____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
 
 c_ Lighting(QGraphicsView):
     ___  -   parent_None):
-        super(Lighting, self). - (parent)
+        s__(Lighting, self). - (parent)
 
         angle _ 0.0
         m_scene _ QGraphicsScene()

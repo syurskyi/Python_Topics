@@ -61,6 +61,6 @@ c_ PieChart(QQuickItem):
         _name _ name
 
     ___  -   parent_None):
-        super(PieChart, self). - (parent)
+        s__(PieChart, self). - (parent)
 
         _name _ ''

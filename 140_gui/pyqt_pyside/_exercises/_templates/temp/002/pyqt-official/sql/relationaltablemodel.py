@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ ?A.., QTableView
-____ ?.?S.. ______ (QSqlQuery, QSqlRelation, ?SRD..,
+____ ?.?S.. ______ (?SQ.., QSqlRelation, ?SRD..,
         QSqlRelationalTableModel, ?STM..)
 
 ______ connection
@@ -75,7 +75,7 @@ ___ createView(title, model):
 
 
 ___ createRelationalTables
-    query _ QSqlQuery()
+    query _ ?SQ..()
 
     query.e..("create table employee(id int, name varchar(20), city int, country int)")
     query.e..("insert into employee values(1, 'Espen', 5000, 47)")

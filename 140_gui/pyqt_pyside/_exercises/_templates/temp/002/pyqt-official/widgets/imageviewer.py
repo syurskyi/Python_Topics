@@ -51,7 +51,7 @@ ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 c_ ImageViewer ?MW..
     ___  -
-        super(ImageViewer, self). - ()
+        s__(ImageViewer, self). - ()
 
         printer _ QPrinter()
         scaleFactor _ 0.0

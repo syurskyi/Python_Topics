@@ -131,7 +131,7 @@ c_ TreeItem(object):
 
 c_ TreeModel(QAbstractItemModel):
     ___  -   headers, data, parent_None):
-        super(TreeModel, self). - (parent)
+        s__(TreeModel, self). - (parent)
 
         rootData _ [header ___ header __ headers]
         rootItem _ TreeItem(rootData)
@@ -154,7 +154,7 @@ c_ TreeModel(QAbstractItemModel):
         __ no. index.isValid
             r_ 0
 
-        r_ __.IIE.. | super(TreeModel, self).flags(index)
+        r_ __.IIE.. | s__(TreeModel, self).flags(index)
 
     ___ getItem  index):
         __ index.isValid
@@ -299,7 +299,7 @@ c_ TreeModel(QAbstractItemModel):
 
 c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         setupUi
 

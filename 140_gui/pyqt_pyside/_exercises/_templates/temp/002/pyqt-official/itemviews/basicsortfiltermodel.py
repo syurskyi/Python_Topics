@@ -67,12 +67,12 @@ c_ SortFilterProxyModel(QSortFilterProxyModel):
             r_ (filterRegExp().indexIn(data.toString(__.DefaultLocaleShortDate)) >_ 0)
 
         # Not our business.
-        r_ super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
+        r_ s__(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
 
 
 c_ Window(?W..):
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         proxyModel _ SortFilterProxyModel()
         proxyModel.setDynamicSortFilter( st.

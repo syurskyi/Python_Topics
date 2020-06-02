@@ -53,7 +53,7 @@ c_ Dialog(QDialog):
     PayloadSize _ 65536
 
     ___  -   parent_None):
-        super(Dialog, self). - (parent)
+        s__(Dialog, self). - (parent)
 
         tcpServer _ QTcpServer()
         tcpClient _ QTcpSocket()

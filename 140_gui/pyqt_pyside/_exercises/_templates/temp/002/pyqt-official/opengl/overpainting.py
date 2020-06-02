@@ -116,7 +116,7 @@ c_ Bubble(object):
 
 c_ GLWidget(QOpenGLWidget):
     ___  -   parent_None):
-        super(GLWidget, self). - (parent)
+        s__(GLWidget, self). - (parent)
 
         midnight _ ?T..(0, 0, 0)
         random.seed(midnight.secsTo(?T...currentTime()))

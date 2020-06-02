@@ -51,7 +51,7 @@ ____ ?.?N.. ______ ?NAM.., ?NR..
 
 c_ HttpWindow(QDialog):
     ___  -   parent_None):
-        super(HttpWindow, self). - (parent)
+        s__(HttpWindow, self). - (parent)
 
         url _ ?U..()
         qnam _ ?NAM..()

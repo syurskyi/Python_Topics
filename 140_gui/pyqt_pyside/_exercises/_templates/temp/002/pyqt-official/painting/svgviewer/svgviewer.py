@@ -55,7 +55,7 @@ ______ svgviewer_rc
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         currentPath _ ''
 
@@ -165,7 +165,7 @@ c_ SvgView(QGraphicsView):
     Native, OpenGL, Image _ ra..(3)
 
     ___  -   parent_None):
-        super(SvgView, self). - (parent)
+        s__(SvgView, self). - (parent)
 
         renderer _ SvgView.Native
         svgItem _ N..
@@ -275,7 +275,7 @@ c_ SvgView(QGraphicsView):
             p _ QPainter(viewport())
             p.drawImage(0, 0, image)
         ____
-            super(SvgView, self).paintEvent(event)
+            s__(SvgView, self).paintEvent(event)
 
     ___ wheelEvent  event):
         factor _ pow(1.2, event.delta() / 240.0)

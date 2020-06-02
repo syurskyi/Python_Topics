@@ -40,7 +40,7 @@ c_ PythonConsolePlugin(QPyDesignerCustomWidgetPlugin):
     # initialized variable.
     ___  -   parent_None):
     
-        super(PythonConsolePlugin, self). - (parent)
+        s__(PythonConsolePlugin, self). - (parent)
 
         initialized _ F..
 

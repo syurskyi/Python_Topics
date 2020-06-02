@@ -13,7 +13,7 @@ ______ time
 c_ MainWindow ?MW..
 
     ___  -   $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
 
         available_cameras _ ?CI__.aC..
         __ no. available_cameras:

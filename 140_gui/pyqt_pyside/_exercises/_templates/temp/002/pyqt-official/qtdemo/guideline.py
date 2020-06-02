@@ -47,7 +47,7 @@ ____ guide ______ Guide
 
 c_ GuideLine(Guide):
     ___  -   line_or_point, follows_None):
-        super(GuideLine, self). - (follows)
+        s__(GuideLine, self). - (follows)
 
         __ isinstance(line_or_point, QLineF):
             line _ line_or_point

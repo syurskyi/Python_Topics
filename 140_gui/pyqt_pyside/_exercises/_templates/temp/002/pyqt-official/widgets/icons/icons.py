@@ -103,7 +103,7 @@ c_ ImageDelegate(QItemDelegate):
 
 c_ IconPreviewArea(?W..):
     ___  -   parent_None):
-        super(IconPreviewArea, self). - (parent)
+        s__(IconPreviewArea, self). - (parent)
 
         mainLayout _ QGridLayout()
         sL..(mainLayout)
@@ -178,7 +178,7 @@ c_ IconPreviewArea(?W..):
 
 c_ MainWindow ?MW..
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         centralWidget _ ?W..
         sCW..(centralWidget)

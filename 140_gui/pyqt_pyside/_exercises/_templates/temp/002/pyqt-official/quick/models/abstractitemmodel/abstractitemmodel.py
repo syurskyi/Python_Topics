@@ -69,7 +69,7 @@ c_ AnimalModel(QAbstractListModel):
     _roles _ {TypeRole: b"type", SizeRole: b"size"}
 
     ___  -   parent_None):
-        super(AnimalModel, self). - (parent)
+        s__(AnimalModel, self). - (parent)
 
         _animals _   # list
 

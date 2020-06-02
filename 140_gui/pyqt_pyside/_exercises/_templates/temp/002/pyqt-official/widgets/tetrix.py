@@ -56,7 +56,7 @@ NoShape, ZShape, SShape, LineShape, TShape, SquareShape, LShape, MirroredLShape 
 
 c_ TetrixWindow(?W..):
     ___  -
-        super(TetrixWindow, self). - ()
+        s__(TetrixWindow, self). - ()
 
         board _ TetrixBoard()
 
@@ -121,7 +121,7 @@ c_ TetrixBoard(QFrame):
     linesRemovedChanged _ pS..(int)
 
     ___  -   parent_None):
-        super(TetrixBoard, self). - (parent)
+        s__(TetrixBoard, self). - (parent)
 
         timer _ QBasicTimer()
         nextPieceLabel _ N..
@@ -202,7 +202,7 @@ c_ TetrixBoard(QFrame):
         update()
 
     ___ paintEvent  event):
-        super(TetrixBoard, self).paintEvent(event)
+        s__(TetrixBoard, self).paintEvent(event)
 
         painter _ QPainter
         rect _ contentsRect()
@@ -231,7 +231,7 @@ c_ TetrixBoard(QFrame):
 
     ___ keyPressEvent  event):
         __ no. isStarted or isPaused or curPiece.shape() __ NoShape:
-            super(TetrixBoard, self).keyPressEvent(event)
+            s__(TetrixBoard, self).keyPressEvent(event)
             r_
 
         key _ event.key()
@@ -248,7 +248,7 @@ c_ TetrixBoard(QFrame):
         ____ key __ __.Key_D:
             oneLineDown()
         ____
-            super(TetrixBoard, self).keyPressEvent(event)
+            s__(TetrixBoard, self).keyPressEvent(event)
 
     ___ timerEvent  event):
         __ event.timerId() __ timer.timerId
@@ -259,7 +259,7 @@ c_ TetrixBoard(QFrame):
             ____
                 oneLineDown()
         ____
-            super(TetrixBoard, self).timerEvent(event)
+            s__(TetrixBoard, self).timerEvent(event)
 
     ___ clearBoard 
         board _ [NoShape ___ i __ ra..(TetrixBoard.BoardHeight * TetrixBoard.BoardWidth)]

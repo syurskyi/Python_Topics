@@ -13,7 +13,7 @@ INPUT _ 1
 
 c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
         setupUi
 
         # Setup numbers.

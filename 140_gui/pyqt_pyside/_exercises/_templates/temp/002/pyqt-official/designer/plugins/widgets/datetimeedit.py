@@ -39,7 +39,7 @@ c_ PyDateEdit(?DE..):
     # Set default values for calendar properties
     #
     ___  -   *args):
-        super(PyDateEdit, self). - (*args)
+        s__(PyDateEdit, self). - (*args)
 
         setCalendarPopup( st.
         __cw _ N..
@@ -55,7 +55,7 @@ c_ PyDateEdit(?DE..):
     # Set the calendar properties
     #
     ___ mousePressEvent  event):
-        super(PyDateEdit, self).mousePressEvent(event)
+        s__(PyDateEdit, self).mousePressEvent(event)
 
         __ no. __cw:
             __cw _ findChild(QCalendarWidget)
@@ -199,7 +199,7 @@ c_ PyDateTimeEdit(?DTE..):
     # Set default values for calendar properties
     #
     ___  -   *args):
-        super(PyDateTimeEdit, self). - (*args)
+        s__(PyDateTimeEdit, self). - (*args)
 
         setCalendarPopup( st.
         __cw _ N..
@@ -215,7 +215,7 @@ c_ PyDateTimeEdit(?DTE..):
     # Set the calendar properties
     #
     ___ mousePressEvent  event):
-        super(PyDateTimeEdit, self).mousePressEvent(event)
+        s__(PyDateTimeEdit, self).mousePressEvent(event)
 
         __ no. __cw:
             __cw _ findChild(QCalendarWidget)

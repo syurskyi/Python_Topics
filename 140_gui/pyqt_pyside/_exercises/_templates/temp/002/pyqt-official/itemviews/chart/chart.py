@@ -57,7 +57,7 @@ ______ chart_rc
 
 c_ PieView(QAbstractItemView):
     ___  -   parent_None):
-        super(PieView, self). - (parent)
+        s__(PieView, self). - (parent)
 
         horizontalScrollBar().setRange(0, 0)
         verticalScrollBar().setRange(0, 0)
@@ -71,7 +71,7 @@ c_ PieView(QAbstractItemView):
         rubberBand _ N..
 
     ___ dataChanged  topLeft, bottomRight, roles):
-        super(PieView, self).dataChanged(topLeft, bottomRight, roles)
+        s__(PieView, self).dataChanged(topLeft, bottomRight, roles)
 
         validItems _ 0
         totalValue _ 0.0
@@ -89,7 +89,7 @@ c_ PieView(QAbstractItemView):
 
     ___ edit  index, trigger, event):
         __ index.column() __ 0:
-            r_ super(PieView, self).edit(index, trigger, event)
+            r_ s__(PieView, self).edit(index, trigger, event)
         ____
             r_ F..
 
@@ -222,7 +222,7 @@ c_ PieView(QAbstractItemView):
         r_ horizontalScrollBar().v..
 
     ___ mousePressEvent  event):
-        super(PieView, self).mousePressEvent(event)
+        s__(PieView, self).mousePressEvent(event)
 
         origin _ event.pos()
         __ no. rubberBand:
@@ -234,10 +234,10 @@ c_ PieView(QAbstractItemView):
         __ rubberBand:
             rubberBand.setGeometry(QRect(origin, event.pos()).normalized())
 
-        super(PieView, self).mouseMoveEvent(event)
+        s__(PieView, self).mouseMoveEvent(event)
 
     ___ mouseReleaseEvent  event):
-        super(PieView, self).mouseReleaseEvent(event)
+        s__(PieView, self).mouseReleaseEvent(event)
 
         __ rubberBand:
             rubberBand.hide()
@@ -356,7 +356,7 @@ c_ PieView(QAbstractItemView):
                 totalValue +_ value
                 validItems +_ 1
 
-        super(PieView, self).rowsInserted(parent, start, end)
+        s__(PieView, self).rowsInserted(parent, start, end)
 
     ___ rowsAboutToBeRemoved  parent, start, end):
         ___ row __ ra..(start, end + 1):
@@ -367,7 +367,7 @@ c_ PieView(QAbstractItemView):
                 totalValue -_ value
                 validItems -_ 1
 
-        super(PieView, self).rowsAboutToBeRemoved(parent, start, end)
+        s__(PieView, self).rowsAboutToBeRemoved(parent, start, end)
 
     ___ scrollContentsBy  dx, dy):
         viewport().scroll(dx, dy)
@@ -465,7 +465,7 @@ c_ PieView(QAbstractItemView):
 
 c_ MainWindow ?MW..
     ___  - 
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         fileMenu _ QMenu("&File", self)
         openAction _ fileMenu.aA..("&Open...")

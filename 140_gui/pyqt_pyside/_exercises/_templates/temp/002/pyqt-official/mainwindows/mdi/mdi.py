@@ -55,7 +55,7 @@ c_ MdiChild(?TE..):
     sequenceNumber _ 1
 
     ___  -
-        super(MdiChild, self). - ()
+        s__(MdiChild, self). - ()
 
         setAttribute(__.WA_DeleteOnClose)
         isUntitled _ T..
@@ -158,7 +158,7 @@ c_ MdiChild(?TE..):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         mdiArea _ QMdiArea()
         mdiArea.setHorizontalScrollBarPolicy(__.ScrollBarAsNeeded)

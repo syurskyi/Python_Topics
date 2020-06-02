@@ -56,7 +56,7 @@ ____ embeddeddialog ______ Ui_embeddedDialog
 
 c_ CustomProxy(QGraphicsProxyWidget):
     ___  -   parent_None, wFlags_0):
-        super(CustomProxy, self). - (parent, wFlags)
+        s__(CustomProxy, self). - (parent, wFlags)
 
         popupShown _ F..
         currentPopup _ N..
@@ -88,17 +88,17 @@ c_ CustomProxy(QGraphicsProxyWidget):
         ____ intersectsRight:
             painter.fillRect(right, color)
 
-        super(CustomProxy, self).paintWindowFrame(painter, option, widget)
+        s__(CustomProxy, self).paintWindowFrame(painter, option, widget)
 
     ___ hoverEnterEvent  event):
-        super(CustomProxy, self).hoverEnterEvent(event)
+        s__(CustomProxy, self).hoverEnterEvent(event)
 
         scene().setActiveWindow
         __ timeLine.currentValue !_ 1:
             zoomIn()
 
     ___ hoverLeaveEvent  event):
-        super(CustomProxy, self).hoverLeaveEvent(event)
+        s__(CustomProxy, self).hoverLeaveEvent(event)
 
         __ no. popupShown and (timeLine.direction() !_ QTimeLine.Backward or timeLine.currentValue() !_ 0):
             zoomOut()
@@ -109,7 +109,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
             __ no. popupShown and no. isUnderMouse
                 zoomOut()
 
-        r_ super(CustomProxy, self).sceneEventFilter(watched, event)
+        r_ s__(CustomProxy, self).sceneEventFilter(watched, event)
 
     ___ itemChange  change, value):
         __ change __ ItemChildAddedChange or change __ ItemChildRemovedChange :
@@ -124,7 +124,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
         ____ currentPopup __ no. N.. and change __ ItemSceneHasChanged:
                 currentPopup.installSceneEventFilter
 
-        r_ super(CustomProxy, self).itemChange(change, value)
+        r_ s__(CustomProxy, self).itemChange(change, value)
 
     ___ updateStep  step):
         r _ boundingRect()
@@ -159,7 +159,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
 
 c_ EmbeddedDialog(QDialog):
     ___  -   parent_None):
-        super(EmbeddedDialog, self). - (parent)
+        s__(EmbeddedDialog, self). - (parent)
 
         ui _ Ui_embeddedDialog()
         ui.setupUi

@@ -40,7 +40,7 @@ c_ PolygonWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     # initialized variable.
     ___  -   parent_None):
     
-        super(PolygonWidgetPlugin, self). - (parent)
+        s__(PolygonWidgetPlugin, self). - (parent)
 
         initialized _ F..
 

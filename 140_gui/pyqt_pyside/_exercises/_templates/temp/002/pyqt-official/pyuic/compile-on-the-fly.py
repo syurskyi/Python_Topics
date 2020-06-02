@@ -52,7 +52,7 @@ form_class, base_class _ lUT..('demo.ui')
 
 c_ DemoImpl(QDialog, form_class):
     ___  -   *args):
-        super(DemoImpl, self). - (*args)
+        s__(DemoImpl, self). - (*args)
 
         setupUi
     

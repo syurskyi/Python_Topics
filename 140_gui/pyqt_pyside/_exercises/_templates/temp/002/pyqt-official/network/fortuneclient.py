@@ -54,7 +54,7 @@ ____ ?.?N.. ______ (?AS.., QHostInfo, QNetworkConfiguration,
 
 c_ Client(QDialog):
     ___  -   parent_None):
-        super(Client, self). - (parent)
+        s__(Client, self). - (parent)
 
         networkSession _ N..
         blockSize _ 0

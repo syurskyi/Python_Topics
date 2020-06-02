@@ -52,7 +52,7 @@ ____ ?.?W.. ______ (?A.., ?CB, QGridLayout,
 
 c_ ColorListEditor(?CB):
     ___  -   widget_None):
-        super(ColorListEditor, self). - (widget)
+        s__(ColorListEditor, self). - (widget)
 
         populateList()
 
@@ -79,7 +79,7 @@ c_ ColorListItemEditorCreator(QItemEditorCreatorBase):
 
 c_ Window(?W..):
     ___  -   parent_None):
-        super(Window, self). - (parent)
+        s__(Window, self). - (parent)
 
         factory _ QItemEditorFactory()
         factory.registerEditor(QVariant.Color, ColorListItemEditorCreator())

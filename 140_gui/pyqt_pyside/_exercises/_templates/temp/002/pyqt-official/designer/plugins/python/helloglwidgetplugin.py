@@ -40,7 +40,7 @@ c_ HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     # initialized variable.
     ___  -   parent_None):
     
-        super(HelloGLWidgetPlugin, self). - (parent)
+        s__(HelloGLWidgetPlugin, self). - (parent)
 
         initialized _ F..
 

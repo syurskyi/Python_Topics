@@ -57,7 +57,7 @@ c_ FortuneThread(?T..):
     error _ pS..(int, st.)
 
     ___  -   parent_None):
-        super(FortuneThread, self). - (parent)
+        s__(FortuneThread, self). - (parent)
 
         quit _ F..
         hostName _ ''
@@ -123,7 +123,7 @@ c_ FortuneThread(?T..):
 
 c_ BlockingClient(?W..):
     ___  -   parent_None):
-        super(BlockingClient, self). - (parent)
+        s__(BlockingClient, self). - (parent)
 
         thread _ FortuneThread()
         currentFortune _ ''

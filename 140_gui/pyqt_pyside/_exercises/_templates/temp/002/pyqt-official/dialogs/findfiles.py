@@ -53,7 +53,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?CB,
 
 c_ Window(QDialog):
     ___  -   parent_None):
-        super(Window, self). - (parent)
+        s__(Window, self). - (parent)
 
         browseButton _ createButton("&Browse...", browse)
         findButton _ createButton("&Find", find)

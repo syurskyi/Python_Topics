@@ -49,7 +49,7 @@ c_ PyTextViewer(?TE..):
 
     # Initialise the instance.
     ___  -   parent_None):
-        super(PyTextViewer, self). - (parent)
+        s__(PyTextViewer, self). - (parent)
 
         setReadOnly( st.
 
@@ -86,7 +86,7 @@ c_ PyDemo(PyTextViewer):
 
     # Initialise the instance.
     ___  -   parent_None):
-        super(PyDemo, self). - (parent)
+        s__(PyDemo, self). - (parent)
 
         sWT..("PyQt Demonstration Widget")
         sT..(_demo_text)

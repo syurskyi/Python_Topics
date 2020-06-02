@@ -79,7 +79,7 @@ c_ DomItem(object):
 
 c_ DomModel(QAbstractItemModel):
     ___  -   document, parent_None):
-        super(DomModel, self). - (parent)
+        s__(DomModel, self). - (parent)
 
         domDocument _ document
 
@@ -181,7 +181,7 @@ c_ DomModel(QAbstractItemModel):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         fileMenu _ mB.. .aM..("&File")
         fileMenu.aA..("&Open...", openFile, "Ctrl+O")

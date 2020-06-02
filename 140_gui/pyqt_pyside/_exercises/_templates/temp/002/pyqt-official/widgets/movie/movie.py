@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
 
 c_ MoviePlayer(?W..):
     ___  -   parent_None):
-        super(MoviePlayer, self). - (parent)
+        s__(MoviePlayer, self). - (parent)
 
         movie _ QMovie
         movie.setCacheMode(QMovie.CacheAll)

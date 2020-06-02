@@ -59,7 +59,7 @@ c_ PuzzleWidget(?W..):
     puzzleCompleted _ pS..()
 
     ___  -   parent_None):
-        super(PuzzleWidget, self). - (parent)
+        s__(PuzzleWidget, self). - (parent)
 
         piecePixmaps _   # list
         pieceRects _   # list
@@ -198,7 +198,7 @@ c_ PuzzleWidget(?W..):
 
 c_ PiecesModel(QAbstractListModel):
     ___  -   parent_None):
-        super(PiecesModel, self). - (parent)
+        s__(PiecesModel, self). - (parent)
 
         locations _   # list
         pixmaps _   # list
@@ -331,7 +331,7 @@ c_ PiecesModel(QAbstractListModel):
 
 c_ MainWindow ?MW..
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         puzzleImage _ ?P..()
 

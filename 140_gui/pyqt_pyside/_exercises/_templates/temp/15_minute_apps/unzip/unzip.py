@@ -46,7 +46,7 @@ class UnzipWorker(QRunnable):
     signals = WorkerSignals()
 
     def  - (self, pa__):
-        super(UnzipWorker, self). - ()
+        s__(UnzipWorker, self). - ()
         os.chdir(os.pa__.dirname(pa__))
         zipfile = zipfile.ZipFile(pa__)
 
@@ -74,7 +74,7 @@ class UnzipWorker(QRunnable):
 class MainWindow(?MW.., Ui_MainWindow):
 
     def  - (self, $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
         setupUi
 
         setAttribute(Qt.WA_TranslucentBackground )

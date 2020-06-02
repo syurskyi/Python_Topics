@@ -38,7 +38,7 @@ c_ PythonConsoleWidget(QLineEdit):
     
     ___  -   parent_None):
     
-        super(PythonConsoleWidget, self). - (parent)
+        s__(PythonConsoleWidget, self). - (parent)
         
         history _   # list
         current _ -1

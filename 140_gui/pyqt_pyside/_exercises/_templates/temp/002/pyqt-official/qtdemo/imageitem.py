@@ -49,7 +49,7 @@ ____ demoitem ______ DemoItem
 
 c_ ImageItem(DemoItem):
     ___  -   image, maxWidth, maxHeight, parent_None, adjustSize_False, scale_1.0):
-        super(ImageItem, self). - (parent)
+        s__(ImageItem, self). - (parent)
 
         image _ image
         maxWidth _ maxWidth

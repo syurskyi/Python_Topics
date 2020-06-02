@@ -1,56 +1,56 @@
-______ ___
-____ ?.?S.. ______ ?SD.., QSqlQuery, ?STM..
-____ ?.?C.. ______ *
-____ ?.?W.. ______ *
-
-c_ MainWindow(?W..):
-    ___  -   parent_None):
-        super(MainWindow, self). - (parent)
-        db _ ?SD...aD..("QSQLITE")
-        db.sDN..("test.db")
-        db.o..()
-        model _ ?STM..()
-        initializedModel()
-
-        tableView _ ?TV..
-        tableView.sM..(model)
-
-        layout _ ?VBL..
-        addButton _ ?PB..("add")
-        deleteButton _ ?PB..("delete")
-        hLayout _ QHBoxLayout()
-        hLayout.aW..(addButton)
-        hLayout.aW..(deleteButton)
-        layout.aW..(tableView)
-        layout.aL..(hLayout)
-        sL..(layout)
-        r..(600, 400)
-
-        addButton.c__.c..(onAddRow)
-        deleteButton.c__.c..(onDeleteRow)
-
-    ___ initializedModel
-        model.sT..("person")
-        model.sES..(?STM...OnFieldChange)
-        model.select()
-        model.setHeaderData(0, __.H.., "ID")
-        model.setHeaderData(1, __.H.., "Name")
-        model.setHeaderData(2, __.H.., "Address")
-
-    ___ onAddRow
-        model.insertRows(model.rowCount(), 1)
-        model.submit()
-
-    ___ onDeleteRow
-        model.removeRow(tableView.currentIndex().row())
-        model.submit()
-        model.select()
-
-    ___ closeEvent  event):
-        db.c..
-
-__ __name__ __ "__main__":
-    app _ ?A..(___.a..
-    window _ MainWindow()
-    window.s..
-    ___.e.. ?.e..
+# ______ ___
+# ____ ?.?S.. ______ ?SD.., ?SQ.., ?STM..
+# ____ ?.?C.. ______ _
+# ____ ?.?W.. ______ _
+#
+# c_ MainWindow ?W..
+#     ___  -   p.._N..
+#         s__ ? ? . - ?
+#         db _ ?SD...aD.. QSQLITE
+#         ?.sDN.. test.?
+#         ?.o..
+#         model _ ?STM..
+#         iM..
+#
+#         tableView _ ?TV..
+#         ?.sM.. m..
+#
+#         layout _ ?VBL..
+#         addButton _ ?PB.. add
+#         deleteButton _ ?PB.. delete
+#         hLayout _ ?HBL..
+#         ?.aW.. aB..
+#         ?.aW.. B..
+#         l__.aW.. tV..
+#         l__.aL.. hL..
+#         sL.. l..
+#         r.. 600 400
+#
+#         aB__.c__.c.. oAR..
+#         dB__.c__.c.. oDR..
+#
+#     ___ initializedModel
+#         ?.sT.. person
+#         ?.sES.. ?STM...OFC..
+#         ?.s..
+#         ?.sHD.. 0 __.H.. "ID"
+#         ?.sHD.. 1 __.H.. "Name"
+#         ?.sHD.. 2 __.H.. "Address"
+#
+#     ___ onAddRow
+#         ?.iR.. ?.rC.. 1
+#         ?.s..
+#
+#     ___ onDeleteRow
+#         ?.rR.. tV__.cI.. .r..
+#         ?.su..
+#         ?.se..
+#
+#     ___ closeEvent  event
+#         ?.c..
+#
+# __ ______ __ ______
+#     app _ ?A.. ___.a..
+#     window _ ?
+#     window.s..
+#     ___.e.. ?.e..

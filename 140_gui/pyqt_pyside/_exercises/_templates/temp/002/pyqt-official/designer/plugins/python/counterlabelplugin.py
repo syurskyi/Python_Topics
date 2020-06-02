@@ -40,7 +40,7 @@ c_ CounterLabelPlugin(QPyDesignerCustomWidgetPlugin):
     # initialized variable.
     ___  -   parent_None):
     
-        super(CounterLabelPlugin, self). - (parent)
+        s__(CounterLabelPlugin, self). - (parent)
 
         initialized _ F..
 

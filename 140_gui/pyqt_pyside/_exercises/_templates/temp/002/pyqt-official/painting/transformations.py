@@ -51,7 +51,7 @@ NoTransformation, Translate, Rotate, Scale _ ra..(4)
 
 c_ RenderArea(?W..):
     ___  -   parent_None):
-        super(RenderArea, self). - (parent)
+        s__(RenderArea, self). - (parent)
 
         newFont _ font()
         newFont.setPixelSize(12)
@@ -136,7 +136,7 @@ c_ Window(?W..):
     NumTransformedAreas _ 3
 
     ___  -
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         originalRenderArea _ RenderArea()
 

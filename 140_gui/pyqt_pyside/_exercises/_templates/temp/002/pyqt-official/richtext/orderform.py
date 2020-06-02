@@ -54,7 +54,7 @@ ____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         fileMenu _ QMenu("&File", self)
         newAction _ fileMenu.aA..("&New...")
@@ -216,7 +216,7 @@ c_ MainWindow ?MW..
 
 c_ DetailsDialog(QDialog):
     ___  -   title, parent):
-        super(DetailsDialog, self). - (parent)
+        s__(DetailsDialog, self). - (parent)
 
         i.. _ ("T-shirt", "Badge", "Reference book", "Coffee cup")
 

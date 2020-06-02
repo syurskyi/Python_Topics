@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., ?CB, ?DE.., ?DTE..,
 
 c_ Window(?W..):
     ___  -  
-        super(Window, self). - ()
+        s__(Window, self). - ()
 
         createSpinBoxes()
         createDateTimeEdits()

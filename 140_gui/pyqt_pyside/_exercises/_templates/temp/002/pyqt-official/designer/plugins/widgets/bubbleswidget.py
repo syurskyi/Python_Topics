@@ -41,7 +41,7 @@ c_ BaseClass(?W..):
 
     ___  -   parent_None):
 
-        super(BaseClass, self). - (parent)
+        s__(BaseClass, self). - (parent)
 
         resetAuthor()
 
@@ -113,7 +113,7 @@ c_ BubblesWidget(BaseClass):
 
     ___  -   parent_None):
 
-        super(BubblesWidget, self). - (parent)
+        s__(BubblesWidget, self). - (parent)
 
         pen _ ?P..(?C..("#cccccc"))
         bubbles _   # list

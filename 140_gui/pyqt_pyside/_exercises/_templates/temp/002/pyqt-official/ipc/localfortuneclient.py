@@ -52,7 +52,7 @@ ____ ?.?N.. ______ QLocalSocket
 
 c_ Client(QDialog):
     ___  -   parent_None):
-        super(Client, self). - (parent)
+        s__(Client, self). - (parent)
 
         blockSize _ 0
         currentFortune _ N..

@@ -46,7 +46,7 @@ c_ HelloGLWidget(QOpenGLWidget):
     zRotationChanged _ pS..(int)
 
     ___  -   parent_None):
-        super(HelloGLWidget, self). - (parent)
+        s__(HelloGLWidget, self). - (parent)
 
         object _ 0
         xRot _ 0

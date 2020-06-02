@@ -66,7 +66,7 @@ ____
 
 c_ TextEdit ?MW..
     ___  -   fileName_None, parent_None):
-        super(TextEdit, self). - (parent)
+        s__(TextEdit, self). - (parent)
 
         setWindowIcon(?I..(':/images/logo.png'))
         setToolButtonStyle(__.ToolButtonFollowStyle)

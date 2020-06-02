@@ -53,7 +53,7 @@ ______ classwizard_rc
 
 c_ ClassWizard(QWizard):
     ___  -   parent_None):
-        super(ClassWizard, self). - (parent)
+        s__(ClassWizard, self). - (parent)
 
         addPage(IntroPage())
         addPage(ClassInfoPage())
@@ -187,12 +187,12 @@ c_ ClassWizard(QWizard):
 
         implementationFile.w..(block)
 
-        super(ClassWizard, self).accept()
+        s__(ClassWizard, self).accept()
 
 
 c_ IntroPage(QWizardPage):
     ___  -   parent_None):
-        super(IntroPage, self). - (parent)
+        s__(IntroPage, self). - (parent)
 
         setTitle("Introduction")
         sP..(QWizard.WatermarkPixmap,
@@ -212,7 +212,7 @@ c_ IntroPage(QWizardPage):
 
 c_ ClassInfoPage(QWizardPage):
     ___  -   parent_None):
-        super(ClassInfoPage, self). - (parent)
+        s__(ClassInfoPage, self). - (parent)
 
         setTitle("Class Information")
         setSubTitle("Specify basic information about the class for "
@@ -267,7 +267,7 @@ c_ ClassInfoPage(QWizardPage):
 
 c_ CodeStylePage(QWizardPage):
     ___  -   parent_None):
-        super(CodeStylePage, self). - (parent)
+        s__(CodeStylePage, self). - (parent)
 
         setTitle("Code Style Options")
         setSubTitle("Choose the formatting of the generated code.")
@@ -333,7 +333,7 @@ c_ CodeStylePage(QWizardPage):
 
 c_ OutputFilesPage(QWizardPage):
     ___  -   parent_None):
-        super(OutputFilesPage, self). - (parent)
+        s__(OutputFilesPage, self). - (parent)
 
         setTitle("Output Files")
         setSubTitle("Specify where you want the wizard to put the "
@@ -374,7 +374,7 @@ c_ OutputFilesPage(QWizardPage):
 
 c_ ConclusionPage(QWizardPage):
     ___  -   parent_None):
-        super(ConclusionPage, self). - (parent)
+        s__(ConclusionPage, self). - (parent)
 
         setTitle("Conclusion")
         sP..(QWizard.WatermarkPixmap,

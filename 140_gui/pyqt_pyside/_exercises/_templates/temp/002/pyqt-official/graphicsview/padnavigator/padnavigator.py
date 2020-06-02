@@ -61,7 +61,7 @@ ____ ui_form ______ Ui_Form
 
 c_ PadNavigator(QGraphicsView):
     ___  -   size, parent_None):
-        super(PadNavigator, self). - (parent)
+        s__(PadNavigator, self). - (parent)
 
         form _ Ui_Form()
 
@@ -257,13 +257,13 @@ c_ PadNavigator(QGraphicsView):
         stateMachine.start()
 
     ___ resizeEvent  event):
-        super(PadNavigator, self).resizeEvent(event)
+        s__(PadNavigator, self).resizeEvent(event)
         fitInView(scene().sceneRect(), __.KeepAspectRatio)
 
 
 c_ RoundRectItem(QGraphicsObject):
     ___  -   bounds, color, parent_None):
-        super(RoundRectItem, self). - (parent)
+        s__(RoundRectItem, self). - (parent)
 
         fillRect _ F..
         bounds _ QRectF(bounds)
@@ -315,7 +315,7 @@ c_ RoundRectItem(QGraphicsObject):
 
 c_ FlippablePad(RoundRectItem):
     ___  -   size, parent_None):
-        super(FlippablePad, self). - (boundsFromSize(size),
+        s__(FlippablePad, self). - (boundsFromSize(size),
                 ?C..(226, 255, 92, 64), parent)
 
         numIcons _ size.width() * size.height()
@@ -359,7 +359,7 @@ c_ FlippablePad(RoundRectItem):
 
 c_ SplashItem(QGraphicsObject):
     ___  -   parent_None):
-        super(SplashItem, self). - (parent)
+        s__(SplashItem, self). - (parent)
 
         t__ _ "Welcome to the Pad Navigator Example. You can use the " \
                 "keyboard arrows to navigate the icons, and press enter to " \

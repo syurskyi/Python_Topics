@@ -42,7 +42,7 @@ c_ CounterLabel(?W..):
 
     ___  -   parent_None):
 
-        super(CounterLabel, self). - (parent)
+        s__(CounterLabel, self). - (parent)
 
         setAutoFillBackground F..
 

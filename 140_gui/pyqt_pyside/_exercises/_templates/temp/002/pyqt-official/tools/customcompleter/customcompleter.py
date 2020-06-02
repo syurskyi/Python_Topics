@@ -52,7 +52,7 @@ ______ customcompleter_rc
 
 c_ TextEdit(?TE..):
     ___  -   parent_None):
-        super(TextEdit, self). - (parent)
+        s__(TextEdit, self). - (parent)
 
         _completer _ N..
 
@@ -97,7 +97,7 @@ c_ TextEdit(?TE..):
         __ _completer __ no. N..:
             _completer.setWidget
 
-        super(TextEdit, self).focusInEvent(e)
+        s__(TextEdit, self).focusInEvent(e)
 
     ___ keyPressEvent  e):
         __ _completer __ no. N.. and _completer.popup().isVisible
@@ -110,7 +110,7 @@ c_ TextEdit(?TE..):
         isShortcut _ ((e.modifiers() & __.ControlModifier) !_ 0 and e.key() __ __.Key_E)
         __ _completer __ N.. or no. isShortcut:
             # Do not process the shortcut when we have a completer.
-            super(TextEdit, self).keyPressEvent(e)
+            s__(TextEdit, self).keyPressEvent(e)
 
         ctrlOrShift _ e.modifiers() & (__.ControlModifier | __.ShiftModifier)
         __ _completer __ N.. or (ctrlOrShift and le.(e.t__()) __ 0):
@@ -136,7 +136,7 @@ c_ TextEdit(?TE..):
 
 c_ MainWindow ?MW..
     ___  -   parent_None):
-        super(MainWindow, self). - (parent)
+        s__(MainWindow, self). - (parent)
 
         createMenu()
 

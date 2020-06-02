@@ -58,7 +58,7 @@ c_ Dialog(QDialog):
             "button will activate the detected escape button (if any).</p>"
 
     ___  -   parent_None):
-        super(Dialog, self). - (parent)
+        s__(Dialog, self). - (parent)
 
         openFilesPath _ ''
 

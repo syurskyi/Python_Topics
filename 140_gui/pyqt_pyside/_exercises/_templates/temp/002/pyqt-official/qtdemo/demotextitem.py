@@ -51,7 +51,7 @@ c_ DemoTextItem(DemoItem):
     STATIC_TEXT, DYNAMIC_TEXT _ ra..(2)
 
     ___  -   t__, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
-        super(DemoTextItem, self). - (parent)
+        s__(DemoTextItem, self). - (parent)
 
         type _ type
         t__ _ t__
@@ -99,14 +99,14 @@ c_ DemoTextItem(DemoItem):
 
     ___ boundingRect
         __ type __ DemoTextItem.STATIC_TEXT:
-            r_ super(DemoTextItem, self).boundingRect()
+            r_ s__(DemoTextItem, self).boundingRect()
 
         # Sorry for using magic number.
         r_ QRectF(0, 0, 50, 20)
 
     ___ paint  painter, option, widget):
         __ type __ DemoTextItem.STATIC_TEXT:
-            super(DemoTextItem, self).paint(painter, option, widget)
+            s__(DemoTextItem, self).paint(painter, option, widget)
             r_
 
         painter.sP..(textColor)

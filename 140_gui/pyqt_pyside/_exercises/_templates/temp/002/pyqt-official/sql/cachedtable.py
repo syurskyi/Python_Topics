@@ -52,7 +52,7 @@ ______ connection
 
 c_ TableEditor(QDialog):
     ___  -   tableName, parent_None):
-        super(TableEditor, self). - (parent)
+        s__(TableEditor, self). - (parent)
 
         model _ ?STM..
         model.sT..(tableName)

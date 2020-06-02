@@ -63,7 +63,7 @@ c_ TickerPostEffect(object):
 
 c_ PostRotateXY(TickerPostEffect):
     ___  -   speedx, speedy, curvx, curvy):
-        super(PostRotateXY, self). - ()
+        s__(PostRotateXY, self). - ()
 
         currRotX _ 0.0
         currRotY _ 0.0
@@ -148,7 +148,7 @@ c_ TickerEffect(object):
 
 c_ EffectWhirlWind(TickerEffect):
     ___  -   letters):
-        super(EffectWhirlWind, self). - (letters)
+        s__(EffectWhirlWind, self). - (letters)
 
         moveSpeed _ 50
 
@@ -158,7 +158,7 @@ c_ EffectWhirlWind(TickerEffect):
 
 c_ EffectSnake(TickerEffect):
     ___  -   letters):
-        super(EffectSnake, self). - (letters)
+        s__(EffectSnake, self). - (letters)
 
         moveSpeed _ 40
 
@@ -168,7 +168,7 @@ c_ EffectSnake(TickerEffect):
 
 c_ EffectScan(TickerEffect):
     ___  -   letters):
-        super(EffectScan, self). - (letters)
+        s__(EffectScan, self). - (letters)
 
         ___ letter __ letters:
             letter.setGuidedPos(QPointF(100, -300))
@@ -176,7 +176,7 @@ c_ EffectScan(TickerEffect):
 
 c_ EffectRaindrops(TickerEffect):
     ___  -   letters):
-        super(EffectRaindrops, self). - (letters)
+        s__(EffectRaindrops, self). - (letters)
 
         ___ letter __ letters:
             letter.setGuidedPos(QPointF(random.randint(-100, 100),
@@ -185,7 +185,7 @@ c_ EffectRaindrops(TickerEffect):
 
 c_ EffectLine(TickerEffect):
     ___  -   letters):
-        super(EffectLine, self). - (letters)
+        s__(EffectLine, self). - (letters)
 
         ___ i, letter __ en..(letters):
             letter.setGuidedPos(QPointF(100, 500 + i * 20))
@@ -193,7 +193,7 @@ c_ EffectLine(TickerEffect):
 
 c_ ItemCircleAnimation(DemoItem):
     ___  -   parent_None):
-        super(ItemCircleAnimation, self). - (parent)
+        s__(ItemCircleAnimation, self). - (parent)
 
         letterList _   # list
         letterCount _ Colors.tickerLetterCount

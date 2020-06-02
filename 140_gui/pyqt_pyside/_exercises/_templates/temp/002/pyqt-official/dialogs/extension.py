@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
 
 c_ FindDialog(QDialog):
     ___  -   parent_None):
-        super(FindDialog, self). - (parent)
+        s__(FindDialog, self). - (parent)
 
         label _ QLabel("Find &what:")
         lineEdit _ ?LE..

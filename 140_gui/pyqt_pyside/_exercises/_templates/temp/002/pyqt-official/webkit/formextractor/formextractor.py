@@ -54,7 +54,7 @@ ____ ui_formextractor ______ Ui_Form
 
 c_ FormExtractor(?W..):
     ___  -   parent_None):
-        super(FormExtractor, self). - (parent)
+        s__(FormExtractor, self). - (parent)
 
         ui _ Ui_Form()
         ui.setupUi
@@ -97,7 +97,7 @@ c_ FormExtractor(?W..):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         createActions()
         createMenus()

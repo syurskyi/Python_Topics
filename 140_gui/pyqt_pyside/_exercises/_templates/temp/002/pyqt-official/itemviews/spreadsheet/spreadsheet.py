@@ -63,7 +63,7 @@ c_ SpreadSheet ?MW..
     currentDateFormat _ dateFormats[0]
 
     ___  -   rows, cols, parent _ N..):
-        super(SpreadSheet, self). - (parent)
+        s__(SpreadSheet, self). - (parent)
 
         toolBar _ QToolBar()
         aTB..(toolBar)

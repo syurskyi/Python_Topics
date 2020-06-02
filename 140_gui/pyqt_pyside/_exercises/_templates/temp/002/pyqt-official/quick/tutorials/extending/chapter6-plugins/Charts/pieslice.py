@@ -70,7 +70,7 @@ c_ PieSlice(QQuickPaintedItem):
         _angleSpan _ angleSpan
 
     ___  -   parent_None):
-        super(PieSlice, self). - (parent)
+        s__(PieSlice, self). - (parent)
 
         _color _ ?C..()
         _fromAngle _ 0

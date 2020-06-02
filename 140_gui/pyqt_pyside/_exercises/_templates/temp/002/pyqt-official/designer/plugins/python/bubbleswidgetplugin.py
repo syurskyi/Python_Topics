@@ -40,7 +40,7 @@ c_ BubblesPlugin(QPyDesignerCustomWidgetPlugin):
     # initialized variable.
     ___  -   parent_None):
     
-        super(BubblesPlugin, self). - (parent)
+        s__(BubblesPlugin, self). - (parent)
 
         initialized _ F..
 

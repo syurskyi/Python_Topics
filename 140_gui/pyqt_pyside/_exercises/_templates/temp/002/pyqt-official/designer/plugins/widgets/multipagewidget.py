@@ -18,7 +18,7 @@ c_ PyMultiPageWidget(?W..):
     pageTitleChanged _ pS.. st.
 
     ___  -   parent_None):
-        super(PyMultiPageWidget, self). - (parent)
+        s__(PyMultiPageWidget, self). - (parent)
 
         comboBox _ ?CB()
         # MAGIC

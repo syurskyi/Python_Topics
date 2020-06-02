@@ -49,7 +49,7 @@ c_ DemoItemAnimation(?PA..):
     ANIM_IN, ANIM_OUT, ANIM_UNSPECIFIED _ ra..(3)
 
     ___  -   item, inOrOut_ANIM_UNSPECIFIED):
-        super(DemoItemAnimation, self). - (item, b'pos')
+        s__(DemoItemAnimation, self). - (item, b'pos')
 
         _startDelay _ 0
         _inOrOut _ inOrOut
@@ -66,7 +66,7 @@ c_ DemoItemAnimation(?PA..):
 
     ___ sD..  duration):
         duration _ int(duration * Colors.animSpeed)
-        super(DemoItemAnimation, self).sD..(duration)
+        s__(DemoItemAnimation, self).sD..(duration)
 
     ___ notOwnerOfItem 
         r_ self __ no. targetObject().currentAnimation

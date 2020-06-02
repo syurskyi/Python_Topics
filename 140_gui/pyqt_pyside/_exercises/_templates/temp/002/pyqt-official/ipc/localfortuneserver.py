@@ -54,7 +54,7 @@ ____ ?.?N.. ______ QLocalServer
 
 c_ Server(QDialog):
     ___  -   parent_None):
-        super(Server, self). - (parent)
+        s__(Server, self). - (parent)
 
         statusLabel _ QLabel()
         statusLabel.setWordWrap( st.

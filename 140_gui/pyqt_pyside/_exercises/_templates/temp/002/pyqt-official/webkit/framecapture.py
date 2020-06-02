@@ -81,7 +81,7 @@ c_ FrameCapture(?O..):
     finished _ pS..()
 
     ___  -
-        super(FrameCapture, self). - ()
+        s__(FrameCapture, self). - ()
 
         _percent _ 0
         _page _ QWebPage()

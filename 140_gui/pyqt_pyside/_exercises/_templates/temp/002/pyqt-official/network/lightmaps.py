@@ -73,9 +73,9 @@ c_ Point(QPoint):
     """QPoint, that is fully qualified as a dict key"""
     ___  -   *par):
         __ par:
-            super(Point, self). - (*par)
+            s__(Point, self). - (*par)
         ____
-            super(Point, self). - ()
+            s__(Point, self). - ()
 
     ___ __hash__ 
         r_ x() * 17 ^ y()
@@ -113,7 +113,7 @@ c_ SlippyMap(?O..):
     updated _ pS..(QRect)
 
     ___  -   parent_None):
-        super(SlippyMap, self). - (parent)
+        s__(SlippyMap, self). - (parent)
 
         _offset _ QPoint()
         _tilesRect _ QRect()
@@ -233,7 +233,7 @@ c_ SlippyMap(?O..):
 
 c_ LightMaps(?W..):
     ___  -   parent _ N..):
-        super(LightMaps, self). - (parent)
+        s__(LightMaps, self). - (parent)
 
         pressed _ F..
         snapped _ F..
@@ -429,7 +429,7 @@ c_ LightMaps(?W..):
 
 c_ MapZoom ?MW..
     ___  -
-        super(MapZoom, self). - (N..)
+        s__(MapZoom, self). - (N..)
 
         map_ _ LightMaps
         sCW..(map_)

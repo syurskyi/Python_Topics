@@ -55,7 +55,7 @@ c_ GuideCircle(Guide):
     CCW _ -1
 
     ___  -   rect, startAngle_0.0, span_360.0, dir_CCW, follows_None):
-        super(GuideCircle, self). - (follows)
+        s__(GuideCircle, self). - (follows)
 
         radiusX _ rect.width() / 2.0
         radiusY _ rect.height() / 2.0

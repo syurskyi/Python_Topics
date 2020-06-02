@@ -63,7 +63,7 @@ c_ Server(QDialog):
         "Computers are not intelligent. They only think they are.")
 
     ___  -   parent_None):
-        super(Server, self). - (parent)
+        s__(Server, self). - (parent)
 
         tcpServer _ N..
         networkSession _ N..

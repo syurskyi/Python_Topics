@@ -48,7 +48,7 @@ ____ ui_stylesheeteditor ______ Ui_StyleSheetEditor
 
 c_ StyleSheetEditor(QDialog):
     ___  -   parent_None):
-        super(StyleSheetEditor, self). - (parent)
+        s__(StyleSheetEditor, self). - (parent)
 
         ui _ Ui_StyleSheetEditor()
         ui.setupUi

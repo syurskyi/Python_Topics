@@ -69,7 +69,7 @@ c_ Dialog(QDialog):
     """
 
     ___  -   parent _ N..):
-        super(Dialog, self). - (parent)
+        s__(Dialog, self). - (parent)
 
         sharedMemory _ QSharedMemory('QSharedMemoryExample')
 

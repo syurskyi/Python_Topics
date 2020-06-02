@@ -53,7 +53,7 @@ ______ jquery_rc
 
 c_ MainWindow ?MW..
     ___  -   url):
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         progress _ 0
 

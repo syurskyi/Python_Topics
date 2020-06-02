@@ -58,7 +58,7 @@ c_ GLWidget(QOpenGLWidget):
     zRotationChanged _ pS..(int)
 
     ___  -   parent_None):
-        super(GLWidget, self). - (parent)
+        s__(GLWidget, self). - (parent)
 
         gear1 _ 0
         gear2 _ 0
@@ -280,7 +280,7 @@ c_ GLWidget(QOpenGLWidget):
 
 c_ MainWindow ?MW..
     ___  -
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         centralWidget _ ?W..
         sCW..(centralWidget)

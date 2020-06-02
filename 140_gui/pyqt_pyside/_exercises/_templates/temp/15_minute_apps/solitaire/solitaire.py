@@ -37,7 +37,7 @@ class Signals(?O..):
 class Card(QGraphicsPixmapItem):
 
     def  - (self, value, suit, $ $$
-        super(Card, self). - ($ $$)
+        s__(Card, self). - ($ $$)
 
         signals = Signals()
 
@@ -98,7 +98,7 @@ class Card(QGraphicsPixmapItem):
 
         e.accept()
 
-        super(Card, self).mouseReleaseEvent(e)
+        s__(Card, self).mouseReleaseEvent(e)
 
     def mouseReleaseEvent(self, e):
         stack.deactivate()
@@ -120,20 +120,20 @@ class Card(QGraphicsPixmapItem):
         # Refresh this card's stack, pulling it back if it was dropped.
         stack.update()
 
-        super(Card, self).mouseReleaseEvent(e)
+        s__(Card, self).mouseReleaseEvent(e)
 
     def mouseDoubleClickEvent(self, e):
         if stack.is_free_card
             signals.doubleclicked.e..()
             e.accept()
 
-        super(Card, self).mouseDoubleClickEvent(e)
+        s__(Card, self).mouseDoubleClickEvent(e)
 
 
 class StackBase(QGraphicsRectItem):
 
     def  - (self, $ $$
-        super(StackBase, self). - ($ $$)
+        s__(StackBase, self). - ($ $$)
 
         setRect(QRectF(CARD_RECT))
         setZValue(-1)
@@ -201,7 +201,7 @@ class DeckStack(StackBase):
     restack_counter = 0
 
     def reset 
-        super(DeckStack, self).reset()
+        s__(DeckStack, self).reset()
         restack_counter = 0
         set_color(Qt.green)
 
@@ -264,7 +264,7 @@ class DealStack(StackBase):
         sB..(brush)
 
     def reset 
-        super(DealStack, self).reset()
+        s__(DealStack, self).reset()
         spread_from = 0  # Card index to start spreading cards out.
 
     def is_valid_drop(self, card):
@@ -323,7 +323,7 @@ class WorkStack(StackBase):
         ____:
             card.setParentItem
 
-        super(WorkStack, self).add_card(card, update=update)
+        s__(WorkStack, self).add_card(card, update=update)
 
     def remove_card(self, card):
         index = cards.index(card)
@@ -373,7 +373,7 @@ class DropStack(StackBase):
         sP..(pen)
 
     def reset 
-        super(DropStack, self).reset()
+        s__(DropStack, self).reset()
         suit = None
         value = 0
 
@@ -385,7 +385,7 @@ class DropStack(StackBase):
         return F..
 
     def add_card(self, card, update= st.:
-        super(DropStack, self).add_card(card, update=update)
+        s__(DropStack, self).add_card(card, update=update)
         suit = card.suit
         value = cards[-1].value
 
@@ -393,7 +393,7 @@ class DropStack(StackBase):
             signals.complete.e..()
 
     def remove_card(self, card):
-        super(DropStack, self).remove_card(card)
+        s__(DropStack, self).remove_card(card)
         value = cards[-1].value if cards ____ 0
 
     @property
@@ -404,7 +404,7 @@ class DropStack(StackBase):
 class DealTrigger(QGraphicsRectItem):
 
     def  - (self, $ $$
-        super(DealTrigger, self). - ($ $$)
+        s__(DealTrigger, self). - ($ $$)
         setRect(QRectF(DEAL_RECT))
         setZValue(1000)
 
@@ -419,7 +419,7 @@ class DealTrigger(QGraphicsRectItem):
 
 class AnimationCover(QGraphicsRectItem):
     def  - (self, $ $$
-        super(AnimationCover, self). - ($ $$)
+        s__(AnimationCover, self). - ($ $$)
         setRect(QRectF(0, 0, *WINDOW_SIZE))
         setZValue(5000)
         pen = ?P..(Qt.NoPen)
@@ -432,7 +432,7 @@ class AnimationCover(QGraphicsRectItem):
 class MainWindow(?MW..):
 
     def  - (self, $ $$
-        super(MainWindow, self). - ($ $$)
+        s__(MainWindow, self). - ($ $$)
 
         view = QGraphicsView()
         scene = QGraphicsScene()

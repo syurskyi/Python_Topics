@@ -49,7 +49,7 @@ ____ ?.?N.. ______ QUdpSocket
 
 c_ Receiver(QDialog):
     ___  -   parent_None):
-        super(Receiver, self). - (parent)
+        s__(Receiver, self). - (parent)
 
         statusLabel _ QLabel("Listening for broadcasted messages")
         quitButton _ ?PB..("&Quit")

@@ -56,7 +56,7 @@ c_ MainWindow ?MW..
     windowList _   # list
 
     ___  -   fileName_None):
-        super(MainWindow, self). - ()
+        s__(MainWindow, self). - ()
 
         init()
         __ fileName:

@@ -78,7 +78,7 @@ c_ SortedDict(dict):
 
 c_ AddressBook(?W..):
     ___  -   parent_None):
-        super(AddressBook, self). - (parent)
+        s__(AddressBook, self). - (parent)
 
         contacts _ SortedDict()
         oldName _ ''
