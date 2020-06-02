@@ -16,11 +16,11 @@ c_ MainWindow ?.?W..
         # viewfinder
         cvf _ qtmmw.QCameraViewfinder()
         camera.setViewfinder(cvf)
-        layout().aW..(cvf)
+        la__ .aW..(cvf)
 
         # Form
         form _ qtw.?FL..
-        layout().aL..(form)
+        la__ .aL..(form)
 
         # zoom
         zoomslider _ qtw.QSlider(

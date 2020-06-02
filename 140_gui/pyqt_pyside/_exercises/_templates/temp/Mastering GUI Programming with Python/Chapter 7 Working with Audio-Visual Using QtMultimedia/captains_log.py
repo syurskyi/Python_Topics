@@ -19,9 +19,9 @@ c_ MainWindow(qtw.QMainWindow):
         base_widget _ qtw.?W..
         base_widget.sL..(qtw.?HBL..
         notebook _ qtw.?TW..()
-        base_widget.layout().aW..(notebook)
+        base_widget.la__ .aW..(notebook)
         file_list _ ?.?LW..
-        base_widget.layout().aW..(file_list)
+        base_widget.la__ .aW..(file_list)
 
         sCW..(base_widget)
 

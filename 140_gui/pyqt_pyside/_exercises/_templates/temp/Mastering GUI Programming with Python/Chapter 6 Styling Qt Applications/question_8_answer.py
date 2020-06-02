@@ -27,14 +27,14 @@ c_ MainWindow(qtw.QMainWindow):
         container.sL.. ?.?VBL..
 
         ___ widget __ widgets:
-            container.layout().aW..(widget)
+            container.la__ .aW..(widget)
 
         # Style switching combobox
         styles _ qtw.QStyleFactory.keys()
         style_combo _ ?.?CB..
         style_combo.aI..(styles)
         style_combo.currentTextChanged.c..(set_style)
-        container.layout().aW..(style_combo)
+        container.la__ .aW..(style_combo)
 
         # End main UI code
         s..

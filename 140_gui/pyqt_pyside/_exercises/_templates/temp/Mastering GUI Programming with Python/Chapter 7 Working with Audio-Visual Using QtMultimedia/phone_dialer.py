@@ -34,7 +34,7 @@ c_ MainWindow(qtw.QMainWindow):
             button _ SoundButton(f':/dtmf/{symbol}.wav', symbol)
             row _ i // 3
             column _ i % 3
-            dialpad.layout().aW..(button, row, column)
+            dialpad.la__ .aW..(button, row, column)
 
         # End main UI code
         s..

@@ -84,35 +84,35 @@ c_ MemeEditForm ?.?W..
 
         # Image
         image_source _ ImageFileButton(changed_self.on_change)
-        layout().aR..('Image file', image_source)
+        la__ .aR..('Image file', image_source)
 
         # Text entries
         top_text _ qtw.QPlainTextEdit(textChanged_self.on_change)
         bottom_text _ qtw.QPlainTextEdit(textChanged_self.on_change)
-        layout().aR..("Top Text", top_text)
-        layout().aR..("Bottom Text", bottom_text)
+        la__ .aR..("Top Text", top_text)
+        la__ .aR..("Bottom Text", bottom_text)
 
         # Text color and font
         text_color _ ColorButton('white', changed_self.on_change)
-        layout().aR..("Text Color", text_color)
+        la__ .aR..("Text Color", text_color)
         text_font _ FontButton('Impact', 32, changed_self.on_change)
-        layout().aR..("Text Font", text_font)
+        la__ .aR..("Text Font", text_font)
 
         # Background Boxes
         text_bg_color _ ColorButton('black', changed_self.on_change)
-        layout().aR..('Text Background', text_bg_color)
+        la__ .aR..('Text Background', text_bg_color)
         top_bg_height _ qtw.SB..(
             minimum_0, maximum_32,
             valueChanged_self.on_change, suffix_' line(s)')
-        layout().aR..('Top BG height', top_bg_height)
+        la__ .aR..('Top BG height', top_bg_height)
         bottom_bg_height _ qtw.SB..(
             minimum_0, maximum_32,
             valueChanged_self.on_change, suffix_' line(s)')
-        layout().aR..('Bottom BG height', bottom_bg_height)
+        la__ .aR..('Bottom BG height', bottom_bg_height)
         bg_padding _ qtw.SB..(
             minimum_0, maximum_100, value_10,
             valueChanged_self.on_change, suffix_' px')
-        layout().aR..('BG Padding', bg_padding)
+        la__ .aR..('BG Padding', bg_padding)
 
     ___ on_change 
         data _ {
@@ -154,11 +154,11 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Image Previewer
         image_display _ ?.?L..(pixmap_qtg.QPixmap(image))
-        mainwidget.layout().aW..(image_display)
+        mainwidget.la__ .aW..(image_display)
 
         # The editing form
         form _ MemeEditForm()
-        mainwidget.layout().aW..(form)
+        mainwidget.la__ .aW..(form)
         form.changed.c..(build_image)
 
         # Create file saving

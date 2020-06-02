@@ -12,14 +12,14 @@ c_ HashForm ?.?W..
         sL..(qtw.QFormLayout())
         source_path _ qtw.?PB..(
             'Click to select…', c___self.on_source_click)
-        layout().aR..('Source Path', source_path)
+        la__ .aR..('Source Path', source_path)
         destination_file _ qtw.?PB..(
             'Click to select…', c___self.on_dest_click)
-        layout().aR..('Destination File', destination_file)
+        la__ .aR..('Destination File', destination_file)
         threads _ qtw.SB..(minimum_1, maximum_7, value_2)
-        layout().aR..('Threads', threads)
+        la__ .aR..('Threads', threads)
         submit _ qtw.?PB..('Go', c___self.on_submit)
-        layout().aR..(submit)
+        la__ .aR..(submit)
 
     ___ on_source_click
         dirname _ qtw.?FD...getExistingDirectory()

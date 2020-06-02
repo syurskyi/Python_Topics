@@ -82,8 +82,8 @@ c_ MainWindow(qtw.QMainWindow):
         humview _ ?.?LCDN..()
         tempview.setSegmentStyle(?.?LCDN...Flat)
         humview.setSegmentStyle(?.?LCDN...Flat)
-        widget.layout().aR..('Temperature', tempview)
-        widget.layout().aR..('Humidity', humview)
+        widget.la__ .aR..('Temperature', tempview)
+        widget.la__ .aR..('Humidity', humview)
 
         # Create sensor in its own thread
         sensor _ SensorInterface(4, SENSOR_MODEL,  st.
@@ -103,7 +103,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Add a Qt button for reading the values
         readbutton _ qtw.?PB..('Read Now')
-        widget.layout().aR..(readbutton)
+        widget.la__ .aR..(readbutton)
         readbutton.c__.c..(sensor.take_reading)
 
         # Add hardware button

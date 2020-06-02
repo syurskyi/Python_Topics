@@ -75,7 +75,7 @@ c_ MainWindow(qtw.QMainWindow):
         cx_form.sL..(qtw.QFormLayout())
 
         heading _ ?.?L..("Fight Fighter!")
-        cx_form.layout().aR..(heading)
+        cx_form.la__ .aR..(heading)
 
         inputs _ {
             'Server': qtw.?LE..,
@@ -94,7 +94,7 @@ c_ MainWindow(qtw.QMainWindow):
         inputs['Team'].aI..(teams)
 
         ___ label, widget __ inputs.items
-            cx_form.layout().aR..(label, widget)
+            cx_form.la__ .aR..(label, widget)
         #self.submit = qtw.QPushButton(
         submit _ ColorButton(
             'Connect',
@@ -110,7 +110,7 @@ c_ MainWindow(qtw.QMainWindow):
             'Cancel',
             c___self.close
         )
-        cx_form.layout().aR..(submit, cancel)
+        cx_form.la__ .aR..(submit, cancel)
 
         #self.show()
         #return
@@ -131,7 +131,7 @@ c_ MainWindow(qtw.QMainWindow):
         label_font.setStyle(qtg.QFont.StyleItalic)
 
         ___ inp __ inputs.values
-            cx_form.layout().labelForField(inp).setFont(label_font)
+            cx_form.la__ .labelForField(inp).setFont(label_font)
 
         # Locating Alternative fonts
 

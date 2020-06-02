@@ -40,9 +40,9 @@ c_ View ?.?W..
             'Save',
             c___self.submit
         )
-        layout().aW..(filename)
-        layout().aW..(filecontent)
-        layout().aW..(savebutton)
+        la__ .aW..(filename)
+        la__ .aW..(filecontent)
+        la__ .aW..(savebutton)
 
     ___ submit 
         filename _ filename.t__()

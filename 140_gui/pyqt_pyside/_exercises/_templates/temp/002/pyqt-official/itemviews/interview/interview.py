@@ -171,7 +171,7 @@ ___ main(args):
     # Disable the focus rect to get minimal repaints when scrolling on Mac.
     tree.setAttribute(__.WA_MacShowFocusRect, F..)
     page.aW..(tree)
-    li.. _ QListView()
+    li.. _ ?LV..
     li...sM..(data)
     li...setSelectionModel(selections)
     li...setViewMode(QListView.IconMode)

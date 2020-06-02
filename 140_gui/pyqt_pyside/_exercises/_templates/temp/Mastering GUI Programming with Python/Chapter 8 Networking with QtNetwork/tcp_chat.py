@@ -76,11 +76,11 @@ c_ ChatWindow ?.?W..
         s_. - ()
         sL..(qtw.QGridLayout())
         message_view _ ?.?TE..readOnly_ st.
-        layout().aW..(message_view, 1, 1, 1, 2)
+        la__ .aW..(message_view, 1, 1, 1, 2)
         message_entry _ ?.?LE..(returnPressed_self.send)
-        layout().aW..(message_entry, 2, 1)
+        la__ .aW..(message_entry, 2, 1)
         send_btn _ qtw.?PB..('Send', c___self.send)
-        layout().aW..(send_btn, 2, 2)
+        la__ .aW..(send_btn, 2, 2)
 
     ___ write_message  username, message):
         message_view.ap..(f'<b>{username}: </b> {message}<br>')

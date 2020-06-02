@@ -397,7 +397,7 @@ c_ MainWindow ?MW..
         frame _ QFrame()
         frameLayout _ QHBoxLayout(frame)
 
-        piecesList _ QListView()
+        piecesList _ ?LV..
         piecesList.setDragEnabled( st.
         piecesList.setViewMode(QListView.IconMode)
         piecesList.setIconSize(?S..(60,60))

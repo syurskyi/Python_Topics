@@ -54,9 +54,9 @@ c_ SearchForm ?.?W..
             placeholderText_'Search Term',
             textChanged_self.tC..,
             returnPressed_self.rP__)
-        layout().aW..(search_term_inp)
+        la__ .aW..(search_term_inp)
         results _ ?.?LW..
-        layout().aW..(results)
+        la__ .aW..(results)
         rP__.c..(results.clear)
 
     ___ addResult  result):

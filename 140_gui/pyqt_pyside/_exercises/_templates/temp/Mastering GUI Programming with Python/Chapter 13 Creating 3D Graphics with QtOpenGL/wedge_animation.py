@@ -14,11 +14,11 @@ c_ MainWindow(qtw.QMainWindow):
         sCW..(main)
         main.sL.. ?.?VBL..
         oglw _ GlWidget()
-        main.layout().aW..(oglw)
+        main.la__ .aW..(oglw)
 
         # Animation controls
         btn_layout _ ?.?HBL..
-        main.layout().aL..(btn_layout)
+        main.la__ .aL..(btn_layout)
         ___ direction __ ('none', 'left', 'right', 'up', 'down'):
             button _ qtw.?PB..(
                 direction,
@@ -28,7 +28,7 @@ c_ MainWindow(qtw.QMainWindow):
                 )
             btn_layout.aW..(button)
         zoom_layout _ ?.?HBL..
-        main.layout().aL..(zoom_layout)
+        main.la__ .aL..(zoom_layout)
         zoom_in _ qtw.?PB..('zoom in', c___oglw.zoom_in)
         zoom_layout.aW..(zoom_in)
         zoom_out _ qtw.?PB..('zoom out', c___oglw.zoom_out)

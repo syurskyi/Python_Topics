@@ -329,7 +329,7 @@ c_ Viewer ?MW..
         grid.setSpacing(8)
         grid.setContentsMargins(4, 4, 4, 4)
 
-        layout().setSizeConstraint(QLayout.SetFixedSize)
+        la__ .setSizeConstraint(QLayout.SetFixedSize)
 
         labelSize _ ?S..(256, 256)
 

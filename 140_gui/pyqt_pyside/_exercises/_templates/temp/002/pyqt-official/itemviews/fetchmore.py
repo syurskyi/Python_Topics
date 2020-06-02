@@ -116,7 +116,7 @@ c_ Window(?W..):
         lineEdit _ ?LE..
         label.setBuddy(lineEdit)
 
-        view _ QListView()
+        view _ ?LV..
         view.sM..(model)
 
         logViewer _ QTextBrowser()

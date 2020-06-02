@@ -52,10 +52,10 @@ c_ SoundWidget ?.?W..
 
         # Playback
         label _ ?.?L..("No file loaded")
-        layout().aW..(label, 0, 0, 1, 2)
+        la__ .aW..(label, 0, 0, 1, 2)
 
         play_button _ PlayButton()
-        layout().aW..(play_button, 3, 0, 1, 2)
+        la__ .aW..(play_button, 3, 0, 1, 2)
 
         player _ qtmm.QMediaPlayer()
         play_button.c__.c..(on_playbutton)
@@ -64,12 +64,12 @@ c_ SoundWidget ?.?W..
         # Loading files
         file_button _ qtw.?PB..(
             'Load File', c___self.get_file)
-        layout().aW..(file_button, 4, 0)
+        la__ .aW..(file_button, 4, 0)
 
         # Slider
         position _ qtw.QSlider(
             minimum_0, orientation_qtc.__.H..)
-        layout().aW..(position, 1, 0, 1, 2)
+        la__ .aW..(position, 1, 0, 1, 2)
 
         player.positionChanged.c..(position.setSliderPosition)
         player.durationChanged.c..(position.setMaximum)
@@ -81,7 +81,7 @@ c_ SoundWidget ?.?W..
             'Loop',
             stateChanged_self.on_loop_cb
         )
-        layout().aW..(loop_cb, 2, 0)
+        la__ .aW..(loop_cb, 2, 0)
 
         # Volume
         volume _ qtw.QSlider(
@@ -91,7 +91,7 @@ c_ SoundWidget ?.?W..
             orientation_qtc.__.H..,
             sliderMoved_self.player.setVolume
         )
-        layout().aW..(volume, 2, 1)
+        la__ .aW..(volume, 2, 1)
 
 
         # Recording
@@ -114,7 +114,7 @@ c_ SoundWidget ?.?W..
         record_button _ RecordButton()
         recorder.stateChanged.c..(
             record_button.on_state_changed)
-        layout().aW..(record_button, 4, 1)
+        la__ .aW..(record_button, 4, 1)
 
         record_button.c__.c..(on_recordbutton)
 
@@ -183,7 +183,7 @@ c_ MainWindow(qtw.QMainWindow):
         ___ c __ ra..(columns):
             ___ r __ ra..(rows):
                 sw _ SoundWidget()
-                soundboard.layout().aW..(sw, c, r)
+                soundboard.la__ .aW..(sw, c, r)
 
         # Code ends here
         s..

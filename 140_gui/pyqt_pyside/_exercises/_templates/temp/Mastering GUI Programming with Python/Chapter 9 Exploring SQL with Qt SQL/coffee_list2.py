@@ -31,11 +31,11 @@ c_ CoffeeForm ?.?W..
 
         # Coffee Fields
         coffee_brand _ qtw.?LE..
-        layout().aR..('Brand: ', coffee_brand)
+        la__ .aR..('Brand: ', coffee_brand)
         coffee_name _ qtw.?LE..
-        layout().aR..('Name: ', coffee_name)
+        la__ .aR..('Name: ', coffee_name)
         roast _ ?.?CB..
-        layout().aR..('Roast: ', roast)
+        la__ .aR..('Roast: ', roast)
 
         # Map the coffee fields
         coffees_model _ coffees_model
@@ -64,7 +64,7 @@ c_ CoffeeForm ?.?W..
 
         # Reviews
         reviews _ qtw.?TV..
-        layout().aR..(reviews)
+        la__ .aR..(reviews)
         reviews.sM..(reviews_model)
         reviews.hideColumn(0)
         reviews.hideColumn(1)
@@ -83,7 +83,7 @@ c_ CoffeeForm ?.?W..
             'New Review', c___self.add_review)
         delete_review _ qtw.?PB..(
             'Delete Review', c___self.delete_review)
-        layout().aR..(new_review, delete_review)
+        la__ .aR..(new_review, delete_review)
 
     ___ show_coffee  coffee_index):
         mapper.setCurrentIndex(coffee_index.row())

@@ -13,16 +13,16 @@ c_ CoffeeForm ?.?W..
         sL..(qtw.QFormLayout())
 
         coffee_brand _ qtw.?LE..
-        layout().aR..('Brand: ', coffee_brand)
+        la__ .aR..('Brand: ', coffee_brand)
         coffee_name _ qtw.?LE..
-        layout().aR..('Name: ', coffee_name)
+        la__ .aR..('Name: ', coffee_name)
         roast _ ?.?CB..
         roast.aI..(roasts)
-        layout().aR..('Roast: ', roast)
+        la__ .aR..('Roast: ', roast)
         reviews _ qtw.QTableWidget(columnCount_3)
         reviews.horizontalHeader().setSectionResizeMode(
             2, qtw.QHeaderView.Stretch)
-        layout().aR..(reviews)
+        la__ .aR..(reviews)
 
     ___ show_coffee  coffee_data, reviews):
         coffee_brand.sT..(coffee_data.g..('coffee_brand'))

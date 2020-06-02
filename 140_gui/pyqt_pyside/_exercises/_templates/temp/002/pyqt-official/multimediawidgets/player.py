@@ -406,7 +406,7 @@ c_ Player(?W..):
         playlistModel _ PlaylistModel()
         playlistModel.setPlaylist(playlist)
 
-        playlistView _ QListView()
+        playlistView _ ?LV..
         playlistView.sM..(playlistModel)
         playlistView.setCurrentIndex(
                 playlistModel.index(playlist.currentIndex(), 0))

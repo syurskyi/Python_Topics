@@ -80,7 +80,7 @@ c_ MainWindow(qtw.QMainWindow):
         submit _ qtw.?PB..('Submit Post', c___self.submit)
         response _ ?.?TE..readOnly_ st.
         ___ w __ (url, table, fname, submit, response):
-            widget.layout().aW..(w)
+            widget.la__ .aW..(w)
 
         # Create the poster object
         poster _ Poster()

@@ -182,7 +182,7 @@ c_ EmbeddedDialog(QDialog):
             setLayoutDirection(__.RightToLeft)
 
     ___ spacingChanged  spacing):
-        layout().setSpacing(spacing)
+        la__ .setSpacing(spacing)
         adjustSize()
 
     ___ fontChanged  font):

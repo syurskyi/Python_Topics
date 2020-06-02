@@ -11,18 +11,18 @@ c_ SettingsDialog(qtw.QDialog):
         s_. - (parent, modal_ st.
         sL..(qtw.QFormLayout())
         settings _ settings
-        layout().aR..(
+        la__ .aR..(
             ?.?L..('<h1>Application Settings</h1>'),
         )
         show_warnings_cb _ ?.?CB..(
             #checked=settings.get('show_warnings')
             checked_settings.value('show_warnings', type_bool)
         )
-        layout().aR..("Show Warnings", show_warnings_cb)
+        la__ .aR..("Show Warnings", show_warnings_cb)
 
         accept_btn _ qtw.?PB..('Ok', c___self.accept)
         cancel_btn _ qtw.?PB..('Cancel', c___self.reject)
-        layout().aR..(accept_btn, cancel_btn)
+        la__ .aR..(accept_btn, cancel_btn)
 
     ___ accept
         #self.settings['show_warnings'] = self.show_warnings_cb.isChecked()
@@ -175,10 +175,10 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             "Search and Replace",
             c___self.search_and_replace
             )
-        replace_widget.layout().aW..(search_text_inp)
-        replace_widget.layout().aW..(replace_text_inp)
-        replace_widget.layout().aW..(search_and_replace_btn)
-        replace_widget.layout().addStretch()
+        replace_widget.la__ .aW..(search_text_inp)
+        replace_widget.la__ .aW..(replace_text_inp)
+        replace_widget.la__ .aW..(search_and_replace_btn)
+        replace_widget.la__ .addStretch()
 
         ############################
         # Messageboxes and Dialogs #

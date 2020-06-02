@@ -27,9 +27,9 @@ c_ MainWindow(qtw.QMainWindow):
             c___self.save
         )
 
-        form.layout().aW..(filename)
-        form.layout().aW..(filecontent)
-        form.layout().aW..(savebutton)
+        form.la__ .aW..(filename)
+        form.la__ .aW..(filecontent)
+        form.la__ .aW..(savebutton)
 
         # End main UI code
         s..

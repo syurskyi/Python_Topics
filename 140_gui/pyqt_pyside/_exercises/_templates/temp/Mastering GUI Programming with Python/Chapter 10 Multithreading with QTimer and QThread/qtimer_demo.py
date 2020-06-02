@@ -11,7 +11,7 @@ c_ AutoCloseDialog(qtw.QDialog):
         setModal F..
         sWT..(title)
         sL.. ?.?VBL..
-        layout().aW..(?.?L..(message))
+        la__ .aW..(?.?L..(message))
         timeout _ timeout
 
     ___ show

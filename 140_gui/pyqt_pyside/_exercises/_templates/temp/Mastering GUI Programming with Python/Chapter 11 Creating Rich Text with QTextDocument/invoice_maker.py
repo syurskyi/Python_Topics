@@ -19,7 +19,7 @@ c_ InvoiceForm ?.?W..
         inputs['Days until Due'] _ qtw.SB..(
             minimum_0, maximum_60, value_30)
         ___ label, widget __ inputs.items
-            layout().aR..(label, widget)
+            la__ .aR..(label, widget)
 
         line_items _ qtw.QTableWidget(
             rowCount_10, columnCount_3)
@@ -27,14 +27,14 @@ c_ InvoiceForm ?.?W..
             ['Job', 'Rate', 'Hours'])
         line_items.horizontalHeader().setSectionResizeMode(
             qtw.QHeaderView.Stretch)
-        layout().aR..(line_items)
+        la__ .aR..(line_items)
         ___ row __ ra..(line_items.rowCount()):
             ___ col __ ra..(line_items.columnCount()):
                 __ col > 0:
                     w _ qtw.SB..(minimum_0, maximum_300)
                     line_items.setCellWidget(row, col, w)
         submit _ qtw.?PB..('Create Invoice', c___self.on_submit)
-        layout().aR..(submit)
+        la__ .aR..(submit)
 
     ___ on_submit
         data _ {
@@ -214,10 +214,10 @@ c_ MainWindow(qtw.QMainWindow):
         sCW..(main)
 
         form _ InvoiceForm()
-        main.layout().aW..(form)
+        main.la__ .aW..(form)
 
         preview _ InvoiceView()
-        main.layout().aW..(preview)
+        main.la__ .aW..(preview)
 
         form.submitted.c..(preview.build_invoice)
 
