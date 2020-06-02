@@ -548,7 +548,7 @@ c_ MainWindow ?MW..
         font _ item.font()
         color _ item.defaultTextColor()
         fontCombo.setCurrentFont(font)
-        fontSizeCombo.setEditText(str(font.pointSize()))
+        fontSizeCombo.setEditText(st.(font.pointSize()))
         boldAction.sC__(font.weight() __ ?F...Bold)
         italicAction.sC__(font.italic())
         underlineAction.sC__(font.underline())
@@ -674,7 +674,7 @@ c_ MainWindow ?MW..
         fontSizeCombo _ ?CB()
         fontSizeCombo.setEditable( st.
         ___ i __ ra..(8, 30, 2):
-            fontSizeCombo.aI..(str(i))
+            fontSizeCombo.aI..(st.(i))
         validator _ QIntValidator(2, 64, self)
         fontSizeCombo.sV..(validator)
         fontSizeCombo.currentIndexChanged.c..(fontSizeChanged)
@@ -739,7 +739,7 @@ c_ MainWindow ?MW..
         sceneScaleCombo _ ?CB()
         sceneScaleCombo.aI..(["50%", "75%", "100%", "125%", "150%"])
         sceneScaleCombo.sCI..(2)
-        sceneScaleCombo.currentIndexChanged[str].c..(sceneScaleChanged)
+        sceneScaleCombo.currentIndexChanged[st.].c..(sceneScaleChanged)
 
         pointerToolbar _ aTB..("Pointer type")
         pointerToolbar.aW..(pointerButton)

@@ -52,7 +52,7 @@ c_ DataObject(?O..):
 
     nameChanged _ pS..()
 
-    @pyqtProperty(str, notify_nameChanged)
+    @pyqtProperty(st., notify_nameChanged)
     ___ name
         r_ _name
 
@@ -64,7 +64,7 @@ c_ DataObject(?O..):
 
     colorChanged _ pS..()
 
-    @pyqtProperty(str, notify_colorChanged)
+    @pyqtProperty(st., notify_colorChanged)
     ___ color
         r_ _color
 

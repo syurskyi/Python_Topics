@@ -68,9 +68,9 @@ c_ ChatAdaptor(QDBusAbstractAdaptor):
         '  </interface>\n'
         '')
 
-    action _ pS..(str, str)
+    action _ pS..(st., st.)
 
-    message _ pS..(str, str)
+    message _ pS..(st., st.)
 
     ___  -   parent):
         super(ChatAdaptor, self). - (parent)
@@ -80,9 +80,9 @@ c_ ChatAdaptor(QDBusAbstractAdaptor):
 
 c_ ChatInterface(QDBusAbstractInterface):
 
-    action _ pS..(str, str)
+    action _ pS..(st., st.)
 
-    message _ pS..(str, str)
+    message _ pS..(st., st.)
 
     ___  -   service, pa__, connection, parent_None):
         super(ChatInterface, self). - (service, pa__, 'org.example.chat',
@@ -91,9 +91,9 @@ c_ ChatInterface(QDBusAbstractInterface):
 
 c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
 
-    action _ pS..(str, str)
+    action _ pS..(st., st.)
 
-    message _ pS..(str, str)
+    message _ pS..(st., st.)
 
     ___  -
         super(ChatMainWindow, self). - ()
@@ -129,7 +129,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
         history _ '\n'.join(m_messages)
         chatHistory.sPT..(history)
 
-    @pyqtSlot(str, str)
+    @pyqtSlot(st., st.)
     ___ messageSlot  nickname, t__):
         m_messages.ap..("<%s> %s" % (nickname, t__))
 
@@ -138,7 +138,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
 
         rebuildHistory()
 
-    @pyqtSlot(str, str)
+    @pyqtSlot(st., st.)
     ___ actionSlot  nickname, t__):
         m_messages.ap..("* %s %s" % (nickname, t__))
 

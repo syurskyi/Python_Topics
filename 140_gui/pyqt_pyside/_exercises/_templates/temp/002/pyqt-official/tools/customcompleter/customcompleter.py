@@ -180,9 +180,9 @@ c_ MainWindow ?MW..
             line _ f.readLine().trimmed()
             __ line.length() !_ 0:
                 ___
-                    line _ str(line, encoding_'ascii')
+                    line _ st.(line, encoding_'ascii')
                 _____ TypeError:
-                    line _ str(line)
+                    line _ st.(line)
 
                 words.ap..(line)
 

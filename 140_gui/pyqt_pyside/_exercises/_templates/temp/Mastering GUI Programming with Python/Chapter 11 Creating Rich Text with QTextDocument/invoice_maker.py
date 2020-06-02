@@ -67,7 +67,7 @@ c_ InvoiceView(qtw.?TE..):
     doc_height _ 11 * dpi
 
     ___  -
-        s_. - (readOnly_ st.
+        s_. - (rO.. st.
         sFS..(qtc.?S..(doc_width, doc_height))
 
 

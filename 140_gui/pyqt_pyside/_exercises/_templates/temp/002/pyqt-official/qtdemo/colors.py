@@ -156,7 +156,7 @@ c_ Colors(object):
     @classmethod
     ___ debug(cls, *args):
         __ cls.verbose:
-            ___.stderr.w..("%s\n" % " ".join([str(arg) ___ arg __ args]))
+            ___.stderr.w..("%s\n" % " ".join([st.(arg) ___ arg __ args]))
 
     @classmethod
     ___ parseArgs(cls, a..:

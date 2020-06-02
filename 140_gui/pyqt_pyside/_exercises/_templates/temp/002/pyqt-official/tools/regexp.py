@@ -153,7 +153,7 @@ c_ RegExpDialog(QDialog):
         pattern _ patternComboBox.currentText()
         t__ _ textComboBox.currentText()
 
-        escaped _ str(pattern)
+        escaped _ st.(pattern)
         escaped.replace('\\', '\\\\')
         escaped.replace('"', '\\"')
         escapedPatternLineEdit.sT..('"' + escaped + '"')
@@ -173,8 +173,8 @@ c_ RegExpDialog(QDialog):
             palette.sC..(?P...Text, __.red)
         patternComboBox.sP..(palette)
 
-        indexEdit.sT..(str(rx.indexIn(t__)))
-        matchedLengthEdit.sT..(str(rx.matchedLength()))
+        indexEdit.sT..(st.(rx.indexIn(t__)))
+        matchedLengthEdit.sT..(st.(rx.matchedLength()))
 
         ___ i __ ra..(MaxCaptures):
             captureLabels[i].sE..(i <_ rx.captureCount())

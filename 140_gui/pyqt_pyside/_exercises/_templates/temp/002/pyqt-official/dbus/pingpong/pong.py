@@ -50,7 +50,7 @@ ____ ?.QtDBus ______ QDBusConnection
 
 c_ Pong(?O..):
 
-    @pyqtSlot(str, result_str)
+    @pyqtSlot(st., result_str)
     ___ ping  arg):
         QMetaObject.invokeMethod( ?CA...instance(), 'quit')
 

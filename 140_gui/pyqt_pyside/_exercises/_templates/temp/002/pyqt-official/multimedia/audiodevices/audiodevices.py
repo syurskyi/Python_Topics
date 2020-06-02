@@ -96,10 +96,10 @@ c_ AudioTest(AudioDevicesBase):
             ____
                 nearest _ deviceInfo.nearestFormat(settings)
                 testResult.sT..("Failed")
-                nearestSampleRate.sT..(str(nearest.sampleRate()))
-                nearestChannel.sT..(str(nearest.channelCount()))
+                nearestSampleRate.sT..(st.(nearest.sampleRate()))
+                nearestChannel.sT..(st.(nearest.channelCount()))
                 nearestCodec.sT..(nearest.codec())
-                nearestSampleSize.sT..(str(nearest.sampleSize()))
+                nearestSampleSize.sT..(st.(nearest.sampleSize()))
                 nearestSampleType.sT..(
                         sampleTypeToString(nearest.sampleType()))
                 nearestEndian.sT..(
@@ -151,19 +151,19 @@ c_ AudioTest(AudioDevicesBase):
 
         sampleRateBox.c..
         sampleRatez _ deviceInfo.supportedSampleRates()
-        sampleRateBox.aI..([str(sr) ___ sr __ sampleRatez])
+        sampleRateBox.aI..([st.(sr) ___ sr __ sampleRatez])
         __ le.(sampleRatez) !_ 0:
             settings.setSampleRate(sampleRatez[0])
 
         channelsBox.c..
         chz _ deviceInfo.supportedChannelCounts()
-        channelsBox.aI..([str(ch) ___ ch __ chz])
+        channelsBox.aI..([st.(ch) ___ ch __ chz])
         __ le.(chz) !_ 0:
             settings.setChannelCount(chz[0])
 
         codecsBox.c..
         codecs _ deviceInfo.supportedCodecs()
-        codecsBox.aI..([str(c) ___ c __ codecs])
+        codecsBox.aI..([st.(c) ___ c __ codecs])
         __ le.(codecs) !_ 0:
             settings.setCodec(codecs[0])
 
@@ -172,7 +172,7 @@ c_ AudioTest(AudioDevicesBase):
 
         sampleSizesBox.c..
         sampleSizez _ deviceInfo.supportedSampleSizes()
-        sampleSizesBox.aI..([str(ss) ___ ss __ sampleSizez])
+        sampleSizesBox.aI..([st.(ss) ___ ss __ sampleSizez])
         __ le.(sampleSizez) !_ 0:
             settings.setSampleSize(sampleSizez[0])
 
@@ -218,14 +218,14 @@ c_ AudioTest(AudioDevicesBase):
 
                                     setFormatValue(row, 0, f...codec())
                                     setFormatValue(row, 1,
-                                            str(f...sampleRate()))
+                                            st.(f...sampleRate()))
                                     setFormatValue(row, 2,
-                                            str(f...channelCount()))
+                                            st.(f...channelCount()))
                                     setFormatValue(row, 3,
                                             sampleTypeToString(
                                                     f...sampleType()))
                                     setFormatValue(row, 4,
-                                            str(f...sampleSize()))
+                                            st.(f...sampleSize()))
                                     setFormatValue(row, 5,
                                             endianToString(
                                                     f...byteOrder()))

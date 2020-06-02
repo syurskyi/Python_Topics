@@ -56,7 +56,7 @@ c_ BaseClass(?W..):
     ___ resetAuthor
         _author _ "David Boddie"
 
-    author _ pyqtProperty(str, getAuthor, setAuthor, resetAuthor)
+    author _ pyqtProperty(st., getAuthor, setAuthor, resetAuthor)
 
 
 c_ Bubble:

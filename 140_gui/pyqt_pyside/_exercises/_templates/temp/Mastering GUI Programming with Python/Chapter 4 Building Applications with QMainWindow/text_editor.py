@@ -71,7 +71,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         textedit.tC...c..(
             l___: charcount_label.sT..(
                 "chars: " +
-                str(le.(textedit.toPlainText()))
+                st.(le.(textedit.toPlainText()))
                 )
             )
         sB.. .addPermanentWidget(charcount_label)

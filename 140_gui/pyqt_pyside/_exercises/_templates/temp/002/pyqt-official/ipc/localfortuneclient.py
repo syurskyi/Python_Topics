@@ -103,14 +103,14 @@ c_ Client(QDialog):
         ins.setVersion(?DS...Qt_4_0)
 
         __ blockSize __ 0:
-            __ socket.bytesAvailable() < 2:
+            __ socket.bA..() < 2:
                 r_
             blockSize _ ins.readUInt16()
 
         __ ins.atEnd
             r_
 
-        nextFortune _ ins.readQString()
+        nextFortune _ ins.rQS..
         __ nextFortune __ currentFortune:
             ?T...sS..(0, requestNewFortune)
             r_

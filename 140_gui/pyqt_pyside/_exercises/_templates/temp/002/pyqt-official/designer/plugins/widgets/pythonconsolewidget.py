@@ -74,7 +74,7 @@ c_ PythonConsoleWidget(QLineEdit):
         
         expression _ t__()
         ___
-            result _ str(eval(str(expression)))
+            result _ st.(eval(st.(expression)))
             
             # Emit the result of the evaluated expression.
             pythonOutput.e..(result)

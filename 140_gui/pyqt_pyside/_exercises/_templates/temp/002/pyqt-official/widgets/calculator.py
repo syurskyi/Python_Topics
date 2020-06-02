@@ -89,7 +89,7 @@ c_ Calculator(?W..):
         digitButtons _   # list
         
         ___ i __ ra..(Calculator.NumDigitButtons):
-            digitButtons.ap..(createButton(str(i),
+            digitButtons.ap..(createButton(st.(i),
                     digitClicked))
 
         pointButton _ createButton(".", pointClicked)
@@ -167,7 +167,7 @@ c_ Calculator(?W..):
             display.c..
             waitingForOperand _ F..
 
-        display.sT..(display.t__() + str(digitValue))
+        display.sT..(display.t__() + st.(digitValue))
 
     ___ unaryOperatorClicked
         clickedButton _ sender()
@@ -189,7 +189,7 @@ c_ Calculator(?W..):
 
             result _ 1.0 / operand
 
-        display.sT..(str(result))
+        display.sT..(st.(result))
         waitingForOperand _ T..
 
     ___ additiveOperatorClicked
@@ -202,7 +202,7 @@ c_ Calculator(?W..):
                 abortOperation()
                 r_
 
-            display.sT..(str(factorSoFar))
+            display.sT..(st.(factorSoFar))
             operand _ factorSoFar
             factorSoFar _ 0.0
             pendingMultiplicativeOperator _ ''
@@ -212,7 +212,7 @@ c_ Calculator(?W..):
                 abortOperation()
                 r_
 
-            display.sT..(str(sumSoFar))
+            display.sT..(st.(sumSoFar))
         ____
             sumSoFar _ operand
 
@@ -229,7 +229,7 @@ c_ Calculator(?W..):
                 abortOperation()
                 r_
 
-            display.sT..(str(factorSoFar))
+            display.sT..(st.(factorSoFar))
         ____
             factorSoFar _ operand
 
@@ -257,7 +257,7 @@ c_ Calculator(?W..):
         ____
             sumSoFar _ operand
 
-        display.sT..(str(sumSoFar))
+        display.sT..(st.(sumSoFar))
         sumSoFar _ 0.0
         waitingForOperand _ T..
 
@@ -311,7 +311,7 @@ c_ Calculator(?W..):
         sumInMemory _ 0.0
 
     ___ readMemory
-        display.sT..(str(sumInMemory))
+        display.sT..(st.(sumInMemory))
         waitingForOperand _ T..
 
     ___ setMemory

@@ -73,7 +73,7 @@ c_ PyTextViewer(?TE..):
 
     # Define the author property.  This will look like a C++ property to Qt
     # Designer and a Python property to Python.
-    author _ pyqtProperty(str, getAuthor, setAuthor, resetAuthor)
+    author _ pyqtProperty(st., getAuthor, setAuthor, resetAuthor)
 
 
 # This is the class that implements the custom widget.

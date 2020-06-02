@@ -351,7 +351,7 @@ c_ AddressBook(?W..):
             r_
 
         ___
-            out_file _ o..(str(fileName), 'wb')
+            out_file _ o..(st.(fileName), 'wb')
         _____ IOError:
             ?MB...information  "Unable to open file",
                     "There was an error opening \"%s\"" % fileName)
@@ -368,7 +368,7 @@ c_ AddressBook(?W..):
             r_
 
         ___
-            in_file _ o..(str(fileName), __
+            in_file _ o..(st.(fileName), __
         _____ IOError:
             ?MB...information  "Unable to open file",
                     "There was an error opening \"%s\"" % fileName)
@@ -389,7 +389,7 @@ c_ AddressBook(?W..):
         updateInterface(NavigationMode)
 
     ___ exportAsVCard 
-        name _ str(nameLine.t__())
+        name _ st.(nameLine.t__())
         address _ addressText.toPlainText()
 
         nameList _ name.sp..()

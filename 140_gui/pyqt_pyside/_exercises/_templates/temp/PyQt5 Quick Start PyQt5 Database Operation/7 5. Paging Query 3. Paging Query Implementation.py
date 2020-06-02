@@ -127,8 +127,8 @@ c_ DataGrid(?W..):
 
     # Update Spatial Status
     ___ updateStatus 
-        currentPageLabel.sT..(str(currentPage))
-        totalPageLabel.sT..(str(totalPage))
+        currentPageLabel.sT..(st.(currentPage))
+        totalPageLabel.sT..(st.(totalPage))
         __ currentPage <_ 1:
             prevButton.sE.. F..
         ____

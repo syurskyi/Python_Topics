@@ -121,7 +121,7 @@ c_ Server(QDialog):
             settings.endGroup();
 
         tcpServer _ QTcpServer
-        __ no. tcpServer.listen
+        __ no. tcpServer.l..
             ?MB...c..  "Fortune Server",
                     "Unable to start the server: %s." % tcpServer.errorString())
             c..
@@ -149,7 +149,7 @@ c_ Server(QDialog):
         out.device().seek(0)
         out.writeUInt16(block.size() - 2)
 
-        clientConnection _ tcpServer.nextPendingConnection()
+        clientConnection _ tcpServer.nPC..()
         clientConnection.disconnected.c..(clientConnection.deleteLater)
 
         clientConnection.w..(block)

@@ -54,7 +54,7 @@ ____ ?.?N.. ______ (?AS.., ?HA.., QNetworkInterface,
 c_ FortuneThread(?T..):
     newFortune _ pS.. st.
 
-    error _ pS..(int, str)
+    error _ pS..(int, st.)
 
     ___  -   parent_None):
         super(FortuneThread, self). - (parent)
@@ -97,7 +97,7 @@ c_ FortuneThread(?T..):
                 error.e..(socket.error(), socket.errorString())
                 r_
 
-            w__ socket.bytesAvailable() < 2:
+            w__ socket.bA..() < 2:
                 __ no. socket.waitForReadyRead(Timeout):
                     error.e..(socket.error(), socket.errorString())
                     r_
@@ -106,13 +106,13 @@ c_ FortuneThread(?T..):
             instr.setVersion(?DS...Qt_4_0)
             blockSize _ instr.readUInt16()
 
-            w__ socket.bytesAvailable() < blockSize:
+            w__ socket.bA..() < blockSize:
                 __ no. socket.waitForReadyRead(Timeout):
                     error.e..(socket.error(), socket.errorString())
                     r_
 
             mutex.lock()
-            fortune _ instr.readQString()
+            fortune _ instr.rQS..
             newFortune.e..(fortune)
 
             cond.wait(mutex)

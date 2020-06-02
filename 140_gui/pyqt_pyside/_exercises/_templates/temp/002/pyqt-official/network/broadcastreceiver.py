@@ -78,7 +78,7 @@ c_ Receiver(QDialog):
 
             ___
                 # Python v3.
-                datagram _ str(datagram, encoding_'ascii')
+                datagram _ st.(datagram, encoding_'ascii')
             _____ TypeError:
                 # Python v2.
                 pass

@@ -173,7 +173,7 @@ c_ EmbeddedDialog(QDialog):
         ui.layoutDirection.activated.c..(layoutDirectionChanged)
         ui.spacing.valueChanged.c..(spacingChanged)
         ui.fontComboBox.currentFontChanged.c..(fontChanged)
-        ui.style.activated[str].c..(styleChanged)
+        ui.style.activated[st.].c..(styleChanged)
 
     ___ layoutDirectionChanged  index):
         __ index __ 0:

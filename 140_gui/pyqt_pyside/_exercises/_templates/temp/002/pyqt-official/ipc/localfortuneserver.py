@@ -72,7 +72,7 @@ c_ Server(QDialog):
         )
 
         server _ QLocalServer()
-        __ no. server.listen('fortune'):
+        __ no. server.l..('fortune'):
             ?MB...c..  "Fortune Server",
                     "Unable to start the server: %s." % server.errorString())
             c..
@@ -105,7 +105,7 @@ c_ Server(QDialog):
         out.device().seek(0)
         out.writeUInt16(block.size() - 2)
 
-        clientConnection _ server.nextPendingConnection()
+        clientConnection _ server.nPC..()
         clientConnection.disconnected.c..(clientConnection.deleteLater)
         clientConnection.w..(block)
         clientConnection.flush()

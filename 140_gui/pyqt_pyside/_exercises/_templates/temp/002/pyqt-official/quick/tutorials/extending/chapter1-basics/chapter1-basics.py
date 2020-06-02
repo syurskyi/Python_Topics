@@ -51,7 +51,7 @@ c_ PieChart(QQuickPaintedItem):
 
     nameChanged _ pS.. st.
 
-    @pyqtProperty(str, notify_nameChanged)
+    @pyqtProperty(st., notify_nameChanged)
     ___ name
         r_ _name
 

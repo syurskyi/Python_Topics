@@ -151,9 +151,9 @@ c_ MainWindow ?MW..
             cellCursor _ cell.firstCursorPosition()
 
             __ date __ ?D...currentDate
-                cellCursor.insertText(str(date.day()), highlightedFormat)
+                cellCursor.insertText(st.(date.day()), highlightedFormat)
             ____
-                cellCursor.insertText(str(date.day()), f..)
+                cellCursor.insertText(st.(date.day()), f..)
 
             date _ date.addDays(1)
 

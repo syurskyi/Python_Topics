@@ -67,7 +67,7 @@ c_ WeatherWorker(QRunnable):
             signals.result.e..(weather, forecast)
 
         _____ E.. __ e:
-            signals.error.e..(str(e))
+            signals.error.e..(st.(e))
 
         signals.finished.e..()
 

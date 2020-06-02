@@ -749,7 +749,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         fontselect.setCurrentFont(?F..('Times'))
 
         fontsize = ?CB()
-        fontsize.aI..([str(s) ___ s __ FONT_SIZES])
+        fontsize.aI..([st.(s) ___ s __ FONT_SIZES])
         fontsize.cTC...connect(l___ f: canvas.set_config('fontsize', int(f)))
 
         # Connect to the signal producing the text of the current selection. Convert the string to float

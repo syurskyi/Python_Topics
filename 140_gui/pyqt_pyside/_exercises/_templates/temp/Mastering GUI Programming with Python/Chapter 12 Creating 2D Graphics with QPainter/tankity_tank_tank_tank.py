@@ -153,10 +153,10 @@ c_ Scene(qtw.QGraphicsScene):
         bottom_score _ 0
         score_font _ qtg.?F..('Sans', 32)
         top_score_display _ addText(
-            str(top_score), score_font)
+            st.(top_score), score_font)
         top_score_display.setPos(10, 10)
         bottom_score_display _ addText(
-            str(bottom_score), score_font)
+            st.(bottom_score), score_font)
         bottom_score_display.setPos(
             SCREEN_WIDTH - 60, SCREEN_HEIGHT - 60)
 
@@ -175,11 +175,11 @@ c_ Scene(qtw.QGraphicsScene):
 
     ___ top_score_increment
         top_score +_ 1
-        top_score_display.sPT..(str(top_score))
+        top_score_display.sPT..(st.(top_score))
 
     ___ bottom_score_increment
         bottom_score +_ 1
-        bottom_score_display.sPT..(str(bottom_score))
+        bottom_score_display.sPT..(st.(bottom_score))
 
     ___ keyPressEvent  event):
         keymap _ {

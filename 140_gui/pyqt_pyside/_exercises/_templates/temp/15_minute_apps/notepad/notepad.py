@@ -131,7 +131,7 @@ c_ MainWindow ?MW..
                     t__ _ f.r..
 
             _____ E.. __ e:
-                dialog_critical(str(e))
+                dialog_critical(st.(e))
 
             ____
                 pa__ _ pa__
@@ -161,7 +161,7 @@ c_ MainWindow ?MW..
                 f.w..(t__)
 
         _____ E.. __ e:
-            dialog_critical(str(e))
+            dialog_critical(st.(e))
 
         ____
             pa__ _ pa__

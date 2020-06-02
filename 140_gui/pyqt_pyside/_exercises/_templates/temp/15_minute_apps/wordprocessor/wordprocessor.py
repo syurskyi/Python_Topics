@@ -34,7 +34,7 @@ c_ TextEdit(?TE..):
         __ source.hasUrls
 
             ___ u __ source.urls
-                file_ext _ splitext(str(u.toLocalFile()))
+                file_ext _ splitext(st.(u.toLocalFile()))
                 __ u.isLocalFile() and file_ext __ IMAGE_EXTENSIONS:
                     image _ QImage(u.toLocalFile())
                     document.addResource(QTextDocument.ImageResource, u, image)
@@ -186,11 +186,11 @@ c_ MainWindow ?MW..
         format_toolbar.aW..(fonts)
 
         fontsize _ ?CB()
-        fontsize.aI..([str(s) ___ s __ FONT_SIZES])
+        fontsize.aI..([st.(s) ___ s __ FONT_SIZES])
 
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
-        fontsize.currentIndexChanged[str].c..(l___ s: editor.setFontPointSize(float(s)) )
+        fontsize.currentIndexChanged[st.].c..(l___ s: editor.setFontPointSize(float(s)) )
         format_toolbar.aW..(fontsize)
 
         bold_action _ ?A..(QIcon(__.p__ .join('images', 'edit-bold.png')), "Bold", self)
@@ -286,7 +286,7 @@ c_ MainWindow ?MW..
 
         fonts.setCurrentFont(editor.currentFont())
         # Nasty, but we get the font-size as a float but want it was an int
-        fontsize.sCT..(str(int(editor.fontPointSize())))
+        fontsize.sCT..(st.(int(editor.fontPointSize())))
 
         italic_action.sC__(editor.fontItalic())
         underline_action.sC__(editor.fontUnderline())
@@ -313,7 +313,7 @@ c_ MainWindow ?MW..
                 t__ _ f.r..
 
         _____ E.. __ e:
-            dialog_critical(str(e))
+            dialog_critical(st.(e))
 
         ____
             pa__ _ pa__
@@ -333,7 +333,7 @@ c_ MainWindow ?MW..
                 f.w..(t__)
 
         _____ E.. __ e:
-            dialog_critical(str(e))
+            dialog_critical(st.(e))
 
     ___ file_saveas
         pa__, _ _ ?FD...getSaveFileName  "Save file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
@@ -349,7 +349,7 @@ c_ MainWindow ?MW..
                 f.w..(t__)
 
         _____ E.. __ e:
-            dialog_critical(str(e))
+            dialog_critical(st.(e))
 
         ____
             pa__ _ pa__

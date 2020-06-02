@@ -88,7 +88,7 @@ c_ StorageModel ?ATM..
         ColumnFileSystemName: l___ volume: volume.fileSystemType(),
         ColumnTotal: l___ volume: sizeToString(volume.bytesTotal()),
         ColumnFree: l___ volume: sizeToString(volume.bytesFree()),
-        ColumnAvailable: l___ volume: sizeToString(volume.bytesAvailable()),
+        ColumnAvailable: l___ volume: sizeToString(volume.bA..()),
         ColumnIsReady: l___ volume: volume.isReady(),
         ColumnIsReadOnly: l___ volume: volume.isReadOnly(),
         ColumnIsValid: l___ volume: volume.iV..,
@@ -135,7 +135,7 @@ c_ StorageModel ?ATM..
                 label _ columnNameMap.g..(column)
                 value _ columnFuncMap[column](volume)
                 __ isinstance(value, QByteArray):
-                    value _ str(by..(value).d..('utf-8'))
+                    value _ st.(by..(value).d..('utf-8'))
                 tooltip.ap..("{0}: {1}".f..(label, value))
             r_ "\n".join(tooltip)
 

@@ -451,7 +451,7 @@ c_ Animation(object):
         m_frames _   # list
 
         stream _ ?DS..(device)
-        m_name _ stream.readQString()
+        m_name _ stream.rQS..
         frameCount _ stream.readInt()
 
         ___ i __ ra..(frameCount):

@@ -250,7 +250,7 @@ c_ SpreadSheet ?MW..
         rows _   # list
         cols _   # list
         ___ r __ ra..(table.rowCount()):
-            rows.ap..(str(r + 1))
+            rows.ap..(st.(r + 1))
         ___ c __ ra..(table.columnCount()):
             cols.ap..(chr(ord('A') + c))
         addDialog _ QDialog

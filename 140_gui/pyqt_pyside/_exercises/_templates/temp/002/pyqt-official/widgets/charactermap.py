@@ -194,9 +194,9 @@ c_ MainWindow ?MW..
         clipboard _ ?A...clipboard()
 
         fontCombo.currentFontChanged.c..(findStyles)
-        fontCombo.activated[str].c..(characterWidget.updateFont)
-        styleCombo.activated[str].c..(characterWidget.updateStyle)
-        sizeCombo.currentIndexChanged[str].c..(characterWidget.updateSize)
+        fontCombo.activated[st.].c..(characterWidget.updateFont)
+        styleCombo.activated[st.].c..(characterWidget.updateStyle)
+        sizeCombo.currentIndexChanged[st.].c..(characterWidget.updateSize)
         characterWidget.characterSelected.c..(insertCharacter)
         clipboardButton.c__.c..(updateClipboard)
 
@@ -248,11 +248,11 @@ c_ MainWindow ?MW..
 
         __ fontDatabase.isSmoothlyScalable(font.family(), fontDatabase.styleString(font)):
             ___ size __ QFontDatabase.standardSizes
-                sizeCombo.aI..(str(size))
+                sizeCombo.aI..(st.(size))
                 sizeCombo.setEditable( st.
         ____
             ___ size __ fontDatabase.smoothSizes(font.family(), fontDatabase.styleString(font)):
-                sizeCombo.aI..(str(size))
+                sizeCombo.aI..(st.(size))
                 sizeCombo.setEditable F..
 
         sizeCombo.blockSignals F..

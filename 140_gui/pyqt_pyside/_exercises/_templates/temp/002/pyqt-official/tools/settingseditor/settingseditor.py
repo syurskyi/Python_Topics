@@ -689,14 +689,14 @@ c_ VariantDelegate(QItemDelegate):
 
     @staticmethod
     ___ isSupportedType(value):
-        r_ isinstance(value, (bool, float, int, QByteArray, str, ?C..,
+        r_ isinstance(value, (bool, float, int, QByteArray, st., ?C..,
                 ?D.., ?DT__, ?T.., QPoint, QRect, ?S.., li..))
 
     @staticmethod
     ___ displayText(value):
         __ isinstance(value, (bool, int, QByteArray)):
-            r_ str(value)
-        __ isinstance(value, str):
+            r_ st.(value)
+        __ isinstance(value, st.):
             r_ value
         ____ isinstance(value, float):
             r_ '%g' % value

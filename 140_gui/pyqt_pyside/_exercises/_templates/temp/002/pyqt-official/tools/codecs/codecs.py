@@ -51,10 +51,10 @@ ____ ?.?W.. ______ (?A.., ?A.., ?CB, QDialog,
 ___ codec_name(codec):
     ___
         # Python v3.
-        name _ str(codec.name(), encoding_'ascii')
+        name _ st.(codec.name(), encoding_'ascii')
     _____ TypeError:
         # Python v2.
-        name _ str(codec.name())
+        name _ st.(codec.name())
 
     r_ name
 
@@ -145,7 +145,7 @@ c_ MainWindow ?MW..
             ____
                 rank _ 5
 
-            codecMap.ap..((str(rank) + sortKey, codec))
+            codecMap.ap..((st.(rank) + sortKey, codec))
 
         codecMap.s..()
         codecs _ [item[-1] ___ item __ codecMap]

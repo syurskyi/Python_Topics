@@ -308,7 +308,7 @@ class MainWindow(?MW..):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Warning)
         msg.setText(e.__class__.__name__)
-        msg.setInformativeText(str(e))
+        msg.setInformativeText(st.(e))
         msg.setDetailedText(tb)
         msg.exec_()
 

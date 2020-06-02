@@ -73,7 +73,7 @@ c_ WidgetGallery(QDialog):
         createBottomRightGroupBox()
         createProgressBar()
 
-        styleComboBox.activated[str].c..(changeStyle)
+        styleComboBox.activated[st.].c..(changeStyle)
         useStylePaletteCheckBox.t__.c..(changePalette)
         disableWidgetsCheckBox.t__.c..(topLeftGroupBox.sD..)
         disableWidgetsCheckBox.t__.c..(topRightGroupBox.sD..)

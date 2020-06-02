@@ -57,7 +57,7 @@ ___ encode_utf8(ba):
     ___
         r_ unicode(ba, encoding_'utf8')
     _____ NameError:
-        r_ str(ba, encoding_'utf8')
+        r_ st.(ba, encoding_'utf8')
 
 
 ___ decode_utf8(qs):

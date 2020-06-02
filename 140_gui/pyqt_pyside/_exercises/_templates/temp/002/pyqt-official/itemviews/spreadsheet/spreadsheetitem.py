@@ -68,7 +68,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
             r_ formula()
         __ role __ __.DR..:
             r_ display()
-        t _ str(display())
+        t _ st.(display())
         ___
             number _ int(t)
         _____ ValueError:

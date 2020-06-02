@@ -157,15 +157,15 @@ c_ Client(QDialog):
         instr.setVersion(?DS...Qt_4_0)
 
         __ blockSize __ 0:
-            __ tcpSocket.bytesAvailable() < 2:
+            __ tcpSocket.bA..() < 2:
                 r_
 
             blockSize _ instr.readUInt16()
 
-        __ tcpSocket.bytesAvailable() < blockSize:
+        __ tcpSocket.bA..() < blockSize:
             r_
 
-        nextFortune _ instr.readQString()
+        nextFortune _ instr.rQS..
         __ nextFortune __ currentFortune:
             ?T...sS..(0, requestNewFortune)
             r_

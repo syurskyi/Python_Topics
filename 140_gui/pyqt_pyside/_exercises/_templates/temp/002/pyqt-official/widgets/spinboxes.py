@@ -126,7 +126,7 @@ c_ Window(?W..):
         formatComboBox.aI..('hh:mm:ss')
         formatComboBox.aI..('hh:mm ap')
 
-        formatComboBox.activated[str].c..(setFormatString)
+        formatComboBox.activated[st.].c..(setFormatString)
 
         setFormatString(formatComboBox.currentText())
 

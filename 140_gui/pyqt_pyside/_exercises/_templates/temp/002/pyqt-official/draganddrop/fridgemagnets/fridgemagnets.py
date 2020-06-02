@@ -156,10 +156,10 @@ c_ DragWidget(?W..):
 
             ___
                 # Python v3.
-                t__ _ str(t__, encoding_'latin1')
+                t__ _ st.(t__, encoding_'latin1')
             _____ TypeError:
                 # Python v2.
-                t__ _ str(t__)
+                t__ _ st.(t__)
 
             newLabel _ DragLabel(t__, self)
             newLabel.move(event.pos() - offset)

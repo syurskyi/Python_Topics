@@ -99,7 +99,7 @@ c_ StyleSheetEditor(QDialog):
             styleSheet _ unicode(styleSheet, encoding_'utf8')
         _____ NameError:
             # Python v3.
-            styleSheet _ str(styleSheet, encoding_'utf8')
+            styleSheet _ st.(styleSheet, encoding_'utf8')
 
         ui.styleTextEdit.sPT..(styleSheet)
         ?A...instance().sSS..(styleSheet)

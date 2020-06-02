@@ -130,7 +130,7 @@ c_ VideoSettings(QDialog):
 
         supportedSampleRates, _ _ mediaRecorder.supportedAudioSampleRates()
         ___ sampleRate __ supportedSampleRates:
-            ui.audioSampleRateBox.aI..(str(sampleRate), sampleRate)
+            ui.audioSampleRateBox.aI..(st.(sampleRate), sampleRate)
 
         ui.audioQualitySlider.setRange(0, QMultimedia.VeryHighQuality)
 

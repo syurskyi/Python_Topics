@@ -232,7 +232,7 @@ c_ MainWindow ?MW..
                 triggered_self.o..)
 
         ___ f.. __ QImageWriter.supportedImageFormats
-            f.. _ str(f..)
+            f.. _ st.(f..)
 
             t__ _ f...upper() + "..."
 

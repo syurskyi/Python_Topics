@@ -149,7 +149,7 @@ c_ MainWindow ?MW..
             cursor _ orderTable.cellAt(row, 0).firstCursorPosition()
             cursor.insertText(t__, textFormat)
             cursor _ orderTable.cellAt(row, 1).firstCursorPosition()
-            cursor.insertText(str(quantity), textFormat)
+            cursor.insertText(st.(quantity), textFormat)
 
         cursor.setPosition(topFrame.lastPosition())
 

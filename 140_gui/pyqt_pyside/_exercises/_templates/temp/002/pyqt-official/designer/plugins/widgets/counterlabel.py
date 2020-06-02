@@ -38,7 +38,7 @@ c_ CounterLabel(?W..):
 
     # We define two signals that are used to indicate changes to the status
     # of the widget.
-    valueChanged _ pS..((int, ), (str, ))
+    valueChanged _ pS..((int, ), (st., ))
 
     ___  -   parent_None):
 
@@ -62,7 +62,7 @@ c_ CounterLabel(?W..):
         p.sF..(_font)
         p.translate(width()/2.0, height()/2.0)
         p.scale(_scale, _scale)
-        p.drawText(_xpos, _ypos, str(_value))
+        p.drawText(_xpos, _ypos, st.(_value))
         p.end()
 
     ___ sH..
@@ -72,7 +72,7 @@ c_ CounterLabel(?W..):
 
         fm _ QFontMetricsF(_font, self)
         maxRect _ fm.boundingRect(QRectF(rect()), __.AlignCenter,
-                str(_maximum))
+                st.(_maximum))
         xscale _ float(width())/maxRect.width()
         yscale _ float(height())/maxRect.height()
         _scale _ min(xscale, yscale)
@@ -81,7 +81,7 @@ c_ CounterLabel(?W..):
 
         fm _ QFontMetricsF(_font, self)
         rect _ fm.boundingRect(QRectF(rect()), __.AlignCenter,
-                str(_value))
+                st.(_value))
         _xpos _ -rect.width()/2.0
         _ypos _ rect.height()/2.0 - fm.descent()
         update()
@@ -149,7 +149,7 @@ c_ CounterLabel(?W..):
             r_
         _value _ value
         valueChanged[int].e..(value + _offset)
-        valueChanged[str].e..(str(value + _offset))
+        valueChanged[st.].e..(st.(value + _offset))
         reposition()
 
     value _ pyqtProperty(int, getValue, sV..)

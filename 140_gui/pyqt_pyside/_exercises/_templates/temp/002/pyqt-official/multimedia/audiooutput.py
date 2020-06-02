@@ -123,8 +123,8 @@ c_ Generator(QIODevice):
     ___ writeData  data):
         r_ 0
 
-    ___ bytesAvailable
-        r_ m_buffer.size() + super(Generator, self).bytesAvailable()
+    ___ bA..
+        r_ m_buffer.size() + super(Generator, self).bA..()
 
 
 c_ AudioTest ?MW..

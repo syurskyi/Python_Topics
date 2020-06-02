@@ -225,7 +225,7 @@ c_ HttpWindow(QDialog):
             authenticator.setPassword(dlg.passwordEdit.t__())
 
     ___ sslErrors  reply, errors):
-        errorString _ ", ".join([str(error.errorString()) ___ error __ errors])
+        errorString _ ", ".join([st.(error.errorString()) ___ error __ errors])
 
         ret _ ?MB...warning  "HTTP Example",
                 "One or more SSL errors has occurred: %s" % errorString,

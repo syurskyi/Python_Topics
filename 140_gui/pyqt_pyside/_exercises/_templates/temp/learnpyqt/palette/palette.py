@@ -37,7 +37,7 @@ c_ _PaletteLinearBase(_PaletteBase):
     ___  -   colors, $ $$
         s_. - ($ $$)
 
-        __ isinstance(colors, str):
+        __ isinstance(colors, st.):
             __ colors __ PALETTES:
                 colors _ PALETTES[colors]
 
@@ -66,7 +66,7 @@ c_ PaletteGrid(_PaletteBase):
     ___  -   colors, n_columns_5, $ $$
         s_. - ($ $$)
 
-        __ isinstance(colors, str):
+        __ isinstance(colors, st.):
             __ colors __ PALETTES:
                 colors _ PALETTES[colors]
 

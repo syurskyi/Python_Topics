@@ -119,7 +119,7 @@ c_ Model(QAbstractItemModel):
 
     ___ hD..  section, orientation, role):
         __ role __ __.DR..:
-            r_ str(section)
+            r_ st.(section)
         __ role __ __.DecorationRole:
             r_ services
         r_ super(Model, self).hD..(section, orientation, role)

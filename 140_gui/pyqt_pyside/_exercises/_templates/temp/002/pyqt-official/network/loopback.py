@@ -100,7 +100,7 @@ c_ Dialog(QDialog):
         bytesWritten _ 0
         bytesReceived _ 0
 
-        w__ no. tcpServer.isListening() and no. tcpServer.listen
+        w__ no. tcpServer.isListening() and no. tcpServer.l..
             ret _ ?MB...c..  "Loopback",
                     "Unable to start the test: %s." % tcpServer.errorString(),
                     ?MB...Retry | ?MB...Cancel)
@@ -113,7 +113,7 @@ c_ Dialog(QDialog):
         tcpClient.connectToHost(?HA..(?HA...LocalHost), tcpServer.serverPort())
 
     ___ acceptConnection
-        tcpServerConnection _ tcpServer.nextPendingConnection()
+        tcpServerConnection _ tcpServer.nPC..()
         tcpServerConnection.readyRead.c..(updateServerProgress)
         tcpServerConnection.error.c..(displayError)
 
@@ -125,7 +125,7 @@ c_ Dialog(QDialog):
         clientStatusLabel.sT..("Connected")
 
     ___ updateServerProgress
-        bytesReceived +_ tcpServerConnection.bytesAvailable()
+        bytesReceived +_ tcpServerConnection.bA..()
         tcpServerConnection.rA..
 
         serverProgressBar.sM..(Dialog.TotalBytes)

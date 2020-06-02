@@ -86,7 +86,7 @@ c_ PyMultiPageWidget(?W..):
             comboBox.sCI..(index)
             currentIndexChanged.e..(index)
 
-    pageTitle _ pyqtProperty(str, fget_getPageTitle, fset_setPageTitle, stored_False)
+    pageTitle _ pyqtProperty(st., fget_getPageTitle, fset_setPageTitle, stored_False)
     currentIndex _ pyqtProperty(int, fget_getCurrentIndex, fset_setCurrentIndex)
 
 

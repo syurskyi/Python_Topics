@@ -371,7 +371,7 @@ c_ TextEdit ?MW..
 
         comboFont _ QFontComboBox(tb)
         tb.aW..(comboFont)
-        comboFont.activated[str].c..(textFamily)
+        comboFont.activated[st.].c..(textFamily)
 
         comboSize _ ?CB(tb)
         comboSize.setObjectName("comboSize")
@@ -382,7 +382,7 @@ c_ TextEdit ?MW..
         ___ size __ db.standardSizes
             comboSize.aI..("%s" % (size))
 
-        comboSize.activated[str].c..(textSize)
+        comboSize.activated[st.].c..(textSize)
         comboSize.sCI..(
                 comboSize.findText(
                         "%s" % (?A...font().pointSize())))

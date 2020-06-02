@@ -122,7 +122,7 @@ c_ ShoeDescription(?O..):
             _color _ color
             shoeChanged.e..()
 
-    @pyqtProperty(str, notify_shoeChanged)
+    @pyqtProperty(st., notify_shoeChanged)
     ___ brand
         r_ _brand
 
@@ -152,7 +152,7 @@ c_ Person(?O..):
 
     nameChanged _ pS..()
 
-    @pyqtProperty(str, notify_nameChanged)
+    @pyqtProperty(st., notify_nameChanged)
     ___ name
         r_ _name
 
@@ -248,7 +248,7 @@ c_ HappyBirthdaySong(?O.., QQmlPropertyValueSource):
 
     nameChanged _ pS..()
 
-    @pyqtProperty(str, notify_nameChanged)
+    @pyqtProperty(st., notify_nameChanged)
     ___ name
         r_ _name
 
