@@ -1,11 +1,11 @@
 ______ ___
 ____ ?.?S.. ______ ?SD..
-____ ?.?C.. ______ *
+____ ?.?C.. ______ _
 
-__ __name__ __ "__main__":
-    app _  ?CA..(___.a..
-    db _ ?SD...aD..("QSQLITE")
-    db.sDN..("test.db")
+__ _______ __ ____
+    app _  ?CA.. ___.a..
+    db _ ?SD...aD.. QSQLITE
+    ?.sDN.. test.db
     __ db.o..
-        print("open DB success.")
+        print open DB success.
     ___.e.. ?.e..
