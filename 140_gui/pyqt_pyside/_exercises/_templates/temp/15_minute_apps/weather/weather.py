@@ -58,7 +58,7 @@ c_ WeatherWorker(QRunnable):
 
             # Check if we had a failure (the forecast will fail in the same way).
             __ weather['cod'] !_ 200:
-                raise E..(weather['message'])
+                r_ E..(weather['message'])
 
             url _ 'http://api.openweathermap.org/data/2.5/forecast?%s&units=metric' % urlencode(params)
             r _ requests.g..(url)

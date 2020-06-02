@@ -59,7 +59,7 @@ c_ SortedDict(dict):
 
         ___ next 
             __ _idx >_ _nr_items:
-                raise StopIteration
+                r_ StopIteration
 
             key _ _keys[_idx]
             value _ _dict[key]

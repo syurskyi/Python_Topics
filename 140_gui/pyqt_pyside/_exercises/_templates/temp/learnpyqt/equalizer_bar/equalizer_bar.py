@@ -31,7 +31,7 @@ c_ EqualizerBar(?W...?W..):
             steps _ ['red'] * steps
 
         ____
-            raise TypeError('steps must be a list or int')
+            r_ TypeError('steps must be a list or int')
 
         # Bar appearance.
         n_bars _ bars

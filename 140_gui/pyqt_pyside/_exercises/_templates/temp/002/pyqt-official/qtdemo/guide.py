@@ -137,4 +137,4 @@ c_ Guide(object):
         r_ 1.0
 
     ___ guide  item, moveSpeed):
-        raise NotImplementedError
+        r_ NotImplementedError
