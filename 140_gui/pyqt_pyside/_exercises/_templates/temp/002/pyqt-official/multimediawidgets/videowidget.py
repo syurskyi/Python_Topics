@@ -44,9 +44,9 @@
 
 ____ ?.?C.. ______ ?D.., __, ?U..
 ____ ?.?M.. ______ ?MC.., QMediaPlayer
-____ ?.QtMultimediaWidgets ______ QVideoWidget
+____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
-        ?PB.., QSizePolicy, QSlider, QStyle, QVBoxLayout, ?W..)
+        ?PB.., QSizePolicy, ?S.., QStyle, QVBoxLayout, ?W..)
 
 
 c_ VideoPlayer(?W..):
@@ -66,7 +66,7 @@ c_ VideoPlayer(?W..):
         playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
         playButton.c__.c..(play)
 
-        positionSlider _ QSlider(__.H..)
+        positionSlider _ ?S..(__.H..)
         positionSlider.setRange(0, 0)
         positionSlider.sliderMoved.c..(setPosition)
 

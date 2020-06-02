@@ -38,7 +38,7 @@ c_ Ui_embeddedDialog(object):
         label_4 _ ?W...QLabel(embeddedDialog)
         label_4.setObjectName("label_4")
         formLayout.setWidget(3, ?W...QFormLayout.LabelRole, label_4)
-        spacing _ ?W...QSlider(embeddedDialog)
+        spacing _ ?W...?S..(embeddedDialog)
         spacing.setOrientation(?C...__.H..)
         spacing.setObjectName("spacing")
         formLayout.setWidget(3, ?W...QFormLayout.FieldRole, spacing)

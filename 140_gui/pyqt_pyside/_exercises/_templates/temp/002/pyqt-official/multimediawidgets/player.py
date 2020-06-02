@@ -48,10 +48,10 @@ ____ ?.?C.. ______ (pS.., pyqtSlot, Q_ARG, QAbstractItemModel,
 ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
-____ ?.QtMultimediaWidgets ______ QVideoWidget
+____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
         QFormLayout, QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
-        QSizePolicy, QSlider, QStyle, QToolButton, QVBoxLayout, ?W..)
+        QSizePolicy, ?S.., QStyle, QToolButton, QVBoxLayout, ?W..)
 
 
 c_ VideoWidget(QVideoWidget):
@@ -193,7 +193,7 @@ c_ PlayerControls(?W..):
         muteButton.setIcon(
                 style().standardIcon(QStyle.SP_MediaVolume))
 
-        volumeSlider _ QSlider(__.H..,
+        volumeSlider _ ?S..(__.H..,
                 sliderMoved_self.changeVolume)
         volumeSlider.setRange(0, 100)
 
@@ -413,7 +413,7 @@ c_ Player(?W..):
 
         playlistView.activated.c..(jump)
 
-        slider _ QSlider(__.H..)
+        slider _ ?S..(__.H..)
         slider.setRange(0, player.duration() / 1000)
 
         labelDuration _ QLabel()
@@ -633,7 +633,7 @@ c_ Player(?W..):
 
     ___ showColorDialog
         __ colorDialog __ N..:
-            brightnessSlider _ QSlider(__.H..)
+            brightnessSlider _ ?S..(__.H..)
             brightnessSlider.setRange(-100, 100)
             brightnessSlider.setValue(videoWidget.brightness())
             brightnessSlider.sliderMoved.c..(
@@ -641,19 +641,19 @@ c_ Player(?W..):
             videoWidget.brightnessChanged.c..(
                     brightnessSlider.setValue)
 
-            contrastSlider _ QSlider(__.H..)
+            contrastSlider _ ?S..(__.H..)
             contrastSlider.setRange(-100, 100)
             contrastSlider.setValue(videoWidget.contrast())
             contrastSlider.sliderMoved.c..(videoWidget.setContrast)
             videoWidget.contrastChanged.c..(contrastSlider.setValue)
 
-            hueSlider _ QSlider(__.H..)
+            hueSlider _ ?S..(__.H..)
             hueSlider.setRange(-100, 100)
             hueSlider.setValue(videoWidget.hue())
             hueSlider.sliderMoved.c..(videoWidget.setHue)
             videoWidget.hueChanged.c..(hueSlider.setValue)
 
-            saturationSlider _ QSlider(__.H..)
+            saturationSlider _ ?S..(__.H..)
             saturationSlider.setRange(-100, 100)
             saturationSlider.setValue(videoWidget.saturation())
             saturationSlider.sliderMoved.c..(

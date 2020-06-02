@@ -766,7 +766,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         sizeicon = QLabel()
         sizeicon.setPixmap(?P..(os.pa__.join('images', 'border-weight.png')))
         drawingToolbar.addWidget(sizeicon)
-        sizeselect = QSlider()
+        sizeselect = ?S..()
         sizeselect.setRange(1,20)
         sizeselect.setOrientation(Qt.H..)
         sizeselect.valueChanged.connect(l___ s: canvas.set_config('size', s))

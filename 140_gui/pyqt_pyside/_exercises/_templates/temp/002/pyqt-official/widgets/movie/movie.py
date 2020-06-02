@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFileInfo, ?S.., __
 ____ ?.?G.. ______ QMovie, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        QHBoxLayout, QLabel, QSizePolicy, QSlider, SB.., QStyle,
+        QHBoxLayout, QLabel, QSizePolicy, ?S.., SB.., QStyle,
         QToolButton, QVBoxLayout, ?W..)
 
 
@@ -139,8 +139,8 @@ c_ MoviePlayer(?W..):
 
         frameLabel _ QLabel("Current frame:")
 
-        frameSlider _ QSlider(__.H..)
-        frameSlider.setTickPosition(QSlider.TicksBelow)
+        frameSlider _ ?S..(__.H..)
+        frameSlider.setTickPosition(?S...TicksBelow)
         frameSlider.setTickInterval(10)
 
         speedLabel _ QLabel("Speed:")

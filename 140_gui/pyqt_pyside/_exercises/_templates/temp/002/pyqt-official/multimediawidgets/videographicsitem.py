@@ -45,9 +45,9 @@
 ____ ?.?C.. ______ ?D.., ?S.., QSizeF, __, ?U..
 ____ ?.?G.. ______ QTransform
 ____ ?.?M.. ______ ?MC.., QMediaPlayer
-____ ?.QtMultimediaWidgets ______ QGraphicsVideoItem
+____ ?.?MW.. ______ QGraphicsVideoItem
 ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
-        QGraphicsView, QHBoxLayout, ?PB.., QSlider, QStyle, QVBoxLayout,
+        QGraphicsView, QHBoxLayout, ?PB.., ?S.., QStyle, QVBoxLayout,
         ?W..)
 
 
@@ -66,7 +66,7 @@ c_ VideoPlayer(?W..):
 
         scene.aI..(videoItem)
 
-        rotateSlider _ QSlider(__.H..)
+        rotateSlider _ ?S..(__.H..)
         rotateSlider.setRange(-180,  180)
         rotateSlider.setValue(0)
         rotateSlider.valueChanged.c..(rotateVideo)
@@ -79,7 +79,7 @@ c_ VideoPlayer(?W..):
         playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
         playButton.c__.c..(play)
 
-        positionSlider _ QSlider(__.H..)
+        positionSlider _ ?S..(__.H..)
         positionSlider.setRange(0, 0)
         positionSlider.sliderMoved.c..(setPosition)
 

@@ -49,7 +49,7 @@ ____ ?.?C.. ______ pS.., ?S.., __, QTimer
 ____ ?.?G.. ______ QOpenGLVersionProfile, ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
         QLineEdit, ?MW.., ?MB.., QOpenGLWidget, QScrollArea,
-        QSizePolicy, QSlider, ?W..)
+        QSizePolicy, ?S.., ?W..)
 
 
 c_ GLWidget(QOpenGLWidget):
@@ -367,12 +367,12 @@ c_ MainWindow ?MW..
         helpMenu.aA..(aboutQtAct)
 
     ___ createSlider  changedSignal, setterSlot):
-        slider _ QSlider(__.H..)
+        slider _ ?S..(__.H..)
         slider.setRange(0, 360 * 16)
         slider.setSingleStep(16)
         slider.setPageStep(15 * 16)
         slider.setTickInterval(15 * 16)
-        slider.setTickPosition(QSlider.TicksRight)
+        slider.setTickPosition(?S...TicksRight)
 
         slider.valueChanged.c..(setterSlot)
         changedSignal.c..(slider.setValue)

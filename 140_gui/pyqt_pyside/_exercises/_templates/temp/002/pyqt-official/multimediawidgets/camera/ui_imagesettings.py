@@ -34,7 +34,7 @@ c_ Ui_ImageSettingsUi(object):
         label_7 _ ?W...QLabel(groupBox_2)
         label_7.setObjectName("label_7")
         gridLayout_2.aW..(label_7, 4, 0, 1, 1)
-        imageQualitySlider _ ?W...QSlider(groupBox_2)
+        imageQualitySlider _ ?W...?S..(groupBox_2)
         imageQualitySlider.setMaximum(4)
         imageQualitySlider.setOrientation(?C...__.H..)
         imageQualitySlider.setObjectName("imageQualitySlider")

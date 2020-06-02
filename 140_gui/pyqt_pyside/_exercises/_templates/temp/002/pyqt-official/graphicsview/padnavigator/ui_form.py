@@ -35,7 +35,7 @@ c_ Ui_Form(object):
         gridLayout.aW..(label_3, 2, 0, 1, 1)
         horizontalLayout _ ?W...QHBoxLayout()
         horizontalLayout.setObjectName("horizontalLayout")
-        horizontalSlider _ ?W...QSlider(groupBox)
+        horizontalSlider _ ?W...?S..(groupBox)
         horizontalSlider.setProperty("value", 42)
         horizontalSlider.setOrientation(?C...__.H..)
         horizontalSlider.setObjectName("horizontalSlider")

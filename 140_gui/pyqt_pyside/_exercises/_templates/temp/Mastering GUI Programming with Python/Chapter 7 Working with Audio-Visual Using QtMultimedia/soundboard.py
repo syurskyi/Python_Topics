@@ -67,7 +67,7 @@ c_ SoundWidget ?.?W..
         la__ .aW..(file_button, 4, 0)
 
         # Slider
-        position _ qtw.QSlider(
+        position _ qtw.?S..(
             minimum_0, orientation_qtc.__.H..)
         la__ .aW..(position, 1, 0, 1, 2)
 
@@ -84,7 +84,7 @@ c_ SoundWidget ?.?W..
         la__ .aW..(loop_cb, 2, 0)
 
         # Volume
-        volume _ qtw.QSlider(
+        volume _ qtw.?S..(
             minimum_0,
             maximum_100,
             sliderPosition_75,

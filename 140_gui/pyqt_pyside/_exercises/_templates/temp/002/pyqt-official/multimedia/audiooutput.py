@@ -49,7 +49,7 @@ ____ ?.?C.. ______ QByteArray, QIODevice, __, QTimer, qWarning
 ____ ?.?M.. ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
 ____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
-        ?MW.., ?PB.., QSlider, QVBoxLayout, ?W..)
+        ?MW.., ?PB.., ?S.., QVBoxLayout, ?W..)
 
 
 c_ Generator(QIODevice):
@@ -169,7 +169,7 @@ c_ AudioTest ?MW..
 
         volumeBox _ QHBoxLayout()
         volumeLabel _ QLabel("Volume:")
-        m_volumeSlider _ QSlider(__.H.., minimum_0, maximum_100,
+        m_volumeSlider _ ?S..(__.H.., minimum_0, maximum_100,
                 singleStep_10, valueChanged_self.volumeChanged)
         volumeBox.aW..(volumeLabel)
         volumeBox.aW..(m_volumeSlider)

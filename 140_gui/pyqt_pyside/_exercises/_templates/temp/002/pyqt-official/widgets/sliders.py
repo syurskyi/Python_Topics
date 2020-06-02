@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ pS.., __
 ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
         QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
-        QSlider, SB.., QStackedWidget, ?W..)
+        ?S.., SB.., QStackedWidget, ?W..)
 
 
 c_ SlidersGroup(QGroupBox):
@@ -55,9 +55,9 @@ c_ SlidersGroup(QGroupBox):
     ___  -   orientation, title, parent_None):
         super(SlidersGroup, self). - (title, parent)
 
-        slider _ QSlider(orientation)
+        slider _ ?S..(orientation)
         slider.sFP..(__.StrongFocus)
-        slider.setTickPosition(QSlider.TicksBothSides)
+        slider.setTickPosition(?S...TicksBothSides)
         slider.setTickInterval(10)
         slider.setSingleStep(1)
 

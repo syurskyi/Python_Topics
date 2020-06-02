@@ -47,7 +47,7 @@ ______ math
 
 ____ ?.?C.. ______ pS.., QPoint, ?S.., __
 ____ ?.?G.. ______ ?C.., QOpenGLVersionProfile
-____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, QSlider,
+____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, ?S..,
         ?W..)
 
 
@@ -82,13 +82,13 @@ c_ Window(?W..):
         sWT..("Hello GL")
 
     ___ createSlider
-        slider _ QSlider(__.Vertical)
+        slider _ ?S..(__.Vertical)
 
         slider.setRange(0, 360 * 16)
         slider.setSingleStep(16)
         slider.setPageStep(15 * 16)
         slider.setTickInterval(15 * 16)
-        slider.setTickPosition(QSlider.TicksRight)
+        slider.setTickPosition(?S...TicksRight)
 
         r_ slider
 

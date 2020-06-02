@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?DT__, __, QTimer
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
-        QSlider, SB.., ?SF.., QTableWidget, ?TW.., ?TE..,
+        ?S.., SB.., ?SF.., QTableWidget, ?TW.., ?TE..,
         QVBoxLayout, ?W..)
 
 
@@ -203,7 +203,7 @@ c_ WidgetGallery(QDialog):
         dateTimeEdit _ ?DTE..(bottomRightGroupBox)
         dateTimeEdit.setDateTime(?DT__.currentDateTime())
 
-        slider _ QSlider(__.H.., bottomRightGroupBox)
+        slider _ ?S..(__.H.., bottomRightGroupBox)
         slider.setValue(40)
 
         scrollBar _ QScrollBar(__.H.., bottomRightGroupBox)

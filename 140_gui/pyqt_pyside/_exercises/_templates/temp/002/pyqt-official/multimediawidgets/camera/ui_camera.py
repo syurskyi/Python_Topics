@@ -85,12 +85,12 @@ c_ Ui_Camera(object):
         label _ ?W...QLabel(tab_2)
         label.setObjectName("label")
         gridLayout.aW..(label, 2, 0, 1, 1)
-        exposureCompensation _ ?W...QSlider(tab_2)
+        exposureCompensation _ ?W...?S..(tab_2)
         exposureCompensation.setMinimum(-4)
         exposureCompensation.setMaximum(4)
         exposureCompensation.setPageStep(2)
         exposureCompensation.setOrientation(?C...__.H..)
-        exposureCompensation.setTickPosition(?W...QSlider.TicksAbove)
+        exposureCompensation.setTickPosition(?W...?S...TicksAbove)
         exposureCompensation.setObjectName("exposureCompensation")
         gridLayout.aW..(exposureCompensation, 3, 0, 1, 1)
         captureWidget.aT..(tab_2, "")
@@ -179,4 +179,4 @@ c_ Ui_Camera(object):
         actionStopCamera.sT..(_translate("Camera", "Stop Camera"))
         actionSettings.sT..(_translate("Camera", "Settings"))
 
-____ ?.QtMultimediaWidgets ______ QCameraViewfinder
+____ ?.?MW.. ______ QCameraViewfinder
