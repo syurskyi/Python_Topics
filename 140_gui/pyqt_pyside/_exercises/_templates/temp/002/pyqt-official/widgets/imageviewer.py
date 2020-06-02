@@ -56,7 +56,7 @@ c_ ImageViewer ?MW..
         printer _ QPrinter()
         scaleFactor _ 0.0
 
-        imageLabel _ QLabel()
+        imageLabel _ ?L..
         imageLabel.setBackgroundRole(?P...Base)
         imageLabel.sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
         imageLabel.setScaledContents( st.

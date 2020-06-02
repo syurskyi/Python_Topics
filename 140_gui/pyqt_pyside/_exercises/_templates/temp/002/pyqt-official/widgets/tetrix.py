@@ -60,7 +60,7 @@ c_ TetrixWindow(?W..):
 
         board _ TetrixBoard()
 
-        nextPieceLabel _ QLabel()
+        nextPieceLabel _ ?L..
         nextPieceLabel.setFrameStyle(QFrame.Box | QFrame.Raised)
         nextPieceLabel.setAlignment(__.AlignCenter)
         board.setNextPieceLabel(nextPieceLabel)

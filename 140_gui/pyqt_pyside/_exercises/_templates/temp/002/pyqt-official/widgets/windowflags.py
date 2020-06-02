@@ -132,7 +132,7 @@ c_ ControllerWindow(?W..):
         quitButton _ ?PB..("&Quit")
         quitButton.c__.c..(close)
 
-        bottomLayout _ QHBoxLayout()
+        bottomLayout _ ?HBL..
         bottomLayout.addStretch()
         bottomLayout.aW..(quitButton)
 

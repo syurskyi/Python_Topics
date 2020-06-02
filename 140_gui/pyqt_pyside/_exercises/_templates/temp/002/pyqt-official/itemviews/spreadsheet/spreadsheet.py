@@ -291,7 +291,7 @@ c_ SpreadSheet ?MW..
         okButton _ ?PB..("OK", addDialog)
         okButton.setDefault( st.
         okButton.c__.c..(addDialog.accept)
-        buttonsLayout _ QHBoxLayout()
+        buttonsLayout _ ?HBL..
         buttonsLayout.addStretch(1)
         buttonsLayout.aW..(okButton)
         buttonsLayout.addSpacing(10)
@@ -302,20 +302,20 @@ c_ SpreadSheet ?MW..
         dialogLayout.addStretch(1)
         dialogLayout.aI..(buttonsLayout)
 
-        cell1Layout _ QHBoxLayout()
+        cell1Layout _ ?HBL..
         cell1Layout.aW..(cell1Label)
         cell1Layout.addSpacing(10)
         cell1Layout.aW..(cell1ColInput)
         cell1Layout.addSpacing(10)
         cell1Layout.aW..(cell1RowInput)
 
-        cell2Layout _ QHBoxLayout()
+        cell2Layout _ ?HBL..
         cell2Layout.aW..(cell2Label)
         cell2Layout.addSpacing(10)
         cell2Layout.aW..(cell2ColInput)
         cell2Layout.addSpacing(10)
         cell2Layout.aW..(cell2RowInput)
-        outLayout _ QHBoxLayout()
+        outLayout _ ?HBL..
         outLayout.aW..(outLabel)
         outLayout.addSpacing(10)
         outLayout.aW..(outColInput)

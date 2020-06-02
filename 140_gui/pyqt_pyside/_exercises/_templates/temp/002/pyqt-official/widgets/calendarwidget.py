@@ -266,7 +266,7 @@ c_ Window(?W..):
         verticalHeaderCombo.currentIndexChanged.c..(
                 verticalHeaderChanged)
 
-        checkBoxLayout _ QHBoxLayout()
+        checkBoxLayout _ ?HBL..
         checkBoxLayout.aW..(gridCheckBox)
         checkBoxLayout.addStretch()
         checkBoxLayout.aW..(navigationCheckBox)
@@ -374,7 +374,7 @@ c_ Window(?W..):
         firstFridayCheckBox.t__.c..(reformatCalendarPage)
         mayFirstCheckBox.t__.c..(reformatCalendarPage)
 
-        checkBoxLayout _ QHBoxLayout()
+        checkBoxLayout _ ?HBL..
         checkBoxLayout.aW..(firstFridayCheckBox)
         checkBoxLayout.addStretch()
         checkBoxLayout.aW..(mayFirstCheckBox)

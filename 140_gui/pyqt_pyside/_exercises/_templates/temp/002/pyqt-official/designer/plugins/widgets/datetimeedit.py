@@ -356,7 +356,7 @@ __ __name__ __ "__main__":
     app _ ?A..(___.a..
 
     w _ ?W..
-    lay _ QHBoxLayout()
+    lay _ ?HBL..
 
     lay.aW..(PyDateEdit())
     lay.aW..(PyDateTimeEdit())

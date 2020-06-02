@@ -115,7 +115,7 @@ c_ Window(?W..):
         sourceView.setRootIsDecorated F..
         sourceView.setAlternatingRowColors( st.
 
-        sourceLayout _ QHBoxLayout()
+        sourceLayout _ ?HBL..
         sourceLayout.aW..(sourceView)
         sourceGroupBox _ QGroupBox("Original Model")
         sourceGroupBox.sL..(sourceLayout)

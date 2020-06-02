@@ -84,7 +84,7 @@ c_ MainWindow ?MW..
         yearEdit.dateChanged.c..(setYear)
         fontSizeSpinBox.valueChanged.c..(setfontSize)
 
-        controlsLayout _ QHBoxLayout()
+        controlsLayout _ ?HBL..
         controlsLayout.aW..(dateLabel)
         controlsLayout.aW..(monthCombo)
         controlsLayout.aW..(yearEdit)

@@ -45,7 +45,7 @@ c_ Ui_StyleSheetEditor(object):
         label_7.sSP..(sizePolicy)
         label_7.setObjectName("label_7")
         gridlayout.aW..(label_7, 0, 1, 1, 1)
-        hboxlayout _ ?W...QHBoxLayout()
+        hboxlayout _ ?W...?HBL..
         hboxlayout.setSpacing(6)
         hboxlayout.setContentsMargins(0, 0, 0, 0)
         hboxlayout.setObjectName("hboxlayout")

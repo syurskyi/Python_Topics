@@ -403,7 +403,7 @@ c_ MainWindow ?MW..
 
         createToolbars()
 
-        layout _ QHBoxLayout()
+        layout _ ?HBL..
         layout.aW..(toolBox)
         view _ QGraphicsView(scene)
         layout.aW..(view)

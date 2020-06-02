@@ -68,7 +68,7 @@ c_ Window(?W..):
         zSlider.valueChanged.c..(glWidget.setZRotation)
         glWidget.zRotationChanged.c..(zSlider.sV..)
 
-        mainLayout _ QHBoxLayout()
+        mainLayout _ ?HBL..
         mainLayout.aW..(glWidget)
         mainLayout.aW..(xSlider)
         mainLayout.aW..(ySlider)

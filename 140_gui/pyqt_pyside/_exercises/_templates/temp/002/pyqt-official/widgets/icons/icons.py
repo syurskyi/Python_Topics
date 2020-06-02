@@ -148,7 +148,7 @@ c_ IconPreviewArea(?W..):
         r_ label
 
     ___ createPixmapLabel 
-        label _ QLabel()
+        label _ ?L..
         label.sE.. F..
         label.setAlignment(__.AlignCenter)
         label.setFrameShape(QFrame.Box)
@@ -388,7 +388,7 @@ c_ MainWindow ?MW..
         otherRadioButton.t__.c..(changeSize)
         otherSpinBox.valueChanged.c..(changeSize)
 
-        otherSizeLayout _ QHBoxLayout()
+        otherSizeLayout _ ?HBL..
         otherSizeLayout.aW..(otherRadioButton)
         otherSizeLayout.aW..(otherSpinBox)
         otherSizeLayout.addStretch()

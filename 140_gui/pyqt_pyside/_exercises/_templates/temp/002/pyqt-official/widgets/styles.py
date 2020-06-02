@@ -80,7 +80,7 @@ c_ WidgetGallery(QDialog):
         disableWidgetsCheckBox.t__.c..(bottomLeftTabWidget.sD..)
         disableWidgetsCheckBox.t__.c..(bottomRightGroupBox.sD..)
 
-        topLayout _ QHBoxLayout()
+        topLayout _ ?HBL..
         topLayout.aW..(styleLabel)
         topLayout.aW..(styleComboBox)
         topLayout.addStretch(1)
@@ -166,7 +166,7 @@ c_ WidgetGallery(QDialog):
         tab1 _ ?W..
         tableWidget _ ?TW..(10, 10)
 
-        tab1hbox _ QHBoxLayout()
+        tab1hbox _ ?HBL..
         tab1hbox.setContentsMargins(5, 5, 5, 5)
         tab1hbox.aW..(tableWidget)
         tab1.sL..(tab1hbox)
@@ -181,7 +181,7 @@ c_ WidgetGallery(QDialog):
                               "Twinkle, twinkle, little star,\n" 
                               "How I wonder what you are!\n")
 
-        tab2hbox _ QHBoxLayout()
+        tab2hbox _ ?HBL..
         tab2hbox.setContentsMargins(5, 5, 5, 5)
         tab2hbox.aW..(textEdit)
         tab2.sL..(tab2hbox)

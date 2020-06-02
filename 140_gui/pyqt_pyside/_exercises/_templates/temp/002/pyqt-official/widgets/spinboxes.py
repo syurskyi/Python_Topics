@@ -56,7 +56,7 @@ c_ Window(?W..):
         createDateTimeEdits()
         createDoubleSpinBoxes()
 
-        layout _ QHBoxLayout()
+        layout _ ?HBL..
         layout.aW..(spinBoxesGroup)
         layout.aW..(editsGroup)
         layout.aW..(doubleSpinBoxesGroup)
@@ -100,21 +100,21 @@ c_ Window(?W..):
     ___ createDateTimeEdits 
         editsGroup _ QGroupBox("Date and time spin boxes")
 
-        dateLabel _ QLabel()
+        dateLabel _ ?L..
         dateEdit _ ?DE..(?D...currentDate())
         dateEdit.setDateRange(?D..(2005, 1, 1), ?D..(2010, 12, 31))
         dateLabel.sT..("Appointment date (between %s and %s):" %
                     (dateEdit.minimumDate().toString(__.ISODate),
                     dateEdit.maximumDate().toString(__.ISODate)))
 
-        timeLabel _ QLabel()
+        timeLabel _ ?L..
         timeEdit _ ?TE..(?T...currentTime())
         timeEdit.setTimeRange(?T..(9, 0, 0, 0), ?T..(16, 30, 0, 0))
         timeLabel.sT..("Appointment time (between %s and %s):" %
                     (timeEdit.minimumTime().toString(__.ISODate),
                     timeEdit.maximumTime().toString(__.ISODate)))
 
-        meetingLabel _ QLabel()
+        meetingLabel _ ?L..
         meetingEdit _ ?DTE..(?DT__.currentDateTime())
 
         formatLabel _ QLabel("Format string for the meeting date and time:")

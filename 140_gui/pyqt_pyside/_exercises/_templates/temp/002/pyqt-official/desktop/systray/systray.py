@@ -135,7 +135,7 @@ c_ Window(QDialog):
         showIconCheckBox _ QCheckBox("Show icon")
         showIconCheckBox.sC__( st.
 
-        iconLayout _ QHBoxLayout()
+        iconLayout _ ?HBL..
         iconLayout.aW..(iconLabel)
         iconLayout.aW..(iconComboBox)
         iconLayout.addStretch()

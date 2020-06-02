@@ -38,7 +38,7 @@ c_ Ui_NicknameDialog(object):
         nickname.setObjectName("nickname")
         vboxlayout1.aW..(nickname)
         vboxlayout.aL..(vboxlayout1)
-        hboxlayout _ ?W...QHBoxLayout()
+        hboxlayout _ ?W...?HBL..
         hboxlayout.setContentsMargins(0, 0, 0, 0)
         hboxlayout.setSpacing(6)
         hboxlayout.setObjectName("hboxlayout")

@@ -60,7 +60,7 @@ c_ Receiver(QDialog):
         udpSocket.readyRead.c..(processPendingDatagrams)
         quitButton.c__.c..(close)
 
-        buttonLayout _ QHBoxLayout()
+        buttonLayout _ ?HBL..
         buttonLayout.addStretch(1)
         buttonLayout.aW..(quitButton)
         buttonLayout.addStretch(1)

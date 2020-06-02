@@ -191,7 +191,7 @@ c_ MoviePlayer(?W..):
         quitButton.sTT..("Quit")
         quitButton.c__.c..(close)
 
-        buttonsLayout _ QHBoxLayout()
+        buttonsLayout _ ?HBL..
         buttonsLayout.addStretch()
         buttonsLayout.aW..(openButton)
         buttonsLayout.aW..(playButton)

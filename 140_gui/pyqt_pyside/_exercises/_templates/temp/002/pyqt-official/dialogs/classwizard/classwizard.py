@@ -380,7 +380,7 @@ c_ ConclusionPage(QWizardPage):
         sP..(QWizard.WatermarkPixmap,
                 ?P..(':/images/watermark2.png'))
 
-        label _ QLabel()
+        label _ ?L..
         label.setWordWrap( st.
 
         layout _ ?VBL..

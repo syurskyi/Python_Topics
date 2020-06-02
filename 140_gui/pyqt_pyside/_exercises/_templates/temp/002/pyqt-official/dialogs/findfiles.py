@@ -65,11 +65,11 @@ c_ Window(QDialog):
         fileLabel _ QLabel("Named:")
         textLabel _ QLabel("Containing text:")
         directoryLabel _ QLabel("In directory:")
-        filesFoundLabel _ QLabel()
+        filesFoundLabel _ ?L..
 
         createFilesTable()
 
-        buttonsLayout _ QHBoxLayout()
+        buttonsLayout _ ?HBL..
         buttonsLayout.addStretch()
         buttonsLayout.aW..(findButton)
 

@@ -87,7 +87,7 @@ c_ HttpWindow(QDialog):
         downloadButton.c__.c..(downloadFile)
         quitButton.c__.c..(close)
 
-        topLayout _ QHBoxLayout()
+        topLayout _ ?HBL..
         topLayout.aW..(urlLabel)
         topLayout.aW..(urlLineEdit)
 

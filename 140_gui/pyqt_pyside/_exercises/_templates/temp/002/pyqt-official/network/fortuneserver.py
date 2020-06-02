@@ -68,7 +68,7 @@ c_ Server(QDialog):
         tcpServer _ N..
         networkSession _ N..
 
-        statusLabel _ QLabel()
+        statusLabel _ ?L..
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
@@ -94,7 +94,7 @@ c_ Server(QDialog):
         quitButton.c__.c..(close)
         tcpServer.newConnection.c..(sendFortune)
 
-        buttonLayout _ QHBoxLayout()
+        buttonLayout _ ?HBL..
         buttonLayout.addStretch(1)
         buttonLayout.aW..(quitButton)
         buttonLayout.addStretch(1)

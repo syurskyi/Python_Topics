@@ -34,7 +34,7 @@ c_ Ui_MainWindow(object):
         playlistView.setUniformItemSizes( st.
         playlistView.setObjectName("playlistView")
         verticalLayout.aW..(playlistView)
-        horizontalLayout_4 _ ?W...QHBoxLayout()
+        horizontalLayout_4 _ ?W...?HBL..
         horizontalLayout_4.setSpacing(6)
         horizontalLayout_4.setObjectName("horizontalLayout_4")
         currentTimeLabel _ ?W...QLabel(centralWidget)
@@ -52,7 +52,7 @@ c_ Ui_MainWindow(object):
         totalTimeLabel.setObjectName("totalTimeLabel")
         horizontalLayout_4.aW..(totalTimeLabel)
         verticalLayout.aL..(horizontalLayout_4)
-        horizontalLayout_5 _ ?W...QHBoxLayout()
+        horizontalLayout_5 _ ?W...?HBL..
         horizontalLayout_5.setSpacing(6)
         horizontalLayout_5.setObjectName("horizontalLayout_5")
         previousButton _ ?W...?PB..(centralWidget)

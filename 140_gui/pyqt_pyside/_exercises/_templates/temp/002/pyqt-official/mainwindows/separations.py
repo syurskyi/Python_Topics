@@ -60,7 +60,7 @@ c_ FinalWidget(QFrame):
         dragStartPosition _ QPoint()
 
         hasImage _ F..
-        imageLabel _ QLabel()
+        imageLabel _ ?L..
         imageLabel.setFrameShadow(QFrame.Sunken)
         imageLabel.setFrameShape(QFrame.StyledPanel)
         imageLabel.sMS..(labelSize)
@@ -142,7 +142,7 @@ c_ ScreenWidget(QFrame):
         maskColor _ mask
         inverted _ F..
 
-        imageLabel _ QLabel()
+        imageLabel _ ?L..
         imageLabel.setFrameShadow(QFrame.Sunken)
         imageLabel.setFrameShape(QFrame.StyledPanel)
         imageLabel.sMS..(labelSize)

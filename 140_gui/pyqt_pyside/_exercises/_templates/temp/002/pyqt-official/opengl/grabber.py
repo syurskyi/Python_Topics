@@ -286,7 +286,7 @@ c_ MainWindow ?MW..
         sCW..(centralWidget)
 
         glWidget _ GLWidget()
-        pixmapLabel _ QLabel()
+        pixmapLabel _ ?L..
 
         glWidgetArea _ QScrollArea()
         glWidgetArea.setWidget(glWidget)

@@ -17,8 +17,8 @@ c_ DataGrid(?W..):
         tableView _ ?TV..
         tableView.sM..(queryModel)
         #
-        totalPageLabel _ QLabel()
-        currentPageLabel _ QLabel()
+        totalPageLabel _ ?L..
+        currentPageLabel _ ?L..
         switchPageLineEdit _ ?LE..
         prevButton _ ?PB..("Prev")
         nextButton _ ?PB..("Next")
@@ -42,7 +42,7 @@ c_ DataGrid(?W..):
         tableView.hH.. .sSRM..(?HV...Stretch)
         layout.aW..(tableView)
 
-        hLayout _ QHBoxLayout()
+        hLayout _ ?HBL..
         hLayout.aW..(prevButton)
         hLayout.aW..(nextButton)
         hLayout.aW..(QLabel("Jump To"))

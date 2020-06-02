@@ -116,7 +116,7 @@ class MainWindow(?MW..):
     def  - (self, $ $$
         s__(MainWindow, self). - ($ $$)
 
-        layout = QHBoxLayout()
+        layout = ?HBL..
 
         ax = pg.PlotWidget()
         ax.showGrid(T..,  st.

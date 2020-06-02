@@ -91,7 +91,7 @@ c_ Dialog(QDialog):
 
     ___ createHorizontalGroupBox 
         horizontalGroupBox _ QGroupBox("Horizontal layout")
-        layout _ QHBoxLayout()
+        layout _ ?HBL..
 
         ___ i __ ra..(Dialog.NumButtons):
             button _ ?PB..("Button %d" % (i + 1))

@@ -763,7 +763,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         fontToolbar.addAction(actionUnderline)
         actionUnderline.triggered.connect(l___ s: canvas.set_config('underline', s))
 
-        sizeicon = QLabel()
+        sizeicon = ?L..
         sizeicon.sP..(?P..(os.pa__.join('images', 'border-weight.png')))
         drawingToolbar.addWidget(sizeicon)
         sizeselect = ?S..()

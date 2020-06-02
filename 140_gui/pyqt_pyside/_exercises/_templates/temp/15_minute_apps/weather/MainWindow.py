@@ -18,7 +18,7 @@ c_ Ui_MainWindow(object):
         horizontalLayout.setObjectName("horizontalLayout")
         verticalLayout _ ?W...?VBL..
         verticalLayout.setObjectName("verticalLayout")
-        horizontalLayout_3 _ ?W...QHBoxLayout()
+        horizontalLayout_3 _ ?W...?HBL..
         horizontalLayout_3.setObjectName("horizontalLayout_3")
         lineEdit _ ?W...QLineEdit(centralwidget)
         lineEdit.setObjectName("lineEdit")
@@ -31,7 +31,7 @@ c_ Ui_MainWindow(object):
         pushButton.setObjectName("pushButton")
         horizontalLayout_3.aW..(pushButton)
         verticalLayout.aL..(horizontalLayout_3)
-        horizontalLayout_4 _ ?W...QHBoxLayout()
+        horizontalLayout_4 _ ?W...?HBL..
         horizontalLayout_4.setObjectName("horizontalLayout_4")
         weatherIcon _ ?W...QLabel(centralwidget)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Maximum, ?W...QSizePolicy.Preferred)

@@ -27,7 +27,7 @@ c_ Ui_Form(object):
         plainTextEdit _ ?W...QPlainTextEdit(editorBox)
         plainTextEdit.setObjectName("plainTextEdit")
         verticalLayout_2.aW..(plainTextEdit)
-        horizontalLayout _ ?W...QHBoxLayout()
+        horizontalLayout _ ?W...?HBL..
         horizontalLayout.setObjectName("horizontalLayout")
         clearButton _ ?W...?PB..(editorBox)
         clearButton.setObjectName("clearButton")

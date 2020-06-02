@@ -125,7 +125,7 @@ c_ Window(?W..):
         verticalSliders.valueChanged.c..(valueSpinBox.sV..)
         valueSpinBox.valueChanged.c..(horizontalSliders.sV..)
 
-        layout _ QHBoxLayout()
+        layout _ ?HBL..
         layout.aW..(controlsGroup)
         layout.aW..(stackedWidget)
         sL..(layout)

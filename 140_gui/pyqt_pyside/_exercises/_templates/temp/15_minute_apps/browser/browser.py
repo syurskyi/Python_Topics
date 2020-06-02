@@ -26,7 +26,7 @@ class AboutDialog(QDialog):
 
         layout.addWidget(title)
 
-        logo = QLabel()
+        logo = ?L..
         logo.sP..(?P..(os.pa__.join('images', 'ma-icon-128.png')))
         layout.addWidget(logo)
 
@@ -81,7 +81,7 @@ class MainWindow(?MW..):
 
         navtb.addSeparator()
 
-        httpsicon = QLabel()  # Yes, really!
+        httpsicon = ?L..  # Yes, really!
         httpsicon.sP..(?P..(os.pa__.join('images', 'lock-nossl.png')))
         navtb.addWidget(httpsicon)
 

@@ -70,11 +70,11 @@ c_ VideoPlayer(?W..):
         positionSlider.setRange(0, 0)
         positionSlider.sliderMoved.c..(setPosition)
 
-        errorLabel _ QLabel()
+        errorLabel _ ?L..
         errorLabel.sSP..(QSizePolicy.Preferred,
                 QSizePolicy.Maximum)
 
-        controlLayout _ QHBoxLayout()
+        controlLayout _ ?HBL..
         controlLayout.setContentsMargins(0, 0, 0, 0)
         controlLayout.aW..(openButton)
         controlLayout.aW..(playButton)

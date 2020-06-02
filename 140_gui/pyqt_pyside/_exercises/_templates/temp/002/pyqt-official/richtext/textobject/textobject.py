@@ -115,7 +115,7 @@ c_ Window(?W..):
         fileNameLineEdit.sT..('./files/heart.svg')
         insertTextObjectButton.c__.c..(insertTextObject)
 
-        bottomLayout _ QHBoxLayout()
+        bottomLayout _ ?HBL..
         bottomLayout.aW..(fileNameLabel)
         bottomLayout.aW..(fileNameLineEdit)
         bottomLayout.aW..(insertTextObjectButton)

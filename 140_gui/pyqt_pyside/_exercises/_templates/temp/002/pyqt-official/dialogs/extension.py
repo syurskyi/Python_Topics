@@ -86,7 +86,7 @@ c_ FindDialog(QDialog):
         extensionLayout.aW..(searchSelectionCheckBox)
         extension.sL..(extensionLayout)
 
-        topLeftLayout _ QHBoxLayout()
+        topLeftLayout _ ?HBL..
         topLeftLayout.aW..(label)
         topLeftLayout.aW..(lineEdit)
 

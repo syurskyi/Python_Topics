@@ -66,7 +66,7 @@ c_ ConfigurationPage(?W..):
         serverCombo.aI..("Trolltech (People's Republic of China)")
         serverCombo.aI..("Trolltech (USA)")
 
-        serverLayout _ QHBoxLayout()
+        serverLayout _ ?HBL..
         serverLayout.aW..(serverLabel)
         serverLayout.aW..(serverCombo)
 
@@ -189,11 +189,11 @@ c_ ConfigDialog(QDialog):
 
         closeButton.c__.c..(close)
 
-        horizontalLayout _ QHBoxLayout()
+        horizontalLayout _ ?HBL..
         horizontalLayout.aW..(contentsWidget)
         horizontalLayout.aW..(pagesWidget, 1)
 
-        buttonsLayout _ QHBoxLayout()
+        buttonsLayout _ ?HBL..
         buttonsLayout.addStretch(1)
         buttonsLayout.aW..(closeButton)
 

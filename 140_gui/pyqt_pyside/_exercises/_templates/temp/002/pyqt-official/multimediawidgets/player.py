@@ -203,7 +203,7 @@ c_ PlayerControls(?W..):
         rateBox.aI..("2.0x", 2.0)
         rateBox.sCI..(1)
 
-        layout _ QHBoxLayout()
+        layout _ ?HBL..
         layout.setContentsMargins(0, 0, 0, 0)
         layout.aW..(stopButton)
         layout.aW..(previousButton)
@@ -416,13 +416,13 @@ c_ Player(?W..):
         slider _ ?S..(__.H..)
         slider.setRange(0, player.duration() / 1000)
 
-        labelDuration _ QLabel()
+        labelDuration _ ?L..
         slider.sliderMoved.c..(seek)
 
-        labelHistogram _ QLabel()
+        labelHistogram _ ?L..
         labelHistogram.sT..("Histogram:")
         histogram _ HistogramWidget()
-        histogramLayout _ QHBoxLayout()
+        histogramLayout _ ?HBL..
         histogramLayout.aW..(labelHistogram)
         histogramLayout.aW..(histogram, 1)
 
@@ -458,11 +458,11 @@ c_ Player(?W..):
         colorButton.sE.. F..
         colorButton.c__.c..(showColorDialog)
 
-        displayLayout _ QHBoxLayout()
+        displayLayout _ ?HBL..
         displayLayout.aW..(videoWidget, 2)
         displayLayout.aW..(playlistView)
 
-        controlLayout _ QHBoxLayout()
+        controlLayout _ ?HBL..
         controlLayout.setContentsMargins(0, 0, 0, 0)
         controlLayout.aW..(openButton)
         controlLayout.addStretch(1)
@@ -473,7 +473,7 @@ c_ Player(?W..):
 
         layout _ ?VBL..
         layout.aL..(displayLayout)
-        hLayout _ QHBoxLayout()
+        hLayout _ ?HBL..
         hLayout.aW..(slider)
         hLayout.aW..(labelDuration)
         layout.aL..(hLayout)

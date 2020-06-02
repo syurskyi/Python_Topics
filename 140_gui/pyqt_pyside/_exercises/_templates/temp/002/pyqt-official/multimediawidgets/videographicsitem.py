@@ -83,7 +83,7 @@ c_ VideoPlayer(?W..):
         positionSlider.setRange(0, 0)
         positionSlider.sliderMoved.c..(setPosition)
 
-        controlLayout _ QHBoxLayout()
+        controlLayout _ ?HBL..
         controlLayout.setContentsMargins(0, 0, 0, 0)
         controlLayout.aW..(openButton)
         controlLayout.aW..(playButton)

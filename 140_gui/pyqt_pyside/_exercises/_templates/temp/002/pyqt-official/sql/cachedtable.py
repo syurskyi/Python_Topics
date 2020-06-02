@@ -80,7 +80,7 @@ c_ TableEditor(QDialog):
         revertButton.c__.c..(model.revertAll)
         quitButton.c__.c..(close)
 
-        mainLayout _ QHBoxLayout()
+        mainLayout _ ?HBL..
         mainLayout.aW..(view)
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)

@@ -117,7 +117,7 @@ c_ Window(?W..):
         filterCaseSensitivityCheckBox.t__.c..(filterRegExpChanged)
         sortCaseSensitivityCheckBox.t__.c..(sortChanged)
 
-        sourceLayout _ QHBoxLayout()
+        sourceLayout _ ?HBL..
         sourceLayout.aW..(sourceView)
         sourceGroupBox.sL..(sourceLayout)
 

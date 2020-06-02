@@ -28,7 +28,7 @@ c_ Ui_ChatMainWindow(object):
         chatHistory.setAcceptRichText( st.
         chatHistory.setObjectName("chatHistory")
         vboxlayout.aW..(chatHistory)
-        hboxlayout1 _ ?W...QHBoxLayout()
+        hboxlayout1 _ ?W...?HBL..
         hboxlayout1.setContentsMargins(0, 0, 0, 0)
         hboxlayout1.setSpacing(6)
         hboxlayout1.setObjectName("hboxlayout1")

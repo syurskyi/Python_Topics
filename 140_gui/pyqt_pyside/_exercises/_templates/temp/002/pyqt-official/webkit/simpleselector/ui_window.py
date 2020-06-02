@@ -19,7 +19,7 @@ c_ Ui_Window(object):
         webView.setUrl(?C...?U..("http://webkit.org/"))
         webView.setObjectName("webView")
         verticalLayout.aW..(webView)
-        horizontalLayout _ ?W...QHBoxLayout()
+        horizontalLayout _ ?W...?HBL..
         horizontalLayout.setObjectName("horizontalLayout")
         formLayout _ ?W...?FL..
         formLayout.setFieldGrowthPolicy(?W...?FL...ExpandingFieldsGrow)

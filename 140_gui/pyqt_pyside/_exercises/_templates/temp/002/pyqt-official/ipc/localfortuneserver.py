@@ -56,7 +56,7 @@ c_ Server(QDialog):
     ___  -   parent_None):
         s__(Server, self). - (parent)
 
-        statusLabel _ QLabel()
+        statusLabel _ ?L..
         statusLabel.setWordWrap( st.
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
@@ -84,7 +84,7 @@ c_ Server(QDialog):
         quitButton.c__.c..(close)
         server.newConnection.c..(sendFortune)
 
-        buttonLayout _ QHBoxLayout()
+        buttonLayout _ ?HBL..
         buttonLayout.addStretch(1)
         buttonLayout.aW..(quitButton)
         buttonLayout.addStretch(1)

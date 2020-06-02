@@ -66,63 +66,63 @@ c_ Dialog(QDialog):
 
         frameStyle _ QFrame.Sunken | QFrame.Panel
 
-        integerLabel _ QLabel()
+        integerLabel _ ?L..
         integerLabel.setFrameStyle(frameStyle)
         integerButton _ ?PB..("QInputDialog.get&Int()")
 
-        doubleLabel _ QLabel()
+        doubleLabel _ ?L..
         doubleLabel.setFrameStyle(frameStyle)
         doubleButton _ ?PB..("QInputDialog.get&Double()")
 
-        itemLabel _ QLabel()
+        itemLabel _ ?L..
         itemLabel.setFrameStyle(frameStyle)
         itemButton _ ?PB..("QInputDialog.getIte&m()")
 
-        textLabel _ QLabel()
+        textLabel _ ?L..
         textLabel.setFrameStyle(frameStyle)
         textButton _ ?PB..("QInputDialog.get&Text()")
 
-        colorLabel _ QLabel()
+        colorLabel _ ?L..
         colorLabel.setFrameStyle(frameStyle)
         colorButton _ ?PB..("QColorDialog.get&Color()")
 
-        fontLabel _ QLabel()
+        fontLabel _ ?L..
         fontLabel.setFrameStyle(frameStyle)
         fontButton _ ?PB..("QFontDialog.get&Font()")
 
-        directoryLabel _ QLabel()
+        directoryLabel _ ?L..
         directoryLabel.setFrameStyle(frameStyle)
         directoryButton _ ?PB..("QFileDialog.getE&xistingDirectory()")
 
-        openFileNameLabel _ QLabel()
+        openFileNameLabel _ ?L..
         openFileNameLabel.setFrameStyle(frameStyle)
         openFileNameButton _ ?PB..("QFileDialog.get&OpenFileName()")
 
-        openFileNamesLabel _ QLabel()
+        openFileNamesLabel _ ?L..
         openFileNamesLabel.setFrameStyle(frameStyle)
         openFileNamesButton _ ?PB..("QFileDialog.&getOpenFileNames()")
 
-        saveFileNameLabel _ QLabel()
+        saveFileNameLabel _ ?L..
         saveFileNameLabel.setFrameStyle(frameStyle)
         saveFileNameButton _ ?PB..("QFileDialog.get&SaveFileName()")
 
-        criticalLabel _ QLabel()
+        criticalLabel _ ?L..
         criticalLabel.setFrameStyle(frameStyle)
         criticalButton _ ?PB..("QMessageBox.critica&l()")
 
-        informationLabel _ QLabel()
+        informationLabel _ ?L..
         informationLabel.setFrameStyle(frameStyle)
         informationButton _ ?PB..("QMessageBox.i&nformation()")
 
-        questionLabel _ QLabel()
+        questionLabel _ ?L..
         questionLabel.setFrameStyle(frameStyle)
         questionButton _ ?PB..("QMessageBox.&question()")
 
-        warningLabel _ QLabel()
+        warningLabel _ ?L..
         warningLabel.setFrameStyle(frameStyle)
         warningButton _ ?PB..("QMessageBox.&warning()")
 
-        errorLabel _ QLabel()
+        errorLabel _ ?L..
         errorLabel.setFrameStyle(frameStyle)
         errorButton _ ?PB..("QErrorMessage.show&M&essage()")
 

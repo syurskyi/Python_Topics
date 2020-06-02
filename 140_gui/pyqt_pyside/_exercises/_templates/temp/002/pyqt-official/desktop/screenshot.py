@@ -53,7 +53,7 @@ c_ Screenshot(?W..):
     ___  -
         s__(Screenshot, self). - ()
 
-        screenshotLabel _ QLabel()
+        screenshotLabel _ ?L..
         screenshotLabel.sSP..(QSizePolicy.E..,
                 QSizePolicy.E..)
         screenshotLabel.setAlignment(__.AlignCenter)
@@ -146,7 +146,7 @@ c_ Screenshot(?W..):
 
         quitScreenshotButton _ createButton("Quit", close)
 
-        buttonsLayout _ QHBoxLayout()
+        buttonsLayout _ ?HBL..
         buttonsLayout.addStretch()
         buttonsLayout.aW..(newScreenshotButton)
         buttonsLayout.aW..(saveScreenshotButton)

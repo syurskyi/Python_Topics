@@ -33,7 +33,7 @@ c_ Ui_Form(object):
         label_3 _ ?W...QLabel(groupBox)
         label_3.setObjectName("label_3")
         gridLayout.aW..(label_3, 2, 0, 1, 1)
-        horizontalLayout _ ?W...QHBoxLayout()
+        horizontalLayout _ ?W...?HBL..
         horizontalLayout.setObjectName("horizontalLayout")
         horizontalSlider _ ?W...?S..(groupBox)
         horizontalSlider.setProperty("value", 42)

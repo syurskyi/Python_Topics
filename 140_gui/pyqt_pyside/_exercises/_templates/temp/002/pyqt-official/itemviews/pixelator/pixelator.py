@@ -177,7 +177,7 @@ c_ MainWindow ?MW..
         pixelSizeSpinBox.valueChanged.c..(delegate.setPixelSize)
         pixelSizeSpinBox.valueChanged.c..(updateView)
 
-        controlsLayout _ QHBoxLayout()
+        controlsLayout _ ?HBL..
         controlsLayout.aW..(pixelSizeLabel)
         controlsLayout.aW..(pixelSizeSpinBox)
         controlsLayout.addStretch(1)

@@ -200,7 +200,7 @@ c_ MainWindow ?MW..
         characterWidget.characterSelected.c..(insertCharacter)
         clipboardButton.c__.c..(updateClipboard)
 
-        controlsLayout _ QHBoxLayout()
+        controlsLayout _ ?HBL..
         controlsLayout.aW..(fontLabel)
         controlsLayout.aW..(fontCombo, 1)
         controlsLayout.aW..(sizeLabel)
@@ -211,7 +211,7 @@ c_ MainWindow ?MW..
         controlsLayout.aW..(fontMerging, 1)
         controlsLayout.addStretch(1)
 
-        lineLayout _ QHBoxLayout()
+        lineLayout _ ?HBL..
         lineLayout.aW..(lineEdit, 1)
         lineLayout.addSpacing(12)
         lineLayout.aW..(clipboardButton)

@@ -152,7 +152,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     mainWidget _ ?W..
-    horizontalLayout _ QHBoxLayout()
+    horizontalLayout _ ?HBL..
     horizontalLayout.aW..(DragWidget())
     horizontalLayout.aW..(DragWidget())
 

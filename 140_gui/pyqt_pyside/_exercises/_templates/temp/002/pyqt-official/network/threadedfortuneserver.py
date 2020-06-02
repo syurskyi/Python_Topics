@@ -104,7 +104,7 @@ c_ Dialog(QDialog):
 
         server _ FortuneServer()
 
-        statusLabel _ QLabel()
+        statusLabel _ ?L..
         statusLabel.setWordWrap( st.
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
@@ -128,7 +128,7 @@ c_ Dialog(QDialog):
 
         quitButton.c__.c..(close)
 
-        buttonLayout _ QHBoxLayout()
+        buttonLayout _ ?HBL..
         buttonLayout.addStretch(1)
         buttonLayout.aW..(quitButton)
         buttonLayout.addStretch(1)

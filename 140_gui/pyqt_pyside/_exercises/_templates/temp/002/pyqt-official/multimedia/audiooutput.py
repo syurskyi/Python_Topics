@@ -167,7 +167,7 @@ c_ AudioTest ?MW..
 
         layout.aW..(m_suspendResumeButton)
 
-        volumeBox _ QHBoxLayout()
+        volumeBox _ ?HBL..
         volumeLabel _ QLabel("Volume:")
         m_volumeSlider _ ?S..(__.H.., minimum_0, maximum_100,
                 singleStep_10, valueChanged_self.volumeChanged)

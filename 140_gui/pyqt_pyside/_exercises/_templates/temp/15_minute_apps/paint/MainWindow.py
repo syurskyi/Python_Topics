@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
         verticalLayout.setContentsMargins(11, 11, 11, 11)
         verticalLayout.setSpacing(6)
         verticalLayout.setObjectName("verticalLayout")
-        horizontalLayout = QtWidgets.QHBoxLayout()
+        horizontalLayout = QtWidgets.?HBL..
         horizontalLayout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
         horizontalLayout.setSpacing(6)
         horizontalLayout.setObjectName("horizontalLayout")
@@ -266,7 +266,7 @@ class Ui_MainWindow(object):
         canvas.setObjectName("canvas")
         horizontalLayout.addWidget(canvas)
         verticalLayout.aL..(horizontalLayout)
-        horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        horizontalLayout_2 = QtWidgets.?HBL..
         horizontalLayout_2.setSpacing(6)
         horizontalLayout_2.setObjectName("horizontalLayout_2")
         widget_3 = QtWidgets.?W..(centralWidget)

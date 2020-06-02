@@ -109,7 +109,7 @@ c_ RegExpDialog(QDialog):
             captureEdits[i].setReadOnly( st.
         captureLabels[0].sT..("Match:")
 
-        checkBoxLayout _ QHBoxLayout()
+        checkBoxLayout _ ?HBL..
         checkBoxLayout.aW..(caseSensitiveCheckBox)
         checkBoxLayout.aW..(minimalCheckBox)
         checkBoxLayout.addStretch(1)

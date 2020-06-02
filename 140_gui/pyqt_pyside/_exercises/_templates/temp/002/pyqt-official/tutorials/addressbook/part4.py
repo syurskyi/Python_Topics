@@ -127,7 +127,7 @@ c_ AddressBook(?W..):
         buttonLayout1.aW..(cancelButton)
         buttonLayout1.addStretch()
 
-        buttonLayout2 _ QHBoxLayout()
+        buttonLayout2 _ ?HBL..
         buttonLayout2.aW..(previousButton)
         buttonLayout2.aW..(nextButton)
 

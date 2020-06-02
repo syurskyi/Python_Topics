@@ -26,7 +26,7 @@ c_ Ui_MainWindow(object):
         verticalLayout_2.setObjectName("verticalLayout_2")
         verticalLayout _ ?W...?VBL..
         verticalLayout.setObjectName("verticalLayout")
-        horizontalLayout _ ?W...QHBoxLayout()
+        horizontalLayout _ ?W...?HBL..
         horizontalLayout.setSpacing(6)
         horizontalLayout.setObjectName("horizontalLayout")
         closeButton _ ?W...?PB..(centralWidget)
