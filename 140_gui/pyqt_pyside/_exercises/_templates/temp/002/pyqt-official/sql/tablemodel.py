@@ -50,9 +50,9 @@ ______ connection
 
 
 ___ initializeModel(model):
-    model.setTable('person')
+    model.sT..('person')
 
-    model.setEditStrategy(?STM...OnManualSubmit)
+    model.sES..(?STM...OnManualSubmit)
     model.select()
 
     model.setHeaderData(0, __.H.., "ID")

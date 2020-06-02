@@ -30,8 +30,8 @@ c_ MainWindow(?W..):
         deleteButton.c__.c..(onDeleteRow)
 
     ___ initializedModel
-        model.setTable("person")
-        model.setEditStrategy(?STM...OnFieldChange)
+        model.sT..("person")
+        model.sES..(?STM...OnFieldChange)
         model.select()
         model.setHeaderData(0, __.H.., "ID")
         model.setHeaderData(1, __.H.., "Name")

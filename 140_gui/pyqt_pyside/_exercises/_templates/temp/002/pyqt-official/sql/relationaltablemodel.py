@@ -51,9 +51,9 @@ ______ connection
 
 
 ___ initializeModel(model):
-    model.setTable('employee')
+    model.sT..('employee')
 
-    model.setEditStrategy(?STM...OnManualSubmit)
+    model.sES..(?STM...OnManualSubmit)
     model.setRelation(2, QSqlRelation('city', 'id', 'name'))
     model.setRelation(3, QSqlRelation('country', 'id', 'name'))
 

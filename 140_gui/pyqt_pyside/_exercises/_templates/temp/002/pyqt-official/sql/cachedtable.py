@@ -55,8 +55,8 @@ c_ TableEditor(QDialog):
         super(TableEditor, self). - (parent)
 
         model _ ?STM..
-        model.setTable(tableName)
-        model.setEditStrategy(?STM...OnManualSubmit)
+        model.sT..(tableName)
+        model.sES..(?STM...OnManualSubmit)
         model.select()
 
         model.setHeaderData(0, __.H.., "ID")
