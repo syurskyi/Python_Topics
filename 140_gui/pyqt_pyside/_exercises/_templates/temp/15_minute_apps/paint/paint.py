@@ -750,7 +750,7 @@ class MainWindow(?MW.., Ui_MainWindow):
 
         fontsize = ?CB()
         fontsize.aI..([str(s) ___ s __ FONT_SIZES])
-        fontsize.currentTextChanged.connect(l___ f: canvas.set_config('fontsize', int(f)))
+        fontsize.cTC...connect(l___ f: canvas.set_config('fontsize', int(f)))
 
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.

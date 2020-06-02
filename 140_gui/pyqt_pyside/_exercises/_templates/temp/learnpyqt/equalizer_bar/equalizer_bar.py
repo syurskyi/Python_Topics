@@ -58,7 +58,7 @@ c_ EqualizerBar(?W...?W..):
 
         brush _ ?G...?B..()
         brush.sC..(_background_color)
-        brush.setStyle(__.SolidPattern)
+        brush.sS..(__.SolidPattern)
         rect _ ?C...QRect(0, 0, painter.device().width(), painter.device().height())
         painter.fillRect(rect, brush)
 

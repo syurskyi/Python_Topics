@@ -161,7 +161,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 __ ______ __ ______
     app _ ?
     app.sAN..("Failamp")
-    app.setStyle("Fusion")
+    app.sS..("Fusion")
 
     # Fusion dark palette from https://gist.github.com/QuantumCD/6245215.
     palette _ ?P..()

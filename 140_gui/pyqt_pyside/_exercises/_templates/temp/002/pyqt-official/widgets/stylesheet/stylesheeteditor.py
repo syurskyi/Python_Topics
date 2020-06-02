@@ -41,7 +41,7 @@
 
 ____ ?.?C.. ______ pyqtSlot, QFile, QRegExp, __, QTextStream
 ____ ?.?W.. ______ (?A.., QDialog, ?FD.., ?MB..,
-        QStyleFactory)
+        ?SF..)
 
 ____ ui_stylesheeteditor ______ Ui_StyleSheetEditor
 
@@ -58,7 +58,7 @@ c_ StyleSheetEditor(QDialog):
         __ regExp.exactMatch(defaultStyle):
             defaultStyle _ regExp.cap(1)
 
-        ui.styleCombo.aI..(QStyleFactory.keys())
+        ui.styleCombo.aI..(?SF...keys())
         ui.styleCombo.setCurrentIndex(
                 ui.styleCombo.findText(defaultStyle, __.MatchContains))
 
@@ -69,7 +69,7 @@ c_ StyleSheetEditor(QDialog):
 
     @pyqtSlot st.
     ___ on_styleCombo_activated  styleName):
-        ?A...setStyle(styleName)
+        ?A...sS..(styleName)
         ui.applyButton.sE.. F..
 
     @pyqtSlot st.

@@ -47,7 +47,7 @@ ____ ?.?C.. ______ QEvent, QRectF, __, QTimeLine
 ____ ?.?G.. ______ (?B.., ?C.., QPainter, QPainterPath, ?P..,
         QTransform)
 ____ ?.?W.. ______ (?A.., QDialog, QGraphicsItem,
-        QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QStyleFactory,
+        QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, ?SF..,
         ?W..)
 
 ______ embeddeddialogs_rc
@@ -165,7 +165,7 @@ c_ EmbeddedDialog(QDialog):
         ui.setupUi
         ui.layoutDirection.setCurrentIndex(layoutDirection() !_ __.LeftToRight)
 
-        ___ styleName __ QStyleFactory.keys
+        ___ styleName __ ?SF...keys
             ui.style.aI..(styleName)
             __ style().objectName().lower() __ styleName.lower
                 ui.style.setCurrentIndex(ui.style.count() -1)
@@ -189,14 +189,14 @@ c_ EmbeddedDialog(QDialog):
         setFont(font)
 
     ___ setStyleHelper  widget, style):
-        widget.setStyle(style)
+        widget.sS..(style)
         widget.sP..(style.standardPalette())
         ___ child __ widget.children
             __ isinstance(child, ?W..):
                 setStyleHelper(child, style)
     
     ___ styleChanged  styleName):
-        style _ QStyleFactory.create(styleName)
+        style _ ?SF...create(styleName)
         __ style:
             setStyleHelper  style)
 

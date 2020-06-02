@@ -66,7 +66,7 @@ c_ MainWindow(MW_Base, MW_Ui):
         check_delete_btn()
 
         # check for selection of "new…" for category
-        event_category.currentTextChanged.c..(on_category_change)
+        event_category.cTC...c..(on_category_change)
 
         s..
 

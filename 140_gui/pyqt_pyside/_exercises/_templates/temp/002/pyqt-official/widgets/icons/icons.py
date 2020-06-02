@@ -48,7 +48,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
         ?A.., ?CB, ?FD.., QFrame, QGridLayout, QGroupBox,
         QHBoxLayout, QHeaderView, QItemDelegate, QLabel, ?MW..,
         ?MB.., QRadioButton, QSizePolicy, SB.., QStyle,
-        QStyleFactory, QTableWidget, QTableWidgetItem, QVBoxLayout, ?W..)
+        ?SF.., QTableWidget, QTableWidgetItem, QVBoxLayout, ?W..)
 
 
 c_ IconSizeSpinBox(SB..):
@@ -214,11 +214,11 @@ c_ MainWindow ?MW..
             r_
 
         action _ sender()
-        style _ QStyleFactory.create(action.data())
+        style _ ?SF...create(action.data())
         __ no. style:
             r_
 
-        ?A...setStyle(style)
+        ?A...sS..(style)
 
         setButtonText(smallRadioButton, "Small (%d x %d)",
                 style, QStyle.PM_SmallIconSize)
@@ -415,7 +415,7 @@ c_ MainWindow ?MW..
                 triggered_self.close)
 
         styleActionGroup _ QActionGroup
-        ___ styleName __ QStyleFactory.keys
+        ___ styleName __ ?SF...keys
             action _ ?A..(styleActionGroup,
                     text_"%s Style" % styleName, checkable_True,
                     triggered_self.changeStyle)
@@ -456,7 +456,7 @@ c_ MainWindow ?MW..
     ___ checkCurrentStyle 
         ___ action __ styleActionGroup.actions
             styleName _ action.data()
-            candidate _ QStyleFactory.create(styleName)
+            candidate _ ?SF...create(styleName)
 
             __ candidate __ N..:
                 r_

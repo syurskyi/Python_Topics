@@ -95,7 +95,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 __ ______ __ ______
     app _ ?
     app.sAN..("Brown Note")
-    app.setStyle("Fusion")
+    app.sS..("Fusion")
 
     # Custom brown palette.
     palette _ ?P..()

@@ -128,7 +128,7 @@ c_ MainWindow(qtw.?MW..):
         label_font.setFamily('Impact')
         label_font.setPointSize(14)
         label_font.setWeight(qtg.QFont.DemiBold)
-        label_font.setStyle(qtg.QFont.StyleItalic)
+        label_font.sS..(qtg.QFont.StyleItalic)
 
         ___ inp __ inputs.values
             cx_form.la__ .labelForField(inp).setFont(label_font)
@@ -370,10 +370,10 @@ c_ MainWindow(qtw.?MW..):
 
 __ ______ __ ______
     app _ qtw.?A..(___.a..
-    windows_style _ qtw.QStyleFactory.create('Windows')
-    app.setStyle(windows_style)
+    windows_style _ qtw.?SF...create('Windows')
+    app.sS..(windows_style)
     proxy_style _ StyleOverrides()
-    app.setStyle(proxy_style)
+    app.sS..(proxy_style)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

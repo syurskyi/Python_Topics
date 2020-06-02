@@ -191,7 +191,7 @@ class MainWindow(?MW..):
         toolbar.addWidget(currencyList)
         update_currency_list(AVAILABLE_BASE_CURRENCIES)
         currencyList.sCT..(base_currency)
-        currencyList.currentTextChanged.connect(change_base_currency)
+        currencyList.cTC...connect(change_base_currency)
 
         progress = QProgressBar()
         progress.setRange(0, 100)

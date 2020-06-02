@@ -289,8 +289,8 @@ c_ MainWindow ?MW..
         addDockWidget(__.RightDockWidgetArea, dock)
         viewMenu.aA..(dock.toggleViewAction())
 
-        customerList.currentTextChanged.c..(insertCustomer)
-        paragraphsList.currentTextChanged.c..(addParagraph)
+        customerList.cTC...c..(insertCustomer)
+        paragraphsList.cTC...c..(addParagraph)
 
 
 __ ______ __ ______

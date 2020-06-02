@@ -96,7 +96,7 @@ class MainWindow(?MW.., Ui_MainWindow):
 
         if GOOGLE_TRANSLATE_AVAILABLE:
             srcLanguage.aI..(LANGUAGES.keys())
-            srcLanguage.currentTextChanged[str].connect(update_src_language)
+            srcLanguage.cTC..[str].connect(update_src_language)
             srcLanguage.sCT..('English')
         ____:
             srcLanguage.hide()

@@ -566,7 +566,7 @@ c_ TextEdit ?MW..
                 blockFmt.setIndent(0)
                 cursor.setBlockFormat(blockFmt)
 
-            listFmt.setStyle(style)
+            listFmt.sS..(style)
             cursor.createList(listFmt)
             cursor.endEditBlock()
         ____

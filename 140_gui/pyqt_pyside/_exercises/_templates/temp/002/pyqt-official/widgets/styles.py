@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QDateTime, __, QTimer
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
-        QSlider, SB.., QStyleFactory, QTableWidget, ?TW.., ?TE..,
+        QSlider, SB.., ?SF.., QTableWidget, ?TW.., ?TE..,
         QVBoxLayout, ?W..)
 
 
@@ -57,7 +57,7 @@ c_ WidgetGallery(QDialog):
         originalPalette _ ?A...p..
 
         styleComboBox _ ?CB()
-        styleComboBox.aI..(QStyleFactory.keys())
+        styleComboBox.aI..(?SF...keys())
 
         styleLabel _ QLabel("&Style:")
         styleLabel.setBuddy(styleComboBox)
@@ -104,7 +104,7 @@ c_ WidgetGallery(QDialog):
         changeStyle('Windows')
 
     ___ changeStyle  styleName):
-        ?A...setStyle(QStyleFactory.create(styleName))
+        ?A...sS..(?SF...create(styleName))
         changePalette()
 
     ___ changePalette 
