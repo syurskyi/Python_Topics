@@ -81,7 +81,7 @@ class UpdateWorker(QRunnable):
 
             ___ n, offset __ en..(DATE_REQUEST_OFFSETS, 1):
                 when = today - timedelta(days=offset)
-                url = 'http://api.fixer.io/{}'.format(when.isoformat())
+                url = 'http://api.fixer.io/{}'.f..(when.isoformat())
                 r = requests.get(url, params={'base': base_currency})
                 r.raise_for_status()
                 data = r.json()

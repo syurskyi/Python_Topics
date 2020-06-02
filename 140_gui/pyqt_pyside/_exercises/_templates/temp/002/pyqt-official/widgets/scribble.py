@@ -231,13 +231,13 @@ c_ MainWindow ?MW..
         openAct _ ?A..("&Open...", self, shortcut_"Ctrl+O",
                 triggered_self.o..)
 
-        ___ format __ QImageWriter.supportedImageFormats
-            format _ str(format)
+        ___ f.. __ QImageWriter.supportedImageFormats
+            f.. _ str(f..)
 
-            t__ _ format.upper() + "..."
+            t__ _ f...upper() + "..."
 
             action _ ?A..(t__, self, triggered_self.save)
-            action.setData(format)
+            action.setData(f..)
             saveAsActs.ap..(action)
 
         printAct _ ?A..("&Print...", self,

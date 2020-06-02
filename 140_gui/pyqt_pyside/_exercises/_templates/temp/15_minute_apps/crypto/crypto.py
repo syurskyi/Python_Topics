@@ -73,7 +73,7 @@ class UpdateWorker(QRunnable):
             ___ n, crypto __ en..(AVAILABLE_CRYPTO_CURRENCIES, 1):
                 url = 'https://min-api.cryptocompare.com/data/histoday?fsym={fsym}&tsym={tsym}&limit={limit}'
                 r = requests.get(
-                    url.format(**{
+                    url.f..(**{
                         'fsym': crypto,
                         'tsym': base_currency,
                         'limit': NUMBER_OF_TIMEPOINTS-1,
@@ -93,7 +93,7 @@ class UpdateWorker(QRunnable):
 
             url = 'https://min-api.cryptocompare.com/data/exchange/histoday?tsym={tsym}&limit={limit}'
             r = requests.get(
-                url.format(**{
+                url.f..(**{
                     'tsym': base_currency,
                     'limit': NUMBER_OF_TIMEPOINTS-1,
                     'extraParams': 'www.learnpyqt.com',

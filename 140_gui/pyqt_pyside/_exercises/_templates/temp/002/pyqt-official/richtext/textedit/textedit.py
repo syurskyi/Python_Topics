@@ -560,7 +560,7 @@ c_ TextEdit ?MW..
             listFmt _ QTextListFormat()
 
             __ cursor.currentList
-                listFmt _ cursor.currentList().format()
+                listFmt _ cursor.currentList().f..()
             ____
                 listFmt.setIndent(blockFmt.indent() + 1)
                 blockFmt.setIndent(0)
@@ -594,9 +594,9 @@ c_ TextEdit ?MW..
         ____ action __ actionAlignJustify:
             textEdit.setAlignment(__.AlignJustify)
 
-    ___ currentCharFormatChanged  format):
-        fontChanged(format.font())
-        colorChanged(format.foreground().color())
+    ___ currentCharFormatChanged  f..):
+        fontChanged(f...font())
+        colorChanged(f...foreground().color())
 
     ___ cursorPositionChanged 
         alignmentChanged(textEdit.alignment())
@@ -610,13 +610,13 @@ c_ TextEdit ?MW..
                 "in action, providing an example document for you to "
                 "experiment with.")
 
-    ___ mergeFormatOnWordOrSelection  format):
+    ___ mergeFormatOnWordOrSelection  f..):
         cursor _ textEdit.textCursor()
         __ no. cursor.hasSelection
             cursor.select(QTextCursor.WordUnderCursor)
 
-        cursor.mergeCharFormat(format)
-        textEdit.mergeCurrentCharFormat(format)
+        cursor.mergeCharFormat(f..)
+        textEdit.mergeCurrentCharFormat(f..)
 
     ___ fontChanged  font):
         comboFont.sCI..(

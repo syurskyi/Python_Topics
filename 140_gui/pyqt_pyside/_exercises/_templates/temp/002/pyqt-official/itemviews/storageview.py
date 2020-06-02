@@ -136,7 +136,7 @@ c_ StorageModel ?ATM..
                 value _ columnFuncMap[column](volume)
                 __ isinstance(value, QByteArray):
                     value _ str(bytes(value).d..('utf-8'))
-                tooltip.ap..("{0}: {1}".format(label, value))
+                tooltip.ap..("{0}: {1}".f..(label, value))
             r_ "\n".join(tooltip)
 
     ___ hD..  section, orientation, role):

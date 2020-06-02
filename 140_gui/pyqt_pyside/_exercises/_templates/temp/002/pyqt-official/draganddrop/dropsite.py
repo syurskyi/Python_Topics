@@ -147,23 +147,23 @@ c_ DropSiteWindow(?W..):
         __ mimeData __ N..:
             r_
 
-        ___ format __ mimeData.formats
-            formatItem _ QTableWidgetItem(format)
+        ___ f.. __ mimeData.formats
+            formatItem _ QTableWidgetItem(f..)
             formatItem.setFlags(__.ItemIsEnabled)
             formatItem.setTextAlignment(__.AlignTop | __.AlignLeft)
 
-            __ format __ 'text/plain':
+            __ f.. __ 'text/plain':
                 t__ _ mimeData.t__().strip()
-            ____ format __ 'text/html':
+            ____ f.. __ 'text/html':
                 t__ _ mimeData.html().strip()
-            ____ format __ 'text/uri-list':
+            ____ f.. __ 'text/uri-list':
                 t__ _ " ".join([url.tS.. ___ url __ mimeData.urls()])
             ____
-                t__ _ " ".join(["%02X" % ord(datum) ___ datum __ mimeData.data(format)])
+                t__ _ " ".join(["%02X" % ord(datum) ___ datum __ mimeData.data(f..)])
 
             row _ formatsTable.rowCount()
             formatsTable.insertRow(row)
-            formatsTable.setItem(row, 0, QTableWidgetItem(format))
+            formatsTable.setItem(row, 0, QTableWidgetItem(f..))
             formatsTable.setItem(row, 1, QTableWidgetItem(t__))
 
         formatsTable.resizeColumnToContents(0)

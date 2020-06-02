@@ -12,7 +12,7 @@ c_ Window(?W...?MW..):
         sCW..(palette)
 
     ___ show_selected_color  c):
-        print("Selected: {}".format(c))
+        print("Selected: {}".f..(c))
 
 
 app _ ?W...?

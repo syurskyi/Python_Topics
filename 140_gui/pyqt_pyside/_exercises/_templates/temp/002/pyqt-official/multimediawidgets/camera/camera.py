@@ -155,11 +155,11 @@ c_ VideoSettings(QDialog):
             ui.videoFramerateBox.aI..("%0.2f" % rate, rate)
 
         ui.containerFormatBox.aI..("Default container", "")
-        ___ format __ mediaRecorder.supportedContainers
+        ___ f.. __ mediaRecorder.supportedContainers
             ui.containerFormatBox.aI..(
-                    format + ":" + mediaRecorder.containerDescription(
-                            format),
-                    format)
+                    f.. + ":" + mediaRecorder.containerDescription(
+                            f..),
+                    f..)
 
     ___ audioSettings
         settings _ mediaRecorder.audioSettings()
@@ -200,11 +200,11 @@ c_ VideoSettings(QDialog):
                 ui.videoFramerateBox.sCI..(i)
                 break
 
-    ___ format
+    ___ f..
         r_ boxValue(ui.containerFormatBox)
 
-    ___ setFormat  format):
-        selectComboBoxItem(ui.containerFormatBox, format)
+    ___ setFormat  f..):
+        selectComboBoxItem(ui.containerFormatBox, f..)
 
     @staticmethod
     ___ boxValue(box):
@@ -365,7 +365,7 @@ c_ Camera ?MW..
         __ settingsDialog.exec_
             audioSettings _ settingsDialog.audioSettings()
             videoSettings _ settingsDialog.videoSettings()
-            videoContainerFormat _ settingsDialog.format()
+            videoContainerFormat _ settingsDialog.f..()
 
             mediaRecorder.setEncodingSettings(audioSettings,
                     videoSettings, videoContainerFormat)

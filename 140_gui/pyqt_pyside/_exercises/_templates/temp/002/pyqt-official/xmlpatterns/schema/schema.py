@@ -75,23 +75,23 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
         highlightingRules _   # list
 
         # Tag format.
-        format _ QTextCharFormat()
-        format.setForeground(__.darkBlue)
-        format.setFontWeight(?F...Bold)
+        f.. _ QTextCharFormat()
+        f...setForeground(__.darkBlue)
+        f...setFontWeight(?F...Bold)
         pattern _ QRegExp("(<[a-zA-Z:]+\\b|<\\?[a-zA-Z:]+\\b|\\?>|>|/>|</[a-zA-Z:]+>)")
-        highlightingRules.ap..((pattern, format))
+        highlightingRules.ap..((pattern, f..))
 
         # Attribute format.
-        format _ QTextCharFormat()
-        format.setForeground(__.darkGreen)
+        f.. _ QTextCharFormat()
+        f...setForeground(__.darkGreen)
         pattern _ QRegExp("[a-zA-Z:]+=")
-        highlightingRules.ap..((pattern, format))
+        highlightingRules.ap..((pattern, f..))
 
         # Attribute content format.
-        format _ QTextCharFormat()
-        format.setForeground(__.red)
+        f.. _ QTextCharFormat()
+        f...setForeground(__.red)
         pattern _ QRegExp("(\"[^\"]*\"|'[^']*')")
-        highlightingRules.ap..((pattern, format))
+        highlightingRules.ap..((pattern, f..))
 
         # Comment format.
         commentFormat _ QTextCharFormat()
@@ -102,12 +102,12 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
         commentEndExpression _ QRegExp("-->")
 
     ___ highlightBlock  t__):
-        ___ pattern, format __ highlightingRules:
+        ___ pattern, f.. __ highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(t__)
             w__ index >_ 0:
                 length _ expression.matchedLength()
-                setFormat(index, length, format)
+                setFormat(index, length, f..)
                 index _ expression.indexIn(t__, index + length)
 
         setCurrentBlockState(0)
@@ -254,8 +254,8 @@ c_ MainWindow(?MW.., Ui_SchemaMainWindow):
         selection _ ?TE...ExtraSelection()
 
         lineColor _ ?C..(__.red).lighter(160)
-        selection.format.setBackground(lineColor)
-        selection.format.setProperty(QTextFormat.FullWidthSelection,  st.
+        selection.f...setBackground(lineColor)
+        selection.f...setProperty(QTextFormat.FullWidthSelection,  st.
         selection.cursor _ instanceEdit.textCursor()
         selection.cursor.clearSelection()
         extraSelections.ap..(selection)

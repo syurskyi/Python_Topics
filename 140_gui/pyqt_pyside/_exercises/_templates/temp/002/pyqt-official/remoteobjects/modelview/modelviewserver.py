@@ -108,7 +108,7 @@ ___ addChild(numChildren, nestingLevel):
 
     ___ i __ ra..(numChildren):
         child _ QStandardItem(
-                "Child num {}, nesting level {}".format(i + 1, nestingLevel))
+                "Child num {}, nesting level {}".f..(i + 1, nestingLevel))
 
         __ i __ 0:
             child.appendRow(addChild(numChildren, nestingLevel - 1))
@@ -130,11 +130,11 @@ __ ______ __ ______
             ["First Column with spacing", "Second Column with spacing"])
 
     ___ i __ ra..(10000):
-        firstItem _ QStandardItem("FancyTextNumber {}".format(i))
+        firstItem _ QStandardItem("FancyTextNumber {}".f..(i))
         __ i __ 0:
             firstItem.appendRow(addChild(2, 2))
 
-        secondItem _ QStandardItem("FancyRow2TextNumber {}".format(i))
+        secondItem _ QStandardItem("FancyRow2TextNumber {}".f..(i))
         __ i % 2 __ 0:
             firstItem.setBackground(__.red)
 

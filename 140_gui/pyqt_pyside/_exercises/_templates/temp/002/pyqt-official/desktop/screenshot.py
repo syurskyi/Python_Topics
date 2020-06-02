@@ -89,13 +89,13 @@ c_ Screenshot(?W..):
                 shootScreen)
 
     ___ saveScreenshot
-        format _ 'png'
-        initialPath _ ?D...currentPath() + "/untitled." + format
+        f.. _ 'png'
+        initialPath _ ?D...currentPath() + "/untitled." + f..
 
         fileName, _ _ ?FD...getSaveFileName  "Save As", initialPath,
-                "%s Files (*.%s);;All Files (*)" % (format.upper(), format))
+                "%s Files (*.%s);;All Files (*)" % (f...upper(), f..))
         __ fileName:
-            originalPixmap.save(fileName, format)
+            originalPixmap.save(fileName, f..)
 
     ___ shootScreen
         __ delaySpinBox.value() !_ 0:

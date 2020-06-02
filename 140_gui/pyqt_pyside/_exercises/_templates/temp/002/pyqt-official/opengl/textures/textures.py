@@ -263,9 +263,9 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
 
-    format _ QSurfaceFormat()
-    format.setDepthBufferSize(24)
-    QSurfaceFormat.setDefaultFormat(format)
+    f.. _ QSurfaceFormat()
+    f...setDepthBufferSize(24)
+    QSurfaceFormat.setDefaultFormat(f..)
 
     window _ Window()
     window.s..

@@ -129,10 +129,10 @@ c_ MainWindow ?MW..
         frameFormat.setBorder(1)
         frame.setFrameFormat(frameFormat)
 
-        format _ cursor.charFormat()
-        format.setFontPointSize(fontSize)
+        f.. _ cursor.charFormat()
+        f...setFontPointSize(fontSize)
 
-        boldFormat _ QTextCharFormat(format)
+        boldFormat _ QTextCharFormat(f..)
         boldFormat.setFontWeight(?F...Bold)
 
         highlightedFormat _ QTextCharFormat(boldFormat)
@@ -153,7 +153,7 @@ c_ MainWindow ?MW..
             __ date __ QDate.currentDate
                 cellCursor.insertText(str(date.day()), highlightedFormat)
             ____
-                cellCursor.insertText(str(date.day()), format)
+                cellCursor.insertText(str(date.day()), f..)
 
             date _ date.addDays(1)
 

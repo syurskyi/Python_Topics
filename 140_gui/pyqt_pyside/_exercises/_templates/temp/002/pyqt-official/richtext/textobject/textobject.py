@@ -50,8 +50,8 @@ ____ ?.QtSvg ______ QSvgRenderer
 
 
 c_ SvgTextObject(?O.., QTextObjectInterface):
-    ___ intrinsicSize  doc, posInDocument, format):
-        renderer _ QSvgRenderer(format.property(Window.SvgData))
+    ___ intrinsicSize  doc, posInDocument, f..):
+        renderer _ QSvgRenderer(f...property(Window.SvgData))
         size _ renderer.defaultSize()
 
         __ size.height() > 25:
@@ -59,8 +59,8 @@ c_ SvgTextObject(?O.., QTextObjectInterface):
 
         r_ QSizeF(size)
 
-    ___ drawObject  painter, rect, doc, posInDocument, format):
-        renderer _ QSvgRenderer(format.property(Window.SvgData))
+    ___ drawObject  painter, rect, doc, posInDocument, f..):
+        renderer _ QSvgRenderer(f...property(Window.SvgData))
         renderer.render(painter, rect)
 
 

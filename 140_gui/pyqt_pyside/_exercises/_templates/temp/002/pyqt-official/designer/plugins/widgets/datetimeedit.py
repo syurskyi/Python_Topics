@@ -127,11 +127,11 @@ c_ PyDateEdit(QDateEdit):
     #
     ___ getHorizontalHeaderFormat
         r_ __horizontalHeaderFormat
-    ___ setHorizontalHeaderFormat  format):
-        __ format !_ __horizontalHeaderFormat:
-            __horizontalHeaderFormat _ format
+    ___ setHorizontalHeaderFormat  f..):
+        __ f.. !_ __horizontalHeaderFormat:
+            __horizontalHeaderFormat _ f..
             __ __cw:
-                __cw.setHorizontalHeaderFormat(format)
+                __cw.setHorizontalHeaderFormat(f..)
     ___ resetHorizontalHeaderFormat
         __ __horizontalHeaderFormat !_ QCalendarWidget.ShortDayNames:
             __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
@@ -150,11 +150,11 @@ c_ PyDateEdit(QDateEdit):
     #
     ___ getVerticalHeaderFormat
         r_ __verticalHeaderFormat
-    ___ setVerticalHeaderFormat  format):
-        __ format !_ __verticalHeaderFormat:
-            __verticalHeaderFormat _ format
+    ___ setVerticalHeaderFormat  f..):
+        __ f.. !_ __verticalHeaderFormat:
+            __verticalHeaderFormat _ f..
             __ __cw:
-                __cw.setVerticalHeaderFormat(format)
+                __cw.setVerticalHeaderFormat(f..)
     ___ resetVerticalHeaderFormat
         __ __verticalHeaderFormat !_ QCalendarWidget.ISOWeekNumbers:
             __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
@@ -287,11 +287,11 @@ c_ PyDateTimeEdit(?DTE..):
     #
     ___ getHorizontalHeaderFormat
         r_ __horizontalHeaderFormat
-    ___ setHorizontalHeaderFormat  format):
-        __ format !_ __horizontalHeaderFormat:
-            __horizontalHeaderFormat _ format
+    ___ setHorizontalHeaderFormat  f..):
+        __ f.. !_ __horizontalHeaderFormat:
+            __horizontalHeaderFormat _ f..
             __ __cw:
-                __cw.setHorizontalHeaderFormat(format)
+                __cw.setHorizontalHeaderFormat(f..)
     ___ resetHorizontalHeaderFormat
         __ __horizontalHeaderFormat !_ QCalendarWidget.ShortDayNames:
             __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
@@ -310,11 +310,11 @@ c_ PyDateTimeEdit(?DTE..):
     #
     ___ getVerticalHeaderFormat
         r_ __verticalHeaderFormat
-    ___ setVerticalHeaderFormat  format):
-        __ format !_ __verticalHeaderFormat:
-            __verticalHeaderFormat _ format
+    ___ setVerticalHeaderFormat  f..):
+        __ f.. !_ __verticalHeaderFormat:
+            __verticalHeaderFormat _ f..
             __ __cw:
-                __cw.setVerticalHeaderFormat(format)
+                __cw.setVerticalHeaderFormat(f..)
     ___ resetVerticalHeaderFormat
         __ __verticalHeaderFormat !_ QCalendarWidget.ISOWeekNumbers:
             __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers

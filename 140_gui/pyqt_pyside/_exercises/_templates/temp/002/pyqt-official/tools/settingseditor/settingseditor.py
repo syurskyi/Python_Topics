@@ -77,7 +77,7 @@ c_ MainWindow ?MW..
             locationDialog _ LocationDialog
 
         __ locationDialog.exec_
-            settings _ QSettings(locationDialog.format(),
+            settings _ QSettings(locationDialog.f..(),
                                         locationDialog.scope(),
                                         locationDialog.organization(),
                                         locationDialog.application())
@@ -271,7 +271,7 @@ c_ LocationDialog(QDialog):
         sWT..("Open Application Settings")
         r..(650, 400)
 
-    ___ format
+    ___ f..
         __ formatComboBox.currentIndex() __ 0:
             r_ QSettings.NativeFormat
         ____
@@ -314,7 +314,7 @@ c_ LocationDialog(QDialog):
                 ____
                     actualApplication _ ''
 
-                settings _ QSettings(format(), actualScope,
+                settings _ QSettings(f..(), actualScope,
                         organization(), actualApplication)
 
                 row _ locationsTable.rowCount()

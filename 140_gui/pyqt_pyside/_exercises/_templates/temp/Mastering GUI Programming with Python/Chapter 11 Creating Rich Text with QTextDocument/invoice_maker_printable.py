@@ -46,7 +46,7 @@ c_ InvoiceForm ?.?W..
             'i_date': inputs['Invoice Date'].date().tS..,
             'i_due': inputs['Invoice Date'].date().addDays(
                 inputs['Days until Due'].value()).tS..,
-            'i_terms': '{} days'.format(inputs['Days until Due'].value())
+            'i_terms': '{} days'.f..(inputs['Days until Due'].value())
         }
         data['line_items'] _ li..()
         ___ row __ ra..(line_items.rowCount()):

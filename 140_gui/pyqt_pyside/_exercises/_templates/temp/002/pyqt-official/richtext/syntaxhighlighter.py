@@ -164,12 +164,12 @@ c_ Highlighter(QSyntaxHighlighter):
         commentEndExpression _ QRegExp("\\*/")
 
     ___ highlightBlock  t__):
-        ___ pattern, format __ highlightingRules:
+        ___ pattern, f.. __ highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(t__)
             w__ index >_ 0:
                 length _ expression.matchedLength()
-                setFormat(index, length, format)
+                setFormat(index, length, f..)
                 index _ expression.indexIn(t__, index + length)
 
         setCurrentBlockState(0)

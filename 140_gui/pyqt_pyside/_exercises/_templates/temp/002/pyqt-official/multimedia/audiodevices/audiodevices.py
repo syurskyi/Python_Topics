@@ -193,42 +193,42 @@ c_ AudioTest(AudioDevicesBase):
 
     ___ populateTable
         row _ 0
-        format _ QAudioFormat()
+        f.. _ QAudioFormat()
 
         ___ codec __ deviceInfo.supportedCodecs
-            format.setCodec(codec)
+            f...setCodec(codec)
 
             ___ sampleRate __ deviceInfo.supportedSampleRates
-                format.setSampleRate(sampleRate)
+                f...setSampleRate(sampleRate)
 
                 ___ channels __ deviceInfo.supportedChannelCounts
-                    format.setChannelCount(channels)
+                    f...setChannelCount(channels)
 
                     ___ sampleType __ deviceInfo.supportedSampleTypes
-                        format.setSampleType(sampleType)
+                        f...setSampleType(sampleType)
 
                         ___ sampleSize __ deviceInfo.supportedSampleSizes
-                            format.setSampleSize(sampleSize)
+                            f...setSampleSize(sampleSize)
 
                             ___ endian __ deviceInfo.supportedByteOrders
-                                format.setByteOrder(endian)
+                                f...setByteOrder(endian)
 
-                                __ deviceInfo.isFormatSupported(format):
+                                __ deviceInfo.isFormatSupported(f..):
                                     allFormatsTable.setRowCount(row + 1)
 
-                                    setFormatValue(row, 0, format.codec())
+                                    setFormatValue(row, 0, f...codec())
                                     setFormatValue(row, 1,
-                                            str(format.sampleRate()))
+                                            str(f...sampleRate()))
                                     setFormatValue(row, 2,
-                                            str(format.channelCount()))
+                                            str(f...channelCount()))
                                     setFormatValue(row, 3,
                                             sampleTypeToString(
-                                                    format.sampleType()))
+                                                    f...sampleType()))
                                     setFormatValue(row, 4,
-                                            str(format.sampleSize()))
+                                            str(f...sampleSize()))
                                     setFormatValue(row, 5,
                                             endianToString(
-                                                    format.byteOrder()))
+                                                    f...byteOrder()))
 
                                     row +_ 1
 

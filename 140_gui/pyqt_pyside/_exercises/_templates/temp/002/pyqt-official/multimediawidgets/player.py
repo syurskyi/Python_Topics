@@ -624,8 +624,8 @@ c_ Player(?W..):
             totalTime _ ?T..((duration/3600)%60, (duration/60)%60,
                     duration%60, (duration*1000)%1000);
 
-            format _ 'hh:mm:ss' __ duration > 3600 ____ 'mm:ss'
-            tStr _ currentTime.toString(format) + " / " + totalTime.toString(format)
+            f.. _ 'hh:mm:ss' __ duration > 3600 ____ 'mm:ss'
+            tStr _ currentTime.toString(f..) + " / " + totalTime.toString(f..)
         ____
             tStr _ ""
 

@@ -178,9 +178,9 @@ __ ______ __ ______
     qmlRegisterType(BezierCurve, "CustomGeometry", 1, 0, "BezierCurve")
 
     view _ QQuickView()
-    format _ view.format()
-    format.setSamples(16)
-    view.setFormat(format)
+    f.. _ view.f..()
+    f...setSamples(16)
+    view.setFormat(f..)
 
     view.setSource(?U..('qrc:///scenegraph/customgeometry/main.qml'))
     view.s..

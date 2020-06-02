@@ -210,11 +210,11 @@ __ ______ __ ______
 
     app _ QGuiApplication(___.a..
 
-    format _ QSurfaceFormat()
-    format.setSamples(4)
+    f.. _ QSurfaceFormat()
+    f...setSamples(4)
 
     window _ TriangleWindow()
-    window.setFormat(format)
+    window.setFormat(f..)
     window.r..(640, 480)
     window.s..
 

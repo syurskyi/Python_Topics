@@ -54,13 +54,13 @@ ____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
 
 c_ Generator(QIODevice):
 
-    ___  -   format, durationUs, sampleRate, parent):
+    ___  -   f.., durationUs, sampleRate, parent):
         super(Generator, self). - (parent)
 
         m_pos _ 0
         m_buffer _ QByteArray()
 
-        generateData(format, durationUs, sampleRate)
+        generateData(f.., durationUs, sampleRate)
 
     ___ start
         o..(QIODevice.ReadOnly)
@@ -69,40 +69,40 @@ c_ Generator(QIODevice):
         m_pos _ 0
         c..
 
-    ___ generateData  format, durationUs, sampleRate):
+    ___ generateData  f.., durationUs, sampleRate):
         pack_format _ ''
 
-        __ format.sampleSize() __ 8:
-            __ format.sampleType() __ QAudioFormat.UnSignedInt:
+        __ f...sampleSize() __ 8:
+            __ f...sampleType() __ QAudioFormat.UnSignedInt:
                 scaler _ l___ x: ((1.0 + x) / 2 * 255)
                 pack_format _ 'B'
-            ____ format.sampleType() __ QAudioFormat.SignedInt:
+            ____ f...sampleType() __ QAudioFormat.SignedInt:
                 scaler _ l___ x: x * 127
                 pack_format _ 'b'
-        ____ format.sampleSize() __ 16:
-            __ format.sampleType() __ QAudioFormat.UnSignedInt:
+        ____ f...sampleSize() __ 16:
+            __ f...sampleType() __ QAudioFormat.UnSignedInt:
                 scaler _ l___ x: (1.0 + x) / 2 * 65535
-                pack_format _ '<H' __ format.byteOrder() __ QAudioFormat.LittleEndian ____ '>H'
-            ____ format.sampleType() __ QAudioFormat.SignedInt:
+                pack_format _ '<H' __ f...byteOrder() __ QAudioFormat.LittleEndian ____ '>H'
+            ____ f...sampleType() __ QAudioFormat.SignedInt:
                 scaler _ l___ x: x * 32767
-                pack_format _ '<h' __ format.byteOrder() __ QAudioFormat.LittleEndian ____ '>h'
+                pack_format _ '<h' __ f...byteOrder() __ QAudioFormat.LittleEndian ____ '>h'
 
         assert(pack_format !_ '')
 
-        channelBytes _ format.sampleSize() // 8
-        sampleBytes _ format.channelCount() * channelBytes
+        channelBytes _ f...sampleSize() // 8
+        sampleBytes _ f...channelCount() * channelBytes
 
-        length _ (format.sampleRate() * format.channelCount() * (format.sampleSize() // 8)) * durationUs // 100000
+        length _ (f...sampleRate() * f...channelCount() * (f...sampleSize() // 8)) * durationUs // 100000
 
         m_buffer.c..
         sampleIndex _ 0
-        factor _ 2 * pi * sampleRate / format.sampleRate()
+        factor _ 2 * pi * sampleRate / f...sampleRate()
 
         w__ length !_ 0:
-            x _ sin((sampleIndex % format.sampleRate()) * factor)
+            x _ sin((sampleIndex % f...sampleRate()) * factor)
             packed _ pack(pack_format, int(scaler(x)))
 
-            ___ _ __ ra..(format.channelCount()):
+            ___ _ __ ra..(f...channelCount()):
                 m_buffer.ap..(packed)
                 length -_ channelBytes
 

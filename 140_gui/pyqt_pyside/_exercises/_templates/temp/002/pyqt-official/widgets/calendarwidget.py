@@ -108,40 +108,40 @@ c_ Window(?W..):
         minimumDateEdit.setDate(calendar.minimumDate())
 
     ___ weekdayFormatChanged
-        format _ QTextCharFormat()
-        format.setForeground(
+        f.. _ QTextCharFormat()
+        f...setForeground(
                 __.GlobalColor(
                         weekdayColorCombo.itemData(
                                 weekdayColorCombo.currentIndex())))
 
-        calendar.setWeekdayTextFormat(__.Monday, format)
-        calendar.setWeekdayTextFormat(__.Tuesday, format)
-        calendar.setWeekdayTextFormat(__.Wednesday, format)
-        calendar.setWeekdayTextFormat(__.Thursday, format)
-        calendar.setWeekdayTextFormat(__.Friday, format)
+        calendar.setWeekdayTextFormat(__.Monday, f..)
+        calendar.setWeekdayTextFormat(__.Tuesday, f..)
+        calendar.setWeekdayTextFormat(__.Wednesday, f..)
+        calendar.setWeekdayTextFormat(__.Thursday, f..)
+        calendar.setWeekdayTextFormat(__.Friday, f..)
 
     ___ weekendFormatChanged
-        format _ QTextCharFormat()
-        format.setForeground(
+        f.. _ QTextCharFormat()
+        f...setForeground(
                 __.GlobalColor(
                         weekendColorCombo.itemData(
                                 weekendColorCombo.currentIndex())))
 
-        calendar.setWeekdayTextFormat(__.Saturday, format)
-        calendar.setWeekdayTextFormat(__.Sunday, format)
+        calendar.setWeekdayTextFormat(__.Saturday, f..)
+        calendar.setWeekdayTextFormat(__.Sunday, f..)
 
     ___ reformatHeaders
         t__ _ headerTextFormatCombo.currentText()
-        format _ QTextCharFormat()
+        f.. _ QTextCharFormat()
 
         __ t__ __ "Bold":
-            format.setFontWeight(?F...Bold)
+            f...setFontWeight(?F...Bold)
         ____ t__ __ "Italic":
-            format.setFontItalic( st.
+            f...setFontItalic( st.
         ____ t__ __ "Green":
-            format.setForeground(__.green)
+            f...setForeground(__.green)
 
-        calendar.setHeaderTextFormat(format)
+        calendar.setHeaderTextFormat(f..)
 
     ___ reformatCalendarPage
         __ firstFridayCheckBox.isChecked
