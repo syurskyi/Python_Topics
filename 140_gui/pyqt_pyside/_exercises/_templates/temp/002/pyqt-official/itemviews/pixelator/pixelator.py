@@ -137,9 +137,9 @@ c_ MainWindow ?MW..
 
         view _ ?TV..
         view.setShowGrid F..
-        view.horizontalHeader().hide()
+        view.hH.. .hide()
         view.verticalHeader().hide()
-        view.horizontalHeader().setMinimumSectionSize(1)
+        view.hH.. .setMinimumSectionSize(1)
         view.verticalHeader().setMinimumSectionSize(1)
         view.sM..(model)
 

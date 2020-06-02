@@ -38,8 +38,8 @@ c_ DataGrid(?W..):
         updateStatus()
 
     ___ initUI 
-        tableView.horizontalHeader().setStretchLastSection( st.
-        tableView.horizontalHeader().setSectionResizeMode(?HV...Stretch)
+        tableView.hH.. .setStretchLastSection( st.
+        tableView.hH.. .sSRM..(?HV...Stretch)
         layout.aW..(tableView)
 
         hLayout _ QHBoxLayout()

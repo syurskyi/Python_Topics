@@ -237,8 +237,8 @@ c_ LocationDialog(QDialog):
         locationsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
         locationsTable.setColumnCount(2)
         locationsTable.sHHL..(("Location", "Access"))
-        locationsTable.horizontalHeader().setSectionResizeMode(0, ?HV...Stretch)
-        locationsTable.horizontalHeader().resizeSection(1, 180)
+        locationsTable.hH.. .sSRM..(0, ?HV...Stretch)
+        locationsTable.hH.. .resizeSection(1, 180)
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
 
@@ -353,8 +353,8 @@ c_ SettingsTree(QTreeWidget):
         setItemDelegate(VariantDelegate(self))
 
         setHeaderLabels(("Setting", "Type", "Value"))
-        header().setSectionResizeMode(0, ?HV...Stretch)
-        header().setSectionResizeMode(2, ?HV...Stretch)
+        header().sSRM..(0, ?HV...Stretch)
+        header().sSRM..(2, ?HV...Stretch)
 
         settings _ N..
         refreshTimer _ ?T..

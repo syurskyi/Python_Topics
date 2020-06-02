@@ -107,7 +107,7 @@ c_ Window(?W..):
             table.setItem(i, 1, colorItem)
 
         table.resizeColumnToContents(0)
-        table.horizontalHeader().setStretchLastSection( st.
+        table.hH.. .setStretchLastSection( st.
 
         layout _ QGridLayout()
         layout.aW..(table, 0, 0)

@@ -20,7 +20,7 @@ c_ CoffeeForm ?.?W..
         roast.aI..(roasts)
         la__ .aR..('Roast: ', roast)
         reviews _ qtw.?TW..(columnCount_3)
-        reviews.horizontalHeader().setSectionResizeMode(
+        reviews.hH.. .sSRM..(
             2, qtw.?HV...Stretch)
         la__ .aR..(reviews)
 

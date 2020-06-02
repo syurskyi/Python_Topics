@@ -194,7 +194,7 @@ c_ Ui_AudioDevicesBase(object):
         item _ ?W...QTableWidgetItem()
         item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)
         allFormatsTable.setHorizontalHeaderItem(5, item)
-        allFormatsTable.horizontalHeader().setHighlightSections F..
+        allFormatsTable.hH.. .setHighlightSections F..
         allFormatsTable.verticalHeader().setVisible F..
         allFormatsTable.verticalHeader().setHighlightSections F..
         verticalLayout_2.aW..(allFormatsTable)

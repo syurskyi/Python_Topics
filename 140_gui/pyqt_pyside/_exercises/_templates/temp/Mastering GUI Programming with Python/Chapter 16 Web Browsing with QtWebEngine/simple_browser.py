@@ -81,7 +81,7 @@ c_ MainWindow(qtw.?MW..):
         find_text.tC...c..(text_search)
         # init javascript
         w__ o..('finder.js', 'r') __ fh:
-            finder_js _ fh.read()
+            finder_js _ fh.r..
         # using QWebEngineScript
         finder_script _ qtwe.QWebEngineScript()
         finder_script.setSourceCode(finder_js)

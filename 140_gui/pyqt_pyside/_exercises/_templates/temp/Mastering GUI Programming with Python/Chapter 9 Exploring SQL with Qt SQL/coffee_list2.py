@@ -68,7 +68,7 @@ c_ CoffeeForm ?.?W..
         reviews.sM..(reviews_model)
         reviews.hideColumn(0)
         reviews.hideColumn(1)
-        reviews.horizontalHeader().setSectionResizeMode(
+        reviews.hH.. .sSRM..(
             4, qtw.?HV...Stretch)
 
 

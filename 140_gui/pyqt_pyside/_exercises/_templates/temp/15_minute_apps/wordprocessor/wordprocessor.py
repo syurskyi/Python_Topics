@@ -310,7 +310,7 @@ c_ MainWindow ?MW..
 
         ___
             w__ o..(pa__, 'rU') __ f:
-                t__ _ f.read()
+                t__ _ f.r..
 
         _____ E.. __ e:
             dialog_critical(str(e))

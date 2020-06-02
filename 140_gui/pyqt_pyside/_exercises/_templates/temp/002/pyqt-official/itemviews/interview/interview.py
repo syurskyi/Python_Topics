@@ -157,7 +157,7 @@ ___ main(args):
     table _ ?TV..
     table.sM..(data)
     table.setSelectionModel(selections)
-    table.horizontalHeader().setSectionsMovable( st.
+    table.hH.. .setSectionsMovable( st.
     table.verticalHeader().setSectionsMovable( st.
     # Set StaticContents to enable minimal repaints on resizes.
     table.viewport().setAttribute(__.WA_StaticContents)

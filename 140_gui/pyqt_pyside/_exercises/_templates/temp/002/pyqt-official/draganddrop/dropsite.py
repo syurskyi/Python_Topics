@@ -119,7 +119,7 @@ c_ DropSiteWindow(?W..):
         formatsTable.setColumnCount(2)
         formatsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
         formatsTable.sHHL..(["Format", "Content"])
-        formatsTable.horizontalHeader().setStretchLastSection( st.
+        formatsTable.hH.. .setStretchLastSection( st.
 
         clearButton _ ?PB..("Clear")
         quitButton _ ?PB..("Quit")

@@ -511,7 +511,7 @@ c_ MainWindow ?MW..
         table.setSelectionModel(selectionModel)
         pieChart.setSelectionModel(selectionModel)
 
-        table.horizontalHeader().setStretchLastSection( st.
+        table.hH.. .setStretchLastSection( st.
 
         sCW..(splitter)
 

@@ -193,7 +193,7 @@ c_ Window(QDialog):
         filesTable.setSelectionBehavior(QAbstractItemView.SelectRows)
 
         filesTable.sHHL..(("File Name", "Size"))
-        filesTable.horizontalHeader().setSectionResizeMode(0, ?HV...Stretch)
+        filesTable.hH.. .sSRM..(0, ?HV...Stretch)
         filesTable.verticalHeader().hide()
         filesTable.setShowGrid F..
 

@@ -8,7 +8,7 @@ setup(
     description_'The classic game of noughts and crosses',
     url_"http://qtictactoe.example.com",
     license_'MIT',
-    long_description_open('README.rst', 'r').read(),
+    long_description_open('README.rst', 'r').r..,
     keywords_'game multiplayer example pyqt5',
     project_urls_{
         'Author Website': 'https://www.alandmoore.com',

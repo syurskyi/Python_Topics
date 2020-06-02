@@ -148,7 +148,7 @@ class MainWindow(?MW..):
 
         if filename:
             with open(filename, 'r') as f:
-                html = f.read()
+                html = f.r..
 
             browser.setHtml(html)
             urlbar.setText(filename)

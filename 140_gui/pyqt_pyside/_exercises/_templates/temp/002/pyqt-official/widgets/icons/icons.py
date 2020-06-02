@@ -350,12 +350,12 @@ c_ MainWindow ?MW..
         imagesTable.setSelectionMode(QAbstractItemView.NoSelection)
         imagesTable.setItemDelegate(ImageDelegate(self))
 
-        imagesTable.horizontalHeader().setDefaultSectionSize(90)
+        imagesTable.hH.. .setDefaultSectionSize(90)
         imagesTable.setColumnCount(3)
         imagesTable.sHHL..(("Image", "Mode", "State"))
-        imagesTable.horizontalHeader().setSectionResizeMode(0, ?HV...Stretch)
-        imagesTable.horizontalHeader().setSectionResizeMode(1, ?HV...Fixed)
-        imagesTable.horizontalHeader().setSectionResizeMode(2, ?HV...Fixed)
+        imagesTable.hH.. .sSRM..(0, ?HV...Stretch)
+        imagesTable.hH.. .sSRM..(1, ?HV...Fixed)
+        imagesTable.hH.. .sSRM..(2, ?HV...Fixed)
         imagesTable.verticalHeader().hide()
 
         imagesTable.itemChanged.c..(changeIcon)

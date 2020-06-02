@@ -26,7 +26,7 @@ c_ InvoiceForm ?.?W..
             rowCount_10, columnCount_3)
         line_items.sHHL..(
             ['Job', 'Rate', 'Hours'])
-        line_items.horizontalHeader().setSectionResizeMode(
+        line_items.hH.. .sSRM..(
             qtw.?HV...Stretch)
         la__ .aR..(line_items)
         ___ row __ ra..(line_items.rowCount()):
