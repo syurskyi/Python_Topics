@@ -60,10 +60,10 @@ c_ Window(?MW.., Ui_Window):
   
     ___ on_webView_loadFinished 
         # Begin document inspection.
-        treeWidget.c..
+        tW__.c..
         frame _ webView.page().mainFrame()
         document _ frame.documentElement()
-        examineChildElements(document, treeWidget.invisibleRootItem())
+        examineChildElements(document, tW__.invisibleRootItem())
  
     ___ examineChildElements  parentElement, parentItem):
         # Traverse the document.

@@ -75,7 +75,7 @@ c_ ShapedClock(?W..):
                 triggered_QApplication.i.. .quit)
         aA..(quitAction)
 
-        setContextMenuPolicy(__.ActionsContextMenu)
+        sCMP..(__.ACM..)
         sTT..("Drag the clock with the left mouse button.\n"
                 "Use the right mouse button to open a context menu.")
         sWT..(tr("Shaped Analog Clock"))

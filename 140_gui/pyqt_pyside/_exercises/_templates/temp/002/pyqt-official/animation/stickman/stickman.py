@@ -371,7 +371,7 @@ c_ GraphicsView(QGraphicsView):
         keyPressed.e..(__.Key(e.key()))
 
 
-c_ Frame(object):
+c_ Frame o..
     ___  -
         m_nodePositions _   # list
 
@@ -392,7 +392,7 @@ c_ Frame(object):
         m_nodePositions[idx] _ QPointF(pos)
 
 
-c_ Animation(object):
+c_ Animation o..
     ___  -
         m_currentFrame _ 0
         m_frames _ [Frame()]
@@ -501,7 +501,7 @@ c_ LightningStrikesTransition(QEventTransition):
                 (qrand() % 50) __ 0)
 
 
-c_ LifeCycle(object):
+c_ LifeCycle o..
     ___  -   stickMan, keyReceiver):
         m_stickMan _ stickMan
         m_keyReceiver _ keyReceiver

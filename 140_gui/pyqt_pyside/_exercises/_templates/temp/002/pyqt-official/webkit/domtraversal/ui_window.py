@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_Window(object):
+c_ Ui_Window o..
     ___ setupUi  Window):
         Window.setObjectName("Window")
         Window.r..(800, 600)
@@ -39,10 +39,10 @@ c_ Ui_Window(object):
         verticalLayout.setContentsMargins(4, 4, 4, 4)
         verticalLayout.setObjectName("verticalLayout")
         treeWidget _ ?W...QTreeWidget(dockWidgetContents)
-        treeWidget.setObjectName("treeWidget")
-        treeWidget.headerItem().sT..(0, "1")
-        treeWidget.header().setVisible F..
-        verticalLayout.aW..(treeWidget)
+        tW__.setObjectName("treeWidget")
+        tW__.headerItem().sT..(0, "1")
+        tW__.header().setVisible F..
+        verticalLayout.aW..(tW__)
         dockWidget.setWidget(dockWidgetContents)
         Window.addDockWidget(?C...__.DockWidgetArea(1), dockWidget)
 

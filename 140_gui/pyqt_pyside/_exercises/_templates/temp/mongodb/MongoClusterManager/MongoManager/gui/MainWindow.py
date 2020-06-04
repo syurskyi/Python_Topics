@@ -1,10 +1,10 @@
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QMainWindow, QWidget, QAction, QSplitter, QListView, QTabWidget
-from PyQt5.QtGui import QIcon, QStandardItemModel, QStandardItem
+____ ?.?C.. ______ __
+____ ?.QtWidgets ______ ?MW.., QWidget, ?A.., QSplitter, QListView, QTabWidget
+____ ?.QtGui ______ QIcon, QStandardItemModel, QStandardItem
 
 
-from app.ConfigurationManager import ConfigurationManager
-from gui.ClusterWidget import ClusterWidget
+____ app.ConfigurationManager ______ ConfigurationManager
+____ gui.ClusterWidget ______ ClusterWidget
 
 WINDOW_TITLE = 'MongoManager'
 
@@ -12,67 +12,67 @@ APP_CONF = 'conf/app.conf'
 CLUSTER_CONF = 'conf/cluster.conf'
 
 
-class MainWindow(QMainWindow):
-    def __init__(self):
-        QMainWindow.__init__(self, flags=Qt.Window)
+c_ MainWindow(?MW..):
+    ___  - 
+        ?MW... - (self, flags=__.Window)
 
         # Set menu bar
-        menu_bar = self.menuBar()
+        menu_bar = menuBar()
 
         file = menu_bar.addMenu("&File")
 
-        new_action = QAction('&New Cluster', self, shortcut='Ctrl+N', triggered=self.new_cluster)
-        exit_action = QAction('&Exit', self, shortcut='Alt+F4', triggered=self.close)
+        new_action = ?A..('&New Cluster', self, shortcut='Ctrl+N', t___=new_cluster)
+        exit_action = ?A..('&Exit', self, shortcut='Alt+F4', t___=close)
 
-        file.addAction(new_action)
+        file.aA..(new_action)
         file.addSeparator()
-        file.addAction(exit_action)
+        file.aA..(exit_action)
 
         # Set core widgets
-        self.conf_widget = QListView(self)
-        self.conf_widget.setMinimumWidth(150)
-        self.conf_widget.clicked.connect(self.load_cluster)
+        conf_widget = QListView(self)
+        conf_widget.setMinimumWidth(150)
+        conf_widget.c__.c__(load_cluster)
 
-        self.context_widget = QTabWidget(self)
-        self.context_widget.setMinimumWidth(100)
+        context_widget = QTabWidget(self)
+        context_widget.setMinimumWidth(100)
 
-        central_widget = QSplitter(Qt.Horizontal, self)
-        central_widget.addWidget(self.conf_widget)
-        central_widget.addWidget(self.context_widget)
+        central_widget = QSplitter(__.Horizontal, self)
+        central_widget.addWidget(conf_widget)
+        central_widget.addWidget(context_widget)
         central_widget.setCollapsible(0, False)
         central_widget.setCollapsible(1, False)
         central_widget.setSizes([150, 999])
 
-        self.setCentralWidget(central_widget)
+        setCentralWidget(central_widget)
 
         # Set UI
-        self.setWindowIcon(QIcon(':/icons/fire_damage.ico'))
-        self.setWindowTitle(WINDOW_TITLE)
-        self.setMinimumSize(600, 400)
+        setWindowIcon(QIcon(':/icons/fire_damage.ico'))
+        setWindowTitle(WINDOW_TITLE)
+        setMinimumSize(600, 400)
 
         # Set vars
-        self.config_manager = ConfigurationManager()
+        config_manager = ConfigurationManager()
 
-        self.load_configuration()
-        self.loaded_clusters = []
+        load_configuration()
+        loaded_clusters = []
 
-    def new_cluster(self):
-        pass
+    ___ new_cluster
+        p..
 
-    def load_configuration(self):
-        cluster_conf = self.config_manager.get(CLUSTER_CONF)
+    ___ load_configuration
+        cluster_conf = config_manager.get(CLUSTER_CONF)
 
         model = QStandardItemModel()
         for element in cluster_conf:
             item = QStandardItem(element['name'])
             item.setEditable(False)
             model.appendRow(item)
-        self.conf_widget.setModel(model)
+        conf_widget.sM..(model)
 
-    def load_cluster(self, index_item):
+    ___ load_cluster(self, index_item):
         cluster = index_item.data()
 
-        if cluster not in self.loaded_clusters:
-            cluster_widget = ClusterWidget(cluster, self.context_widget)
-            self.context_widget.addTab(cluster_widget, cluster)
-            self.loaded_clusters.append(cluster)
+        if cluster not in loaded_clusters:
+            cluster_widget = ClusterWidget(cluster, context_widget)
+            context_widget.addTab(cluster_widget, cluster)
+            loaded_clusters.append(cluster)

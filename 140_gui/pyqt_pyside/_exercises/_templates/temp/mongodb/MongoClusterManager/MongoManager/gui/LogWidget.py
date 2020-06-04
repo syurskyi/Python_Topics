@@ -1,57 +1,57 @@
-from PyQt5.QtCore import Qt, QTimer
-from PyQt5.QtGui import QPalette, QIcon
-from PyQt5.QtWidgets import QWidget, QPlainTextEdit, QPushButton, QVBoxLayout, QHBoxLayout, QSpacerItem, QSizePolicy
+____ ?.?C.. ______ __, QTimer
+____ ?.QtGui ______ QPalette, QIcon
+____ ?.QtWidgets ______ QWidget, QPlainTextEdit, QPushButton, QVBoxLayout, QHBoxLayout, QSpacerItem, QSizePolicy
 
 
-class LogWidget(QWidget):
-    def __init__(self, parent=None):
-        super(LogWidget, self).__init__(parent)
+c_ LogWidget(QWidget):
+    ___  - (self, parent=None):
+        super(LogWidget, self). - (parent)
 
         # Base vars
-        self.logLength = 0
-        self.logger = logging.getLogger(__name__)
+        logLength = 0
+        logger = l__.gL..(__name__)
 
         # Palette
         logPalette = QPalette()
-        logPalette.setColor(QPalette.Base, Qt.black)
-        logPalette.setColor(QPalette.Text, Qt.yellow)
+        logPalette.setColor(QPalette.Base, __.black)
+        logPalette.setColor(QPalette.Text, __.yellow)
 
         # Text Panel
-        self.logText = QPlainTextEdit(self)
-        self.logText.setPalette(logPalette)
-        self.logText.setReadOnly(True)
+        logText = QPlainTextEdit(self)
+        logText.setPalette(logPalette)
+        logText.setReadOnly T..
 
         # Buttons
-        self.sendButton = QPushButton(QIcon('img/email.png'), 'Send Logs')
-        self.sendButton.click.connect(self.sendLogs)
-        self.forceButton = QPushButton(QIcon('img/refresh.png'), 'Force Refresh')
-        self.forceButton.click.connect(self.forceRefresh)
-        self.clearButton = QPushButton(QIcon('img/eraser.png'), 'Clear Logs')
-        self.clearButton.click.connect(self.clearLogs)
+        sendButton = QPushButton(QIcon('img/email.png'), 'Send Logs')
+        sendButton.click.c__(sendLogs)
+        forceButton = QPushButton(QIcon('img/refresh.png'), 'Force Refresh')
+        forceButton.click.c__(forceRefresh)
+        clearButton = QPushButton(QIcon('img/eraser.png'), 'Clear Logs')
+        clearButton.click.c__(clearLogs)
 
         # Layouts
         layout = QVBoxLayout(self)
         layout.setContentsMargins(1, 1, 1, 1)
-        layout.addWidget(self.logText)
+        layout.addWidget(logText)
 
         buttonLayout = QHBoxLayout()
         buttonLayout.setContentsMargins(1, 0, 1, 2)
-        buttonLayout.addWidget(self.sendButton)
+        buttonLayout.addWidget(sendButton)
         buttonLayout.addItem(QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum))
-        buttonLayout.addWidget(self.forceButton)
-        buttonLayout.addWidget(self.clearButton)
+        buttonLayout.addWidget(forceButton)
+        buttonLayout.addWidget(clearButton)
 
         layout.addLayout(buttonLayout)
-        self.setLayout(layout)
+        setLayout(layout)
 
         # Timer
-        self.logTimer = QTimer()
-        self.logTimer.setInterval(5000)
-        self.logTimer.timeout.connect(self.updateLog)
-        self.logTimer.start()
+        logTimer = QTimer()
+        logTimer.setInterval(5000)
+        logTimer.timeout.c__(updateLog)
+        logTimer.start()
 
-    def sendLogs(self):
-        self.logger.info('[USER] Now sending logs...')
+    ___ sendLogs
+        logger.info('[USER] Now sending logs...')
 
         try:
             smtp = smtplib.SMTP('localhost')
@@ -61,28 +61,28 @@ class LogWidget(QWidget):
 
             smtp.sendmail('weblord@localhost.com', 'v.ducrocq@gmail.com', content)
         except SMTPException as s:
-            self.logger.error('[SYSTEM] Error while sending mail : %s' % s)
+            logger.error('[SYSTEM] Error while sending mail : %s' % s)
             return
 
-        self.logger.info('[USER] Mail sent!')
+        logger.info('[USER] Mail sent!')
 
-    def clearLogs(self):
-        self.logger.info('[USER] Clear Logs requested.')
+    ___ clearLogs
+        logger.info('[USER] Clear Logs requested.')
         open(LOG_FILE, 'w').close()
-        self.updateLog()
+        updateLog()
 
-    def updateLog(self):
+    ___ updateLog
         logs = open(LOG_FILE, 'r').read()
 
-        if len(logs) != self.logLength:
-            self.logLength = len(logs)
+        if len(logs) != logLength:
+            logLength = len(logs)
 
-            self.logText.setPlainText(logs)
-            self.logText.moveCursor(QTextCursor.End)
+            logText.setPlainText(logs)
+            logText.moveCursor(QTextCursor.End)
 
-    def forceRefresh(self):
-        self.logger.info('[USER] Force Log Refresh requested.')
-        self.logLength = 0
-        self.updateLog()
+    ___ forceRefresh
+        logger.info('[USER] Force Log Refresh requested.')
+        logLength = 0
+        updateLog()
 
 

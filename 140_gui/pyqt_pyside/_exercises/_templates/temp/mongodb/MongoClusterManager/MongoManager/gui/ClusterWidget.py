@@ -1,68 +1,68 @@
-import logging.config
+______ l__.c..
 
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QGroupBox, QPushButton, QTableWidget, QTableWidgetItem, QHeaderView, QAbstractItemView
+____ ?.QtWidgets ______ QWidget, QVBoxLayout, QGroupBox, QPushButton, QTableWidget, QTableWidgetItem, QHeaderView, QAbstractItemView
 
 
-from app.ConfigurationManager import ConfigurationManager
+____ app.ConfigurationManager ______ ConfigurationManager
 
 APP_CONF = 'conf/app.conf'
 CLUSTER_CONF = 'conf/cluster.conf'
 HEADERS = ['hostname', 'port', 'role', 'status', 'installed']
 
 
-class ClusterWidget(QWidget):
-    def __init__(self, cluster, parent=None):
-        QWidget.__init__(self, parent)
+c_ ClusterWidget(QWidget):
+    ___  - (self, cluster, parent=None):
+        QWidget. - (self, parent)
 
         # Set base vars
-        self.cluster = cluster
-        self.conf_manager = ConfigurationManager()
+        cluster = cluster
+        conf_manager = ConfigurationManager()
 
-        self.configuration = {}
-        self.members = []
+        configuration = {}
+        members = []
 
         # Set UI
-        self._init_ui()
+        _init_ui()
 
-    def _load_from_conf(self):
-        conf = self.conf_manager.get(CLUSTER_CONF)
+    ___ _load_from_conf
+        conf = conf_manager.get(CLUSTER_CONF)
 
         for element in conf:
-            if element['name'] == self.cluster:
-                self.configuration = element['configuration']
-                self.members = element['members']
+            if element['name'] == cluster:
+                configuration = element['configuration']
+                members = element['members']
                 return True
         return False
 
-    def _init_ui(self):
+    ___ _init_ui
         # ensure conf is loaded
-        if not self._load_from_conf():
+        if not _load_from_conf():
             return False
 
-        self.layout = QVBoxLayout(self)
+        layout = QVBoxLayout(self)
 
         # Network members
-        self.members_group_box = QGroupBox('Members', self)
+        members_group_box = QGroupBox('Members', self)
 
-        self.members_layout = QVBoxLayout(self)
+        members_layout = QVBoxLayout(self)
 
-        self.members_table = QTableWidget(self)
+        members_table = QTableWidget(self)
 
-        self.members_table.setRowCount(1)
-        self.members_table.setColumnCount(len(HEADERS))
-        self.members_table.verticalHeader().hide()
-        self.members_table.setHorizontalHeaderLabels(HEADERS)
-        self.members_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.members_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        members_table.setRowCount(1)
+        members_table.setColumnCount(len(HEADERS))
+        members_table.verticalHeader().hide()
+        members_table.setHorizontalHeaderLabels(HEADERS)
+        members_table.hH.. .setSectionResizeMode(QHeaderView.Stretch)
+        members_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
         row = 0
-        for member in self.members:
+        for member in members:
             column = 0
             for key in HEADERS:
                 if key in member:
-                    self.members_table.setItem(row, column, QTableWidgetItem(member[key]))
+                    members_table.setItem(row, column, QTableWidgetItem(member[key]))
                 else:
-                    self.members_table.setCellWidget(row, column, QPushButton('test'))
+                    members_table.setCellWidget(row, column, QPushButton('test'))
                 column += 1
             row += 1
         #
@@ -72,7 +72,7 @@ class ClusterWidget(QWidget):
         # self.members_table.setCellWidget(0, 3, QPushButton('test'))
         # self.members_table.setCellWidget(0, 4, QPushButton('test'))
 
-        self.members_layout.addWidget(self.members_table)
-        self.members_group_box.setLayout(self.members_layout)
-        self.layout.addWidget(self.members_group_box)
+        members_layout.addWidget(members_table)
+        members_group_box.setLayout(members_layout)
+        layout.addWidget(members_group_box)
 

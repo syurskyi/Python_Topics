@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_SchemaMainWindow(object):
+c_ Ui_SchemaMainWindow o..
     ___ setupUi  SchemaMainWindow):
         SchemaMainWindow.setObjectName("SchemaMainWindow")
         SchemaMainWindow.r..(417, 594)

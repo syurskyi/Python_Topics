@@ -1,30 +1,30 @@
 
-from PyQt5.QtCore import QSize, Qt
-from PyQt5.QtWidgets import QStylePainter, QStyleOptionTab, QTabBar, QStyle
+____ ?.?C.. ______ QSize, __
+____ ?.QtWidgets ______ QStylePainter, QStyleOptionTab, QTabBar, QStyle
 
 
-class TabBarWidget(QTabBar):
+c_ TabBarWidget(QTabBar):
     """
     TabBarWidget
     """
-    def __init__(self, parent=None):
-        self.tabSize = QSize(100, 25)
-        super(TabBarWidget, self).__init__(parent)
+    ___  - (self, parent=None):
+        tabSize = QSize(100, 25)
+        super(TabBarWidget, self). - (parent)
 
-    def paintEvent(self, event):
+    ___ paintEvent(self, event):
         painter = QStylePainter(self)
         option = QStyleOptionTab()
 
-        for index in range(self.count()):
-            self.initStyleOption(option, index)
+        for index in range(count()):
+            initStyleOption(option, index)
 
-            tab_rect = self.tabRect(index)
+            tab_rect = tabRect(index)
             tab_rect.moveLeft(10)
 
             painter.drawControl(QStyle.CE_TabBarTabShape, option)
-            painter.drawText(tab_rect, Qt.AlignVCenter | Qt.TextDontClip, self.tabText(index))
+            painter.drawText(tab_rect, __.AlignVCenter | __.TextDontClip, tabText(index))
 
         painter.end()
 
-    def tabSizeHint(self, index):
-        return self.tabSize
+    ___ tabSizeHint(self, index):
+        return tabSize

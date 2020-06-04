@@ -62,7 +62,7 @@ c_ OpenGLWindow(QWindow):
         setSurfaceType(QWindow.OpenGLSurface)
 
     ___ initialize 
-        pass
+        p..
 
     ___ setAnimating  animating):
         m_animating _ animating

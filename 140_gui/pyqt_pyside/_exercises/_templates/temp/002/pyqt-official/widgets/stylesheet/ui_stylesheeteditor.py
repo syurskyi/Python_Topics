@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_StyleSheetEditor(object):
+c_ Ui_StyleSheetEditor o..
     ___ setupUi  StyleSheetEditor):
         StyleSheetEditor.setObjectName("StyleSheetEditor")
         StyleSheetEditor.r..(445, 289)

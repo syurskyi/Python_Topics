@@ -1,15 +1,15 @@
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+____ ?.QtGui ______ *
+____ ?.QtWidgets ______ *
+____ ?.?C.. ______ *
 
-from MainWindow import Ui_MainWindow
+____ MainWindow ______ Ui_MainWindow
 
-import os
-import types
-import random
-import sys
-import traceback
-import zipfile
+______ os
+______ types
+______ random
+______ ___
+______ traceback
+______ zipfile
 
 
 PROGRESS_ON = """
@@ -30,7 +30,7 @@ EXCLUDE_PATHS = [
     '__MACOSX/',
 ]
 
-class WorkerSignals(?O..):
+c_ WorkerSignals(?O..):
     '''
     Defines the signals available from a running worker thread.
     '''
@@ -39,19 +39,19 @@ class WorkerSignals(?O..):
     progress = pS..(float)
 
 
-class UnzipWorker(QRunnable):
+c_ UnzipWorker(QRunnable):
     '''
     Worker thread for unzipping.
     '''
     signals = WorkerSignals()
 
-    def  - (self, pa__):
+    ___  - (self, pa__):
         s__(UnzipWorker, self). - ()
         os.chdir(os.pa__.dirname(pa__))
         zipfile = zipfile.ZipFile(pa__)
 
     @pyqtSlot()
-    def run
+    ___ run
         ___
             i.. = zipfile.infolist()
             total_n = len(i..)
@@ -63,7 +63,7 @@ class UnzipWorker(QRunnable):
                 signals.progress.e..(n / total_n)
 
         _____ E.. as e:
-            exctype, value = sys.exc_info()[:2]
+            exctype, value = ___.exc_info()[:2]
             signals.error.e..((exctype, value, traceback.format_exc()))
             return
 
@@ -71,14 +71,14 @@ class UnzipWorker(QRunnable):
 
 
 
-class MainWindow(?MW.., Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
 
-    def  - (self, $ $$
+    ___  - (self, $ $$
         s__(MainWindow, self). - ($ $$)
         setupUi
 
-        setAttribute(Qt.WA_TranslucentBackground )
-        setWindowFlags(Qt.FramelessWindowHint)
+        setAttribute(__.WA_TranslucentBackground )
+        setWindowFlags(__.FramelessWindowHint)
         setAcceptDrops( st.
 
         prev_pos = None
@@ -88,8 +88,8 @@ class MainWindow(?MW.., Ui_MainWindow):
 
         head.raise_()
 
-        def patch_mousePressEvent(self_, e):
-            if e.button() __ Qt.LeftButton and worker is not None:
+        ___ patch_mousePressEvent(self_, e):
+            if e.button() __ __.LeftButton and worker is not None:
                 # Extract the archive.
                 self_.current_rotation = random.randint(-15, +15)
                 self_.current_y = 30
@@ -101,10 +101,10 @@ class MainWindow(?MW.., Ui_MainWindow):
                 threadpool.start(worker)
                 worker = None  # Remove the worker so it is not double-triggered.
 
-            elif e.button() __ Qt.RightButton:
-                pass # Open a new zip.
+            elif e.button() __ __.RightButton:
+                p.. # Open a new zip.
 
-        def patch_paintEvent(self, event):
+        ___ patch_paintEvent(self, event):
 
             p = QPainter
             rect = event.rect()
@@ -131,7 +131,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         head.paintEvent = types.MethodType(patch_paintEvent, head)
 
         timer = ?T..()
-        timer.timeout.connect(timer_triggered)
+        timer.timeout.c__(timer_triggered)
         timer.start(5)
 
         # Initialize
@@ -143,9 +143,9 @@ class MainWindow(?MW.., Ui_MainWindow):
         # Reset bar to complete (empty)
         update_progress(1)
 
-        show()
+        s..
 
-    def timer_triggered
+    ___ timer_triggered
         if head.current_y > 0:
             head.current_y -= 1
 
@@ -160,7 +160,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         if head.current_y __ 0 and head.current_rotation __ 0:
             head.locked = F..
 
-    def dragEnterEvent(self, e):
+    ___ dragEnterEvent(self, e):
         data = e.mimeData()
         if data.hasUrls():
             # We are passed urls as a list, but only accept one.
@@ -168,27 +168,27 @@ class MainWindow(?MW.., Ui_MainWindow):
             if os.pa__.splitext(url)[1].lower() __ '.zip':
                 e.accept()
 
-    def dropEvent(self, e):
+    ___ dropEvent(self, e):
         data = e.mimeData()
         pa__ = data.urls()[0].toLocalFile()
 
         # Load the zipfile and pass to the worker which will extract.
         worker = UnzipWorker(pa__)
-        worker.signals.progress.connect(update_progress)
-        worker.signals.finished.connect(unzip_finished)
-        worker.signals.error.connect(unzip_error)
+        worker.signals.progress.c__(update_progress)
+        worker.signals.finished.c__(unzip_finished)
+        worker.signals.error.c__(unzip_error)
         update_progress(0)
 
-    def mousePressEvent(self, e):
+    ___ mousePressEvent(self, e):
         prev_pos = e.globalPos()
 
-    def mouseMoveEvent(self, e):
+    ___ mouseMoveEvent(self, e):
         if prev_pos:
             delta = e.globalPos() - prev_pos
             move(x() + delta.x(), y() + delta.y())
             prev_pos = e.globalPos()
 
-    def update_progress(self, pc):
+    ___ update_progress(self, pc):
         """
         Accepts progress as float in
         :param pc: float 0-1 of completion.
@@ -200,10 +200,10 @@ class MainWindow(?MW.., Ui_MainWindow):
                 PROGRESS_ON if n > current_n ____ PROGRESS_OFF
             )
 
-    def unzip_finished
-        pass
+    ___ unzip_finished
+        p..
 
-    def unzip_error(self, err):
+    ___ unzip_error(self, err):
         exctype, value, traceback = err
 
         update_progress(1)  # Reset the Pez bar.
@@ -211,11 +211,11 @@ class MainWindow(?MW.., Ui_MainWindow):
         dlg = QMessageBox
         dlg.setText(traceback)
         dlg.sI..(QMessageBox.Critical)
-        dlg.show()
+        dlg.s..
 
 
 if __name__ __ '__main__':
 
-    app = QApplication([])
+    app = ?A..([])
     window = MainWindow()
     app.e..()

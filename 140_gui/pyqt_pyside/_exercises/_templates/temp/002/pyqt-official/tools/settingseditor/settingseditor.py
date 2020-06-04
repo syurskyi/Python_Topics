@@ -413,7 +413,7 @@ c_ SettingsTree(QTreeWidget):
         ___
             itemChanged.disconnect(updateSetting)
         _____:
-            pass
+            p..
 
         settings.sync()
         updateChildItems(N..)

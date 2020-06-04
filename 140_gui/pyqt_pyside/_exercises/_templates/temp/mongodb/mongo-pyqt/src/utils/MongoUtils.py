@@ -5,18 +5,18 @@ Created on 2014年9月20日
 
 @author: wanghch
 '''
-import re,json
-class MongoUtils(object):
+______ re,json
+c_ MongoUtils o..
     '''
     classdocs
     '''
 
 
-    def __init__(self):
+    ___  -
         '''
         Constructor
         '''
-    def preview(self,col,queryjson,page,limit,sort):
+    ___ preview(self,col,queryjson,page,limit,sort):
         skipNum = (page - 1) * limit
         if len(queryjson.items()) > 0:
             query = json.dumps(queryjson)
@@ -31,7 +31,7 @@ class MongoUtils(object):
        
             
             
-    def parse(self,mongostmt):
+    ___ parse(self,mongostmt):
         pattern = re.compile(r'db\.([\.a-zA-Z0-9]+)\.find\(({.*})\)')
         match = pattern.match(mongostmt.replace("'", "\""))
         if match:

@@ -218,7 +218,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
         ___
             arrows.remove(arrow)
         _____ ValueError:
-            pass
+            p..
 
     ___ removeArrows
         ___ arrow __ arrows[:]:

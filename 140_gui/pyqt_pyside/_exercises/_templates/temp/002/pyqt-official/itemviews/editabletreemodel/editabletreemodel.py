@@ -50,7 +50,7 @@ ______ editabletreemodel_rc
 ____ ui_mainwindow ______ Ui_MainWindow
 
 
-c_ TreeItem(object):
+c_ TreeItem o..
     ___  -   data, parent_None):
         parentItem _ parent
         itemData _ data

@@ -8,7 +8,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_CategoryWindow(object):
+c_ Ui_CategoryWindow o..
     ___ setupUi  CategoryWindow):
         CategoryWindow.setObjectName("CategoryWindow")
         CategoryWindow.setWindowModality(?C...__.WindowModal)

@@ -43,7 +43,7 @@
 ____ colors ______ Colors
 
 
-c_ Score(object):
+c_ Score o..
     LOCK_ITEMS, UNLOCK_ITEMS, SKIP_LOCK _ ra..(3)
 
     FROM_CURRENT, FROM_START, NEW_ANIMATION_ONLY, ONLY_IF_VISIBLE _ ra..(4)

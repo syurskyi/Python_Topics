@@ -46,7 +46,7 @@ ____ ?.?G.. ______ ?C.., ?F..
 ____ ?.?W.. ______ ?MB.., ?W..
 
 
-c_ Colors(object):
+c_ Colors o..
     # Colors:
     sceneBg1 _ ?C..(91, 91, 91)
     sceneBg1Line _ ?C..(114, 108, 104)

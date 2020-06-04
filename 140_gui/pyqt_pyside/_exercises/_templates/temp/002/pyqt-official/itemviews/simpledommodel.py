@@ -47,7 +47,7 @@ ____ ?.?W.. ______ ?A.., ?FD.., ?MW.., QTreeView
 ____ ?.QtXml ______ QDomDocument
 
 
-c_ DomItem(object):
+c_ DomItem o..
     ___  -   node, row, parent_None):
         domNode _ node
         # Record the item's location within its parent.

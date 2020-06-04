@@ -138,11 +138,11 @@ c_ Person(?O..):
 
 
 c_ Boy(Person):
-    pass
+    p..
 
 
 c_ Girl(Person):
-    pass
+    p..
 
 
 c_ BirthdayPartyAttached(?O..):

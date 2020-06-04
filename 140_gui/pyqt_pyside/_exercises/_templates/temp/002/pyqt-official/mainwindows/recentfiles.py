@@ -194,7 +194,7 @@ c_ MainWindow ?MW..
         ___
             files.remove(fileName)
         _____ ValueError:
-            pass
+            p..
 
         files.insert(0, fileName)
         del files[MainWindow.MaxRecentFiles:]

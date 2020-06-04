@@ -47,7 +47,7 @@ ____ ?.?W.. ______ QGraphicsObject
 ____ colors ______ Colors
 
 
-c_ SharedImage(object):
+c_ SharedImage o..
     ___  -
         refCount _ 0
         image _ N..
@@ -80,10 +80,10 @@ c_ DemoItem(QGraphicsObject):
                 del DemoItem._sharedImageHash[_hashKey]
 
     ___ animationStarted  id_0):
-        pass
+        p..
 
     ___ animationStopped  id_0):
-        pass
+        p..
 
     ___ setRecursiveVisible  visible):
         setVisible(visible)

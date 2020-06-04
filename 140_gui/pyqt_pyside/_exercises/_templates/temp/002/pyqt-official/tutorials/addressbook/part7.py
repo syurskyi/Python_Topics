@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (QDialog, ?FD.., QGridLayout, QHBoxLayout,
 
 
 c_ SortedDict(dict):
-    c_ Iterator(object):
+    c_ Iterator o..
         ___  -   sorted_dict):
             _dict _ sorted_dict
             _keys _ sorted(_dict.keys())
@@ -276,7 +276,7 @@ c_ AddressBook(?W..):
 
         __ prev_name __ N..:
             ___ prev_name, prev_address __ contacts:
-                pass
+                p..
 
         nameLine.sT..(prev_name)
         addressText.sT..(prev_address)

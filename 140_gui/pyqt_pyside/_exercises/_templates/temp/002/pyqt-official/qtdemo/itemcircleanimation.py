@@ -53,12 +53,12 @@ ____ guideline ______ GuideLine
 ____ letteritem ______ LetterItem
 
 
-c_ TickerPostEffect(object):
+c_ TickerPostEffect o..
     ___ tick  adjust):
-        pass
+        p..
 
     ___ transform  item, pos):
-        pass
+        p..
 
 
 c_ PostRotateXY(TickerPostEffect):
@@ -92,7 +92,7 @@ c_ PostRotateXYTwist(PostRotateXY):
         pos.setY(center.y() + (pos.y() - center.y()) * math.cos(currRotY + pos.x() * curvy))
 
 
-c_ TickerEffect(object):
+c_ TickerEffect o..
     Normal, Intro, Outro _ ra..(3)
 
     ___  -   letters):
@@ -289,7 +289,7 @@ c_ ItemCircleAnimation(DemoItem):
         r_ QRectF(0, 0, 300, 320)
 
     ___ prepare
-        pass
+        p..
 
     ___ switchToNextEffect
         showCount +_ 1
@@ -338,7 +338,7 @@ c_ ItemCircleAnimation(DemoItem):
 
     ___ hoverEnterEvent  event):
         # Skip swap here to enhance ticker dragging.
-        pass
+        p..
 
     ___ hoverLeaveEvent  event):
         swapModel()

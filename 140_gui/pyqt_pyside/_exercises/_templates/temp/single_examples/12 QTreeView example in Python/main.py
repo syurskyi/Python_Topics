@@ -1,12 +1,12 @@
-from os.path import expanduser
-from PyQt5.QtWidgets import *
+____ os.path ______ expanduser
+____ ?.QtWidgets ______ *
 
 home_directory = expanduser('~')
 
-app = QApplication([])
+app = ?A..([])
 model = QDirModel()
 view = QTreeView()
-view.setModel(model)
+view.sM..(model)
 view.setRootIndex(model.index(home_directory))
-view.show()
+view.s..
 app.exec_()

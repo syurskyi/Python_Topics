@@ -5,62 +5,62 @@ Created on 2014年9月20日
 
 @author: wanghch
 '''
-from PyQt5.Qt import QStandardItemModel, QStandardItem
-import sys
+____ ?.__ ______ QStandardItemModel, QStandardItem
+______ ___
 
-class MongoResultModel(QStandardItemModel):
+c_ MongoResultModel(QStandardItemModel):
     '''
     classdocs
     '''
 
 
-    def __init__(self):
+    ___  -
         '''
         Constructor
         '''
-        super(MongoResultModel,self).__init__()
+        super(MongoResultModel,self). - ()
     
     
-    def fillModelByCursor(self,cursor):
+    ___ fillModelByCursor(self,cursor):
         i = 0
         setheader = False
-        self.modeldata = []
+        modeldata = []
         for item in cursor:
             j = 0
             items = item.items()
             
             if setheader == False:
-                self.setColumnCount(len(items))
-                self.labels = item.keys()
-                if sys.version > '3':
-                    self.labels = sorted(self.labels)
+                setColumnCount(len(items))
+                labels = item.keys()
+                if ___.version > '3':
+                    labels = sorted(labels)
                 else:
-                    self.labels.sort()
+                    labels.sort()
                 
-                self.setHorizontalHeaderLabels(self.labels)
+                setHorizontalHeaderLabels(labels)
                 setheader = True
                 
-            self.modeldata.append(item)
+            modeldata.append(item)
             
             for (field,value) in items:
                 try:
-                    fieldindex = self.labels.index(field)
+                    fieldindex = labels.index(field)
                 except ValueError:
-                    self.labels.append(field)
-                    fieldindex = len(self.labels) - 1
-                    self.setHorizontalHeaderLabels(self.labels)
+                    labels.append(field)
+                    fieldindex = len(labels) - 1
+                    setHorizontalHeaderLabels(labels)
                 
                 valueBytes = str(value).encode("utf_8")
-                self.setItem(i, fieldindex, QStandardItem(valueBytes.decode(encoding='utf_8')))
+                setItem(i, fieldindex, QStandardItem(valueBytes.decode(encoding='utf_8')))
                 j += 1
             i += 1
         
         
-    def getLabels(self):
-        return self.labels
+    ___ getLabels
+        return labels
     
-    def getModelData(self,row,field):
-        items = self.modeldata[row]
+    ___ getModelData(self,row,field):
+        items = modeldata[row]
         if items[field]:
             return items[field]
         else:

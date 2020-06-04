@@ -61,7 +61,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A..,
 images_dir _ QFileInfo(__file__).absolutePath() + '/images'
 
 
-c_ Node(object):
+c_ Node o..
     ___  -   parent _ N..):
         parent _ parent
         children _   # list

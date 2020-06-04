@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_ImageSettingsUi(object):
+c_ Ui_ImageSettingsUi o..
     ___ setupUi  ImageSettingsUi):
         ImageSettingsUi.setObjectName("ImageSettingsUi")
         ImageSettingsUi.r..(332, 270)

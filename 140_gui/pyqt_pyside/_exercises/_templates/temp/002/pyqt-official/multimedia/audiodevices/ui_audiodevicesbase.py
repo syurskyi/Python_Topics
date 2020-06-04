@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_AudioDevicesBase(object):
+c_ Ui_AudioDevicesBase o..
     ___ setupUi  AudioDevicesBase):
         AudioDevicesBase.setObjectName("AudioDevicesBase")
         AudioDevicesBase.r..(679, 598)

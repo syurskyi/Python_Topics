@@ -1,18 +1,18 @@
-import json
+______ json
 
 
-class InvalidSchemeException(Exception):
-    pass
+c_ InvalidSchemeException(Exception):
+    p..
 
 
-class ConfigurationManager:
-    def __init__(self):
-        pass
+c_ ConfigurationManager:
+    ___  - 
+        p..
 
-    def get(self, configuration):
+    ___ get(self, configuration):
         return json.loads(open(configuration, 'r').read())
 
-    def validate(self, json_str):
+    ___ validate(self, json_str):
         """
         validate input
         raise InvalidSchemeException

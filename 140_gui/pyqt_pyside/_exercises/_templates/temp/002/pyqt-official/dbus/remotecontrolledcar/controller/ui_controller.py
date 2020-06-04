@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_Controller(object):
+c_ Ui_Controller o..
     ___ setupUi  Controller):
         Controller.setObjectName("Controller")
         Controller.r..(255, 111)

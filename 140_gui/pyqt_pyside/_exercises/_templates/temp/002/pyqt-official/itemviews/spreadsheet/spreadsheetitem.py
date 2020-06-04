@@ -122,12 +122,12 @@ c_ SpreadSheetItem(QTableWidgetItem):
         ___
             firstVal _ start and int(start.t__()) or 0
         _____ ValueError:
-            pass
+            p..
         secondVal _ 0
         ___
             secondVal _ end and int(end.t__()) or 0
         _____ ValueError:
-            pass
+            p..
         result _ N..
         __ op __ "sum":
             sum_ _ 0
@@ -138,7 +138,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
                         ___
                             sum_ +_ int(tableItem.t__())
                         _____ ValueError:
-                            pass
+                            p..
             result _ sum_
         ____ op __ "+":
             result _ (firstVal + secondVal)

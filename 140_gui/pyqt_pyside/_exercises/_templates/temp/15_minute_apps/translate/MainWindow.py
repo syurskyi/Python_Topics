@@ -6,10 +6,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+____ ? ______ ?C.., QtGui, QtWidgets
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+c_ Ui_MainWindow o..
+    ___ setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.r..(721, 333)
         centralwidget = QtWidgets.?W..(MainWindow)
@@ -28,13 +28,13 @@ class Ui_MainWindow(object):
         verticalLayout_3 = QtWidgets.QVBoxLayout()
         verticalLayout_3.setObjectName("verticalLayout_3")
         translateButton = QtWidgets.QPushButton(centralwidget)
-        translateButton.sMS..(QtCore.?S..(75, 50))
-        translateButton.sMS..(QtCore.?S..(75, 50))
+        translateButton.sMS..(?C...?S..(75, 50))
+        translateButton.sMS..(?C...?S..(75, 50))
         translateButton.setText("")
         icon = QtGui.?I..
         icon.aP..(QtGui.?P..("images/flag.png"), QtGui.?I...Normal, QtGui.?I...Off)
         translateButton.sI..(icon)
-        translateButton.setIconSize(QtCore.?S..(75, 50))
+        translateButton.setIconSize(?C...?S..(75, 50))
         translateButton.setObjectName("translateButton")
         verticalLayout_3.addWidget(translateButton)
         horizontalLayout.aL..(verticalLayout_3)
@@ -46,15 +46,15 @@ class Ui_MainWindow(object):
         horizontalLayout.aL..(verticalLayout_2)
         MainWindow.setCentralWidget(centralwidget)
         menubar = QtWidgets.QMenuBar(MainWindow)
-        menubar.setGeometry(QtCore.QRect(0, 0, 721, 22))
+        menubar.setGeometry(?C...QRect(0, 0, 721, 22))
         menubar.setObjectName("menubar")
         MainWindow.setMenuBar(menubar)
 
         retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore. ?CA...translate
+    ___ retranslateUi(self, MainWindow):
+        _translate = ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "Translataarrr"))
         translateButton.sTT..(_translate("MainWindow", "Translate"))
 

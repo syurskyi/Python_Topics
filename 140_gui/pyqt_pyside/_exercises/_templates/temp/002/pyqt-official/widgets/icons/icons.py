@@ -449,7 +449,7 @@ c_ MainWindow ?MW..
         helpMenu.aA..(aboutQtAct)
 
     ___ createContextMenu 
-        imagesTable.setContextMenuPolicy(__.ActionsContextMenu)
+        imagesTable.sCMP..(__.ACM..)
         imagesTable.aA..(addImagesAct)
         imagesTable.aA..(removeAllImagesAct)
 

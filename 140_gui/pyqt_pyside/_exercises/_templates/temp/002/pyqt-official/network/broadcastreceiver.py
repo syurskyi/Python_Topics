@@ -81,7 +81,7 @@ c_ Receiver(QDialog):
                 datagram _ st.(datagram, encoding_'ascii')
             _____ TypeError:
                 # Python v2.
-                pass
+                p..
 
             statusLabel.sT..("Received datagram: \"%s\"" % datagram)
 

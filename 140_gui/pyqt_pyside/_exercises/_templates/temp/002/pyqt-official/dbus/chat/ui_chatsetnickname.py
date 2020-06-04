@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_NicknameDialog(object):
+c_ Ui_NicknameDialog o..
     ___ setupUi  NicknameDialog):
         NicknameDialog.setObjectName("NicknameDialog")
         NicknameDialog.r..(396, 105)

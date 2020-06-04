@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_Window(object):
+c_ Ui_Window o..
     ___ setupUi  Window):
         Window.setObjectName("Window")
         Window.r..(640, 480)

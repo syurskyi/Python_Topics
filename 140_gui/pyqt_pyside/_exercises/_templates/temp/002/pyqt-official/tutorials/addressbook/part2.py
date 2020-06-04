@@ -47,7 +47,7 @@ ____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., QVBoxLay
 
 
 c_ SortedDict(dict):
-    c_ Iterator(object):
+    c_ Iterator o..
         ___  -   sorted_dict):
             _dict _ sorted_dict
             _keys _ sorted(_dict.keys())

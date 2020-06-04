@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_CalculatorForm(object):
+c_ Ui_CalculatorForm o..
     ___ setupUi  CalculatorForm):
         CalculatorForm.setObjectName("CalculatorForm")
         CalculatorForm.r..(400, 300)

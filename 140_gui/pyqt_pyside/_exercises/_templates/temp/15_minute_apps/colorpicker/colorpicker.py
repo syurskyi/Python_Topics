@@ -1,31 +1,31 @@
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+____ ?.QtGui ______ *
+____ ?.QtWidgets ______ *
 
-import os
+______ os
 
-app = QApplication([])
+app = ?A..([])
 app.setQuitOnLastWindowClosed(F..)
 
 # Create the icon
 icon = ?I..(os.pa__.join("images","color.png"))
 
-clipboard = QApplication.clipboard()
+clipboard = ?A...clipboard()
 dialog = QColorDialog()
 
 
-def copy_color_hex():
+___ copy_color_hex():
     if dialog.e..():
         color = dialog.currentColor()
         clipboard.setText(color.name())
   
-def copy_color_rgb():
+___ copy_color_rgb():
     if dialog.e..():
         color = dialog.currentColor()
         clipboard.setText("rgb(%d, %d, %d)" % (
             color.red(), color.green(), color.blue()
         ))
   
-def copy_color_hsv():
+___ copy_color_hsv():
     if dialog.e..():
         color = dialog.currentColor()
         clipboard.setText("hsv(%d, %d, %d)" % (
@@ -39,18 +39,18 @@ tray.setVisible( st.
 
 # Create the menu
 menu = QMenu()
-action1 = QAction("Hex")
-action1.triggered.connect(copy_color_hex)
-menu.addAction(action1)
+action1 = ?A..("Hex")
+action1.t___.c__(copy_color_hex)
+menu.aA..(action1)
 
-action2 = QAction("RGB")
-action2.triggered.connect(copy_color_rgb)
-menu.addAction(action2)
+action2 = ?A..("RGB")
+action2.t___.c__(copy_color_rgb)
+menu.aA..(action2)
 
 
-action3 = QAction("HSV")
-action3.triggered.connect(copy_color_hsv)
-menu.addAction(action3)
+action3 = ?A..("HSV")
+action3.t___.c__(copy_color_hsv)
+menu.aA..(action3)
 
 # Add the menu to the tray
 tray.setContextMenu(menu)

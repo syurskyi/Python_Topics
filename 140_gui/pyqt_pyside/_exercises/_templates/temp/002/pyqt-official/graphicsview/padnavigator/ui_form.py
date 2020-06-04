@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_Form(object):
+c_ Ui_Form o..
     ___ setupUi  Form):
         Form.setObjectName("Form")
         Form.r..(378, 385)
@@ -56,19 +56,19 @@ c_ Ui_Form(object):
         horizontalLayout_2 _ ?W...QHBoxLayout(groupBox_2)
         horizontalLayout_2.setObjectName("horizontalLayout_2")
         treeWidget _ ?W...QTreeWidget(groupBox_2)
-        treeWidget.setObjectName("treeWidget")
-        item_0 _ ?W...QTreeWidgetItem(treeWidget)
+        tW__.setObjectName("treeWidget")
+        item_0 _ ?W...QTreeWidgetItem(tW__)
         item_1 _ ?W...QTreeWidgetItem(item_0)
         item_2 _ ?W...QTreeWidgetItem(item_1)
         item_2 _ ?W...QTreeWidgetItem(item_1)
         item_2 _ ?W...QTreeWidgetItem(item_1)
-        item_0 _ ?W...QTreeWidgetItem(treeWidget)
+        item_0 _ ?W...QTreeWidgetItem(tW__)
         item_1 _ ?W...QTreeWidgetItem(item_0)
         item_2 _ ?W...QTreeWidgetItem(item_1)
-        item_0 _ ?W...QTreeWidgetItem(treeWidget)
+        item_0 _ ?W...QTreeWidgetItem(tW__)
         item_1 _ ?W...QTreeWidgetItem(item_0)
         item_2 _ ?W...QTreeWidgetItem(item_1)
-        horizontalLayout_2.aW..(treeWidget)
+        horizontalLayout_2.aW..(tW__)
         verticalLayout_2.aW..(groupBox_2)
 
         retranslateUi(Form)
@@ -80,7 +80,7 @@ c_ Ui_Form(object):
         Form.setTabOrder(dateTimeEdit, horizontalSlider)
         Form.setTabOrder(horizontalSlider, spinBox)
         Form.setTabOrder(spinBox, groupBox_2)
-        Form.setTabOrder(groupBox_2, treeWidget)
+        Form.setTabOrder(groupBox_2, tW__)
 
     ___ retranslateUi  Form):
         _translate _ ?C... ?CA...translate
@@ -91,19 +91,19 @@ c_ Ui_Form(object):
         label_2.sT..(_translate("Form", "Modified:"))
         label_3.sT..(_translate("Form", "Extent"))
         groupBox_2.setTitle(_translate("Form", "Other input"))
-        treeWidget.headerItem().sT..(0, _translate("Form", "Widgets On Graphics View"))
-        __sortingEnabled _ treeWidget.isSortingEnabled()
-        treeWidget.setSortingEnabled F..
-        treeWidget.topLevelItem(0).sT..(0, _translate("Form", "QGraphicsProxyWidget"))
-        treeWidget.topLevelItem(0).child(0).sT..(0, _translate("Form", "QGraphicsWidget"))
-        treeWidget.topLevelItem(0).child(0).child(0).sT..(0, _translate("Form", "QObject"))
-        treeWidget.topLevelItem(0).child(0).child(1).sT..(0, _translate("Form", "QGraphicsItem"))
-        treeWidget.topLevelItem(0).child(0).child(2).sT..(0, _translate("Form", "QGraphicsLayoutItem"))
-        treeWidget.topLevelItem(1).sT..(0, _translate("Form", "QGraphicsGridLayout"))
-        treeWidget.topLevelItem(1).child(0).sT..(0, _translate("Form", "QGraphicsLayout"))
-        treeWidget.topLevelItem(1).child(0).child(0).sT..(0, _translate("Form", "QGraphicsLayoutItem"))
-        treeWidget.topLevelItem(2).sT..(0, _translate("Form", "QGraphicsLinearLayout"))
-        treeWidget.topLevelItem(2).child(0).sT..(0, _translate("Form", "QGraphicsLayout"))
-        treeWidget.topLevelItem(2).child(0).child(0).sT..(0, _translate("Form", "QGraphicsLayoutItem"))
-        treeWidget.sSE..__sortingEnabled)
+        tW__.headerItem().sT..(0, _translate("Form", "Widgets On Graphics View"))
+        __sortingEnabled _ tW__.isSortingEnabled()
+        tW__.setSortingEnabled F..
+        tW__.topLevelItem(0).sT..(0, _translate("Form", "QGraphicsProxyWidget"))
+        tW__.topLevelItem(0).child(0).sT..(0, _translate("Form", "QGraphicsWidget"))
+        tW__.topLevelItem(0).child(0).child(0).sT..(0, _translate("Form", "QObject"))
+        tW__.topLevelItem(0).child(0).child(1).sT..(0, _translate("Form", "QGraphicsItem"))
+        tW__.topLevelItem(0).child(0).child(2).sT..(0, _translate("Form", "QGraphicsLayoutItem"))
+        tW__.topLevelItem(1).sT..(0, _translate("Form", "QGraphicsGridLayout"))
+        tW__.topLevelItem(1).child(0).sT..(0, _translate("Form", "QGraphicsLayout"))
+        tW__.topLevelItem(1).child(0).child(0).sT..(0, _translate("Form", "QGraphicsLayoutItem"))
+        tW__.topLevelItem(2).sT..(0, _translate("Form", "QGraphicsLinearLayout"))
+        tW__.topLevelItem(2).child(0).sT..(0, _translate("Form", "QGraphicsLayout"))
+        tW__.topLevelItem(2).child(0).child(0).sT..(0, _translate("Form", "QGraphicsLayoutItem"))
+        tW__.sSE..__sortingEnabled)
 

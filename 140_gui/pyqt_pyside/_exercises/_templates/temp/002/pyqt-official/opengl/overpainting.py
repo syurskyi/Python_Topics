@@ -52,7 +52,7 @@ ____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QImage,
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
 
-c_ Bubble(object):
+c_ Bubble o..
     ___  -   position, radius, velocity):
         position _ position
         vel _ velocity

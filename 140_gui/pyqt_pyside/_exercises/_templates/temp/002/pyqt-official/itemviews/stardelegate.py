@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?S..,
         ?SID.., ?TW.., QTableWidgetItem, ?W..)
 
 
-c_ StarRating(object):
+c_ StarRating o..
     # enum EditMode
     Editable, ReadOnly _ ra..(2)
 

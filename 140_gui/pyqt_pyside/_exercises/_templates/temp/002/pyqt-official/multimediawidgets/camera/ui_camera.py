@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_Camera(object):
+c_ Ui_Camera o..
     ___ setupUi  Camera):
         Camera.setObjectName("Camera")
         Camera.r..(668, 422)

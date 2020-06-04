@@ -1,18 +1,18 @@
-from d_t_ import d_t_, timedelta, date
-from itertools import cycle
-import os
-import sys
-import traceback
+____ d_t_ ______ d_t_, timedelta, date
+____ itertools ______ cycle
+______ os
+______ ___
+______ traceback
 
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+____ ?.QtGui ______ *
+____ ?.QtWidgets ______ *
+____ ?.?C.. ______ *
 
-import numpy as np
+______ numpy as np
 
-import pyqtgraph as pg
-import requests
-import requests_cache
+______ pyqtgraph as pg
+______ requests
+______ requests_cache
 
 # CryptoCompare.com API Key
 CRYPTOCOMPARE_API_KEY = ''
@@ -40,7 +40,7 @@ pg.setConfigOption('background', 'w')
 pg.setConfigOption('foreground', 'k')
 
 
-class WorkerSignals(?O..):
+c_ WorkerSignals(?O..):
     """
     Defines the signals available from a running worker thread.
     """
@@ -51,20 +51,20 @@ class WorkerSignals(?O..):
     cancel = pS..()
 
 
-class UpdateWorker(QRunnable):
+c_ UpdateWorker(QRunnable):
     """
     Worker thread for updating currency.
     """
     signals = WorkerSignals()
 
-    def  - (self, base_currency):
+    ___  - (self, base_currency):
         s__(UpdateWorker, self). - ()
         is_interrupted = F..
         base_currency = base_currency
-        signals.cancel.connect(cancel)
+        signals.cancel.c__(cancel)
 
     @pyqtSlot()
-    def run
+    ___ run
         auth_header = {
             'Apikey': CRYPTOCOMPARE_API_KEY
         }
@@ -111,13 +111,13 @@ class UpdateWorker(QRunnable):
         signals.data.e..(rates, volume)
         signals.finished.e..()
 
-    def cancel
+    ___ cancel
         is_interrupted = T..
 
 
-class MainWindow(?MW..):
+c_ MainWindow(?MW..):
 
-    def  - (self, $ $$
+    ___  - (self, $ $$
         s__(MainWindow, self). - ($ $$)
 
         layout = ?HBL..
@@ -134,7 +134,7 @@ class MainWindow(?MW..):
         ax.aI..(line)
         ax.setLabel('left', text='Rate')
         p1 = ax.getPlotItem()
-        p1.scene().sigMouseMoved.connect(mouse_move_handler)
+        p1.scene().sigMouseMoved.c__(mouse_move_handler)
 
         # Add the right-hand axis for the market activity.
         p2 = pg.ViewBox()
@@ -149,12 +149,12 @@ class MainWindow(?MW..):
 
         _market_activity = pg.PlotCurveItem(
             np.arange(NUMBER_OF_TIMEPOINTS), np.arange(NUMBER_OF_TIMEPOINTS),
-            pen=pg.mkPen('k', style=Qt.DashLine, width=1)
+            pen=pg.mkPen('k', style=__.DashLine, width=1)
         )
         p2.aI..(_market_activity)
 
         # Automatically rescale our twinned Y axis.
-        p1.vb.sigResized.connect(update_plot_scale)
+        p1.vb.sigResized.c__(update_plot_scale)
 
         base_currency = DEFAULT_BASE_CURRENCY
 
@@ -168,9 +168,9 @@ class MainWindow(?MW..):
         listView = ?TV..
         model = QStandardItemModel()
         model.sHHL..(["Currency", "Rate"])
-        model.itemChanged.connect(check_check_state)
+        model.itemChanged.c__(check_check_state)
 
-        listView.setModel(model)
+        listView.sM..(model)
 
         threadpool = ?TP..()
         worker = F..
@@ -191,7 +191,7 @@ class MainWindow(?MW..):
         toolbar.addWidget(currencyList)
         update_currency_list(AVAILABLE_BASE_CURRENCIES)
         currencyList.sCT..(base_currency)
-        currencyList.cTC...connect(change_base_currency)
+        currencyList.cTC...c__(change_base_currency)
 
         progress = QProgressBar()
         progress.setRange(0, 100)
@@ -199,20 +199,20 @@ class MainWindow(?MW..):
 
         refresh_historic_rates()
         sWT..("Goodforbitcoin")
-        show()
+        s..
 
-    def update_currency_list(self, currencies):
+    ___ update_currency_list(self, currencies):
         ___ currency __ currencies:
             currencyList.aI..(currency)
 
         currencyList.model().s..(0)
 
-    def check_check_state(self, i):
+    ___ check_check_state(self, i):
         if not i.isCheckable():  # Skip data columns.
             return
 
         currency = i.text()
-        checked = i.checkState() __ Qt.Checked
+        checked = i.checkState() __ __.Checked
 
         if currency __ _data_visible:
             if not checked:
@@ -223,18 +223,18 @@ class MainWindow(?MW..):
                 _data_visible.append(currency)
                 redraw()
 
-    def get_currency_color(self, currency):
+    ___ get_currency_color(self, currency):
         if currency not __ _data_colors:
             _data_colors[currency] = n__(BREWER12PAIRED)
 
         return _data_colors[currency]
 
-    def get_or_create_data_row(self, currency):
+    ___ get_or_create_data_row(self, currency):
         if currency not __ _data_items:
             _data_items[currency] = add_data_row(currency)
         return _data_items[currency]
 
-    def add_data_row(self, currency):
+    ___ add_data_row(self, currency):
         citem = QStandardItem()
         citem.setText(currency)
         citem.setForeground(?B..(QColor(
@@ -243,37 +243,37 @@ class MainWindow(?MW..):
         citem.setColumnCount(2)
         citem.setCheckable( st.
         if currency __ DEFAULT_DISPLAY_CURRENCIES:
-            citem.setCheckState(Qt.Checked)
+            citem.setCheckState(__.Checked)
 
         vitem = QStandardItem()
 
-        vitem.setTextAlignment(Qt.AlignRight | Qt.AlignVCenter)
+        vitem.setTextAlignment(__.AlignRight | __.AlignVCenter)
         model.setColumnCount(2)
         model.appendRow([citem, vitem])
         model.s..(0)
         return citem, vitem
 
-    def mouse_move_handler(self, pos):
+    ___ mouse_move_handler(self, pos):
         pos = ax.getViewBox().mapSceneToView(pos)
         line.setPos(pos.x())
         update_data_viewer(int(pos.x()))
 
-    def update_data_viewer(self, i):
+    ___ update_data_viewer(self, i):
         if i not __ ra..(NUMBER_OF_TIMEPOINTS):
             return
 
         ___ currency, data __ data.i..():
             update_data_row(currency, data[i])
 
-    def update_data_row(self, currency, data):
+    ___ update_data_row(self, currency, data):
         citem, vitem = get_or_create_data_row(currency)
         vitem.setText("%.4f" % data['close'])
 
-    def change_base_currency(self, currency):
+    ___ change_base_currency(self, currency):
         base_currency = currency
         refresh_historic_rates()
 
-    def refresh_historic_rates
+    ___ refresh_historic_rates
         if worker:
             # If we have a current worker, send a kill signal
             worker.signals.cancel.e..()
@@ -284,26 +284,26 @@ class MainWindow(?MW..):
 
         worker = UpdateWorker(base_currency)
         # Handle callbacks with data and trigger refresh.
-        worker.signals.data.connect(result_data_callback)
-        worker.signals.finished.connect(refresh_finished)
-        worker.signals.progress.connect(progress_callback)
-        worker.signals.error.connect(notify_error)
+        worker.signals.data.c__(result_data_callback)
+        worker.signals.finished.c__(refresh_finished)
+        worker.signals.progress.c__(progress_callback)
+        worker.signals.error.c__(notify_error)
         threadpool.start(worker)
 
-    def result_data_callback(self, rates, volume):
+    ___ result_data_callback(self, rates, volume):
         data = rates
         volume = volume
         redraw()
         update_data_viewer(NUMBER_OF_TIMEPOINTS-1)
 
-    def progress_callback(self, progress):
+    ___ progress_callback(self, progress):
         progress.sV..(progress)
 
-    def refresh_finished
+    ___ refresh_finished
         worker = F..
         redraw()
 
-    def notify_error(self, error):
+    ___ notify_error(self, error):
         e, tb = error
         msg = QMessageBox()
         msg.sI..(QMessageBox.Warning)
@@ -312,11 +312,11 @@ class MainWindow(?MW..):
         msg.setDetailedText(tb)
         msg.e..()
 
-    def update_plot_scale
+    ___ update_plot_scale
         p2.setGeometry(p1.vb.sceneBoundingRect())
 
-    def redraw
-        y_min, y_max = sys.maxsize, 0
+    ___ redraw
+        y_min, y_max = ___.maxsize, 0
         x = np.arange(NUMBER_OF_TIMEPOINTS)
 
         # Pre-process data into lists of x, y values.
@@ -333,11 +333,11 @@ class MainWindow(?MW..):
                         _data_lines[currency] =   # dict
                         _data_lines[currency]['high'] = ax.plot(
                             x, high,  # Unpack a list of tuples into two lists, passed as individual args.
-                            pen=pg.mkPen(get_currency_color(currency), width=2, style=Qt.DotLine)
+                            pen=pg.mkPen(get_currency_color(currency), width=2, style=__.DotLine)
                         )
                         _data_lines[currency]['low'] = ax.plot(
                             x, low,  # Unpack a list of tuples into two lists, passed as individual args.
-                            pen=pg.mkPen(get_currency_color(currency), width=2, style=Qt.DotLine)
+                            pen=pg.mkPen(get_currency_color(currency), width=2, style=__.DotLine)
                         )
                         _data_lines[currency]['close'] = ax.plot(
                             x, close,  # Unpack a list of tuples into two lists, passed as individual args.
@@ -365,6 +365,6 @@ class MainWindow(?MW..):
 
 if __name__ __ '__main__':
 
-    app = QApplication([])
+    app = ?A..([])
     window = MainWindow()
     app.e..()

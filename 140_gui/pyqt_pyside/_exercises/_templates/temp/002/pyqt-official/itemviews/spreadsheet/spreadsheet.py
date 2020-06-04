@@ -407,7 +407,7 @@ c_ SpreadSheet ?MW..
         aA..(fontAction)
         aA..(secondSeparator)
         aA..(clearAction)
-        setContextMenuPolicy(__.ActionsContextMenu)
+        sCMP..(__.ACM..)
 
     ___ setupContents 
         titleBackground _ ?C..(__.lightGray)

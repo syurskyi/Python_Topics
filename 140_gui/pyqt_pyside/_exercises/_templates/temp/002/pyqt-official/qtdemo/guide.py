@@ -43,7 +43,7 @@
 ____ ?.?C.. ______ QLineF, QPointF
 
 
-c_ Guide(object):
+c_ Guide o..
     ___  -   follows_None):
         scaleX _ 1.0
         scaleY _ 1.0

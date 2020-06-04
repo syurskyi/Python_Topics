@@ -396,7 +396,7 @@ c_ TetrixBoard(QFrame):
                 y + squareHeight() - 1, x + squareWidth() - 1, y + 1)
 
 
-c_ TetrixPiece(object):
+c_ TetrixPiece o..
     coordsTable _ (
         ((0, 0),     (0, 0),     (0, 0),     (0, 0)),
         ((0, -1),    (0, 0),     (-1, 0),    (-1, 1)),

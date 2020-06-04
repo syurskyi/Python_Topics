@@ -1,14 +1,14 @@
-from os.path import exists
-from PyQt5.QtWidgets import *
-from PyQt5.QtSql import *
+____ os.path ______ exists
+____ ?.QtWidgets ______ *
+____ ?.QtSql ______ *
 
-import sys
+______ ___
 
 if not exists("projects.db"):
     print("File projects.db does not exist. Please run initdb.py.")
-    sys.exit()
+    ___.exit()
 
-app = QApplication([])
+app = ?A..([])
 db = QSqlDatabase.addDatabase("QSQLITE")
 db.setDatabaseName("projects.db")
 db.open()
@@ -16,6 +16,6 @@ model = QSqlTableModel(None, db)
 model.setTable("projects")
 model.select()
 view = QTableView()
-view.setModel(model)
-view.show()
+view.sM..(model)
+view.s..
 app.exec_()

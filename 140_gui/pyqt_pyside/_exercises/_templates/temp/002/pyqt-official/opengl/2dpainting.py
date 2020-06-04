@@ -52,7 +52,7 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
         ?W..)
 
 
-c_ Helper(object):
+c_ Helper o..
     ___  -
         gradient _ QLinearGradient(QPointF(50, -20), QPointF(80, 20))
         gradient.setColorAt(0.0, __.white)

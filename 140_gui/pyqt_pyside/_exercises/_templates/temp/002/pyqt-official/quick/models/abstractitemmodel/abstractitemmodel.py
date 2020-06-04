@@ -48,7 +48,7 @@ ____ ?.QtQuick ______ QQuickView
 ______ abstractitemmodel_rc
 
 
-c_ Animal(object):
+c_ Animal o..
 
     ___  -   type, size):
         _type _ type

@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_ChatMainWindow(object):
+c_ Ui_ChatMainWindow o..
     ___ setupUi  ChatMainWindow):
         ChatMainWindow.setObjectName("ChatMainWindow")
         ChatMainWindow.r..(800, 600)

@@ -273,13 +273,13 @@ c_ Robot(RobotPart):
         r_ QRectF()
 
     ___ paint  painter, option, widget_None):
-        pass
+        p..
 
 
 c_ GraphicsView(QGraphicsView):
 
     ___ resizeEvent  e):
-        pass
+        p..
 
 
 __ __name____ '__main__':

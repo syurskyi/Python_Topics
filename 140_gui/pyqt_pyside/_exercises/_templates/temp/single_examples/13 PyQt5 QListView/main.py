@@ -1,11 +1,11 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import QStringListModel
+____ ?.QtWidgets ______ *
+____ ?.?C.. ______ QStringListModel
 
-app = QApplication([])
+app = ?A..([])
 model = QStringListModel([
     "An element", "Another element", "Yay! Another one."
 ])
 view = QListView()
-view.setModel(model)
-view.show()
+view.sM..(model)
+view.s..
 app.exec_()

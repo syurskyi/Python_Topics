@@ -1,9 +1,9 @@
-def _import_all_modules():
+___ _import_all_modules():
     """dynamically imports all modules in the package"""
-    import traceback
-    import os
-    global __all__
-    __all__ = []
+    ______ traceback
+    ______ os
+    global -a
+    -a = []
     globals_, locals_ = globals(), locals()
 
     # dynamically import all the package modules
@@ -21,7 +21,7 @@ def _import_all_modules():
             for name in module.__dict__:
                 if not name.startswith('_'):
                     globals_[name] = module.__dict__[name]
-                    __all__.append(name)
+                    -a.append(name)
 
 
 _import_all_modules()

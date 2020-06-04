@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_Dialog(object):
+c_ Ui_Dialog o..
     ___ setupUi  Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.r..(451, 322)

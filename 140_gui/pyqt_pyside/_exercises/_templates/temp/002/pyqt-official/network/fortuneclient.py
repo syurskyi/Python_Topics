@@ -134,11 +134,11 @@ c_ Client(QDialog):
             id _ settings.value('DefaultNetworkConfiguration')
             settings.endGroup()
 
-            config _ manager.configurationFromIdentifier(id)
-            __ config.s.. & QNetworkConfiguration.Discovered __ 0:
-                config _ manager.defaultConfiguration()
+            c.. _ manager.configurationFromIdentifier(id)
+            __ c...s.. & QNetworkConfiguration.Discovered __ 0:
+                c.. _ manager.defaultConfiguration()
 
-            networkSession _ QNetworkSession(config, self)
+            networkSession _ QNetworkSession(c.., self)
             networkSession.opened.c..(sessionOpened)
 
             getFortuneButton.sE.. F..
@@ -176,7 +176,7 @@ c_ Client(QDialog):
 
     ___ displayError  socketError):
         __ socketError __ ?AS...RemoteHostClosedError:
-            pass
+            p..
         ____ socketError __ ?AS...HostNotFoundError:
             ?MB...information  "Fortune Client",
                     "The host was not found. Please check the host name and "
@@ -199,12 +199,12 @@ c_ Client(QDialog):
                 and portLineEdit.t__() !_ '')
 
     ___ sessionOpened
-        config _ networkSession.configuration()
+        c.. _ networkSession.configuration()
 
-        __ config.type() __ QNetworkConfiguration.UserChoice:
+        __ c...type() __ QNetworkConfiguration.UserChoice:
             id _ networkSession.sessionProperty('UserChoiceConfiguration')
         ____
-            id _ config.identifier()
+            id _ c...identifier()
 
         settings _ QSettings(QSettings.UserScope, 'QtProject')
         settings.beginGroup('QtNetwork')

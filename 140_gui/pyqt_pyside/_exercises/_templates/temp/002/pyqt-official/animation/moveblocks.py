@@ -78,7 +78,7 @@ c_ StateSwitchTransition(QAbstractTransition):
                 event.rand() __ m_rand)
 
     ___ onTransition  event):
-        pass
+        p..
 
 
 c_ StateSwitcher(QState):
@@ -97,7 +97,7 @@ c_ StateSwitcher(QState):
         machine().postEvent(StateSwitchEvent(n))
 
     ___ onExit  event):
-        pass
+        p..
 
     ___ addState  state, animation):
         m_stateCount +_ 1

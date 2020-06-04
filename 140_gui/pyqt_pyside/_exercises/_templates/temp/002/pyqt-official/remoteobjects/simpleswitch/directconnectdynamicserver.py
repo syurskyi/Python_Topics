@@ -82,7 +82,7 @@ c_ SimpleSwitch(?O..):
     # (written using either C++ or Python).
     @pyqtSlot()
     ___ pushCurrState  currState):
-        pass
+        p..
 
     ___ _get_currState 
         r_ _currState

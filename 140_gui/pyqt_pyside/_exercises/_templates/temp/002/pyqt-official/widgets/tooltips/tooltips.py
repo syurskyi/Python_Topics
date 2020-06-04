@@ -52,7 +52,7 @@ ____ ?.?W.. ______ (?A.., ?S.., QToolButton, QToolTip,
 ______ tooltips_rc
 
 
-c_ ShapeItem(object):
+c_ ShapeItem o..
     ___  -
         myPath _ QPainterPath()
         myPosition _ QPoint()

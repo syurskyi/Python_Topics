@@ -1,86 +1,79 @@
-#!/usr/bin/env python  
-# -*- coding: utf-8 -*-  
-'''
-Created on 2014年9月20日
+______ l__.c..
 
-@author: wanghch
-'''
-import logging.config
-
-from PyQt5.Qt import QApplication, QMainWindow, Qt, QAction
-import sys
-from model.MongoResultModel import MongoResultModel
-from PyQt5 import  QtCore
-from controller.AppController import AppController
-from view.MainWindow import Ui_MainWindow
+____ ?.__ ______ ?A.. ?MW.. __, ?A..
+______ ___
+____ m___.MRM.. ______ MRM..
+____ ? ______  ?C..
+____ c__.AC.. ______ AC..
+____ v__.MW.. ______ U_MW..
 
 
-class Application(object):
+c_ Application o..
     '''
     classdocs
     '''
 
 
-    def __init__(self):
+    ___  - 
         '''
         Constructor
         '''
        # logging.config.fileConfig("logging.conf")
-        self.log = logging.getLogger("Application")
+        log = l__.gL.. Application
         
         
         
-    def setupModels(self):
-        self.mongoResultModel = MongoResultModel()
-        pass
+    ___ setupModels
+        mongoResultModel = MRM..
+        p..
     
     
-    def setupSlot(self):
-        self.ui_MainWindow.tableview.setModel(self.mongoResultModel)
-        self.ui_MainWindow.connectBtn.clicked.connect(self.appctl.connectServer)
+    ___ setupSlot
+        ?.t_v_.sM.. ?
+        ?.cB__.c__.c__ a__.cS..
         
-        self.ui_MainWindow.querybtn.clicked.connect(self.appctl.query)
-        self.ui_MainWindow.query.returnPressed.connect(self.appctl.query)
-        self.ui_MainWindow.query.textChanged.connect(self.appctl.queryChange)
+        ?.q_b_.c__.c__ a__.q__
+        ?.q__.rP__.c__ a__.q__
+        ?.q__.tC__.c__ a__.qC..
         
-        self.ui_MainWindow.tableview.clicked.connect(self.appctl.clickTable)
-        self.add_query_action = QAction("add to query",self.ui_MainWindow.tableview)
+        ?.t_v_.c__.c__ a__.cT..
+        add_query_action _ ?A.. "add to query" ?.t_v_
         
-        self.add_query_action.triggered.connect(self.appctl.addToQuery)
-        self.ui_MainWindow.tableview.setContextMenuPolicy(Qt.ActionsContextMenu)
-        self.ui_MainWindow.tableview.addAction(self.add_query_action)
-        self.tableHeader = self.ui_MainWindow.tableview.horizontalHeader()
-        self.tableHeader.setSortIndicatorShown(True)
-        self.tableHeader.sortIndicatorChanged.connect(self.appctl.columnSort)
+        ?.t___.c__ a__.aTQ..
+        ?.t_v_.sCMP.. __.ACM..
+        ?.t_v_.aA.. ?
+        tableHeader _ ?.t_v_.hH..
+        ?.sSIS.. T..
+        ?.sIC...c__ a__.cS..
         
-        self.ui_MainWindow.treeWidget.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
-        self.ui_MainWindow.treeWidget.customContextMenuRequested.connect(self.appctl.showTreeMenu)
+        ?.tW__.sCMP.. ?C...__.CCM..
+        ?.tW__.cCMR__.c__ a__.sTM..
         
-        self.ui_MainWindow.prevBtn.clicked.connect(self.appctl.prevPagination)
-        self.ui_MainWindow.nextBtn.clicked.connect(self.appctl.nextPagination)
+        ?.pB_.c__.c__ a__.pP..
+        ?.nB_.c__.c__ a__.nP..
         
     
     
-    def setupCtl(self):
-        self.appctl = AppController(self)
+    ___ setupCtl
+        appctl _ AC__ ____
 
     
-    def run(self):
-        self.log.info("app is start")
+    ___ run
+        l__.i.. "app is start"
         
-        self.qtapp = QApplication(sys.argv)
+        qtapp _ ?A.. ___.a..
         
-        self.setupUi()
-        self.setupModels()
-        self.setupCtl()
-        self.setupSlot()
+        sU.
+        sM..
+        sC..
+        sS..
         
         
-        sys.exit(self.qtapp.exec_())
+        ___.e.. ?.e..
         
-    def setupUi(self):
-        self.mainWindow = QMainWindow()
-        self.ui_MainWindow = Ui_MainWindow()
-        self.ui_MainWindow.setupUi(self.mainWindow)
-        self.mainWindow.show()
-        pass
+    ___ setupUi
+        mainWindow _ ?MW..
+        ui_MainWindow _ ?
+        ?.sU. ?
+        ?.s..
+        p..

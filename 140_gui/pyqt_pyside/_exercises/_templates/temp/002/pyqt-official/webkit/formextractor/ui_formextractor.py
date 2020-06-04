@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_Form(object):
+c_ Ui_Form o..
     ___ setupUi  Form):
         Form.setObjectName("Form")
         Form.r..(680, 218)

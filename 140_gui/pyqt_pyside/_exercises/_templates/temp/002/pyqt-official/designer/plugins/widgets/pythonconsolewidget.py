@@ -85,7 +85,7 @@ c_ PythonConsoleWidget(QLineEdit):
             history.ap..(expression)
             current _ le.(history)
         _____:
-            pass
+            p..
 
 
 __ __name__ __ "__main__":

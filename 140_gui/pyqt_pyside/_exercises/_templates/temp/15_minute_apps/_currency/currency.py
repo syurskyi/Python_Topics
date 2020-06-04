@@ -1,18 +1,18 @@
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+____ ?.QtGui ______ *
+____ ?.QtWidgets ______ *
+____ ?.?C.. ______ *
 
-import pyqtgraph as pg
-import requests
-import requests_cache
+______ pyqtgraph as pg
+______ requests
+______ requests_cache
 
 
-from collections import defaultdict
-from d_t_ import d_t_, timedelta, date
-from itertools import cycle
-import sys
-import time
-import traceback
+____ collections ______ defaultdict
+____ d_t_ ______ d_t_, timedelta, date
+____ itertools ______ cycle
+______ ___
+______ time
+______ traceback
 
 requests_cache.install_cache('http_cache')
 
@@ -50,7 +50,7 @@ while current:
 
 
 
-class WorkerSignals(?O..):
+c_ WorkerSignals(?O..):
     '''
     Defines the signals available from a running worker thread.
     '''
@@ -61,20 +61,20 @@ class WorkerSignals(?O..):
     cancel = pS..()
 
 
-class UpdateWorker(QRunnable):
+c_ UpdateWorker(QRunnable):
     '''
     Worker thread for updating currency.
     '''
     signals = WorkerSignals()
     is_interrupted = F..
 
-    def  - (self, base_currency):
+    ___  - (self, base_currency):
         s__(UpdateWorker, self). - ()
         base_currency = base_currency
-        signals.cancel.connect(cancel)
+        signals.cancel.c__(cancel)
 
     @pyqtSlot()
-    def run 
+    ___ run
         ___
             today = date.today()
             total_requests = len(DATE_REQUEST_OFFSETS)
@@ -100,20 +100,20 @@ class UpdateWorker(QRunnable):
 
         _____ E.. as e:
             print(e)
-            exctype, value = sys.exc_info()[:2]
+            exctype, value = ___.exc_info()[:2]
             signals.error.e..((exctype, value, traceback.format_exc()))
             return
 
         signals.finished.e..()
 
-    def cancel 
+    ___ cancel
         is_interrupted = T..
 
 
 
-class MainWindow(?MW..):
+c_ MainWindow(?MW..):
 
-    def  - (self, $ $$
+    ___  - (self, $ $$
         s__(MainWindow, self). - ($ $$)
 
         layout = ?HBL..
@@ -129,7 +129,7 @@ class MainWindow(?MW..):
 
         ax.aI..(line)
         ax.setLimits(xMin=-HISTORIC_DAYS_N + 1, xMax=0)
-        ax.getPlotItem().scene().sigMouseMoved.connect(mouse_move_handler)
+        ax.getPlotItem().scene().sigMouseMoved.c__(mouse_move_handler)
 
         base_currency = DEFAULT_BASE_CURRENCY
 
@@ -145,9 +145,9 @@ class MainWindow(?MW..):
         listView = ?TV..
         model = QStandardItemModel()
         model.sHHL..(["Currency", "Rate"])
-        model.itemChanged.connect(check_check_state)
+        model.itemChanged.c__(check_check_state)
 
-        listView.setModel(model)
+        listView.sM..(model)
 
         threadpool = ?TP..()
         worker = F..
@@ -168,7 +168,7 @@ class MainWindow(?MW..):
         toolbar.addWidget(currencyList)
         update_currency_list(DEFAULT_DISPLAY_CURRENCIES)
         currencyList.sCT..(base_currency)
-        currencyList.cTC...connect(change_base_currency)
+        currencyList.cTC...c__(change_base_currency)
 
         progress = QProgressBar()
         progress.setRange(0, 100)
@@ -176,21 +176,21 @@ class MainWindow(?MW..):
 
         refresh_historic_rates()
         sWT..("Doughnut")
-        show()
+        s..
 
-    def update_currency_list(self, currencies):
+    ___ update_currency_list(self, currencies):
         ___ currency __ currencies:
             if currencyList.findText(currency) __ -1:
                 currencyList.aI..(currency)
 
         currencyList.model().s..(0)
 
-    def check_check_state(self, i):
+    ___ check_check_state(self, i):
         if not i.isCheckable():  # Skip data columns.
             return
 
         currency = i.text()
-        checked = i.checkState() __ Qt.Checked
+        checked = i.checkState() __ __.Checked
 
         if currency __ _data_visible:
             if not checked:
@@ -201,13 +201,13 @@ class MainWindow(?MW..):
                 _data_visible.append(currency)
                 redraw()
 
-    def get_currency_color(self, currency):
+    ___ get_currency_color(self, currency):
         if currency not __ _data_colors:
             _data_colors[currency] = n__(BREWER12PAIRED)
 
         return _data_colors[currency]
 
-    def add_data_row(self, currency):
+    ___ add_data_row(self, currency):
         citem = QStandardItem()
         citem.setText(currency)
         citem.setForeground(?B..(QColor(
@@ -216,31 +216,31 @@ class MainWindow(?MW..):
         citem.setColumnCount(2)
         citem.setCheckable( st.
         if currency __ DEFAULT_DISPLAY_CURRENCIES:
-            citem.setCheckState(Qt.Checked)
+            citem.setCheckState(__.Checked)
 
         vitem = QStandardItem()
 
-        vitem.setTextAlignment(Qt.AlignRight | Qt.AlignVCenter)
+        vitem.setTextAlignment(__.AlignRight | __.AlignVCenter)
         model.setColumnCount(2)
         model.appendRow([citem, vitem])
         model.s..(0)
         return citem, vitem
 
-    def get_or_create_data_row(self, currency):
+    ___ get_or_create_data_row(self, currency):
         if currency not __ _data_items:
             _data_items[currency] = add_data_row(currency)
         return _data_items[currency]
 
-    def mouse_move_handler(self, pos):
+    ___ mouse_move_handler(self, pos):
         pos = ax.getViewBox().mapSceneToView(pos)
         line.setPos(pos.x())
         update_data_viewer(int(pos.x()))
 
-    def update_data_row(self, currency, value):
+    ___ update_data_row(self, currency, value):
         citem, vitem = get_or_create_data_row(currency)
         vitem.setText("%.4f" % value)
 
-    def update_data_viewer(self, d):
+    ___ update_data_viewer(self, d):
         ___
             data = data[d]
         _____ IE..  # Skip update if out of bounds.
@@ -252,11 +252,11 @@ class MainWindow(?MW..):
         ___ k, v __ data.i..():
             update_data_row(k, v)
 
-    def change_base_currency(self, currency):
+    ___ change_base_currency(self, currency):
         base_currency = currency
         refresh_historic_rates()
 
-    def refresh_historic_rates 
+    ___ refresh_historic_rates
         if worker:
             # If we have a current worker, send a kill signal
             worker.signals.cancel.e..()
@@ -266,12 +266,12 @@ class MainWindow(?MW..):
 
         worker = UpdateWorker(base_currency)
         # Handle callbacks with data and trigger refresh.
-        worker.signals.data.connect(result_data_callback)
-        worker.signals.finished.connect(refresh_finished)
-        worker.signals.progress.connect(progress_callback)
+        worker.signals.data.c__(result_data_callback)
+        worker.signals.finished.c__(refresh_finished)
+        worker.signals.progress.c__(progress_callback)
         threadpool.start(worker)
 
-    def result_data_callback(self, n, rates):
+    ___ result_data_callback(self, n, rates):
         data[n] = rates
 
         # Refresh plot if we haven't for >1 second.
@@ -281,16 +281,16 @@ class MainWindow(?MW..):
             redraw()
             _last_updated = d_t_.now()
 
-    def progress_callback(self, progress):
+    ___ progress_callback(self, progress):
         progress.sV..(progress)
 
-    def refresh_finished 
+    ___ refresh_finished
         worker = F..
         redraw()
         # Ensure all currencies we know about are in the dropdown list now.
         update_currency_list(_data_items.keys())
 
-    def redraw 
+    ___ redraw
         """
         Process data from store and prefer to draw.
         :return:
@@ -312,7 +312,7 @@ class MainWindow(?MW..):
 
         # Update the plot
         keys = sorted(plotd.keys())
-        y_min, y_max = sys.maxsize, 0
+        y_min, y_max = ___.maxsize, 0
 
         ___ currency __ keys:
             x, y = zip(*plotd[currency])
@@ -341,6 +341,6 @@ class MainWindow(?MW..):
 
 if __name__ __ '__main__':
 
-    app = QApplication([])
+    app = ?A..([])
     window = MainWindow()
     app.e..()

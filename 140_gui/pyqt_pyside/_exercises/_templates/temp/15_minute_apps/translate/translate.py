@@ -1,19 +1,19 @@
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+____ ?.QtGui ______ *
+____ ?.QtWidgets ______ *
+____ ?.?C.. ______ *
 
-from MainWindow import Ui_MainWindow
+____ MainWindow ______ Ui_MainWindow
 
 ___
-    from googletrans import Translator
+    ____ googletrans ______ Translator
     GOOGLE_TRANSLATE_AVAILABLE = T..
 
 _____ ImportError:
     GOOGLE_TRANSLATE_AVAILABLE = F..
 
-import json
-from urllib import parse
-import requests
+______ json
+____ urllib ______ parse
+______ requests
 
 LANGUAGES = {
     '<Detect language>': None,
@@ -84,9 +84,9 @@ LANGUAGES = {
 }
 
 
-class MainWindow(?MW.., Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
 
-    def  - (self, $ $$
+    ___  - (self, $ $$
         s__(MainWindow, self). - ($ $$)
         setupUi
 
@@ -96,19 +96,19 @@ class MainWindow(?MW.., Ui_MainWindow):
 
         if GOOGLE_TRANSLATE_AVAILABLE:
             srcLanguage.aI..(LANGUAGES.keys())
-            srcLanguage.cTC..[st.].connect(update_src_language)
+            srcLanguage.cTC..[st.].c__(update_src_language)
             srcLanguage.sCT..('English')
         ____:
             srcLanguage.hide()
 
-        translateButton.pressed.connect(translate)
+        translateButton.pressed.c__(translate)
 
-        show()
+        s..
 
-    def update_src_language(self, l):
+    ___ update_src_language(self, l):
         language_src = LANGUAGES[l]
 
-    def google_translate(self, text):
+    ___ google_translate(self, text):
         params = dict(
             dest='en',
             text=text
@@ -127,7 +127,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         ____:
             return tr.text
 
-    def translate
+    ___ translate
         # Perform pre-translation to English via Google Translate.
         if language_src != 'en':
             text = google_translate(srcTextEdit.toPlainText())
@@ -154,6 +154,6 @@ class MainWindow(?MW.., Ui_MainWindow):
 
 if __name__ __ '__main__':
 
-    app = QApplication([])
+    app = ?A..([])
     window = MainWindow()
     app.e..()

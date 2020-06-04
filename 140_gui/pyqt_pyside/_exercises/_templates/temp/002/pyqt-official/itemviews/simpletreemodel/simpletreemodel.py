@@ -48,7 +48,7 @@ ____ ?.?W.. ______ ?A.., QTreeView
 ______ simpletreemodel_rc
 
 
-c_ TreeItem(object):
+c_ TreeItem o..
     ___  -   data, parent_None):
         parentItem _ parent
         itemData _ data

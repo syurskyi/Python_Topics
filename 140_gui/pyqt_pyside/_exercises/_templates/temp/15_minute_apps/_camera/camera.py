@@ -17,7 +17,7 @@ c_ MainWindow ?MW..
 
         available_cameras _ ?CI__.aC..
         __ no. available_cameras:
-            pass #quit
+            p.. #quit
 
         status _ QStatusBar()
         setStatusBar(status)

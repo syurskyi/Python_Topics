@@ -6,10 +6,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+____ ? ______ ?C.., QtGui, QtWidgets
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+c_ Ui_MainWindow o..
+    ___ setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.r..(207, 503)
         centralwidget = QtWidgets.?W..(MainWindow)
@@ -20,13 +20,13 @@ class Ui_MainWindow(object):
         widget = QtWidgets.?W..(centralwidget)
         widget.setObjectName("widget")
         head = QtWidgets.QLabel(widget)
-        head.setGeometry(QtCore.QRect(0, -40, 201, 261))
+        head.setGeometry(?C...QRect(0, -40, 201, 261))
         head.setText("")
         head.sP..(QtGui.?P..("images/cat-head-glasses.png"))
-        head.setAlignment(QtCore.Qt.AlignCenter)
+        head.setAlignment(?C...__.AlignCenter)
         head.setObjectName("head")
         verticalLayoutWidget = QtWidgets.?W..(widget)
-        verticalLayoutWidget.setGeometry(QtCore.QRect(90, 232, 81, 131))
+        verticalLayoutWidget.setGeometry(?C...QRect(90, 232, 81, 131))
         verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         fileBar = QtWidgets.QVBoxLayout(verticalLayoutWidget)
         fileBar.setContentsMargins(0, 0, 0, 0)
@@ -41,7 +41,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_1.setAlignment(QtCore.Qt.AlignCenter)
+        progress_1.setAlignment(?C...__.AlignCenter)
         progress_1.setObjectName("progress_1")
         fileBar.addWidget(progress_1)
         progress_2 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -53,7 +53,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_2.setAlignment(QtCore.Qt.AlignCenter)
+        progress_2.setAlignment(?C...__.AlignCenter)
         progress_2.setObjectName("progress_2")
         fileBar.addWidget(progress_2)
         progress_3 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -65,7 +65,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_3.setAlignment(QtCore.Qt.AlignCenter)
+        progress_3.setAlignment(?C...__.AlignCenter)
         progress_3.setObjectName("progress_3")
         fileBar.addWidget(progress_3)
         progress_4 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -77,7 +77,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_4.setAlignment(QtCore.Qt.AlignCenter)
+        progress_4.setAlignment(?C...__.AlignCenter)
         progress_4.setObjectName("progress_4")
         fileBar.addWidget(progress_4)
         progress_5 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -89,7 +89,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_5.setAlignment(QtCore.Qt.AlignCenter)
+        progress_5.setAlignment(?C...__.AlignCenter)
         progress_5.setObjectName("progress_5")
         fileBar.addWidget(progress_5)
         progress_6 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -101,7 +101,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_6.setAlignment(QtCore.Qt.AlignCenter)
+        progress_6.setAlignment(?C...__.AlignCenter)
         progress_6.setObjectName("progress_6")
         fileBar.addWidget(progress_6)
         progress_7 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -113,7 +113,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_7.setAlignment(QtCore.Qt.AlignCenter)
+        progress_7.setAlignment(?C...__.AlignCenter)
         progress_7.setObjectName("progress_7")
         fileBar.addWidget(progress_7)
         progress_8 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -125,7 +125,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_8.setAlignment(QtCore.Qt.AlignCenter)
+        progress_8.setAlignment(?C...__.AlignCenter)
         progress_8.setObjectName("progress_8")
         fileBar.addWidget(progress_8)
         progress_9 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -137,7 +137,7 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_9.setAlignment(QtCore.Qt.AlignCenter)
+        progress_9.setAlignment(?C...__.AlignCenter)
         progress_9.setObjectName("progress_9")
         fileBar.addWidget(progress_9)
         progress_10 = QtWidgets.QLabel(verticalLayoutWidget)
@@ -149,11 +149,11 @@ class Ui_MainWindow(object):
 "border: 2px solid rgb(194,24,91);\n"
 "color: rgb(136,14,79);\n"
 "}")
-        progress_10.setAlignment(QtCore.Qt.AlignCenter)
+        progress_10.setAlignment(?C...__.AlignCenter)
         progress_10.setObjectName("progress_10")
         fileBar.addWidget(progress_10)
         body = QtWidgets.QLabel(widget)
-        body.setGeometry(QtCore.QRect(20, 120, 191, 381))
+        body.setGeometry(?C...QRect(20, 120, 191, 381))
         body.setText("")
         body.sP..(QtGui.?P..("images/cat-body-space.png"))
         body.setObjectName("body")
@@ -164,10 +164,10 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(centralwidget)
 
         retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore. ?CA...translate
+    ___ retranslateUi(self, MainWindow):
+        _translate = ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "7Pez"))
         progress_1.setText(_translate("MainWindow", "7PEZ"))
         progress_2.setText(_translate("MainWindow", "7PEZ"))

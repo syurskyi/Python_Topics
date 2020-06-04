@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_embeddedDialog(object):
+c_ Ui_embeddedDialog o..
     ___ setupUi  embeddedDialog):
         embeddedDialog.setObjectName("embeddedDialog")
         embeddedDialog.r..(407, 134)

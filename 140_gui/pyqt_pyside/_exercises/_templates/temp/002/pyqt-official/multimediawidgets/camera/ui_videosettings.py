@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_VideoSettingsUi(object):
+c_ Ui_VideoSettingsUi o..
     ___ setupUi  VideoSettingsUi):
         VideoSettingsUi.setObjectName("VideoSettingsUi")
         VideoSettingsUi.r..(561, 369)

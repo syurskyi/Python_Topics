@@ -47,7 +47,7 @@ ____ ?.?W.. ______ (?A.., QFrame, QLabel, QLayout,
         QTextBrowser, ?W.., QWidgetItem)
 
 
-c_ ItemWrapper(object):
+c_ ItemWrapper o..
     ___  -   i, p):
         item _ i
         position _ p

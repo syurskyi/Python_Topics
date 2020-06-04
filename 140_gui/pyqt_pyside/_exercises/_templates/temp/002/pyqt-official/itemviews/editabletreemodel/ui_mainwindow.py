@@ -9,7 +9,7 @@
 
 ____ ? ______ ?C.., ?G.., ?W..
 
-c_ Ui_MainWindow(object):
+c_ Ui_MainWindow o..
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.r..(573, 468)
