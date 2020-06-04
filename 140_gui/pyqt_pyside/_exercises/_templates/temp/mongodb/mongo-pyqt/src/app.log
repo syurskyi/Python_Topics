@@ -1,0 +1,963 @@
+[2014-09-20 15:01:28,762](INFO)Application : app is start
+[2014-09-20 15:10:28,586](INFO)Application : app is start
+[2014-09-20 15:10:39,013](INFO)Application : app is start
+[2014-09-20 15:11:31,847](INFO)Application : app is start
+[2014-09-20 15:12:27,839](INFO)Application : app is start
+[2014-09-20 15:12:27,839](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:19:07,696](INFO)Application : app is start
+[2014-09-20 15:19:07,739](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:19:52,209](INFO)Application : app is start
+[2014-09-20 15:19:52,250](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:22:21,675](INFO)Application : app is start
+[2014-09-20 15:23:03,031](INFO)Application : app is start
+[2014-09-20 15:23:03,072](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:23:15,721](INFO)Application : app is start
+[2014-09-20 15:23:15,762](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:23:55,074](INFO)Application : app is start
+[2014-09-20 15:24:05,185](INFO)Application : app is start
+[2014-09-20 15:25:22,209](INFO)Application : app is start
+[2014-09-20 15:25:22,250](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:25:42,615](INFO)Application : app is start
+[2014-09-20 15:25:42,658](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:26:19,775](INFO)Application : app is start
+[2014-09-20 15:26:19,820](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:30:20,674](INFO)Application : app is start
+[2014-09-20 15:30:20,716](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:30:39,009](INFO)Application : app is start
+[2014-09-20 15:30:39,051](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:36:03,160](INFO)Application : app is start
+[2014-09-20 15:36:03,203](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:36:32,369](INFO)Application : app is start
+[2014-09-20 15:36:32,411](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:39:11,517](INFO)Application : app is start
+[2014-09-20 15:39:11,560](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:40:52,276](INFO)Application : app is start
+[2014-09-20 15:40:52,315](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:41:01,538](INFO)Application : app is start
+[2014-09-20 15:41:01,579](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:41:46,853](INFO)Application : app is start
+[2014-09-20 15:41:46,895](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:43:18,861](INFO)Application : app is start
+[2014-09-20 15:43:18,902](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:43:56,175](INFO)Application : app is start
+[2014-09-20 15:43:56,215](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:47:11,442](INFO)Application : app is start
+[2014-09-20 15:47:11,484](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:50:23,105](INFO)Application : app is start
+[2014-09-20 15:50:23,148](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:50:59,080](INFO)Application : app is start
+[2014-09-20 15:50:59,121](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:51:32,629](INFO)Application : app is start
+[2014-09-20 15:51:32,676](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:53:06,404](INFO)Application : app is start
+[2014-09-20 15:53:06,446](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:54:28,653](INFO)Application : app is start
+[2014-09-20 15:54:28,697](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:57:36,373](INFO)Application : app is start
+[2014-09-20 15:57:36,416](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:58:07,465](INFO)Application : app is start
+[2014-09-20 15:58:07,510](INFO)MainWindow : MainWindow init.
+[2014-09-20 15:59:26,717](INFO)Application : app is start
+[2014-09-20 15:59:26,758](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:00:44,524](INFO)Application : app is start
+[2014-09-20 16:00:44,565](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:01:28,204](INFO)Application : app is start
+[2014-09-20 16:01:28,247](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:03:10,848](INFO)Application : app is start
+[2014-09-20 16:03:10,888](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:03:27,756](INFO)Application : app is start
+[2014-09-20 16:03:27,810](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:06:03,132](INFO)Application : app is start
+[2014-09-20 16:06:03,175](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:06:36,223](INFO)Application : app is start
+[2014-09-20 16:06:36,265](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:15:59,733](INFO)Application : app is start
+[2014-09-20 16:15:59,773](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:22:05,853](INFO)Application : app is start
+[2014-09-20 16:22:05,897](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:23:14,336](INFO)Application : app is start
+[2014-09-20 16:23:14,381](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:23:55,056](INFO)Application : app is start
+[2014-09-20 16:23:55,098](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:26:32,155](INFO)Application : app is start
+[2014-09-20 16:26:32,196](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:37:11,120](INFO)Application : app is start
+[2014-09-20 16:37:11,163](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:37:13,331](INFO)MainWindow : click conn
+[2014-09-20 16:37:13,884](INFO)MainWindow : click conn
+[2014-09-20 16:37:14,068](INFO)MainWindow : click conn
+[2014-09-20 16:37:14,235](INFO)MainWindow : click conn
+[2014-09-20 16:37:14,395](INFO)MainWindow : click conn
+[2014-09-20 16:40:57,666](INFO)Application : app is start
+[2014-09-20 16:40:57,711](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:41:54,144](INFO)Application : app is start
+[2014-09-20 16:41:54,186](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:41:56,349](INFO)AppController : click conn
+[2014-09-20 16:41:56,796](INFO)AppController : click conn
+[2014-09-20 16:41:57,004](INFO)AppController : click conn
+[2014-09-20 16:41:57,149](INFO)AppController : click conn
+[2014-09-20 16:49:06,423](INFO)Application : app is start
+[2014-09-20 16:49:06,463](INFO)MainWindow : MainWindow init.
+[2014-09-20 16:51:01,282](INFO)Application : app is start
+[2014-09-20 16:51:01,326](INFO)MainWindow : MainWindow init.
+[2014-09-20 17:02:39,610](INFO)Application : app is start
+[2014-09-20 17:02:39,652](INFO)MainWindow : MainWindow init.
+[2014-09-20 17:02:54,468](INFO)Application : app is start
+[2014-09-20 17:02:54,509](INFO)MainWindow : MainWindow init.
+[2014-09-20 17:02:57,309](INFO)AppController : 
+[2014-09-20 17:02:59,061](INFO)AppController : 
+[2014-09-20 17:03:00,517](INFO)AppController : fasdf
+[2014-09-20 20:31:06,103](INFO)Application : app is start
+[2014-09-20 20:31:06,144](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:31:57,511](INFO)Application : app is start
+[2014-09-20 20:31:57,552](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:32:28,101](INFO)AppController : Connection(u'10.19.0.240', 27017)
+[2014-09-20 20:34:24,414](INFO)Application : app is start
+[2014-09-20 20:34:24,454](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:34:49,706](INFO)Application : app is start
+[2014-09-20 20:34:49,748](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:34:52,980](INFO)AppController : asdf
+[2014-09-20 20:36:14,685](INFO)Application : app is start
+[2014-09-20 20:36:14,727](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:36:21,455](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 20:37:51,909](INFO)Application : app is start
+[2014-09-20 20:37:51,951](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:40:09,958](INFO)Application : app is start
+[2014-09-20 20:40:10,000](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:43:19,786](INFO)Application : app is start
+[2014-09-20 20:43:19,827](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:43:26,562](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 20:45:10,121](INFO)Application : app is start
+[2014-09-20 20:45:10,161](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:45:12,733](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:47:04,781](INFO)Application : app is start
+[2014-09-20 20:47:04,823](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:47:06,850](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:47:08,282](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:49:13,634](INFO)Application : app is start
+[2014-09-20 20:49:13,677](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:49:15,990](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:50:00,263](INFO)Application : app is start
+[2014-09-20 20:50:00,304](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:50:02,622](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:50:09,098](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 20:50:35,412](INFO)AppController : {name:""}
+[2014-09-20 20:53:15,182](INFO)Application : app is start
+[2014-09-20 20:53:15,225](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:53:21,763](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 20:53:23,880](INFO)AppController : mba 
+[2014-09-20 20:53:27,280](INFO)AppController : mba 
+[2014-09-20 20:53:31,416](INFO)AppController : mba asdf
+[2014-09-20 20:54:05,766](INFO)Application : app is start
+[2014-09-20 20:54:05,810](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:54:12,291](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 20:54:13,311](INFO)AppController : db.mba.find()
+[2014-09-20 20:54:18,007](INFO)AppController : db.mba.find(asdf)
+[2014-09-20 20:57:05,307](INFO)Application : app is start
+[2014-09-20 20:57:05,348](INFO)MainWindow : MainWindow init.
+[2014-09-20 20:57:45,898](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 20:57:50,738](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:57:55,977](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:57:56,153](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:57:56,338](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:57:56,481](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 20:58:01,681](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 20:58:02,401](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 20:58:02,977](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 20:58:03,385](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 20:58:03,553](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 20:58:03,761](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 20:58:03,945](INFO)AppController : db..find(db.asdf.find(asdf))
+[2014-09-20 21:22:49,576](INFO)Application : app is start
+[2014-09-20 21:22:49,618](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:22:59,946](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:23:01,252](INFO)AppController : db.mba.find()
+[2014-09-20 21:23:01,253](INFO)AppController : None
+[2014-09-20 21:23:05,787](INFO)AppController : db.mba.find(asdf)
+[2014-09-20 21:23:05,788](INFO)AppController : None
+[2014-09-20 21:23:22,947](INFO)AppController : db.mba.find(db.mba.find({a:1}))
+[2014-09-20 21:23:46,362](INFO)AppController : db.mba.find(db.mba.find({"a":1}))
+[2014-09-20 21:23:46,363](INFO)AppController : (u'db.mba.find({"a":1})', {u'a': 1})
+[2014-09-20 21:23:47,819](INFO)AppController : db.mba.find(db.mba.find({"a":1}))
+[2014-09-20 21:23:47,819](INFO)AppController : (u'db.mba.find({"a":1})', {u'a': 1})
+[2014-09-20 21:23:48,691](INFO)AppController : db.mba.find(db.mba.find({"a":1}))
+[2014-09-20 21:23:48,691](INFO)AppController : (u'db.mba.find({"a":1})', {u'a': 1})
+[2014-09-20 21:24:11,917](INFO)Application : app is start
+[2014-09-20 21:24:11,964](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:24:59,059](INFO)Application : app is start
+[2014-09-20 21:24:59,100](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:25:01,673](INFO)AppController : db..find(asdf)
+[2014-09-20 21:25:01,674](INFO)AppController : None
+[2014-09-20 21:25:04,617](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-09-20 21:25:09,742](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:25:10,625](INFO)AppController : db.mba.find(asdf)
+[2014-09-20 21:25:10,625](INFO)AppController : None
+[2014-09-20 21:25:14,137](INFO)AppController : db.mba.find(db.mba.find(asdf))
+[2014-09-20 21:25:14,137](INFO)AppController : None
+[2014-09-20 21:25:16,112](INFO)AppController : db.mba.find(db.mba.find(asdf))
+[2014-09-20 21:25:16,113](INFO)AppController : None
+[2014-09-20 21:25:24,824](INFO)AppController : db.mba.find(db.mba.find({a:1}))
+[2014-09-20 21:25:47,296](INFO)Application : app is start
+[2014-09-20 21:25:47,341](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:25:50,120](INFO)AppController : db..find()
+[2014-09-20 21:25:50,121](INFO)AppController : None
+[2014-09-20 21:25:58,631](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:26:24,830](INFO)AppController : db.mba.find(db.aaa.find({a:1}))
+[2014-09-20 21:26:33,407](INFO)AppController : db.mba.find(db.aaa.find({'a':1}))
+[2014-09-20 21:26:33,407](INFO)AppController : (u'aaa', {u'a': 1})
+[2014-09-20 21:26:37,214](INFO)AppController : db.mba.find(db.aaa.find({'a':1}))
+[2014-09-20 21:26:37,215](INFO)AppController : (u'aaa', {u'a': 1})
+[2014-09-20 21:26:37,766](INFO)AppController : db.mba.find(db.aaa.find({'a':1}))
+[2014-09-20 21:26:37,767](INFO)AppController : (u'aaa', {u'a': 1})
+[2014-09-20 21:29:42,485](INFO)Application : app is start
+[2014-09-20 21:29:42,525](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:29:50,529](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:29:55,849](INFO)AppController : db.mba.find(db.aaa.find())
+[2014-09-20 21:30:06,809](INFO)AppController : db.mba.find(db.aaa.find({}))
+[2014-09-20 21:30:06,810](INFO)AppController : <pymongo.cursor.Cursor object at 0x116fb26d0>
+[2014-09-20 21:31:00,247](INFO)Application : app is start
+[2014-09-20 21:31:00,288](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:31:07,714](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:31:23,263](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:35:06,737](INFO)Application : app is start
+[2014-09-20 21:35:06,779](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:35:16,007](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:35:23,409](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:35:57,326](INFO)Application : app is start
+[2014-09-20 21:35:57,371](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:36:03,936](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:36:19,096](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:36:22,096](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:36:22,968](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:37:45,319](INFO)Application : app is start
+[2014-09-20 21:37:45,362](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:37:48,085](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:37:50,421](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:38:26,444](INFO)Application : app is start
+[2014-09-20 21:38:26,485](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:38:28,987](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:38:30,580](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:38:30,725](ERROR)AppController : too many values to unpack
+[2014-09-20 21:39:06,264](INFO)Application : app is start
+[2014-09-20 21:39:06,307](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:39:09,636](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:39:11,683](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:41:28,380](INFO)Application : app is start
+[2014-09-20 21:41:28,424](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:41:30,808](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:41:32,672](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:47:16,998](INFO)Application : app is start
+[2014-09-20 21:47:17,039](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:47:19,394](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:47:21,055](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:47:21,166](ERROR)AppController : arguments did not match any overloaded call:
+  QStandardItem(): too many arguments
+  QStandardItem(str): argument 1 has unexpected type 'ObjectId'
+  QStandardItem(QIcon, str): argument 1 has unexpected type 'ObjectId'
+  QStandardItem(int, int columns=1): argument 1 has unexpected type 'ObjectId'
+  QStandardItem(QStandardItem): argument 1 has unexpected type 'ObjectId'
+[2014-09-20 21:48:10,683](INFO)Application : app is start
+[2014-09-20 21:48:10,725](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:48:13,344](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:48:15,006](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:48:15,105](ERROR)AppController : arguments did not match any overloaded call:
+  QStandardItem(): too many arguments
+  QStandardItem(str): argument 1 has unexpected type 'ObjectId'
+  QStandardItem(QIcon, str): argument 1 has unexpected type 'ObjectId'
+  QStandardItem(int, int columns=1): argument 1 has unexpected type 'ObjectId'
+  QStandardItem(QStandardItem): argument 1 has unexpected type 'ObjectId'
+[2014-09-20 21:49:04,060](INFO)Application : app is start
+[2014-09-20 21:49:04,101](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:49:06,496](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:49:07,989](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:49:08,086](ERROR)AppController : cannot concatenate 'str' and 'int' objects
+[2014-09-20 21:51:33,079](INFO)Application : app is start
+[2014-09-20 21:51:33,121](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:51:35,850](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:51:37,433](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:52:02,155](INFO)Application : app is start
+[2014-09-20 21:52:02,198](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:52:04,900](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:52:06,616](INFO)AppController : db.test.find(db.aaa.find({}))
+[2014-09-20 21:52:24,056](INFO)AppController : db.mbaproduct.find(db.aaa.find({}))
+[2014-09-20 21:52:44,759](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 21:52:45,252](ERROR)AppController : 'ascii' codec can't encode characters in position 0-26: ordinal not in range(128)
+[2014-09-20 21:53:00,567](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 21:53:02,144](ERROR)AppController : 'ascii' codec can't encode characters in position 0-26: ordinal not in range(128)
+[2014-09-20 21:54:14,249](INFO)Application : app is start
+[2014-09-20 21:54:14,291](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:54:16,881](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:54:25,757](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 21:54:26,260](ERROR)AppController : 'ascii' codec can't encode characters in position 0-26: ordinal not in range(128)
+[2014-09-20 21:57:28,606](INFO)Application : app is start
+[2014-09-20 21:57:28,647](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:57:31,663](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:57:40,312](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 21:57:40,870](ERROR)AppController : 'ascii' codec can't encode characters in position 0-26: ordinal not in range(128)
+[2014-09-20 21:58:51,314](INFO)Application : app is start
+[2014-09-20 21:58:51,359](INFO)MainWindow : MainWindow init.
+[2014-09-20 21:58:55,359](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 21:59:03,141](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:00:09,395](INFO)Application : app is start
+[2014-09-20 22:00:09,435](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:00:13,593](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:00:20,619](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:02:24,457](INFO)AppController : db.mba.find(db.traffic.find({}))
+[2014-09-20 22:07:28,835](INFO)Application : app is start
+[2014-09-20 22:07:28,879](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:07:31,799](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:07:46,752](INFO)AppController : db.test.find(db.productinfo.find({}))
+[2014-09-20 22:07:55,760](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:08:17,561](INFO)AppController : [u'jdproduct', u'mba', u'mba_product', u'mbaproduct', u'test', u'test_mbaproduct', u'config', u'admin']
+[2014-09-20 22:08:24,023](INFO)AppController : db.test_mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:10:29,172](INFO)AppController : db.test_mbaproduct.find(db.productinfo.find({"sid":"m-20394-1"}))
+[2014-09-20 22:19:46,731](INFO)Application : app is start
+[2014-09-20 22:19:46,770](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:19:50,142](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:20:01,510](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:20:25,057](INFO)Application : app is start
+[2014-09-20 22:20:25,101](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:20:27,870](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:20:37,205](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:21:47,461](INFO)Application : app is start
+[2014-09-20 22:21:47,502](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:21:50,352](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:21:58,139](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:25:28,822](INFO)Application : app is start
+[2014-09-20 22:25:28,864](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:25:32,875](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:25:39,917](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:25:41,221](DEBUG)AppController : 1,2 clicked
+[2014-09-20 22:25:42,037](DEBUG)AppController : 2,1 clicked
+[2014-09-20 22:25:42,717](DEBUG)AppController : 3,1 clicked
+[2014-09-20 22:25:43,685](DEBUG)AppController : 3,0 clicked
+[2014-09-20 22:25:44,117](DEBUG)AppController : 2,0 clicked
+[2014-09-20 22:25:44,637](DEBUG)AppController : 1,0 clicked
+[2014-09-20 22:25:45,189](DEBUG)AppController : 2,0 clicked
+[2014-09-20 22:25:45,677](DEBUG)AppController : 5,0 clicked
+[2014-09-20 22:25:46,301](DEBUG)AppController : 2,0 clicked
+[2014-09-20 22:25:46,836](DEBUG)AppController : 0,0 clicked
+[2014-09-20 22:25:47,589](DEBUG)AppController : 2,0 clicked
+[2014-09-20 22:25:48,125](DEBUG)AppController : 5,0 clicked
+[2014-09-20 22:25:51,868](DEBUG)AppController : 7,9 clicked
+[2014-09-20 22:25:52,476](DEBUG)AppController : 9,9 clicked
+[2014-09-20 22:25:53,012](DEBUG)AppController : 11,9 clicked
+[2014-09-20 22:26:05,125](INFO)AppController : [u'jdproduct', u'mba', u'mba_product', u'mbaproduct', u'test', u'test_mbaproduct', u'config', u'admin']
+[2014-09-20 22:26:08,277](INFO)AppController : db.mba_product.find(db.productinfo.find({}))
+[2014-09-20 22:26:15,869](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:26:17,548](DEBUG)AppController : 2,6 clicked
+[2014-09-20 22:26:18,076](DEBUG)AppController : 5,6 clicked
+[2014-09-20 22:26:18,884](DEBUG)AppController : 8,6 clicked
+[2014-09-20 22:26:21,324](DEBUG)AppController : 2,7 clicked
+[2014-09-20 22:26:22,028](DEBUG)AppController : 3,7 clicked
+[2014-09-20 22:26:22,892](DEBUG)AppController : 5,7 clicked
+[2014-09-20 22:26:23,548](DEBUG)AppController : 7,7 clicked
+[2014-09-20 22:26:24,147](DEBUG)AppController : 6,7 clicked
+[2014-09-20 22:26:27,532](DEBUG)AppController : 1,2 clicked
+[2014-09-20 22:26:30,139](DEBUG)AppController : 3,2 clicked
+[2014-09-20 22:26:31,044](DEBUG)AppController : 3,0 clicked
+[2014-09-20 22:26:31,764](DEBUG)AppController : 2,0 clicked
+[2014-09-20 22:26:33,180](DEBUG)AppController : 2,0 clicked
+[2014-09-20 22:26:44,179](DEBUG)AppController : 2,9 clicked
+[2014-09-20 22:26:53,740](INFO)AppController : db.mbaproduct.find(db.productinfo.find({sid:'m-3-0'}))
+[2014-09-20 22:26:53,740](ERROR)AppController : Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+[2014-09-20 22:27:00,635](INFO)AppController : db.mbaproduct.find(db.productinfo.find({'sid':'m-3-0'}))
+[2014-09-20 22:27:17,610](DEBUG)AppController : 6,6 clicked
+[2014-09-20 22:27:18,210](DEBUG)AppController : 4,6 clicked
+[2014-09-20 22:27:18,666](DEBUG)AppController : 8,6 clicked
+[2014-09-20 22:27:19,066](DEBUG)AppController : 9,3 clicked
+[2014-09-20 22:27:19,746](DEBUG)AppController : 7,0 clicked
+[2014-09-20 22:27:20,274](DEBUG)AppController : 7,2 clicked
+[2014-09-20 22:27:20,954](DEBUG)AppController : 5,2 clicked
+[2014-09-20 22:27:21,298](DEBUG)AppController : 5,3 clicked
+[2014-09-20 22:27:21,770](DEBUG)AppController : 7,3 clicked
+[2014-09-20 22:27:22,234](DEBUG)AppController : 8,3 clicked
+[2014-09-20 22:27:22,674](DEBUG)AppController : 9,3 clicked
+[2014-09-20 22:27:23,050](DEBUG)AppController : 4,3 clicked
+[2014-09-20 22:27:23,514](DEBUG)AppController : 2,3 clicked
+[2014-09-20 22:27:24,042](DEBUG)AppController : 1,3 clicked
+[2014-09-20 22:27:24,514](DEBUG)AppController : 0,3 clicked
+[2014-09-20 22:27:24,930](DEBUG)AppController : 1,3 clicked
+[2014-09-20 22:27:25,306](DEBUG)AppController : 4,3 clicked
+[2014-09-20 22:27:25,674](DEBUG)AppController : 6,3 clicked
+[2014-09-20 22:27:26,018](DEBUG)AppController : 7,3 clicked
+[2014-09-20 22:27:26,418](DEBUG)AppController : 8,4 clicked
+[2014-09-20 22:27:26,754](DEBUG)AppController : 8,3 clicked
+[2014-09-20 22:27:27,050](DEBUG)AppController : 8,3 clicked
+[2014-09-20 22:27:27,450](DEBUG)AppController : 8,4 clicked
+[2014-09-20 22:27:27,842](DEBUG)AppController : 8,5 clicked
+[2014-09-20 22:27:28,242](DEBUG)AppController : 8,7 clicked
+[2014-09-20 22:27:29,130](DEBUG)AppController : 7,11 clicked
+[2014-09-20 22:27:29,530](DEBUG)AppController : 7,10 clicked
+[2014-09-20 22:27:29,986](DEBUG)AppController : 3,10 clicked
+[2014-09-20 22:27:30,554](DEBUG)AppController : 3,11 clicked
+[2014-09-20 22:27:31,050](DEBUG)AppController : 0,11 clicked
+[2014-09-20 22:27:33,850](DEBUG)AppController : 6,11 clicked
+[2014-09-20 22:27:34,546](DEBUG)AppController : 8,11 clicked
+[2014-09-20 22:27:35,362](DEBUG)AppController : 4,11 clicked
+[2014-09-20 22:27:35,810](DEBUG)AppController : 7,11 clicked
+[2014-09-20 22:27:46,097](DEBUG)AppController : 5,11 clicked
+[2014-09-20 22:27:47,322](DEBUG)AppController : 5,11 clicked
+[2014-09-20 22:27:48,777](DEBUG)AppController : 6,11 clicked
+[2014-09-20 22:27:49,594](DEBUG)AppController : 8,11 clicked
+[2014-09-20 22:28:00,809](DEBUG)AppController : 8,6 clicked
+[2014-09-20 22:28:03,841](DEBUG)AppController : 4,6 clicked
+[2014-09-20 22:28:04,905](DEBUG)AppController : 8,6 clicked
+[2014-09-20 22:28:08,145](DEBUG)AppController : 5,3 clicked
+[2014-09-20 22:28:18,761](DEBUG)AppController : 2,0 clicked
+[2014-09-20 22:28:21,850](INFO)AppController : db.mbaproduct.find(db.productinfo.find({'sid':'m-3-0',category:'数码相机'}))
+[2014-09-20 22:28:21,850](ERROR)AppController : Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+[2014-09-20 22:28:29,186](INFO)AppController : db.mbaproduct.find(db.productinfo.find({'sid':'m-3-0','category':'数码相机'}))
+[2014-09-20 22:29:04,352](INFO)AppController : db.mbaproduct.find(db.productinfo.find({'sid':'m-3-0','category':'数码相机'}))
+[2014-09-20 22:30:39,221](DEBUG)AppController : 1,6 clicked
+[2014-09-20 22:30:39,613](DEBUG)AppController : 2,7 clicked
+[2014-09-20 22:30:40,005](DEBUG)AppController : 3,7 clicked
+[2014-09-20 22:30:40,301](DEBUG)AppController : 4,6 clicked
+[2014-09-20 22:30:40,597](DEBUG)AppController : 4,5 clicked
+[2014-09-20 22:30:41,237](DEBUG)AppController : 2,4 clicked
+[2014-09-20 22:30:41,701](DEBUG)AppController : 4,4 clicked
+[2014-09-20 22:30:42,101](DEBUG)AppController : 7,4 clicked
+[2014-09-20 22:30:43,429](DEBUG)AppController : 8,4 clicked
+[2014-09-20 22:30:44,141](DEBUG)AppController : 7,3 clicked
+[2014-09-20 22:30:44,605](DEBUG)AppController : 6,2 clicked
+[2014-09-20 22:30:45,125](DEBUG)AppController : 5,2 clicked
+[2014-09-20 22:30:45,557](DEBUG)AppController : 3,2 clicked
+[2014-09-20 22:30:46,061](DEBUG)AppController : 2,2 clicked
+[2014-09-20 22:30:46,453](DEBUG)AppController : 0,2 clicked
+[2014-09-20 22:30:46,885](DEBUG)AppController : 0,1 clicked
+[2014-09-20 22:30:54,725](DEBUG)AppController : 4,3 clicked
+[2014-09-20 22:30:55,549](DEBUG)AppController : 5,3 clicked
+[2014-09-20 22:30:55,757](DEBUG)AppController : 5,3 clicked
+[2014-09-20 22:30:56,205](DEBUG)AppController : 8,3 clicked
+[2014-09-20 22:30:56,773](DEBUG)AppController : 8,5 clicked
+[2014-09-20 22:32:13,682](DEBUG)AppController : 1,6 clicked
+[2014-09-20 22:32:14,123](DEBUG)AppController : 2,5 clicked
+[2014-09-20 22:32:14,379](DEBUG)AppController : 5,5 clicked
+[2014-09-20 22:32:14,499](DEBUG)AppController : 6,5 clicked
+[2014-09-20 22:32:14,675](DEBUG)AppController : 7,5 clicked
+[2014-09-20 22:43:05,296](INFO)Application : app is start
+[2014-09-20 22:43:05,341](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:43:09,244](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:43:19,036](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-20 22:44:04,161](INFO)Application : app is start
+[2014-09-20 22:44:04,202](INFO)MainWindow : MainWindow init.
+[2014-09-20 22:44:07,895](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-20 22:44:14,650](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 02:13:32,580](INFO)Application : app is start
+[2014-09-21 02:13:32,700](INFO)MainWindow : MainWindow init.
+[2014-09-21 02:13:36,724](ERROR)AppController : [Errno 61] Connection refused
+[2014-09-21 02:13:53,143](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 02:14:02,726](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 02:14:03,154](ERROR)AppController : 'list' object has no attribute 'keys'
+[2014-09-21 02:14:19,412](INFO)Application : app is start
+[2014-09-21 02:14:19,468](INFO)MainWindow : MainWindow init.
+[2014-09-21 02:14:22,462](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 02:14:29,717](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 02:14:29,911](ERROR)AppController : 'list' object has no attribute 'keys'
+[2014-09-21 02:16:05,670](INFO)Application : app is start
+[2014-09-21 02:16:05,713](INFO)MainWindow : MainWindow init.
+[2014-09-21 02:16:09,174](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 02:16:16,563](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 02:16:41,266](INFO)AppController : [u'jdproduct', u'mba', u'mba_product', u'mbaproduct', u'test', u'test_mbaproduct', u'config', u'admin']
+[2014-09-21 02:16:45,938](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 02:21:37,778](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 02:21:43,395](INFO)AppController : db.mbaproduct.find(db.jdproduct.find({}))
+[2014-09-21 02:22:32,377](INFO)AppController : db.mbaproduct.find(db.jdproduct.find({}))
+[2014-09-21 02:22:52,817](INFO)AppController : db.mbaproduct.find(db.jdproduct.find({}fasd))
+[2014-09-21 02:22:52,817](ERROR)AppController : 'NoneType' object is not iterable
+[2014-09-21 02:23:04,176](INFO)AppController : db.mbaproduct.find(db.jdproduct.find({}))
+[2014-09-21 02:24:03,295](INFO)AppController : db.mbaproduct.find(db.jdproduct.find({}))
+[2014-09-21 02:33:03,802](INFO)Application : app is start
+[2014-09-21 02:33:03,861](INFO)MainWindow : MainWindow init.
+[2014-09-21 02:33:07,259](DEBUG)AppController : mba is selected
+[2014-09-21 02:33:07,259](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 02:33:08,675](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 02:33:11,499](DEBUG)AppController : mba is selected
+[2014-09-21 02:33:13,626](DEBUG)AppController : config is selected
+[2014-09-21 02:33:18,201](DEBUG)AppController : admin is selected
+[2014-09-21 02:40:36,118](INFO)Application : app is start
+[2014-09-21 02:40:36,160](INFO)MainWindow : MainWindow init.
+[2014-09-21 02:40:50,042](DEBUG)AppController : mba is selected
+[2014-09-21 02:40:50,043](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 02:40:58,376](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 02:40:59,133](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 02:42:28,667](INFO)Application : app is start
+[2014-09-21 02:42:28,721](INFO)MainWindow : MainWindow init.
+[2014-09-21 13:57:09,712](INFO)Application : app is start
+[2014-09-21 13:57:09,759](INFO)MainWindow : MainWindow init.
+[2014-09-21 14:42:37,817](INFO)Application : app is start
+[2014-09-21 14:44:48,770](INFO)Application : app is start
+[2014-09-21 14:46:18,645](INFO)Application : app is start
+[2014-09-21 14:46:21,885](ERROR)AppController : 'Ui_MainWindow' object has no attribute 'statusBar'
+[2014-09-21 14:47:43,002](INFO)Application : app is start
+[2014-09-21 14:47:45,597](ERROR)AppController : 'QWidget' object has no attribute 'statusBar'
+[2014-09-21 14:54:15,216](INFO)Application : app is start
+[2014-09-21 14:54:18,634](DEBUG)AppController : mba is selected
+[2014-09-21 14:54:18,634](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 14:54:21,524](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 14:54:23,771](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 14:57:00,389](INFO)Application : app is start
+[2014-09-21 14:57:03,185](DEBUG)AppController : mba is selected
+[2014-09-21 14:57:03,185](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 14:57:05,025](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 14:57:06,695](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 14:57:06,917](ERROR)AppController : QStandardItemModel.setHorizontalHeaderLabels(list-of-str): argument 1 has unexpected type 'NoneType'
+[2014-09-21 14:57:52,697](INFO)Application : app is start
+[2014-09-21 14:57:55,684](DEBUG)AppController : mba is selected
+[2014-09-21 14:57:55,684](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 14:57:57,392](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 14:57:58,150](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 14:58:30,786](DEBUG)AppController :  is selected
+[2014-09-21 14:58:30,786](DEBUG)AppController : jdproduct is selected
+[2014-09-21 14:58:30,787](INFO)AppController : [u'jdproduct', u'mba', u'mba_product', u'mbaproduct', u'test', u'test_mbaproduct', u'config', u'admin']
+[2014-09-21 14:58:32,376](DEBUG)AppController : mba_product is selected
+[2014-09-21 14:58:34,278](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 14:58:34,957](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 15:03:54,269](INFO)Application : app is start
+[2014-09-21 15:07:25,500](INFO)Application : app is start
+[2014-09-21 15:07:29,431](DEBUG)AppController : mba is selected
+[2014-09-21 15:07:29,431](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:07:30,577](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:07:31,559](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 15:08:44,182](INFO)Application : app is start
+[2014-09-21 15:08:46,963](DEBUG)AppController : mba is selected
+[2014-09-21 15:08:46,963](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:08:48,744](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:08:49,245](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 15:11:24,814](INFO)Application : app is start
+[2014-09-21 15:11:27,304](DEBUG)AppController : mba is selected
+[2014-09-21 15:11:27,304](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:11:28,283](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:11:29,249](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 15:13:54,814](INFO)Application : app is start
+[2014-09-21 15:13:57,824](DEBUG)AppController : mba is selected
+[2014-09-21 15:13:57,929](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:13:59,319](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:14:00,133](INFO)AppController : db.mbaproduct.find(db.productinfo.find({}))
+[2014-09-21 15:14:12,687](DEBUG)AppController : mba is selected
+[2014-09-21 15:19:56,567](INFO)Application : app is start
+[2014-09-21 15:20:00,381](DEBUG)AppController : mba is selected
+[2014-09-21 15:20:00,503](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:20:06,541](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:20:10,468](DEBUG)AppController : admin is selected
+[2014-09-21 15:20:12,756](DEBUG)AppController : config is selected
+[2014-09-21 15:20:35,014](INFO)Application : app is start
+[2014-09-21 15:20:42,313](DEBUG)AppController : mba is selected
+[2014-09-21 15:20:42,415](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:20:43,629](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:29:48,273](INFO)Application : app is start
+[2014-09-21 15:29:51,100](DEBUG)AppController : mba is selected
+[2014-09-21 15:29:51,202](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:31:10,255](INFO)Application : app is start
+[2014-09-21 15:31:13,065](DEBUG)AppController : mba is selected
+[2014-09-21 15:31:13,166](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:31:16,260](ERROR)AppController : spec must be an instance of dict
+[2014-09-21 15:31:55,091](INFO)Application : app is start
+[2014-09-21 15:31:58,012](DEBUG)AppController : mba is selected
+[2014-09-21 15:31:58,129](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:31:58,584](DEBUG)AppController :  is selected
+[2014-09-21 15:31:58,585](DEBUG)AppController : mba is selected
+[2014-09-21 15:31:58,752](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:31:59,093](DEBUG)AppController :  is selected
+[2014-09-21 15:31:59,094](DEBUG)AppController : mba is selected
+[2014-09-21 15:31:59,191](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:32:01,650](ERROR)AppController : spec must be an instance of dict
+[2014-09-21 15:36:04,301](INFO)Application : app is start
+[2014-09-21 15:36:06,946](DEBUG)AppController : mba is selected
+[2014-09-21 15:36:07,046](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:36:26,636](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:36:28,175](DEBUG)AppController :  is selected
+[2014-09-21 15:36:28,176](DEBUG)AppController : mba is selected
+[2014-09-21 15:36:28,264](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:36:31,869](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:40:25,696](INFO)Application : app is start
+[2014-09-21 15:40:54,877](INFO)Application : app is start
+[2014-09-21 15:40:57,650](DEBUG)AppController : mba is selected
+[2014-09-21 15:40:57,736](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:40:58,752](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:41:09,366](ERROR)AppController : Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+[2014-09-21 15:41:47,805](INFO)Application : app is start
+[2014-09-21 15:41:50,792](DEBUG)AppController : mba is selected
+[2014-09-21 15:41:50,901](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:41:52,092](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:43:31,146](INFO)Application : app is start
+[2014-09-21 15:43:34,262](DEBUG)AppController : mba is selected
+[2014-09-21 15:43:34,355](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:43:35,314](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:43:39,377](DEBUG)AppController : test is selected
+[2014-09-21 15:43:49,322](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 15:46:47,555](INFO)Application : app is start
+[2014-09-21 15:46:51,083](DEBUG)AppController : mba is selected
+[2014-09-21 15:46:51,206](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 15:46:52,768](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 16:02:43,331](INFO)Application : app is start
+[2014-09-21 16:04:18,534](INFO)Application : app is start
+[2014-09-21 16:04:21,334](DEBUG)AppController : mba is selected
+[2014-09-21 16:04:21,429](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:08:11,682](INFO)Application : app is start
+[2014-09-21 16:08:15,463](DEBUG)AppController : mba is selected
+[2014-09-21 16:08:15,554](ERROR)AppController : arguments did not match any overloaded call:
+  QTreeWidgetItem(int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem): argument 1 has unexpected type 'unicode'
+[2014-09-21 16:08:15,560](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:08:51,530](INFO)Application : app is start
+[2014-09-21 16:08:54,946](DEBUG)AppController : mba is selected
+[2014-09-21 16:08:55,050](ERROR)AppController : arguments did not match any overloaded call:
+  QTreeWidgetItem(int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem): argument 1 has unexpected type 'unicode'
+[2014-09-21 16:08:55,056](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:09:34,978](INFO)Application : app is start
+[2014-09-21 16:09:37,873](DEBUG)AppController : mba is selected
+[2014-09-21 16:09:37,962](ERROR)AppController : global name 'tr' is not defined
+[2014-09-21 16:09:37,965](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:09:48,713](DEBUG)AppController :  is selected
+[2014-09-21 16:09:48,714](DEBUG)AppController : mba is selected
+[2014-09-21 16:09:48,826](ERROR)AppController : global name 'tr' is not defined
+[2014-09-21 16:09:48,828](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:11:03,273](INFO)Application : app is start
+[2014-09-21 16:11:06,614](DEBUG)AppController : mba is selected
+[2014-09-21 16:11:06,706](ERROR)AppController : arguments did not match any overloaded call:
+  QTreeWidgetItem(int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'QTreeWidget'
+  QTreeWidgetItem(list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'QTreeWidget'
+  QTreeWidgetItem(QTreeWidget, int type=QTreeWidgetItem.Type): argument 2 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, list-of-str, int type=QTreeWidgetItem.Type): argument 2 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 2 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'QTreeWidget'
+  QTreeWidgetItem(QTreeWidgetItem, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'QTreeWidget'
+  QTreeWidgetItem(QTreeWidgetItem, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'QTreeWidget'
+  QTreeWidgetItem(QTreeWidgetItem): argument 1 has unexpected type 'QTreeWidget'
+[2014-09-21 16:11:06,712](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:13:03,189](INFO)Application : app is start
+[2014-09-21 16:13:06,348](DEBUG)AppController : mba is selected
+[2014-09-21 16:13:06,456](ERROR)AppController : arguments did not match any overloaded call:
+  QTreeWidgetItem(int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem): argument 1 has unexpected type 'unicode'
+[2014-09-21 16:13:06,462](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:13:38,036](INFO)Application : app is start
+[2014-09-21 16:13:40,718](DEBUG)AppController : mba is selected
+[2014-09-21 16:13:41,369](ERROR)AppController : arguments did not match any overloaded call:
+  QTreeWidgetItem(int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidget, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, list-of-str, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem, QTreeWidgetItem, int type=QTreeWidgetItem.Type): argument 1 has unexpected type 'unicode'
+  QTreeWidgetItem(QTreeWidgetItem): argument 1 has unexpected type 'unicode'
+[2014-09-21 16:13:41,374](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:15:04,321](INFO)Application : app is start
+[2014-09-21 16:15:06,699](DEBUG)AppController : mba is selected
+[2014-09-21 16:15:06,789](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:18:30,049](INFO)Application : app is start
+[2014-09-21 16:18:40,542](DEBUG)AppController : mba is selected
+[2014-09-21 16:18:41,304](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:19:10,689](INFO)Application : app is start
+[2014-09-21 16:19:37,837](INFO)Application : app is start
+[2014-09-21 16:19:48,935](DEBUG)AppController : mba is selected
+[2014-09-21 16:19:49,030](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 16:25:43,869](INFO)Application : app is start
+[2014-09-21 16:25:47,359](DEBUG)AppController : mba is selected
+[2014-09-21 16:25:48,379](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:11:31,365](INFO)Application : app is start
+[2014-09-21 19:11:36,689](ERROR)AppController : [Errno 61] Connection refused
+[2014-09-21 19:11:49,643](DEBUG)AppController : mba is selected
+[2014-09-21 19:11:50,251](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:11:52,209](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 19:13:17,486](INFO)Application : app is start
+[2014-09-21 19:13:20,803](DEBUG)AppController : mba is selected
+[2014-09-21 19:13:21,393](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:13:22,519](DEBUG)AppController : mbaproduct is selected
+[2014-09-21 19:13:55,122](INFO)Application : app is start
+[2014-09-21 19:13:58,723](DEBUG)AppController : mba is selected
+[2014-09-21 19:13:59,350](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:17:20,965](INFO)Application : app is start
+[2014-09-21 19:17:29,214](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:25:27,228](INFO)Application : app is start
+[2014-09-21 19:25:33,926](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:28:09,158](INFO)Application : app is start
+[2014-09-21 19:28:12,284](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:30:13,812](INFO)Application : app is start
+[2014-09-21 19:30:17,222](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:31:09,796](INFO)Application : app is start
+[2014-09-21 19:31:13,925](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:33:31,922](INFO)Application : app is start
+[2014-09-21 19:33:37,408](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:33:58,544](INFO)Application : app is start
+[2014-09-21 19:34:03,199](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:41:02,028](INFO)Application : app is start
+[2014-09-21 19:41:12,210](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:42:55,970](INFO)Application : app is start
+[2014-09-21 19:43:02,363](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:44:29,605](INFO)Application : app is start
+[2014-09-21 19:44:33,246](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:47:51,273](INFO)Application : app is start
+[2014-09-21 19:49:17,701](INFO)Application : app is start
+[2014-09-21 19:49:20,871](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:51:09,239](INFO)Application : app is start
+[2014-09-21 19:51:13,858](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:52:55,683](INFO)Application : app is start
+[2014-09-21 19:52:58,998](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 19:57:04,305](INFO)Application : app is start
+[2014-09-21 19:57:09,554](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 20:54:32,340](INFO)Application : app is start
+[2014-09-21 20:54:36,641](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 20:55:18,259](INFO)Application : app is start
+[2014-09-21 20:55:21,521](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 20:56:33,785](INFO)Application : app is start
+[2014-09-21 20:56:37,682](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 20:59:15,569](INFO)Application : app is start
+[2014-09-21 20:59:19,490](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 20:59:43,680](INFO)Application : app is start
+[2014-09-21 20:59:47,468](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:00:43,170](INFO)Application : app is start
+[2014-09-21 21:00:48,562](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:06:10,835](INFO)Application : app is start
+[2014-09-21 21:06:15,560](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:11:20,935](INFO)Application : app is start
+[2014-09-21 21:11:24,466](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:11:52,367](INFO)Application : app is start
+[2014-09-21 21:11:55,565](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:12:41,266](INFO)Application : app is start
+[2014-09-21 21:12:46,165](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:19:55,455](INFO)Application : app is start
+[2014-09-21 21:19:59,551](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:20:21,828](INFO)Application : app is start
+[2014-09-21 21:20:25,220](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:21:25,789](INFO)Application : app is start
+[2014-09-21 21:21:29,815](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:23:27,755](INFO)Application : app is start
+[2014-09-21 21:23:32,255](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:24:33,528](INFO)Application : app is start
+[2014-09-21 21:24:37,825](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:25:39,257](INFO)Application : app is start
+[2014-09-21 21:25:43,378](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:28:13,144](INFO)Application : app is start
+[2014-09-21 21:28:16,252](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:31:43,685](INFO)Application : app is start
+[2014-09-21 21:31:47,293](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:34:57,773](INFO)Application : app is start
+[2014-09-21 21:35:05,678](INFO)Application : app is start
+[2014-09-21 21:35:13,402](INFO)Application : app is start
+[2014-09-21 21:35:17,032](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 21:49:30,077](INFO)Application : app is start
+[2014-09-21 21:49:33,790](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-21 23:56:31,412](INFO)Application : app is start
+[2014-09-22 02:13:45,014](INFO)Application : app is start
+[2014-09-22 02:13:50,402](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-22 02:15:48,778](INFO)Application : app is start
+[2014-09-22 14:46:07,175](INFO)Application : app is start
+[2014-09-22 14:46:09,734](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-09-22 14:46:25,472](INFO)Application : app is start
+[2014-09-22 14:46:28,321](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-24 15:55:56,064](INFO)Application : app is start
+[2014-10-24 15:56:08,537](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-24 16:08:04,003](INFO)Application : app is start
+[2014-10-24 16:08:14,790](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-24 16:10:25,776](INFO)Application : app is start
+[2014-10-24 16:10:33,159](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-24 16:11:20,581](INFO)Application : app is start
+[2014-10-24 16:11:28,934](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-24 16:11:32,347](DEBUG)AppController : date
+[2014-10-24 16:11:32,853](DEBUG)AppController : date
+[2014-10-24 16:11:33,405](DEBUG)AppController : date
+[2014-10-24 16:11:38,737](DEBUG)AppController : md
+[2014-10-24 16:15:05,249](INFO)Application : app is start
+[2014-10-24 16:15:15,167](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-24 16:15:23,551](DEBUG)AppController : _id
+[2014-10-24 16:15:24,698](DEBUG)AppController : _id
+[2014-10-24 16:15:25,474](DEBUG)AppController : _id
+[2014-10-24 16:15:26,003](DEBUG)AppController : _id
+[2014-10-24 16:15:26,457](DEBUG)AppController : _id
+[2014-10-24 16:15:26,792](DEBUG)AppController : _id
+[2014-10-24 16:15:27,139](DEBUG)AppController : date
+[2014-10-24 16:15:27,465](DEBUG)AppController : date
+[2014-10-24 16:24:43,755](INFO)Application : app is start
+[2014-10-24 16:25:43,479](INFO)Application : app is start
+[2014-10-24 16:25:51,153](INFO)AppController : [u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-24 16:45:32,119](INFO)Application : app is start
+[2014-10-25 12:59:25,741](INFO)Application : app is start
+[2014-10-25 13:00:40,601](INFO)Application : app is start
+[2014-10-25 13:00:47,648](ERROR)AppController : Empty host (or extra comma in host list).
+[2014-10-25 13:01:58,277](INFO)Application : app is start
+[2014-10-25 13:02:00,718](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:02:21,688](DEBUG)AppController : {u'_id': u'541c61c3bb88226aab96f4dd'}
+[2014-10-25 13:02:24,675](DEBUG)AppController : {u'age': u'33', u'_id': u'541c61c3bb88226aab96f4dd'}
+[2014-10-25 13:05:18,273](INFO)Application : app is start
+[2014-10-25 13:05:21,245](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:05:27,948](DEBUG)AppController : {u'age': u'33'}
+[2014-10-25 13:05:30,434](DEBUG)AppController : {u'age': u'33'}
+[2014-10-25 13:08:37,914](INFO)Application : app is start
+[2014-10-25 13:08:41,236](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:08:47,643](DEBUG)AppController : {u'age': u'33'}
+[2014-10-25 13:08:50,195](DEBUG)AppController : {u'age': u'33'}
+[2014-10-25 13:08:52,184](DEBUG)AppController : {u'age': u'33', u'name': u'Joe'}
+[2014-10-25 13:08:53,257](DEBUG)AppController : {u'age': u'33', u'name': u'Joe'}
+[2014-10-25 13:08:54,896](DEBUG)AppController : {u'age': u'33', u'name': u'Joe'}
+[2014-10-25 13:08:55,991](DEBUG)AppController : {u'age': u'33', u'_id': u'541c6301433b6635eb8c69e2', u'name': u'Joe'}
+[2014-10-25 13:08:56,936](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:08:58,048](DEBUG)AppController : {u'age': u'33', u'_id': u'541c61c3bb88226aab96f4dd', u'name': u'Joe'}
+[2014-10-25 13:08:59,167](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:09:00,086](DEBUG)AppController : {u'age': u'33', u'_id': u'541c6301433b6635eb8c69e2', u'name': u'Joe'}
+[2014-10-25 13:09:01,425](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:09:02,746](DEBUG)AppController : {u'age': u'33', u'_id': u'541c61c3bb88226aab96f4dd', u'name': u'Joe'}
+[2014-10-25 13:09:03,885](DEBUG)AppController : {u'age': u'33', u'_id': u'541c6301433b6635eb8c69e2', u'name': u'Joe'}
+[2014-10-25 13:09:04,951](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:09:05,903](DEBUG)AppController : {u'age': u'33', u'_id': u'541c61c3bb88226aab96f4dd', u'name': u'Joe'}
+[2014-10-25 13:09:07,213](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:09:08,197](DEBUG)AppController : {u'age': u'33', u'_id': u'541c61c3bb88226aab96f4dd', u'name': u'Joe'}
+[2014-10-25 13:09:09,293](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:10:44,534](INFO)Application : app is start
+[2014-10-25 13:10:47,454](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:11:05,668](DEBUG)AppController : {u'name': u'Joe'}
+[2014-10-25 13:11:07,056](DEBUG)AppController : {u'name': u'Joe'}
+[2014-10-25 13:11:08,033](DEBUG)AppController : {u'age': u'33', u'name': u'Joe'}
+[2014-10-25 13:11:09,034](DEBUG)AppController : {u'age': u'33', u'_id': u'541c61c3bb88226aab96f4dd', u'name': u'Joe'}
+[2014-10-25 13:11:09,890](DEBUG)AppController : {u'age': u'33', u'_id': u'541c6301433b6635eb8c69e2', u'name': u'Joe'}
+[2014-10-25 13:11:11,151](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:11:17,721](DEBUG)AppController : {u'age': u'33', u'_id': u'541c6301433b6635eb8c69e2', u'name': u'Joe'}
+[2014-10-25 13:11:18,999](DEBUG)AppController : {u'age': u'33', u'_id': u'541c61c3bb88226aab96f4dd', u'name': u'Joe'}
+[2014-10-25 13:11:20,655](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:11:22,318](DEBUG)AppController : {u'age': u'33', u'_id': u'541c62c0ebb3340e47981d28', u'name': u'Joe'}
+[2014-10-25 13:11:24,000](DEBUG)AppController : {u'age': u'33', u'_id': u'541c6301433b6635eb8c69e2', u'name': u'Joe'}
+[2014-10-25 13:11:25,279](DEBUG)AppController : {u'age': u'33', u'_id': u'541c6301433b6635eb8c69e2', u'name': u'Joe'}
+[2014-10-25 13:11:57,401](ERROR)AppController : No JSON object could be decoded
+[2014-10-25 13:11:58,211](ERROR)AppController : No JSON object could be decoded
+[2014-10-25 13:11:58,668](ERROR)AppController : No JSON object could be decoded
+[2014-10-25 13:11:58,859](ERROR)AppController : No JSON object could be decoded
+[2014-10-25 13:11:59,059](ERROR)AppController : No JSON object could be decoded
+[2014-10-25 13:13:45,373](INFO)Application : app is start
+[2014-10-25 13:13:47,971](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:14:19,958](INFO)Application : app is start
+[2014-10-25 13:14:22,803](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:14:30,527](DEBUG)AppController : {u'age': u'33'}
+[2014-10-25 13:15:06,747](DEBUG)AppController : {u'name': u'Joe'}
+[2014-10-25 13:20:19,487](INFO)Application : app is start
+[2014-10-25 13:20:44,407](INFO)Application : app is start
+[2014-10-25 13:26:22,839](INFO)Application : app is start
+[2014-10-25 13:26:49,028](INFO)Application : app is start
+[2014-10-25 13:26:53,130](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:27:08,302](DEBUG)AppController : {u'name': u'Joe'}
+[2014-10-25 13:34:38,007](INFO)Application : app is start
+[2014-10-25 13:34:44,660](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:38:44,233](INFO)Application : app is start
+[2014-10-25 13:38:47,068](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:42:06,212](INFO)Application : app is start
+[2014-10-25 13:42:10,227](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:43:32,931](INFO)Application : app is start
+[2014-10-25 13:43:42,574](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:46:56,089](INFO)Application : app is start
+[2014-10-25 13:46:59,501](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:47:11,785](ERROR)AppController : if no direction is specified, key_or_list must be an instance of list
+[2014-10-25 13:51:22,927](INFO)Application : app is start
+[2014-10-25 13:51:25,971](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:51:33,830](ERROR)AppController : too many values to unpack
+[2014-10-25 13:52:57,212](INFO)Application : app is start
+[2014-10-25 13:53:00,196](INFO)AppController : [u'local', u'test']
+[2014-10-25 13:56:32,593](INFO)Application : app is start
+[2014-10-25 13:56:35,507](INFO)AppController : [u'local', u'test']
+[2014-10-25 14:00:30,538](INFO)Application : app is start
+[2014-10-25 14:00:33,522](INFO)AppController : [u'local', u'test']
+[2014-10-25 14:04:54,731](INFO)Application : app is start
+[2014-10-25 14:04:57,914](INFO)AppController : [u'local', u'test']
+[2014-10-25 14:05:05,123](INFO)AppController : test.aaa
+[2014-10-25 14:05:15,395](DEBUG)AppController : {u'age': u'33'}
+[2014-10-26 00:11:59,605](INFO)Application : app is start
+[2014-10-26 00:12:10,409](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 00:12:15,878](INFO)AppController : mbaproduct.productinfo
+[2014-10-26 00:12:27,747](DEBUG)AppController : {u'sid': u'm-22621-1'}
+[2014-10-26 00:12:49,013](DEBUG)AppController : {u'feedid': u'165', u'sid': u'm-22621-1'}
+[2014-10-26 00:14:22,519](DEBUG)AppController : {u'category': u'\u6253\u5e95\u886b', u'sid': u'm-22621-1'}
+[2014-10-26 00:31:56,440](INFO)Application : app is start
+[2014-10-26 00:33:34,489](INFO)Application : app is start
+[2014-10-26 00:33:46,989](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 00:33:54,153](INFO)AppController : mbaproduct.productinfo
+[2014-10-26 00:34:00,376](DEBUG)AppController : 165
+[2014-10-26 00:34:00,376](DEBUG)AppController : {u'feedid': u'165'}
+[2014-10-26 00:35:25,430](INFO)Application : app is start
+[2014-10-26 00:35:36,523](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 00:35:41,328](INFO)AppController : mbaproduct.productinfo
+[2014-10-26 00:35:55,216](DEBUG)AppController : 126
+[2014-10-26 00:35:55,216](DEBUG)AppController : {u'feedid': 126}
+[2014-10-26 00:46:47,646](INFO)Application : app is start
+[2014-10-26 00:46:51,017](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 00:48:16,391](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 00:48:21,777](INFO)AppController : mbaproduct.productinfo
+[2014-10-26 00:48:44,699](DEBUG)AppController : 10455
+[2014-10-26 00:48:44,699](DEBUG)AppController : {u'pid': u'10455'}
+[2014-10-26 00:48:48,964](DEBUG)AppController : m-22621-1
+[2014-10-26 00:48:48,964](DEBUG)AppController : {u'pid': u'10455', u'sid': u'm-22621-1'}
+[2014-10-26 00:51:27,351](INFO)Application : app is start
+[2014-10-26 00:51:56,563](INFO)Application : app is start
+[2014-10-26 00:51:58,853](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 00:52:12,141](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 00:52:17,725](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 00:58:08,329](INFO)Application : app is start
+[2014-10-26 00:58:10,856](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 00:58:44,876](INFO)Application : app is start
+[2014-10-26 00:58:47,867](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:06:53,665](INFO)Application : app is start
+[2014-10-26 01:06:56,782](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:08:23,101](INFO)Application : app is start
+[2014-10-26 01:08:26,315](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:09:14,781](INFO)Application : app is start
+[2014-10-26 01:09:18,174](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:09:36,777](INFO)Application : app is start
+[2014-10-26 01:09:39,680](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:11:51,581](INFO)Application : app is start
+[2014-10-26 01:11:54,060](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:15:02,807](INFO)Application : app is start
+[2014-10-26 01:15:05,683](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:19:36,973](INFO)Application : app is start
+[2014-10-26 01:19:40,124](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:20:40,699](INFO)Application : app is start
+[2014-10-26 01:20:43,626](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:21:56,459](INFO)Application : app is start
+[2014-10-26 01:21:59,292](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:23:14,743](INFO)Application : app is start
+[2014-10-26 01:24:53,966](INFO)Application : app is start
+[2014-10-26 01:25:13,775](INFO)Application : app is start
+[2014-10-26 01:25:16,276](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:25:33,749](INFO)Application : app is start
+[2014-10-26 01:25:36,682](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:25:54,353](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 01:29:23,662](INFO)Application : app is start
+[2014-10-26 01:29:26,956](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:29:46,377](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 01:30:01,045](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 01:31:50,047](INFO)Application : app is start
+[2014-10-26 01:32:13,595](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 01:33:43,979](INFO)Application : app is start
+[2014-10-26 01:33:50,970](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 01:34:11,968](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 01:34:19,059](ERROR)AppController : port must be an instance of int
+[2014-10-26 01:35:05,763](INFO)Application : app is start
+[2014-10-26 01:35:24,014](INFO)AppController : [u'jdproductinfo', u'mba', u'mbaproduct', u'test', u'config', u'admin']
+[2014-10-26 01:35:31,525](INFO)AppController : [u'local', u'config', u'admin']
+[2014-10-26 21:10:47,628](INFO)Application : app is start
+[2014-10-26 21:10:50,502](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 21:10:57,142](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 21:10:58,660](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 21:10:59,916](ERROR)AppController : [Errno 61] Connection refused
+[2014-10-26 21:11:10,709](ERROR)AppController : [Errno 61] Connection refused
