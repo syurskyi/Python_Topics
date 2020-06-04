@@ -1,22 +1,22 @@
-# _____ ___
-#
-# ____ ?.?W.. _____ ?D.., ?A..
-#
-# ____ demoComboBox _____ _
-#
-# c_ MyForm ?D..
-#     ___  -
-#         s__. -
-#         ui _ ?
-#         ?.sU..
-#         ?.cBAT__.cIC...c.. ?
-#         s..
-#
-#     ___ dispAccountType
-#         ?.lAT__.sT..("You have selected "+?.cBAT__.iT.. ?.cBAT__.cI..
-#
-# __ _ ____ __ _____
-#     app _ ?A..
-#     w _ ?
-#     ?.s..
-#     ___.e.. ?.e..
+import sys
+
+from PyQt5.QtWidgets import QDialog, QApplication
+
+from demoComboBox import *
+
+class MyForm(QDialog):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        self.ui.comboBoxAccountType.currentIndexChanged.connect(self.dispAccountType)
+        self.show()
+
+    def dispAccountType(self):
+        self.ui.labelAccountType.setText("You have selected " + self.ui.comboBoxAccountType.itemText(self.ui.comboBoxAccountType.currentIndex()))
+
+if __name__ == '__main__':
+    app = QApplication([])
+    w = MyForm()
+    w.show()
+    sys.exit(app.exec_())
