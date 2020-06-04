@@ -1,22 +1,22 @@
-# _____ ___
-#
-# ____ ?.?W.. _____ ?D.., ?A..
-#
-# ____ demoListWidget1 _____ _
-#
-# c_ MyForm ?D..
-#     ___  -
-#         s__. -
-#         ui _ ?
-#         ?.sU..
-#         ?.lWD__.iC__.c.. ?
-#         s..
-#
-#     ___ dispSelectedTest
-#         ?.lT__.sT..("You have selected "+?.lWD__.cI__ .t..
-#
-# __ _ ____ __ _____
-#     app _ ?A..
-#     w _ ?
-#     ?.s..
-#     ___.e.. ?.e..
+import sys
+
+from PyQt5.QtWidgets import QDialog, QApplication
+
+from demoListWidget1 import *
+
+class MyForm(QDialog):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        self.ui.listWidgetDiagnosis.itemClicked.connect(self.dispSelectedTest)
+        self.show()
+
+    def dispSelectedTest(self):
+        self.ui.labelTest.setText("You have selected "+self.ui.listWidgetDiagnosis.currentItem().text())
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    w = MyForm()
+    w.show()
+    sys.exit(app.exec_())
