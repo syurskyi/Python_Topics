@@ -1,39 +1,39 @@
-# _____ ___
-#
-# ____ ?.?W.. _____ ?D.., ?A..
-#
-# ____ demoSpinBox _____ _
-#
-# c_ MyForm ?D..
-#     ___  -
-#         s__. -
-#         ui _ ?
-#         ?.sU..
-#         ?.sBBQ__.eF__.c.. ?1
-#         ?.dSBSW__.eF__.c.. ?2
-#         s..
-#
-#     ___ result1
-#         __ le. ?.lEBP__.t.. !_0
-#             bookPrice_in. ?.lEBP__.t..
-#         ____
-#             bookPrice_0
-#         totalBookAmount_ui.sBBQ__.v.. * bP..
-#         ?.lEBA__.sT.. st. ?
-#
-#     ___ result2
-#         __ le. ?.lESP__.t.. !_0
-#             sugarPrice_fl.. ?.lESP__.t..
-#         ____
-#             sugarPrice_0
-#         totalSugarAmount_ui.dSBSW__.v.. * sP...
-#         ?.lESA__.sT.. st. ro.. tSA.. 2
-#         totalBookAmount_in. ?.lEBA__.t..
-#         totalAmount_tBA.. + tSA..
-#         ?.lTA__.sT.. st. ro.. tA.. 2
-#
-# __ _ ____ __ _____
-#     app _ ?A..
-#     w _ ?
-#     w.s..
-#     ___.e.. ?.e
+import sys
+
+from PyQt5.QtWidgets import QDialog, QApplication
+
+from demoSpinBox import *
+
+class MyForm(QDialog):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        self.ui.spinBoxBookQty.editingFinished.connect(self.result1)
+        self.ui.doubleSpinBoxSugarWeight.editingFinished.connect(self.result2)
+        self.show()
+
+    def result1(self):
+        if len(self.ui.lineEditBookPrice.text()) !=0:
+            bookPrice=int(self.ui.lineEditBookPrice.text())
+        else:
+            bookPrice=0
+        totalBookAmount=self.ui.spinBoxBookQty.value() * bookPrice
+        self.ui.lineEditBookAmount.setText(str(totalBookAmount))
+
+    def result2(self):
+        if len(self.ui.lineEditSugarAmount.text()) !=0:
+            sugarPrice=float(self.ui.lineEditSugarPrice.text())
+        else:
+            sugarPrice=0
+        totalSugarAmount=self.ui.doubleSpinBoxSugarWeight.value() * sugarPrice
+        self.ui.lineEditSugarAmount.setText(str(round(totalSugarAmount, 2)))
+        totalBookAmount=int(self.ui.lineEditBookAmount.text())
+        totalAmount=totalBookAmount + totalSugarAmount
+        self.ui.labelTotalAmount.setText(str(round(totalAmount, 2)))
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    w = MyForm()
+    w.show()
+    sys.exit(app.exec_())
