@@ -1,19 +1,12 @@
-#!/usr/bin/env python  
-# -*- coding: utf-8 -*-  
-'''
-Created on 2014年9月20日
-
-@author: wanghch
-'''
-______ ___
-____ app.Application ______ Application
-__ ___.version<'3':
-    reload(___) 
-    ___.setdefaultencoding("utf-8")
-
-
-__ __name__ __ '__main__':
-    app _ Application()
-    app.run()
-    
-    p..
+# ______ ___
+# ____ a__.A.. ______ A..
+# __ ___.v.. < '3'
+#     r.. ___
+#     ___.sde.. utf-8
+#
+#
+# __ ______ __ ______
+#     app _ ?
+#     ?.r..
+#
+#     p..
