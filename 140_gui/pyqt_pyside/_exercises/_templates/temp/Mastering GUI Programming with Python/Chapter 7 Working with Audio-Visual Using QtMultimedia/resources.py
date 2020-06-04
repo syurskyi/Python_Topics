@@ -6,9 +6,9 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ ?C..
+from PyQt5 import QtCore
 
-qt_resource_data _ b"\
+qt_resource_data = b"\
 \x00\x00\xa8\x4e\
 \x52\
 \x49\x46\x46\x46\xa8\x00\x00\x57\x41\x56\x45\x66\x6d\x74\x20\x10\
@@ -32993,7 +32993,7 @@ qt_resource_data _ b"\
 \x00\xfe\xff\x02\x00\xff\xff\
 "
 
-qt_resource_name _ b"\
+qt_resource_name = b"\
 \x00\x04\
 \x00\x06\xbb\x36\
 \x00\x64\
@@ -33048,7 +33048,7 @@ qt_resource_name _ b"\
 \x00\x2e\x00\x77\x00\x61\x00\x76\
 "
 
-qt_resource_struct_v1 _ b"\
+qt_resource_struct_v1 = b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x0c\x00\x00\x00\x02\
 \x00\x00\x00\x9e\x00\x00\x00\x00\x00\x01\x00\x06\x0d\x12\
@@ -33065,7 +33065,7 @@ qt_resource_struct_v1 _ b"\
 \x00\x00\x00\x1e\x00\x00\x00\x00\x00\x01\x00\x00\xa8\x52\
 "
 
-qt_resource_struct_v2 _ b"\
+qt_resource_struct_v2 = b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x0c\x00\x00\x00\x02\
@@ -33096,18 +33096,18 @@ qt_resource_struct_v2 _ b"\
 \x00\x00\x01\x68\x72\x35\x69\x47\
 "
 
-qt_version _ [in.(v) ___ v __ ?C...qVersion().sp..('.')]
-__ qt_version < [5, 8, 0]:
-    rcc_version _ 1
-    qt_resource_struct _ qt_resource_struct_v1
-____
-    rcc_version _ 2
-    qt_resource_struct _ qt_resource_struct_v2
+qt_version = [int(v) for v in QtCore.qVersion().split('.')]
+if qt_version < [5, 8, 0]:
+    rcc_version = 1
+    qt_resource_struct = qt_resource_struct_v1
+else:
+    rcc_version = 2
+    qt_resource_struct = qt_resource_struct_v2
 
-___ qInitResources
-    ?C...qRegisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
+def qInitResources():
+    QtCore.qRegisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
 
-___ qCleanupResources
-    ?C...qUnregisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
+def qCleanupResources():
+    QtCore.qUnregisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 qInitResources()
