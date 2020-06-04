@@ -14,7 +14,7 @@ c_ Ui_Controller o..
         Controller.setObjectName("Controller")
         Controller.r..(255, 111)
         gridlayout _ ?W...QGridLayout(Controller)
-        gridlayout.setContentsMargins(9, 9, 9, 9)
+        gridlayout.sCM..(9, 9, 9, 9)
         gridlayout.setSpacing(6)
         gridlayout.setObjectName("gridlayout")
         label _ ?W...QLabel(Controller)

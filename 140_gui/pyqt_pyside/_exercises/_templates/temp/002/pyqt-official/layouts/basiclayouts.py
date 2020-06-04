@@ -43,7 +43,7 @@
 
 
 ____ ?.?W.. ______ (?A.., ?CB, QDialog,
-        QDialogButtonBox, ?FL.., QGridLayout, ?GB.., QHBoxLayout,
+        QDialogButtonBox, ?FL.., QGridLayout, ?GB.., ?HBL..,
         QLabel, QLineEdit, ?M.., QMenuBar, ?PB.., SB.., ?TE..,
         ?VBL..)
 

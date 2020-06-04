@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFileInfo, ?S.., __
 ____ ?.?G.. ______ QMovie, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        QHBoxLayout, QLabel, QSizePolicy, ?S.., SB.., ?S..,
+        ?HBL.., QLabel, ?SP.., ?S.., SB.., ?S..,
         QToolButton, ?VBL.., ?W..)
 
 
@@ -58,7 +58,7 @@ c_ MoviePlayer(?W..):
 
         movieLabel _ QLabel("No movie loaded")
         movieLabel.setAlignment(__.AlignCenter)
-        movieLabel.sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        movieLabel.sSP..(?SP...Ignored, ?SP...Ignored)
         movieLabel.setBackgroundRole(?P...Dark)
         movieLabel.setAutoFillBackground( st.
 

@@ -192,9 +192,9 @@ c_ Window(?W..):
 
     ___ accessChanged  index):
         __ index __ 0:
-            accessLineEdit.setReadOnly F..
+            accessLineEdit.sRO.. F..
         ____ index __ 1:
-            accessLineEdit.setReadOnly( st.
+            accessLineEdit.sRO..( st.
 
 
 __ ______ __ ______

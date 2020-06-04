@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., ?S.., __
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
-        QDialog, QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit,
+        QDialog, QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit,
         QListView, QListWidget, QListWidgetItem, ?PB.., SB..,
         ?SW.., ?VBL.., ?W..)
 

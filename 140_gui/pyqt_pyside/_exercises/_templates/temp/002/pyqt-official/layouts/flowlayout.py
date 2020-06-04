@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QPoint, QRect, ?S.., __
-____ ?.?W.. ______ (?A.., QLayout, ?PB.., QSizePolicy,
+____ ?.?W.. ______ (?A.., QLayout, ?PB.., ?SP..,
         ?W..)
 
 
@@ -67,7 +67,7 @@ c_ FlowLayout(QLayout):
         s__(FlowLayout, self). - (parent)
 
         __ parent __ no. N..:
-            setContentsMargins(margin, margin, margin, margin)
+            sCM..(margin, margin, margin, margin)
 
         setSpacing(spacing)
 
@@ -131,8 +131,8 @@ c_ FlowLayout(QLayout):
 
         ___ item __ itemList:
             wid _ item.widget()
-            spaceX _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.H..)
-            spaceY _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Vertical)
+            spaceX _ spacing() + wid.style().layoutSpacing(?SP...PushButton, ?SP...PushButton, __.H..)
+            spaceY _ spacing() + wid.style().layoutSpacing(?SP...PushButton, ?SP...PushButton, __.Vertical)
             nextX _ x + item.sH..().width() + spaceX
             __ nextX - spaceX > rect.right() and lineHeight > 0:
                 x _ rect.x()

@@ -43,7 +43,7 @@
 ____ ?.?C.. ______ ?D.., QPoint, __
 ____ ?.?G.. ______ ?C.., ?I.., ?KS.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
-        ?CB, QDialog, QFontDialog, ?GB.., QHBoxLayout, QLabel,
+        ?CB, QDialog, QFontDialog, ?GB.., ?HBL.., QLabel,
         QLineEdit, ?MW.., ?MB.., ?PB.., ?TW..,
         ?TWI.., QToolBar, ?VBL..)
 ____ ?.QtPrintSupport ______ QPrinter, QPrintPreviewDialog

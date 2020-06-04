@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QByteArray, ?DS.., QIODevice, QMimeData,
         QPoint, __)
 ____ ?.?G.. ______ ?C.., QDrag, QPainter, ?P..
-____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, ?W..
+____ ?.?W.. ______ ?A.., QFrame, ?HBL.., QLabel, ?W..
 
 ______ draggableicons_rc
 

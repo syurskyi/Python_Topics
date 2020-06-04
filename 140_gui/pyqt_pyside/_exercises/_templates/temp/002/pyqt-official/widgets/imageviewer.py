@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ QImage, QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
-        ?MW.., ?M.., ?MB.., QScrollArea, QSizePolicy)
+        ?MW.., ?M.., ?MB.., QScrollArea, ?SP..)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 
@@ -58,7 +58,7 @@ c_ ImageViewer ?MW..
 
         imageLabel _ ?L..
         imageLabel.setBackgroundRole(?P...Base)
-        imageLabel.sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        imageLabel.sSP..(?SP...Ignored, ?SP...Ignored)
         imageLabel.setScaledContents( st.
 
         scrollArea _ QScrollArea()

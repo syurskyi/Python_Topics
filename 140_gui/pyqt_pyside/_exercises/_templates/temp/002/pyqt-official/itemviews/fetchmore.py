@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ (pS.., QAbstractListModel, ?D.., QLibraryInfo,
         QModelIndex, __)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
-        QListView, QSizePolicy, QTextBrowser, ?W..)
+        QListView, ?SP.., QTextBrowser, ?W..)
 
 
 c_ FileListModel(QAbstractListModel):
@@ -120,7 +120,7 @@ c_ Window(?W..):
         view.sM..(model)
 
         logViewer _ QTextBrowser()
-        logViewer.sSP..(QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred))
+        logViewer.sSP..(?SP..(?SP...Preferred, ?SP...Preferred))
 
         lineEdit.tC...c..(model.setDirPath)
         lineEdit.tC...c..(logViewer.clear)

@@ -16,7 +16,7 @@ c_ Ui_Window o..
         centralwidget _ ?W...?W..(Window)
         centralwidget.setObjectName("centralwidget")
         verticalLayout_2 _ ?W...?VBL..(centralwidget)
-        verticalLayout_2.setContentsMargins(-1, 4, -1, 4)
+        verticalLayout_2.sCM..(-1, 4, -1, 4)
         verticalLayout_2.setObjectName("verticalLayout_2")
         webView _ QtWebKitWidgets.QWebView(centralwidget)
         webView.setUrl(?C...?U..("http://qt.nokia.com/"))
@@ -36,7 +36,7 @@ c_ Ui_Window o..
         dockWidgetContents _ ?W...?W..
         dockWidgetContents.setObjectName("dockWidgetContents")
         verticalLayout _ ?W...?VBL..(dockWidgetContents)
-        verticalLayout.setContentsMargins(4, 4, 4, 4)
+        verticalLayout.sCM..(4, 4, 4, 4)
         verticalLayout.setObjectName("verticalLayout")
         treeWidget _ ?W...QTreeWidget(dockWidgetContents)
         tW__.setObjectName("treeWidget")

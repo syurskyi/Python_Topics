@@ -48,7 +48,7 @@ ____ ?.?C.. ______ pS.., ?S.., __
 ____ ?.?G.. ______ (QClipboard, ?F.., QFontDatabase, QFontMetrics,
         QPainter)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QFontComboBox,
-        QHBoxLayout, QLabel, QLineEdit, ?MW.., ?PB.., QScrollArea,
+        ?HBL.., QLabel, QLineEdit, ?MW.., ?PB.., QScrollArea,
         QToolTip, ?VBL.., ?W..)
 
 

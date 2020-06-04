@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ ?D.., ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., ?CB, ?DE.., ?DTE..,
-        QDoubleSpinBox, ?GB.., QHBoxLayout, QLabel, SB.., ?TE..,
+        QDoubleSpinBox, ?GB.., ?HBL.., QLabel, SB.., ?TE..,
         ?VBL.., ?W..)
 
 

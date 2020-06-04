@@ -33,23 +33,23 @@ c_ InsertDialog(QDialog):
         layout.aW..(nameinput)
 
         branchinput _ QComboBox()
-        branchinput.addItem("Chemical Engg")
-        branchinput.addItem("Civil")
-        branchinput.addItem("Electrical")
-        branchinput.addItem("Electronics and Communication")
-        branchinput.addItem("Computer Engineering")
-        branchinput.addItem("Information Technology")
+        branchinput.aI..("Chemical Engg")
+        branchinput.aI..("Civil")
+        branchinput.aI..("Electrical")
+        branchinput.aI..("Electronics and Communication")
+        branchinput.aI..("Computer Engineering")
+        branchinput.aI..("Information Technology")
         layout.aW..(branchinput)
 
         seminput _ QComboBox()
-        seminput.addItem("1")
-        seminput.addItem("2")
-        seminput.addItem("3")
-        seminput.addItem("4")
-        seminput.addItem("5")
-        seminput.addItem("6")
-        seminput.addItem("7")
-        seminput.addItem("8")
+        seminput.aI..("1")
+        seminput.aI..("2")
+        seminput.aI..("3")
+        seminput.aI..("4")
+        seminput.aI..("5")
+        seminput.aI..("6")
+        seminput.aI..("7")
+        seminput.aI..("8")
         layout.aW..(seminput)
 
         mobileinput _ QLineEdit()
@@ -209,7 +209,7 @@ c_ AboutDialog(QDialog):
 c_ MainWindow(?MW..):
     ___  -   *args, **kwargs):
         s__(MainWindow, self). - (*args, **kwargs)
-        setWindowIcon(QIcon('icon/g2.png'))  #window icon
+        setWindowIcon(?I..('icon/g2.png'))  #window icon
 
         conn _ sqlite3.c__("database.db")
         c _ conn.cursor()
@@ -241,40 +241,40 @@ c_ MainWindow(?MW..):
         statusbar _ QStatusBar()
         setStatusBar(statusbar)
 
-        btn_ac_adduser _ ?A..(QIcon("icon/add1.jpg"), "Add Student", self)   #add student icon
+        btn_ac_adduser _ ?A..(?I..("icon/add1.jpg"), "Add Student", self)   #add student icon
         btn_ac_adduser.t___.c__(insert)
         btn_ac_adduser.setStatusTip("Add Student")
         toolbar.aA..(btn_ac_adduser)
 
-        btn_ac_refresh _ ?A..(QIcon("icon/r3.png"),"Refresh",self)   #refresh icon
+        btn_ac_refresh _ ?A..(?I..("icon/r3.png"),"Refresh",self)   #refresh icon
         btn_ac_refresh.t___.c__(loaddata)
         btn_ac_refresh.setStatusTip("Refresh Table")
         toolbar.aA..(btn_ac_refresh)
 
-        btn_ac_search _ ?A..(QIcon("icon/s1.png"), "Search", self)  #search icon
+        btn_ac_search _ ?A..(?I..("icon/s1.png"), "Search", self)  #search icon
         btn_ac_search.t___.c__(search)
         btn_ac_search.setStatusTip("Search User")
         toolbar.aA..(btn_ac_search)
 
-        btn_ac_delete _ ?A..(QIcon("icon/d1.png"), "Delete", self)
+        btn_ac_delete _ ?A..(?I..("icon/d1.png"), "Delete", self)
         btn_ac_delete.t___.c__(delete)
         btn_ac_delete.setStatusTip("Delete User")
         toolbar.aA..(btn_ac_delete)
 
-        adduser_action _ ?A..(QIcon("icon/add1.jpg"),"Insert Student", self)
+        adduser_action _ ?A..(?I..("icon/add1.jpg"),"Insert Student", self)
         adduser_action.t___.c__(insert)
         file_menu.aA..(adduser_action)
 
-        searchuser_action _ ?A..(QIcon("icon/s1.png"), "Search Student", self)
+        searchuser_action _ ?A..(?I..("icon/s1.png"), "Search Student", self)
         searchuser_action.t___.c__(search)
         file_menu.aA..(searchuser_action)
 
-        deluser_action _ ?A..(QIcon("icon/d1.png"), "Delete", self)
+        deluser_action _ ?A..(?I..("icon/d1.png"), "Delete", self)
         deluser_action.t___.c__(delete)
         file_menu.aA..(deluser_action)
 
 
-        about_action _ ?A..(QIcon("icon/i1.png"),"Developer", self)  #info icon
+        about_action _ ?A..(?I..("icon/i1.png"),"Developer", self)  #info icon
         about_action.t___.c__(about)
         help_menu.aA..(about_action)
 

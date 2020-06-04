@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QFrame,
-        QLabel, ?MW.., ?M.., ?MB.., QSizePolicy, ?VBL..,
+        QLabel, ?MW.., ?M.., ?MB.., ?SP.., ?VBL..,
         ?W..)
 
 
@@ -57,7 +57,7 @@ c_ MainWindow ?MW..
         sCW..(widget)
 
         topFiller _ ?W..
-        topFiller.sSP..(QSizePolicy.E.., QSizePolicy.E..)
+        topFiller.sSP..(?SP...E.., ?SP...E..)
 
         infoLabel _ QLabel(
                 "<i>Choose a menu option, or right-click to invoke a context menu</i>",
@@ -65,10 +65,10 @@ c_ MainWindow ?MW..
         infoLabel.setFrameStyle(QFrame.StyledPanel | QFrame.Sunken)
 
         bottomFiller _ ?W..
-        bottomFiller.sSP..(QSizePolicy.E.., QSizePolicy.E..)
+        bottomFiller.sSP..(?SP...E.., ?SP...E..)
 
         vbox _ ?VBL..
-        vbox.setContentsMargins(5, 5, 5, 5)
+        vbox.sCM..(5, 5, 5, 5)
         vbox.aW..(topFiller)
         vbox.aW..(infoLabel)
         vbox.aW..(bottomFiller)

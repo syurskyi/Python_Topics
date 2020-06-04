@@ -196,7 +196,7 @@ c_ MainWindow(?MW..):
                                                   "All files (*.*)")
 
         __ filename:
-            with open(filename, 'r') __ f:
+            w__ open(filename, 'r') __ f:
                 html _ f.r..
 
             tabs.currentWidget().setHtml(html)
@@ -209,7 +209,7 @@ c_ MainWindow(?MW..):
 
         __ filename:
             html _ tabs.currentWidget().page().toHtml()
-            with open(filename, 'w') __ f:
+            w__ open(filename, 'w') __ f:
                 f.write(html.e..('utf8'))
 
     ___ print_page

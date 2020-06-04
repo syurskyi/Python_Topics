@@ -1,88 +1,88 @@
-____ ?.?C.. ______ __, QTimer
-____ ?.?G.. ______ QPalette, QIcon
-____ ?.?W.. ______ ?W.., QPlainTextEdit, ?PB.., ?VBL.., QHBoxLayout, QSpacerItem, QSizePolicy
-
-
-c_ LogWidget(?W..):
-    ___  -   parent_None):
-        s__(LogWidget, self). - (parent)
-
-        # Base vars
-        logLength _ 0
-        logger _ l__.gL..(__name__)
-
-        # Palette
-        logPalette _ QPalette()
-        logPalette.setColor(QPalette.Base, __.black)
-        logPalette.setColor(QPalette.Text, __.yellow)
-
-        # Text Panel
-        logText _ QPlainTextEdit(self)
-        logText.setPalette(logPalette)
-        logText.setReadOnly T..
-
-        # Buttons
-        sendButton _ ?PB..(QIcon('img/email.png'), 'Send Logs')
-        sendButton.click.c__(sendLogs)
-        forceButton _ ?PB..(QIcon('img/refresh.png'), 'Force Refresh')
-        forceButton.click.c__(forceRefresh)
-        clearButton _ ?PB..(QIcon('img/eraser.png'), 'Clear Logs')
-        clearButton.click.c__(clearLogs)
-
-        # Layouts
-        layout _ ?VBL..(self)
-        layout.setContentsMargins(1, 1, 1, 1)
-        layout.aW..(logText)
-
-        buttonLayout _ QHBoxLayout()
-        buttonLayout.setContentsMargins(1, 0, 1, 2)
-        buttonLayout.aW..(sendButton)
-        buttonLayout.addItem(QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum))
-        buttonLayout.aW..(forceButton)
-        buttonLayout.aW..(clearButton)
-
-        layout.addLayout(buttonLayout)
-        sL..(layout)
-
-        # Timer
-        logTimer _ QTimer()
-        logTimer.setInterval(5000)
-        logTimer.timeout.c__(updateLog)
-        logTimer.start()
-
-    ___ sendLogs
-        logger.i..('[USER] Now sending logs...')
-
-        ___
-            smtp _ smtplib.SMTP('localhost')
-
-            with open(LOG_FILE, 'r') __ file:
-                content _ file.read()
-
-            smtp.sendmail('weblord@localhost.com', 'v.ducrocq@gmail.com', content)
-        ______ SMTPException __ s:
-            logger.error('[SYSTEM] Error while sending mail : %s' % s)
-            r_
-
-        logger.i..('[USER] Mail sent!')
-
-    ___ clearLogs
-        logger.i..('[USER] Clear Logs requested.')
-        open(LOG_FILE, 'w').close()
-        updateLog()
-
-    ___ updateLog
-        logs _ open(LOG_FILE, 'r').read()
-
-        __ le.(logs) !_ logLength:
-            logLength _ le.(logs)
-
-            logText.setPlainText(logs)
-            logText.moveCursor(QTextCursor.End)
-
-    ___ forceRefresh
-        logger.i..('[USER] Force Log Refresh requested.')
-        logLength _ 0
-        updateLog()
-
-
+# ____ ?.?C.. ______ __ ?T..
+# ____ ?.?G.. ______ ?P.. ?I..
+# ____ ?.?W.. ______ ?W.. ?PTE.., ?PB.., ?VBL.. ?HBL.. ?SI.., ?SP..
+#
+#
+# c_ LogWidget ?W..
+#     ___  -   p.._N..
+#         s__ ? ? -  p..
+#
+#         # Base vars
+#         logLength _ 0
+#         logger _ l__.gL.. -n
+#
+#         # Palette
+#         logPalette _ ?P..
+#         ?.sC..(?P...B.. __.bl..
+#         ?.sC..(?P...T.. __.y..
+#
+#         # Text Panel
+#         logText _ ?PTE..
+#         ?.sP.. lP..
+#         ?.sRO.. T..
+#
+#         # Buttons
+#         sendButton _ ?PB.. ?I.. 'img/email.png' 'Send Logs'
+#         ?.c__.c__ sL..
+#         forceButton _ ?PB.. ?I.. 'img/refresh.png' 'Force Refresh'
+#         ?.c__.c__ ?
+#         clearButton _ ?PB.. ?I.. 'img/eraser.png' 'Clear Logs'
+#         ?.c__.c__ ?
+#
+#         # Layouts
+#         layout _ ?VBL..
+#         ?.sCM.. 1, 1, 1, 1
+#         ?.aW.. lT..
+#
+#         buttonLayout _ ?HBL..
+#         ?.sCM.. 1, 0, 1, 2
+#         ?.aW.. sB..
+#         ?.aI..(?SI..(0, 0, ?SP...E.. ?SP...Mi..
+#         ?.aW.. fB..
+#         ?.aW.. cB..
+#
+#         l__.aL.. ?
+#         sL.. ?
+#
+#         # Timer
+#         logTimer _ ?T..
+#         ?.sI.. 5000
+#         ?.t__.c__ uL..
+#         ?.s..
+#
+#     ___ sendLogs
+#         l__.i.. '[USER] Now sending logs...'
+#
+#         ___
+#             smtp _ smtplib.SMTP 'localhost'
+#
+#             w__ o.. L_F.. _ __ file
+#                 content _ ?.r..
+#
+#             ?.s.. 'weblord@localhost.com', 'v.ducrocq@gmail.com' ?
+#         ______ SMTPE.. __ s
+#             l__.e.. '[SYSTEM] Error while sending mail : @'  ?
+#             r_
+#
+#         l__.i.. '[USER] Mail sent!'
+#
+#     ___ clearLogs
+#         l__.i.. '[USER] Clear Logs requested.'
+#         o.. L_F.. _ .c..
+#         uL..
+#
+#     ___ updateLog
+#         logs _ o.. L_F.. _ .r..
+#
+#         __ le. ? !_ lL..
+#             logL.. _ le. ?
+#
+#             ?.sPT.. ?
+#             ?.mC.. ?TC__.E..
+#
+#     ___ forceRefresh
+#         l__.i.. [USER] Force Log Refresh requested.
+#         logLength _ 0
+#         uL..
+#
+#

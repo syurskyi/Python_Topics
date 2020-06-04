@@ -3,7 +3,7 @@ ____ ?.?G.. ______ *
 ____ ?.?C.. ______ *
 ____ ?.QtMultimedia ______ QSound
 
-c_ PlainTextEdit(QPlainTextEdit):
+c_ PlainTextEdit(?PTE..):
     ___  -
         s__(). - ()
         _holes _   # list
@@ -64,7 +64,7 @@ ___ save():
     __ file_path is N..
         save_as()
     ____
-        with open(file_path, "w") __ f:
+        w__ open(file_path, "w") __ f:
             f.write(text.toPlainText())
         text.document().setModified F..
 save_action.t___.c__(save)

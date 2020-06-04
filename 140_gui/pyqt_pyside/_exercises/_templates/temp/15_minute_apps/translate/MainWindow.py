@@ -14,7 +14,7 @@ c_ Ui_MainWindow o..
         MainWindow.r..(721, 333)
         centralwidget _ ?W...?W..(MainWindow)
         centralwidget.setObjectName("centralwidget")
-        horizontalLayout _ ?W...QHBoxLayout(centralwidget)
+        horizontalLayout _ ?W...?HBL..(centralwidget)
         horizontalLayout.setObjectName("horizontalLayout")
         verticalLayout _ ?W...?VBL..()
         verticalLayout.setObjectName("verticalLayout")

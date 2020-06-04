@@ -87,8 +87,8 @@ c_ MemeEditForm ?.?W..
         la__ .aR..('Image file', image_source)
 
         # Text entries
-        top_text _ qtw.QPlainTextEdit(textChanged_self.on_change)
-        bottom_text _ qtw.QPlainTextEdit(textChanged_self.on_change)
+        top_text _ qtw.?PTE..(textChanged_self.on_change)
+        bottom_text _ qtw.?PTE..(textChanged_self.on_change)
         la__ .aR..("Top Text", top_text)
         la__ .aR..("Bottom Text", bottom_text)
 

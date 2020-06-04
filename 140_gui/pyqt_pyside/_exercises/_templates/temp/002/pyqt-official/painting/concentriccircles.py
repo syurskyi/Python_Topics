@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QRect, QRectF, ?S.., __, ?T..
 ____ ?.?G.. ______ ?C.., QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
-        QSizePolicy, ?W..)
+        ?SP.., ?W..)
 
 
 c_ CircleWidget(?W..):
@@ -57,7 +57,7 @@ c_ CircleWidget(?W..):
         frameNo _ 0
 
         setBackgroundRole(?P...Base)
-        sSP..(QSizePolicy.E.., QSizePolicy.E..)
+        sSP..(?SP...E.., ?SP...E..)
 
     ___ setFloatBased  floatBased):
         floatBased _ floatBased

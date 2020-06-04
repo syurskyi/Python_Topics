@@ -49,7 +49,7 @@ ____ ?.?C.. ______ pS.., ?S.., __, ?T..
 ____ ?.?G.. ______ QOpenGLVersionProfile, ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
         QLineEdit, ?MW.., ?MB.., QOpenGLWidget, QScrollArea,
-        QSizePolicy, ?S.., ?W..)
+        ?SP.., ?S.., ?W..)
 
 
 c_ GLWidget(QOpenGLWidget):
@@ -293,14 +293,14 @@ c_ MainWindow ?MW..
         glWidgetArea.setWidgetResizable( st.
         glWidgetArea.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
         glWidgetArea.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        glWidgetArea.sSP..(QSizePolicy.Ignored,
-                QSizePolicy.Ignored)
+        glWidgetArea.sSP..(?SP...Ignored,
+                ?SP...Ignored)
         glWidgetArea.sMS..(50, 50)
 
         pixmapLabelArea _ QScrollArea()
         pixmapLabelArea.setWidget(pixmapLabel)
-        pixmapLabelArea.sSP..(QSizePolicy.Ignored,
-                QSizePolicy.Ignored)
+        pixmapLabelArea.sSP..(?SP...Ignored,
+                ?SP...Ignored)
         pixmapLabelArea.sMS..(50, 50)
 
         xSlider _ createSlider(glWidget.xRotationChanged,

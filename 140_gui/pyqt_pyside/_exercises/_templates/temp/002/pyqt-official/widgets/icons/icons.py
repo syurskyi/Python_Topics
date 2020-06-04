@@ -46,8 +46,8 @@ ____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
 ____ ?.?G.. ______ ?I.., QImage, ?P.., ?P..
 ____ ?.?W.. ______ (?AIV.., ?A.., QActionGroup,
         ?A.., ?CB, ?FD.., QFrame, QGridLayout, ?GB..,
-        QHBoxLayout, ?HV.., QItemDelegate, QLabel, ?MW..,
-        ?MB.., QRadioButton, QSizePolicy, SB.., ?S..,
+        ?HBL.., ?HV.., QItemDelegate, QLabel, ?MW..,
+        ?MB.., QRadioButton, ?SP.., SB.., ?S..,
         ?SF.., ?TW.., ?TWI.., ?VBL.., ?W..)
 
 
@@ -152,7 +152,7 @@ c_ IconPreviewArea(?W..):
         label.sE.. F..
         label.setAlignment(__.AlignCenter)
         label.setFrameShape(QFrame.Box)
-        label.sSP..(QSizePolicy.E.., QSizePolicy.E..)
+        label.sSP..(?SP...E.., ?SP...E..)
         label.setBackgroundRole(?P...Base)
         label.setAutoFillBackground( st.
         label.sMS..(132, 132)
@@ -199,7 +199,7 @@ c_ MainWindow ?MW..
 
         sWT..("Icons")
         checkCurrentStyle()
-        otherRadioButton.click()
+        otherRadioButton.c__()
 
         r..(minimumSizeHint())
 

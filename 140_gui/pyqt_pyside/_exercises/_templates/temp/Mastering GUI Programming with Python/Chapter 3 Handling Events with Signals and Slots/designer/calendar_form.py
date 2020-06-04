@@ -12,10 +12,10 @@ c_ Ui_MainWindow o..
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.r..(799, 600)
-        horizontalLayout _ ?W...QHBoxLayout(MainWindow)
+        horizontalLayout _ ?W...?HBL..(MainWindow)
         horizontalLayout.setObjectName("horizontalLayout")
         calendar _ ?W...QCalendarWidget(MainWindow)
-        sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.E.., ?W...QSizePolicy.E..)
+        sizePolicy _ ?W...?SP..(?W...?SP...E.., ?W...?SP...E..)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(calendar.sizePolicy().hasHeightForWidth())

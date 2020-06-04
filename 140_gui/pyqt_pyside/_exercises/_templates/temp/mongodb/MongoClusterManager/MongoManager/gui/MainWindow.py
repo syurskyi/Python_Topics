@@ -1,6 +1,6 @@
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ ?MW.., ?W.., ?A.., QSplitter, QListView, QTabWidget
-____ ?.?G.. ______ QIcon, ?SIM.., ?SI..
+____ ?.?G.. ______ ?I.., ?SIM.., ?SI..
 
 
 ____ app.ConfigurationManager ______ ConfigurationManager
@@ -46,7 +46,7 @@ c_ MainWindow(?MW..):
         setCentralWidget(central_widget)
 
         # Set UI
-        setWindowIcon(QIcon(':/icons/fire_damage.ico'))
+        setWindowIcon(?I..(':/icons/fire_damage.ico'))
         setWindowTitle(WINDOW_TITLE)
         setMinimumSize(600, 400)
 

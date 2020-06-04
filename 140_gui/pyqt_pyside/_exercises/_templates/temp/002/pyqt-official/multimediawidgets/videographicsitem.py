@@ -47,7 +47,7 @@ ____ ?.?G.. ______ QTransform
 ____ ?.?M.. ______ ?MC.., ?MP..
 ____ ?.?MW.. ______ QGraphicsVideoItem
 ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
-        QGraphicsView, QHBoxLayout, ?PB.., ?S.., ?S.., ?VBL..,
+        QGraphicsView, ?HBL.., ?PB.., ?S.., ?S.., ?VBL..,
         ?W..)
 
 
@@ -84,7 +84,7 @@ c_ VideoPlayer(?W..):
         positionSlider.sliderMoved.c..(setPosition)
 
         controlLayout _ ?HBL..
-        controlLayout.setContentsMargins(0, 0, 0, 0)
+        controlLayout.sCM..(0, 0, 0, 0)
         controlLayout.aW..(openButton)
         controlLayout.aW..(playButton)
         controlLayout.aW..(positionSlider)

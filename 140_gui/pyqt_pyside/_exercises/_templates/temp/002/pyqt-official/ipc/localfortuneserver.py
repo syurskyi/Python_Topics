@@ -47,7 +47,7 @@
 ______ random
 
 ____ ?.?C.. ______ QByteArray, ?DS.., QIODevice
-____ ?.?W.. ______ (?A.., QDialog, QLabel, QHBoxLayout,
+____ ?.?W.. ______ (?A.., QDialog, QLabel, ?HBL..,
         ?MB.., ?PB.., ?VBL..)
 ____ ?.?N.. ______ QLocalServer
 

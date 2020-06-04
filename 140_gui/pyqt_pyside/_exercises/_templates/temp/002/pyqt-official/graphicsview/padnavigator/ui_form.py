@@ -53,7 +53,7 @@ c_ Ui_Form o..
         groupBox_2.setFlat( st.
         groupBox_2.setCheckable( st.
         groupBox_2.setObjectName("groupBox_2")
-        horizontalLayout_2 _ ?W...QHBoxLayout(groupBox_2)
+        horizontalLayout_2 _ ?W...?HBL..(groupBox_2)
         horizontalLayout_2.setObjectName("horizontalLayout_2")
         treeWidget _ ?W...QTreeWidget(groupBox_2)
         tW__.setObjectName("treeWidget")

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QIODevice, ?O.., QSizeF
 ____ ?.?G.. ______ QTextCharFormat, QTextFormat, QTextObjectInterface
-____ ?.?W.. ______ (?A.., QHBoxLayout, QLabel, QLineEdit,
+____ ?.?W.. ______ (?A.., ?HBL.., QLabel, QLineEdit,
         ?MB.., ?PB.., ?TE.., ?VBL.., ?W..)
 ____ ?.QtSvg ______ QSvgRenderer
 

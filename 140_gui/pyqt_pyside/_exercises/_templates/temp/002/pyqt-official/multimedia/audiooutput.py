@@ -48,7 +48,7 @@ ____ struct ______ pack
 ____ ?.?C.. ______ QByteArray, QIODevice, __, ?T.., qWarning
 ____ ?.?M.. ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
-____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
+____ ?.?W.. ______ (?A.., ?CB, ?HBL.., QLabel,
         ?MW.., ?PB.., ?S.., ?VBL.., ?W..)
 
 

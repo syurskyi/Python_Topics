@@ -327,7 +327,7 @@ c_ Viewer ?MW..
         frame _ QFrame
         grid _ QGridLayout(frame)
         grid.setSpacing(8)
-        grid.setContentsMargins(4, 4, 4, 4)
+        grid.sCM..(4, 4, 4, 4)
 
         la__ .setSizeConstraint(QLayout.SetFixedSize)
 

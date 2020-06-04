@@ -147,7 +147,7 @@ c_ MainWindow(?MW..):
                                                   "All files (*.*)")
 
         __ filename:
-            with open(filename, 'r') __ f:
+            w__ open(filename, 'r') __ f:
                 html _ f.r..
 
             browser.setHtml(html)
@@ -160,7 +160,7 @@ c_ MainWindow(?MW..):
 
         __ filename:
             html _ browser.page().toHtml()
-            with open(filename, 'w') __ f:
+            w__ open(filename, 'w') __ f:
                 f.write(html)
 
     ___ print_page

@@ -16,7 +16,7 @@ c_ Ui_MainWindow o..
         centralwidget _ ?W...?W..(MainWindow)
         centralwidget.setObjectName("centralwidget")
         vboxlayout _ ?W...?VBL..(centralwidget)
-        vboxlayout.setContentsMargins(0, 0, 0, 0)
+        vboxlayout.sCM..(0, 0, 0, 0)
         vboxlayout.setSpacing(0)
         vboxlayout.setObjectName("vboxlayout")
         view _ ?W...QTreeView(centralwidget)

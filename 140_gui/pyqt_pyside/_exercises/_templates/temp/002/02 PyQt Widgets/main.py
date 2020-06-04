@@ -44,8 +44,8 @@
 
 ____ ?.?C.. ______ ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
-        QDial, QDialog, QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit,
-        QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
+        QDial, QDialog, QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit,
+        QProgressBar, ?PB.., QRadioButton, QScrollBar, ?SP..,
         ?S.., SB.., ?SF.., ?TW.., ?TW.., ?TE..,
         ?VBL.., ?W..)
 
@@ -160,14 +160,14 @@ c_ WidgetGallery(QDialog):
 
     ___ createBottomLeftTabWidget 
         bottomLeftTabWidget _ ?TW..()
-        bottomLeftTabWidget.sSP..(QSizePolicy.Preferred,
-                QSizePolicy.Ignored)
+        bottomLeftTabWidget.sSP..(?SP...Preferred,
+                ?SP...Ignored)
 
         tab1 _ ?W..
         tableWidget _ ?TW..(10, 10)
 
         tab1hbox _ ?HBL..
-        tab1hbox.setContentsMargins(5, 5, 5, 5)
+        tab1hbox.sCM..(5, 5, 5, 5)
         tab1hbox.aW..(tableWidget)
         tab1.sL..(tab1hbox)
 
@@ -182,7 +182,7 @@ c_ WidgetGallery(QDialog):
                               "How I wonder what you are!\n")
 
         tab2hbox _ ?HBL..
-        tab2hbox.setContentsMargins(5, 5, 5, 5)
+        tab2hbox.sCM..(5, 5, 5, 5)
         tab2hbox.aW..(textEdit)
         tab2.sL..(tab2hbox)
 

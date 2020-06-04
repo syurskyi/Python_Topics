@@ -51,7 +51,7 @@ c_ PyTextViewer(?TE..):
     ___  -   parent_None):
         s__(PyTextViewer, self). - (parent)
 
-        setReadOnly( st.
+        sRO..( st.
 
         # Initialise the author property by calling it's reset function.
         resetAuthor()

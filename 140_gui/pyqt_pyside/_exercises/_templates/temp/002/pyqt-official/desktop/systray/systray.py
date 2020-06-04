@@ -44,7 +44,7 @@
 
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, ?CB,
-        QDialog, QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit,
+        QDialog, QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit,
         ?MB.., ?M.., ?PB.., SB.., ?S.., QSystemTrayIcon,
         ?TE.., ?VBL..)
 

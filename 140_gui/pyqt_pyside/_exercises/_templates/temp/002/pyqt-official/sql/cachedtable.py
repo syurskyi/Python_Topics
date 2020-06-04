@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
-        QHBoxLayout, ?MB.., ?PB.., QTableView)
+        ?HBL.., ?MB.., ?PB.., QTableView)
 ____ ?.?S.. ______ ?STM..
 
 ______ connection

@@ -40,7 +40,7 @@ c_ Ui_ImageSettingsUi o..
         imageQualitySlider.setObjectName("imageQualitySlider")
         gridLayout_2.aW..(imageQualitySlider, 4, 1, 1, 1)
         gridLayout.aW..(groupBox_2, 0, 0, 1, 1)
-        spacerItem _ ?W...QSpacerItem(20, 14, ?W...QSizePolicy.Minimum, ?W...QSizePolicy.E..)
+        spacerItem _ ?W...?SI..(20, 14, ?W...?SP...Minimum, ?W...?SP...E..)
         gridLayout.aI..(spacerItem, 1, 0, 1, 1)
         buttonBox _ ?W...QDialogButtonBox(ImageSettingsUi)
         buttonBox.setOrientation(?C...__.H..)

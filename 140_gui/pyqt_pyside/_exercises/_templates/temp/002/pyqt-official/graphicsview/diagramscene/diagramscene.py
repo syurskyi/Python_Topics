@@ -51,7 +51,7 @@ ____ ?.?G.. ______ (?B.., ?C.., ?F.., ?I.., QIntValidator, QPainter,
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
-        QHBoxLayout, QLabel, ?MW.., ?M.., ?MB.., QSizePolicy,
+        ?HBL.., QLabel, ?MW.., ?M.., ?MB.., ?SP..,
         QToolBox, QToolButton, ?W..)
 
 ______ diagramscene_rc
@@ -609,7 +609,7 @@ c_ MainWindow ?MW..
         backgroundWidget.sL..(backgroundLayout)
 
         toolBox _ QToolBox()
-        toolBox.sSP..(QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Ignored))
+        toolBox.sSP..(?SP..(?SP...Maximum, ?SP...Ignored))
         toolBox.setMinimumWidth(itemWidget.sH..().width())
         toolBox.aI..(itemWidget, "Basic Flowchart Shapes")
         toolBox.aI..(backgroundWidget, "Backgrounds")

@@ -92,7 +92,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         translator _ Translator()
 
-        destTextEdit.setReadOnly( st.
+        destTextEdit.sRO..( st.
 
         __ GOOGLE_TRANSLATE_AVAILABLE:
             srcLanguage.aI..(LANGUAGES.keys())

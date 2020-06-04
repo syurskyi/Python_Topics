@@ -16,8 +16,8 @@ c_ EqualizerBar(?W...?W..):
         s_. - ($ $$)
 
         sSP..(
-            ?W...QSizePolicy.ME..,
-            ?W...QSizePolicy.ME..
+            ?W...?SP...ME..,
+            ?W...?SP...ME..
         )
 
         __ isinstance(steps, li..):

@@ -48,7 +48,7 @@ ____ ?.?C.. ______ ?S.., __
 ____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
         QPainterPath, ?P.., ?P..)
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
-        QSizePolicy, SB.., ?W..)
+        ?SP.., SB.., ?W..)
 
 
 c_ RenderArea(?W..):
@@ -200,7 +200,7 @@ c_ Window(?W..):
         fillGradientLabel.setBuddy(fillColor1ComboBox)
 
         fillToLabel _ QLabel("to")
-        fillToLabel.sSP..(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        fillToLabel.sSP..(?SP...Fixed, ?SP...Fixed)
 
         penWidthSpinBox _ SB..()
         penWidthSpinBox.setRange(0, 20)

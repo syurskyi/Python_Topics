@@ -48,8 +48,8 @@ ____ ?.?C.. ______ (pS.., QAbstractListModel, QByteArray,
         ?DS.., QIODevice, QMimeData, QModelIndex, QPoint, QRect, ?S..,
         __)
 ____ ?.?G.. ______ ?C.., ?C.., QDrag, ?I.., QPainter, ?P..
-____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
-        QListView, ?MW.., ?MB.., QSizePolicy, ?W..)
+____ ?.?W.. ______ (?A.., ?FD.., QFrame, ?HBL..,
+        QListView, ?MW.., ?MB.., ?SP.., ?W..)
 
 ______ puzzle_rc
 
@@ -338,7 +338,7 @@ c_ MainWindow ?MW..
         setupMenus()
         setupWidgets()
 
-        sSP..(QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed))
+        sSP..(?SP..(?SP...Fixed, ?SP...Fixed))
         sWT..("Puzzle")
 
     ___ openImage  path_None):
@@ -395,7 +395,7 @@ c_ MainWindow ?MW..
 
     ___ setupWidgets 
         frame _ QFrame()
-        frameLayout _ QHBoxLayout(frame)
+        frameLayout _ ?HBL..(frame)
 
         piecesList _ ?LV..
         piecesList.setDragEnabled( st.

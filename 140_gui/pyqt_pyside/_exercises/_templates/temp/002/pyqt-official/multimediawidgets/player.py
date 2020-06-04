@@ -50,8 +50,8 @@ ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
         QMediaMetaData, ?MP.., ?MPl.., QVideoFrame, QVideoProbe)
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
-        ?FL.., QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
-        QSizePolicy, ?S.., ?S.., QToolButton, ?VBL.., ?W..)
+        ?FL.., ?HBL.., QLabel, QListView, ?MB.., ?PB..,
+        ?SP.., ?S.., ?S.., QToolButton, ?VBL.., ?W..)
 
 
 c_ VideoWidget(QVideoWidget):
@@ -59,7 +59,7 @@ c_ VideoWidget(QVideoWidget):
     ___  -   parent_None):
         s__(VideoWidget, self). - (parent)
 
-        sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        sSP..(?SP...Ignored, ?SP...Ignored)
 
         p _ p..
         p.sC..(?P...Window, __.black)
@@ -204,7 +204,7 @@ c_ PlayerControls(?W..):
         rateBox.sCI..(1)
 
         layout _ ?HBL..
-        layout.setContentsMargins(0, 0, 0, 0)
+        layout.sCM..(0, 0, 0, 0)
         layout.aW..(stopButton)
         layout.aW..(previousButton)
         layout.aW..(playButton)
@@ -463,7 +463,7 @@ c_ Player(?W..):
         displayLayout.aW..(playlistView)
 
         controlLayout _ ?HBL..
-        controlLayout.setContentsMargins(0, 0, 0, 0)
+        controlLayout.sCM..(0, 0, 0, 0)
         controlLayout.aW..(openButton)
         controlLayout.addStretch(1)
         controlLayout.aW..(controls)

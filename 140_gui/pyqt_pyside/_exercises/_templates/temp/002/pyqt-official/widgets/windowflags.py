@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, ?GB..,
-        QHBoxLayout, ?PB.., QRadioButton, ?TE.., ?VBL..,
+        ?HBL.., ?PB.., QRadioButton, ?TE.., ?VBL..,
         ?W..)
 
 
@@ -53,7 +53,7 @@ c_ PreviewWindow(?W..):
         s__(PreviewWindow, self). - (parent)
 
         textEdit _ ?TE..()
-        textEdit.setReadOnly( st.
+        textEdit.sRO..( st.
         textEdit.setLineWrapMode(?TE...NoWrap)
 
         closeButton _ ?PB..("&Close")

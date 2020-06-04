@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (?D.., ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
 ____ ?.?G.. ______ ?SIM..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DE..,
-        QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit, QTreeView,
+        QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit, QTreeView,
         ?VBL.., ?W..)
 
 

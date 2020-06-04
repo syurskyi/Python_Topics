@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QRegExp, __
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QDialog,
-        QGridLayout, QHBoxLayout, QLabel, QLineEdit, QSizePolicy)
+        QGridLayout, ?HBL.., QLabel, QLineEdit, ?SP..)
 
 
 c_ RegExpDialog(QDialog):
@@ -56,14 +56,14 @@ c_ RegExpDialog(QDialog):
 
         patternComboBox _ ?CB()
         patternComboBox.setEditable( st.
-        patternComboBox.sSP..(QSizePolicy.E..,
-                QSizePolicy.Preferred)
+        patternComboBox.sSP..(?SP...E..,
+                ?SP...Preferred)
 
         patternLabel _ QLabel("&Pattern:")
         patternLabel.setBuddy(patternComboBox)
 
         escapedPatternLineEdit _ ?LE..
-        escapedPatternLineEdit.setReadOnly( st.
+        escapedPatternLineEdit.sRO..( st.
         palette _ escapedPatternLineEdit.p..
         palette.sB..(?P...Base,
                 palette.brush(?P...Disabled, ?P...Base))
@@ -83,8 +83,8 @@ c_ RegExpDialog(QDialog):
 
         textComboBox _ ?CB()
         textComboBox.setEditable( st.
-        textComboBox.sSP..(QSizePolicy.E..,
-                QSizePolicy.Preferred)
+        textComboBox.sSP..(?SP...E..,
+                ?SP...Preferred)
 
         textLabel _ QLabel("&Text:")
         textLabel.setBuddy(textComboBox)
@@ -95,18 +95,18 @@ c_ RegExpDialog(QDialog):
 
         indexLabel _ QLabel("Index of Match:")
         indexEdit _ ?LE..
-        indexEdit.setReadOnly( st.
+        indexEdit.sRO..( st.
 
         matchedLengthLabel _ QLabel("Matched Length:")
         matchedLengthEdit _ ?LE..
-        matchedLengthEdit.setReadOnly( st.
+        matchedLengthEdit.sRO..( st.
 
         captureLabels _   # list
         captureEdits _   # list
         ___ i __ ra..(MaxCaptures):
             captureLabels.ap..(QLabel("Capture %d:" % i))
             captureEdits.ap..(QLineEdit())
-            captureEdits[i].setReadOnly( st.
+            captureEdits[i].sRO..( st.
         captureLabels[0].sT..("Match:")
 
         checkBoxLayout _ ?HBL..

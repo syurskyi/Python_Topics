@@ -13,7 +13,7 @@ c_ Ui_Form o..
     ___ setupUi  Form):
         Form.setObjectName("Form")
         Form.r..(680, 218)
-        horizontalLayout _ ?W...QHBoxLayout(Form)
+        horizontalLayout _ ?W...?HBL..(Form)
         horizontalLayout.setObjectName("horizontalLayout")
         webFormGroupBox _ ?W...?GB..(Form)
         webFormGroupBox.setObjectName("webFormGroupBox")
@@ -29,7 +29,7 @@ c_ Ui_Form o..
         verticalLayout.aW..(webView)
         verticalLayout_2.aL..(verticalLayout)
         horizontalLayout.aW..(webFormGroupBox)
-        spacerItem _ ?W...QSpacerItem(28, 20, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)
+        spacerItem _ ?W...?SI..(28, 20, ?W...?SP...E.., ?W...?SP...Minimum)
         horizontalLayout.aI..(spacerItem)
         dataGroupBox _ ?W...?GB..(Form)
         dataGroupBox.setObjectName("dataGroupBox")
@@ -42,32 +42,32 @@ c_ Ui_Form o..
         firstNameLabel.setObjectName("firstNameLabel")
         formLayout.setWidget(0, ?W...?FL...LabelRole, firstNameLabel)
         firstNameEdit _ ?W...QLineEdit(dataGroupBox)
-        firstNameEdit.setReadOnly( st.
+        firstNameEdit.sRO..( st.
         firstNameEdit.setObjectName("firstNameEdit")
         formLayout.setWidget(0, ?W...?FL...FieldRole, firstNameEdit)
         lastNameLabel _ ?W...QLabel(dataGroupBox)
         lastNameLabel.setObjectName("lastNameLabel")
         formLayout.setWidget(1, ?W...?FL...LabelRole, lastNameLabel)
         lastNameEdit _ ?W...QLineEdit(dataGroupBox)
-        lastNameEdit.setReadOnly( st.
+        lastNameEdit.sRO..( st.
         lastNameEdit.setObjectName("lastNameEdit")
         formLayout.setWidget(1, ?W...?FL...FieldRole, lastNameEdit)
         genderLabel _ ?W...QLabel(dataGroupBox)
         genderLabel.setObjectName("genderLabel")
         formLayout.setWidget(2, ?W...?FL...LabelRole, genderLabel)
         genderEdit _ ?W...QLineEdit(dataGroupBox)
-        genderEdit.setReadOnly( st.
+        genderEdit.sRO..( st.
         genderEdit.setObjectName("genderEdit")
         formLayout.setWidget(2, ?W...?FL...FieldRole, genderEdit)
         updatesLabel _ ?W...QLabel(dataGroupBox)
         updatesLabel.setObjectName("updatesLabel")
         formLayout.setWidget(3, ?W...?FL...LabelRole, updatesLabel)
         updatesEdit _ ?W...QLineEdit(dataGroupBox)
-        updatesEdit.setReadOnly( st.
+        updatesEdit.sRO..( st.
         updatesEdit.setObjectName("updatesEdit")
         formLayout.setWidget(3, ?W...?FL...FieldRole, updatesEdit)
         verticalLayout_3.aL..(formLayout)
-        spacerItem1 _ ?W...QSpacerItem(20, 24, ?W...QSizePolicy.Minimum, ?W...QSizePolicy.E..)
+        spacerItem1 _ ?W...?SI..(20, 24, ?W...?SP...Minimum, ?W...?SP...E..)
         verticalLayout_3.aI..(spacerItem1)
         horizontalLayout.aW..(dataGroupBox)
 

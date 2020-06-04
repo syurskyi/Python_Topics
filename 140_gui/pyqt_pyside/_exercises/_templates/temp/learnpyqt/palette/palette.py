@@ -54,7 +54,7 @@ c_ _PaletteLinearBase(_PaletteBase):
 
 
 c_ PaletteHorizontal(_PaletteLinearBase):
-    layoutvh _ ?W...QHBoxLayout
+    layoutvh _ ?W...?HBL..
 
 
 c_ PaletteVertical(_PaletteLinearBase):

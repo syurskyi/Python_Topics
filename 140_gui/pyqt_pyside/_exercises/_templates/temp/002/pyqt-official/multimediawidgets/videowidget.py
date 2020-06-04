@@ -45,8 +45,8 @@
 ____ ?.?C.. ______ ?D.., __, ?U..
 ____ ?.?M.. ______ ?MC.., ?MP..
 ____ ?.?MW.. ______ QVideoWidget
-____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
-        ?PB.., QSizePolicy, ?S.., ?S.., ?VBL.., ?W..)
+____ ?.?W.. ______ (?A.., ?FD.., ?HBL.., QLabel,
+        ?PB.., ?SP.., ?S.., ?S.., ?VBL.., ?W..)
 
 
 c_ VideoPlayer(?W..):
@@ -71,11 +71,11 @@ c_ VideoPlayer(?W..):
         positionSlider.sliderMoved.c..(setPosition)
 
         errorLabel _ ?L..
-        errorLabel.sSP..(QSizePolicy.Preferred,
-                QSizePolicy.Maximum)
+        errorLabel.sSP..(?SP...Preferred,
+                ?SP...Maximum)
 
         controlLayout _ ?HBL..
-        controlLayout.setContentsMargins(0, 0, 0, 0)
+        controlLayout.sCM..(0, 0, 0, 0)
         controlLayout.aW..(openButton)
         controlLayout.aW..(playButton)
         controlLayout.aW..(positionSlider)

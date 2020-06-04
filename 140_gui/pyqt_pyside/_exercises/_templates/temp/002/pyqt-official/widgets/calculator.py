@@ -46,14 +46,14 @@ ______ m__
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
-        QSizePolicy, QToolButton, ?W..)
+        ?SP.., QToolButton, ?W..)
 
 
 c_ Button(QToolButton):
     ___  -   t__, parent_None):
         s__(Button, self). - (parent)
 
-        sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
+        sSP..(?SP...E.., ?SP...Preferred)
         sT..(t__)
 
     ___ sH..
@@ -78,7 +78,7 @@ c_ Calculator(?W..):
         waitingForOperand _ T..
 
         display _ QLineEdit('0')
-        display.setReadOnly( st.
+        display.sRO..( st.
         display.setAlignment(__.AlignRight)
         display.setMaxLength(15)
 

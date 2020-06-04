@@ -3,7 +3,7 @@ ____ ?.?G.. ______ *
 ____ ?.?C.. ______ *
 ____ ?.?M.. ______ QSound
 
-c_ PlainTextEdit(QPlainTextEdit):
+c_ PlainTextEdit(?PTE..):
     ___  -
         s_. - ()
         _holes _   # list

@@ -47,7 +47,7 @@ ______ m__
 
 ____ ?.?C.. ______ pS.., QPoint, ?S.., __
 ____ ?.?G.. ______ ?C.., QOpenGLVersionProfile
-____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, ?S..,
+____ ?.?W.. ______ (?A.., ?HBL.., QOpenGLWidget, ?S..,
         ?W..)
 
 

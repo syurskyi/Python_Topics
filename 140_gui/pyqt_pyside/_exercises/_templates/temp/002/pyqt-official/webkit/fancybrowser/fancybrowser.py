@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, ?U..
 ____ ?.?W.. ______ (?A.., ?A.., QLineEdit, ?MW..,
-        QSizePolicy, ?S.., ?TE..)
+        ?SP.., ?S.., ?TE..)
 ____ ?.?N.. ______ QNetworkProxyFactory, ?NR..
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
 
@@ -75,7 +75,7 @@ c_ MainWindow ?MW..
         view.loadFinished.c..(finishLoading)
 
         locationEdit _ QLineEdit
-        locationEdit.sSP..(QSizePolicy.E..,
+        locationEdit.sSP..(?SP...E..,
                 locationEdit.sizePolicy().verticalPolicy())
         locationEdit.rP__.c..(changeLocation)
 

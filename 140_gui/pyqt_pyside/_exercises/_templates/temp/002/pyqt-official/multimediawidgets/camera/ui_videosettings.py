@@ -88,7 +88,7 @@ c_ Ui_VideoSettingsUi o..
         gridLayout_3.aW..(containerFormatBox, 2, 0, 1, 1)
         scrollArea.setWidget(scrollAreaWidgetContents)
         gridLayout_4.aW..(scrollArea, 0, 0, 1, 1)
-        spacerItem _ ?W...QSpacerItem(20, 14, ?W...QSizePolicy.Minimum, ?W...QSizePolicy.E..)
+        spacerItem _ ?W...?SI..(20, 14, ?W...?SP...Minimum, ?W...?SP...E..)
         gridLayout_4.aI..(spacerItem, 1, 0, 1, 1)
         buttonBox _ ?W...QDialogButtonBox(VideoSettingsUi)
         buttonBox.setOrientation(?C...__.H..)

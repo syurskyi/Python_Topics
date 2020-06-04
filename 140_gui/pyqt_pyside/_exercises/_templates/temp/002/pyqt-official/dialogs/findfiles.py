@@ -46,8 +46,8 @@ ____ ?.?C.. ______ (?D.., QIODevice, QFile, QFileInfo, __, QTextStream,
         ?U..)
 ____ ?.?G.. ______ QDesktopServices
 ____ ?.?W.. ______ (?AIV.., ?A.., ?CB,
-        QDialog, ?FD.., QGridLayout, QHBoxLayout, ?HV.., QLabel,
-        QProgressDialog, ?PB.., QSizePolicy, ?TW..,
+        QDialog, ?FD.., QGridLayout, ?HBL.., ?HV.., QLabel,
+        QProgressDialog, ?PB.., ?SP.., ?TW..,
         ?TWI..)
 
 
@@ -185,7 +185,7 @@ c_ Window(QDialog):
         comboBox _ ?CB()
         comboBox.setEditable( st.
         comboBox.aI..(t__)
-        comboBox.sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
+        comboBox.sSP..(?SP...E.., ?SP...Preferred)
         r_ comboBox
 
     ___ createFilesTable

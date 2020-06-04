@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., __, ?T..
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        ?GB.., QHBoxLayout, QLabel, ?PB.., QSizePolicy, SB..,
+        ?GB.., ?HBL.., QLabel, ?PB.., ?SP.., SB..,
         ?VBL.., ?W..)
 
 
@@ -54,8 +54,8 @@ c_ Screenshot(?W..):
         s__(Screenshot, self). - ()
 
         screenshotLabel _ ?L..
-        screenshotLabel.sSP..(QSizePolicy.E..,
-                QSizePolicy.E..)
+        screenshotLabel.sSP..(?SP...E..,
+                ?SP...E..)
         screenshotLabel.setAlignment(__.AlignCenter)
         screenshotLabel.sMS..(240, 160)
 

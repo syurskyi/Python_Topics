@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ pS.., __
 ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
-        QDial, QGridLayout, ?GB.., QHBoxLayout, QLabel, QScrollBar,
+        QDial, QGridLayout, ?GB.., ?HBL.., QLabel, QScrollBar,
         ?S.., SB.., ?SW.., ?W..)
 
 

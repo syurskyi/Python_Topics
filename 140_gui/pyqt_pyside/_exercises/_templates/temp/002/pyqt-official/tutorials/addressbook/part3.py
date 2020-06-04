@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ (QGridLayout, QHBoxLayout, QLabel, QLineEdit,
+____ ?.?W.. ______ (QGridLayout, ?HBL.., QLabel, QLineEdit,
         ?MB.., ?PB.., ?TE.., ?VBL.., ?W..)
 
 
@@ -86,11 +86,11 @@ c_ AddressBook(?W..):
 
         nameLabel _ QLabel("Name:")
         nameLine _ ?LE..
-        nameLine.setReadOnly( st.
+        nameLine.sRO..( st.
 
         addressLabel _ QLabel("Address:")
         addressText _ ?TE..()
-        addressText.setReadOnly( st.
+        addressText.sRO..( st.
 
         addButton _ ?PB..("&Add")
         addButton.s..
@@ -137,9 +137,9 @@ c_ AddressBook(?W..):
         nameLine.c..
         addressText.c..
 
-        nameLine.setReadOnly F..
+        nameLine.sRO.. F..
         nameLine.setFocus(__.OtherFocusReason)
-        addressText.setReadOnly F..
+        addressText.sRO.. F..
 
         addButton.sE.. F..
         nextButton.sE.. F..
@@ -169,8 +169,8 @@ c_ AddressBook(?W..):
             nameLine.c..
             addressText.c..
 
-        nameLine.setReadOnly( st.
-        addressText.setReadOnly( st.
+        nameLine.sRO..( st.
+        addressText.sRO..( st.
         addButton.sE..( st.
 
         number _ le.(contacts)
@@ -188,8 +188,8 @@ c_ AddressBook(?W..):
             nameLine.c..
             addressText.c..
 
-        nameLine.setReadOnly( st.
-        addressText.setReadOnly( st.
+        nameLine.sRO..( st.
+        addressText.sRO..( st.
         addButton.sE..( st.
 
         number _ le.(contacts)

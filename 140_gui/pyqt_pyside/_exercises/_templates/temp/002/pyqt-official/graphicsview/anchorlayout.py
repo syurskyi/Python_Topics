@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QSizeF, __
 ____ ?.?W.. ______ (?A.., QGraphicsAnchorLayout,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QGraphicsWidget,
-        ?PB.., QSizePolicy)
+        ?PB.., ?SP..)
 
 
 ___ createItem(minimum, preferred, maximum, name):
@@ -55,7 +55,7 @@ ___ createItem(minimum, preferred, maximum, name):
     w.sMS..(minimum)
     w.setPreferredSize(preferred)
     w.sMS..(maximum)
-    w.sSP..(QSizePolicy.Preferred, QSizePolicy.Preferred)
+    w.sSP..(?SP...Preferred, ?SP...Preferred)
 
     r_ w
 

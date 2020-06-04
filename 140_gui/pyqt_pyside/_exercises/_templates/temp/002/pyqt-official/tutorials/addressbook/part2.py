@@ -85,11 +85,11 @@ c_ AddressBook(?W..):
 
         nameLabel _ QLabel("Name:")
         nameLine _ ?LE..
-        nameLine.setReadOnly( st.
+        nameLine.sRO..( st.
 
         addressLabel _ QLabel("Address:")
         addressText _ ?TE..()
-        addressText.setReadOnly( st.
+        addressText.sRO..( st.
 
         addButton _ ?PB..("&Add")
         addButton.s..
@@ -125,9 +125,9 @@ c_ AddressBook(?W..):
         nameLine.c..
         addressText.c..
 
-        nameLine.setReadOnly F..
+        nameLine.sRO.. F..
         nameLine.setFocus(__.OtherFocusReason)
-        addressText.setReadOnly F..
+        addressText.sRO.. F..
 
         addButton.sE.. F..
         submitButton.s..
@@ -155,18 +155,18 @@ c_ AddressBook(?W..):
             nameLine.c..
             addressText.c..
 
-        nameLine.setReadOnly( st.
-        addressText.setReadOnly( st.
+        nameLine.sRO..( st.
+        addressText.sRO..( st.
         addButton.sE..( st.
         submitButton.hide()
         cancelButton.hide()
 
     ___ cancel 
         nameLine.sT..(oldName)
-        nameLine.setReadOnly( st.
+        nameLine.sRO..( st.
 
         addressText.sT..(oldAddress)
-        addressText.setReadOnly( st.
+        addressText.sRO..( st.
 
         addButton.sE..( st.
         submitButton.hide()

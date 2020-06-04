@@ -61,7 +61,7 @@ c_ BorderLayout(QLayout):
         s__(BorderLayout, self). - (parent)
 
         __ margin __ no. N..:
-            setContentsMargins(margin, margin, margin, margin)
+            sCM..(margin, margin, margin, margin)
 
         setSpacing(spacing)
         li.. _   # list

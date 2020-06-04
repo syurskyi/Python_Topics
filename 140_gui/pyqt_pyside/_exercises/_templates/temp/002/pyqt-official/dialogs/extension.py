@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QGridLayout, QHBoxLayout, QLabel, QLayout, QLineEdit,
+        QDialogButtonBox, QGridLayout, ?HBL.., QLabel, QLayout, QLineEdit,
         ?PB.., ?VBL.., ?W..)
 
 
@@ -80,7 +80,7 @@ c_ FindDialog(QDialog):
         moreButton.t__.c..(extension.setVisible)
 
         extensionLayout _ ?VBL..
-        extensionLayout.setContentsMargins(0, 0, 0, 0)
+        extensionLayout.sCM..(0, 0, 0, 0)
         extensionLayout.aW..(wholeWordsCheckBox)
         extensionLayout.aW..(backwardCheckBox)
         extensionLayout.aW..(searchSelectionCheckBox)

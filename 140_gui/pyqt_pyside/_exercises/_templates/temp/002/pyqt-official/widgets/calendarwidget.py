@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ ?D.., QLocale, __
 ____ ?.?G.. ______ ?F.., QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
-        ?CB, ?DE.., QGridLayout, ?GB.., QHBoxLayout, QLabel,
+        ?CB, ?DE.., QGridLayout, ?GB.., ?HBL.., QLabel,
         QLayout, ?W..)
 
 
