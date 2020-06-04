@@ -15,7 +15,7 @@ c_ Ui_Form o..
         Form.r..(911, 688)
         horizontalLayout_4 _ ?W...?HBL..(Form)
         horizontalLayout_4.setObjectName("horizontalLayout_4")
-        splitter _ ?W...QSplitter(Form)
+        splitter _ ?W...?S..(Form)
         splitter.setOrientation(?C...__.H..)
         splitter.setObjectName("splitter")
         editorBox _ ?W...?GB..(splitter)

@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ (pS.., QAbstractListModel, ?D.., QLibraryInfo,
         QModelIndex, __)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
-        QListView, ?SP.., QTextBrowser, ?W..)
+        ?LV.., ?SP.., QTextBrowser, ?W..)
 
 
 c_ FileListModel(QAbstractListModel):

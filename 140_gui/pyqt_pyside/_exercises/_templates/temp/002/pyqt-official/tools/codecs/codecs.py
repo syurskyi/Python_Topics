@@ -179,7 +179,7 @@ c_ MainWindow ?MW..
         fileMenu _ ?M..("&File", self)
         fileMenu.aA..(openAct)
         fileMenu.aM..(saveAsMenu)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(exitAct)
 
         helpMenu _ ?M..("&Help", self)
@@ -187,7 +187,7 @@ c_ MainWindow ?MW..
         helpMenu.aA..(aboutQtAct)
 
         mB.. .aM..(fileMenu)
-        mB.. .addSeparator()
+        mB.. .aS..)
         mB.. .aM..(helpMenu)
 
 

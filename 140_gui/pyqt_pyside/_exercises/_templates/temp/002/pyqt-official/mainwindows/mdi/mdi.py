@@ -254,10 +254,10 @@ c_ MainWindow ?MW..
         windowMenu.c..
         windowMenu.aA..(closeAct)
         windowMenu.aA..(closeAllAct)
-        windowMenu.addSeparator()
+        windowMenu.aS..)
         windowMenu.aA..(tileAct)
         windowMenu.aA..(cascadeAct)
-        windowMenu.addSeparator()
+        windowMenu.aS..)
         windowMenu.aA..(nextAct)
         windowMenu.aA..(previousAct)
         windowMenu.aA..(separatorAct)
@@ -365,7 +365,7 @@ c_ MainWindow ?MW..
         fileMenu.aA..(openAct)
         fileMenu.aA..(saveAct)
         fileMenu.aA..(saveAsAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         action _ fileMenu.aA..("Switch layout direction")
         action.t__.c..(switchLayoutDirection)
         fileMenu.aA..(exitAct)
@@ -379,7 +379,7 @@ c_ MainWindow ?MW..
         updateWindowMenu()
         windowMenu.aboutToShow.c..(updateWindowMenu)
 
-        mB.. .addSeparator()
+        mB.. .aS..)
 
         helpMenu _ mB.. .aM..("&Help")
         helpMenu.aA..(aboutAct)

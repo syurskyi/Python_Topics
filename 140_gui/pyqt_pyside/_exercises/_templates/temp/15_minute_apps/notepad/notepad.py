@@ -79,7 +79,7 @@ c_ MainWindow ?MW..
         edit_toolbar.aA..(redo_action)
         edit_menu.aA..(redo_action)
 
-        edit_menu.addSeparator()
+        edit_menu.aS..)
 
         cut_action _ ?A..(?I..(__.p__ .join('images', 'scissors.png')), "Cut", self)
         cut_action.setStatusTip("Cut selected text")
@@ -104,7 +104,7 @@ c_ MainWindow ?MW..
         select_action.t__.c..(editor.selectAll)
         edit_menu.aA..(select_action)
 
-        edit_menu.addSeparator()
+        edit_menu.aS..)
 
         wrap_action _ ?A..(?I..(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")

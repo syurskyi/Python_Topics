@@ -162,10 +162,10 @@ c_ SpreadSheet ?MW..
         cellMenu.aA..(cell_mulAction)
         cellMenu.aA..(cell_divAction)
         cellMenu.aA..(cell_sumAction)
-        cellMenu.addSeparator()
+        cellMenu.aS..)
         cellMenu.aA..(colorAction)
         cellMenu.aA..(fontAction)
-        mB.. .addSeparator()
+        mB.. .aS..)
         aboutMenu _ mB.. .aM..("&Help")
         aboutMenu.aA..(aboutSpreadSheet)
 

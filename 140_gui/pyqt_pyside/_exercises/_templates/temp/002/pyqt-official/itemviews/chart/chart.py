@@ -50,7 +50,7 @@ ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
 ____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QPainter, QPainterPath,
         ?P.., ?P.., QRegion, ?SIM..)
 ____ ?.?W.. ______ (?AIV.., ?A.., ?FD..,
-        ?MW.., ?M.., QRubberBand, QSplitter, ?S.., QTableView)
+        ?MW.., ?M.., QRubberBand, ?S.., ?S.., QTableView)
 
 ______ chart_rc
 
@@ -496,7 +496,7 @@ c_ MainWindow ?MW..
         model.setHeaderData(1, __.H.., "Quantity")
 
     ___ setupViews
-        splitter _ QSplitter()
+        splitter _ ?S..()
         table _ ?TV..
         pieChart _ PieView()
         splitter.aW..(table)

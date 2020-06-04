@@ -49,7 +49,7 @@ ____ ?.?C.. ______ (pS.., QAbstractListModel, QByteArray,
         __)
 ____ ?.?G.. ______ ?C.., ?C.., QDrag, ?I.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, ?HBL..,
-        QListView, ?MW.., ?MB.., ?SP.., ?W..)
+        ?LV.., ?MW.., ?MB.., ?SP.., ?W..)
 
 ______ puzzle_rc
 
@@ -399,11 +399,11 @@ c_ MainWindow ?MW..
 
         piecesList _ ?LV..
         piecesList.setDragEnabled( st.
-        piecesList.setViewMode(QListView.IconMode)
+        piecesList.setViewMode(?LV...IconMode)
         piecesList.setIconSize(?S..(60,60))
         piecesList.setGridSize(?S..(80,80))
         piecesList.setSpacing(10)
-        piecesList.setMovement(QListView.Snap)
+        piecesList.setMovement(?LV...Snap)
         piecesList.setAcceptDrops( st.
         piecesList.setDropIndicatorShown( st.
 

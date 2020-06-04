@@ -610,7 +610,7 @@ c_ MainWindow ?MW..
 
         toolBox _ QToolBox()
         toolBox.sSP..(?SP..(?SP...Maximum, ?SP...Ignored))
-        toolBox.setMinimumWidth(itemWidget.sH..().width())
+        toolBox.sMW..(itemWidget.sH..().width())
         toolBox.aI..(itemWidget, "Basic Flowchart Shapes")
         toolBox.aI..(backgroundWidget, "Backgrounds")
 
@@ -655,7 +655,7 @@ c_ MainWindow ?MW..
 
         itemMenu _ mB.. .aM..("&Item")
         itemMenu.aA..(deleteAction)
-        itemMenu.addSeparator()
+        itemMenu.aS..)
         itemMenu.aA..(toFrontAction)
         itemMenu.aA..(sendBackAction)
 
@@ -672,7 +672,7 @@ c_ MainWindow ?MW..
         fontCombo.currentFontChanged.c..(currentFontChanged)
 
         fontSizeCombo _ ?CB()
-        fontSizeCombo.setEditable( st.
+        fontSizeCombo.sE..( st.
         ___ i __ ra..(8, 30, 2):
             fontSizeCombo.aI..(st.(i))
         validator _ QIntValidator(2, 64, self)

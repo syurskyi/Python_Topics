@@ -147,7 +147,7 @@ c_ TextEdit ?MW..
                 triggered_self.fileOpen)
         tb.aA..(actionOpen)
         menu.aA..(actionOpen)
-        menu.addSeparator()
+        menu.aS..)
 
         actionSave _ ?A..(
                 ?I...fromTheme('document-save',
@@ -162,7 +162,7 @@ c_ TextEdit ?MW..
                 shortcut_Qt.CTRL + __.SHIFT + __.Key_S,
                 triggered_self.fileSaveAs)
         menu.aA..(actionSaveAs)
-        menu.addSeparator()
+        menu.aS..)
  
         actionPrint _ ?A..(
                 ?I...fromTheme('document-print',
@@ -188,7 +188,7 @@ c_ TextEdit ?MW..
                 triggered_self.filePrintPdf)
         tb.aA..(actionPrintPdf)
         menu.aA..(actionPrintPdf)
-        menu.addSeparator()
+        menu.aS..)
 
         actionQuit _ ?A..("&Quit", self, shortcut_QKeySequence.Quit,
                 triggered_self.close)
@@ -216,7 +216,7 @@ c_ TextEdit ?MW..
                 shortcut_QKeySequence.Redo)
         tb.aA..(actionRedo)
         menu.aA..(actionRedo)
-        menu.addSeparator()
+        menu.aS..)
 
         actionCut _ ?A..(
                 ?I...fromTheme('edit-cut', ?I..(rsrcPath + '/editcut.png')),
@@ -286,7 +286,7 @@ c_ TextEdit ?MW..
         tb.aA..(actionTextUnderline)
         menu.aA..(actionTextUnderline)
 
-        menu.addSeparator()
+        menu.aS..)
 
         grp _ QActionGroup  triggered_self.textAlign)
 
@@ -341,7 +341,7 @@ c_ TextEdit ?MW..
 
         tb.addActions(grp.actions())
         menu.addActions(grp.actions())
-        menu.addSeparator()
+        menu.aS..)
 
         pix _ ?P..(16, 16)
         pix.fill(__.black)
@@ -376,7 +376,7 @@ c_ TextEdit ?MW..
         comboSize _ ?CB(tb)
         comboSize.setObjectName("comboSize")
         tb.aW..(comboSize)
-        comboSize.setEditable( st.
+        comboSize.sE..( st.
 
         db _ QFontDatabase()
         ___ size __ db.standardSizes

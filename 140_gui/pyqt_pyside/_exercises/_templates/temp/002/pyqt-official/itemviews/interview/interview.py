@@ -55,7 +55,7 @@ ____ ?.?C.. ______ (QAbstractItemModel, QFileInfo, QItemSelectionModel,
         QModelIndex, __)
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?AIV.., ?A..,
-        QFileIconProvider, QListView, QSplitter, QTableView, QTreeView)
+        QFileIconProvider, ?LV.., ?S.., QTableView, QTreeView)
 
 
 images_dir _ QFileInfo(__file__).absolutePath() + '/images'
@@ -151,7 +151,7 @@ c_ Model(QAbstractItemModel):
 
 ___ main(args):
     app _ ?A..(args)
-    page _ QSplitter()
+    page _ ?S..()
     data _ Model(1000, 10, page)
     selections _ QItemSelectionModel(data)
     table _ ?TV..
@@ -174,7 +174,7 @@ ___ main(args):
     li.. _ ?LV..
     li...sM..(data)
     li...setSelectionModel(selections)
-    li...setViewMode(QListView.IconMode)
+    li...setViewMode(?LV...IconMode)
     li...setSelectionMode(?AIV...ExtendedSelection)
     li...setAlternatingRowColors F..
     li...viewport().setAttribute(__.WA_StaticContents)

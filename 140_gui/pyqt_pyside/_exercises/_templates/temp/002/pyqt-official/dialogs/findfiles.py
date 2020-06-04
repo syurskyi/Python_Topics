@@ -183,7 +183,7 @@ c_ Window(QDialog):
 
     ___ createComboBox  text_""):
         comboBox _ ?CB()
-        comboBox.setEditable( st.
+        comboBox.sE..( st.
         comboBox.aI..(t__)
         comboBox.sSP..(?SP...E.., ?SP...Preferred)
         r_ comboBox

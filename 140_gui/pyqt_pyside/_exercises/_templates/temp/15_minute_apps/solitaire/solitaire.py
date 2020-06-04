@@ -456,13 +456,13 @@ c_ MainWindow(?MW..):
         animation_event_cover _ AnimationCover()
         scene.aI..(animation_event_cover)
 
-        menu _ menuBar().addMenu("&Game")
+        menu _ menuBar().aM..("&Game")
 
         deal_action _ ?A..(?I..(__.pa__.join('images', 'playing-card.png')), "Deal...", self)
         deal_action.t___.c__(restart_game)
         menu.aA..(deal_action)
 
-        menu.addSeparator()
+        menu.aS..)
 
         deal1_action _ ?A..("1 card", self)
         deal1_action.setCheckable( st.
@@ -481,7 +481,7 @@ c_ MainWindow(?MW..):
         dealgroup.aA..(deal3_action)
         dealgroup.setExclusive( st.
 
-        menu.addSeparator()
+        menu.aS..)
 
         rounds3_action _ ?A..("3 rounds", self)
         rounds3_action.setCheckable( st.
@@ -505,7 +505,7 @@ c_ MainWindow(?MW..):
         roundgroup.aA..(roundsu_action)
         roundgroup.setExclusive( st.
 
-        menu.addSeparator()
+        menu.aS..)
 
         quit_action _ ?A..("Quit", self)
         quit_action.t___.c__(quit)

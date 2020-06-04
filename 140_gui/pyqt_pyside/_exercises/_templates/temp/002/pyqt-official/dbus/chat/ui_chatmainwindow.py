@@ -69,7 +69,7 @@ c_ Ui_ChatMainWindow o..
         actionChangeNickname.setObjectName("actionChangeNickname")
         menuQuit.aA..(actionAboutQt)
         menuFile.aA..(actionChangeNickname)
-        menuFile.addSeparator()
+        menuFile.aS..)
         menuFile.aA..(actionQuit)
         menubar.aA..(menuFile.menuAction())
         menubar.aA..(menuQuit.menuAction())

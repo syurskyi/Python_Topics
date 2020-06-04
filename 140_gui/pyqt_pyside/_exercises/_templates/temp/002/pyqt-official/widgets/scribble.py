@@ -269,13 +269,13 @@ c_ MainWindow ?MW..
         fileMenu.aA..(openAct)
         fileMenu.aM..(saveAsMenu)
         fileMenu.aA..(printAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(exitAct)
 
         optionMenu _ ?M..("&Options", self)
         optionMenu.aA..(penColorAct)
         optionMenu.aA..(penWidthAct)
-        optionMenu.addSeparator()
+        optionMenu.aS..)
         optionMenu.aA..(clearScreenAct)
 
         helpMenu _ ?M..("&Help", self)

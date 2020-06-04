@@ -249,11 +249,11 @@ c_ MainWindow ?MW..
         __ fontDatabase.isSmoothlyScalable(font.family(), fontDatabase.styleString(font)):
             ___ size __ QFontDatabase.standardSizes
                 sizeCombo.aI..(st.(size))
-                sizeCombo.setEditable( st.
+                sizeCombo.sE..( st.
         ____
             ___ size __ fontDatabase.smoothSizes(font.family(), fontDatabase.styleString(font)):
                 sizeCombo.aI..(st.(size))
-                sizeCombo.setEditable F..
+                sizeCombo.sE.. F..
 
         sizeCombo.blockSignals F..
 

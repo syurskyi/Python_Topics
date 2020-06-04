@@ -23,9 +23,9 @@ c_ Ui_Form o..
         easingCurvePicker.sSP..(sizePolicy)
         easingCurvePicker.sMS..(?C...?S..(16777215, 120))
         easingCurvePicker.setVerticalScrollBarPolicy(?C...__.ScrollBarAlwaysOff)
-        easingCurvePicker.setMovement(?W...QListView.Static)
+        easingCurvePicker.setMovement(?W...?LV...Static)
         easingCurvePicker.setProperty("isWrapping", F..)
-        easingCurvePicker.setViewMode(?W...QListView.IconMode)
+        easingCurvePicker.setViewMode(?W...?LV...IconMode)
         easingCurvePicker.setSelectionRectVisible F..
         easingCurvePicker.setObjectName("easingCurvePicker")
         gridLayout.aW..(easingCurvePicker, 0, 0, 1, 2)

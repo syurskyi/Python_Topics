@@ -167,7 +167,7 @@ c_ MainWindow ?MW..
         aboutAction _ helpMenu.aA..("&About")
 
         mB.. .aM..(fileMenu)
-        mB.. .addSeparator()
+        mB.. .aS..)
         mB.. .aM..(helpMenu)
 
         openAction.t__.c..(chooseImage)

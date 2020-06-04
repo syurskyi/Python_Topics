@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (pS.., QByteArray, ?DS.., QIODevice,
         QMimeData, QPoint, QRect, ?S.., __)
 ____ ?.?G.. ______ QDrag, ?C.., ?C.., ?I.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, ?HBL..,
-        QListView, QListWidget, QListWidgetItem, ?MW.., ?MB..,
+        ?LV.., QListWidget, QListWidgetItem, ?MW.., ?MB..,
         ?SP.., ?W..)
 
 ______ puzzle_rc
@@ -201,7 +201,7 @@ c_ PiecesList(QListWidget):
         s__(PiecesList, self). - (parent)
 
         setDragEnabled( st.
-        setViewMode(QListView.IconMode)
+        setViewMode(?LV...IconMode)
         setIconSize(?S..(60, 60))
         setSpacing(10)
         setAcceptDrops( st.

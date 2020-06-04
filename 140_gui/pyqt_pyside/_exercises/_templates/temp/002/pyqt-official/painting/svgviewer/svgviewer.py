@@ -97,7 +97,7 @@ c_ MainWindow ?MW..
         imageAction.setCheckable( st.
 
         __ QGLFormat.hasOpenGL
-            rendererMenu.addSeparator()
+            rendererMenu.aS..)
             highQualityAntialiasingAction _ rendererMenu.aA..("&High Quality Antialiasing")
             highQualityAntialiasingAction.sE.. F..
             highQualityAntialiasingAction.setCheckable( st.

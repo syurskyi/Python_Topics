@@ -168,14 +168,14 @@ c_ ImageViewer ?MW..
         fileMenu _ ?M..("&File", self)
         fileMenu.aA..(openAct)
         fileMenu.aA..(printAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(exitAct)
 
         viewMenu _ ?M..("&View", self)
         viewMenu.aA..(zoomInAct)
         viewMenu.aA..(zoomOutAct)
         viewMenu.aA..(normalSizeAct)
-        viewMenu.addSeparator()
+        viewMenu.aS..)
         viewMenu.aA..(fitToWindowAct)
 
         helpMenu _ ?M..("&Help", self)

@@ -58,7 +58,7 @@ c_ Window(QDialog):
         createIconGroupBox()
         createMessageGroupBox()
 
-        iconLabel.setMinimumWidth(durationLabel.sH..().width())
+        iconLabel.sMW..(durationLabel.sH..().width())
 
         createActions()
         createTrayIcon()
@@ -212,7 +212,7 @@ c_ Window(QDialog):
          trayIconMenu.aA..(minimizeAction)
          trayIconMenu.aA..(maximizeAction)
          trayIconMenu.aA..(restoreAction)
-         trayIconMenu.addSeparator()
+         trayIconMenu.aS..)
          trayIconMenu.aA..(quitAction)
 
          trayIcon _ QSystemTrayIcon

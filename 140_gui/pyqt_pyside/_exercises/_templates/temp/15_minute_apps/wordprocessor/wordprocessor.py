@@ -137,7 +137,7 @@ c_ MainWindow ?MW..
         edit_toolbar.aA..(redo_action)
         edit_menu.aA..(redo_action)
 
-        edit_menu.addSeparator()
+        edit_menu.aS..)
 
         cut_action _ ?A..(?I..(__.p__ .join('images', 'scissors.png')), "Cut", self)
         cut_action.setStatusTip("Cut selected text")
@@ -166,7 +166,7 @@ c_ MainWindow ?MW..
         select_action.t__.c..(editor.selectAll)
         edit_menu.aA..(select_action)
 
-        edit_menu.addSeparator()
+        edit_menu.aS..)
 
         wrap_action _ ?A..(?I..(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")
@@ -217,7 +217,7 @@ c_ MainWindow ?MW..
         format_toolbar.aA..(underline_action)
         format_menu.aA..(underline_action)
 
-        format_menu.addSeparator()
+        format_menu.aS..)
 
         alignl_action _ ?A..(?I..(__.p__ .join('images', 'edit-alignment.png')), "Align left", self)
         alignl_action.setStatusTip("Align text left")
@@ -254,7 +254,7 @@ c_ MainWindow ?MW..
         format_group.aA..(alignr_action)
         format_group.aA..(alignj_action)
 
-        format_menu.addSeparator()
+        format_menu.aS..)
 
         # A list of all format-related widgets/actions, so we can disable/enable signals when updating.
         _format_actions _ [

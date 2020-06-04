@@ -138,14 +138,14 @@ c_ MainWindow ?MW..
         fileMenu.aA..(openAct)
         fileMenu.aA..(saveAct)
         fileMenu.aA..(saveAsAct)
-        separatorAct _ fileMenu.addSeparator()
+        separatorAct _ fileMenu.aS..)
         ___ i __ ra..(MainWindow.MaxRecentFiles):
             fileMenu.aA..(recentFileActs[i])
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(exitAct)
         updateRecentFileActions()
 
-        mB.. .addSeparator()
+        mB.. .aS..)
 
         helpMenu _ mB.. .aM..("&Help")
         helpMenu.aA..(aboutAct)

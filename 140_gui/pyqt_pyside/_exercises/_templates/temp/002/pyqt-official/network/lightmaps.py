@@ -451,7 +451,7 @@ c_ MapZoom ?MW..
         menu.aA..(osloAction)
         menu.aA..(berlinAction)
         menu.aA..(jakartaAction)
-        menu.addSeparator()
+        menu.aS..)
         menu.aA..(nightModeAction)
         menu.aA..(osmAction)
 

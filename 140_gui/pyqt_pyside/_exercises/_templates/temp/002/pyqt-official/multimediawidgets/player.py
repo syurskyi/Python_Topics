@@ -50,7 +50,7 @@ ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
         QMediaMetaData, ?MP.., ?MPl.., QVideoFrame, QVideoProbe)
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
-        ?FL.., ?HBL.., QLabel, QListView, ?MB.., ?PB..,
+        ?FL.., ?HBL.., QLabel, ?LV.., ?MB.., ?PB..,
         ?SP.., ?S.., ?S.., QToolButton, ?VBL.., ?W..)
 
 

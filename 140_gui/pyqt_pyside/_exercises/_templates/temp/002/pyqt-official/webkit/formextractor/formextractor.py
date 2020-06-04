@@ -119,7 +119,7 @@ c_ MainWindow ?MW..
     ___ createMenus 
         fileMenu _ mB.. .aM..("&File")
         fileMenu.aA..(exitAct)
-        mB.. .addSeparator()
+        mB.. .aS..)
         helpMenu _ mB.. .aM..("&Help")
         helpMenu.aA..(aboutAct)
         helpMenu.aA..(aboutQtAct)

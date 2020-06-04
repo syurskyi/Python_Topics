@@ -55,7 +55,7 @@ c_ RegExpDialog(QDialog):
         s__(RegExpDialog, self). - (parent)
 
         patternComboBox _ ?CB()
-        patternComboBox.setEditable( st.
+        patternComboBox.sE..( st.
         patternComboBox.sSP..(?SP...E..,
                 ?SP...Preferred)
 
@@ -82,7 +82,7 @@ c_ RegExpDialog(QDialog):
         syntaxLabel.setBuddy(syntaxComboBox)
 
         textComboBox _ ?CB()
-        textComboBox.setEditable( st.
+        textComboBox.sE..( st.
         textComboBox.sSP..(?SP...E..,
                 ?SP...Preferred)
 

@@ -433,16 +433,16 @@ c_ MainWindow ?MW..
         fileMenu _ mB.. .aM..("&File")
         fileMenu.aA..(addImagesAct)
         fileMenu.aA..(removeAllImagesAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(exitAct)
 
         viewMenu _ mB.. .aM..("&View")
         ___ action __ styleActionGroup.actions
             viewMenu.aA..(action)
-        viewMenu.addSeparator()
+        viewMenu.aS..)
         viewMenu.aA..(guessModeStateAct)
 
-        mB.. .addSeparator()
+        mB.. .aS..)
 
         helpMenu _ mB.. .aM..("&Help")
         helpMenu.aA..(aboutAct)

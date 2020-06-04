@@ -64,7 +64,7 @@ c_ Client(QDialog):
         portLabel _ QLabel("S&erver port:")
 
         hostCombo _ ?CB()
-        hostCombo.setEditable( st.
+        hostCombo.sE..( st.
 
         name _ QHostInfo.localHostName()
         __ name !_ '':

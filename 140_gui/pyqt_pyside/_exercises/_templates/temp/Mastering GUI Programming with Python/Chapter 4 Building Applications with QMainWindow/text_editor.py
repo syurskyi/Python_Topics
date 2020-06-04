@@ -91,7 +91,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         save_action _ file_menu.aA..('Save')
 
         # add separator
-        file_menu.addSeparator()
+        file_menu.aS..)
 
         # add an action with a callback
         quit_action _ file_menu.aA..('Quit', destroy)

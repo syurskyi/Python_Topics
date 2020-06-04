@@ -359,7 +359,7 @@ c_ MainWindow ?MW..
         fileMenu _ mB.. .aM..("&File")
         fileMenu.aA..(grabFrameBufferAct)
         fileMenu.aA..(clearPixmapAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(exitAct)
 
         helpMenu _ mB.. .aM..("&Help")

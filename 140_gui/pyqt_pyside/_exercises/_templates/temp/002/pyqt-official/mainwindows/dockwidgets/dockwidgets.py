@@ -224,7 +224,7 @@ c_ MainWindow ?MW..
         fileMenu.aA..(newLetterAct)
         fileMenu.aA..(saveAct)
         fileMenu.aA..(printAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(quitAct)
 
         editMenu _ mB.. .aM..("&Edit")
@@ -232,7 +232,7 @@ c_ MainWindow ?MW..
 
         viewMenu _ mB.. .aM..("&View")
 
-        mB.. .addSeparator()
+        mB.. .aS..)
 
         helpMenu _ mB.. .aM..("&Help")
         helpMenu.aA..(aboutAct)

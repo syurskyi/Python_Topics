@@ -160,16 +160,16 @@ c_ MainWindow ?MW..
         fileMenu.aA..(openIniFileAct)
         fileMenu.aA..(openPropertyListAct)
         fileMenu.aA..(openRegistryPathAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(refreshAct)
-        fileMenu.addSeparator()
+        fileMenu.aS..)
         fileMenu.aA..(exitAct)
 
         optionsMenu _ mB.. .aM..("&Options")
         optionsMenu.aA..(autoRefreshAct)
         optionsMenu.aA..(fallbacksAct)
 
-        mB.. .addSeparator()
+        mB.. .aS..)
 
         helpMenu _ mB.. .aM..("&Help")
         helpMenu.aA..(aboutAct)
@@ -206,7 +206,7 @@ c_ LocationDialog(QDialog):
 
         organizationComboBox _ ?CB()
         organizationComboBox.aI..("Trolltech")
-        organizationComboBox.setEditable( st.
+        organizationComboBox.sE..( st.
 
         applicationComboBox _ ?CB()
         applicationComboBox.aI..("Any")
@@ -214,7 +214,7 @@ c_ LocationDialog(QDialog):
         applicationComboBox.aI..("Assistant")
         applicationComboBox.aI..("Designer")
         applicationComboBox.aI..("Linguist")
-        applicationComboBox.setEditable( st.
+        applicationComboBox.sE..( st.
         applicationComboBox.sCI..(3)
 
         formatLabel _ QLabel("&Format:")

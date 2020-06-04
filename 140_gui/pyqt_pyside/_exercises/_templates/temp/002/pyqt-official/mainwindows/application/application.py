@@ -166,7 +166,7 @@ c_ MainWindow ?MW..
         fileMenu.aA..(openAct)
         fileMenu.aA..(saveAct)
         fileMenu.aA..(saveAsAct)
-        fileMenu.addSeparator();
+        fileMenu.aS..);
         fileMenu.aA..(exitAct)
 
         editMenu _ mB.. .aM..("&Edit")
@@ -174,7 +174,7 @@ c_ MainWindow ?MW..
         editMenu.aA..(copyAct)
         editMenu.aA..(pasteAct)
 
-        mB.. .addSeparator()
+        mB.. .aS..)
 
         helpMenu _ mB.. .aM..("&Help")
         helpMenu.aA..(aboutAct)

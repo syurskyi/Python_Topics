@@ -81,7 +81,7 @@ c_ MainWindow(?MW..):
         home_btn.t___.c__(navigate_home)
         navtb.aA..(home_btn)
 
-        navtb.addSeparator()
+        navtb.aS..)
 
         httpsicon _ ?L..  # Yes, really!
         httpsicon.sP..(?P..(__.pa__.join('images', 'lock-nossl.png')))
@@ -99,7 +99,7 @@ c_ MainWindow(?MW..):
         # Uncomment to disable native menubar on Mac
         # self.menuBar().setNativeMenuBar(False)
 
-        file_menu _ menuBar().addMenu("&File")
+        file_menu _ menuBar().aM..("&File")
 
         new_tab_action _ ?A..(?I..(__.pa__.join('images', 'ui-tab--plus.png')), "New Tab", self)
         new_tab_action.setStatusTip("Open a new tab")
@@ -121,7 +121,7 @@ c_ MainWindow(?MW..):
         print_action.t___.c__(print_page)
         file_menu.aA..(print_action)
 
-        help_menu _ menuBar().addMenu("&Help")
+        help_menu _ menuBar().aM..("&Help")
 
         about_action _ ?A..(?I..(__.pa__.join('images', 'question.png')), "About Mozarella Ashbadger", self)
         about_action.setStatusTip("Find out more about Mozarella Ashbadger")  # Hungry!

@@ -47,7 +47,7 @@ window.setCentralWidget(text)
 
 file_path _ None
 
-menu _ window.menuBar().addMenu("&File")
+menu _ window.menuBar().aM..("&File")
 open_action _ ?A..("&Open")
 ___ open_file():
     g__ file_path
@@ -85,7 +85,7 @@ close _ ?A..("&Close")
 close.t___.c__(window.close)
 menu.aA..(close)
 
-help_menu _ window.menuBar().addMenu("&Help")
+help_menu _ window.menuBar().aM..("&Help")
 about_action _ ?A..("&About")
 help_menu.aA..(about_action)
 ___ show_about_dialog():

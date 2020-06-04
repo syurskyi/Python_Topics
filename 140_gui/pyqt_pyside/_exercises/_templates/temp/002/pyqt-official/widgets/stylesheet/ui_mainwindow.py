@@ -80,7 +80,7 @@ c_ Ui_MainWindow o..
         ageSpinBox.setObjectName("ageSpinBox")
         gridlayout.aW..(ageSpinBox, 2, 1, 1, 2)
         nameCombo _ ?W...?CB(mainFrame)
-        nameCombo.setEditable( st.
+        nameCombo.sE..( st.
         nameCombo.setObjectName("nameCombo")
         gridlayout.aW..(nameCombo, 0, 1, 1, 4)
         spacerItem _ ?W...?SI..(40, 20, ?W...?SP...E.., ?W...?SP...Minimum)
@@ -123,7 +123,7 @@ c_ Ui_MainWindow o..
         aboutAction _ ?W...?A..(MainWindow)
         aboutAction.setObjectName("aboutAction")
         menu_File.aA..(editStyleAction)
-        menu_File.addSeparator()
+        menu_File.aS..)
         menu_File.aA..(exitAction)
         menu_Help.aA..(aboutAction)
         menu_Help.aA..(aboutQtAction)

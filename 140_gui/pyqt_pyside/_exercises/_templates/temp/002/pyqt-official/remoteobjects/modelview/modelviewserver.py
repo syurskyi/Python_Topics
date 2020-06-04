@@ -111,7 +111,7 @@ ___ addChild(numChildren, nestingLevel):
                 "Child num {}, nesting level {}".f..(i + 1, nestingLevel))
 
         __ i __ 0:
-            child.appendRow(addChild(numChildren, nestingLevel - 1))
+            child.aR..(addChild(numChildren, nestingLevel - 1))
 
         result.ap..(child)
 
@@ -132,13 +132,13 @@ __ ______ __ ______
     ___ i __ ra..(10000):
         firstItem _ ?SI..("FancyTextNumber {}".f..(i))
         __ i __ 0:
-            firstItem.appendRow(addChild(2, 2))
+            firstItem.aR..(addChild(2, 2))
 
         secondItem _ ?SI..("FancyRow2TextNumber {}".f..(i))
         __ i % 2 __ 0:
             firstItem.setBackground(__.red)
 
-        sourceModel.invisibleRootItem().appendRow([firstItem, secondItem])
+        sourceModel.invisibleRootItem().aR..([firstItem, secondItem])
 
     # Needed by QMLModelViewClient.
     roleNames _ {

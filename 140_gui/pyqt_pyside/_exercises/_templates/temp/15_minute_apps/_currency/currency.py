@@ -222,7 +222,7 @@ c_ MainWindow(?MW..):
 
         vitem.setTextAlignment(__.AlignRight | __.AlignVCenter)
         model.sCC..(2)
-        model.appendRow([citem, vitem])
+        model.aR..([citem, vitem])
         model.s..(0)
         r_ citem, vitem
 

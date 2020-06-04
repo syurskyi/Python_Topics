@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., ?S.., __
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDialog, QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit,
-        QListView, QListWidget, QListWidgetItem, ?PB.., SB..,
+        ?LV.., QListWidget, QListWidgetItem, ?PB.., SB..,
         ?SW.., ?VBL.., ?W..)
 
 ______ configdialog_rc
@@ -171,9 +171,9 @@ c_ ConfigDialog(QDialog):
         s__(ConfigDialog, self). - (parent)
 
         contentsWidget _ QListWidget()
-        contentsWidget.setViewMode(QListView.IconMode)
+        contentsWidget.setViewMode(?LV...IconMode)
         contentsWidget.setIconSize(?S..(96, 84))
-        contentsWidget.setMovement(QListView.Static)
+        contentsWidget.setMovement(?LV...Static)
         contentsWidget.setMaximumWidth(128)
         contentsWidget.setSpacing(12)
 

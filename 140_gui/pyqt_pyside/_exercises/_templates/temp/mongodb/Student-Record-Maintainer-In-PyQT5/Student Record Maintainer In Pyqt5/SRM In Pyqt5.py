@@ -216,11 +216,11 @@ c_ MainWindow(?MW..):
         c.execute("CREATE TABLE IF NOT EXISTS students(roll INTEGER PRIMARY KEY AUTOINCREMENT ,name TEXT,branch TEXT,sem INTEGER,mobile INTEGER,address TEXT)")
         c.close()
 
-        file_menu _ menuBar().addMenu("&File")
+        file_menu _ menuBar().aM..("&File")
 
-        help_menu _ menuBar().addMenu("&About")
+        help_menu _ menuBar().aM..("&About")
         setWindowTitle("Student Record Maintainer In PyQT5")
-        setMinimumSize(800, 600)
+        sMS..(800, 600)
 
         tableWidget _ ?TW..()
         setCentralWidget(tableWidget)
