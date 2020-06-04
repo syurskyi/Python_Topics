@@ -44,9 +44,9 @@
 
 ____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ QImage, QPainter, ?P.., ?P..
-____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., ?L..,
         ?MW.., ?M.., ?MB.., QScrollArea, ?SP..)
-____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
+____ ?.?PS.. ______ QPrintDialog, QPrinter
 
 
 c_ ImageViewer ?MW..
@@ -78,7 +78,7 @@ c_ ImageViewer ?MW..
         __ fileName:
             image _ QImage(fileName)
             __ image.isNull
-                ?MB...information  "Image Viewer",
+                ?MB...i..  "Image Viewer",
                         "Cannot load %s." % fileName)
                 r_
 

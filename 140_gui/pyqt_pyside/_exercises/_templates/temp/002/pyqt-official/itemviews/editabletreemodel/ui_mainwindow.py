@@ -38,7 +38,7 @@ c_ Ui_MainWindow o..
         MainWindow.setMenuBar(menubar)
         statusbar _ ?W...QStatusBar(MainWindow)
         statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(statusbar)
+        MainWindow.sSB..(statusbar)
         exitAction _ ?W...?A..(MainWindow)
         exitAction.setObjectName("exitAction")
         insertRowAction _ ?W...?A..(MainWindow)

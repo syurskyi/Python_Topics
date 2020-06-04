@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QRect, ?S.., __
-____ ?.?W.. ______ (?A.., QFrame, QLabel, QLayout,
+____ ?.?W.. ______ (?A.., QFrame, ?L.., QLayout,
         QTextBrowser, ?W.., QWidgetItem)
 
 
@@ -224,7 +224,7 @@ c_ Window(?W..):
         sWT..("Border Layout")
 
     ___ createLabel  t__):
-        label _ QLabel(t__)
+        label _ ?L..(t__)
         label.setFrameStyle(QFrame.Box | QFrame.Raised)
 
         r_ label

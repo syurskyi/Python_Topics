@@ -43,17 +43,17 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?TE.., ?W..
+____ ?.?W.. ______ QGridLayout, ?L.., QLineEdit, ?TE.., ?W..
 
 
 c_ AddressBook(?W..):
     ___  -   parent_None):
         s__(AddressBook, self). - (parent)
 
-        nameLabel _ QLabel("Name:")
+        nameLabel _ ?L..("Name:")
         nameLine _ ?LE..
 
-        addressLabel _ QLabel("Address:")
+        addressLabel _ ?L..("Address:")
         addressText _ ?TE..()
 
         mainLayout _ QGridLayout()

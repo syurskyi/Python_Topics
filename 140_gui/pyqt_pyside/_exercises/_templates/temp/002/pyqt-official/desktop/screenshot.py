@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., __, ?T..
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        ?GB.., ?HBL.., QLabel, ?PB.., ?SP.., SB..,
+        ?GB.., ?HBL.., ?L.., ?PB.., ?SP.., SB..,
         ?VBL.., ?W..)
 
 
@@ -127,7 +127,7 @@ c_ Screenshot(?W..):
         delaySpinBox.sM..(60)
         delaySpinBox.valueChanged.c..(updateCheckBox)
 
-        delaySpinBoxLabel _ QLabel("Screenshot Delay:")
+        delaySpinBoxLabel _ ?L..("Screenshot Delay:")
 
         hideThisWindowCheckBox _ QCheckBox("Hide This Window")
 

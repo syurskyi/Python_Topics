@@ -48,7 +48,7 @@ ____ ?.?C.. ______ pS.., ?S.., __
 ____ ?.?G.. ______ (QClipboard, ?F.., QFontDatabase, QFontMetrics,
         QPainter)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QFontComboBox,
-        ?HBL.., QLabel, QLineEdit, ?MW.., ?PB.., QScrollArea,
+        ?HBL.., ?L.., QLineEdit, ?MW.., ?PB.., QScrollArea,
         QToolTip, ?VBL.., ?W..)
 
 
@@ -171,13 +171,13 @@ c_ MainWindow ?MW..
 
         centralWidget _ ?W..
 
-        fontLabel _ QLabel("Font:")
+        fontLabel _ ?L..("Font:")
         fontCombo _ QFontComboBox()
-        sizeLabel _ QLabel("Size:")
+        sizeLabel _ ?L..("Size:")
         sizeCombo _ ?CB()
-        styleLabel _ QLabel("Style:")
+        styleLabel _ ?L..("Style:")
         styleCombo _ ?CB()
-        fontMergingLabel _ QLabel("Automatic Font Merging:")
+        fontMergingLabel _ ?L..("Automatic Font Merging:")
         fontMerging _ QCheckBox()
         fontMerging.sC__( st.
 

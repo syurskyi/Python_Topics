@@ -4,7 +4,7 @@
 # PyQt5 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
 ____ ?.?C.. ______ pP.., pS.., pyqtSlot, ?S..
-____ ?.?W.. ______ (?A.., ?CB, QLabel, ?SW..,
+____ ?.?W.. ______ (?A.., ?CB, ?L.., ?SW..,
         ?VBL.., ?W..)
 
 
@@ -97,8 +97,8 @@ __ __name__ __ "__main__":
     ______ ___
     app _ ?A..(___.a..
     widget _ PyMultiPageWidget()
-    widget.addPage(QLabel('This is page #1'))
-    widget.addPage(QLabel('This is page #2'))
+    widget.addPage(?L..('This is page #1'))
+    widget.addPage(?L..('This is page #2'))
     widget.s..
     ___.e.. ?.e..
 

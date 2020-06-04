@@ -46,12 +46,12 @@ ____ ?.?C.. ______ (QByteArray, ?DS.., QFile, QIODevice, QMimeData,
         QPoint, QRect, QRectF, __, QTextStream)
 ____ ?.?G.. ______ (QDrag, ?F.., QFontMetrics, QImage, QPainter,
         ?P.., ?P.., qRgba)
-____ ?.?W.. ______ ?A.., QLabel, ?W..
+____ ?.?W.. ______ ?A.., ?L.., ?W..
 
 ______ fridgemagnets_rc
 
 
-c_ DragLabel(QLabel):
+c_ DragLabel(?L..):
     ___  -   t__, parent):
         s__(DragLabel, self). - (parent)
 

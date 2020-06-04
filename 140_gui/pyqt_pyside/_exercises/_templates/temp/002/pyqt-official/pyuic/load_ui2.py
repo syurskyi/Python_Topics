@@ -42,11 +42,11 @@
 ______ ___
 
 ____ ?.?C.. ______ pyqtSlot
-____ ?.?W.. ______ ?A.., QDialog
+____ ?.?W.. ______ ?A.., ?D..
 ____ ?.uic ______ loadUi
 
 
-c_ DemoImpl(QDialog):
+c_ DemoImpl(?D..):
     ___  -   *args):
         s__(DemoImpl, self). - (*args)
 

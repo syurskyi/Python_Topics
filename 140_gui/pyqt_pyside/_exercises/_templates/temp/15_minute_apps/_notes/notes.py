@@ -66,7 +66,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         obj.y _ y()
         obj.t__ _ textEdit.toHtml()
         session.add(obj)
-        session.commit()
+        session.c__
         _ACTIVE_NOTES[obj.id] _ self
 
     ___ mousePressEvent  e):
@@ -88,7 +88,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         result _ ?MB...q..  "Confirm delete", "Are you sure you want to delete this note?")
         __ result __ ?MB...Yes:
             session.delete(obj)
-            session.commit()
+            session.c__
             c..
 
 

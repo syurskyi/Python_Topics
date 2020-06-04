@@ -44,11 +44,11 @@
 
 ____ ?.?C.. ______ QRegExp, __
 ____ ?.?G.. ______ ?P..
-____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QDialog,
-        QGridLayout, ?HBL.., QLabel, QLineEdit, ?SP..)
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?D..,
+        QGridLayout, ?HBL.., ?L.., QLineEdit, ?SP..)
 
 
-c_ RegExpDialog(QDialog):
+c_ RegExpDialog(?D..):
     MaxCaptures _ 6
 
     ___  -   parent_None):
@@ -59,7 +59,7 @@ c_ RegExpDialog(QDialog):
         patternComboBox.sSP..(?SP...E..,
                 ?SP...Preferred)
 
-        patternLabel _ QLabel("&Pattern:")
+        patternLabel _ ?L..("&Pattern:")
         patternLabel.setBuddy(patternComboBox)
 
         escapedPatternLineEdit _ ?LE..
@@ -69,7 +69,7 @@ c_ RegExpDialog(QDialog):
                 palette.brush(?P...Disabled, ?P...Base))
         escapedPatternLineEdit.sP..(palette)
 
-        escapedPatternLabel _ QLabel("&Escaped Pattern:")
+        escapedPatternLabel _ ?L..("&Escaped Pattern:")
         escapedPatternLabel.setBuddy(escapedPatternLineEdit)
 
         syntaxComboBox _ ?CB()
@@ -78,7 +78,7 @@ c_ RegExpDialog(QDialog):
         syntaxComboBox.aI..("Wildcard", QRegExp.Wildcard)
         syntaxComboBox.aI..("Fixed string", QRegExp.FixedString)
 
-        syntaxLabel _ QLabel("&Pattern Syntax:")
+        syntaxLabel _ ?L..("&Pattern Syntax:")
         syntaxLabel.setBuddy(syntaxComboBox)
 
         textComboBox _ ?CB()
@@ -86,25 +86,25 @@ c_ RegExpDialog(QDialog):
         textComboBox.sSP..(?SP...E..,
                 ?SP...Preferred)
 
-        textLabel _ QLabel("&Text:")
+        textLabel _ ?L..("&Text:")
         textLabel.setBuddy(textComboBox)
 
         caseSensitiveCheckBox _ QCheckBox("Case &Sensitive")
         caseSensitiveCheckBox.sC__( st.
         minimalCheckBox _ QCheckBox("&Minimal")
 
-        indexLabel _ QLabel("Index of Match:")
+        indexLabel _ ?L..("Index of Match:")
         indexEdit _ ?LE..
         indexEdit.sRO..( st.
 
-        matchedLengthLabel _ QLabel("Matched Length:")
+        matchedLengthLabel _ ?L..("Matched Length:")
         matchedLengthEdit _ ?LE..
         matchedLengthEdit.sRO..( st.
 
         captureLabels _   # list
         captureEdits _   # list
         ___ i __ ra..(MaxCaptures):
-            captureLabels.ap..(QLabel("Capture %d:" % i))
+            captureLabels.ap..(?L..("Capture %d:" % i))
             captureEdits.ap..(QLineEdit())
             captureEdits[i].sRO..( st.
         captureLabels[0].sT..("Match:")
@@ -144,7 +144,7 @@ c_ RegExpDialog(QDialog):
         textComboBox.aI..("(10 + delta4)* 32")
 
         sWT..("RegExp")
-        setFixedHeight(sH..().height())
+        sFH..(sH..().height())
         refresh()
 
     ___ refresh 
@@ -162,7 +162,7 @@ c_ RegExpDialog(QDialog):
         cs _ __.CaseSensitive __ caseSensitiveCheckBox.isChecked() ____ __.CaseInsensitive
         rx.setCaseSensitivity(cs)
         rx.setMinimal(minimalCheckBox.isChecked())
-        syntax _ syntaxComboBox.itemData(syntaxComboBox.currentIndex())
+        syntax _ syntaxComboBox.itemData(syntaxComboBox.cI..
         rx.setPatternSyntax(syntax)
 
         palette _ patternComboBox.p..

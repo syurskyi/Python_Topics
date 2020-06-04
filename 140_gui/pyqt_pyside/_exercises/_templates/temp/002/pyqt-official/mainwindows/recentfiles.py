@@ -154,7 +154,7 @@ c_ MainWindow ?MW..
     ___ loadFile  fileName):
         file _ QFile(fileName)
         __ no. file.o..( QFile.ReadOnly | QFile.Text):
-            ?MB...warning  "Recent Files",
+            ?MB...w..  "Recent Files",
                     "Cannot read file %s:\n%s." % (fileName, file.errorString()))
             r_
 
@@ -169,7 +169,7 @@ c_ MainWindow ?MW..
     ___ saveFile  fileName):
         file _ QFile(fileName)
         __ no. file.o..( QFile.WriteOnly | QFile.Text):
-            ?MB...warning  "Recent Files",
+            ?MB...w..  "Recent Files",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
             r_
 

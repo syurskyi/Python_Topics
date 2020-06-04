@@ -24,7 +24,7 @@ c_ Ui_Window o..
         formLayout _ ?W...?FL..
         formLayout.setFieldGrowthPolicy(?W...?FL...ExpandingFieldsGrow)
         formLayout.setObjectName("formLayout")
-        elementLabel _ ?W...QLabel(Window)
+        elementLabel _ ?W...?L..(Window)
         elementLabel.setObjectName("elementLabel")
         formLayout.setWidget(0, ?W...?FL...LabelRole, elementLabel)
         elementLineEdit _ ?W...QLineEdit(Window)

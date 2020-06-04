@@ -45,8 +45,8 @@
 ____ ?.?C.. ______ ?D.., QFile, __, QTextStream
 ____ ?.?G.. ______ (?F.., ?I.., ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
-____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
-____ ?.?W.. ______ (?A.., ?A.., QDialog, QDockWidget,
+____ ?.?PS.. ______ QPrintDialog, QPrinter
+____ ?.?W.. ______ (?A.., ?A.., ?D.., QDockWidget,
         ?FD.., QListWidget, ?MW.., ?MB.., ?TE..)
 
 ______ dockwidgets_rc
@@ -119,7 +119,7 @@ c_ MainWindow ?MW..
         printer _ QPrinter()
 
         dlg _ QPrintDialog(printer, self)
-        __ dlg.e.. !_ QDialog.Accepted:
+        __ dlg.e.. !_ ?D...Accepted:
             r_
 
         document.print_(printer)
@@ -134,7 +134,7 @@ c_ MainWindow ?MW..
 
         file _ QFile(filename)
         __ no. file.o..(QFile.WriteOnly | QFile.Text):
-            ?MB...warning  "Dock Widgets",
+            ?MB...w..  "Dock Widgets",
                     "Cannot write file %s:\n%s." % (filename, file.errorString()))
             r_
 

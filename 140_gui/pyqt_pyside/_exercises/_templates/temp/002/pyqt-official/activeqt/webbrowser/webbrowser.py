@@ -42,7 +42,7 @@
 ______ ___
 
 ____ ?.?C.. ______ pyqtSlot
-____ ?.?W.. ______ (?A.., QLabel, QLineEdit, ?MW..,
+____ ?.?W.. ______ (?A.., ?L.., QLineEdit, ?MW..,
         ?MB.., QProgressBar)
 
 ______ mainwindow_rc
@@ -64,7 +64,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         # Qt Designer (at least to v4.2.1) can't handle arbitrary widgets in a
         # QToolBar - even though uic can, and they are in the original .ui
         # file.  Therefore we manually add the problematic widgets.
-        lblAddress _ QLabel("Address", tbAddress)
+        lblAddress _ ?L..("Address", tbAddress)
         tbAddress.insertWidget(actionGo, lblAddress)
         addressEdit _ QLineEdit(tbAddress)
         tbAddress.insertWidget(actionGo, addressEdit)

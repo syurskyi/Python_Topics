@@ -29,7 +29,7 @@ c_ Ui_Window o..
         Window.setMenuBar(menubar)
         statusbar _ ?W...QStatusBar(Window)
         statusbar.setObjectName("statusbar")
-        Window.setStatusBar(statusbar)
+        Window.sSB..(statusbar)
         dockWidget _ ?W...QDockWidget(Window)
         dockWidget.setAllowedAreas(?C...__.LeftDockWidgetArea|?C...__.RightDockWidgetArea)
         dockWidget.setObjectName("dockWidget")

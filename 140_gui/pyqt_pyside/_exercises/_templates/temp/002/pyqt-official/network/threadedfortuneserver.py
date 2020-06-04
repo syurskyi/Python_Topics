@@ -46,7 +46,7 @@ ______ random
 
 ____ ?.?C.. ______ (pS.., QByteArray, ?DS.., QIODevice,
         ?T..)
-____ ?.?W.. ______ (?A.., QDialog, ?HBL.., QLabel,
+____ ?.?W.. ______ (?A.., ?D.., ?HBL.., ?L..,
         ?MB.., ?PB.., ?VBL..)
 ____ ?.?N.. ______ (?HA.., QNetworkInterface, QTcpServer,
         QTcpSocket)
@@ -98,7 +98,7 @@ c_ FortuneServer(?TS..
         thread.start()
 
 
-c_ Dialog(QDialog):
+c_ Dialog(?D..):
     ___  -   parent_None):
         s__(Dialog, self). - (parent)
 

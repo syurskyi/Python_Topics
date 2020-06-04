@@ -402,7 +402,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         insertColumnAction.sE..(hasCurrent)
 
         __ hasCurrent:
-            view.closePersistentEditor(view.selectionModel().currentIndex())
+            view.closePersistentEditor(view.selectionModel().cI..
 
             row _ view.selectionModel().currentIndex().row()
             column _ view.selectionModel().currentIndex().column()

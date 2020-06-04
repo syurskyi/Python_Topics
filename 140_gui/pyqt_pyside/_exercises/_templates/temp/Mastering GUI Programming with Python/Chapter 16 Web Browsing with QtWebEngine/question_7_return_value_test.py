@@ -2,7 +2,7 @@ ______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
-____ ? ______ QtWebEngineWidgets __ qtwe
+____ ? ______ ?WEW.. __ qtwe
 
 
 c_ WebView(qtwe.QWebEngineView):

@@ -49,8 +49,8 @@ ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
         QMediaMetaData, ?MP.., ?MPl.., QVideoFrame, QVideoProbe)
 ____ ?.?MW.. ______ QVideoWidget
-____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
-        ?FL.., ?HBL.., QLabel, ?LV.., ?MB.., ?PB..,
+____ ?.?W.. ______ (?A.., ?CB, ?D.., ?FD..,
+        ?FL.., ?HBL.., ?L.., ?LV.., ?MB.., ?PB..,
         ?SP.., ?S.., ?S.., QToolButton, ?VBL.., ?W..)
 
 
@@ -261,7 +261,7 @@ c_ PlayerControls(?W..):
         changeMuting.e..(no. playerMuted)
 
     ___ playbackRate
-        r_ rateBox.itemData(rateBox.currentIndex())
+        r_ rateBox.itemData(rateBox.cI..
 
     ___ setPlaybackRate  rate):
         ___ i __ ra..(rateBox.count()):
@@ -483,7 +483,7 @@ c_ Player(?W..):
         sL..(layout)
 
         __ no. player.isAvailable
-            ?MB...warning  "Service not available",
+            ?MB...w..  "Service not available",
                     "The QMediaPlayer object does not have a valid service.\n"
                     "Please check the media service plugins are installed.")
 
@@ -670,7 +670,7 @@ c_ Player(?W..):
             button _ ?PB..("Close")
             layout.aR..(button)
 
-            colorDialog _ QDialog
+            colorDialog _ ?D..
             colorDialog.sWT..("Color Options")
             colorDialog.sL..(layout)
 

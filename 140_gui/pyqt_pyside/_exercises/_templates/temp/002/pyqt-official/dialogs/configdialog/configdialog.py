@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., ?S.., __
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
-        QDialog, QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit,
+        ?D.., QGridLayout, ?GB.., ?HBL.., ?L.., QLineEdit,
         ?LV.., QListWidget, QListWidgetItem, ?PB.., SB..,
         ?SW.., ?VBL.., ?W..)
 
@@ -58,7 +58,7 @@ c_ ConfigurationPage(?W..):
 
         configGroup _ ?GB..("Server configuration")
 
-        serverLabel _ QLabel("Server:")
+        serverLabel _ ?L..("Server:")
         serverCombo _ ?CB()
         serverCombo.aI..("Trolltech (Australia)")
         serverCombo.aI..("Trolltech (Germany)")
@@ -128,10 +128,10 @@ c_ QueryPage(?W..):
 
         packagesGroup _ ?GB..("Look for packages")
 
-        nameLabel _ QLabel("Name:")
+        nameLabel _ ?L..("Name:")
         nameEdit _ ?LE..
 
-        dateLabel _ QLabel("Released after:")
+        dateLabel _ ?L..("Released after:")
         dateEdit _ ?DTE..(?D...currentDate())
 
         releasesCheckBox _ QCheckBox("Releases")
@@ -166,7 +166,7 @@ c_ QueryPage(?W..):
         sL..(mainLayout)
 
 
-c_ ConfigDialog(QDialog):
+c_ ConfigDialog(?D..):
     ___  -   parent_None):
         s__(ConfigDialog, self). - (parent)
 

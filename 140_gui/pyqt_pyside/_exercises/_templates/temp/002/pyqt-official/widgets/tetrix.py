@@ -47,7 +47,7 @@ ______ random
 
 ____ ?.?C.. ______ pS.., QBasicTimer, ?S.., __
 ____ ?.?G.. ______ ?C.., QPainter, ?P..
-____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
+____ ?.?W.. ______ (?A.., QFrame, QGridLayout, ?L..,
         QLCDNumber, ?PB.., ?W..)
 
 
@@ -105,7 +105,7 @@ c_ TetrixWindow(?W..):
         r..(550, 370)
 
     ___ createLabel  t__):
-        lbl _ QLabel(t__)
+        lbl _ ?L..(t__)
         lbl.setAlignment(__.AlignHCenter | __.AlignBottom)
         r_ lbl
 

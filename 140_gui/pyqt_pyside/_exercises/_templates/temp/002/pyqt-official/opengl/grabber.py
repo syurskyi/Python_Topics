@@ -47,7 +47,7 @@ ______ m__
 
 ____ ?.?C.. ______ pS.., ?S.., __, ?T..
 ____ ?.?G.. ______ QOpenGLVersionProfile, ?P..
-____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
+____ ?.?W.. ______ (?A.., ?A.., QGridLayout, ?L..,
         QLineEdit, ?MW.., ?MB.., QOpenGLWidget, QScrollArea,
         ?SP.., ?S.., ?W..)
 

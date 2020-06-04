@@ -2,7 +2,7 @@ ______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
-____ ? ______ QtPrintSupport __ qtps
+____ ? ______ ?PS.. __ qtps
 
 
 c_ InvoiceForm ?.?W..

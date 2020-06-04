@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ ?D.., QLocale, __
 ____ ?.?G.. ______ ?F.., QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
-        ?CB, ?DE.., QGridLayout, ?GB.., ?HBL.., QLabel,
+        ?CB, ?DE.., QGridLayout, ?GB.., ?HBL.., ?L..,
         QLayout, ?W..)
 
 
@@ -202,7 +202,7 @@ c_ Window(?W..):
         __ curLocaleIndex !_ -1:
             localeCombo.sCI..(curLocaleIndex)
 
-        localeLabel _ QLabel("&Locale")
+        localeLabel _ ?L..("&Locale")
         localeLabel.setBuddy(localeCombo)
 
         firstDayCombo _ ?CB()
@@ -214,7 +214,7 @@ c_ Window(?W..):
         firstDayCombo.aI..("Friday", __.Friday)
         firstDayCombo.aI..("Saturday", __.Saturday)
 
-        firstDayLabel _ QLabel("Wee&k starts on:")
+        firstDayLabel _ ?L..("Wee&k starts on:")
         firstDayLabel.setBuddy(firstDayCombo)
 
         selectionModeCombo _ ?CB()
@@ -222,7 +222,7 @@ c_ Window(?W..):
                 QCalendarWidget.SingleSelection)
         selectionModeCombo.aI..("None",
                 QCalendarWidget.NoSelection)
-        selectionModeLabel _ QLabel("&Selection mode:")
+        selectionModeLabel _ ?L..("&Selection mode:")
         selectionModeLabel.setBuddy(selectionModeCombo)
 
         gridCheckBox _ QCheckBox("&Grid")
@@ -242,7 +242,7 @@ c_ Window(?W..):
                 QCalendarWidget.NoHorizontalHeader)
         horizontalHeaderCombo.sCI..(1)
 
-        horizontalHeaderLabel _ QLabel("&Horizontal header:")
+        horizontalHeaderLabel _ ?L..("&Horizontal header:")
         horizontalHeaderLabel.setBuddy(horizontalHeaderCombo)
 
         verticalHeaderCombo _ ?CB()
@@ -251,7 +251,7 @@ c_ Window(?W..):
         verticalHeaderCombo.aI..("None",
                 QCalendarWidget.NoVerticalHeader)
 
-        verticalHeaderLabel _ QLabel("&Vertical header:")
+        verticalHeaderLabel _ ?L..("&Vertical header:")
         verticalHeaderLabel.setBuddy(verticalHeaderCombo)
 
         localeCombo.currentIndexChanged.c..(localeChanged)
@@ -285,10 +285,10 @@ c_ Window(?W..):
         outerLayout.aW..(verticalHeaderCombo, 5, 1)
         generalOptionsGroupBox.sL..(outerLayout)
 
-        firstDayChanged(firstDayCombo.currentIndex())
-        selectionModeChanged(selectionModeCombo.currentIndex())
-        horizontalHeaderChanged(horizontalHeaderCombo.currentIndex())
-        verticalHeaderChanged(verticalHeaderCombo.currentIndex())
+        firstDayChanged(firstDayCombo.cI..
+        selectionModeChanged(selectionModeCombo.cI..
+        horizontalHeaderChanged(horizontalHeaderCombo.cI..
+        verticalHeaderChanged(verticalHeaderCombo.cI..
  
     ___ createDatesGroupBox
         datesGroupBox _ ?GB..(tr("Dates"))
@@ -299,7 +299,7 @@ c_ Window(?W..):
                                           calendar.maximumDate())
         minimumDateEdit.setDate(calendar.minimumDate())
 
-        minimumDateLabel _ QLabel("&Minimum Date:")
+        minimumDateLabel _ ?L..("&Minimum Date:")
         minimumDateLabel.setBuddy(minimumDateEdit)
 
         currentDateEdit _ ?DE..()
@@ -308,7 +308,7 @@ c_ Window(?W..):
         currentDateEdit.setDateRange(calendar.minimumDate(),
                 calendar.maximumDate())
 
-        currentDateLabel _ QLabel("&Current Date:")
+        currentDateLabel _ ?L..("&Current Date:")
         currentDateLabel.setBuddy(currentDateEdit)
 
         maximumDateEdit _ ?DE..()
@@ -317,7 +317,7 @@ c_ Window(?W..):
                 calendar.maximumDate())
         maximumDateEdit.setDate(calendar.maximumDate())
 
-        maximumDateLabel _ QLabel("Ma&ximum Date:")
+        maximumDateLabel _ ?L..("Ma&ximum Date:")
         maximumDateLabel.setBuddy(maximumDateEdit)
 
         currentDateEdit.dateChanged.c..(calendar.setSelectedDate)
@@ -343,14 +343,14 @@ c_ Window(?W..):
         weekdayColorCombo.sCI..(
                 weekdayColorCombo.findText("Black"))
 
-        weekdayColorLabel _ QLabel("&Weekday color:")
+        weekdayColorLabel _ ?L..("&Weekday color:")
         weekdayColorLabel.setBuddy(weekdayColorCombo)
 
         weekendColorCombo _ createColorComboBox()
         weekendColorCombo.sCI..(
                 weekendColorCombo.findText("Red"))
 
-        weekendColorLabel _ QLabel("Week&end color:")
+        weekendColorLabel _ ?L..("Week&end color:")
         weekendColorLabel.setBuddy(weekendColorCombo)
 
         headerTextFormatCombo _ ?CB()
@@ -358,7 +358,7 @@ c_ Window(?W..):
         headerTextFormatCombo.aI..("Italic")
         headerTextFormatCombo.aI..("Plain")
 
-        headerTextFormatLabel _ QLabel("&Header text:")
+        headerTextFormatLabel _ ?L..("&Header text:")
         headerTextFormatLabel.setBuddy(headerTextFormatCombo)
 
         firstFridayCheckBox _ QCheckBox("&First Friday in blue")

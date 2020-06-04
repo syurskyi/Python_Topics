@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ QImage, QImageWriter, QPainter, ?P.., qRgb
 ____ ?.?W.. ______ (?A.., ?A.., QColorDialog, ?FD..,
         QInputDialog, ?MW.., ?M.., ?MB.., ?W..)
-____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
+____ ?.?PS.. ______ QPrintDialog, QPrinter
 
 
 c_ ScribbleArea(?W..):
@@ -288,7 +288,7 @@ c_ MainWindow ?MW..
 
     ___ maybeSave
         __ scribbleArea.iM..
-            ret _ ?MB...warning  "Scribble",
+            ret _ ?MB...w..  "Scribble",
                         "The image has been modified.\n"
                         "Do you want to save your changes?",
                         ?MB...Save | ?MB...Discard |

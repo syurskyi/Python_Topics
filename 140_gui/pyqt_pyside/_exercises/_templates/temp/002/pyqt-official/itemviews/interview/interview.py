@@ -180,7 +180,7 @@ ___ main(args):
     li...viewport().setAttribute(__.WA_StaticContents)
     li...setAttribute(__.WA_MacShowFocusRect, F..)
     page.aW..(li..)
-    page.setWindowIcon(?I..(images_dir + '/interview.png'))
+    page.sWI..(?I..(images_dir + '/interview.png'))
     page.sWT..("Interview")
     page.s..
     r_ app.e..

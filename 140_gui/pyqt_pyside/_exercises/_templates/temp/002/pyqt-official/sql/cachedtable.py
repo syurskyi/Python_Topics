@@ -43,14 +43,14 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
+____ ?.?W.. ______ (?A.., ?D.., ?DBB...,
         ?HBL.., ?MB.., ?PB.., QTableView)
 ____ ?.?S.. ______ ?STM..
 
 ______ connection
 
 
-c_ TableEditor(QDialog):
+c_ TableEditor(?D..):
     ___  -   tableName, parent_None):
         s__(TableEditor, self). - (parent)
 
@@ -71,10 +71,10 @@ c_ TableEditor(QDialog):
         revertButton _ ?PB..("&Revert")
         quitButton _ ?PB..("Quit")
 
-        buttonBox _ QDialogButtonBox(__.Vertical)
-        buttonBox.addButton(submitButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(revertButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...(__.Vertical)
+        buttonBox.addButton(submitButton, ?DBB....ActionRole)
+        buttonBox.addButton(revertButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         submitButton.c__.c..(submit)
         revertButton.c__.c..(model.revertAll)
@@ -90,10 +90,10 @@ c_ TableEditor(QDialog):
     ___ submit 
         model.database().transaction()
         __ model.submitAll
-            model.database().commit()
+            model.database().c__
         ____
             model.database().rollback()
-            ?MB...warning  "Cached Table",
+            ?MB...w..  "Cached Table",
                         "The database reported an error: %s" % model.lastError().t__())
 
 

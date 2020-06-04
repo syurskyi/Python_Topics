@@ -17,7 +17,7 @@ c_ Ui_Controller o..
         gridlayout.sCM..(9, 9, 9, 9)
         gridlayout.setSpacing(6)
         gridlayout.setObjectName("gridlayout")
-        label _ ?W...QLabel(Controller)
+        label _ ?W...?L..(Controller)
         label.setAlignment(?C...__.AlignCenter)
         label.setObjectName("label")
         gridlayout.aW..(label, 1, 1, 1, 1)

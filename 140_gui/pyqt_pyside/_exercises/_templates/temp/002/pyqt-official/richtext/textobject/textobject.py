@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QIODevice, ?O.., QSizeF
 ____ ?.?G.. ______ QTextCharFormat, QTextFormat, QTextObjectInterface
-____ ?.?W.. ______ (?A.., ?HBL.., QLabel, QLineEdit,
+____ ?.?W.. ______ (?A.., ?HBL.., ?L.., QLineEdit,
         ?MB.., ?PB.., ?TE.., ?VBL.., ?W..)
 ____ ?.QtSvg ______ QSvgRenderer
 
@@ -83,7 +83,7 @@ c_ Window(?W..):
         file _ QFile(fileName)
 
         __ no. file.o..(QIODevice.ReadOnly):
-            ?MB...warning  "Error Opening File",
+            ?MB...w..  "Error Opening File",
                     "Could not open '%s'" % fileName)
 
         svgData _ file.rA..
@@ -108,7 +108,7 @@ c_ Window(?W..):
         textEdit.document().documentLayout().registerHandler(Window.SvgTextFormat, svgInterface)
 
     ___ setupGui
-        fileNameLabel _ QLabel("Svg File Name:")
+        fileNameLabel _ ?L..("Svg File Name:")
         fileNameLineEdit _ ?LE..
         insertTextObjectButton _ ?PB..("Insert Image")
 

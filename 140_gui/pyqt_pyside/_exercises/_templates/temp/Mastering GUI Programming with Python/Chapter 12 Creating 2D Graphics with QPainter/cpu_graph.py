@@ -28,7 +28,7 @@ c_ GraphWidget ?.?W..
         scale _ scale
         crit_val _ crit_val
         values _ deque([minimum] * data_width, maxlen_data_width)
-        setFixedWidth(data_width * scale)
+        sFW..(data_width * scale)
 
     ___ add_value  value):
         value _ max(value, minimum)

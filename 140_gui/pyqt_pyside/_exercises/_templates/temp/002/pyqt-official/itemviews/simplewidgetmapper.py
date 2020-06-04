@@ -45,7 +45,7 @@
 
 ____ ?.?G.. ______ ?SI.., ?SIM..
 ____ ?.?W.. ______ (?A.., QDataWidgetMapper, QGridLayout,
-        QLabel, QLineEdit, ?PB.., SB.., ?TE.., ?W..)
+        ?L.., QLineEdit, ?PB.., SB.., ?TE.., ?W..)
 
 
 c_ Window(?W..):
@@ -56,11 +56,11 @@ c_ Window(?W..):
         setupModel()
 
         # Set up the widgets.
-        nameLabel _ QLabel("Na&me:")
+        nameLabel _ ?L..("Na&me:")
         nameEdit _ ?LE..
-        addressLabel _ QLabel("&Address:")
+        addressLabel _ ?L..("&Address:")
         addressEdit _ ?TE..()
-        ageLabel _ QLabel("A&ge (in years):")
+        ageLabel _ ?L..("A&ge (in years):")
         ageSpinBox _ SB..()
         nextButton _ ?PB..("&Next")
         previousButton _ ?PB..("&Previous")

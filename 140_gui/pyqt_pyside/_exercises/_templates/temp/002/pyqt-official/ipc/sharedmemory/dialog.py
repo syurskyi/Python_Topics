@@ -18,7 +18,7 @@ c_ Ui_Dialog o..
         loadFromFileButton _ ?W...?PB..(Dialog)
         loadFromFileButton.setObjectName("loadFromFileButton")
         gridlayout.aW..(loadFromFileButton, 0, 0, 1, 1)
-        label _ ?W...QLabel(Dialog)
+        label _ ?W...?L..(Dialog)
         label.setAlignment(?C...__.AlignCenter)
         label.setWordWrap( st.
         label.setObjectName("label")

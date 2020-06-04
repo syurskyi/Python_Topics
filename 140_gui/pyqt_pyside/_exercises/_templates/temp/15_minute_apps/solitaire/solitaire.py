@@ -456,7 +456,7 @@ c_ MainWindow(?MW..):
         animation_event_cover _ AnimationCover()
         scene.aI..(animation_event_cover)
 
-        menu _ menuBar().aM..("&Game")
+        menu _ mB...aM..("&Game")
 
         deal_action _ ?A..(?I..(__.pa__.join('images', 'playing-card.png')), "Deal...", self)
         deal_action.t___.c__(restart_game)

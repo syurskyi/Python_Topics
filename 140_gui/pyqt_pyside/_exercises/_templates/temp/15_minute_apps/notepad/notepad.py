@@ -1,7 +1,7 @@
 ____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.?C.. ______ *
-____ ?.QtPrintSupport ______ *
+____ ?.?PS.. ______ *
 
 ______ __
 ______ ___
@@ -31,8 +31,8 @@ c_ MainWindow ?MW..
         container.sL..(layout)
         sCW..(container)
 
-        status _ QStatusBar()
-        setStatusBar(status)
+        status _ ?SB..
+        sSB..(status)
 
         file_toolbar _ QToolBar("File")
         file_toolbar.setIconSize(?S..(14, 14))
@@ -40,25 +40,25 @@ c_ MainWindow ?MW..
         file_menu _ mB.. .aM..("&File")
 
         open_file_action _ ?A..(?I..(__.p__ .join('images', 'blue-folder-open-document.png')), "Open file...", self)
-        open_file_action.setStatusTip("Open file")
+        open_file_action.sST..("Open file")
         open_file_action.t__.c..(file_open)
         file_menu.aA..(open_file_action)
         file_toolbar.aA..(open_file_action)
 
         save_file_action _ ?A..(?I..(__.p__ .join('images', 'disk.png')), "Save", self)
-        save_file_action.setStatusTip("Save current page")
+        save_file_action.sST..("Save current page")
         save_file_action.t__.c..(file_save)
         file_menu.aA..(save_file_action)
         file_toolbar.aA..(save_file_action)
 
         saveas_file_action _ ?A..(?I..(__.p__ .join('images', 'disk--pencil.png')), "Save As...", self)
-        saveas_file_action.setStatusTip("Save current page to specified file")
+        saveas_file_action.sST..("Save current page to specified file")
         saveas_file_action.t__.c..(file_saveas)
         file_menu.aA..(saveas_file_action)
         file_toolbar.aA..(saveas_file_action)
 
         print_action _ ?A..(?I..(__.p__ .join('images', 'printer.png')), "Print...", self)
-        print_action.setStatusTip("Print current page")
+        print_action.sST..("Print current page")
         print_action.t__.c..(file_print)
         file_menu.aA..(print_action)
         file_toolbar.aA..(print_action)
@@ -69,12 +69,12 @@ c_ MainWindow ?MW..
         edit_menu _ mB.. .aM..("&Edit")
 
         undo_action _ ?A..(?I..(__.p__ .join('images', 'arrow-curve-180-left.png')), "Undo", self)
-        undo_action.setStatusTip("Undo last change")
+        undo_action.sST..("Undo last change")
         undo_action.t__.c..(editor.undo)
         edit_menu.aA..(undo_action)
 
         redo_action _ ?A..(?I..(__.p__ .join('images', 'arrow-curve.png')), "Redo", self)
-        redo_action.setStatusTip("Redo last change")
+        redo_action.sST..("Redo last change")
         redo_action.t__.c..(editor.redo)
         edit_toolbar.aA..(redo_action)
         edit_menu.aA..(redo_action)
@@ -82,32 +82,32 @@ c_ MainWindow ?MW..
         edit_menu.aS..)
 
         cut_action _ ?A..(?I..(__.p__ .join('images', 'scissors.png')), "Cut", self)
-        cut_action.setStatusTip("Cut selected text")
+        cut_action.sST..("Cut selected text")
         cut_action.t__.c..(editor.cut)
         edit_toolbar.aA..(cut_action)
         edit_menu.aA..(cut_action)
 
         copy_action _ ?A..(?I..(__.p__ .join('images', 'document-copy.png')), "Copy", self)
-        copy_action.setStatusTip("Copy selected text")
+        copy_action.sST..("Copy selected text")
         copy_action.t__.c..(editor.copy)
         edit_toolbar.aA..(copy_action)
         edit_menu.aA..(copy_action)
 
         paste_action _ ?A..(?I..(__.p__ .join('images', 'clipboard-paste-document-text.png')), "Paste", self)
-        paste_action.setStatusTip("Paste from clipboard")
+        paste_action.sST..("Paste from clipboard")
         paste_action.t__.c..(editor.paste)
         edit_toolbar.aA..(paste_action)
         edit_menu.aA..(paste_action)
 
         select_action _ ?A..(?I..(__.p__ .join('images', 'selection-input.png')), "Select all", self)
-        select_action.setStatusTip("Select all text")
+        select_action.sST..("Select all text")
         select_action.t__.c..(editor.selectAll)
         edit_menu.aA..(select_action)
 
         edit_menu.aS..)
 
         wrap_action _ ?A..(?I..(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
-        wrap_action.setStatusTip("Toggle wrap text to window")
+        wrap_action.sST..("Toggle wrap text to window")
         wrap_action.setCheckable( st.
         wrap_action.sC__( st.
         wrap_action.t__.c..(edit_toggle_wrap)

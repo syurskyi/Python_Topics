@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, __)
 ____ ?.?G.. ______ QDrag, ?I.., QImage, QPainter, ?P..
-____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
+____ ?.?W.. ______ (?A.., QGridLayout, ?L.., ?PB..,
         QScrollArea, ?W..)
 ____ ?.QtSvg ______ QSvgWidget
 
@@ -85,8 +85,8 @@ c_ SourceWidget(?W..):
         imageLabel.renderer().load(imageData)
         imageArea.setWidget(imageLabel)
 
-        instructTopLabel _ QLabel("This is an SVG drawing:")
-        instructBottomLabel _ QLabel("Drag the icon to copy the drawing as a PNG file:")
+        instructTopLabel _ ?L..("This is an SVG drawing:")
+        instructBottomLabel _ ?L..("Drag the icon to copy the drawing as a PNG file:")
         dragIcon _ ?PB..("Export")
         dragIcon.sI..(?I..(':/images/drag.png'))
         dragIcon.pressed.c..(startDrag)

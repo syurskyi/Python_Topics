@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFileInfo,
 ____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
         ?P.., ?P.., qRed)
 ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
-        QGridLayout, QLabel, QLayout, ?MW.., ?M.., ?MB..,
+        QGridLayout, ?L.., QLayout, ?MW.., ?M.., ?MB..,
         ?PB.., ?VBL..)
 
 
@@ -64,7 +64,7 @@ c_ FinalWidget(QFrame):
         imageLabel.setFrameShadow(QFrame.Sunken)
         imageLabel.setFrameShape(QFrame.StyledPanel)
         imageLabel.sMS..(labelSize)
-        nameLabel _ QLabel(name)
+        nameLabel _ ?L..(name)
 
         layout _ ?VBL..
         layout.aW..(imageLabel, 1)
@@ -147,7 +147,7 @@ c_ ScreenWidget(QFrame):
         imageLabel.setFrameShape(QFrame.StyledPanel)
         imageLabel.sMS..(labelSize)
 
-        nameLabel _ QLabel(name)
+        nameLabel _ ?L..(name)
         colorButton _ ?PB..("Modify...")
         colorButton.setBackgroundRole(?P...Button)
         colorButton.sMS..(32, 32)
@@ -404,7 +404,7 @@ c_ Viewer ?MW..
             yellowWidget.setImage(scaledImage)
             createImage()
         ____
-            ?MB...warning  "Cannot open file",
+            ?MB...w..  "Cannot open file",
                     "The selected file could not be opened.",
                     ?MB...Cancel, ?MB...NoButton,
                     ?MB...NoButton)
@@ -466,12 +466,12 @@ c_ Viewer ?MW..
                     i...baseName() + '.png').absoluteFilePath()
 
             __ no. finalWidget.pixmap().save(newImageFile, 'PNG'):
-                ?MB...warning  "Cannot save file",
+                ?MB...w..  "Cannot save file",
                         "The file could not be saved.",
                         ?MB...Cancel, ?MB...NoButton,
                         ?MB...NoButton)
         ____
-            ?MB...warning  "Cannot save file",
+            ?MB...w..  "Cannot save file",
                     "Please enter a valid filename.", ?MB...Cancel,
                     ?MB...NoButton, ?MB...NoButton)
 

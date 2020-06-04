@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ ?D.., ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., ?CB, ?DE.., ?DTE..,
-        QDoubleSpinBox, ?GB.., ?HBL.., QLabel, SB.., ?TE..,
+        QDoubleSpinBox, ?GB.., ?HBL.., ?L.., SB.., ?TE..,
         ?VBL.., ?W..)
 
 
@@ -67,13 +67,13 @@ c_ Window(?W..):
     ___ createSpinBoxes 
         spinBoxesGroup _ ?GB..("Spinboxes")
 
-        integerLabel _ QLabel("Enter a value between %d and %d:" % (-20, 20))
+        integerLabel _ ?L..("Enter a value between %d and %d:" % (-20, 20))
         integerSpinBox _ SB..()
         integerSpinBox.setRange(-20, 20)
         integerSpinBox.setSingleStep(1)
         integerSpinBox.sV..(0)
 
-        zoomLabel _ QLabel("Enter a zoom value between %d and %d:" % (0, 1000))
+        zoomLabel _ ?L..("Enter a zoom value between %d and %d:" % (0, 1000))
         zoomSpinBox _ SB..()
         zoomSpinBox.setRange(0, 1000)
         zoomSpinBox.setSingleStep(10)
@@ -81,7 +81,7 @@ c_ Window(?W..):
         zoomSpinBox.setSpecialValueText("Automatic")
         zoomSpinBox.sV..(100)
 
-        priceLabel _ QLabel("Enter a price between %d and %d:" % (0, 999))
+        priceLabel _ ?L..("Enter a price between %d and %d:" % (0, 999))
         priceSpinBox _ SB..()
         priceSpinBox.setRange(0, 999)
         priceSpinBox.setSingleStep(1)
@@ -117,7 +117,7 @@ c_ Window(?W..):
         meetingLabel _ ?L..
         meetingEdit _ ?DTE..(?DT__.currentDateTime())
 
-        formatLabel _ QLabel("Format string for the meeting date and time:")
+        formatLabel _ ?L..("Format string for the meeting date and time:")
 
         formatComboBox _ ?CB()
         formatComboBox.aI..('yyyy-MM-dd hh:mm:ss (zzz \'ms\')')
@@ -158,18 +158,18 @@ c_ Window(?W..):
     ___ createDoubleSpinBoxes 
         doubleSpinBoxesGroup _ ?GB..("Double precision spinboxes")
 
-        precisionLabel _ QLabel("Number of decimal places to show:")
+        precisionLabel _ ?L..("Number of decimal places to show:")
         precisionSpinBox _ SB..()
         precisionSpinBox.setRange(0, 100)
         precisionSpinBox.sV..(2)
 
-        doubleLabel _ QLabel("Enter a value between %d and %d:" % (-20, 20))
+        doubleLabel _ ?L..("Enter a value between %d and %d:" % (-20, 20))
         doubleSpinBox _ QDoubleSpinBox()
         doubleSpinBox.setRange(-20.0, 20.0)
         doubleSpinBox.setSingleStep(1.0)
         doubleSpinBox.sV..(0.0)
 
-        scaleLabel _ QLabel("Enter a scale factor between %d and %d:" % (0, 1000))
+        scaleLabel _ ?L..("Enter a scale factor between %d and %d:" % (0, 1000))
         scaleSpinBox _ QDoubleSpinBox()
         scaleSpinBox.setRange(0.0, 1000.0)
         scaleSpinBox.setSingleStep(10.0)
@@ -177,7 +177,7 @@ c_ Window(?W..):
         scaleSpinBox.setSpecialValueText("No scaling")
         scaleSpinBox.sV..(100.0)
 
-        priceLabel _ QLabel("Enter a price between %d and %d:" % (0, 1000))
+        priceLabel _ ?L..("Enter a price between %d and %d:" % (0, 1000))
         priceSpinBox _ QDoubleSpinBox()
         priceSpinBox.setRange(0.0, 1000.0)
         priceSpinBox.setSingleStep(1.0)

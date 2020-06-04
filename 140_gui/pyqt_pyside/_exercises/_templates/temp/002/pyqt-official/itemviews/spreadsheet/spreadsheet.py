@@ -43,10 +43,10 @@
 ____ ?.?C.. ______ ?D.., QPoint, __
 ____ ?.?G.. ______ ?C.., ?I.., ?KS.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
-        ?CB, QDialog, QFontDialog, ?GB.., ?HBL.., QLabel,
+        ?CB, ?D.., QFontDialog, ?GB.., ?HBL.., ?L..,
         QLineEdit, ?MW.., ?MB.., ?PB.., ?TW..,
         ?TWI.., QToolBar, ?VBL..)
-____ ?.QtPrintSupport ______ QPrinter, QPrintPreviewDialog
+____ ?.?PS.. ______ QPrinter, QPrintPreviewDialog
 
 ______ spreadsheet_rc
 
@@ -65,10 +65,10 @@ c_ SpreadSheet ?MW..
     ___  -   rows, cols, parent _ N..):
         s__(SpreadSheet, self). - (parent)
 
-        toolBar _ QToolBar()
+        toolBar _ ?TB..
         aTB..(toolBar)
         formulaInput _ ?LE..
-        cellLabel _ QLabel(toolBar)
+        cellLabel _ ?L..(toolBar)
         cellLabel.sMS..(80, 0)
         toolBar.aW..(cellLabel)
         toolBar.aW..(formulaInput)
@@ -253,11 +253,11 @@ c_ SpreadSheet ?MW..
             rows.ap..(st.(r + 1))
         ___ c __ ra..(table.columnCount()):
             cols.ap..(chr(ord('A') + c))
-        addDialog _ QDialog
+        addDialog _ ?D..
         addDialog.sWT..(title)
         group _ ?GB..(title, addDialog)
         group.sMS..(250, 100)
-        cell1Label _ QLabel(c1Text, group)
+        cell1Label _ ?L..(c1Text, group)
         cell1RowInput _ ?CB(group)
         c1Row, c1Col _ decode_pos(cell1)
         cell1RowInput.aI..(rows)
@@ -265,9 +265,9 @@ c_ SpreadSheet ?MW..
         cell1ColInput _ ?CB(group)
         cell1ColInput.aI..(cols)
         cell1ColInput.sCI..(c1Col)
-        operatorLabel _ QLabel(opText, group)
+        operatorLabel _ ?L..(opText, group)
         operatorLabel.setAlignment(__.AlignHCenter)
-        cell2Label _ QLabel(c2Text, group)
+        cell2Label _ ?L..(c2Text, group)
         cell2RowInput _ ?CB(group)
         c2Row, c2Col _ decode_pos(cell2)
         cell2RowInput.aI..(rows)
@@ -275,9 +275,9 @@ c_ SpreadSheet ?MW..
         cell2ColInput _ ?CB(group)
         cell2ColInput.aI..(cols)
         cell2ColInput.sCI..(c2Col)
-        equalsLabel _ QLabel("=", group)
+        equalsLabel _ ?L..("=", group)
         equalsLabel.setAlignment(__.AlignHCenter)
-        outLabel _ QLabel(outText, group)
+        outLabel _ ?L..(outText, group)
         outRowInput _ ?CB(group)
         outRow, outCol _ decode_pos(outCell)
         outRowInput.aI..(rows)
@@ -537,7 +537,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     sheet _ SpreadSheet(10, 6)
-    sheet.setWindowIcon(?I..(?P..(":/images/interview.png")))
+    sheet.sWI..(?I..(?P..(":/images/interview.png")))
     sheet.r..(640, 420)
     sheet.s..
     ___.e.. ?.e..

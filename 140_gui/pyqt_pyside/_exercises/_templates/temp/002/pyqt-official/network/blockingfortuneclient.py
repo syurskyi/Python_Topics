@@ -45,8 +45,8 @@
 ____ ?.?C.. ______ (pS.., ?DS.., QMutex, ?ML..,
         ?T.., QWaitCondition)
 ____ ?.?G.. ______ QIntValidator
-____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
-        QLabel, QLineEdit, ?MB.., ?PB.., ?W..)
+____ ?.?W.. ______ (?A.., ?DBB..., QGridLayout,
+        ?L.., QLineEdit, ?MB.., ?PB.., ?W..)
 ____ ?.?N.. ______ (?AS.., ?HA.., QNetworkInterface,
         QTcpSocket)
 
@@ -128,8 +128,8 @@ c_ BlockingClient(?W..):
         thread _ FortuneThread()
         currentFortune _ ''
 
-        hostLabel _ QLabel("&Server name:")
-        portLabel _ QLabel("S&erver port:")
+        hostLabel _ ?L..("&Server name:")
+        portLabel _ ?L..("S&erver port:")
 
         ___ ipAddress __ QNetworkInterface.allAddresses
             __ ipAddress !_ ?HA...LocalHost and ipAddress.toIPv4Address() !_ 0:
@@ -146,7 +146,7 @@ c_ BlockingClient(?W..):
         hostLabel.setBuddy(hostLineEdit)
         portLabel.setBuddy(portLineEdit)
 
-        statusLabel _ QLabel(
+        statusLabel _ ?L..(
                 "This example requires that you run the Fortune Server example as well.")
         statusLabel.setWordWrap( st.
 
@@ -156,9 +156,9 @@ c_ BlockingClient(?W..):
 
         quitButton _ ?PB..("Quit")
 
-        buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(getFortuneButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...()
+        buttonBox.addButton(getFortuneButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         getFortuneButton.c__.c..(requestNewFortune)
         quitButton.c__.c..(close)
@@ -195,16 +195,16 @@ c_ BlockingClient(?W..):
 
     ___ displayError  socketError, message):
         __ socketError __ ?AS...HostNotFoundError:
-            ?MB...information  "Blocking Fortune Client",
+            ?MB...i..  "Blocking Fortune Client",
                     "The host was not found. Please check the host and port "
                     "settings.")
         ____ socketError __ ?AS...ConnectionRefusedError:
-            ?MB...information  "Blocking Fortune Client",
+            ?MB...i..  "Blocking Fortune Client",
                     "The connection was refused by the peer. Make sure the "
                     "fortune server is running, and check that the host name "
                     "and port settings are correct.")
         ____
-            ?MB...information  "Blocking Fortune Client",
+            ?MB...i..  "Blocking Fortune Client",
                     "The following error occurred: %s." % message)
 
         getFortuneButton.sE..( st.

@@ -43,12 +43,12 @@
 
 
 ____ ?.?C.. ______ QFileInfo
-____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QFrame, ?GB.., QLabel, QLineEdit, QListWidget,
+____ ?.?W.. ______ (?A.., QCheckBox, ?D..,
+        ?DBB..., QFrame, ?GB.., ?L.., QLineEdit, QListWidget,
         ?TW.., ?VBL.., ?W..)
 
 
-c_ TabDialog(QDialog):
+c_ TabDialog(?D..):
     ___  -   fileName, parent_None):
         s__(TabDialog, self). - (parent)
 
@@ -59,10 +59,10 @@ c_ TabDialog(QDialog):
         tabWidget.aT..(PermissionsTab(fileInfo), "Permissions")
         tabWidget.aT..(ApplicationsTab(fileInfo), "Applications")
 
-        buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttonBox _ ?DBB...(?DBB....Ok | ?DBB....Cancel)
 
-        buttonBox.accepted.c..(accept)
-        buttonBox.rejected.c..(reject)
+        buttonBox.a___.c..(accept)
+        buttonBox.r___.c..(reject)
 
         mainLayout _ ?VBL..
         mainLayout.aW..(tabWidget)
@@ -76,24 +76,24 @@ c_ GeneralTab(?W..):
     ___  -   fileInfo, parent_None):
         s__(GeneralTab, self). - (parent)
 
-        fileNameLabel _ QLabel("File Name:")
+        fileNameLabel _ ?L..("File Name:")
         fileNameEdit _ QLineEdit(fileInfo.fileName())
 
-        pathLabel _ QLabel("Path:")
-        pathValueLabel _ QLabel(fileInfo.absoluteFilePath())
+        pathLabel _ ?L..("Path:")
+        pathValueLabel _ ?L..(fileInfo.absoluteFilePath())
         pathValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
-        sizeLabel _ QLabel("Size:")
+        sizeLabel _ ?L..("Size:")
         size _ fileInfo.size() // 1024
-        sizeValueLabel _ QLabel("%d K" % size)
+        sizeValueLabel _ ?L..("%d K" % size)
         sizeValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
-        lastReadLabel _ QLabel("Last Read:")
-        lastReadValueLabel _ QLabel(fileInfo.lastRead().toString())
+        lastReadLabel _ ?L..("Last Read:")
+        lastReadValueLabel _ ?L..(fileInfo.lastRead().toString())
         lastReadValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
-        lastModLabel _ QLabel("Last Modified:")
-        lastModValueLabel _ QLabel(fileInfo.lastModified().toString())
+        lastModLabel _ ?L..("Last Modified:")
+        lastModValueLabel _ ?L..(fileInfo.lastModified().toString())
         lastModValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
         mainLayout _ ?VBL..
@@ -131,12 +131,12 @@ c_ PermissionsTab(?W..):
 
         ownerGroup _ ?GB..("Ownership")
 
-        ownerLabel _ QLabel("Owner")
-        ownerValueLabel _ QLabel(fileInfo.owner())
+        ownerLabel _ ?L..("Owner")
+        ownerValueLabel _ ?L..(fileInfo.owner())
         ownerValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
-        groupLabel _ QLabel("Group")
-        groupValueLabel _ QLabel(fileInfo.group())
+        groupLabel _ ?L..("Group")
+        groupValueLabel _ ?L..(fileInfo.group())
         groupValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
         permissionsLayout _ ?VBL..
@@ -163,7 +163,7 @@ c_ ApplicationsTab(?W..):
     ___  -   fileInfo, parent_None):
         s__(ApplicationsTab, self). - (parent)
 
-        topLabel _ QLabel("Open with:")
+        topLabel _ ?L..("Open with:")
 
         applicationsListBox _ QListWidget()
         applications _   # list

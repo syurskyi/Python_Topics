@@ -4,7 +4,7 @@ ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
 
-c_ SettingsDialog(qtw.QDialog):
+c_ SettingsDialog(qtw.?D..):
     """Dialog for setting the settings"""
 
     ___  -   settings, parent_None):
@@ -287,7 +287,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
 
     ___ set_font
         current _ textedit.currentFont()
-        font, accepted _ qtw.QFontDialog.getFont(
+        font, a___ _ qtw.QFontDialog.getFont(
             current,
             self,
             options_(
@@ -295,7 +295,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
                 qtw.QFontDialog.MonospacedFonts
             )
         )
-        __ accepted:
+        __ a___:
             textedit.setCurrentFont(font)
 
     ___ show_settings

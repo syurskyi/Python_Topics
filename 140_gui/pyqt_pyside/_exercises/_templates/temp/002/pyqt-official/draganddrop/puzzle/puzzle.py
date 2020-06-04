@@ -285,7 +285,7 @@ c_ MainWindow ?MW..
         __ pa__:
             newImage _ ?P..()
             __ no. newImage.load(pa__):
-                ?MB...warning  "Open Image",
+                ?MB...w..  "Open Image",
                         "The image file could not be loaded.",
                         ?MB...Cancel)
                 r_
@@ -294,7 +294,7 @@ c_ MainWindow ?MW..
             setupPuzzle()
 
     ___ setCompleted
-        ?MB...information  "Puzzle Completed",
+        ?MB...i..  "Puzzle Completed",
                 "Congratulations! You have completed the puzzle!\nClick OK "
                 "to start again.",
                 ?MB...Ok)

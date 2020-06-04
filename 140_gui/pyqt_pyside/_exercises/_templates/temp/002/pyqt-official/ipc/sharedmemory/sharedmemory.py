@@ -46,12 +46,12 @@
 
 ____ ?.?C.. ______ QBuffer, ?DS.., QSharedMemory
 ____ ?.?G.. ______ QImage, ?P..
-____ ?.?W.. ______ ?A.., QDialog, ?FD..
+____ ?.?W.. ______ ?A.., ?D.., ?FD..
 
 ____ dialog ______ Ui_Dialog
 
 
-c_ Dialog(QDialog):
+c_ Dialog(?D..):
     """ This class is a simple example of how to use QSharedMemory.  It is a
     simple dialog that presents a few buttons.  Run the executable twice to
     create two processes running the dialog.  In one of the processes, press

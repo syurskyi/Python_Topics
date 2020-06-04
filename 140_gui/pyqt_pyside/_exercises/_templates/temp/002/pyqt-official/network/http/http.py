@@ -43,13 +43,13 @@
 
 
 ____ ?.?C.. ______ ?D.., QFile, QFileInfo, QIODevice, ?U..
-____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
-        ?HBL.., QLabel, QLineEdit, ?MB.., QProgressDialog,
+____ ?.?W.. ______ (?A.., ?D.., ?DBB...,
+        ?HBL.., ?L.., QLineEdit, ?MB.., QProgressDialog,
         ?PB.., ?VBL..)
 ____ ?.?N.. ______ ?NAM.., ?NR..
 
 
-c_ HttpWindow(QDialog):
+c_ HttpWindow(?D..):
     ___  -   parent_None):
         s__(HttpWindow, self). - (parent)
 
@@ -62,9 +62,9 @@ c_ HttpWindow(QDialog):
 
         urlLineEdit _ QLineEdit('https://www.qt.io')
 
-        urlLabel _ QLabel("&URL:")
+        urlLabel _ ?L..("&URL:")
         urlLabel.setBuddy(urlLineEdit)
-        statusLabel _ QLabel(
+        statusLabel _ ?L..(
                 "Please enter the URL of a file you want to download.")
         statusLabel.setWordWrap( st.
 
@@ -73,9 +73,9 @@ c_ HttpWindow(QDialog):
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
-        buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(downloadButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...()
+        buttonBox.addButton(downloadButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         progressDialog _ QProgressDialog
 
@@ -127,7 +127,7 @@ c_ HttpWindow(QDialog):
 
         outFile _ QFile(fileName)
         __ no. outFile.o..(QIODevice.WriteOnly):
-            ?MB...information  "HTTP",
+            ?MB...i..  "HTTP",
                     "Unable to save the file %s: %s." % (fileName, outFile.errorString()))
             outFile _ N..
             r_
@@ -166,7 +166,7 @@ c_ HttpWindow(QDialog):
 
         __ reply.error
             outFile.remove()
-            ?MB...information  "HTTP",
+            ?MB...i..  "HTTP",
                     "Download failed: %s." % reply.errorString())
             downloadButton.sE..( st.
         ____ redirectionTarget __ no. N..:
@@ -220,14 +220,14 @@ c_ HttpWindow(QDialog):
         dlg.userEdit.sT..(url.userName())
         dlg.passwordEdit.sT..(url.password())
 
-        __ dlg.e.. __ QDialog.Accepted:
+        __ dlg.e.. __ ?D...Accepted:
             authenticator.setUser(dlg.userEdit.t__())
             authenticator.setPassword(dlg.passwordEdit.t__())
 
     ___ sslErrors  reply, errors):
         errorString _ ", ".join([st.(error.errorString()) ___ error __ errors])
 
-        ret _ ?MB...warning  "HTTP Example",
+        ret _ ?MB...w..  "HTTP Example",
                 "One or more SSL errors has occurred: %s" % errorString,
                 ?MB...Ignore | ?MB...Abort)
 

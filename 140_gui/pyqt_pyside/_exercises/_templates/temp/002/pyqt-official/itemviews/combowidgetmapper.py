@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ QStringListModel
 ____ ?.?G.. ______ ?SI.., ?SIM..
 ____ ?.?W.. ______ (?A.., ?CB, QDataWidgetMapper,
-        QGridLayout, QLabel, QLineEdit, ?PB.., ?TE.., ?W..)
+        QGridLayout, ?L.., QLineEdit, ?PB.., ?TE.., ?W..)
 
 
 c_ Window(?W..):
@@ -57,11 +57,11 @@ c_ Window(?W..):
         setupModel()
 
         # Set up the widgets.
-        nameLabel _ QLabel("Na&me:")
+        nameLabel _ ?L..("Na&me:")
         nameEdit _ ?LE..
-        addressLabel _ QLabel("&Address:")
+        addressLabel _ ?L..("&Address:")
         addressEdit _ ?TE..()
-        typeLabel _ QLabel("&Type:")
+        typeLabel _ ?L..("&Type:")
         typeComboBox _ ?CB()
         nextButton _ ?PB..("&Next")
         previousButton _ ?PB..("&Previous")

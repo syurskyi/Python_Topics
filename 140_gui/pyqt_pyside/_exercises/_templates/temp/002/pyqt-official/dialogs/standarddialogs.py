@@ -46,12 +46,12 @@ ______ ___
 
 ____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ ?F.., ?P..
-____ ?.?W.. ______ (?A.., QCheckBox, QColorDialog, QDialog,
+____ ?.?W.. ______ (?A.., QCheckBox, QColorDialog, ?D..,
         QErrorMessage, ?FD.., QFontDialog, QFrame, QGridLayout,
-        QInputDialog, QLabel, QLineEdit, ?MB.., ?PB..)
+        QInputDialog, ?L.., QLineEdit, ?MB.., ?PB..)
 
 
-c_ Dialog(QDialog):
+c_ Dialog(?D..):
     MESSAGE _ "<p>Message boxes have a caption, a text, and up to three " \
             "buttons, each with standard or custom texts.</p>" \
             "<p>Click a button to close the message box. Pressing the Esc " \
@@ -277,7 +277,7 @@ c_ Dialog(QDialog):
             criticalLabel.sT..("Ignore")
 
     ___ informationMessage 
-        reply _ ?MB...information
+        reply _ ?MB...i..
                 "QMessageBox.information()", Dialog.MESSAGE)
         __ reply __ ?MB...Ok:
             informationLabel.sT..("OK")

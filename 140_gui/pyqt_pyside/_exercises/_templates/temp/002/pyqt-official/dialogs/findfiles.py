@@ -46,12 +46,12 @@ ____ ?.?C.. ______ (?D.., QIODevice, QFile, QFileInfo, __, QTextStream,
         ?U..)
 ____ ?.?G.. ______ QDesktopServices
 ____ ?.?W.. ______ (?AIV.., ?A.., ?CB,
-        QDialog, ?FD.., QGridLayout, ?HBL.., ?HV.., QLabel,
+        ?D.., ?FD.., QGridLayout, ?HBL.., ?HV.., ?L..,
         QProgressDialog, ?PB.., ?SP.., ?TW..,
         ?TWI..)
 
 
-c_ Window(QDialog):
+c_ Window(?D..):
     ___  -   parent_None):
         s__(Window, self). - (parent)
 
@@ -62,9 +62,9 @@ c_ Window(QDialog):
         textComboBox _ createComboBox()
         directoryComboBox _ createComboBox(?D...currentPath())
 
-        fileLabel _ QLabel("Named:")
-        textLabel _ QLabel("Containing text:")
-        directoryLabel _ QLabel("In directory:")
+        fileLabel _ ?L..("Named:")
+        textLabel _ ?L..("Containing text:")
+        directoryLabel _ ?L..("In directory:")
         filesFoundLabel _ ?L..
 
         createFilesTable()

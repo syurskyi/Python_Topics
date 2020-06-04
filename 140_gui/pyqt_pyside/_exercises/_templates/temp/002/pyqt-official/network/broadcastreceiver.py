@@ -42,16 +42,16 @@
 #############################################################################
 
 
-____ ?.?W.. ______ (?A.., QDialog, ?HBL.., QLabel,
+____ ?.?W.. ______ (?A.., ?D.., ?HBL.., ?L..,
         ?PB.., ?VBL..)
 ____ ?.?N.. ______ QUdpSocket
 
 
-c_ Receiver(QDialog):
+c_ Receiver(?D..):
     ___  -   parent_None):
         s__(Receiver, self). - (parent)
 
-        statusLabel _ QLabel("Listening for broadcasted messages")
+        statusLabel _ ?L..("Listening for broadcasted messages")
         quitButton _ ?PB..("&Quit")
 
         udpSocket _ QUdpSocket

@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QFrame,
-        QLabel, ?MW.., ?M.., ?MB.., ?SP.., ?VBL..,
+        ?L.., ?MW.., ?M.., ?MB.., ?SP.., ?VBL..,
         ?W..)
 
 
@@ -59,7 +59,7 @@ c_ MainWindow ?MW..
         topFiller _ ?W..
         topFiller.sSP..(?SP...E.., ?SP...E..)
 
-        infoLabel _ QLabel(
+        infoLabel _ ?L..(
                 "<i>Choose a menu option, or right-click to invoke a context menu</i>",
                 alignment_Qt.AlignCenter)
         infoLabel.setFrameStyle(QFrame.StyledPanel | QFrame.Sunken)

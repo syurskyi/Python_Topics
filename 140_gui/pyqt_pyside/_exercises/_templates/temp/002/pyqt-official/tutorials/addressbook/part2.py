@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., ?VBL.., ?W..
+____ ?.?W.. ______ QGridLayout, ?L.., QLineEdit, ?MB.., ?PB.., ?TE.., ?VBL.., ?W..
 
 
 c_ SortedDict(dict):
@@ -83,11 +83,11 @@ c_ AddressBook(?W..):
         oldName _ ''
         oldAddress _ ''
 
-        nameLabel _ QLabel("Name:")
+        nameLabel _ ?L..("Name:")
         nameLine _ ?LE..
         nameLine.sRO..( st.
 
-        addressLabel _ QLabel("Address:")
+        addressLabel _ ?L..("Address:")
         addressText _ ?TE..()
         addressText.sRO..( st.
 
@@ -138,16 +138,16 @@ c_ AddressBook(?W..):
         address _ addressText.toPlainText()
 
         __ name __ "" or address __ "":
-            ?MB...information  "Empty Field",
+            ?MB...i..  "Empty Field",
                     "Please enter a name and address.")
             r_
 
         __ name no. __ contacts:
             contacts[name] _ address
-            ?MB...information  "Add Successful",
+            ?MB...i..  "Add Successful",
                     "\"%s\" has been added to your address book." % name)
         ____
-            ?MB...information  "Add Unsuccessful",
+            ?MB...i..  "Add Unsuccessful",
                     "Sorry, \"%s\" is already in your address book." % name)
             r_
 

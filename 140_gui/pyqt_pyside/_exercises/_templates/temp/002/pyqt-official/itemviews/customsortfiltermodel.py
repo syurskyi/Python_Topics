@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (?D.., ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
 ____ ?.?G.. ______ ?SIM..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DE..,
-        QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit, QTreeView,
+        QGridLayout, ?GB.., ?HBL.., ?L.., QLineEdit, QTreeView,
         ?VBL.., ?W..)
 
 
@@ -124,7 +124,7 @@ c_ Window(?W..):
         filterCaseSensitivityCheckBox.sC__( st.
         filterPatternLineEdit _ ?LE..
         filterPatternLineEdit.sT..("Grace|Sports")
-        filterPatternLabel _ QLabel("&Filter pattern:")
+        filterPatternLabel _ ?L..("&Filter pattern:")
         filterPatternLabel.setBuddy(filterPatternLineEdit)
         filterSyntaxComboBox _ ?CB()
         filterSyntaxComboBox.aI..("Regular expression", QRegExp.RegExp)
@@ -133,12 +133,12 @@ c_ Window(?W..):
         fromDateEdit _ ?DE..()
         fromDateEdit.setDate(?D..(2006, 12, 22))
         fromDateEdit.setCalendarPopup( st.
-        fromLabel _ QLabel("F&rom:")
+        fromLabel _ ?L..("F&rom:")
         fromLabel.setBuddy(fromDateEdit)
         toDateEdit _ ?DE..()
         toDateEdit.setDate(?D..(2007, 1, 5))
         toDateEdit.setCalendarPopup( st.
-        toLabel _ QLabel("&To:")
+        toLabel _ ?L..("&To:")
         toLabel.setBuddy(toDateEdit)
 
         filterPatternLineEdit.tC...c..(textFilterChanged)

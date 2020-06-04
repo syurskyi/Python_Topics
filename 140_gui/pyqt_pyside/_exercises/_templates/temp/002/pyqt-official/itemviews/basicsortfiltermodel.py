@@ -46,7 +46,7 @@ ____ ?.?C.. ______ (?D.., ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
 ____ ?.?G.. ______ ?SIM..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
-        ?GB.., ?HBL.., QLabel, QLineEdit, QTreeView, ?VBL..,
+        ?GB.., ?HBL.., ?L.., QLineEdit, QTreeView, ?VBL..,
         ?W..)
 
 
@@ -94,21 +94,21 @@ c_ Window(?W..):
         filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
 
         filterPatternLineEdit _ ?LE..
-        filterPatternLabel _ QLabel("&Filter pattern:")
+        filterPatternLabel _ ?L..("&Filter pattern:")
         filterPatternLabel.setBuddy(filterPatternLineEdit)
 
         filterSyntaxComboBox _ ?CB()
         filterSyntaxComboBox.aI..("Regular expression", QRegExp.RegExp)
         filterSyntaxComboBox.aI..("Wildcard", QRegExp.Wildcard)
         filterSyntaxComboBox.aI..("Fixed string", QRegExp.FixedString)
-        filterSyntaxLabel _ QLabel("Filter &syntax:")
+        filterSyntaxLabel _ ?L..("Filter &syntax:")
         filterSyntaxLabel.setBuddy(filterSyntaxComboBox)
 
         filterColumnComboBox _ ?CB()
         filterColumnComboBox.aI..("Subject")
         filterColumnComboBox.aI..("Sender")
         filterColumnComboBox.aI..("Date")
-        filterColumnLabel _ QLabel("Filter &column:")
+        filterColumnLabel _ ?L..("Filter &column:")
         filterColumnLabel.setBuddy(filterColumnComboBox)
 
         filterPatternLineEdit.tC...c..(filterRegExpChanged)
@@ -153,7 +153,7 @@ c_ Window(?W..):
         sourceView.sM..(model)
 
     ___ filterRegExpChanged
-        syntax_nr _ filterSyntaxComboBox.itemData(filterSyntaxComboBox.currentIndex())
+        syntax_nr _ filterSyntaxComboBox.itemData(filterSyntaxComboBox.cI..
         syntax _ QRegExp.PatternSyntax(syntax_nr)
 
         __ filterCaseSensitivityCheckBox.isChecked
@@ -166,7 +166,7 @@ c_ Window(?W..):
         proxyModel.setFilterRegExp(regExp)
 
     ___ filterColumnChanged
-        proxyModel.setFilterKeyColumn(filterColumnComboBox.currentIndex())
+        proxyModel.setFilterKeyColumn(filterColumnComboBox.cI..
 
     ___ sortChanged
         __ sortCaseSensitivityCheckBox.isChecked

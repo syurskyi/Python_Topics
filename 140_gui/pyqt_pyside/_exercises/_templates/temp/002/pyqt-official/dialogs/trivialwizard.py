@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
+____ ?.?W.. ______ (?A.., QGridLayout, ?L.., QLineEdit,
         ?VBL.., QWizard, QWizardPage)
 
 
@@ -50,7 +50,7 @@ ___ createIntroPage
     page _ QWizardPage()
     page.setTitle("Introduction")
 
-    label _ QLabel(
+    label _ ?L..(
             "This wizard will help you register your copy of Super Product "
             "Two.")
     label.setWordWrap( st.
@@ -67,10 +67,10 @@ ___ createRegistrationPage
     page.setTitle("Registration")
     page.setSubTitle("Please fill both fields.")
 
-    nameLabel _ QLabel("Name:")
+    nameLabel _ ?L..("Name:")
     nameLineEdit _ ?LE..
 
-    emailLabel _ QLabel("Email address:")
+    emailLabel _ ?L..("Email address:")
     emailLineEdit _ ?LE..
 
     layout _ QGridLayout()
@@ -87,7 +87,7 @@ ___ createConclusionPage
     page _ QWizardPage()
     page.setTitle("Conclusion")
 
-    label _ QLabel("You are now successfully registered. Have a nice day!")
+    label _ ?L..("You are now successfully registered. Have a nice day!")
     label.setWordWrap( st.
 
     layout _ ?VBL..

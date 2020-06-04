@@ -15,7 +15,7 @@ c_ Ui_CategoryWindow o..
         CategoryWindow.r..(409, 120)
         verticalLayout _ ?W...?VBL..(CategoryWindow)
         verticalLayout.setObjectName("verticalLayout")
-        label _ ?W...QLabel(CategoryWindow)
+        label _ ?W...?L..(CategoryWindow)
         label.setObjectName("label")
         verticalLayout.aW..(label)
         category_entry _ ?W...QLineEdit(CategoryWindow)

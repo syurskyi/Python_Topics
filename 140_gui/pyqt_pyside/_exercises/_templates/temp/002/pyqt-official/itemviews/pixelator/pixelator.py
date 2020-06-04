@@ -45,9 +45,9 @@
 ____ ?.?C.. ______ (?ATM.., ?D.., QModelIndex, QRect,
         QRectF, ?S.., __)
 ____ ?.?G.. ______ ?B.., qGray, QImage, QPainter
-____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
-____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
-        ?FD.., ?HBL.., QLabel, ?MW.., ?MB.., ?M..,
+____ ?.?PS.. ______ QPrintDialog, QPrinter
+____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., ?D..,
+        ?FD.., ?HBL.., ?L.., ?MW.., ?MB.., ?M..,
         QProgressDialog, SB.., ?S.., QStyleOptionViewItem, QTableView,
         ?VBL.., ?W..)
 
@@ -146,7 +146,7 @@ c_ MainWindow ?MW..
         delegate _ PixelDelegate
         view.sID..(delegate)
 
-        pixelSizeLabel _ QLabel("Pixel size:")
+        pixelSizeLabel _ ?L..("Pixel size:")
         pixelSizeSpinBox _ SB..()
         pixelSizeSpinBox.setMinimum(4)
         pixelSizeSpinBox.sM..(32)
@@ -226,7 +226,7 @@ c_ MainWindow ?MW..
         dlg _ QPrintDialog(printer, self)
         dlg.sWT..("Print Image")
 
-        __ dlg.e.. !_ QDialog.Accepted:
+        __ dlg.e.. !_ ?D...Accepted:
             r_
 
         painter _ QPainter()
@@ -277,7 +277,7 @@ c_ MainWindow ?MW..
         painter.end()
 
         __ progress.wasCanceled
-            ?MB...information  "Printing canceled",
+            ?MB...i..  "Printing canceled",
                     "The printing process was canceled.", ?MB...Cancel)
 
     ___ showAboutBox 

@@ -48,7 +48,7 @@ ____ struct ______ pack
 ____ ?.?C.. ______ QByteArray, QIODevice, __, ?T.., qWarning
 ____ ?.?M.. ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
-____ ?.?W.. ______ (?A.., ?CB, ?HBL.., QLabel,
+____ ?.?W.. ______ (?A.., ?CB, ?HBL.., ?L..,
         ?MW.., ?PB.., ?S.., ?VBL.., ?W..)
 
 
@@ -168,7 +168,7 @@ c_ AudioTest ?MW..
         layout.aW..(m_suspendResumeButton)
 
         volumeBox _ ?HBL..
-        volumeLabel _ QLabel("Volume:")
+        volumeLabel _ ?L..("Volume:")
         m_volumeSlider _ ?S..(__.H.., minimum_0, maximum_100,
                 singleStep_10, valueChanged_self.volumeChanged)
         volumeBox.aW..(volumeLabel)

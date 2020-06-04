@@ -45,14 +45,14 @@
 ______ random
 
 ____ ?.?C.. ______ QByteArray, ?DS.., QIODevice, QSettings
-____ ?.?W.. ______ (?A.., QDialog, ?HBL.., QLabel,
+____ ?.?W.. ______ (?A.., ?D.., ?HBL.., ?L..,
         ?MB.., ?PB.., ?VBL..)
 ____ ?.?N.. ______ (?HA.., QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpServer)
 
 
-c_ Server(QDialog):
+c_ Server(?D..):
     FORTUNES _ (
         "You've been leading a dog's life. Stay off the furniture.",
         "You've got to think about tomorrow.",

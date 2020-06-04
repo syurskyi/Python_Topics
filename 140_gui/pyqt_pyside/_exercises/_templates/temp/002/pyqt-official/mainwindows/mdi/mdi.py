@@ -71,7 +71,7 @@ c_ MdiChild(?TE..):
     ___ loadFile  fileName):
         file _ QFile(fileName)
         __ no. file.o..(QFile.ReadOnly | QFile.Text):
-            ?MB...warning  "MDI",
+            ?MB...w..  "MDI",
                     "Cannot read file %s:\n%s." % (fileName, file.errorString()))
             r_ F..
 
@@ -103,7 +103,7 @@ c_ MdiChild(?TE..):
         file _ QFile(fileName)
 
         __ no. file.o..(QFile.WriteOnly | QFile.Text):
-            ?MB...warning  "MDI",
+            ?MB...w..  "MDI",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
             r_ F..
 
@@ -132,7 +132,7 @@ c_ MdiChild(?TE..):
 
     ___ maybeSave
         __ document().iM..
-            ret _ ?MB...warning  "MDI",
+            ret _ ?MB...w..  "MDI",
                     "'%s' has been modified.\nDo you want to save your "
                     "changes?" % userFriendlyCurrentFile(),
                     ?MB...Save | ?MB...Discard | ?MB...Cancel)

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ pS.., __
 ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
-        QDial, QGridLayout, ?GB.., ?HBL.., QLabel, QScrollBar,
+        QDial, QGridLayout, ?GB.., ?HBL.., ?L.., QScrollBar,
         ?S.., SB.., ?SW.., ?W..)
 
 
@@ -139,9 +139,9 @@ c_ Window(?W..):
     ___ createControls  title):
         controlsGroup _ ?GB..(title)
 
-        minimumLabel _ QLabel("Minimum value:")
-        maximumLabel _ QLabel("Maximum value:")
-        valueLabel _ QLabel("Current value:")
+        minimumLabel _ ?L..("Minimum value:")
+        maximumLabel _ ?L..("Maximum value:")
+        valueLabel _ ?L..("Current value:")
 
         invertedAppearance _ QCheckBox("Inverted appearance")
         invertedKeyBindings _ QCheckBox("Inverted key bindings")

@@ -87,7 +87,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
 
     ___ alert  message):
-        alert _ ?MB...warning  "Warning", message)
+        alert _ ?MB...w..  "Warning", message)
 
     ___ update_weather 
         worker _ WeatherWorker(lineEdit.t__())

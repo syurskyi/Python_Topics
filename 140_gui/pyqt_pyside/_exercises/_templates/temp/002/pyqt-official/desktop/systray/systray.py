@@ -44,14 +44,14 @@
 
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, ?CB,
-        QDialog, QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit,
+        ?D.., QGridLayout, ?GB.., ?HBL.., ?L.., QLineEdit,
         ?MB.., ?M.., ?PB.., SB.., ?S.., QSystemTrayIcon,
         ?TE.., ?VBL..)
 
 ______ systray_rc
 
 
-c_ Window(QDialog):
+c_ Window(?D..):
     ___  -
         s__(Window, self). - ()
 
@@ -88,7 +88,7 @@ c_ Window(QDialog):
 
     ___ closeEvent  event):
         __ trayIcon.isVisible
-            ?MB...information  "Systray",
+            ?MB...i..  "Systray",
                     "The program will keep running in the system tray. To "
                     "terminate the program, choose <b>Quit</b> in the "
                     "context menu of the system tray entry.")
@@ -98,9 +98,9 @@ c_ Window(QDialog):
     ___ sI..  index):
         icon _ iconComboBox.itemIcon(index)
         trayIcon.sI..(icon)
-        setWindowIcon(icon)
+        sWI..(icon)
 
-        trayIcon.sTT..(iconComboBox.itemText(index))
+        trayIcon.sTT..(iconComboBox.iT..(index))
 
     ___ iconActivated  reason):
         __ reason __ (QSystemTrayIcon.Trigger, QSystemTrayIcon.DoubleClick):
@@ -118,14 +118,14 @@ c_ Window(QDialog):
                 durationSpinBox.v.. * 1000)
 
     ___ messageClicked
-        ?MB...information(N.., "Systray",
+        ?MB...i..(N.., "Systray",
                 "Sorry, I already gave what help I could.\nMaybe you should "
                 "try asking a human?")
 
     ___ createIconGroupBox
         iconGroupBox _ ?GB..("Tray Icon")
 
-        iconLabel _ QLabel("Icon:")
+        iconLabel _ ?L..("Icon:")
 
         iconComboBox _ ?CB()
         iconComboBox.aI..(?I..(':/images/bad.png'), "Bad")
@@ -145,7 +145,7 @@ c_ Window(QDialog):
     ___ createMessageGroupBox
         messageGroupBox _ ?GB..("Balloon Message")
 
-        typeLabel _ QLabel("Type:")
+        typeLabel _ ?L..("Type:")
 
         typeComboBox _ ?CB()
         typeComboBox.aI..("None", QSystemTrayIcon.NoIcon)
@@ -160,21 +160,21 @@ c_ Window(QDialog):
                 QSystemTrayIcon.Critical)
         typeComboBox.sCI..(1)
 
-        durationLabel _ QLabel("Duration:")
+        durationLabel _ ?L..("Duration:")
 
         durationSpinBox _ SB..()
         durationSpinBox.setRange(5, 60)
         durationSpinBox.setSuffix(" s")
         durationSpinBox.sV..(15)
 
-        durationWarningLabel _ QLabel("(some systems might ignore this hint)")
+        durationWarningLabel _ ?L..("(some systems might ignore this hint)")
         durationWarningLabel.setIndent(10)
 
-        titleLabel _ QLabel("Title:")
+        titleLabel _ ?L..("Title:")
 
         titleEdit _ QLineEdit("Cannot connect to network")
 
-        bodyLabel _ QLabel("Body:")
+        bodyLabel _ ?L..("Body:")
 
         bodyEdit _ ?TE..()
         bodyEdit.sPT..("Don't believe me. Honestly, I don't have "

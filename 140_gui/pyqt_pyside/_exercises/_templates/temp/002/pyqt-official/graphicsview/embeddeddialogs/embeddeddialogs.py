@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ QEvent, QRectF, __, QTimeLine
 ____ ?.?G.. ______ (?B.., ?C.., QPainter, QPainterPath, ?P..,
         QTransform)
-____ ?.?W.. ______ (?A.., QDialog, QGraphicsItem,
+____ ?.?W.. ______ (?A.., ?D.., QGraphicsItem,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, ?SF..,
         ?W..)
 
@@ -157,7 +157,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
             timeLine.start()
 
 
-c_ EmbeddedDialog(QDialog):
+c_ EmbeddedDialog(?D..):
     ___  -   parent_None):
         s__(EmbeddedDialog, self). - (parent)
 

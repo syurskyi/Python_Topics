@@ -44,14 +44,14 @@
 
 ____ ?.?C.. ______ ?D.., QEvent, __, QT_TRANSLATE_NOOP, QTranslator
 ____ ?.?G.. ______ ?C.., ?P..
-____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QGridLayout, ?GB.., QListWidget, ?MW..,
+____ ?.?W.. ______ (?A.., ?A.., QCheckBox, ?D..,
+        ?DBB..., QGridLayout, ?GB.., QListWidget, ?MW..,
         QRadioButton, ?VBL.., ?W..)
 
 ______ i18n_rc
 
 
-c_ LanguageChooser(QDialog):
+c_ LanguageChooser(?D..):
     ___  -   parent_None):
         s__(LanguageChooser, self). - (parent, __.WindowStaysOnTopHint)
 
@@ -72,12 +72,12 @@ c_ LanguageChooser(QDialog):
 
         groupBox.sL..(groupBoxLayout)
 
-        buttonBox _ QDialogButtonBox()
+        buttonBox _ ?DBB...()
 
         showAllButton _ buttonBox.addButton("Show All",
-                QDialogButtonBox.ActionRole)
+                ?DBB....ActionRole)
         hideAllButton _ buttonBox.addButton("Hide All",
-                QDialogButtonBox.ActionRole)
+                ?DBB....ActionRole)
 
         showAllButton.c__.c..(showAll)
         hideAllButton.c__.c..(hideAll)

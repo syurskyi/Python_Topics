@@ -46,8 +46,8 @@ c_ FontButton(qtw.?PB..):
         sT..(f'{font.family()} {font.pointSize()}')
 
     ___ on_click
-        font, accepted _ qtw.QFontDialog.getFont(_font)
-        __ accepted:
+        font, a___ _ qtw.QFontDialog.getFont(_font)
+        __ a___:
             set_font(font)
             changed.e..()
 

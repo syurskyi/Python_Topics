@@ -47,12 +47,12 @@
 ______ random
 
 ____ ?.?C.. ______ QByteArray, ?DS.., QIODevice
-____ ?.?W.. ______ (?A.., QDialog, QLabel, ?HBL..,
+____ ?.?W.. ______ (?A.., ?D.., ?L.., ?HBL..,
         ?MB.., ?PB.., ?VBL..)
 ____ ?.?N.. ______ QLocalServer
 
 
-c_ Server(QDialog):
+c_ Server(?D..):
     ___  -   parent_None):
         s__(Server, self). - (parent)
 

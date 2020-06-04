@@ -43,23 +43,23 @@
 
 
 ____ ?.?C.. ______ ?T..
-____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
+____ ?.?W.. ______ (?A.., ?D.., ?DBB..., ?L..,
         ?PB.., ?VBL..)
 ____ ?.?N.. ______ ?HA.., QUdpSocket
 
 
-c_ Sender(QDialog):
+c_ Sender(?D..):
     ___  -   parent_None):
         s__(Sender, self). - (parent)
 
-        statusLabel _ QLabel("Ready to broadcast datagrams on port 45454")
+        statusLabel _ ?L..("Ready to broadcast datagrams on port 45454")
 
         startButton _ ?PB..("&Start")
         quitButton _ ?PB..("&Quit")
 
-        buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(startButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...()
+        buttonBox.addButton(startButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         timer _ ?T..
         udpSocket _ QUdpSocket

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QRect, QRectF, ?S.., __, ?T..
 ____ ?.?G.. ______ ?C.., QPainter, ?P.., ?P..
-____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
+____ ?.?W.. ______ (?A.., QFrame, QGridLayout, ?L..,
         ?SP.., ?W..)
 
 
@@ -129,7 +129,7 @@ c_ Window(?W..):
         sWT..("Concentric Circles")
 
     ___ createLabel  t__):
-        label _ QLabel(t__)
+        label _ ?L..(t__)
         label.setAlignment(__.AlignCenter)
         label.setMargin(2)
         label.setFrameStyle(QFrame.Box | QFrame.Sunken)

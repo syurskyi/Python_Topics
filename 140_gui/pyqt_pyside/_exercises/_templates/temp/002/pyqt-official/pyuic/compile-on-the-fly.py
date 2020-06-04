@@ -42,7 +42,7 @@
 ______ ___
 
 ____ ?.?C.. ______ pyqtSlot
-____ ?.?W.. ______ ?A.., QDialog
+____ ?.?W.. ______ ?A.., ?D..
 ____ ?.uic ______ lUT..
 
 
@@ -50,7 +50,7 @@ app _ ?A..(___.a..
 form_class, base_class _ lUT..('demo.ui')
 
 
-c_ DemoImpl(QDialog, form_class):
+c_ DemoImpl(?D.., form_class):
     ___  -   *args):
         s__(DemoImpl, self). - (*args)
 

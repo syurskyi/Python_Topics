@@ -47,7 +47,7 @@ ____ ?.?G.. ______ ?P.., ?P..
 ____ ?.?M.. ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
         ?MR.., QMultimedia, QVideoEncoderSettings)
-____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QDialog,
+____ ?.?W.. ______ (?A.., QActionGroup, ?A.., ?D..,
         ?MW.., ?MB..)
 
 ____ ui_camera ______ Ui_Camera
@@ -55,7 +55,7 @@ ____ ui_imagesettings ______ Ui_ImageSettingsUi
 ____ ui_videosettings ______ Ui_VideoSettingsUi
 
 
-c_ ImageSettings(QDialog):
+c_ ImageSettings(?D..):
 
     ___  -   imageCapture, parent_None):
         s__(ImageSettings, self). - (parent)
@@ -112,7 +112,7 @@ c_ ImageSettings(QDialog):
                 break
 
 
-c_ VideoSettings(QDialog):
+c_ VideoSettings(?D..):
 
     ___  -   mediaRecorder, parent_None):
         s__(VideoSettings, self). - (parent)
@@ -467,11 +467,11 @@ c_ Camera ?MW..
         camera.exposure().setExposureCompensation(index * 0.5)
 
     ___ displayRecorderError
-        ?MB...warning  "Capture error",
+        ?MB...w..  "Capture error",
                 mediaRecorder.errorString())
 
     ___ displayCameraError
-        ?MB...warning  "Camera error", camera.errorString())
+        ?MB...w..  "Camera error", camera.errorString())
 
     ___ updateCameraDevice  action):
         setCamera(action.data())

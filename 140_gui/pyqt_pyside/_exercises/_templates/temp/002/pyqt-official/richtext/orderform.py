@@ -45,11 +45,11 @@
 ____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ (?F.., QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
-____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MW..,
+____ ?.?W.. ______ (?A.., QCheckBox, ?D..,
+        ?DBB..., QGridLayout, ?L.., QLineEdit, ?MW..,
         ?MB.., ?M.., ?TW.., ?TWI.., ?TW..,
         ?TE..)
-____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter
+____ ?.?PS.. ______ QAbstractPrintDialog, QPrintDialog, QPrinter
 
 
 c_ MainWindow ?MW..
@@ -194,7 +194,7 @@ c_ MainWindow ?MW..
     ___ openDialog
         dialog _ DetailsDialog("Enter Customer Details", self)
 
-        __ dialog.e.. __ QDialog.Accepted:
+        __ dialog.e.. __ ?D...Accepted:
             createLetter(dialog.senderName(), dialog.senderAddress(),
                     dialog.orderItems(), dialog.sendOffers())
 
@@ -208,20 +208,20 @@ c_ MainWindow ?MW..
         __ editor.textCursor().hasSelection
             dialog.addEnabledOption(QAbstractPrintDialog.PrintSelection)
 
-        __ dialog.e.. !_ QDialog.Accepted:
+        __ dialog.e.. !_ ?D...Accepted:
             r_
 
         editor.print_(printer)
 
 
-c_ DetailsDialog(QDialog):
+c_ DetailsDialog(?D..):
     ___  -   title, parent):
         s__(DetailsDialog, self). - (parent)
 
         i.. _ ("T-shirt", "Badge", "Reference book", "Coffee cup")
 
-        nameLabel _ QLabel("Name:")
-        addressLabel _ QLabel("Address:")
+        nameLabel _ ?L..("Name:")
+        addressLabel _ ?L..("Address:")
         addressLabel.setAlignment(__.AlignLeft | __.AlignTop)
 
         nameEdit _ ?LE..
@@ -231,10 +231,10 @@ c_ DetailsDialog(QDialog):
 
         setupItemsTable()
 
-        buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttonBox _ ?DBB...(?DBB....Ok | ?DBB....Cancel)
 
-        buttonBox.accepted.c..(verify)
-        buttonBox.rejected.c..(reject)
+        buttonBox.a___.c..(verify)
+        buttonBox.r___.c..(reject)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(nameLabel, 0, 0)
@@ -282,7 +282,7 @@ c_ DetailsDialog(QDialog):
             accept()
             r_
 
-        answer _ ?MB...warning  "Incomplete Form",
+        answer _ ?MB...w..  "Incomplete Form",
                 "The form does not contain all the necessary information.\n"
                 "Do you want to discard it?",
                 ?MB...Yes, ?MB...No)

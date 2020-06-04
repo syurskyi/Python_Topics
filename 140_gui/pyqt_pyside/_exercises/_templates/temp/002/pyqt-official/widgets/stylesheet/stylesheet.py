@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.?W.. ______ ?A.., QLabel, ?MW.., ?MB..
+____ ?.?W.. ______ ?A.., ?L.., ?MW.., ?MB..
 
 ______ stylesheet_rc
 ____ ui_mainwindow ______ Ui_MainWindow
@@ -58,7 +58,7 @@ c_ MainWindow ?MW..
         ui.setupUi
         ui.nameLabel.setProperty('class', 'mandatory QLabel')
         styleSheetEditor _ StyleSheetEditor
-        sB.. .aW..(QLabel("Ready"))
+        sB.. .aW..(?L..("Ready"))
         ui.exitAction.t__.c..(?A...i.. .quit)
         ui.aboutQtAction.t__.c..(?A...i.. .aboutQt)
 

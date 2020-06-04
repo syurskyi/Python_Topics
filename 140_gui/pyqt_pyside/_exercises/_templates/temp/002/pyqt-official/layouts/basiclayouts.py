@@ -42,13 +42,13 @@
 #############################################################################
 
 
-____ ?.?W.. ______ (?A.., ?CB, QDialog,
-        QDialogButtonBox, ?FL.., QGridLayout, ?GB.., ?HBL..,
-        QLabel, QLineEdit, ?M.., QMenuBar, ?PB.., SB.., ?TE..,
+____ ?.?W.. ______ (?A.., ?CB, ?D..,
+        ?DBB..., ?FL.., QGridLayout, ?GB.., ?HBL..,
+        ?L.., QLineEdit, ?M.., QMenuBar, ?PB.., SB.., ?TE..,
         ?VBL..)
 
 
-c_ Dialog(QDialog):
+c_ Dialog(?D..):
     NumGridRows _ 3
     NumButtons _ 4
 
@@ -64,10 +64,10 @@ c_ Dialog(QDialog):
         bigEditor.sPT..("This widget takes up all the remaining space "
                 "in the top-level layout.")
 
-        buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttonBox _ ?DBB...(?DBB....Ok | ?DBB....Cancel)
 
-        buttonBox.accepted.c..(accept)
-        buttonBox.rejected.c..(reject)
+        buttonBox.a___.c..(accept)
+        buttonBox.r___.c..(reject)
 
         mainLayout _ ?VBL..
         mainLayout.setMenuBar(menuBar)
@@ -104,7 +104,7 @@ c_ Dialog(QDialog):
         layout _ QGridLayout()
 
         ___ i __ ra..(Dialog.NumGridRows):
-            label _ QLabel("Line %d:" % (i + 1))
+            label _ ?L..("Line %d:" % (i + 1))
             lineEdit _ ?LE..
             layout.aW..(label, i + 1, 0)
             layout.aW..(lineEdit, i + 1, 1)
@@ -122,9 +122,9 @@ c_ Dialog(QDialog):
     ___ createFormGroupBox 
         formGroupBox _ ?GB..("Form layout")
         layout _ ?FL..
-        layout.aR..(QLabel("Line 1:"), QLineEdit())
-        layout.aR..(QLabel("Line 2, long text:"), ?CB())
-        layout.aR..(QLabel("Line 3:"), SB..())
+        layout.aR..(?L..("Line 1:"), QLineEdit())
+        layout.aR..(?L..("Line 2, long text:"), ?CB())
+        layout.aR..(?L..("Line 3:"), SB..())
         formGroupBox.sL..(layout)
 
 

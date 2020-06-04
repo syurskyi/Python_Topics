@@ -45,8 +45,8 @@
 ______ pickle
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ (QDialog, ?FD.., QGridLayout, ?HBL..,
-        QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., ?VBL..,
+____ ?.?W.. ______ (?D.., ?FD.., QGridLayout, ?HBL..,
+        ?L.., QLineEdit, ?MB.., ?PB.., ?TE.., ?VBL..,
         ?W..)
 
 
@@ -90,11 +90,11 @@ c_ AddressBook(?W..):
         oldAddress _ ''
         currentMode _ NavigationMode
 
-        nameLabel _ QLabel("Name:")
+        nameLabel _ ?L..("Name:")
         nameLine _ ?LE..
         nameLine.sRO..( st.
 
-        addressLabel _ QLabel("Address:")
+        addressLabel _ ?L..("Address:")
         addressText _ ?TE..()
         addressText.sRO..( st.
 
@@ -181,33 +181,33 @@ c_ AddressBook(?W..):
         address _ addressText.toPlainText()
 
         __ name __ "" or address __ "":
-            ?MB...information  "Empty Field",
+            ?MB...i..  "Empty Field",
                     "Please enter a name and address.")
             r_
 
         __ currentMode __ AddingMode:
             __ name no. __ contacts:
                 contacts[name] _ address
-                ?MB...information  "Add Successful",
+                ?MB...i..  "Add Successful",
                         "\"%s\" has been added to your address book." % name)
             ____
-                ?MB...information  "Add Unsuccessful",
+                ?MB...i..  "Add Unsuccessful",
                         "Sorry, \"%s\" is already in your address book." % name)
                 r_
 
         ____ currentMode __ EditingMode:
             __ oldName !_ name:
                 __ name no. __ contacts:
-                    ?MB...information  "Edit Successful",
+                    ?MB...i..  "Edit Successful",
                             "\"%s\" has been edited in your address book." % oldName)
                     del contacts[oldName]
                     contacts[name] _ address
                 ____
-                    ?MB...information  "Edit Unsuccessful",
+                    ?MB...i..  "Edit Unsuccessful",
                             "Sorry, \"%s\" is already in your address book." % name)
                     r_
             ____ oldAddress !_ address:
-                ?MB...information  "Edit Successful",
+                ?MB...i..  "Edit Successful",
                         "\"%s\" has been edited in your address book." % name)
                 contacts[name] _ address
 
@@ -231,7 +231,7 @@ c_ AddressBook(?W..):
                 previous()
                 del contacts[name]
 
-                ?MB...information  "Remove Successful",
+                ?MB...i..  "Remove Successful",
                         "\"%s\" has been removed from your address book." % name)
 
         updateInterface(NavigationMode)
@@ -278,14 +278,14 @@ c_ AddressBook(?W..):
     ___ findContact 
         dialog.s..
 
-        __ dialog.e.. __ QDialog.Accepted:
+        __ dialog.e.. __ ?D...Accepted:
             contactName _ dialog.getFindText()
 
             __ contactName __ contacts:
                 nameLine.sT..(contactName)
                 addressText.sT..(contacts[contactName])
             ____
-                ?MB...information  "Contact Not Found",
+                ?MB...i..  "Contact Not Found",
                         "Sorry, \"%s\" is not in your address book." % contactName)
                 r_
 
@@ -344,7 +344,7 @@ c_ AddressBook(?W..):
         ___
             out_file _ o..(st.(fileName), 'wb')
         _____ IOError:
-            ?MB...information  "Unable to open file",
+            ?MB...i..  "Unable to open file",
                     "There was an error opening \"%s\"" % fileName)
             r_
 
@@ -361,7 +361,7 @@ c_ AddressBook(?W..):
         ___
             in_file _ o..(st.(fileName), __
         _____ IOError:
-            ?MB...information  "Unable to open file",
+            ?MB...i..  "Unable to open file",
                     "There was an error opening \"%s\"" % fileName)
             r_
 
@@ -369,7 +369,7 @@ c_ AddressBook(?W..):
         in_file.c..
 
         __ le.(contacts) __ 0:
-            ?MB...information  "No contacts in file",
+            ?MB...i..  "No contacts in file",
                     "The file you are attempting to open contains no "
                     "contacts.")
         ____
@@ -380,11 +380,11 @@ c_ AddressBook(?W..):
         updateInterface(NavigationMode)
 
 
-c_ FindDialog(QDialog):
+c_ FindDialog(?D..):
     ___  -   parent_None):
         s__(FindDialog, self). - (parent)
 
-        findLabel _ QLabel("Enter the name of a contact:")
+        findLabel _ ?L..("Enter the name of a contact:")
         lineEdit _ ?LE..
 
         findButton _ ?PB..("&Find")
@@ -405,7 +405,7 @@ c_ FindDialog(QDialog):
         t__ _ lineEdit.t__()
 
         __ no. t__:
-            ?MB...information  "Empty Field",
+            ?MB...i..  "Empty Field",
                     "Please enter a name.")
             r_
 

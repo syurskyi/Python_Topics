@@ -44,12 +44,12 @@
 
 ____ ?.?C.. ______ QFile, QIODevice, QMimeData, QPoint, __, QTextStream
 ____ ?.?G.. ______ QDrag, ?P.., ?P..
-____ ?.?W.. ______ ?A.., QFrame, QLabel, ?W..
+____ ?.?W.. ______ ?A.., QFrame, ?L.., ?W..
 
 ______ draggabletext_rc
 
 
-c_ DragLabel(QLabel):
+c_ DragLabel(?L..):
     ___  -   t__, parent):
         s__(DragLabel, self). - (t__, parent)
 

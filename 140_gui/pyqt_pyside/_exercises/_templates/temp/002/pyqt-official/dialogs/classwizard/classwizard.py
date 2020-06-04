@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., QFile, QRegExp
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, ?GB..,
-        QLabel, QLineEdit, ?MB.., QRadioButton, ?VBL.., QWizard,
+        ?L.., QLineEdit, ?MB.., QRadioButton, ?VBL.., QWizard,
         QWizardPage)
 
 ______ classwizard_rc
@@ -128,7 +128,7 @@ c_ ClassWizard(QWizard):
         headerFile _ QFile(outputDir + '/' + header)
 
         __ no. headerFile.o..(QFile.WriteOnly | QFile.Text):
-            ?MB...warning(N.., "Class Wizard",
+            ?MB...w..(N.., "Class Wizard",
                     "Cannot write file %s:\n%s" % (headerFile.fN.., headerFile.errorString()))
             r_
 
@@ -181,7 +181,7 @@ c_ ClassWizard(QWizard):
         implementationFile _ QFile(outputDir + '/' + implementation)
 
         __ no. implementationFile.o..(QFile.WriteOnly | QFile.Text):
-            ?MB...warning(N.., "Class Wizard",
+            ?MB...w..(N.., "Class Wizard",
                     "Cannot write file %s:\n%s" % (implementationFile.fN.., implementationFile.errorString()))
             r_
 
@@ -198,7 +198,7 @@ c_ IntroPage(QWizardPage):
         sP..(QWizard.WatermarkPixmap,
                 ?P..(':/images/watermark1.png'))
 
-        label _ QLabel("This wizard will generate a skeleton C++ class "
+        label _ ?L..("This wizard will generate a skeleton C++ class "
                 "definition, including a few functions. You simply need to "
                 "specify the class name and set a few options to produce a "
                 "header file and an implementation file for your new C++ "
@@ -219,11 +219,11 @@ c_ ClassInfoPage(QWizardPage):
                 "which you want to generate skeleton source code files.")
         sP..(QWizard.LogoPixmap, ?P..(':/images/logo1.png'))
 
-        classNameLabel _ QLabel("&Class name:")
+        classNameLabel _ ?L..("&Class name:")
         classNameLineEdit _ ?LE..
         classNameLabel.setBuddy(classNameLineEdit)
 
-        baseClassLabel _ QLabel("B&ase class:")
+        baseClassLabel _ ?L..("B&ase class:")
         baseClassLineEdit _ ?LE..
         baseClassLabel.setBuddy(baseClassLineEdit)
 
@@ -280,12 +280,12 @@ c_ CodeStylePage(QWizardPage):
                 "inclusions")
         protectCheckBox.sC__( st.
 
-        macroNameLabel _ QLabel("&Macro name:")
+        macroNameLabel _ ?L..("&Macro name:")
         macroNameLineEdit _ ?LE..
         macroNameLabel.setBuddy(macroNameLineEdit)
 
         includeBaseCheckBox _ QCheckBox("&Include base class definition")
-        baseIncludeLabel _ QLabel("Base class include:")
+        baseIncludeLabel _ ?L..("Base class include:")
         baseIncludeLineEdit _ ?LE..
         baseIncludeLabel.setBuddy(baseIncludeLineEdit)
 
@@ -340,15 +340,15 @@ c_ OutputFilesPage(QWizardPage):
                 "generated skeleton code.")
         sP..(QWizard.LogoPixmap, ?P..(':/images/logo3.png'))
 
-        outputDirLabel _ QLabel("&Output directory:")
+        outputDirLabel _ ?L..("&Output directory:")
         outputDirLineEdit _ ?LE..
         outputDirLabel.setBuddy(outputDirLineEdit)
 
-        headerLabel _ QLabel("&Header file name:")
+        headerLabel _ ?L..("&Header file name:")
         headerLineEdit _ ?LE..
         headerLabel.setBuddy(headerLineEdit)
 
-        implementationLabel _ QLabel("&Implementation file name:")
+        implementationLabel _ ?L..("&Implementation file name:")
         implementationLineEdit _ ?LE..
         implementationLabel.setBuddy(implementationLineEdit)
 

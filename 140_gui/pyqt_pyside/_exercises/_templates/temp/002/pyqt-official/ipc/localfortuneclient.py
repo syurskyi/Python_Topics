@@ -45,23 +45,23 @@
 
 
 ____ ?.?C.. ______ ?DS.., ?T..
-____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
-        QGridLayout, QLabel, QLineEdit, ?MB.., ?PB..)
+____ ?.?W.. ______ (?A.., ?D.., ?DBB...,
+        QGridLayout, ?L.., QLineEdit, ?MB.., ?PB..)
 ____ ?.?N.. ______ QLocalSocket
 
 
-c_ Client(QDialog):
+c_ Client(?D..):
     ___  -   parent_None):
         s__(Client, self). - (parent)
 
         blockSize _ 0
         currentFortune _ N..
 
-        hostLabel _ QLabel("&Server name:")
+        hostLabel _ ?L..("&Server name:")
         hostLineEdit _ QLineEdit("fortune")
         hostLabel.setBuddy(hostLineEdit)
 
-        statusLabel _ QLabel(
+        statusLabel _ ?L..(
                 "This examples requires that you run the Fortune Server "
                 "example as well.")
         statusLabel.setWordWrap( st.
@@ -70,9 +70,9 @@ c_ Client(QDialog):
         getFortuneButton.setDefault( st.
 
         quitButton _ ?PB..("Quit")
-        buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(getFortuneButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...()
+        buttonBox.addButton(getFortuneButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         socket _ QLocalSocket()
 
@@ -137,7 +137,7 @@ c_ Client(QDialog):
         msg _ errors.g..(socketError,
                 "The following error occurred: %s." % socket.errorString())
         __ msg __ no. N..:
-            ?MB...information  "Fortune Client", msg)
+            ?MB...i..  "Fortune Client", msg)
 
         getFortuneButton.sE..( st.
 

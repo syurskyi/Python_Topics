@@ -48,7 +48,7 @@ ____ ?.?W.. ______ ?A.., ?MB..
 
 app _ ?A..(___.a..
 
-?MB...information(N.., "PyQt Designer Plugins",
+?MB...i..(N.., "PyQt Designer Plugins",
         "<p>This example will start Qt Designer when you click the <b>OK</b> "
         "button.</p>"
         "<p>Before doing so it sets the <tt>PYQTDESIGNERPATH</tt> environment "

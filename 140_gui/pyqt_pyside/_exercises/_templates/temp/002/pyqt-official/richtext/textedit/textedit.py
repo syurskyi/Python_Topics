@@ -53,7 +53,7 @@ ____ ?.?G.. ______ (?F.., QFontDatabase, QFontInfo, ?I.., ?KS..,
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         ?CB, ?FD.., QFontComboBox, ?MW.., ?M.., ?MB..,
         ?TE.., QToolBar)
-____ ?.QtPrintSupport ______ QPrintDialog, QPrinter, QPrintPreviewDialog
+____ ?.?PS.. ______ QPrintDialog, QPrinter, QPrintPreviewDialog
 
 ______ textedit_rc
 
@@ -68,7 +68,7 @@ c_ TextEdit ?MW..
     ___  -   fileName_None, parent_None):
         s__(TextEdit, self). - (parent)
 
-        setWindowIcon(?I..(':/images/logo.png'))
+        sWI..(?I..(':/images/logo.png'))
         setToolButtonStyle(__.ToolButtonFollowStyle)
         setupFileActions()
         setupEditActions()
@@ -414,7 +414,7 @@ c_ TextEdit ?MW..
         __ fileName.s_w_(':/'):
             r_ T..
 
-        ret _ ?MB...warning  "Application",
+        ret _ ?MB...w..  "Application",
                 "The document has been modified.\n"
                 "Do you want to save your changes?",
                 ?MB...Save | ?MB...Discard | ?MB...Cancel)

@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QByteArray, ?DS.., QIODevice, QMimeData,
         QPoint, __)
 ____ ?.?G.. ______ ?C.., QDrag, QPainter, ?P..
-____ ?.?W.. ______ ?A.., QFrame, ?HBL.., QLabel, ?W..
+____ ?.?W.. ______ ?A.., QFrame, ?HBL.., ?L.., ?W..
 
 ______ draggableicons_rc
 
@@ -58,19 +58,19 @@ c_ DragWidget(QFrame):
         setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
         setAcceptDrops( st.
 
-        boatIcon _ QLabel
+        boatIcon _ ?L..
         boatIcon.sP..(?P..(':/images/boat.png'))
         boatIcon.move(20, 20)
         boatIcon.s..
         boatIcon.setAttribute(__.WA_DeleteOnClose)
 
-        carIcon _ QLabel
+        carIcon _ ?L..
         carIcon.sP..(?P..(':/images/car.png'))
         carIcon.move(120, 20)
         carIcon.s..
         carIcon.setAttribute(__.WA_DeleteOnClose)
 
-        houseIcon _ QLabel
+        houseIcon _ ?L..
         houseIcon.sP..(?P..(':/images/house.png'))
         houseIcon.move(20, 120)
         houseIcon.s..
@@ -97,7 +97,7 @@ c_ DragWidget(QFrame):
             offset _ QPoint()
             dataStream >> pixmap >> offset
 
-            newIcon _ QLabel
+            newIcon _ ?L..
             newIcon.sP..(pixmap)
             newIcon.move(event.pos() - offset)
             newIcon.s..

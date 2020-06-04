@@ -47,7 +47,7 @@ ____ m__ ______ cos, pi, sin
 ____ ?.?C.. ______ ?S.., __
 ____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
         QPainterPath, ?P.., ?P..)
-____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
+____ ?.?W.. ______ (?A.., ?CB, QGridLayout, ?L..,
         ?SP.., SB.., ?W..)
 
 
@@ -183,7 +183,7 @@ c_ Window(?W..):
         fillRuleComboBox.aI..("Odd Even", __.OddEvenFill)
         fillRuleComboBox.aI..("Winding", __.WindingFill)
 
-        fillRuleLabel _ QLabel("Fill &Rule:")
+        fillRuleLabel _ ?L..("Fill &Rule:")
         fillRuleLabel.setBuddy(fillRuleComboBox)
 
         fillColor1ComboBox _ ?CB()
@@ -196,16 +196,16 @@ c_ Window(?W..):
         fillColor2ComboBox.sCI..(
                 fillColor2ComboBox.findText("cornsilk"))
 
-        fillGradientLabel _ QLabel("&Fill Gradient:")
+        fillGradientLabel _ ?L..("&Fill Gradient:")
         fillGradientLabel.setBuddy(fillColor1ComboBox)
 
-        fillToLabel _ QLabel("to")
+        fillToLabel _ ?L..("to")
         fillToLabel.sSP..(?SP...Fixed, ?SP...Fixed)
 
         penWidthSpinBox _ SB..()
         penWidthSpinBox.setRange(0, 20)
 
-        penWidthLabel _ QLabel("&Pen Width:")
+        penWidthLabel _ ?L..("&Pen Width:")
         penWidthLabel.setBuddy(penWidthSpinBox)
 
         penColorComboBox _ ?CB()
@@ -213,7 +213,7 @@ c_ Window(?W..):
         penColorComboBox.sCI..(
                 penColorComboBox.findText('darkslateblue'))
 
-        penColorLabel _ QLabel("Pen &Color:")
+        penColorLabel _ ?L..("Pen &Color:")
         penColorLabel.setBuddy(penColorComboBox)
 
         rotationAngleSpinBox _ SB..()
@@ -221,7 +221,7 @@ c_ Window(?W..):
         rotationAngleSpinBox.setWrapping( st.
         rotationAngleSpinBox.setSuffix(u'\N{DEGREE SIGN}')
 
-        rotationAngleLabel _ QLabel("&Rotation Angle:")
+        rotationAngleLabel _ ?L..("&Rotation Angle:")
         rotationAngleLabel.setBuddy(rotationAngleSpinBox)
 
         fillRuleComboBox.activated.c..(fillRuleChanged)
@@ -285,7 +285,7 @@ c_ Window(?W..):
             comboBox.aI..(name, name)
 
     ___ currentItemData  comboBox):
-        r_ comboBox.itemData(comboBox.currentIndex())
+        r_ comboBox.itemData(comboBox.cI..
 
 
 __ ______ __ ______

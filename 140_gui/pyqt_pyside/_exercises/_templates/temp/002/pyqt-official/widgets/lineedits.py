@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ QDoubleValidator, QIntValidator
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, ?GB..,
-        QLabel, QLineEdit, ?W..)
+        ?L.., QLineEdit, ?W..)
 
 
 c_ Window(?W..):
@@ -54,7 +54,7 @@ c_ Window(?W..):
 
         echoGroup _ ?GB..("Echo")
 
-        echoLabel _ QLabel("Mode:")
+        echoLabel _ ?L..("Mode:")
         echoComboBox _ ?CB()
         echoComboBox.aI..("Normal")
         echoComboBox.aI..("Password")
@@ -66,7 +66,7 @@ c_ Window(?W..):
 
         validatorGroup _ ?GB..("Validator")
 
-        validatorLabel _ QLabel("Type:")
+        validatorLabel _ ?L..("Type:")
         validatorComboBox _ ?CB()
         validatorComboBox.aI..("No validator")
         validatorComboBox.aI..("Integer validator")
@@ -76,7 +76,7 @@ c_ Window(?W..):
 
         alignmentGroup _ ?GB..("Alignment")
 
-        alignmentLabel _ QLabel("Type:")
+        alignmentLabel _ ?L..("Type:")
         alignmentComboBox _ ?CB()
         alignmentComboBox.aI..("Left")
         alignmentComboBox.aI..("Centered")
@@ -86,7 +86,7 @@ c_ Window(?W..):
 
         inputMaskGroup _ ?GB..("Input mask")
 
-        inputMaskLabel _ QLabel("Type:")
+        inputMaskLabel _ ?L..("Type:")
         inputMaskComboBox _ ?CB()
         inputMaskComboBox.aI..("No mask")
         inputMaskComboBox.aI..("Phone number")
@@ -97,7 +97,7 @@ c_ Window(?W..):
 
         accessGroup _ ?GB..("Access")
 
-        accessLabel _ QLabel("Read-only:")
+        accessLabel _ ?L..("Read-only:")
         accessComboBox _ ?CB()
         accessComboBox.aI..("False")
         accessComboBox.aI..("True")

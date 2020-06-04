@@ -24,7 +24,7 @@ c_ Ui_MainWindow o..
         horizontalLayout.aW..(calendar)
         verticalLayout _ ?W...?VBL..
         verticalLayout.setObjectName("verticalLayout")
-        label _ ?W...QLabel(MainWindow)
+        label _ ?W...?L..(MainWindow)
         label.setObjectName("label")
         verticalLayout.aW..(label)
         event_list _ ?W...QListWidget(MainWindow)

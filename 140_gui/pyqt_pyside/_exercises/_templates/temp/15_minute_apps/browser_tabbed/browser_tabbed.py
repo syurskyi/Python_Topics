@@ -1,25 +1,25 @@
 ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.?G.. ______ *
-____ ?.QtWebEngineWidgets ______ *
-____ ?.QtPrintSupport ______ *
+____ ?.?WEW.. ______ *
+____ ?.?PS.. ______ *
 
 ______ __
 ______ ___
 
 
-c_ AboutDialog(QDialog):
+c_ AboutDialog(?D..):
     ___  -   $ $$
         s__(AboutDialog, self). - ($ $$)
 
-        QBtn _ QDialogButtonBox.Ok  # No cancel
-        buttonBox _ QDialogButtonBox(QBtn)
-        buttonBox.accepted.c__(accept)
-        buttonBox.rejected.c__(reject)
+        QBtn _ ?DBB....Ok  # No cancel
+        buttonBox _ ?DBB...(QBtn)
+        buttonBox.a___.c__(accept)
+        buttonBox.r___.c__(reject)
 
         layout _ ?VBL..()
 
-        title _ QLabel("Mozarella Ashbadger")
+        title _ ?L..("Mozarella Ashbadger")
         font _ title.font()
         font.sPS..(20)
         title.sF..(font)
@@ -30,8 +30,8 @@ c_ AboutDialog(QDialog):
         logo.sP..(?P..(__.pa__.join('images', 'ma-icon-128.png')))
         layout.aW..(logo)
 
-        layout.aW..(QLabel("Version 23.35.211.233232"))
-        layout.aW..(QLabel("Copyright 2015 Mozarella Inc."))
+        layout.aW..(?L..("Version 23.35.211.233232"))
+        layout.aW..(?L..("Copyright 2015 Mozarella Inc."))
 
         ___ i __ ra..(0, layout.count()):
             layout.itemAt(i).setAlignment(__.AlignHCenter)
@@ -54,30 +54,30 @@ c_ MainWindow(?MW..):
 
         setCentralWidget(tabs)
 
-        status _ QStatusBar()
-        setStatusBar(status)
+        status _ ?SB..
+        sSB..(status)
 
         navtb _ QToolBar("Navigation")
         navtb.setIconSize(?S..(16, 16))
         aTB..(navtb)
 
         back_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-180.png')), "Back", self)
-        back_btn.setStatusTip("Back to previous page")
+        back_btn.sST..("Back to previous page")
         back_btn.t___.c__(l___: tabs.currentWidget().back())
         navtb.aA..(back_btn)
 
         next_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-000.png')), "Forward", self)
-        next_btn.setStatusTip("Forward to next page")
+        next_btn.sST..("Forward to next page")
         next_btn.t___.c__(l___: tabs.currentWidget().forward())
         navtb.aA..(next_btn)
 
         reload_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-circle-315.png')), "Reload", self)
-        reload_btn.setStatusTip("Reload page")
+        reload_btn.sST..("Reload page")
         reload_btn.t___.c__(l___: tabs.currentWidget().reload())
         navtb.aA..(reload_btn)
 
         home_btn _ ?A..(?I..(__.pa__.join('images', 'home.png')), "Home", self)
-        home_btn.setStatusTip("Go home")
+        home_btn.sST..("Go home")
         home_btn.t___.c__(navigate_home)
         navtb.aA..(home_btn)
 
@@ -87,50 +87,50 @@ c_ MainWindow(?MW..):
         httpsicon.sP..(?P..(__.pa__.join('images', 'lock-nossl.png')))
         navtb.aW..(httpsicon)
 
-        urlbar _ QLineEdit()
+        urlbar _ ?LE..
         urlbar.rP__.c__(navigate_to_url)
         navtb.aW..(urlbar)
 
         stop_btn _ ?A..(?I..(__.pa__.join('images', 'cross-circle.png')), "Stop", self)
-        stop_btn.setStatusTip("Stop loading current page")
+        stop_btn.sST..("Stop loading current page")
         stop_btn.t___.c__(l___: tabs.currentWidget().stop())
         navtb.aA..(stop_btn)
 
         # Uncomment to disable native menubar on Mac
         # self.menuBar().setNativeMenuBar(False)
 
-        file_menu _ menuBar().aM..("&File")
+        file_menu _ mB...aM..("&File")
 
         new_tab_action _ ?A..(?I..(__.pa__.join('images', 'ui-tab--plus.png')), "New Tab", self)
-        new_tab_action.setStatusTip("Open a new tab")
+        new_tab_action.sST..("Open a new tab")
         new_tab_action.t___.c__(l___ _: add_new_tab())
         file_menu.aA..(new_tab_action)
 
         open_file_action _ ?A..(?I..(__.pa__.join('images', 'disk--arrow.png')), "Open file...", self)
-        open_file_action.setStatusTip("Open from file")
+        open_file_action.sST..("Open from file")
         open_file_action.t___.c__(open_file)
         file_menu.aA..(open_file_action)
 
         save_file_action _ ?A..(?I..(__.pa__.join('images', 'disk--pencil.png')), "Save Page As...", self)
-        save_file_action.setStatusTip("Save current page to file")
+        save_file_action.sST..("Save current page to file")
         save_file_action.t___.c__(save_file)
         file_menu.aA..(save_file_action)
 
         print_action _ ?A..(?I..(__.pa__.join('images', 'printer.png')), "Print...", self)
-        print_action.setStatusTip("Print current page")
+        print_action.sST..("Print current page")
         print_action.t___.c__(print_page)
         file_menu.aA..(print_action)
 
-        help_menu _ menuBar().aM..("&Help")
+        help_menu _ mB...aM..("&Help")
 
         about_action _ ?A..(?I..(__.pa__.join('images', 'question.png')), "About Mozarella Ashbadger", self)
-        about_action.setStatusTip("Find out more about Mozarella Ashbadger")  # Hungry!
+        about_action.sST..("Find out more about Mozarella Ashbadger")  # Hungry!
         about_action.t___.c__(about)
         help_menu.aA..(about_action)
 
         navigate_mozarella_action _ ?A..(?I..(__.pa__.join('images', 'lifebuoy.png')),
                                             "Mozarella Ashbadger Homepage", self)
-        navigate_mozarella_action.setStatusTip("Go to Mozarella Ashbadger Homepage")
+        navigate_mozarella_action.sST..("Go to Mozarella Ashbadger Homepage")
         navigate_mozarella_action.t___.c__(navigate_mozarella)
         help_menu.aA..(navigate_mozarella_action)
 
@@ -139,7 +139,7 @@ c_ MainWindow(?MW..):
         s..
 
         sWT..("Mozarella Ashbadger")
-        setWindowIcon(?I..(__.pa__.join('images', 'ma-icon-64.png')))
+        sWI..(?I..(__.pa__.join('images', 'ma-icon-64.png')))
 
     ___ add_new_tab  qurl_None, label_"Blank"):
 

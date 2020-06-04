@@ -40,13 +40,13 @@
 
 
 ____ ?.?C.. ______ pyqtSlot, QFile, QRegExp, __, QTextStream
-____ ?.?W.. ______ (?A.., QDialog, ?FD.., ?MB..,
+____ ?.?W.. ______ (?A.., ?D.., ?FD.., ?MB..,
         ?SF..)
 
 ____ ui_stylesheeteditor ______ Ui_StyleSheetEditor
 
 
-c_ StyleSheetEditor(QDialog):
+c_ StyleSheetEditor(?D..):
     ___  -   parent_None):
         s__(StyleSheetEditor, self). - (parent)
 
@@ -111,5 +111,5 @@ c_ StyleSheetEditor(QDialog):
         __ file.o..(QFile.WriteOnly):
             QTextStream(file) << styleSheet
         ____
-            ?MB...information  "Unable to open file",
+            ?MB...i..  "Unable to open file",
                     file.errorString())

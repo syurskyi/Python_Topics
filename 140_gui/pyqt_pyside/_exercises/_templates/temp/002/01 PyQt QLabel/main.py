@@ -1,5 +1,5 @@
 ____ ?.?W.. ______ *
 app _ ?
-label _ QLabel('Hello World!')
+label _ ?L..('Hello World!')
 label.s..
 app.e..

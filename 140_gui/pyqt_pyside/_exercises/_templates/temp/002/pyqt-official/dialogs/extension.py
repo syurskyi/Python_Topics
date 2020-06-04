@@ -43,16 +43,16 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QGridLayout, ?HBL.., QLabel, QLayout, QLineEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, ?D..,
+        ?DBB..., QGridLayout, ?HBL.., ?L.., QLayout, QLineEdit,
         ?PB.., ?VBL.., ?W..)
 
 
-c_ FindDialog(QDialog):
+c_ FindDialog(?D..):
     ___  -   parent_None):
         s__(FindDialog, self). - (parent)
 
-        label _ QLabel("Find &what:")
+        label _ ?L..("Find &what:")
         lineEdit _ ?LE..
         label.setBuddy(lineEdit)
 
@@ -73,9 +73,9 @@ c_ FindDialog(QDialog):
         backwardCheckBox _ QCheckBox("Search &backward")
         searchSelectionCheckBox _ QCheckBox("Search se&lection")
 
-        buttonBox _ QDialogButtonBox(__.Vertical)
-        buttonBox.addButton(findButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(moreButton, QDialogButtonBox.ActionRole)
+        buttonBox _ ?DBB...(__.Vertical)
+        buttonBox.addButton(findButton, ?DBB....ActionRole)
+        buttonBox.addButton(moreButton, ?DBB....ActionRole)
 
         moreButton.t__.c..(extension.setVisible)
 

@@ -44,13 +44,13 @@
 
 ____ ?.?C.. ______ ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
-        QDial, QDialog, QGridLayout, ?GB.., ?HBL.., QLabel, QLineEdit,
+        QDial, ?D.., QGridLayout, ?GB.., ?HBL.., ?L.., QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, ?SP..,
         ?S.., SB.., ?SF.., ?TW.., ?TW.., ?TE..,
         ?VBL.., ?W..)
 
 
-c_ WidgetGallery(QDialog):
+c_ WidgetGallery(?D..):
     ___  -   parent_None):
         s__(WidgetGallery, self). - (parent)
 
@@ -59,7 +59,7 @@ c_ WidgetGallery(QDialog):
         styleComboBox _ ?CB()
         styleComboBox.aI..(?SF...keys())
 
-        styleLabel _ QLabel("&Style:")
+        styleLabel _ ?L..("&Style:")
         styleLabel.setBuddy(styleComboBox)
 
         useStylePaletteCheckBox _ QCheckBox("&Use style's standard palette")

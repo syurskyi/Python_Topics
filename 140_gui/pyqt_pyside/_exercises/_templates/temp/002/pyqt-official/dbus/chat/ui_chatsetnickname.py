@@ -26,7 +26,7 @@ c_ Ui_NicknameDialog o..
         vboxlayout1.sCM..(0, 0, 0, 0)
         vboxlayout1.setSpacing(6)
         vboxlayout1.setObjectName("vboxlayout1")
-        label _ ?W...QLabel(NicknameDialog)
+        label _ ?W...?L..(NicknameDialog)
         sizePolicy _ ?W...?SP..(?W...?SP...Policy(1), ?W...?SP...Policy(1))
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)

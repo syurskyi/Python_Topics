@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
 ____ ?.?G.. ______ ?I.., QImage, ?P.., ?P..
 ____ ?.?W.. ______ (?AIV.., ?A.., QActionGroup,
         ?A.., ?CB, ?FD.., QFrame, QGridLayout, ?GB..,
-        ?HBL.., ?HV.., QItemDelegate, QLabel, ?MW..,
+        ?HBL.., ?HV.., QItemDelegate, ?L.., ?MW..,
         ?MB.., QRadioButton, ?SP.., SB.., ?S..,
         ?SF.., ?TW.., ?TWI.., ?VBL.., ?W..)
 
@@ -143,7 +143,7 @@ c_ IconPreviewArea(?W..):
             updatePixmapLabels()
 
     ___ createHeaderLabel  t__):
-        label _ QLabel("<b>%s</b>" % t__)
+        label _ ?L..("<b>%s</b>" % t__)
         label.setAlignment(__.AlignCenter)
         r_ label
 

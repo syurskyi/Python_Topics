@@ -225,7 +225,7 @@ c_ Colors o..
             ____ s.s_w_("-fps"):
                 cls.fps _ in.(parseFloat(s, "-fps"))
             ____ s.s_w_("-h") or s.s_w_("-help"):
-                ?MB...warning(N.., "Arguments",
+                ?MB...w..(N.., "Arguments",
                         "Usage: qtdemo.py [-verbose] [-no-adapt] "
                         "[-fullscreen] [-ticker[0|1]] "
                         "[-animations[0|1]] [-no-blending] [-no-sync] "
@@ -271,7 +271,7 @@ ___ parseFloat(argument, name):
 
 ___ parseText(argument, name):
     __ le.(name) __ le.(argument):
-        ?MB...warning(N.., "Arguments",
+        ?MB...w..(N.., "Arguments",
                 "No argument number found for %s. Remember to put name and "
                 "value adjacent! (e.g. -fps100)")
         ___.e..(0)

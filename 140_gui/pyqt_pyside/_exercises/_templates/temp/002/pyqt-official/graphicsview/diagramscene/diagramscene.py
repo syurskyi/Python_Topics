@@ -51,7 +51,7 @@ ____ ?.?G.. ______ (?B.., ?C.., ?F.., ?I.., QIntValidator, QPainter,
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
-        ?HBL.., QLabel, ?MW.., ?M.., ?MB.., ?SP..,
+        ?HBL.., ?L.., ?MW.., ?M.., ?MB.., ?SP..,
         QToolBox, QToolButton, ?W..)
 
 ______ diagramscene_rc
@@ -578,7 +578,7 @@ c_ MainWindow ?MW..
 
         textLayout _ QGridLayout()
         textLayout.aW..(textButton, 0, 0, __.AlignHCenter)
-        textLayout.aW..(QLabel("Text"), 1, 0, __.AlignCenter)
+        textLayout.aW..(?L..("Text"), 1, 0, __.AlignCenter)
         textWidget _ ?W..
         textWidget.sL..(textLayout)
         layout.aW..(textWidget, 1, 1)
@@ -756,7 +756,7 @@ c_ MainWindow ?MW..
 
         layout _ QGridLayout()
         layout.aW..(button, 0, 0, __.AlignHCenter)
-        layout.aW..(QLabel(t__), 1, 0, __.AlignCenter)
+        layout.aW..(?L..(t__), 1, 0, __.AlignCenter)
 
         widget _ ?W..
         widget.sL..(layout)
@@ -775,7 +775,7 @@ c_ MainWindow ?MW..
 
         layout _ QGridLayout()
         layout.aW..(button, 0, 0, __.AlignHCenter)
-        layout.aW..(QLabel(t__), 1, 0, __.AlignCenter)
+        layout.aW..(?L..(t__), 1, 0, __.AlignCenter)
 
         widget _ ?W..
         widget.sL..(layout)

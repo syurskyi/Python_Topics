@@ -43,12 +43,12 @@
 
 
 ____ ?.?C.. ______ QByteArray, __
-____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
+____ ?.?W.. ______ (?A.., ?D.., ?DBB..., ?L..,
         ?MB.., QProgressBar, ?PB.., ?VBL..)
 ____ ?.?N.. ______ ?HA.., QTcpServer, QTcpSocket
 
 
-c_ Dialog(QDialog):
+c_ Dialog(?D..):
     TotalBytes _ 50 * 1024 * 1024
     PayloadSize _ 65536
 
@@ -62,16 +62,16 @@ c_ Dialog(QDialog):
         bytesReceived _ 0
 
         clientProgressBar _ QProgressBar()
-        clientStatusLabel _ QLabel("Client ready")
+        clientStatusLabel _ ?L..("Client ready")
         serverProgressBar _ QProgressBar()
-        serverStatusLabel _ QLabel("Server ready")
+        serverStatusLabel _ ?L..("Server ready")
 
         startButton _ ?PB..("&Start")
         quitButton _ ?PB..("&Quit")
 
-        buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(startButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...()
+        buttonBox.addButton(startButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         startButton.c__.c..(start)
         quitButton.c__.c..(close)
@@ -151,7 +151,7 @@ c_ Dialog(QDialog):
         __ socketError __ QTcpSocket.RemoteHostClosedError:
             r_
 
-        ?MB...information  "Network error",
+        ?MB...i..  "Network error",
                 "The following error occured: %s." % tcpClient.errorString())
 
         tcpClient.c..

@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFileInfo, ?S.., __
 ____ ?.?G.. ______ QMovie, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        ?HBL.., QLabel, ?SP.., ?S.., SB.., ?S..,
+        ?HBL.., ?L.., ?SP.., ?S.., SB.., ?S..,
         QToolButton, ?VBL.., ?W..)
 
 
@@ -56,7 +56,7 @@ c_ MoviePlayer(?W..):
         movie _ QMovie
         movie.setCacheMode(QMovie.CacheAll)
 
-        movieLabel _ QLabel("No movie loaded")
+        movieLabel _ ?L..("No movie loaded")
         movieLabel.setAlignment(__.AlignCenter)
         movieLabel.sSP..(?SP...Ignored, ?SP...Ignored)
         movieLabel.setBackgroundRole(?P...Dark)
@@ -137,13 +137,13 @@ c_ MoviePlayer(?W..):
     ___ createControls
         fitCheckBox _ QCheckBox("Fit to Window")
 
-        frameLabel _ QLabel("Current frame:")
+        frameLabel _ ?L..("Current frame:")
 
         frameSlider _ ?S..(__.H..)
         frameSlider.setTickPosition(?S...TicksBelow)
         frameSlider.setTickInterval(10)
 
-        speedLabel _ QLabel("Speed:")
+        speedLabel _ ?L..("Speed:")
 
         speedSpinBox _ SB..()
         speedSpinBox.setRange(1, 9999)

@@ -139,13 +139,13 @@ c_ MainWindow(qtw.?MW..):
 
     ___ game_won  player):
         """Display the winner and start a new game"""
-        qtw.?MB...information(
+        qtw.?MB...i..(
             N.., 'Game Won', f'Player {player} Won!')
         start_game()
 
     ___ game_draw 
         """Display the lack of a winner and start a new game"""
-        qtw.?MB...information(
+        qtw.?MB...i..(
             N.., 'Game Over', 'Game Over.  Nobody Won...')
         start_game()
 

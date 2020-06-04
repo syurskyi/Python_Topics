@@ -1,25 +1,25 @@
 ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.?G.. ______ *
-____ ?.QtWebEngineWidgets ______ *
-____ ?.QtPrintSupport ______ *
+____ ?.?WEW.. ______ *
+____ ?.?PS.. ______ *
 
 ______ __
 ______ ___
 
 
-c_ AboutDialog(QDialog):
+c_ AboutDialog(?D..):
     ___  -   $ $$
         s__(AboutDialog, self). - ($ $$)
 
-        QBtn _ QDialogButtonBox.Ok  # No cancel
-        buttonBox _ QDialogButtonBox(QBtn)
-        buttonBox.accepted.c__(accept)
-        buttonBox.rejected.c__(reject)
+        QBtn _ ?DBB....Ok  # No cancel
+        buttonBox _ ?DBB...(QBtn)
+        buttonBox.a___.c__(accept)
+        buttonBox.r___.c__(reject)
 
         layout _ ?VBL..()
 
-        title _ QLabel("MooseAche")
+        title _ ?L..("MooseAche")
         font _ title.font()
         font.sPS..(20)
         title.sF..(font)
@@ -30,8 +30,8 @@ c_ AboutDialog(QDialog):
         logo.sP..(?P..(__.pa__.join('images', 'ma-icon-128.png')))
         layout.aW..(logo)
 
-        layout.aW..(QLabel("Version 23.35.211.233232"))
-        layout.aW..(QLabel("Copyright 2015 MooseAche Inc."))
+        layout.aW..(?L..("Version 23.35.211.233232"))
+        layout.aW..(?L..("Copyright 2015 MooseAche Inc."))
 
         ___ i __ ra..(0, layout.count()):
             layout.itemAt(i).setAlignment(__.AlignHCenter)
@@ -52,30 +52,30 @@ c_ MainWindow(?MW..):
         browser.loadFinished.c__(update_title)
         setCentralWidget(browser)
 
-        status _ QStatusBar()
-        setStatusBar(status)
+        status _ ?SB..
+        sSB..(status)
 
         navtb _ QToolBar("Navigation")
         navtb.setIconSize(?S..(16, 16))
         aTB..(navtb)
 
         back_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-180.png')), "Back", self)
-        back_btn.setStatusTip("Back to previous page")
+        back_btn.sST..("Back to previous page")
         back_btn.t___.c__(browser.back)
         navtb.aA..(back_btn)
 
         next_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-000.png')), "Forward", self)
-        next_btn.setStatusTip("Forward to next page")
+        next_btn.sST..("Forward to next page")
         next_btn.t___.c__(browser.forward)
         navtb.aA..(next_btn)
 
         reload_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-circle-315.png')), "Reload", self)
-        reload_btn.setStatusTip("Reload page")
+        reload_btn.sST..("Reload page")
         reload_btn.t___.c__(browser.reload)
         navtb.aA..(reload_btn)
 
         home_btn _ ?A..(?I..(__.pa__.join('images', 'home.png')), "Home", self)
-        home_btn.setStatusTip("Go home")
+        home_btn.sST..("Go home")
         home_btn.t___.c__(navigate_home)
         navtb.aA..(home_btn)
 
@@ -85,50 +85,50 @@ c_ MainWindow(?MW..):
         httpsicon.sP..(?P..(__.pa__.join('images', 'lock-nossl.png')))
         navtb.aW..(httpsicon)
 
-        urlbar _ QLineEdit()
+        urlbar _ ?LE..
         urlbar.rP__.c__(navigate_to_url)
         navtb.aW..(urlbar)
 
         stop_btn _ ?A..(?I..(__.pa__.join('images', 'cross-circle.png')), "Stop", self)
-        stop_btn.setStatusTip("Stop loading current page")
+        stop_btn.sST..("Stop loading current page")
         stop_btn.t___.c__(browser.stop)
         navtb.aA..(stop_btn)
 
         # Uncomment to disable native menubar on Mac
         # self.menuBar().setNativeMenuBar(False)
 
-        file_menu _ menuBar().aM..("&File")
+        file_menu _ mB...aM..("&File")
 
         open_file_action _ ?A..(?I..(__.pa__.join('images', 'disk--arrow.png')), "Open file...", self)
-        open_file_action.setStatusTip("Open from file")
+        open_file_action.sST..("Open from file")
         open_file_action.t___.c__(open_file)
         file_menu.aA..(open_file_action)
 
         save_file_action _ ?A..(?I..(__.pa__.join('images', 'disk--pencil.png')), "Save Page As...", self)
-        save_file_action.setStatusTip("Save current page to file")
+        save_file_action.sST..("Save current page to file")
         save_file_action.t___.c__(save_file)
         file_menu.aA..(save_file_action)
 
         print_action _ ?A..(?I..(__.pa__.join('images', 'printer.png')), "Print...", self)
-        print_action.setStatusTip("Print current page")
+        print_action.sST..("Print current page")
         print_action.t___.c__(print_page)
         file_menu.aA..(print_action)
 
-        help_menu _ menuBar().aM..("&Help")
+        help_menu _ mB...aM..("&Help")
 
         about_action _ ?A..(?I..(__.pa__.join('images', 'question.png')), "About MooseAche", self)
-        about_action.setStatusTip("Find out more about MooseAche")  # Hungry!
+        about_action.sST..("Find out more about MooseAche")  # Hungry!
         about_action.t___.c__(about)
         help_menu.aA..(about_action)
 
         navigate_mozarella_action _ ?A..(?I..(__.pa__.join('images', 'lifebuoy.png')), "MooseAche Homepage", self)
-        navigate_mozarella_action.setStatusTip("Go to MooseAche Homepage")
+        navigate_mozarella_action.sST..("Go to MooseAche Homepage")
         navigate_mozarella_action.t___.c__(navigate_mozarella)
         help_menu.aA..(navigate_mozarella_action)
 
         s..
 
-        setWindowIcon(?I..(__.pa__.join('images', 'ma-icon-64.png')))
+        sWI..(?I..(__.pa__.join('images', 'ma-icon-64.png')))
 
     ___ update_title
         title _ browser.page().title()

@@ -43,8 +43,8 @@
 
 
 ____ ?.?C.. ______ QFile, QRegExp, QTextCodec, QTextStream
-____ ?.?W.. ______ (?A.., ?A.., ?CB, QDialog,
-        QDialogButtonBox, ?FD.., QGridLayout, QLabel, ?MW.., ?M..,
+____ ?.?W.. ______ (?A.., ?A.., ?CB, ?D..,
+        ?DBB..., ?FD.., QGridLayout, ?L.., ?MW.., ?M..,
         ?MB.., ?TE..)
 
 
@@ -85,7 +85,7 @@ c_ MainWindow ?MW..
         __ fileName:
             inFile _ QFile(fileName)
             __ no. inFile.o..(QFile.ReadOnly):
-                ?MB...warning  "Codecs",
+                ?MB...w..  "Codecs",
                         "Cannot read file %s:\n%s" % (fileName, inFile.errorString()))
                 r_
 
@@ -100,7 +100,7 @@ c_ MainWindow ?MW..
         __ fileName:
             outFile _ QFile(fileName)
             __ no. outFile.o..(QFile.WriteOnly|QFile.Text):
-                ?MB...warning  "Codecs",
+                ?MB...w..  "Codecs",
                         "Cannot write file %s:\n%s" % (fileName, outFile.errorString()))
                 r_
 
@@ -191,23 +191,23 @@ c_ MainWindow ?MW..
         mB.. .aM..(helpMenu)
 
 
-c_ PreviewForm(QDialog):
+c_ PreviewForm(?D..):
     ___  -   parent):
         s__(PreviewForm, self). - (parent)
 
         encodingComboBox _ ?CB()
-        encodingLabel _ QLabel("&Encoding:")
+        encodingLabel _ ?L..("&Encoding:")
         encodingLabel.setBuddy(encodingComboBox)
 
         textEdit _ ?TE..()
         textEdit.setLineWrapMode(?TE...NoWrap)
         textEdit.sRO..( st.
 
-        buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttonBox _ ?DBB...(?DBB....Ok | ?DBB....Cancel)
 
         encodingComboBox.activated.c..(updateTextEdit)
-        buttonBox.accepted.c..(accept)
-        buttonBox.rejected.c..(reject)
+        buttonBox.a___.c..(accept)
+        buttonBox.r___.c..(reject)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(encodingLabel, 0, 0)
@@ -232,7 +232,7 @@ c_ PreviewForm(QDialog):
         r_ decodedStr
 
     ___ updateTextEdit
-        mib _ encodingComboBox.itemData(encodingComboBox.currentIndex())
+        mib _ encodingComboBox.itemData(encodingComboBox.cI..
         codec _ QTextCodec.codecForMib(mib)
 
         data _ QTextStream(encodedData)

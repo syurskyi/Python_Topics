@@ -48,8 +48,8 @@ ____ ?.?C.. ______ (QByteArray, ?D.., ?DT__, QEvent, QPoint, QRect,
         QRegExp, QSettings, ?S.., __, ?T.., ?T..)
 ____ ?.?G.. ______ ?C.., ?I.., QRegExpValidator, ?V..
 ____ ?.?W.. ______ (?AIV.., ?A.., ?A..,
-        ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
-        ?GB.., ?HV.., QInputDialog, QItemDelegate, QLabel, QLineEdit,
+        ?CB, ?D.., ?DBB..., ?FD.., QGridLayout,
+        ?GB.., ?HV.., QInputDialog, QItemDelegate, ?L.., QLineEdit,
         ?MW.., ?MB.., ?S.., QStyleOptionViewItem, ?TW..,
         ?TWI.., QTreeWidget, ?TWI.., ?VBL..)
 
@@ -192,7 +192,7 @@ c_ MainWindow ?MW..
         sWT..("%s - Settings Editor" % niceName)
 
 
-c_ LocationDialog(QDialog):
+c_ LocationDialog(?D..):
     ___  -   parent_None):
         s__(LocationDialog, self). - (parent)
 
@@ -217,16 +217,16 @@ c_ LocationDialog(QDialog):
         applicationComboBox.sE..( st.
         applicationComboBox.sCI..(3)
 
-        formatLabel _ QLabel("&Format:")
+        formatLabel _ ?L..("&Format:")
         formatLabel.setBuddy(formatComboBox)
 
-        scopeLabel _ QLabel("&Scope:")
+        scopeLabel _ ?L..("&Scope:")
         scopeLabel.setBuddy(scopeComboBox)
 
-        organizationLabel _ QLabel("&Organization:")
+        organizationLabel _ ?L..("&Organization:")
         organizationLabel.setBuddy(organizationComboBox)
 
-        applicationLabel _ QLabel("&Application:")
+        applicationLabel _ ?L..("&Application:")
         applicationLabel.setBuddy(applicationComboBox)
 
         locationsGroupBox _ ?GB..("Setting Locations")
@@ -240,14 +240,14 @@ c_ LocationDialog(QDialog):
         locationsTable.hH.. .sSRM..(0, ?HV...Stretch)
         locationsTable.hH.. .resizeSection(1, 180)
 
-        buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttonBox _ ?DBB...(?DBB....Ok | ?DBB....Cancel)
 
         formatComboBox.activated.c..(updateLocationsTable)
         scopeComboBox.activated.c..(updateLocationsTable)
         organizationComboBox.lineEdit().eF__.c..(updateLocationsTable)
         applicationComboBox.lineEdit().eF__.c..(updateLocationsTable)
-        buttonBox.accepted.c..(accept)
-        buttonBox.rejected.c..(reject)
+        buttonBox.a___.c..(accept)
+        buttonBox.r___.c..(reject)
 
         locationsLayout _ ?VBL..
         locationsLayout.aW..(locationsTable)
@@ -332,7 +332,7 @@ c_ LocationDialog(QDialog):
                         disable _ F..
                     ____
                         item1.sT..("Read-only")
-                    buttonBox.button(QDialogButtonBox.Ok).sD..(disable)
+                    buttonBox.button(?DBB....Ok).sD..(disable)
                 ____
                     item1.sT..("Read-only fallback")
 

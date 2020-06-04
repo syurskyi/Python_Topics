@@ -48,7 +48,7 @@ ______ m__
 ____ ?.?C.. ______ QPointF, QRect, QRectF, __, ?T..
 ____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,
         ?P.., QSurfaceFormat)
-____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
+____ ?.?W.. ______ (?A.., QGridLayout, ?L.., QOpenGLWidget,
         ?W..)
 
 
@@ -141,9 +141,9 @@ c_ Window(?W..):
         helper _ Helper()
         native _ Widget(helper, self)
         openGL _ GLWidget(helper, self)
-        nativeLabel _ QLabel("Native")
+        nativeLabel _ ?L..("Native")
         nativeLabel.setAlignment(__.AlignHCenter)
-        openGLLabel _ QLabel("OpenGL")
+        openGLLabel _ ?L..("OpenGL")
         openGLLabel.setAlignment(__.AlignHCenter)
 
         layout _ QGridLayout()

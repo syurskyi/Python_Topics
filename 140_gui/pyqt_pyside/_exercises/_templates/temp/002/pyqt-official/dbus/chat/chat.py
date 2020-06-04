@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ pS.., pyqtSlot, Q_CLASSINFO
-____ ?.?W.. ______ ?A.., QDialog, ?MW.., ?MB..
+____ ?.?W.. ______ ?A.., ?D.., ?MW.., ?MB..
 ____ ?.QtDBus ______ (QDBusAbstractAdaptor, QDBusAbstractInterface,
         QDBusConnection, QDBusMessage)
 
@@ -162,7 +162,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
     ___ changeNickname 
         dialog _ NicknameDialog
 
-        __ dialog.e.. __ QDialog.Accepted:
+        __ dialog.e.. __ ?D...Accepted:
             old _ m_nickname
             m_nickname _ dialog.nickname.t__().s..
             action.e..(old, "is now known as %s" % m_nickname)
@@ -176,7 +176,7 @@ c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
         action.e..(m_nickname, "leaves the chat")
 
 
-c_ NicknameDialog(QDialog, Ui_NicknameDialog):
+c_ NicknameDialog(?D.., Ui_NicknameDialog):
 
     ___  -   parent_None):
         s__(NicknameDialog, self). - (parent)

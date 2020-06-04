@@ -43,7 +43,7 @@ c_ PythonConsoleWidget(QLineEdit):
         history _   # list
         current _ -1
         
-        rP__.c..(execute)
+        rP__.c..(e..)
     
     ___ keyReleaseEvent  event):
     
@@ -67,7 +67,7 @@ c_ PythonConsoleWidget(QLineEdit):
                 
                 event.accept()
     
-    ___ execute 
+    ___ e..
     
         # Define this here to give users something to look at.
         qApp _ ?A...i.. 

@@ -45,7 +45,7 @@
 
 ____ ?.?C.. ______ (pS.., QAbstractListModel, ?D.., QLibraryInfo,
         QModelIndex, __)
-____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
+____ ?.?W.. ______ (?A.., QGridLayout, ?L.., QLineEdit,
         ?LV.., ?SP.., QTextBrowser, ?W..)
 
 
@@ -112,7 +112,7 @@ c_ Window(?W..):
         model _ FileListModel
         model.setDirPath(QLibraryInfo.location(QLibraryInfo.PrefixPath))
 
-        label _ QLabel("Directory")
+        label _ ?L..("Directory")
         lineEdit _ ?LE..
         label.setBuddy(lineEdit)
 

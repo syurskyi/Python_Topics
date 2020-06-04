@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ (?B.., QConicalGradient, QLinearGradient, QPainter,
         QPainterPath, ?P.., ?P.., ?P.., QPolygon, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
-        QLabel, SB.., ?W..)
+        ?L.., SB.., ?W..)
 
 ______ basicdrawing_rc
 
@@ -188,14 +188,14 @@ c_ Window(?W..):
         shapeComboBox.aI..("Text", RenderArea.Text)
         shapeComboBox.aI..("Pixmap", RenderArea.Pixmap)
 
-        shapeLabel _ QLabel("&Shape:")
+        shapeLabel _ ?L..("&Shape:")
         shapeLabel.setBuddy(shapeComboBox)
 
         penWidthSpinBox _ SB..()
         penWidthSpinBox.setRange(0, 20)
         penWidthSpinBox.setSpecialValueText("0 (cosmetic pen)")
 
-        penWidthLabel _ QLabel("Pen &Width:")
+        penWidthLabel _ ?L..("Pen &Width:")
         penWidthLabel.setBuddy(penWidthSpinBox)
 
         penStyleComboBox _ ?CB()
@@ -206,7 +206,7 @@ c_ Window(?W..):
         penStyleComboBox.aI..("Dash Dot Dot", __.DashDotDotLine)
         penStyleComboBox.aI..("None", __.NoPen)
 
-        penStyleLabel _ QLabel("&Pen Style:")
+        penStyleLabel _ ?L..("&Pen Style:")
         penStyleLabel.setBuddy(penStyleComboBox)
 
         penCapComboBox _ ?CB()
@@ -214,7 +214,7 @@ c_ Window(?W..):
         penCapComboBox.aI..("Square", __.SquareCap)
         penCapComboBox.aI..("Round", __.RoundCap)
 
-        penCapLabel _ QLabel("Pen &Cap:")
+        penCapLabel _ ?L..("Pen &Cap:")
         penCapLabel.setBuddy(penCapComboBox)
 
         penJoinComboBox _ ?CB()
@@ -222,7 +222,7 @@ c_ Window(?W..):
         penJoinComboBox.aI..("Bevel", __.BevelJoin)
         penJoinComboBox.aI..("Round", __.RoundJoin)
 
-        penJoinLabel _ QLabel("Pen &Join:")
+        penJoinLabel _ ?L..("Pen &Join:")
         penJoinLabel.setBuddy(penJoinComboBox)
 
         brushStyleComboBox _ ?CB()
@@ -249,10 +249,10 @@ c_ Window(?W..):
         brushStyleComboBox.aI..("Dense 7", __.Dense7Pattern)
         brushStyleComboBox.aI..("None", __.NoBrush)
 
-        brushStyleLabel _ QLabel("&Brush Style:")
+        brushStyleLabel _ ?L..("&Brush Style:")
         brushStyleLabel.setBuddy(brushStyleComboBox)
 
-        otherOptionsLabel _ QLabel("Other Options:")
+        otherOptionsLabel _ ?L..("Other Options:")
         antialiasingCheckBox _ QCheckBox("&Antialiasing")
         transformationsCheckBox _ QCheckBox("&Transformations")
 

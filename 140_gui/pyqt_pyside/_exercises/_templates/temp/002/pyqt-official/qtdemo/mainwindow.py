@@ -341,7 +341,7 @@ c_ MainWindow(QGraphicsView):
             s +_ ["no", "yes"][Colors.useLoop]
             s +_ "\nScreen sync: ";
             s +_ ["yes", "no"][Colors.noScreenSync]
-            ?MB...information(N.., "Current configuration", s)
+            ?MB...i..(N.., "Current configuration", s)
 
         s__(MainWindow, self).keyPressEvent(event)
 

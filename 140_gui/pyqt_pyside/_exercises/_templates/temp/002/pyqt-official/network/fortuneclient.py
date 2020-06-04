@@ -44,15 +44,15 @@
 
 ____ ?.?C.. ______ ?DS.., QSettings, ?T..
 ____ ?.?G.. ______ QIntValidator
-____ ?.?W.. ______ (?A.., ?CB, QDialog,
-        QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MB..,
+____ ?.?W.. ______ (?A.., ?CB, ?D..,
+        ?DBB..., QGridLayout, ?L.., QLineEdit, ?MB..,
         ?PB..)
 ____ ?.?N.. ______ (?AS.., QHostInfo, QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpSocket)
 
 
-c_ Client(QDialog):
+c_ Client(?D..):
     ___  -   parent_None):
         s__(Client, self). - (parent)
 
@@ -60,8 +60,8 @@ c_ Client(QDialog):
         blockSize _ 0
         currentFortune _ ''
 
-        hostLabel _ QLabel("&Server name:")
-        portLabel _ QLabel("S&erver port:")
+        hostLabel _ ?L..("&Server name:")
+        portLabel _ ?L..("S&erver port:")
 
         hostCombo _ ?CB()
         hostCombo.sE..( st.
@@ -93,7 +93,7 @@ c_ Client(QDialog):
         hostLabel.setBuddy(hostCombo)
         portLabel.setBuddy(portLineEdit)
 
-        statusLabel _ QLabel("This examples requires that you run "
+        statusLabel _ ?L..("This examples requires that you run "
                 "the Fortune Server example as well.")
 
         getFortuneButton _ ?PB..("Get Fortune")
@@ -102,9 +102,9 @@ c_ Client(QDialog):
 
         quitButton _ ?PB..("Quit")
 
-        buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(getFortuneButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...()
+        buttonBox.addButton(getFortuneButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         tcpSocket _ QTcpSocket
 
@@ -178,16 +178,16 @@ c_ Client(QDialog):
         __ socketError __ ?AS...RemoteHostClosedError:
             p..
         ____ socketError __ ?AS...HostNotFoundError:
-            ?MB...information  "Fortune Client",
+            ?MB...i..  "Fortune Client",
                     "The host was not found. Please check the host name and "
                     "port settings.")
         ____ socketError __ ?AS...ConnectionRefusedError:
-            ?MB...information  "Fortune Client",
+            ?MB...i..  "Fortune Client",
                     "The connection was refused by the peer. Make sure the "
                     "fortune server is running, and check that the host name "
                     "and port settings are correct.")
         ____
-            ?MB...information  "Fortune Client",
+            ?MB...i..  "Fortune Client",
                     "The following error occurred: %s." % tcpSocket.errorString())
 
         getFortuneButton.sE..( st.

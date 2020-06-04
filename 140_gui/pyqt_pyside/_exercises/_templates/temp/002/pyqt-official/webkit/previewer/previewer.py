@@ -121,7 +121,7 @@ c_ MainWindow ?MW..
         __ fileName:
             fd _ QFile(fileName)
             __ no. fd.o..(QIODevice.ReadOnly):
-                ?MB...information  "Unable to open file",
+                ?MB...i..  "Unable to open file",
                         fd.errorString())
                 r_
 
@@ -145,7 +145,7 @@ c_ MainWindow ?MW..
         __ fileName:
             fd _ QFile(fileName)
             __ no. fd.o..(QIODevice.WriteOnly):
-                ?MB...information  "Unable to open file",
+                ?MB...i..  "Unable to open file",
                         fd.errorString())
                 r_
 

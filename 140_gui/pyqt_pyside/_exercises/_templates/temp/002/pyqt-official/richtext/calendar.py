@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ (?C.., ?F.., QTextCharFormat, QTextLength,
         QTextTableFormat)
 ____ ?.?W.. ______ (?A.., ?CB, ?DTE..,
-        ?HBL.., QLabel, ?MW.., SB.., QTextBrowser, ?VBL..,
+        ?HBL.., ?L.., ?MW.., SB.., QTextBrowser, ?VBL..,
         ?W..)
 
 
@@ -59,7 +59,7 @@ c_ MainWindow ?MW..
 
         centralWidget _ ?W..
 
-        dateLabel _ QLabel("Date:")
+        dateLabel _ ?L..("Date:")
         monthCombo _ ?CB()
 
         ___ month __ ra..(1, 13):
@@ -72,7 +72,7 @@ c_ MainWindow ?MW..
         monthCombo.sCI..(selectedDate.month() - 1)
         yearEdit.setDate(selectedDate)
 
-        fontSizeLabel _ QLabel("Font size:")
+        fontSizeLabel _ ?L..("Font size:")
         fontSizeSpinBox _ SB..()
         fontSizeSpinBox.setRange(1, 64)
         fontSizeSpinBox.sV..(10)

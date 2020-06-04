@@ -58,7 +58,7 @@ ___ build_font(c..):
     r_ font
 
 
-c_ Canvas(QLabel):
+c_ Canvas(?L..):
 
     mode _ 'rectangle'
 
@@ -832,7 +832,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
             cw, ch _ CANVAS_DIMENSIONS
 
             __ iw/cw < ih/ch:  # The height is relatively bigger than the width.
-                pixmap _ pixmap.scaledToWidth(cw)
+                pixmap _ pixmap.sTW..(cw)
                 hoff _ (pixmap.height() - ch) // 2
                 pixmap _ pixmap.copy(
                     QRect(QPoint(0, hoff), QPoint(cw, pixmap.height()-hoff))

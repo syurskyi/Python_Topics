@@ -66,7 +66,7 @@ __ ______ __ ______
     Colors.parseArgs(___.a..
 
     __ ___.platform __ 'win32':
-        ?MB...information(N.., "Documentation Warning",
+        ?MB...i..(N.., "Documentation Warning",
                 "If you are using the GPL version of PyQt from the binary "
                 "installer then you will probably see warning messages about "
                 "missing documentation.  This is because the installer does "

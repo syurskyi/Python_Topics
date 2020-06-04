@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QBasicTimer
 ____ ?.?G.. ______ ?C.., QFontMetrics, QPainter, ?P..
-____ ?.?W.. ______ (?A.., QDialog, QLineEdit, ?VBL..,
+____ ?.?W.. ______ (?A.., ?D.., QLineEdit, ?VBL..,
         ?W..)
 
 
@@ -93,7 +93,7 @@ c_ WigglyWidget(?W..):
             s__(WigglyWidget, self).timerEvent(event)
 
 
-c_ Dialog(QDialog):
+c_ Dialog(?D..):
     ___  -   parent_None):
         s__(Dialog, self). - (parent)
 

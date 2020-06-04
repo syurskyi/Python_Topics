@@ -45,12 +45,12 @@
 
 ____ ?.?C.. ______ pS.., QMimeData, __
 ____ ?.?G.. ______ ?P.., ?P..
-____ ?.?W.. ______ (?AIV.., ?A.., QDialogButtonBox,
-        QFrame, QLabel, ?PB.., ?TW.., ?TWI..,
+____ ?.?W.. ______ (?AIV.., ?A.., ?DBB...,
+        QFrame, ?L.., ?PB.., ?TW.., ?TWI..,
         ?VBL.., ?W..)
 
 
-c_ DropArea(QLabel):
+c_ DropArea(?L..):
 
     changed _ pS..(QMimeData)
 
@@ -106,7 +106,7 @@ c_ DropSiteWindow(?W..):
     ___  - 
         s__(DropSiteWindow, self). - ()
 
-        abstractLabel _ QLabel(
+        abstractLabel _ ?L..(
                 "This example accepts drags from other applications and "
                 "displays the MIME types provided by the drag object.")
         abstractLabel.setWordWrap( st.
@@ -124,9 +124,9 @@ c_ DropSiteWindow(?W..):
         clearButton _ ?PB..("Clear")
         quitButton _ ?PB..("Quit")
 
-        buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(clearButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ ?DBB...()
+        buttonBox.addButton(clearButton, ?DBB....ActionRole)
+        buttonBox.addButton(quitButton, ?DBB....RejectRole)
 
         quitButton.pressed.c..(close)
         clearButton.pressed.c..(dropArea.clear)

@@ -208,7 +208,7 @@ c_ MainWindow ?MW..
 
     ___ maybeSave 
         __ textEdit.document().iM..
-            ret _ ?MB...warning  "Application",
+            ret _ ?MB...w..  "Application",
                     "The document has been modified.\nDo you want to save "
                     "your changes?",
                     ?MB...Save | ?MB...Discard | ?MB...Cancel)
@@ -224,7 +224,7 @@ c_ MainWindow ?MW..
     ___ loadFile  fileName):
         file _ QFile(fileName)
         __ no. file.o..(QFile.ReadOnly | QFile.Text):
-            ?MB...warning  "Application",
+            ?MB...w..  "Application",
                     "Cannot read file %s:\n%s." % (fileName, file.errorString()))
             r_
 
@@ -239,7 +239,7 @@ c_ MainWindow ?MW..
     ___ saveFile  fileName):
         file _ QFile(fileName)
         __ no. file.o..(QFile.WriteOnly | QFile.Text):
-            ?MB...warning  "Application",
+            ?MB...w..  "Application",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
             r_ F..
 
