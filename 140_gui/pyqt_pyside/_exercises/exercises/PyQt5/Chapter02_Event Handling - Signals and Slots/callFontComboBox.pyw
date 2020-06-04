@@ -1,24 +1,24 @@
-# _____ ___
-#
-# ____ ?.?W.. _____ ?D.., ?A..
-#
-# ____ demoFontComboBox _____ _
-#
-# c_ MyForm ?D..
-#     ___  -
-#         s__. -
-#         ui _ ?
-#         ?.sU..
-#         myFont_?G...?F.. ?.fCB...iT..(?.fCB...cI.. ,15
-#         ?.tE__.sF.. ?
-#         ?.fCB...cFC__.c.. ?
-#         s..
-#
-#     ___ changeFont
-#         myFont_?G...?F.. ?.fCB...iT.. ?.fCB...cI.. ,15
-#         ui.tE__.sF.. ?
-# __ _ ____ __ _____
-#     app _ ?A..
-#     w _ ?
-#     ?.s..
-#     ___.e.. ?.e...
+import sys
+
+from PyQt5.QtWidgets import QDialog, QApplication
+
+from demoFontComboBox import *
+
+class MyForm(QDialog):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        myFont=QtGui.QFont(self.ui.fontComboBox.itemText(self.ui.fontComboBox.currentIndex()), 15)
+        self.ui.textEdit.setFont(myFont)
+        self.ui.fontComboBox.currentFontChanged.connect(self.changeFont)
+        self.show()
+
+    def changeFont(self):
+        myFont=QtGui.QFont(self.ui.fontComboBox.itemText(self.ui.fontComboBox.currentIndex()), 15)
+        self.ui.textEdit.setFont(myFont)
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    w = MyForm()
+    w.show()
+    sys.exit(app.exec_())
