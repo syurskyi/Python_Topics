@@ -1,13 +1,13 @@
 ____ ?.?G.. ______ *
 ____ ?.QtWidgets ______ *
 
-______ os
+______ __
 
 app _ ?A..([])
 app.setQuitOnLastWindowClosed(F..)
 
 # Create the icon
-icon _ ?I..(os.pa__.join("images","color.png"))
+icon _ ?I..(__.pa__.join("images","color.png"))
 
 clipboard _ ?A...clipboard()
 dialog _ QColorDialog()

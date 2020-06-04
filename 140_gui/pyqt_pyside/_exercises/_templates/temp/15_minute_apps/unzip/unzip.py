@@ -4,7 +4,7 @@ ____ ?.?C.. ______ *
 
 ____ MainWindow ______ Ui_MainWindow
 
-______ os
+______ __
 ______ types
 ______ random
 ______ ___
@@ -47,7 +47,7 @@ c_ UnzipWorker(QRunnable):
 
     ___  -   pa__):
         s__(UnzipWorker, self). - ()
-        os.chdir(os.pa__.dirname(pa__))
+        __.chdir(__.pa__.dirname(pa__))
         zipfile _ zipfile.ZipFile(pa__)
 
     @pyqtSlot()
@@ -165,7 +165,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         __ data.hasUrls():
             # We are passed urls as a list, but only accept one.
             url _ data.urls()[0].toLocalFile()
-            __ os.pa__.splitext(url)[1].lower() __ '.zip':
+            __ __.pa__.splitext(url)[1].lower() __ '.zip':
                 e.accept()
 
     ___ dropEvent  e):

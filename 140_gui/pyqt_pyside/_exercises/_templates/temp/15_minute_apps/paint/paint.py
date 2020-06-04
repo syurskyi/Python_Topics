@@ -4,7 +4,7 @@ ____ ?.?C.. ______ *
 
 ____ MainWindow ______ Ui_MainWindow
 
-______ os
+______ __
 ______ random
 ______ types
 
@@ -37,7 +37,7 @@ MODES _ [
 CANVAS_DIMENSIONS _ 600, 400
 
 STAMP_DIR _ './stamps'
-STAMPS _ [os.pa__.join(STAMP_DIR, f) ___ f __ os.listdir(STAMP_DIR)]
+STAMPS _ [__.pa__.join(STAMP_DIR, f) ___ f __ __.listdir(STAMP_DIR)]
 
 SELECTION_PEN _ ?P..(QColor(0xff, 0xff, 0xff), 1, __.DashLine)
 PREVIEW_PEN _ ?P..(QColor(0xff, 0xff, 0xff), 1, __.SolidLine)
@@ -764,7 +764,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         actionUnderline.t___.c__(l___ s: canvas.set_config('underline', s))
 
         sizeicon _ ?L..
-        sizeicon.sP..(?P..(os.pa__.join('images', 'border-weight.png')))
+        sizeicon.sP..(?P..(__.pa__.join('images', 'border-weight.png')))
         drawingToolbar.addWidget(sizeicon)
         sizeselect _ ?S..()
         sizeselect.setRange(1,20)

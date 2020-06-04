@@ -6,12 +6,12 @@ ____ MainWindow ______ Ui_MainWindow
 
 ____ d_t_ ______ d_t_
 ______ ____
-______ os
+______ __
 ______ ___
 ______ requests
 ____ urllib.parse ______ urlencode
 
-OPENWEATHERMAP_API_KEY _ os.environ.g..('OPENWEATHERMAP_API_KEY')
+OPENWEATHERMAP_API_KEY _ __.environ.g..('OPENWEATHERMAP_API_KEY')
 
 """
 Get an API key from https://openweathermap.org/ to use with this

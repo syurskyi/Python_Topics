@@ -1,6 +1,6 @@
 ____ d_t_ ______ d_t_, timedelta, date
 ____ itertools ______ cycle
-______ os
+______ __
 ______ ___
 ______ t__
 
@@ -18,7 +18,7 @@ ______ requests_cache
 CRYPTOCOMPARE_API_KEY _ ''
 
 # Define a requests http cache to minimise API requests.
-requests_cache.install_cache(os.pa__.expanduser('~/.goodforbitcoin'))
+requests_cache.install_cache(__.pa__.expanduser('~/.goodforbitcoin'))
 
 # Base currency is used to retrieve rates from bitcoinaverage.
 DEFAULT_BASE_CURRENCY _ 'USD'

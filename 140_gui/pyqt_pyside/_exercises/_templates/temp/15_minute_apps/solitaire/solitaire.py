@@ -2,7 +2,7 @@ ____ ?.?G.. ______ *
 ____ ?.QtWidgets ______ *
 ____ ?.?C.. ______ *
 
-______ os
+______ __
 ______ random
 
 WINDOW_SIZE _ 840, 600
@@ -10,7 +10,7 @@ WINDOW_SIZE _ 840, 600
 CARD_DIMENSIONS _ ?S..(80, 116)
 CARD_RECT _ QRect(0, 0, 80, 116)
 CARD_SPACING_X _ 110
-CARD_BACK _ QImage(os.pa__.join('images', 'back.png'))
+CARD_BACK _ QImage(__.pa__.join('images', 'back.png'))
 
 DEAL_RECT _ QRect(30, 30, 110, 140)
 
@@ -61,11 +61,11 @@ c_ Card(QGraphicsPixmapItem):
 
     ___ load_images 
         face _ ?P..(
-            os.pa__.join('cards', '%s%s.png' % (value, suit))
+            __.pa__.join('cards', '%s%s.png' % (value, suit))
         )
 
         back _ ?P..(
-            os.pa__.join('images', 'back.png')
+            __.pa__.join('images', 'back.png')
         )
 
     ___ turn_face_up 
@@ -438,11 +438,11 @@ c_ MainWindow(?MW..):
         scene _ QGraphicsScene()
         scene.setSceneRect(QRectF(0, 0, *WINDOW_SIZE))
 
-        felt _ ?B..(?P..(os.pa__.join('images','felt.png')))
+        felt _ ?B..(?P..(__.pa__.join('images','felt.png')))
         scene.setBackgroundBrush(felt)
 
         name _ QGraphicsPixmapItem()
-        name.sP..(?P..(os.pa__.join('images','ronery.png')))
+        name.sP..(?P..(__.pa__.join('images','ronery.png')))
         name.setPos(QPointF(170, 375))
         scene.aI..(name)
 
@@ -458,7 +458,7 @@ c_ MainWindow(?MW..):
 
         menu _ menuBar().addMenu("&Game")
 
-        deal_action _ ?A..(?I..(os.pa__.join('images', 'playing-card.png')), "Deal...", self)
+        deal_action _ ?A..(?I..(__.pa__.join('images', 'playing-card.png')), "Deal...", self)
         deal_action.t___.c__(restart_game)
         menu.aA..(deal_action)
 

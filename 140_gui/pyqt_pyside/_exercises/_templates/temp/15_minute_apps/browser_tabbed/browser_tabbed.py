@@ -4,7 +4,7 @@ ____ ?.?G.. ______ *
 ____ ?.QtWebEngineWidgets ______ *
 ____ ?.QtPrintSupport ______ *
 
-______ os
+______ __
 ______ ___
 
 
@@ -27,7 +27,7 @@ c_ AboutDialog(QDialog):
         layout.addWidget(title)
 
         logo _ ?L..
-        logo.sP..(?P..(os.pa__.join('images', 'ma-icon-128.png')))
+        logo.sP..(?P..(__.pa__.join('images', 'ma-icon-128.png')))
         layout.addWidget(logo)
 
         layout.addWidget(QLabel("Version 23.35.211.233232"))
@@ -61,22 +61,22 @@ c_ MainWindow(?MW..):
         navtb.setIconSize(?S..(16, 16))
         aTB..(navtb)
 
-        back_btn _ ?A..(?I..(os.pa__.join('images', 'arrow-180.png')), "Back", self)
+        back_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-180.png')), "Back", self)
         back_btn.setStatusTip("Back to previous page")
         back_btn.t___.c__(l___: tabs.currentWidget().back())
         navtb.aA..(back_btn)
 
-        next_btn _ ?A..(?I..(os.pa__.join('images', 'arrow-000.png')), "Forward", self)
+        next_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-000.png')), "Forward", self)
         next_btn.setStatusTip("Forward to next page")
         next_btn.t___.c__(l___: tabs.currentWidget().forward())
         navtb.aA..(next_btn)
 
-        reload_btn _ ?A..(?I..(os.pa__.join('images', 'arrow-circle-315.png')), "Reload", self)
+        reload_btn _ ?A..(?I..(__.pa__.join('images', 'arrow-circle-315.png')), "Reload", self)
         reload_btn.setStatusTip("Reload page")
         reload_btn.t___.c__(l___: tabs.currentWidget().reload())
         navtb.aA..(reload_btn)
 
-        home_btn _ ?A..(?I..(os.pa__.join('images', 'home.png')), "Home", self)
+        home_btn _ ?A..(?I..(__.pa__.join('images', 'home.png')), "Home", self)
         home_btn.setStatusTip("Go home")
         home_btn.t___.c__(navigate_home)
         navtb.aA..(home_btn)
@@ -84,14 +84,14 @@ c_ MainWindow(?MW..):
         navtb.addSeparator()
 
         httpsicon _ ?L..  # Yes, really!
-        httpsicon.sP..(?P..(os.pa__.join('images', 'lock-nossl.png')))
+        httpsicon.sP..(?P..(__.pa__.join('images', 'lock-nossl.png')))
         navtb.addWidget(httpsicon)
 
         urlbar _ QLineEdit()
         urlbar.rP__.c__(navigate_to_url)
         navtb.addWidget(urlbar)
 
-        stop_btn _ ?A..(?I..(os.pa__.join('images', 'cross-circle.png')), "Stop", self)
+        stop_btn _ ?A..(?I..(__.pa__.join('images', 'cross-circle.png')), "Stop", self)
         stop_btn.setStatusTip("Stop loading current page")
         stop_btn.t___.c__(l___: tabs.currentWidget().stop())
         navtb.aA..(stop_btn)
@@ -101,34 +101,34 @@ c_ MainWindow(?MW..):
 
         file_menu _ menuBar().addMenu("&File")
 
-        new_tab_action _ ?A..(?I..(os.pa__.join('images', 'ui-tab--plus.png')), "New Tab", self)
+        new_tab_action _ ?A..(?I..(__.pa__.join('images', 'ui-tab--plus.png')), "New Tab", self)
         new_tab_action.setStatusTip("Open a new tab")
         new_tab_action.t___.c__(l___ _: add_new_tab())
         file_menu.aA..(new_tab_action)
 
-        open_file_action _ ?A..(?I..(os.pa__.join('images', 'disk--arrow.png')), "Open file...", self)
+        open_file_action _ ?A..(?I..(__.pa__.join('images', 'disk--arrow.png')), "Open file...", self)
         open_file_action.setStatusTip("Open from file")
         open_file_action.t___.c__(open_file)
         file_menu.aA..(open_file_action)
 
-        save_file_action _ ?A..(?I..(os.pa__.join('images', 'disk--pencil.png')), "Save Page As...", self)
+        save_file_action _ ?A..(?I..(__.pa__.join('images', 'disk--pencil.png')), "Save Page As...", self)
         save_file_action.setStatusTip("Save current page to file")
         save_file_action.t___.c__(save_file)
         file_menu.aA..(save_file_action)
 
-        print_action _ ?A..(?I..(os.pa__.join('images', 'printer.png')), "Print...", self)
+        print_action _ ?A..(?I..(__.pa__.join('images', 'printer.png')), "Print...", self)
         print_action.setStatusTip("Print current page")
         print_action.t___.c__(print_page)
         file_menu.aA..(print_action)
 
         help_menu _ menuBar().addMenu("&Help")
 
-        about_action _ ?A..(?I..(os.pa__.join('images', 'question.png')), "About Mozarella Ashbadger", self)
+        about_action _ ?A..(?I..(__.pa__.join('images', 'question.png')), "About Mozarella Ashbadger", self)
         about_action.setStatusTip("Find out more about Mozarella Ashbadger")  # Hungry!
         about_action.t___.c__(about)
         help_menu.aA..(about_action)
 
-        navigate_mozarella_action _ ?A..(?I..(os.pa__.join('images', 'lifebuoy.png')),
+        navigate_mozarella_action _ ?A..(?I..(__.pa__.join('images', 'lifebuoy.png')),
                                             "Mozarella Ashbadger Homepage", self)
         navigate_mozarella_action.setStatusTip("Go to Mozarella Ashbadger Homepage")
         navigate_mozarella_action.t___.c__(navigate_mozarella)
@@ -139,7 +139,7 @@ c_ MainWindow(?MW..):
         s..
 
         sWT..("Mozarella Ashbadger")
-        setWindowIcon(?I..(os.pa__.join('images', 'ma-icon-64.png')))
+        setWindowIcon(?I..(__.pa__.join('images', 'ma-icon-64.png')))
 
     ___ add_new_tab  qurl_None, label_"Blank"):
 
@@ -235,11 +235,11 @@ c_ MainWindow(?MW..):
 
         __ q.scheme() __ 'https':
             # Secure padlock icon
-            httpsicon.sP..(?P..(os.pa__.join('images', 'lock-ssl.png')))
+            httpsicon.sP..(?P..(__.pa__.join('images', 'lock-ssl.png')))
 
         ____:
             # Insecure padlock icon
-            httpsicon.sP..(?P..(os.pa__.join('images', 'lock-nossl.png')))
+            httpsicon.sP..(?P..(__.pa__.join('images', 'lock-nossl.png')))
 
         urlbar.sT..(q.toString())
         urlbar.setCursorPosition(0)

@@ -1,4 +1,4 @@
-____ os.path ______ exists
+____ __.path ______ exists
 ____ ?.QtWidgets ______ *
 ____ ?.QtSql ______ *
 

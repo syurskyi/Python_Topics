@@ -40,7 +40,7 @@
 
 
 ______ ___
-______ os
+______ __
 
 ____ ?.?C.. ______ QLibraryInfo, QProcess, QProcessEnvironment
 ____ ?.?W.. ______ ?A.., ?MB..

@@ -97,7 +97,7 @@ c_ PieChart(QQuickItem):
 
 
 __ ______ __ ______
-    ______ os
+    ______ __
     ______ ___
 
     app _ QGuiApplication(___.a..

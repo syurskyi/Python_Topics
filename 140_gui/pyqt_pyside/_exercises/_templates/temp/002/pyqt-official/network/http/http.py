@@ -209,7 +209,7 @@ c_ HttpWindow(QDialog):
         downloadButton.sE..(urlLineEdit.t__() !_ '')
 
     ___ slotAuthenticationRequired  authenticator):
-        ______ os
+        ______ __
         ____ ? ______ uic
 
         ui _ __.p__ .join(__.p__ .dirname(__file__), 'authenticationdialog.ui')

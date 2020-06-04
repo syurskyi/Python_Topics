@@ -50,7 +50,7 @@ file_path _ None
 menu _ window.menuBar().addMenu("&File")
 open_action _ ?A..("&Open")
 ___ open_file():
-    global file_path
+    g__ file_path
     path _ QFileDialog.getOpenFileName(window, "Open")[0]
     __ path:
         text.setPlainText(open(path).read())
@@ -73,7 +73,7 @@ menu.aA..(save_action)
 
 save_as_action _ ?A..("Save &As...")
 ___ save_as():
-    global file_path
+    g__ file_path
     path _ QFileDialog.getSaveFileName(window, "Save As")[0]
     __ path:
         file_path _ path

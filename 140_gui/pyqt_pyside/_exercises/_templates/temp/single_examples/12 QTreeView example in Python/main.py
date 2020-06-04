@@ -1,4 +1,4 @@
-____ os.path ______ expanduser
+____ __.path ______ expanduser
 ____ ?.QtWidgets ______ *
 
 home_directory _ expanduser('~')

@@ -2,7 +2,7 @@ ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
-____ os ______ pa__
+____ __ ______ pa__
 
 c_ TTTBoard(qtw.QGraphicsScene):
 

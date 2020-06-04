@@ -6,7 +6,7 @@ ____ ?.QtPrintSupport ______ *
 ______ ___
 ______ sqlite3
 ______ t__
-______ os
+______ __
 
 
 c_ InsertDialog(QDialog):
