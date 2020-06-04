@@ -13,9 +13,9 @@ c_ Ui_Form o..
     ___ setupUi  Form):
         Form.setObjectName("Form")
         Form.r..(378, 385)
-        verticalLayout_2 _ ?W...QVBoxLayout(Form)
+        verticalLayout_2 _ ?W...?VBL..(Form)
         verticalLayout_2.setObjectName("verticalLayout_2")
-        groupBox _ ?W...QGroupBox(Form)
+        groupBox _ ?W...?GB..(Form)
         groupBox.setFlat( st.
         groupBox.setCheckable( st.
         groupBox.setObjectName("groupBox")
@@ -49,7 +49,7 @@ c_ Ui_Form o..
         dateTimeEdit.setObjectName("dateTimeEdit")
         gridLayout.aW..(dateTimeEdit, 1, 1, 1, 1)
         verticalLayout_2.aW..(groupBox)
-        groupBox_2 _ ?W...QGroupBox(Form)
+        groupBox_2 _ ?W...?GB..(Form)
         groupBox_2.setFlat( st.
         groupBox_2.setCheckable( st.
         groupBox_2.setObjectName("groupBox_2")

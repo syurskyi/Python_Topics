@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ QDoubleValidator, QIntValidator
-____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QGroupBox,
+____ ?.?W.. ______ (?A.., ?CB, QGridLayout, ?GB..,
         QLabel, QLineEdit, ?W..)
 
 
@@ -52,7 +52,7 @@ c_ Window(?W..):
     ___  -
         s__(Window, self). - ()
 
-        echoGroup _ QGroupBox("Echo")
+        echoGroup _ ?GB..("Echo")
 
         echoLabel _ QLabel("Mode:")
         echoComboBox _ ?CB()
@@ -64,7 +64,7 @@ c_ Window(?W..):
         echoLineEdit _ ?LE..
         echoLineEdit.setFocus()
 
-        validatorGroup _ QGroupBox("Validator")
+        validatorGroup _ ?GB..("Validator")
 
         validatorLabel _ QLabel("Type:")
         validatorComboBox _ ?CB()
@@ -74,7 +74,7 @@ c_ Window(?W..):
 
         validatorLineEdit _ ?LE..
 
-        alignmentGroup _ QGroupBox("Alignment")
+        alignmentGroup _ ?GB..("Alignment")
 
         alignmentLabel _ QLabel("Type:")
         alignmentComboBox _ ?CB()
@@ -84,7 +84,7 @@ c_ Window(?W..):
 
         alignmentLineEdit _ ?LE..
 
-        inputMaskGroup _ QGroupBox("Input mask")
+        inputMaskGroup _ ?GB..("Input mask")
 
         inputMaskLabel _ QLabel("Type:")
         inputMaskComboBox _ ?CB()
@@ -95,7 +95,7 @@ c_ Window(?W..):
 
         inputMaskLineEdit _ ?LE..
 
-        accessGroup _ QGroupBox("Access")
+        accessGroup _ ?GB..("Access")
 
         accessLabel _ QLabel("Read-only:")
         accessComboBox _ ?CB()

@@ -49,13 +49,13 @@ ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
         QTextStream)
 ____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QPainter, QPainterPath,
         ?P.., ?P.., QRegion, ?SIM..)
-____ ?.?W.. ______ (QAbstractItemView, ?A.., ?FD..,
+____ ?.?W.. ______ (?AIV.., ?A.., ?FD..,
         ?MW.., ?M.., QRubberBand, QSplitter, ?S.., QTableView)
 
 ______ chart_rc
 
 
-c_ PieView(QAbstractItemView):
+c_ PieView(?AIV..):
     ___  -   parent_None):
         s__(PieView, self). - (parent)
 
@@ -247,7 +247,7 @@ c_ PieView(QAbstractItemView):
     ___ moveCursor  cursorAction, modifiers):
         current _ currentIndex()
 
-        __ cursorAction __ (QAbstractItemView.MoveLeft, QAbstractItemView.MoveUp):
+        __ cursorAction __ (?AIV...MoveLeft, ?AIV...MoveUp):
 
             __ current.row() > 0:
                 current _ model().index(current.row() - 1,
@@ -256,7 +256,7 @@ c_ PieView(QAbstractItemView):
                 current _ model().index(0, current.column(),
                         rootIndex())
 
-        ____ cursorAction __ (QAbstractItemView.MoveRight, QAbstractItemView.MoveDown):
+        ____ cursorAction __ (?AIV...MoveRight, ?AIV...MoveDown):
 
             __ current.row() < rows(current) - 1:
                 current _ model().index(current.row() + 1,

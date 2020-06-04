@@ -51,7 +51,7 @@ ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
         ?FL.., QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
-        QSizePolicy, ?S.., ?S.., QToolButton, QVBoxLayout, ?W..)
+        QSizePolicy, ?S.., ?S.., QToolButton, ?VBL.., ?W..)
 
 
 c_ VideoWidget(QVideoWidget):

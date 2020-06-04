@@ -43,8 +43,8 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
-        ?M.., ?PB.., QRadioButton, QVBoxLayout, ?W..)
+____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, ?GB..,
+        ?M.., ?PB.., QRadioButton, ?VBL.., ?W..)
 
 
 c_ Window(?W..):
@@ -62,7 +62,7 @@ c_ Window(?W..):
         r..(480, 320)
 
     ___ createFirstExclusiveGroup 
-        groupBox _ QGroupBox("Exclusive Radio Buttons")
+        groupBox _ ?GB..("Exclusive Radio Buttons")
 
         radio1 _ QRadioButton("&Radio button 1")
         radio2 _ QRadioButton("R&adio button 2")
@@ -80,7 +80,7 @@ c_ Window(?W..):
         r_ groupBox
 
     ___ createSecondExclusiveGroup 
-        groupBox _ QGroupBox("E&xclusive Radio Buttons")
+        groupBox _ ?GB..("E&xclusive Radio Buttons")
         groupBox.setCheckable( st.
         groupBox.sC__ F..
 
@@ -102,7 +102,7 @@ c_ Window(?W..):
         r_ groupBox
 
     ___ createNonExclusiveGroup 
-        groupBox _ QGroupBox("Non-Exclusive Checkboxes")
+        groupBox _ ?GB..("Non-Exclusive Checkboxes")
         groupBox.setFlat( st.
 
         checkBox1 _ QCheckBox("&Checkbox 1")
@@ -122,7 +122,7 @@ c_ Window(?W..):
         r_ groupBox
 
     ___ createPushButtonGroup 
-        groupBox _ QGroupBox("&Push Buttons")
+        groupBox _ ?GB..("&Push Buttons")
         groupBox.setCheckable( st.
         groupBox.sC__( st.
 

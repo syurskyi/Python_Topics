@@ -43,8 +43,8 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
-        QHBoxLayout, ?PB.., QRadioButton, ?TE.., QVBoxLayout,
+____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, ?GB..,
+        QHBoxLayout, ?PB.., QRadioButton, ?TE.., ?VBL..,
         ?W..)
 
 
@@ -206,7 +206,7 @@ c_ ControllerWindow(?W..):
         previewWindow.s..
 
     ___ createTypeGroupBox
-        typeGroupBox _ QGroupBox("Type")
+        typeGroupBox _ ?GB..("Type")
 
         windowRadioButton _ createRadioButton("Window")
         dialogRadioButton _ createRadioButton("Dialog")
@@ -230,7 +230,7 @@ c_ ControllerWindow(?W..):
         typeGroupBox.sL..(layout)
 
     ___ createHintsGroupBox
-        hintsGroupBox _ QGroupBox("Hints")
+        hintsGroupBox _ ?GB..("Hints")
 
         msWindowsFixedSizeDialogCheckBox _ createCheckBox("MS Windows fixed size dialog")
         x11BypassWindowManagerCheckBox _ createCheckBox("X11 bypass window manager")

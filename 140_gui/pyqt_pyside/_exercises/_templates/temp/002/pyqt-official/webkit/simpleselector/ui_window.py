@@ -13,7 +13,7 @@ c_ Ui_Window o..
     ___ setupUi  Window):
         Window.setObjectName("Window")
         Window.r..(640, 480)
-        verticalLayout _ ?W...QVBoxLayout(Window)
+        verticalLayout _ ?W...?VBL..(Window)
         verticalLayout.setObjectName("verticalLayout")
         webView _ QtWebKitWidgets.QWebView(Window)
         webView.setUrl(?C...?U..("http://webkit.org/"))

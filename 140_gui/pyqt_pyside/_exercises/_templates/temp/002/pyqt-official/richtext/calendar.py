@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ (?C.., ?F.., QTextCharFormat, QTextLength,
         QTextTableFormat)
 ____ ?.?W.. ______ (?A.., ?CB, ?DTE..,
-        QHBoxLayout, QLabel, ?MW.., SB.., QTextBrowser, QVBoxLayout,
+        QHBoxLayout, QLabel, ?MW.., SB.., QTextBrowser, ?VBL..,
         ?W..)
 
 

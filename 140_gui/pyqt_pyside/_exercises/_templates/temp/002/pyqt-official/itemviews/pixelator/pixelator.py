@@ -49,7 +49,7 @@ ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
         ?FD.., QHBoxLayout, QLabel, ?MW.., ?MB.., ?M..,
         QProgressDialog, SB.., ?S.., QStyleOptionViewItem, QTableView,
-        QVBoxLayout, ?W..)
+        ?VBL.., ?W..)
 
 ______ pixelator_rc
 
@@ -138,9 +138,9 @@ c_ MainWindow ?MW..
         view _ ?TV..
         view.setShowGrid F..
         view.hH.. .hide()
-        view.verticalHeader().hide()
+        view.vH.. .hide()
         view.hH.. .setMinimumSectionSize(1)
-        view.verticalHeader().setMinimumSectionSize(1)
+        view.vH.. .setMinimumSectionSize(1)
         view.sM..(model)
 
         delegate _ PixelDelegate

@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., QVBoxLayout, ?W..
+____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., ?VBL.., ?W..
 
 
 c_ SortedDict(dict):

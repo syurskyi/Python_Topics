@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QFileInfo, ?S.., __
 ____ ?.?G.. ______ QMovie, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QHBoxLayout, QLabel, QSizePolicy, ?S.., SB.., ?S..,
-        QToolButton, QVBoxLayout, ?W..)
+        QToolButton, ?VBL.., ?W..)
 
 
 c_ MoviePlayer(?W..):

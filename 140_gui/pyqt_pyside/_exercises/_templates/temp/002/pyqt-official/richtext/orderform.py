@@ -47,7 +47,7 @@ ____ ?.?G.. ______ (?F.., QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MW..,
-        ?MB.., ?M.., ?TW.., QTableWidgetItem, ?TW..,
+        ?MB.., ?M.., ?TW.., ?TWI.., ?TW..,
         ?TE..)
 ____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter
 
@@ -252,10 +252,10 @@ c_ DetailsDialog(QDialog):
         itemsTable _ ?TW..(le.(i..), 2)
 
         ___ row, item __ en..(i..):
-            name _ QTableWidgetItem(item)
+            name _ ?TWI..(item)
             name.setFlags(__.ItemIsEnabled | __.ItemIsSelectable)
             itemsTable.setItem(row, 0, name)
-            quantity _ QTableWidgetItem('1')
+            quantity _ ?TWI..('1')
             itemsTable.setItem(row, 1, quantity)
 
     ___ orderItems

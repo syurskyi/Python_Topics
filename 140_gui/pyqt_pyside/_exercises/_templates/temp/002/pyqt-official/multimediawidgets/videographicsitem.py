@@ -47,7 +47,7 @@ ____ ?.?G.. ______ QTransform
 ____ ?.?M.. ______ ?MC.., ?MP..
 ____ ?.?MW.. ______ QGraphicsVideoItem
 ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
-        QGraphicsView, QHBoxLayout, ?PB.., ?S.., ?S.., QVBoxLayout,
+        QGraphicsView, QHBoxLayout, ?PB.., ?S.., ?S.., ?VBL..,
         ?W..)
 
 

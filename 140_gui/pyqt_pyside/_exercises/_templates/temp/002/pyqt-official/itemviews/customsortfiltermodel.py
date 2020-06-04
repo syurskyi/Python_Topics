@@ -47,8 +47,8 @@ ____ ?.?C.. ______ (?D.., ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
 ____ ?.?G.. ______ ?SIM..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DE..,
-        QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView,
-        QVBoxLayout, ?W..)
+        QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit, QTreeView,
+        ?VBL.., ?W..)
 
 
 c_ MySortFilterProxyModel(QSortFilterProxyModel):
@@ -117,7 +117,7 @@ c_ Window(?W..):
 
         sourceLayout _ ?HBL..
         sourceLayout.aW..(sourceView)
-        sourceGroupBox _ QGroupBox("Original Model")
+        sourceGroupBox _ ?GB..("Original Model")
         sourceGroupBox.sL..(sourceLayout)
 
         filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
@@ -167,7 +167,7 @@ c_ Window(?W..):
         proxyLayout.aW..(fromDateEdit, 3, 1, 1, 2)
         proxyLayout.aW..(toLabel, 4, 0)
         proxyLayout.aW..(toDateEdit, 4, 1, 1, 2)
-        proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
+        proxyGroupBox _ ?GB..("Sorted/Filtered Model")
         proxyGroupBox.sL..(proxyLayout)
 
         mainLayout _ ?VBL..

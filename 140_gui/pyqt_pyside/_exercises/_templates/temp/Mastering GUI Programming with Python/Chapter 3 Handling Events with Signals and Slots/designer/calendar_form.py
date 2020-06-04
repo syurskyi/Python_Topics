@@ -30,7 +30,7 @@ c_ Ui_MainWindow o..
         event_list _ ?W...QListWidget(MainWindow)
         event_list.setObjectName("event_list")
         verticalLayout.aW..(event_list)
-        groupBox _ ?W...QGroupBox(MainWindow)
+        groupBox _ ?W...?GB..(MainWindow)
         groupBox.setObjectName("groupBox")
         gridLayout _ ?W...QGridLayout(groupBox)
         gridLayout.setObjectName("gridLayout")

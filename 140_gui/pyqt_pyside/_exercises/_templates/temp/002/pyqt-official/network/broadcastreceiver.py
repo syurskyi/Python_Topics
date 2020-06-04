@@ -43,7 +43,7 @@
 
 
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
-        ?PB.., QVBoxLayout)
+        ?PB.., ?VBL..)
 ____ ?.?N.. ______ QUdpSocket
 
 

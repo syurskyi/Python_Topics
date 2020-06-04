@@ -44,9 +44,9 @@
 
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, ?CB,
-        QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
+        QDialog, QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit,
         ?MB.., ?M.., ?PB.., SB.., ?S.., QSystemTrayIcon,
-        ?TE.., QVBoxLayout)
+        ?TE.., ?VBL..)
 
 ______ systray_rc
 
@@ -123,7 +123,7 @@ c_ Window(QDialog):
                 "try asking a human?")
 
     ___ createIconGroupBox
-        iconGroupBox _ QGroupBox("Tray Icon")
+        iconGroupBox _ ?GB..("Tray Icon")
 
         iconLabel _ QLabel("Icon:")
 
@@ -143,7 +143,7 @@ c_ Window(QDialog):
         iconGroupBox.sL..(iconLayout)
 
     ___ createMessageGroupBox
-        messageGroupBox _ QGroupBox("Balloon Message")
+        messageGroupBox _ ?GB..("Balloon Message")
 
         typeLabel _ QLabel("Type:")
 

@@ -44,8 +44,8 @@
 
 ____ ?.?C.. ______ ?D.., QFile, QRegExp
 ____ ?.?G.. ______ ?P..
-____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
-        QLabel, QLineEdit, ?MB.., QRadioButton, QVBoxLayout, QWizard,
+____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, ?GB..,
+        QLabel, QLineEdit, ?MB.., QRadioButton, ?VBL.., QWizard,
         QWizardPage)
 
 ______ classwizard_rc
@@ -229,7 +229,7 @@ c_ ClassInfoPage(QWizardPage):
 
         qobjectMacroCheckBox _ QCheckBox("Generate Q_OBJECT &macro")
 
-        groupBox _ QGroupBox("C&onstructor")
+        groupBox _ ?GB..("C&onstructor")
 
         qobjectCtorRadioButton _ QRadioButton("&QObject-style constructor")
         qwidgetCtorRadioButton _ QRadioButton("Q&Widget-style constructor")

@@ -31,7 +31,7 @@ c_ Ui_Form o..
         gridLayout.aW..(easingCurvePicker, 0, 0, 1, 2)
         verticalLayout _ ?W...?VBL..
         verticalLayout.setObjectName("verticalLayout")
-        groupBox_2 _ ?W...QGroupBox(Form)
+        groupBox_2 _ ?W...?GB..(Form)
         groupBox_2.sMS..(?C...?S..(16777215, 16777215))
         groupBox_2.setObjectName("groupBox_2")
         gridLayout_2 _ ?W...QGridLayout(groupBox_2)
@@ -51,7 +51,7 @@ c_ Ui_Form o..
         buttonGroup.addButton(circleRadio)
         gridLayout_2.aW..(circleRadio, 1, 0, 1, 1)
         verticalLayout.aW..(groupBox_2)
-        groupBox _ ?W...QGroupBox(Form)
+        groupBox _ ?W...?GB..(Form)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Fixed, ?W...QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)

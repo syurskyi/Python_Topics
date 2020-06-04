@@ -49,7 +49,7 @@ ____ ?.?C.. ______ QByteArray, QIODevice, __, ?T.., qWarning
 ____ ?.?M.. ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
 ____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
-        ?MW.., ?PB.., ?S.., QVBoxLayout, ?W..)
+        ?MW.., ?PB.., ?S.., ?VBL.., ?W..)
 
 
 c_ Generator(QIODevice):

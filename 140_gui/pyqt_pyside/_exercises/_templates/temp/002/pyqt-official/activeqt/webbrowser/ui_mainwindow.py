@@ -23,7 +23,7 @@ c_ Ui_MainWindow o..
         Frame3.setFrameShape(?W...QFrame.StyledPanel)
         Frame3.setFrameShadow(?W...QFrame.Sunken)
         Frame3.setObjectName("Frame3")
-        vboxlayout _ ?W...QVBoxLayout(Frame3)
+        vboxlayout _ ?W...?VBL..(Frame3)
         vboxlayout.setContentsMargins(1, 1, 1, 1)
         vboxlayout.setSpacing(0)
         vboxlayout.setObjectName("vboxlayout")

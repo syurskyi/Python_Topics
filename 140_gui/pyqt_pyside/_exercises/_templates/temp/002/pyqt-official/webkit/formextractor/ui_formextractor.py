@@ -15,9 +15,9 @@ c_ Ui_Form o..
         Form.r..(680, 218)
         horizontalLayout _ ?W...QHBoxLayout(Form)
         horizontalLayout.setObjectName("horizontalLayout")
-        webFormGroupBox _ ?W...QGroupBox(Form)
+        webFormGroupBox _ ?W...?GB..(Form)
         webFormGroupBox.setObjectName("webFormGroupBox")
-        verticalLayout_2 _ ?W...QVBoxLayout(webFormGroupBox)
+        verticalLayout_2 _ ?W...?VBL..(webFormGroupBox)
         verticalLayout_2.setObjectName("verticalLayout_2")
         verticalLayout _ ?W...?VBL..
         verticalLayout.setObjectName("verticalLayout")
@@ -31,9 +31,9 @@ c_ Ui_Form o..
         horizontalLayout.aW..(webFormGroupBox)
         spacerItem _ ?W...QSpacerItem(28, 20, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)
         horizontalLayout.aI..(spacerItem)
-        dataGroupBox _ ?W...QGroupBox(Form)
+        dataGroupBox _ ?W...?GB..(Form)
         dataGroupBox.setObjectName("dataGroupBox")
-        verticalLayout_3 _ ?W...QVBoxLayout(dataGroupBox)
+        verticalLayout_3 _ ?W...?VBL..(dataGroupBox)
         verticalLayout_3.setObjectName("verticalLayout_3")
         formLayout _ ?W...?FL..
         formLayout.setFieldGrowthPolicy(?W...?FL...FieldsStayAtSizeHint)

@@ -44,11 +44,11 @@
 
 ____ ?.?C.. ______ pS.., __
 ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
-        QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
+        QDial, QGridLayout, ?GB.., QHBoxLayout, QLabel, QScrollBar,
         ?S.., SB.., ?SW.., ?W..)
 
 
-c_ SlidersGroup(QGroupBox):
+c_ SlidersGroup(?GB..):
 
     valueChanged _ pS..(in.)
 
@@ -137,7 +137,7 @@ c_ Window(?W..):
         sWT..("Sliders")
 
     ___ createControls  title):
-        controlsGroup _ QGroupBox(title)
+        controlsGroup _ ?GB..(title)
 
         minimumLabel _ QLabel("Minimum value:")
         maximumLabel _ QLabel("Maximum value:")

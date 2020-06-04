@@ -46,7 +46,7 @@ ______ pickle
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (QDialog, ?FD.., QGridLayout, QHBoxLayout,
-        QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., QVBoxLayout,
+        QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., ?VBL..,
         ?W..)
 
 

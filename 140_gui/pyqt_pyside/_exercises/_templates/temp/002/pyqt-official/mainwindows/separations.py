@@ -49,7 +49,7 @@ ____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
         ?P.., ?P.., qRed)
 ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
         QGridLayout, QLabel, QLayout, ?MW.., ?M.., ?MB..,
-        ?PB.., QVBoxLayout)
+        ?PB.., ?VBL..)
 
 
 c_ FinalWidget(QFrame):

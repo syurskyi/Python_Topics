@@ -43,7 +43,7 @@
 
 
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
-        QVBoxLayout, QWizard, QWizardPage)
+        ?VBL.., QWizard, QWizardPage)
 
 
 ___ createIntroPage

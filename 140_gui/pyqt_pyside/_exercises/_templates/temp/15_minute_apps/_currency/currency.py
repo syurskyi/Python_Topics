@@ -1,5 +1,5 @@
 ____ ?.?G.. ______ *
-____ ?.QtWidgets ______ *
+____ ?.?W.. ______ *
 ____ ?.?C.. ______ *
 
 ______ pyqtgraph __ pg
@@ -152,11 +152,11 @@ c_ MainWindow(?MW..):
         threadpool _ ?TP..()
         worker _ F..
 
-        layout.addWidget(ax)
-        layout.addWidget(listView)
+        layout.aW..(ax)
+        layout.aW..(listView)
 
         widget _ ?W..()
-        widget.setLayout(layout)
+        widget.sL..(layout)
         setCentralWidget(widget)
         listView.sFS..(226, 400)
         sFS..(650, 400)
@@ -165,14 +165,14 @@ c_ MainWindow(?MW..):
         aTB..(toolbar)
         currencyList _ ?CB()
 
-        toolbar.addWidget(currencyList)
+        toolbar.aW..(currencyList)
         update_currency_list(DEFAULT_DISPLAY_CURRENCIES)
         currencyList.sCT..(base_currency)
         currencyList.cTC...c__(change_base_currency)
 
         progress _ QProgressBar()
         progress.setRange(0, 100)
-        toolbar.addWidget(progress)
+        toolbar.aW..(progress)
 
         refresh_historic_rates()
         sWT..("Doughnut")

@@ -18,7 +18,7 @@ c_ Ui_NicknameDialog o..
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(NicknameDialog.sizePolicy().hasHeightForWidth())
         NicknameDialog.sSP..(sizePolicy)
-        vboxlayout _ ?W...QVBoxLayout(NicknameDialog)
+        vboxlayout _ ?W...?VBL..(NicknameDialog)
         vboxlayout.setContentsMargins(9, 9, 9, 9)
         vboxlayout.setSpacing(6)
         vboxlayout.setObjectName("vboxlayout")

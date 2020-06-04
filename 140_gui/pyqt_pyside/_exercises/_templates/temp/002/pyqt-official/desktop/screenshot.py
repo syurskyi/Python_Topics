@@ -45,8 +45,8 @@
 ____ ?.?C.. ______ ?D.., __, ?T..
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, SB..,
-        QVBoxLayout, ?W..)
+        ?GB.., QHBoxLayout, QLabel, ?PB.., QSizePolicy, SB..,
+        ?VBL.., ?W..)
 
 
 c_ Screenshot(?W..):
@@ -120,7 +120,7 @@ c_ Screenshot(?W..):
             hideThisWindowCheckBox.sD.. F..
 
     ___ createOptionsGroupBox
-        optionsGroupBox _ QGroupBox("Options")
+        optionsGroupBox _ ?GB..("Options")
 
         delaySpinBox _ SB..()
         delaySpinBox.setSuffix(" s")

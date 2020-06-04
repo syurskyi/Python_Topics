@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., QFile, QFileInfo, QIODevice, ?U..
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QHBoxLayout, QLabel, QLineEdit, ?MB.., QProgressDialog,
-        ?PB.., QVBoxLayout)
+        ?PB.., ?VBL..)
 ____ ?.?N.. ______ ?NAM.., ?NR..
 
 

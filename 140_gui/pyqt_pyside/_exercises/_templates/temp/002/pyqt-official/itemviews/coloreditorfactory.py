@@ -47,7 +47,7 @@ ____ ?.?C.. ______ pP.., __, QVariant
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout,
         QItemEditorCreatorBase, QItemEditorFactory, ?TW..,
-        QTableWidgetItem, ?W..)
+        ?TWI.., ?W..)
 
 
 c_ ColorListEditor(?CB):
@@ -96,12 +96,12 @@ c_ Window(?W..):
 
         table _ ?TW..(3, 2)
         table.sHHL..(["Name", "Hair Color"])
-        table.verticalHeader().setVisible F..
+        table.vH.. .setVisible F..
         table.r..(150, 50)
 
         ___ i, (name, color) __ en..(tableData):
-            nameItem _ QTableWidgetItem(name)
-            colorItem _ QTableWidgetItem()
+            nameItem _ ?TWI..(name)
+            colorItem _ ?TWI..()
             colorItem.setData(__.DR.., color)
             table.setItem(i, 0, nameItem)
             table.setItem(i, 1, colorItem)

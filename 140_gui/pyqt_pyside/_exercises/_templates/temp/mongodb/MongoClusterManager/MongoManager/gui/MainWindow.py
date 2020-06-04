@@ -1,5 +1,5 @@
 ____ ?.?C.. ______ __
-____ ?.QtWidgets ______ ?MW.., QWidget, ?A.., QSplitter, QListView, QTabWidget
+____ ?.?W.. ______ ?MW.., ?W.., ?A.., QSplitter, QListView, QTabWidget
 ____ ?.?G.. ______ QIcon, ?SIM.., ?SI..
 
 
@@ -37,8 +37,8 @@ c_ MainWindow(?MW..):
         context_widget.setMinimumWidth(100)
 
         central_widget _ QSplitter(__.Horizontal, self)
-        central_widget.addWidget(conf_widget)
-        central_widget.addWidget(context_widget)
+        central_widget.aW..(conf_widget)
+        central_widget.aW..(context_widget)
         central_widget.setCollapsible(0, F..)
         central_widget.setCollapsible(1, F..)
         central_widget.setSizes([150, 999])

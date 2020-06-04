@@ -45,10 +45,10 @@
 ____ ?.?C.. ______ (?D.., QIODevice, QFile, QFileInfo, __, QTextStream,
         ?U..)
 ____ ?.?G.. ______ QDesktopServices
-____ ?.?W.. ______ (QAbstractItemView, ?A.., ?CB,
+____ ?.?W.. ______ (?AIV.., ?A.., ?CB,
         QDialog, ?FD.., QGridLayout, QHBoxLayout, ?HV.., QLabel,
         QProgressDialog, ?PB.., QSizePolicy, ?TW..,
-        QTableWidgetItem)
+        ?TWI..)
 
 
 c_ Window(QDialog):
@@ -105,7 +105,7 @@ c_ Window(QDialog):
             comboBox.aI..(comboBox.currentText())
 
     ___ find
-        filesTable.setRowCount(0)
+        filesTable.sRC..(0)
 
         fileName _ fileComboBox.currentText()
         t__ _ textComboBox.currentText()
@@ -163,9 +163,9 @@ c_ Window(QDialog):
             file _ QFile(currentDir.absoluteFilePath(fn))
             size _ QFileInfo(file).size()
 
-            fileNameItem _ QTableWidgetItem(fn)
+            fileNameItem _ ?TWI..(fn)
             fileNameItem.setFlags(fileNameItem.flags() ^ __.IIE..)
-            sizeItem _ QTableWidgetItem("%d KB" % (in.((size + 1023) / 1024)))
+            sizeItem _ ?TWI..("%d KB" % (in.((size + 1023) / 1024)))
             sizeItem.setTextAlignment(__.AlignVCenter | __.AlignRight)
             sizeItem.setFlags(sizeItem.flags() ^ __.IIE..)
 
@@ -190,11 +190,11 @@ c_ Window(QDialog):
 
     ___ createFilesTable
         filesTable _ ?TW..(0, 2)
-        filesTable.setSelectionBehavior(QAbstractItemView.SelectRows)
+        filesTable.setSelectionBehavior(?AIV...SelectRows)
 
         filesTable.sHHL..(("File Name", "Size"))
         filesTable.hH.. .sSRM..(0, ?HV...Stretch)
-        filesTable.verticalHeader().hide()
+        filesTable.vH.. .hide()
         filesTable.setShowGrid F..
 
         filesTable.cellActivated.c..(openFileOfItem)

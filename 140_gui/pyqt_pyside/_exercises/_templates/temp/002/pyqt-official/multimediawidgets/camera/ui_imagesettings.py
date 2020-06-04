@@ -15,7 +15,7 @@ c_ Ui_ImageSettingsUi o..
         ImageSettingsUi.r..(332, 270)
         gridLayout _ ?W...QGridLayout(ImageSettingsUi)
         gridLayout.setObjectName("gridLayout")
-        groupBox_2 _ ?W...QGroupBox(ImageSettingsUi)
+        groupBox_2 _ ?W...?GB..(ImageSettingsUi)
         groupBox_2.setObjectName("groupBox_2")
         gridLayout_2 _ ?W...QGridLayout(groupBox_2)
         gridLayout_2.setObjectName("gridLayout_2")

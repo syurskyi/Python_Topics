@@ -55,7 +55,7 @@
 ______ m__
 
 ____ ?.?C.. ______ ?ATM.., QByteArray, ?D.., QStorageInfo, __
-____ ?.?W.. ______ QAbstractItemView, ?A.., QTreeView
+____ ?.?W.. ______ ?AIV.., ?A.., QTreeView
 
 
 ___ sizeToString(size):
@@ -152,7 +152,7 @@ ___ main(args):
     view _ ?TV..
     view.sM..(StorageModel(view))
     view.r..(640, 480)
-    view.setSelectionBehavior(QAbstractItemView.SelectRows)
+    view.setSelectionBehavior(?AIV...SelectRows)
     ___ column __ ra..(view.model().columnCount()):
         view.resizeColumnToContents(column)
     view.s..

@@ -47,8 +47,8 @@ ______ m__
 
 ____ ?.?C.. ______ pS.., QPointF, ?S.., __
 ____ ?.?G.. ______ QPainter, QPolygonF
-____ ?.?W.. ______ (QAbstractItemView, ?A.., ?S..,
-        ?SID.., ?TW.., QTableWidgetItem, ?W..)
+____ ?.?W.. ______ (?AIV.., ?A.., ?S..,
+        ?SID.., ?TW.., ?TWI.., ?W..)
 
 
 c_ StarRating o..
@@ -217,10 +217,10 @@ ___ populateTableWidget(tableWidget):
     )
 
     ___ row, (title, genre, artist, rating) __ en..(staticData):
-        item0 _ QTableWidgetItem(title)
-        item1 _ QTableWidgetItem(genre)
-        item2 _ QTableWidgetItem(artist)
-        item3 _ QTableWidgetItem()
+        item0 _ ?TWI..(title)
+        item1 _ ?TWI..(genre)
+        item2 _ ?TWI..(artist)
+        item3 _ ?TWI..()
         item3.setData(0, StarRating(rating))
         tableWidget.setItem(row, 0, item0)
         tableWidget.setItem(row, 1, item1)
@@ -237,8 +237,8 @@ __ ______ __ ______
     tableWidget _ ?TW..(4, 4)
     tableWidget.sID..(StarDelegate())
     tableWidget.setEditTriggers(
-            QAbstractItemView.DoubleClicked | QAbstractItemView.SelectedClicked)
-    tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
+            ?AIV...DoubleClicked | ?AIV...SelectedClicked)
+    tableWidget.setSelectionBehavior(?AIV...SelectRows)
 
     headerLabels _ ("Title", "Genre", "Artist", "Rating")
     tableWidget.sHHL..(headerLabels)

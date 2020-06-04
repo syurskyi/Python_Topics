@@ -47,8 +47,8 @@ ____ ?.?C.. ______ (QPointF, ?PA.., QRect, QRectF,
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QGraphicsLinearLayout,
         QGraphicsObject, QGraphicsProxyWidget, QGraphicsScene, QGraphicsView,
-        QGraphicsWidget, QGroupBox, ?PB.., QRadioButton, ?TE..,
-        QVBoxLayout)
+        QGraphicsWidget, ?GB.., ?PB.., QRadioButton, ?TE..,
+        ?VBL..)
 
 ______ states_rc
 
@@ -85,7 +85,7 @@ __ ______ __ ______
     editProxy _ QGraphicsProxyWidget()
     editProxy.setWidget(edit)
 
-    box _ QGroupBox()
+    box _ ?GB..()
     box.setFlat( st.
     box.setTitle("Options")
 

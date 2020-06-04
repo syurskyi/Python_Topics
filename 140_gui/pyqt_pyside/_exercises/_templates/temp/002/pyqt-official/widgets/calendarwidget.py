@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ ?D.., QLocale, __
 ____ ?.?G.. ______ ?F.., QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
-        ?CB, ?DE.., QGridLayout, QGroupBox, QHBoxLayout, QLabel,
+        ?CB, ?DE.., QGridLayout, ?GB.., QHBoxLayout, QLabel,
         QLayout, ?W..)
 
 
@@ -166,7 +166,7 @@ c_ Window(?W..):
             calendar.setDateTextFormat(mayFirst, mayFirstFormat)
 
     ___ createPreviewGroupBox
-        previewGroupBox _ QGroupBox("Preview")
+        previewGroupBox _ ?GB..("Preview")
 
         calendar _ QCalendarWidget()
         calendar.setMinimumDate(?D..(1900, 1, 1))
@@ -179,7 +179,7 @@ c_ Window(?W..):
         previewGroupBox.sL..(previewLayout)
  
     ___ createGeneralOptionsGroupBox
-        generalOptionsGroupBox _ QGroupBox("General Options")
+        generalOptionsGroupBox _ ?GB..("General Options")
 
         localeCombo _ ?CB()
 
@@ -291,7 +291,7 @@ c_ Window(?W..):
         verticalHeaderChanged(verticalHeaderCombo.currentIndex())
  
     ___ createDatesGroupBox
-        datesGroupBox _ QGroupBox(tr("Dates"))
+        datesGroupBox _ ?GB..(tr("Dates"))
 
         minimumDateEdit _ ?DE..()
         minimumDateEdit.setDisplayFormat('MMM d yyyy')
@@ -337,7 +337,7 @@ c_ Window(?W..):
         datesGroupBox.sL..(dateBoxLayout)
 
     ___ createTextFormatsGroupBox
-        textFormatsGroupBox _ QGroupBox("Text Formats")
+        textFormatsGroupBox _ ?GB..("Text Formats")
 
         weekdayColorCombo _ createColorComboBox()
         weekdayColorCombo.sCI..(

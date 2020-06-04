@@ -45,9 +45,9 @@
 
 ____ ?.?C.. ______ pS.., QMimeData, __
 ____ ?.?G.. ______ ?P.., ?P..
-____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
-        QFrame, QLabel, ?PB.., ?TW.., QTableWidgetItem,
-        QVBoxLayout, ?W..)
+____ ?.?W.. ______ (?AIV.., ?A.., QDialogButtonBox,
+        QFrame, QLabel, ?PB.., ?TW.., ?TWI..,
+        ?VBL.., ?W..)
 
 
 c_ DropArea(QLabel):
@@ -117,7 +117,7 @@ c_ DropSiteWindow(?W..):
 
         formatsTable _ ?TW..()
         formatsTable.sCC..(2)
-        formatsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        formatsTable.setEditTriggers(?AIV...NoEditTriggers)
         formatsTable.sHHL..(["Format", "Content"])
         formatsTable.hH.. .setStretchLastSection( st.
 
@@ -142,13 +142,13 @@ c_ DropSiteWindow(?W..):
         sMS..(350, 500)
 
     ___ updateFormatsTable  mimeData_None):
-        formatsTable.setRowCount(0)
+        formatsTable.sRC..(0)
 
         __ mimeData __ N..:
             r_
 
         ___ f.. __ mimeData.formats
-            formatItem _ QTableWidgetItem(f..)
+            formatItem _ ?TWI..(f..)
             formatItem.setFlags(__.ItemIsEnabled)
             formatItem.setTextAlignment(__.AlignTop | __.AlignLeft)
 
@@ -163,8 +163,8 @@ c_ DropSiteWindow(?W..):
 
             row _ formatsTable.rowCount()
             formatsTable.insertRow(row)
-            formatsTable.setItem(row, 0, QTableWidgetItem(f..))
-            formatsTable.setItem(row, 1, QTableWidgetItem(t__))
+            formatsTable.setItem(row, 0, ?TWI..(f..))
+            formatsTable.setItem(row, 1, ?TWI..(t__))
 
         formatsTable.resizeColumnToContents(0)
 

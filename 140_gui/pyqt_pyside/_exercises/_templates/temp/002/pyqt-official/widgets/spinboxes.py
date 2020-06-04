@@ -44,8 +44,8 @@
 
 ____ ?.?C.. ______ ?D.., ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., ?CB, ?DE.., ?DTE..,
-        QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, SB.., ?TE..,
-        QVBoxLayout, ?W..)
+        QDoubleSpinBox, ?GB.., QHBoxLayout, QLabel, SB.., ?TE..,
+        ?VBL.., ?W..)
 
 
 c_ Window(?W..):
@@ -65,7 +65,7 @@ c_ Window(?W..):
         sWT..("Spin Boxes")
 
     ___ createSpinBoxes 
-        spinBoxesGroup _ QGroupBox("Spinboxes")
+        spinBoxesGroup _ ?GB..("Spinboxes")
 
         integerLabel _ QLabel("Enter a value between %d and %d:" % (-20, 20))
         integerSpinBox _ SB..()
@@ -98,7 +98,7 @@ c_ Window(?W..):
         spinBoxesGroup.sL..(spinBoxLayout)
 
     ___ createDateTimeEdits 
-        editsGroup _ QGroupBox("Date and time spin boxes")
+        editsGroup _ ?GB..("Date and time spin boxes")
 
         dateLabel _ ?L..
         dateEdit _ ?DE..(?D...currentDate())
@@ -156,7 +156,7 @@ c_ Window(?W..):
                     meetingEdit.maximumTime().toString(__.ISODate)))
 
     ___ createDoubleSpinBoxes 
-        doubleSpinBoxesGroup _ QGroupBox("Double precision spinboxes")
+        doubleSpinBoxesGroup _ ?GB..("Double precision spinboxes")
 
         precisionLabel _ QLabel("Number of decimal places to show:")
         precisionSpinBox _ SB..()

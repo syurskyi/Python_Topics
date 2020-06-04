@@ -1,5 +1,5 @@
 ____ ?.?C.. ______ *
-____ ?.QtWidgets ______ *
+____ ?.?W.. ______ *
 ____ ?.?G.. ______ *
 ____ ?.QtWebEngineWidgets ______ *
 ____ ?.QtPrintSupport ______ *
@@ -17,28 +17,28 @@ c_ AboutDialog(QDialog):
         buttonBox.accepted.c__(accept)
         buttonBox.rejected.c__(reject)
 
-        layout _ QVBoxLayout()
+        layout _ ?VBL..()
 
         title _ QLabel("Mozarella Ashbadger")
         font _ title.font()
         font.sPS..(20)
         title.sF..(font)
 
-        layout.addWidget(title)
+        layout.aW..(title)
 
         logo _ ?L..
         logo.sP..(?P..(__.pa__.join('images', 'ma-icon-128.png')))
-        layout.addWidget(logo)
+        layout.aW..(logo)
 
-        layout.addWidget(QLabel("Version 23.35.211.233232"))
-        layout.addWidget(QLabel("Copyright 2015 Mozarella Inc."))
+        layout.aW..(QLabel("Version 23.35.211.233232"))
+        layout.aW..(QLabel("Copyright 2015 Mozarella Inc."))
 
         ___ i __ ra..(0, layout.count()):
             layout.itemAt(i).setAlignment(__.AlignHCenter)
 
-        layout.addWidget(buttonBox)
+        layout.aW..(buttonBox)
 
-        setLayout(layout)
+        sL..(layout)
 
 
 c_ MainWindow(?MW..):
@@ -85,11 +85,11 @@ c_ MainWindow(?MW..):
 
         httpsicon _ ?L..  # Yes, really!
         httpsicon.sP..(?P..(__.pa__.join('images', 'lock-nossl.png')))
-        navtb.addWidget(httpsicon)
+        navtb.aW..(httpsicon)
 
         urlbar _ QLineEdit()
         urlbar.rP__.c__(navigate_to_url)
-        navtb.addWidget(urlbar)
+        navtb.aW..(urlbar)
 
         stop_btn _ ?A..(?I..(__.pa__.join('images', 'cross-circle.png')), "Stop", self)
         stop_btn.setStatusTip("Stop loading current page")

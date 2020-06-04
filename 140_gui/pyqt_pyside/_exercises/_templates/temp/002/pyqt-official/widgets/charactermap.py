@@ -49,7 +49,7 @@ ____ ?.?G.. ______ (QClipboard, ?F.., QFontDatabase, QFontMetrics,
         QPainter)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QFontComboBox,
         QHBoxLayout, QLabel, QLineEdit, ?MW.., ?PB.., QScrollArea,
-        QToolTip, QVBoxLayout, ?W..)
+        QToolTip, ?VBL.., ?W..)
 
 
 c_ CharacterWidget(?W..):

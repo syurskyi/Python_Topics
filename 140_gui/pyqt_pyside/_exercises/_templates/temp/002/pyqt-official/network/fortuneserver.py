@@ -46,7 +46,7 @@ ______ random
 
 ____ ?.?C.. ______ QByteArray, ?DS.., QIODevice, QSettings
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
-        ?MB.., ?PB.., QVBoxLayout)
+        ?MB.., ?PB.., ?VBL..)
 ____ ?.?N.. ______ (?HA.., QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpServer)

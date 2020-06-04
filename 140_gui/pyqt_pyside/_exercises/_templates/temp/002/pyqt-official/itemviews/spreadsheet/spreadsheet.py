@@ -43,9 +43,9 @@
 ____ ?.?C.. ______ ?D.., QPoint, __
 ____ ?.?G.. ______ ?C.., ?I.., ?KS.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
-        ?CB, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
+        ?CB, QDialog, QFontDialog, ?GB.., QHBoxLayout, QLabel,
         QLineEdit, ?MW.., ?MB.., ?PB.., ?TW..,
-        QTableWidgetItem, QToolBar, QVBoxLayout)
+        ?TWI.., QToolBar, ?VBL..)
 ____ ?.QtPrintSupport ______ QPrinter, QPrintPreviewDialog
 
 ______ spreadsheet_rc
@@ -75,7 +75,7 @@ c_ SpreadSheet ?MW..
         table _ ?TW..(rows, cols, self)
         ___ c __ ra..(cols):
             character _ chr(ord('A') + c)
-            table.setHorizontalHeaderItem(c, QTableWidgetItem(character))
+            table.setHorizontalHeaderItem(c, ?TWI..(character))
 
         table.setItemPrototype(table.item(rows - 1, cols - 1))
         table.sID..(SpreadSheetDelegate(self))
@@ -255,7 +255,7 @@ c_ SpreadSheet ?MW..
             cols.ap..(chr(ord('A') + c))
         addDialog _ QDialog
         addDialog.sWT..(title)
-        group _ QGroupBox(title, addDialog)
+        group _ ?GB..(title, addDialog)
         group.sMS..(250, 100)
         cell1Label _ QLabel(c1Text, group)
         cell1RowInput _ ?CB(group)
@@ -297,7 +297,7 @@ c_ SpreadSheet ?MW..
         buttonsLayout.addSpacing(10)
         buttonsLayout.aW..(cancelButton)
 
-        dialogLayout _ QVBoxLayout(addDialog)
+        dialogLayout _ ?VBL..(addDialog)
         dialogLayout.aW..(group)
         dialogLayout.addStretch(1)
         dialogLayout.aI..(buttonsLayout)
@@ -321,7 +321,7 @@ c_ SpreadSheet ?MW..
         outLayout.aW..(outColInput)
         outLayout.addSpacing(10)
         outLayout.aW..(outRowInput)
-        vLayout _ QVBoxLayout(group)
+        vLayout _ ?VBL..(group)
         vLayout.aI..(cell1Layout)
         vLayout.aW..(operatorLabel)
         vLayout.aI..(cell2Layout)

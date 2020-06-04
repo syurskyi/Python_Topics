@@ -39,12 +39,12 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?C..
-____ ?.?W.. ______ QTableWidgetItem
+____ ?.?W.. ______ ?TWI..
 
 ____ util ______ decode_pos
 
 
-c_ SpreadSheetItem(QTableWidgetItem):
+c_ SpreadSheetItem(?TWI..):
 
     ___  -   text_None):
         __ t__ __ no. N..:

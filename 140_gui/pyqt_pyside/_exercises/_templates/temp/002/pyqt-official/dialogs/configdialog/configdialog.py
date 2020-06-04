@@ -45,9 +45,9 @@
 ____ ?.?C.. ______ ?D.., ?S.., __
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
-        QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
+        QDialog, QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit,
         QListView, QListWidget, QListWidgetItem, ?PB.., SB..,
-        ?SW.., QVBoxLayout, ?W..)
+        ?SW.., ?VBL.., ?W..)
 
 ______ configdialog_rc
 
@@ -56,7 +56,7 @@ c_ ConfigurationPage(?W..):
     ___  -   parent_None):
         s__(ConfigurationPage, self). - (parent)
 
-        configGroup _ QGroupBox("Server configuration")
+        configGroup _ ?GB..("Server configuration")
 
         serverLabel _ QLabel("Server:")
         serverCombo _ ?CB()
@@ -85,12 +85,12 @@ c_ UpdatePage(?W..):
     ___  -   parent_None):
         s__(UpdatePage, self). - (parent)
 
-        updateGroup _ QGroupBox("Package selection")
+        updateGroup _ ?GB..("Package selection")
         systemCheckBox _ QCheckBox("Update system")
         appsCheckBox _ QCheckBox("Update applications")
         docsCheckBox _ QCheckBox("Update documentation")
 
-        packageGroup _ QGroupBox("Existing packages")
+        packageGroup _ ?GB..("Existing packages")
 
         packageList _ QListWidget()
         qtItem _ QListWidgetItem(packageList)
@@ -126,7 +126,7 @@ c_ QueryPage(?W..):
     ___  -   parent_None):
         s__(QueryPage, self). - (parent)
 
-        packagesGroup _ QGroupBox("Look for packages")
+        packagesGroup _ ?GB..("Look for packages")
 
         nameLabel _ QLabel("Name:")
         nameEdit _ ?LE..

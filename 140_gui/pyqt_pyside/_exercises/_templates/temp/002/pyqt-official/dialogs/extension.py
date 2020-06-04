@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QHBoxLayout, QLabel, QLayout, QLineEdit,
-        ?PB.., QVBoxLayout, ?W..)
+        ?PB.., ?VBL.., ?W..)
 
 
 c_ FindDialog(QDialog):

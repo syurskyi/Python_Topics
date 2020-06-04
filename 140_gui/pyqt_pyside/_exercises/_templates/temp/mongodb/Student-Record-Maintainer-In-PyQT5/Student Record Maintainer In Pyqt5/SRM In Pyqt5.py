@@ -1,5 +1,5 @@
 ____ ?.?C.. ______ *
-____ ?.QtWidgets ______ *
+____ ?.?W.. ______ *
 ____ ?.?G.. ______ *
 ____ ?.QtWebEngineWidgets ______ QWebEngineView
 ____ ?.QtPrintSupport ______ *
@@ -13,7 +13,7 @@ c_ InsertDialog(QDialog):
     ___  -   *args, **kwargs):
         s__(InsertDialog, self). - (*args, **kwargs)
 
-        QBtn _ QPushButton()
+        QBtn _ ?PB..()
         QBtn.sT..("Register")
 
         setWindowTitle("Add Student")
@@ -26,11 +26,11 @@ c_ InsertDialog(QDialog):
 
         QBtn.c__.c__(addstudent)
 
-        layout _ QVBoxLayout()
+        layout _ ?VBL..()
 
         nameinput _ QLineEdit()
         nameinput.setPlaceholderText("Name")
-        layout.addWidget(nameinput)
+        layout.aW..(nameinput)
 
         branchinput _ QComboBox()
         branchinput.addItem("Chemical Engg")
@@ -39,7 +39,7 @@ c_ InsertDialog(QDialog):
         branchinput.addItem("Electronics and Communication")
         branchinput.addItem("Computer Engineering")
         branchinput.addItem("Information Technology")
-        layout.addWidget(branchinput)
+        layout.aW..(branchinput)
 
         seminput _ QComboBox()
         seminput.addItem("1")
@@ -50,18 +50,18 @@ c_ InsertDialog(QDialog):
         seminput.addItem("6")
         seminput.addItem("7")
         seminput.addItem("8")
-        layout.addWidget(seminput)
+        layout.aW..(seminput)
 
         mobileinput _ QLineEdit()
         mobileinput.setPlaceholderText("Mobile No.")
-        layout.addWidget(mobileinput)
+        layout.aW..(mobileinput)
 
         addressinput _ QLineEdit()
         addressinput.setPlaceholderText("Address")
-        layout.addWidget(addressinput)
+        layout.aW..(addressinput)
 
-        layout.addWidget(QBtn)
-        setLayout(layout)
+        layout.aW..(QBtn)
+        sL..(layout)
 
     ___ addstudent
 
@@ -92,22 +92,22 @@ c_ SearchDialog(QDialog):
     ___  -   *args, **kwargs):
         s__(SearchDialog, self). - (*args, **kwargs)
 
-        QBtn _ QPushButton()
+        QBtn _ ?PB..()
         QBtn.sT..("Search")
 
         setWindowTitle("Search user")
         setFixedWidth(300)
         setFixedHeight(100)
         QBtn.c__.c__(searchstudent)
-        layout _ QVBoxLayout()
+        layout _ ?VBL..()
 
         searchinput _ QLineEdit()
         onlyInt _ QIntValidator()
         searchinput.setValidator(onlyInt)
         searchinput.setPlaceholderText("Roll No.")
-        layout.addWidget(searchinput)
-        layout.addWidget(QBtn)
-        setLayout(layout)
+        layout.aW..(searchinput)
+        layout.aW..(QBtn)
+        sL..(layout)
 
     ___ searchstudent
 
@@ -130,22 +130,22 @@ c_ DeleteDialog(QDialog):
     ___  -   *args, **kwargs):
         s__(DeleteDialog, self). - (*args, **kwargs)
 
-        QBtn _ QPushButton()
+        QBtn _ ?PB..()
         QBtn.sT..("Delete")
 
         setWindowTitle("Delete Student")
         setFixedWidth(300)
         setFixedHeight(100)
         QBtn.c__.c__(deletestudent)
-        layout _ QVBoxLayout()
+        layout _ ?VBL..()
 
         deleteinput _ QLineEdit()
         onlyInt _ QIntValidator()
         deleteinput.setValidator(onlyInt)
         deleteinput.setPlaceholderText("Roll No.")
-        layout.addWidget(deleteinput)
-        layout.addWidget(QBtn)
-        setLayout(layout)
+        layout.aW..(deleteinput)
+        layout.aW..(QBtn)
+        sL..(layout)
 
     ___ deletestudent
 
@@ -180,7 +180,7 @@ c_ AboutDialog(QDialog):
         buttonBox.accepted.c__(accept)
         buttonBox.rejected.c__(reject)
 
-        layout _ QVBoxLayout()
+        layout _ ?VBL..()
         
         setWindowTitle("About")
         title _ QLabel("Student Record Maintainer In PyQt5")
@@ -194,16 +194,16 @@ c_ AboutDialog(QDialog):
         labelpic.setPixmap(pixmap)
         labelpic.setFixedHeight(150)
 
-        layout.addWidget(title)
+        layout.aW..(title)
 
-        layout.addWidget(QLabel("v2.0"))
-        layout.addWidget(QLabel("Copyright Okay Dexter 2019"))
-        layout.addWidget(labelpic)
+        layout.aW..(QLabel("v2.0"))
+        layout.aW..(QLabel("Copyright Okay Dexter 2019"))
+        layout.aW..(labelpic)
 
 
-        layout.addWidget(buttonBox)
+        layout.aW..(buttonBox)
 
-        setLayout(layout)
+        sL..(layout)
 
 
 c_ MainWindow(?MW..):
@@ -222,16 +222,16 @@ c_ MainWindow(?MW..):
         setWindowTitle("Student Record Maintainer In PyQT5")
         setMinimumSize(800, 600)
 
-        tableWidget _ QTableWidget()
+        tableWidget _ ?TW..()
         setCentralWidget(tableWidget)
         tableWidget.setAlternatingRowColors T..
         tableWidget.sCC..(6)
         tableWidget.hH.. .setCascadingSectionResizes F..
         tableWidget.hH.. .sSIS.. F..
         tableWidget.hH.. .setStretchLastSection T..
-        tableWidget.verticalHeader().setVisible F..
-        tableWidget.verticalHeader().setCascadingSectionResizes F..
-        tableWidget.verticalHeader().setStretchLastSection F..
+        tableWidget.vH.. .setVisible F..
+        tableWidget.vH.. .setCascadingSectionResizes F..
+        tableWidget.vH.. .setStretchLastSection F..
         tableWidget.sHHL..(("Roll No.", "Name", "Branch", "Sem", "Mobile","Address"))
 
         toolbar _ QToolBar()
@@ -282,11 +282,11 @@ c_ MainWindow(?MW..):
         connection _ sqlite3.c__("database.db")
         query _ "SELECT * FROM students"
         result _ connection.execute(query)
-        tableWidget.setRowCount(0)
+        tableWidget.sRC..(0)
         ___ row_number, row_data in enumerate(result):
             tableWidget.insertRow(row_number)
             ___ column_number, data in enumerate(row_data):
-                tableWidget.setItem(row_number, column_number,QTableWidgetItem(st.(data)))
+                tableWidget.setItem(row_number, column_number,?TWI..(st.(data)))
         connection.close()
 
     ___ handlePaintRequest  printer):

@@ -15,7 +15,7 @@ c_ Ui_MainWindow o..
         MainWindow.r..(400, 413)
         centralwidget _ ?W...?W..(MainWindow)
         centralwidget.setObjectName("centralwidget")
-        vboxlayout _ ?W...QVBoxLayout(centralwidget)
+        vboxlayout _ ?W...?VBL..(centralwidget)
         vboxlayout.setContentsMargins(9, 9, 9, 9)
         vboxlayout.setSpacing(6)
         vboxlayout.setObjectName("vboxlayout")

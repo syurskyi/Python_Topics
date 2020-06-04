@@ -1,9 +1,9 @@
 ____ ?.?C.. ______ __, QTimer
 ____ ?.?G.. ______ QPalette, QIcon
-____ ?.QtWidgets ______ QWidget, QPlainTextEdit, QPushButton, QVBoxLayout, QHBoxLayout, QSpacerItem, QSizePolicy
+____ ?.?W.. ______ ?W.., QPlainTextEdit, ?PB.., ?VBL.., QHBoxLayout, QSpacerItem, QSizePolicy
 
 
-c_ LogWidget(QWidget):
+c_ LogWidget(?W..):
     ___  -   parent_None):
         s__(LogWidget, self). - (parent)
 
@@ -22,27 +22,27 @@ c_ LogWidget(QWidget):
         logText.setReadOnly T..
 
         # Buttons
-        sendButton _ QPushButton(QIcon('img/email.png'), 'Send Logs')
+        sendButton _ ?PB..(QIcon('img/email.png'), 'Send Logs')
         sendButton.click.c__(sendLogs)
-        forceButton _ QPushButton(QIcon('img/refresh.png'), 'Force Refresh')
+        forceButton _ ?PB..(QIcon('img/refresh.png'), 'Force Refresh')
         forceButton.click.c__(forceRefresh)
-        clearButton _ QPushButton(QIcon('img/eraser.png'), 'Clear Logs')
+        clearButton _ ?PB..(QIcon('img/eraser.png'), 'Clear Logs')
         clearButton.click.c__(clearLogs)
 
         # Layouts
-        layout _ QVBoxLayout(self)
+        layout _ ?VBL..(self)
         layout.setContentsMargins(1, 1, 1, 1)
-        layout.addWidget(logText)
+        layout.aW..(logText)
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.setContentsMargins(1, 0, 1, 2)
-        buttonLayout.addWidget(sendButton)
+        buttonLayout.aW..(sendButton)
         buttonLayout.addItem(QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum))
-        buttonLayout.addWidget(forceButton)
-        buttonLayout.addWidget(clearButton)
+        buttonLayout.aW..(forceButton)
+        buttonLayout.aW..(clearButton)
 
         layout.addLayout(buttonLayout)
-        setLayout(layout)
+        sL..(layout)
 
         # Timer
         logTimer _ QTimer()

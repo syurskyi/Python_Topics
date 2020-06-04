@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ ?T..
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
-        ?PB.., QVBoxLayout)
+        ?PB.., ?VBL..)
 ____ ?.?N.. ______ ?HA.., QUdpSocket
 
 

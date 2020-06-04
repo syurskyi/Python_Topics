@@ -44,8 +44,8 @@
 
 ____ ?.?C.. ______ QFileInfo
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QFrame, QGroupBox, QLabel, QLineEdit, QListWidget,
-        ?TW.., QVBoxLayout, ?W..)
+        QDialogButtonBox, QFrame, ?GB.., QLabel, QLineEdit, QListWidget,
+        ?TW.., ?VBL.., ?W..)
 
 
 c_ TabDialog(QDialog):
@@ -115,7 +115,7 @@ c_ PermissionsTab(?W..):
     ___  -   fileInfo, parent_None):
         s__(PermissionsTab, self). - (parent)
 
-        permissionsGroup _ QGroupBox("Permissions")
+        permissionsGroup _ ?GB..("Permissions")
 
         readable _ QCheckBox("Readable")
         __ fileInfo.isReadable
@@ -129,7 +129,7 @@ c_ PermissionsTab(?W..):
         __ fileInfo.isExecutable
             executable.sC__( st.
 
-        ownerGroup _ QGroupBox("Ownership")
+        ownerGroup _ ?GB..("Ownership")
 
         ownerLabel _ QLabel("Owner")
         ownerValueLabel _ QLabel(fileInfo.owner())

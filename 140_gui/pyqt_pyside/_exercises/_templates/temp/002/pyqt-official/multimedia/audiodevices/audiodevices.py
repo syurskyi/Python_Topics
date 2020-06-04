@@ -43,7 +43,7 @@
 
 
 ____ ?.?M.. ______ QAudio, QAudioDeviceInfo, QAudioFormat
-____ ?.?W.. ______ ?A.., QTableWidgetItem, ?MW..
+____ ?.?W.. ______ ?A.., ?TWI.., ?MW..
 
 ____ ui_audiodevicesbase ______ Ui_AudioDevicesBase
 
@@ -214,7 +214,7 @@ c_ AudioTest(AudioDevicesBase):
                                 f...setByteOrder(endian)
 
                                 __ deviceInfo.isFormatSupported(f..):
-                                    allFormatsTable.setRowCount(row + 1)
+                                    allFormatsTable.sRC..(row + 1)
 
                                     setFormatValue(row, 0, f...codec())
                                     setFormatValue(row, 1,
@@ -233,7 +233,7 @@ c_ AudioTest(AudioDevicesBase):
                                     row +_ 1
 
     ___ setFormatValue  row, column, value):
-        allFormatsTable.setItem(row, column, QTableWidgetItem(value))
+        allFormatsTable.setItem(row, column, ?TWI..(value))
 
     ___ sampleRateChanged  idx):
         settings.setSampleRate(in.(sampleRateBox.itemText(idx)))

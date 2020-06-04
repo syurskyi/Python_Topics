@@ -15,14 +15,14 @@ c_ Ui_MainWindow o..
         MainWindow.r..(573, 468)
         centralwidget _ ?W...?W..(MainWindow)
         centralwidget.setObjectName("centralwidget")
-        vboxlayout _ ?W...QVBoxLayout(centralwidget)
+        vboxlayout _ ?W...?VBL..(centralwidget)
         vboxlayout.setContentsMargins(0, 0, 0, 0)
         vboxlayout.setSpacing(0)
         vboxlayout.setObjectName("vboxlayout")
         view _ ?W...QTreeView(centralwidget)
         view.setAlternatingRowColors( st.
-        view.setSelectionBehavior(?W...QAbstractItemView.SelectItems)
-        view.setHorizontalScrollMode(?W...QAbstractItemView.ScrollPerPixel)
+        view.setSelectionBehavior(?W...?AIV...SelectItems)
+        view.setHorizontalScrollMode(?W...?AIV...ScrollPerPixel)
         view.setAnimated F..
         view.setAllColumnsShowFocus( st.
         view.setObjectName("view")

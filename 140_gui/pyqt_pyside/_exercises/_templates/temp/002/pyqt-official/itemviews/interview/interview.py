@@ -54,7 +54,7 @@
 ____ ?.?C.. ______ (QAbstractItemModel, QFileInfo, QItemSelectionModel,
         QModelIndex, __)
 ____ ?.?G.. ______ ?I..
-____ ?.?W.. ______ (QAbstractItemView, ?A..,
+____ ?.?W.. ______ (?AIV.., ?A..,
         QFileIconProvider, QListView, QSplitter, QTableView, QTreeView)
 
 
@@ -158,7 +158,7 @@ ___ main(args):
     table.sM..(data)
     table.setSelectionModel(selections)
     table.hH.. .setSectionsMovable( st.
-    table.verticalHeader().setSectionsMovable( st.
+    table.vH.. .setSectionsMovable( st.
     # Set StaticContents to enable minimal repaints on resizes.
     table.viewport().setAttribute(__.WA_StaticContents)
     page.aW..(table)
@@ -175,7 +175,7 @@ ___ main(args):
     li...sM..(data)
     li...setSelectionModel(selections)
     li...setViewMode(QListView.IconMode)
-    li...setSelectionMode(QAbstractItemView.ExtendedSelection)
+    li...setSelectionMode(?AIV...ExtendedSelection)
     li...setAlternatingRowColors F..
     li...viewport().setAttribute(__.WA_StaticContents)
     li...setAttribute(__.WA_MacShowFocusRect, F..)

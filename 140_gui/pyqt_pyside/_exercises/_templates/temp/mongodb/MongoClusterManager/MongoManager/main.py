@@ -1,5 +1,5 @@
 ______ ___
-____ ?.QtWidgets ______ ?A..
+____ ?.?W.. ______ ?A..
 
 ____ gui.MainWindow ______ MainWindow
 

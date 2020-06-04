@@ -13,7 +13,7 @@ c_ Ui_CategoryWindow o..
         CategoryWindow.setObjectName("CategoryWindow")
         CategoryWindow.setWindowModality(?C...__.WindowModal)
         CategoryWindow.r..(409, 120)
-        verticalLayout _ ?W...QVBoxLayout(CategoryWindow)
+        verticalLayout _ ?W...?VBL..(CategoryWindow)
         verticalLayout.setObjectName("verticalLayout")
         label _ ?W...QLabel(CategoryWindow)
         label.setObjectName("label")

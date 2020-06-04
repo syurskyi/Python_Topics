@@ -43,9 +43,9 @@
 
 
 ____ ?.?W.. ______ (?A.., ?CB, QDialog,
-        QDialogButtonBox, ?FL.., QGridLayout, QGroupBox, QHBoxLayout,
+        QDialogButtonBox, ?FL.., QGridLayout, ?GB.., QHBoxLayout,
         QLabel, QLineEdit, ?M.., QMenuBar, ?PB.., SB.., ?TE..,
-        QVBoxLayout)
+        ?VBL..)
 
 
 c_ Dialog(QDialog):
@@ -90,7 +90,7 @@ c_ Dialog(QDialog):
         exitAction.t__.c..(accept)
 
     ___ createHorizontalGroupBox 
-        horizontalGroupBox _ QGroupBox("Horizontal layout")
+        horizontalGroupBox _ ?GB..("Horizontal layout")
         layout _ ?HBL..
 
         ___ i __ ra..(Dialog.NumButtons):
@@ -100,7 +100,7 @@ c_ Dialog(QDialog):
         horizontalGroupBox.sL..(layout)
 
     ___ createGridGroupBox 
-        gridGroupBox _ QGroupBox("Grid layout")
+        gridGroupBox _ ?GB..("Grid layout")
         layout _ QGridLayout()
 
         ___ i __ ra..(Dialog.NumGridRows):
@@ -120,7 +120,7 @@ c_ Dialog(QDialog):
         gridGroupBox.sL..(layout)
 
     ___ createFormGroupBox 
-        formGroupBox _ QGroupBox("Form layout")
+        formGroupBox _ ?GB..("Form layout")
         layout _ ?FL..
         layout.aR..(QLabel("Line 1:"), QLineEdit())
         layout.aR..(QLabel("Line 2, long text:"), ?CB())

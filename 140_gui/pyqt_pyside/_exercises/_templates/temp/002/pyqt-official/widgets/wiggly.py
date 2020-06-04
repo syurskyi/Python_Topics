@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QBasicTimer
 ____ ?.?G.. ______ ?C.., QFontMetrics, QPainter, ?P..
-____ ?.?W.. ______ (?A.., QDialog, QLineEdit, QVBoxLayout,
+____ ?.?W.. ______ (?A.., QDialog, QLineEdit, ?VBL..,
         ?W..)
 
 

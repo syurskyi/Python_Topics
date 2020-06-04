@@ -47,11 +47,11 @@ ______ ___
 ____ ?.?C.. ______ (QByteArray, ?D.., ?DT__, QEvent, QPoint, QRect,
         QRegExp, QSettings, ?S.., __, ?T.., ?T..)
 ____ ?.?G.. ______ ?C.., ?I.., QRegExpValidator, ?V..
-____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
+____ ?.?W.. ______ (?AIV.., ?A.., ?A..,
         ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
-        QGroupBox, ?HV.., QInputDialog, QItemDelegate, QLabel, QLineEdit,
+        ?GB.., ?HV.., QInputDialog, QItemDelegate, QLabel, QLineEdit,
         ?MW.., ?MB.., ?S.., QStyleOptionViewItem, ?TW..,
-        QTableWidgetItem, QTreeWidget, ?TWI.., QVBoxLayout)
+        ?TWI.., QTreeWidget, ?TWI.., ?VBL..)
 
 
 c_ MainWindow ?MW..
@@ -229,12 +229,12 @@ c_ LocationDialog(QDialog):
         applicationLabel _ QLabel("&Application:")
         applicationLabel.setBuddy(applicationComboBox)
 
-        locationsGroupBox _ QGroupBox("Setting Locations")
+        locationsGroupBox _ ?GB..("Setting Locations")
 
         locationsTable _ ?TW..()
-        locationsTable.setSelectionMode(QAbstractItemView.SingleSelection)
-        locationsTable.setSelectionBehavior(QAbstractItemView.SelectRows)
-        locationsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        locationsTable.setSelectionMode(?AIV...SingleSelection)
+        locationsTable.setSelectionBehavior(?AIV...SelectRows)
+        locationsTable.setEditTriggers(?AIV...NoEditTriggers)
         locationsTable.sCC..(2)
         locationsTable.sHHL..(("Location", "Access"))
         locationsTable.hH.. .sSRM..(0, ?HV...Stretch)
@@ -294,7 +294,7 @@ c_ LocationDialog(QDialog):
 
     ___ updateLocationsTable
         locationsTable.setUpdatesEnabled F..
-        locationsTable.setRowCount(0)
+        locationsTable.sRC..(0)
 
         ___ i __ ra..(2):
             __ i __ 0:
@@ -318,12 +318,12 @@ c_ LocationDialog(QDialog):
                         organization(), actualApplication)
 
                 row _ locationsTable.rowCount()
-                locationsTable.setRowCount(row + 1)
+                locationsTable.sRC..(row + 1)
 
-                item0 _ QTableWidgetItem()
+                item0 _ ?TWI..()
                 item0.sT..(settings.fileName())
 
-                item1 _ QTableWidgetItem()
+                item1 _ ?TWI..()
                 disable _ no. (settings.childKeys() or settings.childGroups())
 
                 __ row __ 0:
@@ -402,7 +402,7 @@ c_ SettingsTree(QTreeWidget):
             refresh()
 
     ___ maybeRefresh
-        __ s.. !_ QAbstractItemView.EditingState:
+        __ s.. !_ ?AIV...EditingState:
             refresh()
 
     ___ refresh

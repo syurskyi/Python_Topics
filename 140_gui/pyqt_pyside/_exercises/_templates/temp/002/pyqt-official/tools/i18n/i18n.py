@@ -45,8 +45,8 @@
 ____ ?.?C.. ______ ?D.., QEvent, __, QT_TRANSLATE_NOOP, QTranslator
 ____ ?.?G.. ______ ?C.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, ?MW..,
-        QRadioButton, QVBoxLayout, ?W..)
+        QDialogButtonBox, QGridLayout, ?GB.., QListWidget, ?MW..,
+        QRadioButton, ?VBL.., ?W..)
 
 ______ i18n_rc
 
@@ -58,7 +58,7 @@ c_ LanguageChooser(QDialog):
         qmFileForCheckBoxMap _   # dict
         mainWindowForCheckBoxMap _   # dict
 
-        groupBox _ QGroupBox("Languages")
+        groupBox _ ?GB..("Languages")
 
         groupBoxLayout _ QGridLayout()
 
@@ -194,7 +194,7 @@ c_ MainWindow ?MW..
             setLayoutDirection(__.RightToLeft)
 
     ___ createGroupBox 
-        groupBox _ QGroupBox(tr("View"))
+        groupBox _ ?GB..(tr("View"))
         perspectiveRadioButton _ QRadioButton(tr("Perspective"))
         isometricRadioButton _ QRadioButton(tr("Isometric"))
         obliqueRadioButton _ QRadioButton(tr("Oblique"))

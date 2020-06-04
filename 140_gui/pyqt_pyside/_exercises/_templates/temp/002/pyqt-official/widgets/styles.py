@@ -44,10 +44,10 @@
 
 ____ ?.?C.. ______ ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
-        QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
+        QDial, QDialog, QGridLayout, ?GB.., QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
         ?S.., SB.., ?SF.., ?TW.., ?TW.., ?TE..,
-        QVBoxLayout, ?W..)
+        ?VBL.., ?W..)
 
 
 c_ WidgetGallery(QDialog):
@@ -119,7 +119,7 @@ c_ WidgetGallery(QDialog):
         progressBar.sV..(curVal + (maxVal - curVal) / 100)
 
     ___ createTopLeftGroupBox 
-        topLeftGroupBox _ QGroupBox("Group 1")
+        topLeftGroupBox _ ?GB..("Group 1")
 
         radioButton1 _ QRadioButton("Radio button 1")
         radioButton2 _ QRadioButton("Radio button 2")
@@ -139,7 +139,7 @@ c_ WidgetGallery(QDialog):
         topLeftGroupBox.sL..(layout)    
 
     ___ createTopRightGroupBox 
-        topRightGroupBox _ QGroupBox("Group 2")
+        topRightGroupBox _ ?GB..("Group 2")
 
         defaultPushButton _ ?PB..("Default Push Button")
         defaultPushButton.setDefault( st.
@@ -190,7 +190,7 @@ c_ WidgetGallery(QDialog):
         bottomLeftTabWidget.aT..(tab2, "Text &Edit")
 
     ___ createBottomRightGroupBox 
-        bottomRightGroupBox _ QGroupBox("Group 3")
+        bottomRightGroupBox _ ?GB..("Group 3")
         bottomRightGroupBox.setCheckable( st.
         bottomRightGroupBox.sC__( st.
 

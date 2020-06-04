@@ -63,7 +63,7 @@ c_ FreezeTableWidget(QTableView):
         frozenTableView _ QTableView
         init()
         hH.. .sectionResized.c..(updateSectionWidth)
-        verticalHeader().sectionResized.c..(updateSectionHeight)
+        vH.. .sectionResized.c..(updateSectionHeight)
         frozenTableView.verticalScrollBar().valueChanged.c..(
             verticalScrollBar().sV..)
         verticalScrollBar().valueChanged.c..(
@@ -72,7 +72,7 @@ c_ FreezeTableWidget(QTableView):
     ___ init
         frozenTableView.sM..(model())
         frozenTableView.sFP..(__.NF..)
-        frozenTableView.verticalHeader().hide()
+        frozenTableView.vH.. .hide()
         frozenTableView.hH.. .sSRM..(
                 ?HV...Fixed)
         viewport().stackUnder(frozenTableView)
@@ -125,7 +125,7 @@ c_ FreezeTableWidget(QTableView):
 
     ___ updateFrozenTableGeometry
         frozenTableView.setGeometry(
-                verticalHeader().width() + frameWidth(),
+                vH.. .width() + frameWidth(),
                 frameWidth(), columnWidth(0),
                 viewport().height() + hH.. .height())
 

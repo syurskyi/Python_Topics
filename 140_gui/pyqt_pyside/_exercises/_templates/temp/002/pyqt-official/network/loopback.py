@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QByteArray, __
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
-        ?MB.., QProgressBar, ?PB.., QVBoxLayout)
+        ?MB.., QProgressBar, ?PB.., ?VBL..)
 ____ ?.?N.. ______ ?HA.., QTcpServer, QTcpSocket
 
 

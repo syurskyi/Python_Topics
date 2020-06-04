@@ -1,4 +1,4 @@
-____ ?.QtWidgets ______ *
+____ ?.?W.. ______ *
 ____ ?.?C.. ______ QStringListModel
 
 app _ ?A..([])

@@ -1,6 +1,6 @@
 
 ____ ?.?C.. ______ QSize, __
-____ ?.QtWidgets ______ QStylePainter, QStyleOptionTab, QTabBar, QStyle
+____ ?.?W.. ______ QStylePainter, QStyleOptionTab, QTabBar, QStyle
 
 
 c_ TabBarWidget(QTabBar):

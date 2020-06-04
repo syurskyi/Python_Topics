@@ -46,7 +46,7 @@ ____ ?.?C.. ______ (?D.., ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
 ____ ?.?G.. ______ ?SIM..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
-        QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView, QVBoxLayout,
+        ?GB.., QHBoxLayout, QLabel, QLineEdit, QTreeView, ?VBL..,
         ?W..)
 
 
@@ -77,8 +77,8 @@ c_ Window(?W..):
         proxyModel _ SortFilterProxyModel()
         proxyModel.setDynamicSortFilter( st.
 
-        sourceGroupBox _ QGroupBox("Original Model")
-        proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
+        sourceGroupBox _ ?GB..("Original Model")
+        proxyGroupBox _ ?GB..("Sorted/Filtered Model")
 
         sourceView _ ?TV..
         sourceView.setRootIsDecorated F..

@@ -1,5 +1,5 @@
 ____ ?.?G.. ______ *
-____ ?.QtWidgets ______ *
+____ ?.?W.. ______ *
 ____ ?.?C.. ______ *
 
 ____ MainWindow ______ Ui_MainWindow
@@ -681,7 +681,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         canvas.setMouseTracking( st.
         # Enable focus to capture key inputs.
         canvas.setFocusPolicy(__.StrongFocus)
-        horizontalLayout.addWidget(canvas)
+        horizontalLayout.aW..(canvas)
 
         # Setup the mode buttons
         mode_group _ QButtonGroup
@@ -744,7 +744,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         # Setup the drawing toolbar.
         fontselect _ QFontComboBox()
-        fontToolbar.addWidget(fontselect)
+        fontToolbar.aW..(fontselect)
         fontselect.currentFontChanged.c__(l___ f: canvas.set_config('font', f))
         fontselect.setCurrentFont(?F..('Times'))
 
@@ -754,7 +754,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
-        fontToolbar.addWidget(fontsize)
+        fontToolbar.aW..(fontsize)
 
         fontToolbar.aA..(actionBold)
         actionBold.t___.c__(l___ s: canvas.set_config('bold', s))
@@ -765,12 +765,12 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         sizeicon _ ?L..
         sizeicon.sP..(?P..(__.pa__.join('images', 'border-weight.png')))
-        drawingToolbar.addWidget(sizeicon)
+        drawingToolbar.aW..(sizeicon)
         sizeselect _ ?S..()
         sizeselect.setRange(1,20)
         sizeselect.setOrientation(__.H..)
         sizeselect.valueChanged.c__(l___ s: canvas.set_config('size', s))
-        drawingToolbar.addWidget(sizeselect)
+        drawingToolbar.aW..(sizeselect)
 
         actionFillShapes.t___.c__(l___ s: canvas.set_config('fill', s))
         drawingToolbar.aA..(actionFillShapes)

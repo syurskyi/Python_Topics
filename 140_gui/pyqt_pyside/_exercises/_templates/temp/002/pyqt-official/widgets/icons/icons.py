@@ -44,11 +44,11 @@
 
 ____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
 ____ ?.?G.. ______ ?I.., QImage, ?P.., ?P..
-____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
-        ?A.., ?CB, ?FD.., QFrame, QGridLayout, QGroupBox,
+____ ?.?W.. ______ (?AIV.., ?A.., QActionGroup,
+        ?A.., ?CB, ?FD.., QFrame, QGridLayout, ?GB..,
         QHBoxLayout, ?HV.., QItemDelegate, QLabel, ?MW..,
         ?MB.., QRadioButton, QSizePolicy, SB.., ?S..,
-        ?SF.., ?TW.., QTableWidgetItem, QVBoxLayout, ?W..)
+        ?SF.., ?TW.., ?TWI.., ?VBL.., ?W..)
 
 
 c_ IconSizeSpinBox(SB..):
@@ -301,15 +301,15 @@ c_ MainWindow ?MW..
 
         ___ fileName __ fileNames:
             row _ imagesTable.rowCount()
-            imagesTable.setRowCount(row + 1)
+            imagesTable.sRC..(row + 1)
 
             imageName _ QFileInfo(fileName).baseName()
-            item0 _ QTableWidgetItem(imageName)
+            item0 _ ?TWI..(imageName)
             item0.setData(__.UserRole, fileName)
             item0.setFlags(item0.flags() & ~__.IIE..)
 
-            item1 _ QTableWidgetItem("Normal")
-            item2 _ QTableWidgetItem("Off")
+            item1 _ ?TWI..("Normal")
+            item2 _ ?TWI..("Off")
 
             __ guessModeStateAct.isChecked
                 __ '_act' __ fileName:
@@ -331,11 +331,11 @@ c_ MainWindow ?MW..
             item0.setCheckState(__.Checked)
 
     ___ removeAllImages 
-        imagesTable.setRowCount(0)
+        imagesTable.sRC..(0)
         changeIcon()
 
     ___ createPreviewGroupBox 
-        previewGroupBox _ QGroupBox("Preview")
+        previewGroupBox _ ?GB..("Preview")
 
         previewArea _ IconPreviewArea()
 
@@ -344,10 +344,10 @@ c_ MainWindow ?MW..
         previewGroupBox.sL..(layout)
 
     ___ createImagesGroupBox 
-        imagesGroupBox _ QGroupBox("Images")
+        imagesGroupBox _ ?GB..("Images")
 
         imagesTable _ ?TW..()
-        imagesTable.setSelectionMode(QAbstractItemView.NoSelection)
+        imagesTable.setSelectionMode(?AIV...NoSelection)
         imagesTable.sID..(ImageDelegate(self))
 
         imagesTable.hH.. .setDefaultSectionSize(90)
@@ -356,7 +356,7 @@ c_ MainWindow ?MW..
         imagesTable.hH.. .sSRM..(0, ?HV...Stretch)
         imagesTable.hH.. .sSRM..(1, ?HV...Fixed)
         imagesTable.hH.. .sSRM..(2, ?HV...Fixed)
-        imagesTable.verticalHeader().hide()
+        imagesTable.vH.. .hide()
 
         imagesTable.itemChanged.c..(changeIcon)
 
@@ -365,7 +365,7 @@ c_ MainWindow ?MW..
         imagesGroupBox.sL..(layout)
 
     ___ createIconSizeGroupBox 
-        iconSizeGroupBox _ QGroupBox("Icon Size")
+        iconSizeGroupBox _ ?GB..("Icon Size")
 
         smallRadioButton _ QRadioButton()
         largeRadioButton _ QRadioButton()

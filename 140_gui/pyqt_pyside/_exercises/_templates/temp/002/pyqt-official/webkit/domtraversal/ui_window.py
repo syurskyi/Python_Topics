@@ -15,7 +15,7 @@ c_ Ui_Window o..
         Window.r..(800, 600)
         centralwidget _ ?W...?W..(Window)
         centralwidget.setObjectName("centralwidget")
-        verticalLayout_2 _ ?W...QVBoxLayout(centralwidget)
+        verticalLayout_2 _ ?W...?VBL..(centralwidget)
         verticalLayout_2.setContentsMargins(-1, 4, -1, 4)
         verticalLayout_2.setObjectName("verticalLayout_2")
         webView _ QtWebKitWidgets.QWebView(centralwidget)
@@ -35,7 +35,7 @@ c_ Ui_Window o..
         dockWidget.setObjectName("dockWidget")
         dockWidgetContents _ ?W...?W..
         dockWidgetContents.setObjectName("dockWidgetContents")
-        verticalLayout _ ?W...QVBoxLayout(dockWidgetContents)
+        verticalLayout _ ?W...?VBL..(dockWidgetContents)
         verticalLayout.setContentsMargins(4, 4, 4, 4)
         verticalLayout.setObjectName("verticalLayout")
         treeWidget _ ?W...QTreeWidget(dockWidgetContents)

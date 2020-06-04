@@ -46,7 +46,7 @@ ____ ?.?C.. ______ ?D.., __, ?U..
 ____ ?.?M.. ______ ?MC.., ?MP..
 ____ ?.?MW.. ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
-        ?PB.., QSizePolicy, ?S.., ?S.., QVBoxLayout, ?W..)
+        ?PB.., QSizePolicy, ?S.., ?S.., ?VBL.., ?W..)
 
 
 c_ VideoPlayer(?W..):
