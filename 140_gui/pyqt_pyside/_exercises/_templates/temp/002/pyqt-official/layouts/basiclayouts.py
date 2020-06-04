@@ -44,7 +44,7 @@
 
 ____ ?.?W.. ______ (?A.., ?CB, QDialog,
         QDialogButtonBox, ?FL.., QGridLayout, QGroupBox, QHBoxLayout,
-        QLabel, QLineEdit, QMenu, QMenuBar, ?PB.., SB.., ?TE..,
+        QLabel, QLineEdit, ?M.., QMenuBar, ?PB.., SB.., ?TE..,
         QVBoxLayout)
 
 
@@ -83,7 +83,7 @@ c_ Dialog(QDialog):
     ___ createMenu 
         menuBar _ QMenuBar()
 
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         exitAction _ fileMenu.aA..("E&xit")
         menuBar.aM..(fileMenu)
 

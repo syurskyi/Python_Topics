@@ -54,7 +54,7 @@ ____ ?.?N.. ______ (?AS.., ?HA.., QNetworkInterface,
 c_ FortuneThread(?T..):
     newFortune _ pS.. st.
 
-    error _ pS..(int, st.)
+    error _ pS..(in., st.)
 
     ___  -   parent_None):
         s__(FortuneThread, self). - (parent)
@@ -182,7 +182,7 @@ c_ BlockingClient(?W..):
     ___ requestNewFortune
         getFortuneButton.sE.. F..
         thread.requestNewFortune(hostLineEdit.t__(),
-                int(portLineEdit.t__()))
+                in.(portLineEdit.t__()))
 
     ___ showFortune  nextFortune):
         __ nextFortune __ currentFortune:

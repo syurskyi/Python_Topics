@@ -7,7 +7,7 @@ ____ ?.?MW.. ______ *
 
 ______ os
 ______ ___
-______ time
+______ t__
 
 
 c_ MainWindow ?MW..
@@ -73,7 +73,7 @@ c_ MainWindow ?MW..
         save_seq _ 0
 
     ___ take_photo
-        timestamp _ time.strftime("%d-%b-%Y-%H_%M_%S")
+        timestamp _ t__.strftime("%d-%b-%Y-%H_%M_%S")
         capture.capture(__.p__ .join(save_path, "%s-%04d-%s.jpg" % (
             current_camera_name,
             save_seq,

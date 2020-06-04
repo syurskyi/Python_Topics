@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ QImage, QImageWriter, QPainter, ?P.., qRgb
 ____ ?.?W.. ______ (?A.., ?A.., QColorDialog, ?FD..,
-        QInputDialog, ?MW.., QMenu, ?MB.., ?W..)
+        QInputDialog, ?MW.., ?M.., ?MB.., ?W..)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 
@@ -261,24 +261,24 @@ c_ MainWindow ?MW..
                 triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
-        saveAsMenu _ QMenu("&Save As", self)
+        saveAsMenu _ ?M..("&Save As", self)
         ___ action __ saveAsActs:
             saveAsMenu.aA..(action)
 
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         fileMenu.aA..(openAct)
         fileMenu.aM..(saveAsMenu)
         fileMenu.aA..(printAct)
         fileMenu.addSeparator()
         fileMenu.aA..(exitAct)
 
-        optionMenu _ QMenu("&Options", self)
+        optionMenu _ ?M..("&Options", self)
         optionMenu.aA..(penColorAct)
         optionMenu.aA..(penWidthAct)
         optionMenu.addSeparator()
         optionMenu.aA..(clearScreenAct)
 
-        helpMenu _ QMenu("&Help", self)
+        helpMenu _ ?M..("&Help", self)
         helpMenu.aA..(aboutAct)
         helpMenu.aA..(aboutQtAct)
 

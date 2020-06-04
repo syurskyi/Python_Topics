@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QFile, QStringListModel, __
-____ ?.?G.. ______ QCursor, ?KS.., QTextCursor
+____ ?.?G.. ______ ?C.., ?KS.., QTextCursor
 ____ ?.?W.. ______ (?A.., ?A.., QCompleter, ?MW..,
         ?MB.., ?TE..)
 
@@ -173,7 +173,7 @@ c_ MainWindow ?MW..
         __ no. f.o..(QFile.ReadOnly):
             r_ QStringListModel(completer)
 
-        ?A...setOverrideCursor(QCursor(__.WaitCursor))
+        ?A...setOverrideCursor(?C..(__.WaitCursor))
 
         words _   # list
         w__ no. f.atEnd

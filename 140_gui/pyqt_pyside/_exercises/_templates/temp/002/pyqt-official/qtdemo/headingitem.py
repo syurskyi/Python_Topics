@@ -65,7 +65,7 @@ c_ HeadingItem(DemoItem):
         xShadow _ 3.0
         yShadow _ 3.0
 
-        image _ QImage(int((w + xShadow) * sx), int((h + yShadow) * sy),
+        image _ QImage(in.((w + xShadow) * sx), in.((h + yShadow) * sy),
                 QImage.Format_ARGB32_Premultiplied)
         image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
@@ -82,7 +82,7 @@ c_ HeadingItem(DemoItem):
         pen_shadow _ ?P..()
         pen_shadow.sB..(brush_shadow)
         painter.sP..(pen_shadow)
-        painter.drawText(int(xShadow), int(yShadow), int(w), int(h),
+        painter.drawText(in.(xShadow), in.(yShadow), in.(w), in.(h),
                 __.AlignLeft, t__)
 
         # Draw text.
@@ -94,7 +94,7 @@ c_ HeadingItem(DemoItem):
         pen_text _ ?P..()
         pen_text.sB..(brush_text)
         painter.sP..(pen_text)
-        painter.drawText(0, 0, int(w), int(h), __.AlignLeft, t__)
+        painter.drawText(0, 0, in.(w), in.(h), __.AlignLeft, t__)
 
         r_ image
 

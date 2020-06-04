@@ -114,11 +114,11 @@ c_ TetrixBoard(QFrame):
     BoardWidth _ 10
     BoardHeight _ 22
 
-    scoreChanged _ pS..(int)
+    scoreChanged _ pS..(in.)
 
-    levelChanged _ pS..(int)
+    levelChanged _ pS..(in.)
 
-    linesRemovedChanged _ pS..(int)
+    linesRemovedChanged _ pS..(in.)
 
     ___  -   parent_None):
         s__(TetrixBoard, self). - (parent)

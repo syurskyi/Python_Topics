@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFileInfo,
 ____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
         ?P.., ?P.., qRed)
 ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
-        QGridLayout, QLabel, QLayout, ?MW.., QMenu, ?MB..,
+        QGridLayout, QLabel, QLayout, ?MW.., ?M.., ?MB..,
         ?PB.., QVBoxLayout)
 
 
@@ -179,9 +179,9 @@ c_ ScreenWidget(QFrame):
         newImage _ newImage _ originalImage.copy()
 
         # Create CMY components for the ink being used.
-        cyanInk _ float(255 - ?C..(paintColor).red()) / 255.0
-        magentaInk _ float(255 - ?C..(paintColor).green()) / 255.0
-        yellowInk _ float(255 - ?C..(paintColor).blue()) / 255.0
+        cyanInk _ fl..(255 - ?C..(paintColor).red()) / 255.0
+        magentaInk _ fl..(255 - ?C..(paintColor).green()) / 255.0
+        yellowInk _ fl..(255 - ?C..(paintColor).blue()) / 255.0
 
         convert _ convertMap[maskColor]
 
@@ -196,9 +196,9 @@ c_ ScreenWidget(QFrame):
                     amount _ 255 - convert(p)
 
                 newColor _ ?C..(
-                    255 - min(int(amount * cyanInk), 255),
-                    255 - min(int(amount * magentaInk), 255),
-                    255 - min(int(amount * yellowInk), 255))
+                    255 - min(in.(amount * cyanInk), 255),
+                    255 - min(in.(amount * magentaInk), 255),
+                    255 - min(in.(amount * yellowInk), 255))
 
                 newImage.setPixel(x, y, newColor.rgb())
 
@@ -278,8 +278,8 @@ c_ Viewer ?MW..
             Initially, the Brightness menu items are disabled, but the first entry in
             the menu is checked to reflect the default brightness.
         """
-        fileMenu _ QMenu("&File", self)
-        brightnessMenu _ QMenu("&Brightness", self)
+        fileMenu _ ?M..("&File", self)
+        brightnessMenu _ ?M..("&Brightness", self)
 
         openAction _ fileMenu.aA..("&Open...")
         openAction.sS..(?KS..('Ctrl+O'))
@@ -430,24 +430,24 @@ c_ Viewer ?MW..
                 # components to determine how much of each of the inks are to
                 # be put on each screen.
                 p1 _ image1.pixel(x, y)
-                cyan1 _ float(255 - qRed(p1))
-                magenta1 _ float(255 - qGreen(p1))
-                yellow1 _ float(255 - qBlue(p1))
+                cyan1 _ fl..(255 - qRed(p1))
+                magenta1 _ fl..(255 - qGreen(p1))
+                yellow1 _ fl..(255 - qBlue(p1))
 
                 p2 _ image2.pixel(x, y)
-                cyan2 _ float(255 - qRed(p2))
-                magenta2 _ float(255 - qGreen(p2))
-                yellow2 _ float(255 - qBlue(p2))
+                cyan2 _ fl..(255 - qRed(p2))
+                magenta2 _ fl..(255 - qGreen(p2))
+                yellow2 _ fl..(255 - qBlue(p2))
 
                 p3 _ image3.pixel(x, y)
-                cyan3 _ float(255 - qRed(p3))
-                magenta3 _ float(255 - qGreen(p3))
-                yellow3 _ float(255 - qBlue(p3))
+                cyan3 _ fl..(255 - qRed(p3))
+                magenta3 _ fl..(255 - qGreen(p3))
+                yellow3 _ fl..(255 - qBlue(p3))
 
                 newColor _ ?C..(
-                    max(255 - int(cyan1 + cyan2 + cyan3) - darkness, 0),
-                    max(255 - int(magenta1 + magenta2 + magenta3) - darkness, 0),
-                    max(255 - int(yellow1 + yellow2 + yellow3) - darkness, 0))
+                    max(255 - in.(cyan1 + cyan2 + cyan3) - darkness, 0),
+                    max(255 - in.(magenta1 + magenta2 + magenta3) - darkness, 0),
+                    max(255 - in.(yellow1 + yellow2 + yellow3) - darkness, 0))
 
                 newImage.setPixel(x, y, newColor.rgb())
 
@@ -461,9 +461,9 @@ c_ Viewer ?MW..
 
         info _ QFileInfo(imageFile)
 
-        __ info.baseName() !_ '':
-            newImageFile _ QFileInfo(info.absoluteDir(),
-                    info.baseName() + '.png').absoluteFilePath()
+        __ i...baseName() !_ '':
+            newImageFile _ QFileInfo(i...absoluteDir(),
+                    i...baseName() + '.png').absoluteFilePath()
 
             __ no. finalWidget.pixmap().save(newImageFile, 'PNG'):
                 ?MB...warning  "Cannot save file",

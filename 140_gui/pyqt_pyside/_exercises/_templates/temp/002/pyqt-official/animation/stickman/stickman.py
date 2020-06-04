@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ (pP.., pS.., ?DS.., ?DT__,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
@@ -185,7 +185,7 @@ c_ StickMan(QGraphicsObject):
             node2 _ m_nodes[n2]
 
             dist _ node1.pos() - node2.pos()
-            m_perfectBoneLengths.ap..(math.hypot(dist.x(), dist.y()))
+            m_perfectBoneLengths.ap..(m__.hypot(dist.x(), dist.y()))
 
         startTimer(10)
 
@@ -228,7 +228,7 @@ c_ StickMan(QGraphicsObject):
             pos2 _ node2.pos()
 
             dist _ pos1 - pos2
-            length _ math.hypot(dist.x(), dist.y())
+            length _ m__.hypot(dist.x(), dist.y())
             diff _ (length - m_perfectBoneLengths[i]) / length
 
             p _ dist * (0.5 * diff)
@@ -322,8 +322,8 @@ c_ StickMan(QGraphicsObject):
 
             dist _ node2.pos() - node1.pos()
 
-            sinAngle _ dist.x() / math.hypot(dist.x(), dist.y())
-            angle _ math.degrees(math.asin(sinAngle))
+            sinAngle _ dist.x() / m__.hypot(dist.x(), dist.y())
+            angle _ m__.degrees(m__.asin(sinAngle))
 
             headPos _ node1.pos()
             painter.translate(headPos)
@@ -362,7 +362,7 @@ c_ StickMan(QGraphicsObject):
 
 
 c_ GraphicsView(QGraphicsView):
-    keyPressed _ pS..(int)
+    keyPressed _ pS..(in.)
 
     ___ keyPressEvent  e):
         __ e.key() __ __.Key_Escape:

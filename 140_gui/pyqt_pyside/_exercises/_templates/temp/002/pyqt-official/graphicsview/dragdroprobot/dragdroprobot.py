@@ -285,7 +285,7 @@ c_ GraphicsView(QGraphicsView):
 __ __name____ '__main__':
 
     ______ ___
-    ______ math
+    ______ m__
 
     app _ ?A..(___.a..
 
@@ -296,7 +296,7 @@ __ __name____ '__main__':
     ___ i __ ra..(10):
         item _ ColorItem()
         angle _ i*6.28 / 10.0
-        item.setPos(math.sin(angle)*150, math.cos(angle)*150)
+        item.setPos(m__.sin(angle)*150, m__.cos(angle)*150)
         scene.aI..(item)
 
     robot _ Robot()

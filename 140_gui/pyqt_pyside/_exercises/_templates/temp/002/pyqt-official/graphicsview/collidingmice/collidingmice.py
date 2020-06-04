@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, __,
         ?T.., ?T..)
@@ -55,7 +55,7 @@ ______ mice_rc
 
 
 c_ Mouse(QGraphicsItem):
-    Pi _ math.pi
+    Pi _ m__.pi
     TwoPi _ 2.0 * Pi
 
     # Create the bounding rectangle once.
@@ -135,7 +135,7 @@ c_ Mouse(QGraphicsItem):
         # Don't move too far away.
         lineToCenter _ QLineF(QPointF(0, 0), mapFromScene(0, 0))
         __ lineToCenter.length() > 150:
-            angleToCenter _ math.acos(lineToCenter.dx() / lineToCenter.length())
+            angleToCenter _ m__.acos(lineToCenter.dx() / lineToCenter.length())
             __ lineToCenter.dy() < 0:
                 angleToCenter _ Mouse.TwoPi - angleToCenter;
             angleToCenter _ Mouse.normalizeAngle((Mouse.Pi - angleToCenter) + Mouse.Pi / 2)
@@ -146,9 +146,9 @@ c_ Mouse(QGraphicsItem):
             ____ angleToCenter >_ Mouse.Pi and angleToCenter < (Mouse.Pi + Mouse.Pi / 2 + Mouse.Pi / 4):
                 # Rotate right.
                 angle +_ [-0.25, 0.25][angle < Mouse.Pi / 2]
-        ____ math.sin(angle) < 0:
+        ____ m__.sin(angle) < 0:
             angle +_ 0.25
-        ____ math.sin(angle) > 0:
+        ____ m__.sin(angle) > 0:
             angle -_ 0.25
 
         # Try not to crash with any other mice.
@@ -161,7 +161,7 @@ c_ Mouse(QGraphicsItem):
                 c___
         
             lineToMouse _ QLineF(QPointF(0, 0), mapFromItem(item, 0, 0))
-            angleToMouse _ math.acos(lineToMouse.dx() / lineToMouse.length())
+            angleToMouse _ m__.acos(lineToMouse.dx() / lineToMouse.length())
             __ lineToMouse.dy() < 0:
                 angleToMouse _ Mouse.TwoPi - angleToMouse
             angleToMouse _ Mouse.normalizeAngle((Mouse.Pi - angleToMouse) + Mouse.Pi / 2)
@@ -182,11 +182,11 @@ c_ Mouse(QGraphicsItem):
 
         speed +_ (-50 + qrand() % 100) / 100.0
 
-        dx _ math.sin(angle) * 10
+        dx _ m__.sin(angle) * 10
         mouseEyeDirection _ 0.0 __ qAbs(dx / 5) < 1 ____ dx / 5
 
         setRotation(rotation() + dx)
-        setPos(mapToParent(0, -(3 + math.sin(speed) * 3)))
+        setPos(mapToParent(0, -(3 + m__.sin(speed) * 3)))
 
 
 __ ______ __ ______
@@ -204,8 +204,8 @@ __ ______ __ ______
 
     ___ i __ ra..(MouseCount):
         mouse _ Mouse()
-        mouse.setPos(math.sin((i * 6.28) / MouseCount) * 200,
-                     math.cos((i * 6.28) / MouseCount) * 200)
+        mouse.setPos(m__.sin((i * 6.28) / MouseCount) * 200,
+                     m__.cos((i * 6.28) / MouseCount) * 200)
         scene.aI..(mouse)
 
     view _ QGraphicsView(scene)

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ (pP.., QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
@@ -377,7 +377,7 @@ c_ SplashItem(QGraphicsObject):
         painter.dRR..(3, -100 + 3, 400 - 6, 250 - 6, 25.0, 25.0)
 
         textRect _ boundingRect().adjusted(10, 10, -10, -10)
-        flags _ int(__.AlignTop | __.AlignLeft) | __.TextWordWrap
+        flags _ in.(__.AlignTop | __.AlignLeft) | __.TextWordWrap
 
         font _ ?F..()
         font.setPixelSize(18)

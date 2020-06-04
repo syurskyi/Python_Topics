@@ -1,11 +1,11 @@
 ____ ?.QtWidgets ______ *
 ____ ?.?C.. ______ QStringListModel
 
-app = ?A..([])
-model = QStringListModel([
+app _ ?A..([])
+model _ QStringListModel([
     "An element", "Another element", "Yay! Another one."
 ])
-view = QListView()
+view _ QListView()
 view.sM..(model)
 view.s..
 app.exec_()

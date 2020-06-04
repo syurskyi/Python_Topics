@@ -92,7 +92,7 @@ c_ ShapedClock(?W..):
 
     ___ paintEvent  event):
         side _ min(width(), height())
-        time _ ?T...currentTime()
+        t__ _ ?T...currentTime()
 
         painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)
@@ -103,7 +103,7 @@ c_ ShapedClock(?W..):
         painter.sB..(ShapedClock.hourColor)
 
         painter.save()
-        painter.rotate(30.0 * ((time.hour() + time.minute() / 60.0)))
+        painter.rotate(30.0 * ((t__.hour() + t__.minute() / 60.0)))
         painter.drawConvexPolygon(ShapedClock.hourHand)
         painter.restore()
 
@@ -117,7 +117,7 @@ c_ ShapedClock(?W..):
         painter.sB..(ShapedClock.minuteColor)
 
         painter.save()
-        painter.rotate(6.0 * (time.minute() + time.second() / 60.0))
+        painter.rotate(6.0 * (t__.minute() + t__.second() / 60.0))
         painter.drawConvexPolygon(ShapedClock.minuteHand)
         painter.restore()
 

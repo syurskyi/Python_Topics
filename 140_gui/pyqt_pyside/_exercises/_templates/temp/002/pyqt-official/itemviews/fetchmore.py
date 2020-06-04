@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
 
 
 c_ FileListModel(QAbstractListModel):
-    numberPopulated _ pS..(int)
+    numberPopulated _ pS..(in.)
 
     ___  -   parent_None):
         s__(FileListModel, self). - (parent)

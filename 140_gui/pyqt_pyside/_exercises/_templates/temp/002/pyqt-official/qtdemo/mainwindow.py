@@ -160,7 +160,7 @@ c_ MainWindow(QGraphicsView):
         __ on and no. Colors.noTimerUpdate:
             useTimer _ T..
             fpsTime _ ?T...currentTime()
-            updateTimer.start(int(1000 / Colors.fps))
+            updateTimer.start(in.(1000 / Colors.fps))
             update_mode _ QGraphicsView.NoViewportUpdate
         ____
             useTimer _ F..
@@ -188,7 +188,7 @@ c_ MainWindow(QGraphicsView):
 
         __ size __ 10:
             fpsHistory.s..()
-            fpsMedian _ fpsHistory[int(size / 2)]
+            fpsMedian _ fpsHistory[in.(size / 2)]
             __ fpsMedian __ 0:
                 fpsMedian _ 0.01
 
@@ -220,7 +220,7 @@ c_ MainWindow(QGraphicsView):
         checkAdapt()
 
         __ medianChanged and fpsLabel and Colors.showFps:
-            fpsLabel.sT..("FPS: %d" % int(currentFps))
+            fpsLabel.sT..("FPS: %d" % in.(currentFps))
 
         __ MenuManager.i.. .ticker:
             MenuManager.i.. .ticker.tick()
@@ -228,7 +228,7 @@ c_ MainWindow(QGraphicsView):
         viewport().update()
 
         __ useTimer:
-            updateTimer.start(int(1000 / Colors.fps))
+            updateTimer.start(in.(1000 / Colors.fps))
 
     ___ setupSceneItems
         __ Colors.showFps:
@@ -263,7 +263,7 @@ c_ MainWindow(QGraphicsView):
         doneAdapt _ T..
         forceFpsMedianCalculation()
         Colors.benchmarkFps _ fpsMedian
-        Colors.debug("- benchmark: %d FPS" % int(Colors.benchmarkFps))
+        Colors.debug("- benchmark: %d FPS" % in.(Colors.benchmarkFps))
 
         __ Colors.noAdapt:
             r_
@@ -276,7 +276,7 @@ c_ MainWindow(QGraphicsView):
                 switchTimerOnOff F..
 
                 __ fpsLabel:
-                    fpsLabel.sT..("FPS: (%d)" % int(fpsMedian))
+                    fpsLabel.sT..("FPS: (%d)" % in.(fpsMedian))
 
                 Colors.debug("- benchmark adaption: removed ticker (fps < 30)")
 
@@ -382,7 +382,7 @@ c_ MainWindow(QGraphicsView):
         __ companyLogo:
             r _ scene.sceneRect()
             ttb _ companyLogo.boundingRect()
-            companyLogo.setPos(int((r.width() - ttb.width()) / 2),
+            companyLogo.setPos(in.((r.width() - ttb.width()) / 2),
                     595 - ttb.height())
             qtb _ qtLogo.boundingRect()
             qtLogo.setPos(802 - qtb.width(), 0)

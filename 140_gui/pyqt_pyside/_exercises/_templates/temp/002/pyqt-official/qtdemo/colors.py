@@ -195,7 +195,7 @@ c_ Colors o..
             ____ s __ "-no-sync":
                 cls.noScreenSync _ T..
             ____ s.s_w_("-menu"):
-                cls.menuCount _ int(parseFloat(s, "-menu"))
+                cls.menuCount _ in.(parseFloat(s, "-menu"))
             ____ s.s_w_("-use-timer-update"):
                 cls.noTimerUpdate _ no. bool(parseFloat(s, "-use-timer-update"))
             ____ s.s_w_("-pause"):
@@ -213,7 +213,7 @@ c_ Colors o..
             ____ s __ "-use-balls":
                 cls.useButtonBalls _ T..
             ____ s.s_w_("-ticker-letters"):
-                cls.tickerLetterCount _ int(parseFloat(s, "-ticker-letters"))
+                cls.tickerLetterCount _ in.(parseFloat(s, "-ticker-letters"))
             ____ s.s_w_("-ticker-text"):
                 cls.tickerText _ parseText(s, "-ticker-text")
             ____ s.s_w_("-ticker-speed"):
@@ -223,7 +223,7 @@ c_ Colors o..
             ____ s.s_w_("-animation-speed"):
                 cls.animSpeed _ parseFloat(s, "-animation-speed")
             ____ s.s_w_("-fps"):
-                cls.fps _ int(parseFloat(s, "-fps"))
+                cls.fps _ in.(parseFloat(s, "-fps"))
             ____ s.s_w_("-h") or s.s_w_("-help"):
                 ?MB...warning(N.., "Arguments",
                         "Usage: qtdemo.py [-verbose] [-no-adapt] "
@@ -262,8 +262,8 @@ c_ Colors o..
 
 ___ parseFloat(argument, name):
     ___
-        value _ float(parseText(argument, name))
-    _____ ValueError:
+        value _ fl..(parseText(argument, name))
+    _____ V..:
         value _ 0.0
 
     r_ value

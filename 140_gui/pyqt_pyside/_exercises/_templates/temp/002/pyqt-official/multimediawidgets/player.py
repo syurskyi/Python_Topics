@@ -104,9 +104,9 @@ c_ PlaylistModel(QAbstractItemModel):
         r_ QModelIndex()
 
     ___ data  index, role_Qt.DR..):
-        __ index.iV.. and role __ __.DR..:
-            __ index.column() __ Title:
-                location _ m_playlist.media(index.row()).canonicalUrl()
+        __ i...iV.. and role __ __.DR..:
+            __ i...column() __ Title:
+                location _ m_playlist.media(i...row()).canonicalUrl()
                 r_ QFileInfo(location.pa__()).fN..
 
             r_ m_data[index]
@@ -164,9 +164,9 @@ c_ PlayerControls(?W..):
     stop _ pS..()
     next _ pS..()
     previous _ pS..()
-    changeVolume _ pS..(int)
+    changeVolume _ pS..(in.)
     changeMuting _ pS..(bool)
-    changeRate _ pS..(float)
+    changeRate _ pS..(fl..)
 
     ___  -   parent_None):
         s__(PlayerControls, self). - (parent)
@@ -280,7 +280,7 @@ c_ FrameProcessor(?O..):
 
     histogramReady _ pS..(li..)
 
-    @pyqtSlot(QVideoFrame, int)
+    @pyqtSlot(QVideoFrame, in.)
     ___ processFrame  frame, levels):
         histogram _ [0.0] * levels
 
@@ -347,7 +347,7 @@ c_ HistogramWidget(?W..):
         m_isBusy _ T..
         QMetaObject.invokeMethod(m_processor, 'processFrame',
                 __.QueuedConnection, Q_ARG(QVideoFrame, frame),
-                Q_ARG(int, m_levels))
+                Q_ARG(in., m_levels))
 
     @pyqtSlot(li..)
     ___ setHistogram  histogram):
@@ -363,7 +363,7 @@ c_ HistogramWidget(?W..):
                     ?C...fromRgb(0, 0, 0))
             r_
 
-        barWidth _ width() / float(le.(m_histogram))
+        barWidth _ width() / fl..(le.(m_histogram))
 
         ___ i, value __ en..(m_histogram):
             h _ value * height()
@@ -544,13 +544,13 @@ c_ Player(?W..):
             player.setPosition(0)
 
     ___ jump  index):
-        __ index.isValid
-            playlist.sCI..(index.row())
+        __ i...isValid
+            playlist.sCI..(i...row())
             player.play()
 
     ___ playlistPositionChanged  position):
         playlistView.sCI..(
-                playlistModel.index(position, 0))
+                playlistModel.i..(position, 0))
 
     ___ seek  seconds):
         player.setPosition(seconds * 1000)

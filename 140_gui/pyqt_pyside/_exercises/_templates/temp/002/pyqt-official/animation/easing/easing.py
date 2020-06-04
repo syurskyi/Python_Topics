@@ -77,7 +77,7 @@ c_ Animation(?PA..):
             __ dura __ 0:
                 progress _ 1.0
             ____
-                progress _ (((currentTime - 1) % dura) + 1) / float(dura)
+                progress _ (((currentTime - 1) % dura) + 1) / fl..(dura)
 
             easedProgress _ easingCurve().valueForProgress(progress)
             __ easedProgress > 1.0:
@@ -126,7 +126,7 @@ c_ Window(?W..):
         m_ui.overshootSpinBox.sV..(dummy.overshoot())
 
         m_ui.easingCurvePicker.currentRowChanged.c..(curveChanged)
-        m_ui.buttonGroup.buttonClicked[int].c..(pathChanged)
+        m_ui.buttonGroup.buttonClicked[in.].c..(pathChanged)
         m_ui.periodSpinBox.valueChanged.c..(periodChanged)
         m_ui.amplitudeSpinBox.valueChanged.c..(amplitudeChanged)
         m_ui.overshootSpinBox.valueChanged.c..(overshootChanged)
@@ -139,7 +139,7 @@ c_ Window(?W..):
 
         m_anim _ Animation(m_item, b'pos')
         m_anim.setEasingCurve(QEasingCurve.OutBounce)
-        m_ui.easingCurvePicker.setCurrentRow(int(QEasingCurve.OutBounce))
+        m_ui.easingCurvePicker.setCurrentRow(in.(QEasingCurve.OutBounce))
 
         startAnimation()
 

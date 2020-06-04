@@ -2,37 +2,37 @@ ____ d_t_ ______ d_t_, timedelta, date
 ____ itertools ______ cycle
 ______ os
 ______ ___
-______ traceback
+______ t__
 
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.QtWidgets ______ *
 ____ ?.?C.. ______ *
 
-______ numpy as np
+______ numpy __ np
 
-______ pyqtgraph as pg
+______ pyqtgraph __ pg
 ______ requests
 ______ requests_cache
 
 # CryptoCompare.com API Key
-CRYPTOCOMPARE_API_KEY = ''
+CRYPTOCOMPARE_API_KEY _ ''
 
 # Define a requests http cache to minimise API requests.
 requests_cache.install_cache(os.pa__.expanduser('~/.goodforbitcoin'))
 
 # Base currency is used to retrieve rates from bitcoinaverage.
-DEFAULT_BASE_CURRENCY = 'USD'
-AVAILABLE_BASE_CURRENCIES = ['USD', 'EUR', 'GBP']
+DEFAULT_BASE_CURRENCY _ 'USD'
+AVAILABLE_BASE_CURRENCIES _ ['USD', 'EUR', 'GBP']
 
 # The crypto currencies to retrieve data about.
-AVAILABLE_CRYPTO_CURRENCIES = ['BTC', 'ETH', 'LTC', 'EOS', 'XRP', 'BCH' ] #
-DEFAULT_DISPLAY_CURRENCIES = ['BTC', 'ETH', 'LTC']
+AVAILABLE_CRYPTO_CURRENCIES _ ['BTC', 'ETH', 'LTC', 'EOS', 'XRP', 'BCH' ] #
+DEFAULT_DISPLAY_CURRENCIES _ ['BTC', 'ETH', 'LTC']
 
 # Number of historic timepoints to plot (days).
-NUMBER_OF_TIMEPOINTS = 150
+NUMBER_OF_TIMEPOINTS _ 150
 
 # Colour cycle to use for plotting currencies.
-BREWER12PAIRED = cycle(['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00',
+BREWER12PAIRED _ cycle(['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00',
                   '#cab2d6', '#6a3d9a', '#ffff99', '#b15928' ])
 
 # Base PyQtGraph configuration.
@@ -44,35 +44,35 @@ c_ WorkerSignals(?O..):
     """
     Defines the signals available from a running worker thread.
     """
-    finished = pS..()
-    error = pS..(tuple)
-    progress = pS..(int)
-    data = pS..(dict, li..)
-    cancel = pS..()
+    finished _ pS..()
+    error _ pS..(tuple)
+    progress _ pS..(in.)
+    data _ pS..(dict, li..)
+    cancel _ pS..()
 
 
 c_ UpdateWorker(QRunnable):
     """
     Worker thread for updating currency.
     """
-    signals = WorkerSignals()
+    signals _ WorkerSignals()
 
-    ___  - (self, base_currency):
+    ___  -   base_currency):
         s__(UpdateWorker, self). - ()
-        is_interrupted = F..
-        base_currency = base_currency
+        is_interrupted _ F..
+        base_currency _ base_currency
         signals.cancel.c__(cancel)
 
     @pyqtSlot()
     ___ run
-        auth_header = {
+        auth_header _ {
             'Apikey': CRYPTOCOMPARE_API_KEY
         }
         ___
-            rates =   # dict
+            rates _   # dict
             ___ n, crypto __ en..(AVAILABLE_CRYPTO_CURRENCIES, 1):
-                url = 'https://min-api.cryptocompare.com/data/histoday?fsym={fsym}&tsym={tsym}&limit={limit}'
-                r = requests.get(
+                url _ 'https://min-api.cryptocompare.com/data/histoday?fsym={fsym}&tsym={tsym}&limit={limit}'
+                r _ requests.get(
                     url.f..(**{
                         'fsym': crypto,
                         'tsym': base_currency,
@@ -80,120 +80,120 @@ c_ UpdateWorker(QRunnable):
                         'extraParams': 'www.learnpyqt.com',
                         'format': 'json',
                     }),
-                    headers=auth_header,
+                    headers_auth_header,
                 )
                 r.raise_for_status()
-                rates[crypto] = r.json().get('Data')
+                rates[crypto] _ r.____().get('Data')
 
-                signals.progress.e..(int(100 * n / len(AVAILABLE_CRYPTO_CURRENCIES)))
+                signals.progress.e..(in.(100 * n / len(AVAILABLE_CRYPTO_CURRENCIES)))
 
-                if is_interrupted:
+                __ is_interrupted:
                     # Stop without emitting finish signals.
-                    return
+                    r_
 
-            url = 'https://min-api.cryptocompare.com/data/exchange/histoday?tsym={tsym}&limit={limit}'
-            r = requests.get(
+            url _ 'https://min-api.cryptocompare.com/data/exchange/histoday?tsym={tsym}&limit={limit}'
+            r _ requests.get(
                 url.f..(**{
                     'tsym': base_currency,
                     'limit': NUMBER_OF_TIMEPOINTS-1,
                     'extraParams': 'www.learnpyqt.com',
                     'format': 'json',
                 }),
-                headers=auth_header,
+                headers_auth_header,
             )
             r.raise_for_status()
-            volume = [d['volume'] ___ d __ r.json().get('Data')]
+            volume _ [d['volume'] ___ d __ r.____().get('Data')]
 
-        _____ E.. as e:
-            signals.error.e..((e, traceback.format_exc()))
-            return
+        _____ E.. __ e:
+            signals.error.e..((e, t__.format_exc()))
+            r_
 
         signals.data.e..(rates, volume)
         signals.finished.e..()
 
     ___ cancel
-        is_interrupted = T..
+        is_interrupted _ T..
 
 
 c_ MainWindow(?MW..):
 
-    ___  - (self, $ $$
+    ___  -   $ $$
         s__(MainWindow, self). - ($ $$)
 
-        layout = ?HBL..
+        layout _ ?HBL..
 
-        ax = pg.PlotWidget()
+        ax _ pg.PlotWidget()
         ax.showGrid(T..,  st.
 
-        line = pg.InfiniteLine(
-            pos=-20,
-            pen=pg.mkPen('k', width=3),
-            movable=F..  # We have our own code to handle dragless moving.
+        line _ pg.InfiniteLine(
+            pos_-20,
+            pen_pg.mkPen('k', width_3),
+            movable_F..  # We have our own code to handle dragless moving.
         )
 
         ax.aI..(line)
-        ax.setLabel('left', text='Rate')
-        p1 = ax.getPlotItem()
+        ax.setLabel('left', text_'Rate')
+        p1 _ ax.getPlotItem()
         p1.scene().sigMouseMoved.c__(mouse_move_handler)
 
         # Add the right-hand axis for the market activity.
-        p2 = pg.ViewBox()
-        p2.enableAutoRange(axis=pg.ViewBox.XYAxes, enable= st.
+        p2 _ pg.ViewBox()
+        p2.enableAutoRange(axis_pg.ViewBox.XYAxes, enable_ st.
         p1.showAxis('right')
         p1.scene().aI..(p2)
         p2.setXLink(p1)
-        ax2 = p1.getAxis('right')
+        ax2 _ p1.getAxis('right')
         ax2.linkToView(p2)
         ax2.setGrid(F..)
-        ax2.setLabel(text='Volume')
+        ax2.setLabel(text_'Volume')
 
-        _market_activity = pg.PlotCurveItem(
+        _market_activity _ pg.PlotCurveItem(
             np.arange(NUMBER_OF_TIMEPOINTS), np.arange(NUMBER_OF_TIMEPOINTS),
-            pen=pg.mkPen('k', style=__.DashLine, width=1)
+            pen_pg.mkPen('k', style___.DashLine, width_1)
         )
         p2.aI..(_market_activity)
 
         # Automatically rescale our twinned Y axis.
         p1.vb.sigResized.c__(update_plot_scale)
 
-        base_currency = DEFAULT_BASE_CURRENCY
+        base_currency _ DEFAULT_BASE_CURRENCY
 
         # Store a reference to lines on the plot, and items in our
         # data viewer we can update rather than redraw.
-        _data_lines = dict()
-        _data_items = dict()
-        _data_colors = dict()
-        _data_visible = DEFAULT_DISPLAY_CURRENCIES
+        _data_lines _ dict()
+        _data_items _ dict()
+        _data_colors _ dict()
+        _data_visible _ DEFAULT_DISPLAY_CURRENCIES
 
-        listView = ?TV..
-        model = QStandardItemModel()
+        listView _ ?TV..
+        model _ QStandardItemModel()
         model.sHHL..(["Currency", "Rate"])
         model.itemChanged.c__(check_check_state)
 
         listView.sM..(model)
 
-        threadpool = ?TP..()
-        worker = F..
+        threadpool _ ?TP..()
+        worker _ F..
 
         layout.addWidget(ax)
         layout.addWidget(listView)
 
-        widget = ?W..()
+        widget _ ?W..()
         widget.setLayout(layout)
         setCentralWidget(widget)
         listView.sFS..(226, 400)
         sFS..(650, 400)
 
-        toolbar = QToolBar("Main")
+        toolbar _ QToolBar("Main")
         aTB..(toolbar)
-        currencyList = ?CB()
+        currencyList _ ?CB()
 
         toolbar.addWidget(currencyList)
         update_currency_list(AVAILABLE_BASE_CURRENCIES)
         currencyList.sCT..(base_currency)
         currencyList.cTC...c__(change_base_currency)
 
-        progress = QProgressBar()
+        progress _ QProgressBar()
         progress.setRange(0, 100)
         toolbar.addWidget(progress)
 
@@ -201,88 +201,88 @@ c_ MainWindow(?MW..):
         sWT..("Goodforbitcoin")
         s..
 
-    ___ update_currency_list(self, currencies):
+    ___ update_currency_list  currencies):
         ___ currency __ currencies:
             currencyList.aI..(currency)
 
         currencyList.model().s..(0)
 
-    ___ check_check_state(self, i):
-        if not i.isCheckable():  # Skip data columns.
-            return
+    ___ check_check_state  i):
+        __ not i.isCheckable():  # Skip data columns.
+            r_
 
-        currency = i.text()
-        checked = i.checkState() __ __.Checked
+        currency _ i.t..
+        checked _ i.checkState() __ __.Checked
 
-        if currency __ _data_visible:
-            if not checked:
+        __ currency __ _data_visible:
+            __ not checked:
                 _data_visible.remove(currency)
                 redraw()
         ____:
-            if checked:
-                _data_visible.append(currency)
+            __ checked:
+                _data_visible.ap..(currency)
                 redraw()
 
-    ___ get_currency_color(self, currency):
-        if currency not __ _data_colors:
-            _data_colors[currency] = n__(BREWER12PAIRED)
+    ___ get_currency_color  currency):
+        __ currency not __ _data_colors:
+            _data_colors[currency] _ n__(BREWER12PAIRED)
 
-        return _data_colors[currency]
+        r_ _data_colors[currency]
 
-    ___ get_or_create_data_row(self, currency):
-        if currency not __ _data_items:
-            _data_items[currency] = add_data_row(currency)
-        return _data_items[currency]
+    ___ get_or_create_data_row  currency):
+        __ currency not __ _data_items:
+            _data_items[currency] _ add_data_row(currency)
+        r_ _data_items[currency]
 
-    ___ add_data_row(self, currency):
-        citem = QStandardItem()
-        citem.setText(currency)
+    ___ add_data_row  currency):
+        citem _ ?SI..()
+        citem.sT..(currency)
         citem.setForeground(?B..(QColor(
             get_currency_color(currency)
         )))
         citem.setColumnCount(2)
         citem.setCheckable( st.
-        if currency __ DEFAULT_DISPLAY_CURRENCIES:
+        __ currency __ DEFAULT_DISPLAY_CURRENCIES:
             citem.setCheckState(__.Checked)
 
-        vitem = QStandardItem()
+        vitem _ ?SI..()
 
         vitem.setTextAlignment(__.AlignRight | __.AlignVCenter)
         model.setColumnCount(2)
         model.appendRow([citem, vitem])
         model.s..(0)
-        return citem, vitem
+        r_ citem, vitem
 
-    ___ mouse_move_handler(self, pos):
-        pos = ax.getViewBox().mapSceneToView(pos)
+    ___ mouse_move_handler  pos):
+        pos _ ax.getViewBox().mapSceneToView(pos)
         line.setPos(pos.x())
-        update_data_viewer(int(pos.x()))
+        update_data_viewer(in.(pos.x()))
 
-    ___ update_data_viewer(self, i):
-        if i not __ ra..(NUMBER_OF_TIMEPOINTS):
-            return
+    ___ update_data_viewer  i):
+        __ i not __ ra..(NUMBER_OF_TIMEPOINTS):
+            r_
 
         ___ currency, data __ data.i..():
             update_data_row(currency, data[i])
 
-    ___ update_data_row(self, currency, data):
-        citem, vitem = get_or_create_data_row(currency)
-        vitem.setText("%.4f" % data['close'])
+    ___ update_data_row  currency, data):
+        citem, vitem _ get_or_create_data_row(currency)
+        vitem.sT..("%.4f" % data['close'])
 
-    ___ change_base_currency(self, currency):
-        base_currency = currency
+    ___ change_base_currency  currency):
+        base_currency _ currency
         refresh_historic_rates()
 
     ___ refresh_historic_rates
-        if worker:
+        __ worker:
             # If we have a current worker, send a kill signal
             worker.signals.cancel.e..()
 
         # Prefill our data store with None ('no data')
-        data =   # dict
-        volume = []
+        data _   # dict
+        volume _   # list
 
-        worker = UpdateWorker(base_currency)
+        worker _ UpdateWorker(base_currency)
         # Handle callbacks with data and trigger refresh.
         worker.signals.data.c__(result_data_callback)
         worker.signals.finished.c__(refresh_finished)
@@ -290,24 +290,24 @@ c_ MainWindow(?MW..):
         worker.signals.error.c__(notify_error)
         threadpool.start(worker)
 
-    ___ result_data_callback(self, rates, volume):
-        data = rates
-        volume = volume
+    ___ result_data_callback  rates, volume):
+        data _ rates
+        volume _ volume
         redraw()
         update_data_viewer(NUMBER_OF_TIMEPOINTS-1)
 
-    ___ progress_callback(self, progress):
+    ___ progress_callback  progress):
         progress.sV..(progress)
 
     ___ refresh_finished
-        worker = F..
+        worker _ F..
         redraw()
 
-    ___ notify_error(self, error):
-        e, tb = error
-        msg = QMessageBox()
-        msg.sI..(QMessageBox.Warning)
-        msg.setText(e.__class__.__name__)
+    ___ notify_error  error):
+        e, tb _ error
+        msg _ ?MB..()
+        msg.sI..(?MB...Warning)
+        msg.sT..(e.__class__.__name__)
         msg.setInformativeText(st.(e))
         msg.setDetailedText(tb)
         msg.e..()
@@ -316,55 +316,55 @@ c_ MainWindow(?MW..):
         p2.setGeometry(p1.vb.sceneBoundingRect())
 
     ___ redraw
-        y_min, y_max = ___.maxsize, 0
-        x = np.arange(NUMBER_OF_TIMEPOINTS)
+        y_min, y_max _ ___.maxsize, 0
+        x _ np.arange(NUMBER_OF_TIMEPOINTS)
 
         # Pre-process data into lists of x, y values.
         ___ currency, data __ data.i..():
-            if data:
-                _, close, high, low = zip(*[
+            __ data:
+                _, close, high, low _ zip(*[
                     (v['time'], v['close'], v['high'], v['low'])
                     ___ v __ data
                 ])
 
-                if currency __ _data_visible:
+                __ currency __ _data_visible:
                     # This line should be visible, if it's not drawn draw it.
-                    if currency not __ _data_lines:
-                        _data_lines[currency] =   # dict
-                        _data_lines[currency]['high'] = ax.plot(
+                    __ currency not __ _data_lines:
+                        _data_lines[currency] _   # dict
+                        _data_lines[currency]['high'] _ ax.plot(
                             x, high,  # Unpack a list of tuples into two lists, passed as individual args.
-                            pen=pg.mkPen(get_currency_color(currency), width=2, style=__.DotLine)
+                            pen_pg.mkPen(get_currency_color(currency), width_2, style___.DotLine)
                         )
-                        _data_lines[currency]['low'] = ax.plot(
+                        _data_lines[currency]['low'] _ ax.plot(
                             x, low,  # Unpack a list of tuples into two lists, passed as individual args.
-                            pen=pg.mkPen(get_currency_color(currency), width=2, style=__.DotLine)
+                            pen_pg.mkPen(get_currency_color(currency), width_2, style___.DotLine)
                         )
-                        _data_lines[currency]['close'] = ax.plot(
+                        _data_lines[currency]['close'] _ ax.plot(
                             x, close,  # Unpack a list of tuples into two lists, passed as individual args.
-                            pen=pg.mkPen(get_currency_color(currency), width=3)
+                            pen_pg.mkPen(get_currency_color(currency), width_3)
                         )
                     ____:
                         _data_lines[currency]['high'].setData(x, high)
                         _data_lines[currency]['low'].setData(x, low)
                         _data_lines[currency]['close'].setData(x, close)
 
-                    y_min, y_max = min(y_min, *low), max(y_max, *high)
+                    y_min, y_max _ min(y_min, *low), max(y_max, *high)
 
                 ____:
                     # This line should not be visible, if it is delete it.
-                    if currency __ _data_lines:
+                    __ currency __ _data_lines:
                         _data_lines[currency]['high'].c..
                         _data_lines[currency]['low'].c..
                         _data_lines[currency]['close'].c..
 
-        ax.setLimits(yMin=y_min * 0.9, yMax=y_max * 1.1, xMin=min(x), xMax=max(x))
+        ax.setLimits(yMin_y_min * 0.9, yMax_y_max * 1.1, xMin_min(x), xMax_max(x))
 
         _market_activity.setData(x, volume)
         p2.setYRange(0, max(volume))
 
 
-if __name__ __ '__main__':
+__ __name__ __ '__main__':
 
-    app = ?A..([])
-    window = MainWindow()
+    app _ ?A..([])
+    window _ MainWindow()
     app.e..()

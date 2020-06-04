@@ -82,7 +82,7 @@ c_ PyDemo(PyTextViewer):
     # Define the Qt signals as a sequence of C++ function signatures excluding
     # the return type.  These may be connected to other signals or slots in Qt
     # Designer.
-    zoomChanged _ pS..(int)
+    zoomChanged _ pS..(in.)
 
     # Initialise the instance.
     ___  -   parent_None):
@@ -101,7 +101,7 @@ c_ PyDemo(PyTextViewer):
 
     # The setter for the zoom property.  We also make define this as a Qt slot
     # which can be connected to Qt signals in Qt Designer.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setZoom  zoom):
         # Don't do anything if nothing has changed.
         __ _zoom __ zoom:
@@ -125,7 +125,7 @@ c_ PyDemo(PyTextViewer):
 
     # Define the zoom property.  Changing the value of this in Qt Designer's
     # property editor causes the zoom level to change dynamically.
-    zoom _ pP..(int, getZoom, setZoom, resetZoom)
+    zoom _ pP..(in., getZoom, setZoom, resetZoom)
 
 
 # The text displayed in the custom widget.

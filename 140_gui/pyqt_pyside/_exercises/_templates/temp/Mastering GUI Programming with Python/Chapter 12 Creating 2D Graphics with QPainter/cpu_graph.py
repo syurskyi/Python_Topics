@@ -6,7 +6,7 @@ ____ collections ______ deque
 
 # install via pip
 ____ psutil ______ cpu_percent
-______ math
+______ m__
 
 c_ GraphWidget ?.?W..
     """A widget to display a running graph of information"""

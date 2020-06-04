@@ -20,7 +20,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
         qtc.QRectF(405, 405, 190, 190)
     )
 
-    square_clicked _ qtc.pS..(int)
+    square_clicked _ qtc.pS..(in.)
 
     ___  -  
         s_. - ()

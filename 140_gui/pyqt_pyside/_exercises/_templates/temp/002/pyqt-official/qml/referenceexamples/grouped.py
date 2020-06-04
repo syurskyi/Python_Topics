@@ -96,7 +96,7 @@ c_ ShoeDescription(?O..):
         _brand _ ''
         _price _ 0.0
 
-    @pP..(int)
+    @pP..(in.)
     ___ size
         r_ _size
 
@@ -120,7 +120,7 @@ c_ ShoeDescription(?O..):
     ___ brand  brand):
         _brand _ brand
 
-    @pP..(float)
+    @pP..(fl..)
     ___ price
         r_ _price
 

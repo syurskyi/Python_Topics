@@ -53,7 +53,7 @@ c_ PieSlice(QQuickPaintedItem):
     ___ color  color):
         _color _ ?C..(color)
 
-    @pP..(int)
+    @pP..(in.)
     ___ fromAngle
         r_ _fromAngle
 
@@ -61,7 +61,7 @@ c_ PieSlice(QQuickPaintedItem):
     ___ fromAngle  fromAngle):
         _fromAngle _ fromAngle
 
-    @pP..(int)
+    @pP..(in.)
     ___ angleSpan
         r_ _angleSpan
 

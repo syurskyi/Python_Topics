@@ -57,7 +57,7 @@ c_ IconSizeSpinBox(SB..):
         regExp _ QRegExp("(\\d+)(\\s*[xx]\\s*\\d+)?")
 
         __ regExp.exactMatch(t__):
-            r_ int(regExp.cap(1))
+            r_ in.(regExp.cap(1))
         ____
             r_ 0
 

@@ -43,7 +43,7 @@
 
 
 ______ ___
-______ math
+______ m__
 
 ____ ?.?C.. ______ pS.., ?S.., __, ?T..
 ____ ?.?G.. ______ QOpenGLVersionProfile, ?P..
@@ -53,9 +53,9 @@ ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
 
 
 c_ GLWidget(QOpenGLWidget):
-    xRotationChanged _ pS..(int)
-    yRotationChanged _ pS..(int)
-    zRotationChanged _ pS..(int)
+    xRotationChanged _ pS..(in.)
+    yRotationChanged _ pS..(in.)
+    zRotationChanged _ pS..(in.)
 
     ___  -   parent_None):
         s__(GLWidget, self). - (parent)
@@ -189,7 +189,7 @@ c_ GLWidget(QOpenGLWidget):
         r0 _ innerRadius
         r1 _ outerRadius - toothSize / 2.0
         r2 _ outerRadius + toothSize / 2.0
-        delta _ (2.0 * math.pi / toothCount) / 4.0
+        delta _ (2.0 * m__.pi / toothCount) / 4.0
         z _ thickness / 2.0
 
         gl.glShadeModel(gl.GL_FLAT)
@@ -205,22 +205,22 @@ c_ GLWidget(QOpenGLWidget):
             gl.glBegin(gl.GL_QUAD_STRIP)
 
             ___ j __ ra..(toothCount+1):
-                angle _ 2.0 * math.pi * j / toothCount
-                gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), sign * z)
-                gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
-                gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), sign * z)
-                gl.glVertex3d(r1 * math.cos(angle + 3 * delta), r1 * math.sin(angle + 3 * delta), sign * z)
+                angle _ 2.0 * m__.pi * j / toothCount
+                gl.glVertex3d(r0 * m__.cos(angle), r0 * m__.sin(angle), sign * z)
+                gl.glVertex3d(r1 * m__.cos(angle), r1 * m__.sin(angle), sign * z)
+                gl.glVertex3d(r0 * m__.cos(angle), r0 * m__.sin(angle), sign * z)
+                gl.glVertex3d(r1 * m__.cos(angle + 3 * delta), r1 * m__.sin(angle + 3 * delta), sign * z)
 
             gl.glEnd()
 
             gl.glBegin(gl.GL_QUADS)
 
             ___ j __ ra..(toothCount):
-                angle _ 2.0 * math.pi * j / toothCount
-                gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
-                gl.glVertex3d(r2 * math.cos(angle + delta), r2 * math.sin(angle + delta), sign * z)
-                gl.glVertex3d(r2 * math.cos(angle + 2 * delta), r2 * math.sin(angle + 2 * delta), sign * z)
-                gl.glVertex3d(r1 * math.cos(angle + 3 * delta), r1 * math.sin(angle + 3 * delta), sign * z)
+                angle _ 2.0 * m__.pi * j / toothCount
+                gl.glVertex3d(r1 * m__.cos(angle), r1 * m__.sin(angle), sign * z)
+                gl.glVertex3d(r2 * m__.cos(angle + delta), r2 * m__.sin(angle + delta), sign * z)
+                gl.glVertex3d(r2 * m__.cos(angle + 2 * delta), r2 * m__.sin(angle + 2 * delta), sign * z)
+                gl.glVertex3d(r1 * m__.cos(angle + 3 * delta), r1 * m__.sin(angle + 3 * delta), sign * z)
 
             gl.glEnd()
 
@@ -228,20 +228,20 @@ c_ GLWidget(QOpenGLWidget):
 
         ___ i __ ra..(toothCount):
             ___ j __ ra..(2):
-                angle _ 2.0 * math.pi * (i + (j / 2.0)) / toothCount
+                angle _ 2.0 * m__.pi * (i + (j / 2.0)) / toothCount
                 s1 _ r1
                 s2 _ r2
 
                 __ j __ 1:
                     s1, s2 _ s2, s1
 
-                gl.glNormal3d(math.cos(angle), math.sin(angle), 0.0)
-                gl.glVertex3d(s1 * math.cos(angle), s1 * math.sin(angle), +z)
-                gl.glVertex3d(s1 * math.cos(angle), s1 * math.sin(angle), -z)
+                gl.glNormal3d(m__.cos(angle), m__.sin(angle), 0.0)
+                gl.glVertex3d(s1 * m__.cos(angle), s1 * m__.sin(angle), +z)
+                gl.glVertex3d(s1 * m__.cos(angle), s1 * m__.sin(angle), -z)
 
-                gl.glNormal3d(s2 * math.sin(angle + delta) - s1 * math.sin(angle), s1 * math.cos(angle) - s2 * math.cos(angle + delta), 0.0)
-                gl.glVertex3d(s2 * math.cos(angle + delta), s2 * math.sin(angle + delta), +z)
-                gl.glVertex3d(s2 * math.cos(angle + delta), s2 * math.sin(angle + delta), -z)
+                gl.glNormal3d(s2 * m__.sin(angle + delta) - s1 * m__.sin(angle), s1 * m__.cos(angle) - s2 * m__.cos(angle + delta), 0.0)
+                gl.glVertex3d(s2 * m__.cos(angle + delta), s2 * m__.sin(angle + delta), +z)
+                gl.glVertex3d(s2 * m__.cos(angle + delta), s2 * m__.sin(angle + delta), -z)
 
         gl.glVertex3d(r1, 0.0, +z)
         gl.glVertex3d(r1, 0.0, -z)
@@ -252,10 +252,10 @@ c_ GLWidget(QOpenGLWidget):
         gl.glBegin(gl.GL_QUAD_STRIP)
 
         ___ i __ ra..(toothCount+1):
-            angle _ i * 2.0 * math.pi / toothCount
-            gl.glNormal3d(-math.cos(angle), -math.sin(angle), 0.0)
-            gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), +z)
-            gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), -z)
+            angle _ i * 2.0 * m__.pi / toothCount
+            gl.glNormal3d(-m__.cos(angle), -m__.sin(angle), 0.0)
+            gl.glVertex3d(r0 * m__.cos(angle), r0 * m__.sin(angle), +z)
+            gl.glVertex3d(r0 * m__.cos(angle), r0 * m__.sin(angle), -z)
 
         gl.glEnd()
 

@@ -52,7 +52,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ ?ATM.., QByteArray, ?D.., QStorageInfo, __
 ____ ?.?W.. ______ QAbstractItemView, ?A.., QTreeView
@@ -63,7 +63,7 @@ ___ sizeToString(size):
         r_ "0 b"
     decimals _ 2
     units _ ["b", "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"]
-    power _ int(math.log(size, 1024))
+    power _ in.(m__.log(size, 1024))
     ___
         unit _ units[power]
     _____ IE..
@@ -71,7 +71,7 @@ ___ sizeToString(size):
         power _ le.(units) - 1
     __ power __ 0:
         decimals _ 0
-    normsize _ size / math.pow(1024, power)
+    normsize _ size / m__.pow(1024, power)
     #: this should expand to "1.23 GB"
     r_ "%0.*f %s" % (decimals, normsize, unit)
 

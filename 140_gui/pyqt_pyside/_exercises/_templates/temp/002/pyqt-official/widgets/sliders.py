@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
 
 c_ SlidersGroup(QGroupBox):
 
-    valueChanged _ pS..(int)
+    valueChanged _ pS..(in.)
 
     ___  -   orientation, title, parent_None):
         s__(SlidersGroup, self). - (title, parent)

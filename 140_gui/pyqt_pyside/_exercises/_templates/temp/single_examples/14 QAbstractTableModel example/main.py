@@ -1,28 +1,28 @@
 ____ ?.QtWidgets ______ *
 ____ ?.?C.. ______ *
 
-headers = ["Scientist name", "Birthdate", "Contribution"]
-rows = [("Newton", "1643-01-04", "Classical mechanics"),
+headers _ ["Scientist name", "Birthdate", "Contribution"]
+rows _ [("Newton", "1643-01-04", "Classical mechanics"),
         ("Einstein", "1879-03-14", "Relativity"),
         ("Darwin", "1809-02-12", "Evolution")]
 
 c_ TableModel(QAbstractTableModel):
-    ___ rowCount(self, parent):
-        return len(rows)
-    ___ columnCount(self, parent):
-        return len(headers)
-    ___ data(self, index, role):
-        if role != __.DisplayRole:
-            return QVariant()
-        return rows[index.row()][index.column()]
-    ___ headerData(self, section, orientation, role):
-        if role != __.DisplayRole or orientation != __.Horizontal:
-            return QVariant()
-        return headers[section]
+    ___ rowCount  parent):
+        r_ len(rows)
+    ___ columnCount  parent):
+        r_ len(headers)
+    ___ data  index, role):
+        __ role !_ __.DisplayRole:
+            r_ QVariant()
+        r_ rows[i...row()][i...column()]
+    ___ headerData  section, orientation, role):
+        __ role !_ __.DisplayRole or orientation !_ __.Horizontal:
+            r_ QVariant()
+        r_ headers[section]
 
-app = ?A..([])
-model = TableModel()
-view = QTableView()
+app _ ?A..([])
+model _ TableModel()
+view _ QTableView()
 view.sM..(model)
 view.s..
 app.exec_()

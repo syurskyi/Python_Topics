@@ -1,4 +1,4 @@
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.QtWidgets ______ *
 ____ ?.?C.. ______ *
 
@@ -6,16 +6,16 @@ ____ MainWindow ______ Ui_MainWindow
 
 ___
     ____ googletrans ______ Translator
-    GOOGLE_TRANSLATE_AVAILABLE = T..
+    GOOGLE_TRANSLATE_AVAILABLE _ T..
 
 _____ ImportError:
-    GOOGLE_TRANSLATE_AVAILABLE = F..
+    GOOGLE_TRANSLATE_AVAILABLE _ F..
 
-______ json
+______ ____
 ____ urllib ______ parse
 ______ requests
 
-LANGUAGES = {
+LANGUAGES _ {
     '<Detect language>': None,
     'Afrikaans': 'af',
     'Albanian': 'sq',
@@ -86,15 +86,15 @@ LANGUAGES = {
 
 c_ MainWindow(?MW.., Ui_MainWindow):
 
-    ___  - (self, $ $$
+    ___  -   $ $$
         s__(MainWindow, self). - ($ $$)
         setupUi
 
-        translator = Translator()
+        translator _ Translator()
 
         destTextEdit.setReadOnly( st.
 
-        if GOOGLE_TRANSLATE_AVAILABLE:
+        __ GOOGLE_TRANSLATE_AVAILABLE:
             srcLanguage.aI..(LANGUAGES.keys())
             srcLanguage.cTC..[st.].c__(update_src_language)
             srcLanguage.sCT..('English')
@@ -105,55 +105,55 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         s..
 
-    ___ update_src_language(self, l):
-        language_src = LANGUAGES[l]
+    ___ update_src_language  l):
+        language_src _ LANGUAGES[l]
 
-    ___ google_translate(self, text):
-        params = dict(
-            dest='en',
-            text=text
+    ___ google_translate  text):
+        params _ dict(
+            dest_'en',
+            text_text
         )
 
-        if language_src:
-            params['src'] = language_src
+        __ language_src:
+            params['src'] _ language_src
 
         ___
-            tr = translator.translate(**params)
+            tr _ translator.translate(**params)
 
         _____ E..:
             destTextEdit.setPlainText('Google translate error :(. Try translating from English')
-            return F..
+            r_ F..
 
         ____:
-            return tr.text
+            r_ tr.text
 
     ___ translate
         # Perform pre-translation to English via Google Translate.
-        if language_src != 'en':
-            text = google_translate(srcTextEdit.toPlainText())
-            if not text:
-                return F..
+        __ language_src !_ 'en':
+            text _ google_translate(srcTextEdit.toPlainText())
+            __ not text:
+                r_ F..
 
         # Already in English.
         ____:
-            text = srcTextEdit.toPlainText()
+            text _ srcTextEdit.toPlainText()
 
         # Perform translation to piraat.
-        r = requests.get(
+        r _ requests.get(
             'http://api.funtranslations.com/translate/pirate.json?%s' %
             parse.urlencode({'text': text})
         )
 
-        data = json.loads(r.text)
-        if 'error' __ data:
+        data _ ____.loads(r.text)
+        __ 'error' __ data:
             destTextEdit.setPlainText("%s\n\n%s" % (data['error']['message'], text))
         ____:
             destTextEdit.setPlainText(data['contents']['translated'])
 
 
 
-if __name__ __ '__main__':
+__ __name__ __ '__main__':
 
-    app = ?A..([])
-    window = MainWindow()
+    app _ ?A..([])
+    window _ MainWindow()
     app.e..()

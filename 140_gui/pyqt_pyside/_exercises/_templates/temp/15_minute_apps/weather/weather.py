@@ -5,7 +5,7 @@ ____ ?.?C.. ______ *
 ____ MainWindow ______ Ui_MainWindow
 
 ____ d_t_ ______ d_t_
-______ json
+______ ____
 ______ os
 ______ ___
 ______ requests
@@ -54,7 +54,7 @@ c_ WeatherWorker(QRunnable):
 
             url _ 'http://api.openweathermap.org/data/2.5/weather?%s&units=metric' % urlencode(params)
             r _ requests.g..(url)
-            weather _ json.loads(r.t__)
+            weather _ ____.loads(r.t__)
 
             # Check if we had a failure (the forecast will fail in the same way).
             __ weather['cod'] !_ 200:
@@ -62,7 +62,7 @@ c_ WeatherWorker(QRunnable):
 
             url _ 'http://api.openweathermap.org/data/2.5/forecast?%s&units=metric' % urlencode(params)
             r _ requests.g..(url)
-            forecast _ json.loads(r.t__)
+            forecast _ ____.loads(r.t__)
 
             signals.result.e..(weather, forecast)
 

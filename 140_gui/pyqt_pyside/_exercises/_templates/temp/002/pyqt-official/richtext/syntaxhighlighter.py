@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QRegExp, __
 ____ ?.?G.. ______ ?F.., QSyntaxHighlighter, QTextCharFormat
-____ ?.?W.. ______ (?A.., ?FD.., ?MW.., QMenu,
+____ ?.?W.. ______ (?A.., ?FD.., ?MW.., ?M..,
         ?MB.., ?TE..)
 
 
@@ -100,7 +100,7 @@ c_ MainWindow ?MW..
         highlighter _ Highlighter(editor.document())
 
     ___ setupFileMenu
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         mB.. .aM..(fileMenu)
 
         fileMenu.aA..("&New...", newFile, "Ctrl+N")
@@ -108,7 +108,7 @@ c_ MainWindow ?MW..
         fileMenu.aA..("E&xit", ?A...i.. .quit, "Ctrl+Q")
 
     ___ setupHelpMenu
-        helpMenu _ QMenu("&Help", self)
+        helpMenu _ ?M..("&Help", self)
         mB.. .aM..(helpMenu)
 
         helpMenu.aA..("&About", about)

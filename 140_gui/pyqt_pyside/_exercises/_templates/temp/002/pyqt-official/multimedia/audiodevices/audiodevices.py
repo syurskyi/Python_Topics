@@ -236,19 +236,19 @@ c_ AudioTest(AudioDevicesBase):
         allFormatsTable.setItem(row, column, QTableWidgetItem(value))
 
     ___ sampleRateChanged  idx):
-        settings.setSampleRate(int(sampleRateBox.itemText(idx)))
+        settings.setSampleRate(in.(sampleRateBox.itemText(idx)))
 
     ___ channelChanged  idx):
-        settings.setChannelCount(int(channelsBox.itemText(idx)))
+        settings.setChannelCount(in.(channelsBox.itemText(idx)))
 
     ___ codecChanged  idx):
         settings.setCodec(codecsBox.itemText(idx))
 
     ___ sampleSizeChanged  idx):
-        settings.setSampleSize(int(sampleSizesBox.itemText(idx)))
+        settings.setSampleSize(in.(sampleSizesBox.itemText(idx)))
 
     ___ sampleTypeChanged  idx):
-        sampleType _ int(sampleTypesBox.itemText(idx))
+        sampleType _ in.(sampleTypesBox.itemText(idx))
 
         __ sampleType __ QAudioFormat.SignedInt:
             settings.setSampleType(QAudioFormat.SignedInt)
@@ -258,7 +258,7 @@ c_ AudioTest(AudioDevicesBase):
             settings.setSampleType(QAudioFormat.Float)
 
     ___ endianChanged  idx):
-        endian _ int(endianBox.itemText(idx))
+        endian _ in.(endianBox.itemText(idx))
 
         __ endian __ QAudioFormat.LittleEndian:
             settings.setByteOrder(QAudioFormat.LittleEndian)

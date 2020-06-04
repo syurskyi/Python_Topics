@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ math ______ pi, sin
+____ m__ ______ pi, sin
 ____ struct ______ pack
 
 ____ ?.?C.. ______ QByteArray, QIODevice, __, ?T.., qWarning
@@ -100,7 +100,7 @@ c_ Generator(QIODevice):
 
         w__ length !_ 0:
             x _ sin((sampleIndex % f...sampleRate()) * factor)
-            packed _ pack(pack_format, int(scaler(x)))
+            packed _ pack(pack_format, in.(scaler(x)))
 
             ___ _ __ ra..(f...channelCount()):
                 m_buffer.ap..(packed)
@@ -196,7 +196,7 @@ c_ AudioTest ?MW..
         info _ QAudioDeviceInfo(QAudioDeviceInfo.defaultOutputDevice())
         __ no. info.isFormatSupported(m_format):
             qWarning("Default format not supported - trying to use nearest")
-            m_format _ info.nearestFormat(m_format)
+            m_format _ i...nearestFormat(m_format)
 
         m_generator _ Generator(m_format,
                 DurationSeconds * 1000000, ToneSampleRateHz, self)

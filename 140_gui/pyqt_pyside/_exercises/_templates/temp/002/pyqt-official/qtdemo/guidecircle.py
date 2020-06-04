@@ -40,14 +40,14 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ QPointF
 
 ____ guide ______ Guide
 
 
-PI2 _ 2 * math.pi
+PI2 _ 2 * m__.pi
 
 
 c_ GuideCircle(Guide):
@@ -76,15 +76,15 @@ c_ GuideCircle(Guide):
         r_ abs(radiusX * spanRad)
 
     ___ startPos
-        r_ QPointF((posX + radiusX + radiusX * math.cos(startAngleRad)) * scaleX,
-                (posY + radiusY + radiusY * math.sin(startAngleRad)) * scaleY)
+        r_ QPointF((posX + radiusX + radiusX * m__.cos(startAngleRad)) * scaleX,
+                (posY + radiusY + radiusY * m__.sin(startAngleRad)) * scaleY)
 
     ___ endPos
-        r_ QPointF((posX + radiusX + radiusX * math.cos(endAngleRad)) * scaleX,
-                (posY + radiusY + radiusY * math.sin(endAngleRad)) * scaleY)
+        r_ QPointF((posX + radiusX + radiusX * m__.cos(endAngleRad)) * scaleX,
+                (posY + radiusY + radiusY * m__.sin(endAngleRad)) * scaleY)
 
     ___ guide  item, moveSpeed):
         frame _ item.guideFrame - startLength
-        end _ QPointF((posX + radiusX + radiusX * math.cos(startAngleRad + (frame * stepAngleRad))) * scaleX,
-                (posY + radiusY + radiusY * math.sin(startAngleRad + (frame * stepAngleRad))) * scaleY)
+        end _ QPointF((posX + radiusX + radiusX * m__.cos(startAngleRad + (frame * stepAngleRad))) * scaleX,
+                (posY + radiusY + radiusY * m__.sin(startAngleRad + (frame * stepAngleRad))) * scaleY)
         move(item, end, moveSpeed)

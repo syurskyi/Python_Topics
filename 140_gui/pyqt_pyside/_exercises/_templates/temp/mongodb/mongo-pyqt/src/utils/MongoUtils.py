@@ -5,7 +5,7 @@ Created on 2014年9月20日
 
 @author: wanghch
 '''
-______ re,json
+______ __,____
 c_ MongoUtils o..
     '''
     classdocs
@@ -16,30 +16,30 @@ c_ MongoUtils o..
         '''
         Constructor
         '''
-    ___ preview(self,col,queryjson,page,limit,sort):
-        skipNum = (page - 1) * limit
-        if len(queryjson.items()) > 0:
-            query = json.dumps(queryjson)
-        else:
-            query = ""
+    ___ preview col,queryjson,page,limit,sort):
+        skipNum _ (page - 1) * limit
+        __ len(queryjson.items()) > 0:
+            query _ ____.dumps(queryjson)
+        ____
+            query _ ""
             
-        if sort == None:
-            return "db."+col+".find("+query+").limit("+str(limit)+").skip("+str(skipNum)+")"
-        else:
-            sortStr = json.dumps(sort)
-            return "db."+col+".find("+query+").sort("+sortStr+").limit("+str(limit)+").skip("+str(skipNum)+")"
+        __ sort __ N..
+            r_ "db."+col+".find("+query+").limit("+st.(limit)+").skip("+st.(skipNum)+")"
+        ____
+            sortStr _ ____.dumps(sort)
+            r_ "db."+col+".find("+query+").sort("+sortStr+").limit("+st.(limit)+").skip("+st.(skipNum)+")"
        
             
             
-    ___ parse(self,mongostmt):
-        pattern = re.compile(r'db\.([\.a-zA-Z0-9]+)\.find\(({.*})\)')
-        match = pattern.match(mongostmt.replace("'", "\""))
-        if match:
-            jsonstr = match.group(2)
-            return (match.group(1),json.loads(jsonstr))
-        return None
+    ___ parse mongostmt):
+        pattern _ __.compile(r'db\.([\.a-zA-Z0-9]+)\.find\(({.*})\)')
+        match _ pattern.match(mongostmt.replace("'", "\""))
+        __ match:
+            jsonstr _ match.group(2)
+            r_ (match.group(1),____.loads(jsonstr))
+        r_ None
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     MongoUtils()
     
     

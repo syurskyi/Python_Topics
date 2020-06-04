@@ -200,7 +200,7 @@ c_ MenuManager(?O..):
                         Score.FROM_START, Score.UNLOCK_ITEMS)
                 currentMenu _ backMenu
         ____ userCode __ MenuManager.DOWN:
-            moreMenu _ info[currentMenu]['more']
+            moreMenu _ i..[currentMenu]['more']
             __ moreMenu:
                 score.queueMovie(currentMenu + ' -bottom_out',
                         Score.FROM_START, Score.LOCK_ITEMS)
@@ -236,12 +236,12 @@ c_ MenuManager(?O..):
                 itemSelected(MenuManager.ROOT, Colors.rootMenuName)
 
         # Update back and more buttons.
-        __ info.setdefault(currentMenu,   # dict).g..('back'):
+        __ i...setdefault(currentMenu,   # dict).g..('back'):
             back_state _ TextButton.OFF
         ____
             back_state _ TextButton.DISABLED
 
-        __ info[currentMenu].g..('more'):
+        __ i..[currentMenu].g..('more'):
             more_state _ TextButton.OFF
         ____
             more_state _ TextButton.DISABLED
@@ -294,7 +294,7 @@ c_ MenuManager(?O..):
                             env.value('PATH'))
             process.setProcessEnvironment(env)
 
-        __ info[name]['changedirectory'] !_ 'false':
+        __ i..[name]['changedirectory'] !_ 'false':
             workingDirectory _ resolveDataDir(name)
             process.setWorkingDirectory(workingDirectory)
             Colors.debug("Setting working directory:", workingDirectory)
@@ -533,11 +533,11 @@ c_ MenuManager(?O..):
                 anim.sD..(1000 + (i * 20))
                 anim.sSV..(QPointF(xOffset, -ih))
                 anim.sKVA..(0.20, QPointF(xOffset, -ih))
-                anim.sKVA..(0.50, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (10 * float(i / 4.0))))
+                anim.sKVA..(0.50, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (10 * fl..(i / 4.0))))
                 anim.sKVA..(0.60, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.sKVA..(0.70, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (5 * float(i / 4.0))))
+                anim.sKVA..(0.70, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (5 * fl..(i / 4.0))))
                 anim.sKVA..(0.80, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                anim.sKVA..(0.90, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (2 * float(i / 4.0))))
+                anim.sKVA..(0.90, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (2 * fl..(i / 4.0))))
                 anim.sEV..(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 movieIn.ap..(anim)
 

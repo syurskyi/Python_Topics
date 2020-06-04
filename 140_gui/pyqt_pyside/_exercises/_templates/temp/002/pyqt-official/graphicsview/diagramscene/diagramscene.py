@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ (pS.., QLineF, QPointF, QRect, QRectF, ?S..,
         QSizeF, __)
@@ -51,7 +51,7 @@ ____ ?.?G.. ______ (?B.., ?C.., ?F.., ?I.., QIntValidator, QPainter,
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
-        QHBoxLayout, QLabel, ?MW.., QMenu, ?MB.., QSizePolicy,
+        QHBoxLayout, QLabel, ?MW.., ?M.., ?MB.., QSizePolicy,
         QToolBox, QToolButton, ?W..)
 
 ______ diagramscene_rc
@@ -123,14 +123,14 @@ c_ Arrow(QGraphicsLineItem):
         setLine(QLineF(intersectPoint, myStartItem.pos()))
         line _ line()
 
-        angle _ math.acos(line.dx() / line.length())
+        angle _ m__.acos(line.dx() / line.length())
         __ line.dy() >_ 0:
-            angle _ (math.pi * 2.0) - angle
+            angle _ (m__.pi * 2.0) - angle
 
-        arrowP1 _ line.p1() + QPointF(math.sin(angle + math.pi / 3.0) * arrowSize,
-                                        math.cos(angle + math.pi / 3) * arrowSize)
-        arrowP2 _ line.p1() + QPointF(math.sin(angle + math.pi - math.pi / 3.0) * arrowSize,
-                                        math.cos(angle + math.pi - math.pi / 3.0) * arrowSize)
+        arrowP1 _ line.p1() + QPointF(m__.sin(angle + m__.pi / 3.0) * arrowSize,
+                                        m__.cos(angle + m__.pi / 3) * arrowSize)
+        arrowP2 _ line.p1() + QPointF(m__.sin(angle + m__.pi - m__.pi / 3.0) * arrowSize,
+                                        m__.cos(angle + m__.pi - m__.pi / 3.0) * arrowSize)
 
         arrowHead.c..
         ___ point __ [line.p1(), arrowP1, arrowP2]:
@@ -217,7 +217,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
     ___ removeArrow  arrow):
         ___
             arrows.remove(arrow)
-        _____ ValueError:
+        _____ V..:
             p..
 
     ___ removeArrows
@@ -560,7 +560,7 @@ c_ MainWindow ?MW..
     ___ createToolBox
         buttonGroup _ QButtonGroup()
         buttonGroup.setExclusive F..
-        buttonGroup.buttonClicked[int].c..(buttonGroupClicked)
+        buttonGroup.buttonClicked[in.].c..(buttonGroupClicked)
 
         layout _ QGridLayout()
         layout.aW..(createCellWidget("Conditional", DiagramItem.Conditional),
@@ -734,7 +734,7 @@ c_ MainWindow ?MW..
         pointerTypeGroup.addButton(pointerButton, DiagramScene.MoveItem)
         pointerTypeGroup.addButton(linePointerButton,
                 DiagramScene.InsertLine)
-        pointerTypeGroup.buttonClicked[int].c..(pointerGroupClicked)
+        pointerTypeGroup.buttonClicked[in.].c..(pointerGroupClicked)
 
         sceneScaleCombo _ ?CB()
         sceneScaleCombo.aI..(["50%", "75%", "100%", "125%", "150%"])
@@ -786,7 +786,7 @@ c_ MainWindow ?MW..
         colors _ [__.black, __.white, __.red, __.blue, __.yellow]
         names _ ["black", "white", "red", "blue", "yellow"]
 
-        colorMenu _ QMenu
+        colorMenu _ ?M..
         ___ color, name __ zip(colors, names):
             action _ ?A..(createColorIcon(color), name, self,
                     triggered_slot)

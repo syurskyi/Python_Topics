@@ -56,11 +56,11 @@ c_ CalculatorForm(?W..):
 
         ui.setupUi
 
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ on_inputSpinBox1_valueChanged  value):
         ui.outputWidget.sT..(st.(value + ui.inputSpinBox2.value()))
 
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ on_inputSpinBox2_valueChanged  value):
         ui.outputWidget.sT..(st.(value + ui.inputSpinBox1.value()))
 

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
-        QMenu, ?PB.., QRadioButton, QVBoxLayout, ?W..)
+        ?M.., ?PB.., QRadioButton, QVBoxLayout, ?W..)
 
 
 c_ Window(?W..):
@@ -134,7 +134,7 @@ c_ Window(?W..):
         flatButton.setFlat( st.
 
         popupButton _ ?PB..("Pop&up Button")
-        menu _ QMenu
+        menu _ ?M..
         menu.aA..("&First Item")
         menu.aA..("&Second Item")
         menu.aA..("&Third Item")
@@ -142,7 +142,7 @@ c_ Window(?W..):
         popupButton.setMenu(menu)
 
         newAction _ menu.aA..("Submenu")
-        subMenu _ QMenu("Popup Submenu", self)
+        subMenu _ ?M..("Popup Submenu", self)
         subMenu.aA..("Item 1")
         subMenu.aA..("Item 2")
         subMenu.aA..("Item 3")

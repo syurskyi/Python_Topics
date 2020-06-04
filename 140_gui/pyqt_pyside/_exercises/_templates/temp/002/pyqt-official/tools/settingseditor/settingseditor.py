@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
         QGroupBox, ?HV.., QInputDialog, QItemDelegate, QLabel, QLineEdit,
         ?MW.., ?MB.., ?S.., QStyleOptionViewItem, ?TW..,
-        QTableWidgetItem, QTreeWidget, QTreeWidgetItem, QVBoxLayout)
+        QTableWidgetItem, QTreeWidget, ?TWI.., QVBoxLayout)
 
 
 c_ MainWindow ?MW..
@@ -495,9 +495,9 @@ c_ SettingsTree(QTreeWidget):
             after _ childAt(parent, index - 1)
 
         __ parent __ no. N..:
-            item _ QTreeWidgetItem(parent, after)
+            item _ ?TWI..(parent, after)
         ____
-            item _ QTreeWidgetItem  after)
+            item _ ?TWI..  after)
 
         item.sT..(0, t__)
         item.setFlags(item.flags() | __.IIE..)
@@ -529,7 +529,7 @@ c_ SettingsTree(QTreeWidget):
         r_ -1
 
     ___ moveItemForward  parent, oldIndex, newIndex):
-        ___ int __ ra..(oldIndex - newIndex):
+        ___ in. __ ra..(oldIndex - newIndex):
             deleteItem(parent, newIndex)
 
 
@@ -577,8 +577,8 @@ c_ VariantDelegate(QItemDelegate):
         dateTimeExp.setPattern(dateExp.pattern() + 'T' + timeExp.pattern())
 
     ___ paint  painter, option, index):
-        __ index.column() __ 2:
-            value _ index.model().data(index, __.UserRole)
+        __ i...column() __ 2:
+            value _ i...model().data(index, __.UserRole)
             __ no. isSupportedType(value):
                 myOption _ QStyleOptionViewItem(option)
                 myOption.state &_ ~?S...State_Enabled
@@ -588,10 +588,10 @@ c_ VariantDelegate(QItemDelegate):
         s__(VariantDelegate, self).paint(painter, option, index)
 
     ___ createEditor  parent, option, index):
-        __ index.column() !_ 2:
+        __ i...column() !_ 2:
             r_ N..
 
-        originalValue _ index.model().data(index, __.UserRole)
+        originalValue _ i...model().data(index, __.UserRole)
         __ no. isSupportedType(originalValue):
             r_ N..
 
@@ -600,9 +600,9 @@ c_ VariantDelegate(QItemDelegate):
 
         __ isinstance(originalValue, bool):
             regExp _ boolExp
-        ____ isinstance(originalValue, float):
+        ____ isinstance(originalValue, fl..):
             regExp _ doubleExp
-        ____ isinstance(originalValue, int):
+        ____ isinstance(originalValue, in.):
             regExp _ signedIntegerExp
         ____ isinstance(originalValue, QByteArray):
             regExp _ byteArrayExp
@@ -630,7 +630,7 @@ c_ VariantDelegate(QItemDelegate):
         r_ lineEdit
 
     ___ setEditorData  editor, index):
-        value _ index.model().data(index, __.UserRole)
+        value _ i...model().data(index, __.UserRole)
         __ editor __ no. N..:
             editor.sT..(displayText(value))
 
@@ -645,14 +645,14 @@ c_ VariantDelegate(QItemDelegate):
             __ state !_ ?V...A..:
                 r_
 
-        originalValue _ index.model().data(index, __.UserRole)
+        originalValue _ i...model().data(index, __.UserRole)
 
         __ isinstance(originalValue, ?C..):
             colorExp.exactMatch(t__)
-            value _ ?C..(min(int(colorExp.cap(1)), 255),
-                           min(int(colorExp.cap(2)), 255),
-                           min(int(colorExp.cap(3)), 255),
-                           min(int(colorExp.cap(4)), 255))
+            value _ ?C..(min(in.(colorExp.cap(1)), 255),
+                           min(in.(colorExp.cap(2)), 255),
+                           min(in.(colorExp.cap(3)), 255),
+                           min(in.(colorExp.cap(4)), 255))
         ____ isinstance(originalValue, ?D..):
             value _ ?D...fromString(t__, __.ISODate)
             __ no. value.isValid
@@ -667,38 +667,38 @@ c_ VariantDelegate(QItemDelegate):
                 r_
         ____ isinstance(originalValue, QPoint):
             pointExp.exactMatch(t__)
-            value _ QPoint(int(pointExp.cap(1)),
-                           int(pointExp.cap(2)))
+            value _ QPoint(in.(pointExp.cap(1)),
+                           in.(pointExp.cap(2)))
         ____ isinstance(originalValue, QRect):
             rectExp.exactMatch(t__)
-            value _ QRect(int(rectExp.cap(1)),
-                          int(rectExp.cap(2)),
-                          int(rectExp.cap(3)),
-                          int(rectExp.cap(4)))
+            value _ QRect(in.(rectExp.cap(1)),
+                          in.(rectExp.cap(2)),
+                          in.(rectExp.cap(3)),
+                          in.(rectExp.cap(4)))
         ____ isinstance(originalValue, ?S..):
             sizeExp.exactMatch(t__)
-            value _ ?S..(int(sizeExp.cap(1)),
-                          int(sizeExp.cap(2)))
+            value _ ?S..(in.(sizeExp.cap(1)),
+                          in.(sizeExp.cap(2)))
         ____ isinstance(originalValue, li..):
             value _ t__.sp..(',')
         ____
             value _ type(originalValue)(t__)
 
-        model.setData(index, displayText(value), __.DR..)
+        model.setData(i.., displayText(value), __.DR..)
         model.setData(index, value, __.UserRole)
 
     @staticmethod
     ___ isSupportedType(value):
-        r_ isinstance(value, (bool, float, int, QByteArray, st., ?C..,
+        r_ isinstance(value, (bool, fl.., in., QByteArray, st., ?C..,
                 ?D.., ?DT__, ?T.., QPoint, QRect, ?S.., li..))
 
     @staticmethod
     ___ displayText(value):
-        __ isinstance(value, (bool, int, QByteArray)):
+        __ isinstance(value, (bool, in., QByteArray)):
             r_ st.(value)
         __ isinstance(value, st.):
             r_ value
-        ____ isinstance(value, float):
+        ____ isinstance(value, fl..):
             r_ '%g' % value
         ____ isinstance(value, ?C..):
             r_ '(%u,%u,%u,%u)' % (value.red(), value.green(), value.blue(), value.alpha())

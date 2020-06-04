@@ -33096,7 +33096,7 @@ qt_resource_struct_v2 _ b"\
 \x00\x00\x01\x68\x72\x35\x69\x47\
 "
 
-qt_version _ [int(v) ___ v __ ?C...qVersion().sp..('.')]
+qt_version _ [in.(v) ___ v __ ?C...qVersion().sp..('.')]
 __ qt_version < [5, 8, 0]:
     rcc_version _ 1
     qt_resource_struct _ qt_resource_struct_v1

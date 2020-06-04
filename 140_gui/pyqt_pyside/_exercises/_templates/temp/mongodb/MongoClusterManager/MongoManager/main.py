@@ -4,10 +4,10 @@ ____ ?.QtWidgets ______ ?A..
 ____ gui.MainWindow ______ MainWindow
 
 
-if __name__ == '__main__':
-    app = ?A..(___.argv)
+__ __name__ __ '__main__':
+    app _ ?A..(___.argv)
 
-    window = MainWindow()
+    window _ MainWindow()
     window.s..
 
     ___.exit(app.e..

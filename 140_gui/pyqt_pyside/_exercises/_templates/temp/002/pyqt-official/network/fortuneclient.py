@@ -150,7 +150,7 @@ c_ Client(QDialog):
         blockSize _ 0
         tcpSocket.abort()
         tcpSocket.connectToHost(hostCombo.currentText(),
-                int(portLineEdit.t__()))
+                in.(portLineEdit.t__()))
 
     ___ readFortune
         instr _ ?DS..(tcpSocket)

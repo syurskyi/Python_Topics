@@ -41,8 +41,8 @@ c_ HWButton(qtc.?O..):
 
 c_ SensorInterface(qtc.?O..):
 
-    temperature _ qtc.pS..(float)
-    humidity _ qtc.pS..(float)
+    temperature _ qtc.pS..(fl..)
+    humidity _ qtc.pS..(fl..)
     read_time _ qtc.pS..(qtc.?T..)
 
     ___  -   pin, sensor_model, fahrenheit_False):

@@ -60,7 +60,7 @@ ScrollStep _ 20
 c_ RenderThread(?T..):
     ColormapSize _ 512
 
-    renderedImage _ pS..(QImage, float)
+    renderedImage _ pS..(QImage, fl..)
 
     ___  -   parent_None):
         s__(RenderThread, self). - (parent)
@@ -243,8 +243,8 @@ c_ MandelbrotWidget(?W..):
             painter.drawPixmap(pixmapOffset, pixmap)
         ____
             scaleFactor _ pixmapScale / curScale
-            newWidth _ int(pixmap.width() * scaleFactor)
-            newHeight _ int(pixmap.height() * scaleFactor)
+            newWidth _ in.(pixmap.width() * scaleFactor)
+            newHeight _ in.(pixmap.height() * scaleFactor)
             newX _ pixmapOffset.x() + (pixmap.width() - newWidth) / 2
             newY _ pixmapOffset.y() + (pixmap.height() - newHeight) / 2
 

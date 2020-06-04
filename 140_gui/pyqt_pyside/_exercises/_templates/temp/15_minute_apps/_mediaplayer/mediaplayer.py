@@ -30,7 +30,7 @@ c_ PlaylistModel(QAbstractListModel):
 
     ___ data  index, role):
         __ role __ __.DR..:
-            media _ playlist.media(index.row())
+            media _ playlist.media(i...row())
             r_ media.canonicalUrl().fN..
 
     ___ rowCount  index):
@@ -143,7 +143,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
     ___ playlist_position_changed  i):
         __ i > -1:
-            ix _ model.index(i)
+            ix _ model.i..(i)
             playlistView.sCI..(ix)
 
     ___ toggle_viewer  state):

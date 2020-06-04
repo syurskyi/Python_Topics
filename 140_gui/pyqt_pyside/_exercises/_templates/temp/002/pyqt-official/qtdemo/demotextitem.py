@@ -81,7 +81,7 @@ c_ DemoTextItem(DemoItem):
 
         w _ textItem.boundingRect().width()
         h _ textItem.boundingRect().height()
-        image _ QImage(int(w * sx), int(h * sy),
+        image _ QImage(in.(w * sx), in.(h * sy),
                 QImage.Format_ARGB32_Premultiplied)
         image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)

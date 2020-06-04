@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QFrame,
-        QLabel, ?MW.., QMenu, ?MB.., QSizePolicy, QVBoxLayout,
+        QLabel, ?MW.., ?M.., ?MB.., QSizePolicy, QVBoxLayout,
         ?W..)
 
 
@@ -85,7 +85,7 @@ c_ MainWindow ?MW..
         r..(480,320)
 
     ___ contextMenuEvent  event):
-        menu _ QMenu
+        menu _ ?M..
         menu.aA..(cutAct)
         menu.aA..(copyAct)
         menu.aA..(pasteAct)

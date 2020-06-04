@@ -51,7 +51,7 @@ ____ ?.?G.. ______ (?F.., QFontDatabase, QFontInfo, ?I.., ?KS..,
         ?P.., QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
-        ?CB, ?FD.., QFontComboBox, ?MW.., QMenu, ?MB..,
+        ?CB, ?FD.., QFontComboBox, ?MW.., ?M.., ?MB..,
         ?TE.., QToolBar)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter, QPrintPreviewDialog
 
@@ -74,7 +74,7 @@ c_ TextEdit ?MW..
         setupEditActions()
         setupTextActions()
 
-        helpMenu _ QMenu("Help", self)
+        helpMenu _ ?M..("Help", self)
         mB.. .aM..(helpMenu)
         helpMenu.aA..("About", about)
         helpMenu.aA..("About &Qt", ?A...i.. .aboutQt)
@@ -129,7 +129,7 @@ c_ TextEdit ?MW..
         tb.sWT..("File Actions")
         aTB..(tb)
 
-        menu _ QMenu("&File", self)
+        menu _ ?M..("&File", self)
         mB.. .aM..(menu)
 
         actionNew _ ?A..(
@@ -199,7 +199,7 @@ c_ TextEdit ?MW..
         tb.sWT..("Edit Actions")
         aTB..(tb)
 
-        menu _ QMenu("&Edit", self)
+        menu _ ?M..("&Edit", self)
         mB.. .aM..(menu)
 
         actionUndo _ ?A..(
@@ -247,7 +247,7 @@ c_ TextEdit ?MW..
         tb.sWT..("Format Actions")
         aTB..(tb)
 
-        menu _ QMenu("F&ormat", self)
+        menu _ ?M..("F&ormat", self)
         mB.. .aM..(menu)
 
         actionTextBold _ ?A..(
@@ -494,8 +494,8 @@ c_ TextEdit ?MW..
     ___ filePrintPreview 
         printer _ QPrinter(QPrinter.HighResolution)
         preview _ QPrintPreviewDialog(printer, self)
-        preview.paintRequested.c..(printPreview)
-        preview.e..
+        p__.paintRequested.c..(printPreview)
+        p__.e..
 
     ___ printPreview  printer):
         textEdit.print_(printer)
@@ -534,7 +534,7 @@ c_ TextEdit ?MW..
         mergeFormatOnWordOrSelection(fmt)
 
     ___ textSize  pointSize):
-        pointSize _ float(pointSize)
+        pointSize _ fl..(pointSize)
         __ pointSize > 0:
             fmt _ QTextCharFormat()
             fmt.setFontPointSize(pointSize)

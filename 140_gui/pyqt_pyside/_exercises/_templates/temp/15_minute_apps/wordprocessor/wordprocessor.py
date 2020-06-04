@@ -190,7 +190,7 @@ c_ MainWindow ?MW..
 
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
-        fontsize.currentIndexChanged[st.].c..(l___ s: editor.setFontPointSize(float(s)) )
+        fontsize.currentIndexChanged[st.].c..(l___ s: editor.setFontPointSize(fl..(s)) )
         format_toolbar.aW..(fontsize)
 
         bold_action _ ?A..(?I..(__.p__ .join('images', 'edit-bold.png')), "Bold", self)
@@ -286,7 +286,7 @@ c_ MainWindow ?MW..
 
         fonts.setCurrentFont(editor.currentFont())
         # Nasty, but we get the font-size as a float but want it was an int
-        fontsize.sCT..(st.(int(editor.fontPointSize())))
+        fontsize.sCT..(st.(in.(editor.fontPointSize())))
 
         italic_action.sC__(editor.fontItalic())
         underline_action.sC__(editor.fontUnderline())

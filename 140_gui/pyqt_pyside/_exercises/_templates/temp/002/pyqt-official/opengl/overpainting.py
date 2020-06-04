@@ -43,7 +43,7 @@
 
 
 ______ ___
-______ math, random
+______ m__, random
 
 ____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, ?S.., __, ?T..,
         ?T..)
@@ -76,7 +76,7 @@ c_ Bubble o..
         painter.translate(position.x() - radius,
                 position.y() - radius)
         painter.sB..(brush)
-        painter.drawEllipse(0, 0, int(2*radius), int(2*radius))
+        painter.drawEllipse(0, 0, in.(2*radius), in.(2*radius))
         painter.restore()
 
     ___ randomColor 
@@ -264,17 +264,17 @@ c_ GLWidget(QOpenGLWidget):
         NumSectors _ 200
 
         ___ i __ ra..(NumSectors):
-            angle1 _ (i * 2 * math.pi) / NumSectors
-            x5 _ 0.30 * math.sin(angle1)
-            y5 _ 0.30 * math.cos(angle1)
-            x6 _ 0.20 * math.sin(angle1)
-            y6 _ 0.20 * math.cos(angle1)
+            angle1 _ (i * 2 * m__.pi) / NumSectors
+            x5 _ 0.30 * m__.sin(angle1)
+            y5 _ 0.30 * m__.cos(angle1)
+            x6 _ 0.20 * m__.sin(angle1)
+            y6 _ 0.20 * m__.cos(angle1)
 
-            angle2 _ ((i + 1) * 2 * math.pi) / NumSectors
-            x7 _ 0.20 * math.sin(angle2)
-            y7 _ 0.20 * math.cos(angle2)
-            x8 _ 0.30 * math.sin(angle2)
-            y8 _ 0.30 * math.cos(angle2)
+            angle2 _ ((i + 1) * 2 * m__.pi) / NumSectors
+            x7 _ 0.20 * m__.sin(angle2)
+            y7 _ 0.20 * m__.cos(angle2)
+            x8 _ 0.30 * m__.sin(angle2)
+            y8 _ 0.30 * m__.cos(angle2)
 
             quad(x5, y5, x6, y6, x7, y7, x8, y8)
 
@@ -300,7 +300,7 @@ c_ GLWidget(QOpenGLWidget):
         gl.glVertex3d(x1, y1, +0.05)
 
     ___ extrude  x1, y1, x2, y2):
-        sC..(trolltechGreen.darker(250 + int(100 * x1)))
+        sC..(trolltechGreen.darker(250 + in.(100 * x1)))
 
         gl.glNormal3d((x1 + x2)/2.0, (y1 + y2)/2.0, 0.0)
         gl.glVertex3d(x1, y1, +0.05)
@@ -348,7 +348,7 @@ c_ GLWidget(QOpenGLWidget):
         border _ max(4, metrics.leading())
 
         rect _ metrics.boundingRect(0, 0, width() - 2*border,
-                int(height()*0.125), __.AlignCenter | __.TextWordWrap,
+                in.(height()*0.125), __.AlignCenter | __.TextWordWrap,
                 t__)
         painter.setRenderHint(QPainter.TextAntialiasing)
         painter.fillRect(QRect(0, 0, width(), rect.height() + 2*border),

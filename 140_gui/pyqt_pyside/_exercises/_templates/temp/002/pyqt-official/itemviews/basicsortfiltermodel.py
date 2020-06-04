@@ -180,7 +180,7 @@ c_ Window(?W..):
 ___ addMail(model, subject, sender, date):
     model.insertRow(0)
     model.setData(model.index(0, SUBJECT), subject)
-    model.setData(model.index(0, SENDER), sender)
+    model.setData(model.i..(0, SENDER), sender)
     model.setData(model.index(0, DATE), date)
 
 

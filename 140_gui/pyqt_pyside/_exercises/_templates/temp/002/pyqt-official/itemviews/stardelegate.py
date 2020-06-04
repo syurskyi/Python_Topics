@@ -43,7 +43,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ pS.., QPointF, ?S.., __
 ____ ?.?G.. ______ QPainter, QPolygonF
@@ -63,8 +63,8 @@ c_ StarRating o..
 
         starPolygon _ QPolygonF([QPointF(1.0, 0.5)])
         ___ i __ ra..(5):
-            starPolygon << QPointF(0.5 + 0.5 * math.cos(0.8 * i * math.pi),
-                                        0.5 + 0.5 * math.sin(0.8 * i * math.pi))
+            starPolygon << QPointF(0.5 + 0.5 * m__.cos(0.8 * i * m__.pi),
+                                        0.5 + 0.5 * m__.sin(0.8 * i * m__.pi))
 
         diamondPolygon _ QPolygonF()
         diamondPolygon << QPointF(0.4, 0.5) \

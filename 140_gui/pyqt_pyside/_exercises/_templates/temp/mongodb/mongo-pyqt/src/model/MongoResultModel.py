@@ -5,7 +5,7 @@ Created on 2014年9月20日
 
 @author: wanghch
 '''
-____ ?.__ ______ QStandardItemModel, QStandardItem
+____ ?.__ ______ QStandardItemModel, ?SI..
 ______ ___
 
 c_ MongoResultModel(QStandardItemModel):
@@ -21,47 +21,47 @@ c_ MongoResultModel(QStandardItemModel):
         super(MongoResultModel,self). - ()
     
     
-    ___ fillModelByCursor(self,cursor):
-        i = 0
-        setheader = False
-        modeldata = []
-        for item in cursor:
-            j = 0
-            items = item.items()
+    ___ fillModelByCursor cursor):
+        i _ 0
+        setheader _ False
+        modeldata _   # list
+        ___ item in cursor:
+            j _ 0
+            items _ item.items()
             
-            if setheader == False:
+            __ setheader __ False:
                 setColumnCount(len(items))
-                labels = item.keys()
-                if ___.version > '3':
-                    labels = sorted(labels)
-                else:
+                labels _ item.keys()
+                __ ___.version > '3':
+                    labels _ sorted(labels)
+                ____
                     labels.sort()
                 
                 setHorizontalHeaderLabels(labels)
-                setheader = True
+                setheader _ True
                 
-            modeldata.append(item)
+            modeldata.ap..(item)
             
-            for (field,value) in items:
-                try:
-                    fieldindex = labels.index(field)
-                except ValueError:
-                    labels.append(field)
-                    fieldindex = len(labels) - 1
+            ___ (field,value) in items:
+                ___
+                    fieldindex _ labels.index(field)
+                ______ V..:
+                    labels.ap..(field)
+                    fieldindex _ len(labels) - 1
                     setHorizontalHeaderLabels(labels)
                 
-                valueBytes = str(value).encode("utf_8")
-                setItem(i, fieldindex, QStandardItem(valueBytes.decode(encoding='utf_8')))
-                j += 1
-            i += 1
+                valueBytes _ st.(value).encode("utf_8")
+                setItem(i, fieldindex, ?SI..(valueBytes.decode(encoding_'utf_8')))
+                j +_ 1
+            i +_ 1
         
         
     ___ getLabels
-        return labels
+        r_ labels
     
-    ___ getModelData(self,row,field):
-        items = modeldata[row]
-        if items[field]:
-            return items[field]
-        else:
+    ___ getModelData row,field):
+        items _ modeldata[row]
+        __ items[field]:
+            r_ items[field]
+        ____
             print("error")

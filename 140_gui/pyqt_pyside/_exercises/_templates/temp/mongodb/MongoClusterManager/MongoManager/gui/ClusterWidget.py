@@ -5,48 +5,48 @@ ____ ?.QtWidgets ______ QWidget, QVBoxLayout, QGroupBox, QPushButton, QTableWidg
 
 ____ app.ConfigurationManager ______ ConfigurationManager
 
-APP_CONF = 'conf/app.conf'
-CLUSTER_CONF = 'conf/cluster.conf'
-HEADERS = ['hostname', 'port', 'role', 'status', 'installed']
+APP_CONF _ 'conf/app.conf'
+CLUSTER_CONF _ 'conf/cluster.conf'
+HEADERS _ ['hostname', 'port', 'role', 'status', 'installed']
 
 
 c_ ClusterWidget(QWidget):
-    ___  - (self, cluster, parent=None):
-        QWidget. - (self, parent)
+    ___  -   cluster, parent_None):
+        QWidget. -   parent)
 
         # Set base vars
-        cluster = cluster
-        conf_manager = ConfigurationManager()
+        cluster _ cluster
+        conf_manager _ ConfigurationManager()
 
-        configuration = {}
-        members = []
+        configuration _    # dict
+        members _   # list
 
         # Set UI
         _init_ui()
 
     ___ _load_from_conf
-        conf = conf_manager.get(CLUSTER_CONF)
+        conf _ conf_manager.get(CLUSTER_CONF)
 
-        for element in conf:
-            if element['name'] == cluster:
-                configuration = element['configuration']
-                members = element['members']
-                return True
-        return False
+        ___ element in conf:
+            __ element['name'] __ cluster:
+                configuration _ element['configuration']
+                members _ element['members']
+                r_ True
+        r_ False
 
     ___ _init_ui
         # ensure conf is loaded
-        if not _load_from_conf():
-            return False
+        __ not _load_from_conf():
+            r_ False
 
-        layout = QVBoxLayout(self)
+        layout _ QVBoxLayout(self)
 
         # Network members
-        members_group_box = QGroupBox('Members', self)
+        members_group_box _ QGroupBox('Members', self)
 
-        members_layout = QVBoxLayout(self)
+        members_layout _ QVBoxLayout(self)
 
-        members_table = QTableWidget(self)
+        members_table _ QTableWidget(self)
 
         members_table.setRowCount(1)
         members_table.setColumnCount(len(HEADERS))
@@ -55,16 +55,16 @@ c_ ClusterWidget(QWidget):
         members_table.hH.. .setSectionResizeMode(QHeaderView.Stretch)
         members_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
-        row = 0
-        for member in members:
-            column = 0
-            for key in HEADERS:
-                if key in member:
+        row _ 0
+        ___ member in members:
+            column _ 0
+            ___ key in HEADERS:
+                __ key in member:
                     members_table.setItem(row, column, QTableWidgetItem(member[key]))
-                else:
+                ____
                     members_table.setCellWidget(row, column, QPushButton('test'))
-                column += 1
-            row += 1
+                column +_ 1
+            row +_ 1
         #
         # self.members_table.setItem(0, 0, QTableWidgetItem('test'))
         # self.members_table.setItem(0, 1, QTableWidgetItem('test'))

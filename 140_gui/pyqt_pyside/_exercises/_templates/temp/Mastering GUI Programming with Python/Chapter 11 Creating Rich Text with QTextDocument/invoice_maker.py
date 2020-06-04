@@ -219,7 +219,7 @@ c_ MainWindow(qtw.?MW..):
         preview _ InvoiceView()
         main.la__ .aW..(preview)
 
-        form.submitted.c..(preview.build_invoice)
+        form.submitted.c..(p__.build_invoice)
 
         # End main UI code
         s..

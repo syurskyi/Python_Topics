@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
@@ -158,7 +158,7 @@ c_ Calculator(?W..):
 
     ___ digitClicked
         clickedButton _ sender()
-        digitValue _ int(clickedButton.t__())
+        digitValue _ in.(clickedButton.t__())
 
         __ display.t__() __ '0' and digitValue __ 0.0:
             r_
@@ -172,16 +172,16 @@ c_ Calculator(?W..):
     ___ unaryOperatorClicked
         clickedButton _ sender()
         clickedOperator _ clickedButton.t__()
-        operand _ float(display.t__())
+        operand _ fl..(display.t__())
 
         __ clickedOperator __ "Sqrt":
             __ operand < 0.0:
                 abortOperation()
                 r_
 
-            result _ math.sqrt(operand)
+            result _ m__.sqrt(operand)
         ____ clickedOperator __ u"x\N{SUPERSCRIPT TWO}":
-            result _ math.pow(operand, 2.0)
+            result _ m__.pow(operand, 2.0)
         ____ clickedOperator __ "1/x":
             __ operand __ 0.0:
                 abortOperation()
@@ -195,7 +195,7 @@ c_ Calculator(?W..):
     ___ additiveOperatorClicked
         clickedButton _ sender()
         clickedOperator _ clickedButton.t__()
-        operand _ float(display.t__())
+        operand _ fl..(display.t__())
 
         __ pendingMultiplicativeOperator:
             __ no. calculate(operand, pendingMultiplicativeOperator):
@@ -222,7 +222,7 @@ c_ Calculator(?W..):
     ___ multiplicativeOperatorClicked
         clickedButton _ sender()
         clickedOperator _ clickedButton.t__()
-        operand _ float(display.t__())
+        operand _ fl..(display.t__())
 
         __ pendingMultiplicativeOperator:
             __ no. calculate(operand, pendingMultiplicativeOperator):
@@ -237,7 +237,7 @@ c_ Calculator(?W..):
         waitingForOperand _ T..
 
     ___ equalClicked
-        operand _ float(display.t__())
+        operand _ fl..(display.t__())
 
         __ pendingMultiplicativeOperator:
             __ no. calculate(operand, pendingMultiplicativeOperator):
@@ -272,7 +272,7 @@ c_ Calculator(?W..):
 
     ___ changeSignClicked
         t__ _ display.t__()
-        value _ float(t__)
+        value _ fl..(t__)
 
         __ value > 0.0:
             t__ _ "-" + t__
@@ -316,11 +316,11 @@ c_ Calculator(?W..):
 
     ___ setMemory
         equalClicked()
-        sumInMemory _ float(display.t__())
+        sumInMemory _ fl..(display.t__())
 
     ___ addToMemory
         equalClicked()
-        sumInMemory +_ float(display.t__())
+        sumInMemory +_ fl..(display.t__())
 
     ___ createButton  t__, member):
         button _ Button(t__)

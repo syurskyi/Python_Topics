@@ -13,7 +13,7 @@ ____ ?.?W.. ______ (?A.., ?CB, QLabel, ?SW..,
 #----------------------------------------------------------------------------#
 c_ PyMultiPageWidget(?W..):
 
-    currentIndexChanged _ pS..(int)
+    currentIndexChanged _ pS..(in.)
 
     pageTitleChanged _ pS.. st.
 
@@ -48,7 +48,7 @@ c_ PyMultiPageWidget(?W..):
     ___ addPage  page):
         insertPage(count(), page)
 
-    @pyqtSlot(int, ?W..)
+    @pyqtSlot(in., ?W..)
     ___ insertPage  index, page):
         page.setParent(stackWidget)
         stackWidget.insertWidget(index, page)
@@ -58,7 +58,7 @@ c_ PyMultiPageWidget(?W..):
             page.sWT..(title)
         comboBox.iI..(index, title)
 
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ removePage  index):
         widget _ stackWidget.widget(index)
         stackWidget.removeWidget(widget)
@@ -79,7 +79,7 @@ c_ PyMultiPageWidget(?W..):
     ___ getCurrentIndex
         r_ stackWidget.currentIndex()
 
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ sCI..  index):
         __ index !_ getCurrentIndex
             stackWidget.sCI..(index)
@@ -87,7 +87,7 @@ c_ PyMultiPageWidget(?W..):
             currentIndexChanged.e..(index)
 
     pageTitle _ pP..(st., fget_getPageTitle, fset_setPageTitle, stored_False)
-    currentIndex _ pP..(int, fget_getCurrentIndex, fset_setCurrentIndex)
+    currentIndex _ pP..(in., fget_getCurrentIndex, fset_setCurrentIndex)
 
 
 #============================================================================#

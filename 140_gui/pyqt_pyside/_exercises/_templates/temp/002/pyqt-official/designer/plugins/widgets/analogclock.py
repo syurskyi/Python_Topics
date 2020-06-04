@@ -60,7 +60,7 @@ c_ PyAnalogClock(?W..):
     timeChanged _ pS..(?T..)
 
     # Emitted when the clock's time zone changes.
-    timeZoneChanged _ pS..(int)
+    timeZoneChanged _ pS..(in.)
 
     ___  -   parent_None):
 
@@ -93,8 +93,8 @@ c_ PyAnalogClock(?W..):
     ___ paintEvent  event):
 
         side _ min(width(), height())
-        time _ ?T...currentTime()
-        time _ time.addSecs(timeZoneOffset * 3600)
+        t__ _ ?T...currentTime()
+        t__ _ t__.addSecs(timeZoneOffset * 3600)
 
         painter _ QPainter()
         painter.begin
@@ -106,7 +106,7 @@ c_ PyAnalogClock(?W..):
         painter.sB..(?B..(hourColor))
 
         painter.save()
-        painter.rotate(30.0 * ((time.hour() + time.minute() / 60.0)))
+        painter.rotate(30.0 * ((t__.hour() + t__.minute() / 60.0)))
         painter.drawConvexPolygon(hourHand)
         painter.restore()
 
@@ -120,7 +120,7 @@ c_ PyAnalogClock(?W..):
         painter.sB..(?B..(minuteColor))
 
         painter.save()
-        painter.rotate(6.0 * (time.minute() + time.second() / 60.0))
+        painter.rotate(6.0 * (t__.minute() + t__.second() / 60.0))
         painter.drawConvexPolygon(minuteHand)
         painter.restore()
 
@@ -158,7 +158,7 @@ c_ PyAnalogClock(?W..):
     # and is especially useful when you want to define slots with the same
     # name that accept different argument types.
 
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setTimeZone  value):
 
         timeZoneOffset _ value
@@ -176,7 +176,7 @@ c_ PyAnalogClock(?W..):
     # Qt-style properties are defined differently to Python's properties.
     # To declare a property, we call pyqtProperty() to specify the type and,
     # in this case, getter, setter and resetter methods.
-    timeZone _ pP..(int, getTimeZone, setTimeZone, resetTimeZone)
+    timeZone _ pP..(in., getTimeZone, setTimeZone, resetTimeZone)
 
 
 __ __name__ __ "__main__":

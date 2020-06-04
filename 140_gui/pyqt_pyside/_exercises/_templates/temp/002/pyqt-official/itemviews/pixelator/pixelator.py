@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (?ATM.., ?D.., QModelIndex, QRect,
 ____ ?.?G.. ______ ?B.., qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
-        ?FD.., QHBoxLayout, QLabel, ?MW.., ?MB.., QMenu,
+        ?FD.., QHBoxLayout, QLabel, ?MW.., ?MB.., ?M..,
         QProgressDialog, SB.., ?S.., QStyleOptionViewItem, QTableView,
         QVBoxLayout, ?W..)
 
@@ -152,7 +152,7 @@ c_ MainWindow ?MW..
         pixelSizeSpinBox.sM..(32)
         pixelSizeSpinBox.sV..(12)
 
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         openAction _ fileMenu.aA..("&Open...")
         openAction.sS..("Ctrl+O")
 
@@ -163,7 +163,7 @@ c_ MainWindow ?MW..
         quitAction _ fileMenu.aA..("E&xit")
         quitAction.sS..("Ctrl+Q")
 
-        helpMenu _ QMenu("&Help", self)
+        helpMenu _ ?M..("&Help", self)
         aboutAction _ helpMenu.aA..("&About")
 
         mB.. .aM..(fileMenu)
@@ -239,8 +239,8 @@ c_ MainWindow ?MW..
 
         painter.save()
 
-        xscale _ printer.pageRect().width() / float(sourceWidth)
-        yscale _ printer.pageRect().height() / float(sourceHeight)
+        xscale _ printer.pageRect().width() / fl..(sourceWidth)
+        yscale _ printer.pageRect().height() / fl..(sourceHeight)
         scale _ min(xscale, yscale)
 
         painter.translate(printer.paperRect().x()+printer.pageRect().width()/2,

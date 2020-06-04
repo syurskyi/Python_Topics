@@ -147,7 +147,7 @@ c_ View(QGraphicsView):
 __ ______ __ ______
 
     ______ ___
-    ______ math
+    ______ m__
 
     app _ ?A..(___.a..
 
@@ -196,13 +196,13 @@ __ ______ __ ______
     ___ i, item __ en..(i..):
         # Ellipse.
         ellipseState.assignProperty(item, 'pos',
-                QPointF(math.cos((i / 63.0) * 6.28) * 250,
-                        math.sin((i / 63.0) * 6.28) * 250))
+                QPointF(m__.cos((i / 63.0) * 6.28) * 250,
+                        m__.sin((i / 63.0) * 6.28) * 250))
 
         # Figure 8.
         figure8State.assignProperty(item, 'pos',
-                QPointF(math.sin((i / 63.0) * 6.28) * 250,
-                        math.sin(((i * 2)/63.0) * 6.28) * 250))
+                QPointF(m__.sin((i / 63.0) * 6.28) * 250,
+                        m__.sin(((i * 2)/63.0) * 6.28) * 250))
 
         # Random.
         randomState.assignProperty(item, 'pos',

@@ -223,9 +223,9 @@ c_ MainWindow(qtw.?MW..):
         main.la__ .aW..(form)
 
         preview _ InvoiceView()
-        main.la__ .aW..(preview)
+        main.la__ .aW..(p__)
 
-        form.submitted.c..(preview.build_invoice)
+        form.submitted.c..(p__.build_invoice)
 
         # Printing
         print_tb _ aTB..('Printing')
@@ -245,7 +245,7 @@ c_ MainWindow(qtw.?MW..):
         s..
 
     ___ _update_preview_size 
-        preview.set_page_size(
+        p__.set_page_size(
             printer.pageRect(qtps.QPrinter.Point))
 
     ___ printer_config 
@@ -256,7 +256,7 @@ c_ MainWindow(qtw.?MW..):
     ___ _print_document 
         # doesn't actually kick off printer,
         # just paints document to the printer object
-        preview.document().print(printer)
+        p__.document().print(printer)
 
     ___ print_dialog 
         _print_document()

@@ -38,9 +38,9 @@
 
 ___ decode_pos(pos):
     ___
-        row _ int(pos[1:]) - 1
+        row _ in.(pos[1:]) - 1
         col _ ord(pos[0]) - ord('A')
-    _____ ValueError:
+    _____ V..:
         row _ -1
         col _ -1
 

@@ -43,7 +43,7 @@
 
 
 ______ ___
-______ math
+______ m__
 
 ____ ?.?C.. ______ QPointF, QRect, QRectF, __, ?T..
 ____ ?.?G.. ______ (?B.., ?C.., ?F.., QLinearGradient, QPainter,

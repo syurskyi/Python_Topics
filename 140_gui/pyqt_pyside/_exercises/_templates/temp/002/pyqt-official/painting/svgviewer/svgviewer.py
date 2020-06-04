@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QFile, ?S.., __
 ____ ?.?G.. ______ ?B.., ?C.., QImage, QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (QActionGroup, ?A.., ?FD..,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
-        ?MW.., QMenu, ?MB.., ?W..)
+        ?MW.., ?M.., ?MB.., ?W..)
 ____ ?.QtOpenGL ______ QGL, QGLFormat, QGLWidget
 ____ ?.QtSvg ______ QGraphicsSvgItem
 
@@ -61,7 +61,7 @@ c_ MainWindow ?MW..
 
         view _ SvgView()
 
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         openAction _ fileMenu.aA..("&Open...")
         openAction.sS..("Ctrl+O")
         quitAction _ fileMenu.aA..("E&xit")
@@ -69,7 +69,7 @@ c_ MainWindow ?MW..
 
         mB.. .aM..(fileMenu)
 
-        viewMenu _ QMenu("&View", self)
+        viewMenu _ ?M..("&View", self)
         backgroundAction _ viewMenu.aA..("&Background")
         backgroundAction.sE.. F..
         backgroundAction.setCheckable( st.
@@ -84,7 +84,7 @@ c_ MainWindow ?MW..
 
         mB.. .aM..(viewMenu)
 
-        rendererMenu _ QMenu("&Renderer", self)
+        rendererMenu _ ?M..("&Renderer", self)
         nativeAction _ rendererMenu.aA..("&Native")
         nativeAction.setCheckable( st.
         nativeAction.sC__( st.

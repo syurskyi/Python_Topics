@@ -73,9 +73,9 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
         r_ maxDate
 
     ___ filterAcceptsRow  sourceRow, sourceParent):
-        index0 _ sourceModel().index(sourceRow, 0, sourceParent)
-        index1 _ sourceModel().index(sourceRow, 1, sourceParent)
-        index2 _ sourceModel().index(sourceRow, 2, sourceParent)
+        index0 _ sourceModel().i..(sourceRow, 0, sourceParent)
+        index1 _ sourceModel().i..(sourceRow, 1, sourceParent)
+        index2 _ sourceModel().i..(sourceRow, 2, sourceParent)
 
         r_ (   (filterRegExp().indexIn(sourceModel().data(index0)) >_ 0
                     or filterRegExp().indexIn(sourceModel().data(index1)) >_ 0)
@@ -199,8 +199,8 @@ c_ Window(?W..):
 
 ___ addMail(model, subject, sender, date):
     model.insertRow(0)
-    model.setData(model.index(0, 0), subject)
-    model.setData(model.index(0, 1), sender)
+    model.setData(model.i..(0, 0), subject)
+    model.setData(model.i..(0, 1), sender)
     model.setData(model.index(0, 2), date)
 
 

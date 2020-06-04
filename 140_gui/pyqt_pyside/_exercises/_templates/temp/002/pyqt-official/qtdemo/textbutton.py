@@ -226,7 +226,7 @@ c_ TextButton(DemoItem):
         __ type __ (TextButton.SIDEBAR, TextButton.PANEL):
             logicalSize _ ?S..(TextButton.BUTTON_WIDTH, TextButton.BUTTON_HEIGHT)
         ____
-            logicalSize _ ?S..(int((TextButton.BUTTON_WIDTH / 2.0) - 5), int(TextButton.BUTTON_HEIGHT * 1.5))
+            logicalSize _ ?S..(in.((TextButton.BUTTON_WIDTH / 2.0) - 5), in.(TextButton.BUTTON_HEIGHT * 1.5))
 
         _prepared _ F..
 

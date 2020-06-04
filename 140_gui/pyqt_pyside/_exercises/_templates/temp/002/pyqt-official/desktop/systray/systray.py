@@ -45,7 +45,7 @@
 ____ ?.?G.. ______ ?I..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, ?CB,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
-        ?MB.., QMenu, ?PB.., SB.., ?S.., QSystemTrayIcon,
+        ?MB.., ?M.., ?PB.., SB.., ?S.., QSystemTrayIcon,
         ?TE.., QVBoxLayout)
 
 ______ systray_rc
@@ -208,7 +208,7 @@ c_ Window(QDialog):
                 triggered_QApplication.i.. .quit)
 
     ___ createTrayIcon
-         trayIconMenu _ QMenu
+         trayIconMenu _ ?M..
          trayIconMenu.aA..(minimizeAction)
          trayIconMenu.aA..(maximizeAction)
          trayIconMenu.aA..(restoreAction)

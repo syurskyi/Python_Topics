@@ -44,7 +44,7 @@
 
 
 ____ ?.?C.. ______ QStringListModel
-____ ?.?G.. ______ QStandardItem, QStandardItemModel
+____ ?.?G.. ______ ?SI.., QStandardItemModel
 ____ ?.?W.. ______ (?A.., ?CB, QDataWidgetMapper,
         QGridLayout, QLabel, QLineEdit, ?PB.., ?TE.., ?W..)
 
@@ -114,9 +114,9 @@ c_ Window(?W..):
         types _ ("0", "1", "2", "0", "2")
         
         ___ row, name __ en..(names):
-            model.setItem(row, 0, QStandardItem(name))
-            model.setItem(row, 1, QStandardItem(addresses[row]))
-            model.setItem(row, 2, QStandardItem(types[row]))
+            model.setItem(row, 0, ?SI..(name))
+            model.setItem(row, 1, ?SI..(addresses[row]))
+            model.setItem(row, 2, ?SI..(types[row]))
  
     ___ updateButtons  row):
         previousButton.sE..(row > 0)

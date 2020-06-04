@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ pP.., pS.., pyqtSlot, QPoint, ?S.., __
 ____ ?.?G.. ______ ?C..
@@ -41,9 +41,9 @@ c_ HelloGLWidget(QOpenGLWidget):
 
     # We define three signals that are used to indicate changes to the
     # rotation of the logo.
-    xRotationChanged _ pS..(int)
-    yRotationChanged _ pS..(int)
-    zRotationChanged _ pS..(int)
+    xRotationChanged _ pS..(in.)
+    yRotationChanged _ pS..(in.)
+    zRotationChanged _ pS..(in.)
 
     ___  -   parent_None):
         s__(HelloGLWidget, self). - (parent)
@@ -68,7 +68,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         r_ xRot
 
     # The setXRotation() setter method is also a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setXRotation  angle):
         angle _ normalizeAngle(angle)
         __ angle !_ xRot:
@@ -76,7 +76,7 @@ c_ HelloGLWidget(QOpenGLWidget):
             xRotationChanged.e..(angle)
             update()
 
-    xRotation _ pP..(int, getXRotation, setXRotation)
+    xRotation _ pP..(in., getXRotation, setXRotation)
 
     # The rotation of the logo about the y-axis can be controlled using the
     # yRotation property, defined using the following getter and setter
@@ -86,7 +86,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         r_ yRot
 
     # The setYRotation() setter method is also a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setYRotation  angle):
         angle _ normalizeAngle(angle)
         __ angle !_ yRot:
@@ -94,7 +94,7 @@ c_ HelloGLWidget(QOpenGLWidget):
             yRotationChanged.e..(angle)
             update()
 
-    yRotation _ pP..(int, getYRotation, setYRotation)
+    yRotation _ pP..(in., getYRotation, setYRotation)
 
     # The rotation of the logo about the z-axis can be controlled using the
     # zRotation property, defined using the following getter and setter
@@ -104,7 +104,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         r_ zRot
 
     # The setZRotation() setter method is also a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setZRotation  angle):
         angle _ normalizeAngle(angle)
         __ angle !_ zRot:
@@ -112,7 +112,7 @@ c_ HelloGLWidget(QOpenGLWidget):
             zRotationChanged.e..(angle)
             update()
 
-    zRotation _ pP..(int, getZRotation, setZRotation)
+    zRotation _ pP..(in., getZRotation, setZRotation)
 
     ___ minimumSizeHint
         r_ ?S..(50, 50)
@@ -195,16 +195,16 @@ c_ HelloGLWidget(QOpenGLWidget):
 
         ___ i __ ra..(NumSectors):
             angle1 _ (i * 2 * Pi) / NumSectors
-            x5 _ 0.30 * math.sin(angle1)
-            y5 _ 0.30 * math.cos(angle1)
-            x6 _ 0.20 * math.sin(angle1)
-            y6 _ 0.20 * math.cos(angle1)
+            x5 _ 0.30 * m__.sin(angle1)
+            y5 _ 0.30 * m__.cos(angle1)
+            x6 _ 0.20 * m__.sin(angle1)
+            y6 _ 0.20 * m__.cos(angle1)
 
             angle2 _ ((i + 1) * 2 * Pi) / NumSectors
-            x7 _ 0.20 * math.sin(angle2)
-            y7 _ 0.20 * math.cos(angle2)
-            x8 _ 0.30 * math.sin(angle2)
-            y8 _ 0.30 * math.cos(angle2)
+            x7 _ 0.20 * m__.sin(angle2)
+            y7 _ 0.20 * m__.cos(angle2)
+            x8 _ 0.30 * m__.sin(angle2)
+            y8 _ 0.30 * m__.cos(angle2)
 
             quad(x5, y5, x6, y6, x7, y7, x8, y8)
 
@@ -230,7 +230,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         gl.glVertex3d(x1, y1, +0.05)
 
     ___ extrude  x1, y1, x2, y2):
-        sC..(trolltechGreen.darker(250 + int(100 * x1)))
+        sC..(trolltechGreen.darker(250 + in.(100 * x1)))
 
         gl.glVertex3d(x1, y1, +0.05)
         gl.glVertex3d(x2, y2, +0.05)

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
         QItemSelectionModel, QModelIndex, QPoint, QRect, ?S.., __,
@@ -50,7 +50,7 @@ ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
 ____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QPainter, QPainterPath,
         ?P.., ?P.., QRegion, QStandardItemModel)
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?FD..,
-        ?MW.., QMenu, QRubberBand, QSplitter, ?S.., QTableView)
+        ?MW.., ?M.., QRubberBand, QSplitter, ?S.., QTableView)
 
 ______ chart_rc
 
@@ -112,7 +112,7 @@ c_ PieView(QAbstractItemView):
                 r_ QModelIndex()
 
             # Determine the angle of the point.
-            angle _ (180 / math.pi) * math.acos(cx/d)
+            angle _ (180 / m__.pi) * m__.acos(cx/d)
             __ cy < 0:
                 angle _ 360 - angle
 
@@ -134,7 +134,7 @@ c_ PieView(QAbstractItemView):
 
         ____
             itemHeight _ QFontMetrics(viewOptions().font).height()
-            listItem _ int((wy - margin) / itemHeight)
+            listItem _ in.((wy - margin) / itemHeight)
             validRow _ 0
 
             ___ row __ ra..(model().rowCount(rootIndex())):
@@ -178,8 +178,8 @@ c_ PieView(QAbstractItemView):
             
                 itemHeight _ QFontMetrics(viewOptions().font).height()
                 r_ QRect(totalSize,
-                             int(margin + listItem*itemHeight),
-                             totalSize - margin, int(itemHeight))
+                             in.(margin + listItem*itemHeight),
+                             totalSize - margin, in.(itemHeight))
             ____ index.column() __ 1:
                 r_ viewport().rect()
 
@@ -316,7 +316,7 @@ c_ PieView(QAbstractItemView):
                         painter.sB..(?B..(color))
 
                     painter.drawPie(0, 0, pieSize, pieSize,
-                            int(startAngle*16), int(angle*16))
+                            in.(startAngle*16), in.(angle*16))
 
                     startAngle +_ angle
 
@@ -467,7 +467,7 @@ c_ MainWindow ?MW..
     ___  - 
         s__(MainWindow, self). - ()
 
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         openAction _ fileMenu.aA..("&Open...")
         openAction.sS..("Ctrl+O")
         saveAction _ fileMenu.aA..("&Save As...")
@@ -538,7 +538,7 @@ c_ MainWindow ?MW..
                     model.setData(model.index(row, 0, QModelIndex()),
                                 pieces[0])
                     model.setData(model.index(row, 1, QModelIndex()),
-                                float(pieces[1]))
+                                fl..(pieces[1]))
                     model.setData(model.index(row, 0, QModelIndex()),
                                 ?C..(pieces[2]), __.DecorationRole)
 

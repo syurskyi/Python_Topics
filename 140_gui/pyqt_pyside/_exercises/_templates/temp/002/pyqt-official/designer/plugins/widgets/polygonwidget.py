@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ pP.., pyqtSlot, QPointF, ?S..
 ____ ?.?G.. ______ ?B.., ?C.., QPainter, QPainterPath, QRadialGradient
@@ -74,16 +74,16 @@ c_ PolygonWidget(?W..):
     ___ createPath
     
         pa__ _ QPainterPath()
-        angle _ 2*math.pi/_sides
+        angle _ 2*m__.pi/_sides
         pa__.moveTo(_outerRadius, 0)
         ___ step __ ra..(1, _sides + 1):
             pa__.lineTo(
-                _innerRadius * math.cos((step - 0.5) * angle),
-                _innerRadius * math.sin((step - 0.5) * angle)
+                _innerRadius * m__.cos((step - 0.5) * angle),
+                _innerRadius * m__.sin((step - 0.5) * angle)
                 )
             pa__.lineTo(
-                _outerRadius * math.cos(step * angle),
-                _outerRadius * math.sin(step * angle)
+                _outerRadius * m__.cos(step * angle),
+                _outerRadius * m__.sin(step * angle)
                 )
         pa__.closeSubpath()
     
@@ -101,12 +101,12 @@ c_ PolygonWidget(?W..):
         r_ _angle
     
     # The setAngle() setter method is also a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setAngle  angle):
         _angle _ min(max(0, angle), 360)
         update()
     
-    angle _ pP..(int, getAngle, setAngle)
+    angle _ pP..(in., getAngle, setAngle)
     
     # The innerRadius property is implemented using the getInnerRadius() and
     # setInnerRadius() methods.
@@ -115,14 +115,14 @@ c_ PolygonWidget(?W..):
         r_ _innerRadius
     
     # The setInnerRadius() setter method is also a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setInnerRadius  radius):
         _innerRadius _ radius
         createPath()
         createGradient()
         update()
     
-    innerRadius _ pP..(int, getInnerRadius, setInnerRadius)
+    innerRadius _ pP..(in., getInnerRadius, setInnerRadius)
     
     # The outerRadius property is implemented using the getOuterRadius() and
     # setOuterRadius() methods.
@@ -131,14 +131,14 @@ c_ PolygonWidget(?W..):
         r_ _outerRadius
     
     # The setOuterRadius() setter method is also a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setOuterRadius  radius):
         _outerRadius _ radius
         createPath()
         createGradient()
         update()
     
-    outerRadius _ pP..(int, getOuterRadius, setOuterRadius)
+    outerRadius _ pP..(in., getOuterRadius, setOuterRadius)
     
     # The numberOfSides property is implemented using the getNumberOfSides()
     # and setNumberOfSides() methods.
@@ -147,13 +147,13 @@ c_ PolygonWidget(?W..):
         r_ _sides
     
     # The setNumberOfSides() setter method is also a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setNumberOfSides  sides):
         _sides _ max(3, sides)
         createPath()
         update()
     
-    numberOfSides _ pP..(int, getNumberOfSides, setNumberOfSides)
+    numberOfSides _ pP..(in., getNumberOfSides, setNumberOfSides)
     
     # The innerColor property is implemented using the getInnerColor() and
     # setInnerColor() methods.

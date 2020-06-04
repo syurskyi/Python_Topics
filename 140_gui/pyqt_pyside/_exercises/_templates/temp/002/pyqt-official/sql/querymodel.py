@@ -54,12 +54,12 @@ c_ CustomSqlModel(QSqlQueryModel):
     ___ data  index, role):
         value _ s__(CustomSqlModel, self).data(index, role)
         __ value __ no. N.. and role __ __.DR..:
-            __ index.column() __ 0:
+            __ i...column() __ 0:
                 r_ '#%d' % value
-            ____ index.column() __ 2:
+            ____ i...column() __ 2:
                 r_ value.upper()
 
-        __ role __ __.TextColorRole and index.column() __ 1:
+        __ role __ __.TextColorRole and i...column() __ 1:
             r_ ?C..(__.blue)
 
         r_ value
@@ -69,21 +69,21 @@ c_ EditableSqlModel(QSqlQueryModel):
     ___ flags  index):
         flags _ s__(EditableSqlModel, self).flags(index)
 
-        __ index.column() __ (1, 2):
+        __ i...column() __ (1, 2):
             flags |_ __.IIE..
 
         r_ flags
 
     ___ setData  index, value, role):
-        __ index.column() no. __ (1, 2):
+        __ i...column() no. __ (1, 2):
             r_ F..
 
-        primaryKeyIndex _ index(index.row(), 0)
+        primaryKeyIndex _ index(i...row(), 0)
         id _ data(primaryKeyIndex)
 
         c..
 
-        __ index.column() __ 1:
+        __ i...column() __ 1:
             ok _ setFirstName(id, value)
         ____
             ok _ setLastName(id, value)

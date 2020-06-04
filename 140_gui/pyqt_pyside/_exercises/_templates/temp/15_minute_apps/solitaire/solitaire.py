@@ -1,56 +1,56 @@
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.QtWidgets ______ *
 ____ ?.?C.. ______ *
 
 ______ os
 ______ random
 
-WINDOW_SIZE = 840, 600
+WINDOW_SIZE _ 840, 600
 
-CARD_DIMENSIONS = ?S..(80, 116)
-CARD_RECT = QRect(0, 0, 80, 116)
-CARD_SPACING_X = 110
-CARD_BACK = QImage(os.pa__.join('images', 'back.png'))
+CARD_DIMENSIONS _ ?S..(80, 116)
+CARD_RECT _ QRect(0, 0, 80, 116)
+CARD_SPACING_X _ 110
+CARD_BACK _ QImage(os.pa__.join('images', 'back.png'))
 
-DEAL_RECT = QRect(30, 30, 110, 140)
+DEAL_RECT _ QRect(30, 30, 110, 140)
 
-OFFSET_X = 50
-OFFSET_Y = 50
-WORK_STACK_Y = 200
+OFFSET_X _ 50
+OFFSET_Y _ 50
+WORK_STACK_Y _ 200
 
-SIDE_FACE = 0
-SIDE_BACK = 1
+SIDE_FACE _ 0
+SIDE_BACK _ 1
 
-BOUNCE_ENERGY = 0.8
+BOUNCE_ENERGY _ 0.8
 
 # We store cards as numbers 1-13, since we only need
 # to know their order for solitaire.
-SUITS = ["C", "S", "H", "D"]
+SUITS _ ["C", "S", "H", "D"]
 
 
 c_ Signals(?O..):
-    complete = pS..()
-    c__ = pS..()
-    doubleclicked = pS..()
+    complete _ pS..()
+    c__ _ pS..()
+    doubleclicked _ pS..()
 
 
 c_ Card(QGraphicsPixmapItem):
 
-    ___  - (self, value, suit, $ $$
+    ___  -   value, suit, $ $$
         s__(Card, self). - ($ $$)
 
-        signals = Signals()
+        signals _ Signals()
 
-        stack = None  # Stack this card currently is in.
-        child = None  # Card stacked on this one (for work deck).
+        stack _ None  # Stack this card currently is in.
+        child _ None  # Card stacked on this one (for work deck).
 
         # Store the value & suit of the cards internal to it.
-        value = value
-        suit = suit
-        side = None
+        value _ value
+        suit _ suit
+        side _ None
 
         # For end animation only.
-        vector = None
+        vector _ None
 
         # Cards have no internal transparent areas, so we can use this faster method.
         setShapeMode(QGraphicsPixmapItem.BoundingRectShape)
@@ -60,39 +60,39 @@ c_ Card(QGraphicsPixmapItem):
         load_images()
 
     ___ load_images 
-        face = ?P..(
+        face _ ?P..(
             os.pa__.join('cards', '%s%s.png' % (value, suit))
         )
 
-        back = ?P..(
+        back _ ?P..(
             os.pa__.join('images', 'back.png')
         )
 
     ___ turn_face_up 
-        side = SIDE_FACE
+        side _ SIDE_FACE
         sP..(face)
 
     ___ turn_back_up 
-        side = SIDE_BACK
+        side _ SIDE_BACK
         sP..(back)
 
     @property
     ___ is_face_up 
-        return side __ SIDE_FACE
+        r_ side __ SIDE_FACE
 
     @property
     ___ color 
-        return 'r' if suit __ ('H', 'D') ____ 'b'
+        r_ 'r' __ suit __ ('H', 'D') ____ 'b'
 
-    ___ mousePressEvent(self, e):
-        if not is_face_up and stack.cards[-1] __ self:
+    ___ mousePressEvent  e):
+        __ not is_face_up and stack.cards[-1] __ self:
             turn_face_up()  # We can do this without checking.
             e.accept()
-            return
+            r_
 
-        if stack and not stack.is_free_card
+        __ stack and not stack.is_free_card
             e.ignore()
-            return
+            r_
 
         stack.activate()
 
@@ -100,20 +100,20 @@ c_ Card(QGraphicsPixmapItem):
 
         s__(Card, self).mouseReleaseEvent(e)
 
-    ___ mouseReleaseEvent(self, e):
+    ___ mouseReleaseEvent  e):
         stack.deactivate()
 
-        i.. = collidingItems()
-        if i..:
+        i.. _ collidingItems()
+        __ i..:
             # Find the topmost item from a different stack:
             ___ item __ i..:
-                if ((isinstance(item, Card) and item.stack != stack) or
-                    (isinstance(item, StackBase) and item != stack)):
+                __ ((isinstance(item, Card) and item.stack !_ stack) or
+                    (isinstance(item, StackBase) and item !_ stack)):
 
-                    if item.stack.is_valid_drop 
+                    __ item.stack.is_valid_drop 
                         # Remove card + all children from previous stack, add to the new.
                         # Note: the only place there will be children is on a workstack.
-                        cards = stack.remove_card
+                        cards _ stack.remove_card
                         item.stack.add_cards(cards)
                         break
 
@@ -122,8 +122,8 @@ c_ Card(QGraphicsPixmapItem):
 
         s__(Card, self).mouseReleaseEvent(e)
 
-    ___ mouseDoubleClickEvent(self, e):
-        if stack.is_free_card
+    ___ mouseDoubleClickEvent  e):
+        __ stack.is_free_card
             signals.doubleclicked.e..()
             e.accept()
 
@@ -132,18 +132,18 @@ c_ Card(QGraphicsPixmapItem):
 
 c_ StackBase(QGraphicsRectItem):
 
-    ___  - (self, $ $$
+    ___  -   $ $$
         s__(StackBase, self). - ($ $$)
 
         setRect(QRectF(CARD_RECT))
         setZValue(-1)
 
         # Cards on this deck, in order.
-        cards = []
+        cards _   # list
 
         # Store a self ref, so the collision logic can handle cards and
         # stacks with the same approach.
-        stack = self
+        stack _ self
         setup()
         reset()
 
@@ -164,64 +164,64 @@ c_ StackBase(QGraphicsRectItem):
     ___ deactivate 
         p..
 
-    ___ add_card(self, card, update= st.:
-        card.stack = self
-        cards.append(card)
-        if update:
+    ___ add_card  card, update_ st.:
+        card.stack _ self
+        cards.ap..(card)
+        __ update:
             update()
 
-    ___ add_cards(self, cards):
+    ___ add_cards  cards):
         ___ card __ cards:
-            add_card(card, update=F..)
+            add_card(card, update_F..)
         update()
 
-    ___ remove_card(self, card):
-        card.stack = None
+    ___ remove_card  card):
+        card.stack _ None
         cards.remove(card)
         update()
-        return [card] # Returns a list, as WorkStack must return children
+        r_ [card] # Returns a list, as WorkStack must return children
 
     ___ remove_all_cards 
         ___ card __ cards[:]:
-            card.stack = None
-        cards = []
+            card.stack _ None
+        cards _   # list
 
-    ___ is_valid_drop(self, card):
-        return T..
+    ___ is_valid_drop  card):
+        r_ T..
 
-    ___ is_free_card(self, card):
-        return F..
+    ___ is_free_card  card):
+        r_ F..
 
 
 c_ DeckStack(StackBase):
 
-    offset_x = -0.2
-    offset_y = -0.3
+    offset_x _ -0.2
+    offset_y _ -0.3
 
-    restack_counter = 0
+    restack_counter _ 0
 
     ___ reset 
         s__(DeckStack, self).reset()
-        restack_counter = 0
+        restack_counter _ 0
         set_color(__.green)
 
-    ___ stack_cards(self, cards):
+    ___ stack_cards  cards):
         ___ card __ cards:
             add_card(card)
             card.turn_back_up()
 
-    ___ can_restack(self, n_rounds=3):
-        return n_rounds is None or restack_counter < n_rounds-1
+    ___ can_restack  n_rounds_3):
+        r_ n_rounds is None or restack_counter < n_rounds-1
 
-    ___ update_stack_status(self, n_rounds):
-        if not can_restack(n_rounds):
+    ___ update_stack_status  n_rounds):
+        __ not can_restack(n_rounds):
             set_color(__.red)
         ____:
             # We only need this if players change the round number during a game.
             set_color(__.green)
 
-    ___ restack(self, fromstack):
-        restack_counter += 1
+    ___ restack  fromstack):
+        restack_counter +_ 1
 
         # We need to slice as we're adding to the list, reverse to stack back
         # in the original order.
@@ -232,69 +232,69 @@ c_ DeckStack(StackBase):
 
     ___ take_top_card 
         ___
-            card = cards[-1]
+            card _ cards[-1]
             remove_card(card)
-            return card
+            r_ card
         _____ IE..
             p..
 
-    ___ set_color(self, color):
-        color = QColor(color)
+    ___ set_color  color):
+        color _ QColor(color)
         color.setAlpha(50)
-        brush = ?B..(color)
+        brush _ ?B..(color)
         sB..(brush)
         sP..(?P..(__.NoPen))
 
-    ___ is_valid_drop(self, card):
-        return F..
+    ___ is_valid_drop  card):
+        r_ F..
 
 
 c_ DealStack(StackBase):
 
-    offset_x = 20
-    offset_y = 0
+    offset_x _ 20
+    offset_y _ 0
 
-    spread_from = 0
+    spread_from _ 0
 
     ___ setup 
         sP..(?P..(__.NoPen))
-        color = QColor(__.black)
+        color _ QColor(__.black)
         color.setAlpha(50)
-        brush = ?B..(color)
+        brush _ ?B..(color)
         sB..(brush)
 
     ___ reset 
         s__(DealStack, self).reset()
-        spread_from = 0  # Card index to start spreading cards out.
+        spread_from _ 0  # Card index to start spreading cards out.
 
-    ___ is_valid_drop(self, card):
-        return F..
+    ___ is_valid_drop  card):
+        r_ F..
 
-    ___ is_free_card(self, card):
-        return card __ cards[-1]
+    ___ is_free_card  card):
+        r_ card __ cards[-1]
 
     ___ update 
         # Only spread the top 3 cards
-        offset_x = 0
+        offset_x _ 0
         ___ n, card __ en..(cards):
             card.setPos(pos() + QPointF(offset_x, 0))
             card.setZValue(n)
 
-            if n >= spread_from:
-                offset_x = offset_x + offset_x
+            __ n >_ spread_from:
+                offset_x _ offset_x + offset_x
 
 
 c_ WorkStack(StackBase):
 
-    offset_x = 0
-    offset_y = 15
-    offset_y_back = 5
+    offset_x _ 0
+    offset_y _ 15
+    offset_y_back _ 5
 
     ___ setup 
         sP..(?P..(__.NoPen))
-        color = QColor(__.black)
+        color _ QColor(__.black)
         color.setAlpha(50)
-        brush = ?B..(color)
+        brush _ ?B..(color)
         sB..(brush)
 
     ___ activate 
@@ -304,144 +304,144 @@ c_ WorkStack(StackBase):
     ___ deactivate 
         setZValue(-1)
 
-    ___ is_valid_drop(self, card):
-        if not cards:
-            return T..
+    ___ is_valid_drop  card):
+        __ not cards:
+            r_ T..
 
-        if (card.color != cards[-1].color and
+        __ (card.color !_ cards[-1].color and
             card.value __ cards[-1].value -1):
-            return T..
+            r_ T..
 
-        return F..
+        r_ F..
 
-    ___ is_free_card(self, card):
-        return card.is_face_up #self.cards and card == self.cards[-1]
+    ___ is_free_card  card):
+        r_ card.is_face_up #self.cards and card == self.cards[-1]
 
-    ___ add_card(self, card, update= st.:
-        if cards:
+    ___ add_card  card, update_ st.:
+        __ cards:
             card.setParentItem(cards[-1])
         ____:
             card.setParentItem
 
-        s__(WorkStack, self).add_card(card, update=update)
+        s__(WorkStack, self).add_card(card, update_update)
 
-    ___ remove_card(self, card):
-        index = cards.index(card)
-        cards, cards = cards[:index], cards[index:]
+    ___ remove_card  card):
+        index _ cards.index(card)
+        cards, cards _ cards[:index], cards[index:]
 
         ___ card __ cards:
             # Remove card and all children, returning a list of cards removed in order.
             card.setParentItem(None)
-            card.stack = None
+            card.stack _ None
 
         update()
-        return cards
+        r_ cards
 
     ___ remove_all_cards 
         ___ card __ cards[:]:
             card.setParentItem(None)
-            card.stack = None
-        cards = []
+            card.stack _ None
+        cards _   # list
 
     ___ update 
         stack.setZValue(-1) # Reset this stack the the background.
         # Only spread the top 3 cards
-        offset_y = 0
+        offset_y _ 0
         ___ n, card __ en..(cards):
             card.setPos(QPointF(0, offset_y))
 
-            if card.is_face_up:
-                offset_y = offset_y
+            __ card.is_face_up:
+                offset_y _ offset_y
             ____:
-                offset_y = offset_y_back
+                offset_y _ offset_y_back
 
 
 c_ DropStack(StackBase):
 
-    offset_x = -0.2
-    offset_y = -0.3
+    offset_x _ -0.2
+    offset_y _ -0.3
 
-    suit = None
-    value = 0
+    suit _ None
+    value _ 0
 
     ___ setup 
-        signals = Signals()
-        color = QColor(__.blue)
+        signals _ Signals()
+        color _ QColor(__.blue)
         color.setAlpha(50)
-        pen = ?P..(color)
+        pen _ ?P..(color)
         pen.sW..(5)
         sP..(pen)
 
     ___ reset 
         s__(DropStack, self).reset()
-        suit = None
-        value = 0
+        suit _ None
+        value _ 0
 
-    ___ is_valid_drop(self, card):
-        if ((suit is None or card.suit __ suit) and
+    ___ is_valid_drop  card):
+        __ ((suit is None or card.suit __ suit) and
                 (card.value __ value + 1)):
-            return T..
+            r_ T..
 
-        return F..
+        r_ F..
 
-    ___ add_card(self, card, update= st.:
-        s__(DropStack, self).add_card(card, update=update)
-        suit = card.suit
-        value = cards[-1].value
+    ___ add_card  card, update_ st.:
+        s__(DropStack, self).add_card(card, update_update)
+        suit _ card.suit
+        value _ cards[-1].value
 
-        if is_complete:
+        __ is_complete:
             signals.complete.e..()
 
-    ___ remove_card(self, card):
+    ___ remove_card  card):
         s__(DropStack, self).remove_card(card)
-        value = cards[-1].value if cards ____ 0
+        value _ cards[-1].value __ cards ____ 0
 
     @property
     ___ is_complete 
-        return value __ 13
+        r_ value __ 13
 
 
 c_ DealTrigger(QGraphicsRectItem):
 
-    ___  - (self, $ $$
+    ___  -   $ $$
         s__(DealTrigger, self). - ($ $$)
         setRect(QRectF(DEAL_RECT))
         setZValue(1000)
 
-        pen = ?P..(__.NoPen)
+        pen _ ?P..(__.NoPen)
         sP..(pen)
 
-        signals = Signals()
+        signals _ Signals()
 
-    ___ mousePressEvent(self, e):
+    ___ mousePressEvent  e):
         signals.c__.e..()
 
 
 c_ AnimationCover(QGraphicsRectItem):
-    ___  - (self, $ $$
+    ___  -   $ $$
         s__(AnimationCover, self). - ($ $$)
         setRect(QRectF(0, 0, *WINDOW_SIZE))
         setZValue(5000)
-        pen = ?P..(__.NoPen)
+        pen _ ?P..(__.NoPen)
         sP..(pen)
 
-    ___ mousePressEvent(self, e):
+    ___ mousePressEvent  e):
         e.accept()
 
 
 c_ MainWindow(?MW..):
 
-    ___  - (self, $ $$
+    ___  -   $ $$
         s__(MainWindow, self). - ($ $$)
 
-        view = QGraphicsView()
-        scene = QGraphicsScene()
+        view _ QGraphicsView()
+        scene _ QGraphicsScene()
         scene.setSceneRect(QRectF(0, 0, *WINDOW_SIZE))
 
-        felt = ?B..(?P..(os.pa__.join('images','felt.png')))
+        felt _ ?B..(?P..(os.pa__.join('images','felt.png')))
         scene.setBackgroundBrush(felt)
 
-        name = QGraphicsPixmapItem()
+        name _ QGraphicsPixmapItem()
         name.sP..(?P..(os.pa__.join('images','ronery.png')))
         name.setPos(QPointF(170, 375))
         scene.aI..(name)
@@ -449,57 +449,57 @@ c_ MainWindow(?MW..):
         view.setScene(scene)
 
         # Timer for the win animation only.
-        timer = ?T..()
+        timer _ ?T..()
         timer.sI..(5)
         timer.timeout.c__(win_animation)
 
-        animation_event_cover = AnimationCover()
+        animation_event_cover _ AnimationCover()
         scene.aI..(animation_event_cover)
 
-        menu = menuBar().addMenu("&Game")
+        menu _ menuBar().addMenu("&Game")
 
-        deal_action = ?A..(?I..(os.pa__.join('images', 'playing-card.png')), "Deal...", self)
+        deal_action _ ?A..(?I..(os.pa__.join('images', 'playing-card.png')), "Deal...", self)
         deal_action.t___.c__(restart_game)
         menu.aA..(deal_action)
 
         menu.addSeparator()
 
-        deal1_action = ?A..("1 card", self)
+        deal1_action _ ?A..("1 card", self)
         deal1_action.setCheckable( st.
         deal1_action.t___.c__(l___: set_deal_n(1))
         menu.aA..(deal1_action)
 
-        deal3_action = ?A..("3 card", self)
+        deal3_action _ ?A..("3 card", self)
         deal3_action.setCheckable( st.
         deal3_action.sC__( st.
         deal3_action.t___.c__(l___: set_deal_n(3))
 
         menu.aA..(deal3_action)
 
-        dealgroup = QActionGroup
+        dealgroup _ QActionGroup
         dealgroup.aA..(deal1_action)
         dealgroup.aA..(deal3_action)
         dealgroup.setExclusive( st.
 
         menu.addSeparator()
 
-        rounds3_action = ?A..("3 rounds", self)
+        rounds3_action _ ?A..("3 rounds", self)
         rounds3_action.setCheckable( st.
         rounds3_action.sC__( st.
         rounds3_action.t___.c__(l___: set_rounds_n(3))
         menu.aA..(rounds3_action)
 
-        rounds5_action = ?A..("5 rounds", self)
+        rounds5_action _ ?A..("5 rounds", self)
         rounds5_action.setCheckable( st.
         rounds5_action.t___.c__(l___: set_rounds_n(5))
         menu.aA..(rounds5_action)
 
-        roundsu_action = ?A..("Unlimited rounds", self)
+        roundsu_action _ ?A..("Unlimited rounds", self)
         roundsu_action.setCheckable( st.
         roundsu_action.t___.c__(l___: set_rounds_n(None))
         menu.aA..(roundsu_action)
 
-        roundgroup = QActionGroup
+        roundgroup _ QActionGroup
         roundgroup.aA..(rounds3_action)
         roundgroup.aA..(rounds5_action)
         roundgroup.aA..(roundsu_action)
@@ -507,53 +507,53 @@ c_ MainWindow(?MW..):
 
         menu.addSeparator()
 
-        quit_action = ?A..("Quit", self)
+        quit_action _ ?A..("Quit", self)
         quit_action.t___.c__(quit)
         menu.aA..(quit_action)
 
-        deck = []
-        deal_n = 3  # Number of cards to deal each time
-        rounds_n = 3  # Number of rounds (restacks) before end.
+        deck _   # list
+        deal_n _ 3  # Number of cards to deal each time
+        rounds_n _ 3  # Number of rounds (restacks) before end.
 
         ___ suit __ SUITS:
             ___ value __ ra..(1, 14):
-                card = Card(value, suit)
-                deck.append(card)
+                card _ Card(value, suit)
+                deck.ap..(card)
                 scene.aI..(card)
-                card.signals.doubleclicked.c__(l___ card=card: auto_drop_card(card))
+                card.signals.doubleclicked.c__(l___ card_card: auto_drop_card(card))
 
         setCentralWidget(view)
         sFS..(*WINDOW_SIZE)
 
-        deckstack = DeckStack()
+        deckstack _ DeckStack()
         deckstack.setPos(OFFSET_X, OFFSET_Y)
         scene.aI..(deckstack)
 
         # Set up the working locations.
-        works = []
+        works _   # list
         ___ n __ ra..(7):
-            stack = WorkStack()
+            stack _ WorkStack()
             stack.setPos(OFFSET_X + CARD_SPACING_X*n, WORK_STACK_Y)
             scene.aI..(stack)
-            works.append(stack)
+            works.ap..(stack)
 
-        drops = []
+        drops _   # list
         # Set up the drop locations.
         ___ n __ ra..(4):
-            stack = DropStack()
+            stack _ DropStack()
             stack.setPos(OFFSET_X + CARD_SPACING_X * (3+n), OFFSET_Y)
             stack.signals.complete.c__(check_win_condition)
 
             scene.aI..(stack)
-            drops.append(stack)
+            drops.ap..(stack)
 
         # Add the deal location.
-        dealstack = DealStack()
+        dealstack _ DealStack()
         dealstack.setPos(OFFSET_X + CARD_SPACING_X, OFFSET_Y)
         scene.aI..(dealstack)
 
         # Add the deal click-trigger.
-        dealtrigger = DealTrigger()
+        dealtrigger _ DealTrigger()
         dealtrigger.signals.c__.c__(deal)
         scene.aI..(dealtrigger)
 
@@ -563,20 +563,20 @@ c_ MainWindow(?MW..):
         s..
 
     ___ restart_game 
-        reply = QMessageBox.question(self, "Deal again", "Are you sure you want to start a new game?",
-                                      QMessageBox.Yes | QMessageBox.No)
+        reply _ ?MB...question  "Deal again", "Are you sure you want to start a new game?",
+                                      ?MB...Yes | ?MB...No)
 
-        if reply __ QMessageBox.Yes:
+        __ reply __ ?MB...Yes:
             shuffle_and_stack()
 
     ___ quit 
         c..
 
-    ___ set_deal_n(self, n):
-        deal_n = n
+    ___ set_deal_n  n):
+        deal_n _ n
 
-    ___ set_rounds_n(self, n):
-        rounds_n = n
+    ___ set_rounds_n  n):
+        rounds_n _ n
         deckstack.update_stack_status(rounds_n)
 
     ___ shuffle_and_stack 
@@ -592,24 +592,24 @@ c_ MainWindow(?MW..):
 
         # Deal out from the top of the deck, turning over the
         # final card on each line.
-        cards = deck[:]
+        cards _ deck[:]
         ___ n, workstack __ en..(works, 1):
             ___ a __ ra..(n):
-                card = cards.pop()
+                card _ cards.pop()
                 workstack.add_card(card)
                 card.turn_back_up()
-                if a __ n-1:
+                __ a __ n-1:
                     card.turn_face_up()
 
         # Ensure removed from all other stacks here.
         deckstack.stack_cards(cards)
 
     ___ deal 
-        if deckstack.cards:
-            dealstack.spread_from = len(dealstack.cards)
+        __ deckstack.cards:
+            dealstack.spread_from _ len(dealstack.cards)
             ___ n __ ra..(deal_n):
-                card = deckstack.take_top_card()
-                if card:
+                card _ deckstack.take_top_card()
+                __ card:
                     dealstack.add_card(card)
                     card.turn_face_up()
 
@@ -617,16 +617,16 @@ c_ MainWindow(?MW..):
             deckstack.restack(dealstack)
             deckstack.update_stack_status(rounds_n)
 
-    ___ auto_drop_card(self, card):
+    ___ auto_drop_card  card):
         ___ stack __ drops:
-            if stack.is_valid_drop(card):
+            __ stack.is_valid_drop(card):
                 card.stack.remove_card(card)
                 stack.add_card(card)
                 break
 
     ___ check_win_condition 
-        complete = al.(s.is_complete ___ s __ drops)
-        if complete:
+        complete _ al.(s.is_complete ___ s __ drops)
+        __ complete:
             # Add click-proof cover to play area.
             animation_event_cover.s..
             # Get the stacks of cards from the drop,stacks.
@@ -635,24 +635,24 @@ c_ MainWindow(?MW..):
     ___ win_animation 
         # Start off a new card
         ___ drop __ drops:
-            if drop.cards:
-                card = drop.cards.pop()
-                if card.vector is None:
-                    card.vector = QPoint(-random.randint(3, 10), -random.randint(0, 10))
+            __ drop.cards:
+                card _ drop.cards.pop()
+                __ card.vector is N..
+                    card.vector _ QPoint(-random.randint(3, 10), -random.randint(0, 10))
                     break
 
         ___ card __ deck:
-            if card.vector is not None:
+            __ card.vector is not N..
                 card.setPos(card.pos() + card.vector)
-                card.vector += QPoint(0, 1)  # Gravity
-                if card.pos().y() > WINDOW_SIZE[1] - CARD_DIMENSIONS.height():
+                card.vector +_ QPoint(0, 1)  # Gravity
+                __ card.pos().y() > WINDOW_SIZE[1] - CARD_DIMENSIONS.height():
                     # Bounce the card, losing some energy.
-                    card.vector = QPoint(card.vector.x(), -max(1, int(card.vector.y() * BOUNCE_ENERGY)) )
+                    card.vector _ QPoint(card.vector.x(), -max(1, in.(card.vector.y() * BOUNCE_ENERGY)) )
                     # Bump back up to base of screen.
                     card.setPos(card.pos().x(), WINDOW_SIZE[1] - CARD_DIMENSIONS.height())
 
-                if card.pos().x() < - CARD_DIMENSIONS.width():
-                    card.vector = None
+                __ card.pos().x() < - CARD_DIMENSIONS.width():
+                    card.vector _ None
                     # Put the card back where it started.
                     card.stack.add_card(card)
 
@@ -660,8 +660,8 @@ c_ MainWindow(?MW..):
 
 
 
-if __name__ __ '__main__':
+__ __name__ __ '__main__':
 
-    app = ?A..([])
-    window = MainWindow()
+    app _ ?A..([])
+    window _ MainWindow()
     app.e..()

@@ -7,18 +7,18 @@ c_ TabBarWidget(QTabBar):
     """
     TabBarWidget
     """
-    ___  - (self, parent=None):
-        tabSize = QSize(100, 25)
+    ___  -   parent_None):
+        tabSize _ QSize(100, 25)
         super(TabBarWidget, self). - (parent)
 
-    ___ paintEvent(self, event):
-        painter = QStylePainter(self)
-        option = QStyleOptionTab()
+    ___ paintEvent  event):
+        painter _ QStylePainter(self)
+        option _ QStyleOptionTab()
 
-        for index in range(count()):
+        ___ index in range(count()):
             initStyleOption(option, index)
 
-            tab_rect = tabRect(index)
+            tab_rect _ tabRect(index)
             tab_rect.moveLeft(10)
 
             painter.drawControl(QStyle.CE_TabBarTabShape, option)
@@ -26,5 +26,5 @@ c_ TabBarWidget(QTabBar):
 
         painter.end()
 
-    ___ tabSizeHint(self, index):
-        return tabSize
+    ___ tabSizeHint  index):
+        r_ tabSize

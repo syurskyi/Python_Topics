@@ -65,7 +65,7 @@ c_ DemoItemAnimation(?PA..):
         _startDelay _ delay
 
     ___ sD..  duration):
-        duration _ int(duration * Colors.animSpeed)
+        duration _ in.(duration * Colors.animSpeed)
         s__(DemoItemAnimation, self).sD..(duration)
 
     ___ notOwnerOfItem 

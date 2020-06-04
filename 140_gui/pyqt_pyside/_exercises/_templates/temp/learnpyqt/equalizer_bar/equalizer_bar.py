@@ -25,7 +25,7 @@ c_ EqualizerBar(?W...?W..):
             n_steps _ le.(steps)
             steps _ steps
 
-        ____ isinstance(steps, int):
+        ____ isinstance(steps, in.):
             # int number of bars, defaults to red.
             n_steps _ steps
             steps _ ['red'] * steps
@@ -79,7 +79,7 @@ c_ EqualizerBar(?W...?W..):
 
             # Calculate the y-stop position for this bar, from the value in range.
             pc _ (_values[b] - _vmin) / (_vmax - _vmin)
-            n_steps_to_draw _ int(pc * n_steps)
+            n_steps_to_draw _ in.(pc * n_steps)
 
             ___ n __ ra..(n_steps_to_draw):
                 brush.sC..(?G...?C..(steps[n]))
@@ -100,7 +100,7 @@ c_ EqualizerBar(?W...?W..):
         update()
 
     ___ setDecay  f):
-        _decay _ float(f)
+        _decay _ fl..(f)
 
     ___ setDecayFrequencyMs  ms):
         __ _timer:
@@ -127,8 +127,8 @@ c_ EqualizerBar(?W...?W..):
         r_ _values
 
     ___ setRange  vmin, vmax):
-        assert float(vmin) < float(vmax)
-        _vmin, _vmax _ float(vmin), float(vmax)
+        assert fl..(vmin) < fl..(vmax)
+        _vmin, _vmax _ fl..(vmin), fl..(vmax)
 
     ___ sC..  color):
         steps _ [color] * _bar.n_steps
@@ -141,12 +141,12 @@ c_ EqualizerBar(?W...?W..):
 
 
     ___ setBarPadding  i):
-        _padding _ int(i)
+        _padding _ in.(i)
         update()
 
 
     ___ setBarSolidPercent  f):
-        _bar_solid_percent _ float(f)
+        _bar_solid_percent _ fl..(f)
         update()
 
 

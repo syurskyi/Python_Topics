@@ -1,4 +1,4 @@
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.QtWidgets ______ *
 ____ ?.?C.. ______ *
 
@@ -8,11 +8,11 @@ ______ os
 ______ types
 ______ random
 ______ ___
-______ traceback
+______ t__
 ______ zipfile
 
 
-PROGRESS_ON = """
+PROGRESS_ON _ """
 QLabel {
     background-color: rgb(233,30,99);
     border: 2px solid rgb(194,24,91);
@@ -20,13 +20,13 @@ QLabel {
 }
 """
 
-PROGRESS_OFF = """
+PROGRESS_OFF _ """
 QLabel {
     color: rgba(0,0,0,0);
 }
 """
 
-EXCLUDE_PATHS = [
+EXCLUDE_PATHS _ [
     '__MACOSX/',
 ]
 
@@ -34,38 +34,38 @@ c_ WorkerSignals(?O..):
     '''
     Defines the signals available from a running worker thread.
     '''
-    finished = pS..()
-    error = pS..(tuple)
-    progress = pS..(float)
+    finished _ pS..()
+    error _ pS..(tuple)
+    progress _ pS..(fl..)
 
 
 c_ UnzipWorker(QRunnable):
     '''
     Worker thread for unzipping.
     '''
-    signals = WorkerSignals()
+    signals _ WorkerSignals()
 
-    ___  - (self, pa__):
+    ___  -   pa__):
         s__(UnzipWorker, self). - ()
         os.chdir(os.pa__.dirname(pa__))
-        zipfile = zipfile.ZipFile(pa__)
+        zipfile _ zipfile.ZipFile(pa__)
 
     @pyqtSlot()
     ___ run
         ___
-            i.. = zipfile.infolist()
-            total_n = len(i..)
+            i.. _ zipfile.infolist()
+            total_n _ len(i..)
 
             ___ n, item __ en..(i.., 1):
-                if not an.(item.filename.s_w_(p) ___ p __ EXCLUDE_PATHS):
+                __ not an.(item.filename.s_w_(p) ___ p __ EXCLUDE_PATHS):
                     zipfile.extract(item)
 
                 signals.progress.e..(n / total_n)
 
-        _____ E.. as e:
-            exctype, value = ___.exc_info()[:2]
-            signals.error.e..((exctype, value, traceback.format_exc()))
-            return
+        _____ E.. __ e:
+            exctype, value _ ___.exc_info()[:2]
+            signals.error.e..((exctype, value, t__.format_exc()))
+            r_
 
         signals.finished.e..()
 
@@ -73,7 +73,7 @@ c_ UnzipWorker(QRunnable):
 
 c_ MainWindow(?MW.., Ui_MainWindow):
 
-    ___  - (self, $ $$
+    ___  -   $ $$
         s__(MainWindow, self). - ($ $$)
         setupUi
 
@@ -81,36 +81,36 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         setWindowFlags(__.FramelessWindowHint)
         setAcceptDrops( st.
 
-        prev_pos = None
+        prev_pos _ None
 
         # Create a threadpool to run our unzip worker in.
-        threadpool = ?TP..()
+        threadpool _ ?TP..()
 
         head.raise_()
 
         ___ patch_mousePressEvent(self_, e):
-            if e.button() __ __.LeftButton and worker is not None:
+            __ e.button() __ __.LeftButton and worker is not N..
                 # Extract the archive.
-                self_.current_rotation = random.randint(-15, +15)
-                self_.current_y = 30
+                self_.current_rotation _ random.randint(-15, +15)
+                self_.current_y _ 30
 
                 # Redraw the mainwindow
                 update()
 
                 # Perform the unzip
                 threadpool.start(worker)
-                worker = None  # Remove the worker so it is not double-triggered.
+                worker _ None  # Remove the worker so it is not double-triggered.
 
             elif e.button() __ __.RightButton:
                 p.. # Open a new zip.
 
-        ___ patch_paintEvent(self, event):
+        ___ patch_paintEvent  event):
 
-            p = QPainter
-            rect = event.rect()
+            p _ QPainter
+            rect _ event.rect()
 
             # Translate
-            transform = QTransform()
+            transform _ QTransform()
             transform.translate(rect.width()/2, rect.height()/2)
             transform.rotate(current_rotation)
             transform.translate(-rect.width()/2, -rect.height()/2)
@@ -118,7 +118,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
 
             # Calculate rect to center the pixmap on the QLabel.
-            prect = pixmap().rect()
+            prect _ pixmap().rect()
             rect.adjust(
                 (rect.width() - prect.width()) / 2,
                 current_y + (rect.height() - prect.height()) / 2,
@@ -127,18 +127,18 @@ c_ MainWindow(?MW.., Ui_MainWindow):
             )
             p.drawPixmap(rect, pixmap())
 
-        head.mousePressEvent = types.MethodType(patch_mousePressEvent, head)
-        head.paintEvent = types.MethodType(patch_paintEvent, head)
+        head.mousePressEvent _ types.MethodType(patch_mousePressEvent, head)
+        head.paintEvent _ types.MethodType(patch_paintEvent, head)
 
-        timer = ?T..()
+        timer _ ?T..()
         timer.timeout.c__(timer_triggered)
         timer.start(5)
 
         # Initialize
-        head.current_rotation = 0
-        head.current_y = 0
-        head.locked = T..
-        worker = None
+        head.current_rotation _ 0
+        head.current_y _ 0
+        head.locked _ T..
+        worker _ None
 
         # Reset bar to complete (empty)
         update_progress(1)
@@ -146,76 +146,76 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         s..
 
     ___ timer_triggered
-        if head.current_y > 0:
-            head.current_y -= 1
+        __ head.current_y > 0:
+            head.current_y -_ 1
 
-        if head.current_rotation > 0:
-            head.current_rotation -= 1
+        __ head.current_rotation > 0:
+            head.current_rotation -_ 1
 
         elif head.current_rotation < 0:
-            head.current_rotation += 1
+            head.current_rotation +_ 1
 
         head.update()
 
-        if head.current_y __ 0 and head.current_rotation __ 0:
-            head.locked = F..
+        __ head.current_y __ 0 and head.current_rotation __ 0:
+            head.locked _ F..
 
-    ___ dragEnterEvent(self, e):
-        data = e.mimeData()
-        if data.hasUrls():
+    ___ dragEnterEvent  e):
+        data _ e.mimeData()
+        __ data.hasUrls():
             # We are passed urls as a list, but only accept one.
-            url = data.urls()[0].toLocalFile()
-            if os.pa__.splitext(url)[1].lower() __ '.zip':
+            url _ data.urls()[0].toLocalFile()
+            __ os.pa__.splitext(url)[1].lower() __ '.zip':
                 e.accept()
 
-    ___ dropEvent(self, e):
-        data = e.mimeData()
-        pa__ = data.urls()[0].toLocalFile()
+    ___ dropEvent  e):
+        data _ e.mimeData()
+        pa__ _ data.urls()[0].toLocalFile()
 
         # Load the zipfile and pass to the worker which will extract.
-        worker = UnzipWorker(pa__)
+        worker _ UnzipWorker(pa__)
         worker.signals.progress.c__(update_progress)
         worker.signals.finished.c__(unzip_finished)
         worker.signals.error.c__(unzip_error)
         update_progress(0)
 
-    ___ mousePressEvent(self, e):
-        prev_pos = e.globalPos()
+    ___ mousePressEvent  e):
+        prev_pos _ e.globalPos()
 
-    ___ mouseMoveEvent(self, e):
-        if prev_pos:
-            delta = e.globalPos() - prev_pos
+    ___ mouseMoveEvent  e):
+        __ prev_pos:
+            delta _ e.globalPos() - prev_pos
             move(x() + delta.x(), y() + delta.y())
-            prev_pos = e.globalPos()
+            prev_pos _ e.globalPos()
 
-    ___ update_progress(self, pc):
+    ___ update_progress  pc):
         """
         Accepts progress as float in
         :param pc: float 0-1 of completion.
         :return:
         """
-        current_n = int(pc * 10)
+        current_n _ in.(pc * 10)
         ___ n __ ra..(1, 11):
-            getattr(self, 'progress_%d' % n).sSS..(
-                PROGRESS_ON if n > current_n ____ PROGRESS_OFF
+            getattr  'progress_%d' % n).sSS..(
+                PROGRESS_ON __ n > current_n ____ PROGRESS_OFF
             )
 
     ___ unzip_finished
         p..
 
-    ___ unzip_error(self, err):
-        exctype, value, traceback = err
+    ___ unzip_error  err):
+        exctype, value, t__ _ err
 
         update_progress(1)  # Reset the Pez bar.
 
-        dlg = QMessageBox
-        dlg.setText(traceback)
-        dlg.sI..(QMessageBox.Critical)
+        dlg _ ?MB..
+        dlg.sT..(t__)
+        dlg.sI..(?MB...Critical)
         dlg.s..
 
 
-if __name__ __ '__main__':
+__ __name__ __ '__main__':
 
-    app = ?A..([])
-    window = MainWindow()
+    app _ ?A..([])
+    window _ MainWindow()
     app.e..()

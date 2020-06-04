@@ -83,7 +83,7 @@ c_ Person(?O..):
     ___ name  name):
         _name _ name
 
-    @pP..(int)
+    @pP..(in.)
     ___ shoeSize
         r_ _shoeSize
 

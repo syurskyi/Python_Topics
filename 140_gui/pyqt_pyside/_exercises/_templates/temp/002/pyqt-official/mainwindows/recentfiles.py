@@ -193,7 +193,7 @@ c_ MainWindow ?MW..
 
         ___
             files.remove(fileName)
-        _____ ValueError:
+        _____ V..:
             p..
 
         files.insert(0, fileName)

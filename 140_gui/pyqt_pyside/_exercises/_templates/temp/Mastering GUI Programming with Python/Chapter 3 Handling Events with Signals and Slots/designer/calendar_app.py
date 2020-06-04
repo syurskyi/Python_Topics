@@ -82,12 +82,12 @@ c_ MainWindow(MW_Base, MW_Ui):
         clear_form()
         date _ calendar.sD..
         ___ event __ events.g..(date,   # list):
-            time _ (
+            t__ _ (
                 event['time'].toString('hh:mm')
                 __ event['time']
                 ____ 'All Day'
             )
-            event_list.aI..(f"{time}: {event['title']}")
+            event_list.aI..(f"{t__}: {event['title']}")
 
     ___ populate_form
         clear_form()
@@ -112,7 +112,7 @@ c_ MainWindow(MW_Base, MW_Ui):
             'time': (
                 N..
                 __ allday_check.isChecked()
-                ____ event_time.time()
+                ____ event_time.t__()
                 ),
             'title': event_title.t__(),
             'detail': event_detail.toPlainText()

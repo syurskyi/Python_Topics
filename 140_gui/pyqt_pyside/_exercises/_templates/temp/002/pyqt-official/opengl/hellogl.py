@@ -43,7 +43,7 @@
 
 
 ______ ___
-______ math
+______ m__
 
 ____ ?.?C.. ______ pS.., QPoint, ?S.., __
 ____ ?.?G.. ______ ?C.., QOpenGLVersionProfile
@@ -94,9 +94,9 @@ c_ Window(?W..):
 
 
 c_ GLWidget(QOpenGLWidget):
-    xRotationChanged _ pS..(int)
-    yRotationChanged _ pS..(int)
-    zRotationChanged _ pS..(int)
+    xRotationChanged _ pS..(in.)
+    yRotationChanged _ pS..(in.)
+    zRotationChanged _ pS..(in.)
 
     ___  -   parent_None):
         s__(GLWidget, self). - (parent)
@@ -218,17 +218,17 @@ c_ GLWidget(QOpenGLWidget):
         NumSectors _ 200
 
         ___ i __ ra..(NumSectors):
-            angle1 _ (i * 2 * math.pi) / NumSectors
-            x5 _ 0.30 * math.sin(angle1)
-            y5 _ 0.30 * math.cos(angle1)
-            x6 _ 0.20 * math.sin(angle1)
-            y6 _ 0.20 * math.cos(angle1)
+            angle1 _ (i * 2 * m__.pi) / NumSectors
+            x5 _ 0.30 * m__.sin(angle1)
+            y5 _ 0.30 * m__.cos(angle1)
+            x6 _ 0.20 * m__.sin(angle1)
+            y6 _ 0.20 * m__.cos(angle1)
 
-            angle2 _ ((i + 1) * 2 * math.pi) / NumSectors
-            x7 _ 0.20 * math.sin(angle2)
-            y7 _ 0.20 * math.cos(angle2)
-            x8 _ 0.30 * math.sin(angle2)
-            y8 _ 0.30 * math.cos(angle2)
+            angle2 _ ((i + 1) * 2 * m__.pi) / NumSectors
+            x7 _ 0.20 * m__.sin(angle2)
+            y7 _ 0.20 * m__.cos(angle2)
+            x8 _ 0.30 * m__.sin(angle2)
+            y8 _ 0.30 * m__.cos(angle2)
 
             quad(x5, y5, x6, y6, x7, y7, x8, y8)
 
@@ -254,7 +254,7 @@ c_ GLWidget(QOpenGLWidget):
         gl.glVertex3d(x1, y1, +0.05)
 
     ___ extrude  x1, y1, x2, y2):
-        sC..(trolltechGreen.darker(250 + int(100 * x1)))
+        sC..(trolltechGreen.darker(250 + in.(100 * x1)))
 
         gl.glVertex3d(x1, y1, +0.05)
         gl.glVertex3d(x2, y2, +0.05)

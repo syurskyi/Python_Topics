@@ -38,7 +38,7 @@ c_ CounterLabel(?W..):
 
     # We define two signals that are used to indicate changes to the status
     # of the widget.
-    valueChanged _ pS..((int, ), (st., ))
+    valueChanged _ pS..((in., ), (st., ))
 
     ___  -   parent_None):
 
@@ -73,8 +73,8 @@ c_ CounterLabel(?W..):
         fm _ QFontMetricsF(_font, self)
         maxRect _ fm.boundingRect(QRectF(rect()), __.AlignCenter,
                 st.(_maximum))
-        xscale _ float(width())/maxRect.width()
-        yscale _ float(height())/maxRect.height()
+        xscale _ fl..(width())/maxRect.width()
+        yscale _ fl..(height())/maxRect.height()
         _scale _ min(xscale, yscale)
 
     ___ reposition 
@@ -110,7 +110,7 @@ c_ CounterLabel(?W..):
         __ _minimum > _value:
             sV..(_minimum)
 
-    minimum _ pP..(int, getMinimum, setMinimum)
+    minimum _ pP..(in., getMinimum, setMinimum)
 
     ___ getMaximum 
         r_ _maximum
@@ -123,7 +123,7 @@ c_ CounterLabel(?W..):
         rescale()
         reposition()
 
-    maximum _ pP..(int, getMaximum, sM..)
+    maximum _ pP..(in., getMaximum, sM..)
 
     # We provide an offset property to allow the value shown to differ from
     # the internal value held by the widget.
@@ -134,7 +134,7 @@ c_ CounterLabel(?W..):
     ___ setOffset  value):
         _offset _ value
 
-    offset _ pP..(int, getOffset, setOffset)
+    offset _ pP..(in., getOffset, setOffset)
 
     # The value property is implemented using the getValue() and setValue()
     # methods.
@@ -143,16 +143,16 @@ c_ CounterLabel(?W..):
         r_ _value
 
     # The setter method for the value property can also be used as a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ sV..  value):
         __ no. _minimum <_ value <_ _maximum:
             r_
         _value _ value
-        valueChanged[int].e..(value + _offset)
+        valueChanged[in.].e..(value + _offset)
         valueChanged[st.].e..(st.(value + _offset))
         reposition()
 
-    value _ pP..(int, getValue, sV..)
+    value _ pP..(in., getValue, sV..)
 
     # Like QAbstractSpinBox, we provide stepUp() and stepDown() slots to
     # enable the value to be incremented and decremented.

@@ -1,6 +1,6 @@
 ______ sqlite3
-connection = sqlite3.c__("projects.db")
-cursor = connection.cursor()
+connection _ sqlite3.c__("projects.db")
+cursor _ connection.cursor()
 cursor.execute("""
     CREATE TABLE projects
     (url TEXT, descr TEXT, income INTEGER)

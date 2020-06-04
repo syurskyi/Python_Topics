@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
         __, ?T..)
@@ -53,7 +53,7 @@ ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
 
 
 c_ Edge(QGraphicsItem):
-    Pi _ math.pi
+    Pi _ m__.pi
     TwoPi _ 2.0 * Pi
 
     Type _ QGraphicsItem.UserType + 2
@@ -135,18 +135,18 @@ c_ Edge(QGraphicsItem):
         painter.drawLine(line)
 
         # Draw the arrows if there's enough room.
-        angle _ math.acos(line.dx() / line.length())
+        angle _ m__.acos(line.dx() / line.length())
         __ line.dy() >_ 0:
             angle _ Edge.TwoPi - angle
 
-        sourceArrowP1 _ sourcePoint + QPointF(math.sin(angle + Edge.Pi / 3) * arrowSize,
-                                                          math.cos(angle + Edge.Pi / 3) * arrowSize)
-        sourceArrowP2 _ sourcePoint + QPointF(math.sin(angle + Edge.Pi - Edge.Pi / 3) * arrowSize,
-                                                          math.cos(angle + Edge.Pi - Edge.Pi / 3) * arrowSize);
-        destArrowP1 _ destPoint + QPointF(math.sin(angle - Edge.Pi / 3) * arrowSize,
-                                                      math.cos(angle - Edge.Pi / 3) * arrowSize)
-        destArrowP2 _ destPoint + QPointF(math.sin(angle - Edge.Pi + Edge.Pi / 3) * arrowSize,
-                                                      math.cos(angle - Edge.Pi + Edge.Pi / 3) * arrowSize)
+        sourceArrowP1 _ sourcePoint + QPointF(m__.sin(angle + Edge.Pi / 3) * arrowSize,
+                                                          m__.cos(angle + Edge.Pi / 3) * arrowSize)
+        sourceArrowP2 _ sourcePoint + QPointF(m__.sin(angle + Edge.Pi - Edge.Pi / 3) * arrowSize,
+                                                          m__.cos(angle + Edge.Pi - Edge.Pi / 3) * arrowSize);
+        destArrowP1 _ destPoint + QPointF(m__.sin(angle - Edge.Pi / 3) * arrowSize,
+                                                      m__.cos(angle - Edge.Pi / 3) * arrowSize)
+        destArrowP2 _ destPoint + QPointF(m__.sin(angle - Edge.Pi + Edge.Pi / 3) * arrowSize,
+                                                      m__.cos(angle - Edge.Pi + Edge.Pi / 3) * arrowSize)
 
         painter.sB..(__.black)
         painter.drawPolygon(QPolygonF([line.p1(), sourceArrowP1, sourceArrowP2]))
@@ -371,7 +371,7 @@ c_ GraphWidget(QGraphicsView):
             timerId _ 0
 
     ___ wheelEvent  event):
-        scaleView(math.pow(2.0, -event.angleDelta().y() / 240.0))
+        scaleView(m__.pow(2.0, -event.angleDelta().y() / 240.0))
 
     ___ drawBackground  painter, rect):
         # Shadow.

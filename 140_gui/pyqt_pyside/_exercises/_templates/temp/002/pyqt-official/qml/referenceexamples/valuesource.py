@@ -100,7 +100,7 @@ c_ ShoeDescription(?O..):
 
     shoeChanged _ pS..()
 
-    @pP..(int, notify_shoeChanged)
+    @pP..(in., notify_shoeChanged)
     ___ size 
         r_ _size
 
@@ -130,7 +130,7 @@ c_ ShoeDescription(?O..):
             _brand _ brand
             shoeChanged.e..()
 
-    @pP..(float, notify_shoeChanged)
+    @pP..(fl.., notify_shoeChanged)
     ___ price 
         r_ _price
 

@@ -8,7 +8,7 @@
 
 ____ ? ______ ?C..
 
-qt_resource_data = b"\
+qt_resource_data _ b"\
 \x00\x00\x02\xeb\
 \x89\
 \x50\x4e\x47\x0d\x0a\x1a\x0a\x00\x00\x00\x0d\x49\x48\x44\x52\x00\
@@ -478,7 +478,7 @@ qt_resource_data = b"\
 \x4e\x44\xae\x42\x60\x82\
 "
 
-qt_resource_name = b"\
+qt_resource_name _ b"\
 \x00\x05\
 \x00\x6f\xa6\x53\
 \x00\x69\
@@ -501,7 +501,7 @@ qt_resource_name = b"\
 \x00\x72\x00\x61\x00\x73\x00\x65\x00\x72\x00\x2e\x00\x70\x00\x6e\x00\x67\
 "
 
-qt_resource_struct_v1 = b"\
+qt_resource_struct_v1 _ b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x04\x00\x00\x00\x02\
 \x00\x00\x00\x2c\x00\x00\x00\x00\x00\x01\x00\x00\x02\xef\
@@ -510,7 +510,7 @@ qt_resource_struct_v1 = b"\
 \x00\x00\x00\x10\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
 "
 
-qt_resource_struct_v2 = b"\
+qt_resource_struct_v2 _ b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x04\x00\x00\x00\x02\
@@ -525,13 +525,13 @@ qt_resource_struct_v2 = b"\
 \x00\x00\x01\x4a\xd4\xbf\xad\x29\
 "
 
-qt_version = ?C...qVersion().split('.')
-if qt_version < ['5', '8', '0']:
-    rcc_version = 1
-    qt_resource_struct = qt_resource_struct_v1
-else:
-    rcc_version = 2
-    qt_resource_struct = qt_resource_struct_v2
+qt_version _ ?C...qVersion().s..('.')
+__ qt_version < ['5', '8', '0']:
+    rcc_version _ 1
+    qt_resource_struct _ qt_resource_struct_v1
+____
+    rcc_version _ 2
+    qt_resource_struct _ qt_resource_struct_v2
 
 ___ qInitResources():
     ?C...qRegisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)

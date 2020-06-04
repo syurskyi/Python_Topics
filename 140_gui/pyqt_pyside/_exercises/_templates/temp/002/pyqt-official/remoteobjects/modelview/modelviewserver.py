@@ -55,7 +55,7 @@ ______ ___
 
 ____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, ?O.., __,
         ?T.., ?U..)
-____ ?.?G.. ______ ?C.., QStandardItem, QStandardItemModel
+____ ?.?G.. ______ ?C.., ?SI.., QStandardItemModel
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 ____ ?.?W.. ______ ?A.., QTreeView
 
@@ -78,9 +78,9 @@ c_ TimerHandler(?O..):
         _model.insertRows(2, 9)
 
         ___ i __ ra..(2, 11):
-            _model.setData(_model.index(i, 1), ?C..(__.green),
+            _model.setData(_model.i..(i, 1), ?C..(__.green),
                     __.BackgroundRole)
-            _model.setData(_model.index(i, 1), "InsertedRow",
+            _model.setData(_model.i..(i, 1), "InsertedRow",
                     __.DR..)
 
     @pyqtSlot()
@@ -107,7 +107,7 @@ ___ addChild(numChildren, nestingLevel):
         r_ result
 
     ___ i __ ra..(numChildren):
-        child _ QStandardItem(
+        child _ ?SI..(
                 "Child num {}, nesting level {}".f..(i + 1, nestingLevel))
 
         __ i __ 0:
@@ -130,11 +130,11 @@ __ ______ __ ______
             ["First Column with spacing", "Second Column with spacing"])
 
     ___ i __ ra..(10000):
-        firstItem _ QStandardItem("FancyTextNumber {}".f..(i))
+        firstItem _ ?SI..("FancyTextNumber {}".f..(i))
         __ i __ 0:
             firstItem.appendRow(addChild(2, 2))
 
-        secondItem _ QStandardItem("FancyRow2TextNumber {}".f..(i))
+        secondItem _ ?SI..("FancyRow2TextNumber {}".f..(i))
         __ i % 2 __ 0:
             firstItem.setBackground(__.red)
 

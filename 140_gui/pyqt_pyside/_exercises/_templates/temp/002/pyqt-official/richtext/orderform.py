@@ -47,7 +47,7 @@ ____ ?.?G.. ______ (?F.., QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MW..,
-        ?MB.., QMenu, ?TW.., QTableWidgetItem, ?TW..,
+        ?MB.., ?M.., ?TW.., QTableWidgetItem, ?TW..,
         ?TE..)
 ____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter
 
@@ -56,7 +56,7 @@ c_ MainWindow ?MW..
     ___  -
         s__(MainWindow, self). - ()
 
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         newAction _ fileMenu.aA..("&New...")
         newAction.sS..("Ctrl+N")
         printAction _ fileMenu.aA..("&Print...", printFile)
@@ -263,7 +263,7 @@ c_ DetailsDialog(QDialog):
 
         ___ row __ ra..(le.(i..)):
             t__ _ itemsTable.item(row, 0).t__()
-            quantity _ int(itemsTable.item(row, 1).data(__.DR..))
+            quantity _ in.(itemsTable.item(row, 1).data(__.DR..))
             orderList.ap..((t__, max(0, quantity)))
 
         r_ orderList

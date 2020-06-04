@@ -104,9 +104,9 @@ c_ BezierCurve(QQuickItem):
             p4Changed.e..(p)
             update()
 
-    segmentCountChanged _ pS..(int)
+    segmentCountChanged _ pS..(in.)
 
-    @pP..(int, notify_segmentCountChanged)
+    @pP..(in., notify_segmentCountChanged)
     ___ segmentCount
         r_ _segmentCount
 
@@ -155,7 +155,7 @@ c_ BezierCurve(QQuickItem):
         vertices _ geometry.vertexDataAsPoint2D()
 
         ___ i __ ra..(_segmentCount):
-            t _ i / float(_segmentCount - 1)
+            t _ i / fl..(_segmentCount - 1)
             invt _ 1 - t
 
             pos _ invt * invt * invt * _p1 \

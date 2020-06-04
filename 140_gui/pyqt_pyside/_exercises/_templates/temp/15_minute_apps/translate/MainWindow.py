@@ -6,46 +6,46 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ ?C.., QtGui, QtWidgets
+____ ? ______ ?C.., ?G.., QtWidgets
 
 c_ Ui_MainWindow o..
-    ___ setupUi(self, MainWindow):
+    ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.r..(721, 333)
-        centralwidget = QtWidgets.?W..(MainWindow)
+        centralwidget _ QtWidgets.?W..(MainWindow)
         centralwidget.setObjectName("centralwidget")
-        horizontalLayout = QtWidgets.QHBoxLayout(centralwidget)
+        horizontalLayout _ QtWidgets.QHBoxLayout(centralwidget)
         horizontalLayout.setObjectName("horizontalLayout")
-        verticalLayout = QtWidgets.QVBoxLayout()
+        verticalLayout _ QtWidgets.QVBoxLayout()
         verticalLayout.setObjectName("verticalLayout")
-        srcLanguage = QtWidgets.?CB(centralwidget)
+        srcLanguage _ QtWidgets.?CB(centralwidget)
         srcLanguage.setObjectName("srcLanguage")
         verticalLayout.addWidget(srcLanguage)
-        srcTextEdit = QtWidgets.?TE..(centralwidget)
+        srcTextEdit _ QtWidgets.?TE..(centralwidget)
         srcTextEdit.setObjectName("srcTextEdit")
         verticalLayout.addWidget(srcTextEdit)
         horizontalLayout.aL..(verticalLayout)
-        verticalLayout_3 = QtWidgets.QVBoxLayout()
+        verticalLayout_3 _ QtWidgets.QVBoxLayout()
         verticalLayout_3.setObjectName("verticalLayout_3")
-        translateButton = QtWidgets.QPushButton(centralwidget)
+        translateButton _ QtWidgets.QPushButton(centralwidget)
         translateButton.sMS..(?C...?S..(75, 50))
         translateButton.sMS..(?C...?S..(75, 50))
-        translateButton.setText("")
-        icon = QtGui.?I..
-        icon.aP..(QtGui.?P..("images/flag.png"), QtGui.?I...Normal, QtGui.?I...Off)
+        translateButton.sT..("")
+        icon _ ?G...?I..
+        icon.aP..(?G...?P..("images/flag.png"), ?G...?I...Normal, ?G...?I...Off)
         translateButton.sI..(icon)
         translateButton.setIconSize(?C...?S..(75, 50))
         translateButton.setObjectName("translateButton")
         verticalLayout_3.addWidget(translateButton)
         horizontalLayout.aL..(verticalLayout_3)
-        verticalLayout_2 = QtWidgets.QVBoxLayout()
+        verticalLayout_2 _ QtWidgets.QVBoxLayout()
         verticalLayout_2.setObjectName("verticalLayout_2")
-        destTextEdit = QtWidgets.?TE..(centralwidget)
+        destTextEdit _ QtWidgets.?TE..(centralwidget)
         destTextEdit.setObjectName("destTextEdit")
         verticalLayout_2.addWidget(destTextEdit)
         horizontalLayout.aL..(verticalLayout_2)
         MainWindow.setCentralWidget(centralwidget)
-        menubar = QtWidgets.QMenuBar(MainWindow)
+        menubar _ QtWidgets.QMenuBar(MainWindow)
         menubar.setGeometry(?C...QRect(0, 0, 721, 22))
         menubar.setObjectName("menubar")
         MainWindow.setMenuBar(menubar)
@@ -53,8 +53,8 @@ c_ Ui_MainWindow o..
         retranslateUi(MainWindow)
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
-    ___ retranslateUi(self, MainWindow):
-        _translate = ?C... ?CA...translate
+    ___ retranslateUi  MainWindow):
+        _translate _ ?C... ?CA...translate
         MainWindow.sWT..(_translate("MainWindow", "Translataarrr"))
         translateButton.sTT..(_translate("MainWindow", "Translate"))
 

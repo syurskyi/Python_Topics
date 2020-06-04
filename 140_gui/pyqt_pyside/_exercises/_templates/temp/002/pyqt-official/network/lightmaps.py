@@ -44,7 +44,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ (pS.., QBasicTimer, ?O.., QPoint, QPointF,
         QRect, ?S.., QStandardPaths, __, ?U..)
@@ -85,25 +85,25 @@ c_ Point(QPoint):
 
 
 ___ tileForCoordinate(lat, lng, zoom):
-    zn _ float(1 << zoom)
-    tx _ float(lng + 180.0) / 360.0
-    ty _ (1.0 - math.log(math.tan(lat * math.pi / 180.0) +
-          1.0 / math.cos(lat * math.pi / 180.0)) / math.pi) / 2.0
+    zn _ fl..(1 << zoom)
+    tx _ fl..(lng + 180.0) / 360.0
+    ty _ (1.0 - m__.log(m__.tan(lat * m__.pi / 180.0) +
+          1.0 / m__.cos(lat * m__.pi / 180.0)) / m__.pi) / 2.0
 
     r_ QPointF(tx * zn, ty * zn)
 
 
 ___ longitudeFromTile(tx, zoom):
-    zn _ float(1 << zoom)
+    zn _ fl..(1 << zoom)
     lat _ tx / zn * 360.0 - 180.0
 
     r_ lat
 
 
 ___ latitudeFromTile(ty, zoom):
-    zn _ float(1 << zoom)
-    n _ math.pi - 2 * math.pi * ty / zn
-    lng _ 180.0 / math.pi * math.atan(0.5 * (math.exp(n) - math.exp(-n)))
+    zn _ fl..(1 << zoom)
+    n _ m__.pi - 2 * m__.pi * ty / zn
+    lng _ 180.0 / m__.pi * m__.atan(0.5 * (m__.exp(n) - m__.exp(-n)))
 
     r_ lng
 
@@ -145,21 +145,21 @@ c_ SlippyMap(?O..):
         ty _ ct.y()
 
         # top-left corner of the center tile
-        xp _ int(width / 2 - (tx - math.floor(tx)) * TDIM)
-        yp _ int(height / 2 - (ty - math.floor(ty)) * TDIM)
+        xp _ in.(width / 2 - (tx - m__.floor(tx)) * TDIM)
+        yp _ in.(height / 2 - (ty - m__.floor(ty)) * TDIM)
 
         # first tile vertical and horizontal
         xa _ (xp + TDIM - 1) / TDIM
         ya _ (yp + TDIM - 1) / TDIM
-        xs _ int(tx) - xa
-        ys _ int(ty) - ya
+        xs _ in.(tx) - xa
+        ys _ in.(ty) - ya
 
         # offset for top-left tile
         _offset _ QPoint(xp - xa * TDIM, yp - ya * TDIM)
 
         # last tile vertical and horizontal
-        xe _ int(tx) + (width - xp - 1) / TDIM
-        ye _ int(ty) + (height - yp - 1) / TDIM
+        xe _ in.(tx) + (width - xp - 1) / TDIM
+        ye _ in.(ty) + (height - yp - 1) / TDIM
 
         # build a rect
         _tilesRect _ QRect(xs, ys, xe - xs + 1, ye - ys + 1)
@@ -178,7 +178,7 @@ c_ SlippyMap(?O..):
                     p.drawPixmap(box, _tilePixmaps.g..(tp, _emptyTile))
    
     ___ pan  delta):
-        dx _ QPointF(delta) / float(TDIM)
+        dx _ QPointF(delta) / fl..(TDIM)
         center _ tileForCoordinate(latitude, longitude, zoom) - dx
         latitude _ latitudeFromTile(center.y(), zoom)
         longitude _ longitudeFromTile(center.x(), zoom)

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ QPointF, __, ?T..
 ____ ?.?G.. ______ (?B.., ?C.., QLinearGradient, ?P.., QPainter,
@@ -116,9 +116,9 @@ c_ Lighting(QGraphicsView):
                 m_items.ap..(item)
 
     ___ animate 
-        angle +_ (math.pi / 30)
-        xs _ 200 * math.sin(angle) - 40 + 25
-        ys _ 200 * math.cos(angle) - 40 + 25
+        angle +_ (m__.pi / 30)
+        xs _ 200 * m__.sin(angle) - 40 + 25
+        ys _ 200 * m__.cos(angle) - 40 + 25
         m_lightSource.setPos(xs, ys)
 
         ___ item __ m_items:
@@ -127,7 +127,7 @@ c_ Lighting(QGraphicsView):
             delta _ QPointF(item.x() - xs, item.y() - ys)
             effect.setOffset(QPointF(delta.toPoint() / 30))
 
-            dd _ math.hypot(delta.x(), delta.y())
+            dd _ m__.hypot(delta.x(), delta.y())
             color _ effect.color()
             color.setAlphaF(max(0.4, min(1 - dd / 200.0, 0.7)))
             effect.sC..(color)

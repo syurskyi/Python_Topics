@@ -109,7 +109,7 @@ c_ BubblesWidget(BaseClass):
     # We define two signals that are used to indicate changes to the status
     # of the widget.
     bubbleLeft _ pS..()
-    bubblesRemaining _ pS..(int)
+    bubblesRemaining _ pS..(in.)
 
     ___  -   parent_None):
 
@@ -263,7 +263,7 @@ c_ BubblesWidget(BaseClass):
         r_ le.(bubbles)
 
     # The setBubbles() method can also be used as a slot.
-    @pyqtSlot(int)
+    @pyqtSlot(in.)
     ___ setBubbles  value):
 
         value _ max(0, value)
@@ -282,7 +282,7 @@ c_ BubblesWidget(BaseClass):
         bubblesRemaining.e..(value)
         update()
 
-    numberOfBubbles _ pP..(int, getBubbles, setBubbles)
+    numberOfBubbles _ pP..(in., getBubbles, setBubbles)
 
     # We provide getter and setter methods for the color1 and color2
     # properties. The red, green and blue components for the QColor

@@ -44,7 +44,7 @@
 
 
 ____ ?.?C.. ______ ?U..
-____ ?.?W.. ______ ?A.., ?MW.., QTreeWidgetItem
+____ ?.?W.. ______ ?A.., ?MW.., ?TWI..
 
 ____ ui_window ______ Ui_Window
 
@@ -69,7 +69,7 @@ c_ Window(?MW.., Ui_Window):
         # Traverse the document.
         element _ parentElement.firstChild()
         w__ no. element.isNull
-            item _ QTreeWidgetItem()
+            item _ ?TWI..()
             item.sT..(0, element.tagName())
             parentItem.addChild(item)
             examineChildElements(element, item)

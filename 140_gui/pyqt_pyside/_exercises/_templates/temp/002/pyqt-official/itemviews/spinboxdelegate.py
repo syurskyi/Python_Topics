@@ -58,7 +58,7 @@ c_ SpinBoxDelegate(?SID..):
         r_ editor
 
     ___ setEditorData  spinBox, index):
-        value _ index.model().data(index, __.ER..)
+        value _ i...model().data(index, __.ER..)
 
         spinBox.sV..(value)
 

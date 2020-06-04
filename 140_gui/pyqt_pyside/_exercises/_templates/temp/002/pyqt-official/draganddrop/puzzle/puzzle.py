@@ -46,7 +46,7 @@ ______ random
 
 ____ ?.?C.. ______ (pS.., QByteArray, ?DS.., QIODevice,
         QMimeData, QPoint, QRect, ?S.., __)
-____ ?.?G.. ______ QDrag, ?C.., QCursor, ?I.., QPainter, ?P..
+____ ?.?G.. ______ QDrag, ?C.., ?C.., ?I.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
         QListView, QListWidget, QListWidgetItem, ?MW.., ?MB..,
         QSizePolicy, ?W..)
@@ -134,7 +134,7 @@ c_ PuzzleWidget(?W..):
     ___ findPiece  pieceRect):
         ___
             r_ pieceRects.index(pieceRect)
-        _____ ValueError:
+        _____ V..:
             r_ -1
 
     ___ mousePressEvent  event):
@@ -314,7 +314,7 @@ c_ MainWindow ?MW..
                 pieceImage _ puzzleImage.copy(x*80, y*80, 80, 80)
                 piecesList.addPiece(pieceImage, QPoint(x,y))
 
-        random.seed(QCursor.pos().x() ^ QCursor.pos().y())
+        random.seed(?C...pos().x() ^ ?C...pos().y())
 
         ___ i __ ra..(piecesList.count()):
             __ random.random() < 0.5:

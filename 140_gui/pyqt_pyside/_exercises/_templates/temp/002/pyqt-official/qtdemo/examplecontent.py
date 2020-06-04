@@ -101,9 +101,9 @@ c_ ExampleContent(DemoItem):
         r_ Colors.contentColor + description
 
     ___ isSummary  t__):
-        re _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % name, __.CaseInsensitive)
+        __ _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % name, __.CaseInsensitive)
 
-        r_ ('[' no. __ t__) and (re.indexIn(t__) >_ 0)
+        r_ ('[' no. __ t__) and (__.indexIn(t__) >_ 0)
 
     ___ extractTextFromParagraph  parentNode):
         description _ ''
@@ -139,7 +139,7 @@ c_ ExampleContent(DemoItem):
         heading _ HeadingItem(name, self)
         description _ DemoTextItem(loadDescription(),
                 Colors.contentFont(), Colors.heading, 500, self)
-        imgHeight _ 340 - int(description.boundingRect().height()) + 50
+        imgHeight _ 340 - in.(description.boundingRect().height()) + 50
         screenshot _ ImageItem(QImage.fromData(_menu_manager.getImage(name)), 550, imgHeight, self)
 
         # Place the items on screen.

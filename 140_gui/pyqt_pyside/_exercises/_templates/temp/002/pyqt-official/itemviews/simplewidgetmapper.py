@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?G.. ______ QStandardItem, QStandardItemModel
+____ ?.?G.. ______ ?SI.., QStandardItemModel
 ____ ?.?W.. ______ (?A.., QDataWidgetMapper, QGridLayout,
         QLabel, QLineEdit, ?PB.., SB.., ?TE.., ?W..)
 
@@ -106,11 +106,11 @@ c_ Window(?W..):
         ages _ ("20", "31", "32", "19", "26")
         
         ___ row, name __ en..(names):
-            item _ QStandardItem(name)
+            item _ ?SI..(name)
             model.setItem(row, 0, item)
-            item _ QStandardItem(addresses[row])
+            item _ ?SI..(addresses[row])
             model.setItem(row, 1, item)
-            item _ QStandardItem(ages[row])
+            item _ ?SI..(ages[row])
             model.setItem(row, 2, item)
  
     ___ updateButtons  row):

@@ -40,7 +40,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 ______ random
 
 ____ ?.?C.. ______ QLineF, QPointF, QRectF, __, ?T..
@@ -80,16 +80,16 @@ c_ PostRotateXY(TickerPostEffect):
     ___ transform  item, pos):
         parent _ item.parentItem()
         center _ parent.boundingRect().center()
-        pos.setX(center.x() + (pos.x() - center.x()) * math.cos(currRotX + pos.x() * curvx))
-        pos.setY(center.y() + (pos.y() - center.y()) * math.cos(currRotY + pos.y() * curvy))
+        pos.setX(center.x() + (pos.x() - center.x()) * m__.cos(currRotX + pos.x() * curvx))
+        pos.setY(center.y() + (pos.y() - center.y()) * m__.cos(currRotY + pos.y() * curvy))
 
 
 c_ PostRotateXYTwist(PostRotateXY):
     ___ transform  item, pos):
         parent _ item.parentItem()
         center _ parent.boundingRect().center()
-        pos.setX(center.x() + (pos.x() - center.x()) * math.cos(currRotX + pos.y() * curvx))
-        pos.setY(center.y() + (pos.y() - center.y()) * math.cos(currRotY + pos.x() * curvy))
+        pos.setX(center.x() + (pos.x() - center.x()) * m__.cos(currRotX + pos.y() * curvx))
+        pos.setY(center.y() + (pos.y() - center.y()) * m__.cos(currRotY + pos.x() * curvy))
 
 
 c_ TickerEffect o..
@@ -268,7 +268,7 @@ c_ ItemCircleAnimation(DemoItem):
         qtGuide3.setFence(QRectF(0, 0, 800, 600))
 
     ___ useGuide  guide, firstLetter, lastLetter):
-        padding _ guide.lengthAll() / float(lastLetter - firstLetter)
+        padding _ guide.lengthAll() / fl..(lastLetter - firstLetter)
 
         ___ i, letter __ en..(letterList[firstLetter:lastLetter]):
             letter.useGuide(guide, i * padding)
@@ -280,7 +280,7 @@ c_ ItemCircleAnimation(DemoItem):
 
     ___ useGuideTt
         __ currGuide __ no. qtGuide2:
-            sp.. _ int(letterCount * 5.0 / 7.0)
+            sp.. _ in.(letterCount * 5.0 / 7.0)
             useGuide(qtGuide2, 0, sp..)
             useGuide(qtGuide3, sp.., letterCount)
             currGuide _ qtGuide2

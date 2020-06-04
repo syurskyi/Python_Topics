@@ -72,8 +72,8 @@ c_ ImageItem(DemoItem):
             r_ original
 
         # Calculate what the size of the final image will be.
-        w _ min(w, float(original.size().width()) * scale)
-        h _ min(h, float(original.size().height()) * scale)
+        w _ min(w, fl..(original.size().width()) * scale)
+        h _ min(h, fl..(original.size().height()) * scale)
 
         adjustx _ 1.0
         adjusty _ 1.0
@@ -84,7 +84,7 @@ c_ ImageItem(DemoItem):
             h *_ adjusty
 
         # Create a new image with correct size, and draw original on it.
-        image _ QImage(int(w + 2), int(h + 2),
+        image _ QImage(in.(w + 2), in.(h + 2),
                 QImage.Format_ARGB32_Premultiplied)
         image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
@@ -104,7 +104,7 @@ c_ ImageItem(DemoItem):
                 brush1.setSpread(QLinearGradient.PadSpread)
                 brush1.setColorAt(0.0, ?C..(0, 0, 0, 0))
                 brush1.setColorAt(1.0, Colors.sceneBg1)
-                painter.fillRect(0, int(h) - blur, original.width(), int(h),
+                painter.fillRect(0, in.(h) - blur, original.width(), in.(h),
                         brush1)
 
             __ w < original.width
@@ -112,7 +112,7 @@ c_ ImageItem(DemoItem):
                 brush2.setSpread(QLinearGradient.PadSpread)
                 brush2.setColorAt(0.0, ?C..(0, 0, 0, 0))
                 brush2.setColorAt(1.0, Colors.sceneBg1)
-                painter.fillRect(int(w) - blur, 0, int(w), original.height(),
+                painter.fillRect(in.(w) - blur, 0, in.(w), original.height(),
                         brush2)
 
         r_ image

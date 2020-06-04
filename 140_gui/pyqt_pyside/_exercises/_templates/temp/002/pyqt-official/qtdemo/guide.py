@@ -56,7 +56,7 @@ c_ Guide o..
             prevGuide _ follows
             firstGuide _ follows.firstGuide
             nextGuide _ follows.firstGuide
-            startLength _ int(follows.startLength + follows.length()) + 1
+            startLength _ in.(follows.startLength + follows.length()) + 1
         ____
             prevGuide _ self
             firstGuide _ self

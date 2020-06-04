@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ math
+______ m__
 
 ____ ?.?C.. ______ pyqtSlot, Q_CLASSINFO, QRectF, __
 ____ ?.?G.. ______ ?B.., QPainter, QTransform
@@ -85,10 +85,10 @@ c_ Car(QGraphicsObject):
 
     ___ timerEvent  event):
         axelDistance _ 54.0
-        wheelsAngleRads _ (wheelsAngle * math.pi) / 180
-        turnDistance _ math.cos(wheelsAngleRads) * axelDistance * 2
+        wheelsAngleRads _ (wheelsAngle * m__.pi) / 180
+        turnDistance _ m__.cos(wheelsAngleRads) * axelDistance * 2
         turnRateRads _ wheelsAngleRads / turnDistance
-        turnRate _ (turnRateRads * 180) / math.pi
+        turnRate _ (turnRateRads * 180) / m__.pi
         rotation _ speed * turnRate
 
         setTransform(QTransform().rotate(rotation),  st.

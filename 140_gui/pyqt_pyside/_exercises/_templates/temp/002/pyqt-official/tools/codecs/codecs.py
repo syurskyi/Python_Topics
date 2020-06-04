@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QRegExp, QTextCodec, QTextStream
 ____ ?.?W.. ______ (?A.., ?A.., ?CB, QDialog,
-        QDialogButtonBox, ?FD.., QGridLayout, QLabel, ?MW.., QMenu,
+        QDialogButtonBox, ?FD.., QGridLayout, QLabel, ?MW.., ?M..,
         ?MB.., ?TE..)
 
 
@@ -170,19 +170,19 @@ c_ MainWindow ?MW..
                 triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
-        saveAsMenu _ QMenu("&Save As", self)
+        saveAsMenu _ ?M..("&Save As", self)
         ___ action __ saveAsActs:
             saveAsMenu.aA..(action)
 
         saveAsMenu.aboutToShow.c..(aboutToShowSaveAsMenu)
 
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         fileMenu.aA..(openAct)
         fileMenu.aM..(saveAsMenu)
         fileMenu.addSeparator()
         fileMenu.aA..(exitAct)
 
-        helpMenu _ QMenu("&Help", self)
+        helpMenu _ ?M..("&Help", self)
         helpMenu.aA..(aboutAct)
         helpMenu.aA..(aboutQtAct)
 

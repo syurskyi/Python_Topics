@@ -70,8 +70,8 @@ c_ SpreadSheetItem(QTableWidgetItem):
             r_ display()
         t _ st.(display())
         ___
-            number _ int(t)
-        _____ ValueError:
+            number _ in.(t)
+        _____ V..:
             number _ N..
         __ role __ __.TextColorRole:
             __ number __ N..:
@@ -120,13 +120,13 @@ c_ SpreadSheetItem(QTableWidgetItem):
         end _ widget.item(secondRow, secondCol)
         firstVal _ 0
         ___
-            firstVal _ start and int(start.t__()) or 0
-        _____ ValueError:
+            firstVal _ start and in.(start.t__()) or 0
+        _____ V..:
             p..
         secondVal _ 0
         ___
-            secondVal _ end and int(end.t__()) or 0
-        _____ ValueError:
+            secondVal _ end and in.(end.t__()) or 0
+        _____ V..:
             p..
         result _ N..
         __ op __ "sum":
@@ -136,8 +136,8 @@ c_ SpreadSheetItem(QTableWidgetItem):
                     tableItem _ widget.item(r, c)
                     __ tableItem and tableItem !_ self:
                         ___
-                            sum_ +_ int(tableItem.t__())
-                        _____ ValueError:
+                            sum_ +_ in.(tableItem.t__())
+                        _____ V..:
                             p..
             result _ sum_
         ____ op __ "+":

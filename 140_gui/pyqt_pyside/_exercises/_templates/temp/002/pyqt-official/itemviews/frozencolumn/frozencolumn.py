@@ -52,7 +52,7 @@
 
 
 ____ ?.?C.. ______ QFile, QFileInfo, __
-____ ?.?G.. ______ QStandardItem, QStandardItemModel
+____ ?.?G.. ______ ?SI.., QStandardItemModel
 ____ ?.?W.. ______ ?A.., ?HV.., QTableView
 
 
@@ -147,7 +147,7 @@ ___ main(args):
             __ no. line.s_w_('#') and ',' __ line:
                 fields _ split_and_strip(line, ',')
                 ___ col, field __ en..(fields):
-                    newItem _ QStandardItem(field)
+                    newItem _ ?SI..(field)
                     model.setItem(row, col, newItem)
                 row +_ 1
     file.c..

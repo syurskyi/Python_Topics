@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ QImage, QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
-        ?MW.., QMenu, ?MB.., QScrollArea, QSizePolicy)
+        ?MW.., ?M.., ?MB.., QScrollArea, QSizePolicy)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 
@@ -165,20 +165,20 @@ c_ ImageViewer ?MW..
                 triggered_QApplication.i.. .aboutQt)
 
     ___ createMenus
-        fileMenu _ QMenu("&File", self)
+        fileMenu _ ?M..("&File", self)
         fileMenu.aA..(openAct)
         fileMenu.aA..(printAct)
         fileMenu.addSeparator()
         fileMenu.aA..(exitAct)
 
-        viewMenu _ QMenu("&View", self)
+        viewMenu _ ?M..("&View", self)
         viewMenu.aA..(zoomInAct)
         viewMenu.aA..(zoomOutAct)
         viewMenu.aA..(normalSizeAct)
         viewMenu.addSeparator()
         viewMenu.aA..(fitToWindowAct)
 
-        helpMenu _ QMenu("&Help", self)
+        helpMenu _ ?M..("&Help", self)
         helpMenu.aA..(aboutAct)
         helpMenu.aA..(aboutQtAct)
 
@@ -202,7 +202,7 @@ c_ ImageViewer ?MW..
         zoomOutAct.sE..(scaleFactor > 0.333)
 
     ___ adjustScrollBar  scrollBar, factor):
-        scrollBar.sV..(int(factor * scrollBar.v..
+        scrollBar.sV..(in.(factor * scrollBar.v..
                                 + ((factor - 1) * scrollBar.pageStep()/2)))
 
 

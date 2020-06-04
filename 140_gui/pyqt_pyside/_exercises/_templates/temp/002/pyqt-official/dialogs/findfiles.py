@@ -165,7 +165,7 @@ c_ Window(QDialog):
 
             fileNameItem _ QTableWidgetItem(fn)
             fileNameItem.setFlags(fileNameItem.flags() ^ __.IIE..)
-            sizeItem _ QTableWidgetItem("%d KB" % (int((size + 1023) / 1024)))
+            sizeItem _ QTableWidgetItem("%d KB" % (in.((size + 1023) / 1024)))
             sizeItem.setTextAlignment(__.AlignVCenter | __.AlignRight)
             sizeItem.setFlags(sizeItem.flags() ^ __.IIE..)
 

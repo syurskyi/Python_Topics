@@ -75,7 +75,7 @@ c_ AnalogClock(?W..):
 
     ___ paintEvent  event):
         side _ min(width(), height())
-        time _ ?T...currentTime()
+        t__ _ ?T...currentTime()
 
         painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)
@@ -86,7 +86,7 @@ c_ AnalogClock(?W..):
         painter.sB..(AnalogClock.hourColor)
 
         painter.save()
-        painter.rotate(30.0 * ((time.hour() + time.minute() / 60.0)))
+        painter.rotate(30.0 * ((t__.hour() + t__.minute() / 60.0)))
         painter.drawConvexPolygon(AnalogClock.hourHand)
         painter.restore()
 
@@ -100,7 +100,7 @@ c_ AnalogClock(?W..):
         painter.sB..(AnalogClock.minuteColor)
 
         painter.save()
-        painter.rotate(6.0 * (time.minute() + time.second() / 60.0))
+        painter.rotate(6.0 * (t__.minute() + t__.second() / 60.0))
         painter.drawConvexPolygon(AnalogClock.minuteHand)
         painter.restore()
 
