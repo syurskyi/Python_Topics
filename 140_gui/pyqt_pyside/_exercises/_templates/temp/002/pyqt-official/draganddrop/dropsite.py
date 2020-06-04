@@ -116,7 +116,7 @@ c_ DropSiteWindow(?W..):
         dropArea.changed.c..(updateFormatsTable)
 
         formatsTable _ ?TW..()
-        formatsTable.setColumnCount(2)
+        formatsTable.sCC..(2)
         formatsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
         formatsTable.sHHL..(["Format", "Content"])
         formatsTable.hH.. .setStretchLastSection( st.

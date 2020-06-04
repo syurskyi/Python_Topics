@@ -1,6 +1,6 @@
 ____ ?.?C.. ______ __
 ____ ?.QtWidgets ______ ?MW.., QWidget, ?A.., QSplitter, QListView, QTabWidget
-____ ?.?G.. ______ QIcon, QStandardItemModel, ?SI..
+____ ?.?G.. ______ QIcon, ?SIM.., ?SI..
 
 
 ____ app.ConfigurationManager ______ ConfigurationManager
@@ -39,8 +39,8 @@ c_ MainWindow(?MW..):
         central_widget _ QSplitter(__.Horizontal, self)
         central_widget.addWidget(conf_widget)
         central_widget.addWidget(context_widget)
-        central_widget.setCollapsible(0, False)
-        central_widget.setCollapsible(1, False)
+        central_widget.setCollapsible(0, F..)
+        central_widget.setCollapsible(1, F..)
         central_widget.setSizes([150, 999])
 
         setCentralWidget(central_widget)
@@ -62,7 +62,7 @@ c_ MainWindow(?MW..):
     ___ load_configuration
         cluster_conf _ config_manager.get(CLUSTER_CONF)
 
-        model _ QStandardItemModel()
+        model _ ?SIM..()
         ___ element in cluster_conf:
             item _ ?SI..(element['name'])
             item.setEditable F..

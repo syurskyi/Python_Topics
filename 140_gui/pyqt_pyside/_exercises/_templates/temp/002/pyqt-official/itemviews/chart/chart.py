@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
         QItemSelectionModel, QModelIndex, QPoint, QRect, ?S.., __,
         QTextStream)
 ____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QPainter, QPainterPath,
-        ?P.., ?P.., QRegion, QStandardItemModel)
+        ?P.., ?P.., QRegion, ?SIM..)
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?FD..,
         ?MW.., ?M.., QRubberBand, QSplitter, ?S.., QTableView)
 
@@ -491,7 +491,7 @@ c_ MainWindow ?MW..
         r..(870, 550)
 
     ___ setupModel
-        model _ QStandardItemModel(8, 2, self)
+        model _ ?SIM..(8, 2, self)
         model.setHeaderData(0, __.H.., "Label")
         model.setHeaderData(1, __.H.., "Quantity")
 
@@ -572,7 +572,7 @@ c_ MainWindow ?MW..
                                     model.index(row, 0, QModelIndex()),
                                     __.DecorationRole).name())
 
-                    f.w..(b','.join([p.encode('utf-8') ___ p __ pieces]))
+                    f.w..(b','.join([p.e..('utf-8') ___ p __ pieces]))
                     f.w..(b'\n')
 
             f.c..

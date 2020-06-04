@@ -11,7 +11,7 @@ ______ os
 
 c_ InsertDialog(QDialog):
     ___  -   *args, **kwargs):
-        super(InsertDialog, self). - (*args, **kwargs)
+        s__(InsertDialog, self). - (*args, **kwargs)
 
         QBtn _ QPushButton()
         QBtn.sT..("Register")
@@ -90,7 +90,7 @@ c_ InsertDialog(QDialog):
 
 c_ SearchDialog(QDialog):
     ___  -   *args, **kwargs):
-        super(SearchDialog, self). - (*args, **kwargs)
+        s__(SearchDialog, self). - (*args, **kwargs)
 
         QBtn _ QPushButton()
         QBtn.sT..("Search")
@@ -128,7 +128,7 @@ c_ SearchDialog(QDialog):
 
 c_ DeleteDialog(QDialog):
     ___  -   *args, **kwargs):
-        super(DeleteDialog, self). - (*args, **kwargs)
+        s__(DeleteDialog, self). - (*args, **kwargs)
 
         QBtn _ QPushButton()
         QBtn.sT..("Delete")
@@ -170,7 +170,7 @@ c_ DeleteDialog(QDialog):
 
 c_ AboutDialog(QDialog):
     ___  -   *args, **kwargs):
-        super(AboutDialog, self). - (*args, **kwargs)
+        s__(AboutDialog, self). - (*args, **kwargs)
 
         setFixedWidth(500)
         setFixedHeight(250)
@@ -208,7 +208,7 @@ c_ AboutDialog(QDialog):
 
 c_ MainWindow(?MW..):
     ___  -   *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+        s__(MainWindow, self). - (*args, **kwargs)
         setWindowIcon(QIcon('icon/g2.png'))  #window icon
 
         conn _ sqlite3.c__("database.db")
@@ -225,14 +225,14 @@ c_ MainWindow(?MW..):
         tableWidget _ QTableWidget()
         setCentralWidget(tableWidget)
         tableWidget.setAlternatingRowColors T..
-        tableWidget.setColumnCount(6)
+        tableWidget.sCC..(6)
         tableWidget.hH.. .setCascadingSectionResizes F..
         tableWidget.hH.. .sSIS.. F..
         tableWidget.hH.. .setStretchLastSection T..
         tableWidget.verticalHeader().setVisible F..
         tableWidget.verticalHeader().setCascadingSectionResizes F..
         tableWidget.verticalHeader().setStretchLastSection F..
-        tableWidget.setHorizontalHeaderLabels(("Roll No.", "Name", "Branch", "Sem", "Mobile","Address"))
+        tableWidget.sHHL..(("Roll No.", "Name", "Branch", "Sem", "Mobile","Address"))
 
         toolbar _ QToolBar()
         toolbar.setMovable F..
@@ -319,7 +319,7 @@ c_ MainWindow(?MW..):
 
 
 app _ ?A..(___.argv)
-__(QDialog.Accepted __ True):
+__(QDialog.Accepted __ T..):
     window _ MainWindow()
     window.s..
     window.loaddata()

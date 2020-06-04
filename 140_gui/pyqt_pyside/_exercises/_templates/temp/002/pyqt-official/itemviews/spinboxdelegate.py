@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QModelIndex, __
-____ ?.?G.. ______ QStandardItemModel
+____ ?.?G.. ______ ?SIM..
 ____ ?.?W.. ______ (?A.., SB.., ?SID..,
         QTableView)
 
@@ -78,7 +78,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
 
-    model _ QStandardItemModel(4, 2)
+    model _ ?SIM..(4, 2)
     tableView _ ?TV..
     tableView.sM..(model)
 

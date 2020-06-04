@@ -8,9 +8,9 @@ rows _ [("Newton", "1643-01-04", "Classical mechanics"),
 
 c_ TableModel(QAbstractTableModel):
     ___ rowCount  parent):
-        r_ len(rows)
+        r_ le.(rows)
     ___ columnCount  parent):
-        r_ len(headers)
+        r_ le.(headers)
     ___ data  index, role):
         __ role !_ __.DisplayRole:
             r_ QVariant()

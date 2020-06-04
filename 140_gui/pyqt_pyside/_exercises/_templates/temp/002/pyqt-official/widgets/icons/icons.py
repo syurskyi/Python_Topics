@@ -351,7 +351,7 @@ c_ MainWindow ?MW..
         imagesTable.sID..(ImageDelegate(self))
 
         imagesTable.hH.. .setDefaultSectionSize(90)
-        imagesTable.setColumnCount(3)
+        imagesTable.sCC..(3)
         imagesTable.sHHL..(("Image", "Mode", "State"))
         imagesTable.hH.. .sSRM..(0, ?HV...Stretch)
         imagesTable.hH.. .sSRM..(1, ?HV...Fixed)

@@ -31,13 +31,13 @@ c_ ClusterWidget(QWidget):
             __ element['name'] __ cluster:
                 configuration _ element['configuration']
                 members _ element['members']
-                r_ True
-        r_ False
+                r_ T..
+        r_ F..
 
     ___ _init_ui
         # ensure conf is loaded
         __ not _load_from_conf():
-            r_ False
+            r_ F..
 
         layout _ QVBoxLayout(self)
 
@@ -49,9 +49,9 @@ c_ ClusterWidget(QWidget):
         members_table _ QTableWidget(self)
 
         members_table.setRowCount(1)
-        members_table.setColumnCount(len(HEADERS))
+        members_table.sCC..(le.(HEADERS))
         members_table.verticalHeader().hide()
-        members_table.setHorizontalHeaderLabels(HEADERS)
+        members_table.sHHL..(HEADERS)
         members_table.hH.. .setSectionResizeMode(QHeaderView.Stretch)
         members_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
 

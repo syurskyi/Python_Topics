@@ -54,7 +54,7 @@ c_ UnzipWorker(QRunnable):
     ___ run
         ___
             i.. _ zipfile.infolist()
-            total_n _ len(i..)
+            total_n _ le.(i..)
 
             ___ n, item __ en..(i.., 1):
                 __ not an.(item.filename.s_w_(p) ___ p __ EXCLUDE_PATHS):

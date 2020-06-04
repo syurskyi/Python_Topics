@@ -18,7 +18,7 @@ c_ MongoUtils o..
         '''
     ___ preview col,queryjson,page,limit,sort):
         skipNum _ (page - 1) * limit
-        __ len(queryjson.items()) > 0:
+        __ le.(queryjson.items()) > 0:
             query _ ____.dumps(queryjson)
         ____
             query _ ""

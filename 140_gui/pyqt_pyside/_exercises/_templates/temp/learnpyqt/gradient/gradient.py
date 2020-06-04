@@ -79,7 +79,7 @@ c_ Gradient(?W...?W..):
         r_ ?C...?S..(200, 50)
 
     ___ _sort_gradient
-        _gradient _ sorted(_gradient, key_lambda g:g[0])
+        _gradient _ so..(_gradient, key_lambda g:g[0])
 
     ___ _constrain_gradient
         _gradient _ [

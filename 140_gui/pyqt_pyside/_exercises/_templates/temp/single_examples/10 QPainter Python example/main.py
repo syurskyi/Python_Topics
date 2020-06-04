@@ -5,18 +5,18 @@ ____ ?.QtMultimedia ______ QSound
 
 c_ PlainTextEdit(QPlainTextEdit):
     ___  -
-        super(). - ()
+        s__(). - ()
         _holes _   # list
         _bullet _ QPixmap("bullet.png")
         size _ _bullet.size()
         _offset _ QPoint(size.width() / 2, size.height() / 2)
     ___ mousePressEvent  e):
         _holes.ap..(e.pos())
-        super().mousePressEvent(e)
+        s__().mousePressEvent(e)
         viewport().update()
         QSound.play("shot.wav")
     ___ paintEvent  e):
-        super().paintEvent(e)
+        s__().paintEvent(e)
         painter _ QPainter(viewport())
         ___ hole in _holes:
             painter.drawPixmap(hole - _offset, _bullet)

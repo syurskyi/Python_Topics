@@ -77,7 +77,7 @@ c_ UpdateWorker(QRunnable):
     ___ run
         ___
             today _ date.today()
-            total_requests _ len(DATE_REQUEST_OFFSETS)
+            total_requests _ le.(DATE_REQUEST_OFFSETS)
 
             ___ n, offset __ en..(DATE_REQUEST_OFFSETS, 1):
                 when _ today - timedelta(days_offset)
@@ -143,7 +143,7 @@ c_ MainWindow(?MW..):
         _last_updated _ None
 
         listView _ ?TV..
-        model _ QStandardItemModel()
+        model _ ?SIM..()
         model.sHHL..(["Currency", "Rate"])
         model.itemChanged.c__(check_check_state)
 
@@ -213,7 +213,7 @@ c_ MainWindow(?MW..):
         citem.setForeground(?B..(QColor(
             get_currency_color(currency)
         )))
-        citem.setColumnCount(2)
+        citem.sCC..(2)
         citem.setCheckable( st.
         __ currency __ DEFAULT_DISPLAY_CURRENCIES:
             citem.setCheckState(__.Checked)
@@ -221,7 +221,7 @@ c_ MainWindow(?MW..):
         vitem _ ?SI..()
 
         vitem.setTextAlignment(__.AlignRight | __.AlignVCenter)
-        model.setColumnCount(2)
+        model.sCC..(2)
         model.appendRow([citem, vitem])
         model.s..(0)
         r_ citem, vitem
@@ -311,7 +311,7 @@ c_ MainWindow(?MW..):
                 x_ticks.ap..((-n, when.strftime('%d-%m')))
 
         # Update the plot
-        keys _ sorted(plotd.keys())
+        keys _ so..(plotd.keys())
         y_min, y_max _ ___.maxsize, 0
 
         ___ currency __ keys:

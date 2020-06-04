@@ -9,7 +9,7 @@ c_ TabBarWidget(QTabBar):
     """
     ___  -   parent_None):
         tabSize _ QSize(100, 25)
-        super(TabBarWidget, self). - (parent)
+        s__(TabBarWidget, self). - (parent)
 
     ___ paintEvent  event):
         painter _ QStylePainter(self)

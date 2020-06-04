@@ -55,7 +55,7 @@ ______ ___
 
 ____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, ?O.., __,
         ?T.., ?U..)
-____ ?.?G.. ______ ?C.., ?SI.., QStandardItemModel
+____ ?.?G.. ______ ?C.., ?SI.., ?SIM..
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 ____ ?.?W.. ______ ?A.., QTreeView
 
@@ -125,7 +125,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
 
-    sourceModel _ QStandardItemModel()
+    sourceModel _ ?SIM..()
     sourceModel.sHHL..(
             ["First Column with spacing", "Second Column with spacing"])
 

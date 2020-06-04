@@ -44,7 +44,7 @@
 
 
 ____ ?.?C.. ______ QStringListModel
-____ ?.?G.. ______ ?SI.., QStandardItemModel
+____ ?.?G.. ______ ?SI.., ?SIM..
 ____ ?.?W.. ______ (?A.., ?CB, QDataWidgetMapper,
         QGridLayout, QLabel, QLineEdit, ?PB.., ?TE.., ?W..)
 
@@ -102,7 +102,7 @@ c_ Window(?W..):
         i.. _ ("Home", "Work", "Other")
         typeModel _ QStringListModel(i.., self)
 
-        model _ QStandardItemModel(5, 3, self)
+        model _ ?SIM..(5, 3, self)
 
         names _ ("Alice", "Bob", "Carol", "Donald", "Emma")
         addresses _ ("<qt>123 Main Street<br/>Market Town</qt>",

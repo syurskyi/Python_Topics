@@ -235,7 +235,7 @@ c_ LocationDialog(QDialog):
         locationsTable.setSelectionMode(QAbstractItemView.SingleSelection)
         locationsTable.setSelectionBehavior(QAbstractItemView.SelectRows)
         locationsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        locationsTable.setColumnCount(2)
+        locationsTable.sCC..(2)
         locationsTable.sHHL..(("Location", "Access"))
         locationsTable.hH.. .sSRM..(0, ?HV...Stretch)
         locationsTable.hH.. .resizeSection(1, 180)

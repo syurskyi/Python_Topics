@@ -174,7 +174,7 @@ c_ Ui_AudioDevicesBase o..
         allFormatsTable.setWordWrap F..
         allFormatsTable.setCornerButtonEnabled F..
         allFormatsTable.setObjectName("allFormatsTable")
-        allFormatsTable.setColumnCount(6)
+        allFormatsTable.sCC..(6)
         allFormatsTable.setRowCount(0)
         item _ ?W...QTableWidgetItem()
         item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)

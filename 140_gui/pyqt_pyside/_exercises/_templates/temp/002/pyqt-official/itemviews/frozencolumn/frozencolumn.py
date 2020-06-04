@@ -52,7 +52,7 @@
 
 
 ____ ?.?C.. ______ QFile, QFileInfo, __
-____ ?.?G.. ______ ?SI.., QStandardItemModel
+____ ?.?G.. ______ ?SI.., ?SIM..
 ____ ?.?W.. ______ ?A.., ?HV.., QTableView
 
 
@@ -135,7 +135,7 @@ ___ main(args):
         r_ [s.s.. ___ s __ line.sp..(splitter)]
 
     app _ ?A..(args)
-    model _ QStandardItemModel()
+    model _ ?SIM..()
     file _ QFile(QFileInfo(__file__).absolutePath() + '/grades.txt')
     __ file.o..(QFile.ReadOnly):
         line _ file.readLine(200).d..('utf-8')

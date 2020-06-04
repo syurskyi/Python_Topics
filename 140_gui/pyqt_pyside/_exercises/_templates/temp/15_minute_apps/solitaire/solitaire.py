@@ -606,7 +606,7 @@ c_ MainWindow(?MW..):
 
     ___ deal 
         __ deckstack.cards:
-            dealstack.spread_from _ len(dealstack.cards)
+            dealstack.spread_from _ le.(dealstack.cards)
             ___ n __ ra..(deal_n):
                 card _ deckstack.take_top_card()
                 __ card:

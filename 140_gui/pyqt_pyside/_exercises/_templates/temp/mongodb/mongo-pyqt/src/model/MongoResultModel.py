@@ -1,14 +1,7 @@
-#!/usr/bin/env python  
-# -*- coding: utf-8 -*-  
-'''
-Created on 2014年9月20日
-
-@author: wanghch
-'''
-____ ?.__ ______ QStandardItemModel, ?SI..
+____ ?.__ ______ ?SIM..  ?SI..
 ______ ___
 
-c_ MongoResultModel(QStandardItemModel):
+c_ MongoResultModel ?SIM..
     '''
     classdocs
     '''
@@ -18,40 +11,40 @@ c_ MongoResultModel(QStandardItemModel):
         '''
         Constructor
         '''
-        super(MongoResultModel,self). - ()
+        s__ ? ?  -
     
     
-    ___ fillModelByCursor cursor):
+    ___ fillModelByCursor cursor
         i _ 0
-        setheader _ False
+        setheader _ F..
         modeldata _   # list
-        ___ item in cursor:
+        ___ item __ c..
             j _ 0
-            items _ item.items()
+            items _ ?.i..
             
-            __ setheader __ False:
-                setColumnCount(len(items))
-                labels _ item.keys()
-                __ ___.version > '3':
-                    labels _ sorted(labels)
+            __ setheader __ F..
+                sCC.. le. i..
+                labels _ i__.k..
+                __ ___.v.. > '3'
+                    labels _ so.. ?
                 ____
-                    labels.sort()
+                    ?.so..
                 
-                setHorizontalHeaderLabels(labels)
-                setheader _ True
+                sHHL.. ?
+                setheader _ T..
                 
-            modeldata.ap..(item)
+            m_d_.ap.. i..
             
-            ___ (field,value) in items:
+            ___ field value| __ i..
                 ___
-                    fieldindex _ labels.index(field)
-                ______ V..:
-                    labels.ap..(field)
-                    fieldindex _ len(labels) - 1
-                    setHorizontalHeaderLabels(labels)
+                    fieldindex _ l__.i.. f..
+                ______ V..
+                    l__.ap.. f..
+                    fieldindex _ le. l.. - 1
+                    sHHL.. l..
                 
-                valueBytes _ st.(value).encode("utf_8")
-                setItem(i, fieldindex, ?SI..(valueBytes.decode(encoding_'utf_8')))
+                valueBytes _ st. v.. .e.. utf_8
+                sI.. i f_i.. ?SI.. vB__.d.. e.._utf_8
                 j +_ 1
             i +_ 1
         
@@ -59,9 +52,9 @@ c_ MongoResultModel(QStandardItemModel):
     ___ getLabels
         r_ labels
     
-    ___ getModelData row,field):
-        items _ modeldata[row]
-        __ items[field]:
-            r_ items[field]
+    ___ getModelData row field
+        items _ m..|?
+        __ ?|f..
+            r_ i..|f..
         ____
             print("error")

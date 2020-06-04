@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?G.. ______ ?SI.., QStandardItemModel
+____ ?.?G.. ______ ?SI.., ?SIM..
 ____ ?.?W.. ______ (?A.., QDataWidgetMapper, QGridLayout,
         QLabel, QLineEdit, ?PB.., SB.., ?TE.., ?W..)
 
@@ -95,7 +95,7 @@ c_ Window(?W..):
         mapper.toFirst()
  
     ___ setupModel 
-        model _ QStandardItemModel(5, 3, self)
+        model _ ?SIM..(5, 3, self)
         names _ ("Alice", "Bob", "Carol", "Donald", "Emma")
         addresses _ ("<qt>123 Main Street<br/>Market Town</qt>",
                      "<qt>PO Box 32<br/>Mail Handling Service"

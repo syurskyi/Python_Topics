@@ -210,7 +210,7 @@ c_ MainWindow(?MW..):
         __ filename:
             html _ tabs.currentWidget().page().toHtml()
             with open(filename, 'w') __ f:
-                f.write(html.encode('utf8'))
+                f.write(html.e..('utf8'))
 
     ___ print_page
         dlg _ QPrintPreviewDialog()

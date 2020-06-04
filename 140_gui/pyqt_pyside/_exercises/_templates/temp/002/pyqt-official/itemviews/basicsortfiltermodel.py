@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (?D.., ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
-____ ?.?G.. ______ QStandardItemModel
+____ ?.?G.. ______ ?SIM..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView, QVBoxLayout,
         ?W..)
@@ -185,7 +185,7 @@ ___ addMail(model, subject, sender, date):
 
 
 ___ createMailModel(parent):
-    model _ QStandardItemModel(0, 3, parent)
+    model _ ?SIM..(0, 3, parent)
 
     model.setHeaderData(SUBJECT, __.H.., "Subject")
     model.setHeaderData(SENDER, __.H.., "Sender")

@@ -85,7 +85,7 @@ c_ UpdateWorker(QRunnable):
                 r.raise_for_status()
                 rates[crypto] _ r.____().get('Data')
 
-                signals.progress.e..(in.(100 * n / len(AVAILABLE_CRYPTO_CURRENCIES)))
+                signals.progress.e..(in.(100 * n / le.(AVAILABLE_CRYPTO_CURRENCIES)))
 
                 __ is_interrupted:
                     # Stop without emitting finish signals.
@@ -166,7 +166,7 @@ c_ MainWindow(?MW..):
         _data_visible _ DEFAULT_DISPLAY_CURRENCIES
 
         listView _ ?TV..
-        model _ QStandardItemModel()
+        model _ ?SIM..()
         model.sHHL..(["Currency", "Rate"])
         model.itemChanged.c__(check_check_state)
 
@@ -240,7 +240,7 @@ c_ MainWindow(?MW..):
         citem.setForeground(?B..(QColor(
             get_currency_color(currency)
         )))
-        citem.setColumnCount(2)
+        citem.sCC..(2)
         citem.setCheckable( st.
         __ currency __ DEFAULT_DISPLAY_CURRENCIES:
             citem.setCheckState(__.Checked)
@@ -248,7 +248,7 @@ c_ MainWindow(?MW..):
         vitem _ ?SI..()
 
         vitem.setTextAlignment(__.AlignRight | __.AlignVCenter)
-        model.setColumnCount(2)
+        model.sCC..(2)
         model.appendRow([citem, vitem])
         model.s..(0)
         r_ citem, vitem

@@ -793,7 +793,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
     ___ next_stamp
         current_stamp_n +_ 1
-        __ current_stamp_n >_ len(STAMPS):
+        __ current_stamp_n >_ le.(STAMPS):
             current_stamp_n _ 0
 
         pixmap _ ?P..(STAMPS[current_stamp_n])

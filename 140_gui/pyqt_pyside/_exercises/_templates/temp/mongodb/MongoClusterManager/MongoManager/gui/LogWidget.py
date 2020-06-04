@@ -5,7 +5,7 @@ ____ ?.QtWidgets ______ QWidget, QPlainTextEdit, QPushButton, QVBoxLayout, QHBox
 
 c_ LogWidget(QWidget):
     ___  -   parent_None):
-        super(LogWidget, self). - (parent)
+        s__(LogWidget, self). - (parent)
 
         # Base vars
         logLength _ 0
@@ -74,8 +74,8 @@ c_ LogWidget(QWidget):
     ___ updateLog
         logs _ open(LOG_FILE, 'r').read()
 
-        __ len(logs) !_ logLength:
-            logLength _ len(logs)
+        __ le.(logs) !_ logLength:
+            logLength _ le.(logs)
 
             logText.setPlainText(logs)
             logText.moveCursor(QTextCursor.End)

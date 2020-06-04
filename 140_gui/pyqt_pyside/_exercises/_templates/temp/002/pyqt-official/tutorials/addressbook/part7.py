@@ -54,7 +54,7 @@ c_ SortedDict(dict):
     c_ Iterator o..
         ___  -   sorted_dict):
             _dict _ sorted_dict
-            _keys _ sorted(_dict.keys())
+            _keys _ so..(_dict.keys())
             _nr_items _ le.(_keys)
             _idx _ 0
 
