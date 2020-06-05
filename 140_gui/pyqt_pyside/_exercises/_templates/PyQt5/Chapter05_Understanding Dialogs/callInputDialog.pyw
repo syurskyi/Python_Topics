@@ -9,12 +9,12 @@
 #         s__. -
 #         ui _ ?
 #         ?.sU..
-#         ?.pushButtonCountry.c___.c.. ?
+#         ?.pBC__.c___.c.. ?
 #         s..
 #
 #     ___ dispmessage
 #       countries _ ("Albania"  "Algeria"  "Andorra"  "Angola"  "Antigua and Barbuda"  "Argentina"  "Armenia"  "Aruba"  "Australia"  "Austria"  "Azerbaijan")
-#       countryName  ok _ ?ID...getItem   "Input Dialog"  "List of countries"  countries  0  F..
+#       countryName  ok _ ?ID...gI..  "Input Dialog"  "List of countries"  countries  0  F..
 #       __ ok an. ?
 #           ?.lEC__.sT.. ?
 #
