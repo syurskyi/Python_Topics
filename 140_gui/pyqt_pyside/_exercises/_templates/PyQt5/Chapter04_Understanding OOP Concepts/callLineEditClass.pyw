@@ -18,12 +18,12 @@
 #         s__. -
 #         ui _ ?
 #         ?.sU..
-#         ?.ButtonClickMe.c___.c.. ?
+#         ?.BCM_.c___.c.. ?
 #         s..
 #
 #     ___ dispmessage
-#         studentObj _ ?(?.lEN__.t..
-#         ?.lR___.sT.. "Hello " + sO__.pN..
+#         studentObj _ ? ?.lEN__.t..
+#         ?.lR___.sT.. "Hello " + ?.pN..
 #
 # __ _ ____ __ _____
 #     app _ ?A..

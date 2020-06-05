@@ -23,12 +23,12 @@
 #         s__. -
 #         ui _ ?
 #         ?.sU..
-#         ?.ButtonClickMe.c___.c.. ?
+#         ?.BCM_.c___.c.. ?
 #         s..
 #
 #     ___ dispmessage
 #         studentObj _ ? ?.lEC__.t.. ?.lEN__.t..
-#         ?.lR___.sT.. "Code: " + sO__.gC.. + ", Name:" + sO__.gN..
+#         ?.lR___.sT.. "Code: " + ?.gC.. + ", Name:" + ?.gN..
 #
 # __ _ ____ __ _____
 #     app _ ?A..

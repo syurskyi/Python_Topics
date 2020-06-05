@@ -54,13 +54,13 @@
 #         s__. -
 #         ui _ ?
 #         ?.sU..
-#         ?.ButtonClickMe.c___.c.. ?
+#         ?.BCM_.c___.c.. ?
 #         s..
 #
 #     ___ dispmessage
 #         resultObj_? ?.lEC__.t.. ?.lEN__.t.. in. ?.lEHM__.t.. in. ?.lEGM__.t..
 #         ?.lET__.sT.. st. ?.gTM..
-#         ?.lEP__.sT.. st. rO__.gP..
+#         ?.lEP__.sT.. st. ?.gP..
 #
 # __ _ ____ __ _____
 #     app _ ?A..

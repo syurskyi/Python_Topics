@@ -40,12 +40,12 @@
 #         s__. -
 #         ui _ ?
 #         ?.sU..
-#         ?.ButtonClickMe.c___.c.. ?
+#         ?.BCM_.c___.c.. ?
 #         s..
 #
 #     ___ dispmessage
 #         marksObj _ ? ?.lEC__.t.. ?.lEN__.t.. ?.lEHM__.t.. ?.lEGM__.t..
-#         ?.lR___.sT..("Code: " + mO__.gC..+", Name:" + mO__.gN.. +"\nHistory Marks:" + mO__.gHM.. + ", Geography Marks:" + mO__.gGM..
+#         ?.lR___.sT.. "Code: " + ?.gC..+", Name:" + ?.gN.. +"\nHistory Marks:" + ?.gHM.. + ", Geography Marks:" + ?.gGM..
 #
 # __ _ ____ __ _____
 #     app _ ?A..
