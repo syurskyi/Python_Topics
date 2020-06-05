@@ -4,10 +4,11 @@ from PyQt5.QtWidgets import QDialog, QApplication
 
 from demoMultilevelInheritance import *
 
+
 class Student:
     name = ""
     code = ""
- 
+
     def __init__(self, code, name):
         self.code = code
         self.name = name
@@ -24,7 +25,7 @@ class Marks(Student):
     geographyMarks = 0
  
     def __init__(self,  code, name, historyMarks, geographyMarks):
-        Student.__init__(self,code,name)
+        Student.__init__(self, code, name)
         self.historyMarks = historyMarks
         self.geographyMarks = geographyMarks
         
@@ -39,7 +40,7 @@ class Result(Marks):
     percentage = 0
  
     def __init__(self,  code, name, historyMarks, geographyMarks):
-        Marks.__init__(self,  code, name, historyMarks, geographyMarks)
+        Marks.__init__(self, code, name, historyMarks, geographyMarks)
         self.totalMarks = historyMarks + geographyMarks
         self.percentage = (historyMarks + geographyMarks) / 200 * 100
         

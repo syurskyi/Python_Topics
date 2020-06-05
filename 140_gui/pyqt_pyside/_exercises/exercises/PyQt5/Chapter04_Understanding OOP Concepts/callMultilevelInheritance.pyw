@@ -1,69 +1,70 @@
-# _____ ___
-#
-# ____ ?.?W.. _____ ?D.., ?A..
-#
-# ____ demoMultilevelInheritance _____ _
-#
-# c_ Student
-#     name _ ""
-#     code _ ""
-#
-#     ___  -   code name
-#         ? ?
-#         ? ?
-#
-#     ___ getCode
-#         r_ ?
-#
-#     ___ getName
-#         r_ ?
-#
-#
-# c_ Marks Student
-#     historyMarks _ 0
-#     geographyMarks _ 0
-#
-#     ___  -    code name historyMarks geographyMarks
-#         Student. - ? ?
-#         ? ?
-#         ? ?
-#
-#     ___ getHistoryMarks
-#         r_ ?
-#
-#     ___ getGeographyMarks
-#         r_ ?
-#
-# c_ Result Marks
-#     totalMarks _ 0
-#     percentage _ 0
-#
-#     ___  - code name historyMarks geographyMarks
-#         M__. - ? ? ? ?
-#         totalMarks _ h.. + g..
-#         percentage _  h.. + g..) / 200 * 100
-#
-#     ___ getTotalMarks
-#         r_ ?
-#
-#     ___ getPercentage
-#         r_ ?
-#
-# c_ MyForm ?D..
-#     ___  -
-#         s__. -
-#         ui _ ?
-#         ?.sU..
-#         ?.ButtonClickMe.c___.c.. ?
-#         s..
-#
-#     ___ dispmessage
-#         resultObj_R.. ?.lEC__.t.. ?.lEN__.t.. in. ?.lEHM__.t.. in. ?.lEGM__.t..
-#         ?.lET__.sT.. st. ?.gTM..
-#         ?.lEP__.sT.. st. rO__.gP..
-#
-# __ _ ____ __ _____
-#     app _ ?A..
-#     w _ ?
-#     ?.s..
-#     ___.e.. ?.e
+import sys
+
+from PyQt5.QtWidgets import QDialog, QApplication
+
+from demoMultilevelInheritance import *
+
+
+class Student:
+    name = ""
+    code = ""
+
+    def __init__(self, code, name):
+        self.code = code
+        self.name = name
+
+    def getCode(self):
+        return self.code
+
+    def getName(self):
+        return self.name
+
+
+class Marks(Student):
+    historyMarks = 0
+    geographyMarks = 0
+
+    def __init__(self, code, name, historyMarks, geographyMarks):
+        Student.__init__(self, code, name)
+        self.historyMarks = historyMarks
+        self.geographyMarks = geographyMarks
+
+    def getHistoryMarks(self):
+        return self.historyMarks
+
+    def getGeographyMarks(self):
+        return self.geographyMarks
+
+class Result(Marks):
+    totalMarks = 0
+    percentage = 0
+
+    def __init__(self, code, name, historyMarks, geographyMarks):
+        Marks.__init__(self, code, name, historyMarks, geographyMarks)
+        self.totalMarks = historyMarks + geographyMarks
+        self.percentage = (historyMarks + geographyMarks) / 200 * 100
+
+    def getTotalMarks(self):
+        return self.totalMarks
+
+    def getPercentage(self):
+        return self.percentage
+
+class MyForm(QDialog):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        self.ui.ButtonClickMe.clicked.connect(self.dispmessage)
+        self.show()
+
+    def dispmessage(self):
+        resultObj = Result(self.ui.lineEditCode.text(), self.ui.lineEditName.text(), int(self.ui.lineEditHistoryMarks.text()), int(self.ui.lineEditGeographyMarks.text()))
+        self.ui.lineEditTotal.setText(str(resultObj.getTotalMarks()))
+        self.ui.lineEditPercentage.setText(str(resultObj.getPercentage()))
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    w = MyForm()
+    w.show()
+    sys.exit(app.exec_())
