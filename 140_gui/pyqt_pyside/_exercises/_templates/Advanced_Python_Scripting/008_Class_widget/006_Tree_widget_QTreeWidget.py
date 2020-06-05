@@ -4,12 +4,12 @@
 # path = __.pa__.di.. __.pa__.di.. -f
 #
 #
-# c_ simpleWindow(QW..
+# c_ simpleWindow ?W..
 #     ___ -
-#         s__ ? ?. -
-#         ly = QHL..
+#         s__ ? ? -
+#         ly _ ?HL..
 #         ?sL.. ?
-#         ?tree = QTW..
+#         ?tree _ ?TW..
 #         l_.aW.. ?
 #         ?t__.he__.h..
 #         # connect
@@ -24,16 +24,16 @@
 #         ?t__.bS.. F..   # eto komanda rablokiryet blokirovky signalov
 #
 #     ___ fillTree  parent_N.. root_N..
-#         __ no. parent
+#         __ no. ?
 #             parent _ ?t__.iRI__
 #         __ no. r..
-#             root = pa__
+#             r.. _ pa__
 #         ___ f _ __.li.. r..
 #             __ f|0 __ |'.', '_' : co..  # iskluchaet papki s tochkoj i podchorkivaniem v peredi v nazvanii
-#             item = QTWI..
+#             item _ ?TWI..
 #             ?.sT.. 0 f               # TreeWidget podderzivaet kolonki, i mu dolznu ykazat' v kakyjy kolonky mu kladjom etot tekst.
 #             p__.aC.. ?
-#             fullpath = __.pa__.jo.. r.. f
+#             fullpath _ __.pa__.jo.. r.. f
 #             __ __.pa__.isd.. fu..
 #                 ?f.. i.. f..
 #                 i__.sE.. 1
@@ -53,7 +53,7 @@
 #
 #
 # __ ______ __ ______
-#     app = QA..
-#     w = ?
+#     app ? ?A..
+#     w _ ?
 #     ?.s...
 #     ?.e..

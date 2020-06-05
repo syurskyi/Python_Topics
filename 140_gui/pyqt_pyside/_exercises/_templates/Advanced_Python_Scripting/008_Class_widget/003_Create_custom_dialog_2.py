@@ -2,26 +2,26 @@
 # ____ ?.? ______ _
 # ______ di..
 #
-# c_ simpleWindow QW..
+# c_ simpleWindow ?W..
 #     ___ -
-#         s__ ? ___ . -
-#         ly = QVBL.. ___
-#         ___.btn = QPB..('Open')
+#         s__ ? ? . -
+#         ly _ ?VBL..
+#         btn = ?PB.. Open
 #         ?.aW.. ?
-#         ___.re.. 300, 200)
-#         ___.b__.cl__.c.. ___.?
+#         re.. 300, 200)
+#         ?.c__.c.. ?
 #
-#     ___ showMessage ___
-#         ___.dial = di__.dC..
-#         r = ___.?.e..
+#     ___ showMessage
+#         dial _ di__.dC..
+#         r _ ?.e..
 #         print ?
 #         __ ?
-#             print ___.d__.gD..
+#             print d__.gD..
 #             # print ___.dial.label.text()
 #
 # __ ______ __ ______
-#     app = QA..
-#     w = ?
+#     app _ ?A..
+#     w _ ?
 #     ?.s..
 #     ?.e..
 #
