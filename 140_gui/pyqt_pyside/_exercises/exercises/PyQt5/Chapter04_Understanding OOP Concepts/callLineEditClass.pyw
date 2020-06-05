@@ -1,32 +1,32 @@
-# _____ ___
-#
-# ____ ?.?W.. _____ ?D.., ?A..
-#
-# ____ LineEditClass _____ _
-#
-# c_ Student
-#     name _ ""
-#
-#     ___  -  , name
-#         ? ?
-#
-#     ___ printName
-#         r_ ?
-#
-# c_ MyForm ?D..
-#     ___  -
-#         s__. -
-#         ui _ ?
-#         ?.sU..
-#         ?.ButtonClickMe.c___.c.. ?
-#         s..
-#
-#     ___ dispmessage
-#         studentObj _ ?(?.lEN__.t..
-#         ?.lR___.sT.. "Hello " + sO__.pN..
-#
-# __ _ ____ __ _____
-#     app _ ?A..
-#     w _ ?
-#     ?.s..
-#     ___.e.. ?.e
+import sys
+
+from PyQt5.QtWidgets import QDialog, QApplication
+
+from LineEditClass import *
+
+class Student:
+    name = ""
+
+    def __init__(self, name):
+        self.name = name
+
+    def printName(self):
+        return self.name
+
+class MyForm(QDialog):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        self.ui.ButtonClickMe.clicked.connect(self.dispmessage)
+        self.show()
+
+    def dispmessage(self):
+        studentObj = Student(self.ui.lineEditName.text())
+        self.ui.labelResponse.setText("Hello " + studentObj.printName())
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    w = MyForm()
+    w.show
+    sys.exit(app.exec_())
