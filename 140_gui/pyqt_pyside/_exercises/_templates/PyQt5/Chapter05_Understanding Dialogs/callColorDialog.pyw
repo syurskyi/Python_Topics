@@ -1,6 +1,6 @@
 # _____ ___
 #
-# ____ ?.?W.. _____ ?D.., ?A.., QColorDialog
+# ____ ?.?W.. _____ ?D.., ?A.., ?CD..
 # ____ ?.?G.. _____ ?C..
 #
 # ____ demoColorDialog _____ _
@@ -11,14 +11,14 @@
 #         col _ ?C.. 0, 0, 0
 #         ui _ ?
 #         ?.sU..
-#         ?.frameColor.sSS..("QWidget | background-color: @ |"  col.n..
-#         ?.pushButtonColor.c___.c.. ?
+#         ?.fC__.sSS.. "?W.. _ b..-c.. @ |"  c__.n..
+#         ?.pBC__.c___.c.. ?
 #         s..
 #
 #     ___ dispcolor
-#         col _ QColorDialog.gC..
+#         col _ ?CD__.gC..
 #         __ ?.iV..
-#             ?.fC__.sSS..("QWidget | background-color: @ |"  ?.n..
+#             ?.fC__.sSS.. "?W.. _ b..-c.. @ |"  ?.n..
 #             ?.lC__.sT..("You have selected the color with code: " + st. ?.n..
 #
 # __ _ ____ __ _____
