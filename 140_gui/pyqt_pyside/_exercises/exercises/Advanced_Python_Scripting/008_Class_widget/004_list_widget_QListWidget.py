@@ -4,45 +4,45 @@ import os
 path = os.path.dirname(__file__)
 # pa__ = 'C:/Users/serge/Dropbox/nuke/.nuke/GIZMOS/Filter/'  # peremenaja s kotoroj dostajytsja fajlu
 
-class simpleWindow QW..
-    ___ - ____
-        s___ ? ____. -
-        ly = QHBL..
-        ____.sL.. ?
-        ____.list = QLW..         # dlja dobavlenije elementov v QListWidget y nas est' 3 fynkcii
+class simpleWindow(QWidget):
+    def __init__(self):
+        super(simpleWindow, self).__init__()
+        ly = QHBoxLayout()
+        self.setLayout(ly)
+        self.list = QListWidget()         # dlja dobavlenije elementov v QListWidget y nas est' 3 fynkcii
                                             # addItem prinimaet string, toest' label
                                             # addItem 2oj variant QListWidgetItem - specialnuj klas otvechajychij za elementu spiska.
                                             # addItems QStringList, spisok strok, v Python eto obuchnuj spisov v kotorom mu podajom stroki
-        l_.aW.. ?
-        ____.textBrowser = QTB..
-        ly.aW.. ?
+        ly.addWidget(self.list)
+        self.textBrowser = QTextBrowser()
+        ly.addWidget(self.textBrowser)
 
         # connect
-        ____.li__.iCl__.co.. ____.uT..   # itemClicked vozvrachaet vudelenuj element
-        # ____.list.itemDoubleClicked.connect(____.openFile)
+        self.list.itemClicked.connect(self.updateText)   # itemClicked vozvrachaet vudelenuj element
+        # list.itemDoubleClicked.connect(____.openFile)
 
         # start
-        ____.re.. 500, 400
-        ____.fLi..
-        # print ____.fullPath('t')
+        self.resize(500, 400)
+        self.fillList()
+        # print fullPath('t')
 
-    ___ fullPath ____ item
-        # print __.pa__.j..(pa__, item.text())
-        r_ __.pa__.j.. pa__ it__.t..
+    def fullPath(self, item):
+        # print __.pa__.j..(pa__, item.t..
+        return os.path.join(path, item.text())
 
 
-    ___ fillList ____
+    def fillList(self):
         # ____.list.addItem('ITEM')
-        ___ f __ __.li.. pa__
-            ____.li__.aI.. ?
-            # print f
+        for f in os.listdir(path):
+            self.list.addItem(f)
+            print(f)
 
-    ___ updateText ____ item                          # fynkcija kotoraja srabatuvaet po signaly  ____.list.itemClicked.connect(____.updateText)
-        print ?
-        print ?.t..                               # tekst s itema mozno zsbrat' s pomochjy metoda text(), kotoruj vozvrachaet string
-        text = o.. ____.fu.. ?.re..
-        print ty.. ?
-        ____.tB__.sT.. ?
+    def updateText(self, item):                          # fynkcija kotoraja srabatuvaet po signaly  ____.list.itemClicked.connect(____.updateText)
+        print(item)
+        print(item.text())                               # tekst s itema mozno zsbrat' s pomochjy metoda text(), kotoruj vozvrachaet string
+        text = open(self.fullPath(item)).read()
+        print(type(text))
+        self.textBrowser.setText(text)
     #
     # ___ openFile(____, item):
     #     pa__ = ____.fullPath(item)
@@ -50,8 +50,8 @@ class simpleWindow QW..
     #     __.system(pa__)
 
 
-__ ______ __ ______
-    app = QA..
-    w = ?
-    ?.s..
-    ?.e..
+if __name__ == '__main__':
+    app = QApplication([])
+    w = simpleWindow()
+    w.show()
+    app.exec_()

@@ -39,7 +39,7 @@ class simpleWindow(QWidget):
 
     def updateText(self, item):                          # fynkcija kotoraja srabatuvaet po signaly  self.list.itemClicked.connect(self.updateText)
         print(item)
-        print(item.text()   )                             # tekst s itema mozno zsbrat' s pomochjy metoda text(), kotoruj vozvrachaet string)
+        print(item.text())                             # tekst s itema mozno zsbrat' s pomochjy metoda text(), kotoruj vozvrachaet string)
         text =open(self.fullPath(item)).read()
         print(type(text))
         self.textBrowser.setText(text)
