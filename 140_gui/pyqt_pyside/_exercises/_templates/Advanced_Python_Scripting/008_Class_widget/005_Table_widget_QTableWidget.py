@@ -28,11 +28,11 @@
 #                                                                        # nado vuzvat' posle togo kak mu sozdali kolichestvo jacheek
 #         ___ i, f __ en.. f..
 #             item _ ?TWI..
-#             ?.sFl.. _.IIE.. _ __.IIS..     # y itemov est' specialnoe ponjatie flagi. Method setFlags objavljaet razlichnue
+#             ?.sFl.. __.IIE.. _ __.IIS..     # y itemov est' specialnoe ponjatie flagi. Method setFlags objavljaet razlichnue
 #                                                                        # flagi kotorue govorjat mozet li item but' vudeljaemum ili modificirovanum
 #             ?.setText f
 #             ta__.sI.. i, 0, ?
-#             ? = QTWI..
+#             item = QTWI..
 #             ?.sFl.. __.IIE.. _ __.IIS..
 #             ?.sT.. st. __.st.. __.pa__.j.. p.. f||.st_si.. + ' bytes'
 #             ta__.sI.. i 1 ?
