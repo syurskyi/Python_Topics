@@ -9,7 +9,9 @@
 # except OSError as e:
 #     print(f'Error: {trash_dir} : {e.strerror}')
 #
-# Everything in trash_dir is deleted when shutil.rmtree() is called on it. There may be cases where you want to delete empty folders recursively. You can do this using one of the methods discussed above in conjunction with os.walk():
+# Everything in trash_dir is deleted when shutil.rmtree() is called on it. There may be cases where you want
+# to delete empty folders recursively. You can do this using one of the methods discussed above in conjunction
+# with os.walk():
 #
 # import os
 #
@@ -19,7 +21,8 @@
 #     except OSError as ex:
 #         pass
 #
-# This walks down the directory tree and tries to delete each directory it finds. If the directory isn’t empty, an OSError is raised and that directory is skipped. The table below lists the functions covered in this section:
+# This walks down the directory tree and tries to delete each directory it finds. If the directory isn’t empty,
+# an OSError is raised and that directory is skipped. The table below lists the functions covered in this section:
 # Function 	Description
 # os.remove() 	Deletes a file and does not delete directories
 # os.unlink() 	Is identical to os.remove() and deletes a single file

@@ -17,10 +17,12 @@
 # tests.py
 #
 # First, you make a list of files to be added to the archive so that you don’t have to add each file manually.
-#
-# The next line uses the with context manager to open a new archive called packages.tar in write mode. Opening an archive in write mode('w') enables you to write new files to the archive. Any existing files in the archive are deleted and a new archive is created.
-#
-# After the archive is created and populated, the with context manager automatically closes it and saves it to the filesystem. The last three lines open the archive you just created and print out the names of the files contained in it.
+# The next line uses the with context manager to open a new archive called packages.tar in write mode.
+# Opening an archive in write mode('w') enables you to write new files to the archive.
+# Any existing files in the archive are deleted and a new archive is created.
+# After the archive is created and populated, the with context manager automatically closes it and saves
+# it to the filesystem. The last three lines open the archive you just created and print out the names of the files
+# contained in it.
 #
 # To add new files to an existing archive, open the archive in append mode ('a'):
 #

@@ -6,5 +6,6 @@
 # >>> shutil.move('dir_1/', 'backup/')
 # 'backup'
 #
-# shutil.move('dir_1/', 'backup/') moves dir_1/ into backup/ if backup/ exists. If backup/ does not exist, dir_1/ will be renamed to backup.
+# shutil.move('dir_1/', 'backup/') moves dir_1/ into backup/ if backup/ exists. If backup/ does not exist,
+# dir_1/ will be renamed to backup.
 
