@@ -1,59 +1,60 @@
-# ____ ?.? ______ _
-# ____ ?.? ______ _
-# ______ __
-# path = __.pa__.di.. __.pa__.di.. -f
-#
-#
-# c_ simpleWindow ?W..
-#     ___ -
-#         s__ ? ? -
-#         ly _ ?HL..
-#         ?sL.. ?
-#         ?tree _ ?TW..
-#         l_.aW.. ?
-#         ?t__.he__.h..
-#         # connect
-#         ?t__.iCh__.co.. ?a..   # signal itemChanged vozvrachaet item i kolonky v kotoroj proizoshlo izmenenie
-#         # start
-#         ?r.. 500400
-#         ?uT..
-#
-#     ___ updateTree ?
-#         ?t__.bS.. T..    # eto komanda blokiryet vse signalu, signalu ne bydyt emititsja shto bu ne slychilos'
-#         ?fT..
-#         ?t__.bS.. F..   # eto komanda rablokiryet blokirovky signalov
-#
-#     ___ fillTree  parent_N.. root_N..
-#         __ no. ?
-#             parent _ ?t__.iRI__
-#         __ no. r..
-#             r.. _ pa__
-#         ___ f _ __.li.. r..
-#             __ f|0 __ |'.', '_' : co..  # iskluchaet papki s tochkoj i podchorkivaniem v peredi v nazvanii
-#             item _ ?TWI..
-#             ?.sT.. 0 f               # TreeWidget podderzivaet kolonki, i mu dolznu ykazat' v kakyjy kolonky mu kladjom etot tekst.
-#             p__.aC.. ?
-#             fullpath _ __.pa__.jo.. r.. f
-#             __ __.pa__.isd.. fu..
-#                 ?f.. i.. f..
-#                 i__.sE.. 1
-#             ____
-#                 i__.sF.. __.IIE.. _ __.IIS.. _ __.IIE..
-#                 i__.sD.. 0, __.UR.. |'pa__'; __.pa__.no.. fu..   # pozvoljaet polozit v jachejky lybue dannue.
-#                                                                                      # Kontejner kyda mu mozem vremmeno polozit te dannue, kotorue nam nyzno
-#                                                                                      # takze sychestvyet klass QVariant, kotoruj pozvoljaet soderzat'  lyboj tip dannuh
-#                                                                                      #
-#
-#     ___ action  item
-#         print ?
-#         print ?.t.. 0
-#         s = ?.d.. 0 __.UR..
-#         # print s
-#
-#
-#
-# __ ______ __ ______
-#     app ? ?A..
-#     w _ ?
-#     ?.s...
-#     ?.e..
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
+import os
+path = os.path.dirname(os.path.dirname(__file__))
+
+
+class simpleWindow(QWidget):
+    def __init__(self):
+        super(simpleWindow, self).__init__()
+        ly = QHBoxLayout()
+        self.setLayout(ly)
+        self.tree = QTreeWidget()
+        ly.addWidget(self.tree)
+        self.tree.header().hide()
+        # connect
+        self.tree.itemChanged.connect(self.action)   # signal itemChanged vozvrachaet item i kolonky v kotoroj proizoshlo izmenenie
+        # start
+        self.resize(500, 400)
+        self.updateTree()
+
+    def updateTree(self):
+        self.tree.blockSignals(True)    # eto komanda blokiryet vse signalu, signalu ne bydyt emititsja shto bu ne slychilos'
+        self.fillTree()
+        self.tree.blockSignals(False)   # eto komanda rablokiryet blokirovky signalov
+
+    def fillTree(self, parent=None, root=None):
+        if not parent:
+            parent = self.tree.invisibleRootItem()
+        if not root:
+            root = path
+        for f in os.listdir(root):
+            if f[0] in ['.', '_']: continue  # iskluchaet papki s tochkoj i podchorkivaniem v peredi v nazvanii
+            item = QTreeWidgetItem()
+            item.setText(0, f)               # TreeWidget podderzivaet kolonki, i mu dolznu ykazat' v kakyjy kolonky mu kladjom etot tekst.
+            parent.addChild(item)
+            fullpath = os.path.join(root, f)
+            if os.path.isdir(fullpath):
+                self.fillTree(item, fullpath)
+                item.setExpanded(1)
+            else:
+                item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable | Qt.ItemIsEditable)
+                item.setData(0, Qt.UserRole, {'path': os.path.normpath(fullpath)})   # pozvoljaet polozit v jachejky lybue dannue.
+                                                                                     # Kontejner kyda mu mozem vremmeno polozit te dannue, kotorue nam nyzno
+                                                                                     # takze sychestvyet klass QVariant, kotoruj pozvoljaet soderzat'  lyboj tip dannuh
+                                                                                     #
+
+    def action(self, item):
+        print(item)
+        print(item.text(0))
+        s = item.data(0, Qt.UserRole)
+        # print s
+
+
+
+if __name__ == '__main__':
+    app = QApplication([])
+    w = simpleWindow()
+    w.show()
+    app.exec_()

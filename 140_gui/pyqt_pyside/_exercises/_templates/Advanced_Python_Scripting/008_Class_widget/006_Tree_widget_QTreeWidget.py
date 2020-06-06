@@ -1,5 +1,6 @@
 # ____ ?.? ______ _
 # ____ ?.? ______ _
+# ____ ?.? ______ _
 # ______ __
 # path = __.pa__.di.. __.pa__.di.. -f
 #
@@ -7,7 +8,7 @@
 # c_ simpleWindow ?W..
 #     ___ -
 #         s__ ? ? -
-#         ly _ ?HL..
+#         ly _ ?HBL..
 #         ?sL.. ?
 #         ?tree _ ?TW..
 #         l_.aW.. ?
@@ -15,20 +16,20 @@
 #         # connect
 #         ?t__.iCh__.co.. ?a..   # signal itemChanged vozvrachaet item i kolonky v kotoroj proizoshlo izmenenie
 #         # start
-#         ?r.. 500400
+#         ?r.. 500 400
 #         ?uT..
 #
-#     ___ updateTree ?
+#     ___ updateTree
 #         ?t__.bS.. T..    # eto komanda blokiryet vse signalu, signalu ne bydyt emititsja shto bu ne slychilos'
 #         ?fT..
 #         ?t__.bS.. F..   # eto komanda rablokiryet blokirovky signalov
 #
 #     ___ fillTree  parent_N.. root_N..
 #         __ no. ?
-#             parent _ ?t__.iRI__
+#             p.. _ ?t__.iRI__
 #         __ no. r..
 #             r.. _ pa__
-#         ___ f _ __.li.. r..
+#         ___ f __ __.li.. r..
 #             __ f|0 __ |'.', '_' : co..  # iskluchaet papki s tochkoj i podchorkivaniem v peredi v nazvanii
 #             item _ ?TWI..
 #             ?.sT.. 0 f               # TreeWidget podderzivaet kolonki, i mu dolznu ykazat' v kakyjy kolonky mu kladjom etot tekst.
