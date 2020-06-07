@@ -1,2 +1,0 @@
-Managing Python Dependencies
-https://training.talkpython.fm/courses/details/managing-python-dependencies-with-pip-and-virtual-environments

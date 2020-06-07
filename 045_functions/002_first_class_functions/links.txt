@@ -1,3 +1,0 @@
-First Class functions in Python
-https://www.geeksforgeeks.org/first-class-functions-python/
-
