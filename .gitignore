@@ -12,6 +12,7 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea
 
 # Generated files
 .idea/**/contentModel.xml
@@ -101,6 +102,8 @@ exports/
 videos/
 *.numbers
 *.sketch
+*.png
+*.jinja2
 
 venv/
 ### Example user template template
