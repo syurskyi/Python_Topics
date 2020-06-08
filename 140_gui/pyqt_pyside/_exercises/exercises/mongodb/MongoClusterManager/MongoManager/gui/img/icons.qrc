@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="icons">
-        <file>fire_damage.ico</file>
-        <file>email.png</file>
-        <file>eraser.png</file>
-        <file>refresh.png</file>
-    </qresource>
-</RCC>

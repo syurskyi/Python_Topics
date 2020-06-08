@@ -1,3 +1,0 @@
-Chevy,Camaro,Corvette,Spark,Volt
-Ford,Escort,Focus,Mustang
-Toyota,Avalon,Camry,Corolla,Prius,Rav4

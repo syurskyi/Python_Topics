@@ -1,8 +1,0 @@
-images:
-  - python:3.4-alpine
-entrypoint:
-  - /sbin/init
-commands:
-  - python --version
-tests:
-  - python project_test.py -v

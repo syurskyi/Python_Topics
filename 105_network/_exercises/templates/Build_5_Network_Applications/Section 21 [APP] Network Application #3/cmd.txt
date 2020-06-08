@@ -1,1 +1,0 @@
-show processes top once

@@ -1,4 +1,0 @@
-click
-Flask
-pytz
-requests

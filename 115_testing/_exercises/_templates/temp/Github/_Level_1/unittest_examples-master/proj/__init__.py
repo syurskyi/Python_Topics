@@ -1,1 +1,0 @@
-all_['sample_module']

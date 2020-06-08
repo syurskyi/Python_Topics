@@ -1,2 +1,0 @@
-def chain(dominoes):
-    pass

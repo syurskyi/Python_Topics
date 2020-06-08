@@ -1,7 +1,0 @@
-To enable coverage tests, download coverage tarball from 
-
-https://pypi.python.org/pypi/coverage 
-
-and unpack here or install on your system with packages or with other tooling
-
-To enable Style tests aka pep8 do the same for pycodestyle

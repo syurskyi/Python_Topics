@@ -1,1 +1,0 @@
-pyrcc5 icons.qrc -o ..\Icons.py

@@ -1,4 +1,0 @@
-http://docs.python-requests.org/en/master/
-https://reqres.in/
-https://httpbin.org/
-https://requestb.in/

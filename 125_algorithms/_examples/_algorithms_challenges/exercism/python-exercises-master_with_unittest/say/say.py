@@ -1,2 +1,0 @@
-def say():
-    pass

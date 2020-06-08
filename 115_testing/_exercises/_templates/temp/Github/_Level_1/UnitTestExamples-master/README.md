@@ -1,1 +1,0 @@
-[いろいろな言語の単体テスト書いてみた](https://qiita.com/syu_chan_1005/items/8fb1dab614060eea2e44) 用のレポジトリです

@@ -1,3 +1,0 @@
-"""
-Recipes for Network Modelling
-"""

@@ -1,1 +1,0 @@
-We'll put some data things in this folder when we start the course.

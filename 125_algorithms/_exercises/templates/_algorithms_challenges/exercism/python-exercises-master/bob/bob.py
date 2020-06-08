@@ -1,2 +1,0 @@
-def hey(string):
-    pass

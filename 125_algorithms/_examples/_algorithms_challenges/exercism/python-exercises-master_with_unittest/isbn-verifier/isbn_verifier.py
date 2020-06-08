@@ -1,2 +1,0 @@
-def verify(isbn):
-    pass

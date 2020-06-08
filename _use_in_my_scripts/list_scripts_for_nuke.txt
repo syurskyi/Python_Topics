@@ -1,5 +1,0 @@
-070_oop\001_classes\_exercises\ITDN Python RUS\001_Vvedenie v OOP\07-static-methods.py
-070_oop\001_classes\examples\ITDN Python RUS\001_Vvedenie v OOP\08-class-methods.py
-070_oop\001_classes\_exercises\Python 3 Most Necessary\13.5. Special methods.py
-070_oop\001_classes\examples\Learning Python\030_006_OOP and Delegation Wrapper Objects.py
-070_oop\001_classes\_exercises\Learning Python\030_008_Methods Are Objects Bound or Unbound.py

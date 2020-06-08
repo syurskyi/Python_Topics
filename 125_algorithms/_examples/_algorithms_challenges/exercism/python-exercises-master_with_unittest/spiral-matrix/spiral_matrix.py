@@ -1,2 +1,0 @@
-def spiral(size):
-    pass

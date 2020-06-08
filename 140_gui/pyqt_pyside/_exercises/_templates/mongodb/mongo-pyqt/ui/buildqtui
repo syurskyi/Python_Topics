@@ -1,9 +1,0 @@
-#!/bin/bash
-#pyuic5 -o MainWindow *.ui
-build=../src/view/
-mkdir -p $build
-uifiles=`ls *.ui`
-for file in $uifiles;do
-	 out=$build/${file%.ui}.py
-	 pyuic5 -o $out $file
-done

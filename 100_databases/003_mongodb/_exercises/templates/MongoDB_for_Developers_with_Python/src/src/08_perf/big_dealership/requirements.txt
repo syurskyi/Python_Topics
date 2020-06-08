@@ -1,3 +1,0 @@
-mongoengine
-faker
-python-dateutil # for DateTimeField parsing

@@ -1,2 +1,0 @@
-#!/bin/bash
-find dist/Mongo-pyqt.app/ -name "*_debug"|xargs rm
