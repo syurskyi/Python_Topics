@@ -1,0 +1,6 @@
+# ______ i....
+# ______ linuxhint
+#
+# ___ key data i_ i___.g..... li...  i___.isc....
+#     print *|| : |!r|'.f... k.. d..
+#
