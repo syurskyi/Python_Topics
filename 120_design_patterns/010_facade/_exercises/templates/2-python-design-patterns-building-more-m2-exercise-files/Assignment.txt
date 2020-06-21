@@ -1,0 +1,11 @@
+You work for a digital media company.  You've recently been given an assignment to build a 
+program to retrieve and display current updates from Twitter.  You know you will need the 
+twitter package, so you run:
+
+pip install twitter
+
+which works fine.  You also will need Twitter credentials, so you visit the page at 
+
+https://apps.twitter.com/app
+
+to set those up.  Now all you need to do is write the code!

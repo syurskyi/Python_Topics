@@ -1,0 +1,449 @@
+{
+
+    "status": 200,
+
+    "last_modified": 123456789,
+
+    "htmlencoded": true,
+
+    "email": "philiptestovyj@mail.ru",
+
+    "body":
+
+        {
+
+            "login": "philiptestovyj",
+
+            "domain": "mail.ru",
+
+            "nick": "Philip Testovyj",
+
+            "flags":
+
+                {
+
+                    "mrim_disabled": true
+
+                },
+
+            "avatars":
+
+                {
+
+                    "mainphoto": "//avt.mail.ru/user/main.jpg",
+
+                    "90x90": "//avt.mail.ru/user/90x90.jpg"
+
+                },
+
+            "box":
+
+                {
+
+                    "size": 50000,
+
+                    "limit": 2000000,
+
+                    "limit_padding": 1950000,
+
+                    "parser_version": "1.2.3"
+
+                },
+
+            "common_purpose_flags":
+
+                {
+
+                    "acca_enabled": true,
+
+                    "addressbook_checked": true,
+
+                    "agent_contacts": true,
+
+                    "beta_user": true,
+
+                    "disable_secret_question": true,
+
+                    "folders_checked": true,
+
+                    "has_cloud": true,
+
+                    "letter_4539": true,
+
+                    "letter_10984": true,
+
+                    "letter_13465": true,
+
+                    "letter_16100": true,
+
+                    "letter_16551": true,
+
+                    "letter_16567": true,
+
+                    "letter_18399": true,
+
+                    "letter_20962": true,
+
+                    "mm_contacts": true,
+
+                    "need_reconfirm": true,
+
+                    "phone_verified": true,
+
+                    "verified_spam_report": true,
+
+                    "userinfo_checked": true,
+
+                    "user_agreement": true
+
+                },
+
+            "helper":
+
+                {
+
+                    "status": 12,
+
+                    "status_set":
+
+                        [0, 1, 0],
+
+                    "time":
+
+                        [0, 123456789, 0]
+
+                },
+
+            "phones":
+
+                [
+
+                    {
+
+                        "id": "id_base64string",
+
+                        "phone": "7926200****",
+
+                        "visibility": "hidden",
+
+                        "country": "ru",
+
+                        "mobile": true,
+
+                        "status": "ok",
+
+                        "noticeable": "enabled"
+
+                    },
+
+                    {
+
+                        "id": "id_base64string",
+
+                        "phone": "7916172****",
+
+                        "visibility": "hidden",
+
+                        "country": "ru",
+
+                        "mobile": true,
+
+                        "status": "in_remove_queue",
+
+                        "noticeable": "disabled",
+
+                        "duedate": "123456789"
+
+                    }
+
+                ],
+
+            "notifications":
+
+                {
+
+                    "sms":
+
+                        {
+
+                            "enabled": true,
+
+                            "folders":
+
+                                ["0", "1", "7"],
+
+                            "conditions":
+
+                                {
+
+                                    "time":
+
+                                        {
+
+                                            "from": 10,
+
+                                            "to": 21
+
+                                        },
+
+                                    "holidays": true,
+
+                                    "ignore_mail_status": true,
+
+                                    "ignore_agent_status": true,
+
+                                    "include_socio_notice": true
+
+                                },
+
+                            "frequence": 30
+
+                        },
+
+                    "push":
+
+                        {
+
+                            "enabled": true
+
+                        },
+
+                    "web":
+
+                        {
+
+                            "enabled": true
+
+                        }
+
+                },
+
+            "timezone_offset": 144000,
+
+            "theme": "t1001",
+
+            "short_headline": true,
+
+            "domain_logo": true,
+
+            "signs":
+
+                [
+
+                    {
+
+                        "sign": "--\nС уважением,\nФилип Тестовый",
+
+                        "name": "Филип Тестовый",
+
+                        "active": true
+
+                    }
+
+                ],
+
+            "sign_before": true,
+
+            "lang": "ru_RU",
+
+            "reg_date": 123456789,
+
+            "addressbook":
+
+                {
+
+                    "sort":
+
+                        {
+
+                            "type": "priority",
+
+                            "order": "desc"
+
+                        },
+
+                    "autoadd": true
+
+                },
+
+            "sent_me_ads": true,
+
+            "security":
+
+                {
+
+                    "force_https": true,
+
+                    "one_session": true,
+
+                    "show_last_login": true,
+
+                    "session_one_ip": true
+
+                },
+
+            "messages":
+
+                {
+
+                    "snippet": true,
+
+                    "expanded": true,
+
+                    "quotation": true,
+
+                    "empty_trash": true,
+
+                    "after_delete": "msglist",
+
+                    "sort":
+
+                        {
+
+                            "type": "date",
+
+                            "order": "desc"
+
+                        },
+
+                    "size": 25,
+
+                    "quote_string": "> ",
+
+                    "templates_placeholders":
+
+                        {
+
+                            "body":
+
+                                {
+
+                                    "text": "__BODY_PLACEHOLDER__",
+
+                                    "text_quoted": "__BODY_QUOTED_PLACEHOLDER__",
+
+                                    "html": "__BODY_HTML_PLACEHOLDER__"
+
+                                },
+
+                            "sign":
+
+                                {
+
+                                    "html": "__SIGN_HTML_PLACEHOLDER__",
+
+                                    "text": "__SIGN_PLACEHOLDER__"
+
+                                }
+
+                        }
+
+                },
+
+            "city": 78545,
+
+            "sex": "male",
+
+            "name":
+
+                {
+
+                    "first": "Филип",
+
+                    "last": "Тестовый"
+
+                },
+
+            "birthday":
+
+                {
+
+                    "day": 7,
+
+                    "month": 2,
+
+                   "year": 1982
+
+                },
+
+            "restore":
+
+                {
+
+                    "secret": "Сколько мне было лет когда Гагарин полетел в космос?",
+
+                    "additional_email": "philiptestovyj@gmail.com",
+
+                    "need_reconfirm": true,
+
+                    "secret_disabled": true
+
+                },
+
+            "agent":
+
+                {
+
+                    "visible":
+
+                        {
+
+                            "account": true,
+
+                            "status": true,
+
+                            "version": true
+
+                        },
+
+                    "enable_web_agent": true,
+
+                    "history":
+
+                        {
+
+                            "enable": true,
+
+                            "password_protect": true
+
+                        },
+
+                    "auto_add_friends": true,
+
+                    "auto_logon": true
+
+                },
+
+            "autoreply":
+
+                {
+
+                    "enable": true,
+
+                    "period":
+
+                        {
+
+                            "from": 123456789,
+
+                            "to": 987654321
+
+                        },
+
+                    "text": "Я в домике",
+
+                    "time":
+
+                        {
+
+                            "from": 28000,
+
+                            "to": 75600
+
+                        }
+
+                }
+
+        }
+
+}

@@ -1,0 +1,13 @@
+Your organization, like many, is organized as a hierarchy, with a CEO at the
+top, several intermediate levels of VPs, directors and managers.  Then there's
+you, at the bottom!
+
+You are given a task to produce a tree representing this hierarchy.  To get 
+started, you simulate this with a simple binary tree. You need to produce a way
+to iterate over this tree, depth-first.
+
+The tree.py file contains a basic Tree class and a Node class to use for the
+employees.  Enhance this file to iterate over the tree as required
+
+The file testtree.py builds a test tree using a tuple of integers.  Feel
+free to make these names if you like. 

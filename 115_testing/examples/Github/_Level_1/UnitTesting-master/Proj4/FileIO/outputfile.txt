@@ -1,0 +1,9 @@
+Chevy
+Ford
+Toyota
+Chevy
+Ford
+Toyota
+['Chevy', 'Camaro', 'Corvette', 'Spark', 'Volt\n']
+['Ford', 'Escort', 'Focus', 'Mustang\n']
+['Toyota', 'Avalon', 'Camry', 'Corolla', 'Prius', 'Rav4']

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' elementFormDefault='qualified'>
+    <xs:element name='issues'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='issue'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='issue'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='field'/>
+            </xs:sequence>
+            <xs:attribute name='entityId' use='required' type='xs:NMTOKEN'/>
+            <xs:attribute name='id' use='required' type='xs:NCName'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='field'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='value'/>
+                <xs:element minOccurs='0' ref='valueId'/>
+                <xs:element minOccurs='0' ref='color'/>
+            </xs:sequence>
+            <xs:attribute name='name' use='required' type='xs:NCName'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='value' type='xs:string'/>
+    <xs:element name='valueId' type='xs:NCName'/>
+    <xs:element name='color'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='bg'/>
+                <xs:element ref='fg'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='bg' type='xs:string'/>
+    <xs:element name='fg' type='xs:string'/>
+</xs:schema>

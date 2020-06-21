@@ -1,0 +1,1 @@
+all=['sample_module']

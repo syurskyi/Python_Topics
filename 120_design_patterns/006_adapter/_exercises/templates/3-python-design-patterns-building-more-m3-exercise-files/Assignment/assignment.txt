@@ -1,0 +1,10 @@
+Assume that the the Customer class separated the name attribute into first name 
+and last name. Then, a program written against the Vendor class would need a 
+way to retrieve a single name property.
+
+Write and test a Vendor/Customer object adapter that is two-way.  Like the 
+VendAdapter in the examples, it looks like a Customer to clients using that 
+interface and it also needs to look like a Vendor to clients using the Vendor
+class.
+
+
