@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"dealership.owners"},{"v":1,"key":{"car_ids":1},"name":"car_ids_1","ns":"dealership.owners","background":false}]}

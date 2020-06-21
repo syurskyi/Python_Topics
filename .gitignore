@@ -156,3 +156,8 @@ gen
 /100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/dealership_db_250k/dealership/cars.bson
 /100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/dealership_db_250k/dealership/owners.bson
 /100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/data/README.md
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Book.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/User.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.bson
+/100_databases/003_mongodb/_exercises/exercises/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.bson

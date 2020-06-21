@@ -1,0 +1,1 @@
+{ "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "DM_Books.User", "name" : "_id_" }, { "v" : 1, "key" : { "UserId" : 1 }, "ns" : "DM_Books.User", "name" : "Find_user_by_old_id" } ] }
