@@ -1,0 +1,15 @@
+{
+    "files": [
+        "main.py",
+        "change_position_dialog.py",
+        "change_salary_dialog.py",
+        "charts.py",
+        "mainmenu.py",
+        "manage_employees.py",
+        "new_employee.py",
+        "salary_position.py",
+        "database.py",
+        "employee_full_info.py",
+        "calendar_dialog.py"
+    ]
+}

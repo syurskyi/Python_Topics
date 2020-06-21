@@ -1,0 +1,7 @@
+<RCC>
+	<qresource prefix="/">
+		<file>resources/ic_calendar.png</file>
+		<file>resources/ic_arrow_down.png</file>
+		<file>resources/ic_arrow_up.png</file>
+	</qresource>
+</RCC>

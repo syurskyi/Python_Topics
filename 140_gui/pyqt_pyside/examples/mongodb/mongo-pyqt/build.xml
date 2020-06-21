@@ -1,0 +1,68 @@
+<project name="mongo pyqt" default="build" basedir=".">
+	<property name="src" location="src" />
+	<property name="build" location="build" />
+	<property name="dist" location="dist" />
+	<property name="QT_HOME" location="/Users/wanghch/local/Qt5.2.1" />
+	<property name="QT_HOME_PLUGIN" location="${QT_HOME}/5.2.1/clang_64/plugins" />
+	
+	<property name="macdeployqt" location="${QT_HOME}/5.2.1/clang_64/bin/macdeployqt" />
+	<property name="APP_NAME" value="Mongo-pyqt" />
+	<property name="PLUGIN_DIR" value="${dist}/${APP_NAME}.app/Contents/Resources/qt_plugins" />
+	<property name="QT_CONF" value="${dist}/${APP_NAME}.app/Contents/Resources/qt.conf" />
+	<property name="QT_FRAMEWORK" value="${dist}/${APP_NAME}.app/Contents/Frameworks" />
+
+	<target name="clean">
+		<exec executable="rm" >
+			<arg value="-rf" />
+			<arg value="${build}" />
+			<arg value="${dist}" />
+		</exec>
+	</target>
+
+
+	<target name="dist"  depends="clean">
+		<exec executable="python" >
+			<arg value="setup.py" />
+			<arg value="py2app" />
+		</exec>
+	</target>
+
+	<target name="macdeployqt" depends="dist">
+		<delete file="${QT_CONF}" />
+		<exec executable="${macdeployqt}" >
+			<arg value="dist/${APP_NAME}.app" />
+		</exec>
+	</target>
+
+
+	<target name="build" depends="macdeployqt,rmdebug">
+
+	
+	</target>
+	<target name="run">
+		<exec executable="dist/${APP_NAME}.app/Contents/MacOS/${APP_NAME}" />
+	</target>
+
+	<target name="rmdebug">
+		<exec executable="./rmdebug" />
+	</target>
+
+
+	<target name="fixdylib">
+		<mkdir dir="${PLUGIN_DIR}"/>
+		<mkdir dir="${PLUGIN_DIR}/platforms"/>
+		<mkdir dir="${PLUGIN_DIR}/printsupport"/>
+		<copy file="${QT_HOME_PLUGIN}/platforms/libqcocoa.dylib" tofile="${PLUGIN_DIR}/platforms/libqcocoa.dylib"/>
+		<copy file="${QT_HOME_PLUGIN}/printsupport/libcocoaprintersupport.dylib" tofile="${PLUGIN_DIR}/printsupport/libcocoaprintersupport.dylib" />
+	</target>
+
+	<target name="linux"  depends="clean">
+		<exec executable="pyinstaller" >
+			<arg value="-F" />
+			<arg value="-nmongo-pyqt" />
+			<arg value="src/Main.py" />
+		</exec>
+	</target>
+
+
+</project>

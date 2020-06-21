@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1249</width>
+    <height>805</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Parts Inventory Manager</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>1221</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Inventory Details</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>741</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search of references with count level lower of equal to:</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1191</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Century Gothic&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Reference</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Part Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Min Area</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Max Area</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nbr of Holes</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Min Diameter</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Max Diameter</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Count</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QSpinBox" name="count_filter_txt">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>10</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="search_btn">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>10</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Inventory Statistics</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Number of Referece</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of parts type&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>150</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Max. Number of Holes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>30</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min. Number of Holes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_ref_nbr">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>51</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Century Gothic&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_parts_nbr">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>150</y>
+        <width>51</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Century Gothic&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_max_hole">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>150</y>
+        <width>51</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Century Gothic&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_min_hole">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>30</y>
+        <width>51</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Century Gothic&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_min_hole_2">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>30</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Century Gothic&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>REF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_max_hole_2">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>150</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Century Gothic&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>REF</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>961</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Century Gothic&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>Reference</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Part Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Count</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>255</y>
+        <width>671</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Top 3 Reference with minimum iventory level</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="check_btn">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>300</y>
+        <width>191</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Check</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Edit Inventory</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reference</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Part Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min Area</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>320</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max Area</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>200</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min Diameter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>320</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Count</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>140</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Number Of Holes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>260</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max Diameter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="reference">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>151</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="part_name">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>210</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="min_area">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>270</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="max_area">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>330</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="number_of_holes">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>150</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="max_diameter">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>269</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="min_diameter">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>209</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="id">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>40</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(179, 179, 179);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="count">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>340</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Century Gothic&quot;;
+color: rgb(173, 66, 164);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="next_btn">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>460</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="last_btn">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>460</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>&gt;&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="first_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>460</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="previous_btn">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>460</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(100, 100, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="update_btn">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>460</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Update</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_btn">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>460</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_btn">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>460</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>10</y>
+      <width>1271</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 30pt &quot;Century Gothic&quot;;
+background-color: rgb(170, 170, 170);
+color: rgb(74, 105, 204);</string>
+    </property>
+    <property name="text">
+     <string>Parts Inventory Manager</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh_btn">
+    <property name="geometry">
+     <rect>
+      <x>1012</x>
+      <y>680</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>1054</x>
+      <y>0</y>
+      <width>161</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icon-spare-parts.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh_btn_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>680</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Theme 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh_btn_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>680</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Century Gothic&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Theme 2</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1249</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

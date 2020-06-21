@@ -1,0 +1,40 @@
+[
+    {
+        "content": [
+            {
+                "content": [], 
+                "name": "animation"
+            }, 
+            {
+                "content": [], 
+                "name": "models"
+            }, 
+            {
+                "content": [], 
+                "name": "assets2"
+            }, 
+            {
+                "content": [], 
+                "name": "previs"
+            }
+        ], 
+        "name": "scenes"
+    }, 
+    {
+        "content": [
+            {
+                "content": [], 
+                "name": "compos"
+            }, 
+            {
+                "content": [], 
+                "name": "3d"
+            }
+        ], 
+        "name": "render"
+    }, 
+    {
+        "content": [], 
+        "name": "textures"
+    }
+]

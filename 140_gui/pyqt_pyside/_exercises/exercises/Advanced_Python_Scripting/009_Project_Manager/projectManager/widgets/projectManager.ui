@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <c_>projectManager</c_>
+ <widget c_="QMainWindow" name="projectManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>508</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Project Manager</string>
+  </property>
+  <widget c_="QWidget" name="centralwidget">
+   <layout c_="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget c_="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget c_="QWidget" name="verticalLayoutWidget">
+       <layout c_="QVBoxLayout" name="projectList_ly"/>
+      </widget>
+      <widget c_="QWidget" name="">
+       <layout c_="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget c_="QPushButton" name="create_btn">
+          <property name="text">
+           <string>Create Project</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget c_="QPushButton" name="templateEditor_btn">
+          <property name="text">
+           <string>Template Editor</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget c_="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Info</string>
+          </property>
+          <layout c_="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget c_="QLabel" name="info_lb">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget c_="QPushButton" name="settings_btn">
+          <property name="text">
+           <string>Settings</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

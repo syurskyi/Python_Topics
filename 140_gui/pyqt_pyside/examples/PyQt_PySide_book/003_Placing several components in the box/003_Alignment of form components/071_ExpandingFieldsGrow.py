@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+from PyQt5 import QtWidgets
+import sys
+
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
+window.setWindowTitle("ExpandingFieldsGrow")
+window.resize(300, 150)
+lineEdit = QtWidgets.QLineEdit()
+textEdit = QtWidgets.QTextEdit()
+spinBox = QtWidgets.QSpinBox()
+button1 = QtWidgets.QPushButton("О&тправить")
+button2 = QtWidgets.QPushButton("О&чистить")
+hbox = QtWidgets.QHBoxLayout()
+hbox.addWidget(button1)
+hbox.addWidget(button2)
+form = QtWidgets.QFormLayout()
+form.setFieldGrowthPolicy(QtWidgets.QFormLayout.ExpandingFieldsGrow)
+form.addRow("&Название:", lineEdit)
+form.addRow("&Описание:", textEdit)
+form.addRow("&Количество:", spinBox)
+form.addRow(hbox)
+window.setLayout(form)
+window.show()
+sys.exit(app.exec_())
