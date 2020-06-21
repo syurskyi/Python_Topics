@@ -1,4 +1,4 @@
-list1 = ["CA", "NJ", "RI"]
-list2 = ["California", "New Jersey", "Rhode Island"]
-
-answer = {list1[i]: list2[i] for i in range(0, 3)}
+# list1 = ["CA", "NJ", "RI"]
+# list2 = ["California", "New Jersey", "Rhode Island"]
+#
+# answer = _1 i ; _2 i ___ ? __ ra.. 0, 3
