@@ -4,9 +4,8 @@
 # # `set`
 
 # ## Problem Statement: Prime Number Generator
-Find all the prime numbers up to a given number.
-# In[ ]:
-
+# Find all the prime numbers up to a given number.
+print('#' * 20 + 'Find all the prime numbers up to a given number.')
 
 def primes(max_num=100):
     found_primes = {2}
@@ -19,50 +18,24 @@ def primes(max_num=100):
             found_primes.add(num)
     return found_primes
 
-
-# In[ ]:
-
-
 print(primes())
 
 
+print('#' * 20 + 'interacting with the `set`-type')
 # ## set
-- collection of items
-- no natural sorting
-- unique items
-- hashability
-- methods: intersect, difference, union, ... 
+# - collection of items
+# - no natural sorting
+# - unique items
+# - hashability
+# - methods: intersect, difference, union, ...
 # #### interacting with the `set`-type
 
-# In[ ]:
-
-
 suits = {'hearts', 'diamonds', 'spades', 'clubs', }
-
 faces = set(['ace', 'king', 'queen', 'jack', 'jack'])
-
 numbers = set(range(2,11))
-
-
-# In[ ]:
-
-
-suits
-
-
-# In[ ]:
-
-
-faces
-
-
-# In[ ]:
-
-
-numbers
-
-
-# In[ ]:
+print(suits)
+print(faces)
+print(numbers)
 
 
 deck = set() # {} means "empty dictionary"
@@ -73,34 +46,16 @@ for suit in suits:
     for face in faces:
         deck.add('{} of {}'.format(face, suit))
 
-deck
-
-
-# In[ ]:
-
-
-deck[0]
-
-
-# In[ ]:
-
+print(deck)
+print(deck[0])
 
 from random import choice
 
 choice(deck)
 
-
-# In[ ]:
-
-
 from random import shuffle
 
 shuffle(deck)
-
-
-# In[ ]:
-
-
 hand = set()
 
 for card in deck:
@@ -108,11 +63,7 @@ for card in deck:
         hand.add(card)
         deck.remove(card)
     
-hand
-
-
-# In[ ]:
-
+print(hand)
 
 hand = set()
 
@@ -122,71 +73,38 @@ for card in deck:
     
 for card in hand:
     deck.remove(card)
-    
-hand
 
-
-# In[ ]:
-
+print(hand)
 
 board = set()
 
 for _ in range(3):
     board.add(deck.pop())
     
-board
+print(board)
 
-
-# In[ ]:
-
-
-board | hand
-
-
-# In[ ]:
-
+print(board | hand)
 
 board.union(hand)
-
-
-# In[ ]:
 
 
 deck.add('High Joker')
 deck.add('Low Joker')
 
 
-# In[ ]:
-
-
-'High Joker' in deck
-
-
-# In[ ]:
-
+print('High Joker' in deck)
 
 deck.remove('High Joker')
 deck.remove('Low Joker')
 
-
-# In[ ]:
-
-
 deck.discard('rules of five-card stud')
-
-
-# In[ ]:
-
-
 deck = { '{} of {}'.format(rank, suit) for rank in numbers | faces
                                        for suit in suits }
-
 deck.update(['high Joker', 'low Joker'])
 
-deck
+print(deck)
 
 
-# In[ ]:
 
 
 from collections import namedtuple
@@ -196,40 +114,26 @@ Card = namedtuple('Card', 'suit rank')
 deck = {Card(suit, rank) for rank in numbers | faces
                           for suit in suits }
 
-deck
+print(deck)
 
-- straight flush
-- four of a kind
-- full house
-- flush
-- straight
-- three of a kind
-- two pair
-- one pair
-- high card
-# In[ ]:
-
-
+# - straight flush
+# - four of a kind
+# - full house
+# - flush
+# - straight
+# - three of a kind
+# - two pair
+# - one pair
+# - high card
 valid_straights = {set(range(n, n+5)) for n in range(2,7)}
-
-
-# In[ ]:
-
-
 valid_straights = {frozenset(range(n, n+5)) for n in range(2,7)}
-valid_straights
-
-
-# In[ ]:
-
-
-valid_straights = {frozenset(range(n, n+5)) for n in range(2,7)} |                   {frozenset(['ace', 2, 3, 4, 5])              } |                   {frozenset([7, 8, 9, 10, 'jack'])            } |                   {frozenset([8, 9, 10, 'jack', 'queen'])      } |                   {frozenset([9, 10, 'jack', 'queen', 'king']) } |                   {frozenset([10, 'jack', 'queen', 'king', 'ace']) }
+print(valid_straights)
+valid_straights = {frozenset(range(n, n+5)) for n in range(2,7)}|\
+                  {frozenset(['ace', 2, 3, 4, 5])}|{frozenset([7, 8, 9, 10, 'jack'])}|\
+                  {frozenset([8, 9, 10, 'jack', 'queen'])}|{frozenset([9, 10, 'jack', 'queen', 'king'])}\
+                  |{frozenset([10, 'jack', 'queen', 'king', 'ace']) }
     
-valid_straights
-
-
-# In[ ]:
-
+print(valid_straights)
 
 def rank2value(card):
     if card.rank in numbers:
@@ -240,16 +144,8 @@ def rank2value(card):
             'queen': 12,
             'jack':  11,}[card.rank]
 
-
-# In[ ]:
-
-
 def best_card(hand):
     return max(hand, key=rank2value)
-
-
-# In[ ]:
-
 
 from itertools import groupby, combinations
 
@@ -290,10 +186,7 @@ def best_hand(hand):
     return {high_card,}, 'high card'
 
 
-# In[ ]:
-
-
-get_ipython().run_cell_magic('time', '', '\nfrom itertools import combinations\n\nexample_hands = {}\n\nfor hand in combinations(deck, 5):\n    cards, hand_type = best_hand(hand)\n    if hand_type not in example_hands:\n        example_hands[hand_type] = cards, hand')
+# get_ipython().run_cell_magic('time', '', '\nfrom itertools import combinations\n\nexample_hands = {}\n\nfor hand in combinations(deck, 5):\n    cards, hand_type = best_hand(hand)\n    if hand_type not in example_hands:\n        example_hands[hand_type] = cards, hand')
 
 
 # In[ ]:
@@ -306,144 +199,64 @@ for hand_type in example_hands:
     for card in all_cards:
         print('  ', '*' if card in matched_cards else ' ', '{} of {}'.format(card.rank, card.suit))
 
-.clear
-.difference
-.difference_update
-.intersection
-.intersection_update
-.symmetric_difference
-.symmetric_difference_update
-# In[ ]:
+# .clear
+# .difference
+# .difference_update
+# .intersection
+# .intersection_update
+# .symmetric_difference
+# .symmetric_difference_update
+
 
 
 animals = {'dog', 'cat', 'bird'}
-animals
-
-
-# In[ ]:
-
-
+print(animals)
 animals.clear()
-animals
-
-
-# In[ ]:
-
+print(animals)
 
 while animals:
     animals.pop()
 
 
-# In[ ]:
-
-
-{'dog', 'cat', 'bird'} - {'horse'}
-
-
-# In[ ]:
-
-
-{'dog', 'cat', 'bird'}.difference('cat')
-
-
-# In[ ]:
-
-
-{'dog', 'cat', 'bird'}.difference(['cat'])
-
-
-# In[ ]:
-
-
-{'dog', 'cat', 'bird', 'horse'}.symmetric_difference({'dog', 'horse', 'giraffe'})
-
-
-# In[ ]:
-
-
-{'dog', 'cat', 'bird', 'horse'} ^ {'dog', 'horse', 'giraffe'}
-
-
-# In[ ]:
-
-
-{'dog', 'cat', 'bird', 'horse'}.intersection({'dog', 'horse', 'giraffe'})
-
-
-# In[ ]:
-
-
-{'dog', 'cat', 'bird', 'horse'} & {'dog', 'horse', 'giraffe'}
-
-
-# In[ ]:
-
+print({'dog', 'cat', 'bird'} - {'horse'})
+print({'dog', 'cat', 'bird'}.difference('cat'))
+print({'dog', 'cat', 'bird'}.difference(['cat']))
+print({'dog', 'cat', 'bird', 'horse'}.symmetric_difference({'dog', 'horse', 'giraffe'}))
+print({'dog', 'cat', 'bird', 'horse'} ^ {'dog', 'horse', 'giraffe'})
+print({'dog', 'cat', 'bird', 'horse'}.intersection({'dog', 'horse', 'giraffe'}))
+print({'dog', 'cat', 'bird', 'horse'} & {'dog', 'horse', 'giraffe'})
 
 animals = {'dog', 'cat', 'bird'}
 animals.intersection_update({'bird', 'horse'})
-animals
-
-
-# In[ ]:
-
+print(animals)
 
 animals = {'dog', 'cat', 'bird'}
 animals &= {'bird', 'horse'}
-animals
-
-
-# In[ ]:
-
-
+print(animals)
 animals = {'dog', 'cat', 'bird'}
 animals.difference_update({'bird', 'horse'})
-animals
-
-
-# In[ ]:
-
-
+print(animals)
 animals = {'dog', 'cat', 'bird'}
 animals -= {'bird', 'horse'}
-animals
-
-
-# In[ ]:
-
-
+print(animals)
 animals = {'dog', 'cat', 'bird'}
 animals.update({'bird', 'horse'}) # think `union_update`
-animals
-
-
-# In[ ]:
-
-
+print(animals)
 animals = {'dog', 'cat', 'bird'}
 animals |= {'bird', 'horse'}
-animals
-
-
-# In[ ]:
-
-
+print(animals)
 animals = {'dog', 'cat', 'bird'}
 animals.symmetric_difference_update({'bird', 'horse'})
-animals
-
-
-# In[ ]:
-
-
+print(animals)
 animals = {'dog', 'cat', 'bird'}
 animals ^= {'bird', 'horse'}
-animals
+print(animals)
 
 
 # ## Problem Statement: Prime Number Generator
-Find all the prime numbers up to a given number.
-# In[132]:
-
+# Find all the prime numbers up to a given number.
+print('#' * 20 + 'Find all the prime numbers up to a given number.')
+print()
 
 def primes(max_num=100):
     found_primes = {2}
@@ -451,10 +264,6 @@ def primes(max_num=100):
         # determine if the number is prime
         pass
     return found_primes
-
-
-# In[133]:
-
 
 def primes(max_num=100):
     found_primes = {2}
@@ -468,13 +277,7 @@ def primes(max_num=100):
     return found_primes
 
 
-# In[134]:
-
-
 print(primes())
-
-
-# In[135]:
 
 
 def primes(max_num=100):
@@ -485,13 +288,7 @@ def primes(max_num=100):
     return found_primes
 
 
-# In[136]:
-
-
 print(primes())
-
-
-# In[137]:
 
 
 def primes(max_num=100):
@@ -503,13 +300,7 @@ def primes(max_num=100):
     return numbers - nonprimes
 
 
-# In[138]:
-
-
 print(primes())
-
-
-# In[139]:
 
 
 def primes(max_num=100):
@@ -520,13 +311,7 @@ def primes(max_num=100):
     return numbers - nonprimes
 
 
-# In[140]:
-
-
 print(primes())
-
-
-# In[141]:
 
 
 def primes(max_num=100):
@@ -537,16 +322,10 @@ def primes(max_num=100):
     return numbers
 
 
-# In[142]:
-
-
 print(primes())
 
 
 # [An Introduction to Prime Number Sieves: ftp://ftp.cs.wisc.edu/pub/techreports/1990/TR909.pdf](ftp://ftp.cs.wisc.edu/pub/techreports/1990/TR909.pdf)
-
-# In[143]:
-
 
 from itertools import count
 
@@ -563,24 +342,13 @@ def primes():
             yield num
 
 
-# In[ ]:
-
-
-# list(primes())
-
-
-# In[145]:
-
+list(primes())
 
 from itertools import islice
-
 print(set(islice(primes(),0,10)))
 
-
-# In[156]:
-
-
 from itertools import count
+
 
 def primes():
     multiples = {}
@@ -595,10 +363,6 @@ def primes():
             yield num
 
 
-# In[157]:
-
-
 from itertools import islice
-
 print(list(islice(primes(),0,10)))
 
