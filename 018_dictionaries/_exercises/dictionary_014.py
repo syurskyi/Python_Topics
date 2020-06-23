@@ -1,30 +1,29 @@
-# # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+
+# defaultdict
+# The defaultdict is a specialized dictionary found i_ the collections module. (It is a subclass of the dict type).
+
+# Write a Python function that will create and r_ a dictionary from another dictionary, but sorted by value.
+# You can assume the values are all comparable and have a natural sort order.
 #
-# # defaultdict
-# # The defaultdict is a specialized dictionary found i_ the collections module. (It is a subclass of the dict type).
+# composers _ {'Johann': 65, 'Ludwig': 56, 'Frederic': 39, 'Wolfgang': 35}
 #
-# # Write a Python function that will create and r_ a dictionary from another dictionary, but sorted by value.
-# # You can assume the values are all comparable and have a natural sort order.
-# #
-# # composers _ {'Johann': 65, 'Ludwig': 56, 'Frederic': 39, 'Wolfgang': 35}
-# #
-# #  instead of using a dictionary comprehension, we can simply use the dict()
-# #  function to create a dictionary from the sorted tuples!
-#
-# composers _ 'Johann' 65 'Ludwig' 56 'Frederic' 39 'Wolfgang' 35
-#
-# ___ sort_dict_by_value d
-#     d _ |k v
-#         ___ k, v i_ so.. d.it.., ke. _ l_____ el; el|1|||
-#     r_ d
-#
-# print s.... c...
-#
-# ___ sort_dict_by_value d
-#     r_ di.. so.. d.it..  key _ l_____ el: el|1
-#
-# print s.... c...
-#
+#  instead of using a dictionary comprehension, we can simply use the dict()
+#  function to create a dictionary from the sorted tuples!
+
+composers = {'Johann': 65, 'Ludwig': 56, 'Frederic': 39, 'Wolfgang': 35}
+
+def sort_dict_by_value(d):
+    d = {k: v for k, v in sorted(d.items(), key = lambda el: el[1])}
+    return d
+
+print(sort_dict_by_value(composers))
+
+def sort_dict_by_value(d):
+    return dict(sorted(d.items(), key = lambda el: el[1]))
+
+print(sort_dict_by_value(composers))
+
 #
 # # Given two dictionaries, d1 and d2, write a function that creates a dictionary that contains only the keys
 # # common to both dictionaries, with values being a tuple containg the values from d1 and d2.
@@ -33,11 +32,11 @@
 # d2 _ 'b' 20 'c' 30 'y' 40 'z' 50
 #
 # ___ intersect d1 d2
-#     d1_k.. _ d1.ke..
-#     d2_k.. _ d2.k..
+#     d1_k.. _ ?.ke..
+#     d2_k.. _ ?.k..
 #     keys _ d1_keys & d2_keys
-#     d _ k d1 k d2 k ___ k i_ ke..
-#     r_ d
+#     d _ k ? k ? k ___ ? __ ?
+#     r_ ?
 #
 # intersect d1 d2
 #

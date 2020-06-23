@@ -324,3 +324,27 @@ print(conf_dev)
 
 config_prod = {**conf_defaults, **conf_global, **conf_prod}
 print(config_prod)
+
+# defaultdict
+# The defaultdict is a specialized dictionary found i_ the collections module. (It is a subclass of the dict type).
+
+# Write a Python function that will create and r_ a dictionary from another dictionary, but sorted by value.
+# You can assume the values are all comparable and have a natural sort order.
+#
+# composers _ {'Johann': 65, 'Ludwig': 56, 'Frederic': 39, 'Wolfgang': 35}
+#
+#  instead of using a dictionary comprehension, we can simply use the dict()
+#  function to create a dictionary from the sorted tuples!
+
+composers = {'Johann': 65, 'Ludwig': 56, 'Frederic': 39, 'Wolfgang': 35}
+
+def sort_dict_by_value(d):
+    d = {k: v for k, v in sorted(d.items(), key = lambda el: el[1])}
+    return d
+
+print(sort_dict_by_value(composers))
+
+def sort_dict_by_value(d):
+    return dict(sorted(d.items(), key = lambda el: el[1]))
+
+print(sort_dict_by_value(composers))

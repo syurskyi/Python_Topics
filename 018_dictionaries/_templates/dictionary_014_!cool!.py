@@ -14,14 +14,14 @@
 # composers _ 'Johann' 65 'Ludwig' 56 'Frederic' 39 'Wolfgang' 35
 #
 # ___ sort_dict_by_value d
-#     d _ |k v
-#         ___ k, v i_ so.. d.it.., ke. _ l_____ el; el|1|||
-#     r_ d
+#     d _ k v
+#         ___ ? ? __ so.. ?.it.., key _ l_____ el; ? 1
+#     r_ ?
 #
-# print s.... c...
+# print ? ?
 #
 # ___ sort_dict_by_value d
-#     r_ di.. so.. d.it..  key _ l_____ el: el|1
+#     r_ di.. so.. ?.it..  key _ l_____ el; ?|1
 #
 # print s.... c...
 #
@@ -33,11 +33,11 @@
 # d2 _ 'b' 20 'c' 30 'y' 40 'z' 50
 #
 # ___ intersect d1 d2
-#     d1_k.. _ d1.ke..
-#     d2_k.. _ d2.k..
+#     d1_k.. _ ?.ke..
+#     d2_k.. _ ?.k..
 #     keys _ d1_keys & d2_keys
-#     d _ k d1 k d2 k ___ k i_ ke..
-#     r_ d
+#     d _ k ? k ? k ___ ? __ ?
+#     r_ ?
 #
 # intersect d1 d2
 #
