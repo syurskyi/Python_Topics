@@ -162,7 +162,7 @@ phonebook_copy.clear()
 print('Phonebook:', phonebook)
 print('Phonebook copy:', phonebook_copy)
 
-dict.fromkeys(sequence[, value]) – создаёт новый словарь с
+# dict.fromkeys(sequence[, value]) – # создаёт новый словарь с
 # ключами из последовательности sequence и заданным значением (по умолчанию –
 # None).
 
