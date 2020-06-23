@@ -34,7 +34,7 @@
 #
 #         c... ?|.a.. ?
 # ___ cat __ ?
-#     print _*|?|;', ''.j.. c...|ca.|
+#     print _*|?|;', ''.j.. c...|?
 #
 # # how many times each character occurred in a string:
 # # We can simplify this a bit using setdefault:
@@ -49,7 +49,7 @@
 #             key _ 'upper'
 #         ____
 #             key _ 'other'
-#         ca___.s__d___ ke. se.  .ad. ?
+#         ca___.s__d___ ? se.  .ad. ?
 #
 # ___ cat __ ?
 #     print _*|?|:', ''.j.. c...|?
@@ -71,9 +71,9 @@
 #
 # categories _  # dict
 # ___ c __ ?
-#     key _ cat_key ?
+#     key _ c_k.. ?
 #     __ ?
-#         c___.s_d... ke. se.  .ad. ?
+#         c___.s_d... ? se.  .ad. ?
 #
 # ___ cat __ ?
 #     print _*|?|;* ''.j... c...|?
@@ -88,8 +88,8 @@
 #                  st___.a.._lo. 'lower',
 #                  st___.a.._up. 'upper'
 #     ___ key __ ?
-#         __ ? __ ke.
-#             r_ c..|ke.|
+#         __ ? __ ?
+#             r_ c..|?|
 #     ____
 #         r_ 'other'
 #
@@ -97,9 +97,9 @@
 #
 # categories _  # dict
 # ___ c __ text
-#     key _ cat_key ?
-#     __ key
-#         c____.s__d__ ke. se.  .add ?
+#     key _ c_k.. ?
+#     __ ?
+#         c____.s__d__ ? se.  .ad. ?
 #
-# ___ cat __ categories:
+# ___ cat __ ?
 #     print _* ? ''.j... c... ?
