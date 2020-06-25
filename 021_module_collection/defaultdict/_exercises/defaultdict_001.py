@@ -1,38 +1,38 @@
-# # defaultdict
-# # The defaultdict is a specialized dictionary found in the collections module. (It is a subclass of the dict type).
-#
-# f__ c... ______ d..d..
-#
-# # Standard dictionaries in Python will raise an exception if we try to access a non-existent key:
-#
-# d _ ||
-# # d['a']  # ERROR KeyError: 'a'
-#
+# defaultdict
+# The defaultdict is a specialized dictionary found in the collections module. (It is a subclass of the dict type).
+
+from collections import defaultdict
+
+# Standard dictionaries in Python will raise an exception if we try to access a non-existent key:
+
+d = {}
+# d['a']  # ERROR KeyError: 'a'
+
 # # Now, we can certainly use the .get method:
-#
-# result _ d.ge.'a'
-# ty.. r..
-# # NoneType
-#
-# # And we can even specify a default value for the key if it is not present:
-#
-# d.ge. 'a' 0
-# # 0
-#
-# # Often we have dictionaries where we want to return a consistent default value if the requested key does not exist.
-# # Although we can do so using the .get method as above, we have to remember to use the same default value every time
-# # - plus it gets a little cumbersome.
-# # Let's say we want to keep track of the number of occurrences of individual characters in a string.
-# # We might approach it this way:
-#
-# counts _
-# sentence _ "able was I ere I saw elba"
-#
-# ___ c i_ se..
-#     i_ c i_ co..
-#         co.. c +_ 1
-#     e___
-#         co.. c _ 1
+
+result = d.get('a')
+print(type(result))
+# NoneType
+
+# And we can even specify a default value for the key if it is not present:
+
+print(d.get('a', 0))
+# 0
+
+# Often we have dictionaries where we want to return a consistent default value if the requested key does not exist.
+# Although we can do so using the .get method as above, we have to remember to use the same default value every time
+# - plus it gets a little cumbersome.
+# Let's say we want to keep track of the number of occurrences of individual characters in a string.
+# We might approach it this way:
+
+counts =
+sentence _ "able was I ere I saw elba"
+
+___ c i_ se..
+    i_ c i_ co..
+        co.. c +_ 1
+    e___
+        co.. c _ 1
 #
 # print co..
 # # {'a': 4, 'b': 2, 'l': 2, 'e': 4, ' ': 6, 'w': 2, 's': 2, 'I': 2, 'r': 1}
