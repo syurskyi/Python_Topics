@@ -182,7 +182,7 @@ ___ filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
 #  end filePathWithRange
 
 
-___ filePaths(nodes=None, proxy=False, regex=None, force_match=True):
+___ filePaths(no__=None, proxy=False, regex=None, force_match=True):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
