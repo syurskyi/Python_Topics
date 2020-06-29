@@ -1,0 +1,37 @@
+set cut_paste_input [stack 0]
+version 9.0 v8
+push $cut_paste_input
+NoOp {
+ name PRESETS
+ selected true
+ xpos 380
+ ypos -82
+ addUserKnob {20 Users}
+ addUserKnob {1 preset1 l "Preset #1"}
+ addUserKnob {6 ps1 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode1 l "Set preset #1" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset2 l "Preset #2"}
+ addUserKnob {6 ps2 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode2 l "Set preset #2" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset3 l "Preset #3"}
+ addUserKnob {6 ps3 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode3 l "Set preset #3" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset4 l "Preset #4"}
+ addUserKnob {6 ps4 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode4 l "Set preset #4" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset5 l "Preset #5"}
+ addUserKnob {6 ps5 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode5 l "Set preset #5" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset6 l "Preset #6"}
+ addUserKnob {6 ps6 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode6 l "Set preset #6" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset7 l "Preset #7"}
+ addUserKnob {6 ps7 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode7 l "Set preset #7" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset8 l "Preset #8"}
+ addUserKnob {6 ps8 l PostageStamp -STARTLINE}
+ addUserKnob {22 setnode8 l "Set preset #8" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+ addUserKnob {1 preset9 l "Preset #9"}
+ addUserKnob {6 ps9 l PostageStamp t "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n\tnuke.message(\"No node selected\")\nelse:\n\tname = s.name()\n\tfor i in nuke.allNodes(\"Dot\"):\n\t\tif i\['label'].value() == nuke.thisNode()\['preset%s' % preset].value():\n\t\t\ti.setInput(0, nuke.toNode(name))\n\t\t\ti\['label'].setValue(name)\n\tfor i in nuke.allNodes(\"PostageStamp\"):\n\t\tif i\['label'].value() == nuke.thisNode()\['preset%s' % preset].value():\n\t\t\ti.setInput(0, nuke.toNode(name))\n\t\t\ti\['label'].setValue(name)\n\n\tnuke.thisNode()\['preset%s' % preset].setValue(name)" -STARTLINE}
+ addUserKnob {22 setnode9 l "Set preset #9" T "preset = nuke.thisKnob().name()\[-1]\ns = nuke.selectedNode()\nif not s:\n    nuke.message(\"No node selected\")\n\nelse:\n    name = s.name()\n    nuke.thisNode()\['preset%s' % preset].setValue(name)\n\n" +STARTLINE}
+}

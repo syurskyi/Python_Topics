@@ -1,0 +1,3 @@
+{"version": "1.0",
+ "info": "<h3>Description</h3><p>Toolset manager which allows collaborating and sharing nuke toolsets among artists. You can add and insert toolsets</p><h3>Usage</h3><p>To add a toolset just select the desired nodes and choose 'add toolset...' from the ToolEngine's menubar.\nTo insert a toolset simply navigate to ToolEngine-> choose category -> choose a toolset. For example ToolEngine->3D->3DScene (if there is such a category and such a toolset in your environment.)</p>"
+}
