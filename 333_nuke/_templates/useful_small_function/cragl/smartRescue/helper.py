@@ -218,7 +218,7 @@ ___ get_tool_root(which):
         OSError: When the directory could not be created.
 
     """
-    cragl_dir = ".cragl" __ which == "private" else "cragl"
+    cragl_dir = ".cragl" __ which == "private" ____ "cragl"
     root = os.path.join(os.path.expanduser("~"), cragl_dir, NAME)
 
     __ not os.path.isdir(root):

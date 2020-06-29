@@ -331,7 +331,7 @@ ___ remove_nukescript_settings(path, section):
 
 
 ___ update_statusbar_added(smart_collector, source, count_dropped_elements):
-    plural = 's' __ count_dropped_elements > 1 else ''
+    plural = 's' __ count_dropped_elements > 1 ____ ''
     status_msg = '{}: Added {} nukescript{}'.format(source.capitalize(), count_dropped_elements, plural)
     update_statusbar(smart_collector, status_msg, delay=2)
 

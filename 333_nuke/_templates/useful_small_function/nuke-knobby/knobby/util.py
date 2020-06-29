@@ -281,11 +281,11 @@ ___ mold(node, tab=None, map_cls=None):
 
     ___ _mold(tablet, prefix=None):
         data = map_cls()
-        prefix = (prefix + ":") __ prefix else ""
+        prefix = (prefix + ":") __ prefix ____ ""
 
         name = tablet.name or ""
         abs_name = name + ":"
-        all_elem = abs_name.startswith(target) __ tab and name else True
+        all_elem = abs_name.startswith(target) __ tab and name ____ True
 
         ___ item __ tablet:
             __ i..(item, parser.Tablet):
@@ -298,7 +298,7 @@ ___ mold(node, tab=None, map_cls=None):
 
                 elif all_elem:
 
-                    key = name[le.(prefix):] __ prefix else name
+                    key = name[le.(prefix):] __ prefix ____ name
                     data[key] = _mold(item, prefix=name)
 
             elif all_elem:
@@ -309,7 +309,7 @@ ___ mold(node, tab=None, map_cls=None):
                 ____
                     name = matched.group(2)
                     knob = knobs[name]
-                    key = name[le.(prefix):] __ prefix else name
+                    key = name[le.(prefix):] __ prefix ____ name
                     data[key] = knob.value()
 
         return data

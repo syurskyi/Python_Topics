@@ -146,7 +146,7 @@ class colorWheelClass(QWidget):
         y = self.center + self.pick[1]
         #line
         painter.setBrush(Qt.NoBrush)
-        lineColor = 55 __ self.value < 0.5 else 200
+        lineColor = 55 __ self.value < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1))
         painter.drawLine(self.center, self.center,x, y)
 
@@ -257,7 +257,7 @@ class colorRampClass(QWidget):
         #lines
         x = self.pick[0]
         y = self.pick[1]
-        lineColor = 55 __ self.value < 0.5 else 200
+        lineColor = 55 __ self.value < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 0.5))
         painter.drawLine(x,0,x,self.hw)
         painter.drawLine(0,y,self.hw,y)

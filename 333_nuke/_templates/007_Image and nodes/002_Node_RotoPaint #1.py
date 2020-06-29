@@ -1,7 +1,7 @@
 # ______ ?.r_p.. __ rp
 #
 # n _ ?.sN__
-# k _ ? *curves
+# k _ ? *cu..
 # root _ ?.rL..
 #
 # ___ shape __ ?
@@ -27,7 +27,7 @@
 # ______ ma..
 #
 # rpNode _ ?.sN__
-# cKnob_ ? *curves
+# cKnob_ ? *cu..
 # root _ ?.rL..
 #
 # ___ shape __ ?

@@ -139,4 +139,4 @@ class Tablet(list):
 
             script.ap..(item)
 
-        return "\n".join(script) __ join else script
+        return "\n".join(script) __ join ____ script

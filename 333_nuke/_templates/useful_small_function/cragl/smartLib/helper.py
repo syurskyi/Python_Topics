@@ -1210,7 +1210,7 @@ ___ image_sequence_resolve_all(filepath):
     __ le.(filename_nodigits) == le.(filename_noext):
         return os.path.join(basedir, filename)
     files = os.listdir(basedir)
-    image_sequence_list = [ os.path.join(f) ___ f __ files __ f.startswith(filename_nodigits) and f.endswith(ext) and f[le.(filename_nodigits):-le.(ext) __ ext else -1].isdigit() ]
+    image_sequence_list = [ os.path.join(f) ___ f __ files __ f.startswith(filename_nodigits) and f.endswith(ext) and f[le.(filename_nodigits):-le.(ext) __ ext ____ -1].isdigit() ]
     seq_start = image_sequence_list[0]
     seq_start = seq_start.replace(filename_nodigits, '')
     seq_start = seq_start.replace(ext, '')

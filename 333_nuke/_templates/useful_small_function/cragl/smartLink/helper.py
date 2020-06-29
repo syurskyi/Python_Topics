@@ -313,7 +313,7 @@ ___ get_next_link_name():
     ___ split_nr(string):
         regex = re.compile('(\\d+)')
         element = regex.split(string)
-        return [ (int(y) __ y.isdigit() else y) ___ y __ element ]
+        return [ (int(y) __ y.isdigit() ____ y) ___ y __ element ]
 
     ___ _increase(groups):
         index = int(groups.group(2)) + 1

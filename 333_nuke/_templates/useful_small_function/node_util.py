@@ -73,7 +73,7 @@ ___ gui_disable():
         __ not k.getValue():
             k.setExpression('$gui')
         elif k.toScript() == gui:
-            k.clearAnimated()
+            k.cA..
             k.sV..(0)
 
 

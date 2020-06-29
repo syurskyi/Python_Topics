@@ -159,7 +159,7 @@ ___ sjmToggleDisableExpression():
   ___ mynode __ mynodes:
     myknob = mynode['disable']
     __ myknob.isAnimated():
-      myknob.clearAnimated()
+      myknob.cA..
       myknob.sV..(0)
     ____
       myknob.setExpression('$gui')
