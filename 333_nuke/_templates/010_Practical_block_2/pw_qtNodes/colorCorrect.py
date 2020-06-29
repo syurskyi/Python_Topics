@@ -1,9 +1,9 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
-import math
+______ math
 try:
-    import ?
+    ______ ?
 except:pass
 
 sliderStyle = '''QSlider::groove:vertical {
@@ -111,7 +111,7 @@ widgetStyle = '''
         '''
 class colorWheelClass(QWidget):
     colorChangedSignal = Signal(list)
-    def __init__(self):
+    ___ __init__(self):
         super(colorWheelClass, self).__init__()
         self.hw = 200
         self.padding = 2
@@ -124,8 +124,8 @@ class colorWheelClass(QWidget):
         self.pickerSize = 8
         self.value = 0
 
-    def paintEvent(self, event):
-        if not self.img:
+    ___ paintEvent(self, event):
+        __ not self.img:
             self.img = self.getCircle()
         painter = QPainter()
         painter.begin(self)
@@ -146,7 +146,7 @@ class colorWheelClass(QWidget):
         y = self.center + self.pick[1]
         #line
         painter.setBrush(Qt.NoBrush)
-        lineColor = 55 if self.value < 0.5 else 200
+        lineColor = 55 __ self.value < 0.5 else 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1))
         painter.drawLine(self.center, self.center,x, y)
 
@@ -172,56 +172,56 @@ class colorWheelClass(QWidget):
                             self.pickerSize)
         painter.end()
 
-    def mousePressEvent(self, event):
+    ___ mousePressEvent(self, event):
         self.setPickerPos(event.pos())
         QWidget.mousePressEvent(self, event)
 
-    def mouseMoveEvent(self, event):
+    ___ mouseMoveEvent(self, event):
         self.setPickerPos(event.pos())
         QWidget.mouseMoveEvent(self, event)
 
-    def setPickerPos(self, pos):
+    ___ setPickerPos(self, pos):
         x = pos.x()-self.center
         y = pos.y() - self.center
         distance = math.sqrt((x * x) + (y * y))
-        if distance < self.radius:
+        __ distance < self.radius:
             self.pick = [x, y]
             self.update()
-        else:
+        ____
             over = self.radius / distance
             self.pick = [x*over, y*over]
             self.update()
         self.updateColor()
 
-    def updateColor(self):
+    ___ updateColor(self):
         x = self.pick[0]
         y = self.pick[1]
         distance = math.sqrt((x * x) + (y * y))
         angle = math.degrees(math.atan2(y,x))
-        if angle < 0:
+        __ angle < 0:
             angle += 360
         s = min(1, distance / self.radius)
         self.colorChangedSignal.emit([angle/360,s])
 
-    def sV..(self, v):
+    ___ sV..(self, v):
         self.value = (1000-v) * 0.001
         self.update()
         self.updateColor()
 
-    def getCircle(self):
+    ___ getCircle(self):
         img = QImage(self.hw, self.hw, QImage.Format_ARGB32)
 
         color = QColor()
         ___ y __ ra..(-self.center, self.center):
             ___ x __ ra..(-self.center, self.center):
                 distance = math.sqrt((x * x) + (y * y))
-                if distance > self.radius:
+                __ distance > self.radius:
                     color.setRgb(0.0, 0.0, 0.0)
                     color.setAlpha(0.0)
-                else:
+                ____
                     s = distance / self.radius
                     angle = (math.atan2(y, x) * 180 / math.pi)
-                    if y < 0:
+                    __ y < 0:
                         angle += 360
                     h = angle / 360.0
                     v = 1
@@ -232,7 +232,7 @@ class colorWheelClass(QWidget):
 
 class colorRampClass(QWidget):
     colorChangedSignal = Signal(list)
-    def __init__(self):
+    ___ __init__(self):
         super(colorRampClass, self).__init__()
         self.hw = 200
         self.setFixedSize(QSize(self.hw, self.hw))
@@ -242,8 +242,8 @@ class colorRampClass(QWidget):
         self.img = None
         self.pickerSize = 8
 
-    def paintEvent(self, event):
-        if not self.img:
+    ___ paintEvent(self, event):
+        __ not self.img:
             self.img = self.getRamp()
         painter = QPainter()
         painter.begin(self)
@@ -257,7 +257,7 @@ class colorRampClass(QWidget):
         #lines
         x = self.pick[0]
         y = self.pick[1]
-        lineColor = 55 if self.value < 0.5 else 200
+        lineColor = 55 __ self.value < 0.5 else 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 0.5))
         painter.drawLine(x,0,x,self.hw)
         painter.drawLine(0,y,self.hw,y)
@@ -271,40 +271,40 @@ class colorRampClass(QWidget):
                             self.pickerSize)
         painter.end()
 
-    def updateColor(self):
+    ___ updateColor(self):
         h = self.pick[0]/float(self.hw)
         s = self.pick[1]/float(self.hw)
         self.colorChangedSignal.emit([h,s])
 
-    def sV..(self, v):
+    ___ sV..(self, v):
         self.value = (1000-v) * 0.001
         self.update()
         self.updateColor()
 
-    def mousePressEvent(self, event):
+    ___ mousePressEvent(self, event):
         self.setPickerPos(event.pos())
         QWidget.mousePressEvent(self, event)
 
-    def mouseMoveEvent(self, event):
+    ___ mouseMoveEvent(self, event):
         self.setPickerPos(event.pos())
         QWidget.mouseMoveEvent(self, event)
 
-    def setPickerPos(self, pos):
+    ___ setPickerPos(self, pos):
         x = pos.x()
         y = pos.y()
-        if x < 0:
+        __ x < 0:
             x = 0
-        if x > self.hw:
+        __ x > self.hw:
             x = self.hw
-        if y < 0:
+        __ y < 0:
             y = 0
-        if y > self.hw:
+        __ y > self.hw:
             y = self.hw
         self.pick = [x, y]
         self.update()
         self.updateColor()
 
-    def getRamp(self):
+    ___ getRamp(self):
         img = QImage(self.hw, self.hw, QImage.Format_RGB32)
         color = QColor()
         ___ y __ ra..(self.hw):
@@ -317,7 +317,7 @@ class colorRampClass(QWidget):
 
 
 class colorPickerClass(QWidget):
-    def __init__(self, nukeNode=None, knob=None, label='Empty'):
+    ___ __init__(self, nukeNode=None, knob=None, label='Empty'):
         super(colorPickerClass, self).__init__()
         #window
         self.resize(QSize(250, 340))
@@ -390,12 +390,12 @@ class colorPickerClass(QWidget):
         self.addPicker()
         self.picker.updateColor()
 
-    def addPicker(self):
-        if self.picker:
+    ___ addPicker(self):
+        __ self.picker:
             self.picker.setParent(None)
-        if self.rb1.isChecked():
+        __ self.rb1.isChecked():
             self.picker = colorWheelClass()
-        else:
+        ____
             self.picker = colorRampClass()
 
         self.picker.colorChangedSignal.connect(self.receiveColor)
@@ -404,18 +404,18 @@ class colorPickerClass(QWidget):
         self.picker.sV..(self.value.value())
         self.picker.updateColor()
 
-    def setPickerIcon(self):
+    ___ setPickerIcon(self):
         pix = QPixmap(32,32)
         pix.fill(QColor(Qt.red))
         self.setWindowIcon(QIcon(pix))
 
-    def receiveColor(self, hs):
+    ___ receiveColor(self, hs):
         v = self.value.value()*0.001
         c = QColor()
         c.setHsvF(hs[0], hs[1], v)
         self.updateColor(c)
 
-    def updateColor(self, color):
+    ___ updateColor(self, color):
         self.color.setStyleSheet('''
         QWidget{
             background-color:%s;
@@ -429,16 +429,16 @@ class colorPickerClass(QWidget):
         self.rgb_le.setText('%d,%d,%d' % (color.red(), color.green(), color.blue()))
         #hsv
         self.hsv_le.setText('{0},{1},{2}'.format(*color.getHsv()))
-        if self.nukeNode:
+        __ self.nukeNode:
             knob = self.nukeNode.knob(self.knob)
-            if knob:
+            __ knob:
                 knob.sV..([color.red()/255.0, color.green()/255.0, color.blue()/255.0, 1])
-            else:
+            ____
                 ?.tprint('%s, %s ' % (self.knob, knob))
 
 
 
-def addTab(node):
+___ addTab(node):
     tab = node.findChild(QTabWidget)
     w = QWidget()
     ly = QHBoxLayout()
@@ -455,7 +455,7 @@ def addTab(node):
     node.resize(777, 670)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app = QApplication([])
     s = colorPickerClass()
     s.show()

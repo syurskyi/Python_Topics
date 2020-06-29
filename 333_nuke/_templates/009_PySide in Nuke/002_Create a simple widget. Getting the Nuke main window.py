@@ -1,5 +1,5 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 
 qnuke = QApplication.activeWindow()
@@ -9,8 +9,8 @@ w.show()
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 
 qnuke = QApplication.activeWindow()
@@ -19,14 +19,14 @@ w = QWidget(qnuke, Qt.Tool)
 w.show()
 w.close()
 
-def active():
+___ active():
     print QApplication.activeWindow()
 QTimer.singleShot(2000, active)
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 app = QApplication.instance()
 ___ w __ app.topLevelWidgets():
@@ -37,10 +37,10 @@ ___ w __ app.topLevelWidgets():
     print w.metaObject().className()
 
 
-def getNukeWindow():
+___ getNukeWindow():
     app = QApplication.instance()
     ___ w __ app.topLevelWidgets():
-        if w.metaObject().className() == 'Foundry::UI::DockMainWindow':
+        __ w.metaObject().className() == 'Foundry::UI::DockMainWindow':
             return w
 
 
@@ -49,29 +49,29 @@ qnuke.setWindowTitle('Nuke')
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 
 w = QWidget(getNukeWindow(), Qt.Tool)
 w.show()
 w.close()
 
-def active():
+___ active():
     print QApplication.activeWindow()
 QTimer.singleShot(2000, active)
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 
 w = QWidget(getNukeWindow(), Qt.Tool)
 w.show()
 w.close()
 
-def active():
+___ active():
     w = QWidget(getNukeWindow(), Qt.Tool)
     w.show()
 QTimer.singleShot(2000, active)

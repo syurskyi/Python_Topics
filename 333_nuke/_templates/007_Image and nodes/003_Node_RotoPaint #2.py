@@ -1,5 +1,5 @@
-import ?.rotopaint as rp
-import math
+______ ?.rotopaint as rp
+______ math
 
 rpNode = ?.sN__
 cKnob= rpNode['curves']
@@ -8,7 +8,7 @@ root = cKnob.rootLayer
 ___ shape __ root:
     print shape.name
 
-k.toElement('Rectangle1')
+k.tE..('Rectangle1')
 ############################
 shape = rp.Shape(k)
 root.ap..(shape)
@@ -19,8 +19,8 @@ shape.ap..(rp.AnimControlPoint(500, 2500))
 
 
 ########################################################################################################################
-import ?.rotopaint as rp
-import math
+______ ?.rotopaint as rp
+______ math
 
 roto = ?.nodes.RotoPaint()
 ck = roto['curves']
@@ -36,7 +36,7 @@ rad2 = rad1*0.5
 center = [n.width()/2, n.height()/2]
 angl = 360.0 / (count*2)
 ___ i __ ra..(count*2):
-    r = rad1 if i%2 else rad2
+    r = rad1 __ i%2 else rad2
     x = (math.sin(math.radians(angl*i)) * r)+center[0]
     y = (math.cos(math.radians(angl*i)) * r)+center[1]
     points.ap..([x,y])

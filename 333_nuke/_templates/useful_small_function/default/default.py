@@ -21,10 +21,10 @@
 
 #no need to change anything from here. Edit only if you exactly know what you're doing.
 
-import ?
-import os
-import helper
-import init
+______ ?
+______ os
+______ helper
+______ init
 
 global default_dir
 global knobInit
@@ -35,25 +35,25 @@ knobInit = default_dir+"/init.py"
 ctrl = False
 
 
-def checkExistingInit():
+___ checkExistingInit():
 	'''
 	check if knobInit exists
 	if not create one
 	'''
 	
-	if not os.path.isfile(knobInit):
+	__ not os.path.isfile(knobInit):
 		try:
 			open(knobInit,'w')
-			if ctrl == True:
+			__ ctrl == True:
 					print "created knobInit"
 		except:
-			if ctrl == True:
+			__ ctrl == True:
 					print "couldn't create knobInit"
-	else:
-		if ctrl == True:
+	____
+		__ ctrl == True:
 			print "knobInit exists"
 
-def createDefault():
+___ createDefault():
 	'''
 	create custom knobDefault value
 	'''
@@ -67,7 +67,7 @@ def createDefault():
 	# set 
 	updateKnobInit(n.Class(),k.name(),k.value(),"write")
 
-def resetToDefault():
+___ resetToDefault():
 	'''
 	reset to standard knob default value
 	'''
@@ -79,28 +79,28 @@ def resetToDefault():
 	?.knobDefault("{node}.{knob}".format(node=n.Class(), knob=k.name()), "{val}".format(val=k.defaultValue()))
 	updateKnobInit(n.Class(),k.name(),"","del")
 
-def updateKnobInit(node,knob,value,mode):
+___ updateKnobInit(node,knob,value,mode):
 	'''
 	update knob init.py - delete or append knobDefault depending on mode
 	'''
 
 	knobDefaults = helper.openFileReturnArr(knobInit)
 
-	if mode == "del":
+	__ mode == "del":
 		
 		found = 0
 
 		___ d __ knobDefaults:
-			if "{node}.{knob}".format(node=node, knob=knob) __ d:
+			__ "{node}.{knob}".format(node=node, knob=knob) __ d:
 				found+=1
-				if ctrl == True:
+				__ ctrl == True:
 					print "found in knobInit"
 					print d
 				knobDefaults.remove(d)
-			else:
+			____
 				pass
-		if found < 1:
-			if ctrl == True:
+		__ found < 1:
+			__ ctrl == True:
 				print "not found in knobInit"
 		
 		#write new knobInit
@@ -112,7 +112,7 @@ def updateKnobInit(node,knob,value,mode):
 		except:
 			?.message("an error occured while trying to edit the knobDefaults file")
 
-	if mode == "write":
+	__ mode == "write":
 		#get rid of old knobDefaults of the current knob and write new knobDefault			
 		updateKnobInit(node,knob,"","del")
 		try:

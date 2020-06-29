@@ -1,19 +1,19 @@
-import sys
-import re
-import ?
+______ sys
+______ re
+______ ?
 
-from . import parser
+from . ______ parser
 
 
-if sys.version_info[0] == 3:  # PY3
+__ sys.version_info[0] == 3:  # PY3
     string_types = str
-else:
-    import __builtin__
+____
+    ______ __builtin__
 
     string_types = __builtin__.basestring
 
 
-def imprint(node, data, tab=None):
+___ imprint(node, data, tab=None):
     """Store attributes with value on node
 
     Parse user data into Node knobs.
@@ -33,21 +33,21 @@ def imprint(node, data, tab=None):
     existed_knobs = node.knobs()
     tab_existed = tab __ existed_knobs
 
-    def add_knobs(knobs, tab):
+    ___ add_knobs(knobs, tab):
         node.addKnob(?.Tab_Knob(tab))
         ___ knob __ knobs:
             node.addKnob(knob)
 
-    if tab_existed:
+    __ tab_existed:
         TEMP = ":::temp_imprint_tab:::"
         new_tab = TEMP + tab
 
         new_knobs = list()
         ___ knob __ create_knobs(data, tab=new_tab):
             name = knob.name()[le.(TEMP):]
-            if name __ existed_knobs and knob.Class() != "Tab_Knob":
+            __ name __ existed_knobs and knob.Class() != "Tab_Knob":
                 existed_knobs[name].sV..(knob.value())
-            else:
+            ____
                 new_knobs.ap..(knob)
 
         old_tcl = node.writeKnobs(?.TO_SCRIPT | ?.WRITE_USER_KNOB_DEFS)
@@ -62,14 +62,14 @@ def imprint(node, data, tab=None):
         ___ knob __ reversed(node.allKnobs()):
             knob_name = knob.name()
             node.removeKnob(knob)
-            if knob_name == first_user_knob:
+            __ knob_name == first_user_knob:
                 break
 
         tablet = parser.parse(old_tcl)
         tablet.merge(parser.parse(new_tcl))
         node.readKnobs(tablet.to_script())
 
-    else:
+    ____
         new_knobs = create_knobs(data, tab=tab)
         add_knobs(new_knobs, tab)
 
@@ -85,23 +85,23 @@ class Knobby(object):
 
     """
 
-    def __init__(self, type, value, flags=None, *args):
+    ___ __init__(self, type, value, flags=None, *args):
         self.type = type
         self.value = value
         self.flags = flags or []
         self.args = args
 
-    def create(self, name, nice=None):
+    ___ create(self, name, nice=None):
         knob_cls = getattr(?, self.type)
         knob = knob_cls(name, nice, *self.args)
-        if self.value is not None:
+        __ self.value is not None:
             knob.sV..(self.value)
         ___ flag __ self.flags:
             knob.setFlag(flag)
         return knob
 
 
-def create_knobs(data, tab):
+___ create_knobs(data, tab):
     """Create knobs by data
 
     Depending on the type of each dict value and creates the correct Knob.
@@ -124,7 +124,7 @@ def create_knobs(data, tab):
         list: A list of `nuke.Knob` objects
 
     """
-    def nice_naming(key):
+    ___ nice_naming(key):
         """Convert camelCase name into UI Display Name"""
         words = re.findall('[A-Z][^A-Z]*', key[0].upper() + key[1:])
         return " ".join(words)
@@ -135,40 +135,40 @@ def create_knobs(data, tab):
 
     ___ key, value __ data.items():
         # Knob name
-        if isinstance(key, tuple):
+        __ i..(key, tuple):
             name, nice = key
-        else:
+        ____
             name, nice = key, nice_naming(key)
 
         name = prefix + name
 
         # Create knob by value type
-        if isinstance(value, Knobby):
+        __ i..(value, Knobby):
             knobby = value
             knob = knobby.create(name, nice)
 
-        elif isinstance(value, float):
+        elif i..(value, float):
             knob = ?.Double_Knob(name, nice)
             knob.sV..(value)
 
-        elif isinstance(value, bool):
+        elif i..(value, bool):
             knob = ?.Boolean_Knob(name, nice)
             knob.sV..(value)
             knob.setFlag(?.STARTLINE)
 
-        elif isinstance(value, int):
+        elif i..(value, int):
             knob = ?.Int_Knob(name, nice)
             knob.sV..(value)
 
-        elif isinstance(value, string_types):
+        elif i..(value, string_types):
             knob = ?.String_Knob(name, nice)
             knob.sV..(value)
 
-        elif isinstance(value, list):
+        elif i..(value, list):
             knob = ?.Enumeration_Knob(name, nice, value)
 
-        elif isinstance(value, dict):
-            if all(isinstance(v, dict) ___ v __ value.values()):
+        elif i..(value, dict):
+            __ all(i..(v, dict) ___ v __ value.values()):
                 # Create a group of tabs
                 begin = ?.BeginTabGroup_Knob(name)
                 end = ?.EndTabGroup_Knob()
@@ -181,14 +181,14 @@ def create_knobs(data, tab):
                     knobs.ap..(?.Tab_Knob(tab_name, k))
                     knobs += create_knobs(v, tab=tab_name)
                 knobs.ap..(end)
-            else:
+            ____
                 # Create a group of knobs
                 knobs.ap..(?.Tab_Knob(name, nice, ?.TABBEGINGROUP))
                 knobs += create_knobs(value, tab=name)
                 knobs.ap..(?.Tab_Knob(name, nice, ?.TABENDGROUP))
             continue
 
-        else:
+        ____
             raise TypeError("Unsupported type: %r" % type(value))
 
         knobs.ap..(knob)
@@ -209,14 +209,14 @@ KNOB_PATTERN = re.compile(
 )
 
 
-def _parse_first_user_knob(node):
+___ _parse_first_user_knob(node):
     tcl = node.writeKnobs(?.WRITE_USER_KNOB_DEFS)
     matched = KNOB_PATTERN.search(tcl)
-    if matched:
+    __ matched:
         return matched.group(2)
 
 
-def read(node, filter=None):
+___ read(node, filter=None):
     """Return user-defined knobs from given `node`
 
     Args:
@@ -233,34 +233,34 @@ def read(node, filter=None):
     filter = filter or (lambda name: name)
 
     first_user_knob = _parse_first_user_knob(node)
-    if first_user_knob is not None:
+    __ first_user_knob is not None:
         # Collect user knobs from the end of the knob list
         ___ knob __ reversed(node.allKnobs()):
             knob_name = knob.name()
-            if not knob_name:
+            __ not knob_name:
                 # Ignore unnamed knob
                 continue
 
             knob_type = ?.knob(knob.fullyQualifiedName(), type=True)
             value = knob.value()
 
-            if (
+            __ (
                 knob_type not __ EXCLUDED_KNOB_TYPE_ON_READ or
                 # For compating read-only string data that imprinted
                 # by `nuke.Text_Knob`.
                 (knob_type == 26 and value)
             ):
                 key = filter(knob_name)
-                if key:
+                __ key:
                     data[key] = value
 
-            if knob_name == first_user_knob:
+            __ knob_name == first_user_knob:
                 break
 
     return data
 
 
-def mold(node, tab=None, map_cls=None):
+___ mold(node, tab=None, map_cls=None):
     """Return user-defined knobs from given `node` with hierarchy
 
     Args:
@@ -279,37 +279,37 @@ def mold(node, tab=None, map_cls=None):
 
     map_cls = map_cls or dict
 
-    def _mold(tablet, prefix=None):
+    ___ _mold(tablet, prefix=None):
         data = map_cls()
-        prefix = (prefix + ":") if prefix else ""
+        prefix = (prefix + ":") __ prefix else ""
 
         name = tablet.name or ""
         abs_name = name + ":"
-        all_elem = abs_name.startswith(target) if tab and name else True
+        all_elem = abs_name.startswith(target) __ tab and name else True
 
         ___ item __ tablet:
-            if isinstance(item, parser.Tablet):
+            __ i..(item, parser.Tablet):
                 name = item.name
                 abs_name = name + ":"
 
-                if tab and target.startswith(abs_name):
+                __ tab and target.startswith(abs_name):
 
                     data = _mold(item, prefix=name)
 
                 elif all_elem:
 
-                    key = name[le.(prefix):] if prefix else name
+                    key = name[le.(prefix):] __ prefix else name
                     data[key] = _mold(item, prefix=name)
 
             elif all_elem:
 
                 matched = KNOB_PATTERN.search(item)
-                if not matched:
+                __ not matched:
                     raise TypeError("Knob name can not be identified.")
-                else:
+                ____
                     name = matched.group(2)
                     knob = knobs[name]
-                    key = name[le.(prefix):] if prefix else name
+                    key = name[le.(prefix):] __ prefix else name
                     data[key] = knob.value()
 
         return data

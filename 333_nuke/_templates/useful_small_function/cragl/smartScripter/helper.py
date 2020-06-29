@@ -1,28 +1,28 @@
 """Helper functionality for this package."""
 
 # Import built-in modules
-import logging
-import json
-import os
-import subprocess
-import sys
+______ logging
+______ json
+______ os
+______ subprocess
+______ sys
 
 # Import third-party modules
-import ?  # pylint: disable=import-error
+______ ?  # pylint: disable=import-error
 
 # PySide import switch
 try:
-    from PySide import QtCore
+    from PySide ______ QtCore
 except ImportError:
-    from PySide2 import QtCore
+    from PySide2 ______ QtCore
 
 # Import local modules
-from smartScripter import model
-from smartScripter.constants import PY, TCL, NEW_STACK
-from smartScripter.info import __product__
+from smartScripter ______ model
+from smartScripter.constants ______ PY, TCL, NEW_STACK
+from smartScripter.info ______ __product__
 
 
-def load_icons():
+___ load_icons():
     """Scan icons directory and return paths dict for all icons.
 
     Scans the icons directory and creates an icon dictionary
@@ -51,7 +51,7 @@ def load_icons():
     return icons
 
 
-def execute(language, command):
+___ execute(language, command):
     """Execute the given command using the given language.
 
     Args:
@@ -60,7 +60,7 @@ def execute(language, command):
 
     """
     try:
-        if language == PY:
+        __ language == PY:
             # The command comes from the current user itself, which makes
             # running exec in here not so evil.
             exec command  # pylint: disable=exec-used
@@ -70,7 +70,7 @@ def execute(language, command):
         raise ValueError
 
 
-def set_style_sheet(widget, style="styles.qss"):
+___ set_style_sheet(widget, style="styles.qss"):
     """Apply css style sheet to given widget.
 
     Args:
@@ -83,12 +83,12 @@ def set_style_sheet(widget, style="styles.qss"):
     styles = os.path.join(this_dir, "styles", style)
     styles = os.path.normpath(styles)
 
-    if os.path.isfile(styles):
+    __ os.path.isfile(styles):
         with open(styles) as file_:
             widget.setStyleSheet(file_.read())
 
 
-def get_session_icons(ext=".png"):
+___ get_session_icons(ext=".png"):
     """Get all images from all paths in Nuke's plugin path with extension.
 
     Args:
@@ -100,21 +100,21 @@ def get_session_icons(ext=".png"):
             of Nuke's plugin path that contain the given file extension.
 
     """
-    paths = [path ___ path __ ?.pluginPath() if os.path.isdir(path)]
+    paths = [path ___ path __ ?.pluginPath() __ os.path.isdir(path)]
 
     icon_dir = os.path.join(os.path.dirname(__file__), "icons")
     paths.ap..(icon_dir)
 
     icons = []
     ___ path __ paths:
-        _icons = (os.path.join(path, image) ___ image __ os.listdir(path) if
+        _icons = (os.path.join(path, image) ___ image __ os.listdir(path) __
                   image.endswith(ext))
         icons.extend(_icons)
 
     return icons
 
 
-def get_logger():
+___ get_logger():
     """Get logger object on the fly.
 
     Returns:
@@ -124,7 +124,7 @@ def get_logger():
     return logging.getLogger(__name__)
 
 
-def add_to_history(command):
+___ add_to_history(command):
     """Add the given command to the history.
 
     Args:
@@ -149,7 +149,7 @@ def add_to_history(command):
     return model.save(settings)
 
 
-def clear_history():
+___ clear_history():
     """Clear all history commands from the settings file.
 
     Returns:
@@ -162,7 +162,7 @@ def clear_history():
     return settings
 
 
-def clear_combo(combo):
+___ clear_combo(combo):
     """Ensure that the given combo has no elements.
 
     Using a single 'clear' does sometimes not clear all elements. Here we force
@@ -175,13 +175,13 @@ def clear_combo(combo):
 
     """
     while combo.count() > 2:
-        if combo.currentText == NEW_STACK:
+        __ combo.currentText == NEW_STACK:
             continue
-        else:
+        ____
             combo.removeItem(0)
 
 
-def unique_elements_preserve_order(sequence):
+___ unique_elements_preserve_order(sequence):
     """Remove all duplicated from list while keeping order.
 
     Args:
@@ -194,27 +194,27 @@ def unique_elements_preserve_order(sequence):
     """
     seen = set()
     seen_add = seen.add
-    return [x ___ x __ sequence if not (x __ seen or seen_add(x))]
+    return [x ___ x __ sequence __ not (x __ seen or seen_add(x))]
 
 
-def open_website(url):
+___ open_website(url):
     """Open browser locating to given url."""
-    if sys.platform == 'win32':
+    __ sys.platform == 'win32':
         # Under windows, the os module has this member.
         os.startfile(url)  # pylint: disable=no-member
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
-    else:
+    ____
         try:
             subprocess.Popen(['xdg-open', url])
         except OSError:
             msg = ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".format(url))
-            from smartScripter import dialogs
+            from smartScripter ______ dialogs
             dialogs.show_message_box(None, msg)
 
 
-def assemble_command_path(command_name):
+___ assemble_command_path(command_name):
     """Assemble command path from current settings and command name."""
 
     settings = model.load()
@@ -224,7 +224,7 @@ def assemble_command_path(command_name):
     return os.path.join(stack_root, current_stack, command_name)
 
 
-def get_all_stacks():
+___ get_all_stacks():
     """Get all stack folders.
 
     Returns:
@@ -235,10 +235,10 @@ def get_all_stacks():
     stack_root = settings["stack_root"]
 
     return [name ___ name __ os.listdir(stack_root)
-            if os.path.isdir(os.path.join(stack_root, name))]
+            __ os.path.isdir(os.path.join(stack_root, name))]
 
 
-def load_tooltips(parent, section):
+___ load_tooltips(parent, section):
     """Set tooltip for given parent from given section.
 
     Args:
@@ -250,7 +250,7 @@ def load_tooltips(parent, section):
     this_dir = os.path.dirname(__file__)
     tooltips_file = os.path.join(this_dir, "data", "tooltips.json")
     tooltips_file = os.path.normpath(tooltips_file)
-    if not os.path.isfile(tooltips_file):
+    __ not os.path.isfile(tooltips_file):
         return
 
     # Parse tool tips file.
@@ -263,12 +263,12 @@ def load_tooltips(parent, section):
     # Find the tooltip.
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ element __ ttdata[section]:
-            if element["tt"] == widget.property("tt"):
+            __ element["tt"] == widget.property("tt"):
                 widget.setToolTip("<strong>{}</strong><br />{}".format(
                     element["ttt"], element["ttc"]))
 
 
-def get_tool_root(which):
+___ get_tool_root(which):
     """Get public/private root directory path based on 'which'.
 
     Create directory if it does not exist.
@@ -280,14 +280,14 @@ def get_tool_root(which):
         str: Absolute path of public/private tool root.
 
     """
-    if which == "private":
+    __ which == "private":
         cragl_dir = ".cragl"
-    else:
+    ____
         cragl_dir = "cragl"
 
     root = os.path.join(os.path.expanduser("~"), cragl_dir, __product__)
 
-    if not os.path.isdir(root):
+    __ not os.path.isdir(root):
         try:
             os.makedirs(root)
         except IOError as error:
@@ -299,7 +299,7 @@ def get_tool_root(which):
 SESSION_ICONS = get_session_icons()
 
 
-def get_icon(icon):
+___ get_icon(icon):
     """Get absolute path of icon from session icons.
 
     Args:
@@ -311,17 +311,17 @@ def get_icon(icon):
 
     """
     try:
-        if not icon:
+        __ not icon:
             raise IndexError
         return [path ___ path __ SESSION_ICONS
-                if path.endswith("{}.png".format(icon))][0]
+                __ path.endswith("{}.png".format(icon))][0]
     except IndexError:
         return load_icons()["command"]
 
 
-def reveal_in_explorer(path):
+___ reveal_in_explorer(path):
     """Reveal the given path in the explorer."""
-    if sys.platform == 'darwin':
+    __ sys.platform == 'darwin':
         subprocess.check_call(['open', '--', path])
     elif sys.platform == 'linux2':
         subprocess.Popen(['xdg-open', path])
@@ -330,7 +330,7 @@ def reveal_in_explorer(path):
             subprocess.check_call(['explorer', path])
         # We want to catch all errors in here explicitly.
         except Exception as error:  # pylint: disable=broad-except
-            from smartScripter import dialogs
+            from smartScripter ______ dialogs
             message = ("Unable to reveal the directory. Please open the "
                        "directory manually in your explorer. "
                        "{}".format(error.message))

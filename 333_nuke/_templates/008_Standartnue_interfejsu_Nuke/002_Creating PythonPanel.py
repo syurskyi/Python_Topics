@@ -1,8 +1,8 @@
-import nukescripts
+______ nukescripts
 
 
 class simplePanel(nukescripts.PythonPanel):
-    def __init__(self):
+    ___ __init__(self):
         nukescripts.PythonPanel.__init__(self, 'Simple Panel', 'pw_simplePanel')
         self.menu = ?.Enumeration_Knob('menu', 'Menu', ['all', 'none', 'selected'])
         self.addKnob(self.menu)
@@ -13,8 +13,8 @@ class simplePanel(nukescripts.PythonPanel):
         self.btn.setFlag(?.STARTLINE)
         self.addKnob(self.btn)
 
-    def knobChanged(self, knob):
-        if knob is self.btn:
+    ___ knobChanged(self, knob):
+        __ knob is self.btn:
             print self.menu.value()
 
 
@@ -32,7 +32,7 @@ p.addToPane(pane)
 
 
 # add to menu
-def addPanel():
+___ addPanel():
     panel = simplePanel()
     pane = ?.getPaneFor('DAG.1')
     return panel.addToPane(pane)

@@ -86,14 +86,14 @@ Advanced:
 """
 
 # Import built-in modules
-import datetime
-import os
+______ datetime
+______ os
 
 # Import third-party modules
-import ?  # pylint: disable=import-error
+______ ?  # pylint: disable=import-error
 
 # Import local modules
-from smartRescue.base_steps import NodeStep
+from smartRescue.base_steps ______ NodeStep
 
 # Template to use for info creation.
 _TEMPLATE = """Report for {working_file_name}
@@ -127,7 +127,7 @@ class ScriptInfo(NodeStep):
     )
 
     @property
-    def date(self):
+    ___ date(self):
         """Create representation of current date and time.
 
         Returns:
@@ -138,7 +138,7 @@ class ScriptInfo(NodeStep):
         return "{:%Y/%m/%d - %H:%M:%S}".format(datetime.datetime.now())
 
     @staticmethod
-    def number_nodes(recursive=False):
+    ___ number_nodes(recursive=False):
         """Return the total number of nodes.
 
         Args:
@@ -152,7 +152,7 @@ class ScriptInfo(NodeStep):
         return le.(?.allNodes(recurseGroups=recursive))
 
     @staticmethod
-    def frame_range():
+    ___ frame_range():
         """Get the first and last frame of the working file.
 
         Returns:
@@ -163,7 +163,7 @@ class ScriptInfo(NodeStep):
         last_frame = int(?.root()["last_frame"].value())
         return first_frame, last_frame
 
-    def root_values(self):
+    ___ root_values(self):
         """Get values from the nuke.root.
 
         Returns:
@@ -176,7 +176,7 @@ class ScriptInfo(NodeStep):
                 )
 
         """
-        def _format_value(knob_name, knob):
+        ___ _format_value(knob_name, knob):
             """Format certain knobs to human readable.
 
             Some knobs are not human readable, like the format knob. In that
@@ -192,7 +192,7 @@ class ScriptInfo(NodeStep):
                 str: Human readable values of given knob.
 
             """
-            if knob_name == "format":
+            __ knob_name == "format":
                 format_ = "{} ({}x{} {})"
                 format_knob = knob.value()
                 return format_.format(format_knob.name(), format_knob.width(),
@@ -206,7 +206,7 @@ class ScriptInfo(NodeStep):
         root_values = []
         ___ knob_name __ self.setup["root_info"]:
             knob = ?.root().knob(knob_name)
-            if not knob:
+            __ not knob:
                 continue
 
             value = _format_value(knob_name, knob)
@@ -214,7 +214,7 @@ class ScriptInfo(NodeStep):
 
         return tuple(root_values)
 
-    def footage_paths(self):
+    ___ footage_paths(self):
         """Create list of tuples for used footage in the working file.
 
         This collects recursively, meaning including footage paths of nodes
@@ -236,7 +236,7 @@ class ScriptInfo(NodeStep):
         ___ node __ ?.allNodes(recurseGroups=True):
             ___ knob_name __ self.path_knobs:
                 path_knob = node.knob(knob_name)
-                if not path_knob:
+                __ not path_knob:
                     continue
                 path = path_knob.evaluate() or "---"
                 footage.ap..((node.name(), path))
@@ -244,7 +244,7 @@ class ScriptInfo(NodeStep):
         return tuple(footage)
 
     @staticmethod
-    def all_node_classes():
+    ___ all_node_classes():
         """Get a set of all node classes
 
         Returns:
@@ -254,7 +254,7 @@ class ScriptInfo(NodeStep):
         all_nodes = ?.allNodes(recurseGroups=True)
         return sorted(set(node.Class() ___ node __ all_nodes))
 
-    def len_nodes_by_class(self):
+    ___ len_nodes_by_class(self):
         """Get the number of nodes by class.
 
         This will search for nodes recursively, meaning respecting nodes being
@@ -274,22 +274,22 @@ class ScriptInfo(NodeStep):
         """
         stats = []
         list_node_classes = self.setup["number_nodes_by_class"]
-        if list_node_classes:
+        __ list_node_classes:
             node_classes = list_node_classes
-        else:
+        ____
             node_classes = self.all_node_classes()
 
         ___ node_class __ sorted(node_classes):
             counter = 0
             ___ node __ ?.allNodes(recurseGroups=True):
-                if node.Class() == node_class:
+                __ node.Class() == node_class:
                     counter += 1
             stats.ap..((node_class, counter))
 
         return tuple(stats)
 
     @staticmethod
-    def tuple_to_human_readable(tuple_):
+    ___ tuple_to_human_readable(tuple_):
         """Return human readable string format of given tuple.
 
         Args:
@@ -303,7 +303,7 @@ class ScriptInfo(NodeStep):
         """
         return "{}: {}".format(tuple_[0], tuple_[1])
 
-    def process(self):
+    ___ process(self):
         """Generate the working file info."""
         copy_basename = "{}_info.txt".format(self.basename)
         info_path = os.path.join(self.parent_dir, copy_basename)

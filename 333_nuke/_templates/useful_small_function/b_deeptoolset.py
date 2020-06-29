@@ -9,9 +9,9 @@ __email__ = "boris.vfx@outlook.com"
 #######################################################################################################################
 
 
-import ?
-import nukescripts
-import itertools
+______ ?
+______ nukescripts
+______ itertools
 
 
 #######################################################################################################################
@@ -41,7 +41,7 @@ DOT_COUNT = 0
 #  FUNCTION DEFINITIONS
 
 
-def select_node(node_class):
+___ select_node(node_class):
     """
     This function makes sure you select a node of a given class.
     :param node_class: passed class node.
@@ -51,10 +51,10 @@ def select_node(node_class):
 
     try:
         node = ?.sN__
-        if node.Class() == class_:
+        __ node.Class() == class_:
             node['selected'].sV..(False)
             return node
-        else:
+        ____
             message = "Please, select a {} Node".format(class_)
             ?.message(message)
 
@@ -63,7 +63,7 @@ def select_node(node_class):
         ?.message(message)
 
 
-def find_dependencies(node_class):
+___ find_dependencies(node_class):
     """
     This function will return a list with the dependencies of the selected node.
     :param node_class: passed class node.
@@ -75,7 +75,7 @@ def find_dependencies(node_class):
     return dep_node
 
 
-def get_node_position(node):
+___ get_node_position(node):
     """
     This function will return the position of a node.
     :param node: a nuke node object.
@@ -86,7 +86,7 @@ def get_node_position(node):
     return pos_dict
 
 
-def get_righthandside_position(node_list):
+___ get_righthandside_position(node_list):
     """
     This function will return the position of the right hand side node of a selection of nodes.
     :param node_list: a list of nuke nodes.
@@ -109,7 +109,7 @@ def get_righthandside_position(node_list):
     return min_x_pos,max_x_pos,avg_y_pos
 
 
-def create_node_with_position(nodename,connect_node,x=0,y=0):
+___ create_node_with_position(nodename,connect_node,x=0,y=0):
      """
      This function will create a node in a given position and connect it to a given node.
      :param nodename: nuke node class to be created.
@@ -129,7 +129,7 @@ def create_node_with_position(nodename,connect_node,x=0,y=0):
      return node 
 
 
-def create_node_with_position_simple(nodename,x=0,y=0):
+___ create_node_with_position_simple(nodename,x=0,y=0):
      """
      This function will create a node in a given position.
      :param nodename: nuke node class to be created.
@@ -147,7 +147,7 @@ def create_node_with_position_simple(nodename,x=0,y=0):
      return node
 
 
-def d_dot_parent(parentname,nodename,connect_node,x=0,y=0):
+___ d_dot_parent(parentname,nodename,connect_node,x=0,y=0):
     """
     This functions will create a custom "dDot" node.
     :param parentname: name of the dDot.
@@ -170,7 +170,7 @@ def d_dot_parent(parentname,nodename,connect_node,x=0,y=0):
     return newDot
 
 
-def build_depth_setup(node_list):
+___ build_depth_setup(node_list):
     """
     This functions will create a custom depth from deep setup.
     :param node_list: a list of nuke nodes.
@@ -215,7 +215,7 @@ def build_depth_setup(node_list):
     return
 
 
-def get_asset_name(sourcenode):
+___ get_asset_name(sourcenode):
     """
     This functions will retrieve the asset name found in the publish info / layer knob.
     :param sourcenode:
@@ -226,23 +226,23 @@ def get_asset_name(sourcenode):
     dep_nodes = ?.dependencies(source_node)
     
     ___ node __ dep_nodes:
-        if node.Class() == target_class:
+        __ node.Class() == target_class:
             try: 
                 asset_name = node["sg_layer"].value()
-                if asset_name == "":
+                __ asset_name == "":
                     default_asset_name =  "element_01"
                     return default_asset_name
-                else:
+                ____
                     return asset_name
             except ValueError:
                 print "no asset name found"
                 asset_name = "element_01"    
                 return asset_name
-        else:
+        ____
             return get_asset_name(node.name())
 
 
-def create_deep_holdout_setup(node_class):
+___ create_deep_holdout_setup(node_class):
     """
     This functions will create a custom deep holdout setup.
     :param node_class: a nuke class node.
@@ -289,7 +289,7 @@ def create_deep_holdout_setup(node_class):
     string = str.lower(asset_name + "_" + "holdout") + "_" + str(DOT_COUNT)
 
     
-    if ?.toNode(string):
+    __ ?.toNode(string):
 
         DOT_COUNT += 1
         string = str.lower(asset_name + "_" + "holdout") + "_" + str(DOT_COUNT)
@@ -313,7 +313,7 @@ def create_deep_holdout_setup(node_class):
     return deep_holdout
 
 
-def check_upstream_match(sourcenode,targetnode):
+___ check_upstream_match(sourcenode,targetnode):
     """
     This function will try to match a given upstream node class match.
     :param sourcenode: a source nuke node.
@@ -324,16 +324,16 @@ def check_upstream_match(sourcenode,targetnode):
     target_node = ?.toNode(targetnode)
     dep_nodes = ?.dependencies(source_node)
     
-    if target_node __ dep_nodes:
+    __ target_node __ dep_nodes:
         print "MATCHHHH!"
         return True
-    else:
+    ____
         print "KEEP LOOKING"
         ___ node __ dep_nodes:
             return check_upstream_match(node.name(),targetnode)
 
 
-def iterate_deep_holdout_setup():
+___ iterate_deep_holdout_setup():
     """
     This function will iterate over a set of DeepRecolor nodes and create a holdout setup for each.
     :return: none
@@ -345,10 +345,10 @@ def iterate_deep_holdout_setup():
 
     ___ i __ ?.selectedNodes():
 
-        if i.Class() != "DeepRecolor":
+        __ i.Class() != "DeepRecolor":
             ?.message("Please, select only DeepRecolor Nodes")
             return
-        else:    
+        ____
             names.ap..(i.name())
             i['selected'].sV..(False)
 
@@ -369,7 +369,7 @@ def iterate_deep_holdout_setup():
         deep_merge = depp[1].name()
 
         ___ name __ names:
-           if check_upstream_match(ho,name):
+           __ check_upstream_match(ho,name):
                 print "ALELUYA"
            elif not check_upstream_match(ho,name):
                 ?.toNode(deep_merge).setInput(counter,?.toNode(name))
@@ -379,7 +379,7 @@ def iterate_deep_holdout_setup():
 # UBER PASS #######################################################################################################
 
 
-def get_middle_position():
+___ get_middle_position():
     """
     This function will compute a set of coordinates of convenience.
     :return: a set of coordinates.
@@ -403,7 +403,7 @@ def get_middle_position():
     return min_x_pos,offset,avg_y_pos
 
 
-def create_rgba_deep_recolor(channels):
+___ create_rgba_deep_recolor(channels):
     """
     This function will compute a set of coordinates of convenience.
     :param channels:
@@ -432,7 +432,7 @@ def create_rgba_deep_recolor(channels):
     return new_deep_recolor_names
 
 
-def uberpass_function():
+___ uberpass_function():
     """
     This function will deep merge all elemenents together, thus creating the so called uber pass.
 
@@ -482,7 +482,7 @@ def uberpass_function():
 # DEPTH FOR DEFOCUS #######################################################################################################
 
 
-def depth_for_defocus():
+___ depth_for_defocus():
     """
     This function will create a custom depth from deep setup.
     """
@@ -526,7 +526,7 @@ def depth_for_defocus():
 # SPLIT LAYERS #######################################################################################################
 
 
-def splitLayers( node ):
+___ splitLayers( node ):
 
     '''
     Splits each and every layer from the selected node into their own pipes
@@ -541,12 +541,12 @@ def splitLayers( node ):
         layer_name = each.split( '.' )[0]
         tmp = []
         ___ channel __ ch:
-            if channel.startswith( layer_name ) == True:
+            __ channel.startswith( layer_name ) == True:
                 tmp.ap..( channel )
-        if le.( tmp ) < 4:
+        __ le.( tmp ) < 4:
             ___ i __ ra..( 4 - le.( tmp ) ):
                 tmp.ap..( layer_name + ".white" )
-        if tmp not __ layers:
+        __ tmp not __ layers:
             layers.ap..( tmp )
             
     ___ each __ layers:
@@ -556,24 +556,24 @@ def splitLayers( node ):
         ch3 = each[2].split( '.' )[1]
         ch4 = each[3].split( '.' )[1]
         
-        if ch1 not __ valid_channels:
+        __ ch1 not __ valid_channels:
             ch1 = "red red"
-        else:
+        ____
             ch1 = '%s %s' % ( ch1, ch1 )
             
-        if ch2 not __ valid_channels:
+        __ ch2 not __ valid_channels:
             ch2 = "green green"
-        else:
+        ____
             ch2 = '%s %s' % ( ch2, ch2 )
             
-        if ch3 not __ valid_channels:
+        __ ch3 not __ valid_channels:
             ch3 = "blue blue"
-        else:
+        ____
             ch3 = '%s %s' % ( ch3, ch3 )
             
-        if ch4 not __ valid_channels:
+        __ ch4 not __ valid_channels:
             ch4 = "alpha alpha"
-        else:
+        ____
             ch4 = '%s %s' % ( ch4, ch4 )
             
         prefs = "in %s %s %s %s %s" % (layer, ch1, ch2, ch3, ch4)
@@ -588,7 +588,7 @@ def splitLayers( node ):
 # AUTO DDOT COMP  #######################################################################################################
 
 
-def d_dot_connect(nodename,connect_node,x=0,y=0):
+___ d_dot_connect(nodename,connect_node,x=0,y=0):
     """
 
     :param nodename: nuke node class to be created.
@@ -611,17 +611,17 @@ def d_dot_connect(nodename,connect_node,x=0,y=0):
     return dot
 
 
-def gather_holdout_dot_names():
+___ gather_holdout_dot_names():
     """
     This function will get all names of selected Ddots.
     :return: a list of node names.
     """
-    holdout_dots_names = [node['name'].value() ___ node __ ?.selectedNodes() if node['parent']]
+    holdout_dots_names = [node['name'].value() ___ node __ ?.selectedNodes() __ node['parent']]
     
     return holdout_dots_names
 
 
-def find_holdout_source_elements(houldout_names):
+___ find_holdout_source_elements(houldout_names):
     """
     This function will get all names of selected Ddots.
     :param houldout_names: a list of node names.
@@ -631,15 +631,15 @@ def find_holdout_source_elements(houldout_names):
         
     ___ name __ houldout_names:
         _ = "_".join(name.split('_')[:-2])
-        if ?.toNode(_):
+        __ ?.toNode(_):
             houldout_processed_list.ap..(_)
-        else:
+        ____
             print "no corresponding element found for {}".format(name)
     
     return houldout_processed_list
 
 
-def create_and_connect_child_dots(holdouts,color):
+___ create_and_connect_child_dots(holdouts,color):
     """
 
     :param holdouts:
@@ -655,7 +655,7 @@ def create_and_connect_child_dots(holdouts,color):
 
     ___ f,b __ itertools.izip(holdouts,color):
 
-        if counter == 0 :
+        __ counter == 0 :
 
             pos_f_x = get_node_position(?.toNode(f))["x_pos"]
             pos_f_y = get_node_position(?.toNode(f))["y_pos"]
@@ -672,7 +672,7 @@ def create_and_connect_child_dots(holdouts,color):
             multiply_list.ap..(multiply)
             counter += 1
 
-        else:
+        ____
 
             adder += 1000
             adder_x += - 1000  
@@ -695,14 +695,14 @@ def create_and_connect_child_dots(holdouts,color):
     
     ___ i __ ra..(le.(multiply_list)):
 
-        if counter == 0:
+        __ counter == 0:
 
             x = get_node_position(multiply_list[i])["x_pos"]
             y = get_node_position(multiply_list[i])["y_pos"]
 
             counter += 1
         
-        else:
+        ____
             
             x = get_node_position(multiply_list[i])["x_pos"]
             y = get_node_position(multiply_list[i])["y_pos"]
@@ -711,7 +711,7 @@ def create_and_connect_child_dots(holdouts,color):
             merge['operation'].sV..('disjoint-over')
             holder.ap..(merge)
 
-            if le.(holder) == 1:
+            __ le.(holder) == 1:
                 merge.setInput(0,multiply_list[i-1])
                 merge.setInput(1,multiply_list[i])
                 
@@ -726,7 +726,7 @@ def create_and_connect_child_dots(holdouts,color):
 
 class modalPanel(nukescripts.PythonPanel):
 
-    def __init__(self):
+    ___ __init__(self):
 
         nukescripts.PythonPanel.__init__(self,"b_deep toolset")
         #CREATE KNOBS
@@ -741,11 +741,11 @@ class modalPanel(nukescripts.PythonPanel):
         #SET KNOB DEFAULT VALUES
         self.get_frame_range()
 
-    def giveFrameRangeValue(self):
+    ___ giveFrameRangeValue(self):
         return self.frame_range.value()
 
-    def get_frame_range(self):
-        if self.giveFrameRangeValue() == "global":
+    ___ get_frame_range(self):
+        __ self.giveFrameRangeValue() == "global":
             first_frame = ?.root().firstFrame()
             last_frame = ?.root().lastFrame()
             txt = str(int(first_frame)) + '-' + str(int(last_frame))
@@ -761,8 +761,8 @@ class modalPanel(nukescripts.PythonPanel):
             self.frame_display.sV..("")
             print "here the user decides"
 
-    def knobChanged(self,knob):
-        if knob.name() == "fRange":
+    ___ knobChanged(self,knob):
+        __ knob.name() == "fRange":
             self.get_frame_range()
                       
 
@@ -772,7 +772,7 @@ class modalPanel(nukescripts.PythonPanel):
 
 
 
-if __name__ ==  "__main__":
+__ __name__ ==  "__main__":
     #uberpass_function()
     iterate_deep_holdout_setup()
     #depth_for_defocus()

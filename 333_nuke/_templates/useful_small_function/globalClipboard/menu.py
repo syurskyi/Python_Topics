@@ -1,14 +1,14 @@
 # COSA TOOLS MENU
 
-def call_clipboard_help():
+___ call_clipboard_help():
     ?.message("Please use global copy and paste buttons below")
 
-def call_global_clipboard_copy():
-    import global_clipboard
+___ call_global_clipboard_copy():
+    ______ global_clipboard
     global_clipboard.global_clipboard().copy()
 
-def call_global_clipboard_paste():
-    import global_clipboard_paste
+___ call_global_clipboard_paste():
+    ______ global_clipboard_paste
     global_clipboard_paste.main()
 
 clipboard = ?.menu("Nodes").addMenu("Global Clipboard", icon="globalClipboard.png")

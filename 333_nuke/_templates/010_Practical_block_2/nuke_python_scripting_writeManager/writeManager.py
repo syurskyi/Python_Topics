@@ -1,7 +1,7 @@
-import ?, nukescripts
+______ ?, nukescripts
 
 class writeManagerClass(nukescripts.PythonPanel):
-    def __init__(self):
+    ___ __init__(self):
         nukescripts.PythonPanel.__init__(self, 'Write Manager', 'pw+writemanager')
         self.nodes = {x.name():x ___ x __ ?.allNodes('Write')}
         ___ name, node __ self.nodes.items():
@@ -17,20 +17,20 @@ class writeManagerClass(nukescripts.PythonPanel):
         self.start.setFlag(?.STARTLINE)
         self.addKnob(self.start)
 
-    def knobChanged(self, knob):
+    ___ knobChanged(self, knob):
         node = knob.name().split('-')[0]
-        if node __ self.nodes:
+        __ node __ self.nodes:
             node = self.nodes[node]
             k = knob.name().split('-')[1]
-            if k == 'file':
+            __ k == 'file':
                 node['file'].sV..(knob.value())
             elif k == 'disable':
                 node['disable'].sV..(not knob.value())
             return
-        if knob is self.start:
+        __ knob is self.start:
             print 'RENDER'
 
 
-def show():
+___ show():
     w = writeManagerClass()
     w.show()

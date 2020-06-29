@@ -1,14 +1,14 @@
-import ?
-import timelog
-import timelog_viewer
+______ ?
+______ timelog
+______ timelog_viewer
 
 timelog.Timelog().start_thread()
 
-def preset_nodes(val):
+___ preset_nodes(val):
 
     preset_node = ?.toNode("PRESETS")
 
-    if not preset_node:
+    __ not preset_node:
         ?.message("No preset node found!")
         return
 
@@ -16,9 +16,9 @@ def preset_nodes(val):
     is_postage_stamp = preset_node["ps%s" % val].value()
     target_node = ?.toNode(target_preset.value())
 
-    if is_postage_stamp:
+    __ is_postage_stamp:
         _input = ?.createNode("PostageStamp")
-    else:
+    ____
         _input = ?.createNode("Dot")
         _input['note_font_color'].sV..(4278190335)
         _input['note_font_size'].sV..(15)

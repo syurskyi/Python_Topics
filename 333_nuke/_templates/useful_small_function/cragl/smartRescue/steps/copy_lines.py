@@ -60,16 +60,16 @@ Advanced:
 """
 
 # Import built-in modules
-import os
+______ os
 
 # Import local modules
-from smartRescue.base_steps import BaseStep
+from smartRescue.base_steps ______ BaseStep
 
 
 class CopyLines(BaseStep):
     """Copy lines between first_line and last_line to backup file."""
 
-    def process(self):
+    ___ process(self):
         """Copy lines to backup file."""
         first_line = self.setup["first_line"]
         last_line = self.setup["last_line"]

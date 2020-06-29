@@ -1,10 +1,10 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
-def getMainWindow():
+___ getMainWindow():
     app = QApplication.instance()
     ___ widget __ app.topLevelWidgets():
-        if widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
+        __ widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
             return widget
 
 qnuke = getMainWindow()

@@ -8,16 +8,16 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
+from PySide2.QtCore ______ (QCoreApplication, QMetaObject, QObject, QPoint,
     QRect, QSize, QUrl, Qt)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QFont,
+from PySide2.QtGui ______ (QBrush, QColor, QConicalGradient, QFont,
     QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
     QRadialGradient)
-from PySide2.QtWidgets import *
+from PySide2.QtWidgets ______ *
 
 class Ui_TimelogViewer(object):
-    def setupUi(self, TimelogViewer):
-        if TimelogViewer.objectName():
+    ___ setupUi(self, TimelogViewer):
+        __ TimelogViewer.objectName():
             TimelogViewer.setObjectName(u"TimelogViewer")
         TimelogViewer.resize(491, 459)
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Ignored)
@@ -73,7 +73,7 @@ class Ui_TimelogViewer(object):
         QMetaObject.connectSlotsByName(TimelogViewer)
     # setupUi
 
-    def retranslateUi(self, TimelogViewer):
+    ___ retranslateUi(self, TimelogViewer):
         TimelogViewer.setWindowTitle(QCoreApplication.translate("TimelogViewer", u"Timelog Viewer", None))
         self.date_label.setText(QCoreApplication.translate("TimelogViewer", u"Date:", None))
         self.delete_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Delete", None))

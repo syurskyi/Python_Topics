@@ -1,27 +1,27 @@
 """Defines viewer utility functions.
 """
 
-import math
-import ?
-import itertools
+______ math
+______ ?
+______ itertools
 
 
-def toggle_viewer_lut():
+___ toggle_viewer_lut():
     """Iterates thru viewer luts in the viewer"""
     viewer = ?.activeViewer().node()['viewerProcess']
     luts = viewer.values()
     x = itertools.cycle(luts)
     ___ dummy __ ra..(le.(luts)):
-        if viewer.value() == next(x):
+        __ viewer.value() == next(x):
             viewer.sV..(next(x))
 
 
-def adjust_gain(original_gain, stop_offset):
+___ adjust_gain(original_gain, stop_offset):
     """Does the math for stop adjustments"""
     return 2 ** (math.log(original_gain, 2.0) + stop_offset)
 
 
-def viewer_stop_adjust(increment):
+___ viewer_stop_adjust(increment):
     """Adjusts current viewer in stops"""
     nodes = ?.allNodes('Viewer')
     ___ node __ nodes:
@@ -30,17 +30,17 @@ def viewer_stop_adjust(increment):
         knob.sV..(adjust_gain(gain, increment))
 
 
-def viewer_stop_up():
+___ viewer_stop_up():
     """Adjusts current viewer 1/4 stop up"""
     viewer_stop_adjust(0.25)
 
 
-def viewer_stop_down():
+___ viewer_stop_down():
     """Adjusts current viewer 1/4 stop down"""
     viewer_stop_adjust(-0.25)
 
 
-def viewer_stop_reset():
+___ viewer_stop_reset():
     """Resets exposure on current viewer"""
     nodes = ?.allNodes('Viewer')
     ___ node __ nodes:

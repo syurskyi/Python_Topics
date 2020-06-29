@@ -30,14 +30,14 @@ Usage:
 """
 
 # Import built-in modules
-import json
-import os
+______ json
+______ os
 
 # Import local modules
-from smartScripter.constants import DEFAULT_SETTINGS
+from smartScripter.constants ______ DEFAULT_SETTINGS
 
 
-def load():
+___ load():
     """Load settings from Settings instance.
 
     Returns:
@@ -47,7 +47,7 @@ def load():
     return Settings().data
 
 
-def save(data):
+___ save(data):
     """Save the given data as settings and return data.
 
     Args:
@@ -64,14 +64,14 @@ def save(data):
     return data
 
 
-def get_settings_file():
+___ get_settings_file():
     """Get the absolute path of the scripter settings file.
 
     Returns:
         str: Absolute path of the scripter settings file.
 
     """
-    from smartScripter import helper
+    from smartScripter ______ helper
     return os.path.join(helper.get_tool_root("private"), "settings.json")
 
 
@@ -81,14 +81,14 @@ def get_settings_file():
 class Settings(object):
     """Self contained settings data loader and saver."""
 
-    def __init__(self):
+    ___ __init__(self):
         """Initialize the Settings instance."""
         super(Settings, self).__init__()
 
         file_ = self._check_settings_file()
         self.data = self._load(file_)
 
-    def __repr__(self):
+    ___ __repr__(self):
         """Get string representation of settings.
 
         Returns:
@@ -98,7 +98,7 @@ class Settings(object):
         return json.dumps(self.data)
 
     @staticmethod
-    def _check_settings_file():
+    ___ _check_settings_file():
         """Check if the settings file exists and create it if not existing.
 
         Add key-value pairs from constants in case they don't exist.
@@ -107,20 +107,20 @@ class Settings(object):
             str: Absolute path of the settings file.
 
         """
-        from smartScripter import helper
+        from smartScripter ______ helper
         settings_dir = helper.get_tool_root("private")
-        if not os.path.isdir(settings_dir):
+        __ not os.path.isdir(settings_dir):
             os.makedirs(settings_dir)
 
         settings_file = get_settings_file()
-        if not os.path.isfile(settings_file):
+        __ not os.path.isfile(settings_file):
             with open(settings_file, "w") as file_:
                 json.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=True)
 
         return settings_file
 
     @staticmethod
-    def _load(path):
+    ___ _load(path):
         """Load the settings file.
 
         Args:

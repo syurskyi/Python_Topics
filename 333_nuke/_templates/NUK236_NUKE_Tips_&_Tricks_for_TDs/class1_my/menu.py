@@ -1,6 +1,6 @@
-import ?
-import timelog
-import timelog_viewer
+______ ?
+______ timelog
+______ timelog_viewer
 
 timelog.Timelog().start_thread()
 # nuke.addOnScriptLoad(timelog.Timelog().start_thread)

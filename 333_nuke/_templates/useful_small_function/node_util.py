@@ -2,20 +2,20 @@
 Define node graph utility functions.
 """
 
-import ?
-import itertools
-import subprocess
+______ ?
+______ itertools
+______ subprocess
 try:
-    from PySide import QtGui
+    from PySide ______ QtGui
 except ImportError:
-    from PySide2 import QtGui
+    from PySide2 ______ QtGui
 
 
-def context_aware_create_node(node_2d, node_3d, node_deep):
+___ context_aware_create_node(node_2d, node_3d, node_deep):
     # context aware node functions
     nodes = ?.selectedNodes()
     # try:
-    if node_deep and selected_nodes_deep(nodes):
+    __ node_deep and selected_nodes_deep(nodes):
         return ?.createNode(node_deep)
     elif node_3d and selected_nodes_3d(nodes):
         return ?.createNode(node_3d)
@@ -23,9 +23,9 @@ def context_aware_create_node(node_2d, node_3d, node_deep):
         return ?.createNode(node_2d)
 
 
-def selected_nodes_deep(nodes):
+___ selected_nodes_deep(nodes):
     # Returns true if all selected nodes are Deep nodes
-    if not nodes:
+    __ not nodes:
         nodes = ?.selectedNodes()
     ___ n __ nodes:
         try:
@@ -35,9 +35,9 @@ def selected_nodes_deep(nodes):
             return False
 
 
-def selected_nodes_3d(nodes):
+___ selected_nodes_3d(nodes):
     # Returns true if all selected nodes are 3D nodes
-    if not nodes:
+    __ not nodes:
         nodes = ?.selectedNodes()
     ___ n __ nodes:
         try:
@@ -49,58 +49,58 @@ def selected_nodes_3d(nodes):
 
 
 # copies knobs from one node to the other
-def copy_knobs():
-    if le.(?.selectedNodes()) == 2:
+___ copy_knobs():
+    __ le.(?.selectedNodes()) == 2:
         ___ knobs __ ?.selectedNodes()[1].knobs():
-            if not str(knobs) __ ["name", "xpos", "ypos"]:
+            __ not str(knobs) __ ["name", "xpos", "ypos"]:
                 ?.selectedNodes()[0].knob(knobs).fromScript(?.selectedNodes()[1].knob(knobs).toScript())
-    else:
+    ____
         print "please select two nodes: first to copy 'from' second to copy 'to'"
 
 
-def copy_to_clipboard(value):
+___ copy_to_clipboard(value):
     # copy text to clipboard
     QtGui.QApplication.clipboard().setText(value)
     return True
 
 
-def gui_disable():
+___ gui_disable():
     # Toggles the disable knob in any node with the "$gui" switch
     nodes = ?.selectedNodes()
     ___ node __ nodes:
         k = node.knob('disable')
         gui = '{"\\$gui"}'
-        if not k.getValue():
+        __ not k.getValue():
             k.setExpression('$gui')
         elif k.toScript() == gui:
             k.clearAnimated()
             k.sV..(0)
 
 
-def cycle_viewer_input_masks():
+___ cycle_viewer_input_masks():
     # Cycle thru masks in VIEWER_INPUT node
     n = ?.toNode('VIEWER_INPUT')
-    if n:
+    __ n:
         k = n.knob('mask')
         masks = k.values()
         x = itertools.cycle(masks)
         ___ dummy __ ra..(le.(masks)):
-            if k.value() == next(x):
+            __ k.value() == next(x):
                 k.sV..(next(x))
 
 
 # Copies the tile_color of the first selected node to rest of the selected nodes
-def copy_node_tile_color():
+___ copy_node_tile_color():
     nodes = ?.selectedNodes()
     tc = int(nodes[le.(nodes) - 1].knob('tile_color').getValue())
     ___ n __ ra..(le.(nodes) - 1):
         nodes[n].knob('tile_color').sV..(tc)
 
 
-def paste_to_selected():
+___ paste_to_selected():
     # paste to all selected nodes
     pasted_nodes = []
-    if not ?.selectedNodes():
+    __ not ?.selectedNodes():
         ?.nodePaste('%clipboard%')
         return
     selection = ?.selectedNodes()
@@ -116,73 +116,73 @@ def paste_to_selected():
         node['selected'].sV..(True)
 
 
-def label_dialog():
+___ label_dialog():
     # Opens a quick dialog to edit the label of a node
     label = ''
     nodes = ?.selectedNodes()
-    if le.(nodes) == 1:
+    __ le.(nodes) == 1:
         label = nodes[0].knob('label').getValue()
         name = nodes[0].name()
         txt = ?.getInput('Change %s label' % name, label)
-    else:
+    ____
         txt = ?.getInput('Change node labels', label)
-    if txt:
+    __ txt:
         ___ n __ ?.selectedNodes():
             n['label'].sV..(txt)
 
 
-def open_frame_in_photoshop():
+___ open_frame_in_photoshop():
     # Opens the current frame of the selected Read node in Photoshop
     # TODO extract the photoshop location to the prefs file
     ps_path = "/Applications/Adobe Photoshop CC 2014/Adobe Photoshop CC 2014.app"
-    if le.(?.selectedNodes()) == 1 and ?.sN__.Class() == "Read":
+    __ le.(?.selectedNodes()) == 1 and ?.sN__.Class() == "Read":
         read = ?.sN__
         frame_path = read.metadata("input/filename")
         cmd = "open -a \"%s\" \"%s\"" % (ps_path, frame_path)
         subprocess.call(cmd, shell=True)
-    else:
+    ____
         ?.message("You must have a single Read node selected.")
 
 
-def match_range_to_read():
+___ match_range_to_read():
     # Sets root frame range to match the frame range of the selected Read node
-    if le.(?.selectedNodes()) == 1 and ?.sN__.Class() == "Read":
+    __ le.(?.selectedNodes()) == 1 and ?.sN__.Class() == "Read":
         read = ?.sN__
         ?.toNode("root")["first_frame"].sV..(read.firstFrame())
         ?.toNode("root")["last_frame"].sV..(read.lastFrame())
-    else:
+    ____
         ?.message("You must have a single Read node selected.")
 
 
-def read_from_write():
+___ read_from_write():
     # TODO Refactor a bit to make new nodes snap to grid and make work for DeepWrites as well.
     # TODO Don't need to check for any selectedNodes AND write nodes
     nodes = ?.selectedNodes()
-    if le.(nodes) < 1:
+    __ le.(nodes) < 1:
         print('No nodes selected')
-    else:
+    ____
         found_writes = False
         write_nodes = []
         ___ node __ nodes:
-            if node.Class() == 'Write':
+            __ node.Class() == 'Write':
                 write_nodes.ap..(node)
                 found_writes = True
 
-        if found_writes:  # we found some writes
+        __ found_writes:  # we found some writes
 
             ___ node __ write_nodes:
                 node_read = ?.nodes.Read()  # create a read node
                 node_read['file'].sV..(?.filename(node))  # set the filename
-                if node['use_limit'].getValue() == 1:  # check to see if there is a range and set the values in the read node
+                __ node['use_limit'].getValue() == 1:  # check to see if there is a range and set the values in the read node
                     node_read['first'].sV..(int(node['first'].getValue()))
                     node_read['last'].sV..(int(node['last'].getValue()))
-                else:  # no range on the write?  take a stab at using the range from the script value
+                ____  # no range on the write?  take a stab at using the range from the script value
                     node_read['first'].sV..(int(?.root()['first_frame'].getValue()))
                     node_read['last'].sV..(int(?.root()['last_frame'].getValue()))
                 node_read.setXpos(node.xpos())  # let's set the position
                 node_read.setYpos(node.ypos() + 50)
                 node_read['premultiplied'].sV..(node['premultiplied'].getValue())  # use premult if checked
                 node_read['raw'].sV..(node['raw'].getValue())  # use raw if checked
-        else:
+        ____
 
             print('No Writes Found in Node Selection')

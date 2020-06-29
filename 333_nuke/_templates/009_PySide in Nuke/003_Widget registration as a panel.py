@@ -1,13 +1,13 @@
-import ?
-import nukescripts
-from nukescripts import panels
+______ ?
+______ nukescripts
+from nukescripts ______ panels
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 
 class simplePanel(QWidget):
-    def __init__(self):
+    ___ __init__(self):
         QWidget.__init__(self)
         self.setLayout(QVBoxLayout())
         self.locationEdit = QCalendarWidget()
@@ -17,5 +17,5 @@ panels.registerWidgetAsPanel('simplePanel', 'Simple', "")
 
 ########################################################################################################################
 
-import modulefinder
+______ modulefinder
 w = mod.simplePanel()

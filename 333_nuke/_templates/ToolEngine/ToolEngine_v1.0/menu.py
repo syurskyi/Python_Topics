@@ -1,8 +1,8 @@
-import ?
-import os
+______ ?
+______ os
 
-import ToolEngine.src.toolengine as toolengine
-import ToolEngine.src.toolhelper as helper
+______ ToolEngine.src.toolengine as toolengine
+______ ToolEngine.src.toolhelper as helper
 
 logo = os.path.normpath(os.path.join(os.path.dirname(__file__), "ToolEngine", "img", "logo.png"))
 

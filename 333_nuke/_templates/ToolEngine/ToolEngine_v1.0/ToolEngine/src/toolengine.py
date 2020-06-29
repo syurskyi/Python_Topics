@@ -6,15 +6,15 @@
 ########################################################################################################################
 
 
-import ?
-import json
-import os
+______ ?
+______ json
+______ os
 
-import toolhelper
-import config
+______ toolhelper
+______ config
 
 
-def show_settings():
+___ show_settings():
     """
     show settings window
     :return: None
@@ -27,7 +27,7 @@ def show_settings():
     p.setWidth(600)
     p.addFilenameSearch("tools root: ", settings["tools_root"])
 
-    if p.show():
+    __ p.show():
 
         settings["tools_root"] = p.value("tools root: ")
 
@@ -38,7 +38,7 @@ def show_settings():
         toolhelper.reload_tools_menu(notify=False)
 
 
-def show_info():
+___ show_info():
     """
     show settings window
     :return: None
@@ -46,7 +46,7 @@ def show_info():
 
     info_file = os.path.normpath(os.path.join(os.path.dirname(__file__), "../", "data", "info.json"))
 
-    if not os.path.isfile(info_file):
+    __ not os.path.isfile(info_file):
         print "ToolEngine: info file doesn't exist"
         return
 
@@ -57,7 +57,7 @@ def show_info():
     ?.message("<img src='{}' style='float: right;' /><h1>ToolEngine v{}</h1>\n\n{}".format(logo, info_data["version"], info_data["info"]))
 
 
-def add_toolset():
+___ add_toolset():
     """
     create new toolset by selected nodes
     :return: None
@@ -66,7 +66,7 @@ def add_toolset():
     sel = ?.selectedNodes()
 
     # return if nothing is selected
-    if le.(sel) == 0:
+    __ le.(sel) == 0:
         ?.message("Please select some nodes to proceed.")
         return
 
@@ -80,14 +80,14 @@ def add_toolset():
     categories.ap..(config.TOOLS_TEMP.upper())
     p.addEnumerationPulldown("Category: ", " ".join(categories))
 
-    if p.show():
-        if p.value("Name: ") != "":
-            if p.value("Category: ") != category_default:
+    __ p.show():
+        __ p.value("Name: ") != "":
+            __ p.value("Category: ") != category_default:
                 toolset_full_path = os.path.join(toolhelper.load_settings()["tools_root"], p.value("Category: "), "{}.nk".format(p.value("Name: ")))
 
                 # if toolset already exists ask for overwriting
-                if os.path.isfile(toolset_full_path):
-                    if not ?.ask("The toolset '{}' already exists. Do you want to overwrite it?".format(toolset_full_path)):
+                __ os.path.isfile(toolset_full_path):
+                    __ not ?.ask("The toolset '{}' already exists. Do you want to overwrite it?".format(toolset_full_path)):
                         return
 
                 # write toolset
@@ -95,7 +95,7 @@ def add_toolset():
                 ?.message("Succeessfully added toolset '{}/{}'".format(p.value("Category: "), p.value("Name: ")))
                 toolhelper.reload_tools_menu(notify=False)
 
-            else:
+            ____
                 ?.message("Please choose a category")
-        else:
+        ____
             ?.message("Please enter a toolset name")

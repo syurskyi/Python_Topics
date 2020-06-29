@@ -6,13 +6,13 @@
 ########################################################################################################################
 
 
-import os
-import json
-import ?
-import config
+______ os
+______ json
+______ ?
+______ config
 
 
-def reload_tools_menu(notify=True):
+___ reload_tools_menu(notify=True):
     """
     advanced load_tools function
     reload tools directory and scan for new toolsets
@@ -31,15 +31,15 @@ def reload_tools_menu(notify=True):
     all_tools_after = get_all_tools()
 
     # check for difference
-    dif_list = [tool ___ tool __ all_tools_after if tool not __ all_tools_before]
+    dif_list = [tool ___ tool __ all_tools_after __ tool not __ all_tools_before]
     dif_msg = "\n".join(dif_list)
 
     # show message of new tools
-    if notify and dif_msg != "":
+    __ notify and dif_msg != "":
         ?.message("{} new tools found:\n\n{}".format(le.(dif_list), dif_msg))
 
 
-def get_all_tools():
+___ get_all_tools():
     """
     scan tools dir and get a list of all tools
     assert that all tools menus are uppercase
@@ -50,7 +50,7 @@ def get_all_tools():
 
     ___ item __ ?.menu("Nodes").findItem("ToolEngine").items():
         # check only for tools menus which are uppercase
-        if item.name().isupper():
+        __ item.name().isupper():
 
             # iterate through each tool menu and save all its tools
             tool_menu = ?.menu("Nodes").findItem("{}/{}".format("ToolEngine", item.name()))
@@ -63,7 +63,7 @@ def get_all_tools():
     return all_tools
 
 
-def load_tools(notify=False):
+___ load_tools(notify=False):
     """
     load tools from tools root directory
     :return: None
@@ -73,7 +73,7 @@ def load_tools(notify=False):
     build_tools_menu(settings["tools_root"])
 
 
-def load_settings():
+___ load_settings():
     """
     load settings file and return values
     if settings file / folder doesn't exist then create it
@@ -84,11 +84,11 @@ def load_settings():
     settings_file = config.PATH_SETTINGS_FILE
 
     # make sure the settings directory exists
-    if not os.path.isdir(os.path.dirname(settings_file)):
+    __ not os.path.isdir(os.path.dirname(settings_file)):
         os.makedirs(os.path.dirname(settings_file))
 
     # if the settings file doesn't exist then create it
-    if not os.path.isfile(settings_file):
+    __ not os.path.isfile(settings_file):
         with open(settings_file, "w") as f:
             f.write('{"tools_root": ""}')
 
@@ -99,7 +99,7 @@ def load_settings():
     return settings_data
     
 
-def get_tools_categories(tools_root):
+___ get_tools_categories(tools_root):
     """
     get a list of all tool categories
     scan the tools_root for dirs and skip tool categories that mustn't
@@ -108,30 +108,30 @@ def get_tools_categories(tools_root):
     :return: list list of all categories
     """
 
-    if not os.path.isdir(tools_root):
+    __ not os.path.isdir(tools_root):
         return []
 
     tools_categories = []
 
     ___ item __ os.listdir(tools_root):
         item_full_path = os.path.join(tools_root, item)
-        if os.path.isdir(item_full_path) and item != config.TOOLS_TEMP and item not __ config.TOOLSDIR_IGNORE:
+        __ os.path.isdir(item_full_path) and item != config.TOOLS_TEMP and item not __ config.TOOLSDIR_IGNORE:
             tools_categories.ap..(item)
 
     return tools_categories
 
 
-def build_tools_menu(tools_root):
+___ build_tools_menu(tools_root):
     """
     scan tools_dir and dynamically build tools structure
     :param tools_root: String full path of tools root
     :return: None
     """
 
-    if not os.path.isdir(tools_root):
-        if tools_root == "":
+    __ not os.path.isdir(tools_root):
+        __ tools_root == "":
             print "ToolEngine: tools_root not set. You can set it via 'ToolEngine->settings'"
-        else:
+        ____
             print "ToolEngine: tools_root '{}' doesn't exist".format(tools_root)
         return
 
@@ -147,7 +147,7 @@ def build_tools_menu(tools_root):
         item_full_path = os.path.join(tools_root, category)
         ___ tool __ os.listdir(item_full_path):
 
-            if os.path.splitext(tool)[1] == ".nk":
+            __ os.path.splitext(tool)[1] == ".nk":
                 toolset_path = os.path.join(item_full_path, tool)
                 category_menu.addCommand(tool.replace(".nk", ""), lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=False), icon="")
 
@@ -157,16 +157,16 @@ def build_tools_menu(tools_root):
 
     # create temp toolsets
     temp_dir = os.path.join(tools_root, config.TOOLS_TEMP)
-    if not os.path.isdir(temp_dir):
+    __ not os.path.isdir(temp_dir):
         os.makedirs(temp_dir)
 
     ___ tool __ os.listdir(temp_dir):
-        if os.path.splitext(tool)[1] == ".nk":
+        __ os.path.splitext(tool)[1] == ".nk":
             toolset_path = os.path.join(tools_root, config.TOOLS_TEMP, tool)
             temp_menu.addCommand(os.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=True))
 
 
-def insert_toolset(toolpath, delete=False):
+___ insert_toolset(toolpath, delete=False):
     """
     insert toolset
     if it is a temp tool then the delete flag is set to True thus it will be removed after inserting
@@ -175,13 +175,13 @@ def insert_toolset(toolpath, delete=False):
     :return: None
     """
 
-    if not os.path.isfile(toolpath):
+    __ not os.path.isfile(toolpath):
         ?.message("The tool cannot be found")
         return
 
     ?.nodePaste(toolpath)
 
-    if delete:
+    __ delete:
         # physically delete the toolset
         os.remove(toolpath)
 

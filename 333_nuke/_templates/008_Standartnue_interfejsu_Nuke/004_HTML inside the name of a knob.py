@@ -1,4 +1,4 @@
-import os
+______ os
 node = ?.sN__
 
 node['icon'].sV..('C:/Users/syurskyi/Dropbox/nuke/.nuke/example/NUKE/Nuke Scripting for Pipeline TD/004_Pipeline/icons/cgninjas.png')
@@ -58,9 +58,9 @@ node.addKnob(?.Text_Knob('',''))
 power = ?.Double_Knob('power', 'Power')
 node.addKnob(power)
 
-def powerKnob(a):
+___ powerKnob(a):
     k = ?.thisKnob()
-    if k.name() == 'power' and a=='Blur':
+    __ k.name() == 'power' and a=='Blur':
         v = k.getValue()
         img = int((v*5)+1)
         k.setLabel('<img src="%s/icons/power%s.png">' % (os.environ['NUKE_PATH'].replace('\\','/'), img))

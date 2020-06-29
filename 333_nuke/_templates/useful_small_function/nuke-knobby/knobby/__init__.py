@@ -1,9 +1,9 @@
 __version__ = "0.1.4"
 
-from . import parser
+from . ______ parser
 
 try:
-    from . import util
+    from . ______ util
 except ImportError:
     # No nuke module
     util = None

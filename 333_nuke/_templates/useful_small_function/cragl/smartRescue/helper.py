@@ -1,23 +1,23 @@
 """Helper functionality."""
 
 # Import built-in modules
-import ast
-import datetime
-import json
-import os
-import re
-import shutil
-import subprocess
-import sys
+______ ast
+______ datetime
+______ json
+______ os
+______ re
+______ shutil
+______ subprocess
+______ sys
 
 # Import local modules
-from smartRescue.constants import CRAGL_SMARTRESCUE_CONFIG_PATH
-from smartRescue.constants import CRAGL_SMARTRESCUE_PROCESS_PATH
-from smartRescue.constants import DOCSTRING_EXTRACTION_PATTERN
-from smartRescue.constants import NAME
+from smartRescue.constants ______ CRAGL_SMARTRESCUE_CONFIG_PATH
+from smartRescue.constants ______ CRAGL_SMARTRESCUE_PROCESS_PATH
+from smartRescue.constants ______ DOCSTRING_EXTRACTION_PATTERN
+from smartRescue.constants ______ NAME
 
 
-def get_nuke_scripts(path, ignore_prefix):
+___ get_nuke_scripts(path, ignore_prefix):
     """Get all .nk files from the given path ignoring rescue and prefix files.
 
     Args:
@@ -28,18 +28,18 @@ def get_nuke_scripts(path, ignore_prefix):
         list: Absolute path of files to include in collection.
 
     """
-    if os.path.isfile(path):
+    __ os.path.isfile(path):
         return [path]
 
     rescue_file_pattern = r"rescue_\d+-\d+"
     return [os.path.join(path, file_)
             ___ file_ __ os.listdir(path)
-            if file_.endswith(".nk")
+            __ file_.endswith(".nk")
             and not file_.startswith(ignore_prefix)
             and not re.search(rescue_file_pattern, file_)]
 
 
-def create_working_file_copies(files):
+___ create_working_file_copies(files):
     """Create working file copies to use instead of the original files.
 
     Args:
@@ -62,7 +62,7 @@ def create_working_file_copies(files):
     return copy_files
 
 
-def date_now():
+___ date_now():
     """Return the date and time of now.
 
     Returns:
@@ -73,7 +73,7 @@ def date_now():
     return "{:%Y%m%d-%H%M%S}".format(datetime.datetime.now())
 
 
-def get_process_folder():
+___ get_process_folder():
     """Get absolute path of folder to process.
 
     If the environment variable 'SMART_RESCUE_PROCESS_PATH', that points to the
@@ -86,7 +86,7 @@ def get_process_folder():
 
     """
     environment_process_folder = os.environ.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
-    if environment_process_folder:
+    __ environment_process_folder:
         return environment_process_folder
 
     this_dir = os.path.dirname(__file__)
@@ -94,7 +94,7 @@ def get_process_folder():
     return os.path.normpath(path)
 
 
-def get_config():
+___ get_config():
     """Get configuration from environment path of from package path.
 
     We prefer the path that is set via the SMART_RESCUE_CONFIG_PATH
@@ -107,16 +107,16 @@ def get_config():
 
     """
     environment_path = os.environ.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
-    if environment_path:
+    __ environment_path:
         path = environment_path
-    else:
+    ____
         path = copy_config_file()
 
     with open(path, "r") as file_:
         return path, json.load(file_)
 
 
-def load_icons():
+___ load_icons():
     """Load all icons from the icons folder.
 
     This scans the icons directory and creates an icon dictionary using the
@@ -145,7 +145,7 @@ def load_icons():
     return icons
 
 
-def get_docstring(path):
+___ get_docstring(path):
     """Get the module docstring from the module with the given path.
 
     Args:
@@ -160,7 +160,7 @@ def get_docstring(path):
     return ast.get_docstring(tree)
 
 
-def get_docstring_elements(path):
+___ get_docstring_elements(path):
     """Get the one line header, body, standard- and advanced examples.
 
     Args:
@@ -173,7 +173,7 @@ def get_docstring_elements(path):
     """
     docstring = get_docstring(path)
     regex = re.search(DOCSTRING_EXTRACTION_PATTERN, docstring, re.DOTALL)
-    if regex:
+    __ regex:
         description = regex.groupdict()["description"].split("\n")
         header = description[0]
         body = "\n".join(description[1:])
@@ -185,7 +185,7 @@ def get_docstring_elements(path):
     return docstring, "", "", ""
 
 
-def ensure_file_extension(path, ext):
+___ ensure_file_extension(path, ext):
     """Ensure the given file extension on the given path.
 
     Args:
@@ -198,12 +198,12 @@ def ensure_file_extension(path, ext):
     """
     base, extension = os.path.splitext(path)
     ext = ext.replace(".", "")
-    if extension == ext:
+    __ extension == ext:
         return path
     return "{}.{}".format(base, ext)
 
 
-def get_tool_root(which):
+___ get_tool_root(which):
     """Get public/private root directory path based on 'which'.
 
     Create directory if it does not exist.
@@ -218,10 +218,10 @@ def get_tool_root(which):
         OSError: When the directory could not be created.
 
     """
-    cragl_dir = ".cragl" if which == "private" else "cragl"
+    cragl_dir = ".cragl" __ which == "private" else "cragl"
     root = os.path.join(os.path.expanduser("~"), cragl_dir, NAME)
 
-    if not os.path.isdir(root):
+    __ not os.path.isdir(root):
         try:
             os.makedirs(root)
         except OSError as error:
@@ -230,7 +230,7 @@ def get_tool_root(which):
     return root
 
 
-def get_local_config_file():
+___ get_local_config_file():
     """Get absolute path of config file.
 
     Returns:
@@ -240,7 +240,7 @@ def get_local_config_file():
     return os.path.join(get_tool_root("private"), "config.json")
 
 
-def copy_config_file():
+___ copy_config_file():
     """Copy over config file if not existing.
 
     Here we copy over the template configuration file of this package to the
@@ -251,7 +251,7 @@ def copy_config_file():
 
     """
     dest = get_local_config_file()
-    if not os.path.isfile(dest):
+    __ not os.path.isfile(dest):
         this_dir = os.path.dirname(__file__)
         src = os.path.join(this_dir, "data", "config.json")
         src = os.path.abspath(src)
@@ -259,7 +259,7 @@ def copy_config_file():
     return dest
 
 
-def open_website(url):
+___ open_website(url):
     """Open browser locating to given url.
 
     Args:
@@ -269,12 +269,12 @@ def open_website(url):
         OSError: When we can't open the url in the web browser using linux.
 
     """
-    if sys.platform == 'win32':
+    __ sys.platform == 'win32':
         # This is only available in windows.
         os.startfile(url)  # pylint: disable=no-member
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
-    else:
+    ____
         try:
             subprocess.Popen(['xdg-open', url])
         except OSError:

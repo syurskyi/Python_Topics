@@ -10,19 +10,19 @@ print 'in my menu.py'
 
 # per Matthieu Cadet <matthieu.cadet@gmail.com> in nuke users email conversation
 #
-def autoColorReadNodeType(overrideNode=None):
-       if overrideNode == None:
+___ autoColorReadNodeType(overrideNode=None):
+       __ overrideNode == None:
                this = ?.thisNode()
-       else:
+       ____
                this = overrideNode
        # get the Read node file name
        thisFile = this["file"].evaluate()
        # catch keyword in the filename path to set custom color
-       if "/wip/" __ thisFile:
+       __ "/wip/" __ thisFile:
                nodeColor = 862912511
        elif "/pub/" __ thisFile:
                nodeColor = 4280356351
-       else:
+       ____
                nodeColor = 0
        # set the Read node custom color
        this["tile_color"].sV..(nodeColor)
@@ -30,30 +30,30 @@ def autoColorReadNodeType(overrideNode=None):
 
 # align selected nodes on a horizontal line, by Steve Molin
 #
-def sjmAlignH():
+___ sjmAlignH():
   yresult = None
   ___ n __ ?.selectedNodes():
-    if yresult is None:
+    __ yresult is None:
       yresult = n.ypos()
-    else:
+    ____
       n.setYpos(yresult)
 #
 # align selected nodes on a vertical line, by Steve Molin
 #
-def sjmAlignV():
+___ sjmAlignV():
   xresult = None
   ___ n __ ?.selectedNodes():
-    if xresult is None:
+    __ xresult is None:
       xresult = n.xpos()
-    else:
+    ____
       n.setXpos(xresult)
 
 # by smolin, expands on the autobackdrop function from nuke/plugins/nukescripts
 #
-def sjmAutoBackdrop():
-  import random
+___ sjmAutoBackdrop():
+  ______ random
   selNodes = ?.selectedNodes()
-  if not selNodes:
+  __ not selNodes:
     return ?.nodes.BackdropNode()
   #
   margin = 20
@@ -84,9 +84,9 @@ def sjmAutoBackdrop():
 
 # backdrop font size=99, by Steve Molin
 #
-def sjmBackdropFonts():
+___ sjmBackdropFonts():
   ___ i __ ?.allNodes():
-    if i.__class__.__name__ == 'BackdropNode':
+    __ i.__class__.__name__ == 'BackdropNode':
       i.knob('note_font_size').sV..(189)
       k = i.knob('label')
       k.setText(k.getText().upper())
@@ -94,36 +94,36 @@ def sjmBackdropFonts():
 # Walk the heirarchy up from selected node and return a set of
 # all nodes that have the 'file' attribute
 #
-def sjmFindAllParentReads(n=None):
-  if n is None:
+___ sjmFindAllParentReads(n=None):
+  __ n is None:
     n = ?.sN__
   result = []
-  if n.knob('file'):
+  __ n.knob('file'):
     result.ap..(n)
   ins = n.inputs()
   ___ i __ ra..(0,n.inputs()):
     input = n.input(i)
-    if input:
-      if input.knob('file'):
+    __ input:
+      __ input.knob('file'):
         result.ap..(input)
       result.extend(sjmFindAllParentReads(input))
   return set(result)
 
 # unhide all inputs, by Steve Molin
 #
-def sjmHideInputsOff():
+___ sjmHideInputsOff():
   ___ i __ ?.allNodes():
-    if i.knob('hide_input'):
-      if i.knob('hide_input').value():
+    __ i.knob('hide_input'):
+      __ i.knob('hide_input').value():
 	i.knob('hide_input').sV..(False)
 
 # open a read or write node in a viewer program (djv is the first example)
 #
 # by steve molin
 #
-def sjmOpenInViewer(nd=None):
-  import subprocess
-  if nd is None:
+___ sjmOpenInViewer(nd=None):
+  ______ subprocess
+  __ nd is None:
     nd = ?.sN__
   fp = nd.knobs()['file'].value() % nd.firstFrame()
   args = 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp
@@ -132,10 +132,10 @@ def sjmOpenInViewer(nd=None):
 # load the targets of the writeNodes in a viewer (djv):
 # TODO: deal better with %04d; deal with different viewers
 #
-def sjmOpenAllInViewer():
+___ sjmOpenAllInViewer():
   ___ n __ ?.allNodes():
-    if n.Class() == 'Write':
-      if not n.knob('disable').value():
+    __ n.Class() == 'Write':
+      __ not n.knob('disable').value():
         sjmOpenInViewer(n)
 	#filespec = n.knob('file').value()
 	#fn = glob.glob(filespec.replace('%04d','*'))[0]
@@ -143,40 +143,40 @@ def sjmOpenAllInViewer():
 	#subprocess.call([r'C:\Program Files (x86)\djv 0.8.3\bin\djv_view.exe',fn])
 
 # step through 'operation' values on a merge node
-def sjmMergeOpIncr():
+___ sjmMergeOpIncr():
   sn = ?.sN__
   kn = sn.knobs()['operation']
   kn.sV..(kn.values().index(kn.value())+1)
-def sjmMergeOpDecr():
+___ sjmMergeOpDecr():
   sn = ?.sN__
   kn = sn.knobs()['operation']
   kn.sV..(kn.values().index(kn.value())-1)
 
 # use $gui to disable slow nodes when working interactively
 #
-def sjmToggleDisableExpression():
+___ sjmToggleDisableExpression():
   mynodes = ?.selectedNodes()
   ___ mynode __ mynodes:
     myknob = mynode['disable']
-    if myknob.isAnimated():
+    __ myknob.isAnimated():
       myknob.clearAnimated()
       myknob.sV..(0)
-    else:
+    ____
       myknob.setExpression('$gui')
 
 # toggle the branch selector on all the switch nodes that are selected
 #
-def sjmToggleSwitch():
+___ sjmToggleSwitch():
   ___ mynode __ ?.selectedNodes():
-    if mynode.knobs()['which'].value():
+    __ mynode.knobs()['which'].value():
       mynode.knobs()['which'].sV..(0)
-    else:
+    ____
       mynode.knobs()['which'].sV..(1)
 
 # see http://docs.thefoundry.co.uk/nuke/63/pythondevguide/basics.html
 # and http://docs.thefoundry.co.uk/nuke/63/pythondevguide/custom_panels.html
 #
-def testMyDialog():
+___ testMyDialog():
 	p=?.Panel('my custom panel')
 	p.addClipnameSearch('clip path', '/tmp')
 	p.addFilenameSearch('file path', '/tmp')
@@ -203,23 +203,23 @@ try:
   ## example PySide panel that implements a simple web browser in Nuke
   ## JW 12/10/11
   #
-  import ?
-  import nukescripts
-  from nukescripts import panels
+  ______ ?
+  ______ nukescripts
+  from nukescripts ______ panels
   #
-  from PySide.QtGui import *
-  from PySide.QtCore import *
-  from PySide.QtWebKit import *
+  from PySide.QtGui ______ *
+  from PySide.QtCore ______ *
+  from PySide.QtWebKit ______ *
   #
   class WebBrowserWidget(QWidget):
-    def changeLocation(self):
+    ___ changeLocation(self):
       url = self.locationEdit.text()
-      if not url.startswith( 'http://' ):
+      __ not url.startswith( 'http://' ):
         url = 'http://' + url
       self.webView.load( QUrl(url) )
-    def urlChanged(self, url):
+    ___ urlChanged(self, url):
       self.locationEdit.setText( url.toString() )
-    def __init__(self):
+    ___ __init__(self):
       QWidget.__init__(self)
       self.webView = QWebView()
       self.setLayout( QVBoxLayout() )  
@@ -243,9 +243,9 @@ try:
   #
   ## make this work in a .py file and in 'copy and paste' into the script editor
   moduleName = __name__
-  if moduleName == '__main__':
+  __ moduleName == '__main__':
     moduleName = ''
-  else:
+  ____
     moduleName = moduleName + '.'
   panels.registerWidgetAsPanel( moduleName + 'WebBrowserWidget', 'Web Browser','uk.co.thefoundry.WebBrowserWidget')
 except ImportError:

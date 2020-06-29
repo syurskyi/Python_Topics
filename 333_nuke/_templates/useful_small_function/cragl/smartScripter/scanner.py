@@ -28,13 +28,13 @@ Usage:
 """
 
 # Import built-in modules
-from collections import OrderedDict
-import json
-import os
+from collections ______ OrderedDict
+______ json
+______ os
 
 # Import local modules
-from smartScripter import widgets
-from smartScripter import helper
+from smartScripter ______ widgets
+from smartScripter ______ helper
 
 
 # We want to create a self-contained class explicitly. The user does not need
@@ -43,7 +43,7 @@ from smartScripter import helper
 class Scanner(object):
     """Scanner to search for stacks and commands."""
 
-    def __init__(self, root, controller):
+    ___ __init__(self, root, controller):
         """Initialize the scanner instance.
 
         Args:
@@ -54,7 +54,7 @@ class Scanner(object):
         self.logger = helper.get_logger()
         self.stacks = self._load_stacks(root)
 
-    def _load_stacks(self, root):
+    ___ _load_stacks(self, root):
         """Load the stacks in the given root.
 
         Returns:
@@ -78,7 +78,7 @@ class Scanner(object):
         """
         self.logger.debug("Scanning for stacks: %s", root)
 
-        if not os.path.isdir(root):
+        __ not os.path.isdir(root):
             try:
                 os.makedirs(root)
             except IOError as error:
@@ -86,7 +86,7 @@ class Scanner(object):
                               "{}\n".format(root, error.message))
 
         dirs = [os.path.join(root, dir_) ___ dir_ __ os.listdir(root)
-                if os.path.isdir(os.path.join(root, dir_))
+                __ os.path.isdir(os.path.join(root, dir_))
                 and not dir_.startswith("_")]
 
         self.logger.debug("Found stacks: %s", ", ".join(dirs))
@@ -97,7 +97,7 @@ class Scanner(object):
 
         return stacks
 
-    def _load_stack(self, directory_path):
+    ___ _load_stack(self, directory_path):
         """Load all commands json files from the given path.
 
         Args:
@@ -112,7 +112,7 @@ class Scanner(object):
         self.logger.debug("Scanning stack %s", directory_path)
 
         files = (file_ ___ file_ __ os.listdir(directory_path)
-                 if file_.endswith(".json"))
+                 __ file_.endswith(".json"))
 
         commands = []
 
@@ -139,7 +139,7 @@ class Scanner(object):
         return commands
 
     @staticmethod
-    def _parse_json(path):
+    ___ _parse_json(path):
         """Parse given json file and check for command file existence.
 
         Args:
@@ -155,7 +155,7 @@ class Scanner(object):
 
         """
         command_file = os.path.splitext(path)[0]
-        if not os.path.isfile(command_file):
+        __ not os.path.isfile(command_file):
             raise IOError("Skipping command due no to command file {}".format(
                 path
             ))

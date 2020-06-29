@@ -1,16 +1,16 @@
-import ?
-import os
-import getpass
-import shutil
-import json
-import nukescripts
+______ ?
+______ os
+______ getpass
+______ shutil
+______ json
+______ nukescripts
 
 CURRENT_USER = getpass.getuser()
 LOG_DIR = os.path.join(os.path.dirname(__file__), 'logs')
 
 
 class Panel(nukescripts.PythonPanel):
-    def __init__(self, name):
+    ___ __init__(self, name):
         super(Panel, self).__init__(name)
 
         self.setMinimumSize(500,500)
@@ -25,9 +25,9 @@ class Panel(nukescripts.PythonPanel):
 
         self.build_date_combo_box()
 
-    def delete_log(self):
+    ___ delete_log(self):
         message = ?.ask("Are you sure you want to delete this log?")
-        if not message:
+        __ not message:
             return
 
         date = self.date_combo_box.value()
@@ -36,40 +36,40 @@ class Panel(nukescripts.PythonPanel):
         self.log_knob.sV..("")
         self.build_date_combo_box()
 
-    def build_date_combo_box(self):
+    ___ build_date_combo_box(self):
         log_dir = "%s/%s" % (LOG_DIR, CURRENT_USER)
         self.date_combo_box.setValues(os.walk(log_dir).next()[1])
 
-        if self.date_combo_box.values():
+        __ self.date_combo_box.values():
             self.date_combo_box.sV..(self.date_combo_box.values()[0])
             self.build_log_text(self.get_log())
 
-    def get_log(self):
+    ___ get_log(self):
 
         date = self.date_combo_box.value()
         json_path = "%s/%s/%s/log.json" % (LOG_DIR, CURRENT_USER,date)
         log = json.load(open(json_path))
         return log
 
-    def build_log_text(self, log):
+    ___ build_log_text(self, log):
         txt = ""
         ___ i __ log:
             time = log[i]
             txt += "%s\n%s\n\n" % (i, self.seconds_to_str(time))
         self.log_knob.sV..(txt)
 
-    def knobChanged(self, knob):
+    ___ knobChanged(self, knob):
 
-        if knob.name() == "date":
+        __ knob.name() == "date":
             self.build_log_text(self.get_log())
 
-        if knob.name() == "delete":
+        __ knob.name() == "delete":
             self.delete_log()
 
-    def delete_log(self):
+    ___ delete_log(self):
 
         message = ?.ask("Are you sure you want to delete this log?")
-        if not message:
+        __ not message:
             return
 
         date = self.date_combo_box.value()
@@ -78,7 +78,7 @@ class Panel(nukescripts.PythonPanel):
         self.log_knob.sV..("")
         self.build_date_combo_box()
 
-    def seconds_to_str(self, sec):
+    ___ seconds_to_str(self, sec):
 
         minutes, seconds = divmod(sec, 60)
         hours, minutes = divmod(minutes, 60)

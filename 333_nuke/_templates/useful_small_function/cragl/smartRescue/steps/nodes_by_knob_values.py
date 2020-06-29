@@ -130,13 +130,13 @@ Advanced:
 """
 
 # Import built-in modules
-import operator
+______ operator
 
 # Import third-party modules
-import ?  # pylint: disable=import-error
+______ ?  # pylint: disable=import-error
 
 # Import local modules
-from smartRescue.base_steps import NodeStep
+from smartRescue.base_steps ______ NodeStep
 
 
 class NodesByKnobValues(NodeStep):
@@ -151,20 +151,20 @@ class NodesByKnobValues(NodeStep):
         ">=": operator.ge
     }
 
-    def process(self):
+    ___ process(self):
         """Handle nodes that match one of the knob rules."""
         ___ rule __ self.setup["knob_rules"]:
             ___ node __ ?.allNodes():
 
-                if node.Class() != rule["node_class"]:
+                __ node.Class() != rule["node_class"]:
                     continue
 
                 knob = node.knob(rule["knob_name"])
-                if not knob:
+                __ not knob:
                     continue
 
                 operator_ = self.operators.get(rule["operator"])
-                if not operator_:
+                __ not operator_:
                     self.logger.waring("Non supported operator '%s'. Skip "
                                        "step", rule["operator"])
 
@@ -182,7 +182,7 @@ class NodesByKnobValues(NodeStep):
                 rule_matched = False
                 ___ type_ __ types:
                     try:
-                        if operator_(knob.value(), type_(rule["knob_value"])):
+                        __ operator_(knob.value(), type_(rule["knob_value"])):
                             rule_matched = True
                             break
                     # We raise any error that occurs here. When any error
@@ -192,7 +192,7 @@ class NodesByKnobValues(NodeStep):
                     except Exception:  # pylint: disable=broad-except
                         continue
 
-                if rule_matched:
+                __ rule_matched:
                     self.logger.info(
                         "%s node '%s' (%s) because a rule matches the knob "
                         "value. Current value '%s'. "

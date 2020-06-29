@@ -68,16 +68,16 @@ Advanced:
 """
 
 # Import built-in modules
-import re
+______ re
 
 # Import local modules
-from smartRescue.base_steps import BaseStep
+from smartRescue.base_steps ______ BaseStep
 
 
 class ReplaceByPattern(BaseStep):
     """Replace sections in the working file by searching using patterns."""
 
-    def process(self):
+    ___ process(self):
         """Process the file removing illegal characters."""
         with open(self.path, "r") as src:
             content = src.read()

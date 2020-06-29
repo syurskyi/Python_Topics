@@ -1,9 +1,9 @@
-import ?
-import os, random
+______ ?
+______ os, random
 
 srcpath = 'C:/projects/src'
 
-def reorderPoints(array):
+___ reorderPoints(array):
     data = []
     ___ i __ ra..(0, le.(array), 3):
         v = ?.math.Vector3(array[i], array[i+1], array[i+2])

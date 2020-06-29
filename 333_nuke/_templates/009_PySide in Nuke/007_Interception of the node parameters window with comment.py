@@ -7,11 +7,11 @@
 # Dlja realizacii nam potrebyetsja specialnuj fynkcional QT framework, kotoruj nazuvaetsja eventFilter.
 # v prilozenii vsegda proishodja kakie to eventu i otkrutie okna eto odin iz etih eventov
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 class eventFilterClass(QObject):
-    def eventFilter(self, obj, ev):
+    ___ eventFilter(self, obj, ev):
         print ev.type()
         return False
 
@@ -23,12 +23,12 @@ qnuke.removeEventFilter(f)
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
 
 class eventFilterClass(QObject):
-    def eventFilter(self, obj, ev):
-        if ev.type() == QEvent.ChildPolished:
+    ___ eventFilter(self, obj, ev):
+        __ ev.type() == QEvent.ChildPolished:
             w = ev.child()
             w.setWindowTitle('NUKE')
         return False

@@ -1,4 +1,4 @@
-def openFileReturnArr(file):
+___ openFileReturnArr(file):
     '''
     open set file, read in all lines and
     return an array with all the lines

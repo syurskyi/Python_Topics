@@ -1,45 +1,45 @@
-import ?.rotopaint as rp
-
-n = ?.sN__
-k = n['curves']
-root = k.rootLayer
-
-___ shape __ root:
-    print shape.name
-
-k.toElement('Rectangle1')
-k.toElement('Layer1/Rectangle1')
-
-
-def findShapes(root):
-    ___ shape __ root:
-        if isinstance(shape, rp.Layer):
-            findShapes(shape)
-        else:
-            print shape.name
-
-
-findShapes(root)
-
-########################################################################################################################
-
-import ?.rotopaint as rp
-import math
-
-rpNode = ?.sN__
-cKnob= rpNode['curves']
-root = cKnob.rootLayer
-
-___ shape __ root:
-    print shape.name
-# cKnob.toElement('Bezier1')
-# shape = cKnob.toElement('Layer1/Stroke3')
-
-def findShapes(root):
-    ___ shape __ root:
-        if isinstance(shape, rp.Layer):
-            findShapes(shape)
-        else:
-            print shape.name
-findShapes(root)
-shape.ap..(rp.AnimControlPoint(1000,2000))
+# ______ ?.r_p.. __ rp
+#
+# n _ ?.sN__
+# k _ ? *curves
+# root _ ?.rL..
+#
+# ___ shape __ ?
+#     print ?.n..
+#
+# ?.tE.. *Rectangle1
+# ?.tE.. *Layer1/Rectangle1
+#
+#
+# ___ findShapes root
+#     ___ shape __ ?
+#         __ i.. ? ?.L..
+#             ? ?
+#         ____
+#             print shape.name
+#
+#
+# ? ?
+#
+# ########################################################################################################################
+#
+# ______ ?.r_p.. __ rp
+# ______ ma..
+#
+# rpNode _ ?.sN__
+# cKnob_ ? *curves
+# root _ ?.rL..
+#
+# ___ shape __ ?
+#     print ?.n..
+# # cKnob.toElement('Bezier1')
+# # shape _ cKnob.toElement('Layer1/Stroke3')
+#
+# ___ findShapes root
+#     ___ shape __ ?
+#         __ i.. ? ?.L..
+#             ? ?
+#         ____
+#             print ?.n..
+# ? ?
+# sh__.ap.. ?.ACP.. 1000 2000

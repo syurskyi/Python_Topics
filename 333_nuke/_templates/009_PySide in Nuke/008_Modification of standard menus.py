@@ -1,6 +1,6 @@
 # linearAnim
 
-import ?
+______ ?
 
 n = ?.sN__
 k = n['translate']
@@ -10,11 +10,11 @@ ___ i __ ra..(100):
 
 # change to function doit
 
-def doit():
+___ doit():
     k = ?.thisKnob()
-    if k.arraySize() > 1:
+    __ k.arraySize() > 1:
         index = getKnobIndex()
-    else:
+    ____
         index = 0
     k.setAnimated()
     ___ i __ ra..(100):
@@ -23,7 +23,7 @@ def doit():
 # shtobu polychit' index knoba, kotoruj nahoditsja v kontexte, dostatochno vuzvat' ety fynkcijy
 # no vuzuvat' ejo sledyet tol'ko dlja knobov gde kanalov bol'she odnogo
 
-def getKnobIndex():
+___ getKnobIndex():
 
     tclGetAnimIndex = """
 

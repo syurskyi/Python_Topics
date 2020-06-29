@@ -1,5 +1,5 @@
 
-def ColorCorrect(node):
-    import colorCorrect
+___ ColorCorrect(node):
+    ______ colorCorrect
     colorCorrect.addTab(node)
     

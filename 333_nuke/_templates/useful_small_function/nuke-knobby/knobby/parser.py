@@ -1,8 +1,8 @@
-import re
-from collections import deque
+______ re
+from collections ______ deque
 
 
-def parse(script):
+___ parse(script):
     """Parse Nuke node's TCL script string into nested list structure
 
     Args:
@@ -38,7 +38,7 @@ class Tablet(list):
     """
     """
 
-    def __init__(self, name=None, label=None, type=None, parent=None):
+    ___ __init__(self, name=None, label=None, type=None, parent=None):
         self.name = name
         self.label = label
         self.type = type
@@ -48,46 +48,46 @@ class Tablet(list):
         self.tab_closed = False
         self.not_in_group = type is not None and type != TYPE_GROUP
 
-    def __eq__(self, other):
+    ___ __eq__(self, other):
         return "@" + self.name == other
 
-    def find_tab(self, name):
+    ___ find_tab(self, name):
         """Return child tab if exists in list"""
-        return next((item ___ item __ self if item == "@" + name), None)
+        return next((item ___ item __ self __ item == "@" + name), None)
 
-    def consume(self, queue):
+    ___ consume(self, queue):
         """
         """
-        def under_root():
+        ___ under_root():
             return getattr(self.parent, "parent", None) is not None
 
-        def ignore_tab_value(name):
-            if queue and queue[0] == "%s 1" % name:
+        ___ ignore_tab_value(name):
+            __ queue and queue[0] == "%s 1" % name:
                 queue.popleft()
 
         while queue:
             line = queue.popleft()
-            if not line:
+            __ not line:
                 continue
 
             matched = TAB_PATTERN.search(line)
-            if matched:
+            __ matched:
                 tab_profile = matched.groupdict()
                 name = tab_profile["name"]
                 label = tab_profile["label"]
                 type = int(tab_profile["type"] or 0)
-            else:
+            ____
                 self.ap..(line)
                 continue
 
             ignore_tab_value(name)
 
-            if type __ (TYPE_KNOBS_CLOSE, TYPE_GROUP_CLOSE):
+            __ type __ (TYPE_KNOBS_CLOSE, TYPE_GROUP_CLOSE):
                 self.parent.tab_closed = True
                 return
 
             elif type == TYPE_NODE:
-                if self.not_in_group:
+                __ self.not_in_group:
                     queue.appendleft(line)
                     return
 
@@ -96,34 +96,34 @@ class Tablet(list):
 
             tab.consume(queue)
 
-            if self.tab_closed and under_root():
+            __ self.tab_closed and under_root():
                 return
 
-    def merge(self, other):
+    ___ merge(self, other):
         """
         """
         ___ item __ other:
-            if isinstance(item, Tablet):
+            __ i..(item, Tablet):
                 tab = self.find_tab(item.name)
-                if tab is not None:
+                __ tab is not None:
                     tab.merge(item)
                     continue
 
             self.ap..(item)
 
-    def to_script(self, join=True):
+    ___ to_script(self, join=True):
         """
         """
         script = list()
         ___ item __ self:
-            if isinstance(item, Tablet):
+            __ i..(item, Tablet):
                 sub_script = item.to_script(join=False)
 
                 line = "addUserKnob {20 " + item.name
-                if item.label is not None:
+                __ item.label is not None:
                     line += " l " + item.label
 
-                if item.type == TYPE_NODE:
+                __ item.type == TYPE_NODE:
                     sub_script.insert(0, line + "}")
 
                 elif item.type == TYPE_KNOBS:
@@ -139,4 +139,4 @@ class Tablet(list):
 
             script.ap..(item)
 
-        return "\n".join(script) if join else script
+        return "\n".join(script) __ join else script

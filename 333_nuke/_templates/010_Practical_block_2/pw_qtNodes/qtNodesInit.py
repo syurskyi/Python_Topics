@@ -7,31 +7,31 @@ import qNukeWindow
 3. Run nuke
 '''
 
-import ?
+______ ?
 
-from PySide.QtCore import *
-from PySide.QtGui import *
-import qtNodes
+from PySide.QtCore ______ *
+from PySide.QtGui ______ *
+______ qtNodes
 
 
-def getMainWindow():
+___ getMainWindow():
     qApp = QApplication.instance()
     ___ widget __ qApp.topLevelWidgets():
-        if widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
+        __ widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
             return widget
 qNuke = getMainWindow()
 
 class eventFilterWindowClass(QObject):
-    def eventFilter(self, obj, ev):
-        if ev.type() == QEvent.ChildPolished:
+    ___ eventFilter(self, obj, ev):
+        __ ev.type() == QEvent.ChildPolished:
             self.processNode(ev.child())
         return False
         
-    def processNode(self, n):
+    ___ processNode(self, n):
         nukeNode = ?.toNode( str(n.objectName()) )
-        if nukeNode:
+        __ nukeNode:
             nodeClass = nukeNode.Class()
-            if nodeClass __ dir(qtNodes):
+            __ nodeClass __ dir(qtNodes):
                 getattr(qtNodes, nodeClass)(n)
 
 

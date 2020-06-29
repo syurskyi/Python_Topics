@@ -2,28 +2,28 @@
 Functions to access values from Nuke Nodes
 '''
 
-import os
-import re
-import ?
-import getseq
+______ os
+______ re
+______ ?
+______ getseq
 
-import dd.xplatform
+______ dd.xplatform
 
-from dd.runtime.api import relativeImport, load
-from dd.runtime import info
+from dd.runtime.api ______ relativeImport, load
+from dd.runtime ______ info
 load('ddlogger')
-import ddlogger
+______ ddlogger
 LOGGER = ddlogger.getLogger('getfromnode')
 
 load('nukepipeline')
-if info.getVersionToBeLoaded("nukepipeline") >= "3.1.0":
+__ info.getVersionToBeLoaded("nukepipeline") >= "3.1.0":
     relativeImport('matchnode', 'nukepipeline/common/utils')
-else:
+____
     relativeImport('matchnode', 'common/utils')
-from matchnode import byClass
+from matchnode ______ byClass
 
 
-def filePath(node=None, proxy=False, regex=None, force_match=True):
+___ filePath(node=None, proxy=False, regex=None, force_match=True):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -34,16 +34,16 @@ def filePath(node=None, proxy=False, regex=None, force_match=True):
     result = None
 
     # check node, use selected Node in dag if no arg
-    if not node:
+    __ not node:
         node = ?.sN__
         
     # check for regex, eliminate non-matching node
-    if regex:
-        if not byClass(node, regex, force_match):
+    __ regex:
+        __ not byClass(node, regex, force_match):
             node = None
     
     # check for node elimination
-    if node:
+    __ node:
         try:
             my_knob = node.knob('file')
             try:
@@ -66,16 +66,16 @@ def filePath(node=None, proxy=False, regex=None, force_match=True):
         # end try
         
         # check if proxy enabled, if so return Proxy knob instead of File
-        if proxy:
-            if ?.root().proxy():
-                if 'proxy' __ node.knobs():
+        __ proxy:
+            __ ?.root().proxy():
+                __ 'proxy' __ node.knobs():
                     try:
                         # attempt to get proxy knob from linked (gizmos < 5.2v1)
-                        if node.getLinkedKnob().knob('proxy').value():
+                        __ node.getLinkedKnob().knob('proxy').value():
                             result = node.getLinkedKnob().knob('proxy').value()
                     except AttributeError:
                         # attempt to get proxy knob value directly (gizmos >= 5.2v
-                        if node.knob('proxy').value():
+                        __ node.knob('proxy').value():
                             result = node.knob('proxy').value()
         # end if
 
@@ -83,7 +83,7 @@ def filePath(node=None, proxy=False, regex=None, force_match=True):
 
         expression_check = re.search('[\[\{\(\]\}\)\$]', str(result))
         # if an expression might exist, attempt to evaluate
-        if expression_check:
+        __ expression_check:
             # make a copy of the result to process
             eval_result = result
 
@@ -108,14 +108,14 @@ def filePath(node=None, proxy=False, regex=None, force_match=True):
                 # we need the %v or %V variable to remain unevaluated
                 view_test = re.search('(%[V|v])', eval_result)
                 # if it exists, log old value and replace with !VIEW! placeholder
-                if view_test:
+                __ view_test:
                     old_view = view_test.groups()[0]
                     eval_result = re.sub(old_view, '!VIEW!', eval_result)
 
                 # we need the %d frame range variable to remain unevaluated
                 range_test = re.search('(%[0-9]+d)', eval_result)
                 # if it exists, log old value and replace with !RANGE! placeholder
-                if range_test:
+                __ range_test:
                     old_range = range_test.groups()[0]
                     eval_result = re.sub(old_range, '!RANGE!', eval_result)
 
@@ -124,11 +124,11 @@ def filePath(node=None, proxy=False, regex=None, force_match=True):
                 eval_result = tmp.knob('file').evaluate()
 
                 # put the stored range variable back
-                if range_test:
+                __ range_test:
                     eval_result = re.sub('!RANGE!', old_range, eval_result)
 
                 # put the stored view variable back
-                if view_test:
+                __ view_test:
                     eval_result = re.sub('!VIEW!', old_view, eval_result)
 
                 # evaluation succeeded
@@ -140,18 +140,18 @@ def filePath(node=None, proxy=False, regex=None, force_match=True):
                 # one way or another, clean up the tmp node
                 ?.delete(tmp)
 
-    if result != None:
+    __ result != None:
         result = dd.xplatform.xpath(os.path.normpath(result))
         LOGGER.debug('Discovered path %s for node %s' % (
             result, node.knob('name').value()))
         return result
-    else:
+    ____
         LOGGER.debug('Discovered no path for node %s' % node.knob('name').value())
         return None
 # end filePath
    
 
-def filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
+___ filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -162,17 +162,17 @@ def filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
     result = None
 
     # check node, use selected Node in DAG if no arg
-    if not node:
+    __ not node:
         node = ?.sN__
 
     # check node again (in case user has no selection made)
     # get file path from node
-    if node:
+    __ node:
         path = filePath(node, proxy, regex, force_match)
         # if file path found, append frame range data
         # use getseq instad of root range
         # makes more sense eh? #61881 / #64178
-        if path:
+        __ path:
             first_frame, last_frame = getseq.getRange(path)
             LOGGER.debug('Discovered range of %s-%s' % (first_frame, last_frame))
             result = '%s %s-%s' % (path, first_frame, last_frame)
@@ -182,7 +182,7 @@ def filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
 #  end filePathWithRange
 
 
-def filePaths(nodes=None, proxy=False, regex=None, force_match=True):
+___ filePaths(nodes=None, proxy=False, regex=None, force_match=True):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -193,7 +193,7 @@ def filePaths(nodes=None, proxy=False, regex=None, force_match=True):
     result = []
 
     # check nodes, use selected Nodes in DAG if no arg
-    if not nodes:
+    __ not nodes:
         nodes = ?.selectedNodes()
 
     # loop through nodes and get path for each Node
@@ -207,7 +207,7 @@ def filePaths(nodes=None, proxy=False, regex=None, force_match=True):
 # end filePaths
 
 
-def filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
+___ filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -218,14 +218,14 @@ def filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
     result = []
 
     # check nodes, use selected Nodes in DAG if no arg
-    if not nodes:
+    __ not nodes:
         nodes = ?.selectedNodes()
 
     # loop through nodes and get path and range for each Node
     ___ i __ nodes:
         try:
             ra.. = filePathWithRange(i, proxy, regex, force_match)
-            if ra..:
+            __ ra..:
                 result.ap..(ra..)
         except AttributeError:
             pass
@@ -233,7 +233,7 @@ def filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
     return result
 # end filePaths
 
-def fileType(node):
+___ fileType(node):
     """
     Returns the file extension of the node given
     """
@@ -242,7 +242,7 @@ def fileType(node):
     return result
 # end fileType
 
-def format(node):
+___ format(node):
     
     """
     Returns the format of the specified Node, if in the nuke.formats() list
@@ -251,12 +251,12 @@ def format(node):
     my_format = None
     
     # check for node; default to selected Node in DAG if no arg
-    if not node:
+    __ not node:
         node = ?.sN__
     # endif
 
     # check for Node again (see if user has failed to make selection)
-    if node:
+    __ node:
         # grab height from node
         my_height = node.height()
         
@@ -273,7 +273,7 @@ def format(node):
         ___ i __ ?.formats():
             thisFormat = (i.height(), i.width(), i.pixelAspect())
             # if matching format found, assign my_format to the match
-            if thisFormat == my_format:
+            __ thisFormat == my_format:
                 my_format = i
                 break
                 

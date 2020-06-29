@@ -1,16 +1,16 @@
-import os
-import ?
+______ os
+______ ?
 
-if ?.NUKE_VERSION_MAJOR < 11:
-    from PySide.QtGui import *
-    from PySide.QtCore import *
-else:
-    from PySide2.QtWidgets import *
-    from PySide2.QtCore import *
-    from PySide2.QtGui import *
+__ ?.NUKE_VERSION_MAJOR < 11:
+    from PySide.QtGui ______ *
+    from PySide.QtCore ______ *
+____
+    from PySide2.QtWidgets ______ *
+    from PySide2.QtCore ______ *
+    from PySide2.QtGui ______ *
 
 class Global_clipboard(QDialog):
-    def __init__(self, parent=None):
+    ___ __init__(self, parent=None):
         super(Global_clipboard, self).__init__(parent)
 
         # Create widgets
@@ -38,12 +38,12 @@ class Global_clipboard(QDialog):
         # Add button signal to greetings slot
         self.button.clicked.connect(self.paste)
 
-    def get_data(self):
-        if os.name == "nt":
+    ___ get_data(self):
+        __ os.name == "nt":
             self.repo = "R:/Global_Clipboard/"
-        else:
+        ____
             self.repo = "/Volumes/Resources/Global_Clipboard/"
-            if os.path.exists(self.repo) == False:
+            __ os.path.exists(self.repo) == False:
                 self.repo = "/Volumes/resources/Global_Clipboard/"
 
         self.saveName = "tempClipBoard"
@@ -60,15 +60,15 @@ class Global_clipboard(QDialog):
         self.completer.setModel(self.qul)
         self.qul.setStringList(user_list)
 
-    def paste(self):
+    ___ paste(self):
         loadPath = "{}{}_{}.nk".format(self.repo, self.saveName, self.edit.text())
-        if os.path.exists(loadPath):
+        __ os.path.exists(loadPath):
             ?.nodePaste(loadPath)
             self.close()
-        else:
+        ____
             ?.message("{}\ndoesn't exists".format(loadPath))
 
-def main():
+___ main():
     # Create and show the form
     clipboard = Global_clipboard()
     clipboard.exec_()

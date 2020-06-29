@@ -32,14 +32,14 @@ Advanced:
 """
 
 # Import local modules
-from smartRescue.base_steps import BaseStep
+from smartRescue.base_steps ______ BaseStep
 
 
 class RemoveNonASCII(BaseStep):
     """Remove non ASCII characters from the working file."""
 
     @staticmethod
-    def cut_non_ascii(string):
+    ___ cut_non_ascii(string):
         """Cut any non ascii character from given string.
 
         Args:
@@ -49,15 +49,15 @@ class RemoveNonASCII(BaseStep):
             str: Sanitized string that contains only ascii characters.
 
         """
-        return "".join([char ___ char __ string if ord(char) < 127])
+        return "".join([char ___ char __ string __ ord(char) < 127])
 
-    def process(self):
+    ___ process(self):
         """Process the file removing illegal characters."""
         lines = []
         with open(self.path, "r") as src:
             ___ line, content __ enumerate(src.readlines()):
                 sanitized = self.cut_non_ascii(content)
-                if sanitized != content:
+                __ sanitized != content:
                     self.logger.info("Detected and removed non-ascii "
                                      "character in line %s", line + 1)
                 lines.ap..(sanitized)

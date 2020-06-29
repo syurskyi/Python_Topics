@@ -1,38 +1,38 @@
-import ?
+______ ?
 
 d = __import__('__main__').__dict__
 
-def switch():
-    if 'syncItem' __ d:
+___ switch():
+    __ 'syncItem' __ d:
         syncItem = d['syncItem']
         a = syncItem.action()
         data = a.data()
-        if data:
+        __ data:
             # off
             a.setData(None)
             a.setText('Enable SYNC')
             callback(False)
-        else:
+        ____
             # ON
             a.setData(True)
             a.setText('Disable SYNC')
             callback(True)
 
-def callback(v):
-    if v:
+___ callback(v):
+    __ v:
        ?.addKnobChanged(sync)
-    else:
+    ____
         ?.removeKnobChanged(sync)
 
-def sync():
+___ sync():
     k = ?.thisKnob()
-    if not k.name() __ ['name', 'selected', 'showPanel', 'hidePanel']:
+    __ not k.name() __ ['name', 'selected', 'showPanel', 'hidePanel']:
         n = ?.thisNode()
         other = ?.selectedNodes(n.Class())
         v = k.getValue()
         #>>>>>
         d['lastVal'] = v
         ___ node __ other:
-            if not node is n:
+            __ not node is n:
                 node[k.name()].sV..(v)
 

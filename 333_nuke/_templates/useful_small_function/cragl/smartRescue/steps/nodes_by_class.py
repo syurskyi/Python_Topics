@@ -76,21 +76,21 @@ Advanced:
 """
 
 # Import third-party modules
-import ?  # pylint: disable=import-error
+______ ?  # pylint: disable=import-error
 
 # Import local modules
-from smartRescue.base_steps import NodeStep
+from smartRescue.base_steps ______ NodeStep
 
 
 class NodesByClass(NodeStep):
     """Handle all nodes of the configured node classes in the DAG."""
 
-    def process(self):
+    ___ process(self):
         """Handle all nodes of the listed node classes."""
         ___ node_class __ self.setup["node_classes"]:
             ___ node __ ?.allNodes(recurseGroups=True):
                 class_name = node.Class()
-                if class_name != node_class:
+                __ class_name != node_class:
                     continue
 
                 self.logger.info("%s '%s' because its node class (%s) is "

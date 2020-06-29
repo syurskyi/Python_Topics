@@ -1,29 +1,29 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartRender_v3.0/smartRender/src/helper.py
-import hashlib
-import json
-import multiprocessing
-import os
-import random
-import sys
-import subprocess
-import time
-import urllib
-import xml.etree.ElementTree as ET
-import collections
-import platform
-import datetime
-import errno
-import ?
-import nukescripts
-if ?.NUKE_VERSION_MAJOR < 11:
-    from PySide import QtGui as QtWidgets
-    from PySide import QtCore
-else:
-    from PySide2 import QtWidgets
-    from PySide2 import QtCore
-import templates
+______ hashlib
+______ json
+______ multiprocessing
+______ os
+______ random
+______ sys
+______ subprocess
+______ time
+______ urllib
+______ xml.etree.ElementTree as ET
+______ collections
+______ platform
+______ datetime
+______ errno
+______ ?
+______ nukescripts
+__ ?.NUKE_VERSION_MAJOR < 11:
+    from PySide ______ QtGui as QtWidgets
+    from PySide ______ QtCore
+____
+    from PySide2 ______ QtWidgets
+    from PySide2 ______ QtCore
+______ templates
 
-def load_icons(*args):
+___ load_icons(*args):
     this_dir = os.path.join(os.path.dirname(__file__))
     dir_icon = os.path.join(this_dir, '../', 'icons')
     dir_icon = os.path.normpath(dir_icon)
@@ -62,31 +62,31 @@ def load_icons(*args):
      'icon_recent': os.path.join(dir_icon, 'recent.png')}
 
 
-def get_next_renderjob(*args):
+___ get_next_renderjob(*args):
     jobs_xml = get_job_xml()
-    if jobs_xml == '':
+    __ jobs_xml == '':
         return
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
         ___ setting __ job.findall('setting'):
-            if setting.get('name') == 'status':
-                if setting.text == 'waiting':
+            __ setting.get('name') == 'status':
+                __ setting.text == 'waiting':
                     return job.get('id')
 
 
-def get_all_write_nodes_data(*args):
+___ get_all_write_nodes_data(*args):
     write_data = {}
-    all_write_nodes = [ node ___ node __ ?.allNodes('Write') if node['disable'].getValue() == 0.0 ]
+    all_write_nodes = [ node ___ node __ ?.allNodes('Write') __ node['disable'].getValue() == 0.0 ]
     ___ write __ all_write_nodes:
         write_data[write.name()] = write['file'].getValue()
 
     return write_data
 
 
-def get_smart_render_private_root(*args):
+___ get_smart_render_private_root(*args):
     root = os.path.join(os.path.expanduser('~'), '.cragl', 'smartRender')
-    if not os.path.isdir(root):
+    __ not os.path.isdir(root):
         try:
             os.makedirs(root)
         except:
@@ -95,9 +95,9 @@ def get_smart_render_private_root(*args):
     return root
 
 
-def get_smart_render_public_root(*args):
+___ get_smart_render_public_root(*args):
     root = os.path.join(os.path.expanduser('~'), 'cragl', 'smartRender')
-    if not os.path.isdir(root):
+    __ not os.path.isdir(root):
         try:
             os.makedirs(root)
         except:
@@ -106,15 +106,15 @@ def get_smart_render_public_root(*args):
     return root
 
 
-def get_installed_root_dir(*args):
+___ get_installed_root_dir(*args):
     this_dir = os.path.join(os.path.dirname(__file__))
     root = os.path.join(this_dir, '../', '../')
     return os.path.normpath(root)
 
 
-def get_public_cache_folder():
+___ get_public_cache_folder():
     cache_dir = os.path.join(get_smart_render_public_root(), 'cache')
-    if not os.path.isdir(cache_dir):
+    __ not os.path.isdir(cache_dir):
         try:
             os.makedirs(cache_dir)
         except:
@@ -124,9 +124,9 @@ def get_public_cache_folder():
     return cache_dir
 
 
-def get_tmp_folder():
+___ get_tmp_folder():
     tmp_dir = os.path.join(get_smart_render_public_root(), 'tmp')
-    if not os.path.isdir(tmp_dir):
+    __ not os.path.isdir(tmp_dir):
         try:
             os.makedirs(tmp_dir)
         except:
@@ -136,9 +136,9 @@ def get_tmp_folder():
     return tmp_dir
 
 
-def get_smartRender_backup_dir(*args):
+___ get_smartRender_backup_dir(*args):
     backup_dir = os.path.join(get_smart_render_public_root(), 'backups')
-    if not os.path.isdir(backup_dir):
+    __ not os.path.isdir(backup_dir):
         try:
             os.makedirs(backup_dir)
         except:
@@ -147,9 +147,9 @@ def get_smartRender_backup_dir(*args):
     return backup_dir
 
 
-def get_smartrender_log_dir(*args):
+___ get_smartrender_log_dir(*args):
     logs_dir = os.path.join(get_smart_render_public_root(), 'logs')
-    if not os.path.isdir(logs_dir):
+    __ not os.path.isdir(logs_dir):
         try:
             os.makedirs(logs_dir)
         except:
@@ -158,11 +158,11 @@ def get_smartrender_log_dir(*args):
     return logs_dir
 
 
-def get_sounds_dir(*args):
+___ get_sounds_dir(*args):
     this_dir = os.path.dirname(__file__)
     sounds_dir = os.path.join(this_dir, '../', 'sounds')
     sounds_dir = os.path.normpath(sounds_dir)
-    if not os.path.isdir(sounds_dir):
+    __ not os.path.isdir(sounds_dir):
         try:
             os.makedirs(sounds_dir)
         except:
@@ -171,20 +171,20 @@ def get_sounds_dir(*args):
     return sounds_dir
 
 
-def get_tooltips_file(*args):
+___ get_tooltips_file(*args):
     this_dir = os.path.dirname(__file__)
     tooltips = os.path.join(this_dir, '../', 'data', 'tooltips.json')
     return os.path.normpath(tooltips)
 
 
-def update_job_log(job_id, processdata, time = str(int(time.time())), *args):
+___ update_job_log(job_id, processdata, time = str(int(time.time())), *args):
     jobs_xml = get_job_xml()
-    if jobs_xml == '':
+    __ jobs_xml == '':
         return
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        if job.get('id') == job_id:
+        __ job.get('id') == job_id:
             process = job.find('process')
             p = ET.SubElement(process, 'data')
             p.set('time', str(time))
@@ -197,7 +197,7 @@ def update_job_log(job_id, processdata, time = str(int(time.time())), *args):
             return True
 
 
-def check_xml_ok(xml, *args):
+___ check_xml_ok(xml, *args):
     settings_xml = os.path.join(get_smart_render_private_root(), 'settings.xml')
     try:
         with open(xml, 'r') as xml_file:
@@ -213,20 +213,20 @@ def check_xml_ok(xml, *args):
         reset.setStyleSheet(style)
         reset.clearFocus()
         msg_box.addButton('Cancel', QtWidgets.QMessageBox.RejectRole)
-        if msg_box.exec_() == QtWidgets.QMessageBox.AcceptRole:
-            if os.path.isfile(xml):
+        __ msg_box.exec_() == QtWidgets.QMessageBox.AcceptRole:
+            __ os.path.isfile(xml):
                 os.remove(xml)
-                if xml == settings_xml:
+                __ xml == settings_xml:
                     get_settings_xml()
-                else:
+                ____
                     jobs_xml = get_job_xml()
-                    if jobs_xml == '':
+                    __ jobs_xml == '':
                         return False
-        else:
+        ____
             return False
 
 
-def check_web_connection(*args):
+___ check_web_connection(*args):
     try:
         urllib.urlopen('http://www.cragl.com')
         return True
@@ -234,55 +234,55 @@ def check_web_connection(*args):
         return False
 
 
-def update_job_data(job_id, key, val, *args):
+___ update_job_data(job_id, key, val, *args):
     jobs_xml = get_job_xml()
-    if jobs_xml == '':
+    __ jobs_xml == '':
         return
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        if job.get('id') == job_id:
+        __ job.get('id') == job_id:
             ___ setting __ job.findall('setting'):
-                if setting.get('name') == key:
+                __ setting.get('name') == key:
                     setting.text = val
                     with open(jobs_xml, 'w') as xml:
                         prettyprint(jobs_root)
                         jobs_tree.write(xml, encoding='utf-8', xml_declaration=True)
 
 
-def calculate_process_precentage(job_id, frame, *args):
+___ calculate_process_precentage(job_id, frame, *args):
     jobs_xml = get_job_xml()
-    if jobs_xml == '':
+    __ jobs_xml == '':
         return
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     count_frames_done = 0
     ___ job __ jobs_root.find('jobs').findall('job'):
-        if job.get('id') == job_id:
+        __ job.get('id') == job_id:
             ___ data __ job.find('process').findall('data'):
-                if data.get('status') == '400':
+                __ data.get('status') == '400':
                     count_frames_done += 1
 
             count_frames_to_process = int(job.find('frames').get('count'))
             done_precentage = int(100.0 / count_frames_to_process * count_frames_done)
-            if done_precentage > 100:
+            __ done_precentage > 100:
                 done_precentage = 100
             ___ setting __ job.findall('setting'):
-                if setting.get('name') == 'progress':
+                __ setting.get('name') == 'progress':
                     setting.text = str(done_precentage)
-                if setting.get('name') == 'status':
+                __ setting.get('name') == 'status':
                     tmp_status = setting.text
-                    if done_precentage == 0:
+                    __ done_precentage == 0:
                         setting.text = 'waiting'
-                    if done_precentage > 0:
+                    __ done_precentage > 0:
                         setting.text = 'rendering'
-                    if str(done_precentage) == '100':
+                    __ str(done_precentage) == '100':
                         setting.text = 'finished'
-                    if tmp_status == 'paused':
+                    __ tmp_status == 'paused':
                         setting.text = 'paused'
 
             ___ f __ job.find('frames').findall('frame'):
-                if f.text == str(frame):
+                __ f.text == str(frame):
                     job.find('frames').remove(f)
 
             with open(jobs_xml, 'w') as xml:
@@ -291,27 +291,27 @@ def calculate_process_precentage(job_id, frame, *args):
             return done_precentage
 
 
-def set_style_sheet(widget, *args):
+___ set_style_sheet(widget, *args):
     this_dir = os.path.join(os.path.dirname(__file__))
     styles_nuke = os.path.join(this_dir, '../', 'styles', 'nuke.qss')
     styles_nuke = os.path.normpath(styles_nuke)
-    if os.path.isfile(styles_nuke):
+    __ os.path.isfile(styles_nuke):
         with open(styles_nuke) as file_:
             widget.setStyleSheet(file_.read())
 
 
-def show_message_box(window, message, *args):
+___ show_message_box(window, message, *args):
     msg = QtWidgets.QMessageBox()
     msg.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg.information(window, 'information', message)
 
 
-def open_website(url, *args):
-    if sys.platform == 'win32':
+___ open_website(url, *args):
+    __ sys.platform == 'win32':
         os.startfile(url)
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
-    else:
+    ____
         try:
             subprocess.Popen(['xdg-open', url])
         except OSError:
@@ -321,10 +321,10 @@ def open_website(url, *args):
     return
 
 
-def get_job_id_by_script_orig(script_orig, *args):
+___ get_job_id_by_script_orig(script_orig, *args):
     try:
         jobs_xml = get_job_xml()
-        if jobs_xml == '':
+        __ jobs_xml == '':
             return ''
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
@@ -334,29 +334,29 @@ def get_job_id_by_script_orig(script_orig, *args):
     jobs = []
     ___ job __ jobs_root.find('jobs').findall('job'):
         ___ setting __ job.findall('setting'):
-            if setting.get('name') == 'script_orig':
-                if setting.text == script_orig:
+            __ setting.get('name') == 'script_orig':
+                __ setting.text == script_orig:
                     jobs.ap..(job.get('id'))
 
-    if le.(jobs) == 0:
+    __ le.(jobs) == 0:
         return ''
     elif le.(jobs) == 1:
         return jobs[0]
-    else:
+    ____
         latest = jobs[0]
         ___ job __ jobs:
-            if job.split('_')[0] > latest.split('_')[0]:
+            __ job.split('_')[0] > latest.split('_')[0]:
                 latest = job
 
         return latest
 
 
-def get_job_data(job_id, *args):
+___ get_job_data(job_id, *args):
     job_data = {}
     frames_to_process = []
     try:
         jobs_xml = get_job_xml()
-        if jobs_xml == '':
+        __ jobs_xml == '':
             return {}
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
@@ -364,7 +364,7 @@ def get_job_data(job_id, *args):
         return {}
 
     ___ job __ jobs_root.find('jobs').findall('job'):
-        if job.get('id') == job_id:
+        __ job.get('id') == job_id:
             job_data['job_id'] = job_id
             ___ setting __ job.findall('setting'):
                 job_data[setting.get('name')] = setting.text
@@ -375,7 +375,7 @@ def get_job_data(job_id, *args):
             job_data['frames_to_process'] = frames_to_process
             number_errors = 0
             ___ data __ job.find('process').findall('data'):
-                if data.get('status') == '100':
+                __ data.get('status') == '100':
                     number_errors += 1
 
             job_data['number_errors'] = number_errors
@@ -383,11 +383,11 @@ def get_job_data(job_id, *args):
     return job_data
 
 
-def get_all_jobs_data(filter, *args):
+___ get_all_jobs_data(filter, *args):
     jobs = collections.OrderedDict()
     try:
         jobs_xml = get_job_xml()
-        if jobs_xml == '':
+        __ jobs_xml == '':
             return {}
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
@@ -397,10 +397,10 @@ def get_all_jobs_data(filter, *args):
     ___ job __ jobs_root.find('jobs').findall('job'):
         job_id = job.get('id')
         jobs[job_id] = get_job_data(job_id)
-        if filter == 'waiting' and jobs[job_id]['status'] != 'waiting':
+        __ filter == 'waiting' and jobs[job_id]['status'] != 'waiting':
             del jobs[job_id]
             continue
-        if filter == 'waiting' and jobs[job_id]['status'] != 'waiting':
+        __ filter == 'waiting' and jobs[job_id]['status'] != 'waiting':
             del jobs[job_id]
             continue
         elif filter == 'paused' and jobs[job_id]['status'] != 'paused':
@@ -419,32 +419,32 @@ def get_all_jobs_data(filter, *args):
     return jobs
 
 
-def get_log_file(*args):
+___ get_log_file(*args):
     connect_dir = os.path.join(os.path.expanduser('~'), '.cragl', 'connect')
-    if not os.path.isdir(connect_dir):
+    __ not os.path.isdir(connect_dir):
         os.makedirs(connect_dir)
     log_file = os.path.join(connect_dir, 'connectlog.txt')
-    if not os.path.isfile(log_file):
+    __ not os.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
     return log_file
 
 
-def get_time_formated():
+___ get_time_formated():
     return time.strftime('%d.%m.%Y %H:%M:%S', time.localtime())
 
 
-def write_log(text, tool = 'rn'):
+___ write_log(text, tool = 'rn'):
     with open(get_log_file(), 'a') as file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
         log_time = time.strftime(log_time_format, time.localtime())
         file_.write('{}: {} {}\n'.format(log_time, tool, text))
 
 
-def write_render_log(text, *args):
+___ write_render_log(text, *args):
     log = os.path.join(get_smart_render_private_root(), 'log.txt')
-    if not os.path.isfile(log):
+    __ not os.path.isfile(log):
         with open(log, 'w') as lf:
             lf.write('')
     try:
@@ -455,10 +455,10 @@ def write_render_log(text, *args):
         return False
 
 
-def write_terminal_cmd(job_id, text, file = 'input', *args):
+___ write_terminal_cmd(job_id, text, file = 'input', *args):
     log_name = '{}_terminal_{}.log'.format(job_id, file)
     log = os.path.join(get_smartrender_log_dir(), log_name)
-    if not os.path.isfile(log):
+    __ not os.path.isfile(log):
         with open(log, 'w') as file_:
             file_.write('')
     try:
@@ -469,9 +469,9 @@ def write_terminal_cmd(job_id, text, file = 'input', *args):
         return False
 
 
-def get_job_xml(*args):
+___ get_job_xml(*args):
     job_xml = os.path.join(get_smart_render_private_root(), 'jobs.xml')
-    if not os.path.isfile(job_xml):
+    __ not os.path.isfile(job_xml):
         try:
             with open(job_xml, 'w') as job_template:
                 template = templates.JOB
@@ -483,8 +483,8 @@ def get_job_xml(*args):
     return job_xml
 
 
-def insert_as_read_node(job_details, write = None, *args):
-    if write:
+___ insert_as_read_node(job_details, write = None, *args):
+    __ write:
         read = ?.createNode('Read')
         read['file'].sV..(write['file'].getValue())
         read['first'].sV..(int(?.root()['first_frame'].getValue()))
@@ -496,7 +496,7 @@ def insert_as_read_node(job_details, write = None, *args):
         read.setXYpos(int(write['xpos'].getValue()), int(write['ypos'].getValue()) + 70)
         ?.zoom(1.0, (write.xpos(), write.ypos()))
         nukescripts.connect_selected_to_viewer(0)
-    else:
+    ____
         read = ?.createNode('Read')
         read['file'].sV..(job_details['render_path'])
         read['first'].sV..(int(job_details['render_start']))
@@ -509,34 +509,34 @@ def insert_as_read_node(job_details, write = None, *args):
         nukescripts.connect_selected_to_viewer(0)
 
 
-def get_job_details(job_id, *args):
+___ get_job_details(job_id, *args):
     job_details = {}
     jobs_xml = get_job_xml()
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        if job.get('id') == job_id:
+        __ job.get('id') == job_id:
             ___ setting __ job.findall('setting'):
                 job_details[setting.get('name')] = setting.text
 
     return job_details
 
 
-def force_create_render_dir(*args):
+___ force_create_render_dir(*args):
     file_name = ?.filename(?.thisNode())
     dir_name = os.path.dirname(file_name)
     os_dir = ?.callbacks.filenameFilter(dir_name)
     try:
         os.makedirs(os_dir)
     except OSError as e:
-        if e.errno != errno.EEXIST:
+        __ e.errno != errno.EEXIST:
             raise
 
 
-def load_terminal_log(job_id, mode, *args):
+___ load_terminal_log(job_id, mode, *args):
     xml_name = '{}_terminal_{}.log'.format(job_id, mode)
     terminal_file = os.path.join(get_smartrender_log_dir(), xml_name)
-    if not os.path.isfile(terminal_file):
+    __ not os.path.isfile(terminal_file):
         return ''
     try:
         with open(terminal_file, 'rt') as file:
@@ -545,76 +545,76 @@ def load_terminal_log(job_id, mode, *args):
         return 'Error reading the terminal input file. {}'.format(e)
 
 
-def load_job_log_data(job_id, filter, file_output = False, *args):
+___ load_job_log_data(job_id, filter, file_output = False, *args):
     job_data = ''
     jobs_xml = get_job_xml()
-    if jobs_xml == '':
+    __ jobs_xml == '':
         return
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        if job.get('id') == job_id:
+        __ job.get('id') == job_id:
             ___ data __ job.find('process').findall('data'):
                 code = ''
-                if data.get('status') == '100':
-                    if filter != 'job: all' and filter != 'job: error':
+                __ data.get('status') == '100':
+                    __ filter != 'job: all' and filter != 'job: error':
                         continue
-                    if file_output:
+                    __ file_output:
                         code = '[error]'
-                    else:
+                    ____
                         code = "[<span style='color:#993333'>error</span>"
                 elif data.get('status') == '300':
-                    if filter != 'job: all' and filter != 'job: info':
+                    __ filter != 'job: all' and filter != 'job: info':
                         continue
-                    if file_output:
+                    __ file_output:
                         code = '[info]'
-                    else:
+                    ____
                         code = '[info'
                 elif data.get('status') == '400':
-                    if filter != 'job: all' and filter != 'job: done':
+                    __ filter != 'job: all' and filter != 'job: done':
                         continue
-                    if file_output:
+                    __ file_output:
                         code = '[done]'
-                    else:
+                    ____
                         code = "[<span style='color:#339933'>done</span>"
                 data_time = int(data.get('time'))
                 time = datetime.datetime.fromtimestamp(data_time).strftime('%d/%m/%Y %H:%M:%S')
-                if file_output:
+                __ file_output:
                     job_data += '{time} {code} {text}\n'.format(time=time, code=code, text=data.text)
-                else:
+                ____
                     job_data += '<tr><td>{time}</td><td> {code}</td><td>] {text}</td></tr>'.format(time=time, code=code, text=data.text)
                     job_data = '<table>{}</table>'.format(job_data)
 
     return job_data
 
 
-def open_in_explorer(path, parent = None, *args):
-    if not os.path.isdir(path):
+___ open_in_explorer(path, parent = None, *args):
+    __ not os.path.isdir(path):
         msg = "Unable to open directory. The path doesn't exist:\n\n{}".format(path)
         show_message_box(parent, msg)
-    if platform.system() == 'Windows':
+    __ platform.system() == 'Windows':
         os.startfile(path)
     elif platform.system() == 'Darwin':
         subprocess.Popen(['open', path])
-    else:
+    ____
         subprocess.Popen(['xdg-open', path])
 
 
-def reset_file(which, window, *args):
-    if which == 'jobs':
+___ reset_file(which, window, *args):
+    __ which == 'jobs':
         message = 'Do you want to flush the jobs file?'
         proccess_button_text = 'flush jobs'
-    else:
+    ____
         message = 'Do you want to reset the smartRender settings? Please note: all render presets will be removed, too.'
         proccess_button_text = 'reset settings'
     process_button_color = '70, 10, 10, 255'
     cancel_button_text = 'cancel'
     reset = ask_dialog(message, proccess_button_text, process_button_color, cancel_button_text)
-    if reset:
-        if which == 'jobs':
+    __ reset:
+        __ which == 'jobs':
             jobs_file = get_job_xml()
             try:
-                if os.path.isfile(jobs_file):
+                __ os.path.isfile(jobs_file):
                     os.remove(jobs_file)
                     msg = 'Successfully flushed jobs file.'
                     show_message_box(window, msg)
@@ -624,7 +624,7 @@ def reset_file(which, window, *args):
         elif which == 'settings':
             settings_file = get_settings_xml()
             try:
-                if os.path.isfile(settings_file):
+                __ os.path.isfile(settings_file):
                     os.remove(settings_file)
                     msg = 'Successfully reset the smartRender settings.'
                     show_message_box(window, msg)
@@ -632,9 +632,9 @@ def reset_file(which, window, *args):
                 write_log('Cannot reset settings file. {}'.format(e))
 
 
-def get_settings_xml(*args):
+___ get_settings_xml(*args):
     settings_xml = os.path.join(get_smart_render_private_root(), 'settings.xml')
-    if not os.path.isfile(settings_xml):
+    __ not os.path.isfile(settings_xml):
         desktop_cache = os.path.join(os.path.expanduser('~'), 'Desktop/cache')
         try:
             with open(settings_xml, 'w') as render_template:
@@ -648,7 +648,7 @@ def get_settings_xml(*args):
     return settings_xml
 
 
-def check_settings_xml_values_exist():
+___ check_settings_xml_values_exist():
     settings = {'current_tab': '1',
      'timer_log_update': '1000',
      'timer_job_log_update': '5000',
@@ -690,19 +690,19 @@ def check_settings_xml_values_exist():
         check_xml_value_exists_current('setting', 'name', key, value)
 
 
-def load_sounds(*args):
+___ load_sounds(*args):
     sounds = []
     sounds_dir = get_sounds_dir()
-    if not os.path.isdir(sounds_dir):
+    __ not os.path.isdir(sounds_dir):
         return
     ___ file_ __ os.listdir(sounds_dir):
-        if os.path.splitext(file_)[1] __ ('.wav', '.WAV'):
+        __ os.path.splitext(file_)[1] __ ('.wav', '.WAV'):
             sounds.ap..(file_)
 
     return sounds
 
 
-def load_presets(*args):
+___ load_presets(*args):
     presets_list = {}
     settings_xml = get_settings_xml()
     settingstree = ET.parse(settings_xml)
@@ -711,7 +711,7 @@ def load_presets(*args):
         preset_name = presets.get('name')
         preset = {}
         ___ setting __ presets.findall('setting'):
-            if setting.get('name') == 'range':
+            __ setting.get('name') == 'range':
                 preset['range'] = setting.text
             elif setting.get('name') == 'custom_range':
                 preset['custom_range'] = setting.text
@@ -721,20 +721,20 @@ def load_presets(*args):
                 preset['overwrite'] = setting.text
             elif setting.get('name') == 'size':
                 preset['size'] = setting.text
-                if setting.get('width'):
+                __ setting.get('width'):
                     preset['width'] = setting.get('width')
-                else:
+                ____
                     preset['width'] = ''
-                if setting.get('height'):
+                __ setting.get('height'):
                     preset['height'] = setting.get('height')
-                else:
+                ____
                     preset['height'] = ''
                 preset['aspectratio'] = setting.get('aspectratio')
             elif setting.get('name') == 'description':
                 preset['description'] = setting.text
             elif setting.get('name') == 'thread_count':
                 preset['thread_count'] = setting.text
-                if not preset['thread_count']:
+                __ not preset['thread_count']:
                     preset['thread_count'] = ?.env['numCPUs'] / 2
 
         presets_list[preset_name] = preset
@@ -742,17 +742,17 @@ def load_presets(*args):
     return presets_list
 
 
-def play_sound(sound, *args):
+___ play_sound(sound, *args):
     sound_file = os.path.join(get_sounds_dir(), sound)
-    if os.path.isfile(sound_file):
+    __ os.path.isfile(sound_file):
         QtWidgets.QSound.play(sound_file)
 
 
-def load_settings(*args):
+___ load_settings(*args):
     settings_xml = get_settings_xml()
     settings = {}
     cache_paths = []
-    if check_xml_ok(settings_xml):
+    __ check_xml_ok(settings_xml):
         settingstree = ET.parse(settings_xml)
         settingsroot = settingstree.getroot()
         ___ setting __ settingsroot.find('settings').findall('setting'):
@@ -766,13 +766,13 @@ def load_settings(*args):
     return settings
 
 
-def get_caches_by_mode(mode, *args):
-    return [ cache['path'] ___ cache __ load_settings()['cache'] if cache['mode'] == mode ]
+___ get_caches_by_mode(mode, *args):
+    return [ cache['path'] ___ cache __ load_settings()['cache'] __ cache['mode'] == mode ]
 
 
-def add_cache_path(mode, path, *args):
+___ add_cache_path(mode, path, *args):
     settings_xml = get_settings_xml()
-    if settings_xml == '':
+    __ settings_xml == '':
         return
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
@@ -785,23 +785,23 @@ def add_cache_path(mode, path, *args):
         settings_tree.write(xml, encoding='utf-8', xml_declaration=True)
 
 
-def check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
+___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
     xml = os.path.join(get_smart_render_private_root(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        if child.get(key1) == value1:
+        __ child.get(key1) == value1:
             item_found += 1
-            if debug:
+            __ debug:
                 print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
             return
 
-    if item_found == 0:
+    __ item_found == 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
-        if key2 != '':
+        __ key2 != '':
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
@@ -811,24 +811,24 @@ def check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
-def check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '', value2 = ''):
+___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '', value2 = ''):
     xml = os.path.join(get_smart_render_private_root(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        if child.get(key1) == value1:
-            if value2 == child.text:
+        __ child.get(key1) == value1:
+            __ value2 == child.text:
                 item_found += 1
-                if debug:
+                __ debug:
                     print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
                 return
 
-    if item_found == 0:
+    __ item_found == 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
-        if key2 != '':
+        __ key2 != '':
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
@@ -838,31 +838,31 @@ def check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '',
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
-def check_xml_value_exists_current(section, key1, value1, text, key2 = '', value2 = ''):
+___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value2 = ''):
     settings_xml = os.path.join(get_smart_render_private_root(), 'settings.xml')
     tree = ET.parse(settings_xml)
     root = tree.getroot()
     item_found = 0
     current_found = False
     ___ child __ root.find('presets').findall('preset'):
-        if child.get('name') == 'current':
+        __ child.get('name') == 'current':
             current_found = True
-        else:
+        ____
             current_found = False
         ___ setting __ child.findall('setting'):
-            if setting.get(key1) == value1:
+            __ setting.get(key1) == value1:
                 item_found += 1
                 return
 
-    if current_found:
-        if item_found == 0:
+    __ current_found:
+        __ item_found == 0:
             elem = ET.Element(section)
             elem.set(key1, value1)
-            if key2 != '':
+            __ key2 != '':
                 elem.set(key2, value2)
             elem.text = text
             ___ child __ root.find('presets').findall('preset'):
-                if child.get('name') == 'current':
+                __ child.get('name') == 'current':
                     child.ap..(elem)
                     with open(settings_xml, 'w'):
                         prettyprint(root)
@@ -870,88 +870,88 @@ def check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
                     write_log('settings xml added: {}|{}|{}|{}|{}|{}'.format(section, key1, value1, text, key2, value2))
 
 
-def get_cpu_count(*args):
+___ get_cpu_count(*args):
     try:
         return multiprocessing.cpu_count()
     except Exception as e:
-        if hasattr(os, 'sysconf'):
-            if os.sysconf_names.has_key('SC_NPROCESSORS_ONLN'):
+        __ hasattr(os, 'sysconf'):
+            __ os.sysconf_names.has_key('SC_NPROCESSORS_ONLN'):
                 ncpus = os.sysconf('SC_NPROCESSORS_ONLN')
-                if isinstance(ncpus, int) and ncpus > 0:
+                __ i..(ncpus, int) and ncpus > 0:
                     return ncpus
-            else:
+            ____
                 return int(os.popen2('sysctl -n hw.ncpu')[1].read())
-        if os.environ.has_key('NUMBER_OF_PROCESSORS'):
+        __ os.environ.has_key('NUMBER_OF_PROCESSORS'):
             ncpus = int(os.environ['NUMBER_OF_PROCESSORS'])
-            if ncpus > 0:
+            __ ncpus > 0:
                 return ncpus
         return 1
 
 
-def prettyprint(elem, level = 0):
+___ prettyprint(elem, level = 0):
     i = '\n' + level * '  '
-    if le.(elem):
-        if not elem.text or not elem.text.strip():
+    __ le.(elem):
+        __ not elem.text or not elem.text.strip():
             elem.text = i + '  '
-        if not elem.tail or not elem.tail.strip():
+        __ not elem.tail or not elem.tail.strip():
             elem.tail = i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        if not elem.tail or not elem.tail.strip():
+        __ not elem.tail or not elem.tail.strip():
             elem.tail = i
     elif level and (not elem.tail or not elem.tail.strip()):
         elem.tail = i
 
 
-def delete_cache_path(path, *args):
+___ delete_cache_path(path, *args):
     settings_xml = get_settings_xml()
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
     ___ path_element __ settings_root.find('cache').findall('path'):
-        if path_element.text == path:
+        __ path_element.text == path:
             settings_root.find('cache').remove(path_element)
             with open(settings_xml, 'w') as xml:
                 prettyprint(settings_root)
                 settings_tree.write(xml, encoding='utf-8', xml_declaration=True)
 
 
-def ask_dialog(message = '', process_button_text = '', color_process = '', cancel_button_text = ''):
+___ ask_dialog(message = '', process_button_text = '', color_process = '', cancel_button_text = ''):
     msg_box = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Warning, 'QMessageBox.warning()', message, QtWidgets.QMessageBox.NoButton, None)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_button_text, QtWidgets.QMessageBox.AcceptRole)
-    if color_process != '':
-        if color_process == 'actionButton':
+    __ color_process != '':
+        __ color_process == 'actionButton':
             color_process = '51, 204, 255, 100'
         style = 'QPushButton {background-color: rgba(%s)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
     msg_box.addButton(cancel_button_text, QtWidgets.QMessageBox.RejectRole)
-    if msg_box.exec_() == QtWidgets.QMessageBox.AcceptRole:
+    __ msg_box.exec_() == QtWidgets.QMessageBox.AcceptRole:
         return True
-    else:
+    ____
         return False
         return
 
 
-def create_unique_job_id(*args):
+___ create_unique_job_id(*args):
     current_time = str(int(time.time()))
     rand_number = str(random.random())
     id = hashlib.md5('{}{}'.format(current_time, rand_number)).hexdigest()[:8]
     return str('{}_{}'.format(current_time, id))
 
 
-def get_all_views(range_ = 10):
+___ get_all_views(range_ = 10):
     try:
         views = []
         ___ i __ ra..(range_):
             ?.activeViewer().previousView()
 
         ___ i __ ra..(range_):
-            if ?.activeViewer().view() not __ views:
+            __ ?.activeViewer().view() not __ views:
                 views.ap..(?.activeViewer().view())
             ?.activeViewer().nextView()
 
@@ -960,29 +960,29 @@ def get_all_views(range_ = 10):
         return ['main']
 
 
-def create_tooltips(parent, key, *args):
+___ create_tooltips(parent, key, *args):
     tooltips_file = get_tooltips_file()
-    if not os.path.isfile(tooltips_file):
+    __ not os.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
         ttdata = json.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ tooltip __ ttdata[key]:
-            if tooltip['tt'] == widget.property('tt'):
+            __ tooltip['tt'] == widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.format(tooltip['ttt'], tooltip['ttc']))
 
 
-def get_explorer_name(*args):
-    if sys.platform == 'darwin':
+___ get_explorer_name(*args):
+    __ sys.platform == 'darwin':
         return 'finder'
-    else:
+    ____
         return 'explorer'
 
 
-def get_recent_nukescripts(*args):
+___ get_recent_nukescripts(*args):
     file_recent_files = os.path.join(os.path.expanduser('~'), '.nuke', 'recent_files')
     recent_files = []
-    if os.path.isfile(file_recent_files):
+    __ os.path.isfile(file_recent_files):
         with open(file_recent_files, 'r') as rf:
             ___ line __ rf:
                 file_ = line.replace('\n', '')
@@ -990,12 +990,12 @@ def get_recent_nukescripts(*args):
                 recent_files.ap..(file_)
 
             return recent_files
-    else:
+    ____
         return []
 
 
-def open_renderpath_in_explorer(label, renderpath, srw, *args):
-    if renderpath == '':
+___ open_renderpath_in_explorer(label, renderpath, srw, *args):
+    __ renderpath == '':
         label = label.split(' (')[0]
         msg = "The file path for '{}' hasn't been set up, yet.".format(label)
         show_message_box(srw, msg)
@@ -1007,10 +1007,10 @@ def open_renderpath_in_explorer(label, renderpath, srw, *args):
         return
 
 
-def get_processor(name):
+___ get_processor(name):
     this_dir = os.path.dirname(__file__)
     processor = os.path.join(this_dir, '../', 'trm', '{}.py'.format(name))
     processor = os.path.normpath(processor)
-    if not os.path.isfile(processor):
+    __ not os.path.isfile(processor):
         raise IOError('The processor script does not exist: {}'.format(processor))
     return processor
