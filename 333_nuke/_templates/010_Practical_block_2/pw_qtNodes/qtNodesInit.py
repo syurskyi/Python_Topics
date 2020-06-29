@@ -21,7 +21,7 @@ ___ getMainWindow():
             return widget
 qNuke = getMainWindow()
 
-class eventFilterWindowClass(QObject):
+c_ eventFilterWindowClass(QObject):
     ___ eventFilter(self, obj, ev):
         __ ev.type() == QEvent.ChildPolished:
             self.processNode(ev.child())

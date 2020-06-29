@@ -113,7 +113,7 @@ Number of node classes:
 """
 
 
-class ScriptInfo(NodeStep):
+c_ ScriptInfo(NodeStep):
     """Generate text file containing info about the working file."""
 
     # All possible knob values that store paths. In most cases a path is stored

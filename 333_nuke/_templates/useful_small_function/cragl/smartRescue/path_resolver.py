@@ -25,10 +25,10 @@ ______ re
 ______ sys
 
 
-class PathResolver(object):
+c_ PathResolver(object):
     """Resolve absolute path to PySide and Nuke executable."""
 
-    ___ __init__(self, path):
+    ___  - (self, path):
         """Initialize the PathResolver instance.
 
         Args:

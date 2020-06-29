@@ -40,10 +40,10 @@ from smartScripter ______ helper
 # We want to create a self-contained class explicitly. The user does not need
 # to call any methods on this class as the calculation works automatically.
 # pylint: disable=too-few-public-methods
-class Scanner(object):
+c_ Scanner(object):
     """Scanner to search for stacks and commands."""
 
-    ___ __init__(self, root, controller):
+    ___  - (self, root, controller):
         """Initialize the scanner instance.
 
         Args:

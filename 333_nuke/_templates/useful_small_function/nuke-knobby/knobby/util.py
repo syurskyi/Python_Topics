@@ -74,7 +74,7 @@ ___ imprint(node, data, tab=None):
         add_knobs(new_knobs, tab)
 
 
-class Knobby(object):
+c_ Knobby(object):
     """For creating knob which it's type isn't mapped in `create_knobs`
 
     Args:
@@ -85,7 +85,7 @@ class Knobby(object):
 
     """
 
-    ___ __init__(self, type, value, flags=None, *args):
+    ___  - (self, type, value, flags=None, *args):
         self.type = type
         self.value = value
         self.flags = flags or []

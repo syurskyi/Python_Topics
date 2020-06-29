@@ -10,7 +10,7 @@ __email__ = "boris.vfx@outlook.com"
 
 
 ______ ?
-______ nukescripts
+______ ?
 ______ itertools
 
 
@@ -724,11 +724,11 @@ ___ create_and_connect_child_dots(holdouts,color):
 #  CLASS DEFINITIONS
 
 
-class modalPanel(nukescripts.PythonPanel):
+c_ modalPanel(?.PythonPanel):
 
-    ___ __init__(self):
+    ___  - (self):
 
-        nukescripts.PythonPanel.__init__(self,"b_deep toolset")
+        ?.PythonPanel. - (self,"b_deep toolset")
         #CREATE KNOBS
         self.depth_from_deep = ?.PyScript_Knob('depth_from_deep', 'depth_from_deep', 'depth_for_defocus()')
         self.create_holdouts = ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])

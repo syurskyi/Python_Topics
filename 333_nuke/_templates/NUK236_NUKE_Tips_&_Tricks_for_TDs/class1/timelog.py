@@ -13,7 +13,7 @@ TIMER = 5
 IDLE_TIME = 30
 
 
-class Timelog():
+c_ Timelog():
 
     ___ start_thread(self):
 

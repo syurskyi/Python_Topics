@@ -139,7 +139,7 @@ ______ ?  # pylint: disable=import-error
 from smartRescue.base_steps ______ NodeStep
 
 
-class NodesByKnobValues(NodeStep):
+c_ NodesByKnobValues(NodeStep):
     """Handle nodes in the DAG matching the knob names and value conditions."""
 
     operators = {

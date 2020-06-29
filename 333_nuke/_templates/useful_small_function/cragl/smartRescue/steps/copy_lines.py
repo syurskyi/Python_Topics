@@ -66,7 +66,7 @@ ______ os
 from smartRescue.base_steps ______ BaseStep
 
 
-class CopyLines(BaseStep):
+c_ CopyLines(BaseStep):
     """Copy lines between first_line and last_line to backup file."""
 
     ___ process(self):

@@ -10,7 +10,7 @@
 from PySide.QtCore ______ *
 from PySide.QtGui ______ *
 
-class eventFilterClass(QObject):
+c_ eventFilterClass(QObject):
     ___ eventFilter(self, obj, ev):
         print ev.type()
         return False
@@ -26,7 +26,7 @@ qnuke.removeEventFilter(f)
 from PySide.QtCore ______ *
 from PySide.QtGui ______ *
 
-class eventFilterClass(QObject):
+c_ eventFilterClass(QObject):
     ___ eventFilter(self, obj, ev):
         __ ev.type() == QEvent.ChildPolished:
             w = ev.child()

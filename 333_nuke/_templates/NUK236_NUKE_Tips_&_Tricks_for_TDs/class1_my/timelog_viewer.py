@@ -3,15 +3,15 @@ ______ os
 ______ getpass
 ______ shutil
 ______ json
-______ nukescripts
+______ ?
 
 CURRENT_USER = getpass.getuser()
 LOG_DIR = os.path.join(os.path.dirname(__file__), 'logs')
 
 
-class Panel(nukescripts.PythonPanel):
-    ___ __init__(self, name):
-        super(Panel, self).__init__(name)
+c_ Panel(?.PythonPanel):
+    ___  - (self, name):
+        super(Panel, self). - (name)
 
         self.setMinimumSize(500,500)
 

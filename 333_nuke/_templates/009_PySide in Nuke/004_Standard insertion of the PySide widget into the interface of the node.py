@@ -3,9 +3,9 @@ from PySide.QtCore ______ *
 
 
 # put to main namespase
-class myWidget(QPushButton):
-    ___ __init__(self, text='NewButton'):
-        super(myWidget, self).__init__(text)
+c_ myWidget(QPushButton):
+    ___  - (self, text='NewButton'):
+        super(myWidget, self). - (text)
 
     ___ makeUI(self):
         return self

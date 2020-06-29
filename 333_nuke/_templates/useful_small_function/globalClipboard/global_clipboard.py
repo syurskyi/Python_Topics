@@ -1,8 +1,8 @@
 ______ os
 ______ ?
 
-class global_clipboard():
-    ___ __init__(self):
+c_ global_clipboard():
+    ___  - (self):
         __ os.name == "nt":
             self.repo = "R:/Global_Clipboard/"
             self.user = os.environ.get("username")

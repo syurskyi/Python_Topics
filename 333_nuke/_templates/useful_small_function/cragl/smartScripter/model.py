@@ -78,12 +78,12 @@ ___ get_settings_file():
 # We want to create a self-contained class explicitly. The user does not need
 # to call any methods on this class as the calculation works automatically.
 # pylint: disable=too-few-public-methods
-class Settings(object):
+c_ Settings(object):
     """Self contained settings data loader and saver."""
 
-    ___ __init__(self):
+    ___  - (self):
         """Initialize the Settings instance."""
-        super(Settings, self).__init__()
+        super(Settings, self). - ()
 
         file_ = self._check_settings_file()
         self.data = self._load(file_)

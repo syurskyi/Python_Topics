@@ -34,11 +34,11 @@ TAB_PATTERN = re.compile(
 )
 
 
-class Tablet(list):
+c_ Tablet(list):
     """
     """
 
-    ___ __init__(self, name=None, label=None, type=None, parent=None):
+    ___  - (self, name=None, label=None, type=None, parent=None):
         self.name = name
         self.label = label
         self.type = type

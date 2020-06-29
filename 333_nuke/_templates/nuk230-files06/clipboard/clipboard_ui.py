@@ -4,9 +4,9 @@ from PySide2.QtWidgets ______ *
 ______ sys
 
 
-class ClipboardUi(QTabWidget):
-    ___ __init__(self):
-        super(ClipboardUi, self).__init__()
+c_ ClipboardUi(QTabWidget):
+    ___  - (self):
+        super(ClipboardUi, self). - ()
 
         self.setWindowTitle("Clipboard")
         self.setWindowFlags(Qt.WindowStaysOnTopHint)
@@ -91,9 +91,9 @@ class ClipboardUi(QTabWidget):
                         background-repeat: no-repeat'''
 
 
-class HistoryTableWidget(QTableWidget):
-    ___ __init__(self):
-        super(HistoryTableWidget, self).__init__()
+c_ HistoryTableWidget(QTableWidget):
+    ___  - (self):
+        super(HistoryTableWidget, self). - ()
 
         self.setColumnCount(2)
         self.setSelectionBehavior(QAbstractItemView.SelectRows)

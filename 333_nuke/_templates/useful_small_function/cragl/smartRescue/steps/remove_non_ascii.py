@@ -35,7 +35,7 @@ Advanced:
 from smartRescue.base_steps ______ BaseStep
 
 
-class RemoveNonASCII(BaseStep):
+c_ RemoveNonASCII(BaseStep):
     """Remove non ASCII characters from the working file."""
 
     @staticmethod

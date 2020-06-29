@@ -11,7 +11,7 @@ ______ time
 ______ datetime
 ______ json
 ______ ?
-______ nukescripts
+______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
     from PySide ______ QtGui as QtWidgets
     from PySide ______ QtGui
@@ -941,13 +941,13 @@ ___ load_footage(defaulttype = 'Read', path = ''):
             is_abc = False
             stripped = ?.stripFrameRange(f)
             nodeType = defaulttype
-            __ nukescripts.create.isAudioFilename(stripped):
+            __ ?.create.isAudioFilename(stripped):
                 nodeType = 'AudioRead'
-            __ nukescripts.create.isGeoFilename(stripped):
+            __ ?.create.isGeoFilename(stripped):
                 nodeType = 'ReadGeo2'
-            __ nukescripts.create.isAbcFilename(stripped):
+            __ ?.create.isAbcFilename(stripped):
                 is_abc = True
-            __ nukescripts.create.isDeepFilename(stripped):
+            __ ?.create.isDeepFilename(stripped):
                 nodeType = 'DeepRead'
             use_in_panel = True
             __ max_files != 0 and n > max_files:
@@ -1399,10 +1399,10 @@ ___ load_tooltips(parent, section, *args):
                 widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
 
 
-class CustomPath(QtWidgets.QWidget):
+c_ CustomPath(QtWidgets.QWidget):
 
-    ___ __init__(self, shot_root, sml, which):
-        super(CustomPath, self).__init__()
+    ___  - (self, shot_root, sml, which):
+        super(CustomPath, self). - ()
         self.shot_root = shot_root
         self.sml = sml
         self.which = which

@@ -105,7 +105,7 @@ ______ ?  # pylint: disable=import-error
 from smartRescue.base_steps ______ NodeStep
 
 
-class NodesByKnobValuePattern(NodeStep):
+c_ NodesByKnobValuePattern(NodeStep):
     """Handle all nodes in the DAG that match one of the patterns."""
 
     ___ process(self):

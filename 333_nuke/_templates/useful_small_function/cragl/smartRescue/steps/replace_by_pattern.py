@@ -74,7 +74,7 @@ ______ re
 from smartRescue.base_steps ______ BaseStep
 
 
-class ReplaceByPattern(BaseStep):
+c_ ReplaceByPattern(BaseStep):
     """Replace sections in the working file by searching using patterns."""
 
     ___ process(self):

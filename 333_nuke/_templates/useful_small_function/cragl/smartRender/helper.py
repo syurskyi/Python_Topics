@@ -14,7 +14,7 @@ ______ platform
 ______ datetime
 ______ errno
 ______ ?
-______ nukescripts
+______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
     from PySide ______ QtGui as QtWidgets
     from PySide ______ QtCore
@@ -495,7 +495,7 @@ ___ insert_as_read_node(job_details, write = None, *args):
         read.selectOnly()
         read.setXYpos(int(write['xpos'].getValue()), int(write['ypos'].getValue()) + 70)
         ?.zoom(1.0, (write.xpos(), write.ypos()))
-        nukescripts.connect_selected_to_viewer(0)
+        ?.connect_selected_to_viewer(0)
     ____
         read = ?.createNode('Read')
         read['file'].sV..(job_details['render_path'])
@@ -506,7 +506,7 @@ ___ insert_as_read_node(job_details, write = None, *args):
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
         ?.zoom(1.0, (read.xpos(), read.ypos()))
-        nukescripts.connect_selected_to_viewer(0)
+        ?.connect_selected_to_viewer(0)
 
 
 ___ get_job_details(job_id, *args):

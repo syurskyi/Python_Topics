@@ -8,9 +8,9 @@ ______ os
 #
 # More detailed description can be here
 #
-class BaseMenu(object):
-    ___ __init__(self, menu_name):
-        self._menu_name = menu_name 
+c_ BaseMenu(object):
+    ___  - (self, menu_name):
+        self._menu_name = menu_name
 
 
     @property
@@ -23,9 +23,9 @@ class BaseMenu(object):
 #
 # More detailed description can be here
 #
-class NukeMenuGenerator(BaseMenu):
-    ___ __init__(self, menu_name):
-        super(NukeMenuGenerator, self).__init__(menu_name)
+c_ NukeMenuGenerator(BaseMenu):
+    ___  - (self, menu_name):
+        super(NukeMenuGenerator, self). - (menu_name)
         #NukeMenuGenerator.__dict__['__init__'](self, menu_name)
 
 

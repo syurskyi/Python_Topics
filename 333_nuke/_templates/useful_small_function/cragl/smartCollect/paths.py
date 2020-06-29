@@ -36,7 +36,7 @@ ___ get_frame_ranges(filepath):
 
 
 ___ scan_for_nukescripts(path, ignore):
-    nukescripts = []
+    ? = []
     __ not ignore:
         ignore = ''
     ignore_list = [ ignore_file.strip() ___ ignore_file __ ignore.split(',') __ ignore_file ]
@@ -49,6 +49,6 @@ ___ scan_for_nukescripts(path, ignore):
                         ignore_file_ += 1
 
                 __ not ignore_file_:
-                    nukescripts.ap..(os.path.join(root, name))
+                    ?.ap..(os.path.join(root, name))
 
-    return nukescripts
+    return ?

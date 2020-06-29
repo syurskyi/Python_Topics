@@ -271,11 +271,11 @@ ___ show_message_box(window, message, *args):
 
 ___ load_nukescripts_settings(section):
     xml, root, tree = get_xml_elements()
-    nukescripts = []
+    ? = []
     ___ nukescript __ root.find(section).findall('nukescript'):
-        nukescripts.ap..(nukescript.text)
+        ?.ap..(nukescript.text)
 
-    return nukescripts
+    return ?
 
 
 ___ load_nukescripts_progress(path):
@@ -342,7 +342,7 @@ ___ add_this_nukescript(smart_collector, source):
     __ path __ ('', 'Root', None):
         show_message_box(smart_collector, 'Please save your script first in order to proceed.')
         return
-    elif path __ smart_collector.table_nukescripts.nukescripts:
+    elif path __ smart_collector.table_nukescripts.?:
         show_message_box(smart_collector, 'The Nuke script exists already in the Nukescripts list.')
         return
     ____

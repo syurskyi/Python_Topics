@@ -61,7 +61,7 @@ ______ ?  # pylint: disable=import-error
 from smartRescue.base_steps ______ NodeStep
 
 
-class NodesByName(NodeStep):
+c_ NodesByName(NodeStep):
     """Handle all nodes in the DAG that are listed in the setup."""
 
     ___ process(self):

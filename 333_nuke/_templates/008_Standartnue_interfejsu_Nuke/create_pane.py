@@ -1,8 +1,8 @@
-______ nukescripts
+______ ?
 
-class simplePanel(nukescripts.PythonPanel):
-    ___ __init__(self):
-        nukescripts.PythonPanel.__init__(self, 'Simple Panel', 'pw_simplePanel')
+c_ simplePanel(?.PythonPanel):
+    ___  - (self):
+        ?.PythonPanel. - (self, 'Simple Panel', 'pw_simplePanel')
         self.menu = ?.Enumeration_Knob('menu', 'Menu', ['all', 'none', 'selected'])
         self.addKnob(self.menu)
         self.cb = ?.Boolean_Knob('checkbox', 'CheckBox')
@@ -37,4 +37,4 @@ ___ addPanel():
 paneMenu = ?.menu('Pane')
 paneMenu.addCommand('Simple Panel', addPanel)
 #or
-nukescripts.registerPanel('pw.Simple.Panel', addPanel)
+?.registerPanel('pw.Simple.Panel', addPanel)

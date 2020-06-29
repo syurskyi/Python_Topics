@@ -15,7 +15,7 @@ from PySide2.QtGui ______ (QBrush, QColor, QConicalGradient, QFont,
     QRadialGradient)
 from PySide2.QtWidgets ______ *
 
-class Ui_TimelogViewer(object):
+c_ Ui_TimelogViewer(object):
     ___ setupUi(self, TimelogViewer):
         __ TimelogViewer.objectName():
             TimelogViewer.setObjectName(u"TimelogViewer")

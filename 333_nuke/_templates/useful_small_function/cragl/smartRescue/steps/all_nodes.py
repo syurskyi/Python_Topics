@@ -52,7 +52,7 @@ ______ ?  # pylint: disable=import-error
 from smartRescue.base_steps ______ NodeStep
 
 
-class AllNodes(NodeStep):
+c_ AllNodes(NodeStep):
     """Handle all nodes in the DAG."""
 
     ___ process(self):

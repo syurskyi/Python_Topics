@@ -109,10 +109,10 @@ widgetStyle = '''
         }
 
         '''
-class colorWheelClass(QWidget):
+c_ colorWheelClass(QWidget):
     colorChangedSignal = Signal(list)
-    ___ __init__(self):
-        super(colorWheelClass, self).__init__()
+    ___  - (self):
+        super(colorWheelClass, self). - ()
         self.hw = 200
         self.padding = 2
         self.blackBorder = 10
@@ -230,10 +230,10 @@ class colorWheelClass(QWidget):
         return img
 
 
-class colorRampClass(QWidget):
+c_ colorRampClass(QWidget):
     colorChangedSignal = Signal(list)
-    ___ __init__(self):
-        super(colorRampClass, self).__init__()
+    ___  - (self):
+        super(colorRampClass, self). - ()
         self.hw = 200
         self.setFixedSize(QSize(self.hw, self.hw))
         self.padding = 2
@@ -316,9 +316,9 @@ class colorRampClass(QWidget):
         return img
 
 
-class colorPickerClass(QWidget):
-    ___ __init__(self, nukeNode=None, knob=None, label='Empty'):
-        super(colorPickerClass, self).__init__()
+c_ colorPickerClass(QWidget):
+    ___  - (self, nukeNode=None, knob=None, label='Empty'):
+        super(colorPickerClass, self). - ()
         #window
         self.resize(QSize(250, 340))
         self.setStyleSheet(widgetStyle)

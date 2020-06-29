@@ -13,7 +13,7 @@ ______ struct
 ______ imghdr
 ______ json
 ______ ?
-______ nukescripts
+______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
     from PySide ______ QtGui as QtWidgets
     from PySide ______ QtGui
@@ -527,7 +527,7 @@ ___ center_window(window, *args):
 ___ get_connected_nodes(node, *args):
     connected_nodes = []
     ignore_list = ['Viewer']
-    nukescripts.clear_selection_recursive()
+    ?.clear_selection_recursive()
     node.setSelected(True)
     connected_nodes.ap..(node)
     ?.selectConnectedNodes()
@@ -542,7 +542,7 @@ ___ get_connected_nodes(node, *args):
         __ node.Class() not __ ignore_list:
             connected_nodes.ap..(node)
 
-    nukescripts.clear_selection_recursive()
+    ?.clear_selection_recursive()
     return list(set(connected_nodes))
 
 

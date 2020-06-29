@@ -1,8 +1,8 @@
-______ ?, nukescripts
+______ ?, ?
 
-class writeManagerClass(nukescripts.PythonPanel):
-    ___ __init__(self):
-        nukescripts.PythonPanel.__init__(self, 'Write Manager', 'pw+writemanager')
+c_ writeManagerClass(?.PythonPanel):
+    ___  - (self):
+        ?.PythonPanel. - (self, 'Write Manager', 'pw+writemanager')
         self.nodes = {x.name():x ___ x __ ?.allNodes('Write')}
         ___ name, node __ self.nodes.items():
             line = ?.String_Knob(name+'-file', name)

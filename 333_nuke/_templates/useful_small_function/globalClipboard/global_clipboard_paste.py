@@ -9,9 +9,9 @@ ____
     from PySide2.QtCore ______ *
     from PySide2.QtGui ______ *
 
-class Global_clipboard(QDialog):
-    ___ __init__(self, parent=None):
-        super(Global_clipboard, self).__init__(parent)
+c_ Global_clipboard(QDialog):
+    ___  - (self, parent=None):
+        super(Global_clipboard, self). - (parent)
 
         # Create widgets
         self.label = QLabel("First initial and last name:")
