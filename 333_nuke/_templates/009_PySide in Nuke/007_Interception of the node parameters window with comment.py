@@ -30,7 +30,7 @@ c_ eventFilterClass(QObject):
     ___ eventFilter(self, obj, ev):
         __ ev.type() == QEvent.ChildPolished:
             w = ev.child()
-            w.setWindowTitle('NUKE')
+            w.sQT..('NUKE')
         return False
 
 f = eventFilterClass()

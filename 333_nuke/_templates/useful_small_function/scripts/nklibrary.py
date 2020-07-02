@@ -1,60 +1,60 @@
-#coding:utf8
-____ ?.?W.. ______ *
-______ __
-______ nuke
-
-c_ NkLibrary(?W..):
-	___ -
-		s_(NkLibrary, self).- ()
-		#variable
-		libpath = __.getenv("NUKE_PATH")+"/nk/"
-		appname = "Nuke Library"
-		version = "v0.1"
-
-		#widget
-		nklist = QListWidget()
-		addNkList()
-		ok = QPushButton("OK")
-		cancel = QPushButton("Cancel")
-
-		#layout
-		layout = ?VB..
-		layout.aW..(nklist)
-		layout.aW..(ok)
-		layout.aW..(cancel)
-		setWindowTitle(appname + " " + version)
-		sL..(layout)
-		
-		#event
-		ok.clicked.connect(pushOK)
-		cancel.clicked.connect(close)
-		nklist.itemClicked.connect(itemClick)
-
-	___ pushOK
-		nuke.nodePaste(libpath + currentItem)
-		c__
-
-	___ itemClick(self, item):
-		currentItem = item.text()
-	
-	___ addNkList
-		if not __.path.exists(libpath):
-			nuke.message(libpath + "The path does not exist.")
-		___ i __ __.listdir(libpath):
-			base, ext = __.path.splitext(i)
-			if ext != ".nk":
-				continue
-			nklist.addItem(QListWidgetItem(i))
-
-___ main():
-	g__ customApp
-	___
-		customApp.c__
-	______
-		pass
-	
-	customApp = NkLibrary()
-	___
-		customApp.s__
-	______
-		pass
+# #coding:utf8
+# ____ ?.?W.. ______ _
+# ______ __
+# ______ nuke
+#
+# c_ NkLibrary?W..
+# 	___ -
+# 		s_ ? .-
+# 		#variable
+# 		libpath _ __.g.. ("NUKE_PATH")+"/nk/"
+# 		appname _ "Nuke Library"
+# 		version _ "v0.1"
+#
+# 		#widget
+# 		nklist _ ?LW..
+# 		a..
+# 		ok _ ?PB.. *?
+# 		cancel _ ?PB.. *?
+#
+# 		#layout
+# 		layout _ ?VB..
+# 		?.aW.. n..
+# 		?.aW.. o.
+# 		?.aW.. c..
+# 		sQT.. a.. + " " + v..
+# 		sL.. ?
+#
+# 		#event
+# 		o_.c__.c.. p..
+# 		c_.c__.c.. c..
+# 		n_.iC__.c.. i..
+#
+# 	___ pushOK
+# 		?.nP.. l.. + c..
+# 		c__
+#
+# 	___ itemClick item
+# 		currentItem _ ?.t..
+#
+# 	___ addNkList
+# 		__ no. __.p__.ex.. l..
+# 			?.m.. l.. + "The path does not exist."
+# 		___ i __ __.l_d.. l..
+# 			base, ext _ __.p__.s.. ?
+# 			__ ext !_ ".nk":
+# 				c..
+# 			n__.aI.. ?LWI.. ?
+#
+# ___ main
+# 	g__ customApp
+# 	___
+# 		?.c__
+# 	______
+# 		p..
+#
+# 	customApp _ ?
+# 	___
+# 		?.s__
+# 	______
+# 		p..

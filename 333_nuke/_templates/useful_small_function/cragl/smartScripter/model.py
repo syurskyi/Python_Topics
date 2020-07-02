@@ -109,11 +109,11 @@ c_ Settings(object):
         """
         ____ smartScripter ______ helper
         settings_dir = helper.get_tool_root("private")
-        __ not __.path.isdir(settings_dir):
+        __ no. __.path.isdir(settings_dir):
             __.makedirs(settings_dir)
 
         settings_file = get_settings_file()
-        __ not __.path.isfile(settings_file):
+        __ no. __.path.isfile(settings_file):
             with open(settings_file, "w") as file_:
                 json.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=True)
 

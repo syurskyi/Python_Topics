@@ -67,7 +67,7 @@ c_ NodesByName(NodeStep):
     ___ process
         """Handle all listed nodes."""
         ___ node __ ?.allNodes():
-            __ node.name() not __ setup["nodes"]:
+            __ node.name() no. __ setup["nodes"]:
                 continue
 
             logger.info("%s node '%s' because it is included in %s",

@@ -53,7 +53,7 @@ ___ sjmAlignV():
 ___ sjmAutoBackdrop():
   ______ random
   selNodes = ?.selectedNodes()
-  __ not selNodes:
+  __ no. selNodes:
     return ?.nodes.BackdropNode()
   #
   margin = 20
@@ -135,7 +135,7 @@ ___ sjmOpenInViewer(nd=None):
 ___ sjmOpenAllInViewer():
   ___ n __ ?.allNodes():
     __ n.Class() == 'Write':
-      __ not n.knob('disable').value():
+      __ no. n.knob('disable').value():
         sjmOpenInViewer(n)
 	#filespec = n.knob('file').value()
 	#fn = glob.glob(filespec.replace('%04d','*'))[0]
@@ -213,8 +213,8 @@ ___
   #
   c_ WebBrowserWidget(?W..):
     ___ changeLocation
-      url = locationEdit.text()
-      __ not url.startswith( 'http://' ):
+      url = locationEdit.t..
+      __ no. url.startswith( 'http://' ):
         url = 'http://' + url
       webView.load( QUrl(url) )
     ___ urlChanged(self, url):
@@ -225,8 +225,8 @@ ___
       sL..( ?VB.. )
       locationEdit = QLineEdit( 'http://www.google.com' )
       locationEdit.setSizePolicy( QSizePolicy.Expanding, locationEdit.sizePolicy().verticalPolicy() )
-      QObject.connect( locationEdit, SIGNAL('returnPressed()'),  changeLocation )
-      QObject.connect( webView,   SIGNAL('urlChanged(QUrl)'),     urlChanged )
+      QObject.c..( locationEdit, SIGNAL('returnPressed()'),  changeLocation )
+      QObject.c..( webView,   SIGNAL('urlChanged(QUrl)'),     urlChanged )
       layout().aW..( locationEdit )
       bar = QToolBar()
       bar.addAction( webView.pageAction(QWebPage.Back))

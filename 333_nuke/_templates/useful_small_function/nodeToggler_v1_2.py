@@ -20,8 +20,8 @@ ___ nodeToggler():
             selection = nuke.selectedNodes()
 	    #sets the final result on their value basis and displays error if any
             ___ item __ selection:
-                if item.knob(knobPanel.value('Select Knob')):
-                    if item.knob(knobPanel.value('Select Knob')).value() == False:
+                __ item.knob(knobPanel.value('Select Knob')):
+                    __ item.knob(knobPanel.value('Select Knob')).value() == False:
                         item.knob(knobPanel.value('Select Knob')).setValue(True)
                     elif item.knob(knobPanel.value('Select Knob')).value() == True:
                         item.knob(knobPanel.value('Select Knob')).setValue(False)
@@ -33,7 +33,7 @@ ___ nodeToggler():
         nodeClassList = []
         nodeClass = ''
         ___ node __ allNode:
-            if node.Class() != 'Viewer':             #removes any viewer node present in allNode List
+            __ node.Class() != 'Viewer':             #removes any viewer node present in allNode List
                 nodeClassList.append(node.Class())
 		#creates a list for display in nodePanel and removes any duplicating node
         newList = list(set(nodeClassList))
@@ -44,22 +44,22 @@ ___ nodeToggler():
         value = nodePanel.value('Select Node')
 	#does all the selection processes
         ___ node __ allNode:
-            if value == 'Current':
-                if len(nuke.selectedNodes()) > 0:
+            __ value == 'Current':
+                __ len(nuke.selectedNodes()) > 0:
                     break
                 else:
                     nuke.message('Please select atlest one legal node.')
                     break
-            if node.Class() == value:
+            __ node.Class() == value:
                 node.setSelected(True)
             else:
                 node.setSelected(False)
-            if value == 'All':
+            __ value == 'All':
                 nuke.selectAll()
                 ___ n __ nuke.selectedNodes():
-                    if n.Class() == 'Viewer':
+                    __ n.Class() == 'Viewer':
                         n.setSelected(False)
                 break
-        if len(nuke.selectedNodes()) > 0:
+        __ len(nuke.selectedNodes()) > 0:
             knobSelection()
     nodeSelection()

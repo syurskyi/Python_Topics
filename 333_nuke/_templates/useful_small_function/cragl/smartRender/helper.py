@@ -86,7 +86,7 @@ ___ get_all_write_nodes_data(*args):
 
 ___ get_smart_render_private_root(*args):
     root = __.path.join(__.path.expanduser('~'), '.cragl', 'smartRender')
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         ______
@@ -97,7 +97,7 @@ ___ get_smart_render_private_root(*args):
 
 ___ get_smart_render_public_root(*args):
     root = __.path.join(__.path.expanduser('~'), 'cragl', 'smartRender')
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         ______
@@ -114,7 +114,7 @@ ___ get_installed_root_dir(*args):
 
 ___ get_public_cache_folder():
     cache_dir = __.path.join(get_smart_render_public_root(), 'cache')
-    __ not __.path.isdir(cache_dir):
+    __ no. __.path.isdir(cache_dir):
         ___
             __.makedirs(cache_dir)
         ______
@@ -126,7 +126,7 @@ ___ get_public_cache_folder():
 
 ___ get_tmp_folder():
     tmp_dir = __.path.join(get_smart_render_public_root(), 'tmp')
-    __ not __.path.isdir(tmp_dir):
+    __ no. __.path.isdir(tmp_dir):
         ___
             __.makedirs(tmp_dir)
         ______
@@ -138,7 +138,7 @@ ___ get_tmp_folder():
 
 ___ get_smartRender_backup_dir(*args):
     backup_dir = __.path.join(get_smart_render_public_root(), 'backups')
-    __ not __.path.isdir(backup_dir):
+    __ no. __.path.isdir(backup_dir):
         ___
             __.makedirs(backup_dir)
         ______
@@ -149,7 +149,7 @@ ___ get_smartRender_backup_dir(*args):
 
 ___ get_smartrender_log_dir(*args):
     logs_dir = __.path.join(get_smart_render_public_root(), 'logs')
-    __ not __.path.isdir(logs_dir):
+    __ no. __.path.isdir(logs_dir):
         ___
             __.makedirs(logs_dir)
         ______
@@ -162,7 +162,7 @@ ___ get_sounds_dir(*args):
     this_dir = __.path.dirname(__file__)
     sounds_dir = __.path.join(this_dir, '../', 'sounds')
     sounds_dir = __.path.normpath(sounds_dir)
-    __ not __.path.isdir(sounds_dir):
+    __ no. __.path.isdir(sounds_dir):
         ___
             __.makedirs(sounds_dir)
         ______
@@ -421,10 +421,10 @@ ___ get_all_jobs_data(filter, *args):
 
 ___ get_log_file(*args):
     connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ not __.path.isdir(connect_dir):
+    __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
-    __ not __.path.isfile(log_file):
+    __ no. __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
@@ -444,7 +444,7 @@ ___ write_log(text, tool = 'rn'):
 
 ___ write_render_log(text, *args):
     log = __.path.join(get_smart_render_private_root(), 'log.txt')
-    __ not __.path.isfile(log):
+    __ no. __.path.isfile(log):
         with open(log, 'w') as lf:
             lf.write('')
     ___
@@ -458,7 +458,7 @@ ___ write_render_log(text, *args):
 ___ write_terminal_cmd(job_id, text, file = 'input', *args):
     log_name = '{}_terminal_{}.log'.format(job_id, file)
     log = __.path.join(get_smartrender_log_dir(), log_name)
-    __ not __.path.isfile(log):
+    __ no. __.path.isfile(log):
         with open(log, 'w') as file_:
             file_.write('')
     ___
@@ -471,7 +471,7 @@ ___ write_terminal_cmd(job_id, text, file = 'input', *args):
 
 ___ get_job_xml(*args):
     job_xml = __.path.join(get_smart_render_private_root(), 'jobs.xml')
-    __ not __.path.isfile(job_xml):
+    __ no. __.path.isfile(job_xml):
         ___
             with open(job_xml, 'w') as job_template:
                 template = templates.JOB
@@ -536,7 +536,7 @@ ___ force_create_render_dir(*args):
 ___ load_terminal_log(job_id, mode, *args):
     xml_name = '{}_terminal_{}.log'.format(job_id, mode)
     terminal_file = __.path.join(get_smartrender_log_dir(), xml_name)
-    __ not __.path.isfile(terminal_file):
+    __ no. __.path.isfile(terminal_file):
         return ''
     ___
         with open(terminal_file, 'rt') as file:
@@ -589,7 +589,7 @@ ___ load_job_log_data(job_id, filter, file_output = False, *args):
 
 
 ___ open_in_explorer(path, parent = None, *args):
-    __ not __.path.isdir(path):
+    __ no. __.path.isdir(path):
         msg = "Unable to open directory. The path doesn't exist:\n\n{}".format(path)
         show_message_box(parent, msg)
     __ platform.system() == 'Windows':
@@ -634,7 +634,7 @@ ___ reset_file(which, window, *args):
 
 ___ get_settings_xml(*args):
     settings_xml = __.path.join(get_smart_render_private_root(), 'settings.xml')
-    __ not __.path.isfile(settings_xml):
+    __ no. __.path.isfile(settings_xml):
         desktop_cache = __.path.join(__.path.expanduser('~'), 'Desktop/cache')
         ___
             with open(settings_xml, 'w') as render_template:
@@ -693,7 +693,7 @@ ___ check_settings_xml_values_exist():
 ___ load_sounds(*args):
     sounds = []
     sounds_dir = get_sounds_dir()
-    __ not __.path.isdir(sounds_dir):
+    __ no. __.path.isdir(sounds_dir):
         return
     ___ file_ __ __.listdir(sounds_dir):
         __ __.path.splitext(file_)[1] __ ('.wav', '.WAV'):
@@ -734,7 +734,7 @@ ___ load_presets(*args):
                 preset['description'] = setting.text
             elif setting.get('name') == 'thread_count':
                 preset['thread_count'] = setting.text
-                __ not preset['thread_count']:
+                __ no. preset['thread_count']:
                     preset['thread_count'] = ?.env['numCPUs'] / 2
 
         presets_list[preset_name] = preset
@@ -891,16 +891,16 @@ ___ get_cpu_count(*args):
 ___ prettyprint(elem, level = 0):
     i = '\n' + level * '  '
     __ le.(elem):
-        __ not elem.text or not elem.text.strip():
+        __ no. elem.text or no. elem.text.strip():
             elem.text = i + '  '
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (not elem.tail or not elem.tail.strip()):
+    elif level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -951,7 +951,7 @@ ___ get_all_views(range_ = 10):
             ?.activeViewer().previousView()
 
         ___ i __ ra..(range_):
-            __ ?.activeViewer().view() not __ views:
+            __ ?.activeViewer().view() no. __ views:
                 views.ap..(?.activeViewer().view())
             ?.activeViewer().nextView()
 
@@ -962,7 +962,7 @@ ___ get_all_views(range_ = 10):
 
 ___ create_tooltips(parent, key, *args):
     tooltips_file = get_tooltips_file()
-    __ not __.path.isfile(tooltips_file):
+    __ no. __.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
         ttdata = json.load(json_file)
@@ -1011,6 +1011,6 @@ ___ get_processor(name):
     this_dir = __.path.dirname(__file__)
     processor = __.path.join(this_dir, '../', 'trm', '{}.py'.format(name))
     processor = __.path.normpath(processor)
-    __ not __.path.isfile(processor):
+    __ no. __.path.isfile(processor):
         raise IOError('The processor script does not exist: {}'.format(processor))
     return processor

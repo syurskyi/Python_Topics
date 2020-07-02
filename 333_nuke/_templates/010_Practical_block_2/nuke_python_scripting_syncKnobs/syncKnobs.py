@@ -26,13 +26,13 @@ ___ callback(v):
 
 ___ sync():
     k = ?.thisKnob()
-    __ not k.name() __ ['name', 'selected', 'showPanel', 'hidePanel']:
+    __ no. k.name() __ ['name', 'selected', 'showPanel', 'hidePanel']:
         n = ?.thisNode()
         other = ?.selectedNodes(n.Class())
         v = k.getValue()
         #>>>>>
         d['lastVal'] = v
         ___ node __ other:
-            __ not node is n:
+            __ no. node is n:
                 node[k.name()].sV..(v)
 

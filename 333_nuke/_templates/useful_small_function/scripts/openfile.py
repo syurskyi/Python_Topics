@@ -6,7 +6,7 @@ ______ sys
 
 ___ browser(path):
 	brws = "nautilus"
-	if sys.platform == "win32":
+	__ sys.platform == "win32":
 		brws = "start"
 	elif sys.platform == "darwin":
 		brws = "open"
@@ -24,17 +24,17 @@ ___ browser(path):
 ___ main():
 	focusKnobs = ["file","vfield_file"]
 	nodes = nuke.selectedNodes()
-	if len(nodes) != 1:
+	__ len(nodes) != 1:
 		nuke.message("Please select only one node.")
 		return
 	___ knob __ focusKnobs:
-		if knob __ nodes[0].knobs():
+		__ knob __ nodes[0].knobs():
 			path = nodes[0][knob].value()
-			if path == "":
+			__ path == "":
 				nuke.message("The path is empty.")
 				return
 			parentPath = __.path.dirname(path)
-			if not __.path.exists(parentPath):
+			__ no. __.path.exists(parentPath):
 				nuke.message("The path does not exist.")
 				return
 			browser(parentPath)

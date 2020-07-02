@@ -21,7 +21,7 @@ ___ byClass(node=None, regex=None, force_match=True):
     my_pattern = re.compile(r'%s' % regex)
 
     # check for node, use selected Node if no arg
-    __ not node:
+    __ no. node:
         node = ?.sN__
 
     # check if force_match is enabled, use 'risky' search if False
@@ -57,7 +57,7 @@ ___ nodesByClass(nodes=None, regex=None, force_match=True):
     """
     
     # check for nodes, use selected Nodes if no arg
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.selectedNodes()
 
     ___ i __ nodes:
@@ -79,7 +79,7 @@ ___ byName(node=None, regex=None, force_match=True):
     my_pattern = re.compile(r'%s' % regex)
 
     # check for node, use selected Node if no arg
-    __ not node:
+    __ no. node:
         node = ?.sN__
 
     # check if force_match is enabled, use 'risky' search if False
@@ -115,7 +115,7 @@ ___ nodesByName(nodes=None, regex=None, force_match=True):
     """
     
     # check for nodes, use selected Nodes if no arg
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.selectedNodes()
 
     # loop all Nodes in nodes and match by Name

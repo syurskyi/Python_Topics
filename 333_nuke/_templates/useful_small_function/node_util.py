@@ -25,7 +25,7 @@ ___ context_aware_create_node(node_2d, node_3d, node_deep):
 
 ___ selected_nodes_deep(nodes):
     # Returns true if all selected nodes are Deep nodes
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.selectedNodes()
     ___ n __ nodes:
         ___
@@ -37,7 +37,7 @@ ___ selected_nodes_deep(nodes):
 
 ___ selected_nodes_3d(nodes):
     # Returns true if all selected nodes are 3D nodes
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.selectedNodes()
     ___ n __ nodes:
         ___
@@ -52,7 +52,7 @@ ___ selected_nodes_3d(nodes):
 ___ copy_knobs():
     __ le.(?.selectedNodes()) == 2:
         ___ knobs __ ?.selectedNodes()[1].knobs():
-            __ not str(knobs) __ ["name", "xpos", "ypos"]:
+            __ no. str(knobs) __ ["name", "xpos", "ypos"]:
                 ?.selectedNodes()[0].knob(knobs).fromScript(?.selectedNodes()[1].knob(knobs).toScript())
     ____
         print "please select two nodes: first to copy 'from' second to copy 'to'"
@@ -70,7 +70,7 @@ ___ gui_disable():
     ___ node __ nodes:
         k = node.knob('disable')
         gui = '{"\\$gui"}'
-        __ not k.getValue():
+        __ no. k.getValue():
             k.setExpression('$gui')
         elif k.toScript() == gui:
             k.cA..
@@ -100,7 +100,7 @@ ___ copy_node_tile_color():
 ___ paste_to_selected():
     # paste to all selected nodes
     pasted_nodes = []
-    __ not ?.selectedNodes():
+    __ no. ?.selectedNodes():
         ?.nodePaste('%clipboard%')
         return
     selection = ?.selectedNodes()

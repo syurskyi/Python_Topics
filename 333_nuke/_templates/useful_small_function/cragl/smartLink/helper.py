@@ -56,7 +56,7 @@ ___ get_tool_root(which):
     ____
         cragl_dir = 'cragl'
     root = __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         except IOError:
@@ -74,10 +74,10 @@ ___ write_log(text, tool = 'li'):
 
 ___ get_log_file():
     connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ not __.path.isdir(connect_dir):
+    __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
-    __ not __.path.isfile(log_file):
+    __ no. __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
@@ -125,7 +125,7 @@ ___ get_xml_elements():
 
 ___ get_settings_xml():
     settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
-    __ not __.path.isfile(settings_xml):
+    __ no. __.path.isfile(settings_xml):
         ___
             with open(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS
@@ -199,16 +199,16 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
 ___ prettyprint(elem, level = 0):
     i = '\n' + level * '  '
     __ le.(elem):
-        __ not elem.text or not elem.text.strip():
+        __ no. elem.text or no. elem.text.strip():
             elem.text = i + '  '
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (not elem.tail or not elem.tail.strip()):
+    elif level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -255,7 +255,7 @@ ___ load_tooltips(parent, section):
     this_dir = __.path.dirname(__file__)
     tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
-    __ not __.path.isfile(tooltips_file):
+    __ no. __.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
         ___
@@ -423,7 +423,7 @@ ___ swap_presets(preset1, preset2):
     presets = []
     presets.ap..(_find_preset(root, preset1))
     presets.ap..(_find_preset(root, preset2))
-    __ not all(presets):
+    __ no. all(presets):
         raise ValueError("No sufficient information to swap. At least one of the presets of '{}', '{}' doesn't exist.".format(preset1, preset2))
     root.find('backdrops').remove(presets[0][0])
     root.find('backdrops').insert(presets[0][1], presets[1][0])
@@ -461,7 +461,7 @@ ___ add_preset(name, color, icon):
 ___ add_to_favorites():
     ____ smartLink ______ nodes
     sel_nodes = ?.selectedNodes()
-    __ not sel_nodes:
+    __ no. sel_nodes:
         msg = 'Please select nodes that you would like to add to favorites.'
         dialogs.show_message_box(None, msg)
         return

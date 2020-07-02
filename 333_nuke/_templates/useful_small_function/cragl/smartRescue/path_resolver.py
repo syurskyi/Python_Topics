@@ -89,7 +89,7 @@ c_ PathResolver(object):
         """
         pyside_pattern = r"PySide\d*"  # https://regex101.com/r/LDR591/1
 
-        __ not path:
+        __ no. path:
             raise OSError("No Nuke root directory set. Please set your Nuke "
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
@@ -103,11 +103,11 @@ c_ PathResolver(object):
                     pyside_root = __.path.join(root, name)
                     site_packages = __.path.dirname(pyside_root)
 
-        __ not ?:
+        __ no. ?:
             raise OSError("Did not find any Nuke executable under "
                           "{}".format(path))
 
-        __ not site_packages:
+        __ no. site_packages:
             raise OSError("Did not find site-packages including PySide or "
                           "PySide2.")
 

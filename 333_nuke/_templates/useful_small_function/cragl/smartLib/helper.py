@@ -108,21 +108,21 @@ ___ message_confirm_overwrite(src, is_file = True):
 
 ___ get_smartlib_private_dir():
     dir_ = __.path.join(__.path.expanduser('~'), '.cragl', 'smartLib')
-    __ not __.path.isdir(dir_):
+    __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
     return dir_
 
 
 ___ get_smartlib_public_dir():
     dir_ = __.path.join(__.path.expanduser('~'), 'cragl', 'smartLib')
-    __ not __.path.isdir(dir_):
+    __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
     return dir_
 
 
 ___ get_dir_templates():
     dir_ = __.path.join(get_smartlib_public_dir(), 'shot_templates')
-    __ not __.path.isdir(dir_):
+    __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
     return dir_
 
@@ -171,10 +171,10 @@ ___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = False, is_foota
 
 ___ get_log_file():
     connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ not __.path.isdir(connect_dir):
+    __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
-    __ not __.path.isfile(log_file):
+    __ no. __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
@@ -203,7 +203,7 @@ ___ _copy(src, dst):
             raise OSError(error)
 
     elif __.path.isfile(src):
-        __ not __.path.isdir(__.path.dirname(dst)):
+        __ no. __.path.isdir(__.path.dirname(dst)):
             __.makedirs(__.path.dirname(dst))
         ___
             shutil.copy(src, dst)
@@ -253,7 +253,7 @@ ___ reveal_in_finder(path, open_file = False):
                 subprocess.call(['open', '-R', path])
         elif sys.platform == 'windows' or sys.platform == 'win32':
             __ ':' __ path:
-                __ ':{}'.format(__.path.sep) not __ path:
+                __ ':{}'.format(__.path.sep) no. __ path:
                     path = path.replace(':', ':{}'.format(__.path.sep))
             __ __.path.isfile(path):
                 path = __.path.dirname(path)
@@ -283,7 +283,7 @@ ___ load_bookmarks():
 
 ___ get_settings_xml():
     settings_xml = __.path.join(get_smartlib_private_dir(), 'settings.xml')
-    __ not __.path.isfile(settings_xml):
+    __ no. __.path.isfile(settings_xml):
         ___
             with open(settings_xml, 'w') as xml:
                 template = templates.SETTINGS.format(user_home_dir=__.path.expanduser('~'))
@@ -409,7 +409,7 @@ ___ write_template_default(projectpath, template):
             project.text = template
             break
 
-    __ not elem_exists:
+    __ no. elem_exists:
         projectelement = ET.Element('project')
         projectelement.set('path', projectpath)
         projectelement.text = template
@@ -526,16 +526,16 @@ ___ center_window(window):
 ___ prettyprint(elem, level = 0):
     i = '\n' + level * '  '
     __ le.(elem):
-        __ not elem.text or not elem.text.strip():
+        __ no. elem.text or no. elem.text.strip():
             elem.text = i + '  '
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (not elem.tail or not elem.tail.strip()):
+    elif level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -608,7 +608,7 @@ ___ open_website(url):
 
 
 ___ set_preview_image(delete_nodes = True):
-    __ not osl.cl():
+    __ no. osl.cl():
         return
     preview_image_width = 500
     ___
@@ -679,12 +679,12 @@ ___ get_meta_xml(path):
     __ __.path.isdir(path):
         metaxml = __.path.join(path, DIR_DOCS, 'meta.xml')
         ___
-            __ not __.path.isdir(__.path.dirname(metaxml)):
+            __ no. __.path.isdir(__.path.dirname(metaxml)):
                 __.makedirs(__.path.dirname(metaxml))
         ______
             return
 
-        __ not __.path.isfile(metaxml):
+        __ no. __.path.isfile(metaxml):
             ___
                 with open(metaxml, 'w') as file_:
                     template = templates.META
@@ -738,12 +738,12 @@ ___ dialog_set_preview_image(smartlib):
     dialog = ?W...QFileDialog()
     dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     dialog.setWindowIcon(QtGui.QIcon(load_icons()['icon_logo']))
-    dialog.setWindowTitle('choose image file')
+    dialog.sQT..('choose image file')
     dialog.setNameFilter('jpg files(*.jpg)')
     __ dialog.exec_() == ?W...QDialog.Accepted:
         input_image = dialog.selectedFiles()[0]
         dest = __.path.join(smartlib.current_shot_widget.path, DIR_DOCS, '__preview.jpg')
-        __ not __.path.isdir(__.path.dirname(dest)):
+        __ no. __.path.isdir(__.path.dirname(dest)):
             __.makedirs(__.path.dirname(dest))
         save_image_scaled(input_image, dest)
         smartlib.current_shot_widget.refresh()
@@ -776,7 +776,7 @@ ___ setup_renderpath():
         project_root = __.path.dirname(dir_docs_current_nukescript)
         metaxml = __.path.join(dir_docs_current_nukescript, 'meta.xml')
         script_name = get_script_name()
-        __ __.path.isfile(metaxml) and script_name not __ ('', 'Root'):
+        __ __.path.isfile(metaxml) and script_name no. __ ('', 'Root'):
             meta_tree = ET.parse(metaxml)
             meta_root = meta_tree.getroot()
             ___ child __ meta_root.find('notes').findall('note'):
@@ -790,7 +790,7 @@ ___ setup_renderpath():
                             render_file = '{}{}%0{}d.{}'.format(script_name, load_settings()['padding_delimiter'], load_settings()['padding'], load_settings()['ext'])
                             render_full_path = __.path.join(render_dir, script_name, render_file)
                             render_dir = __.path.dirname(render_full_path)
-                            __ not __.path.isdir(render_dir):
+                            __ no. __.path.isdir(render_dir):
                                 __.makedirs(render_dir)
                             ?.thisNode()['file'].sV..(render_full_path)
                             ?.thisNode()['file_type'].sV..(load_settings()['ext'])
@@ -843,7 +843,7 @@ ___ rename_item(sender, path_orig, window):
         name = name.replace('/', '')
         new_name_full_path = __.path.join(__.path.dirname(path_orig), name)
         __ __.path.isfile(path_orig):
-            __ '.' not __ name:
+            __ '.' no. __ name:
                 ext = __.path.splitext(__.path.basename(path_orig))[1]
                 new_name_full_path = '{}{}'.format(new_name_full_path, ext)
         __ sender == 'smartlibshotwindow':
@@ -888,14 +888,14 @@ ___ import_from_footage_directory():
         __ dir_docs == '':
             raise ValueError
         meta_xml = __.path.join(dir_docs, 'meta.xml')
-        __ not __.path.isfile(meta_xml):
+        __ no. __.path.isfile(meta_xml):
             raise ValueError
         metatree = ET.parse(meta_xml)
         ___ note __ metatree.find('notes').findall('note'):
             __ note.get('name') == 'footagepath':
                 shot_root = __.path.normpath(__.path.join(dir_docs, '../'))
                 shot_root = shot_root.replace(__.path.sep, '/')
-                __ note.text is not None:
+                __ note.text is no. None:
                     __ note.get('loc') == 'global':
                         start_path = note.text
                     __ note.get('loc') == 'local':
@@ -929,7 +929,7 @@ ___ load_footage(defaulttype = 'Read', path = ''):
     __ sel_node:
         __ 'file' __ sel_node.knobs():
             default_dir = sel_node['file'].value()
-        __ not default_dir and 'proxy' __ sel_node.knobs():
+        __ no. default_dir and 'proxy' __ sel_node.knobs():
             default_dir = sel_node['proxy'].value()
     __ default_dir == '':
         default_dir = None
@@ -991,7 +991,7 @@ ___ create_new_directory(widget, list_):
 
         ___ create_directory(dir_name):
             dir_path_full = __.path.join(dest, dir_name)
-            __ not __.path.isdir(dir_path_full):
+            __ no. __.path.isdir(dir_path_full):
                 __.makedirs(dir_path_full)
                 diritem = widget.build_tree_widget_item(widget.dirlist[dest], dir_name, dir_path_full, is_dir=True)
                 widget.dirlist[dir_path_full] = diritem
@@ -1153,7 +1153,7 @@ ___ build_pdf(build_path, project, output_filename = '', parent = None):
         ___ convertIt():
             web.print_(printer)
 
-        QtCore.QObject.connect(web, QtCore.SIGNAL('loadFinished(bool)'), convertIt)
+        QtCore.QObject.c..(web, QtCore.SIGNAL('loadFinished(bool)'), convertIt)
         __ __.path.isfile(tmp_html):
             ___
                 __.remove(tmp_html)
@@ -1180,17 +1180,17 @@ ___ get_sequences_sets(dirpath):
         __ i..(file, bytes):
             digits = digits.encode()
         filename_nodigits = filename_noext.rstrip(digits)
-        __ ext not __ IMAGE_EXT:
+        __ ext no. __ IMAGE_EXT:
             sequence = __.path.normpath(__.path.join(dirpath, file))
             sequence = sequence.replace(__.path.sep, '/')
             sequences.ap..(sequence)
         ____
-            __ le.(filename_nodigits) == le.(filename_noext) and file not __ IGNORE and file not __ sequences:
+            __ le.(filename_nodigits) == le.(filename_noext) and file no. __ IGNORE and file no. __ sequences:
                 sequence = __.path.normpath(__.path.join(dirpath, file))
                 sequence = sequence.replace(__.path.sep, '/')
                 sequences.ap..(sequence)
                 continue
-            __ filename_nodigits not __ sequences_set and file not __ IGNORE and file not __ sequences:
+            __ filename_nodigits no. __ sequences_set and file no. __ IGNORE and file no. __ sequences:
                 sequences_set.ap..(filename_nodigits)
                 sequence = __.path.normpath(__.path.join(dirpath, file))
                 sequence = sequence.replace(__.path.sep, '/')
@@ -1239,8 +1239,8 @@ ___ collapse_sequences(dirpath):
     ___ seq __ sequence_sets:
         ext = __.path.splitext(seq)[1]
         ext = ext.replace('.', '')
-        __ ext not __ IGNORE and __.path.basename(seq) not __ IGNORE:
-            __ ext not __ IMAGE_EXT:
+        __ ext no. __ IGNORE and __.path.basename(seq) no. __ IGNORE:
+            __ ext no. __ IMAGE_EXT:
                 item = seq
                 item = item.replace(__.path.sep, '/')
                 sequences_in_dir.ap..(item)
@@ -1260,7 +1260,7 @@ ___ insert_shot_notes():
     ____
         shot_root = shot_root.replace(DIR_DOCS, '')
         meta_xml = get_meta_xml(shot_root)
-        __ not __.path.isfile(meta_xml):
+        __ no. __.path.isfile(meta_xml):
             return
         meta_tree = ET.parse(meta_xml)
         meta_root = meta_tree.getroot()
@@ -1307,7 +1307,7 @@ ___ show_edit_template_script(window, path):
 
 ___ get_script_values(path, window):
     script_values = {}
-    __ not __.path.isfile(path):
+    __ no. __.path.isfile(path):
         msg = "The file '{}' does not exist".format(path)
         show_message_box(window, msg)
         return {}
@@ -1357,7 +1357,7 @@ ___ set_script_values(path, script_values, *args):
 
 
 ___ get_user(metaxml, *args):
-    __ not __.path.isfile(metaxml):
+    __ no. __.path.isfile(metaxml):
         return ''
     metatree = ET.parse(metaxml)
     metaroot = metatree.getroot()
@@ -1372,7 +1372,7 @@ ___ set_user(user, dir_docs = ''):
         dir_docs = get_dir_docs_current_nukescript()
     __ dir_docs:
         meta_xml = __.path.join(dir_docs, 'meta.xml')
-        __ not __.path.isfile(meta_xml):
+        __ no. __.path.isfile(meta_xml):
             return
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
@@ -1389,7 +1389,7 @@ ___ load_tooltips(parent, section, *args):
     this_dir = __.path.dirname(__file__)
     tooltips_file = __.path.join(this_dir, '../', 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
-    __ not __.path.isfile(tooltips_file):
+    __ no. __.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
         ttdata = json.load(json_file)
@@ -1406,7 +1406,7 @@ c_ CustomPath(?W...?W..):
         shot_root = shot_root
         sml = sml
         which = which
-        setWindowTitle('Set custom {} path'.format(which))
+        sQT..('Set custom {} path'.format(which))
         setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
         setMinimumWidth(600)
         build_ui()
@@ -1421,12 +1421,12 @@ c_ CustomPath(?W...?W..):
         label_info = ?W...?L..(info)
         label_path = ?W...?L..('path: ')
         input_path = ?W...QLineEdit(load_custom_path(which))
-        push_browse = ?W...QPushButton()
+        push_browse = ?W...?PB..()
         push_browse.setIcon(QtGui.QIcon(load_icons()['icon_folder']))
         push_browse.setObjectName('simple')
-        push_save = ?W...QPushButton('save')
+        push_save = ?W...?PB..('save')
         push_save.setObjectName('actionButtonBig')
-        push_close = ?W...QPushButton('close')
+        push_close = ?W...?PB..('close')
 
     ___ create_layouts
         layout_top = ?W...QHBoxLayout()
@@ -1444,9 +1444,9 @@ c_ CustomPath(?W...?W..):
         set_style_sheet(self)
 
     ___ create_signals
-        push_close.clicked.connect(close)
-        push_save.clicked.connect(set_custom_path)
-        push_browse.clicked.connect(browse)
+        push_close.c__.c..(close)
+        push_save.c__.c..(set_custom_path)
+        push_browse.c__.c..(browse)
 
     ___ browse
         dialog = ?W...QFileDialog()
@@ -1458,11 +1458,11 @@ c_ CustomPath(?W...?W..):
 
     ___ set_custom_path
         ___
-            __ not __.path.isdir(input_path.text()):
+            __ no. __.path.isdir(input_path.text()):
                 __.makedirs(input_path.text())
         ______
-            __ input_path.text() != '':
-                msg = "Failed setting up the path '{}' as custom {} directory. Please choose a different path.".format(input_path.text(), which)
+            __ input_path.t.. != '':
+                msg = "Failed setting up the path '{}' as custom {} directory. Please choose a different path.".format(input_path.t.., which)
                 show_message_box(self, msg)
                 return
 
@@ -1473,27 +1473,27 @@ c_ CustomPath(?W...?W..):
             ___ child __ metaroot.find('notes').findall('note'):
                 __ which == 'render':
                     __ child.get('name') == 'renderpath':
-                        child.text = input_path.text()
+                        child.text = input_path.t..
                         child.set('loc', 'global')
-                        __ input_path.text() == '':
+                        __ input_path.t.. == '':
                             child.set('loc', 'local')
                 elif which == 'footage':
                     __ child.get('name') == 'footagepath':
-                        child.text = input_path.text()
+                        child.text = input_path.t..
                         child.set('loc', 'global')
-                        __ input_path.text() == '':
+                        __ input_path.t.. == '':
                             child.set('loc', 'local')
 
             prettyprint(metaroot)
             metatree.write(xml, encoding='utf-8', xml_declaration=True)
-        __ input_path.text() == '':
+        __ input_path.t.. == '':
             msg = 'Successfully cleared the custom {} path'.format(which)
             show_message_box(self, msg)
         ____
             msg = "Successfully set up the custom {} path to: '{}'".format(which, input_path.text())
             show_message_box(self, msg)
         c__
-        __ sml is not None:
+        __ sml is no. None:
             ___
                 __ which == 'render':
                     sml.current_shot_widget.set_renderpath(input_path.text())

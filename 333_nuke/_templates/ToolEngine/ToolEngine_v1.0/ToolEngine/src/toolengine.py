@@ -46,7 +46,7 @@ ___ show_info():
 
     info_file = __.path.normpath(__.path.join(__.path.dirname(__file__), "../", "data", "info.json"))
 
-    __ not __.path.isfile(info_file):
+    __ no. __.path.isfile(info_file):
         print "ToolEngine: info file doesn't exist"
         return
 
@@ -87,7 +87,7 @@ ___ add_toolset():
 
                 # if toolset already exists ask for overwriting
                 __ __.path.isfile(toolset_full_path):
-                    __ not ?.ask("The toolset '{}' already exists. Do you want to overwrite it?".format(toolset_full_path)):
+                    __ no. ?.ask("The toolset '{}' already exists. Do you want to overwrite it?".format(toolset_full_path)):
                         return
 
                 # write toolset

@@ -6,7 +6,7 @@ ______ re
 ___ get_file_elements(filename):
     file_elements = re.split('\\.([\\d|#|%\\dd]*).([a-z]*)', filename)
     basename, file_sequence, ext, _ = file_elements
-    __ not file_sequence:
+    __ no. file_sequence:
         raise ValueError('No file_sequence found in {}'.format(filename))
     return (basename, file_sequence, ext)
 
@@ -28,7 +28,7 @@ ___ get_files_list(filepath):
 
 ___ get_frame_ranges(filepath):
     files_list = get_files_list(filepath)
-    __ not files_list:
+    __ no. files_list:
         return (0, 0)
     _, frame_in, _ = get_file_elements(files_list[0])
     _, frame_out, _ = get_file_elements(files_list[-1])
@@ -37,7 +37,7 @@ ___ get_frame_ranges(filepath):
 
 ___ scan_for_nukescripts(path, ignore):
     ? = []
-    __ not ignore:
+    __ no. ignore:
         ignore = ''
     ignore_list = [ ignore_file.strip() ___ ignore_file __ ignore.split(',') __ ignore_file ]
     ___ root, dirs, files __ __.walk(path):
@@ -48,7 +48,7 @@ ___ scan_for_nukescripts(path, ignore):
                     __ ignore_file __ name:
                         ignore_file_ += 1
 
-                __ not ignore_file_:
+                __ no. ignore_file_:
                     ?.ap..(__.path.join(root, name))
 
     return ?

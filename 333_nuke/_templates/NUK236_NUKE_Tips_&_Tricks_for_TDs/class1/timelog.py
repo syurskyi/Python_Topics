@@ -24,11 +24,11 @@ c_ Timelog():
     ___ get_json
         date = datetime.datetime.today().strftime("%Y-%m-%d")
         json_dir = "%s/%s/%s" % (LOG_DIR, CURRENT_USER, date)
-        __ not __.path.exists(json_dir):
+        __ no. __.path.exists(json_dir):
             __.makedirs(json_dir)
 
         json_path = "%s/log.json" % json_dir
-        __ not __.path.exists(json_path):
+        __ no. __.path.exists(json_path):
             data = {}
         ____
             _file = open(json_path, "r")
@@ -81,13 +81,13 @@ c_ Timelog():
         #saving it. So we consider the script not idle
 
         elif ?.modified():
-            __ not __.path.isfile(autosave_path):
+            __ no. __.path.isfile(autosave_path):
                 _idle_time = 0
 
         #3) If there is no autosave file and nuke is not modified, we compare current time to the modification time of
         # the nuke script
 
-        elif not ?.modified():
+        elif no. ?.modified():
             modification_time = int(__.stat( script_path).st_mtime)
             _idle_time = now - modification_time
 

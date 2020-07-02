@@ -194,7 +194,7 @@ ___ unique_elements_preserve_order(sequence):
     """
     seen = set()
     seen_add = seen.add
-    return [x ___ x __ sequence __ not (x __ seen or seen_add(x))]
+    return [x ___ x __ sequence __ no. (x __ seen or seen_add(x))]
 
 
 ___ open_website(url):
@@ -250,7 +250,7 @@ ___ load_tooltips(parent, section):
     this_dir = __.path.dirname(__file__)
     tooltips_file = __.path.join(this_dir, "data", "tooltips.json")
     tooltips_file = __.path.normpath(tooltips_file)
-    __ not __.path.isfile(tooltips_file):
+    __ no. __.path.isfile(tooltips_file):
         return
 
     # Parse tool tips file.
@@ -287,7 +287,7 @@ ___ get_tool_root(which):
 
     root = __.path.join(__.path.expanduser("~"), cragl_dir, __product__)
 
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         except IOError as error:
@@ -311,7 +311,7 @@ ___ get_icon(icon):
 
     """
     ___
-        __ not icon:
+        __ no. icon:
             raise IndexError
         return [path ___ path __ SESSION_ICONS
                 __ path.endswith("{}.png".format(icon))][0]

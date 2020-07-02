@@ -31,12 +31,12 @@ ___ getBackupSettings(val, path):
     ___ line __ arr:
         findVal=arr[i].find("%s"%val)
         #if pattern found
-        if findVal!=-1:
+        __ findVal!=-1:
             val=arr[i]
             valArr=val.split("=")
             ___
                 val=valArr[1] #value
-                if val=="":
+                __ val=="":
                     val=" "
                 elif val=="NONE":
                     val=" "
@@ -46,7 +46,7 @@ ___ getBackupSettings(val, path):
     return val
 
 ___ openFolder(path):
-    if sys.platform == 'darwin':
+    __ sys.platform == 'darwin':
         subprocess.check_call(['open', '--', path])
     elif sys.platform == 'linux2': 
         subprocess.check_call(['gnome-open', '--', path])

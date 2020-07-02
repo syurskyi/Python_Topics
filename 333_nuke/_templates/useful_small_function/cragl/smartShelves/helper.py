@@ -46,14 +46,14 @@ ___ get_installed_root_dir():
 
 ___ get_smartshelves_private_dir():
     dir_ = __.path.join(__.path.expanduser('~'), '.cragl', 'smartShelves')
-    __ not __.path.isdir(dir_):
+    __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
     return dir_
 
 
 ___ get_smartshelves_public_dir():
     dir_ = __.path.join(__.path.expanduser('~'), 'cragl', 'smartShelves')
-    __ not __.path.isdir(dir_):
+    __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
     return dir_
 
@@ -74,10 +74,10 @@ ___ open_website(url):
 
 ___ get_log_file():
     connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ not __.path.isdir(connect_dir):
+    __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
-    __ not __.path.isfile(log_file):
+    __ no. __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = templates.LOG
             lf.write(log_template)
@@ -133,19 +133,19 @@ ___ paste_script(name):
 
 
 ___ add_to_lock(pw):
-    __ not __.environ.get(_LOCK_LIST):
+    __ no. __.environ.get(_LOCK_LIST):
         __.environ[_LOCK_LIST] = ''
     unlocked = [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         return
-    __ not pw:
+    __ no. pw:
         return
     unlocked.ap..(pw)
     __.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)
 
 
 ___ remove_from_lock(pw):
-    __ not __.environ.get(_LOCK_LIST):
+    __ no. __.environ.get(_LOCK_LIST):
         __.environ[_LOCK_LIST] = ''
     unlocked = [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:

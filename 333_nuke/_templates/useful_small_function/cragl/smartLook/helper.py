@@ -78,7 +78,7 @@ ___ load_settings(*args):
         pools = collections.OrderedDict()
         ___ pool __ settingsroot.find('pools').findall('pool'):
             pools[pool.get('name')] = pool.text
-            __ not __.path.isdir(pool.text):
+            __ no. __.path.isdir(pool.text):
                 ___
                     __.makedirs(pool.text)
                     msg = 'created missing pools dir at {}'.format(pool.text)
@@ -116,7 +116,7 @@ ___ load_hotkeys(*args):
 
 ___ get_settings_xml(*args):
     settings_xml = __.path.join(get_tool_private_root(), 'settings.xml')
-    __ not __.path.isfile(settings_xml):
+    __ no. __.path.isfile(settings_xml):
         ___
             with open(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS.format(standard_pool=get_standard_preset_pool())
@@ -155,7 +155,7 @@ ___ check_xml_values_exist(*args):
 
 ___ get_default_snapshot_root_dir(*args):
     default_snapshots_root = __.path.join(get_tool_public_root(), 'snapshots')
-    __ not __.path.isdir(default_snapshots_root):
+    __ no. __.path.isdir(default_snapshots_root):
         ___
             __.makedirs(default_snapshots_root)
         ______
@@ -168,7 +168,7 @@ ___ get_default_snapshot_root_dir(*args):
 ___ load_advanced_settings(*args):
     advanced_settings = __.path.join(get_tool_public_root(), 'advancedsettings.set')
     advanced_settings_default = templates.ADVANCED_SETTINGS_DEFAULT
-    __ not __.path.isfile(advanced_settings):
+    __ no. __.path.isfile(advanced_settings):
         ___
             with open(advanced_settings, 'w') as advset:
                 advset.write(advanced_settings_default)
@@ -209,7 +209,7 @@ ___ parse_advanced_settings(*args):
 
 ___ get_standard_preset_pool(*args):
     standardpool = __.path.join(get_tool_public_root(), 'standardpool')
-    __ not __.path.isdir(standardpool):
+    __ no. __.path.isdir(standardpool):
         __.makedirs(standardpool)
     return standardpool
 
@@ -292,7 +292,7 @@ ___ get_installed_root_dir(*args):
 
 ___ get_tool_public_root(*args):
     root = __.path.join(__.path.expanduser('~'), 'cragl', 'smartLook')
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         ______
@@ -303,7 +303,7 @@ ___ get_tool_public_root(*args):
 
 ___ get_tool_private_root(*args):
     root = __.path.join(__.path.expanduser('~'), '.cragl', 'smartLook')
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         ______
@@ -314,10 +314,10 @@ ___ get_tool_private_root(*args):
 
 ___ get_log_file(*args):
     connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ not __.path.isdir(connect_dir):
+    __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
-    __ not __.path.isfile(log_file):
+    __ no. __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
@@ -368,16 +368,16 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
 ___ prettyprint(elem, level = 0):
     i = '\n' + level * '  '
     __ le.(elem):
-        __ not elem.text or not elem.text.strip():
+        __ no. elem.text or no. elem.text.strip():
             elem.text = i + '  '
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (not elem.tail or not elem.tail.strip()):
+    elif level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -436,7 +436,7 @@ ___ get_explorer_name(*args):
 
 
 ___ open_in_explorer(path, parent = None, *args):
-    __ not __.path.isdir(path):
+    __ no. __.path.isdir(path):
         msg = "Unable to open directory '{}'. The path doesn't exist.".format(path)
         show_message_box(parent, msg)
         return
@@ -485,7 +485,7 @@ ___ get_image_size(src, *args):
                 fhandle.seek(0)
                 size = 2
                 ftype = 0
-                while not 192 <= ftype <= 207:
+                while no. 192 <= ftype <= 207:
                     fhandle.seek(size, 1)
                     byte = fhandle.read(1)
                     while ord(byte) == 255:
@@ -539,7 +539,7 @@ ___ get_connected_nodes(node, *args):
             dependent.setSelected(True)
 
     ___ node __ ?.selectedNodes():
-        __ node.Class() not __ ignore_list:
+        __ node.Class() no. __ ignore_list:
             connected_nodes.ap..(node)
 
     ?.clear_selection_recursive()
@@ -550,7 +550,7 @@ ___ load_tooltips(parent, section, *args):
     this_dir = __.path.dirname(__file__)
     tooltips_file = __.path.join(this_dir, '../', 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
-    __ not __.path.isfile(tooltips_file):
+    __ no. __.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
         ttdata = json.load(json_file)
@@ -567,7 +567,7 @@ ___ get_snapshot_dirs(*args):
 
 ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
     metaxml = '{}.xml'.format(__.path.splitext(thumbnail_src)[0])
-    __ not __.path.isfile(metaxml):
+    __ no. __.path.isfile(metaxml):
         create_metaxml(metaxml)
     metatree = ET.parse(metaxml)
     metaroot = metatree.getroot()
@@ -611,7 +611,7 @@ ___ load_metadata(src, *args):
 
         ___ meta __ meta_root.find('metadata').findall('meta'):
             meta_val = meta.text
-            __ not meta_val:
+            __ no. meta_val:
                 meta_val = ''
             metadata[meta.get('name')] = meta_val
 

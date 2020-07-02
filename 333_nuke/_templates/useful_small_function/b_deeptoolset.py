@@ -371,7 +371,7 @@ ___ iterate_deep_holdout_setup():
         ___ name __ names:
            __ check_upstream_match(ho,name):
                 print "ALELUYA"
-           elif not check_upstream_match(ho,name):
+           elif no. check_upstream_match(ho,name):
                 ?.toNode(deep_merge).setInput(counter,?.toNode(name))
                 counter += 1
             
@@ -546,7 +546,7 @@ ___ splitLayers( node ):
         __ le.( tmp ) < 4:
             ___ i __ ra..( 4 - le.( tmp ) ):
                 tmp.ap..( layer_name + ".white" )
-        __ tmp not __ layers:
+        __ tmp no. __ layers:
             layers.ap..( tmp )
             
     ___ each __ layers:
@@ -556,22 +556,22 @@ ___ splitLayers( node ):
         ch3 = each[2].split( '.' )[1]
         ch4 = each[3].split( '.' )[1]
         
-        __ ch1 not __ valid_channels:
+        __ ch1 no. __ valid_channels:
             ch1 = "red red"
         ____
             ch1 = '%s %s' % ( ch1, ch1 )
             
-        __ ch2 not __ valid_channels:
+        __ ch2 no. __ valid_channels:
             ch2 = "green green"
         ____
             ch2 = '%s %s' % ( ch2, ch2 )
             
-        __ ch3 not __ valid_channels:
+        __ ch3 no. __ valid_channels:
             ch3 = "blue blue"
         ____
             ch3 = '%s %s' % ( ch3, ch3 )
             
-        __ ch4 not __ valid_channels:
+        __ ch4 no. __ valid_channels:
             ch4 = "alpha alpha"
         ____
             ch4 = '%s %s' % ( ch4, ch4 )

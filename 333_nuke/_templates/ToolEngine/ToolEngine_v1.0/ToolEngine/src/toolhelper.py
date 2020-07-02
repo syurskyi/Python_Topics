@@ -31,7 +31,7 @@ ___ reload_tools_menu(notify=True):
     all_tools_after = get_all_tools()
 
     # check for difference
-    dif_list = [tool ___ tool __ all_tools_after __ tool not __ all_tools_before]
+    dif_list = [tool ___ tool __ all_tools_after __ tool no. __ all_tools_before]
     dif_msg = "\n".join(dif_list)
 
     # show message of new tools
@@ -84,11 +84,11 @@ ___ load_settings():
     settings_file = config.PATH_SETTINGS_FILE
 
     # make sure the settings directory exists
-    __ not __.path.isdir(__.path.dirname(settings_file)):
+    __ no. __.path.isdir(__.path.dirname(settings_file)):
         __.makedirs(__.path.dirname(settings_file))
 
     # if the settings file doesn't exist then create it
-    __ not __.path.isfile(settings_file):
+    __ no. __.path.isfile(settings_file):
         with open(settings_file, "w") as f:
             f.write('{"tools_root": ""}')
 
@@ -108,14 +108,14 @@ ___ get_tools_categories(tools_root):
     :return: list list of all categories
     """
 
-    __ not __.path.isdir(tools_root):
+    __ no. __.path.isdir(tools_root):
         return []
 
     tools_categories = []
 
     ___ item __ __.listdir(tools_root):
         item_full_path = __.path.join(tools_root, item)
-        __ __.path.isdir(item_full_path) and item != config.TOOLS_TEMP and item not __ config.TOOLSDIR_IGNORE:
+        __ __.path.isdir(item_full_path) and item != config.TOOLS_TEMP and item no. __ config.TOOLSDIR_IGNORE:
             tools_categories.ap..(item)
 
     return tools_categories
@@ -128,7 +128,7 @@ ___ build_tools_menu(tools_root):
     :return: None
     """
 
-    __ not __.path.isdir(tools_root):
+    __ no. __.path.isdir(tools_root):
         __ tools_root == "":
             print "ToolEngine: tools_root not set. You can set it via 'ToolEngine->settings'"
         ____
@@ -157,7 +157,7 @@ ___ build_tools_menu(tools_root):
 
     # create temp toolsets
     temp_dir = __.path.join(tools_root, config.TOOLS_TEMP)
-    __ not __.path.isdir(temp_dir):
+    __ no. __.path.isdir(temp_dir):
         __.makedirs(temp_dir)
 
     ___ tool __ __.listdir(temp_dir):
@@ -175,7 +175,7 @@ ___ insert_toolset(toolpath, delete=False):
     :return: None
     """
 
-    __ not __.path.isfile(toolpath):
+    __ no. __.path.isfile(toolpath):
         ?.message("The tool cannot be found")
         return
 

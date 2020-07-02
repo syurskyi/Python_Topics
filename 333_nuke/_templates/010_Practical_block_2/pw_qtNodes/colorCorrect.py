@@ -125,7 +125,7 @@ c_ colorWheelClass(?W..):
         value = 0
 
     ___ paintEvent(self, event):
-        __ not img:
+        __ no. img:
             img = getCircle()
         painter = QPainter()
         painter.begin(self)
@@ -243,7 +243,7 @@ c_ colorRampClass(?W..):
         pickerSize = 8
 
     ___ paintEvent(self, event):
-        __ not img:
+        __ no. img:
             img = getRamp()
         painter = QPainter()
         painter.begin(self)
@@ -336,10 +336,10 @@ c_ colorPickerClass(?W..):
         rb1 = QRadioButton()
         rb1.setText('Circle')
         rb1.setChecked(1)
-        rb1.clicked.connect(addPicker)
+        rb1.c__.c..(addPicker)
         switch_ly.aW..(rb1)
         rb2 = QRadioButton()
-        rb2.clicked.connect(addPicker)
+        rb2.c__.c..(addPicker)
         rb2.setText('Square')
         switch_ly.aW..(rb2)
         mainLy.addLayout(switch_ly)
@@ -398,9 +398,9 @@ c_ colorPickerClass(?W..):
         ____
             picker = colorRampClass()
 
-        picker.colorChangedSignal.connect(receiveColor)
+        picker.colorChangedSignal.c..(receiveColor)
         picker_ly.aW..(picker)
-        value.valueChanged.connect(picker.sV..)
+        value.valueChanged.c..(picker.sV..)
         picker.sV..(value.value())
         picker.updateColor()
 

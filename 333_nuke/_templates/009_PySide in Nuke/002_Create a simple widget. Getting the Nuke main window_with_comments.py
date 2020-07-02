@@ -101,7 +101,7 @@ ___ getNukeWindow():
             return w
 
 qnuke = getNukeWindow()
-qnuke.setWindowTitle('Nuke')
+qnuke.sQT..('Nuke')
 
 ############################################################################################################
 
@@ -120,7 +120,7 @@ ___ getNukeWindow():
             return w
 
 qnuke = getNukeWindow()
-qnuke.setWindowTitle('Nuke')
+qnuke.sQT..('Nuke')
 
 w = ?W..(getNukeWindow(), Qt.Tool)
 w.setWindowFlags(QtCore.Qt.Window |

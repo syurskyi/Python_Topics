@@ -16,13 +16,13 @@ ___ rename(files, pathToFile, search, replace, verbose):
             pf = pathToFile+'/'+f                                # add path to source file
             r = f.replace(search, replace)                  # sets up the replace list for the files only
             pr = pathToFile+'/'+r                              # add path or replace file
-            if (verbose):
+            __ (verbose):
                 print ( "Renaming "+str(pf)+" to "+str(pr))          # return a debug output - command line
             __.rename(pf, pr)
             count += 1
     except OSError:
         return 0
-    if (verbose):
+    __ (verbose):
         print str(count)+' files renamed'
 
 
@@ -30,7 +30,7 @@ ___ delete(files, verbose):
     count=0
     ___
         ___ f __ files:
-            if (verbose):
+            __ (verbose):
                 print "deleting "+f                             #return a useful output - command line
             __.remove(f)
             count += 1

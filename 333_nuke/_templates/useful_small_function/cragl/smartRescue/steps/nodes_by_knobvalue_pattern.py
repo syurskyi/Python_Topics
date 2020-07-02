@@ -116,11 +116,11 @@ c_ NodesByKnobValuePattern(NodeStep):
                 pattern = rule[1]
 
                 knob = node.knob(knob_name)
-                __ not knob:
+                __ no. knob:
                     continue
 
                 knob_value = knob.value()
-                __ not re.search(pattern, knob_value):
+                __ no. re.search(pattern, knob_value):
                     continue
 
                 logger.debug("%s node '%s' because it matches a pattern. "

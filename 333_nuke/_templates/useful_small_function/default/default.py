@@ -41,7 +41,7 @@ ___ checkExistingInit():
 	if not create one
 	'''
 	
-	__ not __.path.isfile(knobInit):
+	__ no. __.path.isfile(knobInit):
 		___
 			open(knobInit,'w')
 			__ ctrl == True:

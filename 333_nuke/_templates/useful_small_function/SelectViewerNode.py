@@ -36,12 +36,12 @@ ___ GetViewerList(ViewersList):
     ___ v __ nuke.allNodes():
         Name = v.name()
         Class = v.Class()
-        if Class == "Viewer":
+        __ Class == "Viewer":
             Number = "      "+ Name.split(Class)[1]+"    "
-            if Number not __ ViewersList:
+            __ Number no. __ ViewersList:
                 ViewersList.append(Number)
     ViewersList = sorted(ViewersList)
-    if ActiveViewer!="":
+    __ ActiveViewer!="":
         ViewersList.remove(ActiveViewer)
         ViewersList.insert(0,ActiveViewer)
     return ViewersList
@@ -57,7 +57,7 @@ ___ SelectNode(Viewer,warning):
     ______
         pass
     Inputs = nuke.toNode(Viewer).inputs()
-    if Inputs==0:
+    __ Inputs==0:
         print Viewer + " Has no Inputs"
         warning.setValue("        "+Viewer + " Has no Inputs")
         warning.setVisible(True)
@@ -65,7 +65,7 @@ ___ SelectNode(Viewer,warning):
     elif Inputs>1:
         ___ n __ nuke.allNodes():
             n.setSelected(False)
-        if Viewer == ActiveViewer:     
+        __ Viewer == ActiveViewer:
             index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)+1
             Nodes=[index1]
             ___
@@ -88,7 +88,7 @@ ___ SelectNode(Viewer,warning):
     else:
         ___ n __ nuke.allNodes():
             n.setSelected(False)
-        if Viewer == ActiveViewer:     
+        __ Viewer == ActiveViewer:
             ___
                 index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)
                 Node = nuke.toNode(nuke.toNode(Viewer).input(index1).name())
@@ -107,12 +107,12 @@ ___ SelectNode(Viewer,warning):
     return nuke.selectedNodes()
 
 ___ Zoom(zoom,node):
-    if zoom.getValue():
+    __ zoom.getValue():
         x1 = node[0].xpos()
         y1 = node[0].ypos()
         w1 = node[0].screenWidth()
         h1 = node[0].screenHeight()
-        if len(node)==1:       
+        __ len(node)==1:
             nuke.zoom(2,(x1+w1/2,y1+h1/2))
         elif len(node)>1:           
             x2 = node[1].xpos()
@@ -168,9 +168,9 @@ If the selected viewer is not active, all viewer nodes will be selected
 
     ___ knobChanged(self,knob):
 
-        if knob.name()== "OK":
+        __ knob.name()== "OK":
 
-            if not warning.visible():
+            __ no. warning.visible():
 
                 dividerA.setVisible(False)
      
@@ -180,7 +180,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
                 return
 
-        if knob is Viewers:
+        __ knob is Viewers:
         
             warning.setVisible(False)
 

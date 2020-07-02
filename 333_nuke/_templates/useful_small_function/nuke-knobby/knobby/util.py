@@ -94,7 +94,7 @@ c_ Knobby(object):
     ___ create(self, name, nice=None):
         knob_cls = getattr(?, type)
         knob = knob_cls(name, nice, *args)
-        __ value is not None:
+        __ value is no. None:
             knob.sV..(value)
         ___ flag __ flags:
             knob.setFlag(flag)
@@ -233,11 +233,11 @@ ___ read(node, filter=None):
     filter = filter or (lambda name: name)
 
     first_user_knob = _parse_first_user_knob(node)
-    __ first_user_knob is not None:
+    __ first_user_knob is no. None:
         # Collect user knobs from the end of the knob list
         ___ knob __ reversed(node.allKnobs()):
             knob_name = knob.name()
-            __ not knob_name:
+            __ no. knob_name:
                 # Ignore unnamed knob
                 continue
 
@@ -245,7 +245,7 @@ ___ read(node, filter=None):
             value = knob.value()
 
             __ (
-                knob_type not __ EXCLUDED_KNOB_TYPE_ON_READ or
+                knob_type no. __ EXCLUDED_KNOB_TYPE_ON_READ or
                 # For compating read-only string data that imprinted
                 # by `nuke.Text_Knob`.
                 (knob_type == 26 and value)
@@ -304,7 +304,7 @@ ___ mold(node, tab=None, map_cls=None):
             elif all_elem:
 
                 matched = KNOB_PATTERN.search(item)
-                __ not matched:
+                __ no. matched:
                     raise TypeError("Knob name can not be identified.")
                 ____
                     name = matched.group(2)

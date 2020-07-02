@@ -34,12 +34,12 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
     result = None
 
     # check node, use selected Node in dag if no arg
-    __ not node:
+    __ no. node:
         node = ?.sN__
         
     # check for regex, eliminate non-matching node
     __ regex:
-        __ not byClass(node, regex, force_match):
+        __ no. byClass(node, regex, force_match):
             node = None
     
     # check for node elimination
@@ -162,7 +162,7 @@ ___ filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
     result = None
 
     # check node, use selected Node in DAG if no arg
-    __ not node:
+    __ no. node:
         node = ?.sN__
 
     # check node again (in case user has no selection made)
@@ -193,7 +193,7 @@ ___ filePaths(no__=None, proxy=False, regex=None, force_match=True):
     result = []
 
     # check nodes, use selected Nodes in DAG if no arg
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.selectedNodes()
 
     # loop through nodes and get path for each Node
@@ -218,7 +218,7 @@ ___ filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
     result = []
 
     # check nodes, use selected Nodes in DAG if no arg
-    __ not nodes:
+    __ no. nodes:
         nodes = ?.selectedNodes()
 
     # loop through nodes and get path and range for each Node
@@ -251,7 +251,7 @@ ___ format(node):
     my_format = None
     
     # check for node; default to selected Node in DAG if no arg
-    __ not node:
+    __ no. node:
         node = ?.sN__
     # endif
 

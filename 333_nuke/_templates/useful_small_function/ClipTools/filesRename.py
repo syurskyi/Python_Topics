@@ -53,12 +53,12 @@ ___ getRename(files,name):
     panel.addSingleLineInput("replace with:", '')
     result=panel.s__
 
-    if result:
+    __ result:
         search = panel.value("text to replace:")
         replace = panel.value("replace with:")
-        if replace=='':
+        __ replace=='':
             replace=search                          # stops files being renamed with nothing
-        if replace[0] =='.':
+        __ replace[0] =='.':
             nuke.message('Starting with "." is unsupported')
             return 1
         # define the illegal characters and replace with '_'
@@ -72,10 +72,10 @@ ___ getRename(files,name):
 #
 ___ renameClips(files):
     (filesList, pathToFile)=createList(files)
-    if filesList is not 1:
+    __ filesList is no. 1:
         (search,replace)=getRename(files,name)
         renamed=fileName.rename(filesList, pathToFile, search, replace, False)
-        if 0==renamed:
+        __ 0==renamed:
             nuke.message('failed - try selecting individual files')
     else:
         nuke.message('failed - try selecting individual files')
@@ -94,7 +94,7 @@ ___ renameFiles(files):
         
 
     renamed=fileName.rename(filesList, pathToFile, search, replace, False)
-    if 0==renamed:
+    __ 0==renamed:
         nuke.message('failed, maybe permissions?')
       
 
@@ -115,7 +115,7 @@ ___ renamer():
     files=nuke.getClipname('select files to rename',multiple=True)
     
     while files:
-        if '%' __ str(files):
+        __ '%' __ str(files):
             renameClips(files)
         else:
             renameFiles(files)
@@ -135,14 +135,14 @@ ___ renumber():
     
     while files:
 
-        if '%' __ str(files):
+        __ '%' __ str(files):
             createList(files)
             panel = nuke.Panel ( "Renumber Files",60)     
             panel.addSingleLineInput("change padding to:", padding)
             panel.addSingleLineInput("frameStart:", rangeStart)
             result=panel.s__
 
-            if result:
+            __ result:
                 newPad = panel.value("change padding to:")
                 frameStart= panel.value("frameStart:")
 
@@ -189,11 +189,11 @@ ___ renumber():
 ___ removeExtension():
     files=nuke.getFilename('select files to remove extension',multiple=True)
     while files:
-        if '%' __ str(files):
+        __ '%' __ str(files):
             nuke.message('This only works on individually selected files')
         else:
             result=nuke.ask('Remove extension "'+__.path.basename(files[0])[-4:]+'" ? \nthis can overwrite existing files')
-            if result:
+            __ result:
                 ___ f __ files:
                     __.rename(f, f[:-4])
         files=nuke.getFilename('select more files to remove extension',multiple=True)
@@ -207,7 +207,7 @@ ___ removeExtension():
 ___ removeTemps():
      
     do_it=nuke.ask('This removes all .tmp files from the write nodes in this script. Are you sure you want to do this?')
-    if do_it:
+    __ do_it:
         aw = nuke.allNodes('Write')
         
         paths = []
@@ -216,10 +216,10 @@ ___ removeTemps():
             f = w['file'].value()
             p = w['proxy'].value()
             
-            if f:
+            __ f:
                 f_path = __.path.dirname(f)
                 paths.append(f_path)
-            if p:
+            __ p:
                 p_path = __.path.dirname(p)
                 paths.append(p_path)
                 
@@ -229,7 +229,7 @@ ___ removeTemps():
             ___ f __ files:
                 filename = f.split('.')
                 ext = filename[-1]
-                if ext == 'tmp':
+                __ ext == 'tmp':
                     ___
                         __.remove(path+'/'+f)
                         count+=1

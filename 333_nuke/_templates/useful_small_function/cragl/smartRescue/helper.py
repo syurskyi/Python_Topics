@@ -35,8 +35,8 @@ ___ get_nuke_scripts(path, ignore_prefix):
     return [__.path.join(path, file_)
             ___ file_ __ __.listdir(path)
             __ file_.endswith(".nk")
-            and not file_.startswith(ignore_prefix)
-            and not re.search(rescue_file_pattern, file_)]
+            and no. file_.startswith(ignore_prefix)
+            and no. re.search(rescue_file_pattern, file_)]
 
 
 ___ create_working_file_copies(files):
@@ -221,7 +221,7 @@ ___ get_tool_root(which):
     cragl_dir = ".cragl" __ which == "private" ____ "cragl"
     root = __.path.join(__.path.expanduser("~"), cragl_dir, NAME)
 
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         except OSError as error:
@@ -251,7 +251,7 @@ ___ copy_config_file():
 
     """
     dest = get_local_config_file()
-    __ not __.path.isfile(dest):
+    __ no. __.path.isfile(dest):
         this_dir = __.path.dirname(__file__)
         src = __.path.join(this_dir, "data", "config.json")
         src = __.path.abspath(src)

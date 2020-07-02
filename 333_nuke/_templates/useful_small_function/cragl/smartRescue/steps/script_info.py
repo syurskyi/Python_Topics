@@ -206,7 +206,7 @@ c_ ScriptInfo(NodeStep):
         root_values = []
         ___ knob_name __ setup["root_info"]:
             knob = ?.root().knob(knob_name)
-            __ not knob:
+            __ no. knob:
                 continue
 
             value = _format_value(knob_name, knob)
@@ -236,7 +236,7 @@ c_ ScriptInfo(NodeStep):
         ___ node __ ?.allNodes(recurseGroups=True):
             ___ knob_name __ path_knobs:
                 path_knob = node.knob(knob_name)
-                __ not path_knob:
+                __ no. path_knob:
                     continue
                 path = path_knob.evaluate() or "---"
                 footage.ap..((node.name(), path))

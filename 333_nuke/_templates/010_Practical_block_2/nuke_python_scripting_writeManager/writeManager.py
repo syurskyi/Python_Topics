@@ -10,7 +10,7 @@ c_ writeManagerClass(?.PythonPanel):
             addKnob(line)
             cb = ?.Boolean_Knob(name+'-disable','')
             cb.clearFlag(?.STARTLINE)
-            cb.sV..(not node['disable'].getValue())
+            cb.sV..(no. node['disable'].getValue())
             addKnob(cb)
 
         start = ?.PyScript_Knob('render','Render')
@@ -25,7 +25,7 @@ c_ writeManagerClass(?.PythonPanel):
             __ k == 'file':
                 node['file'].sV..(knob.value())
             elif k == 'disable':
-                node['disable'].sV..(not knob.value())
+                node['disable'].sV..(no. knob.value())
             return
         __ knob is start:
             print 'RENDER'

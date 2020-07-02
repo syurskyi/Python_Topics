@@ -14,14 +14,14 @@ ___ getMainWindow():
 
 qnuke = getMainWindow()
 w = qnuke.findChild(?W.., 'Transform1')
-w.setWindowTitle('Transform11')
+w.sQT..('Transform11')
 t = w.findChild(QTabWidget)
 t.count()
 nw = ?W..()
 ly = ?VB..
 nw.sL..(ly)
 ___ i __ ra..(5):
-    ly.aW..(QPushButton())
+    ly.aW..(?PB..())
 t.addTab(nw, 'My Tab')
 c = QCalendarWidget()
 t.insertTab(0, c, 'Calendar')
@@ -51,6 +51,6 @@ w2 = ?W..()
 w2.sL..(gl)
 ly = ?VB..
 tw.sL..(ly)
-btn = QPushButton('SYURSKYI')
+btn = ?PB..('SYURSKYI')
 ly.aW..(btn)
 ly.aW..(w2)

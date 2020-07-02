@@ -41,7 +41,7 @@ c_ Ui_TimelogViewer(object):
 
         horizontalLayout.aW..(date_combo_box)
 
-        delete_push_button = QPushButton(TimelogViewer)
+        delete_push_button = ?PB..(TimelogViewer)
         delete_push_button.setObjectName(u"delete_push_button")
 
         horizontalLayout.aW..(delete_push_button)
@@ -54,12 +54,12 @@ c_ Ui_TimelogViewer(object):
 
         gridLayout.aW..(log_knob, 1, 0, 1, 2)
 
-        ok_push_button = QPushButton(TimelogViewer)
+        ok_push_button = ?PB..(TimelogViewer)
         ok_push_button.setObjectName(u"ok_push_button")
 
         gridLayout.aW..(ok_push_button, 2, 0, 1, 1)
 
-        cancel_push_button = QPushButton(TimelogViewer)
+        cancel_push_button = ?PB..(TimelogViewer)
         cancel_push_button.setObjectName(u"cancel_push_button")
 
         gridLayout.aW..(cancel_push_button, 2, 1, 1, 1)
@@ -74,7 +74,7 @@ c_ Ui_TimelogViewer(object):
     # setupUi
 
     ___ retranslateUi(self, TimelogViewer):
-        TimelogViewer.setWindowTitle(QCoreApplication.translate("TimelogViewer", u"Timelog Viewer", None))
+        TimelogViewer.sQT..(QCoreApplication.translate("TimelogViewer", u"Timelog Viewer", None))
         date_label.setText(QCoreApplication.translate("TimelogViewer", u"Date:", None))
         delete_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Delete", None))
         ok_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Ok", None))

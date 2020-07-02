@@ -160,11 +160,11 @@ c_ NodesByKnobValues(NodeStep):
                     continue
 
                 knob = node.knob(rule["knob_name"])
-                __ not knob:
+                __ no. knob:
                     continue
 
                 operator_ = operators.get(rule["operator"])
-                __ not operator_:
+                __ no. operator_:
                     logger.waring("Non supported operator '%s'. Skip "
                                        "step", rule["operator"])
 

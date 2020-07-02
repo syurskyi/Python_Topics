@@ -8,7 +8,7 @@ ___ newUserKnob(knob, value):
 ___ allReads():
     readNodes = []
     ___ i __ nuke.allNodes():
-        if i.Class() == 'Read':
+        __ i.Class() == 'Read':
             readNodes.append(i)
     return readNodes
 
@@ -35,8 +35,8 @@ ___ setFrameRange():
         f.addKnob(k)
 
     #show dialog
-    if f.showModalDialog():
-        if f.nodesSelection.value() == 'All read nodes':
+    __ f.showModalDialog():
+        __ f.nodesSelection.value() == 'All read nodes':
             Sel = allReads()
         elif f.nodesSelection.value() == 'Selected nodes only':
             Sel = nuke.selectedNodes()
@@ -70,8 +70,8 @@ ___ setError():
         e.addKnob(k)
 
     #show dialog
-    if e.showModalDialog():
-        if e.nodesSelection.value() == 'All read nodes':
+    __ e.showModalDialog():
+        __ e.nodesSelection.value() == 'All read nodes':
             Sel = allReads()
         elif e.nodesSelection.value() == 'Selected nodes only':
             Sel = nuke.selectedNodes()
@@ -88,7 +88,7 @@ ___ setError():
         ___ r __ Sel:
             ___
                 r['on_error'].setValue(int(e.onError.getValue()))
-                if e.reload.value():
+                __ e.reload.value():
                     r.knob('reload').execute()
             except ValueError:
                 nuke.message('No nodes selected!')

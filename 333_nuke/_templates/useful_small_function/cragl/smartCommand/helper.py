@@ -53,7 +53,7 @@ ___ get_tool_root(which):
     ____
         cragl_dir = 'cragl'
     root = __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         except IOError:
@@ -71,10 +71,10 @@ ___ write_log(text, tool = 'sc'):
 
 ___ get_log_file():
     connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ not __.path.isdir(connect_dir):
+    __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
-    __ not __.path.isfile(log_file):
+    __ no. __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
@@ -100,7 +100,7 @@ ___ load_settings():
 
 ___ get_collection_root():
     collection_root = load_settings()['collection_root']
-    __ not __.path.isdir(collection_root):
+    __ no. __.path.isdir(collection_root):
         ___
             __.makedirs(collection_root)
         except OSError:
@@ -112,7 +112,7 @@ ___ get_collection_root():
 
 ___ get_scriptlets_root():
     scriptlet_root = load_settings()['scriptlets']
-    __ not __.path.isdir(scriptlet_root):
+    __ no. __.path.isdir(scriptlet_root):
         ___
             __.makedirs(scriptlet_root)
         except OSError:
@@ -124,14 +124,14 @@ ___ get_scriptlets_root():
 
 ___ default_collection_root():
     root = __.path.join(get_tool_root('public'), 'collections')
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         __.makedirs(root)
     return root
 
 
 ___ default_scriptlets_root():
     root = __.path.join(get_tool_root('public'), 'scriptlets')
-    __ not __.path.isdir(root):
+    __ no. __.path.isdir(root):
         __.makedirs(root)
     return root
 
@@ -150,7 +150,7 @@ ___ get_xml_elements():
 
 ___ get_settings_xml():
     settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
-    __ not __.path.isfile(settings_xml):
+    __ no. __.path.isfile(settings_xml):
         ___
             with open(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS
@@ -200,16 +200,16 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
 ___ prettyprint(elem, level = 0):
     i = '\n' + level * '  '
     __ le.(elem):
-        __ not elem.text or not elem.text.strip():
+        __ no. elem.text or no. elem.text.strip():
             elem.text = i + '  '
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
-        __ not elem.tail or not elem.tail.strip():
+        __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (not elem.tail or not elem.tail.strip()):
+    elif level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -251,7 +251,7 @@ ___ ask_dialog(message, process_label = 'ok', color_process = 'actionButton', ca
 ___ show_path_browser(title):
     dialog = ?W...QFileDialog()
     dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-    dialog.setWindowTitle(title)
+    dialog.sQT..(title)
     dialog.setFileMode(?W...QFileDialog.Directory)
     dialog.setOption(?W...QFileDialog.ShowDirsOnly)
     __ dialog.exec_() == ?W...QDialog.Accepted:
@@ -334,7 +334,7 @@ ___ swap_commands(xml, path_1, path_2):
             index_2 = index
         index += 1
 
-    __ not all((command is not None ___ command __ [command_1, command_2])):
+    __ no. all((command is no. None ___ command __ [command_1, command_2])):
         raise ValueError('No such sufficient data to swap.')
     root.find('collection').remove(command_2)
     root.find('collection').insert(index_1, command_2)
@@ -349,7 +349,7 @@ ___ swap_commands(xml, path_1, path_2):
 ___ get_collection_xml(name):
     collection_root = get_collection_root()
     xml = __.path.join(collection_root, '{}.xml'.format(name))
-    __ not __.path.isfile(xml):
+    __ no. __.path.isfile(xml):
         raise IOError('No such collection xml: {}'.format(xml))
     return xml
 
@@ -374,7 +374,7 @@ ___ create_collection(collection_name):
     ____
         collection_root = load_settings()['collection_root']
     xml = __.path.join(collection_root, '{}.xml'.format(collection_name))
-    __ not __.path.isfile(xml):
+    __ no. __.path.isfile(xml):
         write_log("Create new collection '{}.xml'".format(collection_name))
         with open(xml, 'w') as file_:
             file_.write(templates.COLLECTION.format(collection_name=collection_name))
@@ -391,7 +391,7 @@ ___ remove_command_duplicates(menu, command_path):
 
 ___ get_command_object(path):
     command = ?.menu('Nuke').findItem(path)
-    __ not command:
+    __ no. command:
         return None
     ____
         return command
@@ -412,7 +412,7 @@ ___ get_previous_element(list_, current):
 
 
 ___ update_command(xml, path, key, value):
-    __ not __.path.isfile(xml):
+    __ no. __.path.isfile(xml):
         raise IOError('No such collection file: {}'.format(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
@@ -428,7 +428,7 @@ ___ update_command(xml, path, key, value):
 
 
 ___ remove_command(xml, path):
-    __ not __.path.isfile(xml):
+    __ no. __.path.isfile(xml):
         raise IOError('No such collection xml: {}'.format(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
@@ -478,7 +478,7 @@ ___ load_tooltips(parent, section):
     this_dir = __.path.dirname(__file__)
     tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
-    __ not __.path.isfile(tooltips_file):
+    __ no. __.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
         ___

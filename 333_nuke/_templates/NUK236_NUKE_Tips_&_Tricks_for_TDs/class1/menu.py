@@ -8,7 +8,7 @@ ___ preset_nodes(val):
 
     preset_node = ?.toNode("PRESETS")
 
-    __ not preset_node:
+    __ no. preset_node:
         ?.message("No preset node found!")
         return
 

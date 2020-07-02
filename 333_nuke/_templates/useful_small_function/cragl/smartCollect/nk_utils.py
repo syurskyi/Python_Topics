@@ -16,7 +16,7 @@ ___ is_nuke():
 ___ get_nuke_exe(startup_feedback = False):
     executable = ''
     debug = helper.load_settings()['logging_level'] == '1'
-    __ not startup_feedback:
+    __ no. startup_feedback:
         debug = False
     __ is_nuke():
         ______ ?
@@ -49,7 +49,7 @@ ___ get_nuke_exe(startup_feedback = False):
                         print 'Using found nuke executable: {}'.format(executable)
                     break
 
-        __ not executable:
+        __ no. executable:
             private_tool_root = helper.get_tool_private_root()
             settings_path = __.path.join(private_tool_root, 'settings.xml')
             print templates.NO_NUKE_EXE_FOUND.format(settings_path)

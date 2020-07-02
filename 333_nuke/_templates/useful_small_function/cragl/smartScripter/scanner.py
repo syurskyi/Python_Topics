@@ -78,7 +78,7 @@ c_ Scanner(object):
         """
         logger.debug("Scanning for stacks: %s", root)
 
-        __ not __.path.isdir(root):
+        __ no. __.path.isdir(root):
             ___
                 __.makedirs(root)
             except IOError as error:
@@ -87,7 +87,7 @@ c_ Scanner(object):
 
         dirs = [__.path.join(root, dir_) ___ dir_ __ __.listdir(root)
                 __ __.path.isdir(__.path.join(root, dir_))
-                and not dir_.startswith("_")]
+                and no. dir_.startswith("_")]
 
         logger.debug("Found stacks: %s", ", ".join(dirs))
 
@@ -155,7 +155,7 @@ c_ Scanner(object):
 
         """
         command_file = __.path.splitext(path)[0]
-        __ not __.path.isfile(command_file):
+        __ no. __.path.isfile(command_file):
             raise IOError("Skipping command due no to command file {}".format(
                 path
             ))

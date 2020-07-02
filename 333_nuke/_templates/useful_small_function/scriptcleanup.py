@@ -88,23 +88,23 @@ ___ collect_nodes(mode):
 
     ___ node __ nuke.allNodes():
 
-        if node.Class() __ ignore_list:
+        __ node.Class() __ ignore_list:
             continue
 
-        if dependent_ and dependencies_:
-            if len(node.dependent()) == 0 and len(node.dependencies()) == 0 and node.minInputs() > 0 and node.maxOutputs() > 0:
+        __ dependent_ and dependencies_:
+            __ len(node.dependent()) == 0 and len(node.dependencies()) == 0 and node.minInputs() > 0 and node.maxOutputs() > 0:
                 cleanup_list.append(node)
 
-        elif dependent_ and not dependencies_ and node.maxOutputs() > 0:
-            if len(node.dependent()) == 0:
+        elif dependent_ and no. dependencies_ and node.maxOutputs() > 0:
+            __ len(node.dependent()) == 0:
                 cleanup_list.append(node)
 
-        elif not dependent_ and dependencies_ and node.minInputs() > 0 and node.maxOutputs() > 0:
-            if len(node.dependencies()) == 0:
+        elif no. dependent_ and dependencies_ and node.minInputs() > 0 and node.maxOutputs() > 0:
+            __ len(node.dependencies()) == 0:
                 cleanup_list.append(node)
 
         else:
-            if node.minInputs() > 0 and node.inputs() == 0:
+            __ node.minInputs() > 0 and node.inputs() == 0:
                 cleanup_list.append(node)
 
     return cleanup_list
@@ -129,7 +129,7 @@ c_ CleanModeDialog(?W..):
 
     ___ -
         s_(CleanModeDialog, self).- ()
-        setWindowTitle("Please choose the cleanup mode")
+        sQT..("Please choose the cleanup mode")
         setFixedWidth(550)
 
         # buildUI
@@ -142,9 +142,9 @@ c_ CleanModeDialog(?W..):
         check_dependent.setChecked(True)
         check_dependencies = QCheckBox("dependencies: Node's input is not used (all nodes referred to by this node)")
         check_dependencies.setChecked(True)
-        push_collect = QPushButton("collect")
+        push_collect = ?PB..("collect")
         push_collect.setStyleSheet("QPushButton{background-color: rgba(51, 204, 255, 150);}")
-        push_cancel = QPushButton("cancel")
+        push_cancel = ?PB..("cancel")
 
     ___ create_layouts
         layout_master = ?VB..
@@ -159,8 +159,8 @@ c_ CleanModeDialog(?W..):
         sL..(layout_master)
 
     ___ create_signals
-        push_cancel.clicked.connect(close)
-        push_collect.clicked.connect(process_cleanup)
+        push_cancel.c__.c..(close)
+        push_collect.c__.c..(process_cleanup)
 
     ___ process_cleanup
         """
@@ -170,7 +170,7 @@ c_ CleanModeDialog(?W..):
 
         cleanup_list = collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
         populate(cleanup_list)
-        setWindowTitle("cleanup script")
+        sQT..("cleanup script")
 
     ___ populate(self, cleanup_list):
         """
@@ -204,10 +204,10 @@ c_ CleanModeDialog(?W..):
         ___ node __ cleanup_list:
 
             # node
-            push_node = QPushButton(node.name())
+            push_node = ?PB..(node.name())
             push_node.setProperty("node", node.name())
             table_cleanup.setCellWidget(r, 0, push_node)
-            push_node.clicked.connect(jump_to_node)
+            push_node.c__.c..(jump_to_node)
 
             # push checkbox
             widget = ?W..()
@@ -222,11 +222,11 @@ c_ CleanModeDialog(?W..):
             checkboxes.append(checkbox)
 
             # remove push
-            push_remove_node = QPushButton("delete")
+            push_remove_node = ?PB..("delete")
             push_remove_node.setProperty("node", node.name())
             push_remove_node.setStyleSheet("QPushButton{background-color: rgb(90,30,30);}")
             table_cleanup.setCellWidget(r, 2, push_remove_node)
-            push_remove_node.clicked.connect(lambda r=r, node=node: remove_node(r, node.name()))
+            push_remove_node.c__.c..(lambda r=r, node=node: remove_node(r, node.name()))
 
             r += 1
 
@@ -237,9 +237,9 @@ c_ CleanModeDialog(?W..):
         layout_cleanup_master = ?VB..
         layout_cleanup_master.aW..(table_cleanup)
 
-        push_toggle = QPushButton("toggle check/uncheck nodes")
-        push_disable_checked = QPushButton("disable all checked nodes")
-        push_remove_checked = QPushButton("remove all checked nodes")
+        push_toggle = ?PB..("toggle check/uncheck nodes")
+        push_disable_checked = ?PB..("disable all checked nodes")
+        push_remove_checked = ?PB..("remove all checked nodes")
         layout_cleanup_push = QHBoxLayout()
         layout_cleanup_push.aW..(push_toggle)
         layout_cleanup_push.aW..(push_disable_checked)
@@ -247,12 +247,12 @@ c_ CleanModeDialog(?W..):
         layout_cleanup_master.addLayout(layout_cleanup_push)
         group_cleanup.sL..(layout_cleanup_master)
 
-        push_toggle.clicked.connect(toggle_checkboxes)
-        push_disable_checked.clicked.connect(disable_checked)
-        push_remove_checked.clicked.connect(remove_nodes)
+        push_toggle.c__.c..(toggle_checkboxes)
+        push_disable_checked.c__.c..(disable_checked)
+        push_remove_checked.c__.c..(remove_nodes)
 
-        push_close = QPushButton("close")
-        push_close.clicked.connect(close)
+        push_close = ?PB..("close")
+        push_close.c__.c..(close)
         layout_master.aW..(group_cleanup)
         layout_master.aW..(push_close)
 
@@ -284,7 +284,7 @@ c_ CleanModeDialog(?W..):
         """
 
         ___ c __ checkboxes:
-            if c.isChecked():
+            __ c.isChecked():
                 nuke.delete(nuke.toNode(c.property("node")))
 
         cleanup_list = collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
@@ -308,7 +308,7 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        if checkboxes[0].isChecked():
+        __ checkboxes[0].isChecked():
             ___ c __ checkboxes:
                 c.setChecked(False)
         else:
@@ -321,5 +321,5 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        if event.key() == Qt.Key_Escape:
+        __ event.key() == Qt.Key_Escape:
             c__

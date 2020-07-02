@@ -8,7 +8,7 @@ c_ ClipboardUi(QTabWidget):
     ___  -
         s_(ClipboardUi, self). - ()
 
-        setWindowTitle("Clipboard")
+        sQT..("Clipboard")
         setWindowFlags(Qt.WindowStaysOnTopHint)
         resize(500, 600)
         setMinimumSize(500, 600)
@@ -16,23 +16,23 @@ c_ ClipboardUi(QTabWidget):
         # Widgets
 
         users_label = ?L..("Users")
-        users_list_widget = QListWidget()
+        users_list_widget = ?LW..
         users_list_widget.setDragEnabled(True)
         search_label = ?L..("Search")
         users_search_line_edit = QLineEdit()
         stack_label = ?L..("Stack")
-        stack_list_widget = QListWidget()
+        stack_list_widget = ?LW..
         stack_list_widget.setAcceptDrops(True)
         text_note_text_edit = QPlainTextEdit()
-        send_push_button = QPushButton("Send")
-        send_close_push_button = QPushButton("Close")
+        send_push_button = ?PB..("Send")
+        send_close_push_button = ?PB..("Close")
         history_label = ?L..("History")
         history_table_widget = HistoryTableWidget()
         notes_label = ?L..("Notes")
         received_notes_text_edit = QPlainTextEdit()
-        paste_push_button = QPushButton("Paste")
+        paste_push_button = ?PB..("Paste")
         paste_push_button.setShortcut("Space")
-        received_close_push_button = QPushButton("Close")
+        received_close_push_button = ?PB..("Close")
 
         send_main_widget = ?W..()
         received_main_widget = ?W..()

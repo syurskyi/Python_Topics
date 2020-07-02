@@ -18,7 +18,7 @@ c_ Global_clipboard(QDialog):
         edit = QLineEdit()
         completer = QCompleter()
         edit.setCompleter(completer)
-        button = QPushButton("OK")
+        button = ?PB..("OK")
 
         # Create layout and add widgets
         layout = ?VB..
@@ -27,7 +27,7 @@ c_ Global_clipboard(QDialog):
         layout.aW..(button)
 
         # Set window title
-        setWindowTitle("Global Clipboard Paste")
+        sQT..("Global Clipboard Paste")
 
         # Set dialog layout
         sL..(layout)
@@ -36,7 +36,7 @@ c_ Global_clipboard(QDialog):
         get_data()
 
         # Add button signal to greetings slot
-        button.clicked.connect(paste)
+        button.c__.c..(paste)
 
     ___ get_data
         __ __.name == "nt":

@@ -14,9 +14,9 @@ ____ fileName ______ *
 # deletes a list of files supplied from Nuke
 #
 ___ deleteFiles(files):
-    if __.path.isfile(files[0]):
+    __ __.path.isfile(files[0]):
         do_it=nuke.ask('really delete "'+filestoDelete+'" ? (no undo available)')
-        if do_it:
+        __ do_it:
             delete(files,False)
     else:
         nuke.message('This is not a regular file - nothing deleted')
@@ -26,13 +26,13 @@ ___ deleteFiles(files):
 #
 ___ deleteClips(files):
     do_it=nuke.ask('really delete "'+filestoDelete+'..." ?\n(no undo available)')
-    if do_it:
+    __ do_it:
         ___ clips __ files:
             [filesList,name,padding, extension, rangeStart, rangeEnd]=createList(clips)
-            if do_it:
+            __ do_it:
                 deleteFiles=delete(filesList,True)
 
-        if deleteFiles:
+        __ deleteFiles:
             nuke.message('some files failed to delete \ntry selecting individual files')
 
 
@@ -51,12 +51,12 @@ ___ deleter():
 
     while files:
         filestoDelete=__.path.basename(files[0])  #sets name for message later
-        if '%' __ str(files) or '#' __ str(files):
+        __ '%' __ str(files) or '#' __ str(files):
             catchFail=deleteClips(files)
         else:
             catchFail=deleteFiles(files)
 
-        if not catchFail:
+        __ no. catchFail:
             files=nuke.getClipname('select files to delete',multiple=True)
         else:
             files=None

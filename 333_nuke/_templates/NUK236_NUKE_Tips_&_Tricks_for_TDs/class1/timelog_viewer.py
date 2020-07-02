@@ -27,7 +27,7 @@ c_ Panel(?.PythonPanel):
 
     ___ delete_log
         message = ?.ask("Are you sure you want to delete this log?")
-        __ not message:
+        __ no. message:
             return
 
         date = date_combo_box.value()
@@ -69,7 +69,7 @@ c_ Panel(?.PythonPanel):
     ___ delete_log
 
         message = ?.ask("Are you sure you want to delete this log?")
-        __ not message:
+        __ no. message:
             return
 
         date = date_combo_box.value()
