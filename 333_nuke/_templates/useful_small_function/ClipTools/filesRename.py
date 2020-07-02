@@ -119,7 +119,7 @@ ___ renamer():
             renameClips(files)
         else:
             renameFiles(files)
-        files=None   # stops renamer renaming files a 2nd time around the loop by mistake
+        files=N..   # stops renamer renaming files a 2nd time around the loop by mistake
         files=nuke.getClipname('select files to rename',multiple=True)
 
 

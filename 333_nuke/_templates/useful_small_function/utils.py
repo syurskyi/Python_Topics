@@ -75,7 +75,7 @@ ___ create_matrix_knob(node, noop, m_key, key, first, last):
 
     """
     mtx = le.(node.metadata(m_key))
-    array = nuke.IArray_Knob(key.replace(':', '_'), key, [mtx, 1])
+    array = nuke.IArray_Knob(key.r__(':', '_'), key, [mtx, 1])
     noop.addKnob(array)
     array.setAnimated()
 
@@ -111,7 +111,7 @@ ___ get_node():
     ___
         r_ nuke.selectedNode()
     except ValueError:
-        r_ None
+        r_ N..
 
 
 ___ get_metadata(node):
@@ -128,7 +128,7 @@ ___ get_metadata(node):
     ___
         r_ {key.rpartition('/')[-1]: key ___ key __ node.metadata().keys()}
     except AttributeError:
-        r_ None
+        r_ N..
 
 
 ___ m..():

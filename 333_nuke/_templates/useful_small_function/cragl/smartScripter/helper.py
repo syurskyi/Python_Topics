@@ -211,7 +211,7 @@ ___ open_website(url):
             msg = ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".format(url))
             ____ smartScripter ______ dialogs
-            dialogs.show_message_box(None, msg)
+            dialogs.show_message_box(N.., msg)
 
 
 ___ assemble_command_path(command_name):

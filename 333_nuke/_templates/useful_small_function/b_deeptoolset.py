@@ -649,8 +649,8 @@ ___ create_and_connect_child_dots(holdouts,color):
     counter = 0
     adder = 0
     adder_x = 0
-    pos_f_x = None
-    pos_f_y = None
+    pos_f_x = N..
+    pos_f_y = N..
 
 
     ___ f,b __ itertools.izip(holdouts,color):

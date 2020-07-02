@@ -23,7 +23,7 @@ ____
 ____ matchnode ______ byClass
 
 
-___ filePath(node=None, proxy=False, regex=None, force_match=True):
+___ filePath(node=N.., proxy=False, regex=N.., force_match=True):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -31,7 +31,7 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
     Class() fits the pattern
     """
     
-    result = None
+    result = N..
 
     # check node, use selected Node in dag if no arg
     __ no. node:
@@ -40,7 +40,7 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
     # check for regex, eliminate non-matching node
     __ regex:
         __ no. byClass(node, regex, force_match):
-            node = None
+            node = N..
     
     # check for node elimination
     __ node:
@@ -140,18 +140,18 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
                 # one way or another, clean up the tmp node
                 ?.delete(tmp)
 
-    __ result != None:
+    __ result != N..:
         result = dd.xplatform.xpath(__.path.normpath(result))
         LOGGER.debug('Discovered path %s for node %s' % (
             result, node.knob('name').value()))
         r_ result
     ____
         LOGGER.debug('Discovered no path for node %s' % node.knob('name').value())
-        r_ None
+        r_ N..
 # end filePath
    
 
-___ filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
+___ filePathWithRange(node=N.., proxy=False, regex=N.., force_match=True):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -159,7 +159,7 @@ ___ filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
     Class() fits the pattern.
     """
     
-    result = None
+    result = N..
 
     # check node, use selected Node in DAG if no arg
     __ no. node:
@@ -182,7 +182,7 @@ ___ filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
 #  end filePathWithRange
 
 
-___ filePaths(no__=None, proxy=False, regex=None, force_match=True):
+___ filePaths(no__=N.., proxy=False, regex=N.., force_match=True):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -207,7 +207,7 @@ ___ filePaths(no__=None, proxy=False, regex=None, force_match=True):
 # end filePaths
 
 
-___ filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
+___ filePathsWithRanges(nodes=N.., proxy=False, regex=N.., force_match=True):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -248,7 +248,7 @@ ___ format(node):
     Returns the format of the specified Node, if in the nuke.formats() list
     """
     
-    my_format = None
+    my_format = N..
     
     # check for node; default to selected Node in DAG if no arg
     __ no. node:

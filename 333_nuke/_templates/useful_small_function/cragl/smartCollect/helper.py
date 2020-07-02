@@ -109,7 +109,7 @@ ___ load_settings(*args):
     __ check_xml_ok(settings_xml):
         settings_tree = ET.parse(settings_xml)
         settings_root = settings_tree.getroot()
-        ___ setting __ settings_root.find('settings').findall('setting'):
+        ___ setting __ settings_root.find('settings').f_a_('setting'):
             value = setting.text
             __ value __ 'True':
                 value = True
@@ -167,7 +167,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
@@ -218,7 +218,7 @@ ___ check_xml_ok(xml, *args):
 
 
 ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_label = 'cancel'):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
@@ -254,7 +254,7 @@ ___ set_style_sheet(widget, *args):
             widget.setStyleSheet(file_.read())
 
 
-___ open_in_explorer(path, parent = None, *args):
+___ open_in_explorer(path, parent = N.., *args):
     __ pl...system() __ 'Windows':
         __.startfile(path)
     ____ pl...system() __ 'Darwin':
@@ -272,7 +272,7 @@ ___ show_message_box(window, m.., *args):
 ___ load_nukescripts_settings(section):
     xml, root, tree = get_xml_elements()
     ? = []
-    ___ nukescript __ root.find(section).findall('nukescript'):
+    ___ nukescript __ root.find(section).f_a_('nukescript'):
         ?.ap..(nukescript.text)
 
     r_ ?
@@ -280,7 +280,7 @@ ___ load_nukescripts_settings(section):
 
 ___ load_nukescripts_progress(path):
     _, root, _ = get_xml_elements()
-    ___ nukescript __ root.find('archive').findall('nukescript'):
+    ___ nukescript __ root.find('archive').f_a_('nukescript'):
         __ nukescript.text __ path:
             r_ int(nukescript.get('progress'))
 
@@ -303,7 +303,7 @@ ___ add_nukescript_settings(path, section):
 
 ___ update_nukescript_section(path, section, tag, value):
     xml, root, tree = get_xml_elements()
-    ___ nukescript __ root.find(section).findall('nukescript'):
+    ___ nukescript __ root.find(section).f_a_('nukescript'):
         __ nukescript.text __ path:
             nukescript.set(tag, value)
 
@@ -314,14 +314,14 @@ ___ update_nukescript_section(path, section, tag, value):
 
 ___ load_nukescript_section(path, section, tag):
     xml, root, tree = get_xml_elements()
-    ___ nukescript __ root.find(section).findall('nukescript'):
+    ___ nukescript __ root.find(section).f_a_('nukescript'):
         __ nukescript.text __ path:
             r_ nukescript.get(tag)
 
 
 ___ remove_nukescript_settings(path, section):
     xml, root, tree = get_xml_elements()
-    ___ nukescript __ root.find(section).findall('nukescript'):
+    ___ nukescript __ root.find(section).f_a_('nukescript'):
         __ nukescript.text __ path:
             root.find(section).remove(nukescript)
 
@@ -339,7 +339,7 @@ ___ update_statusbar_added(smart_collector, source, count_dropped_elements):
 ___ add_this_nukescript(smart_collector, source):
     ______ nk_utils
     path = nk_utils.get_nukescript_path()
-    __ path __ ('', 'Root', None):
+    __ path __ ('', 'Root', N..):
         show_message_box(smart_collector, 'Please save your script first in order to proceed.')
         r_
     ____ path __ smart_collector.table_nukescripts.?:
@@ -423,7 +423,7 @@ ___ open_website(url):
             subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
-            show_message_box(None, msg)
+            show_message_box(N.., msg)
 
     r_
 

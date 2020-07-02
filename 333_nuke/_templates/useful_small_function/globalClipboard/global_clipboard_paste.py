@@ -10,7 +10,7 @@ ____
     ____ ?.QtGui ______ *
 
 c_ Global_clipboard(QDialog):
-    ___  - (self, parent=None):
+    ___  - (self, parent=N..):
         s_(Global_clipboard, self). - (parent)
 
         # Create widgets

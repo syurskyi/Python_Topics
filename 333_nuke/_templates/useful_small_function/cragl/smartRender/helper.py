@@ -68,8 +68,8 @@ ___ get_next_renderjob(*args):
         r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
-    ___ job __ jobs_root.find('jobs').findall('job'):
-        ___ setting __ job.findall('setting'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
+        ___ setting __ job.f_a_('setting'):
             __ setting.get('name') __ 'status':
                 __ setting.text __ 'waiting':
                     r_ job.get('id')
@@ -183,7 +183,7 @@ ___ update_job_log(job_id, processdata, time = str(int(time.time())), *args):
         r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
-    ___ job __ jobs_root.find('jobs').findall('job'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
         __ job.get('id') __ job_id:
             process = job.find('process')
             p = ET.SubElement(process, 'data')
@@ -240,9 +240,9 @@ ___ update_job_data(job_id, key, val, *args):
         r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
-    ___ job __ jobs_root.find('jobs').findall('job'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
         __ job.get('id') __ job_id:
-            ___ setting __ job.findall('setting'):
+            ___ setting __ job.f_a_('setting'):
                 __ setting.get('name') __ key:
                     setting.text = val
                     with open(jobs_xml, 'w') as xml:
@@ -257,9 +257,9 @@ ___ calculate_process_precentage(job_id, frame, *args):
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     count_frames_done = 0
-    ___ job __ jobs_root.find('jobs').findall('job'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
         __ job.get('id') __ job_id:
-            ___ data __ job.find('process').findall('data'):
+            ___ data __ job.find('process').f_a_('data'):
                 __ data.get('status') __ '400':
                     count_frames_done += 1
 
@@ -267,7 +267,7 @@ ___ calculate_process_precentage(job_id, frame, *args):
             done_precentage = int(100.0 / count_frames_to_process * count_frames_done)
             __ done_precentage > 100:
                 done_precentage = 100
-            ___ setting __ job.findall('setting'):
+            ___ setting __ job.f_a_('setting'):
                 __ setting.get('name') __ 'progress':
                     setting.text = str(done_precentage)
                 __ setting.get('name') __ 'status':
@@ -281,7 +281,7 @@ ___ calculate_process_precentage(job_id, frame, *args):
                     __ tmp_status __ 'paused':
                         setting.text = 'paused'
 
-            ___ f __ job.find('frames').findall('frame'):
+            ___ f __ job.find('frames').f_a_('frame'):
                 __ f.text __ str(frame):
                     job.find('frames').remove(f)
 
@@ -316,7 +316,7 @@ ___ open_website(url, *args):
             subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
-            show_message_box(None, msg)
+            show_message_box(N.., msg)
 
     r_
 
@@ -332,8 +332,8 @@ ___ get_job_id_by_script_orig(script_orig, *args):
         r_ ''
 
     jobs = []
-    ___ job __ jobs_root.find('jobs').findall('job'):
-        ___ setting __ job.findall('setting'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
+        ___ setting __ job.f_a_('setting'):
             __ setting.get('name') __ 'script_orig':
                 __ setting.text __ script_orig:
                     jobs.ap..(job.get('id'))
@@ -363,18 +363,18 @@ ___ get_job_data(job_id, *args):
     except Exception as e:
         r_ {}
 
-    ___ job __ jobs_root.find('jobs').findall('job'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
         __ job.get('id') __ job_id:
             job_data['job_id'] = job_id
-            ___ setting __ job.findall('setting'):
+            ___ setting __ job.f_a_('setting'):
                 job_data[setting.get('name')] = setting.text
 
-            ___ frame __ job.find('frames').findall('frame'):
+            ___ frame __ job.find('frames').f_a_('frame'):
                 frames_to_process.ap..(int(frame.text))
 
             job_data['frames_to_process'] = frames_to_process
             number_errors = 0
-            ___ data __ job.find('process').findall('data'):
+            ___ data __ job.find('process').f_a_('data'):
                 __ data.get('status') __ '100':
                     number_errors += 1
 
@@ -394,7 +394,7 @@ ___ get_all_jobs_data(filter, *args):
     except Exception as e:
         r_ {}
 
-    ___ job __ jobs_root.find('jobs').findall('job'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
         job_id = job.get('id')
         jobs[job_id] = get_job_data(job_id)
         __ filter __ 'waiting' and jobs[job_id]['status'] != 'waiting':
@@ -483,7 +483,7 @@ ___ get_job_xml(*args):
     r_ job_xml
 
 
-___ insert_as_read_node(job_details, write = None, *args):
+___ insert_as_read_node(job_details, write = N.., *args):
     __ write:
         read = ?.createNode('Read')
         read['file'].sV..(write['file'].getValue())
@@ -514,9 +514,9 @@ ___ get_job_details(job_id, *args):
     jobs_xml = get_job_xml()
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
-    ___ job __ jobs_root.find('jobs').findall('job'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
         __ job.get('id') __ job_id:
-            ___ setting __ job.findall('setting'):
+            ___ setting __ job.f_a_('setting'):
                 job_details[setting.get('name')] = setting.text
 
     r_ job_details
@@ -552,9 +552,9 @@ ___ load_job_log_data(job_id, filter, file_output = False, *args):
         r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
-    ___ job __ jobs_root.find('jobs').findall('job'):
+    ___ job __ jobs_root.find('jobs').f_a_('job'):
         __ job.get('id') __ job_id:
-            ___ data __ job.find('process').findall('data'):
+            ___ data __ job.find('process').f_a_('data'):
                 code = ''
                 __ data.get('status') __ '100':
                     __ filter != 'job: all' and filter != 'job: error':
@@ -588,7 +588,7 @@ ___ load_job_log_data(job_id, filter, file_output = False, *args):
     r_ job_data
 
 
-___ open_in_explorer(path, parent = None, *args):
+___ open_in_explorer(path, parent = N.., *args):
     __ no. __.path.isdir(path):
         msg = "Unable to open directory. The path doesn't exist:\n\n{}".format(path)
         show_message_box(parent, msg)
@@ -710,7 +710,7 @@ ___ load_presets(*args):
     ___ presets __ settingsroot.find('presets'):
         preset_name = presets.get('name')
         preset = {}
-        ___ setting __ presets.findall('setting'):
+        ___ setting __ presets.f_a_('setting'):
             __ setting.get('name') __ 'range':
                 preset['range'] = setting.text
             ____ setting.get('name') __ 'custom_range':
@@ -755,10 +755,10 @@ ___ load_settings(*args):
     __ check_xml_ok(settings_xml):
         settingstree = ET.parse(settings_xml)
         settingsroot = settingstree.getroot()
-        ___ setting __ settingsroot.find('settings').findall('setting'):
+        ___ setting __ settingsroot.find('settings').f_a_('setting'):
             settings[setting.get('name')] = setting.text
 
-        ___ path __ settingsroot.find('cache').findall('path'):
+        ___ path __ settingsroot.find('cache').f_a_('path'):
             cache_paths.ap..({'mode': path.get('mode'),
              'path': path.text})
 
@@ -791,7 +791,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
@@ -817,7 +817,7 @@ ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '',
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             __ value2 __ child.text:
                 item_found += 1
@@ -844,12 +844,12 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
     root = tree.getroot()
     item_found = 0
     current_found = False
-    ___ child __ root.find('presets').findall('preset'):
+    ___ child __ root.find('presets').f_a_('preset'):
         __ child.get('name') __ 'current':
             current_found = True
         ____
             current_found = False
-        ___ setting __ child.findall('setting'):
+        ___ setting __ child.f_a_('setting'):
             __ setting.get(key1) __ value1:
                 item_found += 1
                 r_
@@ -861,7 +861,7 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
             __ key2 != '':
                 elem.set(key2, value2)
             elem.text = text
-            ___ child __ root.find('presets').findall('preset'):
+            ___ child __ root.find('presets').f_a_('preset'):
                 __ child.get('name') __ 'current':
                     child.ap..(elem)
                     with open(settings_xml, 'w'):
@@ -908,7 +908,7 @@ ___ delete_cache_path(path, *args):
     settings_xml = get_settings_xml()
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
-    ___ path_element __ settings_root.find('cache').findall('path'):
+    ___ path_element __ settings_root.find('cache').f_a_('path'):
         __ path_element.text __ path:
             settings_root.find('cache').remove(path_element)
             with open(settings_xml, 'w') as xml:
@@ -917,7 +917,7 @@ ___ delete_cache_path(path, *args):
 
 
 ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_button_text = ''):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()

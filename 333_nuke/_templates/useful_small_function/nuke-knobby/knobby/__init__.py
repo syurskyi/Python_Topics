@@ -6,7 +6,7 @@ ___
     ____ . ______ util
 except ImportError:
     # No nuke module
-    util = None
+    util = N..
 
 
 __all__ = [

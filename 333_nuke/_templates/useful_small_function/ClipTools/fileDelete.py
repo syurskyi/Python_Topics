@@ -59,5 +59,5 @@ ___ deleter():
         __ no. catchFail:
             files=nuke.getClipname('select files to delete',multiple=True)
         else:
-            files=None
+            files=N..
     

@@ -10,7 +10,7 @@ load('ddlogger')
 ______ ddlogger
 LOGGER = ddlogger.getLogger('getfromnode')
 
-___ byClass(node=None, regex=None, force_match=True):
+___ byClass(node=N.., regex=N.., force_match=True):
     
     """
     checks the node.Class() of a node against a regex
@@ -49,7 +49,7 @@ ___ byClass(node=None, regex=None, force_match=True):
 # end byClass
 
 
-___ nodesByClass(nodes=None, regex=None, force_match=True):
+___ nodesByClass(nodes=N.., regex=N.., force_match=True):
     
     """
     find the nodes in nodes whose Class() matches regex
@@ -68,7 +68,7 @@ ___ nodesByClass(nodes=None, regex=None, force_match=True):
 # end nodesByClass
 
 
-___ byName(node=None, regex=None, force_match=True):
+___ byName(node=N.., regex=N.., force_match=True):
     
     """
     checks the node.fullName() of node against a regex
@@ -107,7 +107,7 @@ ___ byName(node=None, regex=None, force_match=True):
 # end byName
 
 
-___ nodesByName(nodes=None, regex=None, force_match=True):
+___ nodesByName(nodes=N.., regex=N.., force_match=True):
     
     """
     find the nodes in nodes whose fullName() matches regex

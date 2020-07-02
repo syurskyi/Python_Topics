@@ -127,7 +127,7 @@ ___ get_dir_templates():
     r_ dir_
 
 
-___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = False, is_footage_dir = False, icons = None):
+___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = False, is_footage_dir = False, icons = N..):
     __ is_dir:
         ___
             listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_folder']))
@@ -275,7 +275,7 @@ ___ load_bookmarks():
     settingsXML = get_settings_xml()
     settings_tree = ET.parse(settingsXML)
     settings_root = settings_tree.getroot()
-    ___ child __ settings_root.find('bookmarks').findall('bookmark'):
+    ___ child __ settings_root.find('bookmarks').f_a_('bookmark'):
         bookmarklist.ap..(child.text)
 
     r_ bookmarklist
@@ -336,7 +336,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
@@ -360,7 +360,7 @@ ___ check_xml_parent_val_exists(section):
     xml = __.path.join(get_smartlib_private_dir(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    __ root.find(section) is None:
+    __ root.find(section) is N..:
         elem = ET.Element(section)
         root.ap..(elem)
         with open(xml, 'w') as xml:
@@ -376,12 +376,12 @@ ___ check_status_exists():
     tree = ET.parse(xml)
     root = tree.getroot()
     __ le.(root.find('statuslist')):
-        ___ child __ root.find('statuslist').findall('status'):
+        ___ child __ root.find('statuslist').f_a_('status'):
             status_found += 1
 
     __ status_found __ 0:
         default_status = templates.DEFAULT_STATUS
-        __ root.find('statuslist') is None:
+        __ root.find('statuslist') is N..:
             statuslist_elem = ET.Element('statuslist')
             root.ap..(statuslist_elem)
         ___ key __ sorted(default_status):
@@ -403,7 +403,7 @@ ___ write_template_default(projectpath, template):
     tree = ET.parse(xml)
     root = tree.getroot()
     elem_exists = False
-    ___ project __ root.find('templateDefaults').findall('project'):
+    ___ project __ root.find('templateDefaults').f_a_('project'):
         __ project.get('path') __ projectpath:
             elem_exists = True
             project.text = template
@@ -423,7 +423,7 @@ ___ load_template_default(project_path):
     xml = __.path.join(get_smartlib_private_dir(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    ___ project __ root.find('templateDefaults').findall('project'):
+    ___ project __ root.find('templateDefaults').f_a_('project'):
         __ project.get('path') __ project_path:
             r_ project.text
 
@@ -436,7 +436,7 @@ ___ load_status_list():
     root = tree.getroot()
     status_list = {}
     __ le.(root.find('statuslist')):
-        ___ child __ root.find('statuslist').findall('status'):
+        ___ child __ root.find('statuslist').f_a_('status'):
             data = [child.get('color'), child.text, child.get('default')]
             status_list[child.get('z-index')] = data
 
@@ -448,13 +448,13 @@ ___ load_default_status():
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
     with open(settings_xml, 'r'):
-        ___ child __ settings_root.find('statuslist').findall('status'):
+        ___ child __ settings_root.find('statuslist').f_a_('status'):
             __ child.get('default') __ '1':
                 r_ [child.text, child.get('color')]
 
 
 ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_button_text = ''):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
@@ -501,13 +501,13 @@ ___ load_settings():
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
     settings = {}
-    ___ setting __ settings_root.find('settings').findall('setting'):
+    ___ setting __ settings_root.find('settings').f_a_('setting'):
         __ setting.text:
             settings[setting.get('name')] = setting.text
         ____
             settings[setting.get('name')] = ''
 
-    ___ navi __ settings_root.find('navigation').findall('navi'):
+    ___ navi __ settings_root.find('navigation').f_a_('navi'):
         __ navi.text and __.path.isdir(navi.text):
             settings['current_{}'.format(navi.get('name'))] = navi.text
         ____
@@ -583,7 +583,7 @@ ___ write_location(location, value):
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
     with open(settings_xml, 'r'):
-        ___ child __ settings_root.find('navigation').findall('navi'):
+        ___ child __ settings_root.find('navigation').f_a_('navi'):
             __ child.get('name') __ location:
                 child.text = value
 
@@ -602,7 +602,7 @@ ___ open_website(url):
             subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
-            show_message_box(None, msg)
+            show_message_box(N.., msg)
 
     r_
 
@@ -706,7 +706,7 @@ ___ check_meta_xml_value_exists(metaxml_path, parent, section, key1, value1, tex
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
@@ -770,8 +770,8 @@ ___ get_script_name():
 
 ___ setup_renderpath():
     dir_docs_current_nukescript = get_dir_docs_current_nukescript()
-    __ dir_docs_current_nukescript __ (None, ''):
-        r_ None
+    __ dir_docs_current_nukescript __ (N.., ''):
+        r_ N..
     ____
         project_root = __.path.dirname(dir_docs_current_nukescript)
         metaxml = __.path.join(dir_docs_current_nukescript, 'meta.xml')
@@ -779,7 +779,7 @@ ___ setup_renderpath():
         __ __.path.isfile(metaxml) and script_name no. __ ('', 'Root'):
             meta_tree = ET.parse(metaxml)
             meta_root = meta_tree.getroot()
-            ___ child __ meta_root.find('notes').findall('note'):
+            ___ child __ meta_root.find('notes').f_a_('note'):
                 __ child.get('name') __ 'renderpath':
                     ___
                         __ child.text.strip() != '':
@@ -797,7 +797,7 @@ ___ setup_renderpath():
                     ______
                         pass
 
-        r_ None
+        r_ N..
 
 
 ___ load_templates():
@@ -820,7 +820,7 @@ ___ get_render_path(xml):
             write_log('Unable to parse metaxml.')
             r_
 
-        ___ child __ meta_root.find('notes').findall('note'):
+        ___ child __ meta_root.find('notes').f_a_('note'):
             __ child.get('name') __ 'renderpath':
                 r_ child.text
 
@@ -856,7 +856,7 @@ ___ rename_item(sender, path_orig, window):
             settingsXML = get_settings_xml()
             settingstree = ET.parse(settingsXML)
             settingsroot = settingstree.getroot()
-            ___ child __ settingsroot.find('projectslist').findall('project'):
+            ___ child __ settingsroot.find('projectslist').f_a_('project'):
                 __ child.text __ path_orig:
                     child.set('name', name)
 
@@ -891,11 +891,11 @@ ___ import_from_footage_directory():
         __ no. __.path.isfile(meta_xml):
             raise ValueError
         metatree = ET.parse(meta_xml)
-        ___ note __ metatree.find('notes').findall('note'):
+        ___ note __ metatree.find('notes').f_a_('note'):
             __ note.get('name') __ 'footagepath':
                 shot_root = __.path.normpath(__.path.join(dir_docs, '../'))
                 shot_root = shot_root.replace(__.path.sep, '/')
-                __ note.text is no. None:
+                __ note.text is no. N..:
                     __ note.get('loc') __ 'global':
                         start_path = note.text
                     __ note.get('loc') __ 'local':
@@ -905,7 +905,7 @@ ___ import_from_footage_directory():
                             start_path = __.path.join(shot_root, note.text)
                         ____
                             start_path = shot_root
-                ____ note.text is None or note.text __ '' or note.text __ ' ':
+                ____ note.text is N.. or note.text __ '' or note.text __ ' ':
                     start_path = shot_root
                 __ start_path[-1:] != '/':
                     start_path += '/'
@@ -919,8 +919,8 @@ ___ import_from_footage_directory():
 
 
 ___ load_footage(defaulttype = 'Read', path = ''):
-    sel_node = None
-    default_dir = None
+    sel_node = N..
+    default_dir = N..
     ___
         sel_node = ?.sN__
     ______
@@ -932,9 +932,9 @@ ___ load_footage(defaulttype = 'Read', path = ''):
         __ no. default_dir and 'proxy' __ sel_node.knobs():
             default_dir = sel_node['proxy'].value()
     __ default_dir __ '':
-        default_dir = None
+        default_dir = N..
     files = ?.getClipname('______ from footage directory', default=path, multiple=True)
-    __ files != None:
+    __ files != N..:
         max_files = ?.numvalue('preferences.maxPanels')
         n = le.(files)
         ___ f __ files:
@@ -964,7 +964,7 @@ ___ load_footage(defaulttype = 'Read', path = ''):
     r_
 
 
-___ show_custom_directory_window(shot_root, which, sml = None):
+___ show_custom_directory_window(shot_root, which, sml = N..):
     g__ crp
     ___
         crp.c__
@@ -1012,7 +1012,7 @@ ___ error_loading(path, sml):
         settingsXML = get_settings_xml()
         settingstree = ET.parse(settingsXML)
         settingsroot = settingstree.getroot()
-        ___ child __ settingsroot.find('bookmarks').findall('bookmark'):
+        ___ child __ settingsroot.find('bookmarks').f_a_('bookmark'):
             __ child.text __ path:
                 settingsroot.find('bookmarks').remove(child)
 
@@ -1031,10 +1031,10 @@ ___ get_project_information(project_full_path):
                     shot_info = []
                     tree = ET.parse(metaxml)
                     root = tree.getroot()
-                    ___ child __ root.find('notes').findall('note'):
+                    ___ child __ root.find('notes').f_a_('note'):
                         __ child.get('name') __ 'status':
                             status = child.text
-                            __ status is None or status __ '':
+                            __ status is N.. or status __ '':
                                 status = ''
                             shot_info.ap..(status)
                         __ child.get('name') __ 'shotnotes':
@@ -1128,7 +1128,7 @@ ___ build_html(html_path, project):
         r_ html_path
 
 
-___ build_pdf(build_path, project, output_filename = '', parent = None):
+___ build_pdf(build_path, project, output_filename = '', parent = N..):
     ___
         ____ PySide ______ QtWebKit
     except Exception:
@@ -1255,7 +1255,7 @@ ___ collapse_sequences(dirpath):
 
 ___ insert_shot_notes():
     shot_root = get_dir_docs_current_nukescript()
-    __ shot_root __ '' or shot_root is None:
+    __ shot_root __ '' or shot_root is N..:
         r_
     ____
         shot_root = shot_root.replace(DIR_DOCS, '')
@@ -1265,7 +1265,7 @@ ___ insert_shot_notes():
         meta_tree = ET.parse(meta_xml)
         meta_root = meta_tree.getroot()
         shot_notes = ''
-        ___ child __ meta_root.find('notes').findall('note'):
+        ___ child __ meta_root.find('notes').f_a_('note'):
             __ child.get('name') __ 'shotnotes':
                 shot_notes = child.text
 
@@ -1362,7 +1362,7 @@ ___ get_user(metaxml, *args):
     metatree = ET.parse(metaxml)
     metaroot = metatree.getroot()
     with open(metaxml, 'r') as xml:
-        ___ child __ metaroot.find('notes').findall('note'):
+        ___ child __ metaroot.find('notes').f_a_('note'):
             __ child.get('name') __ 'user':
                 r_ child.text
 
@@ -1377,7 +1377,7 @@ ___ set_user(user, dir_docs = ''):
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
         with open(meta_xml, 'w') as xml:
-            ___ child __ metaroot.find('notes').findall('note'):
+            ___ child __ metaroot.find('notes').f_a_('note'):
                 __ child.get('name') __ 'user':
                     child.text = user
 
@@ -1470,7 +1470,7 @@ c_ CustomPath(?W...?W..):
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
         with open(meta_xml, 'w') as xml:
-            ___ child __ metaroot.find('notes').findall('note'):
+            ___ child __ metaroot.find('notes').f_a_('note'):
                 __ which __ 'render':
                     __ child.get('name') __ 'renderpath':
                         child.text = input_path.t..
@@ -1493,7 +1493,7 @@ c_ CustomPath(?W...?W..):
             msg = "Successfully set up the custom {} path to: '{}'".format(which, input_path.text())
             show_message_box(self, msg)
         c__
-        __ sml is no. None:
+        __ sml is no. N..:
             ___
                 __ which __ 'render':
                     sml.current_shot_widget.set_renderpath(input_path.text())
@@ -1509,7 +1509,7 @@ c_ CustomPath(?W...?W..):
         meta_xml = get_meta_xml(shot_root)
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
-        ___ child __ metaroot.find('notes').findall('note'):
+        ___ child __ metaroot.find('notes').f_a_('note'):
             __ child.get('name') __ '{}path'.format(which):
                 __ child.get('loc') and child.get('loc') __ 'global':
                     r_ child.text

@@ -13,7 +13,7 @@ ____
     string_types = __builtin__.basestring
 
 
-___ imprint(node, data, tab=None):
+___ imprint(node, data, tab=N..):
     """Store attributes with value on node
 
     Parse user data into Node knobs.
@@ -85,16 +85,16 @@ c_ Knobby(object):
 
     """
 
-    ___  - (self, type, value, flags=None, *args):
+    ___  - (self, type, value, flags=N.., *args):
         type = type
         value = value
         flags = flags or []
         args = args
 
-    ___ create(self, name, nice=None):
+    ___ create(self, name, nice=N..):
         knob_cls = getattr(?, type)
         knob = knob_cls(name, nice, *args)
-        __ value is no. None:
+        __ value is no. N..:
             knob.sV..(value)
         ___ flag __ flags:
             knob.setFlag(flag)
@@ -126,7 +126,7 @@ ___ create_knobs(data, tab):
     """
     ___ nice_naming(key):
         """Convert camelCase name into UI Display Name"""
-        words = re.findall('[A-Z][^A-Z]*', key[0].upper() + key[1:])
+        words = re.f_a_('[A-Z][^A-Z]*', key[0].upper() + key[1:])
         r_ " ".join(words)
 
     # Turn key-value pairs into knobs
@@ -216,7 +216,7 @@ ___ _parse_first_user_knob(node):
         r_ matched.group(2)
 
 
-___ read(node, filter=None):
+___ read(node, filter=N..):
     """Return user-defined knobs from given `node`
 
     Args:
@@ -233,7 +233,7 @@ ___ read(node, filter=None):
     filter = filter or (lambda name: name)
 
     first_user_knob = _parse_first_user_knob(node)
-    __ first_user_knob is no. None:
+    __ first_user_knob is no. N..:
         # Collect user knobs from the end of the knob list
         ___ knob __ reversed(node.allKnobs()):
             knob_name = knob.name()
@@ -260,7 +260,7 @@ ___ read(node, filter=None):
     r_ data
 
 
-___ mold(node, tab=None, map_cls=None):
+___ mold(node, tab=N.., map_cls=N..):
     """Return user-defined knobs from given `node` with hierarchy
 
     Args:
@@ -279,7 +279,7 @@ ___ mold(node, tab=None, map_cls=None):
 
     map_cls = map_cls or dict
 
-    ___ _mold(tablet, prefix=None):
+    ___ _mold(tablet, prefix=N..):
         data = map_cls()
         prefix = (prefix + ":") __ prefix ____ ""
 

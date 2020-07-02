@@ -72,11 +72,11 @@ ___ load_settings(*args):
     __ check_xml_ok(settings_xml):
         settingstree = ET.parse(settings_xml)
         settingsroot = settingstree.getroot()
-        ___ setting __ settingsroot.find('settings').findall('setting'):
+        ___ setting __ settingsroot.find('settings').f_a_('setting'):
             settings[setting.get('name')] = setting.text
 
         pools = collections.OrderedDict()
-        ___ pool __ settingsroot.find('pools').findall('pool'):
+        ___ pool __ settingsroot.find('pools').f_a_('pool'):
             pools[pool.get('name')] = pool.text
             __ no. __.path.isdir(pool.text):
                 ___
@@ -91,7 +91,7 @@ ___ load_settings(*args):
 
         settings['pools'] = pools_sorted
         flags = []
-        ___ flag __ settingsroot.find('flags').findall('flag'):
+        ___ flag __ settingsroot.find('flags').f_a_('flag'):
             flags.ap..(flag.text)
 
         settings['flags'] = flags
@@ -104,7 +104,7 @@ ___ load_hotkeys(*args):
     __ check_xml_ok(settings_xml):
         settingstree = ET.parse(settings_xml)
         settingsroot = settingstree.getroot()
-        ___ setting __ settingsroot.find('hotkeys').findall('hotkey'):
+        ___ setting __ settingsroot.find('hotkeys').f_a_('hotkey'):
             name = setting.get('name')
             hotkeys[name] = setting.text
             hotkeys['{}_ctrl'.format(name)] = setting.get('ctrl')
@@ -160,7 +160,7 @@ ___ get_default_snapshot_root_dir(*args):
             __.makedirs(default_snapshots_root)
         ______
             msg = "Unable to create default snapshot root directory at: '{}'".format(default_snapshots_root)
-            show_message_box(None, msg)
+            show_message_box(N.., msg)
 
     r_ default_snapshots_root
 
@@ -244,7 +244,7 @@ ___ open_website(url, *args):
             subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
-            show_message_box(None, msg)
+            show_message_box(N.., msg)
 
     r_
 
@@ -280,7 +280,7 @@ ___ find_looks_group(*args):
     ___
         r_ [ node ___ node __ ?.allNodes('Group') __ node.knob('looks_group') ][0]
     except IndexError:
-        show_message_box(None, "Cannot find 'looks' group in nodegraph.")
+        show_message_box(N.., "Cannot find 'looks' group in nodegraph.")
 
     r_
 
@@ -345,7 +345,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
@@ -388,7 +388,7 @@ ___ build_hotkeys(*args):
     settingstree = ET.parse(settings_xml)
     settingsroot = settingstree.getroot()
     elements = []
-    ___ hotkey __ settingsroot.find('hotkeys').findall('hotkey'):
+    ___ hotkey __ settingsroot.find('hotkeys').f_a_('hotkey'):
         elements.ap..(hotkey.get('name'))
 
     ___ e __ elements:
@@ -399,7 +399,7 @@ ___ build_hotkeys(*args):
             hotkey += 'shift+'
         __ hotkeys['{}_alt'.format(e)] __ 'True':
             hotkey += 'alt+'
-        __ hotkeys[e] is None:
+        __ hotkeys[e] is N..:
             hotkeys_build[e] = ''
         ____
             hotkey += hotkeys[e]
@@ -435,7 +435,7 @@ ___ get_explorer_name(*args):
         r_ 'explorer'
 
 
-___ open_in_explorer(path, parent = None, *args):
+___ open_in_explorer(path, parent = N.., *args):
     __ no. __.path.isdir(path):
         msg = "Unable to open directory '{}'. The path doesn't exist.".format(path)
         show_message_box(parent, msg)
@@ -508,7 +508,7 @@ ___ update_xml(key, value, *args):
     settings_xml = get_settings_xml()
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
-    ___ setting __ settings_root.find('settings').findall('setting'):
+    ___ setting __ settings_root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
             setting.text = value
 
@@ -571,9 +571,9 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
         create_metaxml(metaxml)
     metatree = ET.parse(metaxml)
     metaroot = metatree.getroot()
-    ___ meta __ metaroot.find('metadata').findall('meta'):
+    ___ meta __ metaroot.find('metadata').f_a_('meta'):
         __ meta.get('name') __ 'flag':
-            __ color is None:
+            __ color is N..:
                 meta.text = ''
             ____
                 meta.text = '{},{},{}'.format(color[0], color[1], color[2])
@@ -609,7 +609,7 @@ ___ load_metadata(src, *args):
                 meta_tree = ET.parse(meta_xml)
                 meta_root = meta_tree.getroot()
 
-        ___ meta __ meta_root.find('metadata').findall('meta'):
+        ___ meta __ meta_root.find('metadata').f_a_('meta'):
             meta_val = meta.text
             __ no. meta_val:
                 meta_val = ''
@@ -624,7 +624,7 @@ ___ get_resolution(*args):
 
 
 ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_labek = 'cancel'):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()

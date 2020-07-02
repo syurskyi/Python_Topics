@@ -33,7 +33,7 @@ c_ autoCropPanel(nukescripts.PythonPanel):
 ___ autoCrop():
     initClass = autoCropPanel()
 
-    __ selectionCheck() is no. None:
+    __ selectionCheck() is no. N..:
         __ initClass.showModalDialog():
             initClass.autoCropMainCode()
     else:

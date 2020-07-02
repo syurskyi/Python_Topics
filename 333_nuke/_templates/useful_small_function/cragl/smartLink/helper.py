@@ -90,7 +90,7 @@ ___ load_settings():
     __ check_xml_ok(settings_xml):
         settings_tree = ET.parse(settings_xml)
         settings_root = settings_tree.getroot()
-        ___ setting __ settings_root.find('settings').findall('setting'):
+        ___ setting __ settings_root.find('settings').f_a_('setting'):
             value = setting.text
             __ value __ 'True':
                 value = True
@@ -109,7 +109,7 @@ ___ load_presets():
     __ check_xml_ok(settings_xml):
         settings_tree = ET.parse(settings_xml)
         settings_root = settings_tree.getroot()
-        ___ preset __ settings_root.find('backdrops').findall('backdrop'):
+        ___ preset __ settings_root.find('backdrops').f_a_('backdrop'):
             presets[preset.get('name')] = {'icon': preset.get('icon'),
              'color': [ float(val.strip()) ___ val __ preset.get('color').split(',') ]}
 
@@ -176,7 +176,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
@@ -228,7 +228,7 @@ ___ check_xml_ok(xml):
 
 ___ update_settings(key, value):
     xml, root, tree = get_xml_elements()
-    ___ setting __ root.find('settings').findall('setting'):
+    ___ setting __ root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
             setting.text = value
             with open(xml, 'w') as xml:
@@ -241,7 +241,7 @@ ___ update_settings(key, value):
 
 ___ update_preset(preset_name, key, value):
     xml, root, tree = get_xml_elements()
-    ___ preset __ root.find('backdrops').findall('backdrop'):
+    ___ preset __ root.find('backdrops').f_a_('backdrop'):
         __ preset.get('name') __ preset_name:
             preset.set(key, value)
             break
@@ -281,7 +281,7 @@ ___ open_website(url):
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
             ____ smartLink ______ dialogs
-            dialogs.show_message_box(None, msg)
+            dialogs.show_message_box(N.., msg)
 
     r_
 
@@ -414,7 +414,7 @@ ___ swap_presets(preset1, preset2):
 
     ___ _find_preset(root, name):
         index = 0
-        ___ preset __ root.find('backdrops').findall('backdrop'):
+        ___ preset __ root.find('backdrops').f_a_('backdrop'):
             __ preset.get('name') __ name:
                 r_ [preset, index]
             index += 1
@@ -436,7 +436,7 @@ ___ swap_presets(preset1, preset2):
 
 ___ remove_preset(name):
     xml, root, tree = get_xml_elements()
-    ___ preset __ root.find('backdrops').findall('backdrop'):
+    ___ preset __ root.find('backdrops').f_a_('backdrop'):
         __ preset.get('name') __ name:
             root.find('backdrops').remove(preset)
             break
@@ -463,7 +463,7 @@ ___ add_to_favorites():
     sel_nodes = ?.sN..
     __ no. sel_nodes:
         msg = 'Please select nodes that you would like to add to favorites.'
-        dialogs.show_message_box(None, msg)
+        dialogs.show_message_box(N.., msg)
         r_
     ____
         ___ node __ sel_nodes:

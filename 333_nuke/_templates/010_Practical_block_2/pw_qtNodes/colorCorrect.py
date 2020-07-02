@@ -119,7 +119,7 @@ c_ colorWheelClass(?W..):
         radius = (hw / 2) - padding
         center = hw / 2
         setFixedSize(QSize(hw, hw))
-        img = None
+        img = N..
         pick = [0, 0]
         pickerSize = 8
         value = 0
@@ -239,7 +239,7 @@ c_ colorRampClass(?W..):
         padding = 2
         value = 0.0
         pick = [0, 0]
-        img = None
+        img = N..
         pickerSize = 8
 
     ___ paintEvent(self, event):
@@ -317,7 +317,7 @@ c_ colorRampClass(?W..):
 
 
 c_ colorPickerClass(?W..):
-    ___  - (self, nukeNode=None, knob=None, label='Empty'):
+    ___  - (self, nukeNode=N.., knob=N.., label='Empty'):
         s_(colorPickerClass, self). - ()
         #window
         resize(QSize(250, 340))
@@ -325,7 +325,7 @@ c_ colorPickerClass(?W..):
         #variables
         nukeNode = nukeNode
         knob = knob
-        picker = None
+        picker = N..
         #ui
         mainLy = ?VB..
         sL..(mainLy)
@@ -392,7 +392,7 @@ c_ colorPickerClass(?W..):
 
     ___ addPicker
         __ picker:
-            picker.setParent(None)
+            picker.setParent(N..)
         __ rb1.isChecked():
             picker = colorWheelClass()
         ____

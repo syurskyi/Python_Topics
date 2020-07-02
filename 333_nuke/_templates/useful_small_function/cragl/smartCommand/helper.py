@@ -87,7 +87,7 @@ ___ load_settings():
     __ check_xml_ok(settings_xml):
         settings_tree = ET.parse(settings_xml)
         settings_root = settings_tree.getroot()
-        ___ setting __ settings_root.find('settings').findall('setting'):
+        ___ setting __ settings_root.find('settings').f_a_('setting'):
             value = setting.text
             __ value __ 'True':
                 value = True
@@ -177,7 +177,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     root = tree.getroot()
     debug = False
     item_found = 0
-    ___ child __ root.find(parent).findall(section):
+    ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
@@ -228,7 +228,7 @@ ___ check_xml_ok(xml):
 
 
 ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_label = 'cancel'):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
@@ -260,7 +260,7 @@ ___ show_path_browser(title):
 
 ___ update_settings(key, value):
     xml, root, tree = get_xml_elements()
-    ___ setting __ root.find('settings').findall('setting'):
+    ___ setting __ root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
             setting.text = value
 
@@ -290,7 +290,7 @@ ___ get_menus(all_incl = True, exclude_prefix = '_'):
     r_ menus
 
 
-___ add_command(collection_name, command_path, color = None, hotkey = None):
+___ add_command(collection_name, command_path, color = N.., hotkey = N..):
     xml = create_collection(collection_name)
     tree = ET.parse(xml)
     root = tree.getroot()
@@ -320,12 +320,12 @@ ___ get_history_xml():
 ___ swap_commands(xml, path_1, path_2):
     tree = ET.parse(xml)
     root = tree.getroot()
-    command_1 = None
-    command_2 = None
+    command_1 = N..
+    command_2 = N..
     index_1 = 0
     index_2 = 0
     index = 0
-    ___ command __ root.find('collection').findall('command'):
+    ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ path_1:
             command_1 = command
             index_1 = index
@@ -334,7 +334,7 @@ ___ swap_commands(xml, path_1, path_2):
             index_2 = index
         index += 1
 
-    __ no. all((command is no. None ___ command __ [command_1, command_2])):
+    __ no. all((command is no. N.. ___ command __ [command_1, command_2])):
         raise ValueError('No such sufficient data to swap.')
     root.find('collection').remove(command_2)
     root.find('collection').insert(index_1, command_2)
@@ -358,7 +358,7 @@ ___ remove_history_commands(xml, history_max):
     tree = ET.parse(xml)
     root = tree.getroot()
     index = 1
-    ___ command __ root.find('collection').findall('command'):
+    ___ command __ root.find('collection').f_a_('command'):
         __ index > history_max:
             root.find('collection').remove(command)
         index += 1
@@ -382,7 +382,7 @@ ___ create_collection(collection_name):
 
 
 ___ remove_command_duplicates(menu, command_path):
-    equals = [ command_elem ___ command_elem __ menu.findall('command') __ command_elem.text __ command_path ]
+    equals = [ command_elem ___ command_elem __ menu.f_a_('command') __ command_elem.text __ command_path ]
     ___ element __ equals:
         menu.remove(element)
 
@@ -392,7 +392,7 @@ ___ remove_command_duplicates(menu, command_path):
 ___ get_command_object(path):
     command = ?.menu('Nuke').findItem(path)
     __ no. command:
-        r_ None
+        r_ N..
     ____
         r_ command
 
@@ -416,7 +416,7 @@ ___ update_command(xml, path, key, value):
         raise IOError('No such collection file: {}'.format(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
-    ___ command __ root.find('collection').findall('command'):
+    ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ path:
             command.set(key, value)
             with open(xml, 'w') as xml:
@@ -432,7 +432,7 @@ ___ remove_command(xml, path):
         raise IOError('No such collection xml: {}'.format(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
-    ___ command __ root.find('collection').findall('command'):
+    ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ path:
             root.find('collection').remove(command)
             with open(xml, 'w') as xml:
@@ -458,7 +458,7 @@ ___ get_all_hotkeys():
         xml = '{}.xml'.format(collection)
         tree = ET.parse(__.path.join(collection_root, xml))
         root = tree.getroot()
-        ___ command __ root.find('collection').findall('command'):
+        ___ command __ root.find('collection').f_a_('command'):
             __ command.get('hotkey'):
                 hotkey_commands[command.get('hotkey')] = [command.text, xml]
 
@@ -504,7 +504,7 @@ ___ open_website(url):
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
             ____ smartCommand ______ dialogs
-            dialogs.show_message_box(None, msg)
+            dialogs.show_message_box(N.., msg)
 
     r_
 
@@ -521,7 +521,7 @@ ___ get_module_docstring(path):
     __ compile_.co_consts and i..(compile_.co_consts[0], basestring):
         docstring = compile_.co_consts[0]
     ____
-        docstring = None
+        docstring = N..
     r_ docstring
 
 

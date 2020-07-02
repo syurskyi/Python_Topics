@@ -9,7 +9,7 @@ ___ switch():
         data = a.data()
         __ data:
             # off
-            a.setData(None)
+            a.setData(N..)
             a.setText('Enable SYNC')
             callback(False)
         ____

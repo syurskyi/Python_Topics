@@ -180,8 +180,8 @@ c_ CleanModeDialog(?W..):
         """
 
         ___
-            group_cleanup.setParent(None)
-            push_close.setParent(None)
+            group_cleanup.setParent(N..)
+            push_close.setParent(N..)
         except Exception, e:
             pass
 

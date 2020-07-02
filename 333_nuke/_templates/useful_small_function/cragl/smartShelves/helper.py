@@ -67,7 +67,7 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            show_message_box(None, 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url))
+            show_message_box(N.., 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url))
 
     r_
 
@@ -116,7 +116,7 @@ ___ load_settings():
     tree = ET.parse(xml)
     root = tree.getroot()
     settings = {}
-    ___ setting __ root.find('settings').findall('setting'):
+    ___ setting __ root.find('settings').f_a_('setting'):
         settings[setting.get('name')] = setting.text
 
     r_ settings

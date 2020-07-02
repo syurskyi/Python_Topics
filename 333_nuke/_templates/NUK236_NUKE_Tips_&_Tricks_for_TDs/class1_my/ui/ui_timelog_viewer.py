@@ -74,10 +74,10 @@ c_ Ui_TimelogViewer(object):
     # setupUi
 
     ___ retranslateUi(self, TimelogViewer):
-        TimelogViewer.sQT..(QCoreApplication.translate("TimelogViewer", u"Timelog Viewer", None))
-        date_label.setText(QCoreApplication.translate("TimelogViewer", u"Date:", None))
-        delete_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Delete", None))
-        ok_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Ok", None))
-        cancel_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Cancel", None))
+        TimelogViewer.sQT..(QCoreApplication.translate("TimelogViewer", u"Timelog Viewer", N..))
+        date_label.setText(QCoreApplication.translate("TimelogViewer", u"Date:", N..))
+        delete_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Delete", N..))
+        ok_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Ok", N..))
+        cancel_push_button.setText(QCoreApplication.translate("TimelogViewer", u"Cancel", N..))
     # retranslateUi
 

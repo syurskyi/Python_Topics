@@ -14,7 +14,7 @@ ___ openFileReturnArr(file):
     #load in all lines
     ___ line __ fobj:
         #delete word wrap at the end of each line
-        line=line.replace("\n", "")
+        line=line.r__("\n", "")
         arr.append(line)
     fobj.c__
     r_ arr

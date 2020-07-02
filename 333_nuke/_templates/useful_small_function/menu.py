@@ -10,8 +10,8 @@ print 'in my menu.py'
 
 # per Matthieu Cadet <matthieu.cadet@gmail.com> in nuke users email conversation
 #
-___ autoColorReadNodeType(overrideNode=None):
-       __ overrideNode __ None:
+___ autoColorReadNodeType(overrideNode=N..):
+       __ overrideNode __ N..:
                this = ?.thisNode()
        ____
                this = overrideNode
@@ -31,9 +31,9 @@ ___ autoColorReadNodeType(overrideNode=None):
 # align selected nodes on a horizontal line, by Steve Molin
 #
 ___ sjmAlignH():
-  yresult = None
+  yresult = N..
   ___ n __ ?.sN..:
-    __ yresult is None:
+    __ yresult is N..:
       yresult = n.ypos()
     ____
       n.setYpos(yresult)
@@ -41,9 +41,9 @@ ___ sjmAlignH():
 # align selected nodes on a vertical line, by Steve Molin
 #
 ___ sjmAlignV():
-  xresult = None
+  xresult = N..
   ___ n __ ?.sN..:
-    __ xresult is None:
+    __ xresult is N..:
       xresult = n.xpos()
     ____
       n.setXpos(xresult)
@@ -94,8 +94,8 @@ ___ sjmBackdropFonts():
 # Walk the heirarchy up from selected node and return a set of
 # all nodes that have the 'file' attribute
 #
-___ sjmFindAllParentReads(n=None):
-  __ n is None:
+___ sjmFindAllParentReads(n=N..):
+  __ n is N..:
     n = ?.sN__
   result = []
   __ n.knob('file'):
@@ -121,9 +121,9 @@ ___ sjmHideInputsOff():
 #
 # by steve molin
 #
-___ sjmOpenInViewer(nd=None):
+___ sjmOpenInViewer(nd=N..):
   ______ subprocess
-  __ nd is None:
+  __ nd is N..:
     nd = ?.sN__
   fp = nd.knobs()['file'].value() % nd.firstFrame()
   args = 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp
