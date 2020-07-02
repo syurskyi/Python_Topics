@@ -22,15 +22,15 @@
 #no need to change anything from here. Edit only if you exactly know what you're doing.
 
 ______ ?
-______ os
+______ __
 ______ helper
 ______ init
 
-global default_dir
-global knobInit
-global ctrl
+g__ default_dir
+g__ knobInit
+g__ ctrl
 
-default_dir = os.path.dirname(__file__)
+default_dir = __.path.dirname(__file__)
 knobInit = default_dir+"/init.py"
 ctrl = False
 
@@ -41,12 +41,12 @@ ___ checkExistingInit():
 	if not create one
 	'''
 	
-	__ not os.path.isfile(knobInit):
-		try:
+	__ not __.path.isfile(knobInit):
+		___
 			open(knobInit,'w')
 			__ ctrl == True:
 					print "created knobInit"
-		except:
+		______
 			__ ctrl == True:
 					print "couldn't create knobInit"
 	____
@@ -104,23 +104,23 @@ ___ updateKnobInit(node,knob,value,mode):
 				print "not found in knobInit"
 		
 		#write new knobInit
-		try:
+		___
 			f = open(knobInit,'w+')
 			___ d __ knobDefaults:
 				f.write(d+"\n")
-			f.close()
-		except:
+			f.c__
+		______
 			?.message("an error occured while trying to edit the knobDefaults file")
 
 	__ mode == "write":
 		#get rid of old knobDefaults of the current knob and write new knobDefault			
 		updateKnobInit(node,knob,"","del")
-		try:
+		___
 			f = open(knobInit,'a')
 			newKnobDefault = 'nuke.knobDefault("{node}.{knob}", "{val}")\n'.format(node=node, knob=knob, val=value)
 			f.write(newKnobDefault)
-			f.close()
-		except:
+			f.c__
+		______
 			?.message("an error occured while trying to edit the knobDefaults file")
 
 checkExistingInit()

@@ -1,23 +1,23 @@
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 
 qnuke = QApplication.activeWindow()
 print qnuke
-w = QWidget()
-w.show()
+w = ?W..()
+w.s__
 
 ########################################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 
 qnuke = QApplication.activeWindow()
 print qnuke
-w = QWidget(qnuke, Qt.Tool)
-w.show()
-w.close()
+w = ?W..(qnuke, Qt.Tool)
+w.s__
+w.c__
 
 ___ active():
     print QApplication.activeWindow()
@@ -25,8 +25,8 @@ QTimer.singleShot(2000, active)
 
 ########################################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 app = QApplication.instance()
 ___ w __ app.topLevelWidgets():
@@ -49,13 +49,13 @@ qnuke.setWindowTitle('Nuke')
 
 ########################################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 
-w = QWidget(getNukeWindow(), Qt.Tool)
-w.show()
-w.close()
+w = ?W..(getNukeWindow(), Qt.Tool)
+w.s__
+w.c__
 
 ___ active():
     print QApplication.activeWindow()
@@ -63,15 +63,15 @@ QTimer.singleShot(2000, active)
 
 ########################################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 
-w = QWidget(getNukeWindow(), Qt.Tool)
-w.show()
-w.close()
+w = ?W..(getNukeWindow(), Qt.Tool)
+w.s__
+w.c__
 
 ___ active():
-    w = QWidget(getNukeWindow(), Qt.Tool)
-    w.show()
+    w = ?W..(getNukeWindow(), Qt.Tool)
+    w.s__
 QTimer.singleShot(2000, active)

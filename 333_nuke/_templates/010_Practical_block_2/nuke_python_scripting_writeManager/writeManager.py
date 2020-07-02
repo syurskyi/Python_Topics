@@ -1,36 +1,36 @@
 ______ ?, ?
 
 c_ writeManagerClass(?.PythonPanel):
-    ___  - (self):
+    ___  -
         ?.PythonPanel. - (self, 'Write Manager', 'pw+writemanager')
-        self.nodes = {x.name():x ___ x __ ?.allNodes('Write')}
-        ___ name, node __ self.nodes.items():
+        nodes = {x.name():x ___ x __ ?.allNodes('Write')}
+        ___ name, node __ nodes.items():
             line = ?.String_Knob(name+'-file', name)
             line.sV..(node['file'].getValue())
-            self.addKnob(line)
+            addKnob(line)
             cb = ?.Boolean_Knob(name+'-disable','')
             cb.clearFlag(?.STARTLINE)
             cb.sV..(not node['disable'].getValue())
-            self.addKnob(cb)
+            addKnob(cb)
 
-        self.start = ?.PyScript_Knob('render','Render')
-        self.start.setFlag(?.STARTLINE)
-        self.addKnob(self.start)
+        start = ?.PyScript_Knob('render','Render')
+        start.setFlag(?.STARTLINE)
+        addKnob(start)
 
     ___ knobChanged(self, knob):
         node = knob.name().split('-')[0]
-        __ node __ self.nodes:
-            node = self.nodes[node]
+        __ node __ nodes:
+            node = nodes[node]
             k = knob.name().split('-')[1]
             __ k == 'file':
                 node['file'].sV..(knob.value())
             elif k == 'disable':
                 node['disable'].sV..(not knob.value())
             return
-        __ knob is self.start:
+        __ knob is start:
             print 'RENDER'
 
 
-___ show():
+___ s__:
     w = writeManagerClass()
-    w.show()
+    w.s__

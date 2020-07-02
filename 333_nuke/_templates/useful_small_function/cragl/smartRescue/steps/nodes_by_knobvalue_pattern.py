@@ -99,18 +99,18 @@ Advanced:
 ______ re
 
 # Import third-party modules
-______ ?  # pylint: disable=import-error
+______ ?  # pylint: disable=______-error
 
 # Import local modules
-from smartRescue.base_steps ______ NodeStep
+____ smartRescue.base_steps ______ NodeStep
 
 
 c_ NodesByKnobValuePattern(NodeStep):
     """Handle all nodes in the DAG that match one of the patterns."""
 
-    ___ process(self):
+    ___ process
         """Handle nodes that match one of the patterns."""
-        ___ rule __ self.setup["patterns"]:
+        ___ rule __ setup["patterns"]:
             ___ node __ ?.allNodes():
                 knob_name = rule[0]
                 pattern = rule[1]
@@ -123,9 +123,9 @@ c_ NodesByKnobValuePattern(NodeStep):
                 __ not re.search(pattern, knob_value):
                     continue
 
-                self.logger.debug("%s node '%s' because it matches a pattern. "
+                logger.debug("%s node '%s' because it matches a pattern. "
                                   "%s: %s | Matching Pattern: %s",
-                                  self.setup["mode"], node.name(), knob_name,
+                                  setup["mode"], node.name(), knob_name,
                                   knob_value, pattern)
 
-                self.handle_node(node)
+                handle_node(node)

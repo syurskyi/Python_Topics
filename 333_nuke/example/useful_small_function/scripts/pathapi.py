@@ -4,55 +4,55 @@ import re
 
 def project(path):
 	"""
-	경로에서 project 이름을 반환한다.
+	Return the project name in the path
 	"""
 	p = re.findall('/project/(\w+)', path.replace("\\","/"))
 	if len(p) != 1:
-		return "", "경로에서 project 정보를 가지고 올 수 없습니다."
+		return "", "Could not bring project information from the path."
 	return p[0], None
 
 def seq(path):
 	"""
-	경로에서 seq 이름을 반환한다.
+	Returns the seq name in the path.
 	"""
 	p = re.findall('/shot/(\w+)', path.replace("\\","/"))
 	if len(p) != 1:
-		return "", "경로에서 seq 정보를 가지고 올 수 없습니다."
+		return "", "Cannot get seq information from path."
 	return p[0], None
 
 def shot(path):
 	"""
-	경로에서 shot 이름을 반환한다.
+	Returns the shot name from the path.
 	"""
 	p = re.findall('/shot/\w+/(\w+)', path.replace("\\","/"))
 	if len(p) != 1:
-		return "", "경로에서 shot 정보를 가지고 올 수 없습니다."
+		return "", "I can't bring shot information from the path."
 	return p[0], None
 
 def task(path):
 	"""
-	경로에서 task 이름을 반환한다.
+	Returns the task name in the path.
 	"""
 	p = re.findall('/shot/\w+/\w+/(\w+)', path.replace("\\","/"))
 	if len(p) != 1:
-		return "", "경로에서 task 정보를 가지고 올 수 없습니다."
+		return "", "Could not bring task information from the path."
 	return p[0], None
 
 def ver(path):
 	"""
-	경로에서 version 정보를 반환한다.
+	Returns version information in the path.
 	"""
 	p = re.findall('_v(\d+)', path.replace("\\","/"))
 	if len(p) != 1:
-		return -1, "경로에서 task 정보를 가지고 올 수 없습니다."
+		return -1, "Could not bring task information from the path."
 	return int(p[0]), None
 
 def seqnum(path):
 	"""
-	경로에서 시퀀스 넘버를 반환한다.
+	Returns the sequence number in the path.
 	"""
 	p = re.findall('\.(\d+)\.', path.replace("\\","/"))
 	if len(p) != 1:
-		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
+		return -1, "Cannot get seqnum information from the path."
 	return int(p[0]), None
 

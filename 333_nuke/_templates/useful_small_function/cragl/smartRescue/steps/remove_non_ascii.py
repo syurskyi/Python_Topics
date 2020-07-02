@@ -32,7 +32,7 @@ Advanced:
 """
 
 # Import local modules
-from smartRescue.base_steps ______ BaseStep
+____ smartRescue.base_steps ______ BaseStep
 
 
 c_ RemoveNonASCII(BaseStep):
@@ -51,16 +51,16 @@ c_ RemoveNonASCII(BaseStep):
         """
         return "".join([char ___ char __ string __ ord(char) < 127])
 
-    ___ process(self):
+    ___ process
         """Process the file removing illegal characters."""
         lines = []
-        with open(self.path, "r") as src:
+        with open(path, "r") as src:
             ___ line, content __ enumerate(src.readlines()):
-                sanitized = self.cut_non_ascii(content)
+                sanitized = cut_non_ascii(content)
                 __ sanitized != content:
-                    self.logger.info("Detected and removed non-ascii "
+                    logger.info("Detected and removed non-ascii "
                                      "character in line %s", line + 1)
                 lines.ap..(sanitized)
 
-        with open(self.path, "w") as dest:
+        with open(path, "w") as dest:
             dest.write("".join(lines))

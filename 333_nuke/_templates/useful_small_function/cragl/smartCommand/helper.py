@@ -1,6 +1,6 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCommand_v1.0.0/smartCommand/helper.py
 ______ json
-______ os
+______ __
 ______ time
 ______ platform
 ______ re
@@ -9,34 +9,34 @@ ______ sys
 ______ xml.etree.ElementTree as ET
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    from PySide ______ QtGui as QtWidgets
-    from PySide ______ QtGui
-    from PySide ______ QtCore
+    ____ PySide ______ QtGui as ?W..
+    ____ PySide ______ QtGui
+    ____ PySide ______ QtCore
 ____
-    from PySide2 ______ QtWidgets
-    from PySide2 ______ QtCore
-    from PySide2 ______ QtGui
-from smartCommand ______ templates
-from smartCommand.info ______ __product__
+    ____ ? ______ ?W..
+    ____ ? ______ QtCore
+    ____ ? ______ QtGui
+____ smartCommand ______ templates
+____ smartCommand.info ______ __product__
 
 ___ load_icons():
-    this_dir = os.path.dirname(__file__)
-    dir_icon = os.path.join(this_dir, 'icons')
-    dir_icon = os.path.normpath(dir_icon)
+    this_dir = __.path.dirname(__file__)
+    dir_icon = __.path.join(this_dir, 'icons')
+    dir_icon = __.path.normpath(dir_icon)
     icons = {}
-    ___ file_ __ os.listdir(dir_icon):
-        name = os.path.splitext(file_)[0]
-        path = os.path.join(dir_icon, file_)
+    ___ file_ __ __.listdir(dir_icon):
+        name = __.path.splitext(file_)[0]
+        path = __.path.join(dir_icon, file_)
         icons[name] = path
 
     return icons
 
 
 ___ set_style_sheet(widget, style = 'styles.qss'):
-    this_dir = os.path.join(os.path.dirname(__file__))
-    styles = os.path.join(this_dir, 'styles', style)
-    styles = os.path.normpath(styles)
-    __ os.path.isfile(styles):
+    this_dir = __.path.join(__.path.dirname(__file__))
+    styles = __.path.join(this_dir, 'styles', style)
+    styles = __.path.normpath(styles)
+    __ __.path.isfile(styles):
         with open(styles) as file_:
             widget.setStyleSheet(file_.read())
 
@@ -52,10 +52,10 @@ ___ get_tool_root(which):
         cragl_dir = '.cragl'
     ____
         cragl_dir = 'cragl'
-    root = os.path.join(os.path.expanduser('~'), cragl_dir, __product__)
-    __ not os.path.isdir(root):
-        try:
-            os.makedirs(root)
+    root = __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
+    __ not __.path.isdir(root):
+        ___
+            __.makedirs(root)
         except IOError:
             write_log('unable to create open tool dir at: {}'.format(root))
 
@@ -70,11 +70,11 @@ ___ write_log(text, tool = 'sc'):
 
 
 ___ get_log_file():
-    connect_dir = os.path.join(os.path.expanduser('~'), '.cragl', 'connect')
-    __ not os.path.isdir(connect_dir):
-        os.makedirs(connect_dir)
-    log_file = os.path.join(connect_dir, 'connectlog.txt')
-    __ not os.path.isfile(log_file):
+    connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
+    __ not __.path.isdir(connect_dir):
+        __.makedirs(connect_dir)
+    log_file = __.path.join(connect_dir, 'connectlog.txt')
+    __ not __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
@@ -100,9 +100,9 @@ ___ load_settings():
 
 ___ get_collection_root():
     collection_root = load_settings()['collection_root']
-    __ not os.path.isdir(collection_root):
-        try:
-            os.makedirs(collection_root)
+    __ not __.path.isdir(collection_root):
+        ___
+            __.makedirs(collection_root)
         except OSError:
             msg = "Cannot create menu direcory in '{}'. Please set a different path.".format(collection_root)
             ?.message(msg)
@@ -112,9 +112,9 @@ ___ get_collection_root():
 
 ___ get_scriptlets_root():
     scriptlet_root = load_settings()['scriptlets']
-    __ not os.path.isdir(scriptlet_root):
-        try:
-            os.makedirs(scriptlet_root)
+    __ not __.path.isdir(scriptlet_root):
+        ___
+            __.makedirs(scriptlet_root)
         except OSError:
             msg = "Cannot create scriptlet direcory in '{}'. Please set a different path.".format(scriptlet_root)
             ?.message(msg)
@@ -123,16 +123,16 @@ ___ get_scriptlets_root():
 
 
 ___ default_collection_root():
-    root = os.path.join(get_tool_root('public'), 'collections')
-    __ not os.path.isdir(root):
-        os.makedirs(root)
+    root = __.path.join(get_tool_root('public'), 'collections')
+    __ not __.path.isdir(root):
+        __.makedirs(root)
     return root
 
 
 ___ default_scriptlets_root():
-    root = os.path.join(get_tool_root('public'), 'scriptlets')
-    __ not os.path.isdir(root):
-        os.makedirs(root)
+    root = __.path.join(get_tool_root('public'), 'scriptlets')
+    __ not __.path.isdir(root):
+        __.makedirs(root)
     return root
 
 
@@ -149,15 +149,15 @@ ___ get_xml_elements():
 
 
 ___ get_settings_xml():
-    settings_xml = os.path.join(get_tool_root('private'), 'settings.xml')
-    __ not os.path.isfile(settings_xml):
-        try:
+    settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
+    __ not __.path.isfile(settings_xml):
+        ___
             with open(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
                 msg = "{} settings doesn't exist. created template at: {}".format(__product__, settings_xml)
                 write_log(msg)
-        except:
+        ______
             msg = 'Failed writing {} settings template at: {}'.format(__product__, settings_xml)
             write_log(msg)
 
@@ -172,7 +172,7 @@ ___ check_xml_values_exist():
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
-    xml = os.path.join(get_tool_root('private'), 'settings.xml')
+    xml = __.path.join(get_tool_root('private'), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
     debug = False
@@ -214,25 +214,25 @@ ___ prettyprint(elem, level = 0):
 
 
 ___ check_xml_ok(xml):
-    try:
+    ___
         with open(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
         return True
-    except:
+    ______
         message = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
         reset_settings_xml = ask_dialog(message, process_label='reset', color_process='actionButton')
         __ reset_settings_xml:
-            __ os.path.isfile(xml):
-                os.remove(xml)
+            __ __.path.isfile(xml):
+                __.remove(xml)
                 get_settings_xml()
 
 
 ___ ask_dialog(message, process_label = 'ok', color_process = 'actionButton', cancel_label = 'cancel'):
-    msg_box = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Warning, 'QMessageBox.warning()', message, QtWidgets.QMessageBox.NoButton, None)
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', message, ?W...QMessageBox.NoButton, None)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
-    process_button = msg_box.addButton(process_label, QtWidgets.QMessageBox.AcceptRole)
+    process_button = msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)
     __ color_process != '':
         __ color_process == 'actionButton':
             color_process = '51, 204, 255, 100'
@@ -240,8 +240,8 @@ ___ ask_dialog(message, process_label = 'ok', color_process = 'actionButton', ca
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
-    msg_box.addButton(cancel_label, QtWidgets.QMessageBox.RejectRole)
-    __ msg_box.exec_() == QtWidgets.QMessageBox.AcceptRole:
+    msg_box.addButton(cancel_label, ?W...QMessageBox.RejectRole)
+    __ msg_box.exec_() == ?W...QMessageBox.AcceptRole:
         return True
     ____
         return False
@@ -249,12 +249,12 @@ ___ ask_dialog(message, process_label = 'ok', color_process = 'actionButton', ca
 
 
 ___ show_path_browser(title):
-    dialog = QtWidgets.QFileDialog()
+    dialog = ?W...QFileDialog()
     dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     dialog.setWindowTitle(title)
-    dialog.setFileMode(QtWidgets.QFileDialog.Directory)
-    dialog.setOption(QtWidgets.QFileDialog.ShowDirsOnly)
-    __ dialog.exec_() == QtWidgets.QDialog.Accepted:
+    dialog.setFileMode(?W...QFileDialog.Directory)
+    dialog.setOption(?W...QFileDialog.ShowDirsOnly)
+    __ dialog.exec_() == ?W...QDialog.Accepted:
         return dialog.selectedFiles()[0]
 
 
@@ -274,13 +274,13 @@ ___ get_menus(all_incl = True, exclude_prefix = '_'):
     __ all_incl:
         menus.ap..('all')
     menu_root = get_collection_root()
-    ___ file_ __ os.listdir(menu_root):
+    ___ file_ __ __.listdir(menu_root):
         __ file_.startswith(exclude_prefix):
             continue
         __ file_.endswith('.xml'):
-            try:
-                xml_path = os.path.join(menu_root, file_)
-                xml_name = os.path.splitext(file_)[0]
+            ___
+                xml_path = __.path.join(menu_root, file_)
+                xml_name = __.path.splitext(file_)[0]
                 with open(xml_path, 'r') as xml_file:
                     ET.fromstring(xml_file.read())
                 menus.ap..(xml_name)
@@ -313,8 +313,8 @@ ___ sanitize(string):
 
 
 ___ get_history_xml():
-    from smartCommand.constants ______ HISTORY
-    return os.path.join(get_tool_root('private'), '{}.xml'.format(HISTORY))
+    ____ smartCommand.constants ______ HISTORY
+    return __.path.join(get_tool_root('private'), '{}.xml'.format(HISTORY))
 
 
 ___ swap_commands(xml, path_1, path_2):
@@ -348,8 +348,8 @@ ___ swap_commands(xml, path_1, path_2):
 
 ___ get_collection_xml(name):
     collection_root = get_collection_root()
-    xml = os.path.join(collection_root, '{}.xml'.format(name))
-    __ not os.path.isfile(xml):
+    xml = __.path.join(collection_root, '{}.xml'.format(name))
+    __ not __.path.isfile(xml):
         raise IOError('No such collection xml: {}'.format(xml))
     return xml
 
@@ -373,8 +373,8 @@ ___ create_collection(collection_name):
         collection_root = get_tool_root('private')
     ____
         collection_root = load_settings()['collection_root']
-    xml = os.path.join(collection_root, '{}.xml'.format(collection_name))
-    __ not os.path.isfile(xml):
+    xml = __.path.join(collection_root, '{}.xml'.format(collection_name))
+    __ not __.path.isfile(xml):
         write_log("Create new collection '{}.xml'".format(collection_name))
         with open(xml, 'w') as file_:
             file_.write(templates.COLLECTION.format(collection_name=collection_name))
@@ -398,21 +398,21 @@ ___ get_command_object(path):
 
 
 ___ get_next_element(list_, current):
-    try:
+    ___
         return list_[list_.index(current) + 1]
     except IndexError:
         return list_[0]
 
 
 ___ get_previous_element(list_, current):
-    try:
+    ___
         return list_[list_.index(current) - 1]
     except IndexError:
         return list_[le.(list_)]
 
 
 ___ update_command(xml, path, key, value):
-    __ not os.path.isfile(xml):
+    __ not __.path.isfile(xml):
         raise IOError('No such collection file: {}'.format(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
@@ -428,7 +428,7 @@ ___ update_command(xml, path, key, value):
 
 
 ___ remove_command(xml, path):
-    __ not os.path.isfile(xml):
+    __ not __.path.isfile(xml):
         raise IOError('No such collection xml: {}'.format(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
@@ -456,7 +456,7 @@ ___ get_all_hotkeys():
     collection_root = get_collection_root()
     ___ collection __ get_menus(all_incl=False):
         xml = '{}.xml'.format(collection)
-        tree = ET.parse(os.path.join(collection_root, xml))
+        tree = ET.parse(__.path.join(collection_root, xml))
         root = tree.getroot()
         ___ command __ root.find('collection').findall('command'):
             __ command.get('hotkey'):
@@ -475,13 +475,13 @@ ___ initialize_hotkeys():
 
 
 ___ load_tooltips(parent, section):
-    this_dir = os.path.dirname(__file__)
-    tooltips_file = os.path.join(this_dir, 'data', 'tooltips.json')
-    tooltips_file = os.path.normpath(tooltips_file)
-    __ not os.path.isfile(tooltips_file):
+    this_dir = __.path.dirname(__file__)
+    tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
+    tooltips_file = __.path.normpath(tooltips_file)
+    __ not __.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
-        try:
+        ___
             ttdata = json.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
@@ -495,25 +495,25 @@ ___ load_tooltips(parent, section):
 
 ___ open_website(url):
     __ sys.platform == 'win32':
-        os.startfile(url)
+        __.startfile(url)
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
     ____
-        try:
+        ___
             subprocess.Popen(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
-            from smartCommand ______ dialogs
+            ____ smartCommand ______ dialogs
             dialogs.show_message_box(None, msg)
 
     return
 
 
 ___ get_basename(path, extension = False):
-    basename = os.path.basename(path)
+    basename = __.path.basename(path)
     __ extension:
         return basename
-    return os.path.splitext(basename)[0]
+    return __.path.splitext(basename)[0]
 
 
 ___ get_module_docstring(path):
@@ -527,7 +527,7 @@ ___ get_module_docstring(path):
 
 ___ center_window(window):
     geometry = window.frameGeometry()
-    centerpoint = QtWidgets.QDesktopWidget().availableGeometry().center()
+    centerpoint = ?W...QDesktopWidget().availableGeometry().center()
     geometry.moveCenter(centerpoint)
     window.move(geometry.topLeft())
 

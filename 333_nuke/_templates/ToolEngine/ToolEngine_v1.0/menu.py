@@ -1,10 +1,10 @@
 ______ ?
-______ os
+______ __
 
 ______ ToolEngine.src.toolengine as toolengine
 ______ ToolEngine.src.toolhelper as helper
 
-logo = os.path.normpath(os.path.join(os.path.dirname(__file__), "ToolEngine", "img", "logo.png"))
+logo = __.path.normpath(__.path.join(__.path.dirname(__file__), "ToolEngine", "img", "logo.png"))
 
 # build menu
 # te_menu = nuke.menu("Nodes").addMenu("ToolEngine", icon=logo)

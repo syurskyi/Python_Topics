@@ -9,7 +9,7 @@ Blur {
  xpos 94
  ypos -92
  addUserKnob {20 User}
- addUserKnob {22 test l Test T "import nuke\nnode = nuke.thisNode()\nprint node.name()\nknob = nuke.thisKnob()\nprint knob.name()" +STARTLINE}
+ addUserKnob {22 test l Test T "______ nuke\nnode = nuke.thisNode()\nprint node.name()\nknob = nuke.thisKnob()\nprint knob.name()" +STARTLINE}
 }
 ########################################################################################################################
 
@@ -24,5 +24,5 @@ Blur {
  xpos 58
  ypos -103
  addUserKnob {20 User}
- addUserKnob {22 test l Test T "import nuke\nnode = nuke.thisNode()\nnode\['size'].setValue(10)" +STARTLINE}
+ addUserKnob {22 test l Test T "______ nuke\nnode = nuke.thisNode()\nnode\['size'].setValue(10)" +STARTLINE}
 }

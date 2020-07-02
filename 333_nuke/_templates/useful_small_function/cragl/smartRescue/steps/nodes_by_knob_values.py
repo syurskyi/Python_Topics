@@ -133,10 +133,10 @@ Advanced:
 ______ operator
 
 # Import third-party modules
-______ ?  # pylint: disable=import-error
+______ ?  # pylint: disable=______-error
 
 # Import local modules
-from smartRescue.base_steps ______ NodeStep
+____ smartRescue.base_steps ______ NodeStep
 
 
 c_ NodesByKnobValues(NodeStep):
@@ -151,9 +151,9 @@ c_ NodesByKnobValues(NodeStep):
         ">=": operator.ge
     }
 
-    ___ process(self):
+    ___ process
         """Handle nodes that match one of the knob rules."""
-        ___ rule __ self.setup["knob_rules"]:
+        ___ rule __ setup["knob_rules"]:
             ___ node __ ?.allNodes():
 
                 __ node.Class() != rule["node_class"]:
@@ -163,9 +163,9 @@ c_ NodesByKnobValues(NodeStep):
                 __ not knob:
                     continue
 
-                operator_ = self.operators.get(rule["operator"])
+                operator_ = operators.get(rule["operator"])
                 __ not operator_:
-                    self.logger.waring("Non supported operator '%s'. Skip "
+                    logger.waring("Non supported operator '%s'. Skip "
                                        "step", rule["operator"])
 
                 # At this stage, we must check against different types of knob
@@ -181,7 +181,7 @@ c_ NodesByKnobValues(NodeStep):
 
                 rule_matched = False
                 ___ type_ __ types:
-                    try:
+                    ___
                         __ operator_(knob.value(), type_(rule["knob_value"])):
                             rule_matched = True
                             break
@@ -193,11 +193,11 @@ c_ NodesByKnobValues(NodeStep):
                         continue
 
                 __ rule_matched:
-                    self.logger.info(
+                    logger.info(
                         "%s node '%s' (%s) because a rule matches the knob "
                         "value. Current value '%s'. "
                         "Matching Rule: %s.%s %s %s",
-                        self.setup["mode"],
+                        setup["mode"],
                         node.name(),
                         node.Class(),
                         knob.value(),
@@ -207,4 +207,4 @@ c_ NodesByKnobValues(NodeStep):
                         rule["knob_value"]
                     )
 
-                    self.handle_node(node)
+                    handle_node(node)

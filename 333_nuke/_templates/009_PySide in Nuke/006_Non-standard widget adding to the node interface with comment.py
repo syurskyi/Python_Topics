@@ -3,8 +3,8 @@
 
 # vsjo shto mu vidim v interfejse nodu eto setka
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 ___ getMainWindow():
     app = QApplication.instance()
@@ -13,15 +13,15 @@ ___ getMainWindow():
             return widget
 
 qnuke = getMainWindow()
-w = qnuke.findChild(QWidget, 'Transform1')
+w = qnuke.findChild(?W.., 'Transform1')
 w.setWindowTitle('Transform11')
 t = w.findChild(QTabWidget)
 t.count()
-nw = QWidget()
-ly = QVBoxLayout()
-nw.setLayout(ly)
+nw = ?W..()
+ly = ?VB..
+nw.sL..(ly)
 ___ i __ ra..(5):
-    ly.addWidget(QPushButton())
+    ly.aW..(QPushButton())
 t.addTab(nw, 'My Tab')
 c = QCalendarWidget()
 t.insertTab(0, c, 'Calendar')
@@ -29,28 +29,28 @@ t.setCurrentIndex(0)
 
 ###############################################
 
-w = qnuke.findChild(QWidget, 'Transform1')
+w = qnuke.findChild(?W.., 'Transform1')
 t = w.findChild(QTabWidget)
 tw = t.widget(0)
 gl = tw.children()[0]
 gl.rowCount()
 s = QSlider()
 s.setOrientation(Qt.Horizontal)
-gl.addWidget(s, 12, 1)
-lb = QLabel('SYURSKYI')
-gl.addWidget(lb, 12, 0, Qt.AlignRight)
+gl.aW..(s, 12, 1)
+lb = ?L..('SYURSKYI')
+gl.aW..(lb, 12, 0, Qt.AlignRight)
 
 ###############################################
 
-w = qnuke.findChild(QWidget, 'Transform1')
+w = qnuke.findChild(?W.., 'Transform1')
 t = w.findChild(QTabWidget)
 tw = t.widget(0)
 gl = tw.children()[0]
 
-w2 = QWidget()
-w2.setLayout(gl)
-ly = QVBoxLayout()
-tw.setLayout(ly)
+w2 = ?W..()
+w2.sL..(gl)
+ly = ?VB..
+tw.sL..(ly)
 btn = QPushButton('SYURSKYI')
-ly.addWidget(btn)
-ly.addWidget(w2)
+ly.aW..(btn)
+ly.aW..(w2)

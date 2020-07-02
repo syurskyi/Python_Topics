@@ -1,12 +1,12 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCollect_v1.2/smartCollect/src/nk_utils.py
-______ os
+______ __
 ______ platform
-from smartCollect.src ______ helper
-from smartCollect.src ______ templates
-from smartCollect.src ______ autosearch
+____ smartCollect.src ______ helper
+____ smartCollect.src ______ templates
+____ smartCollect.src ______ autosearch
 
 ___ is_nuke():
-    try:
+    ___
         ______ ?
         return True
     except ImportError:
@@ -43,7 +43,7 @@ ___ get_nuke_exe(startup_feedback = False):
                     nuke_executable = full_path.format(?=version)
                 ____
                     nuke_executable = full_path.format(?=version, nuke_major_minor=version.split('v')[0])
-                __ os.path.isfile(nuke_executable):
+                __ __.path.isfile(nuke_executable):
                     executable = nuke_executable
                     __ debug:
                         print 'Using found nuke executable: {}'.format(executable)
@@ -51,7 +51,7 @@ ___ get_nuke_exe(startup_feedback = False):
 
         __ not executable:
             private_tool_root = helper.get_tool_private_root()
-            settings_path = os.path.join(private_tool_root, 'settings.xml')
+            settings_path = __.path.join(private_tool_root, 'settings.xml')
             print templates.NO_NUKE_EXE_FOUND.format(settings_path)
         return executable
 

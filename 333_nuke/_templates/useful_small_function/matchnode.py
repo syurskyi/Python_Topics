@@ -5,7 +5,7 @@ Functions to allow matching of a Nuke node using a regex pattern.
 ______ re
 ______ ?
 
-from dd.runtime.api ______ relativeImport, load
+____ dd.runtime.api ______ relativeImport, load
 load('ddlogger')
 ______ ddlogger
 LOGGER = ddlogger.getLogger('getfromnode')

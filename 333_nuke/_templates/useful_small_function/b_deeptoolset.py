@@ -49,7 +49,7 @@ ___ select_node(node_class):
     """
     class_ = node_class
 
-    try:
+    ___
         node = ?.sN__
         __ node.Class() == class_:
             node['selected'].sV..(False)
@@ -227,7 +227,7 @@ ___ get_asset_name(sourcenode):
     
     ___ node __ dep_nodes:
         __ node.Class() == target_class:
-            try: 
+            ___
                 asset_name = node["sg_layer"].value()
                 __ asset_name == "":
                     default_asset_name =  "element_01"
@@ -248,7 +248,7 @@ ___ create_deep_holdout_setup(node_class):
     :param node_class: a nuke class node.
     :return:
     """
-    global DOT_COUNT
+    g__ DOT_COUNT
 
     
     deep_node = ?.sN__
@@ -726,44 +726,44 @@ ___ create_and_connect_child_dots(holdouts,color):
 
 c_ modalPanel(?.PythonPanel):
 
-    ___  - (self):
+    ___  -
 
         ?.PythonPanel. - (self,"b_deep toolset")
         #CREATE KNOBS
-        self.depth_from_deep = ?.PyScript_Knob('depth_from_deep', 'depth_from_deep', 'depth_for_defocus()')
-        self.create_holdouts = ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
-        self.deep_uberpass = ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
-        self.auto_comp.clearFlag(?.STARTLINE)
-        self.author = ?.Text_Knob("written by Boris Martinez")
+        depth_from_deep = ?.PyScript_Knob('depth_from_deep', 'depth_from_deep', 'depth_for_defocus()')
+        create_holdouts = ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
+        deep_uberpass = ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
+        auto_comp.clearFlag(?.STARTLINE)
+        author = ?.Text_Knob("written by Boris Martinez")
         #ADD KNOBS
-        ___ i __ (self.frame_range,self.frame_display,self.analysis_mode,self.author):
-            self.addKnob(i)
+        ___ i __ (frame_range,frame_display,analysis_mode,author):
+            addKnob(i)
         #SET KNOB DEFAULT VALUES
-        self.get_frame_range()
+        get_frame_range()
 
-    ___ giveFrameRangeValue(self):
-        return self.frame_range.value()
+    ___ giveFrameRangeValue
+        return frame_range.value()
 
-    ___ get_frame_range(self):
-        __ self.giveFrameRangeValue() == "global":
+    ___ get_frame_range
+        __ giveFrameRangeValue() == "global":
             first_frame = ?.root().firstFrame()
             last_frame = ?.root().lastFrame()
             txt = str(int(first_frame)) + '-' + str(int(last_frame))
-            self.frame_display.sV..(txt)
-        elif self.giveFrameRangeValue() == "input":
+            frame_display.sV..(txt)
+        elif giveFrameRangeValue() == "input":
             print "here should come the read frame range"
             node = ?.sN__
             first_frame = node.firstFrame()
             last_frame = node.lastFrame()
             txt = str(int(first_frame)) + '-' + str(int(last_frame))
-            self.frame_display.sV..(txt)
-        elif self.giveFrameRangeValue() == "custom":
-            self.frame_display.sV..("")
+            frame_display.sV..(txt)
+        elif giveFrameRangeValue() == "custom":
+            frame_display.sV..("")
             print "here the user decides"
 
     ___ knobChanged(self,knob):
         __ knob.name() == "fRange":
-            self.get_frame_range()
+            get_frame_range()
                       
 
 

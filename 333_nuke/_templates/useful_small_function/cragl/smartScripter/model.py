@@ -6,7 +6,7 @@ does not exist. It will then parse this file and return its content.
 
 Usage:
 
-    >>> from scripter import settings
+    >>> from scripter ______ settings
 
     # Let's loading the settings.
     >>> my_settings = load()
@@ -31,10 +31,10 @@ Usage:
 
 # Import built-in modules
 ______ json
-______ os
+______ __
 
 # Import local modules
-from smartScripter.constants ______ DEFAULT_SETTINGS
+____ smartScripter.constants ______ DEFAULT_SETTINGS
 
 
 ___ load():
@@ -71,8 +71,8 @@ ___ get_settings_file():
         str: Absolute path of the scripter settings file.
 
     """
-    from smartScripter ______ helper
-    return os.path.join(helper.get_tool_root("private"), "settings.json")
+    ____ smartScripter ______ helper
+    return __.path.join(helper.get_tool_root("private"), "settings.json")
 
 
 # We want to create a self-contained class explicitly. The user does not need
@@ -81,21 +81,21 @@ ___ get_settings_file():
 c_ Settings(object):
     """Self contained settings data loader and saver."""
 
-    ___  - (self):
+    ___  -
         """Initialize the Settings instance."""
-        super(Settings, self). - ()
+        s_(Settings, self). - ()
 
-        file_ = self._check_settings_file()
-        self.data = self._load(file_)
+        file_ = _check_settings_file()
+        data = _load(file_)
 
-    ___ __repr__(self):
+    ___ __repr__
         """Get string representation of settings.
 
         Returns:
             str: String representation of settings.
 
         """
-        return json.dumps(self.data)
+        return json.dumps(data)
 
     @staticmethod
     ___ _check_settings_file():
@@ -107,13 +107,13 @@ c_ Settings(object):
             str: Absolute path of the settings file.
 
         """
-        from smartScripter ______ helper
+        ____ smartScripter ______ helper
         settings_dir = helper.get_tool_root("private")
-        __ not os.path.isdir(settings_dir):
-            os.makedirs(settings_dir)
+        __ not __.path.isdir(settings_dir):
+            __.makedirs(settings_dir)
 
         settings_file = get_settings_file()
-        __ not os.path.isfile(settings_file):
+        __ not __.path.isfile(settings_file):
             with open(settings_file, "w") as file_:
                 json.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=True)
 

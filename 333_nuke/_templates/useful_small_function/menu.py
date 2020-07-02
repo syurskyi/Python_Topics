@@ -193,53 +193,53 @@ ___ testMyDialog():
 	p.addButton('over')
 	p.addButton('under')
 	p.addButton('mask')
-	result=p.show()
+	result=p.s__
 	print result
 
 # from http://docs.thefoundry.co.uk/nuke/63/pythondevguide/custom_panels.html
 #
-try:
+___
   #
   ## example PySide panel that implements a simple web browser in Nuke
   ## JW 12/10/11
   #
   ______ ?
   ______ ?
-  from ? ______ panels
+  ____ ? ______ panels
   #
-  from PySide.QtGui ______ *
-  from PySide.QtCore ______ *
-  from PySide.QtWebKit ______ *
+  ____ PySide.QtGui ______ *
+  ____ PySide.QtCore ______ *
+  ____ PySide.QtWebKit ______ *
   #
-  c_ WebBrowserWidget(QWidget):
-    ___ changeLocation(self):
-      url = self.locationEdit.text()
+  c_ WebBrowserWidget(?W..):
+    ___ changeLocation
+      url = locationEdit.text()
       __ not url.startswith( 'http://' ):
         url = 'http://' + url
-      self.webView.load( QUrl(url) )
+      webView.load( QUrl(url) )
     ___ urlChanged(self, url):
-      self.locationEdit.setText( url.toString() )
-    ___  - (self):
-      QWidget. - (self)
-      self.webView = QWebView()
-      self.setLayout( QVBoxLayout() )
-      self.locationEdit = QLineEdit( 'http://www.google.com' )
-      self.locationEdit.setSizePolicy( QSizePolicy.Expanding, self.locationEdit.sizePolicy().verticalPolicy() )
-      QObject.connect( self.locationEdit, SIGNAL('returnPressed()'),  self.changeLocation )
-      QObject.connect( self.webView,   SIGNAL('urlChanged(QUrl)'),     self.urlChanged )
-      self.layout().addWidget( self.locationEdit )
+      locationEdit.setText( url.toString() )
+    ___  -
+      ?W... - (self)
+      webView = QWebView()
+      sL..( ?VB.. )
+      locationEdit = QLineEdit( 'http://www.google.com' )
+      locationEdit.setSizePolicy( QSizePolicy.Expanding, locationEdit.sizePolicy().verticalPolicy() )
+      QObject.connect( locationEdit, SIGNAL('returnPressed()'),  changeLocation )
+      QObject.connect( webView,   SIGNAL('urlChanged(QUrl)'),     urlChanged )
+      layout().aW..( locationEdit )
       bar = QToolBar()
-      bar.addAction( self.webView.pageAction(QWebPage.Back))
-      bar.addAction( self.webView.pageAction(QWebPage.Forward))
-      bar.addAction( self.webView.pageAction(QWebPage.Stop))
-      bar.addAction( self.webView.pageAction(QWebPage.Reload))
+      bar.addAction( webView.pageAction(QWebPage.Back))
+      bar.addAction( webView.pageAction(QWebPage.Forward))
+      bar.addAction( webView.pageAction(QWebPage.Stop))
+      bar.addAction( webView.pageAction(QWebPage.Reload))
       bar.addSeparator()
-      self.layout().addWidget( bar )
-      self.layout().addWidget( self.webView )
+      layout().aW..( bar )
+      layout().aW..( webView )
       url = 'http://www.thefoundry.co.uk/' 
-      self.webView.load( QUrl( url ) )
-      self.locationEdit.setText( url )
-      self.setSizePolicy( QSizePolicy( QSizePolicy.Expanding,  QSizePolicy.Expanding))
+      webView.load( QUrl( url ) )
+      locationEdit.setText( url )
+      setSizePolicy( QSizePolicy( QSizePolicy.Expanding,  QSizePolicy.Expanding))
   #
   ## make this work in a .py file and in 'copy and paste' into the script editor
   moduleName = __name__
@@ -284,10 +284,10 @@ m_keybindings.addCommand('sjmMergeOpDecr', 'sjmMergeOpDecr()', 'Ctrl+Meta+Down')
 m_keybindings.addCommand('SliceTool', 'nuke.createNode("SliceTool")')
 m_keybindings.addCommand('RefractTo', 'nuke.createNode("refract_to_the_FUTURE")')
 #
-try:
+___
   DeadlineNukeClient
   m_keybindings.addCommand('sjmDeadliner','DeadlineNukeClient.main()','Ctrl+Meta+D')
-except:
+______
   pass
 
 # =======================================================================

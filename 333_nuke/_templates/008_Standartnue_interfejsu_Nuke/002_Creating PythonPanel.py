@@ -4,23 +4,23 @@ ______ ?
 c_ simplePanel ?.PP..
     ___  - 
         ?.PythonPanel. - (self, 'Simple Panel', 'pw_simplePanel')
-        self.menu = ?.Enumeration_Knob('menu', 'Menu', ['all', 'none', 'selected'])
-        self.addKnob(self.menu)
-        self.cb = ?.Boolean_Knob('checkbox', 'CheckBox')
-        self.cb.setFlag(?.STARTLINE)
-        self.addKnob(self.cb)
-        self.btn = ?.PyScript_Knob('btn', 'Execute')
-        self.btn.setFlag(?.STARTLINE)
-        self.addKnob(self.btn)
+        menu = ?.Enumeration_Knob('menu', 'Menu', ['all', 'none', 'selected'])
+        addKnob(menu)
+        cb = ?.Boolean_Knob('checkbox', 'CheckBox')
+        cb.setFlag(?.STARTLINE)
+        addKnob(cb)
+        btn = ?.PyScript_Knob('btn', 'Execute')
+        btn.setFlag(?.STARTLINE)
+        addKnob(btn)
 
     ___ knobChanged(self, knob):
-        __ knob is self.btn:
-            print self.menu.value()
+        __ knob is btn:
+            print menu.value()
 
 
 p = simplePanel()
 # variant 1
-p.show()
+p.s__
 # variant 2
 p.showModal()
 # variant 3

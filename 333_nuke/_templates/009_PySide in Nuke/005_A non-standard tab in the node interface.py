@@ -1,5 +1,5 @@
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 ___ getMainWindow():
     app = QApplication.instance()

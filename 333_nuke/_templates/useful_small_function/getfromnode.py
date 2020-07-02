@@ -2,15 +2,15 @@
 Functions to access values from Nuke Nodes
 '''
 
-______ os
+______ __
 ______ re
 ______ ?
 ______ getseq
 
 ______ dd.xplatform
 
-from dd.runtime.api ______ relativeImport, load
-from dd.runtime ______ info
+____ dd.runtime.api ______ relativeImport, load
+____ dd.runtime ______ info
 load('ddlogger')
 ______ ddlogger
 LOGGER = ddlogger.getLogger('getfromnode')
@@ -20,7 +20,7 @@ __ info.getVersionToBeLoaded("nukepipeline") >= "3.1.0":
     relativeImport('matchnode', 'nukepipeline/common/utils')
 ____
     relativeImport('matchnode', 'common/utils')
-from matchnode ______ byClass
+____ matchnode ______ byClass
 
 
 ___ filePath(node=None, proxy=False, regex=None, force_match=True):
@@ -44,9 +44,9 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
     
     # check for node elimination
     __ node:
-        try:
+        ___
             my_knob = node.knob('file')
-            try:
+            ___
                 # attempt to get file knob from linked (gizmos < 5.2v1)
                 result = my_knob.getLinkedKnob().getValue()
             except AttributeError:
@@ -54,14 +54,14 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
                 result = my_knob.getValue()
             # end try
         except AttributeError:
-            try:
+            ___
                 # grab filename directly from node with nuke.filename
                 result = ?.filename(node)
             except NameError:
                 # do nothing if nuke.filename errors out (earlier Nuke version)
                 pass
             # end try
-        except:
+        ______
             raise
         # end try
         
@@ -69,7 +69,7 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
         __ proxy:
             __ ?.root().proxy():
                 __ 'proxy' __ node.knobs():
-                    try:
+                    ___
                         # attempt to get proxy knob from linked (gizmos < 5.2v1)
                         __ node.getLinkedKnob().knob('proxy').value():
                             result = node.getLinkedKnob().knob('proxy').value()
@@ -91,7 +91,7 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
             # if you can figure out a better way to evaluate as Nuke does, be my guest
             tmp = ?.createNode('Write', inpanel=False)
 
-            try:
+            ___
                 # LOGIC (IF ANY) BEHIND THE FOLLOWING:
                 # knob.evaluate() always evaluates fully, so %V is replaced with the
                 # full view name, %v is always replaced with the lowercase first
@@ -133,7 +133,7 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
 
                 # evaluation succeeded
                 result = eval_result
-            except:
+            ______
                 # evaluation failed, leave result alone and let the gods sort it out
                 pass
             finally:
@@ -141,7 +141,7 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
                 ?.delete(tmp)
 
     __ result != None:
-        result = dd.xplatform.xpath(os.path.normpath(result))
+        result = dd.xplatform.xpath(__.path.normpath(result))
         LOGGER.debug('Discovered path %s for node %s' % (
             result, node.knob('name').value()))
         return result
@@ -198,7 +198,7 @@ ___ filePaths(no__=None, proxy=False, regex=None, force_match=True):
 
     # loop through nodes and get path for each Node
     ___ i __ nodes:
-        try:
+        ___
             result.ap..(filePath(i, proxy, regex, force_match))
         except AttributeError:
             pass
@@ -223,7 +223,7 @@ ___ filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
 
     # loop through nodes and get path and range for each Node
     ___ i __ nodes:
-        try:
+        ___
             ra.. = filePathWithRange(i, proxy, regex, force_match)
             __ ra..:
                 result.ap..(ra..)
@@ -237,7 +237,7 @@ ___ fileType(node):
     """
     Returns the file extension of the node given
     """
-    result = os.path.splitext(filePath(node))[1].lstrip('.')
+    result = __.path.splitext(filePath(node))[1].lstrip('.')
     LOGGER.debug('Filetype for node %s is %s' % (node.knob('name').value(), result))
     return result
 # end fileType

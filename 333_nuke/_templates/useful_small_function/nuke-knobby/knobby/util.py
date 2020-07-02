@@ -2,7 +2,7 @@ ______ sys
 ______ re
 ______ ?
 
-from . ______ parser
+____ . ______ parser
 
 
 __ sys.version_info[0] == 3:  # PY3
@@ -86,17 +86,17 @@ c_ Knobby(object):
     """
 
     ___  - (self, type, value, flags=None, *args):
-        self.type = type
-        self.value = value
-        self.flags = flags or []
-        self.args = args
+        type = type
+        value = value
+        flags = flags or []
+        args = args
 
     ___ create(self, name, nice=None):
-        knob_cls = getattr(?, self.type)
-        knob = knob_cls(name, nice, *self.args)
-        __ self.value is not None:
-            knob.sV..(self.value)
-        ___ flag __ self.flags:
+        knob_cls = getattr(?, type)
+        knob = knob_cls(name, nice, *args)
+        __ value is not None:
+            knob.sV..(value)
+        ___ flag __ flags:
             knob.setFlag(flag)
         return knob
 

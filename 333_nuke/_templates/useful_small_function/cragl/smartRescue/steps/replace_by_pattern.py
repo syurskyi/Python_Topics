@@ -71,23 +71,23 @@ Advanced:
 ______ re
 
 # Import local modules
-from smartRescue.base_steps ______ BaseStep
+____ smartRescue.base_steps ______ BaseStep
 
 
 c_ ReplaceByPattern(BaseStep):
     """Replace sections in the working file by searching using patterns."""
 
-    ___ process(self):
+    ___ process
         """Process the file removing illegal characters."""
-        with open(self.path, "r") as src:
+        with open(path, "r") as src:
             content = src.read()
 
-        ___ rule __ self.setup["replace"]:
+        ___ rule __ setup["replace"]:
             pattern = rule[0]
             substitution = rule[1]
 
-            self.logger.info("Replace '%s' with '%s'", pattern, substitution)
+            logger.info("Replace '%s' with '%s'", pattern, substitution)
             content = re.sub(pattern, substitution, content)
 
-        with open(self.path, "w") as dest:
+        with open(path, "w") as dest:
             dest.write(content)

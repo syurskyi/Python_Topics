@@ -1,17 +1,17 @@
 ______ ?
 ______ ?
-from ? ______ panels
+____ ? ______ panels
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 
-c_ simplePanel(QWidget):
-    ___  - (self):
-        QWidget. - (self)
-        self.setLayout(QVBoxLayout())
-        self.locationEdit = QCalendarWidget()
-        self.layout().addWidget(self.locationEdit)
+c_ simplePanel(?W..):
+    ___  -
+        ?W... - (self)
+        sL..(QVBoxLayout())
+        locationEdit = QCalendarWidget()
+        layout().aW..(locationEdit)
 
 panels.registerWidgetAsPanel('simplePanel', 'Simple', "")
 

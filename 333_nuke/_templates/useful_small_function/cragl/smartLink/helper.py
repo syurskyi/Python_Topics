@@ -1,45 +1,45 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartLink_v1.0.1/smartLink/helper.py
 ______ json
-______ os
+______ __
 ______ re
 ______ subprocess
 ______ sys
 ______ time
 ______ uuid
 ______ xml.etree.ElementTree as ET
-from collections ______ OrderedDict
+____ collections ______ OrderedDict
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    from PySide ______ QtCore
-    from PySide ______ QtGui
-    from PySide ______ QtGui as QtWidgets
+    ____ PySide ______ QtCore
+    ____ PySide ______ QtGui
+    ____ PySide ______ QtGui as ?W..
 ____
-    from PySide2 ______ QtCore
-    from PySide2 ______ QtGui
-    from PySide2 ______ QtWidgets
-from smartLink ______ dialogs
-from smartLink ______ templates
-from smartLink.info ______ __product__
-from smartLink.constants ______ ALT, CTRL, KEY, FAVORITES, PREFIX_FAVORITES, SHIFT, SMARTLINK
+    ____ ? ______ QtCore
+    ____ ? ______ QtGui
+    ____ ? ______ ?W..
+____ smartLink ______ dialogs
+____ smartLink ______ templates
+____ smartLink.info ______ __product__
+____ smartLink.constants ______ ALT, CTRL, KEY, FAVORITES, PREFIX_FAVORITES, SHIFT, SMARTLINK
 
 ___ load_icons():
-    this_dir = os.path.dirname(__file__)
-    dir_icon = os.path.join(this_dir, 'icons')
-    dir_icon = os.path.normpath(dir_icon)
+    this_dir = __.path.dirname(__file__)
+    dir_icon = __.path.join(this_dir, 'icons')
+    dir_icon = __.path.normpath(dir_icon)
     icons = {}
-    ___ file_ __ os.listdir(dir_icon):
-        name = os.path.splitext(file_)[0]
-        path = os.path.join(dir_icon, file_)
+    ___ file_ __ __.listdir(dir_icon):
+        name = __.path.splitext(file_)[0]
+        path = __.path.join(dir_icon, file_)
         icons[name] = path
 
     return icons
 
 
 ___ set_style_sheet(widget, style = 'styles.qss'):
-    this_dir = os.path.join(os.path.dirname(__file__))
-    styles = os.path.join(this_dir, 'styles', style)
-    styles = os.path.normpath(styles)
-    __ os.path.isfile(styles):
+    this_dir = __.path.join(__.path.dirname(__file__))
+    styles = __.path.join(this_dir, 'styles', style)
+    styles = __.path.normpath(styles)
+    __ __.path.isfile(styles):
         with open(styles) as file_:
             widget.setStyleSheet(file_.read())
 
@@ -55,10 +55,10 @@ ___ get_tool_root(which):
         cragl_dir = '.cragl'
     ____
         cragl_dir = 'cragl'
-    root = os.path.join(os.path.expanduser('~'), cragl_dir, __product__)
-    __ not os.path.isdir(root):
-        try:
-            os.makedirs(root)
+    root = __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
+    __ not __.path.isdir(root):
+        ___
+            __.makedirs(root)
         except IOError:
             write_log('unable to create open tool dir at: {}'.format(root))
 
@@ -73,11 +73,11 @@ ___ write_log(text, tool = 'li'):
 
 
 ___ get_log_file():
-    connect_dir = os.path.join(os.path.expanduser('~'), '.cragl', 'connect')
-    __ not os.path.isdir(connect_dir):
-        os.makedirs(connect_dir)
-    log_file = os.path.join(connect_dir, 'connectlog.txt')
-    __ not os.path.isfile(log_file):
+    connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
+    __ not __.path.isdir(connect_dir):
+        __.makedirs(connect_dir)
+    log_file = __.path.join(connect_dir, 'connectlog.txt')
+    __ not __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
@@ -124,15 +124,15 @@ ___ get_xml_elements():
 
 
 ___ get_settings_xml():
-    settings_xml = os.path.join(get_tool_root('private'), 'settings.xml')
-    __ not os.path.isfile(settings_xml):
-        try:
+    settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
+    __ not __.path.isfile(settings_xml):
+        ___
             with open(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
                 msg = "{} settings doesn't exist. created template at: {}".format(__product__, settings_xml)
                 write_log(msg)
-        except:
+        ______
             msg = 'Failed writing {} settings template at: {}'.format(__product__, settings_xml)
             write_log(msg)
 
@@ -151,11 +151,11 @@ ___ clear_layout(layout):
 ___ move_layout_elements(source_layout, dest_layout):
     while source_layout.count():
         element = source_layout.takeAt(0)
-        try:
+        ___
             dest_layout.addLayout(element)
         except TypeError:
-            try:
-                dest_layout.addWidget(element)
+            ___
+                dest_layout.aW..(element)
             except TypeError:
                 dest_layout.addStretch()
 
@@ -171,7 +171,7 @@ ___ check_xml_values_exist():
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
-    xml = os.path.join(get_tool_root('private'), 'settings.xml')
+    xml = __.path.join(get_tool_root('private'), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
     debug = False
@@ -213,16 +213,16 @@ ___ prettyprint(elem, level = 0):
 
 
 ___ check_xml_ok(xml):
-    try:
+    ___
         with open(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
         return True
-    except:
+    ______
         message = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
         reset_settings_xml = dialogs.ask_dialog(message, process_label='reset', color_process='actionButton')
         __ reset_settings_xml:
-            __ os.path.isfile(xml):
-                os.remove(xml)
+            __ __.path.isfile(xml):
+                __.remove(xml)
                 get_settings_xml()
 
 
@@ -252,13 +252,13 @@ ___ update_preset(preset_name, key, value):
 
 
 ___ load_tooltips(parent, section):
-    this_dir = os.path.dirname(__file__)
-    tooltips_file = os.path.join(this_dir, 'data', 'tooltips.json')
-    tooltips_file = os.path.normpath(tooltips_file)
-    __ not os.path.isfile(tooltips_file):
+    this_dir = __.path.dirname(__file__)
+    tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
+    tooltips_file = __.path.normpath(tooltips_file)
+    __ not __.path.isfile(tooltips_file):
         return
     with open(tooltips_file) as json_file:
-        try:
+        ___
             ttdata = json.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
@@ -272,15 +272,15 @@ ___ load_tooltips(parent, section):
 
 ___ open_website(url):
     __ sys.platform == 'win32':
-        os.startfile(url)
+        __.startfile(url)
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
     ____
-        try:
+        ___
             subprocess.Popen(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
-            from smartLink ______ dialogs
+            ____ smartLink ______ dialogs
             dialogs.show_message_box(None, msg)
 
     return
@@ -288,7 +288,7 @@ ___ open_website(url):
 
 ___ center_window(window):
     geometry = window.frameGeometry()
-    centerpoint = QtWidgets.QDesktopWidget().availableGeometry().center()
+    centerpoint = ?W...QDesktopWidget().availableGeometry().center()
     geometry.moveCenter(centerpoint)
     window.move(geometry.topLeft())
 
@@ -395,7 +395,7 @@ ___ add_to_root_favorites(uid):
 ___ remove_from_root_favorites(uid):
     favorites_knob = get_root_favorites_knob()
     favorites = [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
-    try:
+    ___
         del favorites[favorites.index(uid)]
     except ValueError:
         return
@@ -459,7 +459,7 @@ ___ add_preset(name, color, icon):
 
 
 ___ add_to_favorites():
-    from smartLink ______ nodes
+    ____ smartLink ______ nodes
     sel_nodes = ?.selectedNodes()
     __ not sel_nodes:
         msg = 'Please select nodes that you would like to add to favorites.'
@@ -471,7 +471,7 @@ ___ add_to_favorites():
             uid = nodes.NodeObject.get_uid(node)
             add_to_root_favorites(uid)
 
-        try:
+        ___
             ?.cragl_smartlinker.reload()
         except AttributeError:
             pass
@@ -480,12 +480,12 @@ ___ add_to_favorites():
 
 
 ___ get_main_window():
-    try:
-        module = QtWidgets
+    ___
+        module = ?W..
     except AttributeError:
         module = QtGui
 
-    try:
+    ___
         return module.QApplication(sys.argv)
     except RuntimeError:
         return module.QApplication.instance()

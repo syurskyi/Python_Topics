@@ -4,21 +4,21 @@ Nyzno polychit' tekychee aktivnoe okno Nuke, dlja togo shto bu ispol'zovat' ego 
 
 ##### Extrimely nessacery to know how to found out what classes and function has class #######
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 qnuke = QApplication.activeWindow()
-w = QWidget()
-w.show()
+w = ?W..()
+w.s__
 
 print qnuke
 ############################################################################################################
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 qnuke = QApplication.activeWindow()
-w = QWidget(qnuke)
-w.show()
+w = ?W..(qnuke)
+w.s__
 
 """
 nichego ne proishodit. Na samom dele widget otkrulsja. No tak kak on preparencen k aktivnomy okny to on pojavilsja vnytri etogo okna.
@@ -26,12 +26,12 @@ No tak kak tam nichego nety on nahoditsja gde to vnytri etogo okna kak prozrachn
 """
 ############################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 qnuke = QApplication.activeWindow()
-w = QWidget(qnuke, Qt.Tool)
-w.show()
+w = ?W..(qnuke, Qt.Tool)
+w.s__
 
 """
 Takoj poisk parenta on ne sovsem odnoznachnuj
@@ -39,12 +39,12 @@ Takoj poisk parenta on ne sovsem odnoznachnuj
 
 ############################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 qnuke = QApplication.activeWindow()
-w = QWidget(qnuke, Qt.Tool)
-w.show()
+w = ?W..(qnuke, Qt.Tool)
+w.s__
 
 ___ active():
     print QApplication.activeWindow()
@@ -59,8 +59,8 @@ to mu ne polychim glavnogo okna Nuke
 """
 
 ############################################################################################################
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 app = QApplication.instance() # vozvrachaet tekychee aktivnoe prilozenie
 # app.topLevelWidgets() # mu polychaem spisok vseh widzetov. kotorue est'  na samom verhnem yrovne
@@ -69,8 +69,8 @@ ___ w __ app.topLevelWidgets():
     print w.windowTitle()
 ############################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 app = QApplication.instance() # vozvrachaet tekychee aktivnoe prilozenie
 # app.topLevelWidgets() # mu polychaem spisok vseh widzetov. kotorue est'  na samom verhnem yrovne
@@ -90,8 +90,8 @@ Kogda sozdajy novuj widget, ja pomechajy fynkcijy getNukeWindow(), kotoraja vern
 
 """
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 ___ getNukeWindow():
     app = QApplication.instance()
@@ -105,12 +105,12 @@ qnuke.setWindowTitle('Nuke')
 
 ############################################################################################################
 
-w = QWidget(getNukeWindow(), Qt.Tool)
-w.show()
+w = ?W..(getNukeWindow(), Qt.Tool)
+w.s__
 ############################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 ___ getNukeWindow():
     app = QApplication.instance()
@@ -122,8 +122,8 @@ ___ getNukeWindow():
 qnuke = getNukeWindow()
 qnuke.setWindowTitle('Nuke')
 
-w = QWidget(getNukeWindow(), Qt.Tool)
+w = ?W..(getNukeWindow(), Qt.Tool)
 w.setWindowFlags(QtCore.Qt.Window |
                       QtCore.Qt.FramelessWindowHint)
-w.show()
-w.close()
+w.s__
+w.c__

@@ -1,7 +1,7 @@
 '''
 1. add line to menu.py
 
-import qNukeWindow
+______ qNukeWindow
 
 2. copy qNukeWindow.py to NUKE_PATH
 3. Run nuke
@@ -9,8 +9,8 @@ import qNukeWindow
 
 ______ ?
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 ______ qtNodes
 
 
@@ -24,7 +24,7 @@ qNuke = getMainWindow()
 c_ eventFilterWindowClass(QObject):
     ___ eventFilter(self, obj, ev):
         __ ev.type() == QEvent.ChildPolished:
-            self.processNode(ev.child())
+            processNode(ev.child())
         return False
         
     ___ processNode(self, n):

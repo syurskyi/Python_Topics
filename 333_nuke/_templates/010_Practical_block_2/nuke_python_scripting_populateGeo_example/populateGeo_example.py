@@ -1,5 +1,5 @@
 ______ ?
-______ os, random
+______ __, random
 
 srcpath = 'C:/projects/src'
 
@@ -30,8 +30,8 @@ inCam = ?.nodes.Input(name='LookAt')
 out = ?.nodes.Output()
 
 reads = []
-___ img __ os.listdir(srcpath):
-    path = os.path.join(srcpath, img).replace('\\','/')
+___ img __ __.listdir(srcpath):
+    path = __.path.join(srcpath, img).replace('\\','/')
     r = ?.nodes.Read(file=path, premultiplied=True)
     reads.ap..(r)
 

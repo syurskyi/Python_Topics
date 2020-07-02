@@ -1,5 +1,5 @@
 ______ ?
-______ os
+______ __
 
 
 
@@ -10,12 +10,12 @@ ______ os
 #
 c_ BaseMenu(object):
     ___  - (self, menu_name):
-        self._menu_name = menu_name
+        _menu_name = menu_name
 
 
     @property
-    ___ menu_name(self):
-        return self._menu_name
+    ___ menu_name
+        return _menu_name
 
 
 #
@@ -25,12 +25,12 @@ c_ BaseMenu(object):
 #
 c_ NukeMenuGenerator(BaseMenu):
     ___  - (self, menu_name):
-        super(NukeMenuGenerator, self). - (menu_name)
+        s_(NukeMenuGenerator, self). - (menu_name)
         #NukeMenuGenerator.__dict__['__init__'](self, menu_name)
 
 
-    ___ create_menu(self):
-        menu_handle = ?.menu("Nuke").addMenu(self._menu_name)
-        node_menu_handle = ?.menu("Nodes").addMenu(self._menu_name)
+    ___ create_menu
+        menu_handle = ?.menu("Nuke").addMenu(_menu_name)
+        node_menu_handle = ?.menu("Nodes").addMenu(_menu_name)
 
 

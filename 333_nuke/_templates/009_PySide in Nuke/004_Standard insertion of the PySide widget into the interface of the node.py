@@ -1,16 +1,16 @@
-from PySide.QtGui ______ *
-from PySide.QtCore ______ *
+____ PySide.QtGui ______ *
+____ PySide.QtCore ______ *
 
 
 # put to main namespase
 c_ myWidget(QPushButton):
     ___  - (self, text='NewButton'):
-        super(myWidget, self). - (text)
+        s_(myWidget, self). - (text)
 
-    ___ makeUI(self):
+    ___ makeUI
         return self
 
-    ___ updateValue(self):
+    ___ updateValue
         pass
 
 

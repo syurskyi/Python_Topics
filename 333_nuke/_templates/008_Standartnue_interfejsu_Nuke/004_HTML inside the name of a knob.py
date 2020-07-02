@@ -1,4 +1,4 @@
-______ os
+______ __
 node = ?.sN__
 
 node['icon'].sV..('C:/Users/syurskyi/Dropbox/nuke/.nuke/example/NUKE/Nuke Scripting for Pipeline TD/004_Pipeline/icons/cgninjas.png')
@@ -8,15 +8,15 @@ node["tutor"].setLabel('<h4><a style="color:lightgray;" href="http://cgninjas.ru
 
 #######################
 h = ?.Double_Knob('sue', '')
-h.setLabel('<h2>H </h2><img src="%s/icons/hue.png">' % os.environ['NUKE_PATH'].replace('\\','/'))
+h.setLabel('<h2>H </h2><img src="%s/icons/hue.png">' % __.environ['NUKE_PATH'].replace('\\','/'))
 node.addKnob(h)
 
 s = ?.Double_Knob('sat', '')
-s.setLabel('<h2>S </h2><img src="%s/icons/saturation.png">' % os.environ['NUKE_PATH'].replace('\\','/'))
+s.setLabel('<h2>S </h2><img src="%s/icons/saturation.png">' % __.environ['NUKE_PATH'].replace('\\','/'))
 node.addKnob(s)
 
 v = ?.Double_Knob('val', '')
-v.setLabel('<h2>V </h2><img src="%s/icons/lightness.png">' % os.environ['NUKE_PATH'].replace('\\','/'))
+v.setLabel('<h2>V </h2><img src="%s/icons/lightness.png">' % __.environ['NUKE_PATH'].replace('\\','/'))
 node.addKnob(v)
 
 
@@ -38,15 +38,15 @@ k.setLabel('<h4><a style="color:lightgray;" href="http://cgninjas.ru">CGNINJAS<a
 # image label
 
 h = ?.Double_Knob('sue', '')
-h.setLabel('<h2>H </h2><img src="%s/icons/h.png">' % os.environ['NUKE_PATH'].replace('\\','/'))
+h.setLabel('<h2>H </h2><img src="%s/icons/h.png">' % __.environ['NUKE_PATH'].replace('\\','/'))
 node.addKnob(h)
 
 s = ?.Double_Knob('sat', '')
-s.setLabel('<h2>S </h2><img src="%s/icons/s.png">' % os.environ['NUKE_PATH'].replace('\\','/'))
+s.setLabel('<h2>S </h2><img src="%s/icons/s.png">' % __.environ['NUKE_PATH'].replace('\\','/'))
 node.addKnob(s)
 
 v = ?.Double_Knob('val', '')
-v.setLabel('<h2>V </h2><img src="%s/icons/v.png">' % os.environ['NUKE_PATH'].replace('\\','/'))
+v.setLabel('<h2>V </h2><img src="%s/icons/v.png">' % __.environ['NUKE_PATH'].replace('\\','/'))
 node.addKnob(v)
 
 ########################
@@ -63,7 +63,7 @@ ___ powerKnob(a):
     __ k.name() == 'power' and a=='Blur':
         v = k.getValue()
         img = int((v*5)+1)
-        k.setLabel('<img src="%s/icons/power%s.png">' % (os.environ['NUKE_PATH'].replace('\\','/'), img))
+        k.setLabel('<img src="%s/icons/power%s.png">' % (__.environ['NUKE_PATH'].replace('\\','/'), img))
 
 ?.addKnobChanged(powerKnob, 'Blur')
 ?.removeKnobChanged(powerKnob, 'Blur')

@@ -4,17 +4,17 @@
 ______ ast
 ______ datetime
 ______ json
-______ os
+______ __
 ______ re
 ______ shutil
 ______ subprocess
 ______ sys
 
 # Import local modules
-from smartRescue.constants ______ CRAGL_SMARTRESCUE_CONFIG_PATH
-from smartRescue.constants ______ CRAGL_SMARTRESCUE_PROCESS_PATH
-from smartRescue.constants ______ DOCSTRING_EXTRACTION_PATTERN
-from smartRescue.constants ______ NAME
+____ smartRescue.constants ______ CRAGL_SMARTRESCUE_CONFIG_PATH
+____ smartRescue.constants ______ CRAGL_SMARTRESCUE_PROCESS_PATH
+____ smartRescue.constants ______ DOCSTRING_EXTRACTION_PATTERN
+____ smartRescue.constants ______ NAME
 
 
 ___ get_nuke_scripts(path, ignore_prefix):
@@ -28,12 +28,12 @@ ___ get_nuke_scripts(path, ignore_prefix):
         list: Absolute path of files to include in collection.
 
     """
-    __ os.path.isfile(path):
+    __ __.path.isfile(path):
         return [path]
 
     rescue_file_pattern = r"rescue_\d+-\d+"
-    return [os.path.join(path, file_)
-            ___ file_ __ os.listdir(path)
+    return [__.path.join(path, file_)
+            ___ file_ __ __.listdir(path)
             __ file_.endswith(".nk")
             and not file_.startswith(ignore_prefix)
             and not re.search(rescue_file_pattern, file_)]
@@ -52,10 +52,10 @@ ___ create_working_file_copies(files):
     copy_files = []
     date = date_now()
     ___ file_ __ files:
-        parent_dir, filename = os.path.split(file_)
-        basename = os.path.splitext(filename)[0]
+        parent_dir, filename = __.path.split(file_)
+        basename = __.path.splitext(filename)[0]
         copy_filename = "{}_rescue_{}.nk".format(basename, date)
-        dest = os.path.join(parent_dir, copy_filename)
+        dest = __.path.join(parent_dir, copy_filename)
         shutil.copy(file_, dest)
         copy_files.ap..(dest)
 
@@ -85,13 +85,13 @@ ___ get_process_folder():
         str: Absolute path of folder to process.
 
     """
-    environment_process_folder = os.environ.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
+    environment_process_folder = __.environ.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
     __ environment_process_folder:
         return environment_process_folder
 
-    this_dir = os.path.dirname(__file__)
-    path = os.path.join(this_dir, "..", "process")
-    return os.path.normpath(path)
+    this_dir = __.path.dirname(__file__)
+    path = __.path.join(this_dir, "..", "process")
+    return __.path.normpath(path)
 
 
 ___ get_config():
@@ -106,7 +106,7 @@ ___ get_config():
             configuration values to use for smartRescue.
 
     """
-    environment_path = os.environ.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
+    environment_path = __.environ.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
     __ environment_path:
         path = environment_path
     ____
@@ -132,14 +132,14 @@ ___ load_icons():
             }
 
     """
-    this_dir = os.path.dirname(__file__)
-    dir_icon = os.path.join(this_dir, "icons")
-    dir_icon = os.path.normpath(dir_icon)
+    this_dir = __.path.dirname(__file__)
+    dir_icon = __.path.join(this_dir, "icons")
+    dir_icon = __.path.normpath(dir_icon)
 
     icons = {}
-    ___ file_ __ os.listdir(dir_icon):
-        name = os.path.splitext(file_)[0]
-        path = os.path.join(dir_icon, file_)
+    ___ file_ __ __.listdir(dir_icon):
+        name = __.path.splitext(file_)[0]
+        path = __.path.join(dir_icon, file_)
         icons[name] = path
 
     return icons
@@ -196,7 +196,7 @@ ___ ensure_file_extension(path, ext):
         str: The given path including the given file extension.
 
     """
-    base, extension = os.path.splitext(path)
+    base, extension = __.path.splitext(path)
     ext = ext.replace(".", "")
     __ extension == ext:
         return path
@@ -219,11 +219,11 @@ ___ get_tool_root(which):
 
     """
     cragl_dir = ".cragl" __ which == "private" ____ "cragl"
-    root = os.path.join(os.path.expanduser("~"), cragl_dir, NAME)
+    root = __.path.join(__.path.expanduser("~"), cragl_dir, NAME)
 
-    __ not os.path.isdir(root):
-        try:
-            os.makedirs(root)
+    __ not __.path.isdir(root):
+        ___
+            __.makedirs(root)
         except OSError as error:
             raise OSError("Error creating directory: ", error.message)
 
@@ -237,7 +237,7 @@ ___ get_local_config_file():
         str: Absolute path of config file.
 
     """
-    return os.path.join(get_tool_root("private"), "config.json")
+    return __.path.join(get_tool_root("private"), "config.json")
 
 
 ___ copy_config_file():
@@ -251,10 +251,10 @@ ___ copy_config_file():
 
     """
     dest = get_local_config_file()
-    __ not os.path.isfile(dest):
-        this_dir = os.path.dirname(__file__)
-        src = os.path.join(this_dir, "data", "config.json")
-        src = os.path.abspath(src)
+    __ not __.path.isfile(dest):
+        this_dir = __.path.dirname(__file__)
+        src = __.path.join(this_dir, "data", "config.json")
+        src = __.path.abspath(src)
         shutil.copy(src, dest)
     return dest
 
@@ -271,11 +271,11 @@ ___ open_website(url):
     """
     __ sys.platform == 'win32':
         # This is only available in windows.
-        os.startfile(url)  # pylint: disable=no-member
+        __.startfile(url)  # pylint: disable=no-member
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
     ____
-        try:
+        ___
             subprocess.Popen(['xdg-open', url])
         except OSError:
             msg = ("Cannot open browser. Please open it manually and "

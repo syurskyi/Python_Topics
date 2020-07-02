@@ -3,23 +3,23 @@
 # Import built-in modules
 ______ logging
 ______ json
-______ os
+______ __
 ______ subprocess
 ______ sys
 
 # Import third-party modules
-______ ?  # pylint: disable=import-error
+______ ?  # pylint: disable=______-error
 
-# PySide import switch
-try:
-    from PySide ______ QtCore
+# PySide ______ switch
+___
+    ____ PySide ______ QtCore
 except ImportError:
-    from PySide2 ______ QtCore
+    ____ ? ______ QtCore
 
 # Import local modules
-from smartScripter ______ model
-from smartScripter.constants ______ PY, TCL, NEW_STACK
-from smartScripter.info ______ __product__
+____ smartScripter ______ model
+____ smartScripter.constants ______ PY, TCL, NEW_STACK
+____ smartScripter.info ______ __product__
 
 
 ___ load_icons():
@@ -38,14 +38,14 @@ ___ load_icons():
             }
 
     """
-    this_dir = os.path.dirname(__file__)
-    dir_icon = os.path.join(this_dir, "icons")
-    dir_icon = os.path.normpath(dir_icon)
+    this_dir = __.path.dirname(__file__)
+    dir_icon = __.path.join(this_dir, "icons")
+    dir_icon = __.path.normpath(dir_icon)
 
     icons = {}
-    ___ file_ __ os.listdir(dir_icon):
-        name = os.path.splitext(file_)[0]
-        path = os.path.join(dir_icon, file_)
+    ___ file_ __ __.listdir(dir_icon):
+        name = __.path.splitext(file_)[0]
+        path = __.path.join(dir_icon, file_)
         icons[name] = path
 
     return icons
@@ -59,7 +59,7 @@ ___ execute(language, command):
         command (str): Command to execute
 
     """
-    try:
+    ___
         __ language == PY:
             # The command comes from the current user itself, which makes
             # running exec in here not so evil.
@@ -78,12 +78,12 @@ ___ set_style_sheet(widget, style="styles.qss"):
         style (str): Name of styles file to apply.
 
     """
-    this_dir = os.path.join(os.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname(__file__))
 
-    styles = os.path.join(this_dir, "styles", style)
-    styles = os.path.normpath(styles)
+    styles = __.path.join(this_dir, "styles", style)
+    styles = __.path.normpath(styles)
 
-    __ os.path.isfile(styles):
+    __ __.path.isfile(styles):
         with open(styles) as file_:
             widget.setStyleSheet(file_.read())
 
@@ -100,14 +100,14 @@ ___ get_session_icons(ext=".png"):
             of Nuke's plugin path that contain the given file extension.
 
     """
-    paths = [path ___ path __ ?.pluginPath() __ os.path.isdir(path)]
+    paths = [path ___ path __ ?.pluginPath() __ __.path.isdir(path)]
 
-    icon_dir = os.path.join(os.path.dirname(__file__), "icons")
+    icon_dir = __.path.join(__.path.dirname(__file__), "icons")
     paths.ap..(icon_dir)
 
     icons = []
     ___ path __ paths:
-        _icons = (os.path.join(path, image) ___ image __ os.listdir(path) __
+        _icons = (__.path.join(path, image) ___ image __ __.listdir(path) __
                   image.endswith(ext))
         icons.extend(_icons)
 
@@ -140,7 +140,7 @@ ___ add_to_history(command):
     # we don't add up with duplicated commands in our history. If we execute
     # once command, then another and then again the first command, then we
     # want to add this command to the top.
-    try:
+    ___
         settings["history"].remove(command)
     except ValueError:
         pass
@@ -201,16 +201,16 @@ ___ open_website(url):
     """Open browser locating to given url."""
     __ sys.platform == 'win32':
         # Under windows, the os module has this member.
-        os.startfile(url)  # pylint: disable=no-member
+        __.startfile(url)  # pylint: disable=no-member
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
     ____
-        try:
+        ___
             subprocess.Popen(['xdg-open', url])
         except OSError:
             msg = ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".format(url))
-            from smartScripter ______ dialogs
+            ____ smartScripter ______ dialogs
             dialogs.show_message_box(None, msg)
 
 
@@ -221,7 +221,7 @@ ___ assemble_command_path(command_name):
     stack_root = settings["stack_root"]
     current_stack = settings["current_stack"]
 
-    return os.path.join(stack_root, current_stack, command_name)
+    return __.path.join(stack_root, current_stack, command_name)
 
 
 ___ get_all_stacks():
@@ -234,8 +234,8 @@ ___ get_all_stacks():
     settings = model.load()
     stack_root = settings["stack_root"]
 
-    return [name ___ name __ os.listdir(stack_root)
-            __ os.path.isdir(os.path.join(stack_root, name))]
+    return [name ___ name __ __.listdir(stack_root)
+            __ __.path.isdir(__.path.join(stack_root, name))]
 
 
 ___ load_tooltips(parent, section):
@@ -247,15 +247,15 @@ ___ load_tooltips(parent, section):
 
     """
     # Load tooltips file.
-    this_dir = os.path.dirname(__file__)
-    tooltips_file = os.path.join(this_dir, "data", "tooltips.json")
-    tooltips_file = os.path.normpath(tooltips_file)
-    __ not os.path.isfile(tooltips_file):
+    this_dir = __.path.dirname(__file__)
+    tooltips_file = __.path.join(this_dir, "data", "tooltips.json")
+    tooltips_file = __.path.normpath(tooltips_file)
+    __ not __.path.isfile(tooltips_file):
         return
 
     # Parse tool tips file.
     with open(tooltips_file) as json_file:
-        try:
+        ___
             ttdata = json.load(json_file)
         except ValueError:
             return
@@ -285,11 +285,11 @@ ___ get_tool_root(which):
     ____
         cragl_dir = "cragl"
 
-    root = os.path.join(os.path.expanduser("~"), cragl_dir, __product__)
+    root = __.path.join(__.path.expanduser("~"), cragl_dir, __product__)
 
-    __ not os.path.isdir(root):
-        try:
-            os.makedirs(root)
+    __ not __.path.isdir(root):
+        ___
+            __.makedirs(root)
         except IOError as error:
             print "Error creating directory: ", error.message
 
@@ -310,7 +310,7 @@ ___ get_icon(icon):
             otherwise absolute path of default command.
 
     """
-    try:
+    ___
         __ not icon:
             raise IndexError
         return [path ___ path __ SESSION_ICONS
@@ -326,11 +326,11 @@ ___ reveal_in_explorer(path):
     elif sys.platform == 'linux2':
         subprocess.Popen(['xdg-open', path])
     elif sys.platform == 'windows' or sys.platform == 'win32':
-        try:
+        ___
             subprocess.check_call(['explorer', path])
         # We want to catch all errors in here explicitly.
         except Exception as error:  # pylint: disable=broad-except
-            from smartScripter ______ dialogs
+            ____ smartScripter ______ dialogs
             message = ("Unable to reveal the directory. Please open the "
                        "directory manually in your explorer. "
                        "{}".format(error.message))

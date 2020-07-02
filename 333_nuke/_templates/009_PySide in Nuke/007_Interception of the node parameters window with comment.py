@@ -7,8 +7,8 @@
 # Dlja realizacii nam potrebyetsja specialnuj fynkcional QT framework, kotoruj nazuvaetsja eventFilter.
 # v prilozenii vsegda proishodja kakie to eventu i otkrutie okna eto odin iz etih eventov
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 c_ eventFilterClass(QObject):
     ___ eventFilter(self, obj, ev):
@@ -23,8 +23,8 @@ qnuke.removeEventFilter(f)
 
 ########################################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 c_ eventFilterClass(QObject):
     ___ eventFilter(self, obj, ev):

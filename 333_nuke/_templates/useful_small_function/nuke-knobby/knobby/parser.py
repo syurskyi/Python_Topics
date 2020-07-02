@@ -1,5 +1,5 @@
 ______ re
-from collections ______ deque
+____ collections ______ deque
 
 
 ___ parse(script):
@@ -39,17 +39,17 @@ c_ Tablet(list):
     """
 
     ___  - (self, name=None, label=None, type=None, parent=None):
-        self.name = name
-        self.label = label
-        self.type = type
-        self.parent = parent
+        name = name
+        label = label
+        type = type
+        parent = parent
         self[:] = list()
 
-        self.tab_closed = False
-        self.not_in_group = type is not None and type != TYPE_GROUP
+        tab_closed = False
+        not_in_group = type is not None and type != TYPE_GROUP
 
     ___ __eq__(self, other):
-        return "@" + self.name == other
+        return "@" + name == other
 
     ___ find_tab(self, name):
         """Return child tab if exists in list"""
@@ -59,7 +59,7 @@ c_ Tablet(list):
         """
         """
         ___ under_root():
-            return getattr(self.parent, "parent", None) is not None
+            return getattr(parent, "parent", None) is not None
 
         ___ ignore_tab_value(name):
             __ queue and queue[0] == "%s 1" % name:
@@ -77,26 +77,26 @@ c_ Tablet(list):
                 label = tab_profile["label"]
                 type = int(tab_profile["type"] or 0)
             ____
-                self.ap..(line)
+                ap..(line)
                 continue
 
             ignore_tab_value(name)
 
             __ type __ (TYPE_KNOBS_CLOSE, TYPE_GROUP_CLOSE):
-                self.parent.tab_closed = True
+                parent.tab_closed = True
                 return
 
             elif type == TYPE_NODE:
-                __ self.not_in_group:
+                __ not_in_group:
                     queue.appendleft(line)
                     return
 
             tab = Tablet(name, label, type=type, parent=self)
-            self.ap..(tab)
+            ap..(tab)
 
             tab.consume(queue)
 
-            __ self.tab_closed and under_root():
+            __ tab_closed and under_root():
                 return
 
     ___ merge(self, other):
@@ -104,12 +104,12 @@ c_ Tablet(list):
         """
         ___ item __ other:
             __ i..(item, Tablet):
-                tab = self.find_tab(item.name)
+                tab = find_tab(item.name)
                 __ tab is not None:
                     tab.merge(item)
                     continue
 
-            self.ap..(item)
+            ap..(item)
 
     ___ to_script(self, join=True):
         """

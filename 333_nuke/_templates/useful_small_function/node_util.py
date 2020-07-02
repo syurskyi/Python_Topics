@@ -5,10 +5,10 @@ Define node graph utility functions.
 ______ ?
 ______ itertools
 ______ subprocess
-try:
-    from PySide ______ QtGui
+___
+    ____ PySide ______ QtGui
 except ImportError:
-    from PySide2 ______ QtGui
+    ____ ? ______ QtGui
 
 
 ___ context_aware_create_node(node_2d, node_3d, node_deep):
@@ -28,7 +28,7 @@ ___ selected_nodes_deep(nodes):
     __ not nodes:
         nodes = ?.selectedNodes()
     ___ n __ nodes:
-        try:
+        ___
             n.deepSampleCount(0, 0)
             return True
         except ValueError:
@@ -40,7 +40,7 @@ ___ selected_nodes_3d(nodes):
     __ not nodes:
         nodes = ?.selectedNodes()
     ___ n __ nodes:
-        try:
+        ___
             # TODO Need to find better detection method for 3D nodes, this method doesnt include Lights
             n['render_mode'].getValue()
             return True

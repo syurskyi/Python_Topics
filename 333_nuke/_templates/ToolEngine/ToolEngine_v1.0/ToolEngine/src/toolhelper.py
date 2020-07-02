@@ -6,7 +6,7 @@
 ########################################################################################################################
 
 
-______ os
+______ __
 ______ json
 ______ ?
 ______ config
@@ -54,10 +54,10 @@ ___ get_all_tools():
 
             # iterate through each tool menu and save all its tools
             tool_menu = ?.menu("Nodes").findItem("{}/{}".format("ToolEngine", item.name()))
-            try:
+            ___
                 ___ tool __ tool_menu.items():
                     all_tools.ap..("{}/{}".format(tool_menu.name(), tool.name()))
-            except:
+            ______
                 continue
 
     return all_tools
@@ -84,11 +84,11 @@ ___ load_settings():
     settings_file = config.PATH_SETTINGS_FILE
 
     # make sure the settings directory exists
-    __ not os.path.isdir(os.path.dirname(settings_file)):
-        os.makedirs(os.path.dirname(settings_file))
+    __ not __.path.isdir(__.path.dirname(settings_file)):
+        __.makedirs(__.path.dirname(settings_file))
 
     # if the settings file doesn't exist then create it
-    __ not os.path.isfile(settings_file):
+    __ not __.path.isfile(settings_file):
         with open(settings_file, "w") as f:
             f.write('{"tools_root": ""}')
 
@@ -108,14 +108,14 @@ ___ get_tools_categories(tools_root):
     :return: list list of all categories
     """
 
-    __ not os.path.isdir(tools_root):
+    __ not __.path.isdir(tools_root):
         return []
 
     tools_categories = []
 
-    ___ item __ os.listdir(tools_root):
-        item_full_path = os.path.join(tools_root, item)
-        __ os.path.isdir(item_full_path) and item != config.TOOLS_TEMP and item not __ config.TOOLSDIR_IGNORE:
+    ___ item __ __.listdir(tools_root):
+        item_full_path = __.path.join(tools_root, item)
+        __ __.path.isdir(item_full_path) and item != config.TOOLS_TEMP and item not __ config.TOOLSDIR_IGNORE:
             tools_categories.ap..(item)
 
     return tools_categories
@@ -128,7 +128,7 @@ ___ build_tools_menu(tools_root):
     :return: None
     """
 
-    __ not os.path.isdir(tools_root):
+    __ not __.path.isdir(tools_root):
         __ tools_root == "":
             print "ToolEngine: tools_root not set. You can set it via 'ToolEngine->settings'"
         ____
@@ -144,11 +144,11 @@ ___ build_tools_menu(tools_root):
         category_menu = te_menu.addMenu(category.upper())
 
         # create toolsets
-        item_full_path = os.path.join(tools_root, category)
-        ___ tool __ os.listdir(item_full_path):
+        item_full_path = __.path.join(tools_root, category)
+        ___ tool __ __.listdir(item_full_path):
 
-            __ os.path.splitext(tool)[1] == ".nk":
-                toolset_path = os.path.join(item_full_path, tool)
+            __ __.path.splitext(tool)[1] == ".nk":
+                toolset_path = __.path.join(item_full_path, tool)
                 category_menu.addCommand(tool.replace(".nk", ""), lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=False), icon="")
 
     # temp tools
@@ -156,14 +156,14 @@ ___ build_tools_menu(tools_root):
     temp_menu = te_menu.addMenu(config.TOOLS_TEMP.upper())
 
     # create temp toolsets
-    temp_dir = os.path.join(tools_root, config.TOOLS_TEMP)
-    __ not os.path.isdir(temp_dir):
-        os.makedirs(temp_dir)
+    temp_dir = __.path.join(tools_root, config.TOOLS_TEMP)
+    __ not __.path.isdir(temp_dir):
+        __.makedirs(temp_dir)
 
-    ___ tool __ os.listdir(temp_dir):
-        __ os.path.splitext(tool)[1] == ".nk":
-            toolset_path = os.path.join(tools_root, config.TOOLS_TEMP, tool)
-            temp_menu.addCommand(os.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=True))
+    ___ tool __ __.listdir(temp_dir):
+        __ __.path.splitext(tool)[1] == ".nk":
+            toolset_path = __.path.join(tools_root, config.TOOLS_TEMP, tool)
+            temp_menu.addCommand(__.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=True))
 
 
 ___ insert_toolset(toolpath, delete=False):
@@ -175,7 +175,7 @@ ___ insert_toolset(toolpath, delete=False):
     :return: None
     """
 
-    __ not os.path.isfile(toolpath):
+    __ not __.path.isfile(toolpath):
         ?.message("The tool cannot be found")
         return
 
@@ -183,10 +183,10 @@ ___ insert_toolset(toolpath, delete=False):
 
     __ delete:
         # physically delete the toolset
-        os.remove(toolpath)
+        __.remove(toolpath)
 
         # remove command from menu bar
-        toolset_name = os.path.splitext(os.path.basename(toolpath))[0]
+        toolset_name = __.path.splitext(__.path.basename(toolpath))[0]
         ?.menu("Nodes").findItem("{}/{}".format("ToolEngine", config.TOOLS_TEMP.upper())).removeItem(toolset_name)
 
 

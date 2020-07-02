@@ -1,9 +1,9 @@
 __version__ = "0.1.4"
 
-from . ______ parser
+____ . ______ parser
 
-try:
-    from . ______ util
+___
+    ____ . ______ util
 except ImportError:
     # No nuke module
     util = None

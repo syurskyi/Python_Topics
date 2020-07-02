@@ -1,5 +1,5 @@
 ______ ?
-from clipboard ______ clipboard_core
+____ clipboard ______ clipboard_core
 
 menu = ?.menu("Nuke")
 fxphd = menu.addMenu("FXPHD")

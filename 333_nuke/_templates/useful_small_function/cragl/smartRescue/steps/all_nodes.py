@@ -46,20 +46,20 @@ Advanced:
 """
 
 # Import third-party modules
-______ ?  # pylint: disable=import-error
+______ ?  # pylint: disable=______-error
 
 # Import local modules
-from smartRescue.base_steps ______ NodeStep
+____ smartRescue.base_steps ______ NodeStep
 
 
 c_ AllNodes(NodeStep):
     """Handle all nodes in the DAG."""
 
-    ___ process(self):
+    ___ process
         """Handle all nodes."""
-        self.logger.info("%s all nodes, skip node classes: %s",
-                         self.setup["mode"], ", ".join(self.setup["skip"]))
+        logger.info("%s all nodes, skip node classes: %s",
+                         setup["mode"], ", ".join(setup["skip"]))
         ___ node __ ?.allNodes():
-            __ node.Class() __ self.setup["skip"]:
+            __ node.Class() __ setup["skip"]:
                 continue
-            self.handle_node(node)
+            handle_node(node)

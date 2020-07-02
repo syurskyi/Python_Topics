@@ -8,7 +8,7 @@
 
 ______ ?
 ______ json
-______ os
+______ __
 
 ______ toolhelper
 ______ config
@@ -27,7 +27,7 @@ ___ show_settings():
     p.setWidth(600)
     p.addFilenameSearch("tools root: ", settings["tools_root"])
 
-    __ p.show():
+    __ p.s__:
 
         settings["tools_root"] = p.value("tools root: ")
 
@@ -44,16 +44,16 @@ ___ show_info():
     :return: None
     """
 
-    info_file = os.path.normpath(os.path.join(os.path.dirname(__file__), "../", "data", "info.json"))
+    info_file = __.path.normpath(__.path.join(__.path.dirname(__file__), "../", "data", "info.json"))
 
-    __ not os.path.isfile(info_file):
+    __ not __.path.isfile(info_file):
         print "ToolEngine: info file doesn't exist"
         return
 
     with open(info_file) as f:
         info_data = json.load(f)
 
-    logo = os.path.normpath(os.path.join(os.path.dirname(__file__), "../", "img", "logo.png"))
+    logo = __.path.normpath(__.path.join(__.path.dirname(__file__), "../", "img", "logo.png"))
     ?.message("<img src='{}' style='float: right;' /><h1>ToolEngine v{}</h1>\n\n{}".format(logo, info_data["version"], info_data["info"]))
 
 
@@ -80,13 +80,13 @@ ___ add_toolset():
     categories.ap..(config.TOOLS_TEMP.upper())
     p.addEnumerationPulldown("Category: ", " ".join(categories))
 
-    __ p.show():
+    __ p.s__:
         __ p.value("Name: ") != "":
             __ p.value("Category: ") != category_default:
-                toolset_full_path = os.path.join(toolhelper.load_settings()["tools_root"], p.value("Category: "), "{}.nk".format(p.value("Name: ")))
+                toolset_full_path = __.path.join(toolhelper.load_settings()["tools_root"], p.value("Category: "), "{}.nk".format(p.value("Name: ")))
 
                 # if toolset already exists ask for overwriting
-                __ os.path.isfile(toolset_full_path):
+                __ __.path.isfile(toolset_full_path):
                     __ not ?.ask("The toolset '{}' already exists. Do you want to overwrite it?".format(toolset_full_path)):
                         return
 

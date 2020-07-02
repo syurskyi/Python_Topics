@@ -1,33 +1,33 @@
 # Embedded file name: /media/psf/crypto/_GLOBALS/NUKE/python/cragl/__PREPAREFORRELEASE/smartShelves_v2.3/smartShelves/helper.py
-______ os
+______ __
 ______ subprocess
 ______ sys
 ______ time
 ______ xml.etree.ElementTree as ET
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    from PySide ______ QtGui as QtWidgets
+    ____ PySide ______ QtGui as ?W..
 ____
-    from PySide2 ______ QtWidgets
-from smartShelves ______ templates
+    ____ ? ______ ?W..
+____ smartShelves ______ templates
 _LOCK_DELIMITER = ','
 _LOCK_LIST = 'CRAGL_SMARTSHELVES_LOCKS'
 
 ___ load_icons():
-    this_dir = os.path.dirname(__file__)
-    dir_icon = os.path.join(this_dir, 'icons')
-    dir_icon = os.path.normpath(dir_icon)
-    return {'icon_logo': os.path.join(dir_icon, 'logo.png'),
-     'about': os.path.join(dir_icon, 'about.jpg'),
-     'icon_folder': os.path.join(dir_icon, 'folder.png'),
-     'icon_edit': os.path.join(dir_icon, 'edit.png'),
-     'icon_hide': os.path.join(dir_icon, 'hide.png'),
-     'icon_gizmos': os.path.join(dir_icon, 'gizmos.png'),
-     'icon_nodes': os.path.join(dir_icon, 'nodes.png'),
-     'icon_modify': os.path.join(dir_icon, 'modify.png'),
-     'icon_nuke': os.path.join(dir_icon, 'nuke.png'),
-     'icon_lock_closed': os.path.join(dir_icon, 'lock_closed.png'),
-     'icon_lock_open': os.path.join(dir_icon, 'lock_open.png')}
+    this_dir = __.path.dirname(__file__)
+    dir_icon = __.path.join(this_dir, 'icons')
+    dir_icon = __.path.normpath(dir_icon)
+    return {'icon_logo': __.path.join(dir_icon, 'logo.png'),
+     'about': __.path.join(dir_icon, 'about.jpg'),
+     'icon_folder': __.path.join(dir_icon, 'folder.png'),
+     'icon_edit': __.path.join(dir_icon, 'edit.png'),
+     'icon_hide': __.path.join(dir_icon, 'hide.png'),
+     'icon_gizmos': __.path.join(dir_icon, 'gizmos.png'),
+     'icon_nodes': __.path.join(dir_icon, 'nodes.png'),
+     'icon_modify': __.path.join(dir_icon, 'modify.png'),
+     'icon_nuke': __.path.join(dir_icon, 'nuke.png'),
+     'icon_lock_closed': __.path.join(dir_icon, 'lock_closed.png'),
+     'icon_lock_open': __.path.join(dir_icon, 'lock_open.png')}
 
 
 ___ get_default_icon_path():
@@ -35,36 +35,36 @@ ___ get_default_icon_path():
 
 
 ___ show_message_box(window, message):
-    QtWidgets.QMessageBox().information(window, 'information', message)
+    ?W...QMessageBox().information(window, 'information', message)
 
 
 ___ get_installed_root_dir():
-    this_dir = os.path.join(os.path.dirname(__file__))
-    root = os.path.join(this_dir, '../', '../')
-    return os.path.normpath(root)
+    this_dir = __.path.join(__.path.dirname(__file__))
+    root = __.path.join(this_dir, '../', '../')
+    return __.path.normpath(root)
 
 
 ___ get_smartshelves_private_dir():
-    dir_ = os.path.join(os.path.expanduser('~'), '.cragl', 'smartShelves')
-    __ not os.path.isdir(dir_):
-        os.makedirs(dir_)
+    dir_ = __.path.join(__.path.expanduser('~'), '.cragl', 'smartShelves')
+    __ not __.path.isdir(dir_):
+        __.makedirs(dir_)
     return dir_
 
 
 ___ get_smartshelves_public_dir():
-    dir_ = os.path.join(os.path.expanduser('~'), 'cragl', 'smartShelves')
-    __ not os.path.isdir(dir_):
-        os.makedirs(dir_)
+    dir_ = __.path.join(__.path.expanduser('~'), 'cragl', 'smartShelves')
+    __ not __.path.isdir(dir_):
+        __.makedirs(dir_)
     return dir_
 
 
 ___ open_website(url):
     __ sys.platform == 'win32':
-        os.startfile(url)
+        __.startfile(url)
     elif sys.platform == 'darwin':
         subprocess.Popen(['open', url])
     ____
-        try:
+        ___
             subprocess.Popen(['xdg-open', url])
         except OSError:
             show_message_box(None, 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url))
@@ -73,11 +73,11 @@ ___ open_website(url):
 
 
 ___ get_log_file():
-    connect_dir = os.path.join(os.path.expanduser('~'), '.cragl', 'connect')
-    __ not os.path.isdir(connect_dir):
-        os.makedirs(connect_dir)
-    log_file = os.path.join(connect_dir, 'connectlog.txt')
-    __ not os.path.isfile(log_file):
+    connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
+    __ not __.path.isdir(connect_dir):
+        __.makedirs(connect_dir)
+    log_file = __.path.join(connect_dir, 'connectlog.txt')
+    __ not __.path.isfile(log_file):
         with open(log_file, 'w') as lf:
             log_template = templates.LOG
             lf.write(log_template)
@@ -86,19 +86,19 @@ ___ get_log_file():
 
 ___ write_log(text, tool = 'sh'):
     logtime = time.strftime('%d.%m.%Y %H:%M:%S', time.localtime())
-    try:
+    ___
         with open(get_log_file(), 'a') as s:
             s.write('{}: {} {}\n'.format(logtime, tool, text))
         return True
-    except:
+    ______
         return False
 
 
 ___ set_style_sheet(widget):
-    this_dir = os.path.dirname(__file__)
-    styles_nuke = os.path.join(this_dir, 'styles', 'nuke.qss')
-    styles_nuke = os.path.normpath(styles_nuke)
-    __ os.path.isfile(styles_nuke):
+    this_dir = __.path.dirname(__file__)
+    styles_nuke = __.path.join(this_dir, 'styles', 'nuke.qss')
+    styles_nuke = __.path.normpath(styles_nuke)
+    __ __.path.isfile(styles_nuke):
         with open(styles_nuke) as file_:
             widget.setStyleSheet(file_.read())
         return styles_nuke
@@ -108,7 +108,7 @@ ___ set_style_sheet(widget):
 
 
 ___ get_settings_xml():
-    return os.path.join(get_smartshelves_private_dir(), 'settings.xml')
+    return __.path.join(get_smartshelves_private_dir(), 'settings.xml')
 
 
 ___ load_settings():
@@ -124,8 +124,8 @@ ___ load_settings():
 
 ___ paste_script(name):
     ___ plugin_path __ ?.pluginPath():
-        path = os.path.join(plugin_path, '{}.nk'.format(name))
-        __ os.path.isfile(path):
+        path = __.path.join(plugin_path, '{}.nk'.format(name))
+        __ __.path.isfile(path):
             ?.nodePaste(path)
             return
 
@@ -133,21 +133,21 @@ ___ paste_script(name):
 
 
 ___ add_to_lock(pw):
-    __ not os.environ.get(_LOCK_LIST):
-        os.environ[_LOCK_LIST] = ''
-    unlocked = [ name ___ name __ os.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
+    __ not __.environ.get(_LOCK_LIST):
+        __.environ[_LOCK_LIST] = ''
+    unlocked = [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         return
     __ not pw:
         return
     unlocked.ap..(pw)
-    os.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)
+    __.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)
 
 
 ___ remove_from_lock(pw):
-    __ not os.environ.get(_LOCK_LIST):
-        os.environ[_LOCK_LIST] = ''
-    unlocked = [ name ___ name __ os.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
+    __ not __.environ.get(_LOCK_LIST):
+        __.environ[_LOCK_LIST] = ''
+    unlocked = [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         unlocked.remove(pw)
-    os.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)
+    __.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)

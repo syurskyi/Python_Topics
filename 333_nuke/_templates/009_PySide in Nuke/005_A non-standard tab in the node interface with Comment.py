@@ -4,8 +4,8 @@
 # To esli vash skript ne zagryzen to vasha taba prosto ne bydyt pojavitsja
 # Nachat' nado s polychenija widgeta okna ili nodu kak QT  objekta. Y lybogo okna, lyboj nodu on prisytstvyet i on ravnjaetsja imeni etoj nodu
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 ___ getMainWindow():
     app = QApplication.instance()
@@ -14,12 +14,12 @@ ___ getMainWindow():
             return widget
 
 qnuke = getMainWindow()
-qnuke.findChildren(QWidget, 'Transform1')
+qnuke.findChildren(?W.., 'Transform1')
 
 #####################################################################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 ___ getMainWindow():
     app = QApplication.instance()
@@ -28,14 +28,14 @@ ___ getMainWindow():
             return widget
 
 qnuke = getMainWindow()
-w = qnuke.findChildren(QWidget, 'Transform1')
+w = qnuke.findChildren(?W.., 'Transform1')
 w.setWindowTitle('Transform11')
 
 
 #####################################################################################################################################################
 
-from PySide.QtCore ______ *
-from PySide.QtGui ______ *
+____ PySide.QtCore ______ *
+____ PySide.QtGui ______ *
 
 ___ getMainWindow():
     app = QApplication.instance()
@@ -44,15 +44,15 @@ ___ getMainWindow():
             return widget
 
 qnuke = getMainWindow()
-w = qnuke.findChild(QWidget, 'Transform1')
+w = qnuke.findChild(?W.., 'Transform1')
 w.setWindowTitle('Transform11')
 t = w.findChild(QTabWidget)
 t.count()
-nw = QWidget()
-ly = QVBoxLayout()
-nw.setLayout(ly)
+nw = ?W..()
+ly = ?VB..
+nw.sL..(ly)
 ___ i __ ra..(5):
-    ly.addWidget(QPushButton())
+    ly.aW..(QPushButton())
 t.addTab(nw, 'My Tab')
 c = QCalendarWidget()
 t.insertTab(0, c, 'Calendar')

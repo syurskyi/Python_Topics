@@ -60,27 +60,27 @@ Advanced:
 """
 
 # Import built-in modules
-______ os
+______ __
 
 # Import local modules
-from smartRescue.base_steps ______ BaseStep
+____ smartRescue.base_steps ______ BaseStep
 
 
 c_ CopyLines(BaseStep):
     """Copy lines between first_line and last_line to backup file."""
 
-    ___ process(self):
+    ___ process
         """Copy lines to backup file."""
-        first_line = self.setup["first_line"]
-        last_line = self.setup["last_line"]
+        first_line = setup["first_line"]
+        last_line = setup["last_line"]
 
-        self.logger.info("Using lines %s - %s", first_line, last_line)
+        logger.info("Using lines %s - %s", first_line, last_line)
 
-        path_temp = "{}_".format(self.path)
+        path_temp = "{}_".format(path)
 
-        with open(self.path, "r") as src, open(path_temp, "w") as dest:
+        with open(path, "r") as src, open(path_temp, "w") as dest:
             lines = src.readlines()
             copy_lines = lines[first_line-1:last_line]
             dest.write("".join(copy_lines))
 
-        os.rename(path_temp, self.path)
+        __.rename(path_temp, path)

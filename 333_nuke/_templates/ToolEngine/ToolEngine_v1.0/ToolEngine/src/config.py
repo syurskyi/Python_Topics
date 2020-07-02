@@ -1,4 +1,4 @@
-______ os
+______ __
 
 ########################################################################################################################
 #
@@ -13,7 +13,7 @@ TOOLS_TEMP = "TEMP"
 #
 # PATH_SETTINGS_FILE
 # This is the path where to find the ToolsEngine's settings json file
-PATH_SETTINGS_FILE = os.path.join(os.path.expanduser("~"), ".nuke", "ToolEngine", "settings.json")
+PATH_SETTINGS_FILE = __.path.join(__.path.expanduser("~"), ".nuke", "ToolEngine", "settings.json")
 #
 #
 # TOOLSDIR_IGNORE

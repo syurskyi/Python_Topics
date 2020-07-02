@@ -6,7 +6,7 @@ We can then use these to our needs. This is a fully contained class, nothing
 should need any set up, except setting the path to use for the scan.
 
 Usage:
-    >>> from smartRescue.path_resolver import PathResolver
+    >>> from smartRescue.path_resolver ______ PathResolver
     >>> nuke_root = "path/to/nuke/installation"
     >>> resolver = PathResolver(nuke_root)
     >>> resolver.run()
@@ -19,7 +19,7 @@ Usage:
 """
 
 # Import built-in modules
-______ os
+______ __
 ______ platform
 ______ re
 ______ sys
@@ -36,14 +36,14 @@ c_ PathResolver(object):
                 for PySide and the Nuke executable.
 
         """
-        self.path = path
+        path = path
 
-        self.operating_sytem = ""
-        self.exe_pattern = ""
-        self.? = ""
-        self.site_packages = ""
+        operating_sytem = ""
+        exe_pattern = ""
+        ? = ""
+        site_packages = ""
 
-    ___ __str__(self):
+    ___ __str__
         """Return string representation using nuke and pyside paths.
 
         Returns:
@@ -55,10 +55,10 @@ c_ PathResolver(object):
                 "Nuke executable: {}\n"
                 "Site-packages: {}\n")
 
-        return info.format(self.operating_sytem, self.exe_pattern, self.?,
-                           self.site_packages)
+        return info.format(operating_sytem, exe_pattern, ?,
+                           site_packages)
 
-    ___ _set_os_abbreviation(self):
+    ___ _set_os_abbreviation
         """Returns operating system abbreviation based on currently used os.
 
         Returns:
@@ -68,18 +68,18 @@ c_ PathResolver(object):
             "Windows": "win",
             "Darwin": "mac"
         }
-        self.operating_sytem = abbreviations.get(platform.system(), "lnx")
+        operating_sytem = abbreviations.get(platform.system(), "lnx")
 
-    ___ _set_exe_pattern(self):
+    ___ _set_exe_pattern
         """Set the name of the executable depending on the operating system."""
         names = {
             "win": r"Nuke\d+\.\d+\.exe",  # https://regex101.com/r/sWqKht/1
             "lnx": r"Nuke\d+.\d+",  # https://regex101.com/r/sWqKht/2
             "mac": r"Nuke\d+.\d+v\d+"  # https://regex101.com/r/sWqKht/3/
         }
-        self.exe_pattern = names[self.operating_sytem]
+        exe_pattern = names[operating_sytem]
 
-    ___ _set_nuke_pyside(self):
+    ___ _set_nuke_pyside
         """Set absolute path of Nuke executable and PySide root directory.
 
         Raises:
@@ -89,35 +89,35 @@ c_ PathResolver(object):
         """
         pyside_pattern = r"PySide\d*"  # https://regex101.com/r/LDR591/1
 
-        __ not self.path:
+        __ not path:
             raise OSError("No Nuke root directory set. Please set your Nuke "
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
 
-        ___ root, dirs, files __ os.walk(self.path, topdown=False):
+        ___ root, dirs, files __ __.walk(path, topdown=False):
             ___ name __ files:
-                __ re.match(self.exe_pattern, name):
-                    self.? = os.path.join(root, name)
+                __ re.match(exe_pattern, name):
+                    ? = __.path.join(root, name)
             ___ name __ dirs:
                 __ re.match(pyside_pattern, name):
-                    pyside_root = os.path.join(root, name)
-                    self.site_packages = os.path.dirname(pyside_root)
+                    pyside_root = __.path.join(root, name)
+                    site_packages = __.path.dirname(pyside_root)
 
-        __ not self.?:
+        __ not ?:
             raise OSError("Did not find any Nuke executable under "
-                          "{}".format(self.path))
+                          "{}".format(path))
 
-        __ not self.site_packages:
+        __ not site_packages:
             raise OSError("Did not find site-packages including PySide or "
                           "PySide2.")
 
-    ___ _append_site_packages(self):
+    ___ _append_site_packages
         """Prepend the site-packages root directory.
 
         This is to make PySide/PySide2 available.
 
         """
-        sys.path.ap..(self.site_packages)
+        sys.path.ap..(site_packages)
 
     ___ set_path(self, path):
         """Set the path to the given path and ensure a directory is used.
@@ -126,16 +126,16 @@ c_ PathResolver(object):
             path (str): Absolute path to use.
 
         """
-        __ os.path.isfile(path):
-            path = os.path.dirname(path)
+        __ __.path.isfile(path):
+            path = __.path.dirname(path)
 
-        self.path = path
+        path = path
 
-    ___ run(self):
+    ___ run
         """Resolve all paths."""
-        self._set_os_abbreviation()
-        self._set_exe_pattern()
-        self._set_nuke_pyside()
+        _set_os_abbreviation()
+        _set_exe_pattern()
+        _set_nuke_pyside()
 
         # We will enable this in the future so that PySide as a dependency is
         # not more required as a separate installation. For now, let's actually
