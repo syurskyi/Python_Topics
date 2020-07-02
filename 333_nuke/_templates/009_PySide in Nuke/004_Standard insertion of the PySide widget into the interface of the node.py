@@ -8,7 +8,7 @@ c_ myWidget(?PB..):
         s_(myWidget, self). - (text)
 
     ___ makeUI
-        return self
+        r_ self
 
     ___ updateValue
         pass

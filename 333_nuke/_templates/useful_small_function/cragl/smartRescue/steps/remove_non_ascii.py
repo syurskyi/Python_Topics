@@ -49,7 +49,7 @@ c_ RemoveNonASCII(BaseStep):
             str: Sanitized string that contains only ascii characters.
 
         """
-        return "".join([char ___ char __ string __ ord(char) < 127])
+        r_ "".join([char ___ char __ string __ ord(char) < 127])
 
     ___ process
         """Process the file removing illegal characters."""

@@ -5,7 +5,7 @@ ______ logging
 ______ json
 ______ __
 ______ subprocess
-______ sys
+______ ___
 
 # Import third-party modules
 ______ ?  # pylint: disable=______-error
@@ -48,7 +48,7 @@ ___ load_icons():
         path = __.path.join(dir_icon, file_)
         icons[name] = path
 
-    return icons
+    r_ icons
 
 
 ___ execute(language, command):
@@ -60,11 +60,11 @@ ___ execute(language, command):
 
     """
     ___
-        __ language == PY:
+        __ language __ PY:
             # The command comes from the current user itself, which makes
             # running exec in here not so evil.
             exec command  # pylint: disable=exec-used
-        elif language == TCL:
+        ____ language __ TCL:
             ?.tcl(str(command))
     except Exception:
         raise ValueError
@@ -111,7 +111,7 @@ ___ get_session_icons(ext=".png"):
                   image.endswith(ext))
         icons.extend(_icons)
 
-    return icons
+    r_ icons
 
 
 ___ get_logger():
@@ -121,7 +121,7 @@ ___ get_logger():
         logging.Logger: Logger instance.
 
     """
-    return logging.getLogger(__name__)
+    r_ logging.getLogger(__name__)
 
 
 ___ add_to_history(command):
@@ -146,7 +146,7 @@ ___ add_to_history(command):
         pass
 
     settings["history"].ap..(command)
-    return model.save(settings)
+    r_ model.save(settings)
 
 
 ___ clear_history():
@@ -159,7 +159,7 @@ ___ clear_history():
     settings = model.load()
     del settings["history"][:]
     model.save(settings)
-    return settings
+    r_ settings
 
 
 ___ clear_combo(combo):
@@ -175,7 +175,7 @@ ___ clear_combo(combo):
 
     """
     while combo.count() > 2:
-        __ combo.currentText == NEW_STACK:
+        __ combo.currentText __ NEW_STACK:
             continue
         ____
             combo.removeItem(0)
@@ -194,19 +194,19 @@ ___ unique_elements_preserve_order(sequence):
     """
     seen = set()
     seen_add = seen.add
-    return [x ___ x __ sequence __ no. (x __ seen or seen_add(x))]
+    r_ [x ___ x __ sequence __ no. (x __ seen or seen_add(x))]
 
 
 ___ open_website(url):
     """Open browser locating to given url."""
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         # Under windows, the os module has this member.
         __.startfile(url)  # pylint: disable=no-member
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             msg = ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".format(url))
@@ -221,7 +221,7 @@ ___ assemble_command_path(command_name):
     stack_root = settings["stack_root"]
     current_stack = settings["current_stack"]
 
-    return __.path.join(stack_root, current_stack, command_name)
+    r_ __.path.join(stack_root, current_stack, command_name)
 
 
 ___ get_all_stacks():
@@ -234,7 +234,7 @@ ___ get_all_stacks():
     settings = model.load()
     stack_root = settings["stack_root"]
 
-    return [name ___ name __ __.listdir(stack_root)
+    r_ [name ___ name __ __.listdir(stack_root)
             __ __.path.isdir(__.path.join(stack_root, name))]
 
 
@@ -251,19 +251,19 @@ ___ load_tooltips(parent, section):
     tooltips_file = __.path.join(this_dir, "data", "tooltips.json")
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
-        return
+        r_
 
     # Parse tool tips file.
     with open(tooltips_file) as json_file:
         ___
             ttdata = json.load(json_file)
         except ValueError:
-            return
+            r_
 
     # Find the tooltip.
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ element __ ttdata[section]:
-            __ element["tt"] == widget.property("tt"):
+            __ element["tt"] __ widget.property("tt"):
                 widget.setToolTip("<strong>{}</strong><br />{}".format(
                     element["ttt"], element["ttc"]))
 
@@ -280,7 +280,7 @@ ___ get_tool_root(which):
         str: Absolute path of public/private tool root.
 
     """
-    __ which == "private":
+    __ which __ "private":
         cragl_dir = ".cragl"
     ____
         cragl_dir = "cragl"
@@ -291,9 +291,9 @@ ___ get_tool_root(which):
         ___
             __.makedirs(root)
         except IOError as error:
-            print "Error creating directory: ", error.message
+            print "Error creating directory: ", error.m..
 
-    return root
+    r_ root
 
 
 SESSION_ICONS = get_session_icons()
@@ -313,25 +313,25 @@ ___ get_icon(icon):
     ___
         __ no. icon:
             raise IndexError
-        return [path ___ path __ SESSION_ICONS
+        r_ [path ___ path __ SESSION_ICONS
                 __ path.endswith("{}.png".format(icon))][0]
     except IndexError:
-        return load_icons()["command"]
+        r_ load_icons()["command"]
 
 
 ___ reveal_in_explorer(path):
     """Reveal the given path in the explorer."""
-    __ sys.platform == 'darwin':
+    __ ___.pl.. __ 'darwin':
         subprocess.check_call(['open', '--', path])
-    elif sys.platform == 'linux2':
-        subprocess.Popen(['xdg-open', path])
-    elif sys.platform == 'windows' or sys.platform == 'win32':
+    ____ ___.pl.. __ 'linux2':
+        subprocess.P..(['xdg-open', path])
+    ____ ___.pl.. __ 'windows' or ___.pl.. __ 'win32':
         ___
             subprocess.check_call(['explorer', path])
         # We want to catch all errors in here explicitly.
         except Exception as error:  # pylint: disable=broad-except
             ____ smartScripter ______ dialogs
-            message = ("Unable to reveal the directory. Please open the "
+            m.. = ("Unable to reveal the directory. Please open the "
                        "directory manually in your explorer. "
-                       "{}".format(error.message))
-            dialogs.show_message_box(message)
+                       "{}".format(error.m..))
+            dialogs.show_message_box(m..)

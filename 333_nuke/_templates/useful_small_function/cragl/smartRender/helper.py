@@ -4,13 +4,13 @@ ______ json
 ______ multiprocessing
 ______ __
 ______ random
-______ sys
+______ ___
 ______ subprocess
 ______ time
 ______ urllib
 ______ xml.etree.ElementTree as ET
 ______ collections
-______ platform
+______ pl..
 ______ datetime
 ______ errno
 ______ ?
@@ -27,7 +27,7 @@ ___ load_icons(*args):
     this_dir = __.path.join(__.path.dirname(__file__))
     dir_icon = __.path.join(this_dir, '../', 'icons')
     dir_icon = __.path.normpath(dir_icon)
-    return {'icon_logo': __.path.join(dir_icon, 'logo.png'),
+    r_ {'icon_logo': __.path.join(dir_icon, 'logo.png'),
      'icon_nuke': __.path.join(dir_icon, 'nuke.png'),
      'icon_log': __.path.join(dir_icon, 'log.png'),
      'icon_refresh': __.path.join(dir_icon, 'refresh.png'),
@@ -64,24 +64,24 @@ ___ load_icons(*args):
 
 ___ get_next_renderjob(*args):
     jobs_xml = get_job_xml()
-    __ jobs_xml == '':
-        return
+    __ jobs_xml __ '':
+        r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
         ___ setting __ job.findall('setting'):
-            __ setting.get('name') == 'status':
-                __ setting.text == 'waiting':
-                    return job.get('id')
+            __ setting.get('name') __ 'status':
+                __ setting.text __ 'waiting':
+                    r_ job.get('id')
 
 
 ___ get_all_write_nodes_data(*args):
     write_data = {}
-    all_write_nodes = [ node ___ node __ ?.allNodes('Write') __ node['disable'].getValue() == 0.0 ]
+    all_write_nodes = [ node ___ node __ ?.allNodes('Write') __ node['disable'].getValue() __ 0.0 ]
     ___ write __ all_write_nodes:
         write_data[write.name()] = write['file'].getValue()
 
-    return write_data
+    r_ write_data
 
 
 ___ get_smart_render_private_root(*args):
@@ -92,7 +92,7 @@ ___ get_smart_render_private_root(*args):
         ______
             write_log('unable to create settings root dir')
 
-    return root
+    r_ root
 
 
 ___ get_smart_render_public_root(*args):
@@ -103,13 +103,13 @@ ___ get_smart_render_public_root(*args):
         ______
             write_log('unable to create open dir')
 
-    return root
+    r_ root
 
 
 ___ get_installed_root_dir(*args):
     this_dir = __.path.join(__.path.dirname(__file__))
     root = __.path.join(this_dir, '../', '../')
-    return __.path.normpath(root)
+    r_ __.path.normpath(root)
 
 
 ___ get_public_cache_folder():
@@ -121,7 +121,7 @@ ___ get_public_cache_folder():
             msg = 'Unable to create cache directory at {}'.format(cache_dir)
             write_log(msg)
 
-    return cache_dir
+    r_ cache_dir
 
 
 ___ get_tmp_folder():
@@ -133,7 +133,7 @@ ___ get_tmp_folder():
             msg = 'Unable to create tmp directory at {}'.format(tmp_dir)
             write_log(msg)
 
-    return tmp_dir
+    r_ tmp_dir
 
 
 ___ get_smartRender_backup_dir(*args):
@@ -144,7 +144,7 @@ ___ get_smartRender_backup_dir(*args):
         ______
             write_log('unable to create backup dir')
 
-    return backup_dir
+    r_ backup_dir
 
 
 ___ get_smartrender_log_dir(*args):
@@ -155,7 +155,7 @@ ___ get_smartrender_log_dir(*args):
         ______
             write_log('unable to create logs dir')
 
-    return logs_dir
+    r_ logs_dir
 
 
 ___ get_sounds_dir(*args):
@@ -168,23 +168,23 @@ ___ get_sounds_dir(*args):
         ______
             write_log('unable to create sounds dir in {}.'.format(sounds_dir))
 
-    return sounds_dir
+    r_ sounds_dir
 
 
 ___ get_tooltips_file(*args):
     this_dir = __.path.dirname(__file__)
     tooltips = __.path.join(this_dir, '../', 'data', 'tooltips.json')
-    return __.path.normpath(tooltips)
+    r_ __.path.normpath(tooltips)
 
 
 ___ update_job_log(job_id, processdata, time = str(int(time.time())), *args):
     jobs_xml = get_job_xml()
-    __ jobs_xml == '':
-        return
+    __ jobs_xml __ '':
+        r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        __ job.get('id') == job_id:
+        __ job.get('id') __ job_id:
             process = job.find('process')
             p = ET.SubElement(process, 'data')
             p.set('time', str(time))
@@ -194,7 +194,7 @@ ___ update_job_log(job_id, processdata, time = str(int(time.time())), *args):
             with open(jobs_xml, 'w') as xml:
                 prettyprint(jobs_root)
                 jobs_tree.write(xml, encoding='utf-8', xml_declaration=True)
-            return True
+            r_ True
 
 
 ___ check_xml_ok(xml, *args):
@@ -202,48 +202,48 @@ ___ check_xml_ok(xml, *args):
     ___
         with open(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        return True
+        r_ True
     ______
         xml_name = __.path.basename(xml)
-        message = 'The smartRender {} file seems to be broken. Do you want to reset it now?'.format(xml_name)
+        m.. = 'The smartRender {} file seems to be broken. Do you want to reset it now?'.format(xml_name)
         write_log('smartRender {} file broken.'.format(xml_name))
-        msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', message, ?W...QMessageBox.NoButton)
+        msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton)
         reset = msg_box.addButton('reset', ?W...QMessageBox.AcceptRole)
         style = 'QPushButton {background-color: rgba(51, 204, 255, 150);}'
         reset.setStyleSheet(style)
         reset.clearFocus()
         msg_box.addButton('Cancel', ?W...QMessageBox.RejectRole)
-        __ msg_box.exec_() == ?W...QMessageBox.AcceptRole:
+        __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
             __ __.path.isfile(xml):
                 __.remove(xml)
-                __ xml == settings_xml:
+                __ xml __ settings_xml:
                     get_settings_xml()
                 ____
                     jobs_xml = get_job_xml()
-                    __ jobs_xml == '':
-                        return False
+                    __ jobs_xml __ '':
+                        r_ False
         ____
-            return False
+            r_ False
 
 
 ___ check_web_connection(*args):
     ___
         urllib.urlopen('http://www.cragl.com')
-        return True
+        r_ True
     ______
-        return False
+        r_ False
 
 
 ___ update_job_data(job_id, key, val, *args):
     jobs_xml = get_job_xml()
-    __ jobs_xml == '':
-        return
+    __ jobs_xml __ '':
+        r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        __ job.get('id') == job_id:
+        __ job.get('id') __ job_id:
             ___ setting __ job.findall('setting'):
-                __ setting.get('name') == key:
+                __ setting.get('name') __ key:
                     setting.text = val
                     with open(jobs_xml, 'w') as xml:
                         prettyprint(jobs_root)
@@ -252,15 +252,15 @@ ___ update_job_data(job_id, key, val, *args):
 
 ___ calculate_process_precentage(job_id, frame, *args):
     jobs_xml = get_job_xml()
-    __ jobs_xml == '':
-        return
+    __ jobs_xml __ '':
+        r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     count_frames_done = 0
     ___ job __ jobs_root.find('jobs').findall('job'):
-        __ job.get('id') == job_id:
+        __ job.get('id') __ job_id:
             ___ data __ job.find('process').findall('data'):
-                __ data.get('status') == '400':
+                __ data.get('status') __ '400':
                     count_frames_done += 1
 
             count_frames_to_process = int(job.find('frames').get('count'))
@@ -268,27 +268,27 @@ ___ calculate_process_precentage(job_id, frame, *args):
             __ done_precentage > 100:
                 done_precentage = 100
             ___ setting __ job.findall('setting'):
-                __ setting.get('name') == 'progress':
+                __ setting.get('name') __ 'progress':
                     setting.text = str(done_precentage)
-                __ setting.get('name') == 'status':
+                __ setting.get('name') __ 'status':
                     tmp_status = setting.text
-                    __ done_precentage == 0:
+                    __ done_precentage __ 0:
                         setting.text = 'waiting'
                     __ done_precentage > 0:
                         setting.text = 'rendering'
-                    __ str(done_precentage) == '100':
+                    __ str(done_precentage) __ '100':
                         setting.text = 'finished'
-                    __ tmp_status == 'paused':
+                    __ tmp_status __ 'paused':
                         setting.text = 'paused'
 
             ___ f __ job.find('frames').findall('frame'):
-                __ f.text == str(frame):
+                __ f.text __ str(frame):
                     job.find('frames').remove(f)
 
             with open(jobs_xml, 'w') as xml:
                 prettyprint(jobs_root)
                 jobs_tree.write(xml, encoding='utf-8', xml_declaration=True)
-            return done_precentage
+            r_ done_precentage
 
 
 ___ set_style_sheet(widget, *args):
@@ -300,55 +300,55 @@ ___ set_style_sheet(widget, *args):
             widget.setStyleSheet(file_.read())
 
 
-___ show_message_box(window, message, *args):
+___ show_message_box(window, m.., *args):
     msg = ?W...QMessageBox()
     msg.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-    msg.information(window, 'information', message)
+    msg.information(window, 'information', m..)
 
 
 ___ open_website(url, *args):
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         __.startfile(url)
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
             show_message_box(None, msg)
 
-    return
+    r_
 
 
 ___ get_job_id_by_script_orig(script_orig, *args):
     ___
         jobs_xml = get_job_xml()
-        __ jobs_xml == '':
-            return ''
+        __ jobs_xml __ '':
+            r_ ''
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
     except Exception as e:
-        return ''
+        r_ ''
 
     jobs = []
     ___ job __ jobs_root.find('jobs').findall('job'):
         ___ setting __ job.findall('setting'):
-            __ setting.get('name') == 'script_orig':
-                __ setting.text == script_orig:
+            __ setting.get('name') __ 'script_orig':
+                __ setting.text __ script_orig:
                     jobs.ap..(job.get('id'))
 
-    __ le.(jobs) == 0:
-        return ''
-    elif le.(jobs) == 1:
-        return jobs[0]
+    __ le.(jobs) __ 0:
+        r_ ''
+    ____ le.(jobs) __ 1:
+        r_ jobs[0]
     ____
         latest = jobs[0]
         ___ job __ jobs:
             __ job.split('_')[0] > latest.split('_')[0]:
                 latest = job
 
-        return latest
+        r_ latest
 
 
 ___ get_job_data(job_id, *args):
@@ -356,15 +356,15 @@ ___ get_job_data(job_id, *args):
     frames_to_process = []
     ___
         jobs_xml = get_job_xml()
-        __ jobs_xml == '':
-            return {}
+        __ jobs_xml __ '':
+            r_ {}
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
     except Exception as e:
-        return {}
+        r_ {}
 
     ___ job __ jobs_root.find('jobs').findall('job'):
-        __ job.get('id') == job_id:
+        __ job.get('id') __ job_id:
             job_data['job_id'] = job_id
             ___ setting __ job.findall('setting'):
                 job_data[setting.get('name')] = setting.text
@@ -375,48 +375,48 @@ ___ get_job_data(job_id, *args):
             job_data['frames_to_process'] = frames_to_process
             number_errors = 0
             ___ data __ job.find('process').findall('data'):
-                __ data.get('status') == '100':
+                __ data.get('status') __ '100':
                     number_errors += 1
 
             job_data['number_errors'] = number_errors
 
-    return job_data
+    r_ job_data
 
 
 ___ get_all_jobs_data(filter, *args):
     jobs = collections.OrderedDict()
     ___
         jobs_xml = get_job_xml()
-        __ jobs_xml == '':
-            return {}
+        __ jobs_xml __ '':
+            r_ {}
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
     except Exception as e:
-        return {}
+        r_ {}
 
     ___ job __ jobs_root.find('jobs').findall('job'):
         job_id = job.get('id')
         jobs[job_id] = get_job_data(job_id)
-        __ filter == 'waiting' and jobs[job_id]['status'] != 'waiting':
+        __ filter __ 'waiting' and jobs[job_id]['status'] != 'waiting':
             del jobs[job_id]
             continue
-        __ filter == 'waiting' and jobs[job_id]['status'] != 'waiting':
+        __ filter __ 'waiting' and jobs[job_id]['status'] != 'waiting':
             del jobs[job_id]
             continue
-        elif filter == 'paused' and jobs[job_id]['status'] != 'paused':
+        ____ filter __ 'paused' and jobs[job_id]['status'] != 'paused':
             del jobs[job_id]
             continue
-        elif filter == 'cancelled' and jobs[job_id]['status'] != 'cancelled':
+        ____ filter __ 'cancelled' and jobs[job_id]['status'] != 'cancelled':
             del jobs[job_id]
             continue
-        elif filter == 'error' and jobs[job_id]['status'] != 'error':
+        ____ filter __ 'error' and jobs[job_id]['status'] != 'error':
             del jobs[job_id]
             continue
-        elif filter == 'finished' and jobs[job_id]['status'] != 'finished':
+        ____ filter __ 'finished' and jobs[job_id]['status'] != 'finished':
             del jobs[job_id]
             continue
 
-    return jobs
+    r_ jobs
 
 
 ___ get_log_file(*args):
@@ -428,11 +428,11 @@ ___ get_log_file(*args):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
-    return log_file
+    r_ log_file
 
 
 ___ get_time_formated():
-    return time.strftime('%d.%m.%Y %H:%M:%S', time.localtime())
+    r_ time.strftime('%d.%m.%Y %H:%M:%S', time.localtime())
 
 
 ___ write_log(text, tool = 'rn'):
@@ -450,9 +450,9 @@ ___ write_render_log(text, *args):
     ___
         with open(log, 'a') as lf:
             lf.write('{}: {}\n'.format(get_time_formated()), text)
-        return True
+        r_ True
     except IOError:
-        return False
+        r_ False
 
 
 ___ write_terminal_cmd(job_id, text, file = 'input', *args):
@@ -464,9 +464,9 @@ ___ write_terminal_cmd(job_id, text, file = 'input', *args):
     ___
         with open(log, 'a') as file_:
             file_.write('{}\n'.format(text))
-        return True
+        r_ True
     except IOError:
-        return False
+        r_ False
 
 
 ___ get_job_xml(*args):
@@ -480,7 +480,7 @@ ___ get_job_xml(*args):
         ______
             write_log('Failed writing smartRender job log template to: {}'.format(job_xml))
 
-    return job_xml
+    r_ job_xml
 
 
 ___ insert_as_read_node(job_details, write = None, *args):
@@ -515,11 +515,11 @@ ___ get_job_details(job_id, *args):
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        __ job.get('id') == job_id:
+        __ job.get('id') __ job_id:
             ___ setting __ job.findall('setting'):
                 job_details[setting.get('name')] = setting.text
 
-    return job_details
+    r_ job_details
 
 
 ___ force_create_render_dir(*args):
@@ -537,40 +537,40 @@ ___ load_terminal_log(job_id, mode, *args):
     xml_name = '{}_terminal_{}.log'.format(job_id, mode)
     terminal_file = __.path.join(get_smartrender_log_dir(), xml_name)
     __ no. __.path.isfile(terminal_file):
-        return ''
+        r_ ''
     ___
         with open(terminal_file, 'rt') as file:
-            return file.read()
+            r_ file.read()
     except Exception as e:
-        return 'Error reading the terminal input file. {}'.format(e)
+        r_ 'Error reading the terminal input file. {}'.format(e)
 
 
 ___ load_job_log_data(job_id, filter, file_output = False, *args):
     job_data = ''
     jobs_xml = get_job_xml()
-    __ jobs_xml == '':
-        return
+    __ jobs_xml __ '':
+        r_
     jobs_tree = ET.parse(jobs_xml)
     jobs_root = jobs_tree.getroot()
     ___ job __ jobs_root.find('jobs').findall('job'):
-        __ job.get('id') == job_id:
+        __ job.get('id') __ job_id:
             ___ data __ job.find('process').findall('data'):
                 code = ''
-                __ data.get('status') == '100':
+                __ data.get('status') __ '100':
                     __ filter != 'job: all' and filter != 'job: error':
                         continue
                     __ file_output:
                         code = '[error]'
                     ____
                         code = "[<span style='color:#993333'>error</span>"
-                elif data.get('status') == '300':
+                ____ data.get('status') __ '300':
                     __ filter != 'job: all' and filter != 'job: info':
                         continue
                     __ file_output:
                         code = '[info]'
                     ____
                         code = '[info'
-                elif data.get('status') == '400':
+                ____ data.get('status') __ '400':
                     __ filter != 'job: all' and filter != 'job: done':
                         continue
                     __ file_output:
@@ -585,33 +585,33 @@ ___ load_job_log_data(job_id, filter, file_output = False, *args):
                     job_data += '<tr><td>{time}</td><td> {code}</td><td>] {text}</td></tr>'.format(time=time, code=code, text=data.text)
                     job_data = '<table>{}</table>'.format(job_data)
 
-    return job_data
+    r_ job_data
 
 
 ___ open_in_explorer(path, parent = None, *args):
     __ no. __.path.isdir(path):
         msg = "Unable to open directory. The path doesn't exist:\n\n{}".format(path)
         show_message_box(parent, msg)
-    __ platform.system() == 'Windows':
+    __ pl...system() __ 'Windows':
         __.startfile(path)
-    elif platform.system() == 'Darwin':
-        subprocess.Popen(['open', path])
+    ____ pl...system() __ 'Darwin':
+        subprocess.P..(['open', path])
     ____
-        subprocess.Popen(['xdg-open', path])
+        subprocess.P..(['xdg-open', path])
 
 
 ___ reset_file(which, window, *args):
-    __ which == 'jobs':
-        message = 'Do you want to flush the jobs file?'
+    __ which __ 'jobs':
+        m.. = 'Do you want to flush the jobs file?'
         proccess_button_text = 'flush jobs'
     ____
-        message = 'Do you want to reset the smartRender settings? Please note: all render presets will be removed, too.'
+        m.. = 'Do you want to reset the smartRender settings? Please note: all render presets will be removed, too.'
         proccess_button_text = 'reset settings'
     process_button_color = '70, 10, 10, 255'
     cancel_button_text = 'cancel'
-    reset = ask_dialog(message, proccess_button_text, process_button_color, cancel_button_text)
+    reset = ask_dialog(m.., proccess_button_text, process_button_color, cancel_button_text)
     __ reset:
-        __ which == 'jobs':
+        __ which __ 'jobs':
             jobs_file = get_job_xml()
             ___
                 __ __.path.isfile(jobs_file):
@@ -621,7 +621,7 @@ ___ reset_file(which, window, *args):
             except Exception as e:
                 write_log('Cannot remove jobs file. {}'.format(e))
 
-        elif which == 'settings':
+        ____ which __ 'settings':
             settings_file = get_settings_xml()
             ___
                 __ __.path.isfile(settings_file):
@@ -645,7 +645,7 @@ ___ get_settings_xml(*args):
             write_log('Failed writing smartRender settings template at: {}'.format(settings_xml))
 
     check_settings_xml_values_exist()
-    return settings_xml
+    r_ settings_xml
 
 
 ___ check_settings_xml_values_exist():
@@ -694,12 +694,12 @@ ___ load_sounds(*args):
     sounds = []
     sounds_dir = get_sounds_dir()
     __ no. __.path.isdir(sounds_dir):
-        return
+        r_
     ___ file_ __ __.listdir(sounds_dir):
         __ __.path.splitext(file_)[1] __ ('.wav', '.WAV'):
             sounds.ap..(file_)
 
-    return sounds
+    r_ sounds
 
 
 ___ load_presets(*args):
@@ -711,15 +711,15 @@ ___ load_presets(*args):
         preset_name = presets.get('name')
         preset = {}
         ___ setting __ presets.findall('setting'):
-            __ setting.get('name') == 'range':
+            __ setting.get('name') __ 'range':
                 preset['range'] = setting.text
-            elif setting.get('name') == 'custom_range':
+            ____ setting.get('name') __ 'custom_range':
                 preset['custom_range'] = setting.text
-            elif setting.get('name') == 'step':
+            ____ setting.get('name') __ 'step':
                 preset['step'] = setting.text
-            elif setting.get('name') == 'overwrite':
+            ____ setting.get('name') __ 'overwrite':
                 preset['overwrite'] = setting.text
-            elif setting.get('name') == 'size':
+            ____ setting.get('name') __ 'size':
                 preset['size'] = setting.text
                 __ setting.get('width'):
                     preset['width'] = setting.get('width')
@@ -730,16 +730,16 @@ ___ load_presets(*args):
                 ____
                     preset['height'] = ''
                 preset['aspectratio'] = setting.get('aspectratio')
-            elif setting.get('name') == 'description':
+            ____ setting.get('name') __ 'description':
                 preset['description'] = setting.text
-            elif setting.get('name') == 'thread_count':
+            ____ setting.get('name') __ 'thread_count':
                 preset['thread_count'] = setting.text
                 __ no. preset['thread_count']:
                     preset['thread_count'] = ?.env['numCPUs'] / 2
 
         presets_list[preset_name] = preset
 
-    return presets_list
+    r_ presets_list
 
 
 ___ play_sound(sound, *args):
@@ -763,17 +763,17 @@ ___ load_settings(*args):
              'path': path.text})
 
         settings['cache'] = cache_paths
-    return settings
+    r_ settings
 
 
 ___ get_caches_by_mode(mode, *args):
-    return [ cache['path'] ___ cache __ load_settings()['cache'] __ cache['mode'] == mode ]
+    r_ [ cache['path'] ___ cache __ load_settings()['cache'] __ cache['mode'] __ mode ]
 
 
 ___ add_cache_path(mode, path, *args):
     settings_xml = get_settings_xml()
-    __ settings_xml == '':
-        return
+    __ settings_xml __ '':
+        r_
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
     new_cache_path = ET.SubElement(settings_root.find('cache'), 'path')
@@ -792,13 +792,13 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        __ child.get(key1) == value1:
+        __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
                 print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
-            return
+            r_
 
-    __ item_found == 0:
+    __ item_found __ 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
         __ key2 != '':
@@ -818,14 +818,14 @@ ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '',
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        __ child.get(key1) == value1:
-            __ value2 == child.text:
+        __ child.get(key1) __ value1:
+            __ value2 __ child.text:
                 item_found += 1
                 __ debug:
                     print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
-                return
+                r_
 
-    __ item_found == 0:
+    __ item_found __ 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
         __ key2 != '':
@@ -845,24 +845,24 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
     item_found = 0
     current_found = False
     ___ child __ root.find('presets').findall('preset'):
-        __ child.get('name') == 'current':
+        __ child.get('name') __ 'current':
             current_found = True
         ____
             current_found = False
         ___ setting __ child.findall('setting'):
-            __ setting.get(key1) == value1:
+            __ setting.get(key1) __ value1:
                 item_found += 1
-                return
+                r_
 
     __ current_found:
-        __ item_found == 0:
+        __ item_found __ 0:
             elem = ET.Element(section)
             elem.set(key1, value1)
             __ key2 != '':
                 elem.set(key2, value2)
             elem.text = text
             ___ child __ root.find('presets').findall('preset'):
-                __ child.get('name') == 'current':
+                __ child.get('name') __ 'current':
                     child.ap..(elem)
                     with open(settings_xml, 'w'):
                         prettyprint(root)
@@ -872,20 +872,20 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
 
 ___ get_cpu_count(*args):
     ___
-        return multiprocessing.cpu_count()
+        r_ multiprocessing.cpu_count()
     except Exception as e:
         __ hasattr(__, 'sysconf'):
             __ __.sysconf_names.has_key('SC_NPROCESSORS_ONLN'):
                 ncpus = __.sysconf('SC_NPROCESSORS_ONLN')
                 __ i..(ncpus, int) and ncpus > 0:
-                    return ncpus
+                    r_ ncpus
             ____
-                return int(__.popen2('sysctl -n hw.ncpu')[1].read())
+                r_ int(__.popen2('sysctl -n hw.ncpu')[1].read())
         __ __.environ.has_key('NUMBER_OF_PROCESSORS'):
             ncpus = int(__.environ['NUMBER_OF_PROCESSORS'])
             __ ncpus > 0:
-                return ncpus
-        return 1
+                r_ ncpus
+        r_ 1
 
 
 ___ prettyprint(elem, level = 0):
@@ -900,7 +900,7 @@ ___ prettyprint(elem, level = 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -909,39 +909,39 @@ ___ delete_cache_path(path, *args):
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
     ___ path_element __ settings_root.find('cache').findall('path'):
-        __ path_element.text == path:
+        __ path_element.text __ path:
             settings_root.find('cache').remove(path_element)
             with open(settings_xml, 'w') as xml:
                 prettyprint(settings_root)
                 settings_tree.write(xml, encoding='utf-8', xml_declaration=True)
 
 
-___ ask_dialog(message = '', process_button_text = '', color_process = '', cancel_button_text = ''):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', message, ?W...QMessageBox.NoButton, None)
+___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_button_text = ''):
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_button_text, ?W...QMessageBox.AcceptRole)
     __ color_process != '':
-        __ color_process == 'actionButton':
+        __ color_process __ 'actionButton':
             color_process = '51, 204, 255, 100'
         style = 'QPushButton {background-color: rgba(%s)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
     msg_box.addButton(cancel_button_text, ?W...QMessageBox.RejectRole)
-    __ msg_box.exec_() == ?W...QMessageBox.AcceptRole:
-        return True
+    __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
+        r_ True
     ____
-        return False
-        return
+        r_ False
+        r_
 
 
 ___ create_unique_job_id(*args):
     current_time = str(int(time.time()))
     rand_number = str(random.random())
     id = hashlib.md5('{}{}'.format(current_time, rand_number)).hexdigest()[:8]
-    return str('{}_{}'.format(current_time, id))
+    r_ str('{}_{}'.format(current_time, id))
 
 
 ___ get_all_views(range_ = 10):
@@ -955,28 +955,28 @@ ___ get_all_views(range_ = 10):
                 views.ap..(?.activeViewer().view())
             ?.activeViewer().nextView()
 
-        return views
+        r_ views
     ______
-        return ['main']
+        r_ ['main']
 
 
 ___ create_tooltips(parent, key, *args):
     tooltips_file = get_tooltips_file()
     __ no. __.path.isfile(tooltips_file):
-        return
+        r_
     with open(tooltips_file) as json_file:
         ttdata = json.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ tooltip __ ttdata[key]:
-            __ tooltip['tt'] == widget.property('tt'):
+            __ tooltip['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.format(tooltip['ttt'], tooltip['ttc']))
 
 
 ___ get_explorer_name(*args):
-    __ sys.platform == 'darwin':
-        return 'finder'
+    __ ___.pl.. __ 'darwin':
+        r_ 'finder'
     ____
-        return 'explorer'
+        r_ 'explorer'
 
 
 ___ get_recent_nukescripts(*args):
@@ -989,22 +989,22 @@ ___ get_recent_nukescripts(*args):
                 file_ = file_.replace('"', '')
                 recent_files.ap..(file_)
 
-            return recent_files
+            r_ recent_files
     ____
-        return []
+        r_ []
 
 
 ___ open_renderpath_in_explorer(label, renderpath, srw, *args):
-    __ renderpath == '':
+    __ renderpath __ '':
         label = label.split(' (')[0]
         msg = "The file path for '{}' hasn't been set up, yet.".format(label)
         show_message_box(srw, msg)
-        return
+        r_
     ___
         open_in_explorer(__.path.dirname(renderpath), parent=srw)
     except Exception as e:
         show_message_box(srw, 'An error occurred: {}'.format(e))
-        return
+        r_
 
 
 ___ get_processor(name):
@@ -1013,4 +1013,4 @@ ___ get_processor(name):
     processor = __.path.normpath(processor)
     __ no. __.path.isfile(processor):
         raise IOError('The processor script does not exist: {}'.format(processor))
-    return processor
+    r_ processor

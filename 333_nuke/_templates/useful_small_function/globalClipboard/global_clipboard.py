@@ -3,7 +3,7 @@ ______ ?
 
 c_ global_clipboard():
     ___  -
-        __ __.name == "nt":
+        __ __.name __ "nt":
             repo = "R:/Global_Clipboard/"
             user = __.environ.get("username")
         ____
@@ -18,7 +18,7 @@ c_ global_clipboard():
         __ __.path.exists(loadPath):
             ?.nodePaste(loadPath)
         ____
-            ?.message("{}\ndoesn't exists".format(loadPath))
+            ?.m..("{}\ndoesn't exists".format(loadPath))
 
     ___ copy
         ?.nodeCopy(savePath)

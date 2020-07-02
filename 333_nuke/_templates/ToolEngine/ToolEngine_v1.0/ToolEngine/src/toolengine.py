@@ -48,13 +48,13 @@ ___ show_info():
 
     __ no. __.path.isfile(info_file):
         print "ToolEngine: info file doesn't exist"
-        return
+        r_
 
     with open(info_file) as f:
         info_data = json.load(f)
 
     logo = __.path.normpath(__.path.join(__.path.dirname(__file__), "../", "img", "logo.png"))
-    ?.message("<img src='{}' style='float: right;' /><h1>ToolEngine v{}</h1>\n\n{}".format(logo, info_data["version"], info_data["info"]))
+    ?.m..("<img src='{}' style='float: right;' /><h1>ToolEngine v{}</h1>\n\n{}".format(logo, info_data["version"], info_data["info"]))
 
 
 ___ add_toolset():
@@ -63,12 +63,12 @@ ___ add_toolset():
     :return: None
     """
 
-    sel = ?.selectedNodes()
+    sel = ?.sN..
 
     # return if nothing is selected
-    __ le.(sel) == 0:
-        ?.message("Please select some nodes to proceed.")
-        return
+    __ le.(sel) __ 0:
+        ?.m..("Please select some nodes to proceed.")
+        r_
 
     # create add panel
     p = ?.Panel("Add toolset")
@@ -88,14 +88,14 @@ ___ add_toolset():
                 # if toolset already exists ask for overwriting
                 __ __.path.isfile(toolset_full_path):
                     __ no. ?.ask("The toolset '{}' already exists. Do you want to overwrite it?".format(toolset_full_path)):
-                        return
+                        r_
 
                 # write toolset
                 ?.nodeCopy(toolset_full_path)
-                ?.message("Succeessfully added toolset '{}/{}'".format(p.value("Category: "), p.value("Name: ")))
+                ?.m..("Succeessfully added toolset '{}/{}'".format(p.value("Category: "), p.value("Name: ")))
                 toolhelper.reload_tools_menu(notify=False)
 
             ____
-                ?.message("Please choose a category")
+                ?.m..("Please choose a category")
         ____
-            ?.message("Please enter a toolset name")
+            ?.m..("Please enter a toolset name")

@@ -39,11 +39,11 @@ c_ Global_clipboard(QDialog):
         button.c__.c..(paste)
 
     ___ get_data
-        __ __.name == "nt":
+        __ __.name __ "nt":
             repo = "R:/Global_Clipboard/"
         ____
             repo = "/Volumes/Resources/Global_Clipboard/"
-            __ __.path.exists(repo) == False:
+            __ __.path.exists(repo) __ False:
                 repo = "/Volumes/resources/Global_Clipboard/"
 
         saveName = "tempClipBoard"
@@ -66,7 +66,7 @@ c_ Global_clipboard(QDialog):
             ?.nodePaste(loadPath)
             c__
         ____
-            ?.message("{}\ndoesn't exists".format(loadPath))
+            ?.m..("{}\ndoesn't exists".format(loadPath))
 
 ___ main():
     # Create and show the form

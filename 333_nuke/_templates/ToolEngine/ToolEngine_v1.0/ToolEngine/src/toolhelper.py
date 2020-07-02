@@ -36,7 +36,7 @@ ___ reload_tools_menu(notify=True):
 
     # show message of new tools
     __ notify and dif_msg != "":
-        ?.message("{} new tools found:\n\n{}".format(le.(dif_list), dif_msg))
+        ?.m..("{} new tools found:\n\n{}".format(le.(dif_list), dif_msg))
 
 
 ___ get_all_tools():
@@ -60,7 +60,7 @@ ___ get_all_tools():
             ______
                 continue
 
-    return all_tools
+    r_ all_tools
 
 
 ___ load_tools(notify=False):
@@ -96,7 +96,7 @@ ___ load_settings():
     with open(settings_file, "r") as f:
         settings_data = json.load(f)
 
-    return settings_data
+    r_ settings_data
     
 
 ___ get_tools_categories(tools_root):
@@ -109,7 +109,7 @@ ___ get_tools_categories(tools_root):
     """
 
     __ no. __.path.isdir(tools_root):
-        return []
+        r_ []
 
     tools_categories = []
 
@@ -118,7 +118,7 @@ ___ get_tools_categories(tools_root):
         __ __.path.isdir(item_full_path) and item != config.TOOLS_TEMP and item no. __ config.TOOLSDIR_IGNORE:
             tools_categories.ap..(item)
 
-    return tools_categories
+    r_ tools_categories
 
 
 ___ build_tools_menu(tools_root):
@@ -129,11 +129,11 @@ ___ build_tools_menu(tools_root):
     """
 
     __ no. __.path.isdir(tools_root):
-        __ tools_root == "":
+        __ tools_root __ "":
             print "ToolEngine: tools_root not set. You can set it via 'ToolEngine->settings'"
         ____
             print "ToolEngine: tools_root '{}' doesn't exist".format(tools_root)
-        return
+        r_
 
     te_menu = ?.menu("Nodes").findItem("ToolEngine")
 
@@ -147,7 +147,7 @@ ___ build_tools_menu(tools_root):
         item_full_path = __.path.join(tools_root, category)
         ___ tool __ __.listdir(item_full_path):
 
-            __ __.path.splitext(tool)[1] == ".nk":
+            __ __.path.splitext(tool)[1] __ ".nk":
                 toolset_path = __.path.join(item_full_path, tool)
                 category_menu.addCommand(tool.replace(".nk", ""), lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=False), icon="")
 
@@ -161,7 +161,7 @@ ___ build_tools_menu(tools_root):
         __.makedirs(temp_dir)
 
     ___ tool __ __.listdir(temp_dir):
-        __ __.path.splitext(tool)[1] == ".nk":
+        __ __.path.splitext(tool)[1] __ ".nk":
             toolset_path = __.path.join(tools_root, config.TOOLS_TEMP, tool)
             temp_menu.addCommand(__.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=True))
 
@@ -176,8 +176,8 @@ ___ insert_toolset(toolpath, delete=False):
     """
 
     __ no. __.path.isfile(toolpath):
-        ?.message("The tool cannot be found")
-        return
+        ?.m..("The tool cannot be found")
+        r_
 
     ?.nodePaste(toolpath)
 

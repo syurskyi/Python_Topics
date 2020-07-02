@@ -20,9 +20,9 @@ Usage:
 
 # Import built-in modules
 ______ __
-______ platform
+______ pl..
 ______ re
-______ sys
+______ ___
 
 
 c_ PathResolver(object):
@@ -55,7 +55,7 @@ c_ PathResolver(object):
                 "Nuke executable: {}\n"
                 "Site-packages: {}\n")
 
-        return info.format(operating_sytem, exe_pattern, ?,
+        r_ info.format(operating_sytem, exe_pattern, ?,
                            site_packages)
 
     ___ _set_os_abbreviation
@@ -68,7 +68,7 @@ c_ PathResolver(object):
             "Windows": "win",
             "Darwin": "mac"
         }
-        operating_sytem = abbreviations.get(platform.system(), "lnx")
+        operating_sytem = abbreviations.get(pl...system(), "lnx")
 
     ___ _set_exe_pattern
         """Set the name of the executable depending on the operating system."""
@@ -117,7 +117,7 @@ c_ PathResolver(object):
         This is to make PySide/PySide2 available.
 
         """
-        sys.path.ap..(site_packages)
+        ___.path.ap..(site_packages)
 
     ___ set_path(self, path):
         """Set the path to the given path and ensure a directory is used.

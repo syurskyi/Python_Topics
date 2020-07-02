@@ -92,22 +92,22 @@ ___ collect_nodes(mode):
             continue
 
         __ dependent_ and dependencies_:
-            __ len(node.dependent()) == 0 and len(node.dependencies()) == 0 and node.minInputs() > 0 and node.maxOutputs() > 0:
+            __ le.(node.dependent()) __ 0 and le.(node.dependencies()) __ 0 and node.minInputs() > 0 and node.maxOutputs() > 0:
                 cleanup_list.append(node)
 
-        elif dependent_ and no. dependencies_ and node.maxOutputs() > 0:
-            __ len(node.dependent()) == 0:
+        ____ dependent_ and no. dependencies_ and node.maxOutputs() > 0:
+            __ le.(node.dependent()) __ 0:
                 cleanup_list.append(node)
 
-        elif no. dependent_ and dependencies_ and node.minInputs() > 0 and node.maxOutputs() > 0:
-            __ len(node.dependencies()) == 0:
+        ____ no. dependent_ and dependencies_ and node.minInputs() > 0 and node.maxOutputs() > 0:
+            __ le.(node.dependencies()) __ 0:
                 cleanup_list.append(node)
 
         else:
-            __ node.minInputs() > 0 and node.inputs() == 0:
+            __ node.minInputs() > 0 and node.inputs() __ 0:
                 cleanup_list.append(node)
 
-    return cleanup_list
+    r_ cleanup_list
 
 
 ___ cleanup():
@@ -190,7 +190,7 @@ c_ CleanModeDialog(?W..):
         checkboxes = []
 
         # set dimensions
-        table_cleanup.setRowCount(len(cleanup_list))
+        table_cleanup.setRowCount(le.(cleanup_list))
         table_cleanup.setColumnCount(3)
         table_cleanup.setColumnWidth(0, 250)
         table_cleanup.horizontalHeader().setStretchLastSection(True)
@@ -321,5 +321,5 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        __ event.key() == Qt.Key_Escape:
+        __ event.key() __ Qt.Key_Escape:
             c__

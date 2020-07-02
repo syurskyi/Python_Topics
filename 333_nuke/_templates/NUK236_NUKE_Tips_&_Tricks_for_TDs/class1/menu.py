@@ -9,8 +9,8 @@ ___ preset_nodes(val):
     preset_node = ?.toNode("PRESETS")
 
     __ no. preset_node:
-        ?.message("No preset node found!")
-        return
+        ?.m..("No preset node found!")
+        r_
 
     target_preset = preset_node["preset%s" % val]
     is_postage_stamp = preset_node["ps%s" % val].value()

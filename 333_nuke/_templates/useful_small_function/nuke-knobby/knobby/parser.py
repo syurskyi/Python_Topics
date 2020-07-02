@@ -16,7 +16,7 @@ ___ parse(script):
     queue = deque(script.split("\n"))
     tab = Tablet()
     tab.consume(queue)
-    return tab
+    r_ tab
 
 
 TYPE_NODE = 0
@@ -49,20 +49,20 @@ c_ Tablet(list):
         not_in_group = type is no. None and type != TYPE_GROUP
 
     ___ __eq__(self, other):
-        return "@" + name == other
+        r_ "@" + name __ other
 
     ___ find_tab(self, name):
         """Return child tab if exists in list"""
-        return next((item ___ item __ self __ item == "@" + name), None)
+        r_ next((item ___ item __ self __ item __ "@" + name), None)
 
     ___ consume(self, queue):
         """
         """
         ___ under_root():
-            return getattr(parent, "parent", None) is no. None
+            r_ getattr(parent, "parent", None) is no. None
 
         ___ ignore_tab_value(name):
-            __ queue and queue[0] == "%s 1" % name:
+            __ queue and queue[0] __ "%s 1" % name:
                 queue.popleft()
 
         while queue:
@@ -84,12 +84,12 @@ c_ Tablet(list):
 
             __ type __ (TYPE_KNOBS_CLOSE, TYPE_GROUP_CLOSE):
                 parent.tab_closed = True
-                return
+                r_
 
-            elif type == TYPE_NODE:
+            ____ type __ TYPE_NODE:
                 __ not_in_group:
                     queue.appendleft(line)
-                    return
+                    r_
 
             tab = Tablet(name, label, type=type, parent=self)
             ap..(tab)
@@ -97,7 +97,7 @@ c_ Tablet(list):
             tab.consume(queue)
 
             __ tab_closed and under_root():
-                return
+                r_
 
     ___ merge(self, other):
         """
@@ -123,14 +123,14 @@ c_ Tablet(list):
                 __ item.label is no. None:
                     line += " l " + item.label
 
-                __ item.type == TYPE_NODE:
+                __ item.type __ TYPE_NODE:
                     sub_script.insert(0, line + "}")
 
-                elif item.type == TYPE_KNOBS:
+                ____ item.type __ TYPE_KNOBS:
                     sub_script.insert(0, line + " n 1}")
                     sub_script.ap..(line + " n -1}")
 
-                elif item.type == TYPE_GROUP:
+                ____ item.type __ TYPE_GROUP:
                     sub_script.insert(0, line + " n -2}")
                     sub_script.ap..(line + " n -3}")
 
@@ -139,4 +139,4 @@ c_ Tablet(list):
 
             script.ap..(item)
 
-        return "\n".join(script) __ join ____ script
+        r_ "\n".join(script) __ join ____ script

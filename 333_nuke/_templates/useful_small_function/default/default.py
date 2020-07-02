@@ -44,13 +44,13 @@ ___ checkExistingInit():
 	__ no. __.path.isfile(knobInit):
 		___
 			open(knobInit,'w')
-			__ ctrl == True:
+			__ ctrl __ True:
 					print "created knobInit"
 		______
-			__ ctrl == True:
+			__ ctrl __ True:
 					print "couldn't create knobInit"
 	____
-		__ ctrl == True:
+		__ ctrl __ True:
 			print "knobInit exists"
 
 ___ createDefault():
@@ -86,21 +86,21 @@ ___ updateKnobInit(node,knob,value,mode):
 
 	knobDefaults = helper.openFileReturnArr(knobInit)
 
-	__ mode == "del":
+	__ mode __ "del":
 		
 		found = 0
 
 		___ d __ knobDefaults:
 			__ "{node}.{knob}".format(node=node, knob=knob) __ d:
 				found+=1
-				__ ctrl == True:
+				__ ctrl __ True:
 					print "found in knobInit"
 					print d
 				knobDefaults.remove(d)
 			____
 				pass
 		__ found < 1:
-			__ ctrl == True:
+			__ ctrl __ True:
 				print "not found in knobInit"
 		
 		#write new knobInit
@@ -110,9 +110,9 @@ ___ updateKnobInit(node,knob,value,mode):
 				f.write(d+"\n")
 			f.c__
 		______
-			?.message("an error occured while trying to edit the knobDefaults file")
+			?.m..("an error occured while trying to edit the knobDefaults file")
 
-	__ mode == "write":
+	__ mode __ "write":
 		#get rid of old knobDefaults of the current knob and write new knobDefault			
 		updateKnobInit(node,knob,"","del")
 		___
@@ -121,7 +121,7 @@ ___ updateKnobInit(node,knob,value,mode):
 			f.write(newKnobDefault)
 			f.c__
 		______
-			?.message("an error occured while trying to edit the knobDefaults file")
+			?.m..("an error occured while trying to edit the knobDefaults file")
 
 checkExistingInit()
 

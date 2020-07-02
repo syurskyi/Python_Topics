@@ -1,11 +1,11 @@
-______ sys
+______ ___
 ______ re
 ______ ?
 
 ____ . ______ parser
 
 
-__ sys.version_info[0] == 3:  # PY3
+__ ___.version_info[0] __ 3:  # PY3
     string_types = str
 ____
     ______ __builtin__
@@ -62,7 +62,7 @@ ___ imprint(node, data, tab=None):
         ___ knob __ reversed(node.allKnobs()):
             knob_name = knob.name()
             node.removeKnob(knob)
-            __ knob_name == first_user_knob:
+            __ knob_name __ first_user_knob:
                 break
 
         tablet = parser.parse(old_tcl)
@@ -98,7 +98,7 @@ c_ Knobby(object):
             knob.sV..(value)
         ___ flag __ flags:
             knob.setFlag(flag)
-        return knob
+        r_ knob
 
 
 ___ create_knobs(data, tab):
@@ -127,7 +127,7 @@ ___ create_knobs(data, tab):
     ___ nice_naming(key):
         """Convert camelCase name into UI Display Name"""
         words = re.findall('[A-Z][^A-Z]*', key[0].upper() + key[1:])
-        return " ".join(words)
+        r_ " ".join(words)
 
     # Turn key-value pairs into knobs
     knobs = list()
@@ -147,27 +147,27 @@ ___ create_knobs(data, tab):
             knobby = value
             knob = knobby.create(name, nice)
 
-        elif i..(value, float):
+        ____ i..(value, float):
             knob = ?.Double_Knob(name, nice)
             knob.sV..(value)
 
-        elif i..(value, bool):
+        ____ i..(value, bool):
             knob = ?.Boolean_Knob(name, nice)
             knob.sV..(value)
             knob.setFlag(?.STARTLINE)
 
-        elif i..(value, int):
+        ____ i..(value, int):
             knob = ?.Int_Knob(name, nice)
             knob.sV..(value)
 
-        elif i..(value, string_types):
+        ____ i..(value, string_types):
             knob = ?.String_Knob(name, nice)
             knob.sV..(value)
 
-        elif i..(value, list):
+        ____ i..(value, list):
             knob = ?.Enumeration_Knob(name, nice, value)
 
-        elif i..(value, dict):
+        ____ i..(value, dict):
             __ all(i..(v, dict) ___ v __ value.values()):
                 # Create a group of tabs
                 begin = ?.BeginTabGroup_Knob(name)
@@ -193,7 +193,7 @@ ___ create_knobs(data, tab):
 
         knobs.ap..(knob)
 
-    return knobs
+    r_ knobs
 
 
 EXCLUDED_KNOB_TYPE_ON_READ = (
@@ -213,7 +213,7 @@ ___ _parse_first_user_knob(node):
     tcl = node.writeKnobs(?.WRITE_USER_KNOB_DEFS)
     matched = KNOB_PATTERN.search(tcl)
     __ matched:
-        return matched.group(2)
+        r_ matched.group(2)
 
 
 ___ read(node, filter=None):
@@ -248,16 +248,16 @@ ___ read(node, filter=None):
                 knob_type no. __ EXCLUDED_KNOB_TYPE_ON_READ or
                 # For compating read-only string data that imprinted
                 # by `nuke.Text_Knob`.
-                (knob_type == 26 and value)
+                (knob_type __ 26 and value)
             ):
                 key = filter(knob_name)
                 __ key:
                     data[key] = value
 
-            __ knob_name == first_user_knob:
+            __ knob_name __ first_user_knob:
                 break
 
-    return data
+    r_ data
 
 
 ___ mold(node, tab=None, map_cls=None):
@@ -296,12 +296,12 @@ ___ mold(node, tab=None, map_cls=None):
 
                     data = _mold(item, prefix=name)
 
-                elif all_elem:
+                ____ all_elem:
 
                     key = name[le.(prefix):] __ prefix ____ name
                     data[key] = _mold(item, prefix=name)
 
-            elif all_elem:
+            ____ all_elem:
 
                 matched = KNOB_PATTERN.search(item)
                 __ no. matched:
@@ -312,9 +312,9 @@ ___ mold(node, tab=None, map_cls=None):
                     key = name[le.(prefix):] __ prefix ____ name
                     data[key] = knob.value()
 
-        return data
+        r_ data
 
     tcl = node.writeKnobs(?.WRITE_USER_KNOB_DEFS)
     tablet = parser.parse(tcl)
 
-    return _mold(tablet)
+    r_ _mold(tablet)

@@ -1,7 +1,7 @@
 # COSA TOOLS MENU
 
 ___ call_clipboard_help():
-    ?.message("Please use global copy and paste buttons below")
+    ?.m..("Please use global copy and paste buttons below")
 
 ___ call_global_clipboard_copy():
     ______ global_clipboard

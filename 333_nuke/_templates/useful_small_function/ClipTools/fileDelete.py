@@ -4,7 +4,7 @@
 # deletes a list of clips or files from within Nuke
 # version 1.1.2 added multiple clip delete
 
-______ sys, __ ,nuke, re
+______ ___, __ ,nuke, re
 ______ __
 ______ nuke
 ____ fileName ______ *
@@ -19,8 +19,8 @@ ___ deleteFiles(files):
         __ do_it:
             delete(files,False)
     else:
-        nuke.message('This is not a regular file - nothing deleted')
-        return 1
+        nuke.m..('This is not a regular file - nothing deleted')
+        r_ 1
 
 # deletes a list of clips supplied from Nuke
 #
@@ -33,7 +33,7 @@ ___ deleteClips(files):
                 deleteFiles=delete(filesList,True)
 
         __ deleteFiles:
-            nuke.message('some files failed to delete \ntry selecting individual files')
+            nuke.m..('some files failed to delete \ntry selecting individual files')
 
 
 #deleter - function called from Nuke

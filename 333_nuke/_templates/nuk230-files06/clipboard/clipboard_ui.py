@@ -1,7 +1,7 @@
 ____ ?.QtGui ______ *
 ____ ?.QtCore ______ *
 ____ ?.?W.. ______ *
-______ sys
+______ ___
 
 
 c_ ClipboardUi(QTabWidget):
@@ -85,7 +85,7 @@ c_ ClipboardUi(QTabWidget):
         users_search_line_edit.setStyleSheet(get_style_sheet())
 
     ___ get_style_sheet
-        return '''padding: 2px 2px 2px 20px;
+        r_ '''padding: 2px 2px 2px 20px;
                         background-image: url(zoom.png);
                         background-position: left;
                         background-repeat: no-repeat'''

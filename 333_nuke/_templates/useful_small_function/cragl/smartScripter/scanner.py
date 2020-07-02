@@ -83,7 +83,7 @@ c_ Scanner(object):
                 __.makedirs(root)
             except IOError as error:
                 raise IOError("Cannot create stack root in directory: "
-                              "{}\n".format(root, error.message))
+                              "{}\n".format(root, error.m..))
 
         dirs = [__.path.join(root, dir_) ___ dir_ __ __.listdir(root)
                 __ __.path.isdir(__.path.join(root, dir_))
@@ -95,7 +95,7 @@ c_ Scanner(object):
         ___ dir_ __ dirs:
             stacks[__.path.basename(dir_)] = _load_stack(dir_)
 
-        return stacks
+        r_ stacks
 
     ___ _load_stack(self, directory_path):
         """Load all commands json files from the given path.
@@ -122,7 +122,7 @@ c_ Scanner(object):
             ___
                 data = _parse_json(path)
             except (IOError, KeyError, ValueError) as error:
-                logger.warning(error.message)
+                logger.warning(error.m..)
 
             with open(__.path.splitext(path)[0], "r") as command_file:
                 command = command_file.read()
@@ -136,7 +136,7 @@ c_ Scanner(object):
             commands.ap..(command_widget)
             logger.debug("Add %s.%s", __.path.basename(path), file_)
 
-        return commands
+        r_ commands
 
     @staticmethod
     ___ _parse_json(path):
@@ -162,7 +162,7 @@ c_ Scanner(object):
 
         with open(path, "r") as json_file:
             ___
-                return json.load(json_file)
+                r_ json.load(json_file)
             except ValueError:
                 raise ValueError("Skipping corrupt command {}".format(path))
             except KeyError:

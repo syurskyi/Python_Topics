@@ -5,7 +5,7 @@
 # os functions for deleteing and renaming a list of files passed in from outside
 #
 
-______ sys
+______ ___
 ______ __
 ______ glob
 
@@ -21,7 +21,7 @@ ___ rename(files, pathToFile, search, replace, verbose):
             __.rename(pf, pr)
             count += 1
     except OSError:
-        return 0
+        r_ 0
     __ (verbose):
         print str(count)+' files renamed'
 
@@ -35,7 +35,7 @@ ___ delete(files, verbose):
             __.remove(f)
             count += 1
     ______
-        return 1
+        r_ 1
 
 
 

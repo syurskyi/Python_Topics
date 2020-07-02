@@ -25,10 +25,10 @@ ___ getElements(layer):
   ___ element __ layer:
     __ isinstance(element, nuke.rotopaint.Layer):
       getElements(element)
-    elif isinstance(element, nuke.rotopaint.Stroke) or isinstance(element, nuke.rotopaint.Shape):
+    ____ isinstance(element, nuke.rotopaint.Stroke) or isinstance(element, nuke.rotopaint.Shape):
       elements.append(element)
 
-  return elements
+  r_ elements
 
 ___ autoLife():
   n = nuke.thisNode()
@@ -48,7 +48,7 @@ ___ autoLife():
       # Get keyframes for the 0-indexed control point
       __ isinstance(element, nuke.rotopaint.Stroke):
 	keys = element[0].getControlPointKeyTimes()
-      elif isinstance(element, nuke.rotopaint.Shape):
+      ____ isinstance(element, nuke.rotopaint.Shape):
 	keys = element[0].center.getControlPointKeyTimes()
       
       firstKey = keys[0]

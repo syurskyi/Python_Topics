@@ -11,4 +11,4 @@ ___ openFileReturnArr(file):
         line=line.replace("\n", "")
         arr.ap..(line)
     fobj.c__
-    return arr
+    r_ arr

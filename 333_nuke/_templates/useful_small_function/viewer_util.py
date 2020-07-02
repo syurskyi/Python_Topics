@@ -12,13 +12,13 @@ ___ toggle_viewer_lut():
     luts = viewer.values()
     x = itertools.cycle(luts)
     ___ dummy __ ra..(le.(luts)):
-        __ viewer.value() == next(x):
+        __ viewer.value() __ next(x):
             viewer.sV..(next(x))
 
 
 ___ adjust_gain(original_gain, stop_offset):
     """Does the math for stop adjustments"""
-    return 2 ** (math.log(original_gain, 2.0) + stop_offset)
+    r_ 2 ** (math.log(original_gain, 2.0) + stop_offset)
 
 
 ___ viewer_stop_adjust(increment):

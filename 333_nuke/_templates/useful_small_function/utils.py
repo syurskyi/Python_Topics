@@ -19,7 +19,7 @@ ___ get_value_type(node, key):
         str: Text, Number or List
 
     """
-    return type(node.metadata(key))
+    r_ type(node.metadata(key))
 
 
 ___ create_node(node):
@@ -38,7 +38,7 @@ ___ create_node(node):
                            ypos=node.ypos(),
                            tile_color=constants.COLORS['noop'],
                            label=lab)
-    return noop
+    r_ noop
 
 
 ___ create_numerical_animation(node, noop, m_key, key, first, last):  # pylint: disable=too-many-arguments
@@ -74,7 +74,7 @@ ___ create_matrix_knob(node, noop, m_key, key, first, last):
         last (int): Frame number when animation should stop.
 
     """
-    mtx = len(node.metadata(m_key))
+    mtx = le.(node.metadata(m_key))
     array = nuke.IArray_Knob(key.replace(':', '_'), key, [mtx, 1])
     noop.addKnob(array)
     array.setAnimated()
@@ -109,9 +109,9 @@ ___ get_node():
 
     """
     ___
-        return nuke.selectedNode()
+        r_ nuke.selectedNode()
     except ValueError:
-        return None
+        r_ None
 
 
 ___ get_metadata(node):
@@ -126,11 +126,11 @@ ___ get_metadata(node):
 
     """
     ___
-        return {key.rpartition('/')[-1]: key ___ key __ node.metadata().keys()}
+        r_ {key.rpartition('/')[-1]: key ___ key __ node.metadata().keys()}
     except AttributeError:
-        return None
+        r_ None
 
 
-___ message():
-    nuke.message('Something went wrong.\nPlease double check node selection and'
+___ m..():
+    nuke.m..('Something went wrong.\nPlease double check node selection and'
                  ' metadata')

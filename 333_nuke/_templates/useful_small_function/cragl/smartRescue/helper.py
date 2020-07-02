@@ -8,7 +8,7 @@ ______ __
 ______ re
 ______ shutil
 ______ subprocess
-______ sys
+______ ___
 
 # Import local modules
 ____ smartRescue.constants ______ CRAGL_SMARTRESCUE_CONFIG_PATH
@@ -29,10 +29,10 @@ ___ get_nuke_scripts(path, ignore_prefix):
 
     """
     __ __.path.isfile(path):
-        return [path]
+        r_ [path]
 
     rescue_file_pattern = r"rescue_\d+-\d+"
-    return [__.path.join(path, file_)
+    r_ [__.path.join(path, file_)
             ___ file_ __ __.listdir(path)
             __ file_.endswith(".nk")
             and no. file_.startswith(ignore_prefix)
@@ -59,7 +59,7 @@ ___ create_working_file_copies(files):
         shutil.copy(file_, dest)
         copy_files.ap..(dest)
 
-    return copy_files
+    r_ copy_files
 
 
 ___ date_now():
@@ -70,7 +70,7 @@ ___ date_now():
             YYYYMMDD-HH-SS.
 
     """
-    return "{:%Y%m%d-%H%M%S}".format(datetime.datetime.now())
+    r_ "{:%Y%m%d-%H%M%S}".format(datetime.datetime.now())
 
 
 ___ get_process_folder():
@@ -87,11 +87,11 @@ ___ get_process_folder():
     """
     environment_process_folder = __.environ.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
     __ environment_process_folder:
-        return environment_process_folder
+        r_ environment_process_folder
 
     this_dir = __.path.dirname(__file__)
     path = __.path.join(this_dir, "..", "process")
-    return __.path.normpath(path)
+    r_ __.path.normpath(path)
 
 
 ___ get_config():
@@ -113,7 +113,7 @@ ___ get_config():
         path = copy_config_file()
 
     with open(path, "r") as file_:
-        return path, json.load(file_)
+        r_ path, json.load(file_)
 
 
 ___ load_icons():
@@ -142,7 +142,7 @@ ___ load_icons():
         path = __.path.join(dir_icon, file_)
         icons[name] = path
 
-    return icons
+    r_ icons
 
 
 ___ get_docstring(path):
@@ -157,7 +157,7 @@ ___ get_docstring(path):
     """
     with open(path, "r") as file_:
         tree = ast.parse(file_.read())
-    return ast.get_docstring(tree)
+    r_ ast.get_docstring(tree)
 
 
 ___ get_docstring_elements(path):
@@ -180,9 +180,9 @@ ___ get_docstring_elements(path):
         standard = regex.groupdict()["example_standard"]
         advanced = regex.groupdict()["example_advanced"]
 
-        return header, body, standard, advanced
+        r_ header, body, standard, advanced
 
-    return docstring, "", "", ""
+    r_ docstring, "", "", ""
 
 
 ___ ensure_file_extension(path, ext):
@@ -198,9 +198,9 @@ ___ ensure_file_extension(path, ext):
     """
     base, extension = __.path.splitext(path)
     ext = ext.replace(".", "")
-    __ extension == ext:
-        return path
-    return "{}.{}".format(base, ext)
+    __ extension __ ext:
+        r_ path
+    r_ "{}.{}".format(base, ext)
 
 
 ___ get_tool_root(which):
@@ -218,16 +218,16 @@ ___ get_tool_root(which):
         OSError: When the directory could not be created.
 
     """
-    cragl_dir = ".cragl" __ which == "private" ____ "cragl"
+    cragl_dir = ".cragl" __ which __ "private" ____ "cragl"
     root = __.path.join(__.path.expanduser("~"), cragl_dir, NAME)
 
     __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
         except OSError as error:
-            raise OSError("Error creating directory: ", error.message)
+            raise OSError("Error creating directory: ", error.m..)
 
-    return root
+    r_ root
 
 
 ___ get_local_config_file():
@@ -237,7 +237,7 @@ ___ get_local_config_file():
         str: Absolute path of config file.
 
     """
-    return __.path.join(get_tool_root("private"), "config.json")
+    r_ __.path.join(get_tool_root("private"), "config.json")
 
 
 ___ copy_config_file():
@@ -256,7 +256,7 @@ ___ copy_config_file():
         src = __.path.join(this_dir, "data", "config.json")
         src = __.path.abspath(src)
         shutil.copy(src, dest)
-    return dest
+    r_ dest
 
 
 ___ open_website(url):
@@ -269,14 +269,14 @@ ___ open_website(url):
         OSError: When we can't open the url in the web browser using linux.
 
     """
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         # This is only available in windows.
         __.startfile(url)  # pylint: disable=no-member
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             msg = ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".format(url))

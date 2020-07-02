@@ -8,7 +8,7 @@ ___ get_file_elements(filename):
     basename, file_sequence, ext, _ = file_elements
     __ no. file_sequence:
         raise ValueError('No file_sequence found in {}'.format(filename))
-    return (basename, file_sequence, ext)
+    r_ (basename, file_sequence, ext)
 
 
 ___ get_files_list(filepath):
@@ -23,16 +23,16 @@ ___ get_files_list(filepath):
     except ValueError:
         files_list.ap..(filepath)
 
-    return sorted(files_list)
+    r_ sorted(files_list)
 
 
 ___ get_frame_ranges(filepath):
     files_list = get_files_list(filepath)
     __ no. files_list:
-        return (0, 0)
+        r_ (0, 0)
     _, frame_in, _ = get_file_elements(files_list[0])
     _, frame_out, _ = get_file_elements(files_list[-1])
-    return (int(frame_in), int(frame_out))
+    r_ (int(frame_in), int(frame_out))
 
 
 ___ scan_for_nukescripts(path, ignore):
@@ -42,7 +42,7 @@ ___ scan_for_nukescripts(path, ignore):
     ignore_list = [ ignore_file.strip() ___ ignore_file __ ignore.split(',') __ ignore_file ]
     ___ root, dirs, files __ __.walk(path):
         ___ name __ files:
-            __ __.path.splitext(name)[1] == '.nk':
+            __ __.path.splitext(name)[1] __ '.nk':
                 ignore_file_ = 0
                 ___ ignore_file __ ignore_list:
                     __ ignore_file __ name:
@@ -51,4 +51,4 @@ ___ scan_for_nukescripts(path, ignore):
                 __ no. ignore_file_:
                     ?.ap..(__.path.join(root, name))
 
-    return ?
+    r_ ?

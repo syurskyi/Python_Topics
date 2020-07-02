@@ -35,4 +35,4 @@ ___ getKnobIndex():
   }
  """
 
-    return int(?.tcl(tclGetAnimIndex))
+    r_ int(?.tcl(tclGetAnimIndex))

@@ -34,7 +34,7 @@ c_ Timelog():
             _file = open(json_path, 'r')
             data = json.load(_file)
 
-        return data
+        r_ data
 
     ___ write_json
 
@@ -46,12 +46,12 @@ c_ Timelog():
         ____
             print('Invalid Path!')
             start_thread()
-            return
+            r_
 
         __ idle_time() > IDLE_TIME:
             print("Script is idle")
             start_thread()
-            return
+            r_
 
 
         data = get_json()
@@ -80,19 +80,19 @@ c_ Timelog():
         # 2) If nuke is modified and there is no autosave file, it means the user has modified he's script just after
         # saving it. So we consider the script not idle
 
-        elif ?.modified():
+        ____ ?.modified():
             __ no. __.path.isfile(autosave_path):
                 _idle_time = 0
 
         # 3) If there is no autosave file and nuke is not modified, we compare current time to the modification time of
         # the nuke script
 
-        elif no. ?.modified():
+        ____ no. ?.modified():
             modification_time = int(__.stat(script_path).st_mtime)
             _idle_time = now - modification_time
 
         print(_idle_time)
-        return _idle_time
+        r_ _idle_time
 
 
 

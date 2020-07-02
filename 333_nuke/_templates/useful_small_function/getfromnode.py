@@ -144,10 +144,10 @@ ___ filePath(node=None, proxy=False, regex=None, force_match=True):
         result = dd.xplatform.xpath(__.path.normpath(result))
         LOGGER.debug('Discovered path %s for node %s' % (
             result, node.knob('name').value()))
-        return result
+        r_ result
     ____
         LOGGER.debug('Discovered no path for node %s' % node.knob('name').value())
-        return None
+        r_ None
 # end filePath
    
 
@@ -178,7 +178,7 @@ ___ filePathWithRange(node=None, proxy=False, regex=None, force_match=True):
             result = '%s %s-%s' % (path, first_frame, last_frame)
 
     # return the path and range discovered
-    return result
+    r_ result
 #  end filePathWithRange
 
 
@@ -194,7 +194,7 @@ ___ filePaths(no__=None, proxy=False, regex=None, force_match=True):
 
     # check nodes, use selected Nodes in DAG if no arg
     __ no. nodes:
-        nodes = ?.selectedNodes()
+        nodes = ?.sN..
 
     # loop through nodes and get path for each Node
     ___ i __ nodes:
@@ -203,7 +203,7 @@ ___ filePaths(no__=None, proxy=False, regex=None, force_match=True):
         except AttributeError:
             pass
     
-    return result
+    r_ result
 # end filePaths
 
 
@@ -219,7 +219,7 @@ ___ filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
 
     # check nodes, use selected Nodes in DAG if no arg
     __ no. nodes:
-        nodes = ?.selectedNodes()
+        nodes = ?.sN..
 
     # loop through nodes and get path and range for each Node
     ___ i __ nodes:
@@ -230,7 +230,7 @@ ___ filePathsWithRanges(nodes=None, proxy=False, regex=None, force_match=True):
         except AttributeError:
             pass
     
-    return result
+    r_ result
 # end filePaths
 
 ___ fileType(node):
@@ -239,7 +239,7 @@ ___ fileType(node):
     """
     result = __.path.splitext(filePath(node))[1].lstrip('.')
     LOGGER.debug('Filetype for node %s is %s' % (node.knob('name').value(), result))
-    return result
+    r_ result
 # end fileType
 
 ___ format(node):
@@ -273,13 +273,13 @@ ___ format(node):
         ___ i __ ?.formats():
             thisFormat = (i.height(), i.width(), i.pixelAspect())
             # if matching format found, assign my_format to the match
-            __ thisFormat == my_format:
+            __ thisFormat __ my_format:
                 my_format = i
                 break
                 
     # return whatever is the current value of my_format
     LOGGER.debug('Format for node %s is %s' % (node.knob('name').value(), my_format))
-    return my_format
+    r_ my_format
 # end format
 
 

@@ -9,8 +9,8 @@ ____ PySide.QtGui ______ *
 ___ getMainWindow():
     app = QApplication.instance()
     ___ widget __ app.topLevelWidgets():
-        __ widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
-            return widget
+        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+            r_ widget
 
 qnuke = getMainWindow()
 w = qnuke.findChild(?W.., 'Transform1')

@@ -26,9 +26,9 @@ c_ Panel(?.PythonPanel):
         build_date_combo_box()
 
     ___ delete_log
-        message = ?.ask("Are you sure you want to delete this log?")
-        __ no. message:
-            return
+        m.. = ?.ask("Are you sure you want to delete this log?")
+        __ no. m..:
+            r_
 
         date = date_combo_box.value()
         path = "%s/%s/%s" % (LOG_DIR, CURRENT_USER,date)
@@ -49,7 +49,7 @@ c_ Panel(?.PythonPanel):
         date = date_combo_box.value()
         json_path = "%s/%s/%s/log.json" % (LOG_DIR, CURRENT_USER,date)
         log = json.load(open(json_path))
-        return log
+        r_ log
 
     ___ build_log_text(self, log):
         txt = ""
@@ -60,17 +60,17 @@ c_ Panel(?.PythonPanel):
 
     ___ knobChanged(self, knob):
 
-        __ knob.name() == "date":
+        __ knob.name() __ "date":
             build_log_text(get_log())
 
-        __ knob.name() == "delete":
+        __ knob.name() __ "delete":
             delete_log()
 
     ___ delete_log
 
-        message = ?.ask("Are you sure you want to delete this log?")
-        __ no. message:
-            return
+        m.. = ?.ask("Are you sure you want to delete this log?")
+        __ no. m..:
+            r_
 
         date = date_combo_box.value()
         path = "%s/%s/%s" % (LOG_DIR, CURRENT_USER, date)
@@ -82,4 +82,4 @@ c_ Panel(?.PythonPanel):
 
         minutes, seconds = divmod(sec, 60)
         hours, minutes = divmod(minutes, 60)
-        return "%02d:%02d" % (hours, minutes)
+        r_ "%02d:%02d" % (hours, minutes)

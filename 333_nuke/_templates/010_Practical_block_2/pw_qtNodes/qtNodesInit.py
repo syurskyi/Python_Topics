@@ -17,15 +17,15 @@ ______ qtNodes
 ___ getMainWindow():
     qApp = QApplication.instance()
     ___ widget __ qApp.topLevelWidgets():
-        __ widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
-            return widget
+        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+            r_ widget
 qNuke = getMainWindow()
 
 c_ eventFilterWindowClass(QObject):
     ___ eventFilter(self, obj, ev):
-        __ ev.type() == QEvent.ChildPolished:
+        __ ev.type() __ QEvent.ChildPolished:
             processNode(ev.child())
-        return False
+        r_ False
         
     ___ processNode(self, n):
         nukeNode = ?.toNode( str(n.objectName()) )

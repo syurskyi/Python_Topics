@@ -3,14 +3,14 @@ ______ nukescripts
 
 ___ newUserKnob(knob, value):
     knob.setValue(value)
-    return knob
+    r_ knob
 
 ___ allReads():
     readNodes = []
     ___ i __ nuke.allNodes():
-        __ i.Class() == 'Read':
+        __ i.Class() __ 'Read':
             readNodes.append(i)
-    return readNodes
+    r_ readNodes
 
 ___ selectRead():
     ___ i __ allReads():
@@ -36,13 +36,13 @@ ___ setFrameRange():
 
     #show dialog
     __ f.showModalDialog():
-        __ f.nodesSelection.value() == 'All read nodes':
+        __ f.nodesSelection.value() __ 'All read nodes':
             Sel = allReads()
-        elif f.nodesSelection.value() == 'Selected nodes only':
-            Sel = nuke.selectedNodes()
+        ____ f.nodesSelection.value() __ 'Selected nodes only':
+            Sel = nuke.sN..
         else:
             Sel = allReads()
-            ___ i __ nuke.selectedNodes():
+            ___ i __ nuke.sN..:
                 ___
                     Sel.remove(i)
                 except ValueError:
@@ -55,7 +55,7 @@ ___ setFrameRange():
                 r['last'].setValue(f.lastFrame.value())
                 r['after'].setValue(f.after.value())
             except ValueError:
-                nuke.message('No nodes selected!')
+                nuke.m..('No nodes selected!')
             except NameError:
                 pass
 
@@ -71,17 +71,17 @@ ___ setError():
 
     #show dialog
     __ e.showModalDialog():
-        __ e.nodesSelection.value() == 'All read nodes':
+        __ e.nodesSelection.value() __ 'All read nodes':
             Sel = allReads()
-        elif e.nodesSelection.value() == 'Selected nodes only':
-            Sel = nuke.selectedNodes()
+        ____ e.nodesSelection.value() __ 'Selected nodes only':
+            Sel = nuke.sN..
         else:
             Sel = allReads()
-            ___ i __ nuke.selectedNodes():
+            ___ i __ nuke.sN..:
                 ___
                     Sel.remove(i)
                 except ValueError:
-                    nuke.message('No nodes selected!')
+                    nuke.m..('No nodes selected!')
                 except NameError:
                     pass
 
@@ -91,7 +91,7 @@ ___ setError():
                 __ e.reload.value():
                     r.knob('reload').execute()
             except ValueError:
-                nuke.message('No nodes selected!')
+                nuke.m..('No nodes selected!')
             except NameError:
                 pass
 

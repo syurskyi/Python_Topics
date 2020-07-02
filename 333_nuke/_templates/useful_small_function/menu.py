@@ -11,7 +11,7 @@ print 'in my menu.py'
 # per Matthieu Cadet <matthieu.cadet@gmail.com> in nuke users email conversation
 #
 ___ autoColorReadNodeType(overrideNode=None):
-       __ overrideNode == None:
+       __ overrideNode __ None:
                this = ?.thisNode()
        ____
                this = overrideNode
@@ -20,7 +20,7 @@ ___ autoColorReadNodeType(overrideNode=None):
        # catch keyword in the filename path to set custom color
        __ "/wip/" __ thisFile:
                nodeColor = 862912511
-       elif "/pub/" __ thisFile:
+       ____ "/pub/" __ thisFile:
                nodeColor = 4280356351
        ____
                nodeColor = 0
@@ -32,7 +32,7 @@ ___ autoColorReadNodeType(overrideNode=None):
 #
 ___ sjmAlignH():
   yresult = None
-  ___ n __ ?.selectedNodes():
+  ___ n __ ?.sN..:
     __ yresult is None:
       yresult = n.ypos()
     ____
@@ -42,7 +42,7 @@ ___ sjmAlignH():
 #
 ___ sjmAlignV():
   xresult = None
-  ___ n __ ?.selectedNodes():
+  ___ n __ ?.sN..:
     __ xresult is None:
       xresult = n.xpos()
     ____
@@ -52,9 +52,9 @@ ___ sjmAlignV():
 #
 ___ sjmAutoBackdrop():
   ______ random
-  selNodes = ?.selectedNodes()
+  selNodes = ?.sN..
   __ no. selNodes:
-    return ?.nodes.BackdropNode()
+    r_ ?.nodes.BackdropNode()
   #
   margin = 20
   minWidth = 1000
@@ -80,13 +80,13 @@ ___ sjmAutoBackdrop():
   n['selected'].sV..(False)
   ___ node __ selNodes:
     node['selected'].sV..(True)
-  return n
+  r_ n
 
 # backdrop font size=99, by Steve Molin
 #
 ___ sjmBackdropFonts():
   ___ i __ ?.allNodes():
-    __ i.__class__.__name__ == 'BackdropNode':
+    __ i.__class__.__name__ __ 'BackdropNode':
       i.knob('note_font_size').sV..(189)
       k = i.knob('label')
       k.setText(k.getText().upper())
@@ -107,7 +107,7 @@ ___ sjmFindAllParentReads(n=None):
       __ input.knob('file'):
         result.ap..(input)
       result.extend(sjmFindAllParentReads(input))
-  return set(result)
+  r_ set(result)
 
 # unhide all inputs, by Steve Molin
 #
@@ -127,14 +127,14 @@ ___ sjmOpenInViewer(nd=None):
     nd = ?.sN__
   fp = nd.knobs()['file'].value() % nd.firstFrame()
   args = 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp
-  subprocess.Popen(args)
+  subprocess.P..(args)
 
 # load the targets of the writeNodes in a viewer (djv):
 # TODO: deal better with %04d; deal with different viewers
 #
 ___ sjmOpenAllInViewer():
   ___ n __ ?.allNodes():
-    __ n.Class() == 'Write':
+    __ n.Class() __ 'Write':
       __ no. n.knob('disable').value():
         sjmOpenInViewer(n)
 	#filespec = n.knob('file').value()
@@ -155,7 +155,7 @@ ___ sjmMergeOpDecr():
 # use $gui to disable slow nodes when working interactively
 #
 ___ sjmToggleDisableExpression():
-  mynodes = ?.selectedNodes()
+  mynodes = ?.sN..
   ___ mynode __ mynodes:
     myknob = mynode['disable']
     __ myknob.isAnimated():
@@ -167,7 +167,7 @@ ___ sjmToggleDisableExpression():
 # toggle the branch selector on all the switch nodes that are selected
 #
 ___ sjmToggleSwitch():
-  ___ mynode __ ?.selectedNodes():
+  ___ mynode __ ?.sN..:
     __ mynode.knobs()['which'].value():
       mynode.knobs()['which'].sV..(0)
     ____
@@ -243,7 +243,7 @@ ___
   #
   ## make this work in a .py file and in 'copy and paste' into the script editor
   moduleName = __name__
-  __ moduleName == '__main__':
+  __ moduleName __ '__main__':
     moduleName = ''
   ____
     moduleName = moduleName + '.'

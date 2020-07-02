@@ -3,7 +3,7 @@ ______ json
 ______ __
 ______ re
 ______ subprocess
-______ sys
+______ ___
 ______ time
 ______ uuid
 ______ xml.etree.ElementTree as ET
@@ -32,7 +32,7 @@ ___ load_icons():
         path = __.path.join(dir_icon, file_)
         icons[name] = path
 
-    return icons
+    r_ icons
 
 
 ___ set_style_sheet(widget, style = 'styles.qss'):
@@ -51,7 +51,7 @@ ___ move_widget(widget_to_move, click_pos, event):
 
 
 ___ get_tool_root(which):
-    __ which == 'private':
+    __ which __ 'private':
         cragl_dir = '.cragl'
     ____
         cragl_dir = 'cragl'
@@ -62,7 +62,7 @@ ___ get_tool_root(which):
         except IOError:
             write_log('unable to create open tool dir at: {}'.format(root))
 
-    return root
+    r_ root
 
 
 ___ write_log(text, tool = 'li'):
@@ -81,7 +81,7 @@ ___ get_log_file():
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
-    return log_file
+    r_ log_file
 
 
 ___ load_settings():
@@ -92,15 +92,15 @@ ___ load_settings():
         settings_root = settings_tree.getroot()
         ___ setting __ settings_root.find('settings').findall('setting'):
             value = setting.text
-            __ value == 'True':
+            __ value __ 'True':
                 value = True
-            elif value == 'False':
+            ____ value __ 'False':
                 value = False
-            elif ',' __ value:
+            ____ ',' __ value:
                 value = [ val.strip() ___ val __ value.split(',') ]
             settings[setting.get('name')] = value
 
-    return settings
+    r_ settings
 
 
 ___ load_presets():
@@ -113,14 +113,14 @@ ___ load_presets():
             presets[preset.get('name')] = {'icon': preset.get('icon'),
              'color': [ float(val.strip()) ___ val __ preset.get('color').split(',') ]}
 
-    return presets
+    r_ presets
 
 
 ___ get_xml_elements():
     xml = get_settings_xml()
     tree = ET.parse(xml)
     root = tree.getroot()
-    return (xml, root, tree)
+    r_ (xml, root, tree)
 
 
 ___ get_settings_xml():
@@ -138,7 +138,7 @@ ___ get_settings_xml():
 
     check_xml_ok(settings_xml)
     check_xml_values_exist()
-    return settings_xml
+    r_ settings_xml
 
 
 ___ clear_layout(layout):
@@ -177,13 +177,13 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        __ child.get(key1) == value1:
+        __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
                 print '{} | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(__product__, parent, section, key1, value1, text, key2, value2)
-            return
+            r_
 
-    __ item_found == 0:
+    __ item_found __ 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
         __ key2 != '':
@@ -208,7 +208,7 @@ ___ prettyprint(elem, level = 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -216,10 +216,10 @@ ___ check_xml_ok(xml):
     ___
         with open(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        return True
+        r_ True
     ______
-        message = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
-        reset_settings_xml = dialogs.ask_dialog(message, process_label='reset', color_process='actionButton')
+        m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
+        reset_settings_xml = dialogs.ask_dialog(m.., process_label='reset', color_process='actionButton')
         __ reset_settings_xml:
             __ __.path.isfile(xml):
                 __.remove(xml)
@@ -229,12 +229,12 @@ ___ check_xml_ok(xml):
 ___ update_settings(key, value):
     xml, root, tree = get_xml_elements()
     ___ setting __ root.find('settings').findall('setting'):
-        __ setting.get('name') == key:
+        __ setting.get('name') __ key:
             setting.text = value
             with open(xml, 'w') as xml:
                 prettyprint(root)
                 tree.write(xml, encoding='utf-8', xml_declaration=True)
-            return
+            r_
 
     raise ValueError("Invalid key '{}'. No such key in settings.".format(key))
 
@@ -242,7 +242,7 @@ ___ update_settings(key, value):
 ___ update_preset(preset_name, key, value):
     xml, root, tree = get_xml_elements()
     ___ preset __ root.find('backdrops').findall('backdrop'):
-        __ preset.get('name') == preset_name:
+        __ preset.get('name') __ preset_name:
             preset.set(key, value)
             break
 
@@ -256,34 +256,34 @@ ___ load_tooltips(parent, section):
     tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
-        return
+        r_
     with open(tooltips_file) as json_file:
         ___
             ttdata = json.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
-            return
+            r_
 
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
-            __ t['tt'] == widget.property('tt'):
+            __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
 
 
 ___ open_website(url):
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         __.startfile(url)
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
             ____ smartLink ______ dialogs
             dialogs.show_message_box(None, msg)
 
-    return
+    r_
 
 
 ___ center_window(window):
@@ -301,11 +301,11 @@ ___ move_window_under_cursor(window):
 
 
 ___ get_cursor_position():
-    return QtGui.QCursor().pos()
+    r_ QtGui.QCursor().pos()
 
 
 ___ create_uid():
-    return str(uuid.uuid4())
+    r_ str(uuid.uuid4())
 
 
 ___ get_next_link_name():
@@ -313,18 +313,18 @@ ___ get_next_link_name():
     ___ split_nr(string):
         regex = re.compile('(\\d+)')
         element = regex.split(string)
-        return [ (int(y) __ y.isdigit() ____ y) ___ y __ element ]
+        r_ [ (int(y) __ y.isdigit() ____ y) ___ y __ element ]
 
     ___ _increase(groups):
         index = int(groups.group(2)) + 1
-        return '{}{}'.format(groups.group(1), index)
+        r_ '{}{}'.format(groups.group(1), index)
 
     pattern = '(link_)(\\d+)'
     node_names = sorted([ node.name() ___ node __ ?.allNodes() __ re.search(pattern, node.name()) ], key=split_nr)
     __ node_names:
-        return re.sub(pattern, _increase, node_names[-1])
+        r_ re.sub(pattern, _increase, node_names[-1])
     ____
-        return 'link_1'
+        r_ 'link_1'
 
 
 ___ zoom(node):
@@ -336,58 +336,58 @@ ___ get_repr_class_nodes():
     ___ node_class __ ['PostageStamp', 'Dot']:
         nodes.extend(?.allNodes(node_class))
 
-    return nodes
+    r_ nodes
 
 
 ___ atoi(text):
     __ text.isdigit():
-        return int(text)
-    return text
+        r_ int(text)
+    r_ text
 
 
 ___ natural_keys(text):
-    return [ atoi(c) ___ c __ re.split('(\\d+)', text) ]
+    r_ [ atoi(c) ___ c __ re.split('(\\d+)', text) ]
 
 
 ___ list_from_string(string):
     __ i..(string, list):
-        return string
+        r_ string
     __ ',' __ string:
-        return [ cls.strip() ___ cls __ string.split(',') ]
-    return [string]
+        r_ [ cls.strip() ___ cls __ string.split(',') ]
+    r_ [string]
 
 
 ___ string_from_list(list_):
     __ i..(list_, list):
-        return ', '.join(list_)
-    return str(list_)
+        r_ ', '.join(list_)
+    r_ str(list_)
 
 
 ___ get_root_favorites_knob():
     favorites_knob = ?.root().knob(PREFIX_FAVORITES)
     __ favorites_knob:
-        return favorites_knob
+        r_ favorites_knob
     ____
-        return add_smartlink_tab_widgets()
+        r_ add_smartlink_tab_widgets()
 
 
 ___ add_smartlink_tab_widgets():
     root = ?.root()
     __ SMARTLINK __ root.knobs():
-        return
+        r_
     tab = ?.Tab_Knob(SMARTLINK)
     favorites = ?.String_Knob(PREFIX_FAVORITES, FAVORITES)
     favorites.setEnabled(False)
     root.addKnob(tab)
     root.addKnob(favorites)
-    return favorites
+    r_ favorites
 
 
 ___ add_to_root_favorites(uid):
     favorites_knob = get_root_favorites_knob()
     favorites = [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
     __ uid __ favorites:
-        return
+        r_
     favorites.ap..(uid)
     favorites_knob.sV..(', '.join(favorites))
 
@@ -398,13 +398,13 @@ ___ remove_from_root_favorites(uid):
     ___
         del favorites[favorites.index(uid)]
     except ValueError:
-        return
+        r_
 
     favorites_knob.sV..(', '.join(favorites))
 
 
 ___ rgb_to_hex(r, g, b):
-    return int('%02x%02x%02x%02x' % (r,
+    r_ int('%02x%02x%02x%02x' % (r,
      g,
      b,
      1), 16)
@@ -415,8 +415,8 @@ ___ swap_presets(preset1, preset2):
     ___ _find_preset(root, name):
         index = 0
         ___ preset __ root.find('backdrops').findall('backdrop'):
-            __ preset.get('name') == name:
-                return [preset, index]
+            __ preset.get('name') __ name:
+                r_ [preset, index]
             index += 1
 
     xml, root, tree = get_xml_elements()
@@ -437,7 +437,7 @@ ___ swap_presets(preset1, preset2):
 ___ remove_preset(name):
     xml, root, tree = get_xml_elements()
     ___ preset __ root.find('backdrops').findall('backdrop'):
-        __ preset.get('name') == name:
+        __ preset.get('name') __ name:
             root.find('backdrops').remove(preset)
             break
 
@@ -460,11 +460,11 @@ ___ add_preset(name, color, icon):
 
 ___ add_to_favorites():
     ____ smartLink ______ nodes
-    sel_nodes = ?.selectedNodes()
+    sel_nodes = ?.sN..
     __ no. sel_nodes:
         msg = 'Please select nodes that you would like to add to favorites.'
         dialogs.show_message_box(None, msg)
-        return
+        r_
     ____
         ___ node __ sel_nodes:
             nodes.NodeObject.register_link_tab(node=node)
@@ -476,7 +476,7 @@ ___ add_to_favorites():
         except AttributeError:
             pass
 
-        return
+        r_
 
 
 ___ get_main_window():
@@ -486,6 +486,6 @@ ___ get_main_window():
         module = QtGui
 
     ___
-        return module.QApplication(sys.argv)
+        r_ module.QApplication(___.argv)
     except RuntimeError:
-        return module.QApplication.instance()
+        r_ module.QApplication.instance()

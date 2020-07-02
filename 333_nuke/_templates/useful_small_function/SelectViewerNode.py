@@ -36,7 +36,7 @@ ___ GetViewerList(ViewersList):
     ___ v __ nuke.allNodes():
         Name = v.name()
         Class = v.Class()
-        __ Class == "Viewer":
+        __ Class __ "Viewer":
             Number = "      "+ Name.split(Class)[1]+"    "
             __ Number no. __ ViewersList:
                 ViewersList.append(Number)
@@ -44,7 +44,7 @@ ___ GetViewerList(ViewersList):
     __ ActiveViewer!="":
         ViewersList.remove(ActiveViewer)
         ViewersList.insert(0,ActiveViewer)
-    return ViewersList
+    r_ ViewersList
    
 ___ SelectNode(Viewer,warning):
     SelectedNodes = []
@@ -57,15 +57,15 @@ ___ SelectNode(Viewer,warning):
     ______
         pass
     Inputs = nuke.toNode(Viewer).inputs()
-    __ Inputs==0:
+    __ Inputs__0:
         print Viewer + " Has no Inputs"
         warning.setValue("        "+Viewer + " Has no Inputs")
         warning.setVisible(True)
         raise ValueError      
-    elif Inputs>1:
+    ____ Inputs>1:
         ___ n __ nuke.allNodes():
             n.setSelected(False)
-        __ Viewer == ActiveViewer:
+        __ Viewer __ ActiveViewer:
             index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)+1
             Nodes=[index1]
             ___
@@ -88,7 +88,7 @@ ___ SelectNode(Viewer,warning):
     else:
         ___ n __ nuke.allNodes():
             n.setSelected(False)
-        __ Viewer == ActiveViewer:
+        __ Viewer __ ActiveViewer:
             ___
                 index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)
                 Node = nuke.toNode(nuke.toNode(Viewer).input(index1).name())
@@ -104,7 +104,7 @@ ___ SelectNode(Viewer,warning):
                     nuke.show(Node)
                 ______
                     pass
-    return nuke.selectedNodes()
+    r_ nuke.sN..
 
 ___ Zoom(zoom,node):
     __ zoom.getValue():
@@ -112,9 +112,9 @@ ___ Zoom(zoom,node):
         y1 = node[0].ypos()
         w1 = node[0].screenWidth()
         h1 = node[0].screenHeight()
-        __ len(node)==1:
+        __ le.(node)__1:
             nuke.zoom(2,(x1+w1/2,y1+h1/2))
-        elif len(node)>1:           
+        ____ le.(node)>1:
             x2 = node[1].xpos()
             y2 = node[1].ypos()
             w2 = node[1].screenWidth()
@@ -168,7 +168,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
     ___ knobChanged(self,knob):
 
-        __ knob.name()== "OK":
+        __ knob.name()__ "OK":
 
             __ no. warning.visible():
 
@@ -178,7 +178,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
             else:
 
-                return
+                r_
 
         __ knob is Viewers:
         

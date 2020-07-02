@@ -1,6 +1,6 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartLib_v4.0/smartLib/src/helper.py
 ______ __
-______ sys
+______ ___
 ______ errno
 ______ shutil
 ______ subprocess
@@ -52,7 +52,7 @@ ___ load_icons():
     dir_icon = __.path.join(this_dir, '../', 'icons')
     dir_icon = __.path.normpath(dir_icon)
     join = __.path.join
-    return {'icon_logo': join(dir_icon, 'logo.png'),
+    r_ {'icon_logo': join(dir_icon, 'logo.png'),
      'icon_folder': join(dir_icon, 'folder.png'),
      'icon_nuke': join(dir_icon, 'nuke.png'),
      'icon_img': join(dir_icon, 'img.jpg'),
@@ -87,13 +87,13 @@ ___ load_icons():
 ___ check_web_connection():
     ___
         urllib.urlopen('http://www.cragl.com')
-        return True
+        r_ True
     ______
-        return False
+        r_ False
 
 
-___ show_message_box(window, message):
-    ?W...QMessageBox().information(window, 'information', message)
+___ show_message_box(window, m..):
+    ?W...QMessageBox().information(window, 'information', m..)
 
 
 ___ message_confirm_overwrite(src, is_file = True):
@@ -101,30 +101,30 @@ ___ message_confirm_overwrite(src, is_file = True):
         item = 'File'
     ____
         item = 'Directory'
-    message = "{} '{}' already exists.\nDo you want to overwrite it?".format(item, src)
-    overwrite = ask_dialog(message=message, process_button_text='Overwrite', color_process='45,0,0', cancel_button_text='Cancel')
-    return overwrite
+    m.. = "{} '{}' already exists.\nDo you want to overwrite it?".format(item, src)
+    overwrite = ask_dialog(m..=m.., process_button_text='Overwrite', color_process='45,0,0', cancel_button_text='Cancel')
+    r_ overwrite
 
 
 ___ get_smartlib_private_dir():
     dir_ = __.path.join(__.path.expanduser('~'), '.cragl', 'smartLib')
     __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
-    return dir_
+    r_ dir_
 
 
 ___ get_smartlib_public_dir():
     dir_ = __.path.join(__.path.expanduser('~'), 'cragl', 'smartLib')
     __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
-    return dir_
+    r_ dir_
 
 
 ___ get_dir_templates():
     dir_ = __.path.join(get_smartlib_public_dir(), 'shot_templates')
     __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
-    return dir_
+    r_ dir_
 
 
 ___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = False, is_footage_dir = False, icons = None):
@@ -133,30 +133,30 @@ ___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = False, is_foota
             listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_folder']))
             __ is_render_dir:
                 listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_write']))
-            elif is_footage_dir:
+            ____ is_footage_dir:
                 listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_read']))
         ______
             listwidget_item.setIcon(QtGui.QIcon(icons['icon_folder']))
             __ is_render_dir:
                 listwidget_item.setIcon(QtGui.QIcon(icons['icon_write']))
-            elif is_footage_dir:
+            ____ is_footage_dir:
                 listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_read']))
 
     __ '.' __ name:
         ext = name.split('.')[1]
-        __ ext == 'nk':
+        __ ext __ 'nk':
             ___
                 listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_nuke']))
             ______
                 listwidget_item.setIcon(QtGui.QIcon(icons['icon_nuke']))
 
-        elif ext.lower() __ IMAGE_EXT:
+        ____ ext.lower() __ IMAGE_EXT:
             ___
                 listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_img']))
             ______
                 listwidget_item.setIcon(QtGui.QIcon(icons['icon_img']))
 
-        elif ext __ VIDEO_EXT:
+        ____ ext __ VIDEO_EXT:
             ___
                 listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_video']))
             ______
@@ -178,13 +178,13 @@ ___ get_log_file():
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
-    return log_file
+    r_ log_file
 
 
 ___ get_smartLib_installed_root():
     this_dir = __.path.dirname(__file__)
     root = __.path.join(this_dir, '../', '../')
-    return __.path.normpath(root)
+    r_ __.path.normpath(root)
 
 
 ___ write_log(text, tool = 'sl'):
@@ -202,7 +202,7 @@ ___ _copy(src, dst):
         except Exception as error:
             raise OSError(error)
 
-    elif __.path.isfile(src):
+    ____ __.path.isfile(src):
         __ no. __.path.isdir(__.path.dirname(dst)):
             __.makedirs(__.path.dirname(dst))
         ___
@@ -215,16 +215,16 @@ ___ remove(path):
     __ __.path.isfile(path):
         ___
             __.remove(path)
-            return True
+            r_ True
         ______
-            return False
+            r_ False
 
-    elif __.path.isdir(path):
+    ____ __.path.isdir(path):
         ___
             shutil.rmtree(path)
-            return True
+            r_ True
         ______
-            return False
+            r_ False
 
 
 ___ set_style_sheet(widget):
@@ -239,19 +239,19 @@ ___ set_style_sheet(widget):
 ___ reveal_in_finder(path, open_file = False):
     path = __.path.normpath(path)
     ___
-        __ sys.platform == 'linux2':
+        __ ___.pl.. __ 'linux2':
             __ open_file:
                 ?.scriptOpen(path)
-                return
+                r_
             __ __.path.isfile(path):
                 path = __.path.dirname(path)
-            subprocess.Popen(['xdg-open', path])
-        elif sys.platform == 'darwin':
+            subprocess.P..(['xdg-open', path])
+        ____ ___.pl.. __ 'darwin':
             __ open_file:
                 subprocess.call(['open', '--', path])
             ____
                 subprocess.call(['open', '-R', path])
-        elif sys.platform == 'windows' or sys.platform == 'win32':
+        ____ ___.pl.. __ 'windows' or ___.pl.. __ 'win32':
             __ ':' __ path:
                 __ ':{}'.format(__.path.sep) no. __ path:
                     path = path.replace(':', ':{}'.format(__.path.sep))
@@ -259,11 +259,11 @@ ___ reveal_in_finder(path, open_file = False):
                 path = __.path.dirname(path)
             subprocess.call(['explorer', path])
     ______
-        message('Failed opening: {}'.format(path))
+        m..('Failed opening: {}'.format(path))
 
 
 ___ get_home_dir():
-    return __.path.expanduser('~')
+    r_ __.path.expanduser('~')
 
 
 ___ load_bookmarks():
@@ -278,7 +278,7 @@ ___ load_bookmarks():
     ___ child __ settings_root.find('bookmarks').findall('bookmark'):
         bookmarklist.ap..(child.text)
 
-    return bookmarklist
+    r_ bookmarklist
 
 
 ___ get_settings_xml():
@@ -294,7 +294,7 @@ ___ get_settings_xml():
     check_xml_values_exist()
     check_status_exists()
     check_xml_ok(settings_xml)
-    return settings_xml
+    r_ settings_xml
 
 
 ___ check_xml_values_exist():
@@ -337,13 +337,13 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        __ child.get(key1) == value1:
+        __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
                 print 'smartLib | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
-            return
+            r_
 
-    __ item_found == 0:
+    __ item_found __ 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
         __ key2 != '':
@@ -367,7 +367,7 @@ ___ check_xml_parent_val_exists(section):
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=True)
         write_log('settings xml added: {}'.format(section))
-    return
+    r_
 
 
 ___ check_status_exists():
@@ -379,7 +379,7 @@ ___ check_status_exists():
         ___ child __ root.find('statuslist').findall('status'):
             status_found += 1
 
-    __ status_found == 0:
+    __ status_found __ 0:
         default_status = templates.DEFAULT_STATUS
         __ root.find('statuslist') is None:
             statuslist_elem = ET.Element('statuslist')
@@ -395,7 +395,7 @@ ___ check_status_exists():
         with open(xml, 'w') as xml:
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=True)
-    return
+    r_
 
 
 ___ write_template_default(projectpath, template):
@@ -404,7 +404,7 @@ ___ write_template_default(projectpath, template):
     root = tree.getroot()
     elem_exists = False
     ___ project __ root.find('templateDefaults').findall('project'):
-        __ project.get('path') == projectpath:
+        __ project.get('path') __ projectpath:
             elem_exists = True
             project.text = template
             break
@@ -424,10 +424,10 @@ ___ load_template_default(project_path):
     tree = ET.parse(xml)
     root = tree.getroot()
     ___ project __ root.find('templateDefaults').findall('project'):
-        __ project.get('path') == project_path:
-            return project.text
+        __ project.get('path') __ project_path:
+            r_ project.text
 
-    return ''
+    r_ ''
 
 
 ___ load_status_list():
@@ -440,7 +440,7 @@ ___ load_status_list():
             data = [child.get('color'), child.text, child.get('default')]
             status_list[child.get('z-index')] = data
 
-    return status_list
+    r_ status_list
 
 
 ___ load_default_status():
@@ -449,51 +449,51 @@ ___ load_default_status():
     settings_root = settings_tree.getroot()
     with open(settings_xml, 'r'):
         ___ child __ settings_root.find('statuslist').findall('status'):
-            __ child.get('default') == '1':
-                return [child.text, child.get('color')]
+            __ child.get('default') __ '1':
+                r_ [child.text, child.get('color')]
 
 
-___ ask_dialog(message = '', process_button_text = '', color_process = '', cancel_button_text = ''):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', message, ?W...QMessageBox.NoButton, None)
+___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_button_text = ''):
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_button_text, ?W...QMessageBox.AcceptRole)
     __ color_process != '':
-        __ color_process == 'actionButton':
+        __ color_process __ 'actionButton':
             color_process = '51, 204, 255, 100'
         style = 'QPushButton {background-color: rgba(%s)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
     msg_box.addButton(cancel_button_text, ?W...QMessageBox.RejectRole)
-    __ msg_box.exec_() == ?W...QMessageBox.AcceptRole:
-        return True
+    __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
+        r_ True
     ____
-        return False
-        return
+        r_ False
+        r_
 
 
 ___ check_xml_ok(xml):
     ___
         with open(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        return True
+        r_ True
     ______
-        __ xml == get_settings_xml():
-            message = 'The smartLib settings file seems to be broken. Do you want to reset it now?'
+        __ xml __ get_settings_xml():
+            m.. = 'The smartLib settings file seems to be broken. Do you want to reset it now?'
             write_log('smartLib settings file broken.')
         ____
             meta_xml = __.path.join(__.path.dirname(xml), '../')
             meta_xml = __.path.normpath(meta_xml)
-            message = 'The meta xml for {} file seems to be broken. Do you want to reset it now?'.format(meta_xml)
+            m.. = 'The meta xml for {} file seems to be broken. Do you want to reset it now?'.format(meta_xml)
             write_log('The meta xml for {} file broken.'.format(meta_xml))
-        reset_xml = ask_dialog(message=message, process_button_text='reset', color_process='actionButton', cancel_button_text='Cancel')
+        reset_xml = ask_dialog(m..=m.., process_button_text='reset', color_process='actionButton', cancel_button_text='Cancel')
         __ reset_xml:
             __ __.path.isfile(xml):
                 __.remove(xml)
                 get_settings_xml()
-        return False
+        r_ False
 
 
 ___ load_settings():
@@ -513,7 +513,7 @@ ___ load_settings():
         ____
             settings['current_{}'.format(navi.get('name'))] = ''
 
-    return settings
+    r_ settings
 
 
 ___ center_window(window):
@@ -535,14 +535,14 @@ ___ prettyprint(elem, level = 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
 ___ write_xml(xml, root, tree):
     prettyprint(root)
     tree.write(xml, encoding='utf-8', xml_declaration=True)
-    return True
+    r_ True
 
 
 ___ collect_nuke_scripts_no_ignore(path):
@@ -556,25 +556,25 @@ ___ collect_nuke_scripts_no_ignore(path):
     ___ root, dirs, files __ __.walk(path):
         ___ name __ files:
             file = __.path.join(root, name)
-            __ __.path.splitext(file)[1] == '.nk':
+            __ __.path.splitext(file)[1] __ '.nk':
                 ignore_count = 0
                 ___ ignore __ ignore_list:
                     __ ignore.strip() __ file:
                         ignore_count += 1
 
-                __ ignore_count == 0:
+                __ ignore_count __ 0:
                     nuke_script = __.path.basename(file)
                     nuke_script_name = __.path.splitext(nuke_script)[0]
                     nuke_scripts[file] = nuke_script_name
 
     nuke_scripts = sorted(nuke_scripts.items(), key=lambda x: x[1])
     nuke_scripts.reverse()
-    return nuke_scripts
+    r_ nuke_scripts
 
 
 ___ open_nukescript(name, nuke_scripts):
     ___ script __ nuke_scripts:
-        __ script[1] == name:
+        __ script[1] __ name:
             ?.scriptOpen(script[0])
 
 
@@ -584,7 +584,7 @@ ___ write_location(location, value):
     settings_root = settings_tree.getroot()
     with open(settings_xml, 'r'):
         ___ child __ settings_root.find('navigation').findall('navi'):
-            __ child.get('name') == location:
+            __ child.get('name') __ location:
                 child.text = value
 
     with open(settings_xml, 'w') as xml:
@@ -593,38 +593,38 @@ ___ write_location(location, value):
 
 
 ___ open_website(url):
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         __.startfile(url)
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
             show_message_box(None, msg)
 
-    return
+    r_
 
 
 ___ set_preview_image(delete_nodes = True):
     __ no. osl.cl():
-        return
+        r_
     preview_image_width = 500
     ___
         sel = ?.sN__
     ______
-        ?.message('Please select a node to create a preview image.')
-        return
+        ?.m..('Please select a node to create a preview image.')
+        r_
 
-    __ sel.Class() == 'Viewer':
-        return
-    __ get_script_name() == '' or get_script_name() == 'Root':
-        ?.message("Your nukescript hasn't been saved, yet. Please save your script first.")
-        return
+    __ sel.Class() __ 'Viewer':
+        r_
+    __ get_script_name() __ '' or get_script_name() __ 'Root':
+        ?.m..("Your nukescript hasn't been saved, yet. Please save your script first.")
+        r_
     root_dir_docs = get_dir_docs_current_nukescript()
-    __ root_dir_docs == '':
-        return
+    __ root_dir_docs __ '':
+        r_
     reformat = ?.createNode('Reformat', inpanel=False)
     reformat.setInput(0, sel)
     reformat.setXYpos(sel.xpos(), sel.ypos() + 50)
@@ -655,8 +655,8 @@ ___ set_preview_image(delete_nodes = True):
 ___ get_dir_docs_current_nukescript():
     up_level = 7
     current_script_dir = __.path.dirname(?.root().name())
-    __ current_script_dir == 'Root' or current_script_dir == '':
-        return ''
+    __ current_script_dir __ 'Root' or current_script_dir __ '':
+        r_ ''
     root_dir_docs = ''
     dirs = []
     dirs.ap..(__.path.normpath(current_script_dir))
@@ -668,11 +668,11 @@ ___ get_dir_docs_current_nukescript():
         dir_content = __.listdir(dirs[i])
         __ DIR_DOCS __ dir_content:
             root_dir_docs = __.path.normpath(__.path.join(dirs[i], DIR_DOCS))
-            return root_dir_docs
+            r_ root_dir_docs
 
-    __ root_dir_docs == '':
+    __ root_dir_docs __ '':
         write_log("Wasn't able to find the _docs directory for the shot. Recursion depth for the shot is too high.")
-        return
+        r_
 
 
 ___ get_meta_xml(path):
@@ -682,7 +682,7 @@ ___ get_meta_xml(path):
             __ no. __.path.isdir(__.path.dirname(metaxml)):
                 __.makedirs(__.path.dirname(metaxml))
         ______
-            return
+            r_
 
         __ no. __.path.isfile(metaxml):
             ___
@@ -693,7 +693,7 @@ ___ get_meta_xml(path):
                 write_log("Couldn't write meta xml template at: {}".format(metaxml))
 
         check_meta_xml_values_exist(metaxml)
-        return metaxml
+        r_ metaxml
 
 
 ___ check_meta_xml_values_exist(metaxml):
@@ -707,13 +707,13 @@ ___ check_meta_xml_value_exists(metaxml_path, parent, section, key1, value1, tex
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        __ child.get(key1) == value1:
+        __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
                 print 'smartLib | metaxml exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
-            return
+            r_
 
-    __ item_found == 0:
+    __ item_found __ 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
         __ key2 != '':
@@ -726,10 +726,10 @@ ___ check_meta_xml_value_exists(metaxml_path, parent, section, key1, value1, tex
         write_log('settings metaxml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
-___ message(message):
+___ m..(m..):
     msg_box = ?W...QMessageBox()
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-    msg_box.setText(message)
+    msg_box.setText(m..)
     msg_box.raise_()
     msg_box.exec_()
 
@@ -740,7 +740,7 @@ ___ dialog_set_preview_image(smartlib):
     dialog.setWindowIcon(QtGui.QIcon(load_icons()['icon_logo']))
     dialog.sQT..('choose image file')
     dialog.setNameFilter('jpg files(*.jpg)')
-    __ dialog.exec_() == ?W...QDialog.Accepted:
+    __ dialog.exec_() __ ?W...QDialog.Accepted:
         input_image = dialog.selectedFiles()[0]
         dest = __.path.join(smartlib.current_shot_widget.path, DIR_DOCS, '__preview.jpg')
         __ no. __.path.isdir(__.path.dirname(dest)):
@@ -756,22 +756,22 @@ ___ save_image_scaled(src, dest):
     ___
         pixmap = QtGui.QPixmap(img.scaledToWidth(500))
         pixmap.save(dest)
-        return True
+        r_ True
     ______
         write_log('Cannot create image scaled.')
-        return False
+        r_ False
 
 
 ___ get_script_name():
     script = ?.root().name()
     script_name = __.path.basename(script)
-    return __.path.splitext(script_name)[0]
+    r_ __.path.splitext(script_name)[0]
 
 
 ___ setup_renderpath():
     dir_docs_current_nukescript = get_dir_docs_current_nukescript()
     __ dir_docs_current_nukescript __ (None, ''):
-        return None
+        r_ None
     ____
         project_root = __.path.dirname(dir_docs_current_nukescript)
         metaxml = __.path.join(dir_docs_current_nukescript, 'meta.xml')
@@ -780,10 +780,10 @@ ___ setup_renderpath():
             meta_tree = ET.parse(metaxml)
             meta_root = meta_tree.getroot()
             ___ child __ meta_root.find('notes').findall('note'):
-                __ child.get('name') == 'renderpath':
+                __ child.get('name') __ 'renderpath':
                     ___
                         __ child.text.strip() != '':
-                            __ child.get('loc') == 'global':
+                            __ child.get('loc') __ 'global':
                                 render_dir = '{}'.format(child.text)
                             ____
                                 render_dir = '{}{}'.format(project_root, child.text)
@@ -797,7 +797,7 @@ ___ setup_renderpath():
                     ______
                         pass
 
-        return None
+        r_ None
 
 
 ___ load_templates():
@@ -808,7 +808,7 @@ ___ load_templates():
         __ __.path.isdir(element) and item != DIR_DOCS:
             templates.ap..(item)
 
-    return templates
+    r_ templates
 
 
 ___ get_render_path(xml):
@@ -818,11 +818,11 @@ ___ get_render_path(xml):
             meta_root = meta_tree.getroot()
         ______
             write_log('Unable to parse metaxml.')
-            return
+            r_
 
         ___ child __ meta_root.find('notes').findall('note'):
-            __ child.get('name') == 'renderpath':
-                return child.text
+            __ child.get('name') __ 'renderpath':
+                r_ child.text
 
     ____
         write_log("Metaxml doesn't exist in: {}".format(xml))
@@ -846,18 +846,18 @@ ___ rename_item(sender, path_orig, window):
             __ '.' no. __ name:
                 ext = __.path.splitext(__.path.basename(path_orig))[1]
                 new_name_full_path = '{}{}'.format(new_name_full_path, ext)
-        __ sender == 'smartlibshotwindow':
+        __ sender __ 'smartlibshotwindow':
             __.rename(path_orig, new_name_full_path)
             window.populate_tree()
-        __ sender == 'shot_templates':
+        __ sender __ 'shot_templates':
             __.rename(path_orig, new_name_full_path)
             window.load_shot_template_in_tree()
-        __ sender == 'saved_projects':
+        __ sender __ 'saved_projects':
             settingsXML = get_settings_xml()
             settingstree = ET.parse(settingsXML)
             settingsroot = settingstree.getroot()
             ___ child __ settingsroot.find('projectslist').findall('project'):
-                __ child.text == path_orig:
+                __ child.text __ path_orig:
                     child.set('name', name)
 
             write_xml(settingsXML, settingsroot, settingstree)
@@ -876,36 +876,36 @@ ___ force_create_render_dir():
 
 
 ___ get_finder_name():
-    __ sys.platform == 'darwin':
-        return 'finder'
+    __ ___.pl.. __ 'darwin':
+        r_ 'finder'
     ____
-        return 'explorer'
+        r_ 'explorer'
 
 
 ___ import_from_footage_directory():
     dir_docs = get_dir_docs_current_nukescript()
     ___
-        __ dir_docs == '':
+        __ dir_docs __ '':
             raise ValueError
         meta_xml = __.path.join(dir_docs, 'meta.xml')
         __ no. __.path.isfile(meta_xml):
             raise ValueError
         metatree = ET.parse(meta_xml)
         ___ note __ metatree.find('notes').findall('note'):
-            __ note.get('name') == 'footagepath':
+            __ note.get('name') __ 'footagepath':
                 shot_root = __.path.normpath(__.path.join(dir_docs, '../'))
                 shot_root = shot_root.replace(__.path.sep, '/')
                 __ note.text is no. None:
-                    __ note.get('loc') == 'global':
+                    __ note.get('loc') __ 'global':
                         start_path = note.text
-                    __ note.get('loc') == 'local':
-                        __ note.text[0] == __.path.sep or note.text[0] == '/':
+                    __ note.get('loc') __ 'local':
+                        __ note.text[0] __ __.path.sep or note.text[0] __ '/':
                             note.text = note.text[1:]
                         __ note.text and note.text != '' and note.text != ' ':
                             start_path = __.path.join(shot_root, note.text)
                         ____
                             start_path = shot_root
-                elif note.text is None or note.text == '' or note.text == ' ':
+                ____ note.text is None or note.text __ '' or note.text __ ' ':
                     start_path = shot_root
                 __ start_path[-1:] != '/':
                     start_path += '/'
@@ -915,7 +915,7 @@ ___ import_from_footage_directory():
     ______
         pass
 
-    return
+    r_
 
 
 ___ load_footage(defaulttype = 'Read', path = ''):
@@ -931,7 +931,7 @@ ___ load_footage(defaulttype = 'Read', path = ''):
             default_dir = sel_node['file'].value()
         __ no. default_dir and 'proxy' __ sel_node.knobs():
             default_dir = sel_node['proxy'].value()
-    __ default_dir == '':
+    __ default_dir __ '':
         default_dir = None
     files = ?.getClipname('______ from footage directory', default=path, multiple=True)
     __ files != None:
@@ -959,9 +959,9 @@ ___ load_footage(defaulttype = 'Read', path = ''):
                 ___
                     ?.createNode(nodeType, 'file {' + f + '}', inpanel=use_in_panel)
                 except RuntimeError as err:
-                    ?.message(err.args[0])
+                    ?.m..(err.args[0])
 
-    return
+    r_
 
 
 ___ show_custom_directory_window(shot_root, which, sml = None):
@@ -997,7 +997,7 @@ ___ create_new_directory(widget, list_):
                 widget.dirlist[dir_path_full] = diritem
                 widget.allitems[dir_path_full] = diritem
             ____
-                message("The directory '{}' already exists. The folder wasn't created".format(dir_name))
+                m..("The directory '{}' already exists. The folder wasn't created".format(dir_name))
 
         dir_item_list = dir_name.split(',')
         ___ dir_item __ dir_item_list:
@@ -1006,14 +1006,14 @@ ___ create_new_directory(widget, list_):
 
 
 ___ error_loading(path, sml):
-    message = 'Cannot find the bookmark:\n{}\n\n No such directory.Do you like to delete it from the bookmarks?'.format(path)
-    remove_bookmark = ask_dialog(message=message, process_button_text='Delete from bookmarks', color_process='45,0,0', cancel_button_text='Cancel')
+    m.. = 'Cannot find the bookmark:\n{}\n\n No such directory.Do you like to delete it from the bookmarks?'.format(path)
+    remove_bookmark = ask_dialog(m..=m.., process_button_text='Delete from bookmarks', color_process='45,0,0', cancel_button_text='Cancel')
     __ remove_bookmark:
         settingsXML = get_settings_xml()
         settingstree = ET.parse(settingsXML)
         settingsroot = settingstree.getroot()
         ___ child __ settingsroot.find('bookmarks').findall('bookmark'):
-            __ child.text == path:
+            __ child.text __ path:
                 settingsroot.find('bookmarks').remove(child)
 
         write_xml(settingsXML, settingsroot, settingstree)
@@ -1032,12 +1032,12 @@ ___ get_project_information(project_full_path):
                     tree = ET.parse(metaxml)
                     root = tree.getroot()
                     ___ child __ root.find('notes').findall('note'):
-                        __ child.get('name') == 'status':
+                        __ child.get('name') __ 'status':
                             status = child.text
-                            __ status is None or status == '':
+                            __ status is None or status __ '':
                                 status = ''
                             shot_info.ap..(status)
-                        __ child.get('name') == 'shotnotes':
+                        __ child.get('name') __ 'shotnotes':
                             shot_info.ap..(child.text)
 
             thumbnail = __.path.join(shot_full_path, '.docs', '__preview.jpg')
@@ -1049,7 +1049,7 @@ ___ get_project_information(project_full_path):
                 shot_info.ap..('file:////{}'.format(default_image))
             shot_information[shot] = shot_info
 
-    return shot_information
+    r_ shot_information
 
 
 ___ build_html(html_path, project):
@@ -1076,7 +1076,7 @@ ___ build_html(html_path, project):
         with open(html_path, 'a') as tmp_html:
             bg_color = '255,255,255'
             ___ status __ shot_status_list:
-                __ key == status[1]:
+                __ key __ status[1]:
                     bg_color = status[0]
 
             __ status_dict[key] != 0:
@@ -1092,7 +1092,7 @@ ___ build_html(html_path, project):
         with open(html_path, 'a') as tmp_html:
             bg_color = '255,255,255'
             ___ status __ shot_status_list:
-                __ key == status[1]:
+                __ key __ status[1]:
                     bg_color = status[0]
 
             __ status_dict[key] != 0:
@@ -1115,17 +1115,17 @@ ___ build_html(html_path, project):
             shot_thumbnail = shot_information[key][2]
             color = ''
             ___ status __ shot_status_list:
-                __ shot_status == status[1]:
+                __ shot_status __ status[1]:
                     color = status[0]
 
-            __ color == '':
+            __ color __ '':
                 color = load_default_status()[1]
                 shot_status = load_default_status()[0]
             tmp_html.write('\n            <div class=\'shot\' style="display: block; height:auto; margin: 20px; border-bottom: 1px solid #cccccc; padding: 20px;">\n                <div class=\'shot_thumbnail\' style=\'display: inline-block; padding-right: 30px;\'>\n                    <img src=\'{thumb}\' alt=\'\' title=\'\' width=\'200\' />\n                </div>\n                <div class=\'shot_details\' style=\'display: inline-block; vertical-align: top;\'>\n                    <span style=\'display: inline-block; font-size: 14pt; font-weight:bold;\'>{shotname}</span> <span style=\'background-color: rgb({color}); padding: 2px 10px; position: relative; top: -2px;\'>{status}</span> <br />\n                    <span style=\'font-size: 8pt;\'>{notes}</span>\n                </div>\n            </div>\n            <div style=\'clear:both;\'></div>\n'.format(thumb=shot_thumbnail, shotname=key, color=color, status=shot_status, notes=shot_notes))
 
     with open(html_path, 'a') as tmp_html:
         tmp_html.write('\n        </div>\n    </div>\n</body>\n</html>\n')
-        return html_path
+        r_ html_path
 
 
 ___ build_pdf(build_path, project, output_filename = '', parent = None):
@@ -1134,7 +1134,7 @@ ___ build_pdf(build_path, project, output_filename = '', parent = None):
     except Exception:
         msg = "Error creating project report. The needed module 'QtWebKit' is not more supported in this Nuke version. Please use Nuke10 to create a project report."
         show_message_box(parent, msg)
-        return
+        r_
 
     debug = False
     ___
@@ -1160,9 +1160,9 @@ ___ build_pdf(build_path, project, output_filename = '', parent = None):
             except Exception:
                 pass
 
-        return 'created_pdf'
+        r_ 'created_pdf'
     except Exception as e:
-        return e
+        r_ e
 
 
 ___ get_sequences_sets(dirpath):
@@ -1185,7 +1185,7 @@ ___ get_sequences_sets(dirpath):
             sequence = sequence.replace(__.path.sep, '/')
             sequences.ap..(sequence)
         ____
-            __ le.(filename_nodigits) == le.(filename_noext) and file no. __ IGNORE and file no. __ sequences:
+            __ le.(filename_nodigits) __ le.(filename_noext) and file no. __ IGNORE and file no. __ sequences:
                 sequence = __.path.normpath(__.path.join(dirpath, file))
                 sequence = sequence.replace(__.path.sep, '/')
                 sequences.ap..(sequence)
@@ -1196,7 +1196,7 @@ ___ get_sequences_sets(dirpath):
                 sequence = sequence.replace(__.path.sep, '/')
                 sequences.ap..(sequence)
 
-    return sequences
+    r_ sequences
 
 
 ___ image_sequence_resolve_all(filepath):
@@ -1207,8 +1207,8 @@ ___ image_sequence_resolve_all(filepath):
     __ i..(filepath, bytes):
         digits = digits.encode()
     filename_nodigits = filename_noext.rstrip(digits)
-    __ le.(filename_nodigits) == le.(filename_noext):
-        return __.path.join(basedir, filename)
+    __ le.(filename_nodigits) __ le.(filename_noext):
+        r_ __.path.join(basedir, filename)
     files = __.listdir(basedir)
     image_sequence_list = [ __.path.join(f) ___ f __ files __ f.startswith(filename_nodigits) and f.endswith(ext) and f[le.(filename_nodigits):-le.(ext) __ ext ____ -1].isdigit() ]
     seq_start = image_sequence_list[0]
@@ -1220,7 +1220,7 @@ ___ image_sequence_resolve_all(filepath):
     seq_preview = '{}[{}-{}]{}'.format(filename_nodigits, seq_start, seq_end, ext)
     seq_full_path = __.path.join(basedir, seq_preview)
     seq_full_path = seq_full_path.replace(__.path.sep, '/')
-    return seq_full_path
+    r_ seq_full_path
 
 
 ___ collapse_sequences(dirpath):
@@ -1229,7 +1229,7 @@ ___ collapse_sequences(dirpath):
     dirpath = dirpath.replace(__.path.sep, '/')
     ___ root, dirs, seq __ __.walk(dirpath):
         sequence_sub_sets = get_sequences_sets(root)
-        __ __.path.basename(root) == DIR_DOCS:
+        __ __.path.basename(root) __ DIR_DOCS:
             continue
         ___ sequence_item __ sequence_sub_sets:
             sequence_item = __.path.normpath(sequence_item)
@@ -1250,30 +1250,30 @@ ___ collapse_sequences(dirpath):
                 item = item.replace(__.path.sep, '/')
                 sequences_in_dir.ap..(item)
 
-    return sequences_in_dir
+    r_ sequences_in_dir
 
 
 ___ insert_shot_notes():
     shot_root = get_dir_docs_current_nukescript()
-    __ shot_root == '' or shot_root is None:
-        return
+    __ shot_root __ '' or shot_root is None:
+        r_
     ____
         shot_root = shot_root.replace(DIR_DOCS, '')
         meta_xml = get_meta_xml(shot_root)
         __ no. __.path.isfile(meta_xml):
-            return
+            r_
         meta_tree = ET.parse(meta_xml)
         meta_root = meta_tree.getroot()
         shot_notes = ''
         ___ child __ meta_root.find('notes').findall('note'):
-            __ child.get('name') == 'shotnotes':
+            __ child.get('name') __ 'shotnotes':
                 shot_notes = child.text
 
         __ shot_notes != '':
             sticky = ?.createNode('StickyNote')
             sticky['label'].sV..(shot_notes)
             sticky['note_font_size'].sV..(20)
-        return
+        r_
 
 
 ___ show_edit_template_script(window, path):
@@ -1281,7 +1281,7 @@ ___ show_edit_template_script(window, path):
     script_values = get_script_values(path, window)
     set_default_format = False
     __ 'format' __ script_values:
-        __ script_values['format'] == '0':
+        __ script_values['format'] __ '0':
             set_default_format = True
     ____
         set_default_format = True
@@ -1302,7 +1302,7 @@ ___ show_edit_template_script(window, path):
     ets = osl.EditTemplateScript(path, script_values)
     ets.s__
     ets.raise_()
-    return ets
+    r_ ets
 
 
 ___ get_script_values(path, window):
@@ -1310,16 +1310,16 @@ ___ get_script_values(path, window):
     __ no. __.path.isfile(path):
         msg = "The file '{}' does not exist".format(path)
         show_message_box(window, msg)
-        return {}
+        r_ {}
     __ __.path.splitext(path)[1] != '.nk':
         msg = "The file '{}' is no nuke script.".format(path)
         show_message_box(window, msg)
-        return {}
+        r_ {}
     this_dir = __.path.dirname(__file__)
     processor = __.path.join(this_dir, '../', 'trm', 'scripts.py')
     processor = __.path.normpath(processor)
     cmd = '"{nuke_exe}" -i -t "{scriptProcess}" get "{path}" " "'.format(nuke_exe=__.path.normpath(?.env['ExecutablePath']), scriptProcess=processor, path=path)
-    process = subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    process = subprocess.P..(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     process.wait()
     ___ line __ process.stdout:
         line = str(line.rstrip())
@@ -1329,7 +1329,7 @@ ___ get_script_values(path, window):
             val = str(script_value.split(':')[1])
             script_values[key] = val
 
-    return script_values
+    r_ script_values
 
 
 ___ set_script_values(path, script_values, *args):
@@ -1340,7 +1340,7 @@ ___ set_script_values(path, script_values, *args):
     processor = __.path.join(this_dir, '../', 'trm', 'scripts.py')
     processor = __.path.normpath(processor)
     cmd = '"{nuke_exe}" -i -t "{scriptProcess}" set "{path}" {vals}'.format(nuke_exe=__.path.normpath(?.env['ExecutablePath']), scriptProcess=processor, path=path, vals=script_vals)
-    process = subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    process = subprocess.P..(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     process.wait()
     found_end = 0
     ___ line __ process.stdout:
@@ -1350,35 +1350,35 @@ ___ set_script_values(path, script_values, *args):
         __ '@script:set_end' __ line:
             found_end += 1
 
-    __ found_end == 1:
-        return True
+    __ found_end __ 1:
+        r_ True
     ____
-        return False
+        r_ False
 
 
 ___ get_user(metaxml, *args):
     __ no. __.path.isfile(metaxml):
-        return ''
+        r_ ''
     metatree = ET.parse(metaxml)
     metaroot = metatree.getroot()
     with open(metaxml, 'r') as xml:
         ___ child __ metaroot.find('notes').findall('note'):
-            __ child.get('name') == 'user':
-                return child.text
+            __ child.get('name') __ 'user':
+                r_ child.text
 
 
 ___ set_user(user, dir_docs = ''):
-    __ dir_docs == '':
+    __ dir_docs __ '':
         dir_docs = get_dir_docs_current_nukescript()
     __ dir_docs:
         meta_xml = __.path.join(dir_docs, 'meta.xml')
         __ no. __.path.isfile(meta_xml):
-            return
+            r_
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
         with open(meta_xml, 'w') as xml:
             ___ child __ metaroot.find('notes').findall('note'):
-                __ child.get('name') == 'user':
+                __ child.get('name') __ 'user':
                     child.text = user
 
             prettyprint(metaroot)
@@ -1390,12 +1390,12 @@ ___ load_tooltips(parent, section, *args):
     tooltips_file = __.path.join(this_dir, '../', 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
-        return
+        r_
     with open(tooltips_file) as json_file:
         ttdata = json.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
-            __ t['tt'] == widget.property('tt'):
+            __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
 
 
@@ -1453,7 +1453,7 @@ c_ CustomPath(?W...?W..):
         dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
         dialog.setFileMode(?W...QFileDialog.Directory)
         dialog.setOption(?W...QFileDialog.ShowDirsOnly)
-        __ dialog.exec_() == ?W...QDialog.Accepted:
+        __ dialog.exec_() __ ?W...QDialog.Accepted:
             input_path.setText(dialog.selectedFiles()[0])
 
     ___ set_custom_path
@@ -1464,29 +1464,29 @@ c_ CustomPath(?W...?W..):
             __ input_path.t.. != '':
                 msg = "Failed setting up the path '{}' as custom {} directory. Please choose a different path.".format(input_path.t.., which)
                 show_message_box(self, msg)
-                return
+                r_
 
         meta_xml = get_meta_xml(shot_root)
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
         with open(meta_xml, 'w') as xml:
             ___ child __ metaroot.find('notes').findall('note'):
-                __ which == 'render':
-                    __ child.get('name') == 'renderpath':
+                __ which __ 'render':
+                    __ child.get('name') __ 'renderpath':
                         child.text = input_path.t..
                         child.set('loc', 'global')
-                        __ input_path.t.. == '':
+                        __ input_path.t.. __ '':
                             child.set('loc', 'local')
-                elif which == 'footage':
-                    __ child.get('name') == 'footagepath':
+                ____ which __ 'footage':
+                    __ child.get('name') __ 'footagepath':
                         child.text = input_path.t..
                         child.set('loc', 'global')
-                        __ input_path.t.. == '':
+                        __ input_path.t.. __ '':
                             child.set('loc', 'local')
 
             prettyprint(metaroot)
             metatree.write(xml, encoding='utf-8', xml_declaration=True)
-        __ input_path.t.. == '':
+        __ input_path.t.. __ '':
             msg = 'Successfully cleared the custom {} path'.format(which)
             show_message_box(self, msg)
         ____
@@ -1495,27 +1495,27 @@ c_ CustomPath(?W...?W..):
         c__
         __ sml is no. None:
             ___
-                __ which == 'render':
+                __ which __ 'render':
                     sml.current_shot_widget.set_renderpath(input_path.text())
-                elif which == 'footage':
+                ____ which __ 'footage':
                     sml.current_shot_widget.set_footagepath(input_path.text())
                 sml.current_shot_widget.refresh()
             except Exception as e:
                 pass
 
-        return
+        r_
 
     ___ load_custom_path(self, which):
         meta_xml = get_meta_xml(shot_root)
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
         ___ child __ metaroot.find('notes').findall('note'):
-            __ child.get('name') == '{}path'.format(which):
-                __ child.get('loc') and child.get('loc') == 'global':
-                    return child.text
+            __ child.get('name') __ '{}path'.format(which):
+                __ child.get('loc') and child.get('loc') __ 'global':
+                    r_ child.text
                 ____
-                    return ''
+                    r_ ''
 
     ___ keyPressEvent(self, event):
-        __ event.key() == QtCore.Qt.Key_Escape:
+        __ event.key() __ QtCore.Qt.Key_Escape:
             c__

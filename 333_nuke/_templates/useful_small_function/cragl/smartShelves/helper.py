@@ -1,7 +1,7 @@
 # Embedded file name: /media/psf/crypto/_GLOBALS/NUKE/python/cragl/__PREPAREFORRELEASE/smartShelves_v2.3/smartShelves/helper.py
 ______ __
 ______ subprocess
-______ sys
+______ ___
 ______ time
 ______ xml.etree.ElementTree as ET
 ______ ?
@@ -17,7 +17,7 @@ ___ load_icons():
     this_dir = __.path.dirname(__file__)
     dir_icon = __.path.join(this_dir, 'icons')
     dir_icon = __.path.normpath(dir_icon)
-    return {'icon_logo': __.path.join(dir_icon, 'logo.png'),
+    r_ {'icon_logo': __.path.join(dir_icon, 'logo.png'),
      'about': __.path.join(dir_icon, 'about.jpg'),
      'icon_folder': __.path.join(dir_icon, 'folder.png'),
      'icon_edit': __.path.join(dir_icon, 'edit.png'),
@@ -31,45 +31,45 @@ ___ load_icons():
 
 
 ___ get_default_icon_path():
-    return [ dir_ ___ dir_ __ ?.pluginPath() __ '/plugins/icons' __ dir_ or '\\plugins\\icons' __ dir_ ][0]
+    r_ [ dir_ ___ dir_ __ ?.pluginPath() __ '/plugins/icons' __ dir_ or '\\plugins\\icons' __ dir_ ][0]
 
 
-___ show_message_box(window, message):
-    ?W...QMessageBox().information(window, 'information', message)
+___ show_message_box(window, m..):
+    ?W...QMessageBox().information(window, 'information', m..)
 
 
 ___ get_installed_root_dir():
     this_dir = __.path.join(__.path.dirname(__file__))
     root = __.path.join(this_dir, '../', '../')
-    return __.path.normpath(root)
+    r_ __.path.normpath(root)
 
 
 ___ get_smartshelves_private_dir():
     dir_ = __.path.join(__.path.expanduser('~'), '.cragl', 'smartShelves')
     __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
-    return dir_
+    r_ dir_
 
 
 ___ get_smartshelves_public_dir():
     dir_ = __.path.join(__.path.expanduser('~'), 'cragl', 'smartShelves')
     __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
-    return dir_
+    r_ dir_
 
 
 ___ open_website(url):
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         __.startfile(url)
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             show_message_box(None, 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url))
 
-    return
+    r_
 
 
 ___ get_log_file():
@@ -81,7 +81,7 @@ ___ get_log_file():
         with open(log_file, 'w') as lf:
             log_template = templates.LOG
             lf.write(log_template)
-    return log_file
+    r_ log_file
 
 
 ___ write_log(text, tool = 'sh'):
@@ -89,9 +89,9 @@ ___ write_log(text, tool = 'sh'):
     ___
         with open(get_log_file(), 'a') as s:
             s.write('{}: {} {}\n'.format(logtime, tool, text))
-        return True
+        r_ True
     ______
-        return False
+        r_ False
 
 
 ___ set_style_sheet(widget):
@@ -101,14 +101,14 @@ ___ set_style_sheet(widget):
     __ __.path.isfile(styles_nuke):
         with open(styles_nuke) as file_:
             widget.setStyleSheet(file_.read())
-        return styles_nuke
+        r_ styles_nuke
     ____
-        return
-        return
+        r_
+        r_
 
 
 ___ get_settings_xml():
-    return __.path.join(get_smartshelves_private_dir(), 'settings.xml')
+    r_ __.path.join(get_smartshelves_private_dir(), 'settings.xml')
 
 
 ___ load_settings():
@@ -119,7 +119,7 @@ ___ load_settings():
     ___ setting __ root.find('settings').findall('setting'):
         settings[setting.get('name')] = setting.text
 
-    return settings
+    r_ settings
 
 
 ___ paste_script(name):
@@ -127,9 +127,9 @@ ___ paste_script(name):
         path = __.path.join(plugin_path, '{}.nk'.format(name))
         __ __.path.isfile(path):
             ?.nodePaste(path)
-            return
+            r_
 
-    ?.message("Could not find nk file for '{}'. Please make sure that it is saved somewhere in your plugin paths.".format(name))
+    ?.m..("Could not find nk file for '{}'. Please make sure that it is saved somewhere in your plugin paths.".format(name))
 
 
 ___ add_to_lock(pw):
@@ -137,9 +137,9 @@ ___ add_to_lock(pw):
         __.environ[_LOCK_LIST] = ''
     unlocked = [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
-        return
+        r_
     __ no. pw:
-        return
+        r_
     unlocked.ap..(pw)
     __.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)
 

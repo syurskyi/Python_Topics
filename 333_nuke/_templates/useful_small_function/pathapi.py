@@ -8,8 +8,8 @@ ___ project(path):
 	"""
 	p = re.findall('/project/(\w+)', path.replace("\\","/"))
 	__ le.(p) != 1:
-		return "", "경로에서 project 정보를 가지고 올 수 없습니다."
-	return p[0], None
+		r_ "", "경로에서 project 정보를 가지고 올 수 없습니다."
+	r_ p[0], None
 
 ___ seq(path):
 	"""
@@ -17,8 +17,8 @@ ___ seq(path):
 	"""
 	p = re.findall('/shot/(\w+)', path.replace("\\","/"))
 	__ le.(p) != 1:
-		return "", "경로에서 seq 정보를 가지고 올 수 없습니다."
-	return p[0], None
+		r_ "", "경로에서 seq 정보를 가지고 올 수 없습니다."
+	r_ p[0], None
 
 ___ shot(path):
 	"""
@@ -26,8 +26,8 @@ ___ shot(path):
 	"""
 	p = re.findall('/shot/\w+/(\w+)', path.replace("\\","/"))
 	__ le.(p) != 1:
-		return "", "경로에서 shot 정보를 가지고 올 수 없습니다."
-	return p[0], None
+		r_ "", "경로에서 shot 정보를 가지고 올 수 없습니다."
+	r_ p[0], None
 
 ___ task(path):
 	"""
@@ -35,8 +35,8 @@ ___ task(path):
 	"""
 	p = re.findall('/shot/\w+/\w+/(\w+)', path.replace("\\","/"))
 	__ le.(p) != 1:
-		return "", "경로에서 task 정보를 가지고 올 수 없습니다."
-	return p[0], None
+		r_ "", "경로에서 task 정보를 가지고 올 수 없습니다."
+	r_ p[0], None
 
 ___ ver(path):
 	"""
@@ -44,8 +44,8 @@ ___ ver(path):
 	"""
 	p = re.findall('_v(\d+)', path.replace("\\","/"))
 	__ le.(p) != 1:
-		return -1, "경로에서 task 정보를 가지고 올 수 없습니다."
-	return int(p[0]), None
+		r_ -1, "경로에서 task 정보를 가지고 올 수 없습니다."
+	r_ int(p[0]), None
 
 ___ seqnum(path):
 	"""
@@ -53,6 +53,6 @@ ___ seqnum(path):
 	"""
 	p = re.findall('\.(\d+)\.', path.replace("\\","/"))
 	__ le.(p) != 1:
-		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
-	return int(p[0]), None
+		r_ -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
+	r_ int(p[0]), None
 

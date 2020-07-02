@@ -1,5 +1,5 @@
 ______ nuke
-______ sys
+______ ___
 ______ __
 ______ webbrowser
 ______ subprocess
@@ -17,7 +17,7 @@ ___ openFileReturnArr(file):
         line=line.replace("\n", "")
         arr.append(line)
     fobj.c__
-    return arr
+    r_ arr
 
 ___ getBackupSettings(val, path):
     '''
@@ -36,21 +36,21 @@ ___ getBackupSettings(val, path):
             valArr=val.split("=")
             ___
                 val=valArr[1] #value
-                __ val=="":
+                __ val__"":
                     val=" "
-                elif val=="NONE":
+                ____ val__"NONE":
                     val=" "
             ______
                 val="---"
         i+=1
-    return val
+    r_ val
 
 ___ openFolder(path):
-    __ sys.platform == 'darwin':
+    __ ___.pl.. __ 'darwin':
         subprocess.check_call(['open', '--', path])
-    elif sys.platform == 'linux2': 
+    ____ ___.pl.. __ 'linux2':
         subprocess.check_call(['gnome-open', '--', path])
-    elif sys.platform == 'windows':
+    ____ ___.pl.. __ 'windows':
         subprocess.check_call(['explorer', path])
 
 ___ help():

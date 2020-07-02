@@ -8,9 +8,9 @@ ___ reorderPoints(array):
     ___ i __ ra..(0, le.(array), 3):
         v = ?.math.Vector3(array[i], array[i+1], array[i+2])
         data.ap..(v)
-    return data
+    r_ data
 
-geo, cam, scn = ?.selectedNodes()
+geo, cam, scn = ?.sN..
 pynode = ?.nodes.PythonGeo(inputs=[geo])
 geoList = pynode.knob('geo').getGeometry()
 points = []

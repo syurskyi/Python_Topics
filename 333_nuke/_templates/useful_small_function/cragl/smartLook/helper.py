@@ -3,12 +3,12 @@ ______ time
 ______ hashlib
 ______ random
 ______ __
-______ sys
+______ ___
 ______ subprocess
 ______ urllib
 ______ xml.etree.ElementTree as ET
 ______ collections
-______ platform
+______ pl..
 ______ struct
 ______ imghdr
 ______ json
@@ -29,7 +29,7 @@ ___ load_icons(*args):
     dir_icon = __.path.join(this_dir, '../', 'icons')
     dir_icon = __.path.normpath(dir_icon)
     join = __.path.join
-    return {'about': join(dir_icon, 'about.jpg'),
+    r_ {'about': join(dir_icon, 'about.jpg'),
      'icon_logo': join(dir_icon, 'logo.png'),
      'icon_logo_grey': join(dir_icon, 'logo_grey.png'),
      'icon_pool': join(dir_icon, 'pool.png'),
@@ -95,7 +95,7 @@ ___ load_settings(*args):
             flags.ap..(flag.text)
 
         settings['flags'] = flags
-    return settings
+    r_ settings
 
 
 ___ load_hotkeys(*args):
@@ -111,7 +111,7 @@ ___ load_hotkeys(*args):
             hotkeys['{}_shift'.format(name)] = setting.get('shift')
             hotkeys['{}_alt'.format(name)] = setting.get('alt')
 
-    return hotkeys
+    r_ hotkeys
 
 
 ___ get_settings_xml(*args):
@@ -129,7 +129,7 @@ ___ get_settings_xml(*args):
 
     check_xml_ok(settings_xml)
     check_xml_values_exist()
-    return settings_xml
+    r_ settings_xml
 
 
 ___ check_xml_values_exist(*args):
@@ -162,7 +162,7 @@ ___ get_default_snapshot_root_dir(*args):
             msg = "Unable to create default snapshot root directory at: '{}'".format(default_snapshots_root)
             show_message_box(None, msg)
 
-    return default_snapshots_root
+    r_ default_snapshots_root
 
 
 ___ load_advanced_settings(*args):
@@ -180,9 +180,9 @@ ___ load_advanced_settings(*args):
         with open(advanced_settings, 'r') as advset:
             content = advset.read()
     except Exception as e:
-        return 'Unable to read advanced settings file. {}'.format(e)
+        r_ 'Unable to read advanced settings file. {}'.format(e)
 
-    return content
+    r_ content
 
 
 ___ parse_advanced_settings(*args):
@@ -192,7 +192,7 @@ ___ parse_advanced_settings(*args):
     advanced_settings_file = __.path.join(get_tool_public_root(), 'advancedsettings.set')
     ___
         with open(advanced_settings_file, 'r') as advset:
-            advanced_settings_lines = [ line ___ line __ advset.readlines() __ line[:le.(vars_line)] == vars_line ]
+            advanced_settings_lines = [ line ___ line __ advset.readlines() __ line[:le.(vars_line)] __ vars_line ]
     ______
         pass
 
@@ -204,49 +204,49 @@ ___ parse_advanced_settings(*args):
         val = val.strip()
         advanced_settings[key] = val
 
-    return advanced_settings
+    r_ advanced_settings
 
 
 ___ get_standard_preset_pool(*args):
     standardpool = __.path.join(get_tool_public_root(), 'standardpool')
     __ no. __.path.isdir(standardpool):
         __.makedirs(standardpool)
-    return standardpool
+    r_ standardpool
 
 
 ___ check_xml_ok(xml, *args):
     ___
         with open(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        return True
+        r_ True
     ______
-        message = 'The smartLook settings file seems to be broken. Do you want to reset it now?'
-        reset_settings_xml = ask_dialog(message, process_label='reset', color_process='actionButton')
+        m.. = 'The smartLook settings file seems to be broken. Do you want to reset it now?'
+        reset_settings_xml = ask_dialog(m.., process_label='reset', color_process='actionButton')
         __ reset_settings_xml:
             __ __.path.isfile(xml):
                 __.remove(xml)
                 get_settings_xml()
 
 
-___ show_message_box(window, message, *args):
+___ show_message_box(window, m.., *args):
     msg = ?W...QMessageBox()
     msg.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-    msg.information(window, 'information', message)
+    msg.information(window, 'information', m..)
 
 
 ___ open_website(url, *args):
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         __.startfile(url)
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
             show_message_box(None, msg)
 
-    return
+    r_
 
 
 ___ set_style_sheet(widget):
@@ -268,26 +268,26 @@ ___ get_topleft_coordinates(*args):
         __ n.ypos() < y:
             y = n.ypos()
 
-    return (x - offset, y - offset)
+    r_ (x - offset, y - offset)
 
 
 ___ create_uid(*args):
     val = '{}_{}'.format(time.time(), random.random())
-    return hashlib.md5(val).hexdigest()
+    r_ hashlib.md5(val).hexdigest()
 
 
 ___ find_looks_group(*args):
     ___
-        return [ node ___ node __ ?.allNodes('Group') __ node.knob('looks_group') ][0]
+        r_ [ node ___ node __ ?.allNodes('Group') __ node.knob('looks_group') ][0]
     except IndexError:
         show_message_box(None, "Cannot find 'looks' group in nodegraph.")
 
-    return
+    r_
 
 
 ___ get_installed_root_dir(*args):
     root = __.path.join(__.path.dirname(__file__), '../', '../')
-    return __.path.normpath(root)
+    r_ __.path.normpath(root)
 
 
 ___ get_tool_public_root(*args):
@@ -298,7 +298,7 @@ ___ get_tool_public_root(*args):
         ______
             write_log('unable to create open dir')
 
-    return root
+    r_ root
 
 
 ___ get_tool_private_root(*args):
@@ -309,7 +309,7 @@ ___ get_tool_private_root(*args):
         ______
             write_log('unable to create open dir')
 
-    return root
+    r_ root
 
 
 ___ get_log_file(*args):
@@ -321,7 +321,7 @@ ___ get_log_file(*args):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
-    return log_file
+    r_ log_file
 
 
 ___ write_log(text, tool = 'lk', *args):
@@ -334,9 +334,9 @@ ___ write_log(text, tool = 'lk', *args):
 ___ check_web_connection(*args):
     ___
         urllib.urlopen('http://www.cragl.com')
-        return True
+        r_ True
     ______
-        return False
+        r_ False
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
@@ -346,13 +346,13 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        __ child.get(key1) == value1:
+        __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
                 print 'smartLook | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
-            return
+            r_
 
-    __ item_found == 0:
+    __ item_found __ 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
         __ key2 != '':
@@ -377,7 +377,7 @@ ___ prettyprint(elem, level = 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -393,11 +393,11 @@ ___ build_hotkeys(*args):
 
     ___ e __ elements:
         hotkey = ''
-        __ hotkeys['{}_ctrl'.format(e)] == 'True':
+        __ hotkeys['{}_ctrl'.format(e)] __ 'True':
             hotkey = 'ctrl+'
-        __ hotkeys['{}_shift'.format(e)] == 'True':
+        __ hotkeys['{}_shift'.format(e)] __ 'True':
             hotkey += 'shift+'
-        __ hotkeys['{}_alt'.format(e)] == 'True':
+        __ hotkeys['{}_alt'.format(e)] __ 'True':
             hotkey += 'alt+'
         __ hotkeys[e] is None:
             hotkeys_build[e] = ''
@@ -405,7 +405,7 @@ ___ build_hotkeys(*args):
             hotkey += hotkeys[e]
             hotkeys_build[e] = hotkey
 
-    return hotkeys_build
+    r_ hotkeys_build
 
 
 ___ set_hotkeys(*args):
@@ -429,29 +429,29 @@ ___ set_hotkeys(*args):
 
 
 ___ get_explorer_name(*args):
-    __ sys.platform == 'darwin':
-        return 'finder'
+    __ ___.pl.. __ 'darwin':
+        r_ 'finder'
     ____
-        return 'explorer'
+        r_ 'explorer'
 
 
 ___ open_in_explorer(path, parent = None, *args):
     __ no. __.path.isdir(path):
         msg = "Unable to open directory '{}'. The path doesn't exist.".format(path)
         show_message_box(parent, msg)
-        return
-    __ platform.system() == 'Windows':
+        r_
+    __ pl...system() __ 'Windows':
         __.startfile(path)
-    elif platform.system() == 'Darwin':
-        subprocess.Popen(['open', path])
+    ____ pl...system() __ 'Darwin':
+        subprocess.P..(['open', path])
     ____
-        subprocess.Popen(['xdg-open', path])
+        subprocess.P..(['xdg-open', path])
 
 
 ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expanded = False, is_dir = False, enable_drag = False, icon = ''):
     diritem = ?W...QTreeWidgetItem(parent, [item_name])
     diritem.setData(0, QtCore.Qt.UserRole, dirpath)
-    __ enable_drag == 'False':
+    __ enable_drag __ 'False':
         diritem.setFlags(QtCore.Qt.ItemIsSelectable | QtCore.Qt.ItemIsEnabled | QtCore.Qt.ItemIsUserCheckable)
     diritem.setExpanded(expanded)
     diritem.setSelected(selected)
@@ -459,28 +459,28 @@ ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expan
         diritem.setDisabled(True)
     dirpath = __.path.normpath(dirpath)
     __ is_dir:
-        __ icon == '':
+        __ icon __ '':
             icon = load_icons()['icon_folder_grey']
         diritem.setIcon(0, QtGui.QIcon(icon))
     ____
         diritem.setIcon(0, QtGui.QIcon(load_icons()['icon_nuke']))
     diritem.setData(0, QtCore.Qt.UserRole, dirpath)
-    return diritem
+    r_ diritem
 
 
 ___ get_image_size(src, *args):
     with open(src, 'rb') as fhandle:
         head = fhandle.read(24)
         __ le.(head) != 24:
-            return (1, 1)
-        __ imghdr.what(src) == 'png':
+            r_ (1, 1)
+        __ imghdr.what(src) __ 'png':
             check = struct.unpack('>i', head[4:8])[0]
             __ check != 218765834:
-                return (1, 1)
+                r_ (1, 1)
             width, height = struct.unpack('>ii', head[16:24])
-        elif imghdr.what(src) == 'gif':
+        ____ imghdr.what(src) __ 'gif':
             width, height = struct.unpack('<HH', head[6:10])
-        elif imghdr.what(src) == 'jpeg':
+        ____ imghdr.what(src) __ 'jpeg':
             ___
                 fhandle.seek(0)
                 size = 2
@@ -488,7 +488,7 @@ ___ get_image_size(src, *args):
                 while no. 192 <= ftype <= 207:
                     fhandle.seek(size, 1)
                     byte = fhandle.read(1)
-                    while ord(byte) == 255:
+                    while ord(byte) __ 255:
                         byte = fhandle.read(1)
 
                     ftype = ord(byte)
@@ -497,11 +497,11 @@ ___ get_image_size(src, *args):
                 fhandle.seek(1, 1)
                 height, width = struct.unpack('>HH', fhandle.read(4))
             ______
-                return (1, 1)
+                r_ (1, 1)
 
         ____
-            return
-        return (width, height)
+            r_
+        r_ (width, height)
 
 
 ___ update_xml(key, value, *args):
@@ -509,7 +509,7 @@ ___ update_xml(key, value, *args):
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
     ___ setting __ settings_root.find('settings').findall('setting'):
-        __ setting.get('name') == key:
+        __ setting.get('name') __ key:
             setting.text = value
 
     with open(settings_xml, 'w') as xml:
@@ -531,19 +531,19 @@ ___ get_connected_nodes(node, *args):
     node.setSelected(True)
     connected_nodes.ap..(node)
     ?.selectConnectedNodes()
-    ___ node __ ?.selectedNodes():
+    ___ node __ ?.sN..:
         ___ dependency __ node.dependencies():
             dependency.setSelected(True)
 
         ___ dependent __ node.dependent():
             dependent.setSelected(True)
 
-    ___ node __ ?.selectedNodes():
+    ___ node __ ?.sN..:
         __ node.Class() no. __ ignore_list:
             connected_nodes.ap..(node)
 
     ?.clear_selection_recursive()
-    return list(set(connected_nodes))
+    r_ list(set(connected_nodes))
 
 
 ___ load_tooltips(parent, section, *args):
@@ -551,18 +551,18 @@ ___ load_tooltips(parent, section, *args):
     tooltips_file = __.path.join(this_dir, '../', 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
-        return
+        r_
     with open(tooltips_file) as json_file:
         ttdata = json.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
-            __ t['tt'] == widget.property('tt'):
+            __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
 
 
 ___ get_snapshot_dirs(*args):
     snapshot_root = load_settings()['snapshotbrowser_root']
-    return [ d ___ d __ __.listdir(snapshot_root) __ __.path.isdir(__.path.join(snapshot_root, d)) ]
+    r_ [ d ___ d __ __.listdir(snapshot_root) __ __.path.isdir(__.path.join(snapshot_root, d)) ]
 
 
 ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
@@ -572,7 +572,7 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
     metatree = ET.parse(metaxml)
     metaroot = metatree.getroot()
     ___ meta __ metaroot.find('metadata').findall('meta'):
-        __ meta.get('name') == 'flag':
+        __ meta.get('name') __ 'flag':
             __ color is None:
                 meta.text = ''
             ____
@@ -584,7 +584,7 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
     ___ thumb __ snapshotbowser.get_thumbnails_list():
         thumb.set_meta_ui_elements()
 
-    return
+    r_
 
 
 ___ create_metaxml(src, *args):
@@ -615,30 +615,30 @@ ___ load_metadata(src, *args):
                 meta_val = ''
             metadata[meta.get('name')] = meta_val
 
-    return metadata
+    r_ metadata
 
 
 ___ get_resolution(*args):
     __ ?.activeViewer():
-        return ?.activeViewer().node()['downrez'].getValue()
+        r_ ?.activeViewer().node()['downrez'].getValue()
 
 
-___ ask_dialog(message, process_label = 'ok', color_process = 'actionButton', cancel_labek = 'cancel'):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', message, ?W...QMessageBox.NoButton, None)
+___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_labek = 'cancel'):
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)
     __ color_process != '':
-        __ color_process == 'actionButton':
+        __ color_process __ 'actionButton':
             color_process = '51, 204, 255, 100'
         style = 'QPushButton {background-color: rgba(%s)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
     msg_box.addButton(cancel_labek, ?W...QMessageBox.RejectRole)
-    __ msg_box.exec_() == ?W...QMessageBox.AcceptRole:
-        return True
+    __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
+        r_ True
     ____
-        return False
-        return
+        r_ False
+        r_

@@ -135,7 +135,7 @@ c_ ScriptInfo(NodeStep):
                 YYYY/MM/DD Hour:Minute:Second
 
         """
-        return "{:%Y/%m/%d - %H:%M:%S}".format(datetime.datetime.now())
+        r_ "{:%Y/%m/%d - %H:%M:%S}".format(datetime.datetime.now())
 
     @staticmethod
     ___ number_nodes(recursive=False):
@@ -149,7 +149,7 @@ c_ ScriptInfo(NodeStep):
             int: The total number of nodes.
 
         """
-        return le.(?.allNodes(recurseGroups=recursive))
+        r_ le.(?.allNodes(recurseGroups=recursive))
 
     @staticmethod
     ___ frame_range():
@@ -161,7 +161,7 @@ c_ ScriptInfo(NodeStep):
         """
         first_frame = int(?.root()["first_frame"].value())
         last_frame = int(?.root()["last_frame"].value())
-        return first_frame, last_frame
+        r_ first_frame, last_frame
 
     ___ root_values
         """Get values from the nuke.root.
@@ -192,16 +192,16 @@ c_ ScriptInfo(NodeStep):
                 str: Human readable values of given knob.
 
             """
-            __ knob_name == "format":
+            __ knob_name __ "format":
                 format_ = "{} ({}x{} {})"
                 format_knob = knob.value()
-                return format_.format(format_knob.name(), format_knob.width(),
+                r_ format_.format(format_knob.name(), format_knob.width(),
                                       format_knob.height(),
                                       format_knob.pixelAspect())
             # Implement extraction for other nodes in here.
             # elif knob_name == "xxx":
             #     # Extract values.
-            return knob.value() or "---"
+            r_ knob.value() or "---"
 
         root_values = []
         ___ knob_name __ setup["root_info"]:
@@ -212,7 +212,7 @@ c_ ScriptInfo(NodeStep):
             value = _format_value(knob_name, knob)
             root_values.ap..((knob_name, value))
 
-        return tuple(root_values)
+        r_ tuple(root_values)
 
     ___ footage_paths
         """Create list of tuples for used footage in the working file.
@@ -241,7 +241,7 @@ c_ ScriptInfo(NodeStep):
                 path = path_knob.evaluate() or "---"
                 footage.ap..((node.name(), path))
 
-        return tuple(footage)
+        r_ tuple(footage)
 
     @staticmethod
     ___ all_node_classes():
@@ -252,7 +252,7 @@ c_ ScriptInfo(NodeStep):
 
         """
         all_nodes = ?.allNodes(recurseGroups=True)
-        return sorted(set(node.Class() ___ node __ all_nodes))
+        r_ sorted(set(node.Class() ___ node __ all_nodes))
 
     ___ len_nodes_by_class
         """Get the number of nodes by class.
@@ -282,11 +282,11 @@ c_ ScriptInfo(NodeStep):
         ___ node_class __ sorted(node_classes):
             counter = 0
             ___ node __ ?.allNodes(recurseGroups=True):
-                __ node.Class() == node_class:
+                __ node.Class() __ node_class:
                     counter += 1
             stats.ap..((node_class, counter))
 
-        return tuple(stats)
+        r_ tuple(stats)
 
     @staticmethod
     ___ tuple_to_human_readable(tuple_):
@@ -301,7 +301,7 @@ c_ ScriptInfo(NodeStep):
                 format: 'first: last'.
 
         """
-        return "{}: {}".format(tuple_[0], tuple_[1])
+        r_ "{}: {}".format(tuple_[0], tuple_[1])
 
     ___ process
         """Generate the working file info."""

@@ -32,7 +32,7 @@ p.addToPane(pane)
 ___ addPanel():
     panel = simplePanel()
     pane = ?.getPaneFor('DAG.1')
-    return panel.addToPane(pane)
+    r_ panel.addToPane(pane)
 
 paneMenu = ?.menu('Pane')
 paneMenu.addCommand('Simple Panel', addPanel)

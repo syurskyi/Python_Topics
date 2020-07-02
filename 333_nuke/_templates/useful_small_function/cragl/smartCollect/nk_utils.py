@@ -1,6 +1,6 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCollect_v1.2/smartCollect/src/nk_utils.py
 ______ __
-______ platform
+______ pl..
 ____ smartCollect.src ______ helper
 ____ smartCollect.src ______ templates
 ____ smartCollect.src ______ autosearch
@@ -8,19 +8,19 @@ ____ smartCollect.src ______ autosearch
 ___ is_nuke():
     ___
         ______ ?
-        return True
+        r_ True
     except ImportError:
-        return False
+        r_ False
 
 
 ___ get_nuke_exe(startup_feedback = False):
     executable = ''
-    debug = helper.load_settings()['logging_level'] == '1'
+    debug = helper.load_settings()['logging_level'] __ '1'
     __ no. startup_feedback:
         debug = False
     __ is_nuke():
         ______ ?
-        return ?.env['ExecutablePath']
+        r_ ?.env['ExecutablePath']
     ____
         __ debug:
             print '\nsmartCollect running standalone.\n'
@@ -39,7 +39,7 @@ ___ get_nuke_exe(startup_feedback = False):
                 print 'Scanning applications folder for nuke versions in: {}'.format(app_root)
                 print '>>> ', nuke_versions
             ___ version __ nuke_versions:
-                __ platform.system() == 'Darwin':
+                __ pl...system() __ 'Darwin':
                     nuke_executable = full_path.format(?=version)
                 ____
                     nuke_executable = full_path.format(?=version, nuke_major_minor=version.split('v')[0])
@@ -53,9 +53,9 @@ ___ get_nuke_exe(startup_feedback = False):
             private_tool_root = helper.get_tool_private_root()
             settings_path = __.path.join(private_tool_root, 'settings.xml')
             print templates.NO_NUKE_EXE_FOUND.format(settings_path)
-        return executable
+        r_ executable
 
 
 ___ get_nukescript_path():
     ______ ?
-    return ?.root().name()
+    r_ ?.root().name()

@@ -1,10 +1,10 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCollect_v1.2/smartCollect/src/helper.py
 ______ __
-______ sys
+______ ___
 ______ time
 ______ xml.etree.ElementTree as ET
 ______ subprocess
-______ platform
+______ pl..
 ______ json
 ______ hashlib
 ______ random
@@ -15,8 +15,8 @@ ___
 except ImportError:
     ____ smartCollect.src ______ autosearch
     sitepackages = autosearch.scan_for_pyside()
-    __ sitepackages no. __ sys.path:
-        sys.path.insert(0, sitepackages)
+    __ sitepackages no. __ ___.path:
+        ___.path.insert(0, sitepackages)
 
 ___
     ____ PySide ______ QtGui as ?W..
@@ -39,7 +39,7 @@ ___ load_icons(*args):
         path = __.path.join(dir_icon, file_)
         icons[name] = path
 
-    return icons
+    r_ icons
 
 
 ___ get_tool_public_root(*args):
@@ -50,7 +50,7 @@ ___ get_tool_public_root(*args):
         ______
             write_log('unable to create open tool dir at: {}'.format(root))
 
-    return root
+    r_ root
 
 
 ___ get_tool_private_root(*args):
@@ -61,7 +61,7 @@ ___ get_tool_private_root(*args):
         ______
             write_log('unable to create private tool dir at: {}'.format(root))
 
-    return root
+    r_ root
 
 
 ___ get_logs_root():
@@ -72,7 +72,7 @@ ___ get_logs_root():
         ______
             write_log('unable to create logs dir at: {}'.format(root))
 
-    return root
+    r_ root
 
 
 ___ get_log_file(*args):
@@ -84,7 +84,7 @@ ___ get_log_file(*args):
         with open(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
-    return log_file
+    r_ log_file
 
 
 ___ write_log(text, tool = 'sc'):
@@ -100,7 +100,7 @@ ___ get_trm_file(name):
     file_ = __.path.normpath(file_)
     __ no. __.path.isfile(file_):
         raise IOError('The terminal file does not exist: {}'.format(file_))
-    return file_
+    r_ file_
 
 
 ___ load_settings(*args):
@@ -111,20 +111,20 @@ ___ load_settings(*args):
         settings_root = settings_tree.getroot()
         ___ setting __ settings_root.find('settings').findall('setting'):
             value = setting.text
-            __ value == 'True':
+            __ value __ 'True':
                 value = True
-            elif value == 'False':
+            ____ value __ 'False':
                 value = False
             settings[setting.get('name')] = value
 
-    return settings
+    r_ settings
 
 
 ___ get_xml_elements():
     xml = get_settings_xml()
     tree = ET.parse(xml)
     root = tree.getroot()
-    return (xml, root, tree)
+    r_ (xml, root, tree)
 
 
 ___ get_settings_xml(*args):
@@ -142,7 +142,7 @@ ___ get_settings_xml(*args):
 
     check_xml_ok(settings_xml)
     check_xml_values_exist()
-    return settings_xml
+    r_ settings_xml
 
 
 ___ check_xml_values_exist():
@@ -168,13 +168,13 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     debug = False
     item_found = 0
     ___ child __ root.find(parent).findall(section):
-        __ child.get(key1) == value1:
+        __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
                 print 'smartCollect | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
-            return
+            r_
 
-    __ item_found == 0:
+    __ item_found __ 0:
         elem = ET.Element(section)
         elem.set(key1, value1)
         __ key2 != '':
@@ -199,7 +199,7 @@ ___ prettyprint(elem, level = 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail = i
-    elif level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level and (no. elem.tail or no. elem.tail.strip()):
         elem.tail = i
 
 
@@ -207,35 +207,35 @@ ___ check_xml_ok(xml, *args):
     ___
         with open(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        return True
+        r_ True
     ______
-        message = 'The smartCollect settings file seems to be broken. Do you want to reset it now?'
-        reset_settings_xml = ask_dialog(message, process_label='reset', color_process='actionButton')
+        m.. = 'The smartCollect settings file seems to be broken. Do you want to reset it now?'
+        reset_settings_xml = ask_dialog(m.., process_label='reset', color_process='actionButton')
         __ reset_settings_xml:
             __ __.path.isfile(xml):
                 __.remove(xml)
                 get_settings_xml()
 
 
-___ ask_dialog(message, process_label = 'ok', color_process = 'actionButton', cancel_label = 'cancel'):
-    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', message, ?W...QMessageBox.NoButton, None)
+___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_label = 'cancel'):
+    msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, None)
     msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)
     __ color_process != '':
-        __ color_process == 'actionButton':
+        __ color_process __ 'actionButton':
             color_process = '51, 204, 255, 100'
         style = 'QPushButton {background-color: rgba(%s)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
     msg_box.addButton(cancel_label, ?W...QMessageBox.RejectRole)
-    __ msg_box.exec_() == ?W...QMessageBox.AcceptRole:
-        return True
+    __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
+        r_ True
     ____
-        return False
-        return
+        r_ False
+        r_
 
 
 ___ center_window(window):
@@ -255,18 +255,18 @@ ___ set_style_sheet(widget, *args):
 
 
 ___ open_in_explorer(path, parent = None, *args):
-    __ platform.system() == 'Windows':
+    __ pl...system() __ 'Windows':
         __.startfile(path)
-    elif platform.system() == 'Darwin':
-        subprocess.Popen(['open', path])
+    ____ pl...system() __ 'Darwin':
+        subprocess.P..(['open', path])
     ____
-        subprocess.Popen(['xdg-open', path])
+        subprocess.P..(['xdg-open', path])
 
 
-___ show_message_box(window, message, *args):
+___ show_message_box(window, m.., *args):
     msg = ?W...QMessageBox()
     msg.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-    msg.information(window, 'information', message)
+    msg.information(window, 'information', m..)
 
 
 ___ load_nukescripts_settings(section):
@@ -275,23 +275,23 @@ ___ load_nukescripts_settings(section):
     ___ nukescript __ root.find(section).findall('nukescript'):
         ?.ap..(nukescript.text)
 
-    return ?
+    r_ ?
 
 
 ___ load_nukescripts_progress(path):
     _, root, _ = get_xml_elements()
     ___ nukescript __ root.find('archive').findall('nukescript'):
-        __ nukescript.text == path:
-            return int(nukescript.get('progress'))
+        __ nukescript.text __ path:
+            r_ int(nukescript.get('progress'))
 
-    return 0
+    r_ 0
 
 
 ___ add_nukescript_settings(path, section):
     xml, root, tree = get_xml_elements()
     nukescript = ET.SubElement(root.find(section), 'nukescript')
     nukescript.text = path
-    __ section == 'archive':
+    __ section __ 'archive':
         nukescript.set('progress', '0')
         nukescript.set('comment', '')
         nukescript.set('output_path', '')
@@ -304,7 +304,7 @@ ___ add_nukescript_settings(path, section):
 ___ update_nukescript_section(path, section, tag, value):
     xml, root, tree = get_xml_elements()
     ___ nukescript __ root.find(section).findall('nukescript'):
-        __ nukescript.text == path:
+        __ nukescript.text __ path:
             nukescript.set(tag, value)
 
     with open(xml, 'w') as xml:
@@ -315,14 +315,14 @@ ___ update_nukescript_section(path, section, tag, value):
 ___ load_nukescript_section(path, section, tag):
     xml, root, tree = get_xml_elements()
     ___ nukescript __ root.find(section).findall('nukescript'):
-        __ nukescript.text == path:
-            return nukescript.get(tag)
+        __ nukescript.text __ path:
+            r_ nukescript.get(tag)
 
 
 ___ remove_nukescript_settings(path, section):
     xml, root, tree = get_xml_elements()
     ___ nukescript __ root.find(section).findall('nukescript'):
-        __ nukescript.text == path:
+        __ nukescript.text __ path:
             root.find(section).remove(nukescript)
 
     with open(xml, 'w') as xml:
@@ -341,14 +341,14 @@ ___ add_this_nukescript(smart_collector, source):
     path = nk_utils.get_nukescript_path()
     __ path __ ('', 'Root', None):
         show_message_box(smart_collector, 'Please save your script first in order to proceed.')
-        return
-    elif path __ smart_collector.table_nukescripts.?:
+        r_
+    ____ path __ smart_collector.table_nukescripts.?:
         show_message_box(smart_collector, 'The Nuke script exists already in the Nukescripts list.')
-        return
+        r_
     ____
         smart_collector.dropped_elements(([path], source))
         update_statusbar_added(smart_collector, source, 1)
-        return
+        r_
 
 
 ___ show_path_browser(title):
@@ -357,12 +357,12 @@ ___ show_path_browser(title):
     dialog.sQT..(title)
     dialog.setFileMode(?W...QFileDialog.Directory)
     dialog.setOption(?W...QFileDialog.ShowDirsOnly)
-    __ dialog.exec_() == ?W...QDialog.Accepted:
-        return dialog.selectedFiles()[0]
+    __ dialog.exec_() __ ?W...QDialog.Accepted:
+        r_ dialog.selectedFiles()[0]
 
 
 ___ get_filename(path):
-    return __.path.splitext(__.path.basename(path))[0]
+    r_ __.path.splitext(__.path.basename(path))[0]
 
 
 ___ load_tooltips(parent, section, *args):
@@ -370,17 +370,17 @@ ___ load_tooltips(parent, section, *args):
     tooltips_file = __.path.join(this_dir, '../', 'data', 'tooltips.json')
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
-        return
+        r_
     with open(tooltips_file) as json_file:
         ___
             ttdata = json.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
-            return
+            r_
 
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
-            __ t['tt'] == widget.property('tt'):
+            __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
 
 
@@ -388,7 +388,7 @@ ___ create_job_id(*args):
     current_time = str(int(time.time()))
     rand_number = str(random.random())
     id_ = hashlib.md5('{}{}'.format(current_time, rand_number)).hexdigest()[:8]
-    return str('{}_{}'.format(current_time, id_))
+    r_ str('{}_{}'.format(current_time, id_))
 
 
 ___ update_statusbar(smart_collector, text, delay = 0):
@@ -402,7 +402,7 @@ ___ write_pickle_data(data):
     path = __.path.join(tmp_dir, 'smartcollect_data.pickle')
     with open(path, 'w') as file_:
         cPickle.dump(data, file_)
-    return path
+    r_ path
 
 
 ___ get_selected_widgets(table):
@@ -410,22 +410,22 @@ ___ get_selected_widgets(table):
     ___ row __ table.selectedIndexes():
         selected_elements.ap..(table.cellWidget(row.row(), 0))
 
-    return selected_elements
+    r_ selected_elements
 
 
 ___ open_website(url):
-    __ sys.platform == 'win32':
+    __ ___.pl.. __ 'win32':
         __.startfile(url)
-    elif sys.platform == 'darwin':
-        subprocess.Popen(['open', url])
+    ____ ___.pl.. __ 'darwin':
+        subprocess.P..(['open', url])
     ____
         ___
-            subprocess.Popen(['xdg-open', url])
+            subprocess.P..(['xdg-open', url])
         except OSError:
             msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
             show_message_box(None, msg)
 
-    return
+    r_
 
 
 ___ clear_statusbar(statusbar, delay):
@@ -447,10 +447,10 @@ ___ bytesize_to_human(bytes_size, decimals = 2, human_radix = 1000.0):
     human_fmt = '%.{}f %s'.format(decimals)
     ___ unit __ units[:-1]:
         __ bytes_size < human_radix:
-            return human_fmt % (bytes_size, unit)
+            r_ human_fmt % (bytes_size, unit)
         bytes_size /= human_radix
 
-    return human_fmt % (bytes_size, units[-1])
+    r_ human_fmt % (bytes_size, units[-1])
 
 
 ___ get_dir_size(path):
@@ -469,4 +469,4 @@ ___ get_dir_size(path):
             seen.add(stat.st_ino)
             total_size += stat.st_size
 
-    return bytesize_to_human(total_size)
+    r_ bytesize_to_human(total_size)

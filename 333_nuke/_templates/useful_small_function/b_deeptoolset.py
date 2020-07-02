@@ -51,16 +51,16 @@ ___ select_node(node_class):
 
     ___
         node = ?.sN__
-        __ node.Class() == class_:
+        __ node.Class() __ class_:
             node['selected'].sV..(False)
-            return node
+            r_ node
         ____
-            message = "Please, select a {} Node".format(class_)
-            ?.message(message)
+            m.. = "Please, select a {} Node".format(class_)
+            ?.m..(m..)
 
     except ValueError:
-        message = "Please, select a {} Node".format(class_)
-        ?.message(message)
+        m.. = "Please, select a {} Node".format(class_)
+        ?.m..(m..)
 
 
 ___ find_dependencies(node_class):
@@ -72,7 +72,7 @@ ___ find_dependencies(node_class):
     node = select_node(node_class)
     dep_node = ?.dependencies(node)
         
-    return dep_node
+    r_ dep_node
 
 
 ___ get_node_position(node):
@@ -83,7 +83,7 @@ ___ get_node_position(node):
     """
     pos_dict = {"x_pos": node.xpos(),"y_pos": node.ypos()} 
     
-    return pos_dict
+    r_ pos_dict
 
 
 ___ get_righthandside_position(node_list):
@@ -106,7 +106,7 @@ ___ get_righthandside_position(node_list):
     avg_y_pos = su.(y_pos_list) / le.(y_pos_list)
    
     
-    return min_x_pos,max_x_pos,avg_y_pos
+    r_ min_x_pos,max_x_pos,avg_y_pos
 
 
 ___ create_node_with_position(nodename,connect_node,x=0,y=0):
@@ -126,7 +126,7 @@ ___ create_node_with_position(nodename,connect_node,x=0,y=0):
 
      node.setInput(0,connect_node)
 
-     return node 
+     r_ node
 
 
 ___ create_node_with_position_simple(nodename,x=0,y=0):
@@ -144,7 +144,7 @@ ___ create_node_with_position_simple(nodename,x=0,y=0):
      node.setYpos(int(y))
 
 
-     return node
+     r_ node
 
 
 ___ d_dot_parent(parentname,nodename,connect_node,x=0,y=0):
@@ -167,7 +167,7 @@ ___ d_dot_parent(parentname,nodename,connect_node,x=0,y=0):
     newDot.knob('note_font_size').sV..(33)
     newDot.addKnob(parentKnob)
 
-    return newDot
+    r_ newDot
 
 
 ___ build_depth_setup(node_list):
@@ -212,7 +212,7 @@ ___ build_depth_setup(node_list):
     ___ node __ node_list:
         deep_merge.setInput(counter,?.toNode(node))
         counter += 1
-    return
+    r_
 
 
 ___ get_asset_name(sourcenode):
@@ -226,20 +226,20 @@ ___ get_asset_name(sourcenode):
     dep_nodes = ?.dependencies(source_node)
     
     ___ node __ dep_nodes:
-        __ node.Class() == target_class:
+        __ node.Class() __ target_class:
             ___
                 asset_name = node["sg_layer"].value()
-                __ asset_name == "":
+                __ asset_name __ "":
                     default_asset_name =  "element_01"
-                    return default_asset_name
+                    r_ default_asset_name
                 ____
-                    return asset_name
+                    r_ asset_name
             except ValueError:
                 print "no asset name found"
                 asset_name = "element_01"    
-                return asset_name
+                r_ asset_name
         ____
-            return get_asset_name(node.name())
+            r_ get_asset_name(node.name())
 
 
 ___ create_deep_holdout_setup(node_class):
@@ -310,7 +310,7 @@ ___ create_deep_holdout_setup(node_class):
 
     #AFwrite = create_node_with_position("AFWrite",last_dot,pos8["x_pos"]-15,pos8["y_pos"]+ 100)
 
-    return deep_holdout
+    r_ deep_holdout
 
 
 ___ check_upstream_match(sourcenode,targetnode):
@@ -326,11 +326,11 @@ ___ check_upstream_match(sourcenode,targetnode):
     
     __ target_node __ dep_nodes:
         print "MATCHHHH!"
-        return True
+        r_ True
     ____
         print "KEEP LOOKING"
         ___ node __ dep_nodes:
-            return check_upstream_match(node.name(),targetnode)
+            r_ check_upstream_match(node.name(),targetnode)
 
 
 ___ iterate_deep_holdout_setup():
@@ -343,11 +343,11 @@ ___ iterate_deep_holdout_setup():
     selected_nodes = []
 
 
-    ___ i __ ?.selectedNodes():
+    ___ i __ ?.sN..:
 
         __ i.Class() != "DeepRecolor":
-            ?.message("Please, select only DeepRecolor Nodes")
-            return
+            ?.m..("Please, select only DeepRecolor Nodes")
+            r_
         ____
             names.ap..(i.name())
             i['selected'].sV..(False)
@@ -371,7 +371,7 @@ ___ iterate_deep_holdout_setup():
         ___ name __ names:
            __ check_upstream_match(ho,name):
                 print "ALELUYA"
-           elif no. check_upstream_match(ho,name):
+           ____ no. check_upstream_match(ho,name):
                 ?.toNode(deep_merge).setInput(counter,?.toNode(name))
                 counter += 1
             
@@ -387,7 +387,7 @@ ___ get_middle_position():
     x_pos_list = []
     y_pos_list = []
 
-    ___ node __ ?.selectedNodes():
+    ___ node __ ?.sN..:
         pos = get_node_position(node)
         x_pos_list.ap..(pos["x_pos"])
         y_pos_list.ap..(pos["y_pos"])
@@ -400,7 +400,7 @@ ___ get_middle_position():
     diff = max_x_pos - min_x_pos
     offset = diff / 2
     
-    return min_x_pos,offset,avg_y_pos
+    r_ min_x_pos,offset,avg_y_pos
 
 
 ___ create_rgba_deep_recolor(channels):
@@ -411,7 +411,7 @@ ___ create_rgba_deep_recolor(channels):
     """
     new_deep_recolor_names = []    
 
-    ___ node __ ?.selectedNodes():
+    ___ node __ ?.sN..:
 
         dependencies = ?.dependencies(node)
         deep = dependencies[0]
@@ -429,7 +429,7 @@ ___ create_rgba_deep_recolor(channels):
         
         new_deep_recolor_names.ap..(deep_recolor.name())
 
-    return new_deep_recolor_names
+    r_ new_deep_recolor_names
 
 
 ___ uberpass_function():
@@ -439,7 +439,7 @@ ___ uberpass_function():
     """
     node_list = []
 
-    ___ node __ ?.selectedNodes():
+    ___ node __ ?.sN..:
         node_list.ap..(node)
 
     rgb_deep_recolor = create_rgba_deep_recolor("rgba")
@@ -488,7 +488,7 @@ ___ depth_for_defocus():
     """
     node_list = []
 
-    ___ node __ ?.selectedNodes():
+    ___ node __ ?.sN..:
         node_list.ap..(node)
 
     rgb_deep_recolor = create_rgba_deep_recolor("all")
@@ -541,7 +541,7 @@ ___ splitLayers( node ):
         layer_name = each.split( '.' )[0]
         tmp = []
         ___ channel __ ch:
-            __ channel.startswith( layer_name ) == True:
+            __ channel.startswith( layer_name ) __ True:
                 tmp.ap..( channel )
         __ le.( tmp ) < 4:
             ___ i __ ra..( 4 - le.( tmp ) ):
@@ -608,7 +608,7 @@ ___ d_dot_connect(nodename,connect_node,x=0,y=0):
     dot.knob('note_font_size').sV..(22)
     dot.addKnob(childKnob)
 
-    return dot
+    r_ dot
 
 
 ___ gather_holdout_dot_names():
@@ -616,9 +616,9 @@ ___ gather_holdout_dot_names():
     This function will get all names of selected Ddots.
     :return: a list of node names.
     """
-    holdout_dots_names = [node['name'].value() ___ node __ ?.selectedNodes() __ node['parent']]
+    holdout_dots_names = [node['name'].value() ___ node __ ?.sN.. __ node['parent']]
     
-    return holdout_dots_names
+    r_ holdout_dots_names
 
 
 ___ find_holdout_source_elements(houldout_names):
@@ -636,7 +636,7 @@ ___ find_holdout_source_elements(houldout_names):
         ____
             print "no corresponding element found for {}".format(name)
     
-    return houldout_processed_list
+    r_ houldout_processed_list
 
 
 ___ create_and_connect_child_dots(holdouts,color):
@@ -655,7 +655,7 @@ ___ create_and_connect_child_dots(holdouts,color):
 
     ___ f,b __ itertools.izip(holdouts,color):
 
-        __ counter == 0 :
+        __ counter __ 0 :
 
             pos_f_x = get_node_position(?.toNode(f))["x_pos"]
             pos_f_y = get_node_position(?.toNode(f))["y_pos"]
@@ -695,7 +695,7 @@ ___ create_and_connect_child_dots(holdouts,color):
     
     ___ i __ ra..(le.(multiply_list)):
 
-        __ counter == 0:
+        __ counter __ 0:
 
             x = get_node_position(multiply_list[i])["x_pos"]
             y = get_node_position(multiply_list[i])["y_pos"]
@@ -711,11 +711,11 @@ ___ create_and_connect_child_dots(holdouts,color):
             merge['operation'].sV..('disjoint-over')
             holder.ap..(merge)
 
-            __ le.(holder) == 1:
+            __ le.(holder) __ 1:
                 merge.setInput(0,multiply_list[i-1])
                 merge.setInput(1,multiply_list[i])
                 
-            elif le.(holder) > 1:
+            ____ le.(holder) > 1:
                 print holder[i-2].name() 
                 merge.setInput(0,holder[i-2])
                 merge.setInput(1,multiply_list[i])
@@ -742,27 +742,27 @@ c_ modalPanel(?.PythonPanel):
         get_frame_range()
 
     ___ giveFrameRangeValue
-        return frame_range.value()
+        r_ frame_range.value()
 
     ___ get_frame_range
-        __ giveFrameRangeValue() == "global":
+        __ giveFrameRangeValue() __ "global":
             first_frame = ?.root().firstFrame()
             last_frame = ?.root().lastFrame()
             txt = str(int(first_frame)) + '-' + str(int(last_frame))
             frame_display.sV..(txt)
-        elif giveFrameRangeValue() == "input":
+        ____ giveFrameRangeValue() __ "input":
             print "here should come the read frame range"
             node = ?.sN__
             first_frame = node.firstFrame()
             last_frame = node.lastFrame()
             txt = str(int(first_frame)) + '-' + str(int(last_frame))
             frame_display.sV..(txt)
-        elif giveFrameRangeValue() == "custom":
+        ____ giveFrameRangeValue() __ "custom":
             frame_display.sV..("")
             print "here the user decides"
 
     ___ knobChanged(self,knob):
-        __ knob.name() == "fRange":
+        __ knob.name() __ "fRange":
             get_frame_range()
                       
 
@@ -772,7 +772,7 @@ c_ modalPanel(?.PythonPanel):
 
 
 
-__ __name__ ==  "__main__":
+__ __name__ __  "__main__":
     #uberpass_function()
     iterate_deep_holdout_setup()
     #depth_for_defocus()

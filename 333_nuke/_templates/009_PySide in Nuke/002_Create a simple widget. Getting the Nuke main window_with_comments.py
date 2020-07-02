@@ -97,8 +97,8 @@ ___ getNukeWindow():
     app = QApplication.instance()
 
     ___ w __ app.topLevelWidgets():
-        __ w.metaObject().className() == 'Foundry::UI::DockMainWindow'
-            return w
+        __ w.metaObject().className() __ 'Foundry::UI::DockMainWindow'
+            r_ w
 
 qnuke = getNukeWindow()
 qnuke.sQT..('Nuke')
@@ -116,8 +116,8 @@ ___ getNukeWindow():
     app = QApplication.instance()
 
     ___ w __ app.topLevelWidgets():
-        __ w.metaObject().className() == 'Foundry::UI::DockMainWindow':
-            return w
+        __ w.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+            r_ w
 
 qnuke = getNukeWindow()
 qnuke.sQT..('Nuke')

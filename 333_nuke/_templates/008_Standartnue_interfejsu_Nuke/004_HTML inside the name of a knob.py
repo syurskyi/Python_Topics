@@ -60,7 +60,7 @@ node.addKnob(power)
 
 ___ powerKnob(a):
     k = ?.thisKnob()
-    __ k.name() == 'power' and a=='Blur':
+    __ k.name() __ 'power' and a__'Blur':
         v = k.getValue()
         img = int((v*5)+1)
         k.setLabel('<img src="%s/icons/power%s.png">' % (__.environ['NUKE_PATH'].replace('\\','/'), img))

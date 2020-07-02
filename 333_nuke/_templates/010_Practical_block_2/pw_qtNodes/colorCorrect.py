@@ -227,7 +227,7 @@ c_ colorWheelClass(?W..):
                     v = 1
                     color.setHsvF(h, s, v, 1.0)
                 img.setPixel(x+center, y+center, color.rgba())
-        return img
+        r_ img
 
 
 c_ colorRampClass(?W..):
@@ -313,7 +313,7 @@ c_ colorRampClass(?W..):
                 s = y/ float(hw)
                 color.setHsvF(h, s, 1)
                 img.setPixel(x, y, color.rgb())
-        return img
+        r_ img
 
 
 c_ colorPickerClass(?W..):
@@ -455,7 +455,7 @@ ___ addTab(node):
     node.resize(777, 670)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     app = QApplication([])
     s = colorPickerClass()
     s.s__

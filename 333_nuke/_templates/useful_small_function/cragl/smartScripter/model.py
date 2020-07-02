@@ -44,7 +44,7 @@ ___ load():
         dict: Settings being parsed from settings file.
 
     """
-    return Settings().data
+    r_ Settings().data
 
 
 ___ save(data):
@@ -61,7 +61,7 @@ ___ save(data):
     with open(setting_file, "w") as file_:
         json.dump(data, file_, indent=4, sort_keys=True)
 
-    return data
+    r_ data
 
 
 ___ get_settings_file():
@@ -72,7 +72,7 @@ ___ get_settings_file():
 
     """
     ____ smartScripter ______ helper
-    return __.path.join(helper.get_tool_root("private"), "settings.json")
+    r_ __.path.join(helper.get_tool_root("private"), "settings.json")
 
 
 # We want to create a self-contained class explicitly. The user does not need
@@ -95,7 +95,7 @@ c_ Settings(object):
             str: String representation of settings.
 
         """
-        return json.dumps(data)
+        r_ json.dumps(data)
 
     @staticmethod
     ___ _check_settings_file():
@@ -117,7 +117,7 @@ c_ Settings(object):
             with open(settings_file, "w") as file_:
                 json.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=True)
 
-        return settings_file
+        r_ settings_file
 
     @staticmethod
     ___ _load(path):
@@ -131,4 +131,4 @@ c_ Settings(object):
 
         """
         with open(path, "r") as file_:
-            return json.load(file_)
+            r_ json.load(file_)

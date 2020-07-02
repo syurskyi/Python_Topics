@@ -15,7 +15,7 @@ c_ BaseMenu(object):
 
     @property
     ___ menu_name
-        return _menu_name
+        r_ _menu_name
 
 
 #

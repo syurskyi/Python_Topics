@@ -13,7 +13,7 @@ ____ PySide.QtGui ______ *
 c_ eventFilterClass(QObject):
     ___ eventFilter(self, obj, ev):
         print ev.type()
-        return False
+        r_ False
 
 f = eventFilterClass()
 qnuke.installEventFilter(f)
@@ -28,10 +28,10 @@ ____ PySide.QtGui ______ *
 
 c_ eventFilterClass(QObject):
     ___ eventFilter(self, obj, ev):
-        __ ev.type() == QEvent.ChildPolished:
+        __ ev.type() __ QEvent.ChildPolished:
             w = ev.child()
             w.sQT..('NUKE')
-        return False
+        r_ False
 
 f = eventFilterClass()
 qnuke.installEventFilter(f)

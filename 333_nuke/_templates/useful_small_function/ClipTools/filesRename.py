@@ -37,9 +37,9 @@ ___ createList(files):
             #filesList.append(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
             filesList.append(name+'.'+paddedNum+'.'+extension)
             rangeCount+=1
-        return [filesList, pathToFile]
+        r_ [filesList, pathToFile]
     ______
-        return [1,1]
+        r_ [1,1]
 
 # function that asks the nuke user for the 'replace' name and removes illegal characters from user input
 # illegal characters set in renamer below.
@@ -56,17 +56,17 @@ ___ getRename(files,name):
     __ result:
         search = panel.value("text to replace:")
         replace = panel.value("replace with:")
-        __ replace=='':
+        __ replace__'':
             replace=search                          # stops files being renamed with nothing
-        __ replace[0] =='.':
-            nuke.message('Starting with "." is unsupported')
-            return 1
+        __ replace[0] __'.':
+            nuke.m..('Starting with "." is unsupported')
+            r_ 1
         # define the illegal characters and replace with '_'
         pattern = re.compile('[^a-zA-Z0-9.]')
         replace = pattern.sub('_', replace)
-        return [search,replace]
+        r_ [search,replace]
     else:
-        return 1
+        r_ 1
 
 # renames the clips passed from Nuke using shorthand (parsed in createList)
 #
@@ -75,10 +75,10 @@ ___ renameClips(files):
     __ filesList is no. 1:
         (search,replace)=getRename(files,name)
         renamed=fileName.rename(filesList, pathToFile, search, replace, False)
-        __ 0==renamed:
-            nuke.message('failed - try selecting individual files')
+        __ 0__renamed:
+            nuke.m..('failed - try selecting individual files')
     else:
-        nuke.message('failed - try selecting individual files')
+        nuke.m..('failed - try selecting individual files')
          
 
 # renames the individual files passed from Nuke
@@ -94,8 +94,8 @@ ___ renameFiles(files):
         
 
     renamed=fileName.rename(filesList, pathToFile, search, replace, False)
-    __ 0==renamed:
-        nuke.message('failed, maybe permissions?')
+    __ 0__renamed:
+        nuke.m..('failed, maybe permissions?')
       
 
 
@@ -162,8 +162,8 @@ ___ renumber():
                     ___
                         __.rename(searchPad, tempPad)
                     ______
-                        nuke.message('Failed - try "renameClips" instead')
-                        return
+                        nuke.m..('Failed - try "renameClips" instead')
+                        r_
                     #---------------------#
                     
                     tempFilesList.append(tempPad)
@@ -174,7 +174,7 @@ ___ renumber():
                     __.rename(f, f[:-4])
 
         else:
-            nuke.message('This only works with clip ranges')
+            nuke.m..('This only works with clip ranges')
             
         files=nuke.getClipname('select more clips to renumber',multiple=True)
 
@@ -190,7 +190,7 @@ ___ removeExtension():
     files=nuke.getFilename('select files to remove extension',multiple=True)
     while files:
         __ '%' __ str(files):
-            nuke.message('This only works on individually selected files')
+            nuke.m..('This only works on individually selected files')
         else:
             result=nuke.ask('Remove extension "'+__.path.basename(files[0])[-4:]+'" ? \nthis can overwrite existing files')
             __ result:
@@ -229,12 +229,12 @@ ___ removeTemps():
             ___ f __ files:
                 filename = f.split('.')
                 ext = filename[-1]
-                __ ext == 'tmp':
+                __ ext __ 'tmp':
                     ___
                         __.remove(path+'/'+f)
                         count+=1
                     ______
                         nuke.tprint('Unable to delete file: %s' % f)
-        nuke.message('removed '+str(count)+' files')
+        nuke.m..('removed '+str(count)+' files')
 
 

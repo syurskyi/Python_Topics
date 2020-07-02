@@ -13,20 +13,20 @@ ___ nodeToggler():
             knobName = ''
             ___ key __ allKnob:
                 knobNameList.append(allKnob[key])
-            ___ index __ range(len(knobNameList)):
+            ___ index __ range(le.(knobNameList)):
                 knobName += ' ' + knobNameList[index]
             knobPanel.addEnumerationPulldown('Select Knob', knobName)
             knobPanel.s__
-            selection = nuke.selectedNodes()
+            selection = nuke.sN..
 	    #sets the final result on their value basis and displays error if any
             ___ item __ selection:
                 __ item.knob(knobPanel.value('Select Knob')):
-                    __ item.knob(knobPanel.value('Select Knob')).value() == False:
+                    __ item.knob(knobPanel.value('Select Knob')).value() __ False:
                         item.knob(knobPanel.value('Select Knob')).setValue(True)
-                    elif item.knob(knobPanel.value('Select Knob')).value() == True:
+                    ____ item.knob(knobPanel.value('Select Knob')).value() __ True:
                         item.knob(knobPanel.value('Select Knob')).setValue(False)
                 else:
-                    nuke.message('{} node has no {} knob.'.format(item.name(), knobPanel.value('Select Knob')))
+                    nuke.m..('{} node has no {} knob.'.format(item.name(), knobPanel.value('Select Knob')))
         #creates panel for node selection
 	nodePanel = nuke.Panel('Select Node')
         allNode = nuke.allNodes()
@@ -37,29 +37,29 @@ ___ nodeToggler():
                 nodeClassList.append(node.Class())
 		#creates a list for display in nodePanel and removes any duplicating node
         newList = list(set(nodeClassList))
-        ___ index __ range(len(newList)):
+        ___ index __ range(le.(newList)):
             nodeClass += ' ' + str(newList[index])
         nodePanel.addEnumerationPulldown('Select Node', nodeClass + ' All' + ' Current')
         nodePanel.s__
         value = nodePanel.value('Select Node')
 	#does all the selection processes
         ___ node __ allNode:
-            __ value == 'Current':
-                __ len(nuke.selectedNodes()) > 0:
+            __ value __ 'Current':
+                __ le.(nuke.selectedNodes()) > 0:
                     break
                 else:
-                    nuke.message('Please select atlest one legal node.')
+                    nuke.m..('Please select atlest one legal node.')
                     break
-            __ node.Class() == value:
+            __ node.Class() __ value:
                 node.setSelected(True)
             else:
                 node.setSelected(False)
-            __ value == 'All':
+            __ value __ 'All':
                 nuke.selectAll()
-                ___ n __ nuke.selectedNodes():
-                    __ n.Class() == 'Viewer':
+                ___ n __ nuke.sN..:
+                    __ n.Class() __ 'Viewer':
                         n.setSelected(False)
                 break
-        __ len(nuke.selectedNodes()) > 0:
+        __ le.(nuke.selectedNodes()) > 0:
             knobSelection()
     nodeSelection()

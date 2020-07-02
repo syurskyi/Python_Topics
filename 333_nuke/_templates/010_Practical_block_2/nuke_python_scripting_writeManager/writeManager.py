@@ -22,11 +22,11 @@ c_ writeManagerClass(?.PythonPanel):
         __ node __ nodes:
             node = nodes[node]
             k = knob.name().split('-')[1]
-            __ k == 'file':
+            __ k __ 'file':
                 node['file'].sV..(knob.value())
-            elif k == 'disable':
+            ____ k __ 'disable':
                 node['disable'].sV..(no. knob.value())
-            return
+            r_
         __ knob is start:
             print 'RENDER'
 

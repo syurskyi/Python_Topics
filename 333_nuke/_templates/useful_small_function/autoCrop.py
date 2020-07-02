@@ -6,12 +6,12 @@ globalLastFrame = str(int(nuke.root().knob('last_frame').value()))
 
 
 ___ selectionCheck():
-    selection = nuke.selectedNodes()
+    selection = nuke.sN..
     ___ i __ selection:
-        __ range(len(selection)) == 0:
-            return False
+        __ range(le.(selection)) __ 0:
+            r_ False
         else:
-            return selection
+            r_ selection
 
 
 ___ allDependentNodesAndInputs(node, deepNumber):
@@ -21,10 +21,10 @@ ___ allDependentNodesAndInputs(node, deepNumber):
     ___ d __ dependent:
         x = 0
         while x <= deepNumber:
-            __ d.input(x) == node:
+            __ d.input(x) __ node:
                 dependentInputs.append([d, x])
             x = x + 1
-    return dependentInputs
+    r_ dependentInputs
 
 
 c_ autoCropPanel(nukescripts.PythonPanel):
@@ -37,4 +37,4 @@ ___ autoCrop():
         __ initClass.showModalDialog():
             initClass.autoCropMainCode()
     else:
-        nuke.message('Please select one or more inputs that you want to crop')
+        nuke.m..('Please select one or more inputs that you want to crop')
