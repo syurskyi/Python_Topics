@@ -1,60 +1,60 @@
-# #coding:utf8
-# ____ ?.?W.. ______ _
-# ______ __
-# ______ nuke
-#
-# c_ NkLibrary?W..
-# 	___ -
-# 		s_ ? .-
-# 		#variable
-# 		libpath _ __.g.. ("NUKE_PATH")+"/nk/"
-# 		appname _ "Nuke Library"
-# 		version _ "v0.1"
-#
-# 		#widget
-# 		nklist _ ?LW..
-# 		a..
-# 		ok _ ?PB.. *?
-# 		cancel _ ?PB.. *?
-#
-# 		#layout
-# 		layout _ ?VB..
-# 		?.aW.. n..
-# 		?.aW.. o.
-# 		?.aW.. c..
-# 		sQT.. a.. + " " + v..
-# 		sL.. ?
-#
-# 		#event
-# 		o_.c__.c.. p..
-# 		c_.c__.c.. c..
-# 		n_.iC__.c.. i..
-#
-# 	___ pushOK
-# 		?.nP.. l.. + c..
-# 		c__
-#
-# 	___ itemClick item
-# 		currentItem _ ?.t..
-#
-# 	___ addNkList
-# 		__ no. __.p__.ex.. l..
-# 			?.m.. l.. + "The path does not exist."
-# 		___ i __ __.l_d.. l..
-# 			base, ext _ __.p__.s.. ?
-# 			__ ext !_ ".nk":
-# 				c..
-# 			n__.aI.. ?LWI.. ?
-#
-# ___ main
-# 	g__ customApp
-# 	___
-# 		?.c__
-# 	______
-# 		p..
-#
-# 	customApp _ ?
-# 	___
-# 		?.s__
-# 	______
-# 		p..
+#coding:utf8
+from PySide2.QtWidgets import *
+import os
+import nuke
+
+class NkLibrary(QWidget):
+	def __init__(self):
+		super(NkLibrary, self).__init__()
+		#variable
+		self.libpath = os.getenv("NUKE_PATH")+"/nk/"
+		self.appname = "Nuke Library"
+		self.version = "v0.1"
+
+		#widget
+		self.nklist = QListWidget()
+		self.addNkList()
+		self.ok = QPushButton('Ok')
+		self.cancel = QPushButton('Cancel')
+
+		#layout
+		layout = QVBoxLayout()
+		layout.addWidget(self.nklist)
+		layout.addWidget(self.ok)
+		layout.addWidget(self.cancel)
+		self.setWindowTitle(self.appname + " " + self.version)
+		self.setLayout(layout)
+
+		#event
+		self.ok.clicked.connect(self.pushOk)
+		self.cancel.clicked.connect(self.close)
+		self.nklist.itemChanged.connect(self.itemClick)
+
+	def pushOK(self):
+		nuke.nodePaste(self.libpath + self.currentItem)
+		self.close()
+
+	def itemClick(self, item):
+		self.currentItem = item.text()
+
+	def addNkList(self):
+		if not os.path.exists(self.libpath):
+			nuke.message(self.libpath + "The path does not exist.")
+		for i in os.listdir(self.libpath):
+			base, ext = os.path.splitext(i)
+			if ext != ".nk":
+				continue
+			self.nklist.addItem(QListWidgetItem(i))
+
+def main():
+	global customApp
+	try:
+		customApp.close()
+    except:
+		pass
+
+	customApp = NkLibrary()
+	try:
+		customApp.show()
+    except:
+		pass
