@@ -58,7 +58,7 @@ ___ save(data):
 
     """
     setting_file = get_settings_file()
-    with o..(setting_file, "w") as file_:
+    w__ o..(setting_file, "w") __ file_:
         j___.dump(data, file_, indent=4, sort_keys=T..)
 
     r_ data
@@ -114,7 +114,7 @@ c_ Settings(object):
 
         settings_file = get_settings_file()
         __ no. __.path.isfile(settings_file):
-            with o..(settings_file, "w") as file_:
+            w__ o..(settings_file, "w") __ file_:
                 j___.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=T..)
 
         r_ settings_file
@@ -130,5 +130,5 @@ c_ Settings(object):
             dict: Settings parsed from given path.
 
         """
-        with o..(path, "r") as file_:
+        w__ o..(path, "r") __ file_:
             r_ j___.load(file_)

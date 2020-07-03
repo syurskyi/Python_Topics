@@ -6,7 +6,7 @@ ______ __
 ______ ___
 ______ subprocess
 ______ urllib
-______ xml.etree.ElementTree as ET
+______ xml.etree.ElementTree __ ET
 ______ collections
 ______ pl..
 ______ struct
@@ -15,7 +15,7 @@ ______ j___
 ______ ?
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui as ?W..
+    ____ PySide ______ QtGui __ ?W..
     ____ PySide ______ QtGui
     ____ PySide ______ QtCore
 ____
@@ -25,9 +25,9 @@ ____
 ______ templates
 
 ___ load_icons(*args):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, '../', 'icons')
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
     join = __.path.join
     r_ {'about': join(dir_icon, 'about.jpg'),
      'icon_logo': join(dir_icon, 'logo.png'),
@@ -81,10 +81,10 @@ ___ load_settings(*args):
             __ no. __.path.isdir(pool.text):
                 ___
                     __.makedirs(pool.text)
-                    msg = 'created missing pools dir at {}'.format(pool.text)
+                    msg = 'created missing pools dir at {}'.f..(pool.text)
                     write_log(msg)
-                except Exception as error:
-                    msg = 'Unable to create pools dir at {}; {}'.format(pool.text, error)
+                except Exception __ error:
+                    msg = 'Unable to create pools dir at {}; {}'.f..(pool.text, error)
                     write_log(msg)
 
             pools_sorted = collections.OrderedDict(sorted(pools.items()))
@@ -107,9 +107,9 @@ ___ load_hotkeys(*args):
         ___ setting __ settingsroot.find('hotkeys').f_a_('hotkey'):
             name = setting.get('name')
             hotkeys[name] = setting.text
-            hotkeys['{}_ctrl'.format(name)] = setting.get('ctrl')
-            hotkeys['{}_shift'.format(name)] = setting.get('shift')
-            hotkeys['{}_alt'.format(name)] = setting.get('alt')
+            hotkeys['{}_ctrl'.f..(name)] = setting.get('ctrl')
+            hotkeys['{}_shift'.f..(name)] = setting.get('shift')
+            hotkeys['{}_alt'.f..(name)] = setting.get('alt')
 
     r_ hotkeys
 
@@ -118,13 +118,13 @@ ___ get_settings_xml(*args):
     settings_xml = __.path.join(get_tool_private_root(), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with o..(settings_xml, 'w') as look_template:
-                template = templates.SETTINGS.format(standard_pool=get_standard_preset_pool())
+            w__ o..(settings_xml, 'w') __ look_template:
+                template = templates.SETTINGS.f..(standard_pool=get_standard_preset_pool())
                 look_template.write(template.strip())
-                msg = "smartLook settings doesn't exist. created template at: {}".format(settings_xml)
+                msg = "smartLook settings doesn't exist. created template at: {}".f..(settings_xml)
                 write_log(msg)
         ______
-            msg = 'Failed writing smartLook settings template at: {}'.format(settings_xml)
+            msg = 'Failed writing smartLook settings template at: {}'.f..(settings_xml)
             write_log(msg)
 
     check_xml_ok(settings_xml)
@@ -159,7 +159,7 @@ ___ get_default_snapshot_root_dir(*args):
         ___
             __.makedirs(default_snapshots_root)
         ______
-            msg = "Unable to create default snapshot root directory at: '{}'".format(default_snapshots_root)
+            msg = "Unable to create default snapshot root directory at: '{}'".f..(default_snapshots_root)
             show_message_box(N.., msg)
 
     r_ default_snapshots_root
@@ -170,17 +170,17 @@ ___ load_advanced_settings(*args):
     advanced_settings_default = templates.ADVANCED_SETTINGS_DEFAULT
     __ no. __.path.isfile(advanced_settings):
         ___
-            with o..(advanced_settings, 'w') as advset:
+            w__ o..(advanced_settings, 'w') __ advset:
                 advset.write(advanced_settings_default)
-        except Exception as e:
+        except Exception __ e:
             print e
-            write_log('Error writing advanced settings file: {}'.format(e))
+            write_log('Error writing advanced settings file: {}'.f..(e))
 
     ___
-        with o..(advanced_settings, 'r') as advset:
+        w__ o..(advanced_settings, 'r') __ advset:
             content = advset.read()
-    except Exception as e:
-        r_ 'Unable to read advanced settings file. {}'.format(e)
+    except Exception __ e:
+        r_ 'Unable to read advanced settings file. {}'.f..(e)
 
     r_ content
 
@@ -191,7 +191,7 @@ ___ parse_advanced_settings(*args):
     vars_line = '-lk'
     advanced_settings_file = __.path.join(get_tool_public_root(), 'advancedsettings.set')
     ___
-        with o..(advanced_settings_file, 'r') as advset:
+        w__ o..(advanced_settings_file, 'r') __ advset:
             advanced_settings_lines = [ line ___ line __ advset.readlines() __ line[:le.(vars_line)] __ vars_line ]
     ______
         pass
@@ -216,7 +216,7 @@ ___ get_standard_preset_pool(*args):
 
 ___ check_xml_ok(xml, *args):
     ___
-        with o..(xml, 'r') as xml_file:
+        w__ o..(xml, 'r') __ xml_file:
             ET.fromstring(xml_file.read())
         r_ T..
     ______
@@ -243,18 +243,18 @@ ___ open_website(url, *args):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
+            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
 
     r_
 
 
 ___ set_style_sheet(widget):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     styles = __.path.join(this_dir, '../', 'styles', 'styles.qss')
-    styles = __.path.normpath(styles)
+    styles = __.path.n_p_(styles)
     __ __.path.isfile(styles):
-        with o..(styles) as file_:
+        w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -272,7 +272,7 @@ ___ get_topleft_coordinates(*args):
 
 
 ___ create_uid(*args):
-    val = '{}_{}'.format(ti__.ti__(), random.random())
+    val = '{}_{}'.f..(ti__.ti__(), random.random())
     r_ hashlib.md5(val).hexdigest()
 
 
@@ -286,8 +286,8 @@ ___ find_looks_group(*args):
 
 
 ___ get_installed_root_dir(*args):
-    root = __.path.join(__.path.dirname(__file__), '../', '../')
-    r_ __.path.normpath(root)
+    root = __.path.join(__.path.dirname( -f), '../', '../')
+    r_ __.path.n_p_(root)
 
 
 ___ get_tool_public_root(*args):
@@ -318,17 +318,17 @@ ___ get_log_file(*args):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with o..(log_file, 'w') as lf:
-            log_template = 'connect log\n{}\n'.format('-' * 50)
+        w__ o..(log_file, 'w') __ lf:
+            log_template = 'connect log\n{}\n'.f..('-' * 50)
             lf.write(log_template)
     r_ log_file
 
 
 ___ write_log(text, tool = 'lk', *args):
-    with o..(get_log_file(), 'a') as file_:
+    w__ o..(get_log_file(), 'a') __ file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
         log_time = ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.format(log_time, tool, text))
+        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ check_web_connection(*args):
@@ -349,7 +349,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
-                print 'smartLook | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
+                print 'smartLook | settings exists: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2)
             r_
 
     __ item_found __ 0:
@@ -359,10 +359,10 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with o..(xml, 'w') as xml:
+        w__ o..(xml, 'w') __ xml:
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=T..)
-        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
+        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ prettyprint(elem, level = 0):
@@ -393,11 +393,11 @@ ___ build_hotkeys(*args):
 
     ___ e __ elements:
         hotkey = ''
-        __ hotkeys['{}_ctrl'.format(e)] __ 'True':
+        __ hotkeys['{}_ctrl'.f..(e)] __ 'True':
             hotkey = 'ctrl+'
-        __ hotkeys['{}_shift'.format(e)] __ 'True':
+        __ hotkeys['{}_shift'.f..(e)] __ 'True':
             hotkey += 'shift+'
-        __ hotkeys['{}_alt'.format(e)] __ 'True':
+        __ hotkeys['{}_alt'.f..(e)] __ 'True':
             hotkey += 'alt+'
         __ hotkeys[e] is N..:
             hotkeys_build[e] = ''
@@ -421,7 +421,7 @@ ___ set_hotkeys(*args):
      'settings': 'looks_settings'}
     ___
         ___ command, hotkey __ hotkeys_dict.items():
-            command_item = ?.menu('Nuke').findItem('cragl/smartLook/{}'.format(command))
+            command_item = ?.menu('Nuke').findItem('cragl/smartLook/{}'.f..(command))
             command_item.setShortcut(hotkeys[hotkey])
 
     except KeyError:
@@ -437,7 +437,7 @@ ___ get_explorer_name(*args):
 
 ___ open_in_explorer(path, parent = N.., *args):
     __ no. __.path.isdir(path):
-        msg = "Unable to open directory '{}'. The path doesn't exist.".format(path)
+        msg = "Unable to open directory '{}'. The path doesn't exist.".f..(path)
         show_message_box(parent, msg)
         r_
     __ pl...system() __ 'Windows':
@@ -457,7 +457,7 @@ ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expan
     diritem.setSelected(selected)
     __ disabled:
         diritem.setDisabled(T..)
-    dirpath = __.path.normpath(dirpath)
+    dirpath = __.path.n_p_(dirpath)
     __ is_dir:
         __ icon __ '':
             icon = load_icons()['icon_folder_grey']
@@ -469,7 +469,7 @@ ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expan
 
 
 ___ get_image_size(src, *args):
-    with o..(src, 'rb') as fhandle:
+    w__ o..(src, 'rb') __ fhandle:
         head = fhandle.read(24)
         __ le.(head) != 24:
             r_ (1, 1)
@@ -512,7 +512,7 @@ ___ update_xml(key, value, *args):
         __ setting.get('name') __ key:
             setting.text = value
 
-    with o..(settings_xml, 'w') as xml:
+    w__ o..(settings_xml, 'w') __ xml:
         prettyprint(settings_root)
         settings_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -547,17 +547,17 @@ ___ get_connected_nodes(node, *args):
 
 
 ___ load_tooltips(parent, section, *args):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     tooltips_file = __.path.join(this_dir, '../', 'data', 'tooltips.json')
-    tooltips_file = __.path.normpath(tooltips_file)
+    tooltips_file = __.path.n_p_(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with o..(tooltips_file) as json_file:
+    w__ o..(tooltips_file) __ json_file:
         ttdata = j___.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
-                widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
+                widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
 
 
 ___ get_snapshot_dirs(*args):
@@ -566,7 +566,7 @@ ___ get_snapshot_dirs(*args):
 
 
 ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
-    metaxml = '{}.xml'.format(__.path.splitext(thumbnail_src)[0])
+    metaxml = '{}.xml'.f..(__.path.splitext(thumbnail_src)[0])
     __ no. __.path.isfile(metaxml):
         create_metaxml(metaxml)
     metatree = ET.parse(metaxml)
@@ -576,9 +576,9 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
             __ color is N..:
                 meta.text = ''
             ____
-                meta.text = '{},{},{}'.format(color[0], color[1], color[2])
+                meta.text = '{},{},{}'.f..(color[0], color[1], color[2])
 
-    with o..(metaxml, 'w') as xml:
+    w__ o..(metaxml, 'w') __ xml:
         prettyprint(metaroot)
         metatree.write(xml, encoding='utf-8', xml_declaration=T..)
     ___ thumb __ snapshotbowser.get_thumbnails_list():
@@ -588,20 +588,20 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
 
 
 ___ create_metaxml(src, *args):
-    with o..(src, 'w') as f:
+    w__ o..(src, 'w') __ f:
         f.write(templates.SNAPSHOT_META)
 
 
 ___ load_metadata(src, *args):
     metadata = {'flag': '',
      'comment': ''}
-    meta_xml = '{}.xml'.format(__.path.splitext(src)[0])
+    meta_xml = '{}.xml'.f..(__.path.splitext(src)[0])
     __ __.path.isfile(meta_xml):
         ___
             meta_tree = ET.parse(meta_xml)
             meta_root = meta_tree.getroot()
         ______
-            msg = "corrupt metaxml, create new one for '{}'".format(meta_xml)
+            msg = "corrupt metaxml, create new one for '{}'".f..(meta_xml)
             write_log(msg)
             __ __.path.isfile(meta_xml):
                 __.remove(meta_xml)

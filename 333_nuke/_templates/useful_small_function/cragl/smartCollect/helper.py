@@ -2,7 +2,7 @@
 ______ __
 ______ ___
 ______ ti__
-______ xml.etree.ElementTree as ET
+______ xml.etree.ElementTree __ ET
 ______ subprocess
 ______ pl..
 ______ j___
@@ -19,7 +19,7 @@ except ImportError:
         ___.path.insert(0, sitepackages)
 
 ___
-    ____ PySide ______ QtGui as ?W..
+    ____ PySide ______ QtGui __ ?W..
     ____ PySide ______ QtGui
     ____ PySide ______ QtCore
 except ImportError:
@@ -30,9 +30,9 @@ except ImportError:
 ____ smartCollect.src ______ templates
 
 ___ load_icons(*args):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, '../', 'icons')
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
     icons = {}
     ___ file_ __ __.listdir(dir_icon):
         name = __.path.splitext(file_)[0]
@@ -48,7 +48,7 @@ ___ get_tool_public_root(*args):
         ___
             __.makedirs(root)
         ______
-            write_log('unable to create open tool dir at: {}'.format(root))
+            write_log('unable to create open tool dir at: {}'.f..(root))
 
     r_ root
 
@@ -59,7 +59,7 @@ ___ get_tool_private_root(*args):
         ___
             __.makedirs(root)
         ______
-            write_log('unable to create private tool dir at: {}'.format(root))
+            write_log('unable to create private tool dir at: {}'.f..(root))
 
     r_ root
 
@@ -70,7 +70,7 @@ ___ get_logs_root():
         ___
             __.makedirs(root)
         ______
-            write_log('unable to create logs dir at: {}'.format(root))
+            write_log('unable to create logs dir at: {}'.f..(root))
 
     r_ root
 
@@ -81,25 +81,25 @@ ___ get_log_file(*args):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with o..(log_file, 'w') as lf:
-            log_template = 'connect log\n{}\n'.format('-' * 50)
+        w__ o..(log_file, 'w') __ lf:
+            log_template = 'connect log\n{}\n'.f..('-' * 50)
             lf.write(log_template)
     r_ log_file
 
 
 ___ write_log(text, tool = 'sc'):
-    with o..(get_log_file(), 'a') as file_:
+    w__ o..(get_log_file(), 'a') __ file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
         log_time = ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.format(log_time, tool, text))
+        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ get_trm_file(name):
-    this_dir = __.path.dirname(__file__)
-    file_ = __.path.join(this_dir, 'trm_{}.py'.format(name))
-    file_ = __.path.normpath(file_)
+    this_dir = __.path.dirname( -f)
+    file_ = __.path.join(this_dir, 'trm_{}.py'.f..(name))
+    file_ = __.path.n_p_(file_)
     __ no. __.path.isfile(file_):
-        raise IOError('The terminal file does not exist: {}'.format(file_))
+        raise IOError('The terminal file does not exist: {}'.f..(file_))
     r_ file_
 
 
@@ -131,13 +131,13 @@ ___ get_settings_xml(*args):
     settings_xml = __.path.join(get_tool_private_root(), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with o..(settings_xml, 'w') as look_template:
+            w__ o..(settings_xml, 'w') __ look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
-                msg = "smartCollect settings doesn't exist. created template at: {}".format(settings_xml)
+                msg = "smartCollect settings doesn't exist. created template at: {}".f..(settings_xml)
                 write_log(msg)
         ______
-            msg = 'Failed writing smartCollect settings template at: {}'.format(settings_xml)
+            msg = 'Failed writing smartCollect settings template at: {}'.f..(settings_xml)
             write_log(msg)
 
     check_xml_ok(settings_xml)
@@ -171,7 +171,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
-                print 'smartCollect | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
+                print 'smartCollect | settings exists: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2)
             r_
 
     __ item_found __ 0:
@@ -181,10 +181,10 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with o..(xml, 'w') as xml:
+        w__ o..(xml, 'w') __ xml:
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=T..)
-        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
+        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ prettyprint(elem, level = 0):
@@ -205,7 +205,7 @@ ___ prettyprint(elem, level = 0):
 
 ___ check_xml_ok(xml, *args):
     ___
-        with o..(xml, 'r') as xml_file:
+        w__ o..(xml, 'r') __ xml_file:
             ET.fromstring(xml_file.read())
         r_ T..
     ______
@@ -246,11 +246,11 @@ ___ center_window(window):
 
 
 ___ set_style_sheet(widget, *args):
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
     styles_nuke = __.path.join(this_dir, '../', 'styles', 'styles.qss')
-    styles_nuke = __.path.normpath(styles_nuke)
+    styles_nuke = __.path.n_p_(styles_nuke)
     __ __.path.isfile(styles_nuke):
-        with o..(styles_nuke) as file_:
+        w__ o..(styles_nuke) __ file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -296,7 +296,7 @@ ___ add_nukescript_settings(path, section):
         nukescript.set('comment', '')
         nukescript.set('output_path', '')
         nukescript.set('job_id', '')
-    with o..(xml, 'w') as xml_:
+    w__ o..(xml, 'w') __ xml_:
         prettyprint(root)
         tree.write(xml_, encoding='utf-8', xml_declaration=T..)
 
@@ -307,7 +307,7 @@ ___ update_nukescript_section(path, section, tag, value):
         __ nukescript.text __ path:
             nukescript.set(tag, value)
 
-    with o..(xml, 'w') as xml:
+    w__ o..(xml, 'w') __ xml:
         prettyprint(root)
         tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -325,14 +325,14 @@ ___ remove_nukescript_settings(path, section):
         __ nukescript.text __ path:
             root.find(section).remove(nukescript)
 
-    with o..(xml, 'w') as xml:
+    w__ o..(xml, 'w') __ xml:
         prettyprint(root)
         tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ update_statusbar_added(smart_collector, source, count_dropped_elements):
     plural = 's' __ count_dropped_elements > 1 ____ ''
-    status_msg = '{}: Added {} nukescript{}'.format(source.capitalize(), count_dropped_elements, plural)
+    status_msg = '{}: Added {} nukescript{}'.f..(source.capitalize(), count_dropped_elements, plural)
     update_statusbar(smart_collector, status_msg, delay=2)
 
 
@@ -366,12 +366,12 @@ ___ get_filename(path):
 
 
 ___ load_tooltips(parent, section, *args):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     tooltips_file = __.path.join(this_dir, '../', 'data', 'tooltips.json')
-    tooltips_file = __.path.normpath(tooltips_file)
+    tooltips_file = __.path.n_p_(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with o..(tooltips_file) as json_file:
+    w__ o..(tooltips_file) __ json_file:
         ___
             ttdata = j___.load(json_file)
         except ValueError:
@@ -381,14 +381,14 @@ ___ load_tooltips(parent, section, *args):
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
-                widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
+                widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
 
 
 ___ create_job_id(*args):
     current_time = str(int(ti__.ti__()))
     rand_number = str(random.random())
-    id_ = hashlib.md5('{}{}'.format(current_time, rand_number)).hexdigest()[:8]
-    r_ str('{}_{}'.format(current_time, id_))
+    id_ = hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
+    r_ str('{}_{}'.f..(current_time, id_))
 
 
 ___ update_statusbar(smart_collector, text, delay = 0):
@@ -400,7 +400,7 @@ ___ update_statusbar(smart_collector, text, delay = 0):
 ___ write_pickle_data(data):
     tmp_dir = tempfile.mkdtemp()
     path = __.path.join(tmp_dir, 'smartcollect_data.pickle')
-    with o..(path, 'w') as file_:
+    w__ o..(path, 'w') __ file_:
         cPickle.dump(data, file_)
     r_ path
 
@@ -422,7 +422,7 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
+            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
 
     r_
@@ -444,7 +444,7 @@ ___ bytesize_to_human(bytes_size, decimals = 2, human_radix = 1000.0):
      megabyte,
      gigabyte,
      terabyte]
-    human_fmt = '%.{}f %s'.format(decimals)
+    human_fmt = '%.{}f %s'.f..(decimals)
     ___ unit __ units[:-1]:
         __ bytes_size < human_radix:
             r_ human_fmt % (bytes_size, unit)

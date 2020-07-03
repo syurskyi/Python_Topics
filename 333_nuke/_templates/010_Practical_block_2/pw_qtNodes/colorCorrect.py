@@ -428,7 +428,7 @@ c_ colorPickerClass(?W..):
         #rgb
         rgb_le.setText('%d,%d,%d' % (color.red(), color.green(), color.blue()))
         #hsv
-        hsv_le.setText('{0},{1},{2}'.format(*color.getHsv()))
+        hsv_le.setText('{0},{1},{2}'.f..(*color.getHsv()))
         __ nukeNode:
             knob = nukeNode.knob(knob)
             __ knob:

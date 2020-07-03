@@ -61,12 +61,12 @@ c_ Global_clipboard(QDialog):
         qul.setStringList(user_list)
 
     ___ paste
-        loadPath = "{}{}_{}.nk".format(repo, saveName, edit.text())
+        loadPath = "{}{}_{}.nk".f..(repo, saveName, edit.text())
         __ __.path.exists(loadPath):
             ?.nodePaste(loadPath)
             c__
         ____
-            ?.m..("{}\ndoesn't exists".format(loadPath))
+            ?.m..("{}\ndoesn't exists".f..(loadPath))
 
 ___ main():
     # Create and show the form

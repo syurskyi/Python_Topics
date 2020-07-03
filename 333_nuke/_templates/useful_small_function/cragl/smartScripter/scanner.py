@@ -81,9 +81,9 @@ c_ Scanner(object):
         __ no. __.path.isdir(root):
             ___
                 __.makedirs(root)
-            except IOError as error:
+            except IOError __ error:
                 raise IOError("Cannot create stack root in directory: "
-                              "{}\n".format(root, error.m..))
+                              "{}\n".f..(root, error.m..))
 
         dirs = [__.path.join(root, dir_) ___ dir_ __ __.listdir(root)
                 __ __.path.isdir(__.path.join(root, dir_))
@@ -121,10 +121,10 @@ c_ Scanner(object):
 
             ___
                 data = _parse_json(path)
-            except (IOError, KeyError, ValueError) as error:
+            except (IOError, KeyError, ValueError) __ error:
                 logger.warning(error.m..)
 
-            with o..(__.path.splitext(path)[0], "r") as command_file:
+            w__ o..(__.path.splitext(path)[0], "r") __ command_file:
                 command = command_file.read()
 
             command_widget = widgets.CommandWidget(
@@ -156,14 +156,14 @@ c_ Scanner(object):
         """
         command_file = __.path.splitext(path)[0]
         __ no. __.path.isfile(command_file):
-            raise IOError("Skipping command due no to command file {}".format(
+            raise IOError("Skipping command due no to command file {}".f..(
                 path
             ))
 
-        with o..(path, "r") as json_file:
+        w__ o..(path, "r") __ json_file:
             ___
                 r_ j___.load(json_file)
             except ValueError:
-                raise ValueError("Skipping corrupt command {}".format(path))
+                raise ValueError("Skipping corrupt command {}".f..(path))
             except KeyError:
-                raise KeyError("Skipping insufficient command {}".format(path))
+                raise KeyError("Skipping insufficient command {}".f..(path))

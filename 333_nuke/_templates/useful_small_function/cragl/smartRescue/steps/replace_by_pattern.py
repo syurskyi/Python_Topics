@@ -79,7 +79,7 @@ c_ ReplaceByPattern(BaseStep):
 
     ___ process
         """Process the file removing illegal characters."""
-        with o..(path, "r") as src:
+        w__ o..(path, "r") __ src:
             content = src.read()
 
         ___ rule __ setup["replace"]:
@@ -89,5 +89,5 @@ c_ ReplaceByPattern(BaseStep):
             logger.info("Replace '%s' with '%s'", pattern, substitution)
             content = re.sub(pattern, substitution, content)
 
-        with o..(path, "w") as dest:
+        w__ o..(path, "w") __ dest:
             dest.write(content)

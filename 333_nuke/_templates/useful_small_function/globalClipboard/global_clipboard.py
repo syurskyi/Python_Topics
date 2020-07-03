@@ -11,18 +11,18 @@ c_ global_clipboard():
             user = __.environ.get("LOGNAME")
 
         saveName = "tempClipBoard"
-        savePath = "{}{}_{}.nk".format(repo, saveName, user)
+        savePath = "{}{}_{}.nk".f..(repo, saveName, user)
 
     ___ paste(self, getUser):
-        loadPath = "{}{}_{}.nk".format(repo, saveName, getUser)
+        loadPath = "{}{}_{}.nk".f..(repo, saveName, getUser)
         __ __.path.exists(loadPath):
             ?.nodePaste(loadPath)
         ____
-            ?.m..("{}\ndoesn't exists".format(loadPath))
+            ?.m..("{}\ndoesn't exists".f..(loadPath))
 
     ___ copy
         ?.nodeCopy(savePath)
-        print "Selected nodes saved to {}".format(savePath)
+        print "Selected nodes saved to {}".f..(savePath)
 
     ___ pasteName
         name = ?.getInput("First Initial + Last Name:")

@@ -135,7 +135,7 @@ c_ ScriptInfo(NodeStep):
                 YYYY/MM/DD Hour:Minute:Second
 
         """
-        r_ "{:%Y/%m/%d - %H:%M:%S}".format(d_t_.d_t_.now())
+        r_ "{:%Y/%m/%d - %H:%M:%S}".f..(d_t_.d_t_.now())
 
     @staticmethod
     ___ number_nodes(recursive=False):
@@ -195,7 +195,7 @@ c_ ScriptInfo(NodeStep):
             __ knob_name __ "format":
                 format_ = "{} ({}x{} {})"
                 format_knob = knob.v..
-                r_ format_.format(format_knob.name(), format_knob.width(),
+                r_ format_.f..(format_knob.name(), format_knob.width(),
                                       format_knob.height(),
                                       format_knob.pixelAspect())
             # Implement extraction for other nodes in here.
@@ -301,16 +301,16 @@ c_ ScriptInfo(NodeStep):
                 format: 'first: last'.
 
         """
-        r_ "{}: {}".format(tuple_[0], tuple_[1])
+        r_ "{}: {}".f..(tuple_[0], tuple_[1])
 
     ___ process
         """Generate the working file info."""
-        copy_basename = "{}_info.txt".format(basename)
+        copy_basename = "{}_info.txt".f..(basename)
         info_path = __.path.join(parent_dir, copy_basename)
 
         logger.info("Creating information file %s", info_path)
 
-        with o..(info_path, "w") as dest:
+        w__ o..(info_path, "w") __ dest:
             separator = "-" * 50
             first_frame, last_frame = frame_range()
             root_values = "\n".join(
@@ -326,7 +326,7 @@ c_ ScriptInfo(NodeStep):
                  ___ stat __ len_nodes_by_class()]
             )
 
-            content = _TEMPLATE.format(
+            content = _TEMPLATE.f..(
                 working_file_name=basename,
                 date=date,
                 separator=separator,

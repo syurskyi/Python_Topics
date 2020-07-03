@@ -26,7 +26,7 @@ ___ nodeToggler():
                     ____ item.knob(knobPanel.value('Select Knob')).v.. __ T..:
                         item.knob(knobPanel.value('Select Knob')).setValue(False)
                 else:
-                    nuke.m..('{} node has no {} knob.'.format(item.name(), knobPanel.value('Select Knob')))
+                    nuke.m..('{} node has no {} knob.'.f..(item.name(), knobPanel.value('Select Knob')))
         #creates panel for node selection
 	nodePanel = nuke.Panel('Select Node')
         allNode = nuke.allNodes()

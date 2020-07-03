@@ -8,7 +8,7 @@ ______ ___
 ______ subprocess
 ______ ti__
 ______ urllib
-______ xml.etree.ElementTree as ET
+______ xml.etree.ElementTree __ ET
 ______ collections
 ______ pl..
 ______ d_t_
@@ -16,7 +16,7 @@ ______ errno
 ______ ?
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui as ?W..
+    ____ PySide ______ QtGui __ ?W..
     ____ PySide ______ QtCore
 ____
     ____ ? ______ ?W..
@@ -24,9 +24,9 @@ ____
 ______ templates
 
 ___ load_icons(*args):
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
     dir_icon = __.path.join(this_dir, '../', 'icons')
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
     r_ {'icon_logo': __.path.join(dir_icon, 'logo.png'),
      'icon_nuke': __.path.join(dir_icon, 'nuke.png'),
      'icon_log': __.path.join(dir_icon, 'log.png'),
@@ -107,9 +107,9 @@ ___ get_smart_render_public_root(*args):
 
 
 ___ get_installed_root_dir(*args):
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
     root = __.path.join(this_dir, '../', '../')
-    r_ __.path.normpath(root)
+    r_ __.path.n_p_(root)
 
 
 ___ get_public_cache_folder():
@@ -118,7 +118,7 @@ ___ get_public_cache_folder():
         ___
             __.makedirs(cache_dir)
         ______
-            msg = 'Unable to create cache directory at {}'.format(cache_dir)
+            msg = 'Unable to create cache directory at {}'.f..(cache_dir)
             write_log(msg)
 
     r_ cache_dir
@@ -130,7 +130,7 @@ ___ get_tmp_folder():
         ___
             __.makedirs(tmp_dir)
         ______
-            msg = 'Unable to create tmp directory at {}'.format(tmp_dir)
+            msg = 'Unable to create tmp directory at {}'.f..(tmp_dir)
             write_log(msg)
 
     r_ tmp_dir
@@ -159,22 +159,22 @@ ___ get_smartrender_log_dir(*args):
 
 
 ___ get_sounds_dir(*args):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     sounds_dir = __.path.join(this_dir, '../', 'sounds')
-    sounds_dir = __.path.normpath(sounds_dir)
+    sounds_dir = __.path.n_p_(sounds_dir)
     __ no. __.path.isdir(sounds_dir):
         ___
             __.makedirs(sounds_dir)
         ______
-            write_log('unable to create sounds dir in {}.'.format(sounds_dir))
+            write_log('unable to create sounds dir in {}.'.f..(sounds_dir))
 
     r_ sounds_dir
 
 
 ___ get_tooltips_file(*args):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     tooltips = __.path.join(this_dir, '../', 'data', 'tooltips.json')
-    r_ __.path.normpath(tooltips)
+    r_ __.path.n_p_(tooltips)
 
 
 ___ update_job_log(job_id, processdata, ti__ = str(int(ti__.ti__())), *args):
@@ -191,7 +191,7 @@ ___ update_job_log(job_id, processdata, ti__ = str(int(ti__.ti__())), *args):
             p.set('status', str(processdata[0]))
             p.set('thread', str(processdata[1]))
             p.text = processdata[2]
-            with o..(jobs_xml, 'w') as xml:
+            w__ o..(jobs_xml, 'w') __ xml:
                 prettyprint(jobs_root)
                 jobs_tree.write(xml, encoding='utf-8', xml_declaration=T..)
             r_ T..
@@ -200,13 +200,13 @@ ___ update_job_log(job_id, processdata, ti__ = str(int(ti__.ti__())), *args):
 ___ check_xml_ok(xml, *args):
     settings_xml = __.path.join(get_smart_render_private_root(), 'settings.xml')
     ___
-        with o..(xml, 'r') as xml_file:
+        w__ o..(xml, 'r') __ xml_file:
             ET.fromstring(xml_file.read())
         r_ T..
     ______
         xml_name = __.path.basename(xml)
-        m.. = 'The smartRender {} file seems to be broken. Do you want to reset it now?'.format(xml_name)
-        write_log('smartRender {} file broken.'.format(xml_name))
+        m.. = 'The smartRender {} file seems to be broken. Do you want to reset it now?'.f..(xml_name)
+        write_log('smartRender {} file broken.'.f..(xml_name))
         msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton)
         reset = msg_box.addButton('reset', ?W...QMessageBox.AcceptRole)
         style = 'QPushButton {background-color: rgba(51, 204, 255, 150);}'
@@ -245,7 +245,7 @@ ___ update_job_data(job_id, key, val, *args):
             ___ setting __ job.f_a_('setting'):
                 __ setting.get('name') __ key:
                     setting.text = val
-                    with o..(jobs_xml, 'w') as xml:
+                    w__ o..(jobs_xml, 'w') __ xml:
                         prettyprint(jobs_root)
                         jobs_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -285,18 +285,18 @@ ___ calculate_process_precentage(job_id, frame, *args):
                 __ f.text __ str(frame):
                     job.find('frames').remove(f)
 
-            with o..(jobs_xml, 'w') as xml:
+            w__ o..(jobs_xml, 'w') __ xml:
                 prettyprint(jobs_root)
                 jobs_tree.write(xml, encoding='utf-8', xml_declaration=T..)
             r_ done_precentage
 
 
 ___ set_style_sheet(widget, *args):
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
     styles_nuke = __.path.join(this_dir, '../', 'styles', 'nuke.qss')
-    styles_nuke = __.path.normpath(styles_nuke)
+    styles_nuke = __.path.n_p_(styles_nuke)
     __ __.path.isfile(styles_nuke):
-        with o..(styles_nuke) as file_:
+        w__ o..(styles_nuke) __ file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -315,7 +315,7 @@ ___ open_website(url, *args):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
+            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
 
     r_
@@ -328,7 +328,7 @@ ___ get_job_id_by_script_orig(script_orig, *args):
             r_ ''
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
-    except Exception as e:
+    except Exception __ e:
         r_ ''
 
     jobs = []
@@ -360,7 +360,7 @@ ___ get_job_data(job_id, *args):
             r_ {}
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
-    except Exception as e:
+    except Exception __ e:
         r_ {}
 
     ___ job __ jobs_root.find('jobs').f_a_('job'):
@@ -391,7 +391,7 @@ ___ get_all_jobs_data(filter, *args):
             r_ {}
         jobs_tree = ET.parse(jobs_xml)
         jobs_root = jobs_tree.getroot()
-    except Exception as e:
+    except Exception __ e:
         r_ {}
 
     ___ job __ jobs_root.find('jobs').f_a_('job'):
@@ -425,8 +425,8 @@ ___ get_log_file(*args):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with o..(log_file, 'w') as lf:
-            log_template = 'connect log\n{}\n'.format('-' * 50)
+        w__ o..(log_file, 'w') __ lf:
+            log_template = 'connect log\n{}\n'.f..('-' * 50)
             lf.write(log_template)
     r_ log_file
 
@@ -436,34 +436,34 @@ ___ get_time_formated():
 
 
 ___ write_log(text, tool = 'rn'):
-    with o..(get_log_file(), 'a') as file_:
+    w__ o..(get_log_file(), 'a') __ file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
         log_time = ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.format(log_time, tool, text))
+        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ write_render_log(text, *args):
     log = __.path.join(get_smart_render_private_root(), 'log.txt')
     __ no. __.path.isfile(log):
-        with o..(log, 'w') as lf:
+        w__ o..(log, 'w') __ lf:
             lf.write('')
     ___
-        with o..(log, 'a') as lf:
-            lf.write('{}: {}\n'.format(get_time_formated()), text)
+        w__ o..(log, 'a') __ lf:
+            lf.write('{}: {}\n'.f..(get_time_formated()), text)
         r_ T..
     except IOError:
         r_ False
 
 
 ___ write_terminal_cmd(job_id, text, file = 'input', *args):
-    log_name = '{}_terminal_{}.log'.format(job_id, file)
+    log_name = '{}_terminal_{}.log'.f..(job_id, file)
     log = __.path.join(get_smartrender_log_dir(), log_name)
     __ no. __.path.isfile(log):
-        with o..(log, 'w') as file_:
+        w__ o..(log, 'w') __ file_:
             file_.write('')
     ___
-        with o..(log, 'a') as file_:
-            file_.write('{}\n'.format(text))
+        w__ o..(log, 'a') __ file_:
+            file_.write('{}\n'.f..(text))
         r_ T..
     except IOError:
         r_ False
@@ -473,12 +473,12 @@ ___ get_job_xml(*args):
     job_xml = __.path.join(get_smart_render_private_root(), 'jobs.xml')
     __ no. __.path.isfile(job_xml):
         ___
-            with o..(job_xml, 'w') as job_template:
+            w__ o..(job_xml, 'w') __ job_template:
                 template = templates.JOB
                 job_template.write(template.strip())
-                write_log("smartRender job log doesn't exist. created template at: {}".format(job_xml))
+                write_log("smartRender job log doesn't exist. created template at: {}".f..(job_xml))
         ______
-            write_log('Failed writing smartRender job log template to: {}'.format(job_xml))
+            write_log('Failed writing smartRender job log template to: {}'.f..(job_xml))
 
     r_ job_xml
 
@@ -528,21 +528,21 @@ ___ force_create_render_dir(*args):
     os_dir = ?.callbacks.filenameFilter(dir_name)
     ___
         __.makedirs(os_dir)
-    except OSError as e:
+    except OSError __ e:
         __ e.errno != errno.EEXIST:
             raise
 
 
 ___ load_terminal_log(job_id, mode, *args):
-    xml_name = '{}_terminal_{}.log'.format(job_id, mode)
+    xml_name = '{}_terminal_{}.log'.f..(job_id, mode)
     terminal_file = __.path.join(get_smartrender_log_dir(), xml_name)
     __ no. __.path.isfile(terminal_file):
         r_ ''
     ___
-        with o..(terminal_file, 'rt') as file:
+        w__ o..(terminal_file, 'rt') __ file:
             r_ file.read()
-    except Exception as e:
-        r_ 'Error reading the terminal input file. {}'.format(e)
+    except Exception __ e:
+        r_ 'Error reading the terminal input file. {}'.f..(e)
 
 
 ___ load_job_log_data(job_id, filter, file_output = False, *args):
@@ -580,17 +580,17 @@ ___ load_job_log_data(job_id, filter, file_output = False, *args):
                 data_time = int(data.get('time'))
                 ti__ = d_t_.d_t_.fromtimestamp(data_time).strftime('%d/%m/%Y %H:%M:%S')
                 __ file_output:
-                    job_data += '{time} {code} {text}\n'.format(ti__=ti__, code=code, text=data.text)
+                    job_data += '{time} {code} {text}\n'.f..(ti__=ti__, code=code, text=data.text)
                 ____
-                    job_data += '<tr><td>{time}</td><td> {code}</td><td>] {text}</td></tr>'.format(ti__=ti__, code=code, text=data.text)
-                    job_data = '<table>{}</table>'.format(job_data)
+                    job_data += '<tr><td>{time}</td><td> {code}</td><td>] {text}</td></tr>'.f..(ti__=ti__, code=code, text=data.text)
+                    job_data = '<table>{}</table>'.f..(job_data)
 
     r_ job_data
 
 
 ___ open_in_explorer(path, parent = N.., *args):
     __ no. __.path.isdir(path):
-        msg = "Unable to open directory. The path doesn't exist:\n\n{}".format(path)
+        msg = "Unable to open directory. The path doesn't exist:\n\n{}".f..(path)
         show_message_box(parent, msg)
     __ pl...system() __ 'Windows':
         __.startfile(path)
@@ -618,8 +618,8 @@ ___ reset_file(which, window, *args):
                     __.remove(jobs_file)
                     msg = 'Successfully flushed jobs file.'
                     show_message_box(window, msg)
-            except Exception as e:
-                write_log('Cannot remove jobs file. {}'.format(e))
+            except Exception __ e:
+                write_log('Cannot remove jobs file. {}'.f..(e))
 
         ____ which __ 'settings':
             settings_file = get_settings_xml()
@@ -628,8 +628,8 @@ ___ reset_file(which, window, *args):
                     __.remove(settings_file)
                     msg = 'Successfully reset the smartRender settings.'
                     show_message_box(window, msg)
-            except Exception as e:
-                write_log('Cannot reset settings file. {}'.format(e))
+            except Exception __ e:
+                write_log('Cannot reset settings file. {}'.f..(e))
 
 
 ___ get_settings_xml(*args):
@@ -637,12 +637,12 @@ ___ get_settings_xml(*args):
     __ no. __.path.isfile(settings_xml):
         desktop_cache = __.path.join(__.path.expanduser('~'), 'Desktop/cache')
         ___
-            with o..(settings_xml, 'w') as render_template:
-                template = templates.SETTINGS.format(public_cache=get_public_cache_folder(), desktop_cache=desktop_cache)
+            w__ o..(settings_xml, 'w') __ render_template:
+                template = templates.SETTINGS.f..(public_cache=get_public_cache_folder(), desktop_cache=desktop_cache)
                 render_template.write(template.strip())
-                write_log("smartRender settings doesn't exist. created template at: {}".format(settings_xml))
+                write_log("smartRender settings doesn't exist. created template at: {}".f..(settings_xml))
         ______
-            write_log('Failed writing smartRender settings template at: {}'.format(settings_xml))
+            write_log('Failed writing smartRender settings template at: {}'.f..(settings_xml))
 
     check_settings_xml_values_exist()
     r_ settings_xml
@@ -780,7 +780,7 @@ ___ add_cache_path(mode, path, *args):
     new_cache_path.text = path
     new_cache_path.set('mode', mode)
     ET.dump(new_cache_path)
-    with o..(settings_xml, 'w') as xml:
+    w__ o..(settings_xml, 'w') __ xml:
         prettyprint(settings_root)
         settings_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -795,7 +795,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
-                print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
+                print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2)
             r_
 
     __ item_found __ 0:
@@ -805,10 +805,10 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with o..(xml, 'w') as xml:
+        w__ o..(xml, 'w') __ xml:
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=T..)
-        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
+        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '', value2 = ''):
@@ -822,7 +822,7 @@ ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '',
             __ value2 __ child.text:
                 item_found += 1
                 __ debug:
-                    print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2)
+                    print 'smartRender | settings exists: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2)
                 r_
 
     __ item_found __ 0:
@@ -832,10 +832,10 @@ ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '',
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with o..(xml, 'w') as xml:
+        w__ o..(xml, 'w') __ xml:
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=T..)
-        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
+        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value2 = ''):
@@ -864,16 +864,16 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
             ___ child __ root.find('presets').f_a_('preset'):
                 __ child.get('name') __ 'current':
                     child.ap..(elem)
-                    with o..(settings_xml, 'w'):
+                    w__ o..(settings_xml, 'w'):
                         prettyprint(root)
                         tree.write(settings_xml, encoding='utf-8', xml_declaration=T..)
-                    write_log('settings xml added: {}|{}|{}|{}|{}|{}'.format(section, key1, value1, text, key2, value2))
+                    write_log('settings xml added: {}|{}|{}|{}|{}|{}'.f..(section, key1, value1, text, key2, value2))
 
 
 ___ get_cpu_count(*args):
     ___
         r_ multiprocessing.cpu_count()
-    except Exception as e:
+    except Exception __ e:
         __ hasattr(__, 'sysconf'):
             __ __.sysconf_names.has_key('SC_NPROCESSORS_ONLN'):
                 ncpus = __.sysconf('SC_NPROCESSORS_ONLN')
@@ -911,7 +911,7 @@ ___ delete_cache_path(path, *args):
     ___ path_element __ settings_root.find('cache').f_a_('path'):
         __ path_element.text __ path:
             settings_root.find('cache').remove(path_element)
-            with o..(settings_xml, 'w') as xml:
+            w__ o..(settings_xml, 'w') __ xml:
                 prettyprint(settings_root)
                 settings_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -940,8 +940,8 @@ ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_bu
 ___ create_unique_job_id(*args):
     current_time = str(int(ti__.ti__()))
     rand_number = str(random.random())
-    id = hashlib.md5('{}{}'.format(current_time, rand_number)).hexdigest()[:8]
-    r_ str('{}_{}'.format(current_time, id))
+    id = hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
+    r_ str('{}_{}'.f..(current_time, id))
 
 
 ___ get_all_views(range_ = 10):
@@ -964,12 +964,12 @@ ___ create_tooltips(parent, key, *args):
     tooltips_file = get_tooltips_file()
     __ no. __.path.isfile(tooltips_file):
         r_
-    with o..(tooltips_file) as json_file:
+    w__ o..(tooltips_file) __ json_file:
         ttdata = j___.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ tooltip __ ttdata[key]:
             __ tooltip['tt'] __ widget.property('tt'):
-                widget.setToolTip('<strong>{}</strong><br />{}'.format(tooltip['ttt'], tooltip['ttc']))
+                widget.setToolTip('<strong>{}</strong><br />{}'.f..(tooltip['ttt'], tooltip['ttc']))
 
 
 ___ get_explorer_name(*args):
@@ -983,7 +983,7 @@ ___ get_recent_nukescripts(*args):
     file_recent_files = __.path.join(__.path.expanduser('~'), '.nuke', 'recent_files')
     recent_files = []
     __ __.path.isfile(file_recent_files):
-        with o..(file_recent_files, 'r') as rf:
+        w__ o..(file_recent_files, 'r') __ rf:
             ___ line __ rf:
                 file_ = line.replace('\n', '')
                 file_ = file_.replace('"', '')
@@ -997,20 +997,20 @@ ___ get_recent_nukescripts(*args):
 ___ open_renderpath_in_explorer(label, renderpath, srw, *args):
     __ renderpath __ '':
         label = label.split(' (')[0]
-        msg = "The file path for '{}' hasn't been set up, yet.".format(label)
+        msg = "The file path for '{}' hasn't been set up, yet.".f..(label)
         show_message_box(srw, msg)
         r_
     ___
         open_in_explorer(__.path.dirname(renderpath), parent=srw)
-    except Exception as e:
-        show_message_box(srw, 'An error occurred: {}'.format(e))
+    except Exception __ e:
+        show_message_box(srw, 'An error occurred: {}'.f..(e))
         r_
 
 
 ___ get_processor(name):
-    this_dir = __.path.dirname(__file__)
-    processor = __.path.join(this_dir, '../', 'trm', '{}.py'.format(name))
-    processor = __.path.normpath(processor)
+    this_dir = __.path.dirname( -f)
+    processor = __.path.join(this_dir, '../', 'trm', '{}.py'.f..(name))
+    processor = __.path.n_p_(processor)
     __ no. __.path.isfile(processor):
-        raise IOError('The processor script does not exist: {}'.format(processor))
+        raise IOError('The processor script does not exist: {}'.f..(processor))
     r_ processor

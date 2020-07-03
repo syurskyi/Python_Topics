@@ -6,10 +6,10 @@ ______ pl..
 ______ re
 ______ subprocess
 ______ ___
-______ xml.etree.ElementTree as ET
+______ xml.etree.ElementTree __ ET
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui as ?W..
+    ____ PySide ______ QtGui __ ?W..
     ____ PySide ______ QtGui
     ____ PySide ______ QtCore
 ____
@@ -20,9 +20,9 @@ ____ smartCommand ______ templates
 ____ smartCommand.info ______ __product__
 
 ___ load_icons():
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, 'icons')
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
     icons = {}
     ___ file_ __ __.listdir(dir_icon):
         name = __.path.splitext(file_)[0]
@@ -33,11 +33,11 @@ ___ load_icons():
 
 
 ___ set_style_sheet(widget, style = 'styles.qss'):
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
     styles = __.path.join(this_dir, 'styles', style)
-    styles = __.path.normpath(styles)
+    styles = __.path.n_p_(styles)
     __ __.path.isfile(styles):
-        with o..(styles) as file_:
+        w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -57,16 +57,16 @@ ___ get_tool_root(which):
         ___
             __.makedirs(root)
         except IOError:
-            write_log('unable to create open tool dir at: {}'.format(root))
+            write_log('unable to create open tool dir at: {}'.f..(root))
 
     r_ root
 
 
 ___ write_log(text, tool = 'sc'):
-    with o..(get_log_file(), 'a') as file_:
+    w__ o..(get_log_file(), 'a') __ file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
         log_time = ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.format(log_time, tool, text))
+        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ get_log_file():
@@ -75,8 +75,8 @@ ___ get_log_file():
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with o..(log_file, 'w') as lf:
-            log_template = 'connect log\n{}\n'.format('-' * 50)
+        w__ o..(log_file, 'w') __ lf:
+            log_template = 'connect log\n{}\n'.f..('-' * 50)
             lf.write(log_template)
     r_ log_file
 
@@ -104,7 +104,7 @@ ___ get_collection_root():
         ___
             __.makedirs(collection_root)
         except OSError:
-            msg = "Cannot create menu direcory in '{}'. Please set a different path.".format(collection_root)
+            msg = "Cannot create menu direcory in '{}'. Please set a different path.".f..(collection_root)
             ?.m..(msg)
 
     r_ collection_root
@@ -116,7 +116,7 @@ ___ get_scriptlets_root():
         ___
             __.makedirs(scriptlet_root)
         except OSError:
-            msg = "Cannot create scriptlet direcory in '{}'. Please set a different path.".format(scriptlet_root)
+            msg = "Cannot create scriptlet direcory in '{}'. Please set a different path.".f..(scriptlet_root)
             ?.m..(msg)
 
     r_ scriptlet_root
@@ -152,13 +152,13 @@ ___ get_settings_xml():
     settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with o..(settings_xml, 'w') as look_template:
+            w__ o..(settings_xml, 'w') __ look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
-                msg = "{} settings doesn't exist. created template at: {}".format(__product__, settings_xml)
+                msg = "{} settings doesn't exist. created template at: {}".f..(__product__, settings_xml)
                 write_log(msg)
         ______
-            msg = 'Failed writing {} settings template at: {}'.format(__product__, settings_xml)
+            msg = 'Failed writing {} settings template at: {}'.f..(__product__, settings_xml)
             write_log(msg)
 
     check_xml_ok(settings_xml)
@@ -181,7 +181,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
-                print '{} | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(__product__, parent, section, key1, value1, text, key2, value2)
+                print '{} | settings exists: {}|{}|{}|{}|{}|{}|{}'.f..(__product__, parent, section, key1, value1, text, key2, value2)
             r_
 
     __ item_found __ 0:
@@ -191,10 +191,10 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with o..(xml, 'w') as xml:
+        w__ o..(xml, 'w') __ xml:
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=T..)
-        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
+        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ prettyprint(elem, level = 0):
@@ -215,11 +215,11 @@ ___ prettyprint(elem, level = 0):
 
 ___ check_xml_ok(xml):
     ___
-        with o..(xml, 'r') as xml_file:
+        w__ o..(xml, 'r') __ xml_file:
             ET.fromstring(xml_file.read())
         r_ T..
     ______
-        m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
+        m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.f..(__product__)
         reset_settings_xml = ask_dialog(m.., process_label='reset', color_process='actionButton')
         __ reset_settings_xml:
             __ __.path.isfile(xml):
@@ -264,7 +264,7 @@ ___ update_settings(key, value):
         __ setting.get('name') __ key:
             setting.text = value
 
-    with o..(xml, 'w') as xml:
+    w__ o..(xml, 'w') __ xml:
         prettyprint(root)
         tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -281,11 +281,11 @@ ___ get_menus(all_incl = T.., exclude_prefix = '_'):
             ___
                 xml_path = __.path.join(menu_root, file_)
                 xml_name = __.path.splitext(file_)[0]
-                with o..(xml_path, 'r') as xml_file:
+                w__ o..(xml_path, 'r') __ xml_file:
                     ET.fromstring(xml_file.read())
                 menus.ap..(xml_name)
             except ET.ParseError:
-                write_log('Skip non well formed menu collection: {}'.format(xml_path))
+                write_log('Skip non well formed menu collection: {}'.f..(xml_path))
 
     r_ menus
 
@@ -303,7 +303,7 @@ ___ add_command(collection_name, command_path, color = N.., hotkey = N..):
     __ hotkey:
         command_item.set('hotkey', sanitize(hotkey))
     collection.insert(0, command_item)
-    with o..(xml, 'w') as file_:
+    w__ o..(xml, 'w') __ file_:
         prettyprint(root)
         tree.write(file_, encoding='utf-8', xml_declaration=T..)
 
@@ -314,7 +314,7 @@ ___ sanitize(string):
 
 ___ get_history_xml():
     ____ smartCommand.constants ______ HISTORY
-    r_ __.path.join(get_tool_root('private'), '{}.xml'.format(HISTORY))
+    r_ __.path.join(get_tool_root('private'), '{}.xml'.f..(HISTORY))
 
 
 ___ swap_commands(xml, path_1, path_2):
@@ -340,7 +340,7 @@ ___ swap_commands(xml, path_1, path_2):
     root.find('collection').insert(index_1, command_2)
     root.find('collection').remove(command_1)
     root.find('collection').insert(index_2, command_1)
-    with o..(xml, 'w') as file_:
+    w__ o..(xml, 'w') __ file_:
         prettyprint(root)
         tree.write(file_, encoding='utf-8', xml_declaration=T..)
     r_
@@ -348,9 +348,9 @@ ___ swap_commands(xml, path_1, path_2):
 
 ___ get_collection_xml(name):
     collection_root = get_collection_root()
-    xml = __.path.join(collection_root, '{}.xml'.format(name))
+    xml = __.path.join(collection_root, '{}.xml'.f..(name))
     __ no. __.path.isfile(xml):
-        raise IOError('No such collection xml: {}'.format(xml))
+        raise IOError('No such collection xml: {}'.f..(xml))
     r_ xml
 
 
@@ -363,7 +363,7 @@ ___ remove_history_commands(xml, history_max):
             root.find('collection').remove(command)
         index += 1
 
-    with o..(xml, 'w') as file_:
+    w__ o..(xml, 'w') __ file_:
         prettyprint(root)
         tree.write(file_, encoding='utf-8', xml_declaration=T..)
 
@@ -373,11 +373,11 @@ ___ create_collection(collection_name):
         collection_root = get_tool_root('private')
     ____
         collection_root = load_settings()['collection_root']
-    xml = __.path.join(collection_root, '{}.xml'.format(collection_name))
+    xml = __.path.join(collection_root, '{}.xml'.f..(collection_name))
     __ no. __.path.isfile(xml):
-        write_log("Create new collection '{}.xml'".format(collection_name))
-        with o..(xml, 'w') as file_:
-            file_.write(templates.COLLECTION.format(collection_name=collection_name))
+        write_log("Create new collection '{}.xml'".f..(collection_name))
+        w__ o..(xml, 'w') __ file_:
+            file_.write(templates.COLLECTION.f..(collection_name=collection_name))
     r_ xml
 
 
@@ -413,34 +413,34 @@ ___ get_previous_element(list_, current):
 
 ___ update_command(xml, path, key, value):
     __ no. __.path.isfile(xml):
-        raise IOError('No such collection file: {}'.format(xml))
+        raise IOError('No such collection file: {}'.f..(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
     ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ path:
             command.set(key, value)
-            with o..(xml, 'w') as xml:
+            w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
                 tree.write(xml, encoding='utf-8', xml_declaration=T..)
             break
     ____
-        raise ValueError('No such command path: {}'.format(path))
+        raise ValueError('No such command path: {}'.f..(path))
 
 
 ___ remove_command(xml, path):
     __ no. __.path.isfile(xml):
-        raise IOError('No such collection xml: {}'.format(xml))
+        raise IOError('No such collection xml: {}'.f..(xml))
     tree = ET.parse(xml)
     root = tree.getroot()
     ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ path:
             root.find('collection').remove(command)
-            with o..(xml, 'w') as xml:
+            w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
                 tree.write(xml, encoding='utf-8', xml_declaration=T..)
             break
     ____
-        raise ValueError('No such command path: {}'.format(path))
+        raise ValueError('No such command path: {}'.f..(path))
 
 
 ___ get_basename(path):
@@ -455,7 +455,7 @@ ___ get_all_hotkeys():
     hotkey_commands = {}
     collection_root = get_collection_root()
     ___ collection __ get_menus(all_incl=False):
-        xml = '{}.xml'.format(collection)
+        xml = '{}.xml'.f..(collection)
         tree = ET.parse(__.path.join(collection_root, xml))
         root = tree.getroot()
         ___ command __ root.find('collection').f_a_('command'):
@@ -475,12 +475,12 @@ ___ initialize_hotkeys():
 
 
 ___ load_tooltips(parent, section):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
-    tooltips_file = __.path.normpath(tooltips_file)
+    tooltips_file = __.path.n_p_(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with o..(tooltips_file) as json_file:
+    w__ o..(tooltips_file) __ json_file:
         ___
             ttdata = j___.load(json_file)
         except ValueError:
@@ -490,7 +490,7 @@ ___ load_tooltips(parent, section):
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
-                widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
+                widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
 
 
 ___ open_website(url):
@@ -502,7 +502,7 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
+            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             ____ smartCommand ______ dialogs
             dialogs.show_message_box(N.., msg)
 

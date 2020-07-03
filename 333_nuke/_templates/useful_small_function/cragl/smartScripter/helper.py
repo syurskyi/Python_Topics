@@ -38,9 +38,9 @@ ___ load_icons():
             }
 
     """
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, "icons")
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
 
     icons = {}
     ___ file_ __ __.listdir(dir_icon):
@@ -78,13 +78,13 @@ ___ set_style_sheet(widget, style="styles.qss"):
         style (str): Name of styles file to apply.
 
     """
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
 
     styles = __.path.join(this_dir, "styles", style)
-    styles = __.path.normpath(styles)
+    styles = __.path.n_p_(styles)
 
     __ __.path.isfile(styles):
-        with o..(styles) as file_:
+        w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -102,7 +102,7 @@ ___ get_session_icons(ext=".png"):
     """
     paths = [path ___ path __ ?.pluginPath() __ __.path.isdir(path)]
 
-    icon_dir = __.path.join(__.path.dirname(__file__), "icons")
+    icon_dir = __.path.join(__.path.dirname( -f), "icons")
     paths.ap..(icon_dir)
 
     icons = []
@@ -209,7 +209,7 @@ ___ open_website(url):
             subprocess.P..(['xdg-open', url])
         except OSError:
             msg = ("Cannot open browser. Please open it manually and "
-                   "navigate to:\n\n{}".format(url))
+                   "navigate to:\n\n{}".f..(url))
             ____ smartScripter ______ dialogs
             dialogs.show_message_box(N.., msg)
 
@@ -247,14 +247,14 @@ ___ load_tooltips(parent, section):
 
     """
     # Load tooltips file.
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     tooltips_file = __.path.join(this_dir, "data", "tooltips.json")
-    tooltips_file = __.path.normpath(tooltips_file)
+    tooltips_file = __.path.n_p_(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
 
     # Parse tool tips file.
-    with o..(tooltips_file) as json_file:
+    w__ o..(tooltips_file) __ json_file:
         ___
             ttdata = j___.load(json_file)
         except ValueError:
@@ -264,7 +264,7 @@ ___ load_tooltips(parent, section):
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ element __ ttdata[section]:
             __ element["tt"] __ widget.property("tt"):
-                widget.setToolTip("<strong>{}</strong><br />{}".format(
+                widget.setToolTip("<strong>{}</strong><br />{}".f..(
                     element["ttt"], element["ttc"]))
 
 
@@ -290,7 +290,7 @@ ___ get_tool_root(which):
     __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
-        except IOError as error:
+        except IOError __ error:
             print "Error creating directory: ", error.m..
 
     r_ root
@@ -314,7 +314,7 @@ ___ get_icon(icon):
         __ no. icon:
             raise IndexError
         r_ [path ___ path __ SESSION_ICONS
-                __ path.endswith("{}.png".format(icon))][0]
+                __ path.endswith("{}.png".f..(icon))][0]
     except IndexError:
         r_ load_icons()["command"]
 
@@ -329,9 +329,9 @@ ___ reveal_in_explorer(path):
         ___
             subprocess.check_call(['explorer', path])
         # We want to catch all errors in here explicitly.
-        except Exception as error:  # pylint: disable=broad-except
+        except Exception __ error:  # pylint: disable=broad-except
             ____ smartScripter ______ dialogs
             m.. = ("Unable to reveal the directory. Please open the "
                        "directory manually in your explorer. "
-                       "{}".format(error.m..))
+                       "{}".f..(error.m..))
             dialogs.show_message_box(m..)

@@ -36,7 +36,7 @@ ___ reload_tools_menu(notify=T..):
 
     # show message of new tools
     __ notify and dif_msg != "":
-        ?.m..("{} new tools found:\n\n{}".format(le.(dif_list), dif_msg))
+        ?.m..("{} new tools found:\n\n{}".f..(le.(dif_list), dif_msg))
 
 
 ___ get_all_tools():
@@ -53,10 +53,10 @@ ___ get_all_tools():
         __ item.name().isupper():
 
             # iterate through each tool menu and save all its tools
-            tool_menu = ?.menu("Nodes").findItem("{}/{}".format("ToolEngine", item.name()))
+            tool_menu = ?.menu("Nodes").findItem("{}/{}".f..("ToolEngine", item.name()))
             ___
                 ___ tool __ tool_menu.items():
-                    all_tools.ap..("{}/{}".format(tool_menu.name(), tool.name()))
+                    all_tools.ap..("{}/{}".f..(tool_menu.name(), tool.name()))
             ______
                 continue
 
@@ -89,11 +89,11 @@ ___ load_settings():
 
     # if the settings file doesn't exist then create it
     __ no. __.path.isfile(settings_file):
-        with o..(settings_file, "w") as f:
+        w__ o..(settings_file, "w") __ f:
             f.write('{"tools_root": ""}')
 
     # load the settings file
-    with o..(settings_file, "r") as f:
+    w__ o..(settings_file, "r") __ f:
         settings_data = j___.load(f)
 
     r_ settings_data
@@ -132,7 +132,7 @@ ___ build_tools_menu(tools_root):
         __ tools_root __ "":
             print "ToolEngine: tools_root not set. You can set it via 'ToolEngine->settings'"
         ____
-            print "ToolEngine: tools_root '{}' doesn't exist".format(tools_root)
+            print "ToolEngine: tools_root '{}' doesn't exist".f..(tools_root)
         r_
 
     te_menu = ?.menu("Nodes").findItem("ToolEngine")
@@ -187,7 +187,7 @@ ___ insert_toolset(toolpath, delete=False):
 
         # remove command from menu bar
         toolset_name = __.path.splitext(__.path.basename(toolpath))[0]
-        ?.menu("Nodes").findItem("{}/{}".format("ToolEngine", config.TOOLS_TEMP.upper())).removeItem(toolset_name)
+        ?.menu("Nodes").findItem("{}/{}".f..("ToolEngine", config.TOOLS_TEMP.upper())).removeItem(toolset_name)
 
 
 

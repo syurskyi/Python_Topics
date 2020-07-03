@@ -55,11 +55,11 @@ ___ select_node(node_class):
             node['selected'].sV..(False)
             r_ node
         ____
-            m.. = "Please, select a {} Node".format(class_)
+            m.. = "Please, select a {} Node".f..(class_)
             ?.m..(m..)
 
     except ValueError:
-        m.. = "Please, select a {} Node".format(class_)
+        m.. = "Please, select a {} Node".f..(class_)
         ?.m..(m..)
 
 
@@ -634,7 +634,7 @@ ___ find_holdout_source_elements(houldout_names):
         __ ?.toNode(_):
             houldout_processed_list.ap..(_)
         ____
-            print "no corresponding element found for {}".format(name)
+            print "no corresponding element found for {}".f..(name)
     
     r_ houldout_processed_list
 

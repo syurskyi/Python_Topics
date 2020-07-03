@@ -3,10 +3,10 @@ ______ __
 ______ subprocess
 ______ ___
 ______ ti__
-______ xml.etree.ElementTree as ET
+______ xml.etree.ElementTree __ ET
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui as ?W..
+    ____ PySide ______ QtGui __ ?W..
 ____
     ____ ? ______ ?W..
 ____ smartShelves ______ templates
@@ -14,9 +14,9 @@ _LOCK_DELIMITER = ','
 _LOCK_LIST = 'CRAGL_SMARTSHELVES_LOCKS'
 
 ___ load_icons():
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, 'icons')
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
     r_ {'icon_logo': __.path.join(dir_icon, 'logo.png'),
      'about': __.path.join(dir_icon, 'about.jpg'),
      'icon_folder': __.path.join(dir_icon, 'folder.png'),
@@ -39,9 +39,9 @@ ___ show_message_box(window, m..):
 
 
 ___ get_installed_root_dir():
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
     root = __.path.join(this_dir, '../', '../')
-    r_ __.path.normpath(root)
+    r_ __.path.n_p_(root)
 
 
 ___ get_smartshelves_private_dir():
@@ -67,7 +67,7 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            show_message_box(N.., 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url))
+            show_message_box(N.., 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url))
 
     r_
 
@@ -78,7 +78,7 @@ ___ get_log_file():
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with o..(log_file, 'w') as lf:
+        w__ o..(log_file, 'w') __ lf:
             log_template = templates.LOG
             lf.write(log_template)
     r_ log_file
@@ -87,19 +87,19 @@ ___ get_log_file():
 ___ write_log(text, tool = 'sh'):
     logtime = ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
     ___
-        with o..(get_log_file(), 'a') as s:
-            s.write('{}: {} {}\n'.format(logtime, tool, text))
+        w__ o..(get_log_file(), 'a') __ s:
+            s.write('{}: {} {}\n'.f..(logtime, tool, text))
         r_ T..
     ______
         r_ False
 
 
 ___ set_style_sheet(widget):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     styles_nuke = __.path.join(this_dir, 'styles', 'nuke.qss')
-    styles_nuke = __.path.normpath(styles_nuke)
+    styles_nuke = __.path.n_p_(styles_nuke)
     __ __.path.isfile(styles_nuke):
-        with o..(styles_nuke) as file_:
+        w__ o..(styles_nuke) __ file_:
             widget.setStyleSheet(file_.read())
         r_ styles_nuke
     ____
@@ -124,12 +124,12 @@ ___ load_settings():
 
 ___ paste_script(name):
     ___ plugin_path __ ?.pluginPath():
-        path = __.path.join(plugin_path, '{}.nk'.format(name))
+        path = __.path.join(plugin_path, '{}.nk'.f..(name))
         __ __.path.isfile(path):
             ?.nodePaste(path)
             r_
 
-    ?.m..("Could not find nk file for '{}'. Please make sure that it is saved somewhere in your plugin paths.".format(name))
+    ?.m..("Could not find nk file for '{}'. Please make sure that it is saved somewhere in your plugin paths.".f..(name))
 
 
 ___ add_to_lock(pw):

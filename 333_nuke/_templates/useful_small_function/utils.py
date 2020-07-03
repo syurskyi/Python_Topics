@@ -32,7 +32,7 @@ ___ create_node(node):
         Node: NoOp Node.
 
     """
-    lab = 'baked metadata\nfrom {}'.format(node.name())
+    lab = 'baked metadata\nfrom {}'.f..(node.name())
     noop = nuke.nodes.NoOp(hide_input=T..,
                            xpos=node.xpos() + 100,
                            ypos=node.ypos(),

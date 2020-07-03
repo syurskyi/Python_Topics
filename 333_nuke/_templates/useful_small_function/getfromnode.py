@@ -141,7 +141,7 @@ ___ filePath(node=N.., proxy=False, regex=N.., force_match=T..):
                 ?.delete(tmp)
 
     __ result != N..:
-        result = dd.xplatform.xpath(__.path.normpath(result))
+        result = dd.xplatform.xpath(__.path.n_p_(result))
         LOGGER.debug('Discovered path %s for node %s' % (
             result, node.knob('name').value()))
         r_ result
@@ -242,7 +242,7 @@ ___ fileType(node):
     r_ result
 # end fileType
 
-___ format(node):
+___ f..(node):
     
     """
     Returns the format of the specified Node, if in the nuke.formats() list

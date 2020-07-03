@@ -54,7 +54,7 @@ ___ create_working_file_copies(files):
     ___ file_ __ files:
         parent_dir, filename = __.path.split(file_)
         basename = __.path.splitext(filename)[0]
-        copy_filename = "{}_rescue_{}.nk".format(basename, date)
+        copy_filename = "{}_rescue_{}.nk".f..(basename, date)
         dest = __.path.join(parent_dir, copy_filename)
         shutil.copy(file_, dest)
         copy_files.ap..(dest)
@@ -70,7 +70,7 @@ ___ date_now():
             YYYYMMDD-HH-SS.
 
     """
-    r_ "{:%Y%m%d-%H%M%S}".format(d_t_.d_t_.now())
+    r_ "{:%Y%m%d-%H%M%S}".f..(d_t_.d_t_.now())
 
 
 ___ get_process_folder():
@@ -89,9 +89,9 @@ ___ get_process_folder():
     __ environment_process_folder:
         r_ environment_process_folder
 
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     path = __.path.join(this_dir, "..", "process")
-    r_ __.path.normpath(path)
+    r_ __.path.n_p_(path)
 
 
 ___ get_config():
@@ -112,7 +112,7 @@ ___ get_config():
     ____
         path = copy_config_file()
 
-    with o..(path, "r") as file_:
+    w__ o..(path, "r") __ file_:
         r_ path, j___.load(file_)
 
 
@@ -132,9 +132,9 @@ ___ load_icons():
             }
 
     """
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, "icons")
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
 
     icons = {}
     ___ file_ __ __.listdir(dir_icon):
@@ -155,7 +155,7 @@ ___ get_docstring(path):
         str: The module doc string of the given file.
 
     """
-    with o..(path, "r") as file_:
+    w__ o..(path, "r") __ file_:
         tree = ast.parse(file_.read())
     r_ ast.get_docstring(tree)
 
@@ -200,7 +200,7 @@ ___ ensure_file_extension(path, ext):
     ext = ext.replace(".", "")
     __ extension __ ext:
         r_ path
-    r_ "{}.{}".format(base, ext)
+    r_ "{}.{}".f..(base, ext)
 
 
 ___ get_tool_root(which):
@@ -224,7 +224,7 @@ ___ get_tool_root(which):
     __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
-        except OSError as error:
+        except OSError __ error:
             raise OSError("Error creating directory: ", error.m..)
 
     r_ root
@@ -252,7 +252,7 @@ ___ copy_config_file():
     """
     dest = get_local_config_file()
     __ no. __.path.isfile(dest):
-        this_dir = __.path.dirname(__file__)
+        this_dir = __.path.dirname( -f)
         src = __.path.join(this_dir, "data", "config.json")
         src = __.path.abspath(src)
         shutil.copy(src, dest)
@@ -279,5 +279,5 @@ ___ open_website(url):
             subprocess.P..(['xdg-open', url])
         except OSError:
             msg = ("Cannot open browser. Please open it manually and "
-                   "navigate to:\n\n{}".format(url))
+                   "navigate to:\n\n{}".f..(url))
             raise OSError(msg)

@@ -6,13 +6,13 @@ ______ subprocess
 ______ ___
 ______ ti__
 ______ uuid
-______ xml.etree.ElementTree as ET
+______ xml.etree.ElementTree __ ET
 ____ collections ______ OrderedDict
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
     ____ PySide ______ QtCore
     ____ PySide ______ QtGui
-    ____ PySide ______ QtGui as ?W..
+    ____ PySide ______ QtGui __ ?W..
 ____
     ____ ? ______ QtCore
     ____ ? ______ QtGui
@@ -23,9 +23,9 @@ ____ smartLink.info ______ __product__
 ____ smartLink.constants ______ ALT, CTRL, KEY, FAVORITES, PREFIX_FAVORITES, SHIFT, SMARTLINK
 
 ___ load_icons():
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, 'icons')
-    dir_icon = __.path.normpath(dir_icon)
+    dir_icon = __.path.n_p_(dir_icon)
     icons = {}
     ___ file_ __ __.listdir(dir_icon):
         name = __.path.splitext(file_)[0]
@@ -36,11 +36,11 @@ ___ load_icons():
 
 
 ___ set_style_sheet(widget, style = 'styles.qss'):
-    this_dir = __.path.join(__.path.dirname(__file__))
+    this_dir = __.path.join(__.path.dirname( -f))
     styles = __.path.join(this_dir, 'styles', style)
-    styles = __.path.normpath(styles)
+    styles = __.path.n_p_(styles)
     __ __.path.isfile(styles):
-        with o..(styles) as file_:
+        w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -60,16 +60,16 @@ ___ get_tool_root(which):
         ___
             __.makedirs(root)
         except IOError:
-            write_log('unable to create open tool dir at: {}'.format(root))
+            write_log('unable to create open tool dir at: {}'.f..(root))
 
     r_ root
 
 
 ___ write_log(text, tool = 'li'):
-    with o..(get_log_file(), 'a') as file_:
+    w__ o..(get_log_file(), 'a') __ file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
         log_time = ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.format(log_time, tool, text))
+        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ get_log_file():
@@ -78,8 +78,8 @@ ___ get_log_file():
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with o..(log_file, 'w') as lf:
-            log_template = 'connect log\n{}\n'.format('-' * 50)
+        w__ o..(log_file, 'w') __ lf:
+            log_template = 'connect log\n{}\n'.f..('-' * 50)
             lf.write(log_template)
     r_ log_file
 
@@ -127,13 +127,13 @@ ___ get_settings_xml():
     settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with o..(settings_xml, 'w') as look_template:
+            w__ o..(settings_xml, 'w') __ look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
-                msg = "{} settings doesn't exist. created template at: {}".format(__product__, settings_xml)
+                msg = "{} settings doesn't exist. created template at: {}".f..(__product__, settings_xml)
                 write_log(msg)
         ______
-            msg = 'Failed writing {} settings template at: {}'.format(__product__, settings_xml)
+            msg = 'Failed writing {} settings template at: {}'.f..(__product__, settings_xml)
             write_log(msg)
 
     check_xml_ok(settings_xml)
@@ -180,7 +180,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
         __ child.get(key1) __ value1:
             item_found += 1
             __ debug:
-                print '{} | settings exists: {}|{}|{}|{}|{}|{}|{}'.format(__product__, parent, section, key1, value1, text, key2, value2)
+                print '{} | settings exists: {}|{}|{}|{}|{}|{}|{}'.f..(__product__, parent, section, key1, value1, text, key2, value2)
             r_
 
     __ item_found __ 0:
@@ -190,10 +190,10 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with o..(xml, 'w') as xml:
+        w__ o..(xml, 'w') __ xml:
             prettyprint(root)
             tree.write(xml, encoding='utf-8', xml_declaration=T..)
-        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
+        write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ prettyprint(elem, level = 0):
@@ -214,11 +214,11 @@ ___ prettyprint(elem, level = 0):
 
 ___ check_xml_ok(xml):
     ___
-        with o..(xml, 'r') as xml_file:
+        w__ o..(xml, 'r') __ xml_file:
             ET.fromstring(xml_file.read())
         r_ T..
     ______
-        m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
+        m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.f..(__product__)
         reset_settings_xml = dialogs.ask_dialog(m.., process_label='reset', color_process='actionButton')
         __ reset_settings_xml:
             __ __.path.isfile(xml):
@@ -231,12 +231,12 @@ ___ update_settings(key, value):
     ___ setting __ root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
             setting.text = value
-            with o..(xml, 'w') as xml:
+            w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
                 tree.write(xml, encoding='utf-8', xml_declaration=T..)
             r_
 
-    raise ValueError("Invalid key '{}'. No such key in settings.".format(key))
+    raise ValueError("Invalid key '{}'. No such key in settings.".f..(key))
 
 
 ___ update_preset(preset_name, key, value):
@@ -246,18 +246,18 @@ ___ update_preset(preset_name, key, value):
             preset.set(key, value)
             break
 
-    with o..(xml, 'w') as xml:
+    w__ o..(xml, 'w') __ xml:
         prettyprint(root)
         tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ load_tooltips(parent, section):
-    this_dir = __.path.dirname(__file__)
+    this_dir = __.path.dirname( -f)
     tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
-    tooltips_file = __.path.normpath(tooltips_file)
+    tooltips_file = __.path.n_p_(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with o..(tooltips_file) as json_file:
+    w__ o..(tooltips_file) __ json_file:
         ___
             ttdata = j___.load(json_file)
         except ValueError:
@@ -267,7 +267,7 @@ ___ load_tooltips(parent, section):
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
-                widget.setToolTip('<strong>{}</strong><br />{}'.format(t['ttt'], t['ttc']))
+                widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
 
 
 ___ open_website(url):
@@ -279,7 +279,7 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.format(url)
+            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             ____ smartLink ______ dialogs
             dialogs.show_message_box(N.., msg)
 
@@ -317,7 +317,7 @@ ___ get_next_link_name():
 
     ___ _increase(groups):
         index = int(groups.group(2)) + 1
-        r_ '{}{}'.format(groups.group(1), index)
+        r_ '{}{}'.f..(groups.group(1), index)
 
     pattern = '(link_)(\\d+)'
     node_names = sorted([ node.name() ___ node __ ?.allNodes() __ re.search(pattern, node.name()) ], key=split_nr)
@@ -424,12 +424,12 @@ ___ swap_presets(preset1, preset2):
     presets.ap..(_find_preset(root, preset1))
     presets.ap..(_find_preset(root, preset2))
     __ no. all(presets):
-        raise ValueError("No sufficient information to swap. At least one of the presets of '{}', '{}' doesn't exist.".format(preset1, preset2))
+        raise ValueError("No sufficient information to swap. At least one of the presets of '{}', '{}' doesn't exist.".f..(preset1, preset2))
     root.find('backdrops').remove(presets[0][0])
     root.find('backdrops').insert(presets[0][1], presets[1][0])
     root.find('backdrops').remove(presets[1][0])
     root.find('backdrops').insert(presets[1][1], presets[0][0])
-    with o..(xml, 'w') as xml:
+    w__ o..(xml, 'w') __ xml:
         prettyprint(root)
         tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -441,7 +441,7 @@ ___ remove_preset(name):
             root.find('backdrops').remove(preset)
             break
 
-    with o..(xml, 'w') as xml:
+    w__ o..(xml, 'w') __ xml:
         prettyprint(root)
         tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
@@ -453,7 +453,7 @@ ___ add_preset(name, color, icon):
     elem.set('color', color)
     elem.set('icon', icon)
     root.find('backdrops').ap..(elem)
-    with o..(xml, 'w') as xml:
+    w__ o..(xml, 'w') __ xml:
         prettyprint(root)
         tree.write(xml, encoding='utf-8', xml_declaration=T..)
 

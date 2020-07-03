@@ -30,7 +30,7 @@ g__ default_dir
 g__ knobInit
 g__ ctrl
 
-default_dir = __.path.dirname(__file__)
+default_dir = __.path.dirname( -f)
 knobInit = default_dir+"/init.py"
 ctrl = False
 
@@ -62,7 +62,7 @@ ___ createDefault():
 	k = ?.thisKnob()
 	
 	#set default for current nuke session
-	?.knobDefault("{node}.{knob}".format(node=n.Class(), knob=k.name()), "{val}".format(val=k.value()))
+	?.knobDefault("{node}.{knob}".f..(node=n.Class(), knob=k.name()), "{val}".f..(val=k.value()))
 
 	# set 
 	updateKnobInit(n.Class(),k.name(),k.v..,"write")
@@ -76,7 +76,7 @@ ___ resetToDefault():
 	k = ?.thisKnob()
 
 	k.sV..(k.defaultValue())
-	?.knobDefault("{node}.{knob}".format(node=n.Class(), knob=k.name()), "{val}".format(val=k.defaultValue()))
+	?.knobDefault("{node}.{knob}".f..(node=n.Class(), knob=k.name()), "{val}".f..(val=k.defaultValue()))
 	updateKnobInit(n.Class(),k.name(),"","del")
 
 ___ updateKnobInit(node,knob,value,mode):
@@ -91,7 +91,7 @@ ___ updateKnobInit(node,knob,value,mode):
 		found = 0
 
 		___ d __ knobDefaults:
-			__ "{node}.{knob}".format(node=node, knob=knob) __ d:
+			__ "{node}.{knob}".f..(node=node, knob=knob) __ d:
 				found+=1
 				__ ctrl __ T..:
 					print "found in knobInit"
@@ -117,7 +117,7 @@ ___ updateKnobInit(node,knob,value,mode):
 		updateKnobInit(node,knob,"","del")
 		___
 			f = o..(knobInit,'a')
-			newKnobDefault = 'nuke.knobDefault("{node}.{knob}", "{val}")\n'.format(node=node, knob=knob, val=value)
+			newKnobDefault = 'nuke.knobDefault("{node}.{knob}", "{val}")\n'.f..(node=node, knob=knob, val=value)
 			f.write(newKnobDefault)
 			f.c__
 		______

@@ -7,7 +7,7 @@ ___ get_file_elements(filename):
     file_elements = re.split('\\.([\\d|#|%\\dd]*).([a-z]*)', filename)
     basename, file_sequence, ext, _ = file_elements
     __ no. file_sequence:
-        raise ValueError('No file_sequence found in {}'.format(filename))
+        raise ValueError('No file_sequence found in {}'.f..(filename))
     r_ (basename, file_sequence, ext)
 
 
@@ -17,7 +17,7 @@ ___ get_files_list(filepath):
     files_list = []
     ___
         basename, file_sequence, ext = get_file_elements(filename)
-        pattern = '{}.{}.{}'.format(basename, '*' * le.(file_sequence), ext)
+        pattern = '{}.{}.{}'.f..(basename, '*' * le.(file_sequence), ext)
         pattern = __.path.join(basedir, pattern)
         files_list = [ __.path.join(basedir, __.path.basename(file_)) ___ file_ __ glob.glob(pattern) ]
     except ValueError:
