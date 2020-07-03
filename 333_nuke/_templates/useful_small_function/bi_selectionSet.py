@@ -13,7 +13,7 @@ ___ callInputs():
     bd = 0
     sa = nuke.allNodes()
     ___ nd __ sa:
-        __ nd['name'].value().find('Selection Set') != -1:
+        __ nd['name'].v...find('Selection Set') != -1:
             bd += 1
     
     clearSelection()
@@ -29,16 +29,16 @@ ___ callInputs():
         bckdrp['label'].setValue('Add Note')
 
         p = nuke.toNode('preferences')
-        v = p['maxPanels'].value()
+        v = p['maxPanels'].v..
         p['maxPanels'].setValue(v+1)
 
         lon = ''
         miny = -999999999
         minx = 0
         ___ nd, i __ zip(selNodes, range(le.(selNodes))):
-            __ nd['ypos'].value() > miny:
-                miny = nd['ypos'].value()
-                minx = nd['xpos'].value()
+            __ nd['ypos'].v.. > miny:
+                miny = nd['ypos'].v..
+                minx = nd['xpos'].v..
             __ i != 0:
                 lon += ',%s' %str(nd['name'].value())
             else:
@@ -92,7 +92,7 @@ ___ selectFromSelectionSet(bckdrp):
         ___ n __ listFromNode:
             __ n != '':
                 nd = nuke.toNode(n)
-                nd['selected'].setValue(True)
+                nd['selected'].setValue(T..)
                 
         nuke.frame()
     else:
@@ -131,7 +131,7 @@ ___ disEnaToggleFromSelectionSet(bckdrp):
         ___ n __ listFromNode:
             __ n != '':
                 nd = nuke.toNode(n)
-                disEnaNode(node['name'].value(), nd['name'].value(), "%sBtn" %nd['name'].value(), toggle = True)
+                disEnaNode(node['name'].v.., nd['name'].v.., "%sBtn" %nd['name'].v.., toggle = T..)
                 
         nuke.show(node)
     else:
@@ -146,55 +146,55 @@ ___ disEnaAllFromSelectionSet(bckdrp):
         
         listFromNode = listOfNodes(node)
         
-        allValue = True
+        allValue = T..
         ___ n, i __ zip(listFromNode, range(le.(listFromNode))):
             __ n != '':
                 nd = nuke.toNode(n)
                 
                 __ i __ 0:
-                    __ nd['disable'].value() __ True:
+                    __ nd['disable'].v.. __ T..:
                         allValue = False
                     else:
-                        allValue = True
+                        allValue = T..
                         
-                disEnaNode(node['name'].value(), nd['name'].value(), "%sBtn" %nd['name'].value(), toggle = False, allValue = allValue)
+                disEnaNode(node['name'].v.., nd['name'].v.., "%sBtn" %nd['name'].v.., toggle = False, allValue = allValue)
                 
         nuke.show(node)
     else:
         nuke.executeInMainThread(nuke.m.., args=("Select selection set."))
         
     
-___ disEnaNode(bckdrp, node, kn, refresh = False, toggle = True, allValue = True):
+___ disEnaNode(bckdrp, node, kn, refresh = False, toggle = T.., allValue = T..):
     bckdrp = nuke.toNode(bckdrp)
     node = nuke.toNode(node)
     knobNode = bckdrp.knob(kn)
     ___
         __ refresh is False:
             __ toggle:
-                __ node['disable'].value() __ True:
+                __ node['disable'].v.. __ T..:
                     node['disable'].setValue(False)
-                    lon = '<span style="color:green">%s</span>' %node['name'].value()
+                    lon = '<span style="color:green">%s</span>' %node['name'].v..
                     knobNode.setLabel(lon)
                 else:
-                    node['disable'].setValue(True)
-                    lon = '<span style="color:red">%s</span>' %node['name'].value()
+                    node['disable'].setValue(T..)
+                    lon = '<span style="color:red">%s</span>' %node['name'].v..
                     knobNode.setLabel(lon)
             else:
                 __ allValue:
-                    node['disable'].setValue(True)
-                    lon = '<span style="color:red">%s</span>' %node['name'].value()
+                    node['disable'].setValue(T..)
+                    lon = '<span style="color:red">%s</span>' %node['name'].v..
                     knobNode.setLabel(lon)
                 else:
                     node['disable'].setValue(False)
-                    lon = '<span style="color:green">%s</span>' %node['name'].value()
+                    lon = '<span style="color:green">%s</span>' %node['name'].v..
                     knobNode.setLabel(lon)
                     
         else:
-            __ node['disable'].value() __ True:
-                lon = '<span style="color:red">%s</span>' %node['name'].value()
+            __ node['disable'].v.. __ T..:
+                lon = '<span style="color:red">%s</span>' %node['name'].v..
                 knobNode.setLabel(lon)
             else:
-                lon = '<span style="color:green">%s</span>' %node['name'].value()
+                lon = '<span style="color:green">%s</span>' %node['name'].v..
                 knobNode.setLabel(lon)
             
     ______
@@ -208,7 +208,7 @@ ___ refreshButtons(bckdrp):
     
     ___ nd __ selNodes:
         nd = nuke.toNode(nd)
-        disEnaNode(node['name'].value(), nd['name'].value(), '%sBtn' %nd['name'].value(), refresh = True)
+        disEnaNode(node['name'].v.., nd['name'].v.., '%sBtn' %nd['name'].v.., refresh = T..)
         
         
 ___ colorize(bckdrp):
@@ -224,13 +224,13 @@ ___ colorize(bckdrp):
         nd = nuke.toNode(nd)
         
         ___
-            __ nd['disable'].value() __ True:
-                lon = '<span style="color:red">%s</span>' %nd['name'].value()
+            __ nd['disable'].v.. __ T..:
+                lon = '<span style="color:red">%s</span>' %nd['name'].v..
             else:
-                lon = '<span style="color:green">%s</span>' %nd['name'].value()
+                lon = '<span style="color:green">%s</span>' %nd['name'].v..
             
-            btn = nuke.PyScript_Knob('%sBtn' %(nd['name'].value()), lon, '______ bi_selectionSet as ss; ss.disEnaNode("%s", "%s", "%sBtn")' %(bckdrp['name'].value(), nd['name'].value(), nd['name'].value()))
-            dl = nuke.PyScript_Knob('%sDelBtn' %(nd['name'].value()), '<span style="color:yellow">x</span>', '______ bi_selectionSet as ss; ss.deleteNode("%s", "%s")' %(bckdrp['name'].value(), nd['name'].value()))
+            btn = nuke.PyScript_Knob('%sBtn' %(nd['name'].value()), lon, '______ bi_selectionSet as ss; ss.disEnaNode("%s", "%s", "%sBtn")' %(bckdrp['name'].v.., nd['name'].v.., nd['name'].value()))
+            dl = nuke.PyScript_Knob('%sDelBtn' %(nd['name'].value()), '<span style="color:yellow">x</span>', '______ bi_selectionSet as ss; ss.deleteNode("%s", "%s")' %(bckdrp['name'].v.., nd['name'].value()))
             
             __ i % 4 __ 0 and i != 0:
                 btn.setFlag(nuke.STARTLINE)
@@ -253,12 +253,12 @@ ___ addNodes(bckdrp):
         ___ nd __ selNodes:
             lon = ''
             __ str(node['listOfNodes'].value()).find(nd['name'].value()) __ -1:
-                __ node['listOfNodes'].value() != '':
+                __ node['listOfNodes'].v.. != '':
                     lon += ',%s' %str(nd['name'].value())
                 else:
                     lon += '%s' %str(nd['name'].value())
                     
-                node['listOfNodes'].setValue(node['listOfNodes'].value() + lon)
+                node['listOfNodes'].setValue(node['listOfNodes'].v.. + lon)
                 
         colorize(node)
       
@@ -299,4 +299,4 @@ ___ resetPanelView():
     
     
 ___ listOfNodes(node):
-    r_ list(node['listOfNodes'].value().split(','))
+    r_ list(node['listOfNodes'].v...split(','))

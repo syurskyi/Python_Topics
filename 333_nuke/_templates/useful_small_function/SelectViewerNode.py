@@ -60,7 +60,7 @@ ___ SelectNode(Viewer,warning):
     __ Inputs__0:
         print Viewer + " Has no Inputs"
         warning.setValue("        "+Viewer + " Has no Inputs")
-        warning.setVisible(True)
+        warning.setVisible(T..)
         raise ValueError      
     ____ Inputs>1:
         ___ n __ nuke.allNodes():
@@ -69,19 +69,19 @@ ___ SelectNode(Viewer,warning):
             index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)+1
             Nodes=[index1]
             ___
-                index2 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),True)+1
+                index2 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),T..)+1
                 Nodes.append(index2)
             ______
                 pass
             ___ index __ Nodes:
                 Node = nuke.toNode(nuke.toNode(Viewer).input(index-1).name())
-                Node.setSelected(True)
+                Node.setSelected(T..)
                 nuke.show(Node)
         else:
             ___ i __ range(0,Inputs):
                 ___
                     Node = nuke.toNode(nuke.toNode(Viewer).input(i).name())
-                    Node.setSelected(True)
+                    Node.setSelected(T..)
                     nuke.show(Node)
                 ______
                     pass               
@@ -92,7 +92,7 @@ ___ SelectNode(Viewer,warning):
             ___
                 index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)
                 Node = nuke.toNode(nuke.toNode(Viewer).input(index1).name())
-                Node.setSelected(True)
+                Node.setSelected(T..)
                 nuke.show(Node)
             ______
                 pass
@@ -100,7 +100,7 @@ ___ SelectNode(Viewer,warning):
             ___ i __ range(0,Inputs):
                 ___
                     Node = nuke.toNode(nuke.toNode(Viewer).input(i).name())
-                    Node.setSelected(True)
+                    Node.setSelected(T..)
                     nuke.show(Node)
                 ______
                     pass
@@ -184,7 +184,7 @@ If the selected viewer is not active, all viewer nodes will be selected
         
             warning.setVisible(False)
 
-            dividerA.setVisible(True)
+            dividerA.setVisible(T..)
 
 
 ___ Launcher():

@@ -43,14 +43,14 @@ ___ checkExistingInit():
 	
 	__ no. __.path.isfile(knobInit):
 		___
-			open(knobInit,'w')
-			__ ctrl __ True:
+			o..(knobInit,'w')
+			__ ctrl __ T..:
 					print "created knobInit"
 		______
-			__ ctrl __ True:
+			__ ctrl __ T..:
 					print "couldn't create knobInit"
 	____
-		__ ctrl __ True:
+		__ ctrl __ T..:
 			print "knobInit exists"
 
 ___ createDefault():
@@ -65,7 +65,7 @@ ___ createDefault():
 	?.knobDefault("{node}.{knob}".format(node=n.Class(), knob=k.name()), "{val}".format(val=k.value()))
 
 	# set 
-	updateKnobInit(n.Class(),k.name(),k.value(),"write")
+	updateKnobInit(n.Class(),k.name(),k.v..,"write")
 
 ___ resetToDefault():
 	'''
@@ -93,19 +93,19 @@ ___ updateKnobInit(node,knob,value,mode):
 		___ d __ knobDefaults:
 			__ "{node}.{knob}".format(node=node, knob=knob) __ d:
 				found+=1
-				__ ctrl __ True:
+				__ ctrl __ T..:
 					print "found in knobInit"
 					print d
 				knobDefaults.remove(d)
 			____
 				pass
 		__ found < 1:
-			__ ctrl __ True:
+			__ ctrl __ T..:
 				print "not found in knobInit"
 		
 		#write new knobInit
 		___
-			f = open(knobInit,'w+')
+			f = o..(knobInit,'w+')
 			___ d __ knobDefaults:
 				f.write(d+"\n")
 			f.c__
@@ -116,7 +116,7 @@ ___ updateKnobInit(node,knob,value,mode):
 		#get rid of old knobDefaults of the current knob and write new knobDefault			
 		updateKnobInit(node,knob,"","del")
 		___
-			f = open(knobInit,'a')
+			f = o..(knobInit,'a')
 			newKnobDefault = 'nuke.knobDefault("{node}.{knob}", "{val}")\n'.format(node=node, knob=knob, val=value)
 			f.write(newKnobDefault)
 			f.c__

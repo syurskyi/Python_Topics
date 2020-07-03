@@ -23,7 +23,7 @@ ____
 ____ matchnode ______ byClass
 
 
-___ filePath(node=N.., proxy=False, regex=N.., force_match=True):
+___ filePath(node=N.., proxy=False, regex=N.., force_match=T..):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -71,12 +71,12 @@ ___ filePath(node=N.., proxy=False, regex=N.., force_match=True):
                 __ 'proxy' __ node.knobs():
                     ___
                         # attempt to get proxy knob from linked (gizmos < 5.2v1)
-                        __ node.getLinkedKnob().knob('proxy').value():
-                            result = node.getLinkedKnob().knob('proxy').value()
+                        __ node.getLinkedKnob().knob('proxy').v..:
+                            result = node.getLinkedKnob().knob('proxy').v..
                     except AttributeError:
                         # attempt to get proxy knob value directly (gizmos >= 5.2v
-                        __ node.knob('proxy').value():
-                            result = node.knob('proxy').value()
+                        __ node.knob('proxy').v..:
+                            result = node.knob('proxy').v..
         # end if
 
         # check if a TCL expression might exist in the result (ie: containts [{($)}])
@@ -151,7 +151,7 @@ ___ filePath(node=N.., proxy=False, regex=N.., force_match=True):
 # end filePath
    
 
-___ filePathWithRange(node=N.., proxy=False, regex=N.., force_match=True):
+___ filePathWithRange(node=N.., proxy=False, regex=N.., force_match=T..):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -182,7 +182,7 @@ ___ filePathWithRange(node=N.., proxy=False, regex=N.., force_match=True):
 #  end filePathWithRange
 
 
-___ filePaths(no__=N.., proxy=False, regex=N.., force_match=True):
+___ filePaths(no__=N.., proxy=False, regex=N.., force_match=T..):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -207,7 +207,7 @@ ___ filePaths(no__=N.., proxy=False, regex=N.., force_match=True):
 # end filePaths
 
 
-___ filePathsWithRanges(nodes=N.., proxy=False, regex=N.., force_match=True):
+___ filePathsWithRanges(nodes=N.., proxy=False, regex=N.., force_match=T..):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -238,7 +238,7 @@ ___ fileType(node):
     Returns the file extension of the node given
     """
     result = __.path.splitext(filePath(node))[1].lstrip('.')
-    LOGGER.debug('Filetype for node %s is %s' % (node.knob('name').value(), result))
+    LOGGER.debug('Filetype for node %s is %s' % (node.knob('name').v.., result))
     r_ result
 # end fileType
 
@@ -278,7 +278,7 @@ ___ format(node):
                 break
                 
     # return whatever is the current value of my_format
-    LOGGER.debug('Format for node %s is %s' % (node.knob('name').value(), my_format))
+    LOGGER.debug('Format for node %s is %s' % (node.knob('name').v.., my_format))
     r_ my_format
 # end format
 

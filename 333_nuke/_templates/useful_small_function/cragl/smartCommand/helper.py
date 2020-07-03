@@ -1,7 +1,7 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCommand_v1.0.0/smartCommand/helper.py
-______ json
+______ j___
 ______ __
-______ time
+______ ti__
 ______ pl..
 ______ re
 ______ subprocess
@@ -37,7 +37,7 @@ ___ set_style_sheet(widget, style = 'styles.qss'):
     styles = __.path.join(this_dir, 'styles', style)
     styles = __.path.normpath(styles)
     __ __.path.isfile(styles):
-        with open(styles) as file_:
+        with o..(styles) as file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -63,9 +63,9 @@ ___ get_tool_root(which):
 
 
 ___ write_log(text, tool = 'sc'):
-    with open(get_log_file(), 'a') as file_:
+    with o..(get_log_file(), 'a') as file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
-        log_time = time.strftime(log_time_format, time.localtime())
+        log_time = ti__.strftime(log_time_format, ti__.localtime())
         file_.write('{}: {} {}\n'.format(log_time, tool, text))
 
 
@@ -75,7 +75,7 @@ ___ get_log_file():
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with open(log_file, 'w') as lf:
+        with o..(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
     r_ log_file
@@ -90,7 +90,7 @@ ___ load_settings():
         ___ setting __ settings_root.find('settings').f_a_('setting'):
             value = setting.text
             __ value __ 'True':
-                value = True
+                value = T..
             ____ value __ 'False':
                 value = False
             settings[setting.get('name')] = value
@@ -152,7 +152,7 @@ ___ get_settings_xml():
     settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with open(settings_xml, 'w') as look_template:
+            with o..(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
                 msg = "{} settings doesn't exist. created template at: {}".format(__product__, settings_xml)
@@ -191,9 +191,9 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
@@ -215,9 +215,9 @@ ___ prettyprint(elem, level = 0):
 
 ___ check_xml_ok(xml):
     ___
-        with open(xml, 'r') as xml_file:
+        with o..(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        r_ True
+        r_ T..
     ______
         m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
         reset_settings_xml = ask_dialog(m.., process_label='reset', color_process='actionButton')
@@ -242,7 +242,7 @@ ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel
     msg_box.setFocus()
     msg_box.addButton(cancel_label, ?W...QMessageBox.RejectRole)
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
-        r_ True
+        r_ T..
     ____
         r_ False
         r_
@@ -264,12 +264,12 @@ ___ update_settings(key, value):
         __ setting.get('name') __ key:
             setting.text = value
 
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
-___ get_menus(all_incl = True, exclude_prefix = '_'):
+___ get_menus(all_incl = T.., exclude_prefix = '_'):
     menus = []
     __ all_incl:
         menus.ap..('all')
@@ -281,7 +281,7 @@ ___ get_menus(all_incl = True, exclude_prefix = '_'):
             ___
                 xml_path = __.path.join(menu_root, file_)
                 xml_name = __.path.splitext(file_)[0]
-                with open(xml_path, 'r') as xml_file:
+                with o..(xml_path, 'r') as xml_file:
                     ET.fromstring(xml_file.read())
                 menus.ap..(xml_name)
             except ET.ParseError:
@@ -303,9 +303,9 @@ ___ add_command(collection_name, command_path, color = N.., hotkey = N..):
     __ hotkey:
         command_item.set('hotkey', sanitize(hotkey))
     collection.insert(0, command_item)
-    with open(xml, 'w') as file_:
+    with o..(xml, 'w') as file_:
         prettyprint(root)
-        tree.write(file_, encoding='utf-8', xml_declaration=True)
+        tree.write(file_, encoding='utf-8', xml_declaration=T..)
 
 
 ___ sanitize(string):
@@ -340,9 +340,9 @@ ___ swap_commands(xml, path_1, path_2):
     root.find('collection').insert(index_1, command_2)
     root.find('collection').remove(command_1)
     root.find('collection').insert(index_2, command_1)
-    with open(xml, 'w') as file_:
+    with o..(xml, 'w') as file_:
         prettyprint(root)
-        tree.write(file_, encoding='utf-8', xml_declaration=True)
+        tree.write(file_, encoding='utf-8', xml_declaration=T..)
     r_
 
 
@@ -363,9 +363,9 @@ ___ remove_history_commands(xml, history_max):
             root.find('collection').remove(command)
         index += 1
 
-    with open(xml, 'w') as file_:
+    with o..(xml, 'w') as file_:
         prettyprint(root)
-        tree.write(file_, encoding='utf-8', xml_declaration=True)
+        tree.write(file_, encoding='utf-8', xml_declaration=T..)
 
 
 ___ create_collection(collection_name):
@@ -376,7 +376,7 @@ ___ create_collection(collection_name):
     xml = __.path.join(collection_root, '{}.xml'.format(collection_name))
     __ no. __.path.isfile(xml):
         write_log("Create new collection '{}.xml'".format(collection_name))
-        with open(xml, 'w') as file_:
+        with o..(xml, 'w') as file_:
             file_.write(templates.COLLECTION.format(collection_name=collection_name))
     r_ xml
 
@@ -419,9 +419,9 @@ ___ update_command(xml, path, key, value):
     ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ path:
             command.set(key, value)
-            with open(xml, 'w') as xml:
+            with o..(xml, 'w') as xml:
                 prettyprint(root)
-                tree.write(xml, encoding='utf-8', xml_declaration=True)
+                tree.write(xml, encoding='utf-8', xml_declaration=T..)
             break
     ____
         raise ValueError('No such command path: {}'.format(path))
@@ -435,9 +435,9 @@ ___ remove_command(xml, path):
     ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ path:
             root.find('collection').remove(command)
-            with open(xml, 'w') as xml:
+            with o..(xml, 'w') as xml:
                 prettyprint(root)
-                tree.write(xml, encoding='utf-8', xml_declaration=True)
+                tree.write(xml, encoding='utf-8', xml_declaration=T..)
             break
     ____
         raise ValueError('No such command path: {}'.format(path))
@@ -480,9 +480,9 @@ ___ load_tooltips(parent, section):
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with open(tooltips_file) as json_file:
+    with o..(tooltips_file) as json_file:
         ___
-            ttdata = json.load(json_file)
+            ttdata = j___.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
@@ -517,7 +517,7 @@ ___ get_basename(path, extension = False):
 
 
 ___ get_module_docstring(path):
-    compile_ = compile(open(path).read(), path, 'exec')
+    compile_ = compile(o..(path).read(), path, 'exec')
     __ compile_.co_consts and i..(compile_.co_consts[0], basestring):
         docstring = compile_.co_consts[0]
     ____

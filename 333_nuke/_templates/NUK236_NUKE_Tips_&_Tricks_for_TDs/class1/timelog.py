@@ -1,95 +1,95 @@
-______ __
-______ threading
-______ getpass
-______ datetime
-______ json
-______ re
-______ ?
-______ time
-
-CURRENT_USER = getpass.getuser()
-LOG_DIR = "/Users/hugoleveille/Desktop/logs"
-TIMER = 5
-IDLE_TIME = 30
-
-
-c_ Timelog():
-
-    ___ start_thread
-
-        Timelog.thread = threading.Timer( TIMER, write_json)
-        Timelog.thread.setDaemon(True)
-        Timelog.thread.start()
-
-    ___ get_json
-        date = datetime.datetime.today().strftime("%Y-%m-%d")
-        json_dir = "%s/%s/%s" % (LOG_DIR, CURRENT_USER, date)
-        __ no. __.path.exists(json_dir):
-            __.makedirs(json_dir)
-
-        json_path = "%s/log.json" % json_dir
-        __ no. __.path.exists(json_path):
-            data = {}
-        ____
-            _file = open(json_path, "r")
-            data = json.load(_file)
-
-        r_ data
-
-    ___ write_json
-
-        script_path = ?.root()['name'].value()
-
-        regex = re.search( r"projects/(\w+)/shots/(\w+)", script_path)
-        __ regex:
-            shot = "%s_%s" % (regex.group(1), regex.group(2))
-        ____
-            print "Invalid Path"
-            start_thread()
-            r_
-
-        __ idle_time() > IDLE_TIME:
-            print "Script is idle"
-            start_thread()
-            r_
-
-
-        data = get_json()
-
-        __ data.has_key(shot):
-            data[shot] += TIMER
-        ____
-            data[shot] = TIMER
-
-        _file = open(json_path, "w")
-        json.dump(data, _file)
-        print data
-        start_thread()
-
-    ___ idle_time
-
-        now = time.time()
-        autosave_path = "%s.autosave" % script_path
-
-        #1)  If there is an autosave file, we compare it's last modified time to the local time
-
-        __ __.path.isfile( autosave_path):
-            modification_time = int(__.stat( autosave_path).st_mtime)
-            _idle_time = now - modification_time
-
-        #2) If nuke is modified and there is no autosave file, it means the user has modified he's script just after
-        #saving it. So we consider the script not idle
-
-        ____ ?.modified():
-            __ no. __.path.isfile(autosave_path):
-                _idle_time = 0
-
-        #3) If there is no autosave file and nuke is not modified, we compare current time to the modification time of
-        # the nuke script
-
-        ____ no. ?.modified():
-            modification_time = int(__.stat( script_path).st_mtime)
-            _idle_time = now - modification_time
-
-        print _idle_time
-        r_ _idle_time
+# ______ __
+# ______ th..
+# ______ ge..
+# ______ d_t_
+# ______ j___
+# ______ __
+# ______ ?
+# ______ ti__
+#
+# CURRENT_USER _ g_.g_u..
+# LOG_DIR _ */Users/hugoleveille/Desktop/logs
+# TIMER _ 5
+# IDLE_TIME _ 30
+#
+#
+# c_ Timelog
+#
+#     ___ start_thread
+#
+#         ?.t.. _ t__.T.. T.. w..
+#         ?.t....sD.. T..
+#         ?.t__.st..
+#
+#     ___ get_json
+#         date _ d_t_.d_t_.to__ .s_t.. *%Y-%m-%d
+#         json_dir _ *@/@/@  L.. C.. d..
+#         __ no. __.p__.e.. j..
+#             __.m_d.. ?
+#
+#         json_path _ @/log.json  j_d..
+#         __ no. __.p__.e.. ?
+#             data _  # dict
+#         ____
+#             _file _ o.. ? _
+#             data _ j___.l.. ?
+#
+#         r_ ?
+#
+#     ___ write_json
+#
+#         script_path _ ?.r.. *name .v..
+#
+#         regex _ __.s.. _*projects/(\w+)/shots/(\w+) ?
+#         __ ?
+#             shot _ *@_@*  ?.g.. 1 ?.g.. 2
+#         ____
+#             print *Invalid Path
+#             s_t..
+#             r_
+#
+#         __ i_t.. > I..
+#             print "Script is idle"
+#             s_t..
+#             r_
+#
+#
+#         data _ g_j..
+#
+#         __ ?.h_k.. s..
+#             ? s.. +_ T..
+#         ____
+#             ? s.. _ T..
+#
+#         _file _ o.. j_p_ _
+#         j___.d.. d.. _..
+#         print d..
+#         s_t..
+#
+#     ___ idle_time
+#
+#         now _ ti__.ti__
+#         autosave_path _ *@.autosave  s_p..
+#
+#         #1)  If there is an autosave file, we compare it's last modified time to the local time
+#
+#         __ __.pa__.i_f.. ?
+#             modification_time _ in. __.st.. a__ .s._mt..
+#             _idle_time _ n.. - ?
+#
+#         #2) If nuke is modified and there is no autosave file, it means the user has modified he's script just after
+#         #saving it. So we consider the script not idle
+#
+#         ____ ?.m..
+#             __ no. __.p__.i_f.. a..
+#                 _i_t.. _ 0
+#
+#         #3) If there is no autosave file and nuke is not modified, we compare current time to the modification time of
+#         # the nuke script
+#
+#         ____ no. ?.m..
+#             modification_time _ in. __.st..  s_p.. .s._mt..
+#             _idle_time _ n.. - ?
+#
+#         print _i_t..
+#         r_ ?

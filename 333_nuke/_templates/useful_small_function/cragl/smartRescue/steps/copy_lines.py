@@ -78,7 +78,7 @@ c_ CopyLines(BaseStep):
 
         path_temp = "{}_".format(path)
 
-        with open(path, "r") as src, open(path_temp, "w") as dest:
+        with o..(path, "r") as src, o..(path_temp, "w") as dest:
             lines = src.readlines()
             copy_lines = lines[first_line-1:last_line]
             dest.write("".join(copy_lines))

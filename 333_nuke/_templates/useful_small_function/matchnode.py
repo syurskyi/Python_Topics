@@ -10,7 +10,7 @@ load('ddlogger')
 ______ ddlogger
 LOGGER = ddlogger.getLogger('getfromnode')
 
-___ byClass(node=N.., regex=N.., force_match=True):
+___ byClass(node=N.., regex=N.., force_match=T..):
     
     """
     checks the node.Class() of a node against a regex
@@ -30,26 +30,26 @@ ___ byClass(node=N.., regex=N.., force_match=True):
         result = my_pattern.match(node.Class())
         __ result:
             LOGGER.debug('Node %s.Class() EXACTLY MATCHES regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         ____
             LOGGER.debug('Node %s.Class() DOES NOT MATCH regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         r_ result
     ____
         # return re.search object (risky)
         result = my_pattern.search(node.Class())
         __ result:
             LOGGER.debug('Node %s.Class() RISKY MATCHES regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         ____
             LOGGER.debug('Node %s.Class() DOES NOT MATCH regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         r_ result
     # endif
 # end byClass
 
 
-___ nodesByClass(nodes=N.., regex=N.., force_match=True):
+___ nodesByClass(nodes=N.., regex=N.., force_match=T..):
     
     """
     find the nodes in nodes whose Class() matches regex
@@ -68,7 +68,7 @@ ___ nodesByClass(nodes=N.., regex=N.., force_match=True):
 # end nodesByClass
 
 
-___ byName(node=N.., regex=N.., force_match=True):
+___ byName(node=N.., regex=N.., force_match=T..):
     
     """
     checks the node.fullName() of node against a regex
@@ -88,26 +88,26 @@ ___ byName(node=N.., regex=N.., force_match=True):
         result = my_pattern.match(node.fullName())
         __ result:
             LOGGER.debug('Node %s.fullName() EXACTLY MATCHES regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         ____
             LOGGER.debug('Node %s.fullName() DOES NOT MATCH regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         r_ result
     ____
         # return re.search object (risky)
         result = my_pattern.search(node.fullName())
         __ result:
             LOGGER.debug('Node %s.fullName() LOOSLY MATCHES regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         ____
             LOGGER.debug('Node %s.fullName() DOES NOT MATCH regex %s' %
-                (node.knob('name').value(), my_pattern.pattern))
+                (node.knob('name').v.., my_pattern.pattern))
         r_ result
     # endif
 # end byName
 
 
-___ nodesByName(nodes=N.., regex=N.., force_match=True):
+___ nodesByName(nodes=N.., regex=N.., force_match=T..):
     
     """
     find the nodes in nodes whose fullName() matches regex

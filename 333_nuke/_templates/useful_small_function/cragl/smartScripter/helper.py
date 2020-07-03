@@ -2,7 +2,7 @@
 
 # Import built-in modules
 ______ logging
-______ json
+______ j___
 ______ __
 ______ subprocess
 ______ ___
@@ -84,7 +84,7 @@ ___ set_style_sheet(widget, style="styles.qss"):
     styles = __.path.normpath(styles)
 
     __ __.path.isfile(styles):
-        with open(styles) as file_:
+        with o..(styles) as file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -254,9 +254,9 @@ ___ load_tooltips(parent, section):
         r_
 
     # Parse tool tips file.
-    with open(tooltips_file) as json_file:
+    with o..(tooltips_file) as json_file:
         ___
-            ttdata = json.load(json_file)
+            ttdata = j___.load(json_file)
         except ValueError:
             r_
 

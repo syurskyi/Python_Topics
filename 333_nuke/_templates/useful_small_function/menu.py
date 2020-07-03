@@ -79,7 +79,7 @@ ___ sjmAutoBackdrop():
   #
   n['selected'].sV..(False)
   ___ node __ selNodes:
-    node['selected'].sV..(True)
+    node['selected'].sV..(T..)
   r_ n
 
 # backdrop font size=99, by Steve Molin
@@ -114,7 +114,7 @@ ___ sjmFindAllParentReads(n=N..):
 ___ sjmHideInputsOff():
   ___ i __ ?.allNodes():
     __ i.knob('hide_input'):
-      __ i.knob('hide_input').value():
+      __ i.knob('hide_input').v..:
 	i.knob('hide_input').sV..(False)
 
 # open a read or write node in a viewer program (djv is the first example)
@@ -125,7 +125,7 @@ ___ sjmOpenInViewer(nd=N..):
   ______ subprocess
   __ nd is N..:
     nd = ?.sN__
-  fp = nd.knobs()['file'].value() % nd.firstFrame()
+  fp = nd.knobs()['file'].v.. % nd.firstFrame()
   args = 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp
   subprocess.P..(args)
 
@@ -135,7 +135,7 @@ ___ sjmOpenInViewer(nd=N..):
 ___ sjmOpenAllInViewer():
   ___ n __ ?.allNodes():
     __ n.Class() __ 'Write':
-      __ no. n.knob('disable').value():
+      __ no. n.knob('disable').v..:
         sjmOpenInViewer(n)
 	#filespec = n.knob('file').value()
 	#fn = glob.glob(filespec.replace('%04d','*'))[0]
@@ -168,7 +168,7 @@ ___ sjmToggleDisableExpression():
 #
 ___ sjmToggleSwitch():
   ___ mynode __ ?.sN..:
-    __ mynode.knobs()['which'].value():
+    __ mynode.knobs()['which'].v..:
       mynode.knobs()['which'].sV..(0)
     ____
       mynode.knobs()['which'].sV..(1)
@@ -183,7 +183,7 @@ ___ testMyDialog():
 	p.addTextFontPulldown('font browser', '/myFonts/')
 	p.addRGBColorChip('some pretty color', '')
 	p.addExpressionInput('enter an expression', '4*25')
-	p.addBooleanCheckBox('yes or no?', True)
+	p.addBooleanCheckBox('yes or no?', T..)
 	p.addEnumerationPulldown('my choices', 'over under screen mask stencil')
 	p.addScriptCommand('tcl or python code', '')
 	p.addSingleLineInput('just one line', 'not much space')

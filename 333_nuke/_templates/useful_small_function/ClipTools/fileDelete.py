@@ -30,7 +30,7 @@ ___ deleteClips(files):
         ___ clips __ files:
             [filesList,name,padding, extension, rangeStart, rangeEnd]=createList(clips)
             __ do_it:
-                deleteFiles=delete(filesList,True)
+                deleteFiles=delete(filesList,T..)
 
         __ deleteFiles:
             nuke.m..('some files failed to delete \ntry selecting individual files')
@@ -47,7 +47,7 @@ ___ deleter():
     # if it finds a '%' or '#' it assumes a clip list from Nuke otherwise it assumes
     # a list of individual files from Nuke.
 
-    files=nuke.getClipname('select files to delete',multiple=True)
+    files=nuke.getClipname('select files to delete',multiple=T..)
 
     while files:
         filestoDelete=__.path.basename(files[0])  #sets name for message later
@@ -57,7 +57,7 @@ ___ deleter():
             catchFail=deleteFiles(files)
 
         __ no. catchFail:
-            files=nuke.getClipname('select files to delete',multiple=True)
+            files=nuke.getClipname('select files to delete',multiple=T..)
         else:
             files=N..
     

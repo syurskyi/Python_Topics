@@ -30,7 +30,7 @@ ___ selected_nodes_deep(nodes):
     ___ n __ nodes:
         ___
             n.deepSampleCount(0, 0)
-            r_ True
+            r_ T..
         except ValueError:
             r_ False
 
@@ -43,7 +43,7 @@ ___ selected_nodes_3d(nodes):
         ___
             # TODO Need to find better detection method for 3D nodes, this method doesnt include Lights
             n['render_mode'].getValue()
-            r_ True
+            r_ T..
         except NameError:
             r_ False
 
@@ -61,7 +61,7 @@ ___ copy_knobs():
 ___ copy_to_clipboard(value):
     # copy text to clipboard
     QtGui.QApplication.clipboard().setText(value)
-    r_ True
+    r_ T..
 
 
 ___ gui_disable():
@@ -85,7 +85,7 @@ ___ cycle_viewer_input_masks():
         masks = k.values()
         x = itertools.cycle(masks)
         ___ dummy __ ra..(le.(masks)):
-            __ k.value() __ next(x):
+            __ k.v.. __ next(x):
                 k.sV..(next(x))
 
 
@@ -107,13 +107,13 @@ ___ paste_to_selected():
     ___ node __ selection:
         node['selected'].sV..(False)
     ___ node __ selection:
-        node['selected'].sV..(True)
+        node['selected'].sV..(T..)
         ?.nodePaste('%clipboard%')
         nodes = ?.sN..
         ___ node __ nodes:
             pasted_nodes.ap..(node)
     ___ node __ pasted_nodes:
-        node['selected'].sV..(True)
+        node['selected'].sV..(T..)
 
 
 ___ label_dialog():
@@ -139,7 +139,7 @@ ___ open_frame_in_photoshop():
         read = ?.sN__
         frame_path = read.metadata("input/filename")
         cmd = "open -a \"%s\" \"%s\"" % (ps_path, frame_path)
-        subprocess.call(cmd, shell=True)
+        subprocess.call(cmd, shell=T..)
     ____
         ?.m..("You must have a single Read node selected.")
 
@@ -166,7 +166,7 @@ ___ read_from_write():
         ___ node __ nodes:
             __ node.Class() __ 'Write':
                 write_nodes.ap..(node)
-                found_writes = True
+                found_writes = T..
 
         __ found_writes:  # we found some writes
 

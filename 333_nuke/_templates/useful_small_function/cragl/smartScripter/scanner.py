@@ -29,7 +29,7 @@ Usage:
 
 # Import built-in modules
 ____ collections ______ OrderedDict
-______ json
+______ j___
 ______ __
 
 # Import local modules
@@ -124,7 +124,7 @@ c_ Scanner(object):
             except (IOError, KeyError, ValueError) as error:
                 logger.warning(error.m..)
 
-            with open(__.path.splitext(path)[0], "r") as command_file:
+            with o..(__.path.splitext(path)[0], "r") as command_file:
                 command = command_file.read()
 
             command_widget = widgets.CommandWidget(
@@ -160,9 +160,9 @@ c_ Scanner(object):
                 path
             ))
 
-        with open(path, "r") as json_file:
+        with o..(path, "r") as json_file:
             ___
-                r_ json.load(json_file)
+                r_ j___.load(json_file)
             except ValueError:
                 raise ValueError("Skipping corrupt command {}".format(path))
             except KeyError:

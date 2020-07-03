@@ -33,7 +33,7 @@ ___ create_node(node):
 
     """
     lab = 'baked metadata\nfrom {}'.format(node.name())
-    noop = nuke.nodes.NoOp(hide_input=True,
+    noop = nuke.nodes.NoOp(hide_input=T..,
                            xpos=node.xpos() + 100,
                            ypos=node.ypos(),
                            tile_color=constants.COLORS['noop'],

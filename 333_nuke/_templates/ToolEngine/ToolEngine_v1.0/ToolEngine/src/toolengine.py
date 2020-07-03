@@ -7,7 +7,7 @@
 
 
 ______ ?
-______ json
+______ j___
 ______ __
 
 ______ toolhelper
@@ -31,8 +31,8 @@ ___ show_settings():
 
         settings["tools_root"] = p.value("tools root: ")
 
-        with open(config.PATH_SETTINGS_FILE, 'w') as sf:
-            json.dump(settings, sf)
+        with o..(config.PATH_SETTINGS_FILE, 'w') as sf:
+            j___.dump(settings, sf)
 
         # load toolsets
         toolhelper.reload_tools_menu(notify=False)
@@ -50,8 +50,8 @@ ___ show_info():
         print "ToolEngine: info file doesn't exist"
         r_
 
-    with open(info_file) as f:
-        info_data = json.load(f)
+    with o..(info_file) as f:
+        info_data = j___.load(f)
 
     logo = __.path.normpath(__.path.join(__.path.dirname(__file__), "../", "img", "logo.png"))
     ?.m..("<img src='{}' style='float: right;' /><h1>ToolEngine v{}</h1>\n\n{}".format(logo, info_data["version"], info_data["info"]))

@@ -112,7 +112,7 @@ ___ renamer():
     # if it finds a '%' it assumes a clip list from Nuke otherwise it assumes
     # a list of individual files from Nuke.
     
-    files=nuke.getClipname('select files to rename',multiple=True)
+    files=nuke.getClipname('select files to rename',multiple=T..)
     
     while files:
         __ '%' __ str(files):
@@ -120,7 +120,7 @@ ___ renamer():
         else:
             renameFiles(files)
         files=N..   # stops renamer renaming files a 2nd time around the loop by mistake
-        files=nuke.getClipname('select files to rename',multiple=True)
+        files=nuke.getClipname('select files to rename',multiple=T..)
 
 
 
@@ -129,7 +129,7 @@ ___ renamer():
 # renumbers and/or repads image sequences on disc from within Nuke
 ___ renumber():
     
-    files=nuke.getClipname('select clip to renumber',multiple=True)
+    files=nuke.getClipname('select clip to renumber',multiple=T..)
     #nuke.message('files selected = '+str(files))
     
     
@@ -176,7 +176,7 @@ ___ renumber():
         else:
             nuke.m..('This only works with clip ranges')
             
-        files=nuke.getClipname('select more clips to renumber',multiple=True)
+        files=nuke.getClipname('select more clips to renumber',multiple=T..)
 
 
 
@@ -187,7 +187,7 @@ ___ renumber():
 # or overwrite a locked file (after unlocked) when render successful
 #
 ___ removeExtension():
-    files=nuke.getFilename('select files to remove extension',multiple=True)
+    files=nuke.getFilename('select files to remove extension',multiple=T..)
     while files:
         __ '%' __ str(files):
             nuke.m..('This only works on individually selected files')
@@ -196,7 +196,7 @@ ___ removeExtension():
             __ result:
                 ___ f __ files:
                     __.rename(f, f[:-4])
-        files=nuke.getFilename('select more files to remove extension',multiple=True)
+        files=nuke.getFilename('select more files to remove extension',multiple=T..)
 
 
 # removeTemps - function called from Nuke
@@ -213,8 +213,8 @@ ___ removeTemps():
         paths = []
         
         ___ w __ aw:
-            f = w['file'].value()
-            p = w['proxy'].value()
+            f = w['file'].v..
+            p = w['proxy'].v..
             
             __ f:
                 f_path = __.path.dirname(f)

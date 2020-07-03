@@ -36,9 +36,9 @@ ___ setFrameRange():
 
     #show dialog
     __ f.showModalDialog():
-        __ f.nodesSelection.value() __ 'All read nodes':
+        __ f.nodesSelection.v.. __ 'All read nodes':
             Sel = allReads()
-        ____ f.nodesSelection.value() __ 'Selected nodes only':
+        ____ f.nodesSelection.v.. __ 'Selected nodes only':
             Sel = nuke.sN..
         else:
             Sel = allReads()
@@ -71,9 +71,9 @@ ___ setError():
 
     #show dialog
     __ e.showModalDialog():
-        __ e.nodesSelection.value() __ 'All read nodes':
+        __ e.nodesSelection.v.. __ 'All read nodes':
             Sel = allReads()
-        ____ e.nodesSelection.value() __ 'Selected nodes only':
+        ____ e.nodesSelection.v.. __ 'Selected nodes only':
             Sel = nuke.sN..
         else:
             Sel = allReads()
@@ -88,7 +88,7 @@ ___ setError():
         ___ r __ Sel:
             ___
                 r['on_error'].setValue(int(e.onError.getValue()))
-                __ e.reload.value():
+                __ e.reload.v..:
                     r.knob('reload').execute()
             except ValueError:
                 nuke.m..('No nodes selected!')

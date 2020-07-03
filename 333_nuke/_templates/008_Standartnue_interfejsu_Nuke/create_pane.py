@@ -14,7 +14,7 @@ c_ simplePanel(?.PythonPanel):
         
     ___ knobChanged(self, knob):
         __ knob is btn:
-            print menu.value()
+            print menu.v..
         
 p = simplePanel()
 # variant 1

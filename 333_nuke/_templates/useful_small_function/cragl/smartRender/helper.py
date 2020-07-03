@@ -1,17 +1,17 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartRender_v3.0/smartRender/src/helper.py
 ______ hashlib
-______ json
+______ j___
 ______ multiprocessing
 ______ __
 ______ random
 ______ ___
 ______ subprocess
-______ time
+______ ti__
 ______ urllib
 ______ xml.etree.ElementTree as ET
 ______ collections
 ______ pl..
-______ datetime
+______ d_t_
 ______ errno
 ______ ?
 ______ ?
@@ -177,7 +177,7 @@ ___ get_tooltips_file(*args):
     r_ __.path.normpath(tooltips)
 
 
-___ update_job_log(job_id, processdata, time = str(int(time.time())), *args):
+___ update_job_log(job_id, processdata, ti__ = str(int(ti__.ti__())), *args):
     jobs_xml = get_job_xml()
     __ jobs_xml __ '':
         r_
@@ -187,22 +187,22 @@ ___ update_job_log(job_id, processdata, time = str(int(time.time())), *args):
         __ job.get('id') __ job_id:
             process = job.find('process')
             p = ET.SubElement(process, 'data')
-            p.set('time', str(time))
+            p.set('time', str(ti__))
             p.set('status', str(processdata[0]))
             p.set('thread', str(processdata[1]))
             p.text = processdata[2]
-            with open(jobs_xml, 'w') as xml:
+            with o..(jobs_xml, 'w') as xml:
                 prettyprint(jobs_root)
-                jobs_tree.write(xml, encoding='utf-8', xml_declaration=True)
-            r_ True
+                jobs_tree.write(xml, encoding='utf-8', xml_declaration=T..)
+            r_ T..
 
 
 ___ check_xml_ok(xml, *args):
     settings_xml = __.path.join(get_smart_render_private_root(), 'settings.xml')
     ___
-        with open(xml, 'r') as xml_file:
+        with o..(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        r_ True
+        r_ T..
     ______
         xml_name = __.path.basename(xml)
         m.. = 'The smartRender {} file seems to be broken. Do you want to reset it now?'.format(xml_name)
@@ -229,7 +229,7 @@ ___ check_xml_ok(xml, *args):
 ___ check_web_connection(*args):
     ___
         urllib.urlopen('http://www.cragl.com')
-        r_ True
+        r_ T..
     ______
         r_ False
 
@@ -245,9 +245,9 @@ ___ update_job_data(job_id, key, val, *args):
             ___ setting __ job.f_a_('setting'):
                 __ setting.get('name') __ key:
                     setting.text = val
-                    with open(jobs_xml, 'w') as xml:
+                    with o..(jobs_xml, 'w') as xml:
                         prettyprint(jobs_root)
-                        jobs_tree.write(xml, encoding='utf-8', xml_declaration=True)
+                        jobs_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ calculate_process_precentage(job_id, frame, *args):
@@ -285,9 +285,9 @@ ___ calculate_process_precentage(job_id, frame, *args):
                 __ f.text __ str(frame):
                     job.find('frames').remove(f)
 
-            with open(jobs_xml, 'w') as xml:
+            with o..(jobs_xml, 'w') as xml:
                 prettyprint(jobs_root)
-                jobs_tree.write(xml, encoding='utf-8', xml_declaration=True)
+                jobs_tree.write(xml, encoding='utf-8', xml_declaration=T..)
             r_ done_precentage
 
 
@@ -296,7 +296,7 @@ ___ set_style_sheet(widget, *args):
     styles_nuke = __.path.join(this_dir, '../', 'styles', 'nuke.qss')
     styles_nuke = __.path.normpath(styles_nuke)
     __ __.path.isfile(styles_nuke):
-        with open(styles_nuke) as file_:
+        with o..(styles_nuke) as file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -425,32 +425,32 @@ ___ get_log_file(*args):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with open(log_file, 'w') as lf:
+        with o..(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
     r_ log_file
 
 
 ___ get_time_formated():
-    r_ time.strftime('%d.%m.%Y %H:%M:%S', time.localtime())
+    r_ ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
 
 
 ___ write_log(text, tool = 'rn'):
-    with open(get_log_file(), 'a') as file_:
+    with o..(get_log_file(), 'a') as file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
-        log_time = time.strftime(log_time_format, time.localtime())
+        log_time = ti__.strftime(log_time_format, ti__.localtime())
         file_.write('{}: {} {}\n'.format(log_time, tool, text))
 
 
 ___ write_render_log(text, *args):
     log = __.path.join(get_smart_render_private_root(), 'log.txt')
     __ no. __.path.isfile(log):
-        with open(log, 'w') as lf:
+        with o..(log, 'w') as lf:
             lf.write('')
     ___
-        with open(log, 'a') as lf:
+        with o..(log, 'a') as lf:
             lf.write('{}: {}\n'.format(get_time_formated()), text)
-        r_ True
+        r_ T..
     except IOError:
         r_ False
 
@@ -459,12 +459,12 @@ ___ write_terminal_cmd(job_id, text, file = 'input', *args):
     log_name = '{}_terminal_{}.log'.format(job_id, file)
     log = __.path.join(get_smartrender_log_dir(), log_name)
     __ no. __.path.isfile(log):
-        with open(log, 'w') as file_:
+        with o..(log, 'w') as file_:
             file_.write('')
     ___
-        with open(log, 'a') as file_:
+        with o..(log, 'a') as file_:
             file_.write('{}\n'.format(text))
-        r_ True
+        r_ T..
     except IOError:
         r_ False
 
@@ -473,7 +473,7 @@ ___ get_job_xml(*args):
     job_xml = __.path.join(get_smart_render_private_root(), 'jobs.xml')
     __ no. __.path.isfile(job_xml):
         ___
-            with open(job_xml, 'w') as job_template:
+            with o..(job_xml, 'w') as job_template:
                 template = templates.JOB
                 job_template.write(template.strip())
                 write_log("smartRender job log doesn't exist. created template at: {}".format(job_xml))
@@ -539,7 +539,7 @@ ___ load_terminal_log(job_id, mode, *args):
     __ no. __.path.isfile(terminal_file):
         r_ ''
     ___
-        with open(terminal_file, 'rt') as file:
+        with o..(terminal_file, 'rt') as file:
             r_ file.read()
     except Exception as e:
         r_ 'Error reading the terminal input file. {}'.format(e)
@@ -578,11 +578,11 @@ ___ load_job_log_data(job_id, filter, file_output = False, *args):
                     ____
                         code = "[<span style='color:#339933'>done</span>"
                 data_time = int(data.get('time'))
-                time = datetime.datetime.fromtimestamp(data_time).strftime('%d/%m/%Y %H:%M:%S')
+                ti__ = d_t_.d_t_.fromtimestamp(data_time).strftime('%d/%m/%Y %H:%M:%S')
                 __ file_output:
-                    job_data += '{time} {code} {text}\n'.format(time=time, code=code, text=data.text)
+                    job_data += '{time} {code} {text}\n'.format(ti__=ti__, code=code, text=data.text)
                 ____
-                    job_data += '<tr><td>{time}</td><td> {code}</td><td>] {text}</td></tr>'.format(time=time, code=code, text=data.text)
+                    job_data += '<tr><td>{time}</td><td> {code}</td><td>] {text}</td></tr>'.format(ti__=ti__, code=code, text=data.text)
                     job_data = '<table>{}</table>'.format(job_data)
 
     r_ job_data
@@ -637,7 +637,7 @@ ___ get_settings_xml(*args):
     __ no. __.path.isfile(settings_xml):
         desktop_cache = __.path.join(__.path.expanduser('~'), 'Desktop/cache')
         ___
-            with open(settings_xml, 'w') as render_template:
+            with o..(settings_xml, 'w') as render_template:
                 template = templates.SETTINGS.format(public_cache=get_public_cache_folder(), desktop_cache=desktop_cache)
                 render_template.write(template.strip())
                 write_log("smartRender settings doesn't exist. created template at: {}".format(settings_xml))
@@ -780,9 +780,9 @@ ___ add_cache_path(mode, path, *args):
     new_cache_path.text = path
     new_cache_path.set('mode', mode)
     ET.dump(new_cache_path)
-    with open(settings_xml, 'w') as xml:
+    with o..(settings_xml, 'w') as xml:
         prettyprint(settings_root)
-        settings_tree.write(xml, encoding='utf-8', xml_declaration=True)
+        settings_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
@@ -805,9 +805,9 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
@@ -832,9 +832,9 @@ ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '',
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
@@ -846,7 +846,7 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
     current_found = False
     ___ child __ root.find('presets').f_a_('preset'):
         __ child.get('name') __ 'current':
-            current_found = True
+            current_found = T..
         ____
             current_found = False
         ___ setting __ child.f_a_('setting'):
@@ -864,9 +864,9 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
             ___ child __ root.find('presets').f_a_('preset'):
                 __ child.get('name') __ 'current':
                     child.ap..(elem)
-                    with open(settings_xml, 'w'):
+                    with o..(settings_xml, 'w'):
                         prettyprint(root)
-                        tree.write(settings_xml, encoding='utf-8', xml_declaration=True)
+                        tree.write(settings_xml, encoding='utf-8', xml_declaration=T..)
                     write_log('settings xml added: {}|{}|{}|{}|{}|{}'.format(section, key1, value1, text, key2, value2))
 
 
@@ -911,9 +911,9 @@ ___ delete_cache_path(path, *args):
     ___ path_element __ settings_root.find('cache').f_a_('path'):
         __ path_element.text __ path:
             settings_root.find('cache').remove(path_element)
-            with open(settings_xml, 'w') as xml:
+            with o..(settings_xml, 'w') as xml:
                 prettyprint(settings_root)
-                settings_tree.write(xml, encoding='utf-8', xml_declaration=True)
+                settings_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_button_text = ''):
@@ -931,14 +931,14 @@ ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_bu
     msg_box.setFocus()
     msg_box.addButton(cancel_button_text, ?W...QMessageBox.RejectRole)
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
-        r_ True
+        r_ T..
     ____
         r_ False
         r_
 
 
 ___ create_unique_job_id(*args):
-    current_time = str(int(time.time()))
+    current_time = str(int(ti__.ti__()))
     rand_number = str(random.random())
     id = hashlib.md5('{}{}'.format(current_time, rand_number)).hexdigest()[:8]
     r_ str('{}_{}'.format(current_time, id))
@@ -964,8 +964,8 @@ ___ create_tooltips(parent, key, *args):
     tooltips_file = get_tooltips_file()
     __ no. __.path.isfile(tooltips_file):
         r_
-    with open(tooltips_file) as json_file:
-        ttdata = json.load(json_file)
+    with o..(tooltips_file) as json_file:
+        ttdata = j___.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ tooltip __ ttdata[key]:
             __ tooltip['tt'] __ widget.property('tt'):
@@ -983,7 +983,7 @@ ___ get_recent_nukescripts(*args):
     file_recent_files = __.path.join(__.path.expanduser('~'), '.nuke', 'recent_files')
     recent_files = []
     __ __.path.isfile(file_recent_files):
-        with open(file_recent_files, 'r') as rf:
+        with o..(file_recent_files, 'r') as rf:
             ___ line __ rf:
                 file_ = line.replace('\n', '')
                 file_ = file_.replace('"', '')

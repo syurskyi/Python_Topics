@@ -7,9 +7,9 @@ ______ subprocess
 ______ xml.etree.ElementTree as ET
 ______ collections
 ______ urllib
-______ time
-______ datetime
-______ json
+______ ti__
+______ d_t_
+______ j___
 ______ ?
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
@@ -87,7 +87,7 @@ ___ load_icons():
 ___ check_web_connection():
     ___
         urllib.urlopen('http://www.cragl.com')
-        r_ True
+        r_ T..
     ______
         r_ False
 
@@ -96,7 +96,7 @@ ___ show_message_box(window, m..):
     ?W...QMessageBox().information(window, 'information', m..)
 
 
-___ message_confirm_overwrite(src, is_file = True):
+___ message_confirm_overwrite(src, is_file = T..):
     __ is_file:
         item = 'File'
     ____
@@ -175,7 +175,7 @@ ___ get_log_file():
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with open(log_file, 'w') as lf:
+        with o..(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
     r_ log_file
@@ -188,9 +188,9 @@ ___ get_smartLib_installed_root():
 
 
 ___ write_log(text, tool = 'sl'):
-    with open(get_log_file(), 'a') as file_:
+    with o..(get_log_file(), 'a') as file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
-        log_time = time.strftime(log_time_format, time.localtime())
+        log_time = ti__.strftime(log_time_format, ti__.localtime())
         file_.write('{}: {} {}\n'.format(log_time, tool, text))
 
 
@@ -215,14 +215,14 @@ ___ remove(path):
     __ __.path.isfile(path):
         ___
             __.remove(path)
-            r_ True
+            r_ T..
         ______
             r_ False
 
     ____ __.path.isdir(path):
         ___
             shutil.rmtree(path)
-            r_ True
+            r_ T..
         ______
             r_ False
 
@@ -232,7 +232,7 @@ ___ set_style_sheet(widget):
     styles = __.path.join(this_dir, '../', 'styles', 'nuke.qss')
     styles = __.path.normpath(styles)
     __ __.path.isfile(styles):
-        with open(styles) as file_:
+        with o..(styles) as file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -285,7 +285,7 @@ ___ get_settings_xml():
     settings_xml = __.path.join(get_smartlib_private_dir(), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with open(settings_xml, 'w') as xml:
+            with o..(settings_xml, 'w') as xml:
                 template = templates.SETTINGS.format(user_home_dir=__.path.expanduser('~'))
                 xml.write(template.strip())
         except Exception as error:
@@ -350,9 +350,9 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
@@ -363,9 +363,9 @@ ___ check_xml_parent_val_exists(section):
     __ root.find(section) is N..:
         elem = ET.Element(section)
         root.ap..(elem)
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings xml added: {}'.format(section))
     r_
 
@@ -392,9 +392,9 @@ ___ check_status_exists():
             status_elem.set('default', default_status[key][2])
             root.find('statuslist').ap..(status_elem)
 
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
     r_
 
 
@@ -405,7 +405,7 @@ ___ write_template_default(projectpath, template):
     elem_exists = False
     ___ project __ root.find('templateDefaults').f_a_('project'):
         __ project.get('path') __ projectpath:
-            elem_exists = True
+            elem_exists = T..
             project.text = template
             break
 
@@ -414,9 +414,9 @@ ___ write_template_default(projectpath, template):
         projectelement.set('path', projectpath)
         projectelement.text = template
         root.find('templateDefaults').ap..(projectelement)
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ load_template_default(project_path):
@@ -447,7 +447,7 @@ ___ load_default_status():
     settings_xml = get_settings_xml()
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
-    with open(settings_xml, 'r'):
+    with o..(settings_xml, 'r'):
         ___ child __ settings_root.find('statuslist').f_a_('status'):
             __ child.get('default') __ '1':
                 r_ [child.text, child.get('color')]
@@ -468,7 +468,7 @@ ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_bu
     msg_box.setFocus()
     msg_box.addButton(cancel_button_text, ?W...QMessageBox.RejectRole)
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
-        r_ True
+        r_ T..
     ____
         r_ False
         r_
@@ -476,9 +476,9 @@ ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_bu
 
 ___ check_xml_ok(xml):
     ___
-        with open(xml, 'r') as xml_file:
+        with o..(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        r_ True
+        r_ T..
     ______
         __ xml __ get_settings_xml():
             m.. = 'The smartLib settings file seems to be broken. Do you want to reset it now?'
@@ -541,8 +541,8 @@ ___ prettyprint(elem, level = 0):
 
 ___ write_xml(xml, root, tree):
     prettyprint(root)
-    tree.write(xml, encoding='utf-8', xml_declaration=True)
-    r_ True
+    tree.write(xml, encoding='utf-8', xml_declaration=T..)
+    r_ T..
 
 
 ___ collect_nuke_scripts_no_ignore(path):
@@ -582,14 +582,14 @@ ___ write_location(location, value):
     settings_xml = get_settings_xml()
     settings_tree = ET.parse(settings_xml)
     settings_root = settings_tree.getroot()
-    with open(settings_xml, 'r'):
+    with o..(settings_xml, 'r'):
         ___ child __ settings_root.find('navigation').f_a_('navi'):
             __ child.get('name') __ location:
                 child.text = value
 
-    with open(settings_xml, 'w') as xml:
+    with o..(settings_xml, 'w') as xml:
         prettyprint(settings_root)
-        settings_tree.write(xml, encoding='utf-8', xml_declaration=True)
+        settings_tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ open_website(url):
@@ -607,7 +607,7 @@ ___ open_website(url):
     r_
 
 
-___ set_preview_image(delete_nodes = True):
+___ set_preview_image(delete_nodes = T..):
     __ no. osl.cl():
         r_
     preview_image_width = 500
@@ -638,7 +638,7 @@ ___ set_preview_image(delete_nodes = True):
     write.setInput(0, gamma)
     write.setXYpos(gamma.xpos(), gamma.ypos() + 50)
     write.knob('name').sV..('create preview')
-    write.knob('use_limit').sV..(True)
+    write.knob('use_limit').sV..(T..)
     write.knob('first').sV..(?.frame())
     write.knob('last').sV..(?.frame())
     write.knob('file_type').sV..('jpg')
@@ -686,7 +686,7 @@ ___ get_meta_xml(path):
 
         __ no. __.path.isfile(metaxml):
             ___
-                with open(metaxml, 'w') as file_:
+                with o..(metaxml, 'w') as file_:
                     template = templates.META
                     file_.write(template.strip())
             ______
@@ -720,9 +720,9 @@ ___ check_meta_xml_value_exists(metaxml_path, parent, section, key1, value1, tex
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with open(metaxml_path, 'w') as xml:
+        with o..(metaxml_path, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings metaxml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
@@ -756,7 +756,7 @@ ___ save_image_scaled(src, dest):
     ___
         pixmap = QtGui.QPixmap(img.scaledToWidth(500))
         pixmap.save(dest)
-        r_ True
+        r_ T..
     ______
         write_log('Cannot create image scaled.')
         r_ False
@@ -928,12 +928,12 @@ ___ load_footage(defaulttype = 'Read', path = ''):
 
     __ sel_node:
         __ 'file' __ sel_node.knobs():
-            default_dir = sel_node['file'].value()
+            default_dir = sel_node['file'].v..
         __ no. default_dir and 'proxy' __ sel_node.knobs():
-            default_dir = sel_node['proxy'].value()
+            default_dir = sel_node['proxy'].v..
     __ default_dir __ '':
         default_dir = N..
-    files = ?.getClipname('______ from footage directory', default=path, multiple=True)
+    files = ?.getClipname('______ from footage directory', default=path, multiple=T..)
     __ files != N..:
         max_files = ?.numvalue('preferences.maxPanels')
         n = le.(files)
@@ -946,10 +946,10 @@ ___ load_footage(defaulttype = 'Read', path = ''):
             __ ?.create.isGeoFilename(stripped):
                 nodeType = 'ReadGeo2'
             __ ?.create.isAbcFilename(stripped):
-                is_abc = True
+                is_abc = T..
             __ ?.create.isDeepFilename(stripped):
                 nodeType = 'DeepRead'
-            use_in_panel = True
+            use_in_panel = T..
             __ max_files != 0 and n > max_files:
                 use_in_panel = False
             n = n - 1
@@ -993,7 +993,7 @@ ___ create_new_directory(widget, list_):
             dir_path_full = __.path.join(dest, dir_name)
             __ no. __.path.isdir(dir_path_full):
                 __.makedirs(dir_path_full)
-                diritem = widget.build_tree_widget_item(widget.dirlist[dest], dir_name, dir_path_full, is_dir=True)
+                diritem = widget.build_tree_widget_item(widget.dirlist[dest], dir_name, dir_path_full, is_dir=T..)
                 widget.dirlist[dir_path_full] = diritem
                 widget.allitems[dir_path_full] = diritem
             ____
@@ -1027,7 +1027,7 @@ ___ get_project_information(project_full_path):
         __ __.path.isdir(shot_full_path) and shot != '.docs':
             metaxml = __.path.join(shot_full_path, '.docs', 'meta.xml')
             __ __.path.isfile(metaxml):
-                with open(metaxml, 'r') as metaxml:
+                with o..(metaxml, 'r') as metaxml:
                     shot_info = []
                     tree = ET.parse(metaxml)
                     root = tree.getroot()
@@ -1055,7 +1055,7 @@ ___ get_project_information(project_full_path):
 ___ build_html(html_path, project):
     shot_information = get_project_information(project)
     project_title = __.path.split(project)[-1]
-    time_now = datetime.datetime.fromtimestamp(int(time.time())).strftime('%d/%m/%Y %H:%M:%S')
+    time_now = d_t_.d_t_.fromtimestamp(int(ti__.ti__())).strftime('%d/%m/%Y %H:%M:%S')
     shot_status_list = load_status_list().values()
     status_dict = {}
     ___ status __ shot_status_list:
@@ -1069,11 +1069,11 @@ ___ build_html(html_path, project):
             __ default_status __ status_dict:
                 status_dict[default_status] += 1
 
-    with open(html_path, 'w') as tmp_html:
+    with o..(html_path, 'w') as tmp_html:
         report_top = templates.REPORT_TOP.format(project_title=project_title, time_now=time_now, project_path=project, number_of_shots=le.(shot_information))
         tmp_html.write(report_top)
     ___ key __ sorted(status_dict):
-        with open(html_path, 'a') as tmp_html:
+        with o..(html_path, 'a') as tmp_html:
             bg_color = '255,255,255'
             ___ status __ shot_status_list:
                 __ key __ status[1]:
@@ -1089,7 +1089,7 @@ ___ build_html(html_path, project):
             tmp_html.write("\n                <span style='background-color: rgb({color}); display: inline-block; width:{width}%;'>&nbsp;</span>\n            ".format(color=bg_color, width=percent_graph))
 
     ___ key __ sorted(status_dict):
-        with open(html_path, 'a') as tmp_html:
+        with o..(html_path, 'a') as tmp_html:
             bg_color = '255,255,255'
             ___ status __ shot_status_list:
                 __ key __ status[1]:
@@ -1102,9 +1102,9 @@ ___ build_html(html_path, project):
             percent = '{0:.1f}'.format(percent)
             tmp_html.write("\n                <span style='background-color: rgb({color}); display: inline-block; width:20px; margin-top: 5px;'>&nbsp;</span> <span style='color: #aaaaaa; font-size: 8pt; margin-top: 5px;'>{status} {count}x ({percent}%)</span><br />\n            ".format(color=bg_color, status=key, count=status_dict[key], percent=percent))
 
-    with open(html_path, 'a') as tmp_html:
+    with o..(html_path, 'a') as tmp_html:
         tmp_html.write("\n            </div>\n            <br />\n            <div class='line' style='border-top: 1px solid #cccccc;'></div>\n        ")
-    with open(html_path, 'a') as tmp_html:
+    with o..(html_path, 'a') as tmp_html:
         ___ key __ sorted(shot_information):
             shot_status = shot_information[key][0]
             __ shot_information[key][1]:
@@ -1123,7 +1123,7 @@ ___ build_html(html_path, project):
                 shot_status = load_default_status()[0]
             tmp_html.write('\n            <div class=\'shot\' style="display: block; height:auto; margin: 20px; border-bottom: 1px solid #cccccc; padding: 20px;">\n                <div class=\'shot_thumbnail\' style=\'display: inline-block; padding-right: 30px;\'>\n                    <img src=\'{thumb}\' alt=\'\' title=\'\' width=\'200\' />\n                </div>\n                <div class=\'shot_details\' style=\'display: inline-block; vertical-align: top;\'>\n                    <span style=\'display: inline-block; font-size: 14pt; font-weight:bold;\'>{shotname}</span> <span style=\'background-color: rgb({color}); padding: 2px 10px; position: relative; top: -2px;\'>{status}</span> <br />\n                    <span style=\'font-size: 8pt;\'>{notes}</span>\n                </div>\n            </div>\n            <div style=\'clear:both;\'></div>\n'.format(thumb=shot_thumbnail, shotname=key, color=color, status=shot_status, notes=shot_notes))
 
-    with open(html_path, 'a') as tmp_html:
+    with o..(html_path, 'a') as tmp_html:
         tmp_html.write('\n        </div>\n    </div>\n</body>\n</html>\n')
         r_ html_path
 
@@ -1282,9 +1282,9 @@ ___ show_edit_template_script(window, path):
     set_default_format = False
     __ 'format' __ script_values:
         __ script_values['format'] __ '0':
-            set_default_format = True
+            set_default_format = T..
     ____
-        set_default_format = True
+        set_default_format = T..
     __ set_default_format:
         settings = load_settings()
         w = settings['default_w']
@@ -1319,7 +1319,7 @@ ___ get_script_values(path, window):
     processor = __.path.join(this_dir, '../', 'trm', 'scripts.py')
     processor = __.path.normpath(processor)
     cmd = '"{nuke_exe}" -i -t "{scriptProcess}" get "{path}" " "'.format(nuke_exe=__.path.normpath(?.env['ExecutablePath']), scriptProcess=processor, path=path)
-    process = subprocess.P..(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    process = subprocess.P..(cmd, shell=T.., stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     process.wait()
     ___ line __ process.stdout:
         line = str(line.rstrip())
@@ -1340,7 +1340,7 @@ ___ set_script_values(path, script_values, *args):
     processor = __.path.join(this_dir, '../', 'trm', 'scripts.py')
     processor = __.path.normpath(processor)
     cmd = '"{nuke_exe}" -i -t "{scriptProcess}" set "{path}" {vals}'.format(nuke_exe=__.path.normpath(?.env['ExecutablePath']), scriptProcess=processor, path=path, vals=script_vals)
-    process = subprocess.P..(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    process = subprocess.P..(cmd, shell=T.., stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     process.wait()
     found_end = 0
     ___ line __ process.stdout:
@@ -1351,7 +1351,7 @@ ___ set_script_values(path, script_values, *args):
             found_end += 1
 
     __ found_end __ 1:
-        r_ True
+        r_ T..
     ____
         r_ False
 
@@ -1361,7 +1361,7 @@ ___ get_user(metaxml, *args):
         r_ ''
     metatree = ET.parse(metaxml)
     metaroot = metatree.getroot()
-    with open(metaxml, 'r') as xml:
+    with o..(metaxml, 'r') as xml:
         ___ child __ metaroot.find('notes').f_a_('note'):
             __ child.get('name') __ 'user':
                 r_ child.text
@@ -1376,13 +1376,13 @@ ___ set_user(user, dir_docs = ''):
             r_
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
-        with open(meta_xml, 'w') as xml:
+        with o..(meta_xml, 'w') as xml:
             ___ child __ metaroot.find('notes').f_a_('note'):
                 __ child.get('name') __ 'user':
                     child.text = user
 
             prettyprint(metaroot)
-            metatree.write(xml, encoding='utf-8', xml_declaration=True)
+            metatree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ load_tooltips(parent, section, *args):
@@ -1391,8 +1391,8 @@ ___ load_tooltips(parent, section, *args):
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with open(tooltips_file) as json_file:
-        ttdata = json.load(json_file)
+    with o..(tooltips_file) as json_file:
+        ttdata = j___.load(json_file)
     ___ widget __ parent.findChildren(QtCore.QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
@@ -1469,7 +1469,7 @@ c_ CustomPath(?W...?W..):
         meta_xml = get_meta_xml(shot_root)
         metatree = ET.parse(meta_xml)
         metaroot = metatree.getroot()
-        with open(meta_xml, 'w') as xml:
+        with o..(meta_xml, 'w') as xml:
             ___ child __ metaroot.find('notes').f_a_('note'):
                 __ which __ 'render':
                     __ child.get('name') __ 'renderpath':
@@ -1485,7 +1485,7 @@ c_ CustomPath(?W...?W..):
                             child.set('loc', 'local')
 
             prettyprint(metaroot)
-            metatree.write(xml, encoding='utf-8', xml_declaration=True)
+            metatree.write(xml, encoding='utf-8', xml_declaration=T..)
         __ input_path.t.. __ '':
             msg = 'Successfully cleared the custom {} path'.format(which)
             show_message_box(self, msg)

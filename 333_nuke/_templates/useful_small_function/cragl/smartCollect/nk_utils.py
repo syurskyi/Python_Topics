@@ -8,7 +8,7 @@ ____ smartCollect.src ______ autosearch
 ___ is_nuke():
     ___
         ______ ?
-        r_ True
+        r_ T..
     except ImportError:
         r_ False
 

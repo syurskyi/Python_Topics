@@ -119,7 +119,7 @@ c_ NodesByKnobValuePattern(NodeStep):
                 __ no. knob:
                     continue
 
-                knob_value = knob.value()
+                knob_value = knob.v..
                 __ no. re.search(pattern, knob_value):
                     continue
 

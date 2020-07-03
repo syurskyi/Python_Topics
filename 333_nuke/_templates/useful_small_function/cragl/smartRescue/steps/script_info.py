@@ -86,7 +86,7 @@ Advanced:
 """
 
 # Import built-in modules
-______ datetime
+______ d_t_
 ______ __
 
 # Import third-party modules
@@ -135,7 +135,7 @@ c_ ScriptInfo(NodeStep):
                 YYYY/MM/DD Hour:Minute:Second
 
         """
-        r_ "{:%Y/%m/%d - %H:%M:%S}".format(datetime.datetime.now())
+        r_ "{:%Y/%m/%d - %H:%M:%S}".format(d_t_.d_t_.now())
 
     @staticmethod
     ___ number_nodes(recursive=False):
@@ -194,14 +194,14 @@ c_ ScriptInfo(NodeStep):
             """
             __ knob_name __ "format":
                 format_ = "{} ({}x{} {})"
-                format_knob = knob.value()
+                format_knob = knob.v..
                 r_ format_.format(format_knob.name(), format_knob.width(),
                                       format_knob.height(),
                                       format_knob.pixelAspect())
             # Implement extraction for other nodes in here.
             # elif knob_name == "xxx":
             #     # Extract values.
-            r_ knob.value() or "---"
+            r_ knob.v.. or "---"
 
         root_values = []
         ___ knob_name __ setup["root_info"]:
@@ -233,7 +233,7 @@ c_ ScriptInfo(NodeStep):
 
         """
         footage = []
-        ___ node __ ?.allNodes(recurseGroups=True):
+        ___ node __ ?.allNodes(recurseGroups=T..):
             ___ knob_name __ path_knobs:
                 path_knob = node.knob(knob_name)
                 __ no. path_knob:
@@ -251,7 +251,7 @@ c_ ScriptInfo(NodeStep):
             set: All node classes
 
         """
-        all_nodes = ?.allNodes(recurseGroups=True)
+        all_nodes = ?.allNodes(recurseGroups=T..)
         r_ sorted(set(node.Class() ___ node __ all_nodes))
 
     ___ len_nodes_by_class
@@ -281,7 +281,7 @@ c_ ScriptInfo(NodeStep):
 
         ___ node_class __ sorted(node_classes):
             counter = 0
-            ___ node __ ?.allNodes(recurseGroups=True):
+            ___ node __ ?.allNodes(recurseGroups=T..):
                 __ node.Class() __ node_class:
                     counter += 1
             stats.ap..((node_class, counter))
@@ -310,7 +310,7 @@ c_ ScriptInfo(NodeStep):
 
         logger.info("Creating information file %s", info_path)
 
-        with open(info_path, "w") as dest:
+        with o..(info_path, "w") as dest:
             separator = "-" * 50
             first_frame, last_frame = frame_range()
             root_values = "\n".join(
@@ -334,7 +334,7 @@ c_ ScriptInfo(NodeStep):
                 last_frame=last_frame,
                 root_values=root_values,
                 number_nodes=number_nodes(),
-                number_nodes_recursive=number_nodes(recursive=True),
+                number_nodes_recursive=number_nodes(recursive=T..),
                 footages=footages,
                 node_classes_stats=node_classes_stats
             )

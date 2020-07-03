@@ -7,12 +7,12 @@
 
 
 ______ __
-______ json
+______ j___
 ______ ?
 ______ config
 
 
-___ reload_tools_menu(notify=True):
+___ reload_tools_menu(notify=T..):
     """
     advanced load_tools function
     reload tools directory and scan for new toolsets
@@ -89,12 +89,12 @@ ___ load_settings():
 
     # if the settings file doesn't exist then create it
     __ no. __.path.isfile(settings_file):
-        with open(settings_file, "w") as f:
+        with o..(settings_file, "w") as f:
             f.write('{"tools_root": ""}')
 
     # load the settings file
-    with open(settings_file, "r") as f:
-        settings_data = json.load(f)
+    with o..(settings_file, "r") as f:
+        settings_data = j___.load(f)
 
     r_ settings_data
     
@@ -163,7 +163,7 @@ ___ build_tools_menu(tools_root):
     ___ tool __ __.listdir(temp_dir):
         __ __.path.splitext(tool)[1] __ ".nk":
             toolset_path = __.path.join(tools_root, config.TOOLS_TEMP, tool)
-            temp_menu.addCommand(__.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=True))
+            temp_menu.addCommand(__.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=T..))
 
 
 ___ insert_toolset(toolpath, delete=False):

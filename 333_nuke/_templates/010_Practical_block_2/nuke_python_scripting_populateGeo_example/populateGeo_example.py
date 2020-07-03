@@ -32,16 +32,16 @@ out = ?.nodes.Output()
 reads = []
 ___ img __ __.listdir(srcpath):
     path = __.path.join(srcpath, img).replace('\\','/')
-    r = ?.nodes.Read(file=path, premultiplied=True)
+    r = ?.nodes.Read(file=path, premultiplied=T..)
     reads.ap..(r)
 
-grpScene = ?.nodes.Scene(hide_input=True)
+grpScene = ?.nodes.Scene(hide_input=T..)
 ___ pt __ points:
     r = random.choice(reads)
     card = ?.nodes.Card(inputs=[r], rows = 1, columns=1,
-    image_aspect=False, hide_input=True)
+    image_aspect=False, hide_input=T..)
     tr = ?.nodes.TransformGeo(inputs=[card, N.., inCam],
-    xpos=card.xpos(), ypos=card.ypos()+40, hide_input=True)
+    xpos=card.xpos(), ypos=card.ypos()+40, hide_input=T..)
     tr['translate'].sV..(pt)
     s = r.height()/float(r.width())
     tr['scaling'].sV..(s, 1)

@@ -2,7 +2,7 @@
 ______ __
 ______ subprocess
 ______ ___
-______ time
+______ ti__
 ______ xml.etree.ElementTree as ET
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
@@ -78,18 +78,18 @@ ___ get_log_file():
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with open(log_file, 'w') as lf:
+        with o..(log_file, 'w') as lf:
             log_template = templates.LOG
             lf.write(log_template)
     r_ log_file
 
 
 ___ write_log(text, tool = 'sh'):
-    logtime = time.strftime('%d.%m.%Y %H:%M:%S', time.localtime())
+    logtime = ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
     ___
-        with open(get_log_file(), 'a') as s:
+        with o..(get_log_file(), 'a') as s:
             s.write('{}: {} {}\n'.format(logtime, tool, text))
-        r_ True
+        r_ T..
     ______
         r_ False
 
@@ -99,7 +99,7 @@ ___ set_style_sheet(widget):
     styles_nuke = __.path.join(this_dir, 'styles', 'nuke.qss')
     styles_nuke = __.path.normpath(styles_nuke)
     __ __.path.isfile(styles_nuke):
-        with open(styles_nuke) as file_:
+        with o..(styles_nuke) as file_:
             widget.setStyleSheet(file_.read())
         r_ styles_nuke
     ____

@@ -2,7 +2,7 @@ ______ ?
 ______ __
 ______ getpass
 ______ shutil
-______ json
+______ j___
 ______ ?
 
 CURRENT_USER = getpass.getuser()
@@ -30,7 +30,7 @@ c_ Panel(?.PythonPanel):
         __ no. m..:
             r_
 
-        date = date_combo_box.value()
+        date = date_combo_box.v..
         path = "%s/%s/%s" % (LOG_DIR, CURRENT_USER,date)
         shutil.rmtree(path)
         log_knob.sV..("")
@@ -46,16 +46,16 @@ c_ Panel(?.PythonPanel):
 
     ___ get_log
 
-        date = date_combo_box.value()
+        date = date_combo_box.v..
         json_path = "%s/%s/%s/log.json" % (LOG_DIR, CURRENT_USER,date)
-        log = json.load(open(json_path))
+        log = j___.load(o..(json_path))
         r_ log
 
     ___ build_log_text(self, log):
         txt = ""
         ___ i __ log:
-            time = log[i]
-            txt += "%s\n%s\n\n" % (i, seconds_to_str(time))
+            ti__ = log[i]
+            txt += "%s\n%s\n\n" % (i, seconds_to_str(ti__))
         log_knob.sV..(txt)
 
     ___ knobChanged(self, knob):
@@ -72,7 +72,7 @@ c_ Panel(?.PythonPanel):
         __ no. m..:
             r_
 
-        date = date_combo_box.value()
+        date = date_combo_box.v..
         path = "%s/%s/%s" % (LOG_DIR, CURRENT_USER, date)
         shutil.rmtree(path)
         log_knob.sV..("")

@@ -182,8 +182,8 @@ c_ NodesByKnobValues(NodeStep):
                 rule_matched = False
                 ___ type_ __ types:
                     ___
-                        __ operator_(knob.value(), type_(rule["knob_value"])):
-                            rule_matched = True
+                        __ operator_(knob.v.., type_(rule["knob_value"])):
+                            rule_matched = T..
                             break
                     # We raise any error that occurs here. When any error
                     # occurs while casting the value then this is invalid data
@@ -200,7 +200,7 @@ c_ NodesByKnobValues(NodeStep):
                         setup["mode"],
                         node.name(),
                         node.Class(),
-                        knob.value(),
+                        knob.v..,
                         rule["node_class"],
                         rule["knob_name"],
                         rule["operator"],

@@ -21,9 +21,9 @@ ___ nodeToggler():
 	    #sets the final result on their value basis and displays error if any
             ___ item __ selection:
                 __ item.knob(knobPanel.value('Select Knob')):
-                    __ item.knob(knobPanel.value('Select Knob')).value() __ False:
-                        item.knob(knobPanel.value('Select Knob')).setValue(True)
-                    ____ item.knob(knobPanel.value('Select Knob')).value() __ True:
+                    __ item.knob(knobPanel.value('Select Knob')).v.. __ False:
+                        item.knob(knobPanel.value('Select Knob')).setValue(T..)
+                    ____ item.knob(knobPanel.value('Select Knob')).v.. __ T..:
                         item.knob(knobPanel.value('Select Knob')).setValue(False)
                 else:
                     nuke.m..('{} node has no {} knob.'.format(item.name(), knobPanel.value('Select Knob')))
@@ -51,7 +51,7 @@ ___ nodeToggler():
                     nuke.m..('Please select atlest one legal node.')
                     break
             __ node.Class() __ value:
-                node.setSelected(True)
+                node.setSelected(T..)
             else:
                 node.setSelected(False)
             __ value __ 'All':

@@ -12,7 +12,7 @@ ___ toggle_viewer_lut():
     luts = viewer.values()
     x = itertools.cycle(luts)
     ___ dummy __ ra..(le.(luts)):
-        __ viewer.value() __ next(x):
+        __ viewer.v.. __ next(x):
             viewer.sV..(next(x))
 
 
@@ -26,7 +26,7 @@ ___ viewer_stop_adjust(increment):
     nodes = ?.allNodes('Viewer')
     ___ node __ no__:
         knob = node.knob('gain')
-        gain = knob.value()
+        gain = knob.v..
         knob.sV..(adjust_gain(gain, increment))
 
 

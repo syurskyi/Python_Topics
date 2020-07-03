@@ -1,11 +1,11 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCollect_v1.2/smartCollect/src/helper.py
 ______ __
 ______ ___
-______ time
+______ ti__
 ______ xml.etree.ElementTree as ET
 ______ subprocess
 ______ pl..
-______ json
+______ j___
 ______ hashlib
 ______ random
 ______ tempfile
@@ -81,16 +81,16 @@ ___ get_log_file(*args):
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with open(log_file, 'w') as lf:
+        with o..(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
     r_ log_file
 
 
 ___ write_log(text, tool = 'sc'):
-    with open(get_log_file(), 'a') as file_:
+    with o..(get_log_file(), 'a') as file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
-        log_time = time.strftime(log_time_format, time.localtime())
+        log_time = ti__.strftime(log_time_format, ti__.localtime())
         file_.write('{}: {} {}\n'.format(log_time, tool, text))
 
 
@@ -112,7 +112,7 @@ ___ load_settings(*args):
         ___ setting __ settings_root.find('settings').f_a_('setting'):
             value = setting.text
             __ value __ 'True':
-                value = True
+                value = T..
             ____ value __ 'False':
                 value = False
             settings[setting.get('name')] = value
@@ -131,7 +131,7 @@ ___ get_settings_xml(*args):
     settings_xml = __.path.join(get_tool_private_root(), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with open(settings_xml, 'w') as look_template:
+            with o..(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
                 msg = "smartCollect settings doesn't exist. created template at: {}".format(settings_xml)
@@ -181,9 +181,9 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
@@ -205,9 +205,9 @@ ___ prettyprint(elem, level = 0):
 
 ___ check_xml_ok(xml, *args):
     ___
-        with open(xml, 'r') as xml_file:
+        with o..(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        r_ True
+        r_ T..
     ______
         m.. = 'The smartCollect settings file seems to be broken. Do you want to reset it now?'
         reset_settings_xml = ask_dialog(m.., process_label='reset', color_process='actionButton')
@@ -232,7 +232,7 @@ ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel
     msg_box.setFocus()
     msg_box.addButton(cancel_label, ?W...QMessageBox.RejectRole)
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
-        r_ True
+        r_ T..
     ____
         r_ False
         r_
@@ -250,7 +250,7 @@ ___ set_style_sheet(widget, *args):
     styles_nuke = __.path.join(this_dir, '../', 'styles', 'styles.qss')
     styles_nuke = __.path.normpath(styles_nuke)
     __ __.path.isfile(styles_nuke):
-        with open(styles_nuke) as file_:
+        with o..(styles_nuke) as file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -296,9 +296,9 @@ ___ add_nukescript_settings(path, section):
         nukescript.set('comment', '')
         nukescript.set('output_path', '')
         nukescript.set('job_id', '')
-    with open(xml, 'w') as xml_:
+    with o..(xml, 'w') as xml_:
         prettyprint(root)
-        tree.write(xml_, encoding='utf-8', xml_declaration=True)
+        tree.write(xml_, encoding='utf-8', xml_declaration=T..)
 
 
 ___ update_nukescript_section(path, section, tag, value):
@@ -307,9 +307,9 @@ ___ update_nukescript_section(path, section, tag, value):
         __ nukescript.text __ path:
             nukescript.set(tag, value)
 
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ load_nukescript_section(path, section, tag):
@@ -325,9 +325,9 @@ ___ remove_nukescript_settings(path, section):
         __ nukescript.text __ path:
             root.find(section).remove(nukescript)
 
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ update_statusbar_added(smart_collector, source, count_dropped_elements):
@@ -371,9 +371,9 @@ ___ load_tooltips(parent, section, *args):
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with open(tooltips_file) as json_file:
+    with o..(tooltips_file) as json_file:
         ___
-            ttdata = json.load(json_file)
+            ttdata = j___.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
@@ -385,7 +385,7 @@ ___ load_tooltips(parent, section, *args):
 
 
 ___ create_job_id(*args):
-    current_time = str(int(time.time()))
+    current_time = str(int(ti__.ti__()))
     rand_number = str(random.random())
     id_ = hashlib.md5('{}{}'.format(current_time, rand_number)).hexdigest()[:8]
     r_ str('{}_{}'.format(current_time, id_))
@@ -400,7 +400,7 @@ ___ update_statusbar(smart_collector, text, delay = 0):
 ___ write_pickle_data(data):
     tmp_dir = tempfile.mkdtemp()
     path = __.path.join(tmp_dir, 'smartcollect_data.pickle')
-    with open(path, 'w') as file_:
+    with o..(path, 'w') as file_:
         cPickle.dump(data, file_)
     r_ path
 
@@ -429,7 +429,7 @@ ___ open_website(url):
 
 
 ___ clear_statusbar(statusbar, delay):
-    time.sleep(delay)
+    ti__.sleep(delay)
     statusbar.showMessage('')
 
 

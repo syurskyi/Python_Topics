@@ -410,7 +410,7 @@ c_ colorPickerClass(?W..):
         setWindowIcon(QIcon(pix))
 
     ___ receiveColor(self, hs):
-        v = value.value()*0.001
+        v = value.v..*0.001
         c = QColor()
         c.setHsvF(hs[0], hs[1], v)
         updateColor(c)

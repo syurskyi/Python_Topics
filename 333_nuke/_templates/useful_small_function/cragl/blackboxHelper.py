@@ -10,7 +10,7 @@ ___ openFileReturnArr(file):
     return an array with all the lines
     '''
     arr=[]
-    fobj = open("%s"%file, "r")
+    fobj = o..("%s"%file, "r")
     #load in all lines
     ___ line __ fobj:
         #delete word wrap at the end of each line

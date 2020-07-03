@@ -59,7 +59,7 @@ ___ autoLife():
       attrs.set('ltm', lastKey) # frame range 'to' value
       attrs.set('ltt', 4) # set 'lifetime type' of element to 'frame range' - index 4 in combobox
       
-      element.locked = True
+      element.locked = T..
       nodec.changed()
 
 nuke.addOnCreate(addAutoLife, nodeClass='Roto')

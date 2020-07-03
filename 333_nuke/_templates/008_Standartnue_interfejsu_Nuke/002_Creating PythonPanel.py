@@ -15,7 +15,7 @@ c_ simplePanel ?.PP..
 
     ___ knobChanged(self, knob):
         __ knob is btn:
-            print menu.value()
+            print menu.v..
 
 
 p = simplePanel()

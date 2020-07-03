@@ -83,7 +83,7 @@ c_ Tablet(list):
             ignore_tab_value(name)
 
             __ type __ (TYPE_KNOBS_CLOSE, TYPE_GROUP_CLOSE):
-                parent.tab_closed = True
+                parent.tab_closed = T..
                 r_
 
             ____ type __ TYPE_NODE:
@@ -111,7 +111,7 @@ c_ Tablet(list):
 
             ap..(item)
 
-    ___ to_script(self, join=True):
+    ___ to_script(self, join=T..):
         """
         """
         script = list()

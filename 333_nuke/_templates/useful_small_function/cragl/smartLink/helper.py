@@ -1,10 +1,10 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartLink_v1.0.1/smartLink/helper.py
-______ json
+______ j___
 ______ __
 ______ re
 ______ subprocess
 ______ ___
-______ time
+______ ti__
 ______ uuid
 ______ xml.etree.ElementTree as ET
 ____ collections ______ OrderedDict
@@ -40,7 +40,7 @@ ___ set_style_sheet(widget, style = 'styles.qss'):
     styles = __.path.join(this_dir, 'styles', style)
     styles = __.path.normpath(styles)
     __ __.path.isfile(styles):
-        with open(styles) as file_:
+        with o..(styles) as file_:
             widget.setStyleSheet(file_.read())
 
 
@@ -66,9 +66,9 @@ ___ get_tool_root(which):
 
 
 ___ write_log(text, tool = 'li'):
-    with open(get_log_file(), 'a') as file_:
+    with o..(get_log_file(), 'a') as file_:
         log_time_format = '%d.%m.%Y %H:%M:%S'
-        log_time = time.strftime(log_time_format, time.localtime())
+        log_time = ti__.strftime(log_time_format, ti__.localtime())
         file_.write('{}: {} {}\n'.format(log_time, tool, text))
 
 
@@ -78,7 +78,7 @@ ___ get_log_file():
         __.makedirs(connect_dir)
     log_file = __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
-        with open(log_file, 'w') as lf:
+        with o..(log_file, 'w') as lf:
             log_template = 'connect log\n{}\n'.format('-' * 50)
             lf.write(log_template)
     r_ log_file
@@ -93,7 +93,7 @@ ___ load_settings():
         ___ setting __ settings_root.find('settings').f_a_('setting'):
             value = setting.text
             __ value __ 'True':
-                value = True
+                value = T..
             ____ value __ 'False':
                 value = False
             ____ ',' __ value:
@@ -127,7 +127,7 @@ ___ get_settings_xml():
     settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
-            with open(settings_xml, 'w') as look_template:
+            with o..(settings_xml, 'w') as look_template:
                 template = templates.SETTINGS
                 look_template.write(template.strip())
                 msg = "{} settings doesn't exist. created template at: {}".format(__product__, settings_xml)
@@ -190,9 +190,9 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
             elem.set(key2, value2)
         elem.text = text
         root.find(parent).ap..(elem)
-        with open(xml, 'w') as xml:
+        with o..(xml, 'w') as xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=True)
+            tree.write(xml, encoding='utf-8', xml_declaration=T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.format(parent, section, key1, value1, text, key2, value2))
 
 
@@ -214,9 +214,9 @@ ___ prettyprint(elem, level = 0):
 
 ___ check_xml_ok(xml):
     ___
-        with open(xml, 'r') as xml_file:
+        with o..(xml, 'r') as xml_file:
             ET.fromstring(xml_file.read())
-        r_ True
+        r_ T..
     ______
         m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.format(__product__)
         reset_settings_xml = dialogs.ask_dialog(m.., process_label='reset', color_process='actionButton')
@@ -231,9 +231,9 @@ ___ update_settings(key, value):
     ___ setting __ root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
             setting.text = value
-            with open(xml, 'w') as xml:
+            with o..(xml, 'w') as xml:
                 prettyprint(root)
-                tree.write(xml, encoding='utf-8', xml_declaration=True)
+                tree.write(xml, encoding='utf-8', xml_declaration=T..)
             r_
 
     raise ValueError("Invalid key '{}'. No such key in settings.".format(key))
@@ -246,9 +246,9 @@ ___ update_preset(preset_name, key, value):
             preset.set(key, value)
             break
 
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ load_tooltips(parent, section):
@@ -257,9 +257,9 @@ ___ load_tooltips(parent, section):
     tooltips_file = __.path.normpath(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
-    with open(tooltips_file) as json_file:
+    with o..(tooltips_file) as json_file:
         ___
-            ttdata = json.load(json_file)
+            ttdata = j___.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
@@ -429,9 +429,9 @@ ___ swap_presets(preset1, preset2):
     root.find('backdrops').insert(presets[0][1], presets[1][0])
     root.find('backdrops').remove(presets[1][0])
     root.find('backdrops').insert(presets[1][1], presets[0][0])
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ remove_preset(name):
@@ -441,9 +441,9 @@ ___ remove_preset(name):
             root.find('backdrops').remove(preset)
             break
 
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ add_preset(name, color, icon):
@@ -453,9 +453,9 @@ ___ add_preset(name, color, icon):
     elem.set('color', color)
     elem.set('icon', icon)
     root.find('backdrops').ap..(elem)
-    with open(xml, 'w') as xml:
+    with o..(xml, 'w') as xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=True)
+        tree.write(xml, encoding='utf-8', xml_declaration=T..)
 
 
 ___ add_to_favorites():

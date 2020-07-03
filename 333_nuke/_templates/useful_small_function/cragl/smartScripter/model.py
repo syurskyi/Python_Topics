@@ -30,7 +30,7 @@ Usage:
 """
 
 # Import built-in modules
-______ json
+______ j___
 ______ __
 
 # Import local modules
@@ -58,8 +58,8 @@ ___ save(data):
 
     """
     setting_file = get_settings_file()
-    with open(setting_file, "w") as file_:
-        json.dump(data, file_, indent=4, sort_keys=True)
+    with o..(setting_file, "w") as file_:
+        j___.dump(data, file_, indent=4, sort_keys=T..)
 
     r_ data
 
@@ -95,7 +95,7 @@ c_ Settings(object):
             str: String representation of settings.
 
         """
-        r_ json.dumps(data)
+        r_ j___.dumps(data)
 
     @staticmethod
     ___ _check_settings_file():
@@ -114,8 +114,8 @@ c_ Settings(object):
 
         settings_file = get_settings_file()
         __ no. __.path.isfile(settings_file):
-            with open(settings_file, "w") as file_:
-                json.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=True)
+            with o..(settings_file, "w") as file_:
+                j___.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=T..)
 
         r_ settings_file
 
@@ -130,5 +130,5 @@ c_ Settings(object):
             dict: Settings parsed from given path.
 
         """
-        with open(path, "r") as file_:
-            r_ json.load(file_)
+        with o..(path, "r") as file_:
+            r_ j___.load(file_)

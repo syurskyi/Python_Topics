@@ -88,7 +88,7 @@ c_ NodesByClass(NodeStep):
     ___ process
         """Handle all nodes of the listed node classes."""
         ___ node_class __ setup["node_classes"]:
-            ___ node __ ?.allNodes(recurseGroups=True):
+            ___ node __ ?.allNodes(recurseGroups=T..):
                 class_name = node.Class()
                 __ class_name != node_class:
                     continue

@@ -14,9 +14,9 @@ ___ switch():
             callback(False)
         ____
             # ON
-            a.setData(True)
+            a.setData(T..)
             a.setText('Disable SYNC')
-            callback(True)
+            callback(T..)
 
 ___ callback(v):
     __ v:

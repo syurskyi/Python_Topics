@@ -139,9 +139,9 @@ c_ CleanModeDialog(?W..):
 
     ___ create_widgets
         check_dependent = QCheckBox("dependent: Node's output is not used (all nodes that read information from this node)")
-        check_dependent.setChecked(True)
+        check_dependent.setChecked(T..)
         check_dependencies = QCheckBox("dependencies: Node's input is not used (all nodes referred to by this node)")
-        check_dependencies.setChecked(True)
+        check_dependencies.setChecked(T..)
         push_collect = ?PB..("collect")
         push_collect.setStyleSheet("QPushButton{background-color: rgba(51, 204, 255, 150);}")
         push_cancel = ?PB..("cancel")
@@ -193,7 +193,7 @@ c_ CleanModeDialog(?W..):
         table_cleanup.setRowCount(le.(cleanup_list))
         table_cleanup.setColumnCount(3)
         table_cleanup.setColumnWidth(0, 250)
-        table_cleanup.horizontalHeader().setStretchLastSection(True)
+        table_cleanup.horizontalHeader().setStretchLastSection(T..)
 
         # header
         table_cleanup.setHorizontalHeaderItem(0, QTableWidgetItem("node"))
@@ -313,7 +313,7 @@ c_ CleanModeDialog(?W..):
                 c.setChecked(False)
         else:
             ___ c __ checkboxes:
-                c.setChecked(True)
+                c.setChecked(T..)
 
     ___ keyPressEvent(self, event):
         """

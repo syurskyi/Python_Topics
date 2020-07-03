@@ -2,8 +2,8 @@
 
 # Import built-in modules
 ______ ast
-______ datetime
-______ json
+______ d_t_
+______ j___
 ______ __
 ______ re
 ______ shutil
@@ -70,7 +70,7 @@ ___ date_now():
             YYYYMMDD-HH-SS.
 
     """
-    r_ "{:%Y%m%d-%H%M%S}".format(datetime.datetime.now())
+    r_ "{:%Y%m%d-%H%M%S}".format(d_t_.d_t_.now())
 
 
 ___ get_process_folder():
@@ -112,8 +112,8 @@ ___ get_config():
     ____
         path = copy_config_file()
 
-    with open(path, "r") as file_:
-        r_ path, json.load(file_)
+    with o..(path, "r") as file_:
+        r_ path, j___.load(file_)
 
 
 ___ load_icons():
@@ -155,7 +155,7 @@ ___ get_docstring(path):
         str: The module doc string of the given file.
 
     """
-    with open(path, "r") as file_:
+    with o..(path, "r") as file_:
         tree = ast.parse(file_.read())
     r_ ast.get_docstring(tree)
 

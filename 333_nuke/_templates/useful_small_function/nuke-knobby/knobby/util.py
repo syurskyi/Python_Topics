@@ -241,8 +241,8 @@ ___ read(node, filter=N..):
                 # Ignore unnamed knob
                 continue
 
-            knob_type = ?.knob(knob.fullyQualifiedName(), type=True)
-            value = knob.value()
+            knob_type = ?.knob(knob.fullyQualifiedName(), type=T..)
+            value = knob.v..
 
             __ (
                 knob_type no. __ EXCLUDED_KNOB_TYPE_ON_READ or
@@ -285,7 +285,7 @@ ___ mold(node, tab=N.., map_cls=N..):
 
         name = tablet.name or ""
         abs_name = name + ":"
-        all_elem = abs_name.startswith(target) __ tab and name ____ True
+        all_elem = abs_name.startswith(target) __ tab and name ____ T..
 
         ___ item __ tablet:
             __ i..(item, parser.Tablet):
@@ -310,7 +310,7 @@ ___ mold(node, tab=N.., map_cls=N..):
                     name = matched.group(2)
                     knob = knobs[name]
                     key = name[le.(prefix):] __ prefix ____ name
-                    data[key] = knob.value()
+                    data[key] = knob.v..
 
         r_ data
 

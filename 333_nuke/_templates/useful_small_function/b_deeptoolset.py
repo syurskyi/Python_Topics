@@ -179,7 +179,7 @@ ___ build_depth_setup(node_list):
     positions = get_righthandside_position(node_list)
 
     deep_merge = create_node_with_position_simple("DeepMerge",positions[1] +  500, positions[2]+100)
-    deep_merge['selected'].sV..(True)
+    deep_merge['selected'].sV..(T..)
 
     deep_to_image = ?.createNode("DeepToImage")
     deep_to_image_pos = get_node_position(deep_to_image)
@@ -228,7 +228,7 @@ ___ get_asset_name(sourcenode):
     ___ node __ dep_nodes:
         __ node.Class() __ target_class:
             ___
-                asset_name = node["sg_layer"].value()
+                asset_name = node["sg_layer"].v..
                 __ asset_name __ "":
                     default_asset_name =  "element_01"
                     r_ default_asset_name
@@ -326,7 +326,7 @@ ___ check_upstream_match(sourcenode,targetnode):
     
     __ target_node __ dep_nodes:
         print "MATCHHHH!"
-        r_ True
+        r_ T..
     ____
         print "KEEP LOOKING"
         ___ node __ dep_nodes:
@@ -357,7 +357,7 @@ ___ iterate_deep_holdout_setup():
     ___ e __ names:
         node = ?.toNode(e)
         class_ = node.Class()
-        node['selected'].sV..(True)
+        node['selected'].sV..(T..)
         setup = create_deep_holdout_setup(class_)
         deep_holdouts.ap..(setup.name())
    
@@ -445,7 +445,7 @@ ___ uberpass_function():
     rgb_deep_recolor = create_rgba_deep_recolor("rgba")
     
     ___ node __ node_list:
-        node['selected'].sV..(True)
+        node['selected'].sV..(T..)
 
     deep_merge = create_node_with_position_simple("DeepMerge",get_middle_position()[0] + get_middle_position()[1],get_middle_position()[2] + 400)
 
@@ -466,7 +466,7 @@ ___ uberpass_function():
     write['channels'].sV..('all')
 
     ___ name __ rgb_deep_recolor:
-       ?.toNode(name)['selected'].sV..(True)
+       ?.toNode(name)['selected'].sV..(T..)
 
     deep_deep_merge = create_node_with_position_simple("DeepMerge",get_middle_position()[0] + get_middle_position()[1] - 800,get_middle_position()[2] + 200)
 
@@ -494,7 +494,7 @@ ___ depth_for_defocus():
     rgb_deep_recolor = create_rgba_deep_recolor("all")
     
     ___ name __ rgb_deep_recolor:
-        ?.toNode(name)['selected'].sV..(True)
+        ?.toNode(name)['selected'].sV..(T..)
 
     deep_merge = create_node_with_position_simple("DeepMerge",get_middle_position()[0] + get_middle_position()[1],get_middle_position()[2] + 400)
 
@@ -541,7 +541,7 @@ ___ splitLayers( node ):
         layer_name = each.split( '.' )[0]
         tmp = []
         ___ channel __ ch:
-            __ channel.startswith( layer_name ) __ True:
+            __ channel.startswith( layer_name ) __ T..:
                 tmp.ap..( channel )
         __ le.( tmp ) < 4:
             ___ i __ ra..( 4 - le.( tmp ) ):
@@ -603,7 +603,7 @@ ___ d_dot_connect(nodename,connect_node,x=0,y=0):
     dot = create_node_with_position(nodename,parent_node,x,y)
     dot.knob('label').sV..(connect_node)
     dot.knob('tile_color').sV..(0)
-    dot.knob('hide_input').sV..(True)
+    dot.knob('hide_input').sV..(T..)
     dot.knob('note_font').sV..('italic')
     dot.knob('note_font_size').sV..(22)
     dot.addKnob(childKnob)
@@ -616,7 +616,7 @@ ___ gather_holdout_dot_names():
     This function will get all names of selected Ddots.
     :return: a list of node names.
     """
-    holdout_dots_names = [node['name'].value() ___ node __ ?.sN.. __ node['parent']]
+    holdout_dots_names = [node['name'].v.. ___ node __ ?.sN.. __ node['parent']]
     
     r_ holdout_dots_names
 
@@ -742,7 +742,7 @@ c_ modalPanel(?.PythonPanel):
         get_frame_range()
 
     ___ giveFrameRangeValue
-        r_ frame_range.value()
+        r_ frame_range.v..
 
     ___ get_frame_range
         __ giveFrameRangeValue() __ "global":
