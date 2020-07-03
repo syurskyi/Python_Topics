@@ -141,7 +141,7 @@ ___ build_tools_menu(tools_root):
     tool_categories = get_tools_categories(tools_root)
     ___ category __ tool_categories:
 
-        category_menu = te_menu.addMenu(category.upper())
+        category_menu = te_menu.aM..(category.upper())
 
         # create toolsets
         item_full_path = __.path.join(tools_root, category)
@@ -149,11 +149,11 @@ ___ build_tools_menu(tools_root):
 
             __ __.path.splitext(tool)[1] __ ".nk":
                 toolset_path = __.path.join(item_full_path, tool)
-                category_menu.addCommand(tool.replace(".nk", ""), lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=False), icon="")
+                category_menu.aC..(tool.replace(".nk", ""), lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=False), icon="")
 
     # temp tools
     te_menu.addSeparator()
-    temp_menu = te_menu.addMenu(config.TOOLS_TEMP.upper())
+    temp_menu = te_menu.aM..(config.TOOLS_TEMP.upper())
 
     # create temp toolsets
     temp_dir = __.path.join(tools_root, config.TOOLS_TEMP)
@@ -163,7 +163,7 @@ ___ build_tools_menu(tools_root):
     ___ tool __ __.listdir(temp_dir):
         __ __.path.splitext(tool)[1] __ ".nk":
             toolset_path = __.path.join(tools_root, config.TOOLS_TEMP, tool)
-            temp_menu.addCommand(__.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=T..))
+            temp_menu.aC..(__.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=T..))
 
 
 ___ insert_toolset(toolpath, delete=False):

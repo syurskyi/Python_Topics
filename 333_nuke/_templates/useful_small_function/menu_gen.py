@@ -30,7 +30,7 @@ c_ NukeMenuGenerator(BaseMenu):
 
 
     ___ create_menu
-        menu_handle = ?.menu("Nuke").addMenu(_menu_name)
-        node_menu_handle = ?.menu("Nodes").addMenu(_menu_name)
+        menu_handle = ?.menu("Nuke").aM..(_menu_name)
+        node_menu_handle = ?.menu("Nodes").aM..(_menu_name)
 
 

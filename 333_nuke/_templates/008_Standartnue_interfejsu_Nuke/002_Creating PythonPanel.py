@@ -39,6 +39,6 @@ ___ addPanel():
 
 
 paneMenu = ?.menu('Pane')
-paneMenu.addCommand('Simple Panel', addPanel)
+paneMenu.aC..('Simple Panel', addPanel)
 # or
 ?.registerPanel('pw.Simple.Panel', addPanel)

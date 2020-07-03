@@ -273,20 +273,20 @@ except ImportError:
 
 # Add a personal menu to the top menu bar
 #
-m_keybindings = ?.menu('Nuke').addMenu("Smolin")
-m_keybindings.addCommand('mergeStencil', 'nuke.createNode("Merge2","operation stencil")', 'Ctrl+Meta+S')
-m_keybindings.addCommand('colorLookup aka curve lookup','nuke.createNode("ColorLookup")', 'Ctrl+Meta+L')
-m_keybindings.addCommand('sjmToggleDisableExpression','sjmToggleDisableExpression()', 'Ctrl+Meta+G')
-m_keybindings.addCommand('sjmOpenAllInViewer', 'sjmOpenAllInViewer()', 'Ctrl+Meta+V')
-m_keybindings.addCommand('sjmAutoBackdrop', 'sjmAutoBackdrop()', 'Ctrl+Meta+B')
-m_keybindings.addCommand('sjmMergeOpIncr', 'sjmMergeOpIncr()', 'Ctrl+Meta+Up')
-m_keybindings.addCommand('sjmMergeOpDecr', 'sjmMergeOpDecr()', 'Ctrl+Meta+Down')
-m_keybindings.addCommand('SliceTool', 'nuke.createNode("SliceTool")')
-m_keybindings.addCommand('RefractTo', 'nuke.createNode("refract_to_the_FUTURE")')
+m_keybindings = ?.menu('Nuke').aM..("Smolin")
+m_keybindings.aC..('mergeStencil', 'nuke.createNode("Merge2","operation stencil")', 'Ctrl+Meta+S')
+m_keybindings.aC..('colorLookup aka curve lookup','nuke.createNode("ColorLookup")', 'Ctrl+Meta+L')
+m_keybindings.aC..('sjmToggleDisableExpression','sjmToggleDisableExpression()', 'Ctrl+Meta+G')
+m_keybindings.aC..('sjmOpenAllInViewer', 'sjmOpenAllInViewer()', 'Ctrl+Meta+V')
+m_keybindings.aC..('sjmAutoBackdrop', 'sjmAutoBackdrop()', 'Ctrl+Meta+B')
+m_keybindings.aC..('sjmMergeOpIncr', 'sjmMergeOpIncr()', 'Ctrl+Meta+Up')
+m_keybindings.aC..('sjmMergeOpDecr', 'sjmMergeOpDecr()', 'Ctrl+Meta+Down')
+m_keybindings.aC..('SliceTool', 'nuke.createNode("SliceTool")')
+m_keybindings.aC..('RefractTo', 'nuke.createNode("refract_to_the_FUTURE")')
 #
 ___
   DeadlineNukeClient
-  m_keybindings.addCommand('sjmDeadliner','DeadlineNukeClient.main()','Ctrl+Meta+D')
+  m_keybindings.aC..('sjmDeadliner','DeadlineNukeClient.main()','Ctrl+Meta+D')
 ______
   pass
 

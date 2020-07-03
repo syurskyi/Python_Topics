@@ -272,7 +272,7 @@ ___ deleteNode(bckdrp, node):
     lon = listOfNodes(bckdrp)
     __ node __ lon:
         lon.remove(node)
-        s = ','.join(lon)
+        s = ','.j..(lon)
         bckdrp['listOfNodes'].setValue(s)
         colorize(bckdrp)
                
