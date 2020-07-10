@@ -9,15 +9,15 @@ ______ qNukeWindow
 
 ______ ?
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 ______ qtNodes
 
 
 ___ getMainWindow():
-    qApp = QApplication.instance()
-    ___ widget __ qApp.topLevelWidgets():
-        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+    qApp = ?A...ins..)
+    ___ widget __ qApp.tLW..
+        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ widget
 qNuke = getMainWindow()
 

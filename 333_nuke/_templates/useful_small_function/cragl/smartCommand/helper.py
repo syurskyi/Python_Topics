@@ -9,13 +9,13 @@ ______ ___
 ______ xml.etree.ElementTree __ ET
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui __ ?W..
-    ____ PySide ______ QtGui
-    ____ PySide ______ QtCore
+    ____ ? ______ ?G.. __ ?W..
+    ____ ? ______ ?G..
+    ____ ? ______ ?C..
 ____
     ____ ? ______ ?W..
-    ____ ? ______ QtCore
-    ____ ? ______ QtGui
+    ____ ? ______ ?C..
+    ____ ? ______ ?G..
 ____ smartCommand ______ templates
 ____ smartCommand.info ______ __product__
 
@@ -43,7 +43,7 @@ ___ set_style_sheet(widget, style = 'styles.qss'):
 
 ___ move_widget(widget_to_move, click_pos, event):
     x, y = click_pos
-    widget_to_move.xy = event.globalPos() - QtCore.QPoint(x, y)
+    widget_to_move.xy = event.globalPos() - ?C...QPoint(x, y)
     widget_to_move.move(widget_to_move.xy)
 
 
@@ -229,7 +229,7 @@ ___ check_xml_ok(xml):
 
 ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_label = 'cancel'):
     msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)
@@ -250,7 +250,7 @@ ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel
 
 ___ show_path_browser(title):
     dialog = ?W...QFileDialog()
-    dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
     dialog.sQT..(title)
     dialog.setFileMode(?W...QFileDialog.Directory)
     dialog.setOption(?W...QFileDialog.ShowDirsOnly)
@@ -487,7 +487,7 @@ ___ load_tooltips(parent, section):
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
 
-    ___ widget __ parent.findChildren(QtCore.QObject):
+    ___ widget __ parent.findChildren(?C...QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
@@ -533,4 +533,4 @@ ___ center_window(window):
 
 
 ___ get_cursor_position():
-    r_ QtGui.QCursor().pos()
+    r_ ?G...QCursor().pos()

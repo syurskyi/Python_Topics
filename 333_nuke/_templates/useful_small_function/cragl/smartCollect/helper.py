@@ -19,13 +19,13 @@ except ImportError:
         ___.path.insert(0, sitepackages)
 
 ___
-    ____ PySide ______ QtGui __ ?W..
-    ____ PySide ______ QtGui
-    ____ PySide ______ QtCore
+    ____ ? ______ ?G.. __ ?W..
+    ____ ? ______ ?G..
+    ____ ? ______ ?C..
 except ImportError:
     ____ ? ______ ?W..
-    ____ ? ______ QtGui
-    ____ ? ______ QtCore
+    ____ ? ______ ?G..
+    ____ ? ______ ?C..
 
 ____ smartCollect.src ______ templates
 
@@ -219,7 +219,7 @@ ___ check_xml_ok(xml, *args):
 
 ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_label = 'cancel'):
     msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)
@@ -265,7 +265,7 @@ ___ open_in_explorer(path, parent = N.., *args):
 
 ___ show_message_box(window, m.., *args):
     msg = ?W...QMessageBox()
-    msg.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg.information(window, 'information', m..)
 
 
@@ -353,7 +353,7 @@ ___ add_this_nukescript(smart_collector, source):
 
 ___ show_path_browser(title):
     dialog = ?W...QFileDialog()
-    dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
     dialog.sQT..(title)
     dialog.setFileMode(?W...QFileDialog.Directory)
     dialog.setOption(?W...QFileDialog.ShowDirsOnly)
@@ -378,7 +378,7 @@ ___ load_tooltips(parent, section, *args):
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
 
-    ___ widget __ parent.findChildren(QtCore.QObject):
+    ___ widget __ parent.findChildren(?C...QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))

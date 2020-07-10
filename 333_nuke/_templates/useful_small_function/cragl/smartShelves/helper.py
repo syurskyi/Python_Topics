@@ -6,7 +6,7 @@ ______ ti__
 ______ xml.etree.ElementTree __ ET
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui __ ?W..
+    ____ ? ______ ?G.. __ ?W..
 ____
     ____ ? ______ ?W..
 ____ smartShelves ______ templates

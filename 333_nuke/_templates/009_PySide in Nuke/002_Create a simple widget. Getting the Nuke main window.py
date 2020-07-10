@@ -1,77 +1,77 @@
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
-
-
-qnuke = QApplication.activeWindow()
-print qnuke
-w = ?W..()
-w.s__
-
-########################################################################################################################
-
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
-
-
-qnuke = QApplication.activeWindow()
-print qnuke
-w = ?W..(qnuke, Qt.Tool)
-w.s__
-w.c__
-
-___ active():
-    print QApplication.activeWindow()
-QTimer.singleShot(2000, active)
-
-########################################################################################################################
-
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
-
-app = QApplication.instance()
-___ w __ app.topLevelWidgets():
-    print w.windowTitle()
-
-app = QApplication.instance()
-___ w __ app.topLevelWidgets():
-    print w.metaObject().className()
-
-
-___ getNukeWindow():
-    app = QApplication.instance()
-    ___ w __ app.topLevelWidgets():
-        __ w.metaObject().className() __ 'Foundry::UI::DockMainWindow':
-            r_ w
-
-
-qnuke = getNukeWindow()
-qnuke.sQT..('Nuke')
-
-########################################################################################################################
-
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
-
-
-w = ?W..(getNukeWindow(), Qt.Tool)
-w.s__
-w.c__
-
-___ active():
-    print QApplication.activeWindow()
-QTimer.singleShot(2000, active)
-
-########################################################################################################################
-
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
-
-
-w = ?W..(getNukeWindow(), Qt.Tool)
-w.s__
-w.c__
-
-___ active():
-    w = ?W..(getNukeWindow(), Qt.Tool)
-    w.s__
-QTimer.singleShot(2000, active)
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+# ____ ?.?W.. ______ _
+#
+# qnuke _ ?A...aW..
+# print ?
+# w _ ?W..
+# ?.s__
+#
+# ########################################################################################################################
+#
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+#
+#
+# qnuke _ ?A...aW..
+# print ?
+# w _ ?W.. ? __.T..)
+# w.s__
+# w.c__
+#
+# ___ active
+#     print ?A...aW..
+# ?T...sS.. 2000 ?
+#
+# ########################################################################################################################
+#
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+#
+# app _ ?A...ins..
+# ___ w __ ?.tLW..
+#     print ?.wT..
+#
+# app _ ?A...ins..
+# ___ w __ ?.tLW..
+#     print w.mO.. .cN..
+#
+#
+# ___ getNukeWindow
+#     app _ ?A...ins..
+#     ___ w __ ?.tLW..
+#         __ w.mO.. .cN.. __ 'F..||U.||DMW..'
+#             r_ w
+#
+#
+# qnuke _ g..
+# ?.sQT.. Nuke
+#
+# ########################################################################################################################
+#
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+#
+#
+# w _ ?W.. g.. __.T..
+# ?.s__
+# ?.c__
+#
+# ___ active
+#     print ?A...aW..
+# ?T...sS.. 2000 ?
+#
+# ########################################################################################################################
+#
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+#
+#
+# w _ ?W.. g.. __.T..
+# w.s__
+# w.c__
+#
+# ___ active
+#     w _ ?W.. g.. __.T..
+#     w.s__
+# ?T...sS.. 2000 ?

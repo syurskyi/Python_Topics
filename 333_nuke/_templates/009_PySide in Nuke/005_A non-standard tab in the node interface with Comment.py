@@ -4,13 +4,13 @@
 # To esli vash skript ne zagryzen to vasha taba prosto ne bydyt pojavitsja
 # Nachat' nado s polychenija widgeta okna ili nodu kak QT  objekta. Y lybogo okna, lyboj nodu on prisytstvyet i on ravnjaetsja imeni etoj nodu
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ___ getMainWindow():
-    app = QApplication.instance()
-    ___ widget __ app.topLevelWidgets():
-        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+    app = ?A...ins..)
+    ___ widget __ app.tLW..
+        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ widget
 
 qnuke = getMainWindow()
@@ -18,13 +18,13 @@ qnuke.findChildren(?W.., 'Transform1')
 
 #####################################################################################################################################################
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ___ getMainWindow():
-    app = QApplication.instance()
-    ___ widget __ app.topLevelWidgets():
-        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+    app = ?A...ins..)
+    ___ widget __ app.tLW..
+        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ widget
 
 qnuke = getMainWindow()
@@ -34,13 +34,13 @@ w.sQT..('Transform11')
 
 #####################################################################################################################################################
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ___ getMainWindow():
-    app = QApplication.instance()
-    ___ widget __ app.topLevelWidgets():
-        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+    app = ?A...ins..)
+    ___ widget __ app.tLW..
+        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ widget
 
 qnuke = getMainWindow()

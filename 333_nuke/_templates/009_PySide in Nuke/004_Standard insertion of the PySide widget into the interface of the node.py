@@ -1,5 +1,5 @@
-____ PySide.QtGui ______ *
-____ PySide.QtCore ______ *
+____ ?.?G.. ______ *
+____ ?.?C.. ______ *
 
 
 # put to main namespase

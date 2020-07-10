@@ -67,11 +67,11 @@ ignore_list = ["BackdropNode"]
 ______ nuke
 
 ___
-    ____ PySide.QtGui ______ *
-    ____ PySide.QtCore ______ *
+    ____ ?.?G.. ______ *
+    ____ ?.?C.. ______ *
 except ImportError:
-    ____ ?.QtGui ______ *
-    ____ ?.QtCore ______ *
+    ____ ?.?G.. ______ *
+    ____ ?.?C.. ______ *
     ____ ?.?W.. ______ *
 
 
@@ -321,5 +321,5 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        __ event.key() __ Qt.Key_Escape:
+        __ event.key() __ __.Key_Escape:
             c__

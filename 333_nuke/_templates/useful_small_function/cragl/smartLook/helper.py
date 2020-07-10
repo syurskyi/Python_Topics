@@ -15,13 +15,13 @@ ______ j___
 ______ ?
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui __ ?W..
-    ____ PySide ______ QtGui
-    ____ PySide ______ QtCore
+    ____ ? ______ ?G.. __ ?W..
+    ____ ? ______ ?G..
+    ____ ? ______ ?C..
 ____
     ____ ? ______ ?W..
-    ____ ? ______ QtGui
-    ____ ? ______ QtCore
+    ____ ? ______ ?G..
+    ____ ? ______ ?C..
 ______ templates
 
 ___ load_icons(*args):
@@ -230,7 +230,7 @@ ___ check_xml_ok(xml, *args):
 
 ___ show_message_box(window, m.., *args):
     msg = ?W...QMessageBox()
-    msg.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg.information(window, 'information', m..)
 
 
@@ -450,9 +450,9 @@ ___ open_in_explorer(path, parent = N.., *args):
 
 ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expanded = False, is_dir = False, enable_drag = False, icon = ''):
     diritem = ?W...QTreeWidgetItem(parent, [item_name])
-    diritem.setData(0, QtCore.Qt.UserRole, dirpath)
+    diritem.setData(0, ?C...__.UserRole, dirpath)
     __ enable_drag __ 'False':
-        diritem.setFlags(QtCore.Qt.ItemIsSelectable | QtCore.Qt.ItemIsEnabled | QtCore.Qt.ItemIsUserCheckable)
+        diritem.setFlags(?C...__.ItemIsSelectable | ?C...__.ItemIsEnabled | ?C...__.ItemIsUserCheckable)
     diritem.setExpanded(expanded)
     diritem.setSelected(selected)
     __ disabled:
@@ -461,10 +461,10 @@ ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expan
     __ is_dir:
         __ icon __ '':
             icon = load_icons()['icon_folder_grey']
-        diritem.setIcon(0, QtGui.QIcon(icon))
+        diritem.setIcon(0, ?G...QIcon(icon))
     ____
-        diritem.setIcon(0, QtGui.QIcon(load_icons()['icon_nuke']))
-    diritem.setData(0, QtCore.Qt.UserRole, dirpath)
+        diritem.setIcon(0, ?G...QIcon(load_icons()['icon_nuke']))
+    diritem.setData(0, ?C...__.UserRole, dirpath)
     r_ diritem
 
 
@@ -554,7 +554,7 @@ ___ load_tooltips(parent, section, *args):
         r_
     w__ o..(tooltips_file) __ json_file:
         ttdata = j___.load(json_file)
-    ___ widget __ parent.findChildren(QtCore.QObject):
+    ___ widget __ parent.findChildren(?C...QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
@@ -625,7 +625,7 @@ ___ get_resolution(*args):
 
 ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel_labek = 'cancel'):
     msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_label, ?W...QMessageBox.AcceptRole)

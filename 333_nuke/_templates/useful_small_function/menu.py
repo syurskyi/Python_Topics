@@ -207,9 +207,9 @@ ___
   ______ ?
   ____ ? ______ panels
   #
-  ____ PySide.QtGui ______ *
-  ____ PySide.QtCore ______ *
-  ____ PySide.QtWebKit ______ *
+  ____ ?.?G.. ______ *
+  ____ ?.?C.. ______ *
+  ____ ?.QtWebKit ______ *
   #
   c_ WebBrowserWidget(?W..):
     ___ changeLocation

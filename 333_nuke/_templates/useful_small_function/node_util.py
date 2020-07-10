@@ -6,9 +6,9 @@ ______ ?
 ______ itertools
 ______ subprocess
 ___
-    ____ PySide ______ QtGui
+    ____ ? ______ ?G..
 except ImportError:
-    ____ ? ______ QtGui
+    ____ ? ______ ?G..
 
 
 ___ context_aware_create_node(node_2d, node_3d, node_deep):
@@ -60,7 +60,7 @@ ___ copy_knobs():
 
 ___ copy_to_clipboard(value):
     # copy text to clipboard
-    QtGui.QApplication.clipboard().setText(value)
+    ?G...?A...clipboard().setText(value)
     r_ T..
 
 

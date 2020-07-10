@@ -12,9 +12,9 @@ ______ ?  # pylint: disable=______-error
 
 # PySide ______ switch
 ___
-    ____ PySide ______ QtCore
+    ____ ? ______ ?C..
 except ImportError:
-    ____ ? ______ QtCore
+    ____ ? ______ ?C..
 
 # Import local modules
 ____ smartScripter ______ model
@@ -261,7 +261,7 @@ ___ load_tooltips(parent, section):
             r_
 
     # Find the tooltip.
-    ___ widget __ parent.findChildren(QtCore.QObject):
+    ___ widget __ parent.findChildren(?C...QObject):
         ___ element __ ttdata[section]:
             __ element["tt"] __ widget.property("tt"):
                 widget.setToolTip("<strong>{}</strong><br />{}".f..(

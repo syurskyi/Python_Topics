@@ -2,12 +2,12 @@ ______ __
 ______ ?
 
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide.QtGui ______ *
-    ____ PySide.QtCore ______ *
+    ____ ?.?G.. ______ *
+    ____ ?.?C.. ______ *
 ____
     ____ ?.?W.. ______ *
-    ____ ?.QtCore ______ *
-    ____ ?.QtGui ______ *
+    ____ ?.?C.. ______ *
+    ____ ?.?G.. ______ *
 
 c_ Global_clipboard(QDialog):
     ___  - (self, parent=N..):

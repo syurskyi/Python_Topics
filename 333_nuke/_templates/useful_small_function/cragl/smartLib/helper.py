@@ -13,13 +13,13 @@ ______ j___
 ______ ?
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui __ ?W..
-    ____ PySide ______ QtGui
-    ____ PySide ______ QtCore
+    ____ ? ______ ?G.. __ ?W..
+    ____ ? ______ ?G..
+    ____ ? ______ ?C..
 ____
     ____ ? ______ ?W..
-    ____ ? ______ QtGui
-    ____ ? ______ QtCore
+    ____ ? ______ ?G..
+    ____ ? ______ ?C..
 ______ osl
 ______ templates
 DIR_DOCS = '.docs'
@@ -130,43 +130,43 @@ ___ get_dir_templates():
 ___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = False, is_footage_dir = False, icons = N..):
     __ is_dir:
         ___
-            listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_folder']))
+            listwidget_item.setIcon(0, ?G...QIcon(icons['icon_folder']))
             __ is_render_dir:
-                listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_write']))
+                listwidget_item.setIcon(0, ?G...QIcon(icons['icon_write']))
             ____ is_footage_dir:
-                listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_read']))
+                listwidget_item.setIcon(0, ?G...QIcon(icons['icon_read']))
         ______
-            listwidget_item.setIcon(QtGui.QIcon(icons['icon_folder']))
+            listwidget_item.setIcon(?G...QIcon(icons['icon_folder']))
             __ is_render_dir:
-                listwidget_item.setIcon(QtGui.QIcon(icons['icon_write']))
+                listwidget_item.setIcon(?G...QIcon(icons['icon_write']))
             ____ is_footage_dir:
-                listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_read']))
+                listwidget_item.setIcon(0, ?G...QIcon(icons['icon_read']))
 
     __ '.' __ name:
         ext = name.split('.')[1]
         __ ext __ 'nk':
             ___
-                listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_nuke']))
+                listwidget_item.setIcon(0, ?G...QIcon(icons['icon_nuke']))
             ______
-                listwidget_item.setIcon(QtGui.QIcon(icons['icon_nuke']))
+                listwidget_item.setIcon(?G...QIcon(icons['icon_nuke']))
 
         ____ ext.lower() __ IMAGE_EXT:
             ___
-                listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_img']))
+                listwidget_item.setIcon(0, ?G...QIcon(icons['icon_img']))
             ______
-                listwidget_item.setIcon(QtGui.QIcon(icons['icon_img']))
+                listwidget_item.setIcon(?G...QIcon(icons['icon_img']))
 
         ____ ext __ VIDEO_EXT:
             ___
-                listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_video']))
+                listwidget_item.setIcon(0, ?G...QIcon(icons['icon_video']))
             ______
-                listwidget_item.setIcon(QtGui.QIcon(icons['icon_video']))
+                listwidget_item.setIcon(?G...QIcon(icons['icon_video']))
 
         ____
             ___
-                listwidget_item.setIcon(0, QtGui.QIcon(icons['icon_doc']))
+                listwidget_item.setIcon(0, ?G...QIcon(icons['icon_doc']))
             ______
-                listwidget_item.setIcon(QtGui.QIcon(icons['icon_doc']))
+                listwidget_item.setIcon(?G...QIcon(icons['icon_doc']))
 
 
 ___ get_log_file():
@@ -455,7 +455,7 @@ ___ load_default_status():
 
 ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_button_text = ''):
     msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_button_text, ?W...QMessageBox.AcceptRole)
@@ -728,7 +728,7 @@ ___ check_meta_xml_value_exists(metaxml_path, parent, section, key1, value1, tex
 
 ___ m..(m..):
     msg_box = ?W...QMessageBox()
-    msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg_box.setText(m..)
     msg_box.raise_()
     msg_box.exec_()
@@ -736,8 +736,8 @@ ___ m..(m..):
 
 ___ dialog_set_preview_image(smartlib):
     dialog = ?W...QFileDialog()
-    dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-    dialog.setWindowIcon(QtGui.QIcon(load_icons()['icon_logo']))
+    dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
+    dialog.setWindowIcon(?G...QIcon(load_icons()['icon_logo']))
     dialog.sQT..('choose image file')
     dialog.setNameFilter('jpg files(*.jpg)')
     __ dialog.exec_() __ ?W...QDialog.Accepted:
@@ -752,9 +752,9 @@ ___ dialog_set_preview_image(smartlib):
 
 
 ___ save_image_scaled(src, dest):
-    img = QtGui.QImage(src)
+    img = ?G...QImage(src)
     ___
-        pixmap = QtGui.QPixmap(img.scaledToWidth(500))
+        pixmap = ?G...QPixmap(img.scaledToWidth(500))
         pixmap.save(dest)
         r_ T..
     ______
@@ -984,7 +984,7 @@ ___ create_new_directory(widget, list_):
     msg = 'Enter the name of the new folder:'
     dir_name, ok = inp.getText(widget, title, msg)
     __ ok:
-        dest = list_.data(0, QtCore.Qt.UserRole)
+        dest = list_.data(0, ?C...__.UserRole)
         __ __.path.isfile(dest):
             dest = __.path.dirname(dest)
         dest = dest.replace('\\', '/')
@@ -1130,7 +1130,7 @@ ___ build_html(html_path, project):
 
 ___ build_pdf(build_path, project, output_filename = '', parent = N..):
     ___
-        ____ PySide ______ QtWebKit
+        ____ ? ______ QtWebKit
     except Exception:
         msg = "Error creating project report. The needed module 'QtWebKit' is not more supported in this Nuke version. Please use Nuke10 to create a project report."
         show_message_box(parent, msg)
@@ -1142,10 +1142,10 @@ ___ build_pdf(build_path, project, output_filename = '', parent = N..):
         __ debug:
             print 'tmp_html: ', tmp_html
         web = QtWebKit.QWebView()
-        web.load(QtCore.QUrl('file:///{}'.f..(tmp_html)))
-        printer = QtGui.QPrinter()
-        printer.setPageSize(QtGui.QPrinter.A4)
-        printer.setOutputFormat(QtGui.QPrinter.PdfFormat)
+        web.load(?C...QUrl('file:///{}'.f..(tmp_html)))
+        printer = ?G...QPrinter()
+        printer.setPageSize(?G...QPrinter.A4)
+        printer.setOutputFormat(?G...QPrinter.PdfFormat)
         printer.setOutputFileName(output_filename)
         __ debug:
             print 'output pdf to: {}'.f..(output_filename)
@@ -1153,7 +1153,7 @@ ___ build_pdf(build_path, project, output_filename = '', parent = N..):
         ___ convertIt():
             web.print_(printer)
 
-        QtCore.QObject.c..(web, QtCore.SIGNAL('loadFinished(bool)'), convertIt)
+        ?C...QObject.c..(web, ?C...SIGNAL('loadFinished(bool)'), convertIt)
         __ __.path.isfile(tmp_html):
             ___
                 __.remove(tmp_html)
@@ -1393,7 +1393,7 @@ ___ load_tooltips(parent, section, *args):
         r_
     w__ o..(tooltips_file) __ json_file:
         ttdata = j___.load(json_file)
-    ___ widget __ parent.findChildren(QtCore.QObject):
+    ___ widget __ parent.findChildren(?C...QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
@@ -1407,7 +1407,7 @@ c_ CustomPath(?W...?W..):
         sml = sml
         which = which
         sQT..('Set custom {} path'.f..(which))
-        setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+        setWindowFlags(?C...__.WindowStaysOnTopHint)
         setMinimumWidth(600)
         build_ui()
 
@@ -1422,7 +1422,7 @@ c_ CustomPath(?W...?W..):
         label_path = ?W...?L..('path: ')
         input_path = ?W...QLineEdit(load_custom_path(which))
         push_browse = ?W...?PB..()
-        push_browse.setIcon(QtGui.QIcon(load_icons()['icon_folder']))
+        push_browse.setIcon(?G...QIcon(load_icons()['icon_folder']))
         push_browse.setObjectName('simple')
         push_save = ?W...?PB..('save')
         push_save.setObjectName('actionButtonBig')
@@ -1450,7 +1450,7 @@ c_ CustomPath(?W...?W..):
 
     ___ browse
         dialog = ?W...QFileDialog()
-        dialog.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+        dialog.setWindowFlags(?C...__.WindowStaysOnTopHint)
         dialog.setFileMode(?W...QFileDialog.Directory)
         dialog.setOption(?W...QFileDialog.ShowDirsOnly)
         __ dialog.exec_() __ ?W...QDialog.Accepted:
@@ -1517,5 +1517,5 @@ c_ CustomPath(?W...?W..):
                     r_ ''
 
     ___ keyPressEvent(self, event):
-        __ event.key() __ QtCore.Qt.Key_Escape:
+        __ event.key() __ ?C...__.Key_Escape:
             c__

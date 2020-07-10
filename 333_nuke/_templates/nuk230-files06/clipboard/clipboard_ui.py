@@ -1,5 +1,5 @@
-____ ?.QtGui ______ *
-____ ?.QtCore ______ *
+____ ?.?G.. ______ *
+____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ______ ___
 
@@ -9,7 +9,7 @@ c_ ClipboardUi(QTabWidget):
         s_(ClipboardUi, self). - ()
 
         sQT..("Clipboard")
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         resize(500, 600)
         setMinimumSize(500, 600)
 

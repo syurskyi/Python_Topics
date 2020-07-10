@@ -16,11 +16,11 @@ ______ errno
 ______ ?
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtGui __ ?W..
-    ____ PySide ______ QtCore
+    ____ ? ______ ?G.. __ ?W..
+    ____ ? ______ ?C..
 ____
     ____ ? ______ ?W..
-    ____ ? ______ QtCore
+    ____ ? ______ ?C..
 ______ templates
 
 ___ load_icons(*args):
@@ -302,7 +302,7 @@ ___ set_style_sheet(widget, *args):
 
 ___ show_message_box(window, m.., *args):
     msg = ?W...QMessageBox()
-    msg.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg.information(window, 'information', m..)
 
 
@@ -918,7 +918,7 @@ ___ delete_cache_path(path, *args):
 
 ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_button_text = ''):
     msg_box = ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton, N..)
-    msg_box.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+    msg_box.setWindowFlags(?C...__.WindowStaysOnTopHint)
     msg_box.setObjectName('msgBox')
     msg_box.raise_()
     process_button = msg_box.addButton(process_button_text, ?W...QMessageBox.AcceptRole)
@@ -966,7 +966,7 @@ ___ create_tooltips(parent, key, *args):
         r_
     w__ o..(tooltips_file) __ json_file:
         ttdata = j___.load(json_file)
-    ___ widget __ parent.findChildren(QtCore.QObject):
+    ___ widget __ parent.findChildren(?C...QObject):
         ___ tooltip __ ttdata[key]:
             __ tooltip['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.f..(tooltip['ttt'], tooltip['ttc']))

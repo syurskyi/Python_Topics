@@ -9,7 +9,7 @@
 ______ __
 ______ j___
 ______ ?
-______ config
+______ c..
 
 
 ___ reload_tools_menu(notify=T..):

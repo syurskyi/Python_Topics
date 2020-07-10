@@ -1,5 +1,5 @@
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ______ math
 ___
@@ -134,7 +134,7 @@ c_ colorWheelClass(?W..):
         painter.setRenderHint(QPainter.HighQualityAntialiasing)
         painter.drawImage(0, 0, img)
         #value
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         elipse = QPainterPath()
         elipse.addEllipse(QRect(blackBorder, blackBorder, hw-blackBorder*2,hw-blackBorder*2))
         painter.setBrush(QColor(0,0,0,value*255))
@@ -145,12 +145,12 @@ c_ colorWheelClass(?W..):
         x = center + pick[0]
         y = center + pick[1]
         #line
-        painter.setBrush(Qt.NoBrush)
+        painter.setBrush(__.NoBrush)
         lineColor = 55 __ value < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1))
         painter.drawLine(center, center,x, y)
 
-        painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1, Qt.DashLine))
+        painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1, __.DashLine))
         size = math.sqrt((pick[0] * pick[0]) + (pick[1] * pick[1]))
         painter.drawEllipse(center-size,
                             center-size,
@@ -252,7 +252,7 @@ c_ colorRampClass(?W..):
         painter.setRenderHint(QPainter.HighQualityAntialiasing)
         painter.drawImage(0, 0, img)
         #value
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.fillRect(0,0, hw, hw, QColor(0,0,0,value*255))
         #lines
         x = pick[0]
@@ -352,7 +352,7 @@ c_ colorPickerClass(?W..):
         picker_ly.setContentsMargins(0,0,0,0)
         ly.addLayout(picker_ly)
         #value
-        value = QSlider(Qt.Vertical)
+        value = QSlider(__.Vertical)
         value.setStyleSheet(sliderStyle)
         value.setMaximumHeight(200)
         ly.aW..(value)
@@ -362,21 +362,21 @@ c_ colorPickerClass(?W..):
         #color values
         grid_ly = QGridLayout()
         hex_lb = ?L..()
-        hex_lb.setLayoutDirection(Qt.RightToLeft)
+        hex_lb.setLayoutDirection(__.RightToLeft)
         hex_lb.setText("HEX")
         grid_ly.aW..(hex_lb, 0, 0, 1, 1)
         hex_le = QLineEdit()
         grid_ly.aW..(hex_le, 0, 1, 1, 1)
 
         rgb_lb = ?L..()
-        rgb_lb.setLayoutDirection(Qt.RightToLeft)
+        rgb_lb.setLayoutDirection(__.RightToLeft)
         rgb_lb.setText("RGB")
         grid_ly.aW..(rgb_lb, 1, 0, 1, 1)
         rgb_le = QLineEdit()
         grid_ly.aW..(rgb_le, 1, 1, 1, 1)
 
         hsv_lb = ?L..()
-        hsv_lb.setLayoutDirection(Qt.RightToLeft)
+        hsv_lb.setLayoutDirection(__.RightToLeft)
         hsv_lb.setText("HSV")
         grid_ly.aW..(hsv_lb, 2, 0, 1, 1)
         hsv_le = QLineEdit()
@@ -406,7 +406,7 @@ c_ colorPickerClass(?W..):
 
     ___ setPickerIcon
         pix = QPixmap(32,32)
-        pix.fill(QColor(Qt.red))
+        pix.fill(QColor(__.red))
         setWindowIcon(QIcon(pix))
 
     ___ receiveColor(self, hs):
@@ -456,7 +456,7 @@ ___ addTab(node):
 
 
 __ __name__ __ '__main__':
-    app = QApplication([])
+    app = ?A..([])
     s = colorPickerClass()
     s.s__
     app.exec_()

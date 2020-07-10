@@ -1,10 +1,10 @@
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ___ getMainWindow():
-    app = QApplication.instance()
-    ___ widget __ app.topLevelWidgets():
-        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+    app = ?A...ins..)
+    ___ widget __ app.tLW..
+        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ widget
 
 qnuke = getMainWindow()

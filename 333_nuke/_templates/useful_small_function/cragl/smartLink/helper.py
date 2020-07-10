@@ -10,12 +10,12 @@ ______ xml.etree.ElementTree __ ET
 ____ collections ______ OrderedDict
 ______ ?
 __ ?.NUKE_VERSION_MAJOR < 11:
-    ____ PySide ______ QtCore
-    ____ PySide ______ QtGui
-    ____ PySide ______ QtGui __ ?W..
+    ____ ? ______ ?C..
+    ____ ? ______ ?G..
+    ____ ? ______ ?G.. __ ?W..
 ____
-    ____ ? ______ QtCore
-    ____ ? ______ QtGui
+    ____ ? ______ ?C..
+    ____ ? ______ ?G..
     ____ ? ______ ?W..
 ____ smartLink ______ dialogs
 ____ smartLink ______ templates
@@ -46,7 +46,7 @@ ___ set_style_sheet(widget, style = 'styles.qss'):
 
 ___ move_widget(widget_to_move, click_pos, event):
     x, y = click_pos
-    widget_to_move.xy = event.globalPos() - QtCore.QPoint(x, y)
+    widget_to_move.xy = event.globalPos() - ?C...QPoint(x, y)
     widget_to_move.move(widget_to_move.xy)
 
 
@@ -264,7 +264,7 @@ ___ load_tooltips(parent, section):
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
 
-    ___ widget __ parent.findChildren(QtCore.QObject):
+    ___ widget __ parent.findChildren(?C...QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
                 widget.setToolTip('<strong>{}</strong><br />{}'.f..(t['ttt'], t['ttc']))
@@ -295,13 +295,13 @@ ___ center_window(window):
 
 ___ move_window_under_cursor(window):
     position = get_cursor_position()
-    window_center = QtCore.QPoint(0.5 * window.width(), 0.5 * window.height())
+    window_center = ?C...QPoint(0.5 * window.width(), 0.5 * window.height())
     position = position - window_center
     window.move(position)
 
 
 ___ get_cursor_position():
-    r_ QtGui.QCursor().pos()
+    r_ ?G...QCursor().pos()
 
 
 ___ create_uid():
@@ -483,9 +483,9 @@ ___ get_main_window():
     ___
         module = ?W..
     except AttributeError:
-        module = QtGui
+        module = ?G..
 
     ___
-        r_ module.QApplication(___.argv)
+        r_ module.?A..(___.argv)
     except RuntimeError:
-        r_ module.QApplication.instance()
+        r_ module.?A...ins..)

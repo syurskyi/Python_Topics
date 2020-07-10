@@ -4,19 +4,19 @@ Nyzno polychit' tekychee aktivnoe okno Nuke, dlja togo shto bu ispol'zovat' ego 
 
 ##### Extrimely nessacery to know how to found out what classes and function has class #######
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
-qnuke = QApplication.activeWindow()
+qnuke = ?A...aW..
 w = ?W..()
 w.s__
 
 print qnuke
 ############################################################################################################
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
-qnuke = QApplication.activeWindow()
+qnuke = ?A...aW..
 w = ?W..(qnuke)
 w.s__
 
@@ -26,11 +26,11 @@ No tak kak tam nichego nety on nahoditsja gde to vnytri etogo okna kak prozrachn
 """
 ############################################################################################################
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
-qnuke = QApplication.activeWindow()
-w = ?W..(qnuke, Qt.Tool)
+qnuke = ?A...aW..
+w = ?W..(qnuke, __.T..)
 w.s__
 
 """
@@ -39,17 +39,17 @@ Takoj poisk parenta on ne sovsem odnoznachnuj
 
 ############################################################################################################
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
-qnuke = QApplication.activeWindow()
-w = ?W..(qnuke, Qt.Tool)
+qnuke = ?A...aW..
+w = ?W..(qnuke, __.T..)
 w.s__
 
 ___ active():
-    print QApplication.activeWindow()
+    print ?A...aW..
 
-QTimer.singleShot(2000, active)
+?T...sS..(2000, active)
 
 """
 Pochemy to ne rabotaet na rabote. Posmotret' doma.
@@ -59,24 +59,24 @@ to mu ne polychim glavnogo okna Nuke
 """
 
 ############################################################################################################
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
-app = QApplication.instance() # vozvrachaet tekychee aktivnoe prilozenie
+app = ?A...ins..) # vozvrachaet tekychee aktivnoe prilozenie
 # app.topLevelWidgets() # mu polychaem spisok vseh widzetov. kotorue est'  na samom verhnem yrovne
 
-___ w __ app.topLevelWidgets():
-    print w.windowTitle()
+___ w __ app.tLW..
+    print w.wT..
 ############################################################################################################
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
-app = QApplication.instance() # vozvrachaet tekychee aktivnoe prilozenie
+app = ?A...ins..) # vozvrachaet tekychee aktivnoe prilozenie
 # app.topLevelWidgets() # mu polychaem spisok vseh widzetov. kotorue est'  na samom verhnem yrovne
 
-___ w __ app.topLevelWidgets():
-    print w.metaObject().className() # method metaObject vernjot specialnuj klass s informaciej ob objekte. Y etogo klassa est' edinstvenuj method vozvrachajychij stroky
+___ w __ app.tLW..
+    print w.mO.. .cN.. # method metaObject vernjot specialnuj klass s informaciej ob objekte. Y etogo klassa est' edinstvenuj method vozvrachajychij stroky
 
 """
 Like exersice made that print only Foundry classes
@@ -90,14 +90,14 @@ Kogda sozdajy novuj widget, ja pomechajy fynkcijy getNukeWindow(), kotoraja vern
 
 """
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ___ getNukeWindow():
-    app = QApplication.instance()
+    app = ?A...ins..)
 
-    ___ w __ app.topLevelWidgets():
-        __ w.metaObject().className() __ 'Foundry::UI::DockMainWindow'
+    ___ w __ app.tLW..
+        __ w.mO.. .cN.. __ 'Foundry::UI::DockMainWindow'
             r_ w
 
 qnuke = getNukeWindow()
@@ -105,25 +105,25 @@ qnuke.sQT..('Nuke')
 
 ############################################################################################################
 
-w = ?W..(getNukeWindow(), Qt.Tool)
+w = ?W..(getNukeWindow(), __.T..)
 w.s__
 ############################################################################################################
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ___ getNukeWindow():
-    app = QApplication.instance()
+    app = ?A...ins..)
 
-    ___ w __ app.topLevelWidgets():
-        __ w.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+    ___ w __ app.tLW..
+        __ w.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ w
 
 qnuke = getNukeWindow()
 qnuke.sQT..('Nuke')
 
-w = ?W..(getNukeWindow(), Qt.Tool)
-w.setWindowFlags(QtCore.Qt.Window |
-                      QtCore.Qt.FramelessWindowHint)
+w = ?W..(getNukeWindow(), __.T..)
+w.setWindowFlags(?C...__.Window |
+                      ?C...__.FramelessWindowHint)
 w.s__
 w.c__

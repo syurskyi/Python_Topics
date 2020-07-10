@@ -3,13 +3,13 @@
 
 # vsjo shto mu vidim v interfejse nodu eto setka
 
-____ PySide.QtCore ______ *
-____ PySide.QtGui ______ *
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
 
 ___ getMainWindow():
-    app = QApplication.instance()
-    ___ widget __ app.topLevelWidgets():
-        __ widget.metaObject().className() __ 'Foundry::UI::DockMainWindow':
+    app = ?A...ins..)
+    ___ widget __ app.tLW..
+        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ widget
 
 qnuke = getMainWindow()
@@ -35,10 +35,10 @@ tw = t.widget(0)
 gl = tw.children()[0]
 gl.rowCount()
 s = QSlider()
-s.setOrientation(Qt.Horizontal)
+s.setOrientation(__.Horizontal)
 gl.aW..(s, 12, 1)
 lb = ?L..('SYURSKYI')
-gl.aW..(lb, 12, 0, Qt.AlignRight)
+gl.aW..(lb, 12, 0, __.AlignRight)
 
 ###############################################
 
