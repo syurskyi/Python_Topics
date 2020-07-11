@@ -2,21 +2,21 @@ ______ ?
 ______ ?
 ____ ? ______ panels
 
-____ ?.?C.. ______ *
-____ ?.?G.. ______ *
+____ ?.?C.. ______ _
+____ ?.?G.. ______ _
 
 
-c_ simplePanel(?W..):
+c_ simplePanel ?W..
     ___  -
-        ?W... - (self)
-        sL..(?VL..())
+        ?W... -
+        sL.. ?VL..
         locationEdit = ?CW..
-        layout().aW..(locationEdit)
+        la__ .aW.. ?
 
-panels.registerWidgetAsPanel('simplePanel', 'Simple', "")
+pa__.rWAP.. simplePanel Simple
 
-w = simplePanel
-w.s__
+w = ?
+?.s__
 
 # Eto chesnuj sposob vstavki widgeta vnytri Nuke
 # Y etogo sposoba est'  tol'ko odno neydobstvoeto ykazanie widgeta strokoj.
@@ -28,9 +28,9 @@ w.s__
 # no pri registracii panelja eto nikak ne pomozet, ne ______ , ne sozdanie exampljara
 # shtobu eta fynkcija nashla klass vnytri modulja, nam nyzno napisat' polnuj ego pyt' imja modylja a potom imja klassa, fynkcija sama importiryet vsjo shto nado i sozdat exampljar
 
-# panels.registerWidgetAsPanel('mod.simplePanel', 'Simple', "")
+# panels.rWAP..('mod.simplePanel', 'Simple', "")
 
 # Vslychae esli registracija modulja nahoditsja v tom ze module , v kotorom nahoditsja klass , to mozno napisat tak
 
-# panels.registerWidgetAsPanel(__name__.'simplePanel', 'Simple', "")
+# panels.rWAP..(__name__.'simplePanel', 'Simple', "")
 # V name obuchno pishetsja imja modlja v kotorom proishodit vupolnenie danngo koda

@@ -247,7 +247,7 @@ ___
     moduleName = ''
   ____
     moduleName = moduleName + '.'
-  panels.registerWidgetAsPanel( moduleName + 'WebBrowserWidget', 'Web Browser','uk.co.thefoundry.WebBrowserWidget')
+  panels.rWAP..( moduleName + 'WebBrowserWidget', 'Web Browser','uk.co.thefoundry.WebBrowserWidget')
 except ImportError:
   pass
 
