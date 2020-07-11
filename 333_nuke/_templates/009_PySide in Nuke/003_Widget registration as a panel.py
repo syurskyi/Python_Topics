@@ -1,21 +1,21 @@
-______ ?
-______ ?
-____ ? ______ panels
-
-____ ?.?C.. ______ *
-____ ?.?G.. ______ *
-
-
-c_ simplePanel(?W..):
-    ___  -
-        ?W... - (self)
-        sL..(QVBoxLayout())
-        locationEdit = QCalendarWidget()
-        layout().aW..(locationEdit)
-
-panels.registerWidgetAsPanel('simplePanel', 'Simple', "")
-
-########################################################################################################################
-
-______ modulefinder
-w = mod.simplePanel()
+# ______ ?
+# ______ ?
+# ____ ? ______ panels
+#
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+#
+#
+# c_ simplePanel ?W..
+#     ___  -
+#         ?W... -
+#         sL.. ?VL..
+#         locationEdit _ ?CW..
+#         la__ .aW.. ?
+#
+# p__.rWAP.. simplePanel Simple
+#
+# ########################################################################################################################
+#
+# ______ modulefinder
+# w _ m__.sP..

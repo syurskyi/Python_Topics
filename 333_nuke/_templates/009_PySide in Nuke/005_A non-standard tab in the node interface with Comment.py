@@ -54,6 +54,6 @@ nw.sL..(ly)
 ___ i __ ra..(5):
     ly.aW..(?PB..())
 t.addTab(nw, 'My Tab')
-c = QCalendarWidget()
+c = ?CW..
 t.insertTab(0, c, 'Calendar')
 t.setCurrentIndex(0)

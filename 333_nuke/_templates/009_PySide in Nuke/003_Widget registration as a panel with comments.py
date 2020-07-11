@@ -9,8 +9,8 @@ ____ ?.?G.. ______ *
 c_ simplePanel(?W..):
     ___  -
         ?W... - (self)
-        sL..(QVBoxLayout())
-        locationEdit = QCalendarWidget()
+        sL..(?VL..())
+        locationEdit = ?CW..
         layout().aW..(locationEdit)
 
 panels.registerWidgetAsPanel('simplePanel', 'Simple', "")
