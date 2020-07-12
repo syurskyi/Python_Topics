@@ -4,7 +4,7 @@ ____ ?.?W.. ______ _
 ______ ___
 
 
-c_ ClipboardUi(QTabWidget):
+c_ ClipboardUi(?TW..):
     ___  -
         s_(ClipboardUi, self). - ()
 

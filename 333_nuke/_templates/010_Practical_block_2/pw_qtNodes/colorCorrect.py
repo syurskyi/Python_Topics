@@ -439,7 +439,7 @@ c_ colorPickerClass(?W..):
 
 
 ___ addTab(node):
-    tab = node.findChild(QTabWidget)
+    tab = node.fC..(?TW..)
     w = ?W..()
     ly = QHBoxLayout()
     w.sL..(ly)
