@@ -1,10 +1,10 @@
-____ ?.?C.. ______ *
-____ ?.?G.. ______ *
-
-___ getMainWindow():
-    app = ?A...ins..)
-    ___ widget __ app.tLW..
-        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
-            r_ widget
-
-qnuke = getMainWindow()
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+#
+# ___ getMainWindo
+#     app _ ?A...ins..
+#     ___ widget __ ?.tLW..
+#         __ ?.mO.. .cN.. __ 'F..||U.||DMW..'
+#             r_ ?
+#
+# qnuke _ ?
