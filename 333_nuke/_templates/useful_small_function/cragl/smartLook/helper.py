@@ -24,7 +24,7 @@ ____
     ____ ? ______ ?C..
 ______ templates
 
-___ load_icons(*args):
+___ load_icons(_args):
     this_dir = __.path.dirname( -f)
     dir_icon = __.path.join(this_dir, '../', 'icons')
     dir_icon = __.path.n_p_(dir_icon)

@@ -4,8 +4,8 @@
 # To esli vash skript ne zagryzen to vasha taba prosto ne bydyt pojavitsja
 # Nachat' nado s polychenija widgeta okna ili nodu kak QT  objekta. Y lybogo okna, lyboj nodu on prisytstvyet i on ravnjaetsja imeni etoj nodu
 
-____ ?.?C.. ______ *
-____ ?.?G.. ______ *
+____ ?.?C.. ______ _
+____ ?.?G.. ______ _
 
 ___ getMainWindow():
     app = ?A...ins..)

@@ -3,8 +3,8 @@
 
 # vsjo shto mu vidim v interfejse nodu eto setka
 
-____ ?.?C.. ______ *
-____ ?.?G.. ______ *
+____ ?.?C.. ______ _
+____ ?.?G.. ______ _
 
 ___ getMainWindow():
     app = ?A...ins..)
