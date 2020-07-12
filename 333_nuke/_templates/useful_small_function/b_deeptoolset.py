@@ -52,7 +52,7 @@ ___ select_node(node_class):
     ___
         node = ?.sN__
         __ node.Class() __ class_:
-            node['selected'].sV..(False)
+            node['selected'].sV..(F..)
             r_ node
         ____
             m.. = "Please, select a {} Node".f..(class_)
@@ -119,7 +119,7 @@ ___ create_node_with_position(nodename,connect_node,x=0,y=0):
      :return: created node object.
      """
      node = ?.createNode(nodename)
-     node['selected'].sV..(False)
+     node['selected'].sV..(F..)
 
      node.setXpos(int(x))
      node.setYpos(int(y))
@@ -138,7 +138,7 @@ ___ create_node_with_position_simple(nodename,x=0,y=0):
      :return: created node.
      """
      node = ?.createNode(nodename)
-     node['selected'].sV..(False)
+     node['selected'].sV..(F..)
 
      node.setXpos(int(x))
      node.setYpos(int(y))
@@ -350,7 +350,7 @@ ___ iterate_deep_holdout_setup():
             r_
         ____
             names.ap..(i.name())
-            i['selected'].sV..(False)
+            i['selected'].sV..(F..)
 
     #build_depth_setup(names)
 
@@ -577,7 +577,7 @@ ___ splitLayers( node ):
             ch4 = '%s %s' % ( ch4, ch4 )
             
         prefs = "in %s %s %s %s %s" % (layer, ch1, ch2, ch3, ch4)
-        shuffle = ?.createNode( 'Shuffle', prefs, inpanel=False )
+        shuffle = ?.createNode( 'Shuffle', prefs, inpanel=F.. )
         shuffle.knob( 'label' ).sV..( layer )
         shuffle.setInput( 0, node )
 

@@ -45,7 +45,7 @@ c_ Tablet(list):
         parent = parent
         self[:] = list()
 
-        tab_closed = False
+        tab_closed = F..
         not_in_group = type is no. N.. and type != TYPE_GROUP
 
     ___ __eq__(self, other):
@@ -117,7 +117,7 @@ c_ Tablet(list):
         script = list()
         ___ item __ self:
             __ i..(item, Tablet):
-                sub_script = item.to_script(join=False)
+                sub_script = item.to_script(join=F..)
 
                 line = "addUserKnob {20 " + item.name
                 __ item.label is no. N..:

@@ -64,9 +64,9 @@ ___ SelectNode(Viewer,warning):
         raise ValueError      
     ____ Inputs>1:
         ___ n __ nuke.allNodes():
-            n.setSelected(False)
+            n.setSelected(F..)
         __ Viewer __ ActiveViewer:
-            index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)+1
+            index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),F..)+1
             Nodes=[index1]
             ___
                 index2 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),T..)+1
@@ -87,10 +87,10 @@ ___ SelectNode(Viewer,warning):
                     pass               
     else:
         ___ n __ nuke.allNodes():
-            n.setSelected(False)
+            n.setSelected(F..)
         __ Viewer __ ActiveViewer:
             ___
-                index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),False)
+                index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),F..)
                 Node = nuke.toNode(nuke.toNode(Viewer).input(index1).name())
                 Node.setSelected(T..)
                 nuke.show(Node)
@@ -138,13 +138,13 @@ c_ SelectViewerNode(nukescripts.PythonPanel):
     
         Zoom = nuke.Boolean_Knob("Zoom")
 
-        Zoom.setValue(False)
+        Zoom.setValue(F..)
 
         dividerA = nuke.Text_Knob("")
 
         warning = nuke.Text_Knob('warning',"")
 
-        warning.setVisible(False)
+        warning.setVisible(F..)
 
          
         #Tooltips
@@ -172,7 +172,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
             __ no. warning.visible():
 
-                dividerA.setVisible(False)
+                dividerA.setVisible(F..)
      
                 Zoom(Zoom,SelectNode(Viewers,warning))
 
@@ -182,7 +182,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
         __ knob is Viewers:
         
-            warning.setVisible(False)
+            warning.setVisible(F..)
 
             dividerA.setVisible(T..)
 

@@ -17,7 +17,7 @@ ___ deleteFiles(files):
     __ __.path.isfile(files[0]):
         do_it=nuke.ask('really delete "'+filestoDelete+'" ? (no undo available)')
         __ do_it:
-            delete(files,False)
+            delete(files,F..)
     else:
         nuke.m..('This is not a regular file - nothing deleted')
         r_ 1

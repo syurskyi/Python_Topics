@@ -100,6 +100,6 @@ c_ HistoryTableWidget(QTableWidget):
         setHorizontalHeaderItem(0, QTableWidgetItem("Name"))
         setHorizontalHeaderItem(1, QTableWidgetItem("Date"))
         horizontalHeader().setStretchLastSection(T..)
-        verticalHeader().setVisible(False)
+        verticalHeader().setVisible(F..)
         setEditTriggers(QAbstractItemView.NoEditTriggers)
         setSelectionMode(QAbstractItemView.SingleSelection)

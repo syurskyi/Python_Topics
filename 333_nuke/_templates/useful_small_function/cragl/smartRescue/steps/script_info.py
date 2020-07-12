@@ -138,7 +138,7 @@ c_ ScriptInfo(NodeStep):
         r_ "{:%Y/%m/%d - %H:%M:%S}".f..(d_t_.d_t_.now())
 
     @staticmethod
-    ___ number_nodes(recursive=False):
+    ___ number_nodes(recursive=F..):
         """Return the total number of nodes.
 
         Args:

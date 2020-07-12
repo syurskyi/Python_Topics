@@ -89,7 +89,7 @@ ___ check_web_connection():
         urllib.urlopen('http://www.cragl.com')
         r_ T..
     ______
-        r_ False
+        r_ F..
 
 
 ___ show_message_box(window, m..):
@@ -127,7 +127,7 @@ ___ get_dir_templates():
     r_ dir_
 
 
-___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = False, is_footage_dir = False, icons = N..):
+___ set_item_icon(listwidget_item, name, is_dir, is_render_dir = F.., is_footage_dir = F.., icons = N..):
     __ is_dir:
         ___
             listwidget_item.setIcon(0, ?G...QIcon(icons['icon_folder']))
@@ -217,14 +217,14 @@ ___ remove(path):
             __.remove(path)
             r_ T..
         ______
-            r_ False
+            r_ F..
 
     ____ __.path.isdir(path):
         ___
             shutil.rmtree(path)
             r_ T..
         ______
-            r_ False
+            r_ F..
 
 
 ___ set_style_sheet(widget):
@@ -236,7 +236,7 @@ ___ set_style_sheet(widget):
             widget.setStyleSheet(file_.read())
 
 
-___ reveal_in_finder(path, open_file = False):
+___ reveal_in_finder(path, open_file = F..):
     path = __.path.n_p_(path)
     ___
         __ ___.pl.. __ 'linux2':
@@ -334,7 +334,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     xml = __.path.join(get_smartlib_private_dir(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    debug = False
+    debug = F..
     item_found = 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
@@ -402,7 +402,7 @@ ___ write_template_default(projectpath, template):
     xml = __.path.join(get_smartlib_private_dir(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    elem_exists = False
+    elem_exists = F..
     ___ project __ root.find('templateDefaults').f_a_('project'):
         __ project.get('path') __ projectpath:
             elem_exists = T..
@@ -470,7 +470,7 @@ ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_bu
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
         r_ T..
     ____
-        r_ False
+        r_ F..
         r_
 
 
@@ -493,7 +493,7 @@ ___ check_xml_ok(xml):
             __ __.path.isfile(xml):
                 __.remove(xml)
                 get_settings_xml()
-        r_ False
+        r_ F..
 
 
 ___ load_settings():
@@ -625,7 +625,7 @@ ___ set_preview_image(delete_nodes = T..):
     root_dir_docs = get_dir_docs_current_nukescript()
     __ root_dir_docs __ '':
         r_
-    reformat = ?.createNode('Reformat', inpanel=False)
+    reformat = ?.createNode('Reformat', inpanel=F..)
     reformat.setInput(0, sel)
     reformat.setXYpos(sel.xpos(), sel.ypos() + 50)
     reformat['type'].sV..('to box')
@@ -634,7 +634,7 @@ ___ set_preview_image(delete_nodes = T..):
     gamma.setInput(0, reformat)
     gamma.setXYpos(sel.xpos(), reformat.ypos() + 50)
     gamma['value'].sV..(float(load_settings()['shot_thumb_gamma']))
-    write = ?.createNode('Write', inpanel=False)
+    write = ?.createNode('Write', inpanel=F..)
     write.setInput(0, gamma)
     write.setXYpos(gamma.xpos(), gamma.ypos() + 50)
     write.knob('name').sV..('create preview')
@@ -704,7 +704,7 @@ ___ check_meta_xml_values_exist(metaxml):
 ___ check_meta_xml_value_exists(metaxml_path, parent, section, key1, value1, text, key2 = '', value2 = ''):
     tree = ET.parse(metaxml_path)
     root = tree.getroot()
-    debug = False
+    debug = F..
     item_found = 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
@@ -759,7 +759,7 @@ ___ save_image_scaled(src, dest):
         r_ T..
     ______
         write_log('Cannot create image scaled.')
-        r_ False
+        r_ F..
 
 
 ___ get_script_name():
@@ -938,7 +938,7 @@ ___ load_footage(defaulttype = 'Read', path = ''):
         max_files = ?.numvalue('preferences.maxPanels')
         n = le.(files)
         ___ f __ files:
-            is_abc = False
+            is_abc = F..
             stripped = ?.stripFrameRange(f)
             nodeType = defaulttype
             __ ?.create.isAudioFilename(stripped):
@@ -951,7 +951,7 @@ ___ load_footage(defaulttype = 'Read', path = ''):
                 nodeType = 'DeepRead'
             use_in_panel = T..
             __ max_files != 0 and n > max_files:
-                use_in_panel = False
+                use_in_panel = F..
             n = n - 1
             __ is_abc:
                 ?.createScenefileBrowser(f, '')
@@ -1136,7 +1136,7 @@ ___ build_pdf(build_path, project, output_filename = '', parent = N..):
         show_message_box(parent, msg)
         r_
 
-    debug = False
+    debug = F..
     ___
         tmp_html = build_html(__.path.join(get_smartlib_public_dir(), 'tmp.html'), project)
         __ debug:
@@ -1279,7 +1279,7 @@ ___ insert_shot_notes():
 ___ show_edit_template_script(window, path):
     g__ ets
     script_values = get_script_values(path, window)
-    set_default_format = False
+    set_default_format = F..
     __ 'format' __ script_values:
         __ script_values['format'] __ '0':
             set_default_format = T..
@@ -1333,7 +1333,7 @@ ___ get_script_values(path, window):
 
 
 ___ set_script_values(path, script_values, *args):
-    debug = False
+    debug = F..
     script_vals = 'script_in:{}@script_out:{}@fps:{}@format:{}'
     script_vals = script_vals.f..(script_values['script_in'], script_values['script_out'], script_values['fps'], script_values['format'].replace(' ', '_'))
     this_dir = __.path.dirname( -f)
@@ -1353,7 +1353,7 @@ ___ set_script_values(path, script_values, *args):
     __ found_end __ 1:
         r_ T..
     ____
-        r_ False
+        r_ F..
 
 
 ___ get_user(metaxml, *args):

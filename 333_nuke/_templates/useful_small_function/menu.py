@@ -77,7 +77,7 @@ ___ sjmAutoBackdrop():
   #
   # restore node selection
   #
-  n['selected'].sV..(False)
+  n['selected'].sV..(F..)
   ___ node __ selNodes:
     node['selected'].sV..(T..)
   r_ n
@@ -115,7 +115,7 @@ ___ sjmHideInputsOff():
   ___ i __ ?.allNodes():
     __ i.knob('hide_input'):
       __ i.knob('hide_input').v..:
-	i.knob('hide_input').sV..(False)
+	i.knob('hide_input').sV..(F..)
 
 # open a read or write node in a viewer program (djv is the first example)
 #

@@ -23,7 +23,7 @@ ____
 ____ matchnode ______ byClass
 
 
-___ filePath(node=N.., proxy=False, regex=N.., force_match=T..):
+___ filePath(node=N.., proxy=F.., regex=N.., force_match=T..):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -89,7 +89,7 @@ ___ filePath(node=N.., proxy=False, regex=N.., force_match=T..):
 
             # create a tmp write node to do the evaluation in
             # if you can figure out a better way to evaluate as Nuke does, be my guest
-            tmp = ?.createNode('Write', inpanel=False)
+            tmp = ?.createNode('Write', inpanel=F..)
 
             ___
                 # LOGIC (IF ANY) BEHIND THE FOLLOWING:
@@ -151,7 +151,7 @@ ___ filePath(node=N.., proxy=False, regex=N.., force_match=T..):
 # end filePath
    
 
-___ filePathWithRange(node=N.., proxy=False, regex=N.., force_match=T..):
+___ filePathWithRange(node=N.., proxy=F.., regex=N.., force_match=T..):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -182,7 +182,7 @@ ___ filePathWithRange(node=N.., proxy=False, regex=N.., force_match=T..):
 #  end filePathWithRange
 
 
-___ filePaths(no__=N.., proxy=False, regex=N.., force_match=T..):
+___ filePaths(no__=N.., proxy=F.., regex=N.., force_match=T..):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -207,7 +207,7 @@ ___ filePaths(no__=N.., proxy=False, regex=N.., force_match=T..):
 # end filePaths
 
 
-___ filePathsWithRanges(nodes=N.., proxy=False, regex=N.., force_match=T..):
+___ filePathsWithRanges(nodes=N.., proxy=F.., regex=N.., force_match=T..):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the

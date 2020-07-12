@@ -221,9 +221,9 @@ ___ check_xml_ok(xml, *args):
                 ____
                     jobs_xml = get_job_xml()
                     __ jobs_xml __ '':
-                        r_ False
+                        r_ F..
         ____
-            r_ False
+            r_ F..
 
 
 ___ check_web_connection(*args):
@@ -231,7 +231,7 @@ ___ check_web_connection(*args):
         urllib.urlopen('http://www.cragl.com')
         r_ T..
     ______
-        r_ False
+        r_ F..
 
 
 ___ update_job_data(job_id, key, val, *args):
@@ -452,7 +452,7 @@ ___ write_render_log(text, *args):
             lf.write('{}: {}\n'.f..(get_time_formated()), text)
         r_ T..
     except IOError:
-        r_ False
+        r_ F..
 
 
 ___ write_terminal_cmd(job_id, text, file = 'input', *args):
@@ -466,7 +466,7 @@ ___ write_terminal_cmd(job_id, text, file = 'input', *args):
             file_.write('{}\n'.f..(text))
         r_ T..
     except IOError:
-        r_ False
+        r_ F..
 
 
 ___ get_job_xml(*args):
@@ -545,7 +545,7 @@ ___ load_terminal_log(job_id, mode, *args):
         r_ 'Error reading the terminal input file. {}'.f..(e)
 
 
-___ load_job_log_data(job_id, filter, file_output = False, *args):
+___ load_job_log_data(job_id, filter, file_output = F.., *args):
     job_data = ''
     jobs_xml = get_job_xml()
     __ jobs_xml __ '':
@@ -789,7 +789,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     xml = __.path.join(get_smart_render_private_root(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    debug = False
+    debug = F..
     item_found = 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
@@ -815,7 +815,7 @@ ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 = '',
     xml = __.path.join(get_smart_render_private_root(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    debug = False
+    debug = F..
     item_found = 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
@@ -843,12 +843,12 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 = '', value
     tree = ET.parse(settings_xml)
     root = tree.getroot()
     item_found = 0
-    current_found = False
+    current_found = F..
     ___ child __ root.find('presets').f_a_('preset'):
         __ child.get('name') __ 'current':
             current_found = T..
         ____
-            current_found = False
+            current_found = F..
         ___ setting __ child.f_a_('setting'):
             __ setting.get(key1) __ value1:
                 item_found += 1
@@ -933,7 +933,7 @@ ___ ask_dialog(m.. = '', process_button_text = '', color_process = '', cancel_bu
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
         r_ T..
     ____
-        r_ False
+        r_ F..
         r_
 
 

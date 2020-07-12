@@ -43,7 +43,7 @@ c_ Global_clipboard(QDialog):
             repo = "R:/Global_Clipboard/"
         ____
             repo = "/Volumes/Resources/Global_Clipboard/"
-            __ __.path.exists(repo) __ False:
+            __ __.path.exists(repo) __ F..:
                 repo = "/Volumes/resources/Global_Clipboard/"
 
         saveName = "tempClipBoard"

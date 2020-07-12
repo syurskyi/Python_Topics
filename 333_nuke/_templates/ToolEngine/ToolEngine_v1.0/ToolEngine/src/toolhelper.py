@@ -63,7 +63,7 @@ ___ get_all_tools():
     r_ all_tools
 
 
-___ load_tools(notify=False):
+___ load_tools(notify=F..):
     """
     load tools from tools root directory
     :return: None
@@ -149,7 +149,7 @@ ___ build_tools_menu(tools_root):
 
             __ __.path.splitext(tool)[1] __ ".nk":
                 toolset_path = __.path.join(item_full_path, tool)
-                category_menu.aC..(tool.replace(".nk", ""), lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=False), icon="")
+                category_menu.aC..(tool.replace(".nk", ""), lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=F..), icon="")
 
     # temp tools
     te_menu.addSeparator()
@@ -166,7 +166,7 @@ ___ build_tools_menu(tools_root):
             temp_menu.aC..(__.path.splitext(tool)[0], lambda toolset_path=toolset_path: insert_toolset(toolset_path, delete=T..))
 
 
-___ insert_toolset(toolpath, delete=False):
+___ insert_toolset(toolpath, delete=F..):
     """
     insert toolset
     if it is a temp tool then the delete flag is set to True thus it will be removed after inserting

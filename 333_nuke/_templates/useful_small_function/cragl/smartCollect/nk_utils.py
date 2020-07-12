@@ -10,14 +10,14 @@ ___ is_nuke():
         ______ ?
         r_ T..
     except ImportError:
-        r_ False
+        r_ F..
 
 
-___ get_nuke_exe(startup_feedback = False):
+___ get_nuke_exe(startup_feedback = F..):
     executable = ''
     debug = helper.load_settings()['logging_level'] __ '1'
     __ no. startup_feedback:
-        debug = False
+        debug = F..
     __ is_nuke():
         ______ ?
         r_ ?.env['ExecutablePath']

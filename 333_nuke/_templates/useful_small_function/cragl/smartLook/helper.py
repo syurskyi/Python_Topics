@@ -336,14 +336,14 @@ ___ check_web_connection(*args):
         urllib.urlopen('http://www.cragl.com')
         r_ T..
     ______
-        r_ False
+        r_ F..
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
     xml = __.path.join(get_tool_private_root(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    debug = False
+    debug = F..
     item_found = 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
@@ -448,7 +448,7 @@ ___ open_in_explorer(path, parent = N.., *args):
         subprocess.P..(['xdg-open', path])
 
 
-___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expanded = False, is_dir = False, enable_drag = False, icon = ''):
+___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expanded = F.., is_dir = F.., enable_drag = F.., icon = ''):
     diritem = ?W...QTreeWidgetItem(parent, [item_name])
     diritem.setData(0, ?C...__.UserRole, dirpath)
     __ enable_drag __ 'False':
@@ -640,5 +640,5 @@ ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
         r_ T..
     ____
-        r_ False
+        r_ F..
         r_

@@ -310,7 +310,7 @@ c_ CleanModeDialog(?W..):
 
         __ checkboxes[0].isChecked():
             ___ c __ checkboxes:
-                c.setChecked(False)
+                c.setChecked(F..)
         else:
             ___ c __ checkboxes:
                 c.setChecked(T..)

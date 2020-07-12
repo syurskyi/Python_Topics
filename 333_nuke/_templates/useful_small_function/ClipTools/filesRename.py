@@ -74,7 +74,7 @@ ___ renameClips(files):
     (filesList, pathToFile)=createList(files)
     __ filesList is no. 1:
         (search,replace)=getRename(files,name)
-        renamed=fileName.rename(filesList, pathToFile, search, replace, False)
+        renamed=fileName.rename(filesList, pathToFile, search, replace, F..)
         __ 0__renamed:
             nuke.m..('failed - try selecting individual files')
     else:
@@ -93,7 +93,7 @@ ___ renameFiles(files):
         filesList.append(clipname)
         
 
-    renamed=fileName.rename(filesList, pathToFile, search, replace, False)
+    renamed=fileName.rename(filesList, pathToFile, search, replace, F..)
     __ 0__renamed:
         nuke.m..('failed, maybe permissions?')
       

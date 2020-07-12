@@ -21,10 +21,10 @@ ___ nodeToggler():
 	    #sets the final result on their value basis and displays error if any
             ___ item __ selection:
                 __ item.knob(knobPanel.value('Select Knob')):
-                    __ item.knob(knobPanel.value('Select Knob')).v.. __ False:
+                    __ item.knob(knobPanel.value('Select Knob')).v.. __ F..:
                         item.knob(knobPanel.value('Select Knob')).setValue(T..)
                     ____ item.knob(knobPanel.value('Select Knob')).v.. __ T..:
-                        item.knob(knobPanel.value('Select Knob')).setValue(False)
+                        item.knob(knobPanel.value('Select Knob')).setValue(F..)
                 else:
                     nuke.m..('{} node has no {} knob.'.f..(item.name(), knobPanel.value('Select Knob')))
         #creates panel for node selection
@@ -53,12 +53,12 @@ ___ nodeToggler():
             __ node.Class() __ value:
                 node.setSelected(T..)
             else:
-                node.setSelected(False)
+                node.setSelected(F..)
             __ value __ 'All':
                 nuke.selectAll()
                 ___ n __ nuke.sN..:
                     __ n.Class() __ 'Viewer':
-                        n.setSelected(False)
+                        n.setSelected(F..)
                 break
         __ le.(nuke.selectedNodes()) > 0:
             knobSelection()

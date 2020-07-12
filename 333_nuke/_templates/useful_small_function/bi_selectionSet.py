@@ -153,26 +153,26 @@ ___ disEnaAllFromSelectionSet(bckdrp):
                 
                 __ i __ 0:
                     __ nd['disable'].v.. __ T..:
-                        allValue = False
+                        allValue = F..
                     else:
                         allValue = T..
                         
-                disEnaNode(node['name'].v.., nd['name'].v.., "%sBtn" %nd['name'].v.., toggle = False, allValue = allValue)
+                disEnaNode(node['name'].v.., nd['name'].v.., "%sBtn" %nd['name'].v.., toggle = F.., allValue = allValue)
                 
         nuke.show(node)
     else:
         nuke.executeInMainThread(nuke.m.., args=("Select selection set."))
         
     
-___ disEnaNode(bckdrp, node, kn, refresh = False, toggle = T.., allValue = T..):
+___ disEnaNode(bckdrp, node, kn, refresh = F.., toggle = T.., allValue = T..):
     bckdrp = nuke.toNode(bckdrp)
     node = nuke.toNode(node)
     knobNode = bckdrp.knob(kn)
     ___
-        __ refresh is False:
+        __ refresh is F..:
             __ toggle:
                 __ node['disable'].v.. __ T..:
-                    node['disable'].setValue(False)
+                    node['disable'].setValue(F..)
                     lon = '<span style="color:green">%s</span>' %node['name'].v..
                     knobNode.setLabel(lon)
                 else:
@@ -185,7 +185,7 @@ ___ disEnaNode(bckdrp, node, kn, refresh = False, toggle = T.., allValue = T..):
                     lon = '<span style="color:red">%s</span>' %node['name'].v..
                     knobNode.setLabel(lon)
                 else:
-                    node['disable'].setValue(False)
+                    node['disable'].setValue(F..)
                     lon = '<span style="color:green">%s</span>' %node['name'].v..
                     knobNode.setLabel(lon)
                     

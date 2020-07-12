@@ -43,7 +43,7 @@ ___ autoLife():
   
   ___ element __ elements:
     __ element.locked:
-      element.locked = False
+      element.locked = F..
       
       # Get keyframes for the 0-indexed control point
       __ isinstance(element, nuke.rotopaint.Stroke):

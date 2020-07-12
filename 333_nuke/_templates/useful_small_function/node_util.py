@@ -32,7 +32,7 @@ ___ selected_nodes_deep(nodes):
             n.deepSampleCount(0, 0)
             r_ T..
         except ValueError:
-            r_ False
+            r_ F..
 
 
 ___ selected_nodes_3d(nodes):
@@ -45,7 +45,7 @@ ___ selected_nodes_3d(nodes):
             n['render_mode'].getValue()
             r_ T..
         except NameError:
-            r_ False
+            r_ F..
 
 
 # copies knobs from one node to the other
@@ -105,7 +105,7 @@ ___ paste_to_selected():
         r_
     selection = ?.sN..
     ___ node __ selection:
-        node['selected'].sV..(False)
+        node['selected'].sV..(F..)
     ___ node __ selection:
         node['selected'].sV..(T..)
         ?.nodePaste('%clipboard%')
@@ -161,7 +161,7 @@ ___ read_from_write():
     __ le.(nodes) < 1:
         print('No nodes selected')
     ____
-        found_writes = False
+        found_writes = F..
         write_nodes = []
         ___ node __ nodes:
             __ node.Class() __ 'Write':

@@ -114,7 +114,7 @@ ___ load_settings(*args):
             __ value __ 'True':
                 value = T..
             ____ value __ 'False':
-                value = False
+                value = F..
             settings[setting.get('name')] = value
 
     r_ settings
@@ -165,7 +165,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     xml = __.path.join(get_tool_private_root(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    debug = False
+    debug = F..
     item_found = 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
@@ -234,7 +234,7 @@ ___ ask_dialog(m.., process_label = 'ok', color_process = 'actionButton', cancel
     __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
         r_ T..
     ____
-        r_ False
+        r_ F..
         r_
 
 

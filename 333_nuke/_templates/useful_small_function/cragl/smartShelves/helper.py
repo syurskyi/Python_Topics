@@ -91,7 +91,7 @@ ___ write_log(text, tool = 'sh'):
             s.write('{}: {} {}\n'.f..(logtime, tool, text))
         r_ T..
     ______
-        r_ False
+        r_ F..
 
 
 ___ set_style_sheet(widget):

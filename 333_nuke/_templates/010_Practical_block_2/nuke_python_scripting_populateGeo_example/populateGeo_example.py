@@ -39,7 +39,7 @@ grpScene = ?.nodes.Scene(hide_input=T..)
 ___ pt __ points:
     r = random.choice(reads)
     card = ?.nodes.Card(inputs=[r], rows = 1, columns=1,
-    image_aspect=False, hide_input=T..)
+    image_aspect=F.., hide_input=T..)
     tr = ?.nodes.TransformGeo(inputs=[card, N.., inCam],
     xpos=card.xpos(), ypos=card.ypos()+40, hide_input=T..)
     tr['translate'].sV..(pt)

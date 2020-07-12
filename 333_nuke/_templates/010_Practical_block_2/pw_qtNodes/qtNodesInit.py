@@ -23,9 +23,9 @@ qNuke = getMainWindow()
 
 c_ eventFilterWindowClass(QObject):
     ___ eventFilter(self, obj, ev):
-        __ ev.type() __ QEvent.ChildPolished:
+        __ ev.type() __ ?E__.ChildPolished:
             processNode(ev.child())
-        r_ False
+        r_ F..
         
     ___ processNode(self, n):
         nukeNode = ?.toNode( str(n.objectName()) )

@@ -9,7 +9,7 @@ ___ selectionCheck():
     selection = nuke.sN..
     ___ i __ selection:
         __ range(le.(selection)) __ 0:
-            r_ False
+            r_ F..
         else:
             r_ selection
 

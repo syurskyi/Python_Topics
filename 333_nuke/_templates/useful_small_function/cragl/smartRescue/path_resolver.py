@@ -94,7 +94,7 @@ c_ PathResolver(object):
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
 
-        ___ root, dirs, files __ __.walk(path, topdown=False):
+        ___ root, dirs, files __ __.walk(path, topdown=F..):
             ___ name __ files:
                 __ re.match(exe_pattern, name):
                     ? = __.path.join(root, name)

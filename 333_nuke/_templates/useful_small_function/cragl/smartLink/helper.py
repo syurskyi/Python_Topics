@@ -95,7 +95,7 @@ ___ load_settings():
             __ value __ 'True':
                 value = T..
             ____ value __ 'False':
-                value = False
+                value = F..
             ____ ',' __ value:
                 value = [ val.strip() ___ val __ value.split(',') ]
             settings[setting.get('name')] = value
@@ -174,7 +174,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value
     xml = __.path.join(get_tool_root('private'), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    debug = False
+    debug = F..
     item_found = 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
@@ -377,7 +377,7 @@ ___ add_smartlink_tab_widgets():
         r_
     tab = ?.Tab_Knob(SMARTLINK)
     favorites = ?.String_Knob(PREFIX_FAVORITES, FAVORITES)
-    favorites.setEnabled(False)
+    favorites.setEnabled(F..)
     root.addKnob(tab)
     root.addKnob(favorites)
     r_ favorites

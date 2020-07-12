@@ -179,7 +179,7 @@ c_ NodesByKnobValues(NodeStep):
                     str,
                 )
 
-                rule_matched = False
+                rule_matched = F..
                 ___ type_ __ types:
                     ___
                         __ operator_(knob.v.., type_(rule["knob_value"])):

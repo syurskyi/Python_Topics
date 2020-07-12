@@ -32,7 +32,7 @@ g__ ctrl
 
 default_dir = __.path.dirname( -f)
 knobInit = default_dir+"/init.py"
-ctrl = False
+ctrl = F..
 
 
 ___ checkExistingInit():

@@ -11,7 +11,7 @@ ___ switch():
             # off
             a.setData(N..)
             a.setText('Enable SYNC')
-            callback(False)
+            callback(F..)
         ____
             # ON
             a.setData(T..)
