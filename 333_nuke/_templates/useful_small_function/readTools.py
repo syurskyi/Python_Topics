@@ -21,12 +21,12 @@ ___ setLocalize():
 
 ___ setFrameRange():
     f _ nukescripts.PythonPanel('Set read nodes frame range')
-    f.nodesSelection _ nuke.Enumeration_Knob('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
+    f.nodesSelection _ nuke.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     f.divText _ nuke.T_K..('divText', '')
     f.firstFrame _ newUserKnob(nuke.I_K..('first_frame', 'frame range', 1), in.(nuke.root().firstFrame()))
-    f.before _ nuke.Enumeration_Knob('before', '', ['hold', 'loop', 'bounce', 'black'])
+    f.before _ nuke.E_K..('before', '', ['hold', 'loop', 'bounce', 'black'])
     f.lastFrame _ newUserKnob(nuke.I_K..('last_frame', '', 100), in.(nuke.root().lastFrame()))
-    f.after _ nuke.Enumeration_Knob('after', '', ['hold', 'loop', 'bounce', 'black'])
+    f.after _ nuke.E_K..('after', '', ['hold', 'loop', 'bounce', 'black'])
 
     #Set nodes selection and after as end line
     ___ s __ (f.nodesSelection, f.after):
@@ -61,9 +61,9 @@ ___ setFrameRange():
 
 ___ setError():
     e _ nukescripts.PythonPanel('Missing frames setting')
-    e.nodesSelection _ nuke.Enumeration_Knob('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
+    e.nodesSelection _ nuke.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     e.divText _ nuke.T_K..('divText', '')
-    e.onError _ nuke.Enumeration_Knob('onError', 'missing frames', ['error', 'black', 'checkerboard', 'nearest frame'])
+    e.onError _ nuke.E_K..('onError', 'missing frames', ['error', 'black', 'checkerboard', 'nearest frame'])
     e.reload _ newUserKnob(nuke.B_K..('reload', 'Reload changed nodes', '0'), 0)
     ___ k __ (e.nodesSelection, e.divText, e.onError, e.reload):
         k.sF..(0x1000)

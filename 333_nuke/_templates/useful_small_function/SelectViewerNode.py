@@ -134,7 +134,7 @@ c_ SelectViewerNode(nukescripts.PythonPanel):
 
         # Create Knobs
        
-        Viewers _ nuke.Enumeration_Knob("Viewer","Viewer",GetViewerList(ViewersList))
+        Viewers _ nuke.E_K..("Viewer","Viewer",GetViewerList(ViewersList))
     
         Zoom _ nuke.B_K..("Zoom")
 

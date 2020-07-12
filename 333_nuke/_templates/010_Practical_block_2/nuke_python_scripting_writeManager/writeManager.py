@@ -13,7 +13,7 @@ c_ writeManagerClass(?.PythonPanel):
             cb.sV..(no. node['disable'].getValue())
             aK..(cb)
 
-        start _ ?.PyScript_Knob('render','Render')
+        start _ ?.PS_K..('render','Render')
         start.sF..(?.ST..)
         aK..(start)
 

@@ -165,7 +165,7 @@ ___ create_knobs(data, tab):
             knob.sV..(value)
 
         ____ i..(value, list):
-            knob _ ?.Enumeration_Knob(name, nice, value)
+            knob _ ?.E_K..(name, nice, value)
 
         ____ i..(value, dict):
             __ all(i..(v, dict) ___ v __ value.values()):

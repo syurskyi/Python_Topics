@@ -15,8 +15,8 @@ c_ Panel(?.PythonPanel):
 
         setMinimumSize(500,500)
 
-        date_combo_box _ ?.Enumeration_Knob("date", "Date", [])
-        delete_push_button _ ?.PyScript_Knob("delete", "Delete", "")
+        date_combo_box _ ?.E_K..("date", "Date", [])
+        delete_push_button _ ?.PS_K..("delete", "Delete", "")
         log_knob _ ?.Multiline_Eval_String_Knob("text","Log","")
 
         aK..(date_combo_box)

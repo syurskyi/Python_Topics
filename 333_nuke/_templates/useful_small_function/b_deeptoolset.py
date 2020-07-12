@@ -730,9 +730,9 @@ c_ modalPanel(?.PythonPanel):
 
         ?.PythonPanel. - (self,"b_deep toolset")
         #CREATE KNOBS
-        depth_from_deep _ ?.PyScript_Knob('depth_from_deep', 'depth_from_deep', 'depth_for_defocus()')
-        create_holdouts _ ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
-        deep_uberpass _ ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
+        depth_from_deep _ ?.PS_K..('depth_from_deep', 'depth_from_deep', 'depth_for_defocus()')
+        create_holdouts _ ?.E_K..('mode','build mode  ', ['contact sheet','extract'])
+        deep_uberpass _ ?.E_K..('mode','build mode  ', ['contact sheet','extract'])
         auto_comp.clearFlag(?.ST..)
         author _ ?.T_K..("written by Boris Martinez")
         #ADD KNOBS

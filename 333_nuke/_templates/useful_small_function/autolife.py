@@ -19,7 +19,7 @@ elements _ []
 
 ___ addAutoLife():
   n _ nuke.thisNode()
-  n.aK..(nuke.PyScript_Knob('autolife', 'autolife!', 'autolife.autoLife()'))
+  n.aK..(nuke.PS_K..('autolife', 'autolife!', 'autolife.autoLife()'))
 
 ___ getElements(layer):
   ___ element __ layer:
