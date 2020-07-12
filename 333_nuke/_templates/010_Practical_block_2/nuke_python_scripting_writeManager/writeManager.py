@@ -5,7 +5,7 @@ c_ writeManagerClass(?.PythonPanel):
         ?.PythonPanel. - (self, 'Write Manager', 'pw+writemanager')
         nodes _ {x.name():x ___ x __ ?.allNodes('Write')}
         ___ name, node __ nodes.items():
-            line _ ?.String_Knob(name+'-file', name)
+            line _ ?.S_K..(name+'-file', name)
             line.sV..(node['file'].getValue())
             aK..(line)
             cb _ ?.B_K..(name+'-disable','')

@@ -62,7 +62,7 @@ ___ callInputs():
         sep _ nuke.T_K..('separator', 'List of Nodes:', '')
         
         tm _ nuke.T_K..('listOfNodes', '', lon)
-        tm.sF..(nuke.INVISIBLE)
+        tm.sF..(nuke.IN..)
 
         bckdrp.aK..(sel)
         bckdrp.aK..(dis)

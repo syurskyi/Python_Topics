@@ -97,7 +97,7 @@ ___ create_text_knob(node, noop, m_key, key):
         key (str): Last section of metadata key.
 
     """
-    text _ nuke.String_Knob(key, key, str(node.metadata(m_key)))
+    text _ nuke.S_K..(key, key, str(node.metadata(m_key)))
     noop.aK..(text)
 
 

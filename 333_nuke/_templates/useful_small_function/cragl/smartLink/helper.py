@@ -376,7 +376,7 @@ ___ add_smartlink_tab_widgets():
     __ SMARTLINK __ root.knobs():
         r_
     tab _ ?.T_K..(SMARTLINK)
-    favorites _ ?.String_Knob(PREFIX_FAVORITES, FAVORITES)
+    favorites _ ?.S_K..(PREFIX_FAVORITES, FAVORITES)
     favorites.setEnabled(F..)
     root.aK..(tab)
     root.aK..(favorites)

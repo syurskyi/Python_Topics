@@ -161,7 +161,7 @@ ___ create_knobs(data, tab):
             knob.sV..(value)
 
         ____ i..(value, string_types):
-            knob _ ?.String_Knob(name, nice)
+            knob _ ?.S_K..(name, nice)
             knob.sV..(value)
 
         ____ i..(value, list):
