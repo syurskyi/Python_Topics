@@ -21,22 +21,22 @@ ___ createList(files):
 
     # parses the Nuke shorthand and splits into several components
     ___
-        pathToFile=__.path.dirname(files[0])
-        clipname=__.path.basename(files[0]).split('(')[0]
-        name=clipname.split('.')[0]
-        padding=(clipname.split('.')[1])[1:3]
-        extension=clipname.split(' ')[0].split('.')[2]
-        rangeStart=clipname.split(' ')[1].split('-')[0]
-        rangeEnd=clipname.split(' ')[1].split('-')[1]
+        pathToFile___.path.dirname(files[0])
+        clipname___.path.basename(files[0]).split('(')[0]
+        name_clipname.split('.')[0]
+        padding_(clipname.split('.')[1])[1:3]
+        extension_clipname.split(' ')[0].split('.')[2]
+        rangeStart_clipname.split(' ')[1].split('-')[0]
+        rangeEnd_clipname.split(' ')[1].split('-')[1]
 
         # creates a list of files from above
-        filesList= []
-        rangeCount=int(rangeStart)
-        while int(rangeCount)<= int(rangeEnd):
-            paddedNum=str('%'+padding+'d') % int(rangeCount)
+        filesList_ []
+        rangeCount_int(rangeStart)
+        while int(rangeCount)<_ int(rangeEnd):
+            paddedNum_str('%'+padding+'d') % int(rangeCount)
             #filesList.append(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
             filesList.append(name+'.'+paddedNum+'.'+extension)
-            rangeCount+=1
+            rangeCount+_1
         r_ [filesList, pathToFile]
     ______
         r_ [1,1]
@@ -48,22 +48,22 @@ ___ getRename(files,name):
     g__ search
     g__ replace
     
-    panel = nuke.Panel ( "Rename Files",400)     
+    panel _ nuke.Panel ( "Rename Files",400)
     panel.addSingleLineInput("text to replace:",name)
     panel.addSingleLineInput("replace with:", '')
-    result=panel.s__
+    result_panel.s__
 
     __ result:
-        search = panel.value("text to replace:")
-        replace = panel.value("replace with:")
+        search _ panel.value("text to replace:")
+        replace _ panel.value("replace with:")
         __ replace__'':
-            replace=search                          # stops files being renamed with nothing
+            replace_search                          # stops files being renamed with nothing
         __ replace[0] __'.':
             nuke.m..('Starting with "." is unsupported')
             r_ 1
         # define the illegal characters and replace with '_'
-        pattern = re.compile('[^a-zA-Z0-9.]')
-        replace = pattern.sub('_', replace)
+        pattern _ re.compile('[^a-zA-Z0-9.]')
+        replace _ pattern.sub('_', replace)
         r_ [search,replace]
     else:
         r_ 1
@@ -71,10 +71,10 @@ ___ getRename(files,name):
 # renames the clips passed from Nuke using shorthand (parsed in createList)
 #
 ___ renameClips(files):
-    (filesList, pathToFile)=createList(files)
+    (filesList, pathToFile)_createList(files)
     __ filesList __ no. 1:
-        (search,replace)=getRename(files,name)
-        renamed=fileName.rename(filesList, pathToFile, search, replace, F..)
+        (search,replace)_getRename(files,name)
+        renamed_fileName.rename(filesList, pathToFile, search, replace, F..)
         __ 0__renamed:
             nuke.m..('failed - try selecting individual files')
     else:
@@ -84,16 +84,16 @@ ___ renameClips(files):
 # renames the individual files passed from Nuke
 #
 ___ renameFiles(files):
-    pathToFile=__.path.dirname(files[0])
-    name=__.path.basename(files[0]).split('.')[0]
-    (search,replace)=getRename(files,name)
-    filesList=[]
+    pathToFile___.path.dirname(files[0])
+    name___.path.basename(files[0]).split('.')[0]
+    (search,replace)_getRename(files,name)
+    filesList_[]
     ___ f __ files:
-        clipname=__.path.basename(f)
+        clipname___.path.basename(f)
         filesList.append(clipname)
         
 
-    renamed=fileName.rename(filesList, pathToFile, search, replace, F..)
+    renamed_fileName.rename(filesList, pathToFile, search, replace, F..)
     __ 0__renamed:
         nuke.m..('failed, maybe permissions?')
       
@@ -112,15 +112,15 @@ ___ renamer():
     # if it finds a '%' it assumes a clip list from Nuke otherwise it assumes
     # a list of individual files from Nuke.
     
-    files=nuke.getClipname('select files to rename',multiple=T..)
+    files_nuke.getClipname('select files to rename',multiple_T..)
     
     while files:
         __ '%' __ str(files):
             renameClips(files)
         else:
             renameFiles(files)
-        files=N..   # stops renamer renaming files a 2nd time around the loop by mistake
-        files=nuke.getClipname('select files to rename',multiple=T..)
+        files_N..   # stops renamer renaming files a 2nd time around the loop by mistake
+        files_nuke.getClipname('select files to rename',multiple_T..)
 
 
 
@@ -129,7 +129,7 @@ ___ renamer():
 # renumbers and/or repads image sequences on disc from within Nuke
 ___ renumber():
     
-    files=nuke.getClipname('select clip to renumber',multiple=T..)
+    files_nuke.getClipname('select clip to renumber',multiple_T..)
     #nuke.message('files selected = '+str(files))
     
     
@@ -137,26 +137,26 @@ ___ renumber():
 
         __ '%' __ str(files):
             createList(files)
-            panel = nuke.Panel ( "Renumber Files",60)     
+            panel _ nuke.Panel ( "Renumber Files",60)
             panel.addSingleLineInput("change padding to:", padding)
             panel.addSingleLineInput("frameStart:", rangeStart)
-            result=panel.s__
+            result_panel.s__
 
             __ result:
-                newPad = panel.value("change padding to:")
-                frameStart= panel.value("frameStart:")
+                newPad _ panel.value("change padding to:")
+                frameStart_ panel.value("frameStart:")
 
 
-                tempFilesList= []
-                rangeCount=int(rangeStart)
-                newRangeCount=int(frameStart)
+                tempFilesList_ []
+                rangeCount_int(rangeStart)
+                newRangeCount_int(frameStart)
 
-                while int(rangeCount)<= int(rangeEnd):
-                    paddedNum=str('%'+padding+'d') % int(rangeCount)
-                    newPaddedNum=str('%'+newPad+'d') % int(newRangeCount)
+                while int(rangeCount)<_ int(rangeEnd):
+                    paddedNum_str('%'+padding+'d') % int(rangeCount)
+                    newPaddedNum_str('%'+newPad+'d') % int(newRangeCount)
 
-                    searchPad=(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
-                    tempPad=(pathToFile+'/'+name+'.'+newPaddedNum+'.'+extension+'.tmp')
+                    searchPad_(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
+                    tempPad_(pathToFile+'/'+name+'.'+newPaddedNum+'.'+extension+'.tmp')
 
                     # if there is no padding nuke lists '%d' this catches that and fails
                     ___
@@ -167,8 +167,8 @@ ___ renumber():
                     #---------------------#
                     
                     tempFilesList.append(tempPad)
-                    rangeCount+=1
-                    newRangeCount+=1
+                    rangeCount+_1
+                    newRangeCount+_1
 
                 ___ f __ tempFilesList:
                     __.rename(f, f[:-4])
@@ -176,7 +176,7 @@ ___ renumber():
         else:
             nuke.m..('This only works with clip ranges')
             
-        files=nuke.getClipname('select more clips to renumber',multiple=T..)
+        files_nuke.getClipname('select more clips to renumber',multiple_T..)
 
 
 
@@ -187,16 +187,16 @@ ___ renumber():
 # or overwrite a locked file (after unlocked) when render successful
 #
 ___ removeExtension():
-    files=nuke.getFilename('select files to remove extension',multiple=T..)
+    files_nuke.getFilename('select files to remove extension',multiple_T..)
     while files:
         __ '%' __ str(files):
             nuke.m..('This only works on individually selected files')
         else:
-            result=nuke.ask('Remove extension "'+__.path.basename(files[0])[-4:]+'" ? \nthis can overwrite existing files')
+            result_nuke.ask('Remove extension "'+__.path.basename(files[0])[-4:]+'" ? \nthis can overwrite existing files')
             __ result:
                 ___ f __ files:
                     __.rename(f, f[:-4])
-        files=nuke.getFilename('select more files to remove extension',multiple=T..)
+        files_nuke.getFilename('select more files to remove extension',multiple_T..)
 
 
 # removeTemps - function called from Nuke
@@ -206,33 +206,33 @@ ___ removeExtension():
 #
 ___ removeTemps():
      
-    do_it=nuke.ask('This removes all .tmp files from the write nodes in this script. Are you sure you want to do this?')
+    do_it_nuke.ask('This removes all .tmp files from the write nodes in this script. Are you sure you want to do this?')
     __ do_it:
-        aw = nuke.allNodes('Write')
+        aw _ nuke.allNodes('Write')
         
-        paths = []
+        paths _ []
         
         ___ w __ aw:
-            f = w['file'].v..
-            p = w['proxy'].v..
+            f _ w['file'].v..
+            p _ w['proxy'].v..
             
             __ f:
-                f_path = __.path.dirname(f)
+                f_path _ __.path.dirname(f)
                 paths.append(f_path)
             __ p:
-                p_path = __.path.dirname(p)
+                p_path _ __.path.dirname(p)
                 paths.append(p_path)
                 
         ___ path __ list(set(paths)):
-            files = __.listdir(path)
-            count=0
+            files _ __.listdir(path)
+            count_0
             ___ f __ files:
-                filename = f.split('.')
-                ext = filename[-1]
+                filename _ f.split('.')
+                ext _ filename[-1]
                 __ ext __ 'tmp':
                     ___
                         __.remove(path+'/'+f)
-                        count+=1
+                        count+_1
                     ______
                         nuke.tprint('Unable to delete file: %s' % f)
         nuke.m..('removed '+str(count)+' files')

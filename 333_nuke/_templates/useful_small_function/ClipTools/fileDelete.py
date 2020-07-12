@@ -15,7 +15,7 @@ ____ fileName ______ _
 #
 ___ deleteFiles(files):
     __ __.path.isfile(files[0]):
-        do_it=nuke.ask('really delete "'+filestoDelete+'" ? (no undo available)')
+        do_it_nuke.ask('really delete "'+filestoDelete+'" ? (no undo available)')
         __ do_it:
             delete(files,F..)
     else:
@@ -25,12 +25,12 @@ ___ deleteFiles(files):
 # deletes a list of clips supplied from Nuke
 #
 ___ deleteClips(files):
-    do_it=nuke.ask('really delete "'+filestoDelete+'..." ?\n(no undo available)')
+    do_it_nuke.ask('really delete "'+filestoDelete+'..." ?\n(no undo available)')
     __ do_it:
         ___ clips __ files:
-            [filesList,name,padding, extension, rangeStart, rangeEnd]=createList(clips)
+            [filesList,name,padding, extension, rangeStart, rangeEnd]_createList(clips)
             __ do_it:
-                deleteFiles=delete(filesList,T..)
+                deleteFiles_delete(filesList,T..)
 
         __ deleteFiles:
             nuke.m..('some files failed to delete \ntry selecting individual files')
@@ -47,17 +47,17 @@ ___ deleter():
     # if it finds a '%' or '#' it assumes a clip list from Nuke otherwise it assumes
     # a list of individual files from Nuke.
 
-    files=nuke.getClipname('select files to delete',multiple=T..)
+    files_nuke.getClipname('select files to delete',multiple_T..)
 
     while files:
-        filestoDelete=__.path.basename(files[0])  #sets name for message later
+        filestoDelete___.path.basename(files[0])  #sets name for message later
         __ '%' __ str(files) or '#' __ str(files):
-            catchFail=deleteClips(files)
+            catchFail_deleteClips(files)
         else:
-            catchFail=deleteFiles(files)
+            catchFail_deleteFiles(files)
 
         __ no. catchFail:
-            files=nuke.getClipname('select files to delete',multiple=T..)
+            files_nuke.getClipname('select files to delete',multiple_T..)
         else:
-            files=N..
+            files_N..
     

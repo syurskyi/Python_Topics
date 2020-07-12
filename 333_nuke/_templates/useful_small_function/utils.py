@@ -32,12 +32,12 @@ ___ create_node(node):
         Node: NoOp Node.
 
     """
-    lab = 'baked metadata\nfrom {}'.f..(node.name())
-    noop = nuke.nodes.NoOp(hide_input=T..,
-                           xpos=node.xpos() + 100,
-                           ypos=node.ypos(),
-                           tile_color=constants.COLORS['noop'],
-                           label=lab)
+    lab _ 'baked metadata\nfrom {}'.f..(node.name())
+    noop _ nuke.nodes.NoOp(hide_input_T..,
+                           xpos_node.xpos() + 100,
+                           ypos_node.ypos(),
+                           tile_color_constants.COLORS['noop'],
+                           label_lab)
     r_ noop
 
 
@@ -53,10 +53,10 @@ ___ create_numerical_animation(node, noop, m_key, key, first, last):  # pylint: 
         last (int): Frame number when animation should stop.
 
     """
-    animation = nuke.Double_Knob(key)
-    noop.addKnob(animation)
+    animation _ nuke.D_K..(key)
+    noop.aK..(animation)
     animation.setAnimated()
-    anim = animation.animations()[0]
+    anim _ animation.animations()[0]
     anim.addKey([nuke.AnimationKey(i, node.metadata(m_key, i)) ___ i __ xrange(first, last)])
 
     nuke.show(noop)
@@ -74,15 +74,15 @@ ___ create_matrix_knob(node, noop, m_key, key, first, last):
         last (int): Frame number when animation should stop.
 
     """
-    mtx = le.(node.metadata(m_key))
-    array = nuke.IArray_Knob(key.r__(':', '_'), key, [mtx, 1])
-    noop.addKnob(array)
+    mtx _ le.(node.metadata(m_key))
+    array _ nuke.IArray_Knob(key.r__(':', '_'), key, [mtx, 1])
+    noop.aK..(array)
     array.setAnimated()
 
     ___ frame __ xrange(first, last):
         ___ index __ range(mtx):
-            keys = []
-            anim = array.animations()[index]
+            keys _ []
+            anim _ array.animations()[index]
             keys.append(nuke.AnimationKey(frame, node.metadata(m_key, frame)[index]))
             anim.addKey(keys)
 
@@ -97,8 +97,8 @@ ___ create_text_knob(node, noop, m_key, key):
         key (str): Last section of metadata key.
 
     """
-    text = nuke.String_Knob(key, key, str(node.metadata(m_key)))
-    noop.addKnob(text)
+    text _ nuke.String_Knob(key, key, str(node.metadata(m_key)))
+    noop.aK..(text)
 
 
 ___ get_node():

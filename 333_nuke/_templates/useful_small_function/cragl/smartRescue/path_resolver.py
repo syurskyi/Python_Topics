@@ -36,12 +36,12 @@ c_ PathResolver(object):
                 for PySide and the Nuke executable.
 
         """
-        path = path
+        path _ path
 
-        operating_sytem = ""
-        exe_pattern = ""
-        ? = ""
-        site_packages = ""
+        operating_sytem _ ""
+        exe_pattern _ ""
+        ? _ ""
+        site_packages _ ""
 
     ___ __str__
         """Return string representation using nuke and pyside paths.
@@ -50,7 +50,7 @@ c_ PathResolver(object):
             str: Representation using nuke and pyside paths.
 
         """
-        info = ("Operating system: {}\n"
+        info _ ("Operating system: {}\n"
                 "Exe pattern: {}\n"
                 "Nuke executable: {}\n"
                 "Site-packages: {}\n")
@@ -64,20 +64,20 @@ c_ PathResolver(object):
         Returns:
             str: Abbreviation of the currently used os.
         """
-        abbreviations = {
+        abbreviations _ {
             "Windows": "win",
             "Darwin": "mac"
         }
-        operating_sytem = abbreviations.get(pl...system(), "lnx")
+        operating_sytem _ abbreviations.get(pl...system(), "lnx")
 
     ___ _set_exe_pattern
         """Set the name of the executable depending on the operating system."""
-        names = {
+        names _ {
             "win": r"Nuke\d+\.\d+\.exe",  # https://regex101.com/r/sWqKht/1
             "lnx": r"Nuke\d+.\d+",  # https://regex101.com/r/sWqKht/2
             "mac": r"Nuke\d+.\d+v\d+"  # https://regex101.com/r/sWqKht/3/
         }
-        exe_pattern = names[operating_sytem]
+        exe_pattern _ names[operating_sytem]
 
     ___ _set_nuke_pyside
         """Set absolute path of Nuke executable and PySide root directory.
@@ -87,21 +87,21 @@ c_ PathResolver(object):
                 root directory was found in the path.
 
         """
-        pyside_pattern = r"PySide\d*"  # https://regex101.com/r/LDR591/1
+        pyside_pattern _ r"PySide\d*"  # https://regex101.com/r/LDR591/1
 
         __ no. path:
             raise OSError("No Nuke root directory set. Please set your Nuke "
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
 
-        ___ root, dirs, files __ __.walk(path, topdown=F..):
+        ___ root, dirs, files __ __.walk(path, topdown_F..):
             ___ name __ files:
                 __ re.match(exe_pattern, name):
-                    ? = __.path.join(root, name)
+                    ? _ __.path.join(root, name)
             ___ name __ dirs:
                 __ re.match(pyside_pattern, name):
-                    pyside_root = __.path.join(root, name)
-                    site_packages = __.path.dirname(pyside_root)
+                    pyside_root _ __.path.join(root, name)
+                    site_packages _ __.path.dirname(pyside_root)
 
         __ no. ?:
             raise OSError("Did not find any Nuke executable under "
@@ -127,9 +127,9 @@ c_ PathResolver(object):
 
         """
         __ __.path.isfile(path):
-            path = __.path.dirname(path)
+            path _ __.path.dirname(path)
 
-        path = path
+        path _ path
 
     ___ run
         """Resolve all paths."""

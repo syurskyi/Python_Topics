@@ -9,12 +9,12 @@ ___ openFileReturnArr(file):
     open set file, read in all lines and
     return an array with all the lines
     '''
-    arr=[]
-    fobj = o..("%s"%file, "r")
+    arr_[]
+    fobj _ o..("%s"%file, "r")
     #load in all lines
     ___ line __ fobj:
         #delete word wrap at the end of each line
-        line=line.r__("\n", "")
+        line_line.r__("\n", "")
         arr.append(line)
     fobj.c__
     r_ arr
@@ -25,24 +25,24 @@ ___ getBackupSettings(val, path):
     for getting the values out of the array which
     comes from the settings file
     '''
-    path = path
-    arr = openFileReturnArr(path)
-    i=0
+    path _ path
+    arr _ openFileReturnArr(path)
+    i_0
     ___ line __ arr:
-        findVal=arr[i].find("%s"%val)
+        findVal_arr[i].find("%s"%val)
         #if pattern found
-        __ findVal!=-1:
-            val=arr[i]
-            valArr=val.split("=")
+        __ findVal!_-1:
+            val_arr[i]
+            valArr_val.split("=")
             ___
-                val=valArr[1] #value
+                val_valArr[1] #value
                 __ val__"":
-                    val=" "
+                    val_" "
                 ____ val__"NONE":
-                    val=" "
+                    val_" "
             ______
-                val="---"
-        i+=1
+                val_"---"
+        i+_1
     r_ val
 
 ___ openFolder(path):
@@ -57,5 +57,5 @@ ___ help():
     '''
     goto web
     '''
-    url = 'http://www.leafpictures.de/blackbox'
+    url _ 'http://www.leafpictures.de/blackbox'
     webbrowser.open_new(url)

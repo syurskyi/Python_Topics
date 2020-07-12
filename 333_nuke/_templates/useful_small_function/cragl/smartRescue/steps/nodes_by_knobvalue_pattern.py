@@ -112,14 +112,14 @@ c_ NodesByKnobValuePattern(NodeStep):
         """Handle nodes that match one of the patterns."""
         ___ rule __ setup["patterns"]:
             ___ node __ ?.allNodes():
-                knob_name = rule[0]
-                pattern = rule[1]
+                knob_name _ rule[0]
+                pattern _ rule[1]
 
-                knob = node.knob(knob_name)
+                knob _ node.knob(knob_name)
                 __ no. knob:
                     continue
 
-                knob_value = knob.v..
+                knob_value _ knob.v..
                 __ no. re.search(pattern, knob_value):
                     continue
 

@@ -57,9 +57,9 @@ ___ save(data):
         dict: The given data after it was written.
 
     """
-    setting_file = get_settings_file()
+    setting_file _ get_settings_file()
     w__ o..(setting_file, "w") __ file_:
-        j___.dump(data, file_, indent=4, sort_keys=T..)
+        j___.dump(data, file_, indent_4, sort_keys_T..)
 
     r_ data
 
@@ -85,8 +85,8 @@ c_ Settings(object):
         """Initialize the Settings instance."""
         s_(Settings, self). - ()
 
-        file_ = _check_settings_file()
-        data = _load(file_)
+        file_ _ _check_settings_file()
+        data _ _load(file_)
 
     ___ __repr__
         """Get string representation of settings.
@@ -108,14 +108,14 @@ c_ Settings(object):
 
         """
         ____ smartScripter ______ helper
-        settings_dir = helper.get_tool_root("private")
+        settings_dir _ helper.get_tool_root("private")
         __ no. __.path.isdir(settings_dir):
             __.makedirs(settings_dir)
 
-        settings_file = get_settings_file()
+        settings_file _ get_settings_file()
         __ no. __.path.isfile(settings_file):
             w__ o..(settings_file, "w") __ file_:
-                j___.dump(DEFAULT_SETTINGS, file_, indent=4, sort_keys=T..)
+                j___.dump(DEFAULT_SETTINGS, file_, indent_4, sort_keys_T..)
 
         r_ settings_file
 

@@ -10,7 +10,7 @@ ______ __
 #
 c_ BaseMenu(object):
     ___  - (self, menu_name):
-        _menu_name = menu_name
+        _menu_name _ menu_name
 
 
     @property
@@ -30,7 +30,7 @@ c_ NukeMenuGenerator(BaseMenu):
 
 
     ___ create_menu
-        menu_handle = ?.menu("Nuke").aM..(_menu_name)
-        node_menu_handle = ?.menu("Nodes").aM..(_menu_name)
+        menu_handle _ ?.menu("Nuke").aM..(_menu_name)
+        node_menu_handle _ ?.menu("Nodes").aM..(_menu_name)
 
 

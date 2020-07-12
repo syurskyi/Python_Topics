@@ -6,7 +6,7 @@ ___ newUserKnob(knob, value):
     r_ knob
 
 ___ allReads():
-    readNodes = []
+    readNodes _ []
     ___ i __ nuke.allNodes():
         __ i.Class() __ 'Read':
             readNodes.append(i)
@@ -20,28 +20,28 @@ ___ setLocalize():
     pass
 
 ___ setFrameRange():
-    f = nukescripts.PythonPanel('Set read nodes frame range')
-    f.nodesSelection = nuke.Enumeration_Knob('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
-    f.divText = nuke.Text_Knob('divText', '')
-    f.firstFrame = newUserKnob(nuke.Int_Knob('first_frame', 'frame range', 1), int(nuke.root().firstFrame()))
-    f.before = nuke.Enumeration_Knob('before', '', ['hold', 'loop', 'bounce', 'black'])
-    f.lastFrame = newUserKnob(nuke.Int_Knob('last_frame', '', 100), int(nuke.root().lastFrame()))
-    f.after = nuke.Enumeration_Knob('after', '', ['hold', 'loop', 'bounce', 'black'])
+    f _ nukescripts.PythonPanel('Set read nodes frame range')
+    f.nodesSelection _ nuke.Enumeration_Knob('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
+    f.divText _ nuke.Text_Knob('divText', '')
+    f.firstFrame _ newUserKnob(nuke.I_K..('first_frame', 'frame range', 1), int(nuke.root().firstFrame()))
+    f.before _ nuke.Enumeration_Knob('before', '', ['hold', 'loop', 'bounce', 'black'])
+    f.lastFrame _ newUserKnob(nuke.I_K..('last_frame', '', 100), int(nuke.root().lastFrame()))
+    f.after _ nuke.Enumeration_Knob('after', '', ['hold', 'loop', 'bounce', 'black'])
 
     #Set nodes selection and after as end line
     ___ s __ (f.nodesSelection, f.after):
-        s.setFlag(0x2000)
+        s.sF..(0x2000)
     ___ k __ (f.nodesSelection, f.divText, f.firstFrame, f.before, f.lastFrame, f.after):
-        f.addKnob(k)
+        f.aK..(k)
 
     #show dialog
     __ f.sMD..:
         __ f.nodesSelection.v.. __ 'All read nodes':
-            Sel = allReads()
+            Sel _ allReads()
         ____ f.nodesSelection.v.. __ 'Selected nodes only':
-            Sel = nuke.sN..
+            Sel _ nuke.sN..
         else:
-            Sel = allReads()
+            Sel _ allReads()
             ___ i __ nuke.sN..:
                 ___
                     Sel.remove(i)
@@ -60,23 +60,23 @@ ___ setFrameRange():
                 pass
 
 ___ setError():
-    e = nukescripts.PythonPanel('Missing frames setting')
-    e.nodesSelection = nuke.Enumeration_Knob('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
-    e.divText = nuke.Text_Knob('divText', '')
-    e.onError = nuke.Enumeration_Knob('onError', 'missing frames', ['error', 'black', 'checkerboard', 'nearest frame'])
-    e.reload = newUserKnob(nuke.Boolean_Knob('reload', 'Reload changed nodes', '0'), 0)
+    e _ nukescripts.PythonPanel('Missing frames setting')
+    e.nodesSelection _ nuke.Enumeration_Knob('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
+    e.divText _ nuke.Text_Knob('divText', '')
+    e.onError _ nuke.Enumeration_Knob('onError', 'missing frames', ['error', 'black', 'checkerboard', 'nearest frame'])
+    e.reload _ newUserKnob(nuke.B_K..('reload', 'Reload changed nodes', '0'), 0)
     ___ k __ (e.nodesSelection, e.divText, e.onError, e.reload):
-        k.setFlag(0x1000)
-        e.addKnob(k)
+        k.sF..(0x1000)
+        e.aK..(k)
 
     #show dialog
     __ e.sMD..:
         __ e.nodesSelection.v.. __ 'All read nodes':
-            Sel = allReads()
+            Sel _ allReads()
         ____ e.nodesSelection.v.. __ 'Selected nodes only':
-            Sel = nuke.sN..
+            Sel _ nuke.sN..
         else:
-            Sel = allReads()
+            Sel _ allReads()
             ___ i __ nuke.sN..:
                 ___
                     Sel.remove(i)

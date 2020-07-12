@@ -50,9 +50,9 @@ c_ Scanner(object):
             root (str): The root to scan.
 
         """
-        controller = controller
-        logger = helper.get_logger()
-        stacks = _load_stacks(root)
+        controller _ controller
+        logger _ helper.get_logger()
+        stacks _ _load_stacks(root)
 
     ___ _load_stacks(self, root):
         """Load the stacks in the given root.
@@ -85,15 +85,15 @@ c_ Scanner(object):
                 raise IOError("Cannot create stack root in directory: "
                               "{}\n".f..(root, error.m..))
 
-        dirs = [__.path.join(root, dir_) ___ dir_ __ __.listdir(root)
+        dirs _ [__.path.join(root, dir_) ___ dir_ __ __.listdir(root)
                 __ __.path.isdir(__.path.join(root, dir_))
                 and no. dir_.startswith("_")]
 
         logger.debug("Found stacks: %s", ", ".join(dirs))
 
-        stacks = OrderedDict()
+        stacks _ OrderedDict()
         ___ dir_ __ dirs:
-            stacks[__.path.basename(dir_)] = _load_stack(dir_)
+            stacks[__.path.basename(dir_)] _ _load_stack(dir_)
 
         r_ stacks
 
@@ -111,23 +111,23 @@ c_ Scanner(object):
         """
         logger.debug("Scanning stack %s", directory_path)
 
-        files = (file_ ___ file_ __ __.listdir(directory_path)
+        files _ (file_ ___ file_ __ __.listdir(directory_path)
                  __ file_.endswith(".json"))
 
-        commands = []
+        commands _ []
 
         ___ file_ __ files:
-            path = __.path.join(directory_path, file_)
+            path _ __.path.join(directory_path, file_)
 
             ___
-                data = _parse_json(path)
+                data _ _parse_json(path)
             except (IOError, KeyError, ValueError) __ error:
                 logger.warning(error.m..)
 
             w__ o..(__.path.splitext(path)[0], "r") __ command_file:
-                command = command_file.read()
+                command _ command_file.read()
 
-            command_widget = widgets.CommandWidget(
+            command_widget _ widgets.CommandWidget(
                 controller,
                 __.path.splitext(file_)[0], data["lang"], command,
                 data["icon"], data["color"]
@@ -154,7 +154,7 @@ c_ Scanner(object):
             ValueError: When the json file is non well formed.
 
         """
-        command_file = __.path.splitext(path)[0]
+        command_file _ __.path.splitext(path)[0]
         __ no. __.path.isfile(command_file):
             raise IOError("Skipping command due no to command file {}".f..(
                 path

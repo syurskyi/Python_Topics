@@ -10,41 +10,41 @@ print 'in my menu.py'
 
 # per Matthieu Cadet <matthieu.cadet@gmail.com> in nuke users email conversation
 #
-___ autoColorReadNodeType(overrideNode=N..):
+___ autoColorReadNodeType(overrideNode_N..):
        __ overrideNode __ N..:
-               this = ?.thisNode()
+               this _ ?.thisNode()
        ____
-               this = overrideNode
+               this _ overrideNode
        # get the Read node file name
-       thisFile = this["file"].evaluate()
+       thisFile _ this["file"].evaluate()
        # catch keyword in the filename path to set custom color
        __ "/wip/" __ thisFile:
-               nodeColor = 862912511
+               nodeColor _ 862912511
        ____ "/pub/" __ thisFile:
-               nodeColor = 4280356351
+               nodeColor _ 4280356351
        ____
-               nodeColor = 0
+               nodeColor _ 0
        # set the Read node custom color
        this["tile_color"].sV..(nodeColor)
-?.addKnobChanged(autoColorReadNodeType, nodeClass="Read")
+?.addKnobChanged(autoColorReadNodeType, nodeClass_"Read")
 
 # align selected nodes on a horizontal line, by Steve Molin
 #
 ___ sjmAlignH():
-  yresult = N..
+  yresult _ N..
   ___ n __ ?.sN..:
     __ yresult __ N..:
-      yresult = n.ypos()
+      yresult _ n.ypos()
     ____
       n.setYpos(yresult)
 #
 # align selected nodes on a vertical line, by Steve Molin
 #
 ___ sjmAlignV():
-  xresult = N..
+  xresult _ N..
   ___ n __ ?.sN..:
     __ xresult __ N..:
-      xresult = n.xpos()
+      xresult _ n.xpos()
     ____
       n.setXpos(xresult)
 
@@ -52,27 +52,27 @@ ___ sjmAlignV():
 #
 ___ sjmAutoBackdrop():
   ______ random
-  selNodes = ?.sN..
+  selNodes _ ?.sN..
   __ no. selNodes:
     r_ ?.nodes.BackdropNode()
   #
-  margin = 20
-  minWidth = 1000
-  minHeight = 200
+  margin _ 20
+  minWidth _ 1000
+  minHeight _ 200
   #
-  xmin = min([node.xpos() ___ node __ selNodes]) - margin
-  xmax = max([node.xpos() + node.screenWidth() ___ node __ selNodes]) + margin
-  xmin = min([xmin,(xmin+xmax-minWidth)/2])
-  xmax = max([xmax,(xmin+xmax+minWidth)/2])
+  xmin _ min([node.xpos() ___ node __ selNodes]) - margin
+  xmax _ max([node.xpos() + node.screenWidth() ___ node __ selNodes]) + margin
+  xmin _ min([xmin,(xmin+xmax-minWidth)/2])
+  xmax _ max([xmax,(xmin+xmax+minWidth)/2])
   #
-  ymin = min([node.ypos() ___ node __ selNodes]) - margin
-  ymax = max([node.ypos() + node.screenHeight() ___ node __ selNodes]) + margin
-  ymin = min([ymin,(ymin+ymax-minHeight)/2])
-  ymax = max([ymax,(ymin+ymax+minHeight)/2])
+  ymin _ min([node.ypos() ___ node __ selNodes]) - margin
+  ymax _ max([node.ypos() + node.screenHeight() ___ node __ selNodes]) + margin
+  ymin _ min([ymin,(ymin+ymax-minHeight)/2])
+  ymax _ max([ymax,(ymin+ymax+minHeight)/2])
   #
-  width = xmax-xmin
-  height = ymax-ymin
-  n = ?.nodes.BackdropNode(xpos = xmin, bdwidth = width, ypos = ymin, bdheight = height, tile_color = int((random.random()*(16 - 10))) + 10, note_font_size=99)
+  width _ xmax-xmin
+  height _ ymax-ymin
+  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, ypos _ ymin, bdheight _ height, tile_color _ int((random.random()*(16 - 10))) + 10, note_font_size_99)
   n.showControlPanel()
   #
   # restore node selection
@@ -88,21 +88,21 @@ ___ sjmBackdropFonts():
   ___ i __ ?.allNodes():
     __ i.__class__.__name__ __ 'BackdropNode':
       i.knob('note_font_size').sV..(189)
-      k = i.knob('label')
+      k _ i.knob('label')
       k.setText(k.getText().upper())
 
 # Walk the heirarchy up from selected node and return a set of
 # all nodes that have the 'file' attribute
 #
-___ sjmFindAllParentReads(n=N..):
+___ sjmFindAllParentReads(n_N..):
   __ n __ N..:
-    n = ?.sN__
-  result = []
+    n _ ?.sN__
+  result _ []
   __ n.knob('file'):
     result.ap..(n)
-  ins = n.inputs()
+  ins _ n.inputs()
   ___ i __ ra..(0,n.inputs()):
-    input = n.input(i)
+    input _ n.input(i)
     __ input:
       __ input.knob('file'):
         result.ap..(input)
@@ -121,12 +121,12 @@ ___ sjmHideInputsOff():
 #
 # by steve molin
 #
-___ sjmOpenInViewer(nd=N..):
+___ sjmOpenInViewer(nd_N..):
   ______ subprocess
   __ nd __ N..:
-    nd = ?.sN__
-  fp = nd.knobs()['file'].v.. % nd.firstFrame()
-  args = 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp
+    nd _ ?.sN__
+  fp _ nd.knobs()['file'].v.. % nd.firstFrame()
+  args _ 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp
   subprocess.P..(args)
 
 # load the targets of the writeNodes in a viewer (djv):
@@ -144,20 +144,20 @@ ___ sjmOpenAllInViewer():
 
 # step through 'operation' values on a merge node
 ___ sjmMergeOpIncr():
-  sn = ?.sN__
-  kn = sn.knobs()['operation']
+  sn _ ?.sN__
+  kn _ sn.knobs()['operation']
   kn.sV..(kn.values().index(kn.value())+1)
 ___ sjmMergeOpDecr():
-  sn = ?.sN__
-  kn = sn.knobs()['operation']
+  sn _ ?.sN__
+  kn _ sn.knobs()['operation']
   kn.sV..(kn.values().index(kn.value())-1)
 
 # use $gui to disable slow nodes when working interactively
 #
 ___ sjmToggleDisableExpression():
-  mynodes = ?.sN..
+  mynodes _ ?.sN..
   ___ mynode __ mynodes:
-    myknob = mynode['disable']
+    myknob _ mynode['disable']
     __ myknob.isAnimated():
       myknob.cA..
       myknob.sV..(0)
@@ -177,7 +177,7 @@ ___ sjmToggleSwitch():
 # and http://docs.thefoundry.co.uk/nuke/63/pythondevguide/custom_panels.html
 #
 ___ testMyDialog():
-	p=?.Panel('my custom panel')
+	p_?.Panel('my custom panel')
 	p.addClipnameSearch('clip path', '/tmp')
 	p.addFilenameSearch('file path', '/tmp')
 	p.addTextFontPulldown('font browser', '/myFonts/')
@@ -193,7 +193,7 @@ ___ testMyDialog():
 	p.addButton('over')
 	p.addButton('under')
 	p.addButton('mask')
-	result=p.s__
+	result_p.s__
 	print result
 
 # from http://docs.thefoundry.co.uk/nuke/63/pythondevguide/custom_panels.html
@@ -213,22 +213,22 @@ ___
   #
   c_ WebBrowserWidget(?W..):
     ___ changeLocation
-      url = locationEdit.t..
+      url _ locationEdit.t..
       __ no. url.startswith( 'http://' ):
-        url = 'http://' + url
+        url _ 'http://' + url
       webView.load( QUrl(url) )
     ___ urlChanged(self, url):
       locationEdit.setText( url.toString() )
     ___  -
       ?W... - (self)
-      webView = QWebView()
+      webView _ QWebView()
       sL..( ?VB.. )
-      locationEdit = QLineEdit( 'http://www.google.com' )
+      locationEdit _ QLineEdit( 'http://www.google.com' )
       locationEdit.setSizePolicy( QSizePolicy.Expanding, locationEdit.sizePolicy().verticalPolicy() )
       QObject.c..( locationEdit, SIGNAL('returnPressed()'),  changeLocation )
       QObject.c..( webView,   SIGNAL('urlChanged(QUrl)'),     urlChanged )
       layout().aW..( locationEdit )
-      bar = QToolBar()
+      bar _ QToolBar()
       bar.addAction( webView.pageAction(QWebPage.Back))
       bar.addAction( webView.pageAction(QWebPage.Forward))
       bar.addAction( webView.pageAction(QWebPage.Stop))
@@ -236,17 +236,17 @@ ___
       bar.addSeparator()
       layout().aW..( bar )
       layout().aW..( webView )
-      url = 'http://www.thefoundry.co.uk/' 
+      url _ 'http://www.thefoundry.co.uk/'
       webView.load( QUrl( url ) )
       locationEdit.setText( url )
       setSizePolicy( QSizePolicy( QSizePolicy.Expanding,  QSizePolicy.Expanding))
   #
   ## make this work in a .py file and in 'copy and paste' into the script editor
-  moduleName = __name__
+  moduleName _ __name__
   __ moduleName __ '__main__':
-    moduleName = ''
+    moduleName _ ''
   ____
-    moduleName = moduleName + '.'
+    moduleName _ moduleName + '.'
   panels.rWAP..( moduleName + 'WebBrowserWidget', 'Web Browser','uk.co.thefoundry.WebBrowserWidget')
 except ImportError:
   pass
@@ -273,7 +273,7 @@ except ImportError:
 
 # Add a personal menu to the top menu bar
 #
-m_keybindings = ?.menu('Nuke').aM..("Smolin")
+m_keybindings _ ?.menu('Nuke').aM..("Smolin")
 m_keybindings.aC..('mergeStencil', 'nuke.createNode("Merge2","operation stencil")', 'Ctrl+Meta+S')
 m_keybindings.aC..('colorLookup aka curve lookup','nuke.createNode("ColorLookup")', 'Ctrl+Meta+L')
 m_keybindings.aC..('sjmToggleDisableExpression','sjmToggleDisableExpression()', 'Ctrl+Meta+G')

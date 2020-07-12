@@ -10,18 +10,18 @@ ____
     ____ ?.?G.. ______ _
 
 c_ Global_clipboard(QDialog):
-    ___  - (self, parent=N..):
+    ___  - (self, parent_N..):
         s_(Global_clipboard, self). - (parent)
 
         # Create widgets
-        label = ?L..("First initial and last name:")
-        edit = QLineEdit()
-        completer = QCompleter()
+        label _ ?L..("First initial and last name:")
+        edit _ QLineEdit()
+        completer _ QCompleter()
         edit.setCompleter(completer)
-        button = ?PB..("OK")
+        button _ ?PB..("OK")
 
         # Create layout and add widgets
-        layout = ?VB..
+        layout _ ?VB..
         layout.aW..(label)
         layout.aW..(edit)
         layout.aW..(button)
@@ -40,28 +40,28 @@ c_ Global_clipboard(QDialog):
 
     ___ get_data
         __ __.name __ "nt":
-            repo = "R:/Global_Clipboard/"
+            repo _ "R:/Global_Clipboard/"
         ____
-            repo = "/Volumes/Resources/Global_Clipboard/"
+            repo _ "/Volumes/Resources/Global_Clipboard/"
             __ __.path.exists(repo) __ F..:
-                repo = "/Volumes/resources/Global_Clipboard/"
+                repo _ "/Volumes/resources/Global_Clipboard/"
 
-        saveName = "tempClipBoard"
-        user_list = []
+        saveName _ "tempClipBoard"
+        user_list _ []
 
         ___ full_filename __ __.listdir(repo):
-            filename, file_extension = __.path.splitext(full_filename)
-            username = filename.replace("tempClipBoard_", "")
+            filename, file_extension _ __.path.splitext(full_filename)
+            username _ filename.replace("tempClipBoard_", "")
             user_list.ap..(username)
 
         user_list.remove(".DS_Store")
         print user_list
-        qul = QStringListModel()
+        qul _ QStringListModel()
         completer.setModel(qul)
         qul.setStringList(user_list)
 
     ___ paste
-        loadPath = "{}{}_{}.nk".f..(repo, saveName, edit.text())
+        loadPath _ "{}{}_{}.nk".f..(repo, saveName, edit.text())
         __ __.path.exists(loadPath):
             ?.nodePaste(loadPath)
             c__
@@ -70,5 +70,5 @@ c_ Global_clipboard(QDialog):
 
 ___ main():
     # Create and show the form
-    clipboard = Global_clipboard()
+    clipboard _ Global_clipboard()
     clipboard.exec_()

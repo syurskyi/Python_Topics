@@ -1,12 +1,12 @@
 # add inside exists tab
 
-gpr_start = ?.Tab_Knob('pr', 'Prefs', ?.TABBEGINGROUP)
-k = ?.String_Knob('prefs', 'Preferences')
-gpr_end = ?.Tab_Knob('', '', ?.TABENDGROUP)
+gpr_start _ ?.T_K..('pr', 'Prefs', ?.TAB..)
+k _ ?.String_Knob('prefs', 'Preferences')
+gpr_end _ ?.T_K..('', '', ?.TABENDGROUP)
 
-node.addKnob(gpr_start)
-node.addKnob(k)
-node.addKnob(gpr_end)
+node.aK..(gpr_start)
+node.aK..(k)
+node.aK..(gpr_end)
 
-gpr_start.setFlag(?.INVISIBLE)
-k.setFlag(?.INVISIBLE)
+gpr_start.sF..(?.INVISIBLE)
+k.sF..(?.INVISIBLE)

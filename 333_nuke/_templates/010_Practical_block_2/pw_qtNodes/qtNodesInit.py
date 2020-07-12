@@ -15,11 +15,11 @@ ______ qtNodes
 
 
 ___ getMainWindow():
-    qApp = ?A...ins..)
+    qApp _ ?A...ins..)
     ___ widget __ qApp.tLW..
         __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
             r_ widget
-qNuke = getMainWindow()
+qNuke _ getMainWindow()
 
 c_ eventFilterWindowClass(QObject):
     ___ eventFilter(self, obj, ev):
@@ -28,9 +28,9 @@ c_ eventFilterWindowClass(QObject):
         r_ F..
         
     ___ processNode(self, n):
-        nukeNode = ?.toNode( str(n.objectName()) )
+        nukeNode _ ?.toNode( str(n.objectName()) )
         __ nukeNode:
-            nodeClass = nukeNode.Class()
+            nodeClass _ nukeNode.Class()
             __ nodeClass __ dir(qtNodes):
                 getattr(qtNodes, nodeClass)(n)
 
@@ -44,6 +44,6 @@ c_ eventFilterWindowClass(QObject):
 
         # nuke.tprint('\nAdd callback\n')   
         
-evFilterWind = eventFilterWindowClass()
+evFilterWind _ eventFilterWindowClass()
 # nuke.addOnCreate(getMainWindow)
 qNuke.installEventFilter(evFilterWind)

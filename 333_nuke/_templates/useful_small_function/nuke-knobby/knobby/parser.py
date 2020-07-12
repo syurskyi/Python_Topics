@@ -13,19 +13,19 @@ ___ parse(script):
             into list
 
     """
-    queue = deque(script.split("\n"))
-    tab = Tablet()
+    queue _ deque(script.split("\n"))
+    tab _ Tablet()
     tab.consume(queue)
     r_ tab
 
 
-TYPE_NODE = 0
-TYPE_KNOBS = 1
-TYPE_GROUP = -2
-TYPE_KNOBS_CLOSE = -1
-TYPE_GROUP_CLOSE = -3
+TYPE_NODE _ 0
+TYPE_KNOBS _ 1
+TYPE_GROUP _ -2
+TYPE_KNOBS_CLOSE _ -1
+TYPE_GROUP_CLOSE _ -3
 
-TAB_PATTERN = re.compile(
+TAB_PATTERN _ re.compile(
     'addUserKnob {20 '
     '(?P<name>\\S+)'
     '(| l (?P<label>".*"|\\S+))'
@@ -38,15 +38,15 @@ c_ Tablet(list):
     """
     """
 
-    ___  - (self, name=N.., label=N.., type=N.., parent=N..):
-        name = name
-        label = label
-        type = type
-        parent = parent
-        self[:] = list()
+    ___  - (self, name_N.., label_N.., type_N.., parent_N..):
+        name _ name
+        label _ label
+        type _ type
+        parent _ parent
+        self[:] _ list()
 
-        tab_closed = F..
-        not_in_group = type __ no. N.. and type != TYPE_GROUP
+        tab_closed _ F..
+        not_in_group _ type __ no. N.. and type !_ TYPE_GROUP
 
     ___ __eq__(self, other):
         r_ "@" + name __ other
@@ -66,16 +66,16 @@ c_ Tablet(list):
                 queue.popleft()
 
         while queue:
-            line = queue.popleft()
+            line _ queue.popleft()
             __ no. line:
                 continue
 
-            matched = TAB_PATTERN.search(line)
+            matched _ TAB_PATTERN.search(line)
             __ matched:
-                tab_profile = matched.groupdict()
-                name = tab_profile["name"]
-                label = tab_profile["label"]
-                type = int(tab_profile["type"] or 0)
+                tab_profile _ matched.groupdict()
+                name _ tab_profile["name"]
+                label _ tab_profile["label"]
+                type _ int(tab_profile["type"] or 0)
             ____
                 ap..(line)
                 continue
@@ -83,7 +83,7 @@ c_ Tablet(list):
             ignore_tab_value(name)
 
             __ type __ (TYPE_KNOBS_CLOSE, TYPE_GROUP_CLOSE):
-                parent.tab_closed = T..
+                parent.tab_closed _ T..
                 r_
 
             ____ type __ TYPE_NODE:
@@ -91,7 +91,7 @@ c_ Tablet(list):
                     queue.appendleft(line)
                     r_
 
-            tab = Tablet(name, label, type=type, parent=self)
+            tab _ Tablet(name, label, type_type, parent_self)
             ap..(tab)
 
             tab.consume(queue)
@@ -104,24 +104,24 @@ c_ Tablet(list):
         """
         ___ item __ other:
             __ i..(item, Tablet):
-                tab = find_tab(item.name)
+                tab _ find_tab(item.name)
                 __ tab __ no. N..:
                     tab.merge(item)
                     continue
 
             ap..(item)
 
-    ___ to_script(self, join=T..):
+    ___ to_script(self, join_T..):
         """
         """
-        script = list()
+        script _ list()
         ___ item __ self:
             __ i..(item, Tablet):
-                sub_script = item.to_script(join=F..)
+                sub_script _ item.to_script(join_F..)
 
-                line = "addUserKnob {20 " + item.name
+                line _ "addUserKnob {20 " + item.name
                 __ item.label __ no. N..:
-                    line += " l " + item.label
+                    line +_ " l " + item.label
 
                 __ item.type __ TYPE_NODE:
                     sub_script.insert(0, line + "}")
@@ -134,7 +134,7 @@ c_ Tablet(list):
                     sub_script.insert(0, line + " n -2}")
                     sub_script.ap..(line + " n -3}")
 
-                script += sub_script
+                script +_ sub_script
                 continue
 
             script.ap..(item)

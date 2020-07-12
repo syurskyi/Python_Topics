@@ -13,17 +13,17 @@ ____ dd.runtime.api ______ relativeImport, load
 ____ dd.runtime ______ info
 load('ddlogger')
 ______ ddlogger
-LOGGER = ddlogger.getLogger('getfromnode')
+LOGGER _ ddlogger.getLogger('getfromnode')
 
 load('nukepipeline')
-__ info.getVersionToBeLoaded("nukepipeline") >= "3.1.0":
+__ info.getVersionToBeLoaded("nukepipeline") >_ "3.1.0":
     relativeImport('matchnode', 'nukepipeline/common/utils')
 ____
     relativeImport('matchnode', 'common/utils')
 ____ matchnode ______ byClass
 
 
-___ filePath(node=N.., proxy=F.., regex=N.., force_match=T..):
+___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -31,32 +31,32 @@ ___ filePath(node=N.., proxy=F.., regex=N.., force_match=T..):
     Class() fits the pattern
     """
     
-    result = N..
+    result _ N..
 
     # check node, use selected Node in dag if no arg
     __ no. node:
-        node = ?.sN__
+        node _ ?.sN__
         
     # check for regex, eliminate non-matching node
     __ regex:
         __ no. byClass(node, regex, force_match):
-            node = N..
+            node _ N..
     
     # check for node elimination
     __ node:
         ___
-            my_knob = node.knob('file')
+            my_knob _ node.knob('file')
             ___
                 # attempt to get file knob from linked (gizmos < 5.2v1)
-                result = my_knob.getLinkedKnob().getValue()
+                result _ my_knob.getLinkedKnob().getValue()
             except AttributeError:
                 # attempt to get file knob value directly (gizmos >= 5.2v1)
-                result = my_knob.getValue()
+                result _ my_knob.getValue()
             # end try
         except AttributeError:
             ___
                 # grab filename directly from node with nuke.filename
-                result = ?.filename(node)
+                result _ ?.filename(node)
             except NameError:
                 # do nothing if nuke.filename errors out (earlier Nuke version)
                 pass
@@ -72,24 +72,24 @@ ___ filePath(node=N.., proxy=F.., regex=N.., force_match=T..):
                     ___
                         # attempt to get proxy knob from linked (gizmos < 5.2v1)
                         __ node.getLinkedKnob().knob('proxy').v..:
-                            result = node.getLinkedKnob().knob('proxy').v..
+                            result _ node.getLinkedKnob().knob('proxy').v..
                     except AttributeError:
                         # attempt to get proxy knob value directly (gizmos >= 5.2v
                         __ node.knob('proxy').v..:
-                            result = node.knob('proxy').v..
+                            result _ node.knob('proxy').v..
         # end if
 
         # check if a TCL expression might exist in the result (ie: containts [{($)}])
 
-        expression_check = re.search('[\[\{\(\]\}\)\$]', str(result))
+        expression_check _ re.search('[\[\{\(\]\}\)\$]', str(result))
         # if an expression might exist, attempt to evaluate
         __ expression_check:
             # make a copy of the result to process
-            eval_result = result
+            eval_result _ result
 
             # create a tmp write node to do the evaluation in
             # if you can figure out a better way to evaluate as Nuke does, be my guest
-            tmp = ?.createNode('Write', inpanel=F..)
+            tmp _ ?.createNode('Write', inpanel_F..)
 
             ___
                 # LOGIC (IF ANY) BEHIND THE FOLLOWING:
@@ -106,33 +106,33 @@ ___ filePath(node=N.., proxy=F.., regex=N.., force_match=T..):
                 # we're hosed.
 
                 # we need the %v or %V variable to remain unevaluated
-                view_test = re.search('(%[V|v])', eval_result)
+                view_test _ re.search('(%[V|v])', eval_result)
                 # if it exists, log old value and replace with !VIEW! placeholder
                 __ view_test:
-                    old_view = view_test.groups()[0]
-                    eval_result = re.sub(old_view, '!VIEW!', eval_result)
+                    old_view _ view_test.groups()[0]
+                    eval_result _ re.sub(old_view, '!VIEW!', eval_result)
 
                 # we need the %d frame range variable to remain unevaluated
-                range_test = re.search('(%[0-9]+d)', eval_result)
+                range_test _ re.search('(%[0-9]+d)', eval_result)
                 # if it exists, log old value and replace with !RANGE! placeholder
                 __ range_test:
-                    old_range = range_test.groups()[0]
-                    eval_result = re.sub(old_range, '!RANGE!', eval_result)
+                    old_range _ range_test.groups()[0]
+                    eval_result _ re.sub(old_range, '!RANGE!', eval_result)
 
                 # let nuke do the actual evaluation work
                 tmp.knob('file').sV..(eval_result)
-                eval_result = tmp.knob('file').evaluate()
+                eval_result _ tmp.knob('file').evaluate()
 
                 # put the stored range variable back
                 __ range_test:
-                    eval_result = re.sub('!RANGE!', old_range, eval_result)
+                    eval_result _ re.sub('!RANGE!', old_range, eval_result)
 
                 # put the stored view variable back
                 __ view_test:
-                    eval_result = re.sub('!VIEW!', old_view, eval_result)
+                    eval_result _ re.sub('!VIEW!', old_view, eval_result)
 
                 # evaluation succeeded
-                result = eval_result
+                result _ eval_result
             ______
                 # evaluation failed, leave result alone and let the gods sort it out
                 pass
@@ -140,8 +140,8 @@ ___ filePath(node=N.., proxy=F.., regex=N.., force_match=T..):
                 # one way or another, clean up the tmp node
                 ?.delete(tmp)
 
-    __ result != N..:
-        result = dd.xplatform.xpath(__.path.n_p_(result))
+    __ result !_ N..:
+        result _ dd.xplatform.xpath(__.path.n_p_(result))
         LOGGER.debug('Discovered path %s for node %s' % (
             result, node.knob('name').value()))
         r_ result
@@ -151,7 +151,7 @@ ___ filePath(node=N.., proxy=F.., regex=N.., force_match=T..):
 # end filePath
    
 
-___ filePathWithRange(node=N.., proxy=F.., regex=N.., force_match=T..):
+___ filePathWithRange(node_N.., proxy_F.., regex_N.., force_match_T..):
     
     """
     Retrieves the file path of any node that has one associated with it.
@@ -159,30 +159,30 @@ ___ filePathWithRange(node=N.., proxy=F.., regex=N.., force_match=T..):
     Class() fits the pattern.
     """
     
-    result = N..
+    result _ N..
 
     # check node, use selected Node in DAG if no arg
     __ no. node:
-        node = ?.sN__
+        node _ ?.sN__
 
     # check node again (in case user has no selection made)
     # get file path from node
     __ node:
-        path = filePath(node, proxy, regex, force_match)
+        path _ filePath(node, proxy, regex, force_match)
         # if file path found, append frame range data
         # use getseq instad of root range
         # makes more sense eh? #61881 / #64178
         __ path:
-            first_frame, last_frame = getseq.getRange(path)
+            first_frame, last_frame _ getseq.getRange(path)
             LOGGER.debug('Discovered range of %s-%s' % (first_frame, last_frame))
-            result = '%s %s-%s' % (path, first_frame, last_frame)
+            result _ '%s %s-%s' % (path, first_frame, last_frame)
 
     # return the path and range discovered
     r_ result
 #  end filePathWithRange
 
 
-___ filePaths(no__=N.., proxy=F.., regex=N.., force_match=T..):
+___ filePaths(no___N.., proxy_F.., regex_N.., force_match_T..):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -190,11 +190,11 @@ ___ filePaths(no__=N.., proxy=F.., regex=N.., force_match=T..):
     nodes whose Class() matches the pattern.
     """
     
-    result = []
+    result _ []
 
     # check nodes, use selected Nodes in DAG if no arg
     __ no. nodes:
-        nodes = ?.sN..
+        nodes _ ?.sN..
 
     # loop through nodes and get path for each Node
     ___ i __ nodes:
@@ -207,7 +207,7 @@ ___ filePaths(no__=N.., proxy=F.., regex=N.., force_match=T..):
 # end filePaths
 
 
-___ filePathsWithRanges(nodes=N.., proxy=F.., regex=N.., force_match=T..):
+___ filePathsWithRanges(nodes_N.., proxy_F.., regex_N.., force_match_T..):
     
     """
     Returns a list of the file paths (if any) associated with the nodes in the
@@ -215,16 +215,16 @@ ___ filePathsWithRanges(nodes=N.., proxy=F.., regex=N.., force_match=T..):
     nodes whose Class() matches the pattern.
     """
     
-    result = []
+    result _ []
 
     # check nodes, use selected Nodes in DAG if no arg
     __ no. nodes:
-        nodes = ?.sN..
+        nodes _ ?.sN..
 
     # loop through nodes and get path and range for each Node
     ___ i __ nodes:
         ___
-            ra.. = filePathWithRange(i, proxy, regex, force_match)
+            ra.. _ filePathWithRange(i, proxy, regex, force_match)
             __ ra..:
                 result.ap..(ra..)
         except AttributeError:
@@ -237,7 +237,7 @@ ___ fileType(node):
     """
     Returns the file extension of the node given
     """
-    result = __.path.splitext(filePath(node))[1].lstrip('.')
+    result _ __.path.splitext(filePath(node))[1].lstrip('.')
     LOGGER.debug('Filetype for node %s is %s' % (node.knob('name').v.., result))
     r_ result
 # end fileType
@@ -248,33 +248,33 @@ ___ f..(node):
     Returns the format of the specified Node, if in the nuke.formats() list
     """
     
-    my_format = N..
+    my_format _ N..
     
     # check for node; default to selected Node in DAG if no arg
     __ no. node:
-        node = ?.sN__
+        node _ ?.sN__
     # endif
 
     # check for Node again (see if user has failed to make selection)
     __ node:
         # grab height from node
-        my_height = node.height()
+        my_height _ node.height()
         
         # grab width from node
-        my_width = node.width()
+        my_width _ node.width()
         
         # grab pixel aspect ratio from node as float
-        my_pixel_aspect = float(?.value('%s.pixel_aspect' % node.fullName()))
+        my_pixel_aspect _ float(?.value('%s.pixel_aspect' % node.fullName()))
         
         # this is the format to search for
-        my_format = (my_height, my_width, my_pixel_aspect)
+        my_format _ (my_height, my_width, my_pixel_aspect)
         
         # scan nuke.formats for matching format
         ___ i __ ?.formats():
-            thisFormat = (i.height(), i.width(), i.pixelAspect())
+            thisFormat _ (i.height(), i.width(), i.pixelAspect())
             # if matching format found, assign my_format to the match
             __ thisFormat __ my_format:
-                my_format = i
+                my_format _ i
                 break
                 
     # return whatever is the current value of my_format

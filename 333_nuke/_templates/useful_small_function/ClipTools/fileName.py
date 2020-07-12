@@ -10,16 +10,16 @@ ______ __
 ______ glob
 
 ___ rename(files, pathToFile, search, replace, verbose):
-    count=0
+    count_0
     ___
         ___ f __ files:
-            pf = pathToFile+'/'+f                                # add path to source file
-            r = f.replace(search, replace)                  # sets up the replace list for the files only
-            pr = pathToFile+'/'+r                              # add path or replace file
+            pf _ pathToFile+'/'+f                                # add path to source file
+            r _ f.replace(search, replace)                  # sets up the replace list for the files only
+            pr _ pathToFile+'/'+r                              # add path or replace file
             __ (verbose):
                 print ( "Renaming "+str(pf)+" to "+str(pr))          # return a debug output - command line
             __.rename(pf, pr)
-            count += 1
+            count +_ 1
     except OSError:
         r_ 0
     __ (verbose):
@@ -27,13 +27,13 @@ ___ rename(files, pathToFile, search, replace, verbose):
 
 
 ___ delete(files, verbose):
-    count=0
+    count_0
     ___
         ___ f __ files:
             __ (verbose):
                 print "deleting "+f                             #return a useful output - command line
             __.remove(f)
-            count += 1
+            count +_ 1
     ______
         r_ 1
 

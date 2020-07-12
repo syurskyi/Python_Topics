@@ -10,13 +10,13 @@ __ ?.NUKE_VERSION_MAJOR < 11:
 ____
     ____ ? ______ ?W..
 ____ smartShelves ______ templates
-_LOCK_DELIMITER = ','
-_LOCK_LIST = 'CRAGL_SMARTSHELVES_LOCKS'
+_LOCK_DELIMITER _ ','
+_LOCK_LIST _ 'CRAGL_SMARTSHELVES_LOCKS'
 
 ___ load_icons():
-    this_dir = __.path.dirname( -f)
-    dir_icon = __.path.join(this_dir, 'icons')
-    dir_icon = __.path.n_p_(dir_icon)
+    this_dir _ __.path.dirname( -f)
+    dir_icon _ __.path.join(this_dir, 'icons')
+    dir_icon _ __.path.n_p_(dir_icon)
     r_ {'icon_logo': __.path.join(dir_icon, 'logo.png'),
      'about': __.path.join(dir_icon, 'about.jpg'),
      'icon_folder': __.path.join(dir_icon, 'folder.png'),
@@ -39,20 +39,20 @@ ___ show_message_box(window, m..):
 
 
 ___ get_installed_root_dir():
-    this_dir = __.path.join(__.path.dirname( -f))
-    root = __.path.join(this_dir, '../', '../')
+    this_dir _ __.path.join(__.path.dirname( -f))
+    root _ __.path.join(this_dir, '../', '../')
     r_ __.path.n_p_(root)
 
 
 ___ get_smartshelves_private_dir():
-    dir_ = __.path.join(__.path.expanduser('~'), '.cragl', 'smartShelves')
+    dir_ _ __.path.join(__.path.expanduser('~'), '.cragl', 'smartShelves')
     __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
     r_ dir_
 
 
 ___ get_smartshelves_public_dir():
-    dir_ = __.path.join(__.path.expanduser('~'), 'cragl', 'smartShelves')
+    dir_ _ __.path.join(__.path.expanduser('~'), 'cragl', 'smartShelves')
     __ no. __.path.isdir(dir_):
         __.makedirs(dir_)
     r_ dir_
@@ -73,19 +73,19 @@ ___ open_website(url):
 
 
 ___ get_log_file():
-    connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
+    connect_dir _ __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
     __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
-    log_file = __.path.join(connect_dir, 'connectlog.txt')
+    log_file _ __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
         w__ o..(log_file, 'w') __ lf:
-            log_template = templates.LOG
+            log_template _ templates.LOG
             lf.write(log_template)
     r_ log_file
 
 
-___ write_log(text, tool = 'sh'):
-    logtime = ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
+___ write_log(text, tool _ 'sh'):
+    logtime _ ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
     ___
         w__ o..(get_log_file(), 'a') __ s:
             s.write('{}: {} {}\n'.f..(logtime, tool, text))
@@ -95,9 +95,9 @@ ___ write_log(text, tool = 'sh'):
 
 
 ___ set_style_sheet(widget):
-    this_dir = __.path.dirname( -f)
-    styles_nuke = __.path.join(this_dir, 'styles', 'nuke.qss')
-    styles_nuke = __.path.n_p_(styles_nuke)
+    this_dir _ __.path.dirname( -f)
+    styles_nuke _ __.path.join(this_dir, 'styles', 'nuke.qss')
+    styles_nuke _ __.path.n_p_(styles_nuke)
     __ __.path.isfile(styles_nuke):
         w__ o..(styles_nuke) __ file_:
             widget.setStyleSheet(file_.read())
@@ -112,19 +112,19 @@ ___ get_settings_xml():
 
 
 ___ load_settings():
-    xml = get_settings_xml()
-    tree = ET.parse(xml)
-    root = tree.getroot()
-    settings = {}
+    xml _ get_settings_xml()
+    tree _ ET.parse(xml)
+    root _ tree.getroot()
+    settings _ {}
     ___ setting __ root.find('settings').f_a_('setting'):
-        settings[setting.get('name')] = setting.text
+        settings[setting.get('name')] _ setting.text
 
     r_ settings
 
 
 ___ paste_script(name):
     ___ plugin_path __ ?.pluginPath():
-        path = __.path.join(plugin_path, '{}.nk'.f..(name))
+        path _ __.path.join(plugin_path, '{}.nk'.f..(name))
         __ __.path.isfile(path):
             ?.nodePaste(path)
             r_
@@ -134,20 +134,20 @@ ___ paste_script(name):
 
 ___ add_to_lock(pw):
     __ no. __.environ.get(_LOCK_LIST):
-        __.environ[_LOCK_LIST] = ''
-    unlocked = [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
+        __.environ[_LOCK_LIST] _ ''
+    unlocked _ [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         r_
     __ no. pw:
         r_
     unlocked.ap..(pw)
-    __.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)
+    __.environ[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)
 
 
 ___ remove_from_lock(pw):
     __ no. __.environ.get(_LOCK_LIST):
-        __.environ[_LOCK_LIST] = ''
-    unlocked = [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
+        __.environ[_LOCK_LIST] _ ''
+    unlocked _ [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         unlocked.remove(pw)
-    __.environ[_LOCK_LIST] = _LOCK_DELIMITER.join(unlocked)
+    __.environ[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)

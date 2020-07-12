@@ -96,7 +96,7 @@ ______ ?  # pylint: disable=______-error
 ____ smartRescue.base_steps ______ NodeStep
 
 # Template to use for info creation.
-_TEMPLATE = """Report for {working_file_name}
+_TEMPLATE _ """Report for {working_file_name}
 Generated {date}
 {separator}
 Frame range: {first_frame}-{last_frame}
@@ -119,7 +119,7 @@ c_ ScriptInfo(NodeStep):
     # All possible knob values that store paths. In most cases a path is stored
     # in the 'file' knob, but there are exceptions, e.g. for the node classes
     # 'BlinkScript', 'ScannedGrain', 'Vectorfield', etc.
-    path_knobs = (
+    path_knobs _ (
         "file",
         "vfield_file",
         "kernelSourceFile",
@@ -138,7 +138,7 @@ c_ ScriptInfo(NodeStep):
         r_ "{:%Y/%m/%d - %H:%M:%S}".f..(d_t_.d_t_.now())
 
     @staticmethod
-    ___ number_nodes(recursive=F..):
+    ___ number_nodes(recursive_F..):
         """Return the total number of nodes.
 
         Args:
@@ -149,7 +149,7 @@ c_ ScriptInfo(NodeStep):
             int: The total number of nodes.
 
         """
-        r_ le.(?.allNodes(recurseGroups=recursive))
+        r_ le.(?.allNodes(recurseGroups_recursive))
 
     @staticmethod
     ___ frame_range():
@@ -159,8 +159,8 @@ c_ ScriptInfo(NodeStep):
             int, int, The first and last frame of the working file.
 
         """
-        first_frame = int(?.root()["first_frame"].value())
-        last_frame = int(?.root()["last_frame"].value())
+        first_frame _ int(?.root()["first_frame"].value())
+        last_frame _ int(?.root()["last_frame"].value())
         r_ first_frame, last_frame
 
     ___ root_values
@@ -193,8 +193,8 @@ c_ ScriptInfo(NodeStep):
 
             """
             __ knob_name __ "format":
-                format_ = "{} ({}x{} {})"
-                format_knob = knob.v..
+                format_ _ "{} ({}x{} {})"
+                format_knob _ knob.v..
                 r_ format_.f..(format_knob.name(), format_knob.width(),
                                       format_knob.height(),
                                       format_knob.pixelAspect())
@@ -203,13 +203,13 @@ c_ ScriptInfo(NodeStep):
             #     # Extract values.
             r_ knob.v.. or "---"
 
-        root_values = []
+        root_values _ []
         ___ knob_name __ setup["root_info"]:
-            knob = ?.root().knob(knob_name)
+            knob _ ?.root().knob(knob_name)
             __ no. knob:
                 continue
 
-            value = _format_value(knob_name, knob)
+            value _ _format_value(knob_name, knob)
             root_values.ap..((knob_name, value))
 
         r_ tuple(root_values)
@@ -232,13 +232,13 @@ c_ ScriptInfo(NodeStep):
                 )
 
         """
-        footage = []
-        ___ node __ ?.allNodes(recurseGroups=T..):
+        footage _ []
+        ___ node __ ?.allNodes(recurseGroups_T..):
             ___ knob_name __ path_knobs:
-                path_knob = node.knob(knob_name)
+                path_knob _ node.knob(knob_name)
                 __ no. path_knob:
                     continue
-                path = path_knob.evaluate() or "---"
+                path _ path_knob.evaluate() or "---"
                 footage.ap..((node.name(), path))
 
         r_ tuple(footage)
@@ -251,7 +251,7 @@ c_ ScriptInfo(NodeStep):
             set: All node classes
 
         """
-        all_nodes = ?.allNodes(recurseGroups=T..)
+        all_nodes _ ?.allNodes(recurseGroups_T..)
         r_ sorted(set(node.Class() ___ node __ all_nodes))
 
     ___ len_nodes_by_class
@@ -272,18 +272,18 @@ c_ ScriptInfo(NodeStep):
                 )
 
         """
-        stats = []
-        list_node_classes = setup["number_nodes_by_class"]
+        stats _ []
+        list_node_classes _ setup["number_nodes_by_class"]
         __ list_node_classes:
-            node_classes = list_node_classes
+            node_classes _ list_node_classes
         ____
-            node_classes = all_node_classes()
+            node_classes _ all_node_classes()
 
         ___ node_class __ sorted(node_classes):
-            counter = 0
-            ___ node __ ?.allNodes(recurseGroups=T..):
+            counter _ 0
+            ___ node __ ?.allNodes(recurseGroups_T..):
                 __ node.Class() __ node_class:
-                    counter += 1
+                    counter +_ 1
             stats.ap..((node_class, counter))
 
         r_ tuple(stats)
@@ -305,37 +305,37 @@ c_ ScriptInfo(NodeStep):
 
     ___ process
         """Generate the working file info."""
-        copy_basename = "{}_info.txt".f..(basename)
-        info_path = __.path.join(parent_dir, copy_basename)
+        copy_basename _ "{}_info.txt".f..(basename)
+        info_path _ __.path.join(parent_dir, copy_basename)
 
         logger.info("Creating information file %s", info_path)
 
         w__ o..(info_path, "w") __ dest:
-            separator = "-" * 50
-            first_frame, last_frame = frame_range()
-            root_values = "\n".join(
+            separator _ "-" * 50
+            first_frame, last_frame _ frame_range()
+            root_values _ "\n".join(
                 [tuple_to_human_readable(root_value)
                  ___ root_value __ root_values()]
             )
-            footages = "\n".join(
+            footages _ "\n".join(
                 [tuple_to_human_readable(footage)
                  ___ footage __ footage_paths()]
             )
-            node_classes_stats = "\n".join(
+            node_classes_stats _ "\n".join(
                 [tuple_to_human_readable(stat)
                  ___ stat __ len_nodes_by_class()]
             )
 
-            content = _TEMPLATE.f..(
-                working_file_name=basename,
-                date=date,
-                separator=separator,
-                first_frame=first_frame,
-                last_frame=last_frame,
-                root_values=root_values,
-                number_nodes=number_nodes(),
-                number_nodes_recursive=number_nodes(recursive=T..),
-                footages=footages,
-                node_classes_stats=node_classes_stats
+            content _ _TEMPLATE.f..(
+                working_file_name_basename,
+                date_date,
+                separator_separator,
+                first_frame_first_frame,
+                last_frame_last_frame,
+                root_values_root_values,
+                number_nodes_number_nodes(),
+                number_nodes_recursive_number_nodes(recursive_T..),
+                footages_footages,
+                node_classes_stats_node_classes_stats
             )
             dest.write(content)

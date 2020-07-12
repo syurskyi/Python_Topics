@@ -3,25 +3,25 @@ ______ ?, ?
 c_ writeManagerClass(?.PythonPanel):
     ___  -
         ?.PythonPanel. - (self, 'Write Manager', 'pw+writemanager')
-        nodes = {x.name():x ___ x __ ?.allNodes('Write')}
+        nodes _ {x.name():x ___ x __ ?.allNodes('Write')}
         ___ name, node __ nodes.items():
-            line = ?.String_Knob(name+'-file', name)
+            line _ ?.String_Knob(name+'-file', name)
             line.sV..(node['file'].getValue())
-            addKnob(line)
-            cb = ?.Boolean_Knob(name+'-disable','')
-            cb.clearFlag(?.STARTLINE)
+            aK..(line)
+            cb _ ?.B_K..(name+'-disable','')
+            cb.clearFlag(?.ST..)
             cb.sV..(no. node['disable'].getValue())
-            addKnob(cb)
+            aK..(cb)
 
-        start = ?.PyScript_Knob('render','Render')
-        start.setFlag(?.STARTLINE)
-        addKnob(start)
+        start _ ?.PyScript_Knob('render','Render')
+        start.sF..(?.ST..)
+        aK..(start)
 
     ___ knobChanged(self, knob):
-        node = knob.name().split('-')[0]
+        node _ knob.name().split('-')[0]
         __ node __ nodes:
-            node = nodes[node]
-            k = knob.name().split('-')[1]
+            node _ nodes[node]
+            k _ knob.name().split('-')[1]
             __ k __ 'file':
                 node['file'].sV..(knob.value())
             ____ k __ 'disable':
@@ -32,5 +32,5 @@ c_ writeManagerClass(?.PythonPanel):
 
 
 ___ s__:
-    w = writeManagerClass()
+    w _ writeManagerClass()
     w.s__

@@ -11,8 +11,8 @@ ___ call_global_clipboard_paste():
     ______ global_clipboard_paste
     global_clipboard_paste.main()
 
-clipboard = ?.menu("Nodes").aM..("Global Clipboard", icon="globalClipboard.png")
+clipboard _ ?.menu("Nodes").aM..("Global Clipboard", icon_"globalClipboard.png")
 
-clipboard.aC..("Global Clipboard", 'call_clipboard_help()', icon="globalClipboard.png")
-clipboard.aC..('X_Copy', 'call_global_clipboard_copy()', shortcut='Ctrl+Shift+C')
-clipboard.aC..('X_Paste', 'call_global_clipboard_paste()', shortcut='Alt+Shift+X')
+clipboard.aC..("Global Clipboard", 'call_clipboard_help()', icon_"globalClipboard.png")
+clipboard.aC..('X_Copy', 'call_global_clipboard_copy()', shortcut_'Ctrl+Shift+C')
+clipboard.aC..('X_Paste', 'call_global_clipboard_paste()', shortcut_'Alt+Shift+X')

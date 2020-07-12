@@ -13,45 +13,45 @@ ___ is_nuke():
         r_ F..
 
 
-___ get_nuke_exe(startup_feedback = F..):
-    executable = ''
-    debug = helper.load_settings()['logging_level'] __ '1'
+___ get_nuke_exe(startup_feedback _ F..):
+    executable _ ''
+    debug _ helper.load_settings()['logging_level'] __ '1'
     __ no. startup_feedback:
-        debug = F..
+        debug _ F..
     __ is_nuke():
         ______ ?
         r_ ?.env['ExecutablePath']
     ____
         __ debug:
             print '\nsmartCollect running standalone.\n'
-        nuke_exe_fixed = helper.load_settings()['nuke_exe_fixed']
+        nuke_exe_fixed _ helper.load_settings()['nuke_exe_fixed']
         __ nuke_exe_fixed:
-            nuke_exe_fixed = nuke_exe_fixed.strip()
-            executable = nuke_exe_fixed
+            nuke_exe_fixed _ nuke_exe_fixed.strip()
+            executable _ nuke_exe_fixed
         __ nuke_exe_fixed and debug:
             print 'Using fixed nukeversion: {}'.f..(nuke_exe_fixed)
         ____
-            os_abbr = autosearch.os_abbr()
-            app_root = autosearch.APP_ROOT[os_abbr]
-            full_path = autosearch.NUKE_PATH_PATTERN[os_abbr]
-            nuke_versions = autosearch.scan_for_nukeversions(app_root)
+            os_abbr _ autosearch.os_abbr()
+            app_root _ autosearch.APP_ROOT[os_abbr]
+            full_path _ autosearch.NUKE_PATH_PATTERN[os_abbr]
+            nuke_versions _ autosearch.scan_for_nukeversions(app_root)
             __ debug:
                 print 'Scanning applications folder for nuke versions in: {}'.f..(app_root)
                 print '>>> ', nuke_versions
             ___ version __ nuke_versions:
                 __ pl...system() __ 'Darwin':
-                    nuke_executable = full_path.f..(?=version)
+                    nuke_executable _ full_path.f..(?_version)
                 ____
-                    nuke_executable = full_path.f..(?=version, nuke_major_minor=version.split('v')[0])
+                    nuke_executable _ full_path.f..(?_version, nuke_major_minor_version.split('v')[0])
                 __ __.path.isfile(nuke_executable):
-                    executable = nuke_executable
+                    executable _ nuke_executable
                     __ debug:
                         print 'Using found nuke executable: {}'.f..(executable)
                     break
 
         __ no. executable:
-            private_tool_root = helper.get_tool_private_root()
-            settings_path = __.path.join(private_tool_root, 'settings.xml')
+            private_tool_root _ helper.get_tool_private_root()
+            settings_path _ __.path.join(private_tool_root, 'settings.xml')
             print templates.NO_NUKE_EXE_FOUND.f..(settings_path)
         r_ executable
 

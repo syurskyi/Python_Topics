@@ -13,7 +13,7 @@ ____ smartRescue.steps.remove_non_ascii ______ RemoveNonASCII
 ____ smartRescue.steps.script_info ______ ScriptInfo
 ____ smartRescue.steps.replace_by_pattern ______ ReplaceByPattern
 
-__all__ = [
+__all__ _ [
     "AllNodes",
     "CopyLines",
     "NodesByName",

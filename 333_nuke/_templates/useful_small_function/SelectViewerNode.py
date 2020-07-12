@@ -23,40 +23,40 @@ m.addCommand("Select Node in Viewer","SelectViewerNode.Launcher()")
 ______ re, nuke, nukescripts
 
 
-ViewersList = []
+ViewersList _ []
 
 ___ GetViewerList(ViewersList):
-    ViewersList = []
-    ActiveViewer=""
+    ViewersList _ []
+    ActiveViewer_""
     ___
-        ActiveViewer = nuke.ViewerWindow.node(nuke.activeViewer()).name()
-        ActiveViewer = "      "+ActiveViewer.split("Viewer")[1]+"    "
+        ActiveViewer _ nuke.ViewerWindow.node(nuke.activeViewer()).name()
+        ActiveViewer _ "      "+ActiveViewer.split("Viewer")[1]+"    "
     ______
         pass
     ___ v __ nuke.allNodes():
-        Name = v.name()
-        Class = v.Class()
+        Name _ v.name()
+        Class _ v.Class()
         __ Class __ "Viewer":
-            Number = "      "+ Name.split(Class)[1]+"    "
+            Number _ "      "+ Name.split(Class)[1]+"    "
             __ Number no. __ ViewersList:
                 ViewersList.append(Number)
-    ViewersList = sorted(ViewersList)
-    __ ActiveViewer!="":
+    ViewersList _ sorted(ViewersList)
+    __ ActiveViewer!_"":
         ViewersList.remove(ActiveViewer)
         ViewersList.insert(0,ActiveViewer)
     r_ ViewersList
    
 ___ SelectNode(Viewer,warning):
-    SelectedNodes = []
-    Nodes=[]
-    ActiveViewer=""
-    Viewer = re.sub(" ","",Viewer.value())
-    Viewer = "Viewer"+Viewer
+    SelectedNodes _ []
+    Nodes_[]
+    ActiveViewer_""
+    Viewer _ re.sub(" ","",Viewer.value())
+    Viewer _ "Viewer"+Viewer
     ___
-        ActiveViewer = nuke.ViewerWindow.node(nuke.activeViewer()).name()
+        ActiveViewer _ nuke.ViewerWindow.node(nuke.activeViewer()).name()
     ______
         pass
-    Inputs = nuke.toNode(Viewer).inputs()
+    Inputs _ nuke.toNode(Viewer).inputs()
     __ Inputs__0:
         print Viewer + " Has no Inputs"
         warning.setValue("        "+Viewer + " Has no Inputs")
@@ -66,21 +66,21 @@ ___ SelectNode(Viewer,warning):
         ___ n __ nuke.allNodes():
             n.setSelected(F..)
         __ Viewer __ ActiveViewer:
-            index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),F..)+1
-            Nodes=[index1]
+            index1 _ nuke.ViewerWindow.activeInput(nuke.activeViewer(),F..)+1
+            Nodes_[index1]
             ___
-                index2 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),T..)+1
+                index2 _ nuke.ViewerWindow.activeInput(nuke.activeViewer(),T..)+1
                 Nodes.append(index2)
             ______
                 pass
             ___ index __ Nodes:
-                Node = nuke.toNode(nuke.toNode(Viewer).input(index-1).name())
+                Node _ nuke.toNode(nuke.toNode(Viewer).input(index-1).name())
                 Node.setSelected(T..)
                 nuke.show(Node)
         else:
             ___ i __ range(0,Inputs):
                 ___
-                    Node = nuke.toNode(nuke.toNode(Viewer).input(i).name())
+                    Node _ nuke.toNode(nuke.toNode(Viewer).input(i).name())
                     Node.setSelected(T..)
                     nuke.show(Node)
                 ______
@@ -90,8 +90,8 @@ ___ SelectNode(Viewer,warning):
             n.setSelected(F..)
         __ Viewer __ ActiveViewer:
             ___
-                index1 = nuke.ViewerWindow.activeInput(nuke.activeViewer(),F..)
-                Node = nuke.toNode(nuke.toNode(Viewer).input(index1).name())
+                index1 _ nuke.ViewerWindow.activeInput(nuke.activeViewer(),F..)
+                Node _ nuke.toNode(nuke.toNode(Viewer).input(index1).name())
                 Node.setSelected(T..)
                 nuke.show(Node)
             ______
@@ -99,7 +99,7 @@ ___ SelectNode(Viewer,warning):
         else:
             ___ i __ range(0,Inputs):
                 ___
-                    Node = nuke.toNode(nuke.toNode(Viewer).input(i).name())
+                    Node _ nuke.toNode(nuke.toNode(Viewer).input(i).name())
                     Node.setSelected(T..)
                     nuke.show(Node)
                 ______
@@ -108,17 +108,17 @@ ___ SelectNode(Viewer,warning):
 
 ___ Zoom(zoom,node):
     __ zoom.getValue():
-        x1 = node[0].xpos()
-        y1 = node[0].ypos()
-        w1 = node[0].screenWidth()
-        h1 = node[0].screenHeight()
+        x1 _ node[0].xpos()
+        y1 _ node[0].ypos()
+        w1 _ node[0].screenWidth()
+        h1 _ node[0].screenHeight()
         __ le.(node)__1:
             nuke.zoom(2,(x1+w1/2,y1+h1/2))
         ____ le.(node)>1:
-            x2 = node[1].xpos()
-            y2 = node[1].ypos()
-            w2 = node[1].screenWidth()
-            h2 = node[1].screenHeight()
+            x2 _ node[1].xpos()
+            y2 _ node[1].ypos()
+            w2 _ node[1].screenWidth()
+            h2 _ node[1].screenHeight()
             nuke.zoom(0,((x1+x2)/2+w1/2,(y1+y2)/2+h1/2))
     
      
@@ -134,15 +134,15 @@ c_ SelectViewerNode(nukescripts.PythonPanel):
 
         # Create Knobs
        
-        Viewers = nuke.Enumeration_Knob("Viewer","Viewer",GetViewerList(ViewersList))
+        Viewers _ nuke.Enumeration_Knob("Viewer","Viewer",GetViewerList(ViewersList))
     
-        Zoom = nuke.Boolean_Knob("Zoom")
+        Zoom _ nuke.B_K..("Zoom")
 
         Zoom.setValue(F..)
 
-        dividerA = nuke.Text_Knob("")
+        dividerA _ nuke.Text_Knob("")
 
-        warning = nuke.Text_Knob('warning',"")
+        warning _ nuke.Text_Knob('warning',"")
 
         warning.setVisible(F..)
 
@@ -157,13 +157,13 @@ If the selected viewer is not active, all viewer nodes will be selected
    
         # Add Knobs
 
-        addKnob(Viewers)
+        aK..(Viewers)
 
-        addKnob(Zoom)
+        aK..(Zoom)
 
-        addKnob(dividerA)
+        aK..(dividerA)
 
-        addKnob(warning)
+        aK..(warning)
 
 
     ___ knobChanged(self,knob):
@@ -189,7 +189,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
 ___ Launcher():
 
-    panel = SelectViewerNode()
+    panel _ SelectViewerNode()
 
     panel.sMD..
    

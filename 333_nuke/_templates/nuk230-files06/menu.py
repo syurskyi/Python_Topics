@@ -1,6 +1,6 @@
 ______ ?
 ____ clipboard ______ clipboard_core
 
-menu = ?.menu("Nuke")
-fxphd = menu.aM..("FXPHD")
+menu _ ?.menu("Nuke")
+fxphd _ menu.aM..("FXPHD")
 fxphd.aC..("Clipboard","clipboardCore.start()")

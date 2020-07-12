@@ -8,9 +8,9 @@ ______ itertools
 
 ___ toggle_viewer_lut():
     """Iterates thru viewer luts in the viewer"""
-    viewer = ?.activeViewer().node()['viewerProcess']
-    luts = viewer.values()
-    x = itertools.cycle(luts)
+    viewer _ ?.activeViewer().node()['viewerProcess']
+    luts _ viewer.values()
+    x _ itertools.cycle(luts)
     ___ dummy __ ra..(le.(luts)):
         __ viewer.v.. __ next(x):
             viewer.sV..(next(x))
@@ -23,10 +23,10 @@ ___ adjust_gain(original_gain, stop_offset):
 
 ___ viewer_stop_adjust(increment):
     """Adjusts current viewer in stops"""
-    nodes = ?.allNodes('Viewer')
+    nodes _ ?.allNodes('Viewer')
     ___ node __ no__:
-        knob = node.knob('gain')
-        gain = knob.v..
+        knob _ node.knob('gain')
+        gain _ knob.v..
         knob.sV..(adjust_gain(gain, increment))
 
 
@@ -42,7 +42,7 @@ ___ viewer_stop_down():
 
 ___ viewer_stop_reset():
     """Resets exposure on current viewer"""
-    nodes = ?.allNodes('Viewer')
+    nodes _ ?.allNodes('Viewer')
     ___ node __ no__:
-        knob = node.knob('gain')
+        knob _ node.knob('gain')
         knob.sV..(1)

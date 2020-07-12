@@ -6,7 +6,7 @@ ___
     ______ ?
 ______pass
 
-sliderStyle = '''QSlider::groove:vertical {
+sliderStyle _ '''QSlider::groove:vertical {
     border: 1px solid #ffaa00;
     background: #ffaa00;
     width: 6px;
@@ -62,7 +62,7 @@ QSlider::handle:vertical:disabled {
     border: 1px solid #aaa;
     border-radius: 2px;
 }'''
-widgetStyle = '''
+widgetStyle _ '''
         QLineEdit
         {
             background-color: rgb(50,50,50);
@@ -110,24 +110,24 @@ widgetStyle = '''
 
         '''
 c_ colorWheelClass(?W..):
-    colorChangedSignal = Signal(list)
+    colorChangedSignal _ Signal(list)
     ___  -
         s_(colorWheelClass, self). - ()
-        hw = 200
-        padding = 2
-        blackBorder = 10
-        radius = (hw / 2) - padding
-        center = hw / 2
+        hw _ 200
+        padding _ 2
+        blackBorder _ 10
+        radius _ (hw / 2) - padding
+        center _ hw / 2
         setFixedSize(QSize(hw, hw))
-        img = N..
-        pick = [0, 0]
-        pickerSize = 8
-        value = 0
+        img _ N..
+        pick _ [0, 0]
+        pickerSize _ 8
+        value _ 0
 
     ___ paintEvent(self, event):
         __ no. img:
-            img = getCircle()
-        painter = QPainter()
+            img _ getCircle()
+        painter _ QPainter()
         painter.begin(self)
         #wheel
         painter.setRenderHint(QPainter.Antialiasing)
@@ -135,31 +135,31 @@ c_ colorWheelClass(?W..):
         painter.drawImage(0, 0, img)
         #value
         painter.setPen(__.NoPen)
-        elipse = QPainterPath()
+        elipse _ QPainterPath()
         elipse.addEllipse(QRect(blackBorder, blackBorder, hw-blackBorder*2,hw-blackBorder*2))
         painter.setBrush(QColor(0,0,0,value*255))
         painter.drawPath(elipse)
 
 
         #picker
-        x = center + pick[0]
-        y = center + pick[1]
+        x _ center + pick[0]
+        y _ center + pick[1]
         #line
         painter.setBrush(__.NoBrush)
-        lineColor = 55 __ value < 0.5 ____ 200
+        lineColor _ 55 __ value < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1))
         painter.drawLine(center, center,x, y)
 
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1, __.DashLine))
-        size = math.sqrt((pick[0] * pick[0]) + (pick[1] * pick[1]))
+        size _ math.sqrt((pick[0] * pick[0]) + (pick[1] * pick[1]))
         painter.drawEllipse(center-size,
                             center-size,
                             size*2,
                             size*2)
         #decorate
         painter.setPen(QPen(QColor(255,255,255), 3))
-        c1 = padding
-        c2 = hw - padding*2
+        c1 _ padding
+        c2 _ hw - padding*2
         painter.drawEllipse(c1,c1,c2,c2)
 
         #picker circle
@@ -181,71 +181,71 @@ c_ colorWheelClass(?W..):
         ?W...mouseMoveEvent(self, event)
 
     ___ setPickerPos(self, pos):
-        x = pos.x()-center
-        y = pos.y() - center
-        distance = math.sqrt((x * x) + (y * y))
+        x _ pos.x()-center
+        y _ pos.y() - center
+        distance _ math.sqrt((x * x) + (y * y))
         __ distance < radius:
-            pick = [x, y]
+            pick _ [x, y]
             update()
         ____
-            over = radius / distance
-            pick = [x*over, y*over]
+            over _ radius / distance
+            pick _ [x*over, y*over]
             update()
         updateColor()
 
     ___ updateColor
-        x = pick[0]
-        y = pick[1]
-        distance = math.sqrt((x * x) + (y * y))
-        angle = math.degrees(math.atan2(y,x))
+        x _ pick[0]
+        y _ pick[1]
+        distance _ math.sqrt((x * x) + (y * y))
+        angle _ math.degrees(math.atan2(y,x))
         __ angle < 0:
-            angle += 360
-        s = min(1, distance / radius)
+            angle +_ 360
+        s _ min(1, distance / radius)
         colorChangedSignal.emit([angle/360,s])
 
     ___ sV..(self, v):
-        value = (1000-v) * 0.001
+        value _ (1000-v) * 0.001
         update()
         updateColor()
 
     ___ getCircle
-        img = QImage(hw, hw, QImage.Format_ARGB32)
+        img _ QImage(hw, hw, QImage.Format_ARGB32)
 
-        color = QColor()
+        color _ QColor()
         ___ y __ ra..(-center, center):
             ___ x __ ra..(-center, center):
-                distance = math.sqrt((x * x) + (y * y))
+                distance _ math.sqrt((x * x) + (y * y))
                 __ distance > radius:
                     color.setRgb(0.0, 0.0, 0.0)
                     color.setAlpha(0.0)
                 ____
-                    s = distance / radius
-                    angle = (math.atan2(y, x) * 180 / math.pi)
+                    s _ distance / radius
+                    angle _ (math.atan2(y, x) * 180 / math.pi)
                     __ y < 0:
-                        angle += 360
-                    h = angle / 360.0
-                    v = 1
+                        angle +_ 360
+                    h _ angle / 360.0
+                    v _ 1
                     color.setHsvF(h, s, v, 1.0)
                 img.setPixel(x+center, y+center, color.rgba())
         r_ img
 
 
 c_ colorRampClass(?W..):
-    colorChangedSignal = Signal(list)
+    colorChangedSignal _ Signal(list)
     ___  -
         s_(colorRampClass, self). - ()
-        hw = 200
+        hw _ 200
         setFixedSize(QSize(hw, hw))
-        padding = 2
-        value = 0.0
-        pick = [0, 0]
-        img = N..
-        pickerSize = 8
+        padding _ 2
+        value _ 0.0
+        pick _ [0, 0]
+        img _ N..
+        pickerSize _ 8
 
     ___ paintEvent(self, event):
         __ no. img:
-            img = getRamp()
-        painter = QPainter()
+            img _ getRamp()
+        painter _ QPainter()
         painter.begin(self)
         #wheel
         painter.setRenderHint(QPainter.Antialiasing)
@@ -255,9 +255,9 @@ c_ colorRampClass(?W..):
         painter.setPen(__.NoPen)
         painter.fillRect(0,0, hw, hw, QColor(0,0,0,value*255))
         #lines
-        x = pick[0]
-        y = pick[1]
-        lineColor = 55 __ value < 0.5 ____ 200
+        x _ pick[0]
+        y _ pick[1]
+        lineColor _ 55 __ value < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 0.5))
         painter.drawLine(x,0,x,hw)
         painter.drawLine(0,y,hw,y)
@@ -272,12 +272,12 @@ c_ colorRampClass(?W..):
         painter.end()
 
     ___ updateColor
-        h = pick[0]/float(hw)
-        s = pick[1]/float(hw)
+        h _ pick[0]/float(hw)
+        s _ pick[1]/float(hw)
         colorChangedSignal.emit([h,s])
 
     ___ sV..(self, v):
-        value = (1000-v) * 0.001
+        value _ (1000-v) * 0.001
         update()
         updateColor()
 
@@ -290,69 +290,69 @@ c_ colorRampClass(?W..):
         ?W...mouseMoveEvent(self, event)
 
     ___ setPickerPos(self, pos):
-        x = pos.x()
-        y = pos.y()
+        x _ pos.x()
+        y _ pos.y()
         __ x < 0:
-            x = 0
+            x _ 0
         __ x > hw:
-            x = hw
+            x _ hw
         __ y < 0:
-            y = 0
+            y _ 0
         __ y > hw:
-            y = hw
-        pick = [x, y]
+            y _ hw
+        pick _ [x, y]
         update()
         updateColor()
 
     ___ getRamp
-        img = QImage(hw, hw, QImage.Format_RGB32)
-        color = QColor()
+        img _ QImage(hw, hw, QImage.Format_RGB32)
+        color _ QColor()
         ___ y __ ra..(hw):
             ___ x __ ra..(hw):
-                h = x / float(hw)
-                s = y/ float(hw)
+                h _ x / float(hw)
+                s _ y/ float(hw)
                 color.setHsvF(h, s, 1)
                 img.setPixel(x, y, color.rgb())
         r_ img
 
 
 c_ colorPickerClass(?W..):
-    ___  - (self, nukeNode=N.., knob=N.., label='Empty'):
+    ___  - (self, nukeNode_N.., knob_N.., label_'Empty'):
         s_(colorPickerClass, self). - ()
         #window
         resize(QSize(250, 340))
         setStyleSheet(widgetStyle)
         #variables
-        nukeNode = nukeNode
-        knob = knob
-        picker = N..
+        nukeNode _ nukeNode
+        knob _ knob
+        picker _ N..
         #ui
-        mainLy = ?VB..
+        mainLy _ ?VB..
         sL..(mainLy)
         #picker switcher
-        lab = ?L..(label)
+        lab _ ?L..(label)
         mainLy.aW..(lab)
-        switch_ly = QHBoxLayout()
-        rb1 = QRadioButton()
+        switch_ly _ QHBoxLayout()
+        rb1 _ QRadioButton()
         rb1.setText('Circle')
         rb1.setChecked(1)
         rb1.c__.c..(addPicker)
         switch_ly.aW..(rb1)
-        rb2 = QRadioButton()
+        rb2 _ QRadioButton()
         rb2.c__.c..(addPicker)
         rb2.setText('Square')
         switch_ly.aW..(rb2)
         mainLy.addLayout(switch_ly)
 
         #color swatch
-        color = ?L..()
+        color _ ?L..()
         mainLy.aW..(color)
-        ly = QHBoxLayout()
-        picker_ly = ?VB..
+        ly _ QHBoxLayout()
+        picker_ly _ ?VB..
         picker_ly.setContentsMargins(0,0,0,0)
         ly.addLayout(picker_ly)
         #value
-        value = QSlider(__.Vertical)
+        value _ QSlider(__.Vertical)
         value.setStyleSheet(sliderStyle)
         value.setMaximumHeight(200)
         ly.aW..(value)
@@ -360,26 +360,26 @@ c_ colorPickerClass(?W..):
         value.sV..(1000)
         mainLy.addLayout(ly)
         #color values
-        grid_ly = QGridLayout()
-        hex_lb = ?L..()
+        grid_ly _ QGridLayout()
+        hex_lb _ ?L..()
         hex_lb.setLayoutDirection(__.RightToLeft)
         hex_lb.setText("HEX")
         grid_ly.aW..(hex_lb, 0, 0, 1, 1)
-        hex_le = QLineEdit()
+        hex_le _ QLineEdit()
         grid_ly.aW..(hex_le, 0, 1, 1, 1)
 
-        rgb_lb = ?L..()
+        rgb_lb _ ?L..()
         rgb_lb.setLayoutDirection(__.RightToLeft)
         rgb_lb.setText("RGB")
         grid_ly.aW..(rgb_lb, 1, 0, 1, 1)
-        rgb_le = QLineEdit()
+        rgb_le _ QLineEdit()
         grid_ly.aW..(rgb_le, 1, 1, 1, 1)
 
-        hsv_lb = ?L..()
+        hsv_lb _ ?L..()
         hsv_lb.setLayoutDirection(__.RightToLeft)
         hsv_lb.setText("HSV")
         grid_ly.aW..(hsv_lb, 2, 0, 1, 1)
-        hsv_le = QLineEdit()
+        hsv_le _ QLineEdit()
         grid_ly.aW..(hsv_le, 2, 1, 1, 1)
 
         mainLy.addLayout(grid_ly)
@@ -394,9 +394,9 @@ c_ colorPickerClass(?W..):
         __ picker:
             picker.setParent(N..)
         __ rb1.isChecked():
-            picker = colorWheelClass()
+            picker _ colorWheelClass()
         ____
-            picker = colorRampClass()
+            picker _ colorRampClass()
 
         picker.colorChangedSignal.c..(receiveColor)
         picker_ly.aW..(picker)
@@ -405,13 +405,13 @@ c_ colorPickerClass(?W..):
         picker.updateColor()
 
     ___ setPickerIcon
-        pix = QPixmap(32,32)
+        pix _ QPixmap(32,32)
         pix.fill(QColor(__.red))
         setWindowIcon(QIcon(pix))
 
     ___ receiveColor(self, hs):
-        v = value.v..*0.001
-        c = QColor()
+        v _ value.v..*0.001
+        c _ QColor()
         c.setHsvF(hs[0], hs[1], v)
         updateColor(c)
 
@@ -430,7 +430,7 @@ c_ colorPickerClass(?W..):
         #hsv
         hsv_le.setText('{0},{1},{2}'.f..(*color.getHsv()))
         __ nukeNode:
-            knob = nukeNode.knob(knob)
+            knob _ nukeNode.knob(knob)
             __ knob:
                 knob.sV..([color.red()/255.0, color.green()/255.0, color.blue()/255.0, 1])
             ____
@@ -439,13 +439,13 @@ c_ colorPickerClass(?W..):
 
 
 ___ addTab(node):
-    tab = node.fC..(?TW..)
-    w = ?W..()
-    ly = QHBoxLayout()
+    tab _ node.fC..(?TW..)
+    w _ ?W..()
+    ly _ QHBoxLayout()
     w.sL..(ly)
-    cp1 = colorPickerClass(?.toNode(node.objectName()),'shadows.gain', 'Shadows')
-    cp2 = colorPickerClass(?.toNode(node.objectName()),'midtones.gain', 'Mid tone')
-    cp3 = colorPickerClass(?.toNode(node.objectName()),'highlights.gain', 'Highlights')
+    cp1 _ colorPickerClass(?.toNode(node.objectName()),'shadows.gain', 'Shadows')
+    cp2 _ colorPickerClass(?.toNode(node.objectName()),'midtones.gain', 'Mid tone')
+    cp3 _ colorPickerClass(?.toNode(node.objectName()),'highlights.gain', 'Highlights')
     ly.aW..(cp1)
     ly.aW..(cp2)
     ly.aW..(cp3)
@@ -456,7 +456,7 @@ ___ addTab(node):
 
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    s = colorPickerClass()
+    app _ ?A..([])
+    s _ colorPickerClass()
     s.s__
     app.exec_()

@@ -1,49 +1,49 @@
 ______ ?
 ______ __, random
 
-srcpath = 'C:/projects/src'
+srcpath _ 'C:/projects/src'
 
 ___ reorderPoints(array):
-    data = []
+    data _ []
     ___ i __ ra..(0, le.(array), 3):
-        v = ?.math.Vector3(array[i], array[i+1], array[i+2])
+        v _ ?.math.Vector3(array[i], array[i+1], array[i+2])
         data.ap..(v)
     r_ data
 
-geo, cam, scn = ?.sN..
-pynode = ?.nodes.PythonGeo(inputs=[geo])
-geoList = pynode.knob('geo').getGeometry()
-points = []
+geo, cam, scn _ ?.sN..
+pynode _ ?.nodes.PythonGeo(inputs_[geo])
+geoList _ pynode.knob('geo').getGeometry()
+points _ []
 ___ elem __ geoList:
-    points += elem.points()
-points = reorderPoints(points)
+    points +_ elem.points()
+points _ reorderPoints(points)
 ?.delete(pynode)
 
-grp = ?.nodes.Group(name='Objects')
+grp _ ?.nodes.Group(name_'Objects')
 grp.setXYpos(geo.xpos(), geo.ypos()+50)
-scaleKnob = ?.Double_Knob('scale', 'Scale')
-grp.addKnob(scaleKnob)
+scaleKnob _ ?.D_K..('scale', 'Scale')
+grp.aK..(scaleKnob)
 scaleKnob.sV..(0.5)
 
 grp.begin()
-inCam = ?.nodes.Input(name='LookAt')
-out = ?.nodes.Output()
+inCam _ ?.nodes.Input(name_'LookAt')
+out _ ?.nodes.Output()
 
-reads = []
+reads _ []
 ___ img __ __.listdir(srcpath):
-    path = __.path.join(srcpath, img).replace('\\','/')
-    r = ?.nodes.Read(file=path, premultiplied=T..)
+    path _ __.path.join(srcpath, img).replace('\\','/')
+    r _ ?.nodes.Read(file_path, premultiplied_T..)
     reads.ap..(r)
 
-grpScene = ?.nodes.Scene(hide_input=T..)
+grpScene _ ?.nodes.Scene(hide_input_T..)
 ___ pt __ points:
-    r = random.choice(reads)
-    card = ?.nodes.Card(inputs=[r], rows = 1, columns=1,
-    image_aspect=F.., hide_input=T..)
-    tr = ?.nodes.TransformGeo(inputs=[card, N.., inCam],
-    xpos=card.xpos(), ypos=card.ypos()+40, hide_input=T..)
+    r _ random.choice(reads)
+    card _ ?.nodes.Card(inputs_[r], rows _ 1, columns_1,
+    image_aspect_F.., hide_input_T..)
+    tr _ ?.nodes.TransformGeo(inputs_[card, N.., inCam],
+    xpos_card.xpos(), ypos_card.ypos()+40, hide_input_T..)
     tr['translate'].sV..(pt)
-    s = r.height()/float(r.width())
+    s _ r.height()/float(r.width())
     tr['scaling'].sV..(s, 1)
     tr['uniform_scale'].setExpression('%s.scale' % grp.name())
     grpScene.setInput(grpScene.inputs(), tr)

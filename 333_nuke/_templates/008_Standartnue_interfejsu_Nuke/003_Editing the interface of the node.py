@@ -1,30 +1,30 @@
-______ __
-node =?.sN__
-
-grp = ?.Tab_Knob('parm', 'Parameters')
-node.addKnob(grp)
-
-k1 = ?.Double_Knob('k1', 'Value 1')
-node.addKnob(k1)
-
-k2 = ?.Boolean_Knob('cb', 'Chackbox')
-k2.setFlag(?.STARTLINE)
-node.addKnob(k2)
-
-#k1.setFlag(nuke.INVISIBLE)
-#k1.clearFlag(nuke.INVISIBLE)
-
-gpr1 = ?.Tab_Knob('grp1', 'Grp1', ?.TABBEGINGROUP)
-node.addKnob(gpr1)
-k3 = ?.Int_Knob('k3', 'Value')
-node.addKnob(k3)
-gpr2 = ?.Tab_Knob('grp2', 'Grp1', ?.TABENDGROUP)
-node.addKnob(gpr2)
-k34 = ?.Int_Knob('k34', 'Value')
-node.addKnob(k34)
-
-# select Blur node
-k = ?.sN__['size']
-node.addKnob(k)
-k.setLabel('SIZE')
-#nuke.selectedNode().addKnob(k3)
+# ______ __
+# node _?.sN__
+#
+# grp _ ?.T_K.. parm Parameters
+# n__.aK.. ?
+#
+# k1 _ ?.D_K.. k1 Value 1
+# n__.aK.. ?
+#
+# k2 _ ?.B_K.. cb Chackbox
+# ?.sF.. ?.ST..
+# n__.aK.. ?
+#
+# #k1.setFlag(nuke.INVISIBLE)
+# #k1.clearFlag(nuke.INVISIBLE)
+#
+# gpr1 _ ?.T_K.. grp1 Grp1 ?.TAB..
+# n__.aK.. ?
+# k3 _ ?.Int_Kno k3 Value
+# n__.aK.. ?
+# gpr2 _ ?.T_K.. ? Grp1 ?.TAB..
+# n__.aK.. ?
+# k34 _ ?.I_K.. k34 Value
+# n__.aK.. ?
+#
+# # select Blur node
+# k _ ?.sN__ size
+# n__.aK.. ?
+# k.sL.. SIZE
+# #nuke.selectedNode().addKnob(k3)

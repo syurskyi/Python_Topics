@@ -38,15 +38,15 @@ ___ load_icons():
             }
 
     """
-    this_dir = __.path.dirname( -f)
-    dir_icon = __.path.join(this_dir, "icons")
-    dir_icon = __.path.n_p_(dir_icon)
+    this_dir _ __.path.dirname( -f)
+    dir_icon _ __.path.join(this_dir, "icons")
+    dir_icon _ __.path.n_p_(dir_icon)
 
-    icons = {}
+    icons _ {}
     ___ file_ __ __.listdir(dir_icon):
-        name = __.path.splitext(file_)[0]
-        path = __.path.join(dir_icon, file_)
-        icons[name] = path
+        name _ __.path.splitext(file_)[0]
+        path _ __.path.join(dir_icon, file_)
+        icons[name] _ path
 
     r_ icons
 
@@ -70,7 +70,7 @@ ___ execute(language, command):
         raise ValueError
 
 
-___ set_style_sheet(widget, style="styles.qss"):
+___ set_style_sheet(widget, style_"styles.qss"):
     """Apply css style sheet to given widget.
 
     Args:
@@ -78,17 +78,17 @@ ___ set_style_sheet(widget, style="styles.qss"):
         style (str): Name of styles file to apply.
 
     """
-    this_dir = __.path.join(__.path.dirname( -f))
+    this_dir _ __.path.join(__.path.dirname( -f))
 
-    styles = __.path.join(this_dir, "styles", style)
-    styles = __.path.n_p_(styles)
+    styles _ __.path.join(this_dir, "styles", style)
+    styles _ __.path.n_p_(styles)
 
     __ __.path.isfile(styles):
         w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
 
-___ get_session_icons(ext=".png"):
+___ get_session_icons(ext_".png"):
     """Get all images from all paths in Nuke's plugin path with extension.
 
     Args:
@@ -100,14 +100,14 @@ ___ get_session_icons(ext=".png"):
             of Nuke's plugin path that contain the given file extension.
 
     """
-    paths = [path ___ path __ ?.pluginPath() __ __.path.isdir(path)]
+    paths _ [path ___ path __ ?.pluginPath() __ __.path.isdir(path)]
 
-    icon_dir = __.path.join(__.path.dirname( -f), "icons")
+    icon_dir _ __.path.join(__.path.dirname( -f), "icons")
     paths.ap..(icon_dir)
 
-    icons = []
+    icons _ []
     ___ path __ paths:
-        _icons = (__.path.join(path, image) ___ image __ __.listdir(path) __
+        _icons _ (__.path.join(path, image) ___ image __ __.listdir(path) __
                   image.endswith(ext))
         icons.extend(_icons)
 
@@ -134,7 +134,7 @@ ___ add_to_history(command):
         dict: The settings using the updated history.
 
     """
-    settings = model.load()
+    settings _ model.load()
 
     # Remove the command from the history in case it already exists so that
     # we don't add up with duplicated commands in our history. If we execute
@@ -156,7 +156,7 @@ ___ clear_history():
         dict: Updated hostory with empty history list.
 
     """
-    settings = model.load()
+    settings _ model.load()
     del settings["history"][:]
     model.save(settings)
     r_ settings
@@ -192,8 +192,8 @@ ___ unique_elements_preserve_order(sequence):
             inserted sequence.
 
     """
-    seen = set()
-    seen_add = seen.add
+    seen _ set()
+    seen_add _ seen.add
     r_ [x ___ x __ sequence __ no. (x __ seen or seen_add(x))]
 
 
@@ -208,7 +208,7 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = ("Cannot open browser. Please open it manually and "
+            msg _ ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".f..(url))
             ____ smartScripter ______ dialogs
             dialogs.show_message_box(N.., msg)
@@ -217,9 +217,9 @@ ___ open_website(url):
 ___ assemble_command_path(command_name):
     """Assemble command path from current settings and command name."""
 
-    settings = model.load()
-    stack_root = settings["stack_root"]
-    current_stack = settings["current_stack"]
+    settings _ model.load()
+    stack_root _ settings["stack_root"]
+    current_stack _ settings["current_stack"]
 
     r_ __.path.join(stack_root, current_stack, command_name)
 
@@ -231,8 +231,8 @@ ___ get_all_stacks():
         list: Names of all stack folders.
 
     """
-    settings = model.load()
-    stack_root = settings["stack_root"]
+    settings _ model.load()
+    stack_root _ settings["stack_root"]
 
     r_ [name ___ name __ __.listdir(stack_root)
             __ __.path.isdir(__.path.join(stack_root, name))]
@@ -247,16 +247,16 @@ ___ load_tooltips(parent, section):
 
     """
     # Load tooltips file.
-    this_dir = __.path.dirname( -f)
-    tooltips_file = __.path.join(this_dir, "data", "tooltips.json")
-    tooltips_file = __.path.n_p_(tooltips_file)
+    this_dir _ __.path.dirname( -f)
+    tooltips_file _ __.path.join(this_dir, "data", "tooltips.json")
+    tooltips_file _ __.path.n_p_(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
 
     # Parse tool tips file.
     w__ o..(tooltips_file) __ json_file:
         ___
-            ttdata = j___.load(json_file)
+            ttdata _ j___.load(json_file)
         except ValueError:
             r_
 
@@ -281,11 +281,11 @@ ___ get_tool_root(which):
 
     """
     __ which __ "private":
-        cragl_dir = ".cragl"
+        cragl_dir _ ".cragl"
     ____
-        cragl_dir = "cragl"
+        cragl_dir _ "cragl"
 
-    root = __.path.join(__.path.expanduser("~"), cragl_dir, __product__)
+    root _ __.path.join(__.path.expanduser("~"), cragl_dir, __product__)
 
     __ no. __.path.isdir(root):
         ___
@@ -296,7 +296,7 @@ ___ get_tool_root(which):
     r_ root
 
 
-SESSION_ICONS = get_session_icons()
+SESSION_ICONS _ get_session_icons()
 
 
 ___ get_icon(icon):
@@ -331,7 +331,7 @@ ___ reveal_in_explorer(path):
         # We want to catch all errors in here explicitly.
         except Exception __ error:  # pylint: disable=broad-except
             ____ smartScripter ______ dialogs
-            m.. = ("Unable to reveal the directory. Please open the "
+            m.. _ ("Unable to reveal the directory. Please open the "
                        "directory manually in your explorer. "
                        "{}".f..(error.m..))
             dialogs.show_message_box(m..)

@@ -8,9 +8,9 @@ ______ ?
 ____ dd.runtime.api ______ relativeImport, load
 load('ddlogger')
 ______ ddlogger
-LOGGER = ddlogger.getLogger('getfromnode')
+LOGGER _ ddlogger.getLogger('getfromnode')
 
-___ byClass(node=N.., regex=N.., force_match=T..):
+___ byClass(node_N.., regex_N.., force_match_T..):
     
     """
     checks the node.Class() of a node against a regex
@@ -18,16 +18,16 @@ ___ byClass(node=N.., regex=N.., force_match=T..):
     """
     
     # compile my_pattern from raw regex
-    my_pattern = re.compile(r'%s' % regex)
+    my_pattern _ re.compile(r'%s' % regex)
 
     # check for node, use selected Node if no arg
     __ no. node:
-        node = ?.sN__
+        node _ ?.sN__
 
     # check if force_match is enabled, use 'risky' search if False
     __ force_match:
         # return re.match object (default)
-        result = my_pattern.match(node.Class())
+        result _ my_pattern.match(node.Class())
         __ result:
             LOGGER.debug('Node %s.Class() EXACTLY MATCHES regex %s' %
                 (node.knob('name').v.., my_pattern.pattern))
@@ -37,7 +37,7 @@ ___ byClass(node=N.., regex=N.., force_match=T..):
         r_ result
     ____
         # return re.search object (risky)
-        result = my_pattern.search(node.Class())
+        result _ my_pattern.search(node.Class())
         __ result:
             LOGGER.debug('Node %s.Class() RISKY MATCHES regex %s' %
                 (node.knob('name').v.., my_pattern.pattern))
@@ -49,7 +49,7 @@ ___ byClass(node=N.., regex=N.., force_match=T..):
 # end byClass
 
 
-___ nodesByClass(nodes=N.., regex=N.., force_match=T..):
+___ nodesByClass(nodes_N.., regex_N.., force_match_T..):
     
     """
     find the nodes in nodes whose Class() matches regex
@@ -58,7 +58,7 @@ ___ nodesByClass(nodes=N.., regex=N.., force_match=T..):
     
     # check for nodes, use selected Nodes if no arg
     __ no. nodes:
-        nodes = ?.sN..
+        nodes _ ?.sN..
 
     ___ i __ nodes:
         __ byClass(i, regex, force_match):
@@ -68,7 +68,7 @@ ___ nodesByClass(nodes=N.., regex=N.., force_match=T..):
 # end nodesByClass
 
 
-___ byName(node=N.., regex=N.., force_match=T..):
+___ byName(node_N.., regex_N.., force_match_T..):
     
     """
     checks the node.fullName() of node against a regex
@@ -76,16 +76,16 @@ ___ byName(node=N.., regex=N.., force_match=T..):
     """
     
     # compile my_pattern from raw regex
-    my_pattern = re.compile(r'%s' % regex)
+    my_pattern _ re.compile(r'%s' % regex)
 
     # check for node, use selected Node if no arg
     __ no. node:
-        node = ?.sN__
+        node _ ?.sN__
 
     # check if force_match is enabled, use 'risky' search if False
     __ force_match:
         # return re.match object (default)
-        result = my_pattern.match(node.fullName())
+        result _ my_pattern.match(node.fullName())
         __ result:
             LOGGER.debug('Node %s.fullName() EXACTLY MATCHES regex %s' %
                 (node.knob('name').v.., my_pattern.pattern))
@@ -95,7 +95,7 @@ ___ byName(node=N.., regex=N.., force_match=T..):
         r_ result
     ____
         # return re.search object (risky)
-        result = my_pattern.search(node.fullName())
+        result _ my_pattern.search(node.fullName())
         __ result:
             LOGGER.debug('Node %s.fullName() LOOSLY MATCHES regex %s' %
                 (node.knob('name').v.., my_pattern.pattern))
@@ -107,7 +107,7 @@ ___ byName(node=N.., regex=N.., force_match=T..):
 # end byName
 
 
-___ nodesByName(nodes=N.., regex=N.., force_match=T..):
+___ nodesByName(nodes_N.., regex_N.., force_match_T..):
     
     """
     find the nodes in nodes whose fullName() matches regex
@@ -116,10 +116,10 @@ ___ nodesByName(nodes=N.., regex=N.., force_match=T..):
     
     # check for nodes, use selected Nodes if no arg
     __ no. nodes:
-        nodes = ?.sN..
+        nodes _ ?.sN..
 
     # loop all Nodes in nodes and match by Name
-    results = []
+    results _ []
     ___ i __ nodes:
         __ byName(i, regex, force_match):
             results.ap..(i)

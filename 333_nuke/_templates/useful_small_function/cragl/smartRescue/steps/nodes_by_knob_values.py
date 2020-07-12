@@ -142,7 +142,7 @@ ____ smartRescue.base_steps ______ NodeStep
 c_ NodesByKnobValues(NodeStep):
     """Handle nodes in the DAG matching the knob names and value conditions."""
 
-    operators = {
+    operators _ {
         "==": operator.eq,
         "!=": operator.ne,
         "<": operator.lt,
@@ -156,14 +156,14 @@ c_ NodesByKnobValues(NodeStep):
         ___ rule __ setup["knob_rules"]:
             ___ node __ ?.allNodes():
 
-                __ node.Class() != rule["node_class"]:
+                __ node.Class() !_ rule["node_class"]:
                     continue
 
-                knob = node.knob(rule["knob_name"])
+                knob _ node.knob(rule["knob_name"])
                 __ no. knob:
                     continue
 
-                operator_ = operators.get(rule["operator"])
+                operator_ _ operators.get(rule["operator"])
                 __ no. operator_:
                     logger.waring("Non supported operator '%s'. Skip "
                                        "step", rule["operator"])
@@ -173,17 +173,17 @@ c_ NodesByKnobValues(NodeStep):
                 # into missing rules that are matching. For instance, we want
                 # to be able to check against knobs holding integer values,
                 # but also holding string values.
-                types = (
+                types _ (
                     float,
                     int,
                     str,
                 )
 
-                rule_matched = F..
+                rule_matched _ F..
                 ___ type_ __ types:
                     ___
                         __ operator_(knob.v.., type_(rule["knob_value"])):
-                            rule_matched = T..
+                            rule_matched _ T..
                             break
                     # We raise any error that occurs here. When any error
                     # occurs while casting the value then this is invalid data

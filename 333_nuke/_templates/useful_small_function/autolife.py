@@ -15,11 +15,11 @@
 
 ______ nuke
 
-elements = []
+elements _ []
 
 ___ addAutoLife():
-  n = nuke.thisNode()
-  n.addKnob(nuke.PyScript_Knob('autolife', 'autolife!', 'autolife.autoLife()'))
+  n _ nuke.thisNode()
+  n.aK..(nuke.PyScript_Knob('autolife', 'autolife!', 'autolife.autoLife()'))
 
 ___ getElements(layer):
   ___ element __ layer:
@@ -31,36 +31,36 @@ ___ getElements(layer):
   r_ elements
 
 ___ autoLife():
-  n = nuke.thisNode()
+  n _ nuke.thisNode()
   
-  nodec = n['curves']
-  nlayer = nodec.rootLayer
+  nodec _ n['curves']
+  nlayer _ nodec.rootLayer
   
   g__ elements
   # Clear global elements array so that only the current Roto/Rotopaint node's elements are 'autolifed'
-  elements = []
+  elements _ []
   getElements(nlayer)
   
   ___ element __ elements:
     __ element.locked:
-      element.locked = F..
+      element.locked _ F..
       
       # Get keyframes for the 0-indexed control point
       __ isinstance(element, nuke.rotopaint.Stroke):
-	keys = element[0].getControlPointKeyTimes()
+	keys _ element[0].getControlPointKeyTimes()
       ____ isinstance(element, nuke.rotopaint.Shape):
-	keys = element[0].center.getControlPointKeyTimes()
+	keys _ element[0].center.getControlPointKeyTimes()
       
-      firstKey = keys[0]
-      lastKey = keys[-1]
+      firstKey _ keys[0]
+      lastKey _ keys[-1]
       
-      attrs = element.getAttributes()
+      attrs _ element.getAttributes()
       attrs.set('ltn', firstKey) # frame range 'from' value
       attrs.set('ltm', lastKey) # frame range 'to' value
       attrs.set('ltt', 4) # set 'lifetime type' of element to 'frame range' - index 4 in combobox
       
-      element.locked = T..
+      element.locked _ T..
       nodec.changed()
 
-nuke.addOnCreate(addAutoLife, nodeClass='Roto')
-nuke.addOnCreate(addAutoLife, nodeClass='RotoPaint')
+nuke.addOnCreate(addAutoLife, nodeClass_'Roto')
+nuke.addOnCreate(addAutoLife, nodeClass_'RotoPaint')

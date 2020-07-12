@@ -23,39 +23,39 @@ ____ smartLink.info ______ __product__
 ____ smartLink.constants ______ ALT, CTRL, KEY, FAVORITES, PREFIX_FAVORITES, SHIFT, SMARTLINK
 
 ___ load_icons():
-    this_dir = __.path.dirname( -f)
-    dir_icon = __.path.join(this_dir, 'icons')
-    dir_icon = __.path.n_p_(dir_icon)
-    icons = {}
+    this_dir _ __.path.dirname( -f)
+    dir_icon _ __.path.join(this_dir, 'icons')
+    dir_icon _ __.path.n_p_(dir_icon)
+    icons _ {}
     ___ file_ __ __.listdir(dir_icon):
-        name = __.path.splitext(file_)[0]
-        path = __.path.join(dir_icon, file_)
-        icons[name] = path
+        name _ __.path.splitext(file_)[0]
+        path _ __.path.join(dir_icon, file_)
+        icons[name] _ path
 
     r_ icons
 
 
-___ set_style_sheet(widget, style = 'styles.qss'):
-    this_dir = __.path.join(__.path.dirname( -f))
-    styles = __.path.join(this_dir, 'styles', style)
-    styles = __.path.n_p_(styles)
+___ set_style_sheet(widget, style _ 'styles.qss'):
+    this_dir _ __.path.join(__.path.dirname( -f))
+    styles _ __.path.join(this_dir, 'styles', style)
+    styles _ __.path.n_p_(styles)
     __ __.path.isfile(styles):
         w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
 
 ___ move_widget(widget_to_move, click_pos, event):
-    x, y = click_pos
-    widget_to_move.xy = event.globalPos() - ?C...QPoint(x, y)
+    x, y _ click_pos
+    widget_to_move.xy _ event.globalPos() - ?C...QPoint(x, y)
     widget_to_move.move(widget_to_move.xy)
 
 
 ___ get_tool_root(which):
     __ which __ 'private':
-        cragl_dir = '.cragl'
+        cragl_dir _ '.cragl'
     ____
-        cragl_dir = 'cragl'
-    root = __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
+        cragl_dir _ 'cragl'
+    root _ __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
     __ no. __.path.isdir(root):
         ___
             __.makedirs(root)
@@ -65,75 +65,75 @@ ___ get_tool_root(which):
     r_ root
 
 
-___ write_log(text, tool = 'li'):
+___ write_log(text, tool _ 'li'):
     w__ o..(get_log_file(), 'a') __ file_:
-        log_time_format = '%d.%m.%Y %H:%M:%S'
-        log_time = ti__.strftime(log_time_format, ti__.localtime())
+        log_time_format _ '%d.%m.%Y %H:%M:%S'
+        log_time _ ti__.strftime(log_time_format, ti__.localtime())
         file_.write('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ get_log_file():
-    connect_dir = __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
+    connect_dir _ __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
     __ no. __.path.isdir(connect_dir):
         __.makedirs(connect_dir)
-    log_file = __.path.join(connect_dir, 'connectlog.txt')
+    log_file _ __.path.join(connect_dir, 'connectlog.txt')
     __ no. __.path.isfile(log_file):
         w__ o..(log_file, 'w') __ lf:
-            log_template = 'connect log\n{}\n'.f..('-' * 50)
+            log_template _ 'connect log\n{}\n'.f..('-' * 50)
             lf.write(log_template)
     r_ log_file
 
 
 ___ load_settings():
-    settings_xml = get_settings_xml()
-    settings = {}
+    settings_xml _ get_settings_xml()
+    settings _ {}
     __ check_xml_ok(settings_xml):
-        settings_tree = ET.parse(settings_xml)
-        settings_root = settings_tree.getroot()
+        settings_tree _ ET.parse(settings_xml)
+        settings_root _ settings_tree.getroot()
         ___ setting __ settings_root.find('settings').f_a_('setting'):
-            value = setting.text
+            value _ setting.text
             __ value __ 'True':
-                value = T..
+                value _ T..
             ____ value __ 'False':
-                value = F..
+                value _ F..
             ____ ',' __ value:
-                value = [ val.strip() ___ val __ value.split(',') ]
-            settings[setting.get('name')] = value
+                value _ [ val.strip() ___ val __ value.split(',') ]
+            settings[setting.get('name')] _ value
 
     r_ settings
 
 
 ___ load_presets():
-    settings_xml = get_settings_xml()
-    presets = OrderedDict()
+    settings_xml _ get_settings_xml()
+    presets _ OrderedDict()
     __ check_xml_ok(settings_xml):
-        settings_tree = ET.parse(settings_xml)
-        settings_root = settings_tree.getroot()
+        settings_tree _ ET.parse(settings_xml)
+        settings_root _ settings_tree.getroot()
         ___ preset __ settings_root.find('backdrops').f_a_('backdrop'):
-            presets[preset.get('name')] = {'icon': preset.get('icon'),
+            presets[preset.get('name')] _ {'icon': preset.get('icon'),
              'color': [ float(val.strip()) ___ val __ preset.get('color').split(',') ]}
 
     r_ presets
 
 
 ___ get_xml_elements():
-    xml = get_settings_xml()
-    tree = ET.parse(xml)
-    root = tree.getroot()
+    xml _ get_settings_xml()
+    tree _ ET.parse(xml)
+    root _ tree.getroot()
     r_ (xml, root, tree)
 
 
 ___ get_settings_xml():
-    settings_xml = __.path.join(get_tool_root('private'), 'settings.xml')
+    settings_xml _ __.path.join(get_tool_root('private'), 'settings.xml')
     __ no. __.path.isfile(settings_xml):
         ___
             w__ o..(settings_xml, 'w') __ look_template:
-                template = templates.SETTINGS
+                template _ templates.SETTINGS
                 look_template.write(template.strip())
-                msg = "{} settings doesn't exist. created template at: {}".f..(__product__, settings_xml)
+                msg _ "{} settings doesn't exist. created template at: {}".f..(__product__, settings_xml)
                 write_log(msg)
         ______
-            msg = 'Failed writing {} settings template at: {}'.f..(__product__, settings_xml)
+            msg _ 'Failed writing {} settings template at: {}'.f..(__product__, settings_xml)
             write_log(msg)
 
     check_xml_ok(settings_xml)
@@ -143,14 +143,14 @@ ___ get_settings_xml():
 
 ___ clear_layout(layout):
     while layout.count():
-        child = layout.takeAt(0)
+        child _ layout.takeAt(0)
         __ child.widget():
             child.widget().deleteLater()
 
 
 ___ move_layout_elements(source_layout, dest_layout):
     while source_layout.count():
-        element = source_layout.takeAt(0)
+        element _ source_layout.takeAt(0)
         ___
             dest_layout.addLayout(element)
         except TypeError:
@@ -170,46 +170,46 @@ ___ check_xml_values_exist():
         check_xml_value_exists('settings', 'setting', 'name', key, value)
 
 
-___ check_xml_value_exists(parent, section, key1, value1, text, key2 = '', value2 = ''):
-    xml = __.path.join(get_tool_root('private'), 'settings.xml')
-    tree = ET.parse(xml)
-    root = tree.getroot()
-    debug = F..
-    item_found = 0
+___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
+    xml _ __.path.join(get_tool_root('private'), 'settings.xml')
+    tree _ ET.parse(xml)
+    root _ tree.getroot()
+    debug _ F..
+    item_found _ 0
     ___ child __ root.find(parent).f_a_(section):
         __ child.get(key1) __ value1:
-            item_found += 1
+            item_found +_ 1
             __ debug:
                 print '{} | settings exists: {}|{}|{}|{}|{}|{}|{}'.f..(__product__, parent, section, key1, value1, text, key2, value2)
             r_
 
     __ item_found __ 0:
-        elem = ET.Element(section)
+        elem _ ET.Element(section)
         elem.set(key1, value1)
-        __ key2 != '':
+        __ key2 !_ '':
             elem.set(key2, value2)
-        elem.text = text
+        elem.text _ text
         root.find(parent).ap..(elem)
         w__ o..(xml, 'w') __ xml:
             prettyprint(root)
-            tree.write(xml, encoding='utf-8', xml_declaration=T..)
+            tree.write(xml, encoding_'utf-8', xml_declaration_T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
-___ prettyprint(elem, level = 0):
-    i = '\n' + level * '  '
+___ prettyprint(elem, level _ 0):
+    i _ '\n' + level * '  '
     __ le.(elem):
         __ no. elem.text or no. elem.text.strip():
-            elem.text = i + '  '
+            elem.text _ i + '  '
         __ no. elem.tail or no. elem.tail.strip():
-            elem.tail = i
+            elem.tail _ i
         ___ elem __ elem:
             prettyprint(elem, level + 1)
 
         __ no. elem.tail or no. elem.tail.strip():
-            elem.tail = i
+            elem.tail _ i
     ____ level and (no. elem.tail or no. elem.tail.strip()):
-        elem.tail = i
+        elem.tail _ i
 
 
 ___ check_xml_ok(xml):
@@ -218,8 +218,8 @@ ___ check_xml_ok(xml):
             ET.fromstring(xml_file.read())
         r_ T..
     ______
-        m.. = 'The {} settings file seems to be broken. Do you want to reset it now?'.f..(__product__)
-        reset_settings_xml = dialogs.ask_dialog(m.., process_label='reset', color_process='actionButton')
+        m.. _ 'The {} settings file seems to be broken. Do you want to reset it now?'.f..(__product__)
+        reset_settings_xml _ dialogs.ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
             __ __.path.isfile(xml):
                 __.remove(xml)
@@ -227,20 +227,20 @@ ___ check_xml_ok(xml):
 
 
 ___ update_settings(key, value):
-    xml, root, tree = get_xml_elements()
+    xml, root, tree _ get_xml_elements()
     ___ setting __ root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
-            setting.text = value
+            setting.text _ value
             w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
-                tree.write(xml, encoding='utf-8', xml_declaration=T..)
+                tree.write(xml, encoding_'utf-8', xml_declaration_T..)
             r_
 
     raise ValueError("Invalid key '{}'. No such key in settings.".f..(key))
 
 
 ___ update_preset(preset_name, key, value):
-    xml, root, tree = get_xml_elements()
+    xml, root, tree _ get_xml_elements()
     ___ preset __ root.find('backdrops').f_a_('backdrop'):
         __ preset.get('name') __ preset_name:
             preset.set(key, value)
@@ -248,18 +248,18 @@ ___ update_preset(preset_name, key, value):
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=T..)
+        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ load_tooltips(parent, section):
-    this_dir = __.path.dirname( -f)
-    tooltips_file = __.path.join(this_dir, 'data', 'tooltips.json')
-    tooltips_file = __.path.n_p_(tooltips_file)
+    this_dir _ __.path.dirname( -f)
+    tooltips_file _ __.path.join(this_dir, 'data', 'tooltips.json')
+    tooltips_file _ __.path.n_p_(tooltips_file)
     __ no. __.path.isfile(tooltips_file):
         r_
     w__ o..(tooltips_file) __ json_file:
         ___
-            ttdata = j___.load(json_file)
+            ttdata _ j___.load(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
@@ -279,7 +279,7 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
+            msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             ____ smartLink ______ dialogs
             dialogs.show_message_box(N.., msg)
 
@@ -287,16 +287,16 @@ ___ open_website(url):
 
 
 ___ center_window(window):
-    geometry = window.frameGeometry()
-    centerpoint = ?W...QDesktopWidget().availableGeometry().center()
+    geometry _ window.frameGeometry()
+    centerpoint _ ?W...QDesktopWidget().availableGeometry().center()
     geometry.moveCenter(centerpoint)
     window.move(geometry.topLeft())
 
 
 ___ move_window_under_cursor(window):
-    position = get_cursor_position()
-    window_center = ?C...QPoint(0.5 * window.width(), 0.5 * window.height())
-    position = position - window_center
+    position _ get_cursor_position()
+    window_center _ ?C...QPoint(0.5 * window.width(), 0.5 * window.height())
+    position _ position - window_center
     window.move(position)
 
 
@@ -311,16 +311,16 @@ ___ create_uid():
 ___ get_next_link_name():
 
     ___ split_nr(string):
-        regex = re.compile('(\\d+)')
-        element = regex.split(string)
+        regex _ re.compile('(\\d+)')
+        element _ regex.split(string)
         r_ [ (int(y) __ y.isdigit() ____ y) ___ y __ element ]
 
     ___ _increase(groups):
-        index = int(groups.group(2)) + 1
+        index _ int(groups.group(2)) + 1
         r_ '{}{}'.f..(groups.group(1), index)
 
-    pattern = '(link_)(\\d+)'
-    node_names = sorted([ node.name() ___ node __ ?.allNodes() __ re.search(pattern, node.name()) ], key=split_nr)
+    pattern _ '(link_)(\\d+)'
+    node_names _ sorted([ node.name() ___ node __ ?.allNodes() __ re.search(pattern, node.name()) ], key_split_nr)
     __ node_names:
         r_ re.sub(pattern, _increase, node_names[-1])
     ____
@@ -332,7 +332,7 @@ ___ zoom(node):
 
 
 ___ get_repr_class_nodes():
-    nodes = []
+    nodes _ []
     ___ node_class __ ['PostageStamp', 'Dot']:
         nodes.extend(?.allNodes(node_class))
 
@@ -364,7 +364,7 @@ ___ string_from_list(list_):
 
 
 ___ get_root_favorites_knob():
-    favorites_knob = ?.root().knob(PREFIX_FAVORITES)
+    favorites_knob _ ?.root().knob(PREFIX_FAVORITES)
     __ favorites_knob:
         r_ favorites_knob
     ____
@@ -372,20 +372,20 @@ ___ get_root_favorites_knob():
 
 
 ___ add_smartlink_tab_widgets():
-    root = ?.root()
+    root _ ?.root()
     __ SMARTLINK __ root.knobs():
         r_
-    tab = ?.Tab_Knob(SMARTLINK)
-    favorites = ?.String_Knob(PREFIX_FAVORITES, FAVORITES)
+    tab _ ?.T_K..(SMARTLINK)
+    favorites _ ?.String_Knob(PREFIX_FAVORITES, FAVORITES)
     favorites.setEnabled(F..)
-    root.addKnob(tab)
-    root.addKnob(favorites)
+    root.aK..(tab)
+    root.aK..(favorites)
     r_ favorites
 
 
 ___ add_to_root_favorites(uid):
-    favorites_knob = get_root_favorites_knob()
-    favorites = [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
+    favorites_knob _ get_root_favorites_knob()
+    favorites _ [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
     __ uid __ favorites:
         r_
     favorites.ap..(uid)
@@ -393,8 +393,8 @@ ___ add_to_root_favorites(uid):
 
 
 ___ remove_from_root_favorites(uid):
-    favorites_knob = get_root_favorites_knob()
-    favorites = [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
+    favorites_knob _ get_root_favorites_knob()
+    favorites _ [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
     ___
         del favorites[favorites.index(uid)]
     except ValueError:
@@ -413,14 +413,14 @@ ___ rgb_to_hex(r, g, b):
 ___ swap_presets(preset1, preset2):
 
     ___ _find_preset(root, name):
-        index = 0
+        index _ 0
         ___ preset __ root.find('backdrops').f_a_('backdrop'):
             __ preset.get('name') __ name:
                 r_ [preset, index]
-            index += 1
+            index +_ 1
 
-    xml, root, tree = get_xml_elements()
-    presets = []
+    xml, root, tree _ get_xml_elements()
+    presets _ []
     presets.ap..(_find_preset(root, preset1))
     presets.ap..(_find_preset(root, preset2))
     __ no. all(presets):
@@ -431,11 +431,11 @@ ___ swap_presets(preset1, preset2):
     root.find('backdrops').insert(presets[1][1], presets[0][0])
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=T..)
+        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ remove_preset(name):
-    xml, root, tree = get_xml_elements()
+    xml, root, tree _ get_xml_elements()
     ___ preset __ root.find('backdrops').f_a_('backdrop'):
         __ preset.get('name') __ name:
             root.find('backdrops').remove(preset)
@@ -443,32 +443,32 @@ ___ remove_preset(name):
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=T..)
+        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ add_preset(name, color, icon):
-    xml, root, tree = get_xml_elements()
-    elem = ET.Element('backdrop')
+    xml, root, tree _ get_xml_elements()
+    elem _ ET.Element('backdrop')
     elem.set('name', name)
     elem.set('color', color)
     elem.set('icon', icon)
     root.find('backdrops').ap..(elem)
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding='utf-8', xml_declaration=T..)
+        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ add_to_favorites():
     ____ smartLink ______ nodes
-    sel_nodes = ?.sN..
+    sel_nodes _ ?.sN..
     __ no. sel_nodes:
-        msg = 'Please select nodes that you would like to add to favorites.'
+        msg _ 'Please select nodes that you would like to add to favorites.'
         dialogs.show_message_box(N.., msg)
         r_
     ____
         ___ node __ sel_nodes:
-            nodes.NodeObject.register_link_tab(node=node)
-            uid = nodes.NodeObject.get_uid(node)
+            nodes.NodeObject.register_link_tab(node_node)
+            uid _ nodes.NodeObject.get_uid(node)
             add_to_root_favorites(uid)
 
         ___
@@ -481,9 +481,9 @@ ___ add_to_favorites():
 
 ___ get_main_window():
     ___
-        module = ?W..
+        module _ ?W..
     except AttributeError:
-        module = ?G..
+        module _ ?G..
 
     ___
         r_ module.?A..(___.argv)

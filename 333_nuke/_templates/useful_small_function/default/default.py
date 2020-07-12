@@ -30,9 +30,9 @@ g__ default_dir
 g__ knobInit
 g__ ctrl
 
-default_dir = __.path.dirname( -f)
-knobInit = default_dir+"/init.py"
-ctrl = F..
+default_dir _ __.path.dirname( -f)
+knobInit _ default_dir+"/init.py"
+ctrl _ F..
 
 
 ___ checkExistingInit():
@@ -58,11 +58,11 @@ ___ createDefault():
 	create custom knobDefault value
 	'''
 
-	n = ?.thisNode()
-	k = ?.thisKnob()
+	n _ ?.thisNode()
+	k _ ?.thisKnob()
 	
 	#set default for current nuke session
-	?.knobDefault("{node}.{knob}".f..(node=n.Class(), knob=k.name()), "{val}".f..(val=k.value()))
+	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.name()), "{val}".f..(val_k.value()))
 
 	# set 
 	updateKnobInit(n.Class(),k.name(),k.v..,"write")
@@ -72,11 +72,11 @@ ___ resetToDefault():
 	reset to standard knob default value
 	'''
 
-	n = ?.thisNode()
-	k = ?.thisKnob()
+	n _ ?.thisNode()
+	k _ ?.thisKnob()
 
 	k.sV..(k.defaultValue())
-	?.knobDefault("{node}.{knob}".f..(node=n.Class(), knob=k.name()), "{val}".f..(val=k.defaultValue()))
+	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.name()), "{val}".f..(val_k.defaultValue()))
 	updateKnobInit(n.Class(),k.name(),"","del")
 
 ___ updateKnobInit(node,knob,value,mode):
@@ -84,15 +84,15 @@ ___ updateKnobInit(node,knob,value,mode):
 	update knob init.py - delete or append knobDefault depending on mode
 	'''
 
-	knobDefaults = helper.openFileReturnArr(knobInit)
+	knobDefaults _ helper.openFileReturnArr(knobInit)
 
 	__ mode __ "del":
 		
-		found = 0
+		found _ 0
 
 		___ d __ knobDefaults:
-			__ "{node}.{knob}".f..(node=node, knob=knob) __ d:
-				found+=1
+			__ "{node}.{knob}".f..(node_node, knob_knob) __ d:
+				found+_1
 				__ ctrl __ T..:
 					print "found in knobInit"
 					print d
@@ -105,7 +105,7 @@ ___ updateKnobInit(node,knob,value,mode):
 		
 		#write new knobInit
 		___
-			f = o..(knobInit,'w+')
+			f _ o..(knobInit,'w+')
 			___ d __ knobDefaults:
 				f.write(d+"\n")
 			f.c__
@@ -116,8 +116,8 @@ ___ updateKnobInit(node,knob,value,mode):
 		#get rid of old knobDefaults of the current knob and write new knobDefault			
 		updateKnobInit(node,knob,"","del")
 		___
-			f = o..(knobInit,'a')
-			newKnobDefault = 'nuke.knobDefault("{node}.{knob}", "{val}")\n'.f..(node=node, knob=knob, val=value)
+			f _ o..(knobInit,'a')
+			newKnobDefault _ 'nuke.knobDefault("{node}.{knob}", "{val}")\n'.f..(node_node, knob_knob, val_value)
 			f.write(newKnobDefault)
 			f.c__
 		______

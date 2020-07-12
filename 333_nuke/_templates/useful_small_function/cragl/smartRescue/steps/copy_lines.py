@@ -71,16 +71,16 @@ c_ CopyLines(BaseStep):
 
     ___ process
         """Copy lines to backup file."""
-        first_line = setup["first_line"]
-        last_line = setup["last_line"]
+        first_line _ setup["first_line"]
+        last_line _ setup["last_line"]
 
         logger.info("Using lines %s - %s", first_line, last_line)
 
-        path_temp = "{}_".f..(path)
+        path_temp _ "{}_".f..(path)
 
         w__ o..(path, "r") __ src, o..(path_temp, "w") __ dest:
-            lines = src.readlines()
-            copy_lines = lines[first_line-1:last_line]
+            lines _ src.readlines()
+            copy_lines _ lines[first_line-1:last_line]
             dest.write("".join(copy_lines))
 
         __.rename(path_temp, path)

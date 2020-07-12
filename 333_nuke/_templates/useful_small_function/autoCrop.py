@@ -1,12 +1,12 @@
 ______ nuke
 ______ nukescripts
 
-globalFirstFrame = str(int(nuke.root().knob('first_frame').value()))
-globalLastFrame = str(int(nuke.root().knob('last_frame').value()))
+globalFirstFrame _ str(int(nuke.root().knob('first_frame').value()))
+globalLastFrame _ str(int(nuke.root().knob('last_frame').value()))
 
 
 ___ selectionCheck():
-    selection = nuke.sN..
+    selection _ nuke.sN..
     ___ i __ selection:
         __ range(le.(selection)) __ 0:
             r_ F..
@@ -16,14 +16,14 @@ ___ selectionCheck():
 
 ___ allDependentNodesAndInputs(node, deepNumber):
 
-    dependent = node.dependent()
-    dependentInputs = []
+    dependent _ node.dependent()
+    dependentInputs _ []
     ___ d __ dependent:
-        x = 0
-        while x <= deepNumber:
+        x _ 0
+        while x <_ deepNumber:
             __ d.input(x) __ node:
                 dependentInputs.append([d, x])
-            x = x + 1
+            x _ x + 1
     r_ dependentInputs
 
 
@@ -31,7 +31,7 @@ c_ autoCropPanel(nukescripts.PythonPanel):
     pass
 
 ___ autoCrop():
-    initClass = autoCropPanel()
+    initClass _ autoCropPanel()
 
     __ selectionCheck() __ no. N..:
         __ initClass.sMD..:

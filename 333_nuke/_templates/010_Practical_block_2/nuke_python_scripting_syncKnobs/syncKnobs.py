@@ -1,12 +1,12 @@
 ______ ?
 
-d = __import__('__main__').__dict__
+d _ __import__('__main__').__dict__
 
 ___ switch():
     __ 'syncItem' __ d:
-        syncItem = d['syncItem']
-        a = syncItem.action()
-        data = a.data()
+        syncItem _ d['syncItem']
+        a _ syncItem.action()
+        data _ a.data()
         __ data:
             # off
             a.setData(N..)
@@ -25,13 +25,13 @@ ___ callback(v):
         ?.removeKnobChanged(sync)
 
 ___ sync():
-    k = ?.thisKnob()
+    k _ ?.thisKnob()
     __ no. k.name() __ ['name', 'selected', 'showPanel', 'hidePanel']:
-        n = ?.thisNode()
-        other = ?.selectedNodes(n.Class())
-        v = k.getValue()
+        n _ ?.thisNode()
+        other _ ?.selectedNodes(n.Class())
+        v _ k.getValue()
         #>>>>>
-        d['lastVal'] = v
+        d['lastVal'] _ v
         ___ node __ other:
             __ no. node __ n:
                 node[k.name()].sV..(v)

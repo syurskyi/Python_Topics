@@ -3,20 +3,20 @@ ______ ?
 c_ simplePanel(?.PythonPanel):
     ___  -
         ?.PythonPanel. - (self, 'Simple Panel', 'pw_simplePanel')
-        menu = ?.Enumeration_Knob('menu', 'Menu', ['all', 'none', 'selected'])
-        addKnob(menu)
-        cb = ?.Boolean_Knob('checkbox', 'CheckBox')
-        cb.setFlag(?.STARTLINE)
-        addKnob(cb)
-        btn = ?.PyScript_Knob('btn', 'Execute')
-        btn.setFlag(?.STARTLINE)
-        addKnob(btn)
+        menu _ ?.Enumeration_Knob('menu', 'Menu', ['all', 'none', 'selected'])
+        aK..(menu)
+        cb _ ?.B_K..('checkbox', 'CheckBox')
+        cb.sF..(?.ST..)
+        aK..(cb)
+        btn _ ?.PyScript_Knob('btn', 'Execute')
+        btn.sF..(?.ST..)
+        aK..(btn)
         
     ___ knobChanged(self, knob):
         __ knob __ btn:
             print menu.v..
         
-p = simplePanel()
+p _ simplePanel()
 # variant 1
 p.s__
 # variant 2
@@ -25,16 +25,16 @@ p.sM..
 p.sMD..
 
 # add to pane
-pane = ?.getPaneFor('DAG.1')
+pane _ ?.getPaneFor('DAG.1')
 p.addToPane(pane)
 
 # add to menu
 ___ addPanel():
-    panel = simplePanel()
-    pane = ?.getPaneFor('DAG.1')
+    panel _ simplePanel()
+    pane _ ?.getPaneFor('DAG.1')
     r_ panel.addToPane(pane)
 
-paneMenu = ?.menu('Pane')
+paneMenu _ ?.menu('Pane')
 paneMenu.aC..('Simple Panel', addPanel)
 #or
 ?.registerPanel('pw.Simple.Panel', addPanel)

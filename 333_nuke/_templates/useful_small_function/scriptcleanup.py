@@ -60,7 +60,7 @@
 
 # ignore_list
 # ignore all nodes that are from one of these node classes
-ignore_list = ["BackdropNode"]
+ignore_list _ ["BackdropNode"]
 
 # no need to change anything from here. Edit only if you exactly know what you're doing
 
@@ -82,9 +82,9 @@ ___ collect_nodes(mode):
     :return: list nodes to cleanup
     """
 
-    cleanup_list = []
-    dependent_ = mode[0]
-    dependencies_ = mode[1]
+    cleanup_list _ []
+    dependent_ _ mode[0]
+    dependencies_ _ mode[1]
 
     ___ node __ nuke.allNodes():
 
@@ -117,7 +117,7 @@ ___ cleanup():
     """
 
     g__ c
-    c = CleanModeDialog()
+    c _ CleanModeDialog()
     c.raise_()
     c.s__
 
@@ -138,20 +138,20 @@ c_ CleanModeDialog(?W..):
         create_signals()
 
     ___ create_widgets
-        check_dependent = QCheckBox("dependent: Node's output is not used (all nodes that read information from this node)")
+        check_dependent _ QCheckBox("dependent: Node's output is not used (all nodes that read information from this node)")
         check_dependent.setChecked(T..)
-        check_dependencies = QCheckBox("dependencies: Node's input is not used (all nodes referred to by this node)")
+        check_dependencies _ QCheckBox("dependencies: Node's input is not used (all nodes referred to by this node)")
         check_dependencies.setChecked(T..)
-        push_collect = ?PB..("collect")
+        push_collect _ ?PB..("collect")
         push_collect.setStyleSheet("QPushButton{background-color: rgba(51, 204, 255, 150);}")
-        push_cancel = ?PB..("cancel")
+        push_cancel _ ?PB..("cancel")
 
     ___ create_layouts
-        layout_master = ?VB..
+        layout_master _ ?VB..
         layout_master.aW..(check_dependent)
         layout_master.aW..(check_dependencies)
 
-        layout_push = QHBoxLayout()
+        layout_push _ QHBoxLayout()
         layout_push.aW..(push_collect)
         layout_push.aW..(push_cancel)
         layout_master.addLayout(layout_push)
@@ -168,7 +168,7 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        cleanup_list = collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
+        cleanup_list _ collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
         populate(cleanup_list)
         sQT..("cleanup script")
 
@@ -185,9 +185,9 @@ c_ CleanModeDialog(?W..):
         except Exception, e:
             pass
 
-        table_cleanup = QTableWidget()
+        table_cleanup _ QTableWidget()
 
-        checkboxes = []
+        checkboxes _ []
 
         # set dimensions
         table_cleanup.setRowCount(le.(cleanup_list))
@@ -200,19 +200,19 @@ c_ CleanModeDialog(?W..):
         table_cleanup.setHorizontalHeaderItem(1, QTableWidgetItem("check"))
         table_cleanup.setHorizontalHeaderItem(2, QTableWidgetItem("delete"))
 
-        r = 0
+        r _ 0
         ___ node __ cleanup_list:
 
             # node
-            push_node = ?PB..(node.name())
+            push_node _ ?PB..(node.name())
             push_node.setProperty("node", node.name())
             table_cleanup.setCellWidget(r, 0, push_node)
             push_node.c__.c..(jump_to_node)
 
             # push checkbox
-            widget = ?W..()
-            layout_widget = QHBoxLayout()
-            checkbox = QCheckBox()
+            widget _ ?W..()
+            layout_widget _ QHBoxLayout()
+            checkbox _ QCheckBox()
             checkbox.setProperty("node", node.name())
             layout_widget.addStretch()
             layout_widget.aW..(checkbox)
@@ -222,25 +222,25 @@ c_ CleanModeDialog(?W..):
             checkboxes.append(checkbox)
 
             # remove push
-            push_remove_node = ?PB..("delete")
+            push_remove_node _ ?PB..("delete")
             push_remove_node.setProperty("node", node.name())
             push_remove_node.setStyleSheet("QPushButton{background-color: rgb(90,30,30);}")
             table_cleanup.setCellWidget(r, 2, push_remove_node)
-            push_remove_node.c__.c..(lambda r=r, node=node: remove_node(r, node.name()))
+            push_remove_node.c__.c..(lambda r_r, node_node: remove_node(r, node.name()))
 
-            r += 1
+            r +_ 1
 
         # resize main
         resize(QSize(width(), 200 + (r * 40)))
 
-        group_cleanup = QGroupBox()
-        layout_cleanup_master = ?VB..
+        group_cleanup _ QGroupBox()
+        layout_cleanup_master _ ?VB..
         layout_cleanup_master.aW..(table_cleanup)
 
-        push_toggle = ?PB..("toggle check/uncheck nodes")
-        push_disable_checked = ?PB..("disable all checked nodes")
-        push_remove_checked = ?PB..("remove all checked nodes")
-        layout_cleanup_push = QHBoxLayout()
+        push_toggle _ ?PB..("toggle check/uncheck nodes")
+        push_disable_checked _ ?PB..("disable all checked nodes")
+        push_remove_checked _ ?PB..("remove all checked nodes")
+        layout_cleanup_push _ QHBoxLayout()
         layout_cleanup_push.aW..(push_toggle)
         layout_cleanup_push.aW..(push_disable_checked)
         layout_cleanup_push.aW..(push_remove_checked)
@@ -251,7 +251,7 @@ c_ CleanModeDialog(?W..):
         push_disable_checked.c__.c..(disable_checked)
         push_remove_checked.c__.c..(remove_nodes)
 
-        push_close = ?PB..("close")
+        push_close _ ?PB..("close")
         push_close.c__.c..(close)
         layout_master.aW..(group_cleanup)
         layout_master.aW..(push_close)
@@ -262,7 +262,7 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        node = nuke.toNode(sender().property("node"))
+        node _ nuke.toNode(sender().property("node"))
         node.selectOnly()
         nuke.zoom(1, (node.xpos(), node.ypos()))
 
@@ -287,7 +287,7 @@ c_ CleanModeDialog(?W..):
             __ c.isChecked():
                 nuke.delete(nuke.toNode(c.property("node")))
 
-        cleanup_list = collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
+        cleanup_list _ collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
         process_cleanup()
 
     ___ disable_checked
@@ -298,7 +298,7 @@ c_ CleanModeDialog(?W..):
 
         ___ c __ checkboxes:
             ___
-                disable = nuke.toNode(c.property("node"))["disable"].setValue(c.isChecked())
+                disable _ nuke.toNode(c.property("node"))["disable"].setValue(c.isChecked())
             except Exception, e:
                 continue
 

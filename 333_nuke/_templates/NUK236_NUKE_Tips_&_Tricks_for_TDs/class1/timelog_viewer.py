@@ -5,8 +5,8 @@ ______ shutil
 ______ j___
 ______ ?
 
-CURRENT_USER = getpass.getuser()
-LOG_DIR = "/Users/hugoleveille/Desktop/logs"
+CURRENT_USER _ getpass.getuser()
+LOG_DIR _ "/Users/hugoleveille/Desktop/logs"
 
 
 c_ Panel(?.PythonPanel):
@@ -15,29 +15,29 @@ c_ Panel(?.PythonPanel):
 
         setMinimumSize(500,500)
 
-        date_combo_box = ?.Enumeration_Knob("date", "Date", [])
-        delete_push_button = ?.PyScript_Knob("delete", "Delete", "")
-        log_knob = ?.Multiline_Eval_String_Knob("text","Log","")
+        date_combo_box _ ?.Enumeration_Knob("date", "Date", [])
+        delete_push_button _ ?.PyScript_Knob("delete", "Delete", "")
+        log_knob _ ?.Multiline_Eval_String_Knob("text","Log","")
 
-        addKnob(date_combo_box)
-        addKnob(delete_push_button)
-        addKnob(log_knob)
+        aK..(date_combo_box)
+        aK..(delete_push_button)
+        aK..(log_knob)
 
         build_date_combo_box()
 
     ___ delete_log
-        m.. = ?.ask("Are you sure you want to delete this log?")
+        m.. _ ?.ask("Are you sure you want to delete this log?")
         __ no. m..:
             r_
 
-        date = date_combo_box.v..
-        path = "%s/%s/%s" % (LOG_DIR, CURRENT_USER,date)
+        date _ date_combo_box.v..
+        path _ "%s/%s/%s" % (LOG_DIR, CURRENT_USER,date)
         shutil.rmtree(path)
         log_knob.sV..("")
         build_date_combo_box()
 
     ___ build_date_combo_box
-        log_dir = "%s/%s" % (LOG_DIR, CURRENT_USER)
+        log_dir _ "%s/%s" % (LOG_DIR, CURRENT_USER)
         date_combo_box.setValues(__.walk(log_dir).next()[1])
 
         __ date_combo_box.values():
@@ -46,16 +46,16 @@ c_ Panel(?.PythonPanel):
 
     ___ get_log
 
-        date = date_combo_box.v..
-        json_path = "%s/%s/%s/log.json" % (LOG_DIR, CURRENT_USER,date)
-        log = j___.load(o..(json_path))
+        date _ date_combo_box.v..
+        json_path _ "%s/%s/%s/log.json" % (LOG_DIR, CURRENT_USER,date)
+        log _ j___.load(o..(json_path))
         r_ log
 
     ___ build_log_text(self, log):
-        txt = ""
+        txt _ ""
         ___ i __ log:
-            ti__ = log[i]
-            txt += "%s\n%s\n\n" % (i, seconds_to_str(ti__))
+            ti__ _ log[i]
+            txt +_ "%s\n%s\n\n" % (i, seconds_to_str(ti__))
         log_knob.sV..(txt)
 
     ___ knobChanged(self, knob):
@@ -68,18 +68,18 @@ c_ Panel(?.PythonPanel):
 
     ___ delete_log
 
-        m.. = ?.ask("Are you sure you want to delete this log?")
+        m.. _ ?.ask("Are you sure you want to delete this log?")
         __ no. m..:
             r_
 
-        date = date_combo_box.v..
-        path = "%s/%s/%s" % (LOG_DIR, CURRENT_USER, date)
+        date _ date_combo_box.v..
+        path _ "%s/%s/%s" % (LOG_DIR, CURRENT_USER, date)
         shutil.rmtree(path)
         log_knob.sV..("")
         build_date_combo_box()
 
     ___ seconds_to_str(self, sec):
 
-        minutes, seconds = divmod(sec, 60)
-        hours, minutes = divmod(minutes, 60)
+        minutes, seconds _ divmod(sec, 60)
+        hours, minutes _ divmod(minutes, 60)
         r_ "%02d:%02d" % (hours, minutes)

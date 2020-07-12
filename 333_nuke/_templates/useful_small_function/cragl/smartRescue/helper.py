@@ -31,7 +31,7 @@ ___ get_nuke_scripts(path, ignore_prefix):
     __ __.path.isfile(path):
         r_ [path]
 
-    rescue_file_pattern = r"rescue_\d+-\d+"
+    rescue_file_pattern _ r"rescue_\d+-\d+"
     r_ [__.path.join(path, file_)
             ___ file_ __ __.listdir(path)
             __ file_.endswith(".nk")
@@ -49,13 +49,13 @@ ___ create_working_file_copies(files):
         list: Absolute file paths of copy working files.
 
     """
-    copy_files = []
-    date = date_now()
+    copy_files _ []
+    date _ date_now()
     ___ file_ __ files:
-        parent_dir, filename = __.path.split(file_)
-        basename = __.path.splitext(filename)[0]
-        copy_filename = "{}_rescue_{}.nk".f..(basename, date)
-        dest = __.path.join(parent_dir, copy_filename)
+        parent_dir, filename _ __.path.split(file_)
+        basename _ __.path.splitext(filename)[0]
+        copy_filename _ "{}_rescue_{}.nk".f..(basename, date)
+        dest _ __.path.join(parent_dir, copy_filename)
         shutil.copy(file_, dest)
         copy_files.ap..(dest)
 
@@ -85,12 +85,12 @@ ___ get_process_folder():
         str: Absolute path of folder to process.
 
     """
-    environment_process_folder = __.environ.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
+    environment_process_folder _ __.environ.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
     __ environment_process_folder:
         r_ environment_process_folder
 
-    this_dir = __.path.dirname( -f)
-    path = __.path.join(this_dir, "..", "process")
+    this_dir _ __.path.dirname( -f)
+    path _ __.path.join(this_dir, "..", "process")
     r_ __.path.n_p_(path)
 
 
@@ -106,11 +106,11 @@ ___ get_config():
             configuration values to use for smartRescue.
 
     """
-    environment_path = __.environ.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
+    environment_path _ __.environ.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
     __ environment_path:
-        path = environment_path
+        path _ environment_path
     ____
-        path = copy_config_file()
+        path _ copy_config_file()
 
     w__ o..(path, "r") __ file_:
         r_ path, j___.load(file_)
@@ -132,15 +132,15 @@ ___ load_icons():
             }
 
     """
-    this_dir = __.path.dirname( -f)
-    dir_icon = __.path.join(this_dir, "icons")
-    dir_icon = __.path.n_p_(dir_icon)
+    this_dir _ __.path.dirname( -f)
+    dir_icon _ __.path.join(this_dir, "icons")
+    dir_icon _ __.path.n_p_(dir_icon)
 
-    icons = {}
+    icons _ {}
     ___ file_ __ __.listdir(dir_icon):
-        name = __.path.splitext(file_)[0]
-        path = __.path.join(dir_icon, file_)
-        icons[name] = path
+        name _ __.path.splitext(file_)[0]
+        path _ __.path.join(dir_icon, file_)
+        icons[name] _ path
 
     r_ icons
 
@@ -156,7 +156,7 @@ ___ get_docstring(path):
 
     """
     w__ o..(path, "r") __ file_:
-        tree = ast.parse(file_.read())
+        tree _ ast.parse(file_.read())
     r_ ast.get_docstring(tree)
 
 
@@ -171,14 +171,14 @@ ___ get_docstring_elements(path):
             body, standard examples and advanced examples
 
     """
-    docstring = get_docstring(path)
-    regex = re.search(DOCSTRING_EXTRACTION_PATTERN, docstring, re.DOTALL)
+    docstring _ get_docstring(path)
+    regex _ re.search(DOCSTRING_EXTRACTION_PATTERN, docstring, re.DOTALL)
     __ regex:
-        description = regex.groupdict()["description"].split("\n")
-        header = description[0]
-        body = "\n".join(description[1:])
-        standard = regex.groupdict()["example_standard"]
-        advanced = regex.groupdict()["example_advanced"]
+        description _ regex.groupdict()["description"].split("\n")
+        header _ description[0]
+        body _ "\n".join(description[1:])
+        standard _ regex.groupdict()["example_standard"]
+        advanced _ regex.groupdict()["example_advanced"]
 
         r_ header, body, standard, advanced
 
@@ -196,8 +196,8 @@ ___ ensure_file_extension(path, ext):
         str: The given path including the given file extension.
 
     """
-    base, extension = __.path.splitext(path)
-    ext = ext.replace(".", "")
+    base, extension _ __.path.splitext(path)
+    ext _ ext.replace(".", "")
     __ extension __ ext:
         r_ path
     r_ "{}.{}".f..(base, ext)
@@ -218,8 +218,8 @@ ___ get_tool_root(which):
         OSError: When the directory could not be created.
 
     """
-    cragl_dir = ".cragl" __ which __ "private" ____ "cragl"
-    root = __.path.join(__.path.expanduser("~"), cragl_dir, NAME)
+    cragl_dir _ ".cragl" __ which __ "private" ____ "cragl"
+    root _ __.path.join(__.path.expanduser("~"), cragl_dir, NAME)
 
     __ no. __.path.isdir(root):
         ___
@@ -250,11 +250,11 @@ ___ copy_config_file():
         str: Absolute path of generated config file.
 
     """
-    dest = get_local_config_file()
+    dest _ get_local_config_file()
     __ no. __.path.isfile(dest):
-        this_dir = __.path.dirname( -f)
-        src = __.path.join(this_dir, "data", "config.json")
-        src = __.path.abspath(src)
+        this_dir _ __.path.dirname( -f)
+        src _ __.path.join(this_dir, "data", "config.json")
+        src _ __.path.abspath(src)
         shutil.copy(src, dest)
     r_ dest
 
@@ -278,6 +278,6 @@ ___ open_website(url):
         ___
             subprocess.P..(['xdg-open', url])
         except OSError:
-            msg = ("Cannot open browser. Please open it manually and "
+            msg _ ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".f..(url))
             raise OSError(msg)
