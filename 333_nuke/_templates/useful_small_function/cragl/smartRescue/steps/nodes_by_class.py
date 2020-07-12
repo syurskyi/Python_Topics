@@ -93,8 +93,8 @@ c_ NodesByClass(NodeStep):
                 __ class_name !_ node_class:
                     continue
 
-                logger.info("%s '%s' because its node class (%s) is "
-                                 "included in %s", setup["mode"],
+                logger.info("@ '@' because its node class (@) is "
+                                 "included in @", setup["mode"],
                                  node.name(), class_name,
                                  setup["node_classes"])
 

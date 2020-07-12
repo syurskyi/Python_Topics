@@ -70,7 +70,7 @@ c_ NodesByName(NodeStep):
             __ node.name() no. __ setup["nodes"]:
                 continue
 
-            logger.info("%s node '%s' because it is included in %s",
+            logger.info("@ node '@' because it is included in @",
                              setup["mode"], node.name(),
                              setup["nodes"])
             handle_node(node)

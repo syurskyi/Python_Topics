@@ -91,20 +91,20 @@ ___ collect_nodes(mode):
         __ node.Class() __ ignore_list:
             continue
 
-        __ dependent_ and dependencies_:
-            __ le.(node.dependent()) __ 0 and le.(node.dependencies()) __ 0 and node.minInputs() > 0 and node.maxOutputs() > 0:
+        __ dependent_ an. dependencies_:
+            __ le.(node.dependent()) __ 0 an. le.(node.dependencies()) __ 0 an. node.minInputs() > 0 an. node.maxOutputs() > 0:
                 cleanup_list.append(node)
 
-        ____ dependent_ and no. dependencies_ and node.maxOutputs() > 0:
+        ____ dependent_ an. no. dependencies_ an. node.maxOutputs() > 0:
             __ le.(node.dependent()) __ 0:
                 cleanup_list.append(node)
 
-        ____ no. dependent_ and dependencies_ and node.minInputs() > 0 and node.maxOutputs() > 0:
+        ____ no. dependent_ an. dependencies_ an. node.minInputs() > 0 an. node.maxOutputs() > 0:
             __ le.(node.dependencies()) __ 0:
                 cleanup_list.append(node)
 
         else:
-            __ node.minInputs() > 0 and node.inputs() __ 0:
+            __ node.minInputs() > 0 an. node.inputs() __ 0:
                 cleanup_list.append(node)
 
     r_ cleanup_list

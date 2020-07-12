@@ -31,7 +31,7 @@ out _ ?.nodes.Output()
 
 reads _ []
 ___ img __ __.listdir(srcpath):
-    path _ __.path.join(srcpath, img).replace('\\','/')
+    path _ __.path.join(srcpath, img).r..('\\','/')
     r _ ?.nodes.Read(file_path, premultiplied_T..)
     reads.ap..(r)
 
@@ -45,7 +45,7 @@ ___ pt __ points:
     tr['translate'].sV..(pt)
     s _ r.height()/float(r.width())
     tr['scaling'].sV..(s, 1)
-    tr['uniform_scale'].setExpression('%s.scale' % grp.name())
+    tr['uniform_scale'].setExpression('@.scale' % grp.name())
     grpScene.setInput(grpScene.inputs(), tr)
     
 out.setInput(0, grpScene)

@@ -5,10 +5,10 @@ c_ global_clipboard():
     ___  -
         __ __.name __ "nt":
             repo _ "R:/Global_Clipboard/"
-            user _ __.environ.get("username")
+            user _ __.en__.get("username")
         ____
             repo _ "/Volumes/resources/Global_Clipboard/"
-            user _ __.environ.get("LOGNAME")
+            user _ __.en__.get("LOGNAME")
 
         saveName _ "tempClipBoard"
         savePath _ "{}{}_{}.nk".f..(repo, saveName, user)

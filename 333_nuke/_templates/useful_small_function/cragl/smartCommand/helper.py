@@ -209,7 +209,7 @@ ___ prettyprint(elem, level _ 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail _ i
-    ____ level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
 
 
@@ -236,7 +236,7 @@ ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel
     __ color_process !_ '':
         __ color_process __ 'actionButton':
             color_process _ '51, 204, 255, 100'
-        style _ 'QPushButton {background-color: rgba(%s)}' % color_process
+        style _ 'QPushButton {background-color: rgba(@)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
@@ -518,7 +518,7 @@ ___ get_basename(path, extension _ F..):
 
 ___ get_module_docstring(path):
     compile_ _ compile(o..(path).read(), path, 'exec')
-    __ compile_.co_consts and i..(compile_.co_consts[0], basestring):
+    __ compile_.co_consts an. i..(compile_.co_consts[0], basestring):
         docstring _ compile_.co_consts[0]
     ____
         docstring _ N..

@@ -159,8 +159,8 @@ c_ ScriptInfo(NodeStep):
             int, int, The first and last frame of the working file.
 
         """
-        first_frame _ int(?.root()["first_frame"].value())
-        last_frame _ int(?.root()["last_frame"].value())
+        first_frame _ in.(?.root()["first_frame"].value())
+        last_frame _ in.(?.root()["last_frame"].value())
         r_ first_frame, last_frame
 
     ___ root_values
@@ -308,7 +308,7 @@ c_ ScriptInfo(NodeStep):
         copy_basename _ "{}_info.txt".f..(basename)
         info_path _ __.path.join(parent_dir, copy_basename)
 
-        logger.info("Creating information file %s", info_path)
+        logger.info("Creating information file @", info_path)
 
         w__ o..(info_path, "w") __ dest:
             separator _ "-" * 50

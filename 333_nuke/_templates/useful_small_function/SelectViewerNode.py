@@ -107,7 +107,7 @@ ___ SelectNode(Viewer,warning):
     r_ nuke.sN..
 
 ___ Zoom(zoom,node):
-    __ zoom.getValue():
+    __ zoom.gV..:
         x1 _ node[0].xpos()
         y1 _ node[0].ypos()
         w1 _ node[0].screenWidth()
@@ -140,9 +140,9 @@ c_ SelectViewerNode(nukescripts.PythonPanel):
 
         Zoom.setValue(F..)
 
-        dividerA _ nuke.Text_Knob("")
+        dividerA _ nuke.T_K..("")
 
-        warning _ nuke.Text_Knob('warning',"")
+        warning _ nuke.T_K..('warning',"")
 
         warning.setVisible(F..)
 

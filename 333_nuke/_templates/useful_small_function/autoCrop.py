@@ -1,8 +1,8 @@
 ______ nuke
 ______ nukescripts
 
-globalFirstFrame _ str(int(nuke.root().knob('first_frame').value()))
-globalLastFrame _ str(int(nuke.root().knob('last_frame').value()))
+globalFirstFrame _ str(in.(nuke.root().knob('first_frame').value()))
+globalLastFrame _ str(in.(nuke.root().knob('last_frame').value()))
 
 
 ___ selectionCheck():

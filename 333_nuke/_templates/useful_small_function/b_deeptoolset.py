@@ -121,8 +121,8 @@ ___ create_node_with_position(nodename,connect_node,x_0,y_0):
      node _ ?.createNode(nodename)
      node['selected'].sV..(F..)
 
-     node.setXpos(int(x))
-     node.setYpos(int(y))
+     node.setXpos(in.(x))
+     node.setYpos(in.(y))
 
      node.setInput(0,connect_node)
 
@@ -140,8 +140,8 @@ ___ create_node_with_position_simple(nodename,x_0,y_0):
      node _ ?.createNode(nodename)
      node['selected'].sV..(F..)
 
-     node.setXpos(int(x))
-     node.setYpos(int(y))
+     node.setXpos(in.(x))
+     node.setYpos(in.(y))
 
 
      r_ node
@@ -158,7 +158,7 @@ ___ d_dot_parent(parentname,nodename,connect_node,x_0,y_0):
     :return: created dDot node object.
     """
     parentName _ parentname
-    parentKnob _ ?.Text_Knob('parent', 'parent')
+    parentKnob _ ?.T_K..('parent', 'parent')
 
     newDot _ create_node_with_position(nodename,connect_node,x,y)
     newDot.knob('label').sV..('[value name]')
@@ -559,24 +559,24 @@ ___ splitLayers( node ):
         __ ch1 no. __ valid_channels:
             ch1 _ "red red"
         ____
-            ch1 _ '%s %s' % ( ch1, ch1 )
+            ch1 _ '@ @' % ( ch1, ch1 )
             
         __ ch2 no. __ valid_channels:
             ch2 _ "green green"
         ____
-            ch2 _ '%s %s' % ( ch2, ch2 )
+            ch2 _ '@ @' % ( ch2, ch2 )
             
         __ ch3 no. __ valid_channels:
             ch3 _ "blue blue"
         ____
-            ch3 _ '%s %s' % ( ch3, ch3 )
+            ch3 _ '@ @' % ( ch3, ch3 )
             
         __ ch4 no. __ valid_channels:
             ch4 _ "alpha alpha"
         ____
-            ch4 _ '%s %s' % ( ch4, ch4 )
+            ch4 _ '@ @' % ( ch4, ch4 )
             
-        prefs _ "in %s %s %s %s %s" % (layer, ch1, ch2, ch3, ch4)
+        prefs _ "in @ @ @ @ @" % (layer, ch1, ch2, ch3, ch4)
         shuffle _ ?.createNode( 'Shuffle', prefs, inpanel_F.. )
         shuffle.knob( 'label' ).sV..( layer )
         shuffle.setInput( 0, node )
@@ -598,7 +598,7 @@ ___ d_dot_connect(nodename,connect_node,x_0,y_0):
     :return: created node object.
     """
     parent_node _ ?.toNode(connect_node)
-    childKnob _ ?.Text_Knob('child', 'child')
+    childKnob _ ?.T_K..('child', 'child')
 
     dot _ create_node_with_position(nodename,parent_node,x,y)
     dot.knob('label').sV..(connect_node)
@@ -734,7 +734,7 @@ c_ modalPanel(?.PythonPanel):
         create_holdouts _ ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
         deep_uberpass _ ?.Enumeration_Knob('mode','build mode  ', ['contact sheet','extract'])
         auto_comp.clearFlag(?.ST..)
-        author _ ?.Text_Knob("written by Boris Martinez")
+        author _ ?.T_K..("written by Boris Martinez")
         #ADD KNOBS
         ___ i __ (frame_range,frame_display,analysis_mode,author):
             aK..(i)
@@ -748,14 +748,14 @@ c_ modalPanel(?.PythonPanel):
         __ giveFrameRangeValue() __ "global":
             first_frame _ ?.root().firstFrame()
             last_frame _ ?.root().lastFrame()
-            txt _ str(int(first_frame)) + '-' + str(int(last_frame))
+            txt _ str(in.(first_frame)) + '-' + str(in.(last_frame))
             frame_display.sV..(txt)
         ____ giveFrameRangeValue() __ "input":
             print "here should come the read frame range"
             node _ ?.sN__
             first_frame _ node.firstFrame()
             last_frame _ node.lastFrame()
-            txt _ str(int(first_frame)) + '-' + str(int(last_frame))
+            txt _ str(in.(first_frame)) + '-' + str(in.(last_frame))
             frame_display.sV..(txt)
         ____ giveFrameRangeValue() __ "custom":
             frame_display.sV..("")

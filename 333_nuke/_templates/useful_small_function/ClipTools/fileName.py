@@ -9,12 +9,12 @@ ______ ___
 ______ __
 ______ glob
 
-___ rename(files, pathToFile, search, replace, verbose):
+___ rename(files, pathToFile, search, r.., verbose):
     count_0
     ___
         ___ f __ files:
             pf _ pathToFile+'/'+f                                # add path to source file
-            r _ f.replace(search, replace)                  # sets up the replace list for the files only
+            r _ f.r..(search, r..)                  # sets up the replace list for the files only
             pr _ pathToFile+'/'+r                              # add path or replace file
             __ (verbose):
                 print ( "Renaming "+str(pf)+" to "+str(pr))          # return a debug output - command line

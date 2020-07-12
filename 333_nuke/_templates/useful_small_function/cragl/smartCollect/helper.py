@@ -199,7 +199,7 @@ ___ prettyprint(elem, level _ 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail _ i
-    ____ level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
 
 
@@ -226,7 +226,7 @@ ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel
     __ color_process !_ '':
         __ color_process __ 'actionButton':
             color_process _ '51, 204, 255, 100'
-        style _ 'QPushButton {background-color: rgba(%s)}' % color_process
+        style _ 'QPushButton {background-color: rgba(@)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
@@ -282,7 +282,7 @@ ___ load_nukescripts_progress(path):
     _, root, _ _ get_xml_elements()
     ___ nukescript __ root.find('archive').f_a_('nukescript'):
         __ nukescript.text __ path:
-            r_ int(nukescript.get('progress'))
+            r_ in.(nukescript.get('progress'))
 
     r_ 0
 
@@ -385,7 +385,7 @@ ___ load_tooltips(parent, section, *args):
 
 
 ___ create_job_id(*args):
-    current_time _ str(int(ti__.ti__()))
+    current_time _ str(in.(ti__.ti__()))
     rand_number _ str(random.random())
     id_ _ hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
     r_ str('{}_{}'.f..(current_time, id_))
@@ -444,7 +444,7 @@ ___ bytesize_to_human(bytes_size, decimals _ 2, human_radix _ 1000.0):
      megabyte,
      gigabyte,
      terabyte]
-    human_fmt _ '%.{}f %s'.f..(decimals)
+    human_fmt _ '%.{}f @'.f..(decimals)
     ___ unit __ units[:-1]:
         __ bytes_size < human_radix:
             r_ human_fmt % (bytes_size, unit)

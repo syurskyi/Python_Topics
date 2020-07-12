@@ -20,16 +20,16 @@ ___ switch():
 
 ___ callback(v):
     __ v:
-       ?.addKnobChanged(sync)
+       ?.aKC..(sync)
     ____
-        ?.removeKnobChanged(sync)
+        ?.rKC..(sync)
 
 ___ sync():
-    k _ ?.thisKnob()
+    k _ ?.tK..
     __ no. k.name() __ ['name', 'selected', 'showPanel', 'hidePanel']:
         n _ ?.thisNode()
         other _ ?.selectedNodes(n.Class())
-        v _ k.getValue()
+        v _ k.gV..
         #>>>>>
         d['lastVal'] _ v
         ___ node __ other:

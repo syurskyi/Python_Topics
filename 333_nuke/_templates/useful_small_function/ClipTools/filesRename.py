@@ -32,8 +32,8 @@ ___ createList(files):
         # creates a list of files from above
         filesList_ []
         rangeCount_int(rangeStart)
-        while int(rangeCount)<_ int(rangeEnd):
-            paddedNum_str('%'+padding+'d') % int(rangeCount)
+        while in.(rangeCount)<_ in.(rangeEnd):
+            paddedNum_str('%'+padding+'d') % in.(rangeCount)
             #filesList.append(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
             filesList.append(name+'.'+paddedNum+'.'+extension)
             rangeCount+_1
@@ -46,7 +46,7 @@ ___ createList(files):
 #
 ___ getRename(files,name):
     g__ search
-    g__ replace
+    g__ r..
     
     panel _ nuke.Panel ( "Rename Files",400)
     panel.addSingleLineInput("text to replace:",name)
@@ -55,16 +55,16 @@ ___ getRename(files,name):
 
     __ result:
         search _ panel.value("text to replace:")
-        replace _ panel.value("replace with:")
+        r.. _ panel.value("replace with:")
         __ replace__'':
             replace_search                          # stops files being renamed with nothing
-        __ replace[0] __'.':
+        __ r..[0] __'.':
             nuke.m..('Starting with "." is unsupported')
             r_ 1
         # define the illegal characters and replace with '_'
         pattern _ re.compile('[^a-zA-Z0-9.]')
-        replace _ pattern.sub('_', replace)
-        r_ [search,replace]
+        r.. _ pattern.sub('_', r..)
+        r_ [search,r..]
     else:
         r_ 1
 
@@ -73,8 +73,8 @@ ___ getRename(files,name):
 ___ renameClips(files):
     (filesList, pathToFile)_createList(files)
     __ filesList __ no. 1:
-        (search,replace)_getRename(files,name)
-        renamed_fileName.rename(filesList, pathToFile, search, replace, F..)
+        (search,r..)_getRename(files,name)
+        renamed_fileName.rename(filesList, pathToFile, search, r.., F..)
         __ 0__renamed:
             nuke.m..('failed - try selecting individual files')
     else:
@@ -86,14 +86,14 @@ ___ renameClips(files):
 ___ renameFiles(files):
     pathToFile___.path.dirname(files[0])
     name___.path.basename(files[0]).split('.')[0]
-    (search,replace)_getRename(files,name)
+    (search,r..)_getRename(files,name)
     filesList_[]
     ___ f __ files:
         clipname___.path.basename(f)
         filesList.append(clipname)
         
 
-    renamed_fileName.rename(filesList, pathToFile, search, replace, F..)
+    renamed_fileName.rename(filesList, pathToFile, search, r.., F..)
     __ 0__renamed:
         nuke.m..('failed, maybe permissions?')
       
@@ -151,9 +151,9 @@ ___ renumber():
                 rangeCount_int(rangeStart)
                 newRangeCount_int(frameStart)
 
-                while int(rangeCount)<_ int(rangeEnd):
-                    paddedNum_str('%'+padding+'d') % int(rangeCount)
-                    newPaddedNum_str('%'+newPad+'d') % int(newRangeCount)
+                while in.(rangeCount)<_ in.(rangeEnd):
+                    paddedNum_str('%'+padding+'d') % in.(rangeCount)
+                    newPaddedNum_str('%'+newPad+'d') % in.(newRangeCount)
 
                     searchPad_(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
                     tempPad_(pathToFile+'/'+name+'.'+newPaddedNum+'.'+extension+'.tmp')
@@ -234,7 +234,7 @@ ___ removeTemps():
                         __.remove(path+'/'+f)
                         count+_1
                     ______
-                        nuke.tprint('Unable to delete file: %s' % f)
+                        nuke.tprint('Unable to delete file: @' % f)
         nuke.m..('removed '+str(count)+' files')
 
 

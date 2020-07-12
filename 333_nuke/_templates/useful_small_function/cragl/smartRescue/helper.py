@@ -35,8 +35,8 @@ ___ get_nuke_scripts(path, ignore_prefix):
     r_ [__.path.join(path, file_)
             ___ file_ __ __.listdir(path)
             __ file_.endswith(".nk")
-            and no. file_.startswith(ignore_prefix)
-            and no. re.search(rescue_file_pattern, file_)]
+            an. no. file_.startswith(ignore_prefix)
+            an. no. re.search(rescue_file_pattern, file_)]
 
 
 ___ create_working_file_copies(files):
@@ -85,7 +85,7 @@ ___ get_process_folder():
         str: Absolute path of folder to process.
 
     """
-    environment_process_folder _ __.environ.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
+    environment_process_folder _ __.en__.get(CRAGL_SMARTRESCUE_PROCESS_PATH)
     __ environment_process_folder:
         r_ environment_process_folder
 
@@ -106,7 +106,7 @@ ___ get_config():
             configuration values to use for smartRescue.
 
     """
-    environment_path _ __.environ.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
+    environment_path _ __.en__.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
     __ environment_path:
         path _ environment_path
     ____
@@ -197,7 +197,7 @@ ___ ensure_file_extension(path, ext):
 
     """
     base, extension _ __.path.splitext(path)
-    ext _ ext.replace(".", "")
+    ext _ ext.r..(".", "")
     __ extension __ ext:
         r_ path
     r_ "{}.{}".f..(base, ext)

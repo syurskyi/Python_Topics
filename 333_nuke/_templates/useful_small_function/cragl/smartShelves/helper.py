@@ -133,21 +133,21 @@ ___ paste_script(name):
 
 
 ___ add_to_lock(pw):
-    __ no. __.environ.get(_LOCK_LIST):
-        __.environ[_LOCK_LIST] _ ''
-    unlocked _ [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
+    __ no. __.en__.get(_LOCK_LIST):
+        __.en__[_LOCK_LIST] _ ''
+    unlocked _ [ name ___ name __ __.en__[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         r_
     __ no. pw:
         r_
     unlocked.ap..(pw)
-    __.environ[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)
+    __.en__[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)
 
 
 ___ remove_from_lock(pw):
-    __ no. __.environ.get(_LOCK_LIST):
-        __.environ[_LOCK_LIST] _ ''
-    unlocked _ [ name ___ name __ __.environ[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
+    __ no. __.en__.get(_LOCK_LIST):
+        __.en__[_LOCK_LIST] _ ''
+    unlocked _ [ name ___ name __ __.en__[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         unlocked.remove(pw)
-    __.environ[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)
+    __.en__[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)

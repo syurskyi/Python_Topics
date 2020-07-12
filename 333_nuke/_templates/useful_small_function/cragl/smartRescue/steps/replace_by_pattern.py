@@ -86,7 +86,7 @@ c_ ReplaceByPattern(BaseStep):
             pattern _ rule[0]
             substitution _ rule[1]
 
-            logger.info("Replace '%s' with '%s'", pattern, substitution)
+            logger.info("Replace '@' with '@'", pattern, substitution)
             content _ re.sub(pattern, substitution, content)
 
         w__ o..(path, "w") __ dest:

@@ -208,7 +208,7 @@ ___ prettyprint(elem, level _ 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail _ i
-    ____ level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
 
 
@@ -313,10 +313,10 @@ ___ get_next_link_name():
     ___ split_nr(string):
         regex _ re.compile('(\\d+)')
         element _ regex.split(string)
-        r_ [ (int(y) __ y.isdigit() ____ y) ___ y __ element ]
+        r_ [ (in.(y) __ y.isdigit() ____ y) ___ y __ element ]
 
     ___ _increase(groups):
-        index _ int(groups.group(2)) + 1
+        index _ in.(groups.group(2)) + 1
         r_ '{}{}'.f..(groups.group(1), index)
 
     pattern _ '(link_)(\\d+)'
@@ -328,7 +328,7 @@ ___ get_next_link_name():
 
 
 ___ zoom(node):
-    ?.zoom(1.0, (int(node.xpos()), int(node.ypos())))
+    ?.zoom(1.0, (in.(node.xpos()), in.(node.ypos())))
 
 
 ___ get_repr_class_nodes():
@@ -341,7 +341,7 @@ ___ get_repr_class_nodes():
 
 ___ atoi(text):
     __ text.isdigit():
-        r_ int(text)
+        r_ in.(text)
     r_ text
 
 
@@ -385,7 +385,7 @@ ___ add_smartlink_tab_widgets():
 
 ___ add_to_root_favorites(uid):
     favorites_knob _ get_root_favorites_knob()
-    favorites _ [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
+    favorites _ [ fav.strip() ___ fav __ favorites_knob.gV...split(',') __ fav ]
     __ uid __ favorites:
         r_
     favorites.ap..(uid)
@@ -394,7 +394,7 @@ ___ add_to_root_favorites(uid):
 
 ___ remove_from_root_favorites(uid):
     favorites_knob _ get_root_favorites_knob()
-    favorites _ [ fav.strip() ___ fav __ favorites_knob.getValue().split(',') __ fav ]
+    favorites _ [ fav.strip() ___ fav __ favorites_knob.gV...split(',') __ fav ]
     ___
         del favorites[favorites.index(uid)]
     except ValueError:
@@ -404,7 +404,7 @@ ___ remove_from_root_favorites(uid):
 
 
 ___ rgb_to_hex(r, g, b):
-    r_ int('%02x%02x%02x%02x' % (r,
+    r_ in.('%02x%02x%02x%02x' % (r,
      g,
      b,
      1), 16)

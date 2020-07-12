@@ -198,7 +198,7 @@ ___ parse_advanced_settings(*args):
 
     ___ line __ advanced_settings_lines:
         key _ line.split('=')[0]
-        key _ key.replace(vars_line, '')
+        key _ key.r..(vars_line, '')
         key _ key.strip()
         val _ line.split('=')[1]
         val _ val.strip()
@@ -377,7 +377,7 @@ ___ prettyprint(elem, level _ 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail _ i
-    ____ level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
 
 
@@ -620,7 +620,7 @@ ___ load_metadata(src, *args):
 
 ___ get_resolution(*args):
     __ ?.activeViewer():
-        r_ ?.activeViewer().node()['downrez'].getValue()
+        r_ ?.activeViewer().node()['downrez'].gV..
 
 
 ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel_labek _ 'cancel'):
@@ -632,7 +632,7 @@ ___ ask_dialog(m.., process_label _ 'ok', color_process _ 'actionButton', cancel
     __ color_process !_ '':
         __ color_process __ 'actionButton':
             color_process _ '51, 204, 255, 100'
-        style _ 'QPushButton {background-color: rgba(%s)}' % color_process
+        style _ 'QPushButton {background-color: rgba(@)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()

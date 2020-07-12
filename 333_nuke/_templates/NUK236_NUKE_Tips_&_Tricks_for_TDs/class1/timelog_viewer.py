@@ -31,13 +31,13 @@ c_ Panel(?.PythonPanel):
             r_
 
         date _ date_combo_box.v..
-        path _ "%s/%s/%s" % (LOG_DIR, CURRENT_USER,date)
+        path _ "@/@/@" % (LOG_DIR, CURRENT_USER,date)
         shutil.rmtree(path)
         log_knob.sV..("")
         build_date_combo_box()
 
     ___ build_date_combo_box
-        log_dir _ "%s/%s" % (LOG_DIR, CURRENT_USER)
+        log_dir _ "@/@" % (LOG_DIR, CURRENT_USER)
         date_combo_box.setValues(__.walk(log_dir).next()[1])
 
         __ date_combo_box.values():
@@ -47,7 +47,7 @@ c_ Panel(?.PythonPanel):
     ___ get_log
 
         date _ date_combo_box.v..
-        json_path _ "%s/%s/%s/log.json" % (LOG_DIR, CURRENT_USER,date)
+        json_path _ "@/@/@/log.json" % (LOG_DIR, CURRENT_USER,date)
         log _ j___.load(o..(json_path))
         r_ log
 
@@ -55,7 +55,7 @@ c_ Panel(?.PythonPanel):
         txt _ ""
         ___ i __ log:
             ti__ _ log[i]
-            txt +_ "%s\n%s\n\n" % (i, seconds_to_str(ti__))
+            txt +_ "@\n@\n\n" % (i, seconds_to_str(ti__))
         log_knob.sV..(txt)
 
     ___ knobChanged(self, knob):
@@ -73,7 +73,7 @@ c_ Panel(?.PythonPanel):
             r_
 
         date _ date_combo_box.v..
-        path _ "%s/%s/%s" % (LOG_DIR, CURRENT_USER, date)
+        path _ "@/@/@" % (LOG_DIR, CURRENT_USER, date)
         shutil.rmtree(path)
         log_knob.sV..("")
         build_date_combo_box()

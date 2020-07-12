@@ -45,7 +45,7 @@ ___ imprint(node, data, tab_N..):
         new_knobs _ list()
         ___ knob __ create_knobs(data, tab_new_tab):
             name _ knob.name()[le.(TEMP):]
-            __ name __ existed_knobs and knob.Class() !_ "Tab_Knob":
+            __ name __ existed_knobs an. knob.Class() !_ "Tab_Knob":
                 existed_knobs[name].sV..(knob.value())
             ____
                 new_knobs.ap..(knob)
@@ -56,7 +56,7 @@ ___ imprint(node, data, tab_N..):
         add_knobs(new_knobs, new_tab)
 
         new_tcl _ node.writeKnobs(?.TO_SCRIPT | ?.WRITE_USER_KNOB_DEFS)
-        new_tcl _ new_tcl.strip()[le.(old_tcl) + 1:].replace(TEMP, "")
+        new_tcl _ new_tcl.strip()[le.(old_tcl) + 1:].r..(TEMP, "")
 
         first_user_knob _ _parse_first_user_knob(node)
         ___ knob __ reversed(node.allKnobs()):
@@ -156,7 +156,7 @@ ___ create_knobs(data, tab):
             knob.sV..(value)
             knob.sF..(?.ST..)
 
-        ____ i..(value, int):
+        ____ i..(value, in.):
             knob _ ?.I_K..(name, nice)
             knob.sV..(value)
 
@@ -177,7 +177,7 @@ ___ create_knobs(data, tab):
                 end.setName(name)
                 knobs.ap..(begin)
                 ___ k, v __ value.items():
-                    tab_name _ "%s:%s" % (name, k)
+                    tab_name _ "@:@" % (name, k)
                     knobs.ap..(?.T_K..(tab_name, k))
                     knobs +_ create_knobs(v, tab_tab_name)
                 knobs.ap..(end)
@@ -248,7 +248,7 @@ ___ read(node, filter_N..):
                 knob_type no. __ EXCLUDED_KNOB_TYPE_ON_READ or
                 # For compating read-only string data that imprinted
                 # by `nuke.Text_Knob`.
-                (knob_type __ 26 and value)
+                (knob_type __ 26 an. value)
             ):
                 key _ filter(knob_name)
                 __ key:
@@ -285,14 +285,14 @@ ___ mold(node, tab_N.., map_cls_N..):
 
         name _ tablet.name or ""
         abs_name _ name + ":"
-        all_elem _ abs_name.startswith(target) __ tab and name ____ T..
+        all_elem _ abs_name.startswith(target) __ tab an. name ____ T..
 
         ___ item __ tablet:
             __ i..(item, parser.Tablet):
                 name _ item.name
                 abs_name _ name + ":"
 
-                __ tab and target.startswith(abs_name):
+                __ tab an. target.startswith(abs_name):
 
                     data _ _mold(item, prefix_name)
 

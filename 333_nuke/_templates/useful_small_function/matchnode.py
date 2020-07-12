@@ -18,7 +18,7 @@ ___ byClass(node_N.., regex_N.., force_match_T..):
     """
     
     # compile my_pattern from raw regex
-    my_pattern _ re.compile(r'%s' % regex)
+    my_pattern _ re.compile(r'@' % regex)
 
     # check for node, use selected Node if no arg
     __ no. node:
@@ -29,20 +29,20 @@ ___ byClass(node_N.., regex_N.., force_match_T..):
         # return re.match object (default)
         result _ my_pattern.match(node.Class())
         __ result:
-            LOGGER.debug('Node %s.Class() EXACTLY MATCHES regex %s' %
+            LOGGER.debug('Node @.Class() EXACTLY MATCHES regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         ____
-            LOGGER.debug('Node %s.Class() DOES NOT MATCH regex %s' %
+            LOGGER.debug('Node @.Class() DOES NOT MATCH regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         r_ result
     ____
         # return re.search object (risky)
         result _ my_pattern.search(node.Class())
         __ result:
-            LOGGER.debug('Node %s.Class() RISKY MATCHES regex %s' %
+            LOGGER.debug('Node @.Class() RISKY MATCHES regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         ____
-            LOGGER.debug('Node %s.Class() DOES NOT MATCH regex %s' %
+            LOGGER.debug('Node @.Class() DOES NOT MATCH regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         r_ result
     # endif
@@ -76,7 +76,7 @@ ___ byName(node_N.., regex_N.., force_match_T..):
     """
     
     # compile my_pattern from raw regex
-    my_pattern _ re.compile(r'%s' % regex)
+    my_pattern _ re.compile(r'@' % regex)
 
     # check for node, use selected Node if no arg
     __ no. node:
@@ -87,20 +87,20 @@ ___ byName(node_N.., regex_N.., force_match_T..):
         # return re.match object (default)
         result _ my_pattern.match(node.fullName())
         __ result:
-            LOGGER.debug('Node %s.fullName() EXACTLY MATCHES regex %s' %
+            LOGGER.debug('Node @.fullName() EXACTLY MATCHES regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         ____
-            LOGGER.debug('Node %s.fullName() DOES NOT MATCH regex %s' %
+            LOGGER.debug('Node @.fullName() DOES NOT MATCH regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         r_ result
     ____
         # return re.search object (risky)
         result _ my_pattern.search(node.fullName())
         __ result:
-            LOGGER.debug('Node %s.fullName() LOOSLY MATCHES regex %s' %
+            LOGGER.debug('Node @.fullName() LOOSLY MATCHES regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         ____
-            LOGGER.debug('Node %s.fullName() DOES NOT MATCH regex %s' %
+            LOGGER.debug('Node @.fullName() DOES NOT MATCH regex @' %
                 (node.knob('name').v.., my_pattern.pattern))
         r_ result
     # endif

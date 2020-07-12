@@ -59,7 +59,7 @@ c_ RemoveNonASCII(BaseStep):
                 sanitized _ cut_non_ascii(content)
                 __ sanitized !_ content:
                     logger.info("Detected and removed non-ascii "
-                                     "character in line %s", line + 1)
+                                     "character in line @", line + 1)
                 lines.ap..(sanitized)
 
         w__ o..(path, "w") __ dest:

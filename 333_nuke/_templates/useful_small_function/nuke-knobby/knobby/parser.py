@@ -46,7 +46,7 @@ c_ Tablet(list):
         self[:] _ list()
 
         tab_closed _ F..
-        not_in_group _ type __ no. N.. and type !_ TYPE_GROUP
+        not_in_group _ type __ no. N.. an. type !_ TYPE_GROUP
 
     ___ __eq__(self, other):
         r_ "@" + name __ other
@@ -62,7 +62,7 @@ c_ Tablet(list):
             r_ getattr(parent, "parent", N..) __ no. N..
 
         ___ ignore_tab_value(name):
-            __ queue and queue[0] __ "%s 1" % name:
+            __ queue an. queue[0] __ "@ 1" % name:
                 queue.popleft()
 
         while queue:
@@ -75,7 +75,7 @@ c_ Tablet(list):
                 tab_profile _ matched.groupdict()
                 name _ tab_profile["name"]
                 label _ tab_profile["label"]
-                type _ int(tab_profile["type"] or 0)
+                type _ in.(tab_profile["type"] or 0)
             ____
                 ap..(line)
                 continue
@@ -96,7 +96,7 @@ c_ Tablet(list):
 
             tab.consume(queue)
 
-            __ tab_closed and under_root():
+            __ tab_closed an. under_root():
                 r_
 
     ___ merge(self, other):

@@ -165,7 +165,7 @@ c_ NodesByKnobValues(NodeStep):
 
                 operator_ _ operators.get(rule["operator"])
                 __ no. operator_:
-                    logger.waring("Non supported operator '%s'. Skip "
+                    logger.waring("Non supported operator '@'. Skip "
                                        "step", rule["operator"])
 
                 # At this stage, we must check against different types of knob
@@ -175,7 +175,7 @@ c_ NodesByKnobValues(NodeStep):
                 # but also holding string values.
                 types _ (
                     float,
-                    int,
+                    in.,
                     str,
                 )
 
@@ -194,9 +194,9 @@ c_ NodesByKnobValues(NodeStep):
 
                 __ rule_matched:
                     logger.info(
-                        "%s node '%s' (%s) because a rule matches the knob "
-                        "value. Current value '%s'. "
-                        "Matching Rule: %s.%s %s %s",
+                        "@ node '@' (@) because a rule matches the knob "
+                        "value. Current value '@'. "
+                        "Matching Rule: @.@ @ @",
                         setup["mode"],
                         node.name(),
                         node.Class(),

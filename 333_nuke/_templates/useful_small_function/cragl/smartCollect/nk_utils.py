@@ -28,7 +28,7 @@ ___ get_nuke_exe(startup_feedback _ F..):
         __ nuke_exe_fixed:
             nuke_exe_fixed _ nuke_exe_fixed.strip()
             executable _ nuke_exe_fixed
-        __ nuke_exe_fixed and debug:
+        __ nuke_exe_fixed an. debug:
             print 'Using fixed nukeversion: {}'.f..(nuke_exe_fixed)
         ____
             os_abbr _ autosearch.os_abbr()

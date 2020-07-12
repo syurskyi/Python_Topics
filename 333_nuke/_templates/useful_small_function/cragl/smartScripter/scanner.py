@@ -76,7 +76,7 @@ c_ Scanner(object):
                 ])
 
         """
-        logger.debug("Scanning for stacks: %s", root)
+        logger.debug("Scanning for stacks: @", root)
 
         __ no. __.path.isdir(root):
             ___
@@ -87,9 +87,9 @@ c_ Scanner(object):
 
         dirs _ [__.path.join(root, dir_) ___ dir_ __ __.listdir(root)
                 __ __.path.isdir(__.path.join(root, dir_))
-                and no. dir_.startswith("_")]
+                an. no. dir_.startswith("_")]
 
-        logger.debug("Found stacks: %s", ", ".join(dirs))
+        logger.debug("Found stacks: @", ", ".join(dirs))
 
         stacks _ OrderedDict()
         ___ dir_ __ dirs:
@@ -109,7 +109,7 @@ c_ Scanner(object):
                 given path.
 
         """
-        logger.debug("Scanning stack %s", directory_path)
+        logger.debug("Scanning stack @", directory_path)
 
         files _ (file_ ___ file_ __ __.listdir(directory_path)
                  __ file_.endswith(".json"))
@@ -134,7 +134,7 @@ c_ Scanner(object):
             )
 
             commands.ap..(command_widget)
-            logger.debug("Add %s.%s", __.path.basename(path), file_)
+            logger.debug("Add @.@", __.path.basename(path), file_)
 
         r_ commands
 

@@ -15,9 +15,9 @@ ___ context_aware_create_node(node_2d, node_3d, node_deep):
     # context aware node functions
     nodes _ ?.sN..
     # try:
-    __ node_deep and selected_nodes_deep(nodes):
+    __ node_deep an. selected_nodes_deep(nodes):
         r_ ?.createNode(node_deep)
-    ____ node_3d and selected_nodes_3d(nodes):
+    ____ node_3d an. selected_nodes_3d(nodes):
         r_ ?.createNode(node_3d)
     ____ node_2d:
         r_ ?.createNode(node_2d)
@@ -42,7 +42,7 @@ ___ selected_nodes_3d(nodes):
     ___ n __ nodes:
         ___
             # TODO Need to find better detection method for 3D nodes, this method doesnt include Lights
-            n['render_mode'].getValue()
+            n['render_mode'].gV..
             r_ T..
         except NameError:
             r_ F..
@@ -70,7 +70,7 @@ ___ gui_disable():
     ___ node __ nodes:
         k _ node.knob('disable')
         gui _ '{"\\$gui"}'
-        __ no. k.getValue():
+        __ no. k.gV..:
             k.setExpression('$gui')
         ____ k.toScript() __ gui:
             k.cA..
@@ -92,7 +92,7 @@ ___ cycle_viewer_input_masks():
 # Copies the tile_color of the first selected node to rest of the selected nodes
 ___ copy_node_tile_color():
     nodes _ ?.sN..
-    tc _ int(nodes[le.(nodes) - 1].knob('tile_color').getValue())
+    tc _ in.(nodes[le.(nodes) - 1].knob('tile_color').getValue())
     ___ n __ ra..(le.(nodes) - 1):
         nodes[n].knob('tile_color').sV..(tc)
 
@@ -121,9 +121,9 @@ ___ label_dialog():
     label _ ''
     nodes _ ?.sN..
     __ le.(nodes) __ 1:
-        label _ nodes[0].knob('label').getValue()
+        label _ nodes[0].knob('label').gV..
         name _ nodes[0].name()
-        txt _ ?.getInput('Change %s label' % name, label)
+        txt _ ?.getInput('Change @ label' % name, label)
     ____
         txt _ ?.getInput('Change node labels', label)
     __ txt:
@@ -135,10 +135,10 @@ ___ open_frame_in_photoshop():
     # Opens the current frame of the selected Read node in Photoshop
     # TODO extract the photoshop location to the prefs file
     ps_path _ "/Applications/Adobe Photoshop CC 2014/Adobe Photoshop CC 2014.app"
-    __ le.(?.selectedNodes()) __ 1 and ?.sN__.Class() __ "Read":
+    __ le.(?.selectedNodes()) __ 1 an. ?.sN__.Class() __ "Read":
         read _ ?.sN__
         frame_path _ read.metadata("input/filename")
-        cmd _ "open -a \"%s\" \"%s\"" % (ps_path, frame_path)
+        cmd _ "open -a \"@\" \"@\"" % (ps_path, frame_path)
         subprocess.call(cmd, shell_T..)
     ____
         ?.m..("You must have a single Read node selected.")
@@ -146,7 +146,7 @@ ___ open_frame_in_photoshop():
 
 ___ match_range_to_read():
     # Sets root frame range to match the frame range of the selected Read node
-    __ le.(?.selectedNodes()) __ 1 and ?.sN__.Class() __ "Read":
+    __ le.(?.selectedNodes()) __ 1 an. ?.sN__.Class() __ "Read":
         read _ ?.sN__
         ?.toNode("root")["first_frame"].sV..(read.firstFrame())
         ?.toNode("root")["last_frame"].sV..(read.lastFrame())
@@ -173,12 +173,12 @@ ___ read_from_write():
             ___ node __ write_nodes:
                 node_read _ ?.nodes.Read()  # create a read node
                 node_read['file'].sV..(?.filename(node))  # set the filename
-                __ node['use_limit'].getValue() __ 1:  # check to see if there is a range and set the values in the read node
-                    node_read['first'].sV..(int(node['first'].getValue()))
-                    node_read['last'].sV..(int(node['last'].getValue()))
+                __ node['use_limit'].gV.. __ 1:  # check to see if there is a range and set the values in the read node
+                    node_read['first'].sV..(in.(node['first'].getValue()))
+                    node_read['last'].sV..(in.(node['last'].getValue()))
                 ____  # no range on the write?  take a stab at using the range from the script value
-                    node_read['first'].sV..(int(?.root()['first_frame'].getValue()))
-                    node_read['last'].sV..(int(?.root()['last_frame'].getValue()))
+                    node_read['first'].sV..(in.(?.root()['first_frame'].getValue()))
+                    node_read['last'].sV..(in.(?.root()['last_frame'].getValue()))
                 node_read.setXpos(node.xpos())  # let's set the position
                 node_read.setYpos(node.ypos() + 50)
                 node_read['premultiplied'].sV..(node['premultiplied'].getValue())  # use premult if checked

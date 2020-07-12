@@ -59,7 +59,7 @@ ___ createDefault():
 	'''
 
 	n _ ?.thisNode()
-	k _ ?.thisKnob()
+	k _ ?.tK..
 	
 	#set default for current nuke session
 	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.name()), "{val}".f..(val_k.value()))
@@ -73,7 +73,7 @@ ___ resetToDefault():
 	'''
 
 	n _ ?.thisNode()
-	k _ ?.thisKnob()
+	k _ ?.tK..
 
 	k.sV..(k.defaultValue())
 	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.name()), "{val}".f..(val_k.defaultValue()))

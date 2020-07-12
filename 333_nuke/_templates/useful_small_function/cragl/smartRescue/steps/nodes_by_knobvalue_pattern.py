@@ -123,8 +123,8 @@ c_ NodesByKnobValuePattern(NodeStep):
                 __ no. re.search(pattern, knob_value):
                     continue
 
-                logger.debug("%s node '%s' because it matches a pattern. "
-                                  "%s: %s | Matching Pattern: %s",
+                logger.debug("@ node '@' because it matches a pattern. "
+                                  "@: @ | Matching Pattern: @",
                                   setup["mode"], node.name(), knob_name,
                                   knob_value, pattern)
 

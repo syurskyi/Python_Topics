@@ -48,10 +48,10 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
             my_knob _ node.knob('file')
             ___
                 # attempt to get file knob from linked (gizmos < 5.2v1)
-                result _ my_knob.getLinkedKnob().getValue()
+                result _ my_knob.getLinkedKnob().gV..
             except AttributeError:
                 # attempt to get file knob value directly (gizmos >= 5.2v1)
-                result _ my_knob.getValue()
+                result _ my_knob.gV..
             # end try
         except AttributeError:
             ___
@@ -142,11 +142,11 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
 
     __ result !_ N..:
         result _ dd.xplatform.xpath(__.path.n_p_(result))
-        LOGGER.debug('Discovered path %s for node %s' % (
+        LOGGER.debug('Discovered path @ for node @' % (
             result, node.knob('name').value()))
         r_ result
     ____
-        LOGGER.debug('Discovered no path for node %s' % node.knob('name').value())
+        LOGGER.debug('Discovered no path for node @' % node.knob('name').value())
         r_ N..
 # end filePath
    
@@ -174,8 +174,8 @@ ___ filePathWithRange(node_N.., proxy_F.., regex_N.., force_match_T..):
         # makes more sense eh? #61881 / #64178
         __ path:
             first_frame, last_frame _ getseq.getRange(path)
-            LOGGER.debug('Discovered range of %s-%s' % (first_frame, last_frame))
-            result _ '%s %s-%s' % (path, first_frame, last_frame)
+            LOGGER.debug('Discovered range of @-@' % (first_frame, last_frame))
+            result _ '@ @-@' % (path, first_frame, last_frame)
 
     # return the path and range discovered
     r_ result
@@ -238,7 +238,7 @@ ___ fileType(node):
     Returns the file extension of the node given
     """
     result _ __.path.splitext(filePath(node))[1].lstrip('.')
-    LOGGER.debug('Filetype for node %s is %s' % (node.knob('name').v.., result))
+    LOGGER.debug('Filetype for node @ is @' % (node.knob('name').v.., result))
     r_ result
 # end fileType
 
@@ -264,7 +264,7 @@ ___ f..(node):
         my_width _ node.width()
         
         # grab pixel aspect ratio from node as float
-        my_pixel_aspect _ float(?.value('%s.pixel_aspect' % node.fullName()))
+        my_pixel_aspect _ float(?.value('@.pixel_aspect' % node.fullName()))
         
         # this is the format to search for
         my_format _ (my_height, my_width, my_pixel_aspect)
@@ -278,7 +278,7 @@ ___ f..(node):
                 break
                 
     # return whatever is the current value of my_format
-    LOGGER.debug('Format for node %s is %s' % (node.knob('name').v.., my_format))
+    LOGGER.debug('Format for node @ is @' % (node.knob('name').v.., my_format))
     r_ my_format
 # end format
 

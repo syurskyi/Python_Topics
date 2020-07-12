@@ -418,7 +418,7 @@ c_ colorPickerClass(?W..):
     ___ updateColor(self, color):
         color.setStyleSheet('''
         QWidget{
-            background-color:%s;
+            background-color:@;
             border-style: solid;
             border: 1px solid #fff;
             border-radius: 2;
@@ -434,7 +434,7 @@ c_ colorPickerClass(?W..):
             __ knob:
                 knob.sV..([color.red()/255.0, color.green()/255.0, color.blue()/255.0, 1])
             ____
-                ?.tprint('%s, %s ' % (knob, knob))
+                ?.tprint('@, @ ' % (knob, knob))
 
 
 

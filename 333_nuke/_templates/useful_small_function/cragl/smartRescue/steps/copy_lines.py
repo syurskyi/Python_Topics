@@ -74,7 +74,7 @@ c_ CopyLines(BaseStep):
         first_line _ setup["first_line"]
         last_line _ setup["last_line"]
 
-        logger.info("Using lines %s - %s", first_line, last_line)
+        logger.info("Using lines @ - @", first_line, last_line)
 
         path_temp _ "{}_".f..(path)
 

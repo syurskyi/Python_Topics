@@ -26,7 +26,7 @@ ___ autoColorReadNodeType(overrideNode_N..):
                nodeColor _ 0
        # set the Read node custom color
        this["tile_color"].sV..(nodeColor)
-?.addKnobChanged(autoColorReadNodeType, nodeClass_"Read")
+?.aKC..(autoColorReadNodeType, nodeClass_"Read")
 
 # align selected nodes on a horizontal line, by Steve Molin
 #
@@ -72,7 +72,7 @@ ___ sjmAutoBackdrop():
   #
   width _ xmax-xmin
   height _ ymax-ymin
-  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, ypos _ ymin, bdheight _ height, tile_color _ int((random.random()*(16 - 10))) + 10, note_font_size_99)
+  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, ypos _ ymin, bdheight _ height, tile_color _ in.((random.random()*(16 - 10))) + 10, note_font_size_99)
   n.showControlPanel()
   #
   # restore node selection
@@ -126,7 +126,7 @@ ___ sjmOpenInViewer(nd_N..):
   __ nd __ N..:
     nd _ ?.sN__
   fp _ nd.knobs()['file'].v.. % nd.firstFrame()
-  args _ 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp
+  args _ 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe @' % fp
   subprocess.P..(args)
 
 # load the targets of the writeNodes in a viewer (djv):

@@ -10,7 +10,7 @@ ___ openFileReturnArr(file):
     return an array with all the lines
     '''
     arr_[]
-    fobj _ o..("%s"%file, "r")
+    fobj _ o..("@"%file, "r")
     #load in all lines
     ___ line __ fobj:
         #delete word wrap at the end of each line
@@ -29,7 +29,7 @@ ___ getBackupSettings(val, path):
     arr _ openFileReturnArr(path)
     i_0
     ___ line __ arr:
-        findVal_arr[i].find("%s"%val)
+        findVal_arr[i].find("@"%val)
         #if pattern found
         __ findVal!_-1:
             val_arr[i]

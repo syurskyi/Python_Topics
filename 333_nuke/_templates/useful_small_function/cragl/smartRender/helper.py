@@ -77,9 +77,9 @@ ___ get_next_renderjob(*args):
 
 ___ get_all_write_nodes_data(*args):
     write_data _ {}
-    all_write_nodes _ [ node ___ node __ ?.allNodes('Write') __ node['disable'].getValue() __ 0.0 ]
+    all_write_nodes _ [ node ___ node __ ?.allNodes('Write') __ node['disable'].gV.. __ 0.0 ]
     ___ write __ all_write_nodes:
-        write_data[write.name()] _ write['file'].getValue()
+        write_data[write.name()] _ write['file'].gV..
 
     r_ write_data
 
@@ -177,7 +177,7 @@ ___ get_tooltips_file(*args):
     r_ __.path.n_p_(tooltips)
 
 
-___ update_job_log(job_id, processdata, ti__ _ str(int(ti__.ti__())), *args):
+___ update_job_log(job_id, processdata, ti__ _ str(in.(ti__.ti__())), *args):
     jobs_xml _ get_job_xml()
     __ jobs_xml __ '':
         r_
@@ -263,8 +263,8 @@ ___ calculate_process_precentage(job_id, frame, *args):
                 __ data.get('status') __ '400':
                     count_frames_done +_ 1
 
-            count_frames_to_process _ int(job.find('frames').get('count'))
-            done_precentage _ int(100.0 / count_frames_to_process * count_frames_done)
+            count_frames_to_process _ in.(job.find('frames').get('count'))
+            done_precentage _ in.(100.0 / count_frames_to_process * count_frames_done)
             __ done_precentage > 100:
                 done_precentage _ 100
             ___ setting __ job.f_a_('setting'):
@@ -370,7 +370,7 @@ ___ get_job_data(job_id, *args):
                 job_data[setting.get('name')] _ setting.text
 
             ___ frame __ job.find('frames').f_a_('frame'):
-                frames_to_process.ap..(int(frame.text))
+                frames_to_process.ap..(in.(frame.text))
 
             job_data['frames_to_process'] _ frames_to_process
             number_errors _ 0
@@ -397,22 +397,22 @@ ___ get_all_jobs_data(filter, *args):
     ___ job __ jobs_root.find('jobs').f_a_('job'):
         job_id _ job.get('id')
         jobs[job_id] _ get_job_data(job_id)
-        __ filter __ 'waiting' and jobs[job_id]['status'] !_ 'waiting':
+        __ filter __ 'waiting' an. jobs[job_id]['status'] !_ 'waiting':
             del jobs[job_id]
             continue
-        __ filter __ 'waiting' and jobs[job_id]['status'] !_ 'waiting':
+        __ filter __ 'waiting' an. jobs[job_id]['status'] !_ 'waiting':
             del jobs[job_id]
             continue
-        ____ filter __ 'paused' and jobs[job_id]['status'] !_ 'paused':
+        ____ filter __ 'paused' an. jobs[job_id]['status'] !_ 'paused':
             del jobs[job_id]
             continue
-        ____ filter __ 'cancelled' and jobs[job_id]['status'] !_ 'cancelled':
+        ____ filter __ 'cancelled' an. jobs[job_id]['status'] !_ 'cancelled':
             del jobs[job_id]
             continue
-        ____ filter __ 'error' and jobs[job_id]['status'] !_ 'error':
+        ____ filter __ 'error' an. jobs[job_id]['status'] !_ 'error':
             del jobs[job_id]
             continue
-        ____ filter __ 'finished' and jobs[job_id]['status'] !_ 'finished':
+        ____ filter __ 'finished' an. jobs[job_id]['status'] !_ 'finished':
             del jobs[job_id]
             continue
 
@@ -487,22 +487,22 @@ ___ insert_as_read_node(job_details, write _ N.., *args):
     __ write:
         read _ ?.createNode('Read')
         read['file'].sV..(write['file'].getValue())
-        read['first'].sV..(int(?.root()['first_frame'].getValue()))
-        read['origfirst'].sV..(int(?.root()['first_frame'].getValue()))
-        read['last'].sV..(int(?.root()['last_frame'].getValue()))
-        read['origlast'].sV..(int(?.root()['last_frame'].getValue()))
+        read['first'].sV..(in.(?.root()['first_frame'].getValue()))
+        read['origfirst'].sV..(in.(?.root()['first_frame'].getValue()))
+        read['last'].sV..(in.(?.root()['last_frame'].getValue()))
+        read['origlast'].sV..(in.(?.root()['last_frame'].getValue()))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
-        read.setXYpos(int(write['xpos'].getValue()), int(write['ypos'].getValue()) + 70)
+        read.setXYpos(in.(write['xpos'].getValue()), in.(write['ypos'].getValue()) + 70)
         ?.zoom(1.0, (write.xpos(), write.ypos()))
         ?.connect_selected_to_viewer(0)
     ____
         read _ ?.createNode('Read')
         read['file'].sV..(job_details['render_path'])
-        read['first'].sV..(int(job_details['render_start']))
-        read['origfirst'].sV..(int(job_details['render_start']))
-        read['last'].sV..(int(job_details['render_end']))
-        read['origlast'].sV..(int(job_details['render_end']))
+        read['first'].sV..(in.(job_details['render_start']))
+        read['origfirst'].sV..(in.(job_details['render_start']))
+        read['last'].sV..(in.(job_details['render_end']))
+        read['origlast'].sV..(in.(job_details['render_end']))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
         ?.zoom(1.0, (read.xpos(), read.ypos()))
@@ -557,27 +557,27 @@ ___ load_job_log_data(job_id, filter, file_output _ F.., *args):
             ___ data __ job.find('process').f_a_('data'):
                 code _ ''
                 __ data.get('status') __ '100':
-                    __ filter !_ 'job: all' and filter !_ 'job: error':
+                    __ filter !_ 'job: all' an. filter !_ 'job: error':
                         continue
                     __ file_output:
                         code _ '[error]'
                     ____
                         code _ "[<span style='color:#993333'>error</span>"
                 ____ data.get('status') __ '300':
-                    __ filter !_ 'job: all' and filter !_ 'job: info':
+                    __ filter !_ 'job: all' an. filter !_ 'job: info':
                         continue
                     __ file_output:
                         code _ '[info]'
                     ____
                         code _ '[info'
                 ____ data.get('status') __ '400':
-                    __ filter !_ 'job: all' and filter !_ 'job: done':
+                    __ filter !_ 'job: all' an. filter !_ 'job: done':
                         continue
                     __ file_output:
                         code _ '[done]'
                     ____
                         code _ "[<span style='color:#339933'>done</span>"
-                data_time _ int(data.get('time'))
+                data_time _ in.(data.get('time'))
                 ti__ _ d_t_.d_t_.fromtimestamp(data_time).strftime('%d/%m/%Y %H:%M:%S')
                 __ file_output:
                     job_data +_ '{time} {code} {text}\n'.f..(ti___ti__, code_code, text_data.text)
@@ -685,7 +685,7 @@ ___ check_settings_xml_values_exist():
      'step': '1',
      'overwrite': 'True',
      'size': 'full',
-     'thread_count': str(int(get_cpu_count() / 2))}
+     'thread_count': str(in.(get_cpu_count() / 2))}
     ___ key, value __ settings_current.items():
         check_xml_value_exists_current('setting', 'name', key, value)
 
@@ -877,12 +877,12 @@ ___ get_cpu_count(*args):
         __ hasattr(__, 'sysconf'):
             __ __.sysconf_names.has_key('SC_NPROCESSORS_ONLN'):
                 ncpus _ __.sysconf('SC_NPROCESSORS_ONLN')
-                __ i..(ncpus, int) and ncpus > 0:
+                __ i..(ncpus, in.) an. ncpus > 0:
                     r_ ncpus
             ____
-                r_ int(__.popen2('sysctl -n hw.ncpu')[1].read())
-        __ __.environ.has_key('NUMBER_OF_PROCESSORS'):
-            ncpus _ int(__.environ['NUMBER_OF_PROCESSORS'])
+                r_ in.(__.popen2('sysctl -n hw.ncpu')[1].read())
+        __ __.en__.has_key('NUMBER_OF_PROCESSORS'):
+            ncpus _ in.(__.en__['NUMBER_OF_PROCESSORS'])
             __ ncpus > 0:
                 r_ ncpus
         r_ 1
@@ -900,7 +900,7 @@ ___ prettyprint(elem, level _ 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail _ i
-    ____ level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
 
 
@@ -925,7 +925,7 @@ ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_bu
     __ color_process !_ '':
         __ color_process __ 'actionButton':
             color_process _ '51, 204, 255, 100'
-        style _ 'QPushButton {background-color: rgba(%s)}' % color_process
+        style _ 'QPushButton {background-color: rgba(@)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
@@ -938,7 +938,7 @@ ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_bu
 
 
 ___ create_unique_job_id(*args):
-    current_time _ str(int(ti__.ti__()))
+    current_time _ str(in.(ti__.ti__()))
     rand_number _ str(random.random())
     id _ hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
     r_ str('{}_{}'.f..(current_time, id))
@@ -985,8 +985,8 @@ ___ get_recent_nukescripts(*args):
     __ __.path.isfile(file_recent_files):
         w__ o..(file_recent_files, 'r') __ rf:
             ___ line __ rf:
-                file_ _ line.replace('\n', '')
-                file_ _ file_.replace('"', '')
+                file_ _ line.r..('\n', '')
+                file_ _ file_.r..('"', '')
                 recent_files.ap..(file_)
 
             r_ recent_files

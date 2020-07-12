@@ -254,7 +254,7 @@ ___ reveal_in_finder(path, open_file _ F..):
         ____ ___.pl.. __ 'windows' or ___.pl.. __ 'win32':
             __ ':' __ path:
                 __ ':{}'.f..(__.path.sep) no. __ path:
-                    path _ path.replace(':', ':{}'.f..(__.path.sep))
+                    path _ path.r..(':', ':{}'.f..(__.path.sep))
             __ __.path.isfile(path):
                 path _ __.path.dirname(path)
             subprocess.call(['explorer', path])
@@ -462,7 +462,7 @@ ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_bu
     __ color_process !_ '':
         __ color_process __ 'actionButton':
             color_process _ '51, 204, 255, 100'
-        style _ 'QPushButton {background-color: rgba(%s)}' % color_process
+        style _ 'QPushButton {background-color: rgba(@)}' % color_process
         process_button.setStyleSheet(style)
     process_button.clearFocus()
     msg_box.setFocus()
@@ -508,7 +508,7 @@ ___ load_settings():
             settings[setting.get('name')] _ ''
 
     ___ navi __ settings_root.find('navigation').f_a_('navi'):
-        __ navi.text and __.path.isdir(navi.text):
+        __ navi.text an. __.path.isdir(navi.text):
             settings['current_{}'.f..(navi.get('name'))] _ navi.text
         ____
             settings['current_{}'.f..(navi.get('name'))] _ ''
@@ -535,7 +535,7 @@ ___ prettyprint(elem, level _ 0):
 
         __ no. elem.tail or no. elem.tail.strip():
             elem.tail _ i
-    ____ level and (no. elem.tail or no. elem.tail.strip()):
+    ____ level an. (no. elem.tail or no. elem.tail.strip()):
         elem.tail _ i
 
 
@@ -643,7 +643,7 @@ ___ set_preview_image(delete_nodes _ T..):
     write.knob('last').sV..(?.frame())
     write.knob('file_type').sV..('jpg')
     preview_path _ __.path.join(root_dir_docs, '__preview.jpg')
-    preview_path _ preview_path.replace(__.path.sep, '/')
+    preview_path _ preview_path.r..(__.path.sep, '/')
     write.knob('file').sV..(preview_path)
     ?.execute(write, ?.frame(), ?.frame())
     __ delete_nodes:
@@ -776,7 +776,7 @@ ___ setup_renderpath():
         project_root _ __.path.dirname(dir_docs_current_nukescript)
         metaxml _ __.path.join(dir_docs_current_nukescript, 'meta.xml')
         script_name _ get_script_name()
-        __ __.path.isfile(metaxml) and script_name no. __ ('', 'Root'):
+        __ __.path.isfile(metaxml) an. script_name no. __ ('', 'Root'):
             meta_tree _ ET.parse(metaxml)
             meta_root _ meta_tree.getroot()
             ___ child __ meta_root.find('notes').f_a_('note'):
@@ -805,7 +805,7 @@ ___ load_templates():
     templates _ []
     ___ item __ __.listdir(dir_templates):
         element _ __.path.join(dir_templates, item)
-        __ __.path.isdir(element) and item !_ DIR_DOCS:
+        __ __.path.isdir(element) an. item !_ DIR_DOCS:
             templates.ap..(item)
 
     r_ templates
@@ -840,7 +840,7 @@ ___ rename_item(sender, path_orig, window):
     file_name _ __.path.basename(path_orig)
     name, ok _ inp.getText(window, title, msg, text_file_name)
     __ ok:
-        name _ name.replace('/', '')
+        name _ name.r..('/', '')
         new_name_full_path _ __.path.join(__.path.dirname(path_orig), name)
         __ __.path.isfile(path_orig):
             __ '.' no. __ name:
@@ -894,14 +894,14 @@ ___ import_from_footage_directory():
         ___ note __ metatree.find('notes').f_a_('note'):
             __ note.get('name') __ 'footagepath':
                 shot_root _ __.path.n_p_(__.path.join(dir_docs, '../'))
-                shot_root _ shot_root.replace(__.path.sep, '/')
+                shot_root _ shot_root.r..(__.path.sep, '/')
                 __ note.text __ no. N..:
                     __ note.get('loc') __ 'global':
                         start_path _ note.text
                     __ note.get('loc') __ 'local':
                         __ note.text[0] __ __.path.sep or note.text[0] __ '/':
                             note.text _ note.text[1:]
-                        __ note.text and note.text !_ '' and note.text !_ ' ':
+                        __ note.text an. note.text !_ '' an. note.text !_ ' ':
                             start_path _ __.path.join(shot_root, note.text)
                         ____
                             start_path _ shot_root
@@ -909,7 +909,7 @@ ___ import_from_footage_directory():
                     start_path _ shot_root
                 __ start_path[-1:] !_ '/':
                     start_path +_ '/'
-                start_path _ start_path.replace(__.path.sep, '/')
+                start_path _ start_path.r..(__.path.sep, '/')
                 load_footage(path_start_path)
 
     ______
@@ -929,7 +929,7 @@ ___ load_footage(defaulttype _ 'Read', path _ ''):
     __ sel_node:
         __ 'file' __ sel_node.knobs():
             default_dir _ sel_node['file'].v..
-        __ no. default_dir and 'proxy' __ sel_node.knobs():
+        __ no. default_dir an. 'proxy' __ sel_node.knobs():
             default_dir _ sel_node['proxy'].v..
     __ default_dir __ '':
         default_dir _ N..
@@ -950,7 +950,7 @@ ___ load_footage(defaulttype _ 'Read', path _ ''):
             __ ?.create.isDeepFilename(stripped):
                 nodeType _ 'DeepRead'
             use_in_panel _ T..
-            __ max_files !_ 0 and n > max_files:
+            __ max_files !_ 0 an. n > max_files:
                 use_in_panel _ F..
             n _ n - 1
             __ is_abc:
@@ -987,7 +987,7 @@ ___ create_new_directory(widget, list_):
         dest _ list_.data(0, ?C...__.UserRole)
         __ __.path.isfile(dest):
             dest _ __.path.dirname(dest)
-        dest _ dest.replace('\\', '/')
+        dest _ dest.r..('\\', '/')
 
         ___ create_directory(dir_name):
             dir_path_full _ __.path.join(dest, dir_name)
@@ -1024,7 +1024,7 @@ ___ get_project_information(project_full_path):
     shot_information _ {}
     ___ shot __ __.listdir(project_full_path):
         shot_full_path _ __.path.join(project_full_path, shot)
-        __ __.path.isdir(shot_full_path) and shot !_ '.docs':
+        __ __.path.isdir(shot_full_path) an. shot !_ '.docs':
             metaxml _ __.path.join(shot_full_path, '.docs', 'meta.xml')
             __ __.path.isfile(metaxml):
                 w__ o..(metaxml, 'r') __ metaxml:
@@ -1055,7 +1055,7 @@ ___ get_project_information(project_full_path):
 ___ build_html(html_path, project):
     shot_information _ get_project_information(project)
     project_title _ __.path.split(project)[-1]
-    time_now _ d_t_.d_t_.fromtimestamp(int(ti__.ti__())).strftime('%d/%m/%Y %H:%M:%S')
+    time_now _ d_t_.d_t_.fromtimestamp(in.(ti__.ti__())).strftime('%d/%m/%Y %H:%M:%S')
     shot_status_list _ load_status_list().values()
     status_dict _ {}
     ___ status __ shot_status_list:
@@ -1111,7 +1111,7 @@ ___ build_html(html_path, project):
                 shot_notes _ shot_information[key][1]
             ____
                 shot_notes _ ''
-            shot_notes _ shot_notes.replace('\n', '<br />')
+            shot_notes _ shot_notes.r..('\n', '<br />')
             shot_thumbnail _ shot_information[key][2]
             color _ ''
             ___ status __ shot_status_list:
@@ -1175,32 +1175,32 @@ ___ get_sequences_sets(dirpath):
         __ __.path.isdir(__.path.join(dirpath, file)):
             continue
         filename_noext, ext _ __.path.splitext(file)
-        ext _ ext.replace('.', '')
+        ext _ ext.r..('.', '')
         ____ string ______ digits
         __ i..(file, bytes):
             digits _ digits.encode()
         filename_nodigits _ filename_noext.rstrip(digits)
         __ ext no. __ IMAGE_EXT:
             sequence _ __.path.n_p_(__.path.join(dirpath, file))
-            sequence _ sequence.replace(__.path.sep, '/')
+            sequence _ sequence.r..(__.path.sep, '/')
             sequences.ap..(sequence)
         ____
-            __ le.(filename_nodigits) __ le.(filename_noext) and file no. __ IGNORE and file no. __ sequences:
+            __ le.(filename_nodigits) __ le.(filename_noext) an. file no. __ IGNORE an. file no. __ sequences:
                 sequence _ __.path.n_p_(__.path.join(dirpath, file))
-                sequence _ sequence.replace(__.path.sep, '/')
+                sequence _ sequence.r..(__.path.sep, '/')
                 sequences.ap..(sequence)
                 continue
-            __ filename_nodigits no. __ sequences_set and file no. __ IGNORE and file no. __ sequences:
+            __ filename_nodigits no. __ sequences_set an. file no. __ IGNORE an. file no. __ sequences:
                 sequences_set.ap..(filename_nodigits)
                 sequence _ __.path.n_p_(__.path.join(dirpath, file))
-                sequence _ sequence.replace(__.path.sep, '/')
+                sequence _ sequence.r..(__.path.sep, '/')
                 sequences.ap..(sequence)
 
     r_ sequences
 
 
 ___ image_sequence_resolve_all(filepath):
-    filepath _ str(filepath.replace(__.path.sep, '/'))
+    filepath _ str(filepath.r..(__.path.sep, '/'))
     basedir, filename _ __.path.split(filepath)
     filename_noext, ext _ __.path.splitext(filename)
     ____ string ______ digits
@@ -1210,44 +1210,44 @@ ___ image_sequence_resolve_all(filepath):
     __ le.(filename_nodigits) __ le.(filename_noext):
         r_ __.path.join(basedir, filename)
     files _ __.listdir(basedir)
-    image_sequence_list _ [ __.path.join(f) ___ f __ files __ f.startswith(filename_nodigits) and f.endswith(ext) and f[le.(filename_nodigits):-le.(ext) __ ext ____ -1].isdigit() ]
+    image_sequence_list _ [ __.path.join(f) ___ f __ files __ f.startswith(filename_nodigits) an. f.endswith(ext) an. f[le.(filename_nodigits):-le.(ext) __ ext ____ -1].isdigit() ]
     seq_start _ image_sequence_list[0]
-    seq_start _ seq_start.replace(filename_nodigits, '')
-    seq_start _ seq_start.replace(ext, '')
+    seq_start _ seq_start.r..(filename_nodigits, '')
+    seq_start _ seq_start.r..(ext, '')
     seq_end _ image_sequence_list[-1:][0]
-    seq_end _ seq_end.replace(filename_nodigits, '')
-    seq_end _ seq_end.replace(ext, '')
+    seq_end _ seq_end.r..(filename_nodigits, '')
+    seq_end _ seq_end.r..(ext, '')
     seq_preview _ '{}[{}-{}]{}'.f..(filename_nodigits, seq_start, seq_end, ext)
     seq_full_path _ __.path.join(basedir, seq_preview)
-    seq_full_path _ seq_full_path.replace(__.path.sep, '/')
+    seq_full_path _ seq_full_path.r..(__.path.sep, '/')
     r_ seq_full_path
 
 
 ___ collapse_sequences(dirpath):
     sequences_in_dir _ []
     sequence_sets _ []
-    dirpath _ dirpath.replace(__.path.sep, '/')
+    dirpath _ dirpath.r..(__.path.sep, '/')
     ___ root, dirs, seq __ __.walk(dirpath):
         sequence_sub_sets _ get_sequences_sets(root)
         __ __.path.basename(root) __ DIR_DOCS:
             continue
         ___ sequence_item __ sequence_sub_sets:
             sequence_item _ __.path.n_p_(sequence_item)
-            sequence_item _ sequence_item.replace(__.path.sep, '/')
+            sequence_item _ sequence_item.r..(__.path.sep, '/')
             sequence_sets.ap..(sequence_item)
 
     ___ seq __ sequence_sets:
         ext _ __.path.splitext(seq)[1]
-        ext _ ext.replace('.', '')
-        __ ext no. __ IGNORE and __.path.basename(seq) no. __ IGNORE:
+        ext _ ext.r..('.', '')
+        __ ext no. __ IGNORE an. __.path.basename(seq) no. __ IGNORE:
             __ ext no. __ IMAGE_EXT:
                 item _ seq
-                item _ item.replace(__.path.sep, '/')
+                item _ item.r..(__.path.sep, '/')
                 sequences_in_dir.ap..(item)
             ____
                 item _ image_sequence_resolve_all(seq)
                 item _ __.path.n_p_(item)
-                item _ item.replace(__.path.sep, '/')
+                item _ item.r..(__.path.sep, '/')
                 sequences_in_dir.ap..(item)
 
     r_ sequences_in_dir
@@ -1258,7 +1258,7 @@ ___ insert_shot_notes():
     __ shot_root __ '' or shot_root __ N..:
         r_
     ____
-        shot_root _ shot_root.replace(DIR_DOCS, '')
+        shot_root _ shot_root.r..(DIR_DOCS, '')
         meta_xml _ get_meta_xml(shot_root)
         __ no. __.path.isfile(meta_xml):
             r_
@@ -1324,7 +1324,7 @@ ___ get_script_values(path, window):
     ___ line __ process.stdout:
         line _ str(line.rstrip())
         __ 'script@' __ line:
-            script_value _ line.replace('script@', '')
+            script_value _ line.r..('script@', '')
             key _ script_value.split(':')[0]
             val _ str(script_value.split(':')[1])
             script_values[key] _ val
@@ -1335,7 +1335,7 @@ ___ get_script_values(path, window):
 ___ set_script_values(path, script_values, *args):
     debug _ F..
     script_vals _ 'script_in:{}@script_out:{}@fps:{}@format:{}'
-    script_vals _ script_vals.f..(script_values['script_in'], script_values['script_out'], script_values['fps'], script_values['format'].replace(' ', '_'))
+    script_vals _ script_vals.f..(script_values['script_in'], script_values['script_out'], script_values['fps'], script_values['format'].r..(' ', '_'))
     this_dir _ __.path.dirname( -f)
     processor _ __.path.join(this_dir, '../', 'trm', 'scripts.py')
     processor _ __.path.n_p_(processor)
@@ -1511,7 +1511,7 @@ c_ CustomPath(?W...?W..):
         metaroot _ metatree.getroot()
         ___ child __ metaroot.find('notes').f_a_('note'):
             __ child.get('name') __ '{}path'.f..(which):
-                __ child.get('loc') and child.get('loc') __ 'global':
+                __ child.get('loc') an. child.get('loc') __ 'global':
                     r_ child.text
                 ____
                     r_ ''

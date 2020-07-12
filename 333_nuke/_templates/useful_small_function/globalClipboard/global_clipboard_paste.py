@@ -51,7 +51,7 @@ c_ Global_clipboard(QDialog):
 
         ___ full_filename __ __.listdir(repo):
             filename, file_extension _ __.path.splitext(full_filename)
-            username _ filename.replace("tempClipBoard_", "")
+            username _ filename.r..("tempClipBoard_", "")
             user_list.ap..(username)
 
         user_list.remove(".DS_Store")

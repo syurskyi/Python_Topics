@@ -35,7 +35,7 @@ ___ reload_tools_menu notify_T..
     dif_msg _ "\n".join(dif_list)
 
     # show message of new tools
-    __ notify and dif_msg !_ "":
+    __ notify an. dif_msg !_ "":
         ?.m..("{} new tools found:\n\n{}".f..(le.(dif_list), dif_msg))
 
 
@@ -115,7 +115,7 @@ ___ get_tools_categories(tools_root):
 
     ___ item __ __.listdir(tools_root):
         item_full_path _ __.path.join(tools_root, item)
-        __ __.path.isdir(item_full_path) and item !_ config.TOOLS_TEMP and item no. __ config.TOOLSDIR_IGNORE:
+        __ __.path.isdir(item_full_path) an. item !_ config.TOOLS_TEMP an. item no. __ config.TOOLSDIR_IGNORE:
             tools_categories.ap..(item)
 
     r_ tools_categories
@@ -149,7 +149,7 @@ ___ build_tools_menu(tools_root):
 
             __ __.path.splitext(tool)[1] __ ".nk":
                 toolset_path _ __.path.join(item_full_path, tool)
-                category_menu.aC..(tool.replace(".nk", ""), lambda toolset_path_toolset_path: insert_toolset(toolset_path, delete_F..), icon_"")
+                category_menu.aC..(tool.r..(".nk", ""), lambda toolset_path_toolset_path: insert_toolset(toolset_path, delete_F..), icon_"")
 
     # temp tools
     te_menu.addSeparator()
