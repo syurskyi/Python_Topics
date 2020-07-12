@@ -35,7 +35,7 @@ ___ setFrameRange():
         f.addKnob(k)
 
     #show dialog
-    __ f.showModalDialog():
+    __ f.sMD..:
         __ f.nodesSelection.v.. __ 'All read nodes':
             Sel = allReads()
         ____ f.nodesSelection.v.. __ 'Selected nodes only':
@@ -70,7 +70,7 @@ ___ setError():
         e.addKnob(k)
 
     #show dialog
-    __ e.showModalDialog():
+    __ e.sMD..:
         __ e.nodesSelection.v.. __ 'All read nodes':
             Sel = allReads()
         ____ e.nodesSelection.v.. __ 'Selected nodes only':

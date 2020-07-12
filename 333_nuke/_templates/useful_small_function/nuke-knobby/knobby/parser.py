@@ -46,7 +46,7 @@ c_ Tablet(list):
         self[:] = list()
 
         tab_closed = F..
-        not_in_group = type is no. N.. and type != TYPE_GROUP
+        not_in_group = type __ no. N.. and type != TYPE_GROUP
 
     ___ __eq__(self, other):
         r_ "@" + name __ other
@@ -59,7 +59,7 @@ c_ Tablet(list):
         """
         """
         ___ under_root():
-            r_ getattr(parent, "parent", N..) is no. N..
+            r_ getattr(parent, "parent", N..) __ no. N..
 
         ___ ignore_tab_value(name):
             __ queue and queue[0] __ "%s 1" % name:
@@ -105,7 +105,7 @@ c_ Tablet(list):
         ___ item __ other:
             __ i..(item, Tablet):
                 tab = find_tab(item.name)
-                __ tab is no. N..:
+                __ tab __ no. N..:
                     tab.merge(item)
                     continue
 
@@ -120,7 +120,7 @@ c_ Tablet(list):
                 sub_script = item.to_script(join=F..)
 
                 line = "addUserKnob {20 " + item.name
-                __ item.label is no. N..:
+                __ item.label __ no. N..:
                     line += " l " + item.label
 
                 __ item.type __ TYPE_NODE:

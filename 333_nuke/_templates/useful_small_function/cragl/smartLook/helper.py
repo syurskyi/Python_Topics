@@ -399,7 +399,7 @@ ___ build_hotkeys(*args):
             hotkey += 'shift+'
         __ hotkeys['{}_alt'.f..(e)] __ 'True':
             hotkey += 'alt+'
-        __ hotkeys[e] is N..:
+        __ hotkeys[e] __ N..:
             hotkeys_build[e] = ''
         ____
             hotkey += hotkeys[e]
@@ -573,7 +573,7 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
     metaroot = metatree.getroot()
     ___ meta __ metaroot.find('metadata').f_a_('meta'):
         __ meta.get('name') __ 'flag':
-            __ color is N..:
+            __ color __ N..:
                 meta.text = ''
             ____
                 meta.text = '{},{},{}'.f..(color[0], color[1], color[2])

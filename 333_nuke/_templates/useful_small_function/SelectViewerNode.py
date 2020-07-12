@@ -180,7 +180,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
                 r_
 
-        __ knob is Viewers:
+        __ knob __ Viewers:
         
             warning.setVisible(F..)
 
@@ -191,7 +191,7 @@ ___ Launcher():
 
     panel = SelectViewerNode()
 
-    panel.showModalDialog()
+    panel.sMD..
    
 
 

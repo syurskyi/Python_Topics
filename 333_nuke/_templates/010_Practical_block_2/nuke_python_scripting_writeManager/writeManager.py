@@ -27,7 +27,7 @@ c_ writeManagerClass(?.PythonPanel):
             ____ k __ 'disable':
                 node['disable'].sV..(no. knob.value())
             r_
-        __ knob is start:
+        __ knob __ start:
             print 'RENDER'
 
 

@@ -72,7 +72,7 @@ ___ getRename(files,name):
 #
 ___ renameClips(files):
     (filesList, pathToFile)=createList(files)
-    __ filesList is no. 1:
+    __ filesList __ no. 1:
         (search,replace)=getRename(files,name)
         renamed=fileName.rename(filesList, pathToFile, search, replace, F..)
         __ 0__renamed:

@@ -169,7 +169,7 @@ ___ disEnaNode(bckdrp, node, kn, refresh = F.., toggle = T.., allValue = T..):
     node = nuke.toNode(node)
     knobNode = bckdrp.knob(kn)
     ___
-        __ refresh is F..:
+        __ refresh __ F..:
             __ toggle:
                 __ node['disable'].v.. __ T..:
                     node['disable'].setValue(F..)

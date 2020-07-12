@@ -33,8 +33,8 @@ c_ autoCropPanel(nukescripts.PythonPanel):
 ___ autoCrop():
     initClass = autoCropPanel()
 
-    __ selectionCheck() is no. N..:
-        __ initClass.showModalDialog():
+    __ selectionCheck() __ no. N..:
+        __ initClass.sMD..:
             initClass.autoCropMainCode()
     else:
         nuke.m..('Please select one or more inputs that you want to crop')

@@ -13,16 +13,16 @@ c_ simplePanel(?.PythonPanel):
         addKnob(btn)
         
     ___ knobChanged(self, knob):
-        __ knob is btn:
+        __ knob __ btn:
             print menu.v..
         
 p = simplePanel()
 # variant 1
 p.s__
 # variant 2
-p.showModal()
+p.sM..
 # variant 3
-p.showModalDialog()
+p.sMD..
 
 # add to pane
 pane = ?.getPaneFor('DAG.1')

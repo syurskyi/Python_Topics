@@ -33,6 +33,6 @@ ___ sync():
         #>>>>>
         d['lastVal'] = v
         ___ node __ other:
-            __ no. node is n:
+            __ no. node __ n:
                 node[k.name()].sV..(v)
 

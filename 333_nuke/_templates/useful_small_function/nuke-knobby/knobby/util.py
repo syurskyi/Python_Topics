@@ -94,7 +94,7 @@ c_ Knobby(object):
     ___ create(self, name, nice=N..):
         knob_cls = getattr(?, type)
         knob = knob_cls(name, nice, *args)
-        __ value is no. N..:
+        __ value __ no. N..:
             knob.sV..(value)
         ___ flag __ flags:
             knob.setFlag(flag)
@@ -233,7 +233,7 @@ ___ read(node, filter=N..):
     filter = filter or (lambda name: name)
 
     first_user_knob = _parse_first_user_knob(node)
-    __ first_user_knob is no. N..:
+    __ first_user_knob __ no. N..:
         # Collect user knobs from the end of the knob list
         ___ knob __ reversed(node.allKnobs()):
             knob_name = knob.name()

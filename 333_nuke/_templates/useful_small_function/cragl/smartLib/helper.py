@@ -360,7 +360,7 @@ ___ check_xml_parent_val_exists(section):
     xml = __.path.join(get_smartlib_private_dir(), 'settings.xml')
     tree = ET.parse(xml)
     root = tree.getroot()
-    __ root.find(section) is N..:
+    __ root.find(section) __ N..:
         elem = ET.Element(section)
         root.ap..(elem)
         w__ o..(xml, 'w') __ xml:
@@ -381,7 +381,7 @@ ___ check_status_exists():
 
     __ status_found __ 0:
         default_status = templates.DEFAULT_STATUS
-        __ root.find('statuslist') is N..:
+        __ root.find('statuslist') __ N..:
             statuslist_elem = ET.Element('statuslist')
             root.ap..(statuslist_elem)
         ___ key __ sorted(default_status):
@@ -895,7 +895,7 @@ ___ import_from_footage_directory():
             __ note.get('name') __ 'footagepath':
                 shot_root = __.path.n_p_(__.path.join(dir_docs, '../'))
                 shot_root = shot_root.replace(__.path.sep, '/')
-                __ note.text is no. N..:
+                __ note.text __ no. N..:
                     __ note.get('loc') __ 'global':
                         start_path = note.text
                     __ note.get('loc') __ 'local':
@@ -905,7 +905,7 @@ ___ import_from_footage_directory():
                             start_path = __.path.join(shot_root, note.text)
                         ____
                             start_path = shot_root
-                ____ note.text is N.. or note.text __ '' or note.text __ ' ':
+                ____ note.text __ N.. or note.text __ '' or note.text __ ' ':
                     start_path = shot_root
                 __ start_path[-1:] != '/':
                     start_path += '/'
@@ -1034,7 +1034,7 @@ ___ get_project_information(project_full_path):
                     ___ child __ root.find('notes').f_a_('note'):
                         __ child.get('name') __ 'status':
                             status = child.text
-                            __ status is N.. or status __ '':
+                            __ status __ N.. or status __ '':
                                 status = ''
                             shot_info.ap..(status)
                         __ child.get('name') __ 'shotnotes':
@@ -1255,7 +1255,7 @@ ___ collapse_sequences(dirpath):
 
 ___ insert_shot_notes():
     shot_root = get_dir_docs_current_nukescript()
-    __ shot_root __ '' or shot_root is N..:
+    __ shot_root __ '' or shot_root __ N..:
         r_
     ____
         shot_root = shot_root.replace(DIR_DOCS, '')
@@ -1493,7 +1493,7 @@ c_ CustomPath(?W...?W..):
             msg = "Successfully set up the custom {} path to: '{}'".f..(which, input_path.text())
             show_message_box(self, msg)
         c__
-        __ sml is no. N..:
+        __ sml __ no. N..:
             ___
                 __ which __ 'render':
                     sml.current_shot_widget.set_renderpath(input_path.text())

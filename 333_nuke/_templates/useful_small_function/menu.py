@@ -33,7 +33,7 @@ ___ autoColorReadNodeType(overrideNode=N..):
 ___ sjmAlignH():
   yresult = N..
   ___ n __ ?.sN..:
-    __ yresult is N..:
+    __ yresult __ N..:
       yresult = n.ypos()
     ____
       n.setYpos(yresult)
@@ -43,7 +43,7 @@ ___ sjmAlignH():
 ___ sjmAlignV():
   xresult = N..
   ___ n __ ?.sN..:
-    __ xresult is N..:
+    __ xresult __ N..:
       xresult = n.xpos()
     ____
       n.setXpos(xresult)
@@ -95,7 +95,7 @@ ___ sjmBackdropFonts():
 # all nodes that have the 'file' attribute
 #
 ___ sjmFindAllParentReads(n=N..):
-  __ n is N..:
+  __ n __ N..:
     n = ?.sN__
   result = []
   __ n.knob('file'):
@@ -123,7 +123,7 @@ ___ sjmHideInputsOff():
 #
 ___ sjmOpenInViewer(nd=N..):
   ______ subprocess
-  __ nd is N..:
+  __ nd __ N..:
     nd = ?.sN__
   fp = nd.knobs()['file'].v.. % nd.firstFrame()
   args = 'C:\Program Files (x86)\djv 0.8.3\\bin\djv_view.exe %s' % fp

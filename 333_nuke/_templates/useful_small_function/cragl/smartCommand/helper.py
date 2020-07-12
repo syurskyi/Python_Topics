@@ -334,7 +334,7 @@ ___ swap_commands(xml, path_1, path_2):
             index_2 = index
         index += 1
 
-    __ no. all((command is no. N.. ___ command __ [command_1, command_2])):
+    __ no. all((command __ no. N.. ___ command __ [command_1, command_2])):
         raise ValueError('No such sufficient data to swap.')
     root.find('collection').remove(command_2)
     root.find('collection').insert(index_1, command_2)
