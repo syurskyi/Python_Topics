@@ -123,14 +123,14 @@ ___ Zoom(zoom,node):
     
      
    
-c_ SelectViewerNode(nukescripts.PythonPanel):
+c_ SelectViewerNode(nukescripts.PP..):
    
    
     ___ -
 
-        nukescripts.PythonPanel.- (self,"Select Node in Viewer","Select Node in Viewer")
+        nukescripts.PP...- (self,"Select Node in Viewer","Select Node in Viewer")
 
-        setMinimumSize(200, 115)
+        sMS..(200, 115)
 
         # Create Knobs
        

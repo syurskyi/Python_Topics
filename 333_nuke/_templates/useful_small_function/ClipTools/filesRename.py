@@ -192,7 +192,7 @@ ___ removeExtension():
         __ '%' __ str(files):
             nuke.m..('This only works on individually selected files')
         else:
-            result_nuke.ask('Remove extension "'+__.path.basename(files[0])[-4:]+'" ? \nthis can overwrite existing files')
+            result_nuke.a..('Remove extension "'+__.path.basename(files[0])[-4:]+'" ? \nthis can overwrite existing files')
             __ result:
                 ___ f __ files:
                     __.rename(f, f[:-4])
@@ -206,7 +206,7 @@ ___ removeExtension():
 #
 ___ removeTemps():
      
-    do_it_nuke.ask('This removes all .tmp files from the write nodes in this script. Are you sure you want to do this?')
+    do_it_nuke.a..('This removes all .tmp files from the write nodes in this script. Are you sure you want to do this?')
     __ do_it:
         aw _ nuke.allNodes('Write')
         

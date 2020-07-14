@@ -41,7 +41,7 @@ def addFileFilter(externalFilter):
 #  nodes = nuke.menu('Nodes')
 #  nodes.removeItem("ToolSets")
 
-class CreateToolsetsPanel(nukescripts.PythonPanel):
+class CreateToolsetsPanel(nukescripts.PP..):
   # rename is bool var 
 
   def __init__(self, fullFilePath, rename):
@@ -56,7 +56,7 @@ class CreateToolsetsPanel(nukescripts.PythonPanel):
       self.namePanel = 'Rename ToolSet'
       self.nameOkButton = 'Rename'
     
-    nukescripts.PythonPanel.__init__( self, self.namePanel, 'uk.co.thefoundry.Toolset')
+    nukescripts.PP...__init__( self, self.namePanel, 'uk.co.thefoundry.Toolset')
     
     # CREATE KNOBS
     self.userFolders = []
@@ -130,7 +130,7 @@ class CreateToolsetsPanel(nukescripts.PythonPanel):
           # create way
           nuke.nodeCopy(filePath)
 
-      elif nuke.ask('Overwrite existing \n %s?' % filePath):
+      elif nuke.a..('Overwrite existing \n %s?' % filePath):
         if self.rename == True:
           os.remove(filePath)
           os.rename(self.fullFilePath, filePath)
@@ -185,7 +185,7 @@ def addToolsetsPanel():
   return res  
   
 def deleteToolset(rootPath, fileName):
-  if nuke.ask('Are you sure you want to delete ToolSet %s?' %fileName):
+  if nuke.a..('Are you sure you want to delete ToolSet %s?' %fileName):
     os.remove(fileName)
     #COMMENT: if this was the last file in this directory, the folder will need to be deleted.
     # Walk the directory tree from the root and recursively delete empty directories

@@ -65,7 +65,7 @@ def open_panels(nodes=None):
         nodes = nuke.selectedNodes()
     ignored = ['Viewer']
     if len(nodes) > 10:
-        if not nuke.ask('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.format(len(nodes))):
+        if not nuke.a..('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.format(len(nodes))):
             return
     for node in nodes:
         if node.Class() not in ignored:
@@ -555,7 +555,7 @@ def create_pointer():
         upstream = [n for n in connected(nodes, upstream=True, downstream=False)]
 
         if len(upstream) > 5:
-            if not nuke.ask('More than 5 upstream nodes. Are you sure you want to continue?'):
+            if not nuke.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
                 return
 
         randstr = ''.join(random.choice(string.ascii_lowercase) for i in range(4))

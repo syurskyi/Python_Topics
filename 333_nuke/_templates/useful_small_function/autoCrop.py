@@ -27,7 +27,7 @@ ___ allDependentNodesAndInputs(node, deepNumber):
     r_ dependentInputs
 
 
-c_ autoCropPanel(nukescripts.PythonPanel):
+c_ autoCropPanel(nukescripts.PP..):
     pass
 
 ___ autoCrop():

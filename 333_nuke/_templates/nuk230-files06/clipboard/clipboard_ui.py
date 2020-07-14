@@ -11,7 +11,7 @@ c_ ClipboardUi(?TW..):
         sQT..("Clipboard")
         setWindowFlags(__.WindowStaysOnTopHint)
         resize(500, 600)
-        setMinimumSize(500, 600)
+        sMS..(500, 600)
 
         # Widgets
 

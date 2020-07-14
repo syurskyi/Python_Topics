@@ -724,11 +724,11 @@ ___ create_and_connect_child_dots(holdouts,color):
 #  CLASS DEFINITIONS
 
 
-c_ modalPanel(?.PythonPanel):
+c_ modalPanel(?.PP..):
 
     ___  -
 
-        ?.PythonPanel. - (self,"b_deep toolset")
+        ?.PP... - (self,"b_deep toolset")
         #CREATE KNOBS
         depth_from_deep _ ?.PS_K..('depth_from_deep', 'depth_from_deep', 'depth_for_defocus()')
         create_holdouts _ ?.E_K..('mode','build mode  ', ['contact sheet','extract'])

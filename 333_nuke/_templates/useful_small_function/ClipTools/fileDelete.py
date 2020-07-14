@@ -15,7 +15,7 @@ ____ fileName ______ _
 #
 ___ deleteFiles(files):
     __ __.path.isfile(files[0]):
-        do_it_nuke.ask('really delete "'+filestoDelete+'" ? (no undo available)')
+        do_it_nuke.a..('really delete "'+filestoDelete+'" ? (no undo available)')
         __ do_it:
             delete(files,F..)
     else:
@@ -25,7 +25,7 @@ ___ deleteFiles(files):
 # deletes a list of clips supplied from Nuke
 #
 ___ deleteClips(files):
-    do_it_nuke.ask('really delete "'+filestoDelete+'..." ?\n(no undo available)')
+    do_it_nuke.a..('really delete "'+filestoDelete+'..." ?\n(no undo available)')
     __ do_it:
         ___ clips __ files:
             [filesList,name,padding, extension, rangeStart, rangeEnd]_createList(clips)

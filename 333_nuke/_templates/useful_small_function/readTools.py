@@ -20,7 +20,7 @@ ___ setLocalize():
     pass
 
 ___ setFrameRange():
-    f _ nukescripts.PythonPanel('Set read nodes frame range')
+    f _ nukescripts.PP..('Set read nodes frame range')
     f.nodesSelection _ nuke.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     f.divText _ nuke.T_K..('divText', '')
     f.firstFrame _ newUserKnob(nuke.I_K..('first_frame', 'frame range', 1), in.(nuke.root().firstFrame()))
@@ -60,7 +60,7 @@ ___ setFrameRange():
                 pass
 
 ___ setError():
-    e _ nukescripts.PythonPanel('Missing frames setting')
+    e _ nukescripts.PP..('Missing frames setting')
     e.nodesSelection _ nuke.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     e.divText _ nuke.T_K..('divText', '')
     e.onError _ nuke.E_K..('onError', 'missing frames', ['error', 'black', 'checkerboard', 'nearest frame'])
