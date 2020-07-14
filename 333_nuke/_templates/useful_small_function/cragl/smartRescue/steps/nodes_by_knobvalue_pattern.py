@@ -125,7 +125,7 @@ c_ NodesByKnobValuePattern(NodeStep):
 
                 logger.debug("@ node '@' because it matches a pattern. "
                                   "@: @ | Matching Pattern: @",
-                                  setup["mode"], node.name(), knob_name,
+                                  setup["mode"], node.n.. , knob_name,
                                   knob_value, pattern)
 
                 handle_node(node)

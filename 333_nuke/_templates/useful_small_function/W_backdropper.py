@@ -48,7 +48,7 @@ if nuke.NUKE_VERSION_MAJOR < 11:
 else:
     from PySide2 import QtGui, QtCore, QtWidgets
 
-import os
+import __
 import re
 
 from datetime import datetime as dt
@@ -108,7 +108,7 @@ def indexKeywordColors():
         stringKnob = 'backdropperColor%s'%str(number).zfill(2)
         colorKnob = 'backdropperColor%sColor'%str(number).zfill(2)
 
-        keys = [key for key in preferencesNode.knob(stringKnob).value().split(' ') if key]
+        keys = [key for key in preferencesNode.knob(stringKnob).value().s..(' ') if key]
 
         #case sensitive
         if not preferencesNode.knob('backdropperCaseSensitive').value():
@@ -234,7 +234,7 @@ def addKnobToPreferences(knobObject, tooltip = None):
     Save current preferences to the prefencesfile in the .nuke folder.
     '''
 
-    if knobObject.name() not in preferencesNode.knobs().keys():
+    if knobObject.n..  not in preferencesNode.knobs().keys():
 
         if tooltip != None:
             knobObject.setTooltip(tooltip)
@@ -242,7 +242,7 @@ def addKnobToPreferences(knobObject, tooltip = None):
         preferencesNode.addKnob(knobObject)
         savePreferencesToFile()
 
-        return preferencesNode.knob(knobObject.name())
+        return preferencesNode.knob(knobObject.n..
 
 def savePreferencesToFile():
     '''
@@ -250,7 +250,7 @@ def savePreferencesToFile():
     Pythonic alternative to the 'ok' button of the preferences panel.
     '''
 
-    nukeFolder = os.path.expanduser('~') + '/.nuke/'
+    nukeFolder = __.path.expanduser('~') + '/.nuke/'
     preferencesFile = nukeFolder + 'preferences{0}.{1}.nk'.format(nuke.NUKE_VERSION_MAJOR,nuke.NUKE_VERSION_MINOR)
 
     preferencesNode = nuke.toNode('preferences')
@@ -628,13 +628,13 @@ class ImportExportWidget(QtWidgets.QWidget):
         indexPlaceHolder = '_*BACKDROPINDEX*_'
         settings = re.sub(r'(?<=backdropperColor)([0-9]{2})(?<![\s C])', indexPlaceHolder, settings)
 
-        settings = settings.split('\n')
+        settings = settings.s..('\n')
         settings = [line for line in settings if 'backdropperColor' in line]
 
         #split in chunks of four (textinput and colorswatch, adduserknob command and the stored value)
         settings = [settings[index:index + 4] for index in range(0, len(settings), 4)]
 
-        settings = [line for line in settings if not (line[1].split()[-1] == '""' and line[3].split()[-1] == '0xccccccff')]
+        settings = [line for line in settings if not (line[1].s..()[-1] == '""' and line[3].s..()[-1] == '0xccccccff')]
 
         settings = ['\n'.join(line) for line in settings]
         settings = [line.replace(indexPlaceHolder, str(index + 1).zfill(2)) for index, line in enumerate(settings)]
@@ -676,14 +676,14 @@ class ImportExportWidget(QtWidgets.QWidget):
             settings = QtWidgets.QApplication.clipboard().text()
 
         #remove header and split in lines
-        settings = [line for line in settings.split('\n') if line and not line.startswith('#')]
+        settings = [line for line in settings.s..('\n') if line and not line.startswith('#')]
 
         # filter addUserKnob line for knobs that are already present
         for line in settings[::1]:
 
             if line.startswith('addUserKnob'):
 
-                for word in line.split(' '):
+                for word in line.s..(' '):
                     if word.startswith(slotPrefix):
                         if word in preferencesKnobs:
                             settings.remove(line)

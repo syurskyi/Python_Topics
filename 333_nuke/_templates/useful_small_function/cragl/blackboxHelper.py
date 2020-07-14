@@ -33,7 +33,7 @@ ___ getBackupSettings(val, pa__):
         #if pattern found
         __ findVal!_-1:
             val_arr[i]
-            valArr_val.split("=")
+            valArr_val.s..("=")
             ___
                 val_valArr[1] #value
                 __ val__"":

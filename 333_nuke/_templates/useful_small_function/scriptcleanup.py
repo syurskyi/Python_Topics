@@ -204,8 +204,8 @@ c_ CleanModeDialog(?W..):
         ___ node __ cleanup_list:
 
             # node
-            push_node _ ?PB..(node.name())
-            push_node.setProperty("node", node.name())
+            push_node _ ?PB..(node.n..
+            push_node.setProperty("node", node.n..
             table_cleanup.setCellWidget(r, 0, push_node)
             push_node.c__.c..(jump_to_node)
 
@@ -213,7 +213,7 @@ c_ CleanModeDialog(?W..):
             widget _ ?W..()
             layout_widget _ QHBoxLayout()
             checkbox _ QCheckBox()
-            checkbox.setProperty("node", node.name())
+            checkbox.setProperty("node", node.n..
             layout_widget.addStretch()
             layout_widget.aW..(checkbox)
             layout_widget.addStretch()
@@ -223,7 +223,7 @@ c_ CleanModeDialog(?W..):
 
             # remove push
             push_remove_node _ ?PB..("delete")
-            push_remove_node.setProperty("node", node.name())
+            push_remove_node.setProperty("node", node.n..
             push_remove_node.setStyleSheet("QPushButton{background-color: rgb(90,30,30);}")
             table_cleanup.setCellWidget(r, 2, push_remove_node)
             push_remove_node.c__.c..(l___ r_r, node_node: remove_node(r, node.name()))

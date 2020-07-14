@@ -97,7 +97,7 @@ ___ load_settings():
             ____ value __ 'False':
                 value _ F..
             ____ ',' __ value:
-                value _ [ val.strip() ___ val __ value.split(',') ]
+                value _ [ val.strip() ___ val __ value.s..(',') ]
             settings[setting.get('name')] _ value
 
     r_ settings
@@ -111,7 +111,7 @@ ___ load_presets():
         settings_root _ settings_tree.getroot()
         ___ preset __ settings_root.find('backdrops').f_a_('backdrop'):
             presets[preset.get('name')] _ {'icon': preset.get('icon'),
-             'color': [ float(val.strip()) ___ val __ preset.get('color').split(',') ]}
+             'color': [ float(val.strip()) ___ val __ preset.get('color').s..(',') ]}
 
     r_ presets
 
@@ -312,7 +312,7 @@ ___ get_next_link_name():
 
     ___ split_nr(string):
         regex _ re.compile('(\\d+)')
-        element _ regex.split(string)
+        element _ regex.s..(string)
         r_ [ (in.(y) __ y.isdigit() ____ y) ___ y __ element ]
 
     ___ _increase(groups):
@@ -320,7 +320,7 @@ ___ get_next_link_name():
         r_ '{}{}'.f..(groups.group(1), index)
 
     pattern _ '(link_)(\\d+)'
-    node_names _ sorted([ node.name() ___ node __ ?.allNodes() __ re.search(pattern, node.name()) ], key_split_nr)
+    node_names _ sorted([ node.n..  ___ node __ ?.allNodes() __ re.search(pattern, node.n.. ], key_split_nr)
     __ node_names:
         r_ re.sub(pattern, _increase, node_names[-1])
     ____
@@ -346,14 +346,14 @@ ___ atoi(text):
 
 
 ___ natural_keys(text):
-    r_ [ atoi(c) ___ c __ re.split('(\\d+)', text) ]
+    r_ [ atoi(c) ___ c __ re.s..('(\\d+)', text) ]
 
 
 ___ list_from_string(string):
     __ i..(string, list):
         r_ string
     __ ',' __ string:
-        r_ [ cls.strip() ___ cls __ string.split(',') ]
+        r_ [ cls.strip() ___ cls __ string.s..(',') ]
     r_ [string]
 
 
@@ -364,7 +364,7 @@ ___ string_from_list(list_):
 
 
 ___ get_root_favorites_knob():
-    favorites_knob _ ?.root().knob(PREFIX_FAVORITES)
+    favorites_knob _ ?.r.. .knob(PREFIX_FAVORITES)
     __ favorites_knob:
         r_ favorites_knob
     ____
@@ -372,7 +372,7 @@ ___ get_root_favorites_knob():
 
 
 ___ add_smartlink_tab_widgets():
-    root _ ?.root()
+    root _ ?.r..
     __ SMARTLINK __ root.knobs():
         r_
     tab _ ?.T_K..(SMARTLINK)
@@ -385,7 +385,7 @@ ___ add_smartlink_tab_widgets():
 
 ___ add_to_root_favorites(uid):
     favorites_knob _ get_root_favorites_knob()
-    favorites _ [ fav.strip() ___ fav __ favorites_knob.gV...split(',') __ fav ]
+    favorites _ [ fav.strip() ___ fav __ favorites_knob.gV...s..(',') __ fav ]
     __ uid __ favorites:
         r_
     favorites.ap..(uid)
@@ -394,7 +394,7 @@ ___ add_to_root_favorites(uid):
 
 ___ remove_from_root_favorites(uid):
     favorites_knob _ get_root_favorites_knob()
-    favorites _ [ fav.strip() ___ fav __ favorites_knob.gV...split(',') __ fav ]
+    favorites _ [ fav.strip() ___ fav __ favorites_knob.gV...s..(',') __ fav ]
     ___
         del favorites[favorites.index(uid)]
     ______ ValueError:

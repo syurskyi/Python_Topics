@@ -122,7 +122,7 @@ ___ label_dialog():
     nodes _ ?.sN..
     __ le.(nodes) __ 1:
         label _ nodes[0].knob('label').gV..
-        name _ nodes[0].name()
+        name _ nodes[0].n..
         txt _ ?.getInput('Change @ label' % name, label)
     ____
         txt _ ?.getInput('Change node labels', label)
@@ -177,8 +177,8 @@ ___ read_from_write():
                     node_read['first'].sV..(in.(node['first'].getValue()))
                     node_read['last'].sV..(in.(node['last'].getValue()))
                 ____  # no range on the write?  take a stab at using the range from the script value
-                    node_read['first'].sV..(in.(?.root()['first_frame'].getValue()))
-                    node_read['last'].sV..(in.(?.root()['last_frame'].getValue()))
+                    node_read['first'].sV..(in.(?.r.. ['first_frame'].getValue()))
+                    node_read['last'].sV..(in.(?.r.. ['last_frame'].getValue()))
                 node_read.setXpos(node.xpos())  # let's set the position
                 node_read.setYpos(node.ypos() + 50)
                 node_read['premultiplied'].sV..(node['premultiplied'].getValue())  # use premult if checked

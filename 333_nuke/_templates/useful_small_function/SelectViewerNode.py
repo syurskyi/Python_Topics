@@ -29,15 +29,15 @@ ___ GetViewerList(ViewersList):
     ViewersList _ # list
     ActiveViewer_""
     ___
-        ActiveViewer _ ?.ViewerWindow.node(?.activeViewer()).name()
-        ActiveViewer _ "      "+ActiveViewer.split("Viewer")[1]+"    "
+        ActiveViewer _ ?.ViewerWindow.node(?.activeViewer()).n..
+        ActiveViewer _ "      "+ActiveViewer.s..("Viewer")[1]+"    "
     ______
         p..
     ___ v __ ?.allNodes():
-        Name _ v.name()
+        Name _ v.n..
         Class _ v.Class()
         __ Class __ "Viewer":
-            Number _ "      "+ Name.split(Class)[1]+"    "
+            Number _ "      "+ Name.s..(Class)[1]+"    "
             __ Number no. __ ViewersList:
                 ViewersList.append(Number)
     ViewersList _ sorted(ViewersList)
@@ -53,7 +53,7 @@ ___ SelectNode(Viewer,warning):
     Viewer _ re.sub(" ","",Viewer.value())
     Viewer _ "Viewer"+Viewer
     ___
-        ActiveViewer _ ?.ViewerWindow.node(?.activeViewer()).name()
+        ActiveViewer _ ?.ViewerWindow.node(?.activeViewer()).n..
     ______
         p..
     Inputs _ ?.tN..(Viewer).inputs()
@@ -74,13 +74,13 @@ ___ SelectNode(Viewer,warning):
             ______
                 p..
             ___ index __ Nodes:
-                Node _ ?.tN..(?.tN..(Viewer).input(index-1).name())
+                Node _ ?.tN..(?.tN..(Viewer).input(index-1).n..
                 Node.setSelected(T..)
                 ?.show(Node)
         ____
             ___ i __ ra__(0,Inputs):
                 ___
-                    Node _ ?.tN..(?.tN..(Viewer).input(i).name())
+                    Node _ ?.tN..(?.tN..(Viewer).input(i).n..
                     Node.setSelected(T..)
                     ?.show(Node)
                 ______
@@ -91,7 +91,7 @@ ___ SelectNode(Viewer,warning):
         __ Viewer __ ActiveViewer:
             ___
                 index1 _ ?.ViewerWindow.activeInput(?.activeViewer(),F..)
-                Node _ ?.tN..(?.tN..(Viewer).input(index1).name())
+                Node _ ?.tN..(?.tN..(Viewer).input(index1).n..
                 Node.setSelected(T..)
                 ?.show(Node)
             ______
@@ -99,7 +99,7 @@ ___ SelectNode(Viewer,warning):
         ____
             ___ i __ ra__(0,Inputs):
                 ___
-                    Node _ ?.tN..(?.tN..(Viewer).input(i).name())
+                    Node _ ?.tN..(?.tN..(Viewer).input(i).n..
                     Node.setSelected(T..)
                     ?.show(Node)
                 ______
@@ -168,7 +168,7 @@ If the selected viewer is not active, all viewer nodes will be selected
 
     ___ knobChanged(self,knob):
 
-        __ knob.name()__ "OK":
+        __ knob.n.. __ "OK":
 
             __ no. warning.visible():
 

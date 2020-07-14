@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ______ re
-______ os
+______ __
 
 
 __all__ = ['attr_type', 'auto_convert', 'camel_case_to_lower_case_underscore', 'camel_case_to_title', 'clean_name', 
@@ -65,7 +65,7 @@ ___ lower_case_underscore_to_camel_case(text):
     :returns: formatted string.
     :rtype: str
     """
-    split_string = text.split('_')
+    split_string = text.s..('_')
     # use string's class to work on the string to keep its type
     class_ = text.__class__
     r_ split_string[0] + class_.j..('', map(class_.capitalize, split_string[1:]))
@@ -198,11 +198,11 @@ ___ is_newer(file1, file2):
     :returns: file1 is newer.
     :rtype: bool
     """ 
-    __ not os.pa__.exists(file1) or not os.pa__.exists(file2):
+    __ not __.pa__.exists(file1) or not __.pa__.exists(file2):
         r_ False
 
-    time1 = os.pa__.getmtime(file1)
-    time2 = os.pa__.getmtime(file2)
+    time1 = __.pa__.getmtime(file1)
+    time2 = __.pa__.getmtime(file2)
     r_ time1 > time2
 
 #- Testing -----

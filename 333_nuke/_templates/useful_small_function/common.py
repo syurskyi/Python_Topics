@@ -25,7 +25,7 @@
 # specified returns its value
 import nuke
 import re
-import os
+import __
 
 def topInput(node,input,ch_class,knob,ch_frame):
     if node:
@@ -171,14 +171,14 @@ def animCurveMinMax(curve):
 #
 def getTrackNames(node):
     k=node['tracks']
-    s=node['tracks'].toScript().split(' \n} \n{ \n ')
+    s=node['tracks'].toScript().s..(' \n} \n{ \n ')
     s.pop(0)
-    ss=str(s)[2:].split('\\n')
+    ss=str(s)[2:].s..('\\n')
     ss.pop(-1)
     ss.pop(-1)
     outList=[]
     for i in ss:
-        outList.append(i.split('"')[1])
+        outList.append(i.s..('"')[1])
     return outList
 
 
@@ -197,23 +197,23 @@ def getHelpUrl(node=None):
     mySite='www.chimuru.com'
 
     # Check if there is override for default value
-    if os.getenv('TK_HELP_URL'):
-        mySite=os.getenv('TK_HELP_URL')
+    if __.getenv('TK_HELP_URL'):
+        mySite=__.getenv('TK_HELP_URL')
 
     if node:
         # Reading os environment variable to find file with help urls
-        if os.getenv('TK_HELP_FILE'):
-            helpFile=os.getenv('TK_HELP_FILE')
+        if __.getenv('TK_HELP_FILE'):
+            helpFile=__.getenv('TK_HELP_FILE')
 
             # opening help Settings file to read settings
             settings=[]
-            if os.path.isfile( helpFile ):
+            if __.path.isfile( helpFile ):
                 prefFile = open(helpFile,"r")
                 prefContent = prefFile.readlines()
                 prefFile.close()
 
                 for i in prefContent:
-                    key,value= i.rstrip().split('::')
+                    key,value= i.rstrip().s..('::')
                     settings.append((key,value))  
          
             ndClass=nodeClass(node)
@@ -285,8 +285,8 @@ def shiftConnections(node,start=0):
 def where(filename):
     file_list=[]
     for path in nuke.pluginPath():
-        check_file='%s%s%s' % (path, os.sep, filename)
-        if os.path.isfile( check_file ):
+        check_file='%s%s%s' % (path, __.sep, filename)
+        if __.path.isfile( check_file ):
             file_list.append(check_file)
     if file_list:
         file_list.reverse()

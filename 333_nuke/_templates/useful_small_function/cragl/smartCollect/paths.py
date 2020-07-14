@@ -4,7 +4,7 @@ ______ __
 ______ re
 
 ___ get_file_elements(filename):
-    file_elements _ re.split('\\.([\\d|#|%\\dd]*).([a-z]*)', filename)
+    file_elements _ re.s..('\\.([\\d|#|%\\dd]*).([a-z]*)', filename)
     b_n_, file_sequence, ext, _ _ file_elements
     __ no. file_sequence:
         raise ValueError('No file_sequence found in {}'.f..(filename))
@@ -39,7 +39,7 @@ ___ scan_for_nukescripts(pa__, ignore):
     ? _ # list
     __ no. ignore:
         ignore _ ''
-    ignore_list _ [ ignore_file.strip() ___ ignore_file __ ignore.split(',') __ ignore_file ]
+    ignore_list _ [ ignore_file.strip() ___ ignore_file __ ignore.s..(',') __ ignore_file ]
     ___ root, dirs, files __ __.walk(pa__):
         ___ name __ files:
             __ __.pa__.s_t_(name)[1] __ '.nk':

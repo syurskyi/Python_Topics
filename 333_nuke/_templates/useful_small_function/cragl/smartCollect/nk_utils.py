@@ -42,7 +42,7 @@ ___ get_nuke_exe(startup_feedback _ F..):
                 __ pl...system() __ 'Darwin':
                     nuke_executable _ full_path.f..(?_version)
                 ____
-                    nuke_executable _ full_path.f..(?_version, nuke_major_minor_version.split('v')[0])
+                    nuke_executable _ full_path.f..(?_version, nuke_major_minor_version.s..('v')[0])
                 __ __.pa__.isf..(nuke_executable):
                     executable _ nuke_executable
                     __ debug:
@@ -58,4 +58,4 @@ ___ get_nuke_exe(startup_feedback _ F..):
 
 ___ get_nukescript_path():
     ______ ?
-    r_ ?.root().name()
+    r_ ?.r.. .n..

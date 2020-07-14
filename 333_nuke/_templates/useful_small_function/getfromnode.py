@@ -67,7 +67,7 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
         
         # check if proxy enabled, if so return Proxy knob instead of File
         __ proxy:
-            __ ?.root().proxy():
+            __ ?.r.. .proxy():
                 __ 'proxy' __ node.knobs():
                     ___
                         # attempt to get proxy knob from linked (gizmos < 5.2v1)

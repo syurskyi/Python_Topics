@@ -1,4 +1,4 @@
-import re, os.path, nuke, nukescripts
+import re, __.path, nuke, nukescripts
 
 
 Selection = nuke.selectedNodes()
@@ -9,16 +9,16 @@ OldSelect1 = []
 def SplitDir(fileknob):
 
 
-    FileName = os.path.basename(fileknob)
+    FileName = __.path.basename(fileknob)
 
          
-    Dir = os.path.dirname(fileknob)
+    Dir = __.path.dirname(fileknob)
                     
                     
-    DirUp = os.path.split(Dir)
+    DirUp = __.path.s..(Dir)
                     
                     
-    Joined = os.path.normpath(os.path.join(DirUp[1],FileName))
+    Joined = __.path.n_p_ (__.path.join(DirUp[1],FileName))
                     
                     
     Joined = re.sub(r'\\', r'/' ,Joined)
@@ -31,13 +31,13 @@ def SplitDir(fileknob):
 def SplitDirUp(fileknob):
 
 
-    FileName = os.path.basename(fileknob)
+    FileName = __.path.basename(fileknob)
     
          
-    Dir = os.path.dirname(fileknob)   
+    Dir = __.path.dirname(fileknob)
     
                     
-    DirUp = os.path.split(Dir)[0]
+    DirUp = __.path.s..(Dir)[0]
     
     
     return DirUp
@@ -69,19 +69,19 @@ def FindVersion(fileknob):
 def ListVersions(fileknob):
 
 
-    FileName = os.path.basename(fileknob)
+    FileName = __.path.basename(fileknob)
 
 
-    FileBase = FileName.split(FindVersion(SplitDir(fileknob)))[0]
+    FileBase = FileName.s..(FindVersion(SplitDir(fileknob)))[0]
 
  
-    Dir = os.path.dirname(fileknob)
+    Dir = __.path.dirname(fileknob)
 
 
-    DirUp = os.path.split(Dir)[0]
+    DirUp = __.path.s..(Dir)[0]
 
 
-    Names = [name for name in os.listdir(DirUp) if FileBase in name]
+    Names = [name for name in __.listdir(DirUp) if FileBase in name]
 
 
     OnlyFolders = []
@@ -90,10 +90,10 @@ def ListVersions(fileknob):
     for i in Names:
 
 
-        Joined = os.path.normpath(os.path.join(DirUp,i))
+        Joined = __.path.n_p_ (__.path.join(DirUp,i))
 
 
-        check = os.path.isdir(Joined)
+        check = __.path.isdir(Joined)
 
 
         version = FindVersion(i)
@@ -115,16 +115,16 @@ def ListVersions(fileknob):
 def ListVersionsFiles(fileknob):
 
 
-    FileName = os.path.basename(fileknob)
+    FileName = __.path.basename(fileknob)
 
 
-    FileBase = FileName.split(FindVersion(FileName))[0]
+    FileBase = FileName.s..(FindVersion(FileName))[0]
 
  
-    Dir = os.path.dirname(fileknob)
+    Dir = __.path.dirname(fileknob)
 
 
-    Names = [name for name in os.listdir(Dir) if FileBase in name]
+    Names = [name for name in __.listdir(Dir) if FileBase in name]
 
 
     OnlyFiles = []
@@ -133,10 +133,10 @@ def ListVersionsFiles(fileknob):
     for i in Names:
 
 
-        Joined = os.path.normpath(os.path.join(Dir,i))
+        Joined = __.path.n_p_ (__.path.join(Dir,i))
 
 
-        check = os.path.isfile(Joined)
+        check = __.path.isfile(Joined)
 
 
         version = FindVersion(i)
@@ -170,7 +170,7 @@ def VersionUp(KnobTypes,NodeTypes):
                     fileknob = node[n].value()
                     
 
-                    FileName = os.path.basename(fileknob)                    
+                    FileName = __.path.basename(fileknob)
                     
 
                     version = FindVersion(SplitDir(fileknob))
@@ -182,7 +182,7 @@ def VersionUp(KnobTypes,NodeTypes):
                     if version != versionFile:
 
 
-                        print "Error: different versions found in " + node.name() + " " + n
+                        print "Error: different versions found in " + node.n..  + " " + n
 
                      
                     if version:
@@ -212,7 +212,7 @@ def VersionUp(KnobTypes,NodeTypes):
                             NewStr=re.sub("v"+version,"v"+string_Next,SplitDir(fileknob))
 
                             
-                            Joined = os.path.normpath(os.path.join(SplitDirUp(fileknob),NewStr))
+                            Joined = __.path.n_p_ (__.path.join(SplitDirUp(fileknob),NewStr))
                     
                     
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -231,7 +231,7 @@ def VersionUp(KnobTypes,NodeTypes):
 
                     else:
 
-                        print "Error: No versions found in " + node.name() + " " + n
+                        print "Error: No versions found in " + node.n..  + " " + n
 
                 except :
 
@@ -256,9 +256,9 @@ def VersionUpFiles(KnobTypes,NodeTypes):
 
                     fileknob = node[n].value()
                     
-                    FileName = os.path.basename(fileknob)
+                    FileName = __.path.basename(fileknob)
          
-                    Dir = os.path.dirname(fileknob)
+                    Dir = __.path.dirname(fileknob)
                    
                     version = FindVersion(FileName)
                      
@@ -285,7 +285,7 @@ def VersionUpFiles(KnobTypes,NodeTypes):
                             FileName=re.sub("v"+version,"v"+string_Next,FileName) 
                             
 
-                            Joined = os.path.normpath(os.path.join(Dir,FileName))
+                            Joined = __.path.n_p_ (__.path.join(Dir,FileName))
                             
                             
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -304,7 +304,7 @@ def VersionUpFiles(KnobTypes,NodeTypes):
 
                     else:
 
-                        print "Error: No versions found in " + node.name() + " " + n        
+                        print "Error: No versions found in " + node.n..  + " " + n
 
                 except:
 
@@ -329,7 +329,7 @@ def VersionDown(KnobTypes,NodeTypes):
                     fileknob = node[n].value()    
 
 
-                    FileName = os.path.basename(fileknob)                    
+                    FileName = __.path.basename(fileknob)
                     
 
                     version = FindVersion(SplitDir(fileknob))
@@ -341,7 +341,7 @@ def VersionDown(KnobTypes,NodeTypes):
                     if version != versionFile:
 
 
-                        print "Error: different versions found in " + node.name() + " " + n
+                        print "Error: different versions found in " + node.n..  + " " + n
 
 
                     if version:
@@ -371,7 +371,7 @@ def VersionDown(KnobTypes,NodeTypes):
                             NewStr=re.sub("v"+version,"v"+string_Previous,SplitDir(fileknob))
 
                             
-                            Joined = os.path.normpath(os.path.join(SplitDirUp(fileknob),NewStr))
+                            Joined = __.path.n_p_ (__.path.join(SplitDirUp(fileknob),NewStr))
                     
                     
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -390,7 +390,7 @@ def VersionDown(KnobTypes,NodeTypes):
 
                     else:
 
-                        print "Error: No versions found in " + node.name() + " " + n
+                        print "Error: No versions found in " + node.n..  + " " + n
 
 
                 except:
@@ -417,10 +417,10 @@ def VersionDownFiles(KnobTypes,NodeTypes):
                     fileknob = node[n].value()
 
                     
-                    FileName = os.path.basename(fileknob)
+                    FileName = __.path.basename(fileknob)
 
          
-                    Dir = os.path.dirname(fileknob)
+                    Dir = __.path.dirname(fileknob)
 
                    
                     version = FindVersion(FileName)
@@ -453,7 +453,7 @@ def VersionDownFiles(KnobTypes,NodeTypes):
                             FileName=re.sub("v"+version,"v"+string_Previous,FileName) 
                             
 
-                            Joined = os.path.normpath(os.path.join(Dir,FileName))
+                            Joined = __.path.n_p_ (__.path.join(Dir,FileName))
                             
                             
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -472,7 +472,7 @@ def VersionDownFiles(KnobTypes,NodeTypes):
 
                     else:
 
-                        print "Error: No versions found in " + node.name() + " " + n     
+                        print "Error: No versions found in " + node.n..  + " " + n
 
 
                 except:
@@ -498,7 +498,7 @@ def VersionLast(KnobTypes,NodeTypes):
                     fileknob = node[n].value()  
 
 
-                    FileName = os.path.basename(fileknob)                    
+                    FileName = __.path.basename(fileknob)
                     
 
                     version = FindVersion(SplitDir(fileknob))
@@ -510,7 +510,7 @@ def VersionLast(KnobTypes,NodeTypes):
                     if version != versionFile:
 
 
-                        print "Error: different versions found in " + node.name() + " " + n
+                        print "Error: different versions found in " + node.n..  + " " + n
 
 
                     if version:
@@ -525,7 +525,7 @@ def VersionLast(KnobTypes,NodeTypes):
                         NewStr=re.sub("v"+version,"v"+Last,SplitDir(fileknob))
 
                             
-                        Joined = os.path.normpath(os.path.join(SplitDirUp(fileknob),NewStr))
+                        Joined = __.path.n_p_ (__.path.join(SplitDirUp(fileknob),NewStr))
                     
                     
                         Joined = re.sub(r'\\', r'/' ,Joined)
@@ -544,7 +544,7 @@ def VersionLast(KnobTypes,NodeTypes):
 
                     else:
 
-                        print "Error: No versions found in " + node.name() + " " + n
+                        print "Error: No versions found in " + node.n..  + " " + n
 
 
                 except:
@@ -571,10 +571,10 @@ def VersionLastFiles(KnobTypes,NodeTypes):
                     fileknob = node[n].value()
 
                     
-                    FileName = os.path.basename(fileknob)
+                    FileName = __.path.basename(fileknob)
 
          
-                    Dir = os.path.dirname(fileknob)
+                    Dir = __.path.dirname(fileknob)
 
                    
                     version = FindVersion(FileName)
@@ -592,7 +592,7 @@ def VersionLastFiles(KnobTypes,NodeTypes):
                         FileName=re.sub("v"+version,"v"+Last,FileName) 
                             
 
-                        Joined = os.path.normpath(os.path.join(Dir,FileName))
+                        Joined = __.path.n_p_ (__.path.join(Dir,FileName))
                         
                         
                         Joined = re.sub(r'\\', r'/' ,Joined)
@@ -611,7 +611,7 @@ def VersionLastFiles(KnobTypes,NodeTypes):
 
                     else:
 
-                        print "Error: No versions found in " + node.name() + " " + n    
+                        print "Error: No versions found in " + node.n..  + " " + n
 
 
                 except:
@@ -637,13 +637,13 @@ def VersionMatchFolder(KnobTypes,NodeTypes):
                     fileknob = node[n].value()    
 
 
-                    FileName = os.path.basename(fileknob)
+                    FileName = __.path.basename(fileknob)
 
 
-                    Dir = os.path.dirname(fileknob)
+                    Dir = __.path.dirname(fileknob)
                     
                     
-                    DirLast = os.path.split(Dir)[1]
+                    DirLast = __.path.s..(Dir)[1]
                     
 
                     version = FindVersion(SplitDir(fileknob))
@@ -664,7 +664,7 @@ def VersionMatchFolder(KnobTypes,NodeTypes):
                             FileName = re.sub("v"+versionFile,"v"+version,FileName)
 
                             
-                            Joined = os.path.normpath(os.path.join(SplitDirUp(fileknob),DirLast,FileName))
+                            Joined = __.path.n_p_ (__.path.join(SplitDirUp(fileknob),DirLast,FileName))
                     
                     
                             Joined = re.sub(r'\\', r'/' ,Joined)
@@ -683,7 +683,7 @@ def VersionMatchFolder(KnobTypes,NodeTypes):
 
                     else:
 
-                        print "Error: No versions found in " + node.name() + " " + n    
+                        print "Error: No versions found in " + node.n..  + " " + n
 
 
                 except:
@@ -709,13 +709,13 @@ def VersionMatchFiles(KnobTypes,NodeTypes):
                     fileknob = node[n].value() 
                     
 
-                    Dir = os.path.dirname(fileknob) 
+                    Dir = __.path.dirname(fileknob)
                     
                     
-                    DirLast = os.path.split(Dir)[1]
+                    DirLast = __.path.s..(Dir)[1]
 
 
-                    FileName = os.path.basename(fileknob)                    
+                    FileName = __.path.basename(fileknob)
                     
 
                     version = FindVersion(SplitDir(fileknob))
@@ -733,7 +733,7 @@ def VersionMatchFiles(KnobTypes,NodeTypes):
                         DirLast = re.sub("v"+version,"v"+versionFile, DirLast)
                         
                         
-                        Joined = os.path.normpath(os.path.join(SplitDirUp(fileknob),DirLast,FileName))
+                        Joined = __.path.n_p_ (__.path.join(SplitDirUp(fileknob),DirLast,FileName))
                     
                     
                         Joined = re.sub(r'\\', r'/' ,Joined)
@@ -1408,7 +1408,7 @@ clears all messages
             self.SelectedKnobTypes = []
 
 
-            self.SelectedKnobTypes = [ k.name() for k in self.KnobTypes if k.getValue()]
+            self.SelectedKnobTypes = [ k.n..  for k in self.KnobTypes if k.getValue()]
 
 
 
@@ -1421,7 +1421,7 @@ clears all messages
             self.SelectedNodeTypes = []
 
 
-            self.SelectedNodeTypes = [ node.name() for node in self.NodeTypes if node.getValue()]
+            self.SelectedNodeTypes = [ node.n..  for node in self.NodeTypes if node.getValue()]
             
             
             

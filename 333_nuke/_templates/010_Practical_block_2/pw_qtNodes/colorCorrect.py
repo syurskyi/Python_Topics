@@ -422,9 +422,9 @@ c_ colorPickerClass(?W..):
             border-style: solid;
             border: 1px solid #fff;
             border-radius: 2;
-        }''' % color.name())
+        }''' % color.n..
         #hex
-        hex_le.setText(color.name())
+        hex_le.setText(color.n..
         #rgb
         rgb_le.setText('%d,%d,%d' % (color.red(), color.green(), color.blue()))
         #hsv

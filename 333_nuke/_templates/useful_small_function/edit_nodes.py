@@ -29,7 +29,7 @@ ___ get_knobs(node):
     default_knobs = list()
     ___ k in node.knobs():
         knob = node[k]
-        __ knob.Class() not in unsupported_classes and knob.name() not in unsupported_names:
+        __ knob.Class() not in unsupported_classes and knob.n..  not in unsupported_names:
             ___ pattern in ignore_patterns:
                 __ pattern not in k:
                     knobs.append(k)
@@ -177,7 +177,7 @@ ___ paste_knobs(checkboxes=False):
         ___ dst_node in dst_nodes:
             dst_knobs = dst_node.knobs()
             ___ knob in chosen_knobs:
-                print 'pasting src {0} to dst {1}'.format(knob, dst_node.name())
+                print 'pasting src {0} to dst {1}'.format(knob, dst_node.n..
                 src = src_knobs[knob]
                 dst = dst_knobs[knob]
                 dst.fromScript(src.toScript())

@@ -79,7 +79,7 @@ ___ get_all_write_nodes_data(*args):
     write_data _ {}
     all_write_nodes _ [ node ___ node __ ?.allNodes('Write') __ node['disable'].gV.. __ 0.0 ]
     ___ w.. __ all_write_nodes:
-        write_data[w...name()] _ w..['file'].gV..
+        write_data[w...n.. ] _ w..['file'].gV..
 
     r_ write_data
 
@@ -345,7 +345,7 @@ ___ get_job_id_by_script_orig(script_orig, *args):
     ____
         latest _ jobs[0]
         ___ job __ jobs:
-            __ job.split('_')[0] > latest.split('_')[0]:
+            __ job.s..('_')[0] > latest.s..('_')[0]:
                 latest _ job
 
         r_ latest
@@ -487,10 +487,10 @@ ___ insert_as_read_node(job_details, w.. _ N.., *args):
     __ w..:
         read _ ?.createNode('Read')
         read['file'].sV..(w..['file'].getValue())
-        read['first'].sV..(in.(?.root()['first_frame'].getValue()))
-        read['origfirst'].sV..(in.(?.root()['first_frame'].getValue()))
-        read['last'].sV..(in.(?.root()['last_frame'].getValue()))
-        read['origlast'].sV..(in.(?.root()['last_frame'].getValue()))
+        read['first'].sV..(in.(?.r.. ['first_frame'].getValue()))
+        read['origfirst'].sV..(in.(?.r.. ['first_frame'].getValue()))
+        read['last'].sV..(in.(?.r.. ['last_frame'].getValue()))
+        read['origlast'].sV..(in.(?.r.. ['last_frame'].getValue()))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
         read.setXYpos(in.(w..['xpos'].getValue()), in.(w..['ypos'].getValue()) + 70)
@@ -996,7 +996,7 @@ ___ get_recent_nukescripts(*args):
 
 ___ open_renderpath_in_explorer(label, renderpath, srw, *args):
     __ renderpath __ '':
-        label _ label.split(' (')[0]
+        label _ label.s..(' (')[0]
         msg _ "The file path for '{}' hasn't been set up, yet.".f..(label)
         show_message_box(srw, msg)
         r_

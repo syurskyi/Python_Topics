@@ -13,7 +13,7 @@ ___ parse(script):
             into list
 
     """
-    queue _ deque(script.split("\n"))
+    queue _ deque(script.s..("\n"))
     tab _ Tablet()
     tab.consume(queue)
     r_ tab

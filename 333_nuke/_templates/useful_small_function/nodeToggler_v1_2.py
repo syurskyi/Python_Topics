@@ -26,7 +26,7 @@ ___ nodeToggler():
                     ____ item.knob(knobPanel.value('Select Knob')).v.. __ T..:
                         item.knob(knobPanel.value('Select Knob')).setValue(F..)
                 ____
-                    ?.m..('{} node has no {} knob.'.f..(item.name(), knobPanel.value('Select Knob')))
+                    ?.m..('{} node has no {} knob.'.f..(item.n.. , knobPanel.value('Select Knob')))
         #creates panel for node selection
 	nodePanel _ ?.Panel('Select Node')
         allNode _ ?.allNodes()

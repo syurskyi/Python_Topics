@@ -159,8 +159,8 @@ c_ ScriptInfo(NodeStep):
             int, int, The first and last frame of the working file.
 
         """
-        first_frame _ in.(?.root()["first_frame"].value())
-        last_frame _ in.(?.root()["last_frame"].value())
+        first_frame _ in.(?.r.. ["first_frame"].value())
+        last_frame _ in.(?.r.. ["last_frame"].value())
         r_ first_frame, last_frame
 
     ___ root_values
@@ -195,7 +195,7 @@ c_ ScriptInfo(NodeStep):
             __ knob_name __ "format":
                 format_ _ "{} ({}x{} {})"
                 format_knob _ knob.v..
-                r_ format_.f..(format_knob.name(), format_knob.width(),
+                r_ format_.f..(format_knob.n.. , format_knob.width(),
                                       format_knob.height(),
                                       format_knob.pixelAspect())
             # Implement extraction for other nodes in here.
@@ -205,7 +205,7 @@ c_ ScriptInfo(NodeStep):
 
         root_values _ # list
         ___ knob_name __ setup["root_info"]:
-            knob _ ?.root().knob(knob_name)
+            knob _ ?.r.. .knob(knob_name)
             __ no. knob:
                 c___
 
@@ -239,7 +239,7 @@ c_ ScriptInfo(NodeStep):
                 __ no. path_knob:
                     c___
                 pa__ _ path_knob.evaluate() or "---"
-                footage.ap..((node.name(), pa__))
+                footage.ap..((node.n.. , pa__))
 
         r_ tuple(footage)
 

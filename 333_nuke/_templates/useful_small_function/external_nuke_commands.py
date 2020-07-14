@@ -59,7 +59,7 @@ ___ nuke_IO(input=None):
 
     ___ execute_nuke(executable):
         ______ ?
-        ______ os, math, random
+        ______ __, math, random
         exec (executable)
 
     ___
@@ -75,8 +75,8 @@ ___ nuke_set(input, color):
 
     __ le.(?.sN.. __ 0
 
-        object = st.(input.split('.')[0])
-        attribute = st.(input.split('.')[1])
+        object = st.(input.s..('.')[0])
+        attribute = st.(input.s..('.')[1])
 
         ___
             node = ?.tN..(object)
@@ -88,7 +88,7 @@ ___ nuke_set(input, color):
 
     ____ le.(?.sN..()) __ 1:
 
-        object = ?.sN..()[0].name()
+        object = ?.sN..()[0].n..
         print object
         attribute = input
 
@@ -109,7 +109,7 @@ ___ nuke_set(input, color):
 
         ___
             ___ node in ?.sN..():
-                object = node.name()
+                object = node.n..
                 attribute = input
                 node = ?.tN..(object)
                 node[attribute].setValue(color)
@@ -125,8 +125,8 @@ ___ nuke_get(input):
 
     __ le.(?.sN..()) __ 0:
 
-        object = st.(input.split('.')[0])
-        attribute = st.(input.split('.')[1])
+        object = st.(input.s..('.')[0])
+        attribute = st.(input.s..('.')[1])
 
         ___
             node = ?.tN..(object)
@@ -138,7 +138,7 @@ ___ nuke_get(input):
 
     ____ le.(?.sN..()) __ 1:
 
-        object = st.(?.sN..()[0].name())
+        object = st.(?.sN..()[0].n..
         attribute = input
 
         __ '.' in input:

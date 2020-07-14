@@ -62,10 +62,10 @@ ___ createDefault():
 	k _ ?.tK..
 	
 	#set default for current nuke session
-	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.name()), "{val}".f..(val_k.value()))
+	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.n.., "{val}".f..(val_k.value()))
 
 	# set 
-	updateKnobInit(n.Class(),k.name(),k.v..,"write")
+	updateKnobInit(n.Class(),k.n.. ,k.v..,"write")
 
 ___ resetToDefault():
 	'''
@@ -76,8 +76,8 @@ ___ resetToDefault():
 	k _ ?.tK..
 
 	k.sV..(k.defaultValue())
-	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.name()), "{val}".f..(val_k.defaultValue()))
-	updateKnobInit(n.Class(),k.name(),"","del")
+	?.knobDefault("{node}.{knob}".f..(node_n.Class(), knob_k.n.., "{val}".f..(val_k.defaultValue()))
+	updateKnobInit(n.Class(),k.n.. ,"","del")
 
 ___ updateKnobInit(node,knob,value,mode):
 	'''

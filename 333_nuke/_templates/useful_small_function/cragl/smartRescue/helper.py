@@ -52,7 +52,7 @@ ___ create_working_file_copies(files):
     copy_files _ # list
     date _ date_now()
     ___ file_ __ files:
-        parent_dir, filename _ __.pa__.split(file_)
+        parent_dir, filename _ __.pa__.s..(file_)
         b_n_ _ __.pa__.s_t_(filename)[0]
         copy_filename _ "{}_rescue_{}.nk".f..(b_n_, date)
         dest _ __.pa__.j..(parent_dir, copy_filename)
@@ -174,7 +174,7 @@ ___ get_docstring_elements(pa__):
     docstring _ get_docstring(pa__)
     regex _ re.search(DOCSTRING_EXTRACTION_PATTERN, docstring, re.DOTALL)
     __ regex:
-        description _ regex.groupdict()["description"].split("\n")
+        description _ regex.groupdict()["description"].s..("\n")
         header _ description[0]
         body _ "\n".j..(description[1:])
         standard _ regex.groupdict()["example_standard"]

@@ -239,7 +239,7 @@ ___ get_asset_name(sourcenode):
                 asset_name _ "element_01"
                 r_ asset_name
         ____
-            r_ get_asset_name(node.name())
+            r_ get_asset_name(node.n..
 
 
 ___ create_deep_holdout_setup(node_class):
@@ -253,7 +253,7 @@ ___ create_deep_holdout_setup(node_class):
     
     deep_node _ ?.sN__
     dependencies _ find_dependencies(node_class)
-    asset_name _ get_asset_name(deep_node.name())
+    asset_name _ get_asset_name(deep_node.n..
 
     pos1 _ get_node_position(deep_node)
     pos2 _ get_node_position(dependencies[1])
@@ -330,7 +330,7 @@ ___ check_upstream_match(sourcenode,targetnode):
     ____
         print "KEEP LOOKING"
         ___ node __ dep_nodes:
-            r_ check_upstream_match(node.name(),targetnode)
+            r_ check_upstream_match(node.n.. ,targetnode)
 
 
 ___ iterate_deep_holdout_setup():
@@ -349,7 +349,7 @@ ___ iterate_deep_holdout_setup():
             ?.m..("Please, select only DeepRecolor Nodes")
             r_
         ____
-            names.ap..(i.name())
+            names.ap..(i.n..
             i['selected'].sV..(F..)
 
     #build_depth_setup(names)
@@ -359,14 +359,14 @@ ___ iterate_deep_holdout_setup():
         class_ _ node.Class()
         node['selected'].sV..(T..)
         setup _ create_deep_holdout_setup(class_)
-        deep_holdouts.ap..(setup.name())
+        deep_holdouts.ap..(setup.n..
    
     counter _ 0
 
     ___ ho __ deep_holdouts:
         hold_out _ ?.tN..(ho)
         depp _ ?.dependencies(hold_out)
-        deep_merge _ depp[1].name()
+        deep_merge _ depp[1].n..
 
         ___ name __ names:
            __ check_upstream_match(ho,name):
@@ -427,7 +427,7 @@ ___ create_rgba_deep_recolor(channels):
 
         deep_recolor['channels'].sV..(channels)
         
-        new_deep_recolor_names.ap..(deep_recolor.name())
+        new_deep_recolor_names.ap..(deep_recolor.n..
 
     r_ new_deep_recolor_names
 
@@ -538,7 +538,7 @@ ___ splitLayers( node ):
     valid_channels _ ['red', 'green', 'blue', 'alpha', 'black', 'white']
     
     ___ each __ ch:
-        layer_name _ each.split( '.' )[0]
+        layer_name _ each.s..( '.' )[0]
         tmp _ # list
         ___ channel __ ch:
             __ channel.startswith( layer_name ) __ T..:
@@ -550,11 +550,11 @@ ___ splitLayers( node ):
             layers.ap..( tmp )
             
     ___ each __ layers:
-        layer _ each[0].split( '.' )[0]
-        ch1 _ each[0].split( '.' )[1]
-        ch2 _ each[1].split( '.' )[1]
-        ch3 _ each[2].split( '.' )[1]
-        ch4 _ each[3].split( '.' )[1]
+        layer _ each[0].s..( '.' )[0]
+        ch1 _ each[0].s..( '.' )[1]
+        ch2 _ each[1].s..( '.' )[1]
+        ch3 _ each[2].s..( '.' )[1]
+        ch4 _ each[3].s..( '.' )[1]
         
         __ ch1 no. __ valid_channels:
             ch1 _ "red red"
@@ -630,7 +630,7 @@ ___ find_holdout_source_elements(houldout_names):
     houldout_processed_list _ # list
         
     ___ name __ houldout_names:
-        _ _ "_".j..(name.split('_')[:-2])
+        _ _ "_".j..(name.s..('_')[:-2])
         __ ?.tN..(_):
             houldout_processed_list.ap..(_)
         ____
@@ -716,7 +716,7 @@ ___ create_and_connect_child_dots(holdouts,color):
                 merge.setInput(1,multiply_list[i])
                 
             ____ le.(holder) > 1:
-                print holder[i-2].name() 
+                print holder[i-2].n..
                 merge.setInput(0,holder[i-2])
                 merge.setInput(1,multiply_list[i])
 
@@ -746,8 +746,8 @@ c_ modalPanel(?.PP..):
 
     ___ get_frame_range
         __ giveFrameRangeValue() __ "global":
-            first_frame _ ?.root().firstFrame()
-            last_frame _ ?.root().lastFrame()
+            first_frame _ ?.r.. .firstFrame()
+            last_frame _ ?.r.. .lastFrame()
             txt _ st.(in.(first_frame)) + '-' + st.(in.(last_frame))
             frame_display.sV..(txt)
         ____ giveFrameRangeValue() __ "input":
@@ -762,7 +762,7 @@ c_ modalPanel(?.PP..):
             print "here the user decides"
 
     ___ knobChanged(self,knob):
-        __ knob.name() __ "fRange":
+        __ knob.n..  __ "fRange":
             get_frame_range()
                       
 

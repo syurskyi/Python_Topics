@@ -22,12 +22,12 @@ ___ createList(files):
     # parses the Nuke shorthand and splits into several components
     ___
         pathToFile___.pa__.d_n_(files[0])
-        clipname___.pa__.b_n_(files[0]).split('(')[0]
-        name_clipname.split('.')[0]
-        padding_(clipname.split('.')[1])[1:3]
-        extension_clipname.split(' ')[0].split('.')[2]
-        rangeStart_clipname.split(' ')[1].split('-')[0]
-        rangeEnd_clipname.split(' ')[1].split('-')[1]
+        clipname___.pa__.b_n_(files[0]).s..('(')[0]
+        name_clipname.s..('.')[0]
+        padding_(clipname.s..('.')[1])[1:3]
+        extension_clipname.s..(' ')[0].s..('.')[2]
+        rangeStart_clipname.s..(' ')[1].s..('-')[0]
+        rangeEnd_clipname.s..(' ')[1].s..('-')[1]
 
         # creates a list of files from above
         filesList_ # list
@@ -85,7 +85,7 @@ ___ renameClips(files):
 #
 ___ renameFiles(files):
     pathToFile___.pa__.d_n_(files[0])
-    name___.pa__.b_n_(files[0]).split('.')[0]
+    name___.pa__.b_n_(files[0]).s..('.')[0]
     (search,r..)_getRename(files,name)
     filesList_# list
     ___ f __ files:
@@ -227,7 +227,7 @@ ___ removeTemps():
             files _ __.l_d_(pa__)
             count_0
             ___ f __ files:
-                filename _ f.split('.')
+                filename _ f.s..('.')
                 ext _ filename[-1]
                 __ ext __ 'tmp':
                     ___

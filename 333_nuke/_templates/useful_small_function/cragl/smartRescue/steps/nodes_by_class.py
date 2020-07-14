@@ -95,7 +95,7 @@ c_ NodesByClass(NodeStep):
 
                 logger.info("@ '@' because its node class (@) is "
                                  "included in @", setup["mode"],
-                                 node.name(), class_name,
+                                 node.n.. , class_name,
                                  setup["node_classes"])
 
                 handle_node(node)

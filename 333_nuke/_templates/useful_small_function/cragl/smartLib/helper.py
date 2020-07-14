@@ -143,7 +143,7 @@ ___ set_item_icon(listwidget_item, name, is_dir, is_render_dir _ F.., is_footage
                 listwidget_item.setIcon(0, ?G...QIcon(icons['icon_read']))
 
     __ '.' __ name:
-        ext _ name.split('.')[1]
+        ext _ name.s..('.')[1]
         __ ext __ 'nk':
             ___
                 listwidget_item.setIcon(0, ?G...QIcon(icons['icon_nuke']))
@@ -549,7 +549,7 @@ ___ collect_nuke_scripts_no_ignore(pa__):
     nuke_scripts _ collections.OrderedDict()
     ignore_list _ load_settings()['nukescripts_ignore']
     __ ignore_list:
-        ignore_list _ ignore_list.split(',')
+        ignore_list _ ignore_list.s..(',')
     ____
         ignore_list _ # list
     ignore_list.extend(['.nk~', '.autosave'])
@@ -654,7 +654,7 @@ ___ set_preview_image(delete_nodes _ T..):
 
 ___ get_dir_docs_current_nukescript():
     up_level _ 7
-    current_script_dir _ __.pa__.d_n_(?.root().name())
+    current_script_dir _ __.pa__.d_n_(?.r.. .n..
     __ current_script_dir __ 'Root' or current_script_dir __ '':
         r_ ''
     root_dir_docs _ ''
@@ -763,7 +763,7 @@ ___ save_image_scaled(src, dest):
 
 
 ___ get_script_name():
-    script _ ?.root().name()
+    script _ ?.r.. .n..
     script_name _ __.pa__.b_n_(script)
     r_ __.pa__.s_t_(script_name)[0]
 
@@ -999,7 +999,7 @@ ___ create_new_directory(widget, list_):
             ____
                 m..("The directory '{}' already exists. The folder wasn't created".f..(dir_name))
 
-        dir_item_list _ dir_name.split(',')
+        dir_item_list _ dir_name.s..(',')
         ___ dir_item __ dir_item_list:
             dir_item _ dir_item.strip()
             create_directory(dir_item)
@@ -1054,7 +1054,7 @@ ___ get_project_information(project_full_path):
 
 ___ build_html(html_path, project):
     shot_information _ get_project_information(project)
-    project_title _ __.pa__.split(project)[-1]
+    project_title _ __.pa__.s..(project)[-1]
     time_now _ d_t_.d_t_.fromtimestamp(in.(ti__.ti__())).strftime('%d/%m/%Y %H:%M:%S')
     shot_status_list _ load_status_list().values()
     status_dict _ {}
@@ -1201,7 +1201,7 @@ ___ get_sequences_sets(dirpath):
 
 ___ image_sequence_resolve_all(filepath):
     filepath _ st.(filepath.r..(__.pa__.sep, '/'))
-    basedir, filename _ __.pa__.split(filepath)
+    basedir, filename _ __.pa__.s..(filepath)
     filename_noext, ext _ __.pa__.s_t_(filename)
     ____ string ______ digits
     __ i..(filepath, bytes):
@@ -1325,8 +1325,8 @@ ___ get_script_values(pa__, window):
         line _ st.(line.rstrip())
         __ 'script@' __ line:
             script_value _ line.r..('script@', '')
-            key _ script_value.split(':')[0]
-            val _ st.(script_value.split(':')[1])
+            key _ script_value.s..(':')[0]
+            val _ st.(script_value.s..(':')[1])
             script_values[key] _ val
 
     r_ script_values

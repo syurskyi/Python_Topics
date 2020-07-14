@@ -447,7 +447,7 @@ ___ get_basename(pa__):
     out _ pa__
     sep _ '/'
     __ sep __ pa__:
-        out _ pa__.split(sep)[-1]
+        out _ pa__.s..(sep)[-1]
     r_ out
 
 

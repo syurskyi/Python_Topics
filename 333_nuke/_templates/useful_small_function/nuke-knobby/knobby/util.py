@@ -44,7 +44,7 @@ ___ imprint(node, data, tab_N..):
 
         new_knobs _ list()
         ___ knob __ create_knobs(data, tab_new_tab):
-            name _ knob.name()[le.(TEMP):]
+            name _ knob.n.. [le.(TEMP):]
             __ name __ existed_knobs an. knob.Class() !_ "Tab_Knob":
                 existed_knobs[name].sV..(knob.value())
             ____
@@ -60,7 +60,7 @@ ___ imprint(node, data, tab_N..):
 
         first_user_knob _ _parse_first_user_knob(node)
         ___ knob __ reversed(node.allKnobs()):
-            knob_name _ knob.name()
+            knob_name _ knob.n..
             node.removeKnob(knob)
             __ knob_name __ first_user_knob:
                 break
@@ -236,7 +236,7 @@ ___ read(node, filter_N..):
     __ first_user_knob __ no. N..:
         # Collect user knobs from the end of the knob list
         ___ knob __ reversed(node.allKnobs()):
-            knob_name _ knob.name()
+            knob_name _ knob.n..
             __ no. knob_name:
                 # Ignore unnamed knob
                 c___

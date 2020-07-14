@@ -32,7 +32,7 @@ ___ create_node(node):
         Node: NoOp Node.
 
     """
-    lab _ 'baked metadata\nfrom {}'.f..(node.name())
+    lab _ 'baked metadata\nfrom {}'.f..(node.n..
     noop _ ?.nodes.NoOp(hide_input_T..,
                            xpos_node.xpos() + 100,
                            ypos_node.ypos(),

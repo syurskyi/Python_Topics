@@ -197,10 +197,10 @@ ___ parse_advanced_settings(*args):
         p..
 
     ___ line __ advanced_settings_lines:
-        key _ line.split('=')[0]
+        key _ line.s..('=')[0]
         key _ key.r..(vars_line, '')
         key _ key.strip()
-        val _ line.split('=')[1]
+        val _ line.s..('=')[1]
         val _ val.strip()
         advanced_settings[key] _ val
 

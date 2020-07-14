@@ -1,6 +1,6 @@
 ______ ?
 ______ nukescripts
-______ operator, math, os
+______ operator, math, __
 ______ string
 ______ random
 
@@ -26,7 +26,7 @@ ___ select(nodes):
 
 ___ get_parent(node):
     # return node's parent node, return nuke.root() if on the top level
-    r_ ?.tN..('.'.j..(node.fullName().split('.')[:-1])) or ?.root()
+    r_ ?.tN..('.'.j..(node.fullName().s..('.')[:-1])) or ?.r..
 
 
 ___ get_topnode(node):
@@ -152,12 +152,12 @@ ___ get_closest_node(node):
     # Return the closest node to node
     distances = {}
     ___ n in ?.allNodes():
-        __ n.name() __ node.name():
+        __ n.n..  __ node.n.. :
             c___
         distance = math.sqrt( 
             math.pow( (node.xpos() - n.xpos()), 2 ) + math.pow( (node.ypos() - n.ypos()), 2 )
         )
-        distances[n.name()] = distance
+        distances[n.n.. ] = distance
     r_ ?.tN..(min(distances, key=distances.get))
 
 
@@ -345,7 +345,7 @@ ___ export_selected_nodes():
     __ not pa__:
         r_
     ?.nodeCopy(pa__)
-    root = ?.root()
+    root = ?.r..
     rootstring = root.writeKnobs(?.TO_SCRIPT | ?.WRITE_USER_KNOB_DEFS)
     rootstring = "%s\nfirst_frame %d\nlast_frame %d" % (rootstring, root['first_frame'].value(), root['last_frame'].value())
     rootstring = "%s\nproxy_format \"%s\"" % (rootstring, root['proxy_format'].toScript())
@@ -453,7 +453,7 @@ ___ save_dag_pos(preset):
         dagpos_knob.setEnabled(False)
     ____
         dagpos_knob = viewer['dagpos']
-    dagpos_vals = dagpos_knob.getValue().split(':')
+    dagpos_vals = dagpos_knob.getValue().s..(':')
     dagpos_vals.pop(preset-1)
     new_dagpos = ','.j..([st.(zoom), st.(pos[0]), st.(pos[1])])
     dagpos_vals.insert(preset-1, new_dagpos)
@@ -470,8 +470,8 @@ ___ load_dag_pos(preset):
         ?.message('No preset positions created yet...')
         r_
     dagpos_knob = viewer['dagpos']
-    dagpos_vals = dagpos_knob.getValue().split(':')[preset-1]
-    zoom, xpos, ypos = dagpos_vals.split(',')
+    dagpos_vals = dagpos_knob.getValue().s..(':')[preset-1]
+    zoom, xpos, ypos = dagpos_vals.s..(',')
     ?.zoom(float(zoom), [float(xpos), float(ypos)])
 
 
@@ -528,7 +528,7 @@ ___ hlink_create():
         label = hlink['label']
         target_label = node['label'].getValue()
         __ node.Class() __ 'Read':
-            label.setValue(' | ' + node['label'].getValue() + '\n' + os.pa__.b_n_(node['file'].getValue()))
+            label.setValue(' | ' + node['label'].getValue() + '\n' + __.pa__.b_n_(node['file'].getValue()))
         ____ target_label:
             label.setValue(' | ' + target_label)
         ____
@@ -567,9 +567,9 @@ ___ create_pointer():
         # If topnode has a file knob, use that to set title
         # If it's a roto node, use the roto label
         __ 'file' in topnode.knobs():
-            pointer_title = os.pa__.b_n_(topnode['file'].getValue())
+            pointer_title = __.pa__.b_n_(topnode['file'].getValue())
             __ '.' in pointer_title:
-                pointer_title = pointer_title.split('.')[0]
+                pointer_title = pointer_title.s..('.')[0]
         ____ topnode.Class() in ['Roto', 'RotoPaint'] and topnode['label'].getValue():
             pointer_title = topnode['label'].getValue()
         ____ target_label:
@@ -702,21 +702,21 @@ ___ read_from_write():
             c___
         pos = get_pos(node)
         filepath = node['file'].getValue()
-        d_n_ = os.pa__.d_n_(filepath)
-        filename = os.pa__.b_n_(filepath)
+        d_n_ = __.pa__.d_n_(filepath)
+        filename = __.pa__.b_n_(filepath)
         __ '#' in filename:
             is_sequence = True
-            filename_base = filename.split('#')[0]
+            filename_base = filename.s..('#')[0]
         ____ r'%' in filename:
             is_sequence = True
-            filename_base = filename.split(r'%')[0]
+            filename_base = filename.s..(r'%')[0]
         ____
             is_sequence = False
         __ is_sequence:
             sequences = ?.getFileNameList(d_n_)
             ___ seq in sequences:
                 __ seq.startswith(filename_base):
-                    filepath = os.pa__.j..(d_n_, seq)
+                    filepath = __.pa__.j..(d_n_, seq)
                     break
         read = ?.createNode('Read', 'file {{{0}}}'.format(filepath), inpanel=False)
         set_pos(read, pos[0], pos[1] + grid[1]*4)
@@ -724,7 +724,7 @@ ___ read_from_write():
         colorspace = node['colorspace'].value()
         __ '(' in colorspace and ')' in colorspace:
             # parse out role
-            colorspace = colorspace.split('(')[1].split(')')[0]
+            colorspace = colorspace.s..('(')[1].s..(')')[0]
         read['colorspace'].setValue(colorspace)
         read['raw'].setValue(node['raw'].getValue())
 

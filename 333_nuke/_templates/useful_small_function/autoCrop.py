@@ -1,8 +1,8 @@
 ______ ?
 ______ nukescripts
 
-globalFirstFrame _ st.(in.(?.root().knob('first_frame').value()))
-globalLastFrame _ st.(in.(?.root().knob('last_frame').value()))
+globalFirstFrame _ st.(in.(?.r.. .knob('first_frame').value()))
+globalLastFrame _ st.(in.(?.r.. .knob('last_frame').value()))
 
 
 ___ selectionCheck():

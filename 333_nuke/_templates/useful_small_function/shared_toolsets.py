@@ -17,7 +17,7 @@
 # 1.5 - Support of Nuke 11 and backward compatibility of previous versions.
 # 1.6 - fixed a bug that caused Nuke crashing when loading of "big" toolsets
 
-______ os
+______ __
 ______ sys
 ______ ?
 ______ nukescripts
@@ -91,9 +91,9 @@ class CreateToolsetsPanel(nukescripts.PP..):
 
   #COMMENT:  BUILD A LIST Of PRE_CREATED FOLDER LOCATIONS
   ___ buildFolderList(self, fullPath, menuPath):
-    filecontents = sorted(os.l_d_(fullPath), key=st..lower)
+    filecontents = sorted(__.l_d_(fullPath), key=st..lower)
     ___ group in filecontents:
-      __ os.pa__.isd..(os.pa__.j..(fullPath, group)):
+      __ __.pa__.isd..(__.pa__.j..(fullPath, group)):
         self.userFolders.append(menuPath + group)
         self.buildFolderList(fullPath + '/' + group, menuPath + group + '/')              
 
@@ -109,7 +109,7 @@ class CreateToolsetsPanel(nukescripts.PP..):
   ___ renameCreateSharedToolset(self, name, rename):
     ret = False
     
-    nameList = name.split('/')
+    nameList = name.s..('/')
     fileName = nameList[-1]
     
     del nameList[-1]
@@ -118,22 +118,22 @@ class CreateToolsetsPanel(nukescripts.PP..):
     fullPath = posixpath.j..(SHARED_TOOLSET_PATH, dirs)
     
     ___
-      __ not os.pa__.isd..(fullPath):
-        os.m_d_( fullPath )
+      __ not __.pa__.isd..(fullPath):
+        __.m_d_( fullPath )
       
       filePath = posixpath.j..(fullPath, fileName + '.nk')
       
-      __ not os.pa__.exists(filePath):
+      __ not __.pa__.exists(filePath):
         __ self.rename __ True:
-          os.rename(self.fullFilePath, filePath)
+          __.rename(self.fullFilePath, filePath)
         ____
           # create way
           ?.nodeCopy(filePath)
 
       ____ ?.a..('Overwrite existing \n %s?' % filePath):
         __ self.rename __ True:
-          os.remove(filePath)
-          os.rename(self.fullFilePath, filePath)
+          __.remove(filePath)
+          __.rename(self.fullFilePath, filePath)
         ____
           # create way
           ?.nodeCopy(filePath)
@@ -146,7 +146,7 @@ class CreateToolsetsPanel(nukescripts.PP..):
   ___ getPresetPath(self):
 
     #COMMENT: Added a bit of usability. Let's preserve a toolset's name
-    tempListToolsetName = self.menuPath.value().split('/')
+    tempListToolsetName = self.menuPath.value().s..('/')
     tempToolsetName = tempListToolsetName[-1]
 
     __ st.(self.menuItemChoice.value()) __ "root":
@@ -186,7 +186,7 @@ ___ addToolsetsPanel():
   
 ___ deleteToolset(rootPath, fileName):
   __ ?.a..('Are you sure you want to delete ToolSet %s?' %fileName):
-    os.remove(fileName)
+    __.remove(fileName)
     #COMMENT: if this was the last file in this directory, the folder will need to be deleted.
     # Walk the directory tree from the root and recursively delete empty directories
     checkForEmptyToolsetDirectories(rootPath)
@@ -197,10 +197,10 @@ ___ checkForEmptyToolsetDirectories(currPath):
   removed = True
   w__ removed __ True:
     removed = False
-    ___ root, dirs, files in os.walk(currPath):
+    ___ root, dirs, files in __.walk(currPath):
       __ files __ # list and dirs == []:
         __ root != SHARED_TOOLSET_PATH:
-          os.rmdir(root)
+          __.rmdir(root)
           removed = True
         
 ___ refreshToolsetsMenu():  
@@ -253,7 +253,7 @@ ___ toolsetLoader(fullFileName):
         saveTempToolSet.w..(data)
         saveTempToolSet.close()
         ?.loadToolset(randomName)
-        os.remove(randomName)
+        __.remove(randomName)
     ____
         ?.loadToolset(fullFileName)
     r_ True
@@ -274,7 +274,7 @@ ___ fileFilter(fileName, filterFunc):
 ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLocal):
   #TODO: CLEAN THIS FUNCTION
 
-  filecontents = sorted(os.l_d_(fullPath), key=st..lower)
+  filecontents = sorted(__.l_d_(fullPath), key=st..lower)
   excludePaths = ?.getToolsetExcludePaths()
   #COMMENT: First list all directories
   retval = False
@@ -290,7 +290,7 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
           __ newPath.find(i) != -1:
             ignore = True
             break
-      __ os.pa__.isd..(newPath) and not ignore:
+      __ __.pa__.isd..(newPath) and not ignore:
         menuName = group
         __ isLocal and (menuName in allToolsetsList):
           menuName = "[user] " + menuName
@@ -299,16 +299,16 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
         n = m.addMenu(menuName)
         retval = createToolsetMenuItems(n, rootPath, "/".j..([fullPath, group]), delete, allToolsetsList, isLocal)
         #COMMENT: if we are deleting, and the sub directory is now empty, delete the directory also
-        __ delete and os.l_d_(fullPath)__# list:
-          os.rmdir(fullPath)
+        __ delete and __.l_d_(fullPath)__# list:
+          __.rmdir(fullPath)
     # Now list individual files
     ___ group in filecontents:
       fullFileName = "/".j..([fullPath, group])
-      __ not os.pa__.isd..(fullFileName):
+      __ not __.pa__.isd..(fullFileName):
         
         #COMMENT: delete file with an extention ".nk~" created by edit.
         __ ".nk~" in group:
-          os.remove(fullFileName)
+          __.remove(fullFileName)
         
         extPos = group.find(".nk")
         __ extPos != -1 and extPos __ le.(group) - 3:

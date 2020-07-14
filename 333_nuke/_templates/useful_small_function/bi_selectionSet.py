@@ -299,4 +299,4 @@ ___ resetPanelView():
     
     
 ___ listOfNodes(node):
-    r_ list(node['listOfNodes'].v...split(','))
+    r_ list(node['listOfNodes'].v...s..(','))

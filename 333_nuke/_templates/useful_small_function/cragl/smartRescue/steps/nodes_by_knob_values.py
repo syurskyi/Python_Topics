@@ -198,7 +198,7 @@ c_ NodesByKnobValues(NodeStep):
                         "value. Current value '@'. "
                         "Matching Rule: @.@ @ @",
                         setup["mode"],
-                        node.name(),
+                        node.n.. ,
                         node.Class(),
                         knob.v..,
                         rule["node_class"],

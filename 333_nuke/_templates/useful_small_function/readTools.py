@@ -23,9 +23,9 @@ ___ setFrameRange():
     f _ nukescripts.PP..('Set read nodes frame range')
     f.nodesSelection _ ?.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     f.divText _ ?.T_K..('divText', '')
-    f.firstFrame _ newUserKnob(?.I_K..('first_frame', 'frame range', 1), in.(?.root().firstFrame()))
+    f.firstFrame _ newUserKnob(?.I_K..('first_frame', 'frame range', 1), in.(?.r.. .firstFrame()))
     f.before _ ?.E_K..('before', '', ['hold', 'loop', 'bounce', 'black'])
-    f.lastFrame _ newUserKnob(?.I_K..('last_frame', '', 100), in.(?.root().lastFrame()))
+    f.lastFrame _ newUserKnob(?.I_K..('last_frame', '', 100), in.(?.r.. .lastFrame()))
     f.after _ ?.E_K..('after', '', ['hold', 'loop', 'bounce', 'black'])
 
     #Set nodes selection and after as end line

@@ -17,7 +17,7 @@ def getNodes(nodes, nlist):										#Append node names to global list
 	
 	
 	for n in nodes:
-		nlist.append(n.name())
+		nlist.append(n.n..
 		
 		
 
