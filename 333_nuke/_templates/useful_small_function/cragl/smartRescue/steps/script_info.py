@@ -159,8 +159,8 @@ c_ ScriptInfo(NodeStep):
             int, int, The first and last frame of the working file.
 
         """
-        first_frame _ __.(?.r.. ["first_frame"].value())
-        last_frame _ __.(?.r.. ["last_frame"].value())
+        first_frame _ __.(?.r.. ["first_frame"].v.. ())
+        last_frame _ __.(?.r.. ["last_frame"].v.. ())
         r_ first_frame, last_frame
 
     ___ root_values
@@ -209,8 +209,8 @@ c_ ScriptInfo(NodeStep):
             __ no. knob:
                 c___
 
-            value _ _format_value(knob_name, knob)
-            root_values.ap..((knob_name, value))
+            v..  _ _format_value(knob_name, knob)
+            root_values.ap..((knob_name, v.. ))
 
         r_ tuple(root_values)
 

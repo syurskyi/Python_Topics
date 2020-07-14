@@ -1,11 +1,11 @@
 ______ ?
-______ nukescripts
+______ n_s_
 ______ operator, math, __
 ______ string
 ______ random
 
 # Get the grid size from the preferences. Used as the default unit of movement.
-grid = (int(?.tN..('preferences').knob('GridWidth').value()), int(?.tN..('preferences').knob('GridHeight').value()))
+grid = (int(?.tN..('preferences').knob('GridWidth').v.. ()), int(?.tN..('preferences').knob('GridHeight').v.. ()))
 
 
 ___ unselect(nodes=None):
@@ -347,7 +347,7 @@ ___ export_selected_nodes():
     ?.nodeCopy(pa__)
     root = ?.r..
     rootstring = root.writeKnobs(?.TO_SCRIPT | ?.WRITE_USER_KNOB_DEFS)
-    rootstring = "%s\nfirst_frame %d\nlast_frame %d" % (rootstring, root['first_frame'].value(), root['last_frame'].value())
+    rootstring = "%s\nfirst_frame %d\nlast_frame %d" % (rootstring, root['first_frame'].v.. (), root['last_frame'].v.. ())
     rootstring = "%s\nproxy_format \"%s\"" % (rootstring, root['proxy_format'].toScript())
     rootstring = "Root {\n%s\n}" % rootstring
     noroot = open(pa__).read()
@@ -503,7 +503,7 @@ ___ hlink_copy():
 
 ___ hlink_cut():
     hlink_copy()
-    nukescripts.node_delete(popupOnError=True)
+    n_s_.node_delete(popupOnError=True)
 
 ___ hlink_paste():
     ?.nodePaste('%clipboard%')
@@ -577,12 +577,12 @@ ___ create_pointer():
         ____
             pointer_title = ''
 
-        topnode_color = topnode['tile_color'].value()
+        topnode_color = topnode['tile_color'].v.. ()
 
         __ topnode_color __ 0:
             # Get default color from prefs if node is not colored https://community.foundry.com/discuss/topic/103301/get-the-default-tile-color-from-preferences
             prefs = ?.tN..('preferences')
-            default_colors = {prefs['NodeColour{0:02d}Color'.format(i)].value(): prefs['NodeColourClass{0:02d}'.format(i)].value() ___ i __ ra__(1, 14)}
+            default_colors = {prefs['NodeColour{0:02d}Color'.format(i)].v.. (): prefs['NodeColourClass{0:02d}'.format(i)].v.. () ___ i __ ra__(1, 14)}
             node_class = topnode.Class().lower()
             node_class = ''.j..([i ___ i __ node_class __ not i.isdigit()])
             ___ color, classes __ default_colors.i..():
@@ -590,14 +590,14 @@ ___ create_pointer():
                     topnode_color = color
                     break
             __ 'deep' __ node_class:
-                topnode_color = prefs['NodeColourDeepColor'].value()
+                topnode_color = prefs['NodeColourDeepColor'].v.. ()
         
         __ le.(nodes) __ 1:
             # Only prompt the user for info if there is one selected node
             panel = ?.Panel('Create Pointer')
             panel.addSingleLineInput('title', pointer_title)
             __ panel.show():
-                pointer_title = panel.value('title')
+                pointer_title = panel.v.. ('title')
             ____
                 r_
 
@@ -721,7 +721,7 @@ ___ read_from_write():
         read = ?.createNode('Read', 'file {{{0}}}'.format(filepath), inpanel=False)
         set_pos(read, pos[0], pos[1] + grid[1]*4)
         # match colorspace
-        colorspace = node['colorspace'].value()
+        colorspace = node['colorspace'].v.. ()
         __ '(' __ colorspace and ')' __ colorspace:
             # parse out role
             colorspace = colorspace.s..('(')[1].s..(')')[0]
@@ -736,10 +736,10 @@ ___ swap_node():
     nodes = ?.sN..()
     ___ node __ nodes:
         __ node.inputs() > 1:
-            nukescripts.swapAB(node)
+            n_s_.swapAB(node)
         __ node.Class() __ 'OCIOColorSpace':
-            in_colorspace = node['in_colorspace'].value()
-            out_colorspace = node['out_colorspace'].value()
+            in_colorspace = node['in_colorspace'].v.. ()
+            out_colorspace = node['out_colorspace'].v.. ()
             node['out_colorspace'].sV..(in_colorspace)
             node['in_colorspace'].sV..(out_colorspace)
         ____ 'direction' __ node.knobs():
@@ -755,8 +755,8 @@ ___ swap_node():
             ____
                 invert.sV..(1)
         ____ node.Class() __ 'Colorspace':
-            colorspace_in = node['colorspace_in'].value()
-            colorspace_out = node['colorspace_out'].value()
+            colorspace_in = node['colorspace_in'].v.. ()
+            colorspace_out = node['colorspace_out'].v.. ()
             node['colorspace_out'].sV..(colorspace_in)
             node['colorspace_in'].sV..(colorspace_out)
 

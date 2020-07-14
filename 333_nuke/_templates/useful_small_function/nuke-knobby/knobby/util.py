@@ -46,7 +46,7 @@ ___ imprint(node, data, tab_N..):
         ___ knob __ create_knobs(data, tab_new_tab):
             name _ knob.n.. [le.(TEMP):]
             __ name __ existed_knobs an. knob.Class() !_ "Tab_Knob":
-                existed_knobs[name].sV..(knob.value())
+                existed_knobs[name].sV..(knob.v.. ())
             ____
                 new_knobs.ap..(knob)
 
@@ -85,17 +85,17 @@ c_ Knobby(object):
 
     """
 
-    ___  - (self, type, value, flags_N.., *args):
+    ___  - (self, type, v.. , flags_N.., *args):
         type _ type
-        value _ value
+        v..  _ v..
         flags _ flags or # list
         args _ args
 
     ___ create(self, name, nice_N..):
         knob_cls _ getattr(?, type)
         knob _ knob_cls(name, nice, *args)
-        __ value __ no. N..:
-            knob.sV..(value)
+        __ v..  __ no. N..:
+            knob.sV..(v.. )
         ___ flag __ flags:
             knob.sF..(flag)
         r_ knob
@@ -133,7 +133,7 @@ ___ create_knobs(data, tab):
     knobs _ list()
     prefix _ tab + ":"
 
-    ___ key, value __ data.i..():
+    ___ key, v..  __ data.i..():
         # Knob name
         __ i..(key, tuple):
             name, nice _ key
@@ -143,32 +143,32 @@ ___ create_knobs(data, tab):
         name _ prefix + name
 
         # Create knob by value type
-        __ i..(value, Knobby):
-            knobby _ value
+        __ i..(v.. , Knobby):
+            knobby _ v..
             knob _ knobby.create(name, nice)
 
-        ____ i..(value, float):
+        ____ i..(v.. , float):
             knob _ ?.D_K..(name, nice)
-            knob.sV..(value)
+            knob.sV..(v.. )
 
-        ____ i..(value, bool):
+        ____ i..(v.. , bool):
             knob _ ?.B_K..(name, nice)
-            knob.sV..(value)
+            knob.sV..(v.. )
             knob.sF..(?.ST..)
 
-        ____ i..(value, __.):
+        ____ i..(v.. , __.):
             knob _ ?.I_K..(name, nice)
-            knob.sV..(value)
+            knob.sV..(v.. )
 
-        ____ i..(value, string_types):
+        ____ i..(v.. , string_types):
             knob _ ?.S_K..(name, nice)
-            knob.sV..(value)
+            knob.sV..(v.. )
 
-        ____ i..(value, list):
-            knob _ ?.E_K..(name, nice, value)
+        ____ i..(v.. , list):
+            knob _ ?.E_K..(name, nice, v.. )
 
-        ____ i..(value, dict):
-            __ all(i..(v, dict) ___ v __ value.values()):
+        ____ i..(v.. , dict):
+            __ all(i..(v, dict) ___ v __ v.. .values()):
                 # Create a group of tabs
                 begin _ ?.BeginTabGroup_Knob(name)
                 end _ ?.EndTabGroup_Knob()
@@ -176,7 +176,7 @@ ___ create_knobs(data, tab):
                 begin.sL..(nice)
                 end.setName(name)
                 knobs.ap..(begin)
-                ___ k, v __ value.i..():
+                ___ k, v __ v.. .i..():
                     tab_name _ "@:@" % (name, k)
                     knobs.ap..(?.T_K..(tab_name, k))
                     knobs +_ create_knobs(v, tab_tab_name)
@@ -184,12 +184,12 @@ ___ create_knobs(data, tab):
             ____
                 # Create a group of knobs
                 knobs.ap..(?.T_K..(name, nice, ?.TAB..))
-                knobs +_ create_knobs(value, tab_name)
+                knobs +_ create_knobs(v.. , tab_name)
                 knobs.ap..(?.T_K..(name, nice, ?.TABENDGROUP))
             c___
 
         ____
-            raise TypeError("Unsupported type: %r" % type(value))
+            raise TypeError("Unsupported type: %r" % type(v.. ))
 
         knobs.ap..(knob)
 
@@ -242,17 +242,17 @@ ___ read(node, filter_N..):
                 c___
 
             knob_type _ ?.knob(knob.fullyQualifiedName(), type_T..)
-            value _ knob.v..
+            v..  _ knob.v..
 
             __ (
                 knob_type no. __ EXCLUDED_KNOB_TYPE_ON_READ or
                 # For compating read-only string data that imprinted
                 # by `nuke.Text_Knob`.
-                (knob_type __ 26 an. value)
+                (knob_type __ 26 an. v.. )
             ):
                 key _ filter(knob_name)
                 __ key:
-                    data[key] _ value
+                    data[key] _ v..
 
             __ knob_name __ first_user_knob:
                 break

@@ -7,7 +7,7 @@ ___ move_left():
     ______ ?
     ___ node __ ?.sN..():
         node['xpos'].sV..(node['xpos'].gV..  -
-                              ?.tN..('preferences')['GridWidth'].value())
+                              ?.tN..('preferences')['GridWidth'].v.. ())
 
 ___ move_right():
     """
@@ -18,7 +18,7 @@ ___ move_right():
     ______ ?
     ___ node __ ?.sN..():
         node['xpos'].sV..(node['xpos'].gV..  +
-                              ?.tN..('preferences')['GridWidth'].value())
+                              ?.tN..('preferences')['GridWidth'].v.. ())
 
 ___ move_up():
     """Move selected nodes up by 1x the ``GridHeight``
@@ -28,7 +28,7 @@ ___ move_up():
     ______ ?
     ___ node __ ?.sN..():
         node['ypos'].sV..(node['ypos'].gV..  -
-                              ?.tN..('preferences')['GridHeight'].value())
+                              ?.tN..('preferences')['GridHeight'].v.. ())
 
 ___ move_down():
     """Move selected nodes down by 1x the ``GridHeight``
@@ -38,4 +38,4 @@ ___ move_down():
     ______ ?
     ___ node __ ?.sN..():
         node['ypos'].sV..(node['ypos'].gV..  +
-                              ?.tN..('preferences')['GridHeight'].value())
+                              ?.tN..('preferences')['GridHeight'].v.. ())

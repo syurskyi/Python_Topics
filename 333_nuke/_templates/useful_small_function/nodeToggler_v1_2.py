@@ -1,4 +1,4 @@
-______ ?, nukescripts
+______ ?, n_s_
 #defining parent function to control all
 ___ nodeToggler():
     #defining function to control node selection
@@ -20,13 +20,13 @@ ___ nodeToggler():
             selection _ ?.sN..
 	    #sets the final result on their value basis and displays error if any
             ___ item __ selection:
-                __ item.knob(knobPanel.value('Select Knob')):
-                    __ item.knob(knobPanel.value('Select Knob')).v.. __ F..:
-                        item.knob(knobPanel.value('Select Knob')).sV..(T..)
-                    ____ item.knob(knobPanel.value('Select Knob')).v.. __ T..:
-                        item.knob(knobPanel.value('Select Knob')).sV..(F..)
+                __ item.knob(knobPanel.v.. ('Select Knob')):
+                    __ item.knob(knobPanel.v.. ('Select Knob')).v.. __ F..:
+                        item.knob(knobPanel.v.. ('Select Knob')).sV..(T..)
+                    ____ item.knob(knobPanel.v.. ('Select Knob')).v.. __ T..:
+                        item.knob(knobPanel.v.. ('Select Knob')).sV..(F..)
                 ____
-                    ?.m..('{} node has no {} knob.'.f..(item.n.. , knobPanel.value('Select Knob')))
+                    ?.m..('{} node has no {} knob.'.f..(item.n.. , knobPanel.v.. ('Select Knob')))
         #creates panel for node selection
 	nodePanel _ ?.Panel('Select Node')
         allNode _ ?.allNodes()
@@ -41,20 +41,20 @@ ___ nodeToggler():
             nodeClass +_ ' ' + st.(newList[index])
         nodePanel.addEnumerationPulldown('Select Node', nodeClass + ' All' + ' Current')
         nodePanel.s__
-        value _ nodePanel.value('Select Node')
+        v..  _ nodePanel.v.. ('Select Node')
 	#does all the selection processes
         ___ node __ allNode:
-            __ value __ 'Current':
+            __ v..  __ 'Current':
                 __ le.(?.sN..()) > 0:
                     break
                 ____
                     ?.m..('Please select atlest one legal node.')
                     break
-            __ node.Class() __ value:
+            __ node.Class() __ v.. :
                 node.setSelected(T..)
             ____
                 node.setSelected(F..)
-            __ value __ 'All':
+            __ v..  __ 'All':
                 ?.selectAll()
                 ___ n __ ?.sN..:
                     __ n.Class() __ 'Viewer':

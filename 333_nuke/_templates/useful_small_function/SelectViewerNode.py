@@ -20,7 +20,7 @@ m.addCommand("Select Node in Viewer","SelectViewerNode.Launcher()")
 """
 
 
-______ re, ?, nukescripts
+______ re, ?, n_s_
 
 
 ViewersList _ # list
@@ -50,7 +50,7 @@ ___ SelectNode(Viewer,warning):
     SelectedNodes _ # list
     Nodes_# list
     ActiveViewer_""
-    Viewer _ re.sub(" ","",Viewer.value())
+    Viewer _ re.sub(" ","",Viewer.v.. ())
     Viewer _ "Viewer"+Viewer
     ___
         ActiveViewer _ ?.ViewerWindow.node(?.activeViewer()).n..
@@ -123,12 +123,12 @@ ___ Zoom(zoom,node):
     
      
    
-c_ SelectViewerNode(nukescripts.PP..):
+c_ SelectViewerNode(n_s_.PP..):
    
    
     ___ -
 
-        nukescripts.PP...- (self,"Select Node in Viewer","Select Node in Viewer")
+        n_s_.PP...- (self,"Select Node in Viewer","Select Node in Viewer")
 
         sMS..(200, 115)
 

@@ -94,15 +94,15 @@ ___ topInputNode(node,ch_class,input=0):
 # because None object is unsubscriptable
 # this function is workaroud to make sure returned value is always a list or 0
 
-___ ensureMatrix(value):
-    if (type(value) is list):
-        r_ value
+___ ensureMatrix(v.. ):
+    if (type(v.. ) is list):
+        r_ v..
     else:
         r_ [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
-___ ensureFloat(value):
-    if (type(value) is float):
-        r_ value
+___ ensureFloat(v.. ):
+    if (type(v.. ) is float):
+        r_ v..
     else:
         r_ 0
 
@@ -136,7 +136,7 @@ ___ getKnobViews(knob):
 ___ nodeClass(node):
     if node:
         if ( 'nodeClass' __ node.knobs().keys() ) :
-            r_ node['nodeClass'].value()
+            r_ node['nodeClass'].v.. ()
         else:
             r_ node.Class()
 
@@ -213,16 +213,16 @@ ___ getHelpUrl(node=None):
                 prefFile.close()
 
                 ___ i __ prefContent:
-                    key,value= i.rstrip().s..('::')
-                    settings.ap..((key,value))
+                    key,v.. = i.rstrip().s..('::')
+                    settings.ap..((key,v.. ))
          
             ndClass=nodeClass(node)
 
             # Look through list of values from settings to see if there a url for that node
             url=mySite
-            ___ key,value __ settings:
+            ___ key,v..  __ settings:
                 if ndClass==key:
-                    url=value
+                    url=v..
 
         # if help settings file is not defined return my site            
         else:

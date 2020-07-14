@@ -1,4 +1,4 @@
-import re, __.path, ?, nukescripts
+import re, __.path, ?, n_s_
 
 
 Selection = ?.sN..
@@ -167,7 +167,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
 
                 try:
 
-                    fileknob = node[n].value()
+                    fileknob = node[n].v.. ()
                     
 
                     FileName = __.path.basename(fileknob)
@@ -206,7 +206,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
                                 string_Next = "%03d" % Next
           
                 
-                            old = node[n].value()
+                            old = node[n].v.. ()
                    
                    
                             NewStr=re.sub("v"+version,"v"+string_Next,SplitDir(fileknob))
@@ -221,7 +221,7 @@ ___ VersionUp(KnobTypes,NodeTypes):
                             node[n].sV..(Joined)
 
 
-                            new = node[n].value()
+                            new = node[n].v.. ()
 
 
                             if old != new:
@@ -254,7 +254,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
 
                 try:
 
-                    fileknob = node[n].value()
+                    fileknob = node[n].v.. ()
                     
                     FileName = __.path.basename(fileknob)
          
@@ -279,7 +279,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
                                 string_Next = "%03d" % Next
           
                 
-                            old = node[n].value()      
+                            old = node[n].v.. ()
                             
                    
                             FileName=re.sub("v"+version,"v"+string_Next,FileName) 
@@ -294,7 +294,7 @@ ___ VersionUpFiles(KnobTypes,NodeTypes):
                             node[n].sV..(Joined)
 
                             
-                            new = node[n].value()
+                            new = node[n].v.. ()
 
 
                             if old != new:
@@ -326,7 +326,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
     
                 try:
 
-                    fileknob = node[n].value()    
+                    fileknob = node[n].v.. ()
 
 
                     FileName = __.path.basename(fileknob)
@@ -365,7 +365,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
                                 string_Previous = "%03d" % Previous
 
 
-                            old = node[n].value()
+                            old = node[n].v.. ()
                    
                    
                             NewStr=re.sub("v"+version,"v"+string_Previous,SplitDir(fileknob))
@@ -380,7 +380,7 @@ ___ VersionDown(KnobTypes,NodeTypes):
                             node[n].sV..(Joined)
 
 
-                            new = node[n].value()
+                            new = node[n].v.. ()
 
 
                             if old != new:
@@ -414,7 +414,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                 try:
 
 
-                    fileknob = node[n].value()
+                    fileknob = node[n].v.. ()
 
                     
                     FileName = __.path.basename(fileknob)
@@ -447,7 +447,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                                 string_Previous = "%03d" % Previous
 
 
-                            old = node[n].value()
+                            old = node[n].v.. ()
 
           
                             FileName=re.sub("v"+version,"v"+string_Previous,FileName) 
@@ -462,7 +462,7 @@ ___ VersionDownFiles(KnobTypes,NodeTypes):
                             node[n].sV..(Joined)
 
 
-                            new = node[n].value()
+                            new = node[n].v.. ()
 
 
                             if old != new:
@@ -495,7 +495,7 @@ ___ VersionLast(KnobTypes,NodeTypes):
             
                 try:
 
-                    fileknob = node[n].value()  
+                    fileknob = node[n].v.. ()
 
 
                     FileName = __.path.basename(fileknob)
@@ -519,7 +519,7 @@ ___ VersionLast(KnobTypes,NodeTypes):
                         Last = max(ListVersions(fileknob))
 
 
-                        old = node[n].value()
+                        old = node[n].v.. ()
                    
                    
                         NewStr=re.sub("v"+version,"v"+Last,SplitDir(fileknob))
@@ -534,7 +534,7 @@ ___ VersionLast(KnobTypes,NodeTypes):
                         node[n].sV..(Joined)
 
 
-                        new = node[n].value()
+                        new = node[n].v.. ()
 
 
                         if old != new:
@@ -568,7 +568,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
                 try:
 
 
-                    fileknob = node[n].value()
+                    fileknob = node[n].v.. ()
 
                     
                     FileName = __.path.basename(fileknob)
@@ -586,7 +586,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
                         Last = max(ListVersionsFiles(fileknob))
 
 
-                        old = node[n].value()
+                        old = node[n].v.. ()
 
 
                         FileName=re.sub("v"+version,"v"+Last,FileName) 
@@ -601,7 +601,7 @@ ___ VersionLastFiles(KnobTypes,NodeTypes):
                         node[n].sV..(Joined)
 
 
-                        new = node[n].value()
+                        new = node[n].v.. ()
 
 
                         if old != new:
@@ -634,7 +634,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
 
                 try:
 
-                    fileknob = node[n].value()    
+                    fileknob = node[n].v.. ()
 
 
                     FileName = __.path.basename(fileknob)
@@ -658,7 +658,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
                         if version != versionFile:
 
 
-                            old = node[n].value()
+                            old = node[n].v.. ()
 
 
                             FileName = re.sub("v"+versionFile,"v"+version,FileName)
@@ -673,7 +673,7 @@ ___ VersionMatchFolder(KnobTypes,NodeTypes):
                             node[n].sV..(Joined)
 
 
-                            new = node[n].value()
+                            new = node[n].v.. ()
 
 
                             if old != new:
@@ -706,7 +706,7 @@ ___ VersionMatchFiles(KnobTypes,NodeTypes):
 
                 try:
          
-                    fileknob = node[n].value() 
+                    fileknob = node[n].v.. ()
                     
 
                     Dir = __.path.dirname(fileknob)
@@ -727,7 +727,7 @@ ___ VersionMatchFiles(KnobTypes,NodeTypes):
                     if version != versionFile:
 
 
-                        old = node[n].value()
+                        old = node[n].v.. ()
 
 
                         DirLast = re.sub("v"+version,"v"+versionFile, DirLast)
@@ -742,7 +742,7 @@ ___ VersionMatchFiles(KnobTypes,NodeTypes):
                         node[n].sV..(Joined)
 
 
-                        new = node[n].value()
+                        new = node[n].v.. ()
 
 
                         if old != new:
@@ -813,13 +813,13 @@ ___ Warning_Load(warning,warningList,index):
     warning.setVisible(True)
 
 
-class ChangeVersion(nukescripts.PythonPanel):
+class ChangeVersion(n_s_.PythonPanel):
 
 
     ___ __init__(self):
     
 
-        nukescripts.PythonPanel.__init__(self,"The Version Changer","The Version Changer")
+        n_s_.PythonPanel.__init__(self,"The Version Changer","The Version Changer")
 
 
         # Create Knobs
@@ -1477,7 +1477,7 @@ clears all messages
         #Selects all nodes
 
 
-        if self.Type.value()=="All":
+        if self.Type.v.. ()=="All":
         
         
             self.SelectString.setEnabled(False)
@@ -1520,7 +1520,7 @@ clears all messages
         #Selected Nodes
 
 
-        if self.Type.value()=="Selected    ":
+        if self.Type.v.. ()=="Selected    ":
         
         
            self.SelectString.setEnabled(False)
@@ -1542,7 +1542,7 @@ clears all messages
         #Selects by custom value
 
 
-        if self.Type.value()=="Custom":
+        if self.Type.v.. ()=="Custom":
         
         
             self.Select.setEnabled(True)
@@ -1563,7 +1563,7 @@ clears all messages
             if knob is self.Select:
 
 
-                self.Custom=self.SelectString.value()
+                self.Custom=self.SelectString.v.. ()
 
 
                 ___ n __ ?.allNodes():
@@ -1578,7 +1578,7 @@ clears all messages
                         ___ knob __ self.SelectedKnobTypes:
 
 
-                            if self.Custom __ n[knob].value() and self.Custom !="":
+                            if self.Custom __ n[knob].v.. () and self.Custom !="":
 
 
                                 n.setSelected(True)
@@ -1609,7 +1609,7 @@ clears all messages
             if knob is self.Add:
 
 
-                self.Custom=self.SelectString.value()
+                self.Custom=self.SelectString.v.. ()
 
 
                 ___ n __ ?.allNodes():
@@ -1621,7 +1621,7 @@ clears all messages
                         ___ knob __ self.SelectedKnobTypes:
 
 
-                            if self.Custom __ n[knob].value() and self.Custom !="":
+                            if self.Custom __ n[knob].v.. () and self.Custom !="":
 
 
                                 n.setSelected(True)
@@ -1640,7 +1640,7 @@ clears all messages
             if knob is self.Remove:
 
 
-                self.Custom = self.SelectString.value()
+                self.Custom = self.SelectString.v.. ()
 
 
                 ___ n __ ?.sN.. :
@@ -1652,7 +1652,7 @@ clears all messages
                         ___ knob __ self.SelectedKnobTypes:
 
 
-                            if self.Custom __ n[knob].value() and self.Custom !="":
+                            if self.Custom __ n[knob].v.. () and self.Custom !="":
 
 
                                 n.setSelected(False)
@@ -1759,7 +1759,7 @@ clears all messages
         #Enables/Disables Manual Input
 
 
-        if self.SelectManually.value()==True:
+        if self.SelectManually.v.. ()==True:
         
         
             self.SelectVal.setEnabled(True)
@@ -1839,16 +1839,16 @@ clears all messages
                     ___ knob __ self.SelectedKnobTypes:
 
                       
-                        old = n[knob].value()
+                        old = n[knob].v.. ()
 
 
-                        NewStr=re.sub(self.SelectVal.value(),self.ReplaceVal.value(),n[knob].value())
+                        NewStr=re.sub(self.SelectVal.v.. (),self.ReplaceVal.v.. (),n[knob].v.. ())
 
 
                         n[knob].sV..(NewStr)
 
 
-                        new = n[knob].value()
+                        new = n[knob].v.. ()
 
 
                         if old != new:
@@ -1869,9 +1869,9 @@ clears all messages
 
         if knob is self.Switch:
 
-            temp = self.SelectVal.value()
+            temp = self.SelectVal.v.. ()
    
-            self.SelectVal.sV..(self.ReplaceVal.value())
+            self.SelectVal.sV..(self.ReplaceVal.v.. ())
 
             self.ReplaceVal.sV..(temp)
 
@@ -2148,6 +2148,6 @@ menu = ?.menu("Pane")
 
 menu.addCommand("The Version Changer",addPanel,"Alt+v")
 
-nukescripts.registerPanel("The Version Changer",addPanel)
+n_s_.registerPanel("The Version Changer",addPanel)
 
 #ChangeVersion().showModalDialog()0

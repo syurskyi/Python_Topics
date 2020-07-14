@@ -51,7 +51,7 @@ ___ Merge(n, cycle, forwards):
 		if len(cycle) > 0:
 
 			# get knob value as str
-			currOp = k.value()
+			currOp = k.v.. ()
 
 			# check if current value is in cycle
 			nextOp = ''
@@ -151,8 +151,8 @@ ___ OCIOColorSpace(n):
 		k2 = n.knob('out_colorspace')
 
 		# get values
-		inC = k1.value()
-		outC = k2.value()
+		inC = k1.v.. ()
+		outC = k2.v.. ()
 
 		# set inverse values
 		k1.sV..(outC)
@@ -172,7 +172,7 @@ ___ Shuffle(n, forwards):
 		k = n.knob('in')
 
 		# get current layer (str)
-		currL = k.value()
+		currL = k.v.. ()
 
 		# get all existing layers
 		listL = ?.layers()
@@ -243,7 +243,7 @@ ___ anyChannelKnob(n, knobName, forwards):
 		k = n.knob(knobName)
 
 		# get knob value (str)
-		currL = k.value()
+		currL = k.v.. ()
 
 		# get all possible layers
 		listL = ?.layers()

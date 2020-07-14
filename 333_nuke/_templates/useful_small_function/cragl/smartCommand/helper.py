@@ -88,12 +88,12 @@ ___ load_settings():
         settings_tree _ ET.parse(settings_xml)
         settings_root _ settings_tree.getroot()
         ___ setting __ settings_root.find('settings').f_a_('setting'):
-            value _ setting.text
-            __ value __ 'True':
-                value _ T..
-            ____ value __ 'False':
-                value _ F..
-            settings[setting.get('name')] _ value
+            v..  _ setting.text
+            __ v..  __ 'True':
+                v..  _ T..
+            ____ v..  __ 'False':
+                v..  _ F..
+            settings[setting.get('name')] _ v..
 
     r_ settings
 
@@ -167,8 +167,8 @@ ___ get_settings_xml():
 
 
 ___ check_xml_values_exist():
-    ___ key, value __ templates.SETTINGS_DEFAULT_VALUES.i..():
-        check_xml_value_exists('settings', 'setting', 'name', key, value)
+    ___ key, v..  __ templates.SETTINGS_DEFAULT_VALUES.i..():
+        check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
@@ -258,11 +258,11 @@ ___ show_path_browser(title):
         r_ dialog.selectedFiles()[0]
 
 
-___ update_settings(key, value):
+___ update_settings(key, v.. ):
     xml, root, tree _ get_xml_elements()
     ___ setting __ root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
-            setting.text _ value
+            setting.text _ v..
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
@@ -411,14 +411,14 @@ ___ get_previous_element(list_, current):
         r_ list_[le.(list_)]
 
 
-___ update_command(xml, pa__, key, value):
+___ update_command(xml, pa__, key, v.. ):
     __ no. __.pa__.isf..(xml):
         raise IOError('No such collection file: {}'.f..(xml))
     tree _ ET.parse(xml)
     root _ tree.getroot()
     ___ command __ root.find('collection').f_a_('command'):
         __ command.text __ pa__:
-            command.set(key, value)
+            command.set(key, v.. )
             w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
                 tree.w..(xml, encoding_'utf-8', xml_declaration_T..)

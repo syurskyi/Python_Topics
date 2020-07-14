@@ -1,4 +1,4 @@
-______ ?, nukescripts
+______ ?, n_s_
 
 ___ clearSelection():
     ?.selectAll()
@@ -20,7 +20,7 @@ ___ callInputs():
     
     __ selNodes:
     
-        bckdrp _ nukescripts.autoBackdrop()
+        bckdrp _ n_s_.autoBackdrop()
     
         bckdrp['name'].sV..('Selection Set @' %(bd+1))
         bckdrp['bdwidth'].sV..(120)
@@ -40,9 +40,9 @@ ___ callInputs():
                 miny _ nd['ypos'].v..
                 minx _ nd['xpos'].v..
             __ i !_ 0:
-                lon +_ ',@' %st.(nd['name'].value())
+                lon +_ ',@' %st.(nd['name'].v.. ())
             ____
-                lon _ st.(nd['name'].value())
+                lon _ st.(nd['name'].v.. ())
                 
         bckdrp['xpos'].sV..(minx)
         bckdrp['ypos'].sV..(miny + 50)
@@ -50,14 +50,14 @@ ___ callInputs():
         t _ ?.T_K..("selectionSet", "Selection Set")
         bckdrp.aK..(t)
         
-        sel _ ?.PS_K..('selectBtn', '<span>Select Nodes</span>', '______ bi_selectionSet as ss; ss.selectFromSelectionSet("@")' %(bckdrp['name'].value()))
-        dis _ ?.PS_K..('displayBtn', '<span>Display Nodes</span>', '______ bi_selectionSet as ss; ss.displayFromSelectionSet("@")' %(bckdrp['name'].value()))
-        ab _ ?.PS_K..('addBtn', '<span>Add Node(s)</span>', '______ bi_selectionSet as ss; ss.addNodes("@")' %(bckdrp['name'].value()))
-        rb _ ?.PS_K..('refreshBtn', '<span>Refresh</span>', '______ bi_selectionSet as ss; ss.refreshButtons("@")' %(bckdrp['name'].value()))
+        sel _ ?.PS_K..('selectBtn', '<span>Select Nodes</span>', '______ bi_selectionSet as ss; ss.selectFromSelectionSet("@")' %(bckdrp['name'].v.. ()))
+        dis _ ?.PS_K..('displayBtn', '<span>Display Nodes</span>', '______ bi_selectionSet as ss; ss.displayFromSelectionSet("@")' %(bckdrp['name'].v.. ()))
+        ab _ ?.PS_K..('addBtn', '<span>Add Node(s)</span>', '______ bi_selectionSet as ss; ss.addNodes("@")' %(bckdrp['name'].v.. ()))
+        rb _ ?.PS_K..('refreshBtn', '<span>Refresh</span>', '______ bi_selectionSet as ss; ss.refreshButtons("@")' %(bckdrp['name'].v.. ()))
         
-        de _ ?.PS_K..('disableEnableToggleBtn', '<span style="color:orange">Disable/Enable Toggle</span>', '______ bi_selectionSet as ss; ss.disEnaToggleFromSelectionSet("@")' %(bckdrp['name'].value()))
+        de _ ?.PS_K..('disableEnableToggleBtn', '<span style="color:orange">Disable/Enable Toggle</span>', '______ bi_selectionSet as ss; ss.disEnaToggleFromSelectionSet("@")' %(bckdrp['name'].v.. ()))
         de.sF..(?.ST..)
-        dea _ ?.PS_K..('disableEnableAllBtn', '<span style="color:orange">Disable/Enable All</span>', '______ bi_selectionSet as ss; ss.disEnaAllFromSelectionSet("@")' %(bckdrp['name'].value()))
+        dea _ ?.PS_K..('disableEnableAllBtn', '<span style="color:orange">Disable/Enable All</span>', '______ bi_selectionSet as ss; ss.disEnaAllFromSelectionSet("@")' %(bckdrp['name'].v.. ()))
         
         sep _ ?.T_K..('separator', 'List of Nodes:', '')
         
@@ -229,8 +229,8 @@ ___ colorize(bckdrp):
             ____
                 lon _ '<span style="color:green">@</span>' %nd['name'].v..
             
-            btn _ ?.PS_K..('%sBtn' %(nd['name'].value()), lon, '______ bi_selectionSet as ss; ss.disEnaNode("@", "@", "%sBtn")' %(bckdrp['name'].v.., nd['name'].v.., nd['name'].value()))
-            dl _ ?.PS_K..('%sDelBtn' %(nd['name'].value()), '<span style="color:yellow">x</span>', '______ bi_selectionSet as ss; ss.deleteNode("@", "@")' %(bckdrp['name'].v.., nd['name'].value()))
+            btn _ ?.PS_K..('%sBtn' %(nd['name'].v.. ()), lon, '______ bi_selectionSet as ss; ss.disEnaNode("@", "@", "%sBtn")' %(bckdrp['name'].v.., nd['name'].v.., nd['name'].v.. ()))
+            dl _ ?.PS_K..('%sDelBtn' %(nd['name'].v.. ()), '<span style="color:yellow">x</span>', '______ bi_selectionSet as ss; ss.deleteNode("@", "@")' %(bckdrp['name'].v.., nd['name'].v.. ()))
             
             __ i % 4 __ 0 an. i !_ 0:
                 btn.sF..(?.ST..)
@@ -252,11 +252,11 @@ ___ addNodes(bckdrp):
     __ selNodes:
         ___ nd __ selNodes:
             lon _ ''
-            __ st.(node['listOfNodes'].value()).find(nd['name'].value()) __ -1:
+            __ st.(node['listOfNodes'].v.. ()).find(nd['name'].v.. ()) __ -1:
                 __ node['listOfNodes'].v.. !_ '':
-                    lon +_ ',@' %st.(nd['name'].value())
+                    lon +_ ',@' %st.(nd['name'].v.. ())
                 ____
-                    lon +_ '@' %st.(nd['name'].value())
+                    lon +_ '@' %st.(nd['name'].v.. ())
                     
                 node['listOfNodes'].sV..(node['listOfNodes'].v.. + lon)
                 

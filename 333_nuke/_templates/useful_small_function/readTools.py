@@ -1,8 +1,8 @@
 ______ ?
-______ nukescripts
+______ n_s_
 
-___ newUserKnob(knob, value):
-    knob.sV..(value)
+___ newUserKnob(knob, v.. ):
+    knob.sV..(v.. )
     r_ knob
 
 ___ allReads():
@@ -20,7 +20,7 @@ ___ setLocalize():
     p..
 
 ___ setFrameRange():
-    f _ nukescripts.PP..('Set read nodes frame range')
+    f _ n_s_.PP..('Set read nodes frame range')
     f.nodesSelection _ ?.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     f.divText _ ?.T_K..('divText', '')
     f.firstFrame _ newUserKnob(?.I_K..('first_frame', 'frame range', 1), __.(?.r.. .firstFrame()))
@@ -50,17 +50,17 @@ ___ setFrameRange():
 
         ___ r __ Sel:
             ___
-                r['first'].sV..(f.firstFrame.value())
-                r['before'].sV..(f.before.value())
-                r['last'].sV..(f.lastFrame.value())
-                r['after'].sV..(f.after.value())
+                r['first'].sV..(f.firstFrame.v.. ())
+                r['before'].sV..(f.before.v.. ())
+                r['last'].sV..(f.lastFrame.v.. ())
+                r['after'].sV..(f.after.v.. ())
             ______ ValueError:
                 ?.m..('No nodes selected!')
             ______ NameError:
                 p..
 
 ___ setError():
-    e _ nukescripts.PP..('Missing frames setting')
+    e _ n_s_.PP..('Missing frames setting')
     e.nodesSelection _ ?.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     e.divText _ ?.T_K..('divText', '')
     e.onError _ ?.E_K..('onError', 'missing frames', ['error', 'black', 'checkerboard', 'nearest frame'])

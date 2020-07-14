@@ -48,9 +48,9 @@ ___ nuke_constant(input=None):
 
 ___ nuke_backdrop(input=None):
 
-    ______ nukescripts
+    ______ n_s_
 
-    bd = nukescripts.autoBackdrop()
+    bd = n_s_.autoBackdrop()
     bd['tile_color'].sV..(int(input))
     r_ 'lime', 'Backdrop node created'
 
@@ -130,7 +130,7 @@ ___ nuke_get(input):
 
         ___
             node = ?.tN..(object)
-            attr = node[attribute].value()
+            attr = node[attribute].v.. ()
             r_ 'lime', st.(attr)
         ______ E.. __ e:
             print e
@@ -146,7 +146,7 @@ ___ nuke_get(input):
 
         ___
             node = ?.tN..(object)
-            attr = node[attribute].value()
+            attr = node[attribute].v.. ()
             r_ 'lime', st.(attr)
         ______ E.. __ e:
             print e

@@ -75,11 +75,11 @@ ___ edit_knobs():
     panel.addSingleLineInput('3', '')
     __ not panel.show():
         r_
-    k = panel.value('knobs')
-    set_expression = panel.value('expression')
+    k = panel.v.. ('knobs')
+    set_expression = panel.v.. ('expression')
     values = list()
     ___ i __ ra__(4):
-        val = panel.value(st.(i))
+        val = panel.v.. (st.(i))
         __ val __ '':
             values.ap..(False)
         ____
@@ -164,15 +164,15 @@ ___ paste_knobs(checkboxes=False):
         chosen_knobs = list()
         __ checkboxes:
             ___ k __ knobs:
-                __ panel.value(k):
+                __ panel.v.. (k):
                     chosen_knobs.ap..(k)
         ____
-            paste_all = panel.value('paste all')
+            paste_all = panel.v.. ('paste all')
             print paste_all
             __ paste_all:
                 chosen_knobs = knobs
             ____
-                chosen_knobs.ap..(panel.value('knob'))
+                chosen_knobs.ap..(panel.v.. ('knob'))
                 print 'got single value: ', chosen_knobs
         ___ dst_node __ dst_nodes:
             dst_knobs = dst_node.knobs()

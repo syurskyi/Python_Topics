@@ -110,12 +110,12 @@ ___ load_settings(*args):
         settings_tree _ ET.parse(settings_xml)
         settings_root _ settings_tree.getroot()
         ___ setting __ settings_root.find('settings').f_a_('setting'):
-            value _ setting.text
-            __ value __ 'True':
-                value _ T..
-            ____ value __ 'False':
-                value _ F..
-            settings[setting.get('name')] _ value
+            v..  _ setting.text
+            __ v..  __ 'True':
+                v..  _ T..
+            ____ v..  __ 'False':
+                v..  _ F..
+            settings[setting.get('name')] _ v..
 
     r_ settings
 
@@ -157,8 +157,8 @@ ___ check_xml_values_exist():
      'logging_level': '1',
      'nuke_exe_fixed': ' ',
      'archive_threads': '2'}
-    ___ key, value __ settings.i..():
-        check_xml_value_exists('settings', 'setting', 'name', key, value)
+    ___ key, v..  __ settings.i..():
+        check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
@@ -301,11 +301,11 @@ ___ add_nukescript_settings(pa__, section):
         tree.w..(xml_, encoding_'utf-8', xml_declaration_T..)
 
 
-___ update_nukescript_section(pa__, section, tag, value):
+___ update_nukescript_section(pa__, section, tag, v.. ):
     xml, root, tree _ get_xml_elements()
     ___ nukescript __ root.find(section).f_a_('nukescript'):
         __ nukescript.text __ pa__:
-            nukescript.set(tag, value)
+            nukescript.set(tag, v.. )
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)

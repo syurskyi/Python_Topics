@@ -58,9 +58,9 @@ ___ copy_knobs():
         print "please select two nodes: first to copy 'from' second to copy 'to'"
 
 
-___ copy_to_clipboard(value):
+___ copy_to_clipboard(v.. ):
     # copy text to clipboard
-    ?G...?A...clipboard().setText(value)
+    ?G...?A...clipboard().setText(v.. )
     r_ T..
 
 

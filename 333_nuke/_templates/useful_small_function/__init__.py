@@ -20,6 +20,7 @@ ___ clean_name(text):
     r_ re.sub(r'[^a-zA-Z0-9\n\.]', '_', ?
 
 
+
 ___ camel_case_to_lower_case_underscore(text):
     """
     Split string by upper case letters.
@@ -72,25 +73,25 @@ ___ lower_case_underscore_to_camel_case(text):
 
 
 #- Attribute Functions ----
-___ auto_convert(value):
+___ auto_convert(v.. ):
     """
     Auto-convert a value to it's given type.
     """
-    atype = attr_type(value)
+    atype = attr_type(v.. )
     __ atype __ 'str':
-        r_ st.(value)
+        r_ st.(v.. )
 
     __ atype __ 'bool':
-        r_ bool(value)
+        r_ bool(v.. )
 
     __ atype __ 'float':
-        r_ float(value)
+        r_ float(v.. )
 
     __ atype __ 'int':
-        r_ int(value)
-    r_ value
+        r_ int(v.. )
+    r_ v..
 
-___ attr_type(value):
+___ attr_type(v.. ):
     """
     Determine the attribute type based on a value. 
     Returns a string.
@@ -105,24 +106,24 @@ ___ attr_type(value):
     :returns: attribute type.
     :rtype: str
     """
-    __ is_none(value):
+    __ is_none(v.. ):
         r_ 'null'
 
-    __ is_list(value):
-        r_ list_attr_types(value)
+    __ is_list(v.. ):
+        r_ list_attr_types(v.. )
 
     ____
-        __ is_bool(value):
+        __ is_bool(v.. ):
             r_ 'bool'
 
-        __ is_string(value):
+        __ is_string(v.. ):
             r_ 'str'
 
-        __ is_number(value):
-            __ type(value) is float:
+        __ is_number(v.. ):
+            __ type(v.. ) is float:
                 r_ 'float'
 
-            __ type(value) is int:
+            __ type(v.. ) is int:
                 r_ 'int'
     r_ 'unknown'
 

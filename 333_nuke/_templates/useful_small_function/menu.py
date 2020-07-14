@@ -146,11 +146,11 @@ ___ sjmOpenAllInViewer():
 ___ sjmMergeOpIncr():
   sn _ ?.sN__
   kn _ sn.knobs()['operation']
-  kn.sV..(kn.values().index(kn.value())+1)
+  kn.sV..(kn.values().index(kn.v.. ())+1)
 ___ sjmMergeOpDecr():
   sn _ ?.sN__
   kn _ sn.knobs()['operation']
-  kn.sV..(kn.values().index(kn.value())-1)
+  kn.sV..(kn.values().index(kn.v.. ())-1)
 
 # use $gui to disable slow nodes when working interactively
 #

@@ -149,8 +149,8 @@ ___ check_xml_values_exist(*args):
      'snapshotbrowser_thumbnail_scrollbar': 'True',
      'snapshot_selection': 'all nodes',
      'snapshot_render_width': '960'}
-    ___ key, value __ settings.i..():
-        check_xml_value_exists('settings', 'setting', 'name', key, value)
+    ___ key, v..  __ settings.i..():
+        check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
 ___ get_default_snapshot_root_dir(*args):
@@ -504,13 +504,13 @@ ___ get_image_size(src, *args):
         r_ (width, height)
 
 
-___ update_xml(key, value, *args):
+___ update_xml(key, v.. , *args):
     settings_xml _ get_settings_xml()
     settings_tree _ ET.parse(settings_xml)
     settings_root _ settings_tree.getroot()
     ___ setting __ settings_root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
-            setting.text _ value
+            setting.text _ v..
 
     w__ o..(settings_xml, 'w') __ xml:
         prettyprint(settings_root)

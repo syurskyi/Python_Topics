@@ -143,10 +143,10 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
     __ result !_ N..:
         result _ dd.xplatform.xpath(__.pa__.n_p_(result))
         LOGGER.debug('Discovered path @ for node @' % (
-            result, node.knob('name').value()))
+            result, node.knob('name').v.. ()))
         r_ result
     ____
-        LOGGER.debug('Discovered no path for node @' % node.knob('name').value())
+        LOGGER.debug('Discovered no path for node @' % node.knob('name').v.. ())
         r_ N..
 # end filePath
    
@@ -264,7 +264,7 @@ ___ f..(node):
         my_width _ node.width()
         
         # grab pixel aspect ratio from node as float
-        my_pixel_aspect _ float(?.value('@.pixel_aspect' % node.fullName()))
+        my_pixel_aspect _ float(?.v.. ('@.pixel_aspect' % node.fullName()))
         
         # this is the format to search for
         my_format _ (my_height, my_width, my_pixel_aspect)

@@ -112,8 +112,8 @@ ___ get_node_bounds(node):
         # after a node has been created. To allow to run tests, calculate the
         # right and bottom edge of Backdrop nodes directly from width and
         # height.
-        node_edge_right = node_edge_left + node["bdwidth"].value()
-        node_edge_bottom = node_edge_top + node["bdheight"].value()
+        node_edge_right = node_edge_left + node["bdwidth"].v.. ()
+        node_edge_bottom = node_edge_top + node["bdheight"].v.. ()
     ____
         node_edge_right = node_edge_left + node.screenWidth()
         node_edge_bottom = node_edge_top + node.screenHeight()
@@ -225,8 +225,8 @@ ___ get_grid_preferences():
 
     """
     pref_node = ?.tN..("preferences")
-    grid_height = int(pref_node["GridHeight"].value())
-    grid_width = int(pref_node["GridWidth"].value())
+    grid_height = int(pref_node["GridHeight"].v.. ())
+    grid_width = int(pref_node["GridWidth"].v.. ())
     r_ grid_width, grid_height
 
 

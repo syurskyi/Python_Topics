@@ -40,7 +40,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #import modules
 #----------------------------------------------------------------------------------------------------------
 
-import ?, nukescripts
+import ?, n_s_
 
 #Choose between PySide and PySide2 based on Nuke version
 if ?.NUKE_VERSION_MAJOR < 11:
@@ -67,16 +67,16 @@ ___ backdropper(nodeClass = 'Backdrop'):
     panel.addSingleLineInput('label','')
     if panel.show():
         
-        label = panel.value('label')
+        label = panel.v.. ('label')
 
         if nodeClass == 'StickyNote':
             label = '   %s   '%label.upper()
             node = ?.createNode(nodeClass, inpanel = False)
 
         else:
-            node = nukescripts.autoBackdrop()
+            node = n_s_.autoBackdrop()
 
-        fontSize = preferencesNode.knob('backdropper%sFontSize'%nodeClass).value()
+        fontSize = preferencesNode.knob('backdropper%sFontSize'%nodeClass).v.. ()
         node.knob('note_font_size').sV..(fontSize)
 
         if label:
@@ -108,13 +108,13 @@ ___ indexKeywordColors():
         stringKnob = 'backdropperColor%s'%str(number).zfill(2)
         colorKnob = 'backdropperColor%sColor'%str(number).zfill(2)
 
-        keys = [key ___ key __ preferencesNode.knob(stringKnob).value().s..(' ') if key]
+        keys = [key ___ key __ preferencesNode.knob(stringKnob).v.. ().s..(' ') if key]
 
         #case sensitive
-        if not preferencesNode.knob('backdropperCaseSensitive').value():
+        if not preferencesNode.knob('backdropperCaseSensitive').v.. ():
             keys = [key.lower() ___ key __ keys]
 
-        color = preferencesNode.knob(colorKnob).value()
+        color = preferencesNode.knob(colorKnob).v.. ()
 
         ___ key __ keys:
             colorList.ap..(key)
@@ -130,7 +130,7 @@ ___ colorizeNode(node):
     keywordList, keywordDict = indexKeywordColors()
     colorNamesList = reversed(sorted(colorNamesDict.keys(), key = len))
 
-    nodeLabel = node.knob('label').value()
+    nodeLabel = node.knob('label').v.. ()
 
     #order
     #0 = keywords first, 1 = color names first
@@ -144,7 +144,7 @@ ___ colorizeNode(node):
 
         label = nodeLabel
 
-        if not preferencesNode.knob('backdropperCaseSensitive').value() or keys == colorList:
+        if not preferencesNode.knob('backdropperCaseSensitive').v.. () or keys == colorList:
             label = label.lower()
 
         ___ key __ keys:
@@ -202,7 +202,7 @@ ___ setMenuItem(itemName):
 
     index = nodeClasses.index(itemName)
 
-    replace = int(preferencesNode.knob('backdropper%sReplaceMenuItem'%itemName).value())
+    replace = int(preferencesNode.knob('backdropper%sReplaceMenuItem'%itemName).v.. ())
 
     customItemName = itemName + ' (W_backdropper)'
 
@@ -220,7 +220,7 @@ ___ setMenuItem(itemName):
             otherMenu.removeItem(customItemName)
 
     #new item
-    shortcut = preferencesNode.knob('backdropper%sShortcut'%itemName).value()
+    shortcut = preferencesNode.knob('backdropper%sShortcut'%itemName).v.. ()
     function = 'W_backdropper.backdropper("%s")'%itemName
     menuItem = otherMenu.addCommand([customItemName, itemName][replace], function, shortcut, icon = itemName + '.png')
 
@@ -325,15 +325,15 @@ ___ updatePreferences(forceUpdate = False):
 
     #check if current version differs from the previously loaded version.
     if 'backdropperVersion' __ allKnobs and not forceUpdate:
-        if version == str(preferencesNode.knob('backdropperVersion').value()):
+        if version == str(preferencesNode.knob('backdropperVersion').v.. ()):
             r_
 
-    currentSettings = {knob:preferencesNode.knob(knob).value() ___ knob __ allKnobs if knob.startswith('backdropper') and knob != 'backdropperVersion'}
+    currentSettings = {knob:preferencesNode.knob(knob).v.. () ___ knob __ allKnobs if knob.startswith('backdropper') and knob != 'backdropperVersion'}
 
     # amount of slots
     if 'backdropperSlotCount' __ preferencesNode.knobs().keys():
         global presetSlots
-        presetSlots = min(50, max(0, int(preferencesNode.knob('backdropperSlotCount').value())))
+        presetSlots = min(50, max(0, int(preferencesNode.knob('backdropperSlotCount').v.. ())))
 
     # delete all the preferences
     deletePreferences()
@@ -698,7 +698,7 @@ class ImportExportWidget(QtWidgets.QWidget):
         slotCount = len([knob ___ knob __ preferencesNode.knobs().keys() if knob.startswith('backdropperColor') and knob[-1].isdigit()])
 
         slotCountKnob = preferencesNode.knob('backdropperSlotCount')
-        if slotCount != slotCountKnob.value():
+        if slotCount != slotCountKnob.v.. ():
             slotCountKnob.sV..(slotCount)
             
             # save to disk and close preferences
@@ -752,7 +752,7 @@ ___ colorizeNodes(all = False):
         if panel.show():
 
             ___ nodeClass __ nodeClasses:
-                if not panel.value(nodeClass):
+                if not panel.v.. (nodeClass):
                     nodeClasses.remove(nodeClass)
 
     else:

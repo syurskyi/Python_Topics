@@ -122,7 +122,7 @@ c_ colorWheelClass(?W..):
         img _ N..
         pick _ [0, 0]
         pickerSize _ 8
-        value _ 0
+        v..  _ 0
 
     ___ paintEvent(self, event):
         __ no. img:
@@ -137,7 +137,7 @@ c_ colorWheelClass(?W..):
         painter.setPen(__.NoPen)
         elipse _ QPainterPath()
         elipse.addEllipse(QRect(blackBorder, blackBorder, hw-blackBorder*2,hw-blackBorder*2))
-        painter.setBrush(QColor(0,0,0,value*255))
+        painter.setBrush(QColor(0,0,0,v.. *255))
         painter.drawPath(elipse)
 
 
@@ -146,7 +146,7 @@ c_ colorWheelClass(?W..):
         y _ center + pick[1]
         #line
         painter.setBrush(__.NoBrush)
-        lineColor _ 55 __ value < 0.5 ____ 200
+        lineColor _ 55 __ v..  < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1))
         painter.drawLine(center, center,x, y)
 
@@ -204,7 +204,7 @@ c_ colorWheelClass(?W..):
         colorChangedSignal.emit([angle/360,s])
 
     ___ sV..(self, v):
-        value _ (1000-v) * 0.001
+        v..  _ (1000-v) * 0.001
         update()
         updateColor()
 
@@ -237,7 +237,7 @@ c_ colorRampClass(?W..):
         hw _ 200
         setFixedSize(QSize(hw, hw))
         padding _ 2
-        value _ 0.0
+        v..  _ 0.0
         pick _ [0, 0]
         img _ N..
         pickerSize _ 8
@@ -253,11 +253,11 @@ c_ colorRampClass(?W..):
         painter.drawImage(0, 0, img)
         #value
         painter.setPen(__.NoPen)
-        painter.fillRect(0,0, hw, hw, QColor(0,0,0,value*255))
+        painter.fillRect(0,0, hw, hw, QColor(0,0,0,v.. *255))
         #lines
         x _ pick[0]
         y _ pick[1]
-        lineColor _ 55 __ value < 0.5 ____ 200
+        lineColor _ 55 __ v..  < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 0.5))
         painter.drawLine(x,0,x,hw)
         painter.drawLine(0,y,hw,y)
@@ -277,7 +277,7 @@ c_ colorRampClass(?W..):
         colorChangedSignal.emit([h,s])
 
     ___ sV..(self, v):
-        value _ (1000-v) * 0.001
+        v..  _ (1000-v) * 0.001
         update()
         updateColor()
 
@@ -352,12 +352,12 @@ c_ colorPickerClass(?W..):
         picker_ly.setContentsMargins(0,0,0,0)
         ly.addLayout(picker_ly)
         #value
-        value _ QSlider(__.Vertical)
-        value.setStyleSheet(sliderStyle)
-        value.setMaximumHeight(200)
-        ly.aW..(value)
-        value.setRange(0,1000)
-        value.sV..(1000)
+        v..  _ QSlider(__.Vertical)
+        v.. .setStyleSheet(sliderStyle)
+        v.. .setMaximumHeight(200)
+        ly.aW..(v.. )
+        v.. .setRange(0,1000)
+        v.. .sV..(1000)
         mainLy.addLayout(ly)
         #color values
         grid_ly _ QGridLayout()
@@ -400,8 +400,8 @@ c_ colorPickerClass(?W..):
 
         picker.colorChangedSignal.c..(receiveColor)
         picker_ly.aW..(picker)
-        value.valueChanged.c..(picker.sV..)
-        picker.sV..(value.value())
+        v.. .valueChanged.c..(picker.sV..)
+        picker.sV..(v.. .v.. ())
         picker.updateColor()
 
     ___ setPickerIcon
@@ -410,7 +410,7 @@ c_ colorPickerClass(?W..):
         setWindowIcon(QIcon(pix))
 
     ___ receiveColor(self, hs):
-        v _ value.v..*0.001
+        v _ v.. .v..*0.001
         c _ QColor()
         c.setHsvF(hs[0], hs[1], v)
         updateColor(c)

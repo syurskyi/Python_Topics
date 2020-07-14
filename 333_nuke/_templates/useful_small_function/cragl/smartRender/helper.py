@@ -677,8 +677,8 @@ ___ check_settings_xml_values_exist():
      'auto_close_renderinfo': 'True',
      'show_render_file_name': 'True',
      'tooltips': 'True'}
-    ___ key, value __ settings.i..():
-        check_xml_value_exists('settings', 'setting', 'name', key, value)
+    ___ key, v..  __ settings.i..():
+        check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
     settings_current _ {'range': 'global',
      'custom_range': '',
@@ -686,8 +686,8 @@ ___ check_settings_xml_values_exist():
      'overwrite': 'True',
      'size': 'full',
      'thread_count': st.(__.(get_cpu_count() / 2))}
-    ___ key, value __ settings_current.i..():
-        check_xml_value_exists_current('setting', 'name', key, value)
+    ___ key, v..  __ settings_current.i..():
+        check_xml_value_exists_current('setting', 'name', key, v.. )
 
 
 ___ load_sounds(*args):

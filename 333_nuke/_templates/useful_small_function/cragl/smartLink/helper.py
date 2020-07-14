@@ -91,14 +91,14 @@ ___ load_settings():
         settings_tree _ ET.parse(settings_xml)
         settings_root _ settings_tree.getroot()
         ___ setting __ settings_root.find('settings').f_a_('setting'):
-            value _ setting.text
-            __ value __ 'True':
-                value _ T..
-            ____ value __ 'False':
-                value _ F..
-            ____ ',' __ value:
-                value _ [ val.strip() ___ val __ value.s..(',') ]
-            settings[setting.get('name')] _ value
+            v..  _ setting.text
+            __ v..  __ 'True':
+                v..  _ T..
+            ____ v..  __ 'False':
+                v..  _ F..
+            ____ ',' __ v.. :
+                v..  _ [ val.strip() ___ val __ v.. .s..(',') ]
+            settings[setting.get('name')] _ v..
 
     r_ settings
 
@@ -166,8 +166,8 @@ ___ clear_combobox(combobox):
 
 
 ___ check_xml_values_exist():
-    ___ key, value __ templates.SETTINGS_DEFAULT_VALUES.i..():
-        check_xml_value_exists('settings', 'setting', 'name', key, value)
+    ___ key, v..  __ templates.SETTINGS_DEFAULT_VALUES.i..():
+        check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
@@ -226,11 +226,11 @@ ___ check_xml_ok(xml):
                 get_settings_xml()
 
 
-___ update_settings(key, value):
+___ update_settings(key, v.. ):
     xml, root, tree _ get_xml_elements()
     ___ setting __ root.find('settings').f_a_('setting'):
         __ setting.get('name') __ key:
-            setting.text _ value
+            setting.text _ v..
             w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
                 tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
@@ -239,11 +239,11 @@ ___ update_settings(key, value):
     raise ValueError("Invalid key '{}'. No such key in settings.".f..(key))
 
 
-___ update_preset(preset_name, key, value):
+___ update_preset(preset_name, key, v.. ):
     xml, root, tree _ get_xml_elements()
     ___ preset __ root.find('backdrops').f_a_('backdrop'):
         __ preset.get('name') __ preset_name:
-            preset.set(key, value)
+            preset.set(key, v.. )
             break
 
     w__ o..(xml, 'w') __ xml:

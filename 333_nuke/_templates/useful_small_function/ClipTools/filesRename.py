@@ -54,8 +54,8 @@ ___ getRename(files,name):
     result_panel.s__
 
     __ result:
-        search _ panel.value("text to replace:")
-        r.. _ panel.value("replace with:")
+        search _ panel.v.. ("text to replace:")
+        r.. _ panel.v.. ("replace with:")
         __ replace__'':
             replace_search                          # stops files being renamed with nothing
         __ r..[0] __'.':
@@ -143,8 +143,8 @@ ___ renumber():
             result_panel.s__
 
             __ result:
-                newPad _ panel.value("change padding to:")
-                frameStart_ panel.value("frameStart:")
+                newPad _ panel.v.. ("change padding to:")
+                frameStart_ panel.v.. ("frameStart:")
 
 
                 tempFilesList_ # list

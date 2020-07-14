@@ -20,7 +20,7 @@
 ______ __
 ______ sys
 ______ ?
-______ nukescripts
+______ n_s_
 ______ posixpath
 ______ random
 ______ string
@@ -41,7 +41,7 @@ ___ addFileFilter(externalFilter):
 #  nodes = nuke.menu('Nodes')
 #  nodes.removeItem("ToolSets")
 
-class CreateToolsetsPanel(nukescripts.PP..):
+class CreateToolsetsPanel(n_s_.PP..):
   # rename is bool var 
 
   ___ __init__(self, fullFilePath, rename):
@@ -56,7 +56,7 @@ class CreateToolsetsPanel(nukescripts.PP..):
       self.namePanel = 'Rename ToolSet'
       self.nameOkButton = 'Rename'
     
-    nukescripts.PP...__init__( self, self.namePanel, 'uk.co.thefoundry.Toolset')
+    n_s_.PP...__init__( self, self.namePanel, 'uk.co.thefoundry.Toolset')
     
     # CREATE KNOBS
     self.userFolders = # list
@@ -98,12 +98,12 @@ class CreateToolsetsPanel(nukescripts.PP..):
         self.buildFolderList(fullPath + '/' + group, menuPath + group + '/')              
 
   ___ createPreset(self):
-    __ self.renameCreateSharedToolset(st.(self.menuPath.value()), False):
+    __ self.renameCreateSharedToolset(st.(self.menuPath.v.. ()), False):
     #if self.createSharedToolset(str(self.menuPath.value())):
       self.finishModalDialog( True )
   
   ___ renamePreset(self):
-    __ self.renameCreateSharedToolset(st.(self.menuPath.value()), True):
+    __ self.renameCreateSharedToolset(st.(self.menuPath.v.. ()), True):
       self.finishModalDialog( True )
     
   ___ renameCreateSharedToolset(self, name, rename):
@@ -146,13 +146,13 @@ class CreateToolsetsPanel(nukescripts.PP..):
   ___ getPresetPath(self):
 
     #COMMENT: Added a bit of usability. Let's preserve a toolset's name
-    tempListToolsetName = self.menuPath.value().s..('/')
+    tempListToolsetName = self.menuPath.v.. ().s..('/')
     tempToolsetName = tempListToolsetName[-1]
 
-    __ st.(self.menuItemChoice.value()) __ "root":
+    __ st.(self.menuItemChoice.v.. ()) __ "root":
       self.menuPath.sV..( ""+ tempToolsetName)
     ____
-      self.menuPath.sV..(self.menuItemChoice.value() + "/" + tempToolsetName)
+      self.menuPath.sV..(self.menuItemChoice.v.. () + "/" + tempToolsetName)
 
   ___ knobChanged( self, knob ):
     __ knob __ self.okButton:

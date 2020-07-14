@@ -318,14 +318,14 @@ ___ check_xml_values_exist():
      'default_pixel_aspect': '1',
      'user': ' ',
      'tooltips': 'True'}
-    ___ key, value __ settings.i..():
-        check_xml_value_exists('settings', 'setting', 'name', key, value)
+    ___ key, v..  __ settings.i..():
+        check_xml_value_exists('settings', 'setting', 'name', key, v.. )
 
     navigations _ {'system': '',
      'project': '',
      'shot': ''}
-    ___ key, value __ navigations.i..():
-        check_xml_value_exists('navigation', 'navi', 'name', key, value)
+    ___ key, v..  __ navigations.i..():
+        check_xml_value_exists('navigation', 'navi', 'name', key, v.. )
 
     check_xml_parent_val_exists('templateDefaults')
 
@@ -578,14 +578,14 @@ ___ open_nukescript(name, nuke_scripts):
             ?.scriptOpen(script[0])
 
 
-___ write_location(location, value):
+___ write_location(location, v.. ):
     settings_xml _ get_settings_xml()
     settings_tree _ ET.parse(settings_xml)
     settings_root _ settings_tree.getroot()
     w__ o..(settings_xml, 'r'):
         ___ child __ settings_root.find('navigation').f_a_('navi'):
             __ child.get('name') __ location:
-                child.text _ value
+                child.text _ v..
 
     w__ o..(settings_xml, 'w') __ xml:
         prettyprint(settings_root)
