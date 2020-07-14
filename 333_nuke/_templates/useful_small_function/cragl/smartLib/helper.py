@@ -199,7 +199,7 @@ ___ _copy(src, dst):
     __ __.pa__.isd..(src):
         ___
             shutil.copytree(src, dst)
-        except Exception __ error:
+        ______ E.. __ error:
             raise OSError(error)
 
     ____ __.pa__.isf..(src):
@@ -207,7 +207,7 @@ ___ _copy(src, dst):
             __.m_d_(__.pa__.d_n_(dst))
         ___
             shutil.copy(src, dst)
-        except Exception __ error:
+        ______ E.. __ error:
             raise OSError(error)
 
 
@@ -288,7 +288,7 @@ ___ get_settings_xml():
             w__ o..(settings_xml, 'w') __ xml:
                 template _ templates.SETTINGS.f..(user_home_dir___.pa__.expanduser('~'))
                 xml.w..(template.strip())
-        except Exception __ error:
+        ______ E.. __ error:
             write_log("Couldn't write settings xml template. {}".f..(error))
 
     check_xml_values_exist()
@@ -600,7 +600,7 @@ ___ open_website(url):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
 
@@ -792,10 +792,10 @@ ___ setup_renderpath():
                             render_dir _ __.pa__.d_n_(render_full_path)
                             __ no. __.pa__.isd..(render_dir):
                                 __.m_d_(render_dir)
-                            ?.thisNode()['file'].sV..(render_full_path)
-                            ?.thisNode()['file_type'].sV..(load_settings()['ext'])
+                            ?.tN..()['file'].sV..(render_full_path)
+                            ?.tN..()['file_type'].sV..(load_settings()['ext'])
                     ______
-                        pass
+                        p..
 
         r_ N..
 
@@ -865,12 +865,12 @@ ___ rename_item(sender, path_orig, window):
 
 
 ___ force_create_render_dir():
-    filename _ ?.filename(?.thisNode())
+    filename _ ?.filename(?.tN..())
     d_n_ _ __.pa__.d_n_(filename)
     osdir _ ?.callbacks.filenameFilter(d_n_)
     ___
         __.m_d_(osdir)
-    except OSError __ e:
+    ______ OSError __ e:
         __ e.errno !_ errno.EEXIST:
             raise
 
@@ -913,7 +913,7 @@ ___ import_from_footage_directory():
                 load_footage(path_start_path)
 
     ______
-        pass
+        p..
 
     r_
 
@@ -924,7 +924,7 @@ ___ load_footage(defaulttype _ 'Read', pa__ _ ''):
     ___
         sel_node _ ?.sN__
     ______
-        pass
+        p..
 
     __ sel_node:
         __ 'file' __ sel_node.knobs():
@@ -958,7 +958,7 @@ ___ load_footage(defaulttype _ 'Read', pa__ _ ''):
             ____
                 ___
                     ?.createNode(nodeType, 'file {' + f + '}', inpanel_use_in_panel)
-                except RuntimeError __ err:
+                ______ RuntimeError __ err:
                     ?.m..(err.args[0])
 
     r_
@@ -970,7 +970,7 @@ ___ show_custom_directory_window(shot_root, which, sml _ N..):
         crp.c__
         del crp
     ______
-        pass
+        p..
 
     crp _ CustomPath(shot_root, sml, which)
     crp.raise_()
@@ -1131,7 +1131,7 @@ ___ build_html(html_path, project):
 ___ build_pdf(build_path, project, output_filename _ '', parent _ N..):
     ___
         ____ ? ______ QtWebKit
-    except Exception:
+    ______ E..:
         msg _ "Error creating project report. The needed module 'QtWebKit' is not more supported in this Nuke version. Please use Nuke10 to create a project report."
         show_message_box(parent, msg)
         r_
@@ -1157,11 +1157,11 @@ ___ build_pdf(build_path, project, output_filename _ '', parent _ N..):
         __ __.pa__.isf..(tmp_html):
             ___
                 __.remove(tmp_html)
-            except Exception:
-                pass
+            ______ E..:
+                p..
 
         r_ 'created_pdf'
-    except Exception __ e:
+    ______ E.. __ e:
         r_ e
 
 
@@ -1200,7 +1200,7 @@ ___ get_sequences_sets(dirpath):
 
 
 ___ image_sequence_resolve_all(filepath):
-    filepath _ str(filepath.r..(__.pa__.sep, '/'))
+    filepath _ st.(filepath.r..(__.pa__.sep, '/'))
     basedir, filename _ __.pa__.split(filepath)
     filename_noext, ext _ __.pa__.s_t_(filename)
     ____ string ______ digits
@@ -1297,7 +1297,7 @@ ___ show_edit_template_script(window, pa__):
         ets.c__
         del ets
     ______
-        pass
+        p..
 
     ets _ osl.EditTemplateScript(pa__, script_values)
     ets.s__
@@ -1322,11 +1322,11 @@ ___ get_script_values(pa__, window):
     process _ subprocess.P..(cmd, shell_T.., stdin_subprocess.PIPE, stdout_subprocess.PIPE)
     process.wait()
     ___ line __ process.stdout:
-        line _ str(line.rstrip())
+        line _ st.(line.rstrip())
         __ 'script@' __ line:
             script_value _ line.r..('script@', '')
             key _ script_value.split(':')[0]
-            val _ str(script_value.split(':')[1])
+            val _ st.(script_value.split(':')[1])
             script_values[key] _ val
 
     r_ script_values
@@ -1344,7 +1344,7 @@ ___ set_script_values(pa__, script_values, *args):
     process.wait()
     found_end _ 0
     ___ line __ process.stdout:
-        line _ str(line.rstrip())
+        line _ st.(line.rstrip())
         __ debug:
             print line
         __ '@script:set_end' __ line:
@@ -1500,8 +1500,8 @@ c_ CustomPath(?W...?W..):
                 ____ which __ 'footage':
                     sml.current_shot_widget.set_footagepath(input_path.text())
                 sml.current_shot_widget.refresh()
-            except Exception __ e:
-                pass
+            ______ E.. __ e:
+                p..
 
         r_
 

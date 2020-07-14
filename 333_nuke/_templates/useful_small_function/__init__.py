@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-import re
-import os
+______ re
+______ os
 
 
 __all__ = ['attr_type', 'auto_convert', 'camel_case_to_lower_case_underscore', 'camel_case_to_title', 'clean_name', 
@@ -8,7 +8,7 @@ __all__ = ['attr_type', 'auto_convert', 'camel_case_to_lower_case_underscore', '
             'lower_case_underscore_to_camel_case', 'is_newer', 'test_func']
 
 #- Naming ----
-def clean_name(text):
+___ clean_name(text):
     """
     Return a cleaned version of a string - removes everything 
     but alphanumeric characters and dots.
@@ -17,10 +17,10 @@ def clean_name(text):
     :returns: cleaned string.
     :rtype: str
     """
-    return re.sub(r'[^a-zA-Z0-9\n\.]', '_', text) 
+    r_ re.sub(r'[^a-zA-Z0-9\n\.]', '_', ?
 
 
-def camel_case_to_lower_case_underscore(text):
+___ camel_case_to_lower_case_underscore(text):
     """
     Split string by upper case letters.
     F.e. useful to convert camel case strings to underscore separated ones.
@@ -31,15 +31,15 @@ def camel_case_to_lower_case_underscore(text):
     """
     words = # list
     from_char_position = 0
-    for current_char_position, char in enumerate(text):
-        if char.isupper() and from_char_position < text:
+    ___ current_char_position, char in enumerate(text):
+        __ char.isupper() and from_char_position < text:
             words.append(s[from_char_position:current_char_position].lower())
             from_char_position = current_char_position
     words.append(text[from_char_position:].lower())
-    return '_'.j..(words)
+    r_ '_'.j..(words)
 
 
-def camel_case_to_title(text):
+___ camel_case_to_title(text):
     """
     Split string by upper case letters and return a nice name.
 
@@ -49,15 +49,15 @@ def camel_case_to_title(text):
     """
     words = # list
     from_char_position = 0
-    for current_char_position, char in enumerate(text):
-        if char.isupper() and from_char_position < current_char_position:
+    ___ current_char_position, char in enumerate(text):
+        __ char.isupper() and from_char_position < current_char_position:
             words.append(text[from_char_position:current_char_position].title())
             from_char_position = current_char_position
     words.append(text[from_char_position:].title())
-    return ' '.j..(words)
+    r_ ' '.j..(words)
 
 
-def lower_case_underscore_to_camel_case(text):
+___ lower_case_underscore_to_camel_case(text):
     """
     Convert string or unicode from lower-case underscore to camel-case.
 
@@ -68,29 +68,29 @@ def lower_case_underscore_to_camel_case(text):
     split_string = text.split('_')
     # use string's class to work on the string to keep its type
     class_ = text.__class__
-    return split_string[0] + class_.j..('', map(class_.capitalize, split_string[1:]))
+    r_ split_string[0] + class_.j..('', map(class_.capitalize, split_string[1:]))
 
 
 #- Attribute Functions ----
-def auto_convert(value):
+___ auto_convert(value):
     """
     Auto-convert a value to it's given type.
     """
     atype = attr_type(value)
-    if atype == 'str':
-        return str(value)
+    __ atype __ 'str':
+        r_ st.(value)
 
-    if atype == 'bool':
-        return bool(value)
+    __ atype __ 'bool':
+        r_ bool(value)
 
-    if atype == 'float':
-        return float(value)
+    __ atype __ 'float':
+        r_ float(value)
 
-    if atype == 'int':
-        return int(value)
-    return value
+    __ atype __ 'int':
+        r_ int(value)
+    r_ value
 
-def attr_type(value):
+___ attr_type(value):
     """
     Determine the attribute type based on a value. 
     Returns a string.
@@ -105,28 +105,28 @@ def attr_type(value):
     :returns: attribute type.
     :rtype: str
     """
-    if is_none(value):
-        return 'null'
+    __ is_none(value):
+        r_ 'null'
 
-    if is_list(value):
-        return list_attr_types(value)
+    __ is_list(value):
+        r_ list_attr_types(value)
 
-    else:
-        if is_bool(value):
-            return 'bool'
+    ____
+        __ is_bool(value):
+            r_ 'bool'
 
-        if is_string(value):
-            return 'str'
+        __ is_string(value):
+            r_ 'str'
 
-        if is_number(value):
-            if type(value) is float:
-                return 'float'
+        __ is_number(value):
+            __ type(value) is float:
+                r_ 'float'
 
-            if type(value) is int:
-                return 'int'
-    return 'unknown'
+            __ type(value) is int:
+                r_ 'int'
+    r_ 'unknown'
 
-def list_attr_types(s):
+___ list_attr_types(s):
     """
     Return a string type for the value.
 
@@ -136,59 +136,59 @@ def list_attr_types(s):
           ie:
             [eval(x) for x in s if type(x) in [str, unicode]]
     """
-    if not is_list(s):
-        return 'unknown'
+    __ not is_list(s):
+        r_ 'unknown'
     
-    for typ in [str, int, float, bool]:
-        if all(isinstance(n, typ) for n in s):
-            return '%s%d' % (typ.__name__, len(s))
+    ___ typ in [st., int, float, bool]:
+        __ all(isinstance(n, typ) ___ n in s):
+            r_ '%s%d' % (typ.__name__, le.(s))
 
-    if False not in list(set([is_number(x) for x in s])):
-        return 'float%d' % len(s)
-    return 'unknown'
-
-
-def is_none(s):
-    return type(s).__name__ == 'NoneType'
+    __ False not in list(set([is_number(x) ___ x in s])):
+        r_ 'float%d' % le.(s)
+    r_ 'unknown'
 
 
-def is_string(s):
-    return type(s) in [str, unicode]
+___ is_none(s):
+    r_ type(s).__name__ __ 'NoneType'
 
 
-def is_number(s):
+___ is_string(s):
+    r_ type(s) in [st., unicode]
+
+
+___ is_number(s):
     """
     Check if a string is a int/float
     """
-    if is_bool(s):
-        return False
-    return isinstance(s, int) or isinstance(s, float) 
+    __ is_bool(s):
+        r_ False
+    r_ isinstance(s, int) or isinstance(s, float) 
 
 
-def is_bool(s):
+___ is_bool(s):
     """
     Returns true if the object is a boolean value. 
     * Updated to support custom decoders.
     """
-    return isinstance(s, bool) or str(s).lower() in ['true', 'false']
+    r_ isinstance(s, bool) or st.(s).lower() in ['true', 'false']
 
 
-def is_list(s):
+___ is_list(s):
     """
     Returns true if the object is a list type.
     """
-    return type(s) in [list, tuple]
+    r_ type(s) in [list, tuple]
 
 
-def is_dict(s):
+___ is_dict(s):
     """
     Returns true if the object is a dict type.
     """
-    from collections import OrderedDict
-    return type(s) in [dict, OrderedDict]
+    from collections ______ OrderedDict
+    r_ type(s) in [dict, OrderedDict]
 
 
-def is_newer(file1, file2):
+___ is_newer(file1, file2):
     """
     Returns true if file1 is newer than file2.
 
@@ -198,45 +198,45 @@ def is_newer(file1, file2):
     :returns: file1 is newer.
     :rtype: bool
     """ 
-    if not os.pa__.exists(file1) or not os.pa__.exists(file2):
-        return False
+    __ not os.pa__.exists(file1) or not os.pa__.exists(file2):
+        r_ False
 
     time1 = os.pa__.getmtime(file1)
     time2 = os.pa__.getmtime(file2)
-    return time1 > time2
+    r_ time1 > time2
 
 #- Testing -----
-def test_func(w, h):
+___ test_func(w, h):
     print '# width: %.2f, height: %.2f' % (float(w), float(h))
 
 
-def nodeParse(node):
+___ nodeParse(node):
     t = node[u"type"]
 
-    if t == u"Program":
-        body = [parse(block) for block in node[u"body"]]
-        return Program(body)
+    __ t __ u"Program":
+        body = [parse(block) ___ block in node[u"body"]]
+        r_ Program(body)
 
-    elif t == u"VariableDeclaration":
+    ____ t __ u"VariableDeclaration":
         kind = node[u"kind"]
-        declarations = [parse(declaration) for declaration in node[u"declarations"]]
-        return VariableDeclaration(kind, declarations)
+        declarations = [parse(declaration) ___ declaration in node[u"declarations"]]
+        r_ VariableDeclaration(kind, declarations)
 
-    elif t == u"VariableDeclarator":
+    ____ t __ u"VariableDeclarator":
         id = parse(node[u"id"])
         init = parse(node[u"init"])
-        return VariableDeclarator(id, init)
+        r_ VariableDeclarator(id, init)
 
-    elif t == u"Identifier":
-        return Identifier(node[u"name"])
+    ____ t __ u"Identifier":
+        r_ Identifier(node[u"name"])
 
-    elif t == u"Literal":
-        return Literal(node[u"value"])
+    ____ t __ u"Literal":
+        r_ Literal(node[u"value"])
 
-    elif t == u"BinaryExpression":
+    ____ t __ u"BinaryExpression":
         operator = node[u"operator"]
         left = parse(node[u"left"])
         right = parse(node[u"right"])
-        return BinaryExpression(operator, left, right)
-    else:
+        r_ BinaryExpression(operator, left, right)
+    ____
         raise ValueError("Invalid data structure.")

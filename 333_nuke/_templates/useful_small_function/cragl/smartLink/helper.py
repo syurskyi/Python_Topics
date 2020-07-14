@@ -59,7 +59,7 @@ ___ get_tool_root(which):
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
-        except IOError:
+        ______ IOError:
             write_log('unable to create open tool dir at: {}'.f..(root))
 
     r_ root
@@ -142,26 +142,26 @@ ___ get_settings_xml():
 
 
 ___ clear_layout(layout):
-    while layout.count():
+    w__ layout.count():
         child _ layout.takeAt(0)
         __ child.widget():
             child.widget().deleteLater()
 
 
 ___ move_layout_elements(source_layout, dest_layout):
-    while source_layout.count():
+    w__ source_layout.count():
         element _ source_layout.takeAt(0)
         ___
             dest_layout.addLayout(element)
-        except TypeError:
+        ______ TypeError:
             ___
                 dest_layout.aW..(element)
-            except TypeError:
+            ______ TypeError:
                 dest_layout.addStretch()
 
 
 ___ clear_combobox(combobox):
-    while combobox.count():
+    w__ combobox.count():
         combobox.clear()
 
 
@@ -260,7 +260,7 @@ ___ load_tooltips(parent, section):
     w__ o..(tooltips_file) __ json_file:
         ___
             ttdata _ j___.l..(json_file)
-        except ValueError:
+        ______ ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
 
@@ -278,7 +278,7 @@ ___ open_website(url):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             ____ smartLink ______ dialogs
             dialogs.show_message_box(N.., msg)
@@ -305,7 +305,7 @@ ___ get_cursor_position():
 
 
 ___ create_uid():
-    r_ str(uuid.uuid4())
+    r_ st.(uuid.uuid4())
 
 
 ___ get_next_link_name():
@@ -360,7 +360,7 @@ ___ list_from_string(string):
 ___ string_from_list(list_):
     __ i..(list_, list):
         r_ ', '.j..(list_)
-    r_ str(list_)
+    r_ st.(list_)
 
 
 ___ get_root_favorites_knob():
@@ -397,7 +397,7 @@ ___ remove_from_root_favorites(uid):
     favorites _ [ fav.strip() ___ fav __ favorites_knob.gV...split(',') __ fav ]
     ___
         del favorites[favorites.index(uid)]
-    except ValueError:
+    ______ ValueError:
         r_
 
     favorites_knob.sV..(', '.j..(favorites))
@@ -473,8 +473,8 @@ ___ add_to_favorites():
 
         ___
             ?.cragl_smartlinker.reload()
-        except AttributeError:
-            pass
+        ______ AttributeError:
+            p..
 
         r_
 
@@ -482,10 +482,10 @@ ___ add_to_favorites():
 ___ get_main_window():
     ___
         module _ ?W..
-    except AttributeError:
+    ______ AttributeError:
         module _ ?G..
 
     ___
         r_ module.?A..(___.argv)
-    except RuntimeError:
+    ______ RuntimeError:
         r_ module.?A...ins..)

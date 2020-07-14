@@ -66,7 +66,7 @@ ___ open_website(url):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             show_message_box(N.., 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url))
 
     r_

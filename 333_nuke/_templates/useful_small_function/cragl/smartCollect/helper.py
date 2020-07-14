@@ -12,7 +12,7 @@ ______ tempfile
 ______ cPickle
 ___
     ______ ?
-except ImportError:
+______ ImportError:
     ____ smartCollect.src ______ autosearch
     sitepackages _ autosearch.scan_for_pyside()
     __ sitepackages no. __ ___.pa__:
@@ -22,7 +22,7 @@ ___
     ____ ? ______ ?G.. __ ?W..
     ____ ? ______ ?G..
     ____ ? ______ ?C..
-except ImportError:
+______ ImportError:
     ____ ? ______ ?W..
     ____ ? ______ ?G..
     ____ ? ______ ?C..
@@ -374,7 +374,7 @@ ___ load_tooltips(parent, section, *args):
     w__ o..(tooltips_file) __ json_file:
         ___
             ttdata _ j___.l..(json_file)
-        except ValueError:
+        ______ ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
 
@@ -385,10 +385,10 @@ ___ load_tooltips(parent, section, *args):
 
 
 ___ create_job_id(*args):
-    current_time _ str(in.(ti__.ti__()))
-    rand_number _ str(random.random())
+    current_time _ st.(in.(ti__.ti__()))
+    rand_number _ st.(random.random())
     id_ _ hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
-    r_ str('{}_{}'.f..(current_time, id_))
+    r_ st.('{}_{}'.f..(current_time, id_))
 
 
 ___ update_statusbar(smart_collector, text, delay _ 0):
@@ -421,7 +421,7 @@ ___ open_website(url):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
 
@@ -461,7 +461,7 @@ ___ get_dir_size(pa__):
             fp _ __.pa__.j..(dirpath, f)
             ___
                 stat _ __.stat(fp)
-            except OSError:
+            ______ OSError:
                 c___
 
             __ stat.st_ino __ seen:

@@ -1,9 +1,9 @@
 """Provide utility functions."""
 
 ___
-    ______ nuke
-except ImportError:
-    pass
+    ______ ?
+______ ImportError:
+    p..
 
 ____ nuke_bake_metadata ______ constants
 
@@ -33,7 +33,7 @@ ___ create_node(node):
 
     """
     lab _ 'baked metadata\nfrom {}'.f..(node.name())
-    noop _ nuke.nodes.NoOp(hide_input_T..,
+    noop _ ?.nodes.NoOp(hide_input_T..,
                            xpos_node.xpos() + 100,
                            ypos_node.ypos(),
                            tile_color_constants.COLORS['noop'],
@@ -53,13 +53,13 @@ ___ create_numerical_animation(node, noop, m_key, key, first, last):  # pylint: 
         last (int): Frame number when animation should stop.
 
     """
-    animation _ nuke.D_K..(key)
+    animation _ ?.D_K..(key)
     noop.aK..(animation)
     animation.setAnimated()
     anim _ animation.animations()[0]
-    anim.addKey([nuke.AnimationKey(i, node.metadata(m_key, i)) ___ i __ xrange(first, last)])
+    anim.addKey([?.AnimationKey(i, node.metadata(m_key, i)) ___ i __ xrange(first, last)])
 
-    nuke.show(noop)
+    ?.show(noop)
 
 
 ___ create_matrix_knob(node, noop, m_key, key, first, last):
@@ -75,15 +75,15 @@ ___ create_matrix_knob(node, noop, m_key, key, first, last):
 
     """
     mtx _ le.(node.metadata(m_key))
-    array _ nuke.IArray_Knob(key.r__(':', '_'), key, [mtx, 1])
+    array _ ?.IArray_Knob(key.r__(':', '_'), key, [mtx, 1])
     noop.aK..(array)
     array.setAnimated()
 
     ___ frame __ xrange(first, last):
-        ___ index __ range(mtx):
+        ___ index __ ra__(mtx):
             keys _ # list
             anim _ array.animations()[index]
-            keys.append(nuke.AnimationKey(frame, node.metadata(m_key, frame)[index]))
+            keys.append(?.AnimationKey(frame, node.metadata(m_key, frame)[index]))
             anim.addKey(keys)
 
 
@@ -97,7 +97,7 @@ ___ create_text_knob(node, noop, m_key, key):
         key (str): Last section of metadata key.
 
     """
-    text _ nuke.S_K..(key, key, str(node.metadata(m_key)))
+    text _ ?.S_K..(key, key, st.(node.metadata(m_key)))
     noop.aK..(text)
 
 
@@ -109,8 +109,8 @@ ___ get_node():
 
     """
     ___
-        r_ nuke.selectedNode()
-    except ValueError:
+        r_ ?.selectedNode()
+    ______ ValueError:
         r_ N..
 
 
@@ -127,10 +127,10 @@ ___ get_metadata(node):
     """
     ___
         r_ {key.rpartition('/')[-1]: key ___ key __ node.metadata().keys()}
-    except AttributeError:
+    ______ AttributeError:
         r_ N..
 
 
 ___ m..():
-    nuke.m..('Something went wrong.\nPlease double check node selection and'
+    ?.m..('Something went wrong.\nPlease double check node selection and'
                  ' metadata')

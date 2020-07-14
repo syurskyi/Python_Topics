@@ -4,9 +4,9 @@
 # deletes a list of clips or files from within Nuke
 # version 1.1.2 added multiple clip delete
 
-______ ___, __ ,nuke, re
+______ ___, __ ,?, re
 ______ __
-______ nuke
+______ ?
 ____ fileName ______ _
 
 
@@ -18,8 +18,8 @@ ___ deleteFiles(files):
         do_it_nuke.a..('really delete "'+filestoDelete+'" ? (no undo available)')
         __ do_it:
             delete(files,F..)
-    else:
-        nuke.m..('This is not a regular file - nothing deleted')
+    ____
+        ?.m..('This is not a regular file - nothing deleted')
         r_ 1
 
 # deletes a list of clips supplied from Nuke
@@ -33,7 +33,7 @@ ___ deleteClips(files):
                 deleteFiles_delete(filesList,T..)
 
         __ deleteFiles:
-            nuke.m..('some files failed to delete \ntry selecting individual files')
+            ?.m..('some files failed to delete \ntry selecting individual files')
 
 
 #deleter - function called from Nuke
@@ -49,15 +49,15 @@ ___ deleter():
 
     files_nuke.getClipname('select files to delete',multiple_T..)
 
-    while files:
+    w__ files:
         filestoDelete___.pa__.b_n_(files[0])  #sets name for message later
-        __ '%' __ str(files) or '#' __ str(files):
+        __ '%' __ st.(files) or '#' __ st.(files):
             catchFail_deleteClips(files)
-        else:
+        ____
             catchFail_deleteFiles(files)
 
         __ no. catchFail:
             files_nuke.getClipname('select files to delete',multiple_T..)
-        else:
+        ____
             files_N..
     

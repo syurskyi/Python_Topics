@@ -83,7 +83,7 @@ ___ load_settings(*args):
                     __.m_d_(pool.text)
                     msg _ 'created missing pools dir at {}'.f..(pool.text)
                     write_log(msg)
-                except Exception __ error:
+                ______ E.. __ error:
                     msg _ 'Unable to create pools dir at {}; {}'.f..(pool.text, error)
                     write_log(msg)
 
@@ -172,14 +172,14 @@ ___ load_advanced_settings(*args):
         ___
             w__ o..(advanced_settings, 'w') __ advset:
                 advset.w..(advanced_settings_default)
-        except Exception __ e:
+        ______ E.. __ e:
             print e
             write_log('Error writing advanced settings file: {}'.f..(e))
 
     ___
         w__ o..(advanced_settings, 'r') __ advset:
             content _ advset.read()
-    except Exception __ e:
+    ______ E.. __ e:
         r_ 'Unable to read advanced settings file. {}'.f..(e)
 
     r_ content
@@ -194,7 +194,7 @@ ___ parse_advanced_settings(*args):
         w__ o..(advanced_settings_file, 'r') __ advset:
             advanced_settings_lines _ [ line ___ line __ advset.readlines() __ line[:le.(vars_line)] __ vars_line ]
     ______
-        pass
+        p..
 
     ___ line __ advanced_settings_lines:
         key _ line.split('=')[0]
@@ -242,7 +242,7 @@ ___ open_website(url, *args):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
 
@@ -279,7 +279,7 @@ ___ create_uid(*args):
 ___ find_looks_group(*args):
     ___
         r_ [ node ___ node __ ?.allNodes('Group') __ node.knob('looks_group') ][0]
-    except IndexError:
+    ______ IndexError:
         show_message_box(N.., "Cannot find 'looks' group in nodegraph.")
 
     r_
@@ -424,8 +424,8 @@ ___ set_hotkeys(*args):
             command_item _ ?.menu('Nuke').fI..('cragl/smartLook/{}'.f..(command))
             command_item.setShortcut(hotkeys[hotkey])
 
-    except KeyError:
-        pass
+    ______ KeyError:
+        p..
 
 
 ___ get_explorer_name(*args):
@@ -485,10 +485,10 @@ ___ get_image_size(src, *args):
                 fhandle.seek(0)
                 size _ 2
                 ftype _ 0
-                while no. 192 <_ ftype <_ 207:
+                w__ no. 192 <_ ftype <_ 207:
                     fhandle.seek(size, 1)
                     byte _ fhandle.read(1)
-                    while ord(byte) __ 255:
+                    w__ ord(byte) __ 255:
                         byte _ fhandle.read(1)
 
                     ftype _ ord(byte)

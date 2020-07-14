@@ -17,13 +17,13 @@ ___ rename(files, pathToFile, search, r.., verbose):
             r _ f.r..(search, r..)                  # sets up the replace list for the files only
             pr _ pathToFile+'/'+r                              # add path or replace file
             __ (verbose):
-                print ( "Renaming "+str(pf)+" to "+str(pr))          # return a debug output - command line
+                print ( "Renaming "+st.(pf)+" to "+st.(pr))          # return a debug output - command line
             __.rename(pf, pr)
             count +_ 1
-    except OSError:
+    ______ OSError:
         r_ 0
     __ (verbose):
-        print str(count)+' files renamed'
+        print st.(count)+' files renamed'
 
 
 ___ delete(files, verbose):

@@ -58,7 +58,7 @@ ___ select_node(node_class):
             m.. _ "Please, select a {} Node".f..(class_)
             ?.m..(m..)
 
-    except ValueError:
+    ______ ValueError:
         m.. _ "Please, select a {} Node".f..(class_)
         ?.m..(m..)
 
@@ -96,7 +96,7 @@ ___ get_righthandside_position(node_list):
     y_pos_list _ # list
 
     ___ node __ node_list:
-        pos _ get_node_position(?.toNode(node))
+        pos _ get_node_position(?.tN..(node))
         x_pos_list.ap..(pos["x_pos"])
         y_pos_list.ap..(pos["y_pos"])
     
@@ -210,7 +210,7 @@ ___ build_depth_setup(node_list):
     counter _ 0
 
     ___ node __ node_list:
-        deep_merge.setInput(counter,?.toNode(node))
+        deep_merge.setInput(counter,?.tN..(node))
         counter +_ 1
     r_
 
@@ -221,7 +221,7 @@ ___ get_asset_name(sourcenode):
     :param sourcenode:
     :return:
     """
-    source_node _ ?.toNode(sourcenode)
+    source_node _ ?.tN..(sourcenode)
     target_class _ "DeepRead"
     dep_nodes _ ?.dependencies(source_node)
     
@@ -234,7 +234,7 @@ ___ get_asset_name(sourcenode):
                     r_ default_asset_name
                 ____
                     r_ asset_name
-            except ValueError:
+            ______ ValueError:
                 print "no asset name found"
                 asset_name _ "element_01"
                 r_ asset_name
@@ -286,13 +286,13 @@ ___ create_deep_holdout_setup(node_class):
 
     pos6 _ get_node_position(shuffle)
 
-    string _ str.lower(asset_name + "_" + "holdout") + "_" + str(DOT_COUNT)
+    string _ st..lower(asset_name + "_" + "holdout") + "_" + st.(DOT_COUNT)
 
     
-    __ ?.toNode(string):
+    __ ?.tN..(string):
 
         DOT_COUNT +_ 1
-        string _ str.lower(asset_name + "_" + "holdout") + "_" + str(DOT_COUNT)
+        string _ st..lower(asset_name + "_" + "holdout") + "_" + st.(DOT_COUNT)
     
     switch _ create_node_with_position("Switch",shuffle,pos6["x_pos"],pos6["y_pos"]+ 200)
 
@@ -320,8 +320,8 @@ ___ check_upstream_match(sourcenode,targetnode):
     :param targetnode: a target nuke node.
     :return:
     """
-    source_node _ ?.toNode(sourcenode)
-    target_node _ ?.toNode(targetnode)
+    source_node _ ?.tN..(sourcenode)
+    target_node _ ?.tN..(targetnode)
     dep_nodes _ ?.dependencies(source_node)
     
     __ target_node __ dep_nodes:
@@ -355,7 +355,7 @@ ___ iterate_deep_holdout_setup():
     #build_depth_setup(names)
 
     ___ e __ names:
-        node _ ?.toNode(e)
+        node _ ?.tN..(e)
         class_ _ node.Class()
         node['selected'].sV..(T..)
         setup _ create_deep_holdout_setup(class_)
@@ -364,7 +364,7 @@ ___ iterate_deep_holdout_setup():
     counter _ 0
 
     ___ ho __ deep_holdouts:
-        hold_out _ ?.toNode(ho)
+        hold_out _ ?.tN..(ho)
         depp _ ?.dependencies(hold_out)
         deep_merge _ depp[1].name()
 
@@ -372,7 +372,7 @@ ___ iterate_deep_holdout_setup():
            __ check_upstream_match(ho,name):
                 print "ALELUYA"
            ____ no. check_upstream_match(ho,name):
-                ?.toNode(deep_merge).setInput(counter,?.toNode(name))
+                ?.tN..(deep_merge).setInput(counter,?.tN..(name))
                 counter +_ 1
             
   
@@ -466,7 +466,7 @@ ___ uberpass_function():
     w..['channels'].sV..('all')
 
     ___ name __ rgb_deep_recolor:
-       ?.toNode(name)['selected'].sV..(T..)
+       ?.tN..(name)['selected'].sV..(T..)
 
     deep_deep_merge _ create_node_with_position_simple("DeepMerge",get_middle_position()[0] + get_middle_position()[1] - 800,get_middle_position()[2] + 200)
 
@@ -494,7 +494,7 @@ ___ depth_for_defocus():
     rgb_deep_recolor _ create_rgba_deep_recolor("all")
     
     ___ name __ rgb_deep_recolor:
-        ?.toNode(name)['selected'].sV..(T..)
+        ?.tN..(name)['selected'].sV..(T..)
 
     deep_merge _ create_node_with_position_simple("DeepMerge",get_middle_position()[0] + get_middle_position()[1],get_middle_position()[2] + 400)
 
@@ -597,7 +597,7 @@ ___ d_dot_connect(nodename,connect_node,x_0,y_0):
     :param y: y coordinate.
     :return: created node object.
     """
-    parent_node _ ?.toNode(connect_node)
+    parent_node _ ?.tN..(connect_node)
     childKnob _ ?.T_K..('child', 'child')
 
     dot _ create_node_with_position(nodename,parent_node,x,y)
@@ -631,7 +631,7 @@ ___ find_holdout_source_elements(houldout_names):
         
     ___ name __ houldout_names:
         _ _ "_".j..(name.split('_')[:-2])
-        __ ?.toNode(_):
+        __ ?.tN..(_):
             houldout_processed_list.ap..(_)
         ____
             print "no corresponding element found for {}".f..(name)
@@ -657,8 +657,8 @@ ___ create_and_connect_child_dots(holdouts,color):
 
         __ counter __ 0 :
 
-            pos_f_x _ get_node_position(?.toNode(f))["x_pos"]
-            pos_f_y _ get_node_position(?.toNode(f))["y_pos"]
+            pos_f_x _ get_node_position(?.tN..(f))["x_pos"]
+            pos_f_y _ get_node_position(?.tN..(f))["y_pos"]
       
             child_holdout_dot _ d_dot_connect("Dot",f,pos_f_x,pos_f_y + 1000)
             child_color_dot _ d_dot_connect("Dot",b,pos_f_x - 200,pos_f_y + 1200)
@@ -748,14 +748,14 @@ c_ modalPanel(?.PP..):
         __ giveFrameRangeValue() __ "global":
             first_frame _ ?.root().firstFrame()
             last_frame _ ?.root().lastFrame()
-            txt _ str(in.(first_frame)) + '-' + str(in.(last_frame))
+            txt _ st.(in.(first_frame)) + '-' + st.(in.(last_frame))
             frame_display.sV..(txt)
         ____ giveFrameRangeValue() __ "input":
             print "here should come the read frame range"
             node _ ?.sN__
             first_frame _ node.firstFrame()
             last_frame _ node.lastFrame()
-            txt _ str(in.(first_frame)) + '-' + str(in.(last_frame))
+            txt _ st.(in.(first_frame)) + '-' + st.(in.(last_frame))
             frame_display.sV..(txt)
         ____ giveFrameRangeValue() __ "custom":
             frame_display.sV..("")

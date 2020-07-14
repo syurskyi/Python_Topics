@@ -64,12 +64,12 @@ ignore_list _ ["BackdropNode"]
 
 # no need to change anything from here. Edit only if you exactly know what you're doing
 
-______ nuke
+______ ?
 
 ___
     ____ ?.?G.. ______ _
     ____ ?.?C.. ______ _
-except ImportError:
+______ ImportError:
     ____ ?.?G.. ______ _
     ____ ?.?C.. ______ _
     ____ ?.?W.. ______ _
@@ -86,7 +86,7 @@ ___ collect_nodes(mode):
     dependent_ _ mode[0]
     dependencies_ _ mode[1]
 
-    ___ node __ nuke.allNodes():
+    ___ node __ ?.allNodes():
 
         __ node.Class() __ ignore_list:
             c___
@@ -103,7 +103,7 @@ ___ collect_nodes(mode):
             __ le.(node.dependencies()) __ 0:
                 cleanup_list.append(node)
 
-        else:
+        ____
             __ node.minInputs() > 0 an. node.inputs() __ 0:
                 cleanup_list.append(node)
 
@@ -182,8 +182,8 @@ c_ CleanModeDialog(?W..):
         ___
             group_cleanup.setParent(N..)
             push_close.setParent(N..)
-        except Exception, e:
-            pass
+        ______ E.., e:
+            p..
 
         table_cleanup _ QTableWidget()
 
@@ -262,9 +262,9 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        node _ nuke.toNode(sender().property("node"))
+        node _ ?.tN..(sender().property("node"))
         node.selectOnly()
-        nuke.zoom(1, (node.xpos(), node.ypos()))
+        ?.zoom(1, (node.xpos(), node.ypos()))
 
     ___ remove_node(self, row, node):
         """
@@ -274,7 +274,7 @@ c_ CleanModeDialog(?W..):
         :return: None
         """
 
-        nuke.delete(nuke.toNode(node))
+        ?.delete(?.tN..(node))
         process_cleanup()
 
     ___ remove_nodes
@@ -285,7 +285,7 @@ c_ CleanModeDialog(?W..):
 
         ___ c __ checkboxes:
             __ c.isChecked():
-                nuke.delete(nuke.toNode(c.property("node")))
+                ?.delete(?.tN..(c.property("node")))
 
         cleanup_list _ collect_nodes([check_dependent.isChecked(), check_dependencies.isChecked()])
         process_cleanup()
@@ -298,8 +298,8 @@ c_ CleanModeDialog(?W..):
 
         ___ c __ checkboxes:
             ___
-                disable _ nuke.toNode(c.property("node"))["disable"].setValue(c.isChecked())
-            except Exception, e:
+                disable _ ?.tN..(c.property("node"))["disable"].setValue(c.isChecked())
+            ______ E.., e:
                 c___
 
     ___ toggle_checkboxes
@@ -311,7 +311,7 @@ c_ CleanModeDialog(?W..):
         __ checkboxes[0].isChecked():
             ___ c __ checkboxes:
                 c.setChecked(F..)
-        else:
+        ____
             ___ c __ checkboxes:
                 c.setChecked(T..)
 

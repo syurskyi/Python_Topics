@@ -27,5 +27,5 @@ c_ global_clipboard():
     ___ pasteName
         name _ ?.getInput("First Initial + Last Name:")
         __ name:
-            name _ str(name).strip().lower()
+            name _ st.(name).strip().lower()
             paste(name)

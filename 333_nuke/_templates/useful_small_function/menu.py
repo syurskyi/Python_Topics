@@ -12,7 +12,7 @@ print 'in my menu.py'
 #
 ___ autoColorReadNodeType(overrideNode_N..):
        __ overrideNode __ N..:
-               this _ ?.thisNode()
+               this _ ?.tN..()
        ____
                this _ overrideNode
        # get the Read node file name
@@ -248,8 +248,8 @@ ___
   ____
     moduleName _ moduleName + '.'
   panels.rWAP..( moduleName + 'WebBrowserWidget', 'Web Browser','uk.co.thefoundry.WebBrowserWidget')
-except ImportError:
-  pass
+______ ImportError:
+  p..
 
 # =======================================================================
 # TOOLBAR
@@ -288,7 +288,7 @@ ___
   DeadlineNukeClient
   m_keybindings.aC..('sjmDeadliner','DeadlineNukeClient.main()','Ctrl+Meta+D')
 ______
-  pass
+  p..
 
 # =======================================================================
 # NODE PARAMETER DEFAULTS

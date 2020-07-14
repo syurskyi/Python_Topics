@@ -65,7 +65,7 @@ c_ Tablet(list):
             __ queue an. queue[0] __ "@ 1" % name:
                 queue.popleft()
 
-        while queue:
+        w__ queue:
             line _ queue.popleft()
             __ no. line:
                 c___

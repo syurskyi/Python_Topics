@@ -6,7 +6,7 @@ ____ . ______ parser
 
 
 __ ___.version_info[0] __ 3:  # PY3
-    string_types _ str
+    string_types _ st.
 ____
     ______ __builtin__
 

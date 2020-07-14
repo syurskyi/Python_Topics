@@ -1,74 +1,74 @@
-import nuke
-import nukescripts
-import operator, math, os
-import string
-import random
+______ ?
+______ nukescripts
+______ operator, math, os
+______ string
+______ random
 
 # Get the grid size from the preferences. Used as the default unit of movement.
-grid = (int(nuke.toNode('preferences').knob('GridWidth').value()), int(nuke.toNode('preferences').knob('GridHeight').value()))
+grid = (int(?.tN..('preferences').knob('GridWidth').value()), int(?.tN..('preferences').knob('GridHeight').value()))
 
 
-def unselect(nodes=None):
+___ unselect(nodes=None):
     # Unselect nodes
-    if not nodes:
-        nodes = nuke.allNodes(recurseGroups=True)
-    if not isinstance(nodes, list):
-        return
-    _ = [n.setSelected(False) for n in nodes]
+    __ not nodes:
+        nodes = ?.allNodes(recurseGroups=True)
+    __ not isinstance(nodes, list):
+        r_
+    _ = [n.setSelected(False) ___ n in nodes]
 
 
-def select(nodes):
+___ select(nodes):
     # Select specified nodes
-    if not isinstance(nodes, list):
-        return
-    _ = [n.setSelected(True) for n in nodes]
+    __ not isinstance(nodes, list):
+        r_
+    _ = [n.setSelected(True) ___ n in nodes]
 
 
-def get_parent(node):
+___ get_parent(node):
     # return node's parent node, return nuke.root() if on the top level
-    return nuke.toNode('.'.j..(node.fullName().split('.')[:-1])) or nuke.root()
+    r_ ?.tN..('.'.j..(node.fullName().split('.')[:-1])) or ?.root()
 
 
-def get_topnode(node):
+___ get_topnode(node):
 
     # return the topnode of node
-    return nuke.toNode(nuke.tcl('return [value [topnode {0}].name]'.format(node.fullName())))
+    r_ ?.tN..(?.tcl('return [value [topnode {0}].name]'.format(node.fullName())))
 
 
-def get_pos(node):
+___ get_pos(node):
     # return 2d list of centered node positions
-    if node.Class() == 'BackdropNode':
-        return [node.xpos(), node.ypos()]
-    else:
-        return [node.xpos() + node.screenWidth()/2, node.ypos() + node.screenHeight()/2]
+    __ node.Class() __ 'BackdropNode':
+        r_ [node.xpos(), node.ypos()]
+    ____
+        r_ [node.xpos() + node.screenWidth()/2, node.ypos() + node.screenHeight()/2]
 
 
-def set_pos(node, posx, posy):
+___ set_pos(node, posx, posy):
     # Set node's position given a centered position based on screen width
     # param: pos - 2dim list of int node positions
-    if node.Class() == 'BackdropNode':
-        return node.setXYpos(int(posx), int(posy))
-    else:
-        return node.setXYpos(int(posx - node.screenWidth()/2), int(posy - node.screenHeight()/2))
+    __ node.Class() __ 'BackdropNode':
+        r_ node.setXYpos(int(posx), int(posy))
+    ____
+        r_ node.setXYpos(int(posx - node.screenWidth()/2), int(posy - node.screenHeight()/2))
 
 
-def hide_panel():
+___ hide_panel():
     # Always hide control panels on node creation
-    nuke.thisNode().showControlPanel()
-    nuke.thisNode().hideControlPanel()
-nuke.addOnUserCreate(hide_panel)
+    ?.tN..().showControlPanel()
+    ?.tN..().hideControlPanel()
+?.addOnUserCreate(hide_panel)
 
 
-def open_panels(nodes=None):
+___ open_panels(nodes=None):
     # Open properties panels
-    if not nodes:
-        nodes = nuke.selectedNodes()
+    __ not nodes:
+        nodes = ?.sN..()
     ignored = ['Viewer']
-    if len(nodes) > 10:
-        if not nuke.a..('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.format(len(nodes))):
-            return
-    for node in nodes:
-        if node.Class() not in ignored:
+    __ le.(nodes) > 10:
+        __ not ?.a..('Continuing will open {0} properties panels. \nAre you sure you want to continue?'.format(le.(nodes))):
+            r_
+    ___ node in nodes:
+        __ node.Class() not in ignored:
             # if node.shown():
             #     if nclass in buggy:
             #         # There is a bug with node.shown() for some node classes, where .shown()
@@ -83,132 +83,132 @@ def open_panels(nodes=None):
             node.showControlPanel()
 
 
-def close_panels(nodes=None):
+___ close_panels(nodes=None):
     # Close all properties panels
-    if not nodes:
-        nodes = nuke.allNodes(recurseGroups=True)
-    for node in nodes:
+    __ not nodes:
+        nodes = ?.allNodes(recurseGroups=True)
+    ___ node in nodes:
         node.hideControlPanel()
 
 
-def select_similar_position(axis=1):
-    nodes = nuke.selectedNodes()
-    if not nodes:
-        return
+___ select_similar_position(axis=1):
+    nodes = ?.sN..()
+    __ not nodes:
+        r_
     node = nodes[0]
     prev_selected = nodes[1:]
     threshold = 1
     unselect()
     select(prev_selected)
-    if axis:
-        same_pos_nodes = {n:n.xpos() for n in nuke.allNodes() if abs(n.ypos()- node.ypos()) < threshold}
-    else:
-        same_pos_nodes = {n:n.ypos() for n in nuke.allNodes() if abs(n.xpos()- node.xpos()) < threshold}
+    __ axis:
+        same_pos_nodes = {n:n.xpos() ___ n in ?.allNodes() __ abs(n.ypos()- node.ypos()) < threshold}
+    ____
+        same_pos_nodes = {n:n.ypos() ___ n in ?.allNodes() __ abs(n.xpos()- node.xpos()) < threshold}
     sorted_nodes = sorted(same_pos_nodes.i..(), key=operator.itemgetter(1))
-    for n, pos in sorted_nodes:
+    ___ n, pos in sorted_nodes:
         n.setSelected(True)
 
 
-def snap_to_grid():
+___ snap_to_grid():
     # Snap selected nodes to grid
-    nodes = nuke.selectedNodes()
-    for node in nodes:
-        nuke.autoplaceSnap(node)
+    nodes = ?.sN..()
+    ___ node in nodes:
+        ?.autoplaceSnap(node)
 
 
-def auto_place():
+___ auto_place():
     # autoplace all selected
-    nodes = nuke.selectedNodes()
+    nodes = ?.sN..()
 
     # Sort by file knob value if the nodes have one
-    filenodes = {n: n['file'].getValue() for n in nodes if 'file' in n.knobs()}
-    if filenodes:
+    filenodes = {n: n['file'].getValue() ___ n in nodes __ 'file' in n.knobs()}
+    __ filenodes:
         sorted_filenodes = sorted(filenodes.i..(), key=operator.itemgetter(1))
-        filenodes_pos = {n: [n.xpos(), n.ypos()] for n in nodes if 'file' in n.knobs()}
+        filenodes_pos = {n: [n.xpos(), n.ypos()] ___ n in nodes __ 'file' in n.knobs()}
         ypos_sort = sorted(filenodes_pos.i..(), key=l___ (k, v): v[1])
         xpos_sort = sorted(filenodes_pos.i..(), key=l___ (k, v): v[0])
         start_pos = [xpos_sort[0][1][0], ypos_sort[0][1][1]]
-        for node, filepath in sorted_filenodes:
+        ___ node, filepath in sorted_filenodes:
             node.setXYpos(start_pos[0], start_pos[1])
             start_pos = (start_pos[0] + grid[0]*2, start_pos[1])
 
     # Normal autoplace for nodes without file knob
-    normal_nodes = [n for n in nodes if 'file' not in n.knobs()]
+    normal_nodes = [n ___ n in nodes __ 'file' not in n.knobs()]
     unselect()
-    _ = [n.setSelected(True) for n in normal_nodes]
-    nuke.autoplace_all()
-    _ = [n.setSelected(True) for n in nodes]
+    _ = [n.setSelected(True) ___ n in normal_nodes]
+    ?.autoplace_all()
+    _ = [n.setSelected(True) ___ n in nodes]
 
 
-def move(xvel, yvel):
+___ move(xvel, yvel):
     # Move selected nodes by specified number of grid lengths in x and y
     yvel *= 3
-    nodes = nuke.selectedNodes()
-    for node in nodes:
+    nodes = ?.sN..()
+    ___ node in nodes:
         node.setXYpos(int(node.xpos() + grid[0] * xvel), int(node.ypos() + grid[1] * yvel))
 
 
-def get_closest_node(node):
+___ get_closest_node(node):
     # Return the closest node to node
     distances = {}
-    for n in nuke.allNodes():
-        if n.name() == node.name():
+    ___ n in ?.allNodes():
+        __ n.name() __ node.name():
             c___
         distance = math.sqrt( 
             math.pow( (node.xpos() - n.xpos()), 2 ) + math.pow( (node.ypos() - n.ypos()), 2 )
         )
         distances[n.name()] = distance
-    return nuke.toNode(min(distances, key=distances.get))
+    r_ ?.tN..(min(distances, key=distances.get))
 
 
-def connect_to_closest(direction=0):
+___ connect_to_closest(direction=0):
     # Connect next available input of all selected nodes to the closest node
-    for node in nuke.selectedNodes():
+    ___ node in ?.sN..():
         closest = get_closest_node(node)
-        if direction:
+        __ direction:
             closest.setInput(0, node)
-        else:
+        ____
             node.connectInput(0, closest)
 
 
-def paste_to_selected():
-    nodes = nuke.selectedNodes()
-    all_nodes = nuke.allNodes()
+___ paste_to_selected():
+    nodes = ?.sN..()
+    all_nodes = ?.allNodes()
     unselect()
-    for node in nodes:
+    ___ node in nodes:
         node.setSelected(True)
-        nuke.nodePaste('%clipboard')
+        ?.nodePaste('%clipboard')
         unselect()
-    if not nodes:
-        nuke.nodePaste('%clipboard')
+    __ not nodes:
+        ?.nodePaste('%clipboard')
     # Select pasted nodes
     select(all_nodes)
-    nuke.invertSelection()
+    ?.invertSelection()
     
 
-def align(direction):
+___ align(direction):
     # Align nodes to the farthest outlier in the specified direction.
     # param: direction - one of: left | right | up | down
 
-    nodes = nuke.selectedNodes()
+    nodes = ?.sN..()
 
-    if len(nodes) < 2:
-        return
+    __ le.(nodes) < 2:
+        r_
 
     horizontally = ['left', 'right']
     vertically = ['up', 'down']
 
-    if direction in horizontally:
+    __ direction in horizontally:
         align = 0
-    elif direction in vertically:
+    ____ direction in vertically:
         align = 1
-    else:
+    ____
         print 'Error: invalid direction specified: {0}'.format(direction)
-        return
+        r_
 
-    positions = {n: get_pos(n) for n in nodes}
+    positions = {n: get_pos(n) ___ n in nodes}
     sorted_positions = sorted(positions.i..(), key=l___ (k, v): v[align])
-    if direction in ['down', 'right']:
+    __ direction in ['down', 'right']:
         sorted_positions.reverse()
     target = sorted_positions[0]
     target_pos = target[1]
@@ -219,15 +219,15 @@ def align(direction):
 
     sorted_other_axis = sorted(positions.i..(), key=l___ (k, v): v[other_axis])
 
-    nuke.Undo().begin()
-    for i in range(len(sorted_other_axis)):
+    ?.Undo().begin()
+    ___ i in ra__(le.(sorted_other_axis)):
         node = sorted_other_axis[i][0]
         pos = sorted_other_axis[i][1]
-        if i == 0: 
+        __ i __ 0: 
             distance = 0
             overlapping = False
             prev_pos = pos
-        else:
+        ____
             prev_pos = sorted_other_axis[i-1][1]
             # Compare current node position to previous node position.
             # If difference is < overlap threshold, nodes are overlapping.
@@ -235,7 +235,7 @@ def align(direction):
             overlap_threshold = [int(node.screenWidth() * 1.1), int(node.screenHeight() * 1.1)]
             overlapping = distance < overlap_threshold[other_axis]
 
-        if overlapping:
+        __ overlapping:
             offset += 1
 
         new_pos = pos
@@ -244,189 +244,189 @@ def align(direction):
         # Set value into sorted_other_axis also so we access the right value on the next loop
         sorted_other_axis[i][1][other_axis] = new_pos[other_axis]
         
-        if align:
+        __ align:
             set_pos(node, new_pos[other_axis], target_pos[align])
-        else:
+        ____
             set_pos(node, target_pos[align], new_pos[other_axis])
         i += 1
-    nuke.Undo().end()
+    ?.Undo().end()
 
 
-def scale(axis, scale, pivot='max'):
+___ scale(axis, scale, pivot='max'):
     # Scale selected nodes by factor of xscale, yscale
     # param: axis - one of 0 or 1 - x or y scale
     # param: float scale - factor to scale. 1 will do nothing. 2 will scale up 1 grid unit.
     # param: str pivot - where to scale from. One of min | max | center
     pivots = ['min', 'max', 'center']
-    if pivot not in pivots:
-        return
-    nodes = nuke.selectedNodes()
-    if len(nodes) < 2:
-        return
+    __ pivot not in pivots:
+        r_
+    nodes = ?.sN..()
+    __ le.(nodes) < 2:
+        r_
 
-    positions = {n: get_pos(n) for n in nodes}
+    positions = {n: get_pos(n) ___ n in nodes}
     sort = sorted(positions.i..(), key=l___ (k, v): v[axis])
 
     minpos = sort[0][1][axis]
     maxpos = sort[-1][1][axis]
 
-    if pivot == 'max':
+    __ pivot __ 'max':
         pivot_pos = maxpos
-    elif pivot == 'min':
+    ____ pivot __ 'min':
         pivot_pos = minpos
-    elif pivot == 'center':
+    ____ pivot __ 'center':
         pivot_pos = (minpos - maxpos)/2 + minpos
 
-    nuke.Undo().begin()
-    for node, pos in positions.iteritems():
-        if axis:
+    ?.Undo().begin()
+    ___ node, pos in positions.iteritems():
+        __ axis:
             new_pos = (pos[1] - pivot_pos) * scale + pivot_pos
             set_pos(node, pos[0], new_pos)
-            if node.Class() == 'BackdropNode':
+            __ node.Class() __ 'BackdropNode':
                 bdpos = ((pos[1] + node['bdheight'].getValue()) - pivot_pos) * scale + pivot_pos - node.ypos()
                 print pos[1]
                 print new_pos
                 print bdpos
-                if scale > 0:
+                __ scale > 0:
                     node['bdheight'].setValue(bdpos)
-                else:
+                ____
                     node.setXYpos(pos[0], int(new_pos-abs(bdpos)))
-        else:
+        ____
             new_pos = (pos[0] - pivot_pos) * scale + pivot_pos
             set_pos(node, new_pos, pos[1])
-            if node.Class() == 'BackdropNode':
+            __ node.Class() __ 'BackdropNode':
                 bdpos = ((pos[0] + node['bdwidth'].getValue()) - pivot_pos) * scale + pivot_pos - node.xpos()
-                if scale > 0:
+                __ scale > 0:
                     node['bdwidth'].setValue(bdpos)
-                else:
+                ____
                     node.setXYpos(int(new_pos-abs(bdpos)), int(node.ypos()))
-    nuke.Undo().end()
+    ?.Undo().end()
 
 
 
-def copy_inputs(src, dst):
+___ copy_inputs(src, dst):
     # copy input connections from src node to dst node
     # number of inputs must be the same between nodes
-    for j in range(dst.inputs()):
+    ___ j in ra__(dst.inputs()):
         dst.setInput(j, None)
-    for i in range(src.inputs()):
+    ___ i in ra__(src.inputs()):
         dst.setInput(i, src.input(i))
 
 
-def declone(node):
+___ declone(node):
     # Declone a single node
-    if not node.clones():
-        return
+    __ not node.clones():
+        r_
     parent = get_parent(node)
     parent.begin()
     node.setSelected(True)
-    args = node.writeKnobs( nuke.WRITE_ALL | nuke.WRITE_USER_KNOB_DEFS |
-                            nuke.WRITE_NON_DEFAULT_ONLY | nuke.TO_SCRIPT)
-    decloned_node = nuke.createNode(node.Class(), knobs=args, inpanel=False)
+    args = node.writeKnobs( ?.WRITE_ALL | ?.WRITE_USER_KNOB_DEFS |
+                            ?.WRITE_NON_DEFAULT_ONLY | ?.TO_SCRIPT)
+    decloned_node = ?.createNode(node.Class(), knobs=args, inpanel=False)
     copy_inputs(node, decloned_node)
-    nuke.delete(node)
+    ?.delete(node)
     parent.end()
-    return decloned_node
+    r_ decloned_node
 
 
-def declone_nodes(nodes):
+___ declone_nodes(nodes):
     # A better declone than the buggy default nukescripts.misc.declone()
     unselect()
     decloned_nodes = list()
-    for node in nodes:
+    ___ node in nodes:
         decloned_nodes.append(declone(node))
-    if decloned_nodes:
+    __ decloned_nodes:
         # Restore selection
-        _ = [n.setSelected(True) for n in decloned_nodes]
+        _ = [n.setSelected(True) ___ n in decloned_nodes]
 
 
-def export_selected_nodes():
-    pa__ = nuke.getFilename("Export Selected To:")
-    if not pa__:
-        return
-    nuke.nodeCopy(pa__)
-    root = nuke.root()
-    rootstring = root.writeKnobs(nuke.TO_SCRIPT | nuke.WRITE_USER_KNOB_DEFS)
+___ export_selected_nodes():
+    pa__ = ?.getFilename("Export Selected To:")
+    __ not pa__:
+        r_
+    ?.nodeCopy(pa__)
+    root = ?.root()
+    rootstring = root.writeKnobs(?.TO_SCRIPT | ?.WRITE_USER_KNOB_DEFS)
     rootstring = "%s\nfirst_frame %d\nlast_frame %d" % (rootstring, root['first_frame'].value(), root['last_frame'].value())
     rootstring = "%s\nproxy_format \"%s\"" % (rootstring, root['proxy_format'].toScript())
     rootstring = "Root {\n%s\n}" % rootstring
     noroot = open(pa__).read()
-    with open(pa__, "w+") as f:
+    with open(pa__, "w+") __ f:
         f.w..((rootstring + "\n" + noroot))
 
 
 
 #--------------------------------------------------------------
 # Nuke Node Dependency Utilities
-if nuke.NUKE_VERSION_MAJOR > 11:
-    connection_filter = nuke.INPUTS | nuke.HIDDEN_INPUTS | nuke.EXPRESSIONS | nuke.LINKINPUTS
-else:
-    connection_filter = nuke.INPUTS | nuke.HIDDEN_INPUTS | nuke.EXPRESSIONS
+__ ?.NUKE_VERSION_MAJOR > 11:
+    connection_filter = ?.INPUTS | ?.HIDDEN_INPUTS | ?.EXPRESSIONS | ?.LINKINPUTS
+____
+    connection_filter = ?.INPUTS | ?.HIDDEN_INPUTS | ?.EXPRESSIONS
 
-def find_root_nodes(node, results=# list, remove_roots_with_inputs=True):
+___ find_root_nodes(node, results=# list, remove_roots_with_inputs=True):
     # Find all root nodes of node. 
     # If remove_roots_with_inputs: remove root nodes with an input (like Roto etc)
-    for dependency in node.dependencies():
-        if not dependency.dependencies():
+    ___ dependency in node.dependencies():
+        __ not dependency.dependencies():
             results.append(dependency)
-        else:
+        ____
             find_root_nodes(dependency, results)
-    if remove_roots_with_inputs:
-        results = [res for res in results if res.maxInputs() == 0]
-    return results
+    __ remove_roots_with_inputs:
+        results = [res ___ res in results __ res.maxInputs() __ 0]
+    r_ results
 
 
-def upstream(node, max_depth=-1, deps=set(# list)):
-    if max_depth != 0:
-       new_deps = set([n for n in nuke.dependencies(node, what=connection_filter) if n not in deps])
+___ upstream(node, max_depth=-1, deps=set(# list)):
+    __ max_depth != 0:
+       new_deps = set([n ___ n in ?.dependencies(node, what=connection_filter) __ n not in deps])
        deps |= new_deps
-       for dep in new_deps:
+       ___ dep in new_deps:
           upstream(dep, max_depth-1, deps)
-    return deps
+    r_ deps
 
 
-def connected(nodes, upstream=True, downstream=True):
+___ connected(nodes, upstream=True, downstream=True):
     # return all upstream and/or downstream nodes of node
     # based on nuke.overrides.selectConnectedNodes()
     all_deps = set()
     deps_list = nodes
     evaluate_all = True
-    while deps_list:
+    w__ deps_list:
         deps = # list
-        if upstream:
-            deps += nuke.dependencies(deps_list, connection_filter)
-        if downstream:
-            deps += nuke.dependentNodes(connection_filter, deps_list, evaluate_all)
+        __ upstream:
+            deps += ?.dependencies(deps_list, connection_filter)
+        __ downstream:
+            deps += ?.dependentNodes(connection_filter, deps_list, evaluate_all)
         evaluate_all = False
-        deps_list = [d for d in deps if d not in all_deps and not all_deps.add(d)]
-    return all_deps
+        deps_list = [d ___ d in deps __ d not in all_deps and not all_deps.add(d)]
+    r_ all_deps
 
-def select_upstream(nodes):
+___ select_upstream(nodes):
     # Select all upstream dependencies of node
-    deps = [n for n in connected(nodes, upstream=True, downstream=False)]
+    deps = [n ___ n in connected(nodes, upstream=True, downstream=False)]
     select(deps)
-    return deps
+    r_ deps
 
-def select_downstream(nodes):
+___ select_downstream(nodes):
     # Select all downstream dependencies of node
-    deps = [n for n in connected(nodes, upstream=False, downstream=True)]
+    deps = [n ___ n in connected(nodes, upstream=False, downstream=True)]
     select(deps)
-    return deps
+    r_ deps
 
-def select_connected(nodes):
+___ select_connected(nodes):
     # Select all nodes connected to node
-    deps = [n for n in connected(nodes, upstream=True, downstream=True)]
+    deps = [n ___ n in connected(nodes, upstream=True, downstream=True)]
     select(deps)
-    return deps
+    r_ deps
 
-def select_unused(nodes):
+___ select_unused(nodes):
     # select all nodes that are not upstream or downstream of :param: nodes
     # Backdrops and dot nodes with a label are omitted.
-    connected_nodes = [n for n in connected(nodes, upstream=True, downstream=True)]
-    unused_nodes = [n for n in nuke.allNodes() if n not in connected_nodes and n.Class() != 'BackdropNode' and not (n.Class() == 'Dot' and n['label'].getValue())]
+    connected_nodes = [n ___ n in connected(nodes, upstream=True, downstream=True)]
+    unused_nodes = [n ___ n in ?.allNodes() __ n not in connected_nodes and n.Class() != 'BackdropNode' and not (n.Class() __ 'Dot' and n['label'].getValue())]
     unselect()
     select(unused_nodes)
-    return unused_nodes
+    r_ unused_nodes
 
 
 
@@ -436,43 +436,43 @@ def select_unused(nodes):
 # DAG Positions
 # Inspired by Simon Bjork's sb_dagPosition.py https://www.bjorkvisuals.com/tools/the-foundrys-nuke/python
 # Using built-in nukescripts.bookmarks module now instead.
-def save_dag_pos(preset):
+___ save_dag_pos(preset):
     # Save current dag zoom and position as a preset on the active viewer
-    zoom = nuke.zoom()
-    pos = nuke.center()
-    viewer = nuke.activeViewer()
-    if not viewer:
-        nuke.message('Error: please create a viewer to store the dag positions on...')
-        return
-    else:
+    zoom = ?.zoom()
+    pos = ?.center()
+    viewer = ?.activeViewer()
+    __ not viewer:
+        ?.message('Error: please create a viewer to store the dag positions on...')
+        r_
+    ____
         viewer = viewer.node()
-    if 'dagpos' not in viewer.knobs():
-        viewer.addKnob(nuke.String_Knob('dagpos', 'dagpos', '0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0'))
+    __ 'dagpos' not in viewer.knobs():
+        viewer.addKnob(?.String_Knob('dagpos', 'dagpos', '0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0:0,0,0'))
         dagpos_knob = viewer['dagpos']
-        dagpos_knob.setFlag(nuke.STARTLINE)
+        dagpos_knob.setFlag(?.STARTLINE)
         dagpos_knob.setEnabled(False)
-    else:
+    ____
         dagpos_knob = viewer['dagpos']
     dagpos_vals = dagpos_knob.getValue().split(':')
     dagpos_vals.pop(preset-1)
-    new_dagpos = ','.j..([str(zoom), str(pos[0]), str(pos[1])])
+    new_dagpos = ','.j..([st.(zoom), st.(pos[0]), st.(pos[1])])
     dagpos_vals.insert(preset-1, new_dagpos)
     dagpos_knob.setValue(':'.j..(dagpos_vals))
 
-def load_dag_pos(preset):
+___ load_dag_pos(preset):
     # Load dag zoom and position from specified preset number
-    viewer = nuke.activeViewer()
-    if not viewer:
-        nuke.message('Error: please create a viewer to store the dag positions on...')
-        return
+    viewer = ?.activeViewer()
+    __ not viewer:
+        ?.message('Error: please create a viewer to store the dag positions on...')
+        r_
     viewer = viewer.node()
-    if 'dagpos' not in viewer.knobs():
-        nuke.message('No preset positions created yet...')
-        return
+    __ 'dagpos' not in viewer.knobs():
+        ?.message('No preset positions created yet...')
+        r_
     dagpos_knob = viewer['dagpos']
     dagpos_vals = dagpos_knob.getValue().split(':')[preset-1]
     zoom, xpos, ypos = dagpos_vals.split(',')
-    nuke.zoom(float(zoom), [float(xpos), float(ypos)])
+    ?.zoom(float(zoom), [float(xpos), float(ypos)])
 
 
 
@@ -481,45 +481,45 @@ def load_dag_pos(preset):
 # Hidden Input Link Nodes
 # This is no longer used in favor of the anchor / pointer workflow
 
-def hidden_inputs_in_selection(nodes):
-    return [n for n in nodes if 'hide_input' in n.knobs() and n['hide_input'].getValue()]
+___ hidden_inputs_in_selection(nodes):
+    r_ [n ___ n in nodes __ 'hide_input' in n.knobs() and n['hide_input'].getValue()]
 
-def set_hlink_knobs(nodes):
+___ set_hlink_knobs(nodes):
     # Add knob to track what node this node is connected to
-    for node in hidden_inputs_in_selection(nodes):
-        if not 'hlink_node' in node.knobs():
-            node.addKnob(nuke.String_Knob('hlink_node', 'hlink_node'))
+    ___ node in hidden_inputs_in_selection(nodes):
+        __ not 'hlink_node' in node.knobs():
+            node.addKnob(?.String_Knob('hlink_node', 'hlink_node'))
         input_node = node.input(0)
-        if input_node:
+        __ input_node:
             node['hlink_node'].setValue(input_node.fullName())
-        else:
+        ____
             node['hlink_node'].setValue('')
 
-def hlink_copy():
-    nodes = nuke.selectedNodes()
-    if nodes:
+___ hlink_copy():
+    nodes = ?.sN..()
+    __ nodes:
         set_hlink_knobs(nodes)
-        nuke.nodeCopy('%clipboard%')
+        ?.nodeCopy('%clipboard%')
 
-def hlink_cut():
+___ hlink_cut():
     hlink_copy()
     nukescripts.node_delete(popupOnError=True)
 
-def hlink_paste():
-    nuke.nodePaste('%clipboard%')
-    for node in hidden_inputs_in_selection(nuke.selectedNodes()):
-        if 'hlink_node' in node.knobs():
-            target = nuke.toNode(node['hlink_node'].getValue())
-            if target:
+___ hlink_paste():
+    ?.nodePaste('%clipboard%')
+    ___ node in hidden_inputs_in_selection(?.sN..()):
+        __ 'hlink_node' in node.knobs():
+            target = ?.tN..(node['hlink_node'].getValue())
+            __ target:
                 node.setInput(0, target)
 
-def hlink_create():
+___ hlink_create():
     # Creates an hlink node for each selected node
-    nodes = nuke.selectedNodes()
+    nodes = ?.sN..()
     unselect()
     hlinks = # list
-    for node in nodes:
-        hlink = nuke.createNode('Dot', 'hide_input 1 note_font_size 18', inpanel=False)
+    ___ node in nodes:
+        hlink = ?.createNode('Dot', 'hide_input 1 note_font_size 18', inpanel=False)
         hlinks.append(hlink)
         hlink.setInput(0, node)
         target_name = node.fullName()
@@ -527,38 +527,38 @@ def hlink_create():
         hlink['hlink_node'].setValue(target_name)
         label = hlink['label']
         target_label = node['label'].getValue()
-        if node.Class() == 'Read':
+        __ node.Class() __ 'Read':
             label.setValue(' | ' + node['label'].getValue() + '\n' + os.pa__.b_n_(node['file'].getValue()))
-        elif target_label:
+        ____ target_label:
             label.setValue(' | ' + target_label)
-        else:
+        ____
             label.setValue(' | ' + target_name)
         hlink.setXYpos(node.xpos() - grid[0]*2, node.ypos()-grid[1]*0)
-        nuke.autoplaceSnap(hlink)
-    _ = [n.setSelected(True) for n in hlinks]
+        ?.autoplaceSnap(hlink)
+    _ = [n.setSelected(True) ___ n in hlinks]
 
 
 
-def dec2hex(dec):
+___ dec2hex(dec):
     hexcol = '%08x' % dec
-    return '0x%02x%02x%02x' %  (int(hexcol[0:2], 16), int(hexcol[2:4], 16), int(hexcol[4:6], 16))
+    r_ '0x%02x%02x%02x' %  (int(hexcol[0:2], 16), int(hexcol[2:4], 16), int(hexcol[4:6], 16))
 
 
 
-def create_pointer():
+___ create_pointer():
     # Create an anchor / pointer set
-    nodes = nuke.selectedNodes()
-    if not nodes:
-        return
+    nodes = ?.sN..()
+    __ not nodes:
+        r_
 
-    for target in nodes:
-        upstream = [n for n in connected(nodes, upstream=True, downstream=False)]
+    ___ target in nodes:
+        upstream = [n ___ n in connected(nodes, upstream=True, downstream=False)]
 
-        if len(upstream) > 5:
-            if not nuke.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
-                return
+        __ le.(upstream) > 5:
+            __ not ?.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
+                r_
 
-        randstr = ''.j..(random.choice(string.ascii_lowercase) for i in range(4))
+        randstr = ''.j..(random.choice(string.ascii_lowercase) ___ i in ra__(4))
         
         topnode = get_topnode(target)
 
@@ -566,66 +566,66 @@ def create_pointer():
 
         # If topnode has a file knob, use that to set title
         # If it's a roto node, use the roto label
-        if 'file' in topnode.knobs():
+        __ 'file' in topnode.knobs():
             pointer_title = os.pa__.b_n_(topnode['file'].getValue())
-            if '.' in pointer_title:
+            __ '.' in pointer_title:
                 pointer_title = pointer_title.split('.')[0]
-        elif topnode.Class() in ['Roto', 'RotoPaint'] and topnode['label'].getValue():
+        ____ topnode.Class() in ['Roto', 'RotoPaint'] and topnode['label'].getValue():
             pointer_title = topnode['label'].getValue()
-        elif target_label:
+        ____ target_label:
             pointer_title = target_label
-        else:
+        ____
             pointer_title = ''
 
         topnode_color = topnode['tile_color'].value()
 
-        if topnode_color == 0:
+        __ topnode_color __ 0:
             # Get default color from prefs if node is not colored https://community.foundry.com/discuss/topic/103301/get-the-default-tile-color-from-preferences
-            prefs = nuke.toNode('preferences')
-            default_colors = {prefs['NodeColour{0:02d}Color'.format(i)].value(): prefs['NodeColourClass{0:02d}'.format(i)].value() for i in range(1, 14)}
+            prefs = ?.tN..('preferences')
+            default_colors = {prefs['NodeColour{0:02d}Color'.format(i)].value(): prefs['NodeColourClass{0:02d}'.format(i)].value() ___ i in ra__(1, 14)}
             node_class = topnode.Class().lower()
-            node_class = ''.j..([i for i in node_class if not i.isdigit()])
-            for color, classes in default_colors.i..():
-                if node_class in classes:
+            node_class = ''.j..([i ___ i in node_class __ not i.isdigit()])
+            ___ color, classes in default_colors.i..():
+                __ node_class in classes:
                     topnode_color = color
                     break
-            if 'deep' in node_class:
+            __ 'deep' in node_class:
                 topnode_color = prefs['NodeColourDeepColor'].value()
         
-        if len(nodes) == 1:
+        __ le.(nodes) __ 1:
             # Only prompt the user for info if there is one selected node
-            panel = nuke.Panel('Create Pointer')
+            panel = ?.Panel('Create Pointer')
             panel.addSingleLineInput('title', pointer_title)
-            if panel.show():
+            __ panel.show():
                 pointer_title = panel.value('title')
-            else:
-                return
+            ____
+                r_
 
-        has_downstream = len(select_downstream(target)) > 0
+        has_downstream = le.(select_downstream(target)) > 0
         unselect()
 
-        if not has_downstream:
+        __ not has_downstream:
             target.setSelected(True)
 
         # create anchor node
-        anchor = nuke.createNode('NoOp', 'name ___anchor_{0} icon Output.png label "<font size=7>\[value title]"'.format(randstr))
-        anchor.addKnob(nuke.Tab_Knob('anchor_tab', 'anchor'))
-        anchor.addKnob(nuke.String_Knob('title', 'title'))
+        anchor = ?.createNode('NoOp', 'name ___anchor_{0} icon Output.png label "<font size=7>\[value title]"'.format(randstr))
+        anchor.addKnob(?.Tab_Knob('anchor_tab', 'anchor'))
+        anchor.addKnob(?.String_Knob('title', 'title'))
         anchor['title'].setValue(pointer_title)
         anchor['tile_color'].setValue(topnode_color)
         anchor.setInput(0, target)
         anchor.setSelected(True)
 
         # create pointer node
-        pointer = nuke.createNode('NoOp', 'name ___pointer_{0} hide_input true icon Input.png'.format(randstr))
-        pointer.addKnob(nuke.Tab_Knob('pointer_tab', 'pointer'))
-        pointer.addKnob(nuke.String_Knob('target', 'target'))
+        pointer = ?.createNode('NoOp', 'name ___pointer_{0} hide_input true icon Input.png'.format(randstr))
+        pointer.addKnob(?.Tab_Knob('pointer_tab', 'pointer'))
+        pointer.addKnob(?.String_Knob('target', 'target'))
         pointer['target'].setValue(anchor.fullName())
         pointer['label'].setValue('<font size=7> [if {[exists input.title]} {return [value input.title]}]')
-        pointer.addKnob(nuke.PyScript_Knob('connect_to_target', 'connect'))
-        pointer['connect_to_target'].setFlag(nuke.STARTLINE)
-        pointer.addKnob(nuke.PyScript_Knob('zoom_to_target', 'zoom'))
-        pointer.addKnob(nuke.PyScript_Knob('set_target', 'set target'))
+        pointer.addKnob(?.PyScript_Knob('connect_to_target', 'connect'))
+        pointer['connect_to_target'].setFlag(?.STARTLINE)
+        pointer.addKnob(?.PyScript_Knob('zoom_to_target', 'zoom'))
+        pointer.addKnob(?.PyScript_Knob('set_target', 'set target'))
         pointer['connect_to_target'].setValue('''n = nuke.thisNode()
 t = n['target'].getValue()
 if nuke.exists(t):
@@ -648,81 +648,81 @@ n['target'].setValue(t.fullName())''')
         pointer['tile_color'].setValue(topnode_color)
 
 
-def create_dots(side=False):
+___ create_dots(side=False):
     # Create dot nodes
-    nodes = nuke.selectedNodes()
+    nodes = ?.sN..()
     unselect()
     dots = list()
-    for node in nodes:
+    ___ node in nodes:
         pos = get_pos(node)
-        if not side:
+        __ not side:
             select([node])
-        dot = nuke.createNode('Dot', inpanel=False)
-        if side:
+        dot = ?.createNode('Dot', inpanel=False)
+        __ side:
             set_pos(dot, pos[0] - grid[0], pos[1])
             dot.setInput(0, node)
-        else:
+        ____
             set_pos(dot, pos[0], pos[1] + grid[1]*2)
         dots.append(dot)
         unselect(dot)
     select(dots)
-    if not nodes:
-        dot = nuke.createNode('Dot', inpanel=False)
+    __ not nodes:
+        dot = ?.createNode('Dot', inpanel=False)
 
 
 
-def create_transform():
+___ create_transform():
     # Create a Transform or TransformGeo node depending on node type
-    nodes = nuke.selectedNodes()
-    if not nodes:
-        nuke.createNode('Transform')
-        return
+    nodes = ?.sN..()
+    __ not nodes:
+        ?.createNode('Transform')
+        r_
     unselect()
     transform_nodes = list()
-    for node in nodes:
+    ___ node in nodes:
         node.setSelected(True)
-        if 'render_mode' in node.knobs():
-            new_node = nuke.createNode('TransformGeo')
-            if new_node:
+        __ 'render_mode' in node.knobs():
+            new_node = ?.createNode('TransformGeo')
+            __ new_node:
                 transform_nodes.append(new_node)
-        else:
-            new_node = nuke.createNode('Transform')
-            if new_node:
+        ____
+            new_node = ?.createNode('Transform')
+            __ new_node:
                 transform_nodes.append(new_node)
         unselect()
     select(transform_nodes)
 
 
-def read_from_write():
+___ read_from_write():
     # Create read nodes from selected write nodes
-    nodes = [n for n in nuke.selectedNodes() if 'file' in n.knobs()]
+    nodes = [n ___ n in ?.sN..() __ 'file' in n.knobs()]
     excluded = ['Read', ]
-    for node in nodes:
-        if node.Class() in excluded:
+    ___ node in nodes:
+        __ node.Class() in excluded:
             c___
         pos = get_pos(node)
         filepath = node['file'].getValue()
         d_n_ = os.pa__.d_n_(filepath)
         filename = os.pa__.b_n_(filepath)
-        if '#' in filename:
+        __ '#' in filename:
             is_sequence = True
             filename_base = filename.split('#')[0]
-        elif r'%' in filename:
+        ____ r'%' in filename:
             is_sequence = True
             filename_base = filename.split(r'%')[0]
-        else:
+        ____
             is_sequence = False
-        if is_sequence:
-            sequences = nuke.getFileNameList(d_n_)
-            for seq in sequences:
-                if seq.startswith(filename_base):
+        __ is_sequence:
+            sequences = ?.getFileNameList(d_n_)
+            ___ seq in sequences:
+                __ seq.startswith(filename_base):
                     filepath = os.pa__.j..(d_n_, seq)
                     break
-        read = nuke.createNode('Read', 'file {{{0}}}'.format(filepath), inpanel=False)
+        read = ?.createNode('Read', 'file {{{0}}}'.format(filepath), inpanel=False)
         set_pos(read, pos[0], pos[1] + grid[1]*4)
         # match colorspace
         colorspace = node['colorspace'].value()
-        if '(' in colorspace and ')' in colorspace:
+        __ '(' in colorspace and ')' in colorspace:
             # parse out role
             colorspace = colorspace.split('(')[1].split(')')[0]
         read['colorspace'].setValue(colorspace)
@@ -732,35 +732,35 @@ def read_from_write():
 
 
 # Enhanced swap functionality.
-def swap_node():
-    nodes = nuke.selectedNodes()
-    for node in nodes:
-        if node.inputs() > 1:
+___ swap_node():
+    nodes = ?.sN..()
+    ___ node in nodes:
+        __ node.inputs() > 1:
             nukescripts.swapAB(node)
-        if node.Class() == 'OCIOColorSpace':
+        __ node.Class() __ 'OCIOColorSpace':
             in_colorspace = node['in_colorspace'].value()
             out_colorspace = node['out_colorspace'].value()
             node['out_colorspace'].setValue(in_colorspace)
             node['in_colorspace'].setValue(out_colorspace)
-        elif 'direction' in node.knobs():
+        ____ 'direction' in node.knobs():
             direction = node['direction']
-            if direction.getValue() == 1:
+            __ direction.getValue() __ 1:
                 direction.setValue(0)
-            else:
+            ____
                 direction.setValue(1)
-        elif 'invert' in node.knobs():
+        ____ 'invert' in node.knobs():
             invert = node['invert']
-            if invert.getValue() == 1:
+            __ invert.getValue() __ 1:
                 invert.setValue(0)
-            else:
+            ____
                 invert.setValue(1)
-        elif node.Class() == 'Colorspace':
+        ____ node.Class() __ 'Colorspace':
             colorspace_in = node['colorspace_in'].value()
             colorspace_out = node['colorspace_out'].value()
             node['colorspace_out'].setValue(colorspace_in)
             node['colorspace_in'].setValue(colorspace_out)
 
-def swap_view():
-    views = nuke.views()
-    if len(views) == 2:
-        nuke.activeViewer().setView(views[1]) if nuke.activeViewer().view() == views[0] else nuke.activeViewer().setView(views[0])
+___ swap_view():
+    views = ?.views()
+    __ le.(views) __ 2:
+        ?.activeViewer().setView(views[1]) __ ?.activeViewer().view() __ views[0] else ?.activeViewer().setView(views[0])

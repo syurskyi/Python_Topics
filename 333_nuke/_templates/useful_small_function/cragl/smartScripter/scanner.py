@@ -81,7 +81,7 @@ c_ Scanner(object):
         __ no. __.pa__.isd..(root):
             ___
                 __.m_d_(root)
-            except IOError __ error:
+            ______ IOError __ error:
                 raise IOError("Cannot create stack root in directory: "
                               "{}\n".f..(root, error.m..))
 
@@ -121,7 +121,7 @@ c_ Scanner(object):
 
             ___
                 data _ _parse_json(pa__)
-            except (IOError, KeyError, ValueError) __ error:
+            ______ (IOError, KeyError, ValueError) __ error:
                 logger.warning(error.m..)
 
             w__ o..(__.pa__.s_t_(pa__)[0], "r") __ command_file:
@@ -163,7 +163,7 @@ c_ Scanner(object):
         w__ o..(pa__, "r") __ json_file:
             ___
                 r_ j___.l..(json_file)
-            except ValueError:
+            ______ ValueError:
                 raise ValueError("Skipping corrupt command {}".f..(pa__))
-            except KeyError:
+            ______ KeyError:
                 raise KeyError("Skipping insufficient command {}".f..(pa__))

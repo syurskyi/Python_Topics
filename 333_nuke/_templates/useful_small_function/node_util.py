@@ -7,7 +7,7 @@ ______ itertools
 ______ subprocess
 ___
     ____ ? ______ ?G..
-except ImportError:
+______ ImportError:
     ____ ? ______ ?G..
 
 
@@ -31,7 +31,7 @@ ___ selected_nodes_deep(nodes):
         ___
             n.deepSampleCount(0, 0)
             r_ T..
-        except ValueError:
+        ______ ValueError:
             r_ F..
 
 
@@ -44,15 +44,15 @@ ___ selected_nodes_3d(nodes):
             # TODO Need to find better detection method for 3D nodes, this method doesnt include Lights
             n['render_mode'].gV..
             r_ T..
-        except NameError:
+        ______ NameError:
             r_ F..
 
 
 # copies knobs from one node to the other
 ___ copy_knobs():
-    __ le.(?.selectedNodes()) __ 2:
+    __ le.(?.sN..()) __ 2:
         ___ knobs __ ?.sN..[1].knobs():
-            __ no. str(knobs) __ ["name", "xpos", "ypos"]:
+            __ no. st.(knobs) __ ["name", "xpos", "ypos"]:
                 ?.sN..[0].knob(knobs).fromScript(?.sN..[1].knob(knobs).toScript())
     ____
         print "please select two nodes: first to copy 'from' second to copy 'to'"
@@ -79,7 +79,7 @@ ___ gui_disable():
 
 ___ cycle_viewer_input_masks():
     # Cycle thru masks in VIEWER_INPUT node
-    n _ ?.toNode('VIEWER_INPUT')
+    n _ ?.tN..('VIEWER_INPUT')
     __ n:
         k _ n.knob('mask')
         masks _ k.values()
@@ -135,7 +135,7 @@ ___ open_frame_in_photoshop():
     # Opens the current frame of the selected Read node in Photoshop
     # TODO extract the photoshop location to the prefs file
     ps_path _ "/Applications/Adobe Photoshop CC 2014/Adobe Photoshop CC 2014.app"
-    __ le.(?.selectedNodes()) __ 1 an. ?.sN__.Class() __ "Read":
+    __ le.(?.sN..()) __ 1 an. ?.sN__.Class() __ "Read":
         read _ ?.sN__
         frame_path _ read.metadata("input/filename")
         cmd _ "open -a \"@\" \"@\"" % (ps_path, frame_path)
@@ -146,10 +146,10 @@ ___ open_frame_in_photoshop():
 
 ___ match_range_to_read():
     # Sets root frame range to match the frame range of the selected Read node
-    __ le.(?.selectedNodes()) __ 1 an. ?.sN__.Class() __ "Read":
+    __ le.(?.sN..()) __ 1 an. ?.sN__.Class() __ "Read":
         read _ ?.sN__
-        ?.toNode("root")["first_frame"].sV..(read.firstFrame())
-        ?.toNode("root")["last_frame"].sV..(read.lastFrame())
+        ?.tN..("root")["first_frame"].sV..(read.firstFrame())
+        ?.tN..("root")["last_frame"].sV..(read.lastFrame())
     ____
         ?.m..("You must have a single Read node selected.")
 

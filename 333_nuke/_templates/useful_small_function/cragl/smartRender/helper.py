@@ -177,7 +177,7 @@ ___ get_tooltips_file(*args):
     r_ __.pa__.n_p_(tooltips)
 
 
-___ update_job_log(job_id, processdata, ti__ _ str(in.(ti__.ti__())), *args):
+___ update_job_log(job_id, processdata, ti__ _ st.(in.(ti__.ti__())), *args):
     jobs_xml _ get_job_xml()
     __ jobs_xml __ '':
         r_
@@ -187,9 +187,9 @@ ___ update_job_log(job_id, processdata, ti__ _ str(in.(ti__.ti__())), *args):
         __ job.get('id') __ job_id:
             process _ job.find('process')
             p _ ET.SubElement(process, 'data')
-            p.set('time', str(ti__))
-            p.set('status', str(processdata[0]))
-            p.set('thread', str(processdata[1]))
+            p.set('time', st.(ti__))
+            p.set('status', st.(processdata[0]))
+            p.set('thread', st.(processdata[1]))
             p.text _ processdata[2]
             w__ o..(jobs_xml, 'w') __ xml:
                 prettyprint(jobs_root)
@@ -269,20 +269,20 @@ ___ calculate_process_precentage(job_id, frame, *args):
                 done_precentage _ 100
             ___ setting __ job.f_a_('setting'):
                 __ setting.get('name') __ 'progress':
-                    setting.text _ str(done_precentage)
+                    setting.text _ st.(done_precentage)
                 __ setting.get('name') __ 'status':
                     tmp_status _ setting.text
                     __ done_precentage __ 0:
                         setting.text _ 'waiting'
                     __ done_precentage > 0:
                         setting.text _ 'rendering'
-                    __ str(done_precentage) __ '100':
+                    __ st.(done_precentage) __ '100':
                         setting.text _ 'finished'
                     __ tmp_status __ 'paused':
                         setting.text _ 'paused'
 
             ___ f __ job.find('frames').f_a_('frame'):
-                __ f.text __ str(frame):
+                __ f.text __ st.(frame):
                     job.find('frames').remove(f)
 
             w__ o..(jobs_xml, 'w') __ xml:
@@ -314,7 +314,7 @@ ___ open_website(url, *args):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             show_message_box(N.., msg)
 
@@ -328,7 +328,7 @@ ___ get_job_id_by_script_orig(script_orig, *args):
             r_ ''
         jobs_tree _ ET.parse(jobs_xml)
         jobs_root _ jobs_tree.getroot()
-    except Exception __ e:
+    ______ E.. __ e:
         r_ ''
 
     jobs _ # list
@@ -360,7 +360,7 @@ ___ get_job_data(job_id, *args):
             r_ {}
         jobs_tree _ ET.parse(jobs_xml)
         jobs_root _ jobs_tree.getroot()
-    except Exception __ e:
+    ______ E.. __ e:
         r_ {}
 
     ___ job __ jobs_root.find('jobs').f_a_('job'):
@@ -391,7 +391,7 @@ ___ get_all_jobs_data(filter, *args):
             r_ {}
         jobs_tree _ ET.parse(jobs_xml)
         jobs_root _ jobs_tree.getroot()
-    except Exception __ e:
+    ______ E.. __ e:
         r_ {}
 
     ___ job __ jobs_root.find('jobs').f_a_('job'):
@@ -451,7 +451,7 @@ ___ write_render_log(text, *args):
         w__ o..(log, 'a') __ lf:
             lf.w..('{}: {}\n'.f..(get_time_formated()), text)
         r_ T..
-    except IOError:
+    ______ IOError:
         r_ F..
 
 
@@ -465,7 +465,7 @@ ___ write_terminal_cmd(job_id, text, file _ 'input', *args):
         w__ o..(log, 'a') __ file_:
             file_.w..('{}\n'.f..(text))
         r_ T..
-    except IOError:
+    ______ IOError:
         r_ F..
 
 
@@ -523,12 +523,12 @@ ___ get_job_details(job_id, *args):
 
 
 ___ force_create_render_dir(*args):
-    file_name _ ?.filename(?.thisNode())
+    file_name _ ?.filename(?.tN..())
     dir_name _ __.pa__.d_n_(file_name)
     os_dir _ ?.callbacks.filenameFilter(dir_name)
     ___
         __.m_d_(os_dir)
-    except OSError __ e:
+    ______ OSError __ e:
         __ e.errno !_ errno.EEXIST:
             raise
 
@@ -541,7 +541,7 @@ ___ load_terminal_log(job_id, mode, *args):
     ___
         w__ o..(terminal_file, 'rt') __ file:
             r_ file.read()
-    except Exception __ e:
+    ______ E.. __ e:
         r_ 'Error reading the terminal input file. {}'.f..(e)
 
 
@@ -618,7 +618,7 @@ ___ reset_file(which, window, *args):
                     __.remove(jobs_file)
                     msg _ 'Successfully flushed jobs file.'
                     show_message_box(window, msg)
-            except Exception __ e:
+            ______ E.. __ e:
                 write_log('Cannot remove jobs file. {}'.f..(e))
 
         ____ which __ 'settings':
@@ -628,7 +628,7 @@ ___ reset_file(which, window, *args):
                     __.remove(settings_file)
                     msg _ 'Successfully reset the smartRender settings.'
                     show_message_box(window, msg)
-            except Exception __ e:
+            ______ E.. __ e:
                 write_log('Cannot reset settings file. {}'.f..(e))
 
 
@@ -685,7 +685,7 @@ ___ check_settings_xml_values_exist():
      'step': '1',
      'overwrite': 'True',
      'size': 'full',
-     'thread_count': str(in.(get_cpu_count() / 2))}
+     'thread_count': st.(in.(get_cpu_count() / 2))}
     ___ key, value __ settings_current.i..():
         check_xml_value_exists_current('setting', 'name', key, value)
 
@@ -873,7 +873,7 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 _ '', value
 ___ get_cpu_count(*args):
     ___
         r_ multiprocessing.cpu_count()
-    except Exception __ e:
+    ______ E.. __ e:
         __ hasattr(__, 'sysconf'):
             __ __.sysconf_names.has_key('SC_NPROCESSORS_ONLN'):
                 ncpus _ __.sysconf('SC_NPROCESSORS_ONLN')
@@ -938,10 +938,10 @@ ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_bu
 
 
 ___ create_unique_job_id(*args):
-    current_time _ str(in.(ti__.ti__()))
-    rand_number _ str(random.random())
+    current_time _ st.(in.(ti__.ti__()))
+    rand_number _ st.(random.random())
     id _ hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
-    r_ str('{}_{}'.f..(current_time, id))
+    r_ st.('{}_{}'.f..(current_time, id))
 
 
 ___ get_all_views(range_ _ 10):
@@ -1002,7 +1002,7 @@ ___ open_renderpath_in_explorer(label, renderpath, srw, *args):
         r_
     ___
         open_in_explorer(__.pa__.d_n_(renderpath), parent_srw)
-    except Exception __ e:
+    ______ E.. __ e:
         show_message_box(srw, 'An error occurred: {}'.f..(e))
         r_
 

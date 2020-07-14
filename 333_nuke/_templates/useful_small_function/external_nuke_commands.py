@@ -21,136 +21,136 @@ __email__ = 'jaime.rvq@gmail.com'
 __status__ = 'Testing'
 
 
-def nuke_paint_nodes(input=None):
+___ nuke_paint_nodes(input=None):
 
-    import nuke
+    ______ ?
 
-    if len(nuke.selectedNodes()) == 0:
-        return 'red', 'No node selected'
+    __ le.(?.sN..()) __ 0:
+        r_ 'red', 'No node selected'
 
-    for node in nuke.selectedNodes():
+    ___ node in ?.sN..():
         node['tile_color'].setValue(int(input))
 
-    if len(nuke.selectedNodes()) == 1:
-        return 'lime', 'Node painted correctly'
-    else:
-        return 'lime', 'Nodes painted correctly'
+    __ le.(?.sN..()) __ 1:
+        r_ 'lime', 'Node painted correctly'
+    ____
+        r_ 'lime', 'Nodes painted correctly'
 
 
-def nuke_constant(input=None):
+___ nuke_constant(input=None):
 
-    import nuke
+    ______ ?
 
-    const = nuke.nodes.Constant()
+    const = ?.nodes.Constant()
     const['color'].setValue(input)
-    return 'lime', 'Constant node created'
+    r_ 'lime', 'Constant node created'
 
 
-def nuke_backdrop(input=None):
+___ nuke_backdrop(input=None):
 
-    import nukescripts
+    ______ nukescripts
 
     bd = nukescripts.autoBackdrop()
     bd['tile_color'].setValue(int(input))
-    return 'lime', 'Backdrop node created'
+    r_ 'lime', 'Backdrop node created'
 
 
-def nuke_IO(input=None):
+___ nuke_IO(input=None):
 
-    def execute_nuke(executable):
-        import nuke
-        import os, math, random
+    ___ execute_nuke(executable):
+        ______ ?
+        ______ os, math, random
         exec (executable)
 
-    try:
+    ___
         execute_nuke(input)
-        return 'lime', 'Command succesfully executed'
-    except Exception as e:
-        return 'red', 'ERROR: ' + str(e)
+        r_ 'lime', 'Command succesfully executed'
+    ______ E.. __ e
+        r_ 'red', 'ERROR: ' + st.?
 
 
-def nuke_set(input, color):
+___ nuke_set(input, color):
 
-    import nuke
+    ______ ?
 
-    if len(nuke.selectedNodes()) == 0:
+    __ le.(?.sN.. __ 0
 
-        object = str(input.split('.')[0])
-        attribute = str(input.split('.')[1])
+        object = st.(input.split('.')[0])
+        attribute = st.(input.split('.')[1])
 
-        try:
-            node = nuke.toNode(object)
+        ___
+            node = ?.tN..(object)
             node[attribute].setValue(color)
-            return 'lime', 'Knob value set correctly'
-        except Exception as e:
+            r_ 'lime', 'Knob value set correctly'
+        ______ E.. __ e:
             print e
-            return 'red', 'Could not set knob value'
+            r_ 'red', 'Could not set knob value'
 
-    elif len(nuke.selectedNodes()) == 1:
+    ____ le.(?.sN..()) __ 1:
 
-        object = nuke.selectedNodes()[0].name()
+        object = ?.sN..()[0].name()
         print object
         attribute = input
 
-        if '.' in input:
-            return 'red', 'Knob value "{}" cannot be set to "{}"'.format(attribute, object)
+        __ '.' in input:
+            r_ 'red', 'Knob value "{}" cannot be set to "{}"'.format(attribute, object)
 
-        try:
-            node = nuke.toNode(object)
+        ___
+            node = ?.tN..(object)
             node[attribute].setValue(color)
-            return 'lime', 'Knob value set correctly'
-        except Exception as e:
+            r_ 'lime', 'Knob value set correctly'
+        ______ E.. __ e:
             print e
-            return 'red', 'Could not set knob value'
+            r_ 'red', 'Could not set knob value'
 
-    elif len(nuke.selectedNodes()) > 1:
+    ____ le.(?.sN..()) > 1:
 
-        node_number = len(nuke.selectedNodes())
+        node_number = le.(?.sN..())
 
-        try:
-            for node in nuke.selectedNodes():
+        ___
+            ___ node in ?.sN..():
                 object = node.name()
                 attribute = input
-                node = nuke.toNode(object)
+                node = ?.tN..(object)
                 node[attribute].setValue(color)
-            return 'lime', 'Knob value set correctly to {} selected nodes'.format(node_number)
-        except Exception as e:
+            r_ 'lime', 'Knob value set correctly to {} selected nodes'.format(node_number)
+        ______ E.. __ e:
             print e
-            return 'red', 'Could not set knob value to selected nodes'
+            r_ 'red', 'Could not set knob value to selected nodes'
 
 
-def nuke_get(input):
+___ nuke_get(input):
 
-    import nuke
+    ______ ?
 
-    if len(nuke.selectedNodes()) == 0:
+    __ le.(?.sN..()) __ 0:
 
-        object = str(input.split('.')[0])
-        attribute = str(input.split('.')[1])
+        object = st.(input.split('.')[0])
+        attribute = st.(input.split('.')[1])
 
-        try:
-            node = nuke.toNode(object)
+        ___
+            node = ?.tN..(object)
             attr = node[attribute].value()
-            return 'lime', str(attr)
-        except Exception as e:
+            r_ 'lime', st.(attr)
+        ______ E.. __ e:
             print e
-            return 'red', 'Could not get knob value'
+            r_ 'red', 'Could not get knob value'
 
-    elif len(nuke.selectedNodes()) == 1:
+    ____ le.(?.sN..()) __ 1:
 
-        object = str(nuke.selectedNodes()[0].name())
+        object = st.(?.sN..()[0].name())
         attribute = input
 
-        if '.' in input:
-            return 'red', 'Cannot get knob value "{}" from "{}"'.format(attribute, object)
+        __ '.' in input:
+            r_ 'red', 'Cannot get knob value "{}" from "{}"'.format(attribute, object)
 
-        try:
-            node = nuke.toNode(object)
+        ___
+            node = ?.tN..(object)
             attr = node[attribute].value()
-            return 'lime', str(attr)
-        except Exception as e:
+            r_ 'lime', st.(attr)
+        ______ E.. __ e:
             print e
-            return 'red', 'Could not get knob value'
+            r_ 'red', 'Could not get knob value'
 
-    elif len(nuke.selectedNodes()) > 1:
-        return 'red', 'Please, select one object or less'
+    ____ le.(?.sN..()) > 1:
+        r_ 'red', 'Please, select one object or less'

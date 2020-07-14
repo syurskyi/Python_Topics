@@ -20,7 +20,7 @@ ___ get_files_list(filepath):
         pattern _ '{}.{}.{}'.f..(b_n_, '*' * le.(file_sequence), ext)
         pattern _ __.pa__.j..(basedir, pattern)
         files_list _ [ __.pa__.j..(basedir, __.pa__.b_n_(file_)) ___ file_ __ glob.glob(pattern) ]
-    except ValueError:
+    ______ ValueError:
         files_list.ap..(filepath)
 
     r_ sorted(files_list)

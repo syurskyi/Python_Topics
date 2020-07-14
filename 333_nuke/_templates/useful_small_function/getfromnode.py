@@ -49,17 +49,17 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
             ___
                 # attempt to get file knob from linked (gizmos < 5.2v1)
                 result _ my_knob.getLinkedKnob().gV..
-            except AttributeError:
+            ______ AttributeError:
                 # attempt to get file knob value directly (gizmos >= 5.2v1)
                 result _ my_knob.gV..
             # end try
-        except AttributeError:
+        ______ AttributeError:
             ___
                 # grab filename directly from node with nuke.filename
                 result _ ?.filename(node)
-            except NameError:
+            ______ NameError:
                 # do nothing if nuke.filename errors out (earlier Nuke version)
-                pass
+                p..
             # end try
         ______
             raise
@@ -73,7 +73,7 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
                         # attempt to get proxy knob from linked (gizmos < 5.2v1)
                         __ node.getLinkedKnob().knob('proxy').v..:
                             result _ node.getLinkedKnob().knob('proxy').v..
-                    except AttributeError:
+                    ______ AttributeError:
                         # attempt to get proxy knob value directly (gizmos >= 5.2v
                         __ node.knob('proxy').v..:
                             result _ node.knob('proxy').v..
@@ -81,7 +81,7 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
 
         # check if a TCL expression might exist in the result (ie: containts [{($)}])
 
-        expression_check _ re.search('[\[\{\(\]\}\)\$]', str(result))
+        expression_check _ re.search('[\[\{\(\]\}\)\$]', st.(result))
         # if an expression might exist, attempt to evaluate
         __ expression_check:
             # make a copy of the result to process
@@ -135,7 +135,7 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
                 result _ eval_result
             ______
                 # evaluation failed, leave result alone and let the gods sort it out
-                pass
+                p..
             finally:
                 # one way or another, clean up the tmp node
                 ?.delete(tmp)
@@ -200,8 +200,8 @@ ___ filePaths(no___N.., proxy_F.., regex_N.., force_match_T..):
     ___ i __ nodes:
         ___
             result.ap..(filePath(i, proxy, regex, force_match))
-        except AttributeError:
-            pass
+        ______ AttributeError:
+            p..
     
     r_ result
 # end filePaths
@@ -227,8 +227,8 @@ ___ filePathsWithRanges(nodes_N.., proxy_F.., regex_N.., force_match_T..):
             ra.. _ filePathWithRange(i, proxy, regex, force_match)
             __ ra..:
                 result.ap..(ra..)
-        except AttributeError:
-            pass
+        ______ AttributeError:
+            p..
     
     r_ result
 # end filePaths

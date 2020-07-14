@@ -9,7 +9,7 @@ ___ is_nuke():
     ___
         ______ ?
         r_ T..
-    except ImportError:
+    ______ ImportError:
         r_ F..
 
 

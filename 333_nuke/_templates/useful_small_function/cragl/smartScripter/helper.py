@@ -13,7 +13,7 @@ ______ ?  # pylint: disable=______-error
 # PySide ______ switch
 ___
     ____ ? ______ ?C..
-except ImportError:
+______ ImportError:
     ____ ? ______ ?C..
 
 # Import local modules
@@ -65,8 +65,8 @@ ___ execute(language, command):
             # running exec in here not so evil.
             exec command  # pylint: disable=exec-used
         ____ language __ TCL:
-            ?.tcl(str(command))
-    except Exception:
+            ?.tcl(st.(command))
+    ______ E..:
         raise ValueError
 
 
@@ -142,8 +142,8 @@ ___ add_to_history(command):
     # want to add this command to the top.
     ___
         settings["history"].remove(command)
-    except ValueError:
-        pass
+    ______ ValueError:
+        p..
 
     settings["history"].ap..(command)
     r_ model.save(settings)
@@ -174,7 +174,7 @@ ___ clear_combo(combo):
         combo (QtWidgets.QComboBox): ComboBox to flush.
 
     """
-    while combo.count() > 2:
+    w__ combo.count() > 2:
         __ combo.currentText __ NEW_STACK:
             c___
         ____
@@ -207,7 +207,7 @@ ___ open_website(url):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".f..(url))
             ____ smartScripter ______ dialogs
@@ -257,7 +257,7 @@ ___ load_tooltips(parent, section):
     w__ o..(tooltips_file) __ json_file:
         ___
             ttdata _ j___.l..(json_file)
-        except ValueError:
+        ______ ValueError:
             r_
 
     # Find the tooltip.
@@ -290,7 +290,7 @@ ___ get_tool_root(which):
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
-        except IOError __ error:
+        ______ IOError __ error:
             print "Error creating directory: ", error.m..
 
     r_ root
@@ -315,7 +315,7 @@ ___ get_icon(icon):
             raise IndexError
         r_ [pa__ ___ pa__ __ SESSION_ICONS
                 __ pa__.endswith("{}.png".f..(icon))][0]
-    except IndexError:
+    ______ IndexError:
         r_ load_icons()["command"]
 
 
@@ -329,7 +329,7 @@ ___ reveal_in_explorer(pa__):
         ___
             subprocess.check_call(['explorer', pa__])
         # We want to catch all errors in here explicitly.
-        except Exception __ error:  # pylint: disable=broad-except
+        ______ E.. __ error:  # pylint: disable=broad-except
             ____ smartScripter ______ dialogs
             m.. _ ("Unable to reveal the directory. Please open the "
                        "directory manually in your explorer. "

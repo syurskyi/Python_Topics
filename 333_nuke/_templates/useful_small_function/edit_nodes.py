@@ -1,14 +1,14 @@
-import nuke
+______ ?
 
-nuke.menu('Nuke').addCommand('Github/nuke-config/Node/Change Knob Values', 'edit_nodes.edit_knobs()', 'ctrl+e')
-nuke.menu('Nuke').addCommand('Github/nuke-config/Node/Paste Knob Value', 'edit_nodes.paste_knobs()', 'ctrl+alt+v')
-nuke.menu('Nuke').addCommand('Github/nuke-config/Node/Paste Selected Knob Values', 'edit_nodes.paste_knobs(checkboxes=True)', 'ctrl+alt+shift+v')
+?.menu('Nuke').addCommand('Github/nuke-config/Node/Change Knob Values', 'edit_nodes.edit_knobs()', 'ctrl+e')
+?.menu('Nuke').addCommand('Github/nuke-config/Node/Paste Knob Value', 'edit_nodes.paste_knobs()', 'ctrl+alt+v')
+?.menu('Nuke').addCommand('Github/nuke-config/Node/Paste Selected Knob Values', 'edit_nodes.paste_knobs(checkboxes=True)', 'ctrl+alt+shift+v')
 
-def intersection(a, b):
+___ intersection(a, b):
     # calculate intersection between list a and list b
-    return list(set(a)&set(b))
+    r_ list(set(a)&set(b))
 
-def get_knobs(node):
+___ get_knobs(node):
     # Add suported knobs from node and return a list of knob names
     unsupported_classes = [
         'LookupCurves_Knob', 
@@ -27,25 +27,25 @@ def get_knobs(node):
     ignore_patterns = ['_panelDropped']
     knobs = list()
     default_knobs = list()
-    for k in node.knobs():
+    ___ k in node.knobs():
         knob = node[k]
-        if knob.Class() not in unsupported_classes and knob.name() not in unsupported_names:
-            for pattern in ignore_patterns:
-                if pattern not in k:
+        __ knob.Class() not in unsupported_classes and knob.name() not in unsupported_names:
+            ___ pattern in ignore_patterns:
+                __ pattern not in k:
                     knobs.append(k)
-    return knobs
+    r_ knobs
 
 
-def edit_knobs():
+___ edit_knobs():
     # Display all knobs that are common between all selected nodes.
     # Allow user to set expression or value on one of the knobs
-    nodes = nuke.selectedNodes()
+    nodes = ?.sN..()
     # Find intersection of all knobs between all selected nodes
     knobs = list()
-    for i in range(len(nodes)):
-        if i == 0:
+    ___ i in ra__(le.(nodes)):
+        __ i __ 0:
             knobs = get_knobs(nodes[i])
-        else:
+        ____
             knobs = intersection(get_knobs(nodes[i-1]), get_knobs(nodes[i]))
         i += 1
     knobs.sort()
@@ -57,15 +57,15 @@ def edit_knobs():
         ]
     default_knobs = list()
     node_knobs = list()
-    for knob in knobs:
-        if knob in default_knob_names:
+    ___ knob in knobs:
+        __ knob in default_knob_names:
             default_knobs.append(knob)
-        else:
+        ____
             node_knobs.append(knob)
     default_knobs.sort()
     node_knobs.sort()
     knobs = node_knobs + default_knobs
-    panel = nuke.Panel('Edit Knobs')
+    panel = ?.Panel('Edit Knobs')
     panel.setWidth(250)
     panel.addEnumerationPulldown('knobs', ' '.j..(knobs))
     panel.addBooleanCheckBox('expression', 0)
@@ -73,115 +73,115 @@ def edit_knobs():
     panel.addSingleLineInput('1', '')
     panel.addSingleLineInput('2', '')
     panel.addSingleLineInput('3', '')
-    if not panel.show():
-        return
+    __ not panel.show():
+        r_
     k = panel.value('knobs')
     set_expression = panel.value('expression')
     values = list()
-    for i in range(4):
-        val = panel.value(str(i))
-        if val == '':
+    ___ i in ra__(4):
+        val = panel.value(st.(i))
+        __ val __ '':
             values.append(False)
-        else:
-            try:
+        ____
+            ___
                 values.append(float(val))
-            except ValueError:
-                values.append(str(val))
-    for node in nodes:
+            ______ ValueError:
+                values.append(st.(val))
+    ___ node in nodes:
         knob = node[k]
-        try:
+        ___
             array_size = knob.arraySize()
-        except AttributeError:
+        ______ AttributeError:
             array_size = 1
-        if set_expression:
-            for i in range(array_size):
-                if values[i]:
-                    if knob.hasExpression(i):
+        __ set_expression:
+            ___ i in ra__(array_size):
+                __ values[i]:
+                    __ knob.hasExpression(i):
                         knob.clearAnimated(i)
-                    knob.setExpression(str(values[i]), channel=i)
-        else:
-            if isinstance(knob, nuke.Boolean_Knob):
-                if knob.hasExpression():
+                    knob.setExpression(st.(values[i]), channel=i)
+        ____
+            __ isinstance(knob, ?.Boolean_Knob):
+                __ knob.hasExpression():
                     knob.clearAnimated()
-                if not values[0]:
+                __ not values[0]:
                     knob.setValue(False)
-                else:
+                ____
                     knob.setValue(True)
-            elif isinstance(knob, (nuke.File_Knob)):
+            ____ isinstance(knob, (?.File_Knob)):
                 knob.setValue(values[0])
-            elif isinstance(knob, (nuke.XYZ_Knob, nuke.XY_Knob, nuke.WH_Knob, nuke.UV_Knob, nuke.Array_Knob)):
-                if knob.singleValue():
-                    if values[0] and not values[1] and not values[2] and not values[3]:
+            ____ isinstance(knob, (?.XYZ_Knob, ?.XY_Knob, ?.WH_Knob, ?.UV_Knob, ?.Array_Knob)):
+                __ knob.singleValue():
+                    __ values[0] and not values[1] and not values[2] and not values[3]:
                         # if only values[0] exists, set all in array_size to first value
                         knob.setValue(values[0])
-                for i in range(array_size):
-                    if knob.hasExpression(i):
+                ___ i in ra__(array_size):
+                    __ knob.hasExpression(i):
                         knob.clearAnimated(i)
-                    if isinstance(values[i], float):
+                    __ isinstance(values[i], float):
                         knob.setValue(values[i], i)
-                    elif isinstance(values[i], str):
+                    ____ isinstance(values[i], st.):
                         # Assume this was meant to be an expression
-                        knob.setExpression(str(values[i]), channel=i)
+                        knob.setExpression(st.(values[i]), channel=i)
 
 
-def paste_knobs(checkboxes=False):
+___ paste_knobs(checkboxes=False):
     # Override of the ctrl+alt+v shortcut which allows pasting of only specified knob values to selected nodes
     # Only a single source node is supported unlike the original
     # Based on nukescripts.misc.copy_knobs()
     # If not checkboxes, all knobs or a single knob can be chosen
     # If checkboxes, an arbitrary selection of knobs can be chosen
-    grp = nuke.thisGroup()
-    dst_nodes = grp.selectedNodes()
-    copy_grp = nuke.nodes.Group(name='____tempcopyknobgroup__')
+    grp = ?.thisGroup()
+    dst_nodes = grp.sN..()
+    copy_grp = ?.nodes.Group(name='____tempcopyknobgroup__')
     with copy_grp:
-        nuke.nodePaste('%clipboard%')
+        ?.nodePaste('%clipboard%')
     src_nodes = copy_grp.nodes()
-    if src_nodes:
+    __ src_nodes:
         src_node = src_nodes[-1]
     excluded_knobs = ['name', 'xpos', 'ypos', 'selected']
-    try:
+    ___
         intersect_knobs = dict()
-        for dst_node in dst_nodes:
+        ___ dst_node in dst_nodes:
             src_knobs = src_node.knobs()
             dst_knobs = dst_node.knobs()
             intersection = dict(
-                [(item, src_knobs[item]) for item in src_knobs.keys() \
-                if item not in excluded_knobs and dst_knobs.has_key(item)]
+                [(item, src_knobs[item]) ___ item in src_knobs.keys() \
+                __ item not in excluded_knobs and dst_knobs.has_key(item)]
                 )
             intersect_knobs.update(intersection)
         knobs = intersect_knobs.keys()
-        panel = nuke.Panel('Choose Knobs')
+        panel = ?.Panel('Choose Knobs')
         panel.setWidth(250)
-        if checkboxes:
+        __ checkboxes:
             # Checkboxes for each knob
-            for k in knobs:
+            ___ k in knobs:
                 panel.addBooleanCheckBox(k, 0)
-        else:
+        ____
             panel.addEnumerationPulldown('knob', ' '.j..(knobs))
             panel.addBooleanCheckBox('paste all', 0)
-        if not panel.show():
-            return
+        __ not panel.show():
+            r_
         chosen_knobs = list()
-        if checkboxes:
-            for k in knobs:
-                if panel.value(k):
+        __ checkboxes:
+            ___ k in knobs:
+                __ panel.value(k):
                     chosen_knobs.append(k)
-        else:
+        ____
             paste_all = panel.value('paste all')
             print paste_all
-            if paste_all:
+            __ paste_all:
                 chosen_knobs = knobs
-            else:
+            ____
                 chosen_knobs.append(panel.value('knob'))
                 print 'got single value: ', chosen_knobs
-        for dst_node in dst_nodes:
+        ___ dst_node in dst_nodes:
             dst_knobs = dst_node.knobs()
-            for knob in chosen_knobs:
+            ___ knob in chosen_knobs:
                 print 'pasting src {0} to dst {1}'.format(knob, dst_node.name())
                 src = src_knobs[knob]
                 dst = dst_knobs[knob]
                 dst.fromScript(src.toScript())
-    except Exception as e:
-        nuke.delete(copy_grp)
+    ______ E.. __ e:
+        ?.delete(copy_grp)
         raise e
-    nuke.delete(copy_grp)
+    ?.delete(copy_grp)

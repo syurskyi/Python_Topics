@@ -28,7 +28,7 @@ c_ eventFilterWindowClass(QObject):
         r_ F..
         
     ___ processNode(self, n):
-        nukeNode _ ?.toNode( str(n.objectName()) )
+        nukeNode _ ?.tN..( st.(n.objectName()) )
         __ nukeNode:
             nodeClass _ nukeNode.Class()
             __ nodeClass __ dir(qtNodes):

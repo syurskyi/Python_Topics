@@ -224,7 +224,7 @@ ___ get_tool_root(which):
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
-        except OSError __ error:
+        ______ OSError __ error:
             raise OSError("Error creating directory: ", error.m..)
 
     r_ root
@@ -277,7 +277,7 @@ ___ open_website(url):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ ("Cannot open browser. Please open it manually and "
                    "navigate to:\n\n{}".f..(url))
             raise OSError(msg)

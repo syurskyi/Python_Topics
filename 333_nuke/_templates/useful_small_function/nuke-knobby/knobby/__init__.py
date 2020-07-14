@@ -4,7 +4,7 @@ ____ . ______ parser
 
 ___
     ____ . ______ util
-except ImportError:
+______ ImportError:
     # No nuke module
     util _ N..
 

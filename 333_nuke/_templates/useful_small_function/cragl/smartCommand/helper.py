@@ -56,7 +56,7 @@ ___ get_tool_root(which):
     __ no. __.pa__.isd..(root):
         ___
             __.m_d_(root)
-        except IOError:
+        ______ IOError:
             write_log('unable to create open tool dir at: {}'.f..(root))
 
     r_ root
@@ -103,7 +103,7 @@ ___ get_collection_root():
     __ no. __.pa__.isd..(collection_root):
         ___
             __.m_d_(collection_root)
-        except OSError:
+        ______ OSError:
             msg _ "Cannot create menu direcory in '{}'. Please set a different path.".f..(collection_root)
             ?.m..(msg)
 
@@ -115,7 +115,7 @@ ___ get_scriptlets_root():
     __ no. __.pa__.isd..(scriptlet_root):
         ___
             __.m_d_(scriptlet_root)
-        except OSError:
+        ______ OSError:
             msg _ "Cannot create scriptlet direcory in '{}'. Please set a different path.".f..(scriptlet_root)
             ?.m..(msg)
 
@@ -284,7 +284,7 @@ ___ get_menus(all_incl _ T.., exclude_prefix _ '_'):
                 w__ o..(xml_path, 'r') __ xml_file:
                     ET.fromstring(xml_file.read())
                 menus.ap..(xml_name)
-            except ET.ParseError:
+            ______ ET.ParseError:
                 write_log('Skip non well formed menu collection: {}'.f..(xml_path))
 
     r_ menus
@@ -299,7 +299,7 @@ ___ add_command(collection_name, command_path, color _ N.., hotkey _ N..):
     command_item _ ET.Element('command')
     command_item.text _ command_path
     __ color:
-        command_item.set('color', str(color))
+        command_item.set('color', st.(color))
     __ hotkey:
         command_item.set('hotkey', sanitize(hotkey))
     collection.insert(0, command_item)
@@ -400,14 +400,14 @@ ___ get_command_object(pa__):
 ___ get_next_element(list_, current):
     ___
         r_ list_[list_.index(current) + 1]
-    except IndexError:
+    ______ IndexError:
         r_ list_[0]
 
 
 ___ get_previous_element(list_, current):
     ___
         r_ list_[list_.index(current) - 1]
-    except IndexError:
+    ______ IndexError:
         r_ list_[le.(list_)]
 
 
@@ -483,7 +483,7 @@ ___ load_tooltips(parent, section):
     w__ o..(tooltips_file) __ json_file:
         ___
             ttdata _ j___.l..(json_file)
-        except ValueError:
+        ______ ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
 
@@ -501,7 +501,7 @@ ___ open_website(url):
     ____
         ___
             subprocess.P..(['xdg-open', url])
-        except OSError:
+        ______ OSError:
             msg _ 'Cannot open browser. Please open it manually and navigate to:\n\n{}'.f..(url)
             ____ smartCommand ______ dialogs
             dialogs.show_message_box(N.., msg)

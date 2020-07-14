@@ -58,7 +58,7 @@ ___ createDefault():
 	create custom knobDefault value
 	'''
 
-	n _ ?.thisNode()
+	n _ ?.tN..()
 	k _ ?.tK..
 	
 	#set default for current nuke session
@@ -72,7 +72,7 @@ ___ resetToDefault():
 	reset to standard knob default value
 	'''
 
-	n _ ?.thisNode()
+	n _ ?.tN..()
 	k _ ?.tK..
 
 	k.sV..(k.defaultValue())
@@ -98,7 +98,7 @@ ___ updateKnobInit(node,knob,value,mode):
 					print d
 				knobDefaults.remove(d)
 			____
-				pass
+				p..
 		__ found < 1:
 			__ ctrl __ T..:
 				print "not found in knobInit"
