@@ -1,6 +1,6 @@
-import nuke
-from clipboard import clipboard_core
+______ ?
+____ clipboard ______ clipboard_core
 
-menu = nuke.menu("Nuke")
-fxphd = menu.addMenu("FXPHD")
-fxphd.addCommand("Clipboard","clipboardCore.start()")
+menu _ ?.menu("Nuke")
+fxphd _ menu.aM..("FXPHD")
+fxphd.aC..("Clipboard","clipboardCore.start()")
