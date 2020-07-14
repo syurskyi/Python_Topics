@@ -157,11 +157,11 @@ c_ NodesByKnobValues(NodeStep):
             ___ node __ ?.allNodes():
 
                 __ node.Class() !_ rule["node_class"]:
-                    continue
+                    c___
 
                 knob _ node.knob(rule["knob_name"])
                 __ no. knob:
-                    continue
+                    c___
 
                 operator_ _ operators.get(rule["operator"])
                 __ no. operator_:
@@ -190,7 +190,7 @@ c_ NodesByKnobValues(NodeStep):
                     # that we must not proceed with as it will be giving us
                     # unwanted results.
                     except Exception:  # pylint: disable=broad-except
-                        continue
+                        c___
 
                 __ rule_matched:
                     logger.info(

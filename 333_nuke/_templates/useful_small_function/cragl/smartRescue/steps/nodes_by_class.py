@@ -91,7 +91,7 @@ c_ NodesByClass(NodeStep):
             ___ node __ ?.allNodes(recurseGroups_T..):
                 class_name _ node.Class()
                 __ class_name !_ node_class:
-                    continue
+                    c___
 
                 logger.info("@ '@' because its node class (@) is "
                                  "included in @", setup["mode"],

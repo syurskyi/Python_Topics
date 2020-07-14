@@ -82,14 +82,14 @@ ___ collect_nodes(mode):
     :return: list nodes to cleanup
     """
 
-    cleanup_list _ []
+    cleanup_list _ # list
     dependent_ _ mode[0]
     dependencies_ _ mode[1]
 
     ___ node __ nuke.allNodes():
 
         __ node.Class() __ ignore_list:
-            continue
+            c___
 
         __ dependent_ an. dependencies_:
             __ le.(node.dependent()) __ 0 an. le.(node.dependencies()) __ 0 an. node.minInputs() > 0 an. node.maxOutputs() > 0:
@@ -187,7 +187,7 @@ c_ CleanModeDialog(?W..):
 
         table_cleanup _ QTableWidget()
 
-        checkboxes _ []
+        checkboxes _ # list
 
         # set dimensions
         table_cleanup.setRowCount(le.(cleanup_list))
@@ -226,7 +226,7 @@ c_ CleanModeDialog(?W..):
             push_remove_node.setProperty("node", node.name())
             push_remove_node.setStyleSheet("QPushButton{background-color: rgb(90,30,30);}")
             table_cleanup.setCellWidget(r, 2, push_remove_node)
-            push_remove_node.c__.c..(lambda r_r, node_node: remove_node(r, node.name()))
+            push_remove_node.c__.c..(l___ r_r, node_node: remove_node(r, node.name()))
 
             r +_ 1
 
@@ -300,7 +300,7 @@ c_ CleanModeDialog(?W..):
             ___
                 disable _ nuke.toNode(c.property("node"))["disable"].setValue(c.isChecked())
             except Exception, e:
-                continue
+                c___
 
     ___ toggle_checkboxes
         """

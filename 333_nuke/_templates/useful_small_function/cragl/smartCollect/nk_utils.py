@@ -43,7 +43,7 @@ ___ get_nuke_exe(startup_feedback _ F..):
                     nuke_executable _ full_path.f..(?_version)
                 ____
                     nuke_executable _ full_path.f..(?_version, nuke_major_minor_version.split('v')[0])
-                __ __.path.isfile(nuke_executable):
+                __ __.pa__.isf..(nuke_executable):
                     executable _ nuke_executable
                     __ debug:
                         print 'Using found nuke executable: {}'.f..(executable)
@@ -51,7 +51,7 @@ ___ get_nuke_exe(startup_feedback _ F..):
 
         __ no. executable:
             private_tool_root _ helper.get_tool_private_root()
-            settings_path _ __.path.join(private_tool_root, 'settings.xml')
+            settings_path _ __.pa__.j..(private_tool_root, 'settings.xml')
             print templates.NO_NUKE_EXE_FOUND.f..(settings_path)
         r_ executable
 

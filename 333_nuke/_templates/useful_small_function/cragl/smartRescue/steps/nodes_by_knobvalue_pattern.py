@@ -117,11 +117,11 @@ c_ NodesByKnobValuePattern(NodeStep):
 
                 knob _ node.knob(knob_name)
                 __ no. knob:
-                    continue
+                    c___
 
                 knob_value _ knob.v..
                 __ no. re.search(pattern, knob_value):
-                    continue
+                    c___
 
                 logger.debug("@ node '@' because it matches a pattern. "
                                   "@: @ | Matching Pattern: @",

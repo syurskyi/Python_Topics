@@ -78,22 +78,22 @@ c_ Scanner(object):
         """
         logger.debug("Scanning for stacks: @", root)
 
-        __ no. __.path.isdir(root):
+        __ no. __.pa__.isd..(root):
             ___
-                __.makedirs(root)
+                __.m_d_(root)
             except IOError __ error:
                 raise IOError("Cannot create stack root in directory: "
                               "{}\n".f..(root, error.m..))
 
-        dirs _ [__.path.join(root, dir_) ___ dir_ __ __.listdir(root)
-                __ __.path.isdir(__.path.join(root, dir_))
+        dirs _ [__.pa__.j..(root, dir_) ___ dir_ __ __.l_d_(root)
+                __ __.pa__.isd..(__.pa__.j..(root, dir_))
                 an. no. dir_.startswith("_")]
 
-        logger.debug("Found stacks: @", ", ".join(dirs))
+        logger.debug("Found stacks: @", ", ".j..(dirs))
 
         stacks _ OrderedDict()
         ___ dir_ __ dirs:
-            stacks[__.path.basename(dir_)] _ _load_stack(dir_)
+            stacks[__.pa__.b_n_(dir_)] _ _load_stack(dir_)
 
         r_ stacks
 
@@ -111,35 +111,35 @@ c_ Scanner(object):
         """
         logger.debug("Scanning stack @", directory_path)
 
-        files _ (file_ ___ file_ __ __.listdir(directory_path)
+        files _ (file_ ___ file_ __ __.l_d_(directory_path)
                  __ file_.endswith(".json"))
 
-        commands _ []
+        commands _ # list
 
         ___ file_ __ files:
-            path _ __.path.join(directory_path, file_)
+            pa__ _ __.pa__.j..(directory_path, file_)
 
             ___
-                data _ _parse_json(path)
+                data _ _parse_json(pa__)
             except (IOError, KeyError, ValueError) __ error:
                 logger.warning(error.m..)
 
-            w__ o..(__.path.splitext(path)[0], "r") __ command_file:
+            w__ o..(__.pa__.s_t_(pa__)[0], "r") __ command_file:
                 command _ command_file.read()
 
             command_widget _ widgets.CommandWidget(
                 controller,
-                __.path.splitext(file_)[0], data["lang"], command,
+                __.pa__.s_t_(file_)[0], data["lang"], command,
                 data["icon"], data["color"]
             )
 
             commands.ap..(command_widget)
-            logger.debug("Add @.@", __.path.basename(path), file_)
+            logger.debug("Add @.@", __.pa__.b_n_(pa__), file_)
 
         r_ commands
 
     @staticmethod
-    ___ _parse_json(path):
+    ___ _parse_json(pa__):
         """Parse given json file and check for command file existence.
 
         Args:
@@ -154,16 +154,16 @@ c_ Scanner(object):
             ValueError: When the json file is non well formed.
 
         """
-        command_file _ __.path.splitext(path)[0]
-        __ no. __.path.isfile(command_file):
+        command_file _ __.pa__.s_t_(pa__)[0]
+        __ no. __.pa__.isf..(command_file):
             raise IOError("Skipping command due no to command file {}".f..(
-                path
+                pa__
             ))
 
-        w__ o..(path, "r") __ json_file:
+        w__ o..(pa__, "r") __ json_file:
             ___
-                r_ j___.load(json_file)
+                r_ j___.l..(json_file)
             except ValueError:
-                raise ValueError("Skipping corrupt command {}".f..(path))
+                raise ValueError("Skipping corrupt command {}".f..(pa__))
             except KeyError:
-                raise KeyError("Skipping insufficient command {}".f..(path))
+                raise KeyError("Skipping insufficient command {}".f..(pa__))

@@ -23,10 +23,10 @@ m.addCommand("Select Node in Viewer","SelectViewerNode.Launcher()")
 ______ re, nuke, nukescripts
 
 
-ViewersList _ []
+ViewersList _ # list
 
 ___ GetViewerList(ViewersList):
-    ViewersList _ []
+    ViewersList _ # list
     ActiveViewer_""
     ___
         ActiveViewer _ nuke.ViewerWindow.node(nuke.activeViewer()).name()
@@ -47,8 +47,8 @@ ___ GetViewerList(ViewersList):
     r_ ViewersList
    
 ___ SelectNode(Viewer,warning):
-    SelectedNodes _ []
-    Nodes_[]
+    SelectedNodes _ # list
+    Nodes_# list
     ActiveViewer_""
     Viewer _ re.sub(" ","",Viewer.value())
     Viewer _ "Viewer"+Viewer

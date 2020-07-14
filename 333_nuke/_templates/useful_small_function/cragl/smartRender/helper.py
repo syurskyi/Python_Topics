@@ -24,42 +24,42 @@ ____
 ______ templates
 
 ___ load_icons(*args):
-    this_dir _ __.path.join(__.path.dirname( -f))
-    dir_icon _ __.path.join(this_dir, '../', 'icons')
-    dir_icon _ __.path.n_p_(dir_icon)
-    r_ {'icon_logo': __.path.join(dir_icon, 'logo.png'),
-     'icon_nuke': __.path.join(dir_icon, 'nuke.png'),
-     'icon_log': __.path.join(dir_icon, 'log.png'),
-     'icon_refresh': __.path.join(dir_icon, 'refresh.png'),
-     'icon_display': __.path.join(dir_icon, 'display.png'),
-     'icon_job': __.path.join(dir_icon, 'job.png'),
-     'icon_trash': __.path.join(dir_icon, 'trash.png'),
-     'icon_explorer': __.path.join(dir_icon, 'explorer.png'),
-     'icon_finished': __.path.join(dir_icon, 'finished.png'),
-     'icon_waiting': __.path.join(dir_icon, 'waiting.png'),
-     'icon_paused': __.path.join(dir_icon, 'paused.png'),
-     'icon_error': __.path.join(dir_icon, 'error.png'),
-     'icon_all': __.path.join(dir_icon, 'all.png'),
-     'icon_folder': __.path.join(dir_icon, 'folder.png'),
-     'about': __.path.join(dir_icon, 'about.jpg'),
-     'icon_read': __.path.join(dir_icon, 'read.png'),
-     'icon_play': __.path.join(dir_icon, 'play.png'),
-     'icon_cancel': __.path.join(dir_icon, 'cancel.png'),
-     'icon_navigate': __.path.join(dir_icon, 'navigate.png'),
-     'icon_disk': __.path.join(dir_icon, 'disk.png'),
-     'icon_setting': __.path.join(dir_icon, 'setting.png'),
-     'icon_plus': __.path.join(dir_icon, 'plus.png'),
-     'icon_minus': __.path.join(dir_icon, 'minus.png'),
-     'icon_x': __.path.join(dir_icon, 'x.png'),
-     'icon_arr_left': __.path.join(dir_icon, 'arr_left.png'),
-     'icon_arr_right': __.path.join(dir_icon, 'arr_right.png'),
-     'icon_apply': __.path.join(dir_icon, 'apply.png'),
-     'icon_on': __.path.join(dir_icon, 'on.png'),
-     'icon_off': __.path.join(dir_icon, 'off.png'),
-     'icon_batch': __.path.join(dir_icon, 'batch.png'),
-     'icon_process': __.path.join(dir_icon, 'process.gif'),
-     'icon_current': __.path.join(dir_icon, 'current.png'),
-     'icon_recent': __.path.join(dir_icon, 'recent.png')}
+    this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
+    dir_icon _ __.pa__.j..(this_dir, '../', 'icons')
+    dir_icon _ __.pa__.n_p_(dir_icon)
+    r_ {'icon_logo': __.pa__.j..(dir_icon, 'logo.png'),
+     'icon_nuke': __.pa__.j..(dir_icon, 'nuke.png'),
+     'icon_log': __.pa__.j..(dir_icon, 'log.png'),
+     'icon_refresh': __.pa__.j..(dir_icon, 'refresh.png'),
+     'icon_display': __.pa__.j..(dir_icon, 'display.png'),
+     'icon_job': __.pa__.j..(dir_icon, 'job.png'),
+     'icon_trash': __.pa__.j..(dir_icon, 'trash.png'),
+     'icon_explorer': __.pa__.j..(dir_icon, 'explorer.png'),
+     'icon_finished': __.pa__.j..(dir_icon, 'finished.png'),
+     'icon_waiting': __.pa__.j..(dir_icon, 'waiting.png'),
+     'icon_paused': __.pa__.j..(dir_icon, 'paused.png'),
+     'icon_error': __.pa__.j..(dir_icon, 'error.png'),
+     'icon_all': __.pa__.j..(dir_icon, 'all.png'),
+     'icon_folder': __.pa__.j..(dir_icon, 'folder.png'),
+     'about': __.pa__.j..(dir_icon, 'about.jpg'),
+     'icon_read': __.pa__.j..(dir_icon, 'read.png'),
+     'icon_play': __.pa__.j..(dir_icon, 'play.png'),
+     'icon_cancel': __.pa__.j..(dir_icon, 'cancel.png'),
+     'icon_navigate': __.pa__.j..(dir_icon, 'navigate.png'),
+     'icon_disk': __.pa__.j..(dir_icon, 'disk.png'),
+     'icon_setting': __.pa__.j..(dir_icon, 'setting.png'),
+     'icon_plus': __.pa__.j..(dir_icon, 'plus.png'),
+     'icon_minus': __.pa__.j..(dir_icon, 'minus.png'),
+     'icon_x': __.pa__.j..(dir_icon, 'x.png'),
+     'icon_arr_left': __.pa__.j..(dir_icon, 'arr_left.png'),
+     'icon_arr_right': __.pa__.j..(dir_icon, 'arr_right.png'),
+     'icon_apply': __.pa__.j..(dir_icon, 'apply.png'),
+     'icon_on': __.pa__.j..(dir_icon, 'on.png'),
+     'icon_off': __.pa__.j..(dir_icon, 'off.png'),
+     'icon_batch': __.pa__.j..(dir_icon, 'batch.png'),
+     'icon_process': __.pa__.j..(dir_icon, 'process.gif'),
+     'icon_current': __.pa__.j..(dir_icon, 'current.png'),
+     'icon_recent': __.pa__.j..(dir_icon, 'recent.png')}
 
 
 ___ get_next_renderjob(*args):
@@ -78,17 +78,17 @@ ___ get_next_renderjob(*args):
 ___ get_all_write_nodes_data(*args):
     write_data _ {}
     all_write_nodes _ [ node ___ node __ ?.allNodes('Write') __ node['disable'].gV.. __ 0.0 ]
-    ___ write __ all_write_nodes:
-        write_data[write.name()] _ write['file'].gV..
+    ___ w.. __ all_write_nodes:
+        write_data[w...name()] _ w..['file'].gV..
 
     r_ write_data
 
 
 ___ get_smart_render_private_root(*args):
-    root _ __.path.join(__.path.expanduser('~'), '.cragl', 'smartRender')
-    __ no. __.path.isdir(root):
+    root _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartRender')
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         ______
             write_log('unable to create settings root dir')
 
@@ -96,10 +96,10 @@ ___ get_smart_render_private_root(*args):
 
 
 ___ get_smart_render_public_root(*args):
-    root _ __.path.join(__.path.expanduser('~'), 'cragl', 'smartRender')
-    __ no. __.path.isdir(root):
+    root _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartRender')
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         ______
             write_log('unable to create open dir')
 
@@ -107,16 +107,16 @@ ___ get_smart_render_public_root(*args):
 
 
 ___ get_installed_root_dir(*args):
-    this_dir _ __.path.join(__.path.dirname( -f))
-    root _ __.path.join(this_dir, '../', '../')
-    r_ __.path.n_p_(root)
+    this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
+    root _ __.pa__.j..(this_dir, '../', '../')
+    r_ __.pa__.n_p_(root)
 
 
 ___ get_public_cache_folder():
-    cache_dir _ __.path.join(get_smart_render_public_root(), 'cache')
-    __ no. __.path.isdir(cache_dir):
+    cache_dir _ __.pa__.j..(get_smart_render_public_root(), 'cache')
+    __ no. __.pa__.isd..(cache_dir):
         ___
-            __.makedirs(cache_dir)
+            __.m_d_(cache_dir)
         ______
             msg _ 'Unable to create cache directory at {}'.f..(cache_dir)
             write_log(msg)
@@ -125,10 +125,10 @@ ___ get_public_cache_folder():
 
 
 ___ get_tmp_folder():
-    tmp_dir _ __.path.join(get_smart_render_public_root(), 'tmp')
-    __ no. __.path.isdir(tmp_dir):
+    tmp_dir _ __.pa__.j..(get_smart_render_public_root(), 'tmp')
+    __ no. __.pa__.isd..(tmp_dir):
         ___
-            __.makedirs(tmp_dir)
+            __.m_d_(tmp_dir)
         ______
             msg _ 'Unable to create tmp directory at {}'.f..(tmp_dir)
             write_log(msg)
@@ -137,10 +137,10 @@ ___ get_tmp_folder():
 
 
 ___ get_smartRender_backup_dir(*args):
-    backup_dir _ __.path.join(get_smart_render_public_root(), 'backups')
-    __ no. __.path.isdir(backup_dir):
+    backup_dir _ __.pa__.j..(get_smart_render_public_root(), 'backups')
+    __ no. __.pa__.isd..(backup_dir):
         ___
-            __.makedirs(backup_dir)
+            __.m_d_(backup_dir)
         ______
             write_log('unable to create backup dir')
 
@@ -148,10 +148,10 @@ ___ get_smartRender_backup_dir(*args):
 
 
 ___ get_smartrender_log_dir(*args):
-    logs_dir _ __.path.join(get_smart_render_public_root(), 'logs')
-    __ no. __.path.isdir(logs_dir):
+    logs_dir _ __.pa__.j..(get_smart_render_public_root(), 'logs')
+    __ no. __.pa__.isd..(logs_dir):
         ___
-            __.makedirs(logs_dir)
+            __.m_d_(logs_dir)
         ______
             write_log('unable to create logs dir')
 
@@ -159,12 +159,12 @@ ___ get_smartrender_log_dir(*args):
 
 
 ___ get_sounds_dir(*args):
-    this_dir _ __.path.dirname( -f)
-    sounds_dir _ __.path.join(this_dir, '../', 'sounds')
-    sounds_dir _ __.path.n_p_(sounds_dir)
-    __ no. __.path.isdir(sounds_dir):
+    this_dir _ __.pa__.d_n_( -f)
+    sounds_dir _ __.pa__.j..(this_dir, '../', 'sounds')
+    sounds_dir _ __.pa__.n_p_(sounds_dir)
+    __ no. __.pa__.isd..(sounds_dir):
         ___
-            __.makedirs(sounds_dir)
+            __.m_d_(sounds_dir)
         ______
             write_log('unable to create sounds dir in {}.'.f..(sounds_dir))
 
@@ -172,9 +172,9 @@ ___ get_sounds_dir(*args):
 
 
 ___ get_tooltips_file(*args):
-    this_dir _ __.path.dirname( -f)
-    tooltips _ __.path.join(this_dir, '../', 'data', 'tooltips.json')
-    r_ __.path.n_p_(tooltips)
+    this_dir _ __.pa__.d_n_( -f)
+    tooltips _ __.pa__.j..(this_dir, '../', 'data', 'tooltips.json')
+    r_ __.pa__.n_p_(tooltips)
 
 
 ___ update_job_log(job_id, processdata, ti__ _ str(in.(ti__.ti__())), *args):
@@ -193,18 +193,18 @@ ___ update_job_log(job_id, processdata, ti__ _ str(in.(ti__.ti__())), *args):
             p.text _ processdata[2]
             w__ o..(jobs_xml, 'w') __ xml:
                 prettyprint(jobs_root)
-                jobs_tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+                jobs_tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
             r_ T..
 
 
 ___ check_xml_ok(xml, *args):
-    settings_xml _ __.path.join(get_smart_render_private_root(), 'settings.xml')
+    settings_xml _ __.pa__.j..(get_smart_render_private_root(), 'settings.xml')
     ___
         w__ o..(xml, 'r') __ xml_file:
             ET.fromstring(xml_file.read())
         r_ T..
     ______
-        xml_name _ __.path.basename(xml)
+        xml_name _ __.pa__.b_n_(xml)
         m.. _ 'The smartRender {} file seems to be broken. Do you want to reset it now?'.f..(xml_name)
         write_log('smartRender {} file broken.'.f..(xml_name))
         msg_box _ ?W...QMessageBox(?W...QMessageBox.Warning, 'QMessageBox.warning()', m.., ?W...QMessageBox.NoButton)
@@ -214,7 +214,7 @@ ___ check_xml_ok(xml, *args):
         reset.clearFocus()
         msg_box.addButton('Cancel', ?W...QMessageBox.RejectRole)
         __ msg_box.exec_() __ ?W...QMessageBox.AcceptRole:
-            __ __.path.isfile(xml):
+            __ __.pa__.isf..(xml):
                 __.remove(xml)
                 __ xml __ settings_xml:
                     get_settings_xml()
@@ -247,7 +247,7 @@ ___ update_job_data(job_id, key, val, *args):
                     setting.text _ val
                     w__ o..(jobs_xml, 'w') __ xml:
                         prettyprint(jobs_root)
-                        jobs_tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+                        jobs_tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ calculate_process_precentage(job_id, frame, *args):
@@ -287,15 +287,15 @@ ___ calculate_process_precentage(job_id, frame, *args):
 
             w__ o..(jobs_xml, 'w') __ xml:
                 prettyprint(jobs_root)
-                jobs_tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+                jobs_tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
             r_ done_precentage
 
 
 ___ set_style_sheet(widget, *args):
-    this_dir _ __.path.join(__.path.dirname( -f))
-    styles_nuke _ __.path.join(this_dir, '../', 'styles', 'nuke.qss')
-    styles_nuke _ __.path.n_p_(styles_nuke)
-    __ __.path.isfile(styles_nuke):
+    this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
+    styles_nuke _ __.pa__.j..(this_dir, '../', 'styles', 'nuke.qss')
+    styles_nuke _ __.pa__.n_p_(styles_nuke)
+    __ __.pa__.isf..(styles_nuke):
         w__ o..(styles_nuke) __ file_:
             widget.setStyleSheet(file_.read())
 
@@ -331,7 +331,7 @@ ___ get_job_id_by_script_orig(script_orig, *args):
     except Exception __ e:
         r_ ''
 
-    jobs _ []
+    jobs _ # list
     ___ job __ jobs_root.find('jobs').f_a_('job'):
         ___ setting __ job.f_a_('setting'):
             __ setting.get('name') __ 'script_orig':
@@ -353,7 +353,7 @@ ___ get_job_id_by_script_orig(script_orig, *args):
 
 ___ get_job_data(job_id, *args):
     job_data _ {}
-    frames_to_process _ []
+    frames_to_process _ # list
     ___
         jobs_xml _ get_job_xml()
         __ jobs_xml __ '':
@@ -399,35 +399,35 @@ ___ get_all_jobs_data(filter, *args):
         jobs[job_id] _ get_job_data(job_id)
         __ filter __ 'waiting' an. jobs[job_id]['status'] !_ 'waiting':
             del jobs[job_id]
-            continue
+            c___
         __ filter __ 'waiting' an. jobs[job_id]['status'] !_ 'waiting':
             del jobs[job_id]
-            continue
+            c___
         ____ filter __ 'paused' an. jobs[job_id]['status'] !_ 'paused':
             del jobs[job_id]
-            continue
+            c___
         ____ filter __ 'cancelled' an. jobs[job_id]['status'] !_ 'cancelled':
             del jobs[job_id]
-            continue
+            c___
         ____ filter __ 'error' an. jobs[job_id]['status'] !_ 'error':
             del jobs[job_id]
-            continue
+            c___
         ____ filter __ 'finished' an. jobs[job_id]['status'] !_ 'finished':
             del jobs[job_id]
-            continue
+            c___
 
     r_ jobs
 
 
 ___ get_log_file(*args):
-    connect_dir _ __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ no. __.path.isdir(connect_dir):
-        __.makedirs(connect_dir)
-    log_file _ __.path.join(connect_dir, 'connectlog.txt')
-    __ no. __.path.isfile(log_file):
+    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    __ no. __.pa__.isd..(connect_dir):
+        __.m_d_(connect_dir)
+    log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
+    __ no. __.pa__.isf..(log_file):
         w__ o..(log_file, 'w') __ lf:
             log_template _ 'connect log\n{}\n'.f..('-' * 50)
-            lf.write(log_template)
+            lf.w..(log_template)
     r_ log_file
 
 
@@ -439,17 +439,17 @@ ___ write_log(text, tool _ 'rn'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
         log_time _ ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
+        file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ write_render_log(text, *args):
-    log _ __.path.join(get_smart_render_private_root(), 'log.txt')
-    __ no. __.path.isfile(log):
+    log _ __.pa__.j..(get_smart_render_private_root(), 'log.txt')
+    __ no. __.pa__.isf..(log):
         w__ o..(log, 'w') __ lf:
-            lf.write('')
+            lf.w..('')
     ___
         w__ o..(log, 'a') __ lf:
-            lf.write('{}: {}\n'.f..(get_time_formated()), text)
+            lf.w..('{}: {}\n'.f..(get_time_formated()), text)
         r_ T..
     except IOError:
         r_ F..
@@ -457,25 +457,25 @@ ___ write_render_log(text, *args):
 
 ___ write_terminal_cmd(job_id, text, file _ 'input', *args):
     log_name _ '{}_terminal_{}.log'.f..(job_id, file)
-    log _ __.path.join(get_smartrender_log_dir(), log_name)
-    __ no. __.path.isfile(log):
+    log _ __.pa__.j..(get_smartrender_log_dir(), log_name)
+    __ no. __.pa__.isf..(log):
         w__ o..(log, 'w') __ file_:
-            file_.write('')
+            file_.w..('')
     ___
         w__ o..(log, 'a') __ file_:
-            file_.write('{}\n'.f..(text))
+            file_.w..('{}\n'.f..(text))
         r_ T..
     except IOError:
         r_ F..
 
 
 ___ get_job_xml(*args):
-    job_xml _ __.path.join(get_smart_render_private_root(), 'jobs.xml')
-    __ no. __.path.isfile(job_xml):
+    job_xml _ __.pa__.j..(get_smart_render_private_root(), 'jobs.xml')
+    __ no. __.pa__.isf..(job_xml):
         ___
             w__ o..(job_xml, 'w') __ job_template:
                 template _ templates.JOB
-                job_template.write(template.strip())
+                job_template.w..(template.strip())
                 write_log("smartRender job log doesn't exist. created template at: {}".f..(job_xml))
         ______
             write_log('Failed writing smartRender job log template to: {}'.f..(job_xml))
@@ -483,18 +483,18 @@ ___ get_job_xml(*args):
     r_ job_xml
 
 
-___ insert_as_read_node(job_details, write _ N.., *args):
-    __ write:
+___ insert_as_read_node(job_details, w.. _ N.., *args):
+    __ w..:
         read _ ?.createNode('Read')
-        read['file'].sV..(write['file'].getValue())
+        read['file'].sV..(w..['file'].getValue())
         read['first'].sV..(in.(?.root()['first_frame'].getValue()))
         read['origfirst'].sV..(in.(?.root()['first_frame'].getValue()))
         read['last'].sV..(in.(?.root()['last_frame'].getValue()))
         read['origlast'].sV..(in.(?.root()['last_frame'].getValue()))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
-        read.setXYpos(in.(write['xpos'].getValue()), in.(write['ypos'].getValue()) + 70)
-        ?.zoom(1.0, (write.xpos(), write.ypos()))
+        read.setXYpos(in.(w..['xpos'].getValue()), in.(w..['ypos'].getValue()) + 70)
+        ?.zoom(1.0, (w...xpos(), w...ypos()))
         ?.connect_selected_to_viewer(0)
     ____
         read _ ?.createNode('Read')
@@ -524,10 +524,10 @@ ___ get_job_details(job_id, *args):
 
 ___ force_create_render_dir(*args):
     file_name _ ?.filename(?.thisNode())
-    dir_name _ __.path.dirname(file_name)
+    dir_name _ __.pa__.d_n_(file_name)
     os_dir _ ?.callbacks.filenameFilter(dir_name)
     ___
-        __.makedirs(os_dir)
+        __.m_d_(os_dir)
     except OSError __ e:
         __ e.errno !_ errno.EEXIST:
             raise
@@ -535,8 +535,8 @@ ___ force_create_render_dir(*args):
 
 ___ load_terminal_log(job_id, mode, *args):
     xml_name _ '{}_terminal_{}.log'.f..(job_id, mode)
-    terminal_file _ __.path.join(get_smartrender_log_dir(), xml_name)
-    __ no. __.path.isfile(terminal_file):
+    terminal_file _ __.pa__.j..(get_smartrender_log_dir(), xml_name)
+    __ no. __.pa__.isf..(terminal_file):
         r_ ''
     ___
         w__ o..(terminal_file, 'rt') __ file:
@@ -558,21 +558,21 @@ ___ load_job_log_data(job_id, filter, file_output _ F.., *args):
                 code _ ''
                 __ data.get('status') __ '100':
                     __ filter !_ 'job: all' an. filter !_ 'job: error':
-                        continue
+                        c___
                     __ file_output:
                         code _ '[error]'
                     ____
                         code _ "[<span style='color:#993333'>error</span>"
                 ____ data.get('status') __ '300':
                     __ filter !_ 'job: all' an. filter !_ 'job: info':
-                        continue
+                        c___
                     __ file_output:
                         code _ '[info]'
                     ____
                         code _ '[info'
                 ____ data.get('status') __ '400':
                     __ filter !_ 'job: all' an. filter !_ 'job: done':
-                        continue
+                        c___
                     __ file_output:
                         code _ '[done]'
                     ____
@@ -588,16 +588,16 @@ ___ load_job_log_data(job_id, filter, file_output _ F.., *args):
     r_ job_data
 
 
-___ open_in_explorer(path, parent _ N.., *args):
-    __ no. __.path.isdir(path):
-        msg _ "Unable to open directory. The path doesn't exist:\n\n{}".f..(path)
+___ open_in_explorer(pa__, parent _ N.., *args):
+    __ no. __.pa__.isd..(pa__):
+        msg _ "Unable to open directory. The path doesn't exist:\n\n{}".f..(pa__)
         show_message_box(parent, msg)
     __ pl...system() __ 'Windows':
-        __.startfile(path)
+        __.startfile(pa__)
     ____ pl...system() __ 'Darwin':
-        subprocess.P..(['open', path])
+        subprocess.P..(['open', pa__])
     ____
-        subprocess.P..(['xdg-open', path])
+        subprocess.P..(['xdg-open', pa__])
 
 
 ___ reset_file(which, window, *args):
@@ -614,7 +614,7 @@ ___ reset_file(which, window, *args):
         __ which __ 'jobs':
             jobs_file _ get_job_xml()
             ___
-                __ __.path.isfile(jobs_file):
+                __ __.pa__.isf..(jobs_file):
                     __.remove(jobs_file)
                     msg _ 'Successfully flushed jobs file.'
                     show_message_box(window, msg)
@@ -624,7 +624,7 @@ ___ reset_file(which, window, *args):
         ____ which __ 'settings':
             settings_file _ get_settings_xml()
             ___
-                __ __.path.isfile(settings_file):
+                __ __.pa__.isf..(settings_file):
                     __.remove(settings_file)
                     msg _ 'Successfully reset the smartRender settings.'
                     show_message_box(window, msg)
@@ -633,13 +633,13 @@ ___ reset_file(which, window, *args):
 
 
 ___ get_settings_xml(*args):
-    settings_xml _ __.path.join(get_smart_render_private_root(), 'settings.xml')
-    __ no. __.path.isfile(settings_xml):
-        desktop_cache _ __.path.join(__.path.expanduser('~'), 'Desktop/cache')
+    settings_xml _ __.pa__.j..(get_smart_render_private_root(), 'settings.xml')
+    __ no. __.pa__.isf..(settings_xml):
+        desktop_cache _ __.pa__.j..(__.pa__.expanduser('~'), 'Desktop/cache')
         ___
             w__ o..(settings_xml, 'w') __ render_template:
                 template _ templates.SETTINGS.f..(public_cache_get_public_cache_folder(), desktop_cache_desktop_cache)
-                render_template.write(template.strip())
+                render_template.w..(template.strip())
                 write_log("smartRender settings doesn't exist. created template at: {}".f..(settings_xml))
         ______
             write_log('Failed writing smartRender settings template at: {}'.f..(settings_xml))
@@ -677,7 +677,7 @@ ___ check_settings_xml_values_exist():
      'auto_close_renderinfo': 'True',
      'show_render_file_name': 'True',
      'tooltips': 'True'}
-    ___ key, value __ settings.items():
+    ___ key, value __ settings.i..():
         check_xml_value_exists('settings', 'setting', 'name', key, value)
 
     settings_current _ {'range': 'global',
@@ -686,17 +686,17 @@ ___ check_settings_xml_values_exist():
      'overwrite': 'True',
      'size': 'full',
      'thread_count': str(in.(get_cpu_count() / 2))}
-    ___ key, value __ settings_current.items():
+    ___ key, value __ settings_current.i..():
         check_xml_value_exists_current('setting', 'name', key, value)
 
 
 ___ load_sounds(*args):
-    sounds _ []
+    sounds _ # list
     sounds_dir _ get_sounds_dir()
-    __ no. __.path.isdir(sounds_dir):
+    __ no. __.pa__.isd..(sounds_dir):
         r_
-    ___ file_ __ __.listdir(sounds_dir):
-        __ __.path.splitext(file_)[1] __ ('.wav', '.WAV'):
+    ___ file_ __ __.l_d_(sounds_dir):
+        __ __.pa__.s_t_(file_)[1] __ ('.wav', '.WAV'):
             sounds.ap..(file_)
 
     r_ sounds
@@ -743,24 +743,24 @@ ___ load_presets(*args):
 
 
 ___ play_sound(sound, *args):
-    sound_file _ __.path.join(get_sounds_dir(), sound)
-    __ __.path.isfile(sound_file):
+    sound_file _ __.pa__.j..(get_sounds_dir(), sound)
+    __ __.pa__.isf..(sound_file):
         ?W...QSound.play(sound_file)
 
 
 ___ load_settings(*args):
     settings_xml _ get_settings_xml()
     settings _ {}
-    cache_paths _ []
+    cache_paths _ # list
     __ check_xml_ok(settings_xml):
         settingstree _ ET.parse(settings_xml)
         settingsroot _ settingstree.getroot()
         ___ setting __ settingsroot.find('settings').f_a_('setting'):
             settings[setting.get('name')] _ setting.text
 
-        ___ path __ settingsroot.find('cache').f_a_('path'):
-            cache_paths.ap..({'mode': path.get('mode'),
-             'path': path.text})
+        ___ pa__ __ settingsroot.find('cache').f_a_('path'):
+            cache_paths.ap..({'mode': pa__.get('mode'),
+             'path': pa__.text})
 
         settings['cache'] _ cache_paths
     r_ settings
@@ -770,23 +770,23 @@ ___ get_caches_by_mode(mode, *args):
     r_ [ cache['path'] ___ cache __ load_settings()['cache'] __ cache['mode'] __ mode ]
 
 
-___ add_cache_path(mode, path, *args):
+___ add_cache_path(mode, pa__, *args):
     settings_xml _ get_settings_xml()
     __ settings_xml __ '':
         r_
     settings_tree _ ET.parse(settings_xml)
     settings_root _ settings_tree.getroot()
     new_cache_path _ ET.SubElement(settings_root.find('cache'), 'path')
-    new_cache_path.text _ path
+    new_cache_path.text _ pa__
     new_cache_path.set('mode', mode)
     ET.dump(new_cache_path)
     w__ o..(settings_xml, 'w') __ xml:
         prettyprint(settings_root)
-        settings_tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        settings_tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
-    xml _ __.path.join(get_smart_render_private_root(), 'settings.xml')
+    xml _ __.pa__.j..(get_smart_render_private_root(), 'settings.xml')
     tree _ ET.parse(xml)
     root _ tree.getroot()
     debug _ F..
@@ -807,12 +807,12 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
         root.find(parent).ap..(elem)
         w__ o..(xml, 'w') __ xml:
             prettyprint(root)
-            tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+            tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
-    xml _ __.path.join(get_smart_render_private_root(), 'settings.xml')
+    xml _ __.pa__.j..(get_smart_render_private_root(), 'settings.xml')
     tree _ ET.parse(xml)
     root _ tree.getroot()
     debug _ F..
@@ -834,12 +834,12 @@ ___ check_xml_value_exists_cache(parent, section, key1, value1, text, key2 _ '',
         root.find(parent).ap..(elem)
         w__ o..(xml, 'w') __ xml:
             prettyprint(root)
-            tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+            tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
 ___ check_xml_value_exists_current(section, key1, value1, text, key2 _ '', value2 _ ''):
-    settings_xml _ __.path.join(get_smart_render_private_root(), 'settings.xml')
+    settings_xml _ __.pa__.j..(get_smart_render_private_root(), 'settings.xml')
     tree _ ET.parse(settings_xml)
     root _ tree.getroot()
     item_found _ 0
@@ -866,7 +866,7 @@ ___ check_xml_value_exists_current(section, key1, value1, text, key2 _ '', value
                     child.ap..(elem)
                     w__ o..(settings_xml, 'w'):
                         prettyprint(root)
-                        tree.write(settings_xml, encoding_'utf-8', xml_declaration_T..)
+                        tree.w..(settings_xml, encoding_'utf-8', xml_declaration_T..)
                     write_log('settings xml added: {}|{}|{}|{}|{}|{}'.f..(section, key1, value1, text, key2, value2))
 
 
@@ -904,16 +904,16 @@ ___ prettyprint(elem, level _ 0):
         elem.tail _ i
 
 
-___ delete_cache_path(path, *args):
+___ delete_cache_path(pa__, *args):
     settings_xml _ get_settings_xml()
     settings_tree _ ET.parse(settings_xml)
     settings_root _ settings_tree.getroot()
     ___ path_element __ settings_root.find('cache').f_a_('path'):
-        __ path_element.text __ path:
+        __ path_element.text __ pa__:
             settings_root.find('cache').remove(path_element)
             w__ o..(settings_xml, 'w') __ xml:
                 prettyprint(settings_root)
-                settings_tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+                settings_tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_button_text _ ''):
@@ -946,7 +946,7 @@ ___ create_unique_job_id(*args):
 
 ___ get_all_views(range_ _ 10):
     ___
-        views _ []
+        views _ # list
         ___ i __ ra..(range_):
             ?.activeViewer().previousView()
 
@@ -962,10 +962,10 @@ ___ get_all_views(range_ _ 10):
 
 ___ create_tooltips(parent, key, *args):
     tooltips_file _ get_tooltips_file()
-    __ no. __.path.isfile(tooltips_file):
+    __ no. __.pa__.isf..(tooltips_file):
         r_
     w__ o..(tooltips_file) __ json_file:
-        ttdata _ j___.load(json_file)
+        ttdata _ j___.l..(json_file)
     ___ widget __ parent.findChildren(?C...QObject):
         ___ tooltip __ ttdata[key]:
             __ tooltip['tt'] __ widget.property('tt'):
@@ -980,9 +980,9 @@ ___ get_explorer_name(*args):
 
 
 ___ get_recent_nukescripts(*args):
-    file_recent_files _ __.path.join(__.path.expanduser('~'), '.nuke', 'recent_files')
-    recent_files _ []
-    __ __.path.isfile(file_recent_files):
+    file_recent_files _ __.pa__.j..(__.pa__.expanduser('~'), '.nuke', 'recent_files')
+    recent_files _ # list
+    __ __.pa__.isf..(file_recent_files):
         w__ o..(file_recent_files, 'r') __ rf:
             ___ line __ rf:
                 file_ _ line.r..('\n', '')
@@ -991,7 +991,7 @@ ___ get_recent_nukescripts(*args):
 
             r_ recent_files
     ____
-        r_ []
+        r_ # list
 
 
 ___ open_renderpath_in_explorer(label, renderpath, srw, *args):
@@ -1001,16 +1001,16 @@ ___ open_renderpath_in_explorer(label, renderpath, srw, *args):
         show_message_box(srw, msg)
         r_
     ___
-        open_in_explorer(__.path.dirname(renderpath), parent_srw)
+        open_in_explorer(__.pa__.d_n_(renderpath), parent_srw)
     except Exception __ e:
         show_message_box(srw, 'An error occurred: {}'.f..(e))
         r_
 
 
 ___ get_processor(name):
-    this_dir _ __.path.dirname( -f)
-    processor _ __.path.join(this_dir, '../', 'trm', '{}.py'.f..(name))
-    processor _ __.path.n_p_(processor)
-    __ no. __.path.isfile(processor):
+    this_dir _ __.pa__.d_n_( -f)
+    processor _ __.pa__.j..(this_dir, '../', 'trm', '{}.py'.f..(name))
+    processor _ __.pa__.n_p_(processor)
+    __ no. __.pa__.isf..(processor):
         raise IOError('The processor script does not exist: {}'.f..(processor))
     r_ processor

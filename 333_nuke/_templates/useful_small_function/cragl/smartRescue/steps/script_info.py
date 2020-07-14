@@ -203,11 +203,11 @@ c_ ScriptInfo(NodeStep):
             #     # Extract values.
             r_ knob.v.. or "---"
 
-        root_values _ []
+        root_values _ # list
         ___ knob_name __ setup["root_info"]:
             knob _ ?.root().knob(knob_name)
             __ no. knob:
-                continue
+                c___
 
             value _ _format_value(knob_name, knob)
             root_values.ap..((knob_name, value))
@@ -232,14 +232,14 @@ c_ ScriptInfo(NodeStep):
                 )
 
         """
-        footage _ []
+        footage _ # list
         ___ node __ ?.allNodes(recurseGroups_T..):
             ___ knob_name __ path_knobs:
                 path_knob _ node.knob(knob_name)
                 __ no. path_knob:
-                    continue
-                path _ path_knob.evaluate() or "---"
-                footage.ap..((node.name(), path))
+                    c___
+                pa__ _ path_knob.evaluate() or "---"
+                footage.ap..((node.name(), pa__))
 
         r_ tuple(footage)
 
@@ -272,7 +272,7 @@ c_ ScriptInfo(NodeStep):
                 )
 
         """
-        stats _ []
+        stats _ # list
         list_node_classes _ setup["number_nodes_by_class"]
         __ list_node_classes:
             node_classes _ list_node_classes
@@ -305,23 +305,23 @@ c_ ScriptInfo(NodeStep):
 
     ___ process
         """Generate the working file info."""
-        copy_basename _ "{}_info.txt".f..(basename)
-        info_path _ __.path.join(parent_dir, copy_basename)
+        copy_basename _ "{}_info.txt".f..(b_n_)
+        info_path _ __.pa__.j..(parent_dir, copy_basename)
 
         logger.info("Creating information file @", info_path)
 
         w__ o..(info_path, "w") __ dest:
             separator _ "-" * 50
             first_frame, last_frame _ frame_range()
-            root_values _ "\n".join(
+            root_values _ "\n".j..(
                 [tuple_to_human_readable(root_value)
                  ___ root_value __ root_values()]
             )
-            footages _ "\n".join(
+            footages _ "\n".j..(
                 [tuple_to_human_readable(footage)
                  ___ footage __ footage_paths()]
             )
-            node_classes_stats _ "\n".join(
+            node_classes_stats _ "\n".j..(
                 [tuple_to_human_readable(stat)
                  ___ stat __ len_nodes_by_class()]
             )
@@ -338,4 +338,4 @@ c_ ScriptInfo(NodeStep):
                 footages_footages,
                 node_classes_stats_node_classes_stats
             )
-            dest.write(content)
+            dest.w..(content)

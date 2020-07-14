@@ -20,23 +20,23 @@ ____ smartCommand ______ templates
 ____ smartCommand.info ______ __product__
 
 ___ load_icons():
-    this_dir _ __.path.dirname( -f)
-    dir_icon _ __.path.join(this_dir, 'icons')
-    dir_icon _ __.path.n_p_(dir_icon)
+    this_dir _ __.pa__.d_n_( -f)
+    dir_icon _ __.pa__.j..(this_dir, 'icons')
+    dir_icon _ __.pa__.n_p_(dir_icon)
     icons _ {}
-    ___ file_ __ __.listdir(dir_icon):
-        name _ __.path.splitext(file_)[0]
-        path _ __.path.join(dir_icon, file_)
-        icons[name] _ path
+    ___ file_ __ __.l_d_(dir_icon):
+        name _ __.pa__.s_t_(file_)[0]
+        pa__ _ __.pa__.j..(dir_icon, file_)
+        icons[name] _ pa__
 
     r_ icons
 
 
 ___ set_style_sheet(widget, style _ 'styles.qss'):
-    this_dir _ __.path.join(__.path.dirname( -f))
-    styles _ __.path.join(this_dir, 'styles', style)
-    styles _ __.path.n_p_(styles)
-    __ __.path.isfile(styles):
+    this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
+    styles _ __.pa__.j..(this_dir, 'styles', style)
+    styles _ __.pa__.n_p_(styles)
+    __ __.pa__.isf..(styles):
         w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
@@ -52,10 +52,10 @@ ___ get_tool_root(which):
         cragl_dir _ '.cragl'
     ____
         cragl_dir _ 'cragl'
-    root _ __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
-    __ no. __.path.isdir(root):
+    root _ __.pa__.j..(__.pa__.expanduser('~'), cragl_dir, __product__)
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         except IOError:
             write_log('unable to create open tool dir at: {}'.f..(root))
 
@@ -66,18 +66,18 @@ ___ write_log(text, tool _ 'sc'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
         log_time _ ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
+        file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ get_log_file():
-    connect_dir _ __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ no. __.path.isdir(connect_dir):
-        __.makedirs(connect_dir)
-    log_file _ __.path.join(connect_dir, 'connectlog.txt')
-    __ no. __.path.isfile(log_file):
+    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    __ no. __.pa__.isd..(connect_dir):
+        __.m_d_(connect_dir)
+    log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
+    __ no. __.pa__.isf..(log_file):
         w__ o..(log_file, 'w') __ lf:
             log_template _ 'connect log\n{}\n'.f..('-' * 50)
-            lf.write(log_template)
+            lf.w..(log_template)
     r_ log_file
 
 
@@ -100,9 +100,9 @@ ___ load_settings():
 
 ___ get_collection_root():
     collection_root _ load_settings()['collection_root']
-    __ no. __.path.isdir(collection_root):
+    __ no. __.pa__.isd..(collection_root):
         ___
-            __.makedirs(collection_root)
+            __.m_d_(collection_root)
         except OSError:
             msg _ "Cannot create menu direcory in '{}'. Please set a different path.".f..(collection_root)
             ?.m..(msg)
@@ -112,9 +112,9 @@ ___ get_collection_root():
 
 ___ get_scriptlets_root():
     scriptlet_root _ load_settings()['scriptlets']
-    __ no. __.path.isdir(scriptlet_root):
+    __ no. __.pa__.isd..(scriptlet_root):
         ___
-            __.makedirs(scriptlet_root)
+            __.m_d_(scriptlet_root)
         except OSError:
             msg _ "Cannot create scriptlet direcory in '{}'. Please set a different path.".f..(scriptlet_root)
             ?.m..(msg)
@@ -123,16 +123,16 @@ ___ get_scriptlets_root():
 
 
 ___ default_collection_root():
-    root _ __.path.join(get_tool_root('public'), 'collections')
-    __ no. __.path.isdir(root):
-        __.makedirs(root)
+    root _ __.pa__.j..(get_tool_root('public'), 'collections')
+    __ no. __.pa__.isd..(root):
+        __.m_d_(root)
     r_ root
 
 
 ___ default_scriptlets_root():
-    root _ __.path.join(get_tool_root('public'), 'scriptlets')
-    __ no. __.path.isdir(root):
-        __.makedirs(root)
+    root _ __.pa__.j..(get_tool_root('public'), 'scriptlets')
+    __ no. __.pa__.isd..(root):
+        __.m_d_(root)
     r_ root
 
 
@@ -149,12 +149,12 @@ ___ get_xml_elements():
 
 
 ___ get_settings_xml():
-    settings_xml _ __.path.join(get_tool_root('private'), 'settings.xml')
-    __ no. __.path.isfile(settings_xml):
+    settings_xml _ __.pa__.j..(get_tool_root('private'), 'settings.xml')
+    __ no. __.pa__.isf..(settings_xml):
         ___
             w__ o..(settings_xml, 'w') __ look_template:
                 template _ templates.SETTINGS
-                look_template.write(template.strip())
+                look_template.w..(template.strip())
                 msg _ "{} settings doesn't exist. created template at: {}".f..(__product__, settings_xml)
                 write_log(msg)
         ______
@@ -167,12 +167,12 @@ ___ get_settings_xml():
 
 
 ___ check_xml_values_exist():
-    ___ key, value __ templates.SETTINGS_DEFAULT_VALUES.items():
+    ___ key, value __ templates.SETTINGS_DEFAULT_VALUES.i..():
         check_xml_value_exists('settings', 'setting', 'name', key, value)
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
-    xml _ __.path.join(get_tool_root('private'), 'settings.xml')
+    xml _ __.pa__.j..(get_tool_root('private'), 'settings.xml')
     tree _ ET.parse(xml)
     root _ tree.getroot()
     debug _ F..
@@ -193,7 +193,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
         root.find(parent).ap..(elem)
         w__ o..(xml, 'w') __ xml:
             prettyprint(root)
-            tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+            tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
@@ -222,7 +222,7 @@ ___ check_xml_ok(xml):
         m.. _ 'The {} settings file seems to be broken. Do you want to reset it now?'.f..(__product__)
         reset_settings_xml _ ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
-            __ __.path.isfile(xml):
+            __ __.pa__.isf..(xml):
                 __.remove(xml)
                 get_settings_xml()
 
@@ -266,21 +266,21 @@ ___ update_settings(key, value):
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ get_menus(all_incl _ T.., exclude_prefix _ '_'):
-    menus _ []
+    menus _ # list
     __ all_incl:
         menus.ap..('all')
     menu_root _ get_collection_root()
-    ___ file_ __ __.listdir(menu_root):
+    ___ file_ __ __.l_d_(menu_root):
         __ file_.startswith(exclude_prefix):
-            continue
+            c___
         __ file_.endswith('.xml'):
             ___
-                xml_path _ __.path.join(menu_root, file_)
-                xml_name _ __.path.splitext(file_)[0]
+                xml_path _ __.pa__.j..(menu_root, file_)
+                xml_name _ __.pa__.s_t_(file_)[0]
                 w__ o..(xml_path, 'r') __ xml_file:
                     ET.fromstring(xml_file.read())
                 menus.ap..(xml_name)
@@ -305,7 +305,7 @@ ___ add_command(collection_name, command_path, color _ N.., hotkey _ N..):
     collection.insert(0, command_item)
     w__ o..(xml, 'w') __ file_:
         prettyprint(root)
-        tree.write(file_, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(file_, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ sanitize(string):
@@ -314,7 +314,7 @@ ___ sanitize(string):
 
 ___ get_history_xml():
     ____ smartCommand.constants ______ HISTORY
-    r_ __.path.join(get_tool_root('private'), '{}.xml'.f..(HISTORY))
+    r_ __.pa__.j..(get_tool_root('private'), '{}.xml'.f..(HISTORY))
 
 
 ___ swap_commands(xml, path_1, path_2):
@@ -342,14 +342,14 @@ ___ swap_commands(xml, path_1, path_2):
     root.find('collection').insert(index_2, command_1)
     w__ o..(xml, 'w') __ file_:
         prettyprint(root)
-        tree.write(file_, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(file_, encoding_'utf-8', xml_declaration_T..)
     r_
 
 
 ___ get_collection_xml(name):
     collection_root _ get_collection_root()
-    xml _ __.path.join(collection_root, '{}.xml'.f..(name))
-    __ no. __.path.isfile(xml):
+    xml _ __.pa__.j..(collection_root, '{}.xml'.f..(name))
+    __ no. __.pa__.isf..(xml):
         raise IOError('No such collection xml: {}'.f..(xml))
     r_ xml
 
@@ -365,7 +365,7 @@ ___ remove_history_commands(xml, history_max):
 
     w__ o..(xml, 'w') __ file_:
         prettyprint(root)
-        tree.write(file_, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(file_, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ create_collection(collection_name):
@@ -373,11 +373,11 @@ ___ create_collection(collection_name):
         collection_root _ get_tool_root('private')
     ____
         collection_root _ load_settings()['collection_root']
-    xml _ __.path.join(collection_root, '{}.xml'.f..(collection_name))
-    __ no. __.path.isfile(xml):
+    xml _ __.pa__.j..(collection_root, '{}.xml'.f..(collection_name))
+    __ no. __.pa__.isf..(xml):
         write_log("Create new collection '{}.xml'".f..(collection_name))
         w__ o..(xml, 'w') __ file_:
-            file_.write(templates.COLLECTION.f..(collection_name_collection_name))
+            file_.w..(templates.COLLECTION.f..(collection_name_collection_name))
     r_ xml
 
 
@@ -389,8 +389,8 @@ ___ remove_command_duplicates(menu, command_path):
     r_ menu
 
 
-___ get_command_object(path):
-    command _ ?.menu('Nuke').findItem(path)
+___ get_command_object(pa__):
+    command _ ?.menu('Nuke').fI..(pa__)
     __ no. command:
         r_ N..
     ____
@@ -411,43 +411,43 @@ ___ get_previous_element(list_, current):
         r_ list_[le.(list_)]
 
 
-___ update_command(xml, path, key, value):
-    __ no. __.path.isfile(xml):
+___ update_command(xml, pa__, key, value):
+    __ no. __.pa__.isf..(xml):
         raise IOError('No such collection file: {}'.f..(xml))
     tree _ ET.parse(xml)
     root _ tree.getroot()
     ___ command __ root.find('collection').f_a_('command'):
-        __ command.text __ path:
+        __ command.text __ pa__:
             command.set(key, value)
             w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
-                tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+                tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
             break
     ____
-        raise ValueError('No such command path: {}'.f..(path))
+        raise ValueError('No such command path: {}'.f..(pa__))
 
 
-___ remove_command(xml, path):
-    __ no. __.path.isfile(xml):
+___ remove_command(xml, pa__):
+    __ no. __.pa__.isf..(xml):
         raise IOError('No such collection xml: {}'.f..(xml))
     tree _ ET.parse(xml)
     root _ tree.getroot()
     ___ command __ root.find('collection').f_a_('command'):
-        __ command.text __ path:
+        __ command.text __ pa__:
             root.find('collection').remove(command)
             w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
-                tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+                tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
             break
     ____
-        raise ValueError('No such command path: {}'.f..(path))
+        raise ValueError('No such command path: {}'.f..(pa__))
 
 
-___ get_basename(path):
-    out _ path
+___ get_basename(pa__):
+    out _ pa__
     sep _ '/'
-    __ sep __ path:
-        out _ path.split(sep)[-1]
+    __ sep __ pa__:
+        out _ pa__.split(sep)[-1]
     r_ out
 
 
@@ -456,7 +456,7 @@ ___ get_all_hotkeys():
     collection_root _ get_collection_root()
     ___ collection __ get_menus(all_incl_F..):
         xml _ '{}.xml'.f..(collection)
-        tree _ ET.parse(__.path.join(collection_root, xml))
+        tree _ ET.parse(__.pa__.j..(collection_root, xml))
         root _ tree.getroot()
         ___ command __ root.find('collection').f_a_('command'):
             __ command.get('hotkey'):
@@ -467,22 +467,22 @@ ___ get_all_hotkeys():
 
 ___ initialize_hotkeys():
     hotkey_commands _ get_all_hotkeys()
-    ___ hotkey, command __ hotkey_commands.items():
-        path _ command[0]
-        command_item _ ?.menu('Nuke').findItem(path)
+    ___ hotkey, command __ hotkey_commands.i..():
+        pa__ _ command[0]
+        command_item _ ?.menu('Nuke').fI..(pa__)
         __ command_item:
             command_item.setShortcut(hotkey)
 
 
 ___ load_tooltips(parent, section):
-    this_dir _ __.path.dirname( -f)
-    tooltips_file _ __.path.join(this_dir, 'data', 'tooltips.json')
-    tooltips_file _ __.path.n_p_(tooltips_file)
-    __ no. __.path.isfile(tooltips_file):
+    this_dir _ __.pa__.d_n_( -f)
+    tooltips_file _ __.pa__.j..(this_dir, 'data', 'tooltips.json')
+    tooltips_file _ __.pa__.n_p_(tooltips_file)
+    __ no. __.pa__.isf..(tooltips_file):
         r_
     w__ o..(tooltips_file) __ json_file:
         ___
-            ttdata _ j___.load(json_file)
+            ttdata _ j___.l..(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
@@ -509,15 +509,15 @@ ___ open_website(url):
     r_
 
 
-___ get_basename(path, extension _ F..):
-    basename _ __.path.basename(path)
+___ get_basename(pa__, extension _ F..):
+    b_n_ _ __.pa__.b_n_(pa__)
     __ extension:
-        r_ basename
-    r_ __.path.splitext(basename)[0]
+        r_ b_n_
+    r_ __.pa__.s_t_(b_n_)[0]
 
 
-___ get_module_docstring(path):
-    compile_ _ compile(o..(path).read(), path, 'exec')
+___ get_module_docstring(pa__):
+    compile_ _ compile(o..(pa__).read(), pa__, 'exec')
     __ compile_.co_consts an. i..(compile_.co_consts[0], basestring):
         docstring _ compile_.co_consts[0]
     ____

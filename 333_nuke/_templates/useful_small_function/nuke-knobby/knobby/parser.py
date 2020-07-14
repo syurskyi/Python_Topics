@@ -68,7 +68,7 @@ c_ Tablet(list):
         while queue:
             line _ queue.popleft()
             __ no. line:
-                continue
+                c___
 
             matched _ TAB_PATTERN.search(line)
             __ matched:
@@ -78,7 +78,7 @@ c_ Tablet(list):
                 type _ in.(tab_profile["type"] or 0)
             ____
                 ap..(line)
-                continue
+                c___
 
             ignore_tab_value(name)
 
@@ -107,7 +107,7 @@ c_ Tablet(list):
                 tab _ find_tab(item.name)
                 __ tab __ no. N..:
                     tab.merge(item)
-                    continue
+                    c___
 
             ap..(item)
 
@@ -135,8 +135,8 @@ c_ Tablet(list):
                     sub_script.ap..(line + " n -3}")
 
                 script +_ sub_script
-                continue
+                c___
 
             script.ap..(item)
 
-        r_ "\n".join(script) __ join ____ script
+        r_ "\n".j..(script) __ j.. ____ script

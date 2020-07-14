@@ -38,15 +38,15 @@ ___ load_icons():
             }
 
     """
-    this_dir _ __.path.dirname( -f)
-    dir_icon _ __.path.join(this_dir, "icons")
-    dir_icon _ __.path.n_p_(dir_icon)
+    this_dir _ __.pa__.d_n_( -f)
+    dir_icon _ __.pa__.j..(this_dir, "icons")
+    dir_icon _ __.pa__.n_p_(dir_icon)
 
     icons _ {}
-    ___ file_ __ __.listdir(dir_icon):
-        name _ __.path.splitext(file_)[0]
-        path _ __.path.join(dir_icon, file_)
-        icons[name] _ path
+    ___ file_ __ __.l_d_(dir_icon):
+        name _ __.pa__.s_t_(file_)[0]
+        pa__ _ __.pa__.j..(dir_icon, file_)
+        icons[name] _ pa__
 
     r_ icons
 
@@ -78,12 +78,12 @@ ___ set_style_sheet(widget, style_"styles.qss"):
         style (str): Name of styles file to apply.
 
     """
-    this_dir _ __.path.join(__.path.dirname( -f))
+    this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
 
-    styles _ __.path.join(this_dir, "styles", style)
-    styles _ __.path.n_p_(styles)
+    styles _ __.pa__.j..(this_dir, "styles", style)
+    styles _ __.pa__.n_p_(styles)
 
-    __ __.path.isfile(styles):
+    __ __.pa__.isf..(styles):
         w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
@@ -100,14 +100,14 @@ ___ get_session_icons(ext_".png"):
             of Nuke's plugin path that contain the given file extension.
 
     """
-    paths _ [path ___ path __ ?.pluginPath() __ __.path.isdir(path)]
+    paths _ [pa__ ___ pa__ __ ?.pluginPath() __ __.pa__.isd..(pa__)]
 
-    icon_dir _ __.path.join(__.path.dirname( -f), "icons")
+    icon_dir _ __.pa__.j..(__.pa__.d_n_( -f), "icons")
     paths.ap..(icon_dir)
 
-    icons _ []
-    ___ path __ paths:
-        _icons _ (__.path.join(path, image) ___ image __ __.listdir(path) __
+    icons _ # list
+    ___ pa__ __ paths:
+        _icons _ (__.pa__.j..(pa__, image) ___ image __ __.l_d_(pa__) __
                   image.endswith(ext))
         icons.extend(_icons)
 
@@ -134,7 +134,7 @@ ___ add_to_history(command):
         dict: The settings using the updated history.
 
     """
-    settings _ model.load()
+    settings _ model.l..()
 
     # Remove the command from the history in case it already exists so that
     # we don't add up with duplicated commands in our history. If we execute
@@ -156,7 +156,7 @@ ___ clear_history():
         dict: Updated hostory with empty history list.
 
     """
-    settings _ model.load()
+    settings _ model.l..()
     del settings["history"][:]
     model.save(settings)
     r_ settings
@@ -176,7 +176,7 @@ ___ clear_combo(combo):
     """
     while combo.count() > 2:
         __ combo.currentText __ NEW_STACK:
-            continue
+            c___
         ____
             combo.removeItem(0)
 
@@ -217,11 +217,11 @@ ___ open_website(url):
 ___ assemble_command_path(command_name):
     """Assemble command path from current settings and command name."""
 
-    settings _ model.load()
+    settings _ model.l..()
     stack_root _ settings["stack_root"]
     current_stack _ settings["current_stack"]
 
-    r_ __.path.join(stack_root, current_stack, command_name)
+    r_ __.pa__.j..(stack_root, current_stack, command_name)
 
 
 ___ get_all_stacks():
@@ -231,11 +231,11 @@ ___ get_all_stacks():
         list: Names of all stack folders.
 
     """
-    settings _ model.load()
+    settings _ model.l..()
     stack_root _ settings["stack_root"]
 
-    r_ [name ___ name __ __.listdir(stack_root)
-            __ __.path.isdir(__.path.join(stack_root, name))]
+    r_ [name ___ name __ __.l_d_(stack_root)
+            __ __.pa__.isd..(__.pa__.j..(stack_root, name))]
 
 
 ___ load_tooltips(parent, section):
@@ -247,16 +247,16 @@ ___ load_tooltips(parent, section):
 
     """
     # Load tooltips file.
-    this_dir _ __.path.dirname( -f)
-    tooltips_file _ __.path.join(this_dir, "data", "tooltips.json")
-    tooltips_file _ __.path.n_p_(tooltips_file)
-    __ no. __.path.isfile(tooltips_file):
+    this_dir _ __.pa__.d_n_( -f)
+    tooltips_file _ __.pa__.j..(this_dir, "data", "tooltips.json")
+    tooltips_file _ __.pa__.n_p_(tooltips_file)
+    __ no. __.pa__.isf..(tooltips_file):
         r_
 
     # Parse tool tips file.
     w__ o..(tooltips_file) __ json_file:
         ___
-            ttdata _ j___.load(json_file)
+            ttdata _ j___.l..(json_file)
         except ValueError:
             r_
 
@@ -285,11 +285,11 @@ ___ get_tool_root(which):
     ____
         cragl_dir _ "cragl"
 
-    root _ __.path.join(__.path.expanduser("~"), cragl_dir, __product__)
+    root _ __.pa__.j..(__.pa__.expanduser("~"), cragl_dir, __product__)
 
-    __ no. __.path.isdir(root):
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         except IOError __ error:
             print "Error creating directory: ", error.m..
 
@@ -313,21 +313,21 @@ ___ get_icon(icon):
     ___
         __ no. icon:
             raise IndexError
-        r_ [path ___ path __ SESSION_ICONS
-                __ path.endswith("{}.png".f..(icon))][0]
+        r_ [pa__ ___ pa__ __ SESSION_ICONS
+                __ pa__.endswith("{}.png".f..(icon))][0]
     except IndexError:
         r_ load_icons()["command"]
 
 
-___ reveal_in_explorer(path):
+___ reveal_in_explorer(pa__):
     """Reveal the given path in the explorer."""
     __ ___.pl.. __ 'darwin':
-        subprocess.check_call(['open', '--', path])
+        subprocess.check_call(['open', '--', pa__])
     ____ ___.pl.. __ 'linux2':
-        subprocess.P..(['xdg-open', path])
+        subprocess.P..(['xdg-open', pa__])
     ____ ___.pl.. __ 'windows' or ___.pl.. __ 'win32':
         ___
-            subprocess.check_call(['explorer', path])
+            subprocess.check_call(['explorer', pa__])
         # We want to catch all errors in here explicitly.
         except Exception __ error:  # pylint: disable=broad-except
             ____ smartScripter ______ dialogs

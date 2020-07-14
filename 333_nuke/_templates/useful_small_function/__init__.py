@@ -29,14 +29,14 @@ def camel_case_to_lower_case_underscore(text):
     :returns: formatted string.
     :rtype: str
     """
-    words = []
+    words = # list
     from_char_position = 0
     for current_char_position, char in enumerate(text):
         if char.isupper() and from_char_position < text:
             words.append(s[from_char_position:current_char_position].lower())
             from_char_position = current_char_position
     words.append(text[from_char_position:].lower())
-    return '_'.join(words)
+    return '_'.j..(words)
 
 
 def camel_case_to_title(text):
@@ -47,14 +47,14 @@ def camel_case_to_title(text):
     :returns: formatted string.
     :rtype: str
     """
-    words = []
+    words = # list
     from_char_position = 0
     for current_char_position, char in enumerate(text):
         if char.isupper() and from_char_position < current_char_position:
             words.append(text[from_char_position:current_char_position].title())
             from_char_position = current_char_position
     words.append(text[from_char_position:].title())
-    return ' '.join(words)
+    return ' '.j..(words)
 
 
 def lower_case_underscore_to_camel_case(text):
@@ -68,7 +68,7 @@ def lower_case_underscore_to_camel_case(text):
     split_string = text.split('_')
     # use string's class to work on the string to keep its type
     class_ = text.__class__
-    return split_string[0] + class_.join('', map(class_.capitalize, split_string[1:]))
+    return split_string[0] + class_.j..('', map(class_.capitalize, split_string[1:]))
 
 
 #- Attribute Functions ----
@@ -198,11 +198,11 @@ def is_newer(file1, file2):
     :returns: file1 is newer.
     :rtype: bool
     """ 
-    if not os.path.exists(file1) or not os.path.exists(file2):
+    if not os.pa__.exists(file1) or not os.pa__.exists(file2):
         return False
 
-    time1 = os.path.getmtime(file1)
-    time2 = os.path.getmtime(file2)
+    time1 = os.pa__.getmtime(file1)
+    time2 = os.pa__.getmtime(file2)
     return time1 > time2
 
 #- Testing -----

@@ -17,7 +17,7 @@ ____ smartRescue.constants ______ DOCSTRING_EXTRACTION_PATTERN
 ____ smartRescue.constants ______ NAME
 
 
-___ get_nuke_scripts(path, ignore_prefix):
+___ get_nuke_scripts(pa__, ignore_prefix):
     """Get all .nk files from the given path ignoring rescue and prefix files.
 
     Args:
@@ -28,12 +28,12 @@ ___ get_nuke_scripts(path, ignore_prefix):
         list: Absolute path of files to include in collection.
 
     """
-    __ __.path.isfile(path):
-        r_ [path]
+    __ __.pa__.isf..(pa__):
+        r_ [pa__]
 
     rescue_file_pattern _ r"rescue_\d+-\d+"
-    r_ [__.path.join(path, file_)
-            ___ file_ __ __.listdir(path)
+    r_ [__.pa__.j..(pa__, file_)
+            ___ file_ __ __.l_d_(pa__)
             __ file_.endswith(".nk")
             an. no. file_.startswith(ignore_prefix)
             an. no. re.search(rescue_file_pattern, file_)]
@@ -49,13 +49,13 @@ ___ create_working_file_copies(files):
         list: Absolute file paths of copy working files.
 
     """
-    copy_files _ []
+    copy_files _ # list
     date _ date_now()
     ___ file_ __ files:
-        parent_dir, filename _ __.path.split(file_)
-        basename _ __.path.splitext(filename)[0]
-        copy_filename _ "{}_rescue_{}.nk".f..(basename, date)
-        dest _ __.path.join(parent_dir, copy_filename)
+        parent_dir, filename _ __.pa__.split(file_)
+        b_n_ _ __.pa__.s_t_(filename)[0]
+        copy_filename _ "{}_rescue_{}.nk".f..(b_n_, date)
+        dest _ __.pa__.j..(parent_dir, copy_filename)
         shutil.copy(file_, dest)
         copy_files.ap..(dest)
 
@@ -89,9 +89,9 @@ ___ get_process_folder():
     __ environment_process_folder:
         r_ environment_process_folder
 
-    this_dir _ __.path.dirname( -f)
-    path _ __.path.join(this_dir, "..", "process")
-    r_ __.path.n_p_(path)
+    this_dir _ __.pa__.d_n_( -f)
+    pa__ _ __.pa__.j..(this_dir, "..", "process")
+    r_ __.pa__.n_p_(pa__)
 
 
 ___ get_config():
@@ -108,12 +108,12 @@ ___ get_config():
     """
     environment_path _ __.en__.get(CRAGL_SMARTRESCUE_CONFIG_PATH)
     __ environment_path:
-        path _ environment_path
+        pa__ _ environment_path
     ____
-        path _ copy_config_file()
+        pa__ _ copy_config_file()
 
-    w__ o..(path, "r") __ file_:
-        r_ path, j___.load(file_)
+    w__ o..(pa__, "r") __ file_:
+        r_ pa__, j___.l..(file_)
 
 
 ___ load_icons():
@@ -132,20 +132,20 @@ ___ load_icons():
             }
 
     """
-    this_dir _ __.path.dirname( -f)
-    dir_icon _ __.path.join(this_dir, "icons")
-    dir_icon _ __.path.n_p_(dir_icon)
+    this_dir _ __.pa__.d_n_( -f)
+    dir_icon _ __.pa__.j..(this_dir, "icons")
+    dir_icon _ __.pa__.n_p_(dir_icon)
 
     icons _ {}
-    ___ file_ __ __.listdir(dir_icon):
-        name _ __.path.splitext(file_)[0]
-        path _ __.path.join(dir_icon, file_)
-        icons[name] _ path
+    ___ file_ __ __.l_d_(dir_icon):
+        name _ __.pa__.s_t_(file_)[0]
+        pa__ _ __.pa__.j..(dir_icon, file_)
+        icons[name] _ pa__
 
     r_ icons
 
 
-___ get_docstring(path):
+___ get_docstring(pa__):
     """Get the module docstring from the module with the given path.
 
     Args:
@@ -155,12 +155,12 @@ ___ get_docstring(path):
         str: The module doc string of the given file.
 
     """
-    w__ o..(path, "r") __ file_:
+    w__ o..(pa__, "r") __ file_:
         tree _ ast.parse(file_.read())
     r_ ast.get_docstring(tree)
 
 
-___ get_docstring_elements(path):
+___ get_docstring_elements(pa__):
     """Get the one line header, body, standard- and advanced examples.
 
     Args:
@@ -171,12 +171,12 @@ ___ get_docstring_elements(path):
             body, standard examples and advanced examples
 
     """
-    docstring _ get_docstring(path)
+    docstring _ get_docstring(pa__)
     regex _ re.search(DOCSTRING_EXTRACTION_PATTERN, docstring, re.DOTALL)
     __ regex:
         description _ regex.groupdict()["description"].split("\n")
         header _ description[0]
-        body _ "\n".join(description[1:])
+        body _ "\n".j..(description[1:])
         standard _ regex.groupdict()["example_standard"]
         advanced _ regex.groupdict()["example_advanced"]
 
@@ -185,7 +185,7 @@ ___ get_docstring_elements(path):
     r_ docstring, "", "", ""
 
 
-___ ensure_file_extension(path, ext):
+___ ensure_file_extension(pa__, ext):
     """Ensure the given file extension on the given path.
 
     Args:
@@ -196,10 +196,10 @@ ___ ensure_file_extension(path, ext):
         str: The given path including the given file extension.
 
     """
-    base, extension _ __.path.splitext(path)
+    base, extension _ __.pa__.s_t_(pa__)
     ext _ ext.r..(".", "")
     __ extension __ ext:
-        r_ path
+        r_ pa__
     r_ "{}.{}".f..(base, ext)
 
 
@@ -219,11 +219,11 @@ ___ get_tool_root(which):
 
     """
     cragl_dir _ ".cragl" __ which __ "private" ____ "cragl"
-    root _ __.path.join(__.path.expanduser("~"), cragl_dir, NAME)
+    root _ __.pa__.j..(__.pa__.expanduser("~"), cragl_dir, NAME)
 
-    __ no. __.path.isdir(root):
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         except OSError __ error:
             raise OSError("Error creating directory: ", error.m..)
 
@@ -237,7 +237,7 @@ ___ get_local_config_file():
         str: Absolute path of config file.
 
     """
-    r_ __.path.join(get_tool_root("private"), "config.json")
+    r_ __.pa__.j..(get_tool_root("private"), "config.json")
 
 
 ___ copy_config_file():
@@ -251,10 +251,10 @@ ___ copy_config_file():
 
     """
     dest _ get_local_config_file()
-    __ no. __.path.isfile(dest):
-        this_dir _ __.path.dirname( -f)
-        src _ __.path.join(this_dir, "data", "config.json")
-        src _ __.path.abspath(src)
+    __ no. __.pa__.isf..(dest):
+        this_dir _ __.pa__.d_n_( -f)
+        src _ __.pa__.j..(this_dir, "data", "config.json")
+        src _ __.pa__.abspath(src)
         shutil.copy(src, dest)
     r_ dest
 

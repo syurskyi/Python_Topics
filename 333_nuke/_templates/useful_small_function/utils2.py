@@ -52,7 +52,7 @@ def find_highest(nodes):
         nuke.Node: The highest node in the DAG.
 
     """
-    return min(nodes, key=lambda node: get_center_y(node))
+    return min(nodes, key=l___ node: get_center_y(node))
 
 
 def find_lowest(nodes):
@@ -65,7 +65,7 @@ def find_lowest(nodes):
         nuke.Node: The lowest node.
 
     """
-    return max(nodes, key=lambda node: get_center_y(node))
+    return max(nodes, key=l___ node: get_center_y(node))
 
 
 def find_leftest(nodes):
@@ -78,7 +78,7 @@ def find_leftest(nodes):
         nuke.Node: The lowest node.
 
     """
-    return min(nodes, key=lambda node: get_center_x(node))
+    return min(nodes, key=l___ node: get_center_x(node))
 
 
 def find_rightest(nodes):
@@ -91,7 +91,7 @@ def find_rightest(nodes):
         nuke.Node: The lowest node.
 
     """
-    return max(nodes, key=lambda node: get_center_x(node))
+    return max(nodes, key=l___ node: get_center_x(node))
 
 
 def get_node_bounds(node):
@@ -209,7 +209,7 @@ def get_surrounding_backdrops(nodes, backdrops=None):
     """
     backdrops = backdrops or nuke.allNodes(filter="BackdropNode")
 
-    surrounding_backdrops = []
+    surrounding_backdrops = # list
     for backdrop in backdrops:
         if any([is_inside_backdrops(node, [backdrop]) for node in nodes]):
             surrounding_backdrops.append(backdrop)

@@ -99,7 +99,7 @@ ___ copy_node_tile_color():
 
 ___ paste_to_selected():
     # paste to all selected nodes
-    pasted_nodes _ []
+    pasted_nodes _ # list
     __ no. ?.sN..:
         ?.nodePaste('%clipboard%')
         r_
@@ -162,7 +162,7 @@ ___ read_from_write():
         print('No nodes selected')
     ____
         found_writes _ F..
-        write_nodes _ []
+        write_nodes _ # list
         ___ node __ nodes:
             __ node.Class() __ 'Write':
                 write_nodes.ap..(node)

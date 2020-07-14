@@ -5,26 +5,26 @@ import os
 
 
 def nkPath():
-    nkPath = os.path.dirname(nuke.root().name())
-    nkPath = os.path.normpath(nkPath)
+    nkPath = os.pa__.d_n_(nuke.root().name())
+    nkPath = os.pa__.normpath(nkPath)
     return nkPath
 
     
 def nkScriptName():
-    nkScriptName = os.path.basename(nuke.root().name())
+    nkScriptName = os.pa__.b_n_(nuke.root().name())
     return nkScriptName
 
     
 def showPath():
-    showPath = os.path.splitdrive(nukePath)[1]
+    showPath = os.pa__.splitdrive(nukePath)[1]
     return showPath
 
     
 def show():
     try:
-        nkPath = os.path.dirname(nuke.root().name())
-        nkPath = os.path.normpath(nkPath)
-        showPath = os.path.splitdrive(nkPath)
+        nkPath = os.pa__.d_n_(nuke.root().name())
+        nkPath = os.pa__.normpath(nkPath)
+        showPath = os.pa__.splitdrive(nkPath)
         show = showPath[1]
         show = str.split(show, "\\")[1]
         return show
@@ -34,7 +34,7 @@ def show():
         
 def sequence():
     try:
-        nkScriptName = os.path.basename(nuke.root().name())
+        nkScriptName = os.pa__.b_n_(nuke.root().name())
         sequence = str.split(nkScriptName, "_")[0]
         return sequence
     except:
@@ -43,7 +43,7 @@ def sequence():
 
 def shot():
     try:
-        nkScriptName = os.path.basename(nuke.root().name())
+        nkScriptName = os.pa__.b_n_(nuke.root().name())
         shot = str.split(nkScriptName, "_")[1]
         return shot
     except:
@@ -52,7 +52,7 @@ def shot():
 
 def assetName():
     try:
-        scriptInfo = os.path.basename(nuke.root().name())
+        scriptInfo = os.pa__.b_n_(nuke.root().name())
         scriptInfo = str.split(scriptInfo,"_")
         assetName = scriptInfo[2]
         return assetName
@@ -62,7 +62,7 @@ def assetName():
 
 def taskName():
     try:
-        scriptInfo = os.path.basename(nuke.root().name())
+        scriptInfo = os.pa__.b_n_(nuke.root().name())
         scriptInfo = str.split(scriptInfo,"_")
         taskName = scriptInfo[3]
         return taskName

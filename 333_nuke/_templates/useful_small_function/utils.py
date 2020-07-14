@@ -81,7 +81,7 @@ ___ create_matrix_knob(node, noop, m_key, key, first, last):
 
     ___ frame __ xrange(first, last):
         ___ index __ range(mtx):
-            keys _ []
+            keys _ # list
             anim _ array.animations()[index]
             keys.append(nuke.AnimationKey(frame, node.metadata(m_key, frame)[index]))
             anim.addKey(keys)

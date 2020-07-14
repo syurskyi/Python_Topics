@@ -9,7 +9,7 @@ ___ openFileReturnArr(file):
     open set file, read in all lines and
     return an array with all the lines
     '''
-    arr_[]
+    arr_# list
     fobj _ o..("@"%file, "r")
     #load in all lines
     ___ line __ fobj:
@@ -19,14 +19,14 @@ ___ openFileReturnArr(file):
     fobj.c__
     r_ arr
 
-___ getBackupSettings(val, path):
+___ getBackupSettings(val, pa__):
     '''
     getValues by finding pattern in array.
     for getting the values out of the array which
     comes from the settings file
     '''
-    path _ path
-    arr _ openFileReturnArr(path)
+    pa__ _ pa__
+    arr _ openFileReturnArr(pa__)
     i_0
     ___ line __ arr:
         findVal_arr[i].find("@"%val)
@@ -45,13 +45,13 @@ ___ getBackupSettings(val, path):
         i+_1
     r_ val
 
-___ openFolder(path):
+___ openFolder(pa__):
     __ ___.pl.. __ 'darwin':
-        subprocess.check_call(['open', '--', path])
+        subprocess.check_call(['open', '--', pa__])
     ____ ___.pl.. __ 'linux2':
-        subprocess.check_call(['gnome-open', '--', path])
+        subprocess.check_call(['gnome-open', '--', pa__])
     ____ ___.pl.. __ 'windows':
-        subprocess.check_call(['explorer', path])
+        subprocess.check_call(['explorer', pa__])
 
 ___ help():
     '''

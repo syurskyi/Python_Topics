@@ -88,7 +88,7 @@ c_ Knobby(object):
     ___  - (self, type, value, flags_N.., *args):
         type _ type
         value _ value
-        flags _ flags or []
+        flags _ flags or # list
         args _ args
 
     ___ create(self, name, nice_N..):
@@ -127,13 +127,13 @@ ___ create_knobs(data, tab):
     ___ nice_naming(key):
         """Convert camelCase name into UI Display Name"""
         words _ re.f_a_('[A-Z][^A-Z]*', key[0].upper() + key[1:])
-        r_ " ".join(words)
+        r_ " ".j..(words)
 
     # Turn key-value pairs into knobs
     knobs _ list()
     prefix _ tab + ":"
 
-    ___ key, value __ data.items():
+    ___ key, value __ data.i..():
         # Knob name
         __ i..(key, tuple):
             name, nice _ key
@@ -176,7 +176,7 @@ ___ create_knobs(data, tab):
                 begin.sL..(nice)
                 end.setName(name)
                 knobs.ap..(begin)
-                ___ k, v __ value.items():
+                ___ k, v __ value.i..():
                     tab_name _ "@:@" % (name, k)
                     knobs.ap..(?.T_K..(tab_name, k))
                     knobs +_ create_knobs(v, tab_tab_name)
@@ -186,7 +186,7 @@ ___ create_knobs(data, tab):
                 knobs.ap..(?.T_K..(name, nice, ?.TAB..))
                 knobs +_ create_knobs(value, tab_name)
                 knobs.ap..(?.T_K..(name, nice, ?.TABENDGROUP))
-            continue
+            c___
 
         ____
             raise TypeError("Unsupported type: %r" % type(value))
@@ -230,7 +230,7 @@ ___ read(node, filter_N..):
 
     """
     data _ dict()
-    filter _ filter or (lambda name: name)
+    filter _ filter or (l___ name: name)
 
     first_user_knob _ _parse_first_user_knob(node)
     __ first_user_knob __ no. N..:
@@ -239,7 +239,7 @@ ___ read(node, filter_N..):
             knob_name _ knob.name()
             __ no. knob_name:
                 # Ignore unnamed knob
-                continue
+                c___
 
             knob_type _ ?.knob(knob.fullyQualifiedName(), type_T..)
             value _ knob.v..

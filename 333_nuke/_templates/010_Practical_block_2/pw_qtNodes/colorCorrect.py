@@ -456,7 +456,7 @@ ___ addTab(node):
 
 
 __ __name__ __ '__main__':
-    app _ ?A..([])
+    app _ ?A..(# list)
     s _ colorPickerClass()
     s.s__
     app.exec_()

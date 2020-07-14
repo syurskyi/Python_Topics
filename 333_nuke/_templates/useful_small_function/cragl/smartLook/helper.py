@@ -25,45 +25,45 @@ ____
 ______ templates
 
 ___ load_icons(_args):
-    this_dir _ __.path.dirname( -f)
-    dir_icon _ __.path.join(this_dir, '../', 'icons')
-    dir_icon _ __.path.n_p_(dir_icon)
-    join _ __.path.join
-    r_ {'about': join(dir_icon, 'about.jpg'),
-     'icon_logo': join(dir_icon, 'logo.png'),
-     'icon_logo_grey': join(dir_icon, 'logo_grey.png'),
-     'icon_pool': join(dir_icon, 'pool.png'),
-     'icon_star': join(dir_icon, 'look_star.png'),
-     'icon_update': join(dir_icon, 'look_update.png'),
-     'icon_delete': join(dir_icon, 'look_delete.png'),
-     'icon_import': join(dir_icon, 'look_import.png'),
-     'icon_export': join(dir_icon, 'look_export.png'),
-     'icon_edit': join(dir_icon, 'edit.png'),
-     'icon_page': join(dir_icon, 'page.png'),
-     'icon_folder': join(dir_icon, 'folder.png'),
-     'icon_folder_white': join(dir_icon, 'folder_white.png'),
-     'icon_folder_grey': join(dir_icon, 'folder_grey.png'),
-     'icon_explorer': join(dir_icon, 'explorer.png'),
-     'icon_nuke': join(dir_icon, 'nuke.png'),
-     'icon_nodes': join(dir_icon, 'nodes.png'),
-     'icon_toolsets': join(dir_icon, 'toolsets.png'),
-     'icon_insert': join(dir_icon, 'insert.png'),
-     'icon_insert_nk': join(dir_icon, 'insert_nk.png'),
-     'icon_insert_img': join(dir_icon, 'insert_img.jpg'),
-     'icon_refresh': join(dir_icon, 'refresh.png'),
-     'icon_snapshot': join(dir_icon, 'snapshot.png'),
-     'icon_x': join(dir_icon, 'x.png'),
-     'icon_settings': join(dir_icon, 'settings.png'),
-     'icon_maximize': join(dir_icon, 'maximize.png'),
-     'icon_half': join(dir_icon, 'half.png'),
-     'icon_eye': join(dir_icon, 'eye.png'),
-     'icon_delete_all': join(dir_icon, 'delete_all.png'),
-     'icon_reveal': join(dir_icon, 'reveal.png'),
-     'icon_flag': join(dir_icon, 'flag.png'),
-     'icon_nocolor': join(dir_icon, 'nocolor.png'),
-     'icon_comment': join(dir_icon, 'comment.png'),
-     'icon_plus': join(dir_icon, 'plus.png'),
-     'icon_minus': join(dir_icon, 'minus.png')}
+    this_dir _ __.pa__.d_n_( -f)
+    dir_icon _ __.pa__.j..(this_dir, '../', 'icons')
+    dir_icon _ __.pa__.n_p_(dir_icon)
+    j.. _ __.pa__.j..
+    r_ {'about': j..(dir_icon, 'about.jpg'),
+     'icon_logo': j..(dir_icon, 'logo.png'),
+     'icon_logo_grey': j..(dir_icon, 'logo_grey.png'),
+     'icon_pool': j..(dir_icon, 'pool.png'),
+     'icon_star': j..(dir_icon, 'look_star.png'),
+     'icon_update': j..(dir_icon, 'look_update.png'),
+     'icon_delete': j..(dir_icon, 'look_delete.png'),
+     'icon_import': j..(dir_icon, 'look_import.png'),
+     'icon_export': j..(dir_icon, 'look_export.png'),
+     'icon_edit': j..(dir_icon, 'edit.png'),
+     'icon_page': j..(dir_icon, 'page.png'),
+     'icon_folder': j..(dir_icon, 'folder.png'),
+     'icon_folder_white': j..(dir_icon, 'folder_white.png'),
+     'icon_folder_grey': j..(dir_icon, 'folder_grey.png'),
+     'icon_explorer': j..(dir_icon, 'explorer.png'),
+     'icon_nuke': j..(dir_icon, 'nuke.png'),
+     'icon_nodes': j..(dir_icon, 'nodes.png'),
+     'icon_toolsets': j..(dir_icon, 'toolsets.png'),
+     'icon_insert': j..(dir_icon, 'insert.png'),
+     'icon_insert_nk': j..(dir_icon, 'insert_nk.png'),
+     'icon_insert_img': j..(dir_icon, 'insert_img.jpg'),
+     'icon_refresh': j..(dir_icon, 'refresh.png'),
+     'icon_snapshot': j..(dir_icon, 'snapshot.png'),
+     'icon_x': j..(dir_icon, 'x.png'),
+     'icon_settings': j..(dir_icon, 'settings.png'),
+     'icon_maximize': j..(dir_icon, 'maximize.png'),
+     'icon_half': j..(dir_icon, 'half.png'),
+     'icon_eye': j..(dir_icon, 'eye.png'),
+     'icon_delete_all': j..(dir_icon, 'delete_all.png'),
+     'icon_reveal': j..(dir_icon, 'reveal.png'),
+     'icon_flag': j..(dir_icon, 'flag.png'),
+     'icon_nocolor': j..(dir_icon, 'nocolor.png'),
+     'icon_comment': j..(dir_icon, 'comment.png'),
+     'icon_plus': j..(dir_icon, 'plus.png'),
+     'icon_minus': j..(dir_icon, 'minus.png')}
 
 
 ___ load_settings(*args):
@@ -78,19 +78,19 @@ ___ load_settings(*args):
         pools _ collections.OrderedDict()
         ___ pool __ settingsroot.find('pools').f_a_('pool'):
             pools[pool.get('name')] _ pool.text
-            __ no. __.path.isdir(pool.text):
+            __ no. __.pa__.isd..(pool.text):
                 ___
-                    __.makedirs(pool.text)
+                    __.m_d_(pool.text)
                     msg _ 'created missing pools dir at {}'.f..(pool.text)
                     write_log(msg)
                 except Exception __ error:
                     msg _ 'Unable to create pools dir at {}; {}'.f..(pool.text, error)
                     write_log(msg)
 
-            pools_sorted _ collections.OrderedDict(sorted(pools.items()))
+            pools_sorted _ collections.OrderedDict(sorted(pools.i..()))
 
         settings['pools'] _ pools_sorted
-        flags _ []
+        flags _ # list
         ___ flag __ settingsroot.find('flags').f_a_('flag'):
             flags.ap..(flag.text)
 
@@ -115,12 +115,12 @@ ___ load_hotkeys(*args):
 
 
 ___ get_settings_xml(*args):
-    settings_xml _ __.path.join(get_tool_private_root(), 'settings.xml')
-    __ no. __.path.isfile(settings_xml):
+    settings_xml _ __.pa__.j..(get_tool_private_root(), 'settings.xml')
+    __ no. __.pa__.isf..(settings_xml):
         ___
             w__ o..(settings_xml, 'w') __ look_template:
                 template _ templates.SETTINGS.f..(standard_pool_get_standard_preset_pool())
-                look_template.write(template.strip())
+                look_template.w..(template.strip())
                 msg _ "smartLook settings doesn't exist. created template at: {}".f..(settings_xml)
                 write_log(msg)
         ______
@@ -133,7 +133,7 @@ ___ get_settings_xml(*args):
 
 
 ___ check_xml_values_exist(*args):
-    default_snapshotdir _ __.path.join(get_default_snapshot_root_dir(), 'temp')
+    default_snapshotdir _ __.pa__.j..(get_default_snapshot_root_dir(), 'temp')
     settings _ {'tooltips': 'True',
      'release_hotkey_closes_slider': 'True',
      'presetnodes_ignore': 'Viewer,Dot,BackdropNode,StickyNote',
@@ -149,15 +149,15 @@ ___ check_xml_values_exist(*args):
      'snapshotbrowser_thumbnail_scrollbar': 'True',
      'snapshot_selection': 'all nodes',
      'snapshot_render_width': '960'}
-    ___ key, value __ settings.items():
+    ___ key, value __ settings.i..():
         check_xml_value_exists('settings', 'setting', 'name', key, value)
 
 
 ___ get_default_snapshot_root_dir(*args):
-    default_snapshots_root _ __.path.join(get_tool_public_root(), 'snapshots')
-    __ no. __.path.isdir(default_snapshots_root):
+    default_snapshots_root _ __.pa__.j..(get_tool_public_root(), 'snapshots')
+    __ no. __.pa__.isd..(default_snapshots_root):
         ___
-            __.makedirs(default_snapshots_root)
+            __.m_d_(default_snapshots_root)
         ______
             msg _ "Unable to create default snapshot root directory at: '{}'".f..(default_snapshots_root)
             show_message_box(N.., msg)
@@ -166,12 +166,12 @@ ___ get_default_snapshot_root_dir(*args):
 
 
 ___ load_advanced_settings(*args):
-    advanced_settings _ __.path.join(get_tool_public_root(), 'advancedsettings.set')
+    advanced_settings _ __.pa__.j..(get_tool_public_root(), 'advancedsettings.set')
     advanced_settings_default _ templates.ADVANCED_SETTINGS_DEFAULT
-    __ no. __.path.isfile(advanced_settings):
+    __ no. __.pa__.isf..(advanced_settings):
         ___
             w__ o..(advanced_settings, 'w') __ advset:
-                advset.write(advanced_settings_default)
+                advset.w..(advanced_settings_default)
         except Exception __ e:
             print e
             write_log('Error writing advanced settings file: {}'.f..(e))
@@ -186,10 +186,10 @@ ___ load_advanced_settings(*args):
 
 
 ___ parse_advanced_settings(*args):
-    advanced_settings_lines _ []
+    advanced_settings_lines _ # list
     advanced_settings _ {}
     vars_line _ '-lk'
-    advanced_settings_file _ __.path.join(get_tool_public_root(), 'advancedsettings.set')
+    advanced_settings_file _ __.pa__.j..(get_tool_public_root(), 'advancedsettings.set')
     ___
         w__ o..(advanced_settings_file, 'r') __ advset:
             advanced_settings_lines _ [ line ___ line __ advset.readlines() __ line[:le.(vars_line)] __ vars_line ]
@@ -208,9 +208,9 @@ ___ parse_advanced_settings(*args):
 
 
 ___ get_standard_preset_pool(*args):
-    standardpool _ __.path.join(get_tool_public_root(), 'standardpool')
-    __ no. __.path.isdir(standardpool):
-        __.makedirs(standardpool)
+    standardpool _ __.pa__.j..(get_tool_public_root(), 'standardpool')
+    __ no. __.pa__.isd..(standardpool):
+        __.m_d_(standardpool)
     r_ standardpool
 
 
@@ -223,7 +223,7 @@ ___ check_xml_ok(xml, *args):
         m.. _ 'The smartLook settings file seems to be broken. Do you want to reset it now?'
         reset_settings_xml _ ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
-            __ __.path.isfile(xml):
+            __ __.pa__.isf..(xml):
                 __.remove(xml)
                 get_settings_xml()
 
@@ -250,10 +250,10 @@ ___ open_website(url, *args):
 
 
 ___ set_style_sheet(widget):
-    this_dir _ __.path.dirname( -f)
-    styles _ __.path.join(this_dir, '../', 'styles', 'styles.qss')
-    styles _ __.path.n_p_(styles)
-    __ __.path.isfile(styles):
+    this_dir _ __.pa__.d_n_( -f)
+    styles _ __.pa__.j..(this_dir, '../', 'styles', 'styles.qss')
+    styles _ __.pa__.n_p_(styles)
+    __ __.pa__.isf..(styles):
         w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
@@ -286,15 +286,15 @@ ___ find_looks_group(*args):
 
 
 ___ get_installed_root_dir(*args):
-    root _ __.path.join(__.path.dirname( -f), '../', '../')
-    r_ __.path.n_p_(root)
+    root _ __.pa__.j..(__.pa__.d_n_( -f), '../', '../')
+    r_ __.pa__.n_p_(root)
 
 
 ___ get_tool_public_root(*args):
-    root _ __.path.join(__.path.expanduser('~'), 'cragl', 'smartLook')
-    __ no. __.path.isdir(root):
+    root _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartLook')
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         ______
             write_log('unable to create open dir')
 
@@ -302,10 +302,10 @@ ___ get_tool_public_root(*args):
 
 
 ___ get_tool_private_root(*args):
-    root _ __.path.join(__.path.expanduser('~'), '.cragl', 'smartLook')
-    __ no. __.path.isdir(root):
+    root _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartLook')
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         ______
             write_log('unable to create open dir')
 
@@ -313,14 +313,14 @@ ___ get_tool_private_root(*args):
 
 
 ___ get_log_file(*args):
-    connect_dir _ __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ no. __.path.isdir(connect_dir):
-        __.makedirs(connect_dir)
-    log_file _ __.path.join(connect_dir, 'connectlog.txt')
-    __ no. __.path.isfile(log_file):
+    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    __ no. __.pa__.isd..(connect_dir):
+        __.m_d_(connect_dir)
+    log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
+    __ no. __.pa__.isf..(log_file):
         w__ o..(log_file, 'w') __ lf:
             log_template _ 'connect log\n{}\n'.f..('-' * 50)
-            lf.write(log_template)
+            lf.w..(log_template)
     r_ log_file
 
 
@@ -328,7 +328,7 @@ ___ write_log(text, tool _ 'lk', *args):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
         log_time _ ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
+        file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ check_web_connection(*args):
@@ -340,7 +340,7 @@ ___ check_web_connection(*args):
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
-    xml _ __.path.join(get_tool_private_root(), 'settings.xml')
+    xml _ __.pa__.j..(get_tool_private_root(), 'settings.xml')
     tree _ ET.parse(xml)
     root _ tree.getroot()
     debug _ F..
@@ -361,7 +361,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
         root.find(parent).ap..(elem)
         w__ o..(xml, 'w') __ xml:
             prettyprint(root)
-            tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+            tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
@@ -387,7 +387,7 @@ ___ build_hotkeys(*args):
     settings_xml _ get_settings_xml()
     settingstree _ ET.parse(settings_xml)
     settingsroot _ settingstree.getroot()
-    elements _ []
+    elements _ # list
     ___ hotkey __ settingsroot.find('hotkeys').f_a_('hotkey'):
         elements.ap..(hotkey.get('name'))
 
@@ -420,8 +420,8 @@ ___ set_hotkeys(*args):
      'resolution slider': 'resolution_slider',
      'settings': 'looks_settings'}
     ___
-        ___ command, hotkey __ hotkeys_dict.items():
-            command_item _ ?.menu('Nuke').findItem('cragl/smartLook/{}'.f..(command))
+        ___ command, hotkey __ hotkeys_dict.i..():
+            command_item _ ?.menu('Nuke').fI..('cragl/smartLook/{}'.f..(command))
             command_item.setShortcut(hotkeys[hotkey])
 
     except KeyError:
@@ -435,17 +435,17 @@ ___ get_explorer_name(*args):
         r_ 'explorer'
 
 
-___ open_in_explorer(path, parent _ N.., *args):
-    __ no. __.path.isdir(path):
-        msg _ "Unable to open directory '{}'. The path doesn't exist.".f..(path)
+___ open_in_explorer(pa__, parent _ N.., *args):
+    __ no. __.pa__.isd..(pa__):
+        msg _ "Unable to open directory '{}'. The path doesn't exist.".f..(pa__)
         show_message_box(parent, msg)
         r_
     __ pl...system() __ 'Windows':
-        __.startfile(path)
+        __.startfile(pa__)
     ____ pl...system() __ 'Darwin':
-        subprocess.P..(['open', path])
+        subprocess.P..(['open', pa__])
     ____
-        subprocess.P..(['xdg-open', path])
+        subprocess.P..(['xdg-open', pa__])
 
 
 ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expanded _ F.., is_dir _ F.., enable_drag _ F.., icon _ ''):
@@ -457,7 +457,7 @@ ___ build_tree_widget_item(parent, item_name, dirpath, disabled, selected, expan
     diritem.setSelected(selected)
     __ disabled:
         diritem.setDisabled(T..)
-    dirpath _ __.path.n_p_(dirpath)
+    dirpath _ __.pa__.n_p_(dirpath)
     __ is_dir:
         __ icon __ '':
             icon _ load_icons()['icon_folder_grey']
@@ -514,7 +514,7 @@ ___ update_xml(key, value, *args):
 
     w__ o..(settings_xml, 'w') __ xml:
         prettyprint(settings_root)
-        settings_tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        settings_tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ center_window(window, *args):
@@ -525,7 +525,7 @@ ___ center_window(window, *args):
 
 
 ___ get_connected_nodes(node, *args):
-    connected_nodes _ []
+    connected_nodes _ # list
     ignore_list _ ['Viewer']
     ?.clear_selection_recursive()
     node.setSelected(T..)
@@ -547,13 +547,13 @@ ___ get_connected_nodes(node, *args):
 
 
 ___ load_tooltips(parent, section, *args):
-    this_dir _ __.path.dirname( -f)
-    tooltips_file _ __.path.join(this_dir, '../', 'data', 'tooltips.json')
-    tooltips_file _ __.path.n_p_(tooltips_file)
-    __ no. __.path.isfile(tooltips_file):
+    this_dir _ __.pa__.d_n_( -f)
+    tooltips_file _ __.pa__.j..(this_dir, '../', 'data', 'tooltips.json')
+    tooltips_file _ __.pa__.n_p_(tooltips_file)
+    __ no. __.pa__.isf..(tooltips_file):
         r_
     w__ o..(tooltips_file) __ json_file:
-        ttdata _ j___.load(json_file)
+        ttdata _ j___.l..(json_file)
     ___ widget __ parent.findChildren(?C...QObject):
         ___ t __ ttdata[section]:
             __ t['tt'] __ widget.property('tt'):
@@ -562,12 +562,12 @@ ___ load_tooltips(parent, section, *args):
 
 ___ get_snapshot_dirs(*args):
     snapshot_root _ load_settings()['snapshotbrowser_root']
-    r_ [ d ___ d __ __.listdir(snapshot_root) __ __.path.isdir(__.path.join(snapshot_root, d)) ]
+    r_ [ d ___ d __ __.l_d_(snapshot_root) __ __.pa__.isd..(__.pa__.j..(snapshot_root, d)) ]
 
 
 ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
-    metaxml _ '{}.xml'.f..(__.path.splitext(thumbnail_src)[0])
-    __ no. __.path.isfile(metaxml):
+    metaxml _ '{}.xml'.f..(__.pa__.s_t_(thumbnail_src)[0])
+    __ no. __.pa__.isf..(metaxml):
         create_metaxml(metaxml)
     metatree _ ET.parse(metaxml)
     metaroot _ metatree.getroot()
@@ -580,7 +580,7 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
 
     w__ o..(metaxml, 'w') __ xml:
         prettyprint(metaroot)
-        metatree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        metatree.w..(xml, encoding_'utf-8', xml_declaration_T..)
     ___ thumb __ snapshotbowser.get_thumbnails_list():
         thumb.set_meta_ui_elements()
 
@@ -589,21 +589,21 @@ ___ set_flag(snapshotbowser, thumbnail_src, color, *args):
 
 ___ create_metaxml(src, *args):
     w__ o..(src, 'w') __ f:
-        f.write(templates.SNAPSHOT_META)
+        f.w..(templates.SNAPSHOT_META)
 
 
 ___ load_metadata(src, *args):
     metadata _ {'flag': '',
      'comment': ''}
-    meta_xml _ '{}.xml'.f..(__.path.splitext(src)[0])
-    __ __.path.isfile(meta_xml):
+    meta_xml _ '{}.xml'.f..(__.pa__.s_t_(src)[0])
+    __ __.pa__.isf..(meta_xml):
         ___
             meta_tree _ ET.parse(meta_xml)
             meta_root _ meta_tree.getroot()
         ______
             msg _ "corrupt metaxml, create new one for '{}'".f..(meta_xml)
             write_log(msg)
-            __ __.path.isfile(meta_xml):
+            __ __.pa__.isf..(meta_xml):
                 __.remove(meta_xml)
                 create_metaxml(meta_xml)
                 meta_tree _ ET.parse(meta_xml)

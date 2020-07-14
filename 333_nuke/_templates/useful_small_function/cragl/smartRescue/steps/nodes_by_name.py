@@ -68,7 +68,7 @@ c_ NodesByName(NodeStep):
         """Handle all listed nodes."""
         ___ node __ ?.allNodes():
             __ node.name() no. __ setup["nodes"]:
-                continue
+                c___
 
             logger.info("@ node '@' because it is included in @",
                              setup["mode"], node.name(),

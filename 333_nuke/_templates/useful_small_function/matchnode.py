@@ -5,8 +5,8 @@ Functions to allow matching of a Nuke node using a regex pattern.
 ______ re
 ______ ?
 
-____ dd.runtime.api ______ relativeImport, load
-load('ddlogger')
+____ dd.runtime.api ______ relativeImport, l..
+l..('ddlogger')
 ______ ddlogger
 LOGGER _ ddlogger.getLogger('getfromnode')
 
@@ -119,7 +119,7 @@ ___ nodesByName(nodes_N.., regex_N.., force_match_T..):
         nodes _ ?.sN..
 
     # loop all Nodes in nodes and match by Name
-    results _ []
+    results _ # list
     ___ i __ nodes:
         __ byName(i, regex, force_match):
             results.ap..(i)

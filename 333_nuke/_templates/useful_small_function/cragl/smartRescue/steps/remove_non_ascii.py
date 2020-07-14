@@ -49,12 +49,12 @@ c_ RemoveNonASCII(BaseStep):
             str: Sanitized string that contains only ascii characters.
 
         """
-        r_ "".join([char ___ char __ string __ ord(char) < 127])
+        r_ "".j..([char ___ char __ string __ ord(char) < 127])
 
     ___ process
         """Process the file removing illegal characters."""
-        lines _ []
-        w__ o..(path, "r") __ src:
+        lines _ # list
+        w__ o..(pa__, "r") __ src:
             ___ line, content __ enumerate(src.readlines()):
                 sanitized _ cut_non_ascii(content)
                 __ sanitized !_ content:
@@ -62,5 +62,5 @@ c_ RemoveNonASCII(BaseStep):
                                      "character in line @", line + 1)
                 lines.ap..(sanitized)
 
-        w__ o..(path, "w") __ dest:
-            dest.write("".join(lines))
+        w__ o..(pa__, "w") __ dest:
+            dest.w..("".j..(lines))

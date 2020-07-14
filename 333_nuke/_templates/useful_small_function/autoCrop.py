@@ -17,7 +17,7 @@ ___ selectionCheck():
 ___ allDependentNodesAndInputs(node, deepNumber):
 
     dependent _ node.dependent()
-    dependentInputs _ []
+    dependentInputs _ # list
     ___ d __ dependent:
         x _ 0
         while x <_ deepNumber:

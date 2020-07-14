@@ -3,7 +3,7 @@ ___ openFileReturnArr(file):
     open set file, read in all lines and
     return an array with all the lines
     '''
-    arr_[]
+    arr_# list
     fobj _ o..("@"%file, "r")
     #load in all lines
     ___ line __ fobj:

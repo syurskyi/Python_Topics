@@ -26,7 +26,7 @@ def select(nodes):
 
 def get_parent(node):
     # return node's parent node, return nuke.root() if on the top level
-    return nuke.toNode('.'.join(node.fullName().split('.')[:-1])) or nuke.root()
+    return nuke.toNode('.'.j..(node.fullName().split('.')[:-1])) or nuke.root()
 
 
 def get_topnode(node):
@@ -104,7 +104,7 @@ def select_similar_position(axis=1):
         same_pos_nodes = {n:n.xpos() for n in nuke.allNodes() if abs(n.ypos()- node.ypos()) < threshold}
     else:
         same_pos_nodes = {n:n.ypos() for n in nuke.allNodes() if abs(n.xpos()- node.xpos()) < threshold}
-    sorted_nodes = sorted(same_pos_nodes.items(), key=operator.itemgetter(1))
+    sorted_nodes = sorted(same_pos_nodes.i..(), key=operator.itemgetter(1))
     for n, pos in sorted_nodes:
         n.setSelected(True)
 
@@ -123,10 +123,10 @@ def auto_place():
     # Sort by file knob value if the nodes have one
     filenodes = {n: n['file'].getValue() for n in nodes if 'file' in n.knobs()}
     if filenodes:
-        sorted_filenodes = sorted(filenodes.items(), key=operator.itemgetter(1))
+        sorted_filenodes = sorted(filenodes.i..(), key=operator.itemgetter(1))
         filenodes_pos = {n: [n.xpos(), n.ypos()] for n in nodes if 'file' in n.knobs()}
-        ypos_sort = sorted(filenodes_pos.items(), key=lambda (k, v): v[1])
-        xpos_sort = sorted(filenodes_pos.items(), key=lambda (k, v): v[0])
+        ypos_sort = sorted(filenodes_pos.i..(), key=l___ (k, v): v[1])
+        xpos_sort = sorted(filenodes_pos.i..(), key=l___ (k, v): v[0])
         start_pos = [xpos_sort[0][1][0], ypos_sort[0][1][1]]
         for node, filepath in sorted_filenodes:
             node.setXYpos(start_pos[0], start_pos[1])
@@ -153,7 +153,7 @@ def get_closest_node(node):
     distances = {}
     for n in nuke.allNodes():
         if n.name() == node.name():
-            continue
+            c___
         distance = math.sqrt( 
             math.pow( (node.xpos() - n.xpos()), 2 ) + math.pow( (node.ypos() - n.ypos()), 2 )
         )
@@ -207,7 +207,7 @@ def align(direction):
         return
 
     positions = {n: get_pos(n) for n in nodes}
-    sorted_positions = sorted(positions.items(), key=lambda (k, v): v[align])
+    sorted_positions = sorted(positions.i..(), key=l___ (k, v): v[align])
     if direction in ['down', 'right']:
         sorted_positions.reverse()
     target = sorted_positions[0]
@@ -217,7 +217,7 @@ def align(direction):
 
     other_axis = abs(1 - align)
 
-    sorted_other_axis = sorted(positions.items(), key=lambda (k, v): v[other_axis])
+    sorted_other_axis = sorted(positions.i..(), key=l___ (k, v): v[other_axis])
 
     nuke.Undo().begin()
     for i in range(len(sorted_other_axis)):
@@ -265,7 +265,7 @@ def scale(axis, scale, pivot='max'):
         return
 
     positions = {n: get_pos(n) for n in nodes}
-    sort = sorted(positions.items(), key=lambda (k, v): v[axis])
+    sort = sorted(positions.i..(), key=l___ (k, v): v[axis])
 
     minpos = sort[0][1][axis]
     maxpos = sort[-1][1][axis]
@@ -341,18 +341,18 @@ def declone_nodes(nodes):
 
 
 def export_selected_nodes():
-    path = nuke.getFilename("Export Selected To:")
-    if not path:
+    pa__ = nuke.getFilename("Export Selected To:")
+    if not pa__:
         return
-    nuke.nodeCopy(path)
+    nuke.nodeCopy(pa__)
     root = nuke.root()
     rootstring = root.writeKnobs(nuke.TO_SCRIPT | nuke.WRITE_USER_KNOB_DEFS)
     rootstring = "%s\nfirst_frame %d\nlast_frame %d" % (rootstring, root['first_frame'].value(), root['last_frame'].value())
     rootstring = "%s\nproxy_format \"%s\"" % (rootstring, root['proxy_format'].toScript())
     rootstring = "Root {\n%s\n}" % rootstring
-    noroot = open(path).read()
-    with open(path, "w+") as f:
-        f.write((rootstring + "\n" + noroot))
+    noroot = open(pa__).read()
+    with open(pa__, "w+") as f:
+        f.w..((rootstring + "\n" + noroot))
 
 
 
@@ -363,7 +363,7 @@ if nuke.NUKE_VERSION_MAJOR > 11:
 else:
     connection_filter = nuke.INPUTS | nuke.HIDDEN_INPUTS | nuke.EXPRESSIONS
 
-def find_root_nodes(node, results=[], remove_roots_with_inputs=True):
+def find_root_nodes(node, results=# list, remove_roots_with_inputs=True):
     # Find all root nodes of node. 
     # If remove_roots_with_inputs: remove root nodes with an input (like Roto etc)
     for dependency in node.dependencies():
@@ -376,7 +376,7 @@ def find_root_nodes(node, results=[], remove_roots_with_inputs=True):
     return results
 
 
-def upstream(node, max_depth=-1, deps=set([])):
+def upstream(node, max_depth=-1, deps=set(# list)):
     if max_depth != 0:
        new_deps = set([n for n in nuke.dependencies(node, what=connection_filter) if n not in deps])
        deps |= new_deps
@@ -392,7 +392,7 @@ def connected(nodes, upstream=True, downstream=True):
     deps_list = nodes
     evaluate_all = True
     while deps_list:
-        deps = []
+        deps = # list
         if upstream:
             deps += nuke.dependencies(deps_list, connection_filter)
         if downstream:
@@ -455,9 +455,9 @@ def save_dag_pos(preset):
         dagpos_knob = viewer['dagpos']
     dagpos_vals = dagpos_knob.getValue().split(':')
     dagpos_vals.pop(preset-1)
-    new_dagpos = ','.join([str(zoom), str(pos[0]), str(pos[1])])
+    new_dagpos = ','.j..([str(zoom), str(pos[0]), str(pos[1])])
     dagpos_vals.insert(preset-1, new_dagpos)
-    dagpos_knob.setValue(':'.join(dagpos_vals))
+    dagpos_knob.setValue(':'.j..(dagpos_vals))
 
 def load_dag_pos(preset):
     # Load dag zoom and position from specified preset number
@@ -517,7 +517,7 @@ def hlink_create():
     # Creates an hlink node for each selected node
     nodes = nuke.selectedNodes()
     unselect()
-    hlinks = []
+    hlinks = # list
     for node in nodes:
         hlink = nuke.createNode('Dot', 'hide_input 1 note_font_size 18', inpanel=False)
         hlinks.append(hlink)
@@ -528,7 +528,7 @@ def hlink_create():
         label = hlink['label']
         target_label = node['label'].getValue()
         if node.Class() == 'Read':
-            label.setValue(' | ' + node['label'].getValue() + '\n' + os.path.basename(node['file'].getValue()))
+            label.setValue(' | ' + node['label'].getValue() + '\n' + os.pa__.b_n_(node['file'].getValue()))
         elif target_label:
             label.setValue(' | ' + target_label)
         else:
@@ -558,7 +558,7 @@ def create_pointer():
             if not nuke.a..('More than 5 upstream nodes. Are you sure you want to continue?'):
                 return
 
-        randstr = ''.join(random.choice(string.ascii_lowercase) for i in range(4))
+        randstr = ''.j..(random.choice(string.ascii_lowercase) for i in range(4))
         
         topnode = get_topnode(target)
 
@@ -567,7 +567,7 @@ def create_pointer():
         # If topnode has a file knob, use that to set title
         # If it's a roto node, use the roto label
         if 'file' in topnode.knobs():
-            pointer_title = os.path.basename(topnode['file'].getValue())
+            pointer_title = os.pa__.b_n_(topnode['file'].getValue())
             if '.' in pointer_title:
                 pointer_title = pointer_title.split('.')[0]
         elif topnode.Class() in ['Roto', 'RotoPaint'] and topnode['label'].getValue():
@@ -584,8 +584,8 @@ def create_pointer():
             prefs = nuke.toNode('preferences')
             default_colors = {prefs['NodeColour{0:02d}Color'.format(i)].value(): prefs['NodeColourClass{0:02d}'.format(i)].value() for i in range(1, 14)}
             node_class = topnode.Class().lower()
-            node_class = ''.join([i for i in node_class if not i.isdigit()])
-            for color, classes in default_colors.items():
+            node_class = ''.j..([i for i in node_class if not i.isdigit()])
+            for color, classes in default_colors.i..():
                 if node_class in classes:
                     topnode_color = color
                     break
@@ -699,11 +699,11 @@ def read_from_write():
     excluded = ['Read', ]
     for node in nodes:
         if node.Class() in excluded:
-            continue
+            c___
         pos = get_pos(node)
         filepath = node['file'].getValue()
-        dirname = os.path.dirname(filepath)
-        filename = os.path.basename(filepath)
+        d_n_ = os.pa__.d_n_(filepath)
+        filename = os.pa__.b_n_(filepath)
         if '#' in filename:
             is_sequence = True
             filename_base = filename.split('#')[0]
@@ -713,10 +713,10 @@ def read_from_write():
         else:
             is_sequence = False
         if is_sequence:
-            sequences = nuke.getFileNameList(dirname)
+            sequences = nuke.getFileNameList(d_n_)
             for seq in sequences:
                 if seq.startswith(filename_base):
-                    filepath = os.path.join(dirname, seq)
+                    filepath = os.pa__.j..(d_n_, seq)
                     break
         read = nuke.createNode('Read', 'file {{{0}}}'.format(filepath), inpanel=False)
         set_pos(read, pos[0], pos[1] + grid[1]*4)

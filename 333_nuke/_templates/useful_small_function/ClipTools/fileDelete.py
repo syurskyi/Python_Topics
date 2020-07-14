@@ -14,7 +14,7 @@ ____ fileName ______ _
 # deletes a list of files supplied from Nuke
 #
 ___ deleteFiles(files):
-    __ __.path.isfile(files[0]):
+    __ __.pa__.isf..(files[0]):
         do_it_nuke.a..('really delete "'+filestoDelete+'" ? (no undo available)')
         __ do_it:
             delete(files,F..)
@@ -50,7 +50,7 @@ ___ deleter():
     files_nuke.getClipname('select files to delete',multiple_T..)
 
     while files:
-        filestoDelete___.path.basename(files[0])  #sets name for message later
+        filestoDelete___.pa__.b_n_(files[0])  #sets name for message later
         __ '%' __ str(files) or '#' __ str(files):
             catchFail_deleteClips(files)
         else:

@@ -23,23 +23,23 @@ ____ smartLink.info ______ __product__
 ____ smartLink.constants ______ ALT, CTRL, KEY, FAVORITES, PREFIX_FAVORITES, SHIFT, SMARTLINK
 
 ___ load_icons():
-    this_dir _ __.path.dirname( -f)
-    dir_icon _ __.path.join(this_dir, 'icons')
-    dir_icon _ __.path.n_p_(dir_icon)
+    this_dir _ __.pa__.d_n_( -f)
+    dir_icon _ __.pa__.j..(this_dir, 'icons')
+    dir_icon _ __.pa__.n_p_(dir_icon)
     icons _ {}
-    ___ file_ __ __.listdir(dir_icon):
-        name _ __.path.splitext(file_)[0]
-        path _ __.path.join(dir_icon, file_)
-        icons[name] _ path
+    ___ file_ __ __.l_d_(dir_icon):
+        name _ __.pa__.s_t_(file_)[0]
+        pa__ _ __.pa__.j..(dir_icon, file_)
+        icons[name] _ pa__
 
     r_ icons
 
 
 ___ set_style_sheet(widget, style _ 'styles.qss'):
-    this_dir _ __.path.join(__.path.dirname( -f))
-    styles _ __.path.join(this_dir, 'styles', style)
-    styles _ __.path.n_p_(styles)
-    __ __.path.isfile(styles):
+    this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
+    styles _ __.pa__.j..(this_dir, 'styles', style)
+    styles _ __.pa__.n_p_(styles)
+    __ __.pa__.isf..(styles):
         w__ o..(styles) __ file_:
             widget.setStyleSheet(file_.read())
 
@@ -55,10 +55,10 @@ ___ get_tool_root(which):
         cragl_dir _ '.cragl'
     ____
         cragl_dir _ 'cragl'
-    root _ __.path.join(__.path.expanduser('~'), cragl_dir, __product__)
-    __ no. __.path.isdir(root):
+    root _ __.pa__.j..(__.pa__.expanduser('~'), cragl_dir, __product__)
+    __ no. __.pa__.isd..(root):
         ___
-            __.makedirs(root)
+            __.m_d_(root)
         except IOError:
             write_log('unable to create open tool dir at: {}'.f..(root))
 
@@ -69,18 +69,18 @@ ___ write_log(text, tool _ 'li'):
     w__ o..(get_log_file(), 'a') __ file_:
         log_time_format _ '%d.%m.%Y %H:%M:%S'
         log_time _ ti__.strftime(log_time_format, ti__.localtime())
-        file_.write('{}: {} {}\n'.f..(log_time, tool, text))
+        file_.w..('{}: {} {}\n'.f..(log_time, tool, text))
 
 
 ___ get_log_file():
-    connect_dir _ __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ no. __.path.isdir(connect_dir):
-        __.makedirs(connect_dir)
-    log_file _ __.path.join(connect_dir, 'connectlog.txt')
-    __ no. __.path.isfile(log_file):
+    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    __ no. __.pa__.isd..(connect_dir):
+        __.m_d_(connect_dir)
+    log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
+    __ no. __.pa__.isf..(log_file):
         w__ o..(log_file, 'w') __ lf:
             log_template _ 'connect log\n{}\n'.f..('-' * 50)
-            lf.write(log_template)
+            lf.w..(log_template)
     r_ log_file
 
 
@@ -124,12 +124,12 @@ ___ get_xml_elements():
 
 
 ___ get_settings_xml():
-    settings_xml _ __.path.join(get_tool_root('private'), 'settings.xml')
-    __ no. __.path.isfile(settings_xml):
+    settings_xml _ __.pa__.j..(get_tool_root('private'), 'settings.xml')
+    __ no. __.pa__.isf..(settings_xml):
         ___
             w__ o..(settings_xml, 'w') __ look_template:
                 template _ templates.SETTINGS
-                look_template.write(template.strip())
+                look_template.w..(template.strip())
                 msg _ "{} settings doesn't exist. created template at: {}".f..(__product__, settings_xml)
                 write_log(msg)
         ______
@@ -166,12 +166,12 @@ ___ clear_combobox(combobox):
 
 
 ___ check_xml_values_exist():
-    ___ key, value __ templates.SETTINGS_DEFAULT_VALUES.items():
+    ___ key, value __ templates.SETTINGS_DEFAULT_VALUES.i..():
         check_xml_value_exists('settings', 'setting', 'name', key, value)
 
 
 ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value2 _ ''):
-    xml _ __.path.join(get_tool_root('private'), 'settings.xml')
+    xml _ __.pa__.j..(get_tool_root('private'), 'settings.xml')
     tree _ ET.parse(xml)
     root _ tree.getroot()
     debug _ F..
@@ -192,7 +192,7 @@ ___ check_xml_value_exists(parent, section, key1, value1, text, key2 _ '', value
         root.find(parent).ap..(elem)
         w__ o..(xml, 'w') __ xml:
             prettyprint(root)
-            tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+            tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
         write_log('settings xml added: {}|{}|{}|{}|{}|{}|{}'.f..(parent, section, key1, value1, text, key2, value2))
 
 
@@ -221,7 +221,7 @@ ___ check_xml_ok(xml):
         m.. _ 'The {} settings file seems to be broken. Do you want to reset it now?'.f..(__product__)
         reset_settings_xml _ dialogs.ask_dialog(m.., process_label_'reset', color_process_'actionButton')
         __ reset_settings_xml:
-            __ __.path.isfile(xml):
+            __ __.pa__.isf..(xml):
                 __.remove(xml)
                 get_settings_xml()
 
@@ -233,7 +233,7 @@ ___ update_settings(key, value):
             setting.text _ value
             w__ o..(xml, 'w') __ xml:
                 prettyprint(root)
-                tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+                tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
             r_
 
     raise ValueError("Invalid key '{}'. No such key in settings.".f..(key))
@@ -248,18 +248,18 @@ ___ update_preset(preset_name, key, value):
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ load_tooltips(parent, section):
-    this_dir _ __.path.dirname( -f)
-    tooltips_file _ __.path.join(this_dir, 'data', 'tooltips.json')
-    tooltips_file _ __.path.n_p_(tooltips_file)
-    __ no. __.path.isfile(tooltips_file):
+    this_dir _ __.pa__.d_n_( -f)
+    tooltips_file _ __.pa__.j..(this_dir, 'data', 'tooltips.json')
+    tooltips_file _ __.pa__.n_p_(tooltips_file)
+    __ no. __.pa__.isf..(tooltips_file):
         r_
     w__ o..(tooltips_file) __ json_file:
         ___
-            ttdata _ j___.load(json_file)
+            ttdata _ j___.l..(json_file)
         except ValueError:
             write_log('Non well-formed tooltips file. Cannot parse file.')
             r_
@@ -332,7 +332,7 @@ ___ zoom(node):
 
 
 ___ get_repr_class_nodes():
-    nodes _ []
+    nodes _ # list
     ___ node_class __ ['PostageStamp', 'Dot']:
         nodes.extend(?.allNodes(node_class))
 
@@ -359,7 +359,7 @@ ___ list_from_string(string):
 
 ___ string_from_list(list_):
     __ i..(list_, list):
-        r_ ', '.join(list_)
+        r_ ', '.j..(list_)
     r_ str(list_)
 
 
@@ -389,7 +389,7 @@ ___ add_to_root_favorites(uid):
     __ uid __ favorites:
         r_
     favorites.ap..(uid)
-    favorites_knob.sV..(', '.join(favorites))
+    favorites_knob.sV..(', '.j..(favorites))
 
 
 ___ remove_from_root_favorites(uid):
@@ -400,7 +400,7 @@ ___ remove_from_root_favorites(uid):
     except ValueError:
         r_
 
-    favorites_knob.sV..(', '.join(favorites))
+    favorites_knob.sV..(', '.j..(favorites))
 
 
 ___ rgb_to_hex(r, g, b):
@@ -420,7 +420,7 @@ ___ swap_presets(preset1, preset2):
             index +_ 1
 
     xml, root, tree _ get_xml_elements()
-    presets _ []
+    presets _ # list
     presets.ap..(_find_preset(root, preset1))
     presets.ap..(_find_preset(root, preset2))
     __ no. all(presets):
@@ -431,7 +431,7 @@ ___ swap_presets(preset1, preset2):
     root.find('backdrops').insert(presets[1][1], presets[0][0])
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ remove_preset(name):
@@ -443,7 +443,7 @@ ___ remove_preset(name):
 
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ add_preset(name, color, icon):
@@ -455,7 +455,7 @@ ___ add_preset(name, color, icon):
     root.find('backdrops').ap..(elem)
     w__ o..(xml, 'w') __ xml:
         prettyprint(root)
-        tree.write(xml, encoding_'utf-8', xml_declaration_T..)
+        tree.w..(xml, encoding_'utf-8', xml_declaration_T..)
 
 
 ___ add_to_favorites():

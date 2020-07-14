@@ -14,7 +14,7 @@ Brief:
 
 __author__ = 'Jaime Rivera <jaime.rvq@gmail.com>'
 __copyright__ = 'Copyright 2018, Jaime Rivera'
-__credits__ = []
+__credits__ = # list
 __license__ = 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)'
 __maintainer__ = 'Jaime Rivera'
 __email__ = 'jaime.rvq@gmail.com'

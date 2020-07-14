@@ -9,7 +9,7 @@ ___ nodeToggler():
             knobPanel _ nuke.Panel('Select Knob')
 	    #a dictionary of knobs created for reference
             allKnob _ {'hide input':'hide_input', 'cached':'cached', 'disable':'disable', 'bookmark':'bookmark', 'postage stamp':'postage_stamp', 'always in dope sheet': 'dope_sheet'}
-            knobNameList _ []
+            knobNameList _ # list
             knobName _ ''
             ___ key __ allKnob:
                 knobNameList.append(allKnob[key])
@@ -30,7 +30,7 @@ ___ nodeToggler():
         #creates panel for node selection
 	nodePanel _ nuke.Panel('Select Node')
         allNode _ nuke.allNodes()
-        nodeClassList _ []
+        nodeClassList _ # list
         nodeClass _ ''
         ___ node __ allNode:
             __ node.Class() !_ 'Viewer':             #removes any viewer node present in allNode List

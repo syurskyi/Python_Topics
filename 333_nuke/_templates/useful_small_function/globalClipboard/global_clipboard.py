@@ -15,7 +15,7 @@ c_ global_clipboard():
 
     ___ paste(self, getUser):
         loadPath _ "{}{}_{}.nk".f..(repo, saveName, getUser)
-        __ __.path.exists(loadPath):
+        __ __.pa__.exists(loadPath):
             ?.nodePaste(loadPath)
         ____
             ?.m..("{}\ndoesn't exists".f..(loadPath))

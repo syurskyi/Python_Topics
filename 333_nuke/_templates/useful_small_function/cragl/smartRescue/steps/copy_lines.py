@@ -76,11 +76,11 @@ c_ CopyLines(BaseStep):
 
         logger.info("Using lines @ - @", first_line, last_line)
 
-        path_temp _ "{}_".f..(path)
+        path_temp _ "{}_".f..(pa__)
 
-        w__ o..(path, "r") __ src, o..(path_temp, "w") __ dest:
+        w__ o..(pa__, "r") __ src, o..(path_temp, "w") __ dest:
             lines _ src.readlines()
             copy_lines _ lines[first_line-1:last_line]
-            dest.write("".join(copy_lines))
+            dest.w..("".j..(copy_lines))
 
-        __.rename(path_temp, path)
+        __.rename(path_temp, pa__)

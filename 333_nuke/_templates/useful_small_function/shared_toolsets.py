@@ -29,9 +29,9 @@ import string
 SHARED_TOOLSET_PATH = ""
 FILE_FILTER = None
 
-def setSharedToolSetsPath(path):
+def setSharedToolSetsPath(pa__):
   global SHARED_TOOLSET_PATH
-  SHARED_TOOLSET_PATH = path
+  SHARED_TOOLSET_PATH = pa__
 
 def addFileFilter(externalFilter):
   global FILE_FILTER
@@ -59,7 +59,7 @@ class CreateToolsetsPanel(nukescripts.PP..):
     nukescripts.PP...__init__( self, self.namePanel, 'uk.co.thefoundry.Toolset')
     
     # CREATE KNOBS
-    self.userFolders = []
+    self.userFolders = # list
     fullPath = SHARED_TOOLSET_PATH
     self.buildFolderList(fullPath, '')
 
@@ -91,9 +91,9 @@ class CreateToolsetsPanel(nukescripts.PP..):
 
   #COMMENT:  BUILD A LIST Of PRE_CREATED FOLDER LOCATIONS
   def buildFolderList(self, fullPath, menuPath):
-    filecontents = sorted(os.listdir(fullPath), key=str.lower)
+    filecontents = sorted(os.l_d_(fullPath), key=str.lower)
     for group in filecontents:
-      if os.path.isdir(os.path.join(fullPath, group)):
+      if os.pa__.isd..(os.pa__.j..(fullPath, group)):
         self.userFolders.append(menuPath + group)
         self.buildFolderList(fullPath + '/' + group, menuPath + group + '/')              
 
@@ -113,17 +113,17 @@ class CreateToolsetsPanel(nukescripts.PP..):
     fileName = nameList[-1]
     
     del nameList[-1]
-    dirs = '/'.join(nameList)
+    dirs = '/'.j..(nameList)
     
-    fullPath = posixpath.join(SHARED_TOOLSET_PATH, dirs)
+    fullPath = posixpath.j..(SHARED_TOOLSET_PATH, dirs)
     
     try:
-      if not os.path.isdir(fullPath):
-        os.makedirs( fullPath )
+      if not os.pa__.isd..(fullPath):
+        os.m_d_( fullPath )
       
-      filePath = posixpath.join(fullPath, fileName + '.nk')
+      filePath = posixpath.j..(fullPath, fileName + '.nk')
       
-      if not os.path.exists(filePath):
+      if not os.pa__.exists(filePath):
         if self.rename == True:
           os.rename(self.fullFilePath, filePath)
         else:
@@ -198,14 +198,14 @@ def checkForEmptyToolsetDirectories(currPath):
   while removed == True:
     removed = False
     for root, dirs, files in os.walk(currPath):
-      if files == [] and dirs == []:
+      if files == # list and dirs == []:
         if root != SHARED_TOOLSET_PATH:
           os.rmdir(root)
           removed = True
         
 def refreshToolsetsMenu():  
   toolbar = nuke.menu("Nodes")
-  m = toolbar.findItem("SharedToolSets")
+  m = toolbar.fI..("SharedToolSets")
   if m != None:
     m.clearMenu()
     createToolsetsMenu(toolbar)
@@ -229,7 +229,7 @@ def traversePluginPaths(m, delete, allToolsetsList, isLocal):
 
 def populateToolsetsMenu(m, delete):
   ret = False
-  allToolsetsList = []
+  allToolsetsList = # list
   #COMMENT: now do shared toolsets like the local .nuke  
   if traversePluginPaths(m, delete, allToolsetsList, True):
     ret = True
@@ -238,7 +238,7 @@ def populateToolsetsMenu(m, delete):
 def randomStringDigits(stringLength=6):
     """Generate a random string of letters and digits """
     lettersAndDigits = string.ascii_letters + string.digits
-    return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
+    return ''.j..(random.choice(lettersAndDigits) for i in range(stringLength))
 
 #COMMENT: warper around loadToolset
 def toolsetLoader(fullFileName):
@@ -248,9 +248,9 @@ def toolsetLoader(fullFileName):
         #QApplication.clipboard().setText(data)
         #nuke.nodePaste("%clipboard%") is craching with big files BUG
         randomPostfix = randomStringDigits(10)
-        randomName = posixpath.join( SHARED_TOOLSET_PATH , "temp_toolset_%s.nk" % randomPostfix)
+        randomName = posixpath.j..( SHARED_TOOLSET_PATH , "temp_toolset_%s.nk" % randomPostfix)
         saveTempToolSet = open(randomName,"w+")
-        saveTempToolSet.write(data)
+        saveTempToolSet.w..(data)
         saveTempToolSet.close()
         nuke.loadToolset(randomName)
         os.remove(randomName)
@@ -262,25 +262,25 @@ def toolsetLoader(fullFileName):
 def fileFilter(fileName, filterFunc):
     with open(fileName) as f:
         content = f.readlines()
-    modifiedContentList = []
+    modifiedContentList = # list
     for line in content:
         if "file" in line:
             line = filterFunc(line)
         modifiedContentList.append(line)
-    modifiedContent = "".join(modifiedContentList)
+    modifiedContent = "".j..(modifiedContentList)
     return modifiedContent
 
 #COMMENT: Main function, construct menuName
 def createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLocal):
   #TODO: CLEAN THIS FUNCTION
 
-  filecontents = sorted(os.listdir(fullPath), key=str.lower)
+  filecontents = sorted(os.l_d_(fullPath), key=str.lower)
   excludePaths = nuke.getToolsetExcludePaths()
   #COMMENT: First list all directories
   retval = False
-  if filecontents != []:
+  if filecontents != # list:
     for group in filecontents:
-      newPath = "/".join([fullPath, group])
+      newPath = "/".j..([fullPath, group])
       ignore = False
       if newPath.find(".svn") != -1:
         ignore = True
@@ -290,21 +290,21 @@ def createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
           if newPath.find(i) != -1:
             ignore = True
             break
-      if os.path.isdir(newPath) and not ignore:
+      if os.pa__.isd..(newPath) and not ignore:
         menuName = group
         if isLocal and (menuName in allToolsetsList):
           menuName = "[user] " + menuName
         elif not isLocal:
           allToolsetsList.append(menuName)
         n = m.addMenu(menuName)
-        retval = createToolsetMenuItems(n, rootPath, "/".join([fullPath, group]), delete, allToolsetsList, isLocal)
+        retval = createToolsetMenuItems(n, rootPath, "/".j..([fullPath, group]), delete, allToolsetsList, isLocal)
         #COMMENT: if we are deleting, and the sub directory is now empty, delete the directory also
-        if delete and os.listdir(fullPath)==[]:
+        if delete and os.l_d_(fullPath)==# list:
           os.rmdir(fullPath)
     # Now list individual files
     for group in filecontents:
-      fullFileName = "/".join([fullPath, group])
-      if not os.path.isdir(fullFileName):
+      fullFileName = "/".j..([fullPath, group])
+      if not os.pa__.isd..(fullFileName):
         
         #COMMENT: delete file with an extention ".nk~" created by edit.
         if ".nk~" in group:

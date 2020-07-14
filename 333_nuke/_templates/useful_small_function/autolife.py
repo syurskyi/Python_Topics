@@ -15,7 +15,7 @@
 
 ______ nuke
 
-elements _ []
+elements _ # list
 
 ___ addAutoLife():
   n _ nuke.thisNode()
@@ -38,7 +38,7 @@ ___ autoLife():
   
   g__ elements
   # Clear global elements array so that only the current Roto/Rotopaint node's elements are 'autolifed'
-  elements _ []
+  elements _ # list
   getElements(nlayer)
   
   ___ element __ elements:

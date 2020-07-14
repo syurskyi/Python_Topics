@@ -92,8 +92,8 @@ ___ get_righthandside_position(node_list):
     :param node_list: a list of nuke nodes.
     :return: return a set of coordinates.
     """
-    x_pos_list _ []
-    y_pos_list _ []
+    x_pos_list _ # list
+    y_pos_list _ # list
 
     ___ node __ node_list:
         pos _ get_node_position(?.toNode(node))
@@ -338,9 +338,9 @@ ___ iterate_deep_holdout_setup():
     This function will iterate over a set of DeepRecolor nodes and create a holdout setup for each.
     :return: none
     """
-    names _ []
-    deep_holdouts _ []
-    selected_nodes _ []
+    names _ # list
+    deep_holdouts _ # list
+    selected_nodes _ # list
 
 
     ___ i __ ?.sN..:
@@ -384,8 +384,8 @@ ___ get_middle_position():
     This function will compute a set of coordinates of convenience.
     :return: a set of coordinates.
     """
-    x_pos_list _ []
-    y_pos_list _ []
+    x_pos_list _ # list
+    y_pos_list _ # list
 
     ___ node __ ?.sN..:
         pos _ get_node_position(node)
@@ -409,7 +409,7 @@ ___ create_rgba_deep_recolor(channels):
     :param channels:
     :return: a colection of DeepRecolor node objects.
     """
-    new_deep_recolor_names _ []
+    new_deep_recolor_names _ # list
 
     ___ node __ ?.sN..:
 
@@ -437,7 +437,7 @@ ___ uberpass_function():
     This function will deep merge all elemenents together, thus creating the so called uber pass.
 
     """
-    node_list _ []
+    node_list _ # list
 
     ___ node __ ?.sN..:
         node_list.ap..(node)
@@ -462,8 +462,8 @@ ___ uberpass_function():
     string _ "uberpass_color_output"
     last_dot _ d_dot_parent(string,"Dot",switch,switch_pos["x_pos"]+35,switch_pos["y_pos"]+ 100)
 
-    write _ create_node_with_position("Write",last_dot,get_node_position(last_dot)["x_pos"],get_node_position(last_dot)["y_pos"] + 200)
-    write['channels'].sV..('all')
+    w.. _ create_node_with_position("Write",last_dot,get_node_position(last_dot)["x_pos"],get_node_position(last_dot)["y_pos"] + 200)
+    w..['channels'].sV..('all')
 
     ___ name __ rgb_deep_recolor:
        ?.toNode(name)['selected'].sV..(T..)
@@ -486,7 +486,7 @@ ___ depth_for_defocus():
     """
     This function will create a custom depth from deep setup.
     """
-    node_list _ []
+    node_list _ # list
 
     ___ node __ ?.sN..:
         node_list.ap..(node)
@@ -534,12 +534,12 @@ ___ splitLayers( node ):
     
     ch _ node.channels()
     
-    layers _ []
+    layers _ # list
     valid_channels _ ['red', 'green', 'blue', 'alpha', 'black', 'white']
     
     ___ each __ ch:
         layer_name _ each.split( '.' )[0]
-        tmp _ []
+        tmp _ # list
         ___ channel __ ch:
             __ channel.startswith( layer_name ) __ T..:
                 tmp.ap..( channel )
@@ -627,10 +627,10 @@ ___ find_holdout_source_elements(houldout_names):
     :param houldout_names: a list of node names.
     :return:
     """
-    houldout_processed_list _ []
+    houldout_processed_list _ # list
         
     ___ name __ houldout_names:
-        _ _ "_".join(name.split('_')[:-2])
+        _ _ "_".j..(name.split('_')[:-2])
         __ ?.toNode(_):
             houldout_processed_list.ap..(_)
         ____
@@ -645,7 +645,7 @@ ___ create_and_connect_child_dots(holdouts,color):
     :param holdouts:
     :param color:
     """
-    multiply_list _ []
+    multiply_list _ # list
     counter _ 0
     adder _ 0
     adder_x _ 0
@@ -691,7 +691,7 @@ ___ create_and_connect_child_dots(holdouts,color):
             multiply_list.ap..(multiply)
           
     counter  _ 0
-    holder _ []
+    holder _ # list
     
     ___ i __ ra..(le.(multiply_list)):
 

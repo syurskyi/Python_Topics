@@ -97,7 +97,7 @@ ___ sjmBackdropFonts():
 ___ sjmFindAllParentReads(n_N..):
   __ n __ N..:
     n _ ?.sN__
-  result _ []
+  result _ # list
   __ n.knob('file'):
     result.ap..(n)
   ins _ n.inputs()
@@ -216,7 +216,7 @@ ___
       url _ locationEdit.t..
       __ no. url.startswith( 'http://' ):
         url _ 'http://' + url
-      webView.load( QUrl(url) )
+      webView.l..( QUrl(url) )
     ___ urlChanged(self, url):
       locationEdit.setText( url.toString() )
     ___  -
@@ -237,7 +237,7 @@ ___
       layout().aW..( bar )
       layout().aW..( webView )
       url _ 'http://www.thefoundry.co.uk/'
-      webView.load( QUrl( url ) )
+      webView.l..( QUrl( url ) )
       locationEdit.setText( url )
       setSizePolicy( QSizePolicy( QSizePolicy.Expanding,  QSizePolicy.Expanding))
   #

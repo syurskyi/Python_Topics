@@ -9,13 +9,13 @@ ______ getseq
 
 ______ dd.xplatform
 
-____ dd.runtime.api ______ relativeImport, load
+____ dd.runtime.api ______ relativeImport, l..
 ____ dd.runtime ______ info
-load('ddlogger')
+l..('ddlogger')
 ______ ddlogger
 LOGGER _ ddlogger.getLogger('getfromnode')
 
-load('nukepipeline')
+l..('nukepipeline')
 __ info.getVersionToBeLoaded("nukepipeline") >_ "3.1.0":
     relativeImport('matchnode', 'nukepipeline/common/utils')
 ____
@@ -141,7 +141,7 @@ ___ filePath(node_N.., proxy_F.., regex_N.., force_match_T..):
                 ?.delete(tmp)
 
     __ result !_ N..:
-        result _ dd.xplatform.xpath(__.path.n_p_(result))
+        result _ dd.xplatform.xpath(__.pa__.n_p_(result))
         LOGGER.debug('Discovered path @ for node @' % (
             result, node.knob('name').value()))
         r_ result
@@ -168,14 +168,14 @@ ___ filePathWithRange(node_N.., proxy_F.., regex_N.., force_match_T..):
     # check node again (in case user has no selection made)
     # get file path from node
     __ node:
-        path _ filePath(node, proxy, regex, force_match)
+        pa__ _ filePath(node, proxy, regex, force_match)
         # if file path found, append frame range data
         # use getseq instad of root range
         # makes more sense eh? #61881 / #64178
-        __ path:
-            first_frame, last_frame _ getseq.getRange(path)
+        __ pa__:
+            first_frame, last_frame _ getseq.getRange(pa__)
             LOGGER.debug('Discovered range of @-@' % (first_frame, last_frame))
-            result _ '@ @-@' % (path, first_frame, last_frame)
+            result _ '@ @-@' % (pa__, first_frame, last_frame)
 
     # return the path and range discovered
     r_ result
@@ -190,7 +190,7 @@ ___ filePaths(no___N.., proxy_F.., regex_N.., force_match_T..):
     nodes whose Class() matches the pattern.
     """
     
-    result _ []
+    result _ # list
 
     # check nodes, use selected Nodes in DAG if no arg
     __ no. nodes:
@@ -215,7 +215,7 @@ ___ filePathsWithRanges(nodes_N.., proxy_F.., regex_N.., force_match_T..):
     nodes whose Class() matches the pattern.
     """
     
-    result _ []
+    result _ # list
 
     # check nodes, use selected Nodes in DAG if no arg
     __ no. nodes:
@@ -237,7 +237,7 @@ ___ fileType(node):
     """
     Returns the file extension of the node given
     """
-    result _ __.path.splitext(filePath(node))[1].lstrip('.')
+    result _ __.pa__.s_t_(filePath(node))[1].lstrip('.')
     LOGGER.debug('Filetype for node @ is @' % (node.knob('name').v.., result))
     r_ result
 # end fileType

@@ -28,7 +28,7 @@ ______ ___
 c_ PathResolver(object):
     """Resolve absolute path to PySide and Nuke executable."""
 
-    ___  - (self, path):
+    ___  - (self, pa__):
         """Initialize the PathResolver instance.
 
         Args:
@@ -36,7 +36,7 @@ c_ PathResolver(object):
                 for PySide and the Nuke executable.
 
         """
-        path _ path
+        pa__ _ pa__
 
         operating_sytem _ ""
         exe_pattern _ ""
@@ -89,23 +89,23 @@ c_ PathResolver(object):
         """
         pyside_pattern _ r"PySide\d*"  # https://regex101.com/r/LDR591/1
 
-        __ no. path:
+        __ no. pa__:
             raise OSError("No Nuke root directory set. Please set your Nuke "
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
 
-        ___ root, dirs, files __ __.walk(path, topdown_F..):
+        ___ root, dirs, files __ __.walk(pa__, topdown_F..):
             ___ name __ files:
                 __ re.match(exe_pattern, name):
-                    ? _ __.path.join(root, name)
+                    ? _ __.pa__.j..(root, name)
             ___ name __ dirs:
                 __ re.match(pyside_pattern, name):
-                    pyside_root _ __.path.join(root, name)
-                    site_packages _ __.path.dirname(pyside_root)
+                    pyside_root _ __.pa__.j..(root, name)
+                    site_packages _ __.pa__.d_n_(pyside_root)
 
         __ no. ?:
             raise OSError("Did not find any Nuke executable under "
-                          "{}".f..(path))
+                          "{}".f..(pa__))
 
         __ no. site_packages:
             raise OSError("Did not find site-packages including PySide or "
@@ -117,19 +117,19 @@ c_ PathResolver(object):
         This is to make PySide/PySide2 available.
 
         """
-        ___.path.ap..(site_packages)
+        ___.pa__.ap..(site_packages)
 
-    ___ set_path(self, path):
+    ___ set_path(self, pa__):
         """Set the path to the given path and ensure a directory is used.
 
         Args:
             path (str): Absolute path to use.
 
         """
-        __ __.path.isfile(path):
-            path _ __.path.dirname(path)
+        __ __.pa__.isf..(pa__):
+            pa__ _ __.pa__.d_n_(pa__)
 
-        path _ path
+        pa__ _ pa__
 
     ___ run
         """Resolve all paths."""

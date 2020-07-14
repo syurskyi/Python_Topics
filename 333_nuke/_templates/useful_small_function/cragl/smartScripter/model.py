@@ -37,7 +37,7 @@ ______ __
 ____ smartScripter.constants ______ DEFAULT_SETTINGS
 
 
-___ load():
+___ l..():
     """Load settings from Settings instance.
 
     Returns:
@@ -72,7 +72,7 @@ ___ get_settings_file():
 
     """
     ____ smartScripter ______ helper
-    r_ __.path.join(helper.get_tool_root("private"), "settings.json")
+    r_ __.pa__.j..(helper.get_tool_root("private"), "settings.json")
 
 
 # We want to create a self-contained class explicitly. The user does not need
@@ -109,18 +109,18 @@ c_ Settings(object):
         """
         ____ smartScripter ______ helper
         settings_dir _ helper.get_tool_root("private")
-        __ no. __.path.isdir(settings_dir):
-            __.makedirs(settings_dir)
+        __ no. __.pa__.isd..(settings_dir):
+            __.m_d_(settings_dir)
 
         settings_file _ get_settings_file()
-        __ no. __.path.isfile(settings_file):
+        __ no. __.pa__.isf..(settings_file):
             w__ o..(settings_file, "w") __ file_:
                 j___.dump(DEFAULT_SETTINGS, file_, indent_4, sort_keys_T..)
 
         r_ settings_file
 
     @staticmethod
-    ___ _load(path):
+    ___ _load(pa__):
         """Load the settings file.
 
         Args:
@@ -130,5 +130,5 @@ c_ Settings(object):
             dict: Settings parsed from given path.
 
         """
-        w__ o..(path, "r") __ file_:
-            r_ j___.load(file_)
+        w__ o..(pa__, "r") __ file_:
+            r_ j___.l..(file_)

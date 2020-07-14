@@ -21,8 +21,8 @@ ___ createList(files):
 
     # parses the Nuke shorthand and splits into several components
     ___
-        pathToFile___.path.dirname(files[0])
-        clipname___.path.basename(files[0]).split('(')[0]
+        pathToFile___.pa__.d_n_(files[0])
+        clipname___.pa__.b_n_(files[0]).split('(')[0]
         name_clipname.split('.')[0]
         padding_(clipname.split('.')[1])[1:3]
         extension_clipname.split(' ')[0].split('.')[2]
@@ -30,7 +30,7 @@ ___ createList(files):
         rangeEnd_clipname.split(' ')[1].split('-')[1]
 
         # creates a list of files from above
-        filesList_ []
+        filesList_ # list
         rangeCount_int(rangeStart)
         while in.(rangeCount)<_ in.(rangeEnd):
             paddedNum_str('%'+padding+'d') % in.(rangeCount)
@@ -84,12 +84,12 @@ ___ renameClips(files):
 # renames the individual files passed from Nuke
 #
 ___ renameFiles(files):
-    pathToFile___.path.dirname(files[0])
-    name___.path.basename(files[0]).split('.')[0]
+    pathToFile___.pa__.d_n_(files[0])
+    name___.pa__.b_n_(files[0]).split('.')[0]
     (search,r..)_getRename(files,name)
-    filesList_[]
+    filesList_# list
     ___ f __ files:
-        clipname___.path.basename(f)
+        clipname___.pa__.b_n_(f)
         filesList.append(clipname)
         
 
@@ -147,7 +147,7 @@ ___ renumber():
                 frameStart_ panel.value("frameStart:")
 
 
-                tempFilesList_ []
+                tempFilesList_ # list
                 rangeCount_int(rangeStart)
                 newRangeCount_int(frameStart)
 
@@ -192,7 +192,7 @@ ___ removeExtension():
         __ '%' __ str(files):
             nuke.m..('This only works on individually selected files')
         else:
-            result_nuke.a..('Remove extension "'+__.path.basename(files[0])[-4:]+'" ? \nthis can overwrite existing files')
+            result_nuke.a..('Remove extension "'+__.pa__.b_n_(files[0])[-4:]+'" ? \nthis can overwrite existing files')
             __ result:
                 ___ f __ files:
                     __.rename(f, f[:-4])
@@ -210,28 +210,28 @@ ___ removeTemps():
     __ do_it:
         aw _ nuke.allNodes('Write')
         
-        paths _ []
+        paths _ # list
         
         ___ w __ aw:
             f _ w['file'].v..
             p _ w['proxy'].v..
             
             __ f:
-                f_path _ __.path.dirname(f)
+                f_path _ __.pa__.d_n_(f)
                 paths.append(f_path)
             __ p:
-                p_path _ __.path.dirname(p)
+                p_path _ __.pa__.d_n_(p)
                 paths.append(p_path)
                 
-        ___ path __ list(set(paths)):
-            files _ __.listdir(path)
+        ___ pa__ __ list(set(paths)):
+            files _ __.l_d_(pa__)
             count_0
             ___ f __ files:
                 filename _ f.split('.')
                 ext _ filename[-1]
                 __ ext __ 'tmp':
                     ___
-                        __.remove(path+'/'+f)
+                        __.remove(pa__+'/'+f)
                         count+_1
                     ______
                         nuke.tprint('Unable to delete file: @' % f)

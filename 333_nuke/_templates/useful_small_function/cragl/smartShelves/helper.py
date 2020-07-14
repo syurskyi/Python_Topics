@@ -14,20 +14,20 @@ _LOCK_DELIMITER _ ','
 _LOCK_LIST _ 'CRAGL_SMARTSHELVES_LOCKS'
 
 ___ load_icons():
-    this_dir _ __.path.dirname( -f)
-    dir_icon _ __.path.join(this_dir, 'icons')
-    dir_icon _ __.path.n_p_(dir_icon)
-    r_ {'icon_logo': __.path.join(dir_icon, 'logo.png'),
-     'about': __.path.join(dir_icon, 'about.jpg'),
-     'icon_folder': __.path.join(dir_icon, 'folder.png'),
-     'icon_edit': __.path.join(dir_icon, 'edit.png'),
-     'icon_hide': __.path.join(dir_icon, 'hide.png'),
-     'icon_gizmos': __.path.join(dir_icon, 'gizmos.png'),
-     'icon_nodes': __.path.join(dir_icon, 'nodes.png'),
-     'icon_modify': __.path.join(dir_icon, 'modify.png'),
-     'icon_nuke': __.path.join(dir_icon, 'nuke.png'),
-     'icon_lock_closed': __.path.join(dir_icon, 'lock_closed.png'),
-     'icon_lock_open': __.path.join(dir_icon, 'lock_open.png')}
+    this_dir _ __.pa__.d_n_( -f)
+    dir_icon _ __.pa__.j..(this_dir, 'icons')
+    dir_icon _ __.pa__.n_p_(dir_icon)
+    r_ {'icon_logo': __.pa__.j..(dir_icon, 'logo.png'),
+     'about': __.pa__.j..(dir_icon, 'about.jpg'),
+     'icon_folder': __.pa__.j..(dir_icon, 'folder.png'),
+     'icon_edit': __.pa__.j..(dir_icon, 'edit.png'),
+     'icon_hide': __.pa__.j..(dir_icon, 'hide.png'),
+     'icon_gizmos': __.pa__.j..(dir_icon, 'gizmos.png'),
+     'icon_nodes': __.pa__.j..(dir_icon, 'nodes.png'),
+     'icon_modify': __.pa__.j..(dir_icon, 'modify.png'),
+     'icon_nuke': __.pa__.j..(dir_icon, 'nuke.png'),
+     'icon_lock_closed': __.pa__.j..(dir_icon, 'lock_closed.png'),
+     'icon_lock_open': __.pa__.j..(dir_icon, 'lock_open.png')}
 
 
 ___ get_default_icon_path():
@@ -39,22 +39,22 @@ ___ show_message_box(window, m..):
 
 
 ___ get_installed_root_dir():
-    this_dir _ __.path.join(__.path.dirname( -f))
-    root _ __.path.join(this_dir, '../', '../')
-    r_ __.path.n_p_(root)
+    this_dir _ __.pa__.j..(__.pa__.d_n_( -f))
+    root _ __.pa__.j..(this_dir, '../', '../')
+    r_ __.pa__.n_p_(root)
 
 
 ___ get_smartshelves_private_dir():
-    dir_ _ __.path.join(__.path.expanduser('~'), '.cragl', 'smartShelves')
-    __ no. __.path.isdir(dir_):
-        __.makedirs(dir_)
+    dir_ _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'smartShelves')
+    __ no. __.pa__.isd..(dir_):
+        __.m_d_(dir_)
     r_ dir_
 
 
 ___ get_smartshelves_public_dir():
-    dir_ _ __.path.join(__.path.expanduser('~'), 'cragl', 'smartShelves')
-    __ no. __.path.isdir(dir_):
-        __.makedirs(dir_)
+    dir_ _ __.pa__.j..(__.pa__.expanduser('~'), 'cragl', 'smartShelves')
+    __ no. __.pa__.isd..(dir_):
+        __.m_d_(dir_)
     r_ dir_
 
 
@@ -73,14 +73,14 @@ ___ open_website(url):
 
 
 ___ get_log_file():
-    connect_dir _ __.path.join(__.path.expanduser('~'), '.cragl', 'connect')
-    __ no. __.path.isdir(connect_dir):
-        __.makedirs(connect_dir)
-    log_file _ __.path.join(connect_dir, 'connectlog.txt')
-    __ no. __.path.isfile(log_file):
+    connect_dir _ __.pa__.j..(__.pa__.expanduser('~'), '.cragl', 'connect')
+    __ no. __.pa__.isd..(connect_dir):
+        __.m_d_(connect_dir)
+    log_file _ __.pa__.j..(connect_dir, 'connectlog.txt')
+    __ no. __.pa__.isf..(log_file):
         w__ o..(log_file, 'w') __ lf:
             log_template _ templates.LOG
-            lf.write(log_template)
+            lf.w..(log_template)
     r_ log_file
 
 
@@ -88,17 +88,17 @@ ___ write_log(text, tool _ 'sh'):
     logtime _ ti__.strftime('%d.%m.%Y %H:%M:%S', ti__.localtime())
     ___
         w__ o..(get_log_file(), 'a') __ s:
-            s.write('{}: {} {}\n'.f..(logtime, tool, text))
+            s.w..('{}: {} {}\n'.f..(logtime, tool, text))
         r_ T..
     ______
         r_ F..
 
 
 ___ set_style_sheet(widget):
-    this_dir _ __.path.dirname( -f)
-    styles_nuke _ __.path.join(this_dir, 'styles', 'nuke.qss')
-    styles_nuke _ __.path.n_p_(styles_nuke)
-    __ __.path.isfile(styles_nuke):
+    this_dir _ __.pa__.d_n_( -f)
+    styles_nuke _ __.pa__.j..(this_dir, 'styles', 'nuke.qss')
+    styles_nuke _ __.pa__.n_p_(styles_nuke)
+    __ __.pa__.isf..(styles_nuke):
         w__ o..(styles_nuke) __ file_:
             widget.setStyleSheet(file_.read())
         r_ styles_nuke
@@ -108,7 +108,7 @@ ___ set_style_sheet(widget):
 
 
 ___ get_settings_xml():
-    r_ __.path.join(get_smartshelves_private_dir(), 'settings.xml')
+    r_ __.pa__.j..(get_smartshelves_private_dir(), 'settings.xml')
 
 
 ___ load_settings():
@@ -124,9 +124,9 @@ ___ load_settings():
 
 ___ paste_script(name):
     ___ plugin_path __ ?.pluginPath():
-        path _ __.path.join(plugin_path, '{}.nk'.f..(name))
-        __ __.path.isfile(path):
-            ?.nodePaste(path)
+        pa__ _ __.pa__.j..(plugin_path, '{}.nk'.f..(name))
+        __ __.pa__.isf..(pa__):
+            ?.nodePaste(pa__)
             r_
 
     ?.m..("Could not find nk file for '{}'. Please make sure that it is saved somewhere in your plugin paths.".f..(name))
@@ -141,7 +141,7 @@ ___ add_to_lock(pw):
     __ no. pw:
         r_
     unlocked.ap..(pw)
-    __.en__[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)
+    __.en__[_LOCK_LIST] _ _LOCK_DELIMITER.j..(unlocked)
 
 
 ___ remove_from_lock(pw):
@@ -150,4 +150,4 @@ ___ remove_from_lock(pw):
     unlocked _ [ name ___ name __ __.en__[_LOCK_LIST].split(_LOCK_DELIMITER) __ name ]
     __ pw __ unlocked:
         unlocked.remove(pw)
-    __.en__[_LOCK_LIST] _ _LOCK_DELIMITER.join(unlocked)
+    __.en__[_LOCK_LIST] _ _LOCK_DELIMITER.j..(unlocked)

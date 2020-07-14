@@ -58,8 +58,8 @@ c_ AllNodes(NodeStep):
     ___ process
         """Handle all nodes."""
         logger.info("@ all nodes, skip node classes: @",
-                         setup["mode"], ", ".join(setup["skip"]))
+                         setup["mode"], ", ".j..(setup["skip"]))
         ___ node __ ?.allNodes():
             __ node.Class() __ setup["skip"]:
-                continue
+                c___
             handle_node(node)

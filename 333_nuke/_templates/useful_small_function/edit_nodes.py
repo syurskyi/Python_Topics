@@ -67,7 +67,7 @@ def edit_knobs():
     knobs = node_knobs + default_knobs
     panel = nuke.Panel('Edit Knobs')
     panel.setWidth(250)
-    panel.addEnumerationPulldown('knobs', ' '.join(knobs))
+    panel.addEnumerationPulldown('knobs', ' '.j..(knobs))
     panel.addBooleanCheckBox('expression', 0)
     panel.addSingleLineInput('0', '')
     panel.addSingleLineInput('1', '')
@@ -157,7 +157,7 @@ def paste_knobs(checkboxes=False):
             for k in knobs:
                 panel.addBooleanCheckBox(k, 0)
         else:
-            panel.addEnumerationPulldown('knob', ' '.join(knobs))
+            panel.addEnumerationPulldown('knob', ' '.j..(knobs))
             panel.addBooleanCheckBox('paste all', 0)
         if not panel.show():
             return

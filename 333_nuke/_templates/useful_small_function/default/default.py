@@ -30,7 +30,7 @@ g__ default_dir
 g__ knobInit
 g__ ctrl
 
-default_dir _ __.path.dirname( -f)
+default_dir _ __.pa__.d_n_( -f)
 knobInit _ default_dir+"/init.py"
 ctrl _ F..
 
@@ -41,7 +41,7 @@ ___ checkExistingInit():
 	if not create one
 	'''
 	
-	__ no. __.path.isfile(knobInit):
+	__ no. __.pa__.isf..(knobInit):
 		___
 			o..(knobInit,'w')
 			__ ctrl __ T..:
@@ -107,7 +107,7 @@ ___ updateKnobInit(node,knob,value,mode):
 		___
 			f _ o..(knobInit,'w+')
 			___ d __ knobDefaults:
-				f.write(d+"\n")
+				f.w..(d+"\n")
 			f.c__
 		______
 			?.m..("an error occured while trying to edit the knobDefaults file")
@@ -118,7 +118,7 @@ ___ updateKnobInit(node,knob,value,mode):
 		___
 			f _ o..(knobInit,'a')
 			newKnobDefault _ 'nuke.knobDefault("{node}.{knob}", "{val}")\n'.f..(node_node, knob_knob, val_value)
-			f.write(newKnobDefault)
+			f.w..(newKnobDefault)
 			f.c__
 		______
 			?.m..("an error occured while trying to edit the knobDefaults file")

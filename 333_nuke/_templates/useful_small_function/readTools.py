@@ -6,7 +6,7 @@ ___ newUserKnob(knob, value):
     r_ knob
 
 ___ allReads():
-    readNodes _ []
+    readNodes _ # list
     ___ i __ nuke.allNodes():
         __ i.Class() __ 'Read':
             readNodes.append(i)
