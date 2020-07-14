@@ -72,7 +72,7 @@ ___ sjmAutoBackdrop():
   #
   width _ xmax-xmin
   height _ ymax-ymin
-  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, ypos _ ymin, bdheight _ height, tile_color _ in.((random.random()*(16 - 10))) + 10, note_font_size_99)
+  n _ ?.nodes.BackdropNode(xpos _ xmin, bdwidth _ width, ypos _ ymin, bdheight _ height, tile_color _ __.((random.random()*(16 - 10))) + 10, note_font_size_99)
   n.showControlPanel()
   #
   # restore node selection

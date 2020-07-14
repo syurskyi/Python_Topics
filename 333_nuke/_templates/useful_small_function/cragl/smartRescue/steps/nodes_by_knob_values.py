@@ -175,7 +175,7 @@ c_ NodesByKnobValues(NodeStep):
                 # but also holding string values.
                 types _ (
                     float,
-                    in.,
+                    __.,
                     st.,
                 )
 

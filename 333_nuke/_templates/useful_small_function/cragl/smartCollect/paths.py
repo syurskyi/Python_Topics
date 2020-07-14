@@ -32,7 +32,7 @@ ___ get_frame_ranges(filepath):
         r_ (0, 0)
     _, frame_in, _ _ get_file_elements(files_list[0])
     _, frame_out, _ _ get_file_elements(files_list[-1])
-    r_ (in.(frame_in), in.(frame_out))
+    r_ (__.(frame_in), __.(frame_out))
 
 
 ___ scan_for_nukescripts(pa__, ignore):

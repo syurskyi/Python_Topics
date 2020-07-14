@@ -32,10 +32,10 @@ ___ createList(files):
         # creates a list of files from above
         filesList_ # list
         rangeCount_int(rangeStart)
-        w__ in.(rangeCount)<_ in.(rangeEnd):
-            paddedNum_str('%'+padding+'d') % in.(rangeCount)
+        w__ __.(rangeCount)<_ __.(rangeEnd):
+            paddedNum_str('%'+padding+'d') % __.(rangeCount)
             #filesList.append(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
-            filesList.append(name+'.'+paddedNum+'.'+extension)
+            filesList.ap..(name+'.'+paddedNum+'.'+extension)
             rangeCount+_1
         r_ [filesList, pathToFile]
     ______
@@ -90,7 +90,7 @@ ___ renameFiles(files):
     filesList_# list
     ___ f __ files:
         clipname___.pa__.b_n_(f)
-        filesList.append(clipname)
+        filesList.ap..(clipname)
         
 
     renamed_fileName.rename(filesList, pathToFile, search, r.., F..)
@@ -151,9 +151,9 @@ ___ renumber():
                 rangeCount_int(rangeStart)
                 newRangeCount_int(frameStart)
 
-                w__ in.(rangeCount)<_ in.(rangeEnd):
-                    paddedNum_str('%'+padding+'d') % in.(rangeCount)
-                    newPaddedNum_str('%'+newPad+'d') % in.(newRangeCount)
+                w__ __.(rangeCount)<_ __.(rangeEnd):
+                    paddedNum_str('%'+padding+'d') % __.(rangeCount)
+                    newPaddedNum_str('%'+newPad+'d') % __.(newRangeCount)
 
                     searchPad_(pathToFile+'/'+name+'.'+paddedNum+'.'+extension)
                     tempPad_(pathToFile+'/'+name+'.'+newPaddedNum+'.'+extension+'.tmp')
@@ -166,7 +166,7 @@ ___ renumber():
                         r_
                     #---------------------#
                     
-                    tempFilesList.append(tempPad)
+                    tempFilesList.ap..(tempPad)
                     rangeCount+_1
                     newRangeCount+_1
 
@@ -218,10 +218,10 @@ ___ removeTemps():
             
             __ f:
                 f_path _ __.pa__.d_n_(f)
-                paths.append(f_path)
+                paths.ap..(f_path)
             __ p:
                 p_path _ __.pa__.d_n_(p)
-                paths.append(p_path)
+                paths.ap..(p_path)
                 
         ___ pa__ __ list(set(paths)):
             files _ __.l_d_(pa__)

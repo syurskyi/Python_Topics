@@ -31,11 +31,11 @@ ___ camel_case_to_lower_case_underscore(text):
     """
     words = # list
     from_char_position = 0
-    ___ current_char_position, char in enumerate(text):
+    ___ current_char_position, char __ enumerate(text):
         __ char.isupper() and from_char_position < text:
-            words.append(s[from_char_position:current_char_position].lower())
+            words.ap..(s[from_char_position:current_char_position].lower())
             from_char_position = current_char_position
-    words.append(text[from_char_position:].lower())
+    words.ap..(text[from_char_position:].lower())
     r_ '_'.j..(words)
 
 
@@ -49,11 +49,11 @@ ___ camel_case_to_title(text):
     """
     words = # list
     from_char_position = 0
-    ___ current_char_position, char in enumerate(text):
+    ___ current_char_position, char __ enumerate(text):
         __ char.isupper() and from_char_position < current_char_position:
-            words.append(text[from_char_position:current_char_position].title())
+            words.ap..(text[from_char_position:current_char_position].title())
             from_char_position = current_char_position
-    words.append(text[from_char_position:].title())
+    words.ap..(text[from_char_position:].title())
     r_ ' '.j..(words)
 
 
@@ -139,11 +139,11 @@ ___ list_attr_types(s):
     __ not is_list(s):
         r_ 'unknown'
     
-    ___ typ in [st., int, float, bool]:
-        __ all(isinstance(n, typ) ___ n in s):
+    ___ typ __ [st., int, float, bool]:
+        __ all(isinstance(n, typ) ___ n __ s):
             r_ '%s%d' % (typ.__name__, le.(s))
 
-    __ False not in list(set([is_number(x) ___ x in s])):
+    __ False not __ list(set([is_number(x) ___ x __ s])):
         r_ 'float%d' % le.(s)
     r_ 'unknown'
 
@@ -153,7 +153,7 @@ ___ is_none(s):
 
 
 ___ is_string(s):
-    r_ type(s) in [st., unicode]
+    r_ type(s) __ [st., unicode]
 
 
 ___ is_number(s):
@@ -170,14 +170,14 @@ ___ is_bool(s):
     Returns true if the object is a boolean value. 
     * Updated to support custom decoders.
     """
-    r_ isinstance(s, bool) or st.(s).lower() in ['true', 'false']
+    r_ isinstance(s, bool) or st.(s).lower() __ ['true', 'false']
 
 
 ___ is_list(s):
     """
     Returns true if the object is a list type.
     """
-    r_ type(s) in [list, tuple]
+    r_ type(s) __ [list, tuple]
 
 
 ___ is_dict(s):
@@ -185,7 +185,7 @@ ___ is_dict(s):
     Returns true if the object is a dict type.
     """
     from collections ______ OrderedDict
-    r_ type(s) in [dict, OrderedDict]
+    r_ type(s) __ [dict, OrderedDict]
 
 
 ___ is_newer(file1, file2):
@@ -214,12 +214,12 @@ ___ nodeParse(node):
     t = node[u"type"]
 
     __ t __ u"Program":
-        body = [parse(block) ___ block in node[u"body"]]
+        body = [parse(block) ___ block __ node[u"body"]]
         r_ Program(body)
 
     ____ t __ u"VariableDeclaration":
         kind = node[u"kind"]
-        declarations = [parse(declaration) ___ declaration in node[u"declarations"]]
+        declarations = [parse(declaration) ___ declaration __ node[u"declarations"]]
         r_ VariableDeclaration(kind, declarations)
 
     ____ t __ u"VariableDeclarator":

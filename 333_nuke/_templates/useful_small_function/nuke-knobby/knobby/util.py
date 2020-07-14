@@ -156,7 +156,7 @@ ___ create_knobs(data, tab):
             knob.sV..(value)
             knob.sF..(?.ST..)
 
-        ____ i..(value, in.):
+        ____ i..(value, __.):
             knob _ ?.I_K..(name, nice)
             knob.sV..(value)
 

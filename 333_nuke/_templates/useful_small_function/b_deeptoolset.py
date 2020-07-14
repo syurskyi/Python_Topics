@@ -121,8 +121,8 @@ ___ create_node_with_position(nodename,connect_node,x_0,y_0):
      node _ ?.createNode(nodename)
      node['selected'].sV..(F..)
 
-     node.setXpos(in.(x))
-     node.setYpos(in.(y))
+     node.setXpos(__.(x))
+     node.setYpos(__.(y))
 
      node.setInput(0,connect_node)
 
@@ -140,8 +140,8 @@ ___ create_node_with_position_simple(nodename,x_0,y_0):
      node _ ?.createNode(nodename)
      node['selected'].sV..(F..)
 
-     node.setXpos(in.(x))
-     node.setYpos(in.(y))
+     node.setXpos(__.(x))
+     node.setYpos(__.(y))
 
 
      r_ node
@@ -748,14 +748,14 @@ c_ modalPanel(?.PP..):
         __ giveFrameRangeValue() __ "global":
             first_frame _ ?.r.. .firstFrame()
             last_frame _ ?.r.. .lastFrame()
-            txt _ st.(in.(first_frame)) + '-' + st.(in.(last_frame))
+            txt _ st.(__.(first_frame)) + '-' + st.(__.(last_frame))
             frame_display.sV..(txt)
         ____ giveFrameRangeValue() __ "input":
             print "here should come the read frame range"
             node _ ?.sN__
             first_frame _ node.firstFrame()
             last_frame _ node.lastFrame()
-            txt _ st.(in.(first_frame)) + '-' + st.(in.(last_frame))
+            txt _ st.(__.(first_frame)) + '-' + st.(__.(last_frame))
             frame_display.sV..(txt)
         ____ giveFrameRangeValue() __ "custom":
             frame_display.sV..("")

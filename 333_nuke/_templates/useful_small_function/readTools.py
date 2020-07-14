@@ -2,19 +2,19 @@ ______ ?
 ______ nukescripts
 
 ___ newUserKnob(knob, value):
-    knob.setValue(value)
+    knob.sV..(value)
     r_ knob
 
 ___ allReads():
     readNodes _ # list
     ___ i __ ?.allNodes():
         __ i.Class() __ 'Read':
-            readNodes.append(i)
+            readNodes.ap..(i)
     r_ readNodes
 
 ___ selectRead():
     ___ i __ allReads():
-        i.knob('selected').setValue('True')
+        i.knob('selected').sV..('True')
 
 ___ setLocalize():
     p..
@@ -23,9 +23,9 @@ ___ setFrameRange():
     f _ nukescripts.PP..('Set read nodes frame range')
     f.nodesSelection _ ?.E_K..('nodesSel', 'Nodes selections', ['All read nodes', 'Selected nodes only', 'Exclude selected nodes'])
     f.divText _ ?.T_K..('divText', '')
-    f.firstFrame _ newUserKnob(?.I_K..('first_frame', 'frame range', 1), in.(?.r.. .firstFrame()))
+    f.firstFrame _ newUserKnob(?.I_K..('first_frame', 'frame range', 1), __.(?.r.. .firstFrame()))
     f.before _ ?.E_K..('before', '', ['hold', 'loop', 'bounce', 'black'])
-    f.lastFrame _ newUserKnob(?.I_K..('last_frame', '', 100), in.(?.r.. .lastFrame()))
+    f.lastFrame _ newUserKnob(?.I_K..('last_frame', '', 100), __.(?.r.. .lastFrame()))
     f.after _ ?.E_K..('after', '', ['hold', 'loop', 'bounce', 'black'])
 
     #Set nodes selection and after as end line
@@ -50,10 +50,10 @@ ___ setFrameRange():
 
         ___ r __ Sel:
             ___
-                r['first'].setValue(f.firstFrame.value())
-                r['before'].setValue(f.before.value())
-                r['last'].setValue(f.lastFrame.value())
-                r['after'].setValue(f.after.value())
+                r['first'].sV..(f.firstFrame.value())
+                r['before'].sV..(f.before.value())
+                r['last'].sV..(f.lastFrame.value())
+                r['after'].sV..(f.after.value())
             ______ ValueError:
                 ?.m..('No nodes selected!')
             ______ NameError:
@@ -87,7 +87,7 @@ ___ setError():
 
         ___ r __ Sel:
             ___
-                r['on_error'].setValue(in.(e.onError.getValue()))
+                r['on_error'].sV..(__.(e.onError.getValue()))
                 __ e.reload.v..:
                     r.knob('reload').execute()
             ______ ValueError:

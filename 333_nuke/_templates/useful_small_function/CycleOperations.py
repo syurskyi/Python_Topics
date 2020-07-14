@@ -34,12 +34,12 @@ C_MergeMat = []
 
 
 
-import nuke
+import ?
 
 
 
 
-def Merge(n, cycle, forwards):
+___ Merge(n, cycle, forwards):
 
 	try:
 
@@ -56,7 +56,7 @@ def Merge(n, cycle, forwards):
 			# check if current value is in cycle
 			nextOp = ''
 
-			if currOp in cycle:
+			if currOp __ cycle:
 
 				# get next or pevious item index (depending on forwards)
 				index = cycle.index(currOp) + (1 if forwards else -1)
@@ -73,14 +73,14 @@ def Merge(n, cycle, forwards):
 				nextOp = cycle[0]
 
 			# set new value to knob
-			n.knob("operation").setValue(nextOp)
+			n.knob("operation").sV..(nextOp)
 
 
 		# if not, simply scroll through all options
 		else:
 
 			# current operation
-			currOp = k.getValue()
+			currOp = k.gV..
 
 			# operation count
 			countOp = len(k.values())
@@ -89,17 +89,17 @@ def Merge(n, cycle, forwards):
 
 				# if last item in list, go to start
 				if int(currOp) + 1 == countOp:
-					k.setValue(0)
+					k.sV..(0)
 
 				else:
-					k.setValue(int(currOp) + 1)
+					k.sV..(int(currOp) + 1)
 
 			else:
 
 				if currOp == 0:
-					k.setValue(countOp - 1)
+					k.sV..(countOp - 1)
 				else:
-					k.setValue(int(currOp) - 1)
+					k.sV..(int(currOp) - 1)
 
 	except:
 
@@ -107,12 +107,12 @@ def Merge(n, cycle, forwards):
 
 
 
-def Switch(n, forwards):
+___ Switch(n, forwards):
 
 	try:
 
 		# get current value
-		currWhich = n.knob('which').getValue()
+		currWhich = n.knob('which').gV..
 		# get amount of inputs on Switch (-1, to match input index which starts counting at 0)
 		maxWhich = n.inputs() - 1.0
 
@@ -134,7 +134,7 @@ def Switch(n, forwards):
 			if newWhich < 0.0:
 				newWhich = maxWhich
 
-		n.knob('which').setValue(newWhich)
+		n.knob('which').sV..(newWhich)
 
 	except:
 
@@ -142,7 +142,7 @@ def Switch(n, forwards):
 
 
 
-def OCIOColorSpace(n):
+___ OCIOColorSpace(n):
 
 	try:
 
@@ -155,8 +155,8 @@ def OCIOColorSpace(n):
 		outC = k2.value()
 
 		# set inverse values
-		k1.setValue(outC)
-		k2.setValue(inC)
+		k1.sV..(outC)
+		k2.sV..(inC)
 
 	except:
 
@@ -164,7 +164,7 @@ def OCIOColorSpace(n):
 
 
 
-def Shuffle(n, forwards):
+___ Shuffle(n, forwards):
 
 	try:
 
@@ -175,11 +175,11 @@ def Shuffle(n, forwards):
 		currL = k.value()
 
 		# get all existing layers
-		listL = nuke.layers()
+		listL = ?.layers()
 
 		# get index of current layer
 		i = 0
-		for eachL in listL:
+		___ eachL __ listL:
 			if eachL == currL:
 				break
 			i += 1
@@ -201,7 +201,7 @@ def Shuffle(n, forwards):
 
 
 		# set new layer
-		k.setValue(newL)
+		k.sV..(newL)
 
 
 		# set label
@@ -213,7 +213,7 @@ def Shuffle(n, forwards):
 
 
 
-def FrameHold(n, forwards):
+___ FrameHold(n, forwards):
 
 	try:
 
@@ -221,13 +221,13 @@ def FrameHold(n, forwards):
 		k = n.knob('first_frame')
 
 		# get current frame
-		currF = k.getValue()
+		currF = k.gV..
 
 		# next value
 		newF = currF + 1 if forwards else currF - 1
 
 		# set new value
-		k.setValue(newF)
+		k.sV..(newF)
 
 	except:
 
@@ -235,7 +235,7 @@ def FrameHold(n, forwards):
 
 
 
-def anyChannelKnob(n, knobName, forwards):
+___ anyChannelKnob(n, knobName, forwards):
 
 	try:
 
@@ -246,13 +246,13 @@ def anyChannelKnob(n, knobName, forwards):
 		currL = k.value()
 
 		# get all possible layers
-		listL = nuke.layers()
+		listL = ?.layers()
 		listL.insert(0, 'all')
 		listL.insert(1, 'none')
 
 		# get index of current layer
 		i = 0
-		for eachL in listL:
+		___ eachL __ listL:
 			if eachL == currL:
 				break
 			i += 1
@@ -276,7 +276,7 @@ def anyChannelKnob(n, knobName, forwards):
 
 
 		# set new layer
-		k.setValue(newL)
+		k.sV..(newL)
 	
 
 	except:
@@ -285,7 +285,7 @@ def anyChannelKnob(n, knobName, forwards):
 
 
 
-def anyListKnob(n, knobName, forwards):
+___ anyListKnob(n, knobName, forwards):
 
 	try:
 
@@ -293,7 +293,7 @@ def anyListKnob(n, knobName, forwards):
 		k = n.knob(knobName)
 
 		# get knob value (int)
-		currOp = k.getValue()
+		currOp = k.gV..
 
 		# operation count
 		countOp = len(k.values())
@@ -304,11 +304,11 @@ def anyListKnob(n, knobName, forwards):
 
 			# if last item in list, go to start
 			if int(currOp) + 1 == countOp:
-				k.setValue(0)
+				k.sV..(0)
 
 			else:
 				# go forward one item
-				k.setValue(int(currOp + 1))
+				k.sV..(int(currOp + 1))
 
 
 		# scroll backwards
@@ -316,11 +316,11 @@ def anyListKnob(n, knobName, forwards):
 
 			# if at first item, go to end
 			if currOp == 0:
-				k.setValue(countOp - 1)
+				k.sV..(countOp - 1)
 
 			# go back one item
 			else:
-				k.setValue(int(currOp - 1))
+				k.sV..(int(currOp - 1))
 
 	except:
 
@@ -329,34 +329,34 @@ def anyListKnob(n, knobName, forwards):
 
 
 # make label show knob value (except if in valueMask list)
-def giveLabel(n, knobName):
+___ giveLabel(n, knobName):
 
 		# get label knob
 		label = n.knob('label')
 
 		# get current label text
-		currLabel = label.getValue()
+		currLabel = label.gV..
 
 		# new label text
 		labelText = '[value ' + knobName + ']'
 
 
 		# check if the label is already present
-		if not labelText in currLabel:
+		if not labelText __ currLabel:
 
 			# add original value and new line before new label text if there was a label already, else no new line
 			if currLabel == '':
-				label.setValue(labelText)
+				label.sV..(labelText)
 			else:
-				label.setValue(currLabel + '\n' + labelText)
+				label.sV..(currLabel + '\n' + labelText)
 
 
 
 # cycle node (forwards or backwards)
-def CycleOperations(forwards = True):
+___ CycleOperations(forwards = True):
 
 	# call function with cycle for each node
-	for i in nuke.selectedNodes():
+	___ i __ ?.sN.. :
 
 		# nodes with custom operation lists
 		if i.Class() == 'Merge2':

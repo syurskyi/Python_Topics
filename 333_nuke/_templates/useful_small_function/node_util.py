@@ -92,7 +92,7 @@ ___ cycle_viewer_input_masks():
 # Copies the tile_color of the first selected node to rest of the selected nodes
 ___ copy_node_tile_color():
     nodes _ ?.sN..
-    tc _ in.(nodes[le.(nodes) - 1].knob('tile_color').getValue())
+    tc _ __.(nodes[le.(nodes) - 1].knob('tile_color').getValue())
     ___ n __ ra..(le.(nodes) - 1):
         nodes[n].knob('tile_color').sV..(tc)
 
@@ -174,11 +174,11 @@ ___ read_from_write():
                 node_read _ ?.nodes.Read()  # create a read node
                 node_read['file'].sV..(?.filename(node))  # set the filename
                 __ node['use_limit'].gV.. __ 1:  # check to see if there is a range and set the values in the read node
-                    node_read['first'].sV..(in.(node['first'].getValue()))
-                    node_read['last'].sV..(in.(node['last'].getValue()))
+                    node_read['first'].sV..(__.(node['first'].getValue()))
+                    node_read['last'].sV..(__.(node['last'].getValue()))
                 ____  # no range on the write?  take a stab at using the range from the script value
-                    node_read['first'].sV..(in.(?.r.. ['first_frame'].getValue()))
-                    node_read['last'].sV..(in.(?.r.. ['last_frame'].getValue()))
+                    node_read['first'].sV..(__.(?.r.. ['first_frame'].getValue()))
+                    node_read['last'].sV..(__.(?.r.. ['last_frame'].getValue()))
                 node_read.setXpos(node.xpos())  # let's set the position
                 node_read.setYpos(node.ypos() + 50)
                 node_read['premultiplied'].sV..(node['premultiplied'].getValue())  # use premult if checked

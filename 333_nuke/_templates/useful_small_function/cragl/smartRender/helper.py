@@ -177,7 +177,7 @@ ___ get_tooltips_file(*args):
     r_ __.pa__.n_p_(tooltips)
 
 
-___ update_job_log(job_id, processdata, ti__ _ st.(in.(ti__.ti__())), *args):
+___ update_job_log(job_id, processdata, ti__ _ st.(__.(ti__.ti__())), *args):
     jobs_xml _ get_job_xml()
     __ jobs_xml __ '':
         r_
@@ -263,8 +263,8 @@ ___ calculate_process_precentage(job_id, frame, *args):
                 __ data.get('status') __ '400':
                     count_frames_done +_ 1
 
-            count_frames_to_process _ in.(job.find('frames').get('count'))
-            done_precentage _ in.(100.0 / count_frames_to_process * count_frames_done)
+            count_frames_to_process _ __.(job.find('frames').get('count'))
+            done_precentage _ __.(100.0 / count_frames_to_process * count_frames_done)
             __ done_precentage > 100:
                 done_precentage _ 100
             ___ setting __ job.f_a_('setting'):
@@ -370,7 +370,7 @@ ___ get_job_data(job_id, *args):
                 job_data[setting.get('name')] _ setting.text
 
             ___ frame __ job.find('frames').f_a_('frame'):
-                frames_to_process.ap..(in.(frame.text))
+                frames_to_process.ap..(__.(frame.text))
 
             job_data['frames_to_process'] _ frames_to_process
             number_errors _ 0
@@ -487,22 +487,22 @@ ___ insert_as_read_node(job_details, w.. _ N.., *args):
     __ w..:
         read _ ?.createNode('Read')
         read['file'].sV..(w..['file'].getValue())
-        read['first'].sV..(in.(?.r.. ['first_frame'].getValue()))
-        read['origfirst'].sV..(in.(?.r.. ['first_frame'].getValue()))
-        read['last'].sV..(in.(?.r.. ['last_frame'].getValue()))
-        read['origlast'].sV..(in.(?.r.. ['last_frame'].getValue()))
+        read['first'].sV..(__.(?.r.. ['first_frame'].getValue()))
+        read['origfirst'].sV..(__.(?.r.. ['first_frame'].getValue()))
+        read['last'].sV..(__.(?.r.. ['last_frame'].getValue()))
+        read['origlast'].sV..(__.(?.r.. ['last_frame'].getValue()))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
-        read.setXYpos(in.(w..['xpos'].getValue()), in.(w..['ypos'].getValue()) + 70)
+        read.setXYpos(__.(w..['xpos'].getValue()), __.(w..['ypos'].getValue()) + 70)
         ?.zoom(1.0, (w...xpos(), w...ypos()))
         ?.connect_selected_to_viewer(0)
     ____
         read _ ?.createNode('Read')
         read['file'].sV..(job_details['render_path'])
-        read['first'].sV..(in.(job_details['render_start']))
-        read['origfirst'].sV..(in.(job_details['render_start']))
-        read['last'].sV..(in.(job_details['render_end']))
-        read['origlast'].sV..(in.(job_details['render_end']))
+        read['first'].sV..(__.(job_details['render_start']))
+        read['origfirst'].sV..(__.(job_details['render_start']))
+        read['last'].sV..(__.(job_details['render_end']))
+        read['origlast'].sV..(__.(job_details['render_end']))
         read['on_error'].sV..('nearest frame')
         read.selectOnly()
         ?.zoom(1.0, (read.xpos(), read.ypos()))
@@ -577,7 +577,7 @@ ___ load_job_log_data(job_id, filter, file_output _ F.., *args):
                         code _ '[done]'
                     ____
                         code _ "[<span style='color:#339933'>done</span>"
-                data_time _ in.(data.get('time'))
+                data_time _ __.(data.get('time'))
                 ti__ _ d_t_.d_t_.fromtimestamp(data_time).strftime('%d/%m/%Y %H:%M:%S')
                 __ file_output:
                     job_data +_ '{time} {code} {text}\n'.f..(ti___ti__, code_code, text_data.text)
@@ -685,7 +685,7 @@ ___ check_settings_xml_values_exist():
      'step': '1',
      'overwrite': 'True',
      'size': 'full',
-     'thread_count': st.(in.(get_cpu_count() / 2))}
+     'thread_count': st.(__.(get_cpu_count() / 2))}
     ___ key, value __ settings_current.i..():
         check_xml_value_exists_current('setting', 'name', key, value)
 
@@ -877,12 +877,12 @@ ___ get_cpu_count(*args):
         __ hasattr(__, 'sysconf'):
             __ __.sysconf_names.has_key('SC_NPROCESSORS_ONLN'):
                 ncpus _ __.sysconf('SC_NPROCESSORS_ONLN')
-                __ i..(ncpus, in.) an. ncpus > 0:
+                __ i..(ncpus, __.) an. ncpus > 0:
                     r_ ncpus
             ____
-                r_ in.(__.popen2('sysctl -n hw.ncpu')[1].read())
+                r_ __.(__.popen2('sysctl -n hw.ncpu')[1].read())
         __ __.en__.has_key('NUMBER_OF_PROCESSORS'):
-            ncpus _ in.(__.en__['NUMBER_OF_PROCESSORS'])
+            ncpus _ __.(__.en__['NUMBER_OF_PROCESSORS'])
             __ ncpus > 0:
                 r_ ncpus
         r_ 1
@@ -938,7 +938,7 @@ ___ ask_dialog(m.. _ '', process_button_text _ '', color_process _ '', cancel_bu
 
 
 ___ create_unique_job_id(*args):
-    current_time _ st.(in.(ti__.ti__()))
+    current_time _ st.(__.(ti__.ti__()))
     rand_number _ st.(random.random())
     id _ hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
     r_ st.('{}_{}'.f..(current_time, id))

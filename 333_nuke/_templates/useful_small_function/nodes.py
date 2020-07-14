@@ -5,8 +5,8 @@ ___ move_left():
     Shortcut: ``Ctrl+Shift+Left``
     """
     ______ ?
-    ___ node in ?.sN..():
-        node['xpos'].setValue(node['xpos'].getValue() -
+    ___ node __ ?.sN..():
+        node['xpos'].sV..(node['xpos'].gV..  -
                               ?.tN..('preferences')['GridWidth'].value())
 
 ___ move_right():
@@ -16,8 +16,8 @@ ___ move_right():
     Shortcut: ``Ctrl+Shift+Right``
     """
     ______ ?
-    ___ node in ?.sN..():
-        node['xpos'].setValue(node['xpos'].getValue() +
+    ___ node __ ?.sN..():
+        node['xpos'].sV..(node['xpos'].gV..  +
                               ?.tN..('preferences')['GridWidth'].value())
 
 ___ move_up():
@@ -26,8 +26,8 @@ ___ move_up():
     Shortcut: ``Ctrl+Shift+Up``
     """
     ______ ?
-    ___ node in ?.sN..():
-        node['ypos'].setValue(node['ypos'].getValue() -
+    ___ node __ ?.sN..():
+        node['ypos'].sV..(node['ypos'].gV..  -
                               ?.tN..('preferences')['GridHeight'].value())
 
 ___ move_down():
@@ -36,6 +36,6 @@ ___ move_down():
     Shortcut: ``Ctrl+Shift+Down``
     """
     ______ ?
-    ___ node in ?.sN..():
-        node['ypos'].setValue(node['ypos'].getValue() +
+    ___ node __ ?.sN..():
+        node['ypos'].sV..(node['ypos'].gV..  +
                               ?.tN..('preferences')['GridHeight'].value())

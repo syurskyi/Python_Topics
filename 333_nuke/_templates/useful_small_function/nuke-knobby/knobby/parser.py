@@ -75,7 +75,7 @@ c_ Tablet(list):
                 tab_profile _ matched.groupdict()
                 name _ tab_profile["name"]
                 label _ tab_profile["label"]
-                type _ in.(tab_profile["type"] or 0)
+                type _ __.(tab_profile["type"] or 0)
             ____
                 ap..(line)
                 c___

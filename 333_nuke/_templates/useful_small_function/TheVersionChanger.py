@@ -1,12 +1,12 @@
-import re, __.path, nuke, nukescripts
+import re, __.path, ?, nukescripts
 
 
-Selection = nuke.selectedNodes()
+Selection = ?.sN..
 
 OldSelect1 = []
 
    
-def SplitDir(fileknob):
+___ SplitDir(fileknob):
 
 
     FileName = __.path.basename(fileknob)
@@ -24,11 +24,11 @@ def SplitDir(fileknob):
     Joined = re.sub(r'\\', r'/' ,Joined)
     
     
-    return Joined
+    r_ Joined
     
     
         
-def SplitDirUp(fileknob):
+___ SplitDirUp(fileknob):
 
 
     FileName = __.path.basename(fileknob)
@@ -40,11 +40,11 @@ def SplitDirUp(fileknob):
     DirUp = __.path.s..(Dir)[0]
     
     
-    return DirUp
+    r_ DirUp
     
     
 
-def FindVersion(fileknob):
+___ FindVersion(fileknob):
 
 
     pattern = "v" + "\d+"
@@ -62,11 +62,11 @@ def FindVersion(fileknob):
         versionNumber = MyList[0][1:]
 
 
-        return versionNumber
+        r_ versionNumber
 
 
 
-def ListVersions(fileknob):
+___ ListVersions(fileknob):
 
 
     FileName = __.path.basename(fileknob)
@@ -81,13 +81,13 @@ def ListVersions(fileknob):
     DirUp = __.path.s..(Dir)[0]
 
 
-    Names = [name for name in __.listdir(DirUp) if FileBase in name]
+    Names = [name ___ name __ __.listdir(DirUp) if FileBase __ name]
 
 
     OnlyFolders = []
 
 
-    for i in Names:
+    ___ i __ Names:
 
 
         Joined = __.path.n_p_ (__.path.join(DirUp,i))
@@ -102,17 +102,17 @@ def ListVersions(fileknob):
         if check:
 
 
-            if version not in OnlyFolders:
+            if version not __ OnlyFolders:
 
 
-                OnlyFolders.append(version)
+                OnlyFolders.ap..(version)
 
 
-    return sorted(OnlyFolders)
+    r_ sorted(OnlyFolders)
 
     
     
-def ListVersionsFiles(fileknob):
+___ ListVersionsFiles(fileknob):
 
 
     FileName = __.path.basename(fileknob)
@@ -124,13 +124,13 @@ def ListVersionsFiles(fileknob):
     Dir = __.path.dirname(fileknob)
 
 
-    Names = [name for name in __.listdir(Dir) if FileBase in name]
+    Names = [name ___ name __ __.listdir(Dir) if FileBase __ name]
 
 
     OnlyFiles = []
 
 
-    for i in Names:
+    ___ i __ Names:
 
 
         Joined = __.path.n_p_ (__.path.join(Dir,i))
@@ -145,25 +145,25 @@ def ListVersionsFiles(fileknob):
         if check:
 
 
-            if version not in OnlyFiles:
+            if version not __ OnlyFiles:
 
 
-                OnlyFiles.append(version)
+                OnlyFiles.ap..(version)
 
 
-    return sorted(OnlyFiles)
+    r_ sorted(OnlyFiles)
 
 
 
-def VersionUp(KnobTypes,NodeTypes):
+___ VersionUp(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
     
-        if node.Class() in NodeTypes:
+        if node.Class() __ NodeTypes:
         
-            for n in KnobTypes:
+            ___ n __ KnobTypes:
 
                 try:
 
@@ -197,7 +197,7 @@ def VersionUp(KnobTypes,NodeTypes):
                         if version < max(ListVersions(fileknob)):
 
                  
-                            while string_Next not in ListVersions(fileknob):
+                            while string_Next not __ ListVersions(fileknob):
                    
                    
                                 Next+=1
@@ -218,7 +218,7 @@ def VersionUp(KnobTypes,NodeTypes):
                             Joined = re.sub(r'\\', r'/' ,Joined)
                    
                    
-                            node[n].setValue(Joined)
+                            node[n].sV..(Joined)
 
 
                             new = node[n].value()
@@ -238,19 +238,19 @@ def VersionUp(KnobTypes,NodeTypes):
                     pass
 
 
-    return count
+    r_ count
     
        
        
-def VersionUpFiles(KnobTypes,NodeTypes):
+___ VersionUpFiles(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
     
-        if node.Class() in NodeTypes:
+        if node.Class() __ NodeTypes:
         
-            for n in KnobTypes:
+            ___ n __ KnobTypes:
 
                 try:
 
@@ -270,7 +270,7 @@ def VersionUpFiles(KnobTypes,NodeTypes):
                   
                         if version < max(ListVersionsFiles(fileknob)):
                  
-                            while string_Next not in ListVersionsFiles(fileknob):
+                            while string_Next not __ ListVersionsFiles(fileknob):
                    
                    
                                 Next+=1
@@ -291,7 +291,7 @@ def VersionUpFiles(KnobTypes,NodeTypes):
                             Joined = re.sub(r'\\', r'/' ,Joined)
                             
                    
-                            node[n].setValue(Joined)
+                            node[n].sV..(Joined)
 
                             
                             new = node[n].value()
@@ -311,18 +311,18 @@ def VersionUpFiles(KnobTypes,NodeTypes):
                      pass
 
 
-    return count
+    r_ count
     
        
-def VersionDown(KnobTypes,NodeTypes):
+___ VersionDown(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
 
-        if node.Class() in NodeTypes:
+        if node.Class() __ NodeTypes:
         
-            for n in KnobTypes:
+            ___ n __ KnobTypes:
     
                 try:
 
@@ -356,7 +356,7 @@ def VersionDown(KnobTypes,NodeTypes):
                         if version > min(ListVersions(fileknob)):
 
 
-                            while string_Previous not in ListVersions(fileknob):
+                            while string_Previous not __ ListVersions(fileknob):
 
 
                                 Previous-=1
@@ -377,7 +377,7 @@ def VersionDown(KnobTypes,NodeTypes):
                             Joined = re.sub(r'\\', r'/' ,Joined)
                    
                    
-                            node[n].setValue(Joined)
+                            node[n].sV..(Joined)
 
 
                             new = node[n].value()
@@ -398,18 +398,18 @@ def VersionDown(KnobTypes,NodeTypes):
                     pass
 
 
-    return count
+    r_ count
     
 
-def VersionDownFiles(KnobTypes,NodeTypes):
+___ VersionDownFiles(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
     
-        if node.Class() in NodeTypes:
+        if node.Class() __ NodeTypes:
         
-            for n in KnobTypes:
+            ___ n __ KnobTypes:
         
                 try:
 
@@ -438,7 +438,7 @@ def VersionDownFiles(KnobTypes,NodeTypes):
                         if version > min(ListVersionsFiles(fileknob)):
 
 
-                            while string_Previous not in ListVersionsFiles(fileknob):
+                            while string_Previous not __ ListVersionsFiles(fileknob):
 
 
                                 Previous-=1
@@ -459,7 +459,7 @@ def VersionDownFiles(KnobTypes,NodeTypes):
                             Joined = re.sub(r'\\', r'/' ,Joined)
                             
                    
-                            node[n].setValue(Joined)
+                            node[n].sV..(Joined)
 
 
                             new = node[n].value()
@@ -480,18 +480,18 @@ def VersionDownFiles(KnobTypes,NodeTypes):
                     pass
 
 
-    return count
+    r_ count
     
 
-def VersionLast(KnobTypes,NodeTypes):
+___ VersionLast(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
     
-        for n in KnobTypes:
+        ___ n __ KnobTypes:
 
-            if node.Class() in NodeTypes:
+            if node.Class() __ NodeTypes:
             
                 try:
 
@@ -531,7 +531,7 @@ def VersionLast(KnobTypes,NodeTypes):
                         Joined = re.sub(r'\\', r'/' ,Joined)
                    
                    
-                        node[n].setValue(Joined)
+                        node[n].sV..(Joined)
 
 
                         new = node[n].value()
@@ -552,18 +552,18 @@ def VersionLast(KnobTypes,NodeTypes):
                     pass
 
 
-    return count
+    r_ count
     
    
-def VersionLastFiles(KnobTypes,NodeTypes):
+___ VersionLastFiles(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
     
-        if node.Class() in NodeTypes:
+        if node.Class() __ NodeTypes:
         
-            for n in KnobTypes:
+            ___ n __ KnobTypes:
 
                 try:
 
@@ -598,7 +598,7 @@ def VersionLastFiles(KnobTypes,NodeTypes):
                         Joined = re.sub(r'\\', r'/' ,Joined)
                             
                    
-                        node[n].setValue(Joined)
+                        node[n].sV..(Joined)
 
 
                         new = node[n].value()
@@ -619,18 +619,18 @@ def VersionLastFiles(KnobTypes,NodeTypes):
                     pass
 
 
-    return count
+    r_ count
 
 
-def VersionMatchFolder(KnobTypes,NodeTypes):
+___ VersionMatchFolder(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
     
-        if node.Class() in NodeTypes:
+        if node.Class() __ NodeTypes:
         
-            for n in KnobTypes:
+            ___ n __ KnobTypes:
 
                 try:
 
@@ -670,7 +670,7 @@ def VersionMatchFolder(KnobTypes,NodeTypes):
                             Joined = re.sub(r'\\', r'/' ,Joined)
 
                         
-                            node[n].setValue(Joined)
+                            node[n].sV..(Joined)
 
 
                             new = node[n].value()
@@ -691,18 +691,18 @@ def VersionMatchFolder(KnobTypes,NodeTypes):
                     pass
 
 
-    return count
+    r_ count
 
 
-def VersionMatchFiles(KnobTypes,NodeTypes):
+___ VersionMatchFiles(KnobTypes,NodeTypes):
 
     count = 0
 
-    for node in nuke.selectedNodes():
+    ___ node __ ?.sN.. :
     
-        if node.Class() in NodeTypes:
+        if node.Class() __ NodeTypes:
         
-            for n in KnobTypes:
+            ___ n __ KnobTypes:
 
                 try:
          
@@ -739,7 +739,7 @@ def VersionMatchFiles(KnobTypes,NodeTypes):
                         Joined = re.sub(r'\\', r'/' ,Joined)
 
                         
-                        node[n].setValue(Joined)
+                        node[n].sV..(Joined)
 
 
                         new = node[n].value()
@@ -756,59 +756,59 @@ def VersionMatchFiles(KnobTypes,NodeTypes):
                     pass
 
 
-    return count
+    r_ count
 
     
-def OldSelect(SavedSelection):
+___ OldSelect(SavedSelection):
 
     global OldSelect1
 
     OldSelect1 = []
 
-    for n in SavedSelection:
+    ___ n __ SavedSelection:
 
-        OldSelect1.append(n)
+        OldSelect1.ap..(n)
     
-    return OldSelect1
+    r_ OldSelect1
 
 
-def Warning(warning):
+___ Warning(warning):
 
-    Selection = nuke.selectedNodes()
+    Selection = ?.sN..
     
-    warning.setValue(str(len(Selection))+ ' Nodes Selected')
-    
-    warning.setVisible(True)
-
-
-def Warning_changed(warning,count): 
-
-    warning.setValue(str(count)+ ' Nodes Changed')
+    warning.sV..(str(len(Selection))+ ' Nodes Selected')
     
     warning.setVisible(True)
-    
 
-def Warning_SaveLoad(warning,warningList,index):
 
-    warning.setValue(warningList[index])
+___ Warning_changed(warning,count):
+
+    warning.sV..(str(count)+ ' Nodes Changed')
     
     warning.setVisible(True)
     
 
-def Warning_Save(warning,Selection):
+___ Warning_SaveLoad(warning,warningList,index):
+
+    warning.sV..(warningList[index])
+    
+    warning.setVisible(True)
+    
+
+___ Warning_Save(warning,Selection):
 
     count = len(Selection)
 
-    warning.setValue(str(count)+ ' Nodes Saved')
+    warning.sV..(str(count)+ ' Nodes Saved')
     
     warning.setVisible(True)
     
 
-def Warning_Load(warning,warningList,index):
+___ Warning_Load(warning,warningList,index):
 
-    Selection = nuke.selectedNodes()
+    Selection = ?.sN..
 
-    warning.setValue(warningList[index]+"  "+ str(len(Selection))+ ' Nodes Selected')
+    warning.sV..(warningList[index]+"  "+ str(len(Selection))+ ' Nodes Selected')
     
     warning.setVisible(True)
 
@@ -816,7 +816,7 @@ def Warning_Load(warning,warningList,index):
 class ChangeVersion(nukescripts.PythonPanel):
 
 
-    def __init__(self):
+    ___ __init__(self):
     
 
         nukescripts.PythonPanel.__init__(self,"The Version Changer","The Version Changer")
@@ -825,157 +825,157 @@ class ChangeVersion(nukescripts.PythonPanel):
         # Create Knobs
 
 
-        self.Read = nuke.Boolean_Knob("Read")
+        self.Read = ?.Boolean_Knob("Read")
 
 
-        self.Read.setValue(True)
+        self.Read.sV..(True)
 
 
-        self.Write = nuke.Boolean_Knob("Write")
+        self.Write = ?.Boolean_Knob("Write")
 
 
-        self.DeepRead = nuke.Boolean_Knob("DeepRead")
+        self.DeepRead = ?.Boolean_Knob("DeepRead")
 
 
-        self.DeepWrite = nuke.Boolean_Knob("DeepWrite")
+        self.DeepWrite = ?.Boolean_Knob("DeepWrite")
 
 
-        self.dividerA = nuke.Text_Knob("")
-
-      
-        self.file = nuke.Boolean_Knob("file","file   ")
-
-
-        self.file.setValue(True)
-
-
-        self.file.setFlag(nuke.STARTLINE)
-
-
-        self.proxy = nuke.Boolean_Knob("proxy","proxy               ")
-
-
-        self.Info = nuke.Boolean_Knob("Info    ")
-
-
-        self.Info.setValue(True)
-        
-        
-        self.VersionFolder = nuke.Boolean_Knob("Version by Folder")
-
-
-        self.VersionFolder.setValue(True)
-        
-        
-        self.dividerB = nuke.Text_Knob("")
-        
-
-        self.Type = nuke.Enumeration_Knob("Type","Type",["All","Selected    ","Custom"])
-
-
-        self.Check = nuke.PyScript_Knob('Check', 'Check')
-
-
-        self.warning = nuke.Text_Knob('warning',"")
+        self.dividerA = ?.Text_Knob("")
 
       
-        self.warning.clearFlag(nuke.STARTLINE)
+        self.file = ?.Boolean_Knob("file","file   ")
+
+
+        self.file.sV..(True)
+
+
+        self.file.setFlag(?.STARTLINE)
+
+
+        self.proxy = ?.Boolean_Knob("proxy","proxy               ")
+
+
+        self.Info = ?.Boolean_Knob("Info    ")
+
+
+        self.Info.sV..(True)
+        
+        
+        self.VersionFolder = ?.Boolean_Knob("Version by Folder")
+
+
+        self.VersionFolder.sV..(True)
+        
+        
+        self.dividerB = ?.Text_Knob("")
+        
+
+        self.Type = ?.Enumeration_Knob("Type","Type",["All","Selected    ","Custom"])
+
+
+        self.Check = ?.PyScript_Knob('Check', 'Check')
+
+
+        self.warning = ?.Text_Knob('warning',"")
+
+      
+        self.warning.clearFlag(?.STARTLINE)
 
 
         self.warning.setVisible(False)
 
 
-        self.SelectString = nuke.String_Knob("SelectString", "Select By Value")
+        self.SelectString = ?.String_Knob("SelectString", "Select By Value")
 
 
         self.SelectString.setEnabled(False)
 
 
-        self.Select = nuke.PyScript_Knob('Select', 'Select')
+        self.Select = ?.PyScript_Knob('Select', 'Select')
 
 
         self.Select.setEnabled(True)
 
 
-        self.Select.setFlag(nuke.STARTLINE)
+        self.Select.setFlag(?.STARTLINE)
 
 
-        self.Add = nuke.PyScript_Knob('Add', 'Add')
+        self.Add = ?.PyScript_Knob('Add', 'Add')
 
 
         self.Add.setEnabled(False)
 
 
-        self.Remove = nuke.PyScript_Knob('Remove', 'Remove')
+        self.Remove = ?.PyScript_Knob('Remove', 'Remove')
 
 
         self.Remove.setEnabled(False)
 
 
-        self.ClearString = nuke.PyScript_Knob('ClearString', 'Clear')
+        self.ClearString = ?.PyScript_Knob('ClearString', 'Clear')
 
 
         self.ClearString.setEnabled(False)
 
 
-        self.dividerB2 = nuke.Text_Knob("")
+        self.dividerB2 = ?.Text_Knob("")
         
 
-        self.ClearSelect = nuke.PyScript_Knob('ClearSelect', 'Clear\n Selection')
+        self.ClearSelect = ?.PyScript_Knob('ClearSelect', 'Clear\n Selection')
         
         
-        self.ClearSelect.setFlag(nuke.STARTLINE)
+        self.ClearSelect.setFlag(?.STARTLINE)
         
         
-        self.SaveSelect = nuke.PyScript_Knob('SaveSelect', 'Save\n Selection')
+        self.SaveSelect = ?.PyScript_Knob('SaveSelect', 'Save\n Selection')
 
         
-        self.LoadSelect = nuke.PyScript_Knob('LoadSelect', 'Load\n Selection')
+        self.LoadSelect = ?.PyScript_Knob('LoadSelect', 'Load\n Selection')
 
 
-        self.warningD = nuke.Text_Knob('warningD',"")
+        self.warningD = ?.Text_Knob('warningD',"")
 
       
-        self.warningD.clearFlag(nuke.STARTLINE)
+        self.warningD.clearFlag(?.STARTLINE)
 
 
         self.warningD.setVisible(False)
 
 
-        self.dividerC = nuke.Text_Knob("")
+        self.dividerC = ?.Text_Knob("")
 
 
-        self.SelectManually = nuke.Boolean_Knob("Manual Input")
+        self.SelectManually = ?.Boolean_Knob("Manual Input")
 
 
-        self.SelectVal = nuke.String_Knob("SelectVal", "Select Value")
+        self.SelectVal = ?.String_Knob("SelectVal", "Select Value")
 
 
         self.SelectVal.setEnabled(False)
 
 
-        self.ReplaceVal = nuke.String_Knob("ReplaceVal", "Replace With")
+        self.ReplaceVal = ?.String_Knob("ReplaceVal", "Replace With")
 
 
         self.ReplaceVal.setEnabled(False)
 
 
-        self.Replace = nuke.PyScript_Knob('Replace', 'Replace')
+        self.Replace = ?.PyScript_Knob('Replace', 'Replace')
 
 
-        self.Replace.setFlag(nuke.STARTLINE)
+        self.Replace.setFlag(?.STARTLINE)
         
         
         self.Replace.setEnabled(False)
 
 
-        self.Switch = nuke.PyScript_Knob('Switch', 'Switch')
+        self.Switch = ?.PyScript_Knob('Switch', 'Switch')
 
 
         self.Switch.setEnabled(False)
 
 
-        self.Clear = nuke.PyScript_Knob('Clear', 'Clear')
+        self.Clear = ?.PyScript_Knob('Clear', 'Clear')
 
 
         self.Clear.setEnabled(True)
@@ -984,52 +984,52 @@ class ChangeVersion(nukescripts.PythonPanel):
         self.Clear.setEnabled(False)
 
 
-        self.warningB = nuke.Text_Knob('warning',"")
+        self.warningB = ?.Text_Knob('warning',"")
 
       
-        self.warningB.clearFlag(nuke.STARTLINE)
+        self.warningB.clearFlag(?.STARTLINE)
 
 
         self.warningB.setVisible(False)
 
 
-        self.dividerD = nuke.Text_Knob("")
+        self.dividerD = ?.Text_Knob("")
 
 
-        self.VersionMatch = nuke.PyScript_Knob("MatchVersions","Version\n Match ")
+        self.VersionMatch = ?.PyScript_Knob("MatchVersions","Version\n Match ")
 
 
-        self.VersionMatch.setFlag(nuke.STARTLINE)
+        self.VersionMatch.setFlag(?.STARTLINE)
 
 
-        self.VersionDown = nuke.PyScript_Knob('VersionDown','Version\n Down')
+        self.VersionDown = ?.PyScript_Knob('VersionDown','Version\n Down')
 
 
-        self.VersionUp = nuke.PyScript_Knob('VersionUp','Version\n Up')
+        self.VersionUp = ?.PyScript_Knob('VersionUp','Version\n Up')
 
 
-        self.VersionLast = nuke.PyScript_Knob('VersionLast','Version\n Last')
+        self.VersionLast = ?.PyScript_Knob('VersionLast','Version\n Last')
 
 
-        self.warningC = nuke.Text_Knob('warning',"")
+        self.warningC = ?.Text_Knob('warning',"")
 
       
-        self.warningC.clearFlag(nuke.STARTLINE)
+        self.warningC.clearFlag(?.STARTLINE)
 
 
         self.warningC.setVisible(False)
 
 
-        self.dividerE = nuke.Text_Knob("")
+        self.dividerE = ?.Text_Knob("")
 
    
-        self.Reset = nuke.PyScript_Knob('Reset', 'Reset')
+        self.Reset = ?.PyScript_Knob('Reset', 'Reset')
 
 
-        self.ClearMessage = nuke.PyScript_Knob('ClearMessage', 'Clear')
+        self.ClearMessage = ?.PyScript_Knob('ClearMessage', 'Clear')
 
 
-        self.dividerF = nuke.Text_Knob("")
+        self.dividerF = ?.Text_Knob("")
         
 
 
@@ -1396,32 +1396,32 @@ clears all messages
 
 
 
-    def knobChanged(self,knob):
+    ___ knobChanged(self,knob):
     
 
         #Selects knob type
 
 
-        if knob in self.KnobTypes:
+        if knob __ self.KnobTypes:
 
 
             self.SelectedKnobTypes = []
 
 
-            self.SelectedKnobTypes = [ k.n..  for k in self.KnobTypes if k.getValue()]
+            self.SelectedKnobTypes = [ k.n..  ___ k __ self.KnobTypes if k.gV.. ]
 
 
 
         #Selects node types
 
 
-        if knob in self.NodeTypes:
+        if knob __ self.NodeTypes:
 
 
             self.SelectedNodeTypes = []
 
 
-            self.SelectedNodeTypes = [ node.n..  for node in self.NodeTypes if node.getValue()]
+            self.SelectedNodeTypes = [ node.n..  ___ node __ self.NodeTypes if node.gV.. ]
             
             
             
@@ -1431,7 +1431,7 @@ clears all messages
         if knob is self.Info:
 
 
-            if self.Info.getValue():
+            if self.Info.gV.. :
             
             
                 self.Check.setEnabled(True)
@@ -1467,7 +1467,7 @@ clears all messages
         if knob is self.Check:
 
 
-            if self.Info.getValue():
+            if self.Info.gV.. :
 
 
                 Warning (self.warning)
@@ -1498,19 +1498,19 @@ clears all messages
             if knob is self.Select:
 
 
-                for n in nuke.allNodes():
+                ___ n __ ?.allNodes():
 
 
                     n.setSelected(False)
 
 
-                    if n.Class() in self.SelectedNodeTypes:
+                    if n.Class() __ self.SelectedNodeTypes:
 
 
                         n.setSelected(True)
 
 
-                if self.Info.getValue():
+                if self.Info.gV.. :
 
 
                     Warning (self.warning)
@@ -1566,25 +1566,25 @@ clears all messages
                 self.Custom=self.SelectString.value()
 
 
-                for n in nuke.allNodes():
+                ___ n __ ?.allNodes():
 
 
                     n.setSelected(False)
                     
                     
-                    if n.Class() in self.SelectedNodeTypes:
+                    if n.Class() __ self.SelectedNodeTypes:
 
                 
-                        for knob in self.SelectedKnobTypes:
+                        ___ knob __ self.SelectedKnobTypes:
 
 
-                            if self.Custom in n[knob].value() and self.Custom !="":
+                            if self.Custom __ n[knob].value() and self.Custom !="":
 
 
                                 n.setSelected(True)
 
 
-                if self.Info.getValue():
+                if self.Info.gV.. :
 
 
                     Warning (self.warning)
@@ -1593,10 +1593,10 @@ clears all messages
             if knob is self.ClearString:
 
 
-                self.SelectString.setValue("")
+                self.SelectString.sV..("")
 
 
-                if self.Info.getValue():
+                if self.Info.gV.. :
 
 
                     Warning (self.warning)
@@ -1612,22 +1612,22 @@ clears all messages
                 self.Custom=self.SelectString.value()
 
 
-                for n in nuke.allNodes():
+                ___ n __ ?.allNodes():
 
     
-                    if n.Class() in self.SelectedNodeTypes:
+                    if n.Class() __ self.SelectedNodeTypes:
 
                 
-                        for knob in self.SelectedKnobTypes:
+                        ___ knob __ self.SelectedKnobTypes:
 
 
-                            if self.Custom in n[knob].value() and self.Custom !="":
+                            if self.Custom __ n[knob].value() and self.Custom !="":
 
 
                                 n.setSelected(True)
 
 
-                if self.Info.getValue():
+                if self.Info.gV.. :
 
 
                     Warning (self.warning)
@@ -1643,22 +1643,22 @@ clears all messages
                 self.Custom = self.SelectString.value()
 
 
-                for n in nuke.selectedNodes():
+                ___ n __ ?.sN.. :
 
 
-                    if n.Class() in self.SelectedNodeTypes:
+                    if n.Class() __ self.SelectedNodeTypes:
 
                 
-                        for knob in self.SelectedKnobTypes:
+                        ___ knob __ self.SelectedKnobTypes:
 
 
-                            if self.Custom in n[knob].value() and self.Custom !="":
+                            if self.Custom __ n[knob].value() and self.Custom !="":
 
 
                                 n.setSelected(False)
 
 
-                if self.Info.getValue():
+                if self.Info.gV.. :
 
 
                     Warning (self.warning)
@@ -1671,13 +1671,13 @@ clears all messages
         if knob is self.ClearSelect:
 
 
-            for n in nuke.allNodes():
+            ___ n __ ?.allNodes():
 
 
                     n.setSelected(False)
 
 
-            if self.Info.getValue():
+            if self.Info.gV.. :
 
 
                 Warning (self.warning)
@@ -1687,7 +1687,7 @@ clears all messages
         
         if knob is self.SaveSelect:
         
-            self.OldSelect = nuke.selectedNodes()
+            self.OldSelect = ?.sN..
 
             if not self.OldSelect:
 
@@ -1714,23 +1714,23 @@ clears all messages
 
                 check = False
                 
-                for i in OldSelect1:
+                ___ i __ OldSelect1:
 
-                    if i not in nuke.allNodes():
+                    if i not __ ?.allNodes():
 
                         checkMissing = True
                         
-                    if i in nuke.allNodes():
+                    if i __ ?.allNodes():
 
                         check = True
         
                 if check and not checkMissing:
 
-                    for n in nuke.allNodes():
+                    ___ n __ ?.allNodes():
     
                         n.setSelected(False)
 
-                    for i in OldSelect1:
+                    ___ i __ OldSelect1:
     
                         i.setSelected(True)
 
@@ -1738,13 +1738,13 @@ clears all messages
 
                 else:
                     
-                    for n in nuke.allNodes():
+                    ___ n __ ?.allNodes():
     
                         n.setSelected(False)
 
                     try:
 
-                        for i in OldSelect1:
+                        ___ i __ OldSelect1:
     
                             i.setSelected(True)
 
@@ -1830,13 +1830,13 @@ clears all messages
             count = 0
          
 
-            for n in nuke.selectedNodes():
+            ___ n __ ?.sN.. :
             
             
-                if n.Class() in self.SelectedNodeTypes:
+                if n.Class() __ self.SelectedNodeTypes:
 
 
-                    for knob in self.SelectedKnobTypes:
+                    ___ knob __ self.SelectedKnobTypes:
 
                       
                         old = n[knob].value()
@@ -1845,7 +1845,7 @@ clears all messages
                         NewStr=re.sub(self.SelectVal.value(),self.ReplaceVal.value(),n[knob].value())
 
 
-                        n[knob].setValue(NewStr)
+                        n[knob].sV..(NewStr)
 
 
                         new = n[knob].value()
@@ -1857,7 +1857,7 @@ clears all messages
                            count+=1
 
 
-            if self.Info.getValue():
+            if self.Info.gV.. :
 
 
                 Warning_changed(self.warningB,count) 
@@ -1871,9 +1871,9 @@ clears all messages
 
             temp = self.SelectVal.value()
    
-            self.SelectVal.setValue(self.ReplaceVal.value())
+            self.SelectVal.sV..(self.ReplaceVal.value())
 
-            self.ReplaceVal.setValue(temp)
+            self.ReplaceVal.sV..(temp)
 
 
 
@@ -1883,10 +1883,10 @@ clears all messages
         if knob is self.Clear:
 
 
-            self.SelectVal.setValue("")
+            self.SelectVal.sV..("")
 
 
-            self.ReplaceVal.setValue("")
+            self.ReplaceVal.sV..("")
 
 
 
@@ -1899,9 +1899,9 @@ clears all messages
 
             try:
 
-                if self.Info.getValue():   
+                if self.Info.gV.. :
 
-                    if self.VersionFolder.getValue():
+                    if self.VersionFolder.gV.. :
 
                         Warning_changed(self.warningC,VersionMatchFolder(self.SelectedKnobTypes,self.SelectedNodeTypes))
                             
@@ -1909,7 +1909,7 @@ clears all messages
                         
                         Warning_changed(self.warningC,VersionMatchFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
-                elif self.VersionFolder.getValue():
+                elif self.VersionFolder.gV.. :
 
                     VersionMatchFolder(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
@@ -1929,9 +1929,9 @@ clears all messages
 
             try:
                     
-                if self.Info.getValue():   
+                if self.Info.gV.. :
 
-                    if self.VersionFolder.getValue():
+                    if self.VersionFolder.gV.. :
 
                         Warning_changed(self.warningC,VersionUp(self.SelectedKnobTypes,self.SelectedNodeTypes))
                             
@@ -1939,7 +1939,7 @@ clears all messages
                         
                         Warning_changed(self.warningC,VersionUpFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
-                elif self.VersionFolder.getValue():
+                elif self.VersionFolder.gV.. :
 
                     VersionUp(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
@@ -1959,9 +1959,9 @@ clears all messages
 
             try:
 
-                if self.Info.getValue():    
+                if self.Info.gV.. :
 
-                    if self.VersionFolder.getValue():
+                    if self.VersionFolder.gV.. :
 
                         Warning_changed(self.warningC,VersionDown(self.SelectedKnobTypes,self.SelectedNodeTypes))
                         
@@ -1969,7 +1969,7 @@ clears all messages
                         
                         Warning_changed(self.warningC,VersionDownFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
-                elif self.VersionFolder.getValue():
+                elif self.VersionFolder.gV.. :
 
                     VersionDown(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
@@ -1989,9 +1989,9 @@ clears all messages
 
             try:
 
-                if self.Info.getValue():        
+                if self.Info.gV.. :
 
-                    if self.VersionFolder.getValue():
+                    if self.VersionFolder.gV.. :
 
                         Warning_changed(self.warningC,VersionLast(self.SelectedKnobTypes,self.SelectedNodeTypes))
                             
@@ -1999,7 +1999,7 @@ clears all messages
                         
                         Warning_changed(self.warningC,VersionLastFiles(self.SelectedKnobTypes,self.SelectedNodeTypes))
 
-                elif self.VersionFolder.getValue():
+                elif self.VersionFolder.gV.. :
 
                     VersionLast(self.SelectedKnobTypes,self.SelectedNodeTypes)
                         
@@ -2024,34 +2024,34 @@ clears all messages
             self.SelectedKnobTypes = ["file"]
 
 
-            self.Read.setValue(True)
+            self.Read.sV..(True)
 
 
-            self.Write.setValue(False)
+            self.Write.sV..(False)
 
 
-            self.DeepRead.setValue(False)
+            self.DeepRead.sV..(False)
 
 
-            self.DeepWrite.setValue(False)
+            self.DeepWrite.sV..(False)
 
 
-            self.file.setValue(True)
+            self.file.sV..(True)
 
 
-            self.proxy.setValue(False)
+            self.proxy.sV..(False)
             
             
-            self.Info.setValue(True)
+            self.Info.sV..(True)
 
 
-            self.VersionFolder.setValue(True)
+            self.VersionFolder.sV..(True)
 
 
-            self.Type.setValue("All")
+            self.Type.sV..("All")
 
 
-            self.SelectString.setValue("")
+            self.SelectString.sV..("")
 
 
             self.SelectString.setEnabled(False)
@@ -2066,16 +2066,16 @@ clears all messages
             self.ClearString.setEnabled(False)
 
 
-            self.SelectManually.setValue(False)
+            self.SelectManually.sV..(False)
 
 
             self.SelectVal.setEnabled(False)
 
 
-            self.SelectVal.setValue("")
+            self.SelectVal.sV..("")
 
 
-            self.ReplaceVal.setValue("")
+            self.ReplaceVal.sV..("")
 
 
             self.ReplaceVal.setEnabled(False)
@@ -2137,14 +2137,14 @@ clears all messages
             
 
 
-def addPanel():
+___ addPanel():
 
-    pane = nuke.getPaneFor('Viewer.1')
+    pane = ?.getPaneFor('Viewer.1')
 
-    return ChangeVersion().addToPane(pane)
+    r_ ChangeVersion().addToPane(pane)
 
 
-menu = nuke.menu("Pane")
+menu = ?.menu("Pane")
 
 menu.addCommand("The Version Changer",addPanel,"Alt+v")
 

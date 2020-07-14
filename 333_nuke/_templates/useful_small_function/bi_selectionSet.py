@@ -22,15 +22,15 @@ ___ callInputs():
     
         bckdrp _ nukescripts.autoBackdrop()
     
-        bckdrp['name'].setValue('Selection Set @' %(bd+1))
-        bckdrp['bdwidth'].setValue(120)
-        bckdrp['bdheight'].setValue(40)
-        bckdrp['tile_color'].setValue(595297535)
-        bckdrp['label'].setValue('Add Note')
+        bckdrp['name'].sV..('Selection Set @' %(bd+1))
+        bckdrp['bdwidth'].sV..(120)
+        bckdrp['bdheight'].sV..(40)
+        bckdrp['tile_color'].sV..(595297535)
+        bckdrp['label'].sV..('Add Note')
 
         p _ ?.tN..('preferences')
         v _ p['maxPanels'].v..
-        p['maxPanels'].setValue(v+1)
+        p['maxPanels'].sV..(v+1)
 
         lon _ ''
         miny _ -999999999
@@ -44,8 +44,8 @@ ___ callInputs():
             ____
                 lon _ st.(nd['name'].value())
                 
-        bckdrp['xpos'].setValue(minx)
-        bckdrp['ypos'].setValue(miny + 50)
+        bckdrp['xpos'].sV..(minx)
+        bckdrp['ypos'].sV..(miny + 50)
         
         t _ ?.T_K..("selectionSet", "Selection Set")
         bckdrp.aK..(t)
@@ -92,7 +92,7 @@ ___ selectFromSelectionSet(bckdrp):
         ___ n __ listFromNode:
             __ n !_ '':
                 nd _ ?.tN..(n)
-                nd['selected'].setValue(T..)
+                nd['selected'].sV..(T..)
                 
         ?.frame()
     ____
@@ -108,7 +108,7 @@ ___ displayFromSelectionSet(bckdrp):
         listFromNode _ listOfNodes(node)
 
         p _ ?.tN..('preferences')
-        p['maxPanels'].setValue(le.(listFromNode)+1)
+        p['maxPanels'].sV..(le.(listFromNode)+1)
         
         ___ n __ listFromNode:
             __ n !_ '':
@@ -172,20 +172,20 @@ ___ disEnaNode(bckdrp, node, kn, refresh _ F.., toggle _ T.., allValue _ T..):
         __ refresh __ F..:
             __ toggle:
                 __ node['disable'].v.. __ T..:
-                    node['disable'].setValue(F..)
+                    node['disable'].sV..(F..)
                     lon _ '<span style="color:green">@</span>' %node['name'].v..
                     knobNode.sL..(lon)
                 ____
-                    node['disable'].setValue(T..)
+                    node['disable'].sV..(T..)
                     lon _ '<span style="color:red">@</span>' %node['name'].v..
                     knobNode.sL..(lon)
             ____
                 __ allValue:
-                    node['disable'].setValue(T..)
+                    node['disable'].sV..(T..)
                     lon _ '<span style="color:red">@</span>' %node['name'].v..
                     knobNode.sL..(lon)
                 ____
-                    node['disable'].setValue(F..)
+                    node['disable'].sV..(F..)
                     lon _ '<span style="color:green">@</span>' %node['name'].v..
                     knobNode.sL..(lon)
                     
@@ -258,7 +258,7 @@ ___ addNodes(bckdrp):
                 ____
                     lon +_ '@' %st.(nd['name'].value())
                     
-                node['listOfNodes'].setValue(node['listOfNodes'].v.. + lon)
+                node['listOfNodes'].sV..(node['listOfNodes'].v.. + lon)
                 
         colorize(node)
       
@@ -273,7 +273,7 @@ ___ deleteNode(bckdrp, node):
     __ node __ lon:
         lon.remove(node)
         s _ ','.j..(lon)
-        bckdrp['listOfNodes'].setValue(s)
+        bckdrp['listOfNodes'].sV..(s)
         colorize(bckdrp)
                
      
@@ -295,7 +295,7 @@ ___ clearNodesButtons(bckdrp):
                 
 ___ resetPanelView():
     p _ ?.tN..('preferences')
-    p['maxPanels'].setValue(1)
+    p['maxPanels'].sV..(1)
     
     
 ___ listOfNodes(node):

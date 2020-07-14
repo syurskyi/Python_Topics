@@ -83,7 +83,7 @@ ___ create_matrix_knob(node, noop, m_key, key, first, last):
         ___ index __ ra__(mtx):
             keys _ # list
             anim _ array.animations()[index]
-            keys.append(?.AnimationKey(frame, node.metadata(m_key, frame)[index]))
+            keys.ap..(?.AnimationKey(frame, node.metadata(m_key, frame)[index]))
             anim.addKey(keys)
 
 

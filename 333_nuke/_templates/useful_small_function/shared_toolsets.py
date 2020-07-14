@@ -87,14 +87,14 @@ class CreateToolsetsPanel(nukescripts.PP..):
     __ rename __ True:
       toolSetPath = fullFilePath.replace(SHARED_TOOLSET_PATH + "/", '') 
       toolSetPath = toolSetPath.replace(".nk", '') 
-      self.menuPath.setValue(toolSetPath)
+      self.menuPath.sV..(toolSetPath)
 
   #COMMENT:  BUILD A LIST Of PRE_CREATED FOLDER LOCATIONS
   ___ buildFolderList(self, fullPath, menuPath):
     filecontents = sorted(__.l_d_(fullPath), key=st..lower)
-    ___ group in filecontents:
+    ___ group __ filecontents:
       __ __.pa__.isd..(__.pa__.j..(fullPath, group)):
-        self.userFolders.append(menuPath + group)
+        self.userFolders.ap..(menuPath + group)
         self.buildFolderList(fullPath + '/' + group, menuPath + group + '/')              
 
   ___ createPreset(self):
@@ -150,9 +150,9 @@ class CreateToolsetsPanel(nukescripts.PP..):
     tempToolsetName = tempListToolsetName[-1]
 
     __ st.(self.menuItemChoice.value()) __ "root":
-      self.menuPath.setValue( ""+ tempToolsetName)
+      self.menuPath.sV..( ""+ tempToolsetName)
     ____
-      self.menuPath.setValue(self.menuItemChoice.value() + "/" + tempToolsetName)
+      self.menuPath.sV..(self.menuItemChoice.value() + "/" + tempToolsetName)
 
   ___ knobChanged( self, knob ):
     __ knob __ self.okButton:
@@ -197,7 +197,7 @@ ___ checkForEmptyToolsetDirectories(currPath):
   removed = True
   w__ removed __ True:
     removed = False
-    ___ root, dirs, files in __.walk(currPath):
+    ___ root, dirs, files __ __.walk(currPath):
       __ files __ # list and dirs == []:
         __ root != SHARED_TOOLSET_PATH:
           __.rmdir(root)
@@ -238,7 +238,7 @@ ___ populateToolsetsMenu(m, delete):
 ___ randomStringDigits(stringLength=6):
     """Generate a random string of letters and digits """
     lettersAndDigits = string.ascii_letters + string.digits
-    r_ ''.j..(random.choice(lettersAndDigits) ___ i in ra__(stringLength))
+    r_ ''.j..(random.choice(lettersAndDigits) ___ i __ ra__(stringLength))
 
 #COMMENT: warper around loadToolset
 ___ toolsetLoader(fullFileName):
@@ -263,10 +263,10 @@ ___ fileFilter(fileName, filterFunc):
     with open(fileName) __ f:
         content = f.readlines()
     modifiedContentList = # list
-    ___ line in content:
-        __ "file" in line:
+    ___ line __ content:
+        __ "file" __ line:
             line = filterFunc(line)
-        modifiedContentList.append(line)
+        modifiedContentList.ap..(line)
     modifiedContent = "".j..(modifiedContentList)
     r_ modifiedContent
 
@@ -279,35 +279,35 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
   #COMMENT: First list all directories
   retval = False
   __ filecontents != # list:
-    ___ group in filecontents:
+    ___ group __ filecontents:
       newPath = "/".j..([fullPath, group])
       ignore = False
       __ newPath.find(".svn") != -1:
         ignore = True
       ____
-        ___ i in excludePaths:
+        ___ i __ excludePaths:
           i = i.replace('\\', '/')
           __ newPath.find(i) != -1:
             ignore = True
             break
       __ __.pa__.isd..(newPath) and not ignore:
         menuName = group
-        __ isLocal and (menuName in allToolsetsList):
+        __ isLocal and (menuName __ allToolsetsList):
           menuName = "[user] " + menuName
         ____ not isLocal:
-          allToolsetsList.append(menuName)
+          allToolsetsList.ap..(menuName)
         n = m.addMenu(menuName)
         retval = createToolsetMenuItems(n, rootPath, "/".j..([fullPath, group]), delete, allToolsetsList, isLocal)
         #COMMENT: if we are deleting, and the sub directory is now empty, delete the directory also
         __ delete and __.l_d_(fullPath)__# list:
           __.rmdir(fullPath)
     # Now list individual files
-    ___ group in filecontents:
+    ___ group __ filecontents:
       fullFileName = "/".j..([fullPath, group])
       __ not __.pa__.isd..(fullFileName):
         
         #COMMENT: delete file with an extention ".nk~" created by edit.
-        __ ".nk~" in group:
+        __ ".nk~" __ group:
           __.remove(fullFileName)
         
         extPos = group.find(".nk")
@@ -328,12 +328,12 @@ ___ createToolsetMenuItems(m, rootPath, fullPath, delete, allToolsetsList, isLoc
             ____
               #COMMENT: should never happen, but just in case ...
               subfilename = fullfilename
-            __ isLocal and (subfilename in allToolsetsList):
+            __ isLocal and (subfilename __ allToolsetsList):
               #COMMENT: if we've already appended [user] to the menu name, don't need it on the filename
               __ (i != -1) and subfilename[le.("SharedToolSets/"):].find("/") __ -1:
                 group = "[user] " + group
             ____ not isLocal:
-              allToolsetsList.append(subfilename)
+              allToolsetsList.ap..(subfilename)
 
             #TODO: get ref module name, now it is static linking
             #current_module = sys.modules[__name__]

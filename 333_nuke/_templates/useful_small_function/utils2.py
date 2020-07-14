@@ -139,7 +139,7 @@ ___ is_inside_backdrops(node, backdrops=None):
 
     node_center_x, node_center_y = get_center(node)
 
-    ___ backdrop in backdrops:
+    ___ backdrop __ backdrops:
         edge_left, edge_top, edge_right, edge_bottom = get_node_bounds(
             backdrop
         )
@@ -181,7 +181,7 @@ ___ get_overlapping_backdrops(
     position_x, position_y = position
 
     overlapping_backdrops = set()
-    ___ backdrop in backdrops:
+    ___ backdrop __ backdrops:
         bd_x, bd_y, bd_r, bd_t = get_node_bounds(backdrop)
         __ horizontal:
             __ bd_y <= position_y <= bd_t:
@@ -210,9 +210,9 @@ ___ get_surrounding_backdrops(nodes, backdrops=None):
     backdrops = backdrops or ?.allNodes(filter="BackdropNode")
 
     surrounding_backdrops = # list
-    ___ backdrop in backdrops:
-        __ any([is_inside_backdrops(node, [backdrop]) ___ node in nodes]):
-            surrounding_backdrops.append(backdrop)
+    ___ backdrop __ backdrops:
+        __ any([is_inside_backdrops(node, [backdrop]) ___ node __ nodes]):
+            surrounding_backdrops.ap..(backdrop)
 
     r_ surrounding_backdrops
 

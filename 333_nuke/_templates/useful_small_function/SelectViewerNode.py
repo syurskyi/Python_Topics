@@ -39,7 +39,7 @@ ___ GetViewerList(ViewersList):
         __ Class __ "Viewer":
             Number _ "      "+ Name.s..(Class)[1]+"    "
             __ Number no. __ ViewersList:
-                ViewersList.append(Number)
+                ViewersList.ap..(Number)
     ViewersList _ sorted(ViewersList)
     __ ActiveViewer!_"":
         ViewersList.remove(ActiveViewer)
@@ -59,7 +59,7 @@ ___ SelectNode(Viewer,warning):
     Inputs _ ?.tN..(Viewer).inputs()
     __ Inputs__0:
         print Viewer + " Has no Inputs"
-        warning.setValue("        "+Viewer + " Has no Inputs")
+        warning.sV..("        "+Viewer + " Has no Inputs")
         warning.setVisible(T..)
         raise ValueError      
     ____ Inputs>1:
@@ -70,7 +70,7 @@ ___ SelectNode(Viewer,warning):
             Nodes_[index1]
             ___
                 index2 _ ?.ViewerWindow.activeInput(?.activeViewer(),T..)+1
-                Nodes.append(index2)
+                Nodes.ap..(index2)
             ______
                 p..
             ___ index __ Nodes:
@@ -138,7 +138,7 @@ c_ SelectViewerNode(nukescripts.PP..):
     
         Zoom _ ?.B_K..("Zoom")
 
-        Zoom.setValue(F..)
+        Zoom.sV..(F..)
 
         dividerA _ ?.T_K..("")
 

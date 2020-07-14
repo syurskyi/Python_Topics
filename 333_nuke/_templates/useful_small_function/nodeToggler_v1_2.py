@@ -12,7 +12,7 @@ ___ nodeToggler():
             knobNameList _ # list
             knobName _ ''
             ___ key __ allKnob:
-                knobNameList.append(allKnob[key])
+                knobNameList.ap..(allKnob[key])
             ___ index __ ra__(le.(knobNameList)):
                 knobName +_ ' ' + knobNameList[index]
             knobPanel.addEnumerationPulldown('Select Knob', knobName)
@@ -22,9 +22,9 @@ ___ nodeToggler():
             ___ item __ selection:
                 __ item.knob(knobPanel.value('Select Knob')):
                     __ item.knob(knobPanel.value('Select Knob')).v.. __ F..:
-                        item.knob(knobPanel.value('Select Knob')).setValue(T..)
+                        item.knob(knobPanel.value('Select Knob')).sV..(T..)
                     ____ item.knob(knobPanel.value('Select Knob')).v.. __ T..:
-                        item.knob(knobPanel.value('Select Knob')).setValue(F..)
+                        item.knob(knobPanel.value('Select Knob')).sV..(F..)
                 ____
                     ?.m..('{} node has no {} knob.'.f..(item.n.. , knobPanel.value('Select Knob')))
         #creates panel for node selection
@@ -34,7 +34,7 @@ ___ nodeToggler():
         nodeClass _ ''
         ___ node __ allNode:
             __ node.Class() !_ 'Viewer':             #removes any viewer node present in allNode List
-                nodeClassList.append(node.Class())
+                nodeClassList.ap..(node.Class())
 		#creates a list for display in nodePanel and removes any duplicating node
         newList _ list(set(nodeClassList))
         ___ index __ ra__(le.(newList)):

@@ -93,19 +93,19 @@ ___ collect_nodes(mode):
 
         __ dependent_ an. dependencies_:
             __ le.(node.dependent()) __ 0 an. le.(node.dependencies()) __ 0 an. node.minInputs() > 0 an. node.maxOutputs() > 0:
-                cleanup_list.append(node)
+                cleanup_list.ap..(node)
 
         ____ dependent_ an. no. dependencies_ an. node.maxOutputs() > 0:
             __ le.(node.dependent()) __ 0:
-                cleanup_list.append(node)
+                cleanup_list.ap..(node)
 
         ____ no. dependent_ an. dependencies_ an. node.minInputs() > 0 an. node.maxOutputs() > 0:
             __ le.(node.dependencies()) __ 0:
-                cleanup_list.append(node)
+                cleanup_list.ap..(node)
 
         ____
             __ node.minInputs() > 0 an. node.inputs() __ 0:
-                cleanup_list.append(node)
+                cleanup_list.ap..(node)
 
     r_ cleanup_list
 
@@ -219,7 +219,7 @@ c_ CleanModeDialog(?W..):
             layout_widget.addStretch()
             widget.sL..(layout_widget)
             table_cleanup.setCellWidget(r, 1, widget)
-            checkboxes.append(checkbox)
+            checkboxes.ap..(checkbox)
 
             # remove push
             push_remove_node _ ?PB..("delete")
@@ -298,7 +298,7 @@ c_ CleanModeDialog(?W..):
 
         ___ c __ checkboxes:
             ___
-                disable _ ?.tN..(c.property("node"))["disable"].setValue(c.isChecked())
+                disable _ ?.tN..(c.property("node"))["disable"].sV..(c.isChecked())
             ______ E.., e:
                 c___
 

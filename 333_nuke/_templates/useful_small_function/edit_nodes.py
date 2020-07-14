@@ -27,12 +27,12 @@ ___ get_knobs(node):
     ignore_patterns = ['_panelDropped']
     knobs = list()
     default_knobs = list()
-    ___ k in node.knobs():
+    ___ k __ node.knobs():
         knob = node[k]
-        __ knob.Class() not in unsupported_classes and knob.n..  not in unsupported_names:
-            ___ pattern in ignore_patterns:
-                __ pattern not in k:
-                    knobs.append(k)
+        __ knob.Class() not __ unsupported_classes and knob.n..  not __ unsupported_names:
+            ___ pattern __ ignore_patterns:
+                __ pattern not __ k:
+                    knobs.ap..(k)
     r_ knobs
 
 
@@ -42,13 +42,13 @@ ___ edit_knobs():
     nodes = ?.sN..()
     # Find intersection of all knobs between all selected nodes
     knobs = list()
-    ___ i in ra__(le.(nodes)):
+    ___ i __ ra__(le.(nodes)):
         __ i __ 0:
             knobs = get_knobs(nodes[i])
         ____
             knobs = intersection(get_knobs(nodes[i-1]), get_knobs(nodes[i]))
         i += 1
-    knobs.sort()
+    knobs.s..
     default_knob_names = [
         'hide_input', 'note_font', 'note_font_size', 'icon', 'dope_sheet', 'invert_mask', 
         'enable_mix_luminance', 'process_mask', 'lifetimeStart', 'unpremult', 'autolabel', 
@@ -57,13 +57,13 @@ ___ edit_knobs():
         ]
     default_knobs = list()
     node_knobs = list()
-    ___ knob in knobs:
-        __ knob in default_knob_names:
-            default_knobs.append(knob)
+    ___ knob __ knobs:
+        __ knob __ default_knob_names:
+            default_knobs.ap..(knob)
         ____
-            node_knobs.append(knob)
-    default_knobs.sort()
-    node_knobs.sort()
+            node_knobs.ap..(knob)
+    default_knobs.s..
+    node_knobs.s..
     knobs = node_knobs + default_knobs
     panel = ?.Panel('Edit Knobs')
     panel.setWidth(250)
@@ -78,23 +78,23 @@ ___ edit_knobs():
     k = panel.value('knobs')
     set_expression = panel.value('expression')
     values = list()
-    ___ i in ra__(4):
+    ___ i __ ra__(4):
         val = panel.value(st.(i))
         __ val __ '':
-            values.append(False)
+            values.ap..(False)
         ____
             ___
-                values.append(float(val))
+                values.ap..(float(val))
             ______ ValueError:
-                values.append(st.(val))
-    ___ node in nodes:
+                values.ap..(st.(val))
+    ___ node __ nodes:
         knob = node[k]
         ___
             array_size = knob.arraySize()
         ______ AttributeError:
             array_size = 1
         __ set_expression:
-            ___ i in ra__(array_size):
+            ___ i __ ra__(array_size):
                 __ values[i]:
                     __ knob.hasExpression(i):
                         knob.clearAnimated(i)
@@ -104,21 +104,21 @@ ___ edit_knobs():
                 __ knob.hasExpression():
                     knob.clearAnimated()
                 __ not values[0]:
-                    knob.setValue(False)
+                    knob.sV..(False)
                 ____
-                    knob.setValue(True)
+                    knob.sV..(True)
             ____ isinstance(knob, (?.File_Knob)):
-                knob.setValue(values[0])
+                knob.sV..(values[0])
             ____ isinstance(knob, (?.XYZ_Knob, ?.XY_Knob, ?.WH_Knob, ?.UV_Knob, ?.Array_Knob)):
                 __ knob.singleValue():
                     __ values[0] and not values[1] and not values[2] and not values[3]:
                         # if only values[0] exists, set all in array_size to first value
-                        knob.setValue(values[0])
-                ___ i in ra__(array_size):
+                        knob.sV..(values[0])
+                ___ i __ ra__(array_size):
                     __ knob.hasExpression(i):
                         knob.clearAnimated(i)
                     __ isinstance(values[i], float):
-                        knob.setValue(values[i], i)
+                        knob.sV..(values[i], i)
                     ____ isinstance(values[i], st.):
                         # Assume this was meant to be an expression
                         knob.setExpression(st.(values[i]), channel=i)
@@ -141,12 +141,12 @@ ___ paste_knobs(checkboxes=False):
     excluded_knobs = ['name', 'xpos', 'ypos', 'selected']
     ___
         intersect_knobs = dict()
-        ___ dst_node in dst_nodes:
+        ___ dst_node __ dst_nodes:
             src_knobs = src_node.knobs()
             dst_knobs = dst_node.knobs()
             intersection = dict(
-                [(item, src_knobs[item]) ___ item in src_knobs.keys() \
-                __ item not in excluded_knobs and dst_knobs.has_key(item)]
+                [(item, src_knobs[item]) ___ item __ src_knobs.keys() \
+                __ item not __ excluded_knobs and dst_knobs.has_key(item)]
                 )
             intersect_knobs.update(intersection)
         knobs = intersect_knobs.keys()
@@ -154,7 +154,7 @@ ___ paste_knobs(checkboxes=False):
         panel.setWidth(250)
         __ checkboxes:
             # Checkboxes for each knob
-            ___ k in knobs:
+            ___ k __ knobs:
                 panel.addBooleanCheckBox(k, 0)
         ____
             panel.addEnumerationPulldown('knob', ' '.j..(knobs))
@@ -163,20 +163,20 @@ ___ paste_knobs(checkboxes=False):
             r_
         chosen_knobs = list()
         __ checkboxes:
-            ___ k in knobs:
+            ___ k __ knobs:
                 __ panel.value(k):
-                    chosen_knobs.append(k)
+                    chosen_knobs.ap..(k)
         ____
             paste_all = panel.value('paste all')
             print paste_all
             __ paste_all:
                 chosen_knobs = knobs
             ____
-                chosen_knobs.append(panel.value('knob'))
+                chosen_knobs.ap..(panel.value('knob'))
                 print 'got single value: ', chosen_knobs
-        ___ dst_node in dst_nodes:
+        ___ dst_node __ dst_nodes:
             dst_knobs = dst_node.knobs()
-            ___ knob in chosen_knobs:
+            ___ knob __ chosen_knobs:
                 print 'pasting src {0} to dst {1}'.format(knob, dst_node.n..
                 src = src_knobs[knob]
                 dst = dst_knobs[knob]

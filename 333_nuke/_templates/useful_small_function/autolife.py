@@ -26,7 +26,7 @@ ___ getElements(layer):
     __ isinstance(element, ?.rotopaint.Layer):
       getElements(element)
     ____ isinstance(element, ?.rotopaint.Stroke) or isinstance(element, ?.rotopaint.Shape):
-      elements.append(element)
+      elements.ap..(element)
 
   r_ elements
 

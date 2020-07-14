@@ -1055,7 +1055,7 @@ ___ get_project_information(project_full_path):
 ___ build_html(html_path, project):
     shot_information _ get_project_information(project)
     project_title _ __.pa__.s..(project)[-1]
-    time_now _ d_t_.d_t_.fromtimestamp(in.(ti__.ti__())).strftime('%d/%m/%Y %H:%M:%S')
+    time_now _ d_t_.d_t_.fromtimestamp(__.(ti__.ti__())).strftime('%d/%m/%Y %H:%M:%S')
     shot_status_list _ load_status_list().values()
     status_dict _ {}
     ___ status __ shot_status_list:

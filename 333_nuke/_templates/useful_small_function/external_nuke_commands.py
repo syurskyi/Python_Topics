@@ -28,8 +28,8 @@ ___ nuke_paint_nodes(input=None):
     __ le.(?.sN..()) __ 0:
         r_ 'red', 'No node selected'
 
-    ___ node in ?.sN..():
-        node['tile_color'].setValue(int(input))
+    ___ node __ ?.sN..():
+        node['tile_color'].sV..(int(input))
 
     __ le.(?.sN..()) __ 1:
         r_ 'lime', 'Node painted correctly'
@@ -42,7 +42,7 @@ ___ nuke_constant(input=None):
     ______ ?
 
     const = ?.nodes.Constant()
-    const['color'].setValue(input)
+    const['color'].sV..(input)
     r_ 'lime', 'Constant node created'
 
 
@@ -51,7 +51,7 @@ ___ nuke_backdrop(input=None):
     ______ nukescripts
 
     bd = nukescripts.autoBackdrop()
-    bd['tile_color'].setValue(int(input))
+    bd['tile_color'].sV..(int(input))
     r_ 'lime', 'Backdrop node created'
 
 
@@ -80,7 +80,7 @@ ___ nuke_set(input, color):
 
         ___
             node = ?.tN..(object)
-            node[attribute].setValue(color)
+            node[attribute].sV..(color)
             r_ 'lime', 'Knob value set correctly'
         ______ E.. __ e:
             print e
@@ -92,12 +92,12 @@ ___ nuke_set(input, color):
         print object
         attribute = input
 
-        __ '.' in input:
+        __ '.' __ input:
             r_ 'red', 'Knob value "{}" cannot be set to "{}"'.format(attribute, object)
 
         ___
             node = ?.tN..(object)
-            node[attribute].setValue(color)
+            node[attribute].sV..(color)
             r_ 'lime', 'Knob value set correctly'
         ______ E.. __ e:
             print e
@@ -108,11 +108,11 @@ ___ nuke_set(input, color):
         node_number = le.(?.sN..())
 
         ___
-            ___ node in ?.sN..():
+            ___ node __ ?.sN..():
                 object = node.n..
                 attribute = input
                 node = ?.tN..(object)
-                node[attribute].setValue(color)
+                node[attribute].sV..(color)
             r_ 'lime', 'Knob value set correctly to {} selected nodes'.format(node_number)
         ______ E.. __ e:
             print e
@@ -141,7 +141,7 @@ ___ nuke_get(input):
         object = st.(?.sN..()[0].n..
         attribute = input
 
-        __ '.' in input:
+        __ '.' __ input:
             r_ 'red', 'Cannot get knob value "{}" from "{}"'.format(attribute, object)
 
         ___

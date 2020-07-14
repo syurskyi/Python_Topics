@@ -282,7 +282,7 @@ ___ load_nukescripts_progress(pa__):
     _, root, _ _ get_xml_elements()
     ___ nukescript __ root.find('archive').f_a_('nukescript'):
         __ nukescript.text __ pa__:
-            r_ in.(nukescript.get('progress'))
+            r_ __.(nukescript.get('progress'))
 
     r_ 0
 
@@ -385,7 +385,7 @@ ___ load_tooltips(parent, section, *args):
 
 
 ___ create_job_id(*args):
-    current_time _ st.(in.(ti__.ti__()))
+    current_time _ st.(__.(ti__.ti__()))
     rand_number _ st.(random.random())
     id_ _ hashlib.md5('{}{}'.f..(current_time, rand_number)).hexdigest()[:8]
     r_ st.('{}_{}'.f..(current_time, id_))

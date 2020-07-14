@@ -23,68 +23,68 @@
 
 # Finds node of certain class in the input pipe upstream and if there is a knob
 # specified returns its value
-import nuke
+import ?
 import re
 import __
 
-def topInput(node,input,ch_class,knob,ch_frame):
+___ topInput(node,input,ch_class,knob,ch_frame):
     if node:
         input_node=node.input(input)
         if input_node:
             if input_node.Class() == ch_class :
                 if input_node.knob(knob):
-                    return input_node[knob].getValueAt(ch_frame)
+                    r_ input_node[knob].getValueAt(ch_frame)
             else:
                 if input_node.Class()=='JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
-                    current_view=nuke.views().index(nuke.thisView())
-                    return topInput(input_node,current_view,ch_class,knob,ch_frame)
+                    current_view=?.views().index(?.thisView())
+                    r_ topInput(input_node,current_view,ch_class,knob,ch_frame)
                 else:
-                    return topInput(input_node,0,ch_class,knob,ch_frame)
+                    r_ topInput(input_node,0,ch_class,knob,ch_frame)
         else:
-            return None
+            r_ None
 
 # Finds node of certain class in the input pipe upstream and if there is a knob
 # specified returns its object
 
-def topInputKnob(node,ch_class,knob,input=0):
+___ topInputKnob(node,ch_class,knob,input=0):
     if node:
         input_node=node.input(input)
         if input_node:
             if nodeClass(input_node) == ch_class :
                 if input_node.knob(knob):
-                    return input_node[knob]
+                    r_ input_node[knob]
             else:
                 if nodeClass(input_node)=='JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
-                    current_view=nuke.views().index(nuke.thisView())
-                    return topInputKnob(input_node,current_view,ch_class,knob)
+                    current_view=?.views().index(?.thisView())
+                    r_ topInputKnob(input_node,current_view,ch_class,knob)
                 else:
-                    return topInputKnob(input_node,ch_class,knob)
+                    r_ topInputKnob(input_node,ch_class,knob)
         else:
-            return None
+            r_ None
 
 # Finds node of certain class in the input pipe upstream and 
 # returns node onject
 
-def topInputNode(node,ch_class,input=0):
+___ topInputNode(node,ch_class,input=0):
     if node:
         input_node=node.input(input)
         if input_node:
             if nodeClass(input_node) == ch_class :
-                return input_node
+                r_ input_node
             else:
                 if nodeClass(input_node)=='JoinViews':
 #                    print nuke.views()
 #                    print nuke.thisView()
-                    current_view=nuke.views().index(nuke.thisView())
-                    return topInputNode(input_node,current_view,ch_class)
+                    current_view=?.views().index(?.thisView())
+                    r_ topInputNode(input_node,current_view,ch_class)
                 else:
-                    return topInputNode(input_node,ch_class)
+                    r_ topInputNode(input_node,ch_class)
         else:
-            return None
+            r_ None
 
 ##########################################################
 #
@@ -94,17 +94,17 @@ def topInputNode(node,ch_class,input=0):
 # because None object is unsubscriptable
 # this function is workaroud to make sure returned value is always a list or 0
 
-def ensureMatrix(value):
+___ ensureMatrix(value):
     if (type(value) is list):
-        return value
+        r_ value
     else:
-        return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        r_ [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
-def ensureFloat(value):
+___ ensureFloat(value):
     if (type(value) is float):
-        return value
+        r_ value
     else:
-        return 0
+        r_ 0
 
 #########################################################
 #
@@ -112,18 +112,18 @@ def ensureFloat(value):
 # parse toScript of the knob to get named views
 #
 
-def getKnobViews(knob):
+___ getKnobViews(knob):
     if knob:
         s=knob.toScript()
         pt=re.compile('\w+\s\{')
         ss=re.findall(pt,s)
         result =[]
-        for i in ss:
+        ___ i __ ss:
 #            ss=i.lstrip(' ').split(' ')[0]
             if i:
-                if not(i in result):
-                    result.append(i[0:-2])
-        return result
+                if not(i __ result):
+                    result.ap..(i[0:-2])
+        r_ result
 
 
 #########################################################
@@ -133,12 +133,12 @@ def getKnobViews(knob):
 # this script reads aditional knob nodeClass and returns its value 
 #
 
-def nodeClass(node):
+___ nodeClass(node):
     if node:
-        if ( 'nodeClass' in node.knobs().keys() ) :
-            return node['nodeClass'].value()
+        if ( 'nodeClass' __ node.knobs().keys() ) :
+            r_ node['nodeClass'].value()
         else:
-            return node.Class()
+            r_ node.Class()
 
 
 
@@ -149,16 +149,16 @@ def nodeClass(node):
 # 
 #
 
-def animCurveMinMax(curve):
+___ animCurveMinMax(curve):
     try:
         minX,minY=1000000000000,1000000000000
         maxX,maxY=-100000000000,-1000000000000
-        for i in curve.keys():
+        ___ i __ curve.keys():
             if i.y<minY:
                 minX,minY=i.x,i.y
             if i.y>maxY:
                 maxX,maxY=i.x,i.y
-        return minX,minY,maxX,maxY
+        r_ minX,minY,maxX,maxY
 
     except Exception,e:
         print('Error:: %s' % e)
@@ -169,7 +169,7 @@ def animCurveMinMax(curve):
 # its actually parse toScript so it could break on Nuke version up
 # 
 #
-def getTrackNames(node):
+___ getTrackNames(node):
     k=node['tracks']
     s=node['tracks'].toScript().s..(' \n} \n{ \n ')
     s.pop(0)
@@ -177,9 +177,9 @@ def getTrackNames(node):
     ss.pop(-1)
     ss.pop(-1)
     outList=[]
-    for i in ss:
-        outList.append(i.s..('"')[1])
-    return outList
+    ___ i __ ss:
+        outList.ap..(i.s..('"')[1])
+    r_ outList
 
 
 #########################################################
@@ -190,7 +190,7 @@ def getTrackNames(node):
 # Uses nodeClass function from this module
 #
 
-def getHelpUrl(node=None):
+___ getHelpUrl(node=None):
 
     # url will be used in case of unknown class or node is not provided
 
@@ -212,15 +212,15 @@ def getHelpUrl(node=None):
                 prefContent = prefFile.readlines()
                 prefFile.close()
 
-                for i in prefContent:
+                ___ i __ prefContent:
                     key,value= i.rstrip().s..('::')
-                    settings.append((key,value))  
+                    settings.ap..((key,value))
          
             ndClass=nodeClass(node)
 
             # Look through list of values from settings to see if there a url for that node
             url=mySite
-            for key,value in settings:
+            ___ key,value __ settings:
                 if ndClass==key:
                     url=value
 
@@ -232,7 +232,7 @@ def getHelpUrl(node=None):
     else:
         url=mySite
 
-    return url
+    r_ url
 
 #########################################################
 #
@@ -240,12 +240,12 @@ def getHelpUrl(node=None):
 #
 # returns first empty input pipe starting from start_input pipe
 #
-def emptyInput(node,start_input=0):
+___ emptyInput(node,start_input=0):
     inputs=node.inputs()
-    for input in range(start_input,inputs):
+    ___ input __ range(start_input,inputs):
         if node.input(input)==None:
-            return input
-    return None
+            r_ input
+    r_ None
 
 #########################################################
 #
@@ -253,12 +253,12 @@ def emptyInput(node,start_input=0):
 #
 # returns first not empty input pipe starting from start_input pipe
 #
-def nonEmptyInput(node,start_input=0):
+___ nonEmptyInput(node,start_input=0):
     inputs=node.inputs()
-    for input in range(start_input,inputs):
+    ___ input __ range(start_input,inputs):
         if node.input(input)!=None:
-            return input
-    return None
+            r_ input
+    r_ None
 
 #########################################################
 #
@@ -267,29 +267,29 @@ def nonEmptyInput(node,start_input=0):
 # shifts connection pipes to get rid of empty connections
 # made for CountSheet rewiring but might be usefull for 3dScenes and merges as well
 #
-def shiftConnections(node,start=0):
+___ shiftConnections(node,start=0):
     inputs=node.inputs()
-    for input in range(start,inputs):
+    ___ input __ range(start,inputs):
         node.setInput(input, node.input(input+1))
     if emptyInput(node)==start:
             shiftConnections(node, start)
     if emptyInput(node):
          shiftConnections(node, emptyInput(node))
-    return node
+    r_ node
 
 #
 # Functions to find file in plugin path folders
 #
 # looks through all folders and returns path list if file is found
 #
-def where(filename):
+___ where(filename):
     file_list=[]
-    for path in nuke.pluginPath():
+    ___ path __ ?.pluginPath():
         check_file='%s%s%s' % (path, __.sep, filename)
         if __.path.isfile( check_file ):
-            file_list.append(check_file)
+            file_list.ap..(check_file)
     if file_list:
         file_list.reverse()
 
-    return file_list
+    r_ file_list
 

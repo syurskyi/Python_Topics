@@ -313,10 +313,10 @@ ___ get_next_link_name():
     ___ split_nr(string):
         regex _ re.compile('(\\d+)')
         element _ regex.s..(string)
-        r_ [ (in.(y) __ y.isdigit() ____ y) ___ y __ element ]
+        r_ [ (__.(y) __ y.isdigit() ____ y) ___ y __ element ]
 
     ___ _increase(groups):
-        index _ in.(groups.group(2)) + 1
+        index _ __.(groups.group(2)) + 1
         r_ '{}{}'.f..(groups.group(1), index)
 
     pattern _ '(link_)(\\d+)'
@@ -328,7 +328,7 @@ ___ get_next_link_name():
 
 
 ___ zoom(node):
-    ?.zoom(1.0, (in.(node.xpos()), in.(node.ypos())))
+    ?.zoom(1.0, (__.(node.xpos()), __.(node.ypos())))
 
 
 ___ get_repr_class_nodes():
@@ -341,7 +341,7 @@ ___ get_repr_class_nodes():
 
 ___ atoi(text):
     __ text.isdigit():
-        r_ in.(text)
+        r_ __.(text)
     r_ text
 
 
@@ -404,7 +404,7 @@ ___ remove_from_root_favorites(uid):
 
 
 ___ rgb_to_hex(r, g, b):
-    r_ in.('%02x%02x%02x%02x' % (r,
+    r_ __.('%02x%02x%02x%02x' % (r,
      g,
      b,
      1), 16)

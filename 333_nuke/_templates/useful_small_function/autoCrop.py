@@ -1,8 +1,8 @@
 ______ ?
 ______ nukescripts
 
-globalFirstFrame _ st.(in.(?.r.. .knob('first_frame').value()))
-globalLastFrame _ st.(in.(?.r.. .knob('last_frame').value()))
+globalFirstFrame _ st.(__.(?.r.. .knob('first_frame').value()))
+globalLastFrame _ st.(__.(?.r.. .knob('last_frame').value()))
 
 
 ___ selectionCheck():
@@ -22,7 +22,7 @@ ___ allDependentNodesAndInputs(node, deepNumber):
         x _ 0
         w__ x <_ deepNumber:
             __ d.input(x) __ node:
-                dependentInputs.append([d, x])
+                dependentInputs.ap..([d, x])
             x _ x + 1
     r_ dependentInputs
 
