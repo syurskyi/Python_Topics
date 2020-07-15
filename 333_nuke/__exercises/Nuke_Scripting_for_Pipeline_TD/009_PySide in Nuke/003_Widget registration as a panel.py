@@ -17,6 +17,3 @@ class simplePanel(QWidget):
 panels.registeWidgetAsPanel('simplePanel', 'Simple')
 
 ########################################################################################################################
-
-______ modulefinder
-w _ m__.sP..
