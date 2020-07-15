@@ -1,12 +1,12 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ ?.?C.. ______ _
+____ ?.?G.. ______ _
 
-import math
-try:
-    import nuke
-except:pass
+______ math
+___
+    ______ ?
+______pass
 
-sliderStyle = '''QSlider::groove:vertical {
+sliderStyle _ '''QSlider::groove:vertical {
     border: 1px solid #ffaa00;
     background: #ffaa00;
     width: 6px;
@@ -62,7 +62,7 @@ QSlider::handle:vertical:disabled {
     border: 1px solid #aaa;
     border-radius: 2px;
 }'''
-widgetStyle = '''
+widgetStyle _ '''
         QLineEdit
         {
             background-color: rgb(50,50,50);
@@ -109,354 +109,354 @@ widgetStyle = '''
         }
 
         '''
-class colorWheelClass(QWidget):
-    colorChangedSignal = Signal(list)
-    def __init__(self):
-        super(colorWheelClass, self).__init__()
-        self.hw = 200
-        self.padding = 2
-        self.blackBorder = 10
-        self.radius = (self.hw / 2) - self.padding
-        self.center = self.hw / 2
-        self.setFixedSize(QSize(self.hw, self.hw))
-        self.img = None
-        self.pick = [0, 0]
-        self.pickerSize = 8
-        self.value = 0
+c_ colorWheelClass(?W..):
+    colorChangedSignal _ Signal(list)
+    ___  -
+        s_(colorWheelClass, self). - ()
+        hw _ 200
+        padding _ 2
+        blackBorder _ 10
+        radius _ (hw / 2) - padding
+        center _ hw / 2
+        setFixedSize(QSize(hw, hw))
+        img _ N..
+        pick _ [0, 0]
+        pickerSize _ 8
+        v..  _ 0
 
-    def paintEvent(self, event):
-        if not self.img:
-            self.img = self.getCircle()
-        painter = QPainter()
+    ___ paintEvent(self, event):
+        __ no. img:
+            img _ getCircle()
+        painter _ QPainter()
         painter.begin(self)
         #wheel
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setRenderHint(QPainter.HighQualityAntialiasing)
-        painter.drawImage(0, 0, self.img)
+        painter.drawImage(0, 0, img)
         #value
-        painter.setPen(Qt.NoPen)
-        elipse = QPainterPath()
-        elipse.addEllipse(QRect(self.blackBorder, self.blackBorder, self.hw-self.blackBorder*2,self.hw-self.blackBorder*2))
-        painter.setBrush(QColor(0,0,0,self.value*255))
+        painter.setPen(__.NoPen)
+        elipse _ QPainterPath()
+        elipse.addEllipse(QRect(blackBorder, blackBorder, hw-blackBorder*2,hw-blackBorder*2))
+        painter.setBrush(QColor(0,0,0,v.. *255))
         painter.drawPath(elipse)
 
 
         #picker
-        x = self.center + self.pick[0]
-        y = self.center + self.pick[1]
+        x _ center + pick[0]
+        y _ center + pick[1]
         #line
-        painter.setBrush(Qt.NoBrush)
-        lineColor = 55 if self.value < 0.5 else 200
+        painter.setBrush(__.NoBrush)
+        lineColor _ 55 __ v..  < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1))
-        painter.drawLine(self.center, self.center,x, y)
+        painter.drawLine(center, center,x, y)
 
-        painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1, Qt.DashLine))
-        size = math.sqrt((self.pick[0] * self.pick[0]) + (self.pick[1] * self.pick[1]))
-        painter.drawEllipse(self.center-size,
-                            self.center-size,
+        painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 1, __.DashLine))
+        size _ math.sqrt((pick[0] * pick[0]) + (pick[1] * pick[1]))
+        painter.drawEllipse(center-size,
+                            center-size,
                             size*2,
                             size*2)
         #decorate
         painter.setPen(QPen(QColor(255,255,255), 3))
-        c1 = self.padding
-        c2 = self.hw - self.padding*2
+        c1 _ padding
+        c2 _ hw - padding*2
         painter.drawEllipse(c1,c1,c2,c2)
 
         #picker circle
         painter.setPen(QPen(QColor(55,55,55), 2))
         painter.setBrush(QBrush(QColor(255,255,255)))
         #painter.setBrush(Qt.NoBrush)
-        painter.drawEllipse(x-self.pickerSize*0.5,
-                            y-self.pickerSize*0.5,
-                            self.pickerSize,
-                            self.pickerSize)
+        painter.drawEllipse(x-pickerSize*0.5,
+                            y-pickerSize*0.5,
+                            pickerSize,
+                            pickerSize)
         painter.end()
 
-    def mousePressEvent(self, event):
-        self.setPickerPos(event.pos())
-        QWidget.mousePressEvent(self, event)
+    ___ mousePressEvent(self, event):
+        setPickerPos(event.pos())
+        ?W...mousePressEvent(self, event)
 
-    def mouseMoveEvent(self, event):
-        self.setPickerPos(event.pos())
-        QWidget.mouseMoveEvent(self, event)
+    ___ mouseMoveEvent(self, event):
+        setPickerPos(event.pos())
+        ?W...mouseMoveEvent(self, event)
 
-    def setPickerPos(self, pos):
-        x = pos.x()-self.center
-        y = pos.y() - self.center
-        distance = math.sqrt((x * x) + (y * y))
-        if distance < self.radius:
-            self.pick = [x, y]
-            self.update()
-        else:
-            over = self.radius / distance
-            self.pick = [x*over, y*over]
-            self.update()
-        self.updateColor()
+    ___ setPickerPos(self, pos):
+        x _ pos.x()-center
+        y _ pos.y() - center
+        distance _ math.sqrt((x * x) + (y * y))
+        __ distance < radius:
+            pick _ [x, y]
+            update()
+        ____
+            over _ radius / distance
+            pick _ [x*over, y*over]
+            update()
+        updateColor()
 
-    def updateColor(self):
-        x = self.pick[0]
-        y = self.pick[1]
-        distance = math.sqrt((x * x) + (y * y))
-        angle = math.degrees(math.atan2(y,x))
-        if angle < 0:
-            angle += 360
-        s = min(1, distance / self.radius)
-        self.colorChangedSignal.emit([angle/360,s])
+    ___ updateColor
+        x _ pick[0]
+        y _ pick[1]
+        distance _ math.sqrt((x * x) + (y * y))
+        angle _ math.degrees(math.atan2(y,x))
+        __ angle < 0:
+            angle +_ 360
+        s _ min(1, distance / radius)
+        colorChangedSignal.emit([angle/360,s])
 
-    def setValue(self, v):
-        self.value = (1000-v) * 0.001
-        self.update()
-        self.updateColor()
+    ___ sV..(self, v):
+        v..  _ (1000-v) * 0.001
+        update()
+        updateColor()
 
-    def getCircle(self):
-        img = QImage(self.hw, self.hw, QImage.Format_ARGB32)
+    ___ getCircle
+        img _ QImage(hw, hw, QImage.Format_ARGB32)
 
-        color = QColor()
-        for y in range(-self.center, self.center):
-            for x in range(-self.center, self.center):
-                distance = math.sqrt((x * x) + (y * y))
-                if distance > self.radius:
+        color _ QColor()
+        ___ y __ ra..(-center, center):
+            ___ x __ ra..(-center, center):
+                distance _ math.sqrt((x * x) + (y * y))
+                __ distance > radius:
                     color.setRgb(0.0, 0.0, 0.0)
                     color.setAlpha(0.0)
-                else:
-                    s = distance / self.radius
-                    angle = (math.atan2(y, x) * 180 / math.pi)
-                    if y < 0:
-                        angle += 360
-                    h = angle / 360.0
-                    v = 1
+                ____
+                    s _ distance / radius
+                    angle _ (math.atan2(y, x) * 180 / math.pi)
+                    __ y < 0:
+                        angle +_ 360
+                    h _ angle / 360.0
+                    v _ 1
                     color.setHsvF(h, s, v, 1.0)
-                img.setPixel(x+self.center, y+self.center, color.rgba())
-        return img
+                img.setPixel(x+center, y+center, color.rgba())
+        r_ img
 
 
-class colorRampClass(QWidget):
-    colorChangedSignal = Signal(list)
-    def __init__(self):
-        super(colorRampClass, self).__init__()
-        self.hw = 200
-        self.setFixedSize(QSize(self.hw, self.hw))
-        self.padding = 2
-        self.value = 0.0
-        self.pick = [0, 0]
-        self.img = None
-        self.pickerSize = 8
+c_ colorRampClass(?W..):
+    colorChangedSignal _ Signal(list)
+    ___  -
+        s_(colorRampClass, self). - ()
+        hw _ 200
+        setFixedSize(QSize(hw, hw))
+        padding _ 2
+        v..  _ 0.0
+        pick _ [0, 0]
+        img _ N..
+        pickerSize _ 8
 
-    def paintEvent(self, event):
-        if not self.img:
-            self.img = self.getRamp()
-        painter = QPainter()
+    ___ paintEvent(self, event):
+        __ no. img:
+            img _ getRamp()
+        painter _ QPainter()
         painter.begin(self)
         #wheel
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setRenderHint(QPainter.HighQualityAntialiasing)
-        painter.drawImage(0, 0, self.img)
+        painter.drawImage(0, 0, img)
         #value
-        painter.setPen(Qt.NoPen)
-        painter.fillRect(0,0, self.hw, self.hw, QColor(0,0,0,self.value*255))
+        painter.setPen(__.NoPen)
+        painter.fillRect(0,0, hw, hw, QColor(0,0,0,v.. *255))
         #lines
-        x = self.pick[0]
-        y = self.pick[1]
-        lineColor = 55 if self.value < 0.5 else 200
+        x _ pick[0]
+        y _ pick[1]
+        lineColor _ 55 __ v..  < 0.5 ____ 200
         painter.setPen(QPen(QColor(lineColor,lineColor,lineColor), 0.5))
-        painter.drawLine(x,0,x,self.hw)
-        painter.drawLine(0,y,self.hw,y)
+        painter.drawLine(x,0,x,hw)
+        painter.drawLine(0,y,hw,y)
         #picker
 
         painter.setPen(QPen(QColor(55,55,55), 2))
         painter.setBrush(QBrush(QColor(255,255,255)))
-        painter.drawEllipse(x-self.pickerSize*0.5,
-                            y-self.pickerSize*0.5,
-                            self.pickerSize,
-                            self.pickerSize)
+        painter.drawEllipse(x-pickerSize*0.5,
+                            y-pickerSize*0.5,
+                            pickerSize,
+                            pickerSize)
         painter.end()
 
-    def updateColor(self):
-        h = self.pick[0]/float(self.hw)
-        s = self.pick[1]/float(self.hw)
-        self.colorChangedSignal.emit([h,s])
+    ___ updateColor
+        h _ pick[0]/float(hw)
+        s _ pick[1]/float(hw)
+        colorChangedSignal.emit([h,s])
 
-    def setValue(self, v):
-        self.value = (1000-v) * 0.001
-        self.update()
-        self.updateColor()
+    ___ sV..(self, v):
+        v..  _ (1000-v) * 0.001
+        update()
+        updateColor()
 
-    def mousePressEvent(self, event):
-        self.setPickerPos(event.pos())
-        QWidget.mousePressEvent(self, event)
+    ___ mousePressEvent(self, event):
+        setPickerPos(event.pos())
+        ?W...mousePressEvent(self, event)
 
-    def mouseMoveEvent(self, event):
-        self.setPickerPos(event.pos())
-        QWidget.mouseMoveEvent(self, event)
+    ___ mouseMoveEvent(self, event):
+        setPickerPos(event.pos())
+        ?W...mouseMoveEvent(self, event)
 
-    def setPickerPos(self, pos):
-        x = pos.x()
-        y = pos.y()
-        if x < 0:
-            x = 0
-        if x > self.hw:
-            x = self.hw
-        if y < 0:
-            y = 0
-        if y > self.hw:
-            y = self.hw
-        self.pick = [x, y]
-        self.update()
-        self.updateColor()
+    ___ setPickerPos(self, pos):
+        x _ pos.x()
+        y _ pos.y()
+        __ x < 0:
+            x _ 0
+        __ x > hw:
+            x _ hw
+        __ y < 0:
+            y _ 0
+        __ y > hw:
+            y _ hw
+        pick _ [x, y]
+        update()
+        updateColor()
 
-    def getRamp(self):
-        img = QImage(self.hw, self.hw, QImage.Format_RGB32)
-        color = QColor()
-        for y in range(self.hw):
-            for x in range(self.hw):
-                h = x / float(self.hw)
-                s = y/ float(self.hw)
+    ___ getRamp
+        img _ QImage(hw, hw, QImage.Format_RGB32)
+        color _ QColor()
+        ___ y __ ra..(hw):
+            ___ x __ ra..(hw):
+                h _ x / float(hw)
+                s _ y/ float(hw)
                 color.setHsvF(h, s, 1)
                 img.setPixel(x, y, color.rgb())
-        return img
+        r_ img
 
 
-class colorPickerClass(QWidget):
-    def __init__(self, nukeNode=None, knob=None, label='Empty'):
-        super(colorPickerClass, self).__init__()
+c_ colorPickerClass(?W..):
+    ___  - (self, nukeNode_N.., knob_N.., label_'Empty'):
+        s_(colorPickerClass, self). - ()
         #window
-        self.resize(QSize(250, 340))
-        self.setStyleSheet(widgetStyle)
+        resize(QSize(250, 340))
+        setStyleSheet(widgetStyle)
         #variables
-        self.nukeNode = nukeNode
-        self.knob = knob
-        self.picker = None
+        nukeNode _ nukeNode
+        knob _ knob
+        picker _ N..
         #ui
-        mainLy = QVBoxLayout()
-        self.setLayout(mainLy)
+        mainLy _ ?VB..
+        sL..(mainLy)
         #picker switcher
-        lab = QLabel(label)
-        mainLy.addWidget(lab)
-        switch_ly = QHBoxLayout()
-        self.rb1 = QRadioButton()
-        self.rb1.setText('Circle')
-        self.rb1.setChecked(1)
-        self.rb1.clicked.connect(self.addPicker)
-        switch_ly.addWidget(self.rb1)
-        self.rb2 = QRadioButton()
-        self.rb2.clicked.connect(self.addPicker)
-        self.rb2.setText('Square')
-        switch_ly.addWidget(self.rb2)
+        lab _ ?L..(label)
+        mainLy.aW..(lab)
+        switch_ly _ QHBoxLayout()
+        rb1 _ QRadioButton()
+        rb1.setText('Circle')
+        rb1.setChecked(1)
+        rb1.c__.c..(addPicker)
+        switch_ly.aW..(rb1)
+        rb2 _ QRadioButton()
+        rb2.c__.c..(addPicker)
+        rb2.setText('Square')
+        switch_ly.aW..(rb2)
         mainLy.addLayout(switch_ly)
 
         #color swatch
-        self.color = QLabel()
-        mainLy.addWidget(self.color)
-        ly = QHBoxLayout()
-        self.picker_ly = QVBoxLayout()
-        self.picker_ly.setContentsMargins(0,0,0,0)
-        ly.addLayout(self.picker_ly)
+        color _ ?L..()
+        mainLy.aW..(color)
+        ly _ QHBoxLayout()
+        picker_ly _ ?VB..
+        picker_ly.setContentsMargins(0,0,0,0)
+        ly.addLayout(picker_ly)
         #value
-        self.value = QSlider(Qt.Vertical)
-        self.value.setStyleSheet(sliderStyle)
-        self.value.setMaximumHeight(200)
-        ly.addWidget(self.value)
-        self.value.setRange(0,1000)
-        self.value.setValue(1000)
+        v..  _ QSlider(__.Vertical)
+        v.. .setStyleSheet(sliderStyle)
+        v.. .setMaximumHeight(200)
+        ly.aW..(v.. )
+        v.. .setRange(0,1000)
+        v.. .sV..(1000)
         mainLy.addLayout(ly)
         #color values
-        self.grid_ly = QGridLayout()
-        self.hex_lb = QLabel()
-        self.hex_lb.setLayoutDirection(Qt.RightToLeft)
-        self.hex_lb.setText("HEX")
-        self.grid_ly.addWidget(self.hex_lb, 0, 0, 1, 1)
-        self.hex_le = QLineEdit()
-        self.grid_ly.addWidget(self.hex_le, 0, 1, 1, 1)
+        grid_ly _ QGridLayout()
+        hex_lb _ ?L..()
+        hex_lb.setLayoutDirection(__.RightToLeft)
+        hex_lb.setText("HEX")
+        grid_ly.aW..(hex_lb, 0, 0, 1, 1)
+        hex_le _ QLineEdit()
+        grid_ly.aW..(hex_le, 0, 1, 1, 1)
 
-        self.rgb_lb = QLabel()
-        self.rgb_lb.setLayoutDirection(Qt.RightToLeft)
-        self.rgb_lb.setText("RGB")
-        self.grid_ly.addWidget(self.rgb_lb, 1, 0, 1, 1)
-        self.rgb_le = QLineEdit()
-        self.grid_ly.addWidget(self.rgb_le, 1, 1, 1, 1)
+        rgb_lb _ ?L..()
+        rgb_lb.setLayoutDirection(__.RightToLeft)
+        rgb_lb.setText("RGB")
+        grid_ly.aW..(rgb_lb, 1, 0, 1, 1)
+        rgb_le _ QLineEdit()
+        grid_ly.aW..(rgb_le, 1, 1, 1, 1)
 
-        self.hsv_lb = QLabel()
-        self.hsv_lb.setLayoutDirection(Qt.RightToLeft)
-        self.hsv_lb.setText("HSV")
-        self.grid_ly.addWidget(self.hsv_lb, 2, 0, 1, 1)
-        self.hsv_le = QLineEdit()
-        self.grid_ly.addWidget(self.hsv_le, 2, 1, 1, 1)
+        hsv_lb _ ?L..()
+        hsv_lb.setLayoutDirection(__.RightToLeft)
+        hsv_lb.setText("HSV")
+        grid_ly.aW..(hsv_lb, 2, 0, 1, 1)
+        hsv_le _ QLineEdit()
+        grid_ly.aW..(hsv_le, 2, 1, 1, 1)
 
-        mainLy.addLayout(self.grid_ly)
+        mainLy.addLayout(grid_ly)
         mainLy.addSpacerItem(QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Expanding))
 
         #START
 
-        self.addPicker()
-        self.picker.updateColor()
+        addPicker()
+        picker.updateColor()
 
-    def addPicker(self):
-        if self.picker:
-            self.picker.setParent(None)
-        if self.rb1.isChecked():
-            self.picker = colorWheelClass()
-        else:
-            self.picker = colorRampClass()
+    ___ addPicker
+        __ picker:
+            picker.setParent(N..)
+        __ rb1.isChecked():
+            picker _ colorWheelClass()
+        ____
+            picker _ colorRampClass()
 
-        self.picker.colorChangedSignal.connect(self.receiveColor)
-        self.picker_ly.addWidget(self.picker)
-        self.value.valueChanged.connect(self.picker.setValue)
-        self.picker.setValue(self.value.value())
-        self.picker.updateColor()
+        picker.colorChangedSignal.c..(receiveColor)
+        picker_ly.aW..(picker)
+        v.. .valueChanged.c..(picker.sV..)
+        picker.sV..(v.. .v.. ())
+        picker.updateColor()
 
-    def setPickerIcon(self):
-        pix = QPixmap(32,32)
-        pix.fill(QColor(Qt.red))
-        self.setWindowIcon(QIcon(pix))
+    ___ setPickerIcon
+        pix _ QPixmap(32,32)
+        pix.fill(QColor(__.red))
+        setWindowIcon(QIcon(pix))
 
-    def receiveColor(self, hs):
-        v = self.value.value()*0.001
-        c = QColor()
+    ___ receiveColor(self, hs):
+        v _ v.. .v..*0.001
+        c _ QColor()
         c.setHsvF(hs[0], hs[1], v)
-        self.updateColor(c)
+        updateColor(c)
 
-    def updateColor(self, color):
-        self.color.setStyleSheet('''
+    ___ updateColor(self, color):
+        color.setStyleSheet('''
         QWidget{
-            background-color:%s;
+            background-color:@;
             border-style: solid;
             border: 1px solid #fff;
             border-radius: 2;
-        }''' % color.name())
+        }''' % color.n..
         #hex
-        self.hex_le.setText(color.name())
+        hex_le.setText(color.n..
         #rgb
-        self.rgb_le.setText('%d,%d,%d' % (color.red(), color.green(), color.blue()))
+        rgb_le.setText('%d,%d,%d' % (color.red(), color.green(), color.blue()))
         #hsv
-        self.hsv_le.setText('{0},{1},{2}'.format(*color.getHsv()))
-        if self.nukeNode:
-            knob = self.nukeNode.knob(self.knob)
-            if knob:
-                knob.setValue([color.red()/255.0, color.green()/255.0, color.blue()/255.0, 1])
-            else:
-                nuke.tprint('%s, %s ' % (self.knob, knob))
+        hsv_le.setText('{0},{1},{2}'.f..(*color.getHsv()))
+        __ nukeNode:
+            knob _ nukeNode.knob(knob)
+            __ knob:
+                knob.sV..([color.red()/255.0, color.green()/255.0, color.blue()/255.0, 1])
+            ____
+                ?.tprint('@, @ ' % (knob, knob))
 
 
 
-def addTab(node):
-    tab = node.findChild(QTabWidget)
-    w = QWidget()
-    ly = QHBoxLayout()
-    w.setLayout(ly)
-    cp1 = colorPickerClass(nuke.toNode(node.objectName()),'shadows.gain', 'Shadows')
-    cp2 = colorPickerClass(nuke.toNode(node.objectName()),'midtones.gain', 'Mid tone')
-    cp3 = colorPickerClass(nuke.toNode(node.objectName()),'highlights.gain', 'Highlights')
-    ly.addWidget(cp1)
-    ly.addWidget(cp2)
-    ly.addWidget(cp3)
+___ addTab(node):
+    tab _ node.fC..(?TW..)
+    w _ ?W..()
+    ly _ QHBoxLayout()
+    w.sL..(ly)
+    cp1 _ colorPickerClass(?.tN..(node.objectName()),'shadows.gain', 'Shadows')
+    cp2 _ colorPickerClass(?.tN..(node.objectName()),'midtones.gain', 'Mid tone')
+    cp3 _ colorPickerClass(?.tN..(node.objectName()),'highlights.gain', 'Highlights')
+    ly.aW..(cp1)
+    ly.aW..(cp2)
+    ly.aW..(cp3)
 
     tab.insertTab(0, w, 'Color Wheels')
     tab.setCurrentIndex(0)
     node.resize(777, 670)
 
 
-if __name__ == '__main__':
-    app = QApplication([])
-    s = colorPickerClass()
-    s.show()
+__ __name__ __ '__main__':
+    app _ ?A..(# list)
+    s _ colorPickerClass()
+    s.s__
     app.exec_()

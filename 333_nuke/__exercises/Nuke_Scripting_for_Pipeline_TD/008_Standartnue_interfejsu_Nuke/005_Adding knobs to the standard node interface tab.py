@@ -1,12 +1,12 @@
-# add inside exists tab
-
-gpr_start = nuke.Tab_Knob('pr', 'Prefs', nuke.TABBEGINGROUP)
-k = nuke.String_Knob('prefs', 'Preferences')
-gpr_end = nuke.Tab_Knob('', '', nuke.TABENDGROUP)
-
-node.addKnob(gpr_start)
-node.addKnob(k)
-node.addKnob(gpr_end)
-
-gpr_start.setFlag(nuke.INVISIBLE)
-k.setFlag(nuke.INVISIBLE)
+# # add inside exists tab
+#
+# gpr_start _ ?.T_K.. 'pr', 'Prefs', ?.TAB..
+# k _ ?.S_K.. 'prefs', 'Preferences'
+# gpr_end _ ?.T_K.. '', '', ?.TAB..
+#
+# n__.aK.. _s..
+# n__.aK.. ?
+# n__.aK.. _e..
+#
+# gpr_start.sF.. ?.IN..
+# k.sF.. ?.IN..

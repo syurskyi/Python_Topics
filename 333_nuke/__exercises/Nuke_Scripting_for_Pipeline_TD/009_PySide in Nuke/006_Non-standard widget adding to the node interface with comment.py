@@ -1,56 +1,56 @@
-
-###############################################################################
-
-# vsjo shto mu vidim v interfejse nodu eto setka
-
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-def getMainWindow():
-    app = QApplication.instance()
-    for widget in app.topLevelWidgets():
-        if widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
-            return widget
-
-qnuke = getMainWindow()
-w = qnuke.findChild(QWidget, 'Transform1')
-w.setWindowTitle('Transform11')
-t = w.findChild(QTabWidget)
-t.count()
-nw = QWidget()
-ly = QVBoxLayout()
-nw.setLayout(ly)
-for i in range(5):
-    ly.addWidget(QPushButton())
-t.addTab(nw, 'My Tab')
-c = QCalendarWidget()
-t.insertTab(0, c, 'Calendar')
-t.setCurrentIndex(0)
-
-###############################################
-
-w = qnuke.findChild(QWidget, 'Transform1')
-t = w.findChild(QTabWidget)
-tw = t.widget(0)
-gl = tw.children()[0]
-gl.rowCount()
-s = QSlider()
-s.setOrientation(Qt.Horizontal)
-gl.addWidget(s, 12, 1)
-lb = QLabel('SYURSKYI')
-gl.addWidget(lb, 12, 0, Qt.AlignRight)
-
-###############################################
-
-w = qnuke.findChild(QWidget, 'Transform1')
-t = w.findChild(QTabWidget)
-tw = t.widget(0)
-gl = tw.children()[0]
-
-w2 = QWidget()
-w2.setLayout(gl)
-ly = QVBoxLayout()
-tw.setLayout(ly)
-btn = QPushButton('SYURSKYI')
-ly.addWidget(btn)
-ly.addWidget(w2)
+#
+# ###############################################################################
+#
+# # vsjo shto mu vidim v interfejse nodu eto setka
+#
+# ____ ?.?C.. ______ _
+# ____ ?.?G.. ______ _
+#
+# ___ getMainWindow
+#     app _ ?A...ins..
+#     ___ widget __ ?.tLW..
+#         __ ?.mO.. .cN.. __ 'F..||U.||DMW..'
+#             r_ ?
+#
+# qnuke _ ?
+# w _ ?.fC.. ?W.., 'Transform1'
+# ?.sQT.. 'Transform11'
+# t _ ?.fC.. ?TW..
+# t.co..
+# nw _ ?W..
+# ly _ ?VB..
+# ?.sL.. ?
+# ___ i __ ra.. 5
+#     ?.aW.. ?PB..
+# t.aT.. n. 'My Tab'
+# c _ ?CW..
+# t.iT.. 0 ? 'Calendar'
+# ?.sCI.. 0
+#
+# ###############################################
+#
+# w _ qn__.fC.. ?W.., 'Transform1'
+# t _ ?.fC.. ?TW..
+# tw _ ?.wid.. 0
+# gl _ ?.ch..  0
+# ?.rC..
+# s _ ?S..
+# ?.sO.. __.H..
+# g_.aW.. ? 12, 1
+# lb _ ?L.. 'SYURSKYI'
+# g_.aW.. ? 12, 0, __.AR..
+#
+# ###############################################
+#
+# w _ qn__.fC.. ?W.. 'Transform1'
+# t _ ?.fC.. ?TW..
+# tw _ ?.wi.. 0
+# gl _ ?.ch..  0
+#
+# w2 _ ?W..
+# ?.sL.. g.
+# ly _ ?VB..
+# t_.sL.. ?
+# btn _ ?PB.. 'SYURSKYI'
+# l_.aW.. ?
+# l_.aW.. w.

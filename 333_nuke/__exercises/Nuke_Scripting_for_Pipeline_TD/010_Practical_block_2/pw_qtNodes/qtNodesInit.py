@@ -1,37 +1,37 @@
 '''
 1. add line to menu.py
 
-import qNukeWindow
+______ qNukeWindow
 
 2. copy qNukeWindow.py to NUKE_PATH
 3. Run nuke
 '''
 
-import nuke
+______ ?
 
-from PySide.QtCore import *
-from PySide.QtGui import *
-import qtNodes
+____ ?.?C.. ______ *
+____ ?.?G.. ______ *
+______ qtNodes
 
 
-def getMainWindow():
-    qApp = QApplication.instance()
-    for widget in qApp.topLevelWidgets():
-        if widget.metaObject().className() == 'Foundry::UI::DockMainWindow':
-            return widget
-qNuke = getMainWindow()
+___ getMainWindow():
+    qApp _ ?A...ins..)
+    ___ widget __ qApp.tLW..
+        __ widget.mO.. .cN.. __ 'Foundry::UI::DockMainWindow':
+            r_ widget
+qNuke _ getMainWindow()
 
-class eventFilterWindowClass(QObject):
-    def eventFilter(self, obj, ev):
-        if ev.type() == QEvent.ChildPolished:
-            self.processNode(ev.child())
-        return False
+c_ eventFilterWindowClass(QObject):
+    ___ eventFilter(self, obj, ev):
+        __ ev.type() __ ?E__.ChildPolished:
+            processNode(ev.child())
+        r_ F..
         
-    def processNode(self, n):
-        nukeNode = nuke.toNode( str(n.objectName()) )
-        if nukeNode:
-            nodeClass = nukeNode.Class()
-            if nodeClass in dir(qtNodes):
+    ___ processNode(self, n):
+        nukeNode _ ?.tN..( st.(n.objectName()) )
+        __ nukeNode:
+            nodeClass _ nukeNode.Class()
+            __ nodeClass __ dir(qtNodes):
                 getattr(qtNodes, nodeClass)(n)
 
 
@@ -44,6 +44,6 @@ class eventFilterWindowClass(QObject):
 
         # nuke.tprint('\nAdd callback\n')   
         
-evFilterWind = eventFilterWindowClass()
+evFilterWind _ eventFilterWindowClass()
 # nuke.addOnCreate(getMainWindow)
 qNuke.installEventFilter(evFilterWind)

@@ -1,66 +1,56 @@
-import nuke
-import os, random
-
-srcpath = 'C:/projects/src'
-
-def reorderPoints(array):
-    data = []
-    for i in range(0, len(array), 3):
-        v = nuke.math.Vector3(array[i], array[i+1], array[i+2])
-        data.append(v)
-    return data
-
-geo, cam, scn = nuke.selectedNodes()
-pynode = nuke.nodes.PythonGeo(inputs=[geo])
-geoList = pynode.knob('geo').getGeometry()
-points = []
-for elem in geoList:
-    points += elem.points()
-points = reorderPoints(points)
-nuke.delete(pynode)    
-
-grp = nuke.nodes.Group(name='Objects')
-grp.setXYpos(geo.xpos(), geo.ypos()+50)
-scaleKnob = nuke.Double_Knob('scale', 'Scale')
-grp.addKnob(scaleKnob)
-scaleKnob.setValue(0.5)
-
-grp.begin()
-inCam = nuke.nodes.Input(name='LookAt')
-out = nuke.nodes.Output()
-
-reads = []
-for img in os.listdir(srcpath):
-    path = os.path.join(srcpath, img).replace('\\','/')
-    r = nuke.nodes.Read(file=path, premultiplied=True)
-    reads.append(r)
-
-grpScene = nuke.nodes.Scene(hide_input=True)
-for pt in points:
-    r = random.choice(reads)
-    card = nuke.nodes.Card(inputs=[r], rows = 1, columns=1,
-    image_aspect=False, hide_input=True)
-    tr = nuke.nodes.TransformGeo(inputs=[card, None, inCam],
-    xpos=card.xpos(), ypos=card.ypos()+40, hide_input=True)
-    tr['translate'].setValue(pt)
-    s = r.height()/float(r.width())
-    tr['scaling'].setValue(s, 1)
-    tr['uniform_scale'].setExpression('%s.scale' % grp.name())
-    grpScene.setInput(grpScene.inputs(), tr)
-    
-out.setInput(0, grpScene)
-    
-grp.end()
-grp.setInput(0, cam)
-scn.setInput(0, grp)
-    
-
-
-
-
-
-
-
-
-
-
+# ______ ?
+# ______ __, random
+#
+# srcpath _ 'C:/projects/src'
+#
+# ___ reorderPoints array
+#     data _ # list
+#     ___ i __ ra.. 0, le. ? 3
+#         v _ ?.ma__.V__3 ? ? ? ?+1 ? ?+2
+#         ?.ap.. ?
+#     r_ ?
+#
+# geo, cam, scn _ ?.sN..
+# pynode _ ?.no__.PG.. in.._ g..
+# geoList _ ?.kn.. 'geo' .gG..
+# points _ # list
+# ___ elem __ gL..
+#     p.. +_ ?.p..
+# points _ rP.. p..
+# ?.d.. py..
+#
+# grp _ ?.no__.Gr.. n.._'Objects'
+# ?.sXYp.. g__.xp.. g__.yp.. + 50
+# scaleKnob _ ?.D_K.. 'scale', 'Scale'
+# grp.aK.. ?
+# sK__.sV.. 0.5
+#
+# g__.b..
+# inCam _ ?.n__.In.. n.._'LookAt'
+# out _ ?.n__.Ou..
+#
+# reads _ # list
+# ___ img __ __.listdir sr..
+#     path _ __.pa__.j..  sr.. ? .r.. '\\','/'
+#     r _ ?.no__.Re.. f_p.. pr.._T..
+#     re__.ap.. ?
+#
+# grpScene _ ?.no__.Sc.. h_i.._T..
+# ___ pt __ points
+#     r _ ra__.ch.. r..
+#     card _ ?.n__.C.. in.._ ?| rows _ 1 columns_1
+#     i_a.._F.. h_i.._T..
+#     tr _ ?.n__.TG.. in.._|card N.. iC..
+#     xp_c__.xp.. yp_c__.yp..+40 h_i.._T..
+#     t. 'translate .sV.. p.
+#     s _ r.he../fl.. r.w..
+#     t.| scaling .sV.. s, 1
+#     t.| uniform_scale .sE.. '@.scale'  gr_.n..
+#     gS__.sI.. gS__.in.. t.
+#
+# out.sI... 0 gS..
+#
+# g_.e..
+# g_.sI.. 0, ca.
+# sc_.sI.. 0, gr.
+#

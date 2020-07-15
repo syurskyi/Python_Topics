@@ -1,45 +1,45 @@
-import nuke.rotopaint as rp
-
-n = nuke.selectedNode()
-k = n['curves']
-root = k.rootLayer
-
-for shape in root:
-    print shape.name
-
-k.toElement('Rectangle1')
-k.toElement('Layer1/Rectangle1')
-
-
-def findShapes(root):
-    for shape in root:
-        if isinstance(shape, rp.Layer):
-            findShapes(shape)
-        else:
-            print shape.name
-
-
-findShapes(root)
-
-########################################################################################################################
-
-import nuke.rotopaint as rp
-import math
-
-rpNode = nuke.selectedNode()
-cKnob= rpNode['curves']
-root = cKnob.rootLayer
-
-for shape in root:
-    print shape.name
-# cKnob.toElement('Bezier1')
-# shape = cKnob.toElement('Layer1/Stroke3')
-
-def findShapes(root):
-    for shape in root:
-        if isinstance(shape, rp.Layer):
-            findShapes(shape)
-        else:
-            print shape.name
-findShapes(root)
-shape.append(rp.AnimControlPoint(1000,2000))
+# ______ ?.r_p.. __ rp
+#
+# n _ ?.sN__
+# k _ ? *cu..
+# root _ ?.rL..
+#
+# ___ shape __ ?
+#     print ?.n..
+#
+# ?.tE.. *Rectangle1
+# ?.tE.. *Layer1/Rectangle1
+#
+#
+# ___ findShapes root
+#     ___ shape __ ?
+#         __ i.. ? ?.L..
+#             ? ?
+#         ____
+#             print shape.name
+#
+#
+# ? ?
+#
+# ########################################################################################################################
+#
+# ______ ?.r_p.. __ rp
+# ______ ma..
+#
+# rpNode _ ?.sN__
+# cKnob_ ? *cu..
+# root _ ?.rL..
+#
+# ___ shape __ ?
+#     print ?.n..
+# # cKnob.toElement('Bezier1')
+# # shape _ cKnob.toElement('Layer1/Stroke3')
+#
+# ___ findShapes root
+#     ___ shape __ ?
+#         __ i.. ? ?.L..
+#             ? ?
+#         ____
+#             print ?.n..
+# ? ?
+# sh__.ap.. ?.ACP.. 1000 2000

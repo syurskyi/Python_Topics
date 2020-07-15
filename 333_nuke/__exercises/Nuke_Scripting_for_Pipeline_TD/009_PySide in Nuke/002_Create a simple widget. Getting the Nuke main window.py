@@ -1,40 +1,41 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
-
-qnuke = QApplication.activeWindow()
-print qnuke
+qnuke = QApplication.activeWidget()
+print(qnuke)
 w = QWidget()
 w.show()
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 
 qnuke = QApplication.activeWindow()
-print qnuke
+print(qnuke)
 w = QWidget(qnuke, Qt.Tool)
 w.show()
 w.close()
 
 def active():
-    print QApplication.activeWindow()
+    print(QApplication.activeWindow())
 QTimer.singleShot(2000, active)
 
 ########################################################################################################################
-
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-app = QApplication.instance()
-for w in app.topLevelWidgets():
-    print w.windowTitle()
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 app = QApplication.instance()
 for w in app.topLevelWidgets():
-    print w.metaObject().className()
+    print(w.windowTitle())
+
+app = QApplication.instance()
+for w in app.topLevelWidgets():
+    print(w.metaObject().className())
 
 
 def getNukeWindow():
@@ -49,8 +50,9 @@ qnuke.setWindowTitle('Nuke')
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 
 w = QWidget(getNukeWindow(), Qt.Tool)
@@ -58,20 +60,17 @@ w.show()
 w.close()
 
 def active():
-    print QApplication.activeWindow()
-QTimer.singleShot(2000, active)
+    print(QApplication.activeWindow())
+QTimer.singleShot(2000, active())
 
 ########################################################################################################################
 
-from PySide.QtCore import *
-from PySide.QtGui import *
+
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 
 w = QWidget(getNukeWindow(), Qt.Tool)
 w.show()
 w.close()
-
-def active():
-    w = QWidget(getNukeWindow(), Qt.Tool)
-    w.show()
-QTimer.singleShot(2000, active)

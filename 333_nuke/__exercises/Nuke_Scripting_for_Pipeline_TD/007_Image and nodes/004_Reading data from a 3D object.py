@@ -1,35 +1,35 @@
-box = nuke.nodes.Cube()
-geoNode = nuke.nodes.PythonGeo(inputs=[box])
-g = geoNode['geo'].getGeometry()[0]
-print dir(g)
-print g.points()
-print lens(g.points())
-print lens(g.points())/3
-print g.normals()
-print len(g.normals())
-print g.primitives()
-print len(g.primitives())
-
-
-########################################################################################################################
-
-gbox = nuke.nodes.Cube()
-geoNode = nuke.nodes.PythonGeo(inputs=[box])
-g = geoNode['geo'].getGeometry()[0]
-# dir(g)
-# len(g.points())/3
-# len(g.normals())/3
-# len(g.primitives())
-points = g.points()
-points3 = []
-for i in range(0, len(points), 3):
-    v = (points[i], points[i+1], points[i+2])
-    points3.append(v)
-points3 = set(points3)
-
-sp = nuke.nodes.Sphere()
-m = nuke.nodes.MergeGeo()
-for pt in points3:
-    tr = nuke.nodes.TransformGeo(inputs=[sp])
-    tr['translate'].setValue(pt)
-    m.setInput(m.inputs()+1, tr)
+# box _ ?.no__.C..
+# geoNode _ ?.no__.PG.. in.._ ?
+# g _ ? *geo .gG.. 0
+# print di. ?
+# print ?.p..
+# print le.. ?.p..
+# print le.. ?.p.. /3
+# print ?.no..
+# print le.(?.no..
+# print ?.pr..
+# print le.(?.pr..
+#
+#
+# ########################################################################################################################
+#
+# gbox _ ?.no__.Cu..
+# geoNode _ ?.no__.PG.. in.._ b..
+# g _ ? *geo .gG.. 0
+# # dir(g)
+# # len(g.points())/3
+# # len(g.normals())/3
+# # len(g.primitives())
+# points _ ?.po..
+# points3 _ # list
+# ___ i __ ra.. 0 le. ? 3
+#     v _  ? ? ?|?+1 ?|?+2
+#     _3.ap.. ?
+# points3 _ se. _3
+#
+# sp _ ?.no__.Sp.
+# m _ ?.no__.MG..
+# ___ pt __ _3
+#     tr _ ?.no__.TG.. in.._|?
+#     ? *tr.. .sV.. ?
+#     ?.sI.. ?.in.. + 1 ?

@@ -1,41 +1,41 @@
-n = nuke.selectedNode()
-n.sample(1, 616, 462)
-
-n.sample('green', 299, 370, 10, 10)
-
-[n.sample(x,309, 98) for x in 1,2,3]+[1]
-
-color = [n.sample(x,309, 98) for x in 1,2,3]+[1]
-c =nuke.nuke.nodes.Constant()
-c['color'].setValue(color)
-
-n = nuke.selectedNode()
-colors = []
-for i in range(0,n.height(), 10):
-    for j in range(0,n.width(),10):
-        colors.append([n.sample(x,i, j) for x in [1,2,3]])
-
-color = [sum(x)/len(x) for x in zip(*colors)]
-c = nuke.nodes.Constant()
-c['color'].setValue(color+[1])
-
-########################################################################################################################
-
-# sample pixel
-n = nuke.selectedNode()
-c = nuke.nodes.Constant()
-c['color'].setValue([n.sample(x,325, 355) for x in 1,2,3]+[1])
-
-
-
-# Average color
-
-n = nuke.selectedNode()
-colors = []
-for i in range(0,n.height(), 10):
-    for j in range(0,n.width(),10):
-        colors.append([n.sample(x,i, j) for x in [1,2,3]])
-
-color = [sum(x)/len(x) for x in zip(*colors)]
-c = nuke.nodes.Constant()
-c['color'].setValue(color+[1])
+# n _ ?.sN__
+# n.s.. 1, 616, 462
+#
+# n.s.. 'green', 299, 370, 10, 10
+#
+# |n.s..|x,309, 98| ___ x __ 1,2,3| + |1
+#
+# color _ |n.s..(x,309, 98) ___ x __ 1,2,3]+[1]
+# c _?.?.no__.Co..
+# ? *color .sV.. ?
+#
+# n _ ?.sN__
+# colors _  # list
+# ___ i __ ra.. 0 ?.he.. 10
+#     ___ j __ ra.. 0 ?.wi.. 10
+#         ?.ap.. ?.s.. x ? ? ___ ? __ |1,2,3
+#
+# color _ su. x /le.(x) ___ ? __ z.. $?
+# c _ ?.no__.Co..
+# ? *? .sV.. ? + 1
+#
+# ########################################################################################################################
+#
+# # sample pixel
+# n _ ?.sN__
+# c _ ?.no__.Co..
+# ? *color .sV.. n.s.. |x 325, 355 ___ x __ 1,2,3 + 1
+#
+#
+#
+# # Average color
+#
+# n _ ?.sN__
+# colors _ # list
+# ___ i __ ra.. 0 ?.he.. 10
+#     ___ j __ ra.. 0 ?.wi.. 10
+#         ?.ap.. ?.s.. x ? ? ___ ? __ |1 2 3
+#
+# color _ su. x /le. x ___ ? __ z.. $?
+# c _ ?.no__.Co..
+# ? *color .sV.. ? + 1
