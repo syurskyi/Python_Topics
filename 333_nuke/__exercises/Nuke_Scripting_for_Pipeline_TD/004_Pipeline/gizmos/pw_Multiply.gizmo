@@ -1,0 +1,24 @@
+#! C:/CG/nuke/9.0v4/nuke-9.0.4.dll -nx
+version 9.0 v4
+Gizmo {
+ addUserKnob {20 User l "Edit Multiply"}
+ addUserKnob {41 gain l Multiply T ColorCorrect1.gain}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos 25
+  ypos -225
+ }
+ ColorCorrect {
+  gain 0.004
+  name ColorCorrect1
+  xpos 25
+  ypos -185
+ }
+ Output {
+  name Output1
+  xpos 25
+  ypos -85
+ }
+end_group

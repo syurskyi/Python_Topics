@@ -1,0 +1,23 @@
+#! C:/CG/nuke/9.0v4/nuke-9.0.4.dll -nx
+version 9.0 v4
+Gizmo {
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos -21
+  ypos -196
+ }
+ Transform {
+  scale {-1 1}
+  center {1024 778}
+  name Transform1
+  xpos -21
+  ypos -156
+ }
+ Output {
+  name Output1
+  xpos -21
+  ypos -56
+ }
+end_group

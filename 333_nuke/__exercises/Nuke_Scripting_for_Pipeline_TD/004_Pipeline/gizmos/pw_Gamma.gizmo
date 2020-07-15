@@ -1,0 +1,25 @@
+#! C:/CG/nuke/9.0v4/nuke-9.0.4.dll -nx
+version 9.0 v4
+Gizmo {
+ addUserKnob {20 User l "Edit Gamma"}
+ addUserKnob {41 gamma T Grade1.gamma}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos 79
+  ypos -257
+ }
+ Grade {
+  gamma 0.9
+  name Grade1
+  selected true
+  xpos 79
+  ypos -217
+ }
+ Output {
+  name Output1
+  xpos 79
+  ypos -117
+ }
+end_group

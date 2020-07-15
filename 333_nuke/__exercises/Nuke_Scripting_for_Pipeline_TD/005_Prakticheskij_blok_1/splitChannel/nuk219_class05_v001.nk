@@ -1,0 +1,978 @@
+#! /Applications/Nuke6.3v8/Nuke6.3v8.app/Contents/MacOS/Nuke6.3v8 -nx
+version 6.3 v8
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="0" y="22" w="1680" h="1024" screen="0">
+        <splitter orientation="1">
+            <split size="1062"/>
+            <splitter orientation="1">
+                <split size="40"/>
+                <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                    <page id="Toolbar.1"/>
+                </dock>
+                <split size="1018"/>
+                <splitter orientation="2">
+                    <split size="591"/>
+                    <dock id="" activePageId="Viewer.1">
+                        <page id="Viewer.1"/>
+                    </dock>
+                    <split size="407"/>
+                    <dock id="" activePageId="DAG.1">
+                        <page id="DAG.1"/>
+                        <page id="Curve Editor.1"/>
+                    </dock>
+                </splitter>
+            </splitter>
+            <split size="614"/>
+            <splitter orientation="2">
+                <split size="887"/>
+                <dock id="" activePageId="Properties.1">
+                    <page id="Properties.1"/>
+                </dock>
+                <split size="111"/>
+                <dock id="" activePageId="Progress.1">
+                    <page id="Progress.1"/>
+                </dock>
+            </splitter>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name /Users/tahl/Documents/work/fxphd/nuk219/class05/scripts/nuk219_class05_v001.nk
+ format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode4
+ tile_color 0x8e8e3800
+ label VRAY
+ note_font_size 42
+ xpos 1587
+ ypos -428
+ bdwidth 587
+ bdheight 852
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode1
+ tile_color 0x8e8e3800
+ label Arnold
+ note_font_size 42
+ xpos -774
+ ypos -275
+ bdwidth 611
+ bdheight 388
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode2
+ tile_color 0x7171c600
+ label "mental ray"
+ note_font_size 42
+ xpos -115
+ ypos -238
+ bdwidth 651
+ bdheight 555
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode3
+ tile_color 0x7171c600
+ label "prMan\n"
+ note_font_size 42
+ xpos 612
+ ypos -338
+ bdwidth 912
+ bdheight 651
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode6
+ tile_color 0x624126ff
+ label "SUBTRACTIVE REBUILD"
+ note_font_size 42
+ xpos 1159
+ ypos -1695
+ bdwidth 690
+ bdheight 563
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode5
+ tile_color 0x8e8e3800
+ label "ADDITIVE REBUILD"
+ note_font_size 42
+ xpos -33
+ ypos -1699
+ bdwidth 843
+ bdheight 787
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/arnold_alpha.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read1
+ xpos -690
+ ypos -178
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/arnold_indirectSpecular.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read5
+ xpos -580
+ ypos -178
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/arnold_directSpecular.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read3
+ xpos -470
+ ypos -178
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/arnold_zDepth.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read8
+ xpos -360
+ ypos -178
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/arnold_directDiffuse.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read2
+ xpos -590
+ ypos -17
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/arnold_indirectDiffuse.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read4
+ xpos -480
+ ypos -17
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/arnold_refractions.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read7
+ xpos -370
+ ypos -17
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RENDERMAN_MASTER/Class05_renderMan.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read18
+ xpos 1391
+ ypos 44
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/MENTALRAY_MASTER.jpg
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read17
+ xpos 333
+ ypos -215
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Mental_Ray_Output/mentalRay_specular.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read15
+ xpos 15
+ ypos 222
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Mental_Ray_Output/mentalRay_refraction.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read14
+ xpos -32
+ ypos 151
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Mental_Ray_Output/mentalRay_reflection.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read13
+ xpos -22
+ ypos 55
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Mental_Ray_Output/mentalRay_diffuse.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read10
+ xpos 16
+ ypos -34
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Mental_Ray_Output/mentalRay_incandescence.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read11
+ xpos 2
+ ypos -133
+}
+set N16e54c90 [stack 0]
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Mental_Ray_Output/mentalRay_indirrect.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read12
+ xpos 112
+ ypos -216
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus10
+ xpos 112
+ ypos -69
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus11
+ xpos 112
+ ypos 1
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus12
+ xpos 112
+ ypos 98
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus13
+ xpos 112
+ ypos 187
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus14
+ xpos 112
+ ypos 251
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Mental_Ray_Output/MENTAL_RAY_MASTER/mentalRayOutputMasterBeauty.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read16
+ xpos 303
+ ypos 28
+}
+Merge2 {
+ inputs 2
+ operation from
+ name Merge1
+ xpos 320
+ ypos 264
+}
+Clamp {
+ name Clamp1
+ xpos 339
+ ypos 351
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RENDERMAN_MASTER.jpg
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read26
+ xpos 1267
+ ypos 39
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/foundry/sample/maya/images/mainRL/foundry_multipassSAMPLE_v001.exr
+ format "1280 720 0 0 1280 720 1 HD_720 "
+ origset true
+ name Read39
+ xpos 1469
+ ypos -1587
+}
+Dot {
+ name Dot16
+ xpos 1503
+ ypos -1464
+}
+set N170084f0 [stack 0]
+Dot {
+ name Dot15
+ xpos 1366
+ ypos -1464
+}
+set N1700b150 [stack 0]
+add_layer {REFL_reflection_camera1 REFL_reflection_camera1.red REFL_reflection_camera1.green REFL_reflection_camera1.blue}
+Shuffle {
+ in REFL_reflection_camera1
+ in2 rgba
+ alpha alpha2
+ name Shuffle7
+ label "\[value in] to \[value out]"
+ xpos 1332
+ ypos -1419
+}
+Unpremult {
+ name Unpremult7
+ xpos 1332
+ ypos -1340
+}
+set N1701dc40 [stack 0]
+Grade {
+ multiply {0.3899999857 0.5199999809 1.940000057 1}
+ name Grade1
+ xpos 1332
+ ypos -1276
+}
+push $N1701dc40
+push $N170084f0
+Unpremult {
+ name Unpremult8
+ xpos 1468
+ ypos -1388
+}
+Merge2 {
+ inputs 2
+ operation from
+ name Merge10
+ label "SUB REFLECT"
+ xpos 1468
+ ypos -1345
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge11
+ label "ADD REFLECT"
+ xpos 1468
+ ypos -1281
+}
+Premult {
+ name Premult2
+ xpos 1468
+ ypos -1234
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/rebuild/bgRL/nuk219_class05_rebuild_BG.exr
+ format "1280 720 0 0 1280 720 1 HD_720 "
+ origset true
+ name Read38
+ xpos 1664
+ ypos -1550
+}
+Merge2 {
+ inputs 2
+ name Merge12
+ xpos 1664
+ ypos -1234
+}
+StickyNote {
+ inputs 0
+ name StickyNote2
+ label "RENDER EXAMPLES"
+ note_font_size 120
+ xpos -335
+ ypos -658
+}
+StickyNote {
+ inputs 0
+ name StickyNote1
+ label "MPASS TECHNIQUES"
+ note_font_size 120
+ xpos 257
+ ypos -1995
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/Arnold_Output/ARNOLD_MASTER.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read6
+ xpos -707
+ ypos -36
+}
+EXPTool {
+ mode Stops
+ red 3
+ green 3
+ blue 3
+ name EXPTool1
+ xpos -707
+ ypos 77
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/ARNOLD_MASTER.jpg
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read9
+ xpos -261
+ ypos -16
+}
+LayerContactSheet {
+ inputs 0
+ showLayerNames true
+ name LayerContactSheet1
+ xpos -159
+ ypos -1430
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/rebuild/mainRL/nuk219_class05_rebuild_MPASS.exr
+ format "1280 720 0 0 1280 720 1 HD_720 "
+ origset true
+ name Read40
+ xpos -38
+ ypos -1901
+}
+Dot {
+ name Dot12
+ xpos 15
+ ypos -1539
+}
+set N16ec3820 [stack 0]
+Dot {
+ name Dot13
+ xpos 15
+ ypos -1436
+}
+set N16ee25f0 [stack 0]
+add_layer {SPEC_specular_camera1 SPEC_specular_camera1.red SPEC_specular_camera1.green SPEC_specular_camera1.blue}
+Shuffle {
+ in SPEC_specular_camera1
+ in2 rgba
+ alpha alpha2
+ name Shuffle6
+ label "\[value in] to \[value out]"
+ xpos -19
+ ypos -1393
+}
+Unpremult {
+ name Unpremult6
+ xpos -19
+ ypos -1359
+}
+Dot {
+ name Dot14
+ xpos 15
+ ypos -1042
+}
+set N13647fa0 [stack 0]
+Dot {
+ name Dot10
+ xpos 15
+ ypos -989
+}
+push $N13647fa0
+push $N16ee25f0
+Dot {
+ name Dot1
+ xpos 156
+ ypos -1436
+}
+set N1364c900 [stack 0]
+add_layer {DIFF_diffuse_camera1 DIFF_diffuse_camera1.red DIFF_diffuse_camera1.green DIFF_diffuse_camera1.blue}
+Shuffle {
+ in DIFF_diffuse_camera1
+ in2 rgba
+ alpha alpha2
+ name Shuffle1
+ label "\[value in] to \[value out]"
+ xpos 122
+ ypos -1393
+}
+Unpremult {
+ name Unpremult2
+ xpos 122
+ ypos -1361
+}
+Dot {
+ name Dot5
+ xpos 156
+ ypos -1098
+}
+push $N1364c900
+Dot {
+ name Dot2
+ xpos 305
+ ypos -1436
+}
+set N136cfa30 [stack 0]
+add_layer {AMB_ambient_camera1 AMB_ambient_camera1.red AMB_ambient_camera1.green AMB_ambient_camera1.blue}
+Shuffle {
+ in AMB_ambient_camera1
+ in2 rgba
+ alpha alpha2
+ name Shuffle2
+ label "\[value in] to \[value out]"
+ xpos 271
+ ypos -1393
+}
+Unpremult {
+ name Unpremult1
+ xpos 271
+ ypos -1361
+}
+Dot {
+ name Dot9
+ xpos 305
+ ypos -1154
+}
+push $N136cfa30
+Dot {
+ name Dot3
+ xpos 438
+ ypos -1436
+}
+set N13653f30 [stack 0]
+Shuffle {
+ in REFL_reflection_camera1
+ in2 rgba
+ alpha alpha2
+ name Shuffle3
+ label "\[value in] to \[value out]"
+ xpos 404
+ ypos -1393
+}
+Unpremult {
+ name Unpremult3
+ xpos 404
+ ypos -1361
+}
+Dot {
+ name Dot4
+ xpos 438
+ ypos -1206
+}
+push $N13653f30
+Dot {
+ name Dot6
+ xpos 572
+ ypos -1436
+}
+set N136e3760 [stack 0]
+add_layer {SCAT_scatter_camera1 SCAT_scatter_camera1.red SCAT_scatter_camera1.green SCAT_scatter_camera1.blue}
+Shuffle {
+ in SCAT_scatter_camera1
+ in2 rgba
+ alpha alpha2
+ name Shuffle4
+ label "\[value in] to \[value out]"
+ xpos 538
+ ypos -1408
+}
+Unpremult {
+ name Unpremult4
+ xpos 538
+ ypos -1362
+}
+Dot {
+ name Dot8
+ xpos 572
+ ypos -1281
+}
+push $N136e3760
+Dot {
+ name Dot7
+ xpos 716
+ ypos -1436
+}
+add_layer {INDIRR_indirect_camera1 INDIRR_indirect_camera1.red INDIRR_indirect_camera1.green INDIRR_indirect_camera1.blue}
+Shuffle {
+ in INDIRR_indirect_camera1
+ in2 rgba
+ alpha alpha2
+ name Shuffle5
+ label "\[value in] to \[value out]"
+ xpos 682
+ ypos -1400
+}
+Unpremult {
+ name Unpremult5
+ xpos 682
+ ypos -1355
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge3
+ xpos 682
+ ypos -1284
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge4
+ xpos 682
+ ypos -1209
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge5
+ xpos 682
+ ypos -1157
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge6
+ xpos 682
+ ypos -1101
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge7
+ xpos 682
+ ypos -1045
+}
+Copy {
+ inputs 2
+ from0 rgba.alpha
+ to0 rgba.alpha
+ name Copy3
+ xpos 682
+ ypos -997
+}
+Premult {
+ name Premult1
+ xpos 682
+ ypos -940
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/rebuild/bgRL/nuk219_class05_rebuild_BG.exr
+ format "1280 720 0 0 1280 720 1 HD_720 "
+ origset true
+ name Read41
+ xpos 1004
+ ypos -1746
+}
+Dot {
+ name Dot11
+ xpos 1038
+ ypos -1566
+}
+set N16ecc740 [stack 0]
+Merge2 {
+ inputs 2
+ also_merge all
+ name Merge8
+ label "MERGE ALL"
+ xpos 1001
+ ypos -945
+}
+push $N16ec3820
+push $N16ecc740
+Merge2 {
+ inputs 2
+ also_merge all
+ name Merge9
+ label "MERGE ALL"
+ xpos 929
+ ypos -1547
+}
+push $N1700b150
+LayerContactSheet {
+ showLayerNames true
+ name LayerContactSheet2
+ xpos 1209
+ ypos -1467
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RENDERMAN_MASTER/Class05_renderMan.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read36
+ xpos 1199
+ ypos -234
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/V-RAY_MASTER.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read27
+ xpos 2050
+ ypos -214
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_zDepth.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read35
+ xpos 1854
+ ypos 224
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_alpha.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read28
+ xpos 1854
+ ypos 142
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_specular.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read34
+ xpos 1607
+ ypos 86
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_selfIllumination.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read33
+ xpos 1607
+ ypos -22
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_refraction.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read32
+ xpos 1604
+ ypos -118
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_reflection.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read31
+ xpos 1602
+ ypos -207
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_GI.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read29
+ xpos 1597
+ ypos -285
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/V-Ray_Output/vRay_lighting.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read30
+ xpos 1744
+ ypos -401
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus5
+ xpos 1744
+ ypos -254
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus6
+ xpos 1744
+ ypos -178
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus7
+ xpos 1744
+ ypos -89
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus8
+ xpos 1744
+ ypos 7
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus9
+ xpos 1744
+ ypos 115
+}
+Copy {
+ inputs 2
+ from0 rgba.red
+ to0 rgba.alpha
+ name Copy2
+ xpos 1744
+ ypos 166
+}
+Copy {
+ inputs 2
+ from0 rgba.red
+ to0 depth.Z
+ name Copy1
+ xpos 1744
+ ypos 248
+}
+ZBlur {
+ channels rgba
+ center 0.04
+ dof 0.26
+ size 14
+ max_size {{size}}
+ shape 1
+ name ZBlur1
+ xpos 1744
+ ypos 340
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RenderMan_Refraction.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read19
+ xpos 851
+ ypos 133
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RenderMan_Specular.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read20
+ xpos 847
+ ypos 39
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RenderMan_Incandescence.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read22
+ xpos 848
+ ypos -51
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RenderMan_SpecularIndirrect.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read21
+ xpos 851
+ ypos -143
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RenderMan_DiffuseIndirect.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read24
+ xpos 848
+ ypos -222
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RenderMan_Diffuse.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read25
+ xpos 1024
+ ypos -313
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus
+ xpos 1024
+ ypos -193
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus1
+ xpos 1024
+ ypos -114
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus2
+ xpos 1024
+ ypos -22
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus3
+ xpos 1024
+ ypos 68
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus4
+ xpos 1024
+ ypos 162
+}
+Read {
+ inputs 0
+ file /Users/tahl/Documents/work/fxphd/nuk219/class05/footage/RenderMan_Output/RenderMan_Environment.exr
+ format "800 450 0 0 800 450 1 "
+ origset true
+ name Read23
+ xpos 1227
+ ypos 196
+}
+Merge2 {
+ inputs 2
+ name Merge2
+ xpos 1024
+ ypos 225
+}
+push $N16e54c90
+Viewer {
+ inputs 2
+ input_process false
+ name Viewer1
+ xpos 1045
+ ypos -758
+}
