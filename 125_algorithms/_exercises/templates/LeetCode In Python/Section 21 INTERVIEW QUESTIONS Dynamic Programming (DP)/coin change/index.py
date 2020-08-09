@@ -3,7 +3,7 @@ c_ Solution:
         __ amount <_ 0:
             r_ 0
         
-        __ min(coins) > amount:
+        __ mi.(coins) > amount:
             r_ -1
 
         INT_MAX _ 1<<32
@@ -14,6 +14,6 @@ c_ Solution:
         ___ i __ ra..(1, amount + 1
             ___ coin __ coins:
                 __ coin <_ i:
-                    dp[i] _ min((dp[i-coin] + 1), dp[i])
+                    dp[i] _ mi.((dp[i-coin] + 1), dp[i])
                     
         r_ dp[amount] __ dp[amount] !_ INT_MAX else -1

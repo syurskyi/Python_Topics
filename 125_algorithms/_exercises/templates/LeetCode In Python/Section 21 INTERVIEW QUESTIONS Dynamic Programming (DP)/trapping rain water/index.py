@@ -20,6 +20,6 @@ c_ Solution:
             right[i] _ ma.(right[i+1], height[i])
 
         ___ i __ ra..(0, n
-            ans +_ min(left[i], right[i])-height[i]
+            ans +_ mi.(left[i], right[i])-height[i]
 
         r_ ans
