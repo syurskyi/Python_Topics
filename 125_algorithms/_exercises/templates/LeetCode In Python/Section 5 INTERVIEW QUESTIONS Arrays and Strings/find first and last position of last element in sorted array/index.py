@@ -1,40 +1,40 @@
-c_ Solution:
-    ___ getLeftPosition(, nums, target
-        left _ 0
-        right _ le.(nums)-1
-
-        w___(left <_ right
-            mid _ left+(right-left)//2
-            __(nums[mid] __ target
-                __(mid-1 >_ 0 and nums[mid-1] !_ target or mid __ 0
-                    r_ mid
-                right _ mid-1
-            ____(nums[mid] > target
-                right _ mid-1
-            ____
-                left _ mid+1
-
-        r_ -1
-
-    ___ getRightPosition(, nums, target
-        left _ 0
-        right _ le.(nums)-1
-
-        w___(left <_ right
-            mid _ left+(right-left)//2
-            __(nums[mid] __ target
-                __(mid+1 < le.(nums) and nums[mid+1] !_ target or mid __ le.(nums)-1
-                    r_ mid
-                left _ mid+1
-            ____(nums[mid] > target
-                right _ mid-1
-            ____
-                left _ mid+1
-
-        r_ -1
-
-    ___ searchRange(, nums: L.. in., target: int) -> L.. in.:
-        left _ .getLeftPosition(nums, target)
-        right _ .getRightPosition(nums, target)
-
-        r_ [left, right]
+# c_ Solution
+#     ___ getLeftPosition nums target
+#         left _ 0
+#         right _ le. ? -1
+#
+#         w___ ? <_ ?
+#             mid _ ?+(?-?)//2
+#             __(? ? __ t..
+#                 __ ?-1 >_ 0 an. ?|?-1 !_ t.. o. ? __ 0
+#                     r_ ?
+#                 ? _ ? - 1
+#             ____(?|? > t..
+#                 ? _ ?-1
+#             ____
+#                 ? _ ?+1
+#
+#         r_ -1
+#
+#     ___ getRightPosition nums target
+#         left _ 0
+#         right _ le.(?)-1
+#
+#         w___? <_ ?
+#             mid _ ?+(?-?)//2
+#             __(?|? __ t..
+#                 __ ?+1 < le.(?) an. ?|?+1 !_ t.. o. ? __ le.(?)-1
+#                     r_ ?
+#                 ? _ ?+1
+#             ____(?|? > t..
+#                 ? _ ?-1
+#             ____
+#                 ? _ ?+1
+#
+#         r_ -1
+#
+#     ___ searchRange  nums L.. in. target in.  L.. in.
+#         left _ .? ? t..
+#         right _ .? ? t..
+#
+#         r_ ? ?
