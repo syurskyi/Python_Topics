@@ -1,16 +1,16 @@
-c_ Solution:
-    ___ judgeCircle(, moves: st.) -> bool:
-        
-        x _ 0
-        y _ 0
-
-        ___ move __ moves:
-            __(move__'U'
-                y+_1
-            ____(move__'R'
-                x+_1
-            ____(move__'D'
-                y-_1
-            ____(move__'L'
-                x-_1
-        r_ x__0 a.. y__0
+# c_ Solution
+#     ___ judgeCircle moves st.  bool
+#
+#         x _ 0
+#         y _ 0
+#
+#         ___ move __ ?
+#             __ ? __ 'U'
+#                 ? +_ 1
+#             ____ ? __ 'R'
+#                 ? +_ 1
+#             ____ ? __ 'D'
+#                 ? -_ 1
+#             ____ ? __'L'
+#                 ? -_ 1
+#         r_ ? __ 0 a.. ? __ 0
