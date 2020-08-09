@@ -1,13 +1,13 @@
 c_ Node:
-    ___ __init__(, data
+    ___  - (, data
         .data _ data
-        .prev _ None
-        .next _ None
+        .prev _ N..
+        .next _ N..
 
 
 c_ LinkedList:
-    ___ __init__(
-        .head _ None
+    ___  - (
+        .head _ N..
 
     ___ createList(, arr
         start _ .head

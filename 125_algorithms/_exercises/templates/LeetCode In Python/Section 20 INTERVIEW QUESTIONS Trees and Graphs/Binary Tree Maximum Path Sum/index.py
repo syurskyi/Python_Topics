@@ -9,7 +9,7 @@
 c_ Solution:
     ans _ -float("inf")
     ___ solution(,node
-        __(node is None
+        __(node is N..
             r_ 0
         left _ .solution(node.left)
         right _ .solution(node.right)
@@ -19,6 +19,6 @@ c_ Solution:
         .ans _ ma.(.ans,mxTop)
         r_ mxSide
 
-    ___ maxPathSum(, root: TreeNode) -> in.:
+    ___ maxPathSum(, root: TreeNode)  in.:
         .solution(root)
         r_ .ans

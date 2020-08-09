@@ -5,8 +5,8 @@
 #         self.next = None
 
 c_ Solution:
-    ___ addTwoNumbers(, l1: ListNode, l2: ListNode) -> ListNode:
-        ans _ ListNode(None)
+    ___ addTwoNumbers(, l1: ListNode, l2: ListNode)  ListNode:
+        ans _ ListNode(N..)
         pointer _ ans
 
         carry _ 0

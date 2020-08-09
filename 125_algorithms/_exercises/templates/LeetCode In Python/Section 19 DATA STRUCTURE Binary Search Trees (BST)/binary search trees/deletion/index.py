@@ -1,44 +1,44 @@
 
 
 c_ Node:
-    ___ __init__(, value
-        .left _ None
-        .right _ None
+    ___  - (, value
+        .left _ N..
+        .right _ N..
         .data _ value
 
 
 ___ insert(root, node
-    __(root is None
+    __(root is N..
         root _ node
         r_
 
     __(root.data < node.data
-        __(root.right is None
+        __(root.right is N..
             root.right _ node
         ____
             insert(root.right, node)
     ____
-        __(root.left is None
+        __(root.left is N..
             root.left _ node
         ____
             insert(root.left, node)
 
 
 ___ preorder(node
-    __(node is no. None
+    __(node is no. N..
         print(node.data)
         preorder(node.left)
         preorder(node.right)
 
 
 ___ minValueNode(node
-    w___(node.left is no. None
+    w___(node.left is no. N..
         node _ node.left
     r_ node
 
 
 ___ deleteNode(node, key
-    __(node is None
+    __(node is N..
         r_ node
     # If the key to be deleted is smaller than the node's
     # key then it lies in  left subtree
@@ -52,13 +52,13 @@ ___ deleteNode(node, key
     # to be deleted
     ____
         # Node with only one child or no child
-        __ node.left is None:
+        __ node.left is N..
             temp _ node.right
-            node _ None
+            node _ N..
             r_ temp
-        ____ node.right is None:
+        ____ node.right is N..
             temp _ node.left
-            node _ None
+            node _ N..
             r_ temp
 
         # Node with two children: Get the inorder successor

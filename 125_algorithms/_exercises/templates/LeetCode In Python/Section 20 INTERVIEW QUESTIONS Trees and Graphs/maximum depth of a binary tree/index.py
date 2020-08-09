@@ -6,10 +6,10 @@
 #         self.right = None
 
 c_ Solution:
-    ___ maxDepth(, root: TreeNode) -> in.:
-        __(root is None
+    ___ maxDepth(, root: TreeNode)  in.:
+        __(root is N..
             r_ 0
-        __(root.left is None a..  root.right is None
+        __(root.left is N.. a..  root.right is N..
             r_ 1
         
         left _ .maxDepth(root.left)

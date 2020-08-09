@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ trap(, height: L.. in.) -> in.:
+    ___ trap(, height: L.. in.)  in.:
         n _ le.(height)
         __(n __ 0
             r_ 0

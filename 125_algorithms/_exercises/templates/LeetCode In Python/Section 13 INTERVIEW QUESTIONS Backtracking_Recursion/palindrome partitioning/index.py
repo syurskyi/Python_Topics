@@ -21,8 +21,8 @@ c_ Solution:
                 .dfs(s[i:])
                 .temp.pop()
 
-    ___ partition(, s: st.) -> L..[L..[st.]]:
-        .res _ []
-        .temp _ []
+    ___ partition(, s: st.)  L..[L..[st.]]:
+        .res _   # list
+        .temp _   # list
         .dfs(s)
         r_ .res

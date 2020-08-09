@@ -1,31 +1,31 @@
 
 
 c_ Node:
-    ___ __init__(, value
-        .left _ None
-        .right _ None
+    ___  - (, value
+        .left _ N..
+        .right _ N..
         .data _ value
 
 
 ___ insert(root, node
-    __(root is None
+    __(root is N..
         root _ node
         r_
 
     __(root.data < node.data
-        __(root.right is None
+        __(root.right is N..
             root.right _ node
         ____
             insert(root.right, node)
     ____
-        __(root.left is None
+        __(root.left is N..
             root.left _ node
         ____
             insert(root.left, node)
 
 
 ___ preorder(node
-    __(node is no. None
+    __(node is no. N..
         print(node.data)
         preorder(node.left)
         preorder(node.right)

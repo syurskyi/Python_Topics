@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution:
-    ___ removeNthFromEnd(, head: ListNode, n: in.) -> ListNode:
+    ___ removeNthFromEnd(, head: ListNode, n: in.)  ListNode:
         ans _ ListNode(0)
         ans.next _ head
 
@@ -15,7 +15,7 @@ c_ Solution:
         ___ i __ ra..(1,n+2
             first _ first.next
         
-        w___ (first is no. None
+        w___ (first is no. N..
             first _ first.next
             second _ second.next
 

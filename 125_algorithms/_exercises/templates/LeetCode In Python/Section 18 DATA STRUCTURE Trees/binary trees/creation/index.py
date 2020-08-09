@@ -1,8 +1,8 @@
 
 c_ Node:
-    ___ __init__(, value
-        .left _ None
-        .right _ None
+    ___  - (, value
+        .left _ N..
+        .right _ N..
         .data _ value
 
 

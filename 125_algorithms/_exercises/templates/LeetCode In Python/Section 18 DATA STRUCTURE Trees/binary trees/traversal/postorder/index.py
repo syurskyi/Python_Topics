@@ -1,14 +1,14 @@
 
 
 c_ Node:
-    ___ __init__(, value
-        .left _ None
-        .right _ None
+    ___  - (, value
+        .left _ N..
+        .right _ N..
         .data _ value
 
 
 ___ postorder(node
-    __(node is no. None
+    __(node is no. N..
         postorder(node.left)
         postorder(node.right)
         print(node.data)

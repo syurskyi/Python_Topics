@@ -7,17 +7,17 @@
 
 
 c_ Solution:
-    ___ zigzagLevelOrder(, root: TreeNode) -> L..[L..[in.]]:
+    ___ zigzagLevelOrder(, root: TreeNode)  L..[L..[in.]]:
         __ no. root:
-            r_ []
-        res _ []
+            r_   # list
+        res _   # list
         q _ co...deque()
 
         zigzag _ F..
         q.ap..(root)
 
         w___ q:
-            level _ []
+            level _   # list
             ___ _ __ ra..(le.(q)):
                 __ zigzag:
                     node _ q.pop()

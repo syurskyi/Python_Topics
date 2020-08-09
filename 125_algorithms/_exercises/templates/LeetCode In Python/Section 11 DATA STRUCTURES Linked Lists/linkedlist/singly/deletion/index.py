@@ -1,14 +1,14 @@
 c_ Node:
 
-    ___ __init__(, data
+    ___  - (, data
         .data _ data
-        .next _ None
+        .next _ N..
 
 
 c_ LinkedList:
 
-    ___ __init__(
-        .head _ None
+    ___  - (
+        .head _ N..
 
     ___ printList(
         temp _ .head
@@ -20,11 +20,11 @@ c_ LinkedList:
 
     ___ deleteNode(, key
         temp _ .head
-        __(temp is None
+        __(temp is N..
             r_
         __(temp.data __ key
             .head _ temp.next
-            temp _ None
+            temp _ N..
             r_
 
         w___(temp.next.data !_ key
@@ -32,7 +32,7 @@ c_ LinkedList:
 
         target_node _ temp.next
         temp.next _ target_node.next
-        target_node.next _ None
+        target_node.next _ N..
 
 
 # List Structure : 5 => 1 => 3 => 7

@@ -9,8 +9,8 @@ c_ Solution:
                 .solution(nums,ans,cur,i)
                 cur.pop()
         r_
-    ___ subsets(, nums: L.. in.) -> L..[L..[in.]]:
-        ans _ []
-        cur _ []
+    ___ subsets(, nums: L.. in.)  L..[L..[in.]]:
+        ans _   # list
+        cur _   # list
         .solution(nums,ans,cur,0)
         r_ ans

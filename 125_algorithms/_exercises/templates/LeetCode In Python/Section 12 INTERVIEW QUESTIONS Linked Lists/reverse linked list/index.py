@@ -6,9 +6,9 @@
 
 
 c_ Solution:
-    ___ reverseList(, head: ListNode) -> ListNode:
-        node _ None
-        w___(head is no. None
+    ___ reverseList(, head: ListNode)  ListNode:
+        node _ N..
+        w___(head is no. N..
             next _ head.next
             head.next _ node
             node _ head

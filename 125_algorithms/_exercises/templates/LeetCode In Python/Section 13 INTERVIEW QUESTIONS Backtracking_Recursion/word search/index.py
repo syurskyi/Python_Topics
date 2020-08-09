@@ -24,7 +24,7 @@ c_ Solution:
         board[x][y] _ temp
         r_ F..
 
-    ___ exist(, board: L..[L..[st.]], word: st.) -> bool:
+    ___ exist(, board: L..[L..[st.]], word: st.)  bool:
         __(le.(word) __ 0
             r_ T..
         n _ le.(board)

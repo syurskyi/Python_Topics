@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minWindow(, s: st., t: st.) -> st.:
+    ___ minWindow(, s: st., t: st.)  st.:
         len1 _ le.(s)
         len2 _ le.(t)
 
@@ -10,7 +10,7 @@ c_ Solution:
         hashStr _ {}
 
         ___ i __ ra..(0, len2
-            __(hashPat.get(t[i]) is None
+            __(hashPat.get(t[i]) is N..
                 hashPat[t[i]] _ 0
             hashPat[t[i]] +_ 1
 
@@ -21,10 +21,10 @@ c_ Solution:
 
         ___ right __ ra..(0, len1
 
-            __(hashStr.get(s[right]) is None
+            __(hashStr.get(s[right]) is N..
                 hashStr[s[right]] _ 0
             hashStr[s[right]] +_ 1
-            __(hashPat.get(s[right]) is None
+            __(hashPat.get(s[right]) is N..
                 hashPat[s[right]] _ 0
             __ (
 
@@ -35,9 +35,9 @@ c_ Solution:
             # count==len2 means a window is found that contains all character of pattern string
             __ (count __ len2
 
-                __(hashStr.get(s[left]) is None
+                __(hashStr.get(s[left]) is N..
                     hashStr[s[right]] _ 0
-                __(hashPat.get(s[left]) is None
+                __(hashPat.get(s[left]) is N..
                     hashPat[s[right]] _ 0
                 w___ (
                     hashStr.get(s[left]) > hashPat.get(s[left]) o..

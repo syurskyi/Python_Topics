@@ -31,9 +31,9 @@ c_ Solution:
             cur _ cur.next
         r_ ans.next
 
-    ___ mergeKLists(, lists: L..[ListNode]) -> ListNode:
+    ___ mergeKLists(, lists: L..[ListNode])  ListNode:
         __(le.(lists) __ 0
-            r_ None
+            r_ N..
 
         i _ 0
         last _ le.(lists)-1

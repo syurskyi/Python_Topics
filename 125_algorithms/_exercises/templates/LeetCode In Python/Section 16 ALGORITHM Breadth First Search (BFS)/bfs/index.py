@@ -4,7 +4,7 @@ ____ co.. ______ d_d_
 
 c_ Graph:
 
-    ___ __init__(
+    ___  - (
         .graph _ d_d_(list)
 
     ___ setEdge(, u, v
@@ -13,7 +13,7 @@ c_ Graph:
     ___ bfs(, s
         visited _ set()
 
-        queue _ []
+        queue _   # list
         queue.ap..(s)
 
         visited.add(s)

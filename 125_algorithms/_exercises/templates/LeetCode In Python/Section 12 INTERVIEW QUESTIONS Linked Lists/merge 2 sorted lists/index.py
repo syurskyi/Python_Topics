@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution:
-    ___ mergeTwoLists(, l1: ListNode, l2: ListNode) -> ListNode:
+    ___ mergeTwoLists(, l1: ListNode, l2: ListNode)  ListNode:
 		cur _ ListNode(0)
 		ans _ cur
 		

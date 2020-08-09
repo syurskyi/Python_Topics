@@ -2,7 +2,7 @@ ____ co.. ______ d_d_
 
 
 c_ Graph:
-    ___ __init__(, numberOfNodes
+    ___  - (, numberOfNodes
         .numberOfNodes _ numberOfNodes+1
         .graph _ [[0 ___ x __ ra..(numberOfNodes+1)]
                       ___ y __ ra..(numberOfNodes+1)]

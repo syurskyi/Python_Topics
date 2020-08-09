@@ -7,7 +7,7 @@ ____ co.. ______ d_d_
 c_ Graph:
 
     # Constructor
-    ___ __init__(
+    ___  - (
 
         .graph _ d_d_(list)
 

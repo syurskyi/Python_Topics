@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ hasCycle(, head: ListNode) -> bool:
+    ___ hasCycle(, head: ListNode)  bool:
         hare _ head
         turtle _ head
 

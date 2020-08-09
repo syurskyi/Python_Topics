@@ -14,7 +14,7 @@ c_ Codec:
         :type root: TreeNode
         :rtype: str
         """
-        __(root is None
+        __(root is N..
             r_ "X#"
 
         leftSerialized _ .serialize(root.left)
@@ -31,7 +31,7 @@ c_ Codec:
         ___ dfs(
             val _ next(data)
             __ val __ 'X':
-                r_ None
+                r_ N..
             node _ TreeNode(in.(val))
 
             node.left _ dfs()

@@ -5,17 +5,17 @@
 
 c_ Node:
 
-    ___ __init__(, data
+    ___  - (, data
         .data _ data
-        .prev _ None
-        .next _ None
+        .prev _ N..
+        .next _ N..
 
 
 # Linked List class
 c_ LinkedList:
 
-    ___ __init__(
-        .head _ None
+    ___  - (
+        .head _ N..
 
     ___ createList(, arr
         start _ .head
@@ -64,7 +64,7 @@ c_ LinkedList:
         count _ 0
 
         # Iterate the list and increment the count
-        w___ (temp is no. None
+        w___ (temp is no. N..
             temp _ temp.next
             count _ count + 1
 
@@ -85,10 +85,10 @@ c_ LinkedList:
         r_ .head
 
       __(count __ index
-        w___(temp.next is no. None a.. temp.next.next is no. None
+        w___(temp.next is no. N.. a.. temp.next.next is no. N..
           temp _ temp.next
          # 1 => 2 => 3 => 4
-        temp.next _ None
+        temp.next _ N..
         r_ .head
       
 

@@ -3,7 +3,7 @@ ____ co.. ______ d_d_
 
 c_ Graph:
 
-    ___ __init__(
+    ___  - (
         .graph _ d_d_(list)
 
     ___ insertEdge(, v1, v2
@@ -11,7 +11,7 @@ c_ Graph:
 
     ___ DFS(, startNode
         visited _ set()
-        st _ []
+        st _   # list
         st.ap..(startNode)
 
         w___(le.(st)):

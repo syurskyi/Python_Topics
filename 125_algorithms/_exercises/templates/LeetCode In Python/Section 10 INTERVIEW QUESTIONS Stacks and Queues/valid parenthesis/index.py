@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isEqual(, c1, c2) -> bool:
+    ___ isEqual(, c1, c2)  bool:
         __(c1 __ '(' a.. c2 __ ')'
             r_ T..
         __(c1 __ '[' a.. c2 __ ']'
@@ -8,8 +8,8 @@ c_ Solution:
             r_ T..
         r_ F..
 
-    ___ isValid(, s: st.) -> bool:
-        st _ []
+    ___ isValid(, s: st.)  bool:
+        st _   # list
         ___ character __ s:
             __(le.(st) !_ 0
                 li _ st[-1]

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ rob(, nums: L.. in.) -> in.:
+    ___ rob(, nums: L.. in.)  in.:
         n _ le.(nums)
         __(n__0
             r_ 0

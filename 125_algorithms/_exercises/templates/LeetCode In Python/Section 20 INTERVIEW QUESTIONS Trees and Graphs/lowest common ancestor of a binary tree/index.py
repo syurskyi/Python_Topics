@@ -6,19 +6,19 @@
 #         self.right = None
 
 c_ Solution:
-    ___ lowestCommonAncestor(, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        __(root is None
-            r_ None
+    ___ lowestCommonAncestor(, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode')  'TreeNode':
+        __(root is N..
+            r_ N..
         __(root.val__p.val o.. root.val__q.val
             r_ root
         
         left _ .lowestCommonAncestor(root.left,p,q)
         right _ .lowestCommonAncestor(root.right,p,q)
 
-        __(left is None a.. right is None
-            r_ None
-        __(left is no. None a.. right is no. None
+        __(left is N.. a.. right is N..
+            r_ N..
+        __(left is no. N.. a.. right is no. N..
             r_ root
-        __(left is None
+        __(left is N..
             r_ right
         r_ left

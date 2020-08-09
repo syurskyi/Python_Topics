@@ -1,12 +1,12 @@
 c_ Node:
-    ___ __init__(, data
+    ___  - (, data
         .data _ data
-        .next _ None
+        .next _ N..
 
 
 c_ LinkedList:
-    ___ __init__(
-        .head _ None
+    ___  - (
+        .head _ N..
 
     ___ printList(
         temp _ .head

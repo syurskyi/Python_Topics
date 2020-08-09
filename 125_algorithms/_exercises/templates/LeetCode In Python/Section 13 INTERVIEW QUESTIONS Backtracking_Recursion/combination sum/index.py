@@ -9,8 +9,8 @@ c_ Solution:
                 .solution(candidates,ans,cur,target,i,su.+candidates[i])
                 cur.pop()
         r_
-    ___ combinationSum(, candidates: L.. in., target: in.) -> L..[L..[in.]]:
-        ans _ []
-        cur _ []
+    ___ combinationSum(, candidates: L.. in., target: in.)  L..[L..[in.]]:
+        ans _   # list
+        cur _   # list
         .solution(candidates,ans,cur,target,0,0)
         r_ ans

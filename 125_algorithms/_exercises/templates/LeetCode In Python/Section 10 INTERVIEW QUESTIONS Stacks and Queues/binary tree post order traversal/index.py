@@ -6,13 +6,13 @@
 #         self.right = None
 
 c_ Solution:
-    ___ postorderTraversal(, root: TreeNode) -> L.. in.:
+    ___ postorderTraversal(, root: TreeNode)  L.. in.:
         __(no. root
             r_
         
-        ans _ []
-        s1 _ []
-        s2 _ []
+        ans _   # list
+        s1 _   # list
+        s2 _   # list
 
         s1.ap..(root)
 

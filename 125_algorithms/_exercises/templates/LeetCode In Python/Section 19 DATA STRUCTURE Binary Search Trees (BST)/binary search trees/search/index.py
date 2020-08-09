@@ -1,24 +1,24 @@
 
 
 c_ Node:
-    ___ __init__(, value
-        .left _ None
-        .right _ None
+    ___  - (, value
+        .left _ N..
+        .right _ N..
         .data _ value
 
 
 ___ insert(root, node
-    __(root is None
+    __(root is N..
         root _ node
         r_
 
     __(root.data < node.data
-        __(root.right is None
+        __(root.right is N..
             root.right _ node
         ____
             insert(root.right, node)
     ____
-        __(root.left is None
+        __(root.left is N..
             root.left _ node
         ____
             insert(root.left, node)
@@ -26,9 +26,9 @@ ___ insert(root, node
 
 ___ search(node, key
     print("Current Node is: ", node.data)
-    __(node is None
+    __(node is N..
         print("No node found")
-        r_ None
+        r_ N..
     __(node.data __ key
         print("Node found !")
         r_ node

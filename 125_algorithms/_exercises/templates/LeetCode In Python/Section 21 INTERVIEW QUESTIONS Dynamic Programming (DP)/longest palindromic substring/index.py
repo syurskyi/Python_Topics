@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestPalindrome(, s: st.) -> st.:
+    ___ longestPalindrome(, s: st.)  st.:
         n _ le.(s)
         __(n<2
             r_ s

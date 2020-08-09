@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ lengthOfLongestSubstring(, s: st.) -> in.:
+    ___ lengthOfLongestSubstring(, s: st.)  in.:
         m _ {}
         left _ 0
         right _ 0

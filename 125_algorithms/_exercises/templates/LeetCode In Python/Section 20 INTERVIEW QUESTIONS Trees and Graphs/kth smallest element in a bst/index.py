@@ -1,7 +1,7 @@
 c_ Solution:
-    ___ kthSmallest(, root: TreeNode, k: in.) -> in.:
+    ___ kthSmallest(, root: TreeNode, k: in.)  in.:
         .k _ k
-        .res _ None
+        .res _ N..
         .helper(root)
         r_ .res
 

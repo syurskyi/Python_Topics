@@ -8,24 +8,24 @@
 ____ co.. ______ deque
 
 c_ Solution:
-    ___ levelOrder(, root: TreeNode) -> L..[L..[in.]]:
-        ans _ []
+    ___ levelOrder(, root: TreeNode)  L..[L..[in.]]:
+        ans _   # list
 
-        __(root is None
+        __(root is N..
             r_ ans
         
         q _ deque([root])
 
         w___(q
             n _ le.(q)
-            temp _ []
+            temp _   # list
             ___ i __ ra..(0,n
                 f _ q.popleft()
                 temp.ap..(f.val)
 
-                __(f.left is no. None
+                __(f.left is no. N..
                     q.ap..(f.left)
-                __(f.right is no. None
+                __(f.right is no. N..
                     q.ap..(f.right)
 
             __(le.(temp)>0
