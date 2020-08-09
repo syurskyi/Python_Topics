@@ -7,7 +7,7 @@ ___ get_shortest_unique_substring(strs, s
     start = 0
     size = INF = float('inf')
 
-    for right in range(le.(s)):
+    ___ right in range(le.(s)):
         __ s[right] in freq:
             __ freq[s[right]] __ 0:
                 cnt += 1

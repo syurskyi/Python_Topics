@@ -10,7 +10,7 @@ class Solution(object
 
     mpppid = {}
 
-    for i in range(n
+    ___ i in range(n
       __ mpppid.has_key(ppid[i]
         mpppid[ppid[i]].append(i)
       ____
@@ -20,7 +20,7 @@ class Solution(object
     ___ dfs(x
       __ not mpppid.has_key(x
         r_
-      for i in mpppid[x]:
+      ___ i in mpppid[x]:
         y = pid[i]
         res.append(y)
         dfs(y)

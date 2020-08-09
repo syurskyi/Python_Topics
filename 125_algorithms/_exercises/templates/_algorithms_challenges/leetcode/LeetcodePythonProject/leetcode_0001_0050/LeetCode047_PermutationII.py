@@ -19,7 +19,7 @@ class Solution(object
         __ nums __ []:
             res.append(list(curr))
             r_
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             __ i > 0 and nums[i] __ nums[i-1]:
                 continue
             curr.append(num)
@@ -31,7 +31,7 @@ class Solution(object
             [1,1,2],
             [3,3,0,3],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.permuteUnique(nums)
             print('result: %s' % result)

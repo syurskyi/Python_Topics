@@ -12,9 +12,9 @@ class VigenereAutokeyCipher:
 
     ___ encode(self, text
         result = []
-        key = self.key + ''.join([t for t in text __ t in self.abc])
+        key = self.key + ''.join([t ___ t in text __ t in self.abc])
         index = 0
-        for c in text:
+        ___ c in text:
             __ c in self.abc:
                 offset = self.abc.index(key[index])
                 result.append(self.abc[(self.abc.index(c) + offset) % le.(self.abc)])
@@ -27,7 +27,7 @@ class VigenereAutokeyCipher:
         result = []
         key = self.key
         index = 0
-        for c in text:
+        ___ c in text:
             __ c in self.abc:
                 offset = self.abc.index(key[index])
                 decoded = self.abc[(self.abc.index(c) - offset) % le.(self.abc)]

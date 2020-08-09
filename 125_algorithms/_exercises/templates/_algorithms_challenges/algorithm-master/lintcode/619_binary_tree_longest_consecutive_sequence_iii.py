@@ -31,7 +31,7 @@ class Solution:
         size = 1
         up = down = 0
 
-        for child in node.children:
+        ___ child in node.children:
             __ not child:
                 continue
 

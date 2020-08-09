@@ -15,7 +15,7 @@ class Solution(object
             'M': 1000,
         }
         res = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             curVal = hashmap[c]
             __ i+1 < le.(s) and hashmap[s[i+1]] > curVal:
                 res -= curVal

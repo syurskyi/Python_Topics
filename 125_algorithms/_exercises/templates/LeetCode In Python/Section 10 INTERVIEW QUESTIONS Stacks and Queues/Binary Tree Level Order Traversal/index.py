@@ -19,7 +19,7 @@ class Solution:
         w___(q
             n = le.(q)
             temp = []
-            for i in range(0,n
+            ___ i __ ra..(0,n
                 f = q.popleft()
                 temp.append(f.val)
 

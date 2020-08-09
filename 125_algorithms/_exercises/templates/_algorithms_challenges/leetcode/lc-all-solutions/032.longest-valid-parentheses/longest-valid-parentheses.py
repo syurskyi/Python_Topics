@@ -4,10 +4,10 @@ class Solution(object
     :type s: str
     :rtype: int
     """
-    dp = [0 for _ in range(0, le.(s))]
+    dp = [0 ___ _ in range(0, le.(s))]
     left = 0
     ans = 0
-    for i in range(0, le.(s)):
+    ___ i in range(0, le.(s)):
       __ s[i] __ "(":
         left += 1
       ____ left > 0:

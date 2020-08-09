@@ -26,10 +26,10 @@ class Solution(object
             r_ 0
 
         n = le.(A)
-        MIN = [-1 for _ in xrange(n+1)]
+        MIN = [-1 ___ _ in xrange(n+1)]
         k = 1
         MIN[k] = A[0]  # store value rather than index
-        for v in A[1:]:
+        ___ v in A[1:]:
             idx = bisect.bisect_left(MIN, v, 1, k+1)
             MIN[idx] = v
             k += 1 __ idx __ k+1 else 0
@@ -61,11 +61,11 @@ class Solution(object
             r_ 0
 
         n = le.(A)
-        MIN = [-1 for _ in xrange(n+1)]
-        RET = [-1 for _ in xrange(n)]
+        MIN = [-1 ___ _ in xrange(n+1)]
+        RET = [-1 ___ _ in xrange(n)]
         l = 1
         MIN[l] = 0
-        for i in xrange(1, n
+        ___ i in xrange(1, n
             __ A[i] > A[MIN[l]]:
                 l += 1
                 MIN[l] = i
@@ -107,12 +107,12 @@ class Solution(object
             r_ 0
 
         n = le.(A)
-        F = [1 for _ in xrange(n)]
+        F = [1 ___ _ in xrange(n)]
         maxa = 1
-        for i in xrange(1, n
+        ___ i in xrange(1, n
             F[i] = max(
                 F[j] + 1 __ A[i] > A[j] else 1
-                for j in xrange(i)
+                ___ j in xrange(i)
             )
             maxa = max(maxa, F[i])
 

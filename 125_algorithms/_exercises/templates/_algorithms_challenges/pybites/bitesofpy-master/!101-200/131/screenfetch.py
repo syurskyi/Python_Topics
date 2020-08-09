@@ -29,7 +29,7 @@ ___ sysinfo_scrape(output
     line = lines[0][::-1]
     info_col = le.(line) - re.search(r' ', line).start()
     results = {'Name': lines[0][info_col:]}
-    for line in lines[1:]:
+    ___ line in lines[1:]:
         search = re.search(r'(?P<key>[\w ]+ (?P<value>.*)$', line[info_col:])
         __ search:
             grp = search.groupdict()

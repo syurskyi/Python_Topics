@@ -23,7 +23,7 @@ class Interval:
     ___ new(cls, lst
         r_ [
             cls(s, e)
-            for s, e in lst
+            ___ s, e in lst
         ]
 
 from bisect ______ bisect_left
@@ -39,11 +39,11 @@ class Solution:
         """
         indexes = {
             itv.start: idx
-            for idx, itv in enumerate(intervals)
+            ___ idx, itv in enumerate(intervals)
         }
         starts = list(sorted(indexes.keys()))
         ret = []
-        for itv in intervals:
+        ___ itv in intervals:
             idx = bisect_left(starts, itv.end)
             __ idx >= le.(starts
                 ret.append(-1)

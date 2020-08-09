@@ -8,7 +8,7 @@ class Solution(object
     ___ deconString(self, s
         stack = [['', 1]]
         num = ''
-        for c in s:
+        ___ c in s:
             __ c.isdigit(
                 num += c
             ____ c __ '[':

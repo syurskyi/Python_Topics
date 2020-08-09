@@ -52,7 +52,7 @@ class NestedInteger(object
 
 class Solution(object
     ___ __init__(self
-        self.sum = 0
+        self.su. = 0
 
     ___ depthSumInverse(self, nestedList
         """
@@ -62,7 +62,7 @@ class Solution(object
         """
         inv_depth = self.height(nestedList)
         self.inverseDepthSum(nestedList, inv_depth)
-        r_ self.sum
+        r_ self.su.
 
     ___ height(self, nl
         nl_lst = filter(lambda x: not x.isInteger(), nl)
@@ -79,12 +79,12 @@ class Solution(object
         __ nl_lst:
             map(lambda x: self.inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
         __ ni_list:
-            self.sum += sum(map(lambda x: x.getInteger() * inv_depth, ni_list))
+            self.su. += su.(map(lambda x: x.getInteger() * inv_depth, ni_list))
 
 
 class SolutionError(object
     ___ __init__(self
-        self.sum = 0
+        self.su. = 0
 
     ___ depthSumInverse(self, nestedList
         """
@@ -93,7 +93,7 @@ class SolutionError(object
         :rtype: int
         """
         self.dfs(nestedList)
-        r_ self.sum
+        r_ self.su.
 
     ___ dfs(self, nl
         """
@@ -109,6 +109,6 @@ class SolutionError(object
                 map(lambda x: self.dfs(x.getList()), nl_lst)
             )
         __ ni_list:
-            self.sum += sum(map(lambda x: x.getInteger() * height, ni_list))
+            self.su. += su.(map(lambda x: x.getInteger() * height, ni_list))
 
         r_ height

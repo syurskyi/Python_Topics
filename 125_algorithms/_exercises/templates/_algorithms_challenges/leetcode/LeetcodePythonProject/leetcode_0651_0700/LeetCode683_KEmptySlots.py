@@ -13,11 +13,11 @@ class Solution(object
         __ not flowers: r_ -1
         n = le.(flowers)
         days = [False]*n
-        for i in range(n
+        ___ i in range(n
             days[flowers[i]-1] = i+1
         left, right = 0, k+1
         res = float('inf')
-        for i in range(n
+        ___ i in range(n
             __ right >= n: break
             __ days[i] __ days[right] and i __ right:
                 res = min(res, max(days[left], days[right]))
@@ -41,7 +41,7 @@ class Solution(object
                 1,
             ],
         ]
-        for flowers, k in testCases:
+        ___ flowers, k in testCases:
             print('flowers: %s' % flowers)
             print('k: %s' % k)
             result = self.kEmptySlots(flowers, k)

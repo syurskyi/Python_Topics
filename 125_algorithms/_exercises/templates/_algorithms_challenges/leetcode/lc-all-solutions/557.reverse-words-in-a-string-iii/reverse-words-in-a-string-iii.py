@@ -5,6 +5,6 @@ class Solution(object
     :rtype: str
     """
     s = s.split()
-    for i, word in enumerate(s
+    ___ i, word in enumerate(s
       s[i] = word[::-1]
     r_ " ".join(s)

@@ -33,20 +33,20 @@ ___ get_industry_cap(industry
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
-    r_ round(sum([_cap_str_to_mln_float(co['cap']) for co in data __ co['industry'] __ industry]), 3)
+    r_ round(su.([_cap_str_to_mln_float(co['cap']) ___ co in data __ co['industry'] __ industry]), 3)
 
 
 ___ get_stock_symbol_with_highest_cap(
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
-    r_ sorted([(co['symbol'], _cap_str_to_mln_float(co['cap'])) for co in data], key=lambda x: x[1])[-1][0]
+    r_ sorted([(co['symbol'], _cap_str_to_mln_float(co['cap'])) ___ co in data], key=lambda x: x[1])[-1][0]
 
 
 ___ get_sectors_with_max_and_min_stocks(
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
     sector_list = Counter()
-    for co in data:
+    ___ co in data:
         sector_list += Counter({co['sector']: _cap_str_to_mln_float(co['cap'])})
-    sectors = sorted([(k, v) for k, v in sector_list.items()], key=lambda x: x[1])
+    sectors = sorted([(k, v) ___ k, v in sector_list.items()], key=lambda x: x[1])
     r_ sectors[-1][0], sectors[0][0]

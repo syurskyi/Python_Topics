@@ -3,10 +3,10 @@ class Solution:
         buyPrice = float("inf")
         profit = 0
 
-        for i, price in enumerate(prices
+        ___ i, price __ enumerate(prices
             __(buyPrice > price
                 buyPrice = price
             ____
-                profit = max(profit, price-buyPrice)
+                profit = ma.(profit, price-buyPrice)
 
         r_ profit

@@ -14,6 +14,6 @@ ___ catAndMouse(catA, catB, mouseC
 
 
 n = int(input())
-for i in range(n
+___ i in range(n
     catA, catB, mouseC = map(int, input().split())
     catAndMouse(catA, catB, mouseC)

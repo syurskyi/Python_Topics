@@ -15,12 +15,12 @@ class Solution(object
             r_ 0
         __ k __ 0 or k __ n*(n-1)//2:
             r_ 1
-        dp = [[0]*(k+1) for _ in range(n+1)]
+        dp = [[0]*(k+1) ___ _ in range(n+1)]
         dp[2][0] = 1
         dp[2][1] = 1
-        for i in range(3, n+1
+        ___ i in range(3, n+1
             dp[i][0] = 1
-            for j in range(1, min(k, i*(i-1)//2)+1
+            ___ j in range(1, min(k, i*(i-1)//2)+1
                 dp[i][j] = dp[i][j-1]+dp[i-1][j]
                 __ j >= i:
                     dp[i][j] -= dp[i-1][j-i]
@@ -30,9 +30,9 @@ class Solution(object
     ___ kInversePairs_another(self, n, k
         mod = 10**9+7
         dp = [0]+[1]*(k+1)
-        for i in range(2, n+1
+        ___ i in range(2, n+1
             new = [0]
-            for j in range(k+1
+            ___ j in range(k+1
                 v = dp[j+1]
                 __ j >= i:
                     v -= dp[j-i+1]
@@ -46,7 +46,7 @@ class Solution(object
             (3, 1),
             (3, 2),
         ]
-        for n, k in testCases:
+        ___ n, k in testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.kInversePairs(n, k)

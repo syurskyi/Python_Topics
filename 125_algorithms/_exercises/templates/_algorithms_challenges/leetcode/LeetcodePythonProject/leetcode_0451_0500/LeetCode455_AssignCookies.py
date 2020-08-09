@@ -30,7 +30,7 @@ class Solution(object
             ([1,2], [1,2,3]),
             ([10,9,8,7], [5,6,7,8]),
         ]
-        for g, s in testCases:
+        ___ g, s in testCases:
             print('g: %s' % g)
             print('s: %s' % s)
             result = self.findContentChildren(g, s)

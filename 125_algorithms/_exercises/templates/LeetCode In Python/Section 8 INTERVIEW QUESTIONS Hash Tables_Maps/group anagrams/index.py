@@ -5,13 +5,13 @@ class Solution:
         answers = []
         m = {}
 
-        for s in strs:
+        ___ s __ strs:
             hashed = self.findHash(s)
-            __(hashed not in m
+            __(hashed not __ m
                 m[hashed] = []
             m[hashed].append(s)
         
-        for p in m.values(
+        ___ p __ m.values(
             answers.append(p)
         
         r_ answers

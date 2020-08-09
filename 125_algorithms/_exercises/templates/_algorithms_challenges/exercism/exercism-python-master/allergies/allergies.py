@@ -17,7 +17,7 @@ class Allergies(object
     ___ __init__(self, score
         """Generates a list of allergies from a score"""
         self.lst = [allergie
-                    for i, allergie in enumerate(Allergies.allergie_list)
+                    ___ i, allergie in enumerate(Allergies.allergie_list)
                     __ 0 < (score & 1 << i )]
 
     ___ is_allergic_to(self, allergie

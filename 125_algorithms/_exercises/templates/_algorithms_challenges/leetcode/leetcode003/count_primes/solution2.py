@@ -12,7 +12,7 @@ class Solution(object
         :type n: int
         :rtype: int
         """
-        t = [True for i in range(n)]
+        t = [True ___ i in range(n)]
         i = 2
         w___ i * i < n:
             __ t[i] is False:
@@ -24,7 +24,7 @@ class Solution(object
                 j += i
             i += 1
         res = 0
-        for i in range(2, n
+        ___ i in range(2, n
             __ t[i] is True:
                 res += 1
         r_ res

@@ -12,11 +12,11 @@ class Solution:
             r_ 0
 
         n = le.(A)
-        dp = [[0] * (target + 1) for _ in range(n + 1)]
+        dp = [[0] * (target + 1) ___ _ in range(n + 1)]
         dp[0][0] = 1
 
-        for i in range(1, n + 1
-            for j in range(target + 1
+        ___ i in range(1, n + 1
+            ___ j in range(target + 1
                 dp[i][j] = dp[i - 1][j]
                 __ j >= A[i - 1]:
                     dp[i][j] += dp[i - 1][j - A[i - 1]]
@@ -41,8 +41,8 @@ class Solution:
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for i in range(n
-            for j in range(target, A[i] - 1, -1
+        ___ i in range(n
+            ___ j in range(target, A[i] - 1, -1
                 dp[j] += dp[j - A[i]]
 
         r_ dp[target]

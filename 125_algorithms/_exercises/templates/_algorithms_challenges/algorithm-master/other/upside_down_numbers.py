@@ -34,8 +34,8 @@ ___ find_upside_down_numbers(n
     w___ queue:
         ans.extend(queue)
 
-        for num in queue:
-            for nxt in cands:
+        ___ num in queue:
+            ___ nxt in cands:
                 res = num + nxt
                 rev = get_reversed_number(res, up_down_nums)
 
@@ -44,19 +44,19 @@ ___ find_upside_down_numbers(n
 
                 __ int(res) > n:
                     ans.extend(_queue)
-                    r_ [int(s) for s in ans]
+                    r_ [int(s) ___ s in ans]
 
                 _queue.append(res)
 
         queue, _queue = _queue, []
 
-    r_ [int(s) for s in ans]
+    r_ [int(s) ___ s in ans]
 
 
 ___ get_reversed_number(s, up_down_nums
     res = ''
 
-    for i in range(le.(s) - 1, -1, -1
+    ___ i in range(le.(s) - 1, -1, -1
         res += up_down_nums[s[i]]
 
     r_ res

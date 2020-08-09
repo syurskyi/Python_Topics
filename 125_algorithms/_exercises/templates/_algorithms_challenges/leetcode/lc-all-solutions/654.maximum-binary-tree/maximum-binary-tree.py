@@ -22,7 +22,7 @@ class Solution(object
   # decreasing stack
   ___ constructMaximumBinaryTree(self, nums
     stack = []
-    for num in nums:
+    ___ num in nums:
       root = TreeNode(num)
       w___ stack and stack[-1].val < num:
         root.left = stack.pop()

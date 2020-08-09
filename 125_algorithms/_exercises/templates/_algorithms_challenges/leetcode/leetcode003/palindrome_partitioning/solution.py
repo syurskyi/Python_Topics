@@ -11,7 +11,7 @@ class Solution:
         __ not s:
             res.append(cand[:])
         ____
-            for i, e in enumerate(s
+            ___ i, e in enumerate(s
                 __ self.is_palindrome(s[:i + 1]
                     cand.append(s[:i + 1])
                     self.partition_aux(s[i + 1:], cand, res)

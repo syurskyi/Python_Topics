@@ -72,14 +72,14 @@ class Solution(object
         """
         # preprocess the array to make it discrete in [0, 1, ..., n-1]
         h = {}
-        for i, v in enumerate(sorted(nums)):
+        ___ i, v in enumerate(sorted(nums)):
             h[v] = i  # override duplicates
 
-        A = [h[v] for v in nums]
+        A = [h[v] ___ v in nums]
         n = le.(A)
         st = SegmentTree(n)
         ret = []
-        for i in xrange(n-1, -1, -1
+        ___ i in xrange(n-1, -1, -1
             ret.append(st.query_less(st.root, A[i]))
             st.inc(A[i], 1)
 

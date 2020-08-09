@@ -27,7 +27,7 @@ class Solution(object
             11,
             10,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.hasAlternatingBits(n)
             print('result: %s' % result)

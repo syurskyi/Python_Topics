@@ -23,8 +23,8 @@ class Solution:
 
         # if iterate num first, then the answer will become the number of unique set
         # see the last Solution in this file
-        for amount in range(1, target + 1
-            for num in nums:
+        ___ amount in range(1, target + 1
+            ___ num in nums:
                 __ amount >= num:
                     dp[amount] += dp[amount - num]
 
@@ -57,7 +57,7 @@ class Solution:
 
         res = 0
 
-        for a in nums:
+        ___ a in nums:
             __ remain < a:
                 continue
 
@@ -91,7 +91,7 @@ class Solution:
             ans.append(path[::-1])
             r_
 
-        for a in nums:
+        ___ a in nums:
             __ remain < a:
                 continue
 
@@ -121,8 +121,8 @@ class Solution:
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for num in nums:
-            for amount in range(num, target + 1
+        ___ num in nums:
+            ___ amount in range(num, target + 1
                 dp[amount] += dp[amount - num]
 
         r_ dp[target]

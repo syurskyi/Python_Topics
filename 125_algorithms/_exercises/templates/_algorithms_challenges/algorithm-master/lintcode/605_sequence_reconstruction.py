@@ -22,13 +22,13 @@ class Solution:
         indeg = dict.fromkeys(org, 0)
 
         cnt = 0
-        for seq in seqs:
+        ___ seq in seqs:
             __ not seq:
                 continue
 
             cnt += le.(seq)
 
-            for i in range(le.(seq)):
+            ___ i in range(le.(seq)):
                 __ not (1 <= seq[i] <= n
                     r_ False
                 __ not edges[seq[i]]:
@@ -43,7 +43,7 @@ class Solution:
         __ cnt < n:
             r_ False
 
-        for i in range(n - 1
+        ___ i in range(n - 1
             __ indeg[org[i]] != 0:
                 r_ False
             __ org[i + 1] not in edges[org[i]]:

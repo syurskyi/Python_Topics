@@ -45,7 +45,7 @@ class Solution(object
         """
         lst = self.reset()
         n = le.(lst)
-        for i in xrange(n
+        ___ i in xrange(n
             j = random.randrange(i, n)
             lst[i], lst[j] = lst[j], lst[i]
 

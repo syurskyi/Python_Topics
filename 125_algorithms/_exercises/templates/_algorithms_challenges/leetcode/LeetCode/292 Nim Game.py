@@ -30,10 +30,10 @@ class Solution(object
         __ n < 3:
             r_ True
 
-        F = [False for _ in xrange(3)]
+        F = [False ___ _ in xrange(3)]
         F[1] = F[2] = F[0] = True
-        for i in xrange(4, n+1
-            F[i%3] = any(not F[(i-k)%3] for k in xrange(1, 4))
+        ___ i in xrange(4, n+1
+            F[i%3] = any(not F[(i-k)%3] ___ k in xrange(1, 4))
 
         r_ F[n%3]
 
@@ -48,10 +48,10 @@ class Solution(object
         __ n < 3:
             r_ True
 
-        F = [False for _ in xrange(n+1)]
+        F = [False ___ _ in xrange(n+1)]
         F[1] = F[2] = F[3] = True
-        for i in xrange(4, n+1
-            F[i] = any(not F[i-k] for k in xrange(1, 4))
+        ___ i in xrange(4, n+1
+            F[i] = any(not F[i-k] ___ k in xrange(1, 4))
 
         r_ F[n]
 

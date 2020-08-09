@@ -13,7 +13,7 @@ class Solution(object
         """
         res = []
         deque = []
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             __ deque and deque[0] __ i-k:
                 deque.pop(0)
             w___ deque and nums[deque[-1]] < num:
@@ -27,7 +27,7 @@ class Solution(object
         testCases = [
             ([1,3,-1,-3,5,3,6,7], 3),
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % (nums))
             result = self.maxSlidingWindow(nums, k)
             print('result: %s' % (result))

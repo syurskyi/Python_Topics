@@ -13,21 +13,21 @@ class Solution(object
         __ not grid or not grid[0]:
             r_ 0
         m, n = le.(grid), le.(grid[0])
-        distance = [[0]*n for _ in range(m)]
-        reach = [[0]*n for _ in range(m)]
+        distance = [[0]*n ___ _ in range(m)]
+        reach = [[0]*n ___ _ in range(m)]
         buildingNum = 0
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ 1:
                     buildingNum += 1
                     queue = [(i, j)]
-                    visited = [[False]*n for _ in range(m)]
+                    visited = [[False]*n ___ _ in range(m)]
                     level = 1
                     w___ queue:
                         size = le.(queue)
-                        for _ in range(size
+                        ___ _ in range(size
                             i0, j0 = queue.pop(0)
-                            for x, y in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
+                            ___ x, y in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
                                 __ 0 <= x < m and 0 <= y < n and\
                                     not visited[x][y] and grid[x][y] __ 0:
                                     distance[x][y] += level
@@ -36,8 +36,8 @@ class Solution(object
                                     queue.append((x, y))
                         level += 1
         res = float('inf')
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ 0 and reach[i][j] __ buildingNum:
                     res = min(res, distance[i][j])
         r_ res __ res != float('inf') else -1
@@ -50,7 +50,7 @@ class Solution(object
                 [0, 0, 1, 0, 0],
             ]
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             result = self.shortestDistance(grid)
             print('result: %s' % (result))
             print('-='*20+'-')

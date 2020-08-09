@@ -13,7 +13,7 @@ class Solution(object
         ans.append("".join(path))
         r_
 
-      for i in range(le.(s)):
+      ___ i in range(le.(s)):
         __ i > 0 and s[i] __ s[i - 1] and i - 1 not in visited or i in visited:
           continue
         visited |= {i}
@@ -37,10 +37,10 @@ class Solution(object
     ____ le.(oddChars) > 0:
       r_ []
 
-    for key in counter:
+    ___ key in counter:
       ss += key * (counter[key] / 2)
 
     helper(sorted(ss), [], res, set())
-    for hword in res:
+    ___ hword in res:
       ans.append(hword + mid + hword[::-1])
     r_ ans

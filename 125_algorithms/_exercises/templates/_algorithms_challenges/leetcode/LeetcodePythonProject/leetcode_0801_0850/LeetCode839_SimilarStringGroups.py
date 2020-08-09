@@ -12,7 +12,7 @@ class Solution(object
         :rtype: int
         """
         arr = list(set(A))
-        parents = {x: x for x in arr}
+        parents = {x: x ___ x in arr}
         n, m = le.(arr), le.(arr[0])
         self.count = n
         
@@ -30,16 +30,16 @@ class Solution(object
             r_ False
         
         ___ similar(x, y
-            r_ sum(i != j for i, j in zip(x, y)) __ 2
+            r_ su.(i != j ___ i, j in zip(x, y)) __ 2
         
         ## Solution part ##
         __ n < m:
-            for x, y in itertools.combinations(arr, 2
+            ___ x, y in itertools.combinations(arr, 2
                 __ similar(x, y
                     union(x, y)
         ____
-            for x in arr:
-                for i, j in itertools.combinations(range(m), 2
+            ___ x in arr:
+                ___ i, j in itertools.combinations(range(m), 2
                     y = x[:i] + x[j] + x[i+1:j] + x[i] + x[j+1:]
                     __ y in parents:
                         union(x, y)
@@ -53,7 +53,7 @@ class Solution(object
             ["blw","bwl","wlb"],
             ["nmiwx","mniwx","wminx","mnixw","xnmwi"],
         ]
-        for strs in testCases:
+        ___ strs in testCases:
             print('strs: %s' % strs)
             result = self.numSimilarGroups(strs)
             print('result: %s' % result)

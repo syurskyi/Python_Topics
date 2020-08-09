@@ -16,7 +16,7 @@ ___ BuildTree(records
     nodes = {}
     parents = defaultdict(list)
     max_id = 0
-    for n_nodes, record in enumerate(records
+    ___ n_nodes, record in enumerate(records
         __ (record.record_id __ record.parent_id != 0) or \
             record.record_id < record.parent_id:
             raise ValueError("Invalid record {}".format(record))

@@ -12,10 +12,10 @@ class Solution:
         __ not docs or le.(docs) < 1:
             r_ {}
         result = {}
-        for doc in docs:
+        ___ doc in docs:
             __ not doc.content:
                 continue
-            for word in doc.content.split(
+            ___ word in doc.content.split(
                 __ word not in result:
                     result[word] = []
                 __ doc.id not in result[word]:

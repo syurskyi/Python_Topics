@@ -8,18 +8,18 @@ class Solution(object
     nums.sort()
     ans = 0
     diff = float("inf")
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       start, end = i + 1, le.(nums) - 1
       w___ start < end:
-        sum = nums[i] + nums[start] + nums[end]
-        __ sum > target:
-          __ abs(target - sum) < diff:
-            diff = abs(target - sum)
-            ans = sum
+        su. = nums[i] + nums[start] + nums[end]
+        __ su. > target:
+          __ abs(target - su.) < diff:
+            diff = abs(target - su.)
+            ans = su.
           end -= 1
         ____
-          __ abs(target - sum) < diff:
-            diff = abs(target - sum)
-            ans = sum
+          __ abs(target - su.) < diff:
+            diff = abs(target - su.)
+            ans = su.
           start += 1
     r_ ans

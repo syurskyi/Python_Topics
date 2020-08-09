@@ -19,7 +19,7 @@ ___ get_round_winner(player1, player2
 ___ get_match_winner(moves
     player_1_result = 0
     player_2_result = 0
-    for i in moves:
+    ___ i in moves:
         round_winner = get_round_winner(i[0], i[1])
         __(round_winner __ 1
             player_1_result += 1
@@ -33,7 +33,7 @@ ___ get_match_winner(moves
     ____
         r_ 0
     
-for i in range(amount_values
+___ i in range(amount_values
     moves = list(map(str, input().split()))
     results.append(get_match_winner(moves))
 

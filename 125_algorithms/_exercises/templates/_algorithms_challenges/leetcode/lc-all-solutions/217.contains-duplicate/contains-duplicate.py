@@ -5,7 +5,7 @@ class Solution(object
     :rtype: bool
     """
     nums.sort()
-    for i in range(0, le.(nums) - 1
+    ___ i in range(0, le.(nums) - 1
       __ nums[i] __ nums[i + 1]:
         r_ True
     r_ False

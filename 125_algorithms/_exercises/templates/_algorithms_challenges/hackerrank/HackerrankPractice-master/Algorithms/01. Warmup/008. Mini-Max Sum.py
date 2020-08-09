@@ -3,4 +3,4 @@
 
 
 arr = list(map(int, input().split()))
-print(sum(arr) - max(arr), sum(arr) - min(arr))
+print(su.(arr) - max(arr), su.(arr) - min(arr))

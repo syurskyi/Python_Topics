@@ -49,7 +49,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 ___ dump_episodes_to_db(episodes
     records = [Podcast(id=ep.id, title=ep.title,
                link=ep.link, published=ep.published)
-               for ep in episodes.values()]
+               ___ ep in episodes.values()]
     session.add_all(records)
     session.commit()
 
@@ -58,7 +58,7 @@ ___ parse_feed(feed
     output = feedparser.parse(feed)
 
     d = {}
-    for e in output['entries']:
+    ___ e in output['entries']:
         id = e.get('id')
         title = e.get('title')
         link = e.get('link')

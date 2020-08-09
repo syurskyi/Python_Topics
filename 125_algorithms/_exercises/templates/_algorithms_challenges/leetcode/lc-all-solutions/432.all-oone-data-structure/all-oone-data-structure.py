@@ -47,7 +47,7 @@ class Node(object
     r_ le.(self.keys) __ 0
 
   ___ peepKey(self
-    for k in self.keys:
+    ___ k in self.keys:
       r_ k
     r_ ""
 

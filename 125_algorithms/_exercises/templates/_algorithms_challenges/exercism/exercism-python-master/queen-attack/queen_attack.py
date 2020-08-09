@@ -14,13 +14,13 @@ ___ validate(func
 @validate
 ___ board(white, black
     """Prints a board with the queens locations"""
-    chess = [["_"] * 8 for _ in range(8)]
-    for char, (i, j) in (("W", white), ("B", black)):
+    chess = [["_"] * 8 ___ _ in range(8)]
+    ___ char, (i, j) in (("W", white), ("B", black)):
         chess[i][j] = char
-    r_ [''.join(row) for row in chess]
+    r_ [''.join(row) ___ row in chess]
 
 @validate
 ___ can_attack(black, white
     """Checks if the two queens can attack eachother"""
-    diff = [abs(b - w) for b, w in zip(black, white)]
+    diff = [abs(b - w) ___ b, w in zip(black, white)]
     r_ diff[0] __ diff[1] or min(diff) __ 0

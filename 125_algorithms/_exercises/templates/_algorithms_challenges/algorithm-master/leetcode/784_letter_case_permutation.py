@@ -17,7 +17,7 @@ class Solution:
 
         options = [s[i]] __ s[i].isdigit() else [s[i].lower(), s[i].upper()]
 
-        for c in options:
+        ___ c in options:
             path.append(c)
             self.dfs(s, i + 1, ans, path)
             path.pop()

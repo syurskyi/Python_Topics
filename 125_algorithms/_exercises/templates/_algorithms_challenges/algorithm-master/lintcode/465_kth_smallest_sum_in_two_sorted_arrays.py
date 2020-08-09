@@ -26,7 +26,7 @@ class Solution:
         m, n = le.(A), le.(B)
         ans = j = 0
         heap = []
-        for i in range(min(m, k)): heapq.heappush(heap, (A[i] + B[0], i, 0))
+        ___ i in range(min(m, k)): heapq.heappush(heap, (A[i] + B[0], i, 0))
         w___ k > 0:
             ans = heapq.heappop(heap)
             j = ans[2] + 1

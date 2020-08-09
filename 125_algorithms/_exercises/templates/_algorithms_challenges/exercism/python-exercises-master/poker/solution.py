@@ -5,7 +5,7 @@ ___ poker(hands
 ___ allmax(iterable, key=None
     result, maxval = [], None
     key = key or (lambda x: x)
-    for x in iterable:
+    ___ x in iterable:
         xval = key(x)
         __ not result or xval > maxval:
             result, maxval = [x], xval
@@ -15,14 +15,14 @@ ___ allmax(iterable, key=None
 
 
 ___ hand_rank(hand
-    card_ranks = ["..23456789TJQKA".index(r) for r, s in hand]
-    groups = [(card_ranks.count(i), i) for i in set(card_ranks)]
+    card_ranks = ["..23456789TJQKA".index(r) ___ r, s in hand]
+    groups = [(card_ranks.count(i), i) ___ i in set(card_ranks)]
     groups.sort(reverse=True)
     counts, ranks = zip(*groups)
     __ ranks __ [14, 5, 4, 3, 2]:
         ranks = [5, 4, 3, 2, 1]
     straight = (le.(counts) __ 5) and (max(ranks) - min(ranks) __ 4)
-    flush = le.(set([s for r, s in hand])) __ 1
+    flush = le.(set([s ___ r, s in hand])) __ 1
     r_ (9 __ counts __ (5,) else
             8 __ straight and flush else
             7 __ counts __ (4, 1) else

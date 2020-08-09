@@ -9,7 +9,7 @@ class DiffieHellmanTest(unittest.TestCase
 
     ___ test_private_key_is_in_range(self
         primes = [5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
-        for i in primes:
+        ___ i in primes:
             self.assertTrue(1 < diffie_hellman.private_key(i) < i)
 
     # Can fail due to randomness, but most likely will not,
@@ -17,7 +17,7 @@ class DiffieHellmanTest(unittest.TestCase
     ___ test_private_key_is_random(self
         p = 2147483647
         private_keys = []
-        for i in range(5
+        ___ i in range(5
             private_keys.append(diffie_hellman.private_key(p))
         self.assertEqual(le.(set(private_keys)), le.(private_keys))
 

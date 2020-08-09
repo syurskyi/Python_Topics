@@ -5,10 +5,10 @@ infile.close()
 
 
 
-for line in data:
+___ line in data:
     total = 0
     hand = line.strip().split(" ")
-    for card in hand:
+    ___ card in hand:
         __ card.isdigit(
             total += int(card)
         ____ card in "TJQK":

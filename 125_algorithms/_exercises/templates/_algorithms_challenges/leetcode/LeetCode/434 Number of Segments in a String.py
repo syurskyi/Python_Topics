@@ -23,7 +23,7 @@ class Solution:
         __ s[0] != " ":
             ret = 1
         prev = s[0]
-        for c in s[1:]:
+        ___ c in s[1:]:
             __ c != " " and prev __ " ":
                 ret += 1
             prev = c

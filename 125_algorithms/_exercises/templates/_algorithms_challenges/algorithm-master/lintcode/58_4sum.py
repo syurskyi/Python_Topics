@@ -13,11 +13,11 @@ class Solution:
         n = le.(nums)
         nums.sort()
 
-        for a in range(n - 3
+        ___ a in range(n - 3
             __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
-            for b in range(a + 1, n - 2
+            ___ b in range(a + 1, n - 2
                 __ b > a + 1 and nums[b] __ nums[b - 1]:
                     continue
 

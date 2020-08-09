@@ -18,4 +18,4 @@ exclude_bites = {6, 10, 16, 18, 21}
 
 ___ filter_bites(bites=bites, bites_done=exclude_bites
     """return the bites dict with the exclude_bites filtered out"""
-    r_ dict((x,bites[x]) for x in bites.keys() __ x not in exclude_bites)
+    r_ dict((x,bites[x]) ___ x in bites.keys() __ x not in exclude_bites)

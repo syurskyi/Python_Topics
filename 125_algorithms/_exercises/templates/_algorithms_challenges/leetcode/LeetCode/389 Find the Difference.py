@@ -31,10 +31,10 @@ class Solution(object
         :rtype: str
         """
         d = defaultdict(int)
-        for e in s:
+        ___ e in s:
             d[e] += 1
 
-        for e in t:
+        ___ e in t:
             __ d[e] __ 0:
                 r_ e
             d[e] -= 1

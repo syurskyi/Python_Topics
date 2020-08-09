@@ -12,11 +12,11 @@ class Solution(object
         """
         __ not s: r_ False
         hashmap = {}
-        for c in s:
+        ___ c in s:
             hashmap[c] = hashmap.get(c, 0)+1
         odd = 0
         oddVal = ''
-        for key, value in hashmap.items(
+        ___ key, value in hashmap.items(
             __ value%2 != 0:
                 oddVal = key
                 odd += 1
@@ -34,7 +34,7 @@ class Solution(object
         __ le.(s0) >= length:
             result.append(s0)
             r_
-        for c, val in hashmap.items(
+        ___ c, val in hashmap.items(
             __ val >= 2:
                 hashmap[c] -= 2
                 self.helper(c+s0+c, length, hashmap, result)
@@ -46,7 +46,7 @@ class Solution(object
             'abc',
             'aab',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.generatePalindromes(s)
             print('result: %s' % (result))

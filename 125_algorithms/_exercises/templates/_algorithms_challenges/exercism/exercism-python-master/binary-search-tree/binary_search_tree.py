@@ -12,7 +12,7 @@ class TreeNode(object
 class BinarySearchTree(object
     ___ __init__(self, tree_data
         self._root = TreeNode(tree_data[0], None, None)
-        for data in tree_data[1:]:
+        ___ data in tree_data[1:]:
             branch = self._root
             w___ branch is not None:
                 root = branch
@@ -34,4 +34,4 @@ class BinarySearchTree(object
                 result.append(queue.pop())
                 __ node.right is not None:
                     queue.append(node.right)
-        r_ [n.data for n in result]
+        r_ [n.data ___ n in result]

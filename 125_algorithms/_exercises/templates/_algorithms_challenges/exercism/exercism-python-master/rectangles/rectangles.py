@@ -4,13 +4,13 @@ from re ______ match
 ___ count(diagram=""
     """count find the number of rectangles in a given diagram"""
     corners = find_char(diagram, '+')
-    r_ sum(1 for rect in combinations(corners, 4) __ is_rect(rect, diagram))
+    r_ su.(1 ___ rect in combinations(corners, 4) __ is_rect(rect, diagram))
 
 ___ find_char(lines, char
     """find_char returns the location of all the corner characters"""
     r_ [ (row, col)
-        for row, line in enumerate(lines)
-        for col, elem in enumerate(line)
+        ___ row, line in enumerate(lines)
+        ___ col, elem in enumerate(line)
         __ elem __ char]
 
 ___ is_rect(corners, diagram
@@ -24,8 +24,8 @@ ___ is_rect(corners, diagram
     vert_regex = '\+[|+]{{{}}}\+'.format( d_r - a_r - 1)
     top = ''.join(diagram[a_r][a_c:(d_c+1)])
     bottom = ''.join(diagram[d_r][a_c:(d_c+1)])
-    left = ''.join(row[a_c] for row in diagram[a_r:(d_r+1)])
-    right = ''.join(row[d_c] for row in diagram[a_r:(d_r+1)])
+    left = ''.join(row[a_c] ___ row in diagram[a_r:(d_r+1)])
+    right = ''.join(row[d_c] ___ row in diagram[a_r:(d_r+1)])
 
     r_ match(horz_regex, top) and match(horz_regex, bottom) and \
         match(vert_regex, right) and match(vert_regex, left)

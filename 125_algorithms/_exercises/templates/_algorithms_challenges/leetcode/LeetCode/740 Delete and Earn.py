@@ -46,13 +46,13 @@ class Solution:
             F[n-2] + reward if pick n
 
         """
-        rewards = [0 for _ in range(10001)]
-        for num in nums:
+        rewards = [0 ___ _ in range(10001)]
+        ___ num in nums:
             rewards[num] += num
 
         # whether to pick the number or not
         cur, prev = 0, 0
-        for reward in rewards:
+        ___ reward in rewards:
             nxt = max(cur, prev + reward)
             prev = cur
             cur = nxt
@@ -69,11 +69,11 @@ class Solution:
 
         """
         counter = defaultdict(int)
-        for n in nums:
+        ___ n in nums:
             counter[n] += 1
 
-        F = [0 for _ in range(10000 + 3)]
-        for i in range(3, 10000 + 3
+        F = [0 ___ _ in range(10000 + 3)]
+        ___ i in range(3, 10000 + 3
             cur = i - 2
             F[i] = max(
                 F[i-1],
@@ -100,13 +100,13 @@ class Solution:
             i = j
 
         # F[i] be the max points delete counter[i]
-        F = [0 for _ in counter]
-        for i in range(le.(counter)):
+        F = [0 ___ _ in counter]
+        ___ i in range(le.(counter)):
             F[i] = counter[i][0] * counter[i][1]
             F[i] += max(
                 [
                     F[j]
-                    for j in range(i)
+                    ___ j in range(i)
                     __ counter[j][0] != counter[i][0] - 1
                 ]
                 or [0]

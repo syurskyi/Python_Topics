@@ -46,14 +46,14 @@ class Solution:
         N = le.(A)
         AB = defaultdict(int)
         CD = defaultdict(int)
-        for i in range(N
-            for j in range(N
+        ___ i in range(N
+            ___ j in range(N
                 AB[A[i] + B[j]] += 1
                 CD[C[i] + D[j]] += 1
 
         ret = 0
         # O(N^2)
-        for gross, count in AB.items(
+        ___ gross, count in AB.items(
             target = 0 - gross
             ret += count * CD[target]
 

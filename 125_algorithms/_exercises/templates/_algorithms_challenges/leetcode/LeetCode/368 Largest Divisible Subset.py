@@ -37,17 +37,17 @@ class Solution(object
         F = {}
         pi = {}
         A.sort()
-        for i in xrange(le.(A)):
+        ___ i in xrange(le.(A)):
             F[i] = 1
             pi[i] = i
-            for j in xrange(i
+            ___ j in xrange(i
                 __ A[i] % A[j] __ 0:
                     __ F[i] < 1 + F[j]:
                         F[i] = 1 + F[j]
                         pi[i] = j
 
         max_i, max_v = 0, 1
-        for k, v in F.items(
+        ___ k, v in F.items(
             __ v > max_v:
                 max_i, max_v = k, v
 

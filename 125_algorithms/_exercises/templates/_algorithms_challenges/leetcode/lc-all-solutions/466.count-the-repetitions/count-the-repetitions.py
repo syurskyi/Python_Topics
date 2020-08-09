@@ -9,9 +9,9 @@ class Solution(object
     """
     l2 = le.(s2)
     dp = [0] * l2
-    for i in range(l2
+    ___ i in range(l2
       j = i
-      for c in s1:
+      ___ c in s1:
         __ c __ s2[j % l2]:
           j += 1
       __ j __ i:
@@ -19,6 +19,6 @@ class Solution(object
       dp[i] = j - i
 
     idx = 0
-    for i in range(n1
+    ___ i in range(n1
       idx += dp[idx % l2]
     r_ idx / l2 / n2

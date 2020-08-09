@@ -14,6 +14,6 @@ ___ print_header(
 ___ print_results(title, counter
     print(title + ':')
     print('-' * WIDTH)
-    for key, count in counter.most_common(TOP
+    ___ key, count in counter.most_common(TOP
         print(FMT.format(key, count))
     print()

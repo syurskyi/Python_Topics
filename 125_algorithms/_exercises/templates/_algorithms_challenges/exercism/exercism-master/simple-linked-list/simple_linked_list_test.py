@@ -78,7 +78,7 @@ class SimpleLinkedListTest(unittest.TestCase
     ___ test_non_empty_list_traverse(self
         sut = LinkedList(range(10))
         current = sut.head()
-        for i in range(10
+        ___ i in range(10
             self.assertEqual(current.value(), 9 - i)
             current = current.next()
         self.assertIsNone(current)

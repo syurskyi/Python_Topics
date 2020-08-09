@@ -14,7 +14,7 @@ class Solution:
 
         last_at = le.(A) - 1
 
-        for i in range(last_at, -1, -1
+        ___ i in range(last_at, -1, -1
             __ i + A[i] >= last_at:
                 last_at = i
 
@@ -41,8 +41,8 @@ class Solution:
         """
         dp[0] = True
 
-        for i in range(1, n
-            for j in range(i
+        ___ i in range(1, n
+            ___ j in range(i
                 """
                 backtracking
                 if `j` could be reached

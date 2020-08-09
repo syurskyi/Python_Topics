@@ -13,7 +13,7 @@ ___ calculator(operation, numbers
     __ isinstance(numbers, int
         numbers = [numbers]
     res = float(numbers[0])
-    for num in numbers[1:]:
+    ___ num in numbers[1:]:
         res = ops[operation]([res, float(num)])
     r_ round(res,2)
 
@@ -47,7 +47,7 @@ ___ call_calculator(args=None, stdout=False
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    for operation, numbers in vars(args).items(
+    ___ operation, numbers in vars(args).items(
         __ numbers is None:
             continue
 

@@ -6,7 +6,7 @@ class RestAPI(object
         self.database = database
 
     ___ _select_username(self, username
-        for user in self.database['users']:
+        ___ user in self.database['users']:
             __ user['name'] __ username:
                 r_ user
     

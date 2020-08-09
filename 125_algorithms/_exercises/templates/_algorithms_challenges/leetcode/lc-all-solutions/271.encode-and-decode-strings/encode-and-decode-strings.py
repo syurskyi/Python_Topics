@@ -6,7 +6,7 @@ class Codec:
     :rtype: str
     """
     ret = ""
-    for s in strs:
+    ___ s in strs:
       ret += str(le.(s)) + "|" + s
 
     r_ ret

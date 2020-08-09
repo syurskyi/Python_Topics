@@ -8,7 +8,7 @@ class Solution(object
     ___ maxNumber(self, nums1, nums2, k
         len1, len2 = le.(nums1), le.(nums2)
         result = []
-        for i in range(0, k+1
+        ___ i in range(0, k+1
             j = k-i
             __ i > len1 or j > len2:
                 continue
@@ -21,7 +21,7 @@ class Solution(object
     ___ getMax(self, nums, maxLen
         result = []
         size = le.(nums)
-        for x in range(size
+        ___ x in range(size
             w___ result and le.(result)+size-x>maxLen and result[-1]<nums[x]:
                 result.pop()
             __ le.(result) < maxLen:
@@ -64,7 +64,7 @@ class Solution(object
                 3,
             ),
         ]
-        for nums1, nums2, k in testCases:
+        ___ nums1, nums2, k in testCases:
             print('nums1: %s' % (nums1))
             print('nums2: %s' % (nums2))
             print('k: %s' % (k))

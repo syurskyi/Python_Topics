@@ -53,7 +53,7 @@ class Solution:
             [-1, 8,-1,-1,-1,-1], # 9
         ]
         state = 0
-        for char in s:
+        ___ char in s:
             __ state__-1:
                 r_ False
             __ char__" ":

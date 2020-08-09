@@ -8,7 +8,7 @@ class Solution(object
     ___ isReflected(self, points
         minVal, maxVal = float('inf'), float('-inf')
         hashmap = {}
-        for point in points:
+        ___ point in points:
             x, y = point[0], point[1]
             minVal = min(minVal, x)
             maxVal = max(maxVal, x)
@@ -17,7 +17,7 @@ class Solution(object
             ____
                 hashmap[point[1]].add(x)
         mid = float(minVal+maxVal)/2
-        for point in points:
+        ___ point in points:
             x, y = point[0], point[1]
             __ x __ mid:
                 continue

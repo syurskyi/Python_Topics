@@ -11,16 +11,16 @@ class Solution:
         n = le.(A)
         C = {}
 
-        for i in range(n
+        ___ i in range(n
             __ not A[i]:
                 r_ ans
 
-            for a in A[i]:
+            ___ a in A[i]:
                 __ a not in C:
                     C[a] = set()
                 C[a].add(i)
 
-        for a, S in C.items(
+        ___ a, S in C.items(
             __ le.(S) __ n:
                 ans += 1
 

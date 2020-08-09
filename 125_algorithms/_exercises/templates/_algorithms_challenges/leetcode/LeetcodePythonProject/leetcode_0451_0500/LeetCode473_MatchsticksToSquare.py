@@ -11,7 +11,7 @@ class Solution(object
         :rtype: bool
         """
         __ not nums: r_ False
-        sumVal = sum(nums)
+        sumVal = su.(nums)
         __ sumVal%4 != 0: r_ False
         target = sumVal//4
         # Faster
@@ -24,7 +24,7 @@ class Solution(object
                 sums[2] __ target and sums[3] __ target:
                 r_ True
             r_ False
-        for i in range(4
+        ___ i in range(4
             __ sums[i]+nums[ind] > target:
                 continue
             sums[i] += nums[ind]
@@ -38,7 +38,7 @@ class Solution(object
             [1, 1, 2, 2, 2],
             [3, 3, 3, 3, 4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.makesquare(nums)
             print('result: %s' % result)

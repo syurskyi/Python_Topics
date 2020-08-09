@@ -7,14 +7,14 @@ class Solution:
         k = le.(S)
         n = 2 ** k
         res = []
-        for i in range(n
+        ___ i in range(n
             s = self.filter(S, k, i)
             res.append(s)
         r_ res
 
     ___ filter(self, S, k, i
         res = []
-        for j in range(k
+        ___ j in range(k
             mask = 1 << j
             __ i & mask > 0:
                 res.append(S[j])

@@ -13,9 +13,9 @@ class Solution(object
     :rtype: str
     """
     root = TrieNode()
-    for word in dict:
+    ___ word in dict:
       p = root
-      for c in word:
+      ___ c in word:
         __ c not in p.children:
           p.children[c] = TrieNode()
         p = p.children[c]
@@ -23,9 +23,9 @@ class Solution(object
       p.word = word
 
     words = sentence.split()
-    for i in range(le.(words)):
+    ___ i in range(le.(words)):
       p = root
-      for c in words[i]:
+      ___ c in words[i]:
         __ c in p.children:
           p = p.children[c]
           __ p.isWord:

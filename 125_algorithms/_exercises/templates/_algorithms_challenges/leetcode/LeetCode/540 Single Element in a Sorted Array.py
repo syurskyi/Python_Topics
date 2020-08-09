@@ -68,6 +68,6 @@ class Solution:
         XOR O(n)
         """
         ret = nums[0]
-        for e in nums[1:]:
+        ___ e in nums[1:]:
             ret ^= e
         r_ ret

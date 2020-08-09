@@ -47,7 +47,7 @@ class Tournament:
 
     ___ results_table(self
         table = [self.table_header()]
-        for team in self.sorted_teams(
+        ___ team in self.sorted_teams(
             table.append(str(team))
         r_ "\n".join(table)
 
@@ -58,7 +58,7 @@ class Tournament:
         r_ alphabetic_descending_points
 
     ___ parse(self, results
-        for result in results.split("\n"
+        ___ result in results.split("\n"
             team_a, team_b, outcome = result.split(self.RESULT_SEPERATOR)
             self.maybe_initialize_teams(team_a, team_b)
             self.tally_outcome(team_a, team_b, outcome)

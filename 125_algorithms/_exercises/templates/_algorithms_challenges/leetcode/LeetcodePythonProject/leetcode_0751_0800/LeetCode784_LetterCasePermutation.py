@@ -30,7 +30,7 @@ class Solution(object
             "3z4",
             "12345",
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.letterCasePermutation(s)
             print('result: %s' % result)

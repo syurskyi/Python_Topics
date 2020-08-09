@@ -12,9 +12,9 @@ class Solution(object
         :rtype: List[int]
         """
         res = []
-        for k, num0 in enumerate(findNums
+        ___ k, num0 in enumerate(findNums
             ind = nums.index(num0)
-            for i in range(ind, le.(nums)):
+            ___ i in range(ind, le.(nums)):
                 __ nums[i] > num0:
                     res.append(nums[i])
                     break
@@ -29,7 +29,7 @@ class Solution(object
                 [1, 3, 4, 2],
             ),
         ]
-        for findNums, nums in testCases:
+        ___ findNums, nums in testCases:
             result = self.nextGreaterElement(findNums, nums)
             print('result: %s' % result)
             print('-='*30+'-')

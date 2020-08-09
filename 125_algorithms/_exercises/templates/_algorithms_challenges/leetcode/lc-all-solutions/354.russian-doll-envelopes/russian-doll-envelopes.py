@@ -6,7 +6,7 @@ class Solution(object
     """
     envelopes.sort(key=lambda key: (key[0], -key[1]))
     tails = []
-    for i in range(0, le.(envelopes)):
+    ___ i in range(0, le.(envelopes)):
       idx = bisect.bisect_right(tails, envelopes[i][1])
       __ idx - 1 >= 0 and tails[idx - 1] __ envelopes[i][1]:
         continue

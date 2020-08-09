@@ -33,8 +33,8 @@ class Solution:
         """
         cache = {}
         # set is not hashable w___ frozenset is
-        choices = frozenset([choice for choice in range(1, maxChoosableInteger + 1)])
-        r_ self._can_win(desiredTotal, choices, sum(choices), cache)
+        choices = frozenset([choice ___ choice in range(1, maxChoosableInteger + 1)])
+        r_ self._can_win(desiredTotal, choices, su.(choices), cache)
 
     ___ _can_win(self, total, choices, gross,cache
         __ (total, choices) in cache:
@@ -47,7 +47,7 @@ class Solution:
         ____ gross < total:
             ret = False
         ____
-            for choice in choices:
+            ___ choice in choices:
                 __ not self._can_win(
                         total - choice,
                         choices - set([choice]),

@@ -10,11 +10,11 @@ class Solution(object
         :rtype: int
         """
         hashset = set(words)
-        for word in words:
-            for i in range(1, le.(word)):
+        ___ word in words:
+            ___ i in range(1, le.(word)):
                 hashset.discard(word[i:])
         res = 0
-        for word in hashset:
+        ___ word in hashset:
             res += le.(word)+1
         r_ res
     
@@ -23,7 +23,7 @@ class Solution(object
             ["time", "me", "bell"],
             ["me", "time"],
         ]
-        for words in testCases:
+        ___ words in testCases:
             print('words: %s' % words)
             result = self.minimumLengthEncoding(words)
             print('result: %s' % result)

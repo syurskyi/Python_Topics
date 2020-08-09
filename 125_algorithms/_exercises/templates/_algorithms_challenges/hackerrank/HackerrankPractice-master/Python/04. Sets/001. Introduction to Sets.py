@@ -3,4 +3,4 @@
 
 
 ___ average(array
-    r_ sum(set(array)) / le.(set(array))
+    r_ su.(set(array)) / le.(set(array))

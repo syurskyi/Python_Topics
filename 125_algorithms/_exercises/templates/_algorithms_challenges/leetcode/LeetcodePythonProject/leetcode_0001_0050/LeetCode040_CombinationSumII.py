@@ -20,7 +20,7 @@ class Solution(object
         __ target __ 0:
             res.append(list(curr))
             r_
-        for i in range(ind, le.(nums)):
+        ___ i in range(ind, le.(nums)):
             __ target < nums[i]:
                 r_
             __ i > ind and nums[i] __ nums[i-1]:
@@ -46,7 +46,7 @@ class Solution(object
             res.append(list(curr))
             r_
         prev = -1
-        for i in range(ind, le.(nums)):
+        ___ i in range(ind, le.(nums)):
             __ nums[i] > target:
                 r_
             __ prev != nums[i]:

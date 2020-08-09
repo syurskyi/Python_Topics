@@ -8,11 +8,11 @@ class Solution(object
     ___ kSmallestPairs(self, nums1, nums2, k
         ______ heapq
         heap = []
-        for num1 in nums1:
-            for num2 in nums2:
+        ___ num1 in nums1:
+            ___ num2 in nums2:
                 heapq.heappush(heap, (num1+num2, num1, num2))
         result = []
-        for _ in range(k
+        ___ _ in range(k
             __ not heap:
                 break
             _, num1, num2 = heapq.heappop(heap)
@@ -37,7 +37,7 @@ class Solution(object
                 3,
             ),
         ]
-        for nums1, nums2, k in testCases:
+        ___ nums1, nums2, k in testCases:
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
             print('k: %s' % k)

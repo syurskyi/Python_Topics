@@ -13,22 +13,22 @@ class Solution(object
 
     __ a __ 0:
       __ b >= 0:
-        r_ [f(x) for x in nums]
+        r_ [f(x) ___ x in nums]
       ____
-        r_ [f(x) for x in reversed(nums)]
+        r_ [f(x) ___ x in reversed(nums)]
 
     mid = (-1.0) * b / (2.0 * a)
     up, down = [], []
 
     __ a >= 0:
-      for num in nums:
+      ___ num in nums:
         __ num >= mid:
           up.append(f(num))
         ____
           down.append(f(num))
       down.reverse()
     ____
-      for num in nums:
+      ___ num in nums:
         __ num >= mid:
           down.append(f(num))
         ____

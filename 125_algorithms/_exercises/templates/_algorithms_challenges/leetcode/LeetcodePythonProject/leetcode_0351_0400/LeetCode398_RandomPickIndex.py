@@ -21,7 +21,7 @@ class Solution(object
         ______ random
         count = 0
         res = -1
-        for i, num in enumerate(self.nums
+        ___ i, num in enumerate(self.nums
             __ target __ num:
                 __ random.randint(0, count) __ 0:
                     res = i

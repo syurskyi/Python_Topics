@@ -25,7 +25,7 @@ class Solution:
         a = self.nums
         n = le.(a)
 
-        for i in range(n
+        ___ i in range(n
             _i = randrange(i, n)
             a[i], a[_i] = a[_i], a[i]
 

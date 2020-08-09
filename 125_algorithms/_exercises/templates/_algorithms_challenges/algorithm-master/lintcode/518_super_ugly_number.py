@@ -15,15 +15,15 @@ class Solution:
         uglys = [0] * n
         uglys[0] = 1
 
-        for i in range(1, n
+        ___ i in range(1, n
             ugly = float('inf')
 
-            for j in range(k
+            ___ j in range(k
                 ugly = min(ugly, uglys[steps[j]] * primes[j])
 
             uglys[i] = ugly
 
-            for j in range(k
+            ___ j in range(k
                 __ uglys[steps[j]] * primes[j] __ ugly:
                     steps[j] += 1
 

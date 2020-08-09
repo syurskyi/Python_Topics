@@ -38,7 +38,7 @@ class Solution(object
             'aba',
             'abca',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.validPalindrome(s)
             print('result: %s' % result)

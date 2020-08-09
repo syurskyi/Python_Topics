@@ -26,12 +26,12 @@ class Solution:
         """
         counter = {
             alphabet: 0
-            for alphabet in string.ascii_uppercase
+            ___ alphabet in string.ascii_uppercase
         }
         lo = 0
         ret = 0
         assert k > 0
-        for hi in range(le.(s)):
+        ___ hi in range(le.(s)):
             counter[s[hi]] += 1
             w___ True:
                 most = max(counter.values())  # O(26)

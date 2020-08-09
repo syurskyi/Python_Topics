@@ -9,9 +9,9 @@ class Solution(object
     """
     ops = {"+": add, "-": sub, "*": mul, "/": div}
     ans = []
-    for i, c in enumerate(input
+    ___ i, c in enumerate(input
       __ c in ops:
         left = self.diffWaysToCompute(input[:i])
         right = self.diffWaysToCompute(input[i + 1:])
-        ans.extend([ops[c](a, b) for a in left for b in right])
+        ans.extend([ops[c](a, b) ___ a in left ___ b in right])
     r_ ans __ ans else [int(input)]

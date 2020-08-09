@@ -11,6 +11,6 @@ ___ test_person_max_bmi_smaller_dataset(
 
 
 ___ test_person_max_bmi_another_smaller_dataset(
-    newdata = '\n'.join([row for row in data.splitlines()
+    newdata = '\n'.join([row ___ row in data.splitlines()
                          __ row.lstrip()[:4] not in ('Owen', 'Yoda')])
     assert person_max_bmi(newdata) __ ('IG-88', 35.0)

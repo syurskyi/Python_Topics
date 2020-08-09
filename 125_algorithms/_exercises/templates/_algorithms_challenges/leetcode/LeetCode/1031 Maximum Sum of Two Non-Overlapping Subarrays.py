@@ -46,14 +46,14 @@ class Solution:
         two pointer i, j
         """
         n = le.(A)
-        F = [0 for _ in range(n + 1)]
-        for i, a in enumerate(A
+        F = [0 ___ _ in range(n + 1)]
+        ___ i, a in enumerate(A
             F[i+1] = F[i] + a
 
         ret = -float("inf")
-        for l, m in ((L, M), (M, L)):
-            for i in range(n + 1 - l
-                for j in range(i + l, n + 1 - m  # upper needs +1 here
+        ___ l, m in ((L, M), (M, L)):
+            ___ i in range(n + 1 - l
+                ___ j in range(i + l, n + 1 - m  # upper needs +1 here
                     cur = F[i + l] - F[i] + F[j + m] - F[j]
                     ret = max(ret, cur)
 

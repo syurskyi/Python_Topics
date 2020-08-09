@@ -11,17 +11,17 @@ class Solution(object
         :type worker: List[int]
         :rtype: int
         """
-        arr = [[d, p] for d, p in zip(difficulty, profit)]
+        arr = [[d, p] ___ d, p in zip(difficulty, profit)]
         arr.sort()
         p0 = 0
-        for i in range(le.(arr)):
+        ___ i in range(le.(arr)):
             p0 = max(p0, arr[i][1])
             arr[i][1] = p0
         res = 0
         worker.sort()
         i = 0
         maxProfit = 0
-        for w in worker:
+        ___ w in worker:
             w___ i < le.(arr) and arr[i][0] <= w:
                 maxProfit = max(maxProfit, arr[i][1])
                 i += 1
@@ -36,7 +36,7 @@ class Solution(object
                 [4,5,6,7],
             ],
         ]
-        for difficulty, profit, worker in testCases:
+        ___ difficulty, profit, worker in testCases:
             result = self.maxProfitAssignment(difficulty, profit, worker)
             print('result: %s' % result)
             print('-='*30+'-')

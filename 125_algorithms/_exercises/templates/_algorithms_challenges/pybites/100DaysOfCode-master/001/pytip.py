@@ -26,15 +26,15 @@ ___ get_csv_entries(
     with action as f:
         __ not TEST and sys.version_info.major > 2:
             f = codecs.iterdecode(f, 'utf-8')  # needed for urlopen and py3
-        for entry in csv.DictReader(f, fieldnames=FIELDS
+        ___ entry in csv.DictReader(f, fieldnames=FIELDS
             yield entry
 
 
 ___ get_tips(terms
-    for d in get_csv_entries(
+    ___ d in get_csv_entries(
         tip = Tip(time=d['time'], code=d['code'],
                   name=d['name'], published=d['published'])
-        matches = all([i.lower() in tip.code.lower() for i in terms])
+        matches = all([i.lower() in tip.code.lower() ___ i in terms])
         __ matches:
             yield tip
 
@@ -53,6 +53,6 @@ __ __name__ __ "__main__":
     __ not tips:
         print('Nothing found, you can submit a tip here: bit.ly/pythontip')
     ____
-        for num, tip in enumerate(tips, 1
+        ___ num, tip in enumerate(tips, 1
             pub = tip.published __ bool(tip.published) else 'not yet'
             print(fmt.format(num, tip.name, tip.time, tip.code, pub))

@@ -33,7 +33,7 @@ class Solution:
         operand = 0
         stk = []
         prev_op = "+"
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c.isdigit(
                 operand = operand * 10 + int(c)
 
@@ -55,7 +55,7 @@ class Solution:
                 prev_op = c
                 operand = 0
 
-        r_ sum(stk)
+        r_ su.(stk)
 
     ___ calculate_error(self, s: str) -> int:
         """
@@ -64,7 +64,7 @@ class Solution:
         operand = 0
         stk = []
         prev_op = "+"
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c.isdigit(
                 operand = operand * 10 + int(c)
 
@@ -82,7 +82,7 @@ class Solution:
                 prev_op = c
                 operand = 0
 
-        r_ sum(stk)
+        r_ su.(stk)
 
 
 __ __name__ __ "__main__":

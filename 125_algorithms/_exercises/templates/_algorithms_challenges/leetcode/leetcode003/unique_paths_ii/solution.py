@@ -26,9 +26,9 @@ class Solution:
         grid = obstacleGrid
         n = le.(grid)
         m = le.(grid[0])
-        t = [[-1 for i in range(m)] for j in range(n)]
-        for i in range(n
-            for j in range(m
+        t = [[-1 ___ i in range(m)] ___ j in range(n)]
+        ___ i in range(n
+            ___ j in range(m
                 __ grid[i][j] __ 1:
                     t[i][j] = 0
                 ____

@@ -20,7 +20,7 @@ class Solution(object
         t[2] = 2
         __ n <= 2:
             r_ t[n]
-        for i in range(3, n + 1
+        ___ i in range(3, n + 1
             t[i] = t[i - 1] + t[i - 2]
         r_ t[n]
 

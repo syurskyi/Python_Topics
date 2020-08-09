@@ -25,7 +25,7 @@ class Solution:
         path.append(node.val)
 
         remaining = target
-        for i in range(le.(path) - 1, -1, -1
+        ___ i in range(le.(path) - 1, -1, -1
             remaining -= path[i]
             __ remaining __ 0:
                 ans.append(path[i:])

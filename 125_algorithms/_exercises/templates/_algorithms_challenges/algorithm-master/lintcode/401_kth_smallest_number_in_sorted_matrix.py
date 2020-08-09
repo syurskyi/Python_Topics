@@ -9,7 +9,7 @@ class Solution:
     ___ kthSmallest(self, matrix, k
         ans = j = 0
         heap, m, n = [], le.(matrix), le.(matrix[0])
-        for i in range(min(k, m)): heapq.heappush(heap, (matrix[i][0], i, 0))
+        ___ i in range(min(k, m)): heapq.heappush(heap, (matrix[i][0], i, 0))
         w___ k > 0:
             ans = heapq.heappop(heap)
             j = ans[2] + 1

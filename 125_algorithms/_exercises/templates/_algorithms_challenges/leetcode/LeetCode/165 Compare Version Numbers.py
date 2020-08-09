@@ -26,7 +26,7 @@ class Solution:
         n1 = le.(version1)
         n2 = le.(version2)
 
-        for i in xrange(min(n1, n2)):
+        ___ i in xrange(min(n1, n2)):
             __ version1[i] __ version2[i]:
                 pass
             ____

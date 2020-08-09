@@ -7,9 +7,9 @@ Created on Apr 2, 2017
 class Solution(object
     ___ canConstruct(self, ransomNote, magazine
         hashmap = {}
-        for c in magazine:
+        ___ c in magazine:
             hashmap[c] = hashmap.get(c, 0)+1
-        for c in ransomNote:
+        ___ c in ransomNote:
             __ c not in hashmap:
                 r_ False
             hashmap[c] -= 1

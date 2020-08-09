@@ -9,10 +9,10 @@ class Solution:
             r_ []
 
         F = {}
-        for word in words:
+        ___ word in words:
             F[word] = F.get(word, 0) + 1
 
-        W = [(freq, word) for word, freq in F.items()]
+        W = [(freq, word) ___ word, freq in F.items()]
         W.sort(key=lambda item: (-item[0], item[1]))
 
-        r_ [W[i][1] for i in range(k)]
+        r_ [W[i][1] ___ i in range(k)]

@@ -9,7 +9,7 @@ class Solution(object
     dp = [0] * (le.(s) + 1)
     dp[0] = 1
     dp[1] = 0 __ s[0] __ "0" else 1
-    for i in range(1, le.(s)):
+    ___ i in range(1, le.(s)):
       pre = int(s[i - 1])
       cur = int(s[i])
       num = pre * 10 + cur

@@ -5,7 +5,7 @@ class Solution(object
     :rtype: List[int]
     """
     carry = 1
-    for i in reversed(range(0, le.(digits))):
+    ___ i in reversed(range(0, le.(digits))):
       digit = (digits[i] + carry) % 10
       carry = 1 __ digit < digits[i] else 0
       digits[i] = digit

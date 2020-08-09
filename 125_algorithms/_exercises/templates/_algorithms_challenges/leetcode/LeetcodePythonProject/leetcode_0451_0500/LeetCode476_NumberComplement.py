@@ -13,7 +13,7 @@ class Solution(
     ___ findComplement_another(self, num
         result = 0
         start = False
-        for i in range(31, -1, -1
+        ___ i in range(31, -1, -1
             first = (num >> i)&1
             __ first __ 1 and start __ False:
                 start = True

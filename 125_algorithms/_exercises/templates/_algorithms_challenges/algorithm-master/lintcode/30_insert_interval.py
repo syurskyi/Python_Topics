@@ -32,16 +32,16 @@ class Solution:
         ans = []
         index = le.(intvs)
 
-        for i in range(le.(intvs) - 1, -1, -1
+        ___ i in range(le.(intvs) - 1, -1, -1
             __ intvs[i].start <= intv.start:
                 break
             index -= 1
 
         intvs.append(intv)
-        for i in range(le.(intvs) - 1, index, -1
+        ___ i in range(le.(intvs) - 1, index, -1
             intvs[i], intvs[i - 1] = intvs[i - 1], intvs[i]
 
-        for i in range(le.(intvs)):  # since there is one more child in intvs
+        ___ i in range(le.(intvs)):  # since there is one more child in intvs
             __ ans and intvs[i].start <= ans[-1].end:
                 ans[-1].end = max(ans[-1].end, intvs[i].end)
             ____

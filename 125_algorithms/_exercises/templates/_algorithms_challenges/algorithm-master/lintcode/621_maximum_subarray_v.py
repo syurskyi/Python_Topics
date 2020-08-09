@@ -28,7 +28,7 @@ class Solution:
         queue = deque()
         ans = float('-inf')
 
-        for i in range(1, n + 1
+        ___ i in range(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
             """

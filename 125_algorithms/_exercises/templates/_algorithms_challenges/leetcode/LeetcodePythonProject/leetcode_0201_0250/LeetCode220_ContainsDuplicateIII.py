@@ -14,7 +14,7 @@ class Solution(object
         __ t < 0: r_ False
         w = t+1
         hashmap = {}
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             m = num//w
             __ m in hashmap:
                 r_ True

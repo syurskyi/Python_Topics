@@ -24,17 +24,17 @@ class Solution:
 
         length = le.(A)
         counter = 0
-        dp = [[] for _ in A]
+        dp = [[] ___ _ in A]
 
         q = []
         q.append(0)
         w___ q:
             current_level = q
             q = []
-            for ind in current_level:
+            ___ ind in current_level:
                 __ ind>=length-1:
                     r_ counter
-                for j in xrange(ind+1, ind+A[ind]+1
+                ___ j in xrange(ind+1, ind+A[ind]+1
                     __ j not in current_level:  # avoid duplicate
                         q.append(j)
             counter += 1
@@ -57,7 +57,7 @@ class Solution:
         gmax = 0
         w___ end<length:  # when end==length, it has already reached the last item
             __ not start<end: r_ 0  # avoid dead loop
-            for i in xrange(start, end
+            ___ i in xrange(start, end
                 gmax = max(gmax, A[i]+i)
 
             counter += 1

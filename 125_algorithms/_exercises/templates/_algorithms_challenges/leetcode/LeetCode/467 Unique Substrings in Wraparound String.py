@@ -49,17 +49,17 @@ class Solution:
         """
         counter = {
             c: 1
-            for c in p
+            ___ c in p
         }
         l = 1
-        for i in range(1, le.(p)):
+        ___ i in range(1, le.(p)):
             __ (ord(p[i]) - ord(p[i-1])) % 26 __ 1:  # (0 - 25) % 26 == 1
                 l += 1
             ____
                 l = 1
             counter[p[i]] = max(counter[p[i]], l)
 
-        r_ sum(counter.values())
+        r_ su.(counter.values())
 
     ___ findSubstringInWraproundString_error(self, p
         """
@@ -83,7 +83,7 @@ class Solution:
             ret.add("".join(cur))
             i = j
 
-        r_ sum(map(lambda x: (le.(x) + 1) * le.(x) // 2, ret))
+        r_ su.(map(lambda x: (le.(x) + 1) * le.(x) // 2, ret))
 
 
 __ __name__ __ "__main__":

@@ -52,13 +52,13 @@ class Twitter(object
             r_ []
         followingUsers = self.following[userId]
         followingUsers.add(userId)
-        for following_id in followingUsers:
+        ___ following_id in followingUsers:
             __ following_id in self.latestTweets:
                 latestTweet = self.latestTweets[following_id]
                 tweetTuple = (-latestTweet.tweet_id, latestTweet.tweetContext, latestTweet.prevTweet)
                 heapq.heappush(heap, tweetTuple)
         result = []
-        for _ in range(10
+        ___ _ in range(10
             __ not heap:
                 break
             tweetTuple = heapq.heappop(heap)

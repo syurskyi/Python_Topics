@@ -10,7 +10,7 @@ class Solution:
         n = le.(nums)
         left = 0
 
-        for right in range(n
+        ___ right in range(n
             __ nums[right] != 0:
                 nums[left], nums[right] = nums[right], nums[left]
                 left += 1

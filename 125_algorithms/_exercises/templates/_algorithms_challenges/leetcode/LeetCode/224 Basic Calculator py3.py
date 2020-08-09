@@ -53,7 +53,7 @@ class Solution:
                     operand = 0
                     prev_op = s[i]
                 ____ s[i] in (")", "\0"
-                    r_ sum(stk), i
+                    r_ su.(stk), i
             ____ s[i] __ "(":
                 # avoid setting operand to 0
                 operand, i = self.eval(s, i + 1, [])

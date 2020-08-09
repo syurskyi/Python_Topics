@@ -11,7 +11,7 @@ class Solution(object
         """
         arr = A
         cmax = 0
-        for i in range(le.(arr)-2
+        ___ i in range(le.(arr)-2
             cmax = max(cmax, arr[i])
             __ cmax > arr[i+2]:
                 r_ False
@@ -22,7 +22,7 @@ class Solution(object
             [1,0,2],
             [1,2,0],
         ]
-        for arr in testCases:
+        ___ arr in testCases:
             print('arr: %s' % arr)
             result = self.isIdealPermutation(arr)
             print('result: %s' % result)

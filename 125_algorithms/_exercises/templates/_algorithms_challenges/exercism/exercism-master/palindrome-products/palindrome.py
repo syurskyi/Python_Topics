@@ -15,14 +15,14 @@ class Palindromes:
 
     @classmethod
     ___ palindromes(cls, max_factor, min_factor
-        r_ [(cls.product(candidate), candidate) for candidate in
+        r_ [(cls.product(candidate), candidate) ___ candidate in
                 cls.candidates(max_factor, min_factor) __
                 cls.is_palindrome(cls.product(candidate))]
 
     @staticmethod
     ___ candidates(max_factor, min_factor
-        r_ [(i, j) for i in range(min_factor, max_factor + 1)
-                for j in range(i, max_factor + 1)]
+        r_ [(i, j) ___ i in range(min_factor, max_factor + 1)
+                ___ j in range(i, max_factor + 1)]
 
     @staticmethod
     ___ product(s

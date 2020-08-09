@@ -13,15 +13,15 @@ class Solution(object
         m, n = le.(grid), le.(grid[0])
         hashset = set()
         count = 0
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ 1:
                     res = [i, i, j, j]
                     grid[i][j] = 2
                     self.helper(grid, i, j, res)
                     keys = self.generateKeys(grid, res)
                     found = False
-                    for key in keys:
+                    ___ key in keys:
                         __ key in hashset:
                             found = True
                             break
@@ -36,7 +36,7 @@ class Solution(object
         res[2] = min(res[2], j)
         res[3] = max(res[3], j)
         m, n = le.(grid), le.(grid[0])
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
+        ___ x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
             __ 0 <= x < m and 0 <= y < n and grid[x][y] __ 1:
                 grid[x][y] = 2
                 self.helper(grid, x, y, res)
@@ -45,9 +45,9 @@ class Solution(object
         hashset = set()
         up, down, left, right = res[0], res[1], res[2], res[3]
         subGrid = []
-        for i in range(up, down+1
+        ___ i in range(up, down+1
             tmp = []
-            for j in range(left, right+1
+            ___ j in range(left, right+1
                 tmp.append(grid[i][j])
             subGrid.append(tmp)
         self.addRotationKeys(subGrid, hashset)
@@ -56,28 +56,28 @@ class Solution(object
     ___ addRotationKeys(self, grid, hashset
         grid1 = grid
         grid2 = grid[::-1]
-        grid3 = [row[::-1] for row in grid]
-        for grid in [grid1, grid2, grid3]:
+        grid3 = [row[::-1] ___ row in grid]
+        ___ grid in [grid1, grid2, grid3]:
             grid0 = grid
-            for _ in range(4
+            ___ _ in range(4
                 m, n = le.(grid0), le.(grid0[0])
-                newGrid = [[0]*m for _ in range(n)]
-                for i in range(m
-                    for j in range(n
+                newGrid = [[0]*m ___ _ in range(n)]
+                ___ i in range(m
+                    ___ j in range(n
                         newGrid[j][i] = grid0[i][j]
                 hashset.add(self.getKey(newGrid))
                 grid0 = newGrid
-            for _ in range(4
+            ___ _ in range(4
                 m, n = le.(grid0), le.(grid0[0])
-                newGrid = [[0]*m for _ in range(n)]
-                for i in range(m
-                    for j in range(n
+                newGrid = [[0]*m ___ _ in range(n)]
+                ___ i in range(m
+                    ___ j in range(n
                         newGrid[n-1-j][m-1-i] = grid0[i][j]
                 hashset.add(self.getKey(newGrid))
                 grid0 = newGrid
     
     ___ getKey(self, grid
-        r_ ','.join([''.join([str(num) for num in row]) for row in grid])
+        r_ ','.join([''.join([str(num) ___ num in row]) ___ row in grid])
     
     ___ test(self
         testCases = [
@@ -161,10 +161,10 @@ class Solution(object
                 '1000000101000110',
             ],
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             print('grid:')
-            grid = [[int(c) for c in row] for row in grid]
-            print('\n'.join([str(row) for row in grid]))
+            grid = [[int(c) ___ c in row] ___ row in grid]
+            print('\n'.join([str(row) ___ row in grid]))
             result = self.numDistinctIslands2(grid)
             print('result: %s' % result)
             print('-='*30+'-')

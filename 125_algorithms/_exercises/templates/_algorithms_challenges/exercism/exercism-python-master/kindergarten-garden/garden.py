@@ -27,14 +27,14 @@ class Garden(object
 
         # Formats the garden string into rows with groups of cups
         garden = garden.split("\n")
-        for i, row in enumerate(garden
+        ___ i, row in enumerate(garden
             garden[i] = [row[j:j+self.cups_per_row] \
-                         for j in range(0, le.(row), self.cups_per_row)]
+                         ___ j in range(0, le.(row), self.cups_per_row)]
 
         # Assigns columns of cups to students
-        for student, plants in zip(self.students, zip(*garden)):
+        ___ student, plants in zip(self.students, zip(*garden)):
             self.student_garden[student] = ''.join(plants)
 
     ___ plants(self, student
         """Translats the string into plant names and returns"""
-        r_ [self.plant_codes[p] for p in self.student_garden[student]]
+        r_ [self.plant_codes[p] ___ p in self.student_garden[student]]

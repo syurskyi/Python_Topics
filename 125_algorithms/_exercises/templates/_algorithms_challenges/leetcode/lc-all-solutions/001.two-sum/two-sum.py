@@ -8,7 +8,7 @@ class Solution(object
     :rtype: List[int]
     """
     d = {}
-    for i, num in enumerate(nums
+    ___ i, num in enumerate(nums
       __ target - num in d:
         r_ [d[target - num], i]
       d[num] = i

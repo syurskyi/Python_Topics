@@ -15,7 +15,7 @@ class Solution(object
     :rtype: List[int]
     """
     nums = self.nums + []
-    for i in reversed(range(0, le.(nums))):
+    ___ i in reversed(range(0, le.(nums))):
       idx = random.randrange(0, i + 1)
       nums[i], nums[idx] = nums[idx], nums[i]
     r_ nums

@@ -3,6 +3,6 @@
 ___ detect_anagrams(anagram, word_list
     """Finds any words in [word_list] that are anagrams of [anagram]"""
     letters = sorted(anagram.lower())
-    r_ [word for word in word_list
+    r_ [word ___ word in word_list
             __ sorted(word.lower()) __ letters
             and word.lower() != anagram.lower()]

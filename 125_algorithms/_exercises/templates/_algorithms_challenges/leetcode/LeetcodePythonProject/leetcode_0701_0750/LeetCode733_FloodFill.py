@@ -21,7 +21,7 @@ class Solution(object
     ___ helper(self, image, i, j, oldColor, newColor
         m, n = le.(image), le.(image[0])
         image[i][j] = newColor
-        for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1
+        ___ x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1
             __ 0 <= x < m and 0 <= y < n and image[x][y] __ oldColor:
                 self.helper(image, x, y, oldColor, newColor)
     
@@ -38,7 +38,7 @@ class Solution(object
                 2
             ],
         ]
-        for image, sr, sc, newColor in testCases:
+        ___ image, sr, sc, newColor in testCases:
             result = self.floodFill(image, sr, sc, newColor)
             print('result: %s' % result)
             print('-='*30+'-')

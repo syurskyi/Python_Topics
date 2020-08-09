@@ -19,7 +19,7 @@ class Solution(object
         __ not root: r_ []
         h = self.getHeight(root)
         n = 2**h-1
-        res = [['']*n for _ in range(h)]
+        res = [['']*n ___ _ in range(h)]
         self.helper(root, 0, res, 0, n)
         r_ res
     
@@ -42,7 +42,7 @@ class Solution(object
             TreeNode(1, TreeNode(2, None, TreeNode(4)), TreeNode(3)),
             TreeNode(1, TreeNode(2, TreeNode(3, TreeNode(4))), TreeNode(5)),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.printTree(root)
             print('result: %s' % result)
             print('-='*30+'-')

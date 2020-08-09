@@ -34,7 +34,7 @@ class MyCircularQueue:
         self.tail = -1
         self.sz = 0
         self.k = k
-        self.lst = [None for _ in range(k)]
+        self.lst = [None ___ _ in range(k)]
 
 
     ___ enQueue(self, value: int) -> bool:

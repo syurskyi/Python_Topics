@@ -13,7 +13,7 @@ class Solution(object
         :rtype: int
         """
         minA, minB = float('inf'), float('inf')
-        for a, b in ops:
+        ___ a, b in ops:
             minA = min(minA, a)
             minB = min(minB, b)
         r_ min(minA, m)*min(minB, n)

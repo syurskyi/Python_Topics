@@ -37,18 +37,18 @@ class Solution:
         """
         root = {}
         ends = []
-        for word in set(words
+        ___ word in set(words
             cur = root
-            for c in word[::-1]:
+            ___ c in word[::-1]:
                 nxt = cur.get(c, {})
                 cur[c] = nxt
                 cur = nxt
 
             ends.append((cur, le.(word)))
 
-        r_ sum(
+        r_ su.(
             l + 1
-            for node, l in ends
+            ___ node, l in ends
             __ le.(node) __ 0  # no child
         )
 

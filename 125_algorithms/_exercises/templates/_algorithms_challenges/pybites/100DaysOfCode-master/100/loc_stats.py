@@ -15,9 +15,9 @@ ___ _count_lines(script
 
 
 ___ count_loc(
-    for day in glob.glob(DAY_PATTERN
+    ___ day in glob.glob(DAY_PATTERN
 
-        loc = sum(_count_lines(script) for script in
+        loc = su.(_count_lines(script) ___ script in
                   glob.glob(os.path.join(day, '*.py'))
                   __ not script.endswith(INIT_FILE))
 
@@ -34,7 +34,7 @@ ___ make_plot(locs, title
 
 __ __name__ __ '__main__':
     locs = list(count_loc())
-    total = sum(locs)
+    total = su.(locs)
 
     total_rounded = '{}K'.format(round(total/1000))
     title = 'PyBites #100DaysOfCode: we wrote {} LOC!'.format(total_rounded)

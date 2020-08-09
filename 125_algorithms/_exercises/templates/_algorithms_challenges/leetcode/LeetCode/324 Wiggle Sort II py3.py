@@ -66,7 +66,7 @@ class Solution:
         # need 3-way pivot, otherwise TLE
         p = lo
         closed = lo
-        for i in range(lo + 1, hi
+        ___ i in range(lo + 1, hi
             __ A[i] < A[p]:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]

@@ -1,6 +1,6 @@
 # Problem #26
 ___ gcdlcm(
-    for i in range(int(input())):
+    ___ i in range(int(input())):
         a, b = map(int, input().split())
         g = gcd(a, b)
         print('({} {})'.format(g, a * b // g), end=' ')

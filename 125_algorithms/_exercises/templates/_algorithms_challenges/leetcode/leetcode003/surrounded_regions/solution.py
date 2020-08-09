@@ -12,13 +12,13 @@ class Solution:
         self.n = n
         self.m = m
         # Go through the four edges to search O's
-        for i in range(n
-            for j in range(m
+        ___ i in range(n
+            ___ j in range(m
                 __ i __ 0 or i __ n - 1 or j __ 0 or j __ m - 1:
                     __ board[i][j] __ 'O':
                         self.bfs(board, j, i)
-        for i in range(n
-            for j in range(m
+        ___ i in range(n
+            ___ j in range(m
                 __ board[i][j] __ 'O':
                     board[i][j] = 'X'
                 __ board[i][j] __ 'Y':
@@ -31,7 +31,7 @@ class Solution:
         queue.append((x, y))
         w___ queue:
             root_x, root_y = queue.pop(0)
-            for node in self.adjacent(board, root_x, root_y
+            ___ node in self.adjacent(board, root_x, root_y
                 x, y = node
                 __ board[y][x] != 'Y':
                     board[y][x] = 'Y'

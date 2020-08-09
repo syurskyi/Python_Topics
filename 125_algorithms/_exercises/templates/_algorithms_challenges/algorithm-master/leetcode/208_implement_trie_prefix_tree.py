@@ -18,7 +18,7 @@ class Trie:
             r_
 
         node = self.trie
-        for char in word:
+        ___ char in word:
             __ char not in node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
@@ -34,7 +34,7 @@ class Trie:
             r_ False
 
         node = self.trie
-        for char in word:
+        ___ char in word:
             __ char not in node.children:
                 r_ False
             node = node.children[char]
@@ -50,7 +50,7 @@ class Trie:
             r_ False
 
         node = self.trie
-        for char in prefix:
+        ___ char in prefix:
             __ char not in node.children:
                 r_ False
             node = node.children[char]

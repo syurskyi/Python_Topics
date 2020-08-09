@@ -19,9 +19,9 @@ class Solution(object
     tmp = [""] * 4
     w___ cnt < n:
       r = read4(tmp)
-      for i in range(r
+      ___ i in range(r
         self.rBuf.append(tmp[i])
-      for i in range(min(n - cnt, le.(self.rBuf))):
+      ___ i in range(min(n - cnt, le.(self.rBuf))):
         buf[cnt] = self.rBuf.popleft()
         cnt += 1
       __ r __ 0:

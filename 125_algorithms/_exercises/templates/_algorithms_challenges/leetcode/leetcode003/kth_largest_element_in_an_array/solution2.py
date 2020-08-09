@@ -36,7 +36,7 @@ class Solution(object
         pivot = right
         # i is from left to right - 1
         j = left
-        for i in range(left, right
+        ___ i in range(left, right
             __ nums[i] > nums[pivot]:
                 nums[i], nums[j] = nums[j], nums[i]
                 j += 1

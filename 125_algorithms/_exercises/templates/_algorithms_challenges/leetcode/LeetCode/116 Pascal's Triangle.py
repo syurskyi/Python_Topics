@@ -21,9 +21,9 @@ class Solution:
         :return: a list of lists of integers
         """
         result = []
-        for row in xrange(numRows
+        ___ row in xrange(numRows
             current = []
-            for col in xrange(row+1
+            ___ col in xrange(row+1
                 __ col__0 or col__row:
                     current.append(1)
                 ____

@@ -19,7 +19,7 @@ ___ card_shuffler(cards, shuffles
     n = le.(cards)
     offsets = [0] * n
 
-    for i in range(n
+    ___ i in range(n
         offsets[i] = get_offset(i, shuffles)
         __ offsets[i] __ -1:
             r_ -1
@@ -43,7 +43,7 @@ ___ get_offset(start, shuffles
 ___ get_lcm(*nums
     lcm = nums[0]
 
-    for i in range(1, le.(nums)):
+    ___ i in range(1, le.(nums)):
         lcm = lcm // get_gcd(lcm, nums[i]) * nums[i]
 
     r_ lcm

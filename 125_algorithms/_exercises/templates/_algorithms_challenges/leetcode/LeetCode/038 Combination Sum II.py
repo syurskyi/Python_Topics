@@ -38,10 +38,10 @@ class Solution:
         :param result: a list of lists of integers
         :return:
         """
-        __ sum(cur)__target:
+        __ su.(cur)__target:
             result.append(cur)
             r_
-        __ sum(cur)>target:
+        __ su.(cur)>target:
             r_
 
         # for ind, element in enumerate(candidates

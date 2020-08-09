@@ -35,12 +35,12 @@ class Solution(object
         # adjacency list
         queue = []
         finished_courses = []
-        prq_graph = {x: set() for x in range(numCourses)}
-        for c, p in prerequisites:
+        prq_graph = {x: set() ___ x in range(numCourses)}
+        ___ c, p in prerequisites:
             prq_graph[c].add(p)
 
         # Add nodes with no prerequisites
-        for c in prq_graph:
+        ___ c in prq_graph:
             __ not prq_graph[c]:
                 queue.append(c)
 
@@ -48,7 +48,7 @@ class Solution(object
         # if node has no prerequisites, add it to queue, and repeat
         w___ queue:
             u = queue.pop(0)
-            for v, prqs in prq_graph.items(
+            ___ v, prqs in prq_graph.items(
                 __ u in prqs:
                     prqs.remove(u)
                     __ not prqs:

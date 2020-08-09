@@ -12,12 +12,12 @@ class Solution(object
         """
         n = le.(quiet)
         richer2 = {}
-        for i in range(n
+        ___ i in range(n
             richer2[i] = []
-        for v in richer:
+        ___ v in richer:
             richer2[v[1]].append(v[0])
-        res = [-1 for i in range(n)]
-        for i in range(n
+        res = [-1 ___ i in range(n)]
+        ___ i in range(n
             self.dfs(i, quiet, richer2, res)
         r_ res
     
@@ -25,7 +25,7 @@ class Solution(object
         __ (res[i] >= 0
             r_ res[i]
         res[i] = i
-        for j in richer2[i]:
+        ___ j in richer2[i]:
             __ quiet[res[i]] > quiet[self.dfs(j, quiet, richer2, res)]:
                 res[i] = res[j]
         r_ res[i]
@@ -37,7 +37,7 @@ class Solution(object
                 [3,2,5,4,6,1,7,0],
             ],
         ]
-        for richer, quiet in testCase:
+        ___ richer, quiet in testCase:
             res = self.loudAndRich(richer, quiet)
             print('res: %s' % res)
             print('-='*30+'-')

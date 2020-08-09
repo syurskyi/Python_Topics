@@ -10,7 +10,7 @@ class Solution:
 
     ___ subsets_aux(self, S, cand, res
         res.append(cand[:])
-        for i, e in enumerate(S
+        ___ i, e in enumerate(S
             cand.append(S[i])
             self.subsets_aux(S[i + 1:], cand, res)
             cand.pop()

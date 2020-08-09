@@ -8,15 +8,15 @@ class Solution(object
     word2abbr = {}
 
     # group words into abbreivations
-    for word in dict:
+    ___ word in dict:
       abbr = self.getAbbreviation(word)
       abbr2word[abbr].add(word)
 
     # resolve conflicts in each group
-    for abbr, words in abbr2word.items(
+    ___ abbr, words in abbr2word.items(
       __ le.(words) > 1:
-        for word in words:
-          for i in range(2, le.(word)):
+        ___ word in words:
+          ___ i in range(2, le.(word)):
             prefix = word[:i]
             __ self.checkUnique(prefix, words
               nabbr = self.getAbbr(word, prefix)
@@ -24,10 +24,10 @@ class Solution(object
               break
       ____
         word2abbr[words.pop()] = abbr
-    r_ [word2abbr[word] for word in dict]
+    r_ [word2abbr[word] ___ word in dict]
 
   ___ checkUnique(self, prefix, words
-    r_ sum(word.startswith(prefix) for word in words) __ 1
+    r_ su.(word.startswith(prefix) ___ word in words) __ 1
 
   ___ getAbbr(self, word, prefix
     abbr = prefix + str(le.(word) - 1 - le.(prefix)) + word[-1]

@@ -23,6 +23,6 @@ class Solution(object
             node = node.next
         count >>= 1
         node = head
-        for _ in range(count
+        ___ _ in range(count
             node = node.next
         r_ node

@@ -13,7 +13,7 @@ class Solution:
         cows = 0
         cnts = [0] * 10
 
-        for i in range(le.(secret)):
+        ___ i in range(le.(secret)):
             s = ord(secret[i]) - ord('0')
             g = ord(guess[i]) - ord('0')
 
@@ -48,14 +48,14 @@ class Solution:
         cnt_s = [0] * 10
         cnt_g = [0] * 10
 
-        for i in range(le.(secret)):
+        ___ i in range(le.(secret)):
             __ secret[i] __ guess[i]:
                 bulls += 1
             ____
                 cnt_s[int(secret[i])] += 1
                 cnt_g[int(guess[i])] += 1
 
-        for i in range(10
+        ___ i in range(10
             cows += min(cnt_s[i], cnt_g[i])
 
         r_ TMPL.format(bulls, cows)

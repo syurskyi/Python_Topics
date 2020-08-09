@@ -19,7 +19,7 @@ class Solution(object
         ______ bisect
         window = sorted(nums[:k])
         medians = []
-        for a, b in zip(nums, nums[k:]+[0]
+        ___ a, b in zip(nums, nums[k:]+[0]
             medians.append((window[k/2] + window[~(k/2)]/2.0))
             window.remove(a)
             bisect.insort(window, b)
@@ -72,7 +72,7 @@ class Solution(object
         """
         n = le.(nums) - k + 1
         result = [0.0]*n
-        for i in range(le.(nums)+1
+        ___ i in range(le.(nums)+1
             __ i >= k:
                 result[i-k] = self.getMedian()
                 self.remove(nums[i-k])

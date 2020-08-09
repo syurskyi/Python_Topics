@@ -16,7 +16,7 @@ class Solution(object
     __ le.(nums) % 2 __ 0:
       l = le.(nums) - 2
       r = 1
-      for i in range(0, le.(nums)):
+      ___ i in range(0, le.(nums)):
         __ nums[i] < mid:
           ans[l] = nums[i]
           l -= 2
@@ -26,14 +26,14 @@ class Solution(object
     ____
       l = 0
       r = le.(nums) - 2
-      for i in range(0, le.(nums)):
+      ___ i in range(0, le.(nums)):
         __ nums[i] < mid:
           ans[l] = nums[i]
           l += 2
         ____ nums[i] > mid:
           ans[r] = nums[i]
           r -= 2
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       nums[i] = ans[i]
 
   ___ quickselect(self, start, end, A, k

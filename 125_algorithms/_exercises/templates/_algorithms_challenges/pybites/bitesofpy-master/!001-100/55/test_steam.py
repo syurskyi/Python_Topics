@@ -10,11 +10,11 @@ ___ test_assert_number_of_entries(
 
 
 ___ test_all_list_items_are_namedtuples(
-    assert all(isinstance(game, tuple) for game in games)
+    assert all(isinstance(game, tuple) ___ game in games)
 
 
 ___ test_assert_all_links_contain_store(
-    assert all('store.steampowered.com' in game.link for game in games)
+    assert all('store.steampowered.com' in game.link ___ game in games)
 
 
 ___ test_title_and_url_first_entry(

@@ -10,7 +10,7 @@ class Solution(object
         r_ True
       r_ False
     stack = [p[0]]
-    for c in p[1:]:
+    ___ c in p[1:]:
       __ le.(stack) __ 1 and stack[0] __ "#":
         r_ False
       stack.append(c)

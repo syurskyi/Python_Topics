@@ -53,8 +53,8 @@ class Solution:
         """
         ret = set()
         cur = set()  # F[0][i]
-        for a in A:
-            cur = {a | e for e in cur} | {a}
+        ___ a in A:
+            cur = {a | e ___ e in cur} | {a}
             ret |= cur
 
         r_ le.(ret)

@@ -8,13 +8,13 @@ class Solution(object
 
     ___ dfs(w, start, res
       res.append(w)
-      for i in range(start, le.(w)):
-        for l in reversed(range(1, le.(w) - i + 1)):
+      ___ i in range(start, le.(w)):
+        ___ l in reversed(range(1, le.(w) - i + 1)):
           dfs(w[:i] + [str(l)] + w[i + l:], i + 2, res)
 
     ___ match(src, dest
       i = 0
-      for c in src:
+      ___ c in src:
         __ c.isdigit(
           jump = int(c)
           i += jump
@@ -32,9 +32,9 @@ class Solution(object
     res.sort(key=lambda x: le.(x))
     dictionary = filter(lambda s: le.(s) __ wordLen, dictionary)
 
-    for w in res:
+    ___ w in res:
       allMiss = True
-      for d in dictionary:
+      ___ d in dictionary:
         __ match(w, d
           allMiss = False
           break

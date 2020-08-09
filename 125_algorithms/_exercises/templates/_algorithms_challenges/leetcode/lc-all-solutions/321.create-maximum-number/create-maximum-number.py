@@ -10,7 +10,7 @@ class Solution(object
     ___ getKDigits(num, k
       drop = le.(num) - k
       stack = []
-      for c in num:
+      ___ c in num:
         w___ drop > 0 and stack and stack[-1] < c:
           stack.pop()
           drop -= 1
@@ -35,7 +35,7 @@ class Solution(object
       r_ ans
 
     ans = []
-    for i in range(0, k + 1
+    ___ i in range(0, k + 1
       __ i <= le.(_nums1) and k - i <= le.(_nums2
         n1 = getKDigits(_nums1, i)
         n2 = getKDigits(_nums2, k - i)

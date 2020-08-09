@@ -6,15 +6,15 @@ class Solution:
         :rtype: bool
         """
         indeg = [0] * n
-        edges = [[] for _ in range(n)]
+        edges = [[] ___ _ in range(n)]
 
-        for c, p in P:
+        ___ c, p in P:
             indeg[c] += 1
             edges[p].append(c)
 
-        queue = [i for i in range(n) __ indeg[i] __ 0]
-        for p in queue:
-            for c in edges[p]:
+        queue = [i ___ i in range(n) __ indeg[i] __ 0]
+        ___ p in queue:
+            ___ c in edges[p]:
                 indeg[c] -= 1
                 __ indeg[c] __ 0:
                     queue.append(c)

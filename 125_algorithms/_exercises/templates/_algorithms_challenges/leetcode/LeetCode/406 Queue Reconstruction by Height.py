@@ -81,7 +81,7 @@ class Solution(object
         A.sort(cmp=cmp)
         ret = [0]*n
         ret_cnt = defaultdict(int)  # handle duplicate element
-        for a in A:
+        ___ a in A:
             val, inv = a
             idx = st.find_delete(st.root, inv+1-ret_cnt[val])
             ret_cnt[val] += 1

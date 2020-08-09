@@ -37,7 +37,7 @@ class Solution:
 
         m, n = le.(maze), le.(maze[0])
 
-        for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+        ___ dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
             _x = x + dx
             _y = y + dy
 

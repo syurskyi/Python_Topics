@@ -47,11 +47,11 @@ class Solution:
         n = le.(gas)
         RANGE = list(range(n))
 
-        for start in range(n
+        ___ start in range(n
             tank = 0
             is_failed = False
 
-            for mid in RANGE[start:n] + RANGE[:start]:
+            ___ mid in RANGE[start:n] + RANGE[:start]:
                 tank += gas[mid]
                 __ tank < cost[mid]:
                     is_failed = True

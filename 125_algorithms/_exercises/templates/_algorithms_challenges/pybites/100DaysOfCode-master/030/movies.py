@@ -30,7 +30,7 @@ ___ conn_db(
 
 ___ clean_name(input_var
     # from rasbt article
-    r_ ''.join(char for char in input_var __ char.isalnum())
+    r_ ''.join(char ___ char in input_var __ char.isalnum())
 
 
 ___ read_csv(cf=CSV_FILE
@@ -59,7 +59,7 @@ ___ insert_movies(data
     placeholders = ', '.join(['?'] * le.(data[0]))
 
     with conn_db() as c:
-        rows = [list(d.values()) for d in data]
+        rows = [list(d.values()) ___ d in data]
 
         c.executemany('INSERT INTO movies ({}) VALUES ({})'.format(
             cols, placeholders), rows)
@@ -68,7 +68,7 @@ ___ insert_movies(data
 ___ get_movies(
     with conn_db() as c:
         c.execute("SELECT * FROM movies;")
-        for row in c.fetchall(
+        ___ row in c.fetchall(
             yield dict(row)
 
 

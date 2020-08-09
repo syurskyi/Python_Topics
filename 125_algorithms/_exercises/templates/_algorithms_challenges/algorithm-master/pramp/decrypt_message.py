@@ -43,10 +43,10 @@ ___ encrypt(word
         r_ ''
 
     a = ord('a')
-    ans = [ord(c) for c in word]
+    ans = [ord(c) ___ c in word]
     cumul = 1
 
-    for i in range(le.(word)):
+    ___ i in range(le.(word)):
         cumul += ans[i]
         ans[i] = chr((cumul - a) % 26 + a)
 
@@ -58,9 +58,9 @@ ___ decrypt(word
         r_ ''
 
     a = ord('a')
-    ans = [ord(c) for c in word]
+    ans = [ord(c) ___ c in word]
 
-    for i in range(le.(word) - 1, -1, -1
+    ___ i in range(le.(word) - 1, -1, -1
         __ i __ 0:
             ans[i] = chr((ans[i] - 1 - a) % 26 + a)
         ____
@@ -74,10 +74,10 @@ ___ decrypt2(word
         r_ ''
 
     a = ord('a')
-    ans = [ord(c) for c in word]
+    ans = [ord(c) ___ c in word]
     cumul = 1
 
-    for i in range(le.(word)):
+    ___ i in range(le.(word)):
         # substract the cumul sum
         ans[i] -= cumul
 

@@ -4,6 +4,6 @@
 
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
-aliceScore = sum([(1 __ a[i] > b[i] else 0) for i in range(3)])
-bobScore = sum([(1 __ a[i] < b[i] else 0) for i in range(3)])
+aliceScore = su.([(1 __ a[i] > b[i] else 0) ___ i in range(3)])
+bobScore = su.([(1 __ a[i] < b[i] else 0) ___ i in range(3)])
 print(aliceScore, bobScore)

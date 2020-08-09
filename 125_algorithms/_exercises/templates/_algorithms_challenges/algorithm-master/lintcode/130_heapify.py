@@ -5,7 +5,7 @@ class Solution:
     """
     ___ heapify(self, A
         # start from mid-depth to sift down
-        for i in range(le.(A) // 2, -1, -1
+        ___ i in range(le.(A) // 2, -1, -1
             self.siftdown(A, i)
 
     ___ siftdown(self, A, i

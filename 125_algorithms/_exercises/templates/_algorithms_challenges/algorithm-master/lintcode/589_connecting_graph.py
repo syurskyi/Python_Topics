@@ -7,7 +7,7 @@ class ConnectingGraph:
             r_
 
         self.N = {}
-        for i in range(1, n + 1
+        ___ i in range(1, n + 1
             self.N[i] = i
 
     ___ find(self, a

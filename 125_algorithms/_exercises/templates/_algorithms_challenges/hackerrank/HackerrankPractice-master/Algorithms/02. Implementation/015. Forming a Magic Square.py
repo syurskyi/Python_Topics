@@ -14,10 +14,10 @@ ___ formingMagicSquare(square
         [[4, 3, 8], [9, 5, 1], [2, 7, 6]],
         ]
     minCost = 9 * 9
-    for magicSquare in allSquares:
+    ___ magicSquare in allSquares:
         cost = 0
-        for i in range(3
-            for j in range(3
+        ___ i in range(3
+            ___ j in range(3
                 cost += abs(magicSquare[i][j] - square[i][j])
         __ cost < minCost:
             minCost = cost

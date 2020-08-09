@@ -34,7 +34,7 @@ class NestedInteger(object
 
 class Solution(object
     ___ __init__(self
-        self.sum = 0
+        self.su. = 0
 
     ___ depthSum(self, nestedList
         """
@@ -42,15 +42,15 @@ class Solution(object
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
-        for elt in nestedList:
+        ___ elt in nestedList:
             self.dfs(elt, 1)
 
-        r_ self.sum
+        r_ self.su.
 
     ___ dfs(self, ni, depth
         __ ni.isInteger(
-            self.sum += ni.getInteger() * depth
+            self.su. += ni.getInteger() * depth
         ____
             lst = ni.getList()
-            for elt in lst:
+            ___ elt in lst:
                 self.dfs(elt, depth + 1)

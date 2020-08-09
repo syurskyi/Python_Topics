@@ -35,7 +35,7 @@ class Solution(object
         """
         rmcnt = 0
         left = 0
-        for c in s:
+        ___ c in s:
             __ c __ "(":
                 left += 1
             ____ c __ ")":

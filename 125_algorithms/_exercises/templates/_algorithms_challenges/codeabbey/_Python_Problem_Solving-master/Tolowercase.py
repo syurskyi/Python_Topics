@@ -1,6 +1,6 @@
 s ='HEELLLLOO'
 string = ''
-for i in range(le.(s)):
+___ i in range(le.(s)):
     __ 'A='<= s[i] <= 'Z':
         string += chr((ord(s[i])) + 32)
     ____

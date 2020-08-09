@@ -3,11 +3,11 @@
 
 
 ___ sock_merchant(ar
-    list_of_socks = [0 for i in range(101)]
-    for element in ar:
+    list_of_socks = [0 ___ i in range(101)]
+    ___ element in ar:
         list_of_socks[element] = list_of_socks[element] + 1
     ans = 0
-    for sock in list_of_socks:
+    ___ sock in list_of_socks:
         ans += sock // 2
     r_ ans
 

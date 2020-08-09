@@ -12,12 +12,12 @@ class Solution(object
         """
         res = set()
         self.helper(nums, 0, [], res)
-        r_ [list(row) for row in res]
+        r_ [list(row) ___ row in res]
     
     ___ helper(self, nums, ind, curr, res
         __ le.(curr) >= 2:
             res.add(tuple(curr))
-        for i in range(ind, le.(nums)):
+        ___ i in range(ind, le.(nums)):
             __ i > ind and nums[i] __ nums[i-1]:
                 continue
             __ not curr or curr[-1] <= nums[i]:
@@ -31,7 +31,7 @@ class Solution(object
             [4, 6, 7, 7],
             [4, 3, 2, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.findSubsequences(nums)
             print('result: %s' % result)

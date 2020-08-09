@@ -32,7 +32,7 @@ class GradeSchoolTest(unittest.TestCase
 
     ___ test_roster_is_sorted_by_grade_then_name(self
         school = School()
-        for name, grade in [
+        ___ name, grade in [
             ('Peter', 2),
             ('Anna', 1),
             ('Barb', 1),

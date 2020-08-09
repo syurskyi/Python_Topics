@@ -6,7 +6,7 @@ from collections ______ deque
 
 
 d = deque()
-for _ in range(int(input())):
+___ _ in range(int(input())):
     line = input().split()
     __ line[0] __ 'append':
         d.append(line[1])

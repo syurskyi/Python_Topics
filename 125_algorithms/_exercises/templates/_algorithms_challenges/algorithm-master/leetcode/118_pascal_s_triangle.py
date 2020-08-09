@@ -10,10 +10,10 @@ class Solution:
 
         ans.append([1])
 
-        for i in range(1, num_rows
+        ___ i in range(1, num_rows
             path = [ans[i - 1][0]]
 
-            for j in range(1, le.(ans[i - 1])):
+            ___ j in range(1, le.(ans[i - 1])):
                 path.append(ans[i - 1][j] + ans[i - 1][j - 1])
 
             path.append(ans[i - 1][-1])
@@ -34,10 +34,10 @@ class Solution:
 
         ans.append([1])
 
-        for i in range(1, num_rows
+        ___ i in range(1, num_rows
             ans.append([
                 (ans[i - 1] + [0])[j] + ([0] + ans[i - 1])[j]
-                for j in range(le.(ans[i - 1]) + 1)
+                ___ j in range(le.(ans[i - 1]) + 1)
             ])
 
         r_ ans

@@ -1,5 +1,5 @@
 #accept the number of inputs
-for i in range(int(input())):
+___ i in range(int(input())):
     
     #accept the three values S,R and P where S is current money R is the amount of money to be achieved and
     #P is the rate of interest

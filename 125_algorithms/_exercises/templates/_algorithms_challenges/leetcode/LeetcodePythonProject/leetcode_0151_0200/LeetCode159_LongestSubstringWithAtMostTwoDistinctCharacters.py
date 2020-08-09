@@ -12,7 +12,7 @@ class Solution(object
         hashmap = {}
         l = 0
         res = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             hashmap[c] = hashmap.get(c, 0)+1
             w___ le.(hashmap) > 2:
                 hashmap[s[l]] -= 1
@@ -28,7 +28,7 @@ class Solution(object
             'eceba',
             'abc',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.lengthOfLongestSubstringTwoDistinct(s)
             print('result: %s' % result)

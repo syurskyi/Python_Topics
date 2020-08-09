@@ -49,9 +49,9 @@ class Solution:
         we will consider that a falling domino expends no additional force
         """
         n = le.(dominoes)
-        L = [float("inf") for i in range(n)]
-        R = [float("inf") for i in range(n)]
-        for i in range(n-1, -1, -1
+        L = [float("inf") ___ i in range(n)]
+        R = [float("inf") ___ i in range(n)]
+        ___ i in range(n-1, -1, -1
             __ dominoes[i] __ "L":
                 L[i] = 0
             ____ dominoes[i] __ "R":
@@ -59,7 +59,7 @@ class Solution:
             ____ i + 1 < n:
                 L[i] = L[i+1] + 1
 
-        for i in range(n
+        ___ i in range(n
             __ dominoes[i] __ "R":
                 R[i] = 0
             ____ dominoes[i] __ "L":
@@ -68,7 +68,7 @@ class Solution:
                 R[i] = R[i-1] + 1
 
         ret = []
-        for i in range(n
+        ___ i in range(n
             d = min(R[i], L[i])
             __ d __ float("inf"
                 cur = "."

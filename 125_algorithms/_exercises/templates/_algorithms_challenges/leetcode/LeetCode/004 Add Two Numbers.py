@@ -72,8 +72,8 @@ class Solution:
 __ __name__ __ "__main__":
     l1s = [ListNode(1)]
     l2s = [ListNode(9), ListNode(9)]
-    for i in range(le.(l1s)-1
+    ___ i in range(le.(l1s)-1
         l1s[i].next = l1s[i+1]
-    for i in range(le.(l2s)-1
+    ___ i in range(le.(l2s)-1
         l2s[i].next = l2s[i+1]
     Solution().addTwoNumbers(l1s[0], l2s[0])

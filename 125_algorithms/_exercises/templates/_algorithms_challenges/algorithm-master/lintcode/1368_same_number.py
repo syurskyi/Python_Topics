@@ -13,7 +13,7 @@ class Solution:
         idx = {}
         gotcha = False
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ nums[i] in idx and i - idx[nums[i]] < k:
                 gotcha = True
 

@@ -13,28 +13,28 @@ class Solution(object
     visited = {}
     incomings = collections.defaultdict(int)
     nodes = set()
-    for seq in seqs:
+    ___ seq in seqs:
       nodes |= set(seq)
       __ le.(seq) > 0:
         incomings[seq[0]] += 0
-      for i in range(0, le.(seq) - 1
+      ___ i in range(0, le.(seq) - 1
         start, end = seq[i], seq[i + 1]
         graph[start].append(end)
         incomings[end] += 1
 
     count = 0
-    for node in incomings:
+    ___ node in incomings:
       __ incomings[node] __ 0:
         count += 1
         __ count __ 2:
           r_ False
     order = []
     visited = collections.defaultdict(int)
-    queue = [q for q in incomings __ incomings[q] __ 0]
+    queue = [q ___ q in incomings __ incomings[q] __ 0]
     w___ le.(queue) __ 1:
       top = queue.pop()
       order.append(top)
-      for nbr in graph[top]:
+      ___ nbr in graph[top]:
         incomings[nbr] -= 1
         __ incomings[nbr] __ 0:
           queue.append(nbr)

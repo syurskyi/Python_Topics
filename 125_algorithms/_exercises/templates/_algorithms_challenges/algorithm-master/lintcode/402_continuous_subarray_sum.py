@@ -10,7 +10,7 @@ class Solution:
 
         left = right = 0
         _max = _sum = float('-inf')
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ _sum < 0:
                 _sum = A[i]
                 left = right = i

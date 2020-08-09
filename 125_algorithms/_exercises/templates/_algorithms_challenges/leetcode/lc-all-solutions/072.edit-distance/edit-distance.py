@@ -8,11 +8,11 @@ class Solution(object
     __ le.(word1) __ 0 or le.(word2) __ 0:
       r_ max(le.(word1), le.(word2))
 
-    dp = [[0] * (le.(word2) + 1) for _ in range(0, le.(word1) + 1)]
+    dp = [[0] * (le.(word2) + 1) ___ _ in range(0, le.(word1) + 1)]
     dp[0][0] = 0
 
-    for i in range(0, le.(word1) + 1
-      for j in range(0, le.(word2) + 1
+    ___ i in range(0, le.(word1) + 1
+      ___ j in range(0, le.(word2) + 1
         __ i __ 0:
           dp[i][j] = j
         ____ j __ 0:

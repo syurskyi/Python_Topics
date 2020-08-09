@@ -10,8 +10,8 @@ class Solution(object
         r_ False
       dp = [False] * (le.(word) + 1)
       dp[0] = True
-      for i in range(1, le.(word) + 1
-        for j in reversed(range(0, i)):
+      ___ i in range(1, le.(word) + 1
+        ___ j in reversed(range(0, i)):
           __ not dp[j]:
             continue
           __ word[j:i] in cands:
@@ -22,7 +22,7 @@ class Solution(object
     words.sort(key=lambda x: -le.(x))
     cands = set(words)
     ans = []
-    for i in range(0, le.(words)):
+    ___ i in range(0, le.(words)):
       cands -= {words[i]}
       __ wordBreak(words[i], cands
         ans += words[i],

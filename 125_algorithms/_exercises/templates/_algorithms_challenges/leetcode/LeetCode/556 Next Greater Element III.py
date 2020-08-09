@@ -64,9 +64,9 @@ class Solution:
         from right to left
         find the first digit that has min larger, then sort the rest
         """
-        seq = [int(e) for e in str(n)]
+        seq = [int(e) ___ e in str(n)]
         stk = []  # record index
-        for i in range(le.(seq) - 1, -1 , -1
+        ___ i in range(le.(seq) - 1, -1 , -1
             e = seq[i]
             popped = None
             w___ stk and seq[stk[-1]] > e:

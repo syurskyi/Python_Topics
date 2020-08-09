@@ -9,7 +9,7 @@ ___ count(strand, abbreviation
 ___ nucleotide_counts(strand
     r_ {
         abbr: strand.count(abbr)
-        for abbr in NUCLEOTIDES
+        ___ abbr in NUCLEOTIDES
     }
 
 

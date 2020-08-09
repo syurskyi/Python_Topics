@@ -27,7 +27,7 @@ class Solution(object
             (3, 7),
             (101, 110),
         ]
-        for m, n in testCases:
+        ___ m, n in testCases:
             print('m: %s, n: %s' % (m, n))
             result = self.rangeBitwiseAnd(m, n)
             print('result: %s' % (result))

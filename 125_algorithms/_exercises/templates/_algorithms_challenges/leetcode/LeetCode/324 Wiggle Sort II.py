@@ -93,7 +93,7 @@ class SolutionSort(object
         A = sorted(nums)
 
         j, k = (n-1) / 2, n-1
-        for i in xrange(le.(nums)):
+        ___ i in xrange(le.(nums)):
             __ i % 2 __ 0:
                 nums[i] = A[j]
                 j -= 1

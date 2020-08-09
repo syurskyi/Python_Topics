@@ -1,7 +1,7 @@
 a =  int(input())
 string = ''
-for i in range(a
-    temp1,temp2 = num1, num2 = [int(ele) for ele in input().split()]
+___ i in range(a
+    temp1,temp2 = num1, num2 = [int(ele) ___ ele in input().split()]
     w___ num1 !=  num2:
         __ num1 >  num2:
             num1 = num1 - num2

@@ -6,12 +6,12 @@ class Solution(object
     """
     ans = [""] * le.(nums)
     scores = []
-    for i, num in enumerate(nums
+    ___ i, num in enumerate(nums
       scores.append((num, i))
     scores.sort(reverse=True)
     rankTitles = ["Gold Medal", "Silver Medal", "Bronze Medal"]
     rank = 0
-    for _, i in scores:
+    ___ _, i in scores:
       __ rank > 2:
         ans[i] = str(rank + 1)
       ____

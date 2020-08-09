@@ -27,7 +27,7 @@ class Solution:
         """
         ret = deque()
         stk = []
-        for i in range(le.(T) - 1, -1 , -1
+        ___ i in range(le.(T) - 1, -1 , -1
             w___ stk and T[stk[-1]] <= T[i]:  # disregard smaller ones
                 stk.pop()
 

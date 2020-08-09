@@ -14,7 +14,7 @@ ___ generate(num, counter
 
 values = list(map(int, input().split()))
 
-for i in range(amount_value
+___ i in range(amount_value
     results.append(generate(values[i],0))
     generator_list.clear()
 

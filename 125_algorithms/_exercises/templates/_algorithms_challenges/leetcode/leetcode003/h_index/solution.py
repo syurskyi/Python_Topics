@@ -28,7 +28,7 @@ class Solution(object
         count = 0
         lowest = 0
         h = 0
-        for i, c in enumerate(citations
+        ___ i, c in enumerate(citations
             lowest = c
             count = i + 1
             __ lowest >= count:

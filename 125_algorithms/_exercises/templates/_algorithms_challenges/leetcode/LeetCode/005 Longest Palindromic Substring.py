@@ -19,7 +19,7 @@ class Solution(object
             r_ s
 
         ret = s[0]
-        for i in xrange(0, n
+        ___ i in xrange(0, n
             cur = self.get_palindrome_from_center(s, i, i)  # odd length
             __ le.(cur) > le.(ret ret = cur
             cur = self.get_palindrome_from_center(s, i, i+1)
@@ -48,13 +48,13 @@ class Solution(object
         :return: string
         """
         length = le.(s)
-        dp = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1
+        dp = [[False ___ _ in xrange(length+1)] ___ _ in xrange(length+1)]
+        ___ i in xrange(length+1
             dp[i][i] = True
 
         longest = [0, 0]
-        for j in xrange(length+1
-            for i in xrange(j-1, -1, -1
+        ___ j in xrange(length+1
+            ___ i in xrange(j-1, -1, -1
                 __ i+1 __ j:
                     dp[i][j] = True
                 ____
@@ -73,18 +73,18 @@ class Solution(object
         length = le.(s)
 
         longest = ""
-        dp = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]  # larger than usual
-        for i in xrange(length+1
+        dp = [[False ___ _ in xrange(length+1)] ___ _ in xrange(length+1)]  # larger than usual
+        ___ i in xrange(length+1
             dp[i][i] = True  # empty
-        for i in xrange(length
+        ___ i in xrange(length
             dp[i][i+1] = True  # single char
-        for i in xrange(length-1
+        ___ i in xrange(length-1
             dp[i][i+2] = s[i] __ s[i+1]
             __ dp[i][i+1]:
                 longest = s[i:i+2]
 
-        for l in xrange(3, length+1  # breadth
-            for i in xrange(0, length-l
+        ___ l in xrange(3, length+1  # breadth
+            ___ i in xrange(0, length-l
                 __ s[i] __ s[i+l-1]:
                     dp[i][i+l] = dp[i+1][i+l-1]
                 ____

@@ -29,7 +29,7 @@ class Solution(object
                 r_ 0
             __ num >= low and self.isPalindrome(num*num
                 count += 1
-        for c in list('012'
+        ___ c in list('012'
             count += self.dfs(low, high, c+s+c)
         r_ count
 

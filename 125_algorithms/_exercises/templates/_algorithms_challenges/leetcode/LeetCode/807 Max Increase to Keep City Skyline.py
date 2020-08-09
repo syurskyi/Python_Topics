@@ -51,20 +51,20 @@ class Solution:
         # left to right projection
         lr = [
             max(row)
-            for row in grid
+            ___ row in grid
         ]
         # top to bottom projection
         tb = [
             max(
                 grid[i][j]
-                for i in range(m)
+                ___ i in range(m)
             )
-            for j in range(n)
+            ___ j in range(n)
         ]
 
         ret = 0
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 diff = min(lr[i], tb[j]) - grid[i][j]
                 ret += diff
 

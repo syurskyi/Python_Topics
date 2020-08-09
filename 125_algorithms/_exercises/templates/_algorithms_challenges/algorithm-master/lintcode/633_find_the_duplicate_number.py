@@ -34,7 +34,7 @@ class Solution:
     ___ after_dup(self, A, mid
         cnt = 0
 
-        for a in A:
+        ___ a in A:
             __ a <= mid:
                 cnt += 1
             __ cnt > mid:

@@ -28,12 +28,12 @@ class Solution:
             r_
 
         queue = [node]
-        visited = {_node: False for _node in graph}
+        visited = {_node: False ___ _node in graph}
 
-        for _node in queue:
+        ___ _node in queue:
             visited[_node] = True
             __ values[_node] __ target:
                 r_ _node
-            for _neighbor in _node.neighbors:
+            ___ _neighbor in _node.neighbors:
                 __ not visited[_neighbor]:
                     queue.append(_neighbor)

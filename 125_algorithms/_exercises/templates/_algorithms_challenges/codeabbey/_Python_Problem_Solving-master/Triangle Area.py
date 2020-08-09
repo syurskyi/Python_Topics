@@ -1,6 +1,6 @@
 ______ ma__
 
-for i in range(int(input())):
+___ i in range(int(input())):
     x1,y1,x2,y2,x3,y3 = list(map(int,input().split()))
     
     #distance formula

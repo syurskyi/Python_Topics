@@ -20,7 +20,7 @@ class Solution:
         w___ queue:
             node = queue.pop(0)
             nodeCopy = hashmap[node]
-            for node0 in node.neighbors:
+            ___ node0 in node.neighbors:
                 __ node0 in hashmap:
                     nodeCopy.neighbors.append(hashmap[node0])
                 ____

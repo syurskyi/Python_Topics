@@ -20,12 +20,12 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        for i in reversed(range(32)):
-            prefixes = set(num >> i for num in nums)
+        ___ i in reversed(range(32)):
+            prefixes = set(num >> i ___ num in nums)
             ret <<= 1
             # fixing the remaining bit, set the LSB
             cur = ret + 1
-            for p in prefixes:
+            ___ p in prefixes:
                 # a ^ b ^ a = b
                 __ cur ^ p in prefixes:
                     ret = cur

@@ -7,7 +7,7 @@ Created on Apr 11, 2017
 class Solution(object
     ___ thirdMax(self, nums
         first, second, third = float('-inf'), float('-inf'), float('-inf')
-        for num in nums:
+        ___ num in nums:
             __ num > first:
                 third = second
                 second = first
@@ -23,7 +23,7 @@ class Solution(object
         testCases = [
             [2, 2, 3, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.thirdMax(nums)
             print('result: %s' % result)

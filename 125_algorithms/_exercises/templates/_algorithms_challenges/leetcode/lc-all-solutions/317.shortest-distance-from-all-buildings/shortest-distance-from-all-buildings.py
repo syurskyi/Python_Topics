@@ -15,7 +15,7 @@ class Solution(object
       count = 1
       w___ queue:
         i, j, dist = queue.popleft()
-        for di, dj in dirs:
+        ___ di, dj in dirs:
           newi, newj = i + di, j + dj
           __ (newi, newj) in visited:
             continue
@@ -36,21 +36,21 @@ class Solution(object
       r_ True
 
     count = 0
-    for i in range(0, le.(grid)):
-      for j in range(0, le.(grid[0])):
+    ___ i in range(0, le.(grid)):
+      ___ j in range(0, le.(grid[0])):
         __ grid[i][j] __ 1:
           count += 1
 
-    hit = [[0] * le.(grid[0]) for _ in range(0, le.(grid))]
-    for i in range(0, le.(grid)):
-      for j in range(0, le.(grid[0])):
+    hit = [[0] * le.(grid[0]) ___ _ in range(0, le.(grid))]
+    ___ i in range(0, le.(grid)):
+      ___ j in range(0, le.(grid[0])):
         __ grid[i][j] __ 1:
           __ not bfs(i, j, grid, count, hit
             r_ -1
 
     ans = float("-inf")
-    for i in range(0, le.(grid)):
-      for j in range(0, le.(grid[0])):
+    ___ i in range(0, le.(grid)):
+      ___ j in range(0, le.(grid[0])):
         __ grid[i][j] < 0 and hit[i][j] __ count:
           ans = max(ans, grid[i][j])
           grid[i][j] = 0

@@ -5,7 +5,7 @@ class Solution(object
         :rtype: bool
         """
         increase = None
-        for i, num in enumerate(A
+        ___ i, num in enumerate(A
             __ i > 0:
                 __ num __ A[i-1]:
                     continue

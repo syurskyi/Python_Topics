@@ -11,7 +11,7 @@ class Solution(object
         :rtype: str
         """
         count = [0]*10
-        for c in s:
+        ___ c in s:
             __ c __ 'z': count[0]+=1
             __ c __ 'w': count[2]+=1
             __ c __ 'x': count[6]+=1
@@ -28,6 +28,6 @@ class Solution(object
         count[9] = count[9] - count[8] - count[5] - count[6]
         count[1] = count[1] - count[0] - count[2] - count[4]
         result = ''
-        for i in range(10
+        ___ i in range(10
             result += str(i)*count[i]
         r_ result

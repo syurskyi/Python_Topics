@@ -53,14 +53,14 @@ class Solution:
 
         time = []
 
-        for x, _x, height in buildings:
+        ___ x, _x, height in buildings:
             time.append((x, height, True))
             time.append((_x, height, False))
 
         time.sort()
         heap = HashHeapq()
 
-        for x, height, is_start in time:
+        ___ x, height, is_start in time:
             __ is_start:
                 heap.push(-height)
             ____

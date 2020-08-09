@@ -1,7 +1,7 @@
 ___ verify(isbn
     counter = 1
     total = 0
-    for d in reversed(isbn
+    ___ d in reversed(isbn
         __ d is 'X':
             __ counter != 1:
                 r_ False

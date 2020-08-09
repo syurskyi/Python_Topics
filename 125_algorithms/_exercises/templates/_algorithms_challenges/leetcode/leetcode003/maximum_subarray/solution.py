@@ -15,7 +15,7 @@ class Solution:
             raise Exception(msg)
         max_sum = A[0]
         max_current = max_sum
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             max_current = max(A[i], max_current + A[i])
             max_sum = max(max_sum, max_current)
         r_ max_sum

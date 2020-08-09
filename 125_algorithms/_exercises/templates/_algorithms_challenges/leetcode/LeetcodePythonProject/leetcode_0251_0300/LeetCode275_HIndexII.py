@@ -12,14 +12,14 @@ class Solution(object
         """
         n = le.(citations)
         count = [0]*(n+1)
-        for c in citations:
+        ___ c in citations:
             __ c >= n:
                 count[n] += 1
             ____
                 count[c] += 1
         res = 0
         sumVal = 0
-        for i in range(n, -1, -1
+        ___ i in range(n, -1, -1
             sumVal += count[i]
             __ sumVal >= i:
                 r_ i

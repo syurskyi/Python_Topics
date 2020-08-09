@@ -57,7 +57,7 @@ class Solution:
 
         close_ptr = 0
         duplicate_once = False  # flag
-        for open_ptr in range(close_ptr+1, length
+        ___ open_ptr in range(close_ptr+1, length
             __ A[close_ptr]!=A[open_ptr]:  # found non-duplicate
                 duplicate_once = False
                 close_ptr += 1

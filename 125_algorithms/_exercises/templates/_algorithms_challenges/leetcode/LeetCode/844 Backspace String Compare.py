@@ -48,7 +48,7 @@ class Solution:
 
     ___ make_stk(self, S
         stk = []
-        for s in S:
+        ___ s in S:
             __ s __ "#":
                 __ stk:
                     stk.pop()

@@ -122,11 +122,11 @@ class RestAPI(object
         self.database['users'].append(new_user)
 
     ___ get_users(self, usernames
-        users = [self.get_user(username) for username in usernames]
+        users = [self.get_user(username) ___ username in usernames]
         r_ sorted(users, key=lambda user: user['name'])
 
     ___ get_user(self, username
         users = self.database['users']
-        for user in users:
+        ___ user in users:
             __ user['name'] __ username:
                 r_ user

@@ -10,9 +10,9 @@ class NumMatrix(object
             self.tbl = None
             r_
         m, n = le.(matrix), le.(matrix[0])
-        tbl = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m
-            for j in range(n
+        tbl = [[0]*(n+1) ___ _ in range(m+1)]
+        ___ i in range(m
+            ___ j in range(n
                 tbl[i+1][j+1] = tbl[i][j+1]+tbl[i+1][j]+matrix[i][j]-tbl[i][j]
         self.tbl = tbl
     

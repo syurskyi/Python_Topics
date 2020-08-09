@@ -11,7 +11,7 @@ class Solution(object
         :type S: int
         :rtype: int
         """
-        sumVal = sum(nums)
+        sumVal = su.(nums)
         __ sumVal < S or (sumVal+S)%2 != 0:
             r_ 0
         target = (sumVal+S)//2
@@ -20,8 +20,8 @@ class Solution(object
     ___ helper(self, nums, target
         dp = [0]*(target+1)
         dp[0] = 1
-        for num in nums:
-            for i in range(target, -1, -1
+        ___ num in nums:
+            ___ i in range(target, -1, -1
                 __ i >= num:
                     dp[i] += dp[i-num]
         r_ dp[-1]
@@ -37,7 +37,7 @@ class Solution(object
                 1000000000,
             ],
         ]
-        for nums, S in testCases:
+        ___ nums, S in testCases:
             print('nums: %s' % nums)
             print('S: %s' % S)
             result = self.findTargetSumWays(nums, S)

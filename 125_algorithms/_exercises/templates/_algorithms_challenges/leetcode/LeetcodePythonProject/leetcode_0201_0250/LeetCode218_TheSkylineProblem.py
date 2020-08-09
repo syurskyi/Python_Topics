@@ -11,14 +11,14 @@ class Solution(object
         """
         ______ heapq
         heights = []
-        for b in buildings:
+        ___ b in buildings:
             heights.append([b[0], -b[2]])
             heights.append([b[1], b[2]])
         heights.sort()
         heap = [0]
         res = []
         prev = 0
-        for h in heights:
+        ___ h in heights:
             __ h[1] < 0:
                 heapq.heappush(heap, h[1])
             ____
@@ -34,7 +34,7 @@ class Solution(object
         testCases = [
             [ [2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8] ],
         ]
-        for buildings in testCases:
+        ___ buildings in testCases:
             print('buildings: %s' % (buildings))
             result = self.getSkyline(buildings)
             print('result: %s' % (result))

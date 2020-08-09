@@ -38,7 +38,7 @@ class Solution:
         dfs + memoization
         """
         ret = []
-        for i in range(1, 10
+        ___ i in range(1, 10
             ret.extend(self.dfs(i, N, K))
 
         __ N __ 1:
@@ -55,10 +55,10 @@ class Solution:
                 ret = [[start]]
             ____ N > 1:
                 __ start + K <= 9:
-                    for e in self.dfs(start + K, N - 1, K
+                    ___ e in self.dfs(start + K, N - 1, K
                         ret.append([start] + e)
                 __ start - K >= 0 and K != 0:  # special case
-                    for e in self.dfs(start - K, N - 1, K
+                    ___ e in self.dfs(start - K, N - 1, K
                         ret.append([start] + e)
 
             self.cache[start, N, K] = ret

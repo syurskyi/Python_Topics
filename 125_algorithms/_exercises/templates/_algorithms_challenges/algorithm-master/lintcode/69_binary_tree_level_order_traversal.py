@@ -30,7 +30,7 @@ class Solution:
         w___ queue:
             ans.append([])
 
-            for node in queue:
+            ___ node in queue:
                 __ node.left:
                     _queue.append(node.left)
                 __ node.right:

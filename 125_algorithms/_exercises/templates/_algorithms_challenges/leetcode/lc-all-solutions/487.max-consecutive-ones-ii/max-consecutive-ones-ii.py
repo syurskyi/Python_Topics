@@ -9,7 +9,7 @@ class Solution(object
     :type nums: List[int]
     :rtype: int
     """
-    for num in nums:
+    ___ num in nums:
       self.readNum(num)  # stream the input
     r_ self.ans
 

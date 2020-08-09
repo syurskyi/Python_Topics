@@ -38,10 +38,10 @@ class Solution:
             r_ 0
 
         n = le.(A)
-        F = [LenCnt(l=1, c=1) for _ in A]
+        F = [LenCnt(l=1, c=1) ___ _ in A]
         mx = LenCnt(l=1, c=1)
-        for i in range(1, n
-            for j in range(i
+        ___ i in range(1, n
+            ___ j in range(i
                 __ A[i] > A[j]:
                     __ F[i].l < F[j].l + 1:
                         F[i].l = F[j].l + 1

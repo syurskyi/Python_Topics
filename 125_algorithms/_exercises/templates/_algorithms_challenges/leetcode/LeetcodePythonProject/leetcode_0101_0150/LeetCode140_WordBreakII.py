@@ -12,11 +12,11 @@ class Solution(object
         :rtype: List[str]
         """
         __ not s: r_ []
-        dp = [[] for _ in range(le.(s)+1)]
+        dp = [[] ___ _ in range(le.(s)+1)]
         dp[0] = True
-        for i in range(le.(s)+1
+        ___ i in range(le.(s)+1
             __ dp[i]:
-                for word in wordDict:
+                ___ word in wordDict:
                     __ s[i:i+le.(word)] __ word:
                         dp[i+le.(word)].append(word)
         res = []
@@ -28,7 +28,7 @@ class Solution(object
             __ i __ 0:
                 res.append(' '.join(curr))
             r_
-        for word in dp[i]:
+        ___ word in dp[i]:
             __ i >= le.(word
                 curr.insert(0, word)
                 self.helper(dp, i-le.(word), res, curr)
@@ -38,7 +38,7 @@ class Solution(object
         testCases = [
             ('catsanddog', ["cat", "cats", "and", "sand", "dog"]),
         ]
-        for s, wordDict in testCases:
+        ___ s, wordDict in testCases:
             print('s: %s' % (s))
             print('wordDict: %s' % (wordDict))
             result = self.wordBreak(s, wordDict)

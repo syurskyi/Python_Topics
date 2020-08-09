@@ -21,7 +21,7 @@ class Solution:
 
         nodes = {}
 
-        for u, v in edges:
+        ___ u, v in edges:
             __ not self.union(nodes, u, v
                 r_ [u, v]
 
@@ -65,7 +65,7 @@ class Solution:
 
         nodes = collections.defaultdict(set)
 
-        for u, v in edges:
+        ___ u, v in edges:
             # dfs to check u and v are connected already => cycle
             __ u in nodes and v in nodes and self.dfs(nodes, u, v, set()):
                 r_ [u, v]
@@ -83,7 +83,7 @@ class Solution:
 
         visited.add(u)
 
-        for x in nodes[u]:
+        ___ x in nodes[u]:
             __ self.dfs(nodes, x, v, visited
                 r_ True
 

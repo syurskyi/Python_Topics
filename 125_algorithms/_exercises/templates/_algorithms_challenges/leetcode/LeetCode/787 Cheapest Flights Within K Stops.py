@@ -51,7 +51,7 @@ class Solution:
         """
         G = defaultdict(dict)
         visited = defaultdict(bool)
-        for u, v, w in flights:
+        ___ u, v, w in flights:
             G[u][v] = w
 
         pq = [(0, 0, src)]  # (cost, step, city)
@@ -62,7 +62,7 @@ class Solution:
 
             stops = k - 1 + 1
             __ stops <= K:
-                for v, w in G[u].items(
+                ___ v, w in G[u].items(
                     heapq.heappush(pq, (cost + w, k + 1, v))
 
 

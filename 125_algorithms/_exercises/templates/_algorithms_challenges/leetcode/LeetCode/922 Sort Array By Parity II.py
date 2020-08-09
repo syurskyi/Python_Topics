@@ -29,7 +29,7 @@ from typing ______ List
 class Solution:
     ___ sortArrayByParityII(self, A: List[int]) -> List[int]:
         even_idx = 0
-        for odd_idx in range(1, le.(A), 2
+        ___ odd_idx in range(1, le.(A), 2
             __ A[odd_idx] % 2 __ 0:
                 w___ A[even_idx] % 2 __ 0:
                     even_idx += 2
@@ -43,7 +43,7 @@ class Solution:
         """
         closed = -1
         n = le.(A)
-        for i in range(n
+        ___ i in range(n
             __ A[i] % 2 __ 0:
                 closed += 1
                 A[i], A[closed] = A[closed], A[i]
@@ -51,7 +51,7 @@ class Solution:
         j = closed + 1
         __ j % 2 __ 1:
             j += 1
-        for i in range(1, closed + 1, 2
+        ___ i in range(1, closed + 1, 2
             A[i], A[j] = A[j], A[i]
             j += 2
 

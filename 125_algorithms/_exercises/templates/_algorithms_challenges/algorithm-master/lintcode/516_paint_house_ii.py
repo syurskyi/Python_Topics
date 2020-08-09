@@ -27,13 +27,13 @@ class Solution:
 
         INFINITY = float('inf')
         n, k = le.(C), le.(C[0])
-        dp = [[0] * k for _ in range(n)]
+        dp = [[0] * k ___ _ in range(n)]
         prev = curr = 0
 
-        for j in range(k
+        ___ j in range(k
             dp[curr][j] = C[0][j]
 
-        for i in range(1, n
+        ___ i in range(1, n
             prev = curr
             curr = 1 - curr
             min1 = min2 = INFINITY
@@ -41,7 +41,7 @@ class Solution:
             """
             to find the minimum and second minimum in previous iteration
             """
-            for j in range(k
+            ___ j in range(k
                 __ dp[prev][j] < min1:
                     min2 = min1
                     min1 = dp[prev][j]
@@ -55,7 +55,7 @@ class Solution:
             and then we need to take the color
             with the second minimum in `dp[prev]`
             """
-            for j in range(k
+            ___ j in range(k
                 dp[curr][j] = C[i][j]
                 __ dp[prev][j] __ min1:
                     dp[curr][j] += min2

@@ -24,12 +24,12 @@ class Solution:
         __ k >= n:
             r_ self.maxProfit_unlimited_transactions(prices)
 
-        l = [0 for _ in xrange(k+1)]  # local max
-        g = [0 for _ in xrange(k+1)]  # global max
+        l = [0 ___ _ in xrange(k+1)]  # local max
+        g = [0 ___ _ in xrange(k+1)]  # global max
         gmax = 0
-        for i in xrange(1, n
+        ___ i in xrange(1, n
             diff = prices[i] - prices[i-1]
-            for j in xrange(k, 0, -1
+            ___ j in xrange(k, 0, -1
                 l[j] = max(g[j-1]+diff, l[j]+diff)
                 g[j] = max(l[j], g[j])
                 gmax = max(gmax, g[j])
@@ -38,7 +38,7 @@ class Solution:
 
     ___ maxProfit_unlimited_transactions(self, prices
         profit = 0
-        for i in xrange(1, le.(prices)):
+        ___ i in xrange(1, le.(prices)):
             profit += max(0, prices[i] - prices[i-1])
         r_ profit
 

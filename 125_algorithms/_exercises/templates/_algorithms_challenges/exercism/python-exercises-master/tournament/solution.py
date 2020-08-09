@@ -26,11 +26,11 @@ ___ calculate_points(stats
 ___ format_table(results
     table = ['Team                           | MP |  W |  D |  L |  P']
 
-    for team, games in sorted(
+    ___ team, games in sorted(
             results.items(), key=lambda g: (-calculate_points(g[1]), g[0])):
         team_fmt = '{0:30} | {1:2} | {3:2} | {4:2} | {5:2} | {2:2}'
         table.append(
-            team_fmt.format(team, sum(games), calculate_points(games), *games))
+            team_fmt.format(team, su.(games), calculate_points(games), *games))
 
     r_ '\n'.join(table)
 
@@ -38,8 +38,8 @@ ___ format_table(results
 ___ tally(data
     table = defaultdict(lambda: [0, 0, 0])
 
-    for line in data.split('\n'
-        for team, result in parse_game(line
+    ___ line in data.split('\n'
+        ___ team, result in parse_game(line
             table[team][result] += 1
 
     r_ format_table(table)

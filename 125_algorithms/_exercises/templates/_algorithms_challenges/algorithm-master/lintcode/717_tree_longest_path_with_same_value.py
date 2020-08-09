@@ -13,10 +13,10 @@ class Solution:
         __ not a or le.(a) <= 1:
             r_ 0
 
-        neibs = [[] for _ in range(le.(a) + 1)]  # neighbors
+        neibs = [[] ___ _ in range(le.(a) + 1)]  # neighbors
 
         # to build the node connection
-        for i in range(0, le.(e), 2
+        ___ i in range(0, le.(e), 2
             neibs[e[i]].append(e[i + 1])
             neibs[e[i + 1]].append(e[i])
 
@@ -28,7 +28,7 @@ class Solution:
     ___ dfs(self, root, curr, a, neibs
         tmp = []
 
-        for neib in neibs[curr]:
+        ___ neib in neibs[curr]:
             # ignore if the neib is curr's parent
             __ neib __ root:
                 continue

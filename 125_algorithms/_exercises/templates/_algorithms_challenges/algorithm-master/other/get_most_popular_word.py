@@ -213,7 +213,7 @@ __ __name__ __ '__main__':
     _in, _out = 'ABABCCCBAC', 'ABABBCCBBC'
     gotcha = []
 
-    for i in range(le.(_in)):
+    ___ i in range(le.(_in)):
         gotcha.append(s.insert(_in[i]) is None)
         res = s.get_most_popular_word()
         __ res != _out[i]: print(_in, i, _in[i], res)

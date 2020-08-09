@@ -10,7 +10,7 @@ class Solution(object
         :type k: int
         :rtype: bool
         """
-        sumVal = sum(nums)
+        sumVal = su.(nums)
         __ sumVal%k != 0:
             r_ False
         nums.sort(reverse=True)
@@ -19,7 +19,7 @@ class Solution(object
     ___ helper(self, nums, elems, target, ind, k
         __ ind __ k:
             r_ True
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ elems[ind]+nums[i] <= target:
                 elems[ind] += nums[i]
                 __ elems[ind] __ target and\
@@ -47,7 +47,7 @@ class Solution(object
                 13,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.canPartitionKSubsets(nums, k)

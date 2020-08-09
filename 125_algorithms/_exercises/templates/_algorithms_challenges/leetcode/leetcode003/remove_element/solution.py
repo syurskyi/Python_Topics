@@ -15,7 +15,7 @@ class Solution(object
         """
         n = le.(nums)
         j = 0
-        for i in range(n
+        ___ i in range(n
             __ nums[i] != val:
                 nums[j] = nums[i]
                 j += 1

@@ -15,8 +15,8 @@ class Solution(object
     w___ queue:
       level += 1
       temp = []
-      for q in queue:
-        for factor in squares:
+      ___ q in queue:
+        ___ factor in squares:
           __ q - factor __ 0:
             r_ level
           __ q - factor < 0:

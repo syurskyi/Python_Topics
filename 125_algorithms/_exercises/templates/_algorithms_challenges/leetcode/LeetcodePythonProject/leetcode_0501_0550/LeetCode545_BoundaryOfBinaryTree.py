@@ -62,7 +62,7 @@ class Solution(object
         testCases = [
             TreeNode(1, None, TreeNode(2, TreeNode(3), TreeNode(4))),
         ]
-        for root in testCases:
+        ___ root in testCases:
             res = self.boundaryOfBinaryTree(root)
             print('result: %s' % res)
             print('-='*30+'-')

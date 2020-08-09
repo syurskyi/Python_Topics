@@ -10,7 +10,7 @@ class Solution(object
 #         first = float('inf')
         first = nums[0]
         second = float('inf')
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ nums[i] <= first:
                 first = nums[i]
             ____ nums[i] <= second:
@@ -31,7 +31,7 @@ class Solution(object
             [2, 1, 3],
             [3, 2, 1, 9],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.increasingTriplet(nums)
             print('result: %s' % (result))

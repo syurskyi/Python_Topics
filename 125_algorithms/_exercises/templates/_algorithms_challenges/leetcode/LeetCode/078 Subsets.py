@@ -33,7 +33,7 @@ class Solution:
 
     ___ generate_subsets(self, S, current, result
         result.append(current)
-        for ind, val in enumerate(S
+        ___ ind, val in enumerate(S
             self.generate_subsets(S[ind+1:], current+[val], result)
 
 __ __name____"__main__":

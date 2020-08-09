@@ -37,7 +37,7 @@ class Solution(object
         testCases = [
             TreeNode(2, TreeNode(2), TreeNode(5, TreeNode(5), TreeNode(7))),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.findSecondMinimumValue(root)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -29,7 +29,7 @@ ___ download_page(test=False
 
 ___ get_posts(
     with open(HTML) as f:
-        r_ {k: int(v) for k, v in author_regex.findall(f.read())}
+        r_ {k: int(v) ___ k, v in author_regex.findall(f.read())}
 
 
 __ __name__ __ '__main__':
@@ -38,7 +38,7 @@ __ __name__ __ '__main__':
 
     authors = get_posts()
 
-    total = sum(authors.values())
+    total = su.(authors.values())
 
     fmt = 'Total number of posts on {}: {}'
     print(fmt.format(SITE, total))

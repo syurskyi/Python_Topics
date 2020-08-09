@@ -7,7 +7,7 @@ Created on Apr 23, 2017
 class Solution(object
     ___ repeatedSubstringPattern(self, s
         n = le.(s)
-        for i in range(1, n//2+2
+        ___ i in range(1, n//2+2
             sub = s[:i]
             __ le.(s)%le.(sub) __ 0:
                 j = i

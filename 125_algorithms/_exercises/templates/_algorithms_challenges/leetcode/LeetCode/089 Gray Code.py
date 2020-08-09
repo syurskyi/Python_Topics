@@ -55,9 +55,9 @@ class Solution:
             r_ [0]
         result = [0, 1]
 
-        for num_of_bit in range(2, n+1
+        ___ num_of_bit in range(2, n+1
             msb = 1<<num_of_bit-1
-            for element in reversed(result
+            ___ element in reversed(result
                 result.append(msb+element)
 
         r_ result
@@ -69,4 +69,4 @@ class Solution:
         :param n:
         :return: list of integers (dec_repr)
         """
-        r_ [(x>>1)^x for x in xrange(1<<n)]
+        r_ [(x>>1)^x ___ x in xrange(1<<n)]

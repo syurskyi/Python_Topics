@@ -28,7 +28,7 @@ class Solution:
             result.append(cur)
 
         # partition seq
-        for i in xrange(le.(seq)):
+        ___ i in xrange(le.(seq)):
             __ self.is_palindrome(seq[:i+1]  # otherwise prune
                 self.get_partition(seq[i+1:], cur+[seq[:i+1]], result)
 

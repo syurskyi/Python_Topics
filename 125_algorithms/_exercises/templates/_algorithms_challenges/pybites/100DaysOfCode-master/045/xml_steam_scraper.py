@@ -30,7 +30,7 @@ ___ main(
 	
 	check_create_db()
 	feed = feedparser.parse(FEED_FILE)
-	for entry in feed['entries']:
+	___ entry in feed['entries']:
 		Game = (entry['title'], entry['link'])
 		games_list.append(Game)
 	

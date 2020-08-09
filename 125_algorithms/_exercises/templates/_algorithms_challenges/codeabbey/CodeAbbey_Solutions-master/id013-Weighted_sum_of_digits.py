@@ -1,10 +1,10 @@
 ___ wsd(numOfSums #wsd = Weighted sum of digits
         sums = raw_input().split(' ')
         answer = []
-        for number in sums:
+        ___ number in sums:
                     num = 0
                     digits = list(number)
-                    for x in range(le.(digits)):
+                    ___ x in range(le.(digits)):
                             num += int(digits[x]) * (x+1)
                     answer.append(str(num))
         print(' '.join(answer))

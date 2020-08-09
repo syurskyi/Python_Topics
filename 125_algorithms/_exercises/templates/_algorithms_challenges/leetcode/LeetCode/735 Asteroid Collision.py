@@ -55,7 +55,7 @@ class Solution:
         stack from left to right, only -> <- will pop the stack
         """
         stk = []
-        for e in asteroids:
+        ___ e in asteroids:
             w___ stk and e < 0 < stk[-1]:
                 __ abs(e) > abs(stk[-1]
                     # -> exploded, <- continues
@@ -83,7 +83,7 @@ class Solution:
         """
         stk = []
         n = le.(asteroids)
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             cur = asteroids[i]
             w___ stk and asteroids[stk[-1]] < 0 and cur > 0 and abs(asteroids[stk[-1]]) < abs(cur
                 stk.pop()
@@ -101,7 +101,7 @@ class Solution:
 
         r_ [
             asteroids[i]
-            for i in stk[::-1]
+            ___ i in stk[::-1]
         ]
 
 

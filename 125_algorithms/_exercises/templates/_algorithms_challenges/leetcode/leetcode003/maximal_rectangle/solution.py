@@ -9,16 +9,16 @@ class Solution:
         __ not matrix[0]:
             r_ 0
         m = le.(matrix[0])
-        hist = [[0 for j in range(m)] for i in range(n)]
-        for i in range(n
-            for j in range(m
+        hist = [[0 ___ j in range(m)] ___ i in range(n)]
+        ___ i in range(n
+            ___ j in range(m
                 __ i __ 0:
                     hist[i][j] = int(matrix[i][j])
                 ____
                     __ matrix[i][j] __ '1':
                         hist[i][j] = 1 + hist[i - 1][j]
         res = 0
-        for row in hist:
+        ___ row in hist:
             res = max(res, self.max_hist_rect(row))
         r_ res
 
@@ -28,7 +28,7 @@ class Solution:
         n = le.(heights)
         max_area = heights[0]
         stack = []
-        for i in range(n + 1
+        ___ i in range(n + 1
             w___ stack and (i __ n or heights[stack[-1]] > heights[i]
                 h = heights[stack.pop()]
                 __ stack:

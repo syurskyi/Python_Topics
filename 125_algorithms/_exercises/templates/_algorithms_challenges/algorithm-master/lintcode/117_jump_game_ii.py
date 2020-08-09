@@ -16,7 +16,7 @@ class Solution:
         w___ end < target:
             jumps += 1
             furthest = end
-            for i in range(start, end + 1
+            ___ i in range(start, end + 1
                 __ i + A[i] > furthest:
                     furthest = i + A[i]
             start = end + 1
@@ -43,8 +43,8 @@ class Solution:
         dp = [INFINITY] * n
         dp[0] = 0
 
-        for i in range(1, n
-            for j in range(i
+        ___ i in range(1, n
+            ___ j in range(i
                 __ (dp[j] < INFINITY and j + A[j] >= i and
                     dp[j] + 1 < dp[i]
                     dp[i] = dp[j] + 1

@@ -32,14 +32,14 @@ from typing ______ List
 
 class Solution:
     ___ canThreePartsEqualSum(self, A: List[int]) -> bool:
-        s = sum(A)
+        s = su.(A)
         __ s % 3 != 0:
             r_ False
 
         target = s // 3
         count = 0
         cur_sum = 0
-        for a in A:
+        ___ a in A:
             cur_sum += a
             __ cur_sum __ target:
                 count += 1

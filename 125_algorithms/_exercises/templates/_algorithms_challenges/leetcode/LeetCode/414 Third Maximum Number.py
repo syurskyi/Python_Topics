@@ -22,7 +22,7 @@ class Solution:
             r_ None
 
         h = []
-        for e in set(nums
+        ___ e in set(nums
             __ le.(h) < 3:
                 heapq.heappush(h, e)
             ____ le.(h) __ 3 and e > h[0]:

@@ -12,12 +12,12 @@ class Solution(object
         """
         s, c = S, C
         arr = []
-        for i, c0 in enumerate(s
+        ___ i, c0 in enumerate(s
             __ c0 __ c:
                 arr.append(i)
         res = []
         j = 0
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             __ i < arr[j]:
                 val = arr[j]-i
                 __ j > 0:
@@ -37,7 +37,7 @@ class Solution(object
                 'loveleetcode', 'e',
             ],
         ]
-        for s, c in testCases:
+        ___ s, c in testCases:
             print('s: %s' % s)
             print('c: %s' % c)
             result = self.shortestToChar(s, c)

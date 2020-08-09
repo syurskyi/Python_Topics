@@ -7,8 +7,8 @@ Created on Apr 8, 2017
 class Solution(object
     ___ readBinaryWatch(self, num
         result = []
-        for i in range(12
-            for j in range(60
+        ___ i in range(12
+            ___ j in range(60
                 total = self.countDigits(i) + self.countDigits(j)
                 __ total __ num:
                     s = '%s:%02d' % (i, j)

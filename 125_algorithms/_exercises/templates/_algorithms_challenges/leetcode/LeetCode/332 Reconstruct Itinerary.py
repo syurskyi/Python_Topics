@@ -37,7 +37,7 @@ class Solution(object
         :rtype: List[str]
         """
         G = defaultdict(list)  # every list is a heap
-        for s, e in tickets:
+        ___ s, e in tickets:
             heapq.heappush(G[s], e)  # heap lexical order
 
         ret = deque()

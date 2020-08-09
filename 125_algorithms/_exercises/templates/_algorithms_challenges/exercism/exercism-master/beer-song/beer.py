@@ -5,7 +5,7 @@ class Beer:
 
     @classmethod
     ___ song(cls, start, stop
-        r_ "\n".join([cls.verse(verse_num) for verse_num
+        r_ "\n".join([cls.verse(verse_num) ___ verse_num
                           in reversed(list(range(stop, start + 1)))]) + "\n"
 
     @classmethod

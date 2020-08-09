@@ -40,7 +40,7 @@ ___ test_append_and_new_stats_second_instance(list2
 
 @pytest.mark.parametrize("arg", ['a', ['a'], {'a': 1}])
 ___ test_cannot_append_non_int_values(list1, list2, arg
-    for instance in (list1, list2
+    ___ instance in (list1, list2
         with pytest.raises(TypeError
             instance.append(arg)
 

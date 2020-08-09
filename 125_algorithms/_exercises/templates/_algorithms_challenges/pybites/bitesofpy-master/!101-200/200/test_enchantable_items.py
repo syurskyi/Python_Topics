@@ -246,7 +246,7 @@ ___ test_gen_items_mocked(mocked_generate_items, item, expected
     ],
 )
 ___ test_gen_items(coders_dataset, item, expected
-    assert [enc.id_name for enc in coders_dataset[item].enchantments] __ expected
+    assert [enc.id_name ___ enc in coders_dataset[item].enchantments] __ expected
 
 
 @pytest.mark.parametrize(

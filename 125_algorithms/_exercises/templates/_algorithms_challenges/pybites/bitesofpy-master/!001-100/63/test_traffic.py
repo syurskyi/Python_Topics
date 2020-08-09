@@ -29,12 +29,12 @@ ___ test_iterator_islice(slice1, slice2
 
 
 ___ test_equal_values_in_islice(slice1
-    for color in 'red green amber'.split(
-        assert sum(1 for state in slice1 __ state.color __ color) __ 32
+    ___ color in 'red green amber'.split(
+        assert su.(1 ___ state in slice1 __ state.color __ color) __ 32
 
 
 ___ test_return_types(slice2
-    assert all(type(state) __ State for state in slice2)
+    assert all(type(state) __ State ___ state in slice2)
 
 
 @pytest.mark.parametrize("color, expected", [
@@ -43,6 +43,6 @@ ___ test_return_types(slice2
     ('amber', 16),
 ])
 ___ test_timings(slice1, color, expected
-    timeout_for_color = sum(state.timeout for state in slice1
+    timeout_for_color = su.(state.timeout ___ state in slice1
                             __ state.color __ color)
     assert timeout_for_color __ expected

@@ -18,21 +18,21 @@ class Solution:
         """
         `t[l][r]` means the ways to evaluate True in `symb[i:j]`
         """
-        t = [[0] * n for _ in range(n)]
-        f = [[0] * n for _ in range(n)]
+        t = [[0] * n ___ _ in range(n)]
+        f = [[0] * n ___ _ in range(n)]
 
-        for i in range(n
+        ___ i in range(n
             __ symb[i] __ 'T':
                 t[i][i] = 1
             ____
                 f[i][i] = 1
 
-        for r in range(n
-            for l in range(r - 1, -1, -1
+        ___ r in range(n
+            ___ l in range(r - 1, -1, -1
                 t[l][r] = 0
                 f[l][r] = 0
 
-                for i in range(l, r
+                ___ i in range(l, r
                     __ oper[i] __ '&':
                         t[l][r] += t[l][i] * t[i + 1][r]
                         f[l][r] += (

@@ -6,11 +6,11 @@ class Solution(object
     """
     __ not grid:
       r_ 0
-    dpRow = [[0] * (le.(grid[0]) + 2) for _ in range(0, le.(grid) + 2)]
-    dpCol = [[0] * (le.(grid[0]) + 2) for _ in range(0, le.(grid) + 2)]
+    dpRow = [[0] * (le.(grid[0]) + 2) ___ _ in range(0, le.(grid) + 2)]
+    dpCol = [[0] * (le.(grid[0]) + 2) ___ _ in range(0, le.(grid) + 2)]
 
-    for i in range(0, le.(grid)):
-      for j in range(0, le.(grid[0])):
+    ___ i in range(0, le.(grid)):
+      ___ j in range(0, le.(grid[0])):
         dpRow[i + 1][j + 1] = dpRow[i + 1][j]
         dpCol[i + 1][j + 1] = dpCol[i][j + 1]
         __ grid[i][j] __ "W":
@@ -21,8 +21,8 @@ class Solution(object
           dpCol[i + 1][j + 1] += 1
 
     maxKilled = 0
-    for i in reversed(range(0, le.(grid))):
-      for j in reversed(range(0, le.(grid[0]))):
+    ___ i in reversed(range(0, le.(grid))):
+      ___ j in reversed(range(0, le.(grid[0]))):
         __ grid[i][j] __ "W":
           continue
         dpRow[i + 1][j + 1] = max(dpRow[i + 1][j + 1], dpRow[i + 1][j + 2])

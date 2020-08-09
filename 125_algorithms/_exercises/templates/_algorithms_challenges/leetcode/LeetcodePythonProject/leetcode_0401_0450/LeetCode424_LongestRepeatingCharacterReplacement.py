@@ -10,7 +10,7 @@ class Solution(object
         maxCount = 0
         left = 0
         res = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             ind = ord(c)-ord('A')
             arr[ind] += 1
             maxCount = max(maxCount, arr[ind])
@@ -25,7 +25,7 @@ class Solution(object
             ('ABAB', 2),
             ('AABABBA', 1),
         ]
-        for s, k in testCases:
+        ___ s, k in testCases:
             print('s: %s' % s)
             print('k: %s' % k)
             result = self.characterReplacement(s, k)

@@ -8,7 +8,7 @@ from bowling ______ BowlingGame
 class BowlingTest(unittest.TestCase
 
     ___ roll(self, rolls
-        [self.game.roll(roll) for roll in rolls]
+        [self.game.roll(roll) ___ roll in rolls]
 
     ___ roll_and_score(self, rolls
         self.roll(rolls)

@@ -38,7 +38,7 @@ class Solution(object
                 'j',
             ],
         ]
-        for letters, target in testCases:
+        ___ letters, target in testCases:
             result = self.nextGreatestLetter(letters, target)
             print('result: %s' % result)
             print('-='*30+'-')

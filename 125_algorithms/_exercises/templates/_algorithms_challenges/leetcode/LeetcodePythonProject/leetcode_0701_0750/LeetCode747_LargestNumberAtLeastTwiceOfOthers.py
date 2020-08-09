@@ -13,7 +13,7 @@ class Solution(object
             r_ -1
         first, fInd = float('-inf'), -1
         second = float('-inf')
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             __ num > first:
                 second = first
                 first = num
@@ -27,7 +27,7 @@ class Solution(object
             [3, 6, 1, 0],
             [1, 2, 3, 4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.dominantIndex(nums)
             print('result: %s' % result)

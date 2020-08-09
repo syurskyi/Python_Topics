@@ -99,7 +99,7 @@ class Solution:
         l = le.(L)
 
         Lmap = {}  # map of L
-        for item in L:
+        ___ item in L:
             __ item in Lmap:
                 Lmap[item] += 1
             ____
@@ -143,7 +143,7 @@ class Solution:
 
             # case 3, mach one in L not used up
             ____ word in Lmap and Lmap[word]__0:
-                for j in xrange(0, working_win.index(word)+1  # kind of prefix suffix concepts
+                ___ j in xrange(0, working_win.index(word)+1  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.index(word)+1:]
                 working_win.append(word)

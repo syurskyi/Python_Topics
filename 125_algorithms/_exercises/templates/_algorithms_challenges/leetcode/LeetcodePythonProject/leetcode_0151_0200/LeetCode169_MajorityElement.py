@@ -11,7 +11,7 @@ class Solution(object
         :rtype: int
         """
         count, cand = 0, -1
-        for num in nums:
+        ___ num in nums:
             __ cand __ num:
                 count += 1
             ____ count __ 0:
@@ -26,7 +26,7 @@ class Solution(object
             [5, 1, 1, 1, 3],
             [1, 1, 1, 3],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.majorityElement(nums)
             print('result: %s' % (result))

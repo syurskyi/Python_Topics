@@ -5,10 +5,10 @@ infile.close()
 
 array = array.split(" ")
 array = list(map(int,array))
-for i in range(int(n)-1
+___ i in range(int(n)-1
     highest = 0
     index = 0
-    for j in range(le.(array)-i
+    ___ j in range(le.(array)-i
         __ array[j]>highest:
             highest = array[j]
             index=j

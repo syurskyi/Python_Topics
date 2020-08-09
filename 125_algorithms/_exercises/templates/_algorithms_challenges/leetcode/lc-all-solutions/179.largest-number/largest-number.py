@@ -12,4 +12,4 @@ class Solution:
         r_ 0
 
     nums.sort(cmp=cmpFunc, reverse=True)
-    r_ "".join(str(num) for num in nums) __ sum(nums) != 0 else "0"
+    r_ "".join(str(num) ___ num in nums) __ su.(nums) != 0 else "0"

@@ -16,7 +16,7 @@ class Solution:
 
         ans = float('-inf')
         S = Smin = 0
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             S += A[i]
 
             __ S - Smin > ans:
@@ -53,7 +53,7 @@ class Solution:
 
         Smin = 0
         S = [0] * (n + 1)
-        for i in range(1, n + 1
+        ___ i in range(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
             __ S[i] - Smin > ans:

@@ -11,10 +11,10 @@ class Solution(object
         :rtype: int
         """
         same = set()
-        for f, b in zip(fronts, backs
+        ___ f, b in zip(fronts, backs
             __ f __ b: same.add(f)
         res = float('inf')
-        for f, b in zip(fronts, backs
+        ___ f, b in zip(fronts, backs
             __ f not in same:
                 res = min(res, f)
             __ b not in same:
@@ -29,7 +29,7 @@ class Solution(object
         """
         hashmap1 = {}
         hashmap2 = {}
-        for f, b in zip(fronts, backs
+        ___ f, b in zip(fronts, backs
             hashmap1[f] = hashmap1.get(f, 0)+1
             hashmap2[b] = hashmap2.get(b, 0)+1
         self.res = float('inf')
@@ -71,7 +71,7 @@ class Solution(object
                 [3,4,5,6,2,6,5,6,2,3,1,2,3,2,4,5,4,3,5,3],
             ],
         ]
-        for fronts, backs in testCases:
+        ___ fronts, backs in testCases:
             print('fronts: %s' % fronts)
             print('backs: %s' % backs)
             result = self.flipgame(fronts, backs)

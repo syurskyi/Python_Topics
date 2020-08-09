@@ -12,7 +12,7 @@ ___ create_chart(
     book = ''
     last_date = ''
     with open(LOG) as log:
-        for line in log:
+        ___ line in log:
             (d,i,t) = line_check.match(line).groups()
             __ d != last_date:
                 print(f'\n{d} ',end='')

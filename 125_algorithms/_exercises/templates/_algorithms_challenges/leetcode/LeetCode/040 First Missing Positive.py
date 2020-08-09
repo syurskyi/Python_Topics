@@ -32,7 +32,7 @@ class Solution:
                 A[current-1], A[i] = current, A[current-1]   # go to the next iteration
 
 
-        for i in xrange(length
+        ___ i in xrange(length
             __ A[i]!=i+1:
                 r_ i+1
         r_ A[-1]+1

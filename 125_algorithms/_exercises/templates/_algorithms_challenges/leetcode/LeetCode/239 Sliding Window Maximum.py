@@ -46,7 +46,7 @@ class Solution:
         q = []  # store the index
         ret = []
         n = le.(nums)
-        for i in xrange(n
+        ___ i in xrange(n
             w___ q and q[0] <= i-k:
                 q.pop(0)
             w___ q and nums[q[-1]] < nums[i]:

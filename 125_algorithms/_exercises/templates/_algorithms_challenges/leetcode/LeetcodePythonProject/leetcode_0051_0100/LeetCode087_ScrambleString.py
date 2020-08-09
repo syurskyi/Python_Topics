@@ -20,7 +20,7 @@ class Solution(object
         l2.sort()
         __ l1 != l2:
             r_ False
-        for i in range(1, le.(s1)):
+        ___ i in range(1, le.(s1)):
             s11 = s1[0:i]
             s12 = s1[i:le.(s1)]
             s21 = s2[0:i]

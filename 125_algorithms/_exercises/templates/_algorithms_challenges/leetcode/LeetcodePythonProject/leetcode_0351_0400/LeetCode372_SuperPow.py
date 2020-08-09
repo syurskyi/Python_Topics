@@ -8,7 +8,7 @@ class Solution(object
     ___ superPow(self, a, b
         __ a % 1337 __ 0: r_ a
         p = 0
-        for i in b:
+        ___ i in b:
             p = (p*10+i)%1140
         __ p __ 0:
             p += 1440
@@ -29,7 +29,7 @@ class Solution(object
             [2, [3]],
             [2, [1, 0]],
         ]
-        for a, b in testCases:
+        ___ a, b in testCases:
             print('a: %s' % a)
             print('b: %s' % b)
             result = self.superPow(a, b)

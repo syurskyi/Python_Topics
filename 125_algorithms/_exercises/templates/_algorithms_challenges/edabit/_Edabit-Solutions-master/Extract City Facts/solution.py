@@ -1,5 +1,5 @@
 ___ city_facts(city
-    for i in city:
+    ___ i in city:
         __ i __ "name":
             c = city[i]
         ____ i __ "population":

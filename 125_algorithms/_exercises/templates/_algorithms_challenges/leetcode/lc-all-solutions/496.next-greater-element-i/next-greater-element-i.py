@@ -7,10 +7,10 @@ class Solution(object
     """
     d = {}
     ans = [-1] * le.(findNums)
-    for i, num in enumerate(findNums
+    ___ i, num in enumerate(findNums
       d[num] = i
     stack = []
-    for num in nums:
+    ___ num in nums:
       w___ stack and stack[-1] < num:
         top = stack.pop()
         __ top in d:

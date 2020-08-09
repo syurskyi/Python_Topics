@@ -8,10 +8,10 @@ class NumMatrix(object
       col = 0
     ____
       col = le.(matrix[0])
-    self.c = [[0] * (col + 1) for _ in range(0, le.(matrix) + 1)]
-    self.m = [[0] * (col + 1) for _ in range(0, le.(matrix) + 1)]
-    for i in range(0, le.(matrix)):
-      for j in range(0, le.(matrix[0])):
+    self.c = [[0] * (col + 1) ___ _ in range(0, le.(matrix) + 1)]
+    self.m = [[0] * (col + 1) ___ _ in range(0, le.(matrix) + 1)]
+    ___ i in range(0, le.(matrix)):
+      ___ j in range(0, le.(matrix[0])):
         self.update(i, j, matrix[i][j])
 
   ___ update(self, row, col, val

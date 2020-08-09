@@ -18,7 +18,7 @@ class TestKnapsack(object
         assert_equal(results[0].label, 'd')
         assert_equal(results[1].label, 'b')
         total_value = 0
-        for item in results:
+        ___ item in results:
             total_value += item.value
         assert_equal(total_value, expected_value)
         print('Success: test_knapsack_bottom_up')

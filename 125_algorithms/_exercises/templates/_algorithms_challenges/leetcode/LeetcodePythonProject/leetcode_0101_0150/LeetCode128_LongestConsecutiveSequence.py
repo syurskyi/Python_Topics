@@ -12,7 +12,7 @@ class Solution(object
         """
         nums = set(nums)
         maxLen = 0
-        for x in nums:
+        ___ x in nums:
             __ x-1 not in nums:
                 y = x+1
                 w___ y in nums:
@@ -24,7 +24,7 @@ class Solution(object
         testCases = [
             [100, 4, 200, 1, 3, 2],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.longestConsecutive(nums)
             print('result: %s' % (result))

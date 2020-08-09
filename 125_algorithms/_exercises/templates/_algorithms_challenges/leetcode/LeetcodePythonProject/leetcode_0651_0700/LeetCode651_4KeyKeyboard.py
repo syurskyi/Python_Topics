@@ -11,9 +11,9 @@ class Solution(object
         """
         n = N
         dp = [0]*(n+1)
-        for i in range(1, n+1
+        ___ i in range(1, n+1
             dp[i] = max(dp[i], i)
-            for j in range(1, n+1
+            ___ j in range(1, n+1
                 __ i+j+2 < n+1:
                     dp[i+j+2] = max(dp[i+j+2], dp[i]*(j+1))
         r_ dp[-1]
@@ -25,7 +25,7 @@ class Solution(object
             3,
             7,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.maxA(n)
             print('result: %s' % result)

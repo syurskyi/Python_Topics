@@ -1,7 +1,7 @@
 class UnionFind(object
   ___ __init__(self, n
-    self.dad = [i for i in range(n)]
-    self.rank = [0 for i in range(n)]
+    self.dad = [i ___ i in range(n)]
+    self.rank = [0 ___ i in range(n)]
     self.count = n
 
   ___ find(self, x
@@ -37,8 +37,8 @@ class Solution(object
     """
     uf = UnionFind(le.(M))
     ans = 0
-    for i in range(le.(M)):
-      for j in range(le.(M[0])):
+    ___ i in range(le.(M)):
+      ___ j in range(le.(M[0])):
         __ M[i][j] __ 1:
           uf.union(i, j)
     r_ uf.getCount()

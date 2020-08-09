@@ -14,7 +14,7 @@ class Solution(object
         queue = []
         hashset = set()
         
-        for i in range(n
+        ___ i in range(n
             tmp = (1 << i)
             hashset.add((tmp, i, 0))
             queue.append((tmp, i, 1))
@@ -25,7 +25,7 @@ class Solution(object
                 r_ curr[2]-1
             ____
                 neighbors = graph[curr[1]]
-                for v in neighbors:
+                ___ v in neighbors:
                     bitMask = curr[0]
                     bitMask |= (1<<v)
                     t = (bitMask, v, 0)
@@ -39,7 +39,7 @@ class Solution(object
             [[1,2,3],[0],[0],[0]],
             [[1],[0,2,4],[1,3,4],[2],[1,2]],
         ]
-        for graph in testCases:
+        ___ graph in testCases:
             result = self.shortestPathLength(graph)
             print('result: %s' % result)
 

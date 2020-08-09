@@ -8,9 +8,9 @@ class Solution(object
     ___ sequenceReconstruction(self, org, seqs
         graph = {}
         degree = {}
-        for seq in seqs:
+        ___ seq in seqs:
             length = le.(seq)
-            for i in range(length
+            ___ i in range(length
                 __ seq[i] not in graph:
                     graph[seq[i]] = []
                 __ seq[i] not in degree:
@@ -19,7 +19,7 @@ class Solution(object
                     graph[seq[i-1]].append(seq[i])
                     degree[seq[i]] += 1
         queue = []
-        for key, val in degree.items(
+        ___ key, val in degree.items(
             __ val __ 0:
                 queue.append(key)
         index = 0
@@ -32,7 +32,7 @@ class Solution(object
                 r_ False
             index += 1
             __ curr in graph:
-                for nextVal in graph[curr]:
+                ___ nextVal in graph[curr]:
                     degree[nextVal] -= 1
                     __ degree[nextVal] __ 0:
                         queue.append(nextVal)

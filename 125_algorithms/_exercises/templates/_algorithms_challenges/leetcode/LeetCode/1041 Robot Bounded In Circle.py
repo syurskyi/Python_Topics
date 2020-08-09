@@ -58,8 +58,8 @@ class Solution:
         """
         x, y = 0, 0
         i = 0
-        for _ in range(4
-            for cmd in instructions:
+        ___ _ in range(4
+            ___ cmd in instructions:
                 __ cmd __ "G":
                     dx, dy = dirs[i]
                     x += dx

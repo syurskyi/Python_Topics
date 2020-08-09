@@ -27,7 +27,7 @@ class Solution(object
         arr = A
         res = -1
         val = float('-inf')
-        for i, num in enumerate(arr
+        ___ i, num in enumerate(arr
             __ num > val:
                 res = i
             val = max(val, num)
@@ -38,7 +38,7 @@ class Solution(object
             [0,1,0],
             [0,2,1,0],
         ]
-        for a in testCases:
+        ___ a in testCases:
             res = self.peakIndexInMountainArray(a)
             print('result: %s' % res)
             print('-='*30+'-')

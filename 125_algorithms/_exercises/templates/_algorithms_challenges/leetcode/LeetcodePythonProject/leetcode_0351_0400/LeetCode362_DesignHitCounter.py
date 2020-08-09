@@ -19,7 +19,7 @@ class HitCounter(object
     
     ___ getHits(self, timestamp
         count = 0
-        for i, time in enumerate(self.timestampes
+        ___ i, time in enumerate(self.timestampes
             __ timestamp - time < 300:
                 count += self.hitCount[i]
         r_ count

@@ -6,7 +6,7 @@ movies = get_movie_data()
 
 ___ test_movie_data_structure(
     assert le.(movies) __ 5
-    assert all(type(m) __ dict for m in movies)
+    assert all(type(m) __ dict ___ m in movies)
 
 
 ___ test_data_analysis(

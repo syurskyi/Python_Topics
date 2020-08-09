@@ -69,17 +69,17 @@ class Solution:
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
         """
         F = defaultdict(lambda: defaultdict(int))
-        for pos in range(10
+        ___ pos in range(10
             F[pos][N-1] = 1
 
-        for n in range(N-2, -1, -1
-            for pos in range(10
-                for nbr in nbrs[pos]:
+        ___ n in range(N-2, -1, -1
+            ___ pos in range(10
+                ___ nbr in nbrs[pos]:
                     F[pos][n] += F[nbr][n+1]
                     F[pos][n] %= MOD
 
         ret = 0
-        for i in range(10
+        ___ i in range(10
             ret += F[i][0]
             ret %= MOD
 
@@ -92,7 +92,7 @@ class SolutionTLE2:
 
     ___ knightDialer(self, N: int) -> int:
         ret = 0
-        for i in range(10
+        ___ i in range(10
             ret += self.dfs(i, N-1)
             ret %= MOD
 
@@ -104,7 +104,7 @@ class SolutionTLE2:
             __ r __ 0:
                 ret = 1
             ____
-                for nbr in nbrs[i]:
+                ___ nbr in nbrs[i]:
                     ret += self.dfs(nbr, r-1)
 
             self.cache[i, r] = ret
@@ -121,8 +121,8 @@ class SolutionTLE:
 
     ___ knightDialer(self, N: int) -> int:
         ret = 0
-        for i in range(self.m
-            for j in range(self.n
+        ___ i in range(self.m
+            ___ j in range(self.n
                 __ (i, j) != (3, 0) and (i, j) != (3, 2
                     ret += self.dfs(i, j, N-1)
                     ret %= MOD
@@ -134,7 +134,7 @@ class SolutionTLE:
             __ r __ 0:
                 ret = 1
             ____
-                for di, dj in dirs:
+                ___ di, dj in dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < self.m and 0 <= J < self.n and (I, J) != (3, 0) and (I, J) != (3, 2

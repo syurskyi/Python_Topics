@@ -15,7 +15,7 @@ class Solution(object
     """
     count = 0
     ans = -1
-    for i in range(0, le.(self.nums)):
+    ___ i in range(0, le.(self.nums)):
       __ self.nums[i] __ target:
         count += 1
         __ random.randrange(0, count) __ 0:

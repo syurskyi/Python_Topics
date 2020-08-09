@@ -30,10 +30,10 @@ ___ find_secret(secret, words
         _words = []
         n = le.(guess_word)
 
-        for word in words:
+        ___ word in words:
             cnt = 0
 
-            for i in range(n
+            ___ i in range(n
                 __ word[i] __ guess_word[i]:
                     cnt += 1
 
@@ -58,7 +58,7 @@ class Secret:
 
         cnt = 0
 
-        for i in range(le.(word)):
+        ___ i in range(le.(word)):
             __ word[i] __ self.secret[i]:
                 cnt += 1
 

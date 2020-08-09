@@ -38,7 +38,7 @@ class Solution(object
 
         # stack
         stack = []
-        for token in tokens:
+        ___ token in tokens:
             __ token not in ops:
                 stack.append(int(token))
             ____

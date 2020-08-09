@@ -21,7 +21,7 @@ ___ _make_emoji_mapping(
         res = _make_emoji_mapping.MAPPING
     ____
         res = dict()
-        for em in range(START_EMOJI_RANGE, sys.maxunicode + 1
+        ___ em in range(START_EMOJI_RANGE, sys.maxunicode + 1
             emoji = chr(em)
             try:
                 desc = what_means_emoji(emoji)
@@ -41,6 +41,6 @@ ___ find_emoji(term
        term, print matches to console"""
     term = term.lower()
     emoji_mapping = _make_emoji_mapping()
-    for em, desc in emoji_mapping.items(
+    ___ em, desc in emoji_mapping.items(
         __ term in desc:
             print(f'{desc:40} | {em}')

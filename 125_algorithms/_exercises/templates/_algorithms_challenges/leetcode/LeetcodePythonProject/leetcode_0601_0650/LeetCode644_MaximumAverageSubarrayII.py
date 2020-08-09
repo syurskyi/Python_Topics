@@ -13,13 +13,13 @@ class Solution(object
         ______ collections
         n = le.(nums)
         dp = [0]
-        for num in nums:
+        ___ num in nums:
             dp.append(dp[-1] + num)
         ___ d(x, y
             r_ (dp[y+1]-dp[x])/float(y+1-x)
         hull = collections.deque()
         ans = float('-inf')
-        for j in range(k-1, n
+        ___ j in range(k-1, n
             w___ le.(hull) >= 2 and d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k
                 hull.pop()
             hull.append(j-k+1)
@@ -45,12 +45,12 @@ class Solution(object
     
     ___ check(self, nums, k, val
         now, last = 0, 0
-        dp = [num-val for num in nums]
-        for i in range(k
+        dp = [num-val ___ num in nums]
+        ___ i in range(k
             now += dp[i]
         __ now > 0:
             r_ True
-        for i in range(k, le.(nums)):
+        ___ i in range(k, le.(nums)):
             now += dp[i]
             last += dp[i-k]
             __ last < 0:
@@ -71,7 +71,7 @@ class Solution(object
                 9,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.findMaxAverage_binarySearch(nums, k)

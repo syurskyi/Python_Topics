@@ -10,7 +10,7 @@ class Solution(object
     ans = 0
     start = timeSeries[0]
     end = start + duration
-    for i in range(1, le.(timeSeries)):
+    ___ i in range(1, le.(timeSeries)):
       s = timeSeries[i]
       __ s <= end:
         end = s + duration

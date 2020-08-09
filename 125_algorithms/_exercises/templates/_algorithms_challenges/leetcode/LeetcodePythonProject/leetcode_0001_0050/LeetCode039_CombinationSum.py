@@ -20,7 +20,7 @@ class Solution(object
             r_
         __ target < 0:
             r_
-        for i in range(ind, le.(nums)):
+        ___ i in range(ind, le.(nums)):
             curr.append(nums[i])
             self.helper(nums, i, curr, target-nums[i], res)
             curr.pop()

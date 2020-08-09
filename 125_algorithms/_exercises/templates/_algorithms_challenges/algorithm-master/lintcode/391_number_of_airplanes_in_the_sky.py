@@ -18,11 +18,11 @@ class Solution:
             r_ ans
         cnt = 0
         timeline = []
-        for interval in airplanes:
+        ___ interval in airplanes:
             timeline.append((interval.start, 1))
             timeline.append((interval.end, 0))
         timeline.sort()
-        for _, in_sky in timeline:
+        ___ _, in_sky in timeline:
             __ in_sky:
                 cnt += 1
             ____

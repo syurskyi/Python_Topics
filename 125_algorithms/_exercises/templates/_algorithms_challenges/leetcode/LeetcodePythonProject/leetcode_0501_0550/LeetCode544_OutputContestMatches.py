@@ -28,7 +28,7 @@ class Solution(object
             4,
             8,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             res = self.findContestMatch(n)
             print('result: %s' % res)

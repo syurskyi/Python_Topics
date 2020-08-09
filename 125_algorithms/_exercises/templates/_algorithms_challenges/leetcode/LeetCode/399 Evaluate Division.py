@@ -34,19 +34,19 @@ class Solution(object
         :rtype: List[float]
         """
         G = defaultdict(dict)
-        for edge, val in izip(equations, values
+        ___ edge, val in izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
-        r_ [self.dfs(G, s, e, set()) for s, e in queries]
+        r_ [self.dfs(G, s, e, set()) ___ s, e in queries]
 
     ___ dfs(self, G, s, e, path
         __ s not in G or e not in G:
             r_ -1.0
         __ e in G[s]:
             r_ G[s][e]
-        for nbr in G[s]:
+        ___ nbr in G[s]:
             __ nbr not in path:
                 path.add(nbr)
                 val = self.dfs(G, nbr, e, path)
@@ -68,16 +68,16 @@ class Solution(object
         :rtype: List[float]
         """
         G = defaultdict(dict)
-        for edge, val in izip(equations, values
+        ___ edge, val in izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
         # Floyd-Warshall
-        for mid in G:
-            for s in G[mid]:
-                for e in G[mid]:
+        ___ mid in G:
+            ___ s in G[mid]:
+                ___ e in G[mid]:
                     G[s][e] = G[s][mid] * G[mid][e]
 
-        r_ [G[s].get(e, -1.0) for s, e in queries]
+        r_ [G[s].get(e, -1.0) ___ s, e in queries]
 

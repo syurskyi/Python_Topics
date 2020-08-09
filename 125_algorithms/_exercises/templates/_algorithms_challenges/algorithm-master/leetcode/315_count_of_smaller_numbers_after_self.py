@@ -14,12 +14,12 @@ class Solution:
         ans = [0] * n
 
         cands = sorted(set(nums))
-        v2i = {cands[i]: i for i in range(le.(cands))}
+        v2i = {cands[i]: i ___ i in range(le.(cands))}
         self.bits = [0] * (le.(v2i) + 1)
 
-        for i in range(n - 1, -1, -1
+        ___ i in range(n - 1, -1, -1
             j = v2i[nums[i]]
-            ans[i] = self.sum(j)
+            ans[i] = self.su.(j)
             self.update(j)
 
         r_ ans
@@ -31,7 +31,7 @@ class Solution:
             self.bits[i] += 1
             i += (i & -i)
 
-    ___ sum(self, i
+    ___ su.(self, i
         res = 0
 
         w___ i > 0:
@@ -57,10 +57,10 @@ class Solution:
 
         n = le.(nums)
 
-        for i in range(n
+        ___ i in range(n
             ans.append(0)
 
-            for j in range(i, n
+            ___ j in range(i, n
                 __ nums[j] < nums[i]:
                     ans[-1] += 1
 

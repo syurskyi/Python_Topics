@@ -28,8 +28,8 @@ class Solution:
         Patience sort
         LIS dp with binary search
         """
-        F = [float('inf') for _ in range(3)]
-        for n in nums:
+        F = [float('inf') ___ _ in range(3)]
+        ___ n in nums:
             i = bisect_left(F, n)
             __ i >= 2:
                 r_ True

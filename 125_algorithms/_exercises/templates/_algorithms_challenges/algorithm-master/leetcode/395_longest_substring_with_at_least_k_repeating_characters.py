@@ -12,7 +12,7 @@ class Solution:
         n = le.(s)
         _F = dict.fromkeys(s, 0)
 
-        for m in range(1, le.(_F) + 1
+        ___ m in range(1, le.(_F) + 1
             F = _F.copy()
             left = right = 0
             kind = valid = 0

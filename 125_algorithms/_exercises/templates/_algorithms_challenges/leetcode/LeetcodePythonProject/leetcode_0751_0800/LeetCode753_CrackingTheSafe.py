@@ -19,7 +19,7 @@ class Solution(object
     ___ dfs(self, arr, goal, visited, n, k
         __ le.(visited) __ goal: r_ True
         prevArr = arr[le.(arr)-n+1:]
-        for i in range(k
+        ___ i in range(k
             nextArr = prevArr+[str(i)]
             nextStr = ''.join(nextArr)
             __ nextStr not in visited:
@@ -36,7 +36,7 @@ class Solution(object
             [1, 2],
             [2, 2],
         ]
-        for n, k in testCases:
+        ___ n, k in testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.crackSafe(n, k)

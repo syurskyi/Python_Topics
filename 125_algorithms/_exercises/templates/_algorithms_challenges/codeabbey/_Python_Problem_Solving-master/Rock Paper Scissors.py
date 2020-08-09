@@ -1,9 +1,9 @@
 win_dic = {'S':'P','P':'R','R':'S'}
-for i in range(int(input())):
+___ i in range(int(input())):
     count1 = 0
     count2 = 0
     a = list(map(str,input().split()))
-    for j in a:
+    ___ j in a:
         __ j[0] __ j[1]:
             pass
         ____ j[1] __ win_dic[j[0]]:

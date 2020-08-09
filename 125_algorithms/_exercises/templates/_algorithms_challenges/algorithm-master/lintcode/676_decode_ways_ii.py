@@ -18,7 +18,7 @@ class Solution:
         ____ s[0] != '0':
             dp[1] = 1  # dp[0]
 
-        for i in range(2, n + 1
+        ___ i in range(2, n + 1
             __ s[i - 1] __ '*':
                 dp[i] += 9 * dp[i - 1]
 

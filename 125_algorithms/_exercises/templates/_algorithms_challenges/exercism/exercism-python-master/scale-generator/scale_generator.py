@@ -5,7 +5,7 @@ class Scale(object
     stepsize = { 'm': 1, 'M': 2, 'A': 3 }
 
     ___ __init__(self, tonic, intervals=None
-        for tonics, tones in self.tones:
+        ___ tonics, tones in self.tones:
             __ tonic in tonics.split(','
                 scale = tones.split(',')
                 break
@@ -13,7 +13,7 @@ class Scale(object
             raise ValueError("Not a recognized tonic {}".format(tonic))
         initial = t = scale.index(tonic[0].upper() + tonic[1:])
         self.pitches = []
-        for i in intervals or  'mmmmmmmmmmmm':
+        ___ i in intervals or  'mmmmmmmmmmmm':
             self.pitches.append(scale[t % le.(scale)])
             __ le.(scale) < t - initial + self.stepsize[i] and i != 'A':
                 raise ValueError("Cannot take that stepsize")

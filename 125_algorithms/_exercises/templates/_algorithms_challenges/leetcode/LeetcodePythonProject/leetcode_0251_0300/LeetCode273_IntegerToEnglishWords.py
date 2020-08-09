@@ -61,7 +61,7 @@ class Solution(object
                 r_ [tens[n/10-2]] + words(n%10)
             __ n < 1000:
                 r_ [token20[n/100-1]] + ['Hundred'] + words(n%100)
-            for p, w in enumerate(('Thousand', 'Million', 'Billion'), 1
+            ___ p, w in enumerate(('Thousand', 'Million', 'Billion'), 1
                 __ n < 1000**(p+1
                     r_ words(n/1000**p) + [w] + words(n%1000**p)
         r_ ' '.join((words(num))) or 'Zero'

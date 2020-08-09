@@ -14,9 +14,9 @@ class Solution(object
         """
         m, n = le.(maze), le.(maze[0])
         result = []
-        visited = [[False]*n for _ in range(m)]
+        visited = [[False]*n ___ _ in range(m)]
         self.maxPath = float('inf')
-        self.map = [[float('inf')]*n for _ in range(m)]
+        self.map = [[float('inf')]*n ___ _ in range(m)]
         self.helper(maze, ball, hole, '', 0, result, visited)
         result.sort(key=lambda x: (x[1], x[0]))
         __ result:
@@ -30,7 +30,7 @@ class Solution(object
         nextSteps = self.getNextSteps(matrix, start[0], start[1])
         visited[start[0]][start[1]] = True
         self.map[start[0]][start[1]] = min(self.map[start[0]][start[1]], path)
-        for step in nextSteps:
+        ___ step in nextSteps:
             stop = [step[0], step[1]]
             dirStr = step[2]
             dist = step[3]
@@ -59,7 +59,7 @@ class Solution(object
         steps = set()
         m, n = le.(matrix), le.(matrix[0])
         dirs = (1, 0, 'd'), (0, 1, 'r'), (-1, 0, 'u'), (0, -1, 'l')
-        for dir in dirs:
+        ___ dir in dirs:
             x, y = i, j
             dist = 0
             w___ 0 <= x+dir[0] < m and 0 <= y+dir[1] < n and\

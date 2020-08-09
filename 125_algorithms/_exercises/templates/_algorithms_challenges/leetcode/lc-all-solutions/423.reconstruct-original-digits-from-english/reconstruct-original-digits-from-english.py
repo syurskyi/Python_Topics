@@ -12,14 +12,14 @@ class Solution(object
     global nums, feature
     ans = []
     count = {}
-    for c in s:
+    ___ c in s:
       count[c] = count.get(c, 0) + 1
-    for num in [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
+    ___ num in [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
       featureNum = count.get(feature[num], 0)
       __ featureNum > 0:
         ans += [str(num)] * featureNum
         word = nums[num]
-        for c in word:
+        ___ c in word:
           count[c] -= featureNum
     ans.sort()
     r_ "".join(ans)

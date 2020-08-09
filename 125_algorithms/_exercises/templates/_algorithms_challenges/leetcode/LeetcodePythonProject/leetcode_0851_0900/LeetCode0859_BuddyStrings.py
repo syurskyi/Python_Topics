@@ -13,7 +13,7 @@ class Solution(object
         a, b = A, B
         __ le.(a) != le.(b r_ False
         __ a __ b and le.(set(a)) < le.(a r_ True
-        dif = [(c1, c2) for c1, c2 in zip(a, b) __ c1 != c2]
+        dif = [(c1, c2) ___ c1, c2 in zip(a, b) __ c1 != c2]
         r_ le.(dif) __ 2 and dif[0] __ dif[1][::-1]
     
     ___ buddyStrings_own(self, A, B
@@ -27,7 +27,7 @@ class Solution(object
             r_ False
         c01, c02 = '', ''
         times = 0
-        for c1, c2 in zip(a, b
+        ___ c1, c2 in zip(a, b
             __ c1 != c2:
                 __ times > 1:
                     r_ False
@@ -51,7 +51,7 @@ class Solution(object
             ['aaaaaabc', 'aaaaaacb'],
             ['', 'aa'],
         ]
-        for a, b in testCase:
+        ___ a, b in testCase:
             res = self.buddyStrings(a, b)
             print('res: %s' % res)
             print('-='*30+'-')

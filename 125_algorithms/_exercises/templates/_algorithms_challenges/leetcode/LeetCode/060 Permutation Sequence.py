@@ -26,7 +26,7 @@ class Solution(object
         array = range(1, n+1)
         k %= ma__.factorial(n)
         ret = []
-        for i in xrange(n-1, -1, -1
+        ___ i in xrange(n-1, -1, -1
             idx, k = divmod(k, ma__.factorial(i))
             ret.append(array.pop(idx))
 
@@ -42,21 +42,21 @@ class Solution(object
         :return: String
         """
         # factorial
-        fac = [1 for _ in xrange(n)]
-        for i in xrange(1, n
+        fac = [1 ___ _ in xrange(n)]
+        ___ i in xrange(1, n
             fac[i] = fac[i-1]*i
 
         # solve equation
         k -= 1  # index starting from 0
-        a = [0 for _ in xrange(n)]
-        for i in xrange(n-1, -1, -1
+        a = [0 ___ _ in xrange(n)]
+        ___ i in xrange(n-1, -1, -1
             a[n-1-i] = k/fac[i]  # a[i] = k/fac[i]
             k %= fac[i]
 
         # post-process
         candidate = range(1, n+1)  # sorted
-        visited = [False for _ in xrange(n)]
-        for ind, val in enumerate(a
+        visited = [False ___ _ in xrange(n)]
+        ___ ind, val in enumerate(a
             i = 0  # pointer
             cnt = 0  # counter
             w___ True:
@@ -97,12 +97,12 @@ class Solution(object
         k -= 1  # index starting from 0
 
         factorial = 1  # (n-1)!
-        for i in xrange(1, n
+        ___ i in xrange(1, n
             factorial *= i
 
         result = []
         array = range(1, n+1)
-        for i in reversed(xrange(1, n)):
+        ___ i in reversed(xrange(1, n)):
             index = k/factorial
             result.append(array[index])
             array = array[:index]+array[index+1:]
@@ -112,7 +112,7 @@ class Solution(object
         # case when factorial=0!
         result.append(array[0])
 
-        r_ "".join(str(element) for element in result)
+        r_ "".join(str(element) ___ element in result)
 
 
 class Solution_TLE:
@@ -135,7 +135,7 @@ class Solution_TLE:
 
         sequence = range(1, n+1)
         result = self.get_kth_permutation_dfs(sequence, k, [])
-        r_ "".join(str(element) for element in result)
+        r_ "".join(str(element) ___ element in result)
 
 
     ___ get_kth_permutation_dfs(self, remaining_seq, k, cur
@@ -151,7 +151,7 @@ class Solution_TLE:
             __ self.counter __ k:
                 r_ cur
 
-        for ind, val in enumerate(remaining_seq
+        ___ ind, val in enumerate(remaining_seq
             result = self.get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
             __ result: r_ result
 

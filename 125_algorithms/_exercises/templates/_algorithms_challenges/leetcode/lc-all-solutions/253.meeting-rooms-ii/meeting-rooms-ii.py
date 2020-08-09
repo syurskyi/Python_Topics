@@ -5,13 +5,13 @@ class Solution(object
     :rtype: int
     """
     meetings = []
-    for i in intervals:
+    ___ i in intervals:
       meetings.append((i.start, 1))
       meetings.append((i.end, 0))
     meetings.sort()
     ans = 0
     count = 0
-    for meeting in meetings:
+    ___ meeting in meetings:
       __ meeting[1] __ 1:
         count += 1
       ____

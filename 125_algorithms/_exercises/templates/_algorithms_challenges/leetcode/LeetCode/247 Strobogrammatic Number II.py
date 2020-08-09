@@ -22,7 +22,7 @@ class Solution(object
         build from inside
         """
         __ n%2 __ 1 and le.(cur) __ 0:
-            for elt in self.middle:
+            ___ elt in self.middle:
                 cur.append(elt)
                 self.build(n, cur, ret)
                 cur.pop()
@@ -30,7 +30,7 @@ class Solution(object
             __ le.(cur) __ n:
                 ret.append("".join(cur))
                 r_
-            for elt in self.lst:
+            ___ elt in self.lst:
                 __ not (elt __ "00" and le.(cur) __ n-2
                     cur.appendleft(elt[0])
                     cur.append(elt[1])
@@ -57,7 +57,7 @@ class SolutionArray(object
         Using list as double-entry queue, performance of every operation is O(n) rather than O(1)
         """
         __ n%2 __ 1 and le.(cur) __ 0:
-            for i in ["0", "1", "8"]:
+            ___ i in ["0", "1", "8"]:
                 cur.append(i)
                 self.build(n, cur, ret)
                 cur.pop()
@@ -67,7 +67,7 @@ class SolutionArray(object
             ret.append("".join(cur))
             r_
 
-        for elt in self.map1:
+        ___ elt in self.map1:
             __ elt != "00" or le.(cur) != n-2:
                 cur.insert(0, elt[0])
                 cur.append(elt[1])
@@ -99,22 +99,22 @@ class SolutionOutputLimitExceeded(object
     ___ build(self, idx, n, cur, ret
         __ idx __ n/2:
             __ n % 2 != 0:
-                for m in self.middle:
+                ___ m in self.middle:
                     __ m != "0" or idx != 0:
                         temp = list(cur)
                         temp.append(m)
-                        for i in xrange(idx-1, -1, -1
+                        ___ i in xrange(idx-1, -1, -1
                             temp.append(self.map[temp[i]])
                         ret.append("".join(temp))
             ____
                 temp = list(cur)
-                for i in xrange(idx-1, -1, -1
+                ___ i in xrange(idx-1, -1, -1
                     temp.append(self.map[temp[i]])
                     ret.append("".join(temp))
 
             r_
 
-        for k in self.map.keys(
+        ___ k in self.map.keys(
             __ k != "0" or idx != 0:
                 cur.append(k)
                 self.build(idx+1, n, cur, ret)

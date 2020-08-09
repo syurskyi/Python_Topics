@@ -22,7 +22,7 @@ class Solution:
     ___ to_rpn(self, s
         stack, res = [], []
 
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             char = s[i]
 
             __ i > 0 and s[i - 1].isdigit() and char.isdigit(
@@ -48,7 +48,7 @@ class Solution:
     ___ eval_rpn(self, s
         stack = []
 
-        for char in s:
+        ___ char in s:
             __ char.isdigit(
                 stack.append(int(char))
             ____ char in self.OP:
@@ -78,7 +78,7 @@ class Solution:
     ___ to_rpn(self, s
         stack, res = [], []
 
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             char = s[i]
 
             __ i > 0 and s[i - 1].isdigit() and char.isdigit(
@@ -104,7 +104,7 @@ class Solution:
     ___ eval_rpn(self, s
         stack = []
 
-        for char in s:
+        ___ char in s:
             __ char.isdigit(
                 stack.append(int(char))
             ____ char in '+-':

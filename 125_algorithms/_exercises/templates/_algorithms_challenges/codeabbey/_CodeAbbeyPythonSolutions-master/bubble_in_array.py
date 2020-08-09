@@ -3,7 +3,7 @@ ___ get_checksum(values
     result = 0
     seed = 113
 
-    for i in values:
+    ___ i in values:
         result = (result + i) * seed
         __(result > limit
             result = result % limit
@@ -15,7 +15,7 @@ ___ get_swap_number(array
     swapped = 0
 
     n = le.(array)
-    for i in range(n-1
+    ___ i in range(n-1
         __(array[i] > array[i+1]
             swapped += 1
             array[i], array[i+1] = array[i+1], array[i]

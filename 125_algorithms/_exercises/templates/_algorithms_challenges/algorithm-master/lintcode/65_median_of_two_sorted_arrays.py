@@ -14,7 +14,7 @@ class Solution:
         heap = []
         n = 0
 
-        for nums in (a, b
+        ___ nums in (a, b
             __ not nums:
                 continue
 
@@ -25,7 +25,7 @@ class Solution:
             r_ 0.0
 
         num = 0
-        for _ in range((n + 1) // 2
+        ___ _ in range((n + 1) // 2
             num, nums, i = heapq.heappop(heap)
 
             i += 1

@@ -10,7 +10,7 @@ class Solution:
         currentDigit = digits[index]
         curString = m[currentDigit]
 
-        for i in range(le.(curString)):
+        ___ i __ ra..(le.(curString)):
             self.backtracking(ans, m, digits, combination +
                               curString[i], index+1)
 

@@ -5,14 +5,14 @@ class Solution(object
     :type p: str
     :rtype: bool
     """
-    dp = [[False] * (le.(p) + 1) for _ in range(le.(s) + 1)]
+    dp = [[False] * (le.(p) + 1) ___ _ in range(le.(s) + 1)]
     dp[0][0] = True
-    for j in range(1, le.(p) + 1
+    ___ j in range(1, le.(p) + 1
       __ p[j - 1] __ "*":
         dp[0][j] = dp[0][j - 2]
 
-    for i in range(1, le.(s) + 1
-      for j in range(1, le.(p) + 1
+    ___ i in range(1, le.(s) + 1
+      ___ j in range(1, le.(p) + 1
         __ p[j - 1] != "*":
           dp[i][j] = dp[i - 1][j - 1] and (s[i - 1] __ p[j - 1] or p[j - 1] __ ".")
         ____

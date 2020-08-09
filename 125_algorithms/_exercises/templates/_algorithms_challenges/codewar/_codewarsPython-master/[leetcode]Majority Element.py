@@ -4,7 +4,7 @@ class Solution:
     ___ majorityElement(self, nums
         sorted(nums)
         numDict = {}
-        for n in nums:
+        ___ n in nums:
             numDict[n] = numDict.get(n,0) + 1
         r_ max(numDict.values())
 

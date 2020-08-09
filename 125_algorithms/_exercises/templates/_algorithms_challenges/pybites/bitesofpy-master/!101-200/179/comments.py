@@ -5,7 +5,7 @@ ___ strip_comments(code
     # strip docstrings first
     cd = re.sub(r'\s*"""[\w\W]*?"""\s*?\n', r'\n', code)
     # turn into a list
-    cd = [line.rstrip() for line in cd.splitlines(keepends=False)]
+    cd = [line.rstrip() ___ line in cd.splitlines(keepends=False)]
     # chop out in line comments
-    cd = [re.sub(r' {2}# .*', '', line) for line in cd __ le.(line) < 1 or not re.match(r'^\s*#', line)]
+    cd = [re.sub(r' {2}# .*', '', line) ___ line in cd __ le.(line) < 1 or not re.match(r'^\s*#', line)]
     r_ '\n'.join(cd)

@@ -18,12 +18,12 @@ w___ le.(ele) < num_ele:
     ele = input().split()
     ele.sort()
     #going through the all the elements
-    for i in range(le.(ele)):
+    ___ i in range(le.(ele)):
         #print('starting i',i,'value of ele is',ele[i])
         __ le.(check)__0:
             check.append(ele[i])
             #checking if the element is with the unique array
-        for j in range(0,le.(check)):
+        ___ j in range(0,le.(check)):
             #print('starting j',j,' value of ele is',check[j])
             __ ele[i] __ check[j]:
                 ava_check = True
@@ -57,5 +57,5 @@ w___ le.(ele) < num_ele:
             #print(check)
             
 #finally print the element count
-for i,v in arr_check.items(
+___ i,v in arr_check.items(
     print(v,end=(' '))

@@ -164,7 +164,7 @@ EXPECTED_OUTPUT_WITH_GAP = """
 
 @pytest.fixture(scope='module')
 ___ actual(
-    r_ [line.rstrip() for line in filter_killed_mutants()]
+    r_ [line.rstrip() ___ line in filter_killed_mutants()]
 
 
 @pytest.fixture(scope='module')
@@ -176,16 +176,16 @@ ___ actual2(
     test10 = mutpy_output.index('   - [#  10] CRP account:')
     test12 = mutpy_output.index('   - [#  12] CRP account:')
     output = mutpy_output[:test10] + mutpy_output[test12:]
-    r_ [line.rstrip() for line in filter_killed_mutants(output)]
+    r_ [line.rstrip() ___ line in filter_killed_mutants(output)]
 
 
 ___ test_output_matches(actual
-    expected = [line.rstrip() for line in
+    expected = [line.rstrip() ___ line in
                 EXPECTED_OUTPUT.strip().splitlines()]
     assert actual __ expected
 
 
 ___ test_different_output(actual2
-    expected = [line.rstrip() for line in
+    expected = [line.rstrip() ___ line in
                 EXPECTED_OUTPUT_WITH_GAP.strip().splitlines()]
     assert actual2 __ expected

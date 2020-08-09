@@ -5,7 +5,7 @@ ___ parse_markdown(markdown
     lines = markdown.split('\n')
     res = ''
     in_list = False
-    for i in lines:
+    ___ i in lines:
         __ re.match('###### (.*)', i) is not None:
             i = '<h6>' + i[7:] + '</h6>'
         ____ re.match('## (.*)', i) is not None:

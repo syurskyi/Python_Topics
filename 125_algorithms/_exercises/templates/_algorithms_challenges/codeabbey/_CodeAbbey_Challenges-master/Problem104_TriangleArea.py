@@ -3,7 +3,7 @@ infile.readline()
 data=infile.readlines()
 infile.close()
 
-for line in data:
+___ line in data:
     line = line.strip().split(" ")
     x1,y1,x2,y2,x3,y3 = list(map(int,line))
 

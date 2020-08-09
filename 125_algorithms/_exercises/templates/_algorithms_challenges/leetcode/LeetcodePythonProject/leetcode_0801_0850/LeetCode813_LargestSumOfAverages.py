@@ -12,9 +12,9 @@ class Solution(object
         """
         arr, k = A, K
         n = le.(arr)
-        memo = [[0.0]*(n+1) for _ in range(n+1)]
+        memo = [[0.0]*(n+1) ___ _ in range(n+1)]
         cur = 0.0
-        for i in range(n
+        ___ i in range(n
             cur += arr[i]
             memo[i+1][1] = cur/(i+1)
         r_ self.search(n, k, arr, memo)
@@ -25,7 +25,7 @@ class Solution(object
         __ n < k:
             r_ 0
         cur = 0.0
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             cur += arr[i]
             memo[n][k] = max(memo[n][k], self.search(i, k-1, arr, memo)+cur/(n-i))
         r_ memo[n][k]
@@ -37,7 +37,7 @@ class Solution(object
                 3
             ],
         ]
-        for arr, k in testCases:
+        ___ arr, k in testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
             result = self.largestSumOfAverages(arr, k)

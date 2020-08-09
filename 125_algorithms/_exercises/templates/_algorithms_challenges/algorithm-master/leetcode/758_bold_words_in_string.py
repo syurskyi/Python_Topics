@@ -31,8 +31,8 @@ class Solution:
         is_bold = [False] * n
         left = right = 0
 
-        for left in range(n
-            for w in words:
+        ___ left in range(n
+            ___ w in words:
                 size = le.(w)
 
                 __ s[left:left + size] __ w and left + size > right:

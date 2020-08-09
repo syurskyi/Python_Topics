@@ -74,28 +74,28 @@ class Solution:
         < ^ > V four directions
         Let F[i][j][k] be the number of consecutive 1 including G[i][j] it self
         """
-        G = [[1 for _ in range(N)] for _ in range(N)]
-        for i, j in mines:
+        G = [[1 ___ _ in range(N)] ___ _ in range(N)]
+        ___ i, j in mines:
             G[i][j] = 0
 
-        F = [[[G[i][j] for _ in range(4)] for j in range(N)] for i in range(N)]
-        for i in range(N
-            for j in range(N
+        F = [[[G[i][j] ___ _ in range(4)] ___ j in range(N)] ___ i in range(N)]
+        ___ i in range(N
+            ___ j in range(N
                 __ j - 1 >= 0 and G[i][j] __ 1:
                     F[i][j][0] = F[i][j-1][0] + 1
                 __ i - 1 >= 0 and G[i][j] __ 1:
                     F[i][j][1] = F[i-1][j][1] + 1
 
-        for i in range(N-1, -1, -1
-            for j in range(N-1, -1, -1
+        ___ i in range(N-1, -1, -1
+            ___ j in range(N-1, -1, -1
                 __ j + 1 < N and G[i][j] __ 1:
                     F[i][j][2] = F[i][j+1][2] + 1
                 __ i + 1 < N and G[i][j] __ 1:
                     F[i][j][3] = F[i+1][j][3] + 1
 
         ret = 0
-        for i in range(N
-            for j in range(N
+        ___ i in range(N
+            ___ j in range(N
                 ret = max(ret, min(F[i][j]))
 
         r_ ret

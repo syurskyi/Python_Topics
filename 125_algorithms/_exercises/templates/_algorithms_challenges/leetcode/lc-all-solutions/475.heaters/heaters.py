@@ -7,7 +7,7 @@ class Solution(object
     """
     minDist = 0
     heaters.sort()
-    for house in sorted(houses
+    ___ house in sorted(houses
       idx = bisect.bisect_left(heaters, house)
       dist = float("inf")
       __ idx > 0:

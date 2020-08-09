@@ -53,7 +53,7 @@ class Solution:
         w___ q:
             current_level = q
             q = []
-            for ind, val in enumerate(current_level
+            ___ ind, val in enumerate(current_level
                 __ val.left: q.append(val.left)
                 __ val.right: q.append(val.right)
                 try:

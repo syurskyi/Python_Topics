@@ -1,7 +1,7 @@
 ___ BMI_calculator(
     num_of_people =  int(input())
     result = []
-    for i in range(0, num_of_people
+    ___ i in range(0, num_of_people
         weight,height = input().split()
         
         BMI = int(weight)/(float(height)**2)
@@ -17,7 +17,7 @@ ___ BMI_calculator(
         ____
             continue
     
-    result = ' '.join(str(e) for e in result)
+    result = ' '.join(str(e) ___ e in result)
     print(result)
     
 BMI_calculator()

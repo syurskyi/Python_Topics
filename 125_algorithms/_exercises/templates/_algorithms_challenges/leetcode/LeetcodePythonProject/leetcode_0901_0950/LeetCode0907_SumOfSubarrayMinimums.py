@@ -8,7 +8,7 @@ class Solution(object
         MOD = 10**9+7
         stack = [[float('-inf'), -1, 0]] # value, index, accumulated_sum
         res = 0
-        for i, num in enumerate(A
+        ___ i, num in enumerate(A
             w___ stack and stack[-1][0] > num:
                 stack.pop()
             total = (stack[-1][2] + (i-stack[-1][1]) * num) % MOD
@@ -20,7 +20,7 @@ class Solution(object
         testCases = [
             [3,1,2,4],
         ]
-        for arr in testCases:
+        ___ arr in testCases:
             res = self.sumSubarrayMins(arr)
             print('res: %s' % res)
             print('-='*30+'-')

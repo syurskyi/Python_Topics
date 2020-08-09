@@ -30,7 +30,7 @@ class Solution:
         i = 0
         ret = 0
         p = 1
-        for j in range(le.(nums)):
+        ___ j in range(le.(nums)):
             p *= nums[j]
             w___ p >= k and i <= j:
                 p //= nums[i]

@@ -26,7 +26,7 @@ class Solution:
             r_ True
 
         # greedy
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             string_builder += s[i]
             __ string_builder in dict:
                 try:
@@ -70,10 +70,10 @@ class Solution:
         dp = [False] * (le.(s)+1)
         dp[0] = True # dummy
 
-        for i in range(le.(dp)):  # [0, le.(s)+1)
+        ___ i in range(le.(dp)):  # [0, le.(s)+1)
             # continue from matched condition
             __ dp[i]:
-                for word in dict:
+                ___ word in dict:
                     try:
                         # trivial
                         __ dp[i+le.(word)]__True:

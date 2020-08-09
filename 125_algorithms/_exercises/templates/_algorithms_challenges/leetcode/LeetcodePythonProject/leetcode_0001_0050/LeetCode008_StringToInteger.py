@@ -20,7 +20,7 @@ class Solution(object
             sig = -1
         s = s.lstrip('0')
         res = 0
-        for c in s:
+        ___ c in s:
             __ not c.isdigit(
                 break
             res = 10*res + ord(c) - ord('0') 
@@ -33,7 +33,7 @@ class Solution(object
         testCases = [
             '    010',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.myAtoi(s)
             print('result: %s' % result)

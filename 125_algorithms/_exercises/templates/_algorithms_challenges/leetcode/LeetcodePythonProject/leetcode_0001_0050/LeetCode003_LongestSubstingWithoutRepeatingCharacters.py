@@ -13,7 +13,7 @@ class Solution(object
         left = 0
         hashset = set()
         maxLen = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             w___ left < i and c in hashset:
                 hashset.discard(s[left])
                 left += 1
@@ -27,7 +27,7 @@ class Solution(object
             'bbbb',
             'abcdba',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.lengthOfLongestSubstring(s)
             print('result: %s' % result)

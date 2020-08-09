@@ -29,10 +29,10 @@ ___ find_duplicates2(arr1, arr2
 
     vals = {}
 
-    for num in arr1:
+    ___ num in arr1:
         vals[num] = False
 
-    for num in arr2:
+    ___ num in arr2:
         __ num in vals and vals[num] is False:
             vals[num] = True
             ans.append(num)

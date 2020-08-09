@@ -1,7 +1,7 @@
 infile = open("prob27.txt")
 infile.readline()
 data = infile.read().strip().split(" ")
-data = [int(i) for i in data]
+data = [int(i) ___ i in data]
 
 passes = 0
 swaps = 0

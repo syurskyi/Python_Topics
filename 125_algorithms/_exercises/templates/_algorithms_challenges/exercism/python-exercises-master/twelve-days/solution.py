@@ -26,7 +26,7 @@ ___ verse(n
 
 ___ verses(start, end
     r_ ''.join([verse(n) + '\n'
-                    for n in range(start, end + 1)])
+                    ___ n in range(start, end + 1)])
 
 
 ___ sing(

@@ -7,17 +7,17 @@ class Solution:
             r_ 0
 
         n = le.(A)
-        dp = [[False] * (m + 1) for _ in range(n + 1)]
+        dp = [[False] * (m + 1) ___ _ in range(n + 1)]
         dp[0][0] = True
 
-        for i in range(1, n + 1
-            for j in range(m + 1
+        ___ i in range(1, n + 1
+            ___ j in range(m + 1
                 dp[i][j] = dp[i - 1][j]
                 __ (j >= A[i - 1]
                     and dp[i - 1][j - A[i - 1]]
                     dp[i][j] = True
 
-        for j in range(m, -1, -1
+        ___ j in range(m, -1, -1
             __ dp[n][j]:
                 r_ j
 

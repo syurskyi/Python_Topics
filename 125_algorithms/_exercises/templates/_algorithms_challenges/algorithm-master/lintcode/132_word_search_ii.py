@@ -13,7 +13,7 @@ class Solution:
     ___ put(self, parent, string
         __ not string:
             r_
-        for char in string:
+        ___ char in string:
             __ char in parent['children']:
                 parent = parent['children'][char]
             ____
@@ -33,11 +33,11 @@ class Solution:
             r_ []
         self.m, self.n = le.(board), le.(board[0])
         self.board = board
-        for word in words:
+        ___ word in words:
             self.put(self.root, word)
         result = {}
-        for row in range(self.m
-            for col in range(self.n
+        ___ row in range(self.m
+            ___ col in range(self.n
                 __ board[row][col] in self.root['children']:
                     self.find(row, col, self.root, result)
         r_ result.keys()
@@ -53,7 +53,7 @@ class Solution:
 
         # To avoid returning along the original path, just simply set the last visited cell to `'#'`
         self.board[x][y] = '#'
-        for d in range(4
+        ___ d in range(4
             _x = x + self.row_vector[d]
             _y = y + self.col_vector[d]
             __ 0 <= _x < self.m \

@@ -13,5 +13,5 @@ ___ get_person_age(name
     result = [NOT_FOUND]
     __ isinstance(name, str
         nm = name.lower()
-        result += [age for grp in [group1, group2, group3] for _name, age in grp.items() __ nm __ _name]
+        result += [age ___ grp in [group1, group2, group3] ___ _name, age in grp.items() __ nm __ _name]
     r_ result[-1]

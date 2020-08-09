@@ -4,7 +4,7 @@ ___ anagram(s,t
     t = t.lower().replace(' ','')
     __ le.(s) != le.(t
         r_ False
-    for i in t:
+    ___ i in t:
         __ i in s:
             continue
         r_ False

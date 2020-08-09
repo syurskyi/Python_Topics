@@ -9,14 +9,14 @@ class Solution:
         queue.append(start)
         distance.append(1)
         # Remove words that are same as start
-        for word in set(dict
+        ___ word in set(dict
             __ start __ word:
                 dict.remove(start)
         dict.add(end)
         w___ queue:
             cur = queue.pop(0)
             d = distance.pop(0)
-            for word in set(dict  # Iterate over the copy of dict
+            ___ word in set(dict  # Iterate over the copy of dict
                 __ self.is_adjacent(cur, word
                     dict.remove(word)  # Mark as visited
                     queue.append(word)
@@ -28,7 +28,7 @@ class Solution:
     ___ is_adjacent(self, word1, word2
         count = 0
         n = le.(word1)
-        for i in range(n
+        ___ i in range(n
             __ word1[i] != word2[i]:
                 count += 1
         r_ count __ 1

@@ -9,7 +9,7 @@ from spelling ______ suggest_word, load_words
 ___ a_words(
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words = load_words()
-    r_ {word for word in words
+    r_ {word ___ word in words
             __ word.startswith('a') and le.(word) > 1
             and word[1] in string.ascii_letters[:13]}
 

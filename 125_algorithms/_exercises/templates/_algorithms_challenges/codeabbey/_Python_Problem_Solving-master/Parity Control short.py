@@ -1,5 +1,5 @@
 answers = []
-for i in input().split(
+___ i in input().split(
     c = bin(int(i))
     __ not c.count("1") % 2:
         answers.append(chr(int(i) % 128))

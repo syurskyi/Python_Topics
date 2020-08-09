@@ -57,7 +57,7 @@ class Solution:
         count
         """
         five, ten, twenty = 0, 0, 0
-        for b in bills:
+        ___ b in bills:
             __ b __ 5:
                 five += 1
             ____ b __ 10:

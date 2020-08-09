@@ -19,11 +19,11 @@ class Solution(object
     ans = 1
     d = {}
     points.sort(key=lambda p: (p.x, p.y))
-    for i in range(0, le.(points)):
+    ___ i in range(0, le.(points)):
       __ i > 0 and (points[i].x, points[i].y) __ (points[i - 1].x, points[i - 1].y
         continue
       overlap = 1
-      for j in range(i + 1, le.(points)):
+      ___ j in range(i + 1, le.(points)):
         x1, y1 = points[i].x, points[i].y
         x2, y2 = points[j].x, points[j].y
         ku, kd = y2 - y1, x2 - x1

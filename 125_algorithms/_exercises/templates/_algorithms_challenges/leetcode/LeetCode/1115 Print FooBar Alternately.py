@@ -45,7 +45,7 @@ class FooBar:
 
 
     ___ foo(self, printFoo: Callable[[], None]) -> None:
-        for i in range(self.n
+        ___ i in range(self.n
             self.locks[0].a..
             # printFoo() outputs "foo". Do not change or remove this line.
             printFoo()
@@ -53,7 +53,7 @@ class FooBar:
 
 
     ___ bar(self, printBar: Callable[[], None]) -> None:
-        for i in range(self.n
+        ___ i in range(self.n
             self.locks[1].a..
             # printBar() outputs "bar". Do not change or remove this line.
             printBar()

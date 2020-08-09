@@ -43,7 +43,7 @@ class Solution(object
             [-1, 1],
             [-2147483648, -1],
         ]
-        for dividend, divisor in testCases:
+        ___ dividend, divisor in testCases:
             print('dividend: %s' % dividend)
             print('divisor: %s' % divisor)
             result = self.divide(dividend, divisor)

@@ -10,18 +10,18 @@ class Solution(object
         :rtype: List[List[str]]
         """
         hashmap = {}
-        for path in paths:
+        ___ path in paths:
             arr = path.split(' ')
             folder = arr[0]
             files = arr[1:]
-            for file in files:
+            ___ file in files:
                 arr0 = file.split('(')
                 content = arr0[1][:-1]
                 filename = arr0[0]
                 fullPath = folder+'/'+filename
                 hashmap[content] = hashmap.get(content, []) + [fullPath]
         res = []
-        for _, value in hashmap.items(
+        ___ _, value in hashmap.items(
             __ le.(value) > 1:
                 res.append(value)
         r_ res
@@ -30,7 +30,7 @@ class Solution(object
         testCases = [
             ["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"],
         ]
-        for paths in testCases:
+        ___ paths in testCases:
             print('paths: %s' % paths)
             result = self.findDuplicate(paths)
             print('result: %s' % result)

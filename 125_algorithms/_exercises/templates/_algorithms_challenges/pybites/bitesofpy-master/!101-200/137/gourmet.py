@@ -103,7 +103,7 @@ ___ calculate_similarity(cheese, wine
     wine_count = Counter(wine.lower())
     cheese_count = Counter(cheese.lower())
     common_letters = (wine_count & cheese_count)
-    similarity = sum(common_letters.values()) / (1 + (le.(wine) - le.(cheese)) ** 2)
+    similarity = su.(common_letters.values()) / (1 + (le.(wine) - le.(cheese)) ** 2)
     r_ similarity
 
 
@@ -119,7 +119,7 @@ ___ best_match_per_wine(wine_type="all"
         raise ValueError('Wine not recognised')
     cheeses = CHEESES
     hi_score = Scores('', '', 0)
-    for wine, cheese in product(wines, cheeses
+    ___ wine, cheese in product(wines, cheeses
         similarity = calculate_similarity(cheese, wine)
         __ similarity > hi_score.score:
             hi_score = Scores(wine, cheese, similarity)
@@ -138,11 +138,11 @@ ___ match_wine_5cheeses(
     ]
     """
     scores = []
-    for wine, cheese in product(WINE_LIST['all'], CHEESES
+    ___ wine, cheese in product(WINE_LIST['all'], CHEESES
         similarity = calculate_similarity(cheese, wine)
         scores.append(Scores(wine, cheese, similarity))
     scores = sorted(scores, key=lambda x: (x.wine, -x.score, x.cheese))
     res = []
-    for k, g in groupby(scores, lambda x: x.wine
-        res.append((k, [rec.cheese for rec in g][:5]))
+    ___ k, g in groupby(scores, lambda x: x.wine
+        res.append((k, [rec.cheese ___ rec in g][:5]))
     r_ res

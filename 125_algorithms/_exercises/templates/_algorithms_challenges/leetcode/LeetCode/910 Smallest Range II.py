@@ -43,7 +43,7 @@ class Solution:
         mn = min(A)
         mx = max(A)
         ret = mx - mn
-        for i in range(le.(A) - 1
+        ___ i in range(le.(A) - 1
             cur_mx = max(mx - K, A[i] + K)
             cur_mn = min(mn + K, A[i+1] - K)
             ret = min(ret, cur_mx - cur_mn)
@@ -62,7 +62,7 @@ class Solution:
         max_lower_diff = 0
         upper = max(mini + K, maxa - K)  # may cross
         lower = min(mini + K, maxa - K)
-        for a in A:
+        ___ a in A:
             diffs = [(a + K) - upper, lower - (a - K)]
             cur_diff = min(diffs)
             __ cur_diff __ diffs[0] and cur_diff >= max_upper_diff:

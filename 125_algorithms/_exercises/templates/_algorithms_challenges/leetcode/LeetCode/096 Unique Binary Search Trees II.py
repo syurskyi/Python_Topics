@@ -46,11 +46,11 @@ class Solution(object
                 roots.append(None)
                 r_ roots
 
-            for pivot in range(start, end+1
+            ___ pivot in range(start, end+1
                 left_roots = self.generate_cache(start, pivot-1)
                 right_roots = self.generate_cache(pivot+1, end)
-                for left_root in left_roots:
-                    for right_root in right_roots:
+                ___ left_root in left_roots:
+                    ___ right_root in right_roots:
                         root = TreeNode(pivot)
                         root.left = left_root
                         root.right = right_root
@@ -81,12 +81,12 @@ class Solution(object
 
         # pivot
         # list of unique subtrees = list of unique left subtrees, pivot, list of unique right subtrees
-        for pivot in range(start, end+1
+        ___ pivot in range(start, end+1
             left_subtree_roots = self.generate(start, pivot-1)
             right_subtree_roots = self.generate(pivot+1, end)
 
-            for left_node in left_subtree_roots:
-                for right_node in right_subtree_roots:
+            ___ left_node in left_subtree_roots:
+                ___ right_node in right_subtree_roots:
                     pivot_node = TreeNode(pivot)
                     pivot_node.left = left_node
                     pivot_node.right = right_node

@@ -41,7 +41,7 @@ class Solution:
 
         people.sort(key=lambda p: (p[0], -p[1]))
 
-        for i in range(le.(people) - 1, -1, -1
+        ___ i in range(le.(people) - 1, -1, -1
             ans.insert(people[i][1], people[i])
 
         r_ ans
@@ -61,7 +61,7 @@ class Solution:
         h2mans = {}
         heights = []
 
-        for i in range(le.(people)):
+        ___ i in range(le.(people)):
             h, k = people[i]
 
             __ h in h2mans:
@@ -72,8 +72,8 @@ class Solution:
 
         heights.sort()
 
-        for height in heights[::-1]:
-            for k, i in sorted(h2mans[height]
+        ___ height in heights[::-1]:
+            ___ k, i in sorted(h2mans[height]
                 ans.insert(k, people[i])
 
         r_ ans

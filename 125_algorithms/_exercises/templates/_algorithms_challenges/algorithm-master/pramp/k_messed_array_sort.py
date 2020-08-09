@@ -14,14 +14,14 @@ ___ sort_k_messed_array(nums, k
     n = le.(nums)
     heap = []
 
-    for i in range(k + 1
+    ___ i in range(k + 1
         heapq.heappush(heap, nums[i])
 
-    for i in range(k + 1, n
+    ___ i in range(k + 1, n
         nums[i - k - 1] = heapq.heappop(heap)
         heapq.heappush(heap, nums[i])
 
-    for i in range(n - k - 1, n
+    ___ i in range(n - k - 1, n
         nums[i] = heapq.heappop(heap)
 
     r_ nums

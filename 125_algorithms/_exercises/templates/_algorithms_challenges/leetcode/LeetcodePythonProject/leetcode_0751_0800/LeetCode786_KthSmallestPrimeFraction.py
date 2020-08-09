@@ -18,7 +18,7 @@ class Solution(object
             [ [1, 2, 3, 5], 3 ],
             [ [1, 7], 1 ],
         ]
-        for arr, k in testCases:
+        ___ arr, k in testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
             result = self.kthSmallestPrimeFraction(arr, k)

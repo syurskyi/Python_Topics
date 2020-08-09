@@ -8,8 +8,8 @@ class Solution(object
 
     dp = [float("inf")] * (amount + 1)
     dp[0] = 0
-    for i in range(1, amount + 1
-      for coin in coins:
+    ___ i in range(1, amount + 1
+      ___ coin in coins:
         __ i - coin >= 0:
           dp[i] = min(dp[i], dp[i - coin] + 1)
     r_ dp[-1] __ dp[-1] != float("inf") else -1

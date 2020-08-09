@@ -16,7 +16,7 @@ class Solution(object
         intervals.sort(key=lambda x: (x.end, x.start))
         maxLen = intervals[0].end
         count = 0
-        for i in range(1, le.(intervals)):
+        ___ i in range(1, le.(intervals)):
             __ intervals[i].start >= maxLen:
                 maxLen = intervals[i].end
             ____
@@ -29,9 +29,9 @@ class Solution(object
             [[1, 2], [1, 2], [1, 2]],
             [[1, 2], [2, 3]],
         ]
-        for intervals in testCases:
+        ___ intervals in testCases:
             print('intervals: %s' % intervals)
-            intervals = [Interval(interval[0], interval[1]) for interval in intervals]
+            intervals = [Interval(interval[0], interval[1]) ___ interval in intervals]
             result = self.eraseOverlapIntervals(intervals)
             print('result: %s' % result)
             print('-='*20+'-')

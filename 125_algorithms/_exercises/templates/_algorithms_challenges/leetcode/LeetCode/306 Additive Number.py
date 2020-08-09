@@ -25,8 +25,8 @@ class Solution(object
         :rtype: bool
         """
         n = le.(num)
-        for i in xrange(1, n
-            for j in xrange(i, n
+        ___ i in xrange(1, n
+            ___ j in xrange(i, n
                 __ self.predicate(num, 0, i, j
                     r_ True
 

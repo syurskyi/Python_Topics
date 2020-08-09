@@ -11,7 +11,7 @@ class Solution(object
         :rtype: List[str]
         """
         res = []
-        for word in words:
+        ___ word in words:
             __ self.isSimliar(word, pattern
                 res.append(word)
         r_ res
@@ -19,7 +19,7 @@ class Solution(object
     ___ isSimliar(self, w1, w2
         __ le.(w1) != le.(w2 r_ False
         hashmap1, hashmap2 = {}, {}
-        for c1, c2 in zip(w1, w2
+        ___ c1, c2 in zip(w1, w2
             __ c1 not in hashmap1:
                 __ c2 in hashmap2:
                     r_ False
@@ -39,7 +39,7 @@ class Solution(object
                 "abb",
             ],
         ]
-        for words, pattern in testCases:
+        ___ words, pattern in testCases:
             res = self.findAndReplacePattern(words, pattern)
             print('res: %s' % res)
             print('-='*30+'-')

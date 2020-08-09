@@ -12,7 +12,7 @@ class Solution(object
         maxReach = 0
         reach = 0
         steps = 0
-        for i in range(le.(nums)-1
+        ___ i in range(le.(nums)-1
             maxReach = max(maxReach, i+nums[i])
             __ i __ reach:
                 steps += 1

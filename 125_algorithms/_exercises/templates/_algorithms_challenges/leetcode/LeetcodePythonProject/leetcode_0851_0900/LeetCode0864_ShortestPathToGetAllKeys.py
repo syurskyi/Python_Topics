@@ -13,8 +13,8 @@ class Solution(object
         numOfKeys = 0
         dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
         moves = set()
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ '@':
                     starti = i
                     startj = j
@@ -29,7 +29,7 @@ class Solution(object
                 collectedKeys += 1
             __ collectedKeys __ numOfKeys:
                 r_ steps
-            for x, y in dirs:
+            ___ x, y in dirs:
                 ni = i+x
                 nj = j+y
                 __ 0<=ni<m and 0<=nj<n and grid[ni][nj] in keys:
@@ -42,7 +42,7 @@ class Solution(object
         testCase = [
             
         ]
-        for grid in testCase:
+        ___ grid in testCase:
             res = self.shortestPathAllKeys(grid)
             print('res: %s' % res)
             print('-='*30+'-')

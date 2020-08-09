@@ -2,7 +2,7 @@
 
 ___ nth_prime(nth
     """Returns the nth prime number"""
-    for mth, prime in enumerate(prime_gen(), 1
+    ___ mth, prime in enumerate(prime_gen(), 1
         __ mth __ nth:
             r_ prime
 
@@ -14,11 +14,11 @@ ___ prime_gen(
     multiples = set()
     w___ True:
         # Wheel
-        for prime in primes:
+        ___ prime in primes:
             # multiples of prime, from smallest larger then start to stop
             multiples.update(range((-start) % prime + start, stop, prime))
         # Sieve
-        for num in range(start, stop, 2
+        ___ num in range(start, stop, 2
             __ num not in multiples:
                 yield num
                 primes.append(num)

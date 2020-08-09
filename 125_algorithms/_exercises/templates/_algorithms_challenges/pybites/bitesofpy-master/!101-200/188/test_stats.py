@@ -30,9 +30,9 @@ ___ test_get_all_line_counts(
     # total number of test files / bites
     assert le.(counts) __ 186
     # all elements should be ints
-    assert all(isinstance(c, int) for c in counts)
+    assert all(isinstance(c, int) ___ c in counts)
     # total lines of test code written
-    assert sum(counts) __ 8135
+    assert su.(counts) __ 8135
 
 
 @pytest.mark.parametrize("line", EXPECTED_OUTPUT.strip().splitlines())

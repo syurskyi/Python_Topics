@@ -7,7 +7,7 @@ class Solution(object
     """
     ans = 0
     cnt = 1
-    for plot in flowerbed:
+    ___ plot in flowerbed:
       __ plot __ 0:
         cnt += 1
       ____

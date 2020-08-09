@@ -67,7 +67,7 @@ class Solution:
         """
         row = 0
         pos = 1
-        for n in range(1, N
+        ___ n in range(1, N
             row = (row << pos) + (~row & 2 ** pos - 1)
             pos *= 2
 

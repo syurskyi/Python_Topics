@@ -23,16 +23,16 @@ class Solution:
         :rtype: bool
         """
         cnt = defaultdict(int)
-        for c in s:
+        ___ c in s:
             cnt[c] += 1
 
-        for c in t:
+        ___ c in t:
             __ c not in cnt or cnt[c] < 1:
                 r_ False
 
             cnt[c] -= 1
 
-        for v in cnt.values(
+        ___ v in cnt.values(
             __ v != 0:
                 r_ False
 

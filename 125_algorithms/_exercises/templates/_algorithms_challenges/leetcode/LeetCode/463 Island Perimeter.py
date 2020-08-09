@@ -28,10 +28,10 @@ class Solution:
             r_ ret
         R = le.(grid)
         C = le.(grid[0])
-        for r0 in range(R
-            for c0 in range(C
+        ___ r0 in range(R
+            ___ c0 in range(C
                 __ grid[r0][c0] __ 1:
-                    for dr, dc in self.dirs:
+                    ___ dr, dc in self.dirs:
                         r = r0 + dr
                         c = c0 + dc
                         __ r < 0 or r >= R or c < 0 or c >= C:

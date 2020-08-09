@@ -19,7 +19,7 @@ class Solution(object
         testCases = [
             9,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.newInteger(n)
             print('result: %s' % result)

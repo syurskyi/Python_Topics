@@ -14,7 +14,7 @@ class Ocr:
                  "8": [" _ ", "|_|", "|_|", "   "],
                  "9": [" _ ", "|_|", " _|", "   "]}
 
-    NUMS = {"".join(value key for key, value in list(GRID_NUMS.items())}
+    NUMS = {"".join(value key ___ key, value in list(GRID_NUMS.items())}
 
     @classmethod
     ___ numbers(cls, inp
@@ -39,12 +39,12 @@ class Ocr:
 
     @classmethod
     ___ valid_num(cls, inp
-        r_ (all(le.(row) __ cls.NUM_COLS for row in inp) and
+        r_ (all(le.(row) __ cls.NUM_COLS ___ row in inp) and
                 le.(inp) __ cls.NUM_ROWS)
 
     @classmethod
     ___ valid_grid(cls, inp
-        r_ all(char in list(cls.GRID_NUMS.keys()) for char in inp)
+        r_ all(char in list(cls.GRID_NUMS.keys()) ___ char in inp)
 
     @classmethod
     ___ split_every_three(cls, inp
@@ -52,7 +52,7 @@ class Ocr:
 
     @staticmethod
     ___ split(inp, size
-        r_ [inp[start:start + size] for start in range(0, le.(inp), size)]
+        r_ [inp[start:start + size] ___ start in range(0, le.(inp), size)]
 
 
 ___ number(inp

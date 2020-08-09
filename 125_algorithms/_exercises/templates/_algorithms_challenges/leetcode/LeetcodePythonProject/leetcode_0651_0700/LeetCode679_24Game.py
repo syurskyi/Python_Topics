@@ -18,8 +18,8 @@ class Solution(object
         nums = sorted(nums)
         __ ''.join(str(nums) + ',') in hashmap:
             r_ False
-        for i in range(le.(nums)-1
-            for j in range(i+1, le.(nums)):
+        ___ i in range(le.(nums)-1
+            ___ j in range(i+1, le.(nums)):
                 a = nums[i]
                 b = nums[j]
                 nums1 = nums[:i]+nums[i+1:j]+nums[j+1:]
@@ -42,7 +42,7 @@ class Solution(object
             [8, 1, 6, 6],
             [3, 3, 8, 8],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.judgePoint24(nums)
             print('result: %s' % result)

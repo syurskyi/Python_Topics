@@ -19,12 +19,12 @@ class Solution(object
         w___ q:
             res += 1
             size = le.(q)
-            for _ in range(size
+            ___ _ in range(size
                 s = q.pop(0)
                 i = 0
                 w___ s[i] __ b[i]:
                     i += 1
-                for j in range(i+1, le.(s)):
+                ___ j in range(i+1, le.(s)):
                     __ s[j] __ b[j] or s[i] != b[j]:
                         continue
                     tmp = self.swap(s, i, j)
@@ -63,7 +63,7 @@ class Solution(object
                 'abccab',
             ],
         ]
-        for a, b in testCases:
+        ___ a, b in testCases:
             res = self.kSimilarity(a, b)
             print('res: %s' % res)
             print('-='*30+'-')

@@ -54,7 +54,7 @@ class Solution(object
         testCases = [
             TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3)),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.findLeaves(root)
             print('result: %s' % result)
             print('-='*30+'-')

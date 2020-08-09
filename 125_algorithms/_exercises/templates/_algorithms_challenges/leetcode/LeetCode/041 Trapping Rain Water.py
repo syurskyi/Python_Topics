@@ -18,23 +18,23 @@ class Solution:
         :param A: a list of integers
         :return: an integer
         """
-        left_maxs = [0 for _ in A]  # on the left including itself
-        right_maxs = [0 for _ in A]  # on the right including itself
+        left_maxs = [0 ___ _ in A]  # on the left including itself
+        right_maxs = [0 ___ _ in A]  # on the right including itself
 
         left_max = 0
-        for ind, val in enumerate(A
+        ___ ind, val in enumerate(A
             left_max = max(left_max, val)
             left_maxs[ind] = left_max
 
         right_max = 0
         # for ind, val in enumerate(reversed(A)):  # ind incorrect
-        for ind, val in reversed(list(enumerate(A))):
+        ___ ind, val in reversed(list(enumerate(A))):
             right_max = max(right_max, val)
             right_maxs[ind] = right_max
 
         # calculate the volume
         volume = 0
-        for ind, val in enumerate(A
+        ___ ind, val in enumerate(A
             volume += max(0, min(left_maxs[ind], right_maxs[ind]) - val)
 
         r_ volume

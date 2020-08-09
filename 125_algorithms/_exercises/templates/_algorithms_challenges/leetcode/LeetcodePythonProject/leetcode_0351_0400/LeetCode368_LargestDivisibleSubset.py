@@ -13,8 +13,8 @@ class Solution(object
         dp = [1]*n
         maxLen = 0
         maxInd = 0
-        for i in range(n
-            for j in range(i-1, -1, -1
+        ___ i in range(n
+            ___ j in range(i-1, -1, -1
                 __ nums[i]%nums[j] __ 0:
                     __ dp[i]<dp[j]+1:
                         dp[i] = dp[j]+1
@@ -37,7 +37,7 @@ class Solution(object
             [5, 7],
             [4, 8, 10, 240],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.largestDivisibleSubset(nums)
             print('result: %s' % result)

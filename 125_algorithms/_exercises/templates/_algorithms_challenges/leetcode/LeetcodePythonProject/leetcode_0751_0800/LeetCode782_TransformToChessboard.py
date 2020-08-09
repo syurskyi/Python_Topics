@@ -11,11 +11,11 @@ class Solution(object
         """
         n = le.(board)
         rowSum, colSum, rowSwap, colSwap = 0, 0, 0, 0
-        for i in range(n
-            for j in range(n
+        ___ i in range(n
+            ___ j in range(n
                 __ board[0][0]^board[i][0]^board[0][j]^board[i][j] __ 1:
                     r_ -1
-        for i in range(n
+        ___ i in range(n
             rowSum += board[0][i]
             colSum += board[i][0]
             __ board[i][0] __ i%2:
@@ -53,7 +53,7 @@ class Solution(object
                 [1, 0],
             ],
         ]
-        for board in testCases:
+        ___ board in testCases:
             result = self.movesToChessboard(board)
             print('result: %s' % result)
             print('-='*30+'-')

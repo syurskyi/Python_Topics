@@ -11,7 +11,7 @@ class Solution(object
         """
         valids = []
         res = 0
-        for c in ops:
+        ___ c in ops:
             __ c __ '+':
                 res += valids[-1]+valids[-2]
                 valids.append(valids[-1]+valids[-2])
@@ -31,7 +31,7 @@ class Solution(object
 #             ["5","2","C","D","+"],
             ["5","-2","4","C","D","9","+","+"],
         ]
-        for ops in testCases:
+        ___ ops in testCases:
             print('ops: %s' % ops)
             result = self.calPoints(ops)
             print('result: %s' % result)

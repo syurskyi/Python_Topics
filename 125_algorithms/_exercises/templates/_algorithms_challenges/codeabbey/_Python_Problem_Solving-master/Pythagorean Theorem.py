@@ -1,5 +1,5 @@
 ______ ma__
-for i in range(int(input())):
+___ i in range(int(input())):
     triangle= list(map(int,input().split()))
     a,b,c = triangle
     cal = ma__.sqrt(a**2 + b**2)

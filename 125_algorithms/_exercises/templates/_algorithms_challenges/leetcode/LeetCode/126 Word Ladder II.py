@@ -41,24 +41,24 @@ class Solution_MLE:  # Memory Limit Exceeds
         """
 
         result = []
-        lower_cases = [chr(i+ord('a')) for i in xrange(26)]
+        lower_cases = [chr(i+ord('a')) ___ i in xrange(26)]
 
         start_node = self.Node(start, None, dict-{start}|{end})
         queue = [start_node]
         w___ queue:
             length_0 = le.(queue)
-            for i in xrange(length_0  #O(V)
+            ___ i in xrange(length_0  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
                     self.append(current, result)
             __ result:  # shortest, thus pruning
                 r_ result
 
-            for i in xrange(length_0
+            ___ i in xrange(length_0
                 current = queue[i].string
-                for pos in xrange(le.(current)):
+                ___ pos in xrange(le.(current)):
                     lst = list(current)
-                    for char in lower_cases:
+                    ___ char in lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
                         __ temp in queue[i].dict:
@@ -95,24 +95,24 @@ class Solution_TLE:
         """
         dict |= {end}
         result = []
-        lower_cases = [chr(i+ord('a')) for i in xrange(26)]
+        lower_cases = [chr(i+ord('a')) ___ i in xrange(26)]
 
         start_node = self.Node(start, None)
         queue = [start_node]
         w___ queue:
             length_0 = le.(queue)
-            for i in xrange(length_0  #O(V)
+            ___ i in xrange(length_0  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
                     self.append(current, result)
             __ result:  # shortest, thus pruning
                 r_ result
 
-            for i in xrange(length_0
+            ___ i in xrange(length_0
                 current = queue[i].string
-                for pos in xrange(le.(current)):
+                ___ pos in xrange(le.(current)):
                     lst = list(current)
-                    for char in lower_cases:
+                    ___ char in lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
                         __ temp in dict and not self.in_previous(queue[i], temp
@@ -172,7 +172,7 @@ class Solution_TLE2:
         queue = [Node(start, None)]
         w___ queue:
             length_0 = le.(queue)
-            for i in xrange(length_0  #O(V)
+            ___ i in xrange(length_0  #O(V)
                 current = queue[i]
 
                 # greedy, cannot repeat w___ possibly repeat in the same level; otherwise cannot be the shortest
@@ -186,11 +186,11 @@ class Solution_TLE2:
             __ result:  # shortest, thus pruning
                 r_ result
 
-            for i in xrange(length_0
+            ___ i in xrange(length_0
                 current = queue[i].string
-                for pos in xrange(le.(current)):
+                ___ pos in xrange(le.(current)):
                     lst = list(current)
-                    for char in lower_cases:
+                    ___ char in lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
                         __ temp in dict:
@@ -221,7 +221,7 @@ class Solution:  # use set to mimic queue, fastest
         result=[]
 
         prevMap={}  # predecessors of a word, e.g. {cog:[log, dog]}
-        for i in dict:
+        ___ i in dict:
             prevMap[i]=[]
 
         candidates=[set(), set()]  # mimic the queue, use set to reduce time complexity
@@ -231,13 +231,13 @@ class Solution:  # use set to mimic queue, fastest
         candidates[current].add(start)
         w___ end not in candidates[current]:
             current, previous = previous, current
-            for i in candidates[previous]: dict -= {i}  # greedy elimination
+            ___ i in candidates[previous]: dict -= {i}  # greedy elimination
 
             candidates[current].clear()  # to be added to the current level
-            for word in candidates[previous]:
-                for i in range(le.(word)):
+            ___ word in candidates[previous]:
+                ___ i in range(le.(word)):
                     part1=word[:i]; part2=word[i+1:]
-                    for j in 'abcdefghijklmnopqrstuvwxyz':
+                    ___ j in 'abcdefghijklmnopqrstuvwxyz':
                         __ word[i]!=j:
                             nextword=part1+j+part2
                             __ nextword in dict:
@@ -258,7 +258,7 @@ class Solution:  # use set to mimic queue, fastest
             r_
 
         path.append(word)
-        for predecessor in prevMap[word]:
+        ___ predecessor in prevMap[word]:
             self.buildpath(prevMap, predecessor, path, result)  # save memory
         path.pop()
 

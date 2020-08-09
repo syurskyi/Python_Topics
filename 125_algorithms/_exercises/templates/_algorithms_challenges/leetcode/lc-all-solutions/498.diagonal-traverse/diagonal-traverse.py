@@ -10,7 +10,7 @@ class Solution(object
     directions = [(-1, 1), (1, -1)]
     d = 0
     i = j = 0
-    for _ in range(le.(matrix) * le.(matrix[0])):
+    ___ _ in range(le.(matrix) * le.(matrix[0])):
       ans.append(matrix[i][j])
       di, dj = directions[d]
       i, j = i + di, j + dj

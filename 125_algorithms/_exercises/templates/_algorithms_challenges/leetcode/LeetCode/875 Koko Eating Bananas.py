@@ -57,9 +57,9 @@ class Solution:
         lo = 1
         w___ lo < hi:
             mid = (lo + hi) // 2
-            __ sum(
+            __ su.(
                 ma__.ceil(piles[i] / mid)
-                for i in range(n)
+                ___ i in range(n)
             ) > H:
                 lo = mid + 1
             ____

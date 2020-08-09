@@ -21,16 +21,16 @@ class Solution:
 
         queue, _queue = [], None
         days = -1
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] __ self.ZOMBIE:
                     queue.append((x, y))
 
         w___ queue:
             days += 1
             _queue = []
-            for x, y in queue:
-                for dx, dy in vector:
+            ___ x, y in queue:
+                ___ dx, dy in vector:
                     _x = x + dx
                     _y = y + dy
                     __ 0 <= _x < m and 0 <= _y < n \
@@ -39,8 +39,8 @@ class Solution:
                         _queue.append((_x, _y))
             queue = _queue
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] __ self.PEOPLE:
                     r_ -1
 

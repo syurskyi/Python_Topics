@@ -18,7 +18,7 @@ class Solution(object
     j = 0
     score = 0
     chashmap = {}
-    for i in range(0, le.(s)):
+    ___ i in range(0, le.(s)):
       w___ j < le.(s) and (score < k or chashmap.get(s[j], 0) != 0
         __ chashmap.get(s[j], 0) __ 0:
           score += 1

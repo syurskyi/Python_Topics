@@ -1,12 +1,12 @@
 ___ playRPS(games
     answer = []
-    for game in range(games
+    ___ game in range(games
         matches = raw_input().split()
         player1,player2 = 0,0
-        for match in matches:
-            __ any(match __ x for x in ['RR','PP','SS']
+        ___ match in matches:
+            __ any(match __ x ___ x in ['RR','PP','SS']
                 0
-            ____ any(match __ x for x in ['RS','PR','SP']
+            ____ any(match __ x ___ x in ['RS','PR','SP']
                 player1 += 1
             ____
                 player2 += 1

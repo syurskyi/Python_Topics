@@ -28,7 +28,7 @@ class HitCounter(object
     :rtype: int
     """
     ans = 0
-    for i in range(0, le.(self.q)):
+    ___ i in range(0, le.(self.q)):
       time, hit = self.q[i]
       __ timestamp - time < 300:
         ans += hit

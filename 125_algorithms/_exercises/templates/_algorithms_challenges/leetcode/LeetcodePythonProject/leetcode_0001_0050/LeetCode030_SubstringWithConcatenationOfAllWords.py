@@ -13,14 +13,14 @@ class Solution(object
         res = []
         __ not words or not s: r_ res
         hashmap0 = {}
-        for word in words:
+        ___ word in words:
             hashmap0[word] = hashmap0.get(word, 0)+1
         wordLen = le.(words[0])
-        for j in range(wordLen
+        ___ j in range(wordLen
             hashmap = {}
             start = j
             count = 0
-            for i in range(j, le.(s)-wordLen+1, wordLen
+            ___ i in range(j, le.(s)-wordLen+1, wordLen
                 sub = s[i:i+wordLen]
                 __ sub in hashmap0:
                     hashmap[sub] = hashmap.get(sub, 0)+1
@@ -61,7 +61,7 @@ class Solution(object
                 ['a', 'a']
             ],
         ]
-        for s, words in testCases:
+        ___ s, words in testCases:
             print('s: %s' % s)
             print('words: %s' % words)
             result = self.findSubstring(s, words)

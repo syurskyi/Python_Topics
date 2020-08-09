@@ -16,13 +16,13 @@ class RobotTests(unittest.TestCase
 
     ___ test_turn_right(self
         robot = Robot()
-        for direction in [EAST, SOUTH, WEST, NORTH]:
+        ___ direction in [EAST, SOUTH, WEST, NORTH]:
             robot.turn_right()
             self.assertEqual(robot.bearing, direction)
 
     ___ test_turn_left(self
         robot = Robot()
-        for direction in [WEST, SOUTH, EAST, NORTH]:
+        ___ direction in [WEST, SOUTH, EAST, NORTH]:
             robot.turn_left()
             self.assertEqual(robot.bearing, direction)
 

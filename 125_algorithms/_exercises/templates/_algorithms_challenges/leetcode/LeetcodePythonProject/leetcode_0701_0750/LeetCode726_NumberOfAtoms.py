@@ -11,7 +11,7 @@ class Solution(object
         :rtype: str
         """
         hashmap = self.helper(formula)
-        arr = sorted([str(c)+str(count) __ count > 1 else str(c) for c, count in hashmap.items()])
+        arr = sorted([str(c)+str(count) __ count > 1 else str(c) ___ c, count in hashmap.items()])
         res = ''.join(arr)
         r_ res
     
@@ -37,7 +37,7 @@ class Solution(object
                     w___ i < le.(s) and s[i].isdigit(
                         i += 1
                     count = int(s[prev:i])
-                for elem, freq in hashmap0.items(
+                ___ elem, freq in hashmap0.items(
                     hashmap[elem] = hashmap.get(elem, 0)+freq*count
             ____
                 __ i+1 < le.(s) and re.match('[a-z]', s[i+1]
@@ -64,7 +64,7 @@ class Solution(object
             '((N42)24(B11))2',
             '((N42)24(OB40Li30CHe3O48LiNN26)33(C12Li48N30H13HBe31)21(BHN30Li26BCBe47N40)15(H5)16)14',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.countOfAtoms(s)
             print('result: %s' % result)

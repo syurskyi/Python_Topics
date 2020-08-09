@@ -10,7 +10,7 @@ class Solution(object
         :type n: int
         :rtype: bool
         """
-        for i, flower in enumerate(flowerbed
+        ___ i, flower in enumerate(flowerbed
             __ flower __ 0 and\
                 (i __ 0 or flowerbed[i-1] __ 0) and\
                 (i __ le.(flowerbed)-1 or flowerbed[i+1] __ 0
@@ -43,7 +43,7 @@ class Solution(object
                 0,
             ],
         ]
-        for flowerbed, n in testCases:
+        ___ flowerbed, n in testCases:
             print('flowerbed: %s' % flowerbed)
             print('n: %s' % n)
             result = self.canPlaceFlowers(flowerbed, n)

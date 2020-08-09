@@ -45,13 +45,13 @@ class Solution(object
         """
         m = le.(board)
         n = le.(board[0])
-        lines = [[0 for _ in xrange(n)] for _ in xrange(2)]
-        for i in xrange(m
-            for j in xrange(n
+        lines = [[0 ___ _ in xrange(n)] ___ _ in xrange(2)]
+        ___ i in xrange(m
+            ___ j in xrange(n
                 lines[(i+1)%2][j] = board[i][j]
 
                 cnt = 0
-                for d in self.dirs:
+                ___ d in self.dirs:
                     I = i+d[0]
                     J = j+d[1]
                     __ 0 <= I < m and 0 <= J < n:

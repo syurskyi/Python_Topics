@@ -10,9 +10,9 @@ class Solution:
             r_ [[]]
         ____
             res = [[]]
-            for i in range(le.(S)):
+            ___ i in range(le.(S)):
                 rest_subsets = self._subsets(S[i + 1:], k - 1)
-                for subset in rest_subsets:
+                ___ subset in rest_subsets:
                     subset.insert(0, S[i])
                 res += rest_subsets
             r_ res

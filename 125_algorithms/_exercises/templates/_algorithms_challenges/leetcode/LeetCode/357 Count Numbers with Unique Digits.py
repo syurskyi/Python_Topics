@@ -22,7 +22,7 @@ class Solution(object
         """
         ret = 1
         Fi = 1
-        for i in xrange(n
+        ___ i in xrange(n
             Fi *= (10-i) __ i != 0 else 9
             ret += Fi
 

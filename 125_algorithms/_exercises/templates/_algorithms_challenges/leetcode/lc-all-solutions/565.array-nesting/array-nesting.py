@@ -6,7 +6,7 @@ class Solution(object
     """
     cache = [0] * le.(nums)
     ans = 0
-    for i, start in enumerate(nums
+    ___ i, start in enumerate(nums
       __ cache[i]:
         continue
       p = start

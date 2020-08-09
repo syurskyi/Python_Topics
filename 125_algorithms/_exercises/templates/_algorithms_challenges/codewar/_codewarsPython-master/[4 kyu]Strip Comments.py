@@ -5,11 +5,11 @@ ___ solution(string,markers
 
     ___ stripSentence(s
         afterStrip = s
-        for m in markers:
+        ___ m in markers:
             __ m in s and le.(afterStrip) > le.(s[:s.find(m)].rstrip()):
                 afterStrip = s[:s.find(m)].rstrip()
         r_ afterStrip
-    r_ '\n'.join([stripSentence(s) for s in stringSplit])
+    r_ '\n'.join([stripSentence(s) ___ s in stringSplit])
 
 print(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]))
 print(solution("apples, pears # and bananas\ngrapes\nbananas !#apples", ["#", "!"]))

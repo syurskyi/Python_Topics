@@ -22,7 +22,7 @@ class Solution(object
         __ le.(elem) __ k:
             result.append(list(elem))
             r_
-        for i in range(start, n+1
+        ___ i in range(start, n+1
             elem.append(i)
             self.helper(elem, result, i+1, n, k)
             del elem[-1]
@@ -31,7 +31,7 @@ class Solution(object
         testCases = [
             (4, 2),
         ]
-        for n, k in testCases:
+        ___ n, k in testCases:
             print('n: %s, k: %s' % (n, k))
             result = self.combine(n, k)
             print('result: %s' % (result))

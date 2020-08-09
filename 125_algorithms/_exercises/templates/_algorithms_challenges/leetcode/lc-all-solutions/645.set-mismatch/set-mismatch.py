@@ -6,7 +6,7 @@ class Solution(object
     """
     ans = [-1, -1]
     diff = diffSquare = 0
-    for i, num in enumerate(nums
+    ___ i, num in enumerate(nums
       diff += i + 1 - num
       diffSquare += (i + 1) ** 2 - num ** 2
     ans[1] = (diffSquare / diff + diff) / 2

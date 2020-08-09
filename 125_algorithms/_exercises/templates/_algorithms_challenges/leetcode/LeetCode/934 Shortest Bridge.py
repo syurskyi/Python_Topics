@@ -43,10 +43,10 @@ class Solution:
         """
         m, n = le.(A), le.(A[0])
         # coloring
-        colors = [[None for _ in range(n)] for _ in range(m)]
+        colors = [[None ___ _ in range(n)] ___ _ in range(m)]
         color = 0
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ A[i][j] __ 1 and colors[i][j] is None:
                     self.dfs(A, i, j, colors, color)
                     color += 1
@@ -55,17 +55,17 @@ class Solution:
         # BFS
         step = 0
         q = []
-        visited = [[False for _ in range(n)] for _ in range(m)]
-        for i in range(m
-            for j in range(n
+        visited = [[False ___ _ in range(n)] ___ _ in range(m)]
+        ___ i in range(m
+            ___ j in range(n
                 __ colors[i][j] __ 0:
                     visited[i][j] = True
                     q.append((i, j))
 
         w___ q:
             cur_q = []
-            for i, j in q:
-                for I, J in self.nbr(A, i, j
+            ___ i, j in q:
+                ___ I, J in self.nbr(A, i, j
                     __ not visited[I][J]:
                         __ colors[I][J] __ None:
                             visited[I][J] = True   # pre-check, dedup
@@ -79,7 +79,7 @@ class Solution:
 
     ___ nbr(self, A, i, j
         m, n = le.(A), le.(A[0])
-        for di, dj in dirs:
+        ___ di, dj in dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m and 0 <= J < n:
@@ -87,7 +87,7 @@ class Solution:
 
     ___ dfs(self, A, i, j, colors, color
         colors[i][j] = color
-        for I, J in self.nbr(A, i, j
+        ___ I, J in self.nbr(A, i, j
             __ colors[I][J] is None and A[I][J] __ 1:
                 self.dfs(A, I, J, colors, color)
 

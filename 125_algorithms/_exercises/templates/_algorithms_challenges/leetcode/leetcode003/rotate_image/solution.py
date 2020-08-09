@@ -4,11 +4,11 @@ class Solution:
     ___ rotate(self, matrix
         n = le.(matrix)
         # Layers
-        for i in range(n / 2
+        ___ i in range(n / 2
             # Each layer's index range
             start = i
             end = n - 1 - i
-            for j in range(start, end
+            ___ j in range(start, end
                 offset = j - start
                 top = matrix[start][j]
                 # Left to Top

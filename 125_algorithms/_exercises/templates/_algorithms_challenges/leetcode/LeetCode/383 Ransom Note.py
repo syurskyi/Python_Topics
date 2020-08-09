@@ -25,10 +25,10 @@ class Solution(object
         """
         d = defaultdict(int)
 
-        for e in magazine:
+        ___ e in magazine:
             d[e] += 1
 
-        for e in ransomNote:
+        ___ e in ransomNote:
             __ d[e] __ 0:
                 r_ False
             d[e] -= 1

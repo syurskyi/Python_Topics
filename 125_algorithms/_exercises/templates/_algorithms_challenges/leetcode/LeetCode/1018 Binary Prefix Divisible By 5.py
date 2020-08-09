@@ -41,7 +41,7 @@ class Solution:
         """
         cur = 0
         ret = []
-        for a in A:
+        ___ a in A:
             cur = (cur << 1) + a
             cur %= 5
             __ cur __ 0:

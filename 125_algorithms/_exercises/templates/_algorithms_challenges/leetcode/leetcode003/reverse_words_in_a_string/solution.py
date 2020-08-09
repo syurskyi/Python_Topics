@@ -27,7 +27,7 @@ class Solution:
         end = j
         # Remove duplicate spaces between words
         k = start  # Last processed
-        for p in range(start, end + 1
+        ___ p in range(start, end + 1
             __ p > start and ls[p] __ ' ' and ls[p] __ ls[p - 1]:
                 pass
             ____
@@ -42,7 +42,7 @@ class Solution:
         # Reverse each word
         ws = start  # Word start index
         we = start  # Word end index
-        for i in range(start, end + 1
+        ___ i in range(start, end + 1
             __ ls[i] __ ' ' or i __ end:
                 we = end __ i __ end else i - 1
                 self.reverse(ls, ws, we)
@@ -73,7 +73,7 @@ class Solution:
         self.reverse(cs, left, right)
         # Remove multiple spaces between two words
         j = left
-        for i in range(left, right + 1
+        ___ i in range(left, right + 1
             __ cs[i] != ' ' or cs[i] __ ' ' and cs[i - 1] != ' ':
                 cs[j] = cs[i]
                 j += 1

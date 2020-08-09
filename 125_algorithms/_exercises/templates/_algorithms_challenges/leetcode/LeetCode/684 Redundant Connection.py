@@ -80,7 +80,7 @@ class Solution:
         Union-find
         """
         ds = DisjointSet()
-        for p, q in edges:
+        ___ p, q in edges:
             ds.add(p)
             ds.add(q)
             __ ds.is_union(p, q
@@ -98,16 +98,16 @@ class Solution_dfs:
         Notice: need to extract the circle from the cyclic path
         """
         G = defaultdict(set)
-        for p, q in edges:
+        ___ p, q in edges:
             G[p].add(q)
             G[q].add(p)
 
         visited = set()
-        for k in G.keys(
+        ___ k in G.keys(
             __ k not in visited:
                 circle = self.dfs(G, k, None, set([k]), [k], visited)
                 __ circle:
-                    for p, q in reversed(edges
+                    ___ p, q in reversed(edges
                         __ p in circle and q in circle:
                             r_ [p, q]
 
@@ -116,13 +116,13 @@ class Solution_dfs:
     ___ dfs(self, G, cur, pi, path, path_list, visited
         visited.add(cur)
 
-        for nbr in G[cur]:
+        ___ nbr in G[cur]:
             __ nbr != pi:
                 __ nbr in path:
                     # extract the circle from path
                     circle = set()
                     in_circle = False
-                    for e in path_list:
+                    ___ e in path_list:
                         __ e __ nbr:
                             in_circle = True
                         __ in_circle:

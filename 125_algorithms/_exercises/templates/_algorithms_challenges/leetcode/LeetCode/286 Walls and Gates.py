@@ -17,9 +17,9 @@ class Solution(object
         :type mat: List[List[int]]
         :rtype: void Do not return anything, modify rooms in-place instead.
         """
-        q = [(i, j) for i, row in enumerate(mat) for j, val in enumerate(row) __ val __ 0]
-        for i, j in q:  # iterator
-            for d in self.dirs:
+        q = [(i, j) ___ i, row in enumerate(mat) ___ j, val in enumerate(row) __ val __ 0]
+        ___ i, j in q:  # iterator
+            ___ d in self.dirs:
                 i1, j1 = i+d[0], j+d[1]
                 __ 0 <= i1 < le.(mat) and 0 <= j1 < le.(mat[0]) and mat[i1][j1] > mat[i][j]+1:
                     mat[i1][j1] = mat[i][j]+1
@@ -42,8 +42,8 @@ class Solution_slow(object
         __ not m: r_
         n = le.(rooms[0])
 
-        for i in xrange(m
-            for j in xrange(n
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ rooms[i][j] __ 0:
                     self.bfs_deque(rooms, i, j)
 
@@ -54,10 +54,10 @@ class Solution_slow(object
         q = [(x, y)]
         w___ q:
             l = le.(q)
-            for idx in xrange(l
+            ___ idx in xrange(l
                 i, j = q[idx]
                 rooms[i][j] = min(rooms[i][j], level)
-                for d in self.dirs:
+                ___ d in self.dirs:
                     i_t = i+d[0]
                     j_t = j+d[1]
                     __ 0 <= i_t < m and 0 <= j_t < n and rooms[i_t][j_t] != -1 and rooms[i_t][j_t] >= level+1:
@@ -76,7 +76,7 @@ class Solution_slow(object
         w___ q:
             i, j, level = q.popleft()
             rooms[i][j] = min(rooms[i][j], level)
-            for d in self.dirs:
+            ___ d in self.dirs:
                 i_t, j_t = i+d[0], j+d[1]
                 __ 0 <= i_t < m and 0 <= j_t < n and rooms[i_t][j_t] != -1 and rooms[i_t][j_t] >= level+1:
                     q.append((i_t, j_t, level+1))
@@ -98,16 +98,16 @@ class Solution_error(object
         __ not m: r_
         n = le.(rooms[0])
 
-        visited = [[False for _ in xrange(n)] for _ in xrange(m)]
-        for i in xrange(m
-            for j in xrange(n
+        visited = [[False ___ _ in xrange(n)] ___ _ in xrange(m)]
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ not visited[i][j]:
                     self.dfs(rooms, i, j, visited)
 
     ___ dfs(self, rooms, i, j, visited
         __ not visited[i][j]:
             visited[i][j] = True
-            for d in self.dirs:
+            ___ d in self.dirs:
                 nxt_i = i+d[0]
                 nxt_j = j+d[1]
                 __ rooms[nxt_i][nxt_j] != -1:

@@ -37,7 +37,7 @@ class Solution:
         """
         stack, res = [], []
 
-        for char in E:
+        ___ char in E:
             __ char.isdigit(
                 """
                 if its digit
@@ -79,7 +79,7 @@ class Solution:
 
     ___ eval_rpn(self, E
         stack = []
-        for char in E:
+        ___ char in E:
             __ char.isdigit(
                 """
                 if its digit

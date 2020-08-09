@@ -12,12 +12,12 @@ class Solution(object
         :rtype: List[int]
         """
         arr0 = [0]*26
-        for c in p:
+        ___ c in p:
             arr0[ord(c)-ord('a')] += 1
         left = 0
         res = []
         arr = [0]*26
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             arr[ord(c)-ord('a')] += 1
             w___ left <= i and arr[ord(c)-ord('a')] > arr0[ord(c)-ord('a')]:
                 arr[ord(s[left])-ord('a')] -= 1
@@ -34,7 +34,7 @@ class Solution(object
         """
         arr0 = [0]*26
         count = le.(p)
-        for c in p:
+        ___ c in p:
             arr0[ord(c)-ord('a')] += 1
         left = 0
         arr1 = [0]*26
@@ -59,7 +59,7 @@ class Solution(object
             ('cbaebabacd', 'abc'),
             ('abab', 'ab'),
         ]
-        for s, p in testCases:
+        ___ s, p in testCases:
             result = self.findAnagrams(s, p)
             print('result: %s' % result)
             result0 = self.findAnagrams_orig(s, p)

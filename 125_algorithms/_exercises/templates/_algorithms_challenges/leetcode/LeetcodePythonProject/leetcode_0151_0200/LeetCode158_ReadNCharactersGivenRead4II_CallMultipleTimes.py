@@ -25,7 +25,7 @@ class Solution(object
             read4(buf4)
             self.queue.extend(buf4)
             curr = min(le.(self.queue), n-idx)
-            for _ in range(curr
+            ___ _ in range(curr
                 buf[idx] = self.queue.pop(0)
                 idx += 1
             __ curr __ 0:

@@ -12,7 +12,7 @@ class Solution:
             r_ ans
 
         heap = []
-        for i in range(le.(G)):
+        ___ i in range(le.(G)):
             __ not G[i]:
                 continue
 

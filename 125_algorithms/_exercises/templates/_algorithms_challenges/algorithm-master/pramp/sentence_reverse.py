@@ -53,7 +53,7 @@ ___ reverse_words2(arr
     w___ left < n and arr[left] __ ' ':
         left += 1
 
-    for right in range(n
+    ___ right in range(n
         __ arr[right] != ' ':
             continue
 

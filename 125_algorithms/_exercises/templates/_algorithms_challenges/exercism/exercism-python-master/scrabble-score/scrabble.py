@@ -13,7 +13,7 @@ LETTER_SCORE = {'a': 1, 'e': 1, 'i': 1, 'o': 1, 'u': 1,
 ___ score(word
     """Calculates a word score in scabble"""
     try:
-        r_ sum([LETTER_SCORE[c] for c in word.strip().lower()])
+        r_ su.([LETTER_SCORE[c] ___ c in word.strip().lower()])
     except KeyError:
         r_ 0
 

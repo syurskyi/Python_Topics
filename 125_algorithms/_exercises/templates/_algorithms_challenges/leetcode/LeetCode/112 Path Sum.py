@@ -22,7 +22,7 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    ___ hasPathSum(self, root, sum
+    ___ hasPathSum(self, root, su.
         """
         dfs
 
@@ -38,14 +38,14 @@ class Solution:
         # if sum<0:
         #    return False
 
-        sum = sum-root.val
+        su. = su.-root.val
 
         # terminal condition
         __ sum__0 and root.left is None and root.right is None:
             r_ True
 
         # dfs without pre-checking
-        r_ self.hasPathSum(root.left, sum) or self.hasPathSum(root.right, sum)
+        r_ self.hasPathSum(root.left, su.) or self.hasPathSum(root.right, su.)
 
 
 

@@ -19,4 +19,4 @@ ___ get_harry_most_common_word(
         words = word_regex.findall(f.read().lower())
     with open(stopwords_file) as f:
         stops = word_regex.findall(f.read().lower())
-    r_ Counter([x for x in words __ x not in stops]).most_common(1)[0]
+    r_ Counter([x ___ x in words __ x not in stops]).most_common(1)[0]

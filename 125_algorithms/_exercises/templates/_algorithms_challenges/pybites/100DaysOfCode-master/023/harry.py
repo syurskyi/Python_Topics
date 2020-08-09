@@ -14,8 +14,8 @@ ___ most_common_re(s, n=None
 
 
 ___ most_common_iter(s, n=None
-    r_ Counter(''.join(c for c in w __ c not in punctuation)
-                   for w in s.lower().split()).most_common(n)
+    r_ Counter(''.join(c ___ c in w __ c not in punctuation)
+                   ___ w in s.lower().split()).most_common(n)
 
 
 __ __name__ __ "__main__":
@@ -27,5 +27,5 @@ __ __name__ __ "__main__":
     with open(file) as f:
         common_words = most_common_str(f.read(), n=20)
 
-    for word, count in common_words:
+    ___ word, count in common_words:
         print('{:<4} {}'.format(count, word))

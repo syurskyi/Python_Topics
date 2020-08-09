@@ -53,7 +53,7 @@ class Solution:
 
         root.left = None
         cur = root
-        for node in lst:
+        ___ node in lst:
             node.left = None
             node.right = None
             cur.right = node

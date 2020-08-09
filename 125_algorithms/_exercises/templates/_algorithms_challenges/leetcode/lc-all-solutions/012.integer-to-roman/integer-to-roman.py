@@ -7,7 +7,7 @@ class Solution(object
     ans = ""
     values = {"M": 1000, "D": 500, "C": 100, "L": 50, "X": 10, "V": 5, "I": 1}
     literals = ["M", "D", "C", "L", "X", "V", "I"]
-    for idx in [0, 2, 4]:
+    ___ idx in [0, 2, 4]:
       k = num / values[literals[idx]]
       re = (num % values[literals[idx]]) / values[literals[idx + 2]]
       ans += k * literals[idx]

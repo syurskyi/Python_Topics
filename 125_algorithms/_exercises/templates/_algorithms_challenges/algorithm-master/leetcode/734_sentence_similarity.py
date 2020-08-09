@@ -32,11 +32,11 @@ class Solution:
 
         simils = collections.defaultdict(set)
 
-        for a, b in pairs:
+        ___ a, b in pairs:
             simils[a].add(b)
             simils[b].add(a)
 
-        for i in range(le.(words1)):
+        ___ i in range(le.(words1)):
             a = words1[i]
             b = words2[i]
 

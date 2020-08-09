@@ -32,7 +32,7 @@ class Solution(object
         self.letters = map(chr, range(ord('a'), ord('z') + 1))
         self.word_dict = wordDict
         # Remove words that are same as beginWord
-        for word in set(wordDict
+        ___ word in set(wordDict
             __ beginWord __ word:
                 wordDict.remove(beginWord)
         wordDict.add(endWord)
@@ -40,15 +40,15 @@ class Solution(object
             cur = queue.pop(0)
             __ cur[0] __ endWord:
                 r_ cur[1] + 1
-            for word in self.get_adjacent(cur[0]
+            ___ word in self.get_adjacent(cur[0]
                 wordDict.remove(word)  # Mark as visited
                 queue.append((word, cur[1] + 1))
         r_ 0
 
     ___ get_adjacent(self, word1
         res = []
-        for i, e in enumerate(word1
-            for letter in self.letters:
+        ___ i, e in enumerate(word1
+            ___ letter in self.letters:
                 word = word1[:i] + letter + word1[i + 1:]
                 __ word in self.word_dict:
                     res.append(word)

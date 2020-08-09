@@ -48,15 +48,15 @@ class Solution:
         with memory, it is considered dp
         """
         q = set([(r, c)])  # working que
-        P = [[0 for _ in range(N)] for _ in range(N)]
+        P = [[0 ___ _ in range(N)] ___ _ in range(N)]
         P[r][c] = 1  # optimize memory
         k = 0
         w___ k < K:
             k += 1
             cur_q = set()
-            cur_P = [[0 for _ in range(N)] for _ in range(N)]
-            for i, j in q:
-                for di, dj in dirs:
+            cur_P = [[0 ___ _ in range(N)] ___ _ in range(N)]
+            ___ i, j in q:
+                ___ di, dj in dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N and 0 <= J < N:
@@ -66,10 +66,10 @@ class Solution:
             q = cur_q
             P = cur_P
 
-        r_ sum([
+        r_ su.([
             P[i][j]
-            for i in range(N)
-            for j in range(N)
+            ___ i in range(N)
+            ___ j in range(N)
         ])
 
 
@@ -78,15 +78,15 @@ class Solution:
         brute force K step
         """
         q = [(r, c)]  # working que
-        P = [[0 for _ in range(N)] for _ in range(N)]
+        P = [[0 ___ _ in range(N)] ___ _ in range(N)]
         P[r][c] = 1  # optimize memory
         k = 0
         w___ k < K:
             k += 1
             cur_q = []
-            cur_P = [[0 for _ in range(N)] for _ in range(N)]
-            for i, j in q:
-                for di, dj in dirs:
+            cur_P = [[0 ___ _ in range(N)] ___ _ in range(N)]
+            ___ i, j in q:
+                ___ di, dj in dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N and 0 <= J < N:
@@ -96,10 +96,10 @@ class Solution:
             q = cur_q
             P = cur_P
 
-        r_ sum([
+        r_ su.([
             P[i][j]
-            for i in range(N)
-            for j in range(N)
+            ___ i in range(N)
+            ___ j in range(N)
         ])
 
 

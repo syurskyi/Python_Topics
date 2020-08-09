@@ -35,7 +35,7 @@ class Solution(object
     ___ test(self
         testCases = [
         ]
-        for root, l, r in testCases:
+        ___ root, l, r in testCases:
             newRoot = self.trimBST(root, l, r)
             print(newRoot)
 

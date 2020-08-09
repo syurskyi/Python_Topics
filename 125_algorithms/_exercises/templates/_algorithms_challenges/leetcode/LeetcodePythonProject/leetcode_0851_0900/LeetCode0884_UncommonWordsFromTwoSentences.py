@@ -13,21 +13,21 @@ class Solution(object
         arr1 = A.split(' ')
         arr2 = B.split(' ')
         hashset1, hashset2, hashset3 = set(), set(), set()
-        for w in arr1:
+        ___ w in arr1:
             __ w not in hashset1:
                 hashset1.add(w)
             ____
                 hashset3.add(w)
-        for w in arr2:
+        ___ w in arr2:
             __ w not in hashset2:
                 hashset2.add(w)
             ____
                 hashset3.add(w)
         res = []
-        for w in hashset1:
+        ___ w in hashset1:
             __ w not in hashset3 and w not in hashset2:
                 res.append(w)
-        for w in hashset2:
+        ___ w in hashset2:
             __ w not in hashset3 and w not in hashset1:
                 res.append(w)
         r_ res

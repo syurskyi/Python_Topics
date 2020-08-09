@@ -50,7 +50,7 @@ class Solution:
         """
         counter = Counter(deck)
         gcd = None
-        for v in counter.values(
+        ___ v in counter.values(
             __ gcd is None:
                 gcd = v
             gcd = self.gcd(gcd, v)

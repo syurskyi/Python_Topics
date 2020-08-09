@@ -40,7 +40,7 @@ class Solution(object
             TreeNode(5, TreeNode(4, TreeNode(1), TreeNode(1)), TreeNode(5, None, TreeNode(5))),
             TreeNode(1, TreeNode(4, TreeNode(4), TreeNode(4)), TreeNode(5, None, TreeNode(5))),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.longestUnivaluePath(root)
             print('result: %s' % result)
             print('-='*30+'-')

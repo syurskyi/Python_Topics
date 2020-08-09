@@ -5,6 +5,6 @@ class Solution:
         __ not A:
             r_ None
         p = A[0]
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             p = p ^ A[i]
         r_ p

@@ -15,7 +15,7 @@ class ValidWordAbbr(object
         self.abbrev = defaultdict(int)
         self.dictionary = set(dictionary)
 
-        for word in dictionary:
+        ___ word in dictionary:
             self.abbrev[self.process(word)] += 1
 
     ___ process(self, word

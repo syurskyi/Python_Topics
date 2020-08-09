@@ -10,16 +10,16 @@ class Solution(object
         :rtype: bool
         """
         m, n = le.(matrix), le.(matrix[0])
-        for i in range(m-1, 0, -1
+        ___ i in range(m-1, 0, -1
             val = matrix[i][0]
-            for k in range(1, n
+            ___ k in range(1, n
                 __ i+k >= m or k >= n:
                     break
                 __ matrix[i+k][k] != val:
                     r_ False
-        for j in range(n
+        ___ j in range(n
             val = matrix[0][j]
-            for k in range(1, m
+            ___ k in range(1, m
                 __ j+k >= n or k >= m:
                     break
                 __ matrix[k][j+k] != val:
@@ -38,7 +38,7 @@ class Solution(object
                 [2,2]
             ],
         ]
-        for matrix in testCases:
+        ___ matrix in testCases:
             result = self.isToeplitzMatrix(matrix)
             print('result: %s' % result)
             print('-='*30+'-')

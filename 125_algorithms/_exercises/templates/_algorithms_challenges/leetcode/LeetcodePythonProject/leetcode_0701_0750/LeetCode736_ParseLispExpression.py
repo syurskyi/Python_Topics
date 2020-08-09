@@ -19,12 +19,12 @@ class Solution(object
                 tmp = list(map(int, map(getVal, tokens[1:])))
                 r_ str(tmp[0]+tmp[1] __ tokens[0]__'add' else tmp[0]*tmp[1])
             ____
-                for i in range(1, le.(tokens)-1, 2
+                ___ i in range(1, le.(tokens)-1, 2
                     __ tokens[i+1]:
                         d[tokens[i]] = getVal(tokens[i+1])
                 r_ getVal(tokens[-1])
         
-        for c in expression:
+        ___ c in expression:
             __ c __ '(':
                 __ tokens[0] __ 'let':
                     evaluate(tokens)
@@ -107,7 +107,7 @@ class Solution(object
             '(let x 2 (add (let x 3 (let x 4 x)) x))',
             '(let a1 3 b2 (add a1 1) b2)',
         ]
-        for expression in testCases:
+        ___ expression in testCases:
             print('expression: %s' % expression)
             result = self.evaluate(expression)
             print('result: %s' % result)

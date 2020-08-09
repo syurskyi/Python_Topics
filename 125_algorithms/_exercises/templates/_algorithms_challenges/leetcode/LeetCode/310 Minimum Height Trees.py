@@ -51,8 +51,8 @@ class Solution(object
         __ not edges:
             r_ [0]
 
-        V = {i: [] for i in xrange(n)}
-        for a, b in edges:
+        V = {i: [] ___ i in xrange(n)}
+        ___ a, b in edges:
             V[a].append(b)
             V[b].append(a)
 
@@ -62,7 +62,7 @@ class Solution(object
 
         ret = []
         cur = last
-        for _ in xrange((level-1)/2
+        ___ _ in xrange((level-1)/2
             cur = pi[cur]
         ret.append(cur)
 
@@ -73,19 +73,19 @@ class Solution(object
 
     ___ bfs(self, s, V
         # bfs
-        visited = [False for _ in xrange(le.(V))]
-        pi = [-1 for _ in xrange(le.(V))]
+        visited = [False ___ _ in xrange(le.(V))]
+        pi = [-1 ___ _ in xrange(le.(V))]
         last = s
         level = 0
         q = []
         q.append(s)
         w___ q:
             l = le.(q)
-            for i in xrange(l
+            ___ i in xrange(l
                 cur = q[i]
                 last = cur
                 visited[cur] = True
-                for nbr in V[cur]:
+                ___ nbr in V[cur]:
                     __ not visited[nbr]:
                         pi[nbr] = cur
                         q.append(nbr)
@@ -106,14 +106,14 @@ class Solution_TLE(object
         __ not edges:
             r_ 0
 
-        V = {i: [] for i in xrange(n)}
-        for a, b in edges:
+        V = {i: [] ___ i in xrange(n)}
+        ___ a, b in edges:
             V[a].append(b)
             V[b].append(a)
 
         ret = []
         mini = n
-        for k in V.keys(
+        ___ k in V.keys(
             l = self.bfs(k, V)
             __ l < mini:
                 ret = [k]
@@ -125,16 +125,16 @@ class Solution_TLE(object
 
     ___ bfs(self, s, V
         # bfs
-        visisted = [False for _ in xrange(le.(V))]
+        visisted = [False ___ _ in xrange(le.(V))]
         q = []
         level = 0
         q.append(s)
         w___ q:
             l = le.(q)
-            for i in xrange(l
+            ___ i in xrange(l
                 cur = q[i]
                 visisted[cur] = True
-                for nbr in V[cur]:
+                ___ nbr in V[cur]:
                     __ not visisted[nbr]:
                         q.append(nbr)
 
@@ -155,30 +155,30 @@ class SolutionError(object
         __ not edges:
             r_ 0
 
-        V = {i: [] for i in xrange(n)}
-        for a, b in edges:
+        V = {i: [] ___ i in xrange(n)}
+        ___ a, b in edges:
             V[a].append(b)
             V[b].append(a)
 
         leaf = None
-        for k, v in V.items(
+        ___ k, v in V.items(
             __ le.(v) __ 1:
                 leaf = k
                 break
 
         # bfs
-        visisted = [False for _ in xrange(n)]
+        visisted = [False ___ _ in xrange(n)]
         h2v = defaultdict(list)
         q = []
         level = 0
         q.append(leaf)
         w___ q:
             l = le.(q)
-            for i in xrange(l
+            ___ i in xrange(l
                 cur = q[i]
                 h2v[level].append(cur)
                 visisted[cur] = True
-                for nbr in V[cur]:
+                ___ nbr in V[cur]:
                     __ not visisted[nbr]:
                         q.append(nbr)
 

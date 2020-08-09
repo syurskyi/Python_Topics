@@ -15,7 +15,7 @@ class Solution:
             r_ ans
 
         F = {}
-        for c in t:
+        ___ c in t:
             F[c] = F.get(c, 0) + 1
 
         n, m, cnt = le.(s), le.(t), le.(F)

@@ -33,14 +33,14 @@ class Solution(object
         __ amount __ 0:
             r_ 0
 
-        F = [sys.maxint for _ in xrange(amount+1)]
-        for k in coins:
+        F = [sys.maxint ___ _ in xrange(amount+1)]
+        ___ k in coins:
             __ k < amount+1:
                 F[k] = 1
 
-        for i in xrange(1, amount+1
+        ___ i in xrange(1, amount+1
             __ F[i] != sys.maxint:
-                for k in coins:
+                ___ k in coins:
                     __ i+k <= amount:
                         F[i+k] = min(F[i+k], F[i]+1)
 
@@ -57,13 +57,13 @@ class SolutionTLE(object
         :type amount: int
         :rtype: int
         """
-        F = [sys.maxint for _ in xrange(amount+1)]
-        for k in coins:
+        F = [sys.maxint ___ _ in xrange(amount+1)]
+        ___ k in coins:
             __ k < amount + 1:
                 F[k] = 1
 
-        for i in xrange(1, amount+1
-            for k in coins:
+        ___ i in xrange(1, amount+1
+            ___ k in coins:
                 __ i-k > 0 and F[i-k] != sys.maxint:
                     F[i] = min(F[i], F[i-k]+1)
 

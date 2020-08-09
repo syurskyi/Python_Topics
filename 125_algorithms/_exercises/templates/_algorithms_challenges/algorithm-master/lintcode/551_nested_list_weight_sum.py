@@ -28,7 +28,7 @@ class Solution(object
     ___ dfs(self, L, depth
         _sum = 0
 
-        for obj in L:
+        ___ obj in L:
             __ obj.isInteger(
                 _sum += depth * obj.getInteger()
                 continue
@@ -52,7 +52,7 @@ class Solution(object
             _queue = []
             depth += 1
 
-            for obj in queue:
+            ___ obj in queue:
                 __ obj.isInteger(
                     ans += depth * obj.getInteger()
                     continue

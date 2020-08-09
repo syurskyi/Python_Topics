@@ -7,7 +7,7 @@ ___ encrypt(msg_count, key
     caesar_shift = string.maketrans(alphabet, alphabet_shifted)
     answer = []
 
-    for msg in range(msg_count
+    ___ msg in range(msg_count
         unencrypted_msg = raw_input().upper()
         encrypted_msg = unencrypted_msg.translate(caesar_shift)
         answer.append(encrypted_msg)
@@ -20,14 +20,14 @@ ___ decrypt(msg_count, key
     caesar_shift = string.maketrans(alphabet, alphabet_shifted)
     answer = []
 
-    for msg in range(msg_count
+    ___ msg in range(msg_count
         unencrypted_msg = raw_input().upper()
         encrypted_msg = unencrypted_msg.translate(caesar_shift)
         answer.append(encrypted_msg)
     print(' '.join(answer))
 
 ___ caesar_cipher(
-    encrypted_msg_count, shift_key = [int(x) for x in raw_input().split()]
+    encrypted_msg_count, shift_key = [int(x) ___ x in raw_input().split()]
     decrypt(encrypted_msg_count, shift_key)
     #encrypt(encrypted_msg_count, shift_key)
 caesar_cipher()

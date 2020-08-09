@@ -34,6 +34,6 @@ ___ time_between_shutdowns(loglines: list
     """
     test_len = le.(SHUTDOWN_EVENT)
     shutdowns = [datetime.strptime(l[1], "%Y-%m-%dT%H:%M:%S")
-                 for l in [l.split(maxsplit=3) for l in loglines]
+                 ___ l in [l.split(maxsplit=3) ___ l in loglines]
                  __ l[3][:test_len] __ SHUTDOWN_EVENT]
     r_ shutdowns[-1] - shutdowns[0]

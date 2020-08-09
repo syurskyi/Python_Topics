@@ -29,7 +29,7 @@ class Solution(object
             4,
             5,
         ]
-        for c in testCases:
+        ___ c in testCases:
             print(c)
             result = self.judgeSquareSum(c)
             print('result: %s' % result)

@@ -10,15 +10,15 @@ class Solution:
         n = le.(matrix)
 
         # swap by diagonal axis
-        for i in range(n - 1
-            for j in range(n - 1 - i
+        ___ i in range(n - 1
+            ___ j in range(n - 1 - i
                 x = n - 1 - j
                 y = n - 1 - i
                 matrix[i][j], matrix[x][y] = matrix[x][y], matrix[i][j]
 
         # swap by x-mid axis
-        for i in range(n // 2
-            for j in range(n
+        ___ i in range(n // 2
+            ___ j in range(n
                 x = n - 1 - i
                 y = j
                 matrix[i][j], matrix[x][y] = matrix[x][y], matrix[i][j]
@@ -34,10 +34,10 @@ class Solution:
             r_
 
         n = le.(matrix)
-        ans = [[0] * n for _ in range(n)]
+        ans = [[0] * n ___ _ in range(n)]
 
-        for x in range(n
-            for y in range(n
+        ___ x in range(n
+            ___ y in range(n
                 ans[y][n - 1 - x] = matrix[x][y]
 
         matrix[:] = ans[:]

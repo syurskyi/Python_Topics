@@ -1,5 +1,5 @@
 #take the number of strings that are needed to be checked
-for i in range(int(input())):
+___ i in range(int(input())):
     #accept the string
     string = input()
     #store_str is used to store only the brackets
@@ -10,14 +10,14 @@ for i in range(int(input())):
     p = {'(':')','[':']','<':'>','{':'}'}
     
     #here we remove all alphabets, digits and unwanted special characters
-    for j in string:
+    ___ j in string:
         #if in para list then only form the list
         __ j in para:
             store_str.append(j)
 
     #First step is to check if there are any pair next to each other if yes then pop those two elements from list
-    for j in range(le.(store_str)):
-        for k in range(0, le.(store_str)):
+    ___ j in range(le.(store_str)):
+        ___ k in range(0, le.(store_str)):
             #try and except are used because if a particular key is not present in dictionary p, it can throw error
             try:
                 __ p[store_str[k]] __ str(store_str[k+1]

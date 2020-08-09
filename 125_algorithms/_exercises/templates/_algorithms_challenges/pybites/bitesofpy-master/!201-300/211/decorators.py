@@ -14,7 +14,7 @@ ___ retry(func
     @wraps(func)
     ___ wrapper(*args, **kwargs
         count = 0
-        for i in range(MAX_RETRIES
+        ___ i in range(MAX_RETRIES
             try:
                 func(*args, **kwargs)
             except Exception as exc:

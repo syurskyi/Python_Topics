@@ -30,7 +30,7 @@ class Solution:
 
         max_child_depth = max([
             self.maxDepth(child)
-            for child in root.children
+            ___ child in root.children
         ] or [0])
         
         r_ max_child_depth + 1

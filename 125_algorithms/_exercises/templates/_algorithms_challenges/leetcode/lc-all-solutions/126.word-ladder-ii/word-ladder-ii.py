@@ -12,8 +12,8 @@ class Solution(object
 
     ___ getNbrs(src, dest, wordList
       res = []
-      for c in string.ascii_lowercase:
-        for i in range(0, le.(src)):
+      ___ c in string.ascii_lowercase:
+        ___ i in range(0, le.(src)):
           newWord = src[:i] + c + src[i + 1:]
           __ newWord __ src:
             continue
@@ -26,9 +26,9 @@ class Solution(object
       length = 0
       w___ queue:
         length += 1
-        for k in range(0, le.(queue)):
+        ___ k in range(0, le.(queue)):
           top = queue.popleft()
-          for nbr in getNbrs(top, endWord, wordList
+          ___ nbr in getNbrs(top, endWord, wordList
             __ nbr not in distance:
               distance[nbr] = distance[top] + 1
               queue.append(nbr)
@@ -39,7 +39,7 @@ class Solution(object
         res.append(path + [])
         r_
 
-      for nbr in getNbrs(beginWord, endWord, wordList
+      ___ nbr in getNbrs(beginWord, endWord, wordList
         __ distance.get(nbr, -2) + 1 __ distance[beginWord]:
           path.append(nbr)
           dfs(nbr, endWord, wordList, path, res, distance)

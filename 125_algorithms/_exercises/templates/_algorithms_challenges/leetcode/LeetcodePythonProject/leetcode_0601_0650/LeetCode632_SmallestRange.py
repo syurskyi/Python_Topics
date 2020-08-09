@@ -10,10 +10,10 @@ class Solution(object
         :rtype: List[int]
         """
         ______ heapq
-        pq = [(arr[0], i, 0) for i, arr in enumerate(nums)]
+        pq = [(arr[0], i, 0) ___ i, arr in enumerate(nums)]
         heapq.heapify(pq)
         res = [float('-inf'), float('inf')]
-        right = max([arr[0] for arr in nums])
+        right = max([arr[0] ___ arr in nums])
         w___ pq:
             left, i, j = heapq.heappop(pq)
             __ right-left < res[1]-res[0]:
@@ -33,7 +33,7 @@ class Solution(object
                 [5, 18, 22, 30],
             ],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.smallestRange(nums)
             print('result: %s' % result)

@@ -7,14 +7,14 @@ class Solution(object
     ___ numIslands2(self, m, n, positions
         res = []
         roots = [-1]*(m*n)
-        grid = [[False]*n for _ in range(m)]
+        grid = [[False]*n ___ _ in range(m)]
         count = 0
-        for pos in positions:
+        ___ pos in positions:
             i, j = pos[0], pos[1]
             grid[i][j] = True
             count += 1
             root0 = i*n+j
-            for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
+            ___ x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
                 __ 0 <= x < m and 0 <= y < n and grid[x][y]:
                     root = self.getRoot(roots, x*n+y)
                     __ root != root0:
@@ -42,7 +42,7 @@ class Solution(object
                 [[0,0],[7,1],[6,1],[3,3],[4,1]],
             ],
         ]
-        for m, n, positions in testCases:
+        ___ m, n, positions in testCases:
             print('m: %s' % (m))
             print('n: %s' % (n))
             print('positions: %s' % (positions))

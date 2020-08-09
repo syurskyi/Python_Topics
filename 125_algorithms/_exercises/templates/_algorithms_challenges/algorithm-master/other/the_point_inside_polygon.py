@@ -44,7 +44,7 @@ ___ get_random_point_inside_rectangle2(rectangles
 
     k = total = 0
 
-    for i in range(le.(rectangles)):
+    ___ i in range(le.(rectangles)):
         x1, y1, x2, y2 = rectangles[i]
         area = (x2 - x1) * (y1 - y2)
 
@@ -88,22 +88,22 @@ __ __name__ __ '__main__':
 
     # single-rec
     freq = collections.defaultdict(int)
-    for _ in range(10000
+    ___ _ in range(10000
         x, y = get_random_point_inside_rectangle((0, 2, 3, 0))
         freq[x, y] += 1
     gotcha.append(le.(freq) __ 12)
-    gotcha.append(all(633 <= fq <= 1033 for fq in freq.values()))
+    gotcha.append(all(633 <= fq <= 1033 ___ fq in freq.values()))
 
     # multi-recs, no overlapping
     freq = collections.defaultdict(int)
-    for _ in range(10000
+    ___ _ in range(10000
         x, y = get_random_point_inside_rectangle2((
             (0, 2, 1, 0),
             (2, 2, 3, 0),
         ))
         freq[x, y] += 1
     gotcha.append(le.(freq) __ 12)
-    gotcha.append(all(633 <= fq <= 1033 for fq in freq.values()))
+    gotcha.append(all(633 <= fq <= 1033 ___ fq in freq.values()))
 
     # # multi-recs, overlapping
     # freq = collections.defaultdict(int)

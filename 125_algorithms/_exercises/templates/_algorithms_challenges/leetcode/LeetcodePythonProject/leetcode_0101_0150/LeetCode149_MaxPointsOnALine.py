@@ -19,11 +19,11 @@ class Solution(object
         __ not points: r_ 0
         __ n <= 2: r_ n
         res = 0
-        for i in range(n
+        ___ i in range(n
             hashmap = {}
             dup = 0
             tmpMax = 0
-            for j in range(i+1, n
+            ___ j in range(i+1, n
                 x = points[j].x-points[i].x
                 y = points[j].y-points[i].y
                 __ x __ 0 and y __ 0:
@@ -58,10 +58,10 @@ class Solution(object
         __ not points: r_ 0
         maxVal = 0
         n = le.(points)
-        for i in range(n
+        ___ i in range(n
             duplicate, vertical = 1, 0
             hashmap = {}
-            for j in range(i+1, n
+            ___ j in range(i+1, n
                 __ points[i].x __ points[j].x:
                     __ points[i].y __ points[j].y:
                         duplicate += 1
@@ -76,7 +76,7 @@ class Solution(object
                         hashmap[slope] = 1
                     ____
                         hashmap[slope] += 1
-            for count in hashmap.values(
+            ___ count in hashmap.values(
                 __ count + duplicate > maxVal:
                     maxVal = count + duplicate
             maxVal = max(vertical+duplicate, maxVal)
@@ -87,8 +87,8 @@ class Solution(object
             [[1,1],[2,2],[3,3]],
             [[0,0],[94911151,94911150],[94911152,94911151]],
         ]
-        for l in testCases:
-            points = [Point(x[0], x[1]) for x in l]
+        ___ l in testCases:
+            points = [Point(x[0], x[1]) ___ x in l]
             print('points: %s' % (l))
             result = self.maxPoints(points)
             print('result: %s' % (result))

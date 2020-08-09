@@ -7,16 +7,16 @@ DICTIONARY = 'dictionary.txt'
 
 ___ load_dictionary(
     words = []
-    for i in open(DICTIONARY).readlines(
+    ___ i in open(DICTIONARY).readlines(
         words.append(i.lower().strip())
     r_ words
 	
 ___ check_word(dictionary, word
     permutations = set(map(''.join, itertools.permutations(word)))
-    r_ {w for w in permutations __ w in dictionary}
+    r_ {w ___ w in permutations __ w in dictionary}
 	
 ___ print_words(words
-    for i in words:
+    ___ i in words:
         print(i)
 
 __ __name__ __ "__main__":

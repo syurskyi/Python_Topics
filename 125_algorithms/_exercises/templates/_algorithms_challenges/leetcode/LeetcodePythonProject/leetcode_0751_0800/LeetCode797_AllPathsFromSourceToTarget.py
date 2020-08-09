@@ -17,7 +17,7 @@ class Solution(object
             __ path[-1] __ n-1:
                 res.append(list(path))
             ____
-                for node in graph[path[-1]]:
+                ___ node in graph[path[-1]]:
                     queue.append(path + [node])
         r_ res
     
@@ -25,7 +25,7 @@ class Solution(object
         testCases = [
             [[1,2], [3], [3], []],
         ]
-        for graph in testCases:
+        ___ graph in testCases:
             result = self.allPathsSourceTarget(graph)
             print('result: %s' % result)
             print('-='*30+'-')

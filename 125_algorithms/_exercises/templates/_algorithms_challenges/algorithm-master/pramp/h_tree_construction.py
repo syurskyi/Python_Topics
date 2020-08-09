@@ -12,8 +12,8 @@ ___ draw_h_tree(x, y, length, depth
     """
     queue, _queue = [(x, y)], []
 
-    for _ in range(depth
-        for x, y in queue:
+    ___ _ in range(depth
+        ___ x, y in queue:
             x1 = x - length / 2
             y1 = y + length / 2
             x2 = x + length / 2

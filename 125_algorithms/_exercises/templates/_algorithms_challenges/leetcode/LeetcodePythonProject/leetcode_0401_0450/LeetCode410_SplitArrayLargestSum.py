@@ -7,7 +7,7 @@ Created on Apr 10, 2017
 class Solution(object
     ___ splitArray(self, nums, m
         left, right = 0, 0
-        for num in nums:
+        ___ num in nums:
             left = max(left, num)
             right += num
         w___ left < right:
@@ -20,7 +20,7 @@ class Solution(object
     
     ___ doable(self, nums, cuts, maxVal
         acc = 0
-        for num in nums:
+        ___ num in nums:
             __ num > maxVal:
                 r_ False
             ____ acc+num <= maxVal:
@@ -39,7 +39,7 @@ class Solution(object
                 2,
             ],
         ]
-        for nums, m in testCases:
+        ___ nums, m in testCases:
             print('nums: %s' % nums)
             print('m: %s' % m)
             result = self.splitArray(nums, m)

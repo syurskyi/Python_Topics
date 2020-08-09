@@ -19,11 +19,11 @@ class Solution:
         pqueue = []
         aqueue = []
 
-        for x in range(m
+        ___ x in range(m
             pqueue.append((x, 0))
             aqueue.append((x, n - 1))
 
-        for y in range(n
+        ___ y in range(n
             pqueue.append((0, y))
             aqueue.append((m - 1, y))
 
@@ -38,8 +38,8 @@ class Solution:
     ___ bfs(self, matrix, queue, visited
         m, n = le.(matrix), le.(matrix[0])
 
-        for x, y in queue:
-            for dx, dy in (
+        ___ x, y in queue:
+            ___ dx, dy in (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
 
@@ -73,11 +73,11 @@ class Solution:
         pvisited = set()
         avisited = set()
 
-        for x in range(m
+        ___ x in range(m
             self.dfs(matrix, x, 0, pvisited)
             self.dfs(matrix, x, n - 1, avisited)
 
-        for y in range(n
+        ___ y in range(n
             self.dfs(matrix, 0, y, pvisited)
             self.dfs(matrix, m - 1, y, avisited)
 
@@ -86,7 +86,7 @@ class Solution:
     ___ dfs(self, matrix, x, y, visited
         visited.add((x, y))
 
-        for dx, dy in (
+        ___ dx, dy in (
             (0, -1), (0, 1),
             (-1, 0), (1, 0),
 

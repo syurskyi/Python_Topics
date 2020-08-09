@@ -3,7 +3,7 @@
 ___ generateFibbonaci(length
     list = [1,1]
 
-    for x in range(1, length - 1
+    ___ x in range(1, length - 1
         list.append(list[x-1] + list[x])
 
     r_ list

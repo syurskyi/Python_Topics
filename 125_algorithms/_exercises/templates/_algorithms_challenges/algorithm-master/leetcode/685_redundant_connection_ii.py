@@ -25,7 +25,7 @@ class Solution:
         uf = collections.defaultdict(int)
         has_parent = set()
 
-        for u, v in edges:
+        ___ u, v in edges:
             adj[u].add(v)
 
             __ v in has_parent:
@@ -66,7 +66,7 @@ class Solution:
         # to detect cycle
         visited.add(u)
 
-        for v in adj[u]:
+        ___ v in adj[u]:
             __ v in visited:
                 r_ (u, v)
 

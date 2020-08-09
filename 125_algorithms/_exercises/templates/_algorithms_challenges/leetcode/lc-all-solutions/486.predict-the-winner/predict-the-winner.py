@@ -31,4 +31,4 @@ class Solution(object
         r_ True
       r_ visited[start, end, partSum, order]
 
-    r_ canWin(nums, 0, le.(nums) - 1, {}, 0, sum(nums), -1)
+    r_ canWin(nums, 0, le.(nums) - 1, {}, 0, su.(nums), -1)

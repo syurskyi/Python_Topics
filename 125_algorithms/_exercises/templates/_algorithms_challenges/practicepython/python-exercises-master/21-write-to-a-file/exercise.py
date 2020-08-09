@@ -9,7 +9,7 @@ ___ getPortions(soup
     __ heading:
         yield heading.text
 
-    for p in soup.find_all('p', {'class': ''}
+    ___ p in soup.find_all('p', {'class': ''}
         yield p.text
 
 
@@ -22,7 +22,7 @@ ___ writePageToFile(url
 
     open_file = open(name + '.txt', 'a')
 
-    for element in getPortions(soup
+    ___ element in getPortions(soup
         open_file.write(element + '\n')
 
     open_file.close()

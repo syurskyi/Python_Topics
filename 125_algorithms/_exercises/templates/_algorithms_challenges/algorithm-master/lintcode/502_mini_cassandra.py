@@ -35,7 +35,7 @@ class MiniCassandra:
 
         result = [
             column
-            for column_key, column in self.storage[raw_key].items()
+            ___ column_key, column in self.storage[raw_key].items()
             __ column_start <= column_key <= column_end
         ]
 

@@ -9,7 +9,7 @@ class Solution:
 
         start = size = 0
 
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             _start, _size = self.check_palindrome(s, i, i)
 
             __ _size > size:

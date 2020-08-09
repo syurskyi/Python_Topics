@@ -19,7 +19,7 @@ ___ calculate(string
         raise ValueError
     val = int(regex_match.group('first'))
     remaining = regex_match.group('calculation')
-    for step in finditer(function + number, remaining
+    ___ step in finditer(function + number, remaining
         (func, num) = step.groups()
         val = operators[func](val, int(num))
     r_ val

@@ -9,8 +9,8 @@ class Graph:
         self.graph[v1].append(v2)
 
     ___ printGraph(self
-        for node in self.graph:
-            for v in self.graph[node]:
+        ___ node __ self.graph:
+            ___ v __ self.graph[node]:
                 print(node, "->", v)
 
 

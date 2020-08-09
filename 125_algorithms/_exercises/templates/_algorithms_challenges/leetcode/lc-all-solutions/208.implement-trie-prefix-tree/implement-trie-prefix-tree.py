@@ -20,7 +20,7 @@ class Trie(object
     :rtype: void
     """
     p = self.root
-    for c in word:
+    ___ c in word:
       cVal = ord(c) - ord("a")
       __ p.children[cVal]:
         p = p.children[cVal]
@@ -34,7 +34,7 @@ class Trie(object
 
   ___ helper(self, word
     p = self.root
-    for c in word:
+    ___ c in word:
       cVal = ord(c) - ord("a")
       __ p.children[cVal]:
         p = p.children[cVal]

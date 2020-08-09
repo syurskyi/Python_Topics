@@ -23,13 +23,13 @@ class Solution(object
         """
         d = {}
         res = []
-        for s in strs:
+        ___ s in strs:
             k = self.make_key(s)
             __ k not in d:
                 d[k] = [s]
             ____
                 d[k].append(s)
-        for k in d:
+        ___ k in d:
             res.append(sorted(d[k]))
         r_ res
 

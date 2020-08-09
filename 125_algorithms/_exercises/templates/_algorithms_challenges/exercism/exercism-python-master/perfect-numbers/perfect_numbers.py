@@ -1,7 +1,7 @@
 from itertools ______ count
 
 ___ classify(number
-    factor_sum = sum(factor_gen(number))
+    factor_sum = su.(factor_gen(number))
     # Switch
     __ factor_sum __ number:
         r_ "perfect"
@@ -26,7 +26,7 @@ ___ factor_gen(number
     # O(sqrt(n)) sorted solution
     # For the unsorted solution, remove the queue and yield when found
     queue = []
-    for f in count(1
+    ___ f in count(1
         __ number != 1 and (f __ 1 or f * f __ number
             yield f
         ____ number <= f * f:

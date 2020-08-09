@@ -20,11 +20,11 @@ class Solution(object
         flag = False
         info = []
         m, n = le.(grid), le.(grid[0])
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ 1:
                     count += 1
-                    walls = [[0]*n for _ in range(m)]
+                    walls = [[0]*n ___ _ in range(m)]
                     res = [0, 0]
                     grid[i][j] = count
                     self.dfs(i, j, grid, count, walls, res)
@@ -43,7 +43,7 @@ class Solution(object
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
         m, n = le.(grid), le.(grid[0])
-        for i in range(4
+        ___ i in range(4
             newRow = row+shiftX[i]
             newCol = col+shiftY[i]
             __ 0 <= newRow < m and 0 <= newCol < n:
@@ -61,10 +61,10 @@ class Solution(object
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
         m, n = le.(grid), le.(grid[0])
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] > 1 and grid[i][j] != quarantine:
-                    for k in range(4
+                    ___ k in range(4
                         newRow = i+shiftX[k]
                         newCol = j+shiftY[k]
                         __ 0 <= newRow < m and 0 <= newCol < n and grid[newRow][newCol] __ 0:
@@ -97,7 +97,7 @@ class Solution(object
                 [1,1,1,0,0,0,0,0,0]
             ],
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             result = self.containVirus(grid)
             print('result: %s' % result)
             print('-='*30+'-')

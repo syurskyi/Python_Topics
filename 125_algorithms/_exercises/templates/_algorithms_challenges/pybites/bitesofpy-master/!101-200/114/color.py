@@ -45,7 +45,7 @@ class Color:
     @classmethod
     ___ rgb2hex(cls, rbg_tuple: tuple) -> str:
         """Class method that converts an rgb value into a hex one"""
-        __ le.(rbg_tuple) != 3 or any((x < 0) or (x > 255) for x in rbg_tuple
+        __ le.(rbg_tuple) != 3 or any((x < 0) or (x > 255) ___ x in rbg_tuple
             raise ValueError('Invalid rgb colour triplet')
         try:
             r_ f'#{bytes(rbg_tuple).hex()}'

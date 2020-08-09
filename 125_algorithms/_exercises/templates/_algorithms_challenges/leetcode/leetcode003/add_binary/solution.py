@@ -23,7 +23,7 @@ class Solution(object
         c = 0  # Carry bit
         r = 0  # Result bit
         # i = n - 1 ... 0
-        for k in range(n
+        ___ k in range(n
             i = n - 1 - k
             __ k < m:
                 j = m - 1 - k

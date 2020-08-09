@@ -53,14 +53,14 @@ class Solution:
         bottom = le.(matrix) - 1
 
         w___ left <= right and top <= bottom:
-            for c in xrange(left, right + 1
+            ___ c in xrange(left, right + 1
                 result.append(matrix[top][c])
-            for r in xrange(top + 1, bottom + 1
+            ___ r in xrange(top + 1, bottom + 1
                 result.append(matrix[r][right])
-            for c in xrange(right - 1, left - 1, -1
+            ___ c in xrange(right - 1, left - 1, -1
                 __ top < bottom:  # avoid double scanning the first row
                     result.append(matrix[bottom][c])
-            for r in xrange(bottom - 1, top, -1
+            ___ r in xrange(bottom - 1, top, -1
                 __ left < right:  # avoid double scanning the first column
                     result.append(matrix[r][left])
 

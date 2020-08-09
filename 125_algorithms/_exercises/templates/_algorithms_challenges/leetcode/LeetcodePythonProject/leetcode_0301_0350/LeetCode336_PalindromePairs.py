@@ -9,10 +9,10 @@ class Solution(object
         __ not words: r_ []
         hashmap = {}
         result = []
-        for i, word in enumerate(words
+        ___ i, word in enumerate(words
             hashmap[word] = i
-        for i, word in enumerate(words
-            for j in range(le.(word)+1
+        ___ i, word in enumerate(words
+            ___ j in range(le.(word)+1
                 s1 = word[:j]
                 s2 = word[j:]
                 __ self.isPalindrome(s1
@@ -39,7 +39,7 @@ class Solution(object
             ["bat", "tab", "cat"],
             ["abcd", "dcba", "lls", "s", "sssll"],
         ]
-        for words in testCases:
+        ___ words in testCases:
             print('words: %s' % (words))
             result = self.palindromePairs(words)
             print('result: %s' % (result))

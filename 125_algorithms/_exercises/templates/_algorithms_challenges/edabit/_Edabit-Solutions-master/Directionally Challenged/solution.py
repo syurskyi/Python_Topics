@@ -1,6 +1,6 @@
 ___ route_diff(directions
     output = []
-    for i in directions:
+    ___ i in directions:
         __ i __ "N":
             __ output.count("S") > 0:
                 output.remove("S")

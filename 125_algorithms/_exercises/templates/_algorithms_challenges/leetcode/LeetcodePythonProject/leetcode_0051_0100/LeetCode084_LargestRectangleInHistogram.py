@@ -34,7 +34,7 @@ class Solution(object
 #             [2,1,5,6,2,3],
             [10, 11, 12, 15],
         ]
-        for heights in testCases:
+        ___ heights in testCases:
             print('heights: %s' % (heights))
             result = self.largestRectangleArea(heights)
             print('result: %s' % (result))

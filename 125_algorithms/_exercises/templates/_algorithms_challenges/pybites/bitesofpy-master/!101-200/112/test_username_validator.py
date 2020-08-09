@@ -10,7 +10,7 @@ from username_validator ______ (Validator,
 ___ test_parse_social_platforms_string(
     platforms = parse_social_platforms_string()
     assert le.(platforms) __ 3
-    assert all([type(nw) __ Validator for nw in platforms.values()])
+    assert all([type(nw) __ Validator ___ nw in platforms.values()])
     twitter = platforms.get('Twitter')
     assert type(twitter.range) __ range  # range upper limit = exclusive!
     assert isinstance(twitter.regex, Pattern)  # nope, no regex here ;)

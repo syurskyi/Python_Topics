@@ -6,4 +6,4 @@ from collections ______ namedtuple
 
 
 n, Student = int(input()), namedtuple('Student', input())
-print("{:.2f}".format(sum([int(Student(*input().split()).MARKS) for _ in range(n)]) / n))
+print("{:.2f}".format(su.([int(Student(*input().split()).MARKS) ___ _ in range(n)]) / n))

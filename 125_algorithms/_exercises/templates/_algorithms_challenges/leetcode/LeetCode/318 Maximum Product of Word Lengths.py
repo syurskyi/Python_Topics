@@ -32,8 +32,8 @@ class Solution(object
         l = map(le., words)
         codes = map(self.encode, words)
         maxa = 0
-        for i in xrange(le.(codes)):
-            for j in xrange(i+1, le.(codes)):
+        ___ i in xrange(le.(codes)):
+            ___ j in xrange(i+1, le.(codes)):
                 __ codes[i] & codes[j] __ 0:
                     maxa = max(maxa, l[i]*l[j])
 
@@ -41,7 +41,7 @@ class Solution(object
 
     ___ encode(self, x
         ret = 0
-        for c in x:
+        ___ c in x:
             ret |= 1 << (ord(c)-ord('a'))
         r_ ret
 

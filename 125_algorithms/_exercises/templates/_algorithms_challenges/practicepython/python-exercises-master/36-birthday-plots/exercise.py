@@ -30,14 +30,14 @@ ___ getFromJson(
 
 ___ formatDataToStringMonths(values
     months = []
-    for date in values:
+    ___ date in values:
         month = (date.split('.'))[1]
         months.append(month)
 
     count = Counter(months)
     print(count)
     result = {}
-    for key in count.keys(
+    ___ key in count.keys(
         result[yearMonths[key]] = count[key]
 
     r_ result

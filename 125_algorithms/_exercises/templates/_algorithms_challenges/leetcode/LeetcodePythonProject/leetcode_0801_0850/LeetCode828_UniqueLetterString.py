@@ -11,7 +11,7 @@ class Solution(object
         """
         s = S
         hashmap = {}
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c in hashmap:
                 l = hashmap[c]
             ____
@@ -19,8 +19,8 @@ class Solution(object
             l.append(i)
             hashmap[c] = l
         sumVal = 0
-        for c, l in hashmap.items(
-            for i in range(le.(l)):
+        ___ c, l in hashmap.items(
+            ___ i in range(le.(l)):
                 __ i __ 0:
                     left = l[i]
                 ____
@@ -37,7 +37,7 @@ class Solution(object
             'ABC',
             'ABA',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.uniqueLetterString(s)
             print('result: %s' % result)

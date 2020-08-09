@@ -6,4 +6,4 @@ ___ is_anagram(word1, word2
     w2 = word2.lower().replace(' ', '')
     __ le.(w1) != le.(w2
         r_ False
-    r_ all(x __ y for x, y in zip(sorted(w1.lower()), sorted(w2.lower())))
+    r_ all(x __ y ___ x, y in zip(sorted(w1.lower()), sorted(w2.lower())))

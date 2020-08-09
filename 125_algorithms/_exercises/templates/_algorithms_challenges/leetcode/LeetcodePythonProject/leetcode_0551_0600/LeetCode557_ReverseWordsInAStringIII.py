@@ -12,7 +12,7 @@ class Solution(object
         """
         res = ''
         prev = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c __ ' ':
                 tmpRes = self.reverse(s, prev, i-1)
                 res += tmpRes + ' '

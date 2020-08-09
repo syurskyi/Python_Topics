@@ -40,7 +40,7 @@ class Solution:
             result.insert(0, map(lambda x: x.val, current_level))  # current level, only difference with Binary Tree Level Order Traversal I
 
             next_level = []
-            for element in current_level:
+            ___ element in current_level:
                 __ element.left:
                     next_level.append(element.left)
                 __ element.right:

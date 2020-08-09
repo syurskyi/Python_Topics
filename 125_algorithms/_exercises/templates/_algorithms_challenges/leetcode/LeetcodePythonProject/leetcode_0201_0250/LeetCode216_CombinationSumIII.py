@@ -22,7 +22,7 @@ class Solution(object
             r_
         __ n < 0:
             r_
-        for i in range(start, 10
+        ___ i in range(start, 10
             elem.append(i)
             self.helper(elem, i+1, k, n-i, result)
             elem.pop()
@@ -32,7 +32,7 @@ class Solution(object
             (3, 7),
             (3, 9),
         ]
-        for k, n in testCases:
+        ___ k, n in testCases:
             print('k: %s' % (k))
             print('n: %s' % (n))
             result = self.combinationSum3(k, n)

@@ -11,26 +11,26 @@ class Solution(object
         :type needs: List[int]
         :rtype: int
         """
-        self.minPrice = sum([p*n for p, n in zip(price, needs)])
+        self.minPrice = su.([p*n ___ p, n in zip(price, needs)])
         self.helper(price, special, needs, 0)
         r_ self.minPrice
     
     ___ helper(self, price, special, needs, curPrice
         n = le.(price)
         added = False
-        for arr in special:
+        ___ arr in special:
             overflow = False
-            for i in range(n
+            ___ i in range(n
                 __ needs[i] < arr[i]:
                     overflow = True
                 needs[i] -= arr[i]
             __ not overflow:
                 added = True
                 self.helper(price, special, needs, curPrice+arr[-1])
-            for i in range(n
+            ___ i in range(n
                 needs[i] += arr[i]
         __ not added:
-            for i in range(n
+            ___ i in range(n
                 curPrice += needs[i]*price[i]
             self.minPrice = min(self.minPrice, curPrice)
     
@@ -57,7 +57,7 @@ class Solution(object
                 [1,1],
             ],
         ]
-        for price, special, needs in testCases:
+        ___ price, special, needs in testCases:
             print('price: %s' % price)
             print('special: %s' % special)
             print('needs: %s' % needs)

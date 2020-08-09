@@ -11,7 +11,7 @@ class Solution:
             r_ ans
 
         _sum = 0
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             _sum += A[i]
 
             __ i < k - 1:

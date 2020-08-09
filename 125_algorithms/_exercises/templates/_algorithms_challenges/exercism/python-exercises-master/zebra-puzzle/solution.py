@@ -24,17 +24,17 @@ ___ solution(
             Ukranian: "Ukranian",
             Japanese: "Japanese",
             Norwegian: "Norwegian"
-        }[x] for x in (water, zebra)]
-        for (red, green, ivory, yellow, blue) in orderings
+        }[x] ___ x in (water, zebra)]
+        ___ (red, green, ivory, yellow, blue) in orderings
         __ just_right_of(green, ivory)
-        for (Englishman, Spaniard, Ukranian, Japanese, Norwegian) in orderings
+        ___ (Englishman, Spaniard, Ukranian, Japanese, Norwegian) in orderings
         __ Englishman is red __ Norwegian is first __ next_to(Norwegian, blue)
-        for (coffee, tea, milk, oj, water) in orderings __ coffee is green
+        ___ (coffee, tea, milk, oj, water) in orderings __ coffee is green
         __ Ukranian is tea __ milk is middle
-        for (OldGold, Kools, Chesterfields, LuckyStrike, Parliaments
+        ___ (OldGold, Kools, Chesterfields, LuckyStrike, Parliaments
              ) in orderings __ Kools is yellow __ LuckyStrike is oj
         __ Japanese is Parliaments
-        for (dog, snails, fox, horse, zebra) in orderings __ Spaniard is dog
+        ___ (dog, snails, fox, horse, zebra) in orderings __ Spaniard is dog
         __ OldGold is snails __ next_to(Chesterfields, fox)
         __ next_to(Kools, horse))
     r_ ("It is the {} who drinks the water.\n"

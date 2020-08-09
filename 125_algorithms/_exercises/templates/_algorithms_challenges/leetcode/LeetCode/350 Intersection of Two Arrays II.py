@@ -29,13 +29,13 @@ class Solution(object
         :rtype: List[int]
         """
         h1, h2 = defaultdict(int), defaultdict(int)
-        for a in nums1:
+        ___ a in nums1:
             h1[a] += 1
-        for b in nums2:
+        ___ b in nums2:
             h2[b] += 1
 
         ret = []
-        for k, v in h1.items(
+        ___ k, v in h1.items(
             cnt = min(v, h2[k])
             ret.extend([k]*cnt)
 

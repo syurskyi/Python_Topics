@@ -31,8 +31,8 @@ class Solution:
         __ not A and not B:
             r_ True
 
-        for i in range(1, le.(A)):
-            for j in range(le.(B)):
+        ___ i in range(1, le.(A)):
+            ___ j in range(le.(B)):
                 __ A[(i + j) % le.(A)] != B[j]:
                     break
             ____

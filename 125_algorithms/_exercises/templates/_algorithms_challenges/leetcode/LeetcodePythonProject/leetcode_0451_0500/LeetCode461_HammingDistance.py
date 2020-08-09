@@ -7,7 +7,7 @@ Created on Apr 23, 2017
 class Solution(object
     ___ hammingDistance(self, x, y
         count = 0
-        for i in range(32
+        ___ i in range(32
             count += (x>>i&1)^(y>>i&1)
         r_ count
     
@@ -15,7 +15,7 @@ class Solution(object
         testCases = [
             [1, 4],
         ]
-        for x, y in testCases:
+        ___ x, y in testCases:
             print('x: %s' % x)
             print('y: %s' % y)
             result = self.hammingDistance(x, y)

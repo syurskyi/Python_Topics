@@ -27,15 +27,15 @@ class Solution(object
         w___ i < le.(queue
             node = queue[i]
             i += 1
-            for neighbor in node.neighbors:
+            ___ neighbor in node.neighbors:
                 __ neighbor not in d:
                     queue.append(neighbor)
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
                     d[neighbor] = cloned_neighbor
-        for node in queue:
+        ___ node in queue:
             cloned_node = d[node]
             cloned_neighbors = []
-            for neighbor in node.neighbors:
+            ___ neighbor in node.neighbors:
                 cloned_neighbor = d[neighbor]
                 cloned_neighbors.append(cloned_neighbor)
             cloned_node.neighbors = cloned_neighbors

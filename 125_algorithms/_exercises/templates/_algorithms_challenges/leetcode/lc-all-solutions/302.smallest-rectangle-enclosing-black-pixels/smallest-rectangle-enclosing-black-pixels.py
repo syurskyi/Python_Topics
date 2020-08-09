@@ -21,7 +21,7 @@ class Solution(object
   ___ searchCols(self, image, i, j, top, bottom, opt
     w___ i < j:
       mid = i + (j - i) / 2
-      __ any([image[k][mid] __ "1" for k in range(top, bottom)]) __ opt:
+      __ any([image[k][mid] __ "1" ___ k in range(top, bottom)]) __ opt:
         j = mid
       ____
         i = mid + 1

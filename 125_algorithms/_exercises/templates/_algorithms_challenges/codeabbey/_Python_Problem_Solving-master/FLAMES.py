@@ -2,7 +2,7 @@
 name1,name2=a,b = input('Enter the name of a couple of whom you wanna see FUTURE').split()
 
 #remove the similar element from both the string
-for i in a:
+___ i in a:
     __ i in b:
         a = a.replace(i,'')
         b = b.replace(i,'')

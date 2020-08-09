@@ -9,7 +9,7 @@ class Solution:
         __ not n:
             r_ ans
 
-        for i in range(1, n + 1
+        ___ i in range(1, n + 1
             __ i % 3 __ 0 and i % 5 __ 0:
                 ans.append('FizzBuzz')
             ____ i % 3 __ 0:

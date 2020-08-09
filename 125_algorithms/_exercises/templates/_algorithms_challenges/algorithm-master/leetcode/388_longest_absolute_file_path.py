@@ -37,7 +37,7 @@ class Solution:
 
         dep2size = {0: 0}
 
-        for line in path.split('\n'
+        ___ line in path.split('\n'
             name = line.lstrip('\t')
             size = le.(name)
             depth = le.(line) - le.(name)

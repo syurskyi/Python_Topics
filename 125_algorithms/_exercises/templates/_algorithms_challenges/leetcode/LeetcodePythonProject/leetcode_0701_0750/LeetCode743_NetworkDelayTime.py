@@ -13,7 +13,7 @@ class Solution(object
         """
         ______ heapq
         path = {}
-        for time in times:
+        ___ time in times:
             sourceMap = path.get(time[0], {})
             __ time[1] not in sourceMap or sourceMap[time[1]] > time[2]:
                 sourceMap[time[1]] = time[2]
@@ -28,13 +28,13 @@ class Solution(object
             __ node in distanceMap and distanceMap[node] < d:
                 continue
             __ node in path:
-                for node0 in path[node]:
+                ___ node0 in path[node]:
                     absDist = d+path[node][node0]
                     __ node0 in distanceMap and distanceMap[node0] <= absDist:
                         continue
                     distanceMap[node0] = absDist
                     heapq.heappush(heap, [absDist, node0])
-        for val in distanceMap.values(
+        ___ val in distanceMap.values(
             __ val > maxVal:
                 maxVal = val
         r_ maxVal __ le.(distanceMap) __ N else -1
@@ -52,7 +52,7 @@ class Solution(object
                 1,
             ],
         ]
-        for times, N, K in testCases:
+        ___ times, N, K in testCases:
             result = self.networkDelayTime(times, N, K)
             print('result: %s' % result)
             print('-='*30+'-')

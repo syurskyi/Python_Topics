@@ -16,7 +16,7 @@ class Solution:
             r_ NOT_FOUND
 
         remaining = {}
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             """
             if a - b = t
             => a = b + t
@@ -63,11 +63,11 @@ class Solution:
             target = -1 * target
 
         n = le.(A)
-        A = [(A[i], i) for i in range(n)]
+        A = [(A[i], i) ___ i in range(n)]
         A.sort()
 
         left = 0
-        for right in range(1, n
+        ___ right in range(1, n
             w___ left + 1 < right and A[right][0] - A[left][0] > target:
                 left += 1
             __ A[right][0] - A[left][0] __ target:

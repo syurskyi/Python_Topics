@@ -37,8 +37,8 @@ class Solution:
         m, n = le.(grid), le.(grid[0])
         xs, ys = [], []
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] != self.HOUSE:
                     continue
                 xs.append(x)
@@ -52,14 +52,14 @@ class Solution:
         k = le.(xs) + 1
         psx, psy = [0] * k, [0] * k  # prefix sum
 
-        for i in range(1, k
+        ___ i in range(1, k
             psx[i] = psx[i - 1] + xs[i - 1]
             psy[i] = psy[i - 1] + ys[i - 1]
 
         ans = INF = float('inf')
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] != self.EMPTY:
                     continue
 
@@ -88,7 +88,7 @@ class Solution:
             ____
                 right = mid
 
-        r_ sum((
+        r_ su.((
             pos * right - ps[right],
             ps[n] - ps[right] - pos * (n - right),
         ))
@@ -118,8 +118,8 @@ class Solution:
         houses = []
         xc = yc = 0  # the center of the shape composed of houses
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] __ self.HOUSE:
                     houses.append((x, y))
                     xc += x
@@ -132,11 +132,11 @@ class Solution:
         queue = [(xc, yc)]
         visited = set(queue)
 
-        for x, y in queue:
+        ___ x, y in queue:
             __ grid[x][y] __ self.EMPTY:
                 ans = min(ans, self.get_step(houses, x, y))
 
-            for dx, dy in (
+            ___ dx, dy in (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
 
@@ -156,7 +156,7 @@ class Solution:
     ___ get_step(self, houses, x, y
         step = 0
 
-        for _x, _y in houses:
+        ___ _x, _y in houses:
             step += abs(_x - x) + abs(_y - y)
 
         r_ step
@@ -182,17 +182,17 @@ class Solution:
             r_ -1
 
         m, n = le.(grid), le.(grid[0])
-        steps = [[0] * n for _ in range(m)]
+        steps = [[0] * n ___ _ in range(m)]
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] __ self.HOUSE:
                     self.bfs(grid, x, y, steps)
 
         ans = INF = float('inf')
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] != self.EMPTY:
                     continue
                 __ steps[x][y] < ans:
@@ -209,8 +209,8 @@ class Solution:
         w___ queue:
             step += 1
 
-            for x, y in queue:
-                for dx, dy in (
+            ___ x, y in queue:
+                ___ dx, dy in (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
 

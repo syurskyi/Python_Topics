@@ -8,8 +8,8 @@ class Solution:
             r_ ''
 
         t = strs[0]
-        for i in range(le.(t)):
-            for s in strs:
+        ___ i in range(le.(t)):
+            ___ s in strs:
                 __ i >= le.(s) or s[i] != t[i]:
                     r_ t[:i]
 

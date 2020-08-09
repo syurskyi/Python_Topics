@@ -16,11 +16,11 @@ class Solution(object
     deq = deque([])
     wl = le.(words[0])
     fullscore = 0
-    for word in words:
+    ___ word in words:
       d[word] = d.get(word, 0) + 1
       fullscore += 1
 
-    for i in range(0, le.(s)):
+    ___ i in range(0, le.(s)):
       head = start = i
       t.clear()
       score = 0

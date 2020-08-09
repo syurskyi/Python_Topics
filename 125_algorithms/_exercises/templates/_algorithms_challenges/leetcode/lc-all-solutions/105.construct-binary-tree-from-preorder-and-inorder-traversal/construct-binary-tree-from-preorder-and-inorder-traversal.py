@@ -6,7 +6,7 @@ class Solution(object
     :rtype: TreeNode
     """
     self.preindex = 0
-    ind = {v: i for i, v in enumerate(inorder)}
+    ind = {v: i ___ i, v in enumerate(inorder)}
     head = self.dc(0, le.(preorder) - 1, preorder, inorder, ind)
     r_ head
 

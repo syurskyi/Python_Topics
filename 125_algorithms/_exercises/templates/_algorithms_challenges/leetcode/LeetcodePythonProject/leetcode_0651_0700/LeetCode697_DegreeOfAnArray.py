@@ -13,7 +13,7 @@ class Solution(object
         hashmap = {}
         degree = 0
         cands = set()
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             hashmap[num] = hashmap.get(num, [])+[i]
             __ le.(hashmap[num]) > degree:
                 degree = le.(hashmap[num])
@@ -21,7 +21,7 @@ class Solution(object
             ____ le.(hashmap[num]) __ degree:
                 cands.add(num)
         minLen = float('inf')
-        for num in cands:
+        ___ num in cands:
             __ le.(hashmap[num]) __ 1:
                 r_ 1
             minLen = min(minLen, hashmap[num][-1]-hashmap[num][0]+1)
@@ -32,7 +32,7 @@ class Solution(object
             [1, 2, 2, 3, 1],
             [1, 2, 2, 3, 1, 4, 2],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.findShortestSubArray(nums)
             print('result: %s' % result)

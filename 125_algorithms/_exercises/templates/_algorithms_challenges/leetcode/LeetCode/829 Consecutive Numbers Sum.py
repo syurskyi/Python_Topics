@@ -62,7 +62,7 @@ class Solution:
         # assure for divisibility
         """
         cnt = 0
-        for k in range(1, int(N ** 0.5)):  # error
+        ___ k in range(1, int(N ** 0.5)):  # error
             x0k = N - k * (k - 1) // 2
             __ x0k % k __ 0:
                 cnt += 1
@@ -78,7 +78,7 @@ class Solution:
             r_ 1
 
         cnt = 0
-        for i in range(1, N
+        ___ i in range(1, N
             d = N // i
             r = N % i
             __ r __ 0 and d - i // 2 > 0:

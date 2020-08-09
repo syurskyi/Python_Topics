@@ -23,14 +23,14 @@ class Solution(object
         :type updates: List[List[int]]
         :rtype: List[int]
         """
-        deltas = [0 for _ in xrange(length)]
-        for i, j, k in updates:
+        deltas = [0 ___ _ in xrange(length)]
+        ___ i, j, k in updates:
             deltas[i] += k
             __ j + 1 < length: deltas[j + 1] -= k
 
         ret = []
         acc = 0
-        for delta in deltas:
+        ___ delta in deltas:
             acc += delta
             ret.append(acc)
 

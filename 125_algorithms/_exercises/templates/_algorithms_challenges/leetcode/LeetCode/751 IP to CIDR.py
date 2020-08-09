@@ -106,14 +106,14 @@ class Solution:
 
     ___ to_bin(self, ip
         ret = 0
-        for n, w in zip(map(int, ip.split(".")), weights
+        ___ n, w in zip(map(int, ip.split(".")), weights
             ret += n << w
 
         r_ ret
 
     ___ to_ip(self, bin
         ret = []
-        for w in weights:
+        ___ w in weights:
             ret.append(
                 (bin >> w) & 255
             )

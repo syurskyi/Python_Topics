@@ -6,10 +6,10 @@ class Solution(object
     :rtype: bool
     """
     letters = [0] * 26
-    for c in magazine:
+    ___ c in magazine:
       letters[ord(c) - ord('a')] += 1
 
-    for c in ransomNote:
+    ___ c in ransomNote:
       __ letters[ord(c) - ord('a')] __ 0:
         r_ False
       ____

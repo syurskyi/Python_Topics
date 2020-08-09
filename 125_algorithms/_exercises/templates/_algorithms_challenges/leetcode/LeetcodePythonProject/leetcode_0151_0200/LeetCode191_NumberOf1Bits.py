@@ -10,7 +10,7 @@ class Solution(object
         :rtype: int
         """
         count = 0
-        for i in range(32
+        ___ i in range(32
             __ (n >> i)&1 __ 1:
                 count+=1
         r_ count
@@ -19,7 +19,7 @@ class Solution(object
         testCases = [
             int('00000000000000000000000000001011', 2),
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n:      {0:032b}'.format(n))
             result = self.hammingWeight(n)
             print('result: {0:d}'.format(result))

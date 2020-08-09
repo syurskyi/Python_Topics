@@ -22,7 +22,7 @@ ___ load_data(
        as defined above"""
     content = _get_csv_data()
     reader = csv.DictReader(content.splitlines(), delimiter=',')
-    for row in reader:
+    ___ row in reader:
         name = re.sub(r'(.*?)\(.*', r'\1', row['name']).strip()
         yield Character(pid=row['page_id'],
                         name=name,
@@ -43,9 +43,9 @@ ___ most_popular_characters(characters=characters, top=5
        return top n characters (default 5)
     """
     result = Counter()
-    for char in characters:
+    ___ char in characters:
         result[char.name + ',' + char.year] += int(char.appearances) __ char.appearances != '' else 0
-    r_ [x[0].split(',')[0] for x in result.most_common(top)]
+    r_ [x[0].split(',')[0] ___ x in result.most_common(top)]
 
 
 ___ max_and_min_years_new_characters(characters=characters
@@ -55,7 +55,7 @@ ___ max_and_min_years_new_characters(characters=characters
        of (max_year, min_year)
     """
     result = Counter()
-    for char in characters:
+    ___ char in characters:
         __ char.year __ '':
             continue
         result[char.year] += 1
@@ -71,8 +71,8 @@ ___ get_percentage_female_characters(characters=characters
        Return the result rounded to 2 digits
     """
     sexes = Counter()
-    for char in characters:
+    ___ char in characters:
         __ char.sex __ '':
             continue
         sexes[char.sex] += 1
-    r_ round(float(sexes['Female Characters']) / float(sum(sexes.values())) * 100.0, 2)
+    r_ round(float(sexes['Female Characters']) / float(su.(sexes.values())) * 100.0, 2)

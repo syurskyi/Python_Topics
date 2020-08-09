@@ -11,9 +11,9 @@ class Solution:
     ___ minPathSum(self, grid
         n = le.(grid)
         m = le.(grid[0])
-        t = [[0 for i in range(m)] for j in range(n)]
-        for i in range(n
-            for j in range(m
+        t = [[0 ___ i in range(m)] ___ j in range(n)]
+        ___ i in range(n
+            ___ j in range(m
                 __ i __ 0 and j __ 0:
                     t[i][j] = grid[i][j]
                 ____ i __ 0:

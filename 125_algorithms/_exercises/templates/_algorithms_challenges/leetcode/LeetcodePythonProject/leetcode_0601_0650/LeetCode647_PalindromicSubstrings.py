@@ -11,10 +11,10 @@ class Solution(object
         """
         __ not s: r_ 0
         n = le.(s)
-        dp = [[False]*n for _ in range(n)]
+        dp = [[False]*n ___ _ in range(n)]
         res = 0
-        for i in range(n
-            for j in range(i, -1, -1
+        ___ i in range(n
+            ___ j in range(i, -1, -1
                 __ s[i] __ s[j] and (i-j<=1 or dp[i-1][j+1]
                     dp[i][j] = True
                     res += 1
@@ -26,7 +26,7 @@ class Solution(object
             'aaa',
             'aaaaa',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.countSubstrings(s)
             print('result: %s' % result)

@@ -38,7 +38,7 @@ class Solution(object
         n -= 1  # exclude 1
 
         ugly = [2, 3, 5]
-        qs = [Node(i, [i]) for i in ugly]
+        qs = [Node(i, [i]) ___ i in ugly]
         h = list(qs)  # shallow copy
 
         heapq.heapify(h)
@@ -49,7 +49,7 @@ class Solution(object
             cnt += 1
             popped = heapq.heappop(h)
             ret = popped.q.pop(0)
-            for i in xrange(ugly.index(popped.origin), 3
+            ___ i in xrange(ugly.index(popped.origin), 3
                 qs[i].q.append(ret*ugly[i])
 
             heapq.heappush(h, popped)

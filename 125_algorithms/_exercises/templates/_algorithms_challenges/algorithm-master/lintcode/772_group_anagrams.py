@@ -9,10 +9,10 @@ class Solution:
 
         group = {}
 
-        for w in s:
+        ___ w in s:
             key = ''.join(sorted(w))
             __ key not in group:
                 group[key] = []
             group[key].append(w)
 
-        r_ sorted([sorted(g) for g in group.values()])
+        r_ sorted([sorted(g) ___ g in group.values()])

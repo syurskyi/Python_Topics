@@ -9,7 +9,7 @@ class Solution(object
     ___ valid(nums, target, m
       count = 1
       total = 0
-      for num in nums:
+      ___ num in nums:
         total += num
         __ total > target:
           count += 1
@@ -18,7 +18,7 @@ class Solution(object
             r_ False
       r_ True
 
-    start, end = max(nums), sum(nums)
+    start, end = max(nums), su.(nums)
     mid = 0
     w___ start <= end:
       mid = start + (end - start) / 2

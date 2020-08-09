@@ -12,7 +12,7 @@ class Solution(object
         nums.sort()
         n = le.(nums)
         res = []
-        for i in range(n-2
+        ___ i in range(n-2
             __ i > 0 and nums[i] __ nums[i-1]:
                 continue
             j, k = i+1, n-1

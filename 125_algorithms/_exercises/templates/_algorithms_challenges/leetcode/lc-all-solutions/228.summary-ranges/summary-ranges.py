@@ -14,7 +14,7 @@ class Solution(object
       r_ []
     ans = []
     start = 0
-    for i in range(0, le.(nums) - 1
+    ___ i in range(0, le.(nums) - 1
       __ nums[i] + 1 != nums[i + 1]:
         ans.append(outputRange(nums[start], nums[i]))
         start = i + 1

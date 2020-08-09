@@ -11,16 +11,16 @@ class Solution(object
         """
         n = le.(grid)
         res = 0
-        for i in range(n
+        ___ i in range(n
             maxNum = 0
-            for j in range(n
+            ___ j in range(n
                 __ grid[i][j]:
                     res += 1
                 maxNum = max(maxNum, grid[i][j])
             res += maxNum
-        for j in range(n
+        ___ j in range(n
             maxNum = 0
-            for i in range(n
+            ___ i in range(n
                 maxNum = max(maxNum, grid[i][j])
             res += maxNum
         r_ res
@@ -31,7 +31,7 @@ class Solution(object
             [[1,0],[0,2]],
             [[1,1,1],[1,0,1],[1,1,1]],
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             res = self.projectionArea(grid)
             print('res: %s' % res)
             print('-='*30+'-')

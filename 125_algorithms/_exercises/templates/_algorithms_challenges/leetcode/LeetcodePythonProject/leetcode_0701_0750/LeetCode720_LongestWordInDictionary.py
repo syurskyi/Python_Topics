@@ -12,11 +12,11 @@ class Solution(object
         __ not words: r_ ''
         words.sort(key=le.)
         n = le.(words[-1])
-        dp = [set() for _ in range(n+1)]
-        for word in words:
+        dp = [set() ___ _ in range(n+1)]
+        ___ word in words:
             __ le.(word) __ 1 or word[:-1] in dp[le.(word)-1]:
                 dp[le.(word)].add(word)
-        for i in range(n, -1, -1
+        ___ i in range(n, -1, -1
             __ dp[i]:
                 r_ sorted(list(dp[i])).pop(0)
         r_ ''
@@ -26,7 +26,7 @@ class Solution(object
             ["w","wo","wor","worl", "world"],
             ["a", "banana", "app", "appl", "ap", "apply", "apple"],
         ]
-        for words in testCases:
+        ___ words in testCases:
             print('words: %s' % words)
             result = self.longestWord(words)
             print('result: %s' % result)

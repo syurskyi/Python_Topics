@@ -17,7 +17,7 @@ class Solution:
         :rtype: int
         """
         mini = min(nums)
-        r_ sum(map(lambda e: e - mini, nums))
+        r_ su.(map(lambda e: e - mini, nums))
 
 
 __ __name__ __ "__main__":

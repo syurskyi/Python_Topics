@@ -16,7 +16,7 @@ class Solution(object
         nums.sort()
         cnt = 0
         n = le.(nums)
-        for i in xrange(n-2
+        ___ i in xrange(n-2
             l = i+1
             h = n-1
             w___ l < h:

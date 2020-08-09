@@ -11,8 +11,8 @@ class Solution:
         
         dp[0] = 0
         
-        for i in range(1, amount + 1
-            for coin in coins:
+        ___ i __ ra..(1, amount + 1
+            ___ coin __ coins:
                 __ coin <= i:
                     dp[i] = min((dp[i-coin] + 1), dp[i])
                     

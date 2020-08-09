@@ -14,14 +14,14 @@ ___ encode_single(n
 
 
 ___ encode(numbers
-    r_ sum((encode_single(n) for n in numbers), [])
+    r_ su.((encode_single(n) ___ n in numbers), [])
 
 
 ___ decode(bytes
     values = []
     n = 0
 
-    for i, byte in enumerate(bytes
+    ___ i, byte in enumerate(bytes
         n <<= 7
         n += (byte & SEVENBITSMASK)
 

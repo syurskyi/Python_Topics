@@ -11,7 +11,7 @@ ___ cart(
     cravings = False, False, False, False, False, True
 
     items = []
-    for item in zip(products, prices, cravings
+    ___ item in zip(products, prices, cravings
         items.append(Item(*item))
 
     r_ Groceries(items)

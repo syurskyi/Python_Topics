@@ -49,13 +49,13 @@ class Solution(object
         :rtype: bool
         """
         F = {}
-        for stone in stones:
+        ___ stone in stones:
             F[stone] = set()
 
         F[0].add(0)
-        for stone in stones:
-            for step in F[stone]:
-                for i in (-1, 0, 1
+        ___ stone in stones:
+            ___ step in F[stone]:
+                ___ i in (-1, 0, 1
                     nxt = stone + step + i
                     __ nxt != stone and nxt in F:
                         F[nxt].add(step + i)

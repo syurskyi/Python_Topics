@@ -15,11 +15,11 @@ class NumMatrix:
             r_
 
         m, n = le.(matrix), le.(matrix[0])
-        self.bits = [[0] * (n + 1) for _ in range(m + 1)]  # bits
-        self.incr = [[0] * (n + 1) for _ in range(m + 1)]  # increments
+        self.bits = [[0] * (n + 1) ___ _ in range(m + 1)]  # bits
+        self.incr = [[0] * (n + 1) ___ _ in range(m + 1)]  # increments
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 self.update(x, y, matrix[x][y])
 
     ___ update(self, x, y, val
@@ -52,14 +52,14 @@ class NumMatrix:
         :type y2: int
         :rtype: int
         """
-        r_ sum((
-            self.sum(x2 + 1, y2 + 1),
-            - self.sum(x1, y2 + 1),
-            - self.sum(x2 + 1, y1),
-            self.sum(x1, y1),
+        r_ su.((
+            self.su.(x2 + 1, y2 + 1),
+            - self.su.(x1, y2 + 1),
+            - self.su.(x2 + 1, y1),
+            self.su.(x1, y1),
         ))
 
-    ___ sum(self, x, y
+    ___ su.(self, x, y
         res = 0
         i = x
         j = y

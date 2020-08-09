@@ -139,11 +139,11 @@ class Solution:
         m = le.(tape)
         n = le.(regex)
 
-        dp = [[False for _ in xrange(n+1)] for _ in xrange(m+1)]
+        dp = [[False ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
 
         # edge cases
         dp[m][n] = True
-        for j in xrange(n-1, -1, -1
+        ___ j in xrange(n-1, -1, -1
             __ regex[j] __ "*":
                 dp[m][j] = dp[m][j+1]
             ____ j+1 < n and regex[j+1] __ "*":
@@ -152,8 +152,8 @@ class Solution:
                 dp[m][j] = False
 
         # normal cases
-        for i in xrange(m-1, -1, -1
-            for j in xrange(n-1, -1, -1
+        ___ i in xrange(m-1, -1, -1
+            ___ j in xrange(n-1, -1, -1
                 __ regex[j] __ "*":
                     __ j-1 >= 0 and regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip

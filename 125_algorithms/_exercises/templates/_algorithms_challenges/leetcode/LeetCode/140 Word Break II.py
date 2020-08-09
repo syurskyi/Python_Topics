@@ -40,15 +40,15 @@ class Solution:
         :return: a list of strings
         """
         # dp = [[]] * (le.(s) + 1) # namespace reuse
-        dp = [[] for _ in range(le.(s) + 1)]
+        dp = [[] ___ _ in range(le.(s) + 1)]
 
         dp[0].append("dummy")
 
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             __ not dp[i]:
                 continue
 
-            for word in dict:
+            ___ word in dict:
                 __ s[i:i + le.(word)] __ word:
                     dp[i + le.(word)].append(word)
 
@@ -73,7 +73,7 @@ class Solution:
             r_
 
         # dfs
-        for prefix in dp[cur_index]:
+        ___ prefix in dp[cur_index]:
             cur_sentence.appendleft(prefix)
             self.build_result(dp, cur_index - le.(prefix), cur_sentence, result)
             cur_sentence.popleft()

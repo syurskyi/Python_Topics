@@ -39,7 +39,7 @@ class Solution:
         # ignore the non-digit appended behind
         # The string can contain additional characters after those that form the integral number,
         # which are ignored and have no effect on the behavior of this function
-        for ind, val in enumerate(str  # find the 1st non-digit
+        ___ ind, val in enumerate(str  # find the 1st non-digit
             __ not val.isdigit(
                 str = str[:ind]
                 break
@@ -48,14 +48,14 @@ class Solution:
 
 
         # convert char array to integer
-        sum = 0
+        su. = 0
         scale = 1
-        for element in str[::-1]:
-            sum += scale*int(element)
+        ___ element in str[::-1]:
+            su. += scale*int(element)
             scale *= 10
 
         # return sign*sum, and pay attention to the C constraints
-        result = sign*sum
+        result = sign*su.
         __ result > INT_MAX:
             r_ INT_MAX
         __ result < INT_MIN:

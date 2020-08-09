@@ -13,12 +13,12 @@ class Solution(object
         __ not matrix or not matrix[0]: r_ 0
         maxLen = 0
         m, n = le.(matrix), le.(matrix[0])
-        dp = [[[0]*4 for _ in range(n)] for _ in range(m)]
-        for i in range(m
-            for j in range(n
+        dp = [[[0]*4 ___ _ in range(n)] ___ _ in range(m)]
+        ___ i in range(m
+            ___ j in range(n
                 __ matrix[i][j] __ 0:
                     continue
-                for k in range(4
+                ___ k in range(4
                     dp[i][j][k] = 1
                 __ j > 0:
                     dp[i][j][0] += dp[i][j-1][0]
@@ -40,8 +40,8 @@ class Solution(object
                 [0,0,0,1],
             ],
         ]
-        for matrix in testCases:
-            print('\n'.join([str(row) for row in matrix]))
+        ___ matrix in testCases:
+            print('\n'.join([str(row) ___ row in matrix]))
             result = self.longestLine(matrix)
             print('result: %s' % result)
             print('-='*30+'-')

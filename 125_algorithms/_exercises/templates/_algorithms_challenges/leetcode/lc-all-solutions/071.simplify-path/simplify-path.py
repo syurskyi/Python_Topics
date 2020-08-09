@@ -6,7 +6,7 @@ class Solution(object
     """
     path = path.split("/")
     stack = []
-    for p in path:
+    ___ p in path:
       __ p in ["", "."]:
         continue
       __ p __ "..":

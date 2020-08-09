@@ -116,7 +116,7 @@ class Solution:
         # construct
         stk = []
         root = None
-        for k, v in depths.items(
+        ___ k, v in depths.items(
             cur = TreeNode(k)
             __ v __ 0:
                 root = cur

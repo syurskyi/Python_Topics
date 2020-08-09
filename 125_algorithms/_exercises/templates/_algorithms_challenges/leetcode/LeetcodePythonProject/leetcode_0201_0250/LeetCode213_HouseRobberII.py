@@ -13,7 +13,7 @@ class Solution(object
     
     ___ robHelper(self, nums, lo, hi
         include, exclude = 0, 0
-        for i0 in range(lo, hi+1
+        ___ i0 in range(lo, hi+1
             i, e = include, exclude
             include = e+nums[i0]
             exclude = max(i, e)
@@ -28,14 +28,14 @@ class Solution(object
         __ le.(nums) < 2: r_ nums[0]
         dp0 = [0]*le.(nums)
         dp1 = [0]*le.(nums)
-        for i in range(le.(nums)-1
+        ___ i in range(le.(nums)-1
             __ i __ 0:
                 dp0[i] = nums[0]
             ____ i __ 1:
                 dp0[i] = max(nums[i], nums[i-1])
             ____
                 dp0[i] = max(dp0[i-1], dp0[i-2] + nums[i])
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ i __ 1:
                 dp1[i] = nums[i]
             ____ i __ 2:
@@ -51,7 +51,7 @@ class Solution(object
             [1, 2, 3, 9],
             [2, 1, 1, 2]
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.rob(nums)
             print('result: %s' % (result))

@@ -13,7 +13,7 @@ class Solution(object
         left = -1
         nextLeft = -1
         maxLen = 0
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             __ num __ 0:
                 maxLen = max(maxLen, i-left-1)
                 left = nextLeft
@@ -26,7 +26,7 @@ class Solution(object
             [1, 0, 1, 1, 0],
             [1, 0, 1, 1,0, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.findMaxConsecutiveOnes(nums)
             print('result: %s' % result)

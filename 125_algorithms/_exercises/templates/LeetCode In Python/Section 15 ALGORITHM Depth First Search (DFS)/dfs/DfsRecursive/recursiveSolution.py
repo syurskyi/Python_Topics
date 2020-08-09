@@ -19,8 +19,8 @@ class Graph:
         visited.add(u)
         print(u, end=' ')
 
-        for v in self.graph[u]:
-            __ v not in visited:
+        ___ v __ self.graph[u]:
+            __ v not __ visited:
                 self.DFS(v, visited)
 
 

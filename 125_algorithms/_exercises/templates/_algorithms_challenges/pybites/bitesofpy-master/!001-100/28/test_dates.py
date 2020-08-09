@@ -24,14 +24,14 @@ ___ test_convert_to_datetime(date_str, expected
 
 
 ___ test_get_month_most_posts(dates
-    converted_dates = [convert_to_datetime(d) for d in dates]
+    converted_dates = [convert_to_datetime(d) ___ d in dates]
     assert get_month_most_posts(converted_dates) __ '2017-01'
 
 
 ___ test_get_month_most_posts_more_in_2018(dates
     # make Jan 2018 > Jan 2017
-    for _ in range(25
+    ___ _ in range(25
         dates.append('Sun, 07 Jan 2018 12:00:00 +0100')
 
-    converted_dates = [convert_to_datetime(d) for d in dates]
+    converted_dates = [convert_to_datetime(d) ___ d in dates]
     assert get_month_most_posts(converted_dates) __ '2018-01'

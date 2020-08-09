@@ -61,10 +61,10 @@ class Solution:
         ret = []
         mn = min(self.mp)
         mx = max(self.mp)
-        for i in range(mn, mx+1
+        ___ i in range(mn, mx+1
             ret.append([
                 val
-                for _, val in sorted(self.mp[i])
+                ___ _, val in sorted(self.mp[i])
             ])
         r_ ret
 

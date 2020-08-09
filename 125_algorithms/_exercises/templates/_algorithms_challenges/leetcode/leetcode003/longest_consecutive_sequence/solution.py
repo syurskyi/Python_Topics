@@ -5,11 +5,11 @@ class Solution:
         __ not num:
             r_ 0
         d = {}
-        for e in num:
+        ___ e in num:
             __ e not in d:
                 d[e] = 1
         res = 1
-        for c in num:
+        ___ c in num:
             current = 1
             __ c not in d:
                 continue

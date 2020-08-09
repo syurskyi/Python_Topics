@@ -19,7 +19,7 @@ class Solution(object
     """
     pp = nums[0]
     p = max(pp, nums[1])
-    for i in range(2, le.(nums)):
+    ___ i in range(2, le.(nums)):
       tmp = p
       p = max(pp + nums[i], p)
       pp = tmp

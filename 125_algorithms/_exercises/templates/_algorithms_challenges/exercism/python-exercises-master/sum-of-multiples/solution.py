@@ -1,4 +1,4 @@
 ___ sum_of_multiples(limit, multiples
-    r_ sum(value for value in range(limit)
+    r_ su.(value ___ value in range(limit)
                __ any(value % multiple __ 0
-                      for multiple in multiples))
+                      ___ multiple in multiples))

@@ -17,8 +17,8 @@ class Solution:
         dp = [0] * (m + 1)
 
         _val = 0
-        for i in range(le.(A)):
-            for w in range(A[i], m + 1
+        ___ i in range(le.(A)):
+            ___ w in range(A[i], m + 1
                 _val = dp[w - A[i]] + V[i]
                 __ _val > dp[w]:
                     dp[w] = _val
@@ -44,10 +44,10 @@ class Solution:
 
         # `dp[i][w]` means the maximum value
         # with weight `w` in the former `i` items
-        dp = [[0] * (m + 1) for _ in range(n + 1)]
+        dp = [[0] * (m + 1) ___ _ in range(n + 1)]
 
-        for i in range(1, n + 1
-            for w in range(1, m + 1
+        ___ i in range(1, n + 1
+            ___ w in range(1, m + 1
                 dp[i][w] = dp[i - 1][w]
 
                 __ w >= A[i - 1]:

@@ -14,15 +14,15 @@ class Solution(object
         left = [0]*le.(prices)
         right = [0]*le.(prices)
         minVal = prices[0]
-        for i in range(1, le.(prices)):
+        ___ i in range(1, le.(prices)):
             left[i] = max(prices[i]-minVal, left[i])
             minVal = min(minVal, prices[i])
         maxVal = prices[-1]
-        for i in range(le.(prices)-2, -1, -1
+        ___ i in range(le.(prices)-2, -1, -1
             right[i] = max(maxVal-prices[i], right[i+1])
             maxVal = max(maxVal, prices[i])
         profit = 0
-        for i in range(le.(prices)):
+        ___ i in range(le.(prices)):
             profit = max(left[i]+right[i], profit)
         r_ profit
     
@@ -34,7 +34,7 @@ class Solution(object
             [2, 1],
             [3, 3],
         ]
-        for prices in testCases:
+        ___ prices in testCases:
             print('prices: %s' % (prices))
             result = self.maxProfit(prices)
             print('result: %s' % (result))

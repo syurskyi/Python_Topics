@@ -26,7 +26,7 @@ class Solution(object
                 'cdabcdab',
             ]
         ]
-        for A, B in testCases:
+        ___ A, B in testCases:
             print('A: %s' % A)
             print('B: %s' % B)
             result = self.repeatedStringMatch(A, B)

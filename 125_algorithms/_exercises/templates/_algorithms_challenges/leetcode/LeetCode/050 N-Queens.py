@@ -34,7 +34,7 @@ class Solution:
         :return: a list of lists of string
         """
         result = []
-        current = [[0 for _ in xrange(n)] for _ in xrange(n)]
+        current = [[0 ___ _ in xrange(n)] ___ _ in xrange(n)]
         self.backtrack(0, current, result)
         r_ self.transform2string(result)
 
@@ -55,16 +55,16 @@ class Solution:
             result.append(current)
             r_
 
-        for i in xrange(n
+        ___ i in xrange(n
             __ current[queen_index][i]__INVALID:
                 continue
 
             # place the queen
-            new_config = [list(element) for element in current]  # new copy
+            new_config = [list(element) ___ element in current]  # new copy
             new_config[queen_index][i] = QUEEN
 
             # update invalid position in the new config
-            for m in xrange(n
+            ___ m in xrange(n
                 # col
                 __ new_config[m][i]__DEFAULT:
                     new_config[m][i] = INVALID
@@ -90,7 +90,7 @@ class Solution:
                 # if 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT: new_config[row][col] = INVALID
 
                 # diagonal - optimized
-                for direction in directions:
+                ___ direction in directions:
                     row = queen_index+direction[0]*m
                     col = i+direction[1]*m
                     __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT:
@@ -103,9 +103,9 @@ class Solution:
 
     ___ transform2string(self, result
         string_result = []
-        for configuration in result:
+        ___ configuration in result:
             current = []
-            for row in configuration:
+            ___ row in configuration:
                 row = map(lambda x: "." __ x__-1 else "Q", row)
                 row = "".join(row)
                 current.append(row)

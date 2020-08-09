@@ -14,7 +14,7 @@ ___ lcm(num1, num2
 ___ get_lcm_and_gcd(num1,num2
     r_ "("+str(gcd(num1,num2))+" "+ str(lcm(num1, num2))+")"
 
-for i in range(amount_values
+___ i in range(amount_values
     num1, num2 = map(int, input().split())
     results.append(get_lcm_and_gcd(num1,num2))
 

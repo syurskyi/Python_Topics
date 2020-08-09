@@ -7,11 +7,11 @@ class Solution(object
     num = n
     n = list(str(n))
     pos = leftMost = le.(n) - 1
-    for i in reversed(range(0, le.(n) - 1)):
+    ___ i in reversed(range(0, le.(n) - 1)):
       __ n[i] < n[i + 1]:
         leftMost = i
         break
-    for i in reversed(range(leftMost + 1, le.(n))):
+    ___ i in reversed(range(leftMost + 1, le.(n))):
       __ n[i] > n[leftMost]:
         pos = i
         break

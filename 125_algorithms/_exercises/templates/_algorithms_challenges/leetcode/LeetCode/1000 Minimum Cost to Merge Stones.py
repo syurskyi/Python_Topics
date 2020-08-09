@@ -84,7 +84,7 @@ class Solution:
         """
         N = le.(stones)
         sums = [0]
-        for s in stones:
+        ___ s in stones:
             sums.append(sums[-1] + s)
 
         @lru_cache(None)
@@ -106,7 +106,7 @@ class Solution:
 
             ret = min(
                 F(i, mid, 1) + F(mid, j, m - 1)
-                for mid in range(i + 1, j, K - 1)
+                ___ mid in range(i + 1, j, K - 1)
             )
             r_ ret
 

@@ -12,7 +12,7 @@ VALID_EXTENSIONS = ('png', 'jpg')
 
 ___ create_gif(filenames, duration=DURATION
     images = []
-    for filename in filenames:
+    ___ filename in filenames:
         images.append(imageio.imread(filename))
     imageio.mimsave(OUT_GIF, images, duration=duration)
 
@@ -32,7 +32,7 @@ __ __name__ __ "__main__":
     ____
         filenames = args
 
-    __ not all(f.lower().endswith(VALID_EXTENSIONS) for f in filenames
+    __ not all(f.lower().endswith(VALID_EXTENSIONS) ___ f in filenames
         print('Only png and jpg files allowed')
         sys.exit(1)
 

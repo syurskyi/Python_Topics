@@ -56,7 +56,7 @@ class Solution:
     ___ dfs(self, image, i, j, cur_color, new_color
         image[i][j] = new_color
         m, n = le.(image), le.(image[0])
-        for di, dj in dirs:
+        ___ di, dj in dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m and 0 <= J < n and image[I][J] __ cur_color:

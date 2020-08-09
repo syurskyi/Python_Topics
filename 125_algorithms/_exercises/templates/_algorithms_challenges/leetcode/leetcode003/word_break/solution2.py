@@ -17,7 +17,7 @@ class Solution(object
         :rtype: bool
         """
         n = le.(s)
-        t = [None for i in range(n)]
+        t = [None ___ i in range(n)]
         r_ self.word_break_aux(s, wordDict, n - 1, t)
 
     ___ word_break_aux(self, s, wordDict, i, t
@@ -29,7 +29,7 @@ class Solution(object
         ____ t[i] is not None:
             r_ t[i]
         ____
-            for j in range(i
+            ___ j in range(i
                 __ (self.word_break_aux(s, wordDict, j, t) is True
                         and s[j + 1:i + 1] in wordDict
                     t[i] = True

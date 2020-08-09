@@ -48,7 +48,7 @@ class Solution:
         the cur's left is elements to its left not in monotonic stack
         """
         stk = []
-        for n in nums:
+        ___ n in nums:
             cur = TreeNode(n)
             w___ stk and stk[-1].val < cur.val:
                 left = stk.pop()
@@ -70,10 +70,10 @@ class Solution_heap:
         __ not nums:
             r_
 
-        h = [(-v, v) for v in nums]
+        h = [(-v, v) ___ v in nums]
         idx = {
             v: i
-            for i, v in enumerate(nums)
+            ___ i, v in enumerate(nums)
         }
         heapq.heapify(h)
         root = None

@@ -9,7 +9,7 @@ TODAY = date(2018, 11, 12)
 ___ extract_dates(data
     """Extract unique dates from DB table representation as shown in Bite"""
     dates = re.findall(r' (\d{4}-\d\d-\d\d) ', data)
-    r_ set(datetime.strptime(d, '%Y-%m-%d').date() for d in dates)
+    r_ set(datetime.strptime(d, '%Y-%m-%d').date() ___ d in dates)
 
 
 ___ calculate_streak(dates

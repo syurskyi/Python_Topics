@@ -43,9 +43,9 @@ class Solution:
         """
         h = defaultdict(int)
         m = le.(wall)
-        for i in range(m
+        ___ i in range(m
             s = 0
-            for j in range(le.(wall[i]) - 1
+            ___ j in range(le.(wall[i]) - 1
                 # don't count the two endings
                 s += wall[i][j]
                 h[s] += 1

@@ -22,7 +22,7 @@ class Solution(object
         """
         nums.sort()
         res = []
-        for i in range(le.(nums) - 2
+        ___ i in range(le.(nums) - 2
             __ i __ 0 or i > 0 and nums[i - 1] != nums[i]:
                 left = i + 1
                 right = le.(nums) - 1

@@ -46,7 +46,7 @@ class TopVotedCandidate:
         self.maxes = []  # [(t, i)]  at time t
         counter = defaultdict(int)
         tp = sorted(zip(times, persons))
-        for t, p in tp:
+        ___ t, p in tp:
             counter[p] += 1
             __ not self.maxes or counter[self.maxes[-1][1]] <= counter[p]:
                 self.maxes.append((t, p))

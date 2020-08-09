@@ -24,11 +24,11 @@ class Solution(object
         __ le.(elems) __ le.(words[0]
             result.append(list(elems))
             r_
-        for word in nextWords:
+        ___ word in nextWords:
             elems.append(word)
             __ le.(elems) < le.(words[0]
                 prefix = ''
-                for i in range(le.(elems)):
+                ___ i in range(le.(elems)):
                     prefix += elems[i][le.(elems)]
                 candidates = self.wordsWithPrefix(prefix)
             ____
@@ -38,9 +38,9 @@ class Solution(object
     
     ___ buildTrie(self, words
         self.root.candidates = words
-        for word in words:
+        ___ word in words:
             children = self.root.children
-            for c in word:
+            ___ c in word:
                 __ c in children:
                     node = children[c]
                 ____
@@ -52,7 +52,7 @@ class Solution(object
     ___ wordsWithPrefix(self, prefix
         __ not prefix: r_ []
         children = self.root.children
-        for i, c in enumerate(prefix
+        ___ i, c in enumerate(prefix
             __ c in children:
                 node = children[c]
                 __ i __ le.(prefix)-1:
@@ -68,7 +68,7 @@ class Solution(object
             ["area","lead","wall","lady","ball"],
             ["abat","baba","atan","atal"],
         ]
-        for words in testCases:
+        ___ words in testCases:
             print('words: %s' % words)
             result = self.wordSquares(words)
             print('result: %s' % result)

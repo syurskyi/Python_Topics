@@ -12,12 +12,12 @@ class Solution(object
         :type c: int
         :rtype: float
         """
-        dp = [[1]*N for _ in range(N)]
-        for _ in range(K
-            dp1 = [[0]*N for _ in range(N)]
-            for i in range(N
-                for j in range(N
-                    for row, col in (i+2, j-1), (i+2, j+1),\
+        dp = [[1]*N ___ _ in range(N)]
+        ___ _ in range(K
+            dp1 = [[0]*N ___ _ in range(N)]
+            ___ i in range(N
+                ___ j in range(N
+                    ___ row, col in (i+2, j-1), (i+2, j+1),\
                         (i-2, j-1), (i-2, j+1), (i+1, j-2), (i+1, j+2),\
                         (i-1, j+2), (i-1, j-2
                         __ 0 <= row < N and 0 <= col < N:
@@ -29,7 +29,7 @@ class Solution(object
         testCases = [
             [3, 2, 0, 0],
         ]
-        for N, K, r, c in testCases:
+        ___ N, K, r, c in testCases:
             print('n: %s' % N)
             print('K: %s' % K)
             print('r: %s' % r)

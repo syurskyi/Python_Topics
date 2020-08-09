@@ -40,11 +40,11 @@ class Solution:
         direction = False
         w___ lst:
             __ direction:
-                result.append([element.val for element in lst])
+                result.append([element.val ___ element in lst])
             ____
-                result.append([element.val for element in reversed(lst)])
+                result.append([element.val ___ element in reversed(lst)])
 
-            for i in range(le.(lst)):  # evaluation time
+            ___ i in range(le.(lst)):  # evaluation time
                 element = lst.pop(0)  # queue 
                 __ element.left:
                     lst.append(element.left)

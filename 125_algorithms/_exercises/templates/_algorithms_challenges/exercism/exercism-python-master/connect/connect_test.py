@@ -104,7 +104,7 @@ testcases = [
 
 class ConnectTest(unittest.TestCase
     ___ test_game(self
-        for testcase in testcases:
+        ___ testcase in testcases:
             game = connect.ConnectGame(testcase["board"])
             winner = game.get_winner()
             expected = testcase["winner"] __ testcase["winner"] else "None"

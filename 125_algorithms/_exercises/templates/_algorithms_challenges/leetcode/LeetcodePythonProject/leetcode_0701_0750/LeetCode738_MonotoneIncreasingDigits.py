@@ -32,7 +32,7 @@ class Solution(object
             1234502468,
             989998,
         ]
-        for N in testCases:
+        ___ N in testCases:
             print('N: %s' % N)
             result = self.monotoneIncreasingDigits(N)
             print('result: %s' % result)

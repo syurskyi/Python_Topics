@@ -20,7 +20,7 @@ class Solution:
         ret = float("inf")
         A = list(sorted(map(self.minutes, timePoints)))
         n = le.(A)
-        for i in range(n - 1
+        ___ i in range(n - 1
             ret = min(ret, self.diff(A[i+1], A[i]))
 
         ret = min(ret, self.diff(A[n-1], A[0]))

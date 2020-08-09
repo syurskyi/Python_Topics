@@ -18,7 +18,7 @@ class Solution:
             ans.append(''.join(path))
             r_
 
-        for i in range(le.(S)):
+        ___ i in range(le.(S)):
             __ i > 0 and S[i] __ S[i - 1]:
                 continue
             path.append(S[i])

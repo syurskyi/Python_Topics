@@ -3,4 +3,4 @@
 
 
 a = set(input().split())
-print(all(a > set(input().split()) for _ in range(int(input()))))
+print(all(a > set(input().split()) ___ _ in range(int(input()))))

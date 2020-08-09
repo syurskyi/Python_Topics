@@ -36,7 +36,7 @@ class Solution:
         __ le.(A) __ 1:
             r_ A[0]
 
-        dp = [[0] * 2 for _ in range(2)]
+        dp = [[0] * 2 ___ _ in range(2)]
 
         r_ max(
             self.houseRobber(A, 0, dp),
@@ -49,7 +49,7 @@ class Solution:
         dp[curr][0] = 0
         dp[curr][1] = A[start]
 
-        for i in range(1 + start, n - 1 + start
+        ___ i in range(1 + start, n - 1 + start
             prev = curr
             curr = i % 2
 
@@ -89,7 +89,7 @@ class Solution:
         dp[prev1] = A[start]
         dp[curr] = max(A[start], A[start + 1])
 
-        for i in range(2 + start, n - 1 + start
+        ___ i in range(2 + start, n - 1 + start
             prev2, prev1 = prev1, curr
             curr = i % 3
 
@@ -121,7 +121,7 @@ class Solution:
         dp[0] = 0
         dp[1] = A[start]
 
-        for i in range(2, n + 1
+        ___ i in range(2, n + 1
             dp[i] = max(
                 dp[i - 2] + A[start + i - 1],
                 dp[i - 1]

@@ -7,7 +7,7 @@ ___ max_subset_sum(arr
     dp.append(arr[0])
     dp.append(max(arr[:2]))
     ans = dp[-1]
-    for i in arr[2:]:
+    ___ i in arr[2:]:
         dp.append(max(i, dp[-2] + i, ans))
         ans = max(ans, dp[-1])
     r_ ans

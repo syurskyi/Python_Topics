@@ -49,11 +49,11 @@ class Solution:
         __ K __ 0:
             r_ 1
 
-        F = [0 for _ in range(N+1)]
+        F = [0 ___ _ in range(N+1)]
         F[0] = 1
         cur_sum = F[0]
         ret = 0
-        for i in range(1, N+1
+        ___ i in range(1, N+1
             F[i] = cur_sum * (1/W)
             __ i >= K:
                 ret += F[i]
@@ -73,16 +73,16 @@ class Solution:
 
         O(N^2)
         """
-        F = [0 for _ in range(K+W+1)]
+        F = [0 ___ _ in range(K+W+1)]
         F[0] = 1
-        for i in range(1, K+W+1
-            for j in range(W, 0, -1
+        ___ i in range(1, K+W+1
+            ___ j in range(W, 0, -1
                 __ i - j >= K:
                     break
                 __ i - j >= 0:
                     F[i] += F[i-j] * 1 / W
 
-        ret = sum(F[1:N+1])  # error
+        ret = su.(F[1:N+1])  # error
         print(F, ret)
         r_ ret
 

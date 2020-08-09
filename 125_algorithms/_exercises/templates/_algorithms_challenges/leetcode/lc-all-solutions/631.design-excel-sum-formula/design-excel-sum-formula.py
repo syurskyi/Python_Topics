@@ -5,7 +5,7 @@ class Excel(object
     :type W: str
     """
     H, W = self.decodeCoord(H, W)
-    self.data = [[0] * (W + 1) for _ in range(H + 1)]
+    self.data = [[0] * (W + 1) ___ _ in range(H + 1)]
     self.formulas = {}
 
   ___ decodeCoord(self, r, c
@@ -36,10 +36,10 @@ class Excel(object
 
   ___ computeFormula(self, strs
     ans = 0
-    for s in strs:
+    ___ s in strs:
       startI, startJ, endI, endJ = self.parseRange(s)
-      for i in range(startI, endI + 1
-        for j in range(startJ, endJ + 1
+      ___ i in range(startI, endI + 1
+        ___ j in range(startJ, endJ + 1
           __ (i, j) in self.formulas:
             ans += self.computeFormula(self.formulas[(i, j)])
           ____
@@ -54,7 +54,7 @@ class Excel(object
     endI, endJ = self.decodeCoord(end[1:], end[0])
     r_ (startI, startJ, endI, endJ)
 
-  ___ sum(self, r, c, strs
+  ___ su.(self, r, c, strs
     """
     :type r: int
     :type c: str

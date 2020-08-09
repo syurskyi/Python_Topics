@@ -13,7 +13,7 @@ ___ hexa(hexstring
     result = 0
     hex_of_lastseen = None
     try:
-        for hex_of_lastseen in hexstring:
+        ___ hex_of_lastseen in hexstring:
             result = result*16 + hexchars_to_int[hex_of_lastseen]
     except KeyError:
         # not a valid hexchar

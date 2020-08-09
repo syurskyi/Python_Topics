@@ -41,13 +41,13 @@ class Solution:
                 ret = [TreeNode(0)]
             ____
                 ret = []
-                for i in range(N
+                ___ i in range(N
                     lefts = self.allPossibleFBT(i)
                     rights = self.allPossibleFBT(N-1-i)
                     # 0 or 2 child, cannot have only 1
                     __ lefts and rights:
-                        for left in lefts:
-                            for right in rights:
+                        ___ left in lefts:
+                            ___ right in rights:
                                 node = TreeNode(0)
                                 node.left = left
                                 node.right = right

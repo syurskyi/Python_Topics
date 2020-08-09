@@ -28,14 +28,14 @@ class Solution:
         fill 9
         299
         """
-        digits = [int(e) for e in str(N)]
+        digits = [int(e) ___ e in str(N)]
         pointer = le.(digits)
-        for i in range(le.(digits) - 1, 0, -1
+        ___ i in range(le.(digits) - 1, 0, -1
             __ digits[i - 1] > digits[i]:
                 pointer = i
                 digits[i - 1] -= 1
 
-        for i in range(pointer, le.(digits)):
+        ___ i in range(pointer, le.(digits)):
             digits[i] = 9
 
         r_ int("".join(map(str, digits)))

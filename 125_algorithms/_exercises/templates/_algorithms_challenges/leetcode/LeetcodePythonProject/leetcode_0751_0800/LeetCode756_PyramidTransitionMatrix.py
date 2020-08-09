@@ -13,7 +13,7 @@ class Solution(object
         __ not bottom:
             r_ False
         hashmap = {}
-        for s in allowed:
+        ___ s in allowed:
             __ s[:2] in hashmap:
                 hashmap[s[:2]].add(s[-1])
             ____
@@ -26,12 +26,12 @@ class Solution(object
                     r_ True
                 ____
                     r_ False
-            nextQueue = [set() for _ in range(level-1)]
-            for i in range(level-1
+            nextQueue = [set() ___ _ in range(level-1)]
+            ___ i in range(level-1
                 arr1 = queue[i]
                 arr2 = queue[i+1]
-                for c1 in arr1:
-                    for c2 in arr2:
+                ___ c1 in arr1:
+                    ___ c2 in arr2:
                         __ c1+c2 in hashmap:
                             nextQueue[i] = nextQueue[i].union(hashmap[c1+c2])
                 __ not nextQueue[i]:
@@ -49,7 +49,7 @@ class Solution(object
                 ["CBB","ACB","ABD","CDB","BDC","CBC","DBA","DBB","CAB","BCB","BCC","BAA","CCD","BDD","DDD","CCA","CAA","CCC","CCB"]
             ],
         ]
-        for bottom, allowed in testCases:
+        ___ bottom, allowed in testCases:
             print('bottom: %s' % bottom)
             print('allowed: %s' % allowed)
             result = self.pyramidTransition(bottom, allowed)

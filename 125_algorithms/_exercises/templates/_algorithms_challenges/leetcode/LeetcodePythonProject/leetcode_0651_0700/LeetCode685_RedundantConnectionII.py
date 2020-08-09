@@ -13,16 +13,16 @@ class Solution(object
         can2 = [-1, -1]
         n = le.(edges)
         parent = [0]*(n+1)
-        for i in range(n
+        ___ i in range(n
             __ parent[edges[i][1]] __ 0:
                 parent[edges[i][1]] = edges[i][0]
             ____
                 can2 = [edges[i][0], edges[i][1]]
                 can1 = [parent[edges[i][1]], edges[i][1]]
                 edges[i][1] = 0
-        for i in range(n+1
+        ___ i in range(n+1
             parent[i] = i
-        for i in range(n
+        ___ i in range(n
             __ edges[i][1] __ 0:
                 continue
             child = edges[i][1]
@@ -46,7 +46,7 @@ class Solution(object
 #             [[1, 2], [2, 3], [3, 4], [4, 1], [1, 5]],
             [[2,1],[3,1],[4,2],[1,4]],
         ]
-        for edges in testCases:
+        ___ edges in testCases:
             print('edges: %s' % edges)
             result = self.findRedundantDirectedConnection(edges)
             print('result: %s' % result)

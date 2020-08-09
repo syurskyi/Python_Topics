@@ -4,10 +4,10 @@ class Luhn:
         self.number = number
 
     ___ checksum(self
-        r_ sum(self.addends()) % 10
+        r_ su.(self.addends()) % 10
 
     ___ addends(self
-        r_ [self.addend(idx, int(val)) for idx, val in
+        r_ [self.addend(idx, int(val)) ___ idx, val in
                 enumerate(reversed(str(self.number)))]
 
     ___ addend(self, idx, val
@@ -24,6 +24,6 @@ class Luhn:
 
     @classmethod
     ___ create(cls, num
-        for i in range(0, 10
+        ___ i in range(0, 10
             __ cls(int(str(num) + str(i))).is_valid(
                 r_ int(str(num) + str(i))

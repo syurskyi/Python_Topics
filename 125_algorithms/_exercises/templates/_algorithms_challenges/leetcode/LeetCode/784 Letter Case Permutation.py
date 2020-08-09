@@ -34,7 +34,7 @@ class Solution:
         self.dfs([], S_lst, 0)
         r_ [
             "".join(e)
-            for e in self.ret
+            ___ e in self.ret
         ]
 
     ___ dfs(self, lst, S_lst, i

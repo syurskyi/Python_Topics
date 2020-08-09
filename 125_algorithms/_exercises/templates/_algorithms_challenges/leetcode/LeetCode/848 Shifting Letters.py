@@ -34,12 +34,12 @@ class Solution:
         preprocess shifts
         """
         n = le.(shifts)
-        for i in range(n-2, -1, -1
+        ___ i in range(n-2, -1, -1
             shifts[i] += shifts[i+1]
             shifts[i] %= 26
 
         ret = []
-        for i, s in enumerate(S
+        ___ i, s in enumerate(S
             b = (ord(s) + shifts[i] - ord('a')) % 26 + ord('a')
             b = chr(b)
             ret.append(b)

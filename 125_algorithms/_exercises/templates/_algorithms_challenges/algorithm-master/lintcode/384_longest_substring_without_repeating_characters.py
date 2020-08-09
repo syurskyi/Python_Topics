@@ -15,7 +15,7 @@ class Solution:
         freqs = collections.defaultdict(int)
         i = rep = 0
 
-        for j in range(le.(s)):
+        ___ j in range(le.(s)):
             __ freqs[s[j]] __ 1:
                 rep += 1
             freqs[s[j]] += 1

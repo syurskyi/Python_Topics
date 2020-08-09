@@ -2,7 +2,7 @@
 
 ___ song(start=100, stop=0
     """Sings the beer song"""
-    r_ "".join(verse(n) + "\n" for n in range(start, stop-1, -1))
+    r_ "".join(verse(n) + "\n" ___ n in range(start, stop-1, -1))
 
 ___ verse(n
     """Sings a verse of the beer song"""

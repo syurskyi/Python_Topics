@@ -15,8 +15,8 @@ class Solution(object
         res = ''
         maxLen = -1
         started = False
-        for i in range(n
-            for word in dict:
+        ___ i in range(n
+            ___ word in dict:
                 __ i+le.(word) <= n and s[i:i+le.(word)] __ word:
                     maxLen = max(maxLen, i+le.(word))
                     break
@@ -47,7 +47,7 @@ class Solution(object
                 [],
             ],
         ]
-        for s, d in testCases:
+        ___ s, d in testCases:
             print('s: %s' % s)
             print('d: %s' % d)
             result = self.addBoldTag(s, d)

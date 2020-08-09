@@ -13,9 +13,9 @@ class Solution(object
         __ not matrix: r_ 0
         maxLen = 0
         m, n = le.(matrix), le.(matrix[0])
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m
-            for j in range(n
+        dp = [[0]*(n+1) ___ _ in range(m+1)]
+        ___ i in range(m
+            ___ j in range(n
                 __ matrix[i][j] __ '1':
                     dp[i+1][j+1] = min([dp[i][j], dp[i+1][j], dp[i][j+1]])+1
                     maxLen = max(maxLen, dp[i+1][j+1])
@@ -33,9 +33,9 @@ class Solution(object
                 '10010',
             ],
         ]
-        for matrix in testCases:
+        ___ matrix in testCases:
             print('matrix: %s' % matrix)
-            matrix = [list(x) for x in matrix]
+            matrix = [list(x) ___ x in matrix]
             result = self.maximalSquare(matrix)
             print('result: %s' % (result))
             print('-='*20+'-')

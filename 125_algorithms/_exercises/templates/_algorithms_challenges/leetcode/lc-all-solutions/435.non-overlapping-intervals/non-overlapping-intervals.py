@@ -13,7 +13,7 @@ class Solution(object
     intervals.sort(key=lambda i: i.end)
     ans = 0
     end = float("-inf")
-    for interval in intervals:
+    ___ interval in intervals:
       # print interval.start, interval.end
       __ interval.start >= end:
         ans += 1

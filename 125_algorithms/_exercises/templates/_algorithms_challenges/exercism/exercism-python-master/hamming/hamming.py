@@ -2,4 +2,4 @@
 
 ___ distance(strand_a, strand_b
     """Counts the differences in two sequences of DNA"""
-    r_ sum(1 for a,b in zip(strand_a, strand_b) __ a != b)
+    r_ su.(1 ___ a,b in zip(strand_a, strand_b) __ a != b)

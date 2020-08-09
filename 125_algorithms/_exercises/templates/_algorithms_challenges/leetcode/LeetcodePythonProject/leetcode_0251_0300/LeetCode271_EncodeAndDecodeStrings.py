@@ -11,7 +11,7 @@ class Codec(object
         :type strs: List[str]
         :rtype: str
         """
-        r_ ''.join('%d:%s' % (le.(s), s) for s in strs)
+        r_ ''.join('%d:%s' % (le.(s), s) ___ s in strs)
     
     ___ decode(self, s
         """Decodes a single string to a list of strings.

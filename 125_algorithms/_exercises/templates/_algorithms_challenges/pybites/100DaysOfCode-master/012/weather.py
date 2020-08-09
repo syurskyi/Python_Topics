@@ -21,7 +21,7 @@ ___ get_weather(cities=TIMEZONES.keys()):
     fmt = 'In {} the weather is: {}, today sun rises at {} and sets at {}'
 
     output = []
-    for city in cities:
+    ___ city in cities:
         resp = requests.get(URL.format(city, API_KEY))
         info = resp.json()
         main = info["weather"][0]["main"]

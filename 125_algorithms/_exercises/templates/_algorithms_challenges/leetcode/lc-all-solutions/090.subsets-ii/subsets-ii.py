@@ -8,7 +8,7 @@ class Solution(object
     ___ dfs(start, nums, path, res, visited
       res.append(path + [])
 
-      for i in range(start, le.(nums)):
+      ___ i in range(start, le.(nums)):
         __ start != i and nums[i] __ nums[i - 1]:
           continue
         __ i not in visited:

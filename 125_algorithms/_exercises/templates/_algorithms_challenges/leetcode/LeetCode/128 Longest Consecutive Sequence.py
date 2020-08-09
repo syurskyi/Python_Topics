@@ -24,7 +24,7 @@ class Solution:
         inverted_table = dict(zip(num, range(length)))
 
         max_length = -1<<31
-        for ind, val in enumerate(num
+        ___ ind, val in enumerate(num
             current_length = 1
             # check val--
             sequence_val_expected = val-1
@@ -54,10 +54,10 @@ class Solution:
         :param num: a list of integer
         :return: an integer
         """
-        visited = {item: False for item in num}
+        visited = {item: False ___ item in num}
 
         max_length = -1<<31
-        for ind, val in enumerate(num
+        ___ ind, val in enumerate(num
             __ visited[val]: continue
 
             current_length = 1

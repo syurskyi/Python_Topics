@@ -11,7 +11,7 @@ class Solution(object
         """
         MOD = 10**9+7
         e0, e1, e2 = 1, 0, 0
-        for c in s:
+        ___ c in s:
             __ c __ '*':
                 f0 = e0*9 + e1*9 + e2*6
                 f1 = e0
@@ -29,7 +29,7 @@ class Solution(object
             '1*',
             '*1*1*0',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.numDecodings(s)
             print('result: %s' % result)

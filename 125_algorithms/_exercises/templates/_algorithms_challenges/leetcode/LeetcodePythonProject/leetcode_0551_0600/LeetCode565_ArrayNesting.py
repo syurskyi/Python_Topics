@@ -11,7 +11,7 @@ class Solution(object
         """
         hashmap = {}
         maxLen = 0
-        for num in nums:
+        ___ num in nums:
             __ num not in hashmap:
                 hashset = set()
                 count = 0
@@ -20,7 +20,7 @@ class Solution(object
                     count += 1
                     num0 = nums[num0]
                     hashset.add(num0)
-                for num0 in hashset:
+                ___ num0 in hashset:
                     hashmap[num0] = count
                 maxLen = max(maxLen, count)
         r_ maxLen
@@ -30,7 +30,7 @@ class Solution(object
             [5,4,0,3,1,6,2],
             [0],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.arrayNesting(nums)
             print('result: %s' % result)

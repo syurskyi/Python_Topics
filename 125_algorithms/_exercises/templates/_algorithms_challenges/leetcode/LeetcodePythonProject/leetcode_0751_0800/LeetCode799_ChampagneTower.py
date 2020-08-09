@@ -11,10 +11,10 @@ class Solution(object
         :type query_glass: int
         :rtype: float
         """
-        result = [[0.0]*101 for _ in range(101)]
+        result = [[0.0]*101 ___ _ in range(101)]
         result[0][0] = poured
-        for i in range(100
-            for j in range(i+1
+        ___ i in range(100
+            ___ j in range(i+1
                 __ result[i][j] >= 1:
                     result[i+1][j] += (result[i][j]-1)/2.0
                     result[i+1][j+1] += (result[i][j]-1)/2.0
@@ -31,7 +31,7 @@ class Solution(object
             [6, 3, 1],
             [6, 3, 0]
         ]
-        for poured, query_row, query_glass in testCases:
+        ___ poured, query_row, query_glass in testCases:
             print('poured: %s' % poured)
             print('query_row: %s' % query_row)
             print('query_glass: %s' % query_glass)

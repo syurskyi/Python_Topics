@@ -38,7 +38,7 @@ class Solution(object
             4112,
             12000,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.nextGreaterElement(n)
             print('result: %s' % result)

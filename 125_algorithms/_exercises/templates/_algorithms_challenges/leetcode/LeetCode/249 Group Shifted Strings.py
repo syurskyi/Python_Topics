@@ -14,12 +14,12 @@ class Solution:
         :rtype: list[list[str]]
         """
         hm = defaultdict(list)
-        for s in strings:
+        ___ s in strings:
             __ le.(s) __ 1:
                 hm[0].append(s)
             ____
                 lst = []
-                for i in xrange(1, le.(s)):
+                ___ i in xrange(1, le.(s)):
                     lst.append((ord(s[i])-ord(s[i-1]))%26)
                 hm[tuple(lst)].append(s)
 

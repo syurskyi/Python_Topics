@@ -60,10 +60,10 @@ class Solution:
         handle equal case [aa, ab, aa]
         """
         m, n = le.(A), le.(A[0])
-        lt = [False for i in range(m)]
+        lt = [False ___ i in range(m)]
         deleted = 0
-        for j in range(n
-            for i in range(m-1
+        ___ j in range(n
+            ___ i in range(m-1
                 __ lt[i]:
                     continue
                 __ A[i][j] > A[i+1][j]:
@@ -71,7 +71,7 @@ class Solution:
                     break
             ____  # not deleted
                 # handle equal case
-                for i in range(m-1
+                ___ i in range(m-1
                     lt[i] = lt[i] or A[i][j] < A[i+1][j]
 
         r_ deleted

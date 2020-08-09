@@ -4,7 +4,7 @@ ______ re
 
 ___ word_count(phrase
     """Returns dictionary with a count of words used"""
-    r_ Counter(word for word in
+    r_ Counter(word ___ word in
         re.split(r'[\W_]+',
                  phrase.lower(), flags=re.UNICODE)
         __ word)

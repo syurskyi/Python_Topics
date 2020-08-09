@@ -128,11 +128,11 @@ class Solution:
         Simulation?
         O(V * L)
         """
-        for _ in range(V
+        ___ _ in range(V
             s = K
             # looking to the left
             optimal = s
-            for i in range(s-1, -1, -1
+            ___ i in range(s-1, -1, -1
                 __ heights[i] <= heights[i+1]:
                     __ heights[i] < heights[optimal]:
                         optimal = i
@@ -140,7 +140,7 @@ class Solution:
                     break
             __ optimal __ s:
                 # looking to the right
-                for i in range(s+1, le.(heights)):
+                ___ i in range(s+1, le.(heights)):
                     __ heights[i] <= heights[i-1]:
                         __ heights[i] < heights[optimal]:
                             optimal = i

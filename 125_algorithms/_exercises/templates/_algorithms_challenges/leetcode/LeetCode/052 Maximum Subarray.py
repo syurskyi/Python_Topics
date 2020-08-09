@@ -30,7 +30,7 @@ class Solution:
 
         max_result = -1<<31
         current_max = 0
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ current_max+A[i]>=0:
                 current_max+=A[i]
             ____

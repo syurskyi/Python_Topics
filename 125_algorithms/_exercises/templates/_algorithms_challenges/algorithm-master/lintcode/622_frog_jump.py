@@ -18,8 +18,8 @@ class Solution:
         queue = [(stones[0], 0)]
         visited = set(queue)
 
-        for pos, k in queue:
-            for x in (k - 1, k, k + 1
+        ___ pos, k in queue:
+            ___ x in (k - 1, k, k + 1
                 __ x <= 0 or pos + x not in xs:
                     continue
                 __ (pos + x, x) in visited:
@@ -49,11 +49,11 @@ class Solution:
         __ stones[1] != 1:
             r_ False
 
-        dp = {pos: set() for pos in stones}
+        dp = {pos: set() ___ pos in stones}
         dp[stones[0]].add(0)
 
-        for pos in stones:
-            for k in dp[pos]:
+        ___ pos in stones:
+            ___ k in dp[pos]:
                 # k - 1 > 0
                 __ k > 1 and pos + k - 1 in dp:
                     dp[pos + k - 1].add(k - 1)

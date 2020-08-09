@@ -43,16 +43,16 @@ class Solution:
         """
         G = defaultdict(list)
         n = le.(stones)
-        for i in range(n
-            for j in range(i
+        ___ i in range(n
+            ___ j in range(i
                 __ stones[i][0] __ stones[j][0] or stones[i][1] __ stones[j][1]:
                     G[i].append(j)
                     G[j].append(i)
 
         # dfs
         comp_cnt = 0
-        visited = [False for _ in range(n)]
-        for i in range(n
+        visited = [False ___ _ in range(n)]
+        ___ i in range(n
             __ not visited[i]:
                 comp_cnt += 1
                 self.dfs(G, i, visited)
@@ -61,7 +61,7 @@ class Solution:
 
     ___ dfs(self, G, i, visited
         visited[i] = True
-        for nbr in G[i]:
+        ___ nbr in G[i]:
             __ not visited[nbr]:
                 self.dfs(G, nbr, visited)
 

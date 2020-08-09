@@ -9,7 +9,7 @@ ___ get_index_of_fib_number(num
     index = 2.078087 * m.log(num) + 1.672276
     r_ round(index)
 
-for i in range(amount_values
+___ i in range(amount_values
     results.append(get_index_of_fib_number(int(input())))
 
 print(*results)

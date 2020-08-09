@@ -14,7 +14,7 @@ class Solution(object
         length = le.(nums)
         sumVal = (length+1)*(length)/2
         result = sumVal
-        for num in nums:
+        ___ num in nums:
             result -= num
         r_ result
     

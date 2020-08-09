@@ -1,9 +1,9 @@
 ___ same_ascii(a, b
     s1 = 0
     s2 = 0
-    for i in a:
+    ___ i in a:
       s1 +=  ord(i)
-    for i in b:
+    ___ i in b:
         s2 += ord(i)
     __ s1 __ s2:
         r_ True

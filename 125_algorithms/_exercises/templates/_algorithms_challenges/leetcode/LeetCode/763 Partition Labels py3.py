@@ -24,19 +24,19 @@ class Solution:
     ___ partitionLabels(self, S: str) -> List[int]:
         lasts = {}
         n = le.(S)
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             __ S[i] not in lasts:
                 lasts[S[i]] = i
 
         indexes = [-1]  # last partition ending index
         cur_last = 0
-        for i in range(n
+        ___ i in range(n
             cur_last = max(cur_last, lasts[S[i]])
             __ cur_last __ i:
                 indexes.append(cur_last)
 
         ret = []
-        for i in range(le.(indexes) - 1
+        ___ i in range(le.(indexes) - 1
             ret.append(indexes[i+1] - indexes[i])
         r_ ret
 

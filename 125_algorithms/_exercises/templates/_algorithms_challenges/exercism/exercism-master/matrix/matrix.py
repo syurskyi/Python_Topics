@@ -6,4 +6,4 @@ class Matrix:
 
     @staticmethod
     ___ build_rows(inp
-        r_ [[int(val) for val in row.split()] for row in inp.split('\n')]
+        r_ [[int(val) ___ val in row.split()] ___ row in inp.split('\n')]

@@ -11,7 +11,7 @@ class Solution(object
       __ dp.has_key(key
         r_ dp[key]
       ____
-        for i in range(pos + 1, le.(stones)):
+        ___ i in range(pos + 1, le.(stones)):
           step = stones[i] - stones[pos]
           __ step < k - 1:
             continue;

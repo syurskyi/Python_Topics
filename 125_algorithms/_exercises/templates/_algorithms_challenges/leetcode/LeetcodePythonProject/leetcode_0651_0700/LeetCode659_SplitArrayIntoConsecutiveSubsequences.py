@@ -10,9 +10,9 @@ class Solution(object
         :rtype: bool
         """
         freqMap, appendFreqMap = {}, {}
-        for num in nums:
+        ___ num in nums:
             freqMap[num] = freqMap.get(num, 0)+1
-        for num in nums:
+        ___ num in nums:
             __ freqMap[num] __ 0:
                 continue
             ____ appendFreqMap.get(num, 0) > 0:
@@ -34,7 +34,7 @@ class Solution(object
             [1, 2, 3, 3, 4, 4, 5, 5],
             [1, 2, 3, 4, 4, 5],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.isPossible(nums)
             print('result: %s' % result)

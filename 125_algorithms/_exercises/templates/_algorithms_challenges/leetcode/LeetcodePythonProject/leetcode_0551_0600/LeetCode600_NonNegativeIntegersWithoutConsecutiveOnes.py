@@ -15,11 +15,11 @@ class Solution(object
         dp1 = [0]*n
         dp2 = [0]*n
         dp1[0], dp2[0] = 1, 1
-        for i in range(1, n
+        ___ i in range(1, n
             dp1[i] = dp1[i-1]+dp2[i-1]
             dp2[i] = dp1[i-1]
         res = dp1[-1]+dp2[-1]
-        for i in range(n-2, -1, -1
+        ___ i in range(n-2, -1, -1
             __ s[i] __ '1' and s[i+1] __ '1':
                 break
             __ s[i] __ '0' and s[i+1] __ '0':
@@ -31,7 +31,7 @@ class Solution(object
             5,
             6,
         ]
-        for num in testCases:
+        ___ num in testCases:
             print('num: %s' % num)
             result = self.findIntegers(num)
             print('result: %s' % result)

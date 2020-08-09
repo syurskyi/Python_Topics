@@ -55,7 +55,7 @@ class File(object
         r_ self.contents
 
     ___ readlines(self
-        r_ [line + '\n' for line in self.read().split('\n') __ line]
+        r_ [line + '\n' ___ line in self.read().split('\n') __ line]
 
     ___ write(self, data
         self.contents += data

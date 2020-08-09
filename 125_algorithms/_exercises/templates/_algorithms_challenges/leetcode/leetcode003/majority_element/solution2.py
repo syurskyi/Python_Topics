@@ -14,7 +14,7 @@ class Solution(object
         """
         count = 0
         cand = None
-        for c in nums:
+        ___ c in nums:
             __ count __ 0:
                 cand = c
                 count += 1

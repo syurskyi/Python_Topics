@@ -13,7 +13,7 @@ class Solution(object
     start = 0
     maxCount = 0
     window = deque([])
-    for end in range(0, le.(s)):
+    ___ end in range(0, le.(s)):
       d[s[end]] = d.get(s[end], 0) + 1
       maxCount = max(maxCount, d[s[end]])
       __ end - start + 1 - maxCount > k:

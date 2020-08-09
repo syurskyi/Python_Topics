@@ -29,7 +29,7 @@ class Solution(object
         """
         min1 = sys.maxint
         min2 = sys.maxint
-        for e in nums:
+        ___ e in nums:
             __ e < min1:
                 min1 = e
             ____ e != min1 and e < min2:
@@ -46,7 +46,7 @@ class Solution(object
         :rtype: bool
         """
         stk = []
-        for elt in nums:
+        ___ elt in nums:
             w___ stk and stk[-1] >= elt:
                 stk.pop()
 

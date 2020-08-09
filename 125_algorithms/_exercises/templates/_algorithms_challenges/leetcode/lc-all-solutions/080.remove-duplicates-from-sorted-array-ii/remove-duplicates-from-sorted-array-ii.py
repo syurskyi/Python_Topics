@@ -8,7 +8,7 @@ class Solution(object
       r_ le.(nums)
     cnt = 0
     j = 1
-    for i in range(1, le.(nums)):
+    ___ i in range(1, le.(nums)):
       __ nums[i] __ nums[i - 1]:
         cnt += 1
         __ cnt < 2:

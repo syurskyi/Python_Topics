@@ -37,7 +37,7 @@ class Solution(object
             TreeNode(1, TreeNode(3, TreeNode(5)), TreeNode(2)),
             TreeNode(1, TreeNode(3, TreeNode(5, TreeNode(6))), TreeNode(2, None, TreeNode(9, None, TreeNode(7)))),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.widthOfBinaryTree(root)
             print('result: %s' % result)
             print('-='*30+'-')

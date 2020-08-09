@@ -42,7 +42,7 @@ class MiniTwitter:
             res.extend(self.tweets[user_id][-10:])
 
         __ user_id in self.followings:
-            for follow_id in self.followings[user_id]:
+            ___ follow_id in self.followings[user_id]:
                 __ follow_id in self.tweets:
                     res.extend(self.tweets[follow_id][-10:])
 
@@ -50,7 +50,7 @@ class MiniTwitter:
             r_ []
 
         res.sort()
-        r_ [tweet for _, tweet in res[-10:]][::-1]
+        r_ [tweet ___ _, tweet in res[-10:]][::-1]
 
     """
     @param: user_id: An integer
@@ -60,7 +60,7 @@ class MiniTwitter:
         __ user_id not in self.tweets:
             r_ []
 
-        r_ [tweet for _, tweet in self.tweets[user_id][-10:]][::-1]
+        r_ [tweet ___ _, tweet in self.tweets[user_id][-10:]][::-1]
 
     """
     @param: from_id: An integer

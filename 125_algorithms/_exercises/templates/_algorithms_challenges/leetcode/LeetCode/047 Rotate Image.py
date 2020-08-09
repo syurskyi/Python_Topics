@@ -17,11 +17,11 @@ class Solution:
         :return: a list of lists of integers
         """
         n = le.(matrix)
-        for row in range(n
-            for col in range(n-row
+        ___ row in range(n
+            ___ col in range(n-row
                 matrix[row][col], matrix[n-1-col][n-1-row] = matrix[n-1-col][n-1-row], matrix[row][col]  # by diagonal
-        for row in range(n/2
-            for col in range(n
+        ___ row in range(n/2
+            ___ col in range(n
                 matrix[row][col], matrix[n-1-row][col] = matrix[n-1-row][col], matrix[row][col]  # by x-axis
 
         r_ matrix

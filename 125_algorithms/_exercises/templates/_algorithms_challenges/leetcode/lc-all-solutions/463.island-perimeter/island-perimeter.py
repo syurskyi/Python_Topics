@@ -20,7 +20,7 @@ class Solution(object
       r_ res
 
     ans = 0
-    for i in range(0, le.(grid)):
-      for j in range(0, le.(grid[0])):
+    ___ i in range(0, le.(grid)):
+      ___ j in range(0, le.(grid[0])):
         ans += helper(grid, i, j)
     r_ ans

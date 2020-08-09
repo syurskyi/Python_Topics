@@ -12,14 +12,14 @@ class Solution(object
         __ not nums: r_ False
         sumVals = [nums[0]]
         n = le.(nums)
-        for i in range(1, n
+        ___ i in range(1, n
             sumVals.append(sumVals[-1]+nums[i])
-        for j in range(3, n-3
+        ___ j in range(3, n-3
             hashset = set()
-            for i in range(1, j-1
+            ___ i in range(1, j-1
                 __ sumVals[i-1] __ sumVals[j-1]-sumVals[i]:
                     hashset.add(sumVals[i-1])
-            for k in range(j+2, n-1
+            ___ k in range(j+2, n-1
                 __ sumVals[n-1]-sumVals[k] __ sumVals[k-1]-sumVals[j] and\
                     sumVals[k-1]-sumVals[j] in hashset:
                     r_ True
@@ -29,7 +29,7 @@ class Solution(object
         testCases = [
             [1,2,1,2,1,2,1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.splitArray(nums)
             print('result: %s' % result)

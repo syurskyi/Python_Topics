@@ -30,7 +30,7 @@ class Solution(object
             self.visited.add(node)
             cloned_node = self.d[node]
             cloned_neighbors = []
-            for neighbor in node.neighbors:
+            ___ neighbor in node.neighbors:
                 __ neighbor not in self.d:
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
                     self.d[neighbor] = cloned_neighbor

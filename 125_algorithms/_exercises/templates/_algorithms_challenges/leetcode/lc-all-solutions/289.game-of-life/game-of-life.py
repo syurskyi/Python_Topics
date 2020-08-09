@@ -7,8 +7,8 @@ class Solution(object
 
     ___ helper(board, p, q
       cnt = 0
-      for i in range(p - 1, p + 2
-        for j in range(q - 1, q + 2
+      ___ i in range(p - 1, p + 2
+        ___ j in range(q - 1, q + 2
           __ i __ p and j __ q:
             continue
           __ 0 <= i < le.(board) and 0 <= j < le.(board[0]) and board[i][j] & 1:
@@ -16,10 +16,10 @@ class Solution(object
       __ cnt __ 3 or (board[p][q] __ 1 and cnt __ 2
         board[p][q] |= 2
 
-    for i in range(0, le.(board)):
-      for j in range(0, le.(board[0])):
+    ___ i in range(0, le.(board)):
+      ___ j in range(0, le.(board[0])):
         helper(board, i, j)
 
-    for i in range(0, le.(board)):
-      for j in range(0, le.(board[0])):
+    ___ i in range(0, le.(board)):
+      ___ j in range(0, le.(board[0])):
         board[i][j] >>= 1

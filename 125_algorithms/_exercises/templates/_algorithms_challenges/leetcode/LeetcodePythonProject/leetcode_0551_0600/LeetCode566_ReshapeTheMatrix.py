@@ -17,9 +17,9 @@ class Solution(object
             r_ nums
         res = []
         k, l = 0, 0
-        for _ in range(r
+        ___ _ in range(r
             cur = []
-            for _ in range(c
+            ___ _ in range(c
                 cur.append(nums[k][l])
                 l += 1
                 __ l __ n:
@@ -43,14 +43,14 @@ class Solution(object
                 4,
             ],
         ]
-        for nums, r, c in testCases:
+        ___ nums, r, c in testCases:
             print('nums:')
-            print('\n'.join([str(row) for row in nums]))
+            print('\n'.join([str(row) ___ row in nums]))
             print('r: %s' % r)
             print('c: %s' % c)
             result = self.matrixReshape(nums, r, c)
             print('result:')
-            print('\n'.join([str(row) for row in result]))
+            print('\n'.join([str(row) ___ row in result]))
             print('-='*30)
 
 __ __name__ __ '__main__':

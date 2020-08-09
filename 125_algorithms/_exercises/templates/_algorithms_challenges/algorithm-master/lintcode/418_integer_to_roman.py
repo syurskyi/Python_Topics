@@ -26,7 +26,7 @@ class Solution:
 
         ans = []
 
-        for symb, amount in symbs:
+        ___ symb, amount in symbs:
             __ not num:
                 break
 

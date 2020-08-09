@@ -7,7 +7,7 @@ class Solution(object
     __ not nums:
       r_ 0
     up = down = 1
-    for i in range(1, le.(nums)):
+    ___ i in range(1, le.(nums)):
       __ nums[i] > nums[i - 1]:
         up = down + 1
       ____ nums[i] < nums[i - 1]:

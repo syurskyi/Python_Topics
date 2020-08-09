@@ -11,7 +11,7 @@ class Solution(object
       height = le.(maze)
       width = le.(maze[0])
       directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-      for di, dj in directions:
+      ___ di, dj in directions:
         dist = 0
         i, j = curr
         w___ 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
@@ -30,7 +30,7 @@ class Solution(object
       visited |= {curr}
       __ curr __ hole:
         r_ dist
-      for pos, incDist in next(curr, maze
+      ___ pos, incDist in next(curr, maze
         heapq.heappush(heap, (dist + incDist, pos))
 
     r_ -1

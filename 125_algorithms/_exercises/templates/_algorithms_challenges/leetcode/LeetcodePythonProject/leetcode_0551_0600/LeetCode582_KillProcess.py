@@ -12,7 +12,7 @@ class Solution(object
         :rtype: List[int]
         """
         hashmap = {}
-        for p, pp in zip(pid, ppid
+        ___ p, pp in zip(pid, ppid
             hashset = hashmap.get(pp, set())
             hashset.add(p)
             hashmap[pp] = hashset
@@ -23,7 +23,7 @@ class Solution(object
         w___ queue:
             node = queue.pop(0)
             result.add(node)
-            for node0 in hashmap.get(node, []
+            ___ node0 in hashmap.get(node, []
                 __ node0 not in result:
                     queue.append(node0)
         r_ list(result)
@@ -36,7 +36,7 @@ class Solution(object
                 5,
             ],
         ]
-        for pid, ppid, kill in testCases:
+        ___ pid, ppid, kill in testCases:
             print('pid: %s' % pid)
             print('ppid: %s' % ppid)
             print('kill: %s' % kill)

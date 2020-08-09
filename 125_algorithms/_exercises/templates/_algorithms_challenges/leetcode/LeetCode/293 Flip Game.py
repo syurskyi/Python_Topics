@@ -12,7 +12,7 @@ class Solution(object
         :rtype: List[str]
         """
         ret = []
-        for i in xrange(le.(s)-1
+        ___ i in xrange(le.(s)-1
             __ s[i:i+2] __ "++":
                 ret.append(s[:i]+"--"+s[i+2:])
 

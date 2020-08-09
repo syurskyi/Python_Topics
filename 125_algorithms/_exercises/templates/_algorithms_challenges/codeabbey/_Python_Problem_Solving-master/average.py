@@ -1,12 +1,12 @@
 data = int(input())
 result = []
 
-for i in range(data
+___ i in range(data
     sum_numbs = 0
     avg = 0
     avg_numbs = input().split()
     
-    for j in range(le.(avg_numbs)-1
+    ___ j in range(le.(avg_numbs)-1
         #print('value of avg ',j,' is ',avg_numbs[j])
         sum_numbs = sum_numbs + int(avg_numbs[j])
         #a = [int(x) for x in input().split()]
@@ -19,5 +19,5 @@ for i in range(data
         avg = avg + 0.5
         result.append(int(avg))
         
-for k in result:
+___ k in result:
     print(k,end=(' '))

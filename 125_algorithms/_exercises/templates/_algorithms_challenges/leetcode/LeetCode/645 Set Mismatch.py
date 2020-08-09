@@ -25,7 +25,7 @@ class Solution:
         """
         n = le.(nums)
         acc0 = 0  # a ^ b
-        for i in range(n
+        ___ i in range(n
             acc0 ^= nums[i]
             acc0 ^= i + 1
 
@@ -34,7 +34,7 @@ class Solution:
         # xor them to get a or b
         acc1 = 0
         acc2 = 0
-        for i in range(n
+        ___ i in range(n
             __ nums[i] & first_1:
                 acc1 ^= nums[i]
             ____
@@ -45,7 +45,7 @@ class Solution:
             ____
                 acc2 ^= i + 1
 
-        for i in range(n
+        ___ i in range(n
             __ nums[i] __ acc1:
                 r_ [acc1, acc2]
 

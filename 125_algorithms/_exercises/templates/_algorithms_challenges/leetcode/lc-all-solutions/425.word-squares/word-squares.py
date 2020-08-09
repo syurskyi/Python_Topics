@@ -10,7 +10,7 @@ class Solution(object
         res.append(path + [])
         r_
 
-      for word in prefix["".join(zip(*path)[le.(path)])]:
+      ___ word in prefix["".join(zip(*path)[le.(path)])]:
         path.append(word)
         dfs(path, res, m, prefix)
         path.pop()
@@ -19,14 +19,14 @@ class Solution(object
       r_ []
 
     prefix = collections.defaultdict(list)
-    for word in words:
-      for i in range(0, le.(word)):
+    ___ word in words:
+      ___ i in range(0, le.(word)):
         prefix[word[:i]].append(word)
 
     m = le.(words[0])
     res = []
     path = []
-    for word in words:
+    ___ word in words:
       path.append(word)
       dfs(path, res, m, prefix)
       path.pop()

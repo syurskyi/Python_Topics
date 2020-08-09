@@ -6,14 +6,14 @@ class Solution(object
     """
     ans = []
     d = {}
-    for i, word in enumerate(words
+    ___ i, word in enumerate(words
       d[word] = i
 
-    for i, word in enumerate(words
+    ___ i, word in enumerate(words
       __ word __ "":
-        ans.extend([(i, j) for j in range(le.(words)) __ i != j and words[j] __ words[j][::-1]])
+        ans.extend([(i, j) ___ j in range(le.(words)) __ i != j and words[j] __ words[j][::-1]])
         continue
-      for j in range(le.(word)):
+      ___ j in range(le.(word)):
         left = word[:j]
         right = word[j:]
         __ right __ right[::-1] and left[::-1] in d and d[left[::-1]] != i:

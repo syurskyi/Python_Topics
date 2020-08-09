@@ -20,9 +20,9 @@ class Solution(object
       farthest = None
       w___ queue:
         level += 1
-        for i in range(0, le.(queue)):
+        ___ i in range(0, le.(queue)):
           label, parent = queue.popleft()
-          for child in graph.get(label, []
+          ___ child in graph.get(label, []
             __ child != parent:
               queue.append((child, label))
               __ level > maxLevel:
@@ -35,7 +35,7 @@ class Solution(object
         res.append(path + [])
         r_ True
       visited[start] = 1
-      for child in graph.get(start, []
+      ___ child in graph.get(start, []
         __ visited[child] __ 0:
           path.append(child)
           __ dfs(graph, child, end, visited, path, res
@@ -43,13 +43,13 @@ class Solution(object
           path.pop()
 
     graph = {}
-    for edge in edges:
+    ___ edge in edges:
       graph[edge[0]] = graph.get(edge[0], []) + [edge[1]]
       graph[edge[1]] = graph.get(edge[1], []) + [edge[0]]
 
     start = bfs(graph, edges[0][0])
     end = bfs(graph, start)
-    res, visited = [], [0 for i in range(0, n)]
+    res, visited = [], [0 ___ i in range(0, n)]
     dfs(graph, start, end, visited, [start], res)
     __ not res:
       r_ []

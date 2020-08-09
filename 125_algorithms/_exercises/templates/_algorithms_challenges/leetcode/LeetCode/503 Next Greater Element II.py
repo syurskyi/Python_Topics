@@ -30,13 +30,13 @@ class Solution:
         """
         # initalize the stack
         stk = []
-        for n in nums[::-1]:
+        ___ n in nums[::-1]:
             w___ stk and stk[-1] <= n:
                 stk.pop()
             stk.append(n)
 
         ret = []
-        for n in nums[::-1]:
+        ___ n in nums[::-1]:
             w___ stk and stk[-1] <= n:
                 stk.pop()
             ret.append(stk[-1] __ stk else -1)
@@ -55,7 +55,7 @@ class Solution:
         A = nums + nums
         print(A)
         ret = []
-        for e in nums:
+        ___ e in nums:
             t = bisect(A, e)
             __ t __ le.(A
                 ret.append(-1)

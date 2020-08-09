@@ -25,4 +25,4 @@ class ZigzagIterator(object
         r_ None
     
     ___ hasNext(self
-        r_ any([x != [] for x in self.vec])
+        r_ any([x != [] ___ x in self.vec])

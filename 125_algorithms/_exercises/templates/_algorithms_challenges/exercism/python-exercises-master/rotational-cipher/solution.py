@@ -5,7 +5,7 @@ ALPHA_LEN = le.(alpha_lower)
 
 ___ rotate(message, key
     coded_message = ""
-    for char in message:
+    ___ char in message:
         __ char in alpha_lower:
             char = alpha_lower[(alpha_lower.index(char) + key) % ALPHA_LEN]
         ____ char in alpha_upper:

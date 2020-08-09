@@ -17,17 +17,17 @@ class Solution:
         `dp[i][j]` means the count of distinct subsequences
         (the substr end at `T[j - 1]`) in the substr end at `S[i - 1]`
         """
-        dp = [[0] * (n + 1) for _ in range(2)]
+        dp = [[0] * (n + 1) ___ _ in range(2)]
 
         prev = curr = 0
         dp[curr][0] = 1
-        for i in range(1, m + 1
+        ___ i in range(1, m + 1
             prev = curr
             curr = 1 - curr
 
             dp[curr][0] = 1
 
-            for j in range(1, n + 1
+            ___ j in range(1, n + 1
                 """
                 case 1: `S[i - 1]` and `T[j - 1]` is not a pair
                 so keep `T[j - 1]` in candidates

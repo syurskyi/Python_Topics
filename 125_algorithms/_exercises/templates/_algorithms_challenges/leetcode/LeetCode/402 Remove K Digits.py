@@ -34,13 +34,13 @@ class Solution(object
         :rtype: str
         """
         stk = []  # result after removal
-        for char in num:
+        ___ char in num:
             w___ k and stk and stk[-1] > char:
                 stk.pop()
                 k -= 1
 
             stk.append(char)
 
-        for _ in xrange(k stk.pop()
+        ___ _ in xrange(k stk.pop()
 
         r_ ''.join(stk).lstrip('0') or '0'

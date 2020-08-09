@@ -18,10 +18,10 @@ class Solution(object
             r_ [[]]
         ____
             res = []
-            for i, e in enumerate(nums
+            ___ i, e in enumerate(nums
                 rest = nums[:i] + nums[i + 1:]
                 rest_perms = self.permute(rest)
-                for perm in rest_perms:
+                ___ perm in rest_perms:
                     perm.append(e)
                 res += rest_perms
             r_ res

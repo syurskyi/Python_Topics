@@ -9,7 +9,7 @@ class Solution:
         hashPat = {}
         hashStr = {}
 
-        for i in range(0, len2
+        ___ i __ ra..(0, len2
             __(hashPat.get(t[i]) is None
                 hashPat[t[i]] = 0
             hashPat[t[i]] += 1
@@ -19,7 +19,7 @@ class Solution:
         startIndex = -1
         minLen = float("inf")
 
-        for right in range(0, len1
+        ___ right __ ra..(0, len1
 
             __(hashStr.get(s[right]) is None
                 hashStr[s[right]] = 0

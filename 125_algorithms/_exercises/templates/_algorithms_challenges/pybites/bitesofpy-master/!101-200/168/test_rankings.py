@@ -17,8 +17,8 @@ more_names = [
     ("doug", 469),
     ("noah", 470),
 ]
-FIRST_NINJAS = [Ninja(*ninja) for ninja in zip(names, bites)]
-SECOND_NINJAS = [Ninja(*ninja) for ninja in more_names]
+FIRST_NINJAS = [Ninja(*ninja) ___ ninja in zip(names, bites)]
+SECOND_NINJAS = [Ninja(*ninja) ___ ninja in more_names]
 
 
 ___ _create_ranks(ninjas=None
@@ -26,7 +26,7 @@ ___ _create_ranks(ninjas=None
     __ ninjas is None:
         r_ ranking
 
-    for ninja in ninjas:
+    ___ ninja in ninjas:
         ranking.add(ninja)
     r_ ranking
 
@@ -44,7 +44,7 @@ ___ second_ninjas(
 @pytest.fixture(scope="module")
 ___ ninja_ranks(
     ranking = Rankings()
-    for ninja in FIRST_NINJAS:
+    ___ ninja in FIRST_NINJAS:
         ranking.add(ninja)
     r_ ranking
 
@@ -129,7 +129,7 @@ ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks
     assert actual __ expected
 
     # now add the ninjas of first_ninja_ranks
-    for ninja in SECOND_NINJAS:
+    ___ ninja in SECOND_NINJAS:
         ninja_ranks.add(ninja)
 
     # check lowest again, it should have changed

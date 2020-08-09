@@ -40,10 +40,10 @@ TEMPLATE = '''<tr>
 ___ generate_mail_msg(items
     output = []
 
-    for kind in items:
+    ___ kind in items:
         output.append('<h2>{}</h2>'.format(kind.upper()))
 
-        for listing, entries in items[kind].items(
+        ___ listing, entries in items[kind].items(
             listing_header = listing.replace('_', ' ').title()
             output.append('<h3>{}</h3>'.format(listing_header))
 
@@ -52,7 +52,7 @@ ___ generate_mail_msg(items
                 continue
 
             output.append('<table>')
-            for entry in sorted(entries,
+            ___ entry in sorted(entries,
                                 key=lambda x: datetime.strptime(
                                               x.release_date, '%Y-%m-%d'),
                                 reverse=True
@@ -60,7 +60,7 @@ ___ generate_mail_msg(items
                 img = BASE_IMG_URL.format(entry.poster)
                 kind_for_url = kind.replace('movies', 'movie')
                 url = BASE_MOVIE_URL.format(kind_for_url, entry.id)
-                genres = ', '.join([GENRES.get(gen) for gen in entry.genres
+                genres = ', '.join([GENRES.get(gen) ___ gen in entry.genres
                                     __ GENRES.get(gen)])
 
                 output.append(TEMPLATE.format(link=url,

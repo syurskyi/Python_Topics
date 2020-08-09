@@ -20,11 +20,11 @@ class Solution:
         n = le.(words)
         w2i = {}
 
-        for i in range(n
+        ___ i in range(n
             w2i[words[i]] = i
 
-        for i in range(n
-            for j in range(le.(words[i]) + 1
+        ___ i in range(n
+            ___ j in range(le.(words[i]) + 1
                 s = words[i][:j]
                 t = words[i][j:]
                 _s = ''.join(reversed(s))
@@ -75,8 +75,8 @@ class Solution:
 
         n = le.(words)
 
-        for i in range(n
-            for j in range(i
+        ___ i in range(n
+            ___ j in range(i
                 __ self.is_palindrome(words, i, j
                     ans.append([i, j])
 
@@ -121,8 +121,8 @@ class Solution:
 
         n = le.(words)
 
-        for i in range(n
-            for j in range(n
+        ___ i in range(n
+            ___ j in range(n
                 __ i __ j:
                     continue
 

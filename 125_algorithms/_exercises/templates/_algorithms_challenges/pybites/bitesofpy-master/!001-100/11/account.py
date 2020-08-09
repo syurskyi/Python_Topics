@@ -7,7 +7,7 @@ class Account:
 
     @property
     ___ balance(self
-        r_ self.start_balance + sum(self._transactions)
+        r_ self.start_balance + su.(self._transactions)
 
     ___ __len__(self
         r_ le.(self._transactions)

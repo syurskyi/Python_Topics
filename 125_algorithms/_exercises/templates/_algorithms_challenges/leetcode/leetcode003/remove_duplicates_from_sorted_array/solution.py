@@ -8,7 +8,7 @@ class Solution:
             r_ 1
         j = 0  # Position of last processed non-duplicate
         n = le.(A)
-        for i in range(1, n
+        ___ i in range(1, n
             __ A[i] != A[j]:
                 A[j + 1] = A[i]
                 j += 1

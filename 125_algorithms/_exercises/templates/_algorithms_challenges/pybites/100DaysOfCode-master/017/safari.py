@@ -24,7 +24,7 @@ ___ get_tweets(greps=['Python']
     doc = get_rss_feed()
 
     # Python cookbook 3rd ed
-    for item in doc.iterfind('channel/item'
+    ___ item in doc.iterfind('channel/item'
         title = item.findtext('title')
         date = item.findtext('pubDate')[:-6]
         dt = datetime.strptime(date, '%a, %d %b %Y %H:%M:%S')
@@ -36,7 +36,7 @@ ___ get_tweets(greps=['Python']
 
         __ not any(g.lower() in title.lower()
                    or g.lower() in category.lower()
-                   for g in greps
+                   ___ g in greps
             continue
 
         title = ' '.join(gen_hashtags(title, greps))
@@ -55,8 +55,8 @@ ___ get_rss_feed(
 
 
 ___ gen_hashtags(title, greps
-    for word in title.split(
-        __ any(g.lower() __ word.lower() for g in greps
+    ___ word in title.split(
+        __ any(g.lower() __ word.lower() ___ g in greps
             yield '#' + word
         ____
             yield word
@@ -64,7 +64,7 @@ ___ gen_hashtags(title, greps
 
 __ __name__ __ '__main__':
 
-    for tweet in get_tweets(
+    ___ tweet in get_tweets(
         __ LOCAL:
             print(tweet)
         ____

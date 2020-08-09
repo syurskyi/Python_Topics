@@ -9,25 +9,25 @@ class Solution(object
         :type board: List[List[str]]
         :rtype: bool
         """
-        for i in range(9
+        ___ i in range(9
             hashset = set()
-            for j in range(9
+            ___ j in range(9
                 __ board[i][j] in hashset:
                     r_ False
                 __ board[i][j] != '.':
                     hashset.add(board[i][j])
-        for j in range(9
+        ___ j in range(9
             hashset = set()
-            for i in range(9
+            ___ i in range(9
                 __ board[i][j] in hashset:
                     r_ False
                 __ board[i][j] != '.':
                     hashset.add(board[i][j])
-        for i0 in range(3
-            for j0 in range(3
+        ___ i0 in range(3
+            ___ j0 in range(3
                 hashset = set()
-                for i in range(i0*3, i0*3+3
-                    for j in range(j0*3, j0*3+3
+                ___ i in range(i0*3, i0*3+3
+                    ___ j in range(j0*3, j0*3+3
                         __ board[i][j] in hashset:
                             r_ False
                         __ board[i][j] != '.':

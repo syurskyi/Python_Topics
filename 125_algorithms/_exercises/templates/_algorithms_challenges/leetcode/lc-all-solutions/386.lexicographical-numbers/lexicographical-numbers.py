@@ -14,7 +14,7 @@ class Solution(object
       r_
     __ pre * 10 > n:
       r_
-    for i in range(0, 10
+    ___ i in range(0, 10
       cur = pre * 10 + i
       __ cur __ 0:
         continue

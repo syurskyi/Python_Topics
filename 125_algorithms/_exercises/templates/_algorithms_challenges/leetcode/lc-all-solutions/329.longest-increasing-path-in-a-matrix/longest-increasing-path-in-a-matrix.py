@@ -13,7 +13,7 @@ class Solution(object
         r_ visited[(i, j)]
 
       ret = 0
-      for di, dj in directions:
+      ___ di, dj in directions:
         p, q = i + di, j + dj
         __ p < 0 or q < 0 or p >= le.(matrix) or q >= le.(matrix[0]
           continue
@@ -29,8 +29,8 @@ class Solution(object
     visited = {}
     cache = set()
     ans = 0
-    for i in range(0, le.(matrix)):
-      for j in range(0, le.(matrix[0])):
+    ___ i in range(0, le.(matrix)):
+      ___ j in range(0, le.(matrix[0])):
         cache.add((i, j))
         ans = max(ans, dfs(matrix, i, j, visited, cache))
         cache.discard((i, j))

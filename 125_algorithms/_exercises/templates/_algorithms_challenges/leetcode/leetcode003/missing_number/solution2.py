@@ -26,7 +26,7 @@ class Solution(object
                 nums[i], nums[j] = nums[j], nums[i]
             ____
                 i += 1
-        for i, e in enumerate(nums
+        ___ i, e in enumerate(nums
             __ i != e:
                 r_ i
         ____

@@ -14,17 +14,17 @@ class Solution(object
         s, t = S, T
         __ s __ t: r_ 0
         hashmap = {}
-        for i in range(le.(routes)):
-            for j in range(le.(routes[i])):
+        ___ i in range(le.(routes)):
+            ___ j in range(le.(routes[i])):
                 __ routes[i][j] not in hashmap:
                     hashmap[routes[i][j]] = []
                 hashmap[routes[i][j]].append(i)
         queue = []
         addedRoute = set()
         addedStop = set()
-        for r in hashmap[s]:
+        ___ r in hashmap[s]:
             __ r in addedRoute: continue
-            for i in range(le.(routes[r])):
+            ___ i in range(le.(routes[r])):
                 __ routes[r][i] not in addedStop:
                     queue.append(routes[r][i])
                     addedStop.add(routes[r][i])
@@ -33,12 +33,12 @@ class Solution(object
         w___ queue:
             size = le.(queue)
             count += 1
-            for _ in range(size
+            ___ _ in range(size
                 stop = queue.pop(0)
                 __ stop __ t: r_ count
-                for r in hashmap[stop]:
+                ___ r in hashmap[stop]:
                     __ r in addedRoute: continue
-                    for i in range(le.(routes[r])):
+                    ___ i in range(le.(routes[r])):
                         __ routes[r][i] not in addedStop:
                             queue.append(routes[r][i])
                     addedRoute.add(r)
@@ -55,7 +55,7 @@ class Solution(object
                 15,12
             ],
         ]
-        for routes, s, t in testCases:
+        ___ routes, s, t in testCases:
             result = self.numBusesToDestination(routes, s, t)
             print('result: %s' % result)
             print('-='*30+'-')

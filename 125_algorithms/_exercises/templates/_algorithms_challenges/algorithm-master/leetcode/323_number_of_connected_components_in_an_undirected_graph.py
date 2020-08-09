@@ -27,11 +27,11 @@ class Solution:
         __ not n or not edges:
             r_ 0
 
-        nodes = [i for i in range(n)]
+        nodes = [i ___ i in range(n)]
 
         ans = n
 
-        for a, b in edges:
+        ___ a, b in edges:
             __ self.union(nodes, a, b
                 ans -= 1
 
@@ -75,16 +75,16 @@ class Solution2:
 
         adj = {}
 
-        for i in range(n
+        ___ i in range(n
             adj[i] = set()
 
-        for a, b in edges:
+        ___ a, b in edges:
             adj[a].add(b)
             adj[b].add(a)
 
         visited = set()
 
-        for i in range(n
+        ___ i in range(n
             __ i in visited:
                 continue
 
@@ -99,7 +99,7 @@ class Solution2:
 
         visited.add(a)
 
-        for b in adj[a]:
+        ___ b in adj[a]:
             __ b in visited:
                 continue
 

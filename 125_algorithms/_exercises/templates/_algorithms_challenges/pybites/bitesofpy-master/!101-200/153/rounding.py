@@ -3,4 +3,4 @@ ___ round_up_or_down(transactions, up=True
        If up=True (default) round up, else round down.
        Return a new list of rounded values
     """
-    r_ [round(x + (0.5 __ up else -0.5)) for x in transactions]
+    r_ [round(x + (0.5 __ up else -0.5)) ___ x in transactions]

@@ -26,10 +26,10 @@ ___ get_log(
 
 ___ get_day_progress(html
     lines = [line.strip()
-             for line in html
+             ___ line in html
              __ line.strip()]
 
-    for line in lines:
+    ___ line in lines:
         day_entry = line.strip('|').split('|')[0].strip()
         __ day_entry __ CURRENT_CHALLENGE_DAY:
             r_ LOG_ENTRY.search(line).groupdict()

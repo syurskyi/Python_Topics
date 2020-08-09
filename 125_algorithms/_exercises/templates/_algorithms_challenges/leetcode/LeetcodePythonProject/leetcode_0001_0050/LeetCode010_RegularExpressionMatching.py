@@ -11,13 +11,13 @@ class Solution(object
         :rtype: bool
         """
         m, n = le.(s), le.(p)
-        dp = [[False]*(n+1) for _ in range(m+1)]
+        dp = [[False]*(n+1) ___ _ in range(m+1)]
         dp[0][0] = True
-        for j in range(n
+        ___ j in range(n
             __ p[j] __ '*' and dp[0][j-1]:
                 dp[0][j+1] = True
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ s[i] __ p[j] or p[j] __ '.':
                     dp[i+1][j+1] = dp[i][j]
                 ____ p[j] __ '*':
@@ -35,7 +35,7 @@ class Solution(object
             ['aab', 'c*a*b'],
             ['mississippi', 'mis*is*p*.'],
         ]
-        for s, p in testCases:
+        ___ s, p in testCases:
             print('s: %s' % s)
             print('p: %s' % p)
             result = self.isMatch(s, p)

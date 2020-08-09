@@ -36,7 +36,7 @@ class Solution:
         j = 0
         n = le.(pushed)
         stk = []
-        for i in range(n
+        ___ i in range(n
             stk.append(pushed[i])
             w___ j < n and stk and stk[-1] __ popped[j]:
                 stk.pop()

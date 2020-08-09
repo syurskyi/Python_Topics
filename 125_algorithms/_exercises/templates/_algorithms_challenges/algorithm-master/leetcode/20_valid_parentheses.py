@@ -7,7 +7,7 @@ class Solution:
         stack = []
         pairs = {')': '(', ']': '[', '}': '{'}
 
-        for c in s:
+        ___ c in s:
             __ c in '([{':
                 stack.append(c)
             ____ c not in ')]}':

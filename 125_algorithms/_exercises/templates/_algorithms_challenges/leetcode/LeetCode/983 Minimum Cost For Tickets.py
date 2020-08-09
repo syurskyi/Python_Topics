@@ -60,18 +60,18 @@ class Solution:
 
         O(365)
         """
-        F = [float("inf") for _ in range(366 + 30)]
-        for i in range(366, 366 + 30
+        F = [float("inf") ___ _ in range(366 + 30)]
+        ___ i in range(366, 366 + 30
             F[i] = 0
 
         days_set = set(days)
-        for i in range(365, 0, -1
+        ___ i in range(365, 0, -1
             __ i not in days_set:
                 F[i] = F[i+1]
             ____
                 F[i] = min(
                     c + F[i+d]
-                    for d, c in zip([1, 7, 30], costs)
+                    ___ d, c in zip([1, 7, 30], costs)
                 )
 
         r_ F[1]
@@ -85,10 +85,10 @@ class Solution:
         Need buffer day
         """
         n = le.(days)
-        F = [float("inf") for _ in range(n)]
+        F = [float("inf") ___ _ in range(n)]
         F[-1] = costs[0]
-        for i in range(n-2, -1, -1
-            for j in range(i+1, n
+        ___ i in range(n-2, -1, -1
+            ___ j in range(i+1, n
                 delta = days[j] - days[i]
                 __ delta <= 1:
                     F[i] = min(F[i], costs[0] + F[j])
@@ -110,10 +110,10 @@ class Solution:
         Why does iterate forward fail? Because future min does not depends on the
         current min. Current higher cost may contribtue to future lower cost.
         """
-        F = [float("inf") for _ in range(365 + 1)]
+        F = [float("inf") ___ _ in range(365 + 1)]
         F[0] = 0
         days_set = set(days)
-        for i in range(1, 366
+        ___ i in range(1, 366
             __ i not in days_set:
                 F[i] = F[i-1]
             ____

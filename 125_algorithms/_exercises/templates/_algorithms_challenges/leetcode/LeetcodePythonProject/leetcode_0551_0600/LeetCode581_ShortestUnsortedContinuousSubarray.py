@@ -24,7 +24,7 @@ class Solution(object
             [2, 6, 4, 8, 10, 9, 15],
             [1, 2, 3, 5],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.findUnsortedSubarray(nums)
             print('result: %s' % result)

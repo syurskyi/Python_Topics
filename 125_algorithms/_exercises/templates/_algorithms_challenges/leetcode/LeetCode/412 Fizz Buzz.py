@@ -37,7 +37,7 @@ class Solution(object
         :rtype: List[str]
         """
         ret = []
-        for i in xrange(1, n+1
+        ___ i in xrange(1, n+1
             cur = ""
             __ i % 3 __ 0:
                 cur += "Fizz"

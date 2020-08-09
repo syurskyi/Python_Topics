@@ -39,7 +39,7 @@ class Solution:
         mapping
         """
         ret = []
-        for w in words:
+        ___ w in words:
             __ self.match(w, pattern
                 ret.append(w)
         r_ ret
@@ -50,7 +50,7 @@ class Solution:
 
         m = {}
         m_inv = {}  # bijection
-        for i in range(le.(word)):
+        ___ i in range(le.(word)):
             __ word[i] not in m and pattern[i] not in m_inv:
                 m[word[i]] = pattern[i]
                 m_inv[pattern[i]] = word[i]

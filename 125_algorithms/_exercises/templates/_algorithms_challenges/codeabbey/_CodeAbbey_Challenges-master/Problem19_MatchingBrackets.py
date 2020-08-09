@@ -7,10 +7,10 @@ infile.close()
 leftB = "([{<"
 rightB = ")]}>"
 
-for line in data:
+___ line in data:
     flag = True
     bracketlist=[]
-    for char in line:
+    ___ char in line:
         __ char in leftB:
             bracketlist.append(char)
         ____ char in rightB:

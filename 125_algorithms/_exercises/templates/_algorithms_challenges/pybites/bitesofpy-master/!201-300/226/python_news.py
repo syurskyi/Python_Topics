@@ -29,7 +29,7 @@ ___ get_top_titles(url, top=5
     article_list = soup.select('span.title')
 
     articles = []
-    for article in article_list:
+    ___ article in article_list:
         # Nasty hack, knowing the structure of the page:
         stats = article.parent.parent.parent.next_sibling.next_sibling.text
         # Get the number of points and comments, but don't check for plurals… just in case!

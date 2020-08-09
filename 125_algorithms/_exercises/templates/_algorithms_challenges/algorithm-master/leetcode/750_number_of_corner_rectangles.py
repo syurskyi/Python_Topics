@@ -27,12 +27,12 @@ class Solution:
 
         n = 0
         count = {}
-        for R in G:
-            for end in range(1, le.(R)):
+        ___ R in G:
+            ___ end in range(1, le.(R)):
                 __ R[end] __ 0:
                     continue
 
-                for start in range(end
+                ___ start in range(end
                     __ R[start] __ 0:
                         continue
 

@@ -12,7 +12,7 @@ class Solution(object
     i = 1
     w___ i < n:
       mask <<= 1
-      for j in range(0, 2 ** i
+      ___ j in range(0, 2 ** i
         root = (2 ** i)
         ans[root + j] = ans[root - j - 1] | mask
       i += 1

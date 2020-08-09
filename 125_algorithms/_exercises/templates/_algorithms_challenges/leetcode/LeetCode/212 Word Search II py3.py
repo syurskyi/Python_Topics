@@ -35,10 +35,10 @@ class Solution:
     ___ findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         root = self.construct(words)
         m, n = le.(board), le.(board[0])
-        visited = [[False for _ in range(n)] for _ in range(m)]
+        visited = [[False ___ _ in range(n)] ___ _ in range(m)]
         ret = set()
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 self.dfs(board, visited, i, j, root, ret)
 
         r_ list(ret)
@@ -52,7 +52,7 @@ class Solution:
             __ nxt.word is not None:
                 ret.add(nxt.word)
 
-            for di, dj in dirs:
+            ___ di, dj in dirs:
                 I = i + di
                 J = j + dj
                 __ 0 <= I < m and 0 <= J < n and not visited[I][J]:
@@ -62,9 +62,9 @@ class Solution:
 
     ___ construct(self, words
         root = TrieNode()
-        for w in words:
+        ___ w in words:
             cur = root
-            for c in w:
+            ___ c in w:
                 cur = cur.children[c]
             cur.word = w
 

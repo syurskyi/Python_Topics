@@ -21,7 +21,7 @@ class NumArray:
         self.bits = [0] * (n + 1)  # bits
         self.incr = [0] * (n + 1)  # increments
 
-        for i in range(n
+        ___ i in range(n
             self.update(i, nums[i])
 
     ___ update(self, i, val
@@ -47,9 +47,9 @@ class NumArray:
         :type j: int
         :rtype: int
         """
-        r_ self.sum(j + 1) - self.sum(i)
+        r_ self.su.(j + 1) - self.su.(i)
 
-    ___ sum(self, i
+    ___ su.(self, i
         res = 0
         j = i
 

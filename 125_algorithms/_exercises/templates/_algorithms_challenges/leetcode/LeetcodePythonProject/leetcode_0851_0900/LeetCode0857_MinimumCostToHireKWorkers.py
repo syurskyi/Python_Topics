@@ -13,11 +13,11 @@ class Solution(object
         """
         ______ heapq
         k = K
-        workers = sorted([float(w)/q, q] for w, q in zip(wage, quality))
+        workers = sorted([float(w)/q, q] ___ w, q in zip(wage, quality))
         res = float('inf')
         qsum = 0
         heap = []
-        for r, q, in workers:
+        ___ r, q, in workers:
             heapq.heappush(heap, -q)
             qsum += q
             __ le.(heap) > k:
@@ -30,7 +30,7 @@ class Solution(object
         testCases = [
             
         ]
-        for quality, wage, k in testCases:
+        ___ quality, wage, k in testCases:
             res = self.mincostToHireWorkers(quality, wage, k)
             print('res: %s' % res)
             print('-='*30 + '-')

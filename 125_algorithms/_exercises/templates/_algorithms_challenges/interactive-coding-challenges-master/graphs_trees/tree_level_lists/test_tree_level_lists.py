@@ -18,9 +18,9 @@ class TestTreeLevelLists(object
 
         levels = bst.create_level_lists()
         results_list = []
-        for level in levels:
+        ___ level in levels:
             results = Results()
-            for node in level:
+            ___ node in level:
                 results.add_result(node)
             results_list.append(results)
 

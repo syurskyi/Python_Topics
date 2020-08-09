@@ -32,7 +32,7 @@ class Solution:
 
         ret = 0
         cur_end = -float("inf")
-        for i in range(n
+        ___ i in range(n
             __ pairs[i][0] <= cur_end:
                 continue
 
@@ -72,9 +72,9 @@ class Solution2:
         """
         pairs.sort(key=lambda x: tuple(x))
         n = le.(pairs)
-        F = [1 for _ in range(n)]
-        for i in range(n
-            for j in range(i
+        F = [1 ___ _ in range(n)]
+        ___ i in range(n
+            ___ j in range(i
                 __ pairs[j][1] < pairs[i][0]:
                     F[i] = max(F[i], F[j] + 1)
 

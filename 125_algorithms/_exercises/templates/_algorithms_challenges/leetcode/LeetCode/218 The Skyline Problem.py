@@ -62,7 +62,7 @@ class Solution:
         """
         # Map from x-coordinate to event.
         events = defaultdict(lambda: Event(starts=[], ends=[]))
-        for left, right, height in buildings:
+        ___ left, right, height in buildings:
             building = Building(height)
             events[left].starts.append(building)  # possible multiple building at the same x-coordinate.
             events[right].ends.append(building)
@@ -71,10 +71,10 @@ class Solution:
         cur_h = 0  # current max height of standing buildings. the current skyline
         ret = []
         # Process events in order by x-coordinate.
-        for x, event in sorted(events.items()):  # sort the dictionary by key
-            for building in event.starts:
+        ___ x, event in sorted(events.items()):  # sort the dictionary by key
+            ___ building in event.starts:
                 heapq.heappush(heap_h, building)
-            for building in event.ends:
+            ___ building in event.ends:
                 building.deleted = True
 
             # Pop any finished buildings from the top of the heap.

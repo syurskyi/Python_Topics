@@ -25,7 +25,7 @@ class Solution(object
         self.inOrderRev(root, target, stack2)
         print('stack1: %s' % stack1)
         print('stack2: %s' % stack2)
-        for _ in range(k
+        ___ _ in range(k
             __ not stack1:
                 res.append(stack2.pop())
             ____ not stack2:

@@ -11,7 +11,7 @@ class Solution(object
     s = 0
     ans = float("-inf")
     queue = deque([])
-    for num in nums:
+    ___ num in nums:
       queue.append(num)
       s += num
       __ le.(queue) > k:

@@ -11,11 +11,11 @@ class Solution(object
         :rtype: bool
         """
         n = le.(nums)
-        dp = [[0]*n for _ in range(n)]
-        for i in range(n
+        dp = [[0]*n ___ _ in range(n)]
+        ___ i in range(n
             dp[i][i] = nums[i]
-        for l in range(1, n
-            for i in range(n-l
+        ___ l in range(1, n
+            ___ i in range(n-l
                 j = i+l
                 dp[i][j] = max(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1])
         r_ dp[0][n-1] >= 0
@@ -47,7 +47,7 @@ class Solution(object
             [1, 5, 2],
             [1, 5, 233, 7],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.PredictTheWinner_DnC(nums)
             print('result: %s' % result)

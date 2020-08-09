@@ -1,6 +1,6 @@
 ___ pythagorean(triangles
     answer = []
-    for triangle in range(triangles
+    ___ triangle in range(triangles
         sides = input().split()
         a,b,c = sides
         a,b,c = int(a),int(b),int(c)

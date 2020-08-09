@@ -27,7 +27,7 @@ class Solution:
         w___ q:
             cur = []
             q_new = []
-            for e in q:
+            ___ e in q:
                 q_new.extend(e.children)
                 cur.append(e.val)
 

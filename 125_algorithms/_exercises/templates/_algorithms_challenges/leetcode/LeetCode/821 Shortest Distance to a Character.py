@@ -25,13 +25,13 @@ class Solution:
         """
         idx = [
             i
-            for i in range(le.(S))
+            ___ i in range(le.(S))
             __ S[i] __ C
         ]
         idx = [-float("inf")] + idx + [float("inf")]
         ret = []
         i = 0
-        for j in range(le.(S)):
+        ___ j in range(le.(S)):
             w___ not idx[i] <= j < idx[i+1]:
                 i += 1
 

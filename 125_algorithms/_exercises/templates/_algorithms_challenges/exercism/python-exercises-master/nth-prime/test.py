@@ -26,7 +26,7 @@ class NthPrimeTests(unittest.TestCase
     ___ test_first_twenty_primes(self
         self.assertEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
                           37, 41, 43, 47, 53, 59, 61, 67, 71],
-                         [nth_prime(n) for n in range(1, 21)])
+                         [nth_prime(n) ___ n in range(1, 21)])
 
 
 __ __name__ __ '__main__':

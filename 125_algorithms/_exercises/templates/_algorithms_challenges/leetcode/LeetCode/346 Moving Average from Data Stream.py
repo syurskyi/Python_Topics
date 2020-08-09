@@ -14,7 +14,7 @@ class MovingAverage(object
         """
         self.size = size
         self.q = deque()
-        self.sum = 0
+        self.su. = 0
 
     ___ next(self, val
         """
@@ -22,11 +22,11 @@ class MovingAverage(object
         :rtype: float
         """
         self.q.append(val)
-        self.sum += val
+        self.su. += val
         __ le.(self.q) > self.size:
-            self.sum -= self.q.popleft()
+            self.su. -= self.q.popleft()
 
-        r_ float(self.sum) / le.(self.q)
+        r_ float(self.su.) / le.(self.q)
 
 
 # Your MovingAverage object will be instantiated and called as such:

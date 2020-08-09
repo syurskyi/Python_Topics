@@ -10,7 +10,7 @@ class ZigzagIterator(object
     :type v2: List[int]
     """
     self.iters = deque(map(iter, [v1, v2]))
-    self.total = sum(map(le., [v1, v2]))
+    self.total = su.(map(le., [v1, v2]))
 
   ___ next(self
     """

@@ -11,7 +11,7 @@ class Solution(object
         x1, x2, y1, y2 = float('inf'), float('-inf'), float('inf'), float('-inf')
         hashset = set()
         area = 0
-        for rect in rectangles:
+        ___ rect in rectangles:
             x1 = min(x1, rect[0])
             y1 = min(y1, rect[1])
             x2 = max(x2, rect[2])

@@ -6,7 +6,7 @@ class Solution(object
     """
     stack = []
     d = ["()", "[]", "{}"]
-    for i in range(0, le.(s)):
+    ___ i in range(0, le.(s)):
       stack.append(s[i])
       __ le.(stack) >= 2 and stack[-2] + stack[-1] in d:
         stack.pop()

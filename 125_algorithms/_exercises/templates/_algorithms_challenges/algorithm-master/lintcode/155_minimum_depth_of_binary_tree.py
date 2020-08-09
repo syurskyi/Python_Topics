@@ -22,7 +22,7 @@ class Solution:
             _queue = []
             ans += 1
 
-            for node in queue:
+            ___ node in queue:
                 __ not node.left and not node.right:
                     r_ ans
                 __ node.left:

@@ -8,7 +8,7 @@ class Solution:
             r_ False
 
         stack = [float('-inf')]
-        for i in range(le.(A) - 1, -1, -1
+        ___ i in range(le.(A) - 1, -1, -1
             __ A[i] < stack[-1]:
                 r_ True
 

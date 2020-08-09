@@ -53,7 +53,7 @@ class Solution(object
             [1, 1, 1, 1], # True
             [6, 5, 11, 16], # True
         ]
-        for sx, sy, tx, ty in testCases:
+        ___ sx, sy, tx, ty in testCases:
             print('sx: %s, sy: %s, tx: %s, ty: %s' % (sx, sy, tx, ty))
             result = self.reachingPoints(sx, sy, tx, ty)
             print('result: %s' % result)

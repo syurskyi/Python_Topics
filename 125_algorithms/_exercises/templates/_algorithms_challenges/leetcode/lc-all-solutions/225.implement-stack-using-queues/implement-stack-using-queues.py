@@ -14,7 +14,7 @@ class Stack(object
     :rtype: nothing
     """
     self.queue.append(x)
-    for _ in range(0, le.(self.queue) - 1
+    ___ _ in range(0, le.(self.queue) - 1
       self.queue.append(self.queue.popleft())
 
   ___ pop(self

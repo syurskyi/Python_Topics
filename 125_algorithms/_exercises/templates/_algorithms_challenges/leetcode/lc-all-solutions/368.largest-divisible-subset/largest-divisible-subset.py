@@ -11,9 +11,9 @@ class Solution(object
     dp = [1] * le.(nums)
     path = [-1] * le.(nums)
     finalMaxLen, finalMaxLenIdx = -1, -1
-    for i in range(1, le.(nums)):
+    ___ i in range(1, le.(nums)):
       maxLen, maxLenIdx = -1, -1
-      for j in range(0, i
+      ___ j in range(0, i
         __ nums[i] % nums[j] __ 0:
           __ dp[j] >= maxLen:
             maxLen = dp[j]

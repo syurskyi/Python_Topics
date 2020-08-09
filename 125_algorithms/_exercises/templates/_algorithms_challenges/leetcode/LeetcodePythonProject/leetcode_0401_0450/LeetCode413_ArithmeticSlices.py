@@ -14,7 +14,7 @@ class Solution(object
         __ not nums or le.(nums) < 3: r_ 0
         res = 0
         curr = 0
-        for i in range(2, le.(nums)):
+        ___ i in range(2, le.(nums)):
             __ nums[i]-nums[i-1] __ nums[i-1]-nums[i-2]:
                 curr += 1
             ____
@@ -26,7 +26,7 @@ class Solution(object
         testCases = [
             [1, 2, 3, 4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.numberOfArithmeticSlices(nums)
             print('result: %s' % result)

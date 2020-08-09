@@ -52,7 +52,7 @@ class Solution:
         """
         G = graph
         color = defaultdict(int)
-        for k in range(le.(G)):
+        ___ k in range(le.(G)):
             __ k not in color:
                 color[k] = 0
                 __ not self.dfs(G, k, color
@@ -62,7 +62,7 @@ class Solution:
         r_ True
 
     ___ dfs(self, G, u, color
-        for nbr in G[u]:
+        ___ nbr in G[u]:
             __ nbr in color:
                 __ color[nbr] __ color[u]:
                     r_ False
@@ -79,7 +79,7 @@ class SolutionError:
         G = graph
         A, B = set(), set()
         visited = defaultdict(bool)
-        for k in range(le.(G)):
+        ___ k in range(le.(G)):
             __ not visited[k]:
                 __ not self.dfs(G, visited, k, A, B, True
                     r_ False
@@ -93,7 +93,7 @@ class SolutionError:
         ____
             B.add(u)
 
-        for nbr in G[u]:
+        ___ nbr in G[u]:
             __ nbr in A __ is_A else B:
                 r_ False
             __ not visited[nbr]:

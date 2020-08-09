@@ -13,7 +13,7 @@ class Solution(object
         result = set()
         resultCodes = set()
         __ not s or le.(s) < 10: r_ []
-        for i in range(0, le.(s)-9
+        ___ i in range(0, le.(s)-9
             subStr = s[i:i+10]
             code = self.encode(subStr)
             __ code in resultCodes:
@@ -24,7 +24,7 @@ class Solution(object
     
     ___ encode(self, s
         sumVal = 0
-        for _, c in enumerate(s
+        ___ _, c in enumerate(s
             __ c __ 'A':
                 sumVal = sumVal*4
             ____ c __ 'C':
@@ -40,7 +40,7 @@ class Solution(object
             'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT',
             'AAAAAAAAAAAA',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.findRepeatedDnaSequences(s)
             print('result: %s' % (result))

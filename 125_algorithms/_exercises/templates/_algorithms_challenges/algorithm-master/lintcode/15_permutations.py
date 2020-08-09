@@ -19,7 +19,7 @@ class Solution:
             ans.append(path[:])
             r_
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             path.append(nums[i])
             self.dfs(nums[:i] + nums[i + 1:], ans, path)
             path.pop()

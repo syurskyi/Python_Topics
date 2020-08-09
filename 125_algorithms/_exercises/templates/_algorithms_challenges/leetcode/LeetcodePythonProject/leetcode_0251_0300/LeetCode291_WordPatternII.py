@@ -17,7 +17,7 @@ class Solution(object
         __ i >= le.(pattern) or j >= le.(s
             r_ False
         c = pattern[i]
-        for k in range(j+1, le.(s)+1
+        ___ k in range(j+1, le.(s)+1
             sub = s[j:k]
             __ c not in hashmap and sub not in hashset:
                 hashmap[c] = sub
@@ -38,7 +38,7 @@ class Solution(object
             ('aabb', 'xyzabcxzyabc'),
             ('d', 'ef'),
         ]
-        for pattern, s in testCases:
+        ___ pattern, s in testCases:
             print('pattern: %s' % (pattern))
             print('s: %s' % (s))
             result = self.wordPatternMatch(pattern, s)

@@ -1,7 +1,7 @@
 ___ to_rna(strand
     result = ""
 
-    for i in strand:
+    ___ i in strand:
         result += pairing_for(i)
 
     r_ result

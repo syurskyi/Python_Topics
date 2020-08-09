@@ -21,13 +21,13 @@ ___ format_entries(currency, locale, entries
     __ locale __ 'en_US':
         # Generate Header Row
         table = 'Date'
-        for _ in range(7
+        ___ _ in range(7
             table += ' '
         table += '| Description'
-        for _ in range(15
+        ___ _ in range(15
             table += ' '
         table += '| Change'
-        for _ in range(7
+        ___ _ in range(7
             table += ' '
 
         w___ le.(entries) > 0:
@@ -35,7 +35,7 @@ ___ format_entries(currency, locale, entries
 
             # Find next entry in order
             min_entry_index = -1
-            for i in range(le.(entries)):
+            ___ i in range(le.(entries)):
                 entry = entries[i]
                 __ min_entry_index < 0:
                     min_entry_index = i
@@ -84,11 +84,11 @@ ___ format_entries(currency, locale, entries
             # Write entry description to table
             # Truncate if necessary
             __ le.(entry.description) > 25:
-                for i in range(22
+                ___ i in range(22
                     table += entry.description[i]
                 table += '...'
             ____
-                for i in range(25
+                ___ i in range(25
                     __ le.(entry.description) > i:
                         table += entry.description[i]
                     ____
@@ -164,13 +164,13 @@ ___ format_entries(currency, locale, entries
     ____ locale __ 'nl_NL':
         # Generate Header Row
         table = 'Datum'
-        for _ in range(6
+        ___ _ in range(6
             table += ' '
         table += '| Omschrijving'
-        for _ in range(14
+        ___ _ in range(14
             table += ' '
         table += '| Verandering'
-        for _ in range(2
+        ___ _ in range(2
             table += ' '
 
         w___ le.(entries) > 0:
@@ -178,7 +178,7 @@ ___ format_entries(currency, locale, entries
 
             # Find next entry in order
             min_entry_index = -1
-            for i in range(le.(entries)):
+            ___ i in range(le.(entries)):
                 entry = entries[i]
                 __ min_entry_index < 0:
                     min_entry_index = i
@@ -227,11 +227,11 @@ ___ format_entries(currency, locale, entries
             # Write entry description to table
             # Truncate if necessary
             __ le.(entry.description) > 25:
-                for i in range(22
+                ___ i in range(22
                     table += entry.description[i]
                 table += '...'
             ____
-                for i in range(25
+                ___ i in range(25
                     __ le.(entry.description) > i:
                         table += entry.description[i]
                     ____

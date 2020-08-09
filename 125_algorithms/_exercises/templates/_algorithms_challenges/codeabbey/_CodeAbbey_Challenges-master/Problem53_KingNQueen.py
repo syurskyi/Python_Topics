@@ -3,22 +3,22 @@ infile.readline()
 data = infile.readlines()
 infile.close()
 
-board = [["-" for i in range(8)]for j in range(8)]
+board = [["-" ___ i in range(8)]___ j in range(8)]
 col = ["a","b","c","d","e","f","g","h"]
 
 ___ display(
     global board
-    for i in range(8+1
+    ___ i in range(8+1
         __ i __ 8:
             print("  a b c d e f g h")
             break
         print("{}".format(8-i),end=" ")
-        for j in range(8
+        ___ j in range(8
             print(board[i][j],end=" ")
         print()
 
 
-for line in data:
+___ line in data:
     ########### ALTERNATIVE ######
 ##    pieces = line.strip()
 ##    if pieces[0]==pieces[3] or pieces[1]==pieces[4] or abs(int(pieces[0], 20)-int(pieces[3], 20))==abs(int(pieces[1], 20)-int(pieces[4], 20)):

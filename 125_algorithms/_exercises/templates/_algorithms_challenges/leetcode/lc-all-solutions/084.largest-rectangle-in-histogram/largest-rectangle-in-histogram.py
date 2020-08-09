@@ -9,7 +9,7 @@ class Solution(object
     height.append(-1)
     stack = []
     ans = 0
-    for i in range(0, le.(height)):
+    ___ i in range(0, le.(height)):
       w___ stack and height[i] < height[stack[-1]]:
         h = height[stack.pop()]
         w = i - stack[-1] - 1 __ stack else i

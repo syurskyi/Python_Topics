@@ -12,14 +12,14 @@ class Solution(object
         """
         __ not s and not p: r_ True
         m, n = le.(s), le.(p)
-        dp = [[False]*(n+1) for _ in range(m+1)]
+        dp = [[False]*(n+1) ___ _ in range(m+1)]
         dp[-1][-1] = True
         j = n-1
         w___ j >= 0 and p[j] __ '*':
             dp[-1][j] = True
             j -= 1
-        for i in range(m-1, -1, -1
-            for j in range(n-1, -1, -1
+        ___ i in range(m-1, -1, -1
+            ___ j in range(n-1, -1, -1
                 __ s[i] __ p[j] or p[j] __ '?':
                     dp[i][j] = dp[i+1][j+1]
                 ____ p[j] __ '*':

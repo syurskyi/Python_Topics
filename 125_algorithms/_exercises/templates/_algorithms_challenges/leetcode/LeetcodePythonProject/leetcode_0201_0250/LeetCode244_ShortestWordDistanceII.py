@@ -10,7 +10,7 @@ class WordDistance(object
         :type words: List[str]
         """
         hashmap = {}
-        for i, word in enumerate(words
+        ___ i, word in enumerate(words
             hashmap[word] = hashmap.get(word, [])+[i]
         self.hashmap = hashmap
     

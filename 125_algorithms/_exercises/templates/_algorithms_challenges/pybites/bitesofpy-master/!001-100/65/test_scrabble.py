@@ -4,13 +4,13 @@ from Previous.scrabble ______ get_possible_dict_words
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES = {letter: score for score, letters in scrabble_scores
-                 for letter in letters.split()}
+LETTER_SCORES = {letter: score ___ score, letters in scrabble_scores
+                 ___ letter in letters.split()}
 
 
 ___ calc_word_value(word
     """Calc a given word value based on Scrabble LETTER_SCORES mapping"""
-    r_ sum(LETTER_SCORES.get(char.upper(), 0) for char in word)
+    r_ su.(LETTER_SCORES.get(char.upper(), 0) ___ char in word)
 
 
 ___ max_word_value(words

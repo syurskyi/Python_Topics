@@ -14,7 +14,7 @@ ___ starts_with_vowel_sound(word
 
 ___ translate(text
     words = []
-    for word in text.split(
+    ___ word in text.split(
         __ starts_with_vowel_sound(word
             words.append(word + 'ay')
         ____

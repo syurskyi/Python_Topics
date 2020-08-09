@@ -7,10 +7,10 @@ ___ find_pairs_with_given_difference(arr, k
     n = le.(arr)
     sums = {}
 
-    for i in range(n
+    ___ i in range(n
         sums[arr[i] - k] = i
 
-    for j in range(n
+    ___ j in range(n
         __ arr[j] in sums:
             i = sums[arr[j]]
             ans.append([arr[i], arr[j]])

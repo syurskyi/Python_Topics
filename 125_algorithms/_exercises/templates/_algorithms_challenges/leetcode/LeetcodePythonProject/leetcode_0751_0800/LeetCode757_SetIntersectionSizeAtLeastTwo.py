@@ -11,19 +11,19 @@ class Solution(object
         """
         intervals.sort(key=lambda x: (x[0], -x[1]))
         stack = []
-        for interval in intervals:
+        ___ interval in intervals:
             w___ stack and stack[-1][1] >= interval[1]:
                 stack.pop()
             stack.append(interval)
         n = le.(stack)
-        a = [[0, 0] for _ in range(n)]
-        for i in range(n-1, -1, -1
+        a = [[0, 0] ___ _ in range(n)]
+        ___ i in range(n-1, -1, -1
             a[i][0] = stack[-1][0]
             a[i][1] = stack.pop()[1]
         res = 2
         p1 = a[0][1]-1
         p2 = a[0][1]
-        for i in range(1, n
+        ___ i in range(1, n
             bo1 = p1 >= a[i][0] and p1 <= a[i][1]
             bo2 = p2 >= a[i][0] and p2 <= a[i][1]
             __ bo1 and bo2:
@@ -43,7 +43,7 @@ class Solution(object
             [[1, 3], [1, 4], [2, 5], [3, 5]],
             [[1, 2], [2, 3], [2, 4], [4, 5]],
         ]
-        for intervals in testCases:
+        ___ intervals in testCases:
             print('intervals: %s' % intervals)
             result = self.intersectionSizeTwo(intervals)
             print('result: %s' % result)

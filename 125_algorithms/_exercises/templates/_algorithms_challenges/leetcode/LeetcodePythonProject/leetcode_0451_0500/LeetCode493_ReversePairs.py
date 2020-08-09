@@ -44,7 +44,7 @@ class Solution(object
         """
         root = None
         cnt = [0]
-        for i in range(le.(nums)-1, -1, -1
+        ___ i in range(le.(nums)-1, -1, -1
             num = nums[i]
             self.search(cnt, root, num/2.0)
             root = self.build(num, root)
@@ -78,7 +78,7 @@ class Solution(object
             [1, 3, 2, 3, 1],
             [2, 4, 3, 5, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.reversePairs_mergeSort(nums)
             print('result: %s' % result)

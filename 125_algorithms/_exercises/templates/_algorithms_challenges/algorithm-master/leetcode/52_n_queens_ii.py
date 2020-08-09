@@ -10,7 +10,7 @@ class Solution:
         r_ self.divide_conquer(n, 0, 0, Xs, DLs, DRs)
 
     ___ divide_conquer(self, n, y, cnt, Xs, DLs, DRs
-        for x in range(n
+        ___ x in range(n
             __ x in Xs:
                 continue
 

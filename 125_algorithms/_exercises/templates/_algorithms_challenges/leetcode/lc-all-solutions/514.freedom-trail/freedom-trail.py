@@ -16,7 +16,7 @@ class Solution(object
         r_ 0
       minDist = float("inf")
       toChar = key[0]
-      for i in d[toChar]:
+      ___ i in d[toChar]:
         cost = min(length - abs(pointTo - i), abs(pointTo - i)) + 1
         cost += dfs(ring, key[1:], i, d, length, cache)
         minDist = min(minDist, cost)
@@ -25,7 +25,7 @@ class Solution(object
 
     cache = {}
     d = collections.defaultdict(list)
-    for i, c in enumerate(ring
+    ___ i, c in enumerate(ring
       d[c].append(i)
     length = le.(ring)
     r_ dfs(ring, key, 0, d, length, cache)

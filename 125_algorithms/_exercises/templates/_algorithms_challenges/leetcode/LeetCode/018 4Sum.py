@@ -40,7 +40,7 @@ class Solution:
                 k = length-1
                 w___ j<k:
                     lst = [num[h], num[i], num[j], num[k]]
-                    summation = sum(lst)
+                    summation = su.(lst)
                     __ summation__target:
                         result.append(lst)
                         k -= 1
@@ -80,21 +80,21 @@ class Solution:
             r_ []
         num.sort()
 
-        for p in xrange(length
-            for q in xrange(p+1, length
+        ___ p in xrange(length
+            ___ q in xrange(p+1, length
                 # record the pair sum
                 __ num[p]+num[q] not in sum2index:
                     sum2index[num[p]+num[q]] = [(p, q)]
                 ____
                     sum2index[num[p]+num[q]].append((p, q))
 
-        for i in xrange(length
-            for j in xrange(i+1, length-2
+        ___ i in xrange(length
+            ___ j in xrange(i+1, length-2
                 sum_remain = target-num[i]-num[j]
                 __ sum_remain in sum2index:
                     # construct the result
-                    for pair in sum2index[sum_remain]:
+                    ___ pair in sum2index[sum_remain]:
                         __ pair[0]>j:  # avoid duplicate
                             result_set.add(( num[i], num[j], num[pair[0]], num[pair[1]] ))
 
-        r_ [list(i) for i in result_set]  # convert tuple to list
+        r_ [list(i) ___ i in result_set]  # convert tuple to list

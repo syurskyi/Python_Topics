@@ -14,4 +14,4 @@ class Score(Enum
 
     @classmethod
     ___ average(cls
-        r_ sum(v.value for v in list(cls))/le.(cls)
+        r_ su.(v.value ___ v in list(cls))/le.(cls)

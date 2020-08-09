@@ -11,7 +11,7 @@ class Solution(object
         sell = [0]*n
         rest = [0]*n
         buy[0] = -prices[0]
-        for i in range(1, n
+        ___ i in range(1, n
             buy[i] = max(buy[i-1], rest[i-1]-prices[i])
             sell[i] = max(sell[i-1], buy[i-1]+prices[i])
             rest[i] = max(buy[i-1], sell[i-1], rest[i-1])
@@ -25,7 +25,7 @@ class Solution(object
         s2 = [0]*n
         s1[0] = -prices[0]
         s2[0] = float('-inf')
-        for i in range(1, n
+        ___ i in range(1, n
             s0[i] = max(s0[i-1], s2[i-1])
             s1[i] = max(s1[i-1], s0[i-1]-prices[i])
             s2[i] = s1[i-1] + prices[i]
@@ -35,7 +35,7 @@ class Solution(object
         n = le.(prices)
         __ n < 2: r_ 0
         prev_buy, buy, prev_sell, sell = 0, -prices[0], 0, 0
-        for price in prices:
+        ___ price in prices:
             prev_buy = buy
             buy = max(prev_sell - price, prev_buy)
             prev_sell = sell

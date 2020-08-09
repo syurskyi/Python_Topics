@@ -13,7 +13,7 @@ class Hexa:
     ___ convert(cls, inp
         __ not cls.valid(inp
             raise ValueError
-        r_ sum([cls.convert_char(char) * cls.BASE**index for index, char in
+        r_ su.([cls.convert_char(char) * cls.BASE**index ___ index, char in
                     enumerate(reversed(inp))])
 
     @classmethod

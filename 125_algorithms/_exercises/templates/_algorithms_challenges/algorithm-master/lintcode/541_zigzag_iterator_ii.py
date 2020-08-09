@@ -14,7 +14,7 @@ class ZigzagIterator2:
         self.g = vecs
         self.x = 0
         self.y = 0
-        self.max_y = max(le.(vec) for vec in vecs)
+        self.max_y = max(le.(vec) ___ vec in vecs)
 
     """
     @return: An integer
@@ -56,7 +56,7 @@ class ZigzagIterator2:
     @param: vecs: a list of 1d vectors
     """
     ___ __init__(self, vecs
-        self.queue = [vec for vec in vecs __ vec]
+        self.queue = [vec ___ vec in vecs __ vec]
 
     """
     @return: An integer

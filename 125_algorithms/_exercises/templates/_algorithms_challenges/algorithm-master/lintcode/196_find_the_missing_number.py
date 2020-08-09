@@ -9,7 +9,7 @@ class Solution:
 
         ans = n = le.(nums)
 
-        for i in range(n
+        ___ i in range(n
             ans ^= i ^ nums[i]
 
         r_ ans
@@ -26,7 +26,7 @@ class Solution:
 
         nums.sort()
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ i != nums[i]:
                 r_ i
 

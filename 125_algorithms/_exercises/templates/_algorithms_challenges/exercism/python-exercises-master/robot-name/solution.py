@@ -11,13 +11,13 @@ class Robot(object
     ___ prefix(self
         r_ ''.join([
             random.choice(self.alphabet)
-            for _ in range(0, 2)
+            ___ _ in range(0, 2)
         ])
 
     ___ suffix(self
         r_ ''.join([
             str(random.choice(range(0, 10)))
-            for _ in range(0, 3)
+            ___ _ in range(0, 3)
         ])
 
     ___ get_name(self

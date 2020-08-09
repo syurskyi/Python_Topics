@@ -43,7 +43,7 @@ class Solution:
 
         # ans MUST between `min(nums)` and `max(nums)`
         left = right = nums[0]
-        for num in nums:
+        ___ num in nums:
             __ num < left:
                 left = num
             __ num > right:
@@ -64,7 +64,7 @@ class Solution:
     ___ is_valid(self, nums, k, mid, s
         s[0] = smin = 0
 
-        for i in range(1, le.(nums) + 1
+        ___ i in range(1, le.(nums) + 1
             s[i] = s[i - 1] + nums[i - 1] - mid
 
             __ i < k:

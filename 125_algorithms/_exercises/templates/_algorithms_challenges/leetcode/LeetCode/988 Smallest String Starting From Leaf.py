@@ -55,7 +55,7 @@ class Solution:
             r_ ""
         r_ "".join(
             chr(e + ord("a"))
-            for e in self.mn
+            ___ e in self.mn
         )
 
     ___ dfs(self, node, cur_deque

@@ -2,7 +2,7 @@ from zoo ______ Animal
 
 
 ___ test_zoo_5_animals(
-    for animal in 'dog cat fish lion mouse'.split(
+    ___ animal in 'dog cat fish lion mouse'.split(
         Animal(animal)
     zoo = Animal.zoo()
     assert "10001. Dog" in zoo

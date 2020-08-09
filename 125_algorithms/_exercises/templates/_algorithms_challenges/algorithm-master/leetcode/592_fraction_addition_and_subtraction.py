@@ -12,13 +12,13 @@ class Solution:
         __ E[0] != '-':
             S.append('+')
 
-        for c in E:
+        ___ c in E:
             __ c __ '+' or c __ '-':
                 S.append(c)
 
         a, b = 0, 1
         i = 0
-        for frac in re.split('\+|-', E
+        ___ frac in re.split('\+|-', E
             __ not frac:
                 continue
 

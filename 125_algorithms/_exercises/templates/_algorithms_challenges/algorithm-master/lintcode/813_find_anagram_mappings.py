@@ -15,10 +15,10 @@ class Solution:
         ans = [-1] * n
         b2i = {}
 
-        for i in range(n
+        ___ i in range(n
             b2i[b[i]] = i
 
-        for i in range(n
+        ___ i in range(n
             __ a[i] not in b2i:
                 r_ []
 
@@ -44,13 +44,13 @@ class Solution:
         ans = [-1] * n
         b2i = {}
 
-        for i in range(n
+        ___ i in range(n
             __ b[i] not in b2i:
                 b2i[b[i]] = []
 
             b2i[b[i]].append(i)
 
-        for i in range(n
+        ___ i in range(n
             __ not b2i.get(a[i]
                 # a[i] not in b2i
                 # b2i[a[i]] is empty list

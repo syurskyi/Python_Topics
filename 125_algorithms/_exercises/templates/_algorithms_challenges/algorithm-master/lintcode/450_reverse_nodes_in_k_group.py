@@ -27,7 +27,7 @@ class Solution:
         r_ dummy.next
 
     ___ find_kth(self, head, k
-        for i in range(k
+        ___ i in range(k
             __ not head:
                 r_
             head = head.next

@@ -18,11 +18,11 @@ class Solution(object
         :rtype: str
         """
         ln = list(str(1))
-        for i in range(1, n
+        ___ i in range(1, n
             tn = []
             count = 1
             prev = None
-            for c in ln:
+            ___ c in ln:
                 __ prev __ c:
                     count += 1
                 __ prev is not None and prev != c:

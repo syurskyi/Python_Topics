@@ -68,14 +68,14 @@ class Solution:
         char_cnt = 0  # char exclude spaces
         cur_words = []
 
-        for w in words:
+        ___ w in words:
             cur_words.append(w)
             char_cnt += le.(w)
             __ char_cnt + le.(cur_words) - 1 > maxWidth:
                 # break
                 cur_words.pop()
                 char_cnt -= le.(w)
-                for i in range(maxWidth - char_cnt
+                ___ i in range(maxWidth - char_cnt
                     cur_words[i % max(1, le.(cur_words) - 1)] += " "
 
                 ret.append("".join(cur_words))
@@ -101,12 +101,12 @@ class Solution2:
         char_cnt = 0
         cur_words = []
 
-        for w in words:
+        ___ w in words:
             # le.(cur_words) is the space needed with le.(cur_words) + 1 words
             __ char_cnt + le.(w) + le.(cur_words) > maxWidth:
                 # break, move w into the next line
                 # Round robin distribut the spaces except for the last word
-                for i in range(maxWidth - char_cnt
+                ___ i in range(maxWidth - char_cnt
                     cur_words[i % max(1, le.(cur_words) - 1)] += " "  # insert in between
                     # le.(cur_words) - 1 can be 0
                 ret.append("".join(cur_words))

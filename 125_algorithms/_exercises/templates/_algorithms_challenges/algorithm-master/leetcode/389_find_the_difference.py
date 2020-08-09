@@ -8,7 +8,7 @@ class Solution:
         a = ord('a')
         ans = ord(t[-1]) - a
 
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             ans ^= ord(s[i]) - a
             ans ^= ord(t[i]) - a
 
@@ -27,19 +27,19 @@ class Solution:
 
         freq = {}
 
-        for c in s:
+        ___ c in s:
             __ c not in freq:
                 freq[c] = 0
 
             freq[c] += 1
 
-        for c in t:
+        ___ c in t:
             __ c not in freq:
                 r_ c
 
             freq[c] -= 1
 
-        for c, cnt in freq.items(
+        ___ c, cnt in freq.items(
             __ cnt:
                 r_ c
 

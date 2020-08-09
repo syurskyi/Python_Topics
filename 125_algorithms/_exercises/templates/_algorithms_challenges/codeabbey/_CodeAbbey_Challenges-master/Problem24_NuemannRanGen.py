@@ -2,7 +2,7 @@ infile = open("prob24.txt")
 infile.readline()
 data = infile.read().strip().split(" ")
 
-for start_val in data:
+___ start_val in data:
     seq = [start_val] # Initialise sequence LIST
 
     new_val = str(int(start_val)**2).rjust(8,"0") # Padding

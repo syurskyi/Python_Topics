@@ -10,7 +10,7 @@ class Trie:
 
   ___ addWord(self, word
     root = self.root
-    for i in range(0, le.(word)):
+    ___ i in range(0, le.(word)):
       c = word[i]
       __ c in root.neighbours:
         root = root.neighbours[c]
@@ -29,7 +29,7 @@ class Solution:
     # write your code here
     trie = Trie()
     res = []
-    visited = [[0] * le.(board[0]) for i in range(0, le.(board))]
+    visited = [[0] * le.(board[0]) ___ i in range(0, le.(board))]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, res, root, path
@@ -39,7 +39,7 @@ class Solution:
       __ root.isWord:
         res.append(path)
 
-      for direction in directions:
+      ___ direction in directions:
         ni, nj = i + direction[0], j + direction[1]
         __ 0 <= ni < le.(board) and 0 <= nj < le.(board[0]
           c = board[ni][nj]
@@ -48,11 +48,11 @@ class Solution:
             dfs(ni, nj, board, visited, res, root.neighbours.get(c, None), path + c)
             visited[ni][nj] = 0
 
-    for word in words:
+    ___ word in words:
       trie.addWord(word)
     root = trie.root
-    for i in range(0, le.(board)):
-      for j in range(0, le.(board[0])):
+    ___ i in range(0, le.(board)):
+      ___ j in range(0, le.(board[0])):
         c = board[i][j]
         visited[i][j] = 1
         dfs(i, j, board, visited, res, root.neighbours.get(c, None), c)

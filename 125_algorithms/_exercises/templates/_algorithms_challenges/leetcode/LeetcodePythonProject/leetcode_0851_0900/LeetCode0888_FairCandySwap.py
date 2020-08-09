@@ -10,13 +10,13 @@ class Solution(object
         :type B: List[int]
         :rtype: List[int]
         """
-        sumA = sum(A)
-        sumB = sum(B)
+        sumA = su.(A)
+        sumB = su.(B)
         evenNum = (sumA+sumB)//2
         setA = set(A)
         setB = set(B)
         ans = [0, 0]
-        for a in setA:
+        ___ a in setA:
             __ evenNum - (sumA - a) in setB:
                 ans[0] = a
                 ans[1] = evenNum - (sumA-a)

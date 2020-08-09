@@ -30,7 +30,7 @@ ___ count_letters(queue_of_texts, letter_to_frequency, worker_id
         sleep(worker_id + 1)
         line_input = queue_of_texts.get()
         __ line_input is not None:
-            letters_in_line = Counter([x for x in line_input.lower() __
+            letters_in_line = Counter([x ___ x in line_input.lower() __
                                        x.isalpha()])
             letter_to_frequency.add_counter(letters_in_line)
         queue_of_texts.task_done()
@@ -40,17 +40,17 @@ ___ count_letters(queue_of_texts, letter_to_frequency, worker_id
 
 ___ calculate(list_of_texts
     queue_of_texts = Queue()
-    [queue_of_texts.put(line) for line in list_of_texts]
+    [queue_of_texts.put(line) ___ line in list_of_texts]
     letter_to_frequency = LetterCounter()
     threads = []
-    for i in range(total_workers
+    ___ i in range(total_workers
         worker = Thread(target=count_letters, args=(queue_of_texts,
                                                     letter_to_frequency, i))
         worker.start()
         threads.append(worker)
     queue_of_texts.join()
-    for i in range(total_workers
+    ___ i in range(total_workers
         queue_of_texts.put(None)
-    for t in threads:
+    ___ t in threads:
         t.join()
     r_ letter_to_frequency.value

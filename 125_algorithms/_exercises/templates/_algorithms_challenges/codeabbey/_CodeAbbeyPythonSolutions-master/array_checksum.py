@@ -5,7 +5,7 @@ ___ get_checksum(values
     result = 0
     seed = 113
 
-    for i in values:
+    ___ i in values:
         result = (result + i) * seed
         __(result > limit
             result = result % limit

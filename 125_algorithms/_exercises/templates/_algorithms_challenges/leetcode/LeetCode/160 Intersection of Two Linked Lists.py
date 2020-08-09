@@ -46,7 +46,7 @@ class Solution:
 
         cur_a = headA
         cur_b = headB
-        for i in xrange(l_b-l_a
+        ___ i in xrange(l_b-l_a
             cur_b = cur_b.next
 
         w___ cur_a != cur_b:

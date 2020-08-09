@@ -18,18 +18,18 @@ class Solution:
         :return: Integer
         """
         # last visited index in the string
-        visited_last_index = [-1 for _ in range(256)]  # ascii
+        visited_last_index = [-1 ___ _ in range(256)]  # ascii
         longest = 0  # record result
 
         start = 0  # pointer
-        for ind, val in enumerate(s
+        ___ ind, val in enumerate(s
             __ visited_last_index[ord(val)] __ -1:
                 longest = max(longest, (ind)-start+1)
             ____
                 longest = max(longest, (ind-1)-start+1)
 
                 # unmark
-                for i in range(start, visited_last_index[ord(val)]
+                ___ i in range(start, visited_last_index[ord(val)]
                     visited_last_index[ord(s[i])] = -1
 
                 start = visited_last_index[ord(val)]+1

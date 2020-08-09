@@ -38,7 +38,7 @@ class Solution:
             order = -1
             a, b = b, a
 
-        for i in xrange(le.(a)):
+        ___ i in xrange(le.(a)):
             __ int(a[i]) != int(b[i]
                 r_ order*(int(a[i])-int(b[i]))
 

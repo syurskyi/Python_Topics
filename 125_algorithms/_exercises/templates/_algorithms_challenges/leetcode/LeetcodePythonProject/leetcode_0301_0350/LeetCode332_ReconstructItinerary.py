@@ -11,7 +11,7 @@ class Solution(object
         __ not tickets:
             r_ []
         hashmap = {}
-        for t1, t2 in tickets:
+        ___ t1, t2 in tickets:
             __ t1 not in hashmap:
                 hashmap[t1] = []
             heapq.heappush(hashmap[t1], t2)
@@ -30,7 +30,7 @@ class Solution(object
             [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]],
             [["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]],
         ]
-        for tickets in testCases:
+        ___ tickets in testCases:
             print('tickets: %s' % tickets)
             result = self.findItinerary(tickets)
             print('result: %s' % result)

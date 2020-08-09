@@ -11,4 +11,4 @@ POINTS = {
 ___ score(word
     __ not word.isalpha(
         r_ 0
-    r_ sum(POINTS[letter] for letter in word.lower())
+    r_ su.(POINTS[letter] ___ letter in word.lower())

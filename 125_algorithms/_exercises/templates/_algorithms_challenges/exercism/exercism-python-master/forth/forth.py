@@ -15,7 +15,7 @@ keywords = {
 
 
 ___ evaluate(input_data
-    tokens = [token for line in input_data for token in line.split()]
+    tokens = [token ___ line in input_data ___ token in line.split()]
     stack = []
     env = {}
     w___ tokens:
@@ -33,7 +33,7 @@ ___ evaluate(input_data
         ____ token in keywords:
             try:
                 n_args, func = keywords[token]
-                args = tuple(reversed([stack.pop() for _ in range(n_args)]))
+                args = tuple(reversed([stack.pop() ___ _ in range(n_args)]))
                 stack.extend(func(*args))
             except IndexError:
                 raise StackUnderflowError('Cannot apply ' + token)

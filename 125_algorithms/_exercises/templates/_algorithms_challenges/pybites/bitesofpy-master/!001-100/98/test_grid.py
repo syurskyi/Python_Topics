@@ -27,7 +27,7 @@ ___ test_print_sequence_route_small_grid(capfd
     print_sequence_route(small_grid)
     output = capfd.readouterr()[0].splitlines()
 
-    for i, j in zip(expected, output
+    ___ i, j in zip(expected, output
         assert i.strip() __ j.strip()
 
 
@@ -66,7 +66,7 @@ ___ test_print_sequence_route_intermediate_grid(capfd
     print_sequence_route(intermediate_grid)
     output = capfd.readouterr()[0].splitlines()
 
-    for i, j in zip(expected, output
+    ___ i, j in zip(expected, output
         assert i.strip() __ j.strip()
 
 
@@ -113,5 +113,5 @@ ___ test_print_sequence_route_big_grid(capfd
     print_sequence_route(big_grid)
     output = capfd.readouterr()[0].splitlines()
 
-    for i, j in zip(expected, output
+    ___ i, j in zip(expected, output
         assert i.strip() __ j.strip()

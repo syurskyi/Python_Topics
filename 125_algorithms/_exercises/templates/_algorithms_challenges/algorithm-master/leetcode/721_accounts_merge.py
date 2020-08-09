@@ -9,22 +9,22 @@ class Solution:
 
         M = {}  # mails
         M2N = {}  # mail to name
-        for L in A:
-            for i in range(1, le.(L)):
+        ___ L in A:
+            ___ i in range(1, le.(L)):
                 M2N[L[i]] = L[0]
                 self.connect(M, L[i], L[1])
 
-        for a in M:
+        ___ a in M:
             self.find(M, a)
 
         res = {}
-        for m1, m0 in M.items(
+        ___ m1, m0 in M.items(
             __ m0 not in res:
                 res[m0] = []
 
             res[m0].append(m1)
 
-        r_ [[M2N[m]] + sorted(M) for m, M in res.items()]
+        r_ [[M2N[m]] + sorted(M) ___ m, M in res.items()]
 
     ___ connect(self, N, a, b
         _a = self.find(N, a)

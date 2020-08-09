@@ -15,7 +15,7 @@ class Solution:
         ____ target < 0:
             r_
         ____
-            for i, c in enumerate(candidates
+            ___ i, c in enumerate(candidates
                 __ i __ 0:
                     prev = c
                 ____ prev __ c:

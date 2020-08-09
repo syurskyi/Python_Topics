@@ -20,15 +20,15 @@ class Solution:
 
         n = le.(costs)
         m = le.(costs[0])
-        F = [[0 for _ in xrange(m)] for _ in xrange(n+1)]
-        for k in xrange(1, n+1
-            for i in xrange(m
+        F = [[0 ___ _ in xrange(m)] ___ _ in xrange(n+1)]
+        ___ k in xrange(1, n+1
+            ___ i in xrange(m
                 F[k][i] = sys.maxint
-                for j in xrange(m
+                ___ j in xrange(m
                     __ i != j:
                         F[k][i] = min(F[k][i], F[k-1][j]+costs[k-1][i])
 
-        r_ min(F[n][i] for i in xrange(m))
+        r_ min(F[n][i] ___ i in xrange(m))
 
 
 __ __name__ __ "__main__":

@@ -32,7 +32,7 @@ class Solution(object
 
         idx = l  # the next reading
         w___ idx < n:
-            buf4 = ["" for _ in xrange(4)]
+            buf4 = ["" ___ _ in xrange(4)]
             r = read4(buf4)
             __ idx+r < n:
                 buf[idx:idx+r] = buf4[:r]

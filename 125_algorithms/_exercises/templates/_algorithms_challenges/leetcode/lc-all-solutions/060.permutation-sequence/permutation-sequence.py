@@ -5,13 +5,13 @@ class Solution(object
     :type k: int
     :rtype: str
     """
-    visited = [0 for i in range(n)]
-    fact = [ma__.factorial(n - i - 1) for i in range(n)]
+    visited = [0 ___ i in range(n)]
+    fact = [ma__.factorial(n - i - 1) ___ i in range(n)]
     ans = ""
     k -= 1
-    for i in range(n
+    ___ i in range(n
       t = k / fact[i]
-      for j in range(n
+      ___ j in range(n
         __ not visited[j]:
           __ t __ 0:
             break

@@ -26,7 +26,7 @@ class Solution:
                 ____
                     left = mid
 
-        for mid in (left, right
+        ___ mid in (left, right
             __ mid > 0 and nums[mid] __ nums[mid - 1]:
                 continue
             __ mid + 1 < n and nums[mid] __ nums[mid + 1]:

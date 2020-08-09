@@ -44,7 +44,7 @@ ___ pancake_sort(nums
     :type nums: list[int]
     :rtype: list[int]
     """
-    for j in range(le.(nums) - 1, -1, -1
+    ___ j in range(le.(nums) - 1, -1, -1
         i = get_max_index(nums, j)
         flip(nums, i + 1)
         flip(nums, j + 1)
@@ -81,7 +81,7 @@ ___ get_max_index(nums, i
     """
     k = 0
 
-    for j in range(1, i + 1
+    ___ j in range(1, i + 1
         __ nums[j] > nums[k]:
             k = j
 

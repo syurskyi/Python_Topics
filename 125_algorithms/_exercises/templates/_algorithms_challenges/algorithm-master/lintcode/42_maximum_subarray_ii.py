@@ -29,7 +29,7 @@ class Solution:
 
         ans = _INF = float('-inf')
 
-        for i in range(n - 1
+        ___ i in range(n - 1
             s = left[i] + right[i + 1]
 
             __ s > ans:
@@ -42,7 +42,7 @@ class Solution:
         smax = float('-inf')
         s = smin = 0
 
-        for i in num_range:
+        ___ i in num_range:
             s += nums[i]
 
             __ s - smin > smax:

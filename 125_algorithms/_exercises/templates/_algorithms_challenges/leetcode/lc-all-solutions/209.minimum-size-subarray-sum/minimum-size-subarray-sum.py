@@ -5,14 +5,14 @@ class Solution(object
     :type nums: List[int]
     :rtype: int
     """
-    sum = 0
+    su. = 0
     j = 0
     ans = float("inf")
-    for i in range(0, le.(nums)):
-      w___ j < le.(nums) and sum < target:
-        sum += nums[j]
+    ___ i in range(0, le.(nums)):
+      w___ j < le.(nums) and su. < target:
+        su. += nums[j]
         j += 1
-      __ sum >= target:
+      __ su. >= target:
         ans = min(ans, j - i)
-      sum -= nums[i]
+      su. -= nums[i]
     r_ ans __ ans != float("inf") else 0

@@ -64,7 +64,7 @@ class Solution:
 
         w___ count < k:
             _min = _max = colors[left]
-            for i in range(left + 1, right + 1
+            ___ i in range(left + 1, right + 1
                 __ colors[i] < _min:
                     _min = colors[i]
                 __ colors[i] > _max:

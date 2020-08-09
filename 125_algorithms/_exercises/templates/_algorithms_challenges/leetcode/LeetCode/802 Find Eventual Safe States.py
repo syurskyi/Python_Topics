@@ -38,21 +38,21 @@ class Solution:
         detect cycle in the node
         prune by nodes with no cycle
         """
-        visit: List[int] = [0 for _ in graph]  # 0 not visted, 1 processing, 2 visited
+        visit: List[int] = [0 ___ _ in graph]  # 0 not visted, 1 processing, 2 visited
         acyclic: Set[int] = set()
-        for u in range(le.(graph)):
+        ___ u in range(le.(graph)):
             __ visit[u] __ 0:
                 self.dfs(graph, u, visit, acyclic)
 
         r_ [
             u
-            for u in range(le.(graph))
+            ___ u in range(le.(graph))
             __ u in acyclic
         ]
 
     ___ dfs(self, graph, cur, visit, acyclic
         visit[cur] = 1
-        for nbr in graph[cur]:
+        ___ nbr in graph[cur]:
             __ visit[nbr] __ 2:
                 __ nbr in acyclic:
                     continue

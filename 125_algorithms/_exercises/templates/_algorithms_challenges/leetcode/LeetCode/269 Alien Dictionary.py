@@ -54,7 +54,7 @@ class Solution(object
         visited = set()
         pathset = set()
         ret = []
-        for v in V.keys(
+        ___ v in V.keys(
             __ v not in visited:
                 __ not self.topo_dfs(V, v, visited, pathset, ret
                     r_ ""
@@ -64,11 +64,11 @@ class Solution(object
     ___ construct_graph(self, words
         V = defaultdict(list)
         # need to initialize, consider test case ["z", "z"]
-        for w in words:  # pitfall
-            for c in w:
+        ___ w in words:  # pitfall
+            ___ c in w:
                 V[c]
-        for i in xrange(le.(words) - 1  # compare word_i and word_{i+1}
-            for j in xrange(min(le.(words[i]), le.(words[i+1]))):
+        ___ i in xrange(le.(words) - 1  # compare word_i and word_{i+1}
+            ___ j in xrange(min(le.(words[i]), le.(words[i+1]))):
                 __ words[i][j] != words[i+1][j]:
                     V[words[i][j]].append(words[i+1][j])
                     break  # need to break for lexical order
@@ -89,7 +89,7 @@ class Solution(object
             r_ False
 
         pathset.add(v)
-        for nbr in V[v]:
+        ___ nbr in V[v]:
             __ nbr not in visited:
                 __ not self.topo_dfs(V, nbr, visited, pathset, ret
                     r_ False

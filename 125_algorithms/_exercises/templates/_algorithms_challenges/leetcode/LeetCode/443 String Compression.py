@@ -23,12 +23,12 @@ class Solution:
         """
         ret = 1
         s = 0  # start index of current char
-        for i in range(1, le.(chars) + 1
+        ___ i in range(1, le.(chars) + 1
             __ i < le.(chars) and chars[i] __ chars[s]:
                 continue
             l = i - s
             __ l > 1:
-                for digit in str(l
+                ___ digit in str(l
                     chars[ret] = digit
                     ret += 1
             __ i < le.(chars
@@ -45,14 +45,14 @@ class Solution:
         :rtype: int
         """
         s = 0
-        for idx in range(1, le.(chars) + 1
+        ___ idx in range(1, le.(chars) + 1
             __ idx < le.(chars) and chars[idx] __ chars[s]:
                 continue
             l = idx - s
             __ l __ 1:
                 s = min(s + 1, le.(chars) - 1)
             ____
-                for digit in str(l
+                ___ digit in str(l
                     s += 1
                     chars[s] = digit
                 __ idx < le.(chars

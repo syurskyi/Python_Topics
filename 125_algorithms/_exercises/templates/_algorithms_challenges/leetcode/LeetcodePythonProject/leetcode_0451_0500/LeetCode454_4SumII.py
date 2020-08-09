@@ -13,12 +13,12 @@ class Solution(object
         :rtype: int
         """
         hashmap = {}
-        for a in A:
-            for b in B:
+        ___ a in A:
+            ___ b in B:
                 hashmap[a+b] = hashmap.get(a+b, 0)+1
         res = 0
-        for c in C:
-            for d in D:
+        ___ c in C:
+            ___ d in D:
                 res += hashmap.get(-c-d, 0)
         r_ res
     
@@ -31,7 +31,7 @@ class Solution(object
                 [ 0, 2],
             ],
         ]
-        for nums1, nums2, nums3, nums4 in testCases:
+        ___ nums1, nums2, nums3, nums4 in testCases:
             result = self.fourSumCount(nums1, nums2, nums3, nums4)
             print('result: %s' % result)
             print('-='*30+'-')

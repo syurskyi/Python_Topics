@@ -35,7 +35,7 @@ class Solution:
         """
         counter = defaultdict(int)
         ret = 0
-        for t in time:
+        ___ t in time:
             ret += counter[(60 - t) % 60]  # handle 0
             counter[t % 60] += 1
 
@@ -51,11 +51,11 @@ class Solution:
         attribution error
         """
         hm = defaultdict(int)
-        for t in time:
+        ___ t in time:
             hm[t % 60] += 1
 
         ret = 0
-        for k, v in hm.items(
+        ___ k, v in hm.items(
             __ k __ 0:
                 ret += (v * (v - 1)) // 2
             ____ k <= 60 - k:  # attribution

@@ -12,7 +12,7 @@ class Solution(object
         :rtype: int
         """
         sumRemaining, sumVal, start = 0, 0, 0
-        for i, (g, c) in enumerate(zip(gas, cost)):
+        ___ i, (g, c) in enumerate(zip(gas, cost)):
             remain = g-c
             __ sumRemaining >= 0:
                 sumRemaining += remain

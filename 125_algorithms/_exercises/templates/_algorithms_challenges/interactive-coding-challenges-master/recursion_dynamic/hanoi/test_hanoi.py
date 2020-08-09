@@ -23,10 +23,10 @@ class TestHanoi(object
         assert_equal(dest.pop(), 5)
 
         print('Test: 2 or more disks')
-        for disk_index in range(num_disks, -1, -1
+        ___ disk_index in range(num_disks, -1, -1
             src.push(disk_index)
         hanoi.move_disks(num_disks, src, dest, buff)
-        for disk_index in range(0, num_disks
+        ___ disk_index in range(0, num_disks
             assert_equal(dest.pop(), disk_index)
 
         print('Success: test_hanoi')

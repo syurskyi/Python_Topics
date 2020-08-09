@@ -10,11 +10,11 @@ ___ blackjack_counter(games
         'K':10,   'A':11
         }
     
-    for game in range(games
-        cards = [x for x in raw_input().split()]
+    ___ game in range(games
+        cards = [x ___ x in raw_input().split()]
         total, ace_count = 0, 0
         
-        for card in cards:
+        ___ card in cards:
             total += values[card]
             __ card __ 'A':
                 ace_count += 1

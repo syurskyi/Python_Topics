@@ -17,7 +17,7 @@ class Solution(object
         w___ left + 1e-6 < right:
             mid = (left+right)/2.0
             count = 0
-            for i in range(n-1
+            ___ i in range(n-1
                 count += ma__.ceil((stations[i+1]-stations[i])/mid)-1
             __ count > k:
                 left = mid
@@ -36,7 +36,7 @@ class Solution(object
                 7,
             ],
         ]
-        for stations, k in testCases:
+        ___ stations, k in testCases:
             print('stations: %s' % stations)
             print('K: %s' % k)
             result = self.minmaxGasDist(stations, k)

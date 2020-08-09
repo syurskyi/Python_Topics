@@ -12,7 +12,7 @@ class Solution(object
         ______ re
         ints = map(int, re.findall('[+-]?\d+', expression))
         A, B = 0, 1
-        for a in ints:
+        ___ a in ints:
             b = next(ints)
             A = A*b + a*B
             B *= b
@@ -34,7 +34,7 @@ class Solution(object
             '1/3-1/2',
             '5/3+1/3',
         ]
-        for expression in testCases:
+        ___ expression in testCases:
             print('expression: %s' % expression)
             result = self.fractionAddition(expression)
             print('result: %s' % result)

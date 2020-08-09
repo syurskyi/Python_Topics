@@ -34,9 +34,9 @@ class Solution:
         """
         one pass
         """
-        for row in A:
+        ___ row in A:
             prev = list(row)
-            for i in range(le.(row)):
+            ___ i in range(le.(row)):
                 row[i] = prev[-1-i] ^ 1
 
         r_ A

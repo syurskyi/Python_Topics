@@ -30,7 +30,7 @@ class Solution:
         # pi = [-1] * n
         # end_at = -1
 
-        for i in range(n
+        ___ i in range(n
             __ i > 0 and A[i] > A[i - 1]:
                 dp[i] = dp[i - 1] + 1
                 # pi[i] = i - 1
@@ -68,7 +68,7 @@ class Solution:
     ___ get_lics_size(self, A
         ans = size = 1
 
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             __ A[i] > A[i - 1]:
                 size += 1
             ____

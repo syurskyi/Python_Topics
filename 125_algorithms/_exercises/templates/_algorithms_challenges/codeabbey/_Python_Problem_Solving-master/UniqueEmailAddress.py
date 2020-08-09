@@ -2,7 +2,7 @@ x = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testem
 
 store_add = []
 count = 0
-for i in x:
+___ i in x:
     i = list(i)
     j = 0
     plus_check = False

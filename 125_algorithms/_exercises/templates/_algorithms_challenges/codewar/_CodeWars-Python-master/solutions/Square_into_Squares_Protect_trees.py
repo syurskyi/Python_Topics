@@ -12,7 +12,7 @@ ___ decompose(n
     w___ result:
         current = result.pop()
         goal += current ** 2
-        for i in range(current - 1, 0, -1
+        ___ i in range(current - 1, 0, -1
             __ goal - (i ** 2) >= 0:
                 goal -= i ** 2
                 result.append(i)

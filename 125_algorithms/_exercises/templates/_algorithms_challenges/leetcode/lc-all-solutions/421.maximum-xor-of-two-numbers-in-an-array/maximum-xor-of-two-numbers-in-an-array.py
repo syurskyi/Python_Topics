@@ -37,10 +37,10 @@ class Solution(object
       r_ 0
     root = TrieNode()
     self.ans = float("-inf")
-    for num in nums:
+    ___ num in nums:
       mask = 0x80000000
       p = root
-      for i in range(0, 32
+      ___ i in range(0, 32
         node = None
         __ num & mask:
           __ not p.one:
@@ -58,6 +58,6 @@ class Solution(object
         mask = mask >> 1
       p.isWord = True
       p.word = num
-    for num in nums:
+    ___ num in nums:
       dfs(root, num, 0x80000000)
     r_ self.ans

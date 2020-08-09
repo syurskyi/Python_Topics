@@ -20,14 +20,14 @@ class Solution:
         dp[0][j] = 0
         dp[i][0] = 0
         """
-        dp = [[0] * (n + 1) for _ in range(2)]
+        dp = [[0] * (n + 1) ___ _ in range(2)]
         # pi = [[0] * (n + 1) for _ in range(m + 1)]
 
         prev = curr = 0
-        for i in range(1, m + 1
+        ___ i in range(1, m + 1
             prev = curr
             curr = 1 - curr
-            for j in range(1, n + 1
+            ___ j in range(1, n + 1
                 """
                 case 1: `A[i]` is not one of pairs
                 case 2: `B[j]` is not one of pairs

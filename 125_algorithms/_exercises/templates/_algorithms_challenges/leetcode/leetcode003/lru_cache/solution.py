@@ -49,7 +49,7 @@ class LRUCache:
     ___ get_lru_key(self
         min_time = self.timestamp
         res = None
-        for key in self.times:
+        ___ key in self.times:
             __ self.times[key] <= min_time:
                 res = key
                 min_time = self.times[key]

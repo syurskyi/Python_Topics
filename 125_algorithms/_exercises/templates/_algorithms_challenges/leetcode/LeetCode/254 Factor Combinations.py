@@ -36,7 +36,7 @@ class Solution:
 
         n = cur.pop()
         start = cur[-1] __ cur else 2
-        for i in xrange(start, int(sqrt(n))+1
+        ___ i in xrange(start, int(sqrt(n))+1
             __ n % i __ 0:
                 cur.append(i)
                 cur.append(n/i)
@@ -48,7 +48,7 @@ class Solution:
             ret.append(list(cur)+[n])
 
         start = cur[-1] __ cur else 2
-        for i in xrange(start, int(sqrt(n))+1
+        ___ i in xrange(start, int(sqrt(n))+1
             __ n%i __ 0:
                 cur.append(i)
                 self.dfs(n/i, cur, ret)
@@ -63,7 +63,7 @@ class Solution:
         ____
             start = 2
 
-        for i in xrange(start, int(sqrt(n+1))):
+        ___ i in xrange(start, int(sqrt(n+1))):
             __ n%i __ 0:
                 cur.append(i)
                 self.dfs_TLE(n/i, cur, ret)

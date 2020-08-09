@@ -1,6 +1,6 @@
 ___ timeCalc(calculations
     answer = []
-    for calculation in range(calculations
+    ___ calculation in range(calculations
         solution = 0
         # Day | hour | minute | second
         d1,h1,m1,s1,d2,h2,m2,s2 = raw_input().split()

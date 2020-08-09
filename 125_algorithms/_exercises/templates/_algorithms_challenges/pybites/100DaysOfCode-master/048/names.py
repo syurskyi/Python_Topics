@@ -16,7 +16,7 @@ ___ gen_names(
 __ __name__ __ '__main__':
     print('Some random Dutch names: ')
     
-    for name in islice(gen_names(), 10
+    ___ name in islice(gen_names(), 10
         print('\t' + name)
 
     print()
@@ -26,6 +26,6 @@ __ __name__ __ '__main__':
     print()
 
     print('Some fixed set of Dutch names: ')
-    for name in islice(gen_names(), 10
+    ___ name in islice(gen_names(), 10
         print('\t' + name)
 

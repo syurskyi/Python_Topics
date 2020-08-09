@@ -11,7 +11,7 @@ class Solution(object
         :rtype: bool
         """
         maxVal = abs(target[0])+abs(target[1])
-        for g in ghosts:
+        ___ g in ghosts:
             d = abs(g[0]-target[0])+abs(g[1]-target[1])
             __ d <= maxVal:
                 r_ False
@@ -21,7 +21,7 @@ class Solution(object
         testCases = [
             
         ]
-        for ghosts, target in testCases:
+        ___ ghosts, target in testCases:
             result = self.escapeGhosts(ghosts, target)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -14,19 +14,19 @@ class Solution(object
         s = str(n)
         length = le.(s)
         nums = self.getNums(length)
-        for num in nums:
+        ___ num in nums:
             __ self.matches(n, num
                 r_ True
         r_ False
     
     ___ matches(self, n, num
         hashmap = {}
-        for c in str(n
+        ___ c in str(n
             __ c in hashmap:
                 hashmap[c] += 1
             ____
                 hashmap[c] = 1
-        for c in str(num
+        ___ c in str(num
             __ c in hashmap:
                 hashmap[c] -= 1
                 __ hashmap[c] __ 0:

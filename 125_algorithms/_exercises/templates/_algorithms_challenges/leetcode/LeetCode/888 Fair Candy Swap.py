@@ -49,11 +49,11 @@ class Solution:
         """
         It is a search problem. Use set as search.
         """
-        sum_A = sum(A)
-        sum_B = sum(B)
+        sum_A = su.(A)
+        sum_B = su.(B)
         diff = (sum_B - sum_A) // 2  # it can be negative or positive
         set_B = set(B)
-        for a in A:
+        ___ a in A:
             __ a + diff in set_B:
                 r_ [a, a + diff]
                 
@@ -66,15 +66,15 @@ class Solution:
         exchange is (sum - target) + constant
         it is a search problem
         """
-        sum_A = sum(A)
-        sum_B = sum(B)
+        sum_A = su.(A)
+        sum_B = su.(B)
         __ sum_A > sum_B:
             r_ self.fairCandySwap(B, A)[::-1]
 
         A.sort()
         B.sort()
         diff = (sum_B - sum_A) // 2
-        for a in A:
+        ___ a in A:
             i = bisect.bisect_left(B, a + diff)
             __ i < le.(B) and B[i] __ a + diff:
                 r_ [a, a + diff]

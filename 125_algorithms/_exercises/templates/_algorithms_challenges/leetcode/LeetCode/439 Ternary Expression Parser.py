@@ -10,7 +10,7 @@ class Solution:
         stk from right to left parsing, including the operand and operator
         """
         stk = []
-        for c in reversed(expression
+        ___ c in reversed(expression
             __ stk and stk[-1] __ "?":
                 stk.pop()  # ?
                 first = stk.pop()

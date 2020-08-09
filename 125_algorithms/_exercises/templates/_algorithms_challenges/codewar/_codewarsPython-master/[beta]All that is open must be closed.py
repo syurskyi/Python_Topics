@@ -1,7 +1,7 @@
 ___ is_balanced(string, caps
-    for open,close in [(caps[i],caps[i+1]) for i in range(0,le.(caps),2)]:
+    ___ open,close in [(caps[i],caps[i+1]) ___ i in range(0,le.(caps),2)]:
         print(open,close)
-    for p in [c for c in string __ c in caps]:
+    ___ p in [c ___ c in string __ c in caps]:
         pass
 
 print(is_balanced('(Sensei [says) no!]','()[]'))    

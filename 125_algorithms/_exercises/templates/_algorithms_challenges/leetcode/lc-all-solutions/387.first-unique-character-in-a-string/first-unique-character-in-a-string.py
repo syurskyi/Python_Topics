@@ -5,10 +5,10 @@ class Solution(object
     :rtype: int
     """
     letters = [0] * 26
-    for c in s:
+    ___ c in s:
       ci = ord(c) - ord('a')
       letters[ci] += 1
-    for i in range(0, le.(s)):
+    ___ i in range(0, le.(s)):
       ci = ord(s[i]) - ord('a')
       __ letters[ci] __ 1:
         r_ i

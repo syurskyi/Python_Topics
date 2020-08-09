@@ -19,7 +19,7 @@ class Trie(object
         __ word is None:
             raise TypeError('word cannot be None')
         node = self.root
-        for char in word:
+        ___ char in word:
             __ char in node.children:
                 node = node.children[char]
             ____
@@ -31,7 +31,7 @@ class Trie(object
             raise TypeError('word cannot be None')
         node = self.root
         parent = None
-        for char in word:
+        ___ char in word:
             __ char in node.children:
                 node = node.children[char]
             ____
@@ -70,7 +70,7 @@ class Trie(object
     ___ _list_words(self, node, curr_word, result
         __ node is None:
             r_
-        for key, child in node.children.items(
+        ___ key, child in node.children.items(
             __ child.terminates:
                 result.append(curr_word+key)
             self._list_words(child, curr_word+key, result)

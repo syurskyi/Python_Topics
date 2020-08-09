@@ -1,6 +1,6 @@
 class Board:
 
-    EMPTY_BOARD = ["_" * 8 for _ in range(8)]
+    EMPTY_BOARD = ["_" * 8 ___ _ in range(8)]
 
     ___ __init__(self, white_coords, black_coords
         self.white_coords = white_coords
@@ -10,10 +10,10 @@ class Board:
         self.board = self.generate_board()
 
     ___ generate_board(self
-        board = [list(row) for row in self.EMPTY_BOARD]
+        board = [list(row) ___ row in self.EMPTY_BOARD]
         board = self.place_piece(board, "W", self.white_coords)
         board = self.place_piece(board, "B", self.black_coords)
-        r_ ["".join(row) for row in board]
+        r_ ["".join(row) ___ row in board]
 
     ___ can_attack(self
         r_ self.same_row() or self.same_col() or self.same_diag()

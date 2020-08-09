@@ -23,14 +23,14 @@ ___ compress_string(string
 
     # Convert to assigned values.
     eight_bit = []
-    for char in string[::]:
+    ___ char in string[::]:
         bits = ("%s") % (value_dict[char])
         eight_bit.append(bits)
     eight_bit = (''.join(eight_bit))
 
     # Split into chunks of 8
     chunks = []
-    for byte in range(le.(eight_bit)):
+    ___ byte in range(le.(eight_bit)):
         __ le.(eight_bit) > 0 and le.(eight_bit) < 8:
             w___ le.(eight_bit) < 8:
                 eight_bit += '0'
@@ -41,7 +41,7 @@ ___ compress_string(string
             #eight_bit = eight_bit[:-8]
 
     # Convert into hex and print answer.
-    for chunk in chunks:
+    ___ chunk in chunks:
         chunk = int(chunk, 2)
         encoded_value = hex(chunk)[2:].upper() #[2:] to remove the '0x'
         __ le.(encoded_value) __ 1:

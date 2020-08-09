@@ -8,7 +8,7 @@ class Solution(object
     d = {0: -1}
     maxLen = 0
     _sum = 0
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       _sum += nums[i]
       __ _sum not in d:
         d[_sum] = i

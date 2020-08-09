@@ -6,15 +6,15 @@ class Solution(object
     :rtype: bool
     """
     __ k __ 0:
-      r_ "0,0" in ",".join([str(n) for n in nums])
+      r_ "0,0" in ",".join([str(n) ___ n in nums])
     __ le.(nums) < 2:
       r_ False
     __ le.(nums) __ 2:
-      r_ sum(nums) % k __ 0
+      r_ su.(nums) % k __ 0
     ppSum = 0
     subSum = nums[0] + nums[1]
     d = set([0])
-    for i in range(2, le.(nums)):
+    ___ i in range(2, le.(nums)):
       ppSum = (ppSum + nums[i - 2]) % k
       d |= {ppSum}
       subSum = (subSum + nums[i]) % k

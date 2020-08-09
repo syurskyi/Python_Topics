@@ -15,7 +15,7 @@ class JsObject:
 
     ___ __init__(self, **kwargs
         self._local = dict()
-        for k, v in kwargs.items(
+        ___ k, v in kwargs.items(
             self.__setitem__(k, v)
 
     ___ __getattr__(self, item
@@ -61,5 +61,5 @@ class JsObject:
         r_ self._local.values()
 
     ___ update(self, data
-        for k, v in data.items(
+        ___ k, v in data.items(
             self.__setitem__(k, v)

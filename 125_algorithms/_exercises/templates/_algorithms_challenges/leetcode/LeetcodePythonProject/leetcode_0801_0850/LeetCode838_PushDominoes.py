@@ -35,7 +35,7 @@ class Solution(object
     
     ___ setVals(self, arr, i, j
         __ arr[i] __ arr[j]:
-            for i0 in range(i+1, j
+            ___ i0 in range(i+1, j
                 arr[i0] = arr[i]
         ____ arr[i] __ 'R' and arr[j] __ 'L':
             i0, j0 = i, j
@@ -53,7 +53,7 @@ class Solution(object
             '.L.R.',
             'R..L..R..LR.R.R.....',
         ]
-        for dominoes in testCases:
+        ___ dominoes in testCases:
             print('origin: %s' % dominoes)
             result = self.pushDominoes(dominoes)
             print('result: %s' % result)

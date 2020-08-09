@@ -18,7 +18,7 @@ class Solution:
             ans.append(path[:])
             r_
 
-        for i in range(start, le.(A)):
+        ___ i in range(start, le.(A)):
             __ remaining < A[i]:
                 r_
 

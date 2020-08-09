@@ -33,7 +33,7 @@ class Solution:
         testCases = [
             TreeNode(1, TreeNode(2, None, TreeNode(5)), TreeNode(3)),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.binaryTreePaths(root)
             print('result: %s' % (result))
 

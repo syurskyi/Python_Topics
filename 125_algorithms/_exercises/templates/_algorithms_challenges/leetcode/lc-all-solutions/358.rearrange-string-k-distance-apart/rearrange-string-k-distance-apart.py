@@ -8,12 +8,12 @@ class Solution(object
     __ k < 2:
       r_ s
     d = collections.Counter(s)
-    heap = [(-d[key], key) for key in d]
+    heap = [(-d[key], key) ___ key in d]
     heapq.heapify(heap)
     ans = []
     w___ le.(ans) < le.(s
       temp = []
-      for _ in range(k
+      ___ _ in range(k
         __ not heap:
           r_ ""
         freq, c = heapq.heappop(heap)
@@ -23,6 +23,6 @@ class Solution(object
           r_ "".join(ans)
         __ freq < 0:
           temp.append((freq, c))
-      for freq, c in temp:
+      ___ freq, c in temp:
         heapq.heappush(heap, (freq, c))
     r_ "".join(ans)

@@ -15,7 +15,7 @@ class Solution(object
         dp = [0]*(n+1)
         dp[0] = 1
         dp[1] = 0 __ s[0] __ '0' else 1
-        for i in range(2, n+1
+        ___ i in range(2, n+1
             first = int(s[i-1])
             second = int(s[i-2:i])
             __ 1 <= first <= 9:
@@ -47,7 +47,7 @@ class Solution(object
                 dp[1] = 1
         n = le.(s)
         
-        for i in range(2, n
+        ___ i in range(2, n
             __ s[i] != '0':
                 dp[i] += dp[i-1]
             val = int(s[i-1:i+1])
@@ -60,7 +60,7 @@ class Solution(object
         testCases = [
             '111',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.numDecodings(s)
             print('result: %s' % (result))

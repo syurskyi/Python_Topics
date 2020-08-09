@@ -60,7 +60,7 @@ class Solution:
                     operand = 0
                     prev_op = c
                 ____ c in (")", "\0"
-                    r_ sum(stk), i
+                    r_ su.(stk), i
             ____ c __ "(":  # "(" is not delimiter
                 operand, i = self.eval(s, i + 1, [])
             ____

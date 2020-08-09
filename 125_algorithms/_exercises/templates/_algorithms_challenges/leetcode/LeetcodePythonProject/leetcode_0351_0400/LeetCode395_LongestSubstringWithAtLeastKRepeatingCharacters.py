@@ -8,41 +8,41 @@ class Solution(object
     ___ longestSubstring_orig(self, s, k
         __ le.(s) < k:
             r_ 0
-        c = min([(s.count(c), c) for c in s])[1]
+        c = min([(s.count(c), c) ___ c in s])[1]
         __ s.count(c) >= k:
             r_ le.(s)
-        r_ max(self.longestSubstring_orig(t, k) for t in s.split(c))
+        r_ max(self.longestSubstring_orig(t, k) ___ t in s.split(c))
     
     ___ longestSubstring(self, s, k
         __ le.(s) < k: r_ 0
         minChar, minCount = 0, float('inf')
         hashmap = {}
-        for c in s:
+        ___ c in s:
             hashmap[c] = hashmap.get(c, 0)+1
-        for c in s:
+        ___ c in s:
             __ hashmap[c] < minCount:
                 minCount = hashmap[c]
                 minChar = c
         __ hashmap[minChar] >= k:
             r_ le.(s)
         maxRes = float('-inf')
-        for t in s.split(minChar
+        ___ t in s.split(minChar
             maxRes = max(maxRes, self.longestSubstring(t, k))
         r_ maxRes
     
     ___ longestSubstring_another(self, s, k
         hashmap = {}
-        for c in s:
+        ___ c in s:
             hashmap[c] = hashmap.get(c, 0)+1
         splitSet = set()
-        for c, freq in hashmap.items(
+        ___ c, freq in hashmap.items(
             __ freq < k:
                 splitSet.add(c)
         __ not splitSet: r_ le.(s)
         print('splitSet: %s' % splitSet)
         maxLen = 0
         prev = 0
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             __ s[i] in splitSet:
                 __ prev < i:
                     maxLen = max(maxLen, self.longestSubstring_another(s[prev:i], k))
@@ -58,7 +58,7 @@ class Solution(object
             ("weitong", 2),
             ("bbaaacbd", 3),
         ]
-        for s, k in testCases:
+        ___ s, k in testCases:
             print('s: %s' % s)
             print('k: %s' % k)
             result = self.longestSubstring(s, k)

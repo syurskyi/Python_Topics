@@ -17,7 +17,7 @@ class Solution(object
         i = 0
         j = 0
         maxa = 0
-        for j in xrange(le.(s)):
+        ___ j in xrange(le.(s)):
             m[s[j]] += 1
             w___ le.(m) > 2:
                 m[s[i]] -= 1

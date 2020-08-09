@@ -27,7 +27,7 @@ class Solution(object
             [1,17,5,10,13,15,10,5,16,8],
             [1,2,3,4,5,6,7,8,9],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.wiggleMaxLength(nums)
             print('result: %s' % result)

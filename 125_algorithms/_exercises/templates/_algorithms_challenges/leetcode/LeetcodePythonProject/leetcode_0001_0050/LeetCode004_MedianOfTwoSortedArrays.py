@@ -49,7 +49,7 @@ class Solution(object
                 [3, 4],
             ],
         ]
-        for nums1, nums2 in testCases:
+        ___ nums1, nums2 in testCases:
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
             result = self.findMedianSortedArrays(nums1, nums2)

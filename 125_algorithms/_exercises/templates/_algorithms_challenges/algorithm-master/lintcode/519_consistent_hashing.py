@@ -11,11 +11,11 @@ class Solution:
         ti = 0 # ti: target_index for the **upcoming** machine in results
         # mi: machine_index for the **upcoming** machines in results
         # for n is 5: got [1, 2, 3, 4]
-        for mi in range(1, n
+        ___ mi in range(1, n
             ti = 0
             # emi: existing_machine_index for the **existing** machines in results
             # for n is 5 and will add last machine: got [0, 1, 2, 3]
-            for emi in range(mi
+            ___ emi in range(mi
                 # Before adding each machine, check the current maximum partition
                 __ res[emi][1] - res[emi][0] > res[ti][1] - res[ti][0]:
                     ti = emi

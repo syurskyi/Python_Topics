@@ -60,7 +60,7 @@ class Solution:
         brute force
         """
         l = le.(S)
-        for i in range(1, l + 1
+        ___ i in range(1, l + 1
             num_str = S[:i]
             __ le.(num_str) > 1 and num_str.startswith("0"
                 continue
@@ -69,7 +69,7 @@ class Solution:
             __ num > MAX:
                 break
 
-            for j in range(i + 1, l + 1
+            ___ j in range(i + 1, l + 1
                 num2_str = S[i:j]
                 __ le.(num2_str) > 1 and num2_str.startswith("0"
                     continue

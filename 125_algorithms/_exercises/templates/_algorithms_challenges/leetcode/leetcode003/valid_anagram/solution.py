@@ -21,12 +21,12 @@ class Solution(object
         __ le.(s) != le.(t
             r_ False
         d = {}
-        for c in s:
+        ___ c in s:
             __ c in d:
                 d[c] += 1
             ____
                 d[c] = 1
-        for c in t:
+        ___ c in t:
             __ c not in d:
                 r_ False
             ____

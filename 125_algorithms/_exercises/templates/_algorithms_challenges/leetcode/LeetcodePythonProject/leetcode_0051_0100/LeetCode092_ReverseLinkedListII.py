@@ -23,14 +23,14 @@ class Solution(object
         dummy = ListNode(-1)
         dummy.next = head
         head = dummy
-        for _ in range(1, m
+        ___ _ in range(1, m
             __ not head:
                 r_ None
             head = head.next
         prevNode = head
         mNode = head.next
         nNode, postnNode = mNode, mNode.next
-        for _ in range(m, n
+        ___ _ in range(m, n
             __ not postnNode:
                 r_ None
             tmp = postnNode.next

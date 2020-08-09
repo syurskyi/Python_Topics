@@ -54,7 +54,7 @@ class MyCalendarThree:
         bisect.insort(self.lst, (end, "end"))
         ret = 0
         count = 0
-        for _, flag in self.lst:
+        ___ _, flag in self.lst:
             count += 1 __ flag __ "start" else -1
             ret = max(ret, count)
 

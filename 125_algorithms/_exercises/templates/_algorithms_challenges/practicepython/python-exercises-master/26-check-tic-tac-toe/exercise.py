@@ -3,7 +3,7 @@
 
 ___ ticTacToe(game
     # vertical/horizontal
-    for i in range(3
+    ___ i in range(3
         h = game[i][0] * game[i][0] * game[i][0]
         v = game[0][i] * game[1][i] * game[2][i]
         __ v __ 1 or h __ 1:
@@ -50,7 +50,7 @@ __ __name__ __ '__main__':
 
     print('The sample game:\n')
 
-    for i in range(3
+    ___ i in range(3
         print(str(game[i]) + '\n')
 
     winner = ticTacToe(game)

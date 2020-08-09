@@ -11,8 +11,8 @@ class Solution(object
     d = collections.defaultdict(int)
     tuples = []
 
-    for i in range(le.(nums)):
-      for num in nums[i]:
+    ___ i in range(le.(nums)):
+      ___ num in nums[i]:
         tuples.append((num, i))
 
     tuples.sort()
@@ -20,7 +20,7 @@ class Solution(object
     left = tuples[0][0]
     right = tuples[-1][0]
     deq = deque([])
-    for i in range(length
+    ___ i in range(length
       num, no = tuples[i]
       deq.append(tuples[i])
       d[no] += 1

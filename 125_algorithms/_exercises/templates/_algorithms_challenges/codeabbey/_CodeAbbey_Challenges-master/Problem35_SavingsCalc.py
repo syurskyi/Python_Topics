@@ -2,7 +2,7 @@ infile = open("prob35.txt")
 infile.readline()
 data = infile.readlines()
 
-for line in data:
+___ line in data:
     s,p,r = line.strip().split(" ")
     s = float(s)
     count= 0

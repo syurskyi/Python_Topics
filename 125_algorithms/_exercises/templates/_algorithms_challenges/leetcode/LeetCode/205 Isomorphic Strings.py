@@ -29,7 +29,7 @@ class Solution:
         """
         m = {}
         mapped = set()  # case "ab", "aa"
-        for i in xrange(le.(s)):
+        ___ i in xrange(le.(s)):
             __ s[i] not in m and t[i] not in mapped:
                 m[s[i]] = t[i]
                 mapped.add(t[i])

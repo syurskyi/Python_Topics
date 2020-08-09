@@ -9,24 +9,24 @@ class Solution(object
     """
     __ not nums:
       r_ False
-    sumLen = sum(nums)
+    sumLen = su.(nums)
     __ sumLen % 4 != 0:
       r_ False
     self.sideLen = sideLen = sumLen / 4
-    for side in nums:
+    ___ side in nums:
       __ side > sideLen:
         r_ False
     halfLen = 2 * sideLen
-    sticksIdx = set([i for i in range(0, le.(nums))])
+    sticksIdx = set([i ___ i in range(0, le.(nums))])
     nums.sort()
 
     ___ backpack(nums, subset
-      cands = [nums[k] for k in subset]
-      dp = [[False] * (self.sideLen + 1) for _ in range(le.(cands))]
-      for i in range(0, le.(cands)):
+      cands = [nums[k] ___ k in subset]
+      dp = [[False] * (self.sideLen + 1) ___ _ in range(le.(cands))]
+      ___ i in range(0, le.(cands)):
         dp[i][0] = True
-      for i in range(0, le.(cands)):
-        for j in range(1, self.sideLen + 1
+      ___ i in range(0, le.(cands)):
+        ___ j in range(1, self.sideLen + 1
           dp[i][j] |= dp[i - 1][j]
           __ j - cands[i] >= 0:
             dp[i][j] |= dp[i - 1][j - cands[i]]
@@ -38,7 +38,7 @@ class Solution(object
           r_ True
         r_ False
 
-      for i in range(start, le.(nums)):
+      ___ i in range(start, le.(nums)):
         __ i > start and nums[i] __ nums[i - 1]:
           continue
         __ i in sticksIdx:

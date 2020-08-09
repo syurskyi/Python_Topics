@@ -19,7 +19,7 @@ class Solution(object
             res = max(res, t)
             __ x __ y __ n-1:
                 r_ res
-            for i, j in (x+1, y), (x, y+1), (x-1, y), (x, y-1
+            ___ i, j in (x+1, y), (x, y+1), (x-1, y), (x, y-1
                 __ 0 <= i < n and 0 <= j < n and (i, j) not in visited:
                     visited.add((i, j))
                     heapq.heappush(pq, (grid[i][j], i, j))
@@ -39,7 +39,7 @@ class Solution(object
                 [10, 9, 8, 7, 6],
             ],
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             result = self.swimInWater(grid)
             print('result: %s' % result)
             print('-='*30+'-')

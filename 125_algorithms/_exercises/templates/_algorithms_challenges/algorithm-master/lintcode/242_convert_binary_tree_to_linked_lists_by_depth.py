@@ -26,7 +26,7 @@ class Solution:
             _queue = []
             dummy = tail = ListNode(-1)
 
-            for node in queue:
+            ___ node in queue:
                 tail.next = ListNode(node.val)
                 tail = tail.next
 

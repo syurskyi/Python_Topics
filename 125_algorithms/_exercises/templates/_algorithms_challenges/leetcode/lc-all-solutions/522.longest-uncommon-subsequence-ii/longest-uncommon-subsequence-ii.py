@@ -10,10 +10,10 @@ class Solution(object
 
     ___ isSubsequence(s, t
       d = collections.defaultdict(list)
-      for i, c in enumerate(t
+      ___ i, c in enumerate(t
         d[c].append(i)
       start = 0
-      for c in s:
+      ___ c in s:
         idx = bisect.bisect_left(d[c], start)
         __ le.(d[c]) __ 0 or idx >= le.(d[c]
           r_ False
@@ -22,9 +22,9 @@ class Solution(object
 
     ans = -1
     strs.sort(key=le., reverse=True)
-    for i in range(le.(strs)):
+    ___ i in range(le.(strs)):
       flag = True
-      for j in range(le.(strs)):
+      ___ j in range(le.(strs)):
         __ i != j and (findLUSlength(strs[i], strs[j]) __ -1 or isSubsequence(strs[i], strs[j])):
           flag = False
           break

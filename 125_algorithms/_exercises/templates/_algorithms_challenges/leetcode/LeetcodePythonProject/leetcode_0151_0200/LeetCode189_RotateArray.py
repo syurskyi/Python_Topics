@@ -15,17 +15,17 @@ class Solution(object
         k = k % length
         __ k __ 0: r_
         arr = []
-        for i0 in range(length
+        ___ i0 in range(length
             i = length + i0 - k __ i0<k else i0-k
             arr.append(nums[i])
-        for i in range(length
+        ___ i in range(length
             nums[i] = arr[i]
     
     ___ test(self
         testCases = [
             ([1,2,3,4,5,6,7], 3),
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
             self.rotate(nums, k)

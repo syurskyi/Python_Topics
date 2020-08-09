@@ -21,9 +21,9 @@ class Solution(object
         :type rowIndex: int
         :rtype: List[int]
         """
-        res = [1 for i in range(rowIndex + 1)]
-        for row in range(rowIndex + 1
-            for col in range(1, row
+        res = [1 ___ i in range(rowIndex + 1)]
+        ___ row in range(rowIndex + 1
+            ___ col in range(1, row
                 col = row - col
                 res[col] += res[col - 1]
         r_ res

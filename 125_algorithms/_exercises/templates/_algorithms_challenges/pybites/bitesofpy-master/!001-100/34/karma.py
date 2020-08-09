@@ -24,12 +24,12 @@ class User:
 
     @property
     ___ fans(self) -> int:
-        r_ le.({x.giver for x in self._transactions})
+        r_ le.({x.giver ___ x in self._transactions})
 
     @property
     ___ points(self) -> list:
-        r_ [x.points for x in self._transactions]
+        r_ [x.points ___ x in self._transactions]
 
     @property
     ___ karma(self) -> int:
-        r_ sum(self.points)
+        r_ su.(self.points)

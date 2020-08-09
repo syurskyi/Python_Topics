@@ -3,7 +3,7 @@ infile = open("prob50.txt")
 infile.readline()
 data= infile.readlines()
 punc = " ,.:;-"
-for line in data:
+___ line in data:
     line = line.strip()
     line = re.sub("[- ,.:;?!]","",line) # replace multiple char with ""
     line = line.lower()  # make all lower

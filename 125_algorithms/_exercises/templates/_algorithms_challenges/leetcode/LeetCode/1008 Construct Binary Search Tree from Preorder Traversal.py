@@ -46,7 +46,7 @@ class Solution:
         """
         root = TreeNode(preorder[0])
         stk = [root]
-        for a in preorder[1:]:
+        ___ a in preorder[1:]:
             node = TreeNode(a)
             __ a < stk[-1].val:  # le.(stk) always >= 1
                 stk[-1].left = node
@@ -68,7 +68,7 @@ class Solution:
         """
         root = TreeNode(preorder[0])
         stk = [root]
-        for a in preorder[1:]:
+        ___ a in preorder[1:]:
             node = TreeNode(a)
             __ a < stk[-1].val:
                 stk[-1].left = node

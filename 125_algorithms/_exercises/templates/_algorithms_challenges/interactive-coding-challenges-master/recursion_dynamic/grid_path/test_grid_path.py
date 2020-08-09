@@ -9,7 +9,7 @@ class TestGridPath(object
         assert_equal(grid.find_path([[]]), None)
         max_rows = 8
         max_cols = 4
-        matrix = [[1] * max_cols for _ in range(max_rows)]
+        matrix = [[1] * max_cols ___ _ in range(max_rows)]
         matrix[1][1] = 0
         matrix[2][2] = 0
         matrix[3][0] = 0

@@ -16,7 +16,7 @@ class Solution:
             r_ 0
 
         ans = Pmin = Pmax = A[0]
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             """
             adding `A[i]` to reset `min` and `max`
             if its so lowest or highest

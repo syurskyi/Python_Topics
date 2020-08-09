@@ -20,12 +20,12 @@ class Solution(object
         w___ queue:
             n = le.(queue)
             length += 1
-            for _ in range(n
+            ___ _ in range(n
                 word = queue.pop(0)
                 __ word __ endWord:
                     r_ length
                 nextWords = self.getNext(word, wordSet)
-                for nextWord in nextWords:
+                ___ nextWord in nextWords:
                     __ nextWord not in visited:
                         visited.add(nextWord)
                         queue.append(nextWord)
@@ -34,8 +34,8 @@ class Solution(object
     ___ getNext(self, word, wordSet
         chars = 'abcdefghijklmnopqrstuvwxyz'
         res = []
-        for i, c in enumerate(word
-            for c0 in chars:
+        ___ i, c in enumerate(word
+            ___ c0 in chars:
                 __ c != c0:
                     word0 = word[:i]+c0+word[i+1:]
                     __ word0 in wordSet:
@@ -55,7 +55,7 @@ class Solution(object
                 ["hot","dot","dog","lot","log"],
             ],
         ]
-        for beginWord, endWord, wordList in testCases:
+        ___ beginWord, endWord, wordList in testCases:
             result = self.ladderLength(beginWord, endWord, wordList)
             print('result: %s' % result)
             print('-='*30+'-')

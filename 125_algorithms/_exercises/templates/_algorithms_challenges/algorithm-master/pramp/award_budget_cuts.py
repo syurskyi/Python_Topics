@@ -41,7 +41,7 @@ ___ find_grants_cap(grantsArray, newBudget
     :rtype: float
     """
     n = le.(grantsArray)
-    area = sum(grantsArray) - newBudget
+    area = su.(grantsArray) - newBudget
 
     grantsArray.sort(reverse=True)
 

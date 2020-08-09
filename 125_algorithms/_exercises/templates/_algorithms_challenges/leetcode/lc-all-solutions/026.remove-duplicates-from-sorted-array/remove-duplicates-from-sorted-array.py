@@ -7,7 +7,7 @@ class Solution(object
     __ le.(nums) <= 1:
       r_ le.(nums)
     slow = 0
-    for i in range(1, le.(nums)):
+    ___ i in range(1, le.(nums)):
       __ nums[i] != nums[slow]:
         slow += 1
         nums[slow] = nums[i]

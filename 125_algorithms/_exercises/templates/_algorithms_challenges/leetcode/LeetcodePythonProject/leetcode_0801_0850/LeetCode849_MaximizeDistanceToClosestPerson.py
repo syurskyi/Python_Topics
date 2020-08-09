@@ -10,7 +10,7 @@ class Solution(object
         :rtype: int
         """
         res = i = 0
-        for j in range(le.(seats)):
+        ___ j in range(le.(seats)):
             __ seats[j] __ 1:
                 __ i __ 0:
                     res = j
@@ -29,15 +29,15 @@ class Solution(object
         left = [0]*(n+1)
         right = [0]*(n+1)
         left[0] = float('inf')
-        for i in range(n
+        ___ i in range(n
             __ seats[i] __ 0:
                 left[i+1] = left[i]+1
         right[-1] = float('inf')
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             __ seats[i] __ 0:
                 right[i] = right[i+1]+1
         res = float('-inf')
-        for i in range(n
+        ___ i in range(n
             __ left[i+1] != 0 and right[i] != 0:
                 res = max(res, min(left[i+1], right[i]))
         r_ res
@@ -49,7 +49,7 @@ class Solution(object
             [0,1],
             [1,0],
         ]
-        for seats in testCases:
+        ___ seats in testCases:
             result = self.maxDistToClosest(seats)
             print('result: %s' % result)
             print('-='*30)

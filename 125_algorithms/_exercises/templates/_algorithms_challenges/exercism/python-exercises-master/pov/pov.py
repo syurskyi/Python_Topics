@@ -7,7 +7,7 @@ class Tree(object
         self.children = children
 
     ___ __dict__(self
-        r_ {self.label: [c.__dict__() for c in sorted(self.children)]}
+        r_ {self.label: [c.__dict__() ___ c in sorted(self.children)]}
 
     ___ __str__(self, indent=None
         r_ dumps(self.__dict__(), indent=indent)

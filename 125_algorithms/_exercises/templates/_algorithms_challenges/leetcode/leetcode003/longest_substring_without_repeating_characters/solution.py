@@ -4,7 +4,7 @@ class Solution:
         res = 0
         cur = 0
         d = {}
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c not in d:
                 cur += 1
             ____

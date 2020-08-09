@@ -26,7 +26,7 @@ class Solution:
         """
         cnt = left = 0
 
-        for right in range(le.(A)):
+        ___ right in range(le.(A)):
             w___ A[right] - A[left] > mid:
                 left += 1
 

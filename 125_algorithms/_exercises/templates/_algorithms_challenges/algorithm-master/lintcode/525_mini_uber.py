@@ -47,7 +47,7 @@ class MiniUber:
         _distance = distance = self.INFINITY
         driver_id = -1
 
-        for _driver_id, _loc in self.driver_to_locs.items(
+        ___ _driver_id, _loc in self.driver_to_locs.items(
             _distance = Helper.get_distance(_loc['lat'], _loc['lng'], lat, lng)
             __ _distance < distance:
                 driver_id = _driver_id

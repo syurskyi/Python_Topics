@@ -29,7 +29,7 @@ class Solution(object
             i, j = nxt_i, nxt_j
 
         celebrity = i
-        for i in xrange(n
+        ___ i in xrange(n
             __ i != celebrity and (not knows(i, celebrity) or knows(celebrity, i)):
                 r_ -1
 
@@ -57,7 +57,7 @@ class Solution(object
             r_ -1
 
         celebrity = V.pop()
-        for i in xrange(n
+        ___ i in xrange(n
             __ i != celebrity and (not knows(i, celebrity) or knows(celebrity, i)):
                 r_ -1
 

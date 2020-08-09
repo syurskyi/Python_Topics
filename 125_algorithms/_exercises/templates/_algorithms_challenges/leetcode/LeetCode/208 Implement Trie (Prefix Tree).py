@@ -32,7 +32,7 @@ class Trie:
         :rtype: None
         """
         cur = self.root
-        for w in word:
+        ___ w in word:
             __ w not in cur.children:   # not override
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
@@ -46,7 +46,7 @@ class Trie:
         :rtype: bool
         """
         cur = self.root
-        for w in word:
+        ___ w in word:
             __ w in cur.children:
                 cur = cur.children[w]
             ____
@@ -64,7 +64,7 @@ class Trie:
         :rtype: bool
         """
         cur = self.root
-        for w in prefix:
+        ___ w in prefix:
             __ w in cur.children:
                 cur = cur.children[w]
             ____

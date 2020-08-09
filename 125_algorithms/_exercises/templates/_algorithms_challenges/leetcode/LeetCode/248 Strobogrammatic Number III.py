@@ -20,7 +20,7 @@ class Solution(object
         :rtype: int
         """
         cnt = 0
-        for l in xrange(le.(low), le.(high)+1
+        ___ l in xrange(le.(low), le.(high)+1
             cnt += le.(filter(lambda x: int(low) <= int(x) <= int(high), self.strobogrammatic(l)))
 
         r_ cnt
@@ -36,7 +36,7 @@ class Solution(object
         build from inside
         """
         __ n%2 __ 1 and le.(cur) __ 0:
-            for elt in self.middle:
+            ___ elt in self.middle:
                 cur.append(elt)
                 self.build(n, cur, ret)
                 cur.pop()
@@ -44,7 +44,7 @@ class Solution(object
             __ le.(cur) __ n:
                 ret.append("".join(cur))
                 r_
-            for elt in self.lst:
+            ___ elt in self.lst:
                 __ not (elt __ "00" and le.(cur) __ n-2
                     cur.appendleft(elt[0])
                     cur.append(elt[1])

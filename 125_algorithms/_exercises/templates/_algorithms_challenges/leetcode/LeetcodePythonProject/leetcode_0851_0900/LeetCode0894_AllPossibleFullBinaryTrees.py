@@ -27,11 +27,11 @@ class Solution(object
         __ N __ 1:
             res.append(TreeNode(0))
             r_ res
-        for i in range(N
+        ___ i in range(N
             left = self.allPossibleFBT(i)
             right = self.allPossibleFBT(N-i-1)
-            for leftNode in left:
-                for rightNode in right:
+            ___ leftNode in left:
+                ___ rightNode in right:
                     root = TreeNode(0)
                     root.left = leftNode
                     root.right = rightNode
@@ -48,11 +48,11 @@ class Solution(object
         __ N __ 1:
             r_ [TreeNode(0)]
         res = []
-        for i in range(N
+        ___ i in range(N
             left = self.allPossibleFBT(i)
             right = self.allPossibleFBT(N-i-1)
-            for leftNode in left:
-                for rightNode in right:
+            ___ leftNode in left:
+                ___ rightNode in right:
                     root = TreeNode(0)
                     root.left = leftNode
                     root.right = rightNode

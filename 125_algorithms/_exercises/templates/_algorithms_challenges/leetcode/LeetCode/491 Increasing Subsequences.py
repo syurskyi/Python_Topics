@@ -28,17 +28,17 @@ class Solution:
         :rtype: List[List[int]]
         """
         subs = set()
-        for n in nums:
+        ___ n in nums:
             subs |= set([
                 sub + (n,)
-                for sub in subs
+                ___ sub in subs
                 __ n >= sub[-1]
             ])
             subs.add((n,))
             
         r_ [
             list(sub)
-            for sub in subs
+            ___ sub in subs
             __ le.(sub) >= 2
         ]
 
@@ -56,13 +56,13 @@ class Solution:
         l = le.(nums)
         F = [
             [(nums[i],)]
-            for i in range(l)
+            ___ i in range(l)
         ]
         ret = set()
-        for i in range(1, l
-            for j in range(i
+        ___ i in range(1, l
+            ___ j in range(i
                 __ nums[i] >= nums[j]:
-                    for t in F[j]:
+                    ___ t in F[j]:
                         cur = t + (nums[i],)
                         ret.add(cur)
                         F[i].append(cur)

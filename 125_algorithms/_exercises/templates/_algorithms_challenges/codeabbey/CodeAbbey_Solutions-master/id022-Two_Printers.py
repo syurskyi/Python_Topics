@@ -3,8 +3,8 @@
 ___ two_printers(
     tests = int(input())
     answer = []
-    for test in range(tests
-        x, y, n = [float(x) for x in input().split()]
+    ___ test in range(tests
+        x, y, n = [float(x) ___ x in input().split()]
         a = int(y * n / (x + y))
         b = int(x * n / (x + y))
 

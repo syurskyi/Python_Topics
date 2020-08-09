@@ -9,13 +9,13 @@ class Solution(object
     """
     hs = []
     heap = []
-    for b in buildings:
+    ___ b in buildings:
       hs.append((b[0], -b[2]))
       hs.append((b[1], b[2]))
     hs.sort()
     ans = []
     pre = cur = None
-    for h in hs:
+    ___ h in hs:
       pos = h[0]
       height = h[1]
       __ height < 0:

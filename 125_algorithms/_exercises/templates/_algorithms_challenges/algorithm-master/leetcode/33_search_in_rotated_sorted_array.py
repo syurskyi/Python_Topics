@@ -29,7 +29,7 @@ class Solution:
                 ____
                     left = mid
 
-        for mid in (left, right
+        ___ mid in (left, right
             __ nums[mid] __ target:
                 r_ mid
 

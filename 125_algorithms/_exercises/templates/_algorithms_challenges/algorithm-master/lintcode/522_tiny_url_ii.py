@@ -3,9 +3,9 @@ ______ random
 
 class TinyUrl2:
     ___ __init__(self
-        self.chars = [str(i) for i in range(10)]
-        self.chars.extend(chr(i) for i in range(ord('a'), ord('z') + 1))
-        self.chars.extend(chr(i) for i in range(ord('A'), ord('Z') + 1))
+        self.chars = [str(i) ___ i in range(10)]
+        self.chars.extend(chr(i) ___ i in range(ord('a'), ord('z') + 1))
+        self.chars.extend(chr(i) ___ i in range(ord('A'), ord('Z') + 1))
 
         self.host = 'http://tiny.url/'
         self.size = 6
@@ -83,5 +83,5 @@ class TinyUrl2:
     ___ get_hash_key(self, size
         r_ ''.join(
             random.choice(self.chars)
-            for _ in range(size)
+            ___ _ in range(size)
         )

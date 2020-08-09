@@ -72,13 +72,13 @@ class Trie:
 class Solution:
     ___ replaceWords(self, dic: List[str], sentence: str) -> str:
         trie = Trie()
-        for word in dic:
+        ___ word in dic:
             root = trie.root
             root.children[word[0]] = Trie.insert(root.children[word[0]], word, 0)
 
         ret = []
-        for word in sentence.split(" "
-            for child in trie.root.children.values(
+        ___ word in sentence.split(" "
+            ___ child in trie.root.children.values(
                 searched = Trie.search(child, word, 0)
                 __ searched:
                     ret.append(searched)

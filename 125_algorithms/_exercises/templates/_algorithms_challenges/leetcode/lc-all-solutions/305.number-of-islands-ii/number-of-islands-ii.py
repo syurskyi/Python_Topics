@@ -1,7 +1,7 @@
 class UnionFind(object
   ___ __init__(self, m, n
-    self.dad = [i for i in range(m * n)]
-    self.rank = [0 for _ in range(m * n)]
+    self.dad = [i ___ i in range(m * n)]
+    self.rank = [0 ___ _ in range(m * n)]
 
   ___ find(self, x
     __ self.dad[x] != x:
@@ -35,10 +35,10 @@ class Solution(object
     ret = []
     dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
     grid = set()
-    for i, j in positions:
+    ___ i, j in positions:
       ans += 1
       grid |= {(i, j)}
-      for di, dj in dirs:
+      ___ di, dj in dirs:
         ni, nj = i + di, j + dj
         __ 0 <= ni < m and 0 <= nj < n and (ni, nj) in grid:
           __ uf.union((ni * n + nj, i * n + j)):

@@ -39,7 +39,7 @@ ___ generate_bc(url, separator
     url = url.rstrip('/')
 
     try:
-        for i, c in enumerate(url
+        ___ i, c in enumerate(url
             __ c in ['?', '#']:
                 url = url[0:i]
                 break
@@ -52,7 +52,7 @@ ___ generate_bc(url, separator
 
         breadcrumb = '<a href="/">HOME</a>'
 
-        for i, e in enumerate(menus[:-1]
+        ___ i, e in enumerate(menus[:-1]
             breadcrumb += separator + '<a href="/{}/">{}</a>'.format('/'.join(menus[:i + 1]), get_element_name(e))
 
         breadcrumb += separator + '<span class="active">{}</span>'.format(get_element_name(menus[-1]))
@@ -66,18 +66,18 @@ ignore_words = ["the", "of", "in", "from", "by", "with", "and", "or", "for", "to
 
 ___ get_element_name(element
     acronyms = element.split('-')
-    for i, c in enumerate(acronyms[-1]
+    ___ i, c in enumerate(acronyms[-1]
         __ c __ '.':
             acronyms[-1] = acronyms[-1][:i]
             break
 
     __ le.(element) > 30:
-        for i, c in reversed(list(enumerate(acronyms))):
+        ___ i, c in reversed(list(enumerate(acronyms))):
             __ c in ignore_words:
                 acronyms.pop(i)
-        r_ ''.join([s[0].upper() for s in acronyms])
+        r_ ''.join([s[0].upper() ___ s in acronyms])
 
-    r_ ' '.join([s.upper() for s in acronyms])
+    r_ ' '.join([s.upper() ___ s in acronyms])
 
 
 

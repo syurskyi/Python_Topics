@@ -27,9 +27,9 @@ class Solution:
             r_ self.containsNearByDuplicate(nums, k)
 
         od = OrderedDict()  # keep the window
-        for n in nums:
+        ___ n in nums:
             key = n/t
-            for j in (-1, 0, 1  # (n-t, n, n+t), shrink the interval
+            ___ j in (-1, 0, 1  # (n-t, n, n+t), shrink the interval
                 m = od.get(key+j)
                 __ m is not None and abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
                     r_ True
@@ -43,7 +43,7 @@ class Solution:
 
     ___ containsNearByDuplicate(self, nums, k
         od = OrderedDict()
-        for n in nums:
+        ___ n in nums:
             __ od.get(n
                 r_ True
 

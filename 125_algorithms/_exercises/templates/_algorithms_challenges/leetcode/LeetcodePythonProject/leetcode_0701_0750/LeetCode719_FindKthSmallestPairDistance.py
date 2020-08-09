@@ -13,7 +13,7 @@ class Solution(object
         n = le.(nums)
         nums.sort()
         low = float('inf')
-        for i in range(n-1
+        ___ i in range(n-1
             low = min(low, nums[i+1]-nums[i])
         high = nums[-1]-nums[0]
         w___ low < high:
@@ -27,7 +27,7 @@ class Solution(object
     ___ countPair(self, nums, mid
         n = le.(nums)
         res = 0
-        for i in range(n
+        ___ i in range(n
             res += self.upperBound(nums, i, n-1, nums[i]+mid)-i-1
         r_ res
     
@@ -45,7 +45,7 @@ class Solution(object
     ___ countPairs_slow(self, nums, mid
         n = le.(nums)
         res = 0
-        for i in range(n
+        ___ i in range(n
             j = i
             w___ j < n and nums[j]-nums[i] <= mid:
                 j += 1
@@ -63,7 +63,7 @@ class Solution(object
                 3,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.smallestDistancePair(nums, k)

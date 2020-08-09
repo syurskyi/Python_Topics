@@ -25,15 +25,15 @@ ___ deletion_distance(s, t
         r_ le.(s)
 
     m, n = le.(s), le.(t)
-    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    dp = [[0] * (n + 1) ___ _ in range(m + 1)]
 
-    for i in range(1, m + 1
+    ___ i in range(1, m + 1
         dp[i][0] = i
-    for j in range(1, n + 1
+    ___ j in range(1, n + 1
         dp[0][j] = j
 
-    for i in range(1, m + 1
-        for j in range(1, n + 1
+    ___ i in range(1, m + 1
+        ___ j in range(1, n + 1
             __ s[i - 1] __ t[j - 1]:
                 dp[i][j] = dp[i - 1][j - 1]
             ____
@@ -56,17 +56,17 @@ ___ deletion_distance2(s, t
         r_ le.(s)
 
     m, n = le.(s), le.(t)
-    dp = [[0] * (n + 1) for _ in range(2)]
+    dp = [[0] * (n + 1) ___ _ in range(2)]
     pre = cur = 0
 
-    for j in range(1, n + 1
+    ___ j in range(1, n + 1
         dp[cur][j] = j
 
-    for i in range(1, m + 1
+    ___ i in range(1, m + 1
         pre, cur = cur, 1 - cur
         dp[cur][0] = i
 
-        for j in range(1, n + 1
+        ___ j in range(1, n + 1
             __ s[i - 1] __ t[j - 1]:
                 dp[cur][j] = dp[pre][j - 1]
             ____

@@ -47,10 +47,10 @@ class Solution:
         """
         h = []
         counter = defaultdict(int)
-        for w in words:
+        ___ w in words:
             counter[w] += 1
 
-        for w, c in counter.items(
+        ___ w, c in counter.items(
             heapq.heappush(h, Word(w, c))
             __ le.(h) > k:
                 heapq.heappop(h)

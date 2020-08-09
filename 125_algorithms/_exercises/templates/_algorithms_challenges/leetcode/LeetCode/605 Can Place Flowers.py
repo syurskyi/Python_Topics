@@ -30,7 +30,7 @@ class Solution:
         __ n __ 0:
             r_ True
 
-        for i in range(le.(flowerbed)):
+        ___ i in range(le.(flowerbed)):
             __ (
                 flowerbed[i] != 1 and
                 (i + 1 >= le.(flowerbed) or flowerbed[i+1] != 1) and

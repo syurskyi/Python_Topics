@@ -14,11 +14,11 @@ class Solution(object
             r_ 0
         m = le.(obstacleGrid)
         n = le.(obstacleGrid[0])
-        dp = [[0]*n for i in range(m)]
+        dp = [[0]*n ___ i in range(m)]
         __ obstacleGrid[0][0] __ 1:
             r_ 0
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ obstacleGrid[i][j] __ 1:
                     dp[i][j] = 0
                     continue

@@ -14,6 +14,6 @@ ___ transpose(data
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
     __ isinstance(data, dict
-        data = ((key, value) for key, value in data.items())
+        data = ((key, value) ___ key, value in data.items())
     r_ zip(*data)
 

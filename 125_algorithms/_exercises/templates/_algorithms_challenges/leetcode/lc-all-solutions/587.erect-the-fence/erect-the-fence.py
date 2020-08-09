@@ -19,12 +19,12 @@ class Solution(object
     points.sort(key=lambda x: (x.x, x.y))
     upper = []
     lower = []
-    for point in points:
+    ___ point in points:
       w___ le.(lower) >= 2 and direction(lower[-2], lower[-1], point) < 0:
         lower.pop()
       lower.append(point)
 
-    for point in reversed(points
+    ___ point in reversed(points
       w___ le.(upper) >= 2 and direction(upper[-2], upper[-1], point) < 0:
         upper.pop()
       upper.append(point)

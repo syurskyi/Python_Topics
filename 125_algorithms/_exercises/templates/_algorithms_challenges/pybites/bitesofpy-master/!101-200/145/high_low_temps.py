@@ -55,30 +55,30 @@ ___ high_low_record_breakers_for_2015(
             'date': datetime.strptime(x['Date'], '%Y-%m-%d').date(),
             'element': x['Element'],
             'value': int(x['Data_Value'])
-        } for x in csv.DictReader(f) __ not re.match(r'\d{4}-02-29', x['Date'])],
+        } ___ x in csv.DictReader(f) __ not re.match(r'\d{4}-02-29', x['Date'])],
             key=lambda x: (x['id'] + x['date'].strftime('%m%d%Y')))
     dataset = [{'id': x['id'],
                 'monthday': x['date'].strftime('%m%d'),
                 'year': x['date'].year,
                 'element': x['element'],
                 'value': x['value']
-                } for x in the_data]
+                } ___ x in the_data]
 
-    data_before_2015_left = pd.DataFrame(x for x in dataset __ x['year'] < 2015 and x['element'] __ 'TMIN').drop(
+    data_before_2015_left = pd.DataFrame(x ___ x in dataset __ x['year'] < 2015 and x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).min(level='monthday').rename(columns={'value': 'mina'})
 
-    data_before_2015_right = pd.DataFrame(x for x in dataset __ x['year'] < 2015 and x['element'] __ 'TMAX').drop(
+    data_before_2015_right = pd.DataFrame(x ___ x in dataset __ x['year'] < 2015 and x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxa'})
 
     early_dataset = data_before_2015_left.join(data_before_2015_right, lsuffix='_l', rsuffix='_r')
 
-    data_for_2015_left = pd.DataFrame(x for x in dataset __ x['year'] __ 2015 and x['element'] __ 'TMIN').drop(
+    data_for_2015_left = pd.DataFrame(x ___ x in dataset __ x['year'] __ 2015 and x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'minb'})
 
-    data_for_2015_right = pd.DataFrame(x for x in dataset __ x['year'] __ 2015 and x['element'] __ 'TMAX').drop(
+    data_for_2015_right = pd.DataFrame(x ___ x in dataset __ x['year'] __ 2015 and x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxb'})
 
@@ -87,7 +87,7 @@ ___ high_low_record_breakers_for_2015(
     compare_set = early_dataset.join(late_dataset)
 
     result = {'min': [], 'max': []}
-    for row in compare_set.itertuples(
+    ___ row in compare_set.itertuples(
         __ row.mina > row.minb:
             result['min'].append(
                 STATION(row.Index[0], datetime.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))

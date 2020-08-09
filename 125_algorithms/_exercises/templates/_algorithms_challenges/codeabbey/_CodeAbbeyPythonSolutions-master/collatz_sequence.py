@@ -11,7 +11,7 @@ ___ get_seq(Xnext, counter=0
             r_ get_seq(3*Xnext+1, counter+1)
 
 XList = list(map(int, input().split()))
-for i in XList:
+___ i in XList:
     seq = get_seq(i)
     results.append(seq)
 

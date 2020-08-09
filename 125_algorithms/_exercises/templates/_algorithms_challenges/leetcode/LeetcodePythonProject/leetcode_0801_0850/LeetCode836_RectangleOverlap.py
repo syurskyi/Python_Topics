@@ -48,7 +48,7 @@ class Solution(object
                 [10,8,12,20],
             ],
         ]
-        for rec1, rec2 in testCases:
+        ___ rec1, rec2 in testCases:
             result = self.isRectangleOverlap(rec1, rec2)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -7,9 +7,9 @@ class Solution(object
     """
     dp = [1] * n
 
-    for i in range(1, m
+    ___ i in range(1, m
       pre = 1
-      for j in range(1, n
+      ___ j in range(1, n
         dp[j] = dp[j] + pre
         pre = dp[j]
     r_ dp[-1]

@@ -12,7 +12,7 @@ ___ cowAndBulls(counter
     cows = 0
     bulls = 0
 
-    for i in range(0, 4
+    ___ i in range(0, 4
         generatedVal = generated[i]
         playersVal = player[i]
 

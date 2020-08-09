@@ -12,25 +12,25 @@ class Solution:
         :return: a list of strings
         """
         temp = list(strs)
-        for ind, string in enumerate(temp
+        ___ ind, string in enumerate(temp
             __ string and string!="":  # avoid case of empty string
-                string = [char for char in string]
+                string = [char ___ char in string]
                 string.sort()
                 string = "".join(string)
                 temp[ind] = string
 
 
         hash_map = {}
-        for ind, string in enumerate(temp
+        ___ ind, string in enumerate(temp
             indexes = hash_map.get(string, [])
             indexes.append(ind)  # side-effect
             hash_map[string] = indexes
 
         result = []
-        for val in hash_map.values(
+        ___ val in hash_map.values(
             __ le.(val)>1:
                 # result.append([strs[i] for i in val])
-                result += [strs[i] for i in val]
+                result += [strs[i] ___ i in val]
         r_ result
 
     ___ anagrams(self, strs
@@ -40,7 +40,7 @@ class Solution:
         :return: a list of strings
         """
         hash_map = {}
-        for ind, string in enumerate(strs
+        ___ ind, string in enumerate(strs
             string = "".join(sorted(string))  # string reversing and sorting are a little different
             __ string not in hash_map:
                 hash_map[string] = [ind]
@@ -51,10 +51,10 @@ class Solution:
             # hash_map[string] = indexes  # reassign
 
         result = []
-        for val in hash_map.values(
+        ___ val in hash_map.values(
             __ le.(val)>1:
                 # result.append([strs[i] for i in val])
-                result += [strs[i] for i in val]
+                result += [strs[i] ___ i in val]
         r_ result
 
 __ __name____"__main__":

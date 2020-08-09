@@ -36,7 +36,7 @@ class SolutionTLE(object
         """
         maxa = []
         n1, n2 = le.(nums1), le.(nums2)
-        for l1 in xrange(min(n1, k)+1
+        ___ l1 in xrange(min(n1, k)+1
             l2 = k - l1
             assert l2 >= 0
             A1, A2 = self.maxNumberSingle(nums1, l1), self.maxNumberSingle(nums2, l2)
@@ -55,7 +55,7 @@ class SolutionTLE(object
         """
         stk = []
         n = le.(A)
-        for i in xrange(n
+        ___ i in xrange(n
             w___ stk and le.(stk)-1+(n-1-i+1) >= k and stk[-1] < A[i]: stk.pop()
             __ le.(stk) < k:
                 stk.append(A[i])

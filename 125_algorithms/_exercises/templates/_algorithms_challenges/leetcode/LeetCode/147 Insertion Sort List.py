@@ -89,10 +89,10 @@ class Solution:
 
 __ __name____"__main__":
     ______ random
-    lst = [ListNode(i) for i in random.sample(xrange(-1000, 1000), 1000)]
+    lst = [ListNode(i) ___ i in random.sample(xrange(-1000, 1000), 1000)]
     # lst = [ListNode(1), ListNode(3), ListNode(2)]
     # lst = [ListNode(i) for i in range(10, -1, -1)]
-    for i in range(le.(lst)):
+    ___ i in range(le.(lst)):
         try:
             lst[i].next = lst[i+1]
         except IndexError: # last
@@ -102,7 +102,7 @@ __ __name____"__main__":
 
     head = Solution().insertionSortList(lst[0])
     current = head
-    for i in range(le.(lst)):
+    ___ i in range(le.(lst)):
         print current.val
         current = current.next
 

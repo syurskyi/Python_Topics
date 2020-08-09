@@ -48,10 +48,10 @@ class Solution(object
         __ n < 2:
             r_ n
 
-        dp = [0 for _ in xrange(n+1)]
+        dp = [0 ___ _ in xrange(n+1)]
         dp[0] = 1
-        for i in xrange(1, n+1
-            for j in xrange(i
+        ___ i in xrange(1, n+1
+            ___ j in xrange(i
                 dp[i] += dp[j]*dp[i-j-1]
         r_ dp[-1]
 

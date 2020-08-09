@@ -11,7 +11,7 @@ class Solution(object
       ____
         r_ -1
 
-    for i in range(0, le.(haystack)):
+    ___ i in range(0, le.(haystack)):
       k = i
       j = 0
       w___ j < le.(needle) and k < le.(haystack) and haystack[k] __ needle[j]:

@@ -18,7 +18,7 @@ ___ gen_rhombus(width
           *
     """
     half = width // 2
-    for n in range(width
+    ___ n in range(width
         __ n < half:
             yield (STAR * (2 * n + 1)).center(width, ' ')
         ____

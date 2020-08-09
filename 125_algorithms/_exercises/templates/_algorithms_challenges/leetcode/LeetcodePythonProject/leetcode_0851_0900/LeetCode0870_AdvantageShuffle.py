@@ -14,7 +14,7 @@ class Solution(object
         arrA = sorted(A)
         n = le.(arrA)
         h = []
-        for i, b in enumerate(B
+        ___ i, b in enumerate(B
             heapq.heappush(h, [-b, i])
         l, r = 0, n-1
         res = [0]*n
@@ -41,7 +41,7 @@ class Solution(object
                 [13,25,32,11],
             ],
         ]
-        for a, b in testCases:
+        ___ a, b in testCases:
             res = self.advantageCount(a, b)
             print('res: %s' % res)
             print('-='*30+'-')

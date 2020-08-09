@@ -4,12 +4,12 @@ class Solution(object
     :type board: List[List[str]]
     :rtype: bool
     """
-    cacheCol = [[0] * 9 for _ in range(0, 10)]
-    cacheRow = [[0] * 9 for _ in range(0, 10)]
-    cacheBox = [[0] * 9 for _ in range(0, 10)]
+    cacheCol = [[0] * 9 ___ _ in range(0, 10)]
+    cacheRow = [[0] * 9 ___ _ in range(0, 10)]
+    cacheBox = [[0] * 9 ___ _ in range(0, 10)]
 
-    for i in range(0, 9
-      for j in range(0, 9
+    ___ i in range(0, 9
+      ___ j in range(0, 9
         ib = (i / 3) * 3 + j / 3
         __ board[i][j] __ ".":
           continue

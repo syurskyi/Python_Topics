@@ -6,7 +6,7 @@ class Solution:
     """
     ___ digitCounts(self, k, n
         ans = 0
-        for i in range(n + 1
+        ___ i in range(n + 1
             ans += self.count(k, i)
         r_ ans
 

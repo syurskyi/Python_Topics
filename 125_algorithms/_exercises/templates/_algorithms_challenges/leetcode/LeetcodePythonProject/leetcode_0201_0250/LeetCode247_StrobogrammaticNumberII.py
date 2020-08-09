@@ -19,7 +19,7 @@ class Solution(object
         __ l > r:
             res.append(''.join(curr))
             r_
-        for p in self.pairs:
+        ___ p in self.pairs:
             curr[l] = p[0]
             curr[r] = p[1]
             __ l __ r and p[0] != p[1]:
@@ -45,8 +45,8 @@ class Solution(object
             pre, midCandidate = self.findStrobogrammatic(n-2), evenMidCandidate
         premid = int((n-1)/2)
         result = []
-        for c in midCandidate:
-            for p in pre:
+        ___ c in midCandidate:
+            ___ p in pre:
                 result.append(p[:premid]+c+p[premid:])
         r_ result
     
@@ -54,7 +54,7 @@ class Solution(object
         testCases = [
             4,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % (n))
             result = self.findStrobogrammatic(n)
             print('result: %s' % (result))

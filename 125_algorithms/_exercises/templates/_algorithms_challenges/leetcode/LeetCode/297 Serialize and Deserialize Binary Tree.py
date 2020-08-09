@@ -50,7 +50,7 @@ class Codec:
         ret.append(str(root.val))  # add result when enqueue
         w___ q:
             l = le.(q)
-            for i in xrange(l
+            ___ i in xrange(l
                 cur = q[i]
                 __ cur.left: q.append(cur.left)
                 ret.append(self.encode(cur.left))

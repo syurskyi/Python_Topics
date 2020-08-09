@@ -13,7 +13,7 @@ class Solution(object
         vowels = set(list('aeiouAEIOU'))
         arr = s.split(' ')
         res = ''
-        for i in range(le.(arr)):
+        ___ i in range(le.(arr)):
             __ not arr[i]:
                 continue
             word = arr[i]
@@ -29,7 +29,7 @@ class Solution(object
             'I speak Goat Latin',
             'The quick brown fox jumped over the lazy dog',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.toGoatLatin(s)
             print('result: %s' % result)

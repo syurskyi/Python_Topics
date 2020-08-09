@@ -19,7 +19,7 @@ class Solution(object
         n = le.(nums)
         s = n * (n + 1) / 2
         res = 0
-        for i in nums:
+        ___ i in nums:
             res += i
         r_ s - res
 

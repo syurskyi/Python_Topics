@@ -46,8 +46,8 @@ class Solution:
         """
         m, n = le.(grid), le.(grid[0])
         q = []
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ 2:
                     q.append((i, j))
 
@@ -55,8 +55,8 @@ class Solution:
         w___ q:
             t += 1
             cur_q = []
-            for i, j in q:
-                for di, dj in dirs:
+            ___ i, j in q:
+                ___ di, dj in dirs:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < m and 0 <= J < n and grid[I][J] __ 1:
@@ -66,8 +66,8 @@ class Solution:
 
         has_fresh = any(
             grid[i][j] __ 1
-            for i in range(m)
-            for j in range(n)
+            ___ i in range(m)
+            ___ j in range(n)
         )
 
         r_ max(0, t) __ not has_fresh else -1

@@ -57,17 +57,17 @@ class Solution(object
         __ not s or k __ 0: r_ s
 
         d = defaultdict(int)
-        for c in s:
+        ___ c in s:
             d[c] += 1
 
         h = []
-        for char, cnt in d.items(
+        ___ char, cnt in d.items(
             heapq.heappush(h, Val(cnt, char))
 
         ret = []
         w___ h:
             cur = []
-            for _ in xrange(k
+            ___ _ in xrange(k
                 __ not h:
                     r_ "".join(ret) __ le.(ret) __ le.(s) else ""
 
@@ -77,7 +77,7 @@ class Solution(object
                 __ e.cnt > 0:
                     cur.append(e)
 
-            for e in cur:
+            ___ e in cur:
                 heapq.heappush(h, e)
 
         r_ "".join(ret)

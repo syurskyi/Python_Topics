@@ -36,7 +36,7 @@ class Solution:
         # except for the head
         has_lower = False
         has_upper = False
-        for w in word[1:]:
+        ___ w in word[1:]:
             __ w.isupper(
                 has_upper = True
                 __ has_lower or not head_upper:

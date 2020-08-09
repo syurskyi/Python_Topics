@@ -14,7 +14,7 @@ class Solution(object
         """
         valuesMap = {}
         graph = {}
-        for e, v in zip(equations, values
+        ___ e, v in zip(equations, values
             valuesMap[(e[0], e[1])] = v
             valuesMap[(e[1], e[0])] = 1.0/v
             __ e[0] in graph:
@@ -26,7 +26,7 @@ class Solution(object
             ____
                 graph[e[1]] = set([e[0]])
         result = []
-        for query in queries:
+        ___ query in queries:
             __ query[0] not in graph:
                 result.append(-1.0)
             ____ query[0] __ query[1]:
@@ -42,7 +42,7 @@ class Solution(object
         __ start __ target:
             result[0] = curr
         __ start in graph:
-            for nextNode in graph[start]:
+            ___ nextNode in graph[start]:
                 __ nextNode not in visited:
                     self.dfs(valuesMap, graph, nextNode, target, curr*valuesMap[(start, nextNode)], visited, result)
     
@@ -54,7 +54,7 @@ class Solution(object
                 [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ],
             ),
         ]
-        for equations, values, queries in testCases:
+        ___ equations, values, queries in testCases:
             result = self.calcEquation(equations, values, queries)
             print('result: %s' % result)
             print('-='*20+'-')

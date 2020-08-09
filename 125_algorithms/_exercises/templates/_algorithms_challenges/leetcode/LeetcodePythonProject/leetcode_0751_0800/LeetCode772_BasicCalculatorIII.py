@@ -51,7 +51,7 @@ class Solution(object
             "2*(5+5*2)/3+(6/2+8)",
             "(2+6* 3+5- (3*14/7+2)*5)+3"
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.calculate(s)
             print('result: %s' % result)

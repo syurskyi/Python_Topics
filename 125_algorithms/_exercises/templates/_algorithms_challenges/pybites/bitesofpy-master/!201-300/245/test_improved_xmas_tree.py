@@ -51,10 +51,10 @@ ___ test_trunk_used(size, expected
 ___ test_outputs(
     actual_tree = generate_improved_xmas_tree().strip("\n").split("\n")
     expected_tree = default_tree.strip("\n").split("\n")
-    for i, j in zip(actual_tree, expected_tree
+    ___ i, j in zip(actual_tree, expected_tree
         assert i.rstrip() __ j.rstrip()
 
     actual_tree = generate_improved_xmas_tree(3).strip("\n").split("\n")
     expected_tree = smaller_tree.strip("\n").split("\n")
-    for i, j in zip(actual_tree, expected_tree
+    ___ i, j in zip(actual_tree, expected_tree
         assert i.rstrip() __ j.rstrip()

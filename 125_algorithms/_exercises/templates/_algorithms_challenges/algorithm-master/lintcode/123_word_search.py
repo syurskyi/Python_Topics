@@ -16,9 +16,9 @@ class Solution:
             r_ False
 
         m, n = le.(G), le.(G[0])
-        visited = [[False] * n for _ in range(m)]
-        for x in range(m
-            for y in range(n
+        visited = [[False] * n ___ _ in range(m)]
+        ___ x in range(m
+            ___ y in range(n
                 __ (G[x][y] __ s[0] and
                     self.dfs(G, x, y, s, 1, visited)):
                     r_ True
@@ -29,7 +29,7 @@ class Solution:
         __ i >= le.(s
             r_ True
 
-        for dx, dy in self.V:
+        ___ dx, dy in self.V:
             _x = x + dx
             _y = y + dy
             __ not (0 <= _x < le.(G) and 0 <= _y < le.(G[0])):

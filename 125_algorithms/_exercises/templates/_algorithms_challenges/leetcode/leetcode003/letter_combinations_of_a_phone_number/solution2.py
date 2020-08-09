@@ -23,7 +23,7 @@ class Solution:
             digit = digits[0]
             __ digit in d:
                 letters = d[digit]
-                for letter in letters:
+                ___ letter in letters:
                     cand.append(letter)
                     self.letter_combination_aux(digits[1:], d, cand, res)
                     cand.pop()

@@ -11,15 +11,15 @@ class Solution:
 
         n, m, k = le.(s), le.(S), le.(S[0])
         F = {}
-        for c in S:
+        ___ c in S:
             F[c] = F.get(c, 0) + 1
 
-        for start in range(k
+        ___ start in range(k
             _F = {}
             cnt = 0
             left = start
 
-            for right in range(start, n - k + 1, k
+            ___ right in range(start, n - k + 1, k
                 sr = s[right:right + k]
                 __ sr not in F:
                     _F = {}

@@ -25,20 +25,20 @@ class Solution:
         m = le.(matrix)
         n = le.(matrix[0])
 
-        for row in xrange(m
-            for col in xrange(n
+        ___ row in xrange(m
+            ___ col in xrange(n
                 __ matrix[row][col]__0:
                     matrix[0][col]=0  # previously scanned, safe to modify
                     matrix[row][0]=0  # previously scanned, safe to modify
 
-        for row in xrange(m
+        ___ row in xrange(m
             __ matrix[row][0]__0:
-                for col in xrange(n
+                ___ col in xrange(n
                     matrix[row][col] = 0
 
-        for col in xrange(n
+        ___ col in xrange(n
             __ matrix[0][col]__0:
-                for row in xrange(m
+                ___ row in xrange(m
                     matrix[row][col] = 0
 
 
@@ -58,34 +58,34 @@ class Solution:
         # special treatment for row and col 
         clear_first_row = False
         clear_first_col = False
-        for row in xrange(m
+        ___ row in xrange(m
             __ matrix[row][0]__0:
                 clear_first_col = True
-        for col in xrange(n
+        ___ col in xrange(n
             __ matrix[0][col]__0:
                 clear_first_row = True
 
-        for row in xrange(1, m
-            for col in xrange(1, n
+        ___ row in xrange(1, m
+            ___ col in xrange(1, n
                 __ matrix[row][col]__0:
                     matrix[0][col] = 0  # previously scanned, safe to modify
                     matrix[row][0] = 0  # previously scanned, safe to modify
 
-        for row in xrange(1, m  # avoid 0 at (0, 0) affect the entire matrix
+        ___ row in xrange(1, m  # avoid 0 at (0, 0) affect the entire matrix
             __ matrix[row][0]__0:
-                for col in xrange(n
+                ___ col in xrange(n
                     matrix[row][col] = 0
 
-        for col in xrange(1, n  # avoid 0 at (0, 0) affect the entire matrix
+        ___ col in xrange(1, n  # avoid 0 at (0, 0) affect the entire matrix
             __ matrix[0][col]__0:
-                for row in xrange(m
+                ___ row in xrange(m
                     matrix[row][col] = 0
 
         __ clear_first_row:
-            for col in xrange(n
+            ___ col in xrange(n
                 matrix[0][col] = 0
         __ clear_first_col:
-            for row in xrange(m
+            ___ row in xrange(m
                 matrix[row][0] = 0
 
 

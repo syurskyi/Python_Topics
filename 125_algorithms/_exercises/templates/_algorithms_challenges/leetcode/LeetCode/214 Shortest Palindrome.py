@@ -25,7 +25,7 @@ class Solution:
             r_ s
 
         # construct T
-        T = [0 for _ in xrange(l+1)]
+        T = [0 ___ _ in xrange(l+1)]
         T[0] = -1
         pos = 2
         cnd = 0

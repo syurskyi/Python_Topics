@@ -25,7 +25,7 @@ class Solution(object
             TreeNode(3, TreeNode(2, None, TreeNode(3)), TreeNode(3, None, TreeNode(1))),
             TreeNode(3, TreeNode(4, TreeNode(1), TreeNode(3)), TreeNode(5, None, TreeNode(1))),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.rob(root)
             print('result: %s' % (result))
 

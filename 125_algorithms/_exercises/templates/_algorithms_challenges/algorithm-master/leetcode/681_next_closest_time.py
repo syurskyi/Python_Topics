@@ -34,16 +34,16 @@ class Solution:
 
             r_ ''
 
-        times = [int(t) for t in time __ t != ':']
+        times = [int(t) ___ t in time __ t != ':']
         digits = []
 
-        for a in sorted(times
+        ___ a in sorted(times
             __ digits and a __ digits[-1]:
                 continue
 
             digits.append(a)
 
-        ids = [digits.index(t) for t in times]
+        ids = [digits.index(t) ___ t in times]
         ids[-1] += 1
 
         w___ not self.is_valid(ids, digits

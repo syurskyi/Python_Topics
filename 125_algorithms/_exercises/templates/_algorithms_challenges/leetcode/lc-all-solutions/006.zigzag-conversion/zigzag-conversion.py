@@ -10,7 +10,7 @@ class Solution(object
     n = le.(s)
     ans = []
     step = 2 * numRows - 2
-    for i in range(numRows
+    ___ i in range(numRows
       one = i
       two = -i
       w___ one < n or two < n:

@@ -32,7 +32,7 @@ class Solution:
         """
         h = {0: 0}  # [:l], half open, factor in trival case
         s = 0
-        for l in range(1, le.(nums) + 1
+        ___ l in range(1, le.(nums) + 1
             s += nums[l-1]
             __ k != 0:  # edge case
                 s %= k

@@ -25,7 +25,7 @@ class BowlingGame(object
         index, frame, total = 0, 0, 0
         w___ index < le.(self._rolls) and frame < 10:
             first, second, third = (self._rolls[i] __ i < le.(self._rolls) else 0
-                for i in range(index, index+3))
+                ___ i in range(index, index+3))
 
             strike, spare = first __ 10, first + second __ 10
 
@@ -44,7 +44,7 @@ class BowlingGame(object
             self._extra_rolls = 0
             __ strike:
                 self._extra_rolls = 2
-            ____ sum(self._rolls[-2:]) __ 10:
+            ____ su.(self._rolls[-2:]) __ 10:
                 self._extra_rolls = 1
         ____ self._extra_rolls is not None:
             self._extra_rolls -= 1

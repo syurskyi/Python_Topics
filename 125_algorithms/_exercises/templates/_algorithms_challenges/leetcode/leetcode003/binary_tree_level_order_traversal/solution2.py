@@ -38,7 +38,7 @@ class Solution(object
         w___ queue:
             n = le.(queue)
             level = []
-            for i in range(n
+            ___ i in range(n
                 root = queue.pop(0)
                 __ root.left is not None:
                     queue.append(root.left)

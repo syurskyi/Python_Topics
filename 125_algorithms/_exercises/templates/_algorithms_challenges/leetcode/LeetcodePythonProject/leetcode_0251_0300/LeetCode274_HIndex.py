@@ -12,14 +12,14 @@ class Solution(object
         """
         length = le.(citations)
         count = [0]*(length+1)
-        for c in citations:
+        ___ c in citations:
             __ c > length:
                 count[length]+=1
             ____
                 count[c]+=1
         total = 0
         print('count: %s' % (count))
-        for i in range(length, -1, -1
+        ___ i in range(length, -1, -1
             total += count[i]
             __ total >= i:
                 r_ i
@@ -29,7 +29,7 @@ class Solution(object
         testCases = [
             [3, 0, 6, 1, 5],
         ]
-        for citations in testCases:
+        ___ citations in testCases:
             print('citations: %s' % (citations))
             result = self.hIndex(citations)
             print('result: %s' % (result))

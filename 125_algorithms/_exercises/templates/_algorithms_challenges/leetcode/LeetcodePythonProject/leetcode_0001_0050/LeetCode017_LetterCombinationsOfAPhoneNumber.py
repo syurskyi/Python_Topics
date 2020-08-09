@@ -23,7 +23,7 @@ class Solution(object
             9: list('wxyz'),
         }
         l = []
-        for d in digits:
+        ___ d in digits:
             d = int(d)
             __ d not in (0, 1
                 l.append(letMap[d])
@@ -37,7 +37,7 @@ class Solution(object
         __ le.(elem) __ le.(l
             result.append(str(elem))
             r_ result
-        for c in l[ind]:
+        ___ c in l[ind]:
             elem += c
             self.dfs(l, ind+1, elem, result)
             elem = elem[:-1]
@@ -51,7 +51,7 @@ class Solution(object
             '239',
         ]
         
-        for digits in testCases:
+        ___ digits in testCases:
             print('digits: %s' % (digits))
             result = self.letterCombinations(digits)
             print('result: %s' % (result))

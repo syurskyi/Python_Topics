@@ -31,7 +31,7 @@ class Solution:
             ____
                 r = m
 
-        for i in [l, r]:
+        ___ i in [l, r]:
             __ reader.get(i) __ target:
                 r_ i
         r_ -1

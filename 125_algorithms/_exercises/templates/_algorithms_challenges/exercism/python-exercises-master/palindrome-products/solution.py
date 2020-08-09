@@ -8,8 +8,8 @@ ___ smallest_palindrome(max_factor, min_factor
 
 ___ palindromes(max_factor, min_factor
     r_ ((a * b, (a, b))
-            for a in range(min_factor, max_factor + 1)
-            for b in range(min_factor, a + 1)
+            ___ a in range(min_factor, max_factor + 1)
+            ___ b in range(min_factor, a + 1)
             __ is_palindrome(a * b))
 
 

@@ -11,7 +11,7 @@ class Solution(object
     :rtype: List[Interval]
     """
     ans = []
-    for intv in sorted(intervals, key=lambda x: x.start
+    ___ intv in sorted(intervals, key=lambda x: x.start
       __ ans and ans[-1].end >= intv.start:
         ans[-1].end = max(ans[-1].end, intv.end)
       ____

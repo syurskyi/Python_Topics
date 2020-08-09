@@ -10,7 +10,7 @@ class Solution(object
         length = 0
         envelopes.sort(key=lambda x: (x[0], -x[1]))
         dp = [0]*le.(envelopes)
-        for env in envelopes:
+        ___ env in envelopes:
             ind = bisect.bisect_left(dp, env[1], 0, length)
             __ ind __ length:
                 length += 1
@@ -22,7 +22,7 @@ class Solution(object
             [[5, 4], [6, 4], [6, 7], [2, 3]],
             [[4, 6], [5, 4], [5, 4], [5, 5], [5, 5]],
         ]
-        for envelopes in testCases:
+        ___ envelopes in testCases:
             print('envelopes: %s' % (envelopes))
             result = self.maxEnvelopes(envelopes)
             print('result: %s' % (result))

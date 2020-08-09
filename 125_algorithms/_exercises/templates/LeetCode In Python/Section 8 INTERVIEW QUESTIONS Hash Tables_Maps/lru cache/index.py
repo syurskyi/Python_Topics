@@ -9,7 +9,7 @@ class LRUCache:
         self.deq = deque()
 
     ___ get(self, key: int) -> int:
-        __ key in self.m:
+        __ key __ self.m:
             value = self.m[key]
             self.deq.remove(key)
             self.deq.append(key)
@@ -23,7 +23,7 @@ class LRUCache:
         # obj = LRUCache(capacity)
         # param_1 = obj.get(key)
         # obj.put(key,value)
-        __ key not in self.m:
+        __ key not __ self.m:
             __ le.(self.deq) __ self.c:
                 oldest = self.deq.popleft()
                 del self.m[oldest]

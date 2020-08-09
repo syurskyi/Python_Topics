@@ -33,10 +33,10 @@ class Solution:
         # scan the boarder
         m = le.(board)
         n = le.(board[0])
-        for i in xrange(m
+        ___ i in xrange(m
             __ board[i][0]__'O': q.append((i, 0))
             __ board[i][n-1]__'O': q.append((i, n-1))
-        for j in xrange(1, n-1
+        ___ j in xrange(1, n-1
             __ board[0][j]__'O': q.append((0, j))
             __ board[m-1][j]__'O': q.append((m-1, j))
 
@@ -44,15 +44,15 @@ class Solution:
         w___ q: # dynamically expanding, no deletion of elements
             cor = q.pop()
             board[cor[0]][cor[1]]=CONNECTED  # cannot be both "O" and CONNECTED
-            for direction in directions:
+            ___ direction in directions:
                 row = cor[0]+direction[0]
                 col = cor[1]+direction[1]
                 __ 0<=row<m and 0<=col<n and board[row][col]__'O':
                     q.append((row, col))
 
 
-        for i in xrange(m
-            for j in xrange(n
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ board[i][j]__'O':
                     board[i][j] = 'X'
                 ____ board[i][j]__CONNECTED:

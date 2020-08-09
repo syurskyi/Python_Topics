@@ -16,7 +16,7 @@ ___ round(num1, num2
         r_ result*-1
     r_ result
 
-for i in range(amount_values
+___ i in range(amount_values
     num1, num2 = map(int, input().split())
     results.append(round(num1,num2))
 print(*results)

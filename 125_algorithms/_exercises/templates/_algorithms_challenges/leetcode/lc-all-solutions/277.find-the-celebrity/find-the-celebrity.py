@@ -11,10 +11,10 @@ class Solution(object
     :rtype: int
     """
     cand = 0
-    for i in range(1, n
+    ___ i in range(1, n
       __ knows(cand, i
         cand = i
-    for i in range(n
+    ___ i in range(n
       __ i != cand and knows(cand, i) or not knows(i, cand
         r_ -1
     r_ cand

@@ -39,13 +39,13 @@ class Solution:
         __ n < 2:
             r_ True
 
-        dp = [[0] * n for _ in range(n)]
+        dp = [[0] * n ___ _ in range(n)]
 
-        for i in range(n
+        ___ i in range(n
             dp[i][i] = values[i]
 
-        for i in range(n - 1 - 1, -1, -1
-            for j in range(i + 1, n
+        ___ i in range(n - 1 - 1, -1, -1
+            ___ j in range(i + 1, n
                 dp[i][j] = max((
                     values[i] - dp[i + 1][j],
                     values[j] - dp[i][j - 1],

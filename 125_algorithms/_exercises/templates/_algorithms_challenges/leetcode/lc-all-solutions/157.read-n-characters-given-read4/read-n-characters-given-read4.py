@@ -16,7 +16,7 @@ class Solution(object
       r = read4(tmp)
       __ r __ 0:
         break
-      for i in range(min(r, n - cnt)):
+      ___ i in range(min(r, n - cnt)):
         buf[cnt] = tmp[i]
         cnt += 1
     r_ cnt

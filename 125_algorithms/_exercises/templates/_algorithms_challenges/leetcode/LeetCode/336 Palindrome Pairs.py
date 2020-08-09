@@ -52,9 +52,9 @@ class Solution:
         Construct Trie for word_j reversely, since word_j is being checked
         """
         root = TrieNode()
-        for idx, w in enumerate(words
+        ___ idx, w in enumerate(words
             cur = root
-            for i in range(le.(w) - 1, -1, -1
+            ___ i in range(le.(w) - 1, -1, -1
                 #  cur.children[w[i]]  # error, pre-advancing the trie is unable to handle empty str
                 __ self.is_palindrome(w, 0, i + 1
                     cur.pali_prefix_idxes.append(idx)
@@ -65,9 +65,9 @@ class Solution:
             cur.word_idx = idx  # word ends
 
         ret = []
-        for idx, w in enumerate(words
+        ___ idx, w in enumerate(words
             cur = root
-            for i in range(le.(w)):
+            ___ i in range(le.(w)):
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
                 __ self.is_palindrome(w, i, le.(w)) and cur.word_idx is not None and cur.word_idx != idx:
                     ret.append([idx, cur.word_idx])
@@ -76,7 +76,7 @@ class Solution:
                 __ cur is None:
                     break
             ____
-                for idx_j in cur.pali_prefix_idxes:
+                ___ idx_j in cur.pali_prefix_idxes:
                     __ idx != idx_j:
                         ret.append([idx, idx_j])
 

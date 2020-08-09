@@ -32,10 +32,10 @@ class Solution:
         n = le.(matrix[0])
 
         # added dp to get heights
-        dp_height = [[-1 for _ in xrange(n)] for _ in xrange(m)]
+        dp_height = [[-1 ___ _ in xrange(n)] ___ _ in xrange(m)]
         dp_height[0] = map(lambda x: int(x), matrix[0])
-        for i in xrange(1, m
-            for j in xrange(n
+        ___ i in xrange(1, m
+            ___ j in xrange(n
                 __ matrix[i][j] __ "1":
                     dp_height[i][j] = 1+dp_height[i-1][j]
                 ____
@@ -43,7 +43,7 @@ class Solution:
 
         # end of dp
 
-        for i in xrange(m
+        ___ i in xrange(m
             # Largest Rectangle in Histogram
             inc_stack = []
 
@@ -67,7 +67,7 @@ class Solution:
     ___ get_height(self, matrix, row, col
         # possible replace by dp; otherwise TLE
         height = 0
-        for i in xrange(row, -1, -1
+        ___ i in xrange(row, -1, -1
             __ matrix[row][col] __ "0":
                 break
             height += 1

@@ -46,7 +46,7 @@ class SummaryRanges(object
         self.itvls.sort(key=lambda x: x.start)
 
         ret = [self.itvls[0]]
-        for itvl in self.itvls[1:]:
+        ___ itvl in self.itvls[1:]:
             pre = ret[-1]
             __ itvl.start <= pre.end + 1:
                 pre.end = max(itvl.end, pre.end)

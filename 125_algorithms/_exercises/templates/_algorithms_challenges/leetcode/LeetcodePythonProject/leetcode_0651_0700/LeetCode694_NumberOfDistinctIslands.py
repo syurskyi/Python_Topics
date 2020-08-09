@@ -11,8 +11,8 @@ class Solution(object
         """
         islands = set()
         m, n = le.(grid), le.(grid[0])
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ 1:
                     island = set()
                     self.dfs(i, j, i, j, m, n, grid, island)
@@ -24,7 +24,7 @@ class Solution(object
             r_
         grid[i][j] = -1
         island.add((i-i0, j-j0))
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
+        ___ x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
             self.dfs(i0, j0, x, y, m, n, grid, island)
     
     ___ test(self
@@ -77,10 +77,10 @@ class Solution(object
                 [0,1,0,0,0,1,1,0,0,0,1,1,1,0,1,1,0,0,0,0,1,0,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,0,0,1,0]
             ]
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             print('grid:')
 #             print('\n'.join(grid))
-            grid = [[int(c) for c in row ] for row in grid]
+            grid = [[int(c) ___ c in row ] ___ row in grid]
             result = self.numDistinctIslands(grid)
             print('result: %s' % result)
             print('-='*30+'-')

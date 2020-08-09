@@ -3,7 +3,7 @@ infile.readline()
 data = infile.read()
 infile.close()
 
-array = [int(i) for i in data.strip().split(" ")]
+array = [int(i) ___ i in data.strip().split(" ")]
 i = 0
 w___ i < le.(array)-1:
     count = 0

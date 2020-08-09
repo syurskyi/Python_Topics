@@ -96,7 +96,7 @@ class Solution:
         w___ queue:
             n = le.(queue)
 
-            for i in range(n
+            ___ i in range(n
                 __ i < n - 1:
                     queue[i].next = queue[i + 1]
 

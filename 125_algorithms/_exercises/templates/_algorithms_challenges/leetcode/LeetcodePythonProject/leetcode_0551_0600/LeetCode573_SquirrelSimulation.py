@@ -15,7 +15,7 @@ class Solution(object
         :rtype: int
         """
         sumVal, maxDiff = 0, float('-inf')
-        for nut in nuts:
+        ___ nut in nuts:
             dist = abs(tree[0]-nut[0])+abs(tree[1]-nut[1])
             sumVal += dist*2
             maxDiff = max(maxDiff, dist-abs(squirrel[0]-nut[0])-abs(squirrel[1]-nut[1]))
@@ -34,12 +34,12 @@ class Solution(object
         nutToTree = [0]*n
         nutToSquirrel = [0]*n
         sumVal = 0
-        for i in range(n
+        ___ i in range(n
             nutToTree[i] = abs(nuts[i][0]-tree[0])+abs(nuts[i][1]-tree[1])
             sumVal += nutToTree[i]*2
             nutToSquirrel[i] = abs(nuts[i][0]-squirrel[0])+abs(nuts[i][1]-squirrel[1])
         minVal = float('inf')
-        for i in range(n
+        ___ i in range(n
             dist = sumVal + nutToSquirrel[i]-nutToTree[i]
             minVal = min(minVal, dist)
         r_ minVal
@@ -61,7 +61,7 @@ class Solution(object
                 [[2,0],[4,1],[0,4],[1,3],[1,0],[3,4],[3,0],[2,3],[0,2],[0,0],[2,2],[4,2],[3,3],[4,4],[4,0],[4,3],[3,1],[2,1],[1,4],[2,4]],
             ],
         ]
-        for height, width, tree, squirrel, nuts in testCases:
+        ___ height, width, tree, squirrel, nuts in testCases:
             result = self.minDistance(height, width, tree, squirrel, nuts)
             print('result: %s' % result)
             print('-='*30+'-')

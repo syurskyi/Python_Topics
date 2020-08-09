@@ -8,21 +8,21 @@ class Solution(object
     d = {}
     res = []
     ans = []
-    buckets = [[] for _ in range(le.(nums) + 1)]
+    buckets = [[] ___ _ in range(le.(nums) + 1)]
 
-    for num in nums:
+    ___ num in nums:
       d[num] = d.get(num, 0) + 1
 
-    for key in d:
+    ___ key in d:
       res.append((d[key], key))
 
-    for t in res:
+    ___ t in res:
       freq, key = t
       buckets[freq].append(key)
 
     buckets.reverse()
 
-    for item in buckets:
+    ___ item in buckets:
       __ item and k > 0:
         w___ item and k > 0:
           ans.append(item.pop())

@@ -9,13 +9,13 @@ from movies ______ get_movies, get_movie_info
 app = Flask(__name__)
 jsglue = JSGlue(app)
 
-movies_by_title = {r['movie_title'] for r in get_movies()}
-movies_by_id = {r['id']: r for r in get_movies()}
+movies_by_title = {r['movie_title'] ___ r in get_movies()}
+movies_by_id = {r['id']: r ___ r in get_movies()}
 
 @app.route('/autocomplete', methods=['GET'])
 ___ autocomplete(
     search = request.args.get('q')
-    filtered_movies = [m for m in movies_by_title 
+    filtered_movies = [m ___ m in movies_by_title
                        __ search.lower() in m.lower()]
     r_ jsonify(matching_results=sorted(filtered_movies))
 

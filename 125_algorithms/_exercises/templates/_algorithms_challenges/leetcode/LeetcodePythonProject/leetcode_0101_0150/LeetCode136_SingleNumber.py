@@ -10,5 +10,5 @@ class Solution(object
         :rtype: int
         """
         res = 0
-        for num in nums: res ^= num
+        ___ num in nums: res ^= num
         r_ res

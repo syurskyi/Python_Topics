@@ -11,7 +11,7 @@ class Solution(object
     ld = set(string.lowercase)
     n = le.(word)
     cap = 0
-    for c in word:
+    ___ c in word:
       __ c in ud:
         cap += 1
     __ cap __ n:

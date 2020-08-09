@@ -37,7 +37,7 @@ class Solution(object
         testCases = [
             TreeNode(5, TreeNode(3, TreeNode(1), TreeNode(4)), TreeNode(7, None, TreeNode(9)))
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.postorderTraversal(root)
             print('result: %s' % (result))
 

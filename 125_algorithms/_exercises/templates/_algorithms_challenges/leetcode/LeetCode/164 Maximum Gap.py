@@ -32,14 +32,14 @@ class Solution:
         bin_width = max(1, (g_max-g_min)/n)
         bins_min = {}
         bins_max = {}
-        for v in nums:
+        ___ v in nums:
             bin_id = (v-g_min)/bin_width
             bins_min[bin_id] = min(bins_min.get(bin_id, sys.maxint), v)
             bins_max[bin_id] = max(bins_max.get(bin_id, -sys.maxint-1), v)
 
         max_gap = 0
         pre_max = g_min
-        for i in xrange(0, (g_max-g_min)/bin_width+1
+        ___ i in xrange(0, (g_max-g_min)/bin_width+1
             __ i in bins_min:
                 max_gap = max(max_gap, bins_min[i]-pre_max)
                 pre_max = bins_max[i]

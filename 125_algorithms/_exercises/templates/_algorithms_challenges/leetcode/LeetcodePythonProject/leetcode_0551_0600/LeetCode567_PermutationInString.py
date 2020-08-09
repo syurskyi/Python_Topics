@@ -12,11 +12,11 @@ class Solution(object
         """
         __ not s1: r_ False
         hashmap = {}
-        for c in s1:
+        ___ c in s1:
             hashmap[c] = hashmap.get(c, 0)+1
         left = 0
         hashmap0 = {}
-        for i, c in enumerate(s2
+        ___ i, c in enumerate(s2
             __ c in hashmap:
                 w___ left < i and c in hashmap0 and hashmap0[c] >= hashmap[c]:
                     hashmap0[s2[left]] -= 1
@@ -34,7 +34,7 @@ class Solution(object
             ['ab', 'eidbaooo'],
             ['ab', 'eidboaoo'],
         ]
-        for s1, s2 in testCases:
+        ___ s1, s2 in testCases:
             print('s1: %s' % s1)
             print('s2: %s' % s2)
             result = self.checkInclusion(s1, s2)

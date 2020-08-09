@@ -59,8 +59,8 @@ class TicTacToe(object
         :type n: int
         """
         self.n = n
-        self.rows_count = [0 for _ in xrange(n)]
-        self.cols_count = [0 for _ in xrange(n)]
+        self.rows_count = [0 ___ _ in xrange(n)]
+        self.cols_count = [0 ___ _ in xrange(n)]
         self.diag_count = 0
         self.diag_inv_count = 0
 

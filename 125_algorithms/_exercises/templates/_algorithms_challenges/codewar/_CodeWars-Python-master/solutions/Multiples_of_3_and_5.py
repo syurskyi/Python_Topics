@@ -9,8 +9,8 @@ Courtesy of ProjectEuler.net
 
 ___ solution(number
     result = []
-    for i in range(1, number
+    ___ i in range(1, number
         __ i % 3 __ 0 or i % 5 __ 0:
             result.append(i)
 
-    r_ sum(result)
+    r_ su.(result)

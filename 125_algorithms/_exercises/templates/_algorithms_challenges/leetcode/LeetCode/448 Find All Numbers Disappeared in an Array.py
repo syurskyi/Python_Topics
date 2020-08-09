@@ -19,7 +19,7 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        for idx in range(le.(A)):
+        ___ idx in range(le.(A)):
             w___ True:
                 target = A[idx] - 1
                 __ idx __ target or A[idx] __ A[target]:
@@ -27,7 +27,7 @@ class Solution:
                 A[idx], A[target] = A[target], A[idx]
 
         missing = []
-        for idx, elm in enumerate(A
+        ___ idx, elm in enumerate(A
             __ idx != elm - 1:
                 missing.append(idx + 1)
         r_ missing

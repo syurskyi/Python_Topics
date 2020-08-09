@@ -16,7 +16,7 @@ ___ index(
         end = request.form.get('end')
         hours = request.form.get('hours')
         rate = request.form.get('rate')
-        for i in (date, start, end, hours, rate
+        ___ i in (date, start, end, hours, rate
             data.append(i)
         write_to_db(data)
     ot_list = pull_data()

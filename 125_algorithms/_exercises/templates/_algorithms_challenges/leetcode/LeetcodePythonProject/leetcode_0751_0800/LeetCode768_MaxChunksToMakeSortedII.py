@@ -15,7 +15,7 @@ class Solution(object
         testCases = [
             
         ]
-        for arr in testCases:
+        ___ arr in testCases:
             print('arr: %s' % arr)
             result = self.maxChunksToSorted(arr)
             print('result: %s' % result)

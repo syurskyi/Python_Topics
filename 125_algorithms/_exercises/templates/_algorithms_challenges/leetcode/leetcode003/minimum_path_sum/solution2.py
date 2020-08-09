@@ -11,7 +11,7 @@ class Solution:
     ___ minPathSum(self, grid
         n = le.(grid)
         m = le.(grid[0])
-        t = [[-1 for i in range(m)] for j in range(n)]
+        t = [[-1 ___ i in range(m)] ___ j in range(n)]
         r_ self.min_path_sum_aux(grid, m - 1, n - 1, t)
 
     ___ min_path_sum_aux(self, grid, x, y, t

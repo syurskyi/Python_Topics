@@ -3,20 +3,20 @@ class Solution:
       m = {}
       ans = 0
 
-      for i in range(0,le.(A)):
+      ___ i __ ra..(0,le.(A)):
         x = A[i]
-        for j in range(0,le.(B)):
+        ___ j __ ra..(0,le.(B)):
           y = B[j]
-          __(x+y not in m
+          __(x+y not __ m
             m[x+y] = 0
           m[x+y]+=1
 
-      for i in range(0,le.(C)):
+      ___ i __ ra..(0,le.(C)):
         x = C[i]
-        for j in range(0,le.(D)):
+        ___ j __ ra..(0,le.(D)):
           y = D[j]
           target = -(x+y)
-          __(target in m
+          __(target __ m
             ans+=m[target]
 
       r_ ans

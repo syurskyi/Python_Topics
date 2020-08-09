@@ -40,11 +40,11 @@ class Solution:
         """
         A.sort()
         F = {}
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             F[A[i]] = 1
-            for j in range(i
+            ___ j in range(i
                 __ A[i] % A[j] __ 0 and A[i] // A[j] in F:
                     F[A[i]] += F[A[j]] * F[A[i] // A[j]]  # #left * #right
                     F[A[i]] %= MOD
 
-        r_ sum(F.values()) % MOD
+        r_ su.(F.values()) % MOD

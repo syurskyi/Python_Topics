@@ -11,10 +11,10 @@ class Solution(object
       r_ 0
     ans = 0
     gap = int(ma__.ceil((b - a + 0.0) / (le.(nums) - 1)))
-    bucketMin = [None for _ in range(0, le.(nums) + 1)]
-    bucketMax = [None for _ in range(0, le.(nums) + 1)]
+    bucketMin = [None ___ _ in range(0, le.(nums) + 1)]
+    bucketMax = [None ___ _ in range(0, le.(nums) + 1)]
 
-    for num in nums:
+    ___ num in nums:
       index = (num - a) / gap
       __ bucketMin[index] is None:
         bucketMin[index] = num
@@ -24,8 +24,8 @@ class Solution(object
         bucketMax[index] = num
       ____
         bucketMax[index] = max(bucketMax[index], num)
-    bucketMin = [b for b in bucketMin __ b is not None]
-    bucketMax = [b for b in bucketMax __ b is not None]
-    for i in range(0, le.(bucketMin) - 1
+    bucketMin = [b ___ b in bucketMin __ b is not None]
+    bucketMax = [b ___ b in bucketMax __ b is not None]
+    ___ i in range(0, le.(bucketMin) - 1
       ans = max(ans, bucketMin[i + 1] - bucketMax[i])
     r_ ans

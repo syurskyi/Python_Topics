@@ -1,9 +1,9 @@
 ___ matrix(x, y, z
     lst = []
-    for i in range(x
+    ___ i in range(x
         lst.append([])
-    for q in lst:
-        for a in range(y
+    ___ q in lst:
+        ___ a in range(y
             q.append(z)
     r_ lst
 

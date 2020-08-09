@@ -19,7 +19,7 @@ class Solution:
 
         intvs.sort(key=lambda intv: (intv.start, intv.end))
 
-        for intv in intvs:
+        ___ intv in intvs:
             __ not ans or intv.start > ans[-1].end:
                 ans.append(intv)
             ____ intv.end > ans[-1].end:

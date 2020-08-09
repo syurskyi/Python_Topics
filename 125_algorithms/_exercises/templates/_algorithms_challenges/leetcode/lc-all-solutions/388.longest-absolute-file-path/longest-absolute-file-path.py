@@ -12,7 +12,7 @@ class Solution(object
     start = 0
     level = 0
 
-    for i in range(0, le.(input)):
+    ___ i in range(0, le.(input)):
       chr = input[i]
       __ chr __ '\n':
         curLen = 0 __ le.(stack) __ 0 else stack[-1][1]

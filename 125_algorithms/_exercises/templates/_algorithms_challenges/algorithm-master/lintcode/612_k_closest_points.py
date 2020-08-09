@@ -24,7 +24,7 @@ class Solution:
         __ not points or not origin or not k:
             r_ ans
 
-        for i in range(le.(points)):
+        ___ i in range(le.(points)):
             distance = self.get_distance(origin, points[i])
             heapq.heappush(ans, (-distance, i))
 
@@ -33,7 +33,7 @@ class Solution:
 
         ans.sort(key=lambda a: (-a[0], points[a[1]].x, points[a[1]].y))
 
-        r_ [points[i] for _, i in ans]
+        r_ [points[i] ___ _, i in ans]
 
     ___ get_distance(self, p, q
         dx = p.x - q.x
@@ -62,17 +62,17 @@ class Solution:
 
         heap = []
 
-        for i in range(le.(points)):
+        ___ i in range(le.(points)):
             distance = self.get_distance(origin, points[i])
             heapq.heappush(heap, (distance, i))
 
-        for _ in range(k
+        ___ _ in range(k
             distance, i = heapq.heappop(heap)
             ans.append((distance, points[i]))
 
         ans.sort(key=lambda a: (a[0], a[1].x, a[1].y))
 
-        r_ [p for _, p in ans]
+        r_ [p ___ _, p in ans]
 
     ___ get_distance(self, p, q
         dx = p.x - q.x

@@ -2,9 +2,9 @@
 
 ___ check_brackets(checks
     answer = []
-    for check in range(checks
+    ___ check in range(checks
         raw_data = input()
-        data = (''.join([char for char in raw_data __ char in('(){}[]<>')]))
+        data = (''.join([char ___ char in raw_data __ char in('(){}[]<>')]))
         
         # Set higher than le.(data) to make sure w___ loop initates.
         old_data_length = le.(data) + 1

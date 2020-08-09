@@ -11,7 +11,7 @@ class Solution(object
       ____
         i += 1
 
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       __ nums[i] != i + 1:
         r_ i + 1
     r_ le.(nums) + 1

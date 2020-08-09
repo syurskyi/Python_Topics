@@ -29,7 +29,7 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             t = self.idx(A[i])
             w___ i != t:
                 __ A[i] __ A[t]:
@@ -39,7 +39,7 @@ class Solution:
                     t = self.idx(A[i])
 
         ret = []
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ self.idx(A[i]) != i:
                 ret.append(A[i])
 

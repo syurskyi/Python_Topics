@@ -9,11 +9,11 @@ w___ le.(lista) < d:
 
     res = str(addi)    
     
-    for i in range(0,le.(res)):
+    ___ i in range(0,le.(res)):
         result = result + int(res[i])
     
     lista.append(result)
 
     
-resv =  ' '.join(str(e) for e in lista)
+resv =  ' '.join(str(e) ___ e in lista)
 print(resv) 

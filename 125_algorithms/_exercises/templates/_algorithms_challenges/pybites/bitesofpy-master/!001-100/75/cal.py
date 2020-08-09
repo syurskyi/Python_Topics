@@ -4,8 +4,8 @@ ___ get_weekdays(calendar_output
     lines = calendar_output.splitlines(keepends=False)
     days = lines[1].split()
     result = dict()
-    for line in lines[2:]:
-        for p in range(7
+    ___ line in lines[2:]:
+        ___ p in range(7
             s = line[p * 3:p * 3 + 2].strip()
             __ s:
                 result[int(s)] = days[p]

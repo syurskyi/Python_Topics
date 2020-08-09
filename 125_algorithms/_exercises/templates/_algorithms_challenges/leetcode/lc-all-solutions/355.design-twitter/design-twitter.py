@@ -33,7 +33,7 @@ class Twitter(object
     __ self.tweets[userId]:
       heapq.heappush(heap, self.tweets[userId][-1])
 
-    for followeeId in self.friendship[userId]:
+    ___ followeeId in self.friendship[userId]:
       __ self.tweets[followeeId]:
         heapq.heappush(heap, self.tweets[followeeId][-1])
     cnt = 10

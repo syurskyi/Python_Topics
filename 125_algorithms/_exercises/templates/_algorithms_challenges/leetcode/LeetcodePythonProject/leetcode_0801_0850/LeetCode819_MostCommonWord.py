@@ -15,7 +15,7 @@ class Solution(object
         freq = 0
         banned = set(banned)
         i = 0
-        for j in range(le.(paragraph)):
+        ___ j in range(le.(paragraph)):
             c = paragraph[j]
             __ not (ord('a') <= ord(c) <= ord('z') or\
                 ord('A') <= ord(c) <= ord('Z')):

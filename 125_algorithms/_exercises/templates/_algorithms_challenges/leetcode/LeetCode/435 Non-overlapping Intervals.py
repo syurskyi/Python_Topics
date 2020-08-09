@@ -19,7 +19,7 @@ class Interval:
     ___ new(cls, lst
         r_ [
             cls(s, e)
-            for s, e in lst
+            ___ s, e in lst
         ]
         
 
@@ -36,7 +36,7 @@ class Solution:
 
         intervals.sort(key=lambda x: x.start)
         cur = intervals[0]
-        for itv in intervals[1:]:
+        ___ itv in intervals[1:]:
             __ cur.end <= itv.start:
                 cur = itv
             ____

@@ -6,7 +6,7 @@ class Solution:
         """
         ans = 0
 
-        for i in range(1, N + 1
+        ___ i in range(1, N + 1
             __ self.is_good(i
                 ans += 1
 

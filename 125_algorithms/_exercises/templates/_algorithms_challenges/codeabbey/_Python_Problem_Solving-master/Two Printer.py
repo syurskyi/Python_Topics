@@ -1,4 +1,4 @@
-for i in range(int(input())):
+___ i in range(int(input())):
     x,y,n = list(map(float, input().split()))
     x_1 = int(y*n / (x+y))
     y_1 = int(x*n/ (x+y))

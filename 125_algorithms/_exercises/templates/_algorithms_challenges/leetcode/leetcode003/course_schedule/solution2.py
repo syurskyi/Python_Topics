@@ -35,11 +35,11 @@ class Solution(object
         self.unvisited = set(range(numCourses))
         self.visiting = set()
         self.visited = set()
-        self.graph = {x: set() for x in range(numCourses)}
-        for c, p in prerequisites:
+        self.graph = {x: set() ___ x in range(numCourses)}
+        ___ c, p in prerequisites:
             self.graph[p].add(c)
 
-        for u in range(numCourses
+        ___ u in range(numCourses
             __ u in self.unvisited:
                 __ self.visit(u) is False:
                     r_ False
@@ -51,7 +51,7 @@ class Solution(object
         ____ u in self.unvisited:
             self.unvisited.remove(u)
             self.visiting.add(u)
-            for v in self.graph[u]:
+            ___ v in self.graph[u]:
                 __ self.visit(v) is False:
                     r_ False
             self.visiting.remove(u)

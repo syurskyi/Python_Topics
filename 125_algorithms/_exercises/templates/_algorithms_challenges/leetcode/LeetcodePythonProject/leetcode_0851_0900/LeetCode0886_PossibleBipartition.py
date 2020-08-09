@@ -10,19 +10,19 @@ class Solution(object
         :type dislikes: List[List[int]]
         :rtype: bool
         """
-        graph = [[False]*N for _ in range(N)]
-        for d in dislikes:
+        graph = [[False]*N ___ _ in range(N)]
+        ___ d in dislikes:
             graph[d[0]-1][d[1]-1] = True
             graph[d[1]-1][d[0]-1] = True
         group = [0]*N
-        for i in range(N
+        ___ i in range(N
             __ group[i] __ 0 and not self.dfs(graph, group, i, 1, N
                 r_ False
         r_ True
     
     ___ dfs(self, graph, group, idx, g, N
         group[idx] = g
-        for i in range(N
+        ___ i in range(N
             __ graph[idx][i] __ 1:
                 __ group[i] __ g:
                     r_ False
@@ -37,9 +37,9 @@ class Solution(object
         :rtype: bool
         """
         hashmap = {}
-        for num in range(1, N+1
+        ___ num in range(1, N+1
             hashmap[num] = set()
-        for d in dislikes:
+        ___ d in dislikes:
             hashmap[d[0]].add(d[1])
             hashmap[d[1]].add(d[0])
         g0, g1 = [1], []
@@ -49,11 +49,11 @@ class Solution(object
         __ n > N:
             r_ True
         dislike0, dislike1 = False, False
-        for num in g0:
+        ___ num in g0:
             __ n in hashmap[num] or num in hashmap[n]:
                 dislike0 = True
                 break
-        for num in g1:
+        ___ num in g1:
             __ n in hashmap[num] or num in hashmap[n]:
                 dislike1 = True
                 break
@@ -75,7 +75,7 @@ class Solution(object
                 [[1,2],[1,3],[2,3]],
             ],
         ]
-        for N, dislikes in testCases:
+        ___ N, dislikes in testCases:
             res = self.possibleBipartition(N, dislikes)
             print('res: %s' % res)
             print('-='*30+'-')

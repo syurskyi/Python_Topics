@@ -11,7 +11,7 @@ class Solution(object
       r_ n * k
     pre = k * k
     ppre = k
-    for i in range(2, n
+    ___ i in range(2, n
       tmp = pre
       pre = (k - 1) * (pre + ppre)
       ppre = tmp

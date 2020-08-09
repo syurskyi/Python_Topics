@@ -15,7 +15,7 @@ class Solution(object
         n = le.(nums)
         start = -1
         end = -1
-        for i, e in enumerate(nums
+        ___ i, e in enumerate(nums
             __ i __ 0:
                 start = 0
                 end = 0

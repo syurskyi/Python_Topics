@@ -59,7 +59,7 @@ class Solution:
         """
         q = deque()
         deck.sort()
-        for i in range(le.(deck) - 1, -1, -1
+        ___ i in range(le.(deck) - 1, -1, -1
             __ q:
                 tail = q.pop()
                 q.appendleft(tail)

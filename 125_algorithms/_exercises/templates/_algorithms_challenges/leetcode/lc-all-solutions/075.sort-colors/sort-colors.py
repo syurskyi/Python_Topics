@@ -5,7 +5,7 @@ class Solution(object
     :rtype: void Do not return anything, modify nums in-place instead.
     """
     x = y = z = -1
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       __ nums[i] __ 0:
         x += 1
         y += 1

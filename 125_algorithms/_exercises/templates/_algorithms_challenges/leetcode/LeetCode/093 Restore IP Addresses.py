@@ -37,7 +37,7 @@ class Solution:
                 result.append(".".join(cur))
                 r_
 
-            for i in xrange(1, min(3, le.(seq))+1
+            ___ i in xrange(1, min(3, le.(seq))+1
                 self.dfs(seq[i:], cur+[seq[:i]], result)
 
     ___ dfs(self, seq, cur, result
@@ -59,7 +59,7 @@ class Solution:
 
         # for i in xrange(1, 3+1
         # for loop
-        for i in xrange(1, min(3, le.(seq)) + 1
+        ___ i in xrange(1, min(3, le.(seq)) + 1
             new_seg = seq[:i]
             # condition check
             __ le.(cur) < 4 and self.is_valid(new_seg

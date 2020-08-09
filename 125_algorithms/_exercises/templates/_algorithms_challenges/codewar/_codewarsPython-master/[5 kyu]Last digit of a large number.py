@@ -19,5 +19,5 @@ ___ last_digit(n1, n2
     ____
         r_ res[n1][n2%le.(res[n1]) - 1]
 
-for i in range(0,5
+___ i in range(0,5
     print(last_digit(34,i))    

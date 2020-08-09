@@ -22,8 +22,8 @@ class Graph:
             u = queue.pop(0)
             print(u, end=" ")
 
-            for v in self.graph[u]:
-                __ v not in visited:
+            ___ v __ self.graph[u]:
+                __ v not __ visited:
                     queue.append(v)
                     visited.add(v)
 

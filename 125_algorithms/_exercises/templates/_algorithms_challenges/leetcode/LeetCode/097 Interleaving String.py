@@ -57,18 +57,18 @@ class Solution(object
         __ m+n != le.(s3
             r_ False
 
-        dp = [[False for _ in xrange(n+1)] for _ in xrange(m+1)]
+        dp = [[False ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
 
         # initialize boundary conditions
         dp[0][0] = True
-        for i in xrange(1, m+1
+        ___ i in xrange(1, m+1
             dp[i][0] = dp[i-1][0] and s3[i+0-1] __ s1[i-1]
-        for j in xrange(1, n+1
+        ___ j in xrange(1, n+1
             dp[0][j] = dp[0][j-1] and s3[0+j-1] __ s2[j-1]
 
         # calculating
-        for i in xrange(1, m+1
-            for j in xrange(1, n+1
+        ___ i in xrange(1, m+1
+            ___ j in xrange(1, n+1
                 __ not dp[i][j]:
                     dp[i][j] = dp[i-1][j] and s3[i+j-1] __ s1[i-1]
                 __ not dp[i][j]:

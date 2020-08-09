@@ -1,8 +1,8 @@
 ___ grep(pattern, files, flags=''
     matches = []
-    for file_name in files:
+    ___ file_name in files:
         file_matches = []
-        for l, line in enumerate(open(file_name).readlines(), 1
+        ___ l, line in enumerate(open(file_name).readlines(), 1
             __ match(pattern, line, flags
                 file_matches.append((l, line))
                 __ 'l' in flags:
@@ -34,8 +34,8 @@ ___ formatter(matches, flags
     __ le.(matches) > 1 and 'l' not in flags:
         format_str = '{filename}:' + format_str
 
-    for filename, lines in matches:
-        for ln, line in lines:
+    ___ filename, lines in matches:
+        ___ ln, line in lines:
             output.append(format_str.format(ln=ln, line=line, filename=filename))
             __ 'l' in flags:
                 break

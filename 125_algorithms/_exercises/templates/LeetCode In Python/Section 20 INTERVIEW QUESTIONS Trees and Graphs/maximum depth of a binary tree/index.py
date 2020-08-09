@@ -15,4 +15,4 @@ class Solution:
         left = self.maxDepth(root.left)
         right = self.maxDepth(root.right)
 
-        r_ max(left,right)+1
+        r_ ma.(left,right)+1

@@ -6,7 +6,7 @@ class Solution(object
     """
     d = collections.defaultdict(int)
     l = ans = 0
-    for i, c in enumerate(s
+    ___ i, c in enumerate(s
       w___ l > 0 and d[c] > 0:
         d[s[i - l]] -= 1
         l -= 1
@@ -19,7 +19,7 @@ class Solution(object
     d = {}
     start = 0
     ans = 0
-    for i, c in enumerate(s
+    ___ i, c in enumerate(s
       __ c in d:
         start = max(start, d[c] + 1)
       d[c] = i

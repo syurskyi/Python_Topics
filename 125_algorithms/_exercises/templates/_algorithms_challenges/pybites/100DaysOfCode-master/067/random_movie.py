@@ -19,7 +19,7 @@ ___ open_db(name
 ___ select_movie(
     with open_db(DB) as cursor:
         movie = cursor.execute("SELECT * FROM test_table ORDER BY RANDOM() LIMIT 1;")
-        for i in movie:
+        ___ i in movie:
             print("A random movie to watch is %s."  % i[0])
     r_
 

@@ -23,7 +23,7 @@ class Solution(object
             250,
             300,
         ]
-        for num in testCases:
+        ___ num in testCases:
             print('num: %s' % num)
             result = self.findNthDigit(num)
             print('result: %s' % result)

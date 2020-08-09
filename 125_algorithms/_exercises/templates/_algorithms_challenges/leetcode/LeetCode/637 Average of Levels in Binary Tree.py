@@ -39,10 +39,10 @@ class Solution:
         q = [root]
         w___ q:
             n = le.(q)
-            avg = sum(map(lambda node: node.val, q)) / n
+            avg = su.(map(lambda node: node.val, q)) / n
             ret.append(avg)
             cur_q = []
-            for node in q:
+            ___ node in q:
                 __ node.left:
                     cur_q.append(node.left)
                 __ node.right:

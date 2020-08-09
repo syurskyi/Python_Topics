@@ -14,11 +14,11 @@ class Solution(object
         __ le.(hand) % w != 0:
             r_ False
         hashmap = {}
-        for num in hand:
+        ___ num in hand:
             hashmap[num] = hashmap[num]+1 __ num in hashmap else 1
         w___ hashmap:
             minVal = min(hashmap)
-            for i in range(w
+            ___ i in range(w
                 __ minVal + i not in hashmap:
                     r_ False
                 hashmap[minVal+i] -= 1
@@ -37,7 +37,7 @@ class Solution(object
                 4,
             ],
         ]
-        for hand, w in testCases:
+        ___ hand, w in testCases:
             result = self.isNStraightHand(hand, w)
             print('result: %s' % result)
             print('-='*30+'-')

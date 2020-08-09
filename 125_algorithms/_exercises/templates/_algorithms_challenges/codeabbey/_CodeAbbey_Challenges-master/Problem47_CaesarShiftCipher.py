@@ -5,17 +5,17 @@ infile.close()
 
 ## Gen Alphabets
 alpha = []
-for i in range(26
+___ i in range(26
     char = chr(65+i)
     alpha.append(char)
 
 
 #Decrypt
     
-for line in data:
+___ line in data:
     output = ""
     line = line.strip()
-    for char in line:
+    ___ char in line:
         __ char.isalpha(
             i = alpha.index(char)-int(k)
             output += alpha[i]

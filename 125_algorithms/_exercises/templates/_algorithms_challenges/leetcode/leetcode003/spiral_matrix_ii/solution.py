@@ -1,13 +1,13 @@
 class Solution:
     # @return a list of lists of integer
     ___ generateMatrix(self, n
-        matrix = [[0 for i in range(n)] for j in range(n)]
+        matrix = [[0 ___ i in range(n)] ___ j in range(n)]
         count = 1
-        for i in range(n / 2
+        ___ i in range(n / 2
             start = i
             end = n - i - 1
             width = end - start
-            for j in range(start, end
+            ___ j in range(start, end
                 offset = j - start
                 # Top
                 matrix[start][j] = count + offset

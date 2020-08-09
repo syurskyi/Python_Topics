@@ -22,7 +22,7 @@ class Solution(object
         __ not nums: r_ []
         root = TreeNode(nums[-1])
         result = [0]
-        for i in range(le.(nums)-2, -1, -1
+        ___ i in range(le.(nums)-2, -1, -1
             result.insert(0, self.getVal(root, nums[i], 0))
         r_ result, root
     
@@ -48,7 +48,7 @@ class Solution(object
             [-1, -1],
             [3, 2, 2, 6, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result, root = self.countSmaller(nums)
             print('result: %s' % (result))

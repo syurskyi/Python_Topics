@@ -30,7 +30,7 @@ class Solution(object
             100,
             -7,
         ]
-        for num in testCases:
+        ___ num in testCases:
             result = self.convertToBase7(num)
             print('result: %s' % result)
             print('-='*30+'-')

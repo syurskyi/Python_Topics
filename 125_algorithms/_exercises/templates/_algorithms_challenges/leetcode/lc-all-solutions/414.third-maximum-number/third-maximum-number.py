@@ -5,7 +5,7 @@ class Solution(object
     :rtype: int
     """
     first = second = third = float("-inf")
-    for num in nums:
+    ___ num in nums:
       __ num in [first, second, third]:
         continue
       __ num > first:

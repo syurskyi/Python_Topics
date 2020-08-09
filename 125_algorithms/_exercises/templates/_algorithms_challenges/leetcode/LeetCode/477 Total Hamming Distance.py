@@ -37,7 +37,7 @@ class Solution:
         ret = 0
         w___ any(nums  # any not 0
             z, o = 0, 0
-            for i in range(le.(nums)):
+            ___ i in range(le.(nums)):
                 __ nums[i] & 1 __ 0:
                     o += 1
                 ____

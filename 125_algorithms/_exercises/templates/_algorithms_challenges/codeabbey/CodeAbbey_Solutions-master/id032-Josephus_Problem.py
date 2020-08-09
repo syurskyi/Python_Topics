@@ -1,5 +1,5 @@
 ___ solveJosephus(specifics
-    people = [int(x) for x in range(1,int(specifics[0])+1)]
+    people = [int(x) ___ x in range(1,int(specifics[0])+1)]
     killPosition = int(specifics[1])
     positionCounter = 0
     sorted = False
@@ -8,7 +8,7 @@ ___ solveJosephus(specifics
         __ le.(people) __ 1:
             print(people[0]) # Pyschologically scarred Winner!
             sorted = True
-        for person in people[:]: #Make copy of iterating list
+        ___ person in people[:]: #Make copy of iterating list
             positionCounter += 1
             __ positionCounter __ killPosition:
                 people.remove(person)

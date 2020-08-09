@@ -14,8 +14,8 @@ class Solution(object
         cols = [0]*3
         diag = 0
         antidiag = 0
-        for i in range(3
-            for j in range(3
+        ___ i in range(3
+            ___ j in range(3
                 __ board[i][j] __ 'X':
                     turns += 1
                     rows[i] += 1
@@ -47,7 +47,7 @@ class Solution(object
             ["XXX", "OOX", "OOX"],
             ["OXX", "XOX", "OXO"],
         ]
-        for board in testCases:
+        ___ board in testCases:
             result = self.validTicTacToe(board)
             print('result: %s' % result)
             print('-='*30+'-')

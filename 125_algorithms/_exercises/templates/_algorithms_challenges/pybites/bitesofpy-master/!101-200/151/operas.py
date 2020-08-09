@@ -76,7 +76,7 @@ ___ operas_both_at_premiere(guest, composer
     """
     __ guest not in composers or composer not in composers:
         raise ValueError
-    for opera in operas:
+    ___ opera in operas:
         __ opera.author __ composer:
             __ _alive_for_opera(composers[composer], opera) and _alive_for_opera(composers[guest], opera
                 yield opera.play

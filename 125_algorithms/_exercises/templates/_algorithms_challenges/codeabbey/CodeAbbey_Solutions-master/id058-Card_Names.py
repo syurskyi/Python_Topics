@@ -3,11 +3,11 @@
 ___ find_name(amount_of_cards
     #amount_of_cards is a wasted variable required by CodeAbbey.
     answer = []
-    cards = [int(x) for x in raw_input().split()]
+    cards = [int(x) ___ x in raw_input().split()]
     suits = ['Clubs', 'Spades', 'Diamonds', 'Hearts']
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10',
              'Jack','Queen', 'King', 'Ace']
-    for card in cards:
+    ___ card in cards:
         suit_number = card / 13
         suit = suits[suit_number]
         

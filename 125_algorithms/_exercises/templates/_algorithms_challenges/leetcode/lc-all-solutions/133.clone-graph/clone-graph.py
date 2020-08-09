@@ -19,7 +19,7 @@ class Solution:
         graph[node.label] = UndirectedGraphNode(node.label)
       newNode = graph[node.label]
 
-      for nbr in node.neighbors:
+      ___ nbr in node.neighbors:
         __ nbr.label not in graph:
           graph[nbr.label] = UndirectedGraphNode(nbr.label)
         newNode.neighbors.append(graph[nbr.label])

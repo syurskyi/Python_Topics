@@ -10,7 +10,7 @@ class Solution(object
         longest = n-k
         __ k >= n: r_ '0'
         stack = []
-        for c in num:
+        ___ c in num:
             w___ k > 0 and stack and stack[-1] > c:
                 stack.pop()
                 k -= 1
@@ -29,7 +29,7 @@ class Solution(object
             ("1234567890", 9),
             ("1173", 2),
         ]
-        for num, k in testCases:
+        ___ num, k in testCases:
             print('num: %s' % num)
             print('k: %s' % k)
             result = self.removeKdigits(num, k)

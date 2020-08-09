@@ -18,7 +18,7 @@ ___ get_soup(html='index.html'
 
 
 ___ parse_talks(s
-    for talk in s.find_all(attrs={'class': 'slot-talk'}
+    ___ talk in s.find_all(attrs={'class': 'slot-talk'}
         title = talk.a.text
         speaker = talk.find(attrs={'class': 'speaker'}).text.strip()
         description = talk.a.get('title').strip()

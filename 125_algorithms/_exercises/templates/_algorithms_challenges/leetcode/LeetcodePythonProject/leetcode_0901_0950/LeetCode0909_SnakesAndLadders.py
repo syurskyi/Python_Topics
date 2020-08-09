@@ -6,7 +6,7 @@ class Solution(object
         """
         n = le.(board)
         newboard = []
-        for i in range(n
+        ___ i in range(n
             newboard.extend(board[n-i-1] __ i % 2 __ 0 else board[n-i-1][::-1])
         board = newboard
         n = le.(board)
@@ -14,7 +14,7 @@ class Solution(object
         visited = set([0])
         w___ queue:
             i, d = queue.pop(0)
-            for j in range(i+1, i+7
+            ___ j in range(i+1, i+7
                 __ j __ n-1:
                     r_ d+1
                 __ j not in visited:
@@ -63,7 +63,7 @@ class Solution(object
              [-1,-1,-1,-1,-1,-1],
              [-1,15,-1,-1,-1,-1]],
         ]
-        for board in testCases:
+        ___ board in testCases:
             res = self.snakesAndLadders(board)
             print('res: %s' % res)
             print('-='*30+'-')

@@ -10,7 +10,7 @@ class Solution(object
     a = ""
     b = ""
     ans = []
-    for c in s:
+    ___ c in s:
       __ isFirst:
         a = c + a
       ____

@@ -19,7 +19,7 @@ class Solution(object
             self.hashmap[target] = n
         ____
             self.hashmap[target] = self.racecar(2**n-1-target)+n+1
-            for m in range(n-1
+            ___ m in range(n-1
                 self.hashmap[target] = min(self.hashmap[target],\
                             self.racecar(target-2**(n-1)+2**m)+n+m+1)
         r_ self.hashmap[target]
@@ -29,7 +29,7 @@ class Solution(object
             3,
             6,
         ]
-        for target in testCases:
+        ___ target in testCases:
             print('target: %s' % target)
             result = self.racecar(target)
             print('result: %s' % result)

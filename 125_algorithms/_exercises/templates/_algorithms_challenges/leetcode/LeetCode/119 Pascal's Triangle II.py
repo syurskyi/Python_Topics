@@ -26,11 +26,11 @@ class Solution:
             r_ [1]
 
         current_level = [1, 1]
-        for row in xrange(2, rowIndex+1
+        ___ row in xrange(2, rowIndex+1
 
             # generating next level
             temp = current_level[0]
-            for col in xrange(1, row # middle
+            ___ col in xrange(1, row # middle
                 summation = current_level[col] + temp
                 temp = current_level[col]
                 current_level[col] = summation

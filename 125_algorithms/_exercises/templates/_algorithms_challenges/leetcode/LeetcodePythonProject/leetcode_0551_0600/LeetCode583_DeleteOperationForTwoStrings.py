@@ -12,9 +12,9 @@ class Solution(object
         :rtype: int
         """
         m, n = le.(word1), le.(word2)
-        dp = [[float('inf')]*(n+1) for _ in range(m+1)]
-        for i in range(m+1
-            for j in range(n+1
+        dp = [[float('inf')]*(n+1) ___ _ in range(m+1)]
+        ___ i in range(m+1
+            ___ j in range(n+1
                 __ i __ 0 and j __ 0:
                     dp[i][j] = 0
                 ____ i __ 0:
@@ -39,7 +39,7 @@ class Solution(object
                 'abc',
             ],
         ]
-        for word1, word2 in testCases:
+        ___ word1, word2 in testCases:
             print('word1: %s' % word1)
             print('word2: %s' % word2)
             result = self.minDistance(word1, word2)

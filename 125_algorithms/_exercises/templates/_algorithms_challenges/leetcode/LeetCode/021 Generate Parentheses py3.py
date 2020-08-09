@@ -23,12 +23,12 @@ class Solution:
         Method 2 - dp
         Let F[n] be the list of parentheses at length 2n
         """
-        F: List[List[str]] = [[] for _ in range(n + 1)]
+        F: List[List[str]] = [[] ___ _ in range(n + 1)]
         F[0].append("")
-        for i in range(1, n+1
-            for j in range(i
-                for s1 in F[j]:
-                    for s2 in F[i-j-1]:
+        ___ i in range(1, n+1
+            ___ j in range(i
+                ___ s1 in F[j]:
+                    ___ s2 in F[i-j-1]:
                         F[i].append(f"({s1}){s2}")
 
         r_ F[n]

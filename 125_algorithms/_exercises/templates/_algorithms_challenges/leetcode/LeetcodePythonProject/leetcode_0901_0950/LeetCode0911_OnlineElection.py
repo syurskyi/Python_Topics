@@ -9,7 +9,7 @@ class TopVotedCandidate(object
         hashmap = {}
         maxNum = 0
         maxP = None
-        for p, t in zip(persons, times
+        ___ p, t in zip(persons, times
             hashmap[p] = hashmap.get(p, 0)+1
             __ hashmap[p] >= maxNum:
                 maxP = p

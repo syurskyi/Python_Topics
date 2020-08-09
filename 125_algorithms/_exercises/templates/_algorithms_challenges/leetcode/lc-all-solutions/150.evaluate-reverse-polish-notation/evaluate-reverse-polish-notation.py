@@ -5,7 +5,7 @@ class Solution(object
     :rtype: int
     """
     stack = []
-    for token in tokens:
+    ___ token in tokens:
       __ token in ["+", "-", "*", "/"]:
         b, a = stack.pop(), stack.pop()
         __ token __ "+":

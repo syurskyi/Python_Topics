@@ -1,7 +1,7 @@
 ___ sum_of_n(n
 	res = []
 	v = 0
-	for i in range(abs(n)+1
+	___ i in range(abs(n)+1
 		v += i __ n >= 0 else -i
 		res.append(v)
 	r_ res

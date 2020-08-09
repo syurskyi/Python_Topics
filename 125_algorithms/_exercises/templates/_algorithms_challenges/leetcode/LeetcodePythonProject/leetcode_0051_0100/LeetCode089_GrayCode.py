@@ -12,6 +12,6 @@ class Solution(object
         __ n __ 0: r_ [n]
         res = self.grayCode(n-1)
         toAdd = 1 << (n-1)
-        for i in range(le.(res)-1, -1, -1
+        ___ i in range(le.(res)-1, -1, -1
             res.append(toAdd+res[i])
         r_ res

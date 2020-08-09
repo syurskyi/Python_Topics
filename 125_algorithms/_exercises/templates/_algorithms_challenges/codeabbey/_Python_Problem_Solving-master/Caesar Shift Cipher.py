@@ -12,17 +12,17 @@ s2 = s1[k:] + s1[:k]
 a = {}
 
 #store the decoding data in dictionary a
-for i in range(le.(s1)):
+___ i in range(le.(s1)):
     a[s2[i]] = s1[i]
 
 #now for number of test cases run the for loop
-for i in range(data
+___ i in range(data
     #accept the test cases and convert it to lowercase
     s = input().lower()
     #variable to store the result
     res = ''
     #check every element of the string
-    for j in range(0,le.(s)-1
+    ___ j in range(0,le.(s)-1
         #if present in the decoding dictionary add the respective character to result string
         __ s[j] in a:
             res += a[s[j]]

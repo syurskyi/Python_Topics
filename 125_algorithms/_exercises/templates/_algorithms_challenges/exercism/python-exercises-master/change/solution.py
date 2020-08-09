@@ -5,9 +5,9 @@ ___ find_minimum_coins(total_change, coins
     last_coin = [0]*(total_change + 1)
     min_coins_required[0] = 0
     last_coin[0] = -1
-    for change in range(1, total_change + 1
+    ___ change in range(1, total_change + 1
         final_result = min_coins_required[change]
-        for coin in coins:
+        ___ coin in coins:
             __ coin <= change:
                 result = min_coins_required[change - coin] + 1
                 __ result < final_result:

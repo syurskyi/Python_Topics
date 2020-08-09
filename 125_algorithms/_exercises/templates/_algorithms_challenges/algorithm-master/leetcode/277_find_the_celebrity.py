@@ -10,15 +10,15 @@ class Solution:
 
         x = 0
 
-        for i in range(n
+        ___ i in range(n
             __ knows(x, i
                 x = i
 
-        for i in range(x
+        ___ i in range(x
             __ knows(x, i
                 r_ -1
 
-        for i in range(n
+        ___ i in range(n
             __ not knows(i, x
                 r_ -1
 

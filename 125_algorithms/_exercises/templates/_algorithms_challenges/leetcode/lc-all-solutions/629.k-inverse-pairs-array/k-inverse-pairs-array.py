@@ -13,9 +13,9 @@ class Solution(object
       r_ 0
     dp = [0] * (k + 1)
     dp[0] = 1
-    for i in range(1, n + 1
+    ___ i in range(1, n + 1
       temp = [1] + [0] * k
-      for j in range(k + 1
+      ___ j in range(k + 1
         temp[j] = (temp[j - 1] + dp[j]) % MOD
         __ j - i >= 0:
           temp[j] = (temp[j] - dp[j - i]) % MOD

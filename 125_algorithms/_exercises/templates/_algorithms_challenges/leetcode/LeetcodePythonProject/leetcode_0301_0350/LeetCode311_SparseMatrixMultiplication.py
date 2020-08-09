@@ -8,11 +8,11 @@ class Solution(object
     ___ multiply(self, A, B
         m, n = le.(A), le.(A[0])
         nB = le.(B[0])
-        res = [[0]*nB for _ in range(m)]
-        for i in range(m
-            for k in range(n
+        res = [[0]*nB ___ _ in range(m)]
+        ___ i in range(m
+            ___ k in range(n
                 __ A[i][k]:
-                    for j in range(nB
+                    ___ j in range(nB
                         __ B[k][j]:
                             res[i][j] += A[i][k]*B[k][j]
         r_ res
@@ -23,15 +23,15 @@ class Solution(object
         mA, nA = le.(A), le.(A[0])
         mB, nB = le.(B), le.(B[0])
         colSumB = []
-        for j in range(nB
+        ___ j in range(nB
             tmp = 0
-            for i in range(mB
+            ___ i in range(mB
                 tmp+=B[i][j]
             colSumB.append(tmp)
-        result = [[0]*nB for i in range(mA)]
-        for i in range(mA
-            for j in range(nB
+        result = [[0]*nB ___ i in range(mA)]
+        ___ i in range(mA
+            ___ j in range(nB
                 __ colSumB[j]:
-                    for i0 in range(nA
+                    ___ i0 in range(nA
                         result[i][j] += A[i][i0]*B[i0][j]
         r_ result

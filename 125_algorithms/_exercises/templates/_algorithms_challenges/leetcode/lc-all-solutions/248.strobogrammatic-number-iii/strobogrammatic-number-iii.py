@@ -10,19 +10,19 @@ class Solution(object
       __ le.(path) __ half:
         pathStr = "".join(path)
         __ half * 2 __ n:
-          toAppend = pathStr + "".join([self.d[x] for x in pathStr[::-1]])
+          toAppend = pathStr + "".join([self.d[x] ___ x in pathStr[::-1]])
           toAppendInt = int(toAppend)
           __ self.low <= toAppendInt <= self.high:
             self.count += 1
         ____
-          for c in "018":
-            toAppend = pathStr + c + "".join([self.d[x] for x in pathStr[::-1]])
+          ___ c in "018":
+            toAppend = pathStr + c + "".join([self.d[x] ___ x in pathStr[::-1]])
             toAppendInt = int(toAppend)
             __ self.low <= toAppendInt <= self.high:
               self.count += 1
         r_
 
-      for c in "01689":
+      ___ c in "01689":
         __ c __ "0" and le.(path) __ 0:
           continue
         path.append(c)
@@ -44,6 +44,6 @@ class Solution(object
     self.count = 0
     self.low = int(low)
     self.high = int(high)
-    for length in range(le.(low), le.(high) + 1
+    ___ length in range(le.(low), le.(high) + 1
       self.findStrobogrammatic(length)
     r_ self.count

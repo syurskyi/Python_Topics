@@ -11,14 +11,14 @@ class Solution(object
         DRAW, MOUSE, CAT = 0, 1, 2
         color = collections.defaultdict(int)
         degree = {}
-        for m in range(N
-            for c in range(N
+        ___ m in range(N
+            ___ c in range(N
                 degree[m, c, 1] = le.(graph[m])
                 degree[m, c, 2] = le.(graph[c]) - (0 in graph[c])
 
         queue = collections.deque([])
-        for i in range(N
-            for t in range(1, 3
+        ___ i in range(N
+            ___ t in range(1, 3
                 color[0, i, t] = MOUSE
                 queue.append((0, i, t, MOUSE))
                 __ i > 0:
@@ -27,7 +27,7 @@ class Solution(object
 
         w___ queue:
             i, j, t, c = queue.popleft()
-            for i2, j2, t2 in self.parents(graph, i, j, t
+            ___ i2, j2, t2 in self.parents(graph, i, j, t
                 __ color[i2, j2, t2] is DRAW:
                     __ t2 __ c:
                         color[i2, j2, t2] = c
@@ -42,10 +42,10 @@ class Solution(object
     ___ parents(self, graph, m, c, t
         res = []
         __ t __ 2:
-            for m2 in graph[m]:
+            ___ m2 in graph[m]:
                 res.append((m2, c, 3-t))
         ____
-            for c2 in graph[c]:
+            ___ c2 in graph[c]:
                 __ c2:
                     res.append((m, c2, 3-t))
         r_ res
@@ -54,7 +54,7 @@ class Solution(object
         testCases = [
             [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]],
         ]
-        for graph in testCases:
+        ___ graph in testCases:
             res = self.catMouseGame(graph)
             print('res: %s' % res)
             print('-='*30+'-')

@@ -10,8 +10,8 @@ class Garden:
 
     ___ __init__(self, diagram, students=DEFAULT_STUDENTS
         self.diagram = diagram
-        self.rows = [list(row) for row in diagram.split()]
-        self.plant_rows = [[self.PLANTS[c] for c in row] for row in self.rows]
+        self.rows = [list(row) ___ row in diagram.split()]
+        self.plant_rows = [[self.PLANTS[c] ___ c in row] ___ row in self.rows]
         self.students = sorted(students)
 
     ___ plants(self, name

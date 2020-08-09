@@ -23,7 +23,7 @@ ___ build_chain(chain, domino
 ___ chain(dominoes
     __ not any(dominoes
         r_ []
-    for perm in permutations(dominoes
+    ___ perm in permutations(dominoes
         chain = reduce(build_chain, perm[1:], [perm[0]])
         __ chain is not None and chain[0][0] __ chain[-1][1]:
             r_ chain

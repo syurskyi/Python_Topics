@@ -17,7 +17,7 @@ class NinjaBelt:
     @staticmethod
     ___ _get_belt(new_score
         """Find the index number of the belt for the provide score"""
-        r_ le.([x for x in scores __ x <= new_score]) - 1
+        r_ le.([x ___ x in scores __ x <= new_score]) - 1
 
     ___ _get_score(self
         r_ self._score

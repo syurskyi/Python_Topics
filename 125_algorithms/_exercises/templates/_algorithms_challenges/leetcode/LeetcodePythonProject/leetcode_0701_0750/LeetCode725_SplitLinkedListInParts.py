@@ -25,7 +25,7 @@ class Solution(object
         length0 = length//k
         count0 = length-length0*k
         lengths = [length0]*k
-        for i in range(count0
+        ___ i in range(count0
             lengths[i] += 1
         head = root
         prev = ListNode(-1)
@@ -45,7 +45,7 @@ class Solution(object
             prev = head
             head = head.next
         res.append(prevHead)
-        for _ in range(i+1, k
+        ___ _ in range(i+1, k
             res.append(None)
         r_ res
     
@@ -60,7 +60,7 @@ class Solution(object
                 5,
             ],
         ]
-        for head, k in testCases:
+        ___ head, k in testCases:
             res = self.splitListToParts(head, k)
             print('res: %s' % res)
 

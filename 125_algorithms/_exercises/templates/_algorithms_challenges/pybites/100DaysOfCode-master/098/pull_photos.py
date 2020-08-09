@@ -43,7 +43,7 @@ __ __name__ __ '__main__':
 
     recent_media, next_ = api.user_recent_media(user_id=IG_USER_ID, count=50)
 
-    for media in recent_media:
+    ___ media in recent_media:
         print('thumb url: ', media.get_thumbnail_url())  # instagram/model.py
         print('\tstd res url: ', media.get_standard_resolution_url())
         print()

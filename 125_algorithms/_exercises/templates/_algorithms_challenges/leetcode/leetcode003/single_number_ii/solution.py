@@ -7,16 +7,16 @@ class Solution:
         res_bit = 0
         res = 0
         # First check whether the single number is negative
-        for num in A:
+        ___ num in A:
             bit = 1 __ num & (1 << (num_of_bits - 1)) != 0 else 0
             res_bit = (res_bit + bit) % 3
         positive = True __ res_bit __ 0 else False
 
-        for i in range(num_of_bits - 1
+        ___ i in range(num_of_bits - 1
             res_bit = 0
             # For each bit of each number, calculate each bit
             # of the single number
-            for num in A:
+            ___ num in A:
                 bit = 1 __ num & (1 << i) != 0 else 0
                 res_bit = (res_bit + bit) % 3
             # If single number is positive

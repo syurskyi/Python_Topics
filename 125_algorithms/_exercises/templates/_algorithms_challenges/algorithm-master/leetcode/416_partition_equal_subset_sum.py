@@ -15,7 +15,7 @@ class Solution:
         __ not nums:
             r_ True
 
-        target = sum(nums)
+        target = su.(nums)
 
         __ target & 1 __ 1:
             r_ False
@@ -24,8 +24,8 @@ class Solution:
         dp = [False] * (target + 1)
         dp[0] = True
 
-        for a in nums:
-            for s in range(target, a - 1, -1
+        ___ a in nums:
+            ___ s in range(target, a - 1, -1
                 __ dp[s]:
                     continue
 

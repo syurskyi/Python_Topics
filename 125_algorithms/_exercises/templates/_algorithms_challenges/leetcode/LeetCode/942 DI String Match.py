@@ -40,7 +40,7 @@ class Solution:
         """
         mini, maxa = 0, le.(S)
         ret = []
-        for c in S:
+        ___ c in S:
             __ c __ "I":
                 ret.append(mini)
                 mini += 1
@@ -58,7 +58,7 @@ class Solution:
         errror since cannot repeat
         """
         ret = [0]
-        for c in S:
+        ___ c in S:
             __ c __ "I":
                 ret.append(ret[-1] + 1)
             ____
@@ -66,5 +66,5 @@ class Solution:
         mn = min(ret)
         r_ [
             e - mn
-            for e in ret
+            ___ e in ret
         ]

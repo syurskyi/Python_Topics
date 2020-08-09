@@ -7,7 +7,7 @@ class Solution(object
     """
     start = j = 0
     digit = False
-    for i in range(0, le.(src)):
+    ___ i in range(0, le.(src)):
       __ src[i].isdigit(
         __ not digit:
           __ src[i] __ "0":

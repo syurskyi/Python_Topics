@@ -9,14 +9,14 @@ class Solution:
         __ n __ 1:
             r_ [[1]]
 
-        ans = [[0] * n for _ in range(n)]
+        ans = [[0] * n ___ _ in range(n)]
         delta = (
             (0, 1), (1, 0),
             (0, -1), (-1, 0),
         )
         x = y = turn = 0
 
-        for i in range(1, n * n + 1
+        ___ i in range(1, n * n + 1
             ans[x][y] = i
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]

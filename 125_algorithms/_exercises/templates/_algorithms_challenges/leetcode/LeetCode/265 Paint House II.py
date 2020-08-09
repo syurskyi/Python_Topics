@@ -21,17 +21,17 @@ class Solution(object
 
         n = le.(costs)
         m = le.(costs[0])
-        F = [[0 for _ in xrange(m)] for _ in xrange(n+1)]
-        for i in xrange(1, n+1
-            for k1 in xrange(m
+        F = [[0 ___ _ in xrange(m)] ___ _ in xrange(n+1)]
+        ___ i in xrange(1, n+1
+            ___ k1 in xrange(m
                 F[i][k1] = min(
                     F[i-1][k0]+costs[i-1][k1]
                     # if i == 1 or k1 != k0 else sys.maxint  # another syntax 
-                    for k0 in xrange(m)
+                    ___ k0 in xrange(m)
                     __ i __ 1 or k1 != k0
                 )
 
-        r_ min(F[n][i] for i in xrange(m))
+        r_ min(F[n][i] ___ i in xrange(m))
 
 
 __ __name__ __ "__main__":

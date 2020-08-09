@@ -4,7 +4,7 @@
 ___ reverseOrder(string
     parts = string.split(' ')
     result = ''
-    for word in reversed(parts
+    ___ word in reversed(parts
         result+= str(word) +  ' '
 
     r_ result

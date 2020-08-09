@@ -14,7 +14,7 @@ class Solution:
             r_ NOT_FOUND
 
         remaining = {}
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ A[i] in remaining:
                 r_ [
                     remaining[A[i]] + 1,

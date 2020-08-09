@@ -11,9 +11,9 @@ class Solution(object
         :rtype: int
         """
         n = le.(stickers)
-        mp = [[0]*26 for _ in range(n)]
-        for i in range(n
-            for c in stickers[i]:
+        mp = [[0]*26 ___ _ in range(n)]
+        ___ i in range(n
+            ___ c in stickers[i]:
                 mp[i][ord(c)-ord('a')] += 1
         mem = {}
         mem[''] = 0
@@ -24,14 +24,14 @@ class Solution(object
             r_ mem[target]
         n = le.(mp)
         tar = [0]*26
-        for c in target:
+        ___ c in target:
             tar[ord(c)-ord('a')] += 1
         res = float('inf')
-        for i in range(n
+        ___ i in range(n
             __ mp[i][ord(target[0])-ord('a')] __ 0:
                 continue
             s = ''
-            for j in range(26
+            ___ j in range(26
                 __ tar[j] > mp[i][j]:
                     s += chr(ord('a')+j)*(tar[j]-mp[i][j])
             tmp = self.helper(mem, mp, s)
@@ -51,7 +51,7 @@ class Solution(object
                 "basicbasic",
             ],
         ]
-        for stickers, target in testCases:
+        ___ stickers, target in testCases:
             print('stickers: %s' % stickers)
             print('target: %s' % target)
             result = self.minStickers(stickers, target)

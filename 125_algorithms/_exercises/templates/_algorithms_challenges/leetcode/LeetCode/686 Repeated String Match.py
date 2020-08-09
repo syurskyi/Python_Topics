@@ -17,14 +17,14 @@ ______ ma__
 class Solution:
     ___ repeatedStringMatch(self, A, B
         r = ma__.ceil(le.(B) / le.(A))
-        for count in (r, r + 1  # r + 1 when le.(B) % le.(A) == 0
+        ___ count in (r, r + 1  # r + 1 when le.(B) % le.(A) == 0
             __ B in A * count:
                 r_ count
 
         r_ -1
 
     ___ repeatedStringMatch_TLE(self, A: str, B: str) -> int:
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             j = 0
             count = 0
             w___ j < le.(B

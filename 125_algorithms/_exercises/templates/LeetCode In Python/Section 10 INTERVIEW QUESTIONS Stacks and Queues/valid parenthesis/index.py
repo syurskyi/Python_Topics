@@ -10,7 +10,7 @@ class Solution:
 
     ___ isValid(self, s: str) -> bool:
         st = []
-        for character in s:
+        ___ character __ s:
             __(le.(st) != 0
                 li = st[-1]
                 __(self.isEqual(li, character)):

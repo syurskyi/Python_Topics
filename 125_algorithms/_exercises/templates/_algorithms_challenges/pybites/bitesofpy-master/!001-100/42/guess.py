@@ -30,7 +30,7 @@ class Game:
         __ not guess:
             print('Please enter a number')
             raise ValueError('Nothing entered')
-        __ not all(c.isdigit() for c in str(guess)):
+        __ not all(c.isdigit() ___ c in str(guess)):
             print('Should be a number')
             raise ValueError('Non-digit entered')
         guess = int(guess)

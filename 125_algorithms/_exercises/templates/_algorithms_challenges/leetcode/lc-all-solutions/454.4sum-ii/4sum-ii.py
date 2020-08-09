@@ -9,15 +9,15 @@ class Solution(object
     """
     ans = 0
     abDict = {}
-    for i in range(le.(A)):
-      for j in range(le.(B)):
+    ___ i in range(le.(A)):
+      ___ j in range(le.(B)):
         __ A[i] + B[j] not in abDict:
           abDict[A[i] + B[j]] = 1
         ____
           abDict[A[i] + B[j]] += 1
 
-    for i in range(le.(C)):
-      for j in range(le.(D)):
+    ___ i in range(le.(C)):
+      ___ j in range(le.(D)):
         __ -C[i] - D[j] in abDict:
           ans += abDict[-C[i] - D[j]]
     r_ ans

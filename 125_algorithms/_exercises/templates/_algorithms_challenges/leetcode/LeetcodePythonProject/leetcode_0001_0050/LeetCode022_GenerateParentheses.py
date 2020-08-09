@@ -26,7 +26,7 @@ class Solution(object
             self.dfs(left, right-1, curr+')', res)
     
     ___ test(self
-        for n in range(4
+        ___ n in range(4
             print('n: %s' % n)
             result = self.generateParenthesis(n)
             print('result: %s' % result)

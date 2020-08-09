@@ -113,7 +113,7 @@ class MiniYelp:
 
         neighbors = []
         hashcode = restaurant = distance = None
-        for i in range(left, right
+        ___ i in range(left, right
             hashcode = self.geohashs[i]
             restaurant = self.restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
@@ -123,13 +123,13 @@ class MiniYelp:
         neighbors.sort(key=lambda item: item[0])
         r_ [
             restr.name
-            for _, restr in neighbors
+            ___ _, restr in neighbors
         ]
 
     ___ get_length(self, k
         n = le.(self.ERROR_IN_KM)
 
-        for i in range(n
+        ___ i in range(n
             __ k > self.ERROR_IN_KM[i]:
                 r_ i
 
@@ -161,7 +161,7 @@ class Trie:
 
         parent = self.root
         parent['keys'].add(key)
-        for char in key:
+        ___ char in key:
             __ char not in parent['children']:
                 parent['children'][char] = self._new_node()
             parent['children'][char]['keys'].add(key)
@@ -173,7 +173,7 @@ class Trie:
 
         parent = self.root
         parent['keys'].discard(key)
-        for char in key:
+        ___ char in key:
             __ char not in parent['children']:
                 r_
             parent = parent['children'][char]
@@ -184,7 +184,7 @@ class Trie:
         __ not prefix:
             r_ list(parent['keys'])
 
-        for char in prefix:
+        ___ char in prefix:
             __ char not in parent['children']:
                 r_ []
             parent = parent['children'][char]
@@ -243,7 +243,7 @@ class MiniYelp:
 
         neighbors = []
         restaurant = distance = None
-        for hashcode in hashcodes:
+        ___ hashcode in hashcodes:
             restaurant = self.restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
             __ distance <= k:
@@ -252,13 +252,13 @@ class MiniYelp:
         neighbors.sort(key=lambda item: item[0])
         r_ [
             restr.name
-            for _, restr in neighbors
+            ___ _, restr in neighbors
         ]
 
     ___ get_length(self, k
         n = le.(self.ERROR_IN_KM)
 
-        for i in range(n
+        ___ i in range(n
             __ k > self.ERROR_IN_KM[i]:
                 r_ i
 

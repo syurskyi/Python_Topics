@@ -30,11 +30,11 @@ class TwelveDays:
 
     @classmethod
     ___ verses(cls, start, stop
-        r_ "\n".join([cls.verse(i) for i in range(start, stop + 1)]) + "\n"
+        r_ "\n".join([cls.verse(i) ___ i in range(start, stop + 1)]) + "\n"
 
     @classmethod
     ___ verse(cls, verse_num
-        r_ ", ".join([_f for _f in [cls.head(verse_num),
+        r_ ", ".join([_f ___ _f in [cls.head(verse_num),
                                         cls.mid(verse_num),
                                         cls.tail(verse_num)] __ _f])
 
@@ -52,7 +52,7 @@ class TwelveDays:
     @classmethod
     ___ mid(cls, verse_num
         __ verse_num != 1:
-            r_ ", ".join([cls.PHRASES[i] for i in range(verse_num, 1, -1)])
+            r_ ", ".join([cls.PHRASES[i] ___ i in range(verse_num, 1, -1)])
 
 
 ___ verse(verse_num

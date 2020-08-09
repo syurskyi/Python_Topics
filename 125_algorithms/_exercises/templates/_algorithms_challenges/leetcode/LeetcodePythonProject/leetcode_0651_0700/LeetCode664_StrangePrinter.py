@@ -11,13 +11,13 @@ class Solution(object
         """
         __ not s: r_ 0
         n = le.(s)
-        dp = [[0]*n for _ in range(n)]
-        for i in range(n
+        dp = [[0]*n ___ _ in range(n)]
+        ___ i in range(n
             dp[i][i] = 1
-        for i in range(1, n
-            for j in range(n-i
+        ___ i in range(1, n
+            ___ j in range(n-i
                 dp[j][j+i] = i+1
-                for k in range(j+1, j+i+1
+                ___ k in range(j+1, j+i+1
                     tmp = dp[j][k-1]+dp[k][j+i]
                     __ s[k-1] __ s[j+i]:
                         tmp -= 1
@@ -30,7 +30,7 @@ class Solution(object
             'aba',
             'abcabc',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.strangePrinter(s)
             print('result: %s' % result)

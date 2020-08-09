@@ -38,7 +38,7 @@ class Solution:
         """
         visited = set()
         ret = 0
-        for n in nums:
+        ___ n in nums:
             count = self.dfs(nums, n, set(), visited)
             ret = max(ret, count)
 

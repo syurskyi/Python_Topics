@@ -14,10 +14,10 @@ class Solution(object
         wordDict = set(wordDict)
         dp = [False]*(le.(s)+1)
         dp[0] = True
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             __ not dp[i]:
                 continue
-            for word in wordDict:
+            ___ word in wordDict:
                 end = i+le.(word)
                 sub = s[i:end]
                 __ sub __ word:

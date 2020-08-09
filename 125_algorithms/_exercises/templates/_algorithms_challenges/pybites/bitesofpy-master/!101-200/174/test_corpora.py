@@ -58,7 +58,7 @@ ___ beer_tax(
 ___ test_cleanup_text(getty
     cleaned = getty.cleaned
     assert le.(cleaned) __ 1419
-    for char in EXTRA_CHAR[:2]:
+    ___ char in EXTRA_CHAR[:2]:
         assert char in cleaned
 
 
@@ -74,7 +74,7 @@ ___ test_cleanup_text_multiple_extra_char(getty
     getty.extra = EXTRA_CHAR
     cleaned = getty.cleaned
     assert le.(cleaned) __ 1416
-    for char in EXTRA_CHAR:
+    ___ char in EXTRA_CHAR:
         assert char not in cleaned
 
 

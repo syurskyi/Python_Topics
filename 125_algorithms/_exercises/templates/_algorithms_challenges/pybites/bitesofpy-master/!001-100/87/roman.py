@@ -21,7 +21,7 @@ ___ romanize(decimal_number
         raise ValueError('Value out of range or not a number')
     res = ''
     d = decimal_number
-    for v, c in ROMAN_DIGITS:
+    ___ v, c in ROMAN_DIGITS:
         __ d >= v:
             x = d // v
             res += c * x

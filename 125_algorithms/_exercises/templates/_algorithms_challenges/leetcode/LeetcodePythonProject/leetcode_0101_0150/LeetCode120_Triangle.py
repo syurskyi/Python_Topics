@@ -11,7 +11,7 @@ class Solution(object
         """
         dp = list(triangle[-1])
         n = le.(triangle)
-        for i in range(n-2, -1, -1
-            for j in range(i+1
+        ___ i in range(n-2, -1, -1
+            ___ j in range(i+1
                 dp[j] = min(triangle[i][j]+dp[j], triangle[i][j]+dp[j+1])
         r_ dp[0]

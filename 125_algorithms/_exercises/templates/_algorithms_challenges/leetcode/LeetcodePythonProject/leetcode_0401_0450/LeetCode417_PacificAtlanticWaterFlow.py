@@ -12,17 +12,17 @@ class Solution(object
         """
         __ not matrix or not matrix[0]: r_ []
         m, n = le.(matrix), le.(matrix[0])
-        pacific = [[False]*n for _ in range(m)]
-        atlantic = [[False]*n for _ in range(m)]
-        for i in range(m
+        pacific = [[False]*n ___ _ in range(m)]
+        atlantic = [[False]*n ___ _ in range(m)]
+        ___ i in range(m
             self.dfs(matrix, i, 0, pacific)
             self.dfs(matrix, i, n-1, atlantic)
-        for j in range(n
+        ___ j in range(n
             self.dfs(matrix, 0, j, pacific)
             self.dfs(matrix, m-1, j, atlantic)
         result = []
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ pacific[i][j] and atlantic[i][j]:
                     result.append([i, j])
         r_ result
@@ -30,7 +30,7 @@ class Solution(object
     ___ dfs(self, matrix, i, j, visited
         visited[i][j] = True
         m, n = le.(matrix), le.(matrix[0])
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
+        ___ x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
             __ 0 <= x < m and 0 <= y < n and\
                 not visited[x][y] and matrix[x][y] >= matrix[i][j]:
                 self.dfs(matrix, x, y, visited)

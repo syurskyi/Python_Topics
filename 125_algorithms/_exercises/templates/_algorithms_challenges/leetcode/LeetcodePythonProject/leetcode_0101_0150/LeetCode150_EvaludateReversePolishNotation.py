@@ -12,7 +12,7 @@ class Solution(object
         """
         ______ operator
         stack = []
-        for token in tokens:
+        ___ token in tokens:
             __ token __ '+':
                 num1 = stack.pop()
                 num2 = stack.pop()
@@ -39,7 +39,7 @@ class Solution(object
 #             ["4", "13", "5", "/", "+"],
             ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"],
         ]
-        for tokens in testCases:
+        ___ tokens in testCases:
             print('tokens: %s' % (tokens))
             result = self.evalRPN(tokens)
             print('result: %s' % (result))

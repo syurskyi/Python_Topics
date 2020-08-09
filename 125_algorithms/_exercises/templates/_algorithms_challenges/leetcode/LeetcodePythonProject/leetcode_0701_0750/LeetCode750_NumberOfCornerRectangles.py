@@ -11,10 +11,10 @@ class Solution(object
         """
         res = 0
         m, n = le.(grid), le.(grid[0])
-        for i in range(m-1
-            for j in range(i+1, m
+        ___ i in range(m-1
+            ___ j in range(i+1, m
                 counter = 0
-                for k in range(n
+                ___ k in range(n
                     __ grid[i][k] __ 1 and grid[j][k] __ 1:
                         counter += 1
                 __ counter > 0:
@@ -38,7 +38,7 @@ class Solution(object
                 [1, 1, 1, 1],
             ],
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             result = self.countCornerRectangles(grid)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -10,8 +10,8 @@ class Solution:
         m = le.(grid[0])
         __ m __ 0:
             r_ 0
-        for y in range(n
-            for x in range(m
+        ___ y in range(n
+            ___ x in range(m
                 __ grid[y][x] __ '1' and (x, y) not in self.islands:
                     self.probe(grid, x, y, m, n)
                     res += 1
@@ -37,7 +37,7 @@ g1 = [
     list('00100'),
     list('00011')
 ]
-for r in g1:
+___ r in g1:
     print(r)
 s = Solution()
 print(s.numIslands(g1))

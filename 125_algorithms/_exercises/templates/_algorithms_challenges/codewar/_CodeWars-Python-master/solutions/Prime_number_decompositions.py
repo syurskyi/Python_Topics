@@ -23,7 +23,7 @@ ___ getUniquePrimeFactorsWithCount(n
     result = [[], []]
     __ isvalidparameter(n
         factors = getAllPrimeFactors(n)
-        for f in factors:
+        ___ f in factors:
             __ f in result[0]:
                 result[1][-1] += 1
             ____

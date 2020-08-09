@@ -10,7 +10,7 @@ class Solution(object
         :rtype: int
         """
         j = 0
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             __ i __ 0 or nums[i-1] != num:
                 nums[j] = num
                 j += 1

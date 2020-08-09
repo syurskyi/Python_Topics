@@ -91,7 +91,7 @@ ___ get_num_posts(
         r'<a href="%s/author/[^"]+">\w+</a>\s\((\d+)\)'
         % BASE_URL)
     html = requests.get(AUTHORS_URL).text
-    r_ sum(int(num) for num in posts.findall(html))
+    r_ su.(int(num) ___ num in posts.findall(html))
 
 
 ___ write_template(slug, content
@@ -141,7 +141,7 @@ ___ main(
     post_time = get_future_time(hours)
 
     tags = input('Select tags (comma seperated) [used: {}]: '.format(TAG_URL))
-    tags = ', '.join([tag.strip() for tag in tags.split(',')])
+    tags = ', '.join([tag.strip() ___ tag in tags.split(',')])
 
     summary = input('A compelling summary please (this shows up in Google! ')
     title = input('A gripping title (make it awesome, ok? ')
@@ -160,7 +160,7 @@ ___ main(
                                   author=author,
                                   summary=summary,
                                   image=image)]
-    content += ['## header {}\n\n'.format(i) for i in range(1, 6)]
+    content += ['## header {}\n\n'.format(i) ___ i in range(1, 6)]
     content += [POST_END.format(author=author)]
 
     write_template(slug, content)

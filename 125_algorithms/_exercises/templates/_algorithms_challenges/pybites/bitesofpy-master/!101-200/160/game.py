@@ -15,7 +15,7 @@ ___ _create_defeat_mapping(
     result = defaultdict(dict)
     with open(BATTLE_DATA) as b:
         reader = csv.DictReader(b)
-        for row in reader:
+        ___ row in reader:
             result[row['Attacker']] = row
     r_ result
 

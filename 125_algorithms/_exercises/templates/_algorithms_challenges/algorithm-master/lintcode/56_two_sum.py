@@ -16,7 +16,7 @@ class Solution:
             r_ NOT_FOUND
 
         remaining = {}
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ A[i] in remaining:
                 r_ [
                     remaining[A[i]],
@@ -46,7 +46,7 @@ class Solution:
             r_ NOT_FOUND
 
         n = le.(A)
-        A = [(A[i], i) for i in range(n)]
+        A = [(A[i], i) ___ i in range(n)]
         A.sort()
 
         left, right = 0, n - 1

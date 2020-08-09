@@ -31,9 +31,9 @@ class Solution(object
             r_ [[]]
         ____
             res = []
-            for i, e in enumerate(a
+            ___ i, e in enumerate(a
                 rest_comb = self.combine_aux(a[i + 1:], k - 1)
-                for comb in rest_comb:
+                ___ comb in rest_comb:
                     comb.insert(0, e)
                 res += rest_comb
             r_ res

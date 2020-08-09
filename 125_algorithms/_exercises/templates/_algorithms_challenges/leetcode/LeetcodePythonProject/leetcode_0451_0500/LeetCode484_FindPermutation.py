@@ -36,7 +36,7 @@ class Solution(object
             'DIDDI',
             'DD',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.findPermutation(s)
             print('result: %s' % result)

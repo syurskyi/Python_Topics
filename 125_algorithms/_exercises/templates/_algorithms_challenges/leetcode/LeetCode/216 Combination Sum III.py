@@ -49,7 +49,7 @@ class Solution:
         start = 1
         __ cur:
             start = cur[-1] + 1  # unique
-        for i in xrange(start, 10
+        ___ i in xrange(start, 10
             cur.append(i)
             self.dfs(remain_k - 1, remain_n - i, cur, ret)
             cur.pop()

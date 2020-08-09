@@ -26,7 +26,7 @@ ___ test_get_most_popular_talks_by_views(videos
     expected = ['T-TwcmT6Rcw', 'GBQAKldqgZs', 'ms29ZPUKxbU',
                 'zJ9z6Ge-vXs', 'WiQqqB9MlkA']
     vids = list(get_most_popular_talks_by_views(videos_copy))
-    actual = [vid.id for vid in vids[:5]]
+    actual = [vid.id ___ vid in vids[:5]]
     assert expected __ actual
 
 
@@ -36,7 +36,7 @@ ___ test_get_most_popular_talks_by_like_ratio(videos
     vids = list(get_most_popular_talks_by_like_ratio(videos_copy))
     expected = ['8OoR-P6wE0M', 'h-38HZqanJs', 'C7ZhMnfUKIA',
                 'GmbaKdd6o6A', '3EXvR1shVFQ']
-    actual = [vid.id for vid in vids[:5]]
+    actual = [vid.id ___ vid in vids[:5]]
     assert expected __ actual
 
 

@@ -9,9 +9,9 @@ class Solution(object
         res = ''
         __ not s: r_ res
         n = le.(s)
-        dp = [[False]*n for _ in range(n)]
-        for i in range(n
-            for j in range(i, -1, -1
+        dp = [[False]*n ___ _ in range(n)]
+        ___ i in range(n
+            ___ j in range(i, -1, -1
                 __ s[i] __ s[j] and (i-j<=1 or dp[i-1][j+1]
                     dp[i][j] = True
                     __ i-j+1 > le.(res
@@ -22,10 +22,10 @@ class Solution(object
         __ not s: r_ s
         length = le.(s)
         maxLen = 1
-        table = [[False,]*length for _ in range(length)]
+        table = [[False,]*length ___ _ in range(length)]
         longest = s[0]
-        for l in range(length
-            for i in range(length-l
+        ___ l in range(length
+            ___ i in range(length-l
                 j = i+l
                 __ s[i] __ s[j] and (j-i<=2 or table[i+1][j-1]
                     table[i][j] = True
@@ -39,7 +39,7 @@ class Solution(object
             'babad',
             'cbbd',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.longestPalindromeDP(s)
             print('result: %s' % (result))

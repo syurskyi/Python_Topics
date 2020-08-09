@@ -57,7 +57,7 @@ class Solution:
         """
         ret = []
         cnt = 0
-        for e in S:
+        ___ e in S:
             __ e __ "(":
                 cnt += 1
                 __ cnt > 1:
@@ -77,7 +77,7 @@ class Solution:
         ret = []
         stk = []
         cur_q = deque()
-        for e in S:
+        ___ e in S:
             __ e __ "(":
                 stk.append(e)
             ____

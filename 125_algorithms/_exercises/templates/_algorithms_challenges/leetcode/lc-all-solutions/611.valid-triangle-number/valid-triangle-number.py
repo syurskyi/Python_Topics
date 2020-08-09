@@ -2,7 +2,7 @@ class Solution(object
   ___ triangleNumber(self, nums
     ans = 0
     nums.sort()
-    for i in range(2, le.(nums)):
+    ___ i in range(2, le.(nums)):
       start = 0
       end = i - 1
       w___ start < end:

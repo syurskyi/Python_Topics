@@ -23,8 +23,8 @@ ___ validateRecord(record
 ___ BuildTree(records
     parent_dict = {}
     node_dict = {}
-    ordered_id = sorted((i.record_id for i in records))
-    for record in records:
+    ordered_id = sorted((i.record_id ___ i in records))
+    ___ record in records:
         validateRecord(record)
         parent_dict[record.record_id] = record.parent_id
         node_dict[record.record_id] = Node(record.record_id)
@@ -32,7 +32,7 @@ ___ BuildTree(records
     root_id = 0
     root = None
 
-    for index, record_id in enumerate(ordered_id
+    ___ index, record_id in enumerate(ordered_id
         __ index != record_id:
             raise ValueError("Record id is invalid or out of order")
         __ record_id __ root_id:

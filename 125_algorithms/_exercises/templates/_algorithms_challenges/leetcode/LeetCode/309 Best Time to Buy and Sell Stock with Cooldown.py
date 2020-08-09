@@ -38,15 +38,15 @@ class Solution(object
             r_ max(0, A[1]-A[0])
 
         CD = 1  # cool down
-        F = [0 for _ in xrange(n)]
-        M = [0 for _ in xrange(n)]
+        F = [0 ___ _ in xrange(n)]
+        M = [0 ___ _ in xrange(n)]
         F[1] = A[1]-A[0]
         M[1] = max(M[0], F[1])
-        F[2] = max(A[2]-A[2-1-i] for i in xrange(2))
+        F[2] = max(A[2]-A[2-1-i] ___ i in xrange(2))
         M[2] = max(M[1], F[2])
 
         # core
-        for i in xrange(3, n
+        ___ i in xrange(3, n
             F[i] = max(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
             M[i] = max(M[i-1], F[i])
 

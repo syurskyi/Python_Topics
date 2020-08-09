@@ -35,11 +35,11 @@ class Solution(object
         n = le.(s)
         __ not s:
             r_ 0
-        F = [0 for _ in xrange(n+1)]
+        F = [0 ___ _ in xrange(n+1)]
         F[0] = 1
         F[1] = 1
 
-        for i in xrange(2, n+1
+        ___ i in xrange(2, n+1
             __ s[i-1] != "0":
                 F[i] = F[i-1]
                 __ 10 <= int(s[i-2]+s[i-1]) < 27:

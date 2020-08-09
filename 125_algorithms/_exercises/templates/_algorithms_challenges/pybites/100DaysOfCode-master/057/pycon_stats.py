@@ -27,7 +27,7 @@ ___ get_videos(url
     videos = {}
     w___ 1:
         resp = requests.get(url).json()
-        for item in resp['items']:
+        ___ item in resp['items']:
             id_ = item['id']['videoId']
             videos[id_] = item['snippet']['title']
         prev_page = next_page
@@ -42,13 +42,13 @@ ___ get_videos(url
 ___ get_stats(videos
     '''Get stats for a list of video ids'''
     video_ids = list(videos.keys())
-    for i in range(0, le.(video_ids), maxres
+    ___ i in range(0, le.(video_ids), maxres
         start, end = i, i + maxres
         vids = plus_encoded.join(video_ids[start:end])
         fmt = '{}/videos?part=statistics&id={}&key={}'
         stats_url = fmt.format(base_url, vids, api_key)
         resp = requests.get(stats_url).json()
-        for item in resp['items']:
+        ___ item in resp['items']:
             yield Video(
                 title=videos.get(item['id']),
                 views=item['statistics'].get('viewCount', 0),
@@ -68,12 +68,12 @@ __ __name__ __ '__main__':
 
     print()
     print('** Top {} views'.format(top))
-    for vid in sorted(stats, key=lambda v: int(v.views),
+    ___ vid in sorted(stats, key=lambda v: int(v.views),
                       reverse=True)[:top]:
         print(row.format(vid.views, vid.title))
 
     print()
     print('** Top {} likes'.format(top))
-    for vid in sorted(stats, key=lambda v: int(v.likes),
+    ___ vid in sorted(stats, key=lambda v: int(v.likes),
                       reverse=True)[:top]:
         print(row.format(vid.likes, vid.title))

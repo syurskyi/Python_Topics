@@ -11,15 +11,15 @@ class Solution(object
         :rtype: List[int]
         """
         n = le.(nums)
-        dp = [[0]*(n+1) for _ in range(4)]
+        dp = [[0]*(n+1) ___ _ in range(4)]
         sumVal = 0
         accu = [0]*(n+1)
-        for i in range(n
+        ___ i in range(n
             sumVal += nums[i]
             accu[i] = sumVal
-        ids = [[0]*(n+1) for _ in range(4)]
-        for i in range(1, 4
-            for j in range(k-1, n
+        ids = [[0]*(n+1) ___ _ in range(4)]
+        ___ i in range(1, 4
+            ___ j in range(k-1, n
                 tmpMax = accu[j] __ j-k<0 else accu[j]-accu[j-k]+dp[i-1][j-k]
                 __ j >= k:
                     dp[i][j] = dp[i][j-1]
@@ -44,7 +44,7 @@ class Solution(object
                 3,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.maxSumOfThreeSubarrays(nums, k)

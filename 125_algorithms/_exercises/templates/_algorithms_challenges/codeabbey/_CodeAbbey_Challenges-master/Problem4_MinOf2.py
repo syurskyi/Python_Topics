@@ -1,7 +1,7 @@
 infile = open("prob4.txt")
 count = infile.readline()
 ans = ""
-for i in range(int(count)):
+___ i in range(int(count)):
     a,b = infile.readline().split(" ")
     __ int(a)>=int(b
         ans += b+" "

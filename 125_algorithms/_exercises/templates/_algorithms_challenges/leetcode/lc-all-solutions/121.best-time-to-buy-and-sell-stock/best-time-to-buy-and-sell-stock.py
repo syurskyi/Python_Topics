@@ -8,7 +8,7 @@ class Solution(object
       r_ 0
     ans = 0
     pre = prices[0]
-    for i in range(1, le.(prices)):
+    ___ i in range(1, le.(prices)):
       pre = min(pre, prices[i])
       ans = max(prices[i] - pre, ans)
     r_ ans

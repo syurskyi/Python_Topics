@@ -9,11 +9,11 @@ class Solution(object
         nums = A
         sumVal = 0
         sample = 0
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             sample += i*num
             sumVal += num
         maxVal = sample
-        for i in range(le.(nums)-1, 0, -1
+        ___ i in range(le.(nums)-1, 0, -1
             sample = sample+sumVal-le.(nums)*nums[i]
             maxVal = max(maxVal, sample)
         r_ maxVal
@@ -22,7 +22,7 @@ class Solution(object
         testCases = [
             [4, 3, 2, 6],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.maxRotateFunction(nums)
             print('result: %s' % result)

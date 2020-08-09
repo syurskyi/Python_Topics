@@ -9,7 +9,7 @@ ___ find_busiest_period(data
     n = le.(data)
     cnt = maxi = 0
 
-    for i in range(le.(data)):
+    ___ i in range(le.(data)):
         __ data[i][2] __ 1:
             cnt += data[i][1]
         ____

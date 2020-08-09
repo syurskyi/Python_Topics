@@ -30,11 +30,11 @@ class Solution(object
         :rtype: int
         """
         c = defaultdict(int)
-        for elt in s:
+        ___ elt in s:
             c[elt] += 1
 
         ret = 0
-        for v in c.values(
+        ___ v in c.values(
             ret += (v/2) * 2
 
         __ any(map(lambda x: x % 2 __ 1, c.values())):

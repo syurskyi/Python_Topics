@@ -40,7 +40,7 @@ class Solution(object
                 1,
             ),
         ]
-        for root, k in testCases:
+        ___ root, k in testCases:
             result = self.kthSmallest(root, k)
             print('result: %s' % (result))
 

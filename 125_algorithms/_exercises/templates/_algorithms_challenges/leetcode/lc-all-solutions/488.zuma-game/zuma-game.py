@@ -15,8 +15,8 @@ class Solution(object
       __ le.(balls) __ 0:
         r_ float("inf")
       res = float("inf")
-      for i in range(le.(balls)):
-        for j in range(le.(line) + 1
+      ___ i in range(le.(balls)):
+        ___ j in range(le.(line) + 1
           __ j __ 0 and line[0] != balls[i]:
             continue
           ____ j __ le.(line) and line[-1] != balls[i]:
@@ -35,7 +35,7 @@ class Solution(object
         dp = [1] * le.(line)
         pre = line[-1]
         count = 1
-        for i in reversed(range(le.(line) - 1)):
+        ___ i in reversed(range(le.(line) - 1)):
           __ line[i] __ pre:
             count += 1
           ____
@@ -55,7 +55,7 @@ class Solution(object
       __ le.(line) < 3:
         r_ line
       ans = line
-      for _ in range(le.(line) / 3
+      ___ _ in range(le.(line) / 3
         ans = reducer(ans)
       r_ ans
 

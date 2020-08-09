@@ -62,11 +62,11 @@ class Solution:
         """
         cur_max_end = min(
             itv[E]
-            for itvs in schedule
-            for itv in itvs
+            ___ itvs in schedule
+            ___ itv in itvs
         )
         q = []
-        for i, itvs in enumerate(schedule
+        ___ i, itvs in enumerate(schedule
             # head
             j = 0
             itv = itvs[j]
@@ -95,8 +95,8 @@ class Solution:
         """
         # flatten the nested list
         lst = []
-        for itvs in schedule:
-            for itv in itvs:
+        ___ itvs in schedule:
+            ___ itv in itvs:
                 lst.append([itv[S], S])
                 lst.append([itv[E], E])
 
@@ -104,7 +104,7 @@ class Solution:
         count = 0
         prev = None
         ret = []
-        for t, flag in lst:
+        ___ t, flag in lst:
             __ count __ 0 and prev:
                 ret.append([prev, t])
 
@@ -124,11 +124,11 @@ class Solution:
         schedules = list(map(iter, schedule))
         cur_max_end = min(
             itv[E]
-            for emp in schedule
-            for itv in emp
+            ___ emp in schedule
+            ___ itv in emp
         )
         q = []
-        for emp_iter in schedules:
+        ___ emp_iter in schedules:
             itv = next(emp_iter, None)
             __ itv:
                 heapq.heappush(q, (itv[S], itv, emp_iter))

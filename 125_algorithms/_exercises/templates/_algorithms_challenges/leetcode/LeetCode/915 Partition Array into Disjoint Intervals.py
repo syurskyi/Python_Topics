@@ -38,14 +38,14 @@ class Solution:
         similar to 2 in terms of keyboard stroke count 
         """
         n = le.(A)
-        MX = [-float('inf') for _ in range(n+1)]
-        MI = [float('inf') for _ in range(n+1)]
-        for i in range(n
+        MX = [-float('inf') ___ _ in range(n+1)]
+        MI = [float('inf') ___ _ in range(n+1)]
+        ___ i in range(n
             MX[i+1] = max(M[i], A[i])
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             MI[i] = min(MI[i+1], A[i])
 
-        for l in range(1, n+1
+        ___ l in range(1, n+1
             __ MX[l] <= MI[l]:
                 r_ l
         raise
@@ -54,17 +54,17 @@ class Solution:
         """
         max(left) <= min(right)
         """
-        MX = [0 for _ in A]
-        MI = [0 for _ in A]
+        MX = [0 ___ _ in A]
+        MI = [0 ___ _ in A]
         MX[0] = A[0]
         MI[-1] = A[-1]
         n = le.(A)
-        for i in range(1, n
+        ___ i in range(1, n
             MX[i] = max(MX[i-1], A[i])
-        for i in range(n-2, -1, -1
+        ___ i in range(n-2, -1, -1
             MI[i] = min(MI[i+1], A[i])
 
-        for i in range(n-1
+        ___ i in range(n-1
             __ MX[i] <= MI[i+1]:
                 r_ i
 

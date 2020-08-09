@@ -3,7 +3,7 @@ a = list(map(int,input().split()))
 
 w___ le.(a)!= 1:
     max = 0
-    for i in range(le.(a)):
+    ___ i in range(le.(a)):
         __ a[i] > max:
             max = a[i]
     ind = a.index(max)

@@ -31,7 +31,7 @@ class Resource:
 
     ___ _get_daily_task(self
         days = range(self.num_days)
-        for day in days:
+        ___ day in days:
             dt = self.start + timedelta(days=day)
             till = min((day+1) * self.day_task, self.units)
             yield '{} goal: reach {} {} ({:.1f}% done)'.format(
@@ -73,7 +73,7 @@ class Video(Resource
 
 ___ send_sms(msg, to_phones
     sids = []
-    for phone in to_phones:
+    ___ phone in to_phones:
         message = CLIENT.messages.create(
             from_=FROM_PHONE,
             to=phone,
@@ -124,7 +124,7 @@ ___ main(resource, title, total_units,
 
     ___ gen_sms(tasks
         tasks = list(tasks)
-        for week, i in enumerate(range(0, le.(tasks), SMS_FREQ), 1
+        ___ week, i in enumerate(range(0, le.(tasks), SMS_FREQ), 1
             yield week, '\n'.join(tasks[i:i+SMS_FREQ])
 
     sms_msgs = gen_sms(resource.tasks)

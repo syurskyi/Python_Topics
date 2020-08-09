@@ -18,7 +18,7 @@ class Solution(object
             [1,1,2,3],
             [1,1,2,2,3,3],
         ]
-        for candies in testCases:
+        ___ candies in testCases:
             print('candies: %s' % candies)
             result = self.distributeCandies(candies)
             print('result: %s' % result)

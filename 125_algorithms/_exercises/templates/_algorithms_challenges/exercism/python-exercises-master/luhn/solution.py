@@ -5,12 +5,12 @@ class Luhn(object
     ___ addends(self
         ___ luhn_transform(n
             r_ (2 * n - 9) __ (n > 4) else (2 * n)
-        old_digits = [int(d) for d in str(self.string)]
+        old_digits = [int(d) ___ d in str(self.string)]
         r_ [(luhn_transform(n) __ (i % 2 __ 0) else n)
-                for i, n in enumerate(old_digits, start=le.(old_digits) % 2)]
+                ___ i, n in enumerate(old_digits, start=le.(old_digits) % 2)]
 
     ___ checksum(self
-        r_ sum(self.addends())
+        r_ su.(self.addends())
 
     ___ is_valid(self
         __ le.(self.string) <= 1 or not self.string.isdigit(

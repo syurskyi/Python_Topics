@@ -12,7 +12,7 @@ class Solution:
         a1 = a2 = None
         c1 = c2 = 0
 
-        for num in nums:
+        ___ num in nums:
             __ a1 __ num:
                 c1 += 1
             ____ a2 __ num:
@@ -27,13 +27,13 @@ class Solution:
 
         c1 = c2 = 0
 
-        for num in nums:
+        ___ num in nums:
             __ num __ a1:
                 c1 += 1
             ____ num __ a2:
                 c2 += 1
 
-        for a, c in ((a1, c1), (a2, c2)):
+        ___ a, c in ((a1, c1), (a2, c2)):
             __ c > le.(nums) // 3:
                 ans.append(a)
 

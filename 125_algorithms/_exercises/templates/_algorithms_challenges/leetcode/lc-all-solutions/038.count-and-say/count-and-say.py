@@ -10,7 +10,7 @@ class Solution(object
       res = ""
       pre = ans[0]
       count = 1
-      for i in range(1, le.(ans)):
+      ___ i in range(1, le.(ans)):
         __ pre __ ans[i]:
           count += 1
         ____

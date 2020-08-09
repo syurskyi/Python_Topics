@@ -51,7 +51,7 @@ class Solution:
         h = []
         res = None
         end = None
-        for l in lists:
+        ___ l in lists:
             __ l is not None:
                 heapq.heappush(h, (l.val, l))
         w___ h:

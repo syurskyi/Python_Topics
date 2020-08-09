@@ -67,7 +67,7 @@ class Solution:
         """
         ds = DisjointSet()
         neqs = []  # list of neq
-        for e in equations:
+        ___ e in equations:
             a = e[0]
             b = e[-1]
             sign = e[1:-1]
@@ -76,7 +76,7 @@ class Solution:
             ____
                 neqs.append((a, b))
 
-        for a, b in neqs:
+        ___ a, b in neqs:
             __ ds.find(a) __ ds.find(b
                 r_ False
 

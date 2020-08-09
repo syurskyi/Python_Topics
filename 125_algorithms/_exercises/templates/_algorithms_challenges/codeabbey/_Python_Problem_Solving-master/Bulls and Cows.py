@@ -4,14 +4,14 @@ n,c = list(map(str, input().split()))
 guess = list(map(str, input().split()))
 
 #look for the bulls and cows
-for i in guess:
+___ i in guess:
     bull = False
     cow = False
     cow_count = 0
     bull_count = 0
     res = ''
     #look for the index , if the numbers of the real number and guess number positions are same
-    for j in range(le.(i)):
+    ___ j in range(le.(i)):
         __ i[j] in n:
             bull = True
             __ i[j] __ n[j]:

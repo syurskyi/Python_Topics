@@ -43,7 +43,7 @@ class NestedIterator(object
             ____
                 l = ni.getList()
                 l.reverse()
-                for ni0 in l:
+                ___ ni0 in l:
                     deque.insert(0, ni0)
         self.result = result
 

@@ -11,8 +11,8 @@ class Solution(object
         :rtype: int
         """
         __ haystack __ needle or not needle: r_ 0
-        for i in range(le.(haystack)-le.(needle)+1
-            for j in range(le.(needle)):
+        ___ i in range(le.(haystack)-le.(needle)+1
+            ___ j in range(le.(needle)):
                 __ haystack[i+j] __ needle[j]:
                     __ j __ le.(needle)-1:
                         r_ i

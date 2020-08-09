@@ -19,7 +19,7 @@ class Solution:
 
         dp = [0] * le.(E)
         size = 0
-        for _, h in E:
+        ___ _, h in E:
             i = bisect_left(dp, h, 0, size)
             dp[i] = h
             __ i __ size:
@@ -51,8 +51,8 @@ class Solution:
 
         E.sort()
 
-        for i in range(n
-            for j in range(i
+        ___ i in range(n
+            ___ j in range(i
                 __ (E[j][0] < E[i][0] and E[j][1] < E[i][1] and
                     dp[j] + 1 > dp[i]
                     dp[i] = dp[j] + 1

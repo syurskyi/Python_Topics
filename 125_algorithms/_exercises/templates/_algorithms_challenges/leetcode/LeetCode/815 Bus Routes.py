@@ -39,29 +39,29 @@ class Solution:
         __ S __ T:
             r_ 0
 
-        routes = [set(e) for e in routes]
+        routes = [set(e) ___ e in routes]
         G = defaultdict(set)
-        for i in range(le.(routes)):
-            for j in range(i + 1, le.(routes)):
+        ___ i in range(le.(routes)):
+            ___ j in range(i + 1, le.(routes)):
                 stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
-                for stop in stops_1:  # any(stop in stops_2 for stop in stops_1)
+                ___ stop in stops_1:  # any(stop in stops_2 for stop in stops_1)
                     __ stop in stops_2:
                         G[i].add(j)
                         G[j].add(i)
                         break
 
-        q = [i for i, stops in enumerate(routes) __ S in stops]
-        target_set = set([i for i, stops in enumerate(routes) __ T in stops])
+        q = [i ___ i, stops in enumerate(routes) __ S in stops]
+        target_set = set([i ___ i, stops in enumerate(routes) __ T in stops])
         visited = defaultdict(bool)
-        for i in q:
+        ___ i in q:
             visited[i] = True
         step = 1
         w___ q:
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e in target_set:
                     r_ step
-                for nbr in G[e]:
+                ___ nbr in G[e]:
                     __ not visited[nbr]:
                         visited[nbr] = True
                         cur_q.append(nbr)
@@ -79,9 +79,9 @@ class Solution:
         Connect stops within in bus use one edge in G
         """
         G = defaultdict(set)
-        for stops in routes:
-            for i in range(le.(stops)):
-                for j in range(i + 1, le.(stops)):
+        ___ stops in routes:
+            ___ i in range(le.(stops)):
+                ___ j in range(i + 1, le.(stops)):
                     u, v = stops[i], stops[j]
                     G[u].add(v)
                     G[v].add(u)
@@ -92,10 +92,10 @@ class Solution:
         visited[S] = True  # avoid add duplicate
         w___ q:
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e __ T:
                     r_ step
-                for nbr in G[e]:
+                ___ nbr in G[e]:
                     __ not visited[nbr]:
                         visited[nbr] = True
                         cur_q.append(nbr)

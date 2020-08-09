@@ -8,11 +8,11 @@ class Solution(object
     ___ topKFrequent(self, nums, k
         maxCount = 0
         hashmap = {}
-        for num in nums:
+        ___ num in nums:
             hashmap[num] = hashmap.get(num, 0)+1
             maxCount = max(maxCount, hashmap[num])
-        dp = [[] for _ in range(maxCount)]
-        for num, count in hashmap.items(
+        dp = [[] ___ _ in range(maxCount)]
+        ___ num, count in hashmap.items(
             dp[count-1].append(num)
         result = []
         i = maxCount-1
@@ -30,10 +30,10 @@ class Solution(object
     ___ topKFrequentHeap(self, nums, k
         ______ heapq
         hashmap = {}
-        for num in nums:
+        ___ num in nums:
             hashmap[num] = hashmap.get(num, 0)+1
         heap = []
-        for num, count in hashmap.items(
+        ___ num, count in hashmap.items(
             heapq.heappush(heap, (-count, num))
         result = []
         w___ k > 0:
@@ -46,7 +46,7 @@ class Solution(object
 #             ([1, 1, 1, 2, 2, 3], 2),
             ([1,1,1,2,2,2,3,3,3], 3),
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
             result = self.topKFrequent(nums, k)

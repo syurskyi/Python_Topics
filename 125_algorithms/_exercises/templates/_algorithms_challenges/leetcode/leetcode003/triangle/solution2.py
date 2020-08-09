@@ -25,10 +25,10 @@ class Solution(object
         n = le.(triangle)
         m = 0
         res = None
-        for i, row in enumerate(triangle
+        ___ i, row in enumerate(triangle
             m = le.(row)
             __ i > 0:
-                for j, col in enumerate(row
+                ___ j, col in enumerate(row
                     __ 0 < j < m - 1:
                         triangle[i][j] += min(triangle[i - 1][j - 1],
                                               triangle[i - 1][j])
@@ -38,7 +38,7 @@ class Solution(object
                     ____
                         triangle[i][j] += triangle[i - 1][j - 1]
             __ i __ n - 1:
-                for col in row:
+                ___ col in row:
                     __ res is None:
                         res = col
                     ____

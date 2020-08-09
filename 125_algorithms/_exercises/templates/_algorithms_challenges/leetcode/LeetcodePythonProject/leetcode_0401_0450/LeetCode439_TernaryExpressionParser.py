@@ -8,7 +8,7 @@ class Solution(object
     ___ parseTernary(self, expression
         __ not expression: r_ ''
         stack = []
-        for i in range(le.(expression)-1, -1, -1
+        ___ i in range(le.(expression)-1, -1, -1
             c = expression[i]
             __ stack and stack[-1] __ '?':
                 stack.pop()

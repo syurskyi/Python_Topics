@@ -16,14 +16,14 @@ class Solution(object
         """
         # s[i] is sum of nums[0]..nums[i]
         # s[i] - s[j] is the sum of nums[j + 1] .. nums[i]
-        s = [0 for _ in nums]
+        s = [0 ___ _ in nums]
         ts = 0  # temporary sum
-        for i, c in enumerate(nums
+        ___ i, c in enumerate(nums
             ts += c
             s[i] = ts
         min_sum = 0
         res = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             res = max(res, c - min_sum)
             min_sum = min(min_sum, c)
         __ res __ 0:

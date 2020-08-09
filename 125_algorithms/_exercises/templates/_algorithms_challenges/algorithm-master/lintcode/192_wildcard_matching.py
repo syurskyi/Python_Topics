@@ -40,13 +40,13 @@ class Solution:
         `dp[i][j]` means the substr end at `S[i - 1]` was matched by
         the substr end at `P[j - 1]`
         """
-        dp = [[False] * (n + 1) for _ in range(m + 1)]
+        dp = [[False] * (n + 1) ___ _ in range(m + 1)]
         dp[0][0] = True
         # dp[i][0] = False
         # dp[0][j] -> need to check
 
-        for i in range(m + 1
-            for j in range(1, n + 1
+        ___ i in range(m + 1
+            ___ j in range(1, n + 1
                 __ p[j - 1] __ ANY_MULTI:
                     dp[i][j] = dp[i - 1][j] or dp[i][j - 1]
                 ____ p[j - 1] __ ANY and dp[i - 1][j - 1]:

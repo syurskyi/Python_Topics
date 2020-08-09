@@ -10,7 +10,7 @@ ___ is_iterable(thing
 ___ flatten(iterable
     """Flatten a list of lists."""
     flattened = []
-    for item in iterable:
+    ___ item in iterable:
         __ is_iterable(item) and not isinstance(item, (str, bytes)):
             flattened += flatten(item)
         ____ item is not None:

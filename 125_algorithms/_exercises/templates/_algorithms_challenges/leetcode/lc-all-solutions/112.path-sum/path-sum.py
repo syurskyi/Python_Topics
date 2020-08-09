@@ -8,7 +8,7 @@ from collections ______ deque
 
 
 class Solution(object
-  ___ hasPathSum(self, root, sum
+  ___ hasPathSum(self, root, su.
     """
     :type root: TreeNode
     :type sum: int
@@ -23,7 +23,7 @@ class Solution(object
           queue.append((p.left, s + p.left.val))
         __ right:
           queue.append((p.right, s + p.right.val))
-        __ not left and not right and s __ sum:
+        __ not left and not right and s __ su.:
           r_ True
       r_ False
     r_ False

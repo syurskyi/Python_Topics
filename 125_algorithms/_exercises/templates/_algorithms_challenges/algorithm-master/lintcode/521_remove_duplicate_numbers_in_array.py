@@ -13,7 +13,7 @@ class Solution:
             r_ ans
 
         exists = set()
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ nums[i] not in exists:
                 exists.add(nums[i])
                 ans += 1
@@ -39,7 +39,7 @@ class Solution:
 
         # for `nums[0]`
         ans = 1
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ nums[i - 1] != nums[i]:
                 nums[ans] = nums[i]
                 ans += 1

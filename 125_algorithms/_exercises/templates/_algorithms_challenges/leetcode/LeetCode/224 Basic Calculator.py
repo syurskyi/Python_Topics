@@ -49,7 +49,7 @@ class Solution:
     ___ infix2postfix(self, lst
         stk = []  # store operators in strictly increasing precedence
         ret = []
-        for elt in lst:
+        ___ elt in lst:
             __ elt.isdigit(
                 ret.append(elt)
             ____ elt __ "(":
@@ -77,7 +77,7 @@ class Solution:
 
     ___ eval_postfix(self, post
         stk = []
-        for elt in post:
+        ___ elt in post:
             __ elt in ("+", "-"
                 b = int(stk.pop())
                 a = int(stk.pop())

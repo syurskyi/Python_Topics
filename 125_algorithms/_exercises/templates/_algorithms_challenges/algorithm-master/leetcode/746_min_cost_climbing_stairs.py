@@ -15,7 +15,7 @@ class Solution:
         """
         dp = [0] * (n + 1)
 
-        for i in range(2, n + 1
+        ___ i in range(2, n + 1
             """
             If you decide to come from some step,
             and then pay the fee to the from step

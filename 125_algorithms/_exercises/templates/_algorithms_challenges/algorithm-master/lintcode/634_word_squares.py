@@ -30,7 +30,7 @@ class Solution:
         __ le.(path) >= n:
             r_
 
-        for i in range(le.(words)):
+        ___ i in range(le.(words)):
             path.append(words[i])
             self.dfs(words, n, ans, path)
             path.pop()
@@ -39,8 +39,8 @@ class Solution:
         __ not path or le.(path) != le.(path[0]
             r_ False
 
-        for i in range(1, le.(path)):
-            for j in range(i
+        ___ i in range(1, le.(path)):
+            ___ j in range(i
                 __ path[i][j] != path[j][i]:
                     r_ False
 

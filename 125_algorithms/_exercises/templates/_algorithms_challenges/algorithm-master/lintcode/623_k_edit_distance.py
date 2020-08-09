@@ -14,7 +14,7 @@ class Trie:
 
         node = self.root
 
-        for c in word:
+        ___ c in word:
             __ c not in node.children:
                 node.children[c] = TrieNode()
 
@@ -33,11 +33,11 @@ class Solution:
         """
         trie = Trie()
 
-        for word in words:
+        ___ word in words:
             trie.put(word)
 
         ans = []
-        dp = [i for i in range(le.(target) + 1)]
+        dp = [i ___ i in range(le.(target) + 1)]
 
         self.dfs(trie.root, k, target, ans, dp)
 
@@ -51,10 +51,10 @@ class Solution:
 
         dp = [0] * (n + 1)
 
-        for c in node.children:
+        ___ c in node.children:
             dp[0] = pre[0] + 1
 
-            for i in range(1, n + 1
+            ___ i in range(1, n + 1
                 __ target[i - 1] __ c:
                     dp[i] = min(
                         dp[i - 1] + 1,

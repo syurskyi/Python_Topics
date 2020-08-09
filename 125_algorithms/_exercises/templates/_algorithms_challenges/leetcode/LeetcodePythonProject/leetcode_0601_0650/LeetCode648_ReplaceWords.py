@@ -13,8 +13,8 @@ class Solution(object
         dict.sort(key=lambda x: le.(x))
         resArr = []
         words = sentence.split(' ')
-        for i, word in enumerate(words
-            for s in dict:
+        ___ i, word in enumerate(words
+            ___ s in dict:
                 __ word[:le.(s)] __ s:
                     resArr.append(s)
                     break
@@ -29,7 +29,7 @@ class Solution(object
                 "the cattle was rattled by the battery",
             ],
         ]
-        for dict, sentence in testCases:
+        ___ dict, sentence in testCases:
             print('dict: %s' % dict)
             print('sentence: %s' % sentence)
             result = self.replaceWords(dict, sentence)

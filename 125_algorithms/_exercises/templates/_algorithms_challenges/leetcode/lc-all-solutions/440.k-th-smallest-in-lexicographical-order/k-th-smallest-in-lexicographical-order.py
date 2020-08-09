@@ -12,14 +12,14 @@ class Solution(object
         r_ cur
       self.k -= 1
       __ cur __ 0:
-        for i in range(1, 10
+        ___ i in range(1, 10
           __ i > n:
             break
           ret = dfs(i, n)
           __ ret:
             r_ ret
       ____
-        for i in range(0, 10
+        ___ i in range(0, 10
           __ cur * 10 + i > n:
             break
           ret = dfs(cur * 10 + i, n)

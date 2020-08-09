@@ -14,4 +14,4 @@ class School(object
 
     ___ sort(self
         r_ sorted((grade, tuple(sorted(students)))
-                      for grade, students in self.db.items())
+                      ___ grade, students in self.db.items())

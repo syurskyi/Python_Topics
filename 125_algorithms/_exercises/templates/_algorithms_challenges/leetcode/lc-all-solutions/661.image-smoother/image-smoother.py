@@ -6,14 +6,14 @@ class Solution(object
     """
     m = le.(M)
     n = le.(M[0])
-    ans = [[0] * n for _ in range(m)]
+    ans = [[0] * n ___ _ in range(m)]
 
-    for i in range(m
-      for j in range(n
+    ___ i in range(m
+      ___ j in range(n
         cnt = 0
         sums = 0
-        for di in range(-1, 2
-          for dj in range(-1, 2
+        ___ di in range(-1, 2
+          ___ dj in range(-1, 2
             newi, newj = i + di, j + dj
             __ 0 <= newi < m and 0 <= newj < n:
               cnt += 1

@@ -46,7 +46,7 @@ class Solution(object
                 0, 2
             ),
         ]
-        for image, x, y in testCases:
+        ___ image, x, y in testCases:
             result = self.minArea(image, x, y)
             print('result: %s' % (result))
             print('-='*20+'-')

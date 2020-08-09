@@ -7,7 +7,7 @@ ___ calc_drone_min_energy(route
     delta = 0
     max_z = route[0][2]
 
-    for i in range(1, le.(route)):
+    ___ i in range(1, le.(route)):
         delta += route[i][2] - route[i - 1][2]
 
         __ route[i][2] > max_z:

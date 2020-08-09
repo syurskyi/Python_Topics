@@ -111,7 +111,7 @@ __ __name__ __ '__main__':
     m1 << 3; m1 << 2; m1 >> 1; m1 << 2
     d1 << 3; d1 << 2; d1 >> 1; d1 << 2
     v1 << 3; v1 << 2; v1 >> 1; v1 << 2
-    print('\n'.join([str(p) for p in [e2, m1, d1, v1]]))
+    print('\n'.join([str(p) ___ p in [e2, m1, d1, v1]]))
 
     assert e2.karma __ 6
     assert m1.karma __ 12

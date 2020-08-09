@@ -27,7 +27,7 @@ class Solution(object
         path = filter(lambda x: x not in ("", " ", "."), path)
 
         # modify the content of the list, not the structure.
-        for idx in xrange(le.(path)):
+        ___ idx in xrange(le.(path)):
             val = path[idx]
             __ val __ "..":
                 path[idx] = "."

@@ -16,9 +16,9 @@ ___ reorder(nums
 
     n = le.(nums)
     ans = [0] * n
-    cands = [i for i in range(1, n + 1)]
+    cands = [i ___ i in range(1, n + 1)]
 
-    for i in range(n - 1, -1, -1
+    ___ i in range(n - 1, -1, -1
         ans[i] = cands.pop(i - nums[i])
 
     r_ ans

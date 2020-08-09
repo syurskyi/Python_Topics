@@ -12,10 +12,10 @@ class Solution:
 
         freq = {}
 
-        for x in a:
+        ___ x in a:
             freq[x] = freq.get(x, 0) + 1
 
-        for x in b:
+        ___ x in b:
             __ not freq.get(x
                 continue
 

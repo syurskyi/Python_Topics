@@ -22,8 +22,8 @@ class Solution:
 
         m, n = le.(board), le.(board[0])
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 lives = self.get_live_neibs(board, x, y)
 
                 __ board[x][y] __ 1 and lives in (2, 3
@@ -31,16 +31,16 @@ class Solution:
                 ____ board[x][y] __ 0 and lives __ 3:
                     board[x][y] = 2
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 board[x][y] >>= 1
 
     ___ get_live_neibs(self, board, x, y
         cnt = 0
         m, n = le.(board), le.(board[0])
 
-        for dx in (-1, 0, 1
-            for dy in (-1, 0, 1
+        ___ dx in (-1, 0, 1
+            ___ dy in (-1, 0, 1
                 __ dx __ 0 and dy __ 0:
                     continue
 
@@ -68,10 +68,10 @@ class Solution:
             r_
 
         m, n = le.(board), le.(board[0])
-        ans = [[0] * n for _ in range(m)]
+        ans = [[0] * n ___ _ in range(m)]
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 lives = self.get_live_neibs(board, x, y)
                 ans[x][y] = board[x][y]
 
@@ -87,15 +87,15 @@ class Solution:
         # return ans
 
         # hacking for in-place
-        for x in range(m
+        ___ x in range(m
             board[x][:] = ans[x][:]
 
     ___ get_live_neibs(self, board, x, y
         cnt = 0
         m, n = le.(board), le.(board[0])
 
-        for dx in (-1, 0, 1
-            for dy in (-1, 0, 1
+        ___ dx in (-1, 0, 1
+            ___ dy in (-1, 0, 1
                 __ dx __ 0 and dy __ 0:
                     continue
 

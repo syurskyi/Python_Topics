@@ -13,15 +13,15 @@ class Solution:
         }
 
         queue, _queue = [], []
-        for d in s:
+        ___ d in s:
             __ d not in L:
                 r_ []
             __ not queue:
                 queue.extend(list(L[d]))
                 continue
 
-            for c in L[d]:
-                for _c in queue:
+            ___ c in L[d]:
+                ___ _c in queue:
                     _queue.append(_c + c)
             queue, _queue = _queue, []
 

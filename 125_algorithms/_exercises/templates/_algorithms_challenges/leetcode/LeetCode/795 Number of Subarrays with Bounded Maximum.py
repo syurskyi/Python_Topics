@@ -35,7 +35,7 @@ class Solution:
         F = 0
         ret = 0
         prev = -1
-        for i, a in enumerate(A
+        ___ i, a in enumerate(A
             __ L <= a <= R:
                 F = i - prev
                 ret += F
@@ -60,7 +60,7 @@ class Solution:
         """
         F = 0
         ret = 0
-        for a in A:
+        ___ a in A:
             __ L <= a <= R:
                 F += 1  # error
                 ret += F

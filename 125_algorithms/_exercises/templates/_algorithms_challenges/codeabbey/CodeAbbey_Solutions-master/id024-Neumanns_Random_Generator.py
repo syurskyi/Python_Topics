@@ -2,7 +2,7 @@
 
 ___ neumanns(inputs
     answer = []
-    for num in [int(x) for x in input().split()]:
+    ___ num in [int(x) ___ x in input().split()]:
         loop_count = 0
         new_num = num * num
         temp = ''

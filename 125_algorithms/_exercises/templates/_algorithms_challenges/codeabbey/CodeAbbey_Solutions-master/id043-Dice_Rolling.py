@@ -1,6 +1,6 @@
 ___ findRoll(rolls
         output = []
-        for roll in range(rolls
+        ___ roll in range(rolls
                 rawRoll = input()
                 calculatedRoll = int(rawRoll * 6) + 1
                 output.append(str(calculatedRoll))

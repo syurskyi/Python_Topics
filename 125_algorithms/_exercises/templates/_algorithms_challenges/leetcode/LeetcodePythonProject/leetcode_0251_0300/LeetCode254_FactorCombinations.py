@@ -40,7 +40,7 @@ class Solution(object
                 result.append(list(item))
             r_
         
-        for i in range(start, n+1
+        ___ i in range(start, n+1
             __ n % i __ 0:
                 item.append(i)
                 self.helper(result, item, int(n/i), i)
@@ -54,7 +54,7 @@ class Solution(object
             32,
             23848713,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % (n))
             result = self.getFactors(n)
             print('result: %s' % result)

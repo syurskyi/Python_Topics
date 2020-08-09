@@ -7,7 +7,7 @@ class Solution:
         ans = 0
         nums = []
 
-        for a in range(n + 1
+        ___ a in range(n + 1
             __ a * a > n:
                 break
             nums.append(a * a)
@@ -16,7 +16,7 @@ class Solution:
 
         m = le.(nums)
 
-        for a in range(m - 2
+        ___ a in range(m - 2
             __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
@@ -49,7 +49,7 @@ class Solution:
         ans = 0
         m = int(n ** 0.5)
 
-        for a in range(m + 1
+        ___ a in range(m + 1
             target = n - a * a
             b, c = a, m
             w___ b <= c:

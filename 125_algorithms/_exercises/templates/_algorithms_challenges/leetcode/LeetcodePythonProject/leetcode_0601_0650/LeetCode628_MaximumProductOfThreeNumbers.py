@@ -13,7 +13,7 @@ class Solution(object
             r_ 0
         s1, s2 = float('inf'), float('inf')
         l1, l2, l3 = float('-inf'), float('-inf'), float('-inf')
-        for num in nums:
+        ___ num in nums:
             __ num < s1:
                 s2 = s1
                 s1 = num
@@ -29,7 +29,7 @@ class Solution(object
             ____ num > l3:
                 l3 = num
         res = float('-inf')
-        for a1, a2, a3 in (l1, l2, l3), (s1, s2, l1
+        ___ a1, a2, a3 in (l1, l2, l3), (s1, s2, l1
             res = max(res, a1*a2*a3)
         r_ res
     
@@ -40,7 +40,7 @@ class Solution(object
             [-1, -2, 0, 3],
             [-1, -2, -3, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.maximumProduct(nums)
             print('result: %s' % result)

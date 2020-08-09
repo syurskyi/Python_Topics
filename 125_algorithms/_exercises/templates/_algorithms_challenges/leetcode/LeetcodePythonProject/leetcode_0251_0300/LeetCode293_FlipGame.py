@@ -7,7 +7,7 @@ Created on Mar 8, 2017
 class Solution(object
     ___ generatePossibleNextMoves(self, s
         result = []
-        for i in range(1, le.(s)):
+        ___ i in range(1, le.(s)):
             __ s[i-1] __ '+' and s[i] __ '+':
                 result.append(s[:i-1]+'--'+s[i+1:])
         r_ result
@@ -16,7 +16,7 @@ class Solution(object
         testCases = [
             '++++',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.generatePossibleNextMoves(s)
             print('result: %s' % (result))

@@ -56,15 +56,15 @@ class Solution:
         """
         __ le.(s1)!=le.(s2
             r_ False
-        chars = [0 for _ in xrange(26)]
-        for char in s1:
+        chars = [0 ___ _ in xrange(26)]
+        ___ char in s1:
             chars[ord(char)-ord('a')] += 1
-        for char in s2:
+        ___ char in s2:
             chars[ord(char)-ord('a')] -= 1
 
         # if filter(lambda x: x!=0, chars
         #     return False
-        for val in chars:
+        ___ val in chars:
             __ val!=0:
                 r_ False
 
@@ -72,7 +72,7 @@ class Solution:
             r_ True
 
 
-        for i in xrange(1, le.(s1)):
+        ___ i in xrange(1, le.(s1)):
             __ self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]) or \
                 self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:le.(s2)-i]
                 r_ True

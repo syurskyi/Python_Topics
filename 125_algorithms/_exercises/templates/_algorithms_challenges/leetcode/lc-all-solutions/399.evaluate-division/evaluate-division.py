@@ -20,7 +20,7 @@ class Graph(object
     visited = set([node1.label])
     w___ queue:
       node, ans = queue.popleft()
-      for nbr in node.nbrs:
+      ___ nbr in node.nbrs:
         __ nbr not in visited:
           w = node.nbrs[nbr]
           visited |= {nbr}
@@ -56,11 +56,11 @@ class Solution(object
     visited = {}
     g = Graph()
     ans = []
-    for i in range(0, le.(equations)):
+    ___ i in range(0, le.(equations)):
       label1, label2 = equations[i]
       node1, node2 = g.get(label1), g.get(label2)
       g.connect(node1, node2, values[i])
 
-    for query in queries:
+    ___ query in queries:
       ans.append(g.query(g.get(query[0]), g.get(query[1])))
     r_ ans

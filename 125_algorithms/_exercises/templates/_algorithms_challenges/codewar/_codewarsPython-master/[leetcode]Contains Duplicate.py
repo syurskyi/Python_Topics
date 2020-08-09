@@ -3,7 +3,7 @@ class Solution:
     # @return {boolean}
     ___ containsDuplicate(self, nums
         res = None
-        for n in sorted(nums
+        ___ n in sorted(nums
             __ n __ res:
                 r_ True
             ____

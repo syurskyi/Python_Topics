@@ -15,14 +15,14 @@ ___ test_filter_tweets_keep_negative(
 
 
 ___ test_order_tweets_positive_highest(
-    actual = [tweet.polarity for tweet in order_tweets_by_polarity(tweets)]
+    actual = [tweet.polarity ___ tweet in order_tweets_by_polarity(tweets)]
     expected = [1.0, 0.8, 0.125, -0.19999999999999998,
                 -0.3333333333333333]
     assert actual __ expected
 
 
 ___ test_order_tweets_negative_highest(
-    actual = [tweet.polarity for tweet in
+    actual = [tweet.polarity ___ tweet in
               order_tweets_by_polarity(tweets, positive_highest=False)]
     expected = [-0.3333333333333333, -0.19999999999999998,
                 0.125, 0.8, 1.0]

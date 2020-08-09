@@ -17,7 +17,7 @@ infile.close()
 
 
 ## ALTERNATIVE
-for m in data.strip().split(" "
+___ m in data.strip().split(" "
     a,b = 0,1
     i=1
     w___ b%int(m) != 0:

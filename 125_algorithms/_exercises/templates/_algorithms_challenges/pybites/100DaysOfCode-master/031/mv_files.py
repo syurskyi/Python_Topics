@@ -12,6 +12,6 @@ todir = "testdir2"
 
 files = os.listdir(fromdir)
 
-for i in files:
+___ i in files:
 	shutil.move(os.path.join(fromdir, i), todir)
 	print("Moved {} from {} to {}".format(i, fromdir, todir))

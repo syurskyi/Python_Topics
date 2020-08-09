@@ -2,9 +2,9 @@ with open("prob20.txt") as infile:
     infile.readline()
     data = infile.readlines()
 
-    for line in data:
+    ___ line in data:
         count = 0    # resets every line
-        for each_char in line:
+        ___ each_char in line:
             __ each_char in ["a","e","i","o","u","y"]:
                 count+=1
 

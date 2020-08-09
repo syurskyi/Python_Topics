@@ -61,12 +61,12 @@ class Solution(object
         w___ queue:
             sumVal = 0
             size = le.(queue)
-            for _ in range(size
+            ___ _ in range(size
                 ni = queue.pop(0)
                 __ ni.isInteger(
                     sumVal += ni.getInteger()
                 ____
-                    for ni0 in ni.getList(
+                    ___ ni0 in ni.getList(
                         queue.append(ni0)
             prev += sumVal
             result += prev

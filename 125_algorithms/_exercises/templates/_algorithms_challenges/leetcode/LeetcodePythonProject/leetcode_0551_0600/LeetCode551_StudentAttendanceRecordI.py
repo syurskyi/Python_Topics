@@ -11,7 +11,7 @@ class Solution(object
         :rtype: bool
         """
         absent = False
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c __ 'A':
                 __ not absent:
                     absent = True
@@ -27,7 +27,7 @@ class Solution(object
             'PPALLP',
             'PPALLL',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.checkRecord(s)
             print('result: %s' % result)

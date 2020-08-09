@@ -11,7 +11,7 @@ w___ True:
         break
 mod = int(values[le.(values)-1][1:])
 
-for i in values:
+___ i in values:
     strValues += i
     result = eval(strValues)%mod
     strValues = str(result)

@@ -35,15 +35,15 @@ class Solution:
         times = collections.defaultdict(int)
         steps = collections.defaultdict(int)
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] __ self.HOUSE:
                     cnt += 1
                     self.bfs(grid, x, y, times, steps)
 
         ans = INF = float('inf')
 
-        for (x, y), t in times.items(
+        ___ (x, y), t in times.items(
             __ t __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
@@ -58,8 +58,8 @@ class Solution:
         w___ queue:
             step += 1
 
-            for x, y in queue:
-                for dx, dy in (
+            ___ x, y in queue:
+                ___ dx, dy in (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
 
@@ -110,8 +110,8 @@ class Solution:
         ids = collections.defaultdict(set)  # record house ids
         steps = collections.defaultdict(int)  # total steps for all houses
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] != self.HOUSE:
                     continue
 
@@ -121,7 +121,7 @@ class Solution:
 
         ans = INF = float('inf')
 
-        for (x, y), hids in ids.items(
+        ___ (x, y), hids in ids.items(
             __ le.(hids) __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
@@ -130,7 +130,7 @@ class Solution:
     ___ dfs(self, grid, x, y, id, ids, steps, step
         m, n = le.(grid), le.(grid[0])
 
-        for dx, dy in (
+        ___ dx, dy in (
             (-1, 0), (1, 0),
             (0, -1), (0, 1),
 

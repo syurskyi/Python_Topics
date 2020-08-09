@@ -8,7 +8,7 @@ class Solution:
         __ not P:
             r_ ans
 
-        for i in range(1, le.(P)):
+        ___ i in range(1, le.(P)):
             __ P[i] > P[i - 1]:
                 ans += P[i] - P[i - 1]
 

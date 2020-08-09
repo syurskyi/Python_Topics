@@ -22,7 +22,7 @@ class Solution:
         vals = []
         queue = [root]
 
-        for node in queue:
+        ___ node in queue:
             __ not node:
                 vals.append(self.EMPTY)
                 continue
@@ -56,8 +56,8 @@ class Solution:
         root = TreeNode(int(vals[i]))
         queue = [root]
 
-        for node in queue:
-            for branch in ('left', 'right'
+        ___ node in queue:
+            ___ branch in ('left', 'right'
                 i += 1
 
                 __ i >= n:

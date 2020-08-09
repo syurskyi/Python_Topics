@@ -15,7 +15,7 @@ ___ index(
     __ request.method __ 'POST':
         city1 = request.form.get('city1')
         city2 = request.form.get('city2')
-        for c in (city1, city2
+        ___ c in (city1, city2
             resp = query_api(c)
             pp(resp)
             __ resp:

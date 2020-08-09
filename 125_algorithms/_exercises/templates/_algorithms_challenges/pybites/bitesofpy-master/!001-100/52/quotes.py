@@ -23,16 +23,16 @@ quotes = [
 
 ___ _get_quote(qid
     """Recommended helper"""
-    r_ [q for q in quotes __ q['id'] __ qid]
+    r_ [q ___ q in quotes __ q['id'] __ qid]
 
 
 ___ _quote_exists(existing_quote
     """Recommended helper"""
-    r_ any(q['quote'] __ existing_quote['quote'] and q['movie'] __ existing_quote['movie'] for q in quotes)
+    r_ any(q['quote'] __ existing_quote['quote'] and q['movie'] __ existing_quote['movie'] ___ q in quotes)
 
 
 ___ _new_id(
-    r_ max(q['id'] for q in quotes) + 1
+    r_ max(q['id'] ___ q in quotes) + 1
 
 
 @app.route('/api/quotes', methods=['GET'])

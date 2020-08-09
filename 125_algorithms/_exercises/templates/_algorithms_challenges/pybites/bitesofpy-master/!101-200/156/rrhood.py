@@ -55,13 +55,13 @@ ___ make_character_index(text=text, characters=CHARACTERS
        then return the former as key.
     """
     result = defaultdict(list)
-    for x, s in enumerate(text.splitlines()):
+    ___ x, s in enumerate(text.splitlines()):
         __ s __ '':
             continue
-        for c in characters:
+        ___ c in characters:
             __ isinstance(c, tuple
                 flag = False
-                for p in c:
+                ___ p in c:
                     __ p.lower() in s.lower(
                         flag = True
                 __ flag:

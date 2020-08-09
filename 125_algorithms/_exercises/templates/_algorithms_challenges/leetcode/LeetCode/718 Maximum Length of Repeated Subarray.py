@@ -31,15 +31,15 @@ class Solution:
         """
         m, n = le.(A), le.(B)
         F = defaultdict(lambda: defaultdict(int))
-        for i in range(1, m+1
-            for j in range(1, n+1
+        ___ i in range(1, m+1
+            ___ j in range(1, n+1
                 __ A[i-1] __ B[j-1]:
                     F[i][j] = F[i-1][j-1] + 1
 
         r_ max(
             F[i][j]
-            for i in range(1, m+1)
-            for j in range(1, n+1)
+            ___ i in range(1, m+1)
+            ___ j in range(1, n+1)
         )
 
 

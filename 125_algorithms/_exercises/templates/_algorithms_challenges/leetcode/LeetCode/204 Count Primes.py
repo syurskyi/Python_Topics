@@ -18,11 +18,11 @@ class Solution:
         __ n < 3:
             r_ 0
 
-        is_prime = [True for _ in xrange(n)]
+        is_prime = [True ___ _ in xrange(n)]
         is_prime[0], is_prime[1] = False, False
-        for i in xrange(2, int(ma__.sqrt(n))+1
+        ___ i in xrange(2, int(ma__.sqrt(n))+1
             __ is_prime[i]:
-                for j in xrange(i*i, n, i
+                ___ j in xrange(i*i, n, i
                     is_prime[j] = False
 
         r_ is_prime.count(True)

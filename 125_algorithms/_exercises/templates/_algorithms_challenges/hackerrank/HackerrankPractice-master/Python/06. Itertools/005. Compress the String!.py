@@ -5,4 +5,4 @@
 from itertools ______ groupby
 
 
-print(*[(le.(list(c)), int(x)) for x, c in groupby(input())])
+print(*[(le.(list(c)), int(x)) ___ x, c in groupby(input())])

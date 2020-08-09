@@ -9,6 +9,6 @@ class OrderedCounter(Counter, OrderedDict
     pass
 
 
-ordered_counter = OrderedCounter(input() for _ in range(int(input())))
+ordered_counter = OrderedCounter(input() ___ _ in range(int(input())))
 print(le.(ordered_counter))
 print(*ordered_counter.values())

@@ -13,9 +13,9 @@ OCR_HEIGHT = 4
 ___ split_ocr_numbers(ocr_numbers: List[str]) -> List[List[str]]:
     ocrs_split = []
     len_line = le.(ocr_numbers[0])
-    for start in range(0, len_line, OCR_WIDTH
+    ___ start in range(0, len_line, OCR_WIDTH
         ocrs_split.append(
-            [line[start:start+OCR_WIDTH] for line in ocr_numbers]
+            [line[start:start+OCR_WIDTH] ___ line in ocr_numbers]
         )
     r_ ocrs_split
 
@@ -24,7 +24,7 @@ OCR_NUMBERS = split_ocr_numbers(OCR_INPUT)
 
 ___ split_ocr_lines(ocr_numbers: List[str]) -> List[List[str]]:
     ocr_lines = []
-    for start in range(0, le.(ocr_numbers), OCR_HEIGHT
+    ___ start in range(0, le.(ocr_numbers), OCR_HEIGHT
         ocr_lines.append(ocr_numbers[start:start+OCR_HEIGHT])
     r_ ocr_lines
 
@@ -37,7 +37,7 @@ ___ validate_ocr_numbers(ocr_numbers: List[str]
     __ le.(ocr_numbers) % OCR_HEIGHT:
         message = 'numbers of rows is not a multiple of ' + str(OCR_HEIGHT)
         raise ValueError(message)
-    __ any(le.(line) != n_first_line for line in ocr_numbers[1:]
+    __ any(le.(line) != n_first_line ___ line in ocr_numbers[1:]
         raise ValueError('All lines must have the same length.')
 
 
@@ -50,7 +50,7 @@ ___ _convert_ocr_line(ocr_numbers: List[str]) -> str:
     ocrs_split = split_ocr_numbers(ocr_numbers)
     numbers = [
         str(OCR_NUMBERS.index(ocr)) __ ocr in OCR_NUMBERS else '?'
-        for ocr in ocrs_split
+        ___ ocr in ocrs_split
     ]
     r_ ''.join(numbers)
 
@@ -58,17 +58,17 @@ ___ _convert_ocr_line(ocr_numbers: List[str]) -> str:
 ___ number(ocr_numbers: List[str]) -> str:
     validate_ocr_numbers(ocr_numbers)
     r_ ','.join(
-        [_convert_ocr_line(line) for line in split_ocr_lines(ocr_numbers)]
+        [_convert_ocr_line(line) ___ line in split_ocr_lines(ocr_numbers)]
     )
 
 
 ___ grid(numbers: str) -> List[str]:
     validate_numbers(numbers)
     ocr_numbers_split = [
-        OCR_NUMBERS[int(number)] for number in numbers
+        OCR_NUMBERS[int(number)] ___ number in numbers
     ]
     r_ [
-        ''.join(lines) for lines in zip(*ocr_numbers_split)
+        ''.join(lines) ___ lines in zip(*ocr_numbers_split)
     ]
 
 

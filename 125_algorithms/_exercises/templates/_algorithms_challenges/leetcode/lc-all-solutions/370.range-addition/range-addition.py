@@ -6,14 +6,14 @@ class Solution(object
     :rtype: List[int]
     """
     ans = [0] * length
-    for update in updates:
+    ___ update in updates:
       start, end, delta = update
       ans[start] += delta
       __ end + 1 < length:
         ans[end + 1] -= delta
 
     delta = 0
-    for i in range(0, length
+    ___ i in range(0, length
       delta += ans[i]
       ans[i] = delta
     r_ ans

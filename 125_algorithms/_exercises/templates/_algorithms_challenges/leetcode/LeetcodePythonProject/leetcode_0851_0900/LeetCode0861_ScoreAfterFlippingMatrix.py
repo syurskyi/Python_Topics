@@ -12,22 +12,22 @@ class Solution(object
         matrix = A
         __ not matrix: r_ 0
         m, n = le.(matrix), le.(matrix[0])
-        for i in range(m
+        ___ i in range(m
             __ matrix[i][0] __ 0:
-                for j in range(n
+                ___ j in range(n
                     matrix[i][j] = 0 __ matrix[i][j] else 1
-        for j in range(1, n
+        ___ j in range(1, n
             count = 0
-            for i in range(m
+            ___ i in range(m
                 __ matrix[i][j] __ 1:
                     count += 1
             __ 2*count < m:
-                for i in range(m
+                ___ i in range(m
                     matrix[i][j] = 0 __ matrix[i][j] else 1
         res = 0
-        for i in range(m
+        ___ i in range(m
             num = 0
-            for j in range(n
+            ___ j in range(n
                 num = num*2 + matrix[i][j]
             res += num
         r_ res
@@ -44,7 +44,7 @@ class Solution(object
                 [1,1]
             ],
         ]
-        for matrix in testCase:
+        ___ matrix in testCase:
             res = self.matrixScore(matrix)
             print('res: %s' % res)
             print('-='*30+'-')

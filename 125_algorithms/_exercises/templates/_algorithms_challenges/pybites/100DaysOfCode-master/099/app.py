@@ -19,7 +19,7 @@ ___ index(
 
 ___ get_photos(
     photo_list = []
-    for name in sorted(glob.glob(PATH + "*")):
+    ___ name in sorted(glob.glob(PATH + "*")):
         photo_list.append(name)
     r_ photo_list
 

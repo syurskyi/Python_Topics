@@ -22,14 +22,14 @@ class Solution:
         nexts = collections.defaultdict(set)
         evals = collections.defaultdict(float)
 
-        for i in range(le.(equations)):
+        ___ i in range(le.(equations)):
             a, b = equations[i]
             nexts[a].add(b)
             nexts[b].add(a)
             evals[a, b] = 1.0 * values[i]
             evals[b, a] = 1.0 / values[i]
 
-        for a, b in queries:
+        ___ a, b in queries:
             res = self.dfs(a, b, 1, nexts, evals, set())
             ans.append(float(res))
 
@@ -47,7 +47,7 @@ class Solution:
 
         visited.add(a)
 
-        for c in nexts[a]:
+        ___ c in nexts[a]:
             __ c in visited or (a, c) not in evals:
                 continue
 

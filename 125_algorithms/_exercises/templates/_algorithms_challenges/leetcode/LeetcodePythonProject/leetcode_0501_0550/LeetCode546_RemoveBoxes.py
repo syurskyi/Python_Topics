@@ -12,7 +12,7 @@ class Solution(object
         """
         __ not boxes: r_ 0
         n = le.(boxes)
-        dp = [[[0]*n for _ in range(n)] for _ in range(n)]
+        dp = [[[0]*n ___ _ in range(n)] ___ _ in range(n)]
         r_ self.helper(dp, boxes, 0, n-1, 1)
     
     ___ helper(self, dp, boxes, i, j, k
@@ -24,7 +24,7 @@ class Solution(object
             r_ dp[i][j][k]
         ____
             tmp = self.helper(dp, boxes, i+1, j, 1) + k*k
-            for m in range(i+1, j+1
+            ___ m in range(i+1, j+1
                 __ boxes[i] __ boxes[m]:
                     tmp = max(tmp, self.helper(dp, boxes, i+1, m-1, 1)+\
                               self.helper(dp, boxes, m, j, k+1))
@@ -35,7 +35,7 @@ class Solution(object
         testCases = [
             [1, 3, 2, 2, 2, 3, 4, 3, 1],
         ]
-        for boxes in testCases:
+        ___ boxes in testCases:
             print('boxes: %s' % boxes)
             result = self.removeBoxes(boxes)
             print('result: %s' % result)

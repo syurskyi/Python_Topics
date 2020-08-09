@@ -20,7 +20,7 @@ class MyCalendar(object
         :rtype: bool
         """
         newInterval = Interval(start, end)
-        for i, interval in enumerate(self.intervals
+        ___ i, interval in enumerate(self.intervals
             __ newInterval.end <= interval.start:
                 self.intervals.insert(i, newInterval)
                 r_ True

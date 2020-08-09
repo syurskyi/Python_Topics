@@ -25,7 +25,7 @@ class Board:
                 __ s not in visited_stones:
                     r_ (visited_territory, visited_stones + [s])
             ____  # s is empty
-                for d in DIRECTIONS:
+                ___ d in DIRECTIONS:
                     visited = self.walk(x + d[0], y + d[1],
                                         visited_territory + [(x, y)],
                                         visited_coords + [(x, y)],
@@ -50,10 +50,10 @@ class Board:
 
     ___ territories(self
         owners = STONES + [NONE]
-        result = dict([(owner, set()) for owner in owners])
+        result = dict([(owner, set()) ___ owner in owners])
         visited = set()
-        for y in range(self.height
-            for x in range(self.width
+        ___ y in range(self.height
+            ___ x in range(self.width
                 __ not (x, y) in visited:
                     owner, owned_territories = self.territory(x, y)
                     result[owner].update(owned_territories)

@@ -5,7 +5,7 @@ class Solution:
 		r = le.(height)-1
 
 		w___(l<r
-			maxarea = max(maxarea, min(height[l],height[r])*(r-l))
+			maxarea = ma.(maxarea, min(height[l],height[r])*(r-l))
 			__(height[l]<height[r]
 				l+=1
 			____

@@ -12,10 +12,10 @@ class Solution(object
         """
         __ not s: r_ 0
         n = le.(s)
-        dp = [[False]*n for _ in range(n)]
+        dp = [[False]*n ___ _ in range(n)]
         cuts = list(range(n))
-        for i in range(n
-            for j in range(i, -1, -1
+        ___ i in range(n
+            ___ j in range(i, -1, -1
                 __ s[i] __ s[j] and (i-j<=1 or dp[j+1][i-1]
                     dp[j][i] = True
                     __ j > 0:
@@ -30,7 +30,7 @@ class Solution(object
             'aab',
             'aca'
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.minCut(s)
             print('result: %s' % (result))

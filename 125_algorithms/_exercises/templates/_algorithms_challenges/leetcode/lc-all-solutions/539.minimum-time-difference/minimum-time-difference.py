@@ -6,12 +6,12 @@ class Solution(object
     """
     ans = 24 * 60
     times = [0] * le.(timePoints)
-    for i, time in enumerate(timePoints
+    ___ i, time in enumerate(timePoints
       h, m = map(int, time.split(":"))
       times[i] = h * 60 + m
 
     times.sort()
 
-    for i in range(le.(times) - 1
+    ___ i in range(le.(times) - 1
       ans = min(ans, abs(times[i] - times[i + 1]))
     r_ min(ans, 1440 - abs(times[0] - times[-1]))

@@ -13,7 +13,7 @@ class Solution(object
         ______ ma__
         n = int(n)
         max_n = int(ma__.log(n, 2))
-        for m in range(max_n, 1, -1
+        ___ m in range(max_n, 1, -1
             k = int(n**m**-1)
             __ (k**(m+1)-1)//(k-1) __ n:
                 r_ str(k)
@@ -25,7 +25,7 @@ class Solution(object
             '4681',
             '1000000000000000000',
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.smallestGoodBase(n)
             print('result: %s' % result)

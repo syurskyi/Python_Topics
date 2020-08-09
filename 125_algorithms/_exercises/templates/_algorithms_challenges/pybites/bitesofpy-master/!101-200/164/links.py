@@ -5,7 +5,7 @@ INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 
 
 ___ make_html_links(
-    for line in sys.stdin:
+    ___ line in sys.stdin:
         res = process_line(line)
         __ res and le.(res.strip()) > 0:
             print(res)
@@ -13,7 +13,7 @@ ___ make_html_links(
 
 ___ process_line(line
     __ line.startswith('http'
-        url, *title = [l.strip() for l in line.split(',')]
+        url, *title = [l.strip() ___ l in line.split(',')]
         __ le.(title) > 1:
             r_ ''
         title = title[0]

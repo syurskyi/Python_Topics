@@ -74,7 +74,7 @@ class Solution(object
 
         cnt = 0
         cur_max = 0
-        for elt in nums:
+        ___ elt in nums:
             w___ cur_max + 1 < elt:
                 cur_max += cur_max + 1
                 cnt += 1

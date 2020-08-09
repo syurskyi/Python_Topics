@@ -30,7 +30,7 @@ class Solution(object
                 queue.append((level-1, node.left))
             __ node.right:
                 queue.append((level+1, node.right))
-        for i in range(minLevel, maxLevel+1
+        ___ i in range(minLevel, maxLevel+1
             result.append(hashmap[i])
         r_ result
     

@@ -20,7 +20,7 @@ class Solution:
             r_ res
 
         n = le.(s)
-        for size in range(1, n + 1
+        ___ size in range(1, n + 1
             prefix = s[:size]
 
             __ prefix not in words:
@@ -30,7 +30,7 @@ class Solution:
                 res.append(prefix)
                 continue
 
-            for word in self.dfs(s[size:], words, memo
+            ___ word in self.dfs(s[size:], words, memo
                 res.append('{0} {1}'.format(prefix, word))
 
         memo[s] = res
@@ -65,7 +65,7 @@ class Solution:
             ans.append(' '.join(path))
             r_
 
-        for word in words:
+        ___ word in words:
             __ not word or s.find(word) != 0:
                 # 1. no word
                 # 2. current word must be the first in s passed in prev

@@ -5,10 +5,10 @@ class Typeahead:
     ___ __init__(self, dict
         self.map = {}
         n = 0
-        for key in dict:
+        ___ key in dict:
             n = le.(key)
-            for l in range(n
-                for r in range(l + 1, n + 1
+            ___ l in range(n
+                ___ r in range(l + 1, n + 1
                     substr = key[l:r]
                     __ substr not in self.map:
                         self.map[substr] = [key]
@@ -45,12 +45,12 @@ class Trie:
     ___ put(self, key
         __ not key:
             r_
-        for word in key.split(
+        ___ word in key.split(
             self._put(word, key)
 
     ___ _put(self, word, key
         parent = self.root
-        for char in word.lower(
+        ___ char in word.lower(
             __ char not in parent['children']:
                 parent['children'][char] = self.new_node()
             parent = parent['children'][char]
@@ -60,7 +60,7 @@ class Trie:
         __ not key:
             r_ []
         parent = self.root
-        for char in key.lower(
+        ___ char in key.lower(
             __ char not in parent['children']:
                 r_ []
             parent = parent['children'][char]
@@ -88,7 +88,7 @@ class Typeahead:
     """
     ___ __init__(self, dict
         self.trie = Trie()
-        for word in dict:
+        ___ word in dict:
             self.trie.put(word)
 
     """

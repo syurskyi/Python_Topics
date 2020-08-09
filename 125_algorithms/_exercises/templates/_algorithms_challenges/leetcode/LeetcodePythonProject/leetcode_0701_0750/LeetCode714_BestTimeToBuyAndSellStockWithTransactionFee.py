@@ -15,7 +15,7 @@ class Solution(object
         buy = [0]*n
         sell = [0]*n
         buy[0] = -prices[0]
-        for i in range(1, n
+        ___ i in range(1, n
             buy[i] = max(buy[i-1], sell[i-1]-prices[i])
             sell[i] = max(sell[i-1], buy[i-1]+prices[i]-fee)
         r_ max(buy[-1], sell[-1])
@@ -31,7 +31,7 @@ class Solution(object
                 3,
             ],
         ]
-        for prices, fee in testCases:
+        ___ prices, fee in testCases:
             print('prices: %s' % prices)
             print('fee: %s' % fee)
             result = self.maxProfit(prices, fee)

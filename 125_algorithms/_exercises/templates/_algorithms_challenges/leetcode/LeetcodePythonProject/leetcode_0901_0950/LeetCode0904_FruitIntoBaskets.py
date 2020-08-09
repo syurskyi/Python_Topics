@@ -7,7 +7,7 @@ class Solution(object
         left = 0
         res = 0
         hashmap = {}
-        for i, num in enumerate(tree
+        ___ i, num in enumerate(tree
             hashmap[num] = hashmap.get(num, 0) + 1
             w___ le.(hashmap) > 2:
                 hashmap[tree[left]] -= 1
@@ -26,7 +26,7 @@ class Solution(object
             [1,2,3,2,2],
             [3,3,3,1,2,1,1,2,3,3,4],
         ]
-        for tree in testCases:
+        ___ tree in testCases:
             res = self.totalFruit(tree)
             print('res: %s' % res)
             print('-='*30+'-')

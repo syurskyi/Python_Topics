@@ -29,7 +29,7 @@ class Solution(object
             mem[s] = True
             r_ True
         flag = False
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ not self.helper(nums[:i]+nums[i+1:], mem
                 flag = True
                 break
@@ -38,7 +38,7 @@ class Solution(object
     
     ___ calc(self, nums
         res = 0
-        for num in nums:
+        ___ num in nums:
             res ^= num
         r_ res
     
@@ -47,7 +47,7 @@ class Solution(object
 #             [1, 1, 2],
             [1, 1, 2, 3], # True
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.xorGame(nums)
             print('result: %s' % result)

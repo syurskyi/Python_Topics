@@ -41,7 +41,7 @@ class WordSearch(object
 
     ___ find(self, word, position, direction
         current = copy.copy(position)
-        for letter in word:
+        ___ letter in word:
             __ self.find_char(current) != letter:
                 r_
             current += direction
@@ -49,9 +49,9 @@ class WordSearch(object
 
     ___ search(self, word
         positions = (Point(x, y)
-                     for x in range(self.width) for y in range(self.height))
-        for pos in positions:
-            for d in DIRECTIONS:
+                     ___ x in range(self.width) ___ y in range(self.height))
+        ___ pos in positions:
+            ___ d in DIRECTIONS:
                 result = self.find(word, pos, d)
                 __ result:
                     r_ result

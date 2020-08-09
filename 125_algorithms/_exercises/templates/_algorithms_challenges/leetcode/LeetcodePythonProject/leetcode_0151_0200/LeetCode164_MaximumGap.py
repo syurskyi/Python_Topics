@@ -18,7 +18,7 @@ class Solution(object
         gap = ma__.ceil(float(maxVal-minVal)/(n-1))
         bucketsMin = [float('inf')]*(n-1)
         bucketsMax = [float('-inf')]*(n-1)
-        for num in nums:
+        ___ num in nums:
             __ num __ minVal or num __ maxVal:
                 continue
             idx = int((num-minVal)//gap)
@@ -26,7 +26,7 @@ class Solution(object
             bucketsMax[idx] = max(bucketsMax[idx], num)
         maxGap = float('-inf')
         prev = minVal
-        for i in range(n-1
+        ___ i in range(n-1
             __ bucketsMin[i] __ float('inf') and bucketsMax[i] __ float('-inf'
                 continue
             maxGap = max(maxGap, bucketsMin[i]-prev)
@@ -38,7 +38,7 @@ class Solution(object
         testCases = [
             [1, 1000],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.maximumGap(nums)
             print('result: %s' % (result))

@@ -15,7 +15,7 @@ class Solution(object
         s = S
         prev = 0
         res = ''
-        for ind, source, target in sorted(zip(indexes, sources, targets)):
+        ___ ind, source, target in sorted(zip(indexes, sources, targets)):
             __ s[ind:ind+le.(source)] __ source:
                 res += s[prev:ind]
                 res += target
@@ -50,7 +50,7 @@ class Solution(object
                 ["idl","vo","yl","pg","efp","vqi","s","wb","mw","gmt","rkqc","kdx","o","vamwgpn","pl","xyvz"],
             ],
         ]
-        for s, indexes, sources, targets in testCases:
+        ___ s, indexes, sources, targets in testCases:
             res = self.findReplaceString(s, indexes, sources, targets)
             print('res: %s' % res)
             print('-='*30+'-')

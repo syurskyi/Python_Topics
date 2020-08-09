@@ -6,17 +6,17 @@ class SgfTree(object
     ___ __eq__(self, other
         __ not isinstance(other, SgfTree
             r_ False
-        for k, v in self.properties.items(
+        ___ k, v in self.properties.items(
             __ k not in other.properties:
                 r_ False
             __ other.properties[k] != v:
                 r_ False
-        for k in other.properties.keys(
+        ___ k in other.properties.keys(
             __ k not in self.properties:
                 r_ False
         __ le.(self.children) != le.(other.children
             r_ False
-        for a, b in zip(self.children, other.children
+        ___ a, b in zip(self.children, other.children
             __ not (a __ b
                 r_ False
         r_ True
@@ -24,14 +24,14 @@ class SgfTree(object
     ___ __repr__(self
         """Ironically, encoding to SGF is much easier"""
         rep = '(;'
-        for k, vs in self.properties.items(
+        ___ k, vs in self.properties.items(
             rep += k
-            for v in vs:
+            ___ v in vs:
                 rep += '[{}]'.format(v)
         __ self.children:
             __ le.(self.children) > 1:
                 rep += '('
-            for c in self.children:
+            ___ c in self.children:
                 rep += repr(c)[1:-1]
             __ le.(self.children) > 1:
                 rep += ')'
@@ -42,7 +42,7 @@ ___ is_upper(s
     a, z = map(ord, 'AZ')
     r_ all(
         a <= o and o <= z
-        for o in map(ord, s)
+        ___ o in map(ord, s)
     )
 
 

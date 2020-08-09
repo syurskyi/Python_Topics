@@ -18,7 +18,7 @@ class Solution:
         heap = []
         m, n = le.(matrix), le.(matrix[0])
 
-        for i in range(m
+        ___ i in range(m
             heapq.heappush(heap, (matrix[i][0], i, 0))
 
         w___ heap and heap[0][0] <= target:

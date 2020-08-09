@@ -9,7 +9,7 @@ class Solution(object
     """
     ans = []
     bst = []
-    for num in reversed(nums
+    ___ num in reversed(nums
       idx = bisect.bisect_left(bst, num)
       ans.append(idx)
       bisect.insort(bst, num)

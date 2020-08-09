@@ -20,7 +20,7 @@ class Solution(object
         break
       mineCnt = 0
       nbrs = []
-      for di, dj in directions:
+      ___ di, dj in directions:
         ni, nj = i + di, j + dj
         __ 0 <= ni < le.(board) and 0 <= nj < le.(board[0]) and board[ni][nj] in ["M", "E"]:
           __ board[ni][nj] __ "M":

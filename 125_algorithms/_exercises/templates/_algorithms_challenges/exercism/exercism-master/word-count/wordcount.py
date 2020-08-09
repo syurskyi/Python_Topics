@@ -4,11 +4,11 @@ ___ word_count(phrase
     words = phrase.strip().replace("\n", " ").split(" ")
 
     # Remove empty strings
-    words = [_f for _f in words __ _f]
+    words = [_f ___ _f in words __ _f]
 
     # Initialize new dict for count of occurences
     count = {}
-    for word in words:
+    ___ word in words:
         count[word] = 1 __ word not in count else count[word] + 1
 
     r_ count

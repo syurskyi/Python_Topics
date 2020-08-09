@@ -39,7 +39,7 @@ class Solution:
         :return: int
         """
         bit_0, bit_1, bit_2 = ~0, 0, 0  # bit_0 is ~0 since all numbers appear 0 times.
-        for elmt in A:
+        ___ elmt in A:
             bit_t = bit_2  # temp
             bit_2 = (bit_1 & elmt) | (bit_2 & ~elmt)
             bit_1 = (bit_0 & elmt) | (bit_1 & ~elmt)
@@ -57,15 +57,15 @@ class Solution:
         :param A:
         :return:
         """
-        cnt = [0 for _ in xrange(32)]
+        cnt = [0 ___ _ in xrange(32)]
 
-        for elmt in A:
-            for i in xrange(32
+        ___ elmt in A:
+            ___ i in xrange(32
                 __ elmt>>i&1__1:
                     cnt[i] = (cnt[i]+1)%3
 
         result = 0
-        for i in xrange(32
+        ___ i in xrange(32
             result |= cnt[i]<<i
 
         r_ result
@@ -91,7 +91,7 @@ class Solution:
         #     two |= one&elmt  # add to two
         #     one ^= elmt  # del elmt appear twice
 
-        for elmt in A:
+        ___ elmt in A:
             # after processing elmt
             two |= one&elmt
             one ^= elmt
@@ -112,6 +112,6 @@ __ __name____"__main__":
         [1, 1, 1, 2, 2, 2, 3, 4, 4, 4],
         [1]
     ]
-    for A in tests:
+    ___ A in tests:
         assert Solution().singleNumber_optimal(A)__Solution().singleNumber_array(A)
         assert Solution().singleNumber_optimal(A)__Solution().singleNumber(A)

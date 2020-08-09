@@ -13,7 +13,7 @@ ___ get_json(
 ___ exchange_rates(data
     rates = data['rates']
     print("US$1.00 currently buys:")
-    for k, v in rates.items(
+    ___ k, v in rates.items(
         print("{}: {}".format(k, v))
 
 __ __name__ __ "__main__":

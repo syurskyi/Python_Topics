@@ -30,7 +30,7 @@ class Solution:
             r_ 0
 
         _sum = 0
-        for i in range(n
+        ___ i in range(n
             _sum += i
             __ _sum >= n:
                 r_ i

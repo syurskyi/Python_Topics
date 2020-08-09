@@ -15,7 +15,7 @@ class Solution:
         ____ target __ 0:
             res.append(cand[:])
         ____
-            for i, c in enumerate(candidates
+            ___ i, c in enumerate(candidates
                 cand.append(c)
                 self.combination_sum(candidates[i:], cand, target - c, res)
                 cand.pop()

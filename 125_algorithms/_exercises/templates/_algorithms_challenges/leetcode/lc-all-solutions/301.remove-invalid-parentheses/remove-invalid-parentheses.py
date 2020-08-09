@@ -7,7 +7,7 @@ class Solution(object
 
     ___ isValid(s
       stack = []
-      for c in s:
+      ___ c in s:
         __ c __ "(":
           stack.append("(")
         ____ c __ ")":
@@ -26,13 +26,13 @@ class Solution(object
           res.append(s)
           r_
 
-      for i in range(0, le.(s)):
+      ___ i in range(0, le.(s)):
         __ s[i] __ "(" or s[i] __ ")" and le.(s) - 1 >= length:
           dfs(s[:i] + s[i + 1:], res, cache, length)
           cache.add(s[:i] + s[i + 1:])
 
     prepLeft = ""
-    for i in range(0, le.(s)):
+    ___ i in range(0, le.(s)):
       __ s[i] __ "(":
         prepLeft += s[i:]
         break
@@ -40,7 +40,7 @@ class Solution(object
         prepLeft += s[i]
 
     prepRight = ""
-    for i in reversed(range(0, le.(prepLeft))):
+    ___ i in reversed(range(0, le.(prepLeft))):
       __ prepLeft[i] __ ")":
         prepRight += prepLeft[:i + 1][::-1]
         break

@@ -8,12 +8,12 @@ ___ primitive_triplets(nbr
     __ nbr % 4 != 0:
         raise ValueError('Argument must be divisible by 4')
     prime_factors, powers = factor(nbr / 2)
-    args = [(1, prime_factors[i1] ** powers[i1]) for i1 in range(le.(powers))]
-    a = [reduce(mul, p) for p in product(*args)]
+    args = [(1, prime_factors[i1] ** powers[i1]) ___ i1 in range(le.(powers))]
+    a = [reduce(mul, p) ___ p in product(*args)]
     a.sort()
-    factors = [(m, n) for m, n in zip(reversed(a), a) __ m > n]
+    factors = [(m, n) ___ m, n in zip(reversed(a), a) __ m > n]
     ts = set()
-    for m, n in factors:
+    ___ m, n in factors:
         ts.update([tuple(sorted([nbr, m * m - n * n, m * m + n * n]))])
     r_ ts
 
@@ -27,8 +27,8 @@ ___ is_triplet(t
 
 ___ triplets_in_range(m, n
     t = set()
-    for a in range(m, n + 1
-        for b in range(a + 1, n + 1
+    ___ a in range(m, n + 1
+        ___ b in range(a + 1, n + 1
             c = int(sqrt(a * a + b * b) + 0.5)
             __ c * c __ a * a + b * b and c >= m and c <= n:
                 t.update([(a, b, c)])

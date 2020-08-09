@@ -24,7 +24,7 @@ class Solution:
         __ length__0:
             result.append(current)
 
-        for ind, val in enumerate(nums
+        ___ ind, val in enumerate(nums
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 
@@ -44,7 +44,7 @@ class Solution:
         __ not nums:
             result.append(current)
 
-        for ind, val in enumerate(nums
+        ___ ind, val in enumerate(nums
             __ ind-1>=0 and val__nums[ind-1]: continue  # JUMP; only need to compare to previous value
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 

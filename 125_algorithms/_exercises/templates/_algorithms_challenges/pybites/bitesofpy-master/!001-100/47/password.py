@@ -11,7 +11,7 @@ ___ validate_password(password: str) -> bool:
     __ password in used_passwords:
         r_ False
     digits = lcase = ucase = punc = 0
-    for c in password:
+    ___ c in password:
         __ c.isdigit(
             digits += 1
         ____ c.islower(

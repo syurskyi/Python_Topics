@@ -42,7 +42,7 @@ class Solution:
         ret = 0
         up_cnt = 0
         down_cnt = 0
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             __ down_cnt and A[i] >= A[i-1]:
                 up_cnt = 0
                 down_cnt = 0
@@ -60,17 +60,17 @@ class Solution:
         dp
         """
         n = le.(A)
-        U = [0 for _ in A]  # up counter from left to right
-        D = [0 for _ in A]  # down counter from right to left
-        for i in range(1, n
+        U = [0 ___ _ in A]  # up counter from left to right
+        D = [0 ___ _ in A]  # down counter from right to left
+        ___ i in range(1, n
             __ A[i] > A[i-1]:
                 U[i] = U[i-1] + 1
-        for i in range(n-2, -1, -1
+        ___ i in range(n-2, -1, -1
             __ A[i] > A[i+1]:
                 D[i] = D[i+1] + 1
 
         ret = 0
-        for i in range(n
+        ___ i in range(n
             __ U[i] > 0 and D[i] > 0:
                 ret = max(ret, U[i] + D[i] + 1)
 
@@ -84,7 +84,7 @@ class Solution:
         ret = 0
         l = 1
         expect_incr = True
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             __ expect_incr:
                 __ A[i] > A[i-1]:
                     l += 1

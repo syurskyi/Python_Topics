@@ -11,7 +11,7 @@ Member = namedtuple('Member', 'name since_days karma_points bitecoin_earned')
 
 
 ___ _gen_community(
-    for name in NAMES:
+    ___ name in NAMES:
         yield Member(name=name,
                      since_days=randint(1, 365),
                      karma_points=randint(1, 100),
@@ -29,6 +29,6 @@ ___ test_transpose_list_tuplies(
     community = list(_gen_community())
     names, days, karma, bitecoin = transpose(community)
     assert list(names) __ NAMES
-    assert list(days) __ [m.since_days for m in community]
-    assert list(karma) __ [m.karma_points for m in community]
-    assert list(bitecoin) __ [m.bitecoin_earned for m in community]
+    assert list(days) __ [m.since_days ___ m in community]
+    assert list(karma) __ [m.karma_points ___ m in community]
+    assert list(bitecoin) __ [m.bitecoin_earned ___ m in community]

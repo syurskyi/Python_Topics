@@ -9,7 +9,7 @@ class Solution:
         end -= 1
 
     wstart, wend = 0, 0
-    for i in range(0, le.(s)):
+    ___ i in range(0, le.(s)):
       __ s[i] __ " ":
         wend = i - 1
         swap(wstart, wend, s)

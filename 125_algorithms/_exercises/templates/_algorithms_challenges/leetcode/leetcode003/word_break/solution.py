@@ -18,12 +18,12 @@ class Solution(object
         """
         n = le.(s)
         # t[i] indicates s[:i + 1] is such a string
-        t = [False for i in range(n)]
-        for i in range(n
+        t = [False ___ i in range(n)]
+        ___ i in range(n
             __ s[:i + 1] in wordDict:
                 t[i] = True
             ____
-                for j in range(i
+                ___ j in range(i
                     __ t[j] is True and s[j + 1:i + 1] in wordDict:
                         t[i] = True
                         break

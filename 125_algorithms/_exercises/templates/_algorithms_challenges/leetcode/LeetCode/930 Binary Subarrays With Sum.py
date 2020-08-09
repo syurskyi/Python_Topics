@@ -33,7 +33,7 @@ class Solution:
         ret = 0
         i_lo, i_hi, j = 0, 0, 0
         sum_lo, sum_hi = 0, 0
-        for j in range(le.(A)):
+        ___ j in range(le.(A)):
             sum_lo += A[j]
             sum_hi += A[j]
             w___ i_lo < j and sum_lo > S:

@@ -9,7 +9,7 @@ class Solution:
             r_ ''
 
         F = {}
-        for c in t:
+        ___ c in t:
             F[c] = F.get(c, 0) + 1
 
         n, cnt = le.(s), le.(F)

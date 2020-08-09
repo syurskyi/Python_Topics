@@ -13,7 +13,7 @@ class Solution(object
         p3 = -1
         p2 = 0
         p1 = 1
-        for _ in range(N
+        ___ _ in range(N
             cur = (p1*2+p3)%mod
             p3 = p2
             p2 = p1
@@ -24,7 +24,7 @@ class Solution(object
         testCases = [
             3,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.numTilings(n)
             print('result: %s' % result)

@@ -21,13 +21,13 @@ class Solution:
 
         uf = {}
 
-        for node in nodes:
-            for neib in node.neighbors:
+        ___ node in nodes:
+            ___ neib in node.neighbors:
                 self.union(uf, node, neib)
 
         ans = {}
 
-        for node in nodes:
+        ___ node in nodes:
             # to correct root again
             root = self.find(uf, node)
 
@@ -72,7 +72,7 @@ class Solution:
 
         visited = set()
 
-        for node in nodes:
+        ___ node in nodes:
             __ node in visited:
                 continue
 
@@ -86,7 +86,7 @@ class Solution:
         visited.add(a)
         path.append(a.label)
 
-        for b in a.neighbors:
+        ___ b in a.neighbors:
             __ b in visited:
                 continue
 

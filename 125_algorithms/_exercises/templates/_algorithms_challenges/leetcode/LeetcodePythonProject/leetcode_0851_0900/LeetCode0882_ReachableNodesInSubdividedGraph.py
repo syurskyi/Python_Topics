@@ -12,8 +12,8 @@ class Solution(object
         :rtype: int
         """
         ______ heapq
-        graph = [[-1]*N for _ in range(N)]
-        for edge in edges:
+        graph = [[-1]*N ___ _ in range(N)]
+        ___ edge in edges:
             graph[edge[0]][edge[1]] = edge[2]
             graph[edge[1]][edge[0]] = edge[2]
         res = 0
@@ -28,7 +28,7 @@ class Solution(object
                 continue
             visited[start] = True
             res += 1
-            for i in range(N
+            ___ i in range(N
                 __ graph[start][i] != -1:
                     __ move > graph[start][i] and not visited[i]:
                         heapq.heappush(h, ( -(move-graph[start][i]-1), i) )

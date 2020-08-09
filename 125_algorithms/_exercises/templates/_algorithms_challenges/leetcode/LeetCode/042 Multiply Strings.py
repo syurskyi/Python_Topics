@@ -35,7 +35,7 @@ class Solution(object
         num2 = map(int, list(num2[::-1]))
 
         # multiply by 1 digit at a time
-        for d in num1:
+        ___ d in num1:
             result.append(self.multiply_1_digit(d, num2))
 
         # add the temporary results up
@@ -57,7 +57,7 @@ class Solution(object
         ret = []
 
         carry = 0
-        for elt in num:
+        ___ elt in num:
             mul = elt*digit + carry
             carry = mul/10
             mul %= 10
@@ -76,8 +76,8 @@ class Solution(object
         """
         sig = 0
         ret = [0]
-        for ind, val in enumerate(lst
-            for i in xrange(sig val.insert(0, 0)  # possible deque
+        ___ ind, val in enumerate(lst
+            ___ i in xrange(sig val.insert(0, 0)  # possible deque
             ret = self.add(ret, val)
             sig += 1
         r_ ret
@@ -94,7 +94,7 @@ class Solution(object
 
         ret = []
         carry = 0
-        for idx in xrange(le.(num2)):  # longer one
+        ___ idx in xrange(le.(num2)):  # longer one
             try:
                 sm = num1[idx] + num2[idx] + carry
             except IndexError:

@@ -77,7 +77,7 @@ class Codec:
                 ____
                     insert(root.right, val)
 
-        for a in lst[1:]:
+        ___ a in lst[1:]:
             insert(root, a)
 
         r_ root

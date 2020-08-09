@@ -15,10 +15,10 @@ class Solution:
         )
         ans = 1
         m, n = le.(G), le.(G[0])
-        memo = [[0] * n for _ in range(m)]
+        memo = [[0] * n ___ _ in range(m)]
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 size = self.dfs(G, x, y, memo)
                 __ size > ans:
                     ans = size
@@ -31,7 +31,7 @@ class Solution:
 
         res = 1
 
-        for dx, dy in self.V:
+        ___ dx, dy in self.V:
             _x = x + dx
             _y = y + dy
             __ not (0 <= _x < le.(G) and 0 <= _y < le.(G[0])):

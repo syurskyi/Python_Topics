@@ -72,7 +72,7 @@ class CodecError(object
         """
         strs = map(lambda x: x.replace("\x00", "\\x00"), strs)
         ret = ""
-        for s in strs:
+        ___ s in strs:
             ret += s+"\x00"
         r_ ret
 

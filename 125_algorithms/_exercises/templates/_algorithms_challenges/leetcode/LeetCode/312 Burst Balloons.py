@@ -40,12 +40,12 @@ class Solution(object
             __ i < 0 or i >= n: r_ 1
             r_ A[i]
 
-        F = [[0 for _ in xrange(n+1)] for _ in xrange(n+1)]
-        for i in xrange(n+1, -1, -1
-            for j in xrange(i+1, n+1
+        F = [[0 ___ _ in xrange(n+1)] ___ _ in xrange(n+1)]
+        ___ i in xrange(n+1, -1, -1
+            ___ j in xrange(i+1, n+1
                 F[i][j] = max(
                     F[i][k]+get(i-1)*get(k)*get(j)+F[k+1][j]
-                    for k in xrange(i, j)
+                    ___ k in xrange(i, j)
                 )
 
         r_ max(map(max, F))

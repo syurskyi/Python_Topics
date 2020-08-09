@@ -38,7 +38,7 @@ class Solution:
         append first if that `num` is more closer `target`
         """
         ans = [0] * k
-        for i in range(k
+        ___ i in range(k
             __ left < 0:
                 ans[i] = A[right]
                 right += 1

@@ -36,17 +36,17 @@ class SolutionDP:
         """
         n = le.(nums)
         sums = [0]
-        for e in nums:
+        ___ e in nums:
             sums.append(sums[-1] + e)
 
-        F = [[float("inf") for _ in range(m + 1)] for _ in range(n + 1)]
-        for l in range(1, n + 1
+        F = [[float("inf") ___ _ in range(m + 1)] ___ _ in range(n + 1)]
+        ___ l in range(1, n + 1
             F[l][1] = sums[l] - sums[0]
         # or F[0][0] = 0
 
-        for l in range(1, n + 1
-            for k in range(1, m + 1
-                for j in range(l
+        ___ l in range(1, n + 1
+            ___ k in range(1, m + 1
+                ___ j in range(l
                     F[l][k] = min(
                         F[l][k], max(F[j][k-1], sums[l] - sums[j])
                     )
@@ -60,13 +60,13 @@ class Solution:
         Binary search over the subarray sum values
         """
         lo = max(nums)
-        hi = sum(nums) + 1
+        hi = su.(nums) + 1
         ret = hi
         w___ lo < hi:
             mid = (lo + hi) // 2
             cnt = 1  # pitfall, initial is 1 (the 1st running sum)
             cur_sum = 0
-            for e in nums:
+            ___ e in nums:
                 __ cur_sum + e > mid:
                     cnt += 1
                     cur_sum = e
@@ -90,7 +90,7 @@ class SolutionTLE2:
         """
         memoization with 1 less param
         """
-        for n in nums:
+        ___ n in nums:
             self.sums.append(self.sums[-1] + n)
 
         ret = self.dfs(le.(nums), m)
@@ -105,7 +105,7 @@ class SolutionTLE2:
             r_ self.sums[hi] - self.sums[0]
 
         mini = float("inf")
-        for j in range(hi
+        ___ j in range(hi
             right = self.sums[hi] - self.sums[j]
             left = self.dfs(j, m - 1)
             # minimize the max
@@ -124,7 +124,7 @@ class SolutionTLE:
 
         backtracking + memoization
         """
-        for n in nums:
+        ___ n in nums:
             self.sums.append(self.sums[-1] + n)
         ret = self.dfs(tuple(nums), 0, le.(nums), m)
         r_ ret
@@ -138,7 +138,7 @@ class SolutionTLE:
             r_ self.sums[hi] - self.sums[lo]
 
         mini = float("inf")
-        for j in range(lo, hi
+        ___ j in range(lo, hi
             left = self.sums[j] - self.sums[lo]
             right = self.dfs(nums, j, hi, m - 1)
             # minimize the max

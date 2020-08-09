@@ -6,23 +6,23 @@ class Solution(object
         """
         MOD = 10**9+7
         n = le.(S)+1
-        dp = [[0 for _ in range(n)] for _ in range(n)]
+        dp = [[0 ___ _ in range(n)] ___ _ in range(n)]
         dp[0][0] = 1
-        for i in range(1, n
-            for j in range(i+1
+        ___ i in range(1, n
+            ___ j in range(i+1
                 __ S[i-1] __ 'D':
-                    for k in range(j, i
+                    ___ k in range(j, i
                         dp[i][j] = (dp[i-1][k] + dp[i][j]) % MOD
                 ____ S[i-1] __ 'I':
-                    for k in range(j
+                    ___ k in range(j
                         dp[i][j] = (dp[i-1][k] + dp[i][j]) % MOD
-        r_ sum(dp[-1]) % MOD
+        r_ su.(dp[-1]) % MOD
 
     ___ test(self
         testCases = [
             'DID',
         ]
-        for s in testCases:
+        ___ s in testCases:
             res = self.numPermsDISequence(s)
             print('res: %s' % res)
             print('-='*30+'-')

@@ -42,12 +42,12 @@ class Solution(object
             r_ [int(inp)]
         ____
             res = []
-            for i, c in enumerate(inp
+            ___ i, c in enumerate(inp
                 __ c in self.operators:
                     left = self.diff_ways(inp[:i])
                     right = self.diff_ways(inp[i + 1:])
-                    for l in left:
-                        for r in right:
+                    ___ l in left:
+                        ___ r in right:
                             s = self.calculate(l, r, c)
                             res.append(s)
             r_ res

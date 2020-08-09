@@ -2,9 +2,9 @@ class Solution:
     ___ uniqueMorseRepresentations(self, words: List[str]) -> int:
         tab = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
         store_trans = []
-        for i in words:
+        ___ i in words:
             string = ''
-            for j in i:
+            ___ j in i:
                 ind = ord(j) - 97
                 string += tab[ind]
             __ string not in store_trans:

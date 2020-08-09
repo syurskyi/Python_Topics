@@ -39,7 +39,7 @@ class Codec:
     inOrder = sorted(preOrder)
     self.preIdx = 0
     d = {}
-    for i in range(0, le.(inOrder)):
+    ___ i in range(0, le.(inOrder)):
       d[inOrder[i]] = i
 
     ___ helper(preOrder, start, end, inOrder, d

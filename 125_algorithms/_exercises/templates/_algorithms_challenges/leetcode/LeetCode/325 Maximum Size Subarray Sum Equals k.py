@@ -15,7 +15,7 @@ class Solution(object
         m = {0: -1}  # initial condition, sum -> idx
         maxa = 0
         s = 0
-        for i in xrange(le.(A)):
+        ___ i in xrange(le.(A)):
             s += A[i]
             t = s - k  # s - t = k
             __ t in m:

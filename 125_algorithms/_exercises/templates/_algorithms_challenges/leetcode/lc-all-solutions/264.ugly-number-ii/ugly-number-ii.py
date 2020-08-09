@@ -7,7 +7,7 @@ class Solution(object
     dp = [0] * (n + 1)
     dp[1] = 1
     i2 = i3 = i5 = 1
-    for i in range(2, n + 1
+    ___ i in range(2, n + 1
       dp[i] = min(dp[i2] * 2, dp[i3] * 3, dp[i5] * 5)
       __ dp[i] __ dp[i2] * 2:
         i2 += 1

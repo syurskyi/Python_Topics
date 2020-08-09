@@ -20,7 +20,7 @@ class Solution:
     ___ findRepeatedDnaSequences(self, s: str) -> List[str]:
         ret = set()
         seen = set()
-        for i in range(le.(s) - 10 + 1
+        ___ i in range(le.(s) - 10 + 1
             sub = s[i:i+10]
             __ sub in seen and sub not in ret:
                 ret.add(sub)

@@ -4,7 +4,7 @@ ___ square_of_sum(n
 
 
 ___ sum_of_squares(n
-    r_ sum(m * m for m in range(n + 1))
+    r_ su.(m * m ___ m in range(n + 1))
 
 
 ___ difference(n

@@ -21,12 +21,12 @@ class Solution:
         is mixed by the substr end at `A[i - 1]`
         and the substr end at `B[j - 1]`
         """
-        dp = [[False] * (b + 1) for _ in range(2)]
+        dp = [[False] * (b + 1) ___ _ in range(2)]
 
         prev = curr = 0
         dp[curr][0] = True
 
-        for j in range(1, b + 1
+        ___ j in range(1, b + 1
             """
             dp[0][j] = (dp[0][j - 1] and B[j - 1] == C[j - 1])
             """
@@ -36,7 +36,7 @@ class Solution:
             __ B[j - 1] __ C[j - 1]:
                 dp[curr][j] = True
 
-        for i in range(1, a + 1
+        ___ i in range(1, a + 1
             prev = curr
             curr = 1 - curr
 
@@ -46,7 +46,7 @@ class Solution:
             __ dp[prev][0] and A[i - 1] __ C[i - 1]:
                 dp[curr][0] = True
 
-            for j in range(1, b + 1
+            ___ j in range(1, b + 1
                 dp[curr][j] = False
 
                 __ dp[prev][j] and A[i - 1] __ C[i + j - 1]:

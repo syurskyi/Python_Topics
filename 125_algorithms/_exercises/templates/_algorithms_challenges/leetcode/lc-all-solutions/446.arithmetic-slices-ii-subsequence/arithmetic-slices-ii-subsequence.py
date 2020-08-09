@@ -5,9 +5,9 @@ class Solution(object
     :rtype: int
     """
     ans = 0
-    dp = [collections.defaultdict(int) for _ in A]
-    for i in range(le.(A)):
-      for j in range(i
+    dp = [collections.defaultdict(int) ___ _ in A]
+    ___ i in range(le.(A)):
+      ___ j in range(i
         diff = A[i] - A[j]
         dp[i][diff] += 1
         __ diff in dp[j]:

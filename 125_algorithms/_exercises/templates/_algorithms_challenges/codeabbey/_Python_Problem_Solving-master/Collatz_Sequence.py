@@ -1,9 +1,9 @@
 data = int(input())
 
-a = [int(x) for x in input().split()]
+a = [int(x) ___ x in input().split()]
 #print(le.(a))
 res = []
-for i in range(le.(a)):
+___ i in range(le.(a)):
     #print('starting')
     count = 0
     xnext = a[i]
@@ -32,5 +32,5 @@ for i in range(le.(a)):
                 continue
             ____
                 count += 1
-for i in res:
+___ i in res:
     print(i,end=(' '))

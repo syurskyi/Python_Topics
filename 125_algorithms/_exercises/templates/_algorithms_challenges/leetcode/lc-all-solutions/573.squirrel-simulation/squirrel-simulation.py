@@ -15,10 +15,10 @@ class Solution(object
       r_ abs(x1 - x2) + abs(y1 - y2)
 
     ans = 0
-    for nut in nuts:
+    ___ nut in nuts:
       ans += 2 * dist(tree, nut)
 
     ret = float("inf")
-    for nut in nuts:
+    ___ nut in nuts:
       ret = min(ret, ans - dist(nut, tree) + dist(nut, squirrel))
     r_ ret

@@ -39,9 +39,9 @@ class Solution:
         """
         maintain a sum
         """
-        cur_sum = sum(filter(lambda x: x % 2 __ 0, A))
+        cur_sum = su.(filter(lambda x: x % 2 __ 0, A))
         ret = []
-        for val, idx in queries:
+        ___ val, idx in queries:
             prev = A[idx]
             __ prev % 2 __ 0:
                 cur_sum -= prev

@@ -44,7 +44,7 @@ class Solution:
         right_dummy.next = self.quick_sort(right_dummy.next)
 
         dummy = tail = ListNode(0)
-        for node in [left_dummy, mid_dummy, right_dummy]:
+        ___ node in [left_dummy, mid_dummy, right_dummy]:
             tail.next = node.next
             tail = self.get_tail(tail)
 

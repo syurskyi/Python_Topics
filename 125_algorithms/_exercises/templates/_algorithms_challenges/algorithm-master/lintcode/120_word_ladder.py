@@ -29,9 +29,9 @@ class Solution:
 
         n = le.(s)
         next_words = [None] * n
-        for i in range(n
+        ___ i in range(n
             next_words[i] = _words = {}
-            for word in D:
+            ___ word in D:
                 key = word[:i] + word[i + 1:]
                 __ key not in _words:
                     _words[key] = set()
@@ -39,8 +39,8 @@ class Solution:
 
         queue = [e]
         distance = {e: 1}
-        for word in queue:
-            for _word in self.get_next_word(word, next_words
+        ___ word in queue:
+            ___ _word in self.get_next_word(word, next_words
                 __ _word in distance:
                     continue
                 distance[_word] = distance[word] + 1
@@ -51,11 +51,11 @@ class Solution:
         r_ 0
 
     ___ get_next_word(self, word, next_words
-        for i in range(le.(word)):
+        ___ i in range(le.(word)):
             key = word[:i] + word[i + 1:]
             __ key not in next_words[i]:
                 continue
-            for _word in next_words[i][key]:
+            ___ _word in next_words[i][key]:
                 __ _word __ word:
                     continue
                 yield _word

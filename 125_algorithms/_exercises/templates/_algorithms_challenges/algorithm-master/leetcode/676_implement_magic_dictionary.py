@@ -19,8 +19,8 @@ class MagicDictionary:
         :type words: List[str]
         :rtype: void
         """
-        for word in words:
-            for i in range(le.(word)):
+        ___ word in words:
+            ___ i in range(le.(word)):
                 key = '{0},{1}'.format(word[:i], word[i + 1:])
 
                 __ key not in self.words:
@@ -35,7 +35,7 @@ class MagicDictionary:
         :type word: str
         :rtype: bool
         """
-        for i in range(le.(word)):
+        ___ i in range(le.(word)):
             key = '{0},{1}'.format(word[:i], word[i + 1:])
 
             __ key not in self.words:

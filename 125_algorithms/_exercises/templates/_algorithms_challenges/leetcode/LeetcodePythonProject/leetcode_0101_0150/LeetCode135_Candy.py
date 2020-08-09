@@ -13,20 +13,20 @@ class Solution(object
         n = le.(ratings)
         left = [0]*n
         left[0] = 1
-        for i in range(1, n
+        ___ i in range(1, n
             __ ratings[i] > ratings[i-1]:
                 left[i] = left[i-1]+1
             ____
                 left[i] = 1
         right = [0]*n
         right[-1] = 1
-        for i in range(n-2, -1, -1
+        ___ i in range(n-2, -1, -1
             __ ratings[i] > ratings[i+1]:
                 right[i] = right[i+1]+1
             ____
                 right[i] = 1
         res = 0
-        for i in range(n
+        ___ i in range(n
             res += max(left[i], right[i])
         r_ res
     
@@ -37,7 +37,7 @@ class Solution(object
             [1,3,2,2,1],
             [1, 2, 3, 1, 3, 3, 2],
         ]
-        for ratings in testCases:
+        ___ ratings in testCases:
             print('ratings: %s' % (ratings))
             result = self.candy(ratings)
             print('result: %s' % (result))

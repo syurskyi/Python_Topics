@@ -24,7 +24,7 @@ class Solution(object
             5,
             10,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % (n))
             result = self.trailingZeroes(n)
             print('result: %s' % (result))

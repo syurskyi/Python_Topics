@@ -6,12 +6,12 @@ ______ pytz
 
 ___ create_list(
     tz_list = []
-    for tz in pytz.all_timezones:
+    ___ tz in pytz.all_timezones:
         tz_list.append(tz)
     r_ tz_list
 
 ___ print_timezones(tz_list
-    for tz in tz_list:
+    ___ tz in tz_list:
         print(tz + "  = {}".format(pendulum.now(tz).to_datetime_string()))
 
 __ __name__ __ "__main__":

@@ -20,25 +20,25 @@ class Solution(object
         
         w___ top <= down and left <= right:
             __ top __ down:
-                for i in range(left, right+1
+                ___ i in range(left, right+1
                     result.append(matrix[top][i])
                 break
               
             __ left __ right:
-                for i in range(top, down+1
+                ___ i in range(top, down+1
                     result.append(matrix[i][left])
                 break
                 
-            for i in range(left, right+1
+            ___ i in range(left, right+1
                 result.append(matrix[top][i])
             top += 1
-            for i in range(top, down+1
+            ___ i in range(top, down+1
                 result.append(matrix[i][right])
             right-=1
-            for i in range(right, left-1, -1
+            ___ i in range(right, left-1, -1
                 result.append(matrix[down][i])
             down-=1
-            for i in range(down, top-1, -1
+            ___ i in range(down, top-1, -1
                 result.append(matrix[i][left])
             left+=1
         
@@ -71,7 +71,7 @@ class Solution(object
             ],
         ]
         
-        for matrix in matrixes:
+        ___ matrix in matrixes:
             print(matrix)
             result = self.spiralOrder(matrix)
             print(result)

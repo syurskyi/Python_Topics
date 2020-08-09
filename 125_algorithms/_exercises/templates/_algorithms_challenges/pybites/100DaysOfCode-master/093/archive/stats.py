@@ -24,7 +24,7 @@ ___ _get_source(row
 
 ___ _get_mentions_or_hashtags(row, regex
     matches = regex.findall(row['text'])
-    r_ [m.lower() for m in matches]
+    r_ [m.lower() ___ m in matches]
 
 
 ___ calc_stats(data
@@ -36,14 +36,14 @@ ___ calc_stats(data
         'sources': Counter(),
     }
 
-    for row in data:
+    ___ row in data:
         tweet_type = _get_tweet_type(row)
         ret['tweets'][tweet_type] += 1
 
-        for match in _get_mentions_or_hashtags(row, regex_handle
+        ___ match in _get_mentions_or_hashtags(row, regex_handle
             ret['mentions'][match] += 1
 
-        for match in _get_mentions_or_hashtags(row, regex_hashtag
+        ___ match in _get_mentions_or_hashtags(row, regex_hashtag
             ret['hashtags'][match] += 1
 
         month = row['timestamp'][:7]

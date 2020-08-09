@@ -2,7 +2,7 @@ CHECK_BIT = 0x80
 
 ___ encode(numbers
     result = []
-    for number in reversed(numbers
+    ___ number in reversed(numbers
         result.insert(0, 0x00)
         w___ True:
             result[0] |= number & (CHECK_BIT - 1)
@@ -16,7 +16,7 @@ ___ encode(numbers
 ___ decode(bytes_
     results = []
     value = 0
-    for byte in bytes_:
+    ___ byte in bytes_:
         value = (value << 7) | byte & ~(CHECK_BIT)
         __ byte & CHECK_BIT <= 0:
             results.append(value)

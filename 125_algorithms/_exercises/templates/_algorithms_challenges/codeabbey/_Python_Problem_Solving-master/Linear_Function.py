@@ -5,11 +5,11 @@ res = []
 T = int(f.readline().strip())
 
 boards = []
-for i in range(0,T
+___ i in range(0,T
     boards.append(f.readline().strip().split(' '))
 
-for i in range(T
-    a = [int(j) for j in boards[i]]
+___ i in range(T
+    a = [int(j) ___ j in boards[i]]
     A = np.array([[a[0],1],[a[2],1]])
   
     b = np.array([a[1],a[3]])
@@ -26,5 +26,5 @@ for i in range(T
     string = '('+str(int(z[0]))+' '+str(int(z[1]))+')'
     res.append(string)                           
                                   
-final = ' '.join(str(e) for e in res)
+final = ' '.join(str(e) ___ e in res)
 print(final)

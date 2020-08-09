@@ -20,7 +20,7 @@ class Solution(object
             r_ n in (0, 1)
 
         V = defaultdict(list)
-        for e in edges:
+        ___ e in edges:
             V[e[0]].append(e[1])
             V[e[1]].append(e[0])
 
@@ -36,7 +36,7 @@ class Solution(object
             r_ False
 
         pathset.add(v)
-        for nbr in V[v]:
+        ___ nbr in V[v]:
             __ nbr != pi:  # since undirected graph
                 __ not self.dfs(V, nbr, v, pathset, visited
                     r_ False

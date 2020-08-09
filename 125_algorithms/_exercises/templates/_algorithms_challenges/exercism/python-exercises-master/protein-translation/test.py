@@ -9,30 +9,30 @@ class ProteinTranslationTests(unittest.TestCase
         self.assertEqual('Methionine', of_codon('AUG'))
 
     ___ test_identifies_Phenylalanine_codons(self
-        for codon in ['UUU', 'UUC']:
+        ___ codon in ['UUU', 'UUC']:
             self.assertEqual('Phenylalanine', of_codon(codon))
 
     ___ test_identifies_Leucine_codons(self
-        for codon in ['UUA', 'UUG']:
+        ___ codon in ['UUA', 'UUG']:
             self.assertEqual('Leucine', of_codon(codon))
 
     ___ test_identifies_Serine_codons(self
-        for codon in ['UCU', 'UCC', 'UCA', 'UCG']:
+        ___ codon in ['UCU', 'UCC', 'UCA', 'UCG']:
             self.assertEqual('Serine', of_codon(codon))
 
     ___ test_identifies_Tyrosine_codons(self
-        for codon in ['UAU', 'UAC']:
+        ___ codon in ['UAU', 'UAC']:
             self.assertEqual('Tyrosine', of_codon(codon))
 
     ___ test_identifies_Cysteine_codons(self
-        for codon in ['UGU', 'UGC']:
+        ___ codon in ['UGU', 'UGC']:
             self.assertEqual('Cysteine', of_codon(codon))
 
     ___ test_identifies_Tryptophan_codons(self
         self.assertEqual('Tryptophan', of_codon('UGG'))
 
     ___ test_identifies_stop_codons(self
-        for codon in ['UAA', 'UAG', 'UGA']:
+        ___ codon in ['UAA', 'UAG', 'UGA']:
             self.assertEqual('STOP', of_codon(codon))
 
     ___ test_translates_rna_strand_into_correct_protein(self

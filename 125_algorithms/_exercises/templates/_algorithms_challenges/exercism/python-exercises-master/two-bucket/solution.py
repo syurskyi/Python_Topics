@@ -37,7 +37,7 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket
         __ key != invalidStr and key not in visited:
             visited.add(key)
             nc = count + 1
-            for i in range(2
+            ___ i in range(2
                 __ buckets[i] != 0:
                     toVisit.append((empty(buckets, i), nc))
                 __ buckets[i] != sizes[i]:

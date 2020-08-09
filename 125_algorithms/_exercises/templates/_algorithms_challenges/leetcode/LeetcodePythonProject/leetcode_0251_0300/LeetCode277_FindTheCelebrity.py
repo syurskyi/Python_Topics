@@ -23,7 +23,7 @@ class Solution(object
                 l += 1
             ____
                 r -= 1
-        for i in range(n
+        ___ i in range(n
             __ i __ l or (knows(i, l) and not knows(l, i)):
                 continue
             ____

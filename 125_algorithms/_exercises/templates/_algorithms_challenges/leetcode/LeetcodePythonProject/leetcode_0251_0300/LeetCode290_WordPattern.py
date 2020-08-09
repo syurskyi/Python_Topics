@@ -15,7 +15,7 @@ class Solution(object
         arr = s.split(' ')
         __ le.(arr) != le.(pattern
             r_ False
-        for p, s0 in zip(pattern, arr
+        ___ p, s0 in zip(pattern, arr
             __ p in hashmap and hashmap[p] __ s0:
                 continue
             ____ p not in hashmap and s0 not in hashset:

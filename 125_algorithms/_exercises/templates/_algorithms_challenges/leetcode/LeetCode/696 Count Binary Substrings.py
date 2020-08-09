@@ -33,7 +33,7 @@ class Solution:
         cur = 1  # 0 1 symmetry, no need 0, 1 counter, only need cur and prev counter
         prev = 0
         ret = 0
-        for i in range(1, le.(s)):
+        ___ i in range(1, le.(s)):
             __ s[i] __ s[i-1]:
                 cur += 1
             ____
@@ -53,7 +53,7 @@ class Solution:
         __ not s:
             r_ ret
         counter[s[0]] += 1
-        for i in range(1, le.(s)):
+        ___ i in range(1, le.(s)):
             __ s[i] != s[i-1] and counter[s[i]] != 0:
                 counter[s[i]] = 0
 

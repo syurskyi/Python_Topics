@@ -12,7 +12,7 @@ class Solution:
         first = ans
         second = ans
 
-        for i in range(1,n+2
+        ___ i __ ra..(1,n+2
             first = first.next
         
         w___ (first is not None

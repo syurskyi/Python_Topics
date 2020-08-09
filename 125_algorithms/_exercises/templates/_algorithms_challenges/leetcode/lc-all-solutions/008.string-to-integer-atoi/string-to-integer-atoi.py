@@ -13,7 +13,7 @@ class Solution(object
         sign = -1
       s = s[1:]
     ans = 0
-    for c in s:
+    ___ c in s:
       __ c.isdigit(
         ans = ans * 10 + int(c)
       ____

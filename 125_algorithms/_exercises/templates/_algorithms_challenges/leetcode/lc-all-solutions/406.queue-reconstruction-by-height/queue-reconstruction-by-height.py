@@ -5,6 +5,6 @@ class Solution(object
     :rtype: List[List[int]]
     """
     queue = []
-    for p in sorted(people, key=lambda (h, k (-h, k)):
+    ___ p in sorted(people, key=lambda (h, k (-h, k)):
       queue.insert(p[1], p)
     r_ queue

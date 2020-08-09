@@ -4,13 +4,13 @@ class Solution(object
     :type board: List[List[str]]
     :rtype: void Do not return anything, modify board in-place instead.
     """
-    cacheBox = [[0] * le.(board) for _ in range(le.(board))]
-    cacheRow = [[0] * le.(board) for _ in range(le.(board))]
-    cacheCol = [[0] * le.(board) for _ in range(le.(board))]
+    cacheBox = [[0] * le.(board) ___ _ in range(le.(board))]
+    cacheRow = [[0] * le.(board) ___ _ in range(le.(board))]
+    cacheCol = [[0] * le.(board) ___ _ in range(le.(board))]
 
     ___ helper(board, i, j, cacheRow, cacheCol, cacheBox
       __ board[i][j] __ ".":
-        for k in range(1, 10
+        ___ k in range(1, 10
           __ i < 0 or i >= le.(board) or j < 0 or j >= le.(board
             continue
           ib = (i / 3) * 3 + j / 3
@@ -40,8 +40,8 @@ class Solution(object
             r_ True
       r_ False
 
-    for i in range(le.(board)):
-      for j in range(le.(board)):
+    ___ i in range(le.(board)):
+      ___ j in range(le.(board)):
         __ board[i][j] != ".":
           ib = (i / 3) * 3 + j / 3
           k = int(board[i][j]) - 1

@@ -19,9 +19,9 @@ class Solution:
         ____
             res = []
             rest_combs = self.combinations(digits, i + 1, d)
-            for comb in rest_combs:
+            ___ comb in rest_combs:
                 number = digits[i]
                 letters = d[number]
-                for letter in letters:
+                ___ letter in letters:
                     res.append(letter + comb)
             r_ res

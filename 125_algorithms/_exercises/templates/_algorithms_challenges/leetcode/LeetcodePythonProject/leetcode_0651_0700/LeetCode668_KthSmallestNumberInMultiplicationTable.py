@@ -23,7 +23,7 @@ class Solution(object
     
     ___ count(self, val, m, n
         count = 0
-        for i in range(1, m+1
+        ___ i in range(1, m+1
             tmp = min(val//i, n)
             count += tmp
         r_ count
@@ -41,7 +41,7 @@ class Solution(object
                 6,
             ],
         ]
-        for m, n, k in testCases:
+        ___ m, n, k in testCases:
             print('m: %s' % m)
             print('n: %s' % n)
             print('k: %s' % k)

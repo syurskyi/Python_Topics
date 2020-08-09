@@ -5,7 +5,7 @@ ___ pattern(n
         r_ '1'
     res = []
     pattern = [' '] * ( 2 * n -1)
-    for i in range(1,n
+    ___ i in range(1,n
         temp = pattern[:]
         temp[i-1] = temp[-i] = str(i%10)
         res.append(''.join(temp))

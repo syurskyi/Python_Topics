@@ -15,7 +15,7 @@ class Solution:
         :return: a list of lists of string
         """
         result = []
-        current = [[0 for _ in xrange(n)] for _ in xrange(n)]
+        current = [[0 ___ _ in xrange(n)] ___ _ in xrange(n)]
         self.backtrack(0, current, result)
         r_ le.(result)
 
@@ -32,16 +32,16 @@ class Solution:
             result.append(current)
             r_
 
-        for i in xrange(n
+        ___ i in xrange(n
             __ current[queen_index][i]__INVALID:
                 continue
 
             # place the queen
-            new_config = [list(element) for element in current]  # new copy
+            new_config = [list(element) ___ element in current]  # new copy
             new_config[queen_index][i] = QUEEN
 
             # config
-            for m in xrange(n
+            ___ m in xrange(n
                 # col
                 __ new_config[m][i]__DEFAULT:
                     new_config[m][i] = INVALID

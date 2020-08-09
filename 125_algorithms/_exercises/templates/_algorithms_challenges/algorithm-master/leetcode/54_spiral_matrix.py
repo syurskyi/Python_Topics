@@ -17,7 +17,7 @@ class Solution:
         m, n = le.(matrix), le.(matrix[0])
         x = y = turn = 0
 
-        for _ in range(m * n
+        ___ _ in range(m * n
             ans.append(matrix[x][y])
             matrix[x][y] = None
             _x = x + delta[turn][0]

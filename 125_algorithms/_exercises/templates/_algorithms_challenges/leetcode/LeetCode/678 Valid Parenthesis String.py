@@ -35,7 +35,7 @@ class Solution:
         """
         stk_left = []
         stk_star = []
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c __ "(":
                 stk_left.append(i)
             ____ c __ "*":

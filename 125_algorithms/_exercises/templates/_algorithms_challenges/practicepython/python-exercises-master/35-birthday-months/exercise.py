@@ -15,7 +15,7 @@ __ __name__ __ "__main__":
     birthdays = getFromJson()
     values = list(birthdays.values())
     months = []
-    for date in values:
+    ___ date in values:
         month = (date.split('.'))[1]
         months.append(month)
 
@@ -35,5 +35,5 @@ __ __name__ __ "__main__":
     }
 
     count = Counter(months)
-    for key in count.keys(
+    ___ key in count.keys(
         print('In {} were {} guys'.format(yearMonths[key], count[key]))

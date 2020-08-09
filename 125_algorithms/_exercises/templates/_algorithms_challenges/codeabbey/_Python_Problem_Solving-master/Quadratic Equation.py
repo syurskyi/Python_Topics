@@ -1,6 +1,6 @@
 ______ ma__
 data = int(input())
-for i in range(data
+___ i in range(data
     cal = 0
     deno = 0
     res = ''

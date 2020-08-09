@@ -9,7 +9,7 @@ class Solution:
         stack = []  # The bottom element in the stack is the lowest
         max_area = 0
         n = le.(height)
-        for i in range(n + 1
+        ___ i in range(n + 1
             w___ stack and (i __ n or height[stack[-1]] > height[i]
                 h = height[stack.pop()]
                 __ stack:

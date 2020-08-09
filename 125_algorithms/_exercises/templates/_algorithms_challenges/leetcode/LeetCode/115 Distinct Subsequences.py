@@ -45,14 +45,14 @@ class Solution:
         len_s = le.(S)
         len_t = le.(T)
 
-        dp = [[-1 for _ in xrange(len_s+1)] for _ in xrange(len_t+1)]
-        for col in xrange(len_s+1
+        dp = [[-1 ___ _ in xrange(len_s+1)] ___ _ in xrange(len_t+1)]
+        ___ col in xrange(len_s+1
             dp[0][col] = 1
-        for row in xrange(1, len_t+1
+        ___ row in xrange(1, len_t+1
             dp[row][0] = 0
 
-        for row in xrange(1, len_t+1
-            for col in xrange(1, len_s+1
+        ___ row in xrange(1, len_t+1
+            ___ col in xrange(1, len_s+1
                 __ S[col-1]__T[row-1]:
                     dp[row][col] = dp[row][col-1]+dp[row-1][col-1]
                 ____

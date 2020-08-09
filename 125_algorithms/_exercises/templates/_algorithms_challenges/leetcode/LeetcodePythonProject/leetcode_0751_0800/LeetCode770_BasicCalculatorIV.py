@@ -41,7 +41,7 @@ class Solution(object
                 [],
             ],
         ]
-        for expression, evalvars, evalints in testCases:
+        ___ expression, evalvars, evalints in testCases:
             result = self.basicCalculatorIV(expression, evalvars, evalints)
             print('result: %s' % result)
             print('-='*30+'-')

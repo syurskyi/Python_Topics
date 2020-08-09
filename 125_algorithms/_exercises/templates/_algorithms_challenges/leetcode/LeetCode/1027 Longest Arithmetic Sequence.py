@@ -41,14 +41,14 @@ class Solution:
         Let F[i][j] be the longest arith subseq ending at A[i] with step j
         """
         F = defaultdict(lambda: defaultdict(lambda: 1))
-        for i in range(le.(A)):
-            for j in range(i
+        ___ i in range(le.(A)):
+            ___ j in range(i
                 delta = A[i] - A[j]
                 F[i][delta] = F[j][delta] + 1
 
         ret = 0
-        for d in F.values(
-            for v in d.values(
+        ___ d in F.values(
+            ___ v in d.values(
                 ret = max(ret, v)
 
         r_ ret

@@ -19,7 +19,7 @@ class Solution(object
         :rtype: int
         """
         res = 0
-        for i in range(2, n
+        ___ i in range(2, n
             __ self.is_prime(i
                 res += 1
         r_ res

@@ -20,7 +20,7 @@ class Solution:
                 A[i], A[j] = A[j], A[i]
             ____
                 i += 1
-        for i, e in enumerate(A
+        ___ i, e in enumerate(A
             __ e != i + 1:
                 r_ i + 1
         r_ n + 1

@@ -7,9 +7,9 @@ class Solution:
         n = le.(s)
         w___(left<n and right<n
             el = s[right]
-            __(el in m
-                left = max(left,m[el]+1)
+            __(el __ m
+                left = ma.(left,m[el]+1)
             m[el] = right
-            ans = max(ans,right-left+1)
+            ans = ma.(ans,right-left+1)
             right+=1
         r_ ans

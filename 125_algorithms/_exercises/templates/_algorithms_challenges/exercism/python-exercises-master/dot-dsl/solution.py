@@ -31,7 +31,7 @@ class Graph(object
         __ not isinstance(data, list
             raise TypeError("Graph data malformed")
 
-        for item in data:
+        ___ item in data:
             __ le.(item) < 3:
                 raise TypeError("Graph item incomplete")
 

@@ -14,7 +14,7 @@ ___ of_codon(codon
 
 ___ of_rna(strand
     proteins = []
-    for codon in map(of_codon, _chunkstring(strand, 3)):
+    ___ codon in map(of_codon, _chunkstring(strand, 3)):
         __ codon __ 'STOP':
             break
         proteins.append(codon)
@@ -22,4 +22,4 @@ ___ of_rna(strand
 
 
 ___ _chunkstring(string, n
-    r_ (string[i:n + i] for i in range(0, le.(string), n))
+    r_ (string[i:n + i] ___ i in range(0, le.(string), n))

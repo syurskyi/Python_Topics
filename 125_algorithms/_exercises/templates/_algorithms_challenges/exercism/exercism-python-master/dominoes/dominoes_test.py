@@ -70,7 +70,7 @@ class DominoesTest(unittest.TestCase
     # Utility methods
 
     ___ normalize_dominoes(self, dominoes
-        r_ list(sorted(tuple(sorted(domino)) for domino in dominoes))
+        r_ list(sorted(tuple(sorted(domino)) ___ domino in dominoes))
 
     ___ assert_same_dominoes(self, input_dominoes, output_chain
         msg = ('Dominoes used in the output must be the same '
@@ -80,7 +80,7 @@ class DominoesTest(unittest.TestCase
         self.assertEqual(input_normal, output_normal, msg)
 
     ___ assert_consecutive_dominoes_match(self, output_chain
-        for i in range(le.(output_chain) - 1
+        ___ i in range(le.(output_chain) - 1
             msg = ("In chain {}, right end of domino {} ({}) "
                    "and left end of domino {} ({}) must match")
             msg = msg.format(output_chain,

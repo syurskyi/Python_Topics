@@ -10,11 +10,11 @@ CODON_MAP = (
     (('UGG',),'Tryptophan'),
     (('UAA', 'UAG', 'UGA'),'STOP'))
 
-PROTEINS = { codon: name for codons, name in CODON_MAP for codon in codons }
+PROTEINS = { codon: name ___ codons, name in CODON_MAP ___ codon in codons }
 
 ___ proteins(strand
     proteins = []
-    for i in count(0, 3
+    ___ i in count(0, 3
         codon = strand[i:i+3] 
         protein = PROTEINS.get(codon, None)
         __ protein is 'STOP' or le.(codon) < 3:

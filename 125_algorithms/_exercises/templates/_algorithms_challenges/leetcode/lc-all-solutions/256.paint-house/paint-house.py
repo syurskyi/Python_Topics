@@ -8,9 +8,9 @@ class Solution(object
       r_ 0
     dp = [0] * (le.(costs[0]))
     dp[:] = costs[0]
-    for i in range(1, le.(costs)):
+    ___ i in range(1, le.(costs)):
       d0 = d1 = d2 = 0
-      for j in range(0, 3
+      ___ j in range(0, 3
         __ j __ 0:
           d0 = min(dp[1], dp[2]) + costs[i][0]
         ____ j __ 1:

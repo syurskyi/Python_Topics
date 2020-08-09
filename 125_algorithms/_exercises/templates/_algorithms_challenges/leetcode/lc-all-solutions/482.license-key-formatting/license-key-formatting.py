@@ -12,7 +12,7 @@ class Solution(object
     res = []
     __ start != 0:
       res.append(s[:start].upper())
-    for k in range(0, (le.(s) - start) / K
+    ___ k in range(0, (le.(s) - start) / K
       res.append(s[start:start + K].upper())
       start += K
     r_ "-".join(res)

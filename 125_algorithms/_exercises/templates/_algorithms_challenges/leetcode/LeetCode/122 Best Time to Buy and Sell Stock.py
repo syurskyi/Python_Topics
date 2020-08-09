@@ -18,9 +18,9 @@ class Solution(object
             r_ 0
 
         n = le.(A)
-        F = [0 for _ in xrange(n+1)]
+        F = [0 ___ _ in xrange(n+1)]
         maxa = 0
-        for i in xrange(2, n+1
+        ___ i in xrange(2, n+1
             F[i] = max(F[i-1] + A[i-1] - A[i-2], 0)  # revert the previous transaction
             maxa = max(maxa, F[i])
 
@@ -41,14 +41,14 @@ class Solution(object
         __ le.(prices) <= 1:
             r_ 0
         delta_prices = []
-        for i in xrange(1, le.(prices)):
+        ___ i in xrange(1, le.(prices)):
             delta_prices.append(prices[i]-prices[i-1])
 
         # O(n)
         # notice: possible to do nothing thus profit at least is 0 
         max_sub_array = 0
         current_sub_array = 0
-        for j in xrange(le.(delta_prices)):
+        ___ j in xrange(le.(delta_prices)):
             current_sub_array = max(0, current_sub_array+delta_prices[j])
             max_sub_array = max(max_sub_array, current_sub_array)
 

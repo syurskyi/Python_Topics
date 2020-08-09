@@ -19,13 +19,13 @@ ___ has_the_moves(player, moves
     win8 = (6,7,8) #[7,8,9]
     winning_grids = [win1, win2, win3, win4, win5, win6, win7, win8]
 
-    tried = [set(posibility) <= set(moves) for posibility in winning_grids]
+    tried = [set(posibility) <= set(moves) ___ posibility in winning_grids]
     r_ player __ any(tried) else None
 
 ___ is_winner(board
     # Check for winner
-    player_one_moves = [i for i, x in enumerate(board) __ x __ player_one]
-    player_two_moves = [i for i, x in enumerate(board) __ x __ player_two]
+    player_one_moves = [i ___ i, x in enumerate(board) __ x __ player_one]
+    player_two_moves = [i ___ i, x in enumerate(board) __ x __ player_two]
 
     player_one_won = has_the_moves(player_one, player_one_moves)
     player_two_won = has_the_moves(player_two, player_two_moves)
@@ -36,11 +36,11 @@ ___ is_winner(board
         r_ None
 
 ___ tic_tac_toe(games
-    for game in range(games
-        board = [str(x) for x in range(1, 10)] # Create the 3x3 Tic-Tac-Toe board.
-        moves = [int(x) for x in raw_input().split()] # Logs all player moves.
+    ___ game in range(games
+        board = [str(x) ___ x in range(1, 10)] # Create the 3x3 Tic-Tac-Toe board.
+        moves = [int(x) ___ x in raw_input().split()] # Logs all player moves.
 
-        for turn, move in enumerate(moves
+        ___ turn, move in enumerate(moves
             # Take turns rewriting the default board to player 1's X
             # and then player 2's O.
             board[move - 1] = player_one __ turn % 2 __ 0 else player_two

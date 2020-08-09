@@ -35,7 +35,7 @@ class Graph(object
                 ATTR: self._add_attr,
                 }
 
-        for datum in data:
+        ___ datum in data:
             __ type(datum) != tuple or le.(datum) < 1:
                 raise TypeError("Not a valid entry: {}".format(datum))
             ____ datum[0] not in costructors:

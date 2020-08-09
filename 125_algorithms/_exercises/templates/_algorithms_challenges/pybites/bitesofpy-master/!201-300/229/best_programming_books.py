@@ -52,7 +52,7 @@ ___ display_books(books, limit=10, year=None
     :param year: integer indicating the oldest year to include
     :return: None
     """
-    for b in books:
+    ___ b in books:
         __ limit __ 0:
             break
         __ year is None or b.year >= year:
@@ -76,7 +76,7 @@ ___ load_data(
     book_list = soup.find("div", {"class": "books"})
     books = []
     book: Tag
-    for book in book_list.find_all("div", {"class": "book"}
+    ___ book in book_list.find_all("div", {"class": "book"}
         title = book.select("h2.main")[0].text
         __ "python" not in title.lower(
             continue
@@ -95,7 +95,7 @@ ___ load_data(
             Book(title=title, author=author, year=year, rank=rank, rating=rating)
         )
     res = []
-    for n, b in enumerate(
+    ___ n, b in enumerate(
         sorted(
             books, key=lambda b: (-b.rating, b.year, b.title.lower(), b.author.lower())
         ),

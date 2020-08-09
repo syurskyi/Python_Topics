@@ -31,12 +31,12 @@ from typing ______ List
 class Solution:
     ___ findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
         index = {}
-        for i, v in enumerate(list2
+        ___ i, v in enumerate(list2
             index[v] = i
 
         ret = []
         mini = float('inf')
-        for i, v in enumerate(list1
+        ___ i, v in enumerate(list1
             __ v in index:
                 cur = i + index[v]  # current index sum
                 __ cur < mini:

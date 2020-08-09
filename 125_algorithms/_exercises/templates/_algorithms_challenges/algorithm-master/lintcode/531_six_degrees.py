@@ -22,8 +22,8 @@ class Solution:
 
         degree = {s: 0}
         queue = [s]
-        for node in queue:
-            for _node in node.neighbors:
+        ___ node in queue:
+            ___ _node in node.neighbors:
                 __ _node in degree:
                     continue
                 degree[_node] = degree[node] + 1

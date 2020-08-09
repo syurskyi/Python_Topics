@@ -21,13 +21,13 @@ class Solution:
         :rtype: list[int]
         """
         bits = 0
-        for elt in nums:
+        ___ elt in nums:
             bits ^= elt
 
         rightmost_bit_set = bits & -bits
         a = 0
         b = 0
-        for elt in nums:
+        ___ elt in nums:
             __ elt & rightmost_bit_set:
                 a ^= elt
             ____

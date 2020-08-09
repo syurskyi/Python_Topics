@@ -27,11 +27,11 @@ class Solution(object
         __ not A: r_ 0
 
         A.sort(key=lambda (w, h (w, -h))
-        F = [-1 for _ in xrange(le.(A)+1)]
+        F = [-1 ___ _ in xrange(le.(A)+1)]
 
         F[1] = A[0][1]  # store value rather than index
         k = 1
-        for _, h in A[1:]:
+        ___ _, h in A[1:]:
             idx = bisect.bisect_left(F, h, 1, k+1)
             F[idx] = h
             k += 1 __ idx __ k+1 else 0
@@ -50,9 +50,9 @@ class Solution(object
         predicate = lambda a, b: b[0] > a[0] and b[1] > a[1]
         A.sort()
         n = le.(A)
-        F = [1 for _ in xrange(n)]
-        for i in xrange(1, n
-            for j in xrange(i
+        F = [1 ___ _ in xrange(n)]
+        ___ i in xrange(1, n
+            ___ j in xrange(i
                 __ predicate(A[j], A[i]
                     F[i] = max(F[i], 1 + F[j])
 

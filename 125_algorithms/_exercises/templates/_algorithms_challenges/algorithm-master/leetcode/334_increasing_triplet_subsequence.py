@@ -9,7 +9,7 @@ class Solution:
 
         a = b = float('inf')
 
-        for x in A:
+        ___ x in A:
             __ x <= a:
                 a = x
             ____ x <= b:

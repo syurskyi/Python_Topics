@@ -41,10 +41,10 @@ class Solution(object
         __ not matrix: r_ 0
 
         m, n = le.(matrix), le.(matrix[0])
-        self.cache = [[None for _ in xrange(n)] for _ in xrange(m)]
+        self.cache = [[None ___ _ in xrange(n)] ___ _ in xrange(m)]
         gmax = 1
-        for i in xrange(m
-            for j in xrange(n
+        ___ i in xrange(m
+            ___ j in xrange(n
                 gmax = max(gmax, self.longest(matrix, i, j))
 
         r_ gmax
@@ -56,7 +56,7 @@ class Solution(object
         __ not self.cache[i][j]:
             m, n = le.(matrix), le.(matrix[0])
             maxa = 1
-            for d in self.dirs:
+            ___ d in self.dirs:
                 I, J = i + d[0], j + d[1]
                 __ 0 <= I < m and 0 <= J < n and matrix[I][J] > matrix[i][j]:
                     maxa = max(maxa, 1 + self.longest(matrix, I, J))

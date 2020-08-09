@@ -31,7 +31,7 @@ class Solution:
 
         INFINITY = float('inf')
         m, n = le.(G), le.(G[0])
-        min_steps = [[INFINITY] * n for _ in range(m)]
+        min_steps = [[INFINITY] * n ___ _ in range(m)]
 
         queue = [S]
         _queue = None
@@ -41,8 +41,8 @@ class Solution:
             _queue = []
             steps += 1
 
-            for P in queue:
-                for dx, dy in self.V:
+            ___ P in queue:
+                ___ dx, dy in self.V:
                     _x = P.x + dx
                     _y = P.y + dy
 

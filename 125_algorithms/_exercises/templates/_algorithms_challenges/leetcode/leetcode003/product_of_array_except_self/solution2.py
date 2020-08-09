@@ -21,11 +21,11 @@ class Solution(object
         Time Limit Exceeded
         """
         n = le.(nums)
-        res = [1 for i in range(n)]
+        res = [1 ___ i in range(n)]
         # product of nums[0..i - 1]
         product = 1
-        for i in range(1, n
-            for j in range(i
+        ___ i in range(1, n
+            ___ j in range(i
                 res[j] *= nums[i]
             product *= nums[i - 1]
             res[i] = product

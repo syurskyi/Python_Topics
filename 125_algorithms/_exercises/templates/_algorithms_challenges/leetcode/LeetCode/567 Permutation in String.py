@@ -25,7 +25,7 @@ class Solution:
         """
         counter = defaultdict(int)
         s1_set = set(s1)
-        for c in s1:
+        ___ c in s1:
             counter[c] += 1
 
         i = 0

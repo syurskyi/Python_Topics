@@ -20,7 +20,7 @@ class Solution:
         __ start >= le.(A
             r_
 
-        for i in range(start, le.(A)):
+        ___ i in range(start, le.(A)):
             self.dfs(A, i + 1, ans, subset + [A[i]])
 
 
@@ -41,9 +41,9 @@ class Solution:
 
         A.sort()
 
-        for i in range(1 << n
+        ___ i in range(1 << n
             subset = []
-            for j in range(n
+            ___ j in range(n
                 """
                 check `j`th digit in `bin(i)`
 

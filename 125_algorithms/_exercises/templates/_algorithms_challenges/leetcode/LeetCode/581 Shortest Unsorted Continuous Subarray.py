@@ -44,7 +44,7 @@ class Solution:
 
         mini = float('inf')
         maxa = -float('inf')
-        for i in range(lo, hi + 1
+        ___ i in range(lo, hi + 1
             mini = min(mini, nums[i])
             maxa = max(maxa, nums[i])
 

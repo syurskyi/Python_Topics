@@ -9,7 +9,7 @@ class Solution(object
         left = -1
         stack = []
         res = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c __ '(':
                 stack.append(i)
             ____
@@ -29,7 +29,7 @@ class Solution(object
             '(()',
             ')()())',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.longestValidParentheses(s)
             print('result: %s' % result)

@@ -23,7 +23,7 @@ class Solution:
                 ans = depth
             __ x __ y __ n - 1:
                 r_ ans
-            for dx, dy in V:
+            ___ dx, dy in V:
                 _x = x + dx
                 _y = y + dy
                 __ not (0 <= _x < n and 0 <= _y < n

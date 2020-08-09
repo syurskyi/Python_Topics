@@ -66,7 +66,7 @@ class Solution(object
         significance by significance
         """
         SIGS = [1000000000, 1000000, 1000, 100]
-        for SIG in SIGS:
+        ___ SIG in SIGS:
             self.partial_parse(num, SIG, ret)
             num %= SIG
 

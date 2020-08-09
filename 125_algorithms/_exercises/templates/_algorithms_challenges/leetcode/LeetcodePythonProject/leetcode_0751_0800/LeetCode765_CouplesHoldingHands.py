@@ -32,7 +32,7 @@ class Solution(object
             [0, 2, 1, 3],
             [3, 2, 0, 1],
         ]
-        for row in testCases:
+        ___ row in testCases:
             print('row: %s' % row)
             result = self.minSwapsCouples(row)
             print('result: %s' % result)

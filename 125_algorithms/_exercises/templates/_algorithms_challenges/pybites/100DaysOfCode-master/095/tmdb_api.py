@@ -19,7 +19,7 @@ class Tmdb:
     ___ get_items(self, obj_method
         results = []
 
-        for i in range(self.num_pages
+        ___ i in range(self.num_pages
             page = i + 1
 
             num_tries = 0
@@ -37,7 +37,7 @@ class Tmdb:
             __ not resp or 'results' not in resp:
                 continue
 
-            results += [r for r in resp['results']
+            results += [r ___ r in resp['results']
                         __ r['vote_count'] > self.min_vote_count]
 
             time.sleep(1)
@@ -79,5 +79,5 @@ __ __name__ __ '__main__':
     from decorators ______ CACHE
 
     with shelve.open(CACHE) as s:
-        for item in s:
+        ___ item in s:
             print(s[item])

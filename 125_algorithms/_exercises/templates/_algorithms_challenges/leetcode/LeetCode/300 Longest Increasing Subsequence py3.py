@@ -31,9 +31,9 @@ class Solution:
         For easch position i, the F[i]_old > F[i]_new, but A[j_old] < A[j_new]
 
         """
-        F = [float('inf') for _ in nums]
+        F = [float('inf') ___ _ in nums]
         l = 0
-        for n in nums:
+        ___ n in nums:
             i = bisect_left(F, n)  # consider equal elements [2, 2]
             F[i] = n
             l = max(l, i + 1)

@@ -21,7 +21,7 @@ class Solution(object
         l = self.leftmost(root, 0)
         r = self.rightmost(root, 0)
 
-        ret = [[] for _ in xrange(r-l-1)]
+        ret = [[] ___ _ in xrange(r-l-1)]
         self.bfs(root, -l-1, ret)
         r_ ret
 
@@ -32,7 +32,7 @@ class Solution(object
 
         w___ q:
             l = le.(q)
-            for i in xrange(l  # avoid non-stop access as in `for elt in q`
+            ___ i in xrange(l  # avoid non-stop access as in `for elt in q`
                 v, c = q[i]
                 ret[c].append(v.val)
                 __ v.left: q.append((v.left, c-1))

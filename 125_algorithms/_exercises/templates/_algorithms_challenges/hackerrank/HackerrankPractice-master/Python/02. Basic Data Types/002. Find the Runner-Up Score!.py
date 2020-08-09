@@ -4,4 +4,4 @@
 
 n = int(input())
 arr = list(map(int, input().split()))
-print(max([x for x in arr __ x != max(arr)]))
+print(max([x ___ x in arr __ x != max(arr)]))

@@ -24,7 +24,7 @@ __author__ = 'Danyang'
 class Solution:
     ___ is_neighbor(self, p, q
         diff = 0
-        for a, b in zip(p, q
+        ___ a, b in zip(p, q
             __ a != b:
                 diff += 1
             __ diff > 1:
@@ -40,10 +40,10 @@ class Solution:
         lvl = 1
         w___ q:
             cur_q = []
-            for a in q:
+            ___ a in q:
                 __ a __ end:
                     r_ lvl
-                for b in dct:
+                ___ b in dct:
                     __ b not in visited and self.is_neighbor(a, b
                         visited.add(b)
                         cur_q.append(b)
@@ -62,7 +62,7 @@ class Solution:
         :return: integer
         """
         lst = [start]+list(dict)
-        dp = [[-1 for _ in lst] for _ in lst]
+        dp = [[-1 ___ _ in lst] ___ _ in lst]
 
         ___ diff_count(s1, s2
             """
@@ -74,19 +74,19 @@ class Solution:
             count = 0
             str1 = lst[s1]
             str2 = lst[s2]
-            for i in xrange(le.(str1)):
+            ___ i in xrange(le.(str1)):
                 __ count>1:
                     r_ -1
                 __ str1[i]!=str2[i]:
                     count += 1
             r_ count
 
-        for i in xrange(le.(lst)):
-            for j in xrange(i, le.(lst)):
+        ___ i in xrange(le.(lst)):
+            ___ j in xrange(i, le.(lst)):
                 dp[i][j] = diff_count(i, j)
                 dp[j][i] = dp[i][j]
 
-        visited = [False for _ in lst]  # avoid loop
+        visited = [False ___ _ in lst]  # avoid loop
         path_len = 0
 
         queue = [0]
@@ -94,10 +94,10 @@ class Solution:
         w___ queue:
             path_len += 1
             length = le.(queue)
-            for i in xrange(length  #O(V)
+            ___ i in xrange(length  #O(V)
                 __ lst[queue[i]]__end:  # reached
                     r_ path_len
-                for ind in xrange(1, le.(lst)):  # O(k), add next level
+                ___ ind in xrange(1, le.(lst)):  # O(k), add next level
                     __ not visited[ind] and dp[ind][queue[i]]__1:
                         queue.append(ind)
                         visited[ind] = True
@@ -120,7 +120,7 @@ class Solution:
             :return: 0 1 or -1
             """
             count = 0
-            for i in xrange(le.(str1)):
+            ___ i in xrange(le.(str1)):
                 __ count>1:
                     r_ -1
                 __ str1[i]!=str2[i]:
@@ -133,12 +133,12 @@ class Solution:
         w___ queue:
             path_len += 1
             length = le.(queue)
-            for i in xrange(length  #O(V)
+            ___ i in xrange(length  #O(V)
                 __ queue[i]__end:  # reached
                     r_ path_len
 
                 remain_set = set(dict)
-                for item in dict:  # O(k), add next level
+                ___ item in dict:  # O(k), add next level
                    __ diff_count(item, queue[i])__1:
                         queue.append(item)
                         remain_set.remove(item)
@@ -163,22 +163,22 @@ class Solution:
         :return: integer, if impossible, return 0
         """
         path_len = 0
-        lower_cases = [chr(i+ord('a')) for i in xrange(26)]
+        lower_cases = [chr(i+ord('a')) ___ i in xrange(26)]
 
         queue = [start]
         dict.remove(start)
         w___ True:
             path_len += 1
             length_0 = le.(queue)
-            for i in xrange(length_0  #O(V)
+            ___ i in xrange(length_0  #O(V)
                 current = queue[i]
                 __ current__end:  # reached
                     r_ path_len
 
                 current = queue[i]
-                for pos in xrange(le.(current)):
+                ___ pos in xrange(le.(current)):
                     lst = list(current)
-                    for char in lower_cases:
+                    ___ char in lower_cases:
                         lst[pos] = char
                         temp = "".join(lst)
                         __ temp in dict:

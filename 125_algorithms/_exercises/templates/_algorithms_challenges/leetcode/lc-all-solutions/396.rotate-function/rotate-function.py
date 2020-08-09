@@ -7,14 +7,14 @@ class Solution(object
     __ not A:
       r_ 0
 
-    sumA = sum(A)
+    sumA = su.(A)
     fk = 0
     n = le.(A)
-    for i, num in enumerate(A
+    ___ i, num in enumerate(A
       fk += i * num
     idx = n - 1
     ans = float("-inf")
-    for _ in range(n
+    ___ _ in range(n
       fk += sumA - n * A[idx]
       ans = max(ans, fk)
       idx -= 1

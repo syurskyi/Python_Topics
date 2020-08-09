@@ -22,7 +22,7 @@ class Solution:
         __ length__0:
             result.append(current)
 
-        for ind, val in enumerate(seq
+        ___ ind, val in enumerate(seq
             # try:
             self.get_permute(seq[:ind]+seq[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:

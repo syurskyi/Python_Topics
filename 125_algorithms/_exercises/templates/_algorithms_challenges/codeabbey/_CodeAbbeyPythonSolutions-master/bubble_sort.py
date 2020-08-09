@@ -5,9 +5,9 @@ ___ get_pass_and_swap_number(array
     swapped = 0
 
     n = le.(array)
-    for i in range(n
+    ___ i in range(n
         previous_swap = swapped
-        for j in range(n-i-1
+        ___ j in range(n-i-1
             __(array[j] > array[j+1]
                 swapped += 1
                 array[j], array[j+1] = array[j+1], array[j]

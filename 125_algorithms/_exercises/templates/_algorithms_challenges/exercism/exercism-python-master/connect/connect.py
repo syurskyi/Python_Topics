@@ -1,16 +1,16 @@
 class ConnectGame:
     ___ __init__(self, board
-        self._board = [line.split() for line in board.splitlines()]
+        self._board = [line.split() ___ line in board.splitlines()]
         self._players = {}
         self._players['X'] = (
-            tuple((0, r) for r in range(le.(self._board))),
-            tuple((le.(row)-1, r) for r, row in enumerate(self._board)))
+            tuple((0, r) ___ r in range(le.(self._board))),
+            tuple((le.(row)-1, r) ___ r, row in enumerate(self._board)))
         self._players['O'] = (
-            tuple((c, 0) for c in range(le.(self._board[0]))),
-            tuple((c, le.(self._board)-1) for c in range(le.(self._board[-1]))))
+            tuple((c, 0) ___ c in range(le.(self._board[0]))),
+            tuple((c, le.(self._board)-1) ___ c in range(le.(self._board[-1]))))
 
     ___ get_winner(self
-        for player in self._players.keys(
+        ___ player in self._players.keys(
             __ self._find_path(player
                 r_ player
         r_ ''
@@ -30,6 +30,6 @@ class ConnectGame:
                 continue
             __ (x, y) in end:
                 r_ True
-            queue.extend((x+r,y+s) for r, s in
+            queue.extend((x+r,y+s) ___ r, s in
                     ((0,-1),(1,-1),(-1,0),(1,0),(-1,1),(0,1)))
         r_ False

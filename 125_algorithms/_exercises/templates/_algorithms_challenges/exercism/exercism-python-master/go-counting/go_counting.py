@@ -12,7 +12,7 @@ class Board:
     """
 
     ___ __init__(self, board
-        self._board = tuple(tuple(row) for row in board)
+        self._board = tuple(tuple(row) ___ row in board)
 
     ___ _valid_point(self, x, y
         r_ 0 <= y < le.(self._board) and 0 <= x < le.(self._board[y])
@@ -57,8 +57,8 @@ class Board:
                         , i.e. "W", "B", "".  The value being a set
                         of coordinates owned by the owner.
         """
-        not_seen = set((c, r) for r, row in enumerate(self._board) 
-                for c in range(le.(row)))
+        not_seen = set((c, r) ___ r, row in enumerate(self._board)
+                ___ c in range(le.(row)))
         groups = {BLACK: set(), WHITE: set(), NONE: set()}
         w___ not_seen:
             x, y = not_seen.pop()

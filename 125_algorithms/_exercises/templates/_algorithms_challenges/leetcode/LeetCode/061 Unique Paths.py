@@ -32,10 +32,10 @@ class Solution(object
         r_ ma__.factorial(m+n) / (ma__.factorial(n) * ma__.factorial(m))
 
     ___ uniquePathsDP(self, m, n
-        F = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
+        F = [[0 ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
         F[1][0] = 1  # dummy entry point
-        for i in xrange(1, m+1
-            for j in xrange(1, n+1
+        ___ i in xrange(1, m+1
+            ___ j in xrange(1, n+1
                 F[i][j] = F[i-1][j] + F[i][j-1]
 
         r_ F[m][n]
@@ -49,12 +49,12 @@ class Solution(object
         :param n:
         :return: an integer
         """
-        F = [[0 for _ in xrange(n)] for _ in xrange(m)]
+        F = [[0 ___ _ in xrange(n)] ___ _ in xrange(m)]
         F[0][0] = 1  # start
 
         # F[i][j] = F[i-1][j] + F[i][j-1]
-        for i in xrange(m
-            for j in xrange(n
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ i __ 0 and j __ 0: continue
                 __ i __ 0: F[i][j] = F[i][j-1]
                 ____ j __ 0: F[i][j] = F[i-1][j]

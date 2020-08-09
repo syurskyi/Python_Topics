@@ -15,7 +15,7 @@ class Solution(object
         idx = 0
         w___ V > 0:
             idx = K
-            for i in range(K-1, -1, -1
+            ___ i in range(K-1, -1, -1
                 __ heights[i] > heights[idx]:
                     break
                 ____ heights[i] < heights[idx]:
@@ -24,7 +24,7 @@ class Solution(object
                 heights[idx] += 1
                 V -= 1
                 continue
-            for i in range(K+1, le.(heights)):
+            ___ i in range(K+1, le.(heights)):
                 __ heights[i] > heights[idx]:
                     break
                 ____ heights[i] < heights[idx]:
@@ -54,7 +54,7 @@ class Solution(object
                 2,
             ],
         ]
-        for heights, v, k in testCases:
+        ___ heights, v, k in testCases:
             print('heights: %s' % heights)
             print('v: %s' % v)
             print('k: %s' % k)

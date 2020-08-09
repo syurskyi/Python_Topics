@@ -10,7 +10,7 @@ class Solution(object
         points.sort(key=lambda x: (x[1], x[0]))
         count = 0
         maxLen = float('-inf')
-        for point in points:
+        ___ point in points:
             __ point[0] > maxLen:
                 maxLen = point[1]
             ____
@@ -21,7 +21,7 @@ class Solution(object
         testCases = [
             [[10,16], [2,8], [1,6], [7,12]],
         ]
-        for points in testCases:
+        ___ points in testCases:
             print('points: %s' % points)
             result = self.findMinArrowShots(points)
             print('result: %s' % result)

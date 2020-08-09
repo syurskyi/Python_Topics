@@ -18,26 +18,26 @@ class Solution:
         Need to count the #appearances in the TrieNode
         """
         hm = defaultdict(list)
-        ret = [None for _ in words]
-        for i, w in enumerate(words
+        ret = [None ___ _ in words]
+        ___ i, w in enumerate(words
             hm[w[0], w[-1], le.(w)].append(i)
 
         TrieNode = lambda: defaultdict(TrieNode)
 
-        for lst in hm.values(
+        ___ lst in hm.values(
             root = TrieNode()
-            for i in lst:
+            ___ i in lst:
                 w = words[i]
                 cur = root
-                for c in w:
+                ___ c in w:
                     cur = cur[c]
                     cur["count"] = cur.get("count", 0) + 1
 
-            for i in lst:
+            ___ i in lst:
                 w = words[i]
                 prefix_l = 0
                 cur = root
-                for c in w:
+                ___ c in w:
                     prefix_l += 1
                     cur = cur[c]
                     __ cur["count"] __ 1:

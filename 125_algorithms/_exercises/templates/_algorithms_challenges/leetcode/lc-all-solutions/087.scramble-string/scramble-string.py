@@ -13,7 +13,7 @@ class Solution(object
     __ n < 4 or s1 __ s2:
       r_ True
 
-    for i in range(1, n
+    ___ i in range(1, n
       __ self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]
         r_ True
       __ self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:-i]

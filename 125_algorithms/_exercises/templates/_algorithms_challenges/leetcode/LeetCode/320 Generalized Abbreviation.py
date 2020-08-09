@@ -18,9 +18,9 @@ class Solution(object
             r_ [""]
 
         ret = []
-        for i in xrange(le.(word)+1
+        ___ i in xrange(le.(word)+1
             left_num = str(i) __ i else ""
-            for right in self.generateAbbreviations(word[i+1:]
+            ___ right in self.generateAbbreviations(word[i+1:]
                 cur = left_num + word[i:i+1] + right
                 ret.append(cur)
 
@@ -43,13 +43,13 @@ class SolutionTLE(object
     ___ dfs(self, word
         __ word not in self.cache:
             ret = []
-            for l in xrange(1, le.(word)+1
+            ___ l in xrange(1, le.(word)+1
                 pivot = str(l)
-                for i in xrange(le.(word)-l+1
+                ___ i in xrange(le.(word)-l+1
                     lefts = self.dfs(word[:i])
                     rights = self.dfs(word[i+l:])
-                    for left in lefts:
-                        for right in rights:
+                    ___ left in lefts:
+                        ___ right in rights:
                             __ left and left[-1].isdigit() or right and right[0].isdigit(
                                 continue
 

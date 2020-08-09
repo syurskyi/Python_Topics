@@ -19,12 +19,12 @@ class Solution:
         dp = collections.defaultdict(int)
         dp[r, c] = 1.0
 
-        for _ in range(k
+        ___ _ in range(k
             nxt = collections.defaultdict(int)
 
-            for x in range(n
-                for y in range(n
-                    for dx, dy in (
+            ___ x in range(n
+                ___ y in range(n
+                    ___ dx, dy in (
                         (-1, -2),
                         ( 1, -2),
                         (-2, -1),
@@ -44,7 +44,7 @@ class Solution:
 
             dp = nxt
 
-        r_ sum(dp.values())
+        r_ su.(dp.values())
 
 
 class Solution:
@@ -69,8 +69,8 @@ class Solution:
         w___ queue and k:
             k -= 1
 
-            for x, y in queue:
-                for dx, dy in (
+            ___ x, y in queue:
+                ___ dx, dy in (
                     (-1, -2),
                     ( 1, -2),
                     (-2, -1),

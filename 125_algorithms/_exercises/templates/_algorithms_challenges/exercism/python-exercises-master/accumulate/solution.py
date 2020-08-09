@@ -3,6 +3,6 @@
 
 ___ accumulate(seq, op
     res = []
-    for el in seq:
+    ___ el in seq:
         res.append(op(el))
     r_ res

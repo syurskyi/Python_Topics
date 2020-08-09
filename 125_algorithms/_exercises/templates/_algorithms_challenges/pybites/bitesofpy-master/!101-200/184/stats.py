@@ -18,11 +18,11 @@ class BiteStats:
         self.rows = self._load_data(data)
 
     ___ _count_attribute(self, attrib, completed=False
-        r_ Counter(x[attrib] for x in self.rows __ not completed or (completed and x['completed'] __ 'True'))
+        r_ Counter(x[attrib] ___ x in self.rows __ not completed or (completed and x['completed'] __ 'True'))
 
     ___ _count_clicks(self, attrib, completed=False
         counter = Counter()
-        for x in self.rows:
+        ___ x in self.rows:
             __ not completed or (completed and x['completed'] __ 'True'
                 counter[x[attrib]] += 1
         r_ counter

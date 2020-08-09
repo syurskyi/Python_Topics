@@ -13,9 +13,9 @@ class Solution(object
         __ not strs:
             r_ ""
         res = strs[0]
-        for s in strs[1:]:
+        ___ s in strs[1:]:
             n = le.(s)
-            for i, c in enumerate(res
+            ___ i, c in enumerate(res
                 __ i >= n or res[i] != s[i]:
                     res = res[:i]
                     break

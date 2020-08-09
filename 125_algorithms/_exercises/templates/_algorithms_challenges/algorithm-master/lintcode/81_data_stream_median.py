@@ -15,7 +15,7 @@ class Solution:
         maxheap = []
         median = 0
 
-        for num in nums:
+        ___ num in nums:
             __ num < median:
                 heapq.heappush(maxheap, -num)
             ____

@@ -20,7 +20,7 @@ class Solution:
         dummy = tail = ListNode(-1)
         heap = []
 
-        for i in range(le.(lists)):
+        ___ i in range(le.(lists)):
             __ not lists[i]:
                 continue
 

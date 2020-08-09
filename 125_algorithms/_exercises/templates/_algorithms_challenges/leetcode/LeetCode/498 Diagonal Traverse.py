@@ -30,13 +30,13 @@ class Solution:
             r_ []
 
         R, C = le.(matrix), le.(matrix[0])
-        F = [[] for _ in range(R+C-1)]
-        for r in range(R
-            for c in range(C
+        F = [[] ___ _ in range(R+C-1)]
+        ___ r in range(R
+            ___ c in range(C
                 F[r+c].append(matrix[r][c])
 
         ret = []
-        for i in range(R+C-1
+        ___ i in range(R+C-1
             __ i % 2 __ 1:
                 ret.extend(F[i])
             ____

@@ -5,7 +5,7 @@
 ___ breaking_records(score
     min = max = score[0]
     min_count = max_count = 0
-    for i in score[1:]:
+    ___ i in score[1:]:
         __ i > max:
             max_count += 1
             max = i

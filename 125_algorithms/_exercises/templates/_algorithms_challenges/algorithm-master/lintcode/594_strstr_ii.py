@@ -57,7 +57,7 @@ class Solution:
 
         p = 1  # `p == MG ** (n - 1)`
         tcode = 0  # the code of T
-        for i in range(n
+        ___ i in range(n
             tcode = (tcode * MG + ord(T[i]) - A) % MOD
 
             __ i __ 0:
@@ -68,7 +68,7 @@ class Solution:
             p = (p * MG) % MOD
 
         _code = 0
-        for i in range(m
+        ___ i in range(m
             """
             kick out `S[i - n]`
             """

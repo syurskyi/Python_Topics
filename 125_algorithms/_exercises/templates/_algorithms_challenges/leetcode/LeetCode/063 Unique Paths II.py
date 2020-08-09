@@ -32,12 +32,12 @@ class Solution:
         __ obstacleGrid[0][0]__1 or obstacleGrid[m-1][n-1]__1:
             r_ 0
 
-        path = [[0 for _ in range(n)] for _ in range(m)]  # possible to optimize by [[0 for _ in range(n+1)]]
+        path = [[0 ___ _ in range(n)] ___ _ in range(m)]  # possible to optimize by [[0 for _ in range(n+1)]]
         path[0][0] = 1 # start
 
         # path[i][j] = path[i-1][j] + path[i][j-1]
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ i__0 and j__0:
                     continue
                 __ i__0:

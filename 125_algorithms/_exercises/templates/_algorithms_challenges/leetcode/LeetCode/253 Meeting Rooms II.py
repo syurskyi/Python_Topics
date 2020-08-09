@@ -26,7 +26,7 @@ class Solution(object
 
         intervals.sort(key=operator.attrgetter("start"))
         h_end = []
-        for itvl in intervals:
+        ___ itvl in intervals:
             heapq.heappush(h_end, itvl.end)
             w___ h_end and h_end[0] <= itvl.start:
                 heapq.heappop(h_end)

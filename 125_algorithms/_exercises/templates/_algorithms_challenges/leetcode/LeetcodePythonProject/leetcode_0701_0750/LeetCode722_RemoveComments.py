@@ -13,7 +13,7 @@ class Solution(object
         isComment = False
         isLineComment = False
         line = ''
-        for src in source:
+        ___ src in source:
             j = 0
             isLineComment = False
             w___ j < le.(src
@@ -88,7 +88,7 @@ class Solution(object
                 "d//*e/*/f"
             ],
         ]
-        for source in testCases:
+        ___ source in testCases:
             print('source: %s' % source)
             result = self.removeComments(source)
             print('result: %s' % result)

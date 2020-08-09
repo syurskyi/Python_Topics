@@ -9,7 +9,7 @@ class Solution:
 
         n = le.(A)
         L, R, C = {}, {}, {}
-        for i in range(n
+        ___ i in range(n
             __ A[i] not in L:
                 L[A[i]] = i
             R[A[i]] = i
@@ -17,7 +17,7 @@ class Solution:
 
         ans = le.(A)
         degree = max(C.values())
-        for a, c in C.items(
+        ___ a, c in C.items(
             __ c __ degree and R[a] - L[a] + 1 < ans:
                 ans = R[a] - L[a] + 1
 

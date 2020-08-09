@@ -18,7 +18,7 @@ class Solution(object
         __ startInd __ le.(s
             result.append(list(elem))
             r_
-        for i in range(startInd, le.(s)):
+        ___ i in range(startInd, le.(s)):
             __ self.isPalindrome(s[startInd:i+1]
                 elem.append(s[startInd:i+1])
                 self.helper(s, i+1, elem, result)
@@ -40,7 +40,7 @@ class Solution(object
             'aabbcc',
             'abcba',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.partition(s)
             print('result: %s' % (result))

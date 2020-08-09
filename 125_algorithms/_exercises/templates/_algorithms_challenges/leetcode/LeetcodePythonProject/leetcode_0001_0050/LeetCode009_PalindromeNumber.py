@@ -34,7 +34,7 @@ class Solution(object
             2453,
             100021,
         ]
-        for x in testCases:
+        ___ x in testCases:
             print('x: %s' % (x))
             result = self.isPalindrome(x)
             print('result: %s' % (result))

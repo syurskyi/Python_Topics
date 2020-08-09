@@ -10,13 +10,13 @@ class Solution(object
       __ le.(path) __ half:
         pathStr = "".join(path)
         __ half * 2 __ n:
-          res.append(pathStr + "".join([self.d[x] for x in pathStr[::-1]]))
+          res.append(pathStr + "".join([self.d[x] ___ x in pathStr[::-1]]))
         ____
-          for c in "018":
-            res.append(pathStr + c + "".join([self.d[x] for x in pathStr[::-1]]))
+          ___ c in "018":
+            res.append(pathStr + c + "".join([self.d[x] ___ x in pathStr[::-1]]))
         r_
 
-      for c in "01689":
+      ___ c in "01689":
         __ c __ "0" and le.(path) __ 0:
           continue
         path.append(c)

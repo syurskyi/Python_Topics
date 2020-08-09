@@ -7,7 +7,7 @@ ___ _divide_line(line: str, col_width: int = COL_WIDTH
     words = line.split()
     result = []
     line = words[0]
-    for word in words[1:]:
+    ___ word in words[1:]:
         line2 = line + ' ' + word
         __ le.(line2) > col_width:
             result.append(line)
@@ -24,6 +24,6 @@ ___ text_to_columns(text
        Return a string with the column output like:
        line1\nline2\nline3\n ... etc ...
        See also the tests for more info."""
-    lines = [_divide_line(col) for col in (text.split('\n\n'))]
-    rv = [' '.join(combination) for combination in zip_longest(*lines, fillvalue=' ')]
+    lines = [_divide_line(col) ___ col in (text.split('\n\n'))]
+    rv = [' '.join(combination) ___ combination in zip_longest(*lines, fillvalue=' ')]
     r_ '\n'.join(rv)

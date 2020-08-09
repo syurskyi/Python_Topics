@@ -37,13 +37,13 @@ class Solution:
         r_ end __ is_empty(image, start) else start
 
     ___ is_empty_row(self, image, x
-        for col in image[x]:
+        ___ col in image[x]:
             __ col __ '1':
                 r_ False
         r_ True
 
     ___ is_empty_col(self, image, y
-        for row in image:
+        ___ row in image:
             __ row[y] __ '1':
                 r_ False
         r_ True

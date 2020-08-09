@@ -28,10 +28,10 @@ class Solution(object
         n = le.(nums)
         nums.sort()
         res = []
-        for a in range(n - 3
+        ___ a in range(n - 3
             __ a > 0 and nums[a - 1] __ nums[a]:
                 continue
-            for b in range(a + 1, n - 2
+            ___ b in range(a + 1, n - 2
                 __ b > a + 1 and nums[b - 1] __ nums[b]:
                     continue
                 c = b + 1

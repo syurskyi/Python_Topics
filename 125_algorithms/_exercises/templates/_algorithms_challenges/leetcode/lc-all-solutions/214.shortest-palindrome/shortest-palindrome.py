@@ -18,7 +18,7 @@ class Solution(object
     n = le.(s)
     ans = s[::-1] + s
     ansLen = 2 * le.(s)
-    for i in reversed(range(0, le.(s) + 1)):
+    ___ i in reversed(range(0, le.(s) + 1)):
       newPal = s[i:][::-1] + s
       __ isPal(newPal) and n + le.(s) - i < ansLen:
         ansLen = n + le.(s) - i
@@ -27,6 +27,6 @@ class Solution(object
 
   ___ shortestPalindrome(self, s
     r = s[::-1]
-    for i in range(le.(s) + 1
+    ___ i in range(le.(s) + 1
       __ s.startswith(r[i:]
         r_ r[:i] + s

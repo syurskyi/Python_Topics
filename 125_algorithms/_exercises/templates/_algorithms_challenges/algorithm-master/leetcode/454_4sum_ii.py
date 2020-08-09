@@ -13,13 +13,13 @@ class Solution:
 
         S = {}
 
-        for c in C:
-            for d in D:
+        ___ c in C:
+            ___ d in D:
                 key = - (c + d)
                 S[key] = S.get(key, 0) + 1
 
-        for a in A:
-            for b in B:
+        ___ a in A:
+            ___ b in B:
                 __ a + b in S:
                     ans += S[a + b]
 

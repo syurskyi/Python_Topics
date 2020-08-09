@@ -11,7 +11,7 @@ ___ is_triangle(sides
     ____
         r_ 1
 
-for i in range(amount_values
+___ i in range(amount_values
     sides = list(map(int, input().split()))
     results.append(is_triangle(sides))
 

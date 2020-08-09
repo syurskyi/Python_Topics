@@ -17,7 +17,7 @@ class Solution:
     # @return {string}
     ___ largestNumber_python2(self, nums
         #python 2 only
-        num = [str(x) for x in nums]
+        num = [str(x) ___ x in nums]
 #         num.sort(cmp=lambda x, y: cmp(y+x, x+y))
         r_ ''.join(num).lstrip('0') or '0'
     
@@ -25,7 +25,7 @@ class Solution:
         testCases = [
             [3, 30, 34, 5, 9],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.largestNumber(nums)
             print('result: %s' % (result))

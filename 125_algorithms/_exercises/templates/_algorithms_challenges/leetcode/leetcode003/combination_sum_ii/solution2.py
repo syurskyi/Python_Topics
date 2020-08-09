@@ -14,7 +14,7 @@ class Solution:
             res.append(cand[:])
         ____
             prev = None
-            for i, c in enumerate(candidates
+            ___ i, c in enumerate(candidates
                 __ prev is None or prev != c:
                     __ target - c >= 0:
                         cand.append(c)

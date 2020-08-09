@@ -11,18 +11,18 @@ class Solution(object
         :rtype: List[List[str]]
         """
         hashmap = {}
-        for s in strs:
+        ___ s in strs:
             arr = [0]*26
-            for c in s:
+            ___ c in s:
                 arr[ord(c)-ord('a')]+=1
-            arr = [str(num) for num in arr]
+            arr = [str(num) ___ num in arr]
             key = ''.join(arr)
             __ key in hashmap:
                 hashmap[key].append(s)
             ____
                 hashmap[key] = [s]
         res = []
-        for value in hashmap.values(
+        ___ value in hashmap.values(
             res.append(value)
         r_ res
     

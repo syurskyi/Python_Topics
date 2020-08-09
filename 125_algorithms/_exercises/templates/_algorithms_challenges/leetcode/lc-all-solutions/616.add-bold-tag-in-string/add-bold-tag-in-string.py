@@ -7,7 +7,7 @@ class Solution(object
     """
     intervals = []
     ans = []
-    for word in dict:
+    ___ word in dict:
       start = 0
       loc = s.find(word, start)
       w___ loc != -1:
@@ -17,7 +17,7 @@ class Solution(object
 
     intervals = self.merge(intervals)
     d = {}
-    for start, end in intervals:
+    ___ start, end in intervals:
       d[start] = end
     i = 0
     w___ i < le.(s
@@ -31,7 +31,7 @@ class Solution(object
 
   ___ merge(self, intervals
     ans = []
-    for intv in sorted(intervals, key=lambda x: x[0]
+    ___ intv in sorted(intervals, key=lambda x: x[0]
       __ ans and ans[-1][1] + 1 >= intv[0]:
         ans[-1][1] = max(ans[-1][1], intv[1])
       ____

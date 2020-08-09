@@ -17,7 +17,7 @@ class Solution:
         n = le.(nums)
         k %= n
         temp = nums[:n-k]
-        for i in xrange(n
+        ___ i in xrange(n
             __ i < k:
                 nums[i] = nums[n-k+i]
             ____

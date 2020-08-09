@@ -11,9 +11,9 @@ class Solution(object
         """
         __ numRows <= 0: r_ []
         res = [[1]]
-        for i in range(1, numRows
+        ___ i in range(1, numRows
             tmp = []
-            for j in range(i+1
+            ___ j in range(i+1
                 __ j __ 0 or j __ i:
                     tmp.append(1)
                 ____

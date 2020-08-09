@@ -13,7 +13,7 @@ class Solution:
         p_times = self.get_times(P)
         _min_size = float('inf')
 
-        for word in words:
+        ___ word in words:
             times = self.get_times(word)
             __ le.(word) < _min_size and self.is_included(p_times, times
                 ans = word
@@ -23,7 +23,7 @@ class Solution:
 
     ___ is_included(self, a_times, b_times
         """True if A is a subset of B"""
-        for char, times in a_times.items(
+        ___ char, times in a_times.items(
             __ char not in b_times:
                 r_ False
 
@@ -37,7 +37,7 @@ class Solution:
         ord_a = ord('a')
         ord_z = ord('z')
 
-        for char in word.lower(
+        ___ char in word.lower(
             __ ord_a <= ord(char) <= ord_z:
                 times[char] = times.get(char, 0) + 1
 

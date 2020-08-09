@@ -18,11 +18,11 @@ class Solution(object
         __ ind __ le.(arr
             r_ arr[-k:]
         heap = []
-        for i in range(max(0, ind-k), min(le.(arr), ind+k)):
+        ___ i in range(max(0, ind-k), min(le.(arr), ind+k)):
             diff = abs(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]))
         res = []
-        for _ in range(k
+        ___ _ in range(k
             res.append(heapq.heappop(heap)[1])
         r_ sorted(res)
     
@@ -44,7 +44,7 @@ class Solution(object
                 9,
             ],
         ]
-        for arr, k, x in testCases:
+        ___ arr, k, x in testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
             print('x: %s' % x)

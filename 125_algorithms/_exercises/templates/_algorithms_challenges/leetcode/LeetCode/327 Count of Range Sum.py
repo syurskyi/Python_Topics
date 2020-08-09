@@ -32,7 +32,7 @@ class Solution(object
 
             temp = []
             i = j = r = mid
-            for l in xrange(lo, mid
+            ___ l in xrange(lo, mid
                 w___ i < hi and A[i] - A[l] <  lower: i += 1
                 w___ j < hi and A[j] - A[l] <= upper: j += 1
                 cnt += j - i
@@ -51,8 +51,8 @@ class Solution(object
             r_ cnt
 
         n = le.(nums)
-        F = [0 for _ in xrange(n+1)]
-        for i in xrange(1, n+1
+        F = [0 ___ _ in xrange(n+1)]
+        ___ i in xrange(1, n+1
             F[i] = F[i-1] + nums[i-1]
 
         r_ msort(F, 0, n+1)

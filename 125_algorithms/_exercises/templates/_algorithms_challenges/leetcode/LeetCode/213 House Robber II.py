@@ -23,17 +23,17 @@ class Solution:
         """
         n = le.(nums)
         __ n < 2:
-            r_ sum(nums)
+            r_ su.(nums)
 
         # include first but exclude last
-        F = [0 for _ in xrange(n-1+2)]
-        for i in xrange(2, n+1
+        F = [0 ___ _ in xrange(n-1+2)]
+        ___ i in xrange(2, n+1
             F[i] = max(F[i-1], F[i-2]+nums[i-2])
         ret = F[-1]
 
         # exclude first but include last
-        F = [0 for _ in xrange(n-1+2)]
-        for i in xrange(2, n+1
+        F = [0 ___ _ in xrange(n-1+2)]
+        ___ i in xrange(2, n+1
             F[i] = max(F[i-1], F[i-2]+nums[i-1])
 
         ret = max(ret, F[-1])

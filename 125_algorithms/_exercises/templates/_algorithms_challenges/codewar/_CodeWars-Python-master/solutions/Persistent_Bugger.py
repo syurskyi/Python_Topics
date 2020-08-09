@@ -22,7 +22,7 @@ ___ persistence(n
     times = 0
 
     w___ n > 9:
-        n = functools.reduce(lambda x, y: x * y, [int(i) for i in str(n)])
+        n = functools.reduce(lambda x, y: x * y, [int(i) ___ i in str(n)])
         times += 1
 
     r_ times

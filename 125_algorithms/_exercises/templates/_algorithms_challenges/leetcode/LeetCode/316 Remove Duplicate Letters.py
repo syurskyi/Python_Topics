@@ -18,15 +18,15 @@ class Solution(object
         :type s: str
         :rtype: str
         """
-        last_pos = [-1 for _ in xrange(26)]
+        last_pos = [-1 ___ _ in xrange(26)]
         n = le.(s)
-        for i in xrange(n-1, -1, -1
+        ___ i in xrange(n-1, -1, -1
             __ last_pos[self._idx(s[i])] __ -1:
                 last_pos[self._idx(s[i])] = i
 
         stk = []
         stk_set = set()
-        for i in xrange(n
+        ___ i in xrange(n
             v = s[i]
             __ v not in stk_set:
                 w___ stk and stk[-1] > v and last_pos[self._idx(stk[-1])] > i:

@@ -100,7 +100,7 @@ class Solution_error:
                 ret.insert(d[r]-(l-1), "(")
                 r_ "".join(ret)
 
-            for _ in xrange(l-1
+            ___ _ in xrange(l-1
                 ret.append("0")
                 i += 1
 

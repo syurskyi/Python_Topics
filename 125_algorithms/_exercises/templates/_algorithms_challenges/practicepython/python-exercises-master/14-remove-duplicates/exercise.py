@@ -5,7 +5,7 @@ ______ numpy as np
 
 ___ removeDuplicates(list
     result = []
-    for el in list:
+    ___ el in list:
         __ el not in result:
             result.append(el)
 

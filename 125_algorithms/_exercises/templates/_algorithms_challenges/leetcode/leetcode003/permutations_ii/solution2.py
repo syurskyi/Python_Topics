@@ -21,11 +21,11 @@ class Solution(object
         ____
             res = []
             prev = None
-            for i, e in enumerate(nums
+            ___ i, e in enumerate(nums
                 __ prev is None or prev != e:
                     rest = nums[:i] + nums[i + 1:]
                     rest_perms = self.permute(rest)
-                    for perm in rest_perms:
+                    ___ perm in rest_perms:
                         perm.append(e)
                     res += rest_perms
                     prev = e

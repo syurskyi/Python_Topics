@@ -20,7 +20,7 @@ class Solution(object
         __ not root: r_ 0
         res = []
         self.helper(root, str(root.val), res)
-        resNum = sum([int(val) for val in res])
+        resNum = su.([int(val) ___ val in res])
         r_ resNum
         
     ___ helper(self, root, curr, res

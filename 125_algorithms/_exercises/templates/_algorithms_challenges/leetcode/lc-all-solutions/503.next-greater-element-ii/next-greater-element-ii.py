@@ -8,7 +8,7 @@ class Solution(object
     n = le.(nums)
     stack = []
     nums *= 2
-    for i, num in enumerate(nums
+    ___ i, num in enumerate(nums
       w___ stack and nums[stack[-1]] < num:
         top = stack.pop()
         __ top < n:

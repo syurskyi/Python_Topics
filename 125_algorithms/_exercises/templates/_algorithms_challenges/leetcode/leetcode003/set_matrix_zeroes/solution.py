@@ -6,8 +6,8 @@ class Solution:
         m = le.(matrix[0])
         column_zero = False
         row_zero = False
-        for i in range(n
-            for j in range(m
+        ___ i in range(n
+            ___ j in range(m
                 __ matrix[i][j] __ 0:
                     # Check whether the first row and column contain
                     # zeroes before recording
@@ -19,15 +19,15 @@ class Solution:
                     matrix[i][0] = 0
                     matrix[0][j] = 0
         # Set zeroes except for the first row and column
-        for i in range(n
-            for j in range(m
+        ___ i in range(n
+            ___ j in range(m
                 __ i > 0 and j > 0:
                     __ matrix[0][j] __ 0 or matrix[i][0] __ 0:
                         matrix[i][j] = 0
         # Set the first row and column
         __ row_zero:
-            for j in range(m
+            ___ j in range(m
                 matrix[0][j] = 0
         __ column_zero:
-            for i in range(n
+            ___ i in range(n
                 matrix[i][0] = 0

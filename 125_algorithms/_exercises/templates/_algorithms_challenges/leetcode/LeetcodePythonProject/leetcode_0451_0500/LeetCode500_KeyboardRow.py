@@ -15,11 +15,11 @@ class Solution(object
         set3 = set(list('zxcvbnm'))
         sets = (set1, set2, set3)
         result = []
-        for word in words:
+        ___ word in words:
             ind = -1
             valid = True
-            for c in word:
-                for i, set0 in enumerate(sets
+            ___ c in word:
+                ___ i, set0 in enumerate(sets
                     __ c.lower() in set0:
                         __ ind __ -1:
                             ind = i

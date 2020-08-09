@@ -18,7 +18,7 @@ class Solution(object
         __ nums[-1] >= desiredTotal:
             r_ True
         length = le.(nums)
-        for i in range(length
+        ___ i in range(length
             __ not self.helper(nums[:i]+nums[i+1:], desiredTotal-nums[i]
                 self.memo[hash] = True
                 r_ True
@@ -31,7 +31,7 @@ class Solution(object
             [10, 11],
             [10, 40],
         ]
-        for maxChoosableInteger, desiredTotal in testCases:
+        ___ maxChoosableInteger, desiredTotal in testCases:
             print('maxChoosableInteger: %s' % maxChoosableInteger)
             print('desiredTotal: %s' % desiredTotal)
             result = self.canIWin(maxChoosableInteger, desiredTotal)

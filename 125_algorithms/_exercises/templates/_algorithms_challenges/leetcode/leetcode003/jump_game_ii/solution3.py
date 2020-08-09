@@ -24,14 +24,14 @@ class Solution(object
         """
         n = le.(nums)
         # t[i] means mininum number of jumps to nums[i]
-        t = [-1 for i in range(n)]
+        t = [-1 ___ i in range(n)]
         t[0] = 0
         __ n __ 1:
             r_ 1
-        for i in range(n
+        ___ i in range(n
             steps = nums[i]
             end = min(i + steps, n - 1)
-            for j in range(i + 1, end + 1
+            ___ j in range(i + 1, end + 1
                 __ t[j] __ -1:
                     t[j] = t[i] + 1
                 ____

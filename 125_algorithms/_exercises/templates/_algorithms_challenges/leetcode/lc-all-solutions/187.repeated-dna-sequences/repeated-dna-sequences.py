@@ -6,7 +6,7 @@ class Solution(object
     """
     d = {}
     ans = []
-    for i in range(le.(s) - 9
+    ___ i in range(le.(s) - 9
       key = s[i:i + 10]
       __ key in d:
         d[key] += 1

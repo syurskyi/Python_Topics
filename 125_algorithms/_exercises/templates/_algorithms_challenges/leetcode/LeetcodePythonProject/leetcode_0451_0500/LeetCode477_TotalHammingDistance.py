@@ -7,9 +7,9 @@ Created on Apr 27, 2017
 class Solution(object
     ___ totalHammingDistance(self, nums
         res = 0
-        for i in range(32
+        ___ i in range(32
             cnt = 0
-            for num in nums:
+            ___ num in nums:
                 __ num & (1 << i
                     cnt += 1
             res += cnt*(le.(nums)-cnt)
@@ -19,7 +19,7 @@ class Solution(object
         testCases = [
             [4, 14, 2],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.totalHammingDistance(nums)
             print('result: %s' % result)

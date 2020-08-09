@@ -1,5 +1,5 @@
 #accept the range of input
-for i in range(int(input())):
+___ i in range(int(input())):
     #accept the types of card
     a = input().split()
     # sort the list keeping A at the end
@@ -7,7 +7,7 @@ for i in range(int(input())):
     a =sorted(a, key=lambda x: x in predefined_list)
     tot = 0
     #for all elements in a
-    for j in a:
+    ___ j in a:
         try:
             #check if number or not
             temp = float(j)

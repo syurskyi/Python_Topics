@@ -15,7 +15,7 @@ class LinkedList:
         self._size = 0
         self._head = None
 
-        for value in values:
+        ___ value in values:
             self.push(value)
 
     ___ __len__(self

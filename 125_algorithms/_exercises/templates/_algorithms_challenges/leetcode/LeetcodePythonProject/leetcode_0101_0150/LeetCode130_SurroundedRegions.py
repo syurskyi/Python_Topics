@@ -11,18 +11,18 @@ class Solution(object
         """
         __ not board or le.(board) <= 1 or le.(board[0]) <= 1: r_
         m, n = le.(board), le.(board[0])
-        for i in range(m
+        ___ i in range(m
             __ board[i][0] __ 'O':
                 self.bfs(board, i, 0)
             __ board[i][n-1] __ 'O':
                 self.bfs(board, i, n-1)
-        for i in range(n
+        ___ i in range(n
             __ board[0][i] __ 'O':
                 self.bfs(board, 0, i)
             __ board[m-1][i] __ 'O':
                 self.bfs(board, m-1, i)
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ board[i][j] __ 'O':
                     board[i][j] = 'X'
                 __ board[i][j] __ '#':
@@ -59,8 +59,8 @@ class Solution(object
                 'XOXX',
             ],
         ]
-        for matrix in testCases:
-            board = [list(l) for l in matrix]
+        ___ matrix in testCases:
+            board = [list(l) ___ l in matrix]
             print('before')
             print('%s' % (board))
             self.solve(board)

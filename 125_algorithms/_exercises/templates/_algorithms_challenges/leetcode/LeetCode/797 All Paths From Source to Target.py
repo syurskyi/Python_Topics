@@ -28,7 +28,7 @@ class Solution:
     ___ allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
         G = graph
         ret = []
-        visited = [False for _ in G]
+        visited = [False ___ _ in G]
         self.dfs(G, 0, le.(G) - 1, [0], visited, ret)
         r_ ret
 
@@ -37,7 +37,7 @@ class Solution:
             ret.append(list(cur_path))
             r_
 
-        for nbr in G[cur]:
+        ___ nbr in G[cur]:
             __ not visited[nbr]:
                 visited[nbr] = True
                 cur_path.append(nbr)

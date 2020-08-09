@@ -9,17 +9,17 @@ class Solution(object
     row1 = "qwertyuiop"
     row2 = "asdfghjkl"
     row3 = "zxcvbnm"
-    for r in row1:
+    ___ r in row1:
       d[r] = 1.0
-    for r in row2:
+    ___ r in row2:
       d[r] = 2.0
-    for r in row3:
+    ___ r in row3:
       d[r] = 3.0
 
-    for word in words:
+    ___ word in words:
       same = True
       pre = d[word[0].lower()]
-      for c in word:
+      ___ c in word:
         __ pre != d[c.lower()]:
           same = False
           break

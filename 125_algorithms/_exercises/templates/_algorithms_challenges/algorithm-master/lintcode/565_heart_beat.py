@@ -29,6 +29,6 @@ class HeartBeat:
         __ not timestamp:
             r_ []
         r_ [ ip
-            for ip, t0 in self.slaves_ip_list.items()
+            ___ ip, t0 in self.slaves_ip_list.items()
             __ timestamp - t0 >= self.ttl
         ]

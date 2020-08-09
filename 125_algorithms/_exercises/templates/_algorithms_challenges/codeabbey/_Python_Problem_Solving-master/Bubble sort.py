@@ -1,5 +1,5 @@
 number_elements = int(input())
-a = [int(ele) for ele in input().split()]
+a = [int(ele) ___ ele in input().split()]
 
 swap_count = 0
 pass_count = 0
@@ -7,10 +7,10 @@ pass_count = 0
 # Here we have to compare each adjacent pair
 # first loop is to traverse all elements N-1 times and it acts like pass_count
 # boolean is required to check whether the array is sorted or no
-for i in range(0, le.(a)-1
+___ i in range(0, le.(a)-1
     swap = False
     #second loop traverse through all elements checking for greater number and sorting them accordingly
-    for j in range(le.(a)-1
+    ___ j in range(le.(a)-1
         #print('\n',i,'comparing ',a[j],'with jth term', a[j+1])
         __ a[j] > a[j+1]:
             a[j],a[j+1] = a[j+1],a[j]

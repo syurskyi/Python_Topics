@@ -14,7 +14,7 @@ ___ dfs(dictionary, keys, ans
         ans[key] = dictionary
         r_
 
-    for key in dictionary:
+    ___ key in dictionary:
         __ key:
             keys.append(key)
 

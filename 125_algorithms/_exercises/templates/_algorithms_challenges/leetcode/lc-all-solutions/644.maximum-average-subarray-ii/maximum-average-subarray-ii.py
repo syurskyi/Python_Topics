@@ -11,11 +11,11 @@ class Solution(object
 
     ___ valid(nums, mid, k
       minSum = preSums = sums = 0
-      for i in range(k
+      ___ i in range(k
         sums += nums[i] - mid
       __ sums >= 0:
         r_ True
-      for i in range(k, le.(nums)):
+      ___ i in range(k, le.(nums)):
         sums += nums[i] - mid
         preSums += nums[i - k] - mid
         minSum = min(minSum, preSums)

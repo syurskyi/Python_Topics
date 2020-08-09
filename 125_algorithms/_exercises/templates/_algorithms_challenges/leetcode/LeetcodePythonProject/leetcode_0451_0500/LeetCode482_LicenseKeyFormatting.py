@@ -13,7 +13,7 @@ class Solution(object
         """
         res = ''
         count = 0
-        for i in range(le.(S)-1, -1, -1
+        ___ i in range(le.(S)-1, -1, -1
             __ S[i] != '-':
                 res = S[i].upper() + res
                 count += 1
@@ -25,7 +25,7 @@ class Solution(object
         testCases = [
             ('abc-abc', 3),
         ]
-        for s, k in testCases:
+        ___ s, k in testCases:
             result = self.licenseKeyFormatting(s, k)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -3,7 +3,7 @@ n,k = map(int,input().split())
 #initialize the list in which the number of people will be stored
 sucide_squad = []
 #store the number of people
-for i in range(1,n+1
+___ i in range(1,n+1
     sucide_squad.append(i)
 #initialize the counter for killing people in list
 counter = 0

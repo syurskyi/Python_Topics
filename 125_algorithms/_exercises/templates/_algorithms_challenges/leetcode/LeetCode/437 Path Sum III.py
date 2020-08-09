@@ -53,7 +53,7 @@ class Solution:
         
 
 class SolutionComplex:
-    ___ pathSum(self, root, sum
+    ___ pathSum(self, root, su.
         """
         Brute force: two dfs, O(n^2)
 
@@ -63,10 +63,10 @@ class SolutionComplex:
         :rtype: int
         """
         count = [0]  # pass as a reference
-        self.dfs(root, sum, 0, {}, count)
+        self.dfs(root, su., 0, {}, count)
         r_ count[0]
 
-    ___ dfs(self, root, sum, cur_sum, prefix_sum, count
+    ___ dfs(self, root, su., cur_sum, prefix_sum, count
         """
         Root to node sum
         prefix_sum: Dict[int, int], sum -> count
@@ -76,13 +76,13 @@ class SolutionComplex:
 
         cur_sum += root.val
         # ∃ prefix_sum: cur_sum - prefix_sum = sum
-        diff = cur_sum - sum
+        diff = cur_sum - su.
         __ diff in prefix_sum:
             count[0] += prefix_sum[diff]
         __ diff __ 0:  # trivial case
             count[0] += 1
 
         prefix_sum[cur_sum] = prefix_sum.get(cur_sum, 0) + 1
-        self.dfs(root.left, sum, cur_sum, prefix_sum, count)
-        self.dfs(root.right, sum, cur_sum, prefix_sum, count)
+        self.dfs(root.left, su., cur_sum, prefix_sum, count)
+        self.dfs(root.right, su., cur_sum, prefix_sum, count)
         prefix_sum[cur_sum] -= 1  # pop to save space

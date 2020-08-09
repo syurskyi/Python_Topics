@@ -65,7 +65,7 @@ class Solution:
         """
         sentence = " ".join(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
         i = 0
-        for r in range(rows
+        ___ r in range(rows
             i += cols
             w___ sentence[i % le.(sentence)] != " ":
                 i -= 1

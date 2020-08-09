@@ -30,9 +30,9 @@ class Solution(object
         __ numRows __ 2:
             r_ res
         # n is current row index (starting from 0)
-        for n in range(2, numRows
+        ___ n in range(2, numRows
             cur = []
-            for i in range(n + 1
+            ___ i in range(n + 1
                 __ i __ 0:
                     cur.append(1)
                 ____ i __ n:

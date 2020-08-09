@@ -30,9 +30,9 @@ class MapSum:
         from collections ______ defaultdict
 
         class TrieNode:
-            ___ __init__(self, chr, sum, val
+            ___ __init__(self, chr, su., val
                 self.chr = chr
-                self.sum = sum
+                self.su. = su.
                 self.val = val
                 self.children = defaultdict(lambda: None)
 
@@ -50,7 +50,7 @@ class MapSum:
                 ____
                     cur.children[key[i+1]], delta = self.insert(cur.children[key[i+1]], key, i + 1, val)
 
-                cur.sum += delta
+                cur.su. += delta
                 r_ cur, delta
 
         self.trie = Trie()
@@ -59,15 +59,15 @@ class MapSum:
         root = self.trie.root
         root.children[key[0]], _ = self.trie.insert(root.children[key[0]], key, 0, val)
 
-    ___ sum(self, prefix: str) -> int:
+    ___ su.(self, prefix: str) -> int:
         node = self.trie.root
-        for a in prefix:
+        ___ a in prefix:
             __ a not in node.children:
                 r_ 0
 
             node = node.children[a]
 
-        r_ node.sum
+        r_ node.su.
 
 
 class MapSum2:
@@ -81,9 +81,9 @@ class MapSum2:
         update using delta
         """
         class TrieNode:
-            ___ __init__(self, chr, sum, val
+            ___ __init__(self, chr, su., val
                 self.chr = chr
-                self.sum = sum
+                self.su. = su.
                 self.val = val
                 self.children = {}
 
@@ -103,7 +103,7 @@ class MapSum2:
                     delta = val - cur.val
                     cur.val = val
 
-                cur.sum += delta
+                cur.su. += delta
                 r_ cur, delta
 
         self.trie = Trie()
@@ -111,15 +111,15 @@ class MapSum2:
     ___ insert(self, key: str, val: int) -> None:
         self.trie.insert(self.trie.root, key, 0, val)
 
-    ___ sum(self, prefix: str) -> int:
+    ___ su.(self, prefix: str) -> int:
         node = self.trie.root
-        for a in prefix:
+        ___ a in prefix:
             __ a not in node.children:
                 r_ 0
 
             node = node.children[a]
 
-        r_ node.sum
+        r_ node.su.
 
 
 # Your MapSum object will be instantiated and called as such:

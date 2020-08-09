@@ -21,7 +21,7 @@ ___ slice_and_dice(text: str = text) -> list:
        See the Bite description for step by step instructions"""
     results = []
     lines = text.strip()
-    for line in lines.split("\n"
+    ___ line in lines.split("\n"
         l = line.lstrip()
         __ l[:1].islower(
             word = line.split(' ')[-1].rstrip('.!')

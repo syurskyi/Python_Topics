@@ -3,14 +3,14 @@ results = []
 
 ___ get_median(values
     diff = []
-    avg = int(sum(values)//le.(values))
-    for i in values:
+    avg = int(su.(values)//le.(values))
+    ___ i in values:
         diff.append(abs(i-avg))
     
     med = values[diff.index(min(diff))]
     results.append(med)
 
-for i in range(amount_values
+___ i in range(amount_values
     valeus = list(map(int, input().split()))
     get_median(valeus)
 

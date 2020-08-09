@@ -39,7 +39,7 @@ ___ root(x, n
 ___ get_product(x, n
     res = 1
 
-    for _ in range(n
+    ___ _ in range(n
         res *= x
 
     r_ res

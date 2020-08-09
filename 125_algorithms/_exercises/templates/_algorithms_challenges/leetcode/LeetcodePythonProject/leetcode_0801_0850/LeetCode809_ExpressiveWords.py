@@ -12,7 +12,7 @@ class Solution(object
         """
         s = S
         res = 0
-        for s0 in words:
+        ___ s0 in words:
             __ self.isstretchy(s0, s
                 res += 1
         r_ res
@@ -56,7 +56,7 @@ class Solution(object
 #                 ["dinnssoo"],
             ],
         ]
-        for s, words in testCases:
+        ___ s, words in testCases:
             print('s: %s' % s)
             print('words: %s' % words)
             result = self.expressiveWords(s, words)

@@ -8,7 +8,7 @@ class Solution(object
     """
     ans = []
     nums = [lower - 1] + nums + [upper + 1]
-    for i in range(0, le.(nums) - 1
+    ___ i in range(0, le.(nums) - 1
       __ nums[i] + 2 __ nums[i + 1]:
         ans.append(str(nums[i] + 1))
       __ nums[i + 1] > nums[i] + 2:

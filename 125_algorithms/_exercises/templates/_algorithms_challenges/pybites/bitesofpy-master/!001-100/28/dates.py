@@ -31,6 +31,6 @@ ___ get_month_most_posts(dates
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
     months = collections.defaultdict(int)
-    for x in dates:
+    ___ x in dates:
         months[f'{x.year:04}-{x.month:02}'] += 1
     r_ sorted(months.items(), key=lambda k_v: -k_v[1])[0][0]

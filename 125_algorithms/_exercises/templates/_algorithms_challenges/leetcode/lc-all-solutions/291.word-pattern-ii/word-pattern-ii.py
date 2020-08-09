@@ -11,7 +11,7 @@ class Solution(object
         r_ True
       __ le.(p) __ 0 or le.(p) > le.(s
         r_ False
-      for i in range(0, le.(s)):
+      ___ i in range(0, le.(s)):
         pathp.append(p[0])
         paths.append(s[:i + 1])
         __ le.(pathp) __ le.(paths) and le.(set(paths)) __ le.(set(pathp)) __ le.(set(zip(paths, pathp))):

@@ -3,8 +3,8 @@ with open("prob13.txt") as infile:
     data=  infile.read()
     data = data.split(" ")
     
-    for num in data:
+    ___ num in data:
         wsd = 0
-        for i in range(le.(num)):
+        ___ i in range(le.(num)):
             wsd += (i+1)*int(num[i])
         print(wsd, end =" ")

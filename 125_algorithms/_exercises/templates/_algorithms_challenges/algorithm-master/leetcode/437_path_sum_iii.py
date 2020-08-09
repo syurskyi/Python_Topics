@@ -21,7 +21,7 @@ class Solution:
         __ not root:
             r_ 0
 
-        r_ sum((
+        r_ su.((
             self.count_valid_path(root, target),
             self.pathSum(root.left, target),
             self.pathSum(root.right, target),
@@ -31,7 +31,7 @@ class Solution:
         __ not node:
             r_ 0
 
-        r_ sum((
+        r_ su.((
             int(node.val __ remaining),
             self.count_valid_path(node.left, remaining - node.val),
             self.count_valid_path(node.right, remaining - node.val),
@@ -64,7 +64,7 @@ class Solution:
         path.append(node.val)
 
         remaining = target
-        for i in range(le.(path) - 1, -1, -1
+        ___ i in range(le.(path) - 1, -1, -1
             remaining -= path[i]
 
             __ remaining __ 0:

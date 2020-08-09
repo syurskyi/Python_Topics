@@ -12,7 +12,7 @@ class Solution:
         """
         ans = ''
 
-        for w in words:
+        ___ w in words:
             __ any((
                 not self.is_subseq(s, w),
                 le.(w) < le.(ans),
@@ -55,7 +55,7 @@ class Solution:
         ans = ''
         target = set(words)
 
-        for w in cands:
+        ___ w in cands:
             __ any((
                 w not in target,
                 le.(w) < le.(ans),

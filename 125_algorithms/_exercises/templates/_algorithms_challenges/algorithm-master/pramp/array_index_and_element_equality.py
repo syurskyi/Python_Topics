@@ -15,7 +15,7 @@ ___ index_equals_value_search(nums
         ____
             right = mid
 
-    for mid in (left, right
+    ___ mid in (left, right
         __ nums[mid] __ mid:
             r_ mid
 

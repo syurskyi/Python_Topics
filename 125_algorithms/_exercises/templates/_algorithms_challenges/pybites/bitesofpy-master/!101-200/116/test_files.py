@@ -17,10 +17,10 @@ TMP = '/tmp'
 ])
 ___ test_get_files(byte_sizes, size_in_kb, expected
     with TemporaryDirectory(dir=TMP) as dirname:
-        for size in byte_sizes:
+        ___ size in byte_sizes:
             with open(os.path.join(dirname, str(size)), 'wb') as f:
                 f.write(os.urandom(size))
 
-        actual = [os.path.basename(fi) for fi in
+        actual = [os.path.basename(fi) ___ fi in
                   get_files(dirname, size_in_kb)]
         assert sorted(actual) __ sorted(expected)

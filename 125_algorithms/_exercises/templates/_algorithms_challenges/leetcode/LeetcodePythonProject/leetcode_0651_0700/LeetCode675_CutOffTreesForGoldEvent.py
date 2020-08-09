@@ -14,8 +14,8 @@ class Solution(object
         __ not forest or not forest[0]: r_ 0
         m, n = le.(forest), le.(forest[0])
         heap = []
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ forest[i][j] > 1:
                     heapq.heappush(heap, (forest[i][j], i, j))
         sumVal = 0
@@ -30,16 +30,16 @@ class Solution(object
     
     ___ minStep(self, forest, x, y, i, j, h, m, n
         step = 0
-        visited = [[False]*n for _ in range(m)]
+        visited = [[False]*n ___ _ in range(m)]
         visited[x][y] = True
         queue = []
         queue.append((x, y))
         w___ queue:
             size = le.(queue)
-            for _ in range(size
+            ___ _ in range(size
                 i0, j0 = queue.pop(0)
                 __ i0 __ i and j0 __ j: r_ step
-                for i1, j1 in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
+                ___ i1, j1 in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
                     __ i1 < 0 or i1 >= m or j1 < 0 or j1 >= n or\
                         forest[i1][j1] __ 0 or visited[i1][j1]:
                         continue
@@ -73,7 +73,7 @@ class Solution(object
                 [89078499,  18904913,   25462145,   60813308],
             ],
         ]
-        for forest in testCases:
+        ___ forest in testCases:
             print('forest: %s' % forest)
             result = self.cutOffTree(forest)
             print('result: %s' % result)

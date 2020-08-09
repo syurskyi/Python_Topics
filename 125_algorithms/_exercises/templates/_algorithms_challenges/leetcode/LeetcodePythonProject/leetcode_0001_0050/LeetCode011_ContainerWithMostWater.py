@@ -25,7 +25,7 @@ class Solution(object
         testCases = [
             [1, 3, 9, 2],
         ]
-        for height in testCases:
+        ___ height in testCases:
             print('height: %s' % (height))
             result = self.maxArea(height)
             print('result: %s' % (result))

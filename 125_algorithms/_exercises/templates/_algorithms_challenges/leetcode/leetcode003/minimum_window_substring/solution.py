@@ -5,13 +5,13 @@ class Solution:
         t = T
         d = {}
         td = {}
-        for c in t:
+        ___ c in t:
             td[c] = td.get(c, 0) + 1
         left = 0
         right = 0
         lefts = []
         rights = []
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c in td:
                 d[c] = d.get(c, 0) + 1
                 __ self.contains(d, td  # Contains all characters
@@ -30,14 +30,14 @@ class Solution:
         res_left = lefts[0]
         res_right = rights[0]
         n = le.(lefts)
-        for i in range(1, n
+        ___ i in range(1, n
             __ rights[i] - lefts[i] < res_right - res_left:
                 res_left = lefts[i]
                 res_right = rights[i]
         r_ s[res_left:res_right + 1]
 
     ___ contains(self, d, td
-        for k in td:
+        ___ k in td:
             __ k not in d or d[k] < td[k]:
                 r_ False
         r_ True

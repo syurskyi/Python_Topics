@@ -16,7 +16,7 @@ class Solution:
         """
         l_hay = le.(haystack)
         l_ndl = le.(needle)
-        for i in xrange(l_hay-l_ndl+1  # i+l_ndl <= l_hay
+        ___ i in xrange(l_hay-l_ndl+1  # i+l_ndl <= l_hay
             __ haystack[i:i+l_ndl]__needle:
                 r_ haystack[i:]
         r_ None
@@ -42,7 +42,7 @@ class Solution:
                 r_ None
 
         # construct T
-        T = [0 for _ in xrange(ln)]
+        T = [0 ___ _ in xrange(ln)]
         T[0] = -1
         T[1] = 0
         pos = 2

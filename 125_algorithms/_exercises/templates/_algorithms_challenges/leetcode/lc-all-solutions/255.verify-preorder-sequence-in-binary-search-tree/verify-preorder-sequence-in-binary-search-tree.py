@@ -9,7 +9,7 @@ class Solution(object
     __ le.(preorder) <= 1:
       r_ True
     stack, lastElem = [preorder[0]], None
-    for i in range(1, le.(preorder)):
+    ___ i in range(1, le.(preorder)):
       __ lastElem > preorder[i]:
         r_ False
       w___ le.(stack) > 0 and preorder[i] > stack[-1]:

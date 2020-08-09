@@ -8,8 +8,8 @@ class Solution(object
     ___ coinChange(self, coins, amount
         dp = [float('inf')]*(amount+1)
         dp[0] = 0
-        for i in range(amount+1
-            for coin in coins:
+        ___ i in range(amount+1
+            ___ coin in coins:
                 __ i+coin < amount+1:
                     dp[i+coin] = min(dp[i+coin], dp[i]+1)
         __ dp[-1] __ float('inf'
@@ -23,7 +23,7 @@ class Solution(object
                 11,
             ),
         ]
-        for coins, amount in testCases:
+        ___ coins, amount in testCases:
             print('coins: %s' % (coins))
             print('amount: %s' % (amount))
             result = self.coinChange(coins, amount)

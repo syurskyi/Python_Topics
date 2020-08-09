@@ -11,7 +11,7 @@ ___ blue(
 
 ___ test_property_is_cached_timing(blue
     start_time = perf_counter()
-    for _ in range(5
+    ___ _ in range(5
         blue.mass
     end_time = perf_counter()
     elapsed_time = end_time - start_time
@@ -19,9 +19,9 @@ ___ test_property_is_cached_timing(blue
 
 
 ___ test_property_is_cached_value(blue
-    masses = [blue.mass for _ in range(10)]
+    masses = [blue.mass ___ _ in range(10)]
     initial_mass = masses[0]
-    assert all(m __ initial_mass for m in masses)
+    assert all(m __ initial_mass ___ m in masses)
 
 
 ___ test_property_is_immutable(blue

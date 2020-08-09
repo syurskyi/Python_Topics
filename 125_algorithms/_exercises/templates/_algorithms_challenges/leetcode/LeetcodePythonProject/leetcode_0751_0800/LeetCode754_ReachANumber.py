@@ -25,7 +25,7 @@ class Solution(object
             3,
             2,
         ]
-        for target in testCases:
+        ___ target in testCases:
             print('target: %s' % target)
             result = self.reachNumber(target)
             print('result: %s' % result)

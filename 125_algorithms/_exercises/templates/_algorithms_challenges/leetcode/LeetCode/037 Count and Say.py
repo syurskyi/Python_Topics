@@ -17,7 +17,7 @@ class Solution:
         :return: output representation in string
         """
         string = "1"
-        for i in range(1, n
+        ___ i in range(1, n
             string = self.singleCountAndSay(string)
         r_ string
 

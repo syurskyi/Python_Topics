@@ -15,8 +15,8 @@ class Solution(object
             r_ False
         m = le.(board)
         n = le.(board[0])
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ self.helper(board, word, 0, i, j
                     r_ True
         r_ False
@@ -57,7 +57,7 @@ class Solution(object
 #         words = [
 #             'a',
 #         ]
-        for word in words:
+        ___ word in words:
             print('word: %s' % (word))
             result = self.exist(board, word)
             print('result: %s' % (result))

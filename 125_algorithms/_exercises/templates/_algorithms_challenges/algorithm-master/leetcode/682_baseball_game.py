@@ -9,7 +9,7 @@ class Solution:
 
         stack = []
 
-        for op in ops:
+        ___ op in ops:
             __ op __ 'C':
                 stack.pop()
             ____ op __ 'D':
@@ -19,4 +19,4 @@ class Solution:
             ____
                 stack.append(int(op))
 
-        r_ sum(stack)
+        r_ su.(stack)

@@ -24,9 +24,9 @@ class Solution:
         :return: int
         """
         length = le.(ratings)
-        dp = [-1 for _ in xrange(length)]
+        dp = [-1 ___ _ in xrange(length)]
         dp[0] = 1
-        for ind in xrange(1, length
+        ___ ind in xrange(1, length
             val = ratings[ind]
             __ ratings[ind-1]<val:
                 dp[ind] = dp[ind-1]+1
@@ -43,7 +43,7 @@ class Solution:
         __ ratings[length-2]>ratings[length-1]:
             self.re_adjust(ratings, dp, length-1)
 
-        r_ sum(dp)
+        r_ su.(dp)
 
     ___ re_adjust(self, ratings, dp, ind
         # backward adjust

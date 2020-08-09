@@ -66,7 +66,7 @@ class Solution:
         self.minheap = HashHeapq()
         self.maxheap = HashHeapq()
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             # remove nums[i - k]
             __ i >= k:
                 __ self.minheap and nums[i - k] >= self.minheap.top(

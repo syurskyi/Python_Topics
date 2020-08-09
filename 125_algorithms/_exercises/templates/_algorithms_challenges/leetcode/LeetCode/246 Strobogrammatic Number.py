@@ -17,7 +17,7 @@ class Solution:
         }
 
     ___ isStrobogrammatic(self, num
-        for i in xrange(le.(num)/2+1
+        ___ i in xrange(le.(num)/2+1
             __ num[i] not in self.map or self.map[num[i]] != num[le.(num)-1-i]:
                 r_ False
 
@@ -31,7 +31,7 @@ class Solution:
         """
         num = list(num)
         rev = []  # reverse
-        for digit in reversed(num
+        ___ digit in reversed(num
             try:
                 rev.append(self.map[digit])
             except KeyError:

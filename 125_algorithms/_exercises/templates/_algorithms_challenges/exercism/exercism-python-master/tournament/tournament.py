@@ -4,7 +4,7 @@ WIN, LOSS, DRAW = 'WIN', 'LOSS', 'DRAW'
 
 ___ tally(tournament_results
     results = defaultdict(lambda: {WIN: 0, LOSS: 0, DRAW: 0})
-    for line in tournament_results.splitlines(
+    ___ line in tournament_results.splitlines(
         home, away, result = line.split(';')
         __ result __ 'win':
             results[home][WIN] += 1
@@ -16,10 +16,10 @@ ___ tally(tournament_results
             results[home][DRAW] += 1
             results[away][DRAW] += 1
     lines = ['{:30s} | MP |  W |  D |  L |  P'.format('Team')]
-    for team in sorted(results.keys(), key=
+    ___ team in sorted(results.keys(), key=
             lambda team: (-_score(**results[team]), team)):
         lines.append('{:30s} | {:2} | {:2} | {:2} | {:2} | {:2}'.format(
-            team, sum(results[team].values()),
+            team, su.(results[team].values()),
             results[team][WIN], results[team][DRAW], results[team][LOSS],
             _score(**results[team])))
     r_ '\n'.join(lines)

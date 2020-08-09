@@ -28,7 +28,7 @@ You may assume start and end string is not the same.
 class Solution:
     ___ is_neighbor(self, p, q
         diff = 0
-        for a, b in zip(p, q
+        ___ a, b in zip(p, q
             __ a != b:
                 diff += 1
             __ diff > 1:
@@ -51,10 +51,10 @@ class Solution:
         lvl = 0
         w___ q:
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e __ end:
                     r_ lvl
-                for t in bank:
+                ___ t in bank:
                     __ t not in visited and self.is_neighbor(e, t
                         visited.add(t)
                         cur_q.append(t)

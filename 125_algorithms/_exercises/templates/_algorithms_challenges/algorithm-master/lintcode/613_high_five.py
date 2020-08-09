@@ -20,7 +20,7 @@ class Solution:
         k = 5
         top_k = {}
 
-        for r in results:
+        ___ r in results:
             __ r.id not in top_k:
                 top_k[r.id] = []
 
@@ -30,9 +30,9 @@ class Solution:
                 heappop(top_k[r.id])
 
         _sum = 0
-        for id, scores in top_k.items(
+        ___ id, scores in top_k.items(
             _sum = 0
-            for score in scores:
+            ___ score in scores:
                 _sum += score
 
             ans[id] = _sum * 1.0 / k

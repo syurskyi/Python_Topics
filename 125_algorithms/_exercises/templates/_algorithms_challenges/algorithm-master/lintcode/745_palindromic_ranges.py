@@ -13,7 +13,7 @@ class Solution:
         dp = [0] * (right - left + 2)  # n + 1, n = right - left + 1
         # dp[0] = 0
 
-        for num in range(left, right + 1
+        ___ num in range(left, right + 1
             __ self.is_palindrome(num
                 dp[num - left + 1] = dp[num - left] + 1
             ____
@@ -21,8 +21,8 @@ class Solution:
 
         ans = 0
 
-        for i in range(1, right - left + 2
-            for j in range(i
+        ___ i in range(1, right - left + 2
+            ___ j in range(i
                 __ ((dp[i] - dp[j]) & 1 __ 0
                     ans += 1
 

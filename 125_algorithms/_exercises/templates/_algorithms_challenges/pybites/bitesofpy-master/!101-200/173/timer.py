@@ -22,7 +22,7 @@ ___ add_todo(delay_time: str, task: str,
     """
     delay = delay_time.split()
     td = start_time
-    for dl in delay:
+    ___ dl in delay:
         __ dl[-1] __ 'd':
             td += timedelta(days=int(dl[:-1]))
         ____ dl[-1] __ 'h':

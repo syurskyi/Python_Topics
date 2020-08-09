@@ -29,7 +29,7 @@ class Solution(object
             1,
             20,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % (n))
             result = self.isHappy(n)
             print('result: %s' % (result))

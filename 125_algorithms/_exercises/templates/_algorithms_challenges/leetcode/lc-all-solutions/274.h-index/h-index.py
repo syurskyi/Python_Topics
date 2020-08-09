@@ -6,14 +6,14 @@ class Solution(object
     """
     n = le.(citations)
     dp = [0] * (n + 1)
-    for c in citations:
+    ___ c in citations:
       __ c > n:
         dp[n] += 1
       ____
         dp[c] += 1
 
     total = 0
-    for i in reversed(range(1, le.(dp))):
+    ___ i in reversed(range(1, le.(dp))):
       total += dp[i]
       __ total >= i:
         r_ i

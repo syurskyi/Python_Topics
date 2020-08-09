@@ -36,16 +36,16 @@ class Solution:
 
         m = le.(tape)
         n = le.(pattern)
-        dp = [[False for _ in xrange(n+1)] for _ in xrange(m+1)]
+        dp = [[False ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
         # edge cases
         dp[m][n] = True
-        for j in xrange(n-1, -1 , -1
+        ___ j in xrange(n-1, -1 , -1
             __ pattern[j]__"*":
                 dp[m][j] = dp[m][j+1]
 
         # transition
-        for i in xrange(m-1, -1, -1
-            for j in xrange(n-1, -1, -1
+        ___ i in xrange(m-1, -1, -1
+            ___ j in xrange(n-1, -1, -1
                 __ tape[i]__pattern[j] or pattern[j]__"?":
                     dp[i][j] = dp[i+1][j+1]
                 ____ pattern[j]__"*":
@@ -81,18 +81,18 @@ class Solution:
         __ n - list(pattern).count("*") > m:
             r_ False
 
-        dp = [False for _ in xrange(m+1)]
+        dp = [False ___ _ in xrange(m+1)]
         dp[0] = True  # dummy
-        for j in xrange(1, n+1
+        ___ j in xrange(1, n+1
             __ pattern[j-1]__"*":
                 # for i in xrange(m, 0, -1
                 #     dp[i] = any(dp[k] for k in xrange(i))  # Time Complexity
                 k = 0
                 w___ k<m+1 and dp[k]!=True: k+= 1
-                for i in xrange(k, m+1
+                ___ i in xrange(k, m+1
                     dp[i] = True
             ____
-                for i in xrange(m, 0, -1
+                ___ i in xrange(m, 0, -1
                     dp[i] = dp[i-1] and (tape[i-1]__pattern[j-1] or pattern[j-1]__"?")
 
             dp[0] = dp[0] and pattern[j-1]__"*"  # !!, pattern no longer match the empty string

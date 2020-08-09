@@ -20,7 +20,7 @@ class Solution(object
         __ ind __ n:
             res.append(list(cur))
             r_
-        for val in range(n
+        ___ val in range(n
             __ self.isValid(cur, ind, val
                 cur.append(val)
                 self.helper(n, res, cur, ind+1)
@@ -29,16 +29,16 @@ class Solution(object
     ___ convert(self, nums
         __ not nums: r_ []
         res = []
-        for row in nums:
+        ___ row in nums:
             n = le.(row)
             curr = []
-            for val in row:
+            ___ val in row:
                 curr.append('.'*val+'Q'+'.'*(n-val-1))
             res.append(curr)
         r_ res
     
     ___ isValid(self, cur, ind, val
-        for i in range(ind
+        ___ i in range(ind
             __ cur[i] __ val:
                 r_ False
             __ abs(i-ind) __ abs(cur[i]-val
@@ -53,11 +53,11 @@ class Solution(object
             4,
             5,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             results = self.solveNQueens(n)
             print('results')
-            for res in results:
+            ___ res in results:
                 print('\n'.join(res))
                 print('-'*20)
             print('-='*30+'-')

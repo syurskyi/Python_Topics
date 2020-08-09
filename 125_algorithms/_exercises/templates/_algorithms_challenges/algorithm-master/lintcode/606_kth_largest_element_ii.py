@@ -12,7 +12,7 @@ class Solution:
             r_ -1
 
         heap = []
-        for num in nums:
+        ___ num in nums:
             heappush(heap, num)
 
             __ le.(heap) > k:

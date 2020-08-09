@@ -11,16 +11,16 @@ class Solution:
             r_ ans
 
         indeg = [0] * n
-        edges = [[] for _ in range(n)]
+        edges = [[] ___ _ in range(n)]
 
-        for c, p in prerequisites:
+        ___ c, p in prerequisites:
             indeg[c] += 1
             edges[p].append(c)
 
-        queue = [c for c in range(n) __ indeg[c] __ 0]
+        queue = [c ___ c in range(n) __ indeg[c] __ 0]
 
-        for p in queue:
-            for c in edges[p]:
+        ___ p in queue:
+            ___ c in edges[p]:
                 indeg[c] -= 1
 
                 __ indeg[c] __ 0:

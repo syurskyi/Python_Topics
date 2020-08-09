@@ -19,7 +19,7 @@ ___ get_tweets(greps=['Python'], goback_days=GOBACK_DEFAULT_DAYS
     doc = get_rss_feed()
 
     # Python cookbook 3rd ed
-    for item in doc.iterfind('channel/item'
+    ___ item in doc.iterfind('channel/item'
         title = item.findtext('title')
         date = item.findtext('pubDate')[:-6]
         dt = datetime.strptime(date, '%a, %d %b %Y %H:%M:%S')
@@ -31,7 +31,7 @@ ___ get_tweets(greps=['Python'], goback_days=GOBACK_DEFAULT_DAYS
 
         __ not any(g.lower() in title.lower()
                    or g.lower() in category.lower()
-                   for g in greps
+                   ___ g in greps
             continue
 
         title = ' '.join(gen_hashtags(title, greps))
@@ -50,8 +50,8 @@ ___ get_rss_feed(
 
 
 ___ gen_hashtags(title, greps
-    for word in title.split(
-        __ any(g.lower() __ word.lower() for g in greps
+    ___ word in title.split(
+        __ any(g.lower() __ word.lower() ___ g in greps
             yield '#' + word
         ____
             yield word
@@ -60,5 +60,5 @@ ___ gen_hashtags(title, greps
 __ __name__ __ '__main__':
 
     filters = 'python security haskell web'.split()
-    for tweet in get_tweets(greps=filters, goback_days=2
+    ___ tweet in get_tweets(greps=filters, goback_days=2
         print(tweet)

@@ -46,7 +46,7 @@ class Solution:
         gmax = -sys.maxint-1
         inc_stack = []  # store the idx, increasing stack
 
-        for i in xrange(n
+        ___ i in xrange(n
             w___ inc_stack and height[inc_stack[-1]] > height[i]:
                 last = inc_stack.pop()
                 __ inc_stack:  # calculate area when popping
@@ -79,10 +79,10 @@ class Solution:
             r_ 0
 
         max_area = -1<<32
-        for ind, val in enumerate(height
+        ___ ind, val in enumerate(height
             min_h = val
             max_area = max(max_area, val*1)
-            for j in xrange(ind, -1, -1
+            ___ j in xrange(ind, -1, -1
                 min_h = min(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 max_area = max(max_area, current_area)
@@ -104,13 +104,13 @@ class Solution:
             r_ 0
 
         global_max = -1<<32
-        for ind, val in enumerate(height
+        ___ ind, val in enumerate(height
             __ ind+1<le.(height) and val<=height[ind+1]:  # PRUNE, find until peak
                 continue
 
             min_h = val
             global_max = max(global_max, min_h*1)
-            for j in xrange(ind, -1, -1  # scanning backward
+            ___ j in xrange(ind, -1, -1  # scanning backward
                 min_h = min(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 global_max = max(global_max, current_area)

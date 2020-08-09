@@ -40,16 +40,16 @@ class Solution:
         """
         m, n = le.(A), le.(A[0])
         F = defaultdict(lambda: defaultdict(lambda: float("inf")))
-        for j in range(n
+        ___ j in range(n
             F[m-1][j] = A[m-1][j]
 
-        for i in range(m-2, -1, -1
-            for j in range(n
+        ___ i in range(m-2, -1, -1
+            ___ j in range(n
                 F[i][j] = min(F[i+1][j-1], F[i+1][j], F[i+1][j+1]) + A[i][j]
 
         r_ min(
             F[0][j]
-            for j in range(n)
+            ___ j in range(n)
         )
 
     ___ minFallingPathSum_std(self, A: List[List[int]]) -> int:
@@ -58,12 +58,12 @@ class Solution:
         let F[i][j] be the min falling path sum at A[i][j]
         """
         m, n = le.(A), le.(A[0])
-        F = [[float('inf') for _ in range(n)] for _ in range(m)]
-        for j in range(n
+        F = [[float('inf') ___ _ in range(n)] ___ _ in range(m)]
+        ___ j in range(n
             F[m-1][j] = A[m-1][j]
 
-        for i in range(m-2, -1, -1
-            for j in range(n
+        ___ i in range(m-2, -1, -1
+            ___ j in range(n
                 F[i][j] = min(F[i][j], F[i+1][j] + A[i][j])
                 __ j - 1 >= 0:
                     F[i][j] = min(F[i][j], F[i+1][j-1] + A[i][j])

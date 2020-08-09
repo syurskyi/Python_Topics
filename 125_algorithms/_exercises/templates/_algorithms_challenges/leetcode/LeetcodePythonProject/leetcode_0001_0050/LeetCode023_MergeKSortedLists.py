@@ -17,7 +17,7 @@ class Solution(object
         """
         ______ heapq
         heap = []
-        for l in lists:
+        ___ l in lists:
             w___ l:
                 heapq.heappush(heap, l.val)
                 l = l.next
@@ -36,7 +36,7 @@ class Solution(object
                 ListNode(-2, ListNode(-2, ListNode(-1))),
             ],
         ]
-        for lists in testCases:
+        ___ lists in testCases:
             node = self.mergeKLists(lists)
             w___ node:
                 print('%s -> ' % node.val, end='')

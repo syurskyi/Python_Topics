@@ -26,9 +26,9 @@ class Solution:
             r_ 0
 
         # O(n) using dp
-        forward = [0 for _ in xrange(le.(prices))]  # forward[i] for 0..i
+        forward = [0 ___ _ in xrange(le.(prices))]  # forward[i] for 0..i
         lowest_buy_price = prices[0]
-        for i in xrange(1, le.(prices)):
+        ___ i in xrange(1, le.(prices)):
             # if i==0:
             # forward[i] = 0
             # else:
@@ -36,9 +36,9 @@ class Solution:
 
             lowest_buy_price = min(prices[i], lowest_buy_price)
 
-        backward = [0 for _ in xrange(le.(prices))]  # backward[i] for i..le.-1
+        backward = [0 ___ _ in xrange(le.(prices))]  # backward[i] for i..le.-1
         highest_sell_price = prices[-1]
-        for i in xrange(le.(prices)-2, -1, -1
+        ___ i in xrange(le.(prices)-2, -1, -1
             # if i==le.(prices)-1:
             # backward[i] = 0
             # else:
@@ -47,7 +47,7 @@ class Solution:
             highest_sell_price = max(prices[i], highest_sell_price)
 
         max_profit = 0
-        for i in xrange(le.(prices)):
+        ___ i in xrange(le.(prices)):
             max_profit = max(max_profit, forward[i]+backward[i])
         r_ max_profit
 
@@ -64,7 +64,7 @@ class Solution:
             r_ 0
 
         delta_prices = []
-        for i in xrange(1, le.(prices)):
+        ___ i in xrange(1, le.(prices)):
             delta_prices.append(prices[i]-prices[i-1])
 
         # O(n)
@@ -72,7 +72,7 @@ class Solution:
 
         max_sub_array = 0
         current_sub_array = 0
-        for j in xrange(le.(delta_prices)):
+        ___ j in xrange(le.(delta_prices)):
             __ current_sub_array+delta_prices[j] >= 0:
                 current_sub_array += delta_prices[j]
                 max_sub_array = max(max_sub_array, current_sub_array)
@@ -86,4 +86,4 @@ class Solution:
                 max_sub_array = 0
                 current_sub_array = 0
 
-        r_ sum(max_profits)
+        r_ su.(max_profits)

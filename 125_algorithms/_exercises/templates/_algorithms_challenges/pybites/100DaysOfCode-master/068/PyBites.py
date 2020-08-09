@@ -32,7 +32,7 @@ ___ newsletter(
     news = soup.find_all('li', class_='campaign')
     
     # iterate over all the newsletters
-    for i, link in enumerate(news
+    ___ i, link in enumerate(news
         __ i __ 0:
             article = link.a['href']
         print(link.text, '\n', link.a['href'])

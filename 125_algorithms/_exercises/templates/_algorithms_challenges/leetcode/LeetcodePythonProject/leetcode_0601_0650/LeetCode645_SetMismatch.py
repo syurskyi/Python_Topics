@@ -13,7 +13,7 @@ class Solution(object
         n = le.(nums)
         sumVal = n*(n+1)//2
         res = []
-        for num in nums:
+        ___ num in nums:
             __ num not in hashset:
                 hashset.add(num)
                 sumVal -= num
@@ -26,7 +26,7 @@ class Solution(object
         testCases = [
             [1, 2, 2, 4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.findErrorNums(nums)
             print('result: %s' % result)

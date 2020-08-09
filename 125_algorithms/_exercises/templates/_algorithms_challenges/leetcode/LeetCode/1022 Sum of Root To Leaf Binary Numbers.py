@@ -51,7 +51,7 @@ class Solution:
         __ not node.left and not node.right:
             # leaf
             cur = 0
-            for a in self.lst:
+            ___ a in self.lst:
                 cur <<= 1
                 cur += a
             self.ret += cur

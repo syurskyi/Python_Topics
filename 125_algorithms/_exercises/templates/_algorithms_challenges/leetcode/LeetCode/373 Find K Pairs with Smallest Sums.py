@@ -66,7 +66,7 @@ class Solution(object
             r_ []
 
         h = []
-        for i in xrange(min(k, le.(nums1))):
+        ___ i in xrange(min(k, le.(nums1))):
             heapq.heappush(h, Node(i, 0))
 
         ret = []
@@ -89,7 +89,7 @@ class Solution(object
         i = 0
         j = 0
         ret = []
-        for _ in xrange(k
+        ___ _ in xrange(k
             __ i < le.(nums1) and j < le.(nums2
                 ret.append([nums1[i], nums2[j]])
                 __ nums1[i] < nums2[j]:

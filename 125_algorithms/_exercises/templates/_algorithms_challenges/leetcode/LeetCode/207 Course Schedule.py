@@ -32,13 +32,13 @@ class Solution:
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        V = [[] for _ in xrange(numCourses)]
-        for edge in prerequisites:
+        V = [[] ___ _ in xrange(numCourses)]
+        ___ edge in prerequisites:
             V[edge[0]].append(edge[1])
 
-        visited = [False for _ in xrange(numCourses)]  # visited and fine (cleared)
-        marked = [False for _ in xrange(numCourses)]  # marked during one dfs
-        for i in xrange(numCourses
+        visited = [False ___ _ in xrange(numCourses)]  # visited and fine (cleared)
+        marked = [False ___ _ in xrange(numCourses)]  # marked during one dfs
+        ___ i in xrange(numCourses
             __ not visited[i]:
                 __ self.dfs_have_cycle(V, i, visited, marked
                     r_ False
@@ -51,7 +51,7 @@ class Solution:
 
         marked[i] = True
 
-        for neighbor in V[i]:
+        ___ neighbor in V[i]:
             __ not visited[neighbor] and self.dfs_have_cycle(V, neighbor, visited, marked
                 r_ True
 

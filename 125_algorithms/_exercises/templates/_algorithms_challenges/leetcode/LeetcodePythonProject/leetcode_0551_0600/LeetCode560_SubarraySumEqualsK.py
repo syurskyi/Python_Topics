@@ -14,7 +14,7 @@ class Solution(object
         hashmap = {0:1}
         sumVal = 0
         res = 0
-        for num in nums:
+        ___ num in nums:
             sumVal += num
             __ sumVal-k in hashmap:
                 res += hashmap[sumVal-k]
@@ -44,7 +44,7 @@ class Solution(object
                 0,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             res = self.subarraySum(nums, k)

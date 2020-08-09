@@ -18,7 +18,7 @@ class Solution(object
         __ nums __ []:
             res.append(list(curr))
             r_
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             curr.append(num)
             self.dfs(nums[:i]+nums[i+1:], curr, res)
             curr.pop()
@@ -27,7 +27,7 @@ class Solution(object
         testCases = [
             [1, 2, 3]
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.permute(nums)
             print('result: %s' % result)

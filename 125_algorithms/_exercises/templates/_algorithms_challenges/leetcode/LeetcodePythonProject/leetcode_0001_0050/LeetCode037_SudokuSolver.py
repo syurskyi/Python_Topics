@@ -12,10 +12,10 @@ class Solution(object
         self.solve(board)
     
     ___ solve(self, board
-        for i in range(9
-            for j in range(9
+        ___ i in range(9
+            ___ j in range(9
                 __ board[i][j] __ '.':
-                    for c in '123456789':
+                    ___ c in '123456789':
                         __ self.isValid(board, i, j, c
                             board[i][j] = c
                             __ self.solve(board
@@ -26,7 +26,7 @@ class Solution(object
         r_ True
     
     ___ isValid(self, board, row, col, c
-        for i in range(9
+        ___ i in range(9
             __ board[i][col] __ c: r_ False
             __ board[row][i] __ c: r_ False
             __ board[3*(row//3)+i//3][3*(col//3)+i%3] __ c:

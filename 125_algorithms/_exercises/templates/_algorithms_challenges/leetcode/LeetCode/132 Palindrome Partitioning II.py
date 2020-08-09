@@ -21,24 +21,24 @@ class Solution(object
         """
         n = le.(s)
 
-        P = [[False for _ in xrange(n+1)] for _ in xrange(n+1)]
-        for i in xrange(n+1  # le. 0
+        P = [[False ___ _ in xrange(n+1)] ___ _ in xrange(n+1)]
+        ___ i in xrange(n+1  # le. 0
             P[i][i] = True
-        for i in xrange(n  # le. 1
+        ___ i in xrange(n  # le. 1
             P[i][i+1] = True
 
-        for i in xrange(n, -1, -1  # le. 2 and above
-            for j in xrange(i+2, n+1
+        ___ i in xrange(n, -1, -1  # le. 2 and above
+            ___ j in xrange(i+2, n+1
                 P[i][j] = P[i+1][j-1] and s[i] __ s[j-1]
 
-        C = [i for i in xrange(n+1)]  # initial values, max is all cut
-        for i in xrange(n+1
+        C = [i ___ i in xrange(n+1)]  # initial values, max is all cut
+        ___ i in xrange(n+1
             __ P[0][i]:
                 C[i] = 0
             ____
                 C[i] = min(
                     C[j] + 1
-                    for j in xrange(i)
+                    ___ j in xrange(i)
                     __ P[j][i]
                 )
 
@@ -81,28 +81,28 @@ class Solution(object
 
         length = le.(s)
         # palindrome dp
-        P = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1
+        P = [[False ___ _ in xrange(length+1)] ___ _ in xrange(length+1)]
+        ___ i in xrange(length+1
             try:
                 P[i][i] = True
                 P[i][i+1] = True
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1
-            for j in xrange(i+2, length+1
+        ___ i in xrange(length, -1, -1
+            ___ j in xrange(i+2, length+1
                 try:
                     P[i][j] = P[i+1][j-1] and s[i] __ s[j-1]
                 except IndexError:
                     P[i][j] = True
 
         # min cut dp
-        D = [length-i-1 for i in xrange(length)]  # max is all cut
-        for i in xrange(length-1, -1, -1
+        D = [length-i-1 ___ i in xrange(length)]  # max is all cut
+        ___ i in xrange(length-1, -1, -1
             __ P[i][length]:
                 D[i] = 0
             ____
-                for j in xrange(i+1, length
+                ___ j in xrange(i+1, length
                     __ P[i][j]:
                         D[i] = min(D[i], D[j]+1)
         r_ D[0]
@@ -119,13 +119,13 @@ class Solution(object
             # cur = q.pop(0)  # not directly pop
             length = le.(q)
             count += 1
-            for cur_level in xrange(length
+            ___ cur_level in xrange(length
                 cur = q[cur_level]
-                __ all(self.is_palindrome(item) for item in cur
+                __ all(self.is_palindrome(item) ___ item in cur
                     r_ count
                 # 1 cut
-                for ind, val in enumerate(cur
-                    for i in xrange(1, le.(val)):
+                ___ ind, val in enumerate(cur
+                    ___ i in xrange(1, le.(val)):
                         cut1 = val[:i]
                         cut2 = val[i:]
                         new_cur = list(cur)
@@ -160,20 +160,20 @@ class Solution(object
             r_ 0
 
         length = le.(s)
-        dp = [[1<<32-1 for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1
+        dp = [[1<<32-1 ___ _ in xrange(length+1)] ___ _ in xrange(length+1)]
+        ___ i in xrange(length+1
             try:
                 dp[i][i] = 0
                 dp[i][i+1] = 0
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1
-            for k in xrange(i, length+1
+        ___ i in xrange(length, -1, -1
+            ___ k in xrange(i, length+1
                 __ self.is_palindrome(s[i:k]
                     dp[i][k] = 0
                 ____
-                    dp[i][k] = min(1+dp[i][j]+dp[j][k] for j in xrange(i+1, k))
+                    dp[i][k] = min(1+dp[i][j]+dp[j][k] ___ j in xrange(i+1, k))
 
         r_ dp[0][length]
 
@@ -211,16 +211,16 @@ class Solution(object
 
         length = le.(s)
         # palindrome dp
-        dp2 = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1
+        dp2 = [[False ___ _ in xrange(length+1)] ___ _ in xrange(length+1)]
+        ___ i in xrange(length+1
             try:
                 dp2[i][i] = True
                 dp2[i][i+1] = True
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1
-            for j in xrange(i+2, length+1
+        ___ i in xrange(length, -1, -1
+            ___ j in xrange(i+2, length+1
                 try:
                     dp2[i][j] = dp2[i+1][j-1] and s[i] __ s[j-1]
                 except IndexError:
@@ -228,20 +228,20 @@ class Solution(object
 
 
         # min cut dp
-        dp = [[1<<32-1 for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1
+        dp = [[1<<32-1 ___ _ in xrange(length+1)] ___ _ in xrange(length+1)]
+        ___ i in xrange(length+1
             try:
                 dp[i][i] = 0
                 dp[i][i+1] = 0
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1
-            for k in xrange(i, length+1
+        ___ i in xrange(length, -1, -1
+            ___ k in xrange(i, length+1
                 __ dp2[i][k]:
                     dp[i][k] = 0
                 ____
-                    dp[i][k] = min(1+dp[i][j]+dp[j][k] for j in xrange(i+1, k))
+                    dp[i][k] = min(1+dp[i][j]+dp[j][k] ___ j in xrange(i+1, k))
 
         r_ dp[0][length]
 

@@ -21,17 +21,17 @@ class Solution:
         num.sort()
         min_summation = 0
 
-        for i, val in enumerate(num
+        ___ i, val in enumerate(num
             j = i+1
             k = le.(num)-1
             w___ j<k:
                 lst = [val, num[j], num[k]]
-                __ min_distance>abs(target-sum(lst)):
-                    min_summation = sum(lst)
-                    __ sum(lst)__target:
+                __ min_distance>abs(target-su.(lst)):
+                    min_summation = su.(lst)
+                    __ su.(lst)__target:
                         r_ min_summation
                     min_distance = abs(target-min_summation)
-                ____ sum(lst)>target:
+                ____ su.(lst)>target:
                     k -= 1
                 ____
                     j += 1

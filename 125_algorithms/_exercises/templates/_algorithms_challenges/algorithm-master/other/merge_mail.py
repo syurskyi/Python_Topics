@@ -21,9 +21,9 @@ ___ merge_mail(data
     owners = {}  # owners
     mail2owners = {}  # mail to owners
 
-    for owner, mails in data.items(
+    ___ owner, mails in data.items(
         find(owners, owner)
-        for mail in mails:
+        ___ mail in mails:
             __ mail not in mail2owners:
                 mail2owners[mail] = owner
                 continue
@@ -32,7 +32,7 @@ ___ merge_mail(data
             )
 
     ans = {}
-    for k, v in owners.items(
+    ___ k, v in owners.items(
         __ v not in ans:
             ans[v] = []
         ans[v].append(k)

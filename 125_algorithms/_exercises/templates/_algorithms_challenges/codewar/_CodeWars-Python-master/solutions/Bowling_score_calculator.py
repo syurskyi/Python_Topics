@@ -10,7 +10,7 @@ ___ bowling_score(rolls
     total = 0
     frame = 0
     newframe = True
-    for index, roll in enumerate(rolls
+    ___ index, roll in enumerate(rolls
         __ frame __ 10:
             break
         __ roll __ 10:

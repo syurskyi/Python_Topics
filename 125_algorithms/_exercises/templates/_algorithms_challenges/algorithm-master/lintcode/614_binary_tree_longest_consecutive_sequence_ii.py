@@ -35,7 +35,7 @@ class Solution:
         size = 1
         up = down = 0
 
-        for branch in ('left', 'right'
+        ___ branch in ('left', 'right'
             child = getattr(node, branch)
 
             __ not child:

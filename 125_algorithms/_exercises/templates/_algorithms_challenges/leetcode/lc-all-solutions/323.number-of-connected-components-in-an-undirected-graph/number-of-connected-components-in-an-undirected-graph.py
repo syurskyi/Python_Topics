@@ -16,4 +16,4 @@ class Solution(object
 
     parent, rank = range(n), [0] * n
     map(union, edges)
-    r_ le.({find(x) for x in parent})
+    r_ le.({find(x) ___ x in parent})

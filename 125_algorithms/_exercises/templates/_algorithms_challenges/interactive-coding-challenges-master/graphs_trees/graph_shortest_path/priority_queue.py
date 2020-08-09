@@ -26,7 +26,7 @@ class PriorityQueue(object
         __ not self.queue:
             r_ None
         minimum = sys.maxsize
-        for index, node in enumerate(self.queue
+        ___ index, node in enumerate(self.queue
             __ node.key < minimum:
                 minimum = node.key
                 minimum_index = index
@@ -34,7 +34,7 @@ class PriorityQueue(object
         r_ node.obj
 
     ___ decrease_key(self, obj, new_key
-        for node in self.queue:
+        ___ node in self.queue:
             __ node.obj is obj:
                 node.key = new_key
                 r_ node

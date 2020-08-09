@@ -9,7 +9,7 @@ class Solution:
         """
         ps = []
 
-        for p in (p1, p2, p3, p4
+        ___ p in (p1, p2, p3, p4
             __ not p:
                 r_ False
 

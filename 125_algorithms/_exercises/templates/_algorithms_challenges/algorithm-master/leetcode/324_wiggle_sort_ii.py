@@ -15,8 +15,8 @@ class Solution:
         n = le.(A)
         S = sorted(A)
 
-        for i in range(1, n, 2
+        ___ i in range(1, n, 2
             A[i] = S.pop()
 
-        for i in range(0, n, 2
+        ___ i in range(0, n, 2
             A[i] = S.pop()

@@ -34,7 +34,7 @@ class Solution(object
             [12, 13, 15],
         ]
         nums = [1, 5, 9, 10, 13]
-        for num in nums:
+        ___ num in nums:
             print('num: %s' % num)
             print('count: %s' % self.count(matrix, num))
             print('-='*20+'-')

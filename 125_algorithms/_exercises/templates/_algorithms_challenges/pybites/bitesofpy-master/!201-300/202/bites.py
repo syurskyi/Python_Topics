@@ -16,8 +16,8 @@ ___ get_most_complex_bites(N=10, stats=stats
        most complex Bites.
     """
     with open(stats, encoding="utf-8-sig") as s:
-        r_ [x[0] for x in sorted(
-            [[round(float(x['Bite'].split(' ')[1])), float(x['Difficulty'])] for x in csv.DictReader(s, delimiter=';')
+        r_ [x[0] ___ x in sorted(
+            [[round(float(x['Bite'].split(' ')[1])), float(x['Difficulty'])] ___ x in csv.DictReader(s, delimiter=';')
              __ x['Difficulty'] != 'None'], key=lambda x: x[1], reverse=True)[:N]]
 
 

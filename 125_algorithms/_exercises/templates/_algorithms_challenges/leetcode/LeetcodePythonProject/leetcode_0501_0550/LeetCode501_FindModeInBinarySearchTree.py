@@ -48,7 +48,7 @@ class Solution(object
         testCases = [
             TreeNode(1),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.findMode(root)
             print('result: %s' % result)
             print('-='*30+'-')

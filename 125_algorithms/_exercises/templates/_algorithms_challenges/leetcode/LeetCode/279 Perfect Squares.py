@@ -39,14 +39,14 @@ class Solution(object
         :rtype: int
         """
         q = [0]
-        visited = [False for _ in xrange(n+1)]
+        visited = [False ___ _ in xrange(n+1)]
 
         level = 0
         w___ q:
             level += 1
             l = le.(q)
-            for i in xrange(l
-                for j in xrange(1, int(ma__.sqrt(n))+1
+            ___ i in xrange(l
+                ___ j in xrange(1, int(ma__.sqrt(n))+1
                     nxt = q[i]+j*j
                     __ nxt <= n and visited[nxt]:
                         continue
@@ -67,9 +67,9 @@ class Solution(object
         :type n: int
         :rtype: int
         """
-        F = [i for i in xrange(n+1)]
-        for i in xrange(1, n+1
-            for j in xrange(1, int(ma__.sqrt(i))+1
+        F = [i ___ i in xrange(n+1)]
+        ___ i in xrange(1, n+1
+            ___ j in xrange(1, int(ma__.sqrt(i))+1
                 __ i-j*j >= 0:
                     F[i] = min(F[i], F[i-j*j]+1)
 

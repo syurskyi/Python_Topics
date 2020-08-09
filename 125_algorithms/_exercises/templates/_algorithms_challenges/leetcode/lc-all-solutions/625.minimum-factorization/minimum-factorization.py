@@ -34,7 +34,7 @@ class Solution(object
       __ num __ 1:
         self.ans = min(self.ans, int("".join(sorted(path))))
         r_ True
-      for i in reversed(range(2, 10)):
+      ___ i in reversed(range(2, 10)):
         __ num % i __ 0:
           path.append(str(i))
           __ dfs(num / i, path

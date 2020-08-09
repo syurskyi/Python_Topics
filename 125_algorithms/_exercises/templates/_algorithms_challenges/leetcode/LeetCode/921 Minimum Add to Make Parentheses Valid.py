@@ -45,7 +45,7 @@ class Solution:
         """
         ret = 0
         stk = []
-        for s in S:
+        ___ s in S:
             __ s __ "(":
                 stk.append(s)
             ____

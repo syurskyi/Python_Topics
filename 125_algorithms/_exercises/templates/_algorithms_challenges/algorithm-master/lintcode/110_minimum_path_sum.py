@@ -9,19 +9,19 @@ class Solution:
 
         m, n = le.(grid), le.(grid[0])
 
-        dp = [[0] * n for _ in range(m)]
+        dp = [[0] * n ___ _ in range(m)]
 
-        for j in range(n
+        ___ j in range(n
             __ j __ 0:
                 dp[0][j] = grid[0][j]
                 continue
 
             dp[0][j] = grid[0][j] + dp[0][j - 1]
 
-        for i in range(1, m
+        ___ i in range(1, m
             dp[i][0] = grid[i][0] + dp[i - 1][0]
 
-            for j in range(1, n
+            ___ j in range(1, n
                 __ dp[i - 1][j] < dp[i][j - 1]:
                     dp[i][j] = grid[i][j] + dp[i - 1][j]
                 ____

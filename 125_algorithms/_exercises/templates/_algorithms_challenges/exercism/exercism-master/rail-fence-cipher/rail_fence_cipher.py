@@ -2,34 +2,34 @@ class Rails:
 
     ___ __init__(self, num_rails
         self.num_rails = num_rails
-        self.rails = [[] for _ in range(num_rails)]
+        self.rails = [[] ___ _ in range(num_rails)]
 
     ___ populate_rails_linear(self, message, rail_lengths
         message_list = list(message)
-        for rail in self.linear_iterator(rail_lengths
+        ___ rail in self.linear_iterator(rail_lengths
             rail.append(message_list.pop(0))
 
     ___ populate_rails_zig_zag(self, message
         message_list = list(message)
-        for rail in self.zig_zag_iterator(message
+        ___ rail in self.zig_zag_iterator(message
             rail.append(message_list.pop(0))
 
     ___ to_string_linear(self
-        r_ ''.join([data for rail in self.rails for data in rail])
+        r_ ''.join([data ___ rail in self.rails ___ data in rail])
 
     ___ to_string_zig_zag(self, message
-        r_ ''.join([rail.pop(0) for rail in
+        r_ ''.join([rail.pop(0) ___ rail in
                         self.zig_zag_iterator(message)])
 
     ___ linear_iterator(self, rail_lengths
-        for index in range(le.(self.rails)):
-            for rail_length in range(rail_lengths[index]
+        ___ index in range(le.(self.rails)):
+            ___ rail_length in range(rail_lengths[index]
                 yield self.rails[index]
 
     ___ zig_zag_iterator(self, message
         index = 0
         increasing = True
-        for _ in message:
+        ___ _ in message:
             yield self.rails[index]
             increasing = self.direction(index, increasing)
             index = self.increment_index(index, increasing)
@@ -58,7 +58,7 @@ ___ encode(message, num_rails
 ___ decode(message, num_rails
     faulty_rails = Rails(num_rails)
     faulty_rails.populate_rails_zig_zag(message)
-    rail_lengths = [le.(rail) for rail in faulty_rails.rails]
+    rail_lengths = [le.(rail) ___ rail in faulty_rails.rails]
 
     rails = Rails(num_rails)
     rails.populate_rails_linear(message, rail_lengths)

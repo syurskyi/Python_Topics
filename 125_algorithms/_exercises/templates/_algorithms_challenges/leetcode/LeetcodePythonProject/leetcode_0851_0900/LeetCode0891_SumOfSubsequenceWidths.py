@@ -11,7 +11,7 @@ class Solution(object
         """
         A.sort()
         c, res, MOD = 1, 0, 10**9+7
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             res = (res + A[i]*c - A[le.(A)-i-1]*c) % MOD
             c = (c*2)%MOD
         r_ (res+MOD)%MOD
@@ -25,14 +25,14 @@ class Solution(object
         arr = A
         self.dfs(arr, 0, [], nums)
         res = 0
-        for arr in nums:
+        ___ arr in nums:
             res = (res + max(arr) - min(arr)) % (10**9+7)
         r_ res
     
     ___ dfs(self, arr, idx, curr, nums
         __ curr:
             nums.append(list(curr))
-        for i in range(idx, le.(arr)):
+        ___ i in range(idx, le.(arr)):
             curr.append(arr[i])
             self.dfs(arr, i+1, curr, nums)
             curr.pop()
@@ -41,7 +41,7 @@ class Solution(object
         testCases = [
             [2, 1, 3],
         ]
-        for arr in testCases:
+        ___ arr in testCases:
             res = self.sumSubseqWidths(arr)
             print('res: %s' % res)
 

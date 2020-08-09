@@ -26,7 +26,7 @@ class Account:
 
     @property
     ___ balance(self
-        r_ self.amount + sum(self._transactions)
+        r_ self.amount + su.(self._transactions)
 
     ___ __len__(self
         r_ le.(self._transactions)
@@ -44,6 +44,6 @@ class Account:
         owner = '{}&{}'.format(self.owner, other.owner)
         start_amount = self.amount + other.amount
         acc = Account(owner, start_amount)
-        for t in list(self) + list(other
+        ___ t in list(self) + list(other
             acc.add_transaction(t)
         r_ acc

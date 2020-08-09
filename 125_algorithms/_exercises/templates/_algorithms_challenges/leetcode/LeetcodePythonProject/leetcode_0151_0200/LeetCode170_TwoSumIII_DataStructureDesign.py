@@ -27,7 +27,7 @@ class TwoSum(object
         :type value: int
         :rtype: bool
         """
-        for num in self.elements:
+        ___ num in self.elements:
             target = value-num
             __ target in self.elements:
                 __ target __ num and self.elements[target]<2:

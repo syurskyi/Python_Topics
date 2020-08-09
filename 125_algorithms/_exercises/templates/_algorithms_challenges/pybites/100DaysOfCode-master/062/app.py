@@ -21,7 +21,7 @@ ___ index(
         name = request.form.get('name')
         address = request.form.get('address')
         number = request.form.get('number')
-        for i in (name, address, number
+        ___ i in (name, address, number
             info.append(i)
         
         with sqlite3.connect("friends.db") as connection:

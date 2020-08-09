@@ -14,9 +14,9 @@ class Solution:
         left = self.solution(node.left)
         right = self.solution(node.right)
 
-        mxSide = max(node.val,max(left,right)+node.val)
-        mxTop = max(mxSide,left+right+node.val)
-        self.ans = max(self.ans,mxTop)
+        mxSide = ma.(node.val,ma.(left,right)+node.val)
+        mxTop = ma.(mxSide,left+right+node.val)
+        self.ans = ma.(self.ans,mxTop)
         r_ mxSide
 
     ___ maxPathSum(self, root: TreeNode) -> int:

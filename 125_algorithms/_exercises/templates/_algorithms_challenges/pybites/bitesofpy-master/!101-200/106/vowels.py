@@ -41,9 +41,9 @@ ___ strip_vowels(text: str) -> (str, int
     count = 0
     lines = text.split("\n")
     results = []
-    for line in lines:
+    ___ line in lines:
         newline = ''
-        for c in line:
+        ___ c in line:
             __ c.lower() in vowels:
                 c = '*'
                 count += 1

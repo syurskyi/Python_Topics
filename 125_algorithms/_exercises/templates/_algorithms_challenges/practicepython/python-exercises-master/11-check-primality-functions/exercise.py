@@ -2,7 +2,7 @@
 ___ isPrimary(number
     list = range(2,number/2 + 1)
     primary = True
-    for el in list:
+    ___ el in list:
         __ number % el __ 0:
             primary = False
             break

@@ -7,7 +7,7 @@ class Solution:
 
     ___ dfs(root, graph, visited, parent
       visited[root] = 1
-      for nbr in graph.get(root, []
+      ___ nbr in graph.get(root, []
         __ nbr __ parent:
           continue
         ____ visited[nbr] != 0:
@@ -18,10 +18,10 @@ class Solution:
       self.nodeVisited += 1
       r_ True
 
-    visited = [0 for _ in range(n)]
+    visited = [0 ___ _ in range(n)]
     graph = {}
     self.nodeVisited = 0
-    for edge in edges:
+    ___ edge in edges:
       start, end = edge[0], edge[1]
       graph[start] = graph.get(start, []) + [end]
       graph[end] = graph.get(end, []) + [start]

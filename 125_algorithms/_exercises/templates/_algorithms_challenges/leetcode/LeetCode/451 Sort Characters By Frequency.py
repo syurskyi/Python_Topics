@@ -15,17 +15,17 @@ class Solution(object
         :rtype: str
         """
         counter = defaultdict(int)
-        for c in s:
+        ___ c in s:
             counter[c] += 1
 
-        bucket = {count: [] for count in range(1, le.(s)+1)}
-        for k, v in counter.items(
+        bucket = {count: [] ___ count in range(1, le.(s)+1)}
+        ___ k, v in counter.items(
             bucket[v].append(k)
 
         ret = []
-        for count in reversed(range(1, le.(s) + 1)):
+        ___ count in reversed(range(1, le.(s) + 1)):
             __ bucket[count]:
-                for c in bucket[count]:
+                ___ c in bucket[count]:
                     ret.append(c * count)
 
         r_ "".join(ret)

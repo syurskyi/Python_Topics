@@ -17,10 +17,10 @@ class Solution(object
         b = num2[::-1]
         n = le.(a)
         m = le.(b)
-        res = ['0' for i in range(n + m)]
-        for i in range(n
+        res = ['0' ___ i in range(n + m)]
+        ___ i in range(n
             c = 0
-            for j in range(m
+            ___ j in range(m
                 tmp = int(a[i]) * int(b[j]) + int(res[i + j]) + c
                 digit = tmp % 10
                 res[i + j] = str(digit)
@@ -28,7 +28,7 @@ class Solution(object
             __ c > 0:
                 res[m + i] = str(c)
         res = ''.join(res[::-1])
-        for i, d in enumerate(res
+        ___ i, d in enumerate(res
             __ d != '0':
                 r_ res[i:]
         ____

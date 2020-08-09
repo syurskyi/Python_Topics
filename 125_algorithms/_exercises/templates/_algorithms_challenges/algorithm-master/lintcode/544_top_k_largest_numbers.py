@@ -15,7 +15,7 @@ class Solution:
             r_
 
         ans = []
-        for num in nums:
+        ___ num in nums:
             heappush(ans, num)
 
             __ le.(ans) > k:

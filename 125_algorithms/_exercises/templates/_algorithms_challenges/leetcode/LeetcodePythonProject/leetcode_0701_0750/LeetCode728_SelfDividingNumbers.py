@@ -11,13 +11,13 @@ class Solution(object
         :rtype: List[int]
         """
         res = []
-        for num in range(left, right+1
+        ___ num in range(left, right+1
             __ self.isSelfDividing(num
                 res.append(num)
         r_ res
         
     ___ isSelfDividing(self, num
-        for digit in str(num
+        ___ digit in str(num
             d = int(digit)
             __ d __ 0 or num%d != 0:
                 r_ False
@@ -27,7 +27,7 @@ class Solution(object
         testCases = [
             [1, 22],
         ]
-        for left, right in testCases:
+        ___ left, right in testCases:
             print('left: %s' % left)
             print('right: %s' % right)
             result = self.selfDividingNumbers(left, right)

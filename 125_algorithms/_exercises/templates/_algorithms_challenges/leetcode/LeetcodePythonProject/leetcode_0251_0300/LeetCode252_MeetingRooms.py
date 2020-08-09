@@ -18,7 +18,7 @@ class Solution(object
         """
         intervals.sort(key=lambda x: x.start)
         length = le.(intervals)
-        for i in range(length-1
+        ___ i in range(length-1
             curr = intervals[i]
             nextInter = intervals[i+1]
             __ curr.end > nextInter.start:

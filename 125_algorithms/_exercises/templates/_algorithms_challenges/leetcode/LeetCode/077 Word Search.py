@@ -33,9 +33,9 @@ class Solution:
 
         m = le.(board)
         n = le.(board[0])
-        visited = [[False for _ in xrange(n)] for _ in xrange(m)]  # avoid loop
-        for i in xrange(m
-            for j in xrange(n
+        visited = [[False ___ _ in xrange(n)] ___ _ in xrange(m)]  # avoid loop
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ board[i][j]__word[0]:
                     visited[i][j] = True
                     __ self.search(board, i, j, word[1:], visited
@@ -50,7 +50,7 @@ class Solution:
         m = le.(board)
         n = le.(board[0])
         next_positions = [(pre_row-1, pre_col), (pre_row+1, pre_col), (pre_row, pre_col-1), (pre_row, pre_col+1)]  # four directions
-        for next_position in next_positions:
+        ___ next_position in next_positions:
             __ 0<=next_position[0]<m and 0<=next_position[1]<n:  # pre-checking
                 __ visited[next_position[0]][next_position[1]]__False and board[next_position[0]][next_position[1]]__word[0]:
                     visited[next_position[0]][next_position[1]] = True

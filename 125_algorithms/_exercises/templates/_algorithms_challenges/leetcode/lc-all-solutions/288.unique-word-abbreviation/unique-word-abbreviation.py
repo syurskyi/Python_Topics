@@ -6,7 +6,7 @@ class ValidWordAbbr(object
     """
     self.d = {}
     self.dict = dictionary = set(dictionary)
-    for word in dictionary:
+    ___ word in dictionary:
       wordLen = le.(word)
       __ wordLen > 2:
         key = word[0] + str(wordLen - 2) + word[-1]

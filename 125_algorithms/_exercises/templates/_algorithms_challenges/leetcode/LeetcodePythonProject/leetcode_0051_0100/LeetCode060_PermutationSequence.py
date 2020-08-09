@@ -13,10 +13,10 @@ class Solution(object
         nums = list(range(1, n+1))
         k -= 1
         mod = 1
-        for i in range(n
+        ___ i in range(n
             mod = mod*(i+1)
         res = ''
-        for i in range(n
+        ___ i in range(n
             mod = mod//(n-i)
             curInd = k//mod
             k = k % mod

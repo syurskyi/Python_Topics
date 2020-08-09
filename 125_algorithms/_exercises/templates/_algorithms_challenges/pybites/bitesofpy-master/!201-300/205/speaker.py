@@ -27,9 +27,9 @@ ___ get_pycon_speaker_first_names(soup=None
     __ soup is None:
         soup = _get_soup()
     speaker_tags = soup.find_all(class_='speaker')
-    speaker_list = [speaker.strip().split(' ') for speakers in speaker_tags for speaker in
+    speaker_list = [speaker.strip().split(' ') ___ speakers in speaker_tags ___ speaker in
                     speakers.string.replace('/', ',').split(',')]
-    r_ [first for first, *_ in speaker_list]
+    r_ [first ___ first, *_ in speaker_list]
 
 
 ___ get_percentage_of_female_speakers(first_names
@@ -37,10 +37,10 @@ ___ get_percentage_of_female_speakers(first_names
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""
     det = gender.Detector()
-    gender_counts = Counter(det.get_gender(name) for name in first_names)
+    gender_counts = Counter(det.get_gender(name) ___ name in first_names)
 
     female_count = (gender_counts['female'] + gender_counts['mostly_female'])
-    everyone_count = sum(n for _, n in gender_counts.items())
+    everyone_count = su.(n ___ _, n in gender_counts.items())
 
     r_ round(female_count / everyone_count * 100.0, 2)
 

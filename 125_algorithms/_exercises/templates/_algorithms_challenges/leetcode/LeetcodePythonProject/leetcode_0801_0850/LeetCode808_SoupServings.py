@@ -37,7 +37,7 @@ class Solution(object
         testCases = [
             50,
         ]
-        for n in testCases:
+        ___ n in testCases:
             result = self.soupServings(n)
             print('result: %s' % result)
             print('-='*30+'-')

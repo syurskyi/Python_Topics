@@ -44,14 +44,14 @@ class Say:
             r_ 'zero'
         ____
             r_ ' '.join([self.convert_chunk_to_word(chunk, index)
-                             for index, chunk
+                             ___ index, chunk
                              in enumerate(self.get_chunks(num))]).rstrip()
 
     ___ get_chunks(self, num
         reversed_string = str(num)[::-1]
         reversed_chunks = ([reversed_string[i:i + 3]
-                            for i in range(0, le.(reversed_string), 3)])[::-1]
-        r_ [int(x[::-1]) for x in reversed_chunks]
+                            ___ i in range(0, le.(reversed_string), 3)])[::-1]
+        r_ [int(x[::-1]) ___ x in reversed_chunks]
 
     ___ convert_chunk_to_word(self, chunk, i
         hundreds_digit, left_over = divmod(chunk, 100)

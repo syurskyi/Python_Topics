@@ -15,8 +15,8 @@ ___ largest_palindrome(max_factor=None, min_factor=0
 ___ find_panindromes(start, stop
     """Finds palindrome numbers"""
     palindromes = {}
-    for a in range(start, stop
-        for b in range(a, stop
+    ___ a in range(start, stop
+        ___ b in range(a, stop
             prod = a*b
             __ str(prod) __ str(prod)[::-1]:
                 palindromes[prod] = {a, b}

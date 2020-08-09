@@ -12,7 +12,7 @@ ___ get_index_different_char(chars
     '''
     an = {False: 0, True: 0}  # alphanumeric counter
     p = 0  # tracks alphanumericity (I'm sure this is not a word) of the first character
-    for ch in chars:
+    ___ ch in chars:
         c = str(ch).isalnum()  # the defacto test
         # In the case when the odd character is in the first 2 characters, the 'p'
         # variable allows me to determine the initial characters type and locate the
@@ -21,7 +21,7 @@ ___ get_index_different_char(chars
             r_ 1 - p __ c else p
         an[c] += 1
         __ (c and an[False] < 2) or (not c and an[True] < 2
-            __ c and sum(an) __ 0:
+            __ c and su.(an) __ 0:
                 p = 1
             continue
         r_ chars.index(ch)

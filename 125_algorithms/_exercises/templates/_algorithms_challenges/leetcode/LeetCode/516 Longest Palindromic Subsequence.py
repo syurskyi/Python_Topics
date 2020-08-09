@@ -37,11 +37,11 @@ class Solution:
         """
         n = le.(s)
         F = defaultdict(lambda: defaultdict(int))
-        for i in range(n
+        ___ i in range(n
             F[i][i] = 1
 
-        for i in range(n-1, -1, -1
-            for j in range(i+1, n
+        ___ i in range(n-1, -1, -1
+            ___ j in range(i+1, n
                 F[i][j] = max(F[i+1][j], F[i][j-1])
                 __ s[i] __ s[j]:
                     F[i][j] = max(F[i][j], F[i+1][j-1] + 2)

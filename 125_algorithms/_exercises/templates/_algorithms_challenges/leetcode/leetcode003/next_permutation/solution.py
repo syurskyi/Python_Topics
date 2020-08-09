@@ -6,13 +6,13 @@ class Solution:
         k = -1
         l = -1
         # Find the largest k such that num[k] < num[k + 1]
-        for i in range(n - 1
+        ___ i in range(n - 1
             __ num[i] < num[i + 1]:
                 k = i
 
         # Find the largest l such that num[k] < num[l] (if k exists)
         __ k >= 0:
-            for i in range(n
+            ___ i in range(n
                 __ num[i] > num[k]:
                     l = i
             # Swap num[l] and num[k]

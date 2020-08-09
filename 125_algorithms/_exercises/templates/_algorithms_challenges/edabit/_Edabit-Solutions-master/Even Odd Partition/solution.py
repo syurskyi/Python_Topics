@@ -2,7 +2,7 @@ ___ even_odd_partition(lst
     output = []
     odd = []
     even =[]
-    for i in lst:
+    ___ i in lst:
         __ i % 2 __ 0:
             even.append(i)
         ____

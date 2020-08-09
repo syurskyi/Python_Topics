@@ -1,6 +1,6 @@
 ___ smooth(amount, numbers
     answer = []
-    for x in range(amount
+    ___ x in range(amount
         __ x __ 0 or x __ amount-1:
             answer.append(str(numbers[x]))
         ____

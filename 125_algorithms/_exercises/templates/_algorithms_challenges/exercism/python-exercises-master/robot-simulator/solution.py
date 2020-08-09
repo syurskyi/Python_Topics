@@ -40,7 +40,7 @@ class Robot(object
         instructions = {'A': self.advance,
                         'R': self.turn_right,
                         'L': self.turn_left}
-        for cmd in commands:
+        ___ cmd in commands:
             __ cmd in instructions:
                 instructions[cmd]()
 

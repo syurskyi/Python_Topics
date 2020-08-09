@@ -1,8 +1,8 @@
 
-for i in range(int(input())):
+___ i in range(int(input())):
     res = 0    
-    a = [int(i)* int(i) for i in input().split()]
-    for j in a:
+    a = [int(i)* int(i) ___ i in input().split()]
+    ___ j in a:
         res += j
     print(res,end=' ')
     

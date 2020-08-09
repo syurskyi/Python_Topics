@@ -47,7 +47,7 @@ True
 ___ find_unique_abbreviations(words
     iterators = {}  # {abbr: iterator}
 
-    for word in set(words
+    ___ word in set(words
         iterator = (WordIterator(word).__iter__(), word)
         abbr = next(iterator[0], None)
 
@@ -59,14 +59,14 @@ ___ find_unique_abbreviations(words
         ____
             iterators[abbr] = [iterator]
 
-    collisions = [key for key, iters in iterators.items() __ le.(iters) > 1]
+    collisions = [key ___ key, iters in iterators.items() __ le.(iters) > 1]
 
     w___ collisions:
-        for key in collisions:
+        ___ key in collisions:
             iters = iterators[key]
             del iterators[key]
 
-            for iterator in iters:
+            ___ iterator in iters:
                 abbr = next(iterator[0], None)
 
                 __ not abbr:
@@ -77,11 +77,11 @@ ___ find_unique_abbreviations(words
                 ____
                     iterators[abbr] = [iterator]
 
-        collisions = [key for key, iters in iterators.items() __ le.(iters) > 1]
+        collisions = [key ___ key, iters in iterators.items() __ le.(iters) > 1]
 
-    reversed_index = {iters[0][1]: key for key, iters in iterators.items() __ le.(iters) __ 1}
+    reversed_index = {iters[0][1]: key ___ key, iters in iterators.items() __ le.(iters) __ 1}
 
-    r_ [reversed_index[word] for word in words]
+    r_ [reversed_index[word] ___ word in words]
 
 
 class WordIterator:
@@ -98,8 +98,8 @@ class WordIterator:
         __ n > 1:
             yield str(n)
 
-        for i in range(1, n - 1
-            for j in range(i + 1
+        ___ i in range(1, n - 1
+            ___ j in range(i + 1
                 yield self.TMPL.format(
                     self.word[:i - j],
                     n - i,

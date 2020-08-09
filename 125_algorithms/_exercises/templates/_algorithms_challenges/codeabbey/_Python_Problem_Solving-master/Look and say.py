@@ -7,13 +7,13 @@ start_num = input('Enter the starting string of the sequence:')
 ___ look_and_say(data,maxlen
     result = []
     #first iteration to iterate through given iterations by the user
-    for i in range(maxlen-1
+    ___ i in range(maxlen-1
         # defining the number of count of a particular character in the string
         count = 1
         #list to store the count of the character and the character
         res_string = []
         #Loop for traversing through the length of the given string
-        for k in range(0,le.(data)):
+        ___ k in range(0,le.(data)):
             try:
                 #check if the next element is same as the previous element and update the count
                 __ data[k] __ data[k+1]:
@@ -28,7 +28,7 @@ ___ look_and_say(data,maxlen
                 __ k __ le.(data)-1:
                     res_string.append(str(count) + data[k])
         #print the updated string with updated count
-        data = ''.join(str(e) for e in res_string)
+        data = ''.join(str(e) ___ e in res_string)
         result.append(data)
         #print(start_num)
     r_ result

@@ -11,9 +11,9 @@ class Solution(object
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         j = 0
-        for num in nums:
+        ___ num in nums:
             __ num != 0:
                 nums[j] = num
                 j+=1
-        for i in range(j, le.(nums)):
+        ___ i in range(j, le.(nums)):
             nums[i] = 0

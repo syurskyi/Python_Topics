@@ -51,11 +51,11 @@ class Solution(object
                 raise StopIteration
 
         h = []
-        for i in xrange(m
+        ___ i in xrange(m
             heapq.heappush(h, Node(i, 0))
 
         ret = None
-        for _ in xrange(k
+        ___ _ in xrange(k
             ret = heapq.heappop(h)
             __ ret.hasnext(
                 heapq.heappush(h, ret.next())

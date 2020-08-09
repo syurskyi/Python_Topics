@@ -15,13 +15,13 @@ class Solution(object
         res = 0
         d = 0
         hashset = set()
-        for ob in obstacles:
+        ___ ob in obstacles:
             hashset.add(tuple(ob))
-        for c in commands:
+        ___ c in commands:
             __ c in (-1, -2
                 d = self.calDirection(d, c)
             ____
-                for _ in range(c
+                ___ _ in range(c
                     __ (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) not in hashset:
                         pos = [pos[0] + dirs[d][0], pos[1] + dirs[d][1]]
             res = max(res, pos[0]**2 + pos[1]**2)
@@ -42,7 +42,7 @@ class Solution(object
                 [],
             ],
         ]
-        for commands, obstacles in testCases:
+        ___ commands, obstacles in testCases:
             res = self.robotSim(commands, obstacles)
             print('res: %s' % res)
 

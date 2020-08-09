@@ -5,4 +5,4 @@ class Solution(object
     :rtype: int
     """
     n = le.(nums)
-    r_ (n * (n + 1)) / 2 - sum(nums)
+    r_ (n * (n + 1)) / 2 - su.(nums)

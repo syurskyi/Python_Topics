@@ -6,7 +6,7 @@ class Solution(object
     """
     ans = 0
     s = set(nums)
-    for num in nums:
+    ___ num in nums:
       __ num in s:
         s.discard(num)
         cnt = 1

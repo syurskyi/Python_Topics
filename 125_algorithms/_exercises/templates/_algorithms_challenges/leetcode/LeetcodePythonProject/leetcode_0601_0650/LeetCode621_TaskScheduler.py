@@ -11,7 +11,7 @@ class Solution(object
         :rtype: int
         """
         arr = [0]*26
-        for t in tasks:
+        ___ t in tasks:
             arr[ord(t)-ord('A')] += 1
         arr.sort()
         i = 25
@@ -27,10 +27,10 @@ class Solution(object
         """
         ______ heapq
         hashmap = {}
-        for task in tasks:
+        ___ task in tasks:
             hashmap[task] = hashmap.get(task, 0)+1
         heap = []
-        for c, count in hashmap.items(
+        ___ c, count in hashmap.items(
             heapq.heappush(heap, (-count, c))
         res = 0
         queue = []
@@ -68,7 +68,7 @@ class Solution(object
                 2,
             ],
         ]
-        for tasks, n in testCases:
+        ___ tasks, n in testCases:
             print('tasks: %s' % tasks)
             print('n: %s' % n)
             result = self.leastInterval(tasks, n)

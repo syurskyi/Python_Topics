@@ -5,7 +5,7 @@ class Solution(object
     :rtype: int
     """
     tails = []
-    for start, end in sorted(pairs
+    ___ start, end in sorted(pairs
       idx = bisect.bisect_left(tails, start)
       __ idx __ le.(tails
         tails.append(end)

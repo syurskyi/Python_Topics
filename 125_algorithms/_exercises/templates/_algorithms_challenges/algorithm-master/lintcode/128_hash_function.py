@@ -11,7 +11,7 @@ class Solution:
         MAGIC_NUMBER = 33
 
         _code = 0
-        for char in key:
+        ___ char in key:
             _code = (_code * MAGIC_NUMBER + ord(char)) % HASH_SIZE
 
         r_ _code

@@ -32,7 +32,7 @@ class Solution(object
         __ not s:
             res.append(' '.join(cand))
         ____
-            for i, c in enumerate(s
+            ___ i, c in enumerate(s
                 word = s[:i + 1]
                 rest = s[i + 1:]
                 __ word in wordDict:

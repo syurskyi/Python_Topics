@@ -22,7 +22,7 @@ Bday = namedtuple('Bday', 'name month day')
 ___ get_birthdays(cal
     with open(cal, 'rb') as g:
         gcal = Calendar.from_ical(g.read())
-        for component in gcal.walk(
+        ___ component in gcal.walk(
             __ component.name __ "VEVENT":
                 name = component.get('SUMMARY')
                 __ not name:
@@ -38,5 +38,5 @@ __ __name__ __ '__main__':
     ____
         cal = sys.argv[1]
 
-    for bday in get_birthdays(cal
+    ___ bday in get_birthdays(cal
         print(bday)

@@ -8,7 +8,7 @@ class Solution:
       r_ True
     __ le.(board) __ 0:
       r_ False
-    visited = [[0] * le.(board[0]) for i in range(0, le.(board))]
+    visited = [[0] * le.(board[0]) ___ i in range(0, le.(board))]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, word, index
@@ -16,7 +16,7 @@ class Solution:
         r_ False
       __ le.(word) - 1 __ index:
         r_ True
-      for direction in directions:
+      ___ direction in directions:
         ni, nj = i + direction[0], j + direction[1]
         __ ni >= 0 and ni < le.(board) and nj >= 0 and nj < le.(board[0]
           __ visited[ni][nj] __ 0:
@@ -26,8 +26,8 @@ class Solution:
             visited[ni][nj] = 0
       r_ False
 
-    for i in range(0, le.(board)):
-      for j in range(0, le.(board[0])):
+    ___ i in range(0, le.(board)):
+      ___ j in range(0, le.(board[0])):
         visited[i][j] = 1
         __ dfs(i, j, board, visited, word, 0
           r_ True

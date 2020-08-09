@@ -6,7 +6,7 @@
 #         self.right = None
 
 class Solution(object
-  ___ pathSum(self, root, sum
+  ___ pathSum(self, root, su.
     """
     :type root: TreeNode
     :type sum: int
@@ -25,5 +25,5 @@ class Solution(object
         r_ True
 
     res = []
-    dfs(root, sum, [], res)
+    dfs(root, su., [], res)
     r_ res

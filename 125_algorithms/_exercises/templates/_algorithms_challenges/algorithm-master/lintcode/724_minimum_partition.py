@@ -7,14 +7,14 @@ class Solution:
         __ not nums:
             r_ 0
 
-        target = sum(nums)
+        target = su.(nums)
         dp = [False] * (target + 1)
         dp[0] = True
 
         ans = float('inf')
 
-        for num in nums:
-            for i in range(target, num - 1, -1
+        ___ num in nums:
+            ___ i in range(target, num - 1, -1
                 dp[i] = dp[i] or dp[i - num]
 
                 __ dp[i]:

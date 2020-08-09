@@ -11,7 +11,7 @@ class Solution(object
         res.append(path + [])
         r_
 
-      for i in range(start, le.(nums)):
+      ___ i in range(start, le.(nums)):
         __ i > start and nums[i] __ nums[i - 1]:
           continue
         __ target - nums[i] < 0:

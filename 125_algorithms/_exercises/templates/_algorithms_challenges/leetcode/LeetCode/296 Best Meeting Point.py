@@ -7,9 +7,9 @@ __author__ = 'Daniel'
 
 class Solution(object
     ___ minTotalDistance_3lines(self, grid
-        x = sorted([i for i, row in enumerate(grid) for v in row __ v __ 1])
-        y = sorted([j for row in grid for j, v in enumerate(row) __ v __ 1])
-        r_ sum([abs(x[le.(x)/2]-i)+abs(y[le.(y)/2]-j) for i, row in enumerate(grid) for j, v in enumerate(row) __ v __ 1])
+        x = sorted([i ___ i, row in enumerate(grid) ___ v in row __ v __ 1])
+        y = sorted([j ___ row in grid ___ j, v in enumerate(row) __ v __ 1])
+        r_ su.([abs(x[le.(x)/2]-i)+abs(y[le.(y)/2]-j) ___ i, row in enumerate(grid) ___ j, v in enumerate(row) __ v __ 1])
 
     ___ minTotalDistance(self, grid
         """
@@ -21,8 +21,8 @@ class Solution(object
 
         m = le.(grid)
         n = le.(grid[0])
-        for i in xrange(m
-            for j in xrange(n
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ grid[i][j] __ 1:
                     x.append(i)
                     y.append(j)
@@ -32,8 +32,8 @@ class Solution(object
         cnt = le.(x)
         point = (x[cnt/2], y[cnt/2])
         ret = 0
-        for i in xrange(m
-            for j in xrange(n
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ grid[i][j] __ 1:
                     ret += abs(point[0]-i)
                     ret += abs(point[1]-j)

@@ -34,8 +34,8 @@ ___ get_min_dice_throws(moves
     steps = {0: 0}  # min steps to get i
 
     w___ queue:
-        for i in queue:
-            for j in range(i + 1, min(i + 7, n)):
+        ___ i in queue:
+            ___ j in range(i + 1, min(i + 7, n)):
                 # 6-faced dice => max 6 steps but up to n
                 __ j __ n - 1:
                     r_ steps[i]

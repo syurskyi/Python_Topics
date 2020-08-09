@@ -53,8 +53,8 @@ class Solution:
           elements.
         """
         n = le.(A)
-        for i in range(n - 1
-            for j in range(3
+        ___ i in range(n - 1
+            ___ j in range(3
                 __ A[i] __ A[min(n - 1, i + 1 + j)]:
                     r_ A[i]
 

@@ -18,11 +18,11 @@ class Solution(object
       r_ []
     dp = [[]] * (n + 1)
     dp[0] = [None]
-    for i in range(1, n + 1
+    ___ i in range(1, n + 1
       dp[i] = []
-      for j in range(1, i + 1
-        for left in dp[j - 1]:
-          for right in dp[i - j]:
+      ___ j in range(1, i + 1
+        ___ left in dp[j - 1]:
+          ___ right in dp[i - j]:
             root = TreeNode(j)
             root.left = left
             root.right = clone(right, j)

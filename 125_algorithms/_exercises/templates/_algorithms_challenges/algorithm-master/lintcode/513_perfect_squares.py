@@ -21,7 +21,7 @@ class Solution:
         dp[0] = 0
         dp[1] = 1
 
-        for i in range(1, n + 1
+        ___ i in range(1, n + 1
             j = 1
             w___ j * j <= i:
                 dp[i] = min(dp[i], dp[i - j * j] + 1)

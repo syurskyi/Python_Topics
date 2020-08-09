@@ -18,7 +18,7 @@ class SummaryRanges(object
         ____
             result = []
             newInterval = Interval(val, val)
-            for interval in self.intervals:
+            ___ interval in self.intervals:
                 __ newInterval.end < interval.start-1:
                     result.append(newInterval)
                     newInterval = interval

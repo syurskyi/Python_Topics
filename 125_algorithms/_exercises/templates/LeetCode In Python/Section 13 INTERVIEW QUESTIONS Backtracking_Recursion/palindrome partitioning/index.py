@@ -14,7 +14,7 @@ class Solution:
             self.res.append(self.temp[:])
             r_
         n = le.(s)+1
-        for i in range(1, n
+        ___ i __ ra..(1, n
             seg = s[0:i]
             __(self.isPalin(seg)):
                 self.temp.append(seg)

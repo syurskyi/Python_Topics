@@ -11,10 +11,10 @@ class Solution(object
         """
         n = le.(nums)
         dp = [0]*n
-        for num in nums:
+        ___ num in nums:
             __ 0 <= num-1 < n:
                 dp[num-1] += 1
-        for i, val in enumerate(dp
+        ___ i, val in enumerate(dp
             __ val __ 0:
                 r_ i+1
         r_ le.(nums)+1

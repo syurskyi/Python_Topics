@@ -12,10 +12,10 @@ class Solution(object
         arr = A
         up, down = [0]*le.(arr), [0]*le.(arr)
         res = 0
-        for i in range(1, le.(arr)):
+        ___ i in range(1, le.(arr)):
             __ arr[i] > arr[i-1]:
                 up[i] = up[i-1]+1
-        for i in range(le.(arr)-1, -1, -1
+        ___ i in range(le.(arr)-1, -1, -1
             __ arr[i] > arr[i+1]:
                 down[i] = down[i+1]+1
             __ up[i] and down[i]:
@@ -29,7 +29,7 @@ class Solution(object
         """
         arr = A
         res, up, down = 0, 0, 0
-        for i in range(1, le.(arr)):
+        ___ i in range(1, le.(arr)):
             __ (down and arr[i-1] < arr[i]) or (arr[i-1] __ arr[i]
                 up, down = 0, 0
             __ arr[i-1] < arr[i]:
@@ -49,7 +49,7 @@ class Solution(object
             [0,1,2,3,4,5,4,3,2,1,0],
             [4,3,2,1],
         ]
-        for arr in testCases:
+        ___ arr in testCases:
             result = self.longestMountain(arr)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -29,8 +29,8 @@ class Solution:
         pi = [0] * n
         pe = max_size = 0
 
-        for i in range(n
-            for j in range(i
+        ___ i in range(n
+            ___ j in range(i
                 """
                 backtracking
 
@@ -46,7 +46,7 @@ class Solution:
                     pe = i
 
         ans = [0] * max_size
-        for i in range(max_size - 1, -1, -1
+        ___ i in range(max_size - 1, -1, -1
             ans[i] = A[pe]
             pe = pi[pe]
 

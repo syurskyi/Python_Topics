@@ -14,15 +14,15 @@ class Solution:
         `dp[i][j][k]` means the substring in `s1` (start: `i`, le.: `k`)
         could be transformed into the substring in `s2` (start: `j`, le.: `k`)
         """
-        dp = [[[False] * (n + 1) for _ in range(n)] for _ in range(n)]
+        dp = [[[False] * (n + 1) ___ _ in range(n)] ___ _ in range(n)]
 
-        for i in range(n
-            for j in range(n
+        ___ i in range(n
+            ___ j in range(n
                 dp[i][j][1] = (s1[i] __ s2[j])
 
-        for k in range(2, n + 1
+        ___ k in range(2, n + 1
 
-            for i in range(n
+            ___ i in range(n
                 """
                 allow: i < n - k + 1 => i <= n - k
                 disallow: i > n - k
@@ -30,11 +30,11 @@ class Solution:
                 __ i + k > n:
                     continue
 
-                for j in range(n
+                ___ j in range(n
                     __ j + k > n:
                         continue
 
-                    for l in range(1, k
+                    ___ l in range(1, k
                         """
                         If its already calculated and possible to transform
                         """

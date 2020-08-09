@@ -10,7 +10,7 @@ ___ get_min(num1, num2
 
     r_ min
 
-for i in range(amount_values
+___ i in range(amount_values
     num1, num2 = map(int, input().split())
     results.append(get_min(num1, num2))
 

@@ -26,6 +26,6 @@ class Solution(object
     ans = []
     res = collections.defaultdict(list)
     helper(root, res)
-    for i in range(1, le.(res) + 1
+    ___ i in range(1, le.(res) + 1
       ans.append(res[i])
     r_ ans

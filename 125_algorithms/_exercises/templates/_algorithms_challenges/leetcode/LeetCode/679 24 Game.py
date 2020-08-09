@@ -31,11 +31,11 @@ class Solution:
             __ n __ 1:
                 r_ abs(A[0] - 24) < 0.001
 
-            for i in range(n
-                for j in range(i
+            ___ i in range(n
+                ___ j in range(i
                     a = A[i]
                     b = A[j]
-                    for c in (a+b, a-b, b-a, a*b, b and a/b, a and b/a
+                    ___ c in (a+b, a-b, b-a, a*b, b and a/b, a and b/a
                         # if 0, duplicated as a * b 
                         A_new = A[:j] + A[j+1:i] + A[i+1:] + [c]
                         A_new.sort()

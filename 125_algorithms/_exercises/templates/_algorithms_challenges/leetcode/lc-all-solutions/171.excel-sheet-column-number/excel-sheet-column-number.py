@@ -10,7 +10,7 @@ class Solution(object
     s = s.upper()
     ret = 0
     b = 0
-    for c in reversed(s
+    ___ c in reversed(s
       ret += letters[c] * 26 ** (b)
       b += 1
     r_ ret

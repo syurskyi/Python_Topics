@@ -6,10 +6,10 @@ class Solution:
         """
         color = {}
 
-        for node in range(le.(graph)):
+        ___ node in range(le.(graph)):
             __ node not in color:
                 color[node] = 0
-            for nei in graph[node]:
+            ___ nei in graph[node]:
                 __ nei not in color:
                     color[nei] = color[node] ^ 1
                 ____ color[nei] __ color[node]:

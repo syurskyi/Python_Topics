@@ -13,9 +13,9 @@ class Solution(object
         __ not grid: r_ 0
         n = le.(grid[0])
         m = le.(grid)
-        dp = [[0]*n for i in range(m)]
-        for i in range(m
-            for j in range(n
+        dp = [[0]*n ___ i in range(m)]
+        ___ i in range(m
+            ___ j in range(n
                 __ i __ 0 and j __ 0:
                     dp[i][j] = grid[i][j]
                 ____ i __ 0 and j != 0:

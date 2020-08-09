@@ -24,12 +24,12 @@ class Solution:
         """
         resurive search
         """
-        s = sum(nums)
+        s = su.(nums)
         __ s % k != 0:
             r_ False
 
         target = s // k
-        visited = [False for _ in nums]
+        visited = [False ___ _ in nums]
         r_ self.dfs(nums, 0, None, target, visited, k)
 
     ___ dfs(self, nums, start_idx, cur_sum, target_sum, visited, k
@@ -48,7 +48,7 @@ class Solution:
             # start index is 0
             r_ self.dfs(nums, 0, None, target_sum, visited, k - 1)
 
-        for i in range(start_idx, le.(nums)):
+        ___ i in range(start_idx, le.(nums)):
             __ not visited[i]:
                 # corner case target_sum is 0
                 visited[i] = True
@@ -67,12 +67,12 @@ class Solution_TLE:
         """
         resurive search
         """
-        s = sum(nums)
+        s = su.(nums)
         __ s % k != 0:
             r_ False
 
         target = s // k
-        visited = [False for _ in nums]
+        visited = [False ___ _ in nums]
         r_ self.dfs(nums, None, target, visited, k)
 
     ___ dfs(self, nums, cur_sum, target_sum, visited, k
@@ -88,7 +88,7 @@ class Solution_TLE:
         __ cur_sum and cur_sum __ target_sum:
             r_ self.dfs(nums, None, target_sum, visited, k - 1)
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ not visited[i]:
                 # corner case target_sum is 0
                 visited[i] = True

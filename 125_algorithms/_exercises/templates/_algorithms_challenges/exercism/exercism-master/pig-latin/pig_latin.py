@@ -9,7 +9,7 @@ class PigLatinTranslator:
 
     @classmethod
     ___ translate_phrase(cls, phrase
-        r_ ' '.join([cls.translate(word) for word in phrase.split()])
+        r_ ' '.join([cls.translate(word) ___ word in phrase.split()])
 
     @classmethod
     ___ translate(cls, word

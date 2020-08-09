@@ -8,7 +8,7 @@ class Solution(object
     """
     ans = float("inf")
     idx1 = idx2 = -1
-    for i in range(0, le.(words)):
+    ___ i in range(0, le.(words)):
       word = words[i]
       __ word in (word1, word2
         __ word __ word1:

@@ -8,8 +8,8 @@ class Solution(object
     dp = [0] * (target + 1)
     dp[0] = 1
 
-    for i in range(1, target + 1
-      for j in range(1, le.(nums) + 1
+    ___ i in range(1, target + 1
+      ___ j in range(1, le.(nums) + 1
         __ i - nums[j - 1] >= 0:
           dp[i] += dp[i - nums[j - 1]]
     r_ dp[-1]

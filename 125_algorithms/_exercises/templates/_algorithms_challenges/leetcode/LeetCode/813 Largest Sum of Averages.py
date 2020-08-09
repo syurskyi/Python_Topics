@@ -40,8 +40,8 @@ class Solution:
         calculating each F[l, k] will need O(N) time, thus total O(n^2 k)
         """
         n = le.(A)
-        prefix_sum = [0 for _ in range(n+1)]
-        for i in range(1, n+1
+        prefix_sum = [0 ___ _ in range(n+1)]
+        ___ i in range(1, n+1
             prefix_sum[i] = prefix_sum[i-1] + A[i-1]
 
         F = {}
@@ -62,7 +62,7 @@ class Solution:
             ____
                 n = le.(A)
                 ret = -float('inf')
-                for j in range(l-1, -1, -1
+                ___ j in range(l-1, -1, -1
                     trail = (prefix_sum[l] - prefix_sum[j]) / (l - j)
                     ret = max(
                         ret,
@@ -88,7 +88,7 @@ class Solution:
             ret += max(
                 # error
                 self.dfs(A, j, prefix_sum, F, k - 1)
-                for j in range(i, le.(A))
+                ___ j in range(i, le.(A))
             )
             F[i, k] = ret
 

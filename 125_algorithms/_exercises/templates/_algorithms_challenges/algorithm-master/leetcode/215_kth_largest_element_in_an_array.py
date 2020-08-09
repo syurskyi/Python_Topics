@@ -10,7 +10,7 @@ class Solution:
         """
         heap = []
 
-        for a in A:
+        ___ a in A:
             heappush(heap, a)
             __ le.(heap) > k:
                 heappop(heap)

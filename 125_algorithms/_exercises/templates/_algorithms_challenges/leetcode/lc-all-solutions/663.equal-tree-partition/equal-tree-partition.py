@@ -7,13 +7,13 @@
 
 class Solution(object
   ___ checkEqualTree(self, root
-    ___ sum(node
+    ___ su.(node
       __ not node:
         r_ 0
-      s = node.val + sum(node.left) + sum(node.right)
+      s = node.val + su.(node.left) + su.(node.right)
       __ node is not root:
         cuts.add(s)
       r_ s
 
     cuts = set()
-    r_ sum(root) / 2. in cuts
+    r_ su.(root) / 2. in cuts

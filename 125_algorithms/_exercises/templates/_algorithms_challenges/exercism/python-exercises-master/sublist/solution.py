@@ -19,10 +19,10 @@ ___ contains(l1, l2
         r_ True
     __ le.(l2) > le.(l1
         r_ False
-    for i in range(le.(l1) - le.(l2) + 1
+    ___ i in range(le.(l1) - le.(l2) + 1
         __ l1[i] != l2[0]:
             continue
-        for j in range(le.(l2)):
+        ___ j in range(le.(l2)):
             __ l1[i + j] != l2[j]:
                 break
         ____

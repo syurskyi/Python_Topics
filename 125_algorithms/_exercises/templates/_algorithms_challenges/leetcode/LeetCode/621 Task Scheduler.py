@@ -43,12 +43,12 @@ class Solution:
         Find the idle count
         """
         counter = defaultdict(int)
-        for t in tasks:
+        ___ t in tasks:
             counter[t] += 1
 
         maxa = 0
         max_cnt = 0
-        for v in counter.values(
+        ___ v in counter.values(
             __ v > maxa:
                 maxa = v
                 max_cnt = 1
@@ -69,12 +69,12 @@ class Solution:
         cool down queue
         """
         counter = defaultdict(int)
-        for t in tasks:
+        ___ t in tasks:
             counter[t] += 1
 
         pq = [
             (-v, k)
-            for k, v in counter.items()
+            ___ k, v in counter.items()
         ]
         heapq.heapify(pq)
         q = deque()  # stores (t, k)

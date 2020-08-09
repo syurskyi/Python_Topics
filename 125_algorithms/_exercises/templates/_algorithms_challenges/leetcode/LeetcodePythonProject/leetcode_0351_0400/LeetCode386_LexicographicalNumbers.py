@@ -8,7 +8,7 @@ class Solution(object
     ___ lexicalOrder(self, n
         res = []
         curr = 1
-        for _ in range(n
+        ___ _ in range(n
             res.append(curr)
             __ curr*10 <= n:
                 curr *= 10
@@ -24,7 +24,7 @@ class Solution(object
         testCases = [
             113,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.lexicalOrder(n)
             print('result: %s' % result)

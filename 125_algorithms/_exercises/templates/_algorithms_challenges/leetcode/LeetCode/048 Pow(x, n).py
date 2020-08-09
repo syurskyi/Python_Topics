@@ -60,7 +60,7 @@ class Solution:
                 r_ -self.pow(-x, n)
 
         product = 1.0
-        for i in xrange(abs(n)):
+        ___ i in xrange(abs(n)):
             pre = product
             __ n>0:
                 product *= x

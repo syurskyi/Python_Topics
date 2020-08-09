@@ -13,7 +13,7 @@ class Solution(object
         """
         __ not timeSeries: r_ 0
         res = 0
-        for i in range(1, le.(timeSeries)):
+        ___ i in range(1, le.(timeSeries)):
             res += min(timeSeries[i]-timeSeries[i-1], duration)
         res += duration
         r_ res
@@ -27,7 +27,7 @@ class Solution(object
         result = 0
         prev = 0
         maxTime = 0
-        for time in timeSeries:
+        ___ time in timeSeries:
             __ maxTime < time:
                 result += maxTime - prev
                 prev = time
@@ -46,7 +46,7 @@ class Solution(object
                 2,
             ],
         ]
-        for timeSeries, duration in testCases:
+        ___ timeSeries, duration in testCases:
             print('timeSeries: %s' % timeSeries)
             print('duration: %s' % duration)
             result = self.findPoisonedDurationAnother(timeSeries, duration)

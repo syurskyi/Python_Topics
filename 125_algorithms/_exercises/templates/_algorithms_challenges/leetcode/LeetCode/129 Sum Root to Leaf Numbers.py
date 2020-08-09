@@ -31,8 +31,8 @@ class Solution:
         """
         result = []
         self.dfs(root, "", result)
-        result = [int(element) for element in result]
-        r_ sum(result)
+        result = [int(element) ___ element in result]
+        r_ su.(result)
 
     ___ dfs(self, root, cur, result
         """

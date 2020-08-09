@@ -21,7 +21,7 @@ class Solution:
         __ n __ 1:
             r_ True
         t = 0  # Number of remaining steps
-        for i in range(1, n
+        ___ i in range(1, n
             # t is max number of steps that remained if reaching A[i]
             t = max(t, A[i - 1]) - 1
             __ t < 0:

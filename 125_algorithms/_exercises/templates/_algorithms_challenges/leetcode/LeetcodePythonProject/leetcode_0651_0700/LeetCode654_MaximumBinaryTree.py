@@ -28,7 +28,7 @@ class Solution(object
         testCases = [
             [3, 2, 1, 6, 0, 5]
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             newNode = self.constructMaximumBinaryTree(nums)
             __ newNode:

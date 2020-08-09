@@ -14,8 +14,8 @@ class Solution(object
             r_ s
         step = 2*numRows-2
         res = ''
-        for i in range(numRows
-            for j in range(i, le.(s), step
+        ___ i in range(numRows
+            ___ j in range(i, le.(s), step
                 res += s[j]
                 __ i != 0 and i != numRows-1 and j+step-2*i < le.(s
                     res += s[j+step-2*i]

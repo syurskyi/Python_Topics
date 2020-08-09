@@ -19,7 +19,7 @@ HTML = requests.get(LOG).text.split('\n')
 ___ get_day_progress(day=TODAY
     day = day.strftime('%b %d, %Y')
 
-    for line in HTML:
+    ___ line in HTML:
         __ day in line:
             field = line.split('|')[3].strip()
             m = NEW_SCRIPT.match(field)
@@ -44,7 +44,7 @@ ___ create_tweet(m=None
 
 ___ get_date(args
     try:
-        y, m, d = [int(a) for a in args]
+        y, m, d = [int(a) ___ a in args]
     except ValueError:
         raise
 

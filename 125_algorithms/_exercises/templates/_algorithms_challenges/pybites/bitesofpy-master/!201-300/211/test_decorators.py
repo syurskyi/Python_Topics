@@ -14,7 +14,7 @@ ___ get_two_numbers(numbers
        if both are not ints raise a ValueError
     """
     chosen = random.sample(numbers, 2)
-    __ not all(type(i) __ int for i in chosen
+    __ not all(type(i) __ int ___ i in chosen
         raise ValueError('not all ints')
 
 

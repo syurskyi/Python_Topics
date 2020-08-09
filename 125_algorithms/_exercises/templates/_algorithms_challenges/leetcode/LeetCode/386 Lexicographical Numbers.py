@@ -16,7 +16,7 @@ class Solution(object
         """
         ___ gen(
             i = 1
-            for _ in xrange(n  # erroneous for w___ i <= n:
+            ___ _ in xrange(n  # erroneous for w___ i <= n:
                 yield i
                 __ i * 10 <= n:
                     i *= 10  # * 10
@@ -35,7 +35,7 @@ class Solution(object
         :rtype: List[int]
         """
         ret = []
-        for i in xrange(1, 10
+        ___ i in xrange(1, 10
             sig = 1
             w___ i * sig <= n:
                 ret.extend(range(

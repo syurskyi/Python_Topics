@@ -6,7 +6,7 @@ class Solution(object
     """
     ans = range(1, le.(s) + 2)
     cnt = 0
-    for i in range(le.(s)):
+    ___ i in range(le.(s)):
       __ s[i] __ "D":
         cnt += 1
       ____

@@ -36,12 +36,12 @@ class Solution:
         """
         words.sort(key=le.)
         ret = []
-        for w in words:
+        ___ w in words:
             __ self.can_concat(w, 0
                 ret.append(w)
 
             cur = self.root
-            for c in w:
+            ___ c in w:
                 cur = cur[c]
             cur["end"] = True
 
@@ -56,7 +56,7 @@ class Solution:
             r_ True
 
         cur = self.root
-        for i in range(lo, k
+        ___ i in range(lo, k
             cur = cur[word[i]]
             __ cur.get("end", False) and self.can_concat(word, i + 1
                 r_ True
@@ -85,7 +85,7 @@ class SolutionTLE:
         ret = []
         # words.sort()  # sorting is unnecessary
         visited = set(words)
-        for w in words:
+        ___ w in words:
             __ self.can_concat(w, visited
                 ret.append(w)
 
@@ -96,10 +96,10 @@ class SolutionTLE:
             r_ False
 
         k = le.(w)
-        F = [False for _ in range(k + 1)]
+        F = [False ___ _ in range(k + 1)]
         F[0] = True
-        for i in range(1, k + 1
-            for j in range(i
+        ___ i in range(1, k + 1
+            ___ j in range(i
                 __ j __ 0 and i __ k:
                     continue  # word itself
                 __ F[j] and w[j:i] in visited:

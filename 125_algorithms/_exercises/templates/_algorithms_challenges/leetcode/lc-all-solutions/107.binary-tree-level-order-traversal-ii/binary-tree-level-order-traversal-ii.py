@@ -19,7 +19,7 @@ class Solution(object
     queue = deque([root])
     w___ queue:
       levelans = []
-      for _ in range(0, le.(queue)):
+      ___ _ in range(0, le.(queue)):
         root = queue.popleft()
         __ root.left:
           levelans.append(root.left.val)

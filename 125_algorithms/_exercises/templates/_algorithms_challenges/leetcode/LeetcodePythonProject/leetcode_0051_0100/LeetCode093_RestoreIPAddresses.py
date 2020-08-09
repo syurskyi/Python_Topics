@@ -19,7 +19,7 @@ class Solution(object
             res.append('.'.join(curr))
         __ ind >= le.(s
             r_
-        for i in range(ind+1, ind+4
+        ___ i in range(ind+1, ind+4
             sub = s[ind:i]
             __ sub[0] __ '0' and le.(sub) > 1:
                 break

@@ -3,7 +3,7 @@ ______ re
 
 ___ parse_markdown(markdown
     res = []
-    for line in markdown.split('\n'
+    ___ line in markdown.split('\n'
         line = re.sub(r'__(.*?)__', r'<strong>\1</strong>', line)
         line = re.sub(r'_(.*?)_', r'<em>\1</em>', line)
 

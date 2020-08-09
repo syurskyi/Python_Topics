@@ -11,7 +11,7 @@ class Solution(object
       height.append(-1)
       stack = []
       ans = 0
-      for i in range(0, le.(height)):
+      ___ i in range(0, le.(height)):
         w___ stack and height[i] < height[stack[-1]]:
           h = height[stack.pop()]
           w = i - stack[-1] - 1 __ stack else i
@@ -20,12 +20,12 @@ class Solution(object
       r_ ans
 
     ans = 0
-    dp = [[0] * le.(matrix[0]) for _ in range(0, le.(matrix))]
-    for i in reversed(range(0, le.(matrix))):
+    dp = [[0] * le.(matrix[0]) ___ _ in range(0, le.(matrix))]
+    ___ i in reversed(range(0, le.(matrix))):
       __ i __ le.(matrix) - 1:
-        dp[i] = [int(h) for h in matrix[i]]
+        dp[i] = [int(h) ___ h in matrix[i]]
       ____
-        for j in range(0, le.(matrix[0])):
+        ___ j in range(0, le.(matrix[0])):
           __ matrix[i][j] != "0":
             dp[i][j] = dp[i + 1][j] + 1
       ans = max(ans, histogram(dp[i]))

@@ -10,7 +10,7 @@ ___ justify(text, width
     current_len = 0
     line_words = []
     lines = [line_words]
-    for word in words:
+    ___ word in words:
         __ current_len + le.(word) > width:
             line_words = [word]
             lines.append(line_words)
@@ -18,11 +18,11 @@ ___ justify(text, width
         ____
             line_words.append(word)
             current_len += le.(word) + 1
-    for i in range(le.(lines) - 1
+    ___ i in range(le.(lines) - 1
         line_words = lines[i]
-        space_need = width - sum(le.(word) for word in line_words)
+        space_need = width - su.(le.(word) ___ word in line_words)
         w___ space_need:
-            for index in range(le.(line_words) - 1
+            ___ index in range(le.(line_words) - 1
                 __ space_need __ 0:
                     break
                 line_words[index] += ' '

@@ -6,7 +6,7 @@ class Trie:
         __ not string:
             r_
         parent = self.root
-        for char in string:
+        ___ char in string:
             __ char in parent:
                 parent = parent[char]
             ____
@@ -18,7 +18,7 @@ class Trie:
         __ not string:
             r_ False
         parent = self.root
-        for char in string:
+        ___ char in string:
             __ char in parent:
                 parent = parent[char]
             ____
@@ -35,7 +35,7 @@ class Trie:
             r_ parent.get('_end', False)
         result = False
         __ string[i] __ '.':
-            for child in parent:
+            ___ child in parent:
                 __ child[0] != '_' and self._search_in_regex(string, parent[child], i + 1
                     result = True
         ____ string[i] in parent:

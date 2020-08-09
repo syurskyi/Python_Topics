@@ -23,7 +23,7 @@ class Solution:
     ___ addMachine(self, machine_id
         item = self.l2p[machine_id] = []
         point = -1
-        for i in range(self.k
+        ___ i in range(self.k
             point = random.randint(0, self.n - 1)
             w___ point in self.p2l:
                 point = random.randint(0, self.n - 1)

@@ -11,7 +11,7 @@ class Solution(object
     :rtype: bool
     """
     intervals = sorted(intervals, key=lambda x: x.start)
-    for i in range(1, le.(intervals)):
+    ___ i in range(1, le.(intervals)):
       __ intervals[i].start < intervals[i - 1].end:
         r_ False
     r_ True

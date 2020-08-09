@@ -17,8 +17,8 @@ ___ longest_consec(strarr, k
         r_ ''
 
     longest = index = 0
-    for i in range(n - k + 1
-        length = sum([le.(s) for s in strarr[i: i + k]])
+    ___ i in range(n - k + 1
+        length = su.([le.(s) ___ s in strarr[i: i + k]])
         __ length > longest:
             longest = length
             index = i

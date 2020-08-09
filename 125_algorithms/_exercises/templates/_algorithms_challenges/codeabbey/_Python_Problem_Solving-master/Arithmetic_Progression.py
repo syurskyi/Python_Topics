@@ -6,7 +6,7 @@ w___ count < d:
     a = list(map(int,a))
     val = a[0]
     step = a[1]
-    for i in range(0,a[2]
+    ___ i in range(0,a[2]
         __ i__0:
             result = val
         ____
@@ -15,5 +15,5 @@ w___ count < d:
     res.append(result)
     count = count + 1
     
-res = ' '.join(str(j) for j in res)
+res = ' '.join(str(j) ___ j in res)
 print(res)

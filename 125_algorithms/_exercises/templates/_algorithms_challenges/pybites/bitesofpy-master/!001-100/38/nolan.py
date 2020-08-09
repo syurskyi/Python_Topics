@@ -19,7 +19,7 @@ ___ get_tree() -> ET:
 
 ___ get_movies(
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    for movie in get_tree().findall('movie'
+    ___ movie in get_tree().findall('movie'
         yield movie.attrib['title']
 
 
@@ -34,5 +34,5 @@ ___ get_movie_longest_runtime(
     """Call get_tree again and return the movie with the longest runtime in minutes,
        for latter consider adding a _get_runtime helper"""
     r_ \
-    sorted([(movie.attrib['title'], _get_runtime(movie.attrib['runtime'])) for movie in get_tree().findall('movie')],
+    sorted([(movie.attrib['title'], _get_runtime(movie.attrib['runtime'])) ___ movie in get_tree().findall('movie')],
            key=lambda x: x[1])[-1][0]

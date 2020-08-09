@@ -15,11 +15,11 @@ class Solution(object
         __ k __ 0 or n >= k+w: r_ 1
         dp = [1.0]+[0.0]*n
         wSum = 1.0
-        for i in range(1, n+1
+        ___ i in range(1, n+1
             dp[i] = wSum/w
             __ i < k: wSum += dp[i]
             __ i - w >= 0: wSum -= dp[i-w]
-        r_ sum(dp[k:])
+        r_ su.(dp[k:])
     
     ___ test(self
         testCases = [
@@ -27,7 +27,7 @@ class Solution(object
             [6, 1, 10],
             [21, 17, 10],
         ]
-        for n, k, w in testCases:
+        ___ n, k, w in testCases:
             result = self.new21Game(n, k, w)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -12,10 +12,10 @@ class Solution(object
     dp[1] = 1
     heap = []
     indexes = [1] * le.(primes)
-    for i in range(0, le.(primes)):
+    ___ i in range(0, le.(primes)):
       heapq.heappush(heap, (dp[indexes[i]] * primes[i], i))
 
-    for i in range(2, n + 1
+    ___ i in range(2, n + 1
       minV = heap[0][0]
       dp[i] = minV
       w___ heap[0][0] __ minV:

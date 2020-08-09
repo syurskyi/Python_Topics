@@ -6,7 +6,7 @@ class Solution(object
     """
     num = ""
     stack = [["", 1]]
-    for c in s:
+    ___ c in s:
       __ c in "0123456789":
         num += c
       ____ c __ "[":

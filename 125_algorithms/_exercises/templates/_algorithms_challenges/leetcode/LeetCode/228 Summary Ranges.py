@@ -19,7 +19,7 @@ class Solution:
 
         bgn = nums[0]
         pre = nums[0]
-        for i in xrange(1, n
+        ___ i in xrange(1, n
             __ nums[i] != pre+1:
                 __ pre != bgn:
                     ret.append("%d->%d"%(bgn, pre))

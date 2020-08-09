@@ -19,10 +19,10 @@ class Solution(object
         cnt = defaultdict(int)
         A = 0
         B = 0
-        for c in secret:
+        ___ c in secret:
             cnt[c] += 1
 
-        for i, v in enumerate(guess
+        ___ i, v in enumerate(guess
             __ v __ secret[i]:
                 A += 1
                 __ cnt[v] > 0:

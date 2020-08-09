@@ -69,7 +69,7 @@ class Solution:
         has_larger = False
         w___ q:
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e __ Y:
                     r_ t
 

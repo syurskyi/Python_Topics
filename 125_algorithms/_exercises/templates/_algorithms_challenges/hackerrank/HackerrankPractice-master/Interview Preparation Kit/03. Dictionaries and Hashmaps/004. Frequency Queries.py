@@ -8,7 +8,7 @@ from collections ______ defaultdict
 arr = defaultdict(int)
 frequencies = defaultdict(int)
 result = []
-for i in range(int(input())):
+___ i in range(int(input())):
     command, value = map(int, input().split())
     __ command __ 1:
         arr[value] += 1
@@ -21,5 +21,5 @@ for i in range(int(input())):
     __ command __ 3:
         result.append(1 __ frequencies[value] > 0 else 0)
 
-for i in result:
+___ i in result:
     print(i)

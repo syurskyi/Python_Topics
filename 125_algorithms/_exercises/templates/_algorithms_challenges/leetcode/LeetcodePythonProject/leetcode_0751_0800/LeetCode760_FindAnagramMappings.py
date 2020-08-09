@@ -12,12 +12,12 @@ class Solution(object
         """
         arr1, arr2 = A, B
         hashmap = {}
-        for i, num in enumerate(arr2
+        ___ i, num in enumerate(arr2
             __ num not in hashmap:
                 hashmap[num] = []
             hashmap[num].append(i)
         res = []
-        for num in arr1:
+        ___ num in arr1:
             res.append(hashmap[num].pop())
         r_ res
     
@@ -28,7 +28,7 @@ class Solution(object
                 [50, 12, 32, 46, 28],
             ],
         ]
-        for arr1, arr2 in testCases:
+        ___ arr1, arr2 in testCases:
             print('arr1: %s' % arr1)
             print('arr2: %s' % arr2)
             result = self.anagramMappings(arr1, arr2)

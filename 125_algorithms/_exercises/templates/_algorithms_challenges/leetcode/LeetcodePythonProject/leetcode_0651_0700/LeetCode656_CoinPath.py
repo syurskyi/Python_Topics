@@ -17,10 +17,10 @@ class Solution(object
         dp = [float('inf')]*n
         dp[-1] = nums[-1]
         pos = [-1]*n
-        for i in range(n-2, -1, -1
+        ___ i in range(n-2, -1, -1
             __ nums[i] __ -1:
                 continue
-            for j in range(i+1, min(i+B, n-1)+1
+            ___ j in range(i+1, min(i+B, n-1)+1
                 __ dp[j] __ float('inf'
                     continue
                 __ nums[i]+dp[j] < dp[i]:
@@ -49,7 +49,7 @@ class Solution(object
                 3,
             ],
         ]
-        for a, b in testCases:
+        ___ a, b in testCases:
             print('a: %s' % a)
             print('b: %s' % b)
             result = self.cheapestJump(a, b)

@@ -5,7 +5,7 @@ class TestGraph(object
 
     ___ create_graph(self
         graph = Graph()
-        for key in range(0, 6
+        ___ key in range(0, 6
             graph.add_node(key)
         r_ graph
 

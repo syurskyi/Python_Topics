@@ -38,7 +38,7 @@ class Solution(object
             r_ 0
 
         cnt = defaultdict(int)
-        for e in s: cnt[e] += 1
+        ___ e in s: cnt[e] += 1
 
         c = min(
             s,

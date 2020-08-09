@@ -6,7 +6,7 @@ class Solution(object
     """
     res = []
     nums.sort()
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       __ i > 0 and nums[i] __ nums[i - 1]:
         continue
       target = 0 - nums[i]

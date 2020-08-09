@@ -6,4 +6,4 @@ class Solution(object
     """
     nums.sort()
     mid = nums[le.(nums) / 2]
-    r_ sum(abs(num - mid) for num in nums)
+    r_ su.(abs(num - mid) ___ num in nums)

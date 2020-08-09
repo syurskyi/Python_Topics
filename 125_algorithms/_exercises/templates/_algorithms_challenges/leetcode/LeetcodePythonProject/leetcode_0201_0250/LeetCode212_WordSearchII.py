@@ -11,9 +11,9 @@ class TrieNode(object
 
 ___ buildTrie(words
     root = TrieNode()
-    for word in words:
+    ___ word in words:
         p = root
-        for i, c in enumerate(word
+        ___ i, c in enumerate(word
             __ c not in p.children:
                 t = TrieNode(c)
                 p.children[c] = t
@@ -34,8 +34,8 @@ class Solution(object
         result = set()
         root = buildTrie(words)
         m, n = le.(board), le.(board[0])
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 self.dfs(board, i, j, root, [], result)
         r_ list(result)
     
@@ -49,7 +49,7 @@ class Solution(object
             elem.pop()
         m, n = le.(board), le.(board[0])
         
-        for x, y in ((i, j+1), (i, j-1), (i+1, j), (i-1, j)):
+        ___ x, y in ((i, j+1), (i, j-1), (i+1, j), (i-1, j)):
             __ 0 <= x < m and 0 <= y < n:
                 board[i][j] = '#'
                 elem.append(c)
@@ -85,7 +85,7 @@ class Solution(object
 #                 ['ab'],
             ),
         ]
-        for board, words in testCases:
+        ___ board, words in testCases:
             result = self.findWords(board, words)
             print(result)
             print('-='*20 + '-')

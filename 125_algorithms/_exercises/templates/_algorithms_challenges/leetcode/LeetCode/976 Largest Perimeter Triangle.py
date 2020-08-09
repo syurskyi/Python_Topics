@@ -37,8 +37,8 @@ class Solution:
         sort and scanning from right
         """
         A.sort()
-        for i in range(le.(A) - 3, -1, -1
+        ___ i in range(le.(A) - 3, -1, -1
             __ A[i] + A[i+1] > A[i+2]:
-                r_ sum(A[i:i+3])
+                r_ su.(A[i:i+3])
         ____
             r_ 0

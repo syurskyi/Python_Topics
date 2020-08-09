@@ -17,14 +17,14 @@ class Solution:
     """
     ___ connectedSet2(self, nodes
         # Build UnionFind
-        for node in nodes:
-            for nei in node.neighbors:
+        ___ node in nodes:
+            ___ nei in node.neighbors:
                 self.connect(nei.label, node.label)
 
         # Categorify result
         result = {}
         root_label = ''
-        for node in nodes:
+        ___ node in nodes:
             root_label = self.find(node.label)
             __ root_label not in result:
                 result[root_label] = []

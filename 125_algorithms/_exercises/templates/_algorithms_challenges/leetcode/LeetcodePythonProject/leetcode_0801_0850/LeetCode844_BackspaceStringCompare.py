@@ -12,12 +12,12 @@ class Solution(object
         """
         s, t = S, T
         s0, t0 = '', ''
-        for c in s:
+        ___ c in s:
             __ c __ '#':
                 s0 = s0[:-1]
             ____
                 s0 += c
-        for c in t:
+        ___ c in t:
             __ c __ '#':
                 t0 = t0[:-1]
             ____
@@ -28,7 +28,7 @@ class Solution(object
         testCases = [
             
         ]
-        for s, t in testCases:
+        ___ s, t in testCases:
             result = self.backspaceCompare(s, t)
             print('result: %s' % result)
             print('-='*30+'-')

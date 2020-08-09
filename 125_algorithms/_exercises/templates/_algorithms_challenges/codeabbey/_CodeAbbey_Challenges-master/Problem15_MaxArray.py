@@ -3,7 +3,7 @@ with open("prob15.txt") as infile:
     max_ = 0
     data = infile.read()
     data = data.split(" ")
-    for each_digit in data:
+    ___ each_digit in data:
         each_digit =int(each_digit)
         __ int(each_digit) < min_:
             min_ = each_digit

@@ -43,11 +43,11 @@ class Solution:
         Let F[i] be the number of consecutive subsequence at A[i]
         """
         counter = defaultdict(int)
-        for e in nums:
+        ___ e in nums:
             counter[e] += 1
 
         F = defaultdict(int)
-        for e in nums:
+        ___ e in nums:
             __ counter[e] __ 0:
                 continue
             counter[e] -= 1
@@ -90,7 +90,7 @@ class Solution2:
         split when duplicate
         """
         h = []
-        for n in nums:
+        ___ n in nums:
             w___ h and h[0].end + 1 < n:
                 itvl = heapq.heappop(h)
                 __ itvl.length < 3:
@@ -105,7 +105,7 @@ class Solution2:
                 heapq.heappush(h, Interval(n, 1))
 
 
-        for itvl in h:
+        ___ itvl in h:
             __ itvl.length < 3:
                 r_ False
 

@@ -23,7 +23,7 @@ class Solution:
     """
     ___ maxTree(self, A
         stack = []
-        for val in A:
+        ___ val in A:
             node = TreeNode(val)
             w___ stack and val > stack[-1].val:
                 node.left = stack.pop()

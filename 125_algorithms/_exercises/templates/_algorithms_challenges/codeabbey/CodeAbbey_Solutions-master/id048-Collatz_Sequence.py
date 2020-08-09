@@ -2,7 +2,7 @@ ___ collatzSequence(tests
     data = raw_input().split()
     answer = []
     
-    for test in range(tests
+    ___ test in range(tests
         count = 0
         value = int(data[test])
         

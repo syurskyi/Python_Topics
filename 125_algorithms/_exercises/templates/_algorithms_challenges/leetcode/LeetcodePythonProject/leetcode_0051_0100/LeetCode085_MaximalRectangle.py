@@ -12,14 +12,14 @@ class Solution(object
         area = 0
         __ not matrix or not matrix[0]: r_ area
         m, n = le.(matrix), le.(matrix[0])
-        heights = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m
-            for j in range(n
+        heights = [[0]*(n+1) ___ _ in range(m+1)]
+        ___ i in range(m
+            ___ j in range(n
                 __ matrix[i][j] __ '0':
                     heights[i+1][j] = 0
                 ____
                     heights[i+1][j] = heights[i][j]+1
-        for i in range(m
+        ___ i in range(m
             area = max(area, self.getArea(heights[i+1]))
         r_ area
     
@@ -47,7 +47,7 @@ class Solution(object
                 ["1","0","0","1","0"]
             ],
         ]
-        for matrix in testCases:
+        ___ matrix in testCases:
             result = self.maximalRectangle(matrix)
             print('result: %s' % result)
             print('-='*30+'-')

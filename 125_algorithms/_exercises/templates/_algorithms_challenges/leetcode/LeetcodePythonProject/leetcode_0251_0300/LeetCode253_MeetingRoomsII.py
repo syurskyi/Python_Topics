@@ -19,7 +19,7 @@ class Solution(object
         intervals.sort(key=lambda x: x.start)
         heap = []
         maxLen = 0
-        for interval in intervals:
+        ___ interval in intervals:
             w___ heap and heap[0] <= interval.start:
                 heapq.heappop(heap)
             heapq.heappush(heap, interval.end)
@@ -33,9 +33,9 @@ class Solution(object
             [[13, 15], [0, 13]],
             [[2, 15], [36, 45], [9, 29], [16, 23], [4, 9]],
         ]
-        for intervals in testCases:
+        ___ intervals in testCases:
             print('intervals: %s' % (intervals))
-            intervals = [Interval(inter[0], inter[1]) for inter in intervals]
+            intervals = [Interval(inter[0], inter[1]) ___ inter in intervals]
             result = self.minMeetingRooms(intervals)
             print('result: %s' % result)
             print('-='*20+'-')

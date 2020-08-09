@@ -6,7 +6,7 @@ ___ test_get_similarities(
     similar_tags = list(get_similarities())
 
     # not interested in the order of the pairs
-    similar_tags = {tuple(sorted(pair)) for pair in similar_tags}
+    similar_tags = {tuple(sorted(pair)) ___ pair in similar_tags}
 
     expected = [('cheat sheet', 'cheat sheets'),
                 ('python anywhere', 'pythonanywhere'),
@@ -23,5 +23,5 @@ ___ test_get_similarities(
                 ('object oriented', 'objectoriented'),
                 ('code challenges', 'codechallenges')]
 
-    for hit in expected:
+    ___ hit in expected:
         assert tuple(sorted(hit)) in similar_tags, f'{hit} not in similar tags'

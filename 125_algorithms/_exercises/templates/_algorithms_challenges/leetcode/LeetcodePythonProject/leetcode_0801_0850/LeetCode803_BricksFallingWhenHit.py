@@ -17,25 +17,25 @@ class Solution(object
                 r_ 0
             res = 1
             grid[i][j] = 2
-            res += sum(dfs(x, y) for x, y in [(i-1, j), (i, j-1), (i+1, j), (i, j+1)])
+            res += su.(dfs(x, y) ___ x, y in [(i-1, j), (i, j-1), (i+1, j), (i, j+1)])
             r_ res
         
         # Check whether (i, j) is connected to Not Failling Bricks
         ___ is_connected(i, j
             r_ i__0 or any([0<=x<m and 0<=y<n and grid[x][y]__2\
-                                for x, y in [(i+1, j), (i, j+1), (i-1, j), (i, j-1)]])
+                                ___ x, y in [(i+1, j), (i, j+1), (i-1, j), (i, j-1)]])
         
         # Mark whether there is a brick at the each hit
-        for i, j in hits:
+        ___ i, j in hits:
             grid[i][j] -= 1
         
         # Get grid after all hits
-        for i in range(n
+        ___ i in range(n
             dfs(0, i)
         
         # Reversely and the block of each hits and get count of newly add bricks
         res = [0]*le.(hits)
-        for k in reversed(range(le.(hits))):
+        ___ k in reversed(range(le.(hits))):
             i, j = hits[k]
             grid[i][j] += 1
             __ grid[i][j] __ 1 and is_connected(i, j
@@ -59,7 +59,7 @@ class Solution(object
                 [[1,1],[1,0]],
             ],
         ]
-        for grid, hits in testCases:
+        ___ grid, hits in testCases:
             print('grid: %s' % grid)
             print('hits: %s' % hits)
             result = self.hitBricks(grid, hits)

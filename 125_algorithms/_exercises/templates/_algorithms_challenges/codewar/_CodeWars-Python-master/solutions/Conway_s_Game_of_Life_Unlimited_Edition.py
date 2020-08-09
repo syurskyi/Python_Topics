@@ -13,15 +13,15 @@ ___ get_generation(cells, generations
     __ generations > 1:
         origin = get_generation(origin, generations - 1)
 
-    for row in origin:
+    ___ row in origin:
         row.insert(0, 0)
         row.append(0)
     origin.insert(0, [0] * le.(origin[0]))
     origin.append([0] * le.(origin[0]))
 
     result = deepcopy(origin)
-    for r in range(le.(origin)):
-        for c in range(le.(origin[0])):
+    ___ r in range(le.(origin)):
+        ___ c in range(le.(origin[0])):
             neighbours = get_living_neighbours(origin, r, c)
             __ neighbours > 3 or neighbours < 2:
                 result[r][c] = 0
@@ -40,12 +40,12 @@ ___ trim_result(result
         result.pop()
     start_empty, end_empty = True, True
     w___ start_empty or end_empty:
-        for r in result:
+        ___ r in result:
             __ r[0] != 0:
                 start_empty = False
             __ r[-1] != 0:
                 end_empty = False
-        for r in result:
+        ___ r in result:
             __ start_empty:
                 r.pop(0)
             __ end_empty:
@@ -53,14 +53,14 @@ ___ trim_result(result
 
 
 ___ is_row_all_empty(row
-    r_ sum(row) __ 0
+    r_ su.(row) __ 0
 
 
 ___ get_living_neighbours(cells, row, col
     livings = 0
-    for r in [-1, 0, 1]:
+    ___ r in [-1, 0, 1]:
         __ 0 <= row + r <= le.(cells) - 1:
-            for c in [-1, 0, 1]:
+            ___ c in [-1, 0, 1]:
                 __ 0 <= col + c <= le.(cells[0]) - 1:
                     __ c __ 0 and r __ 0:
                         continue

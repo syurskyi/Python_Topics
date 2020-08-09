@@ -12,7 +12,7 @@ class Solution(object
         """
         s = S
         res = [1, 0]
-        for c in s:
+        ___ c in s:
             __ res[1] + widths[ord(c)-ord('a')] <= 100:
                 res[1] += widths[ord(c)-ord('a')]
             ____

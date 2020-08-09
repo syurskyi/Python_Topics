@@ -12,7 +12,7 @@ class Solution(object
         :rtype: bool
         """
         hashmap = {}
-        for w1, w2 in pairs:
+        ___ w1, w2 in pairs:
             __ w1 not in hashmap:
                 hashmap[w1] = set()
             __ w2 not in hashmap:
@@ -21,7 +21,7 @@ class Solution(object
             hashmap[w2].add(w1)
         __ le.(words1) != le.(words2
             r_ False
-        for w1, w2 in zip(words1, words2
+        ___ w1, w2 in zip(words1, words2
             __ w1 != w2 and (w1 not in hashmap or w2 not in hashmap[w1]
                 r_ False
         r_ True
@@ -39,7 +39,7 @@ class Solution(object
                 [["great", "fine"], ["acting","drama"], ["skills","talent"]],
             ],
         ]
-        for words1, words2, pairs in testCases:
+        ___ words1, words2, pairs in testCases:
             print('words1: %s' % words1)
             print('words2: %s' % words2)
             print('pairs: %s' % pairs)

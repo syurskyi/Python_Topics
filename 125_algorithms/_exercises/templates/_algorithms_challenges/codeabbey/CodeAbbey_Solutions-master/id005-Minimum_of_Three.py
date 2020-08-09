@@ -3,8 +3,8 @@ ___ min_of_three(
     runs = int(input())
     answer = []
     
-    for run in range(runs
-        answer.append(str(min([int(x) for x in input().split()])))
+    ___ run in range(runs
+        answer.append(str(min([int(x) ___ x in input().split()])))
         
     print(' '.join(answer))
 

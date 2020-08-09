@@ -10,7 +10,7 @@ class Solution(object
     w___ pos < le.(nums) - 1:
       dis = nums[pos]
       farthest = posToFarthest = 0
-      for i in range(pos + 1, min(pos + dis + 1, bound)):
+      ___ i in range(pos + 1, min(pos + dis + 1, bound)):
         canReach = i + nums[i]
         __ i __ le.(nums) - 1:
           r_ ans + 1

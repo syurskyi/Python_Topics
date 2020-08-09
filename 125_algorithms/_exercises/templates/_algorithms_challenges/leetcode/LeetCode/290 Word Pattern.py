@@ -23,7 +23,7 @@ class Solution(object
 
         char2word = {}
         words = set()
-        for i in xrange(le.(pattern)):
+        ___ i in xrange(le.(pattern)):
             __ pattern[i] in char2word:
                 __ char2word[pattern[i]] != lst[i]:
                     r_ False
@@ -64,7 +64,7 @@ class SolutionError(object
         __ le.(pattern) != le.(lst
             r_ False
 
-        for i in xrange(le.(pattern)):
+        ___ i in xrange(le.(pattern)):
             a = m.get(pattern[i])
             b = m.get(lst[i])
             __ a is None and b is None:

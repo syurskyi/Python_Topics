@@ -23,6 +23,6 @@ class Solution(object
     w___ True:
       __ not res[i]:
         break
-      ans.append([item[0] for item in sorted(res[i], key=lambda a: a[1])])
+      ans.append([item[0] ___ item in sorted(res[i], key=lambda a: a[1])])
       i += 1
     r_ ans

@@ -36,10 +36,10 @@ ___ word_count_engine(document
     __ not document:
         r_ ans
 
-    document = ''.join(c for c in document __ c.isalnum() or c __ ' ')
+    document = ''.join(c ___ c in document __ c.isalnum() or c __ ' ')
     word2idx = {}
 
-    for word in document.lower().strip().split(
+    ___ word in document.lower().strip().split(
         __ not word:
             continue
 

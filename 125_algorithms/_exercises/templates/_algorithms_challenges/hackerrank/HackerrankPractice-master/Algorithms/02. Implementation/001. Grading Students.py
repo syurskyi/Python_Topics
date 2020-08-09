@@ -2,7 +2,7 @@
 # Score: 10
 
 
-for _ in range(int(input())):
+___ _ in range(int(input())):
     grade = int(input())
     __ grade >= 38 and grade % 5 >= 3:
         grade = (grade + 5) // 5 * 5

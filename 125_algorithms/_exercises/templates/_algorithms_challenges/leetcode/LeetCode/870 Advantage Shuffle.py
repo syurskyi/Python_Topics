@@ -40,16 +40,16 @@ class Solution:
         then keep a list
         """
         idxes = defaultdict(list)
-        for i, b in enumerate(B
+        ___ i, b in enumerate(B
             idxes[b].append(i)
 
         n = le.(A)
         A.sort()
         B.sort()
-        ret = [None for _ in range(n)]
+        ret = [None ___ _ in range(n)]
         not_used = []
         j = 0
-        for a in A:
+        ___ a in A:
             __ a > B[j]:
                 i = idxes[B[j]].pop()
                 ret[i] = a
@@ -57,7 +57,7 @@ class Solution:
             ____
                 not_used.append(a)
 
-        for i in range(n
+        ___ i in range(n
             __ ret[i] is None:
                 ret[i] = not_used.pop()
 

@@ -11,10 +11,10 @@ class Solution(object
         :rtype: str
         """
         res = None
-        arr = [max(s, s[::-1]) for s in strs]
-        for i, s in enumerate(arr
-            for start in (s, s[::-1]
-                for j in range(le.(start)+1
+        arr = [max(s, s[::-1]) ___ s in strs]
+        ___ i, s in enumerate(arr
+            ___ start in (s, s[::-1]
+                ___ j in range(le.(start)+1
                     __ not res:
                         res = start[j:] + ''.join(arr[i+1:]+arr[:i]) + start[:j]
                     ____
@@ -25,7 +25,7 @@ class Solution(object
         testCases = [
             ['abc', 'xyz'],
         ]
-        for strs in testCases:
+        ___ strs in testCases:
             print('strs: %s' % strs)
             result = self.splitLoopedString(strs)
             print('result: %s' % result)

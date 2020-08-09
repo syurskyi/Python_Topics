@@ -7,10 +7,10 @@ class Solution(object
     maxLen = 0
     single = False
     d = {}
-    for c in s:
+    ___ c in s:
       d[c] = d.get(c, 0) + 1
 
-    for key in d:
+    ___ key in d:
       __ d[key] >= 2:
         count = d[key]
         left = d[key] % 2

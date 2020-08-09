@@ -26,7 +26,7 @@ class Solution(object
         queue = [root]
         w___ queue:
             num = le.(queue)
-            for _ in range(num
+            ___ _ in range(num
                 node = queue.pop(0)
                 __ node.left:
                     __ level __ d-1:
@@ -68,7 +68,7 @@ class Solution(object
                 3
             ],
         ]
-        for root, v, d in testCases:
+        ___ root, v, d in testCases:
             newRoot = self.addOneRow(root, v, d)
             print(newRoot.val)
             print('-='*30+'-')

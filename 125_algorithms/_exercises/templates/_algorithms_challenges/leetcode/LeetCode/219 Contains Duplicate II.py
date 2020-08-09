@@ -15,10 +15,10 @@ class Solution:
         :rtype: bool
         """
         d = defaultdict(list)
-        for i, v in enumerate(nums
+        ___ i, v in enumerate(nums
             heapq.heappush(d[v], i)
 
-        for v in d.values(
+        ___ v in d.values(
             __ le.(v) > 1:
                 pre = heapq.heappop(v)
                 w___ v:

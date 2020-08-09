@@ -16,7 +16,7 @@ class Solution:
 
         left = 1
         total_len = right = L[0]
-        for i in range(1, le.(L)):
+        ___ i in range(1, le.(L)):
             __ L[i] > right:
                 right = L[i]
 
@@ -37,7 +37,7 @@ class Solution:
     ___ check_if_possible(self, L, size, max_pieces
         pieces = 0
 
-        for i in range(le.(L)):
+        ___ i in range(le.(L)):
             pieces += L[i] // size
             __ pieces >= max_pieces:
                 r_ True

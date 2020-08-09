@@ -23,7 +23,7 @@ class Solution(object
         s = s.lower()
         # ______ re  # not supported
         # s = re.sub('[^a-zA-Z0-9]', '', s)  # not supported
-        s = ''.join(e for e in s __ e.isalnum())
+        s = ''.join(e ___ e in s __ e.isalnum())
         __ not s:
             r_ True
 

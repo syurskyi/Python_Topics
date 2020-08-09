@@ -10,7 +10,7 @@ class Solution:
 
         Pmin = P[0]
 
-        for i in range(1, le.(P)):
+        ___ i in range(1, le.(P)):
             __ P[i] - Pmin > ans:
                 ans = P[i] - Pmin
             __ P[i] < Pmin:

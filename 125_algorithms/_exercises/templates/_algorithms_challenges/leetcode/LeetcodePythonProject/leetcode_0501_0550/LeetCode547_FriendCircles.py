@@ -14,8 +14,8 @@ class Solution(object
         n = le.(matrix)
         roots = [-1]*n
         count = n
-        for i in range(n
-            for j in range(n
+        ___ i in range(n
+            ___ j in range(n
                 __ i > j and matrix[i][j] __ 1:
                     root1 = self.getRoot(roots, i)
                     root2 = self.getRoot(roots, j)
@@ -48,9 +48,9 @@ class Solution(object
             ],
             [[1,1,0,0,0,0,0,1,0,0,0,0,0,0,0],[1,1,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,1,0,1,1,0,0,0,0,0,0,0,0],[0,0,0,0,1,0,0,0,0,1,1,0,0,0,0],[0,0,0,1,0,1,0,0,0,0,1,0,0,0,0],[0,0,0,1,0,0,1,0,1,0,0,0,0,1,0],[1,0,0,0,0,0,0,1,1,0,0,0,0,0,0],[0,0,0,0,0,0,1,1,1,0,0,0,0,1,0],[0,0,0,0,1,0,0,0,0,1,0,1,0,0,1],[0,0,0,0,1,1,0,0,0,0,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,1,0,1,0,0,0,0,1,0],[0,0,0,0,0,0,0,0,0,1,0,0,0,0,1]],
         ]
-        for matrix in testCases:
+        ___ matrix in testCases:
             print('matrix:')
-            print('\n'.join([str(row) for row in matrix]))
+            print('\n'.join([str(row) ___ row in matrix]))
             res = self.findCircleNum(matrix)
             print('result: %s' % res)
             print('-='*30+'-')

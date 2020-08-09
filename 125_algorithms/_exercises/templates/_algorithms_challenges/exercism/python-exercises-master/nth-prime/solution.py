@@ -11,7 +11,7 @@ ___ nth_prime(n
 
     ___ is_prime(m
         sqrt_m = sqrt(m)
-        for k in known:
+        ___ k in known:
             __ k > sqrt_m:
                 r_ True
             ____ m % k __ 0:
@@ -29,6 +29,6 @@ ___ nth_prime(n
 ___ prime_candidates(
     yield 2
     yield 3
-    for n in count(6, 6
+    ___ n in count(6, 6
         yield n - 1
         yield n + 1

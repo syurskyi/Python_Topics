@@ -39,13 +39,13 @@ class Solution(object
         :type target: int
         :rtype: int
         """
-        F = [0 for _ in xrange(target + 1)]
+        F = [0 ___ _ in xrange(target + 1)]
         nums = filter(lambda x: x <= target, nums)
-        for k in nums:
+        ___ k in nums:
             F[k] = 1
 
-        for i in xrange(target + 1
-            for k in nums:
+        ___ i in xrange(target + 1
+            ___ k in nums:
                 __ i - k >= 0:
                     F[i] += F[i-k]
 

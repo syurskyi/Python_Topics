@@ -9,11 +9,11 @@ class Solution:
 
         n = le.(array)
 
-        for size in range(1, n + 1
+        ___ size in range(1, n + 1
             gotcha = True
 
-            for i in range(size
-                __ any(array[i] != array[j] for j in range(i + size, n, size)):
+            ___ i in range(size
+                __ any(array[i] != array[j] ___ j in range(i + size, n, size)):
                     gotcha = False
 
             __ gotcha:

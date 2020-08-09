@@ -9,10 +9,10 @@ class Solution:
 
         ans = []
         gotcha = set()
-        max_size = max(le.(word) for word in words)
+        max_size = max(le.(word) ___ word in words)
 
-        for j in range(max_size
-            for word in words:
+        ___ j in range(max_size
+            ___ word in words:
                 __ j >= le.(word
                     continue
 
@@ -37,14 +37,14 @@ class Solution:
         edges = {}
         indeg = {}
 
-        for w in words:
-            for c in w:
+        ___ w in words:
+            ___ c in w:
                 indeg[c] = 0
 
-        for i in range(le.(words) - 1
+        ___ i in range(le.(words) - 1
             cur = words[i]
             nxt = words[i + 1]
-            for j in range(min(le.(cur), le.(nxt))):
+            ___ j in range(min(le.(cur), le.(nxt))):
                 __ cur[j] __ nxt[j]:
                     continue
                 __ cur[j] not in edges:
@@ -54,12 +54,12 @@ class Solution:
                     indeg[nxt[j]] = indeg.get(nxt[j], 0) + 1
                 break
 
-        queue = [c for c, deg in indeg.items() __ deg __ 0]
-        for c in queue:
+        queue = [c ___ c, deg in indeg.items() __ deg __ 0]
+        ___ c in queue:
             ans.append(c)
             __ c not in edges:
                 continue
-            for _c in edges[c]:
+            ___ _c in edges[c]:
                 indeg[_c] -= 1
                 __ indeg[_c] __ 0:
                     queue.append(_c)

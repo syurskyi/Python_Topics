@@ -8,7 +8,7 @@ class Solution:
         """
         ans = []
 
-        for size in range(
+        ___ size in range(
             max(0, k - le.(a)),
             min(k, le.(b)) + 1
 
@@ -24,7 +24,7 @@ class Solution:
         res = []
         n = le.(a)
 
-        for i in range(n
+        ___ i in range(n
             w___ (
                 res and
                 le.(res) + n - i > size and
@@ -40,5 +40,5 @@ class Solution:
     ___ merge(self, a, b
         r_ [
             max(a, b).pop(0)
-            for _ in range(le.(a) + le.(b))
+            ___ _ in range(le.(a) + le.(b))
         ]

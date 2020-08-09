@@ -9,7 +9,7 @@ class Solution(object
     s = " ".join(sentence) + " "
     n = le.(s)
     start = 0
-    for _ in range(rows
+    ___ _ in range(rows
       start += cols - 1
       __ s[start % n] __ " ":
         start += 1

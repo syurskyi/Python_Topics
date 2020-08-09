@@ -24,7 +24,7 @@ class TrieService:
                 or not frequency:
             r_
         parent = self.root
-        for char in word:
+        ___ char in word:
             __ char not in parent.children:
                 parent.children[char] = TrieNode()
             parent = parent.children[char]

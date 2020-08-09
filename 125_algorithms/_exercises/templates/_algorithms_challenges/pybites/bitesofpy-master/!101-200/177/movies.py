@@ -19,10 +19,10 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=False
     idx = np.repeat(df.index.values, lens)
     res = (pd.DataFrame({
         col: np.repeat(df[col].values, lens)
-        for col in idx_cols},
+        ___ col in idx_cols},
         index=idx)
            .assign(**{col: np.concatenate(df.loc[lens > 0, col].values)
-                      for col in lst_cols}))
+                      ___ col in lst_cols}))
     __ (lens __ 0).any(
         res = (res.append(df.loc[lens __ 0, idx_cols], sort=False)
                .fillna(fill_value))

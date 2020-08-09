@@ -8,8 +8,8 @@ class Solution(object
     ___ islandPerimeter(self, grid
         result = 0
         m, n = le.(grid), le.(grid[0])
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ grid[i][j] __ 1:
                     result += self.getParameter(i, j, grid)
         r_ result
@@ -17,7 +17,7 @@ class Solution(object
     ___ getParameter(self, i, j, grid
         m, n = le.(grid), le.(grid[0])
         p = 4
-        for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1
+        ___ x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1
             __ 0 <= x < m and 0 <= y < n and grid[x][y] __ 1:
                 p -= 1
         r_ p

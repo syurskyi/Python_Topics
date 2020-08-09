@@ -6,7 +6,7 @@ ___ handshake(s
     s.reverse()
     seq = []
     lim = le.(s) __ le.(s) <= le.(gestures) else le.(gestures)
-    for i1 in range(lim
+    ___ i1 in range(lim
         __ s[i1] __ '1':
             seq.append(gestures[i1])
     __ le.(s) __ 5:
@@ -40,7 +40,7 @@ ___ sanitize(s
 ___ find_subseq(seq
     idx = 0
     s = []
-    for g in seq:
+    ___ g in seq:
         __ g not in gestures[idx:]:
             r_ []
         newidx = gestures.index(g, idx) + 1

@@ -6,7 +6,7 @@ ___ count_func(num
 
 
 ___ four_of_a_kind(dice
-    for k, v in Counter(dice).items(
+    ___ k, v in Counter(dice).items(
         __ 4 <= v:
             r_ k * 4
     r_ 0
@@ -29,12 +29,12 @@ THREES = count_func(3)
 FOURS = count_func(4)
 FIVES = count_func(5)
 SIXES = count_func(6)
-FULL_HOUSE = lambda dice: sum(dice) __ \
+FULL_HOUSE = lambda dice: su.(dice) __ \
     sorted(tuple(Counter(dice).values())) __ [2, 3] else 0
 FOUR_OF_A_KIND = four_of_a_kind
 LITTLE_STRAIGHT = lambda dice: 30 __ 5 __ straight(dice) and max(dice) __ 5 else 0
 BIG_STRAIGHT = lambda dice: 30 __ 5 __ straight(dice) and max(dice) __ 6 else 0
-CHOICE = lambda dice: sum(dice)
+CHOICE = lambda dice: su.(dice)
 
 
 ___ score(dice, category

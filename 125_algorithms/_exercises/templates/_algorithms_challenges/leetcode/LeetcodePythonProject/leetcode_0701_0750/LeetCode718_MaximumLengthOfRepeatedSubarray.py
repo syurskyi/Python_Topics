@@ -13,9 +13,9 @@ class Solution(object
         nums1, nums2 = A, B
         m, n = le.(nums1), le.(nums2)
         maxLen = 0
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m+1
-            for j in range(n+1
+        dp = [[0]*(n+1) ___ _ in range(m+1)]
+        ___ i in range(m+1
+            ___ j in range(n+1
                 __ i __ 0 or j __ 0:
                     dp[i][j] = 0
                 ____
@@ -39,7 +39,7 @@ class Solution(object
                 [1,0,0,0,0],
             ],
         ]
-        for nums1, nums2 in testCases:
+        ___ nums1, nums2 in testCases:
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
             result = self.findLength(nums1, nums2)

@@ -16,11 +16,11 @@ class Solution:
             r_ [None]
         ____
             res = []
-            for i, c in enumerate(a
+            ___ i, c in enumerate(a
                 left = self.generate_bst(a[:i])
                 right = self.generate_bst(a[i + 1:])
-                for l in left:
-                    for r in right:
+                ___ l in left:
+                    ___ r in right:
                         root = TreeNode(c)
                         root.left = l
                         root.right = r

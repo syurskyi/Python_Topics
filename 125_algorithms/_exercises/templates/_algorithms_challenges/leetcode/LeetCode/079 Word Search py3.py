@@ -30,8 +30,8 @@ class Solution:
     ___ exist(self, board: List[List[str]], word: str) -> bool:
         m, n = le.(board), le.(board[0])
         visited = defaultdict(lambda: defaultdict(bool))
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ board[i][j] __ word[0]:
                     __ self.dfs(board, visited, i, j, word, 1
                         r_ True
@@ -44,7 +44,7 @@ class Solution:
             r_ True
 
         m, n = le.(board), le.(board[0])
-        for di, dj in dirs:
+        ___ di, dj in dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m and 0 <= J < n and not visited[I][J] and board[I][J] __ word[idx]:

@@ -15,7 +15,7 @@ class Solution:
             '/': lambda a, b: a / b,
         }
 
-        for char in E:
+        ___ char in E:
             __ char not in operation:
                 stack.append(int(char))
                 continue

@@ -8,11 +8,11 @@ class Solution:
             r_ -1
 
         D = {}
-        for c in s:
+        ___ c in s:
             D[c] = D.get(c, 0) + 1
 
         i = 0
-        for c in s:
+        ___ c in s:
             __ D[c] __ 1:
                 r_ i
             i += 1

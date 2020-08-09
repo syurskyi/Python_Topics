@@ -47,7 +47,7 @@ class Solution(object
         :rtype: bool
         """
         required = 0
-        for d in data:
+        ___ d in data:
             __ d & 0x80 __ 0:
                 __ required != 0:
                     r_ False

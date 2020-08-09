@@ -14,11 +14,11 @@ class Solution(object
         :rtype: bool
         """
         m = defaultdict(int)
-        for c in s:
+        ___ c in s:
             m[c] += 1
 
         once = False
-        for v in m.values(
+        ___ v in m.values(
             __ v % 2 __ 1:
                 __ once:
                     r_ False

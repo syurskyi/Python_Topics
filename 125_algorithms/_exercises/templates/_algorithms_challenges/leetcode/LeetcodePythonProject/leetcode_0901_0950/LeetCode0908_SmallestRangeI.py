@@ -18,7 +18,7 @@ class Solution(object
         med = (minVal+maxVal) // 2
         minVal = float('inf')
         maxVal = float('-inf')
-        for num in A:
+        ___ num in A:
             __ num > med:
                 __ num - med > K:
                     num -= K
@@ -39,7 +39,7 @@ class Solution(object
             [[0,10], 2],
             [[1,3,6], 3],
         ]
-        for a, k in testCases:
+        ___ a, k in testCases:
             res = self.smallestRangeI(a, k)
             print('res: %s' % res)
             print('-='*30+'-')

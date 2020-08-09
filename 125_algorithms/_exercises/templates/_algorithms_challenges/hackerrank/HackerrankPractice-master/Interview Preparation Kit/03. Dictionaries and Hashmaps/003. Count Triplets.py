@@ -9,7 +9,7 @@ ___ count_triplets(arr, r
     arr2 = defaultdict(int)
     arr3 = defaultdict(int)
     count = 0
-    for i in arr:
+    ___ i in arr:
         count += arr3[i]
         arr3[i*r] += arr2[i]
         arr2[i*r] += 1

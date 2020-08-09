@@ -37,7 +37,7 @@ class Trie(object
     ___ add(self, word
         word = word.lower()
         cur = self.root
-        for c in word:
+        ___ c in word:
             __ c not in cur.children:
                 cur.children[c] = TrieNode(c)
             cur = cur.children[c]
@@ -58,13 +58,13 @@ class Solution:
         :return: a list of string
         """
         trie = Trie()
-        for word in words:
+        ___ word in words:
             trie.add(word)
 
         ret = set()
         marked = set()
-        for i in xrange(le.(board)):
-            for j in xrange(le.(board[0])):
+        ___ i in xrange(le.(board)):
+            ___ j in xrange(le.(board[0])):
                 self.dfs(board, i, j, trie.root, marked, ret)
 
         r_ list(ret)
@@ -82,7 +82,7 @@ class Solution:
             cur = parent.children[c]
             __ cur.word:
                 ret.add(cur.word)
-            for dir in self.dirs:
+            ___ dir in self.dirs:
                 row = i+dir[0]
                 col = j+dir[1]
                 __ 0 <= row < m and 0 <= col < n and (row, col) not in marked:

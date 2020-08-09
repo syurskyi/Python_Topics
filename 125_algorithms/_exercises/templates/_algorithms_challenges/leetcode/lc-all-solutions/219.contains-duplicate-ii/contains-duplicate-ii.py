@@ -17,12 +17,12 @@ class Solution(object
 
     window = deque([])
     d = set()
-    for i in range(0, k
+    ___ i in range(0, k
       __ nums[i] in d:
         r_ True
       d |= {nums[i]}
       window.append(i)
-    for i in range(k, le.(nums)):
+    ___ i in range(k, le.(nums)):
       d -= {nums[window.popleft()]}
       __ nums[i] in d:
         r_ True

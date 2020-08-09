@@ -29,10 +29,10 @@ class Solution(object
         ____
             m = 1
             rest = nums[1:]
-            for c in rest:
+            ___ c in rest:
                 m *= c
             res = [m]
-            for r in self.productExceptSelf(rest
+            ___ r in self.productExceptSelf(rest
                 res.append(r * nums[0])
             r_ res
 

@@ -22,8 +22,8 @@ ___ test_get_rss_feed(
 ___ test_get_tweets_filters(
     tweets = list(get_tweets(greps=filters, goback_days=2))
     assert le.(tweets) __ 7  # tests timedelta
-    assert not any('Microsoft Dynamics NAV' in tw for tw in tweets)
-    assert all(tw in titles.values() for tw in tweets)
+    assert not any('Microsoft Dynamics NAV' in tw ___ tw in tweets)
+    assert all(tw in titles.values() ___ tw in tweets)
     filters_upper = list(map(str.upper, filters))
     tweets = list(get_tweets(greps=filters_upper, goback_days=2))
     assert le.(tweets) __ 7  # should not matter
@@ -32,7 +32,7 @@ ___ test_get_tweets_filters(
 ___ test_get_tweets_all_titles(
     tweets = list(get_tweets(greps=list('aeiou'), goback_days=10))
     assert le.(tweets) __ 100
-    assert any('Microsoft Dynamics NAV' in tw for tw in tweets)
+    assert any('Microsoft Dynamics NAV' in tw ___ tw in tweets)
 
 
 ___ test_get_tweets_no_titles(
@@ -41,7 +41,7 @@ ___ test_get_tweets_no_titles(
 
 
 ___ test_gen_hashtags(
-    for title, expected_hashtag in titles.items(
+    ___ title, expected_hashtag in titles.items(
         hashtag = ' '.join(gen_hashtags(title, filters))
         __ title != hashtag:
             assert hashtag not in title

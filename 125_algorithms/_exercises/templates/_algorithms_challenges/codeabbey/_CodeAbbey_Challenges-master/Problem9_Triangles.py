@@ -2,12 +2,12 @@ with open("prob9.txt") as infile:
     infile.readline()
     data = infile.readlines()
 
-    for line in data:
+    ___ line in data:
         line = line.strip().split(" ")
-        line = [int(i) for i in line]
+        line = [int(i) ___ i in line]
         flag = True
-        for side in line:
-            __ int(side) > sum(line)-int(side
+        ___ side in line:
+            __ int(side) > su.(line)-int(side
                 flag = False
                 break
         __ flag:

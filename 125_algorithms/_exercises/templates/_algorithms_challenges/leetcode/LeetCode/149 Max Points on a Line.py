@@ -25,8 +25,8 @@ class Solution:
         hash_map = {}  # key -> inner_dict, where key = (k, b), inner_dict is index -> list
 
         length = le.(points)
-        for i in xrange(length
-            for j in xrange(i+1, length
+        ___ i in xrange(length
+            ___ j in xrange(i+1, length
                 point1 = points[i]
                 point2 = points[j]
                 __ point1.x __ point2.x:
@@ -41,7 +41,7 @@ class Solution:
                     key = (slope, intersection)  # only tuples can be hashed, whereas lists cannot
 
                 __ key not in hash_map:
-                    hash_map[key] = [0 for _ in points]
+                    hash_map[key] = [0 ___ _ in points]
                 hash_map[key][i] = 1  # avoid duplicate
                 hash_map[key][j] = 1
 
@@ -53,7 +53,7 @@ class Solution:
             r_ 0
 
         maxa = -1<<32
-        for key, item in hash_map.items(
+        ___ key, item in hash_map.items(
             # current = le.(filter(lambda x: x==1, item)) # increase complexity
             current = item.count(1)
             __ current>maxa:
@@ -72,10 +72,10 @@ class Solution:
         __ (length<=1
             r_ length
 
-        for i in xrange(length
+        ___ i in xrange(length
             hash_map = {}
             duplicate = 1 # point_i itself
-            for j in xrange(length
+            ___ j in xrange(length
                 __ i__j:
                     continue
 
@@ -124,6 +124,6 @@ __ __name____"__main__":
               (-7, -65), (-9, -166), (-475, -53), (-68, 20), (210, 103), (700, 306), (7, -6), (-3, -52), (-106, -146),
               (560, 248), (10, 6), (6, 119), (0, 2), (-41, 6), (7, 19), (30, 250)]
 
-    points = [Point(point[0], point[1]) for point in points]
+    points = [Point(point[0], point[1]) ___ point in points]
     print Solution().maxPoints(points)
     assert Solution().maxPoints(points)__22

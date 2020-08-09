@@ -41,10 +41,10 @@ class Solution(object
                 [8,10,3,11,17,16,7,9,5,15,13,6],
             ],
         ]
-        for l, g in testCases:
+        ___ l, g in testCases:
             dummy = ListNode(-1)
             node = dummy
-            for num in l:
+            ___ num in l:
                 node.next = ListNode(num)
                 node = node.next
             result = self.numComponents(dummy.next, g)

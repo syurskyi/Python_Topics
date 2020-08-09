@@ -47,14 +47,14 @@ class Solution:
         walk backward
         """
         l = 0
-        for s in S:
+        ___ s in S:
             __ s.isdigit(
                 l *= int(s)
             ____
                 l += 1
 
         # walk backward
-        for s in reversed(S
+        ___ s in reversed(S
             K %= l
             __ K __ 0 and s.isalpha(
                 # K == l * n, return the last chr

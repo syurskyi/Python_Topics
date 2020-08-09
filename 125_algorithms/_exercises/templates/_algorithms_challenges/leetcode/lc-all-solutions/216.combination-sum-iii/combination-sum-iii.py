@@ -13,7 +13,7 @@ class Solution(object
       __ le.(path) >= k or subsum <= 0:
         r_
 
-      for i in range(start, 10
+      ___ i in range(start, 10
         __ visited[i] __ 0:
           visited[i] = 1
           path.append(i)

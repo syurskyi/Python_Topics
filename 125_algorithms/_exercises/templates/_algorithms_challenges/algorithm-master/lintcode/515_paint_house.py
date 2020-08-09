@@ -9,7 +9,7 @@ class Solution:
 
         INFINITY = float('inf')
         m, n = le.(costs), le.(costs[0])
-        dp = [[0] * n for _ in range(2)]
+        dp = [[0] * n ___ _ in range(2)]
 
         """
         i: `i`th house
@@ -17,14 +17,14 @@ class Solution:
         k: the used `k`th color in previous house
         """
         i = j = k = prev = curr = 0
-        for j in range(n
+        ___ j in range(n
             dp[0][j] = costs[0][j]
-        for i in range(1, m
+        ___ i in range(1, m
             prev = curr # (i - 1) % 2
             curr = i % 2
-            for j in range(n
+            ___ j in range(n
                 dp[curr][j] = INFINITY
-                for k in range(n
+                ___ k in range(n
                     __ k != j and dp[prev][k] + costs[i][j] < dp[curr][j]:
                         dp[curr][j] = dp[prev][k] + costs[i][j]
 

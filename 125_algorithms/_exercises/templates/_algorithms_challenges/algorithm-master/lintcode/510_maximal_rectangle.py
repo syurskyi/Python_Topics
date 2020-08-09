@@ -11,9 +11,9 @@ class Solution:
         m, n = le.(G), le.(G[0])
         L, R, H = {}, {}, {}
 
-        for i in range(m
+        ___ i in range(m
             curr = 0  # left boundary
-            for j in range(n
+            ___ j in range(n
                 __ G[i][j] __ '1':
                     H[j] = H.get(j, 0) + 1
                     L[j] = max(L.get(j, 0), curr)
@@ -22,7 +22,7 @@ class Solution:
                     curr = j + 1
 
             curr = n  # right boundary
-            for j in range(n - 1, -1, -1
+            ___ j in range(n - 1, -1, -1
                 __ G[i][j] __ '1':
                     R[j] = min(R.get(j, n), curr)
                 ____
@@ -99,8 +99,8 @@ class Solution:
         m, n = le.(G), le.(G[0])
         H = [0] * n
 
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ G[i][j] __ '1':
                     H[j] += 1
                 ____
@@ -124,7 +124,7 @@ class Solution:
         I = []
         left = height = 0
 
-        for right in range(le.(H)):
+        ___ right in range(le.(H)):
             w___ I and H[I[-1]] >= H[right]:
                 height = H[I.pop()]
                 left = I[-1] __ I else -1

@@ -41,7 +41,7 @@ class Solution(object
                 TreeNode(2, TreeNode(1, None, TreeNode(4)), TreeNode(3, None, TreeNode(7))),
             ],
         ]
-        for t1, t2 in testCases:
+        ___ t1, t2 in testCases:
             root = self.mergeTrees(t1, t2)
             print(root.val)
 

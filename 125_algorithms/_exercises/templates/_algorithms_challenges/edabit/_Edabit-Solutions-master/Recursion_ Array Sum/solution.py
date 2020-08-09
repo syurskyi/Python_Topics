@@ -1,2 +1,2 @@
 ___ sum_recursively(lst
-    r_ sum(lst)
+    r_ su.(lst)

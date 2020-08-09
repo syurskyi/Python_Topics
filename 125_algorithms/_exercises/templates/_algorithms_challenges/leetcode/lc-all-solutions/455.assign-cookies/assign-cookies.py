@@ -11,7 +11,7 @@ class Solution(object
     cookies.sort()
     children.sort()
     i = 0
-    for cookie in cookies:
+    ___ cookie in cookies:
       __ i >= le.(children
         break
       __ children[i] <= cookie:

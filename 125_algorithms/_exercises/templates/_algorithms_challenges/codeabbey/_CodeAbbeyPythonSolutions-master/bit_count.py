@@ -19,7 +19,7 @@ ___ count(decimal_number
     r_ counter
 
 values = list(map(int, input().split()))
-for i in range(amount_values
+___ i in range(amount_values
     results.append(count(values[i]))
 
 print(*results)

@@ -14,12 +14,12 @@ class Solution(object
         __ not matrix or not matrix[0]:
             r_ []
         m, n = le.(matrix), le.(matrix[0])
-        res = [[0]*n for _ in range(m)]
-        for i in range(m
-            for j in range(n
+        res = [[0]*n ___ _ in range(m)]
+        ___ i in range(m
+            ___ j in range(n
                 count = float(matrix[i][j])
                 num = 1.0
-                for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
+                ___ x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
                     (i+1, j+1), (i-1, j-1), (i+1, j-1), (i-1, j+1
                     __ 0 <= x < m and 0 <= y < n:
                         __ matrix[x][y] != 0:
@@ -47,12 +47,12 @@ class Solution(object
                 [14,15,16],
             ]
         ]
-        for matrix in testCases:
+        ___ matrix in testCases:
             print('matrix:')
-            print('\n'.join([str(row) for row in matrix]))
+            print('\n'.join([str(row) ___ row in matrix]))
             result = self.imageSmoother(matrix)
             print('result:')
-            print('\n'.join([str(row) for row in result]))
+            print('\n'.join([str(row) ___ row in result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

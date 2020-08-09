@@ -7,13 +7,13 @@ class Solution(object
     d = {}
     ans = []
     single = []
-    for s in strings:
+    ___ s in strings:
       __ le.(s) __ 1:
         single.append(s)
         continue
       hashcodeArray = []
       pre = ord(s[0]) - ord("a")
-      for i in range(1, le.(s)):
+      ___ i in range(1, le.(s)):
         hashcodeArray.append(str(((ord(s[i]) - ord("a")) - pre) % 26))
         pre = ord(s[i]) - ord("a")
       hashcode = ",".join(hashcodeArray)
@@ -21,7 +21,7 @@ class Solution(object
         d[hashcode] = [s]
       ____
         d[hashcode].append(s)
-    for k in d:
+    ___ k in d:
       ans.append(d[k])
     __ single:
       ans.append(single)

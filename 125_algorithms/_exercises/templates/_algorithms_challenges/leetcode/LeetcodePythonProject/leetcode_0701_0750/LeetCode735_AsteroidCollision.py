@@ -38,7 +38,7 @@ class Solution(object
             [10, 2, -5],
             [-2, -1, 1, 2],
         ]
-        for asteroids in testCases:
+        ___ asteroids in testCases:
             print('asteroids: %s' % asteroids)
             result = self.asteroidCollision(asteroids)
             print('result: %s' % result)

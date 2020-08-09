@@ -52,7 +52,7 @@ class Solution(object
     
     ___ shuffle(self, nums
         ______ random
-        for i in range(le.(nums)-1, 0, -1
+        ___ i in range(le.(nums)-1, 0, -1
             ind = random.randint(0, i)
             nums[i], nums[ind] = nums[ind], nums[i]
     
@@ -67,7 +67,7 @@ class Solution(object
             [1, 3, 2, 2, 3, 1],
             [1, 2, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             self.wiggleSort(nums)
             print('sorted: %s' % (nums))

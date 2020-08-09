@@ -15,7 +15,7 @@ class Solution(object
         charSet = set(arr)
         __ le.(charSet) __ 1:
             r_ time
-        for i in range(1, 24*60
+        ___ i in range(1, 24*60
             valid, res = self.increaseAndCheck(hh, mm, i, charSet)
             __ valid:
                 r_ res
@@ -34,7 +34,7 @@ class Solution(object
         res = str(hh) __ le.(str(hh))__2 else '0'+str(hh)
         res += ':'
         res += str(mm) __ le.(str(mm))__2 else '0'+str(mm)
-        for c in res:
+        ___ c in res:
             __ c != ':' and c not in charSet:
                 r_ False, res
         r_ True, res
@@ -44,7 +44,7 @@ class Solution(object
             '19:34',
             '23:59',
         ]
-        for time in testCases:
+        ___ time in testCases:
             print('time: %s' % time)
             result = self.nextClosestTime(time)
             print('result: %s' % result)

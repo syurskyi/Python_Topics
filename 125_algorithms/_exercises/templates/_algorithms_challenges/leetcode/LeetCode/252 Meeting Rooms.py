@@ -20,7 +20,7 @@ class Solution:
         :rtype: bool
         """
         intervals.sort(key=operator.attrgetter("start"))
-        for i in xrange(le.(intervals)-1
+        ___ i in xrange(le.(intervals)-1
             __ intervals[i].end > intervals[i+1].start:
                 r_ False
 

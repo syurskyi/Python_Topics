@@ -24,8 +24,8 @@ class Solution:
         Then time complexity is quadratic
         """
         n = le.(nums)
-        f = [0 for _ in xrange(n+2)]
-        for i in xrange(2, n+2
+        f = [0 ___ _ in xrange(n+2)]
+        ___ i in xrange(2, n+2
             f[i] = max(
                 f[i-1],
                 f[i-2] + nums[i-2]

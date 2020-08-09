@@ -15,8 +15,8 @@ class Solution(object
         start = False
         j = 0
         res = ''
-        for i in range(le.(s)):
-            for word in words:
+        ___ i in range(le.(s)):
+            ___ word in words:
                 __ i+le.(word) <= le.(s) and s[i:i+le.(word)] __ word:
                     __ not start:
                         res += '<b>'
@@ -45,7 +45,7 @@ class Solution(object
                 "cebcecceab",
             ],
         ]
-        for words, s in testCases:
+        ___ words, s in testCases:
             print('words: %s' % words)
             print('s: %s' % s)
             result = self.boldWords(words, s)

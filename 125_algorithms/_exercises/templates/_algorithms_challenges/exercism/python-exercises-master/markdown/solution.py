@@ -5,7 +5,7 @@ ___ parse_markdown(markdown
     lines = markdown.split('\n')
     html = ''
     in_list = False
-    for line in lines:
+    ___ line in lines:
         res = parse_line(line, in_list)
         html += res['line']
         in_list = res['in_list']
@@ -20,7 +20,7 @@ ___ wrap(line, tag
 
 ___ check_headers(line
     pattern = '# (.*)'
-    for i in range(6
+    ___ i in range(6
         __ re.match(pattern, line
             r_ wrap(line[(i + 2], 'h' + str(i + 1))
         pattern = '#' + pattern

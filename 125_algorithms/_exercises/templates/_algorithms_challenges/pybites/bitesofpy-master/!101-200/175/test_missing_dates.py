@@ -21,7 +21,7 @@ ___ _create_dates(missing, year=2019, month=2
     # only the ones not in missing
     yield first
 
-    for day in range(first.day + 1, last.day
+    ___ day in range(first.day + 1, last.day
         __ day not in missing:
             yield first.replace(day=day)
 
@@ -44,11 +44,11 @@ ___ test_get_missing_dates(missing, month
     shuffle(my_date_range)
 
     # get days from return sequence
-    actual = sorted(d.day for d in
+    actual = sorted(d.day ___ d in
                     get_missing_dates(my_date_range))
 
     # filter out begin and end dates of range
-    expected = sorted(d for d in missing __
+    expected = sorted(d ___ d in missing __
                       d not in (start, end))
 
     assert actual __ expected

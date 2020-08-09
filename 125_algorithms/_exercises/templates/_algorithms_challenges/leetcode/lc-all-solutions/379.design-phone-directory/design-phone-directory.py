@@ -10,7 +10,7 @@ class PhoneDirectory(object
     :type maxNumbers: int
     """
     self.taken = [True] * maxNumbers
-    self.q = deque([i for i in range(0, maxNumbers)])
+    self.q = deque([i ___ i in range(0, maxNumbers)])
 
   ___ get(self
     """

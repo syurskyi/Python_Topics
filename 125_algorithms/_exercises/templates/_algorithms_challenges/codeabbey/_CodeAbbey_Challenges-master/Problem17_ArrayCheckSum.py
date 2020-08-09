@@ -3,7 +3,7 @@ infile.readline()
 data = infile.read().strip().split(" ")
 
 total = 0
-for digit in data:
+___ digit in data:
     total += int(digit)
     total *= 113
     total = total%10000007

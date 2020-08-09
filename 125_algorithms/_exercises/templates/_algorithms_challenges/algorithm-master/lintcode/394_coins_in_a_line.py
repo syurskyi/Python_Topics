@@ -36,7 +36,7 @@ class Solution:
         dp = [False] * n
         dp[0] = dp[1] = True
 
-        for i in range(2, n
+        ___ i in range(2, n
             __ (
                 dp[i - 1] is False or
                 dp[i - 2] is False

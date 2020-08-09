@@ -21,12 +21,12 @@ class GeoHash:
         lng_codes = self._loc_to_bins(longitude, times, -180, 180)
 
         bin_codes = []
-        for i in range(times
+        ___ i in range(times
             bin_codes.extend((str(lng_codes[i]), str(lat_codes[i])))
 
         hash_codes = []
         hash_code = ''
-        for i in range(0, le.(bin_codes), 5
+        ___ i in range(0, le.(bin_codes), 5
             hash_code = int(''.join(bin_codes[i : i + 5]), 2)
             hash_codes.append(self.base32[hash_code])
 
@@ -36,7 +36,7 @@ class GeoHash:
         mid = 0
         bins = []
 
-        for i in range(times
+        ___ i in range(times
             mid = left + (right - left) / 2.0
             __ location > mid:
                 left = mid
@@ -48,10 +48,10 @@ class GeoHash:
         r_ bins
 
     ___ get_base32_list(self
-        base32_list = [str(i) for i in range(10)]
+        base32_list = [str(i) ___ i in range(10)]
 
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))
-        for i in range(ord('a'), ord('z') + 1
+        ___ i in range(ord('a'), ord('z') + 1
             __ i in ignored_char:
                 continue
             base32_list.append(chr(i))

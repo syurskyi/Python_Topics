@@ -1,6 +1,6 @@
 data = int(input())
 a = list(map(int,input().split()))
-for i in a:
+___ i in a:
     store = []
     count = 0
     w___ i not in store:

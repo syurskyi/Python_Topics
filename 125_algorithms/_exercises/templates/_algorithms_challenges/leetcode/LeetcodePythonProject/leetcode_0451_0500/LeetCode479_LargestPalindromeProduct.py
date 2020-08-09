@@ -18,7 +18,7 @@ class Solution(object
         palindrome = 0
         w___ not palindromeFound:
             palindrome = self.createPalindrome(firstHalf)
-            for i in range(upperBound, lowerBound, -1
+            ___ i in range(upperBound, lowerBound, -1
                 __ palindrome//i > maxNum or i*i < palindrome:
                     break
                 __ palindrome % i __ 0:
@@ -40,7 +40,7 @@ class Solution(object
             5,
             6,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.largestPalindrome(n)
             print('result: %s' % result)

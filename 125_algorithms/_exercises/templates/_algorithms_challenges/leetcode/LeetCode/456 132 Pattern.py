@@ -35,7 +35,7 @@ class Solution:
         """
         stack = []  # List[Interval]
         mini = float('Inf')
-        for v in nums:
+        ___ v in nums:
             w___ stack and stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
                 stack.pop()
             __ stack and stack[-1][0] < v:
@@ -54,9 +54,9 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             maxa = nums[i]
-            for j in range(i + 1, le.(nums)):
+            ___ j in range(i + 1, le.(nums)):
                 __ nums[j] > nums[i]:
                     __ nums[j] < maxa:
                         r_ True

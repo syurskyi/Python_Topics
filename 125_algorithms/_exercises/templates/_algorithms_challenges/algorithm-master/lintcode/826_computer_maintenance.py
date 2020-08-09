@@ -9,16 +9,16 @@ class Solution:
         __ not m or not n or not P:
             r_ 0
 
-        dp = [[0, 0] for _ in range(m)]
-        G = [[0] * n for _ in range(m)]
+        dp = [[0, 0] ___ _ in range(m)]
+        G = [[0] * n ___ _ in range(m)]
 
-        for p in P:
+        ___ p in P:
             G[p.x][p.y] = 1
 
-        for i in range(m
+        ___ i in range(m
             left = right = -1
 
-            for j in range(n
+            ___ j in range(n
                 __ G[i][j] __ 0:
                     continue
                 left = max(left, n - 1 - j)

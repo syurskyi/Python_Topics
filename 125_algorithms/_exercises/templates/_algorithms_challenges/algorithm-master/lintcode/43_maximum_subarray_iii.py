@@ -21,18 +21,18 @@ class Solution:
         `L[i][j]` means the local max sum, to pick `j` arrays in [0, i),
                   and the `i - 1`th child MUST be included
         """
-        G = [[_INFINITY] * (k + 1) for _ in range(n + 1)]
-        L = [[_INFINITY] * (k + 1) for _ in range(n + 1)]
+        G = [[_INFINITY] * (k + 1) ___ _ in range(n + 1)]
+        L = [[_INFINITY] * (k + 1) ___ _ in range(n + 1)]
 
-        for i in range(n + 1
+        ___ i in range(n + 1
             L[i][0] = 0
             G[i][0] = 0
 
-        for i in range(1, n + 1
+        ___ i in range(1, n + 1
             end = i
             __ k < end:
                 end = k
-            for j in range(1, end + 1
+            ___ j in range(1, end + 1
                 L[i][j] = A[i - 1] + max(L[i - 1][j], G[i - 1][j - 1])
                 G[i][j] = max(L[i][j], G[i - 1][j])
 

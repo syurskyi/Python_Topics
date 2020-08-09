@@ -22,7 +22,7 @@ __ not os.path.isfile(CSV_FILE
 
 with open(CSV_FILE) as f:
     # get unique names
-    names = list(set(row[0] for row in csv.reader(f)))
+    names = list(set(row[0] ___ row in csv.reader(f)))
 
 
 ___ gen_names(
@@ -39,5 +39,5 @@ __ __name__ __ '__main__':
     assert le.(names) __ le.(list(gen_names()))
 
     # give me 10 names
-    for name in islice(gen_names(), 10
+    ___ name in islice(gen_names(), 10
         print(name)

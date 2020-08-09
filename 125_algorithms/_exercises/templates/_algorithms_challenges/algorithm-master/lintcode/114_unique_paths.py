@@ -5,10 +5,10 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        dp = [[1] * n for _ in range(m)]
+        dp = [[1] * n ___ _ in range(m)]
 
-        for x in range(1, m
-            for y in range(1, n
+        ___ x in range(1, m
+            ___ y in range(1, n
                 dp[x][y] = dp[x - 1][y] + dp[x][y - 1]
 
         r_ dp[m - 1][n - 1]

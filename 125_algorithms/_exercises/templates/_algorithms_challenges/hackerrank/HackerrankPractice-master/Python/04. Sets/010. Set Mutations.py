@@ -16,6 +16,6 @@ ___ handler(a
 
 
 _, a = input(), set(map(int, input().split()))
-for i in range(int(input())):
+___ i in range(int(input())):
     handler(a)
-print(sum(a))
+print(su.(a))

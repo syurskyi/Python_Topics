@@ -6,7 +6,7 @@ class Solution(object
     """
     ak = float("-inf")
     stack = []
-    for num in reversed(nums
+    ___ num in reversed(nums
       __ ak > num:
         r_ True
       w___ stack and stack[-1] < num:

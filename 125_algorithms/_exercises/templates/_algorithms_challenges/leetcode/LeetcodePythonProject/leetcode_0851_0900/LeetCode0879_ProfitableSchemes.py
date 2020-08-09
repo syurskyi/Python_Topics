@@ -12,13 +12,13 @@ class Solution(object
         :type profit: List[int]
         :rtype: int
         """
-        dp = [[0]*(G+1) for _ in range(P+1)]
+        dp = [[0]*(G+1) ___ _ in range(P+1)]
         dp[0][0] = 1
-        for p, g in zip(profit, group
-            for i in range(P, -1, -1
-                for j in range(G-g, -1, -1
+        ___ p, g in zip(profit, group
+            ___ i in range(P, -1, -1
+                ___ j in range(G-g, -1, -1
                     dp[min(i+p, P)][j+g] += dp[i][j]
-        r_ sum(dp[P])%(10**9 + 7)
+        r_ su.(dp[P])%(10**9 + 7)
     
     ___ profitableSchemes_DFS_TLE(self, G, P, group, profit
         """
@@ -33,9 +33,9 @@ class Solution(object
         r_ res[0]
     
     ___ dfs(self, ind, group, profit, G, P, curGroup, curProfit, res
-        __ curProfit >= P and sum(curGroup) <= G:
+        __ curProfit >= P and su.(curGroup) <= G:
             res[0] += 1
-        for i in range(ind, le.(group)):
+        ___ i in range(ind, le.(group)):
             curProfit += profit[i]
             curGroup.append(group[i])
             self.dfs(i+1, group, profit, G, P, curGroup, curProfit, res)
@@ -51,7 +51,7 @@ class Solution(object
                 10, 5, [2,3,5], [6,7,8]
             ],
         ]
-        for G, P, group, profit in testCases:
+        ___ G, P, group, profit in testCases:
             res = self.profitableSchemes(G, P, group, profit)
             print('res: %s' % res)
             print('-='*30+'-')

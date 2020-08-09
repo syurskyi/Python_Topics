@@ -16,7 +16,7 @@ class Solution:
         res = -1
         cnt = 0
 
-        for i in range(le.(self.A)):
+        ___ i in range(le.(self.A)):
             __ self.A[i] != target:
                 continue
             cnt += 1

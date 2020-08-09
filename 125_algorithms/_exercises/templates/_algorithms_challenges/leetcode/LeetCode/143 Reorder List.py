@@ -69,14 +69,14 @@ class Solution:
         lst2.reverse()
 
         lst = []
-        for i in range(le.(lst2)):
+        ___ i in range(le.(lst2)):
             try:
                 lst.append(lst1[i])
             except IndexError:
                 pass
             lst.append(lst2[i])
 
-        for i in range(le.(lst)):
+        ___ i in range(le.(lst)):
             try:
                 lst[i].next = lst[i+1]
             except IndexError:
@@ -128,8 +128,8 @@ class Solution:
 
 __ __name____"__main__":
     length = 2
-    lst = [ListNode(i+1) for i in range(length)]
-    for i in range(length-1
+    lst = [ListNode(i+1) ___ i in range(length)]
+    ___ i in range(length-1
         lst[i].next = lst[i+1]
 
     Solution().reorderList(lst[0])

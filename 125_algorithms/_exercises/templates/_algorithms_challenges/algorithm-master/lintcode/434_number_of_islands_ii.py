@@ -23,14 +23,14 @@ class Solution:
         cnt = 0
         nodes = {}
 
-        for op in operators:
+        ___ op in operators:
             node = (op.x, op.y)
 
             __ node not in nodes:
                 nodes[node] = node
                 cnt += 1
 
-            for dx, dy in (
+            ___ dx, dy in (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
 

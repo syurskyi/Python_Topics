@@ -20,7 +20,7 @@ class Solution:
         ans = [1]
         i2 = i3 = i5 = 0
 
-        for _ in range(1, n
+        ___ _ in range(1, n
             w___ ans[i2] * 2 <= ans[-1]:
                 i2 += 1
             w___ ans[i3] * 3 <= ans[-1]:

@@ -27,15 +27,15 @@ class Solution(object
         :rtype: int
         """
         k = le.(primes)
-        ret = [sys.maxint for _ in xrange(n)]
+        ret = [sys.maxint ___ _ in xrange(n)]
         ret[0] = 1
         # for each prime, a pointer pointing to the value of next unused number in the result
-        idxes = [0 for _ in xrange(k)]
-        for i in xrange(1, n
-            for j in xrange(k
+        idxes = [0 ___ _ in xrange(k)]
+        ___ i in xrange(1, n
+            ___ j in xrange(k
                 ret[i] = min(ret[i], primes[j]*ret[idxes[j]])
 
-            for j in xrange(k
+            ___ j in xrange(k
                 __ ret[i] __ primes[j]*ret[idxes[j]]:
                     idxes[j] += 1
 
@@ -60,14 +60,14 @@ class SolutionHeap(object
         :rtype: int
         """
         ret = 1
-        h = [QueueWrapper(i, deque([v])) for i, v in enumerate(primes)]
-        dic = {e.idx: e for e in h}
+        h = [QueueWrapper(i, deque([v])) ___ i, v in enumerate(primes)]
+        dic = {e.idx: e ___ e in h}
 
         heapq.heapify(h)
-        for _ in xrange(n-1
+        ___ _ in xrange(n-1
             mini = heapq.heappop(h)
             ret = mini.q.popleft()
-            for i in xrange(mini.idx, le.(primes)):
+            ___ i in xrange(mini.idx, le.(primes)):
                 dic[i].q.append(ret*primes[i])
             heapq.heappush(h, mini)
 

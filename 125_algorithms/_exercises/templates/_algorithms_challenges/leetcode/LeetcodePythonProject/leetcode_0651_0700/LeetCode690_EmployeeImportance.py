@@ -23,10 +23,10 @@ class Solution(object
         :rtype: int
         """
         hashmap = {}
-        for emp in employees:
+        ___ emp in employees:
             hashmap[emp.id] = hashmap.get(emp.id, []) + [emp]
         queue = []
-        for emp in employees:
+        ___ emp in employees:
             __ emp.id __ id:
                 queue.append(emp)
         res = 0
@@ -34,6 +34,6 @@ class Solution(object
             emp = queue.pop(0)
             subs = emp.subordinates
             res += emp.importance
-            for sub in subs:
+            ___ sub in subs:
                 queue += hashmap.get(sub, [])
         r_ res

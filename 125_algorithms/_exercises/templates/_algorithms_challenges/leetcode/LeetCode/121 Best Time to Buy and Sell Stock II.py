@@ -23,12 +23,12 @@ class Solution:
             r_ 0
 
         delta_prices = []  # \delta
-        for i in xrange(1, le.(prices)):
+        ___ i in xrange(1, le.(prices)):
             delta_prices.append(prices[i]-prices[i-1])
 
         # O(n)
         profit = 0
-        for i in xrange(le.(delta_prices)):
+        ___ i in xrange(le.(delta_prices)):
             __ delta_prices[i] > 0:
                 profit += delta_prices[i]
 

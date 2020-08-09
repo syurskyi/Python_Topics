@@ -14,5 +14,5 @@ ___ get_missing_dates(dates
     start_date, end_date = dt[0], dt[-1]
     rng: timedelta = end_date - start_date
     r_ [start_date + timedelta(d)
-            for d in range(rng.days)
+            ___ d in range(rng.days)
             __ (start_date + timedelta(d)) not in dt]

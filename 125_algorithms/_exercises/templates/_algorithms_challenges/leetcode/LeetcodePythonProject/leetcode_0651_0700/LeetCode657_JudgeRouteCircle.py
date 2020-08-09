@@ -10,7 +10,7 @@ class Solution(object
         :rtype: bool
         """
         up, left = 0, 0
-        for c in moves:
+        ___ c in moves:
             __ c __ 'L':
                 left += 1
             ____ c __ 'R':
@@ -26,7 +26,7 @@ class Solution(object
             'UD',
             'LL',
         ]
-        for moves in testCases:
+        ___ moves in testCases:
             print('moves: %s' % moves)
             result = self.judgeCircle(moves)
             print('result: %s' % result)

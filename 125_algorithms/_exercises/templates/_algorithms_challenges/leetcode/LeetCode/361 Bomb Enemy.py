@@ -31,14 +31,14 @@ class Solution(object
         __ not grid: r_ 0
 
         m, n = le.(grid), le.(grid[0])
-        rows = [0 for _ in xrange(m)]
-        cols = [0 for _ in xrange(n)]
+        rows = [0 ___ _ in xrange(m)]
+        cols = [0 ___ _ in xrange(n)]
         gmax = 0
-        for i in xrange(m
-            for j in xrange(n
+        ___ i in xrange(m
+            ___ j in xrange(n
                 __ i __ 0 or grid[i-1][j] __ 'W':
                     cols[j] = 0
-                    for k in xrange(i, m
+                    ___ k in xrange(i, m
                         __ grid[k][j] __ 'E':
                             cols[j] += 1
                         ____ grid[k][j] __ 'W':
@@ -46,7 +46,7 @@ class Solution(object
 
                 __ j __ 0 or grid[i][j-1] __ 'W':
                     rows[i] = 0
-                    for k in xrange(j, n
+                    ___ k in xrange(j, n
                         __ grid[i][k] __ 'E':
                             rows[i] += 1
                         ____ grid[i][k] __ 'W':

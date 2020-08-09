@@ -34,7 +34,7 @@ class Solution(object
                 1,
             ],
         ]
-        for n, m in testCases:
+        ___ n, m in testCases:
             print('n: %s' % n)
             print('m: %s' % m)
             result = self.flipLights(n, m)

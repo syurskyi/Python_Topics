@@ -30,7 +30,7 @@ class Solution(object
         testCases = [
             'word',
         ]
-        for word in testCases:
+        ___ word in testCases:
             print('word: %s' % (word))
             result = self.generateAbbreviations(word)
             print('result: %s' % (result))

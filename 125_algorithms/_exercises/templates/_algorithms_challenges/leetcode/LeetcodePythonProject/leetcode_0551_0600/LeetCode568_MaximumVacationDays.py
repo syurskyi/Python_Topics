@@ -15,10 +15,10 @@ class Solution(object
         k0 = le.(days[0])
         dp = [float('-inf')]*n
         dp[0] = 0
-        for i in range(k0
+        ___ i in range(k0
             tmp = [float('-inf')]*n
-            for j in range(n
-                for k in range(n
+            ___ j in range(n
+                ___ k in range(n
                     __ j __ k or flights[k][j] __ 1:
                         tmp[j] = max(tmp[j], dp[k]+days[j][i])
             dp = tmp
@@ -63,11 +63,11 @@ class Solution(object
                 ],
             ],
         ]
-        for flights, days in testCases:
+        ___ flights, days in testCases:
             print('flights:')
-            print('\n'.join([str(row) for row in flights]))
+            print('\n'.join([str(row) ___ row in flights]))
             print('days:')
-            print('\n'.join([str(row) for row in days]))
+            print('\n'.join([str(row) ___ row in days]))
             result = self.maxVacationDays(flights, days)
             print('result: %s' % result)
             print('-='*30+'-')

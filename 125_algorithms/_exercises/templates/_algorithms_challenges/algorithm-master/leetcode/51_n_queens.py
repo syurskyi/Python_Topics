@@ -8,7 +8,7 @@ class Solution:
         __ not n:
             r_ ans
 
-        G = [['.'] * n for _ in range(n)]
+        G = [['.'] * n ___ _ in range(n)]
         self.dfs(G, 0, ans)
         r_ ans
 
@@ -17,7 +17,7 @@ class Solution:
             ans.append(self.clone_board(G))
             r_
 
-        for x in range(le.(G)):
+        ___ x in range(le.(G)):
             __ self.is_valid(G, x, y
                 G[x][y] = 'Q'
                 self.dfs(G, y + 1, ans)
@@ -32,8 +32,8 @@ class Solution:
         3. `x - i = y - j` => `x + j = y + i` => left diagonal line
         4. `x - i = -(y - j)` => `x + y = i + j` => right diagonal line
         """
-        for i in range(le.(G)):
-            for j in range(y
+        ___ i in range(le.(G)):
+            ___ j in range(y
                 __ G[i][j] != 'Q':
                     continue
                 __ (x + j __ y + i or
@@ -44,6 +44,6 @@ class Solution:
 
     ___ clone_board(self, G
         res = []
-        for R in G:
+        ___ R in G:
             res.append(''.join(R))
         r_ res

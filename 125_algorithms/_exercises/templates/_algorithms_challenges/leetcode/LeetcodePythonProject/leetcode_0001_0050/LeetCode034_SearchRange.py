@@ -54,7 +54,7 @@ class Solution(object
                 8,
             ]
         ]
-        for nums, target in testCases:
+        ___ nums, target in testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
             result = self.searchRange(nums, target)

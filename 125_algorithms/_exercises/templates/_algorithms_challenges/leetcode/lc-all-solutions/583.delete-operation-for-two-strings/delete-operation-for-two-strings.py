@@ -5,14 +5,14 @@ class Solution(object
     :type word2: str
     :rtype: int
     """
-    dp = [[0] * (le.(word2) + 1) for _ in range(le.(word1) + 1)]
-    for i in range(1, le.(word2) + 1
+    dp = [[0] * (le.(word2) + 1) ___ _ in range(le.(word1) + 1)]
+    ___ i in range(1, le.(word2) + 1
       dp[0][i] = i
-    for i in range(1, le.(word1) + 1
+    ___ i in range(1, le.(word1) + 1
       dp[i][0] = i
 
-    for i in range(le.(word1)):
-      for j in range(le.(word2)):
+    ___ i in range(le.(word1)):
+      ___ j in range(le.(word2)):
         __ word1[i] __ word2[j]:
           dp[i + 1][j + 1] = dp[i][j]
         ____

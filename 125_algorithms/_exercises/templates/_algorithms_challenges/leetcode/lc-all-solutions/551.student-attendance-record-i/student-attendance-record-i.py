@@ -5,7 +5,7 @@ class Solution(object
     :rtype: bool
     """
     a = l = 0
-    for c in s:
+    ___ c in s:
       __ c __ "L":
         l += 1
       ____ c __ "A":

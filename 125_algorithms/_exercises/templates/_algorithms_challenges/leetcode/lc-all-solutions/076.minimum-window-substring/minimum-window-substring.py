@@ -10,7 +10,7 @@ class Solution(object
     start, end = le.(s), 3 * le.(s)
     d = {}
     deq = collections.deque([])
-    for i, c in enumerate(s
+    ___ i, c in enumerate(s
       __ c in wanted:
         deq.append(i)
         d[c] = d.get(c, 0) + 1

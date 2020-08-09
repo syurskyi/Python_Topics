@@ -33,7 +33,7 @@ ___ test_get_average_scores(
 
     # order / score might slightly change depending the way the mean
     # is calculated so only test director names in top scores
-    directors = {score[0] for score in scores[2:13]}
+    directors = {score[0] ___ score in scores[2:13]}
 
     assert 'Quentin Tarantino' in directors
     assert 'Hayao Miyazaki' in directors

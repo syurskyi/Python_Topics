@@ -2,7 +2,7 @@ ___ check_brackets(string
     counterparts = {')': '(', '}': '{', ']': '['}
 
     stack = []
-    for char in string:
+    ___ char in string:
         __ char in counterparts.values(
             stack.append(char)
         ____ char in counterparts:

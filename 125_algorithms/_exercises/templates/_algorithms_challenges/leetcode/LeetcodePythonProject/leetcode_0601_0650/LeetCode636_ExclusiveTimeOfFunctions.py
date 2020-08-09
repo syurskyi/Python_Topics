@@ -13,7 +13,7 @@ class Solution(object
         stack = []
         res = [0]*n
         prevTime = 0
-        for log in logs:
+        ___ log in logs:
             arr = log.split(':')
             __ stack:
                 res[stack[-1]] += int(arr[2])-prevTime
@@ -37,7 +37,7 @@ class Solution(object
                 ],
             ],
         ]
-        for n, logs in testCases:
+        ___ n, logs in testCases:
             print('n: %s' % n)
             print('logs: %s' % logs)
             result = self.exclusiveTime(n, logs)

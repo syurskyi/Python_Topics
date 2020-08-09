@@ -30,10 +30,10 @@ class Solution(object
     
     ___ minSubArrayLenBS(self, s, nums
         sums = [0]*(le.(nums)+1)
-        for i in range(1, le.(sums)):
+        ___ i in range(1, le.(sums)):
             sums[i] = sums[i-1] + nums[i-1]
         minLen = le.(nums)+1
-        for i in range(le.(sums)):
+        ___ i in range(le.(sums)):
             end = self.binarySearch(i+1, le.(sums)-1, sums[i]+s, sums)
             __ end __ le.(sums
                 break
@@ -55,7 +55,7 @@ class Solution(object
             (4, [1, 4, 4]),
             (11, [1, 2, 3, 4, 5]),
         ]
-        for s, nums in testCases:
+        ___ s, nums in testCases:
             print('nums: %s' % (nums))
             print('s: %s' % (s))
             result = self.minSubArrayLen(s, nums)

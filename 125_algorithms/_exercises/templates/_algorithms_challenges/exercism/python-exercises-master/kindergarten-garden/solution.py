@@ -14,5 +14,5 @@ class Garden(object
         slot_start = self.students.index(student) * 2
         slot = slice(slot_start, slot_start + 2)
         r_ [self.__plant_names[abbrev]
-                for abbrev in (self.plant_rows[0][slot] +
+                ___ abbrev in (self.plant_rows[0][slot] +
                                self.plant_rows[1][slot])]

@@ -2,10 +2,10 @@ ___ board(pos1, pos2
     validate_position(pos1, pos2)
     x1, y1 = pos1
     x2, y2 = pos2
-    b = [['_'] * 8 for i in range(8)]
+    b = [['_'] * 8 ___ i in range(8)]
     b[x1][y1] = 'W'
     b[x2][y2] = 'B'
-    r_ [''.join(r) for r in b]
+    r_ [''.join(r) ___ r in b]
 
 
 ___ can_attack(pos1, pos2
@@ -20,7 +20,7 @@ ___ can_attack(pos1, pos2
 
 
 ___ validate_position(pos1, pos2
-    __ any(x < 0 or x > 7 for x in pos1 + pos2
+    __ any(x < 0 or x > 7 ___ x in pos1 + pos2
         raise ValueError('Invalid queen position: queen out of the board')
     __ pos1 __ pos2:
         raise ValueError('Invalid queen position: both queens in the same '

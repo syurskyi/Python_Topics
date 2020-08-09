@@ -15,7 +15,7 @@ class Solution:
         """
         left_finished = None
         stk = []
-        for num in preorder:
+        ___ num in preorder:
             __ left_finished and num < left_finished:
                 r_ False
 

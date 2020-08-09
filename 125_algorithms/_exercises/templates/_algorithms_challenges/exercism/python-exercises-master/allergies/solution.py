@@ -19,5 +19,5 @@ class Allergies(object
 
     @property
     ___ lst(self
-        r_ [allergy for allergy in self._allergies
+        r_ [allergy ___ allergy in self._allergies
                 __ self.is_allergic_to(allergy)]

@@ -23,7 +23,7 @@ class Solution:
             ans.append(path[:])
             r_
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             """
             ignore same num
             """
@@ -64,7 +64,7 @@ class Solution:
             ans.append(path[:])
             r_
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ visited[i]:
                 continue
 

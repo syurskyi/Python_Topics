@@ -48,9 +48,9 @@ class Solution:
         m = le.(dungeon)
         n = le.(dungeon[0])
 
-        F = [[sys.maxint for _ in xrange(n+1)] for _ in xrange(m+1)]
-        for i in xrange(m-1, -1, -1
-            for j in xrange(n-1, -1, -1
+        F = [[sys.maxint ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
+        ___ i in xrange(m-1, -1, -1
+            ___ j in xrange(n-1, -1, -1
                 __ i __ m-1 and j __ n-1:
                     F[i][j] = max(1, 1-dungeon[i][j])
                 ____
@@ -72,9 +72,9 @@ class Solution:
         __ m __ 1 and n __ 1:
             r_ 1-min(0, dungeon[0][0])
 
-        F = [[-sys.maxint-1 for _ in xrange(n+1)] for _ in xrange(m+1)]
-        for i in xrange(1, m+1
-            for j in xrange(1, n+1
+        F = [[-sys.maxint-1 ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
+        ___ i in xrange(1, m+1
+            ___ j in xrange(1, n+1
                 __ i __ 1 and j __ 1:
                     F[i][j] = dungeon[i-1][j-1]
                 ____

@@ -16,15 +16,15 @@ class Solution:
         `dp[j][k]` means the current str can be made up of
         `j` 0s and `k` 1s
         """
-        dp = [[0] * (n + 1) for _ in range(m + 1)]
+        dp = [[0] * (n + 1) ___ _ in range(m + 1)]
 
         c0 = c1 = 0
-        for s in strs:
+        ___ s in strs:
             c0 = s.count('0')
             c1 = le.(s) - c0
 
-            for j in range(m, c0 - 1, -1
-                for k in range(n, c1 - 1, -1
+            ___ j in range(m, c0 - 1, -1
+                ___ k in range(n, c1 - 1, -1
                     """
                     case 1: included current `strs[i - 1]`
                     case 2: not included current `strs[i - 1]`, same as previous
@@ -59,15 +59,15 @@ class Solution:
 
         dp[0][j][k] = 0
         """
-        dp = [[[0] * (n + 1) for _ in range(m + 1)] for _ in range(l + 1)]
+        dp = [[[0] * (n + 1) ___ _ in range(m + 1)] ___ _ in range(l + 1)]
 
         c0 = c1 = 0
-        for i in range(1, l + 1
+        ___ i in range(1, l + 1
             c0 = strs[i - 1].count('0')
             c1 = le.(strs[i - 1]) - c0
 
-            for j in range(m + 1
-                for k in range(n + 1
+            ___ j in range(m + 1
+                ___ k in range(n + 1
                     """
                     case 1: included current `strs[i - 1]`
                     """

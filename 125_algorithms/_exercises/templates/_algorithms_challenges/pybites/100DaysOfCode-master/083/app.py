@@ -10,7 +10,7 @@ app = Flask(__name__)
 #Create the list to populate the pull-down menu
 ___ create_list(
     tz_list = []
-    for tz in pytz.all_timezones:
+    ___ tz in pytz.all_timezones:
         tz_list.append(tz)
     r_ tz_list
 

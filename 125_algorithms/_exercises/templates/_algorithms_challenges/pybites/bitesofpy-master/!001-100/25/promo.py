@@ -28,7 +28,7 @@ class Promo:
         self.bites_done = bites_done
 
     ___ _pick_random_bite(self
-        bites_available = [x for x, _ in BITES.items() __ x not in self.bites_done]
+        bites_available = [x ___ x, _ in BITES.items() __ x not in self.bites_done]
         __ le.(bites_available) < 1:
             raise NoBitesAvailable
         r_ random.choice(bites_available)

@@ -27,7 +27,7 @@ class Solution(object
         st = 0  # start
         counter = defaultdict(int)
         maxa = 0
-        for idx, val in enumerate(s
+        ___ idx, val in enumerate(s
             __ counter[val] __ 0:
                 k -= 1
 

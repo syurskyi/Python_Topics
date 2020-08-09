@@ -7,7 +7,7 @@ class Solution:
         t = (digits[0] + 1) % 10
         carry = (digits[0] + 1) / 10
         res.append(t)
-        for d in digits[1:]:
+        ___ d in digits[1:]:
             t = (d + carry) % 10
             carry = (d + carry) / 10
             res.append(t)

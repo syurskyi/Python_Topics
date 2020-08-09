@@ -10,9 +10,9 @@ class Solution(object
         :rtype: int
         """
         __ not nums or le.(nums) < 3: r_ -1
-        sumVal = sum(nums)
+        sumVal = su.(nums)
         tmp = 0
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             __ tmp __ sumVal-tmp-nums[i]:
                 r_ i
             tmp += nums[i]
@@ -24,7 +24,7 @@ class Solution(object
             [1, 2, 3],
             [-1,-1,-1,0,1,1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.pivotIndex(nums)
             print('result: %s' % result)

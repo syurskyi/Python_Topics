@@ -4,7 +4,7 @@ class Solution:
         x = 0
         y = 0
 
-        for move in moves:
+        ___ move __ moves:
             __(move__'U'
                 y+=1
             ____(move__'R'

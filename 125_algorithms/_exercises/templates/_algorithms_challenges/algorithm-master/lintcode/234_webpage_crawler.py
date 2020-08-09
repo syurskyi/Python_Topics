@@ -14,7 +14,7 @@ class CrawlerThread(Thread
                 and urlparse(url).hostname.endswith("wikipedia.org"
                 results[url] = True
                 urls = HtmlHelper.parseUrls(url)
-                for url in urls:
+                ___ url in urls:
                     queue.put(url)
             queue.task_done()
 
@@ -30,7 +30,7 @@ class Solution:
         # Write your code here
         global queue, results
         thread_pools = []
-        for i in xrange(10
+        ___ i in xrange(10
             thread_pools.append(CrawlerThread())
             thread_pools[i].setDaemon(True)
             thread_pools[i].start()
@@ -39,6 +39,6 @@ class Solution:
 
         queue.join()
         rt = []
-        for key, value in results.items(
+        ___ key, value in results.items(
             rt.append(key)
         r_ rt

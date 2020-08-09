@@ -23,12 +23,12 @@ class Solution(object
     pres = [0] * (le.(nums) + 1)
     b = [0] * (le.(nums) + 2)
 
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       pres[i + 1] = pres[i] + nums[i]
 
     sortedPres = sorted(pres)
 
-    for end in pres:
+    ___ end in pres:
       count = sumRange(b, bisect.bisect_right(sortedPres, end - lower)) - sumRange(b, bisect.bisect_left(sortedPres,
                                                                                                          end - upper))
       ans += count

@@ -12,14 +12,14 @@ class Solution(object
         s = S
         hashmap = {}
         res = []
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c not in hashmap:
                 hashmap[c] = [i, i]
             ____
                 hashmap[c][1] = i
         left = 0
         maxLen = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ i > maxLen:
                 res.append(maxLen-left+1)
                 left = i
@@ -33,7 +33,7 @@ class Solution(object
         testCases = [
             'ababcbacadefegdehijhklij',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.partitionLabels(s)
             print('result: %s' % result)

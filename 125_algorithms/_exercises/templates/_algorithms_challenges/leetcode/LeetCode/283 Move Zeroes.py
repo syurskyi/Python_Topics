@@ -19,7 +19,7 @@ class Solution(object
         Pivot
         """
         left = -1
-        for i in xrange(le.(nums)):
+        ___ i in xrange(le.(nums)):
             __ nums[i] != 0:
                 left += 1
                 nums[left], nums[i] = nums[i], nums[left]
@@ -33,12 +33,12 @@ class SolutionCount(object
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         cnt = 0
-        for elt in nums:
+        ___ elt in nums:
             __ elt != 0:
                 nums[cnt] = elt
                 cnt += 1
 
-        for j in xrange(cnt, le.(nums)):
+        ___ j in xrange(cnt, le.(nums)):
             nums[j] = 0
 
 

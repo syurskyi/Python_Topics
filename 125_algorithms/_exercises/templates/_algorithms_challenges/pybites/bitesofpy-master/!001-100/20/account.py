@@ -5,7 +5,7 @@ class Account:
 
     @property
     ___ balance(self
-        r_ sum(self._transactions)
+        r_ su.(self._transactions)
 
     ___ __add__(self, amount
         self._transactions.append(amount)

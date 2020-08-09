@@ -44,7 +44,7 @@ from typing ______ List
 class Solution:
     ___ camelMatch(self, queries: List[str], pattern: str) -> List[bool]:
         ret = []
-        for q in queries:
+        ___ q in queries:
             ret.append(self.match(q, pattern))
             
         r_ ret

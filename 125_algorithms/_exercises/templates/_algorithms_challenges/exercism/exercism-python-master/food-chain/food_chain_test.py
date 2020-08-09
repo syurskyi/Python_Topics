@@ -96,11 +96,11 @@ class FoodChainTest(unittest.TestCase
         self.assertEqual(recite(8, 8), expected)
 
     ___ test_multiple_verses(self
-        expected = [recite(n, n)[0] for n in range(1, 4)]
+        expected = [recite(n, n)[0] ___ n in range(1, 4)]
         self.assertEqual(recite(1, 3), expected)
 
     ___ test_full_song(self
-        expected = [recite(n, n)[0] for n in range(1, 9)]
+        expected = [recite(n, n)[0] ___ n in range(1, 9)]
         self.assertEqual(recite(1, 8), expected)
 
 

@@ -11,7 +11,7 @@ class Solution(object
         :rtype: bool
         """
         d = set()
-        for i in nums:
+        ___ i in nums:
             __ i in d:
                 r_ True
             ____

@@ -29,11 +29,11 @@ class Solution:
         partition_num_index = 0
         change_num_index = 0
 
-        for i in reversed(xrange(1, length)):
+        ___ i in reversed(xrange(1, length)):
             __ num[i]>num[i-1]:
                 partition_num_index = i-1
                 break
-        for i in reversed(xrange(1, length)):
+        ___ i in reversed(xrange(1, length)):
             __ num[i]>num[partition_num_index]:
                 change_num_index = i
                 break

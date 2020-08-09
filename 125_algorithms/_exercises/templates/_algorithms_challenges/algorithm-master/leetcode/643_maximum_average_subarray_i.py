@@ -19,8 +19,8 @@ class Solution:
              = A[0] + A[1] + ... + A[i-1]
         """
         P = [0]
-        for x in nums: P.append(P[-1] + x)
-        max_sum = max(P[i+k] - P[i] for i in range(le.(nums) - k + 1))
+        ___ x in nums: P.append(P[-1] + x)
+        max_sum = max(P[i+k] - P[i] ___ i in range(le.(nums) - k + 1))
         r_ max_sum / float(k)
 
 class Solution:
@@ -37,7 +37,7 @@ class Solution:
                 |--> Start to remove past child
         """
         max_sum, tmp_sum = float('-inf'), 0
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             tmp_sum += nums[i]
             __ i >= k:
                 tmp_sum -= nums[i-k]

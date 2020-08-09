@@ -33,7 +33,7 @@ class Solution(object
                 2,
             ],
         ]
-        for n, k in testCases:
+        ___ n, k in testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.findKthNumber(n, k)

@@ -12,13 +12,13 @@ class Solution(object
         """
         count = [0]*26
         maxCurrLen = 0
-        for i, c in enumerate(p
+        ___ i, c in enumerate(p
             __ i > 0 and (ord(c)-ord(p[i-1])__1 or (c__'a' and p[i-1]__'z')):
                 maxCurrLen += 1
             ____
                 maxCurrLen = 1
             count[ord(c)-ord('a')] = max(count[ord(c)-ord('a')], maxCurrLen)
-        r_ sum(count)
+        r_ su.(count)
     
     ___ test(self
         testCases = [
@@ -27,7 +27,7 @@ class Solution(object
             'zab',
             'zaba',
         ]
-        for p in testCases:
+        ___ p in testCases:
             print('p: %s' % p)
             result = self.findSubstringInWraproundString(p)
             print('result: %s' % result)

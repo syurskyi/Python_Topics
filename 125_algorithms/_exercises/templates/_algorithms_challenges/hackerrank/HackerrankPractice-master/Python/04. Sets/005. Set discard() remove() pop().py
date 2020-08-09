@@ -4,7 +4,7 @@
 
 n = int(input())
 s = set(map(int, input().split()))
-for i in range(int(input())):
+___ i in range(int(input())):
     string = input().split()
     __ string[0] __ 'pop':
         s.pop()
@@ -12,4 +12,4 @@ for i in range(int(input())):
         s.remove(int(string[1]))
     ____ string[0] __ 'discard':
         s.discard(int(string[1]))
-print(sum(s))
+print(su.(s))

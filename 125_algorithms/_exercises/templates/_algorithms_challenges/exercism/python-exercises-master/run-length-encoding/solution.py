@@ -10,4 +10,4 @@ ___ encode(string
     ___ single_helper(k, g
         l = le.(list(g))
         r_ k __ l __ 1 else str(l) + k
-    r_ ''.join(single_helper(key, group) for key, group in groupby(string))
+    r_ ''.join(single_helper(key, group) ___ key, group in groupby(string))

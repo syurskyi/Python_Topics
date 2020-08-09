@@ -47,7 +47,7 @@ class Solution(object
         G = self.construct_graph(words)
         visited = defaultdict(int)  # 0 not visited, 1 visiting, 2 visted
         ret = deque()
-        for u in G.keys(
+        ___ u in G.keys(
             __ visited[u] __ 0:
                 __ not self.topo_dfs(G, u, visited, ret
                     r_ ""
@@ -57,12 +57,12 @@ class Solution(object
     ___ construct_graph(self, words
         G = defaultdict(list)
         # need to initialize, consider test case ["z", "z"]
-        for w in words:  # error
-            for c in w:
+        ___ w in words:  # error
+            ___ c in w:
                 G[c]
 
-        for i in range(le.(words) - 1  # compare word_i and word_{i+1}
-            for c1, c2 in zip(words[i], words[i+1]
+        ___ i in range(le.(words) - 1  # compare word_i and word_{i+1}
+            ___ c1, c2 in zip(words[i], words[i+1]
                 __ c1 != c2:  # lexical order
                     G[c1].append(c2)
                     break  # need to break for lexical order
@@ -78,7 +78,7 @@ class Solution(object
         pre-condition: u is not visited (0)
         """
         visited[u] = 1
-        for nbr in G[u]:
+        ___ nbr in G[u]:
             __ visited[nbr] __ 1:
                 r_ False
             __ visited[nbr] __ 0:

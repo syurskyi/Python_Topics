@@ -18,7 +18,7 @@ class Solution(object
     """
     now = 0
     heap = []
-    for t, d in sorted(courses, key=lambda x: x[1]
+    ___ t, d in sorted(courses, key=lambda x: x[1]
       __ now + t <= d:
         now += t
         heapq.heappush(heap, -t)

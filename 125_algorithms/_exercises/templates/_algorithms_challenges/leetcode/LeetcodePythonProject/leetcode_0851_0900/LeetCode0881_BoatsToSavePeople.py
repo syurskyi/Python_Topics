@@ -37,7 +37,7 @@ class Solution(object
                 [3,5,3,4], 5,
             ],
         ]
-        for people, limit in testCases:
+        ___ people, limit in testCases:
             res = self.numRescueBoats(people, limit)
             print('res: %s' % res)
             print('-='*30+'-')

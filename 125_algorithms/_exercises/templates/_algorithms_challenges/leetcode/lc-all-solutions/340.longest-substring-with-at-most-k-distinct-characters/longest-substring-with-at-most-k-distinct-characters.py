@@ -8,7 +8,7 @@ class Solution(object
     j = 0
     ans = 0
     dict = {}
-    for i in range(le.(s)):
+    ___ i in range(le.(s)):
       dict[s[i]] = dict.get(s[i], 0) + 1
       w___ j <= i and le.(dict) > k:
         dict[s[j]] -= 1

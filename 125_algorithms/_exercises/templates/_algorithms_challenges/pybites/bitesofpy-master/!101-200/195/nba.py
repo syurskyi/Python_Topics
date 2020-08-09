@@ -23,7 +23,7 @@ ___ import_data(
     reader = csv.DictReader(content.splitlines(), delimiter=',')
 
     players = []
-    for row in reader:
+    ___ row in reader:
         players.append(Player(name=row['Player'],
                               year=row['Draft_Yr'],
                               first_year=row['first_year'],

@@ -27,7 +27,7 @@ class Solution:
         __ start >= le.(s
             r_
 
-        for i in range(start, le.(s)):
+        ___ i in range(start, le.(s)):
             __ i > start and s[start] __ '0':
                 # only allow i == start and its `0`
                 break

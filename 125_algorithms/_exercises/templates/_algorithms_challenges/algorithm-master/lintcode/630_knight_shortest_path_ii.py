@@ -21,8 +21,8 @@ class Solution:
 
         queue = [(0, 0)]
         turns = {(0, 0 0}
-        for x, y in queue:
-            for dx, dy in V:
+        ___ x, y in queue:
+            ___ dx, dy in V:
                 _x = x + dx
                 _y = y + dy
                 __ 0 <= _x < m and 0 <= _y < n and G[_x][_y] __ 0:
@@ -54,17 +54,17 @@ class Solution:
         INFINITY = float('inf')
 
         m, n = le.(G), le.(G[0])
-        dp = [[INFINITY] * 3 for _ in range(m)]
+        dp = [[INFINITY] * 3 ___ _ in range(m)]
         pre2 = pre1 = curr = 0
         dp[0][curr] = 0
 
         """
         x and y is changed since its need from left to right
         """
-        for y in range(1, n
+        ___ y in range(1, n
             pre2, pre1 = pre1, curr
             curr = y % 3
-            for x in range(m
+            ___ x in range(m
                 dp[x][curr] = INFINITY
 
                 __ G[x][y] __ 1:

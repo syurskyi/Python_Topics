@@ -6,7 +6,7 @@ mea = list(map(float, input().split()))
 mea_store = []
 
 #traversing through each element of the measurements
-for i in range(le.(mea)):
+___ i in range(le.(mea)):
     #if first element then store it in the result
     __ i __ 0:
         mea_store.append(mea[i])
@@ -20,6 +20,6 @@ for i in range(le.(mea)):
         mea_store.append(res)
         
 #printing the values 
-for i in mea_store:
+___ i in mea_store:
     print(i,end=' ')
     

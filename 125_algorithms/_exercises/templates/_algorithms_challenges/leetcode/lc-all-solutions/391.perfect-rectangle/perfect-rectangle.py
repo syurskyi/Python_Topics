@@ -13,7 +13,7 @@ class Solution(object
     topBound = rectangles[0][3]
     lines = []
     realArea = 0
-    for rect in rectangles:
+    ___ rect in rectangles:
       leftBound = min(leftBound, rect[0])
       rightBound = max(rightBound, rect[2])
       bottomBound = min(bottomBound, rect[1])
@@ -26,7 +26,7 @@ class Solution(object
       r_ False
     lines.sort()
     bst = []
-    for line in lines:
+    ___ line in lines:
       x, flag, bottom, top = line
       __ flag > 0:
         idx = bisect.bisect_right(bst, (bottom, top))

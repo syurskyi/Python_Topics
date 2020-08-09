@@ -27,7 +27,7 @@ class Solution(object
             [4, 5, 6, 7, 0, 1, 2],
             [2, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.findMin(nums)
             print('result: %s' % (result))

@@ -26,7 +26,7 @@ class Solution:
                 r_ False
             r_ self.dfs(board, _x, _y)
 
-        for i in range(1, n + 1
+        ___ i in range(1, n + 1
             board[x][y] = str(i)
             __ (
                 self.is_valid(board, x, y) and
@@ -43,7 +43,7 @@ class Solution:
 
         n = le.(board)
 
-        for i in range(n
+        ___ i in range(n
             __ y != i and board[x][y] __ board[x][i]:
                 r_ False
             __ x != i and board[x][y] __ board[i][y]:
@@ -52,8 +52,8 @@ class Solution:
         r = x // 3 * 3
         c = y // 3 * 3
 
-        for i in range(r, r + 3
-            for j in range(c, c + 3
+        ___ i in range(r, r + 3
+            ___ j in range(c, c + 3
                 __ x __ i and y __ j:
                     continue
                 __ board[x][y] __ board[i][j]:

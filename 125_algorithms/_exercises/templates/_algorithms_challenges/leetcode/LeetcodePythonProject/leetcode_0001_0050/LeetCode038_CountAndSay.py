@@ -10,7 +10,7 @@ class Solution(object
         :rtype: str
         """
         res = '1'
-        for _ in range(n-1
+        ___ _ in range(n-1
             tmp = ''
             i = 0
             w___ i < le.(res

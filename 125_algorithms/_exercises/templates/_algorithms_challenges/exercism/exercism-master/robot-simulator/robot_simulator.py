@@ -71,7 +71,7 @@ class Robot:
         self.bearing = self.bearing.turn_left(self.bearing)
 
     ___ simulate(self, instructions
-        for i in instructions:
+        ___ i in instructions:
             self.execute_instruction(i)
 
     ___ execute_instruction(self, i

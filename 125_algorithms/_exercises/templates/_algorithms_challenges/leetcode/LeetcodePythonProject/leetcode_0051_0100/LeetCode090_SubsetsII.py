@@ -16,7 +16,7 @@ class Solution(object
     
     ___ helper(self, nums, ind, curr, res
         res.append(list(curr))
-        for i in range(ind, le.(nums)):
+        ___ i in range(ind, le.(nums)):
             __ i > ind and nums[i] __ nums[i-1]:
                 continue
             curr.append(nums[i])

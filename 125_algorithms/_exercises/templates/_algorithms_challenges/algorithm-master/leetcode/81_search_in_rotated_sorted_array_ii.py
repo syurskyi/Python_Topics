@@ -8,7 +8,7 @@ class Solution:
         __ not nums:
             r_ False
 
-        for num in nums:
+        ___ num in nums:
             __ num __ target:
                 r_ True
 

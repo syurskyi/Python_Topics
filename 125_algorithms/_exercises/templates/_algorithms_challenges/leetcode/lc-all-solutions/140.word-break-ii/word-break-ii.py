@@ -10,12 +10,12 @@ class Solution(object
       r_ res
     queue = [(0, "")]
     slen = le.(s)
-    lenList = [l for l in set(map(le., wordDict))]
+    lenList = [l ___ l in set(map(le., wordDict))]
     w___ queue:
       tmpqueue = []
-      for q in queue:
+      ___ q in queue:
         start, path = q
-        for l in lenList:
+        ___ l in lenList:
           __ start + l <= slen and s[start:start + l] in wordDict:
             newnode = (start + l, path + " " + s[start:start + l] __ path else s[start:start + l])
             tmpqueue.append(newnode)
@@ -32,12 +32,12 @@ class Solution(object
     """
     queue = [0]
     slen = le.(s)
-    lenList = [l for l in set(map(le., wordDict))]
-    visited = [0 for _ in range(0, slen + 1)]
+    lenList = [l ___ l in set(map(le., wordDict))]
+    visited = [0 ___ _ in range(0, slen + 1)]
     w___ queue:
       tmpqueue = []
-      for start in queue:
-        for l in lenList:
+      ___ start in queue:
+        ___ l in lenList:
           __ s[start:start + l] in wordDict:
             __ start + l __ slen:
               r_ True

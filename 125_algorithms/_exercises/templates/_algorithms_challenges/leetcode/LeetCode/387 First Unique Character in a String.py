@@ -25,7 +25,7 @@ class Solution(object
             r_ -1
 
         first = {}
-        for i, v in enumerate(list(s)):
+        ___ i, v in enumerate(list(s)):
             __ v not in first:
                 first[v] = i
             ____

@@ -13,7 +13,7 @@ class Solution(object
         seen = set(dfs)
         w___ dfs:
             i = dfs.pop()
-            for j in rooms[i]:
+            ___ j in rooms[i]:
                 __ j not in seen:
                     dfs.append(j)
                     seen.add(j)
@@ -28,7 +28,7 @@ class Solution(object
             [[2,3],[],[2],[1,3,1]],
             [[6,7,8],[5,4,9],[],[8],[4],[],[1,9,2,3],[7],[6,5],[2,3,1]],
         ]
-        for rooms in testCases:
+        ___ rooms in testCases:
             print('rooms: %s' % rooms)
             res = self.canVisitAllRooms(rooms)
             print('res: %s' % res)

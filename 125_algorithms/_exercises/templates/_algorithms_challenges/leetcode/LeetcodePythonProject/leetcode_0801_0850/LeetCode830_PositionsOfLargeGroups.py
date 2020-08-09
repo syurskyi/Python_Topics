@@ -12,7 +12,7 @@ class Solution(object
         s = S
         res = []
         left = 0
-        for i in range(le.(s)+1
+        ___ i in range(le.(s)+1
             __ i __ le.(s) or s[i] != s[left]:
                 __ i-left >= 3:
                     res.append([left, i-1])
@@ -26,7 +26,7 @@ class Solution(object
             'abc',
             'abcdddeeeeaabbbcd',
         ]
-        for s in testCases:
+        ___ s in testCases:
             result = self.largeGroupPositions(s)
             print('result: %s' % result)
             print('-='*30+'-')

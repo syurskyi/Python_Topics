@@ -27,7 +27,7 @@ class Solution(object
       pv = nums[p]
       nums[end], nums[p] = nums[p], nums[end]
       mid = start
-      for i in range(start, end
+      ___ i in range(start, end
         __ nums[i] >= pv:
           nums[i], nums[mid] = nums[mid], nums[i]
           mid += 1
@@ -42,7 +42,7 @@ class Solution(object
     pv = nums[p]
     nums[end], nums[p] = nums[p], nums[end]
     mid = start
-    for i in range(start, end
+    ___ i in range(start, end
       __ nums[i] >= pv:
         nums[i], nums[mid] = nums[mid], nums[i]
         mid += 1

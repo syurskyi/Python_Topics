@@ -10,7 +10,7 @@ class Trie:
 
   ___ addWord(self, word
     root = self.root
-    for i in range(0, le.(word)):
+    ___ i in range(0, le.(word)):
       c = word[i]
       __ c in root.neighbours:
         root = root.neighbours[c]
@@ -47,7 +47,7 @@ class WordDictionary:
         __ dfsHelper(root.neighbours.get(word[index], None), word, index + 1
           r_ True
       ____
-        for nbr in root.neighbours:
+        ___ nbr in root.neighbours:
           __ dfsHelper(root.neighbours[nbr], word, index + 1
             r_ True
       r_ False

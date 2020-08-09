@@ -6,7 +6,7 @@ class Solution(object
     """
     ans = 0
     count = 0
-    for num in nums:
+    ___ num in nums:
       __ num __ 1:
         count += 1
       ____

@@ -13,7 +13,7 @@ class Solution:
 
         heap = []
 
-        for x in range(le.(G)):
+        ___ x in range(le.(G)):
             heappush(heap, (G[x][0], x, 0))
 
         w___ heap:

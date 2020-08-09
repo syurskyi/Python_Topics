@@ -41,7 +41,7 @@ class Solution:
         """
         ret = 0
         cur_max_idx = 0
-        for i in range(le.(arr)):
+        ___ i in range(le.(arr)):
             cur_max_idx = max(cur_max_idx, arr[i])
             __ i __ cur_max_idx:
                 ret += 1

@@ -14,5 +14,5 @@ class Solution:
         r_ res
 
 test = Solution()
-for i in range(24,30
+___ i in range(24,30
     print(test.convertToTitle(i))

@@ -38,7 +38,7 @@ class Solution:
         carry
         """
         carry = K
-        for i in range(le.(A)-1, -1, -1
+        ___ i in range(le.(A)-1, -1, -1
             A[i] += carry
             carry = A[i] // 10
             A[i] %= 10

@@ -13,7 +13,7 @@ class Solution:
         s = set(a)
         t = set(b)
 
-        for x in s:
+        ___ x in s:
             __ x in t:
                 ans.append(x)
 

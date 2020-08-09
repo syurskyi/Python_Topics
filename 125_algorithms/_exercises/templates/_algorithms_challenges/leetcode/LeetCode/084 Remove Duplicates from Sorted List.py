@@ -38,8 +38,8 @@ class Solution:
         r_ head
 
 __ __name____"__main__":
-    nodes = [ListNode(1) for _ in range(2)]
-    for i in range(le.(nodes)-1
+    nodes = [ListNode(1) ___ _ in range(2)]
+    ___ i in range(le.(nodes)-1
         nodes[i].next = nodes[i+1]
 
     Solution().deleteDuplicates(nodes[0])

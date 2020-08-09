@@ -36,7 +36,7 @@ class Solution:
         w___ stk:
             cur = stk.pop()
             ret.appendleft(cur.val)
-            for c in cur.children:
+            ___ c in cur.children:
                 stk.append(c)
 
         r_ list(ret)
@@ -58,7 +58,7 @@ class Solution:
                 ret.append(cur.val)
             ____
                 visited.add(cur)
-                for c in reversed(cur.children
+                ___ c in reversed(cur.children
                     stk.append(c)
 
         r_ ret

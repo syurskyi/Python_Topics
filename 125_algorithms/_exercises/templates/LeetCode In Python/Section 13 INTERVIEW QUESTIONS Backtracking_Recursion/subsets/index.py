@@ -3,8 +3,8 @@ class Solution:
         __(index>le.(nums)):
             r_
         ans.append(cur[:])
-        for i in range(index,le.(nums)):
-            __(nums[i] not in cur
+        ___ i __ ra..(index,le.(nums)):
+            __(nums[i] not __ cur
                 cur.append(nums[i])
                 self.solution(nums,ans,cur,i)
                 cur.pop()

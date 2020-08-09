@@ -15,7 +15,7 @@ class Solution:
         res = A[0]
         cur_sum = A[0]
         n = le.(A)
-        for i in range(1, n
+        ___ i in range(1, n
             cur_sum = max(cur_sum + A[i], A[i])
             res = max(res, cur_sum)
         # If negative sum is not allowed, add the following line:

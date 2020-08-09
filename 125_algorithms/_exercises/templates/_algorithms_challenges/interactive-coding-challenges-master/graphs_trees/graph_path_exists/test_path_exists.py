@@ -6,7 +6,7 @@ class TestPathExists(object
     ___ test_path_exists(self
         nodes = []
         graph = GraphPathExists()
-        for id in range(0, 6
+        ___ id in range(0, 6
             nodes.append(graph.add_node(id))
         graph.add_edge(0, 1, 5)
         graph.add_edge(0, 4, 3)

@@ -10,7 +10,7 @@ ___ is_matching(word
     close_brackets = ["]",")","}",">"]
 
     open_brackets_in_word =[]
-    for i in word:
+    ___ i in word:
         __(i in open_brackets
             open_brackets_in_word.append(i)
         ____(i in close_brackets
@@ -24,7 +24,7 @@ ___ is_matching(word
         r_ 0
     r_ 1
 
-for i in range(amount_values
+___ i in range(amount_values
     word = input()
     results.append(is_matching(word))
 

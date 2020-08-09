@@ -45,7 +45,7 @@ class Solution(object
         """
         ______ heapq
         heapq.heapify(nums)
-        for _ in range(le.(nums)-k+1
+        ___ _ in range(le.(nums)-k+1
             result = heapq.heappop(nums)
         r_ result
     
@@ -55,7 +55,7 @@ class Solution(object
             ([3,2,1,5,6,4], 5),
             ([3,3,3,3,3,3], 1),
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
             result = self.findKthLargest(nums, k)

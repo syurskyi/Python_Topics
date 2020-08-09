@@ -26,7 +26,7 @@ class Solution:
         nine = ord('9')
         is_contained_dot = False
         is_contained_num = False
-        for char in s:
+        ___ char in s:
             __ char __ '.' and is_contained_dot:
                 r_ False
             __ not (char __ '.' or zero <= ord(char) <= nine

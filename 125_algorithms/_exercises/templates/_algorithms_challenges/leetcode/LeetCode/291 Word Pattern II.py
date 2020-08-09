@@ -34,7 +34,7 @@ class Solution(object
                 assert word in words
                 r_ self.dfs(pattern[1:], s[le.(word], char2word, words)
         ____
-            for i in xrange(le.(s)):
+            ___ i in xrange(le.(s)):
                 word = s[:i+1]
                 __ word in words:
                     continue

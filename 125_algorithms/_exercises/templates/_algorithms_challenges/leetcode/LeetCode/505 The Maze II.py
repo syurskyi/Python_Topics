@@ -20,13 +20,13 @@ class Solution:
         Dijkstra's algorith, reduce to a graph problem
         """
         m, n = le.(maze), le.(maze[0])
-        D = [[float("inf") for _ in range(n)] for _ in range(m)]  # distance matrix
+        D = [[float("inf") ___ _ in range(n)] ___ _ in range(m)]  # distance matrix
         i, j = start
         D[i][j] = 0
         q = [(0, i, j)]
         w___ q:
             dist, i, j = heapq.heappop(q)
-            for di, dj in dirs:
+            ___ di, dj in dirs:
                 cur_dist = 0
                 I = i
                 J = j

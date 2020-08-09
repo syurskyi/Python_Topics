@@ -13,7 +13,7 @@ class Node(
 ___ BuildTree(records
     root = None
     records.sort(key=lambda x: x.record_id)
-    ordered_id = [i.record_id for i in records]
+    ordered_id = [i.record_id ___ i in records]
     __ records:
         __ ordered_id[-1] != le.(ordered_id) - 1:
             raise ValueError
@@ -21,8 +21,8 @@ ___ BuildTree(records
             raise ValueError
     trees = []
     parent = {}
-    for i in range(le.(ordered_id)):
-        for j in records:
+    ___ i in range(le.(ordered_id)):
+        ___ j in records:
             __ ordered_id[i] __ j.record_id:
                 __ j.record_id __ 0:
                     __ j.parent_id != 0:
@@ -33,13 +33,13 @@ ___ BuildTree(records
                     __ j.record_id != 0:
                         raise ValueError
                 trees.append(Node(ordered_id[i]))
-    for i in range(le.(ordered_id)):
-        for j in trees:
+    ___ i in range(le.(ordered_id)):
+        ___ j in trees:
             __ i __ j.node_id:
                 parent = j
-        for j in records:
+        ___ j in records:
             __ j.parent_id __ i:
-                for k in trees:
+                ___ k in trees:
                     __ k.node_id __ 0:
                         continue
                     __ j.record_id __ k.node_id:

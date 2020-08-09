@@ -18,7 +18,7 @@ class Solution:
         pair = dict(zip(put_set, pop_set))
 
         stack = []
-        for element in s:
+        ___ element in s:
             __ element in put_set:
                 stack.append(pair[element])
             ____ element in pop_set:

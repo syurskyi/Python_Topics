@@ -12,7 +12,7 @@ class Solution:
         n = le.(nums)
         nums.sort()
 
-        for a in range(n - 2
+        ___ a in range(n - 2
             __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 

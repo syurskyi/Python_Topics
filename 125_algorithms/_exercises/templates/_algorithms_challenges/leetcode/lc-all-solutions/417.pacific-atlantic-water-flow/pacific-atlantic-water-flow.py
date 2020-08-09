@@ -13,16 +13,16 @@ class Solution(object
 
     ___ dfs(matrix, visited, i, j
       visited |= {(i, j)}
-      for di, dj in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
+      ___ di, dj in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
         ni, nj = i + di, j + dj
         __ 0 <= ni < n and 0 <= nj < m and (ni, nj) not in visited:
           __ matrix[ni][nj] >= matrix[i][j]:
             dfs(matrix, visited, ni, nj)
 
-    for i in range(n
+    ___ i in range(n
       dfs(matrix, pacific, i, 0)
       dfs(matrix, atlantic, i, m - 1)
-    for j in range(m
+    ___ j in range(m
       dfs(matrix, pacific, 0, j)
       dfs(matrix, atlantic, n - 1, j)
     r_ list(pacific & atlantic)

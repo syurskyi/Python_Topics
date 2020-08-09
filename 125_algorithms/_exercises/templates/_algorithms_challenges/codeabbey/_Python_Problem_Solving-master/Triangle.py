@@ -1,7 +1,7 @@
 data = int(input())
 
 res= ''
-for i in range(0,data
+___ i in range(0,data
     para = input().split()
     
     para = list(map(int,para))

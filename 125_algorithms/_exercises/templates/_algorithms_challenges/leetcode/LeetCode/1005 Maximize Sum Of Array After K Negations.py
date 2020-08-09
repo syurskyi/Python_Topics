@@ -42,7 +42,7 @@ class Solution:
         since -100 <= A[i] <= 100, then sort can be done in linear time
         """
         A.sort()
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ K __ 0:
                 break
 
@@ -58,4 +58,4 @@ class Solution:
                         A[i] *= -1
                 break
 
-        r_ sum(A)
+        r_ su.(A)

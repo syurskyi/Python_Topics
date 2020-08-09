@@ -21,7 +21,7 @@ ___ _get_title(item
 
 ___ _store(kind, resp, overwrite=DEFAULT_OVERWRITE
     with shelve.open(CACHE) as sh:
-        for item in resp:
+        ___ item in resp:
             key = str(item['id'])
 
             __ overwrite and key in sh:

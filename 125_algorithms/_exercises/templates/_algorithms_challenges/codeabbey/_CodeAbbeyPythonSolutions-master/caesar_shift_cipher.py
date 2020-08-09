@@ -3,7 +3,7 @@ results = []
 
 ___ get_cipher(words, shifter
     cipher_word = ""
-    for i in words:
+    ___ i in words:
         cipher_char = ord(i)
         __(cipher_char < 65
             cipher_word += chr(cipher_char)
@@ -16,7 +16,7 @@ ___ get_cipher(words, shifter
     r_ cipher_word
 
 
-for i in range(amount_values
+___ i in range(amount_values
     results.append(get_cipher(input(),shifter))
 
 print(*results)

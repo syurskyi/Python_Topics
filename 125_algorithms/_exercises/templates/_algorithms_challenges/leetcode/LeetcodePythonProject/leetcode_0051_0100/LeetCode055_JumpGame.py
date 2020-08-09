@@ -11,7 +11,7 @@ class Solution(object
         :rtype: bool
         """
         furthest = 0
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             __ furthest >= i:
                 furthest = max(furthest, i+num)
             __ furthest >= le.(nums)-1:
@@ -23,7 +23,7 @@ class Solution(object
             [2,3,1,1,4],
             [3,2,1,0,4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.canJump(nums)
             print('result: %s' % (result))

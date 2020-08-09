@@ -5,12 +5,12 @@ ___ get_sum(values
 
     result = 0
 
-    for i in values:
+    ___ i in values:
         result = result + i
     
     r_ result
 
-for i in range(amount_values
+___ i in range(amount_values
     values = list(map(int, input().split()))
     results.append(get_sum(values))
 

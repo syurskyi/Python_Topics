@@ -51,7 +51,7 @@ class Packt:
         self._driver.find_element_by_link_text('My eBooks').click()
         elems = self._driver.find_elements_by_class_name("product-line")
         r_ {e.get_attribute('nid' e.get_attribute('title')
-                for e in elems}
+                ___ e in elems}
 
     ___ parse_html(self
         'use BeautifulSoup'

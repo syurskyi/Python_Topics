@@ -11,5 +11,5 @@ ___ cached_fib(n
 
 
 __ __name__ __ '__main__':
-    for x in range(11
+    ___ x in range(11
         print(f'fib({x}) = {cached_fib(x)}')

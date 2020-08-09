@@ -63,7 +63,7 @@ class Solution(object
             '2x+3x-6x=x+2',
             'x=x+2',
         ]
-        for equation in testCases:
+        ___ equation in testCases:
             print('equation: %s' % equation)
             result = self.solveEquation(equation)
             print('result: %s' % result)

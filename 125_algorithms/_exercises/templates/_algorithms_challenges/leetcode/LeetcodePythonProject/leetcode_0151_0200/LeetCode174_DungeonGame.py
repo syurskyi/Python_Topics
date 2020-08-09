@@ -11,13 +11,13 @@ class Solution(object
         :rtype: int
         """
         m, n = le.(dungeon), le.(dungeon[0])
-        tbl = [[0]*n for _ in range(m)]
+        tbl = [[0]*n ___ _ in range(m)]
         __ dungeon[-1][-1] > 0:
             tbl[-1][-1] = 1
         ____
             tbl[-1][-1] = 1-dungeon[-1][-1]
-        for i in range(m-1, -1, -1
-            for j in range(n-1, -1, -1
+        ___ i in range(m-1, -1, -1
+            ___ j in range(n-1, -1, -1
                 __ i __ m-1 and j __ n-1:
                     continue
                 __ i __ m-1:

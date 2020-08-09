@@ -30,16 +30,16 @@ class Solution:
         __ m < 1: r_ 0
         n = le.(matrix[0])
         __ n < 1: r_ 0
-        for i in xrange(m
+        ___ i in xrange(m
             matrix[i] = map(int, matrix[i])
 
         maxa = 0
-        to_top = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
-        to_left = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
-        square_width = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
+        to_top = [[0 ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
+        to_left = [[0 ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
+        square_width = [[0 ___ _ in xrange(n+1)] ___ _ in xrange(m+1)]
 
-        for i in xrange(1, m+1
-            for j in xrange(1, n+1
+        ___ i in xrange(1, m+1
+            ___ j in xrange(1, n+1
                 __ matrix[i-1][j-1] __ 0:
                     continue
 

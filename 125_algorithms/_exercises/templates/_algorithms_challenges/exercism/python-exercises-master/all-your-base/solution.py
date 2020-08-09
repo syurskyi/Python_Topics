@@ -1,5 +1,5 @@
 ___ from_digits(digits, base
-    r_ sum(n * base ** i for i, n in enumerate(reversed(digits)))
+    r_ su.(n * base ** i ___ i, n in enumerate(reversed(digits)))
 
 
 ___ to_digits(number, base_to
@@ -17,7 +17,7 @@ ___ rebase(from_base, digits, to_base
     __ (to_base < 2
         raise ValueError("Invalid output base.")
 
-    __ any(True for d in digits __ d < 0 or d >= from_base
+    __ any(True ___ d in digits __ d < 0 or d >= from_base
         raise ValueError("Invalid input digit.")
 
     r_ to_digits(from_digits(digits, from_base), to_base)

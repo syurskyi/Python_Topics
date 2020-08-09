@@ -16,12 +16,12 @@ class Solution(object
         """
         m, n = le.(image), le.(image[0])
         yaxis = [
-            1 __ any(image[i][j] __ "1" for i in xrange(m)) else 0
-            for j in xrange(n)
+            1 __ any(image[i][j] __ "1" ___ i in xrange(m)) else 0
+            ___ j in xrange(n)
         ]
         xaxis = [
-            1 __ any(image[i][j] __ "1" for j in xrange(n)) else 0
-            for i in xrange(m)
+            1 __ any(image[i][j] __ "1" ___ j in xrange(n)) else 0
+            ___ i in xrange(m)
         ]
 
         y_lo = bisect.bisect_left(yaxis, 1, 0, y)

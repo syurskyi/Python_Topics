@@ -7,9 +7,9 @@ class Solution(object
     ans = le.(wall)
     count = 0
     d = {}
-    for w in wall:
+    ___ w in wall:
       coverage = 0
-      for brick in w[:-1]:
+      ___ brick in w[:-1]:
         coverage += brick
         d[coverage] = d.get(coverage, 0) + 1
         count = max(count, d.get(coverage, 0))

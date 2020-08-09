@@ -6,7 +6,7 @@ class TestFib(object
     ___ test_fib(self, func
         result = []
         expected = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
-        for i in range(le.(expected)):
+        ___ i in range(le.(expected)):
             result.append(func(i))
         assert_equal(result, expected)
         print('Success: test_fib')

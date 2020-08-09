@@ -26,7 +26,7 @@ class Solution(object
             [1, 3, 5, 4, 7],
             [2, 2, 2, 2, 2],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.findLengthOfLCIS(nums)
             print('result: %s' % result)

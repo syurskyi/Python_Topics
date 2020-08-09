@@ -54,14 +54,14 @@ class Solution(object
         __ not root:
             r_ None
         isLeft = True
-        for node in nodes:
+        ___ node in nodes:
             __ not self.isSubTree(root.left, node
                 isLeft = False
                 break
         __ isLeft:
             r_ self.getCommonParent(root.left, nodes)
         isRight = True
-        for node in nodes:
+        ___ node in nodes:
             __ not self.isSubTree(root.right, node
                 isRight = False
                 break

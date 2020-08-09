@@ -36,13 +36,13 @@ class Solution(object
         :rtype: int
         """
         mod = 10**9+7
-        dp = [[[0]*3 for _ in range(2)] for _ in range(n+1)]
-        for i in range(2
-            for j in range(3
+        dp = [[[0]*3 ___ _ in range(2)] ___ _ in range(n+1)]
+        ___ i in range(2
+            ___ j in range(3
                 dp[0][i][j] = 1
-        for i in range(1, n+1
-            for j in range(2
-                for k in range(3
+        ___ i in range(1, n+1
+            ___ j in range(2
+                ___ k in range(3
                     val = dp[i-1][j][2]
                     __ j > 0:
                         val = (val+dp[i-1][j-1][2]) % mod # A
@@ -57,7 +57,7 @@ class Solution(object
             3,
             4,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.checkRecord(n)
             print('result: %s' % result)

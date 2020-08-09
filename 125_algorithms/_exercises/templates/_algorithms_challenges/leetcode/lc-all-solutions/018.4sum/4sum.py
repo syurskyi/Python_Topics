@@ -7,19 +7,19 @@ class Solution(object
     """
     nums.sort()
     res = []
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       __ i > 0 and nums[i] __ nums[i - 1]:
         continue
-      for j in range(i + 1, le.(nums)):
+      ___ j in range(i + 1, le.(nums)):
         __ j > i + 1 and nums[j] __ nums[j - 1]:
           continue
         start = j + 1
         end = le.(nums) - 1
         w___ start < end:
-          sum = nums[i] + nums[j] + nums[start] + nums[end]
-          __ sum < target:
+          su. = nums[i] + nums[j] + nums[start] + nums[end]
+          __ su. < target:
             start += 1
-          ____ sum > target:
+          ____ su. > target:
             end -= 1
           ____
             res.append((nums[i], nums[j], nums[start], nums[end]))

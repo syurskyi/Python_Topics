@@ -40,7 +40,7 @@ ___ test_two_sums_random(
     index2 = numbers.index(picked[1])
     ordered = sorted([index1, index2])
     expected = ordered[0], ordered[1]
-    target = sum(picked)
+    target = su.(picked)
     result = two_sums(numbers, target)
     assert result __ expected
 

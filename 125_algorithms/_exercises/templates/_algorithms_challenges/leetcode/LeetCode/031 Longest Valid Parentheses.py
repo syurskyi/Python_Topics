@@ -27,7 +27,7 @@ class Solution(object
         """
         stk = []  # hold the INDEX of UNPAIRED bracket, either ( or )
         maxa = 0
-        for idx, val in enumerate(s
+        ___ idx, val in enumerate(s
             __ val __ ")" and stk and s[stk[-1]] __ "(":
                 stk.pop()
                 __ not stk:

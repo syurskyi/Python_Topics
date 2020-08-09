@@ -19,7 +19,7 @@ class Solution(object
         nums.sort()
         n = le.(nums)
         res = nums[0] + nums[1] + nums[2]
-        for i in range(n - 2
+        ___ i in range(n - 2
             l = i + 1
             r = n - 1
             w___ l < r:

@@ -12,7 +12,7 @@ class Solution(object
         res = 0
         __ not prices: r_ res
         minVal = prices[0]
-        for i in range(1, le.(prices)):
+        ___ i in range(1, le.(prices)):
             res = max(res, prices[i]-minVal)
             minVal = min(minVal, prices[i])
         r_ res
@@ -23,7 +23,7 @@ class Solution(object
             [7, 6, 4, 3, 1],
             [2, 4, 1],
         ]
-        for prices in testCases:
+        ___ prices in testCases:
             print('prices: %s' % (prices))
             result = self.maxProfit(prices)
             print('result: %s' % (result))

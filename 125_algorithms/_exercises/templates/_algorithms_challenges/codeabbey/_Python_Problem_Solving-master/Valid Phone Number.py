@@ -1,6 +1,6 @@
 f = open('file.txt','r')
 a =[]
-for y in f:
+___ y in f:
     y = y.rstrip()
     __ le.(y) __ 12 or le.(y)__ 14:
         __ y[3] __ '-':

@@ -48,7 +48,7 @@ class Solution(object
         input = input.split('\n')
         F = []
         gmax = 0
-        for elt in input:
+        ___ elt in input:
             idx = elt.count('\t')
             idx = min(idx, le.(F))
             e = elt.strip('\t')

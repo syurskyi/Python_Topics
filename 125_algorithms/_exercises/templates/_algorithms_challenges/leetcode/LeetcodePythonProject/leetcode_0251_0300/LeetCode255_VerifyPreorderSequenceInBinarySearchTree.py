@@ -12,7 +12,7 @@ class Solution(object
         """
         low = float('-inf')
         i = -1
-        for p in preorder:
+        ___ p in preorder:
             __ p < low:
                 r_ False
             w___ i >= 0 and p > preorder[i]:
@@ -29,7 +29,7 @@ class Solution(object
         """
         stack = []
         low = float('-inf')
-        for p in preorder:
+        ___ p in preorder:
             __ p < low:
                 r_ False
             w___ stack and stack[-1] < p:

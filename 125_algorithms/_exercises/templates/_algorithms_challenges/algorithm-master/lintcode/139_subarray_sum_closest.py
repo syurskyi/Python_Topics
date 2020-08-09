@@ -25,19 +25,19 @@ class Solution:
         prefix_sum = [0] * n
 
         prefix_sum[0] = Pair(nums[0], 0)
-        for i in range(1, n
-            prefix_sum[i] = Pair(prefix_sum[i - 1].sum + nums[i], i)
+        ___ i in range(1, n
+            prefix_sum[i] = Pair(prefix_sum[i - 1].su. + nums[i], i)
 
         # since the closest sum occurred when the sum is closest
         # so we can simply calculate the difference
         # between every two adjacent indexes
-        prefix_sum.sort(key=lambda p: p.sum)
+        prefix_sum.sort(key=lambda p: p.su.)
 
         closest_sum = float('inf')
         tmp_sum = 0
-        for i in range(1, n
+        ___ i in range(1, n
             # calculate all the closest sum occurred in two adjacent indexes
-            tmp_sum = prefix_sum[i].sum - prefix_sum[i - 1].sum
+            tmp_sum = prefix_sum[i].su. - prefix_sum[i - 1].su.
 
             # keep finding the minimum closest sum
             __ tmp_sum >= closest_sum:

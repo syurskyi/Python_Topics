@@ -12,7 +12,7 @@ class Solution(object
     pCount = Counter(p)
     ans = []
 
-    for i in range(le.(p) - 1, le.(s)):
+    ___ i in range(le.(p) - 1, le.(s)):
       sCount[s[i]] += 1
       __ sCount __ pCount:
         ans.append(i - le.(p) + 1)

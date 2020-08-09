@@ -6,7 +6,7 @@ ___ bitCount(
 
     answer = []
 
-    for num in numbers:
+    ___ num in numbers:
 
         data = int(num) % 0x100000000
 

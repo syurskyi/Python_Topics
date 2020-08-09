@@ -21,7 +21,7 @@ class FileSystem(object
         __ arr[0] __ '':
             arr = []
         node = self.root
-        for folder in arr:
+        ___ folder in arr:
             node = node.children[folder]
         node.childFolders.sort()
         __ node.isFile:
@@ -33,7 +33,7 @@ class FileSystem(object
         path = path[1:]
         arr = path.split('/')
         node = self.root
-        for folder in arr:
+        ___ folder in arr:
             __ folder in node.children:
                 node = node.children[folder]
             ____
@@ -48,7 +48,7 @@ class FileSystem(object
         file = arr[-1]
         arr = arr[:-1]
         node = self.root
-        for folder in arr:
+        ___ folder in arr:
             __ folder in node.children:
                 node = node.children[folder]
             ____
@@ -69,6 +69,6 @@ class FileSystem(object
         filePath = filePath[1:]
         arr = filePath.split('/')
         node = self.root
-        for folder in arr:
+        ___ folder in arr:
             node = node.children[folder]
         r_ node.content

@@ -25,10 +25,10 @@ class Solution(object
         """
         d = {}
         res = 0
-        for i, k in enumerate(range(ord('A'), ord('Z') + 1), start=1
+        ___ i, k in enumerate(range(ord('A'), ord('Z') + 1), start=1
             d[chr(k)] = i
         j = 0
-        for c in s[::-1]:
+        ___ c in s[::-1]:
             res += d[c] * (26 ** j)
             j += 1
         r_ res

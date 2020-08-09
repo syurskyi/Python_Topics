@@ -12,7 +12,7 @@ class Solution(object
         queue1 = []
         queue2 = []
         n = le.(senate)
-        for i in range(n
+        ___ i in range(n
             __ senate[i] __ 'R':
                 queue1.append(i)
             ____
@@ -32,7 +32,7 @@ class Solution(object
             'RDD',
             'DDRRR',
         ]
-        for senate in testCases:
+        ___ senate in testCases:
             print('senate: %s' % senate)
             result = self.predictPartyVictory(senate)
             print('result: %s' % result)

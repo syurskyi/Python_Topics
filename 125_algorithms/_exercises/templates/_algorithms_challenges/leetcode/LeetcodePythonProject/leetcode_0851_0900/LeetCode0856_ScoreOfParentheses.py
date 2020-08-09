@@ -11,7 +11,7 @@ class Solution(object
         """
         s = S
         stack, cur = [], 0
-        for c in s:
+        ___ c in s:
             __ c __ '(':
                 stack.append(cur)
                 cur = 0
@@ -27,7 +27,7 @@ class Solution(object
             '(())()',
             '(()(()))',
         ]
-        for s in testCases:
+        ___ s in testCases:
             res = self.scoreOfParentheses(s)
             print('res: %s' % res)
             print('-='*30+'-')

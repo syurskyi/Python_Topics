@@ -45,7 +45,7 @@ class WordDictionary:
         :rtype: None
         """
         cur = self.root
-        for w in word:
+        ___ w in word:
             __ w not in cur.children:
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
@@ -72,7 +72,7 @@ class WordDictionary:
             ____
                 r_ False
         ____
-            for child in cur.children.values(
+            ___ child in cur.children.values(
                 __ self.__search(word[1:], child
                     r_ True
 

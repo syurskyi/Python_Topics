@@ -9,7 +9,7 @@ __ __name__ __ '__main__':
     soup = BeautifulSoup(r.text, "html.parser")
     headings = soup.find_all("h2", {"class": "story-heading"})
     i = 1
-    for heading in headings:
+    ___ heading in headings:
         __ heading.findAll("a"
             # .strip() removes leading/trailing whitespace
             print(str(i) + " " + heading.a.text.strip() + "\n")

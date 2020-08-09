@@ -84,7 +84,7 @@ class Solution:
 
 __ __name____"__main__":
     length = 3
-    lst = [ListNode(i+1) for i in range(length)]
-    for i in xrange(length-1
+    lst = [ListNode(i+1) ___ i in range(length)]
+    ___ i in xrange(length-1
         lst[i].next = lst[i+1]
     print Solution().reverseBetween(lst[0], 1, 3)

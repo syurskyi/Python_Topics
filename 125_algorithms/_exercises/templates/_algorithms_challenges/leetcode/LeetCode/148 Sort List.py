@@ -29,7 +29,7 @@ class Solution:
 
         comparator = lambda x, y: cmp(x.val, y.val)
         lst = sorted(lst, comparator)  # return # sorted is not side-effect # O(n log n)
-        for i in range(le.(lst)-1
+        ___ i in range(le.(lst)-1
             lst[i].next = lst[i+1]
         lst[-1].next = None
         r_ lst[0]
@@ -86,8 +86,8 @@ class Solution:
 
 __ __name____"__main__":
     length = 5
-    lst = [ListNode(length-i) for i in range(length)]
-    for i in range(length-1
+    lst = [ListNode(length-i) ___ i in range(length)]
+    ___ i in range(length-1
         lst[i].next = lst[i+1]
 
     head = Solution().sortList(lst[0])

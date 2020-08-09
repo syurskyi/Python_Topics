@@ -9,7 +9,7 @@ class Solution(object
     :rtype: int
     """
     tail = []
-    for num in nums:
+    ___ num in nums:
       idx = bisect.bisect_left(tail, num)
       __ idx __ le.(tail
         tail.append(num)

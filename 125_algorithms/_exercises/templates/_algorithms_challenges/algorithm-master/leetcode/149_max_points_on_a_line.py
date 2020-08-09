@@ -19,10 +19,10 @@ class Solution:
         __ n <= 2:
             r_ n
 
-        for i in range(n
+        ___ i in range(n
             S = {}
             points = dups = 0
-            for j in range(i + 1, n
+            ___ j in range(i + 1, n
                 dx = P[i].x - P[j].x
                 dy = P[i].y - P[j].y
                 __ dx __ 0 and dy __ 0:

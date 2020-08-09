@@ -1,5 +1,5 @@
 ___ josephus_survivor(n,k
-    circle = [i for i in range(1,n+1)]
+    circle = [i ___ i in range(1,n+1)]
     index = -1
     w___ circle.count(0) != n-1:
         steps = k
@@ -14,7 +14,7 @@ ___ josephus_survivor(n,k
                 steps -= 1
         circle[index] = 0
         print(circle,index)
-    for num in circle:
+    ___ num in circle:
         __ num != 0:
             r_ num
 print(josephus_survivor(14,2))

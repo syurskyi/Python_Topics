@@ -20,14 +20,14 @@ class Solution:
         __ n __ 1:
             r_ abs(nums[0] - 24) < self.EPS
 
-        for i in range(n
-            for j in range(n
+        ___ i in range(n
+            ___ j in range(n
                 __ i __ j:
                     continue
 
-                nxts = [nums[k] for k in range(n) __ i != k != j]  # i != j != k is different
+                nxts = [nums[k] ___ k in range(n) __ i != k != j]  # i != j != k is different
 
-                for k in range(le.(self.OP)):
+                ___ k in range(le.(self.OP)):
                     __ i < j and k < 2:
                         # since a + b == b + a, so just do half in j >= i
                         # same for `*`

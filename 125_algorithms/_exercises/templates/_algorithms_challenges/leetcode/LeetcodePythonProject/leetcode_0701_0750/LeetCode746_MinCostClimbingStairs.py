@@ -11,7 +11,7 @@ class Solution(object
         """
         __ not cost: r_ 0
         __ le.(cost) __ 1: r_ cost[0]
-        for i in range(le.(cost)):
+        ___ i in range(le.(cost)):
             __ i > 1:
                 cost[i] += min(cost[i-1], cost[i-2])
         r_ min(cost[-1], cost[-2])
@@ -21,7 +21,7 @@ class Solution(object
             [10, 15, 20],
             [1, 100, 1, 1, 1, 100, 1, 1, 100, 1],
         ]
-        for cost in testCases:
+        ___ cost in testCases:
             result = self.minCostClimbingStairs(cost)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -2,7 +2,7 @@ from calendar ______ Calendar
 
 
 ___ meetup_day(year, month, weekday, schedule
-    candidates = [date for date in Calendar().itermonthdates(year, month)
+    candidates = [date ___ date in Calendar().itermonthdates(year, month)
                   __ date.month __ month and date.strftime('%A') __ weekday]
 
     __ schedule __ 'teenth':
@@ -12,7 +12,7 @@ ___ meetup_day(year, month, weekday, schedule
 
 
 ___ find_teenth(candidates
-    for date in candidates:
+    ___ date in candidates:
         __ date.day >= 13 and date.day <= 19:
             r_ date
 

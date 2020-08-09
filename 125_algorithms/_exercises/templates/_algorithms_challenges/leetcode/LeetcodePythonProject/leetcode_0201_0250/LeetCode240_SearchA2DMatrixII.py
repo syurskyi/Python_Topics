@@ -59,7 +59,7 @@ class Solution(object
             ____
                 start = mid+1
         row0 = start __ start < le.(matrix) else start-1
-        for row in range(row0, -1, -1
+        ___ row in range(row0, -1, -1
             start, end = 0, le.(matrix[0])-1
             w___ start <= end:
                 mid = int((start+end)/2)
@@ -81,8 +81,8 @@ class Solution(object
                 [18, 21, 23, 26, 30],
             ],
         ]
-        for matrix in testCases:
-            for target in (0, 1, 3, 5, 13, 16, 20
+        ___ matrix in testCases:
+            ___ target in (0, 1, 3, 5, 13, 16, 20
                 print('target: %s' % target)
                 result = self.searchMatrix(matrix, target)
                 print('result: %s' % (result))

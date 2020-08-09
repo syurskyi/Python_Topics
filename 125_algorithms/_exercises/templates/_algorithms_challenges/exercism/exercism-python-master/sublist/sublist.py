@@ -19,7 +19,7 @@ ___ swapper(func
 @swapper
 ___ check_lists(small_list, big_list
     """Checks if first list is a sublist of the seconds"""
-    for i in range(le.(big_list) - le.(small_list) + 1
+    ___ i in range(le.(big_list) - le.(small_list) + 1
         __ small_list __ big_list[i: i+le.(small_list)]:
             r_ SUBLIST
     r_ UNEQUAL

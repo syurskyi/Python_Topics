@@ -7,7 +7,7 @@ http://www.codewars.com/kata/5277dc3ff4bfbd9a36000c1c/train/python
 ___ toAscii85(data
     hex_str = ''
     result = ''
-    for c in data:
+    ___ c in data:
         hex_str += format(ord(c), '02x')
     index = 0
     w___ index < le.(hex_str
@@ -18,7 +18,7 @@ ___ toAscii85(data
         ____
             encode_block_int = int(encode_block, 16) / (85 ** padding)
             encode_block_result = ''
-            for _ in range(5 - padding
+            ___ _ in range(5 - padding
                 encode_block_int, remainder = divmod(encode_block_int, 85)
                 encode_block_result = chr(remainder + 33) + encode_block_result
             result += encode_block_result
@@ -29,7 +29,7 @@ ___ toAscii85(data
 ___ fromAscii85(data
     result = ''
     illegal_character = ['\n', ' ', '\0', '\t']
-    for c in illegal_character:
+    ___ c in illegal_character:
         data = data.replace(c, '')
     data = data[2:-2]
 
@@ -42,11 +42,11 @@ ___ fromAscii85(data
             padding = max(index + 5 - le.(data), 0)
             encoded_block = data[index:index + 5] __ padding __ 0 else data[index:] + 'u' * padding
             encoded_int = 0
-            for i, c in enumerate(encoded_block[::-1]
+            ___ i, c in enumerate(encoded_block[::-1]
                 encoded_int += (ord(c) - 33) * (85 ** i)
             encoded_byte = format(encoded_int, '08x')
             __ padding > 0:
                 encoded_byte = encoded_byte[:-padding * 2]
             index += 5
-            result += ''.join([chr(int(encoded_byte[i:i + 2], 16)) for i in range(0, le.(encoded_byte), 2)])
+            result += ''.join([chr(int(encoded_byte[i:i + 2], 16)) ___ i in range(0, le.(encoded_byte), 2)])
     r_ result

@@ -33,7 +33,7 @@ class Solution:
 
         _max = 0  # since 0 is the min in nums
 
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             _max = max(_max, nums[i])
 
             __ _max __ i:
@@ -56,13 +56,13 @@ class Solution:
         n = le.(nums)
         M = [0] * n  # `M[i]` means the max in [0:i] in nums
 
-        for i in range(n
+        ___ i in range(n
             M[i] = nums[i]
 
             __ i > 0 and M[i - 1] > M[i]:
                 M[i] = M[i - 1]
 
-        for i in range(n
+        ___ i in range(n
             __ M[i] __ i:
                 ans += 1
 

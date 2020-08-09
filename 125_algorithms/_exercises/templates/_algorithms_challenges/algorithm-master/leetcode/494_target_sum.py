@@ -23,7 +23,7 @@ class Solution:
         __ not A:
             r_ 0
 
-        _sum = sum(A)
+        _sum = su.(A)
         __ _sum < target or (_sum + target) % 2 __ 1:
             r_ 0
 
@@ -39,8 +39,8 @@ class Solution:
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for a in A:
-            for i in range(target, a - 1, -1
+        ___ a in A:
+            ___ i in range(target, a - 1, -1
                 dp[i] += dp[i - a]
 
         r_ dp[target]

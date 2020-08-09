@@ -1,12 +1,12 @@
 class Solution:
-    ___ solution(self, candidates,ans,cur,target,index,sum
+    ___ solution(self, candidates,ans,cur,target,index,su.
         __(sum__target
             ans.append(cur[:])
-        ____(sum<target
+        ____(su.<target
             n = le.(candidates)
-            for i in range(index,n
+            ___ i __ ra..(index,n
                 cur.append(candidates[i])
-                self.solution(candidates,ans,cur,target,i,sum+candidates[i])
+                self.solution(candidates,ans,cur,target,i,su.+candidates[i])
                 cur.pop()
         r_
     ___ combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:

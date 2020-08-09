@@ -34,7 +34,7 @@ class Solution:
         w___ stk:
             cur = stk.pop()
             ret.append(cur.val)
-            for c in reversed(cur.children
+            ___ c in reversed(cur.children
                 stk.append(c)
 
         r_ ret

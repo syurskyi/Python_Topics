@@ -5,7 +5,7 @@ d = int(input())
 binary  = list(map(int,input().split()))
 
 #loop through all the elements
-for j in binary:
+___ j in binary:
     bin_list = []
     res_str = ''
     
@@ -18,7 +18,7 @@ for j in binary:
             bin_list.append(j)
             
         #store the binary format according to the result
-        for k in bin_list:
+        ___ k in bin_list:
             __ k & 1:
                 #odd
                 res_str = '1' + res_str
@@ -34,7 +34,7 @@ for j in binary:
             bin_list.append(j)
         count = 0
         #we are doing 1's compliement 
-        for k in bin_list:
+        ___ k in bin_list:
             __ k & 1:
                 #odd
                 res_str = '0' + res_str
@@ -45,7 +45,7 @@ for j in binary:
         carry = 0
         result = ''
         #here we are doing 2's compliement
-        for i in range(le.(res_str)-1,-1,-1
+        ___ i in range(le.(res_str)-1,-1,-1
             res = int(res_str[i]) + res + carry
             __ res __ 3:
                 carry = 1

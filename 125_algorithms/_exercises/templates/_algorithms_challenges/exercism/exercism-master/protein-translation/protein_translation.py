@@ -34,7 +34,7 @@ ___ proteins(strand
     polypeptide = []
     codons = split_into_codons(strand)
 
-    for codon in codons:
+    ___ codon in codons:
         __ (codon in STOP_CODONS
             r_ polypeptide
         ____
@@ -44,5 +44,5 @@ ___ proteins(strand
 
 
 ___ split_into_codons(strand
-    r_ [strand[i:i + CODON_LENGTH] for i in range(0, le.(strand),
+    r_ [strand[i:i + CODON_LENGTH] ___ i in range(0, le.(strand),
                                                       CODON_LENGTH)]

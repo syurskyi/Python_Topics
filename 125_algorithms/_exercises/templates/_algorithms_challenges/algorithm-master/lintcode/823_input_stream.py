@@ -66,7 +66,7 @@ class Solution:
         RM = '<'
         stack = []
 
-        for c in a:
+        ___ c in a:
             __ c != RM:
                 stack.append(c)
             ____ stack:
@@ -75,7 +75,7 @@ class Solution:
 
         _stack = []
 
-        for c in b:
+        ___ c in b:
             __ c != RM:
                 _stack.append(c)
             ____ _stack:

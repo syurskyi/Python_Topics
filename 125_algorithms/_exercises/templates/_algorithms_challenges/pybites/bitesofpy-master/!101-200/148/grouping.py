@@ -25,8 +25,8 @@ ___ group_cars_by_manufacturer(cars
        No return here, just print to the console. We use pytest > capfd to
        validate your output :)
     """
-    for k, g in groupby(sorted(cars), lambda car: car[0]
+    ___ k, g in groupby(sorted(cars), lambda car: car[0]
         print(k.upper())
-        for c in g:
+        ___ c in g:
             print(f'- {c[1]}')
         print()

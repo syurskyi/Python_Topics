@@ -40,7 +40,7 @@ ___ encode(s
     cnt = 1
     char = s[0]
 
-    for i in range(1, le.(s)):
+    ___ i in range(1, le.(s)):
         __ s[i] __ s[i - 1]:
             cnt += 1
             continue

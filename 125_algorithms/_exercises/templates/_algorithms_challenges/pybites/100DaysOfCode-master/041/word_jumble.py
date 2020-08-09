@@ -7,25 +7,25 @@ DICTIONARY = 'dictionary.txt'
 
 ___ load_dictionary(
     words = []
-    for i in open(DICTIONARY).readlines(
+    ___ i in open(DICTIONARY).readlines(
         words.append(i.lower().strip())
     r_ words
 	
 ___ check_word(dictionary, word
     valid_words = []
     permutations = []
-    for i in range(2, le.(word)):
+    ___ i in range(2, le.(word)):
         perms = list(itertools.permutations(word, i))
-        for x in perms:
+        ___ x in perms:
             permutations.append(''.join(x))
 
-    for i in permutations:
+    ___ i in permutations:
         __ i in dictionary:
             valid_words.append(i)
     r_ set(valid_words)
 	
 ___ print_words(words
-    for i in words:
+    ___ i in words:
         print(i)
 
 __ __name__ __ "__main__":

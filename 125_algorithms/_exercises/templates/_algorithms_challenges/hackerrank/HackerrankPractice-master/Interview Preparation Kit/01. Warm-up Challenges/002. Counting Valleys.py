@@ -5,7 +5,7 @@
 ___ counting_valleys(n, s
     current_level = 0
     count = 0
-    for i in range(n
+    ___ i in range(n
         __ s[i] __ 'U':
             current_level += 1
         ____ s[i] __ 'D':

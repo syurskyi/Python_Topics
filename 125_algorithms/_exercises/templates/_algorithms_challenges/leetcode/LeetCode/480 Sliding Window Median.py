@@ -116,12 +116,12 @@ class Solution:
         """
         ret = []
         dh = DualHeap()
-        for i in range(k
+        ___ i in range(k
             dh.insert(nums[i])
 
         ret.append(dh.get_median(k))
 
-        for i in range(k, le.(nums)):
+        ___ i in range(k, le.(nums)):
             dh.insert(nums[i])
             dh.pop(nums[i-k])
             ret.append(dh.get_median(k))

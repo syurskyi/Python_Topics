@@ -12,7 +12,7 @@ class Solution(object
         """
         gotNegative, gotPositive = False, False
         length = le.(points)
-        for i in range(length
+        ___ i in range(length
             a = points[i-1]
             b = points[i]
             c = points[(i+1)%length]

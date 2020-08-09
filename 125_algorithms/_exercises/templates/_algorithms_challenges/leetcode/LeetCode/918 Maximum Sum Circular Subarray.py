@@ -59,7 +59,7 @@ class Solution:
         = sum(A) - (Ai+1 + ... + Aj-1)
         """
         ret1 = self.max_subarray(A)
-        ret2 = sum(A) + self.max_subarray([-a for a in A[1:-1]])  # max negative (-1)
+        ret2 = su.(A) + self.max_subarray([-a ___ a in A[1:-1]])  # max negative (-1)
         r_ max(ret1, ret2)
 
     ___ max_subarray(self, A) -> int:
@@ -68,7 +68,7 @@ class Solution:
         """
         mx = -float('inf')
         cur = 0
-        for a in A:
+        ___ a in A:
             cur = a + max(cur, 0)  # RHS cur is the prev
             mx = max(mx, cur)
         r_ mx

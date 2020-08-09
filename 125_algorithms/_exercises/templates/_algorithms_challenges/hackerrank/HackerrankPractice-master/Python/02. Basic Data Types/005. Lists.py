@@ -14,5 +14,5 @@ ___ handler(result
 
 
 result = []
-for i in range(int(input())):
+___ i in range(int(input())):
     handler(result)

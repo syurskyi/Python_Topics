@@ -21,14 +21,14 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        for i in range(le.(points)):
+        ___ i in range(le.(points)):
             dist_cnt = Counter()
-            for j in range(le.(points)):
+            ___ j in range(le.(points)):
                 __ i != j:
                     d = self.distance(points[i], points[j])
                     dist_cnt[d] += 1
 
-            for v in dist_cnt.values(
+            ___ v in dist_cnt.values(
                 # Permutation: P v 2
                 ret += v * (v - 1)
 
@@ -41,16 +41,16 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        for i in range(le.(points)):
+        ___ i in range(le.(points)):
             dist_cnt = Counter()
             dist_lst = []
-            for j in range(le.(points)):
+            ___ j in range(le.(points)):
                 __ i != j:
                     d = self.distance(points[i], points[j])
                     dist_lst.append(d)
                     dist_cnt[d] += 1
 
-            for d in dist_lst:
+            ___ d in dist_lst:
                 ret += (dist_cnt[d] - 1)
 
         r_ ret

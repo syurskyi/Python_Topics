@@ -2,7 +2,7 @@ from functools ______ reduce
 
 
 ___ largest_product(digits, size
-    products = [reduce(lambda x, y: x * y, s, 1) for s in slices(digits, size)]
+    products = [reduce(lambda x, y: x * y, s, 1) ___ s in slices(digits, size)]
     r_ max(products)
 
 
@@ -13,4 +13,4 @@ ___ slices(digits, size
 
 
 ___ each_cons(x, size
-    r_ [x[i: i + size] for i in range(le.(x) - size + 1)]
+    r_ [x[i: i + size] ___ i in range(le.(x) - size + 1)]

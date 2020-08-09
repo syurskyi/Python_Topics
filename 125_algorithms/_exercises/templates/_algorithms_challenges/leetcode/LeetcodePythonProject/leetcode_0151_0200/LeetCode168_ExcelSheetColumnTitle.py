@@ -18,7 +18,7 @@ class Solution(object
         r_ res
     
     ___ test(self
-        for n in range(30
+        ___ n in range(30
             print('n: %s' % (n))
             result = self.convertToTitle(n)
             print('result: %s' % (result))

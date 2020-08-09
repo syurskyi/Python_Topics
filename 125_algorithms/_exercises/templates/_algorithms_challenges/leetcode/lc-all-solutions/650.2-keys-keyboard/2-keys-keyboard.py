@@ -15,7 +15,7 @@ class Solution(object
     """
     __ n __ 1:
       r_ 0
-    for i in range(2, int((n + 1) ** 0.5) + 1
+    ___ i in range(2, int((n + 1) ** 0.5) + 1
       __ n % i __ 0:
         r_ i + self.minSteps(n / i)
     r_ n
@@ -31,4 +31,4 @@ class Solution(object
       __ n > 1:
         yield n
 
-    r_ sum(factor(n))
+    r_ su.(factor(n))

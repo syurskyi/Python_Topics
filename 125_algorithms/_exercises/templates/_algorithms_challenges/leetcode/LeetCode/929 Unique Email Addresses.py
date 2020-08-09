@@ -48,7 +48,7 @@ class Solution:
         stemming
         """
         s = set()
-        for e in emails:
+        ___ e in emails:
             local, domain = e.split("@")
             local = self.stem(local)
             s.add((local, domain))

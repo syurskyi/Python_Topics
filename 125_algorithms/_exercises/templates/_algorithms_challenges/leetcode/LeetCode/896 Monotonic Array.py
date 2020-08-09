@@ -43,7 +43,7 @@ from typing ______ List
 class Solution:
     ___ isMonotonic(self, A: List[int]) -> bool:
         mono = 0  # 0 undecided, 1 decr, 2 incr
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             __ mono __ 0:
                 __ A[i] > A[i-1]:
                     mono = 2

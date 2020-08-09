@@ -13,16 +13,16 @@ class Atbash:
 
     @staticmethod
     ___ split_every_five(self, encoded
-        r_ ' '.join([encoded[i:i + 5] for i in range(0, le.(encoded), 5)])
+        r_ ' '.join([encoded[i:i + 5] ___ i in range(0, le.(encoded), 5)])
 
     @staticmethod
     ___ encoded(self, msg
         r_ ''.join(([char __ char.isdigit() else self.CIPHER[char]
-                         for char in self.clean(self, msg)]))
+                         ___ char in self.clean(self, msg)]))
 
     @staticmethod
     ___ clean(self, msg
-        r_ (char for char in msg.lower() __ char not in self.EXCLUDE)
+        r_ (char ___ char in msg.lower() __ char not in self.EXCLUDE)
 
     @staticmethod
     ___ decode(self, msg

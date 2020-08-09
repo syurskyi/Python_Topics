@@ -23,25 +23,25 @@ class Solution:
         :return: a String
         """
         length = le.(s)
-        matrix = [[] for _ in xrange(nRows)]
+        matrix = [[] ___ _ in xrange(nRows)]
 
         i = 0
         w___ i < length:
             try:
                 # going down
-                for j in xrange(nRows
+                ___ j in xrange(nRows
                     matrix[j].append(s[i])
                     i += 1
 
                 # going up
-                for j in xrange(nRows-1-1, 0, -1
+                ___ j in xrange(nRows-1-1, 0, -1
                     matrix[j].append(s[i])
                     i += 1
 
             except IndexError:
                 break
 
-        lst = ["".join(element) for element in matrix]
+        lst = ["".join(element) ___ element in matrix]
         r_ "".join(lst)
 
 

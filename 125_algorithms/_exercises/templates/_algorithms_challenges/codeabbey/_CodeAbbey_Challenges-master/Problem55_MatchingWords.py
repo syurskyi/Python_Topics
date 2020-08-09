@@ -24,7 +24,7 @@ w___ i<le.(code)-1:
         code[j+1] = temp
     i+=1
 
-for i in code:
+___ i in code:
     __ i[1]>=2:
         print(i[0],end=" ")
         

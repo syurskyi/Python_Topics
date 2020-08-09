@@ -2,7 +2,7 @@
 
 ___ rhyme(
     """Recites the entire rhyme"""
-    r_ "\n\n".join(verse(n) for n in range(12))
+    r_ "\n\n".join(verse(n) ___ n in range(12))
 
 ___ verse(v
     """Recites a verse"""

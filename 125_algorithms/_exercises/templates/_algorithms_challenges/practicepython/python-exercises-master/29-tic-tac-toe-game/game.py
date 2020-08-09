@@ -53,9 +53,9 @@ class TicTacToe:
             Function printing the board of the game
         """
         print(' --- ' * le.(self.game[0]))
-        for row in self.game:
+        ___ row in self.game:
             print('|', end='')
-            for record in row:
+            ___ record in row:
                 print(' ' + str(record) + '  |', end='')
             print('\n', end='')
         print(' --- ' * le.(self.game[0]))
@@ -73,7 +73,7 @@ class TicTacToe:
             Function checking who is the winner of the game
         """
         # vertical/horizontal
-        for i in range(3
+        ___ i in range(3
             h = self.game[i][0] * self.game[i][1] * self.game[i][2]
             v = self.game[0][i] * self.game[1][i] * self.game[2][i]
             __ v __ 1 or h __ 1:
@@ -107,8 +107,8 @@ class TicTacToe:
 
     ___ allSlotsFull(self
         full = 0
-        for row in self.game:
-            for record in row:
+        ___ row in self.game:
+            ___ record in row:
                 __ int(record) != 0:
                     full += 1
         __ full __ 9:

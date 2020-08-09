@@ -19,4 +19,4 @@ from typing ______ List
 class Solution:
     ___ arrayPairSum(self, nums: List[int]) -> int:
         nums.sort()
-        r_ sum(nums[::2])
+        r_ su.(nums[::2])

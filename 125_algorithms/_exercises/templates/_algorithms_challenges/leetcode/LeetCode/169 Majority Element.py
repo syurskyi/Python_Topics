@@ -19,7 +19,7 @@ class Solution:
         """
         mjr = nums[0]
         cnt = 0
-        for i, v in enumerate(nums
+        ___ i, v in enumerate(nums
             __ mjr __ v:
                 cnt += 1
             ____

@@ -13,7 +13,7 @@ class Solution(object
         """
         res = []
         prev = lower
-        for num in nums:
+        ___ num in nums:
             __ num __ prev+1:
                 res.append('%s' % prev)
             ____ num > prev+1:
@@ -34,7 +34,7 @@ class Solution(object
                 0, 99,
             ],
         ]
-        for nums, lower, upper in testCases:
+        ___ nums, lower, upper in testCases:
             print('nums: %s' % nums)
             print('lower: %s' % lower)
             print('upper: %s' % upper)

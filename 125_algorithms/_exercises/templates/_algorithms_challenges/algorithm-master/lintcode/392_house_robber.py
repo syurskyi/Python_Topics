@@ -13,10 +13,10 @@ class Solution:
 
         n = le.(A)
         prev = curr = 0
-        dp = [[0] * 2 for _ in range(2)]
+        dp = [[0] * 2 ___ _ in range(2)]
         dp[0][1] = A[0]
 
-        for i in range(1, n
+        ___ i in range(1, n
             prev = curr # (i - 1) % 2
             curr = i % 2
 
@@ -46,7 +46,7 @@ class Solution:
         dp[1] = max(A[0], A[1])
 
         prev2, prev1, curr = 0, 0, 1
-        for i in range(2, n
+        ___ i in range(2, n
             prev2, prev1 = prev1, curr
             curr = i % 3
 
@@ -75,7 +75,7 @@ class Solution:
         dp = [0] * (n + 1)
         dp[1] = A[0]
 
-        for i in range(2, n + 1
+        ___ i in range(2, n + 1
             dp[i] = max(
                 dp[i - 2] + A[i - 1],
                 dp[i - 1]

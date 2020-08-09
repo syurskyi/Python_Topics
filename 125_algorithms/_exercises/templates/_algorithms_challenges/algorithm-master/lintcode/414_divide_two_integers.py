@@ -16,7 +16,7 @@ class Solution:
         _a = -a __ a < 0 else a
         _b = -b __ b < 0 else b
 
-        for i in range(31, -1, -1
+        ___ i in range(31, -1, -1
             """
             let `ci = 1 << i = 2 ** i`
             if `_a // _b >= ci`, that is `_a // ci >= _b`

@@ -8,13 +8,13 @@ class Solution(object
     ___ isSubsequence(self, s, t
         ______ bisect
         hashmap = {}
-        for i, c in enumerate(t
+        ___ i, c in enumerate(t
             __ c in hashmap:
                 hashmap[c].append(i)
             ____
                 hashmap[c] = [i]
         prev = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c not in hashmap: r_ False
             j = bisect.bisect_left(hashmap[c], prev)
             __ j __ le.(hashmap[c] r_ False
@@ -23,11 +23,11 @@ class Solution(object
     
     ___ isSubsequence_orig(self, s, t
         ______ bisect
-        idx = [[] for _ in range(256)]
-        for i, c in enumerate(t
+        idx = [[] ___ _ in range(256)]
+        ___ i, c in enumerate(t
             idx[ord(c)].append(i)
         prev = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ idx[ord(c)] __ []: r_ False
             j = bisect.bisect_left(idx[ord(c)], prev)
             __ j __ le.(idx[ord(c)] r_ False
@@ -52,7 +52,7 @@ class Solution(object
             ('abc', 'ahbgdc'),
             ('axc', 'ahbgdc'),
         ]
-        for s, t in testCases:
+        ___ s, t in testCases:
             print('s: %s' % s)
             print('t: %s' % t)
             result = self.isSubsequence(s, t)

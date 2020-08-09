@@ -44,13 +44,13 @@ class Solution:
          [ x,  x, r1, r2],
          [ x,  x,  x, r1]]
         """
-        self.is_palindrome = [[False] * self.n for _ in range(self.n)]
+        self.is_palindrome = [[False] * self.n ___ _ in range(self.n)]
         start = end = 0
 
         # check the diagonal line `r1` and `r2`
         # the traversal order is top-left -> bottom-right, see graph above
         # since the status of `r3`, `r4`, ... depends on that
-        for end in range(self.n
+        ___ end in range(self.n
             self.is_palindrome[end][end] = True
 
             __ end > 0:
@@ -61,8 +61,8 @@ class Solution:
         # the traversal order is bottom -> top, see graph above
         # n - 3 = (n - 1) - 2
         # start + 2
-        for start in range(self.n - 3, -1, -1
-            for end in range(start + 2, self.n
+        ___ start in range(self.n - 3, -1, -1
+            ___ end in range(start + 2, self.n
                 self.is_palindrome[start][end] = (
                     self.is_palindrome[start + 1][end - 1]
                     and s[start] __ s[end]
@@ -76,7 +76,7 @@ class Solution:
         __ start >= self.n:
             self.ans.append(palindromes)
         next_start = 0
-        for end in range(start, self.n
+        ___ end in range(start, self.n
             __ self.is_palindrome[start][end]:
                 # `palindromes + [s[start:next_start]]`
                 # will create and return new list

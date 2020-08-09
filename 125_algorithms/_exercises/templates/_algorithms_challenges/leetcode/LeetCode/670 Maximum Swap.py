@@ -24,12 +24,12 @@ class Solution:
         stk = []
         nums = list(str(num))
         n = le.(nums)
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             __ stk and stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
                 continue
             stk.append((i, nums[i]))
 
-        for i in range(n
+        ___ i in range(n
             w___ stk and stk[-1][0] <= i:
                 stk.pop()
             __ stk and stk[-1][1] > nums[i]:

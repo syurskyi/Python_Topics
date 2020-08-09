@@ -6,17 +6,17 @@ class SgfTree(object
     ___ __eq__(self, other
         __ not isinstance(other, SgfTree
             r_ False
-        for k, v in self.properties.items(
+        ___ k, v in self.properties.items(
             __ k not in other.properties:
                 r_ False
             __ other.properties[k] != v:
                 r_ False
-        for k in other.properties.keys(
+        ___ k in other.properties.keys(
             __ k not in self.properties:
                 r_ False
         __ le.(self.children) != le.(other.children
             r_ False
-        for a, b in zip(self.children, other.children
+        ___ a, b in zip(self.children, other.children
             __ a != b:
                 r_ False
         r_ True
@@ -24,7 +24,7 @@ class SgfTree(object
     ___ __repr__(self
         r_ 'SgfTree({}, [{}])'.format(
                 self.properties,
-                ','.join(repr(c) for c in self.children))
+                ','.join(repr(c) ___ c in self.children))
 
 ___ parse(input_string
     stack = []
@@ -37,7 +37,7 @@ ___ parse(input_string
                     input_string[:c],
                     input_string[c],
                     input_string[c+1:]))
-    for c, char in enumerate(input_string
+    ___ c, char in enumerate(input_string
         __ state __ 'START' and char __ '(':
             state = 'TREE'
         ____ state __ 'TREE' and char __ ';':

@@ -12,15 +12,15 @@ ___ create_uno_deck(
        Return a list of UnoCard namedtuples
        (for cards w/o suit use None in the namedtuple)"""
     cards = []
-    for suit in SUITS:
+    ___ suit in SUITS:
         add_suit(cards.append, suit)
-    for value in 'Wild,Wild Draw Four'.split(',') * 4:
+    ___ value in 'Wild,Wild Draw Four'.split(',') * 4:
         cards.append(UnoCard(None, value))
     r_ cards
 
 
 ___ add_suit(cards_append, suit: str
     cards_append(UnoCard(suit, '0'))
-    for value in SUIT_VALUES:
+    ___ value in SUIT_VALUES:
         cards_append(UnoCard(suit, value))
         cards_append(UnoCard(suit, value))

@@ -14,7 +14,7 @@ class Solution:
 
         cands = set(nums)  # dedup
 
-        for a in nums:
+        ___ a in nums:
             __ a not in cands:
                 continue
 
@@ -58,7 +58,7 @@ class Solution:
 
         size = 1
 
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ nums[i] __ nums[i - 1]:
                 continue
 

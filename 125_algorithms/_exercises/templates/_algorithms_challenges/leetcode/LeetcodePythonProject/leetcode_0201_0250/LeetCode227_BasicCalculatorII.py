@@ -47,7 +47,7 @@ class Solution(object
             '14-3/2',
             '14-13/2',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.calculate(s)
             print('result: %s' % (result))

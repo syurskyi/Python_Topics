@@ -11,11 +11,11 @@ class Solution:
 
         _queue = []
 
-        for _ in range(N - 1
+        ___ _ in range(N - 1
             cnt = 0
             char = queue[0]
 
-            for c in queue:
+            ___ c in queue:
                 __ c __ char:
                     cnt += 1
                     continue

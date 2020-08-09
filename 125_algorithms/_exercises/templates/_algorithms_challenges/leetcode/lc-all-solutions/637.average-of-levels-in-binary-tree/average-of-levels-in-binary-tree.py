@@ -18,7 +18,7 @@ class Solution(object
     w___ queue:
       s = 0
       n = le.(queue)
-      for _ in range(n
+      ___ _ in range(n
         top = queue.popleft()
         s += top.val
         __ top.left:

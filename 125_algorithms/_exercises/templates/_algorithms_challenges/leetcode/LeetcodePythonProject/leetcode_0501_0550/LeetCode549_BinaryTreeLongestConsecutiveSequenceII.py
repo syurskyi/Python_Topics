@@ -43,7 +43,7 @@ class Solution(object
             TreeNode(1, TreeNode(2), TreeNode(3)),
             TreeNode(2, TreeNode(1), TreeNode(3)),
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.longestConsecutive(root)
             print('result: %s' % result)
             print('-='*30+'-')

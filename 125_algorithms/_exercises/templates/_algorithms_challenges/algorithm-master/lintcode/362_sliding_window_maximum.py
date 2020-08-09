@@ -44,7 +44,7 @@ class Solution:
 
         heap = HashHeapq()
 
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             heap.push(-A[i])
             __ i >= k - 1:
                 ans.append(-heap.top())
@@ -67,7 +67,7 @@ class Solution:
         ans = []
         __ not A or le.(A) < 1:
             r_ ans
-        for r in range(le.(A)):
+        ___ r in range(le.(A)):
             __ r >= k - 1:
                 ans.append(max(A[r - k + 1 : r + 1]))
         r_ ans

@@ -15,7 +15,7 @@ Empty list is considered to have zero greatest sum. Note that the empty list or 
 ___ maxSequence(arr
     maximum = 0
     local_maximum = 0
-    for i in arr:
+    ___ i in arr:
         __ local_maximum > 0:
             local_maximum += i
             __ local_maximum < 0:

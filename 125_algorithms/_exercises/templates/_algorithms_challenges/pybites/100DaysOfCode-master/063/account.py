@@ -15,7 +15,7 @@ class Account:
 
     @property
     ___ balance(self
-        tt = sum(t.amount for t in self._transactions)
+        tt = su.(t.amount ___ t in self._transactions)
         r_ self._start_balance + tt
 
     # second property use case: encapsulation
@@ -61,7 +61,7 @@ class Account:
 
     ___ __str__(self
         'Nice class reporting when doing str(acc_instance)'
-        tt = ['- {}'.format(t) for t in self._transactions]
+        tt = ['- {}'.format(t) ___ t in self._transactions]
         s = ['Account of {}:'.format(self.owner),
              'Start Balance: {}'.format(self.start_balance),
              'Transactions:',

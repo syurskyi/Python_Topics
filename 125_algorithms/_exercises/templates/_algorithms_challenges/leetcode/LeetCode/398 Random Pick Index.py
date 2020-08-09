@@ -37,7 +37,7 @@ class Solution(object
         """
         sz = 0
         ret = None
-        for idx, val in enumerate(self.A
+        ___ idx, val in enumerate(self.A
             __ val __ target:
                 sz += 1
                 p = random.randrange(0, sz)
@@ -55,7 +55,7 @@ class SolutionError(object
         :type nums: List[int]
         """
         self.d = {}
-        for idx, val in enumerate(nums
+        ___ idx, val in enumerate(nums
             __ val not in self.d:
                 self.d[val] = (idx, 1)
             ____

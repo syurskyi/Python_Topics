@@ -34,7 +34,7 @@ class Solution:
             result.append(current)
             r_
 
-        for letter in self.digit2letters[string_seq[0]]:
+        ___ letter in self.digit2letters[string_seq[0]]:
             self.dfs_traverse(string_seq[1:], current+letter, result)
 
 

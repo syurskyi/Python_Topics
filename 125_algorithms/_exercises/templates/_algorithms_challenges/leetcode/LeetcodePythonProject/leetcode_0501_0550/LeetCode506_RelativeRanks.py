@@ -13,9 +13,9 @@ class Solution(object
         result = []
         sortNums = sorted(nums, reverse=True)
         hashmap = {}
-        for i, num in enumerate(sortNums
+        ___ i, num in enumerate(sortNums
             hashmap[num] = i+1
-        for num in nums:
+        ___ num in nums:
             ind = hashmap[num]
             __ ind __ 1:
                 result.append('Gold Medal')

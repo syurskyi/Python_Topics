@@ -3,26 +3,26 @@ ___ append(xs, ys
 
 
 ___ concat(lists
-    r_ [item for lst in lists for item in lst]
+    r_ [item ___ lst in lists ___ item in lst]
 
 
 ___ filter_clone(function, xs
-    r_ [x for x in xs __ function(x)]
+    r_ [x ___ x in xs __ function(x)]
 
 
 ___ length(xs
     result = 0
-    for _ in xs:
+    ___ _ in xs:
         result += 1
     r_ result
 
 
 ___ map_clone(function, xs
-    r_ [function(x) for x in xs]
+    r_ [function(x) ___ x in xs]
 
 
 ___ foldl(function, xs, acc
-    for x in xs:
+    ___ x in xs:
         acc = function(acc, x)
     r_ acc
 

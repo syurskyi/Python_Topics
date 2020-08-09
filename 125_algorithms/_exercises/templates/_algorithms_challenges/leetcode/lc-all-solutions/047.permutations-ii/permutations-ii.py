@@ -12,7 +12,7 @@ class Solution(object
         res.append(path + [])
         r_
 
-      for i in range(le.(nums)):
+      ___ i in range(le.(nums)):
         __ i in visited:
           continue
         __ i > 0 and nums[i] __ nums[i - 1] and i - 1 not in visited:

@@ -22,7 +22,7 @@ class Solution(object
 
     ___ dfs(root, graph, visited
       visited[root] = 1
-      for nbr in graph[root].getNbrs(
+      ___ nbr in graph[root].getNbrs(
         __ visited[nbr.val] __ 0:
           __ not dfs(nbr.val, graph, visited
             r_ False
@@ -37,7 +37,7 @@ class Solution(object
     graph = {}
     visited = collections.defaultdict(int)
     self.topNum = 0
-    for i in range(0, le.(words) - 1
+    ___ i in range(0, le.(words) - 1
       a = words[i]
       b = words[i + 1]
       i = 0
@@ -60,17 +60,17 @@ class Solution(object
       __ i < le.(a) and i >= le.(b
         r_ ""
 
-    for c in graph:
+    ___ c in graph:
       __ visited[c] __ 0:
         __ not dfs(c, graph, visited
           r_ ""
 
     unUsedSet = set()
-    for word in words:
-      for c in word:
+    ___ word in words:
+      ___ c in word:
         unUsedSet.add(c)
 
-    for c in unUsedSet:
+    ___ c in unUsedSet:
       __ c not in graph:
         self.ans += c
     r_ self.ans[::-1]

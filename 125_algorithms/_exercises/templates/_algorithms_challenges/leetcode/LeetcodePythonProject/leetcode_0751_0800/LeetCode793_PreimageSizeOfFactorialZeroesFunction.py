@@ -11,9 +11,9 @@ class Solution(object
         """
         dp = [0]*13
         dp[0] = 1
-        for i in range(1, 13
+        ___ i in range(1, 13
             dp[i] = dp[i-1]*5+1
-        for i in range(12, -1, -1
+        ___ i in range(12, -1, -1
             __ K//dp[i] __ 5:
                 r_ 0
             K = K%dp[i]
@@ -24,7 +24,7 @@ class Solution(object
             0,
             5,
         ]
-        for k in testCases:
+        ___ k in testCases:
             print('k: %s' % k)
             result = self.preimageSizeFZF(k)
             print('result: %s' % result)

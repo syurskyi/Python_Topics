@@ -17,8 +17,8 @@ class Solution(object
         """
         ______ heapq
         heap = []
-        for arr in schedule:
-            for inter in arr:
+        ___ arr in schedule:
+            ___ inter in arr:
                 heapq.heappush(heap, [inter.start, inter.end])
         temp = heapq.heappop(heap)
         res = []
@@ -43,14 +43,14 @@ class Solution(object
                 [[2,5],[9,12]],
             ],
         ]
-        for schedule in testCases:
+        ___ schedule in testCases:
             print('schedule: %s' % schedule)
             arr = []
-            for arr0 in schedule:
-                arr.append([Interval(inter[0], inter[1]) for inter in arr0])
+            ___ arr0 in schedule:
+                arr.append([Interval(inter[0], inter[1]) ___ inter in arr0])
             schedule = arr
             result = self.employeeFreeTime(schedule)
-            res = [[inter.start, inter.end] for inter in result]
+            res = [[inter.start, inter.end] ___ inter in result]
             print('result: %s' % res)
             print('-='*30+'-')
 

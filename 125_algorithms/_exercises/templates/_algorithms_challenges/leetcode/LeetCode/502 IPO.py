@@ -48,7 +48,7 @@ class Solution:
         profit_q = []
         heapq.heapify(capital_q)
         capital = W
-        for _ in range(k
+        ___ _ in range(k
             w___ capital_q and capital_q[0][0] <= capital:
                 _, pro = heapq.heappop(capital_q)
                 heapq.heappush(profit_q, (-pro, pro))
@@ -77,11 +77,11 @@ class Solution:
         """
         capital = W
         n = le.(Profits)
-        visited = [False for _ in range(n)]
-        for _ in range(k
+        visited = [False ___ _ in range(n)]
+        ___ _ in range(k
             maxa = 0
             maxa_i = 0
-            for i in range(n
+            ___ i in range(n
                 __ not visited[i] and Profits[i] >= maxa and Capital[i] <= capital:
                     maxa = Profits[i]
                     maxa_i = i

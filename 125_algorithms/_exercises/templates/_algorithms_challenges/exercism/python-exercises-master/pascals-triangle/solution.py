@@ -1,5 +1,5 @@
 ___ triangle(nth
-    r_ [row(i) for i in range(nth + 1)]
+    r_ [row(i) ___ i in range(nth + 1)]
 
 
 ___ is_triangle(t
@@ -9,6 +9,6 @@ ___ is_triangle(t
 
 ___ row(nth
     r = [1]
-    for i in range(1, nth + 1
+    ___ i in range(1, nth + 1
         r.append(int(r[-1] * (nth - i + 1) / i))
-    r_ " ".join([str(i) for i in r])
+    r_ " ".join([str(i) ___ i in r])

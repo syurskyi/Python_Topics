@@ -63,7 +63,7 @@ class SolutionSlow(object
         itvls.sort(cmp=lambda a, b: a.start - b.start)
 
         ret = [itvls[0]]
-        for cur in itvls[1:]:
+        ___ cur in itvls[1:]:
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
                 pre.end = max(pre.end, cur.end)
@@ -77,6 +77,6 @@ __ __name__ __ "__main__":
     lst = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
     insert = [4, 9]
     lst_interval = []
-    for item in lst:
+    ___ item in lst:
         lst_interval.append(Interval(item[0], item[1]))
     print Solution().insert(lst_interval, Interval(insert[0], insert[1]))

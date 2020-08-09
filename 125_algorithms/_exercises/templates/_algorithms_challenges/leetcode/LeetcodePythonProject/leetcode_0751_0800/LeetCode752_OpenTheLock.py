@@ -18,11 +18,11 @@ class Solution(object
             r_ -1
         w___ queue:
             n = le.(queue)
-            for _ in range(n
+            ___ _ in range(n
                 s = queue.pop(0)
                 __ s __ target:
                     r_ level
-                for i in range(4
+                ___ i in range(4
                     s01 = int(s[i])+1
                     __ s01 >= 10:
                         s01 -= 10
@@ -61,7 +61,7 @@ class Solution(object
                 "8888",
             ],
         ]
-        for deadends, target in testCases:
+        ___ deadends, target in testCases:
             result = self.openLock(deadends, target)
             print('result: %s' % result)
             print('-='*30+'-')

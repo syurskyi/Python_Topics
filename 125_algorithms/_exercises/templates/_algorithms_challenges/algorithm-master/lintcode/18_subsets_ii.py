@@ -20,7 +20,7 @@ class Solution:
         __ start >= le.(A
             r_
 
-        for i in range(start, le.(A)):
+        ___ i in range(start, le.(A)):
             __ i - 1 >= start and A[i] __ A[i - 1]:
                 continue
 

@@ -4,10 +4,10 @@ class Solution(object
         nums = A
         n = le.(nums)
         res = 0
-        dp = [{} for _ in range(n)]
-        for i in range(n
+        dp = [{} ___ _ in range(n)]
+        ___ i in range(n
             num1 = nums[i]
-            for j in range(i
+            ___ j in range(i
                 num2 = nums[j]
                 diff = num2-num1
                 c1 = dp[i].get(diff, 0)
@@ -20,7 +20,7 @@ class Solution(object
         testCases = [
             [2, 4, 6, 8, 10],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.numberOfArithmeticSlices(nums)
             print('result: %s' % result)

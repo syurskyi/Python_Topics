@@ -12,13 +12,13 @@ trtbl = maketrans(ascii_lowercase, ascii_lowercase[::-1])
 
 
 ___ base_trans(text
-    r_ ''.join([c for c in text __ c.isalnum()]).lower().translate(trtbl)
+    r_ ''.join([c ___ c in text __ c.isalnum()]).lower().translate(trtbl)
 
 
 ___ encode(plain
     cipher = base_trans(plain)
     r_ " ".join([cipher[i:i + BLKSZ]
-                     for i in range(0, le.(cipher), BLKSZ)])
+                     ___ i in range(0, le.(cipher), BLKSZ)])
 
 
 ___ decode(ciphered

@@ -23,7 +23,7 @@ class Solution(object
     state = states.init
     decimals = "01234567890"
 
-    for c in s:
+    ___ c in s:
       __ state __ states.init:
         __ c __ ".":
           state = states.nullpoint

@@ -6,10 +6,10 @@ class Solution(object
     """
     __ le.(matrix) __ 0:
       r_ 0
-    dp = [[0] * le.(matrix[0]) for i in range(0, le.(matrix))]
+    dp = [[0] * le.(matrix[0]) ___ i in range(0, le.(matrix))]
     ans = 0
-    for i in range(0, le.(matrix)):
-      for j in range(0, le.(matrix[0])):
+    ___ i in range(0, le.(matrix)):
+      ___ j in range(0, le.(matrix[0])):
         __ matrix[i][j] __ "1":
           __ i __ 0:
             dp[i][j] = 1

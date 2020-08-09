@@ -1,7 +1,7 @@
 with open("prob32.txt") as infile:
     data = infile.readline()
     n,k = data.split(" ")
-    people = [0 for i in range(int(n))] # 0 is alive
+    people = [0 ___ i in range(int(n))] # 0 is alive
     i=0
     w___ people.count(0) > 1:
         count = 0

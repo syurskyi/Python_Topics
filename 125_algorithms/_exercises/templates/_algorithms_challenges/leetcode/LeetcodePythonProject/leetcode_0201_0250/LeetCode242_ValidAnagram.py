@@ -15,10 +15,10 @@ class Solution(object
         __ not s or not t: r_ False
         __ le.(s) != le.(t r_ False
         hashmap = {}
-        for c in s:
+        ___ c in s:
             __ c in hashmap: hashmap[c] += 1
             ____ hashmap[c] = 1
-        for c in t:
+        ___ c in t:
             __ c not in hashmap: r_ False
             hashmap[c] -= 1
             __ hashmap[c] __ 0:

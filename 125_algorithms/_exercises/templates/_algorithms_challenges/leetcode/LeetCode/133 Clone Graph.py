@@ -51,9 +51,9 @@ class Solution:
         __ not node:
             r_
         visited_set.add(node)
-        neighbors_cloned = [self.clone_graph_visited(neighbor, set(visited_set)) for neighbor in node.neighbors __ neighbor not in visited_set]
+        neighbors_cloned = [self.clone_graph_visited(neighbor, set(visited_set)) ___ neighbor in node.neighbors __ neighbor not in visited_set]
         node_cloned = UndirectedGraphNode(node.label)
-        for neighbor_cloned in neighbors_cloned:
+        ___ neighbor_cloned in neighbors_cloned:
             __ neighbor_cloned not in visited_set:
                 neighbor_cloned.neighbors.append(node_cloned)
         node_cloned.neighbors = neighbors_cloned
@@ -80,7 +80,7 @@ class Solution:
         original2copy[node] = clone
         w___ q:
             cur = q.pop()
-            for neighbor in cur.neighbors:
+            ___ neighbor in cur.neighbors:
                 __ neighbor in original2copy:  # already copied
                     original2copy[cur].neighbors.append(original2copy[neighbor])
                 ____
@@ -93,8 +93,8 @@ class Solution:
 
 
 __ __name____"__main__":
-    lst = [UndirectedGraphNode(i+1) for i in range(3)]
-    for item in lst:
+    lst = [UndirectedGraphNode(i+1) ___ i in range(3)]
+    ___ item in lst:
         item.neighbors = list(lst)
         item.neighbors.remove(item)
     cloned = Solution().cloneGraph(lst[0])

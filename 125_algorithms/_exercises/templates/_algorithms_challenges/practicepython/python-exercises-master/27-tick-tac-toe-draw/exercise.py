@@ -2,9 +2,9 @@
 
 ___ board(game
     print(' --- '*le.(game[0]))
-    for row in game:
+    ___ row in game:
         print('|', end='')
-        for record in row:
+        ___ record in row:
             print(' ' + str(record) + '  |', end='')
         print('\n', end='')
     print(' --- '*le.(game[0]))

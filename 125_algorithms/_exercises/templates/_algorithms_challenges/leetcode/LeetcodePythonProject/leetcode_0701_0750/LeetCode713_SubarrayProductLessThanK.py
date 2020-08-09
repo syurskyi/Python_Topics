@@ -14,7 +14,7 @@ class Solution(object
         prod = 1
         left = 0
         count = 0
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             prod *= num
             w___ left < i+1 and prod >= k:
                 prod //= nums[left]
@@ -29,7 +29,7 @@ class Solution(object
                 100,
             ],
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
             result = self.numSubarrayProductLessThanK(nums, k)

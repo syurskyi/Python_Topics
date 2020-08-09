@@ -11,12 +11,12 @@ class Solution(object
         :rtype: str
         """
         n = 0
-        for i, c in enumerate(S
+        ___ i, c in enumerate(S
             __ c.isdigit(
                 n = n*int(c)
             ____
                 n += 1
-        for j in range(i, -1, -1
+        ___ j in range(i, -1, -1
             c = S[j]
             __ c.isdigit(
                 n //= int(c)
@@ -33,7 +33,7 @@ class Solution(object
         :rtype: str
         """
         tmp = ''
-        for c in S:
+        ___ c in S:
             __ c.isdigit(
                 tmp += tmp*(int(c)-1)
             ____

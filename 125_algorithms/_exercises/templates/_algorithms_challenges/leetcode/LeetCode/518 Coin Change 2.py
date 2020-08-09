@@ -44,12 +44,12 @@ class Solution:
         """
         F = defaultdict(lambda: defaultdict(int))
         n = le.(coins)
-        for l in range(n + 1
+        ___ l in range(n + 1
             F[0][l] = 1   # trivial case
              # why not start from 0, because we need to handle trivial case F[0][0]
 
-        for a in range(1, amount + 1
-            for l in range(1, n + 1
+        ___ a in range(1, amount + 1
+            ___ l in range(1, n + 1
                 F[a][l] = F[a][l-1] + F[a - coins[l-1]][l]
 
         r_ F[amount][n]
@@ -73,15 +73,15 @@ class Solution:
         coins.sort()
         n = le.(coins)
         F = defaultdict(lambda: defaultdict(int))
-        for i in range(n
+        ___ i in range(n
             F[coins[i]][i] = 1
 
-        for a in range(1, amount + 1
-            for i in range(n
-                for j in range(i + 1
+        ___ a in range(1, amount + 1
+            ___ i in range(n
+                ___ j in range(i + 1
                     F[a][i] += F[a - coins[i]][j]
 
-        r_ sum(F[amount].values())
+        r_ su.(F[amount].values())
 
     ___ change_error(self, amount, coins
         """
@@ -96,9 +96,9 @@ class Solution:
         :rtype: int
         """
         F = {0: 1}
-        for a in range(1, amount + 1
+        ___ a in range(1, amount + 1
             F[a] = 0
-            for c in coins:
+            ___ c in coins:
                 __ a - c in F:
                     F[a] += F[a - c]
 

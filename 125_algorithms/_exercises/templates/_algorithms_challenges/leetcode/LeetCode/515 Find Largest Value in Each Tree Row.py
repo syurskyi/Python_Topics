@@ -38,7 +38,7 @@ class Solution:
         w___ q:
             ret.append(max(map(lambda e: e.val, q)))
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e.left:
                     cur_q.append(e.left)
                 __ e.right:

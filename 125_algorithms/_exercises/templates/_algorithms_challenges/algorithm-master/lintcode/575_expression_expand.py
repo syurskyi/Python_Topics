@@ -10,7 +10,7 @@ class Solution:
         times = 0
         stack = []
 
-        for c in s:
+        ___ c in s:
             __ c.isdigit(
                 times = times * 10 + int(c)
             ____ c __ '[':

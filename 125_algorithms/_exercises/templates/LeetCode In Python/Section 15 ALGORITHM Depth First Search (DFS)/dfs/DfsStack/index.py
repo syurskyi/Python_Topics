@@ -18,12 +18,12 @@ class Graph:
             cur = st[-1]
             st.pop()
 
-            __(cur not in visited
+            __(cur not __ visited
                 print(cur, end=" ")
                 visited.add(cur)
 
-            for vertex in self.graph[cur]:
-                __(vertex not in visited
+            ___ vertex __ self.graph[cur]:
+                __(vertex not __ visited
                     st.append(vertex)
 
 

@@ -19,8 +19,8 @@ class Solution:
         w___ queue:
             ans += 1
 
-            for a in queue:
-                for c in coins:
+            ___ a in queue:
+                ___ c in coins:
                     _a = a + c
 
                     __ _a __ amount:
@@ -54,8 +54,8 @@ class Solution:
         dp = [INF] * (amount + 1)
         dp[0] = 0
 
-        for c in coins:
-            for a in range(c, amount + 1
+        ___ c in coins:
+            ___ a in range(c, amount + 1
                 # if a < c: continue
                 dp[a] = min(dp[a], dp[a - c] + 1)
 

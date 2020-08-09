@@ -11,7 +11,7 @@ class Solution(object
         """
         stack = []
         res = []
-        for i in range(le.(temperatures)-1, -1, -1
+        ___ i in range(le.(temperatures)-1, -1, -1
             t = temperatures[i]
             w___ stack and temperatures[stack[-1]] <= t:
                 stack.pop()
@@ -26,7 +26,7 @@ class Solution(object
         testCases = [
             [73, 74, 75, 71, 69, 72, 76, 73],
         ]
-        for temperatures in testCases:
+        ___ temperatures in testCases:
             print('temperatures: %s' % temperatures)
             result = self.dailyTemperatures(temperatures)
             print('result: %s' % result)

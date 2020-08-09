@@ -17,8 +17,8 @@ class Solution(object
         """
         n = le.(haystack)
         m = le.(needle)
-        for i in range(n + 1 - m
-            for k in range(m
+        ___ i in range(n + 1 - m
+            ___ k in range(m
                 __ haystack[i + k] != needle[k]:
                     break
             ____

@@ -51,18 +51,18 @@ class Solution:
             can be optimized to O(N^2) by look forward
             """
             n = le.(A)
-            F = [[0 for _ in range(n)] for _ in range(n)]
-            for i in range(n
+            F = [[0 ___ _ in range(n)] ___ _ in range(n)]
+            ___ i in range(n
                 F[i][i] = 1
-                for j in range(i
+                ___ j in range(i
                     F[i][j] = 2
 
             idxes = {}
-            for i in range(n
+            ___ i in range(n
                 idxes[A[i]] = i
 
-            for i in range(n
-                for j in range(i
+            ___ i in range(n
+                ___ j in range(i
                     Ak = A[i] + A[j]
                     __ Ak in idxes:
                         k = idxes[Ak]
@@ -70,8 +70,8 @@ class Solution:
 
             r_ max(
                 F[i][j] __ F[i][j] > 2 else 0
-                for i in range(n)
-                for j in range(i)
+                ___ i in range(n)
+                ___ j in range(i)
             )
 
     ___ lenLongestFibSubseq_TLE(self, A: List[int]) -> int:
@@ -86,22 +86,22 @@ class Solution:
         can be optimized to O(N^2) by look forward
         """
         n = le.(A)
-        F = [[0 for _ in range(n)] for _ in range(n)]
-        for i in range(n
+        F = [[0 ___ _ in range(n)] ___ _ in range(n)]
+        ___ i in range(n
             F[i][i] = 1
-            for j in range(i
+            ___ j in range(i
                 F[i][j] = 2
 
-        for k in range(n
-            for i in range(k
-                for j in range(i
+        ___ k in range(n
+            ___ i in range(k
+                ___ j in range(i
                     __ A[i] + A[j] __ A[k]:
                         F[k][i] = max(F[k][i], F[i][j] + 1)
 
         r_ max(
             F[i][j] __ F[i][j] > 2 else 0
-            for i in range(n)
-            for j in range(i)
+            ___ i in range(n)
+            ___ j in range(i)
         )
 
 __ __name__ __ "__main__":

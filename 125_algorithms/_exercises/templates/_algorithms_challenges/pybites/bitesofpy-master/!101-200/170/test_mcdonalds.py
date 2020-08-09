@@ -28,7 +28,7 @@ ___ test_get_bodybuilder_friendly_foods(
                 'Nonfat Latte (Large)',
                 'Premium Southwest Salad with Grilled Chicken',
                 'Nonfat Latte (Medium)']
-    assert all(food in actual_with_drinks for food in expected), ASSERT_ERROR
+    assert all(food in actual_with_drinks ___ food in expected), ASSERT_ERROR
 
 
 ___ test_get_bodybuilder_friendly_foods_excluding_liquid_food(
@@ -38,4 +38,4 @@ ___ test_get_bodybuilder_friendly_foods_excluding_liquid_food(
                 'Premium Grilled Chicken Classic Sandwich',
                 'Premium Grilled Chicken Ranch BLT Sandwich',
                 'Premium Grilled Chicken Club Sandwich']
-    assert all(food in actual_wo_drinks for food in expected), ASSERT_ERROR
+    assert all(food in actual_wo_drinks ___ food in expected), ASSERT_ERROR

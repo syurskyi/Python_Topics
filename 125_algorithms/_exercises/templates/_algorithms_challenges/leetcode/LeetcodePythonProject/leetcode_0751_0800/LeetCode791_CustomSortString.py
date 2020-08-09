@@ -12,14 +12,14 @@ class Solution(object
         """
         s, t = S, T
         count = [0]*26
-        for c in t:
+        ___ c in t:
             count[ord(c)-ord('a')] += 1
         res = ''
-        for c in s:
+        ___ c in s:
             w___ count[ord(c)-ord('a')] > 0:
                 res += c
                 count[ord(c)-ord('a')] -= 1
-        for i in range(26
+        ___ i in range(26
             w___ count[i] > 0:
                 res += chr(i+ord('a'))
                 count[i] -= 1
@@ -31,7 +31,7 @@ class Solution(object
             ["kqep", "pekeq"],
             ["exv", "xwvee"],
         ]
-        for s, t in testCases:
+        ___ s, t in testCases:
             print('s: %s' % s)
             print('t: %s' % t)
             result = self.customSortString(s, t)

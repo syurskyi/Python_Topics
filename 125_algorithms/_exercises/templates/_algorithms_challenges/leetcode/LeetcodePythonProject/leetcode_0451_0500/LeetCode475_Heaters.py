@@ -10,7 +10,7 @@ class Solution(object
         heaters.sort()
         i = 0
         radius = 0
-        for house in houses:
+        ___ house in houses:
             w___ i+1 < le.(heaters) and heaters[i+1] < house:
                 i += 1
             __ heaters[i] > house:
@@ -33,7 +33,7 @@ class Solution(object
                 [1, 4],
             ],
         ]
-        for houses, heaters in testCases:
+        ___ houses, heaters in testCases:
             print('houses: %s' % houses)
             print('heaters: %s' % heaters)
             result = self.findRadius(houses, heaters)

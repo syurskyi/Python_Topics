@@ -6,10 +6,10 @@ class Solution:
         left = 0
         right = 0
 
-        palindrome = [[0]*n for _ in range(n)]
+        palindrome = [[0]*n ___ _ __ ra..(n)]
 
-        for j in range(1,n
-            for i in range(0,j
+        ___ j __ ra..(1,n
+            ___ i __ ra..(0,j
                 innerIsPalindrome = palindrome[i+1][j-1] or j-i<=2
                 __(s[i] __ s[j] and innerIsPalindrome
                     palindrome[i][j] = True

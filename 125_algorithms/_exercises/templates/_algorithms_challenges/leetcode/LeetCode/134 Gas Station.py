@@ -42,17 +42,17 @@ class Solution:
         length = le.(gas)
 
         # gas difference
-        diff = [gas[i]-cost[i] for i in xrange(length)]
+        diff = [gas[i]-cost[i] ___ i in xrange(length)]
 
         # find whether can cover one cycle
         # starting from arbitrary point
-        __ sum(diff)<0:
+        __ su.(diff)<0:
             r_ -1
 
         # find the starting index
         start_index = 0
         sum_before = 0
-        for ind, val in enumerate(diff  # O(N), rather than brutal force O(N^2)
+        ___ ind, val in enumerate(diff  # O(N), rather than brutal force O(N^2)
             sum_before += val
             __ sum_before<0:  # reset sum_before since gas insufficient for the journey. # sum[i, j]<0
                 start_index = ind+1

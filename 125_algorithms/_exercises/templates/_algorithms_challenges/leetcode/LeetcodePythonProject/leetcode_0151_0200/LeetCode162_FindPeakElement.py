@@ -31,7 +31,7 @@ class Solution(object
             [1, 8, 2, 1, 3, 4],
             [2, 9, 3, 1, 0],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.findPeakElement(nums)
             print('result: %s' % (result))

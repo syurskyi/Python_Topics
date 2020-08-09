@@ -104,7 +104,7 @@ ___ test_main(entries, inp, capfd
     main()
     out, _ = capfd.readouterr()
 
-    output = [line for line in out.split('\n') __ line.strip()]
+    output = [line ___ line in out.split('\n') __ line.strip()]
     expected = ['0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',
@@ -113,5 +113,5 @@ ___ test_main(entries, inp, capfd
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Please provide a search term', 'Bye']
-    for line, exp in zip(output, expected
+    ___ line, exp in zip(output, expected
         assert exp in line

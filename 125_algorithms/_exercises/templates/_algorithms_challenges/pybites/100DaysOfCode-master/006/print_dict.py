@@ -4,7 +4,7 @@
 some_dict = {"Julian": 25, "Bob": 26, "Dan": 47, "Cornelius": 3}
 
 ___ print_dict(dictionary
-	for k, v in dictionary.items(
+	___ k, v in dictionary.items(
 		print('\n{}: {}'.format(k, v))	
 
 print_dict(some_dict)

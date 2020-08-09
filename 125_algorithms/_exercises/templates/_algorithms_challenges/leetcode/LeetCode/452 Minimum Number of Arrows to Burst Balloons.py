@@ -51,7 +51,7 @@ class Solution:
         ret = 0
         points.sort(key=lambda x: x[0])
         heap = []
-        for point in points:
+        ___ point in points:
             s, e = point
             __ heap and heap[0].e < s:
                 ret += 1

@@ -20,4 +20,4 @@ from check_split ______ check_split
 ___ test_check_split(args, expected
     grand_total, splits = check_split(*args)
     assert grand_total __ expected
-    assert grand_total __ f'${sum(splits)}'
+    assert grand_total __ f'${su.(splits)}'

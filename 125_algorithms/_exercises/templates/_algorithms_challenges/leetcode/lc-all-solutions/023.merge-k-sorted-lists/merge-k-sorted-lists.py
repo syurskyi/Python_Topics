@@ -16,7 +16,7 @@ class Solution(object
     """
     heap = []
     p = dummy = ListNode(-1)
-    for i in range(0, le.(lists)):
+    ___ i in range(0, le.(lists)):
       node = lists[i]
       __ not node:
         continue

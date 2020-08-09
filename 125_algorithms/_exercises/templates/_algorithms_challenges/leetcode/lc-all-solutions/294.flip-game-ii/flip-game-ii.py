@@ -10,7 +10,7 @@ class Solution(object
         r_ visited[s]
 
       visited[s] = False
-      for i in range(0, le.(s) - 1
+      ___ i in range(0, le.(s) - 1
         __ s[i] + s[i + 1] __ "++":
           __ helper(s[:i] + "--" + s[i + 2:], visited) __ False:
             visited[s] = True

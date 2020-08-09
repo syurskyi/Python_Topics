@@ -24,7 +24,7 @@ class Solution:
         ret = 0
         s = 0
         h[s] += 1
-        for n in nums:
+        ___ n in nums:
             s += n
             ret += h[s - k]
             h[s] += 1

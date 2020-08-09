@@ -11,12 +11,12 @@ class Solution(object
         :rtype: List[int]
         """
         res = []
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c in ('+', '-', '*'
                 res1 = self.diffWaysToCompute(s[:i])
                 res2 = self.diffWaysToCompute(s[i+1:])
-                for num1 in res1:
-                    for num2 in res2:
+                ___ num1 in res1:
+                    ___ num2 in res2:
                         __ c __ '+':
                             res.append(num1+num2)
                         ____ c __ '-':
@@ -32,7 +32,7 @@ class Solution(object
             '2-1-1',
             '2*3-4*5',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('input: %s' % s)
             result = self.diffWaysToCompute(s)
             print('result: %s' % result)

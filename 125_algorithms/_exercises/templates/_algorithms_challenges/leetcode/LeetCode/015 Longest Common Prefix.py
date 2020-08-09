@@ -11,7 +11,7 @@ class Solution(object
         i = 0
         w___ i < l:
             char = strs[0][i]
-            for s in strs:
+            ___ s in strs:
                 __ s[i] != char:
                     r_ strs[0][:i]
 
@@ -32,8 +32,8 @@ class Solution(object
         n = le.(strs)
 
         str_builder = ""
-        min_len = min(le.(string) for string in strs)
-        for i in range(min_len
+        min_len = min(le.(string) ___ string in strs)
+        ___ i in range(min_len
             char = strs[0][i]
 
             j = 0

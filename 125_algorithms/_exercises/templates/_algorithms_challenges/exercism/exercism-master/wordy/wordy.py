@@ -41,18 +41,18 @@ class Calculator:
                 not self.consecutive_digits())
 
     ___ consecutive_tokens(self
-        r_ any(self.operator(i) and self.operator(j) for i, j in
+        r_ any(self.operator(i) and self.operator(j) ___ i, j in
                    self.slices_of_two())
 
     ___ consecutive_digits(self
-        r_ any(self.digit(i) and self.digit(j) for i, j in
+        r_ any(self.digit(i) and self.digit(j) ___ i, j in
                    self.slices_of_two())
 
     ___ slices_of_two(self
         r_ list(zip(self.tokens, self.tokens[1:]))
 
     ___ valid_elements(self
-        r_ all(self.valid_element(element) for element in self.tokens)
+        r_ all(self.valid_element(element) ___ element in self.tokens)
 
     @classmethod
     ___ valid_element(cls, element
@@ -60,7 +60,7 @@ class Calculator:
 
     @classmethod
     ___ tokenize(cls, inp
-        for operator, token in list(cls.OPERATORS.items()):
+        ___ operator, token in list(cls.OPERATORS.items()):
             inp = inp.replace(operator, token)
         r_ inp
 

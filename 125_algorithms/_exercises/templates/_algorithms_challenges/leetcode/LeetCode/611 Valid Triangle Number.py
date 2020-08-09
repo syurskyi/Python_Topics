@@ -32,7 +32,7 @@ class Solution:
         ret = 0
         nums.sort()
         n = le.(nums)
-        for k in range(n-1, 1, -1
+        ___ k in range(n-1, 1, -1
             i = 0
             j = k - 1
             w___ i < j:
@@ -56,7 +56,7 @@ class Solution:
         ret = 0
         nums.sort()
         n = le.(nums)
-        for i in range(n - 2
+        ___ i in range(n - 2
             j = i + 1
             k = n - 1
             w___ j < k:
@@ -80,11 +80,11 @@ class Solution:
         nums.sort()
         n = le.(nums)
         ret = 0
-        for i in range(n
-            for j in range(i + 1, n
+        ___ i in range(n
+            ___ j in range(i + 1, n
                 __ (i, j) not in cache:
                     cur = 0
-                    for k in range(j + 1, n
+                    ___ k in range(j + 1, n
                         __ nums[k] < nums[i] + nums[j]:
                             cur += 1
                         ____

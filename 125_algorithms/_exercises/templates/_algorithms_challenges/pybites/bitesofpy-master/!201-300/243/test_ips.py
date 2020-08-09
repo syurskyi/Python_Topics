@@ -41,8 +41,8 @@ ___ test_get_aws_service_range(json_file
     services = parse_ipv4_service_ranges(json_file)
     service_range = get_aws_service_range('13.248.118.1', services)
     assert le.(service_range) __ 2
-    assert set(s.region for s in service_range) __ {'eu-west-1'}
-    assert set(s.service for s in service_range) __ {'AMAZON', 'GLOBALACCELERATOR'}
+    assert set(s.region ___ s in service_range) __ {'eu-west-1'}
+    assert set(s.service ___ s in service_range) __ {'AMAZON', 'GLOBALACCELERATOR'}
     assert get_aws_service_range('158.152.1.65', services) __ []
     with pytest.raises(ValueError) as exc:
         get_aws_service_range('0.0.0.256', services)

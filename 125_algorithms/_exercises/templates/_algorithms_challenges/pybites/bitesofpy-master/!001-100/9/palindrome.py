@@ -10,7 +10,7 @@ urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 ___ load_dictionary(
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r_ (word.lower().strip() for word in f.readlines())
+        r_ (word.lower().strip() ___ word in f.readlines())
 
 
 ___ is_palindrome(word: str
@@ -18,7 +18,7 @@ ___ is_palindrome(word: str
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
-    string = ''.join(c.lower() for c in word __ c.isalpha())
+    string = ''.join(c.lower() ___ c in word __ c.isalpha())
     r_ string __ string[::-1]
 
 
@@ -28,5 +28,5 @@ ___ get_longest_palindrome(words=None
        to populate the words list"""
     __ words is None:
         words = load_dictionary()
-    pals = [word for word in words __ is_palindrome(word)]
+    pals = [word ___ word in words __ is_palindrome(word)]
     r_ sorted(pals, key=lambda x:-le.(x))[0]

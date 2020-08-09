@@ -19,7 +19,7 @@ ___ handshake(secret
     """Decodes binary handshake"""
     steps = ["wink", "double blink", "close your eyes", "jump"]
     to_do = []
-    for bit, action in zip(secret, steps
+    ___ bit, action in zip(secret, steps
         __ bit __ "1":
             to_do.append(action)
     __ secret[-1] __ "1":
@@ -30,7 +30,7 @@ ___ code(shake
     """Creat binary handshake"""
     values = ("wink", "double blink", "close your eyes", "jump")
     secret = 0
-    for action in shake:
+    ___ action in shake:
         __ action not in values:
             r_ '0'
         secret |= 2 ** values.index(action)

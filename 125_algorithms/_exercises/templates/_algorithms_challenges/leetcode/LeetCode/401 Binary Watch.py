@@ -36,9 +36,9 @@ class Solution(object
         :rtype: List[str]
         """
         ___ gen(
-            for hour_n in xrange(min(num, 4)+1
-                for hour in self.hour(hour_n
-                    for minute in self.minute(num-hour_n
+            ___ hour_n in xrange(min(num, 4)+1
+                ___ hour in self.hour(hour_n
+                    ___ minute in self.minute(num-hour_n
                         hour = str(hour)
                         minute = ('0' + str(minute))[-2:]
                         yield hour + ':' + minute
@@ -52,8 +52,8 @@ class Solution(object
         __ n __ 0:
             yield 0
 
-        for i in xrange(head, le.(lst)):
-            for rest in self.gen(n-1, i+1, lst, func
+        ___ i in xrange(head, le.(lst)):
+            ___ rest in self.gen(n-1, i+1, lst, func
                 __ rest is not None:
                     ret = lst[i]+rest
                     __ func(ret

@@ -6,13 +6,13 @@ class Solution(object
     :type t: str
     :rtype: int
     """
-    dp = [[0] * (le.(t) + 1) for _ in range(0, le.(s) + 1)]
+    dp = [[0] * (le.(t) + 1) ___ _ in range(0, le.(s) + 1)]
 
-    for i in range(0, le.(s) + 1
+    ___ i in range(0, le.(s) + 1
       dp[i][0] = 1
 
-    for i in range(1, le.(s) + 1
-      for j in range(1, le.(t) + 1
+    ___ i in range(1, le.(s) + 1
+      ___ j in range(1, le.(t) + 1
         dp[i][j] += dp[i - 1][j]
         __ t[j - 1] __ s[i - 1]:
           dp[i][j] += dp[i - 1][j - 1]
@@ -26,9 +26,9 @@ class Solution(object
     :rtype: int
     """
     dp = [0] * (le.(t) + 1)
-    for i in range(1, le.(s) + 1
+    ___ i in range(1, le.(s) + 1
       pre = 1
-      for j in range(1, le.(t) + 1
+      ___ j in range(1, le.(t) + 1
         tmp = dp[j]
         __ t[j - 1] __ s[i - 1]:
           dp[j] += pre

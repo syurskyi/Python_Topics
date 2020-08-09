@@ -18,7 +18,7 @@ ___ test_extracted_data_is_correct(output
     data = json.loads(output)
     assert type(data) __ list
     assert le.(data) __ 10
-    for row in [{'id': '1', 'first_name': 'Junie', 'last_name': 'Kybert',
+    ___ row in [{'id': '1', 'first_name': 'Junie', 'last_name': 'Kybert',
                  'email': 'jkybert0@army.mil'},
                 {'id': '2', 'first_name': 'Sid', 'last_name': 'Churching',
                  'email': 'schurching1@tumblr.com'},

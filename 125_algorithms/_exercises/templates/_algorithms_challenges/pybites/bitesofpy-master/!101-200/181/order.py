@@ -10,4 +10,4 @@ class OrderedList:
         bisect.insort(self._numbers,num)
 
     ___ __str__(self
-        r_ ', '.join(str(num) for num in self._numbers)
+        r_ ', '.join(str(num) ___ num in self._numbers)

@@ -8,7 +8,7 @@ class Solution(object
     """
     idx1 = idx2 = -1
     ans = le.(words)
-    for i in range(0, le.(words)):
+    ___ i in range(0, le.(words)):
       word = words[i]
       __ word in (word1, word2
         __ word __ word1:

@@ -23,7 +23,7 @@ ___ timing(f
 
 @timing
 ___ contains(sequence: List[int], num: int) -> bool:
-    for n in sequence:
+    ___ n in sequence:
         __ n __ num:
             r_ True
     r_ False
@@ -47,7 +47,7 @@ ___ ordered_list_max_fast(sequence: List[int]) -> int:
 @timing
 ___ list_concat(sequence: List[str]) -> str:
     bigstr = ''
-    for i in sequence:
+    ___ i in sequence:
         bigstr += str(i)
     r_ bigstr
 
@@ -60,24 +60,24 @@ ___ list_concat_fast(sequence: List[str]) -> str:
 @timing
 ___ list_inserts(n: int) -> List[int]:
     lst = []
-    for i in range(n
+    ___ i in range(n
         lst.insert(0, i)
     r_ lst
 
 
 @timing
 ___ list_inserts_fast(n: int) -> List[int]:
-    r_ [v for v in range(n)][::-1]
+    r_ [v ___ v in range(n)][::-1]
 
 
 @timing
 ___ list_creation(n: int) -> List[int]:
     lst = []
-    for i in range(n
+    ___ i in range(n
         lst.append(i)
     r_ lst
 
 
 @timing
 ___ list_creation_fast(n: int
-    yield from (v for v in range(n))
+    yield from (v ___ v in range(n))

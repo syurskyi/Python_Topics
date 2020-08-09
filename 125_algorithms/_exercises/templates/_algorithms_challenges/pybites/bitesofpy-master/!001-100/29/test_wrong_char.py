@@ -12,6 +12,6 @@ ___ test_wrong_char(
     )
     expected = [2, 4, 1, 5, 8, 0]
 
-    for arg, exp in zip(inputs, expected
+    ___ arg, exp in zip(inputs, expected
         err = f'get_index_different_char({arg}) should return index {exp}'
         assert get_index_different_char(arg) __ exp, err

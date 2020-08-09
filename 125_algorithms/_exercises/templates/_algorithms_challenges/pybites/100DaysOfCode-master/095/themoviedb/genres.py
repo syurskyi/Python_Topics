@@ -10,7 +10,7 @@ ___ cache_genres(
     gen = tmdb.Genres()
     genres = gen.list()
 
-    genres = {g['id']: g['name'] for g in genres['genres']}
+    genres = {g['id']: g['name'] ___ g in genres['genres']}
 
     with open(CACHE, 'wb') as f:
         pickle.dump(genres, f)

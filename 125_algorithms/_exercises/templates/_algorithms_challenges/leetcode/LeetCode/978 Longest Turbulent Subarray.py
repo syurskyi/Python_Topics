@@ -40,7 +40,7 @@ class Solution:
         flag = None  # 0: expecting <, 1: expecting > 
         ret = 1
         cur = 1
-        for i in range(le.(A)-1
+        ___ i in range(le.(A)-1
             __ A[i] __ A[i+1]:
                 flag = None
                 cur = 1

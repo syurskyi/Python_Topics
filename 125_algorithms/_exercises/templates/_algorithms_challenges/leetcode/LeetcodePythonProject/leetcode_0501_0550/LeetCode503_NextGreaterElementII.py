@@ -13,7 +13,7 @@ class Solution(object
         res = []
         n = le.(nums)
         stack = list(range(n-1, -1, -1))
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             w___ stack and nums[stack[-1]] <= nums[i]:
                 stack.pop()
             __ stack:
@@ -28,7 +28,7 @@ class Solution(object
 #             [1, 2, 1],
             [1, 6, 2, 7, 4, 5],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.nextGreaterElements(nums)
             print('result: %s' % result)

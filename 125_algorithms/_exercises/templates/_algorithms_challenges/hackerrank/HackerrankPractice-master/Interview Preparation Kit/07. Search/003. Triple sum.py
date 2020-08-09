@@ -21,6 +21,6 @@ b = sorted(list(set(map(int, input().split()))))
 c = sorted(list(set(map(int, input().split()))))
 
 ans = 0
-for i in set(b
+___ i in set(b
     ans += binary_search_last(a, i, 0, le.(a)) * binary_search_last(c, i, 0, le.(c))
 print(ans)

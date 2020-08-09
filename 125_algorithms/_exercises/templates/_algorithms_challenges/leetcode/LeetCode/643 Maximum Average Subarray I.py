@@ -24,7 +24,7 @@ class Solution:
         """
         two pointers
         """
-        cur_sum = sum(nums[:k])
+        cur_sum = su.(nums[:k])
         maxa = cur_sum
         i = k
         w___ i < le.(nums

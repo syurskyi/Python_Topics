@@ -11,25 +11,25 @@ HIGH_CARD = 0
 
 class Poker:
     ___ __init__(self, hands
-        self.hands = [Hand(hand) for hand in hands]
+        self.hands = [Hand(hand) ___ hand in hands]
 
     ___ best_hand(self
-        r_ [hand.hand for hand, score in list(
+        r_ [hand.hand ___ hand, score in list(
             self.scores().items()) __ score __ self.best_score()]
 
     ___ best_score(self
         r_ max(self.scores(), key=self.scores().get).score()
 
     ___ scores(self
-        r_ {hand: hand.score() for hand in self.hands}
+        r_ {hand: hand.score() ___ hand in self.hands}
 
 
 class Hand:
     ___ __init__(self, hand
         self.hand = hand
-        self.cards = [Card(card) for card in hand]
-        self.ranks = [card.rank for card in self.cards]
-        self.suits = [card.suit for card in self.cards]
+        self.cards = [Card(card) ___ card in hand]
+        self.ranks = [card.rank ___ card in self.cards]
+        self.suits = [card.suit ___ card in self.cards]
 
     ___ score(self
         __ self.straight_flush(
@@ -80,7 +80,7 @@ class Hand:
         r_ max(self.ranks)
 
     ___ rank_occurences(self
-        r_ {rank: self.ranks.count(rank) for rank in self.ranks}
+        r_ {rank: self.ranks.count(rank) ___ rank in self.ranks}
 
     ___ rank_of_card_with_highest_occurence(self
         r_ max(self.rank_occurences(), key=self.rank_occurences().get)

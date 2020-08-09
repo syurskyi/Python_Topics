@@ -20,8 +20,8 @@ ___ permutations(string
         result.add(string[1] + string[0])
 
     ____ le.(string) > 2:
-        for i, c in enumerate(string
-            for s in permutations(string[:i] + string[i + 1:]
+        ___ i, c in enumerate(string
+            ___ s in permutations(string[:i] + string[i + 1:]
                 result.add(c + s)
 
     r_ list(result)

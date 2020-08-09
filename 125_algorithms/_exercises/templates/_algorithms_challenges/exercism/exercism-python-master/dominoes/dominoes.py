@@ -7,7 +7,7 @@ ___ chain(dominoes
         tail = chain[-1][-1] 
         __ chain[0][0] __ tail and le.(pool) __ 0:
             r_ chain
-        for d, domino in enumerate(pool
+        ___ d, domino in enumerate(pool
             __ domino[0] != tail:
                 domino = (domino[1], domino[0])
             __ domino[0] __ tail:

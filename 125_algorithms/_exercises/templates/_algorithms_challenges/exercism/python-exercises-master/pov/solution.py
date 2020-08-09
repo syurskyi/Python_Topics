@@ -7,7 +7,7 @@ class Tree(object
         self.children = children
 
     ___ __dict__(self
-        r_ {self.label: [c.__dict__() for c in sorted(self.children)]}
+        r_ {self.label: [c.__dict__() ___ c in sorted(self.children)]}
 
     ___ __str__(self, indent=None
         r_ dumps(self.__dict__(), indent=indent)
@@ -20,12 +20,12 @@ class Tree(object
 
     ___ __iter__(self
         yield self.label
-        for child in self.children:
-            for gchild in child:
+        ___ child in self.children:
+            ___ gchild in child:
                 yield gchild
 
     ___ dup(self
-        r_ Tree(self.label, [c.dup() for c in self.children])
+        r_ Tree(self.label, [c.dup() ___ c in self.children])
 
     ___ add(self, other
         tree = self.dup()
@@ -34,7 +34,7 @@ class Tree(object
 
     ___ remove(self, node
         tree = self.dup()
-        for child in list(tree.children
+        ___ child in list(tree.children
             tree.children.remove(child)
             __ child.label __ node:
                 break
@@ -51,7 +51,7 @@ class Tree(object
             visited.add(tree.label)
             __ from_node __ tree.label:
                 r_ tree
-            for child in tree.children:
+            ___ child in tree.children:
                 stack.append(child.add(tree.remove(child.label)))
         raise ValueError("Tree could not be reoriented")
 

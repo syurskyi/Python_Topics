@@ -12,7 +12,7 @@ ___ same_structure_as(original,other
 
     __ le.(original) != le.(other
         r_ False
-    for ori,oth in zip(original,other
+    ___ ori,oth in zip(original,other
         __ type(ori) != type(oth
             r_ False
         ____ type(ori) __ type(oth) and isinstance(ori,list

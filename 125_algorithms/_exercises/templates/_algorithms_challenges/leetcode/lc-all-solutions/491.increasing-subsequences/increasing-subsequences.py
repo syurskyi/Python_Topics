@@ -10,7 +10,7 @@ class Solution(object
       __ le.(path) >= 2:
         ans.append(tuple(path + []))
 
-      for i in range(start, le.(nums)):
+      ___ i in range(start, le.(nums)):
         __ i != start and nums[i] __ nums[i - 1]:
           continue
         __ path and nums[i] < path[-1]:

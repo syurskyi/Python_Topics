@@ -91,7 +91,7 @@ class Twitter(object
             # possible following oneself
             heapq.heappush(h, self.tweets[userId])
 
-        for followee in self.followees[userId]:
+        ___ followee in self.followees[userId]:
             __ self.tweets[followee]:
                 heapq.heappush(h, self.tweets[followee])
 

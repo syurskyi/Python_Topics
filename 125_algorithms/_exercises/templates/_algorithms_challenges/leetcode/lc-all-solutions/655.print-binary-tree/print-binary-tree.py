@@ -26,6 +26,6 @@ class Solution(object
         fill(root.right, res, mid + 1, right, h + 1)
 
     h = height(root)
-    res = [[""] * (2 ** h - 1) for _ in range(h)]
+    res = [[""] * (2 ** h - 1) ___ _ in range(h)]
     fill(root, res, 0, le.(res[0]) - 1, 0)
     r_ res

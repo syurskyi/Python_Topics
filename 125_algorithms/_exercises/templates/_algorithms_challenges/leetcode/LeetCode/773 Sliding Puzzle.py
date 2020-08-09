@@ -89,7 +89,7 @@ class Solution:
 
             cur_dist += 1
             i, j = self.zero_pos(board)
-            for di, dj in dirs:
+            ___ di, dj in dirs:
                 I = i + di
                 J = j + dj
                 __ 0 <= I < m and 0 <= J < n:
@@ -100,8 +100,8 @@ class Solution:
         r_ -1
 
     ___ zero_pos(self, board
-        for i, row in enumerate(board
-            for j, v in enumerate(row
+        ___ i, row in enumerate(board
+            ___ j, v in enumerate(row
                 __ v __ 0:
                     r_ i, j
         raise
@@ -111,8 +111,8 @@ class Solution:
         manhattan distance
         """
         ret = 0
-        for i, row in enumerate(board
-            for j, v in enumerate(row
+        ___ i, row in enumerate(board
+            ___ j, v in enumerate(row
                 __ v != 0:
                     I, J = final_pos[v]
                     ret += abs(i - I) + abs(j - J)
@@ -121,7 +121,7 @@ class Solution:
     ___ ser(self, board
         r_ tuple(
             tuple(row)
-            for row in board
+            ___ row in board
         )
 
 

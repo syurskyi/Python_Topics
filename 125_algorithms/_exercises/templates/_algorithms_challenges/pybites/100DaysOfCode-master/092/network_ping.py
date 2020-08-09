@@ -7,5 +7,5 @@ ______ os
 network = input("Please enter a network to ping (format: xxx.xxx.xxx.0/xx ")
 netobj = ipaddress.ip_network(network)
 
-for ip in netobj.hosts(
+___ ip in netobj.hosts(
     os.system("ping " + str(ip))

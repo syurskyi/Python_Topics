@@ -11,11 +11,11 @@ class Solution(object
         :rtype: List[List[str]]
         """
         hashmap = {}
-        for s in strings:
+        ___ s in strings:
             hashStr = self.getHash(s)
             hashmap[hashStr] = hashmap.get(hashStr, []) + [s]
         res = []
-        for vals in hashmap.values(
+        ___ vals in hashmap.values(
             res.append(vals)
         r_ res
     
@@ -23,7 +23,7 @@ class Solution(object
         __ not s: r_ '-2'
         __ le.(s) __ 1: r_ '-1'
         res = ''
-        for i in range(1, le.(s)):
+        ___ i in range(1, le.(s)):
             diff = ord(s[i])-ord(s[i-1])
             __ diff < 0:
                 diff += 26
@@ -36,9 +36,9 @@ class Solution(object
         :rtype: List[List[str]]
         """
         result = []
-        for s in strings:
+        ___ s in strings:
             added = False
-            for l in result:
+            ___ l in result:
                 __ self.isSameGroup(l[0], s
                     l.append(s)
                     added = True
@@ -55,7 +55,7 @@ class Solution(object
         diff = ord(s1[0]) - ord(s2[0])
         __ diff < 0:
             diff += 26
-        for i in range(1, length
+        ___ i in range(1, length
             d = ord(s1[i]) - ord(s2[i])
             __ d < 0:
                 d += 26
@@ -69,7 +69,7 @@ class Solution(object
         testCases = [
             ["abc","bcd","acef","xyz","az","ba","a","z"],
         ]
-        for strings in testCases:
+        ___ strings in testCases:
             print('strs: %s' % (strings))
             result = self.groupStrings(strings)
             print('result: %s' % (result))

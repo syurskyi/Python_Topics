@@ -28,7 +28,7 @@ class PythonBytes:
         """Return a list of episode IDs (itunes_episode attribute) of the
            episodes the pass in domain was mentioned in.
         """
-        for i in self.entries:
+        ___ i in self.entries:
             __ domain in i.summary_detail.value:
                 yield i.itunes_episode
 
@@ -39,7 +39,7 @@ class PythonBytes:
            Return a list of (domain, count) tuples (use Counter).
         """
         dom_count = Counter()
-        for i in self.entries:
+        ___ i in self.entries:
             domains = set(re.findall(r'https?://[^/]+', i.summary_detail.value)) - IGNORE_DOMAINS
             dom_count.update(domains)
         r_ dom_count.most_common(n)
@@ -48,10 +48,10 @@ class PythonBytes:
         """Return the number of episodes that had one of more special guests
            featured (use SPECIAL_GUEST).
         """
-        r_ sum(1 for i in self.entries __ SPECIAL_GUEST in i.summary_detail.value)
+        r_ su.(1 ___ i in self.entries __ SPECIAL_GUEST in i.summary_detail.value)
 
     ___ _time_to_secs(self, tm: str) -> int:
-        parts = [int(s) for s in tm.split(':')]
+        parts = [int(s) ___ s in tm.split(':')]
         r_ (parts[0] * 60 + parts[1]) * 60 + parts[2]
 
     ___ _secs_to_time(self, sec: int) -> str:
@@ -67,7 +67,7 @@ class PythonBytes:
         # res = Duration('', self.entries[0].itunes_duration, self.entries.entries[0].itunes_duration)
         min_t = max_t = self._time_to_secs(self.entries[0].itunes_duration)
         total_t = min_t
-        for i in self.entries[1:]:
+        ___ i in self.entries[1:]:
             _t = self._time_to_secs(i.itunes_duration)
             total_t += _t
             __ _t < min_t:

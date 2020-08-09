@@ -4,7 +4,7 @@ from functools ______ wraps
 ___ int_args(func
     @wraps(func)
     ___ wrapper(*args, **kwargs
-        for a in args:
+        ___ a in args:
             __ not isinstance(a, int
                 raise TypeError()
             __ a < 0:

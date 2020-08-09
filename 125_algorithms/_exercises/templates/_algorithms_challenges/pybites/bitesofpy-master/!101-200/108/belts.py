@@ -23,6 +23,6 @@ ___ get_total_points(belts=ninja_belts
 
        Return the total number of points int from the function."""
     total = 0
-    for colour, belt in belts.items(
+    ___ colour, belt in belts.items(
         total += belt.score * belt.ninjas
     r_ total

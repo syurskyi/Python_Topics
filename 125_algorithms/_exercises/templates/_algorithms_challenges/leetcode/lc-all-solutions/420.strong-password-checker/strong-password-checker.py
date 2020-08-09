@@ -5,11 +5,11 @@ class Solution(object
     :rtype: int
     """
     complexBal = 3
-    __ any(c in string.lowercase for c in s
+    __ any(c in string.lowercase ___ c in s
       complexBal -= 1
-    __ any(c in string.uppercase for c in s
+    __ any(c in string.uppercase ___ c in s
       complexBal -= 1
-    __ any(c.isdigit() for c in s
+    __ any(c.isdigit() ___ c in s
       complexBal -= 1
 
     one = 0

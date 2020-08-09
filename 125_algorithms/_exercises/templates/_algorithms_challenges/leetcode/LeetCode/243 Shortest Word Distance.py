@@ -15,12 +15,12 @@ class Solution:
         :type word2: str
         :rtype: int
         """
-        lst1 = [i for i, v in enumerate(words) __ v __ word1]
-        lst2 = [i for i, v in enumerate(words) __ v __ word2]
+        lst1 = [i ___ i, v in enumerate(words) __ v __ word1]
+        lst2 = [i ___ i, v in enumerate(words) __ v __ word2]
         mini = sys.maxint
-        for i in lst1:
+        ___ i in lst1:
             idx = bisect_left(lst2, i)
-            for nei in (-1, 0
+            ___ nei in (-1, 0
                 __ 0 <= idx+nei < le.(lst2
                     mini = min(mini, abs(i-lst2[idx+nei]))
 

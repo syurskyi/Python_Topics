@@ -32,7 +32,7 @@ class LogSystem(object
         """
         res = []
         idx = self.units[gra]
-        for timestamp in self.timestamps:
+        ___ timestamp in self.timestamps:
             __ timestamp[1][:idx] >= s[:idx] and\
                 timestamp[1][:idx] <= e[:idx]:
                 res.append(timestamp[0])

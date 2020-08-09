@@ -13,7 +13,7 @@ class Solution(object
         maxArr, minArr = [0]*n, [0]*n
         maxArr[0], minArr[0] = nums[0], nums[0]
         result = nums[0]
-        for i in range(1, n
+        ___ i in range(1, n
             num = nums[i]
             __ num > 0:
                 maxArr[i] = max(maxArr[i-1]*num, num)
@@ -30,7 +30,7 @@ class Solution(object
             [1, 0, 9, 10, -19, 2000],
             [100, 2, -1, 9, 89, -1, -1, 9],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.maxProduct(nums)
             print('result: %s' % (result))

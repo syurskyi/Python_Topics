@@ -21,9 +21,9 @@ class Solution:
         __ n __ 1:
             r_ True
         # d[i] is the max index A[i] can reach in A
-        d = [i + A[i] for i in range(n)]
+        d = [i + A[i] ___ i in range(n)]
         reach = n - 1
-        for i in range(1, n
+        ___ i in range(1, n
             # j is from n - 1 to 0
             j = n - 1 - i
             __ d[j] >= reach:

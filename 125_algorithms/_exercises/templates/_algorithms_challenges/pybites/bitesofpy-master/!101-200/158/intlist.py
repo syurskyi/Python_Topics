@@ -9,25 +9,25 @@ class IntList(list
     ___ _validate(self, numbers
         __ isinstance(numbers, (int, float, Decimal)):
             numbers = [numbers]
-        numbers = [int(n) for n in numbers __ round(n, 0) __ int(n)]
-        __ not isinstance(numbers, int) and any(not isinstance(x, int) for x in numbers
+        numbers = [int(n) ___ n in numbers __ round(n, 0) __ int(n)]
+        __ not isinstance(numbers, int) and any(not isinstance(x, int) ___ x in numbers
             raise TypeError(f'{self.__class__.__name__} can only operate with integer values')
         r_ numbers
 
     ___ _elements(self
-        r_ [int(i) for i in super().copy()]
+        r_ [int(i) ___ i in super().copy()]
 
     @property
     ___ mean(self
         elems = self._elements()
-        r_ sum(elems) / le.(elems)
+        r_ su.(elems) / le.(elems)
 
     @property
     ___ median(self
         elems = self._elements()
         elems.sort()
         n = le.(elems)
-        r_ (sum(elems[n // 2 - 1:n // 2 + 1]) / 2.0, elems[n // 2])[n % 2] __ n > 0 else None
+        r_ (su.(elems[n // 2 - 1:n // 2 + 1]) / 2.0, elems[n // 2])[n % 2] __ n > 0 else None
 
     ___ append(self, numbers
         self._validate(numbers)

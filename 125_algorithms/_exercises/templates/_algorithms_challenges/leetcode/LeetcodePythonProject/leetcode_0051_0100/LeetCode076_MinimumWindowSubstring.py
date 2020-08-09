@@ -12,14 +12,14 @@ class Solution(object
         :rtype: str
         """
         hashmap0 = {}
-        for c in t:
+        ___ c in t:
             hashmap0[c] = hashmap0.get(c, 0)+1
         left = 0
         res = ''
         minLen = float('inf')
         hashmap = {}
         count = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             hashmap[c] = hashmap.get(c, 0)+1
             __ c in hashmap0 and hashmap[c] __ hashmap0[c]:
                 count += 1
@@ -43,14 +43,14 @@ class Solution(object
         :rtype: str
         """
         hashmap = {}
-        for c in t:
+        ___ c in t:
             hashmap[c] = hashmap.get(c, 0)+1
         left = 0
         hashmapAll = {}
         hashset = set()
         res = ''
         minLen = float('inf')
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c in hashmap and hashmapAll.get(c, 0)+1 >= hashmap[c]:
                 hashset.add(c)
             hashmapAll[c] = hashmapAll.get(c, 0)+1
@@ -73,7 +73,7 @@ class Solution(object
             ['a', 'b'],
             ['aa', 'aa'],
         ]
-        for s, t in testCases:
+        ___ s, t in testCases:
             print('s: %s' % (s))
             print('t: %s' % (t))
             result = self.minWindow(s, t)

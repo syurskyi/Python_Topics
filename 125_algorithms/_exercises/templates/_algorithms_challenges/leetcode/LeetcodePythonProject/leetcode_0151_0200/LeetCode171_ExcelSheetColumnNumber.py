@@ -11,7 +11,7 @@ class Solution(object
         :rtype: int
         """
         result = 0
-        for c in s:
+        ___ c in s:
             result = result*26
             num = ord(c)-ord('A')+1
             result += num
@@ -25,7 +25,7 @@ class Solution(object
             'AA',
             'AAA',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.titleToNumber(s)
             print('result: %s' % (result))

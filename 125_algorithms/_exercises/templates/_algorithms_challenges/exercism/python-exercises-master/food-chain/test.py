@@ -101,7 +101,7 @@ class FoodChainTest(unittest.TestCase
 
     ___ test_full_song(self
         expected = []
-        for n in range(1, 9
+        ___ n in range(1, 9
             expected += recite(n, n) + [""]
         expected.pop()
         self.assertEqual(recite(1, 8), expected)

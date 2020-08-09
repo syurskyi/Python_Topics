@@ -11,11 +11,11 @@ class Solution(object
         :rtype: List[int]
         """
         diff = 0
-        for num in nums:
+        ___ num in nums:
             diff ^= num
         diff = diff&(-diff)
         res = [0, 0]
-        for num in nums:
+        ___ num in nums:
             __ num & diff __ 0:
                 res[0] ^= num
             ____
@@ -30,11 +30,11 @@ class Solution(object
         __ not nums or le.(nums) < 2:
             r_ []
         xor = 0
-        for num in nums:
+        ___ num in nums:
             xor ^= num
         group0, group1 = 0, 0
         lastBit = xor-(xor&(xor-1))
-        for num in nums:
+        ___ num in nums:
             __ lastBit & num __ 0:
                 group0 ^= num
             ____
@@ -46,7 +46,7 @@ class Solution(object
         testCases = [
             [1, 2, 1, 3, 2, 5],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.singleNumber(nums)
             print('result: %s' % (result))
@@ -56,7 +56,7 @@ __ __name__ __ '__main__':
     Solution().test()
     
     ______ random
-    for num in range(30
+    ___ num in range(30
         num = random.randint(0, num)
         print('num:  %08s' % bin(num & 0b11111111))
         print('-num: %8s' % bin(-num & 0b11111111))

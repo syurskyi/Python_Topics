@@ -10,9 +10,9 @@ class TestTrie(object
         print('Test: Insert')
         words = ['a', 'at', 'has', 'hat', 'he',
                  'me', 'men', 'mens', 'met']
-        for word in words:
+        ___ word in words:
             trie.insert(word)
-        for word in trie.list_words(
+        ___ word in trie.list_words(
             assert_true(trie.find(word) is not None)
             
         print('Test: Remove me')
@@ -20,9 +20,9 @@ class TestTrie(object
         words_removed = ['me']
         words = ['a', 'at', 'has', 'hat', 'he',
                  'men', 'mens', 'met']
-        for word in words:
+        ___ word in words:
             assert_true(trie.find(word) is not None)
-        for word in words_removed:
+        ___ word in words_removed:
             assert_true(trie.find(word) is None)
 
         print('Test: Remove mens')
@@ -30,9 +30,9 @@ class TestTrie(object
         words_removed = ['me', 'mens']
         words = ['a', 'at', 'has', 'hat', 'he',
                  'men', 'met']
-        for word in words:
+        ___ word in words:
             assert_true(trie.find(word) is not None)
-        for word in words_removed:
+        ___ word in words_removed:
             assert_true(trie.find(word) is None)
 
         print('Test: Remove a')
@@ -40,9 +40,9 @@ class TestTrie(object
         words_removed = ['a', 'me', 'mens']
         words = ['at', 'has', 'hat', 'he',
                  'men', 'met']
-        for word in words:
+        ___ word in words:
             assert_true(trie.find(word) is not None)
-        for word in words_removed:
+        ___ word in words_removed:
             assert_true(trie.find(word) is None)
 
         print('Test: Remove has')
@@ -50,9 +50,9 @@ class TestTrie(object
         words_removed = ['a', 'has', 'me', 'mens']
         words = ['at', 'hat', 'he',
                  'men', 'met']
-        for word in words:
+        ___ word in words:
             assert_true(trie.find(word) is not None)
-        for word in words_removed:
+        ___ word in words_removed:
             assert_true(trie.find(word) is None)
 
         print('Success: test_trie')

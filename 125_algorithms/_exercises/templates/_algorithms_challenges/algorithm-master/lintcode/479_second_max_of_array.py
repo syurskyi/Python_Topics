@@ -8,7 +8,7 @@ class Solution:
             r_
 
         max1 = max2 = float('-inf')
-        for a in A:
+        ___ a in A:
             __ a > max1:
                 max2 = max1
                 max1 = a

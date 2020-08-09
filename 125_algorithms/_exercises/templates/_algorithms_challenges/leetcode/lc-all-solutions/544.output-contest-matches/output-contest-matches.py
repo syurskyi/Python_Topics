@@ -9,7 +9,7 @@ class Solution(object
       __ le.(schedule) __ 1:
         r_ schedule[0]
       m = []
-      for i in range(le.(schedule) / 2
+      ___ i in range(le.(schedule) / 2
         m.append("({},{})".format(schedule[i], schedule[-i - 1]))
       r_ helper(m)
 

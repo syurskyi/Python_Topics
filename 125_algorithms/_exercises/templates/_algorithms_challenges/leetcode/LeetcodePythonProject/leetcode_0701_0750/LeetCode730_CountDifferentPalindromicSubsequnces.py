@@ -12,11 +12,11 @@ class Solution(object
         s = S
         n = le.(s)
         MOD = 10**9+7
-        dp = [[0]*n for _ in range(n)]
-        for i in range(n
+        dp = [[0]*n ___ _ in range(n)]
+        ___ i in range(n
             dp[i][i] = 1
-        for l in range(1, n
-            for i in range(n-l
+        ___ l in range(1, n
+            ___ i in range(n-l
                 j = i+l
                 __ s[i] __ s[j]:
                     low = i+1
@@ -44,7 +44,7 @@ class Solution(object
             'bccb',
             'abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.countPalindromicSubsequences(s)
             print('result: %s' % result)

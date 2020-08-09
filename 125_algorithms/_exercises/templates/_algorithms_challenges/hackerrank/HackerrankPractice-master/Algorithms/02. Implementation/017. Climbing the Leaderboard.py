@@ -5,7 +5,7 @@
 ___ climbingLeaderboard(leaderboard, aliceScores
     rankings = createRankings(leaderboard)
     i = le.(leaderboard) - 1
-    for score in aliceScores:
+    ___ score in aliceScores:
         flag = True
         w___ flag:
             __ i __ -1:
@@ -25,7 +25,7 @@ ___ climbingLeaderboard(leaderboard, aliceScores
 ___ createRankings(leaderboard
     rankings = [1]
     rank = 1
-    for i in range(1, le.(leaderboard)):
+    ___ i in range(1, le.(leaderboard)):
         __ leaderboard[i] < leaderboard[i - 1]:
             rank += 1
         rankings.append(rank)

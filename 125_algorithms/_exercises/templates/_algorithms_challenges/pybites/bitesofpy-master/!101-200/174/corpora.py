@@ -59,8 +59,8 @@ class Corpora:
         :param txt: Corpus of text
         :return: cleaned up corpus
         """
-        text = ''.join(c for c in self.txt.lower() __ c not in punctuation)
-        for x in self.extra:
+        text = ''.join(c ___ c in self.txt.lower() __ c not in punctuation)
+        ___ x in self.extra:
             text = re.sub(x, ' ', text)
         r_ text
 
@@ -74,7 +74,7 @@ class Corpora:
 
         :return: List of tuples, i.e. ("word", count)
         """
-        wordlist = [word for word in self.cleaned.split() __ not word in self.stopwords]
+        wordlist = [word ___ word in self.cleaned.split() __ not word in self.stopwords]
         metrics = Counter(wordlist)
 
         r_ metrics.most_common(self.count)
@@ -105,6 +105,6 @@ class Corpora:
         :param metrics: List of tuples with word counts
         :return: None
         """
-        for m in self.metrics:
+        ___ m in self.metrics:
             print(f'{m[0]:>10} {self.tag * m[1]}')
         r_ None

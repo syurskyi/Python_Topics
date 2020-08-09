@@ -17,7 +17,7 @@ class Solution(object
     ___ helper(self, s, i, res
         __ i >= le.(s) and le.(res) > 2:
             r_ True
-        for j in range(i+1, le.(s)+1
+        ___ j in range(i+1, le.(s)+1
             s0 = s[i:j]
             num = int(s0)
             __ num > 2**31-1 or (s0[0] __ '0' and le.(s0) > 1
@@ -38,7 +38,7 @@ class Solution(object
             '1101111',
             "1011",
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.splitIntoFibonacci(s)
             print('result: %s' % result)

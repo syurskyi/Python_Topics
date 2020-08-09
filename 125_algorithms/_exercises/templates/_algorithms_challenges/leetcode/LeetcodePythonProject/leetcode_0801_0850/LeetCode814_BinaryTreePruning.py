@@ -30,7 +30,7 @@ class Solution(object
         testCases = [
             
         ]
-        for root in testCases:
+        ___ root in testCases:
             result = self.pruneTree(root)
 
 __ __name__ __ '__main__':

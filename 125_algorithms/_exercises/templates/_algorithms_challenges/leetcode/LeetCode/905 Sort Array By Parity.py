@@ -28,7 +28,7 @@ class Solution:
         pointer
         """
         closed = -1
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ A[i] % 2 __ 0:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]

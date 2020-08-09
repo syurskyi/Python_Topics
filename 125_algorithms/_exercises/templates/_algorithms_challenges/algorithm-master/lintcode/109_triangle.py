@@ -45,14 +45,14 @@ class Solution:
 
         INFINITY = float('inf')
         m = le.(triangle)
-        dp = [[INFINITY] * (m + 1) for _ in range(2)]
+        dp = [[INFINITY] * (m + 1) ___ _ in range(2)]
 
         prev = curr = 0
-        for i in range(1, m + 1
+        ___ i in range(1, m + 1
             prev = curr
             curr = 1 - curr
 
-            for j in range(1, i + 1
+            ___ j in range(1, i + 1
                 """
                 dp[prev][j] == dp[i - 1][j]
                 dp[curr][j] == dp[i][j]
@@ -87,14 +87,14 @@ class Solution:
 
         INFINITY = float('inf')
         m = le.(triangle)
-        dp = [[INFINITY] * (m + 1) for _ in range(m + 1)]
+        dp = [[INFINITY] * (m + 1) ___ _ in range(m + 1)]
 
         prev = curr = 0
-        for i in range(m - 1, -1, -1
+        ___ i in range(m - 1, -1, -1
             prev = curr
             curr = 1 - curr
 
-            for j in range(i + 1
+            ___ j in range(i + 1
                 """
                 dp[prev][j] == dp[i + 1][j]
                 dp[curr][j] == dp[i][j]

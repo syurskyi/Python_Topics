@@ -10,7 +10,7 @@ ___ func(x
     eq = (A*x) + (B*ma__.sqrt(x**3)) - (C*ma__.exp(-x/50)) - D
     r_ eq
 
-for line in data:
+___ line in data:
     A,B,C,D = list(map(float,line.strip().split(" ")))
     top = 100
     bot = 0

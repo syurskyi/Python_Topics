@@ -12,7 +12,7 @@ class Solution(object
         """
         __ not nums: r_ []
         count1, count2, candidate1, candidate2 = 0, 0, 0, 0
-        for n in nums:
+        ___ n in nums:
             __ n __ candidate1:
                 count1 += 1
             ____ n __ candidate2:
@@ -36,7 +36,7 @@ class Solution(object
 #             [1, 2, 3],
             [2, 2, 1, 3],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.majorityElement(nums)
             print('result: %s' % (result))

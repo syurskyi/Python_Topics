@@ -41,7 +41,7 @@ class Solution:
         count the digit and compare
         """
         counts = Counter(str(N))
-        for i in range(31  # 32 bit unsighed int
+        ___ i in range(31  # 32 bit unsighed int
             __ counts __ Counter(str(1 << i)):
                 r_ True
         ____

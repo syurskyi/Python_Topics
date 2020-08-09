@@ -15,7 +15,7 @@ class Solution:
         pre2, pre1, curr = 0, 0, 1
         dp[0] = dp[1] = 1
 
-        for i in range(2, n + 1
+        ___ i in range(2, n + 1
             pre2 = pre1
             pre1 = curr
             curr = i % 3
@@ -42,7 +42,7 @@ class Solution:
         dp[0] = 1
         dp[1] = 2
 
-        for i in range(2, n
+        ___ i in range(2, n
             dp[i] = dp[i - 1] + dp[i - 2]
 
         r_ dp[n - 1]
@@ -64,7 +64,7 @@ class Solution:
 
         dp[0] = dp[1] = 1
 
-        for i in range(2, n + 1
+        ___ i in range(2, n + 1
             dp[i] = dp[i - 1] + dp[i - 2]
 
         r_ dp[n]

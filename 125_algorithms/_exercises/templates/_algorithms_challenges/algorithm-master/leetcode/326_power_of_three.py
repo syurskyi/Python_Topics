@@ -7,7 +7,7 @@ class Solution:
         __ not n:
             r_ False
 
-        for i in (81, 27, 9, 3
+        ___ i in (81, 27, 9, 3
             w___ n % i __ 0:
                 n //= i
 

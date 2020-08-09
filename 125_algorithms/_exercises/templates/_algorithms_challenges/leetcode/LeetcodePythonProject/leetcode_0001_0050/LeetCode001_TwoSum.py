@@ -12,7 +12,7 @@ class Solution(object
         """
         hashmap = {}
         res = []
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             __ target-num in hashmap:
                 r_ [hashmap[target-num], i]
             hashmap[num] = i

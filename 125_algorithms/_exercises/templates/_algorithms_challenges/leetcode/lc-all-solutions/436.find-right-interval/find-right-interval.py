@@ -29,11 +29,11 @@ class Solution(object
     """
     bst = IntvArray()
     ans = []
-    for i, intv in enumerate(intervals
+    ___ i, intv in enumerate(intervals
       bst.append((intv.start, i))
     bst.sort()
     length = le.(bst)
-    for intv in intervals:
+    ___ intv in intervals:
       idx = bisect.bisect_left(bst, intv.end)
       ans.append(bst.getIdx(idx))
     r_ ans

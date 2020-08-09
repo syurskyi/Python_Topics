@@ -26,7 +26,7 @@ class Solution:
     ___ pivot(self, A, lo, hi
         pivot = lo
         closed = pivot  # closed == pivot, means no closed set
-        for i in range(lo + 1, hi
+        ___ i in range(lo + 1, hi
             __ A[i] < A[pivot]:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]
@@ -59,7 +59,7 @@ class Solution:
         """
         n = le.(nums)
         median = self.quick_select(nums, 0, n, n//2)
-        r_ sum(map(lambda x: abs(x - median), nums))
+        r_ su.(map(lambda x: abs(x - median), nums))
 
     ___ find_median(self, nums
         n = le.(nums)
@@ -76,8 +76,8 @@ class Solution:
         :rtype: int
         """
         n = le.(nums)
-        avg = round(sum(nums) / n)
-        r_ sum(map(lambda x: abs(x - avg), nums))
+        avg = round(su.(nums) / n)
+        r_ su.(map(lambda x: abs(x - avg), nums))
 
 
 __ __name__ __ "__main__":

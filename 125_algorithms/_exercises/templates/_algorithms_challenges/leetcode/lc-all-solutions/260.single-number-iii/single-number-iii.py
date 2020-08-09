@@ -5,12 +5,12 @@ class Solution(object
     :rtype: List[int]
     """
     xor = 0
-    for num in nums:
+    ___ num in nums:
       xor ^= num
 
     xor = xor & -xor
     a, b = 0, 0
-    for num in nums:
+    ___ num in nums:
       __ num & xor:
         a ^= num
       ____

@@ -28,7 +28,7 @@ class Solution(object
       pv = nums[p]
       nums[end], nums[p] = nums[p], nums[end]
       mid = start
-      for i in range(start, end
+      ___ i in range(start, end
         __ nums[i] >= pv:
           nums[i], nums[mid] = nums[mid], nums[i]
           mid += 1
@@ -65,8 +65,8 @@ class Solution(object
         v, _ = stack.pop()
       stack.append((v, p))
 
-    heap += [prices[p - 1] - prices[v] for v, p in stack]
+    heap += [prices[p - 1] - prices[v] ___ v, p in stack]
     __ le.(heap) < k:
-      r_ sum(heap)
+      r_ su.(heap)
     self.findKthLargest(heap, k)
-    r_ sum(heap[:k])
+    r_ su.(heap[:k])

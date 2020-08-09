@@ -41,12 +41,12 @@ class Solution:
             r_ ret
             
         counter = Counter(A[0])
-        for a in A[1:]:
+        ___ a in A[1:]:
             cur = Counter(a)
-            for c in string.ascii_lowercase:
+            ___ c in string.ascii_lowercase:
                 counter[c] = min(counter[c], cur[c])
 
-        for c in string.ascii_lowercase:
+        ___ c in string.ascii_lowercase:
             __ counter[c] > 0:
                 ret.extend([c] * counter[c])
 

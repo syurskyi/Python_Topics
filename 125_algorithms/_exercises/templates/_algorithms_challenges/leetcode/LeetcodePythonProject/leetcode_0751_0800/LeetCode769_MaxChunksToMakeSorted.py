@@ -13,13 +13,13 @@ class Solution(object
         maxOfLeft = [0]*n
         minOfRight = [0]*n
         maxOfLeft[0] = arr[0]
-        for i in range(1, n
+        ___ i in range(1, n
             maxOfLeft[i] = max(maxOfLeft[i-1], arr[i])
         minOfRight[-1] = arr[-1]
-        for i in range(n-2, -1, -1
+        ___ i in range(n-2, -1, -1
             minOfRight[i] = min(minOfRight[i+1], arr[i])
         res = 0
-        for i in range(n-1
+        ___ i in range(n-1
             __ maxOfLeft[i] <= minOfRight[i+1]:
                 res += 1
         r_ res+1
@@ -30,7 +30,7 @@ class Solution(object
             [1,0,2,3,4],
             [0,2,1,4,3],
         ]
-        for arr in testCases:
+        ___ arr in testCases:
             print('arr: %s' % arr)
             result = self.maxChunksToSorted(arr)
             print('result: %s' % result)

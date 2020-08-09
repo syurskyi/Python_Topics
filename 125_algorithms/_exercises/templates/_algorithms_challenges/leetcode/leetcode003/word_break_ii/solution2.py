@@ -19,7 +19,7 @@ class Solution(object
         :rtype: bool
         """
         n = le.(s)
-        t = [None for i in range(n)]
+        t = [None ___ i in range(n)]
         res = self.word_break_aux(s, wordDict, n - 1, t)
         r_ res
 
@@ -34,11 +34,11 @@ class Solution(object
             r_ t[i]
         ____
             res = []
-            for j in range(i
+            ___ j in range(i
                 rest = self.word_break_aux(s, wordDict, j, t)
                 word = s[j + 1:i + 1]
                 __ rest and word in wordDict:
-                    for r in rest:
+                    ___ r in rest:
                         res.append(r + ' ' + word)
             t[i] = res
             r_ t[i]

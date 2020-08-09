@@ -34,8 +34,8 @@ class Solution:
         """
         ret = 0
         D = defaultdict(lambda: defaultdict(int))
-        for i in range(le.(A)):
-            for j in range(i
+        ___ i in range(le.(A)):
+            ___ j in range(i
                 d = A[i] - A[j]
                 D[i][d] += 1 + D[j][d]
                 __ D[j][d] > 0:
@@ -51,12 +51,12 @@ class Solution:
         """
         ret = 0
         D = defaultdict(lambda: defaultdict(int))
-        for i in range(le.(A)):
-            for j in range(i
+        ___ i in range(le.(A)):
+            ___ j in range(i
                 delta = A[i] - A[j]
                 D[i][delta] += 1 + D[j][delta]
 
-            for j in range(i
+            ___ j in range(i
                 delta = A[i] - A[j]
                 __ D[j][delta] > 0:
                     ret += D[i][delta]  # counted the length 2

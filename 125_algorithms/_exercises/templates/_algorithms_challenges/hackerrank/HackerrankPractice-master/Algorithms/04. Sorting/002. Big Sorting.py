@@ -4,8 +4,8 @@
 
 n = int(input())
 arr = []
-for i in range(n
+___ i in range(n
     arr.append(input())
 arr.sort(key=int)
-for _ in arr:
+___ _ in arr:
     print(_)

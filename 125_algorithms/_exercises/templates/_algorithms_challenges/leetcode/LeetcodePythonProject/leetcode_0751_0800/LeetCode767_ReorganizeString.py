@@ -12,10 +12,10 @@ class Solution(object
         ______ heapq
         s = S
         hashmap = {}
-        for c in s:
+        ___ c in s:
             hashmap[c] = hashmap.get(c, 0)+1
         heap = []
-        for c, freq in hashmap.items(
+        ___ c, freq in hashmap.items(
             heapq.heappush(heap, [-freq, c])
         res = ''
         w___ heap:
@@ -38,7 +38,7 @@ class Solution(object
             "aab",
             'aaab',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.reorganizeString(s)
             print('result: %s' % result)

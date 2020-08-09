@@ -34,7 +34,7 @@ class Solution(object
             __ cur_val __ target:
                 ret.append(cur_str)
         ____
-            for i in xrange(pos, le.(num)):
+            ___ i in xrange(pos, le.(num)):
                 __ i != pos and num[pos] __ "0":
                     continue
                 nxt_val = int(num[pos:i+1])

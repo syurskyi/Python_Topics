@@ -34,7 +34,7 @@ class KthLargest:
         """
         self.h = []
         self.k = k
-        for n in nums:
+        ___ n in nums:
             self.add(n)
 
     ___ add(self, val: int) -> int:

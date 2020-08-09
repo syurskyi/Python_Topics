@@ -10,19 +10,19 @@ class Solution:
         pointer = ans
 
         carry = 0
-        sum = 0
+        su. = 0
 
         w___(l1!=None or l2!=None
-            sum = carry
+            su. = carry
             __(l1!=None
-                sum+=l1.val
+                su.+=l1.val
                 l1 = l1.next
             __(l2!=None
-                sum+=l2.val
+                su.+=l2.val
                 l2 = l2.val
             
-            carry = int(sum/10)
-            pointer.next  = ListNode(sum%10)
+            carry = int(su./10)
+            pointer.next  = ListNode(su.%10)
 
             pointer = pointer.next
         

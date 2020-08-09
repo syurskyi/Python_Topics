@@ -13,8 +13,8 @@ class Solution(object
             r_ 0
         m, n = le.(grid), le.(grid[0])
         maxArea = 0
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 maxArea = max(maxArea, self.bfs(grid, m, n, i, j))
         r_ maxArea
     
@@ -27,7 +27,7 @@ class Solution(object
         w___ queue:
             i, j = queue.pop(0)
             area += 1
-            for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
+            ___ x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
                 __ 0 <= x < m and 0 <= y < n and grid[x][y] __ 1:
                     queue.append((x, y))
                     grid[x][y] = -1
@@ -37,7 +37,7 @@ class Solution(object
         testCases = [
             [[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]],
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             result = self.maxAreaOfIsland(grid)
             print('result: %s' % result)
             print('-='*30+'-')

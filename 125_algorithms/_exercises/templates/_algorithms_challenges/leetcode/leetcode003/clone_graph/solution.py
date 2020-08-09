@@ -30,7 +30,7 @@ class Solution(object
             visited.add(node)
             cloned_node = d[node]
             cloned_neighbors = []
-            for neighbor in node.neighbors:
+            ___ neighbor in node.neighbors:
                 __ neighbor not in visited:
                     queue.append(neighbor)
                 __ neighbor not in d:

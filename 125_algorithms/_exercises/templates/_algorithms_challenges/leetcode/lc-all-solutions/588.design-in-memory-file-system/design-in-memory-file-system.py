@@ -27,7 +27,7 @@ class FileSystem(object
     __ not fd.isFolder:
       r_ [fd.name]
     files = []
-    for file in fd.childs:
+    ___ file in fd.childs:
       files.append(file)
     files.sort()
     r_ files
@@ -35,7 +35,7 @@ class FileSystem(object
   ___ lookup(self, path, isAutoCreate
     path = path.split("/")
     p = self.root
-    for name in path:
+    ___ name in path:
       __ not name:
         continue
       __ name not in p.childs:

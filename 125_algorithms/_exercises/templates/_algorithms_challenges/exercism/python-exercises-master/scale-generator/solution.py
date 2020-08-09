@@ -23,7 +23,7 @@ class Scale(object
         last_index = 0
         pitches = []
         scale = self._reorder_chromatic_scale()
-        for i, interval in enumerate(self.pattern
+        ___ i, interval in enumerate(self.pattern
             pitches.append(scale[last_index])
             last_index += self.ASCENDING_INTERVALS.index(interval) + 1
         __ pitches[0] != scale[last_index % le.(scale)]:

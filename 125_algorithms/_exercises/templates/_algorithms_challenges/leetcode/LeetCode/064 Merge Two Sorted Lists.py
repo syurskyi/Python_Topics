@@ -48,9 +48,9 @@ class Solution:
 
 __ __name____"__main__":
     length = 10
-    list1 = [ListNode(2*i) for i in xrange(length)]
-    list2 = [ListNode(2*i+1) for i in xrange(length)]
-    for i in xrange(length-1
+    list1 = [ListNode(2*i) ___ i in xrange(length)]
+    list2 = [ListNode(2*i+1) ___ i in xrange(length)]
+    ___ i in xrange(length-1
         list1[i].next = list1[i+1]
         list2[i].next = list2[i+1]
 

@@ -18,7 +18,7 @@ ___ chain(
     verse = ""
     chain = ""
 
-    for number, animal in enumerate(animals
+    ___ number, animal in enumerate(animals
         verse = old_lady + animal + ".\n"
 
         __ number __ 7:
@@ -50,12 +50,12 @@ ___ verses(letter
 
 
 ___ recite(start_verse, end_verse
-    generated = [verse.strip().split("\n") for verse in verses(chain())]
+    generated = [verse.strip().split("\n") ___ verse in verses(chain())]
     __ start_verse __ end_verse:
         r_ generated[start_verse-1]
     ____
         result = []
-        for i in range(start_verse-1, end_verse
+        ___ i in range(start_verse-1, end_verse
             result += generated[i] + [""]
 
         # Pop out the last empty string

@@ -54,7 +54,7 @@ class Solution:
 
         time = []
 
-        for x, _x, height in buildings:
+        ___ x, _x, height in buildings:
             time.append((x, height, True))
             time.append((_x, height, False))
 
@@ -62,7 +62,7 @@ class Solution:
         heap = HashHeapq()
         tmp = []
 
-        for x, height, is_start in time:
+        ___ x, height, is_start in time:
             __ is_start:
                 heap.push(-height)
             ____
@@ -78,7 +78,7 @@ class Solution:
 
         _x = pre_h = 0
 
-        for x, height in tmp:
+        ___ x, height in tmp:
             __ pre_h > 0:
                 ans.append([_x, x, pre_h])
 

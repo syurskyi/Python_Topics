@@ -17,11 +17,11 @@ class House:
 
     @classmethod
     ___ rhyme(cls
-        r_ "\n\n".join([cls.verse(i) for i in range(12)])
+        r_ "\n\n".join([cls.verse(i) ___ i in range(12)])
 
     @classmethod
     ___ verse(cls, verse_num
-        r_ "\n".join([_f for _f in cls.parts(verse_num) __ _f])
+        r_ "\n".join([_f ___ _f in cls.parts(verse_num) __ _f])
 
     @classmethod
     ___ parts(cls, verse_num
@@ -41,7 +41,7 @@ class House:
     @classmethod
     ___ middle(cls, verse_num
         __ verse_num >= 2:
-            r_ "\n".join([cls.middle_partial(num) for num in
+            r_ "\n".join([cls.middle_partial(num) ___ num in
                               range(verse_num - 1, 0, -1)])
 
     @classmethod

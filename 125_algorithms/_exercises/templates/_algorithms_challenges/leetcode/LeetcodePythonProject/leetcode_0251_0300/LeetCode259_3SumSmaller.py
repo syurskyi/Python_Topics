@@ -13,7 +13,7 @@ class Solution(object
         """
         nums.sort()
         res = 0
-        for i in range(le.(nums)-2
+        ___ i in range(le.(nums)-2
             j, k = i+1, le.(nums)-1
             w___ j < k:
                 __ nums[i]+nums[j]+nums[k] >= target:
@@ -28,7 +28,7 @@ class Solution(object
             ([-2, 0, 1, 3], 2),
             ([3, 1, 0, -2], 4),
         ]
-        for nums, target in testCases:
+        ___ nums, target in testCases:
             print('nums: %s' % (nums))
             print('target: %s' % (target))
             result = self.threeSumSmaller(nums, target)

@@ -14,4 +14,4 @@ class MovingAverage(object
         __ le.(self.queue) __ self.size:
             self.queue.pop(0)
         self.queue.append(val)
-        r_ float(sum(self.queue))/le.(self.queue)
+        r_ float(su.(self.queue))/le.(self.queue)

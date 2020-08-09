@@ -42,13 +42,13 @@ class Solution:
         m, n = le.(grid), le.(grid[0])
         row, cols = 0, [0] * n
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 # calculate bomb in cur section [x, 'WALL' | m) in col
                 __ x __ 0 or grid[x - 1][y] __ self.WALL:
                     cols[y] = 0
 
-                    for i in range(x, m
+                    ___ i in range(x, m
                         __ grid[i][y] __ self.WALL:
                             break
                         __ grid[i][y] __ self.ENEMY:
@@ -58,7 +58,7 @@ class Solution:
                 __ y __ 0 or grid[x][y - 1] __ self.WALL:
                     row = 0
 
-                    for i in range(y, n
+                    ___ i in range(y, n
                         __ grid[x][i] __ self.WALL:
                             break
                         __ grid[x][i] __ self.ENEMY:
@@ -88,8 +88,8 @@ class Solution:
         __ not grid or not grid[0]:
             r_ ans
 
-        for x in range(le.(grid)):
-            for y in range(le.(grid[0])):
+        ___ x in range(le.(grid)):
+            ___ y in range(le.(grid[0])):
                 __ grid[x][y] __ self.EMPTY:
                     ans = max(
                         ans,
@@ -103,28 +103,28 @@ class Solution:
         cnt = 0
 
         # up
-        for x in range(i, -1, -1
+        ___ x in range(i, -1, -1
             __ grid[x][j] __ self.WALL:
                 break
             __ grid[x][j] __ self.ENEMY:
                 cnt += 1
 
         # down
-        for x in range(i, m
+        ___ x in range(i, m
             __ grid[x][j] __ self.WALL:
                 break
             __ grid[x][j] __ self.ENEMY:
                 cnt += 1
 
         # left
-        for y in range(j, -1, -1
+        ___ y in range(j, -1, -1
             __ grid[i][y] __ self.WALL:
                 break
             __ grid[i][y] __ self.ENEMY:
                 cnt += 1
 
         # right
-        for y in range(j, n
+        ___ y in range(j, n
             __ grid[i][y] __ self.WALL:
                 break
             __ grid[i][y] __ self.ENEMY:

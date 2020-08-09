@@ -26,14 +26,14 @@ class Solution(object
         :rtype: bool
         """
         d = {}
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ c not in d:
                 d[c] = t[i]
             ____
                 __ d[c] != t[i]:
                     r_ False
         d = {}
-        for i, c in enumerate(t
+        ___ i, c in enumerate(t
             __ c not in d:
                 d[c] = s[i]
             ____

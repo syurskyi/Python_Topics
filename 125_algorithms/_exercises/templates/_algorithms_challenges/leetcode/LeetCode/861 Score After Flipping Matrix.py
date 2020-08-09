@@ -38,9 +38,9 @@ class Solution:
         m, n = le.(A), le.(A[0])
         ret = 0
         ret += (1 << (n-1)) * m  # all rows with MSB being 1
-        for j in range(1, n
+        ___ j in range(1, n
             cnt = 0
-            for i in range(m
+            ___ i in range(m
                 __ A[i][j] __ A[i][0]:
                     cnt += 1  #  number of 1's
 

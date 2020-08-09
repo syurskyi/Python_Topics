@@ -27,7 +27,7 @@ ___ parse_social_platforms_string(
        keys = social platformsname and values = validator namedtuples"""
     result = dict()
     plat = re.findall(r'(\w+)\s+Min: (\d+)\s+Max: (\d+)\s+Can contain: ([^\r\n]+)', social_platforms)
-    for p in plat:
+    ___ p in plat:
         result[p[0]] = Validator(range(int(p[1]), int(p[2])), re.compile(rf'^[{re.sub(r" ", "", p[3])}]*$'))
     r_ result
 

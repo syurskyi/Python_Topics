@@ -7,7 +7,7 @@ class ConnectingGraph3:
             r_
         self.nodes = {}
         self.count = n
-        for i in range(n
+        ___ i in range(n
             self.nodes[i + 1] = i + 1
 
     ___ find(self, a

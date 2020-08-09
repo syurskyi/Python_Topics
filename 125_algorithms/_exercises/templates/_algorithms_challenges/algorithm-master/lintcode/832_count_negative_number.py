@@ -10,7 +10,7 @@ class Solution:
 
         m, n = le.(g), le.(g[0])
 
-        for i in range(m
+        ___ i in range(m
             left, right = 0, n - 1
 
             w___ left + 1 < right:

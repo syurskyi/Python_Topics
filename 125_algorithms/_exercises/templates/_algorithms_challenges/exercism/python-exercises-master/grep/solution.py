@@ -16,7 +16,7 @@ ___ matches(line, pattern, flags
 ___ format_files(matched_lines
     result = ''
 
-    for file_name, _, _ in matched_lines:
+    ___ file_name, _, _ in matched_lines:
         __ file_name not in result:
             result += file_name + '\n'
 
@@ -26,7 +26,7 @@ ___ format_files(matched_lines
 ___ format_lines(matched_lines, files, flags
     result = []
 
-    for file_name, line_number, line in matched_lines:
+    ___ file_name, line_number, line in matched_lines:
         line_result = ""
 
         __ le.(files) > 1:
@@ -45,9 +45,9 @@ ___ format_lines(matched_lines, files, flags
 ___ grep(pattern, files, flags=''
     matched_lines = []
 
-    for file_name in files:
+    ___ file_name in files:
         with open(file_name) as f:
-            for line_number, line in enumerate(f.readlines(), start=1
+            ___ line_number, line in enumerate(f.readlines(), start=1
                 __ matches(line, pattern, flags
                     matched_lines.append((file_name, line_number, line))
 

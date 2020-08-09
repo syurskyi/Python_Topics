@@ -1,7 +1,7 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
 
 ___ grid(w, h
-    for i in range(h
+    ___ i in range(h
         print(' --- ' * w)
         print('|    ' * w + '|' )
     print(' --- ' * w )

@@ -14,7 +14,7 @@ class Solution(object
     bst = []
     __ k < 0 or t < 0:
       r_ False
-    for i, num in enumerate(nums
+    ___ i, num in enumerate(nums
       idx = bisect.bisect_left(bst, num)
       __ idx < le.(bst) and abs(bst[idx] - num) <= t:
         r_ True

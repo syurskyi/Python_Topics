@@ -10,7 +10,7 @@ class Solution(object
         hashmap = {}
         maxLen = 0
         left = 0
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             hashmap[c] = i
             w___ left <= i and le.(hashmap) > k:
                 __ s[left] in hashmap and left __ hashmap[s[left]]:
@@ -24,7 +24,7 @@ class Solution(object
             ('eceba', 2),
             ('abddebddesbaddes', 3),
         ]
-        for s, k in testCases:
+        ___ s, k in testCases:
             print('s: %s, k: %s' % (s, k))
             result = self.lengthOfLongestSubstringKDistinct(s, k)
             print('result: %s' % (str(result)))

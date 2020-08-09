@@ -11,7 +11,7 @@ class Solution:
 
         N = {}
 
-        for s in S:
+        ___ s in S:
             cur, nxt = s.split(' -> ')
             __ cur not in N:
                 N[cur] = set()
@@ -25,12 +25,12 @@ class Solution:
         __ s __ end:
             r_ True
 
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             __ (not ord('A') <= ord(s[i]) <= ord('Z') or
                 s[i] not in N
                 continue
 
-            for _s in N[s[i]]:
+            ___ _s in N[s[i]]:
                 res = self.dfs(N, end, s[:i] + _s + s[i + 1:])
                 __ res:
                     r_ True

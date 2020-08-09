@@ -1,5 +1,5 @@
 #accept the range
-for i in range(int(input())):
+___ i in range(int(input())):
     #accept the random numbers to be converted to double dice value
     a,b = list(map(int,input().split()))
     #calculate the double dice value

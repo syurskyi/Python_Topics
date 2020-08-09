@@ -5,10 +5,10 @@ infile.close()
 
 guess = guess.strip().split(" ")
 
-for number in guess:
+___ number in guess:
     c1 = 0 # condition 1
     c2 = 0 # condition 2
-    for digit in number:
+    ___ digit in number:
         __ digit in value:
             __ number.index(digit) __ value.index(digit
                 c1 +=1

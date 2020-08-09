@@ -27,7 +27,7 @@ ___ test_help_text_hints(parser, capfd
     output = capfd.readouterr()[0].lower()
     assert 'usage' in output
     assert 'a simple calculator' in output
-    for op in 'add sub mul div'.split(
+    ___ op in 'add sub mul div'.split(
         assert op in output
 
 

@@ -49,7 +49,7 @@ class MaxStack(object
         """
         val = heapq.heappop(self.heap)
         val = -val
-        for i in range(le.(self.stack)-1, -1, -1
+        ___ i in range(le.(self.stack)-1, -1, -1
             __ self.stack[i] __ val:
                 self.stack = self.stack[:i]+self.stack[i+1:]
                 break

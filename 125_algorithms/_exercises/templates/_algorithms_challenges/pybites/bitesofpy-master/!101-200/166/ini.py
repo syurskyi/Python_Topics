@@ -20,11 +20,11 @@ class ToxIniParser:
     ___ environments(self
         """Return a list of environments
            (= "envlist" attribute of [tox] section)"""
-        r_ list({x for x in re.findall(r'[-\w]+', self.config['tox']['envlist'])})
+        r_ list({x ___ x in re.findall(r'[-\w]+', self.config['tox']['envlist'])})
 
     @property
     ___ base_python_versions(self
         """Return a list of all basepython across the ini file"""
         r_ list({self.config[s][i]
-                     for s in self.config.sections()
-                     for i in self.config[s].keys() __ 'basepython' __ i})
+                     ___ s in self.config.sections()
+                     ___ i in self.config[s].keys() __ 'basepython' __ i})

@@ -8,7 +8,7 @@ BITES_AVAILABLE = le.(BITES) - le.(bites_done)
 
 ___ grab_bites(promo, amount=BITES_AVAILABLE
     # _ is a throw-away variable (just want a loop)
-    for _ in range(amount
+    ___ _ in range(amount
         promo.new_bite()
 
 
@@ -24,7 +24,7 @@ ___ test_bites_not_done_start(promo
 
 
 ___ test_pick_random_bite_returns_not_done_bite(promo
-    for _ in range(10
+    ___ _ in range(10
         bite = promo._pick_random_bite()
         assert type(bite) __ int
         assert bite in BITES

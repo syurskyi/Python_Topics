@@ -35,9 +35,9 @@ class Solution(object
             TreeNode(2, TreeNode(1), TreeNode(1)),
             TreeNode(1, TreeNode(2, TreeNode(4)), TreeNode(3, TreeNode(2, TreeNode(4)), TreeNode(4))),
         ]
-        for root in testCases:
+        ___ root in testCases:
             res = self.findDuplicateSubtrees(root)
-            print('result: %s' % [node.val for node in res])
+            print('result: %s' % [node.val ___ node in res])
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

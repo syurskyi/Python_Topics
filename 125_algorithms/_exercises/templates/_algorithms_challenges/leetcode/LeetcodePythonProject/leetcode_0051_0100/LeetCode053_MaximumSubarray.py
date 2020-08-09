@@ -14,7 +14,7 @@ class Solution(object
         dp = [0]*n
         dp[0] = nums[0]
         maxVal = dp[0]
-        for i in range(1, n
+        ___ i in range(1, n
             dp[i] = max(nums[i], dp[i-1]+nums[i])
             maxVal = max(maxVal, dp[i])
         r_ maxVal
@@ -31,7 +31,7 @@ class Solution(object
         testCases = [
             [-2,1,-3,4,-1,2,1,-5,4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.maxSubArray(nums)
             print('result: %s' % (result))

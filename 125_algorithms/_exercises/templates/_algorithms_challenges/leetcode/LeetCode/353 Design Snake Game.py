@@ -63,5 +63,5 @@ class SnakeGame(object
 
 __ __name__ __ "__main__":
     game = SnakeGame(3, 2, [[1, 2], [0, 1]])
-    for char, expect in zip('RDRULU', [0, 0, 1, 1, 2, -1]
+    ___ char, expect in zip('RDRULU', [0, 0, 1, 1, 2, -1]
         assert game.move(char) __ expect

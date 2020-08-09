@@ -27,7 +27,7 @@ class Solution(object
             'abcd',
             'aacecabccaa',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.shortestPalindrome(s)
             print('result: %s' % (result))

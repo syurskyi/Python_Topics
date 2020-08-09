@@ -66,7 +66,7 @@ class RangeModule_own(object
         """
         newInterval = Interval(left, right)
         res = []
-        for interval in self.intervals:
+        ___ interval in self.intervals:
             __ newInterval.right < interval.left:
                 res.append(newInterval)
                 newInterval = interval
@@ -105,7 +105,7 @@ class RangeModule_own(object
         """
         newInterval = Interval(left, right)
         res = []
-        for interval in self.intervals:
+        ___ interval in self.intervals:
             __ newInterval.right >= interval.right and newInterval.left <= interval.left:
                 continue
             ____ newInterval.right <= interval.right and newInterval.left >= interval.left:

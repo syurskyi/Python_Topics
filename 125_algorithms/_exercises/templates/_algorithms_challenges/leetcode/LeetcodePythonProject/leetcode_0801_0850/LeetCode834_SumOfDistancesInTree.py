@@ -11,9 +11,9 @@ class Solution(object
         :rtype: List[int]
         """
         graph = {}
-        for i in range(N
+        ___ i in range(N
             graph[i] = set()
-        for i, j in edges:
+        ___ i, j in edges:
             graph[i].add(j)
             graph[j].add(i)
         res = [0]*N
@@ -24,7 +24,7 @@ class Solution(object
     
     ___ dfs(self, root, visited, graph, res, count
         visited.add(root)
-        for i in graph[root]:
+        ___ i in graph[root]:
             __ i not in visited:
                 self.dfs(i, visited, graph, res, count)
                 count[root] += count[i]
@@ -33,7 +33,7 @@ class Solution(object
     
     ___ dfs2(self, root, visited, graph, res, count, N
         visited.add(root)
-        for i in graph[root]:
+        ___ i in graph[root]:
             __ i not in visited:
                 res[i] = res[root] - count[i] + N - count[i]
                 self.dfs2(i, visited, graph, res, count, N)
@@ -49,13 +49,13 @@ class Solution(object
         """
         n = N
         graph = {}
-        for i in range(n
+        ___ i in range(n
             graph[i] = []
-        for edge in edges:
+        ___ edge in edges:
             graph[edge[0]].append(edge[1])
             graph[edge[1]].append(edge[0])
         res = []
-        for i in range(n
+        ___ i in range(n
             res.append(self.bfs(graph, i))
         r_ res
     
@@ -66,9 +66,9 @@ class Solution(object
         level = 1
         w___ queue:
             size = le.(queue)
-            for _ in range(size
+            ___ _ in range(size
                 node = queue.pop(0)
-                for node0 in graph[node]:
+                ___ node0 in graph[node]:
                     __ node0 not in visited:
                         res += level
                         visited.add(node0)
@@ -83,7 +83,7 @@ class Solution(object
                 [[0, 1], [0, 2], [2, 3], [2, 4], [2, 5]],
             ],
         ]
-        for n, edges in testCases:
+        ___ n, edges in testCases:
             print('n: %s' % n)
             print('edges: %s' % edges)
             result = self.sumOfDistancesInTree(n, edges)

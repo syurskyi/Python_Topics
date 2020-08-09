@@ -4,7 +4,7 @@ class Solution:
     ___ simplifyPath(self, path
         ps = path.split('/')[1:]
         res = []
-        for d in ps:
+        ___ d in ps:
             __ d __ '..':
                 __ res:
                     res.pop()

@@ -38,7 +38,7 @@ class Solution:
         A.sort()
         ret = 0
         prev = A[0]
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             target = prev + 1
             __ A[i] < target:
                 # change A[i] to target
@@ -59,7 +59,7 @@ class Solution:
         counter = Counter(A)
         q = []
         ret = 0
-        for i in range(40000 * 2
+        ___ i in range(40000 * 2
             __ counter[i] > 1:
                 q.extend([i] * (counter[i] - 1))
             ____ q and counter[i] __ 0:
@@ -80,7 +80,7 @@ class Solution:
         A.append(1 << 31 - 1)  # append max
         demand = 0
         supply = 0
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             __ A[i] __ A[i-1]:
                 demand += 1
                 # dup_sum += A[i-1]  # error

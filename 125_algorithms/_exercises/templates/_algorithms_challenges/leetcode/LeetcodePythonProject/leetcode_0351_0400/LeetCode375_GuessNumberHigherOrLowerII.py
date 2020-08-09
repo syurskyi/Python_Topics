@@ -6,11 +6,11 @@ Created on Apr 1, 2017
 
 class Solution(object
     ___ getMoneyAmount(self, n
-        dp = [[0]*(n+1) for _ in range(n+1)]
-        for j in range(2, n+1
-            for i in range(j-1, 0, -1
+        dp = [[0]*(n+1) ___ _ in range(n+1)]
+        ___ j in range(2, n+1
+            ___ i in range(j-1, 0, -1
                 globalMin = float('inf')
-                for k in range(i+1, j
+                ___ k in range(i+1, j
                     localMax = k+max(dp[i][k-1], dp[k+1][j])
                     globalMin = min(globalMin, localMax)
                 __ i+1 __ j:
@@ -23,7 +23,7 @@ class Solution(object
         testCases = [
             10,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.getMoneyAmount(n)
             print('result: %s' % result)

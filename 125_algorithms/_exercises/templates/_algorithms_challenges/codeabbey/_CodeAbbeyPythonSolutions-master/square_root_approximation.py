@@ -9,7 +9,7 @@ ___ get_sqrt(num, r, step
         r = (r+d)/2
         r_ get_sqrt(num,r,step-1)
         
-for i in range(amount_values
+___ i in range(amount_values
     r = 1
     num, step = map(int, input().split())
     results.append(get_sqrt(num,r,step))

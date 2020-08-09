@@ -14,7 +14,7 @@ class CheckBrackets:
 
     ___ is_paired(self
         stack = []
-        for bracket in self.get_brackets(self.inp
+        ___ bracket in self.get_brackets(self.inp
             __ self.is_opening_bracket(bracket
                 stack.append(bracket)
             ____ self.is_closing_bracket(bracket) and self.closes_existing_bracket(bracket, stack
@@ -31,7 +31,7 @@ class CheckBrackets:
         r_ self.BRACKETS[opener] __ closer
 
     ___ get_brackets(self, string
-        r_ [char for char in string __ self.is_bracket(char)]
+        r_ [char ___ char in string __ self.is_bracket(char)]
 
     ___ is_opening_bracket(self, bracket
         r_ bracket in self.OPENING_BRACKET

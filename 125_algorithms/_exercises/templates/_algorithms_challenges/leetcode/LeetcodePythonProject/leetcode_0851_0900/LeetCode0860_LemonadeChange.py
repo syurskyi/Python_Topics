@@ -14,7 +14,7 @@ class Solution(object
             10:0,
             20:0,
         }
-        for b in bills:
+        ___ b in bills:
             __ b __ 10:
                 __ hashmap[5] >= 1:
                     hashmap[5] -= 1
@@ -43,7 +43,7 @@ class Solution(object
 #             [5,5,5,10,20],
             [5, 5, 10, 10, 20],
         ]
-        for bills in testCases:
+        ___ bills in testCases:
             res = self.lemonadeChange(bills)
             print('res: %s' % res)
             print('-='*30+'-')

@@ -12,7 +12,7 @@ class TreeNode(object
 class BinarySearchTree(object
     ___ __init__(self, tree_data
         self.root = None
-        for data in tree_data:
+        ___ data in tree_data:
             self.add(data)
 
     ___ add(self, data

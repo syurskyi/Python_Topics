@@ -17,9 +17,9 @@ class Solution(object
         :rtype: bool
         """
         # Check rows
-        for i in range(9
+        ___ i in range(9
             d = {}
-            for j in range(9
+            ___ j in range(9
                 __ board[i][j] __ '.':
                     pass
                 ____ board[i][j] in d:
@@ -27,9 +27,9 @@ class Solution(object
                 ____
                     d[board[i][j]] = True
         # Check columns
-        for j in range(9
+        ___ j in range(9
             d = {}
-            for i in range(9
+            ___ i in range(9
                 __ board[i][j] __ '.':
                     pass
                 ____ board[i][j] in d:
@@ -37,11 +37,11 @@ class Solution(object
                 ____
                     d[board[i][j]] = True
         # Check sub-boxes
-        for m in range(0, 9, 3
-            for n in range(0, 9, 3
+        ___ m in range(0, 9, 3
+            ___ n in range(0, 9, 3
                 d = {}
-                for i in range(n, n + 3
-                    for j in range(m, m + 3
+                ___ i in range(n, n + 3
+                    ___ j in range(m, m + 3
                         __ board[i][j] __ '.':
                             pass
                         ____ board[i][j] in d:

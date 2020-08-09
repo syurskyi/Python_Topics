@@ -18,7 +18,7 @@ class Solution(object
         __ not prices:
             r_ 0
         max_profit = 0
-        for i in range(1, le.(prices)):
+        ___ i in range(1, le.(prices)):
             __ prices[i] > prices[i - 1]:
                 max_profit += prices[i] - prices[i - 1]
         r_ max_profit

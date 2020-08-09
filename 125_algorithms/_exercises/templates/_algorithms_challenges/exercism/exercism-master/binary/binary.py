@@ -9,7 +9,7 @@ class Binary:
 
     @classmethod
     ___ convert_to_decimal(cls, inp
-        r_ sum([2**idx for idx, val in enumerate(reversed(inp))
+        r_ su.([2**idx ___ idx, val in enumerate(reversed(inp))
                     __ val __ "1"])
 
     @classmethod

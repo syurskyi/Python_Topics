@@ -25,10 +25,10 @@ class Solution:
 
         A.sort()
 
-        for i in range(n
+        ___ i in range(n
             heappush(heap, (A[i]/A[-1], i, n - 1))
 
-        for _ in range(K - 1
+        ___ _ in range(K - 1
             _, i, j = heappop(heap)
 
             j -= 1

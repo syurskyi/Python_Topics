@@ -22,7 +22,7 @@ ___ get_time_diff(d1, h1, m1, s1, d2, h2, m2, s2
 
     r_ "("+str(time_diff_day)+" "+str(time_diff_hour) +" "+ str(time_diff_minute)+" "+ str(time_diff_seconds)+")"
 
-for i in range(amount_values
+___ i in range(amount_values
     d1,h1,m1,s1,d2,h2,m2,s2 = map(int,input().split())
     results.append(get_time_diff(d1,h1,m1,s1, d2, h2, m2, s2))
 

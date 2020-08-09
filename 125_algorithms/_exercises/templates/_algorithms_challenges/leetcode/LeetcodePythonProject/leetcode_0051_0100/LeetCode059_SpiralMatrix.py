@@ -11,30 +11,30 @@ class Solution(object
         :rtype: List[List[int]]
         """
         __ n <= 0: r_ []
-        result = [[0]*n for i in range(n)]
+        result = [[0]*n ___ i in range(n)]
         left, right, top, down = 0, n-1, 0, n-1
         count = 1
         w___ left<=right and top<=down:
-            for i in range(left, right+1
+            ___ i in range(left, right+1
                 result[top][i] = count
                 count+=1
             top += 1
-            for i in range(top, down+1
+            ___ i in range(top, down+1
                 result[i][right] = count
                 count+=1
             right -= 1
-            for i in range(right, left-1, -1
+            ___ i in range(right, left-1, -1
                 result[down][i] = count
                 count+=1
             down -= 1
-            for i in range(down, top-1, -1
+            ___ i in range(down, top-1, -1
                 result[i][left] = count
                 count+=1
             left += 1
         r_ result
     
     ___ test(self
-        for n in range(1, 5
+        ___ n in range(1, 5
             print('n: %s' % n)
             matrix = self.generateMatrix(n)
             print('matrix: %s' % matrix)

@@ -14,9 +14,9 @@ class Solution(object
         res = 0
         arr.sort()
         hashmap = {}
-        for i in range(le.(arr)):
+        ___ i in range(le.(arr)):
             hashmap[arr[i]] = 1
-            for j in range(i
+            ___ j in range(i
                 __ arr[j] in hashmap and arr[i]%arr[j]__0 and\
                     arr[i]/arr[j] in hashmap:
                     hashmap[arr[i]] += hashmap[arr[j]]*hashmap[(arr[i]/arr[j])]
@@ -28,7 +28,7 @@ class Solution(object
             [2, 4],
             [2, 4, 5, 10],
         ]
-        for arr in testCases:
+        ___ arr in testCases:
             print('arr: %s' % arr)
             result = self.numFactoredBinaryTrees(arr)
             print('result: %s' % result)

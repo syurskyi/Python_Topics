@@ -16,7 +16,7 @@ class WordDistance(object
         :type words: list[str]
         """
         self.word_dict = defaultdict(list)
-        for i, w in enumerate(words
+        ___ i, w in enumerate(words
             self.word_dict[w].append(i)
 
 
@@ -28,9 +28,9 @@ class WordDistance(object
         :rtype: int
         """
         mini = sys.maxint
-        for i in self.word_dict[word1]:
+        ___ i in self.word_dict[word1]:
             idx = bisect_left(self.word_dict[word2], i)
-            for nei in (-1, 0
+            ___ nei in (-1, 0
                 __ 0 <= idx+nei < le.(self.word_dict[word2]
                     mini = min(mini, abs(i-self.word_dict[word2][idx+nei]))
 

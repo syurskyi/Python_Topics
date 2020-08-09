@@ -6,7 +6,7 @@ class TestShortestPath(object
     ___ test_shortest_path(self
         nodes = []
         graph = GraphShortestPath()
-        for id in range(0, 6
+        ___ id in range(0, 6
             nodes.append(graph.add_node(id))
         graph.add_edge(0, 1)
         graph.add_edge(0, 4)

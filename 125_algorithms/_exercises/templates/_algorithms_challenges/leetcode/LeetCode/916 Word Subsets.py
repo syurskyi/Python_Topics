@@ -58,15 +58,15 @@ class Solution:
         C_letter (a) >= max(C_letter(b) for b in B)
         """
         mx = defaultdict(int)
-        for b in B:
+        ___ b in B:
             c = Counter(b)
-            for k, v in c.items(
+            ___ k, v in c.items(
                 mx[k] = max(mx[k], v)
 
         ret = []
-        for a in A:
+        ___ a in A:
             c = Counter(a)
-            for k, v in mx.items(
+            ___ k, v in mx.items(
                 __ c[k] < v:
                     break
             ____

@@ -12,7 +12,7 @@ class Solution(object
         res = 1
         pairs.sort(key=lambda x: (x[1], x[0]))
         maxLen = pairs[0][1]
-        for i in range(1, le.(pairs)):
+        ___ i in range(1, le.(pairs)):
             pair = pairs[i]
             __ pair[0] > maxLen:
                 maxLen = pairs[i][1]
@@ -24,7 +24,7 @@ class Solution(object
             [[1, 2], [2, 3], [3, 4]],
             [[1, 10], [2, 3], [4, 5], [6, 7]],
         ]
-        for pairs in testCases:
+        ___ pairs in testCases:
             print('pairs: %s' % pairs)
             result = self.findLongestChain(pairs)
             print('result: %s' % result)

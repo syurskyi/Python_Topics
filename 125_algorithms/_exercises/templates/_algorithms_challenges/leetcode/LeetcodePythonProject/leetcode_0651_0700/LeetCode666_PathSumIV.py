@@ -11,7 +11,7 @@ class Solution(object
         """
         __ not nums: r_ 0
         hashmap = {}
-        for num in nums:
+        ___ num in nums:
             key = num//10
             value = num%10
             hashmap[key] = value
@@ -39,7 +39,7 @@ class Solution(object
             [113, 221],
             [111,217,221,315,415],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.pathSum(nums)
             print('result: %s' % result)

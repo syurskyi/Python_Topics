@@ -41,8 +41,8 @@ class Solution:
             r_
         F = defaultdict(lambda: defaultdict(int))
         F[0][0] = 1
-        for i in range(le.(A)):
-            for k in F[i].keys(  # F[i] for A[:i]
+        ___ i in range(le.(A)):
+            ___ k in F[i].keys(  # F[i] for A[:i]
                 F[i+1][k-A[i]] += F[i][k]
                 F[i+1][k+A[i]] += F[i][k]
 

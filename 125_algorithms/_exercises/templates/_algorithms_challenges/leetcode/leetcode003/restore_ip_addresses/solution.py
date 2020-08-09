@@ -26,7 +26,7 @@ class Solution:
                 res.append('.'.join(cand))
         ____
             k = min(3, le.(s))  # Ensures s[:j + 1] won't be duplicate
-            for j in range(k
+            ___ j in range(k
                 b = s[:j + 1]
                 __ self.is_valid_byte(b
                     cand.append(b)

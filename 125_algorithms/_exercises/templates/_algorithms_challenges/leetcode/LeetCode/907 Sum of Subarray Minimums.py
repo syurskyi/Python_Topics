@@ -47,11 +47,11 @@ class Solution:
         R[i] records the index of n, default le.(A)
         """
         n = le.(A)
-        L = [-1 for _ in A]
-        R = [n for _ in A]
+        L = [-1 ___ _ in A]
+        R = [n ___ _ in A]
 
         stk = []
-        for i in range(n
+        ___ i in range(n
             w___ stk and A[stk[-1]] >= A[i]:
                 stk.pop()
 
@@ -60,7 +60,7 @@ class Solution:
             stk.append(i)
 
         stk = []
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             # avoid double count when equal, attribtue to leftmost duplicate
             w___ stk and A[stk[-1]] > A[i]:
                 stk.pop()
@@ -70,7 +70,7 @@ class Solution:
             stk.append(i)
 
         ret = 0
-        for i in range(n
+        ___ i in range(n
             ret += (
                 A[i] * (i - L[i]) * (R[i] - i)
             )
@@ -88,7 +88,7 @@ class Solution:
         stk = []
         A = [-float('inf')] + A + [-float('inf')]
         ret = 0
-        for i, a in enumerate(A
+        ___ i, a in enumerate(A
             w___ stk and A[stk[-1]] > a:
                 h = stk.pop()
                 # record for h

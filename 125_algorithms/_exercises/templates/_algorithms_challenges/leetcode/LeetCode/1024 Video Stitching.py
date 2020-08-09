@@ -77,14 +77,14 @@ class Solution:
         """
         gready take the max coverage?
         """
-        A = [(s, -e, s, e) for s, e in clips]
+        A = [(s, -e, s, e) ___ s, e in clips]
         A.sort()
         ret = 1
         _, _, prev_s, prev_e = A[0]
         __ prev_s > 0:
             r_ False
 
-        for _, _, s, e in A[1:]:
+        ___ _, _, s, e in A[1:]:
             __ s <= prev_e and e > prev_e:
                 prev_e = e
                 ret += 1

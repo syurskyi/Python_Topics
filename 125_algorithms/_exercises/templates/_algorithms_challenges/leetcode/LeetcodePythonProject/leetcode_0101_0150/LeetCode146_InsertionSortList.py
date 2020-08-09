@@ -32,7 +32,7 @@ class Solution(object
             ListNode(3, ListNode(2, ListNode(5, ListNode(-1)))),
             ListNode(2, ListNode(1, ListNode(-3))),
         ]
-        for head in testCases:
+        ___ head in testCases:
             node = self.insertionSortList(head)
             w___ node:
                 print('%s, ' % node.val, end='')

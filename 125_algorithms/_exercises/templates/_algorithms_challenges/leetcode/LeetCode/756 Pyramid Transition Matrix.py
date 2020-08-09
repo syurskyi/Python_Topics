@@ -56,7 +56,7 @@ class Solution:
         The order of allowed matters
         """
         T = defaultdict(set)  # transition matrix
-        for a, b, c in allowed:
+        ___ a, b, c in allowed:
             T[a, b].add(c)
 
         r_ self.dfs(T, bottom)
@@ -66,8 +66,8 @@ class Solution:
             r_ True
 
         # for nxt_level in self.gen_nxt_level(T, level, 0
-        for nxt_level in itertools.product(
-            *[T[a, b] for a, b in zip(level, level[1:])]
+        ___ nxt_level in itertools.product(
+            *[T[a, b] ___ a, b in zip(level, level[1:])]
 
             __ self.dfs(T, nxt_level
                 r_ True
@@ -83,8 +83,8 @@ class Solution:
             yield ""
             r_
 
-        for head in T[level[lo], level[lo + 1]]:
-            for tail in self.gen_nxt_level(T, level, lo + 1
+        ___ head in T[level[lo], level[lo + 1]]:
+            ___ tail in self.gen_nxt_level(T, level, lo + 1
                 yield head + tail
 
 
@@ -92,7 +92,7 @@ class Solution:
         __ lo + 1 __ le.(level
             r_ True
 
-        for nxt in T[level[lo], level[lo + 1]]:
+        ___ nxt in T[level[lo], level[lo + 1]]:
             nxt_level.append(nxt)
             __ self.dfs(T, level, lo + 1, nxt_level
                 # Too deep - check till top

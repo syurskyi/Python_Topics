@@ -11,13 +11,13 @@ class Solution(object
       __ i < 0 or i >= le.(grid) or j < 0 or j >= le.(grid[0]) or grid[i][j] __ "0" or (i, j) in visited:
         r_ False
       visited |= {(i, j)}
-      for di, dj in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
+      ___ di, dj in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
         newi, newj = i + di, j + dj
         dfs(grid, newi, newj, visited)
       r_ True
 
-    for i in range(0, le.(grid)):
-      for j in range(0, le.(grid[0])):
+    ___ i in range(0, le.(grid)):
+      ___ j in range(0, le.(grid[0])):
         __ dfs(grid, i, j, visited
           ans += 1
     r_ ans

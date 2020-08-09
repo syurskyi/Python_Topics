@@ -11,7 +11,7 @@ class Solution(object
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         colors = [0]*3
-        for num in nums:
+        ___ num in nums:
             colors[num]+=1
         i, j = 0, 0
         w___ j < 3:
@@ -26,7 +26,7 @@ class Solution(object
         testCases = [
             [2, 1, 0, 0, 1, 2, 2, 1],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             self.sortColors(nums)
             print('After sort')

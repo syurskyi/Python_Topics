@@ -37,13 +37,13 @@ class Solution:
         # in_ret = set()
         ret = set()
         cur = 0
-        for i in xrange(10
+        ___ i in xrange(10
             cur <<= 2
             cur &= 0xFFFFF
             cur += s[i]
         h.add(cur)
 
-        for i in xrange(10, le.(s)):
+        ___ i in xrange(10, le.(s)):
             cur <<= 2
             cur &= 0xFFFFF  # 10 * 2 = 20 position
             cur += s[i]
@@ -62,7 +62,7 @@ class Solution:
             3: "T"
         }
         ret = []
-        for i in xrange(10
+        ___ i in xrange(10
             ret.append(dic[s%4])
             s >>= 2
 

@@ -25,5 +25,5 @@ class Solution:
 
         r_ any(
             matrix[mid // n][mid % n] __ target
-            for mid in (left, right)
+            ___ mid in (left, right)
         )

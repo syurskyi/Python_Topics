@@ -8,11 +8,11 @@ class Solution(object
     ___ canCross(self, stones
         __ not stones: r_ False
         hashmap = {}
-        for stone in stones:
+        ___ stone in stones:
             hashmap[stone] = set()
         hashmap[0] = set([1])
-        for stone in stones:
-            for step in hashmap[stone]:
+        ___ stone in stones:
+            ___ step in hashmap[stone]:
                 reach = step+stone
                 __ reach __ stones[-1]:
                     r_ True
@@ -28,7 +28,7 @@ class Solution(object
             [0,1,3,5,6,8,12,17], # True
             [0,1,2,3,4,8,9,11], # False
         ]
-        for stones in testCases:
+        ___ stones in testCases:
             print('stones: %s' % stones)
             result= self.canCross(stones)
             print('result: %s' % result)

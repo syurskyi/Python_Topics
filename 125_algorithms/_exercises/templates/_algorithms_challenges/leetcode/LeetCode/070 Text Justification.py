@@ -64,17 +64,17 @@ class Solution:
 
     ___ distribute_space(self, L, result
         new_result = []
-        for ind, line in enumerate(result
+        ___ ind, line in enumerate(result
             word_cnt = le.(line)
             str_builder = []
-            space_cnt = L-sum(le.(word) for word in line)
+            space_cnt = L-su.(le.(word) ___ word in line)
             hole_cnt = word_cnt-1
             __ ind<le.(result)-1:
                 __ hole_cnt>0:
                     space = space_cnt/hole_cnt
                     remain = space_cnt%hole_cnt
 
-                    for word in line[:-1]:
+                    ___ word in line[:-1]:
                         str_builder.append(word)
                         str_builder.append(" "*space)
                         __ remain>0:

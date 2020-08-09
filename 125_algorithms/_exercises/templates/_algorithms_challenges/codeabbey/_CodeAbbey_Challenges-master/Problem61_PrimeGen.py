@@ -8,9 +8,9 @@ ______ time
 ## TWO METHODS: Sieve of Eratosthenes or Trial Division
 n = 3000000
 # Seive
-digitlist = [0 for i in range(n)] # 0 is not marked
+digitlist = [0 ___ i in range(n)] # 0 is not marked
 
-for i in range(2,int(ma__.sqrt(n))):
+___ i in range(2,int(ma__.sqrt(n))):
     j=0
     w___ (i**2)+i*j< n:
         digitlist[(i**2)+i*j] = 1 # marked to be not prime
@@ -18,7 +18,7 @@ for i in range(2,int(ma__.sqrt(n))):
         
 
 primelist = []
-for prime in range(2,n
+___ prime in range(2,n
     __ digitlist[prime] __ 0:
         primelist.append(prime)
 
@@ -34,7 +34,7 @@ for prime in range(2,n
     
 #
 data = data.split(" ")
-for i in data:
+___ i in data:
     print(primelist[int(i)-1],end=" ")
 ##end = time.clock()
 ##print(end-start)

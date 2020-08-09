@@ -32,11 +32,11 @@ class Solution:
         :return: boolean
         """
         # check row & column
-        for i in xrange(9
+        ___ i in xrange(9
             row = []  # change to hashamp
             column = []
             square = []
-            for j in xrange(9
+            ___ j in xrange(9
                 # check row
                 try:
                     row_element = int(board[i][j])

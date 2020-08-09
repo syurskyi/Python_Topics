@@ -26,7 +26,7 @@ ___ test_get_year_region_breakdown(df
     assert ret.index.names[0] __ 'Year'
     assert ret.index.names[1] __ 'Region'
 
-    actual = [round(val, 2) for val in ret.values]
+    actual = [round(val, 2) ___ val in ret.values]
     expected = [3833.51, 5193.71, 231.12, 7305.56,
                 808.38, 2255.6]
     assert actual __ expected

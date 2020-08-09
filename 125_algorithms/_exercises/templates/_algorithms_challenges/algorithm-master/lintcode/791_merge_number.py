@@ -13,7 +13,7 @@ class Solution:
 
         heap = []
 
-        for a in A:
+        ___ a in A:
             heappush(heap, a)
 
         w___ le.(heap) > 1:

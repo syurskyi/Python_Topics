@@ -45,9 +45,9 @@ Pacific/Honolulu     | +
 
 ___ test_output(capfd
     create_user_bar_chart(content)
-    actual_output = [line.strip().replace(' ', '') for line in
+    actual_output = [line.strip().replace(' ', '') ___ line in
                      capfd.readouterr()[0].splitlines()]
 
-    for line in expected_output:
+    ___ line in expected_output:
         assert line.strip().replace(' ', '') in actual_output, \
                f'{line} not in {actual_output}'

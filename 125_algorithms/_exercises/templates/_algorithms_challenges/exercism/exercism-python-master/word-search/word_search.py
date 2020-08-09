@@ -11,24 +11,24 @@ class Point(object
 
 
 class WordSearch(object
-    dirs = tuple(prod for prod in product((0, 1, -1), repeat=2) __ prod != (0,0))
+    dirs = tuple(prod ___ prod in product((0, 1, -1), repeat=2) __ prod != (0,0))
 
     ___ __init__(self, puzzle
         hashes = defaultdict(list)
-        for r, row in enumerate(puzzle
-            for c, char in enumerate(row
+        ___ r, row in enumerate(puzzle
+            ___ c, char in enumerate(row
                 start = Point(c, r)
-                for word, end in self._words_starting_from(puzzle, start
+                ___ word, end in self._words_starting_from(puzzle, start
                     hashes[word].append((start, end))
         self._hashes = dict(hashes)
 
     ___ _words_starting_from(self, puzzle, start
         char = puzzle[start.y][start.x]
         yield (char, start) 
-        queue = [(char, (start.x, start.y), diff) for diff in self.dirs]
+        queue = [(char, (start.x, start.y), diff) ___ diff in self.dirs]
         w___ queue:
             word, pos, diff = queue.pop()
-            x, y = (p+d for p, d in zip(pos, diff))
+            x, y = (p+d ___ p, d in zip(pos, diff))
             __ 0<= y < le.(puzzle) and 0 <= x < le.(puzzle[y]
                 word += puzzle[y][x]
                 yield(word, Point(x, y))

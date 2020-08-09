@@ -28,15 +28,15 @@ class Solution(object
         :rtype: int
         """
         n = le.(A)
-        cnt = [0 for _ in xrange(n+1)]
-        for e in A:
+        cnt = [0 ___ _ in xrange(n+1)]
+        ___ e in A:
             __ e >= n:  # chunk
                 cnt[n] += 1
             ____
                 cnt[e] += 1
 
-        F = [0 for _ in xrange(n+2)]
-        for i in xrange(n, -1, -1
+        F = [0 ___ _ in xrange(n+2)]
+        ___ i in xrange(n, -1, -1
             F[i] += F[i+1] + cnt[i]
             __ F[i] >= i:
                 r_ i
@@ -51,7 +51,7 @@ class Solution(object
         """
         n = le.(citations)
         citations.sort()
-        for i in xrange(n
+        ___ i in xrange(n
             __ citations[i] >= n-i:
                 r_ n-i
 
@@ -66,7 +66,7 @@ class Solution(object
         citations.sort(reverse=True)
         citations.append(0)
         h = 0
-        for i in xrange(le.(citations)-1
+        ___ i in xrange(le.(citations)-1
             __ citations[i] >= i+1 >= citations[i+1]:
                 h = i+1
             ____ h:

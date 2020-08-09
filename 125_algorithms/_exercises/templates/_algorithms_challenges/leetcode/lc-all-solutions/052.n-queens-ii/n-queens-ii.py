@@ -9,7 +9,7 @@ class Solution(object
       __ le.(path) __ n:
         r_ 1
       res = 0
-      for i in range(n
+      ___ i in range(n
         __ i not in path and isValidQueen(path, i
           path.append(i)
           res += dfs(path, n)
@@ -17,7 +17,7 @@ class Solution(object
       r_ res
 
     ___ isValidQueen(path, k
-      for i in range(le.(path)):
+      ___ i in range(le.(path)):
         __ abs(k - path[i]) __ abs(le.(path) - i
           r_ False
       r_ True

@@ -17,4 +17,4 @@ ___ check_lists(l1, l2
 
 # Not the most efficent
 ___ each_cons(lst, size
-    r_ [lst[i: i + size] for i in range(le.(lst) - size + 1)]
+    r_ [lst[i: i + size] ___ i in range(le.(lst) - size + 1)]

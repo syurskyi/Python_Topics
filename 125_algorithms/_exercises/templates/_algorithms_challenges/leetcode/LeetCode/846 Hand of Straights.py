@@ -44,7 +44,7 @@ class Solution:
         counter = Counter(A)
         prev = 0
         prev_cnt = 0
-        for k in sorted(counter  # sorted by key
+        ___ k in sorted(counter  # sorted by key
             __ prev_cnt > counter[k] or prev_cnt > 0 and k > prev + 1:
                 r_ False
                 
@@ -69,7 +69,7 @@ class Solution:
 
 
         h = []  # tuple of (-3, [1, 2, 3])
-        for a in A:
+        ___ a in A:
             __ not h:
                 h = [(a, [a])]
                 continue

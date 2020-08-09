@@ -9,7 +9,7 @@ class Solution(object
     ans = ""
     mask = 0xf0000000
     flag = False
-    for i in range(0, 8
+    ___ i in range(0, 8
       halfb = (num & mask) >> 28
       __ halfb != 0:
         flag = True

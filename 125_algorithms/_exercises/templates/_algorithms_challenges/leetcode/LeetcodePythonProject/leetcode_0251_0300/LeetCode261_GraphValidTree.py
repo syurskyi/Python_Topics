@@ -7,7 +7,7 @@ Created on Mar 2, 2017
 class Solution(object
     ___ validTree(self, n, edges
         roots = [-1]*n
-        for e in edges:
+        ___ e in edges:
             root0 = self.findRoot(roots, e[0])
             root1 = self.findRoot(roots, e[1])
             __ root0 != root1:
@@ -28,9 +28,9 @@ class Solution(object
         :rtype: bool
         """
         hashmap = {}
-        for i in range(n
+        ___ i in range(n
             hashmap[i] = []
-        for edge in edges:
+        ___ edge in edges:
             hashmap[edge[0]].append(edge[1])
             hashmap[edge[1]].append(edge[0])
         queue = []
@@ -42,32 +42,32 @@ class Solution(object
             __ visited[top]:
                 r_ False
             visited[top] = True
-            for i in hashmap[top]:
+            ___ i in hashmap[top]:
                 __ not visited[i]:
                     queue.append(i)
-        for b in visited:
+        ___ b in visited:
             __ not b:
                 r_ False
         r_ True
     
     ___ validTreeDFS(self, n, edges
         hashmap = {}
-        for i in range(n
+        ___ i in range(n
             hashmap[i] = []
-        for edge in edges:
+        ___ edge in edges:
             hashmap[edge[0]].append(edge[1])
             hashmap[edge[1]].append(edge[0])
         visited = [False]*n
         __ not self.helper(0, -1, hashmap, visited
             r_ False
-        for b in visited:
+        ___ b in visited:
             __ not b: r_ False
         r_ True
     
     ___ helper(self, curr, parent, hashmap, visited
         __ visited[curr]: r_ False
         visited[curr] = True
-        for i in hashmap[curr]:
+        ___ i in hashmap[curr]:
             __ i != parent and not self.helper(i, curr, hashmap, visited
                 r_ False
         r_ True
@@ -87,7 +87,7 @@ class Solution(object
                 [[0,1],[1,2],[2,0],[3,4],[4,5]],
             ],
         ]
-        for n, edges in testCases:
+        ___ n, edges in testCases:
             print('n: %s' % (n))
             print('edges: %s' % (edges))
             result = self.validTree(n, edges)

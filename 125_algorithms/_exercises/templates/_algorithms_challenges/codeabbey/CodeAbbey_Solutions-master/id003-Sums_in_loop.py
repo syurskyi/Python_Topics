@@ -1,10 +1,10 @@
 ___ find_Sums(pairAmount
         answer = []
-        for pair in range(pairAmount
+        ___ pair in range(pairAmount
                 numbers = raw_input().split(' ')
-                sum = 0
-                for x in range(0, 2
-                        sum += int(numbers[x])
-                answer.append(str(sum))
+                su. = 0
+                ___ x in range(0, 2
+                        su. += int(numbers[x])
+                answer.append(str(su.))
         print(' '.join(answer))
 find_Sums(input())

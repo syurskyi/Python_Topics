@@ -22,7 +22,7 @@ class Solution:
         tails = [None] * CAPACITY
 
         curr = _node = i = None
-        for node in hash_table:
+        ___ node in hash_table:
             curr = node
 
             w___ curr:

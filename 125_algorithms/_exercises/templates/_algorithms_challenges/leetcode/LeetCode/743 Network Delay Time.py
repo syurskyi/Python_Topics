@@ -27,8 +27,8 @@ class Solution:
         Dijkstra's algorithm
         """
         G = defaultdict(dict)
-        reach_time = [float('inf') for _ in range(N + 1)]
-        for u, v, w in times:
+        reach_time = [float('inf') ___ _ in range(N + 1)]
+        ___ u, v, w in times:
             G[u][v] = w
 
         h = [(0, K)]
@@ -36,7 +36,7 @@ class Solution:
         w___ h:
             t, s = heapq.heappop(h)
             __ s in G:
-                for d, w in G[s].items(
+                ___ d, w in G[s].items(
                     __ t + w < reach_time[d]:
                         reach_time[d] = t + w
                         heapq.heappush(h, (t + w, d))

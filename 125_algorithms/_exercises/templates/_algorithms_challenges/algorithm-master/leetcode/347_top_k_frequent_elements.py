@@ -10,10 +10,10 @@ class Solution:
             r_ ans
 
         F = {}
-        for a in A:
+        ___ a in A:
             F[a] = F.get(a, 0) + 1
 
-        for a, _ in sorted(F.items(), key=lambda x: -x[1]
+        ___ a, _ in sorted(F.items(), key=lambda x: -x[1]
             __ k __ 0:
                 break
 

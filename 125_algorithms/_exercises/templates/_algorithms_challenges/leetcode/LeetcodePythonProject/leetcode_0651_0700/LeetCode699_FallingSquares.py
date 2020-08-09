@@ -18,7 +18,7 @@ class Solution(object
         res = []
         intervals = []
         h = 0
-        for pos in positions:
+        ___ pos in positions:
             cur = Interval(pos[0], pos[0]+pos[1], pos[1])
             h = max(h, self.getHeight(intervals, cur))
             res.append(h)
@@ -26,7 +26,7 @@ class Solution(object
     
     ___ getHeight(self, intervals, cur
         preMaxHeight = 0
-        for i in intervals:
+        ___ i in intervals:
             __ i.end <= cur.start: continue
             __ i.start >= cur.end: continue
             preMaxHeight = max(preMaxHeight, i.height)
@@ -40,7 +40,7 @@ class Solution(object
             [[100, 100], [200, 100]],
             [[6, 1], [9, 2], [2, 4]],
         ]
-        for positions in testCases:
+        ___ positions in testCases:
             print('positions: %s' % positions)
             result = self.fallingSquares(positions)
             print('result: %s' % result)

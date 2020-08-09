@@ -13,7 +13,7 @@ class Solution(object
         j, s = J, S
         jset = set(list(j))
         res = 0
-        for c in s:
+        ___ c in s:
             __ c in jset:
                 res += 1
         r_ res
@@ -29,7 +29,7 @@ class Solution(object
                 'ZZ',
             ],
         ]
-        for j, s in testCases:
+        ___ j, s in testCases:
             print('j: %s' % j)
             print('s: %s' % s)
             result = self.numJewelsInStones(j, s)

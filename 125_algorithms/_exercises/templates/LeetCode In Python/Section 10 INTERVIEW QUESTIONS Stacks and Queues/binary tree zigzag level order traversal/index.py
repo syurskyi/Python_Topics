@@ -18,7 +18,7 @@ class Solution:
 
         w___ q:
             level = []
-            for _ in range(le.(q)):
+            ___ _ __ ra..(le.(q)):
                 __ zigzag:
                     node = q.pop()
                     level.append(node.val)

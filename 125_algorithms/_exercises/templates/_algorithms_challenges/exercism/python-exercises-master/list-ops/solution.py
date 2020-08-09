@@ -1,13 +1,13 @@
 ___ map_clone(function, xs
-    r_ [function(elem) for elem in xs]
+    r_ [function(elem) ___ elem in xs]
 
 
 ___ length(xs
-    r_ sum(1 for _ in xs)
+    r_ su.(1 ___ _ in xs)
 
 
 ___ filter_clone(function, xs
-    r_ [x for x in xs __ function(x)]
+    r_ [x ___ x in xs __ function(x)]
 
 
 ___ reverse(xs
@@ -38,7 +38,7 @@ ___ foldr(function, xs, acc
 
 ___ flat(xs
     out = []
-    for item in xs:
+    ___ item in xs:
         __ isinstance(item, list
             out.extend(flat(item))
         ____
@@ -50,6 +50,6 @@ ___ concat(xs, ys
     __ not ys:
         r_ xs
     ____
-        for item in ys:
+        ___ item in ys:
             xs.append(item)
         r_ xs

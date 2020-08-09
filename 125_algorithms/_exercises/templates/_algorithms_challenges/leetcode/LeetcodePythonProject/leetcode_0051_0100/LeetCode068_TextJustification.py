@@ -11,9 +11,9 @@ class Solution(object
         :rtype: List[str]
         """
         res, cur, num_of_letters = [], [], 0
-        for w in words:
+        ___ w in words:
             __ num_of_letters + le.(w) + le.(cur) > maxWidth:
-                for i in range(maxWidth-num_of_letters
+                ___ i in range(maxWidth-num_of_letters
                     cur[i%(le.(cur)-1 or 1)] += ' '
                 res.append(''.join(cur))
                 cur, num_of_letters = [], 0
@@ -30,7 +30,7 @@ class Solution(object
         result = []
         __ not words: r_ result
         count, last = 0, 0
-        for i, word in enumerate(words
+        ___ i, word in enumerate(words
             count += le.(word)
             __ count+i-last > maxWidth:
                 wordsLen = count-le.(word)
@@ -41,7 +41,7 @@ class Solution(object
                     eachLen = spaceLen/(i-last-1)
                     extraLen = spaceLen%(i-last-1)
                 s = ''
-                for k in range(last, i-1
+                ___ k in range(last, i-1
                     s += words[k]
                     ce = 0
                     w___ ce < eachLen:
@@ -57,7 +57,7 @@ class Solution(object
                 last = i
                 count = le.(word)
         s = ''
-        for i in range(last, le.(words)-1
+        ___ i in range(last, le.(words)-1
             count += le.(words[i])
             s += words[i] + ' '
         s += words[-1]
@@ -69,7 +69,7 @@ class Solution(object
         testCases = [
             (["This", "is", "an", "example", "of", "text", "justification."], 16),
         ]
-        for words, maxWidth in testCases:
+        ___ words, maxWidth in testCases:
             print('words: %s' % (words))
             print('maxWidth: %s' % (maxWidth))
             result = self.fullJustify(words, maxWidth)

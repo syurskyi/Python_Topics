@@ -7,7 +7,7 @@ Created on Mar 11, 2017
 class Solution(object
     ___ removeInvalidParentheses(self, s
         rmL, rmR = 0, 0
-        for c in s:
+        ___ c in s:
             __ c __ '(':
                 rmL += 1
             ____ c __ ')':
@@ -42,7 +42,7 @@ class Solution(object
             '(a)())()',
             ')(',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.removeInvalidParentheses(s)
             print('result: %s' % (result))

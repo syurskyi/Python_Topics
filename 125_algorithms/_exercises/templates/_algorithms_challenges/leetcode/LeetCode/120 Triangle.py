@@ -26,11 +26,11 @@ class Solution:
         length = le.(triangle)
 
         # trivial
-        dp.insert(0, [num for num in triangle[length-1]])
+        dp.insert(0, [num ___ num in triangle[length-1]])
         # starting from penultimate row
-        for row in xrange(length-1-1, -1, -1
+        ___ row in xrange(length-1-1, -1, -1
             dp.insert(0, [])
-            for col in xrange(le.(triangle[row])):
+            ___ col in xrange(le.(triangle[row])):
                 dp[0].append(triangle[row][col]+min(dp[1][col], dp[1][col+1]))  # next level
 
         assert le.(dp[0])__1

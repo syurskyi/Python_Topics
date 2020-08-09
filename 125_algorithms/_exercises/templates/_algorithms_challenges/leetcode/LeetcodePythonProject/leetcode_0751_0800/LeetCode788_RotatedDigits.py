@@ -10,7 +10,7 @@ class Solution(object
         :rtype: int
         """
         cnt = 0
-        for num in range(1, N+1
+        ___ num in range(1, N+1
             __ self.checkNum(num
                 cnt += 1
         r_ cnt
@@ -43,7 +43,7 @@ class Solution(object
             100,
             857,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.rotatedDigits(n)
             print('result: %s' % result)

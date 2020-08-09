@@ -32,7 +32,7 @@ class LinkedList(object
     ___ __init__(self, values=[]
         self._head = None
         self._len = 0
-        [self.push(v) for v in values]
+        [self.push(v) ___ v in values]
 
     ___ __iter__(self
         r_ LinkedIterator(self)

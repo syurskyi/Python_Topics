@@ -46,7 +46,7 @@ class Solution:
         __ A __ B:
             # find dup
             seen = set()
-            for a in A:
+            ___ a in A:
                 __ a in seen:
                     r_ True
                 seen.add(a)
@@ -55,7 +55,7 @@ class Solution:
 
         # Find a pair
         pair = None
-        for i in range(le.(A)):
+        ___ i in range(le.(A)):
             __ A[i] != B[i]:
                 __ not pair:
                     pair = (A[i], B[i])

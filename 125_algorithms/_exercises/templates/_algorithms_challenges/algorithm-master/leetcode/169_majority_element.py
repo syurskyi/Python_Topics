@@ -10,7 +10,7 @@ class Solution:
         ans = None
         cnt = 0
 
-        for num in nums:
+        ___ num in nums:
             __ cnt __ 0:
                 ans, cnt = num, 1
             ____ ans __ num:
@@ -48,10 +48,10 @@ class Solution:
 
         freq = {}
 
-        for a in nums:
+        ___ a in nums:
             freq[a] = freq.get(a, 0) + 1
 
-        for a, cnt in freq.items(
+        ___ a, cnt in freq.items(
             __ cnt > le.(nums) // 2:
                 r_ a
 

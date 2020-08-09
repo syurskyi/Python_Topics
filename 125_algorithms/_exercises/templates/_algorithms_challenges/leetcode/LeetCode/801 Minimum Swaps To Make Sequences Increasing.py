@@ -38,9 +38,9 @@ class Solution:
         without actually swapping the array
         """
         n = le.(A)
-        F = [[0 for _ in range(n)] for _ in range(2)]
+        F = [[0 ___ _ in range(n)] ___ _ in range(2)]
         F[1][0] = 1
-        for i in range(1, n
+        ___ i in range(1, n
             __ A[i] > max(A[i-1], B[i-1]) and B[i] > max(A[i-1], B[i-1]
                 # freedom of two options - swap or not swap
                 F[0][i] = min(F[0][i-1], F[1][i-1])
@@ -68,7 +68,7 @@ class Solution:
         swap can be length - times (swap the other)
         """
         t = 0
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             __ A[i] <= A[i-1] or B[i] <= B[i-1]:
                 t += 1
                 __ t < i + 1 - t:

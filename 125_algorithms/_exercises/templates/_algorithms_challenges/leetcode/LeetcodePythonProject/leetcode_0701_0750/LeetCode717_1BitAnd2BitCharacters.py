@@ -28,7 +28,7 @@ class Solution(object
             [1, 0, 0],
             [1, 1, 1, 0],
         ]
-        for bits in testCases:
+        ___ bits in testCases:
             print('bits: %s' % bits)
             result = self.isOneBitCharacter(bits)
             print('result: %s' % result)

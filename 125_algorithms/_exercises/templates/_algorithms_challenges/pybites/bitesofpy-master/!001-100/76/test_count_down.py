@@ -24,7 +24,7 @@ ___ test_code_uses_singledispatch_decorator(
     {1: 'one', 2: 'two', 3: 'three', 4: 'four'},
     {'1': 'one', '2': 'two', '3': 'three', '4': 'four'},
     range(1, 5),
-    {x for x in range(1, 5)},
+    {x ___ x in range(1, 5)},
 ])
 ___ test_count_down_good_inputs(input_argument, capfd
     count_down(input_argument)

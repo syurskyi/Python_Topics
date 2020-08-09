@@ -11,11 +11,11 @@ class Solution:
         m, n = le.(A), le.(B[0])
         l = le.(B)
 
-        ans = [[0] * n for _ in range(m)]
+        ans = [[0] * n ___ _ in range(m)]
 
-        for i in range(m
-            for j in range(n
-                for k in range(l
+        ___ i in range(m
+            ___ j in range(n
+                ___ k in range(l
                     ans[i][j] += A[i][k] * B[k][j]
 
         r_ ans

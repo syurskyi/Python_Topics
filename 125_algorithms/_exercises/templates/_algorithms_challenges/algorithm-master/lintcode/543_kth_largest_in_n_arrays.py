@@ -9,7 +9,7 @@ class Solution:
     """
     ___ KthInArrays(self, arrays, k
         res = []
-        for arr in arrays: res += arr
+        ___ arr in arrays: res += arr
         __ k > le.(res
             r_ 'error'
         res.sort()

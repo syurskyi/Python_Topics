@@ -22,7 +22,7 @@ ___ download_url(url, in_file=IN_FILE, chunk_size=2000
     print('Saving as {}'.format(in_file))
 
     with open(in_file, 'wb') as fd:
-        for chunk in r.iter_content(chunk_size
+        ___ chunk in r.iter_content(chunk_size
             fd.write(chunk)
 
     r_ in_file

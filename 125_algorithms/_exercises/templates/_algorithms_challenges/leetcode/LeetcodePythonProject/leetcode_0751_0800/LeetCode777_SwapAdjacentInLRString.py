@@ -42,7 +42,7 @@ class Solution(object
         :rtype: bool
         """
         l, r = 0, 0
-        for i in range(le.(start)):
+        ___ i in range(le.(start)):
             __ start[i] __ 'R': r += 1
             __ end[i] __ 'L': l += 1
             __ start[i] __ 'L': l -= 1
@@ -67,7 +67,7 @@ class Solution(object
             s = queue.pop()
             __ s __ end:
                 r_ True
-            for i in range(le.(s)-1
+            ___ i in range(le.(s)-1
                 __ s[i:i+2] in ('XL', 'RX'
                     newS = s[:i]+s[i:i+2][::-1]+s[i+2:]
                     __ newS not in visited:
@@ -86,7 +86,7 @@ class Solution(object
                 "XXXXRXXLXX",
             ],
         ]
-        for start, end in testCases:
+        ___ start, end in testCases:
             print('start: %s' % start)
             print('end: %s' % end)
             result = self.canTransform(start, end)

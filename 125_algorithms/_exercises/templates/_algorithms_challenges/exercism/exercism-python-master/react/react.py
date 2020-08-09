@@ -13,7 +13,7 @@ class InputCell(object
     ___ value(self, value
         __ self._value != value:
             self._value = value
-            for cell in CELLS:
+            ___ cell in CELLS:
                 cell._update()
 
     ___ _update(self
@@ -22,7 +22,7 @@ class InputCell(object
 
 class ComputeCell(object
     ___ __init__(self, inputs, compute_function
-        self._function = lambda: compute_function([i.value for i in inputs])
+        self._function = lambda: compute_function([i.value ___ i in inputs])
         self._callbacks = {}
         self._value = self._function()
         CELLS.append(self)
@@ -35,7 +35,7 @@ class ComputeCell(object
         new_val = self._function()
         __ new_val != self._value:
             self._value = new_val
-            for c in self._callbacks.values(
+            ___ c in self._callbacks.values(
                 c(new_val)
         r_ new_val
 

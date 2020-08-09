@@ -3,7 +3,7 @@
 ___ prime_factors(number
     """Finds prime factors of a number"""
     factors = []
-    for factor in range(2, int(number**0.5)+1
+    ___ factor in range(2, int(number**0.5)+1
         w___ number % factor __ 0:
             number /= factor
             factors.append(factor)

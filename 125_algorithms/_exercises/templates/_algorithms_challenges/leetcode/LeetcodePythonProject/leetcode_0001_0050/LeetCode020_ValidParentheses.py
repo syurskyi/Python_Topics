@@ -10,7 +10,7 @@ class Solution(object
         :rtype: bool
         """
         stack = []
-        for c in s:
+        ___ c in s:
             __ c in ['(', '{', '[']:
                 stack.append(c)
             ____
@@ -26,7 +26,7 @@ class Solution(object
         testCases = [
             '(){}[]',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.isValid(s)
             print('result: %s' % result)

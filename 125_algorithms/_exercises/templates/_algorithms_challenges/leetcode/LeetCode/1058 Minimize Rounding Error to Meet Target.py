@@ -46,19 +46,19 @@ class Solution:
         floor all, sort by floor error inverse, make the adjustment
         """
         A = list(map(float, prices))
-        f_sum = sum(map(ma__.fl.., A))
-        c_sum = sum(map(ma__.ceil, A))
+        f_sum = su.(map(ma__.fl.., A))
+        c_sum = su.(map(ma__.ceil, A))
         __ not f_sum <= target <= c_sum:
             r_ "-1"
 
         errors = [
             e - ma__.fl..(e)
-            for e in A
+            ___ e in A
         ]
         errors.sort(reverse=True)
         ret = 0
         remain = target - f_sum
-        for err in errors:
+        ___ err in errors:
             __ remain > 0:
                 ret += 1 - err
                 remain -= 1

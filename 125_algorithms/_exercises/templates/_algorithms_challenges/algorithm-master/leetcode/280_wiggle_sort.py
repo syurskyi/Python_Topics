@@ -7,7 +7,7 @@ class Solution:
         __ not nums:
             r_
 
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ i & 1 __ 1 and nums[i] >= nums[i - 1]:
                 continue
             __ i & 1 __ 0 and nums[i] <= nums[i - 1]:

@@ -25,7 +25,7 @@ class Solution:
         since it may be the deepest node is at right child
         """
         height = le.(ans)
-        for node, level in preorder:
+        ___ node, level in preorder:
             ans[height - level].append(node.val)
 
         r_ ans

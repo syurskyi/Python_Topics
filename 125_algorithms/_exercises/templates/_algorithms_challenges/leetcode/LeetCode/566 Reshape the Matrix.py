@@ -22,8 +22,8 @@ class Solution:
             r_ nums
 
         ret = []
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ (i * n + j) % c __ 0:
                     ret.append([])
                 ret[-1].append(nums[i][j])

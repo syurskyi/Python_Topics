@@ -30,7 +30,7 @@ __ __name__ __ '__main__':
     it = gen_random_entry()
 
     with Cache() as wl:
-        for i in range(5
+        ___ i in range(5
             d, n, t = next(it)
             wl[n].append((d, t))
 
@@ -40,6 +40,6 @@ __ __name__ __ '__main__':
     col1, col2 = ('NAME', 'MINUTES')
     print('{:<10}: {}'.format(col1, col2))
     with Cache() as wl:
-        for name, work in sorted(wl.items()):
-            total = sum(w[1] for w in work)  # TODO: use namedtuple
+        ___ name, work in sorted(wl.items()):
+            total = su.(w[1] ___ w in work)  # TODO: use namedtuple
             print('{:<10}: {}'.format(name, total))

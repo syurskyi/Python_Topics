@@ -11,7 +11,7 @@ class ApplianceCost:
 
     @property
     ___ cost(self
-        hours_used = sum(self._minutes)/60
+        hours_used = su.(self._minutes)/60
         cost = self.wattage * hours_used / 1000 * self.price_kwh
         r_ round(float(cost), 2)
 

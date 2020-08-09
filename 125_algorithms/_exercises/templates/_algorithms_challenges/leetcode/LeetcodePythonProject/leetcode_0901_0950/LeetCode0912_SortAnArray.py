@@ -17,7 +17,7 @@ class Solution(object
     ___ partition(self, low, high, nums
         pivot = nums[high]
         i = low-1
-        for j in range(low, high
+        ___ j in range(low, high
             __ nums[j] < pivot:
                 i += 1
                 nums[i], nums[j] = nums[j], nums[i]
@@ -31,7 +31,7 @@ class Solution(object
             # [0,1,2,3],
             # [3,2,1,0],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             res = self.sortArray(nums)
             print('res: %s' % res)
             print('-='*30+'-')

@@ -9,7 +9,7 @@ class Solution(object
         ______ bisect
         dp = [0]*le.(nums)
         length = 0
-        for num in nums:
+        ___ num in nums:
             i = bisect.bisect_left(dp, num, 0, length)
             dp[i] = num
             __ i __ length:
@@ -21,7 +21,7 @@ class Solution(object
         testCases = [
             [10, 9, 2, 5, 3, 7, 101, 18],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.lengthOfLIS(nums)
             print('result: %s' % (result))

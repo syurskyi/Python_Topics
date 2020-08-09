@@ -37,10 +37,10 @@ class Solution:
         :rtype: list[int]
         """
         V = {}
-        for i in xrange(numCourses
+        ___ i in xrange(numCourses
             V[i] = []
 
-        for edge in prerequisites:
+        ___ edge in prerequisites:
             V[edge[1]].append(edge[0])
 
         r_ self.topological_sort(V)
@@ -50,7 +50,7 @@ class Solution:
         marked = set()
         ret = []
 
-        for k in V.keys(
+        ___ k in V.keys(
             __ k not in visited:
                 __ not self.dfs(V, k, visited, marked, ret
                     r_ []
@@ -68,7 +68,7 @@ class Solution:
             r_ False
 
         marked.add(k)
-        for neighbor in V[k]:
+        ___ neighbor in V[k]:
             __ neighbor not in visited:
                 __ not self.dfs(V, neighbor, visited, marked, ret
                     r_ False

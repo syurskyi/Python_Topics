@@ -43,7 +43,7 @@ class Solution(object
     
     ___ helper(self, nestedList, level
         sumVal = 0
-        for ni in nestedList:
+        ___ ni in nestedList:
             __ ni.isInteger(
                 sumVal += ni.getInteger()*level
             ____

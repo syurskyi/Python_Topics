@@ -8,7 +8,7 @@ class Solution(object
       r_ []
     c1, c2 = None, None
     n1, n2 = 0, 0
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       __ c1 __ nums[i]:
         n1 += 1
       ____ c2 __ nums[i]:
@@ -29,7 +29,7 @@ class Solution(object
     size = le.(nums)
     cn1 = 0
     cn2 = 0
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       __ nums[i] __ c1:
         cn1 += 1
       ____ nums[i] __ c2:

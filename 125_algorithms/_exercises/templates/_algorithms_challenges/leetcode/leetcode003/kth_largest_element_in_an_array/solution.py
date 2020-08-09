@@ -19,9 +19,9 @@ class Solution(object
         :rtype: int
         """
         h = []
-        for e in nums:
+        ___ e in nums:
             heapq.heappush(h, (-e, e))
-        for i in range(k
+        ___ i in range(k
             w, e = heapq.heappop(h)
             __ i __ k - 1:
                 r_ e

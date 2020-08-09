@@ -5,8 +5,8 @@ ___ on_square(square
 
 ___ total_after(square
     check_square_input(square)
-    r_ sum(
-        on_square(n + 1) for n
+    r_ su.(
+        on_square(n + 1) ___ n
         in range(square)
     )
 

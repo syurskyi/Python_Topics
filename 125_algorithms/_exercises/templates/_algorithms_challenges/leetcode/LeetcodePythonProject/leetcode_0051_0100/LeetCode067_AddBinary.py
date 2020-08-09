@@ -63,7 +63,7 @@ class Solution(object
             ('1', '1'),
             ('1', '110'),
         ]
-        for a, b in testCases:
+        ___ a, b in testCases:
             print('a: %s, b: %s' % (a, b))
             result = self.addBinary(a, b)
             print('result: %s' % result)

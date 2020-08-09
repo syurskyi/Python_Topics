@@ -6,7 +6,7 @@ class Solution:
         res = 0
         last = 0
         stack = []
-        for i in range(1, n
+        ___ i in range(1, n
             __ A[i] >= A[last]:
                 # Calculate trapped water
                 w = i - last - 1

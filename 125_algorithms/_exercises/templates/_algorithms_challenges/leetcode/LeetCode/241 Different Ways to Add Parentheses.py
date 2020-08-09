@@ -46,11 +46,11 @@ class Solution:
             assert le.(nums) __ 1
             r_ nums
 
-        for i, op in enumerate(ops
+        ___ i, op in enumerate(ops
             left_vals = self.dfs_eval(nums[:i+1], ops[:i])
             right_vals = self.dfs_eval(nums[i+1:], ops[i+1:])
-            for l in left_vals:
-                for r in right_vals:
+            ___ l in left_vals:
+                ___ r in right_vals:
                     ret.append(self._eval(l, r, op))
 
         r_ ret

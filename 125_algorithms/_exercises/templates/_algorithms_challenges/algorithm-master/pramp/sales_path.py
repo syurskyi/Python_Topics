@@ -74,7 +74,7 @@ ___ get_cheapest_cost(root
 
     res = float('inf')
 
-    for child in root.children:
+    ___ child in root.children:
         tmp = get_cheapest_cost(child)
 
         __ tmp < res:
@@ -104,7 +104,7 @@ ___ _dfs(root, target, ans, path
     __ not root.children:
         r_
 
-    for child in root.children:
+    ___ child in root.children:
         __ target < child.cost:
             continue
 

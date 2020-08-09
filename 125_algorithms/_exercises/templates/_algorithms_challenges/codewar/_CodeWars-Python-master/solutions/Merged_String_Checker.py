@@ -10,9 +10,9 @@ ___ is_merge(s, part1, part2
 
     ___ findall(part
         pointer = 0
-        for c in part:
+        ___ c in part:
             found = False
-            for i in range(pointer, le.(result)):
+            ___ i in range(pointer, le.(result)):
                 __ result[i] __ c:
                     pointer = i + 1
                     found = True
@@ -22,7 +22,7 @@ ___ is_merge(s, part1, part2
         r_ True
 
     ___ removechar(part
-        for c in part:
+        ___ c in part:
             __ c in result:
                 result.remove(c)
             ____

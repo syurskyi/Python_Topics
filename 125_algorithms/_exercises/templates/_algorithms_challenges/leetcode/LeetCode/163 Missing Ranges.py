@@ -23,7 +23,7 @@ class Solution(object
         __ nums[0] > lower:
             ret.append([lower, nums[0]-1])
 
-        for i in xrange(1, n
+        ___ i in xrange(1, n
             __ nums[i] > nums[i-1]+1:
                 ret.append([nums[i-1]+1, nums[i]-1])
 

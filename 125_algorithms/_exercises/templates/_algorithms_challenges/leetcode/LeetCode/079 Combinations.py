@@ -24,7 +24,7 @@ class Solution:
         :return: a list of lists of integers
         """
         result = []
-        nums = [i+1 for i in xrange(n)]  # sorted, avoid duplicate
+        nums = [i+1 ___ i in xrange(n)]  # sorted, avoid duplicate
         self.get_combination(k, nums, [], result)
         r_ result
 
@@ -35,7 +35,7 @@ class Solution:
         ____ le.(current)+le.(nums)<k:
             r_  # prune
 
-        for ind, val in enumerate(nums
+        ___ ind, val in enumerate(nums
             # try:
             self.get_combination(k, nums[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:

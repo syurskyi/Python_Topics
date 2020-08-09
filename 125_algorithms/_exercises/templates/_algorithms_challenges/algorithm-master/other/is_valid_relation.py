@@ -48,7 +48,7 @@ ___ is_valid_relation(strs
     ngraph = collections.defaultdict(set)
     sgraph = collections.defaultdict(set)
 
-    for s in strs:
+    ___ s in strs:
         __ not s:
             r_ False
 
@@ -68,8 +68,8 @@ ___ is_valid_relation(strs
             sgraph[dst].add(src)
             ngraph[src].add(dst)
 
-    for graph in (egraph, wgraph, ngraph, sgraph
-        for node in graph.keys(
+    ___ graph in (egraph, wgraph, ngraph, sgraph
+        ___ node in graph.keys(
             __ dfs(graph, node, set()):
                 r_ False
 
@@ -91,7 +91,7 @@ ___ dfs(graph, node, visited
 
     visited.add(node)
 
-    for nxt in graph[node]:
+    ___ nxt in graph[node]:
         __ dfs(graph, nxt, visited
             r_ True
 

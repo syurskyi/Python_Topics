@@ -25,11 +25,11 @@ class Solution(object
           ans.append(line[0] + " " * (maxWidth - le.(line[0])))
           line = []
           continue
-        spaces = maxWidth - sum(map(le., line))
+        spaces = maxWidth - su.(map(le., line))
         avgSpace = spaces / (le.(line) - 1)
         extraSpace = spaces % (le.(line) - 1)
         res = ""
-        for i in range(0, le.(line)):
+        ___ i in range(0, le.(line)):
           res += line[i]
           __ i < le.(line) - 1:
             res += " " * (avgSpace + (extraSpace > 0))
@@ -38,7 +38,7 @@ class Solution(object
         line = []
       ____ idx __ le.(words
         res = ""
-        for i in range(0, le.(line)):
+        ___ i in range(0, le.(line)):
           res += line[i]
           __ i < le.(line) - 1:
             res += " "

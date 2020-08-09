@@ -11,8 +11,8 @@ class Solution(object
         """
         matrix = A
         m, n = le.(matrix), le.(matrix[0])
-        res = [[0]*m for _ in range(n)]
-        for i in range(m
-            for j in range(n
+        res = [[0]*m ___ _ in range(n)]
+        ___ i in range(m
+            ___ j in range(n
                 res[j][i] = matrix[i][j]
         r_ res

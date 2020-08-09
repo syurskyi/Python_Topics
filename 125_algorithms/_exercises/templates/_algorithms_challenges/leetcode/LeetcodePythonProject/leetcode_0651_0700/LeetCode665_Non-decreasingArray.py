@@ -11,7 +11,7 @@ class Solution(object
         """
         prev = nums[0]
         modified = False
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ nums[i] < prev:
                 __ modified:
                     r_ False
@@ -27,7 +27,7 @@ class Solution(object
         :rtype: bool
         """
         modified = 0
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ nums[i-1] > nums[i]:
                 __ modified != 0: r_ False
                 modified += 1
@@ -47,7 +47,7 @@ class Solution(object
             [5, 1, 9, 8, 3],
             [1, 2, 3, 1, 3],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.checkPossibility(nums)
             print('result: %s' % result)

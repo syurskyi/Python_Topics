@@ -12,7 +12,7 @@ class Solution(object
         dn1, dn2 = 1, 0
         __ n <= 1: r_ 0
         res = 1
-        for i in range(3, n+1
+        ___ i in range(3, n+1
             res = ((i-1)*(dn1+dn2))%(10**9+7)
             dn2 = dn1
             dn1 = res
@@ -26,7 +26,7 @@ class Solution(object
             4,
             10,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % n)
             result = self.findDerangement(n)
             print('result: %s' % result)

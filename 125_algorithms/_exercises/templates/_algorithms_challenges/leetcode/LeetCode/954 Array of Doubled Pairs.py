@@ -40,7 +40,7 @@ class Solution:
     ___ canReorderDoubled(self, A: List[int]) -> bool:
         A.sort(key=abs)
         counter = Counter(A)
-        for a in A:
+        ___ a in A:
             __ counter[a] __ 0:
                 continue
             __ counter[2*a] __ 0:
@@ -57,7 +57,7 @@ class Solution:
         """
         A.sort()
         counter = Counter(A)
-        for a in A:
+        ___ a in A:
             __ counter[a] __ 0:
                 continue
             counter[a] -= 1

@@ -21,13 +21,13 @@ class Solution(object
             r_ [[]]
         ____
             res = []
-            for i, c in enumerate(nums
+            ___ i, c in enumerate(nums
                 __ c in d:
                     continue
                 ____
                     d[c] = True
                 rest_perms = self.permuteUnique(nums[:i] + nums[i + 1:])
-                for perm in rest_perms:
+                ___ perm in rest_perms:
                     perm.insert(0, c)
                 res += rest_perms
             r_ res

@@ -10,11 +10,11 @@ class Solution:
             r_ [[]]
         ____
             res = [[]]
-            for i, e in enumerate(nums
+            ___ i, e in enumerate(nums
                 __ i > 0 and nums[i] __ nums[i - 1]:
                     continue
                 rest_subsets = self.subsets_aux(nums[i + 1:])
-                for subset in rest_subsets:
+                ___ subset in rest_subsets:
                     subset.insert(0, e)
                 res += rest_subsets
             r_ res

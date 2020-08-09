@@ -53,7 +53,7 @@ class Solution(object
 #                 [4,5,2,6,7,3,1],
 #             ],
         ]
-        for pre, post in testCases:
+        ___ pre, post in testCases:
             node = self.constructFromPrePost(pre, post)
             print(node)
 

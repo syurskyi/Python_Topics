@@ -14,7 +14,7 @@ class Groceries:
     ___ show(self, items=None
         """Print a simple table of cart items with total at the end"""
         items = items __ items is not None else self
-        for item in items:
+        ___ item in items:
             product = f'{item.product}'
             __ item.craving:
                 product += ' (craving)'
@@ -23,7 +23,7 @@ class Groceries:
 
     ___ _print_total(self, items
         """Calculate and print total price of cart"""
-        total = sum(item.price for item in items)
+        total = su.(item.price ___ item in items)
         print('-' * 36)
         print(f'{"Total":<30} | {total:>3}')
 
@@ -35,7 +35,7 @@ class Groceries:
     ___ delete(self, product
         """Delete item matching 'product', raises IndexError
            if no item matches"""
-        for i, item in enumerate(self
+        ___ i, item in enumerate(self
             __ item.product __ product:
                 self._items.pop(i)
                 break
@@ -46,13 +46,13 @@ class Groceries:
     ___ search(self, search
         """Filters items matching insensitive 'contains' search, and passes
            them to show for printing"""
-        items = [item for item in self __ search.lower()
+        items = [item ___ item in self __ search.lower()
                  in item.product.lower()]
         self.show(items)
 
     @property
     ___ due(self
-        r_ sum(item.price for item in self)
+        r_ su.(item.price ___ item in self)
 
     ___ __len__(self
         """The le. of cart"""
@@ -83,7 +83,7 @@ ___ handle_args(args=None, cart=None
     __ cart is None:
         cart = Groceries()
 
-    for op, param in vars(args).items(
+    ___ op, param in vars(args).items(
         __ op __ 'add' and param:
             cart.add(Item(param[0], int(param[1]), param[2].lower() __ 'true'))
         ____ op __ 'delete' and param:

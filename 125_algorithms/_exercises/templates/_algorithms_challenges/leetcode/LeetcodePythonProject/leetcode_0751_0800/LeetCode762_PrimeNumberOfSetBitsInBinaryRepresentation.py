@@ -12,7 +12,7 @@ class Solution(object
         """
         primes = set([2, 3, 5, 7, 11, 13, 17, 19])
         cnt = 0
-        for num in range(L, R+1
+        ___ num in range(L, R+1
             bits = 0
             n = num
             w___ n > 0:
@@ -27,7 +27,7 @@ class Solution(object
             [10, 15],
             [942063, 945851],
         ]
-        for l, r in testCases:
+        ___ l, r in testCases:
             print('l: %s' % l)
             print('r: %s' % r)
             result = self.countPrimeSetBits(l, r)

@@ -17,14 +17,14 @@ class Solution(object
         :rtype: int
         """
         n = le.(nums)
-        t = [0 for i in range(n + 1)]
+        t = [0 ___ i in range(n + 1)]
         __ n __ 0:
             r_ t[n]
         t[1] = nums[0]
         __ n <= 1:
             r_ t[n]
         t[2] = max(nums[:2])
-        for i in range(3, n + 1
+        ___ i in range(3, n + 1
             t[i] = max(t[i - 2] + nums[i - 1], t[i - 1])
         r_ t[n]
 

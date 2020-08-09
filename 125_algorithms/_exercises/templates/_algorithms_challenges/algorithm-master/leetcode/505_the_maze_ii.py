@@ -31,8 +31,8 @@ class Solution:
         queue = [(sx, sy)]
         distance = {(sx, sy 0}
 
-        for x, y in queue:
-            for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+        ___ x, y in queue:
+            ___ dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
                 _x = x + dx
                 _y = y + dy
                 _step = 0
@@ -100,7 +100,7 @@ class Solution2:
         w___ heap:
             x, y = heapq.heappop(heap)
 
-            for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+            ___ dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
                 _x = x + dx
                 _y = y + dy
 

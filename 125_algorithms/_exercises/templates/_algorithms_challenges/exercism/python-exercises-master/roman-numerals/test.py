@@ -28,7 +28,7 @@ class RomanTest(unittest.TestCase
     }
 
     ___ test_numerals(self
-        for arabic, numeral in self.numerals.items(
+        ___ arabic, numeral in self.numerals.items(
             self.assertEqual(roman_numerals.numeral(arabic), numeral)
 
 

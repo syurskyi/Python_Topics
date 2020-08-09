@@ -32,7 +32,7 @@ class Solution:
 
     ___ get_subset(self, S, current, result
         result.append(current)
-        for ind, val in enumerate(S
+        ___ ind, val in enumerate(S
             # JUMP, avoid duplicates
             __ ind-1>=0 and val__S[ind-1]:  # ensure uni-direction
                 continue

@@ -24,7 +24,7 @@ ___ load_store(
     items = defaultdict(lambda: defaultdict(list))
 
     with shelve.open(CACHE) as sh, shelve.open(SENT_CACHE) as ca:
-        for key in sh:
+        ___ key in sh:
 
             __ key in ca:
                 continue

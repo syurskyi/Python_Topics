@@ -5,9 +5,9 @@ class TestBinaryTree(object
 	___ test_insert_traversals (self
 		myTree = BinaryTree()
 		myTree2 = BinaryTree()
-		for num in [50, 30, 70, 10, 40, 60, 80, 7, 25, 38]:
+		___ num in [50, 30, 70, 10, 40, 60, 80, 7, 25, 38]:
 			myTree.insert(num)
-		[myTree2.insert(num) for num in range (1, 100, 10)]
+		[myTree2.insert(num) ___ num in range (1, 100, 10)]
 
 		print("Test: insert checking with in order traversal")
 		expectVal = [7, 10, 25, 30, 38, 40, 50, 60, 70, 80]
@@ -60,7 +60,7 @@ class TestBinaryTree(object
 		assert_equal(myTree.treeIsEmpty(), True)
 		
 		print("Test: more complex deletions")
-		[myTree.insert(x) for x in range(1, 5)]
+		[myTree.insert(x) ___ x in range(1, 5)]
 		myTree.delete(2)
 		assert_equal(myTree.root.rightChild.data, 3)
 		print("Test: delete invalid value")

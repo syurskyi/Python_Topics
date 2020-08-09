@@ -62,7 +62,7 @@ class ExamRoom:
                 max_dist = dist
                 ret_idx = 0
             # middle
-            for j in range(le.(self.idxes)-1
+            ___ j in range(le.(self.idxes)-1
                 i = (self.idxes[j] + self.idxes[j+1]) // 2
                 dist = min(abs(self.idxes[j] - i), abs(self.idxes[j+1] - i))
                 __ dist > max_dist:

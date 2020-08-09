@@ -14,11 +14,11 @@ class NumMatrix:
             r_
 
         m, n = le.(matrix), le.(matrix[0])
-        self.prefix_sum = [[0] * (n + 1) for _ in range(m + 1)]
+        self.prefix_sum = [[0] * (n + 1) ___ _ in range(m + 1)]
 
-        for x in range(1, m + 1
-            for y in range(1, n + 1
-                self.prefix_sum[x][y] = sum((
+        ___ x in range(1, m + 1
+            ___ y in range(1, n + 1
+                self.prefix_sum[x][y] = su.((
                     self.prefix_sum[x - 1][y],
                     self.prefix_sum[x][y - 1],
                     - self.prefix_sum[x - 1][y - 1],
@@ -43,7 +43,7 @@ class NumMatrix:
         )):
             r_ 0
 
-        r_ sum((
+        r_ su.((
             self.prefix_sum[x2 + 1][y2 + 1],
             - self.prefix_sum[x2 + 1][y1],
             - self.prefix_sum[x1][y2 + 1],

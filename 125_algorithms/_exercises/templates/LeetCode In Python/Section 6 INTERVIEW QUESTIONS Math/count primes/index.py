@@ -6,9 +6,9 @@ class Solution:
         isPrime = [True]*n
         isPrime[0] = isPrime[1] = False
         
-        for i in range(2,ma__.ceil(ma__.sqrt(n))):
+        ___ i __ ra..(2,ma__.ceil(ma__.sqrt(n))):
             __ isPrime[i]:
-                for multiples_of_i in range(i*i,n,i
+                ___ multiples_of_i __ ra..(i*i,n,i
                     isPrime[multiples_of_i] = False
         
-        r_ sum(isPrime)
+        r_ su.(isPrime)

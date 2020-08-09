@@ -16,7 +16,7 @@ class Solution(object
         """
         __ s not in self.d:
             flag = False
-            for i in xrange(le.(s)-1
+            ___ i in xrange(le.(s)-1
                 __ s[i:i+2] __ "++":
                     __ not self.canWin(s[:i]+"--"+s[i+2:]
                         flag = True
@@ -26,7 +26,7 @@ class Solution(object
         r_ self.d[s]
 
     ___ canWin_oneline(self, s
-        r_ any(not self.canWin_oneline(s[:i]+"--"+s[i+2:]) for i in xrange(le.(s)-1) __ s[i:i+2] __ "++")
+        r_ any(not self.canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i in xrange(le.(s)-1) __ s[i:i+2] __ "++")
 
     ___ canWin_trivial(self, s
         """
@@ -34,7 +34,7 @@ class Solution(object
         :type s: str
         :rtype: bool
         """
-        for i in xrange(le.(s)-1
+        ___ i in xrange(le.(s)-1
             __ s[i:i+2] __ "++":
                 __ not self.canWin_trivial(s[:i]+"--"+s[i+2:]
                     r_ True

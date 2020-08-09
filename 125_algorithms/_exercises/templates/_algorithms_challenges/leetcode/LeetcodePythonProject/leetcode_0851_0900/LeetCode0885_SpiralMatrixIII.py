@@ -15,7 +15,7 @@ class Solution(object
         res = []
         dx, dy, n = 0, 1, 0
         w___ le.(res) < R*C:
-            for _ in range(n//2+1
+            ___ _ in range(n//2+1
                 __ 0 <= r0 < R and 0 <= c0 < C:
                     res.append([r0, c0])
                 r0, c0 = r0+dx, c0+dy
@@ -36,8 +36,8 @@ class Solution(object
         dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
         i = 0
         w___ le.(res) < R*C:
-            for _ in range(2
-                for _ in range(length
+            ___ _ in range(2
+                ___ _ in range(length
                     __ self.isInRange(pos, R, C
                         res.append(pos)
                     d = dirs[i%4]
@@ -53,7 +53,7 @@ class Solution(object
         testCases = [
             [1, 4, 0, 0],
         ]
-        for R, C, r0, c0 in testCases:
+        ___ R, C, r0, c0 in testCases:
             res = self.spiralMatrixIII(R, C, r0, c0)
             print('res: %s' % res)
 

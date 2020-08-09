@@ -22,7 +22,7 @@ class Solution(object
 
     # find the min value in the rest of the array
     minPos, minV = pos + 1, nums[pos + 1]
-    for i in range(pos + 1, le.(nums)):
+    ___ i in range(pos + 1, le.(nums)):
       __ nums[i] <= minV and nums[i] > nums[pos]:
         minV = nums[i]
         minPos = i

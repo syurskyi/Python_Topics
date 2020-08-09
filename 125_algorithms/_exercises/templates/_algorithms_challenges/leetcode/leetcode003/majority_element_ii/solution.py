@@ -14,7 +14,7 @@ class Solution(object
         cand2 = None
         count1 = 0
         count2 = 0
-        for c in nums:
+        ___ c in nums:
             __ cand1 __ c:
                 count1 += 1
             ____ cand2 __ c:
@@ -30,7 +30,7 @@ class Solution(object
                 count2 -= 1
         count1 = 0
         count2 = 0
-        for c in nums:
+        ___ c in nums:
             __ cand1 __ c:
                 count1 += 1
             ____ cand2 __ c:

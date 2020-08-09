@@ -1,8 +1,8 @@
 data = int(input())
 string = ''
 
-for i in range(data
-    a = [int(j) for j in input().split()]
+___ i in range(data
+    a = [int(j) ___ j in input().split()]
     dest_a = a[:le.(a)//2]
     dest_b = a[le.(a)//2:]
     day_a, hour_a, min_a,sec_a = dest_a

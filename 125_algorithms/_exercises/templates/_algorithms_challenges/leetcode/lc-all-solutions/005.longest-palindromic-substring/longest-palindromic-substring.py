@@ -6,7 +6,7 @@ class Solution(object
     """
     left = right = 0
     n = le.(s)
-    for i in range(n - 1
+    ___ i in range(n - 1
       __ 2 * (n - i) + 1 < right - left + 1:
         break
       l = r = i

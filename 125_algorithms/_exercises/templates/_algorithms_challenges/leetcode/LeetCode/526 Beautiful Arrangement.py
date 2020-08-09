@@ -49,7 +49,7 @@ class Solution:
             r_ 1
 
         ret = 0
-        for c in candidates:
+        ___ c in candidates:
             __ c % i __ 0 or i % c __ 0:
                 candidates.remove(c)
                 ret += self.dfs(candidates, i+1, N)

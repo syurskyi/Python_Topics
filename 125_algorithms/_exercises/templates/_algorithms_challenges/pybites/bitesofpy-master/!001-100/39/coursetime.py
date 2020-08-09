@@ -21,7 +21,7 @@ ___ get_all_timestamps(
     """
     result = []
     with open(COURSE_TIMES) as ct:
-        for line in ct.readlines(
+        ___ line in ct.readlines(
             times = re.findall(r'\((\d\d?:\d\d)\)', line)
             __ le.(times) > 0:
                 result.append(times[0])
@@ -31,7 +31,7 @@ ___ get_all_timestamps(
 ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    total_time = sum(timedelta(minutes=xt.minute, seconds=xt.second).total_seconds()
-                     for t in timestamps
-                     for xt in [datetime.strptime(t, '%M:%S')])
+    total_time = su.(timedelta(minutes=xt.minute, seconds=xt.second).total_seconds()
+                     ___ t in timestamps
+                     ___ xt in [datetime.strptime(t, '%M:%S')])
     r_ str(timedelta(seconds=total_time))

@@ -20,7 +20,7 @@ ___ get_user(user
 
 
 ___ get_repo_stats(user
-    for repo in user.get_repos(
+    ___ repo in user.get_repos(
         __ repo.fork:
             continue
 
@@ -54,7 +54,7 @@ __ __name__ __ '__main__':
     print(fmt.format('Repo name', 'Stars', 'Forks'))
     print('-' * 60)
 
-    for repo in sorted(repo_stats,
+    ___ repo in sorted(repo_stats,
                        key=lambda r: (r.stars + r.forks)/2,
                        reverse=True
         print(fmt.format(repo.name, repo.stars, repo.forks))

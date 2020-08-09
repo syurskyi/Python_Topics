@@ -15,7 +15,7 @@ class Solution(object
         r_ True
 
       mask = 0x01
-      for i in range(0, maxChoosableInteger
+      ___ i in range(0, maxChoosableInteger
         __ pool & mask __ 0:
           newPool = pool | mask
           __ helper(newPool, target - (i + 1), visited) __ False:
@@ -32,7 +32,7 @@ class Solution(object
       r_ True
     self.maxPool = 0
     mask = 1
-    for i in range(0, maxChoosableInteger
+    ___ i in range(0, maxChoosableInteger
       self.maxPool |= mask
       mask = mask << 1
     pool = 0

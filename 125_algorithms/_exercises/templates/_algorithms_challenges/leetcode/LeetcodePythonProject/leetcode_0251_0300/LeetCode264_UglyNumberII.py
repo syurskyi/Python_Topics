@@ -12,7 +12,7 @@ class Solution(object
         """
         res = [1]
         ind2, ind3, ind5 = 0, 0, 0
-        for _ in range(1, n
+        ___ _ in range(1, n
             val = min(res[ind2]*2, res[ind3]*3, res[ind5]*5)
             res.append(val)
             __ val __ res[ind2]*2: ind2 += 1
@@ -25,7 +25,7 @@ class Solution(object
             10,
             20,
         ]
-        for n in testCases:
+        ___ n in testCases:
             print('n: %s' % (n))
             result = self.nthUglyNumber(n)
             print('result: %s' % (result))

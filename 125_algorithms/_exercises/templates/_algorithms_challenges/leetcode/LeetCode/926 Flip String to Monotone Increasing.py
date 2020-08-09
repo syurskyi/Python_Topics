@@ -43,20 +43,20 @@ class Solution:
         O(N)
         """
         n = le.(S)
-        Z = [0 for _ in range(n+1)]  # let Z[i] be #zero in A[i:]
-        O = [0 for _ in range(n+1)]  # let O[i] be #one in A[:i]
-        for i in range(1, n+1
+        Z = [0 ___ _ in range(n+1)]  # let Z[i] be #zero in A[i:]
+        O = [0 ___ _ in range(n+1)]  # let O[i] be #one in A[:i]
+        ___ i in range(1, n+1
             O[i] = O[i-1]
             __ S[i-1] __ "1":
                 O[i] += 1
 
-        for i in range(n-1, -1, -1
+        ___ i in range(n-1, -1, -1
             Z[i] = Z[i+1]
             __ S[i] __ "0":
                 Z[i] += 1
 
         ret = float('inf')
-        for i in range(n
+        ___ i in range(n
             ret = min(ret, O[i] + Z[i+1])
 
         r_ ret

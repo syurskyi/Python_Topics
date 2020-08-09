@@ -42,17 +42,17 @@ from typing ______ List
 class Solution:
     ___ isAlienSorted(self, words: List[str], order: str) -> bool:
         h = {}
-        for i, c in enumerate(order
+        ___ i, c in enumerate(order
             h[c] = i
 
-        for i in range(1, le.(words)):
+        ___ i in range(1, le.(words)):
             __ self.cmp(words[i], words[i-1], h) __ -1:
                 r_ False
 
         r_ True
 
     ___ cmp(self, w1, w2, h
-        for c1, c2 in zip(w1, w2
+        ___ c1, c2 in zip(w1, w2
             __ h[c1] < h[c2]:
                 r_ -1
             ____ h[c1] > h[c2]:

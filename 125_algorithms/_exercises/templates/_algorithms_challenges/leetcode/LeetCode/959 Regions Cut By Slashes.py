@@ -115,8 +115,8 @@ class Solution:
         m, n = le.(grid), le.(grid[0])
         ds = DisjointSet()
         T, R, B, L = range(4)  # top, right, bottom, left
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 e = grid[i][j]
                 __ e __ "/" or e __ " ":
                     ds.union((i, j, B), (i, j, R))
@@ -139,7 +139,7 @@ class Solution:
 
         r_ le.(set(
             ds.find(x)
-            for x in ds.pi.keys()
+            ___ x in ds.pi.keys()
         ))
 
 

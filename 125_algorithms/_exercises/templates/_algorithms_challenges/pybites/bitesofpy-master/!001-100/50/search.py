@@ -23,11 +23,11 @@ ___ get_feed_entries(feed=FEED
     """
     f = feedparser.parse(feed)
     result = []
-    for item in f.entries:
+    ___ item in f.entries:
         result.append(Entry(_convert_struct_time_to_dt(item.published_parsed),
                             item.title,
                             item.link,
-                            [t.term.lower() for t in item.tags]))
+                            [t.term.lower() ___ t in item.tags]))
     r_ result
 
 
@@ -43,9 +43,9 @@ ___ filter_entries_by_tag(search, entry
        3. Else: match if search is in tags
     """
     __ '&' in search:
-        r_ all(tag.lower() in entry.tags for tag in search.split('&'))
+        r_ all(tag.lower() in entry.tags ___ tag in search.split('&'))
     __ '|' in search:
-        r_ any(tag.lower() in entry.tags for tag in search.split('|'))
+        r_ any(tag.lower() in entry.tags ___ tag in search.split('|'))
     r_ search.lower() in entry.tags
 
 
@@ -70,8 +70,8 @@ ___ main(
         __ term __ 'q':
             print('Bye')
             break
-        matches = sorted([entry for entry in entries __ filter_entries_by_tag(term, entry)])
-        for match in matches:
+        matches = sorted([entry ___ entry in entries __ filter_entries_by_tag(term, entry)])
+        ___ match in matches:
             print(f'{match.date:10} | {match.title:50} | {match.link}')
         print(f'\n{le.(matches)} entr{"y" __ le.(matches) __ 1 else "ies"} matched')
 

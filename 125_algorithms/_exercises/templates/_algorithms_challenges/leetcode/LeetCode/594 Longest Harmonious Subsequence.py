@@ -23,11 +23,11 @@ class Solution:
         counter and iterate
         """
         counter = defaultdict(int)
-        for n in nums:
+        ___ n in nums:
             counter[n] += 1
 
         ret = 0
-        for k, v in counter.items(
+        ___ k, v in counter.items(
             __ k + 1 in counter:
                 ret = max(ret, v + counter[k + 1])
 

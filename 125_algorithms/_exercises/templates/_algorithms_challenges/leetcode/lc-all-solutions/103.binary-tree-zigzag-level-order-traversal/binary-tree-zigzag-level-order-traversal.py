@@ -18,7 +18,7 @@ class Solution(object
     odd = True
     w___ stack:
       level = []
-      for k in range(0, le.(stack)):
+      ___ k in range(0, le.(stack)):
         top = stack.popleft()
         __ top is None:
           continue

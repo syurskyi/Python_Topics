@@ -10,7 +10,7 @@ class Solution(object
       __ target __ 0:
         r_ res.append(path + [])
 
-      for i in range(start, le.(candidates)):
+      ___ i in range(start, le.(candidates)):
         __ target - candidates[i] >= 0:
           path.append(candidates[i])
           dfs(candidates, i, target - candidates[i], path, res)

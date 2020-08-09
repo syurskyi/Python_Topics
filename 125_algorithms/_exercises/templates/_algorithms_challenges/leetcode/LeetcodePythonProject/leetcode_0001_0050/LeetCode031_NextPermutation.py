@@ -33,7 +33,7 @@ class Solution(object
             [3, 2, 1],
             [1, 1, 5],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             self.nextPermutation(nums)
             print('nums: %s' % nums)

@@ -16,7 +16,7 @@ class Solution:
         w___ n:
             queue = []
 
-            for s in ans:
+            ___ s in ans:
                 __ n != 2:
                     queue.append('0' + s + '0')
 

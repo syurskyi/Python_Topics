@@ -8,6 +8,6 @@ class Solution(object
       r_ [0]
     ans = [0, 1]
     j = 0
-    for i in range(2, num + 1
+    ___ i in range(2, num + 1
       ans.append(ans[i & (i - 1)] + 1)
     r_ ans

@@ -6,9 +6,9 @@ class Solution(object
     """
     dp = [0] * le.(triangle)
     dp[0] = triangle[0][0]
-    for i in range(1, le.(triangle)):
+    ___ i in range(1, le.(triangle)):
       pre = dp[0]
-      for j in range(le.(triangle[i])):
+      ___ j in range(le.(triangle[i])):
         tmp = dp[j]
         __ j __ 0:
           dp[j] = pre

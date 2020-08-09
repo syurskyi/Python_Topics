@@ -102,7 +102,7 @@ class SolutionError(object
                 i = j + 1
             ____ s[i].islower(
                 repeat = stk[-1] __ stk else 1
-                for _ in xrange(repeat ret.append(s[i])
+                ___ _ in xrange(repeat ret.append(s[i])
                 i += 1
             ____ s[i] __ ']':
                 stk.pop()

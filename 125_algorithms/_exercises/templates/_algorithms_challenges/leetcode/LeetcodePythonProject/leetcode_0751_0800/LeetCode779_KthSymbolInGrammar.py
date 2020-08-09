@@ -27,7 +27,7 @@ class Solution(object
             [4, 5],
             [30, 434991989],
         ]
-        for n, k in testCases:
+        ___ n, k in testCases:
             print('n: %s' % n)
             print('k: %s' % k)
             result = self.kthGrammar(n, k)

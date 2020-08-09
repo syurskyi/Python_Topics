@@ -26,11 +26,11 @@ class Solution:
         n = le.(A)
         P = [-INFINITY] + [INFINITY] * n
 
-        for i in range(n
+        ___ i in range(n
             j = self.binary_search(P, A[i])
             P[j] = A[i]
 
-        for i in range(n, -1, -1
+        ___ i in range(n, -1, -1
             __ P[i] < INFINITY:
                 r_ i
 
@@ -72,8 +72,8 @@ class Solution:
         # pi = [0] * n
         # end_at = -1
 
-        for i in range(n
-            for j in range(i
+        ___ i in range(n
+            ___ j in range(i
                 """
                 `dp[j]` the existing subseq end at `j`
                 `+ 1` means included `A[i]`

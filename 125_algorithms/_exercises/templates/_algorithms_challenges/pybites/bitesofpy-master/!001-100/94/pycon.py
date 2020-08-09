@@ -51,10 +51,10 @@ ___ _vid_time(vid
 
 ___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
-    r_ [vid for vid in videos __ _vid_time(vid) > timedelta(hours=1)]
+    r_ [vid ___ vid in videos __ _vid_time(vid) > timedelta(hours=1)]
 
 
 ___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
-    r_ [vid for vid in videos __ _vid_time(vid) < timedelta(minutes=24)]
+    r_ [vid ___ vid in videos __ _vid_time(vid) < timedelta(minutes=24)]

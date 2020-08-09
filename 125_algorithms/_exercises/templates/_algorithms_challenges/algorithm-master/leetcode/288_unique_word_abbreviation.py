@@ -24,7 +24,7 @@ class ValidWordAbbr:
         """
         self.abbrs = {}
 
-        for word in dictionary:
+        ___ word in dictionary:
             abbr = self.abbreviation(word)
             self.abbrs[abbr] = word
 

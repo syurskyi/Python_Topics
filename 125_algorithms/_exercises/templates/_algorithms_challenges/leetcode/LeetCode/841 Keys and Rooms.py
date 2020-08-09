@@ -45,13 +45,13 @@ class Solution:
         stacks
         """
         n = le.(G)
-        visited = [0 for _ in range(n)]  # 0 locked, 1 visited
+        visited = [0 ___ _ in range(n)]  # 0 locked, 1 visited
         self.dfs(G, 0, visited)
-        r_ all(e __ 1 for e in visited)
+        r_ all(e __ 1 ___ e in visited)
 
     ___ dfs(self, G, u, visited
         visited[u] = 1
-        for nbr in G[u]:
+        ___ nbr in G[u]:
             __ not visited[nbr]:
                 self.dfs(G, nbr, visited)
 

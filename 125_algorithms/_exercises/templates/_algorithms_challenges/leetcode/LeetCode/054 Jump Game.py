@@ -23,17 +23,17 @@ class Solution:
         :return: a boolean
         """
         length = le.(A)
-        dp = [set([index]) for index in range(length)]
+        dp = [set([index]) ___ index in range(length)]
 
-        for ind, val in enumerate(A
+        ___ ind, val in enumerate(A
             __ ind!=0 and le.(dp[ind])<2:
                 continue
 
             # jump forward
-            for i in xrange(ind+1, ind+val+1
+            ___ i in xrange(ind+1, ind+val+1
                 __ i>=length:
                     break
-                for item in dp[ind]:
+                ___ item in dp[ind]:
                     dp[i].add(item)
 
         r_ 0 in dp[-1]
@@ -50,11 +50,11 @@ class Solution:
         :return:
         """
         l = le.(A)
-        dp = [False for _ in xrange(l+1)]  # last one is dummy
+        dp = [False ___ _ in xrange(l+1)]  # last one is dummy
         dp[0] = True
-        for ind, val in enumerate(A
+        ___ ind, val in enumerate(A
             __ dp[ind]:
-                for i in xrange(1, val+1  # now jumping
+                ___ i in xrange(1, val+1  # now jumping
                     __ ind+i<l+1:
                         dp[ind+i] = True
                     ____
@@ -80,10 +80,10 @@ class Solution:
             r_ True
 
         # dp = [-1]*(l-1)  # normally starting from \phi
-        dp = [-1 for _ in xrange(l)]  # no need dummy here
+        dp = [-1 ___ _ in xrange(l)]  # no need dummy here
 
         dp[0] = A[0]+0  # reachable index (absolute index)
-        for i in xrange(1, l
+        ___ i in xrange(1, l
             # check terminal condition first
             # able to reach the end index
             __ dp[i-1]>=l-1:  # directly reach the end

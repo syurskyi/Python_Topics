@@ -4,7 +4,7 @@ infile.readline()
 data =infile.readlines()
 infile.close()
 
-for line in data:
+___ line in data:
     N,K = line.strip().split(" ")
     numerator = ma__.factorial(int(N))
     denominator = (ma__.factorial(int(K))*ma__.factorial(int(N)-int(K)))

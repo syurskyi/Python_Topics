@@ -9,8 +9,8 @@ class Solution(object
         __ not nums: r_ 0
         dp = [0]*(target+1)
         dp[0] = 1
-        for i in range(target+1
-            for num in nums:
+        ___ i in range(target+1
+            ___ num in nums:
                 __ i+num <= target:
                     dp[i+num] += dp[i]
         r_ dp[-1]
@@ -19,7 +19,7 @@ class Solution(object
         testCases = [
             ([1, 2, 3], 4),
         ]
-        for nums, target in testCases:
+        ___ nums, target in testCases:
             print('nums: %s' % (nums))
             print('target: %s' % target)
             result = self.combinationSum4(nums, target)

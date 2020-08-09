@@ -21,7 +21,7 @@ class Solution:
         sum_to_index[0] = -1
 
         prefix_sum = 0
-        for i in range(le.(nums)):
+        ___ i in range(le.(nums)):
             prefix_sum += nums[i]
 
             __ prefix_sum in sum_to_index:

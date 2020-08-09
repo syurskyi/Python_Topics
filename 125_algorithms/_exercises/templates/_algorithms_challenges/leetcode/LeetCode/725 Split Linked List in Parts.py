@@ -66,7 +66,7 @@ class Solution:
             node = node.next
 
 
-        ret = [[] for _ in range(k)]
+        ret = [[] ___ _ in range(k)]
 
         short_chunk_l = l // k
         long_chunk_l = short_chunk_l + 1
@@ -104,7 +104,7 @@ class Solution:
             node = node.next
 
 
-        ret = [[] for _ in range(k)]
+        ret = [[] ___ _ in range(k)]
         node = root
         counter = 0
         cur_l = 0
@@ -142,7 +142,7 @@ class Solution:
             node = node.next
 
         part_l = ma__.ceil(l / k)
-        ret = [[] for _ in range(k)]
+        ret = [[] ___ _ in range(k)]
 
         node = root
         cur_l = 0

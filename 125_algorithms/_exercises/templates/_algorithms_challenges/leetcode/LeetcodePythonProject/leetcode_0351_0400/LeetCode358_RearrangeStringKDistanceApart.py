@@ -9,10 +9,10 @@ ______ heapq
 class Solution(object
     ___ rearrangeString(self, s, k
         hashmap = {}
-        for c in s:
+        ___ c in s:
             hashmap[c] = hashmap.get(c, 0)+1
         heap = []
-        for c, freq in hashmap.items(
+        ___ c, freq in hashmap.items(
             heapq.heappush(heap, [-freq, c])
         queue = []
         res = []
@@ -34,7 +34,7 @@ class Solution(object
             ('aaabc', 3),
             ('aaadbbcc', 2),
         ]
-        for s, k in testCases:
+        ___ s, k in testCases:
             print('s: %s' % (s))
             print('k: %s' % (k))
             result = self.rearrangeString(s, k)

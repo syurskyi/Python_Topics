@@ -36,21 +36,21 @@ class Solution:
         """
         F = defaultdict(lambda: defaultdict(bool))
         n = le.(s)
-        for i in range(n
+        ___ i in range(n
             F[i][i] = True
             F[i][i+1] = True
 
-        for i in range(n-1, -1, -1
-            for j in range(i+2, n+1
+        ___ i in range(n-1, -1, -1
+            ___ j in range(i+2, n+1
                 __ s[i] __ s[j-1]:
                     F[i][j] = F[i+1][j-1]
                 ____
                     F[i][j] = False
 
-        r_ sum(
+        r_ su.(
             1
-            for i in range(n)
-            for j in range(i+1, n+1)
+            ___ i in range(n)
+            ___ j in range(i+1, n+1)
             __ F[i][j]
         )
 

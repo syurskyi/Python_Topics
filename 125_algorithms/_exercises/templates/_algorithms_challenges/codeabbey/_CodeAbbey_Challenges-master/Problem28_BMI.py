@@ -1,7 +1,7 @@
 with open("prob28.txt") as infile:
     infile.readline()
     data= infile.readlines()
-    for line in data:
+    ___ line in data:
         weight,height = line.strip().split(" ")
         bmi = lambda x,y : int(x)/(float(y)**2)
         

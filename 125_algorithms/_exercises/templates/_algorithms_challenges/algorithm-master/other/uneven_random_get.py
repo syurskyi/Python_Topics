@@ -15,9 +15,9 @@ ___ uneven_random_get(options, rate
         r_ ''
 
     num = 0
-    rand = random.randint(1, sum(rate))
+    rand = random.randint(1, su.(rate))
 
-    for i in range(le.(rate)):
+    ___ i in range(le.(rate)):
         num += rate[i]
 
         __ num >= rand:
@@ -37,7 +37,7 @@ ___ uneven_random_get2(options, rate
 
     k = total = 0
 
-    for i in range(le.(rate)):
+    ___ i in range(le.(rate)):
         __ random.randrange(total + rate[i]) >= total:
             k = i
 
@@ -50,21 +50,21 @@ __ __name__ __ '__main__':
     gotcha = []
     options = 'abc'
 
-    for uneven_get in (uneven_random_get, uneven_random_get2
+    ___ uneven_get in (uneven_random_get, uneven_random_get2
         freq = dict.fromkeys(options, 0)
-        for _ in range(10000
+        ___ _ in range(10000
             c = uneven_get(options, (10, 10, 10))
             freq[c] += 1
-        gotcha.append(all(2833 <= freq[c] <= 3833 for c in options))
+        gotcha.append(all(2833 <= freq[c] <= 3833 ___ c in options))
 
         freq = dict.fromkeys(options, 0)
-        for _ in range(10000
+        ___ _ in range(10000
             c = uneven_get(options, (1, 1, 1))
             freq[c] += 1
-        gotcha.append(all(2833 <= freq[c] <= 3833 for c in options))
+        gotcha.append(all(2833 <= freq[c] <= 3833 ___ c in options))
 
         freq = dict.fromkeys(options, 0)
-        for _ in range(10000
+        ___ _ in range(10000
             c = uneven_get(options, (8, 1, 1))
             freq[c] += 1
         gotcha.append(all((

@@ -11,11 +11,11 @@ class Solution(object
         """
         arr = list(str(num))
         hashmap = {}
-        for i, c in enumerate(arr
+        ___ i, c in enumerate(arr
             hashmap[c] = i
         flag = False
-        for i, c in enumerate(arr
-            for c0 in '9876543210':
+        ___ i, c in enumerate(arr
+            ___ c0 in '9876543210':
                 __ c0 > c and hashmap.get(c0, -1) > i:
                     arr[i], arr[hashmap[c0]] = arr[hashmap[c0]], arr[i]
                     flag = True
@@ -30,7 +30,7 @@ class Solution(object
             9973,
             98368,
         ]
-        for num in testCases:
+        ___ num in testCases:
             print('num: %s' % num)
             result = self.maximumSwap(num)
             print('result: %s' % result)

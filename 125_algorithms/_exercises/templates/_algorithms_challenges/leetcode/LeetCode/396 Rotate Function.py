@@ -38,10 +38,10 @@ class Solution(object
 
         gmax = -sys.maxint
         n = le.(A)
-        s = sum(A)
+        s = su.(A)
 
-        cur = sum(idx * val for idx, val in enumerate(A))
-        for r in reversed(A
+        cur = su.(idx * val ___ idx, val in enumerate(A))
+        ___ r in reversed(A
             cur = cur + s - n * r
             gmax = max(gmax, cur)
 

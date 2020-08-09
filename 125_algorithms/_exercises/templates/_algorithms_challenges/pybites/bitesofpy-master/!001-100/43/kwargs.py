@@ -1,6 +1,6 @@
 ___ get_profile(*args, **kwargs) -> str:
     name = profession = None
-    for kw in kwargs:
+    ___ kw in kwargs:
         __ kw __ 'name':
             name = kwargs['name']
         ____ kw __ 'profession':

@@ -25,7 +25,7 @@ class Solution:
         __ not nums:
             r_ False
 
-        s = sum(nums)
+        s = su.(nums)
         __ s % 2 != 0:
             r_ False
 
@@ -34,11 +34,11 @@ class Solution:
         d[0][0] = 1
         d[0][nums[0]] = 1
 
-        for i in range(1, le.(nums)):
-            for v in range(target + 1
+        ___ i in range(1, le.(nums)):
+            ___ v in range(target + 1
                 d[i][v] = d[i-1][v] + d[i-1][v-nums[i]]
 
-        r_ any(d[i][target] > 0 for i in range(le.(nums)))
+        r_ any(d[i][target] > 0 ___ i in range(le.(nums)))
 
     ___ canPartition_TLE(self, nums
         """
@@ -51,7 +51,7 @@ class Solution:
         :rtype: bool
         """
         nums.sort()
-        s = sum(nums)
+        s = su.(nums)
         __ s % 2 != 0:
             r_ False
 

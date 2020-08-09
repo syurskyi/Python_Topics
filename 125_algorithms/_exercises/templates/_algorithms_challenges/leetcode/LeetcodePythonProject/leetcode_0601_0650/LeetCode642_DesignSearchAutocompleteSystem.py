@@ -20,9 +20,9 @@ class AutocompleteSystem(object
         self.root = TreeNode(None)
         self.node = self.root
         self.s = ''
-        for s, count in zip(sentences, times
+        ___ s, count in zip(sentences, times
             node = self.root
-            for c in s:
+            ___ c in s:
                 __ c not in node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
@@ -47,17 +47,17 @@ class AutocompleteSystem(object
                 node = self.node.children[c]
                 self.node = node
                 candidates = node.candidates
-                res = [(-count, s) for s, count in candidates.items()]
+                res = [(-count, s) ___ s, count in candidates.items()]
                 res.sort()
                 res = res[:3]
-                r_ [s for count, s in res]
+                r_ [s ___ count, s in res]
             ____
                 self.node = None
                 r_ []
     
     ___ addCandidate(self, s
         node = self.root
-        for c in s:
+        ___ c in s:
             __ c not in node.children:
                 newNode = TreeNode(c)
                 node.children[c] = newNode

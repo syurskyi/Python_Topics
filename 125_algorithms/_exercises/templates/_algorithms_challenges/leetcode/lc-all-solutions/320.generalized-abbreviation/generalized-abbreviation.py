@@ -7,8 +7,8 @@ class Solution(object
 
     ___ dfs(w, start, res
       res.append(w)
-      for i in range(start, le.(w)):
-        for l in range(1, le.(w) - i + 1
+      ___ i in range(start, le.(w)):
+        ___ l in range(1, le.(w) - i + 1
           lstr = str(l)
           llen = le.(lstr)
           dfs(w[:i] + lstr + w[i + l:], i + 2 + llen - 1, res)

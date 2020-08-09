@@ -12,11 +12,11 @@ class Cipher:
             raise ValueError()
 
     ___ encode(self, phrase
-        r_ ''.join([chr(self.wrap(ord(c) + self.offset(i))) for i, c in
+        r_ ''.join([chr(self.wrap(ord(c) + self.offset(i))) ___ i, c in
                         enumerate(self.clean(phrase))])
 
     ___ decode(self, phrase
-        r_ ''.join([chr(self.wrap(ord(c) - self.offset(i))) for i, c in
+        r_ ''.join([chr(self.wrap(ord(c) - self.offset(i))) ___ i, c in
                         enumerate(self.clean(phrase))])
 
     ___ clean(self, phrase
@@ -24,7 +24,7 @@ class Cipher:
 
     ___ generate_random_key(self
         r_ ''.join(random.SystemRandom().choice(string.ascii_lowercase)
-                       for _ in range(self.random_key_length))
+                       ___ _ in range(self.random_key_length))
 
     ___ valid_key(self
         r_ self.key.isalpha() and self.key.islower()

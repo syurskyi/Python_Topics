@@ -8,7 +8,7 @@ class Solution(object
     ___ find132pattern(self, nums
         s3 = float('-inf')
         stack = []
-        for i in range(le.(nums)-1, -1, -1
+        ___ i in range(le.(nums)-1, -1, -1
             num = nums[i]
             __ num < s3:
                 r_ True
@@ -22,7 +22,7 @@ class Solution(object
             [3, 1, 4, 2],
             [1, 2, 3, 4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.find132pattern(nums)
             print('result: %s' % result)

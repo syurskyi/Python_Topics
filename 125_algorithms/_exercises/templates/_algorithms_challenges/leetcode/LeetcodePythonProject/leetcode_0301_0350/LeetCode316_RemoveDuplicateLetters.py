@@ -9,9 +9,9 @@ class Solution(object
         __ not s: r_ ''
         cnt = [0]*26
         pos = 0
-        for c in s:
+        ___ c in s:
             cnt[ord(c)-ord('a')] += 1
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             __ s[i] < s[pos]:
                 pos = i
             cnt[ord(c)-ord('a')] -= 1
@@ -22,14 +22,14 @@ class Solution(object
     ___ removeDuplicateLetters_another(self, s
         __ not s: r_ ''
         lastPosMap = {}
-        for i, c in enumerate(s
+        ___ i, c in enumerate(s
             lastPosMap[c] = i
         length = le.(lastPosMap)
         res = ['a']*length
         begin, end = 0, min(lastPosMap.values())
-        for i in range(length
+        ___ i in range(length
             minChar = chr(ord('z')+1)
-            for j in range(begin, end+1
+            ___ j in range(begin, end+1
                 __ s[j] in lastPosMap and s[j] < minChar:
                     minChar = s[j]
                     begin = j+1
@@ -45,7 +45,7 @@ class Solution(object
             'bcabc',
             'cbacbcbc',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % (s))
             result = self.removeDuplicateLetters(s)
             print('result: %s' % (result))

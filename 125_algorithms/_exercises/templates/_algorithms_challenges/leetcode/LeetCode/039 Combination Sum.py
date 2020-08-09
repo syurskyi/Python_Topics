@@ -29,14 +29,14 @@ class Solution:
         r_ result
 
     ___ get_combination(self, target, candidates, current, result
-        __ not candidates or sum(current)>target:
+        __ not candidates or su.(current)>target:
             r_
-        __ sum(current)__target:
+        __ su.(current)__target:
             result.append(current)
             r_
 
         # add one of from the candidates
-        for ind, val in enumerate(candidates
+        ___ ind, val in enumerate(candidates
             self.get_combination(target, candidates[ind:], current+[val], result)  # candidates[ind:] since possible repeat
 
 

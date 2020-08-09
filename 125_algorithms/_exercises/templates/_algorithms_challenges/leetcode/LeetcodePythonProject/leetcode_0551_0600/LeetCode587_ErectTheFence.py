@@ -18,7 +18,7 @@ class Solution(object
         res = set()
         first = points[0]
         firstInd = 0
-        for i in range(1, le.(points)):
+        ___ i in range(1, le.(points)):
             __ points[i].x < first.x:
                 first = points[i]
                 firstInd = i
@@ -30,7 +30,7 @@ class Solution(object
             flag = False
             nextPoint = points[0]
             nextInd = 0
-            for i in range(1, le.(points)):
+            ___ i in range(1, le.(points)):
                 __ i __ curInd:
                     continue
                 cross = self.crossProductLength(cur, points[i], nextPoint)
@@ -38,7 +38,7 @@ class Solution(object
                     (cross __ 0 and self.distance(points[i], cur) > self.distance(nextPoint, cur)):
                     nextPoint = points[i]
                     nextInd = i
-            for i, point in enumerate(points
+            ___ i, point in enumerate(points
                 __ i __ curInd:
                     continue
                 cross = self.crossProductLength(cur, point, nextPoint)
@@ -63,9 +63,9 @@ class Solution(object
             [[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]],
             [[1,2],[2,2],[4,2]],
         ]
-        for points in testCases:
+        ___ points in testCases:
             print('points: %s' % points)
-            points = [Point(a, b) for a, b in points]
+            points = [Point(a, b) ___ a, b in points]
             result = self.outerTrees(points)
             print('result: %s' % result)
             print('-='*30+'-')

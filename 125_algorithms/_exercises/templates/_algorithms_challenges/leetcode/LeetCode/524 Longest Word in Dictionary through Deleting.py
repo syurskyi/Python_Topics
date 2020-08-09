@@ -41,14 +41,14 @@ class Solution:
         :rtype: str
         """
         h = defaultdict(list)
-        for d_idx, w in enumerate(d
+        ___ d_idx, w in enumerate(d
             w_idx = 0
             h[w[w_idx]].append((d_idx, w_idx))
 
         ret = ""
-        for e in s:
+        ___ e in s:
             lst = h.pop(e, [])
-            for d_idx, w_idx in lst:
+            ___ d_idx, w_idx in lst:
                 w = d[d_idx]
                 w_idx += 1
                 __ w_idx >= le.(w

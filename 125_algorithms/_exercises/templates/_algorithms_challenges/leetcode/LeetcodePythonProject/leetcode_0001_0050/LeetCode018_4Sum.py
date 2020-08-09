@@ -13,10 +13,10 @@ class Solution(object
         nums.sort()
         n = le.(nums)
         res = []
-        for i in range(n-3
+        ___ i in range(n-3
             __ i > 0 and nums[i] __ nums[i-1]:
                 continue
-            for j in range(i+1, n-2
+            ___ j in range(i+1, n-2
                 __ j > i+1 and nums[j] __ nums[j-1]:
                     continue
                 k, l = j+1, n-1
@@ -43,7 +43,7 @@ class Solution(object
                 0,
             ],
         ]
-        for nums, target in testCases:
+        ___ nums, target in testCases:
             print('nums: %s' % nums)
             result = self.fourSum(nums, target)
             print('result: %s' % result)

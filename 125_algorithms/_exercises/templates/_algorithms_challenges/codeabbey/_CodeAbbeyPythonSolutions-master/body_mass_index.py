@@ -4,7 +4,7 @@ results = []
 ___ get_bmi(weight, height
     r_ weight/height**2
 
-for i in range(amount_values
+___ i in range(amount_values
     weight, height = map(float, input().split())
     bmi = get_bmi(weight, height)
     __(bmi < 18.5

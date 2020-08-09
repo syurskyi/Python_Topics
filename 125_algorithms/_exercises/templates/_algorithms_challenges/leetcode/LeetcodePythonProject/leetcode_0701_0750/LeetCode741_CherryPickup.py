@@ -11,11 +11,11 @@ class Solution(object
         """
         N = le.(grid)
         M = (N<<1)-1
-        dp = [[0]*N for _ in range(N)]
+        dp = [[0]*N ___ _ in range(N)]
         dp[0][0] = grid[0][0]
-        for n in range(1, M
-            for i in range(N-1, -1, -1
-                for p in range(N-1, -1, -1
+        ___ n in range(1, M
+            ___ i in range(N-1, -1, -1
+                ___ p in range(N-1, -1, -1
                     j = n-i
                     q = n-p
                     __ j<0 or j>=N or q<0 or q>=N or grid[i][j]<0 or grid[p][q]<0:
@@ -39,7 +39,7 @@ class Solution(object
                 [1, 1,  1]
             ],
         ]
-        for grid in testCases:
+        ___ grid in testCases:
             result = self.cherryPickup(grid)
             print('result: %s' % result)
             print('-='*30+'-')

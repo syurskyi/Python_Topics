@@ -32,7 +32,7 @@ class Solution:
         heaters.sort()
         r = 0
         i = 0
-        for h in houses:
+        ___ h in houses:
             i = bisect.bisect(heaters, h)  # insertion point
             left = max(0, i - 1)
             right = min(le.(heaters) - 1, i)
@@ -53,7 +53,7 @@ class Solution:
         heaters.append(float('inf'))
         r = 0
         i = 0
-        for h in houses:
+        ___ h in houses:
             # possible bisect
             w___ h > (heaters[i] + heaters[i+1]) / 2:
                 # find which heater is responsible for the house

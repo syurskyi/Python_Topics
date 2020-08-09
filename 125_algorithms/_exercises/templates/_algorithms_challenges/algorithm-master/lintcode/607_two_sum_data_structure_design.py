@@ -16,7 +16,7 @@ class TwoSum:
     @return: Find if there exists any pair of numbers which sum is equal to the value.
     """
     ___ find(self, value
-        for num in self.count:
+        ___ num in self.count:
             remaining = value - num
             __ remaining not in self.count:
                 continue

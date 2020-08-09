@@ -1,6 +1,6 @@
 ___ savingsCalc(calculations
     answer = []
-    for calculation in range(calculations
+    ___ calculation in range(calculations
         # start = Starting money, end = Goal amount, rate = Interest rate
         start, end, rate = raw_input().split()
         rate = (int(rate) / 100.00) + 1

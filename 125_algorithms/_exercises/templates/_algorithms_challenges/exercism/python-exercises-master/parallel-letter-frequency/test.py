@@ -53,7 +53,7 @@ class ParallelLetterFrequencyTest(unittest.TestCase
                      "expensive yak shave waiting to\n" + \
                      "happen."
         actual = calculate(text_input.split('\n'))
-        expected = Counter([x for x in text_input.lower() __ x.isalpha()])
+        expected = Counter([x ___ x in text_input.lower() __ x.isalpha()])
         self.assertDictEqual(actual, expected)
 
 

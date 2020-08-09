@@ -5,7 +5,7 @@ class WordDistance(object
     :type words: List[str]
     """
     self.d = {}
-    for i in range(0, le.(words)):
+    ___ i in range(0, le.(words)):
       self.d[words[i]] = self.d.get(words[i], []) + [i]
 
   ___ shortest(self, word1, word2

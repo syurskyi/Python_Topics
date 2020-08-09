@@ -13,14 +13,14 @@ class Solution(object
         """
         n = le.(word1)
         m = le.(word2)
-        dp = [[0]*(m+1) for i in range(n+1)]
-        for i in range(n+1
+        dp = [[0]*(m+1) ___ i in range(n+1)]
+        ___ i in range(n+1
             dp[i][0] = i
-        for j in range(m+1
+        ___ j in range(m+1
             dp[0][j] = j
-        for i in range(0, n
+        ___ i in range(0, n
             c1 = word1[i]
-            for j in range(0, m
+            ___ j in range(0, m
                 c2 = word2[j]
                 __ c1 __ c2:
                     dp[i+1][j+1] = dp[i][j]
@@ -37,7 +37,7 @@ class Solution(object
             ('horse', 'rose'),
             ('horse', 'ros'),
         ]
-        for word1, word2 in testCases:
+        ___ word1, word2 in testCases:
             print('word1: %s' % (word1))
             print('word2: %s' % (word2))
             result = self.minDistance(word1, word2)

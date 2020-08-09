@@ -25,7 +25,7 @@ class Solution:
         __ counter_cur __ counter_target:
             ret.append(0)
 
-        for idx in range(le.(target), le.(s)):
+        ___ idx in range(le.(target), le.(s)):
             head = s[idx - le.(target)]
             tail = s[idx]
             counter_cur[tail] += 1

@@ -24,7 +24,7 @@ class Solution(object
         :rtype: List[Interval]
         """
         result = []
-        for interval in intervals:
+        ___ interval in intervals:
             __ interval.end < newInterval.start:
                 result.append(interval)
             ____ interval.start > newInterval.end:
@@ -43,8 +43,8 @@ class Solution(object
             ([[1,2],[3,5],[6,7],[8,10],[12,16],[15,23]], [4,9]),
             ([[1,2],[2,5],[6,7],[8,10],[12,16],[15,23]], [7,9]),
         ]
-        for intervals, newInterval in testCases:
-            intervals = [Interval(x[0], x[1]) for x in intervals]
+        ___ intervals, newInterval in testCases:
+            intervals = [Interval(x[0], x[1]) ___ x in intervals]
             newInterval = Interval(newInterval[0], newInterval[1])
             print('intervals: %s' % (intervals))
             result = self.insert(intervals, newInterval)

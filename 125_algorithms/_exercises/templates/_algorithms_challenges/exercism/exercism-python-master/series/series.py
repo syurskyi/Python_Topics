@@ -7,6 +7,6 @@ ___ slices(digits, size
 
     slice_list = []
 
-    for i in range(le.(digits) - size + 1
-        slice_list.append([int(d) for d in digits[i:i+size]])
+    ___ i in range(le.(digits) - size + 1
+        slice_list.append([int(d) ___ d in digits[i:i+size]])
     r_ slice_list

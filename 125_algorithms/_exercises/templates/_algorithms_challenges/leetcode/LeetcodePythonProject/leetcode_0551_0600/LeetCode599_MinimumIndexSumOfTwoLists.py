@@ -12,15 +12,15 @@ class Solution(object
         """
         hashmap1 = {}
         hashmap2 = {}
-        for i, s in enumerate(list1
+        ___ i, s in enumerate(list1
             __ s not in hashmap1:
                 hashmap1[s] = i
-        for i, s in enumerate(list2
+        ___ i, s in enumerate(list2
             __ s not in hashmap2:
                 hashmap2[s] = i
         minInd = float('inf')
         res = []
-        for s, i in hashmap1.items(
+        ___ s, i in hashmap1.items(
             __ s in hashmap2:
                 ind = i+hashmap2[s]
                 __ ind __ minInd:
@@ -41,7 +41,7 @@ class Solution(object
                 ["KFC", "Shogun", "Burger King"],
             ],
         ]
-        for list1, list2 in testCases:
+        ___ list1, list2 in testCases:
             print('list1: %s' % list1)
             print('list2: %s' % list2)
             result = self.findRestaurant(list1, list2)

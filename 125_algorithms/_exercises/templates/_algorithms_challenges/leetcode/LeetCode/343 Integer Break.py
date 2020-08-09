@@ -26,12 +26,12 @@ class Solution(object
         :type n: int
         :rtype: int
         """
-        F = [None for _ in xrange(n+1)]
+        F = [None ___ _ in xrange(n+1)]
         F[1] = 1
-        for i in xrange(2, n+1
+        ___ i in xrange(2, n+1
             F[i] = max(
                 max(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j))
-                for j in xrange(1, i/2)
+                ___ j in xrange(1, i/2)
             )
 
         r_ F[n]

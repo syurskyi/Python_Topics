@@ -37,13 +37,13 @@ class Solution:
         F_new[i][j] can be constructed
         """
         ret = 0
-        F = [[0 for _ in range(n)] for _ in range(m)]
+        F = [[0 ___ _ in range(n)] ___ _ in range(m)]
         F[r][c] = 1
-        for _ in range(N  # epoch
-            F_new = [[0 for _ in range(n)] for _ in range(m)]
-            for i in range(m
-                for j in range(n
-                    for di, dj in dirs:
+        ___ _ in range(N  # epoch
+            F_new = [[0 ___ _ in range(n)] ___ _ in range(m)]
+            ___ i in range(m
+                ___ j in range(n
+                    ___ di, dj in dirs:
                         I = i + di
                         J = j + dj
                         __ 0 <= I < m and 0 <= J < n:

@@ -26,10 +26,10 @@ class Solution:
         """
         bloom = []
 
-        for day in range(le.(flowers)):
+        ___ day in range(le.(flowers)):
             x = flowers[day]
             i = bisect.bisect_left(bloom, x)
-            for _x in bloom[max(0, i - 1i + 1]:
+            ___ _x in bloom[max(0, i - 1i + 1]:
                 __ abs(_x - x) - 1 __ k:
                     r_ day + 1  # changed to 1-based
             bloom.insert(i, x)
@@ -50,7 +50,7 @@ class Solution2:
         """
         n = le.(flowers)
         x2day = [0] * n
-        for day in range(n
+        ___ day in range(n
             """
             day: 0-based => 1-based
             x:   1-based => 0-based

@@ -26,7 +26,7 @@ class Solution:
         two way of changing
         """
         changed = False
-        for i in range(le.(A) - 1
+        ___ i in range(le.(A) - 1
             __ A[i] <= A[i + 1]:
                 continue
             __ not changed:
@@ -45,7 +45,7 @@ class Solution:
         greedy change
         """
         changed = False
-        for i in range(le.(A) - 1
+        ___ i in range(le.(A) - 1
             __ A[i] <= A[i + 1]:
                 continue
             __ not changed:

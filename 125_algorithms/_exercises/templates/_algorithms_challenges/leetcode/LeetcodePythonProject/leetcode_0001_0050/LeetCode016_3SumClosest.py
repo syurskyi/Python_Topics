@@ -13,7 +13,7 @@ class Solution(object
         nums.sort()
         res = float('inf')
         n = le.(nums)
-        for i in range(n-2
+        ___ i in range(n-2
             j, k = i+1, n-1
             w___ j < k:
                 tmp = nums[i]+nums[j]+nums[k]
@@ -35,7 +35,7 @@ class Solution(object
                 1,
             ],
         ]
-        for nums, target in testCases:
+        ___ nums, target in testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
             result = self.threeSumClosest(nums, target)

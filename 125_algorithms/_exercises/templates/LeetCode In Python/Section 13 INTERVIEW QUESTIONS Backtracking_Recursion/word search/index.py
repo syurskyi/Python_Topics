@@ -17,7 +17,7 @@ class Solution:
         temp = board[x][y]
         board[x][y] = ' '
 
-        for i in range(4
+        ___ i __ ra..(4
             __(self.solution(board, word, x+self.dx[i], y+self.dy[i], cur)):
                 r_ True
 
@@ -28,9 +28,9 @@ class Solution:
         __(le.(word) __ 0
             r_ True
         n = le.(board)
-        for i in range(n
+        ___ i __ ra..(n
             m = le.(board[i])
-            for j in range(m
+            ___ j __ ra..(m
                 __(word[0] __ board[i][j] and self.solution(board, word, i, j, "")):
                     r_ True
         r_ False

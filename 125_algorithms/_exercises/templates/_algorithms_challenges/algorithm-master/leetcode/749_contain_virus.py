@@ -49,10 +49,10 @@ class Solution:
         ex_virus = []
         spreading = []
         walls = []
-        visited = [[False] * n for _ in range(m)]
+        visited = [[False] * n ___ _ in range(m)]
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ G[x][y] __ self.VIRUS and not visited[x][y]:
                     ex_virus.append(set())
                     spreading.append(set())
@@ -61,7 +61,7 @@ class Solution:
 
         _max_save = _max_i = -1
         s = le.(spreading)
-        for i in range(s
+        ___ i in range(s
             t = le.(spreading[i])
             __ t > _max_save:
                 _max_save = t
@@ -70,12 +70,12 @@ class Solution:
         __ _max_save __ -1:
             r_ 0
 
-        for i in range(s
+        ___ i in range(s
             __ i __ _max_i:
-                for x, y in ex_virus[i]:
+                ___ x, y in ex_virus[i]:
                     G[x][y] = self.EX_VIRUS
             ____
-                for x, y in spreading[i]:
+                ___ x, y in spreading[i]:
                     G[x][y] = self.VIRUS
 
         r_ walls[_max_i]
@@ -88,7 +88,7 @@ class Solution:
         __ G[x][y] __ self.VIRUS:
             visited[x][y] = True
             ex_virus[-1].add((x, y))
-            for dx, dy in self.V:
+            ___ dx, dy in self.V:
                 _x = x + dx
                 _y = y + dy
                 self.dfs(_x, _y, G, visited, ex_virus, spreading, walls)

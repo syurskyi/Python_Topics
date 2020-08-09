@@ -20,7 +20,7 @@ class TwoSum(object
     :rtype: bool
     """
     d = self.nums
-    for num in d:
+    ___ num in d:
       t = value - num
       __ t in d:
         __ t __ num:

@@ -14,11 +14,11 @@ class Solution(object
         """
         m = le.(nums) / 2
         d = {}
-        for k in nums:
+        ___ k in nums:
             __ k not in d:
                 d[k] = 1
             ____
                 d[k] += 1
-        for k in d:
+        ___ k in d:
             __ d[k] > m:
                 r_ k

@@ -6,7 +6,7 @@ class TestBitsScreen(object
     ___ test_draw_line(self
         bits_screen = BitsScreen()
         screen = []
-        for _ in range(20
+        ___ _ in range(20
             screen.append(int('00000000', base=2))
         bits_screen.draw_line(screen, width=32, x1=68, x2=80)
         assert_equal(screen[8], int('00001111', base=2))

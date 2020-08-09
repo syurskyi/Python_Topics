@@ -23,8 +23,8 @@ class Solution:
         """
         n = le.(nums)
 
-        S = [0 for _ in xrange(n+1)]
-        for i in xrange(1, n+1
+        S = [0 ___ _ in xrange(n+1)]
+        ___ i in xrange(1, n+1
             S[i] = S[i-1]+nums[i-1]
 
         lo, hi = 0, 1

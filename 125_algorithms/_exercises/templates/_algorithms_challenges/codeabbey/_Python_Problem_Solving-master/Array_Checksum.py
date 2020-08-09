@@ -9,7 +9,7 @@ w___ le.(arr) < data:
     #print('values is in arr are :', arr)
     
     #traversing through each element of the array
-    for x in range(le.(arr)):
+    ___ x in range(le.(arr)):
         
         #print('current array is :', currarr)
         result =  (result + int(arr[x])) * 113

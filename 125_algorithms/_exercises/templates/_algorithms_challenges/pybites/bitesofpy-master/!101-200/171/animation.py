@@ -12,7 +12,7 @@ ___ spinner(seconds
        Does not return anything, only prints to stdout."""
     end = time() + seconds
     spin = cycle(SPINNER_STATES)
-    for s in spin:
+    ___ s in spin:
         print(f'{s}\r', end='', flush=True)
         # sys.stdout.flush()
         sleep(STATE_TRANSITION_TIME)

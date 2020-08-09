@@ -36,7 +36,7 @@ class Solution(object
             "(3906)2 07143 711",
             "+1(19)5 246 5964",
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.maskPII(s)
             print('result: %s' % result)

@@ -10,7 +10,7 @@ class Solution(object
         :rtype: bool
         """
         low, high = 0, 0
-        for c in s:
+        ___ c in s:
             __ c __ '(':
                 low += 1
                 high += 1
@@ -34,7 +34,7 @@ class Solution(object
             '(*()',
             '(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())',
         ]
-        for s in testCases:
+        ___ s in testCases:
             print('s: %s' % s)
             result = self.checkValidString(s)
             print('result: %s' % result)

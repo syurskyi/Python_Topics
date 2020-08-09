@@ -13,11 +13,11 @@ class Solution(object
         arr, k = A, K
         n = le.(arr)
         arr2 = [0]*(n+1)
-        for i in range(n
+        ___ i in range(n
             arr2[i+1] = arr2[i] + arr[i]
         d = []
         res = n+1
-        for i in range(n+1
+        ___ i in range(n+1
             w___ d and arr2[i] - arr2[d[0]] >= k:
                 res = min(res, i-d.pop(0))
             w___ d and arr2[i] <= arr2[d[-1]]:
@@ -56,7 +56,7 @@ class Solution(object
 #                 5,
 #             ],
         ]
-        for a, k in testCase:
+        ___ a, k in testCase:
             res = self.shortestSubarray(a, k)
             print('res: %s' % res)
             print('-='*30+'-')

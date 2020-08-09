@@ -4,9 +4,9 @@ ___ dice_poker(
     rolls = int(input())
     answer = []
     
-    for roll in range(rolls
+    ___ roll in range(rolls
         roll = input().split()
-        values = sorted([x for x in collections.Counter(roll).values()])
+        values = sorted([x ___ x in collections.Counter(roll).values()])
 
         __ sorted(roll) __ ['2', '3', '4', '5', '6']:
             answer.append('big-straight')

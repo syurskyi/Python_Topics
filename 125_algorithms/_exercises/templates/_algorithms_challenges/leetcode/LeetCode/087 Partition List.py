@@ -52,6 +52,6 @@ class Solution:
 
 __ __name____"__main__":
     lst = [ListNode(2), ListNode(1)]
-    for ind in xrange(le.(lst)-1
+    ___ ind in xrange(le.(lst)-1
         lst[ind].next = lst[ind+1]
     Solution().partition(lst[0], 2)

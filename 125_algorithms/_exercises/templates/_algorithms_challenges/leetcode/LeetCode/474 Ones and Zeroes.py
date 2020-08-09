@@ -45,17 +45,17 @@ class Solution:
         __ not strs:
             r_ 0
 
-        F = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
+        F = [[0 ___ _ in range(n + 1)] ___ _ in range(m + 1)]
         z, o = self.count(strs[0])
-        for i in range(m+1
-            for j in range(n+1
+        ___ i in range(m+1
+            ___ j in range(n+1
                 __ i + z<= m and j + o <= n:
                     F[i][j] = 1
 
-        for e in range(1, le.(strs)):
+        ___ e in range(1, le.(strs)):
             z, o = self.count(strs[e])
-            for i in range(m+1
-                for j in range(n+1
+            ___ i in range(m+1
+                ___ j in range(n+1
                     __ i + z <= m and j + o <= n:
                         F[i][j] = max(
                             F[i][j],
@@ -64,14 +64,14 @@ class Solution:
 
         ret = max(
             F[i][j]
-            for i in range(m + 1)
-            for j in range(n + 1)
+            ___ i in range(m + 1)
+            ___ j in range(n + 1)
         )
         r_ ret
 
     ___ count(self, s
         z, o = 0, 0
-        for e in s:
+        ___ e in s:
             __ e __ "0":
                 z += 1
             ____
@@ -93,25 +93,25 @@ class Solution:
         __ not strs:
             r_ 0
 
-        F = [[[0 for _ in range(le.(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
+        F = [[[0 ___ _ in range(le.(strs))] ___ _ in range(n + 1)] ___ _ in range(m + 1)]
         count = Counter(strs[0])
-        for i in range(m+1
-            for j in range(n+1
+        ___ i in range(m+1
+            ___ j in range(n+1
                 __ i + count["0"] <= m and j + count["1"] <= n:
                     F[i][j][0] = 1
 
-        for e in range(1, le.(strs)):
+        ___ e in range(1, le.(strs)):
             count = Counter(strs[e])
-            for i in range(m+1
-                for j in range(n+1
+            ___ i in range(m+1
+                ___ j in range(n+1
                     __ i + count["0"] <= m and j + count["1"] <= n:
                         F[i][j][e] = F[i + count["0"]][j + count["1"]][e-1] + 1
                     F[i][j][e] = max(F[i][j][e], F[i][j][e-1])
 
         ret = max(
             F[i][j][-1]
-            for i in range(m + 1)
-            for j in range(n + 1)
+            ___ i in range(m + 1)
+            ___ j in range(n + 1)
         )
         r_ ret
 
@@ -129,15 +129,15 @@ class Solution:
         __ not strs:
             r_ 0
 
-        F = [[[0 for _ in range(le.(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
+        F = [[[0 ___ _ in range(le.(strs))] ___ _ in range(n + 1)] ___ _ in range(m + 1)]
         count = Counter(strs[0])
         __ count["0"] <= m and count["1"] <= n:
             F[m - count["0"]][n - count["1"]][0] += 1
 
-        for e in range(1, le.(strs)):
+        ___ e in range(1, le.(strs)):
             count = Counter(strs[e])
-            for i in range(m+1
-                for j in range(n+1
+            ___ i in range(m+1
+                ___ j in range(n+1
                     __ count["0"] <= i and count["1"] <= j:
                         F[i - count["0"]][j - count["1"]][e] = F[i][j][e-1] + 1
                     ____
@@ -145,8 +145,8 @@ class Solution:
 
         ret = max(
             F[i][j][-1]
-            for i in range(m + 1)
-            for j in range(n + 1)
+            ___ i in range(m + 1)
+            ___ j in range(n + 1)
         )
         r_ ret
 
@@ -161,7 +161,7 @@ class Solution:
         """
         strs.sort(key=le.)
         ret = 0
-        for a in strs:
+        ___ a in strs:
             count = Counter(a)
             __ count["0"] <= m and count["1"] <= n:
                 ret += 1

@@ -42,7 +42,7 @@ class Solution:
             # reverse
             temp = cur_lst[-1].next
             pre.next = cur_lst[-1]
-            for i in reversed(xrange(k)):
+            ___ i in reversed(xrange(k)):
                 __ i__0:
                     cur_lst[i].next = temp
                 ____
@@ -62,7 +62,7 @@ class Solution:
         """
         lst = []
         cur = node
-        for i in xrange(k
+        ___ i in xrange(k
             __ cur:
                 lst.append(cur)
                 cur = cur.next

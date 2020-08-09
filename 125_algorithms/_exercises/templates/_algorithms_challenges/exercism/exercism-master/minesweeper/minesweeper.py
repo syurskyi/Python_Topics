@@ -15,14 +15,14 @@ class Minesweeper:
     # Split rows (String -> List) and operate on board in place
     @classmethod
     ___ solve(cls, inp
-        inp = list([list(row) for row in inp])
-        r_ list(["".join(row) for row in cls.generate_board(inp)])
+        inp = list([list(row) ___ row in inp])
+        r_ list(["".join(row) ___ row in cls.generate_board(inp)])
 
     @classmethod
     ___ generate_board(cls, inp
         r_ [[cls.convert_square(inp, y, x)
-                 for x, square in enumerate(row)]
-                for y, row in enumerate(inp)]
+                 ___ x, square in enumerate(row)]
+                ___ y, row in enumerate(inp)]
 
     # Only convert squares that are spaces
     @classmethod
@@ -39,7 +39,7 @@ class Minesweeper:
     @classmethod
     ___ num_of_neighbor_mines(cls, inp, y, x
         r_ le.(
-            list([neighbor for neighbor in cls.all_neighbor_coords(
+            list([neighbor ___ neighbor in cls.all_neighbor_coords(
                 inp, y, x) __ cls.is_neighbor_a_mine(
                 inp, neighbor)]))
 
@@ -54,7 +54,7 @@ class Minesweeper:
     # (excluding current coord)
     @classmethod
     ___ all_neighbor_coords(cls, inp, y, x
-        r_ [(y + dy, x + dx) for dy in range(-1, 2) for dx in range(-1, 2)
+        r_ [(y + dy, x + dx) ___ dy in range(-1, 2) ___ dx in range(-1, 2)
                 __ dy != 0 or dx != 0]
 
     @classmethod
@@ -66,7 +66,7 @@ class Minesweeper:
     # Tests if all rows are the same size
     @classmethod
     ___ valid_len(cls, inp
-        r_ all(le.(row) __ le.(inp[0]) for row in inp)
+        r_ all(le.(row) __ le.(inp[0]) ___ row in inp)
 
     @classmethod
     ___ valid_border(cls, inp
@@ -75,7 +75,7 @@ class Minesweeper:
 
     @classmethod
     ___ valid_middle_borders(cls, inp
-        r_ all(cls.valid_middle_border(row) for row in inp[1:-1])
+        r_ all(cls.valid_middle_border(row) ___ row in inp[1:-1])
 
     @classmethod
     ___ valid_middle_border(cls, row
@@ -90,11 +90,11 @@ class Minesweeper:
     @classmethod
     ___ valid_first_or_last_border(cls, row
         r_ (cls.is_corner(row[0]) and cls.is_corner(row[-1]) and
-                all(cls.is_horizontal_edge(square) for square in row[1:-1]))
+                all(cls.is_horizontal_edge(square) ___ square in row[1:-1]))
 
     @classmethod
     ___ valid_squares(cls, inp
-        r_ all(cls.valid_square(square) for row in inp for square in row)
+        r_ all(cls.valid_square(square) ___ row in inp ___ square in row)
 
     @classmethod
     ___ valid_square(cls, square

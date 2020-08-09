@@ -4,7 +4,7 @@ ___ bubbleSort(amount, numbers
 
     w___ not sorted:
         sorted = True
-        for i in range(amount-1
+        ___ i in range(amount-1
             __ numbers[i] > numbers[i+1]:
                 sorted = False
                 swapCount += 1
@@ -12,4 +12,4 @@ ___ bubbleSort(amount, numbers
         passCount += 1
     print('%s %s') % (passCount, swapCount)
 
-bubbleSort(input(),[int(x) for x in raw_input().split()])
+bubbleSort(input(),[int(x) ___ x in raw_input().split()])

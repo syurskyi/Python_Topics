@@ -14,7 +14,7 @@ class Solution(object
         hashset = set()
         __ le.(s) != le.(t
             r_ False
-        for c1, c2 in zip(s, t
+        ___ c1, c2 in zip(s, t
             __ c1 not in hashmap:
                 __ c2 in hashset:
                     r_ False
@@ -33,7 +33,7 @@ class Solution(object
         """
         __ le.(s) != le.(t r_ False
         hashmap1, hashmap2 = {}, {}
-        for c1, c2 in zip(s, t
+        ___ c1, c2 in zip(s, t
             __ c1 in hashmap1 and\
             (c2 not in hashmap2 or hashmap1[c1] != c2 or hashmap2[c2] != c1
                 r_ False
@@ -51,7 +51,7 @@ class Solution(object
             ('foo', 'bar'),
             ('paper', 'title'),
         ]
-        for s, t in testCases:
+        ___ s, t in testCases:
             print('s: %s, t: %s' % (s, t))
             result = self.isIsomorphic(s, t)
             print('result: %s' % (result))

@@ -16,7 +16,7 @@ class Trie(object
     
     ___ insert(self, word
         children = self.root.children
-        for i, c in enumerate(word
+        ___ i, c in enumerate(word
             __ c in children:
                 t = children[c]
             ____
@@ -28,7 +28,7 @@ class Trie(object
     
     ___ searchNode(self, word
         children = self.root.children
-        for c in word:
+        ___ c in word:
             __ c in children:
                 t = children[c]
                 children = t.children

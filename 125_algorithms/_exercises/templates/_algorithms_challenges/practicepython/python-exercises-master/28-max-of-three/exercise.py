@@ -3,7 +3,7 @@ ______ random
 
 ___ max(list
     max = list[0]
-    for el in list:
+    ___ el in list:
         __ el > max:
             max = el
     r_ max

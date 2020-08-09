@@ -63,8 +63,8 @@ class Solution:
         holds = [0] * k  # keys meet when bfs
         visited = set()  # visited cell when bfs
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ maze[x][y] __ self.START:
                     queue.append((x, y))
                 ____ maze[x][y] __ self.GOLD:
@@ -96,8 +96,8 @@ class Solution:
         """
         m, n = le.(maze), le.(maze[0])
 
-        for x, y in queue:
-            for dx, dy in (
+        ___ x, y in queue:
+            ___ dx, dy in (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
 
@@ -136,7 +136,7 @@ class Solution:
         :type doors: list[tuple[int]]
         :rtype: bool
         """
-        for door in doors:
+        ___ door in doors:
             __ not door:
                 continue
 

@@ -15,7 +15,7 @@ class Solution(object
         length = le.(sentence)
         times = [0]*length
         nextInd = [0]*length
-        for i in range(length
+        ___ i in range(length
             ind = i
             curLen = 0
             time = 0
@@ -29,7 +29,7 @@ class Solution(object
             times[i] = time
         ind = 0
         res = 0
-        for _ in range(rows
+        ___ _ in range(rows
             res += times[ind]
             ind = nextInd[ind]
         r_ res
@@ -40,7 +40,7 @@ class Solution(object
             (["a", "bcd", "e"], 3, 6),
             (["I", "had", "apple", "pie"], 4, 5),
         ]
-        for sentence, rows, cols in testCases:
+        ___ sentence, rows, cols in testCases:
             print('sentence: %s' % sentence)
             print('rows: %s' % rows)
             print('cols: %s' % cols)

@@ -12,7 +12,7 @@ class Solution(object
         :rtype: bool
         """
         d = {}
-        for i, e in enumerate(nums
+        ___ i, e in enumerate(nums
             __ e in d:
                 __ i - d[e] <= k:
                     r_ True

@@ -7,7 +7,7 @@ class Solution(object
     """
 
     ___ helper(n, dp
-      for i in range(2, n
+      ___ i in range(2, n
         __ dp[i] __ 1:
           k = i * i
           __ k >= n:
@@ -27,4 +27,4 @@ class Solution(object
     #     if dp[i] == 1:
     #         print i + 1
 
-    r_ sum(dp)
+    r_ su.(dp)

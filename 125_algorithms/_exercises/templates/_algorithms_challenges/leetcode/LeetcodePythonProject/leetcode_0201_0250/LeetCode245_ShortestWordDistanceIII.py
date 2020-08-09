@@ -12,7 +12,7 @@ class Solution(object
         :rtype: int
         """
         res = float('inf')
-        for i, word in enumerate(words
+        ___ i, word in enumerate(words
             __ word in [word1, word2]:
                 target = word2 __ word __ word1 else word1
                 j = i+1

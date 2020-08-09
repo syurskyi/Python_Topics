@@ -17,7 +17,7 @@ class RLEIterator(object
         :rtype: int
         """
         val = -1
-        for _ in range(n
+        ___ _ in range(n
             w___ self.countIdx < le.(self.arr) and \
                     self.arr[self.countIdx] __ 0:
                 self.countIdx += 2

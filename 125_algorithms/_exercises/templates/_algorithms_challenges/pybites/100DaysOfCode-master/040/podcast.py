@@ -31,14 +31,14 @@ ___ store_new_episodes(feed
 
 
 ___ _parse_feed(feed
-    for e in feedparser.parse(feed)['entries']:
+    ___ e in feedparser.parse(feed)['entries']:
         id, title, link = e.get('id'), e.get('title'), e.get('link')
         yield Episode(id, title, link)
 
 
 ___ _update_cache(episodes
     with shelve.open(CACHE) as s:
-        for ep in episodes:
+        ___ ep in episodes:
             __ ep.id not in s:
                 s[ep.id] = ep
 
@@ -47,7 +47,7 @@ ___ get_random_episode(
     with shelve.open(CACHE) as s:
         episodes = list(s.keys())
         random.shuffle(episodes)
-        for key in episodes:
+        ___ key in episodes:
             ep = s[key]
             __ ep.done:
                 print('Nope cannot take this episode as already listened ({})'.format(ep))

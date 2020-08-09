@@ -99,7 +99,7 @@ class H2O_TLE:
         Fixed at HHO pattern
         """
         self.h_cnt = 0
-        self.locks = [Lock() for _ in range(3)]
+        self.locks = [Lock() ___ _ in range(3)]
         self.locks[1].a..
 
 

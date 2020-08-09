@@ -7,10 +7,10 @@ class Solution(object
     """
     d = {}
     n = le.(s1)
-    for c in s1:
+    ___ c in s1:
       d[c] = d.get(c, 0) + 1
     window = {}
-    for i, c in enumerate(s2
+    ___ i, c in enumerate(s2
       window[c] = window.get(c, 0) + 1
       __ i >= le.(s1
         window[s2[i - n]] = window.get(s2[i - n], 0) - 1

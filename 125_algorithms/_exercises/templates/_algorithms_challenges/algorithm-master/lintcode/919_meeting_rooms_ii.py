@@ -20,7 +20,7 @@ class Solution:
 
         time = []
 
-        for x in intervals:
+        ___ x in intervals:
             time.append((x.start, True))
             time.append((x.end, False))
 
@@ -28,7 +28,7 @@ class Solution:
 
         cnt = 0
 
-        for t, is_start in time:
+        ___ t, is_start in time:
             __ is_start:
                 cnt += 1
             ____

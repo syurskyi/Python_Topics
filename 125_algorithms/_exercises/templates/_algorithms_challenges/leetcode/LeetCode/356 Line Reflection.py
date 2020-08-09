@@ -16,10 +16,10 @@ class Solution(object
         :rtype: bool
         """
         d = defaultdict(list)
-        for x, y in points:
+        ___ x, y in points:
             d[y].append(x)
 
-        for v in d.values(
+        ___ v in d.values(
             __ not self.check(v
                 r_ False
 

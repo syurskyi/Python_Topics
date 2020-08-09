@@ -3,7 +3,7 @@ from functools ______ reduce
 
 
 ___ is_perfect(number
-    r_ sum(factors(number)) __ number
+    r_ su.(factors(number)) __ number
 
 
 ___ factors(n
@@ -11,4 +11,4 @@ ___ factors(n
 
 
 ___ pairs_of_factors(n
-    r_ [[i, n / i] for i in range(1, int(ma__.sqrt(n)) + 1) __ n % i __ 0]
+    r_ [[i, n / i] ___ i in range(1, int(ma__.sqrt(n)) + 1) __ n % i __ 0]

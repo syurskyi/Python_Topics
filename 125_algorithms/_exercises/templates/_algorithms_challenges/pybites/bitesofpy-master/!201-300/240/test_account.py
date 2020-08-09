@@ -14,7 +14,7 @@ ___ socrates(
 
 
 ___ add_transactions(acct, values
-    for v in values:
+    ___ v in values:
         acct.add_transaction(v)
 
 

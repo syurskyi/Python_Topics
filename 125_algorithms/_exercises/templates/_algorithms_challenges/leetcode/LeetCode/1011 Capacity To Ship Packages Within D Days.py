@@ -63,12 +63,12 @@ class Solution:
         Binary search on value range (max, sum)
         """
         lo = max(weights)
-        hi = sum(weights)
+        hi = su.(weights)
         w___ lo < hi:
             mid = (lo + hi) // 2
             cnt = 1
             cur = 0
-            for w in weights:
+            ___ w in weights:
                 cur += w
                 __ cur > mid:
                     cnt += 1

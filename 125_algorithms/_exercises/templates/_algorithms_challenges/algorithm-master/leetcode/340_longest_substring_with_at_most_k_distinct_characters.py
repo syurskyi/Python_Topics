@@ -22,7 +22,7 @@ class Solution:
         freqs = collections.defaultdict(int)
         i = cnt = 0
 
-        for j in range(le.(s)):
+        ___ j in range(le.(s)):
             freqs[s[j]] += 1
             __ freqs[s[j]] __ 1:
                 cnt += 1

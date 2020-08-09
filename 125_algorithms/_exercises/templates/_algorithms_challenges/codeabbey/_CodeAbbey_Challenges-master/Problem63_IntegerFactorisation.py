@@ -8,12 +8,12 @@ ___ isPrime(num
     __ num __ 1:
         r_ False
     ____
-        for i in range(2,num
+        ___ i in range(2,num
             __ num%i __ 0:
                 r_ False
         r_ True
 
-for num in data:
+___ num in data:
     num = int(num.strip())
     output = []
     __ isPrime(num
@@ -25,5 +25,5 @@ for num in data:
                output.append(i)
                num = num//i
             i+=1
-    print("*".join([str(x) for x in output]),end=" ")
+    print("*".join([str(x) ___ x in output]),end=" ")
         

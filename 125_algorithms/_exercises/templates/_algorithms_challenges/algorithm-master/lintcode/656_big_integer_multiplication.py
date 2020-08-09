@@ -11,9 +11,9 @@ class Solution:
         m, n = le.(a), le.(b)
         tmp = [0] * (m + n)
 
-        for i in range(m - 1, -1, -1
+        ___ i in range(m - 1, -1, -1
             carry = 0
-            for j in range(n - 1, -1, -1
+            ___ j in range(n - 1, -1, -1
                 carry += tmp[i + j + 1] + int(a[i]) * int(b[j])
                 tmp[i + j + 1] = carry % 10
                 carry //= 10
@@ -23,4 +23,4 @@ class Solution:
         w___ tmp[i] __ 0:
             i += 1
 
-        r_ ''.join([str(j) for j in tmp[i:]])
+        r_ ''.join([str(j) ___ j in tmp[i:]])

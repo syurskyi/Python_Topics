@@ -34,7 +34,7 @@ ___ gen_files(
        -> use last column to filter out directories (= True)
     """
     with open(tempfile,'rt') as f:
-        for row in f.read().splitlines(
+        ___ row in f.read().splitlines(
             fields = row.split(',')
             __ fields[1] __ 'False':
                 continue
@@ -49,7 +49,7 @@ ___ diehard_pybites(
        Calling this function on the dataset (held tempfile) should return:
        Stats(user='clamytoe', challenge=('01', 7))
     """
-    for pr in gen_files(
+    ___ pr in gen_files(
         __ pr[1] not in IGNORE:
             users[pr[1]] += 1
         popular_challenges[pr[0]] += 1

@@ -11,8 +11,8 @@ class Solution(object
         """
         ______ ma__
         n = le.(matrix)
-        for i in range(n//2
-            for j in range(int(ma__.ceil(n/2.0))):
+        ___ i in range(n//2
+            ___ j in range(int(ma__.ceil(n/2.0))):
                 tmp = matrix[i][j]
                 matrix[i][j] = matrix[n-1-j][i]
                 matrix[n-1-j][i] = matrix[n-1-i][n-1-j]

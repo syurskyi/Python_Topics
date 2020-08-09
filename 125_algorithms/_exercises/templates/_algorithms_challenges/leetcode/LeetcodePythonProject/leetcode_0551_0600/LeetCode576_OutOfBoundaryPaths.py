@@ -15,14 +15,14 @@ class Solution(object
         """
         __ N < 0: r_ 0
         mod = 10**9+7
-        count = [[0]*n for _ in range(m)]
+        count = [[0]*n ___ _ in range(m)]
         count[i][j] = 1
         result = 0
-        for _ in range(N
-            tmp = [[0]*n for _ in range(m)]
-            for r in range(m
-                for c in range(n
-                    for nr, nc in (r+1, c), (r-1, c), (r, c+1), (r, c-1
+        ___ _ in range(N
+            tmp = [[0]*n ___ _ in range(m)]
+            ___ r in range(m
+                ___ c in range(n
+                    ___ nr, nc in (r+1, c), (r-1, c), (r, c+1), (r, c-1
                         __ 0 <= nr < m and 0 <= nc < n:
                             tmp[nr][nc] = (tmp[nr][nc]+count[r][c])%mod
                         ____
@@ -35,7 +35,7 @@ class Solution(object
             [2, 2, 2, 0, 0],
             [1, 3, 3, 0, 1],
         ]
-        for m, n, N, i, j in testCases:
+        ___ m, n, N, i, j in testCases:
             print('m: %s' % m)
             print('n: %s' % n)
             print('N: %s' % N)

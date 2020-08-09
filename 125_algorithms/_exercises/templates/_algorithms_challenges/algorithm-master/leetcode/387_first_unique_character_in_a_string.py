@@ -9,10 +9,10 @@ class Solution:
 
         freq = {}
 
-        for c in s:
+        ___ c in s:
             freq[c] = freq.get(c, 0) + 1
 
-        for i in range(le.(s)):
+        ___ i in range(le.(s)):
             __ freq[s[i]] __ 1:
                 r_ i
 

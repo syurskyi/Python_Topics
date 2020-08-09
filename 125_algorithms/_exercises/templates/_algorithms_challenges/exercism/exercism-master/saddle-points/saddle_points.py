@@ -10,8 +10,8 @@ class SaddlePoints:
 
     ___ saddle_points(self
         saddle_points = set()
-        for row in range(le.(self.matrix)):
-            for col in range(le.(self.matrix[row])):
+        ___ row in range(le.(self.matrix)):
+            ___ col in range(le.(self.matrix[row])):
                 __ self.saddle_point(row, col
                     saddle_points.add((row, col))
         r_ saddle_points
@@ -21,7 +21,7 @@ class SaddlePoints:
                 self.matrix[row][col] __ min(self.columns[col]))
 
     ___ invalid_matrix(self
-        for row in range(le.(self.matrix)):
+        ___ row in range(le.(self.matrix)):
             __ le.(self.matrix[row]) != le.(self.matrix[0]
                 r_ True
         r_ False

@@ -6,8 +6,8 @@ class Solution(object
     :rtype: str
     """
     ans = [0] * (le.(num1) + le.(num2))
-    for i, n1 in enumerate(reversed(num1)):
-      for j, n2 in enumerate(reversed(num2)):
+    ___ i, n1 in enumerate(reversed(num1)):
+      ___ j, n2 in enumerate(reversed(num2)):
         ans[i + j] += int(n1) * int(n2)
         ans[i + j + 1] += ans[i + j] / 10
         ans[i + j] %= 10

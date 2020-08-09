@@ -19,7 +19,7 @@ TWEET = 'New @lynda course: {} - {}'
 
 ___ get_tweets(grep
     data = feedparser.parse(RSS)
-    for item in data['entries']:
+    ___ item in data['entries']:
         url = item['id']
         title = item['title']
         published = item['published_parsed']
@@ -44,5 +44,5 @@ __ __name__ __ '__main__':
 
     grep = sys.argv[1].title()
 
-    for tweet in get_tweets(grep
+    ___ tweet in get_tweets(grep
         tweet_status(tweet)

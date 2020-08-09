@@ -12,10 +12,10 @@ ___ list_to_decimal(nums: List[int]) -> int:
         1,     3  ,  4  , 5
         1000's, 100's, 10's, 1's
     """
-    __ not all(isinstance(num, int) for num in nums
+    __ not all(isinstance(num, int) ___ num in nums
         raise TypeError
 
-    __ not all(num in range(0, 10) for num in nums
+    __ not all(num in range(0, 10) ___ num in nums
         raise ValueError
 
     r_ int(''.join(map(str, nums)))

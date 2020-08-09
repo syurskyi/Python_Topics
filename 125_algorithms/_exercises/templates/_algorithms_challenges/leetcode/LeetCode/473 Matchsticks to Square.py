@@ -36,9 +36,9 @@ class Solution:
         __ not nums:
             r_ False
 
-        square = [0 for _ in range(4)]
-        l = sum(nums) // 4
-        __ sum(nums) % 4 != 0:
+        square = [0 ___ _ in range(4)]
+        l = su.(nums) // 4
+        __ su.(nums) % 4 != 0:
             r_ False
 
         nums.sort(reverse=True)
@@ -48,7 +48,7 @@ class Solution:
         __ i >= le.(nums
             r_ True
 
-        for j in range(le.(square)):
+        ___ j in range(le.(square)):
             __ nums[i] + square[j] <= l:
                 square[j] += nums[i]
                 __ self.dfs(nums, i + 1, l, square

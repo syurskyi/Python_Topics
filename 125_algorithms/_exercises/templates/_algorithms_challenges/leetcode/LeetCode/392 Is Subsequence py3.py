@@ -37,12 +37,12 @@ class Solution:
         Subsequence - Binary search
         """
         char_pos = defaultdict(list)
-        for p, c in enumerate(t
+        ___ p, c in enumerate(t
             char_pos[c].append(p)
             # the list is naturally sorted
 
         lo_po = -1
-        for c in s:
+        ___ c in s:
             __ c not in char_pos:
                 r_ False
             pos = char_pos[c]

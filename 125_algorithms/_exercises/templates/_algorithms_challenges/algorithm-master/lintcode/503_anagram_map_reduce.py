@@ -2,7 +2,7 @@ class Anagram:
 
     # @param {str} line a text, for example "Bye Bye see you next"
     ___ mapper(self, _, line
-        for word in line.split(
+        ___ word in line.split(
             yield ''.join(sorted(word.lower())), word
 
     # @param key is from mapper

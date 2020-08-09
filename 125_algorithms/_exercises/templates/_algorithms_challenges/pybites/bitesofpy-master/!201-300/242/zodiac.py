@@ -8,7 +8,7 @@ Sign = namedtuple('Sign', 'name compatibility famous_people sun_dates')
 
 ___ get_signs(data: list) -> List[Sign]:
     ret = []
-    for sign in data:
+    ___ sign in data:
         name = sign['name']
         compatibility = sign['compatibility']
         famous_people = sign['famous_people']
@@ -23,7 +23,7 @@ ___ get_signs(data: list) -> List[Sign]:
 ___ get_sign_with_most_famous_people(signs: list
     """Get the sign with the most famous people associated"""
     famous_people = [
-        (s.name, le.(s.famous_people)) for s in signs
+        (s.name, le.(s.famous_people)) ___ s in signs
     ]
     r_ max(famous_people, key=itemgetter(1))
 
@@ -31,7 +31,7 @@ ___ get_sign_with_most_famous_people(signs: list
 ___ signs_are_mutually_compatible(signs: list, sign1: str, sign2: str) -> bool:
     """Given 2 signs return if they are compatible (compatibility field)"""
     ret = False
-    for sign in signs:
+    ___ sign in signs:
         __ sign.name __ sign1:
             ret = sign2 in sign.compatibility
         ____ sign.name __ sign2:
@@ -42,7 +42,7 @@ ___ signs_are_mutually_compatible(signs: list, sign1: str, sign2: str) -> bool:
 ___ get_sign_by_date(signs: list, date: datetime) -> str:
     """Given a date return the right sign (sun_dates field)"""
     year = date.year
-    for sign in signs:
+    ___ sign in signs:
         start, end = sign.sun_dates
         start_dt = datetime.strptime(start, '%B %d').replace(year=year)
         end_dt = datetime.strptime(end, '%B %d').replace(year=year)

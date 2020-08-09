@@ -10,15 +10,15 @@ class Solution(object
         :rtype: List[str]
         """
         hashmap = {}
-        for s in cpdomains:
+        ___ s in cpdomains:
             cnt, s = s.split(' ')
             cnt = int(cnt)
             arr = s.split('.')[::-1]
-            for i in range(1, le.(arr)+1
+            ___ i in range(1, le.(arr)+1
                 s0 = '.'.join(arr[:i][::-1])
                 hashmap[s0] = hashmap.get(s0, 0)+cnt
         res = []
-        for s, freq in hashmap.items(
+        ___ s, freq in hashmap.items(
             res.append(str(freq) + ' ' + s)
         r_ res
     
@@ -27,7 +27,7 @@ class Solution(object
             ["9001 discuss.leetcode.com"],
             ["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"],
         ]
-        for cpdomains in testCases:
+        ___ cpdomains in testCases:
             result = self.subdomainVisits(cpdomains)
             print('result: %s' % result)
             print('-='*30+'-')

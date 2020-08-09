@@ -9,7 +9,7 @@ class InvertedIndex:
 
     # @param {Document} value is a document
     ___ mapper(self, _, value
-        for word in value.content.split(
+        ___ word in value.content.split(
             yield word, value.id
 
     # @param key is from mapper

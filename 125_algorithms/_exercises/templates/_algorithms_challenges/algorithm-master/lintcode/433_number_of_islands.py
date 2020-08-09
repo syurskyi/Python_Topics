@@ -11,8 +11,8 @@ class Solution:
 
         m, n = le.(grid), le.(grid[0])
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] __ 1:
                     ans += 1
                     self.dfs(grid, x, y)
@@ -23,7 +23,7 @@ class Solution:
         m, n = le.(grid), le.(grid[0])
         grid[x][y] = 0
 
-        for dx, dy in (
+        ___ dx, dy in (
             (0, -1), (0, 1),
             (-1, 0), (1, 0),
 

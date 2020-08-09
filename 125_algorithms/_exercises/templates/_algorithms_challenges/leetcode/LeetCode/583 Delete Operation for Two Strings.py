@@ -30,8 +30,8 @@ class Solution:
         m = le.(word1)
         n = le.(word2)
 
-        for i in range(1, m + 1
-            for j in range(1, n + 1
+        ___ i in range(1, m + 1
+            ___ j in range(1, n + 1
                 __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1] + 1
                 ____
@@ -56,13 +56,13 @@ class Solution:
         n = le.(word2)
 
         # initialization is important
-        for i in range(1, m + 1
+        ___ i in range(1, m + 1
             F[i][0] = i
-        for j in range(1, n + 1
+        ___ j in range(1, n + 1
             F[0][j] = j
 
-        for i in range(1, m + 1
-            for j in range(1, n + 1
+        ___ i in range(1, m + 1
+            ___ j in range(1, n + 1
                 __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1]
                 ____

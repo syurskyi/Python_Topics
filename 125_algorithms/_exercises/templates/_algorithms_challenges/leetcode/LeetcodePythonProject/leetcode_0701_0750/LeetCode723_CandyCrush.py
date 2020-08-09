@@ -10,11 +10,11 @@ class Solution(object
         :rtype: List[List[int]]
         """
         m, n = le.(board), le.(board[0])
-        res = [[0]*n for _ in range(m)]
+        res = [[0]*n ___ _ in range(m)]
         w___ True:
             changed = False
-            for i in range(m
-                for j in range(n
+            ___ i in range(m
+                ___ j in range(n
                     changed = self.bfs(board, i, j) or changed
             __ not changed:
                 res = board
@@ -29,14 +29,14 @@ class Solution(object
         val = abs(board[i][j])
         changed = False
         __ i+2 < m and val __ abs(board[i+1][j]) __ abs(board[i+2][j]
-            for i0 in range(i+1, m
+            ___ i0 in range(i+1, m
                 __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
                 ____
                     break
             changed = True
         __ j+2 < n and val __ abs(board[i][j+1]) __ abs(board[i][j+2]
-            for j0 in range(j+1, n
+            ___ j0 in range(j+1, n
                 __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
                 ____
@@ -48,13 +48,13 @@ class Solution(object
     
     ___ convert(self, res, board
         m, n = le.(res), le.(res[0])
-        for j in range(n
+        ___ j in range(n
             i0 = m-1
-            for i in range(m-1, -1, -1
+            ___ i in range(m-1, -1, -1
                 __ board[i][j] > 0:
                     res[i0][j] = board[i][j]
                     i0 -= 1
-            for i in range(i0, -1, -1
+            ___ i in range(i0, -1, -1
                 res[i][j] = 0
     
     ___ test(self
@@ -75,12 +75,12 @@ class Solution(object
                 [4,5,5,4,5],[5,1,4,2,5],[4,3,1,2,2],[4,5,4,4,5],[3,3,1,1,3],
             ],
         ]
-        for board in testCases:
+        ___ board in testCases:
             print('board:')
-            print('\n'.join([str(row) for row in board]))
+            print('\n'.join([str(row) ___ row in board]))
             result = self.candyCrush(board)
             print('result:')
-            print('\n'.join([str(row) for row in result]))
+            print('\n'.join([str(row) ___ row in result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

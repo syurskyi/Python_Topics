@@ -22,7 +22,7 @@ class Solution(object
         testCases = [
             9
         ]
-        for num in testCases:
+        ___ num in testCases:
             print('num: %s' % num)
             result = self.lastRemaining(num)
             print('result1: %s' % result)

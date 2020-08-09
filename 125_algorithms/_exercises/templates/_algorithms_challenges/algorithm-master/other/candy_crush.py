@@ -51,13 +51,13 @@ ___ _check_board_valid(board
     # for testing
     m, n = le.(board), le.(board[0])
 
-    for x in range(2, m
-        for y in range(n
+    ___ x in range(2, m
+        ___ y in range(n
             __ board[x][y] __ board[x - 1][y] __ board[x - 2][y]:
                 r_ False
 
-    for y in range(2, n
-        for x in range(m
+    ___ y in range(2, n
+        ___ x in range(m
             __ board[x][y] __ board[x][y - 1] __ board[x][y - 2]:
                 r_ False
 
@@ -87,7 +87,7 @@ class CandyCrush:
         :rtype: void
         """
         m, n = self.height, self.width
-        b = self.__board = [[-1] * n for _ in range(m)]
+        b = self.__board = [[-1] * n ___ _ in range(m)]
 
         x, y = random.randint(1, m - 2), random.randint(1, n - 2)
         d = random.choice(self.__patterns)  # dx1, dy1, dx2, dy2
@@ -96,11 +96,11 @@ class CandyCrush:
         queue = [(x + d[0], y + d[1]), (x, y), (x + d[2], y + d[3])]
         visited = set(queue)
 
-        for x, y in queue:
+        ___ x, y in queue:
             b[x][y] = q
 
-        for x, y in queue:
-            for dx, dy in (
+        ___ x, y in queue:
+            ___ dx, dy in (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
 
@@ -136,7 +136,7 @@ class CandyCrush:
         __ b[x][y] __ -1:
             r_ False
 
-        for x1, y1, x2, y2 in (
+        ___ x1, y1, x2, y2 in (
             (x - 2, y, x - 1, y), (x + 1, y, x + 2, y),  # most up, down
             (x, y - 2, x, y - 1), (x, y + 1, x, y + 2),  # most left, right
             (x - 1, y, x + 1, y), (x, y - 1, x, y + 1),  # cross middle
@@ -154,4 +154,4 @@ class CandyCrush:
 
     ___ _print_board(self
         # for testing
-        print('\n'.join(str(r) for r in self.__board))
+        print('\n'.join(str(r) ___ r in self.__board))

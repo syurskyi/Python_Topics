@@ -5,7 +5,7 @@ class Solution(object
     :rtype: int
     """
     ans = 0
-    for i in range(1, le.(prices)):
+    ___ i in range(1, le.(prices)):
       __ prices[i] > prices[i - 1]:
         ans += prices[i] - prices[i - 1]
     r_ ans

@@ -43,7 +43,7 @@ class Solution:
         """
         stk = []
         ret = 0
-        for s in S:
+        ___ s in S:
             __ s __ "(":
                 stk.append(0)
             ____
@@ -62,7 +62,7 @@ class Solution:
         """
         ret = 0
         cur_stk = []
-        for s in S:
+        ___ s in S:
             __ s __ "(":
                 cur_stk.append(0)
                 stk.append(s)

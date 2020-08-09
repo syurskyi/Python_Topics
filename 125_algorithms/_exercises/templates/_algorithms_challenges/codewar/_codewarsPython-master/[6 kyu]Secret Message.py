@@ -1,7 +1,7 @@
 ___ find_secret_message(paragraph
-    paragraph = ''.join([c for c in paragraph.lower() __ c in 'abcdefghijklmnopqrstuvwxyz -'])
+    paragraph = ''.join([c ___ c in paragraph.lower() __ c in 'abcdefghijklmnopqrstuvwxyz -'])
     appear,res = [],[]
-    for word in paragraph.split(
+    ___ word in paragraph.split(
         __ word not in appear:
             appear.append(word)
         ____ word not in res:

@@ -25,7 +25,7 @@ ___ get_income_distribution(xml=countries
 
     xpath = f".//wb:country"
     country_list = defaultdict(list)
-    for x in root.findall(xpath, namespaces
+    ___ x in root.findall(xpath, namespaces
         country_list[x.find('wb:incomeLevel', namespaces).text].append(x.find('wb:name', namespaces).text)
 
     r_ country_list

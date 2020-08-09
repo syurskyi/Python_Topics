@@ -47,7 +47,7 @@ class Solution:
         w___ q:
             ret = q[0].val
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e.left:
                     cur_q.append(e.left)
                 __ e.right:

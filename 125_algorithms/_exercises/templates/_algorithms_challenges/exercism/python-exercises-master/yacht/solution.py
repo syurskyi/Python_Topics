@@ -16,12 +16,12 @@ CHOICE = 11
 
 
 ___ ns(number, dice
-    r_ sum(n for n in dice __ n __ number)
+    r_ su.(n ___ n in dice __ n __ number)
 
 
 ___ full_house(dice
     counter = Counter(dice)
-    r_ sum(dice) __ set(counter.values()) __ {3, 2} else 0
+    r_ su.(dice) __ set(counter.values()) __ {3, 2} else 0
 
 
 ___ four_of_a_kind(dice
@@ -54,7 +54,7 @@ functions = [
     four_of_a_kind,
     little_straight,
     big_straight,
-    sum,
+    su.,
 ]
 
 

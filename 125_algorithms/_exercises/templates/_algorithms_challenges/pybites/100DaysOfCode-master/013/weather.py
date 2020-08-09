@@ -15,7 +15,7 @@ ___ get_local_time(utstamp, country, city
     utc_dt = datetime.utcfromtimestamp(int(utstamp)).replace(tzinfo=pytz.utc)
 
     timezones = pytz.country_timezones.get(country.upper(), [])
-    closest_timezone = [tz for tz in timezones __ city.lower() in tz.lower()]
+    closest_timezone = [tz ___ tz in timezones __ city.lower() in tz.lower()]
 
     __ closest_timezone:
         tz = closest_timezone[0]  # tz + city

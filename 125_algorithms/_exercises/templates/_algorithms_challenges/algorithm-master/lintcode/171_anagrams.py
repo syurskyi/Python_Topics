@@ -9,13 +9,13 @@ class Solution:
             r_ ans
 
         D = {}
-        for s in S:
+        ___ s in S:
             _s = ''.join(sorted(s))
             __ _s not in D:
                 D[_s] = []
             D[_s].append(s)
 
-        for k, S in D.items(
+        ___ k, S in D.items(
             __ le.(S) > 1:
                 ans.extend(S)
 

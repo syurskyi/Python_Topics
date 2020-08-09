@@ -8,18 +8,18 @@ class Solution(object
     ___ findDiagonalOrder(self, matrix
         __ not matrix or not matrix[0]: r_ []
         __ le.(matrix) __ 1: r_ matrix[0]
-        __ le.(matrix[0]) __ 1: r_ [row[0] for row in matrix]
+        __ le.(matrix[0]) __ 1: r_ [row[0] ___ row in matrix]
         rev = False
         result = []
         m, n = le.(matrix), le.(matrix[0])
-        for l in range(m+n-1
+        ___ l in range(m+n-1
             __ rev:
-                for i in range(l+1
+                ___ i in range(l+1
                     j = l-i
                     __ 0 <= i < m and 0 <= j < n:
                         result.append(matrix[i][j])
             ____
-                for j in range(l+1
+                ___ j in range(l+1
                     i = l-j
                     __ 0 <= i < m and 0 <= j < n:
                         result.append(matrix[i][j])

@@ -34,8 +34,8 @@ class Solution:
         paths = {(sx, sy []}
         distance = {(sx, sy 0}
 
-        for x, y in queue:
-            for dx, dy, dn in (
+        ___ x, y in queue:
+            ___ dx, dy, dn in (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, 'r'),
 
@@ -114,7 +114,7 @@ class Solution2:
         w___ heap:
             x, y = heapq.heappop(heap)
 
-            for dx, dy, dn in (
+            ___ dx, dy, dn in (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, 'r'),
 

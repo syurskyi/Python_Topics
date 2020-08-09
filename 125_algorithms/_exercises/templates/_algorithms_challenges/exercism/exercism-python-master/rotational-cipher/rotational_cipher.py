@@ -5,4 +5,4 @@ ___ rotate(text, key
         __ letter.isupper(
             r_ chr((ord(letter) - ord('A') + key) % 26 + ord('A'))
         r_ letter
-    r_ ''.join(rot(l) for l in text)
+    r_ ''.join(rot(l) ___ l in text)

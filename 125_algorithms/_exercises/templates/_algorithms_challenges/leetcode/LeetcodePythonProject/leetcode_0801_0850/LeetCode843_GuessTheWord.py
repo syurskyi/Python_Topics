@@ -27,14 +27,14 @@ class Solution(object
         """
         n = 0
         w___ n < 6:
-            count = collections.Counter(w1 for w1, w2 in itertools.permutations(wordlist, 2) __ self.match(w1, w2) __ 0)
+            count = collections.Counter(w1 ___ w1, w2 in itertools.permutations(wordlist, 2) __ self.match(w1, w2) __ 0)
             guess = min(wordlist, key=lambda w:count[w])
             n = master.guess(guess)
-            wordlist = [w for w in wordlist __ self.match(w, guess) __ n]
+            wordlist = [w ___ w in wordlist __ self.match(w, guess) __ n]
     
     ___ match(self, w1, w2
         matches = 0
-        for c1, c2 in zip(w1, w2
+        ___ c1, c2 in zip(w1, w2
             __ c1 __ c2: matches += 1
         r_ matches
     
@@ -42,7 +42,7 @@ class Solution(object
         testCases = [
             
         ]
-        for wordlist, master in testCases:
+        ___ wordlist, master in testCases:
             result = self.findSecretWord(wordlist, master)
             print('result: %s' % result)
 

@@ -18,13 +18,13 @@ class Solution:
         ]
         d = {
             e: i
-            for i, v in enumerate(rows)
-            for e in v
+            ___ i, v in enumerate(rows)
+            ___ e in v
         }
         r_ [
             w
-            for w in words
-            __ all(d[w[0].lower()] __ d[l.lower()] for l in w)
+            ___ w in words
+            __ all(d[w[0].lower()] __ d[l.lower()] ___ l in w)
         ]
 
 

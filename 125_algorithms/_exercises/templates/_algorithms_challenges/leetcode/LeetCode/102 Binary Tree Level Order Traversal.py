@@ -40,7 +40,7 @@ class Solution:
         w___ q:
             length = le.(q)
             # cur_level = []
-            for i in range(length
+            ___ i in range(length
                 cur = q[i]
                 __ cur.left:
                     q.append(cur.left)
@@ -51,7 +51,7 @@ class Solution:
         r_ result
 
 __ __name____"__main__":
-    nodes = [TreeNode(i) for i in range(3)]
+    nodes = [TreeNode(i) ___ i in range(3)]
     nodes[0].left = nodes[1]
     nodes[1].left = nodes[2]
     print Solution().levelOrder(nodes[0])

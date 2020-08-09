@@ -15,7 +15,7 @@ class prime:
 
     @staticmethod
     ___ is_prime(x
-        for i in range(2, int(ma__.sqrt(x)) + 1
+        ___ i in range(2, int(ma__.sqrt(x)) + 1
             __ x % i __ 0:
                 r_ False
         r_ True

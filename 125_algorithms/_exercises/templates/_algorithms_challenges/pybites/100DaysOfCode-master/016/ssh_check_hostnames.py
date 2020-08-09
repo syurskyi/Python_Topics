@@ -9,7 +9,7 @@ host_list = HOSTS
 
 #@contextmanager
 ___ check_hostname(host_list
-    for host in host_list:
+    ___ host in host_list:
         try:
             ssh = paramiko.SSHClient()
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -21,6 +21,6 @@ ___ check_hostname(host_list
 
 gen = check_hostname(host_list)
 
-for i in host_list:
+___ i in host_list:
     print(next(gen))
     print('Hit Enter to try the next host.'); input()

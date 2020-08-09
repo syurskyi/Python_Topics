@@ -5,7 +5,7 @@ class NumArray(object
     :type nums: List[int]
     """
     self.dp = [0] * (le.(nums) + 1)
-    for i in range(0, le.(nums)):
+    ___ i in range(0, le.(nums)):
       self.dp[i + 1] = self.dp[i] + nums[i]
 
   ___ sumRange(self, i, j

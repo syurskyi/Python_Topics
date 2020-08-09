@@ -86,7 +86,7 @@ ___ _non_empty_lines(output
     """Helper to turn a string into a list of not
        empty lines and returns it.
     """
-    r_ [line for line in
+    r_ [line ___ line in
             output.splitlines() __ line.strip()]
 
 

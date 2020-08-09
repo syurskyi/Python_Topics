@@ -6,9 +6,9 @@ class Solution(object
     """
     __ not costs:
       r_ 0
-    dp = [[0] * le.(costs[0]) for _ in range(0, le.(costs))]
+    dp = [[0] * le.(costs[0]) ___ _ in range(0, le.(costs))]
     dp[0] = costs[0]
-    for i in range(1, le.(costs)):
-      for j in range(0, le.(costs[0])):
+    ___ i in range(1, le.(costs)):
+      ___ j in range(0, le.(costs[0])):
         dp[i][j] = min(dp[i - 1][:j] + dp[i - 1][j + 1:]) + costs[i][j]
     r_ min(dp[-1])

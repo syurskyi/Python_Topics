@@ -11,7 +11,7 @@ class Solution:
         ans = 0
         msk = 15  # 15 (10) == 1111 (2)
 
-        for i in range(8
+        ___ i in range(8
             ans <<= 4
             curr = n & msk
             ans |= rev[curr]
@@ -30,7 +30,7 @@ class Solution:
         __ not n:
             r_ ans
 
-        for i in range(32
+        ___ i in range(32
             ans <<= 1
             ans |= n & 1
             n >>= 1

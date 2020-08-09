@@ -54,10 +54,10 @@ class Solution:
         """
         bfs
         """
-        destination = tuple(int(c) for c in target)
+        destination = tuple(int(c) ___ c in target)
         deadends_set = set(
-            tuple(int(c) for c in s)
-            for s in deadends
+            tuple(int(c) ___ c in s)
+            ___ s in deadends
         )
         q = [(0, 0, 0, 0)]
         __ q[0] in deadends_set:
@@ -67,11 +67,11 @@ class Solution:
         visited = set(q)
         w___ q:
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e __ destination:
                     r_ step
-                for i in range(4
-                    for delta in (-1, 1
+                ___ i in range(4
+                    ___ delta in (-1, 1
                         nxt_lst = list(e)  # copy
                         nxt_lst[i] = (nxt_lst[i] + delta) % 10  # forward or backward
                         nxt = tuple(nxt_lst)

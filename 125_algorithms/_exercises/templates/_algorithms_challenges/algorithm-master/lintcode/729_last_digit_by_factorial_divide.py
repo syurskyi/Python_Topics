@@ -12,7 +12,7 @@ class Solution:
 
         ans = 1
 
-        for num in range(a + 1, b + 1
+        ___ num in range(a + 1, b + 1
             __ ans __ 0:
                 r_ 0
 

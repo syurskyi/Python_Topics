@@ -24,7 +24,7 @@ class Solution:
         """
         h = []
         n = le.(nums)
-        for i, v in enumerate(nums
+        ___ i, v in enumerate(nums
             __ i < k:
                 heapq.heappush(h, v)
             ____

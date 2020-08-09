@@ -13,11 +13,11 @@ class Solution:
 
         # `dp[i][j]` means the length of the longest subsequence
         # included in `s[i:j+1]`
-        dp = [[0] * n for _ in range(n)]
+        dp = [[0] * n ___ _ in range(n)]
 
         ans = 0
         start = end = 0
-        for end in range(n
+        ___ end in range(n
             dp[end][end] = 1
 
             __ n < 1:
@@ -29,8 +29,8 @@ class Solution:
             ____
                 dp[start][end] = 1
 
-        for size in range(3, n + 1
-            for start in range(n - size + 1
+        ___ size in range(3, n + 1
+            ___ start in range(n - size + 1
                 end = start + size - 1
 
                 dp[start][end] = max(dp[start][end - 1], dp[start + 1][end])

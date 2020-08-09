@@ -8,7 +8,7 @@ ___ gcd(a,b # Greatest Common Divisor
 
 ___ findDivisors(pairs
         answer = []
-        for pair in range(pairs
+        ___ pair in range(pairs
                 a,b = raw_input().split()
                 a,b = int(a), int(b)
                 answer.append('('+str(gcd(a,b))+' '+str(lcm(a,b))+')')

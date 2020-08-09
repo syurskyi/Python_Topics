@@ -15,7 +15,7 @@ class Solution:
         just like two sum
         `c` is the target
         """
-        for c in range(n - 1, 1, -1
+        ___ c in range(n - 1, 1, -1
             a = 0
             b = c - 1
             w___ a < b:

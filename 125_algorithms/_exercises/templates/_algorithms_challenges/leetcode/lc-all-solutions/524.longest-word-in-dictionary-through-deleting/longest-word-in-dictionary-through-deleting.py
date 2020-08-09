@@ -12,14 +12,14 @@ class Solution(object
 
     ___ isSubseq(word, s
       i = 0
-      for c in s:
+      ___ c in s:
         __ c __ word[i]:
           i += 1
         __ i __ le.(word
           r_ True
       r_ False
 
-    for word in d:
+    ___ word in d:
       __ isSubseq(word, s
         r_ word
     r_ ""

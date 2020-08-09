@@ -8,8 +8,8 @@ class Solution(object
     ___ singleNumberK(nums, k
       ret = 0
       count = [0] * 32
-      for i in range(0, 32
-        for num in nums:
+      ___ i in range(0, 32
+        ___ num in nums:
           __ num & (1 << i
             count[i] += 1
         __ count[i] % 3 != 0:

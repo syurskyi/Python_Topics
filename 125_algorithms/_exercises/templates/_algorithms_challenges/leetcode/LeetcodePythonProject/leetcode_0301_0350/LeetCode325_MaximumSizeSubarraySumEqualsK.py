@@ -9,7 +9,7 @@ class Solution(object
         hashmap = {}
         sumVal = 0
         maxLen = 0
-        for i, num in enumerate(nums
+        ___ i, num in enumerate(nums
             sumVal += num
             __ sumVal __ k:
                 maxLen = max(maxLen, i+1)
@@ -24,7 +24,7 @@ class Solution(object
             ([1, -1, 5, -2, 3], 3),
             ([-2, -1, 2, 1], 1),
         ]
-        for nums, k in testCases:
+        ___ nums, k in testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
             result = self.maxSubArrayLen(nums, k)

@@ -12,11 +12,11 @@ class Solution(object
         :rtype: int
         """
         m, n = le.(s), le.(t)
-        dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m
+        dp = [[0]*(n+1) ___ _ in range(m+1)]
+        ___ i in range(m
             dp[i][0] = 1
-        for i in range(m
-            for j in range(n
+        ___ i in range(m
+            ___ j in range(n
                 __ s[i] __ t[j]:
                     dp[i+1][j+1] = dp[i][j] + dp[i][j+1]
                 ____
@@ -30,7 +30,7 @@ class Solution(object
             ('ABCDE', 'ACE'),
             ('ABCDE', 'AEC'),
         ]
-        for s, t in testCases:
+        ___ s, t in testCases:
             print('s: %s, t: %s' % (s, t))
             result = self.numDistinct(s, t)
             print('result: %s' % (result))

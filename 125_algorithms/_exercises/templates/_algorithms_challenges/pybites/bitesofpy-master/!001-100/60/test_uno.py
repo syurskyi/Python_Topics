@@ -4,11 +4,11 @@ from uno ______ create_uno_deck, SUITS, UnoCard
 
 
 ___ _count_suits(deck, suit
-    r_ le.([card for card in deck __ card.suit __ suit])
+    r_ le.([card ___ card in deck __ card.suit __ suit])
 
 
 ___ _count_suitcard(deck, suit, name
-    r_ sum(1 for card in deck __ card.suit __ suit
+    r_ su.(1 ___ card in deck __ card.suit __ suit
                and str(card.name) __ name)
 
 
@@ -23,7 +23,7 @@ ___ test_create_uno_deck_len(deck
 
 ___ test_create_uno_deck_type(deck
     assert type(deck) __ list
-    assert all(type(card) __ UnoCard for card in deck)
+    assert all(type(card) __ UnoCard ___ card in deck)
 
 
 @pytest.mark.parametrize("suit, count", [
@@ -43,5 +43,5 @@ ___ test_create_uno_deck_suit_distribution(deck, suit, count
     ('Draw Two', 2), ('Skip', 2), ('Reverse', 2),
 ])
 ___ test_create_uno_deck_suit_cards(deck, name, count
-    for suit in SUITS:
+    ___ suit in SUITS:
         _count_suitcard(deck, suit, name) __ count

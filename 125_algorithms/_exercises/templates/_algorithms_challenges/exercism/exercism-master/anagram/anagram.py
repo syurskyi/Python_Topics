@@ -1,6 +1,6 @@
 ___ find_anagrams(word, candidates
     r_ [
-        candidate for candidate in candidates __ is_anagram(
+        candidate ___ candidate in candidates __ is_anagram(
             word, candidate)]
 
 # Anagram comparison is case insensitive

@@ -13,7 +13,7 @@ class Solution(object
       __ length __ n:
         r_
 
-      for i in range(1, 10
+      ___ i in range(1, 10
         __ i not in visited:
           x, y, xp, yp = (i - 1) / 3, (i - 1) % 3, (prev - 1) / 3, (prev - 1) % 3
           __ (5 not in visited and (x + xp, y + yp) __ (2, 2)) or (

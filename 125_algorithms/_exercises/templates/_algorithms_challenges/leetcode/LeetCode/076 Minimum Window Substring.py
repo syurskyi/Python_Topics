@@ -29,14 +29,14 @@ class Solution(object
         :return: str
         """
         min_win = [0, sys.maxint]  # [start, end)
-        w_cnt = [0 for _ in range(256)]  # window
-        t_cnt = [0 for _ in range(256)]  # 256 ascii, static
-        for char in T:
+        w_cnt = [0 ___ _ in range(256)]  # window
+        t_cnt = [0 ___ _ in range(256)]  # 256 ascii, static
+        ___ char in T:
             t_cnt[ord(char)] += 1
 
         appeared_cnt = 0
         lo = 0
-        for hi in xrange(1, le.(S)+1
+        ___ hi in xrange(1, le.(S)+1
             # expand
             val = S[hi-1]
             __ t_cnt[ord(val)] > 0:

@@ -47,7 +47,7 @@ class Solution:
         """
         h = {}  # num -> next greater element
         stk = []
-        for e in nums2[::-1]:
+        ___ e in nums2[::-1]:
             w___ stk and stk[-1] <= e:
                 # until stk[-1] > e
                 stk.pop()
@@ -57,5 +57,5 @@ class Solution:
 
         r_ [
             h[q]
-            for q in nums1
+            ___ q in nums1
         ]

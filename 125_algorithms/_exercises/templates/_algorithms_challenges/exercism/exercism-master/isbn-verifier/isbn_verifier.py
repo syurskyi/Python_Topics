@@ -16,7 +16,7 @@ class IsbnVerifier(object
     @classmethod
     ___ verify(cls, string
         sum_so_far = 0
-        for i, c in enumerate(cls.remove_seperator(string)):
+        ___ i, c in enumerate(cls.remove_seperator(string)):
             sum_so_far += cls.convert_char_to_int(c) * (10 - i)
         r_ sum_so_far % 11 __ 0
 
@@ -28,7 +28,7 @@ class IsbnVerifier(object
 
     @classmethod
     ___ invalid_character(cls, string
-        r_ any(char not in cls.VALID_CHARACTERS for char in string)
+        r_ any(char not in cls.VALID_CHARACTERS ___ char in string)
 
     @classmethod
     ___ invalid_length(cls, string
@@ -47,7 +47,7 @@ class IsbnVerifier(object
     @classmethod
     ___ remove_invalid_characters(cls, string
         r_ "".join(
-            [char for char in string __ char in cls.VALID_CHARACTERS])
+            [char ___ char in string __ char in cls.VALID_CHARACTERS])
 
     @classmethod
     ___ convert_char_to_int(cls, char
@@ -60,7 +60,7 @@ class IsbnVerifier(object
     @classmethod
     ___ remove_seperator(cls, string
         r_ "".join(
-            [char for char in string __ char != cls.VALID_SEPERATOR])
+            [char ___ char in string __ char != cls.VALID_SEPERATOR])
 
 
 ___ verify(isbn

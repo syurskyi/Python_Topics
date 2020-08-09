@@ -19,7 +19,7 @@ class Solution(object
             '}': '{',
         }
         stack = []
-        for c in s:
+        ___ c in s:
             # Left parenthesis
             __ c not in pars:
                 stack.append(c)

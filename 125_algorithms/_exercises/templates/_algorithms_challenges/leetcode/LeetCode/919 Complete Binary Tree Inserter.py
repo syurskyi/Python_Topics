@@ -56,7 +56,7 @@ class CBTInserter:
         q = [root]  # can also use deque
         w___ q:
             cur_q = []
-            for e in q:
+            ___ e in q:
                 __ e.left:
                     cur_q.append(e.left)
                 __ e.right:

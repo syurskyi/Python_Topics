@@ -16,7 +16,7 @@ class Vehicle:
         __ not self.at_level:
             r_
 
-        for x, y in self.at_spots:
+        ___ x, y in self.at_spots:
             self.at_level.spots[x, y] = None
 
         self.at_level = None
@@ -66,10 +66,10 @@ class Level:
         """
         RANGE = self.get_range(vehicle.type)
 
-        for x in range(self.m
+        ___ x in range(self.m
             gotcha = 0
 
-            for y in RANGE:
+            ___ y in RANGE:
                 __ self.spots.get((x, y)):
                     gotcha = 0
                     continue
@@ -79,7 +79,7 @@ class Level:
                 __ gotcha __ vehicle.costs:
                     spots = []
 
-                    for i in range(y, y - gotcha, -1
+                    ___ i in range(y, y - gotcha, -1
                         spots.append((x, i))
                         self.spots[x, i] = vehicle
 
@@ -97,7 +97,7 @@ class ParkingLot:
         :type m: int, each level has m rows of spots
         :type n: int, each row has n spots
         """
-        self.levels = [Level(i, m, n) for i in range(k)]
+        self.levels = [Level(i, m, n) ___ i in range(k)]
 
     ___ park_vehicle(self, vehicle
         """
@@ -106,7 +106,7 @@ class ParkingLot:
         """
         __ any(
             level.park_vehicle(vehicle)
-            for level in self.levels
+            ___ level in self.levels
 
             r_ True
 

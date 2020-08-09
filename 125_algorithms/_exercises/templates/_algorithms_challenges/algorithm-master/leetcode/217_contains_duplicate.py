@@ -9,7 +9,7 @@ class Solution:
 
         S = set()
 
-        for a in A:
+        ___ a in A:
             __ a in S:
                 r_ True
             S.add(a)

@@ -191,8 +191,8 @@ class Room:
 
         m, n = le.(grid), le.(grid[0])
 
-        for x in range(m
-            for y in range(n
+        ___ x in range(m
+            ___ y in range(n
                 __ grid[x][y] __ self.CLEANUP:
                     self.__cleanups += 1
                 ____ grid[x][y] __ self.ROBOT:
@@ -245,7 +245,7 @@ class Room:
     ___ _print_room(self
         # for testing
         print(
-            '\n'.join(str(r) for r in self.__room),
+            '\n'.join(str(r) ___ r in self.__room),
             '\nRobot at: ', self.__robot_at,
             '\nCleanups: ', self.__cleanups,
             '\n'
@@ -392,7 +392,7 @@ class RobotCleanerDFS2:
         robot.clean()
         visited.add((x, y))
 
-        for to_dir in range(le.(Dirs.DELTA)):
+        ___ to_dir in range(le.(Dirs.DELTA)):
             __ to_dir __ from_dir:
                 continue
 

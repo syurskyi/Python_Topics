@@ -20,7 +20,7 @@ class Solution(object
         w___ True:
             buf4 = ['']*4
             curr = min(read4(buf4), n-idx)
-            for i in range(curr
+            ___ i in range(curr
                 buf[idx] = buf4[i]
                 idx += 1
             __ curr != 4 or idx __ n:

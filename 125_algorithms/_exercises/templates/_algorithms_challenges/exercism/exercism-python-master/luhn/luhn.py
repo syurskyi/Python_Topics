@@ -5,12 +5,12 @@ class Luhn(object
 
     ___ __init__(self, number
         """Initialize a luhn object"""
-        self.digits = [int(d) for d in str(number)]
+        self.digits = [int(d) ___ d in str(number)]
 
     ___ addends(self
         """Does part of the luhn algorythm"""
         ends = []
-        for i, digit in enumerate(reversed(self.digits)):
+        ___ i, digit in enumerate(reversed(self.digits)):
             __ i % 2 __ 1:
                 digit *= 2
                 w___ digit > 10:
@@ -20,7 +20,7 @@ class Luhn(object
 
     ___ checksum(self
         """Finds the checksum of the luhn code"""
-        r_ sum(self.addends())
+        r_ su.(self.addends())
 
     ___ is_valid(self
         """Checks if luhn code is valid"""

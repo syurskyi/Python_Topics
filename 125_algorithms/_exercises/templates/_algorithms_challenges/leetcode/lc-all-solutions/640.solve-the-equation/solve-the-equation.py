@@ -11,7 +11,7 @@ class Solution(object
     right[0] = "M" + right[0] __ right[0][0] not in ["P", "M"] else right[0]
     left += right
     a = b = 0
-    for param in left:
+    ___ param in left:
       param = param.replace("P", "+").replace("M", "-")
       __ param[-1] __ "x":
         k = 1

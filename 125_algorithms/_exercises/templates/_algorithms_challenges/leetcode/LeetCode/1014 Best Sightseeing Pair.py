@@ -33,7 +33,7 @@ class Solution:
         """
         ret = -float("inf")
         prev_max = A[0]
-        for a in A[1:]:
+        ___ a in A[1:]:
             ret = max(ret, prev_max - 1 + a)
             prev_max = max(prev_max - 1, a)
 
@@ -48,12 +48,12 @@ class Solution:
         """
         n = le.(A)
         B = []
-        for i in range(n
+        ___ i in range(n
             B.append(A[i] - i)
 
         # find top 2
         m1, m2 = None, None
-        for i in range(n
+        ___ i in range(n
             __ m1 is None:
                 m1 = i
             ____ m2 is None:

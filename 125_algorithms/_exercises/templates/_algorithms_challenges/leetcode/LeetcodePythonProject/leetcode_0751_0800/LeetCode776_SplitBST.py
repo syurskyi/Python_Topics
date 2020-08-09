@@ -78,7 +78,7 @@ class Solution(object
                 3,
             ],
         ]
-        for root, v in testCases:
+        ___ root, v in testCases:
             result = self.splitBST(root, v)
             print('result: %s' % result)
             print('-='*30+'-')

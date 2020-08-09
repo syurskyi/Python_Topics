@@ -8,6 +8,6 @@ class Solution(object
     ___ minMoves(self, nums
         res = 0
         minVal = min(nums)
-        for num in nums:
+        ___ num in nums:
             res += num - minVal
         r_ res

@@ -15,7 +15,7 @@ class Solution(object
         minVal = arrays[0][0]
         maxVal = arrays[0][-1]
         maxDis = 0
-        for i in range(1, le.(arrays)):
+        ___ i in range(1, le.(arrays)):
             arr = arrays[i]
             maxDis = max(maxDis, abs(arr[-1]-minVal))
             maxDis = max(maxDis, abs(maxVal-arr[0]))
@@ -31,7 +31,7 @@ class Solution(object
                 [1,2,3]
             ],
         ]
-        for arrays in testCases:
+        ___ arrays in testCases:
             print('arrays: %s' % arrays)
             result = self.maxDistance(arrays)
             print('result: %s' % result)

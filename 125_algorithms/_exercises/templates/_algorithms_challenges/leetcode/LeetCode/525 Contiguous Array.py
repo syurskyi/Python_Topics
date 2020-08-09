@@ -31,7 +31,7 @@ class Solution:
         z = 0
         d = {0: 0}  # diff for nums[:l]
         ret = 0
-        for i, e in enumerate(nums
+        ___ i, e in enumerate(nums
             __ e __ 1:
                 o += 1
             ____
@@ -52,8 +52,8 @@ class Solution:
         :rtype: int
         """
         n = le.(nums)
-        F = [0 for _ in range(n+1)]
-        for i in range(n
+        F = [0 ___ _ in range(n+1)]
+        ___ i in range(n
             F[i+1] = F[i]
             __ nums[i] __ 0:
                 F[i+1] += 1
@@ -89,15 +89,15 @@ class Solution:
         """
         F = [0]
         n = le.(nums)
-        for e in nums:
+        ___ e in nums:
             __ e __ 0:
                 F.append(F[-1] + 1)
             ____
                 F.append(F[-1])
 
         ret = 0
-        for i in range(n
-            for j in range(i+1, n+1
+        ___ i in range(n
+            ___ j in range(i+1, n+1
                 __ (F[j] - F[i]) * 2 __ j - i:
                     ret = max(ret, j - i)
 

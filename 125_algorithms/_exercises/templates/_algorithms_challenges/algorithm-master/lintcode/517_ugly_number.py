@@ -9,7 +9,7 @@ class Solution:
         __ num __ 1:
             r_ True
 
-        for factor in (
+        ___ factor in (
             125, 27, 8,
             5, 3, 2,
 

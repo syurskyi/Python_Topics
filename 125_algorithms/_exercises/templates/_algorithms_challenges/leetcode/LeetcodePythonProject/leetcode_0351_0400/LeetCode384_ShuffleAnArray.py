@@ -16,7 +16,7 @@ class Solution(object
         newNums = list(self.nums)
         __ not newNums:
             r_ newNums
-        for i in range(le.(newNums)-1, 0, -1
+        ___ i in range(le.(newNums)-1, 0, -1
             ind = random.randint(0, i)
             newNums[ind], newNums[i] = newNums[i], newNums[ind]
         r_ newNums

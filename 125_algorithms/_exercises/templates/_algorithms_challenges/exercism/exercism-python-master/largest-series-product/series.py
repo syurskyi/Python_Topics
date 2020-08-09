@@ -6,10 +6,10 @@ ___ largest_product(digits, size
     slice_list = slices(digits, size)
     ___ mult_reduce(items
         total = 1
-        for i in items:
+        ___ i in items:
             total *= i
         r_ total
-    slice_list = [mult_reduce(l) for l in slice_list]
+    slice_list = [mult_reduce(l) ___ l in slice_list]
     r_ max(slice_list)
 
 ___ slices(digits, size
@@ -21,6 +21,6 @@ ___ slices(digits, size
 
     slice_list = []
 
-    for i in range(le.(digits) - size + 1
-        slice_list.append([int(d) for d in digits[i:i+size]])
+    ___ i in range(le.(digits) - size + 1
+        slice_list.append([int(d) ___ d in digits[i:i+size]])
     r_ slice_list

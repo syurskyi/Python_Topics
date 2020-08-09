@@ -7,6 +7,6 @@ ___ check_split(item_total, tax_rate, tip, people
     tip_p = Decimal(tip[:-1]) / 100 + 1
     grand_total = round(round(total * tax, 2) * tip_p, 2)
     split = round(grand_total / people, 2)
-    split_arr = [split for _ in range(people - 1)]
-    split_arr.append(grand_total - sum(split_arr))
+    split_arr = [split ___ _ in range(people - 1)]
+    split_arr.append(grand_total - su.(split_arr))
     r_ f'{item_total[0]}{grand_total:.2f}', split_arr

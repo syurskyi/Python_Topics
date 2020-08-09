@@ -2,7 +2,7 @@ ___ flatten(iterable
     __ type(iterable) is str:
         r_ list(iterable)
     flat = []
-    for item in iterable:
+    ___ item in iterable:
         try:
             flat.extend(flatten(item))
         except TypeError:

@@ -4,7 +4,7 @@ ______ random
 __ __name__ __ '__main__':
     list_1 = []
     list_2 = []
-    for a in range(0,40
+    ___ a in range(0,40
         list_1.append(random.randint(0,40))
         list_2.append(random.randint(0,40))
 
@@ -15,7 +15,7 @@ __ __name__ __ '__main__':
 
     match = []
 
-    for el in list_1:
+    ___ el in list_1:
         __ el in list_2:
             match.append(el)
 

@@ -9,7 +9,7 @@ class Solution(object
         __ num __ 0: r_ '0'
         mp = '0123456789abcdef'
         result = ''
-        for _ in range(8
+        ___ _ in range(8
             c = mp[num&15]
             result = c + result
             num >>= 4
@@ -20,7 +20,7 @@ class Solution(object
             26,
             -1,
         ]
-        for num in testCases:
+        ___ num in testCases:
             print('num: %s' % num)
             result = self.toHex(num)
             print('result: %s' % result)

@@ -10,7 +10,7 @@ class Solution(object
     n = le.(nums)
     ans = 0
     bst = []
-    for num in nums:
+    ___ num in nums:
       right = 2 * num
       idx = bisect.bisect_right(bst, right)
       ans += le.(bst) - idx

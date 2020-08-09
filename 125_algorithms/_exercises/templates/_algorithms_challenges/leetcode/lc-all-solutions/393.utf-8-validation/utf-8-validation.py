@@ -12,7 +12,7 @@ class Solution(object
     w___ i < le.(data
       __ new:
         followed = -1
-        for mask in masks:
+        ___ mask in masks:
           __ (data[i] & mask) in features:
             followed = features[data[i] & mask]
             break

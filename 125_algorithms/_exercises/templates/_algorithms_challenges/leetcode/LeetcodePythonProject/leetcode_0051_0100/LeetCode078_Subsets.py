@@ -19,7 +19,7 @@ class Solution(object
     
     ___ helper(self, nums, elem, start, result
         result.append(list(elem))
-        for i in range(start, le.(nums)):
+        ___ i in range(start, le.(nums)):
             elem.append(nums[i])
             self.helper(nums, elem, i+1, result)
             elem.pop()
@@ -28,7 +28,7 @@ class Solution(object
         testCases = [
             [1, 2, 3],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             result = self.subsets(nums)
             print('result: %s' % (result))

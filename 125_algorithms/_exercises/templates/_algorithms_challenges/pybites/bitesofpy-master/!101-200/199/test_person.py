@@ -82,6 +82,6 @@ ___ test_use_inheritance(
     # dry code!
     # should not duplicate substr in subclass
     substr = 'I am a person'
-    for src in (inspect.getsource(Father),
+    ___ src in (inspect.getsource(Father),
                 inspect.getsource(Mother)):
         assert substr not in src

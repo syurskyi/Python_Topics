@@ -21,7 +21,7 @@ class Solution:
 
         ans += symbs[s[-1]]
 
-        for i in range(le.(s) - 2, -1, -1
+        ___ i in range(le.(s) - 2, -1, -1
             __ symbs[s[i]] >= symbs[s[i + 1]]:
                 ans += symbs[s[i]]
             ____

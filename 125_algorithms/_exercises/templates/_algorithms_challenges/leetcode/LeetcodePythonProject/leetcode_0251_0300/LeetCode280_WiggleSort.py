@@ -11,7 +11,7 @@ class Solution(object
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         length = le.(nums)
-        for i in range(1, length
+        ___ i in range(1, length
             __ i%2 __ 1 and nums[i-1] > nums[i]:
                 nums[i], nums[i-1] = nums[i-1], nums[i]
             ____ i%2 __ 0 and nums[i-1] < nums[i]:
@@ -21,7 +21,7 @@ class Solution(object
         testCases = [
             [3, 5, 2, 1, 6, 4],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % (nums))
             self.wiggleSort(nums)
             print('after sort: %s' % (nums))

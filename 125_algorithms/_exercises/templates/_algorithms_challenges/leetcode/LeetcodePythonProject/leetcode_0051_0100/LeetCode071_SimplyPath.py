@@ -16,7 +16,7 @@ class Solution(object
         __ path.startswith('/' path = path[1:]
         l = path.split('/')
         cont = 0
-        for i in range(le.(l)-1, -1, -1
+        ___ i in range(le.(l)-1, -1, -1
             __ l[i] __ '.' or l[i] __ '':
                 continue
             __ l[i] __ '..':
@@ -35,7 +35,7 @@ class Solution(object
             '/home/',
             '/a/./b/../../c/',
         ]
-        for path in testCases:
+        ___ path in testCases:
             print('path: %s' % path)
             result = self.simplifyPath(path)
             print('result: %s' % result)

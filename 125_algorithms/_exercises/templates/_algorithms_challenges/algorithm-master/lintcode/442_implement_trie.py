@@ -18,7 +18,7 @@ class Trie:
 
         node = self.root
 
-        for c in word:
+        ___ c in word:
             __ c not in node.children:
                 node.children[c] = TrieNode()
 
@@ -36,7 +36,7 @@ class Trie:
 
         node = self.root
 
-        for c in word:
+        ___ c in word:
             __ c not in node.children:
                 r_ False
 
@@ -54,7 +54,7 @@ class Trie:
 
         node = self.root
 
-        for c in prefix:
+        ___ c in prefix:
             __ c not in node.children:
                 r_ False
 

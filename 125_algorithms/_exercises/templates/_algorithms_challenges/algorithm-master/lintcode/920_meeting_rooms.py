@@ -20,7 +20,7 @@ class Solution:
         """
         timeline = []
 
-        for interval in intervals:
+        ___ interval in intervals:
             timeline.append((interval.start, True))
             timeline.append((interval.end, False))
 
@@ -28,7 +28,7 @@ class Solution:
 
         cnt = 0
 
-        for time, is_start in timeline:
+        ___ time, is_start in timeline:
             __ is_start:
                 cnt += 1
             ____
@@ -53,7 +53,7 @@ class Solution:
         """
         intervals.sort(key=lambda x: (x.start, x.end))
 
-        for i in range(1, le.(intervals)):
+        ___ i in range(1, le.(intervals)):
             __ intervals[i].start < intervals[i - 1].end:
                 r_ False
 

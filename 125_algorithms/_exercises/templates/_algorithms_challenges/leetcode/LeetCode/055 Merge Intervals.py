@@ -28,7 +28,7 @@ class Solution(object
 
         itvls.sort(key=lambda x: x.start)  # sort first, since time complexity less than brute force
         ret = [itvls[0]]
-        for cur in itvls[1:]:
+        ___ cur in itvls[1:]:
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
                 pre.end = max(pre.end, cur.end)
@@ -48,7 +48,7 @@ class Solution(object
             r_ []
 
         ret = [itvls[0]]
-        for interval in itvls[1:]:
+        ___ interval in itvls[1:]:
             __ ret[-1].end < interval.start:
                 ret.append(interval)
                 continue

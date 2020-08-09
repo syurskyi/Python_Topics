@@ -8,11 +8,11 @@ infile.close()
 # R>S
 
 
-for line in data:
+___ line in data:
     p1 = 0
     p2 = 0
     match = line.strip().split(" ")
-    for game in match:
+    ___ game in match:
         c1 = game[0] # p1 choice
         c2 = game[1]
         __ c1 __ "S":

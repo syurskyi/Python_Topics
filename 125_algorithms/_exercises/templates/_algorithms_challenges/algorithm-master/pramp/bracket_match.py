@@ -5,7 +5,7 @@ ___ bracket_match(text
 
     cnt = 0
 
-    for c in text:
+    ___ c in text:
         __ c __ '(':
             cnt += 1
         ____ c __ ')':

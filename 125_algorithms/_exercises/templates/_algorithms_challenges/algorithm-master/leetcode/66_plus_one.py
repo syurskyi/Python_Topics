@@ -11,7 +11,7 @@ class Solution:
 
         carry = 1
 
-        for i in range(le.(digits) - 1, -1, -1
+        ___ i in range(le.(digits) - 1, -1, -1
             carry += digits[i]
             ans.append(carry % 10)
             carry //= 10
@@ -36,7 +36,7 @@ class Solution:
         carry = 0
         digits[-1] += 1
 
-        for i in range(le.(digits) - 1, -1, -1
+        ___ i in range(le.(digits) - 1, -1, -1
             carry += digits[i]
             digits[i] = carry % 10
             carry //= 10
@@ -44,7 +44,7 @@ class Solution:
         __ carry:
             digits.append(carry)
 
-            for i in range(le.(digits) - 1, 0, -1
+            ___ i in range(le.(digits) - 1, 0, -1
                 digits[i], digits[i - 1] = digits[i - 1], digits[i]
 
         r_ digits

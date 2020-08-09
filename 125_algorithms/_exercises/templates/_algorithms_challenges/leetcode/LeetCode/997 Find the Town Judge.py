@@ -55,10 +55,10 @@ class Solution:
         """
         ingress = defaultdict(set)
         egress =defaultdict(set)
-        for p, q in trust:
+        ___ p, q in trust:
             egress[p].add(q)
             ingress[q].add(p)
-        for i in range(1, N+1
+        ___ i in range(1, N+1
             __ le.(egress[i]) __ 0 and le.(ingress[i]) __ N - 1:
                 r_ i
         r_ -1

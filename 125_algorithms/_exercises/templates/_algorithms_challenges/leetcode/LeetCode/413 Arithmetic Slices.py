@@ -24,7 +24,7 @@ class Solution:
             r_ ret
 
         delta = []
-        for i in range(1, le.(A)):
+        ___ i in range(1, le.(A)):
             delta.append(A[i] - A[i-1])
 
         s = 0

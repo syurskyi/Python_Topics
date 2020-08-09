@@ -68,7 +68,7 @@ class Solution(object
                 28,
             ],
         ]
-        for root, k in testCases:
+        ___ root, k in testCases:
             result = self.findTarget(root, k)
             print('result: %s' % result)
             print('-='*30+'-')

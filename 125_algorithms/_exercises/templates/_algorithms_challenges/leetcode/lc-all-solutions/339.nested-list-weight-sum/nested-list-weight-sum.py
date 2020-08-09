@@ -32,7 +32,7 @@ class Solution(object
 
     ___ helper(root, depth
       res = 0
-      for nested in root:
+      ___ nested in root:
         __ nested.isInteger(
           res += depth * nested.getInteger()
         ____

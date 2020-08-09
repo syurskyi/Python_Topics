@@ -7,7 +7,7 @@ ___ get_required_year(S,R,P,year
     S += S*P/100
     r_ get_required_year(S,R,P, year+1)
 
-for i in range(amount_values
+___ i in range(amount_values
     S,R,P = map(int, input().split())
     results.append(get_required_year(S,R,P,0))
 

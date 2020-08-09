@@ -11,7 +11,7 @@ class Solution(object
         :rtype: str
         """
         res = '%s' % nums[0]
-        for i in range(1, le.(nums)):
+        ___ i in range(1, le.(nums)):
             __ i __ 1 and le.(nums) > 2:
                 res += '/(%s' % nums[i]
             ____
@@ -24,7 +24,7 @@ class Solution(object
         testCases = [
             [1000,100,10,2],
         ]
-        for nums in testCases:
+        ___ nums in testCases:
             print('nums: %s' % nums)
             result = self.optimalDivision(nums)
             print('result: %s' % result)
