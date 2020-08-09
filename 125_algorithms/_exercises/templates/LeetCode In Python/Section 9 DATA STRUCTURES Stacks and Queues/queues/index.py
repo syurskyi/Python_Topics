@@ -1,17 +1,17 @@
-class QueueLine:
-	___ __init__(self
-        self.q = []
+c_ QueueLine:
+	___ __init__(
+        .q _ []
     
-    ___ enqueue(self, x: int) -> None:
-        self.q.append(x)
+    ___ enqueue(, x: int) -> None:
+        .q.append(x)
 
 
-    ___ dequeue(self) -> None:
-        __(le.(self.q) > 0
-            self.q.pop(0)
+    ___ dequeue() -> None:
+        __(le.(.q) > 0
+            .q.pop(0)
 
-    ___ front(self) -> int:
-        __(le.(self.q) __ 0
+    ___ front() -> int:
+        __(le.(.q) __ 0
             r_ None
 
-        r_ self.q[0]
+        r_ .q[0]

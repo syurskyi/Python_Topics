@@ -1,34 +1,34 @@
 from collections ______ deque
 
 
-class LRUCache:
+c_ LRUCache:
 
-    ___ __init__(self, capacity: int
-        self.c = capacity
-        self.m = dict()
-        self.deq = deque()
+    ___ __init__(, capacity: int
+        .c _ capacity
+        .m _ dict()
+        .deq _ deque()
 
-    ___ get(self, key: int) -> int:
-        __ key __ self.m:
-            value = self.m[key]
-            self.deq.remove(key)
-            self.deq.append(key)
+    ___ get(, key: int) -> int:
+        __ key __ .m:
+            value _ .m[key]
+            .deq.remove(key)
+            .deq.append(key)
             r_ value
         ____
             r_ -1
 
-    ___ put(self, key: int, value: int) -> None:
+    ___ put(, key: int, value: int) -> None:
 
         # Your LRUCache object will be instantiated and called as such:
         # obj = LRUCache(capacity)
         # param_1 = obj.get(key)
         # obj.put(key,value)
-        __ key not __ self.m:
-            __ le.(self.deq) __ self.c:
-                oldest = self.deq.popleft()
-                del self.m[oldest]
+        __ key not __ .m:
+            __ le.(.deq) __ .c:
+                oldest _ .deq.popleft()
+                del .m[oldest]
         ____
-            self.deq.remove(key)
+            .deq.remove(key)
 
-        self.m[key] = value
-        self.deq.append(key)
+        .m[key] _ value
+        .deq.append(key)

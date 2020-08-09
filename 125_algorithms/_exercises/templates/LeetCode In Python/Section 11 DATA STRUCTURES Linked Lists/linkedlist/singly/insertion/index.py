@@ -1,57 +1,57 @@
-class Node:
+c_ Node:
 
-    ___ __init__(self, data
-        self.data = data
-        self.next = None
+    ___ __init__(, data
+        .data _ data
+        .next _ None
 
 
-class LinkedList:
+c_ LinkedList:
 
-    ___ __init__(self
-        self.head = None
+    ___ __init__(
+        .head _ None
 
-    ___ printList(self
-        temp = self.head
-        linked_list = ""
+    ___ printList(
+        temp _ .head
+        linked_list _ ""
         w___(temp
-            linked_list += (str(temp.data) + " ")
-            temp = temp.next
+            linked_list +_ (str(temp.data) + " ")
+            temp _ temp.next
         print(linked_list)
 
     # list start at 0
-    ___ insertNode(self, val, pos
-        target = Node(val)
+    ___ insertNode(, val, pos
+        target _ Node(val)
         __(pos __ 0
-            target.next = self.head
-            self.head = target
+            target.next _ .head
+            .head _ target
             r_
 
         ___ getPrev(pos
-            temp = self.head
-            count = 1
+            temp _ .head
+            count _ 1
             w___(count < pos
-                temp = temp.next
-                count += 1
+                temp _ temp.next
+                count +_ 1
             r_ temp
 
-        prev = getPrev(pos)
-        nextNode = prev.next
+        prev _ getPrev(pos)
+        nextNode _ prev.next
 
-        prev.next = target
-        target.next = nextNode
+        prev.next _ target
+        target.next _ nextNode
 
 
 # List Structure : 5 => 1 => 3 => 7
-linked_list = LinkedList()
-linked_list.head = Node(5)
+linked_list _ LinkedList()
+linked_list.head _ Node(5)
 
-second_node = Node(1)
-third_node = Node(3)
-fourth_node = Node(7)
+second_node _ Node(1)
+third_node _ Node(3)
+fourth_node _ Node(7)
 
-linked_list.head.next = second_node
-second_node.next = third_node
-third_node.next = fourth_node
+linked_list.head.next _ second_node
+second_node.next _ third_node
+third_node.next _ fourth_node
 
 linked_list.insertNode(2, 2)
 linked_list.printList()

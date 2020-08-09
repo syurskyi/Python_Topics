@@ -4,27 +4,27 @@ from collections ______ defaultdict
 # This class represents a directed graph using adjacency list representation
 
 
-class Graph:
+c_ Graph:
 
     # Constructor
-    ___ __init__(self
+    ___ __init__(
 
-        self.graph = defaultdict(list)
+        .graph _ defaultdict(list)
 
-    ___ setEdge(self, u, v
-        self.graph[u].append(v)
-        print(self.graph)
+    ___ setEdge(, u, v
+        .graph[u].append(v)
+        print(.graph)
 
-    ___ DFS(self, u, visited
+    ___ DFS(, u, visited
         visited.add(u)
-        print(u, end=' ')
+        print(u, end_' ')
 
-        ___ v __ self.graph[u]:
+        ___ v __ .graph[u]:
             __ v not __ visited:
-                self.DFS(v, visited)
+                .DFS(v, visited)
 
 
-g = Graph()
+g _ Graph()
 g.setEdge(2, 1)
 g.setEdge(2, 5)
 g.setEdge(5, 6)
@@ -32,6 +32,6 @@ g.setEdge(5, 8)
 g.setEdge(6, 9)
 
 
-visited = set()
+visited _ set()
 
 g.DFS(2, visited)

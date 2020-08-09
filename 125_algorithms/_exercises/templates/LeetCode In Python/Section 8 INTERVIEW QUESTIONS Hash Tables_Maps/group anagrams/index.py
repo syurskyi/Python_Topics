@@ -1,14 +1,14 @@
-class Solution:
-    ___ findHash(self,s
+c_ Solution:
+    ___ findHash(,s
         r_ ''.join(sorted(s))
-    ___ groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        answers = []
-        m = {}
+    ___ groupAnagrams(, strs: L..[str]) -> L..[L..[str]]:
+        answers _ []
+        m _ {}
 
         ___ s __ strs:
-            hashed = self.findHash(s)
+            hashed _ .findHash(s)
             __(hashed not __ m
-                m[hashed] = []
+                m[hashed] _ []
             m[hashed].append(s)
         
         ___ p __ m.values(

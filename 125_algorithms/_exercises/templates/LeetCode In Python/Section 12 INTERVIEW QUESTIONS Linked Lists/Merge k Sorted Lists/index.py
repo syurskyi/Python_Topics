@@ -5,48 +5,48 @@
 #         self.next = None
 
 
-class Solution:
+c_ Solution:
 
-    ___ mergeTwoLists(self, l1, l2
-        cur = ListNode(0)
-        ans = cur
+    ___ mergeTwoLists(, l1, l2
+        cur _ ListNode(0)
+        ans _ cur
 
         w___(l1 and l2
             __(l1.val > l2.val
-                cur.next = l2
-                l2 = l2.next
+                cur.next _ l2
+                l2 _ l2.next
 
             ____
-                cur.next = l1
-                l1 = l1.next
-            cur = cur.next
+                cur.next _ l1
+                l1 _ l1.next
+            cur _ cur.next
 
         w___(l1
-            cur.next = l1
-            l1 = l1.next
-            cur = cur.next
+            cur.next _ l1
+            l1 _ l1.next
+            cur _ cur.next
         w___(l2
-            cur.next = l2
-            l2 = l2.next
-            cur = cur.next
+            cur.next _ l2
+            l2 _ l2.next
+            cur _ cur.next
         r_ ans.next
 
-    ___ mergeKLists(self, lists: List[ListNode]) -> ListNode:
+    ___ mergeKLists(, lists: L..[ListNode]) -> ListNode:
         __(le.(lists) __ 0
             r_ None
 
-        i = 0
-        last = le.(lists)-1
-        j = last
+        i _ 0
+        last _ le.(lists)-1
+        j _ last
 
-        w___(last != 0
-            i = 0
-            j = last
+        w___(last !_ 0
+            i _ 0
+            j _ last
 
             w___(j > i
-                lists[i] = self.mergeTwoLists(lists[i], lists[j])
-                i += 1
-                j -= 1
-                last = j
+                lists[i] _ .mergeTwoLists(lists[i], lists[j])
+                i +_ 1
+                j -_ 1
+                last _ j
 
         r_ lists[0]

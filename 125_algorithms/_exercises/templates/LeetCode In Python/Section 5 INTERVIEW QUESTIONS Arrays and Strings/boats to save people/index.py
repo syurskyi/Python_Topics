@@ -1,19 +1,19 @@
-class Solution:
-    ___ numRescueBoats(self, people: List[int], limit: int) -> int:
-        people.sort()
-
-        left = 0
-        right = le.(people)-1
-
-        boats_number = 0
-
-        w___(left<=right
-            __(left__right
-                boats_number+=1
-                break
-            __(people[left]+people[right]<=limit
-                left+=1
-
-            right-=1
-            boats_number+=1
-        r_ boats_number
+# c_ Solution
+#     ___ numRescueBoats  people L.. in., limit in.  in.
+#         p__.so..
+#
+#         left _ 0
+#         right _ le. p..-1
+#
+#         boats_number _ 0
+#
+#         w___ ?<?
+#             __left__right
+#                 ? +_ 1
+#                 _____
+#             __(p..|? + p..|?<_l..
+#                 left+_1
+#
+#             r.. -_ 1
+#             ? +_ 1
+#         r_ ?

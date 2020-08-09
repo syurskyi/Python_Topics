@@ -1,21 +1,21 @@
 
-class Node:
-    ___ __init__(self, value
-        self.left = None
-        self.right = None
-        self.data = value
+c_ Node:
+    ___ __init__(, value
+        .left _ None
+        .right _ None
+        .data _ value
 
 
 # create root
-root = Node(4)
+root _ Node(4)
 
 #	    4
 #	  /   \
 #	None  None
 
 
-root.left = Node(5)
-root.right = Node(6)
+root.left _ Node(5)
+root.right _ Node(6)
 
 # 5 becomes left child and 6 become right child of 1
 #		           4
@@ -25,7 +25,7 @@ root.right = Node(6)
 #     None None  None  None
 
 
-root.left.left = Node(7)
+root.left.left _ Node(7)
 
 
 # 7 becomes left child of 5

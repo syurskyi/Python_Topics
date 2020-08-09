@@ -1,22 +1,22 @@
-class Solution:
-    ___ fourSumCount(self, A: List[int], B: List[int], C: List[int], D: List[int]) -> int:
-      m = {}
-      ans = 0
+c_ Solution:
+    ___ fourSumCount(, A: L.. in., B: L.. in., C: L.. in., D: L.. in.) -> int:
+      m _ {}
+      ans _ 0
 
       ___ i __ ra..(0,le.(A)):
-        x = A[i]
+        x _ A[i]
         ___ j __ ra..(0,le.(B)):
-          y = B[j]
+          y _ B[j]
           __(x+y not __ m
-            m[x+y] = 0
-          m[x+y]+=1
+            m[x+y] _ 0
+          m[x+y]+_1
 
       ___ i __ ra..(0,le.(C)):
-        x = C[i]
+        x _ C[i]
         ___ j __ ra..(0,le.(D)):
-          y = D[j]
-          target = -(x+y)
+          y _ D[j]
+          target _ -(x+y)
           __(target __ m
-            ans+=m[target]
+            ans+_m[target]
 
       r_ ans

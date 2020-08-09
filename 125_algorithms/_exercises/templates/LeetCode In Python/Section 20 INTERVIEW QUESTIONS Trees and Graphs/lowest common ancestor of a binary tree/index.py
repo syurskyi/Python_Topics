@@ -5,15 +5,15 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
-    ___ lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+c_ Solution:
+    ___ lowestCommonAncestor(, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         __(root is None
             r_ None
         __(root.val__p.val or root.val__q.val
             r_ root
         
-        left = self.lowestCommonAncestor(root.left,p,q)
-        right = self.lowestCommonAncestor(root.right,p,q)
+        left _ .lowestCommonAncestor(root.left,p,q)
+        right _ .lowestCommonAncestor(root.right,p,q)
 
         __(left is None and right is None
             r_ None

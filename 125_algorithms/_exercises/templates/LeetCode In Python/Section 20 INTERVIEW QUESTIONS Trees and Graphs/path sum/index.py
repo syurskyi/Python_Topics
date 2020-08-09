@@ -5,13 +5,13 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
-    ___ hasSum(self,root,su.,cur
+c_ Solution:
+    ___ hasSum(,root,su.,cur
         __(root is None
             r_ False
-        cur+=root.val
+        cur+_root.val
         __(cur__sum and root.left is None and root.right is None
             r_ True
-        r_ (self.hasSum(root.right,su.,cur) or self.hasSum(root.left,su.,cur))
-    ___ hasPathSum(self, root: TreeNode, su.: int) -> bool:
-        r_ self.hasSum(root,su., 0)
+        r_ (.hasSum(root.right,su.,cur) or .hasSum(root.left,su.,cur))
+    ___ hasPathSum(, root: TreeNode, su.: int) -> bool:
+        r_ .hasSum(root,su., 0)

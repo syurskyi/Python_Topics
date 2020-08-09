@@ -1,11 +1,11 @@
-class Solution:
-    ___ hasCycle(self, head: ListNode) -> bool:
-        hare = head
-        turtle = head
+c_ Solution:
+    ___ hasCycle(, head: ListNode) -> bool:
+        hare _ head
+        turtle _ head
 
         w___ turtle and hare and hare.next:
-            hare = hare.next.next
-            turtle = turtle.next
+            hare _ hare.next.next
+            turtle _ turtle.next
             __(turtle __ hare
                 r_ True
         r_ False

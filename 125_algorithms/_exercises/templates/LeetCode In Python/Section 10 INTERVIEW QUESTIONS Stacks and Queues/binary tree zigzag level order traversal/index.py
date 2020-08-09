@@ -6,21 +6,21 @@
 #         self.right = None
 
 
-class Solution:
-    ___ zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
+c_ Solution:
+    ___ zigzagLevelOrder(, root: TreeNode) -> L..[L..[int]]:
         __ not root:
             r_ []
-        res = []
-        q = collections.deque()
+        res _ []
+        q _ collections.deque()
 
-        zigzag = False
+        zigzag _ False
         q.append(root)
 
         w___ q:
-            level = []
+            level _ []
             ___ _ __ ra..(le.(q)):
                 __ zigzag:
-                    node = q.pop()
+                    node _ q.pop()
                     level.append(node.val)
                     __ node.right:
                         q.appendleft(node.right)
@@ -28,13 +28,13 @@ class Solution:
                         q.appendleft(node.left)
 
                 ____
-                    node = q.popleft()
+                    node _ q.popleft()
                     level.append(node.val)
                     __ node.left:
                         q.append(node.left)
                     __ node.right:
                         q.append(node.right)
             res.append(level)
-            zigzag = not zigzag
+            zigzag _ not zigzag
 
         r_ res

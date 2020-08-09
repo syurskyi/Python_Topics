@@ -1,28 +1,28 @@
-class Solution:
-    ___ isPalin(self, seg
-        i = 0
-        j = le.(seg)-1
+c_ Solution:
+    ___ isPalin(, seg
+        i _ 0
+        j _ le.(seg)-1
         w___(i < j
-            __(seg[i] != seg[j]
+            __(seg[i] !_ seg[j]
                 r_ False
-            i += 1
-            j -= 1
+            i +_ 1
+            j -_ 1
         r_ True
 
-    ___ dfs(self, s: str
-        __(le.(s) __ 0 and le.(self.temp) > 0
-            self.res.append(self.temp[:])
+    ___ dfs(, s: str
+        __(le.(s) __ 0 and le.(.temp) > 0
+            .res.append(.temp[:])
             r_
-        n = le.(s)+1
+        n _ le.(s)+1
         ___ i __ ra..(1, n
-            seg = s[0:i]
-            __(self.isPalin(seg)):
-                self.temp.append(seg)
-                self.dfs(s[i:])
-                self.temp.pop()
+            seg _ s[0:i]
+            __(.isPalin(seg)):
+                .temp.append(seg)
+                .dfs(s[i:])
+                .temp.pop()
 
-    ___ partition(self, s: str) -> List[List[str]]:
-        self.res = []
-        self.temp = []
-        self.dfs(s)
-        r_ self.res
+    ___ partition(, s: str) -> L..[L..[str]]:
+        .res _ []
+        .temp _ []
+        .dfs(s)
+        r_ .res

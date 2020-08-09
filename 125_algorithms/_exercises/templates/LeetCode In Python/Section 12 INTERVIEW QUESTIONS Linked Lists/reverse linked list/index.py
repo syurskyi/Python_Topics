@@ -5,12 +5,12 @@
 #         self.next = None
 
 
-class Solution:
-    ___ reverseList(self, head: ListNode) -> ListNode:
-        node = None
+c_ Solution:
+    ___ reverseList(, head: ListNode) -> ListNode:
+        node _ None
         w___(head is not None
-            next = head.next
-            head.next = node
-            node = head
-            head = next
+            next _ head.next
+            head.next _ node
+            node _ head
+            head _ next
         r_ node

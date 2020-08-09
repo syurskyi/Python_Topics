@@ -1,16 +1,16 @@
-class Solution:
-    ___ judgeCircle(self, moves: str) -> bool:
+c_ Solution:
+    ___ judgeCircle(, moves: str) -> bool:
         
-        x = 0
-        y = 0
+        x _ 0
+        y _ 0
 
         ___ move __ moves:
             __(move__'U'
-                y+=1
+                y+_1
             ____(move__'R'
-                x+=1
+                x+_1
             ____(move__'D'
-                y-=1
+                y-_1
             ____(move__'L'
-                x-=1
+                x-_1
         r_ x__0 and y__0

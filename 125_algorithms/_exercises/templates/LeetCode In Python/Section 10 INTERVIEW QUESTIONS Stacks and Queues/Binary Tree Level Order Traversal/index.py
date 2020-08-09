@@ -7,20 +7,20 @@
 
 from collections ______ deque
 
-class Solution:
-    ___ levelOrder(self, root: TreeNode) -> List[List[int]]:
-        ans = []
+c_ Solution:
+    ___ levelOrder(, root: TreeNode) -> L..[L..[int]]:
+        ans _ []
 
         __(root is None
             r_ ans
         
-        q = deque([root])
+        q _ deque([root])
 
         w___(q
-            n = le.(q)
-            temp = []
+            n _ le.(q)
+            temp _ []
             ___ i __ ra..(0,n
-                f = q.popleft()
+                f _ q.popleft()
                 temp.append(f.val)
 
                 __(f.left is not None

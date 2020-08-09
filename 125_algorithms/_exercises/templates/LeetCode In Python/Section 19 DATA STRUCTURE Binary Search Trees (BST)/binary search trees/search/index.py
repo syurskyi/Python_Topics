@@ -1,25 +1,25 @@
 
 
-class Node:
-    ___ __init__(self, value
-        self.left = None
-        self.right = None
-        self.data = value
+c_ Node:
+    ___ __init__(, value
+        .left _ None
+        .right _ None
+        .data _ value
 
 
 ___ insert(root, node
     __(root is None
-        root = node
+        root _ node
         r_
 
     __(root.data < node.data
         __(root.right is None
-            root.right = node
+            root.right _ node
         ____
             insert(root.right, node)
     ____
         __(root.left is None
-            root.left = node
+            root.left _ node
         ____
             insert(root.left, node)
 
@@ -44,7 +44,7 @@ ___ search(node, key
 #     3	            7
 #   /   \        /     \
 #  2     4      6        8
-tree = Node(5)
+tree _ Node(5)
 
 insert(tree, Node(3))
 

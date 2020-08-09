@@ -5,19 +5,19 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
-    ___ postorderTraversal(self, root: TreeNode) -> List[int]:
+c_ Solution:
+    ___ postorderTraversal(, root: TreeNode) -> L.. in.:
         __(not root
             r_
         
-        ans = []
-        s1 = []
-        s2 = []
+        ans _ []
+        s1 _ []
+        s2 _ []
 
         s1.append(root)
 
         w___(s1
-            x = s1[-1]
+            x _ s1[-1]
             s1.pop()
             s2.append(x)
 
@@ -27,7 +27,7 @@ class Solution:
                 s1.append(x.right)
         
         w___(s2
-            y = s2[-1]
+            y _ s2[-1]
             s2.pop()
             ans.append(y.val)
         r_ ans

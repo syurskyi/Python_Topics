@@ -1,25 +1,25 @@
 
 
-class Node:
-    ___ __init__(self, value
-        self.left = None
-        self.right = None
-        self.data = value
+c_ Node:
+    ___ __init__(, value
+        .left _ None
+        .right _ None
+        .data _ value
 
 
 ___ insert(root, node
     __(root is None
-        root = node
+        root _ node
         r_
 
     __(root.data < node.data
         __(root.right is None
-            root.right = node
+            root.right _ node
         ____
             insert(root.right, node)
     ____
         __(root.left is None
-            root.left = node
+            root.left _ node
         ____
             insert(root.left, node)
 
@@ -33,7 +33,7 @@ ___ preorder(node
 
 ___ minValueNode(node
     w___(node.left is not None
-        node = node.left
+        node _ node.left
     r_ node
 
 
@@ -43,31 +43,31 @@ ___ deleteNode(node, key
     # If the key to be deleted is smaller than the node's
     # key then it lies in  left subtree
     __ key < node.data:
-        node.left = deleteNode(node.left, key)
+        node.left _ deleteNode(node.left, key)
     # If the kye to be delete is greater than the node's key
     # then it lies in right subtree
     ____(key > node.data
-        node.right = deleteNode(node.right, key)
+        node.right _ deleteNode(node.right, key)
     # If key is same as node's key, then this is the node
     # to be deleted
     ____
         # Node with only one child or no child
         __ node.left is None:
-            temp = node.right
-            node = None
+            temp _ node.right
+            node _ None
             r_ temp
         ____ node.right is None:
-            temp = node.left
-            node = None
+            temp _ node.left
+            node _ None
             r_ temp
 
         # Node with two children: Get the inorder successor
         # (smallest in the right subtree)
-        temp = minValueNode(node.right)
+        temp _ minValueNode(node.right)
         # Copy the inorder successor's content to this node
-        node.data = temp.data
+        node.data _ temp.data
         # Delete the inorder successor
-        node.right = deleteNode(node.right, temp.data)
+        node.right _ deleteNode(node.right, temp.data)
 
     r_ node
 
@@ -77,7 +77,7 @@ ___ deleteNode(node, key
 #     3	            7
 #   /   \        /     \
 #  2     4      6        8
-tree = Node(5)
+tree _ Node(5)
 
 insert(tree, Node(3))
 

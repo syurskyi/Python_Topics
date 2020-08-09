@@ -1,5 +1,5 @@
-class Solution:
-    ___ isEqual(self, c1, c2) -> bool:
+c_ Solution:
+    ___ isEqual(, c1, c2) -> bool:
         __(c1 __ '(' and c2 __ ')'
             r_ True
         __(c1 __ '[' and c2 __ ']'
@@ -8,12 +8,12 @@ class Solution:
             r_ True
         r_ False
 
-    ___ isValid(self, s: str) -> bool:
-        st = []
+    ___ isValid(, s: str) -> bool:
+        st _ []
         ___ character __ s:
-            __(le.(st) != 0
-                li = st[-1]
-                __(self.isEqual(li, character)):
+            __(le.(st) !_ 0
+                li _ st[-1]
+                __(.isEqual(li, character)):
                     st.pop()
                     continue
             st.append(characrer)

@@ -1,12 +1,12 @@
-class Solution:
-    ___ maxProfit(self, prices: List[int]) -> int:
-        buyPrice = float("inf")
-        profit = 0
+c_ Solution:
+    ___ maxProfit(, prices: L.. in.) -> int:
+        buyPrice _ float("inf")
+        profit _ 0
 
         ___ i, price __ enumerate(prices
             __(buyPrice > price
-                buyPrice = price
+                buyPrice _ price
             ____
-                profit = ma.(profit, price-buyPrice)
+                profit _ ma.(profit, price-buyPrice)
 
         r_ profit

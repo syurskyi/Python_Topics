@@ -6,19 +6,19 @@
 #         self.right = None
 
 
-class Solution:
-    ans = -float("inf")
-    ___ solution(self,node
+c_ Solution:
+    ans _ -float("inf")
+    ___ solution(,node
         __(node is None
             r_ 0
-        left = self.solution(node.left)
-        right = self.solution(node.right)
+        left _ .solution(node.left)
+        right _ .solution(node.right)
 
-        mxSide = ma.(node.val,ma.(left,right)+node.val)
-        mxTop = ma.(mxSide,left+right+node.val)
-        self.ans = ma.(self.ans,mxTop)
+        mxSide _ ma.(node.val,ma.(left,right)+node.val)
+        mxTop _ ma.(mxSide,left+right+node.val)
+        .ans _ ma.(.ans,mxTop)
         r_ mxSide
 
-    ___ maxPathSum(self, root: TreeNode) -> int:
-        self.solution(root)
-        r_ self.ans
+    ___ maxPathSum(, root: TreeNode) -> int:
+        .solution(root)
+        r_ .ans

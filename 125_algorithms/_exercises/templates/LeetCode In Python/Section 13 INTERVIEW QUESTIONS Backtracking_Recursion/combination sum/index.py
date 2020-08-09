@@ -1,16 +1,16 @@
-class Solution:
-    ___ solution(self, candidates,ans,cur,target,index,su.
+c_ Solution:
+    ___ solution(, candidates,ans,cur,target,index,su.
         __(sum__target
             ans.append(cur[:])
         ____(su.<target
-            n = le.(candidates)
+            n _ le.(candidates)
             ___ i __ ra..(index,n
                 cur.append(candidates[i])
-                self.solution(candidates,ans,cur,target,i,su.+candidates[i])
+                .solution(candidates,ans,cur,target,i,su.+candidates[i])
                 cur.pop()
         r_
-    ___ combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        ans = []
-        cur = []
-        self.solution(candidates,ans,cur,target,0,0)
+    ___ combinationSum(, candidates: L.. in., target: int) -> L..[L..[int]]:
+        ans _ []
+        cur _ []
+        .solution(candidates,ans,cur,target,0,0)
         r_ ans

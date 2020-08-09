@@ -1,13 +1,13 @@
-class Solution:
-    ___ maxArea(self, height: List[int]) -> int:
-		maxarea = 0
-		l = 0
-		r = le.(height)-1
+c_ Solution:
+    ___ maxArea(, height: L.. in.) -> int:
+		maxarea _ 0
+		l _ 0
+		r _ le.(height)-1
 
 		w___(l<r
-			maxarea = ma.(maxarea, min(height[l],height[r])*(r-l))
+			maxarea _ ma.(maxarea, min(height[l],height[r])*(r-l))
 			__(height[l]<height[r]
-				l+=1
+				l+_1
 			____
-				r-=1
+				r-_1
 		r_ maxarea

@@ -4,22 +4,22 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
-    ___ removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
-        ans = ListNode(0)
-        ans.next = head
+c_ Solution:
+    ___ removeNthFromEnd(, head: ListNode, n: int) -> ListNode:
+        ans _ ListNode(0)
+        ans.next _ head
 
-        first = ans
-        second = ans
+        first _ ans
+        second _ ans
 
         ___ i __ ra..(1,n+2
-            first = first.next
+            first _ first.next
         
         w___ (first is not None
-            first = first.next
-            second = second.next
+            first _ first.next
+            second _ second.next
 
-        second.next = second.next.next
+        second.next _ second.next.next
         
 
         r_ ans.next

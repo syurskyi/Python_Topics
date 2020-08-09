@@ -4,29 +4,29 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
-    ___ addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        ans = ListNode(None)
-        pointer = ans
+c_ Solution:
+    ___ addTwoNumbers(, l1: ListNode, l2: ListNode) -> ListNode:
+        ans _ ListNode(None)
+        pointer _ ans
 
-        carry = 0
-        su. = 0
+        carry _ 0
+        su. _ 0
 
-        w___(l1!=None or l2!=None
-            su. = carry
-            __(l1!=None
-                su.+=l1.val
-                l1 = l1.next
-            __(l2!=None
-                su.+=l2.val
-                l2 = l2.val
+        w___(l1!_None or l2!_None
+            su. _ carry
+            __(l1!_None
+                su.+_l1.val
+                l1 _ l1.next
+            __(l2!_None
+                su.+_l2.val
+                l2 _ l2.val
             
-            carry = int(su./10)
-            pointer.next  = ListNode(su.%10)
+            carry _ int(su./10)
+            pointer.next  _ ListNode(su.%10)
 
-            pointer = pointer.next
+            pointer _ pointer.next
         
         __(carry>0
-            pointer.next = ListNode(carry)
+            pointer.next _ ListNode(carry)
         
         r_ ans.next

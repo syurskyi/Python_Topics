@@ -1,8 +1,8 @@
-class Solution:
-    ___ majorityElement(self, nums: List[int]) -> int:
-        m = {}
+c_ Solution:
+    ___ majorityElement(, nums: L.. in.) -> int:
+        m _ {}
         ___ num __ nums:
-            m[num] = m.get(num,0)+1
+            m[num] _ m.get(num,0)+1
         ___ num __ nums:
             __(m[num]>le.(nums)//2
                 r_ num

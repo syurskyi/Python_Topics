@@ -1,20 +1,20 @@
 from collections ______ defaultdict
 
 
-class Graph:
-    ___ __init__(self
-        self.graph = defaultdict(list)
+c_ Graph:
+    ___ __init__(
+        .graph _ defaultdict(list)
 
-    ___ insertEdge(self, v1, v2
-        self.graph[v1].append(v2)
+    ___ insertEdge(, v1, v2
+        .graph[v1].append(v2)
 
-    ___ printGraph(self
-        ___ node __ self.graph:
-            ___ v __ self.graph[node]:
+    ___ printGraph(
+        ___ node __ .graph:
+            ___ v __ .graph[node]:
                 print(node, "->", v)
 
 
-g = Graph()
+g _ Graph()
 
 g.insertEdge(1, 2)
 g.insertEdge(2, 3)

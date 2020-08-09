@@ -1,97 +1,97 @@
-class Node:
-    ___ __init__(self, data
-        self.data = data
-        self.prev = None
-        self.next = None
+c_ Node:
+    ___ __init__(, data
+        .data _ data
+        .prev _ None
+        .next _ None
 
 
-class LinkedList:
-    ___ __init__(self
-        self.head = None
+c_ LinkedList:
+    ___ __init__(
+        .head _ None
 
-    ___ createList(self, arr
-        start = self.head
-        n = le.(arr)
+    ___ createList(, arr
+        start _ .head
+        n _ le.(arr)
 
-        temp = start
-        i = 0
+        temp _ start
+        i _ 0
 
         w___(i < n
-            newNode = Node(arr[i])
+            newNode _ Node(arr[i])
             __(i __ 0
-                start = newNode
-                temp = start
+                start _ newNode
+                temp _ start
             ____
-                temp.next = newNode
-                newNode.prev = temp
-                temp = temp.next
-            i += 1
-        self.head = start
+                temp.next _ newNode
+                newNode.prev _ temp
+                temp _ temp.next
+            i +_ 1
+        .head _ start
         r_ start
 
-    ___ printList(self
-        temp = self.head
-        linked_list = ""
+    ___ printList(
+        temp _ .head
+        linked_list _ ""
         w___(temp
-            linked_list += (str(temp.data) + " ")
-            temp = temp.next
+            linked_list +_ (str(temp.data) + " ")
+            temp _ temp.next
 
         print(linked_list)
 
-    ___ countList(self
-        temp = self.head
-        count = 0
+    ___ countList(
+        temp _ .head
+        count _ 0
         w___(temp is not None
-            temp = temp.next
-            count += 1
+            temp _ temp.next
+            count +_ 1
         r_ count
 
     # we will consider that the index begin at 1
-    ___ insertAtLocation(self, value, index
-        temp = self.head
+    ___ insertAtLocation(, value, index
+        temp _ .head
 
-        count = self.countList()
+        count _ .countList()
 
         #index is 6, count is 5, valid 
         #index is 7, count is 5, 
         __(count+1<index
             r_ temp
         
-        newNode = Node(value)
+        newNode _ Node(value)
 
         __(index __ 1
-            newNode.next = temp
-            temp.prev = newNode
-            self.head = newNode
-            r_ self.head
+            newNode.next _ temp
+            temp.prev _ newNode
+            .head _ newNode
+            r_ .head
         
         __(index __ count +1
             w___(temp.next is not None
-                temp = temp.next
+                temp _ temp.next
 
-            temp.next = newNode
-            newNode.prev = temp 
-            r_ self.head
+            temp.next _ newNode
+            newNode.prev _ temp
+            r_ .head
         
-        i = 1
+        i _ 1
         w___(i < index-1
-            temp = temp.next
-            i+=1
+            temp _ temp.next
+            i+_1
         
-        nodeAtTarget = temp.next
+        nodeAtTarget _ temp.next
 
-        newNode.next = nodeAtTarget
-        nodeAtTarget.prev = newNode
+        newNode.next _ nodeAtTarget
+        nodeAtTarget.prev _ newNode
 
-        temp.next = newNode
-        newNode.prev = temp
+        temp.next _ newNode
+        newNode.prev _ temp
 
-        r_ self.head
+        r_ .head
 
 
-arr = [1, 2, 3, 4, 5]
+arr _ [1, 2, 3, 4, 5]
 
-llist = LinkedList()
+llist _ LinkedList()
 
 llist.createList(arr)
 

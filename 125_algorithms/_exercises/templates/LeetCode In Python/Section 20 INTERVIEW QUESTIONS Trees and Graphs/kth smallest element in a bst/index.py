@@ -1,17 +1,17 @@
-class Solution:
-    ___ kthSmallest(self, root: TreeNode, k: int) -> int:
-        self.k = k
-        self.res = None
-        self.helper(root)
-        r_ self.res
+c_ Solution:
+    ___ kthSmallest(, root: TreeNode, k: int) -> int:
+        .k _ k
+        .res _ None
+        .helper(root)
+        r_ .res
 
-    ___ helper(self, root
+    ___ helper(, root
         __ not root:
             r_
-        self.helper(root.left)
+        .helper(root.left)
         
-        self.k -= 1
-        __ self.k __ 0:
-            self.res = root.val
+        .k -_ 1
+        __ .k __ 0:
+            .res _ root.val
             r_
-        self.helper(root.right)
+        .helper(root.right)

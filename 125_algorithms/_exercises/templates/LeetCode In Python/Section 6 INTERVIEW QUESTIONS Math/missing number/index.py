@@ -1,7 +1,7 @@
-class Solution:
-    ___ missingNumber(self, nums: List[int]) -> int:
-        currentSum = su.(nums)
-        n = le.(nums)
-        intendedSum = n*(n+1)/2
+c_ Solution:
+    ___ missingNumber(, nums: L.. in.) -> int:
+        currentSum _ su.(nums)
+        n _ le.(nums)
+        intendedSum _ n*(n+1)/2
 
         r_ int(intendedSum-currentSum)

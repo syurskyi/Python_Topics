@@ -2,33 +2,33 @@
 from collections ______ defaultdict
 
 
-class Graph:
+c_ Graph:
 
-    ___ __init__(self
-        self.graph = defaultdict(list)
+    ___ __init__(
+        .graph _ defaultdict(list)
 
-    ___ setEdge(self, u, v
-        self.graph[u].append(v)
+    ___ setEdge(, u, v
+        .graph[u].append(v)
 
-    ___ bfs(self, s
-        visited = set()
+    ___ bfs(, s
+        visited _ set()
 
-        queue = []
+        queue _ []
         queue.append(s)
 
         visited.add(s)
 
         w___ queue:
-            u = queue.pop(0)
-            print(u, end=" ")
+            u _ queue.pop(0)
+            print(u, end_" ")
 
-            ___ v __ self.graph[u]:
+            ___ v __ .graph[u]:
                 __ v not __ visited:
                     queue.append(v)
                     visited.add(v)
 
 
-g = Graph()
+g _ Graph()
 g.setEdge(2, 1)
 g.setEdge(2, 5)
 g.setEdge(5, 6)

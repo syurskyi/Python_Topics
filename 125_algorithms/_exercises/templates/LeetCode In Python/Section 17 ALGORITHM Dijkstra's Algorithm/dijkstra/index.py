@@ -1,19 +1,19 @@
 # network delay time - leetcode
-class Solution:
-    ___ networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
+c_ Solution:
+    ___ networkDelayTime(, times: L..[L..[int]], N: int, K: int) -> int:
 
-        g = collections.defaultdict(list)
+        g _ collections.defaultdict(list)
         ___ u, v, cost __ times:
             g[u].append((cost, v))
 
         # cost,node
-        min_heap = [(0, K)]
-        visited = set()
-        distance = {i: float('inf') ___ i __ ra..(1, N+1)}
-        distance[K] = 0
+        min_heap _ [(0, K)]
+        visited _ set()
+        distance _ {i: float('inf') ___ i __ ra..(1, N+1)}
+        distance[K] _ 0
 
         w___ min_heap:
-            cur_dist, u = heapq.heappop(min_heap)
+            cur_dist, u _ heapq.heappop(min_heap)
             __ u __ visited:
                 continue
             visited.add(u)
@@ -22,6 +22,6 @@ class Solution:
 
             ___ direct_distance, v __ g[u]:
                 __ cur_dist + direct_distance < distance[v] and v not __ visited:
-                    distance[v] = cur_dist + direct_distance
+                    distance[v] _ cur_dist + direct_distance
                     heapq.heappush(min_heap, (cur_dist + direct_distance, v))
         r_ -1

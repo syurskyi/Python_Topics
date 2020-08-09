@@ -1,10 +1,10 @@
 
 
-class Node:
-    ___ __init__(self, value
-        self.left = None
-        self.right = None
-        self.data = value
+c_ Node:
+    ___ __init__(, value
+        .left _ None
+        .right _ None
+        .data _ value
 
 
 ___ preorder(node
@@ -15,15 +15,15 @@ ___ preorder(node
 
 
 # create root
-root = Node(4)
+root _ Node(4)
 ''' following is the tree after above statement 
 	    4 
 	  /   \ 
 	None  None
 '''
 
-root.left = Node(5)
-root.right = Node(6)
+root.left _ Node(5)
+root.right _ Node(6)
 
 ''' 5 and 6 become left and right children of 1 
 		           4 
@@ -34,7 +34,7 @@ root.right = Node(6)
 '''
 
 
-root.left.left = Node(7)
+root.left.left _ Node(7)
 '''
 7 becomes left child of 5
 		           4 

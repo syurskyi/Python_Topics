@@ -4,21 +4,21 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
-    ___ oddEvenList(self, head: ListNode) -> ListNode:
+c_ Solution:
+    ___ oddEvenList(, head: ListNode) -> ListNode:
         __(not head
             r_ head
 
-        odd = head
-        even = odd.next
-        evenList = even
+        odd _ head
+        even _ odd.next
+        evenList _ even
 
         w___(even and even.next
-            odd.next = even.next
-            odd = odd.next
+            odd.next _ even.next
+            odd _ odd.next
 
-            even.next = odd.next
-            even = even.next
+            even.next _ odd.next
+            even _ even.next
 
-        odd.next = evenList
+        odd.next _ evenList
         r_ head

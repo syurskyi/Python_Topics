@@ -1,5 +1,5 @@
-class Solution(object
-    ___ singleNumber(self, nums
+c_ Solution(object
+    ___ singleNumber(, nums
         """
         :type nums: List[int]
         :rtype: int

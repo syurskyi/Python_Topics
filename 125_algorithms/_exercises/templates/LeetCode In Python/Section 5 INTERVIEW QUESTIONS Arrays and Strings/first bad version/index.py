@@ -4,15 +4,15 @@
 # ___ isBadVersion(version
 
 
-class Solution:
-    ___ firstBadVersion(self, n
-        left = 1
-        right = n
+c_ Solution:
+    ___ firstBadVersion(, n
+        left _ 1
+        right _ n
 
         w___(left < right
-            mid = left+(right-left)//2
+            mid _ left+(right-left)//2
             __ not isBadVersion(mid
-                left = mid+1
+                left _ mid+1
             ____
-                right = mid
+                right _ mid
         r_ left

@@ -1,15 +1,15 @@
-class Solution:
-    ___ lengthOfLongestSubstring(self, s: str) -> int:
-        m = {}
-        left = 0
-        right = 0
-        ans = 0
-        n = le.(s)
+c_ Solution:
+    ___ lengthOfLongestSubstring(, s: str) -> int:
+        m _ {}
+        left _ 0
+        right _ 0
+        ans _ 0
+        n _ le.(s)
         w___(left<n and right<n
-            el = s[right]
+            el _ s[right]
             __(el __ m
-                left = ma.(left,m[el]+1)
-            m[el] = right
-            ans = ma.(ans,right-left+1)
-            right+=1
+                left _ ma.(left,m[el]+1)
+            m[el] _ right
+            ans _ ma.(ans,right-left+1)
+            right+_1
         r_ ans

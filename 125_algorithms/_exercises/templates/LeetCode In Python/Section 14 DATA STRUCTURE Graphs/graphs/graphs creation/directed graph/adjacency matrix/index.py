@@ -1,27 +1,27 @@
 from collections ______ defaultdict
 
 
-class Graph:
-    ___ __init__(self, numberOfNodes
-        self.numberOfNodes = numberOfNodes+1
-        self.graph = [[0 ___ x __ ra..(numberOfNodes+1)]
+c_ Graph:
+    ___ __init__(, numberOfNodes
+        .numberOfNodes _ numberOfNodes+1
+        .graph _ [[0 ___ x __ ra..(numberOfNodes+1)]
                       ___ y __ ra..(numberOfNodes+1)]
 
-    ___ withInBounds(self, v1, v2
-        r_ (v1 >= 0 and v1 <= self.numberOfNodes) and (v2 >= 0 and v2 <= self.numberOfNodes)
+    ___ withInBounds(, v1, v2
+        r_ (v1 >_ 0 and v1 <_ .numberOfNodes) and (v2 >_ 0 and v2 <_ .numberOfNodes)
 
-    ___ insertEdge(self, v1, v2
-        __(self.withInBounds(v1, v2)):
-            self.graph[v1][v2] = 1
+    ___ insertEdge(, v1, v2
+        __(.withInBounds(v1, v2)):
+            .graph[v1][v2] _ 1
 
-    ___ printGraph(self
-        ___ i __ ra..(self.numberOfNodes
-            ___ j __ ra..(le.(self.graph[i])):
-                __(self.graph[i][j]
+    ___ printGraph(
+        ___ i __ ra..(.numberOfNodes
+            ___ j __ ra..(le.(.graph[i])):
+                __(.graph[i][j]
                     print(i, "->", j)
 
 
-g = Graph(5)
+g _ Graph(5)
 
 g.insertEdge(1, 2)
 g.insertEdge(2, 3)

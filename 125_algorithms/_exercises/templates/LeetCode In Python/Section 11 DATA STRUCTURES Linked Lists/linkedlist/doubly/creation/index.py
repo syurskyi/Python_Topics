@@ -1,47 +1,47 @@
-class Node:
-    ___ __init__(self, data
-        self.data = data
-        self.prev = None
-        self.next = None
+c_ Node:
+    ___ __init__(, data
+        .data _ data
+        .prev _ None
+        .next _ None
 
 
-class LinkedList:
-    ___ __init__(self
-        self.head = None
+c_ LinkedList:
+    ___ __init__(
+        .head _ None
 
-    ___ createList(self, arr
-        start = self.head
-        n = le.(arr)
+    ___ createList(, arr
+        start _ .head
+        n _ le.(arr)
 
-        temp = start
-        i = 0
+        temp _ start
+        i _ 0
 
         w___(i < n
-            newNode = Node(arr[i])
+            newNode _ Node(arr[i])
             __(i __ 0
-                start = newNode
-                temp = start
+                start _ newNode
+                temp _ start
             ____
-                temp.next = newNode
-                newNode.prev = temp
-                temp = temp.next
-            i += 1
-        self.head = start
+                temp.next _ newNode
+                newNode.prev _ temp
+                temp _ temp.next
+            i +_ 1
+        .head _ start
         r_ start
 
-    ___ printList(self
-        temp = self.head
-        linked_list = ""
+    ___ printList(
+        temp _ .head
+        linked_list _ ""
         w___(temp
-            linked_list += (str(temp.data) + " ")
-            temp = temp.next
+            linked_list +_ (str(temp.data) + " ")
+            temp _ temp.next
 
         print(linked_list)
       
 
-arr = [1,2,3,4,5]
+arr _ [1,2,3,4,5]
 
-llist = LinkedList()
+llist _ LinkedList()
 
 llist.createList(arr)
 

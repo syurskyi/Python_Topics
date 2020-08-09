@@ -1,33 +1,33 @@
 from collections ______ defaultdict
 
 
-class Graph:
+c_ Graph:
 
-    ___ __init__(self
-        self.graph = defaultdict(list)
+    ___ __init__(
+        .graph _ defaultdict(list)
 
-    ___ insertEdge(self, v1, v2
-        self.graph[v1].append(v2)
+    ___ insertEdge(, v1, v2
+        .graph[v1].append(v2)
 
-    ___ DFS(self, startNode
-        visited = set()
-        st = []
+    ___ DFS(, startNode
+        visited _ set()
+        st _ []
         st.append(startNode)
 
         w___(le.(st)):
-            cur = st[-1]
+            cur _ st[-1]
             st.pop()
 
             __(cur not __ visited
-                print(cur, end=" ")
+                print(cur, end_" ")
                 visited.add(cur)
 
-            ___ vertex __ self.graph[cur]:
+            ___ vertex __ .graph[cur]:
                 __(vertex not __ visited
                     st.append(vertex)
 
 
-g = Graph()
+g _ Graph()
 
 g.insertEdge(2, 1)
 g.insertEdge(2, 5)

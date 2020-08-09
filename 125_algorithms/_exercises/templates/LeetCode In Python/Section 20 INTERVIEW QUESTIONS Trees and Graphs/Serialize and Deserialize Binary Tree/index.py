@@ -6,9 +6,9 @@
 #         self.right = None
 
 
-class Codec:
+c_ Codec:
 
-    ___ serialize(self, root
+    ___ serialize(, root
         """Encodes a tree to a single string.
 
         :type root: TreeNode
@@ -17,29 +17,29 @@ class Codec:
         __(root is None
             r_ "X#"
 
-        leftSerialized = self.serialize(root.left)
-        rightSerialized = self.serialize(root.right)
+        leftSerialized _ .serialize(root.left)
+        rightSerialized _ .serialize(root.right)
 
         r_ str(root.val)+"#"+leftSerialized+rightSerialized
 
-    ___ deserialize(self, data
+    ___ deserialize(, data
         """Decodes your encoded data to tree.
         :type data: str
         :rtype: TreeNode
         """
 
         ___ dfs(
-            val = next(data)
+            val _ next(data)
             __ val __ 'X':
                 r_ None
-            node = TreeNode(int(val))
+            node _ TreeNode(int(val))
 
-            node.left = dfs()
-            node.right = dfs()
+            node.left _ dfs()
+            node.right _ dfs()
 
             r_ node
 
-        data = iter(data.split("#"))
+        data _ iter(data.split("#"))
         r_ dfs()
 
 
