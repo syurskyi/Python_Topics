@@ -3,14 +3,14 @@ c_ Solution:
     dy _ [1, -1, 0, 0]
 
     ___ solution(, board, word, x, y, cur
-        __(x < 0 or x >_ le.(board) or y < 0 or y >_ le.(board[x]) or board[x][y] __ ' '
-            r_ False
+        __(x < 0 o.. x >_ le.(board) o.. y < 0 o.. y >_ le.(board[x]) o.. board[x][y] __ ' '
+            r_ F..
         cur +_ board[x][y]
 
         __(le.(cur) > le.(word)):
-            r_ False
+            r_ F..
         __(cur[le.(cur)-1] !_ word[le.(cur)-1]
-            r_ False
+            r_ F..
         __(cur __ word
             r_ T..
 
@@ -22,7 +22,7 @@ c_ Solution:
                 r_ T..
 
         board[x][y] _ temp
-        r_ False
+        r_ F..
 
     ___ exist(, board: L..[L..[st.]], word: st.) -> bool:
         __(le.(word) __ 0
@@ -31,6 +31,6 @@ c_ Solution:
         ___ i __ ra..(n
             m _ le.(board[i])
             ___ j __ ra..(m
-                __(word[0] __ board[i][j] and .solution(board, word, i, j, "")):
+                __(word[0] __ board[i][j] a.. .solution(board, word, i, j, "")):
                     r_ T..
-        r_ False
+        r_ F..

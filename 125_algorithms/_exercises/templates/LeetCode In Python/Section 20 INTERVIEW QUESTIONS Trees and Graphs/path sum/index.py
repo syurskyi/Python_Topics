@@ -8,10 +8,10 @@
 c_ Solution:
     ___ hasSum(,root,su.,cur
         __(root is None
-            r_ False
+            r_ F..
         cur+_root.val
-        __(cur__sum and root.left is None and root.right is None
+        __(cur__sum a.. root.left is None a.. root.right is None
             r_ T..
-        r_ (.hasSum(root.right,su.,cur) or .hasSum(root.left,su.,cur))
+        r_ (.hasSum(root.right,su.,cur) o.. .hasSum(root.left,su.,cur))
     ___ hasPathSum(, root: TreeNode, su.: int) -> bool:
         r_ .hasSum(root,su., 0)

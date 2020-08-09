@@ -21,7 +21,7 @@ c_ Solution:
                 r_ cur_dist
 
             ___ direct_distance, v __ g[u]:
-                __ cur_dist + direct_distance < distance[v] and v no. __ visited:
+                __ cur_dist + direct_distance < distance[v] a.. v no. __ visited:
                     distance[v] _ cur_dist + direct_distance
                     heapq.heappush(min_heap, (cur_dist + direct_distance, v))
         r_ -1

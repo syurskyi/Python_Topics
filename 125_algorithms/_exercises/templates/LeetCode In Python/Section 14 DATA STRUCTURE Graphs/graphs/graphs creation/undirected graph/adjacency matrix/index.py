@@ -8,7 +8,7 @@ c_ Graph:
                       ___ y __ ra..(numberOfNodes+1)]
 
     ___ withInBounds(, v1, v2
-        r_ (v1 >_ 0 and v1 <_ .numberOfNodes) and (v2 >_ 0 and v2 <_ .numberOfNodes)
+        r_ (v1 >_ 0 a.. v1 <_ .numberOfNodes) a.. (v2 >_ 0 a.. v2 <_ .numberOfNodes)
 
     ___ insertEdge(, v1, v2
         __(.withInBounds(v1, v2)):

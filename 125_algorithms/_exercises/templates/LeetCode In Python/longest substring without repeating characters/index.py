@@ -5,7 +5,7 @@ c_ Solution:
         right _ 0
         ans _ 0
         n _ le.(s)
-        w___(left<n and right<n
+        w___(left<n a.. right<n
             el _ s[right]
             __(el __ m
                 left _ ma.(left,m[el]+1)

@@ -9,15 +9,15 @@ c_ Solution:
     ___ lowestCommonAncestor(, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         __(root is None
             r_ None
-        __(root.val__p.val or root.val__q.val
+        __(root.val__p.val o.. root.val__q.val
             r_ root
         
         left _ .lowestCommonAncestor(root.left,p,q)
         right _ .lowestCommonAncestor(root.right,p,q)
 
-        __(left is None and right is None
+        __(left is None a.. right is None
             r_ None
-        __(left is no. None and right is no. None
+        __(left is no. None a.. right is no. None
             r_ root
         __(left is None
             r_ right

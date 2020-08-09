@@ -4,13 +4,13 @@ c_ Solution:
         j _ le.(seg)-1
         w___(i < j
             __(seg[i] !_ seg[j]
-                r_ False
+                r_ F..
             i +_ 1
             j -_ 1
         r_ T..
 
     ___ dfs(, s: st.
-        __(le.(s) __ 0 and le.(.temp) > 0
+        __(le.(s) __ 0 a.. le.(.temp) > 0
             .res.append(.temp[:])
             r_
         n _ le.(s)+1

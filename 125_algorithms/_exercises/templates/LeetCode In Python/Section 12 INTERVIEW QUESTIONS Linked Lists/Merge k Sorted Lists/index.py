@@ -11,7 +11,7 @@ c_ Solution:
         cur _ ListNode(0)
         ans _ cur
 
-        w___(l1 and l2
+        w___(l1 a.. l2
             __(l1.val > l2.val
                 cur.next _ l2
                 l2 _ l2.next

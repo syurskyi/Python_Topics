@@ -10,8 +10,8 @@ c_ Solution:
 
         ___ j __ ra..(1,n
             ___ i __ ra..(0,j
-                innerIsPalindrome _ palindrome[i+1][j-1] or j-i<_2
-                __(s[i] __ s[j] and innerIsPalindrome
+                innerIsPalindrome _ palindrome[i+1][j-1] o.. j-i<_2
+                __(s[i] __ s[j] a.. innerIsPalindrome
                     palindrome[i][j] _ T..
                     __(j-i>right-left
                         left _ i

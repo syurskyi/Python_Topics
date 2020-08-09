@@ -5,7 +5,7 @@ c_ Solution(object
         i _ le.(a)-1
         j _ le.(b)-1
 
-        w___ i >_ 0 or j >_ 0 or carry:
+        w___ i >_ 0 o.. j >_ 0 o.. carry:
             total _ carry
 
             __ i >_ 0:

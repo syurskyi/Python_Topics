@@ -1,12 +1,12 @@
 c_ Solution:
     ___ isEqual(, c1, c2) -> bool:
-        __(c1 __ '(' and c2 __ ')'
+        __(c1 __ '(' a.. c2 __ ')'
             r_ T..
-        __(c1 __ '[' and c2 __ ']'
+        __(c1 __ '[' a.. c2 __ ']'
             r_ T..
-        __(c1 __ '{' and c2 __ '}'
+        __(c1 __ '{' a.. c2 __ '}'
             r_ T..
-        r_ False
+        r_ F..
 
     ___ isValid(, s: st.) -> bool:
         st _ []

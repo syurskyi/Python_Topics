@@ -12,7 +12,7 @@ c_ Solution:
         carry _ 0
         su. _ 0
 
-        w___(l1!_None or l2!_None
+        w___(l1!_None o.. l2!_None
             su. _ carry
             __(l1!_None
                 su.+_l1.val

@@ -13,7 +13,7 @@ c_ Solution:
         res _ []
         q _ collections.deque()
 
-        zigzag _ False
+        zigzag _ F..
         q.append(root)
 
         w___ q:

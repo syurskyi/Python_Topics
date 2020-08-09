@@ -28,7 +28,7 @@ c_ Solution:
                 hashPat[s[right]] _ 0
             __ (
 
-                hashPat.get(s[right]) !_ 0 and
+                hashPat.get(s[right]) !_ 0 a..
                 hashStr.get(s[right]) <_ hashPat.get(s[right])
 
                 count +_ 1  # keep incrementing the count if string hash is less then pattern hash
@@ -40,7 +40,7 @@ c_ Solution:
                 __(hashPat.get(s[left]) is None
                     hashPat[s[right]] _ 0
                 w___ (
-                    hashStr.get(s[left]) > hashPat.get(s[left]) or
+                    hashStr.get(s[left]) > hashPat.get(s[left]) o..
                     hashPat.get(s[left]) __ 0
 
                     #minimizing the windows range from left side

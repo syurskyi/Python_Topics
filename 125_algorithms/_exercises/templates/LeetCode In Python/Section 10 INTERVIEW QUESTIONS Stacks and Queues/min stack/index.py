@@ -4,7 +4,7 @@ c_ MinStack:
 
     ___ push(, x: int) -> None:
         curMin _ .getMin()
-        __ curMin __ None or curMin > x:
+        __ curMin __ None o.. curMin > x:
             curMin _ x
         .st.append((x, curMin))
 
