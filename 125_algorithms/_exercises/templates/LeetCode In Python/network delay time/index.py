@@ -2,7 +2,7 @@
 c_ Solution:
     ___ networkDelayTime(, times: L..[L..[in.]], N: in., K: in.) -> in.:
 
-        g _ collections.defaultdict(list)
+        g _ co...d_d_(list)
         ___ u, v, cost __ times:
             g[u].ap..((cost, v))
 

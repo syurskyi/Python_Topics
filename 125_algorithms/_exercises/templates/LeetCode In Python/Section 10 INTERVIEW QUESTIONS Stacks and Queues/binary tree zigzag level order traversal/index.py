@@ -11,7 +11,7 @@ c_ Solution:
         __ no. root:
             r_ []
         res _ []
-        q _ collections.deque()
+        q _ co...deque()
 
         zigzag _ F..
         q.ap..(root)

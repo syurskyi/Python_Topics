@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-from collections ______ deque
+____ co.. ______ deque
 
 c_ Solution:
     ___ levelOrder(, root: TreeNode) -> L..[L..[in.]]:

@@ -1,10 +1,10 @@
-from collections ______ defaultdict
+____ co.. ______ d_d_
 
 
 c_ Graph:
 
     ___ __init__(
-        .graph _ defaultdict(list)
+        .graph _ d_d_(list)
 
     ___ insertEdge(, v1, v2
         .graph[v1].ap..(v2)

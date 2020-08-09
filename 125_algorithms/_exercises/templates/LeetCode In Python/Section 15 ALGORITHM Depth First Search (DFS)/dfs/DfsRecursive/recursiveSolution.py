@@ -1,5 +1,5 @@
 
-from collections ______ defaultdict
+____ co.. ______ d_d_
 
 # This class represents a directed graph using adjacency list representation
 
@@ -9,7 +9,7 @@ c_ Graph:
     # Constructor
     ___ __init__(
 
-        .graph _ defaultdict(list)
+        .graph _ d_d_(list)
 
     ___ setEdge(, u, v
         .graph[u].ap..(v)
