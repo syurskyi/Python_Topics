@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ kthSmallest(, root: TreeNode, k: int) -> int:
+    ___ kthSmallest(, root: TreeNode, k: in.) -> in.:
         .k _ k
         .res _ None
         .helper(root)

@@ -7,21 +7,21 @@
 
 
 c_ Solution:
-    ___ zigzagLevelOrder(, root: TreeNode) -> L..[L..[int]]:
+    ___ zigzagLevelOrder(, root: TreeNode) -> L..[L..[in.]]:
         __ no. root:
             r_ []
         res _ []
         q _ collections.deque()
 
         zigzag _ F..
-        q.append(root)
+        q.ap..(root)
 
         w___ q:
             level _ []
             ___ _ __ ra..(le.(q)):
                 __ zigzag:
                     node _ q.pop()
-                    level.append(node.val)
+                    level.ap..(node.val)
                     __ node.right:
                         q.appendleft(node.right)
                     __ node.left:
@@ -29,12 +29,12 @@ c_ Solution:
 
                 ____
                     node _ q.popleft()
-                    level.append(node.val)
+                    level.ap..(node.val)
                     __ node.left:
-                        q.append(node.left)
+                        q.ap..(node.left)
                     __ node.right:
-                        q.append(node.right)
-            res.append(level)
+                        q.ap..(node.right)
+            res.ap..(level)
             zigzag _ no. zigzag
 
         r_ res

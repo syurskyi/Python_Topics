@@ -1,10 +1,10 @@
 # network delay time - leetcode
 c_ Solution:
-    ___ networkDelayTime(, times: L..[L..[int]], N: int, K: int) -> int:
+    ___ networkDelayTime(, times: L..[L..[in.]], N: in., K: in.) -> in.:
 
         g _ collections.defaultdict(list)
         ___ u, v, cost __ times:
-            g[u].append((cost, v))
+            g[u].ap..((cost, v))
 
         # cost,node
         min_heap _ [(0, K)]

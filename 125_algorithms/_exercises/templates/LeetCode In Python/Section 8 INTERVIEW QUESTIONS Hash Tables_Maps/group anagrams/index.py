@@ -1,6 +1,6 @@
 c_ Solution:
     ___ findHash(,s
-        r_ ''.join(sorted(s))
+        r_ ''.j..(sorted(s))
     ___ groupAnagrams(, strs: L..[st.]) -> L..[L..[st.]]:
         answers _ []
         m _ {}
@@ -9,10 +9,10 @@ c_ Solution:
             hashed _ .findHash(s)
             __(hashed no. __ m
                 m[hashed] _ []
-            m[hashed].append(s)
+            m[hashed].ap..(s)
         
         ___ p __ m.values(
-            answers.append(p)
+            answers.ap..(p)
         
         r_ answers
 

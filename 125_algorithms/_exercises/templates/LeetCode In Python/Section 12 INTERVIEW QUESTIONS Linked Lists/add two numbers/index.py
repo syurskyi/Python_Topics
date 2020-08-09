@@ -21,7 +21,7 @@ c_ Solution:
                 su.+_l2.val
                 l2 _ l2.val
             
-            carry _ int(su./10)
+            carry _ in.(su./10)
             pointer.next  _ ListNode(su.%10)
 
             pointer _ pointer.next

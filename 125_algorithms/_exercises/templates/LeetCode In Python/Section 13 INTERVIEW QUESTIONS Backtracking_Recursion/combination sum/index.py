@@ -1,15 +1,15 @@
 c_ Solution:
     ___ solution(, candidates,ans,cur,target,index,su.
         __(sum__target
-            ans.append(cur[:])
+            ans.ap..(cur[:])
         ____(su.<target
             n _ le.(candidates)
             ___ i __ ra..(index,n
-                cur.append(candidates[i])
+                cur.ap..(candidates[i])
                 .solution(candidates,ans,cur,target,i,su.+candidates[i])
                 cur.pop()
         r_
-    ___ combinationSum(, candidates: L.. in., target: int) -> L..[L..[int]]:
+    ___ combinationSum(, candidates: L.. in., target: in.) -> L..[L..[in.]]:
         ans _ []
         cur _ []
         .solution(candidates,ans,cur,target,0,0)

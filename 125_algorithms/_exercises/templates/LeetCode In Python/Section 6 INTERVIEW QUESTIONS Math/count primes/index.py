@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ countPrimes(, n: int) -> int:
+    ___ countPrimes(, n: in.) -> in.:
         
         __ n<2:
             r_ 0

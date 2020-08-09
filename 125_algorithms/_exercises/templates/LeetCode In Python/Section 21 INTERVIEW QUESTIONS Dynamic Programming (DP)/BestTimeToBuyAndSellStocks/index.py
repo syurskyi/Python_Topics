@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maxProfit(, prices: L.. in.) -> int:
+    ___ maxProfit(, prices: L.. in.) -> in.:
         buyPrice _ float("inf")
         profit _ 0
 

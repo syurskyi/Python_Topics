@@ -4,7 +4,7 @@ c_ Solution:
         __(index > le.(digits)):
             r_
         __(le.(combination) __ le.(digits)):
-            ans.append(combination[:])
+            ans.ap..(combination[:])
             r_
 
         currentDigit _ digits[index]

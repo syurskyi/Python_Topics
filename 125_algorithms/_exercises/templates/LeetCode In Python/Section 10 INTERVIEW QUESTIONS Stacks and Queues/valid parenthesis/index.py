@@ -16,5 +16,5 @@ c_ Solution:
                 __(.isEqual(li, character)):
                     st.pop()
                     continue
-            st.append(characrer)
+            st.ap..(characrer)
         r_ le.(st) __ 0

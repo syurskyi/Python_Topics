@@ -8,7 +8,7 @@
 from collections ______ deque
 
 c_ Solution:
-    ___ levelOrder(, root: TreeNode) -> L..[L..[int]]:
+    ___ levelOrder(, root: TreeNode) -> L..[L..[in.]]:
         ans _ []
 
         __(root is None
@@ -21,15 +21,15 @@ c_ Solution:
             temp _ []
             ___ i __ ra..(0,n
                 f _ q.popleft()
-                temp.append(f.val)
+                temp.ap..(f.val)
 
                 __(f.left is no. None
-                    q.append(f.left)
+                    q.ap..(f.left)
                 __(f.right is no. None
-                    q.append(f.right)
+                    q.ap..(f.right)
 
             __(le.(temp)>0
-                ans.append(temp[:])
+                ans.ap..(temp[:])
                 temp.clear()
         r_ ans
         

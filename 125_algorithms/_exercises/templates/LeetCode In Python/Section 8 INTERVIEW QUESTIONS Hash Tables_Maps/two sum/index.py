@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ twoSum(, nums: L.. in., target: int) -> L.. in.:
+    ___ twoSum(, nums: L.. in., target: in.) -> L.. in.:
         m _ {}
         n _ le.(nums)
         ___ i __ ra..(0,n

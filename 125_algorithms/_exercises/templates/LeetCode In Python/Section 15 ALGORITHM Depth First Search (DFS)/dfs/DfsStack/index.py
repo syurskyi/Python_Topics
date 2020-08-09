@@ -7,12 +7,12 @@ c_ Graph:
         .graph _ defaultdict(list)
 
     ___ insertEdge(, v1, v2
-        .graph[v1].append(v2)
+        .graph[v1].ap..(v2)
 
     ___ DFS(, startNode
         visited _ set()
         st _ []
-        st.append(startNode)
+        st.ap..(startNode)
 
         w___(le.(st)):
             cur _ st[-1]
@@ -24,7 +24,7 @@ c_ Graph:
 
             ___ vertex __ .graph[cur]:
                 __(vertex no. __ visited
-                    st.append(vertex)
+                    st.ap..(vertex)
 
 
 g _ Graph()

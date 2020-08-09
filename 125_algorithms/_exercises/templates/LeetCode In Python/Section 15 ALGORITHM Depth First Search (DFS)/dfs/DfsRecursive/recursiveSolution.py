@@ -12,7 +12,7 @@ c_ Graph:
         .graph _ defaultdict(list)
 
     ___ setEdge(, u, v
-        .graph[u].append(v)
+        .graph[u].ap..(v)
         print(.graph)
 
     ___ DFS(, u, visited

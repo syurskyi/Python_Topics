@@ -3,21 +3,21 @@ from collections ______ deque
 
 c_ LRUCache:
 
-    ___ __init__(, capacity: int
+    ___ __init__(, capacity: in.
         .c _ capacity
         .m _ dict()
         .deq _ deque()
 
-    ___ get(, key: int) -> int:
+    ___ get(, key: in.) -> in.:
         __ key __ .m:
             value _ .m[key]
             .deq.remove(key)
-            .deq.append(key)
+            .deq.ap..(key)
             r_ value
         ____
             r_ -1
 
-    ___ put(, key: int, value: int) -> None:
+    ___ put(, key: in., value: in.) -> None:
 
         # Your LRUCache object will be instantiated and called as such:
         # obj = LRUCache(capacity)
@@ -31,4 +31,4 @@ c_ LRUCache:
             .deq.remove(key)
 
         .m[key] _ value
-        .deq.append(key)
+        .deq.ap..(key)

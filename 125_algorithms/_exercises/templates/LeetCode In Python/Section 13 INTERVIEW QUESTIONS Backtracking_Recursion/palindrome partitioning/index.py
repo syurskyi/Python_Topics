@@ -11,13 +11,13 @@ c_ Solution:
 
     ___ dfs(, s: st.
         __(le.(s) __ 0 a.. le.(.temp) > 0
-            .res.append(.temp[:])
+            .res.ap..(.temp[:])
             r_
         n _ le.(s)+1
         ___ i __ ra..(1, n
             seg _ s[0:i]
             __(.isPalin(seg)):
-                .temp.append(seg)
+                .temp.ap..(seg)
                 .dfs(s[i:])
                 .temp.pop()
 

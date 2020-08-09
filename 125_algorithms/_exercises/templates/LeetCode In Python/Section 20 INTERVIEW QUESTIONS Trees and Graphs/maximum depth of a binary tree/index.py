@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution:
-    ___ maxDepth(, root: TreeNode) -> int:
+    ___ maxDepth(, root: TreeNode) -> in.:
         __(root is None
             r_ 0
         __(root.left is None a..  root.right is None

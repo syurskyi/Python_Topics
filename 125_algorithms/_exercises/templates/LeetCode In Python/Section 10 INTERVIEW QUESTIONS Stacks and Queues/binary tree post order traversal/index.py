@@ -14,20 +14,20 @@ c_ Solution:
         s1 _ []
         s2 _ []
 
-        s1.append(root)
+        s1.ap..(root)
 
         w___(s1
             x _ s1[-1]
             s1.pop()
-            s2.append(x)
+            s2.ap..(x)
 
             __(x.left
-                s1.append(x.left)
+                s1.ap..(x.left)
             __(x.right
-                s1.append(x.right)
+                s1.ap..(x.right)
         
         w___(s2
             y _ s2[-1]
             s2.pop()
-            ans.append(y.val)
+            ans.ap..(y.val)
         r_ ans

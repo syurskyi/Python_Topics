@@ -32,7 +32,7 @@ c_ Codec:
             val _ next(data)
             __ val __ 'X':
                 r_ None
-            node _ TreeNode(int(val))
+            node _ TreeNode(in.(val))
 
             node.left _ dfs()
             node.right _ dfs()

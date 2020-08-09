@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fourSumCount(, A: L.. in., B: L.. in., C: L.. in., D: L.. in.) -> int:
+    ___ fourSumCount(, A: L.. in., B: L.. in., C: L.. in., D: L.. in.) -> in.:
       m _ {}
       ans _ 0
 

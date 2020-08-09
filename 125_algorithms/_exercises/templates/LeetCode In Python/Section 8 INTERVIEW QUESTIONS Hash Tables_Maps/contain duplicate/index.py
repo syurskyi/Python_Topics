@@ -2,7 +2,7 @@ from collections ______ defaultdict
 
 c_ Solution:
     ___ containsDuplicate(, nums: L.. in.) -> bool:
-        m _ defaultdict(int)
+        m _ defaultdict(in.)
 
         ___ num __ nums:
             __ m[num]:
