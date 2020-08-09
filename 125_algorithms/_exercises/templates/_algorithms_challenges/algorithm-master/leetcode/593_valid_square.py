@@ -1,5 +1,5 @@
 class Solution:
-    def validSquare(self, p1, p2, p3, p4):
+    ___ validSquare(self, p1, p2, p3, p4
         """
         :type p1: List[int]
         :type p2: List[int]
@@ -9,9 +9,9 @@ class Solution:
         """
         ps = []
 
-        for p in (p1, p2, p3, p4):
-            if not p:
-                return False
+        for p in (p1, p2, p3, p4
+            __ not p:
+                r_ False
 
             ps.append(p)
 
@@ -26,15 +26,15 @@ class Solution:
         l03 = self.get_distance(ps[0], ps[3])
         l12 = self.get_distance(ps[1], ps[2])
 
-        return all((
-            l01 == l02 == l13 == l23 > 0,
-            l03 == l12,
+        r_ all((
+            l01 __ l02 __ l13 __ l23 > 0,
+            l03 __ l12,
         ))
 
-    def get_distance(self, a, b):
+    ___ get_distance(self, a, b
         """
         find the size of 'ab'
         """
         dx = a[0] - b[0]
         dy = a[1] - b[1]
-        return (dx * dx + dy * dy) ** 0.5
+        r_ (dx * dx + dy * dy) ** 0.5

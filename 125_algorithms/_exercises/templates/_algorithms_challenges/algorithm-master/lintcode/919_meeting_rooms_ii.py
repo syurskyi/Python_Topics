@@ -1,22 +1,22 @@
 """
 Definition of Interval.
-class Interval(object):
-    def __init__(self, start, end):
+class Interval(object
+    ___ __init__(self, start, end
         self.start = start
         self.end = end
 """
 
 
 class Solution:
-    def minMeetingRooms(self, intervals):
+    ___ minMeetingRooms(self, intervals
         """
         :type intervals: list[Interval]
         :rtype: int
         """
         ans = 0
 
-        if not intervals:
-            return ans
+        __ not intervals:
+            r_ ans
 
         time = []
 
@@ -29,12 +29,12 @@ class Solution:
         cnt = 0
 
         for t, is_start in time:
-            if is_start:
+            __ is_start:
                 cnt += 1
-            else:
+            ____
                 cnt -= 1
 
-            if cnt > ans:
+            __ cnt > ans:
                 ans = cnt
 
-        return ans
+        r_ ans

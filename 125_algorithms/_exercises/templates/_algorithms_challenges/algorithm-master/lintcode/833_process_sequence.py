@@ -4,7 +4,7 @@ class Solution:
     @param queries: Sequence of queries
     @return: Return the number of processes
     """
-    def numberOfProcesses(self, logs, queries):
+    ___ numberOfProcesses(self, logs, queries
         time = []
 
         # 0: end, 1: start, 2: in progress
@@ -21,11 +21,11 @@ class Solution:
         time2cnt = {}
 
         for t, status in time:
-            if status == 0:
+            __ status __ 0:
                 cnt -= 1
-            elif status == 1:
+            ____ status __ 1:
                 cnt += 1
 
             time2cnt[t] = cnt
 
-        return [time2cnt[t] for t in queries]
+        r_ [time2cnt[t] for t in queries]

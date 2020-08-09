@@ -8,35 +8,35 @@ Main Concept:
 
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
 
 
 class Solution:
-    def levelOrder(self, root):
+    ___ levelOrder(self, root
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
         ans = []
 
-        if not root:
-            return ans
+        __ not root:
+            r_ ans
 
         queue, _queue = [root], []
 
-        while queue:
+        w___ queue:
             ans.append([])
 
             for node in queue:
-                if node.left:
+                __ node.left:
                     _queue.append(node.left)
-                if node.right:
+                __ node.right:
                     _queue.append(node.right)
                 ans[-1].append(node.val)
 
             queue, _queue = _queue, []
 
-        return ans
+        r_ ans

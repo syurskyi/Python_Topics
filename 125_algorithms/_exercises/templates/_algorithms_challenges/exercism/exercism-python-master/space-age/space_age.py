@@ -1,10 +1,10 @@
 """Calculates age on various planets"""
 
-class SpaceAge(object):
+class SpaceAge(object
     """Calculates age on various planets"""
     _earth_year = 31557600 # seconds
 
-    def __init__(self, seconds):
+    ___ __init__(self, seconds
         """Stores age builds functions"""
         self.seconds = seconds
         # Function                           Ratio to earth year
@@ -17,9 +17,9 @@ class SpaceAge(object):
         self.on_uranus = self.on_planet_gen(84.016846)
         self.on_neptune = self.on_planet_gen(164.79132)
 
-    def on_planet_gen(self, ratio_to_earth):
+    ___ on_planet_gen(self, ratio_to_earth
         """Returns a function that converts seconds into planet years"""
-        def on_planet():
+        ___ on_planet(
             """Converts seconds to planet years"""
-            return round(self.seconds / (self._earth_year * ratio_to_earth), 2)
-        return on_planet
+            r_ round(self.seconds / (self._earth_year * ratio_to_earth), 2)
+        r_ on_planet

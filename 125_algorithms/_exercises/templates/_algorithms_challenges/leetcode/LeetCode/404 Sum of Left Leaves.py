@@ -15,30 +15,30 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def __init__(self):
+class Solution(object
+    ___ __init__(self
         self.s = 0
 
-    def sumOfLeftLeaves(self, root):
+    ___ sumOfLeftLeaves(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
         self.traverse(root)
-        return self.s
+        r_ self.s
 
-    def traverse(self, node):
-        if not node:
-            return
+    ___ traverse(self, node
+        __ not node:
+            r_
 
-        if node.left and not node.left.left and not node.left.right:
+        __ node.left and not node.left.left and not node.left.right:
             self.s += node.left.val
 
         self.traverse(node.left)

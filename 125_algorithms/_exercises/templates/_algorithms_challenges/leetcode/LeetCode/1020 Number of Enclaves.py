@@ -27,72 +27,72 @@ Note:
 0 <= A[i][j] <= 1
 All rows have the same size.
 """
-from typing import List
+from typing ______ List
 
 
 dirs = ((0, -1), (0, 1), (1, 0), (-1, 0))
 
 
 class Solution:
-    def numEnclaves(self, A: List[List[int]]) -> int:
+    ___ numEnclaves(self, A: List[List[int]]) -> int:
         """
         not dfs from any cell, but dfs from the edges
         """
-        m, n = len(A), len(A[0])
+        m, n = le.(A), le.(A[0])
         visited = [[False for _ in range(n)] for _ in range(m)]
-        for i in range(m):
-            for j in range(n):
-                if not visited[i][j] and A[i][j] == 1 and (i == 0 or j == 0 or i == m - 1 or j == n - 1):
+        for i in range(m
+            for j in range(n
+                __ not visited[i][j] and A[i][j] __ 1 and (i __ 0 or j __ 0 or i __ m - 1 or j __ n - 1
                     self.dfs(A, i, j, visited)
 
         ret = 0
-        for i in range(m):
-            for j in range(n):
-                if A[i][j] == 1 and not visited[i][j]:
+        for i in range(m
+            for j in range(n
+                __ A[i][j] __ 1 and not visited[i][j]:
                     ret += 1
-        return ret
+        r_ ret
 
-    def dfs(self, A, i, j, visited):
-        m, n = len(A), len(A[0])
+    ___ dfs(self, A, i, j, visited
+        m, n = le.(A), le.(A[0])
         visited[i][j] = True
         for di, dj in dirs:
             I = i + di
             J = j + dj
-            if 0 <= I < m and 0 <= J < n and not visited[I][J] and A[I][J] == 1:
+            __ 0 <= I < m and 0 <= J < n and not visited[I][J] and A[I][J] __ 1:
                 self.dfs(A, I, J, visited)
 
 
 class SolutionError:
-    def __init__(self):
+    ___ __init__(self
         self.ret = 0
 
-    def numEnclaves(self, A: List[List[int]]) -> int:
+    ___ numEnclaves(self, A: List[List[int]]) -> int:
         """
         dfs coloring
         """
-        m, n = len(A), len(A[0])
+        m, n = le.(A), le.(A[0])
         visited = [[None for _ in range(n)] for _ in range(m)]  # 0 not off, 1 off
-        for i in range(m):
-            for j in range(n):
-                if not visited[i][j] and A[i][j] == 1:
+        for i in range(m
+            for j in range(n
+                __ not visited[i][j] and A[i][j] __ 1:
                     self.dfs(A, i, j, visited)
-        return self.ret
+        r_ self.ret
 
-    def dfs(self, A, i, j, visited):
-        m, n = len(A), len(A[0])
+    ___ dfs(self, A, i, j, visited
+        m, n = le.(A), le.(A[0])
         visited[i][j] = 0
         for di, dj in dirs:
             I = i + di
             J = j + dj
-            if not (0 <= I < m and 0 <= J < n):
+            __ not (0 <= I < m and 0 <= J < n
                 visited[i][j] = 1
-                return True
-            if visited[I][J] == 1:
+                r_ True
+            __ visited[I][J] __ 1:
                 visited[i][j] = 1
-                return True
-            if visited[I][J] is None and A[I][J] == 1 and self.dfs(A, I, J, visited):
+                r_ True
+            __ visited[I][J] is None and A[I][J] __ 1 and self.dfs(A, I, J, visited
                 visited[i][j] = 1
-                return True
+                r_ True
 
         self.ret += 1
-        return False
+        r_ False

@@ -1,56 +1,56 @@
-from heapq import heappush, heappop
+from heapq ______ heappush, heappop
 
 
 class HashHeapq:
-    def __init__(self):
+    ___ __init__(self
         self.heap = []
         self.deleted = {}
 
-    def push(self, val):
+    ___ push(self, val
         heappush(self.heap, val)
 
-    def pop(self):
-        if self.is_empty():
-            return
+    ___ pop(self
+        __ self.is_empty(
+            r_
         heappop(self.heap)
 
-    def remove(self, val):
-        if self.is_empty():
-            return
+    ___ remove(self, val
+        __ self.is_empty(
+            r_
         self.deleted[val] = self.deleted.get(val, 0) + 1
 
-    def top(self):
-        if self.is_empty():
-            return
-        return self.heap[0]
+    ___ top(self
+        __ self.is_empty(
+            r_
+        r_ self.heap[0]
 
-    def is_empty(self):
-        while self.heap and self.deleted.get(self.heap[0]):
+    ___ is_empty(self
+        w___ self.heap and self.deleted.get(self.heap[0]
             self.deleted[self.heap[0]] -= 1
             heappop(self.heap)
-        return not self.heap
+        r_ not self.heap
 
 
 class Solution:
-    def maxSlidingWindow(self, A, k):
+    ___ maxSlidingWindow(self, A, k
         """
         :type A: List[int]
         :type k: int
         :rtype: List[int]
         """
         ans = []
-        if not A:
-            return ans
+        __ not A:
+            r_ ans
 
         heap = HashHeapq()
 
-        for i in range(len(A)):
+        for i in range(le.(A)):
             heap.push(-A[i])
-            if i >= k - 1:
+            __ i >= k - 1:
                 ans.append(-heap.top())
                 heap.remove(-A[i - k + 1])
 
-        return ans
+        r_ ans
 
 
 """
@@ -63,11 +63,11 @@ class Solution:
     @param: k: An integer
     @return: The maximum number inside the window at each moving
     """
-    def maxSlidingWindow(self, A, k):
+    ___ maxSlidingWindow(self, A, k
         ans = []
-        if not A or len(A) < 1:
-            return ans
-        for r in range(len(A)):
-            if r >= k - 1:
+        __ not A or le.(A) < 1:
+            r_ ans
+        for r in range(le.(A)):
+            __ r >= k - 1:
                 ans.append(max(A[r - k + 1 : r + 1]))
-        return ans
+        r_ ans

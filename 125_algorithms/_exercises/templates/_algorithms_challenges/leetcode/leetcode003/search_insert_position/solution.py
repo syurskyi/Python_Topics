@@ -14,34 +14,34 @@ Here are few examples.
 
 """
 
-class Solution(object):
-    def searchInsert(self, nums, target):
+class Solution(object
+    ___ searchInsert(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: int
         """
-        n = len(nums)
-        if not nums:
-            return 0
-        else:
+        n = le.(nums)
+        __ not nums:
+            r_ 0
+        ____
             left = 0
             right = n - 1
-            while left <= right:
+            w___ left <= right:
                 mid = (left + right) / 2
-                if nums[mid] == target:
-                    return mid
-                elif (mid < n - 1 and nums[mid] < target
-                        and nums[mid + 1] > target):
-                    return mid + 1
-                elif target < nums[mid]:
+                __ nums[mid] __ target:
+                    r_ mid
+                ____ (mid < n - 1 and nums[mid] < target
+                        and nums[mid + 1] > target
+                    r_ mid + 1
+                ____ target < nums[mid]:
                     right = mid - 1
-                else:
+                ____
                     left = mid + 1
-            if left > n - 1:
-                return n
-            elif right < 0:
-                return 0
+            __ left > n - 1:
+                r_ n
+            ____ right < 0:
+                r_ 0
 
 
 a = [1, 3, 5, 6]

@@ -3,52 +3,52 @@ Created on Oct 16, 2017
 
 @author: MT
 '''
-import heapq
+______ heapq
 
-class Solution(object):
-    def cutOffTree(self, forest):
+class Solution(object
+    ___ cutOffTree(self, forest
         """
         :type forest: List[List[int]]
         :rtype: int
         """
-        if not forest or not forest[0]: return 0
-        m, n = len(forest), len(forest[0])
+        __ not forest or not forest[0]: r_ 0
+        m, n = le.(forest), le.(forest[0])
         heap = []
-        for i in range(m):
-            for j in range(n):
-                if forest[i][j] > 1:
+        for i in range(m
+            for j in range(n
+                __ forest[i][j] > 1:
                     heapq.heappush(heap, (forest[i][j], i, j))
         sumVal = 0
         x, y = 0, 0
-        while heap:
+        w___ heap:
             h, i, j = heapq.heappop(heap)
             step = self.minStep(forest, x, y, i, j, h, m, n)
-            if step < 0: return -1
+            __ step < 0: r_ -1
             sumVal += step
             x, y = i, j
-        return sumVal
+        r_ sumVal
     
-    def minStep(self, forest, x, y, i, j, h, m, n):
+    ___ minStep(self, forest, x, y, i, j, h, m, n
         step = 0
         visited = [[False]*n for _ in range(m)]
         visited[x][y] = True
         queue = []
         queue.append((x, y))
-        while queue:
-            size = len(queue)
-            for _ in range(size):
+        w___ queue:
+            size = le.(queue)
+            for _ in range(size
                 i0, j0 = queue.pop(0)
-                if i0 == i and j0 == j: return step
-                for i1, j1 in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
-                    if i1 < 0 or i1 >= m or j1 < 0 or j1 >= n or\
-                        forest[i1][j1] == 0 or visited[i1][j1]:
+                __ i0 __ i and j0 __ j: r_ step
+                for i1, j1 in (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
+                    __ i1 < 0 or i1 >= m or j1 < 0 or j1 >= n or\
+                        forest[i1][j1] __ 0 or visited[i1][j1]:
                         continue
                     queue.append((i1, j1))
                     visited[i1][j1] = True
             step += 1
-        return -1
+        r_ -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1,2,3],
@@ -79,5 +79,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

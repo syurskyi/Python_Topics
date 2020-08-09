@@ -5,8 +5,8 @@ Non-dp version of edit distance
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def isOneEditDistance(self, s, t):
+class Solution(object
+    ___ isOneEditDistance(self, s, t
         """
         String
 
@@ -14,49 +14,49 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        m, n = len(s), len(t)
-        if m > n: return self.isOneEditDistance(t, s)
-        if n-m > 1: return False
+        m, n = le.(s), le.(t)
+        __ m > n: r_ self.isOneEditDistance(t, s)
+        __ n-m > 1: r_ False
 
         diff = 0
         i, j = 0, 0
-        while i < m and j < n and diff < 2:
-            if s[i] == t[j]:
+        w___ i < m and j < n and diff < 2:
+            __ s[i] __ t[j]:
                 i += 1
                 j += 1
-            else:
-                if m != n:
+            ____
+                __ m != n:
                     j += 1  # delete
-                else:  # replace s[i]
+                ____  # replace s[i]
                     i += 1
                     j += 1
 
                 diff += 1
 
-        return diff == 1 or diff == 0 and m != n
+        r_ diff __ 1 or diff __ 0 and m != n
 
 
-class Solution1(object):
-    def isOneEditDistance(self, s, t):
+class Solution1(object
+    ___ isOneEditDistance(self, s, t
         """
         Iterator version
         """
-        m, n = len(s), len(t)
-        if m > n: return self.isOneEditDistance(t, s)
-        if n-m > 1: return False
+        m, n = le.(s), le.(t)
+        __ m > n: r_ self.isOneEditDistance(t, s)
+        __ n-m > 1: r_ False
 
         diff = 0
         i, j = iter(s), iter(t)
         a, b = next(i, None), next(j, None)
-        while a and b and diff < 2:
-            if a == b:
+        w___ a and b and diff < 2:
+            __ a __ b:
                 a, b = next(i, None), next(j, None)
-            else:
-                if m != n:
+            ____
+                __ m != n:
                     b = next(j, None)
-                else:
+                ____
                     a, b = next(i, None), next(j, None)
 
                 diff += 1
 
-        return diff == 1 or diff == 0 and m != n
+        r_ diff __ 1 or diff __ 0 and m != n

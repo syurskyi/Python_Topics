@@ -33,38 +33,38 @@ __author__ = 'Daniel'
 # """
 
 
-class NestedInteger(object):
-    def __init__(self, value=None):
+class NestedInteger(object
+    ___ __init__(self, value=None
         """
         If value is not specified, initializes an empty list.
         Otherwise initializes a single integer equal to value.
         """
-    def isInteger(self):
+    ___ isInteger(self
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
 
-    def add(self, elem):
+    ___ add(self, elem
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
 
-    def setInteger(self, value):
+    ___ setInteger(self, value
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
         """
 
-    def getInteger(self):
+    ___ getInteger(self
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
 
-    def getList(self):
+    ___ getList(self
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -72,8 +72,8 @@ class NestedInteger(object):
         """
 
 
-class Solution(object):
-    def deserialize(self, s):
+class Solution(object
+    ___ deserialize(self, s
         """
         NestedInteger is a UnionType in functional programming jargon.
 
@@ -83,35 +83,35 @@ class Solution(object):
         :type s: str
         :rtype: NestedInteger
         """
-        if not s: return None
+        __ not s: r_ None
         stk = []
 
         i = 0
-        while i < len(s):
-            if s[i] == '[':
+        w___ i < le.(s
+            __ s[i] __ '[':
                 stk.append(NestedInteger())
                 i += 1
-            elif s[i] == ']':
+            ____ s[i] __ ']':
                 ni = stk.pop()
-                if not stk: return ni
+                __ not stk: r_ ni
 
                 stk[-1].add(ni)
                 i += 1
-            elif s[i] == ',':
+            ____ s[i] __ ',':
                 i += 1
-            else:
+            ____
                 j = i
-                while j < len(s) and (s[j].isdigit() or s[j] == '-'): j += 1
+                w___ j < le.(s) and (s[j].isdigit() or s[j] __ '-' j += 1
 
-                ni = NestedInteger(int(s[i: j]) if s[i: j] else None)
-                if not stk: return ni
+                ni = NestedInteger(int(s[i: j]) __ s[i: j] else None)
+                __ not stk: r_ ni
                 stk[-1].add(ni)
                 i = j
 
-        return stk.pop()
+        r_ stk.pop()
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     Solution().deserialize("[123,[456,[789]]]")
 
 

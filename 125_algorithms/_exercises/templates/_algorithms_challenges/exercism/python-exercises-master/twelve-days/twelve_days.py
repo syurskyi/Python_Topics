@@ -1,10 +1,10 @@
-def verse():
+___ verse(
     pass
 
 
-def verses():
+___ verses(
     pass
 
 
-def sing():
+___ sing(
     pass

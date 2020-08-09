@@ -1,8 +1,8 @@
-import string
-from random import choices
+______ string
+from random ______ choices
 
-def gen_key(*, parts=4, chars_per_part=8):
+___ gen_key(*, parts=4, chars_per_part=8
     s = ''
-    for part in range(parts):
+    for part in range(parts
         s += ''.join(choices(string.ascii_uppercase + string.digits,k=chars_per_part))+'-'
-    return s[:-1]
+    r_ s[:-1]

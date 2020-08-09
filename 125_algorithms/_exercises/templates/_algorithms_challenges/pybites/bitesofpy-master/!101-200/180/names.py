@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 # fake data from https://www.mockaroo.com
 data = """last_name,first_name,country_code
@@ -14,9 +14,9 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-def group_names_by_country(data: str = data) -> defaultdict:
+___ group_names_by_country(data: str = data) -> defaultdict:
     countries = defaultdict(list)
     for x in data.splitlines()[1:]:
         l, f, c = x.split(',')
         countries[c].append(f'{f} {l}')
-    return countries
+    r_ countries

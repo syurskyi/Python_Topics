@@ -34,38 +34,38 @@ Output: False
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def findTarget(self, root: TreeNode, k: int) -> bool:
+    ___ findTarget(self, root: TreeNode, k: int) -> bool:
         self.root = root
-        return self.walk(root, k)
+        r_ self.walk(root, k)
 
-    def walk(self, node, k):
-        if not node:
-            return False
+    ___ walk(self, node, k
+        __ not node:
+            r_ False
 
         target = k - node.val
-        if self.find(self.root, target, node):
-            return True
+        __ self.find(self.root, target, node
+            r_ True
 
-        if self.walk(node.left, k) or self.walk(node.right, k):
-            return True
+        __ self.walk(node.left, k) or self.walk(node.right, k
+            r_ True
 
-        return False
+        r_ False
 
-    def find(self, node, target, existing):
-        if not node:
-            return False
+    ___ find(self, node, target, existing
+        __ not node:
+            r_ False
 
-        if node.val == target:
-            return node != existing
+        __ node.val __ target:
+            r_ node != existing
 
-        if target < node.val:
-            return self.find(node.left, target, existing)
-        else:
-            return self.find(node.right, target, existing)
+        __ target < node.val:
+            r_ self.find(node.left, target, existing)
+        ____
+            r_ self.find(node.right, target, existing)

@@ -15,26 +15,26 @@ S string length is in [1, 10000].
 C is a single character, and guaranteed to be in string S.
 All letters in S and C are lowercase.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def shortestToChar(self, S: str, C: str) -> List[int]:
+    ___ shortestToChar(self, S: str, C: str) -> List[int]:
         """
         get the sorted indexes of C
         """
         idx = [
             i
-            for i in range(len(S))
-            if S[i] == C
+            for i in range(le.(S))
+            __ S[i] __ C
         ]
         idx = [-float("inf")] + idx + [float("inf")]
         ret = []
         i = 0
-        for j in range(len(S)):
-            while not idx[i] <= j < idx[i+1]:
+        for j in range(le.(S)):
+            w___ not idx[i] <= j < idx[i+1]:
                 i += 1
 
             ret.append(min(j - idx[i], idx[i+1] - j))
 
-        return ret
+        r_ ret

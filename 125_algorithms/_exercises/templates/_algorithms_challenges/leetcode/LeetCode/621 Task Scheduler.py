@@ -23,13 +23,13 @@ Note:
 The number of tasks is in the range [1, 10000].
 The integer n is in the range [0, 100].
 """
-from typing import List
-from collections import deque, defaultdict
-import heapq
+from typing ______ List
+from collections ______ deque, defaultdict
+______ heapq
 
 
 class Solution:
-    def leastInterval(self, tasks: List[str], n: int) -> int:
+    ___ leastInterval(self, tasks: List[str], n: int) -> int:
         """
         Gap is n
 
@@ -48,21 +48,21 @@ class Solution:
 
         maxa = 0
         max_cnt = 0
-        for v in counter.values():
-            if v > maxa:
+        for v in counter.values(
+            __ v > maxa:
                 maxa = v
                 max_cnt = 1
-            elif v == maxa:
+            ____ v __ maxa:
                 max_cnt += 1
 
         page_cnt = maxa - 1
         free_page_size = n + 1 - max_cnt
-        small_tasks = len(tasks) - max_cnt * maxa
+        small_tasks = le.(tasks) - max_cnt * maxa
         idle = max(0, page_cnt * free_page_size - small_tasks)
-        return len(tasks) + idle
+        r_ le.(tasks) + idle
 
 
-    def leastInterval_complicated(self, tasks: List[str], n: int) -> int:
+    ___ leastInterval_complicated(self, tasks: List[str], n: int) -> int:
         """
         greedy
         max heap, most tasks first
@@ -79,23 +79,23 @@ class Solution:
         heapq.heapify(pq)
         q = deque()  # stores (t, k)
         clock = 0
-        while pq or q:
-            if q and q[0][0] <= clock:
-                # don't do while in while when clock++
+        w___ pq or q:
+            __ q and q[0][0] <= clock:
+                # don't do w___ in w___ when clock++
                 _, k = q.popleft()
                 heapq.heappush(pq, (-counter[k], k))
 
-            if pq:
+            __ pq:
                 _, k = heapq.heappop(pq)
                 counter[k] -= 1
-                if counter[k] > 0:
+                __ counter[k] > 0:
                     q.append((clock + 1 + n, k))
 
             clock += 1
 
-        return clock
+        r_ clock
 
 
-if __name__ == "__main__":
-    assert Solution().leastInterval(["A","A","A","B","B","B"], 0) == 6
-    assert Solution().leastInterval(["A","A","A","B","B","B"], 2) == 8
+__ __name__ __ "__main__":
+    assert Solution().leastInterval(["A","A","A","B","B","B"], 0) __ 6
+    assert Solution().leastInterval(["A","A","A","B","B","B"], 2) __ 8

@@ -2,19 +2,19 @@
 #  Score: 35
 
 
-import math
+______ ma__
 
 
-def minimum_time(goal, machines):
-    min_days = math.ceil(goal / (len(machines) / min(machines)))
-    max_days = math.ceil(goal / (len(machines) / max(machines)))
-    while min_days < max_days:
+___ minimum_time(goal, machines
+    min_days = ma__.ceil(goal / (le.(machines) / min(machines)))
+    max_days = ma__.ceil(goal / (le.(machines) / max(machines)))
+    w___ min_days < max_days:
         day = (min_days + max_days) // 2
-        if sum(day // i for i in machines) >= goal:
+        __ sum(day // i for i in machines) >= goal:
             max_days = day
-        else:
+        ____
             min_days = day + 1
-    return min_days
+    r_ min_days
 
 
 n, goal = map(int, input().split())

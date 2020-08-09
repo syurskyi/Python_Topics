@@ -26,28 +26,28 @@ The number of nodes in the given list will be between 1 and 100.
 
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
 class Solution:
-    def middleNode(self, head: ListNode) -> ListNode:
+    ___ middleNode(self, head: ListNode) -> ListNode:
         """
         """
         l = 0
         cur = head
-        while cur:
+        w___ cur:
             l += 1
             cur = cur.next
 
         mid = l // 2 + 1
         cur_l = 0
         cur = head
-        while cur:
+        w___ cur:
             cur_l += 1
-            if cur_l == mid:
-                return cur
+            __ cur_l __ mid:
+                r_ cur
             cur = cur.next
 
-        return None
+        r_ None

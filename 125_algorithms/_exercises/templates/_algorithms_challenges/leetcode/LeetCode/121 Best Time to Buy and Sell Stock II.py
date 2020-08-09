@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def maxProfit(self, prices):
+    ___ maxProfit(self, prices
         """
         multiple transactions
         you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
@@ -19,17 +19,17 @@ class Solution:
         :param prices: list of integers
         :return: integer
         """
-        if len(prices) <= 1:
-            return 0
+        __ le.(prices) <= 1:
+            r_ 0
 
         delta_prices = []  # \delta
-        for i in xrange(1, len(prices)):
+        for i in xrange(1, le.(prices)):
             delta_prices.append(prices[i]-prices[i-1])
 
         # O(n)
         profit = 0
-        for i in xrange(len(delta_prices)):
-            if delta_prices[i] > 0:
+        for i in xrange(le.(delta_prices)):
+            __ delta_prices[i] > 0:
                 profit += delta_prices[i]
 
-        return profit
+        r_ profit

@@ -3,24 +3,24 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def canPlaceFlowers(self, flowerbed, n):
+class Solution(object
+    ___ canPlaceFlowers(self, flowerbed, n
         """
         :type flowerbed: List[int]
         :type n: int
         :rtype: bool
         """
-        for i, flower in enumerate(flowerbed):
-            if flower == 0 and\
-                (i == 0 or flowerbed[i-1] == 0) and\
-                (i == len(flowerbed)-1 or flowerbed[i+1] == 0):
+        for i, flower in enumerate(flowerbed
+            __ flower __ 0 and\
+                (i __ 0 or flowerbed[i-1] __ 0) and\
+                (i __ le.(flowerbed)-1 or flowerbed[i+1] __ 0
                 n -= 1
                 flowerbed[i] = 1
-            if n <= 0:
-                return True
-        return False
+            __ n <= 0:
+                r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 0, 0, 0, 1],
@@ -50,5 +50,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

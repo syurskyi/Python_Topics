@@ -16,14 +16,14 @@ A = [3,2,1,0,4], return false.
 class Solution:
     # @param A, a list of integers
     # @return a boolean
-    def canJump(self, A):
-        n = len(A)
-        if n == 1:
-            return True
+    ___ canJump(self, A
+        n = le.(A)
+        __ n __ 1:
+            r_ True
         t = 0  # Number of remaining steps
-        for i in range(1, n):
+        for i in range(1, n
             # t is max number of steps that remained if reaching A[i]
             t = max(t, A[i - 1]) - 1
-            if t < 0:
-                return False
-        return True
+            __ t < 0:
+                r_ False
+        r_ True

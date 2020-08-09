@@ -3,36 +3,36 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def uniqueLetterString(self, S):
+class Solution(object
+    ___ uniqueLetterString(self, S
         """
         :type S: str
         :rtype: int
         """
         s = S
         hashmap = {}
-        for i, c in enumerate(s):
-            if c in hashmap:
+        for i, c in enumerate(s
+            __ c in hashmap:
                 l = hashmap[c]
-            else:
+            ____
                 l = []
             l.append(i)
             hashmap[c] = l
         sumVal = 0
-        for c, l in hashmap.items():
-            for i in range(len(l)):
-                if i == 0:
+        for c, l in hashmap.items(
+            for i in range(le.(l)):
+                __ i __ 0:
                     left = l[i]
-                else:
+                ____
                     left = l[i]-l[i-1]-1
-                if i == len(l)-1:
-                    right = len(s)-l[i]-1
-                else:
+                __ i __ le.(l)-1:
+                    right = le.(s)-l[i]-1
+                ____
                     right = l[i+1]-l[i]-1
                 sumVal = (sumVal+1+left+right+left*right)%(10**9+7)
-        return sumVal
+        r_ sumVal
     
-    def test(self):
+    ___ test(self
         testCases = [
             'ABC',
             'ABA',
@@ -43,5 +43,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

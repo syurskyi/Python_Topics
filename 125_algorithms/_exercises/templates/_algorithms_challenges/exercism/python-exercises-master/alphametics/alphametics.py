@@ -1,2 +1,2 @@
-def solve(string):
+___ solve(string
     pass

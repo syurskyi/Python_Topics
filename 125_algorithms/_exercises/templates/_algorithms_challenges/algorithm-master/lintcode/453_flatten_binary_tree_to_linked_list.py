@@ -23,7 +23,7 @@ when visit `1`
 
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         this.val = val
         this.left, this.right = None, None
 """
@@ -34,19 +34,19 @@ class Solution:
     @param: root: a TreeNode, the root of the binary tree
     @return:
     """
-    def flatten(self, root):
-        if not root:
-            return
+    ___ flatten(self, root
+        __ not root:
+            r_
 
         self.flatten(root.left)
         self.flatten(root.right)
 
-        if not root.left:
-            return
+        __ not root.left:
+            r_
 
         node = root.left
 
-        while node.right:
+        w___ node.right:
             node = node.right
 
         node.right = root.right

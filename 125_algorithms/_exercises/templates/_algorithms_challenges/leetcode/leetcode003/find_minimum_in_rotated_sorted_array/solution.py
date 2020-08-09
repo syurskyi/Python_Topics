@@ -8,26 +8,26 @@ Find the minimum element.
 You may assume no duplicate exists in the array.
 """
 
-class Solution(object):
-    def findMin(self, nums):
+class Solution(object
+    ___ findMin(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         left = 0
         right = n - 1
-        if n == 1 or nums[left] < nums[right]:
-            return nums[0]
-        while left <= right:
+        __ n __ 1 or nums[left] < nums[right]:
+            r_ nums[0]
+        w___ left <= right:
             mid = left + (right - left) / 2
-            if mid > 0 and nums[mid - 1] > nums[mid]:
-                return nums[mid]
+            __ mid > 0 and nums[mid - 1] > nums[mid]:
+                r_ nums[mid]
             # The minimum element is in the right side
-            elif nums[mid] > nums[right]:
+            ____ nums[mid] > nums[right]:
                 left = mid + 1
             # The minimum element is in the left side
-            else:
+            ____
                 right = mid - 1
 
 

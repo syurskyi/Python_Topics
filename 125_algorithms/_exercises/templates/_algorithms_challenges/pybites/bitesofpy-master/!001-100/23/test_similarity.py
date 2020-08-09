@@ -1,7 +1,7 @@
-from similarity import get_similarities
+from similarity ______ get_similarities
 
 
-def test_get_similarities():
+___ test_get_similarities(
     # cast to list in case of generator
     similar_tags = list(get_similarities())
 

@@ -29,14 +29,14 @@ Output:
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def findBottomLeftValue(self, root):
+    ___ findBottomLeftValue(self, root
         """
         BFS
 
@@ -44,14 +44,14 @@ class Solution:
         :rtype: int
         """
         q = [root]
-        while q:
+        w___ q:
             ret = q[0].val
             cur_q = []
             for e in q:
-                if e.left:
+                __ e.left:
                     cur_q.append(e.left)
-                if e.right:
+                __ e.right:
                     cur_q.append(e.right)
             q = cur_q
 
-        return ret
+        r_ ret

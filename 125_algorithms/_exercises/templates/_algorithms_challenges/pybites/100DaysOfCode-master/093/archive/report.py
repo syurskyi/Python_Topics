@@ -3,7 +3,7 @@ WIDTH = 30
 FMT = '{:<20} {:>5}'
 
 
-def print_header():
+___ print_header(
     title = 'Twitter Archive report'
     print('=' * WIDTH)
     print(title.upper())
@@ -11,9 +11,9 @@ def print_header():
     print()
 
 
-def print_results(title, counter):
+___ print_results(title, counter
     print(title + ':')
     print('-' * WIDTH)
-    for key, count in counter.most_common(TOP):
+    for key, count in counter.most_common(TOP
         print(FMT.format(key, count))
     print()

@@ -41,7 +41,7 @@ Note:
 
 
 class Solution:
-    def brokenCalc(self, X: int, Y: int) -> int:
+    ___ brokenCalc(self, X: int, Y: int) -> int:
         """
         greedy + work backward
 
@@ -51,38 +51,38 @@ class Solution:
         We always choose Y / 2 if Y is even.
         """
         t = 0
-        while Y > X:
-            if Y % 2 == 0:
+        w___ Y > X:
+            __ Y % 2 __ 0:
                 Y //= 2
-            else:
+            ____
                 Y += 1
             t += 1
 
-        return t + X - Y
+        r_ t + X - Y
 
-    def brokenCalc_TLE(self, X: int, Y: int) -> int:
+    ___ brokenCalc_TLE(self, X: int, Y: int) -> int:
         """
         BFS
         """
         q = [X]
         t = 0
         has_larger = False
-        while q:
+        w___ q:
             cur_q = []
             for e in q:
-                if e == Y:
-                    return t
+                __ e __ Y:
+                    r_ t
 
                 cur = e * 2
-                if cur >= 1:
-                    if cur > Y and not has_larger:
+                __ cur >= 1:
+                    __ cur > Y and not has_larger:
                         has_larger = True
                         cur_q.append(cur)
-                    elif cur <= Y:
+                    ____ cur <= Y:
                         cur_q.append(cur)
 
                 cur = e - 1
-                if cur >= 1:
+                __ cur >= 1:
                     cur_q.append(cur)
             q = cur_q
             t += 1
@@ -90,5 +90,5 @@ class Solution:
         raise
 
 
-if __name__ == "__main__":
-    assert Solution().brokenCalc(2, 3) == 2
+__ __name__ __ "__main__":
+    assert Solution().brokenCalc(2, 3) __ 2

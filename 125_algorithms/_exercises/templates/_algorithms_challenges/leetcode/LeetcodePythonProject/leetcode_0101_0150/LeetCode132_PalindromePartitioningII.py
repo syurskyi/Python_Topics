@@ -4,27 +4,27 @@ Created on Feb 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def minCut(self, s):
+class Solution(object
+    ___ minCut(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s: return 0
-        n = len(s)
+        __ not s: r_ 0
+        n = le.(s)
         dp = [[False]*n for _ in range(n)]
         cuts = list(range(n))
-        for i in range(n):
-            for j in range(i, -1, -1):
-                if s[i] == s[j] and (i-j<=1 or dp[j+1][i-1]):
+        for i in range(n
+            for j in range(i, -1, -1
+                __ s[i] __ s[j] and (i-j<=1 or dp[j+1][i-1]
                     dp[j][i] = True
-                    if j > 0:
+                    __ j > 0:
                         cuts[i] = min(cuts[i], cuts[j-1]+1)
-                    else:
+                    ____
                         cuts[i] = 0
-        return cuts[-1]
+        r_ cuts[-1]
     
-    def test(self):
+    ___ test(self
         testCases = [
             'abba',
             'aab',
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

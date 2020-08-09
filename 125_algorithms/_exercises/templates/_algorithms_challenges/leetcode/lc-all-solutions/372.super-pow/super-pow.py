@@ -1,5 +1,5 @@
-class Solution(object):
-  def superPow(self, a, b):
+class Solution(object
+  ___ superPow(self, a, b
     """
     :type a: int
     :type b: List[int]
@@ -7,7 +7,7 @@ class Solution(object):
     """
     ret = 1
     k = 1
-    for num in reversed(b):
+    for num in reversed(b
       ret *= a ** (num) % 1337
       a = a ** 10 % 1337
-    return ret % 1337
+    r_ ret % 1337

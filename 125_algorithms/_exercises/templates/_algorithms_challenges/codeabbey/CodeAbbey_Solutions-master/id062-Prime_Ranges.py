@@ -1,27 +1,27 @@
 # Python 3.4
-def gen_primes(a, limit):
+___ gen_primes(a, limit
     primes = []
 
     # Sieve of Eratosthenes
     sieve = [True] * (limit + 1)
-    for num in range(2, limit + 1):
-        if num < a:
+    for num in range(2, limit + 1
+        __ num < a:
             pass
-        if sieve[num]:
-           if num >= a:
+        __ sieve[num]:
+           __ num >= a:
                primes.append(num)
-           for i in range(num * num, limit + 1, num):
+           for i in range(num * num, limit + 1, num
                sieve[i] = False
-    return primes
+    r_ primes
 
-def primes_between():
+___ primes_between(
   searches = int(input())
   answer = []
-  for search in range(searches):
+  for search in range(searches
     a, b = input().split()
     a, b = int(a), int(b)
     primes = gen_primes(a, b)
-    count = len(str(primes).split())
+    count = le.(str(primes).split())
     answer.append(str(count))
   print(' '.join(answer))
 primes_between()

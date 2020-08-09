@@ -4,37 +4,37 @@ class Triangle:
     ISOSCELES = "isosceles"
     SCALENE = "scalene"
 
-    def __init__(self, a, b, c):
+    ___ __init__(self, a, b, c
         self.a = a
         self.b = b
         self.c = c
-        if self.error():
+        __ self.error(
             raise TriangleError
 
-    def kind(self):
-        if self.equilateral():
-            return self.EQUILATERAL
-        if self.isosceles():
-            return self.ISOSCELES
-        return self.SCALENE
+    ___ kind(self
+        __ self.equilateral(
+            r_ self.EQUILATERAL
+        __ self.isosceles(
+            r_ self.ISOSCELES
+        r_ self.SCALENE
 
-    def equilateral(self):
-        return self.a == self.b == self.c
+    ___ equilateral(self
+        r_ self.a __ self.b __ self.c
 
-    def isosceles(self):
-        return self.a == self.b or self.b == self.c or self.a == self.c
+    ___ isosceles(self
+        r_ self.a __ self.b or self.b __ self.c or self.a __ self.c
 
-    def error(self):
-        return self.negative_sides() or self.triangle_inequality()
+    ___ error(self
+        r_ self.negative_sides() or self.triangle_inequality()
 
-    def negative_sides(self):
-        return self.a <= 0 or self.b <= 0 or self.c <= 0
+    ___ negative_sides(self
+        r_ self.a <= 0 or self.b <= 0 or self.c <= 0
 
-    def triangle_inequality(self):
-        return (self.a + self.b <= self.c or
+    ___ triangle_inequality(self
+        r_ (self.a + self.b <= self.c or
                 self.b + self.c <= self.a or
                 self.a + self.c <= self.b)
 
 
-class TriangleError(Exception):
+class TriangleError(Exception
     pass

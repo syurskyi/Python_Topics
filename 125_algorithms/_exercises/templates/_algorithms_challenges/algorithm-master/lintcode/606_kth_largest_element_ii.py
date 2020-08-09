@@ -1,4 +1,4 @@
-from heapq import heappop, heappush
+from heapq ______ heappop, heappush
 
 
 class Solution:
@@ -7,15 +7,15 @@ class Solution:
     @param: k: an integer from 1 to n
     @return: the kth largest element
     """
-    def kthLargestElement2(self, nums, k):
-        if not nums or not k:
-            return -1
+    ___ kthLargestElement2(self, nums, k
+        __ not nums or not k:
+            r_ -1
 
         heap = []
         for num in nums:
             heappush(heap, num)
 
-            if len(heap) > k:
+            __ le.(heap) > k:
                 heappop(heap)
 
-        return heappop(heap)
+        r_ heappop(heap)

@@ -9,34 +9,34 @@
 # using icalendar, found via:
 # http://stackoverflow.com/questions/3408097/parsing-files-ics-icalendar-using-python
 
-from collections import namedtuple
-import sys
+from collections ______ namedtuple
+______ sys
 
-from icalendar import Calendar
+from icalendar ______ Calendar
 
 DEFAULT_CAL = 'cal.ics'
 
 Bday = namedtuple('Bday', 'name month day')
 
 
-def get_birthdays(cal):
+___ get_birthdays(cal
     with open(cal, 'rb') as g:
         gcal = Calendar.from_ical(g.read())
-        for component in gcal.walk():
-            if component.name == "VEVENT":
+        for component in gcal.walk(
+            __ component.name __ "VEVENT":
                 name = component.get('SUMMARY')
-                if not name:
+                __ not name:
                     continue
                 name = name.replace("'s birthday", "")
                 bday = component.get('DTSTART').dt
                 yield Bday(name=name, month=bday.month, day=bday.day)
 
 
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
+__ __name__ __ '__main__':
+    __ le.(sys.argv) < 2:
         cal = DEFAULT_CAL
-    else:
+    ____
         cal = sys.argv[1]
 
-    for bday in get_birthdays(cal):
+    for bday in get_birthdays(cal
         print(bday)

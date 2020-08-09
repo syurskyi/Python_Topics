@@ -1,5 +1,5 @@
-import pytest
-from so import top_python_questions
+______ pytest
+from so ______ top_python_questions
 
 actual_return = top_python_questions()
 expected_return = [
@@ -28,5 +28,5 @@ expected_return = [
 @pytest.mark.parametrize('actual, expected',
                          zip(actual_return, expected_return)
                          )
-def test_top_python_questions(actual, expected):
-    assert actual == expected
+___ test_top_python_questions(actual, expected
+    assert actual __ expected

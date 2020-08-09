@@ -1,14 +1,14 @@
-def is_empty(s):
-    if s == "":
-        return True
-    else:
-        return False
+___ is_empty(s
+    __ s __ "":
+        r_ True
+    ____
+        r_ False
 
-def test_empty():
+___ test_empty(
     print("test has started")
-    if is_empty("") != True:
+    __ is_empty("") != True:
         print("error1")
-    if is_empty(10) != False:
+    __ is_empty(10) != False:
         print("error2")
-    if is_empty("tom") != False:
+    __ is_empty("tom") != False:
         print("error3")

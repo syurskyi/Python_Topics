@@ -3,8 +3,8 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def areSentencesSimilar(self, words1, words2, pairs):
+class Solution(object
+    ___ areSentencesSimilar(self, words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
@@ -13,20 +13,20 @@ class Solution(object):
         """
         hashmap = {}
         for w1, w2 in pairs:
-            if w1 not in hashmap:
+            __ w1 not in hashmap:
                 hashmap[w1] = set()
-            if w2 not in hashmap:
+            __ w2 not in hashmap:
                 hashmap[w2] = set()
             hashmap[w1].add(w2)
             hashmap[w2].add(w1)
-        if len(words1) != len(words2):
-            return False
-        for w1, w2 in zip(words1, words2):
-            if w1 != w2 and (w1 not in hashmap or w2 not in hashmap[w1]):
-                return False
-        return True
+        __ le.(words1) != le.(words2
+            r_ False
+        for w1, w2 in zip(words1, words2
+            __ w1 != w2 and (w1 not in hashmap or w2 not in hashmap[w1]
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["a","very","delicious","meal"],
@@ -47,5 +47,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

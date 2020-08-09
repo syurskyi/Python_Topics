@@ -6,9 +6,9 @@ OCR_INPUT = [
 ]
 
 
-def number():
+___ number(
     pass
 
 
-def grid():
+___ grid(
     pass

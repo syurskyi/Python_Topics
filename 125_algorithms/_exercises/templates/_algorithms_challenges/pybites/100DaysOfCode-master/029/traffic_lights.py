@@ -1,28 +1,28 @@
 #!python3
 #traffic light using itertools and random modules
 
-from time import sleep
-import itertools
-import random
+from time ______ sleep
+______ itertools
+______ random
 
 colours = 'Red Green Amber'.split()
 rotation = itertools.cycle(colours)
 
-def rg_timer():
-	return random.randint(5,9)
+___ rg_timer(
+	r_ random.randint(5,9)
 
-def light_rotation(rotation):
+___ light_rotation(rotation
 	for colour in rotation:
-		if colour == 'Amber':
+		__ colour __ 'Amber':
 			print('Caution! The light is %s.\n' % colour)
 			sleep(5)
-		elif colour == 'Red':
+		____ colour __ 'Red':
 			print('Stop! The light is %s.\n' % colour)
 			sleep(rg_timer())
-		else:
+		____
 			print('Go! The light is %s.\n' % colour)
 			sleep(rg_timer())
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
 	light_rotation(rotation)

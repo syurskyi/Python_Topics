@@ -3,25 +3,25 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def allPathsSourceTarget(self, graph):
+class Solution(object
+    ___ allPathsSourceTarget(self, graph
         """
         :type graph: List[List[int]]
         :rtype: List[List[int]]
         """
-        n = len(graph)
+        n = le.(graph)
         queue = [[0]]
         res = []
-        while queue:
+        w___ queue:
             path = queue.pop(0)
-            if path[-1] == n-1:
+            __ path[-1] __ n-1:
                 res.append(list(path))
-            else:
+            ____
                 for node in graph[path[-1]]:
                     queue.append(path + [node])
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[1,2], [3], [3], []],
         ]
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

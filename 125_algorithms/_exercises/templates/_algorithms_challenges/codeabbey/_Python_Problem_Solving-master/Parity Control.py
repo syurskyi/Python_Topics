@@ -1,34 +1,34 @@
 a = list(map(int,input().split()))
 for i in a:
-    if 1 <=i <= 8 or 9<= i <= 31 or 33<= i <=45  :
+    __ 1 <=i <= 8 or 9<= i <= 31 or 33<= i <=45  :
         continue
-    else:
+    ____
         bits = '{:08b}'.format(i)
         temp_bin = []
         string = ''
         dec = 0
         for j in bits:
             temp_bin.append(j)
-        if bits.count('1') % 2 == 0:
-            if temp_bin[0] == '1':
+        __ bits.count('1') % 2 __ 0:
+            __ temp_bin[0] __ '1':
                 temp_bin[0] = '0'
                 for k in temp_bin:
                     string += k
                 dec = int(string,2)
                 print(chr(dec),end='')
-            else:
+            ____
                 print(chr(i),end='')
-        else:
-            if temp_bin[0] == '1':
+        ____
+            __ temp_bin[0] __ '1':
                 pass
-            else:
+            ____
                 temp_bin[0] = '1'
                 
                 for k in temp_bin:
                     string += k
                 dec = int(string,2)
-                if 128<= dec <= 255:
+                __ 128<= dec <= 255:
                     pass
-                else:
+                ____
                     #print(dec)
                     print(chr(dec),end='')

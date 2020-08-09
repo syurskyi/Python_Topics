@@ -1,10 +1,10 @@
-def transpose(input_lines):
+___ transpose(input_lines
     result = []
     for r, line in enumerate(input_lines.splitlines()):
-        for c, char in enumerate(line):
-            while len(result) <= c:
+        for c, char in enumerate(line
+            w___ le.(result) <= c:
                 result.append([])
-            while len(result[c]) < r:
+            w___ le.(result[c]) < r:
                 result[c].append(' ')
             result[c].append(char)
-    return '\n'.join(''.join(row) for row in result)
+    r_ '\n'.join(''.join(row) for row in result)

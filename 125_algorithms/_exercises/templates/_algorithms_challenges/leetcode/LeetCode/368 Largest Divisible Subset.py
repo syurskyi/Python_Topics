@@ -15,13 +15,13 @@ nums: [1,2,4,8]
 
 Result: [1,2,4,8]
 """
-from collections import deque
+from collections ______ deque
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def largestDivisibleSubset(self, A):
+class Solution(object
+    ___ largestDivisibleSubset(self, A
         """
         Given a divisible subset, when adding a new number, we only needs to validate whether the new number is
         divisible by the largest number in the divisible subset.
@@ -32,34 +32,34 @@ class Solution(object):
         :type A: List[int]
         :rtype: List[int]
         """
-        if not A: return []
+        __ not A: r_ []
 
         F = {}
         pi = {}
         A.sort()
-        for i in xrange(len(A)):
+        for i in xrange(le.(A)):
             F[i] = 1
             pi[i] = i
-            for j in xrange(i):
-                if A[i] % A[j] == 0:
-                    if F[i] < 1 + F[j]:
+            for j in xrange(i
+                __ A[i] % A[j] __ 0:
+                    __ F[i] < 1 + F[j]:
                         F[i] = 1 + F[j]
                         pi[i] = j
 
         max_i, max_v = 0, 1
-        for k, v in F.items():
-            if v > max_v:
+        for k, v in F.items(
+            __ v > max_v:
                 max_i, max_v = k, v
 
         ret = deque()
         cur = max_i
         ret.appendleft(A[cur])
-        while pi[cur] != cur:
+        w___ pi[cur] != cur:
             cur = pi[cur]
             ret.appendleft(A[cur])
 
-        return list(ret)
+        r_ list(ret)
 
 
-if __name__ == "__main__":
-    assert Solution().largestDivisibleSubset([1, 2, 4, 8]) == [1, 2, 4, 8]
+__ __name__ __ "__main__":
+    assert Solution().largestDivisibleSubset([1, 2, 4, 8]) __ [1, 2, 4, 8]

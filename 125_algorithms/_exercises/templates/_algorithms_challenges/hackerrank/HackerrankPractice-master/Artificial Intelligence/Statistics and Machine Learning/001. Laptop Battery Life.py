@@ -2,8 +2,8 @@
 # Score: 10
 
 
-import pandas as pd
-from sklearn.linear_model import LinearRegression
+______ pandas as pd
+from sklearn.linear_model ______ LinearRegression
 
 
 timeCharged = float(input())

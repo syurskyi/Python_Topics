@@ -17,7 +17,7 @@ https://www.geeksforgeeks.org/inorder-non-threaded-binary-tree-traversal-without
 Node Structure:
 
 >>> class TreeNode:
-...     def __init__(self, val, left=None, right=None, parent=None):
+...     ___ __init__(self, val, left=None, right=None, parent=None
 ...         self.val = val
 ...         self.left = left
 ...         self.right = right
@@ -95,7 +95,7 @@ Testing:
 
 >>> gotcha = []
 
->>> for i in range(len(trees)):
+>>> for i in range(le.(trees)):
 ...     res = []
 ...     inorder_traverse(trees[i], callback=lambda val: res.append(str(val)))
 ...     gotcha.append(','.join(res) == tree_infos[i][1])
@@ -105,23 +105,23 @@ True
 """
 
 
-def inorder_traverse(root, *, callback):
+___ inorder_traverse(root, *, callback
     go_left = True
 
-    while root:
-        while go_left and root.left:
+    w___ root:
+        w___ go_left and root.left:
             root = root.left
 
         callback(root.val)
 
-        if root.right:
+        __ root.right:
             root = root.right
             go_left = True
             continue
 
         # if no right child,
         # and its just a right child of its parent
-        while root.parent and root is root.parent.right:
+        w___ root.parent and root is root.parent.right:
             root = root.parent
 
         root = root.parent

@@ -4,13 +4,13 @@ be made by splicing together the nodes of the first two lists.
 """
 
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
+class ListNode(object
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
-class Solution(object):
-    def mergeTwoLists(self, l1, l2):
+class Solution(object
+    ___ mergeTwoLists(self, l1, l2
         """
         :type l1: ListNode
         :type l2: ListNode
@@ -21,16 +21,16 @@ class Solution(object):
         dummy = ListNode(0)
         dummy_end = dummy
 
-        while l1 is not None and l2 is not None:
-            if l1.val < l2.val:
+        w___ l1 is not None and l2 is not None:
+            __ l1.val < l2.val:
                 dummy_end.next = l1
                 l1 = l1.next
-            else:
+            ____
                 dummy_end.next = l2
                 l2 = l2.next
             dummy_end = dummy_end.next
-        if l1 is not None:
+        __ l1 is not None:
             dummy_end.next = l1
-        else:
+        ____
             dummy_end.next = l2
-        return dummy.next
+        r_ dummy.next

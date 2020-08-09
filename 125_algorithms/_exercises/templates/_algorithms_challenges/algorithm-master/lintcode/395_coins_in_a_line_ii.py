@@ -16,27 +16,27 @@ case 2: if p2 will take the `i + 2`
 
 
 class Solution:
-    def firstWillWin(self, values):
+    ___ firstWillWin(self, values
         """
         :type values: list[int]
         :rtype: bool
         """
-        if not values:
-            return False
+        __ not values:
+            r_ False
 
-        n = len(values)
+        n = le.(values)
 
-        if n < 3:
-            return True
+        __ n < 3:
+            r_ True
 
         dp = [False] * n
         dp[-1] = values[-1]
         dp[-2] = values[-1] + values[-2]
 
-        for i in range(n - 3, -1, -1):
+        for i in range(n - 3, -1, -1
             dp[i] = max((
                 values[i] - dp[i + 1],
                 values[i] + values[i + 1] - dp[i + 2],
             ))
 
-        return dp[0] >= 0
+        r_ dp[0] >= 0

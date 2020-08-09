@@ -1,21 +1,21 @@
-class Solution(object):
-  def convertToBase7(self, num):
+class Solution(object
+  ___ convertToBase7(self, num
     """
     :type num: int
     :rtype: str
     """
 
-    def convertHelper(num, base):
+    ___ convertHelper(num, base
       sign = ""
-      if num < 0:
+      __ num < 0:
         sign = "-"
       num = abs(num)
       ans = 0
       unit = 1
-      while num:
+      w___ num:
         ans += (num % base) * unit
         num /= base
         unit *= 10
-      return sign + str(ans)
+      r_ sign + str(ans)
 
-    return convertHelper(num, 7)
+    r_ convertHelper(num, 7)

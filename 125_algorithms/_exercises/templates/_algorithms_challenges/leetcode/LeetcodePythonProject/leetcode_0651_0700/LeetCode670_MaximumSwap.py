@@ -3,28 +3,28 @@ Created on Oct 12, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def maximumSwap(self, num):
+class Solution(object
+    ___ maximumSwap(self, num
         """
         :type num: int
         :rtype: int
         """
         arr = list(str(num))
         hashmap = {}
-        for i, c in enumerate(arr):
+        for i, c in enumerate(arr
             hashmap[c] = i
         flag = False
-        for i, c in enumerate(arr):
+        for i, c in enumerate(arr
             for c0 in '9876543210':
-                if c0 > c and hashmap.get(c0, -1) > i:
+                __ c0 > c and hashmap.get(c0, -1) > i:
                     arr[i], arr[hashmap[c0]] = arr[hashmap[c0]], arr[i]
                     flag = True
                     break
-            if flag:
+            __ flag:
                 break
-        return int(''.join(arr))
+        r_ int(''.join(arr))
     
-    def test(self):
+    ___ test(self
         testCases = [
             2736,
             9973,
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

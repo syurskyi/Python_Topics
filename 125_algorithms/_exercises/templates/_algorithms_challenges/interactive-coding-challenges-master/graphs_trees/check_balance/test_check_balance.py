@@ -1,15 +1,15 @@
-from nose.tools import assert_equal
-from nose.tools import raises
+from nose.tools ______ assert_equal
+from nose.tools ______ raises
 
 
-class TestCheckBalance(object):
+class TestCheckBalance(object
 
     @raises(TypeError)
-    def test_check_balance_empty(self):
+    ___ test_check_balance_empty(self
         bst = BstBalance(None)
         bst.check_balance()
 
-    def test_check_balance(self):
+    ___ test_check_balance(self
         bst = BstBalance(Node(5))
         assert_equal(bst.check_balance(), True)
 
@@ -38,11 +38,11 @@ class TestCheckBalance(object):
         print('Success: test_check_balance')
 
 
-def main():
+___ main(
     test = TestCheckBalance()
     test.test_check_balance_empty()
     test.test_check_balance()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

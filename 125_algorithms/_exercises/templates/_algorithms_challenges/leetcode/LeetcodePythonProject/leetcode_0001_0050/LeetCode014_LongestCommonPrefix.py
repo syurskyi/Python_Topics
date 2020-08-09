@@ -3,31 +3,31 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def longestCommonPrefix(self, strs):
+class Solution(object
+    ___ longestCommonPrefix(self, strs
         """
         :type strs: List[str]
         :rtype: str
         """
-        if not strs: return ''
+        __ not strs: r_ ''
         ind = 0
-        while True:
+        w___ True:
             same = True
-            for i, s in enumerate(strs):
-                if ind == len(s):
+            for i, s in enumerate(strs
+                __ ind __ le.(s
                     same = False
                     break
-                if i == 0:
+                __ i __ 0:
                     c = s[ind]
-                elif c != s[ind]:
+                ____ c != s[ind]:
                     same = False
                     break
-            if not same:
+            __ not same:
                 break
             ind += 1
-        return strs[0][:ind]
+        r_ strs[0][:ind]
     
-    def test(self):
+    ___ test(self
         testCases = [
             ['a', 'b'],
             ['aa', 'aa'],
@@ -38,5 +38,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

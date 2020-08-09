@@ -4,8 +4,8 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def groupAnagrams(self, strs):
+class Solution(object
+    ___ groupAnagrams(self, strs
         """
         :type strs: List[str]
         :rtype: List[List[str]]
@@ -17,18 +17,18 @@ class Solution(object):
                 arr[ord(c)-ord('a')]+=1
             arr = [str(num) for num in arr]
             key = ''.join(arr)
-            if key in hashmap:
+            __ key in hashmap:
                 hashmap[key].append(s)
-            else:
+            ____
                 hashmap[key] = [s]
         res = []
-        for value in hashmap.values():
+        for value in hashmap.values(
             res.append(value)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
     

@@ -30,10 +30,10 @@ Explanation: The robot moves left twice. It ends up two "moves" to the left of
 the origin. We return false because it is not at the origin at the end of its
 moves.
 """
-from collections import Counter
+from collections ______ Counter
 
 
 class Solution:
-    def judgeCircle(self, moves: str) -> bool:
+    ___ judgeCircle(self, moves: str) -> bool:
         counter = Counter(moves)
-        return counter["L"] == counter["R"] and counter["U"] == counter["D"]
+        r_ counter["L"] __ counter["R"] and counter["U"] __ counter["D"]

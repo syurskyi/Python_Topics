@@ -1,5 +1,5 @@
-def same(a1, a2):
-    if len(set(a1)) == len(set(a2)):
-        return True
-    else:
-        return False
+___ same(a1, a2
+    __ le.(set(a1)) __ le.(set(a2)):
+        r_ True
+    ____
+        r_ False

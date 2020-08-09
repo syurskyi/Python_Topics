@@ -1,12 +1,12 @@
-class Solution(object):
-  def trailingZeroes(self, n):
+class Solution(object
+  ___ trailingZeroes(self, n
     """
     :type n: int
     :rtype: int
     """
     count, k = 0, 5
-    while n:
+    w___ n:
       k = n / 5
       count += k
       n = k
-    return count
+    r_ count

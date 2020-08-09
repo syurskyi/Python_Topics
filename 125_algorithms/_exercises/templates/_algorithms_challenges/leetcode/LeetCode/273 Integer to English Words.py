@@ -9,8 +9,8 @@ For example,
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def __init__(self):
+class Solution(object
+    ___ __init__(self
         self.table = {
             0: None,
             1: "One",
@@ -46,20 +46,20 @@ class Solution(object):
             1000000000: "Billion"
         }
 
-    def numberToWords(self, num):
+    ___ numberToWords(self, num
         """
         Pay attention to the handling of 0's
         :type num: int
         :rtype: str
         """
-        if num == 0: return "Zero"
+        __ num __ 0: r_ "Zero"
 
         ret = []
         self.toWords(num, ret)
         ret = filter(lambda x: x, ret)  # filter None as zeros
-        return " ".join(map(str, ret))
+        r_ " ".join(map(str, ret))
 
-    def toWords(self, num, ret):
+    ___ toWords(self, num, ret
         """
         will call partial_parse
 
@@ -71,22 +71,22 @@ class Solution(object):
             num %= SIG
 
         TEN = 10
-        if num/TEN > 1:
+        __ num/TEN > 1:
             ret.append(self.table[(num/TEN)*TEN])
 
         ret.append(self.table[num%TEN])
 
-    def partial_parse(self, num, sig, ret):
+    ___ partial_parse(self, num, sig, ret
         """
         will call toWords
         """
-        if num/sig:
+        __ num/sig:
             prefix = []
             self.toWords(num/sig, prefix)
             ret.extend(prefix)
             ret.append(self.table[sig])
 
 
-if __name__ == "__main__":
-    assert Solution().numberToWords(1234567891) == "One Billion Two Hundred Thirty Four Million Five Hundred Sixty " \
+__ __name__ __ "__main__":
+    assert Solution().numberToWords(1234567891) __ "One Billion Two Hundred Thirty Four Million Five Hundred Sixty " \
                                                    "Seven Thousand Eight Hundred Ninety One"

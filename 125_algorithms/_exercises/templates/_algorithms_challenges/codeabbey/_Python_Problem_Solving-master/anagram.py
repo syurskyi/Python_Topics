@@ -1,12 +1,12 @@
-def anagram(s,t):
+___ anagram(s,t
     
     s = s.lower().replace(' ','')
     t = t.lower().replace(' ','')
-    if len(s) != len(t):
-        return False
+    __ le.(s) != le.(t
+        r_ False
     for i in t:
-        if i in s:
+        __ i in s:
             continue
-        return False
+        r_ False
 
-    return True
+    r_ True

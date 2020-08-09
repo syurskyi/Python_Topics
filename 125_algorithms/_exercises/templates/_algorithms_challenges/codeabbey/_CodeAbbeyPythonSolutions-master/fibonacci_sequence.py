@@ -1,15 +1,15 @@
-import math as m
+______ ma__ as m
 
 amount_values = int(input())
 results = []
 
-def get_index_of_fib_number(num):
-    if(num == 0):
-        return 0
+___ get_index_of_fib_number(num
+    __(num __ 0
+        r_ 0
     index = 2.078087 * m.log(num) + 1.672276
-    return round(index)
+    r_ round(index)
 
-for i in range(amount_values):
+for i in range(amount_values
     results.append(get_index_of_fib_number(int(input())))
 
 print(*results)

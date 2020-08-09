@@ -1,2 +1,2 @@
-def calculate():
+___ calculate(
     pass

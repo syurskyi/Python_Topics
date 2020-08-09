@@ -3,39 +3,39 @@ Created on May 1, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def ambiguousCoordinates(self, S):
+class Solution(object
+    ___ ambiguousCoordinates(self, S
         """
         :type S: str
         :rtype: List[str]
         """
         s = S
-        n = len(s)
+        n = le.(s)
         res = []
-        for i in range(1, n-2):
+        for i in range(1, n-2
             arrA = self.helper(s[1:i+1])
             arrB = self.helper(s[i+1:n-1])
             for s1 in arrA:
                 for s2 in arrB:
                     res.append('(%s, %s)' % (s1, s2))
-        return res
+        r_ res
     
-    def helper(self, s):
-        n = len(s)
+    ___ helper(self, s
+        n = le.(s)
         res = []
-        if n == 0 or (n > 1 and s[0] == '0' and s[-1] == '0'):
-            return res
-        if n > 1 and s[0] == '0':
+        __ n __ 0 or (n > 1 and s[0] __ '0' and s[-1] __ '0'
+            r_ res
+        __ n > 1 and s[0] __ '0':
             res.append('0.'+s[1:])
-            return res
+            r_ res
         res.append(s)
-        if n == 1 or s[-1] == '0':
-            return res
-        for i in range(1, n):
+        __ n __ 1 or s[-1] __ '0':
+            r_ res
+        for i in range(1, n
             res.append(s[:i]+'.'+s[i:])
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             '(123)',
             '(00011)',
@@ -48,5 +48,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

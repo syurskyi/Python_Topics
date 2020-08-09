@@ -1,5 +1,5 @@
-import bisect
-import random
+______ bisect
+______ random
 
 class Solution:
     """
@@ -8,39 +8,39 @@ class Solution:
     @return {Solution} a Solution object
     """
     @classmethod
-    def create(cls, n, k):
+    ___ create(cls, n, k
         solution = cls()
         solution.n = n
         solution.k = k
         solution.p2l = {} # point to location
         solution.l2p = {} # location to points
-        return solution
+        r_ solution
 
     """
     @param: machine_id: An integer
     @return: a list of shard ids
     """
-    def addMachine(self, machine_id):
+    ___ addMachine(self, machine_id
         item = self.l2p[machine_id] = []
         point = -1
-        for i in range(self.k):
+        for i in range(self.k
             point = random.randint(0, self.n - 1)
-            while point in self.p2l:
+            w___ point in self.p2l:
                 point = random.randint(0, self.n - 1)
             self.p2l[point] = machine_id
             item.append(point)
         item.sort()
-        return item
+        r_ item
 
     """
     @param: hashcode: An integer
     @return: A machine id
     """
-    def getMachineIdByHashCode(self, hashcode):
+    ___ getMachineIdByHashCode(self, hashcode
         points = sorted(self.p2l.keys())
-        index = bisect.bisect_left(points, hashcode) % len(points)
+        index = bisect.bisect_left(points, hashcode) % le.(points)
         # # counterclockwise
         # index = bisect.bisect(points, hashcode) - 1
         # if index < 0:
-        #     index = len(points) - 1
-        return self.p2l[points[index]]
+        #     index = le.(points) - 1
+        r_ self.p2l[points[index]]

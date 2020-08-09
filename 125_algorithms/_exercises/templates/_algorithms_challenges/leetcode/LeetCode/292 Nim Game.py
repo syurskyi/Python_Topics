@@ -12,14 +12,14 @@ For example, if there are 4 stones in the heap, then you will never win the game
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def canWinNim(self, n):
+class Solution(object
+    ___ canWinNim(self, n
         """
         Enumerate example and find the pattern
         """
-        return n % 4 != 0
+        r_ n % 4 != 0
 
-    def canWinNim_TLE(self, n):
+    ___ canWinNim_TLE(self, n
         """
         dp
 
@@ -27,17 +27,17 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        if n < 3:
-            return True
+        __ n < 3:
+            r_ True
 
         F = [False for _ in xrange(3)]
         F[1] = F[2] = F[0] = True
-        for i in xrange(4, n+1):
+        for i in xrange(4, n+1
             F[i%3] = any(not F[(i-k)%3] for k in xrange(1, 4))
 
-        return F[n%3]
+        r_ F[n%3]
 
-    def canWinNim_MLE(self, n):
+    ___ canWinNim_MLE(self, n
         """
         dp
 
@@ -45,16 +45,16 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        if n < 3:
-            return True
+        __ n < 3:
+            r_ True
 
         F = [False for _ in xrange(n+1)]
         F[1] = F[2] = F[3] = True
-        for i in xrange(4, n+1):
+        for i in xrange(4, n+1
             F[i] = any(not F[i-k] for k in xrange(1, 4))
 
-        return F[n]
+        r_ F[n]
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().canWinNim(5)

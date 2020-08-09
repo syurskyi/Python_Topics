@@ -1,5 +1,5 @@
-def search(lst, item):
-    if lst.count(item) == 0:
-        return -1
-    else:
-        return lst.index(item)
+___ search(lst, item
+    __ lst.count(item) __ 0:
+        r_ -1
+    ____
+        r_ lst.index(item)

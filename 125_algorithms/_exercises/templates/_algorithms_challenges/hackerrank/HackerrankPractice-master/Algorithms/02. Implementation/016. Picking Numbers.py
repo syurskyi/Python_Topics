@@ -2,16 +2,16 @@
 # Score: 20
 
 
-def pickingNumbers(arr):
+___ pickingNumbers(arr
     result = 0
     checked = set()
-    for i in range(len(arr)):
-        if i not in checked:
+    for i in range(le.(arr)):
+        __ i not in checked:
             maxCount = max(arr.count(arr[i]) + arr.count(arr[i] + 1), arr.count(arr[i]) + arr.count(arr[i] - 1))
-            if maxCount > result:
+            __ maxCount > result:
                 result = maxCount
             checked.add(i)
-    return result
+    r_ result
 
 
 n = int(input().strip())

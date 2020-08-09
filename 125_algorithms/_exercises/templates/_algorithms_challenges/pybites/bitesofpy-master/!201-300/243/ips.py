@@ -1,9 +1,9 @@
-import json
-from contextlib import suppress
-from dataclasses import dataclass
-from ipaddress import AddressValueError, IPv4Address, IPv4Network
-from pathlib import Path
-from typing import List
+______ json
+from contextlib ______ suppress
+from dataclasses ______ dataclass
+from ipaddress ______ AddressValueError, IPv4Address, IPv4Network
+from pathlib ______ Path
+from typing ______ List
 
 
 @dataclass(frozen=True)
@@ -17,12 +17,12 @@ class ServiceIPRange:
     region: str
     cidr: IPv4Network
 
-    def __str__(self):
-        return (f"{self.cidr} is allocated to the {self.service} "
+    ___ __str__(self
+        r_ (f"{self.cidr} is allocated to the {self.service} "
                 f"service in the {self.region} region")
 
 
-def parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:
+___ parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:
     """
     Given a JSON file containing AWS public IP addresses, return a list of
     ServiceIPRange objects representing all IPv4 network ranges. See also:
@@ -30,7 +30,7 @@ def parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:
     https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
     """
     data = json.loads(source.read_text())
-    with suppress(AddressValueError):
+    with suppress(AddressValueError
         prefixes = data["prefixes"]
         ipv4_service_ranges = [
             ServiceIPRange(
@@ -40,10 +40,10 @@ def parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:
             )
             for prefix in prefixes
         ]
-    return ipv4_service_ranges
+    r_ ipv4_service_ranges
 
 
-def get_aws_service_range(address: str,
+___ get_aws_service_range(address: str,
                           service_ranges: list) -> List[ServiceIPRange]:
     """
     Return a list of ServiceIPRange objects representing all AWS public
@@ -55,5 +55,5 @@ def get_aws_service_range(address: str,
     except AddressValueError:
         raise ValueError("Address must be a valid IPv4 address")
 
-    return [range_ for range_ in service_ranges
-            if ipv4_address in range_.cidr]
+    r_ [range_ for range_ in service_ranges
+            __ ipv4_address in range_.cidr]

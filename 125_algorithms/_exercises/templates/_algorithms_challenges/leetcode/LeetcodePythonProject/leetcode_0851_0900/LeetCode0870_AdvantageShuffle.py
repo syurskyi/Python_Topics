@@ -3,34 +3,34 @@ Created on Oct 2, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def advantageCount(self, A, B):
+class Solution(object
+    ___ advantageCount(self, A, B
         """
         :type A: List[int]
         :type B: List[int]
         :rtype: List[int]
         """
-        import heapq
+        ______ heapq
         arrA = sorted(A)
-        n = len(arrA)
+        n = le.(arrA)
         h = []
-        for i, b in enumerate(B):
+        for i, b in enumerate(B
             heapq.heappush(h, [-b, i])
         l, r = 0, n-1
         res = [0]*n
-        while h:
+        w___ h:
             cur = heapq.heappop(h)
             idx = cur[1]
             val = -cur[0]
-            if arrA[r] > val:
+            __ arrA[r] > val:
                 res[idx] = arrA[r]
                 r -= 1
-            else:
+            ____
                 res[idx] = arrA[l]
                 l += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [2,7,11,15],
@@ -46,5 +46,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

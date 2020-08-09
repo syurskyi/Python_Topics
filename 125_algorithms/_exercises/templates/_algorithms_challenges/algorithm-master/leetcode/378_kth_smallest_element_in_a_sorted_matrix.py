@@ -1,29 +1,29 @@
-from heapq import heappop, heappush
+from heapq ______ heappop, heappush
 
 
 class Solution:
-    def kthSmallest(self, G, k):
+    ___ kthSmallest(self, G, k
         """
         :type G: List[List[int]]
         :type k: int
         :rtype: int
         """
-        if not G or not G[0]:
-            return 0
+        __ not G or not G[0]:
+            r_ 0
 
         heap = []
 
-        for x in range(len(G)):
+        for x in range(le.(G)):
             heappush(heap, (G[x][0], x, 0))
 
-        while heap:
+        w___ heap:
             a, x, y = heappop(heap)
 
             k -= 1
-            if k == 0:
-                return a
+            __ k __ 0:
+                r_ a
 
-            if y + 1 < len(G[x]):
+            __ y + 1 < le.(G[x]
                 heappush(heap, (G[x][y + 1], x, y + 1))
 
-        return 0
+        r_ 0

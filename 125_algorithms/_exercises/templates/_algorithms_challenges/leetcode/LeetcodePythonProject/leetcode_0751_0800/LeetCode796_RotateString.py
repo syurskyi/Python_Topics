@@ -3,23 +3,23 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def rotateString(self, A, B):
+class Solution(object
+    ___ rotateString(self, A, B
         """
         :type A: str
         :type B: str
         :rtype: bool
         """
         s1, s2 = A, B
-        if len(s1) != len(s2):
-            return False
-        if s1 == s2: return True
-        for i in range(len(s1)):
-            if s1[i:] + s1[:i] == s2:
-                return True
-        return False
+        __ le.(s1) != le.(s2
+            r_ False
+        __ s1 __ s2: r_ True
+        for i in range(le.(s1)):
+            __ s1[i:] + s1[:i] __ s2:
+                r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             ['abcde', 'cdeab'],
             ['abcde', 'abced'],
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

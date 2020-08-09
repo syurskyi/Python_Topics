@@ -20,31 +20,31 @@ between them.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         """
         dfs, return the longest path (#nodes) ended at the subroot/current node
         """
         self.ret = 0
 
-    def diameterOfBinaryTree(self, root: TreeNode) -> int:
+    ___ diameterOfBinaryTree(self, root: TreeNode) -> int:
         self.dfs(root)
-        return self.ret
+        r_ self.ret
 
-    def dfs(self, node):
+    ___ dfs(self, node
         """
         return #nodes ended at node including itself
         """
-        if not node:
-            return 0
+        __ not node:
+            r_ 0
 
         l = self.dfs(node.left)
         r = self.dfs(node.right)
         self.ret = max(self.ret, l + 1 + r - 1)  # path length is the #nodes - 1
-        return max(l, r) + 1
+        r_ max(l, r) + 1

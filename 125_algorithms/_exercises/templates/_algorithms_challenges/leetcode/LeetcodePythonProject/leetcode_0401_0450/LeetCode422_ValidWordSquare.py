@@ -4,17 +4,17 @@ Created on Apr 13, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def validWordSquare(self, words):
-        if not words: return False
-        for i, word1 in enumerate(words):
+class Solution(object
+    ___ validWordSquare(self, words
+        __ not words: r_ False
+        for i, word1 in enumerate(words
             word2 = ''
-            for j in range(len(word1)):
-                if j >= len(words):
-                    return False
-                if i >= len(words[j]):
-                    return False
+            for j in range(le.(word1)):
+                __ j >= le.(words
+                    r_ False
+                __ i >= le.(words[j]
+                    r_ False
                 word2 += words[j][i]
-            if word1 != word2:
-                return False
-        return True
+            __ word1 != word2:
+                r_ False
+        r_ True

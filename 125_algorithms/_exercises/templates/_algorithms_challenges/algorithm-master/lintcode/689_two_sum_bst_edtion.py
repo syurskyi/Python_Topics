@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -13,64 +13,64 @@ class Solution:
     @param: : the target sum
     @return: two numbers from tree which sum is n
     """
-    def twoSum(self, root, n):
+    ___ twoSum(self, root, n
         self.left = self.right = None
         self.head = self.tail = root
 
         self.pre()
         self.nxt()
 
-        while self.left != self.right:
+        w___ self.left != self.right:
             _sum = self.left.val + self.right.val
 
-            if _sum == n:
-                return [self.left.val, self.right.val]
+            __ _sum __ n:
+                r_ [self.left.val, self.right.val]
 
-            if _sum < n:
+            __ _sum < n:
                 self.nxt()
-            else:
+            ____
                 self.pre()
 
-    def pre(self):
-        while self.tail:
+    ___ pre(self
+        w___ self.tail:
             cur = self.tail.right
 
-            if cur and cur != self.right:
-                while cur.left and cur.left != self.tail:
+            __ cur and cur != self.right:
+                w___ cur.left and cur.left != self.tail:
                     cur = cur.left
 
-                if cur.left == self.tail:
+                __ cur.left __ self.tail:
                     self.right = self.tail
 
                     cur.left = None
                     self.tail = self.tail.left
                     break
-                else:
+                ____
                     cur.left = self.tail
                     self.tail = self.tail.right
-            else:
+            ____
                 self.right = self.tail
                 self.tail = self.tail.left
                 break
 
-    def nxt(self):
-        while self.head:
+    ___ nxt(self
+        w___ self.head:
             cur = self.head.left
 
-            if cur and cur != self.left:
-                while cur.right and cur.right != self.head:
+            __ cur and cur != self.left:
+                w___ cur.right and cur.right != self.head:
                     cur = cur.right
 
-                if cur.right == self.head:
+                __ cur.right __ self.head:
                     self.left = self.head
 
                     cur.right = None
                     self.head = self.head.right
                     break
-                else:
+                ____
                     cur.right = self.head
                     self.head = self.head.left
-            else:
+            ____
                 self.left = self.head
                 self.head = self.head.right
                 break

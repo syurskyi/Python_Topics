@@ -31,20 +31,20 @@ Output: [[3,5],[6,9],[12,14]]
 
 Note:  1 <= S.length <= 1000
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def largeGroupPositions(self, S: str) -> List[List[int]]:
+    ___ largeGroupPositions(self, S: str) -> List[List[int]]:
         i = 0
         j = 0
         ret = []
-        n = len(S)
-        while j < n:
-            while j < n and S[i] == S[j]:
+        n = le.(S)
+        w___ j < n:
+            w___ j < n and S[i] __ S[j]:
                 j += 1
-            if j - i >= 3:
+            __ j - i >= 3:
                 ret.append([i, j - 1])
             i = j
 
-        return ret 
+        r_ ret

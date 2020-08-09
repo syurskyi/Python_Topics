@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestLongestCommonSubseq(object):
+class TestLongestCommonSubseq(object
 
-    def test_longest_common_subseq(self):
+    ___ test_longest_common_subseq(self
         str_comp = StringCompare()
         assert_raises(TypeError, str_comp.longest_common_subseq, None, None)
         assert_equal(str_comp.longest_common_subseq('', ''), '')
@@ -14,10 +14,10 @@ class TestLongestCommonSubseq(object):
         print('Success: test_longest_common_subseq')
 
 
-def main():
+___ main(
     test = TestLongestCommonSubseq()
     test.test_longest_common_subseq()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

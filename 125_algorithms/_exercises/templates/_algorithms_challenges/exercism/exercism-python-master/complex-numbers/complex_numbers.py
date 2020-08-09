@@ -1,45 +1,45 @@
-import math
+______ ma__
 
-class ComplexNumber(object):
-    def __init__(self, real, imaginary):
+class ComplexNumber(object
+    ___ __init__(self, real, imaginary
         self.real = real
         self.imaginary = imaginary
 
-    def __add__(self, other):
-        return ComplexNumber(
+    ___ __add__(self, other
+        r_ ComplexNumber(
                 self.real + other.real,
                 self.imaginary + other.imaginary)
 
-    def __mul__(self, other):
-        return ComplexNumber(
+    ___ __mul__(self, other
+        r_ ComplexNumber(
                 self.real * other.real - self.imaginary * other.imaginary,
                 self.real * other.imaginary + self.imaginary * other.real)
 
-    def __sub__(self, other):
-        return ComplexNumber(
+    ___ __sub__(self, other
+        r_ ComplexNumber(
                 self.real - other.real,
                 self.imaginary - other.imaginary)
 
-    def __truediv__(self, other):
+    ___ __truediv__(self, other
         common = abs(other) ** 2
         real = self.real * other.real + self.imaginary * other.imaginary
         imaginary = self.imaginary * other.real - self.real * other.imaginary
-        return ComplexNumber(real/common, imaginary/common)
+        r_ ComplexNumber(real/common, imaginary/common)
 
-    def __abs__(self):
-        return (self.real ** 2 + self.imaginary ** 2) ** 0.5
+    ___ __abs__(self
+        r_ (self.real ** 2 + self.imaginary ** 2) ** 0.5
 
-    def conjugate(self):
-        return ComplexNumber(self.real, -self.imaginary)
+    ___ conjugate(self
+        r_ ComplexNumber(self.real, -self.imaginary)
 
-    def exp(self):
-        return ComplexNumber(
+    ___ exp(self
+        r_ ComplexNumber(
                 # Round needed for floating point errors
-                round(math.e ** (self.real) * math.cos(self.imaginary), 15),
-                round(math.sin(self.imaginary), 15))
+                round(ma__.e ** (self.real) * ma__.cos(self.imaginary), 15),
+                round(ma__.sin(self.imaginary), 15))
 
-    def __eq__(self, other):
-        return self.real == other.real and self.imaginary == other.imaginary
+    ___ __eq__(self, other
+        r_ self.real __ other.real and self.imaginary __ other.imaginary
 
-    def __repr__(self):
-        return "{} + {}i".format(self.real, self.imaginary)
+    ___ __repr__(self
+        r_ "{} + {}i".format(self.real, self.imaginary)

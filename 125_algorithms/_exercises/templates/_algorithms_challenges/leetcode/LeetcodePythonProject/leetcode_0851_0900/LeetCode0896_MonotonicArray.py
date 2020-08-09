@@ -1,20 +1,20 @@
-class Solution(object):
-    def isMonotonic(self, A):
+class Solution(object
+    ___ isMonotonic(self, A
         """
         :type A: List[int]
         :rtype: bool
         """
         increase = None
-        for i, num in enumerate(A):
-            if i > 0:
-                if num == A[i-1]:
+        for i, num in enumerate(A
+            __ i > 0:
+                __ num __ A[i-1]:
                     continue
-                if num > A[i-1]:
-                    if increase is False:
-                        return False
+                __ num > A[i-1]:
+                    __ increase is False:
+                        r_ False
                     increase = True
-                if num < A[i-1]:
-                    if increase is True:
-                        return False
+                __ num < A[i-1]:
+                    __ increase is True:
+                        r_ False
                     increase = False
-        return True
+        r_ True

@@ -9,95 +9,95 @@ should invalidate the least recently used item before inserting a new item.
 __author__ = 'Danyang'
 
 
-class Node(object):
-    def __init__(self, key, val):
+class Node(object
+    ___ __init__(self, key, val
         self.key = key
         self.val = val
         self.pre, self.next = None, None
 
 
-class LRUCache(object):
-    def __init__(self, capacity):
+class LRUCache(object
+    ___ __init__(self, capacity
         self.cap = capacity
         self.map = {}  # key to node
         self.head = None
         self.tail = None
 
-    def get(self, key):
-        if key in self.map:
+    ___ get(self, key
+        __ key in self.map:
             cur = self.map[key]
             self._elevate(cur)
-            return cur.val
+            r_ cur.val
 
-        return -1
+        r_ -1
 
-    def set(self, key, value):
-        if key in self.map:
+    ___ set(self, key, value
+        __ key in self.map:
             cur = self.map[key]
             cur.val = value
             self._elevate(cur)
-        else:
+        ____
             cur = Node(key, value)
             self.map[key] = cur
             self._appendleft(cur)
 
-            if len(self.map) > self.cap:
+            __ le.(self.map) > self.cap:
                 last = self._pop()
                 del self.map[last.key]
 
     # doubly linked-list operations only
-    def _appendleft(self, cur):
+    ___ _appendleft(self, cur
         """Normal or initially empty"""
-        if not self.head and not self.tail:
+        __ not self.head and not self.tail:
             self.head = cur
             self.tail = cur
-            return
+            r_
 
         head = self.head
         cur.next, cur.pre, head.pre = head, None, cur
         self.head = cur
 
-    def _pop(self):
+    ___ _pop(self
         """Normal or resulting empty"""
         last = self.tail
-        if self.head == self.tail:
+        __ self.head __ self.tail:
             self.head, self.tail = None, None
-            return last
+            r_ last
 
         pre = last.pre
         pre.next = None
         self.tail = pre
-        return last
+        r_ last
 
-    def _elevate(self, cur):
+    ___ _elevate(self, cur
         """Head, Tail, Middle"""
         pre, nxt = cur.pre, cur.next
-        if not pre:
-            return
-        elif not nxt:
-            assert self.tail == cur
+        __ not pre:
+            r_
+        ____ not nxt:
+            assert self.tail __ cur
             self._pop()
-        else:
+        ____
             pre.next, nxt.pre = nxt, pre
 
         self._appendleft(cur)
 
 
-class LRUCache_TLE(object):
-    def __init__(self, capacity):
+class LRUCache_TLE(object
+    ___ __init__(self, capacity
         self.capacity = capacity
         self.q = []  # order by key
         self.dic = {}
 
-    def get(self, key):
-        if key in self.dic:
+    ___ get(self, key
+        __ key in self.dic:
             self.q.remove(key)
             self.q.insert(0, key)
-            return self.dic[key]
-        else:
-            return -1
+            r_ self.dic[key]
+        ____
+            r_ -1
 
-    def set(self, key, value):
+    ___ set(self, key, value
         """
         Algorithm:
         data structure: Queue and HashMap
@@ -106,13 +106,13 @@ class LRUCache_TLE(object):
         :param value: int
         :return: value
         """
-        if key in self.dic:
+        __ key in self.dic:
             self.q.remove(key)
             self.q.insert(0, key)
-        else:
-            if len(self.q)+1 <= self.capacity:
+        ____
+            __ le.(self.q)+1 <= self.capacity:
                 self.q.insert(0, key)
-            else:
+            ____
                 self.dic.pop(self.q.pop())
                 self.q.insert(0, key)
 

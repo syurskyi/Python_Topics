@@ -3,29 +3,29 @@ Created on Aug 29, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def nearestPalindromic(self, n):
+class Solution(object
+    ___ nearestPalindromic(self, n
         """
         :type n: str
         :rtype: str
         """
-        k = len(n)
+        k = le.(n)
         candidates = [str(10**k0+d) for k0 in (k-1, k) for d in (-1, 1)]
         prefix = n[:int((k+1)/2)]
         p = int(prefix)
         for start in map(str, (p-1, p, p+1)):
-            candidates.append(start+(start[:-1] if k%2 else start)[::-1])
-        def delta(x):
-            return abs(int(n)-int(x))
+            candidates.append(start+(start[:-1] __ k%2 else start)[::-1])
+        ___ delta(x
+            r_ abs(int(n)-int(x))
         res = None
         for cand in candidates:
-            if cand != n and not cand.startswith('00'):
-                if res is None or delta(cand) < delta(res) or\
-                    delta(cand) == delta(res) and int(cand) < int(res):
+            __ cand != n and not cand.startswith('00'
+                __ res is None or delta(cand) < delta(res) or\
+                    delta(cand) __ delta(res) and int(cand) < int(res
                     res = cand
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             '123',
             '12122',
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

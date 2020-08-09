@@ -1,14 +1,14 @@
 # Definition for a binary tree node.
 # class TreeNode:
-#     def __init__(self, x):
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
 class Solution:
-    def postorderTraversal(self, root: TreeNode) -> List[int]:
-        if(not root):
-            return
+    ___ postorderTraversal(self, root: TreeNode) -> List[int]:
+        __(not root
+            r_
         
         ans = []
         s1 = []
@@ -16,18 +16,18 @@ class Solution:
 
         s1.append(root)
 
-        while(s1):
+        w___(s1
             x = s1[-1]
             s1.pop()
             s2.append(x)
 
-            if(x.left):
+            __(x.left
                 s1.append(x.left)
-            if(x.right):
+            __(x.right
                 s1.append(x.right)
         
-        while(s2):
+        w___(s2
             y = s2[-1]
             s2.pop()
             ans.append(y.val)
-        return ans
+        r_ ans

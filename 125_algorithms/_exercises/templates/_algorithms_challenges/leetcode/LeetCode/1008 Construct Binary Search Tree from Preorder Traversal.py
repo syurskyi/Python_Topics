@@ -17,19 +17,19 @@ Note:
 1 <= preorder.length <= 100
 The values of preorder are distinct.
 """
-from typing import List
+from typing ______ List
 
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def bstFromPreorder2(self, preorder: List[int]) -> TreeNode:
+    ___ bstFromPreorder2(self, preorder: List[int]) -> TreeNode:
         """
         need to be BST
 
@@ -48,10 +48,10 @@ class Solution:
         stk = [root]
         for a in preorder[1:]:
             node = TreeNode(a)
-            if a < stk[-1].val:  # len(stk) always >= 1
+            __ a < stk[-1].val:  # le.(stk) always >= 1
                 stk[-1].left = node
-            else:
-                while len(stk) >= 2 and stk[-2].val < a:
+            ____
+                w___ le.(stk) >= 2 and stk[-2].val < a:
                     stk.pop()
 
                 stk[-1].right = node
@@ -59,9 +59,9 @@ class Solution:
 
             stk.append(node)
 
-        return root
+        r_ root
 
-    def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
+    ___ bstFromPreorder(self, preorder: List[int]) -> TreeNode:
         """
         If a node is a right child (larger), find the proper parent
         The proper parent should the deepest in the stack that its val < current val
@@ -70,12 +70,12 @@ class Solution:
         stk = [root]
         for a in preorder[1:]:
             node = TreeNode(a)
-            if a < stk[-1].val:
+            __ a < stk[-1].val:
                 stk[-1].left = node
-            else:
-                while stk and stk[-1].val < a:
+            ____
+                w___ stk and stk[-1].val < a:
                     pi = stk.pop()
                 pi.right = node
             stk.append(node)
             
-        return root
+        r_ root

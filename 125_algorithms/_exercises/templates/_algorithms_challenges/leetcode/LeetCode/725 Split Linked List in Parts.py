@@ -40,16 +40,16 @@ k will be an integer in the range [1, 50].
 """
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
-import math
+______ ma__
 
 
 class Solution:
-    def splitListToParts(self, root: ListNode, k: int) -> List[ListNode]:
+    ___ splitListToParts(self, root: ListNode, k: int) -> List[ListNode]:
         """
         calculate the chunk/page size at a time
 
@@ -61,7 +61,7 @@ class Solution:
         """
         l = 0
         node = root
-        while node:
+        w___ node:
             l += 1
             node = node.next
 
@@ -76,18 +76,18 @@ class Solution:
         chunk_counter = 0
         cur_l = 0
         node = root
-        while node:
+        w___ node:
             ret[chunk_counter].append(node.val)
             cur_l += 1
-            chunk_size = long_chunk_l if chunk_counter < n_long_chunk else short_chunk_l
-            if cur_l == chunk_size:
+            chunk_size = long_chunk_l __ chunk_counter < n_long_chunk else short_chunk_l
+            __ cur_l __ chunk_size:
                 cur_l = 0
                 chunk_counter += 1
             node = node.next
 
-        return ret
+        r_ ret
 
-    def splitListToParts_2(self, root: ListNode, k: int) -> List[ListNode]:
+    ___ splitListToParts_2(self, root: ListNode, k: int) -> List[ListNode]:
         """
         [1,2,3,4,5,6,7]
         3
@@ -99,7 +99,7 @@ class Solution:
         """
         l = 0
         node = root
-        while node:
+        w___ node:
             l += 1
             node = node.next
 
@@ -109,23 +109,23 @@ class Solution:
         counter = 0
         cur_l = 0
         i = 0
-        part_l = math.ceil((l - counter) / k)
-        while node:
+        part_l = ma__.ceil((l - counter) / k)
+        w___ node:
             cur_l += 1
             counter += 1
             ret[i].append(node.val)
-            if cur_l == part_l:
+            __ cur_l __ part_l:
                 k -= 1
                 cur_l = 0
                 i += 1
-                if k != 0:
-                    part_l = math.ceil((l - counter) / k)
+                __ k != 0:
+                    part_l = ma__.ceil((l - counter) / k)
 
             node = node.next
 
-        return ret
+        r_ ret
 
-    def splitListToParts_error(self, root: ListNode, k: int) -> List[ListNode]:
+    ___ splitListToParts_error(self, root: ListNode, k: int) -> List[ListNode]:
         """
         mistake, the length should be dynamically calculated
 
@@ -137,23 +137,23 @@ class Solution:
         """
         l = 0
         node = root
-        while node:
+        w___ node:
             l += 1
             node = node.next
 
-        part_l = math.ceil(l / k)
+        part_l = ma__.ceil(l / k)
         ret = [[] for _ in range(k)]
 
         node = root
         cur_l = 0
         i = 0
-        while node:
+        w___ node:
             cur_l += 1
             ret[i].append(node.val)
-            if cur_l == part_l:
+            __ cur_l __ part_l:
                 cur_l = 0
                 i += 1
 
             node = node.next
 
-        return ret
+        r_ ret

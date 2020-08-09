@@ -1,11 +1,11 @@
 class Solution:
-    def hasCycle(self, head: ListNode) -> bool:
+    ___ hasCycle(self, head: ListNode) -> bool:
         hare = head
         turtle = head
 
-        while turtle and hare and hare.next:
+        w___ turtle and hare and hare.next:
             hare = hare.next.next
             turtle = turtle.next
-            if(turtle == hare):
-                return True
-        return False
+            __(turtle __ hare
+                r_ True
+        r_ False

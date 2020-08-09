@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestTwoSum(object):
+class TestTwoSum(object
 
-    def test_two_sum(self):
+    ___ test_two_sum(self
         solution = Solution()
         assert_raises(TypeError, solution.two_sum, None, None)
         assert_raises(ValueError, solution.two_sum, [], 0)
@@ -14,10 +14,10 @@ class TestTwoSum(object):
         print('Success: test_two_sum')
 
 
-def main():
+___ main(
     test = TestTwoSum()
     test.test_two_sum()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

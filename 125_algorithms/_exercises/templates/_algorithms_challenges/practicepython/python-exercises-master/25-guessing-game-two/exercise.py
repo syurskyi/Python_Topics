@@ -1,33 +1,33 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
 
-def guess(options):
+___ guess(options
     possible = options
 
-    if len(possible) == 1:
+    __ le.(possible) __ 1:
         print('The guess has to be: %s' % (possible[0]))
-        return
+        r_
 
-    index = int(len(possible) / 2)
+    index = int(le.(possible) / 2)
     currentGuess = possible[index]
     print('Computer guesses: %s' % currentGuess)
     feedback = input('To big ? (bigger) To small? (smaller) ? Good guess? (equal)\n')
 
     allowed = ['bigger', 'smaller', 'equal']
 
-    if feedback not in allowed:
+    __ feedback not in allowed:
         print('Uknown command :(')
         guess(possible)
-    elif feedback == allowed[0]:
-        if currentGuess == 100:
+    ____ feedback __ allowed[0]:
+        __ currentGuess __ 100:
             print("Can't be bigger! It has to be %s" % currentGuess)
-            return
-        guess(possible[index + 1:len(possible)])
-    elif feedback == allowed[1]:
+            r_
+        guess(possible[index + 1:le.(possible)])
+    ____ feedback __ allowed[1]:
         guess(possible[0:index])
-    elif feedback == allowed[2]:
+    ____ feedback __ allowed[2]:
         print('Yes! I am a smart program!')
-        return
+        r_
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     guess(range(0, 101))

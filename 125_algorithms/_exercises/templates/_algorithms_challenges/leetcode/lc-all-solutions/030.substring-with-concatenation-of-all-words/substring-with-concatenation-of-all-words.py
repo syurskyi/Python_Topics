@@ -1,40 +1,40 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def findSubstring(self, s, words):
+class Solution(object
+  ___ findSubstring(self, s, words
     """
     :type s: str
     :type words: List[str]
     :rtype: List[int]
     """
-    if len(words) > len(s):
-      return []
+    __ le.(words) > le.(s
+      r_ []
     d = {}
     t = {}
     ans = []
     deq = deque([])
-    wl = len(words[0])
+    wl = le.(words[0])
     fullscore = 0
     for word in words:
       d[word] = d.get(word, 0) + 1
       fullscore += 1
 
-    for i in range(0, len(s)):
+    for i in range(0, le.(s)):
       head = start = i
       t.clear()
       score = 0
 
-      while start + wl <= len(s) and s[start:start + wl] in d:
+      w___ start + wl <= le.(s) and s[start:start + wl] in d:
         cword = s[start:start + wl]
         t[cword] = t.get(cword, 0) + 1
-        if t[cword] <= d[cword]:
+        __ t[cword] <= d[cword]:
           score += 1
-        else:
+        ____
           break
         start += wl
 
-      if score == fullscore:
+      __ score __ fullscore:
         ans.append(head)
 
-    return ans
+    r_ ans

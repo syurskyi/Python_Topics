@@ -1,13 +1,13 @@
-def say_hello_bye(name, num):
-    if num == 1:
-        return "Hello " + name.capitalize()
-    else:
-        return "Bye " + name.capitalize()
+___ say_hello_bye(name, num
+    __ num __ 1:
+        r_ "Hello " + name.capitalize()
+    ____
+        r_ "Bye " + name.capitalize()
 
 
-def test():
+___ test(
     print("test has started")
-    if say_hello_bye("ram", 2) != "Bye Ram":
+    __ say_hello_bye("ram", 2) != "Bye Ram":
         print("error1")
-    if say_hello_bye("jodu", 1) != "Hello Jodu":
+    __ say_hello_bye("jodu", 1) != "Hello Jodu":
         print("error2")

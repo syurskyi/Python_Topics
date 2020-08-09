@@ -8,39 +8,39 @@ for each `num < a`: `cnt(num) == num`
 for each `num >= a`: `cnt(num) > num`
 """
 class Solution:
-    def findDuplicate(self, A):
+    ___ findDuplicate(self, A
         """
         :type A: List[int]
         :rtype: int
         """
-        if not A:
-            return -1
+        __ not A:
+            r_ -1
 
-        left, right = 1, len(A) - 1
+        left, right = 1, le.(A) - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
-            if self.after_dup(A, mid):
+            __ self.after_dup(A, mid
                 right = mid
-            else:
+            ____
                 left = mid
 
-        if self.after_dup(A, left):
-            return left
-        if self.after_dup(A, right):
-            return right
-        return -1
+        __ self.after_dup(A, left
+            r_ left
+        __ self.after_dup(A, right
+            r_ right
+        r_ -1
 
-    def after_dup(self, A, mid):
+    ___ after_dup(self, A, mid
         cnt = 0
 
         for a in A:
-            if a <= mid:
+            __ a <= mid:
                 cnt += 1
-            if cnt > mid:
-                return True
+            __ cnt > mid:
+                r_ True
 
-        return False
+        r_ False
 
 
 """
@@ -67,21 +67,21 @@ class Solution:
     @param: A: an array containing n + 1 integers which is between 1 and n
     @return: the duplicate one
     """
-    def findDuplicate(self, A):
-        if not A:
-            return -1
+    ___ findDuplicate(self, A
+        __ not A:
+            r_ -1
 
         slow = A[0]
         fast = A[A[0]]
 
-        while slow != fast:
+        w___ slow != fast:
             slow = A[slow]
             fast = A[A[fast]]
 
         fast = 0
 
-        while slow != fast:
+        w___ slow != fast:
             slow = A[slow]
             fast = A[fast]
 
-        return slow
+        r_ slow

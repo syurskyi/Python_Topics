@@ -25,11 +25,11 @@ Output: 2
 Explanation: You could form "10", but then you'd have nothing left. Better form
 "0" and "1".
 """
-from collections import Counter
+from collections ______ Counter
 
 
 class Solution:
-    def findMaxForm(self, strs, m, n):
+    ___ findMaxForm(self, strs, m, n
         """
         0-1 knapsack
         let F[p][q][i] be the max end at A[i], with p 0's and q 1's remaining
@@ -42,21 +42,21 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        if not strs:
-            return 0
+        __ not strs:
+            r_ 0
 
         F = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
         z, o = self.count(strs[0])
-        for i in range(m+1):
-            for j in range(n+1):
-                if i + z<= m and j + o <= n:
+        for i in range(m+1
+            for j in range(n+1
+                __ i + z<= m and j + o <= n:
                     F[i][j] = 1
 
-        for e in range(1, len(strs)):
+        for e in range(1, le.(strs)):
             z, o = self.count(strs[e])
-            for i in range(m+1):
-                for j in range(n+1):
-                    if i + z <= m and j + o <= n:
+            for i in range(m+1
+                for j in range(n+1
+                    __ i + z <= m and j + o <= n:
                         F[i][j] = max(
                             F[i][j],
                             F[i + z][j + o] + 1
@@ -67,19 +67,19 @@ class Solution:
             for i in range(m + 1)
             for j in range(n + 1)
         )
-        return ret
+        r_ ret
 
-    def count(self, s):
+    ___ count(self, s
         z, o = 0, 0
         for e in s:
-            if e == "0":
+            __ e __ "0":
                 z += 1
-            else:
+            ____
                 o += 1
 
-        return z, o
+        r_ z, o
 
-    def findMaxForm_TLE(self, strs, m, n):
+    ___ findMaxForm_TLE(self, strs, m, n
         """
         0-1 knapsack
         let F[p][q][i] be the max end at A[i], with p 0's and q 1's
@@ -90,21 +90,21 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        if not strs:
-            return 0
+        __ not strs:
+            r_ 0
 
-        F = [[[0 for _ in range(len(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
+        F = [[[0 for _ in range(le.(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
         count = Counter(strs[0])
-        for i in range(m+1):
-            for j in range(n+1):
-                if i + count["0"] <= m and j + count["1"] <= n:
+        for i in range(m+1
+            for j in range(n+1
+                __ i + count["0"] <= m and j + count["1"] <= n:
                     F[i][j][0] = 1
 
-        for e in range(1, len(strs)):
+        for e in range(1, le.(strs)):
             count = Counter(strs[e])
-            for i in range(m+1):
-                for j in range(n+1):
-                    if i + count["0"] <= m and j + count["1"] <= n:
+            for i in range(m+1
+                for j in range(n+1
+                    __ i + count["0"] <= m and j + count["1"] <= n:
                         F[i][j][e] = F[i + count["0"]][j + count["1"]][e-1] + 1
                     F[i][j][e] = max(F[i][j][e], F[i][j][e-1])
 
@@ -113,9 +113,9 @@ class Solution:
             for i in range(m + 1)
             for j in range(n + 1)
         )
-        return ret
+        r_ ret
 
-    def findMaxForm_error(self, strs, m, n):
+    ___ findMaxForm_error(self, strs, m, n
         """
         0-1 knapsack
         let F[p][q][i] be the max end at A[i], with p 0's and q 1's
@@ -126,21 +126,21 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        if not strs:
-            return 0
+        __ not strs:
+            r_ 0
 
-        F = [[[0 for _ in range(len(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
+        F = [[[0 for _ in range(le.(strs))] for _ in range(n + 1)] for _ in range(m + 1)]
         count = Counter(strs[0])
-        if count["0"] <= m and count["1"] <= n:
+        __ count["0"] <= m and count["1"] <= n:
             F[m - count["0"]][n - count["1"]][0] += 1
 
-        for e in range(1, len(strs)):
+        for e in range(1, le.(strs)):
             count = Counter(strs[e])
-            for i in range(m+1):
-                for j in range(n+1):
-                    if count["0"] <= i and count["1"] <= j:
+            for i in range(m+1
+                for j in range(n+1
+                    __ count["0"] <= i and count["1"] <= j:
                         F[i - count["0"]][j - count["1"]][e] = F[i][j][e-1] + 1
-                    else:
+                    ____
                         F[i][j][e] = F[i][j][e-1]
 
         ret = max(
@@ -148,9 +148,9 @@ class Solution:
             for i in range(m + 1)
             for j in range(n + 1)
         )
-        return ret
+        r_ ret
 
-    def findMaxForm_error(self, strs, m, n):
+    ___ findMaxForm_error(self, strs, m, n
         """
         reward is 1 regarless of length, then greedy - error
 
@@ -159,19 +159,19 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        strs.sort(key=len)
+        strs.sort(key=le.)
         ret = 0
         for a in strs:
             count = Counter(a)
-            if count["0"] <= m and count["1"] <= n:
+            __ count["0"] <= m and count["1"] <= n:
                 ret += 1
                 m -= count["0"]
                 n -= count["1"]
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3) == 4
-    assert Solution().findMaxForm(["10", "0", "1"], 1, 1) == 2
-    assert Solution().findMaxForm(["111", "1000", "1000", "1000"], 9, 3) == 3
+__ __name__ __ "__main__":
+    assert Solution().findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3) __ 4
+    assert Solution().findMaxForm(["10", "0", "1"], 1, 1) __ 2
+    assert Solution().findMaxForm(["111", "1000", "1000", "1000"], 9, 3) __ 3

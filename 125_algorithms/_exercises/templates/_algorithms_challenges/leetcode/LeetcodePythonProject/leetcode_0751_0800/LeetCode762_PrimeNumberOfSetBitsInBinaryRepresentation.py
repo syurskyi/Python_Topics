@@ -3,8 +3,8 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def countPrimeSetBits(self, L, R):
+class Solution(object
+    ___ countPrimeSetBits(self, L, R
         """
         :type L: int
         :type R: int
@@ -12,16 +12,16 @@ class Solution(object):
         """
         primes = set([2, 3, 5, 7, 11, 13, 17, 19])
         cnt = 0
-        for num in range(L, R+1):
+        for num in range(L, R+1
             bits = 0
             n = num
-            while n > 0:
+            w___ n > 0:
                 bits += n & 1
                 n >>= 1
-            cnt += 1 if bits in primes else 0
-        return cnt
+            cnt += 1 __ bits in primes else 0
+        r_ cnt
     
-    def test(self):
+    ___ test(self
         testCases = [
             [6, 10],
             [10, 15],
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

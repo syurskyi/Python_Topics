@@ -1,21 +1,21 @@
 # Python 3.4
 
-def check_brackets(checks):
+___ check_brackets(checks
     answer = []
-    for check in range(checks):
+    for check in range(checks
         raw_data = input()
-        data = (''.join([char for char in raw_data if char in('(){}[]<>')]))
+        data = (''.join([char for char in raw_data __ char in('(){}[]<>')]))
         
-        # Set higher than len(data) to make sure while loop initates.
-        old_data_length = len(data) + 1
+        # Set higher than le.(data) to make sure w___ loop initates.
+        old_data_length = le.(data) + 1
         
-        while len(data) < old_data_length:
-            old_data_length = len(data)
+        w___ le.(data) < old_data_length:
+            old_data_length = le.(data)
             data = data.replace('()','').replace('{}','').replace('[]','').replace('<>','')
 
-        if len(data) > 0:
+        __ le.(data) > 0:
             answer.append('0') # String had incorrect bracket usage.
-        else:
+        ____
             answer.append('1') # String had completely correct bracket usage.
     print(' '.join(answer))
 check_brackets(int(input()))

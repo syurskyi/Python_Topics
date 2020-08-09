@@ -3,13 +3,13 @@ Created on Oct 10, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def pathSum(self, nums):
+class Solution(object
+    ___ pathSum(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums: return 0
+        __ not nums: r_ 0
         hashmap = {}
         for num in nums:
             key = num//10
@@ -17,23 +17,23 @@ class Solution(object):
             hashmap[key] = value
         self.sumVal = 0
         self.traverse(nums[0]//10, 0, hashmap)
-        return self.sumVal
+        r_ self.sumVal
     
-    def traverse(self, root, preSum, hashmap):
+    ___ traverse(self, root, preSum, hashmap
         level = root//10
         pos = root%10
         left = (level+1)*10+pos*2-1
         right = (level+1)*10+pos*2
         curSum = preSum + hashmap[root]
-        if left not in hashmap and right not in hashmap:
+        __ left not in hashmap and right not in hashmap:
             self.sumVal += curSum
-            return
-        if left in hashmap:
+            r_
+        __ left in hashmap:
             self.traverse(left, curSum, hashmap)
-        if right in hashmap:
+        __ right in hashmap:
             self.traverse(right, curSum, hashmap)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [113, 215, 221],
             [113, 221],
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

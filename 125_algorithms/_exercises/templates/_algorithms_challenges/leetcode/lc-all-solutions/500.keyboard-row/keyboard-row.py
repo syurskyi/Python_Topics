@@ -1,5 +1,5 @@
-class Solution(object):
-  def findWords(self, words):
+class Solution(object
+  ___ findWords(self, words
     """
     :type words: List[str]
     :rtype: List[str]
@@ -20,10 +20,10 @@ class Solution(object):
       same = True
       pre = d[word[0].lower()]
       for c in word:
-        if pre != d[c.lower()]:
+        __ pre != d[c.lower()]:
           same = False
           break
         pre = d[c.lower()]
-      if same:
+      __ same:
         ans.append(word)
-    return ans
+    r_ ans

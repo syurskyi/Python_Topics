@@ -8,21 +8,21 @@ class Solution:
     @param: target: target = A[index1] + A[index2]
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    def twoSum(self, A, target):
+    ___ twoSum(self, A, target
         NOT_FOUND = [-1, -1]
-        if not A:
-            return NOT_FOUND
+        __ not A:
+            r_ NOT_FOUND
 
         remaining = {}
-        for i in range(len(A)):
-            if A[i] in remaining:
-                return [
+        for i in range(le.(A)):
+            __ A[i] in remaining:
+                r_ [
                     remaining[A[i]] + 1,
                     i + 1,
                 ]
             remaining[target - A[i]] = i
 
-        return NOT_FOUND
+        r_ NOT_FOUND
 
 
 """
@@ -35,19 +35,19 @@ class Solution:
     @param: target: target = A[index1] + A[index2]
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    def twoSum(self, A, target):
+    ___ twoSum(self, A, target
         NOT_FOUND = [-1, -1]
-        if not A:
-            return NOT_FOUND
+        __ not A:
+            r_ NOT_FOUND
 
-        left, right = 0, len(A) - 1
-        while left < right:
+        left, right = 0, le.(A) - 1
+        w___ left < right:
             _sum = A[left] + A[right]
-            if _sum == target:
-                return [left + 1, right + 1]
-            if _sum < target:
+            __ _sum __ target:
+                r_ [left + 1, right + 1]
+            __ _sum < target:
                 left += 1
-            else:
+            ____
                 right -= 1
 
-        return NOT_FOUND
+        r_ NOT_FOUND

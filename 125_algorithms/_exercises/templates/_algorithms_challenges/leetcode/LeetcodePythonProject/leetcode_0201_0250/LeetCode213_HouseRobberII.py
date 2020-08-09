@@ -4,47 +4,47 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def rob(self, nums):
-        if not nums: return 0
-        if len(nums) == 1: return nums[0]
-        return max(self.robHelper(nums, 0, len(nums)-2),\
-                   self.robHelper(nums, 1, len(nums)-1))
+class Solution(object
+    ___ rob(self, nums
+        __ not nums: r_ 0
+        __ le.(nums) __ 1: r_ nums[0]
+        r_ max(self.robHelper(nums, 0, le.(nums)-2),\
+                   self.robHelper(nums, 1, le.(nums)-1))
     
-    def robHelper(self, nums, lo, hi):
+    ___ robHelper(self, nums, lo, hi
         include, exclude = 0, 0
-        for i0 in range(lo, hi+1):
+        for i0 in range(lo, hi+1
             i, e = include, exclude
             include = e+nums[i0]
             exclude = max(i, e)
-        return max(include, exclude)
+        r_ max(include, exclude)
     
-    def robSpace(self, nums):
+    ___ robSpace(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums: return 0
-        if len(nums) < 2: return nums[0]
-        dp0 = [0]*len(nums)
-        dp1 = [0]*len(nums)
-        for i in range(len(nums)-1):
-            if i == 0:
+        __ not nums: r_ 0
+        __ le.(nums) < 2: r_ nums[0]
+        dp0 = [0]*le.(nums)
+        dp1 = [0]*le.(nums)
+        for i in range(le.(nums)-1
+            __ i __ 0:
                 dp0[i] = nums[0]
-            elif i == 1:
+            ____ i __ 1:
                 dp0[i] = max(nums[i], nums[i-1])
-            else:
+            ____
                 dp0[i] = max(dp0[i-1], dp0[i-2] + nums[i])
-        for i in range(1, len(nums)):
-            if i == 1:
+        for i in range(1, le.(nums)):
+            __ i __ 1:
                 dp1[i] = nums[i]
-            elif i == 2:
+            ____ i __ 2:
                 dp1[i] = max(nums[i], nums[i-1])
-            else:
+            ____
                 dp1[i] = max(dp1[i-1], dp1[i-2] + nums[i])
-        return max(dp0[-2], dp1[-1])
+        r_ max(dp0[-2], dp1[-1])
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1, 1],
 #             [1, 1],
@@ -57,5 +57,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

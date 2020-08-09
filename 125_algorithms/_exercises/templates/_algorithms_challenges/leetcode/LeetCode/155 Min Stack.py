@@ -11,7 +11,7 @@ __author__ = 'Danyang'
 
 
 class MinStack:
-    def __init__(self):
+    ___ __init__(self
         """
         algorithm: non_asc stack keeps the items of the normal stack if they are in non-ascending order
         normal stack: 5 4 3 5 4 3 2 1
@@ -27,36 +27,36 @@ class MinStack:
         self.stk = []
         self.non_asc = []
 
-    def push(self, x):
+    ___ push(self, x
         """
 
         :param x: int
         :return: int
         """
         self.stk.append(x)
-        if len(self.non_asc) == 0 or x <= self.non_asc[-1]:  # rather than <
+        __ le.(self.non_asc) __ 0 or x <= self.non_asc[-1]:  # rather than <
             self.non_asc.append(x)
 
-    def pop(self):
+    ___ pop(self
         """
 
         :return: nothing
         """
         x = self.stk.pop()
-        if x == self.non_asc[-1]:
+        __ x __ self.non_asc[-1]:
             self.non_asc.pop()
 
-    def top(self):
+    ___ top(self
         """
 
         :return: int
         """
-        return self.stk[-1]
+        r_ self.stk[-1]
 
-    def getMin(self):
+    ___ getMin(self
         """
 
         :return: int
         """
-        return self.non_asc[-1]
+        r_ self.non_asc[-1]
 

@@ -4,37 +4,37 @@ Created on Apr 10, 2019
 @author: tongq
 '''
 
-class Solution(object):
-    def shortestPathLength(self, graph):
+class Solution(object
+    ___ shortestPathLength(self, graph
         """
         :type graph: List[List[int]]
         :rtype: int
         """
-        n = len(graph)
+        n = le.(graph)
         queue = []
         hashset = set()
         
-        for i in range(n):
+        for i in range(n
             tmp = (1 << i)
             hashset.add((tmp, i, 0))
             queue.append((tmp, i, 1))
         
-        while queue:
+        w___ queue:
             curr = queue.pop(0)
-            if curr[0] == (1 << n)-1:
-                return curr[2]-1
-            else:
+            __ curr[0] __ (1 << n)-1:
+                r_ curr[2]-1
+            ____
                 neighbors = graph[curr[1]]
                 for v in neighbors:
                     bitMask = curr[0]
                     bitMask |= (1<<v)
                     t = (bitMask, v, 0)
-                    if t not in hashset:
+                    __ t not in hashset:
                         queue.append((bitMask, v, curr[2]+1))
                         hashset.add(t)
-        return -1
+        r_ -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[1,2,3],[0],[0],[0]],
             [[1],[0,2,4],[1,3,4],[2],[1,2]],
@@ -43,5 +43,5 @@ class Solution(object):
             result = self.shortestPathLength(graph)
             print('result: %s' % result)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

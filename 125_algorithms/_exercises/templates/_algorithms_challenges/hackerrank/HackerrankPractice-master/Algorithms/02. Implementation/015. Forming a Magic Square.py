@@ -2,7 +2,7 @@
 # Score: 20
 
 
-def formingMagicSquare(square):
+___ formingMagicSquare(square
     allSquares = [
         [[4, 9, 2], [3, 5, 7], [8, 1, 6]],
         [[2, 7, 6], [9, 5, 1], [4, 3, 8]],
@@ -16,12 +16,12 @@ def formingMagicSquare(square):
     minCost = 9 * 9
     for magicSquare in allSquares:
         cost = 0
-        for i in range(3):
-            for j in range(3):
+        for i in range(3
+            for j in range(3
                 cost += abs(magicSquare[i][j] - square[i][j])
-        if cost < minCost:
+        __ cost < minCost:
             minCost = cost
-    return minCost
+    r_ minCost
 
 
 square = [

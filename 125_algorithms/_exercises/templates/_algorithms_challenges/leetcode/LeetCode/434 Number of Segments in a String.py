@@ -8,7 +8,7 @@ Please note that the string does not contain any non-printable characters.
 
 
 class Solution:
-    def countSegments(self, s):
+    ___ countSegments(self, s
         """
         I could use split but it may not be the intention of this problem
 
@@ -16,19 +16,19 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        if not s:
-            return ret
+        __ not s:
+            r_ ret
 
         # count at start
-        if s[0] != " ":
+        __ s[0] != " ":
             ret = 1
         prev = s[0]
         for c in s[1:]:
-            if c != " " and prev == " ":
+            __ c != " " and prev __ " ":
                 ret += 1
             prev = c
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().countSegments("Hello, my name is John") == 5
+__ __name__ __ "__main__":
+    assert Solution().countSegments("Hello, my name is John") __ 5

@@ -23,10 +23,10 @@ Note: 1 <= N <= 10 ^ 9.
 
 
 class Solution:
-    def consecutiveNumbersSum(self, N: int) -> int:
+    ___ consecutiveNumbersSum(self, N: int) -> int:
         """
         Arithmetic Array
-        math
+        ma__
 
         (x0 + xn) * (xn - x0 + 1) / 2 = N
         xn = x0 + k - 1
@@ -38,20 +38,20 @@ class Solution:
         """
         cnt = 0
         k = 0
-        while True:
+        w___ True:
             k += 1
             x0k = N - k * (k - 1) // 2
-            if x0k <= 0 :
+            __ x0k <= 0 :
                 break
-            if x0k % k == 0:
+            __ x0k % k __ 0:
                 cnt += 1
 
-        return cnt
+        r_ cnt
 
-    def consecutiveNumbersSum_error(self, N: int) -> int:
+    ___ consecutiveNumbersSum_error(self, N: int) -> int:
         """
         Arithmetic Array
-        math
+        ma__
 
         (x0 + xn) * (xn - x0 + 1) / 2 = N
         xn = x0 + k - 1
@@ -64,25 +64,25 @@ class Solution:
         cnt = 0
         for k in range(1, int(N ** 0.5)):  # error
             x0k = N - k * (k - 1) // 2
-            if x0k % k == 0:
+            __ x0k % k __ 0:
                 cnt += 1
 
-        return cnt
+        r_ cnt
 
-    def consecutiveNumbersSum_error(self, N: int) -> int:
+    ___ consecutiveNumbersSum_error(self, N: int) -> int:
         """
         factor related
         9 / 3 = 3
         """
-        if N == 1:
-            return 1
+        __ N __ 1:
+            r_ 1
 
         cnt = 0
-        for i in range(1, N):
+        for i in range(1, N
             d = N // i
             r = N % i
-            if r == 0 and d - i // 2 > 0:
+            __ r __ 0 and d - i // 2 > 0:
                 cnt += 1
-            elif r == 1 and N == (d + d + 1) * i // 2:
+            ____ r __ 1 and N __ (d + d + 1) * i // 2:
                 cnt += 1
-        return cnt
+        r_ cnt

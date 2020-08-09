@@ -1,2 +1,2 @@
-def count():
+___ count(
     pass

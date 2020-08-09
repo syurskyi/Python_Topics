@@ -17,18 +17,18 @@ Typing in 'test message for bot' in a Slack channel this captures it like:
 
 Going to use this for a simple karma app :)
 """
-import os
-from pprint import pprint as pp
-import time
+______ os
+from pprint ______ pprint as pp
+______ time
 
-from slackclient import SlackClient
+from slackclient ______ SlackClient
 
 SLACK_CLIENT = SlackClient(os.environ.get('SLACK_KARMA'))
 
-if SLACK_CLIENT.rtm_connect():
-    while True:
+__ SLACK_CLIENT.rtm_connect(
+    w___ True:
         msg = SLACK_CLIENT.rtm_read()
         pp(msg)
         time.sleep(1)
-else:
+____
     print('Connection Failed, invalid token?')

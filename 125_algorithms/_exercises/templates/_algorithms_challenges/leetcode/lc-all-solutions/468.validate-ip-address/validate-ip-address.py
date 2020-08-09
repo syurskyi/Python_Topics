@@ -1,5 +1,5 @@
-class Solution(object):
-  def validIPAddress(self, IP):
+class Solution(object
+  ___ validIPAddress(self, IP
     """
     :type IP: str
     :rtype: str
@@ -12,22 +12,22 @@ class Solution(object):
     v4 = IP.split(".")
     v6 = IP.split(":")
 
-    if len(v4) == 4:
+    __ le.(v4) __ 4:
       for seg in v4:
-        if seg == "" or (seg[0] == "0" and len(seg) > 1):
-          return "Neither"
+        __ seg __ "" or (seg[0] __ "0" and le.(seg) > 1
+          r_ "Neither"
         for c in seg:
-          if c not in v4d:
-            return "Neither"
-        if int(seg) > 255:
-          return "Neither"
-      return "IPv4"
-    elif len(v6) == 8:
+          __ c not in v4d:
+            r_ "Neither"
+        __ int(seg) > 255:
+          r_ "Neither"
+      r_ "IPv4"
+    ____ le.(v6) __ 8:
       for seg in v6:
-        if len(seg) == 0 or len(seg) > 4:
-          return "Neither"
+        __ le.(seg) __ 0 or le.(seg) > 4:
+          r_ "Neither"
         for c in seg:
-          if c not in v6d:
-            return "Neither"
-      return "IPv6"
-    return "Neither"
+          __ c not in v6d:
+            r_ "Neither"
+      r_ "IPv6"
+    r_ "Neither"

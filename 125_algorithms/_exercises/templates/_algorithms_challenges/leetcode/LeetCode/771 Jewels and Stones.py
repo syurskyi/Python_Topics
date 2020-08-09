@@ -20,14 +20,14 @@ Output: 0
 
 
 class Solution:
-    def numJewelsInStones(self, J: str, S: str) -> int:
+    ___ numJewelsInStones(self, J: str, S: str) -> int:
         """
         hash map
         """
         targets = set(J)
         ret = 0
         for c in S:
-            if c in targets:
+            __ c in targets:
                 ret += 1
 
-        return ret
+        r_ ret

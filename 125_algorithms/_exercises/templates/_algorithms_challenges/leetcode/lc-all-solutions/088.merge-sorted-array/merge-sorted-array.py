@@ -1,5 +1,5 @@
-class Solution(object):
-  def merge(self, nums1, m, nums2, n):
+class Solution(object
+  ___ merge(self, nums1, m, nums2, n
     """
     :type nums1: List[int]
     :type m: int
@@ -10,16 +10,16 @@ class Solution(object):
     end = m + n - 1
     m -= 1
     n -= 1
-    while end >= 0 and m >= 0 and n >= 0:
-      if nums1[m] > nums2[n]:
+    w___ end >= 0 and m >= 0 and n >= 0:
+      __ nums1[m] > nums2[n]:
         nums1[end] = nums1[m]
         m -= 1
-      else:
+      ____
         nums1[end] = nums2[n]
         n -= 1
       end -= 1
 
-    while n >= 0:
+    w___ n >= 0:
       nums1[end] = nums2[n]
       end -= 1
       n -= 1

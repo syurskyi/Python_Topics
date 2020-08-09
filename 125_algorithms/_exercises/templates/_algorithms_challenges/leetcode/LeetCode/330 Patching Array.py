@@ -24,8 +24,8 @@ Return 0.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def minPatches(self, nums, n):
+class Solution(object
+    ___ minPatches(self, nums, n
         """
         https://discuss.leetcode.com/topic/35494/solution-explanation
 
@@ -44,17 +44,17 @@ class Solution(object):
         cnt = 0
         cur_max = 0
         i = 0
-        while cur_max < n:
-            if i >= len(nums) or cur_max + 1 < nums[i]:
+        w___ cur_max < n:
+            __ i >= le.(nums) or cur_max + 1 < nums[i]:
                 cur_max += cur_max + 1
                 cnt += 1
-            else:
+            ____
                 cur_max += nums[i]
                 i += 1
 
-        return cnt
+        r_ cnt
 
-    def minPatches2(self, nums, n):
+    ___ minPatches2(self, nums, n
         """
         https://discuss.leetcode.com/topic/35494/solution-explanation
 
@@ -75,19 +75,19 @@ class Solution(object):
         cnt = 0
         cur_max = 0
         for elt in nums:
-            while cur_max + 1 < elt:
+            w___ cur_max + 1 < elt:
                 cur_max += cur_max + 1
                 cnt += 1
 
             cur_max += elt
 
         # after iterating all array element
-        while cur_max < n:
+        w___ cur_max < n:
             cur_max += cur_max + 1
             cnt += 1
 
-        return cnt
+        r_ cnt
 
 
-if __name__ == "__main__":
-    assert Solution().minPatches([1, 2, 2, 6, 34], 20) == 1
+__ __name__ __ "__main__":
+    assert Solution().minPatches([1, 2, 2, 6, 34], 20) __ 1

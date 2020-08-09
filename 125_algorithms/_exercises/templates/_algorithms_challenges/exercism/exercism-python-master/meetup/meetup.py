@@ -2,18 +2,18 @@
 a predefined natrual language description. e.g. 1st, 2nd, last, teenth
 """
 
-import datetime
+______ datetime
 
-def meetup_day(year, month, weekday, condition):
+___ meetup_day(year, month, weekday, condition
     """Returns date object for a given year, month, weekday and given condition
     Current conditions [1-4]th occurence, last, teenth
     """
     day = datetime.date(year, month, 1)
     # Tests everyday in the month until the weekday and condition are met
-    while day.month == month:
-        if day.weekday() == WEEKDAY_TO_NUM[weekday] and \
-            CONDITIONS[condition](day):
-            return day
+    w___ day.month __ month:
+        __ day.weekday() __ WEEKDAY_TO_NUM[weekday] and \
+            CONDITIONS[condition](day
+            r_ day
         day += datetime.timedelta(days=1)
     raise AssertionError("Not a valid meetup day")
 
@@ -27,20 +27,20 @@ WEEKDAY_TO_NUM = {'Monday'   : 0,
                   'Sunday'   : 6,
                  }
 
-def last(day):
+___ last(day
     """True on the last week of the month"""
-    return day.month != (day + datetime.timedelta(days=7)).month
+    r_ day.month != (day + datetime.timedelta(days=7)).month
 
-def nth(n):
+___ nth(n
     """Returns a function that is true on the nth week of a month"""
-    def nth_worker(day):
+    ___ nth_worker(day
         """True on the nth week of the month"""
-        return (day.day - 1) // 7 == n-1
-    return nth_worker
+        r_ (day.day - 1) // 7 __ n-1
+    r_ nth_worker
 
-def teenth(day):
+___ teenth(day
     """True on a days ending in -teenth, ie seventeenth"""
-    return 13 <= day.day and day.day <= 19
+    r_ 13 <= day.day and day.day <= 19
 
 # Maps condition to function test
 CONDITIONS = {'teenth': teenth,

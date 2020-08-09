@@ -1,5 +1,5 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-from game import TicTacToe
+from game ______ TicTacToe
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     game = TicTacToe()

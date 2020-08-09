@@ -3,8 +3,8 @@ Created on Sep 30, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def binaryGap(self, N):
+class Solution(object
+    ___ binaryGap(self, N
         """
         :type N: int
         :rtype: int
@@ -13,12 +13,12 @@ class Solution(object):
         i = 0
         prev = -1
         res = 0
-        while n > 0:
+        w___ n > 0:
             d = n % 2
-            if d == 1:
-                if prev >= 0:
+            __ d __ 1:
+                __ prev >= 0:
                     res = max(res, i-prev)
                 prev = i
             n //= 2
             i += 1
-        return res
+        r_ res

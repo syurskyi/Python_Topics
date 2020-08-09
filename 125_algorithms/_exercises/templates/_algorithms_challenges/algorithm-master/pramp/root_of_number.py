@@ -5,7 +5,7 @@
 ...     ((9, 3), 2.08),
 ...     ((7, 3), 1.913),
 ...     ((11, 4), 1.821),
-... ):
+...
 ...     res = root(*_in)
 ...     valid = abs(res - _out) < 0.001
 ...     if not valid: print(_in, res)
@@ -15,31 +15,31 @@ True
 """
 
 
-def root(x, n):
-    if not x or x in (0, 1):
-        return x
+___ root(x, n
+    __ not x or x in (0, 1
+        r_ x
 
     left = 0
     right = max(1, x)
 
-    while right - left > 1e-4:
+    w___ right - left > 1e-4:
         mid = (left + right) / 2.0
         product = get_product(mid, n)
 
-        if product < x:
+        __ product < x:
             left = mid
-        elif product > x:
+        ____ product > x:
             right = mid
-        else:
-            return mid
+        ____
+            r_ mid
 
-    return (left + right) / 2.0
+    r_ (left + right) / 2.0
 
 
-def get_product(x, n):
+___ get_product(x, n
     res = 1
 
-    for _ in range(n):
+    for _ in range(n
         res *= x
 
-    return res
+    r_ res

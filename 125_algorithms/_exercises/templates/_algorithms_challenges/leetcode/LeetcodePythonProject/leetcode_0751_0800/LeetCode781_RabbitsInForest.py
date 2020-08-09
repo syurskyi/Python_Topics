@@ -3,8 +3,8 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def numRabbits(self, answers):
+class Solution(object
+    ___ numRabbits(self, answers
         """
         :type answers: List[int]
         :rtype: int
@@ -13,15 +13,15 @@ class Solution(object):
         hashmap = {}
         for ans in answers:
             hashmap[ans] = hashmap.get(ans, 0)+1
-        for n, count in hashmap.items():
+        for n, count in hashmap.items(
             group = count//(n+1)
-            if count%(n+1) != 0:
+            __ count%(n+1) != 0:
                 res += (group+1)*(n+1)
-            else:
+            ____
                 res += group*(n+1)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1, 1, 1],
             [1, 1, 2],
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

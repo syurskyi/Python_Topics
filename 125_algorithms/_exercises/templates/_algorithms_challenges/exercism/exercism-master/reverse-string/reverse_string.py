@@ -1,2 +1,2 @@
-def reverse(input=''):
-    return ''.join(reversed(input))
+___ reverse(input=''
+    r_ ''.join(reversed(input))

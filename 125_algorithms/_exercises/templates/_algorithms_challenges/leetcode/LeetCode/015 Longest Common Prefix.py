@@ -4,54 +4,54 @@ Write a function to find the longest common prefix string amongst an array of st
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def longestCommonPrefix(self, strs):
-        if not strs: return ""
-        l = min(map(len, strs))
+class Solution(object
+    ___ longestCommonPrefix(self, strs
+        __ not strs: r_ ""
+        l = min(map(le., strs))
         i = 0
-        while i < l:
+        w___ i < l:
             char = strs[0][i]
             for s in strs:
-                if s[i] != char:
-                    return strs[0][:i]
+                __ s[i] != char:
+                    r_ strs[0][:i]
 
             i += 1
 
-        return strs[0][:i]
+        r_ strs[0][:i]
 
-    def longestCommonPrefixComplex(self, strs):
+    ___ longestCommonPrefixComplex(self, strs
         """
         O(k*n)
         :param strs: a list of string
         :return: string, prefix
         """
         # checking, otherwise: ValueError: min() arg is an empty sequence
-        if not strs:
-            return ""
+        __ not strs:
+            r_ ""
 
-        n = len(strs)
+        n = le.(strs)
 
         str_builder = ""
-        min_len = min(len(string) for string in strs)
-        for i in range(min_len):
+        min_len = min(le.(string) for string in strs)
+        for i in range(min_len
             char = strs[0][i]
 
             j = 0
-            while j < n:
+            w___ j < n:
                 try:
-                    if strs[j][i] != char: break
+                    __ strs[j][i] != char: break
                     j += 1
                 except IndexError:
                     break
 
-            if j == n:
+            __ j __ n:
                 str_builder += char
-            else:
+            ____
                 break
 
-        return str_builder
+        r_ str_builder
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     strs = ["abc", "abcd"]
     print Solution().longestCommonPrefix(strs)

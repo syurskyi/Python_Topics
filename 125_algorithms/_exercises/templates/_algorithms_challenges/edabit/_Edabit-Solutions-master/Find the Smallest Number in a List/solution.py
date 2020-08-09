@@ -1,2 +1,2 @@
-def find_smallest_num(lst):
-    return min(lst)
+___ find_smallest_num(lst
+    r_ min(lst)

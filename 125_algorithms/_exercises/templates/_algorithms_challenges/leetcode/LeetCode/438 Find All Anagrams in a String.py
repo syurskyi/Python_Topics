@@ -6,11 +6,11 @@ Strings consists of lowercase English letters only and the length of both string
 
 The order of output does not matter.
 """
-from collections import Counter
+from collections ______ Counter
 
 
 class Solution:
-    def findAnagrams(self, s, target):
+    ___ findAnagrams(self, s, target
         """
         Brute force: O(|target|) * O(cmp) * O(|s|)
         Counter: O(cmp) * O(|s|)
@@ -21,23 +21,23 @@ class Solution:
         """
         ret = []
         counter_target = Counter(target)
-        counter_cur = Counter(s[:len(target)])
-        if counter_cur == counter_target:
+        counter_cur = Counter(s[:le.(target)])
+        __ counter_cur __ counter_target:
             ret.append(0)
 
-        for idx in range(len(target), len(s)):
-            head = s[idx - len(target)]
+        for idx in range(le.(target), le.(s)):
+            head = s[idx - le.(target)]
             tail = s[idx]
             counter_cur[tail] += 1
             counter_cur[head] -= 1
-            if counter_cur[head] == 0:
+            __ counter_cur[head] __ 0:
                 del counter_cur[head]  # requried for comparison
-            if counter_cur == counter_target:
+            __ counter_cur __ counter_target:
                 # idx is the ending index, find the starting
-                ret.append(idx - len(target) + 1)
+                ret.append(idx - le.(target) + 1)
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().findAnagrams("cbaebabacd", "abc") == [0, 6]
+__ __name__ __ "__main__":
+    assert Solution().findAnagrams("cbaebabacd", "abc") __ [0, 6]

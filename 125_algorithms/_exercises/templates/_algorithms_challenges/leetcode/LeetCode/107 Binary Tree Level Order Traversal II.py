@@ -19,35 +19,35 @@ return its bottom-up level order traversal as:
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def levelOrderBottom(self, root):
+    ___ levelOrderBottom(self, root
         """
         bfs
         :param root: TreeNode
         :return: Integers
         """
-        if not root:
-            return []
+        __ not root:
+            r_ []
         result = []
         next_level = [root]
-        while next_level:
+        w___ next_level:
             current_level = next_level
             result.insert(0, map(lambda x: x.val, current_level))  # current level, only difference with Binary Tree Level Order Traversal I
 
             next_level = []
             for element in current_level:
-                if element.left:
+                __ element.left:
                     next_level.append(element.left)
-                if element.right:
+                __ element.right:
                     next_level.append(element.right)
-        return result
+        r_ result
 
-if __name__=="__main__":
+__ __name____"__main__":
     Solution().levelOrderBottom(TreeNode(1))
 
 

@@ -6,13 +6,13 @@ ValueError with a meaningfull error message if the
 input turns out to be malformed.
 """
 
-import unittest
+______ unittest
 
-from minesweeper import board
+from minesweeper ______ board
 
 
-class MinesweeperTest(unittest.TestCase):
-    def test_board1(self):
+class MinesweeperTest(unittest.TestCase
+    ___ test_board1(self
         inp = ["+------+",
                "| *  * |",
                "|  *   |",
@@ -31,7 +31,7 @@ class MinesweeperTest(unittest.TestCase):
                "+------+"]
         self.assertEqual(board(inp), out)
 
-    def test_board2(self):
+    ___ test_board2(self
         inp = ["+-----+",
                "| * * |",
                "|     |",
@@ -48,7 +48,7 @@ class MinesweeperTest(unittest.TestCase):
                "+-----+"]
         self.assertEqual(board(inp), out)
 
-    def test_board3(self):
+    ___ test_board3(self
         inp = ["+-----+",
                "| * * |",
                "+-----+"]
@@ -57,7 +57,7 @@ class MinesweeperTest(unittest.TestCase):
                "+-----+"]
         self.assertEqual(board(inp), out)
 
-    def test_board4(self):
+    ___ test_board4(self
         inp = ["+-+",
                "|*|",
                "| |",
@@ -74,7 +74,7 @@ class MinesweeperTest(unittest.TestCase):
                "+-+"]
         self.assertEqual(board(inp), out)
 
-    def test_board5(self):
+    ___ test_board5(self
         inp = ["+-+",
                "|*|",
                "+-+"]
@@ -83,7 +83,7 @@ class MinesweeperTest(unittest.TestCase):
                "+-+"]
         self.assertEqual(board(inp), out)
 
-    def test_board6(self):
+    ___ test_board6(self
         inp = ["+--+",
                "|**|",
                "|**|",
@@ -94,7 +94,7 @@ class MinesweeperTest(unittest.TestCase):
                "+--+"]
         self.assertEqual(board(inp), out)
 
-    def test_board7(self):
+    ___ test_board7(self
         inp = ["+--+",
                "|**|",
                "|**|",
@@ -105,7 +105,7 @@ class MinesweeperTest(unittest.TestCase):
                "+--+"]
         self.assertEqual(board(inp), out)
 
-    def test_board8(self):
+    ___ test_board8(self
         inp = ["+---+",
                "|***|",
                "|* *|",
@@ -118,7 +118,7 @@ class MinesweeperTest(unittest.TestCase):
                "+---+"]
         self.assertEqual(board(inp), out)
 
-    def test_board9(self):
+    ___ test_board9(self
         inp = ["+-----+",
                "|     |",
                "|   * |",
@@ -135,7 +135,7 @@ class MinesweeperTest(unittest.TestCase):
                "+-----+"]
         self.assertEqual(board(inp), out)
 
-    def test_different_len(self):
+    ___ test_different_len(self
         inp = ["+-+",
                "| |",
                "|*  |",
@@ -143,18 +143,18 @@ class MinesweeperTest(unittest.TestCase):
                "+-+"]
         self.assertRaises(ValueError, board, inp)
 
-    def test_faulty_border(self):
+    ___ test_faulty_border(self
         inp = ["+-----+",
                "*   * |",
                "+-- --+"]
         self.assertRaises(ValueError, board, inp)
 
-    def test_invalid_char(self):
+    ___ test_invalid_char(self
         inp = ["+-----+",
                "|X  * |",
                "+-----+"]
         self.assertRaises(ValueError, board, inp)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

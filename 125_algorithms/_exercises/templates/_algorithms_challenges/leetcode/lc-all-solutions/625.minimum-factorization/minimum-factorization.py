@@ -1,47 +1,47 @@
-class Solution(object):
-  # while loop
-  def smallestFactorization(self, a):
+class Solution(object
+  # w___ loop
+  ___ smallestFactorization(self, a
     """
     :type a: int
     :rtype: int
     """
-    if a < 10:
-      return a
+    __ a < 10:
+      r_ a
     path = []
     k = 9
-    while k > 1 and a > 1:
-      if a % k == 0:
+    w___ k > 1 and a > 1:
+      __ a % k __ 0:
         path.append(str(k))
         a /= k
-      else:
+      ____
         k -= 1
     path.sort()
-    if a > 9 or not path:
-      return 0
+    __ a > 9 or not path:
+      r_ 0
     ans = int("".join(path))
-    return ans if ans <= 0x7fffffff else 0
+    r_ ans __ ans <= 0x7fffffff else 0
 
   # normal DFS
-  def smallestFactorization(self, a):
+  ___ smallestFactorization(self, a
     """
     :type a: int
     :rtype: int
     """
-    if a <= 1:
-      return a
+    __ a <= 1:
+      r_ a
 
-    def dfs(num, path):
-      if num == 1:
+    ___ dfs(num, path
+      __ num __ 1:
         self.ans = min(self.ans, int("".join(sorted(path))))
-        return True
+        r_ True
       for i in reversed(range(2, 10)):
-        if num % i == 0:
+        __ num % i __ 0:
           path.append(str(i))
-          if dfs(num / i, path):
-            return True
+          __ dfs(num / i, path
+            r_ True
           path.pop()
-      return False
+      r_ False
 
     self.ans = float("inf")
     dfs(a, [])
-    return self.ans if self.ans != float("inf") and self.ans <= 0x7fffffff else 0
+    r_ self.ans __ self.ans != float("inf") and self.ans <= 0x7fffffff else 0

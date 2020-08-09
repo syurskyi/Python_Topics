@@ -1,6 +1,6 @@
-def largest_palindrome():
+___ largest_palindrome(
     pass
 
 
-def smallest_palindrome():
+___ smallest_palindrome(
     pass

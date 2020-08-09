@@ -1,21 +1,21 @@
 class Solution:
-    def letterCasePermutation(self, s):
+    ___ letterCasePermutation(self, s
         """
         :type s: str
         :rtype: List[str]
         """
-        if not s:
-            return ['']
+        __ not s:
+            r_ ['']
         ans = []
         self.dfs(s, 0, ans, [])
-        return ans
+        r_ ans
 
-    def dfs(self, s, i, ans, path):
-        if i == len(s):
+    ___ dfs(self, s, i, ans, path
+        __ i __ le.(s
             ans.append(''.join(path))
-            return
+            r_
 
-        options = [s[i]] if s[i].isdigit() else [s[i].lower(), s[i].upper()]
+        options = [s[i]] __ s[i].isdigit() else [s[i].lower(), s[i].upper()]
 
         for c in options:
             path.append(c)

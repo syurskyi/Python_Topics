@@ -5,65 +5,65 @@ Created on Jan 31, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def isSymmetricRecursive(self, root):
+class Solution(object
+    ___ isSymmetricRecursive(self, root
         """
         :type root: TreeNode
         :rtype: bool
         """
-        if not root: return True
-        return self.helper(root.left, root.left)
+        __ not root: r_ True
+        r_ self.helper(root.left, root.left)
     
-    def helper(self, left, right):
-        if not left and not right:
-            return True
-        elif not left or not right:
-            return False
-        elif left.val != right.val:
-            return False
-        else:
-            return self.helper(left.left, right.right) and\
+    ___ helper(self, left, right
+        __ not left and not right:
+            r_ True
+        ____ not left or not right:
+            r_ False
+        ____ left.val != right.val:
+            r_ False
+        ____
+            r_ self.helper(left.left, right.right) and\
                 self.helper(left.right, right.left)
     
-    def isSymmetric(self, root):
+    ___ isSymmetric(self, root
         """
         :type root: TreeNode
         :rtype: bool
         """
-        if not root: return True
+        __ not root: r_ True
         stack = []
-        if root.left:
-            if not root.right: return False
+        __ root.left:
+            __ not root.right: r_ False
             stack.append(root.left)
             stack.append(root.right)
-        elif root.right:
-            return False
-        while stack:
-            if len(stack)%2 != 0:
-                return False
+        ____ root.right:
+            r_ False
+        w___ stack:
+            __ le.(stack)%2 != 0:
+                r_ False
             right = stack.pop()
             left = stack.pop()
-            if right.val != left.val:
-                return False
-            if left.left:
-                if not right.right:
-                    return False
+            __ right.val != left.val:
+                r_ False
+            __ left.left:
+                __ not right.right:
+                    r_ False
                 stack.append(left.left)
                 stack.append(right.right)
-            elif right.right:
-                return False
-            if left.right:
-                if not right.left:
-                    return False
+            ____ right.right:
+                r_ False
+            __ left.right:
+                __ not right.left:
+                    r_ False
                 stack.append(left.right)
                 stack.append(right.left)
-            elif right.left:
-                return False
-        return True
+            ____ right.left:
+                r_ False
+        r_ True
         

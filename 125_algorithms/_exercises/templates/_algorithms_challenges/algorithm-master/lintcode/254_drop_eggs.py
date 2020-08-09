@@ -25,17 +25,17 @@ class Solution:
     @param: n: An integer
     @return: The sum of a and b
     """
-    def dropEggs(self, n):
-        if n <= 0:
-            return 0
+    ___ dropEggs(self, n
+        __ n <= 0:
+            r_ 0
 
         _sum = 0
-        for i in range(n):
+        for i in range(n
             _sum += i
-            if _sum >= n:
-                return i
+            __ _sum >= n:
+                r_ i
 
-        return n
+        r_ n
 
 
 """
@@ -47,7 +47,7 @@ x(x + 1) / 2 >= n
 
 so `x` can start from `sqrt(2n)`
 """
-from math import sqrt
+from ma__ ______ sqrt
 
 
 class Solution:
@@ -55,12 +55,12 @@ class Solution:
     @param: n: An integer
     @return: The sum of a and b
     """
-    def dropEggs(self, n):
-        if n <= 0:
-            return 0
+    ___ dropEggs(self, n
+        __ n <= 0:
+            r_ 0
 
         x = int(sqrt(2 * n))
-        while x * (x + 1) // 2 < n:
+        w___ x * (x + 1) // 2 < n:
             x += 1
 
-        return x
+        r_ x

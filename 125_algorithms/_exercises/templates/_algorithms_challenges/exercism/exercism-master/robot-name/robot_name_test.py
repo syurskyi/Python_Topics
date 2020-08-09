@@ -1,27 +1,27 @@
-import unittest
+______ unittest
 
-from robot import Robot
-import random
+from robot ______ Robot
+______ random
 
 
-class RobotTest(unittest.TestCase):
+class RobotTest(unittest.TestCase
     name_re = r'^[A-Z]{2}\d{3}$'
 
-    def test_has_name(self):
+    ___ test_has_name(self
         self.assertRegex(Robot().name, self.name_re)
 
-    def test_name_sticks(self):
+    ___ test_name_sticks(self
         robot = Robot()
         robot.name
         self.assertEqual(robot.name, robot.name)
 
-    def test_different_robots_have_different_names(self):
+    ___ test_different_robots_have_different_names(self
         self.assertNotEqual(
             Robot().name,
             Robot().name
         )
 
-    def test_rest_name(self):
+    ___ test_rest_name(self
         # Set a seed
         seed = "Totally random."
 
@@ -42,5 +42,5 @@ class RobotTest(unittest.TestCase):
         self.assertRegex(name2, self.name_re)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

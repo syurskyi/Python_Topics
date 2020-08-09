@@ -1,9 +1,9 @@
-from collections import deque
+from collections ______ deque
 
 
-class PhoneDirectory(object):
+class PhoneDirectory(object
 
-  def __init__(self, maxNumbers):
+  ___ __init__(self, maxNumbers
     """
     Initialize your data structure here
     @param maxNumbers - The maximum numbers that can be stored in the phone directory.
@@ -12,32 +12,32 @@ class PhoneDirectory(object):
     self.taken = [True] * maxNumbers
     self.q = deque([i for i in range(0, maxNumbers)])
 
-  def get(self):
+  ___ get(self
     """
     Provide a number which is not assigned to anyone.
     @return - Return an available number. Return -1 if none is available.
     :rtype: int
     """
-    if self.q:
+    __ self.q:
       self.taken[self.q[0]] = False
-      return self.q.popleft()
-    return -1
+      r_ self.q.popleft()
+    r_ -1
 
-  def check(self, number):
+  ___ check(self, number
     """
     Check if a number is available or not.
     :type number: int
     :rtype: bool
     """
-    return self.taken[number]
+    r_ self.taken[number]
 
-  def release(self, number):
+  ___ release(self, number
     """
     Recycle or release a number.
     :type number: int
     :rtype: void
     """
-    if not self.taken[number]:
+    __ not self.taken[number]:
       self.taken[number] = True
       self.q.append(number)
 

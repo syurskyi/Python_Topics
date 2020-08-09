@@ -1,13 +1,13 @@
 class Solution:
-    def generateMatrix(self, n):
+    ___ generateMatrix(self, n
         """
         :type n: int
         :rtype: List[List[int]]
         """
-        if not n or n < 1:
-            return []
-        if n == 1:
-            return [[1]]
+        __ not n or n < 1:
+            r_ []
+        __ n __ 1:
+            r_ [[1]]
 
         ans = [[0] * n for _ in range(n)]
         delta = (
@@ -16,17 +16,17 @@ class Solution:
         )
         x = y = turn = 0
 
-        for i in range(1, n * n + 1):
+        for i in range(1, n * n + 1
             ans[x][y] = i
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]
 
-            if not (0 <= _x < n and 0 <= _y < n) or ans[_x][_y] != 0:
-                turn = (turn + 1) % len(delta)
+            __ not (0 <= _x < n and 0 <= _y < n) or ans[_x][_y] != 0:
+                turn = (turn + 1) % le.(delta)
                 _x = x + delta[turn][0]
                 _y = y + delta[turn][1]
 
             x = _x
             y = _y
 
-        return ans
+        r_ ans

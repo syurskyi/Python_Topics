@@ -25,7 +25,7 @@ class Solution:
         ( 0,  1),
     )
 
-    def containVirus(self, G):
+    ___ containVirus(self, G
         """
         :type G: List[List[int]]
         :rtype: int
@@ -33,65 +33,65 @@ class Solution:
 
         walls = 0
 
-        if not G or not G[0]:
-            return walls
+        __ not G or not G[0]:
+            r_ walls
 
-        while True:
+        w___ True:
             _walls = self.build_walls(G)
-            if _walls == 0:
+            __ _walls __ 0:
                 break
             walls += _walls
 
-        return walls
+        r_ walls
 
-    def build_walls(self, G):
-        m, n = len(G), len(G[0])
+    ___ build_walls(self, G
+        m, n = le.(G), le.(G[0])
         ex_virus = []
         spreading = []
         walls = []
         visited = [[False] * n for _ in range(m)]
 
-        for x in range(m):
-            for y in range(n):
-                if G[x][y] == self.VIRUS and not visited[x][y]:
+        for x in range(m
+            for y in range(n
+                __ G[x][y] __ self.VIRUS and not visited[x][y]:
                     ex_virus.append(set())
                     spreading.append(set())
                     walls.append(0)
                     self.dfs(x, y, G, visited, ex_virus, spreading, walls)
 
         _max_save = _max_i = -1
-        s = len(spreading)
-        for i in range(s):
-            t = len(spreading[i])
-            if t > _max_save:
+        s = le.(spreading)
+        for i in range(s
+            t = le.(spreading[i])
+            __ t > _max_save:
                 _max_save = t
                 _max_i = i
 
-        if _max_save == -1:
-            return 0
+        __ _max_save __ -1:
+            r_ 0
 
-        for i in range(s):
-            if i == _max_i:
+        for i in range(s
+            __ i __ _max_i:
                 for x, y in ex_virus[i]:
                     G[x][y] = self.EX_VIRUS
-            else:
+            ____
                 for x, y in spreading[i]:
                     G[x][y] = self.VIRUS
 
-        return walls[_max_i]
+        r_ walls[_max_i]
 
-    def dfs(self, x, y, G, visited, ex_virus, spreading, walls):
-        m, n = len(G), len(G[0])
-        if not (0 <= x < m and 0 <= y < n) or visited[x][y]:
-            return
+    ___ dfs(self, x, y, G, visited, ex_virus, spreading, walls
+        m, n = le.(G), le.(G[0])
+        __ not (0 <= x < m and 0 <= y < n) or visited[x][y]:
+            r_
 
-        if G[x][y] == self.VIRUS:
+        __ G[x][y] __ self.VIRUS:
             visited[x][y] = True
             ex_virus[-1].add((x, y))
             for dx, dy in self.V:
                 _x = x + dx
                 _y = y + dy
                 self.dfs(_x, _y, G, visited, ex_virus, spreading, walls)
-        elif G[x][y] == self.NORMAL:
+        ____ G[x][y] __ self.NORMAL:
             spreading[-1].add((x, y))
             walls[-1] += 1

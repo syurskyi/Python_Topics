@@ -3,37 +3,37 @@ Created on Sep 10, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def maximumProduct(self, nums):
+class Solution(object
+    ___ maximumProduct(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums or len(nums) < 3:
-            return 0
+        __ not nums or le.(nums) < 3:
+            r_ 0
         s1, s2 = float('inf'), float('inf')
         l1, l2, l3 = float('-inf'), float('-inf'), float('-inf')
         for num in nums:
-            if num < s1:
+            __ num < s1:
                 s2 = s1
                 s1 = num
-            elif num < s2:
+            ____ num < s2:
                 s2 = num
-            if num > l1:
+            __ num > l1:
                 l3 = l2
                 l2 = l1
                 l1 = num
-            elif num > l2:
+            ____ num > l2:
                 l3 = l2
                 l2 = num
-            elif num > l3:
+            ____ num > l3:
                 l3 = num
         res = float('-inf')
-        for a1, a2, a3 in (l1, l2, l3), (s1, s2, l1):
+        for a1, a2, a3 in (l1, l2, l3), (s1, s2, l1
             res = max(res, a1*a2*a3)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1,2,3],
             [1,2,3,4],
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

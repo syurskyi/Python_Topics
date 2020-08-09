@@ -34,12 +34,12 @@ Note:
 piles.length <= H <= 10^9
 1 <= piles[i] <= 10^9
 """
-from typing import List
-import math
+from typing ______ List
+______ ma__
 
 
 class Solution:
-    def minEatingSpeed(self, piles: List[int], H: int) -> int:
+    ___ minEatingSpeed(self, piles: List[int], H: int) -> int:
         """
         validation:
             each piles  ceil(n/K)
@@ -49,24 +49,24 @@ class Solution:
 
         O(log n * n)
         """
-        if len(piles) > H:
-            return None
+        __ le.(piles) > H:
+            r_ None
 
-        n = len(piles)
+        n = le.(piles)
         hi = max(piles) + 1
         lo = 1
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo + hi) // 2
-            if sum(
-                math.ceil(piles[i] / mid)
+            __ sum(
+                ma__.ceil(piles[i] / mid)
                 for i in range(n)
             ) > H:
                 lo = mid + 1
-            else:
+            ____
                 hi = mid
 
-        return lo
+        r_ lo
 
 
-if __name__ == "__main__":
-    assert Solution().minEatingSpeed([3,6,7,11], 8) == 4
+__ __name__ __ "__main__":
+    assert Solution().minEatingSpeed([3,6,7,11], 8) __ 4

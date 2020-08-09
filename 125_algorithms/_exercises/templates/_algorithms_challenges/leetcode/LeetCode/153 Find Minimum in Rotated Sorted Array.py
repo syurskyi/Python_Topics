@@ -7,13 +7,13 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.
 """
-import sys
+______ sys
 
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def findMin(self, A):
+class Solution(object
+    ___ findMin(self, A
         """
         similar to find target in rotated sorted array
 
@@ -22,21 +22,21 @@ class Solution(object):
         :return: an integer
         """
         lo = 0
-        hi = len(A)
+        hi = le.(A)
         mini = sys.maxint
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo+hi)/2
             mini = min(mini, A[mid])
-            if A[lo] <= A[mid] <= A[hi-1]:
-                return min(mini, A[lo])
-            elif A[lo] > A[mid] < A[hi-1]:
+            __ A[lo] <= A[mid] <= A[hi-1]:
+                r_ min(mini, A[lo])
+            ____ A[lo] > A[mid] < A[hi-1]:
                 hi = mid
-            else:
+            ____
                 lo = mid+1
 
-        return mini
+        r_ mini
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     num = [7, 1, 2, 3, 4, 5, 6]
-    assert Solution().findMin(num) == 1
+    assert Solution().findMin(num) __ 1

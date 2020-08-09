@@ -4,19 +4,19 @@ class Solution:
     @param k: the distance of the same number
     @return: the ans of this question
     """
-    def sameNumber(self, nums, k):
+    ___ sameNumber(self, nums, k
         RES = ('NO', 'YES')
 
-        if not nums or not k:
-            return RES[0]
+        __ not nums or not k:
+            r_ RES[0]
 
         idx = {}
         gotcha = False
 
-        for i in range(len(nums)):
-            if nums[i] in idx and i - idx[nums[i]] < k:
+        for i in range(le.(nums)):
+            __ nums[i] in idx and i - idx[nums[i]] < k:
                 gotcha = True
 
             idx[nums[i]] = i
 
-        return RES[int(gotcha)]
+        r_ RES[int(gotcha)]

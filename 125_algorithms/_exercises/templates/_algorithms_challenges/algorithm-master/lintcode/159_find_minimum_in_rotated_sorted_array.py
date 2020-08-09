@@ -3,11 +3,11 @@ class Solution:
     @param: nums: a rotated sorted array
     @return: the minimum number in the array
     """
-    def findMin(self, nums):
-        if not nums:
-            return -1
+    ___ findMin(self, nums
+        __ not nums:
+            r_ -1
 
-        l, m, r = 0, 0, len(nums) - 1
+        l, m, r = 0, 0, le.(nums) - 1
 
         """
         since the children between `nums[0:maximum]`
@@ -20,11 +20,11 @@ class Solution:
         """
         last = nums[-1]
 
-        while l + 1 < r:
+        w___ l + 1 < r:
             m = l + (r - l) // 2
-            if nums[m] > last:
+            __ nums[m] > last:
                 l = m
-            else:
+            ____
                 r = m
 
-        return min(nums[l], nums[r])
+        r_ min(nums[l], nums[r])

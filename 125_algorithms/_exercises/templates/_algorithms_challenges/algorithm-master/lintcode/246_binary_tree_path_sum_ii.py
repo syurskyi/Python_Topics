@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -13,21 +13,21 @@ class Solution:
     @param: target: An integer
     @return: all valid paths
     """
-    def binaryTreePathSum2(self, root, target):
+    ___ binaryTreePathSum2(self, root, target
         ans = []
         self.dfs(root, target, ans, [])
-        return ans
+        r_ ans
 
-    def dfs(self, node, target, ans, path):
-        if not node:
-            return
+    ___ dfs(self, node, target, ans, path
+        __ not node:
+            r_
 
         path.append(node.val)
 
         remaining = target
-        for i in range(len(path) - 1, -1, -1):
+        for i in range(le.(path) - 1, -1, -1
             remaining -= path[i]
-            if remaining == 0:
+            __ remaining __ 0:
                 ans.append(path[i:])
 
         self.dfs(node.left, target, ans, path)

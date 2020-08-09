@@ -4,34 +4,34 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def numIslands(self, grid):
+class Solution(object
+    ___ numIslands(self, grid
         """
         :type grid: List[List[str]]
         :rtype: int
         """
-        if not grid: return 0
-        m, n = len(grid), len(grid[0])
+        __ not grid: r_ 0
+        m, n = le.(grid), le.(grid[0])
         res = 0
-        for i in range(m):
-            for j in range(n):
-                if grid[i][j] == '1':
+        for i in range(m
+            for j in range(n
+                __ grid[i][j] __ '1':
                     grid[i][j] = '#'
                     res += 1
                     self.bfs(grid, i, j)
-        return res
+        r_ res
     
-    def bfs(self, grid, i, j):
+    ___ bfs(self, grid, i, j
         queue = [(i, j)]
-        m, n = len(grid), len(grid[0])
-        while queue:
+        m, n = le.(grid), le.(grid[0])
+        w___ queue:
             i, j = queue.pop(0)
-            for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1):
-                if 0 <= x < m and 0 <= y < n and grid[x][y] == '1':
+            for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1
+                __ 0 <= x < m and 0 <= y < n and grid[x][y] __ '1':
                     grid[x][y] = '#'
                     queue.append([x, y])
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             [
 #                 '11110',
@@ -52,5 +52,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

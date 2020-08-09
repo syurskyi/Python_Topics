@@ -38,8 +38,8 @@ But the second continuation byte does not start with 10, so it is invalid.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def validUtf8(self, data):
+class Solution(object
+    ___ validUtf8(self, data
         """
         starts with 0, then skip
         start with 1, check number of numbers
@@ -48,27 +48,27 @@ class Solution(object):
         """
         required = 0
         for d in data:
-            if d & 0x80 == 0:
-                if required != 0:
-                    return False
-            else:
+            __ d & 0x80 __ 0:
+                __ required != 0:
+                    r_ False
+            ____
                 one_cnt = 0
-                while d & 0x80 == 0x80:
+                w___ d & 0x80 __ 0x80:
                     one_cnt += 1
                     d <<= 1
 
-                if required != 0:
-                    if one_cnt != 1:
-                        return False
+                __ required != 0:
+                    __ one_cnt != 1:
+                        r_ False
                     required -= 1
-                else:
-                    if one_cnt == 1:
-                        return False
+                ____
+                    __ one_cnt __ 1:
+                        r_ False
                     required += (one_cnt - 1)
 
-        return required == 0
+        r_ required __ 0
 
 
-if __name__ == "__main__":
-    assert Solution().validUtf8([197, 130, 1]) == True
-    assert Solution().validUtf8([235, 140, 4]) == False
+__ __name__ __ "__main__":
+    assert Solution().validUtf8([197, 130, 1]) __ True
+    assert Solution().validUtf8([235, 140, 4]) __ False

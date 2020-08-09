@@ -4,8 +4,8 @@ Created on Sep 5, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxCount(self, m, n, ops):
+class Solution(object
+    ___ maxCount(self, m, n, ops
         """
         :type m: int
         :type n: int
@@ -16,13 +16,13 @@ class Solution(object):
         for a, b in ops:
             minA = min(minA, a)
             minB = min(minB, b)
-        return min(minA, m)*min(minB, n)
+        r_ min(minA, m)*min(minB, n)
     
-    def test(self):
+    ___ test(self
         testCases = [
             
         ]
         
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

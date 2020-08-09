@@ -1,45 +1,45 @@
-from itertools import chain
+from itertools ______ chain
 
-class CustomSet(object):
-    def __init__(self, elements=[]):
+class CustomSet(object
+    ___ __init__(self, elements=[]
         self._store = dict()
         for e in elements:
             self.add(e)
 
-    def isempty(self):
-        return len(self._store) <= 0
+    ___ isempty(self
+        r_ le.(self._store) <= 0
 
-    def __contains__(self, element):
-        return element in self._store
+    ___ __contains__(self, element
+        r_ element in self._store
 
-    def issubset(self, other):
-        return all(e in other for e in self._store.values())
+    ___ issubset(self, other
+        r_ all(e in other for e in self._store.values())
 
-    def isdisjoint(self, other):
-        return not any(e in other for e in self._store.values())
+    ___ isdisjoint(self, other
+        r_ not any(e in other for e in self._store.values())
 
-    def __eq__(self, other):
-        return self.issubset(other) and other.issubset(self)
+    ___ __eq__(self, other
+        r_ self.issubset(other) and other.issubset(self)
 
-    def add(self, element):
+    ___ add(self, element
         self._store[element] = element
 
-    def intersection(self, other):
+    ___ intersection(self, other
         intersection = CustomSet()
-        for e in self._store.values():
-            if e in other:
+        for e in self._store.values(
+            __ e in other:
                 intersection.add(e)
-        return intersection
+        r_ intersection
 
-    def __sub__(self, other):
+    ___ __sub__(self, other
         difference = CustomSet() 
-        for e in self._store.values():
-            if e not in other:
+        for e in self._store.values(
+            __ e not in other:
                 difference.add(e)
-        return difference
+        r_ difference
 
-    def __add__(self, other):
+    ___ __add__(self, other
         intersection = CustomSet()
         for e in chain(self._store.values(), other._store.values()):
             intersection.add(e)
-        return intersection
+        r_ intersection

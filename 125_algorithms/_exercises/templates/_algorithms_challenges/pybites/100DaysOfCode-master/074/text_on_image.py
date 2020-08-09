@@ -1,8 +1,8 @@
-import os
-import textwrap
+______ os
+______ textwrap
 
-from PIL import Image, ImageDraw, ImageFont
-import requests
+from PIL ______ Image, ImageDraw, ImageFont
+______ requests
 
 FONT_SIZE = 30
 FONT = ImageFont.truetype('opensans.ttf', FONT_SIZE)
@@ -16,40 +16,40 @@ IN_FILE = 'input.png'
 OUT_FILE = 'output.png'
 
 
-def download_url(url, in_file=IN_FILE, chunk_size=2000):
+___ download_url(url, in_file=IN_FILE, chunk_size=2000
     print('Downloading {}'.format(url))
     r = requests.get(url, stream=True)
     print('Saving as {}'.format(in_file))
 
     with open(in_file, 'wb') as fd:
-        for chunk in r.iter_content(chunk_size):
+        for chunk in r.iter_content(chunk_size
             fd.write(chunk)
 
-    return in_file
+    r_ in_file
 
 
-def get_input(prompt):
+___ get_input(prompt
     # https://stackoverflow.com/questions/30239092/how-to-get-multiline-input-from-user
     print(prompt)
     lines = []
-    while True:
+    w___ True:
         line = input()
-        if line:
+        __ line:
             line = textwrap.fill(line, width=TEXT_WIDTH)
             lines.append(line)
-        else:
+        ____
             break
-    return '\n\n'.join(lines)
+    r_ '\n\n'.join(lines)
 
 
-def _resize(img):
+___ _resize(img
     basewidth = RESIZE_WIDTH
     wpercent = basewidth / float(img.size[0])
     hsize = int(float(img.size[1]) * float(wpercent))
-    return img.resize((basewidth, hsize), Image.ANTIALIAS)
+    r_ img.resize((basewidth, hsize), Image.ANTIALIAS)
 
 
-def create_img_with_text(base_img, input_text, out_file=OUT_FILE):
+___ create_img_with_text(base_img, input_text, out_file=OUT_FILE
     base = Image.open(base_img).convert('RGBA')
     base = _resize(base)
 
@@ -61,19 +61,19 @@ def create_img_with_text(base_img, input_text, out_file=OUT_FILE):
     out = Image.alpha_composite(base, txt)
     out.save(out_file)
 
-    return out_file
+    r_ out_file
 
 
-if __name__ == '__main__':
-    resource = input('Image file (local or url to download): ')
+__ __name__ __ '__main__':
+    resource = input('Image file (local or url to download ')
 
-    if os.path.isfile(resource):
+    __ os.path.isfile(resource
         base_img = resource
-    else:
+    ____
         base_img = download_url(resource)
 
     prompt = 'Text to put on image '
-    prompt += '(max {} chars, double enter = end): '.format(TEXT_CHAR_LIMIT)
+    prompt += '(max {} chars, double enter = end '.format(TEXT_CHAR_LIMIT)
     input_text = get_input(prompt)
     input_text = input_text[:TEXT_CHAR_LIMIT]
 

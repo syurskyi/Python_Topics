@@ -9,13 +9,13 @@ Show Company Tags
 Show Tags
 Show Similar Problems
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def lengthOfLongestSubstringKDistinct(self, s, k):
+class Solution(object
+    ___ lengthOfLongestSubstringKDistinct(self, s, k
         """
         Brute force: O(n^2 * n)
 
@@ -27,21 +27,21 @@ class Solution(object):
         st = 0  # start
         counter = defaultdict(int)
         maxa = 0
-        for idx, val in enumerate(s):
-            if counter[val] == 0:
+        for idx, val in enumerate(s
+            __ counter[val] __ 0:
                 k -= 1
 
             counter[val] += 1
-            while k < 0:
+            w___ k < 0:
                 counter[s[st]] -= 1
-                if counter[s[st]] == 0:
+                __ counter[s[st]] __ 0:
                     k += 1
                 st += 1
 
             maxa = max(maxa, idx - st + 1)
 
-        return maxa
+        r_ maxa
 
 
-if __name__ == "__main__":
-    assert Solution().lengthOfLongestSubstringKDistinct("eceba", 2) == 3
+__ __name__ __ "__main__":
+    assert Solution().lengthOfLongestSubstringKDistinct("eceba", 2) __ 3

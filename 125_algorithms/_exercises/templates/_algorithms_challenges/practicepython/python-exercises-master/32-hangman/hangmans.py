@@ -1,5 +1,5 @@
-def getHangMans():
-    return [
+___ getHangMans(
+    r_ [
     '''
     
         ____

@@ -1,5 +1,5 @@
-class Solution(object):
-  def lowestCommonAncestor(self, root, p, q):
+class Solution(object
+  ___ lowestCommonAncestor(self, root, p, q
     """
     :type root: TreeNode
     :type p: TreeNode
@@ -7,9 +7,9 @@ class Solution(object):
     :rtype: TreeNode
     """
     a, b = sorted([p.val, q.val])
-    while not a <= root.val <= b:
-      if a > root.val:
+    w___ not a <= root.val <= b:
+      __ a > root.val:
         root = root.right
-      else:
+      ____
         root = root.left
-    return root
+    r_ root

@@ -1,22 +1,22 @@
-def index_equals_value_search(nums):
-    if not nums:
-        return -1
+___ index_equals_value_search(nums
+    __ not nums:
+        r_ -1
 
-    left, right = 0, len(nums) - 1
+    left, right = 0, le.(nums) - 1
 
-    while left + 1 < right:
+    w___ left + 1 < right:
         mid = (left + right) // 2
-        if nums[left] == left:  # lowest index
-            return left
-        if nums[mid] == mid:
-            return mid
-        if nums[mid] < mid:
+        __ nums[left] __ left:  # lowest index
+            r_ left
+        __ nums[mid] __ mid:
+            r_ mid
+        __ nums[mid] < mid:
             left = mid
-        else:
+        ____
             right = mid
 
-    for mid in (left, right):
-        if nums[mid] == mid:
-            return mid
+    for mid in (left, right
+        __ nums[mid] __ mid:
+            r_ mid
 
-    return -1
+    r_ -1

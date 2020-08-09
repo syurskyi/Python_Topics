@@ -4,35 +4,35 @@ Created on Mar 30, 2018
 @author: tongq
 '''
 # Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
+class Interval(object
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
 
-class Solution(object):
-    def employeeFreeTime(self, schedule):
+class Solution(object
+    ___ employeeFreeTime(self, schedule
         """
         :type schedule: List[List[Interval]]
         :rtype: List[Interval]
         """
-        import heapq
+        ______ heapq
         heap = []
         for arr in schedule:
             for inter in arr:
                 heapq.heappush(heap, [inter.start, inter.end])
         temp = heapq.heappop(heap)
         res = []
-        while heap:
-            if temp[1] < heap[0][0]:
+        w___ heap:
+            __ temp[1] < heap[0][0]:
                 res.append(Interval(temp[1], heap[0][0]))
                 temp = heapq.heappop(heap)
-            else:
-                if temp[1] < heap[0][1]:
+            ____
+                __ temp[1] < heap[0][1]:
                     temp = heap[0]
                 heapq.heappop(heap) 
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [[1,2],[5,6]],
@@ -54,5 +54,5 @@ class Solution(object):
             print('result: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

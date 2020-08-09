@@ -3,27 +3,27 @@ Created on May 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def restoreIpAddresses(self, s):
+class Solution(object
+    ___ restoreIpAddresses(self, s
         """
         :type s: str
         :rtype: List[str]
         """
-        if len(s) > 12: return []
+        __ le.(s) > 12: r_ []
         res = []
         self.helper(res, [], s, 0)
-        return res
+        r_ res
     
-    def helper(self, res, curr, s, ind):
-        if ind == len(s) and len(curr) == 4:
+    ___ helper(self, res, curr, s, ind
+        __ ind __ le.(s) and le.(curr) __ 4:
             res.append('.'.join(curr))
-        if ind >= len(s):
-            return
-        for i in range(ind+1, ind+4):
+        __ ind >= le.(s
+            r_
+        for i in range(ind+1, ind+4
             sub = s[ind:i]
-            if sub[0] == '0' and len(sub) > 1:
+            __ sub[0] __ '0' and le.(sub) > 1:
                 break
-            if int(sub) > 255:
+            __ int(sub) > 255:
                 break
             curr.append(sub)
             self.helper(res, curr, s, i)

@@ -1,4 +1,4 @@
-from functools import partial
+from functools ______ partial
 
 # create 2 partials:
 # - 'rounder_int' rounds to int (0 places)

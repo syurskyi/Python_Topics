@@ -25,8 +25,8 @@ The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, wh
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def findNthDigit(self, n):
+class Solution(object
+    ___ findNthDigit(self, n
         """
         Math, quotient and remainder
         :type n: int
@@ -34,7 +34,7 @@ class Solution(object):
         """
         digit_cnt = 1
         num_cnt = 9
-        while n > digit_cnt * num_cnt:
+        w___ n > digit_cnt * num_cnt:
             n -= digit_cnt * num_cnt
             digit_cnt += 1
             num_cnt *= 10
@@ -42,4 +42,4 @@ class Solution(object):
         n -= 1  # debugging: without -1, it just pass over the target digit
         q, r = n / digit_cnt, n % digit_cnt
         target = num_cnt / 9 + q
-        return int(str(target)[r])
+        r_ int(str(target)[r])

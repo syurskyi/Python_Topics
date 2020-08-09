@@ -4,15 +4,15 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def repeatedSubstringPattern(self, s):
-        n = len(s)
-        for i in range(1, n//2+2):
+class Solution(object
+    ___ repeatedSubstringPattern(self, s
+        n = le.(s)
+        for i in range(1, n//2+2
             sub = s[:i]
-            if len(s)%len(sub) == 0:
+            __ le.(s)%le.(sub) __ 0:
                 j = i
-                while j+len(sub) <= n and s[j:j+len(sub)]==sub:
-                    j += len(sub)
-                    if j == n:
-                        return True
-        return False
+                w___ j+le.(sub) <= n and s[j:j+le.(sub)]__sub:
+                    j += le.(sub)
+                    __ j __ n:
+                        r_ True
+        r_ False

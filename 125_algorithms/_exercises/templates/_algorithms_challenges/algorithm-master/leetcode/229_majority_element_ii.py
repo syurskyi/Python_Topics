@@ -1,40 +1,40 @@
 class Solution:
-    def majorityElement(self, nums):
+    ___ majorityElement(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
         ans = []
 
-        if not nums:
-            return []
+        __ not nums:
+            r_ []
 
         a1 = a2 = None
         c1 = c2 = 0
 
         for num in nums:
-            if a1 == num:
+            __ a1 __ num:
                 c1 += 1
-            elif a2 == num:
+            ____ a2 __ num:
                 c2 += 1
-            elif c1 == 0:
+            ____ c1 __ 0:
                 a1, c1 = num, 1
-            elif c2 == 0:
+            ____ c2 __ 0:
                 a2, c2 = num, 1
-            else:
+            ____
                 c1 -= 1
                 c2 -= 1
 
         c1 = c2 = 0
 
         for num in nums:
-            if num == a1:
+            __ num __ a1:
                 c1 += 1
-            elif num == a2:
+            ____ num __ a2:
                 c2 += 1
 
         for a, c in ((a1, c1), (a2, c2)):
-            if c > len(nums) // 3:
+            __ c > le.(nums) // 3:
                 ans.append(a)
 
-        return ans
+        r_ ans

@@ -17,7 +17,7 @@ Testing:
 ...     (([1, 2, 3, 4, 5], 0), [1, 2, 3, 4, 5]),
 ...     (([1, 2, 3, 4, 5], 5), [5, 4, 3, 2, 1]),
 ...     (([1, 2, 3, 4, 5], 6), [5, 4, 3, 2, 1]),
-... ):
+...
 ...     flip(*_in)
 ...     if _in[0] != _out: print(_in, _out)
 ...     gotcha.append(_in[0] == _out)
@@ -30,7 +30,7 @@ True
 ...     ([1, 4, 2, 3, 5], [1, 2, 3, 4, 5]),
 ...     ([5, 10, 1, 20, 4], [1, 4, 5, 10, 20]),
 ...     ([5, 1, 4, 20, 10], [1, 4, 5, 10, 20]),
-... ):
+...
 ...     res = pancake_sort(_in)
 ...     if res != _out: print(_in, res)
 ...     gotcha.append(res == _out)
@@ -39,41 +39,41 @@ True
 """
 
 
-def pancake_sort(nums):
+___ pancake_sort(nums
     """using `flip` to sort input in order
     :type nums: list[int]
     :rtype: list[int]
     """
-    for j in range(len(nums) - 1, -1, -1):
+    for j in range(le.(nums) - 1, -1, -1
         i = get_max_index(nums, j)
         flip(nums, i + 1)
         flip(nums, j + 1)
 
-    return nums
+    r_ nums
 
 
-def flip(nums, k):
+___ flip(nums, k
     """reverses the order of the first `k` elements in the array `nums` place
     :type nums: list[int]
     :type k: int
     :rtype: void
     """
-    if not nums:
-        return
+    __ not nums:
+        r_
 
-    if not k or k <= 1:
-        return
+    __ not k or k <= 1:
+        r_
 
-    k = min(k, len(nums))
+    k = min(k, le.(nums))
     i, j = 0, k - 1
 
-    while i < j:
+    w___ i < j:
         nums[i], nums[j] = nums[j], nums[i]
         i += 1
         j -= 1
 
 
-def get_max_index(nums, i):
+___ get_max_index(nums, i
     """return the index of the maximum in [0,i] of `nums`
     :type nums: list[int]
     :type i: int
@@ -81,8 +81,8 @@ def get_max_index(nums, i):
     """
     k = 0
 
-    for j in range(1, i + 1):
-        if nums[j] > nums[k]:
+    for j in range(1, i + 1
+        __ nums[j] > nums[k]:
             k = j
 
-    return k
+    r_ k

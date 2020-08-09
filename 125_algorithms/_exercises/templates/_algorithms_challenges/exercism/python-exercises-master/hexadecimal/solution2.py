@@ -9,7 +9,7 @@ hexchars_to_int.update(zip('abcdef', range(10, 16)))
 hexchars_to_int.update(zip('ABCDEFG', range(10, 16)))
 
 
-def hexa(hexstring):
+___ hexa(hexstring
     result = 0
     hex_of_lastseen = None
     try:
@@ -18,7 +18,7 @@ def hexa(hexstring):
     except KeyError:
         # not a valid hexchar
         hex_of_lastseen = None
-    if hex_of_lastseen is None:
+    __ hex_of_lastseen is None:
         # hexstring was empty or triggered KeyError
         raise ValueError('Invalid hexadecimal string')
-    return result
+    r_ result

@@ -1,3 +1,3 @@
-class Phone(object):
-    def __init__(self):
+class Phone(object
+    ___ __init__(self
         pass

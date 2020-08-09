@@ -11,33 +11,33 @@ class Robot:
         'A': 'advance',
     }
 
-    def __init__(self, bearing=NORTH, x=0, y=0):
+    ___ __init__(self, bearing=NORTH, x=0, y=0
         """__init__ creates the robot, defaults to facing north at the origin"""
         self.bearing = bearing
         self.coordinates = (x, y)
 
-    def turn_right(self):
+    ___ turn_right(self
         """turn_right turns the robot to the right"""
         self.bearing = (self.bearing + 1) % 4
 
-    def turn_left(self):
+    ___ turn_left(self
         """turn_left turns the robot to the left"""
-        for _ in range(3):
+        for _ in range(3
             self.turn_right()
 
-    def advance(self):
+    ___ advance(self
         """advance moves the robot one spce forward in the direction it's facing"""
         x, y = self.coordinates
-        if self.bearing == NORTH:
+        __ self.bearing __ NORTH:
             self.coordinates = (x, y+1)
-        elif self.bearing == SOUTH:
+        ____ self.bearing __ SOUTH:
             self.coordinates = (x, y-1)
-        elif self.bearing == EAST:
+        ____ self.bearing __ EAST:
             self.coordinates = (x+1, y)
-        elif self.bearing == WEST:
+        ____ self.bearing __ WEST:
             self.coordinates = (x-1, y)
 
-    def simulate(self, commands):
+    ___ simulate(self, commands
         """simulate give the robot a set of commands"""
         for c in commands:
             getattr(self, Robot._valid_commdands[c])()

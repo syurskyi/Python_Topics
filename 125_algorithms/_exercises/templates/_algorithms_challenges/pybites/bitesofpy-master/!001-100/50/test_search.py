@@ -1,16 +1,16 @@
-from datetime import datetime, date
-from unittest.mock import patch
+from datetime ______ datetime, date
+from unittest.mock ______ patch
 
-import pytest
+______ pytest
 
-from search import (_convert_struct_time_to_dt, get_feed_entries,
+from search ______ (_convert_struct_time_to_dt, get_feed_entries,
                     filter_entries_by_tag, main, Entry)
 
 
-class AttrDict(dict):
+class AttrDict(dict
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
-    def __init__(self, *args, **kwargs):
+    ___ __init__(self, *args, **kwargs
         super(AttrDict, self).__init__(*args, **kwargs)
         self.__dict__ = self
 
@@ -51,26 +51,26 @@ MOCK_ENTRIES = AttrDict({'entries':
     (datetime(2016, 12, 19, 9, 26, 0).timetuple(),
      date(year=2016, month=12, day=19)),
 ])
-def test_convert_struct_time_to_dt(arg, ret):
-    assert _convert_struct_time_to_dt(arg) == ret
+___ test_convert_struct_time_to_dt(arg, ret
+    assert _convert_struct_time_to_dt(arg) __ ret
 
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
-def test_get_feed_entries(inp):
+___ test_get_feed_entries(inp
     first, last = tuple(get_feed_entries())
 
-    assert first.date == date(year=2018, month=2, day=18)
-    assert first.title == 'Twitter Digest 2018 Week 08'
-    assert first.link == 'https://pybit.es/twitter_digest_201808.html'
+    assert first.date __ date(year=2018, month=2, day=18)
+    assert first.title __ 'Twitter Digest 2018 Week 08'
+    assert first.link __ 'https://pybit.es/twitter_digest_201808.html'
     expected = ['flask', 'python', 'regex', 'twitter']
     # allow list or set
-    assert sorted(list(first.tags)) == expected
+    assert sorted(list(first.tags)) __ expected
 
-    assert last.date == date(year=2017, month=1, day=6)
-    assert last.title == 'Copy and Paste with Pyperclip'
-    assert last.link == 'https://pybit.es/pyperclip.html'
+    assert last.date __ date(year=2017, month=1, day=6)
+    assert last.title __ 'Copy and Paste with Pyperclip'
+    assert last.link __ 'https://pybit.es/pyperclip.html'
     expected = ['code', 'pybites', 'python', 'tips', 'tricks']
-    assert sorted(list(last.tags)) == expected
+    assert sorted(list(last.tags)) __ expected
 
 
 @pytest.mark.parametrize("arg, ret", [
@@ -86,7 +86,7 @@ def test_get_feed_entries(inp):
     ('matplotlib|django|flask', True),
     ('pyramid|django|flask', False),
 ])
-def test_filter_entries_by_tag(arg, ret):
+___ test_filter_entries_by_tag(arg, ret
     entry = Entry(date=date(2016, 12, 22),
                   title='2016 py articles and useful books',
                   link='https://pybit.es/py-articles-books2016.html',
@@ -100,11 +100,11 @@ def test_filter_entries_by_tag(arg, ret):
 @patch("builtins.input", side_effect=['pycon', 'twitter', 'python', 'nonsense',
                                       'python|regex', 'python&regex', 'REGeX',
                                       '', 'q'])
-def test_main(entries, inp, capfd):
+___ test_main(entries, inp, capfd
     main()
     out, _ = capfd.readouterr()
 
-    output = [line for line in out.split('\n') if line.strip()]
+    output = [line for line in out.split('\n') __ line.strip()]
     expected = ['0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',
@@ -113,5 +113,5 @@ def test_main(entries, inp, capfd):
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Please provide a search term', 'Bye']
-    for line, exp in zip(output, expected):
+    for line, exp in zip(output, expected
         assert exp in line

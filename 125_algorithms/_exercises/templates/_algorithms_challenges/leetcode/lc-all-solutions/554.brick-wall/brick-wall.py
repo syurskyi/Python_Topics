@@ -1,10 +1,10 @@
-class Solution(object):
-  def leastBricks(self, wall):
+class Solution(object
+  ___ leastBricks(self, wall
     """
     :type wall: List[List[int]]
     :rtype: int
     """
-    ans = len(wall)
+    ans = le.(wall)
     count = 0
     d = {}
     for w in wall:
@@ -13,4 +13,4 @@ class Solution(object):
         coverage += brick
         d[coverage] = d.get(coverage, 0) + 1
         count = max(count, d.get(coverage, 0))
-    return ans - count
+    r_ ans - count

@@ -10,19 +10,19 @@ __author__ = 'Danyang'
 
 
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
-    def __repr__(self):
+    ___ __repr__(self
         # for debugging
-        return repr(self.val)
+        r_ repr(self.val)
 
 
 class Solution:
-    def addTwoNumbers(self, l1, l2):
+    ___ addTwoNumbers(self, l1, l2
         """
-        Algorithm: Two pointers & math
+        Algorithm: Two pointers & ma__
         Two pointers for l1 and l2 respectively
         Math - carry for addition, in the form of new node
 
@@ -35,24 +35,24 @@ class Solution:
         cur1 = l1
         cur2 = l2
         cur = result_head
-        while cur1 or cur2:
+        w___ cur1 or cur2:
             cur.val = cur.val+self.addNode(cur1, cur2)
-            if cur.val < 10:
-                if cur1 and cur1.next or cur2 and cur2.next:  # next node
+            __ cur.val < 10:
+                __ cur1 and cur1.next or cur2 and cur2.next:  # next node
                     cur.next = ListNode(0)
-            else:
+            ____
                 cur.val -= 10
                 cur.next = ListNode(1)
 
-            if cur1:
+            __ cur1:
                 cur1 = cur1.next
-            if cur2:
+            __ cur2:
                 cur2 = cur2.next
             cur = cur.next
 
-        return result_head
+        r_ result_head
 
-    def addNode(self, node1, node2):
+    ___ addNode(self, node1, node2
         """
         Handles None situation
 
@@ -60,20 +60,20 @@ class Solution:
         :param node2: ListNode
         :return: integer, summation
         """
-        if not node1 and not node2:
+        __ not node1 and not node2:
             raise Exception("two nodes are None")
-        if not node1:
-            return node2.val
-        if not node2:
-            return node1.val
-        return node1.val+node2.val
+        __ not node1:
+            r_ node2.val
+        __ not node2:
+            r_ node1.val
+        r_ node1.val+node2.val
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     l1s = [ListNode(1)]
     l2s = [ListNode(9), ListNode(9)]
-    for i in range(len(l1s)-1):
+    for i in range(le.(l1s)-1
         l1s[i].next = l1s[i+1]
-    for i in range(len(l2s)-1):
+    for i in range(le.(l2s)-1
         l2s[i].next = l2s[i+1]
     Solution().addTwoNumbers(l1s[0], l2s[0])

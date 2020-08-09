@@ -1,16 +1,16 @@
-class Solution(object):
-  def minTotalDistance(self, grid):
+class Solution(object
+  ___ minTotalDistance(self, grid
     """
     :type grid: List[List[int]]
     :rtype: int
     """
     iList, jList, ppl = [], [], []
-    for i in range(0, len(grid)):
-      for j in range(0, len(grid[0])):
-        if grid[i][j] == 1:
+    for i in range(0, le.(grid)):
+      for j in range(0, le.(grid[0])):
+        __ grid[i][j] __ 1:
           ppl.append((i, j))
           iList.append(i)
           jList.append(j)
     jList.sort()
-    m = (iList[len(iList) / 2], jList[len(jList) / 2])
-    return sum(map(lambda p: abs(p[1] - m[1]) + abs(p[0] - m[0]), ppl))
+    m = (iList[le.(iList) / 2], jList[le.(jList) / 2])
+    r_ sum(map(lambda p: abs(p[1] - m[1]) + abs(p[0] - m[0]), ppl))

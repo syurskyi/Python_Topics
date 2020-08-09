@@ -1,37 +1,37 @@
-import heapq
+______ heapq
 
 
 class Solution:
-    def medianII(self, nums):
+    ___ medianII(self, nums
         """
         :type nums: list[int]
         :rtype: list[int]
         """
         ans = []
-        if not nums:
-            return ans
+        __ not nums:
+            r_ ans
 
         minheap = []
         maxheap = []
         median = 0
 
         for num in nums:
-            if num < median:
+            __ num < median:
                 heapq.heappush(maxheap, -num)
-            else:
+            ____
                 heapq.heappush(minheap, num)
 
-            while len(minheap) > len(maxheap):
+            w___ le.(minheap) > le.(maxheap
                 heapq.heappush(maxheap, -heapq.heappop(minheap))
 
-            while len(maxheap) > len(minheap) + 1:
+            w___ le.(maxheap) > le.(minheap) + 1:
                 heapq.heappush(minheap, -heapq.heappop(maxheap))
 
-            if maxheap:
+            __ maxheap:
                 median = -maxheap[0]
-            else:
+            ____
                 median = 0
 
             ans.append(median)
 
-        return ans
+        r_ ans

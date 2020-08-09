@@ -19,26 +19,26 @@ itself according to the LCA definition.
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def lowestCommonAncestor(self, root, p, q):
+class Solution(object
+    ___ lowestCommonAncestor(self, root, p, q
         """
         :type root: TreeNode
         :type p: TreeNode
         :type q: TreeNode
         :rtype: TreeNode
         """
-        if root is None:
-            return None
-        else:
-            if min(p.val, q.val) <= root.val <= max(p.val, q.val):
-                return root
-            elif root.val > max(p.val, q.val):
-                return self.lowestCommonAncestor(root.left, p, q)
-            else:
-                return self.lowestCommonAncestor(root.right, p, q)
+        __ root is None:
+            r_ None
+        ____
+            __ min(p.val, q.val) <= root.val <= max(p.val, q.val
+                r_ root
+            ____ root.val > max(p.val, q.val
+                r_ self.lowestCommonAncestor(root.left, p, q)
+            ____
+                r_ self.lowestCommonAncestor(root.right, p, q)

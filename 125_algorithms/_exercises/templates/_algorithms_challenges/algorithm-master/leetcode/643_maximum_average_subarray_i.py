@@ -1,5 +1,5 @@
 class Solution:
-    def findMaxAverage(self, nums, k):
+    ___ findMaxAverage(self, nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -20,11 +20,11 @@ class Solution:
         """
         P = [0]
         for x in nums: P.append(P[-1] + x)
-        max_sum = max(P[i+k] - P[i] for i in range(len(nums) - k + 1))
-        return max_sum / float(k)
+        max_sum = max(P[i+k] - P[i] for i in range(le.(nums) - k + 1))
+        r_ max_sum / float(k)
 
 class Solution:
-    def findMaxAverage(self, nums, k):
+    ___ findMaxAverage(self, nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -37,10 +37,10 @@ class Solution:
                 |--> Start to remove past child
         """
         max_sum, tmp_sum = float('-inf'), 0
-        for i in range(len(nums)):
+        for i in range(le.(nums)):
             tmp_sum += nums[i]
-            if i >= k:
+            __ i >= k:
                 tmp_sum -= nums[i-k]
-            if i + 1 >= k:
+            __ i + 1 >= k:
                 max_sum = max(max_sum, tmp_sum)
-        return max_sum / float(k)
+        r_ max_sum / float(k)

@@ -4,26 +4,26 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def isHappy(self, n):
+class Solution(object
+    ___ isHappy(self, n
         """
         :type n: int
         :rtype: bool
         """
         hashset = set()
         hashset.add(n)
-        while n != 1:
+        w___ n != 1:
             num = 0
-            while n > 0:
+            w___ n > 0:
                 num += (n % 10)**2
                 n = int(n/10)
-            if num in hashset:
-                return False
+            __ num in hashset:
+                r_ False
             hashset.add(num)
             n = num
-        return True
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             19,
             1,
@@ -35,5 +35,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,40 +1,40 @@
 class Solution:
-    def getLeftPosition(self, nums, target):
+    ___ getLeftPosition(self, nums, target
         left = 0
-        right = len(nums)-1
+        right = le.(nums)-1
 
-        while(left <= right):
+        w___(left <= right
             mid = left+(right-left)//2
-            if(nums[mid] == target):
-                if(mid-1 >= 0 and nums[mid-1] != target or mid == 0):
-                    return mid
+            __(nums[mid] __ target
+                __(mid-1 >= 0 and nums[mid-1] != target or mid __ 0
+                    r_ mid
                 right = mid-1
-            elif(nums[mid] > target):
+            ____(nums[mid] > target
                 right = mid-1
-            else:
+            ____
                 left = mid+1
 
-        return -1
+        r_ -1
 
-    def getRightPosition(self, nums, target):
+    ___ getRightPosition(self, nums, target
         left = 0
-        right = len(nums)-1
+        right = le.(nums)-1
 
-        while(left <= right):
+        w___(left <= right
             mid = left+(right-left)//2
-            if(nums[mid] == target):
-                if(mid+1 < len(nums) and nums[mid+1] != target or mid == len(nums)-1):
-                    return mid
+            __(nums[mid] __ target
+                __(mid+1 < le.(nums) and nums[mid+1] != target or mid __ le.(nums)-1
+                    r_ mid
                 left = mid+1
-            elif(nums[mid] > target):
+            ____(nums[mid] > target
                 right = mid-1
-            else:
+            ____
                 left = mid+1
 
-        return -1
+        r_ -1
 
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
+    ___ searchRange(self, nums: List[int], target: int) -> List[int]:
         left = self.getLeftPosition(nums, target)
         right = self.getRightPosition(nums, target)
 
-        return [left, right]
+        r_ [left, right]

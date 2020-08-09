@@ -4,52 +4,52 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def minSubArrayLen(self, s, nums):
+class Solution(object
+    ___ minSubArrayLen(self, s, nums
         """
         :type s: int
         :type nums: List[int]
         :rtype: int
         """
-        if not nums: return 0
+        __ not nums: r_ 0
         start, end = 0, 0
-        minLen = len(nums) + 1
+        minLen = le.(nums) + 1
         sumVal = 0
-        while start <= end and end < len(nums):
+        w___ start <= end and end < le.(nums
             sumVal += nums[end]
-            if sumVal >= s:
-                while start <= end and sumVal >= s:
+            __ sumVal >= s:
+                w___ start <= end and sumVal >= s:
                     sumVal -= nums[start]
                     minLen = min(minLen, end-start+1)
                     start+=1
             end+=1
-        if minLen > len(nums):
-            return 0
-        else:
-            return minLen
+        __ minLen > le.(nums
+            r_ 0
+        ____
+            r_ minLen
     
-    def minSubArrayLenBS(self, s, nums):
-        sums = [0]*(len(nums)+1)
-        for i in range(1, len(sums)):
+    ___ minSubArrayLenBS(self, s, nums
+        sums = [0]*(le.(nums)+1)
+        for i in range(1, le.(sums)):
             sums[i] = sums[i-1] + nums[i-1]
-        minLen = len(nums)+1
-        for i in range(len(sums)):
-            end = self.binarySearch(i+1, len(sums)-1, sums[i]+s, sums)
-            if end == len(sums):
+        minLen = le.(nums)+1
+        for i in range(le.(sums)):
+            end = self.binarySearch(i+1, le.(sums)-1, sums[i]+s, sums)
+            __ end __ le.(sums
                 break
             minLen = min(minLen, end-i)
-        return minLen if minLen <= len(nums) else 0
+        r_ minLen __ minLen <= le.(nums) else 0
     
-    def binarySearch(self, low, high, key, sums):
-        while low <= high:
+    ___ binarySearch(self, low, high, key, sums
+        w___ low <= high:
             mid = int((low+high)/2)
-            if sums[mid] >= key:
+            __ sums[mid] >= key:
                 high = mid-1
-            else:
+            ____
                 low = mid+1
-        return low
+        r_ low
     
-    def test(self):
+    ___ test(self
         testCases = [
             (7, [2, 3, 1, 2, 4, 3]),
             (4, [1, 4, 4]),
@@ -64,5 +64,5 @@ class Solution(object):
             print('resultBS: %s' % (resultBS))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

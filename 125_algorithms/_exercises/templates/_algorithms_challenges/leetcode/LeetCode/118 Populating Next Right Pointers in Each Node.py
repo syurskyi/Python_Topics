@@ -33,29 +33,29 @@ After calling your function, the tree should look like:
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
         self.next = None
 
 class Solution:
-    def connect(self, root):
+    ___ connect(self, root
         """
         bfs
         :param root: TreeNode
         :return: nothing
         """
-        if not root:
-            return None
+        __ not root:
+            r_ None
 
         q = [root]
-        while q:
+        w___ q:
             current_level = q
             q = []
-            for ind, val in enumerate(current_level):
-                if val.left: q.append(val.left)
-                if val.right: q.append(val.right)
+            for ind, val in enumerate(current_level
+                __ val.left: q.append(val.left)
+                __ val.right: q.append(val.right)
                 try:
                     val.next = current_level[ind+1]
                 except IndexError:

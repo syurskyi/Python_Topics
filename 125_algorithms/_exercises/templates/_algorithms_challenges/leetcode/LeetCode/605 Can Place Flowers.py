@@ -19,26 +19,26 @@ The input array won't violate no-adjacent-flowers rule.
 The input array size is in the range of [1, 20000].
 n is a non-negative integer which won't exceed the input array size.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+    ___ canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         """
         greedy
         """
-        if n == 0:
-            return True
+        __ n __ 0:
+            r_ True
 
-        for i in range(len(flowerbed)):
-            if (
+        for i in range(le.(flowerbed)):
+            __ (
                 flowerbed[i] != 1 and
-                (i + 1 >= len(flowerbed) or flowerbed[i+1] != 1) and
+                (i + 1 >= le.(flowerbed) or flowerbed[i+1] != 1) and
                 (i - 1 < 0 or flowerbed[i - 1] != 1)
-            ):
+
                 n -= 1
                 flowerbed[i] = 1
-                if n == 0:
-                    return True
+                __ n __ 0:
+                    r_ True
 
-        return False
+        r_ False

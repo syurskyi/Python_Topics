@@ -11,13 +11,13 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def canConstruct(self, ransomNote, magazine):
+class Solution(object
+    ___ canConstruct(self, ransomNote, magazine
         """
         :type ransomNote: str
         :type magazine: str
@@ -29,8 +29,8 @@ class Solution(object):
             d[e] += 1
 
         for e in ransomNote:
-            if d[e] == 0:
-                return False
+            __ d[e] __ 0:
+                r_ False
             d[e] -= 1
 
-        return True
+        r_ True

@@ -3,26 +3,26 @@ class Solution:
     @param: S: A list of integers
     @return: An integer
     """
-    def triangleCount(self, S):
+    ___ triangleCount(self, S
         ans = 0
-        if not S or len(S) < 3:
-            return ans
+        __ not S or le.(S) < 3:
+            r_ ans
 
-        n = len(S)
+        n = le.(S)
         S.sort()
 
         """
         just like two sum
         `c` is the target
         """
-        for c in range(n - 1, 1, -1):
+        for c in range(n - 1, 1, -1
             a = 0
             b = c - 1
-            while a < b:
-                if S[a] + S[b] > S[c]:
+            w___ a < b:
+                __ S[a] + S[b] > S[c]:
                     ans += b - a
                     b -= 1
-                else:
+                ____
                     a += 1
 
-        return ans
+        r_ ans

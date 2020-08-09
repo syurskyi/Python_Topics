@@ -1,14 +1,14 @@
 
-def smooth_weather(values):
-    result = [0]*len(values)
+___ smooth_weather(values
+    result = [0]*le.(values)
     result[0] = values[0]
     result[-1] = values[-1]
 
-    for i in range(len(values)-2):
+    for i in range(le.(values)-2
         smoothed_weather = round((values[i]+values[i+1]+values[i+2])/3, 7)
         result[i+1] = smoothed_weather
 
-    return result
+    r_ result
 
 values = list(map(float, input().split()))
 print(*smooth_weather(values))

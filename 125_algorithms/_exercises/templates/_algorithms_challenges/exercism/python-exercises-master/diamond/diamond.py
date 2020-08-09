@@ -1,2 +1,2 @@
-def make_diamond():
+___ make_diamond(
     pass

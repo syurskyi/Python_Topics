@@ -1,5 +1,5 @@
-class Solution(object):
-  def lengthOfLongestSubstringKDistinct(self, s, k):
+class Solution(object
+  ___ lengthOfLongestSubstringKDistinct(self, s, k
     """
     :type s: str
     :type k: int
@@ -8,12 +8,12 @@ class Solution(object):
     j = 0
     ans = 0
     dict = {}
-    for i in range(len(s)):
+    for i in range(le.(s)):
       dict[s[i]] = dict.get(s[i], 0) + 1
-      while j <= i and len(dict) > k:
+      w___ j <= i and le.(dict) > k:
         dict[s[j]] -= 1
-        if dict[s[j]] == 0:
+        __ dict[s[j]] __ 0:
           del dict[s[j]]
         j += 1
       ans = max(ans, i - j + 1)
-    return ans
+    r_ ans

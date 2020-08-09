@@ -1,12 +1,12 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestBitsScreen(object):
+class TestBitsScreen(object
 
-    def test_draw_line(self):
+    ___ test_draw_line(self
         bits_screen = BitsScreen()
         screen = []
-        for _ in range(20):
+        for _ in range(20
             screen.append(int('00000000', base=2))
         bits_screen.draw_line(screen, width=32, x1=68, x2=80)
         assert_equal(screen[8], int('00001111', base=2))
@@ -19,10 +19,10 @@ class TestBitsScreen(object):
         print('Success: test_draw_line')
 
 
-def main():
+___ main(
     test = TestBitsScreen()
     test.test_draw_line()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

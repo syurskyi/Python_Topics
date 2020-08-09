@@ -1,18 +1,18 @@
-class Solution(object):
-  def checkRecord(self, s):
+class Solution(object
+  ___ checkRecord(self, s
     """
     :type s: str
     :rtype: bool
     """
     a = l = 0
     for c in s:
-      if c == "L":
+      __ c __ "L":
         l += 1
-      elif c == "A":
+      ____ c __ "A":
         a += 1
         l = 0
-      else:
+      ____
         l = 0
-      if a > 1 or l > 2:
-        return False
-    return True
+      __ a > 1 or l > 2:
+        r_ False
+    r_ True

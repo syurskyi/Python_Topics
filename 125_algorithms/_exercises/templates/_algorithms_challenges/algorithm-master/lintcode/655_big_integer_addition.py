@@ -1,18 +1,18 @@
 class Solution:
-    def addStrings(self, a, b):
+    ___ addStrings(self, a, b
         """
         :type a: str
         :type b: str
         :rtype: str
         """
-        if not a and not b:
-            return ''
-        if not a:
-            return b
-        if not b:
-            return a
+        __ not a and not b:
+            r_ ''
+        __ not a:
+            r_ b
+        __ not b:
+            r_ a
 
-        m, n = len(a), len(b)
+        m, n = le.(a), le.(b)
         idx = max(m, n)
         ans = [''] * (idx + 1)
 
@@ -21,7 +21,7 @@ class Solution:
         carry = 0
         zero = ord('0')
 
-        while i >= 0 and j >= 0:
+        w___ i >= 0 and j >= 0:
             carry += ord(a[i]) + ord(b[j]) - 2 * zero
             ans[idx] = str(carry % 10)
             carry //= 10
@@ -29,23 +29,23 @@ class Solution:
             i -= 1
             j -= 1
 
-        while i >= 0:
+        w___ i >= 0:
             carry += ord(a[i]) - zero
             ans[idx] = str(carry % 10)
             carry //= 10
             idx -= 1
             i -= 1
 
-        while j >= 0:
+        w___ j >= 0:
             carry += ord(b[j]) - zero
             ans[idx] = str(carry % 10)
             carry //= 10
             idx -= 1
             j -= 1
 
-        if carry:
+        __ carry:
             ans[0] = str(carry)
-        else:
+        ____
             ans = ans[1:]
 
-        return ''.join(ans)
+        r_ ''.join(ans)

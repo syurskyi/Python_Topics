@@ -9,7 +9,7 @@ for symbol in data:
 ##    total = sum([int(i) for i in binary])
     total = binary.count("1")
     print(total)
-    if total%2 == 0:
+    __ total%2 __ 0:
         binary[0] = 0 
         char = chr(int("".join(str(i)for i in binary),base=2))
         output+= char

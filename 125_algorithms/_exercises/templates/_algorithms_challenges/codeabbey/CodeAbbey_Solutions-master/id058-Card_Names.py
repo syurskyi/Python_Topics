@@ -1,6 +1,6 @@
 # Python 2.7
 
-def find_name(amount_of_cards):
+___ find_name(amount_of_cards
     #amount_of_cards is a wasted variable required by CodeAbbey.
     answer = []
     cards = [int(x) for x in raw_input().split()]

@@ -3,28 +3,28 @@ Given an array of integers and an integer k, find out whether there there are tw
 such that nums[i] = nums[j] and the difference between i and j is at most k.
 """
 __author__ = 'Daniel'
-import heapq
-from collections import defaultdict
+______ heapq
+from collections ______ defaultdict
 
 
 class Solution:
-    def containsNearbyDuplicate(self, nums, k):
+    ___ containsNearbyDuplicate(self, nums, k
         """
         hash with heap
 
         :rtype: bool
         """
         d = defaultdict(list)
-        for i, v in enumerate(nums):
+        for i, v in enumerate(nums
             heapq.heappush(d[v], i)
 
-        for v in d.values():
-            if len(v) > 1:
+        for v in d.values(
+            __ le.(v) > 1:
                 pre = heapq.heappop(v)
-                while v:
+                w___ v:
                     cur = heapq.heappop(v)
-                    if cur-pre <= k:
-                        return True
+                    __ cur-pre <= k:
+                        r_ True
                     pre = cur
 
-        return False
+        r_ False

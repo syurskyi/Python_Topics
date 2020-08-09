@@ -1,15 +1,15 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Graph:
-    def __init__(self):
+    ___ __init__(self
         self.graph = defaultdict(list)
 
-    def insertEdge(self, v1, v2):
+    ___ insertEdge(self, v1, v2
         self.graph[v1].append(v2)
         self.graph[v2].append(v1)
 
-    def printGraph(self):
+    ___ printGraph(self
         for node in self.graph:
             for v in self.graph[node]:
                 print(node, "->", v)

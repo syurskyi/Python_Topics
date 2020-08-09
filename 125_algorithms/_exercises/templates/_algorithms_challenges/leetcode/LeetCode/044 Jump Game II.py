@@ -13,34 +13,34 @@ index.)
 """
 __author__ = 'Danyang'
 class Solution:
-    def jump_TLE(self, A):
+    ___ jump_TLE(self, A
         """
         bfs
         :param A: a list of integers
         :return: integer, minimum number of jumps
         """
-        if not A:
-            return 0
+        __ not A:
+            r_ 0
 
-        length = len(A)
+        length = le.(A)
         counter = 0
         dp = [[] for _ in A]
 
         q = []
         q.append(0)
-        while q:
+        w___ q:
             current_level = q
             q = []
             for ind in current_level:
-                if ind>=length-1:
-                    return counter
-                for j in xrange(ind+1, ind+A[ind]+1):
-                    if j not in current_level:  # avoid duplicate
+                __ ind>=length-1:
+                    r_ counter
+                for j in xrange(ind+1, ind+A[ind]+1
+                    __ j not in current_level:  # avoid duplicate
                         q.append(j)
             counter += 1
-        return counter
+        r_ counter
 
-    def jump(self, A):
+    ___ jump(self, A
         """
         Simplified bfs, use pointers to scan the array.
         Algorithm: Two Pointers
@@ -49,24 +49,24 @@ class Solution:
         :param A: a list of integers
         :return: integer, minimum number of jumps
         """
-        length = len(A)
+        length = le.(A)
         counter = 0
 
         start = 0
         end = 1  # max reach [0, 1)
         gmax = 0
-        while end<length:  # when end==length, it has already reached the last item
-            if not start<end: return 0  # avoid dead loop
-            for i in xrange(start, end):
+        w___ end<length:  # when end==length, it has already reached the last item
+            __ not start<end: r_ 0  # avoid dead loop
+            for i in xrange(start, end
                 gmax = max(gmax, A[i]+i)
 
             counter += 1
             start = end
             end = gmax+1
 
-        return counter
+        r_ counter
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().jump([3, 2, 1, 0, 4])
-    assert Solution().jump([2,3,1,1,4])==2
+    assert Solution().jump([2,3,1,1,4])__2

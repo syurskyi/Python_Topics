@@ -1,30 +1,30 @@
-class Solution(object):
-  def search(self, nums, target):
+class Solution(object
+  ___ search(self, nums, target
     """
     :type nums: List[int]
     :type target: int
     :rtype: bool
     """
-    start, end = 0, len(nums) - 1
-    while start + 1 < end:
+    start, end = 0, le.(nums) - 1
+    w___ start + 1 < end:
       mid = start + (end - start) / 2
-      if nums[mid] == target:
-        return True
-      if nums[start] < nums[mid]:
-        if nums[start] <= target <= nums[mid]:
+      __ nums[mid] __ target:
+        r_ True
+      __ nums[start] < nums[mid]:
+        __ nums[start] <= target <= nums[mid]:
           end = mid
-        else:
+        ____
           start = mid
-      elif nums[start] > nums[mid]:
-        if nums[mid] <= target <= nums[end]:
+      ____ nums[start] > nums[mid]:
+        __ nums[mid] <= target <= nums[end]:
           start = mid
-        else:
+        ____
           end = mid
-      else:
+      ____
         start += 1
 
-    if nums[start] == target:
-      return True
-    if nums[end] == target:
-      return True
-    return False
+    __ nums[start] __ target:
+      r_ True
+    __ nums[end] __ target:
+      r_ True
+    r_ False

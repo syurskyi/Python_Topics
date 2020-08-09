@@ -1,8 +1,8 @@
 """
 Definition of ListNode
-class ListNode(object):
+class ListNode(object
 
-    def __init__(self, val, next=None):
+    ___ __init__(self, val, next=None
         self.val = val
         self.next = next
 """
@@ -13,11 +13,11 @@ class Solution:
     @param hash_table: A list of The first node of linked list
     @return: A list of The first node of linked list which have twice size
     """
-    def rehashing(self, hash_table):
-        if not hash_table:
-            return
+    ___ rehashing(self, hash_table
+        __ not hash_table:
+            r_
 
-        CAPACITY = len(hash_table) * 2
+        CAPACITY = le.(hash_table) * 2
         heads = [None] * CAPACITY
         tails = [None] * CAPACITY
 
@@ -25,17 +25,17 @@ class Solution:
         for node in hash_table:
             curr = node
 
-            while curr:
+            w___ curr:
                 i = curr.val % CAPACITY
                 _node = ListNode(curr.val)
 
-                if heads[i]:
+                __ heads[i]:
                     tails[i].next = _node
-                else:
+                ____
                     heads[i] = _node
 
                 tails[i] = _node
 
                 curr = curr.next
 
-        return heads
+        r_ heads

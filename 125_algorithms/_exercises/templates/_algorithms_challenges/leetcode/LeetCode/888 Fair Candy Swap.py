@@ -40,12 +40,12 @@ Note:
 It is guaranteed that Alice and Bob have different total amounts of candy.
 It is guaranteed there exists an answer.
 """
-from typing import List
-import bisect
+from typing ______ List
+______ bisect
 
 
 class Solution:
-    def fairCandySwap(self, A: List[int], B: List[int]) -> List[int]:
+    ___ fairCandySwap(self, A: List[int], B: List[int]) -> List[int]:
         """
         It is a search problem. Use set as search.
         """
@@ -54,12 +54,12 @@ class Solution:
         diff = (sum_B - sum_A) // 2  # it can be negative or positive
         set_B = set(B)
         for a in A:
-            if a + diff in set_B:
-                return [a, a + diff]
+            __ a + diff in set_B:
+                r_ [a, a + diff]
                 
         raise
 
-    def fairCandySwap_complex(self, A: List[int], B: List[int]) -> List[int]:
+    ___ fairCandySwap_complex(self, A: List[int], B: List[int]) -> List[int]:
         """
         sum, to figure out the target O(N)
         exchange one
@@ -68,15 +68,15 @@ class Solution:
         """
         sum_A = sum(A)
         sum_B = sum(B)
-        if sum_A > sum_B:
-            return self.fairCandySwap(B, A)[::-1]
+        __ sum_A > sum_B:
+            r_ self.fairCandySwap(B, A)[::-1]
 
         A.sort()
         B.sort()
         diff = (sum_B - sum_A) // 2
         for a in A:
             i = bisect.bisect_left(B, a + diff)
-            if i < len(B) and B[i] == a + diff:
-                return [a, a + diff]
+            __ i < le.(B) and B[i] __ a + diff:
+                r_ [a, a + diff]
 
         raise

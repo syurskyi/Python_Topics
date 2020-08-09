@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def restoreIpAddresses(self, s):
+    ___ restoreIpAddresses(self, s
         """
         dfs, branch factor 3, depth 4
         complexity: 3^4 = 81
@@ -19,9 +19,9 @@ class Solution:
         """
         result = []
         self.dfs(s, [], result)
-        return result
+        r_ result
 
-    def dfs_complicated(self, seq, cur, result):
+    ___ dfs_complicated(self, seq, cur, result
         """
         checking done by the children
         :param seq:
@@ -29,18 +29,18 @@ class Solution:
         :param result:
         :return:
         """
-        if len(cur) > 4:
-            return
+        __ le.(cur) > 4:
+            r_
 
-        if not cur or self.is_valid(cur[-1]):
-            if len(cur) == 4 and not seq:  # check the last one first
+        __ not cur or self.is_valid(cur[-1]
+            __ le.(cur) __ 4 and not seq:  # check the last one first
                 result.append(".".join(cur))
-                return
+                r_
 
-            for i in xrange(1, min(3, len(seq))+1):
+            for i in xrange(1, min(3, le.(seq))+1
                 self.dfs(seq[i:], cur+[seq[:i]], result)
 
-    def dfs(self, seq, cur, result):
+    ___ dfs(self, seq, cur, result
         """
         checking done by the parent (making debug much easier by preventing going one more step)
         structure of dfs
@@ -53,25 +53,25 @@ class Solution:
         :return:
         """
         # terminal condition
-        if not seq and len(cur)==4:
+        __ not seq and le.(cur)__4:
             result.append(".".join(cur))
-            return
+            r_
 
-        # for i in xrange(1, 3+1):
+        # for i in xrange(1, 3+1
         # for loop
-        for i in xrange(1, min(3, len(seq)) + 1):
+        for i in xrange(1, min(3, le.(seq)) + 1
             new_seg = seq[:i]
             # condition check
-            if len(cur) < 4 and self.is_valid(new_seg):
+            __ le.(cur) < 4 and self.is_valid(new_seg
                 self.dfs(seq[i:], cur + [new_seg], result)
-            else:
-                return
+            ____
+                r_
 
-    def is_valid(self, s):
-        if not s:
-            return False
-        return s == "0" or s[0]!="0" and 0<= int(s) <256  # ["0.0.0.0"]
+    ___ is_valid(self, s
+        __ not s:
+            r_ False
+        r_ s __ "0" or s[0]!="0" and 0<= int(s) <256  # ["0.0.0.0"]
 
-if __name__=="__main__":
+__ __name____"__main__":
     IP = "25525511135"
     print Solution().restoreIpAddresses(IP)

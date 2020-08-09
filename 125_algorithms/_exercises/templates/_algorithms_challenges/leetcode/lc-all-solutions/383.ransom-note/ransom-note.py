@@ -1,5 +1,5 @@
-class Solution(object):
-  def canConstruct(self, ransomNote, magazine):
+class Solution(object
+  ___ canConstruct(self, ransomNote, magazine
     """
     :type ransomNote: str
     :type magazine: str
@@ -10,8 +10,8 @@ class Solution(object):
       letters[ord(c) - ord('a')] += 1
 
     for c in ransomNote:
-      if letters[ord(c) - ord('a')] == 0:
-        return False
-      else:
+      __ letters[ord(c) - ord('a')] __ 0:
+        r_ False
+      ____
         letters[ord(c) - ord('a')] -= 1
-    return True
+    r_ True

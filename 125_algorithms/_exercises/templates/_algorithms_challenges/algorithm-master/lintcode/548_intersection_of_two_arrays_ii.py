@@ -1,5 +1,5 @@
 class Solution:
-    def intersect(self, a, b):
+    ___ intersect(self, a, b
         """
         :type a: List[int]
         :type b: List[int]
@@ -7,8 +7,8 @@ class Solution:
         """
         ans = []
 
-        if not a or not b:
-            return ans
+        __ not a or not b:
+            r_ ans
 
         freq = {}
 
@@ -16,17 +16,17 @@ class Solution:
             freq[x] = freq.get(x, 0) + 1
 
         for x in b:
-            if not freq.get(x):
+            __ not freq.get(x
                 continue
 
             freq[x] -= 1
             ans.append(x)
 
-        return ans
+        r_ ans
 
 
 class Solution:
-    def intersect(self, a, b):
+    ___ intersect(self, a, b
         """
         :type a: List[int]
         :type b: List[int]
@@ -34,23 +34,23 @@ class Solution:
         """
         ans = []
 
-        if not a or not b:
-            return ans
+        __ not a or not b:
+            r_ ans
 
         a.sort()
         b.sort()
 
-        m, n = len(a), len(b)
+        m, n = le.(a), le.(b)
         i = j = 0
 
-        while i < m and j < n:
-            if a[i] == b[j]:
+        w___ i < m and j < n:
+            __ a[i] __ b[j]:
                 ans.append(a[i])
                 i += 1
                 j += 1
-            elif a[i] < b[j]:
+            ____ a[i] < b[j]:
                 i += 1
-            else:
+            ____
                 j += 1
 
-        return ans
+        r_ ans

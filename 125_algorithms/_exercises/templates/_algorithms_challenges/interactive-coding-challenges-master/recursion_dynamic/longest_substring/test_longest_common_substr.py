@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestLongestCommonSubstr(object):
+class TestLongestCommonSubstr(object
 
-    def test_longest_common_substr(self):
+    ___ test_longest_common_substr(self
         str_comp = StringCompare()
         assert_raises(TypeError, str_comp.longest_common_substr, None, None)
         assert_equal(str_comp.longest_common_substr('', ''), '')
@@ -14,10 +14,10 @@ class TestLongestCommonSubstr(object):
         print('Success: test_longest_common_substr')
 
 
-def main():
+___ main(
     test = TestLongestCommonSubstr()
     test.test_longest_common_substr()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

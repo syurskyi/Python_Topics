@@ -1,20 +1,20 @@
 class TrieNode:
-  def __init__(self, char):
+  ___ __init__(self, char
     self.neighbours = {}
     self.isWord = False
 
 
 class Trie:
-  def __init__(self):
+  ___ __init__(self
     self.root = TrieNode("-")
 
-  def addWord(self, word):
+  ___ addWord(self, word
     root = self.root
-    for i in range(0, len(word)):
+    for i in range(0, le.(word)):
       c = word[i]
-      if c in root.neighbours:
+      __ c in root.neighbours:
         root = root.neighbours[c]
-      else:
+      ____
         newnode = TrieNode(c)
         root.neighbours[c] = newnode
         root = root.neighbours[c]
@@ -25,25 +25,25 @@ class Solution:
   # @param board, a list of lists of 1 length string
   # @param words: A list of string
   # @return: A list of string
-  def findWords(self, board, words):
+  ___ findWords(self, board, words
     # write your code here
     trie = Trie()
     res = []
-    visited = [[0] * len(board[0]) for i in range(0, len(board))]
+    visited = [[0] * le.(board[0]) for i in range(0, le.(board))]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    def dfs(i, j, board, visited, res, root, path):
-      if not root:
-        return
+    ___ dfs(i, j, board, visited, res, root, path
+      __ not root:
+        r_
 
-      if root.isWord:
+      __ root.isWord:
         res.append(path)
 
       for direction in directions:
         ni, nj = i + direction[0], j + direction[1]
-        if 0 <= ni < len(board) and 0 <= nj < len(board[0]):
+        __ 0 <= ni < le.(board) and 0 <= nj < le.(board[0]
           c = board[ni][nj]
-          if visited[ni][nj] == 0:
+          __ visited[ni][nj] __ 0:
             visited[ni][nj] = 1
             dfs(ni, nj, board, visited, res, root.neighbours.get(c, None), path + c)
             visited[ni][nj] = 0
@@ -51,10 +51,10 @@ class Solution:
     for word in words:
       trie.addWord(word)
     root = trie.root
-    for i in range(0, len(board)):
-      for j in range(0, len(board[0])):
+    for i in range(0, le.(board)):
+      for j in range(0, le.(board[0])):
         c = board[i][j]
         visited[i][j] = 1
         dfs(i, j, board, visited, res, root.neighbours.get(c, None), c)
         visited[i][j] = 0
-    return list(set(res))
+    r_ list(set(res))

@@ -3,26 +3,26 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def minEatingSpeed(self, piles, H):
+class Solution(object
+    ___ minEatingSpeed(self, piles, H
         """
         :type piles: List[int]
         :type H: int
         :rtype: int
         """
-        import math
+        ______ ma__
         piles.sort()
         l, r = 1, max(piles)
-        while l <= r:
+        w___ l <= r:
             mid = l+(r-l)//2
-            sumVal = sum(math.ceil(float(num)/mid) for num in piles)
-            if sumVal <= H:
+            sumVal = sum(ma__.ceil(float(num)/mid) for num in piles)
+            __ sumVal <= H:
                 r = mid-1
-            else:
+            ____
                 l = mid+1
-        return l
+        r_ l
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [3,6,7,11],
@@ -42,8 +42,8 @@ class Solution(object):
             print('res: %s' % str(res))
             print('-='*30+'-')
 
-if __name__ == '__main__':
-    import math
-    print(math.ceil(float(3)/3))
-    print(math.ceil(float(4)/3))
+__ __name__ __ '__main__':
+    ______ ma__
+    print(ma__.ceil(float(3)/3))
+    print(ma__.ceil(float(4)/3))
     Solution().test()

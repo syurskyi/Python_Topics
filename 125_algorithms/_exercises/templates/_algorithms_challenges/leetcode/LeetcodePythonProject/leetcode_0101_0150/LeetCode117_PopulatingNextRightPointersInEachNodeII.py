@@ -6,7 +6,7 @@ Created on Feb 4, 2017
 
 # Definition for binary tree with next pointer.
 class TreeLinkNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -15,26 +15,26 @@ class TreeLinkNode:
 class Solution:
     # @param root, a tree link node
     # @return nothing
-    def connect(self, root):
+    ___ connect(self, root
         lastHead = root
         lastCurrent = None
         currentHead = None
         current = None
-        while lastHead:
+        w___ lastHead:
             lastCurrent = lastHead
-            while lastCurrent:
-                if lastCurrent.left:
-                    if not currentHead:
+            w___ lastCurrent:
+                __ lastCurrent.left:
+                    __ not currentHead:
                         currentHead = lastCurrent.left
                         current = currentHead
-                    else:
+                    ____
                         current.next = lastCurrent.left
                         current = current.next
-                if lastCurrent.right:
-                    if not currentHead:
+                __ lastCurrent.right:
+                    __ not currentHead:
                         currentHead = lastCurrent.right
                         current = currentHead
-                    else:
+                    ____
                         current.next = lastCurrent.right
                         current = current.next
                 lastCurrent = lastCurrent.next

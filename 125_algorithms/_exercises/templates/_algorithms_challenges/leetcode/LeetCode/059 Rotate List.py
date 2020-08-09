@@ -8,15 +8,15 @@ return 4->5->1->2->3->NULL.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
-    def __repr__(self):
-        return repr(self.val)
+    ___ __repr__(self
+        r_ repr(self.val)
 
 class Solution:
-    def rotateRight(self, head, k):
+    ___ rotateRight(self, head, k
         """
         Linked list
         Assume k is legal
@@ -25,8 +25,8 @@ class Solution:
         :param k: an integer
         :return: ListNode
         """
-        if not head:
-            return None
+        __ not head:
+            r_ None
 
 
         dummy = ListNode(0)
@@ -35,7 +35,7 @@ class Solution:
         # find length
         length = 0
         pre = dummy
-        while pre.next:
+        w___ pre.next:
             length += 1
             pre = pre.next
         # find the last one
@@ -47,19 +47,19 @@ class Solution:
         # find breaking point
         count = 0
         pre = dummy
-        while count<length-k:  # you will appreciate python's half open range and 0-based index k
+        w___ count<length-k:  # you will appreciate python's half open range and 0-based index k
             count += 1
             pre = pre.next
 
         # then do the manipulate in one group of operations (no loop)
-        if k!=0: # avoid cyclic link
+        __ k!=0: # avoid cyclic link
             pre.next, dummy.next, last.next = None, pre.next, dummy.next
 
-        return dummy.next
+        r_ dummy.next
 
-if __name__=="__main__":
+__ __name____"__main__":
     length = 1
     lst = [ListNode(i+1) for i in xrange(length)]
-    for i in range(length-1):
+    for i in range(length-1
         lst[i].next = lst[i+1]
     Solution().rotateRight(lst[0], 1)

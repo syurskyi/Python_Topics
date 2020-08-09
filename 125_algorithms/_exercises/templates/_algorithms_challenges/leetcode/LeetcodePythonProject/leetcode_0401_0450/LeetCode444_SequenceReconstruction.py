@@ -4,36 +4,36 @@ Created on Apr 18, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def sequenceReconstruction(self, org, seqs):
+class Solution(object
+    ___ sequenceReconstruction(self, org, seqs
         graph = {}
         degree = {}
         for seq in seqs:
-            length = len(seq)
-            for i in range(length):
-                if seq[i] not in graph:
+            length = le.(seq)
+            for i in range(length
+                __ seq[i] not in graph:
                     graph[seq[i]] = []
-                if seq[i] not in degree:
+                __ seq[i] not in degree:
                     degree[seq[i]] = 0
-                if i > 0:
+                __ i > 0:
                     graph[seq[i-1]].append(seq[i])
                     degree[seq[i]] += 1
         queue = []
-        for key, val in degree.items():
-            if val == 0:
+        for key, val in degree.items(
+            __ val __ 0:
                 queue.append(key)
         index = 0
-        while queue:
-            size = len(queue)
-            if size > 1:
-                return False
+        w___ queue:
+            size = le.(queue)
+            __ size > 1:
+                r_ False
             curr = queue.pop(0)
-            if index >= len(org) or org[index] != curr:
-                return False
+            __ index >= le.(org) or org[index] != curr:
+                r_ False
             index += 1
-            if curr in graph:
+            __ curr in graph:
                 for nextVal in graph[curr]:
                     degree[nextVal] -= 1
-                    if degree[nextVal] == 0:
+                    __ degree[nextVal] __ 0:
                         queue.append(nextVal)
-        return index == len(org) and index == len(graph)
+        r_ index __ le.(org) and index __ le.(graph)

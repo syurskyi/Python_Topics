@@ -34,12 +34,12 @@ Note:
 dislikes[i][0] < dislikes[i][1]
 There does not exist i != j for which dislikes[i] == dislikes[j].
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def possibleBipartition(self, N: int, dislikes: List[List[int]]) -> bool:
+    ___ possibleBipartition(self, N: int, dislikes: List[List[int]]) -> bool:
         """
         If given likes, then we can use union-find. But this is dislikes.
         Two bipartition, A, B. For each dislike, do a dfs on A, B.
@@ -53,20 +53,20 @@ class Solution:
             G[v].append(u)
 
         visited = {}  # 0 color red, 1 color blue
-        for u in range(1, N+1):
-            if u not in visited:
-                if not self.dfs(u, G, visited, 0):
-                    return False
-        return True
+        for u in range(1, N+1
+            __ u not in visited:
+                __ not self.dfs(u, G, visited, 0
+                    r_ False
+        r_ True
 
-    def dfs(self, u, G, visited, color):
+    ___ dfs(self, u, G, visited, color
         visited[u] = color
         for nbr in G[u]:
-            if nbr in visited:
-                if visited[nbr] == color:
-                    return False
-            else:
-                if not self.dfs(nbr, G, visited, color ^ 1):
-                    return False
+            __ nbr in visited:
+                __ visited[nbr] __ color:
+                    r_ False
+            ____
+                __ not self.dfs(nbr, G, visited, color ^ 1
+                    r_ False
 
-        return True
+        r_ True

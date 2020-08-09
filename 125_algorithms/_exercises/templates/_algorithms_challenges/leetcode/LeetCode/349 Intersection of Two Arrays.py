@@ -12,12 +12,12 @@ The result can be in any order.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def intersection(self, nums1, nums2):
+class Solution(object
+    ___ intersection(self, nums1, nums2
         """
         O(n+m)
         :type nums1: List[int]
         :type nums2: List[int]
         :rtype: List[int]
         """
-        return list(set(nums1).intersection(set(nums2)))
+        r_ list(set(nums1).intersection(set(nums2)))

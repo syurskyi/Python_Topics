@@ -1,19 +1,19 @@
 class PlateStack:
 
-    def __init__(self):
+    ___ __init__(self
         self.st = []
 
-    def push(self, x: int) -> None:
+    ___ push(self, x: int) -> None:
         self.st.append(x)
 
-    def pop(self) -> None:
-        if(len(self.st) > 0):
+    ___ pop(self) -> None:
+        __(le.(self.st) > 0
             self.st.pop()
 
-    def top(self) -> int:
-        if(len(self.st) == 0):
-            return None
-        return self.st[-1]
+    ___ top(self) -> int:
+        __(le.(self.st) __ 0
+            r_ None
+        r_ self.st[-1]
 
-    def getLen(self) -> int:
-      return len(self.st)
+    ___ getLen(self) -> int:
+      r_ le.(self.st)

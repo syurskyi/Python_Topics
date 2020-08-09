@@ -3,19 +3,19 @@ Given an array of integers, find if the array contains any duplicates. Your func
 appears at least twice in the array, and it should return false if every element is distinct.
 """
 __author__ = 'Daniel'
-from collections import Counter
+from collections ______ Counter
 
 
 class Solution:
-    def containsDuplicate(self, nums):
+    ___ containsDuplicate(self, nums
         """
         Trival
         :type nums: list[int]
         :rtype : bool
         """
         d = Counter(nums)
-        for k, v in d.items():
-            if v > 1:
-                return True
+        for k, v in d.items(
+            __ v > 1:
+                r_ True
 
-        return False
+        r_ False

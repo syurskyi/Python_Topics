@@ -3,8 +3,8 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findDuplicate(self, paths):
+class Solution(object
+    ___ findDuplicate(self, paths
         """
         :type paths: List[str]
         :rtype: List[List[str]]
@@ -21,12 +21,12 @@ class Solution(object):
                 fullPath = folder+'/'+filename
                 hashmap[content] = hashmap.get(content, []) + [fullPath]
         res = []
-        for _, value in hashmap.items():
-            if len(value) > 1:
+        for _, value in hashmap.items(
+            __ le.(value) > 1:
                 res.append(value)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"],
         ]
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

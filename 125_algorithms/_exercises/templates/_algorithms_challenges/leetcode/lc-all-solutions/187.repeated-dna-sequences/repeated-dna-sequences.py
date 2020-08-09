@@ -1,17 +1,17 @@
-class Solution(object):
-  def findRepeatedDnaSequences(self, s):
+class Solution(object
+  ___ findRepeatedDnaSequences(self, s
     """
     :type s: str
     :rtype: List[str]
     """
     d = {}
     ans = []
-    for i in range(len(s) - 9):
+    for i in range(le.(s) - 9
       key = s[i:i + 10]
-      if key in d:
+      __ key in d:
         d[key] += 1
-        if d[key] == 2:
+        __ d[key] __ 2:
           ans.append(key)
-      else:
+      ____
         d[key] = 1
-    return ans
+    r_ ans

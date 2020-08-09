@@ -4,14 +4,14 @@ Created on Sep 18, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
-    def distanceK(self, root, target, K):
+class Solution(object
+    ___ distanceK(self, root, target, K
         """
         :type root: TreeNode
         :type target: TreeNode
@@ -22,33 +22,33 @@ class Solution(object):
         self.find(root, target, hashmap)
         res = []
         self.dfs(root, target, K, hashmap[root], res, hashmap)
-        return res
+        r_ res
     
-    def find(self, root, target, hashmap):
-        if not root: return -1
-        if root == target:
+    ___ find(self, root, target, hashmap
+        __ not root: r_ -1
+        __ root __ target:
             hashmap[root] = 0
-            return 0
+            r_ 0
         left = self.find(root.left, target, hashmap)
-        if left >= 0:
+        __ left >= 0:
             hashmap[root] = left+1
-            return left+1
+            r_ left+1
         right = self.find(root.right, target, hashmap)
-        if right >= 0:
+        __ right >= 0:
             hashmap[root] = right+1
-            return right+1
-        return -1
+            r_ right+1
+        r_ -1
     
-    def dfs(self, root, target, k, length, res, hashmap):
-        if not root: return
-        if root in hashmap:
+    ___ dfs(self, root, target, k, length, res, hashmap
+        __ not root: r_
+        __ root in hashmap:
             length = hashmap[root]
-        if length == k:
+        __ length __ k:
             res.append(root.val)
         self.dfs(root.left, target, k, length+1, res, hashmap)
         self.dfs(root.right, target, k, length+1, res, hashmap)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     root = TreeNode(0)
     root.left = TreeNode(1)
     root.left.left = TreeNode(3)

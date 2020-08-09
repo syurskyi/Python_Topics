@@ -1,10 +1,10 @@
-def primitive_triplets():
+___ primitive_triplets(
     pass
 
 
-def triplets_in_range():
+___ triplets_in_range(
     pass
 
 
-def is_triplet():
+___ is_triplet(
     pass

@@ -7,19 +7,19 @@ class Solution:
     @param: A: An array of Integer
     @return: an integer
     """
-    def longestIncreasingContinuousSubsequence(self, A):
-        if not A:
-            return 0
+    ___ longestIncreasingContinuousSubsequence(self, A
+        __ not A:
+            r_ 0
 
         size = self.get_lics_size(A)
         A.reverse()
         _size = self.get_lics_size(A)
 
-        return max(size, _size)
+        r_ max(size, _size)
 
-    def get_lics_size(self, A):
+    ___ get_lics_size(self, A
         ans = 0
-        n = len(A)
+        n = le.(A)
 
         """
         `dp[i]` means the size of LICS ended at `A[i]`
@@ -30,21 +30,21 @@ class Solution:
         # pi = [-1] * n
         # end_at = -1
 
-        for i in range(n):
-            if i > 0 and A[i] > A[i - 1]:
+        for i in range(n
+            __ i > 0 and A[i] > A[i - 1]:
                 dp[i] = dp[i - 1] + 1
                 # pi[i] = i - 1
-            if dp[i] > ans:
+            __ dp[i] > ans:
                 ans = dp[i]
                 # end_at = i
 
         # paths = [0] * ans
-        # for i in range(ans - 1, -1, -1):
+        # for i in range(ans - 1, -1, -1
         #     paths[i] = A[end_at]
         #     end_at = pi[end_at]
         # print(paths)
 
-        return ans
+        r_ ans
 
 
 """
@@ -55,26 +55,26 @@ class Solution:
     @param: A: An array of Integer
     @return: an integer
     """
-    def longestIncreasingContinuousSubsequence(self, A):
-        if not A:
-            return 0
+    ___ longestIncreasingContinuousSubsequence(self, A
+        __ not A:
+            r_ 0
 
         size = self.get_lics_size(A)
         A.reverse()
         _size = self.get_lics_size(A)
 
-        return max(size, _size)
+        r_ max(size, _size)
 
-    def get_lics_size(self, A):
+    ___ get_lics_size(self, A
         ans = size = 1
 
-        for i in range(1, len(A)):
-            if A[i] > A[i - 1]:
+        for i in range(1, le.(A)):
+            __ A[i] > A[i - 1]:
                 size += 1
-            else:
+            ____
                 size = 1
 
-            if size > ans:
+            __ size > ans:
                 ans = size
 
-        return ans
+        r_ ans

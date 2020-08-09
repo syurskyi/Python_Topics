@@ -13,51 +13,51 @@ The three ranges are : [0, 0], [2, 2], [0, 2] and their respective sums are: -2,
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def countRangeSum(self, nums, lower, upper):
+class Solution(object
+    ___ countRangeSum(self, nums, lower, upper
         """
-        MergeSort while counting required range sum
+        MergeSort w___ counting required range sum
         :type nums: List[int]
         :type lower: int
         :type upper: int
         :rtype: int
         """
-        if not nums: return 0
+        __ not nums: r_ 0
 
-        def msort(A, lo, hi):
-            if hi - lo <= 1: return 0
+        ___ msort(A, lo, hi
+            __ hi - lo <= 1: r_ 0
 
             mid = (lo + hi)/2
             cnt = msort(A, lo, mid) + msort(A, mid, hi)
 
             temp = []
             i = j = r = mid
-            for l in xrange(lo, mid):
-                while i < hi and A[i] - A[l] <  lower: i += 1
-                while j < hi and A[j] - A[l] <= upper: j += 1
+            for l in xrange(lo, mid
+                w___ i < hi and A[i] - A[l] <  lower: i += 1
+                w___ j < hi and A[j] - A[l] <= upper: j += 1
                 cnt += j - i
 
-                while r < hi and A[r] < A[l]:
+                w___ r < hi and A[r] < A[l]:
                     temp.append(A[r])
                     r += 1
 
                 temp.append(A[l])
 
-            while r < hi:  # dangling right
+            w___ r < hi:  # dangling right
                 temp.append(A[r])
                 r += 1
 
             A[lo:hi] = temp  # A[lo:hi] = sorted(A[lo:hi]  # Timsort, linear time
-            return cnt
+            r_ cnt
 
-        n = len(nums)
+        n = le.(nums)
         F = [0 for _ in xrange(n+1)]
-        for i in xrange(1, n+1):
+        for i in xrange(1, n+1
             F[i] = F[i-1] + nums[i-1]
 
-        return msort(F, 0, n+1)
+        r_ msort(F, 0, n+1)
 
 
-if __name__ == "__main__":
-    assert Solution().countRangeSum([0, 0], 0, 0) == 3
-    assert Solution().countRangeSum([-2, 5, -1], -2, 2) == 3
+__ __name__ __ "__main__":
+    assert Solution().countRangeSum([0, 0], 0, 0) __ 3
+    assert Solution().countRangeSum([-2, 5, -1], -2, 2) __ 3

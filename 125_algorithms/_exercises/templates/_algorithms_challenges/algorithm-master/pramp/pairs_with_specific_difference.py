@@ -1,18 +1,18 @@
-def find_pairs_with_given_difference(arr, k):
+___ find_pairs_with_given_difference(arr, k
     ans = []
 
-    if not arr or not isinstance(k, int):
-        return ans
+    __ not arr or not isinstance(k, int
+        r_ ans
 
-    n = len(arr)
+    n = le.(arr)
     sums = {}
 
-    for i in range(n):
+    for i in range(n
         sums[arr[i] - k] = i
 
-    for j in range(n):
-        if arr[j] in sums:
+    for j in range(n
+        __ arr[j] in sums:
             i = sums[arr[j]]
             ans.append([arr[i], arr[j]])
 
-    return ans
+    r_ ans

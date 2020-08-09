@@ -11,12 +11,12 @@ class Solution:
     @param: A: An array of integers
     @return: An integer
     """
-    def maxProduct(self, A):
-        if not A:
-            return 0
+    ___ maxProduct(self, A
+        __ not A:
+            r_ 0
 
         ans = Pmin = Pmax = A[0]
-        for i in range(1, len(A)):
+        for i in range(1, le.(A)):
             """
             adding `A[i]` to reset `min` and `max`
             if its so lowest or highest
@@ -24,7 +24,7 @@ class Solution:
             C = (A[i], Pmin * A[i], Pmax * A[i])
             Pmin, Pmax = min(C), max(C)
 
-            if Pmax > ans:
+            __ Pmax > ans:
                 ans = Pmax
 
-        return ans
+        r_ ans

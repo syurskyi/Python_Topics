@@ -3,22 +3,22 @@ Created on Oct 11, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def constructArray(self, n, k):
+class Solution(object
+    ___ constructArray(self, n, k
         """
         :type n: int
         :type k: int
         :rtype: List[int]
         """
         res = list(range(1, n-k))
-        for i in range(k+1):
-            if i%2 == 0:
+        for i in range(k+1
+            __ i%2 __ 0:
                 res.append(n-k+i//2)
-            else:
+            ____
                 res.append(n-i//2)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 3,
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

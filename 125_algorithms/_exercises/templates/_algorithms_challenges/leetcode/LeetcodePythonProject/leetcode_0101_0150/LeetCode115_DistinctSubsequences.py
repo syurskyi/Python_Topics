@@ -4,26 +4,26 @@ Created on Feb 3, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def numDistinct(self, s, t):
+class Solution(object
+    ___ numDistinct(self, s, t
         """
         :type s: str
         :type t: str
         :rtype: int
         """
-        m, n = len(s), len(t)
+        m, n = le.(s), le.(t)
         dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m):
+        for i in range(m
             dp[i][0] = 1
-        for i in range(m):
-            for j in range(n):
-                if s[i] == t[j]:
+        for i in range(m
+            for j in range(n
+                __ s[i] __ t[j]:
                     dp[i+1][j+1] = dp[i][j] + dp[i][j+1]
-                else:
+                ____
                     dp[i+1][j+1] = dp[i][j+1]
-        return dp[-1][-1]
+        r_ dp[-1][-1]
     
-    def test(self):
+    ___ test(self
         testCases= [
             ('rabbbit', 'rabbit'),
             ('abbt', 'abt'),

@@ -1,13 +1,13 @@
-from itertools import groupby
-from re import sub
+from itertools ______ groupby
+from re ______ sub
 
 
-def decode(string):
-    return sub(r'(\d+)(\D)', lambda m: m.group(2) * int(m.group(1)), string)
+___ decode(string
+    r_ sub(r'(\d+)(\D)', lambda m: m.group(2) * int(m.group(1)), string)
 
 
-def encode(string):
-    def single_helper(k, g):
-        l = len(list(g))
-        return k if l == 1 else str(l) + k
-    return ''.join(single_helper(key, group) for key, group in groupby(string))
+___ encode(string
+    ___ single_helper(k, g
+        l = le.(list(g))
+        r_ k __ l __ 1 else str(l) + k
+    r_ ''.join(single_helper(key, group) for key, group in groupby(string))

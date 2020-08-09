@@ -1,38 +1,38 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime
-from collections import namedtuple
+from datetime ______ datetime
+from collections ______ namedtuple
 
 
 Local = namedtuple('Local', ('dict', 'date', 'number'))
 
 
-class LedgerEntry(object):
-    def __init__(self):
+class LedgerEntry(object
+    ___ __init__(self
         self.date = None
         self.description = None
         self.change = None
 
 
-def create_entry(date, description, change):
+___ create_entry(date, description, change
     entry = LedgerEntry()
     entry.date = datetime.strptime(date, '%Y-%m-%d')
     entry.description = description
     entry.change = change
-    return entry
+    r_ entry
 
-def number(pos, neg, sep):
-    def wrapped(amount, currency):
-        fmt_str = pos if amount >= 0 else neg 
+___ number(pos, neg, sep
+    ___ wrapped(amount, currency
+        fmt_str = pos __ amount >= 0 else neg 
         units, change = abs(amount) // 100, abs(amount) % 100
         digits = str(units)[::-1]
-        return fmt_str.format(
+        r_ fmt_str.format(
             currency,
             sep.join(reversed(list(''.join(
-                reversed(digits[l:l+3])) for l in range(0, len(digits), 3)))),
+                reversed(digits[l:l+3])) for l in range(0, le.(digits), 3)))),
             change)
-    return wrapped
+    r_ wrapped
 
-def format_entries(currency, locale, entries):
+___ format_entries(currency, locale, entries
     localization = {
         'en_US':  Local(
              {"Date": "Date", "Description": "Description", "Change": "Change"},
@@ -52,6 +52,6 @@ def format_entries(currency, locale, entries):
         desc = entry.description
         table.append('{:s} | {:<25s} | {:>13s}'.format(
                 config.date(entry.date.day, entry.date.month, entry.date.year),
-                desc if len(desc) <= 25 else desc[:22] + '...',
+                desc __ le.(desc) <= 25 else desc[:22] + '...',
                 config.number(entry.change, symbols[currency])))
-    return '\n'.join(table)
+    r_ '\n'.join(table)

@@ -3,46 +3,46 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def xorGame(self, nums):
+class Solution(object
+    ___ xorGame(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
-        from functools import reduce
-        from operator import xor
-        return len(nums)%2==0 or reduce(xor,nums)==0
+        from functools ______ reduce
+        from operator ______ xor
+        r_ le.(nums)%2__0 or reduce(xor,nums)__0
     
-    def xorGame_own_TLE(self, nums):
+    ___ xorGame_own_TLE(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         mem = {}
-        return self.helper(nums, mem)
+        r_ self.helper(nums, mem)
     
-    def helper(self, nums, mem):
+    ___ helper(self, nums, mem
         s = str(nums)
-        if s in mem:
-            return mem[s]
-        if self.calc(nums) == 0:
+        __ s in mem:
+            r_ mem[s]
+        __ self.calc(nums) __ 0:
             mem[s] = True
-            return True
+            r_ True
         flag = False
-        for i in range(len(nums)):
-            if not self.helper(nums[:i]+nums[i+1:], mem):
+        for i in range(le.(nums)):
+            __ not self.helper(nums[:i]+nums[i+1:], mem
                 flag = True
                 break
         mem[s] = flag
-        return flag
+        r_ flag
     
-    def calc(self, nums):
+    ___ calc(self, nums
         res = 0
         for num in nums:
             res ^= num
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             [1, 1, 2],
             [1, 1, 2, 3], # True
@@ -53,5 +53,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -3,32 +3,32 @@ Created on Feb 23, 2017
 
 @author: MT
 '''
-class Queue(object):
-    def __init__(self):
+class Queue(object
+    ___ __init__(self
         self.stack1 = []
         self.stack2 = []
     
-    def push(self, x):
-        if self.empty():
+    ___ push(self, x
+        __ self.empty(
             self.stack1.append(x)
-        elif self.stack1:
+        ____ self.stack1:
             self.stack1.append(x)
-        else:
-            while self.stack2:
+        ____
+            w___ self.stack2:
                 self.stack1.append(self.stack2.pop())
             self.stack1.append(x)
     
-    def pop(self):
-        if self.stack1:
-            while self.stack1:
+    ___ pop(self
+        __ self.stack1:
+            w___ self.stack1:
                 self.stack2.append(self.stack1.pop())
-        return self.stack2.pop()
+        r_ self.stack2.pop()
     
-    def peep(self):
-        if self.stack1:
-            while self.stack1:
+    ___ peep(self
+        __ self.stack1:
+            w___ self.stack1:
                 self.stack2.append(self.stack1.pop())
-        return self.stack2[-1]
+        r_ self.stack2[-1]
     
-    def empty(self):
-        return not self.stack1 and not self.stack2
+    ___ empty(self
+        r_ not self.stack1 and not self.stack2

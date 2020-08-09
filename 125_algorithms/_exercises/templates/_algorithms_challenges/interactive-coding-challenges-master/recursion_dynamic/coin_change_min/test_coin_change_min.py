@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestCoinChange(object):
+class TestCoinChange(object
 
-    def test_coin_change(self):
+    ___ test_coin_change(self
         coin_changer = CoinChanger()
         assert_raises(TypeError, coin_changer.make_change, None, None)
         assert_equal(coin_changer.make_change([], 0), 0)
@@ -13,10 +13,10 @@ class TestCoinChange(object):
         print('Success: test_coin_change')
 
 
-def main():
+___ main(
     test = TestCoinChange()
     test.test_coin_change()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

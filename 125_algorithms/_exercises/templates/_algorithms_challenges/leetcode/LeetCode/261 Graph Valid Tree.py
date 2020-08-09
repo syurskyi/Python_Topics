@@ -1,13 +1,13 @@
 """
 Premium Question
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def validTree(self, n, edges):
+class Solution(object
+    ___ validTree(self, n, edges
         """
         A graph is a tree:
           1. no cycle
@@ -16,8 +16,8 @@ class Solution(object):
         :type edges: List[List[int]
         :rtype: bool
         """
-        if not edges:
-            return n in (0, 1)
+        __ not edges:
+            r_ n in (0, 1)
 
         V = defaultdict(list)
         for e in edges:
@@ -26,21 +26,21 @@ class Solution(object):
 
         visited = set()
         pathset = set()
-        if not self.dfs(V, edges[0][0], None, pathset, visited):
-            return False
+        __ not self.dfs(V, edges[0][0], None, pathset, visited
+            r_ False
 
-        return len(visited) == n
+        r_ le.(visited) __ n
 
-    def dfs(self, V, v, pi, pathset, visited):
-        if v in pathset:
-            return False
+    ___ dfs(self, V, v, pi, pathset, visited
+        __ v in pathset:
+            r_ False
 
         pathset.add(v)
         for nbr in V[v]:
-            if nbr != pi:  # since undirected graph
-                if not self.dfs(V, nbr, v, pathset, visited):
-                    return False
+            __ nbr != pi:  # since undirected graph
+                __ not self.dfs(V, nbr, v, pathset, visited
+                    r_ False
 
         pathset.remove(v)
         visited.add(v)
-        return True
+        r_ True

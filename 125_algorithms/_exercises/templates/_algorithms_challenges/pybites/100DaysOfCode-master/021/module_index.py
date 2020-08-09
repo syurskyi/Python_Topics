@@ -13,35 +13,35 @@ path = os.path.dirname(os.path.abspath(__file__))
 dirname = os.path.dirname(path)
 
 
-def get_dirs():
+___ get_dirs(
     for path in glob.glob('{}/[0-9]*'.format(dirname)):
         yield path
 
 
-def get_files(path):
-    for fi in os.listdir(path):
-        if fi.endswith('.py'):
+___ get_files(path
+    for fi in os.listdir(path
+        __ fi.endswith('.py'
             yield os.path.join(path, fi)
 
 
-def get_lines(script):
+___ get_lines(script
     with open(script) as f:
         for line in f:
             yield line
 
 
-def _is_package(dirname, day, mod):
+___ _is_package(dirname, day, mod
     mod_dir = os.path.join(dirname, day, mod)
-    return os.path.isdir(mod_dir)
+    r_ os.path.isdir(mod_dir)
 
 
-if __name__ == '__main__':
-    for path in get_dirs():
+__ __name__ __ '__main__':
+    for path in get_dirs(
         day = os.path.basename(path)
-        for script in get_files(path):
-            for line in get_lines(script):
+        for script in get_files(path
+            for line in get_lines(script
                 m = import_regex.match(line)
-                if m:
+                __ m:
                     mod = m.groupdict()['module']
                     index[mod].add(day)
 
@@ -50,23 +50,23 @@ if __name__ == '__main__':
     min_scripts = 1  # set to higher to limit output to most used modules
 
     for mod, scripts in sorted(index.items()):
-        if len(scripts) < min_scripts:
+        __ le.(scripts) < min_scripts:
             continue
 
-        if mod == 'common' or \
+        __ mod __ 'common' or \
             any(_is_package(dirname, day, mod) or
                 glob.glob(os.path.join(dirname, day, mod + '.py'))
-                for day in scripts):
+                for day in scripts
             source = 'own'
-        else:
-            source = 'stdlib' if is_std_lib(mod) else 'pypi'
+        ____
+            source = 'stdlib' __ is_std_lib(mod) else 'pypi'
         cnt[source] += 1
         appeared_in = ', '.join(sorted(scripts))
         print(f'{mod:<18} | {source:<6} | {appeared_in}')
 
     total = sum(cnt.values())
     print()
-    for source, count in cnt.most_common():
+    for source, count in cnt.most_common(
         print(f'{source:<10}: {count:>3} ({count/total*100:.1f}%)')
     print('-' * 30)
     print(f'Total: {total}')

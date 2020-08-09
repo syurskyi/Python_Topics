@@ -1,10 +1,10 @@
-def dictionary(intial,lst):
-    last_index = len(lst) - 1
+___ dictionary(intial,lst
+    last_index = le.(lst) - 1
     index = 0
     a_list = []
-    while index <= last_index:
+    w___ index <= last_index:
         word = lst[index]
-        if word.startswith(intial):
+        __ word.startswith(intial
             a_list.append(word)
         index = index + 1
-    return a_list
+    r_ a_list

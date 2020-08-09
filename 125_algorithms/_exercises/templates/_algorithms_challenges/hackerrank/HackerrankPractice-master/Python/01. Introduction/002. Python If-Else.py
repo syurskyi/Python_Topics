@@ -2,10 +2,10 @@
 # Score: 10
 
 
-def wierd(n):
-    if n % 2 == 1 or 6 <= n <= 20:
+___ wierd(n
+    __ n % 2 __ 1 or 6 <= n <= 20:
         print('Weird')
-    else:
+    ____
         print('Not Weird')
 
 

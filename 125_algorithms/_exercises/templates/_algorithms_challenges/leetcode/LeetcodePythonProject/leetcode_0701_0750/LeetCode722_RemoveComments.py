@@ -3,8 +3,8 @@ Created on Feb 19, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def removeComments(self, source):
+class Solution(object
+    ___ removeComments(self, source
         """
         :type source: List[str]
         :rtype: List[str]
@@ -16,29 +16,29 @@ class Solution(object):
         for src in source:
             j = 0
             isLineComment = False
-            while j < len(src):
+            w___ j < le.(src
                 c = src[j]
-                if j < len(src)-1 and src[j:j+2] == '//' and not isComment:
-                    if line and not isComment:
+                __ j < le.(src)-1 and src[j:j+2] __ '//' and not isComment:
+                    __ line and not isComment:
                         res.append(line)
                     isLineComment = True
                     line = ''
-                elif j < len(src)-1 and src[j:j+2] == '/*' and not isLineComment and not isComment:
+                ____ j < le.(src)-1 and src[j:j+2] __ '/*' and not isLineComment and not isComment:
                     j += 1
                     isComment = True
-                elif j < len(src)-1 and src[j:j+2] == '*/' and isComment:
+                ____ j < le.(src)-1 and src[j:j+2] __ '*/' and isComment:
                     j += 1
                     isComment = False
-                elif not isComment and not isLineComment:
+                ____ not isComment and not isLineComment:
                     line += c
-                if j == len(src)-1 and not isComment:
-                    if line:
+                __ j __ le.(src)-1 and not isComment:
+                    __ line:
                         res.append(line)
                     line = ''
                 j += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "/*Test program */",
@@ -94,5 +94,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

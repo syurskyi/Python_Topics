@@ -1,5 +1,5 @@
-class Solution(object):
-  def getSum(self, num1, num2):
+class Solution(object
+  ___ getSum(self, num1, num2
     """
     :type a: int
     :type b: int
@@ -8,23 +8,23 @@ class Solution(object):
     ans = 0
     mask = 0x01
     carry = 0
-    for i in range(0, 32):
+    for i in range(0, 32
       a = num1 & mask
       b = num2 & mask
       c = carry
       carry = 0
-      if a ^ b != 0:
-        if c == 1:
+      __ a ^ b != 0:
+        __ c __ 1:
           carry = 1
-        else:
+        ____
           ans |= mask
-      else:
-        if a & mask > 0:
+      ____
+        __ a & mask > 0:
           carry = 1
-        if c == 1:
+        __ c __ 1:
           ans |= mask
 
       mask = mask << 1
-    if ans > 0x7fffffff:
-      return ans - 0xffffffff - 1
-    return ans
+    __ ans > 0x7fffffff:
+      r_ ans - 0xffffffff - 1
+    r_ ans

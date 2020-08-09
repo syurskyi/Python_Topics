@@ -9,8 +9,8 @@ Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def minCut(self, s):
+class Solution(object
+    ___ minCut(self, s
         """
         Let P[i][j] indicates whether s[i:j] is palindrome
         P[i][j] = P[i+1][j-1] && s[i] == s[j-1]
@@ -19,32 +19,32 @@ class Solution(object):
         C[i] = 0 if s[:i] is palindrome
         C[i] = min(C[j]+1 for j<i if s[j:i] is palindrome)
         """
-        n = len(s)
+        n = le.(s)
 
         P = [[False for _ in xrange(n+1)] for _ in xrange(n+1)]
-        for i in xrange(n+1):  # len 0
+        for i in xrange(n+1  # le. 0
             P[i][i] = True
-        for i in xrange(n):  # len 1
+        for i in xrange(n  # le. 1
             P[i][i+1] = True
 
-        for i in xrange(n, -1, -1):  # len 2 and above
-            for j in xrange(i+2, n+1):
-                P[i][j] = P[i+1][j-1] and s[i] == s[j-1]
+        for i in xrange(n, -1, -1  # le. 2 and above
+            for j in xrange(i+2, n+1
+                P[i][j] = P[i+1][j-1] and s[i] __ s[j-1]
 
         C = [i for i in xrange(n+1)]  # initial values, max is all cut
-        for i in xrange(n+1):
-            if P[0][i]:
+        for i in xrange(n+1
+            __ P[0][i]:
                 C[i] = 0
-            else:
+            ____
                 C[i] = min(
                     C[j] + 1
                     for j in xrange(i)
-                    if P[j][i]
+                    __ P[j][i]
                 )
 
-        return C[n]
+        r_ C[n]
 
-    def minCut_dp(self, s):
+    ___ minCut_dp(self, s
         """
         dp
 
@@ -76,38 +76,38 @@ class Solution(object):
         :param s: str
         :return: int
         """
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
-        length = len(s)
+        length = le.(s)
         # palindrome dp
         P = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1):
+        for i in xrange(length+1
             try:
                 P[i][i] = True
                 P[i][i+1] = True
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1):
-            for j in xrange(i+2, length+1):
+        for i in xrange(length, -1, -1
+            for j in xrange(i+2, length+1
                 try:
-                    P[i][j] = P[i+1][j-1] and s[i] == s[j-1]
+                    P[i][j] = P[i+1][j-1] and s[i] __ s[j-1]
                 except IndexError:
                     P[i][j] = True
 
         # min cut dp
         D = [length-i-1 for i in xrange(length)]  # max is all cut
-        for i in xrange(length-1, -1, -1):
-            if P[i][length]:
+        for i in xrange(length-1, -1, -1
+            __ P[i][length]:
                 D[i] = 0
-            else:
-                for j in xrange(i+1, length):
-                    if P[i][j]:
+            ____
+                for j in xrange(i+1, length
+                    __ P[i][j]:
                         D[i] = min(D[i], D[j]+1)
-        return D[0]
+        r_ D[0]
 
-    def minCut_MLE(self, s):
+    ___ minCut_MLE(self, s
         """
         bfs
         :param s: str
@@ -115,17 +115,17 @@ class Solution(object):
         """
         q = [[s]]
         count = -1
-        while q:
+        w___ q:
             # cur = q.pop(0)  # not directly pop
-            length = len(q)
+            length = le.(q)
             count += 1
-            for cur_level in xrange(length):
+            for cur_level in xrange(length
                 cur = q[cur_level]
-                if all(self.is_palindrome(item) for item in cur):
-                    return count
+                __ all(self.is_palindrome(item) for item in cur
+                    r_ count
                 # 1 cut
-                for ind, val in enumerate(cur):
-                    for i in xrange(1, len(val)):
+                for ind, val in enumerate(cur
+                    for i in xrange(1, le.(val)):
                         cut1 = val[:i]
                         cut2 = val[i:]
                         new_cur = list(cur)
@@ -134,7 +134,7 @@ class Solution(object):
                         q.append(new_cur)
             q = q[length:]
 
-    def minCut_TLE(self, s):
+    ___ minCut_TLE(self, s
         """
         dp
 
@@ -156,31 +156,31 @@ class Solution(object):
         :param s: str
         :return: int
         """
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
-        length = len(s)
+        length = le.(s)
         dp = [[1<<32-1 for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1):
+        for i in xrange(length+1
             try:
                 dp[i][i] = 0
                 dp[i][i+1] = 0
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1):
-            for k in xrange(i, length+1):
-                if self.is_palindrome(s[i:k]):
+        for i in xrange(length, -1, -1
+            for k in xrange(i, length+1
+                __ self.is_palindrome(s[i:k]
                     dp[i][k] = 0
-                else:
+                ____
                     dp[i][k] = min(1+dp[i][j]+dp[j][k] for j in xrange(i+1, k))
 
-        return dp[0][length]
+        r_ dp[0][length]
 
-    def is_palindrome(self, s):
-        return s == s[::-1]
+    ___ is_palindrome(self, s
+        r_ s __ s[::-1]
 
-    def minCut_TLE2(self, s):
+    ___ minCut_TLE2(self, s
         """
         dp
 
@@ -206,47 +206,47 @@ class Solution(object):
         :param s: str
         :return: int
         """
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
-        length = len(s)
+        length = le.(s)
         # palindrome dp
         dp2 = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1):
+        for i in xrange(length+1
             try:
                 dp2[i][i] = True
                 dp2[i][i+1] = True
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1):
-            for j in xrange(i+2, length+1):
+        for i in xrange(length, -1, -1
+            for j in xrange(i+2, length+1
                 try:
-                    dp2[i][j] = dp2[i+1][j-1] and s[i] == s[j-1]
+                    dp2[i][j] = dp2[i+1][j-1] and s[i] __ s[j-1]
                 except IndexError:
                     dp2[i][j] = True
 
 
         # min cut dp
         dp = [[1<<32-1 for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1):
+        for i in xrange(length+1
             try:
                 dp[i][i] = 0
                 dp[i][i+1] = 0
             except IndexError:
                 pass
 
-        for i in xrange(length, -1, -1):
-            for k in xrange(i, length+1):
-                if dp2[i][k]:
+        for i in xrange(length, -1, -1
+            for k in xrange(i, length+1
+                __ dp2[i][k]:
                     dp[i][k] = 0
-                else:
+                ____
                     dp[i][k] = min(1+dp[i][j]+dp[j][k] for j in xrange(i+1, k))
 
-        return dp[0][length]
+        r_ dp[0][length]
 
 
-if __name__ == "__main__":
-    assert Solution().minCut("aabbc") == 2
+__ __name__ __ "__main__":
+    assert Solution().minCut("aabbc") __ 2
     assert Solution().minCut(
-        "apjesgpsxoeiokmqmfgvjslcjukbqxpsobyhjpbgdfruqdkeiszrlmtwgfxyfostpqczidfljwfbbrflkgdvtytbgqalguewnhvvmcgxboycffopmtmhtfizxkmeftcucxpobxmelmjtuzigsxnncxpaibgpuijwhankxbplpyejxmrrjgeoevqozwdtgospohznkoyzocjlracchjqnggbfeebmuvbicbvmpuleywrpzwsihivnrwtxcukwplgtobhgxukwrdlszfaiqxwjvrgxnsveedxseeyeykarqnjrtlaliyudpacctzizcftjlunlgnfwcqqxcqikocqffsjyurzwysfjmswvhbrmshjuzsgpwyubtfbnwajuvrfhlccvfwhxfqthkcwhatktymgxostjlztwdxritygbrbibdgkezvzajizxasjnrcjwzdfvdnwwqeyumkamhzoqhnqjfzwzbixclcxqrtniznemxeahfozp") == 452
+        "apjesgpsxoeiokmqmfgvjslcjukbqxpsobyhjpbgdfruqdkeiszrlmtwgfxyfostpqczidfljwfbbrflkgdvtytbgqalguewnhvvmcgxboycffopmtmhtfizxkmeftcucxpobxmelmjtuzigsxnncxpaibgpuijwhankxbplpyejxmrrjgeoevqozwdtgospohznkoyzocjlracchjqnggbfeebmuvbicbvmpuleywrpzwsihivnrwtxcukwplgtobhgxukwrdlszfaiqxwjvrgxnsveedxseeyeykarqnjrtlaliyudpacctzizcftjlunlgnfwcqqxcqikocqffsjyurzwysfjmswvhbrmshjuzsgpwyubtfbnwajuvrfhlccvfwhxfqthkcwhatktymgxostjlztwdxritygbrbibdgkezvzajizxasjnrcjwzdfvdnwwqeyumkamhzoqhnqjfzwzbixclcxqrtniznemxeahfozp") __ 452

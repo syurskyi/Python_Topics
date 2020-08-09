@@ -1,15 +1,15 @@
-from lintcode import ListNode
+from lintcode ______ ListNode
 
 
 class Stack:
-    def __init__(self):
+    ___ __init__(self
         self.dummy = self.tail = ListNode(-1)
 
     """
     @param: x: An integer
     @return: nothing
     """
-    def push(self, x):
+    ___ push(self, x
         node = ListNode(x)
         node.pre = self.tail
         self.tail.nxt = node
@@ -18,9 +18,9 @@ class Stack:
     """
     @return: nothing
     """
-    def pop(self):
-        if self.isEmpty():
-            return
+    ___ pop(self
+        __ self.isEmpty(
+            r_
         node = self.tail
         self.tail = node.pre
         self.tail.nxt = node.pre = None
@@ -28,13 +28,13 @@ class Stack:
     """
     @return: An integer
     """
-    def top(self):
-        if self.isEmpty():
-            return
-        return self.tail.val
+    ___ top(self
+        __ self.isEmpty(
+            r_
+        r_ self.tail.val
 
     """
     @return: True if the stack is empty
     """
-    def isEmpty(self):
-        return self.dummy is self.tail
+    ___ isEmpty(self
+        r_ self.dummy is self.tail

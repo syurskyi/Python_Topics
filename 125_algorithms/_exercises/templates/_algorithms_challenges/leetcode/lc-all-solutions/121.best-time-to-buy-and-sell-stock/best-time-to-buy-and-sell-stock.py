@@ -1,14 +1,14 @@
-class Solution(object):
-  def maxProfit(self, prices):
+class Solution(object
+  ___ maxProfit(self, prices
     """
     :type prices: List[int]
     :rtype: int
     """
-    if not prices:
-      return 0
+    __ not prices:
+      r_ 0
     ans = 0
     pre = prices[0]
-    for i in range(1, len(prices)):
+    for i in range(1, le.(prices)):
       pre = min(pre, prices[i])
       ans = max(prices[i] - pre, ans)
-    return ans
+    r_ ans

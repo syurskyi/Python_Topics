@@ -1,5 +1,5 @@
-class Solution(object):
-  def maxNumber(self, _nums1, _nums2, k):
+class Solution(object
+  ___ maxNumber(self, _nums1, _nums2, k
     """
     :type nums1: List[int]
     :type nums2: List[int]
@@ -7,40 +7,40 @@ class Solution(object):
     :rtype: List[int]
     """
 
-    def getKDigits(num, k):
-      drop = len(num) - k
+    ___ getKDigits(num, k
+      drop = le.(num) - k
       stack = []
       for c in num:
-        while drop > 0 and stack and stack[-1] < c:
+        w___ drop > 0 and stack and stack[-1] < c:
           stack.pop()
           drop -= 1
         stack.append(c)
-      return stack[:k]
+      r_ stack[:k]
 
-    def merge(nums1, nums2):
+    ___ merge(nums1, nums2
       ans = []
       i = j = 0
-      while i < len(nums1) and j < len(nums2):
-        if nums1[i:] > nums2[j:]:
+      w___ i < le.(nums1) and j < le.(nums2
+        __ nums1[i:] > nums2[j:]:
           ans.append(nums1[i])
           i += 1
-        else:
+        ____
           ans.append(nums2[j])
           j += 1
 
-      if i < len(nums1):
+      __ i < le.(nums1
         ans += nums1[i:]
-      if j < len(nums2):
+      __ j < le.(nums2
         ans += nums2[j:]
-      return ans
+      r_ ans
 
     ans = []
-    for i in range(0, k + 1):
-      if i <= len(_nums1) and k - i <= len(_nums2):
+    for i in range(0, k + 1
+      __ i <= le.(_nums1) and k - i <= le.(_nums2
         n1 = getKDigits(_nums1, i)
         n2 = getKDigits(_nums2, k - i)
-        if i == 2:
+        __ i __ 2:
           print
           n1, n2
         ans.append(merge(n1, n2))
-    return max(ans)
+    r_ max(ans)

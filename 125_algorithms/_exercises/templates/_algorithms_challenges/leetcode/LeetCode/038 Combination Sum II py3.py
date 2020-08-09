@@ -29,28 +29,28 @@ A solution set is:
   [5]
 ]
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+    ___ combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         ret = []
         candidates.sort()
         self.dfs(candidates, 0, [], 0, target, ret)
-        return ret
+        r_ ret
 
-    def dfs(self, candidates, i, cur, cur_sum, target, ret):
-        if cur_sum == target:
+    ___ dfs(self, candidates, i, cur, cur_sum, target, ret
+        __ cur_sum __ target:
             ret.append(list(cur))
-            return
+            r_
 
-        if cur_sum > target or i >= len(candidates):
-            return
+        __ cur_sum > target or i >= le.(candidates
+            r_
 
         # not choose A_i
         # to de-dup, need to jump
         j = i + 1
-        while j < len(candidates) and candidates[j] == candidates[i]:
+        w___ j < le.(candidates) and candidates[j] __ candidates[i]:
             j += 1
 
         self.dfs(candidates, j, cur, cur_sum, target, ret)
@@ -63,5 +63,5 @@ class Solution:
         cur_sum -= candidates[i]
 
 
-if __name__ == "__main__":
-    assert Solution().combinationSum2([2,5,2,1,2], 5) == [[5], [1,2,2]]
+__ __name__ __ "__main__":
+    assert Solution().combinationSum2([2,5,2,1,2], 5) __ [[5], [1,2,2]]

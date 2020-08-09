@@ -1,18 +1,18 @@
-from datetime import date
+from datetime ______ date
 
-from Previous.bday import weekday_of_birth_date
+from Previous.bday ______ weekday_of_birth_date
 
 
-def test_leonardo_dicaprio_bday():
+___ test_leonardo_dicaprio_bday(
     dt = date(1974, 11, 11)
-    assert weekday_of_birth_date(dt) == 'Monday'
+    assert weekday_of_birth_date(dt) __ 'Monday'
 
 
-def test_will_smith_bday():
+___ test_will_smith_bday(
     dt = date(1968, 9, 25)
-    assert weekday_of_birth_date(dt) == 'Wednesday'
+    assert weekday_of_birth_date(dt) __ 'Wednesday'
 
 
-def test_robert_downey_bday():
+___ test_robert_downey_bday(
     dt = date(1965, 4, 4)
-    assert weekday_of_birth_date(dt) == 'Sunday'
+    assert weekday_of_birth_date(dt) __ 'Sunday'

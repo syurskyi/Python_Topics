@@ -1,5 +1,5 @@
 n = int(input())
-for i in range(n):
+for i in range(n
     d1, h1, m1, s1, d2, h2, m2, s2 = input().split()
     d = (int(d2)-int(d1)) * 24 * 60 * 60
     h = (int(h2)-int(h1)) * 60 * 60

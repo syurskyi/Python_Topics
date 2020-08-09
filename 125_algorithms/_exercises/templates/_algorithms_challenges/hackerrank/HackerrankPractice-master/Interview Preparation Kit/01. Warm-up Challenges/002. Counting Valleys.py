@@ -2,17 +2,17 @@
 #  Score: 15
 
 
-def counting_valleys(n, s):
+___ counting_valleys(n, s
     current_level = 0
     count = 0
-    for i in range(n):
-        if s[i] == 'U':
+    for i in range(n
+        __ s[i] __ 'U':
             current_level += 1
-        elif s[i] == 'D':
+        ____ s[i] __ 'D':
             current_level -= 1
-            if current_level == -1:
+            __ current_level __ -1:
                 count += 1
-    return count
+    r_ count
 
 
 n = int(input().strip())

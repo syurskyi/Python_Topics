@@ -4,22 +4,22 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def increasingTriplet(self, nums):
-        if not nums: return False
+class Solution(object
+    ___ increasingTriplet(self, nums
+        __ not nums: r_ False
 #         first = float('inf')
         first = nums[0]
         second = float('inf')
-        for i in range(1, len(nums)):
-            if nums[i] <= first:
+        for i in range(1, le.(nums)):
+            __ nums[i] <= first:
                 first = nums[i]
-            elif nums[i] <= second:
+            ____ nums[i] <= second:
                 second = nums[i]
-            else:
-                return True
-        return False
+            ____
+                r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 3],
             [5, 4, 3, 2, 1],
@@ -37,6 +37,6 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

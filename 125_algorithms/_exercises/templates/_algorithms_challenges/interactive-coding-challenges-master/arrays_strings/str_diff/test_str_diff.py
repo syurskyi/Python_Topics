@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestFindDiff(object):
+class TestFindDiff(object
 
-    def test_find_diff(self):
+    ___ test_find_diff(self
         solution = Solution()
         assert_raises(TypeError, solution.find_diff, None)
         assert_equal(solution.find_diff('ab', 'aab'), 'a')
@@ -17,10 +17,10 @@ class TestFindDiff(object):
         print('Success: test_find_diff')
 
 
-def main():
+___ main(
     test = TestFindDiff()
     test.test_find_diff()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

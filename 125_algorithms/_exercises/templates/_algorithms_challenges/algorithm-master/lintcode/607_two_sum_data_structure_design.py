@@ -5,23 +5,23 @@ class TwoSum:
     @param: number: An integer
     @return: nothing
     """
-    def add(self, number):
-        if number in self.count:
+    ___ add(self, number
+        __ number in self.count:
             self.count[number] += 1
-        else:
+        ____
             self.count[number] = 1
 
     """
     @param: value: An integer
     @return: Find if there exists any pair of numbers which sum is equal to the value.
     """
-    def find(self, value):
+    ___ find(self, value
         for num in self.count:
             remaining = value - num
-            if remaining not in self.count:
+            __ remaining not in self.count:
                 continue
-            if remaining != num:
-                return True
-            if remaining == num and self.count[num] > 1:
-                return True
-        return False
+            __ remaining != num:
+                r_ True
+            __ remaining __ num and self.count[num] > 1:
+                r_ True
+        r_ False

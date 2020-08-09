@@ -1,10 +1,10 @@
-from nose.tools import assert_true
-from nose.tools import raises
+from nose.tools ______ assert_true
+from nose.tools ______ raises
 
 
-class TestTrie(object):       
+class TestTrie(object
 
-    def test_trie(self):
+    ___ test_trie(self
         trie = Trie()
 
         print('Test: Insert')
@@ -12,7 +12,7 @@ class TestTrie(object):
                  'me', 'men', 'mens', 'met']
         for word in words:
             trie.insert(word)
-        for word in trie.list_words():
+        for word in trie.list_words(
             assert_true(trie.find(word) is not None)
             
         print('Test: Remove me')
@@ -58,17 +58,17 @@ class TestTrie(object):
         print('Success: test_trie')
 
     @raises(Exception)
-    def test_trie_remove_invalid(self):
+    ___ test_trie_remove_invalid(self
         print('Test: Remove from empty trie')
         trie = Trie()
         assert_true(trie.remove('foo') is None) 
 
 
-def main():
+___ main(
     test = TestTrie()
     test.test_trie()
     test.test_trie_remove_invalid()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

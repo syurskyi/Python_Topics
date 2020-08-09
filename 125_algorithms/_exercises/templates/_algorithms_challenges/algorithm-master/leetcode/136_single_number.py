@@ -1,5 +1,5 @@
 class Solution:
-    def singleNumber(self, nums):
+    ___ singleNumber(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -7,4 +7,4 @@ class Solution:
         ans = 0
         for num in nums:
             ans ^= num
-        return ans
+        r_ ans

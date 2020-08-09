@@ -1,7 +1,7 @@
 # !/usr/bin/env python
-import datetime
+______ datetime
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     age = (int(raw_input('Please enter your age:')))
     name = (str(raw_input('Please enter your name:')))
     year = (int(raw_input('Please enter the current year:')))
@@ -18,6 +18,6 @@ if __name__ == "__main__":
     # now = datetime.datetime.now()
     # finalYear = now.year + yearsTill100
     # print('You will be 100 in ' + finalYear)
-else:
+____
 
     print('I am being imported')

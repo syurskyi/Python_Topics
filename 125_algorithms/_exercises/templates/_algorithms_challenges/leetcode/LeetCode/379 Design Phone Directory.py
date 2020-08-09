@@ -8,8 +8,8 @@ release: Recycle or release a number.
 __author__ = 'Daniel'
 
 
-class PhoneDirectory(object):
-    def __init__(self, maxNumbers):
+class PhoneDirectory(object
+    ___ __init__(self, maxNumbers
         """
         Pool of numbers
         Two parts:
@@ -22,37 +22,37 @@ class PhoneDirectory(object):
         self.l = maxNumbers
         self.i = 0
 
-    def get(self):
+    ___ get(self
         """
         Provide a number which is not assigned to anyone.
         @return - Return an available number. Return -1 if none is available.
         :rtype: int
         """
-        if self.released:
-            return self.released.pop()
-        if self.i < self.l:
+        __ self.released:
+            r_ self.released.pop()
+        __ self.i < self.l:
             ret = self.i
             self.i += 1
-            return ret
+            r_ ret
 
-        return -1
+        r_ -1
 
-    def check(self, number):
+    ___ check(self, number
         """
         Check if a number is available or not.
         :type number: int
         :rtype: bool
         """
-        return number in self.released or self.i <= number < self.l
+        r_ number in self.released or self.i <= number < self.l
 
-    def release(self, number):
+    ___ release(self, number
         """
         Recycle or release a number.
         :type number: int
         :rtype: void
         """
-        if self.i <= number < self.l:
-            return
+        __ self.i <= number < self.l:
+            r_
 
         self.released.add(number)
 

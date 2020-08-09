@@ -6,14 +6,14 @@
 target = [0, 1, 2]
 
 
-def solution(arr):
+___ solution(arr
     min_arr = min(arr)
-    results = [0] * len(target) # array for results with each target
+    results = [0] * le.(target) # array for results with each target
     for item in arr:
         for i in target:
             gap = item - min_arr + i
             results[i] += gap // 5 + (gap%5) // 2 + (gap%5)%2
-    return min(results)
+    r_ min(results)
 
 
 for t in range(int(input())):

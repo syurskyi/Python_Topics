@@ -3,30 +3,30 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def predictPartyVictory(self, senate):
+class Solution(object
+    ___ predictPartyVictory(self, senate
         """
         :type senate: str
         :rtype: str
         """
         queue1 = []
         queue2 = []
-        n = len(senate)
-        for i in range(n):
-            if senate[i] == 'R':
+        n = le.(senate)
+        for i in range(n
+            __ senate[i] __ 'R':
                 queue1.append(i)
-            else:
+            ____
                 queue2.append(i)
-        while queue1 and queue2:
+        w___ queue1 and queue2:
             r_index = queue1.pop(0)
             d_index = queue2.pop(0)
-            if r_index < d_index:
+            __ r_index < d_index:
                 queue1.append(r_index+n)
-            else:
+            ____
                 queue2.append(d_index+n)
-        return 'Radiant' if len(queue1) > len(queue2) else 'Dire'
+        r_ 'Radiant' __ le.(queue1) > le.(queue2) else 'Dire'
     
-    def test(self):
+    ___ test(self
         testCases = [
             'RD',
             'RDD',
@@ -38,5 +38,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

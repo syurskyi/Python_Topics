@@ -15,17 +15,17 @@ Note:
 The given array size will in the range [2, 10000].
 The given array's numbers won't have any order.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def findErrorNums(self, nums: List[int]) -> List[int]:
+    ___ findErrorNums(self, nums: List[int]) -> List[int]:
         """
         https://leetcode.com/problems/set-mismatch/discuss/113999/C%2B%2B-True-O(1)-space-O(n)-time-(No-input-modifying)-with-clear-explanation
         """
-        n = len(nums)
+        n = le.(nums)
         acc0 = 0  # a ^ b
-        for i in range(n):
+        for i in range(n
             acc0 ^= nums[i]
             acc0 ^= i + 1
 
@@ -34,19 +34,19 @@ class Solution:
         # xor them to get a or b
         acc1 = 0
         acc2 = 0
-        for i in range(n):
-            if nums[i] & first_1:
+        for i in range(n
+            __ nums[i] & first_1:
                 acc1 ^= nums[i]
-            else:
+            ____
                 acc2 ^= nums[i]
 
-            if (i + 1) & first_1:
+            __ (i + 1) & first_1:
                 acc1 ^= i + 1
-            else:
+            ____
                 acc2 ^= i + 1
 
-        for i in range(n):
-            if nums[i] == acc1:
-                return [acc1, acc2]
+        for i in range(n
+            __ nums[i] __ acc1:
+                r_ [acc1, acc2]
 
-        return [acc2, acc1]
+        r_ [acc2, acc1]

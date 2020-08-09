@@ -1,2 +1,2 @@
-def is_armstrong(number):
+___ is_armstrong(number
     pass

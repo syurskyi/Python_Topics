@@ -1,58 +1,58 @@
-class StackUnderflowError(Exception):
+class StackUnderflowError(Exception
     pass
 
 
-def is_integer(string):
+___ is_integer(string
     try:
         int(string)
-        return True
+        r_ True
     except ValueError:
-        return False
+        r_ False
 
 
-def evaluate(input_data):
-    if not input_data:
-        return []
+___ evaluate(input_data
+    __ not input_data:
+        r_ []
     defines = {}
-    while input_data[0][:1] == ':':
+    w___ input_data[0][:1] __ ':':
         values = input_data.pop(0).split()
         values.pop()
         values.pop(0)
         key = values.pop(0).lower()
-        if is_integer(key):
+        __ is_integer(key
             raise ValueError("Integers cannot be redefined")
         defines[key] = values
     stack = []
     input_data = input_data[-1].split()
-    while any(input_data):
+    w___ any(input_data
         word = input_data.pop(0).lower()
         try:
-            if is_integer(word):
+            __ is_integer(word
                 stack.append(int(word))
-            elif word in defines:
+            ____ word in defines:
                 input_data = defines[word] + input_data
-            elif word == '+':
+            ____ word __ '+':
                 stack.append(stack.pop() + stack.pop())
-            elif word == '-':
+            ____ word __ '-':
                 stack.append(-stack.pop() + stack.pop())
-            elif word == '*':
+            ____ word __ '*':
                 stack.append(stack.pop() * stack.pop())
-            elif word == '/':
+            ____ word __ '/':
                 divisor = stack.pop()
-                if divisor == 0:
+                __ divisor __ 0:
                     raise ZeroDivisionError("Attempted to divide by zero")
                 stack.append(int(stack.pop() / divisor))
-            elif word == 'dup':
+            ____ word __ 'dup':
                 stack.append(stack[-1])
-            elif word == 'drop':
+            ____ word __ 'drop':
                 stack.pop()
-            elif word == 'swap':
+            ____ word __ 'swap':
                 stack.append(stack[-2])
                 del stack[-3]
-            elif word == 'over':
+            ____ word __ 'over':
                 stack.append(stack[-2])
-            else:
+            ____
                 raise ValueError("{} has not been defined".format(word))
         except IndexError:
             raise StackUnderflowError("Insufficient number of items in stack")
-    return stack
+    r_ stack

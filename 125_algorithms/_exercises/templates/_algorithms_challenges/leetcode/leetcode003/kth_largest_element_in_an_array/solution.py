@@ -9,10 +9,10 @@ Note:
 You may assume k is always valid, 1 <= k <= array's length
 """
 
-import heapq
+______ heapq
 
-class Solution(object):
-    def findKthLargest(self, nums, k):
+class Solution(object
+    ___ findKthLargest(self, nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -21,10 +21,10 @@ class Solution(object):
         h = []
         for e in nums:
             heapq.heappush(h, (-e, e))
-        for i in range(k):
+        for i in range(k
             w, e = heapq.heappop(h)
-            if i == k - 1:
-                return e
+            __ i __ k - 1:
+                r_ e
 
 
 a1 = [3, 2, 1, 5, 6, 4]

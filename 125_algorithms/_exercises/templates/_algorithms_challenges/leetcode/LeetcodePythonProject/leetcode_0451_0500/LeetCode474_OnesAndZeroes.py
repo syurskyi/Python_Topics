@@ -4,34 +4,34 @@ Created on Apr 26, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findMaxForm(self, strs, m, n):
+class Solution(object
+    ___ findMaxForm(self, strs, m, n
         """
         :type strs: List[str]
         :type m: int
         :type n: int
         :rtype: int
         """
-        l = len(strs)
+        l = le.(strs)
         dp = [[[0]*(n+1) for _ in range(m+1)] for _ in range(l+1)]
-        for i in range(l+1):
+        for i in range(l+1
             nums = [0, 0]
-            if i > 0:
+            __ i > 0:
                 s = strs[i-1]
                 count0 = s.count('0')
-                count1 = len(s)-count0
+                count1 = le.(s)-count0
                 nums = [count0, count1]
-            for j in range(m+1):
-                for k in range(n+1):
-                    if i == 0:
+            for j in range(m+1
+                for k in range(n+1
+                    __ i __ 0:
                         dp[i][j][k] = 0
-                    elif j >= nums[0] and k >= nums[1]:
+                    ____ j >= nums[0] and k >= nums[1]:
                         dp[i][j][k] = max(dp[i-1][j][k], dp[i-1][j-nums[0]][k-nums[1]]+1)
-                    else:
+                    ____
                         dp[i][j][k] = dp[i-1][j][k]
-        return dp[l][m][n]
+        r_ dp[l][m][n]
     
-    def findMaxForm_slow(self, strs, m, n):
+    ___ findMaxForm_slow(self, strs, m, n
         """
         :type strs: List[str]
         :type m: int
@@ -41,15 +41,15 @@ class Solution(object):
         # Knapsack Problem
         dp = [[0]*(n+1) for _ in range(m+1)]
         for s in strs:
-            for i in range(m, -1, -1):
-                for j in range(n, -1, -1):
+            for i in range(m, -1, -1
+                for j in range(n, -1, -1
                     count0 = s.count('0')
-                    count1 = len(s)-count0
-                    if i>=count0 and j>=count1:
+                    count1 = le.(s)-count0
+                    __ i>=count0 and j>=count1:
                         dp[i][j] = max(dp[i][j], dp[i-count0][j-count1]+1)
-        return dp[-1][-1]
+        r_ dp[-1][-1]
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 ["10", "0001", "111001", "1", "0"], 5, 3
@@ -63,5 +63,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

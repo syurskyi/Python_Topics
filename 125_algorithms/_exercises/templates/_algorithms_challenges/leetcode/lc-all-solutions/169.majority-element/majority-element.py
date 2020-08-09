@@ -1,3 +1,3 @@
-class Solution(object):
-  def majorityElement(self, num):
-    return sorted(num)[len(num) / 2]
+class Solution(object
+  ___ majorityElement(self, num
+    r_ sorted(num)[le.(num) / 2]

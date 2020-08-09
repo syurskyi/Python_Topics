@@ -1,17 +1,17 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestFoo(object):
+class TestFoo(object
 
-    def test_foo(self):
+    ___ test_foo(self
         assert_equal(foo(None), None)
         assert_equal(foo(0), 0)
         assert_equal(foo('bar'), 'bar')
         print('Success: test_foo')
 
-def main():
+___ main(
     test = TestFoo()
     test.test_foo()
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

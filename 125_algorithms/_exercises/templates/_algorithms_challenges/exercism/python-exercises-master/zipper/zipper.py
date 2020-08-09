@@ -1,28 +1,28 @@
-class Zipper(object):
+class Zipper(object
     @staticmethod
-    def from_tree(tree):
+    ___ from_tree(tree
         pass
 
-    def value(self):
+    ___ value(self
         pass
 
-    def set_value(self):
+    ___ set_value(self
         pass
 
-    def left(self):
+    ___ left(self
         pass
 
-    def set_left(self):
+    ___ set_left(self
         pass
 
-    def right(self):
+    ___ right(self
         pass
 
-    def set_right(self):
+    ___ set_right(self
         pass
 
-    def up(self):
+    ___ up(self
         pass
 
-    def to_tree(self):
+    ___ to_tree(self
         pass

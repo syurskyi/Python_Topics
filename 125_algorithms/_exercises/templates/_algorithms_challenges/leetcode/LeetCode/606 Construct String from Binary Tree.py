@@ -36,23 +36,23 @@ relationship between the input and the output.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def tree2str(self, t: TreeNode) -> str:
-        if not t:
-            return ""
+    ___ tree2str(self, t: TreeNode) -> str:
+        __ not t:
+            r_ ""
 
         left = self.tree2str(t.left)
         right = self.tree2str(t.right)
         ret = [str(t.val)]
-        if left or right:
+        __ left or right:
             ret.append("(" + left + ")")
-        if right:
+        __ right:
             ret.append("(" + right + ")")
 
-        return "".join(ret)
+        r_ "".join(ret)

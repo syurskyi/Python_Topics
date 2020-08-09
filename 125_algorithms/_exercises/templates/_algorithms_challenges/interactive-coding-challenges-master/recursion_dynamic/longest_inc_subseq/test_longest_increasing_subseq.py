@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestLongestIncreasingSubseq(object):
+class TestLongestIncreasingSubseq(object
 
-    def test_longest_increasing_subseq(self):
+    ___ test_longest_increasing_subseq(self
         subseq = Subsequence()
         assert_raises(TypeError, subseq.longest_inc_subseq, None)
         assert_equal(subseq.longest_inc_subseq([]), [])
@@ -13,10 +13,10 @@ class TestLongestIncreasingSubseq(object):
         print('Success: test_longest_increasing_subseq')
 
 
-def main():
+___ main(
     test = TestLongestIncreasingSubseq()
     test.test_longest_increasing_subseq()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

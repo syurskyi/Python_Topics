@@ -4,27 +4,27 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def superPow(self, a, b):
-        if a % 1337 == 0: return a
+class Solution(object
+    ___ superPow(self, a, b
+        __ a % 1337 __ 0: r_ a
         p = 0
         for i in b:
             p = (p*10+i)%1140
-        if p == 0:
+        __ p __ 0:
             p += 1440
-        return self.power(a, p, 1337)
+        r_ self.power(a, p, 1337)
     
-    def power(self, a, n, mod):
+    ___ power(self, a, n, mod
         a %= mod
         res = 1
-        while n != 0:
-            if ((n&1) != 0):
+        w___ n != 0:
+            __ ((n&1) != 0
                 res = res*a % mod
             a = a*a%mod
             n >>= 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [2, [3]],
             [2, [1, 0]],
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

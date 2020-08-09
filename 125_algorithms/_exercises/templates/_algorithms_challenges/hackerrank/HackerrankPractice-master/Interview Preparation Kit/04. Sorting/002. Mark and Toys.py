@@ -9,8 +9,8 @@ count = 0
 total_sum = 0
 for i in prices:
     total_sum += i
-    if total_sum > k:
+    __ total_sum > k:
         break
-    else:
+    ____
         count += 1
 print(count)

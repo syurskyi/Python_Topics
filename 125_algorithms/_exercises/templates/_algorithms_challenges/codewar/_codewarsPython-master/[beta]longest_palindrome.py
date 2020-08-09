@@ -1,15 +1,15 @@
 #remodify to match python 2
-def longest_palindrome (s):
+___ longest_palindrome (s
     print(s)
-    if len(s) == 0:
-        return 0
-    def isPalindrome(string):
-        return string == ''.join(string[::-1])
-    for i in range(len(s)-1,-1,-1):
-        print([i for i in range(len(s)-i)],i)
-        for j in [i for i in range(len(s)-i)]:
-            if isPalindrome(s[j:i+j+1]):
-                return len(s[j:i+j+1])
+    __ le.(s) __ 0:
+        r_ 0
+    ___ isPalindrome(string
+        r_ string __ ''.join(string[::-1])
+    for i in range(le.(s)-1,-1,-1
+        print([i for i in range(le.(s)-i)],i)
+        for j in [i for i in range(le.(s)-i)]:
+            __ isPalindrome(s[j:i+j+1]
+                r_ le.(s[j:i+j+1])
 
 
 

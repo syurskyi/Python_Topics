@@ -4,24 +4,24 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-class PhoneDirectory(object):
-    def __init__(self, maxNumbers):
+class PhoneDirectory(object
+    ___ __init__(self, maxNumbers
         self.availableNums = set(range(maxNumbers))
         self.usedNums = set()
     
-    def get(self):
-        if self.availableNums:
+    ___ get(self
+        __ self.availableNums:
             num = self.availableNums.pop()
             self.usedNums.add(num)
-            return num
-        else:
-            return -1
+            r_ num
+        ____
+            r_ -1
     
-    def check(self, number):
-        return bool(number in self.availableNums)
+    ___ check(self, number
+        r_ bool(number in self.availableNums)
     
-    def release(self, number):
-        if number in self.usedNums:
+    ___ release(self, number
+        __ number in self.usedNums:
             self.usedNums.remove(number)
         self.availableNums.add(number)
     

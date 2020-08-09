@@ -14,13 +14,13 @@ return -1.
 Note:
 You may assume that you have an infinite number of each kind of coin.
 """
-import sys
+______ sys
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def coinChange(self, coins, amount):
+class Solution(object
+    ___ coinChange(self, coins, amount
         """
         DP with early prune
         Let F[i] be the fewest number of coins make to i
@@ -30,25 +30,25 @@ class Solution(object):
         :type amount: int
         :rtype: int
         """
-        if amount == 0:
-            return 0
+        __ amount __ 0:
+            r_ 0
 
         F = [sys.maxint for _ in xrange(amount+1)]
         for k in coins:
-            if k < amount+1:
+            __ k < amount+1:
                 F[k] = 1
 
-        for i in xrange(1, amount+1):
-            if F[i] != sys.maxint:
+        for i in xrange(1, amount+1
+            __ F[i] != sys.maxint:
                 for k in coins:
-                    if i+k <= amount:
+                    __ i+k <= amount:
                         F[i+k] = min(F[i+k], F[i]+1)
 
-        return F[amount] if F[amount] != sys.maxint else -1
+        r_ F[amount] __ F[amount] != sys.maxint else -1
 
 
-class SolutionTLE(object):
-    def coinChange(self, coins, amount):
+class SolutionTLE(object
+    ___ coinChange(self, coins, amount
         """
         Let F[i] be the fewest number of coins make to i
         F[i] = min(F[i-k]+1, \forall k)
@@ -59,16 +59,16 @@ class SolutionTLE(object):
         """
         F = [sys.maxint for _ in xrange(amount+1)]
         for k in coins:
-            if k < amount + 1:
+            __ k < amount + 1:
                 F[k] = 1
 
-        for i in xrange(1, amount+1):
+        for i in xrange(1, amount+1
             for k in coins:
-                if i-k > 0 and F[i-k] != sys.maxint:
+                __ i-k > 0 and F[i-k] != sys.maxint:
                     F[i] = min(F[i], F[i-k]+1)
 
-        return F[amount] if F[amount] != sys.maxint else -1
+        r_ F[amount] __ F[amount] != sys.maxint else -1
 
 
-if __name__ == "__main__":
-    assert Solution().coinChange([243, 291, 335, 209, 177, 345, 114, 91, 313, 331], 7367) == 23
+__ __name__ __ "__main__":
+    assert Solution().coinChange([243, 291, 335, 209, 177, 345, 114, 91, 313, 331], 7367) __ 23

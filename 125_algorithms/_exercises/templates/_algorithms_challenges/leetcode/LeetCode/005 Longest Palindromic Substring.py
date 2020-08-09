@@ -5,32 +5,32 @@ there exists one unique longest palindromic substring.
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def longestPalindrome(self, s):
+class Solution(object
+    ___ longestPalindrome(self, s
         """
         O(n^2)
         :param s: string
         :return: string
         """
-        if not s:
-            return
-        n = len(s)
-        if n == 1:
-            return s
+        __ not s:
+            r_
+        n = le.(s)
+        __ n __ 1:
+            r_ s
 
         ret = s[0]
-        for i in xrange(0, n):
+        for i in xrange(0, n
             cur = self.get_palindrome_from_center(s, i, i)  # odd length
-            if len(cur) > len(ret): ret = cur
+            __ le.(cur) > le.(ret ret = cur
             cur = self.get_palindrome_from_center(s, i, i+1)
-            if len(cur) > len(ret): ret = cur
-        return ret
+            __ le.(cur) > le.(ret ret = cur
+        r_ ret
 
-    def longestPalindrome_TLE(self, s):
+    ___ longestPalindrome_TLE(self, s
         """
         Algorithm: dp, O(n^2)
 
-        p[i,j] represents weather s[i:j] is palindrome. (incl. i-th while excl. j-th)
+        p[i,j] represents weather s[i:j] is palindrome. (incl. i-th w___ excl. j-th)
         For example S = "abccb"
                          01234
         p[0,1] = True, p[1,2] = True, etc. since single char is Palindrom
@@ -47,64 +47,64 @@ class Solution(object):
         :param s: string
         :return: string
         """
-        length = len(s)
+        length = le.(s)
         dp = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]
-        for i in xrange(length+1):
+        for i in xrange(length+1
             dp[i][i] = True
 
         longest = [0, 0]
-        for j in xrange(length+1):
-            for i in xrange(j-1, -1, -1):
-                if i+1 == j:
+        for j in xrange(length+1
+            for i in xrange(j-1, -1, -1
+                __ i+1 __ j:
                     dp[i][j] = True
-                else:
-                    dp[i][j] = s[i] == s[j-1] and dp[i+1][j-1]  # pre-access? starting backward
+                ____
+                    dp[i][j] = s[i] __ s[j-1] and dp[i+1][j-1]  # pre-access? starting backward
 
-                if dp[i][j] == True and longest[1]-longest[0] < j-i:
+                __ dp[i][j] __ True and longest[1]-longest[0] < j-i:
                     longest[0], longest[1] = i, j
 
-        return s[longest[0]:longest[1]]
+        r_ s[longest[0]:longest[1]]
 
-    def longestPalindrome_TLE2(self, s):
+    ___ longestPalindrome_TLE2(self, s
         """
         :param s: string
         :return: string
         """
-        length = len(s)
+        length = le.(s)
 
         longest = ""
         dp = [[False for _ in xrange(length+1)] for _ in xrange(length+1)]  # larger than usual
-        for i in xrange(length+1):
+        for i in xrange(length+1
             dp[i][i] = True  # empty
-        for i in xrange(length):
+        for i in xrange(length
             dp[i][i+1] = True  # single char
-        for i in xrange(length-1):
-            dp[i][i+2] = s[i] == s[i+1]
-            if dp[i][i+1]:
+        for i in xrange(length-1
+            dp[i][i+2] = s[i] __ s[i+1]
+            __ dp[i][i+1]:
                 longest = s[i:i+2]
 
-        for l in xrange(3, length+1):  # breadth
-            for i in xrange(0, length-l):
-                if s[i] == s[i+l-1]:
+        for l in xrange(3, length+1  # breadth
+            for i in xrange(0, length-l
+                __ s[i] __ s[i+l-1]:
                     dp[i][i+l] = dp[i+1][i+l-1]
-                else:
+                ____
                     dp[i][i+l] = False
 
-                if dp[i][i+l] and len(longest) < l:
+                __ dp[i][i+l] and le.(longest) < l:
                     longest = s[i:i+l]
 
-        return longest
+        r_ longest
 
-    def get_palindrome_from_center(self, s, begin, end):
+    ___ get_palindrome_from_center(self, s, begin, end
         """
         # [begin, end]
         """
-        while begin >= 0 and end < len(s) and s[begin] == s[end]:
+        w___ begin >= 0 and end < le.(s) and s[begin] __ s[end]:
             begin -= 1
             end += 1
 
-        return s[begin+1: end-1+1]
+        r_ s[begin+1: end-1+1]
 
 
-if __name__ == "__main__":
-    assert Solution().longestPalindrome("dfaaabbbaaac") == "aaabbbaaa"
+__ __name__ __ "__main__":
+    assert Solution().longestPalindrome("dfaaabbbaaac") __ "aaabbbaaa"

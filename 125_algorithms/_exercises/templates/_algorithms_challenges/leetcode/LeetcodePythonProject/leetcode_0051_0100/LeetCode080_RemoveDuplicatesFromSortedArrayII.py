@@ -4,24 +4,24 @@ Created on Jan 24, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def removeDuplicates(self, nums):
+class Solution(object
+    ___ removeDuplicates(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if len(nums) <= 2:
-            return len(nums)
+        __ le.(nums) <= 2:
+            r_ le.(nums)
         prev, curr = 1, 2
-        while curr < len(nums):
-            if nums[curr] != nums[prev] or nums[curr] != nums[prev-1]:
+        w___ curr < le.(nums
+            __ nums[curr] != nums[prev] or nums[curr] != nums[prev-1]:
                 prev += 1
                 nums[prev] = nums[curr]
             curr += 1
-        return prev + 1
+        r_ prev + 1
     
-    def test(self):
+    ___ test(self
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

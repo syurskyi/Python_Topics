@@ -24,7 +24,7 @@ Namespaces are one honking great idea -- let's do more of those!
 vowels = 'aeiou'
 
 
-def strip_vowels(text: str) -> (str, int):
+___ strip_vowels(text: str) -> (str, int
     """Replace all vowels in the input text string by a star
        character (*).
        Return a tuple of (replaced_text, number_of_vowels_found)
@@ -44,9 +44,9 @@ def strip_vowels(text: str) -> (str, int):
     for line in lines:
         newline = ''
         for c in line:
-            if c.lower() in vowels:
+            __ c.lower() in vowels:
                 c = '*'
                 count += 1
             newline += c
         results.append(newline)
-    return '\n'.join(results), count
+    r_ '\n'.join(results), count

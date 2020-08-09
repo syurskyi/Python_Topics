@@ -1,7 +1,7 @@
 """
 Definition for binary tree with next pointer.
 class TreeLinkNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -15,31 +15,31 @@ class Solution:
     1. recursion from right to left
     2. first scan the nxt by level
     """
-    def connect(self, root):
+    ___ connect(self, root
         """
         :type root: TreeLinkNode
         :rtype: void
         """
-        if not root:
-            return
+        __ not root:
+            r_
 
         # scan the nxt by level
         head = root.next
         nxt = None
 
-        while head and not nxt:
-            if head.left:
+        w___ head and not nxt:
+            __ head.left:
                 nxt = head.left
-            elif head.right:
+            ____ head.right:
                 nxt = head.right
-            else:
+            ____
                 head = head.next
 
-        if root.right:
+        __ root.right:
             root.right.next = nxt
             nxt = root.right
 
-        if root.left:
+        __ root.left:
             root.left.next = nxt
 
         self.connect(root.right)
@@ -50,29 +50,29 @@ class Solution:
     """
     Iteration
     """
-    def connect(self, root):
+    ___ connect(self, root
         """
         :type root: TreeLinkNode
         :rtype: void
         """
-        if not root:
-            return
+        __ not root:
+            r_
 
         dummy = TreeLinkNode(0)
         dummy.next = root
         nxt = tail = None
 
-        while dummy.next:
+        w___ dummy.next:
             tail = dummy
             nxt = dummy.next
             dummy.next = None
 
-            while nxt:
-                if nxt.left:
+            w___ nxt:
+                __ nxt.left:
                     tail.next = nxt.left
                     tail = tail.next
 
-                if nxt.right:
+                __ nxt.right:
                     tail.next = nxt.right
                     tail = tail.next
 
@@ -83,27 +83,27 @@ class Solution:
     """
     Level Traversal
     """
-    def connect(self, root):
+    ___ connect(self, root
         """
         :type root: TreeLinkNode
         :rtype: void
         """
-        if not root:
-            return
+        __ not root:
+            r_
 
         queue, _queue = [root], []
 
-        while queue:
-            n = len(queue)
+        w___ queue:
+            n = le.(queue)
 
-            for i in range(n):
-                if i < n - 1:
+            for i in range(n
+                __ i < n - 1:
                     queue[i].next = queue[i + 1]
 
-                if queue[i].left:
+                __ queue[i].left:
                     _queue.append(queue[i].left)
 
-                if queue[i].right:
+                __ queue[i].right:
                     _queue.append(queue[i].right)
 
             queue, _queue = _queue, []

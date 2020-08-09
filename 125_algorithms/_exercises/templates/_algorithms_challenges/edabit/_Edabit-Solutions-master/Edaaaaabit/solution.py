@@ -1,2 +1,2 @@
-def how_many_times(num):
-    return "Ed" + num * "a" + "bit"
+___ how_many_times(num
+    r_ "Ed" + num * "a" + "bit"

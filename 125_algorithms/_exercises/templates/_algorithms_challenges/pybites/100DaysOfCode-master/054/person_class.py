@@ -1,8 +1,8 @@
 #!python3
 #Quick example script to create a person based class.
 
-class Person(object):
-    def __init__(self, name, age, height, weight, gender, job):
+class Person(object
+    ___ __init__(self, name, age, height, weight, gender, job
         self.name = name
         self.age = age
         self.height = height
@@ -11,12 +11,12 @@ class Person(object):
         self.job = job
 	
     #Manual way of displaying job to demo a class function	
-    def get_job(self):
-        return self.job
+    ___ get_job(self
+        r_ self.job
 
     #Calculate BMI (Body Mass Index) = weight * height (in metres squared)
-    def bmi(self):
-        return (self.weight / ((self.height / 100) ** 2))
+    ___ bmi(self
+        r_ (self.weight / ((self.height / 100) ** 2))
 
 
 #Creating some awesome people using the class

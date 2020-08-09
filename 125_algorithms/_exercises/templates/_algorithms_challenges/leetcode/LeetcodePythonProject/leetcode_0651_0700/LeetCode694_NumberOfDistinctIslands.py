@@ -3,31 +3,31 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def numDistinctIslands(self, grid):
+class Solution(object
+    ___ numDistinctIslands(self, grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
         islands = set()
-        m, n = len(grid), len(grid[0])
-        for i in range(m):
-            for j in range(n):
-                if grid[i][j] == 1:
+        m, n = le.(grid), le.(grid[0])
+        for i in range(m
+            for j in range(n
+                __ grid[i][j] __ 1:
                     island = set()
                     self.dfs(i, j, i, j, m, n, grid, island)
                     islands.add(tuple(island))
-        return len(islands)
+        r_ le.(islands)
     
-    def dfs(self, i0, j0, i, j, m, n, grid, island):
-        if i >= m or i < 0 or j >= n or j < 0 or grid[i][j] != 1:
-            return
+    ___ dfs(self, i0, j0, i, j, m, n, grid, island
+        __ i >= m or i < 0 or j >= n or j < 0 or grid[i][j] != 1:
+            r_
         grid[i][j] = -1
         island.add((i-i0, j-j0))
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
             self.dfs(i0, j0, x, y, m, n, grid, island)
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             [
 #                 '11000',
@@ -85,5 +85,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -5,18 +5,18 @@ the first two lists.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
-    def __repr__(self):
-        return repr(self.val)
+    ___ __repr__(self
+        r_ repr(self.val)
 
-    def __str__(self):
-        return "%d, %s"%(self.val, self.next)
+    ___ __str__(self
+        r_ "%d, %s"%(self.val, self.next)
 
 class Solution:
-    def mergeTwoLists(self, l1, l2):
+    ___ mergeTwoLists(self, l1, l2
         """
         Linked List
         assuming ascending order
@@ -29,9 +29,9 @@ class Solution:
 
         pre = dummy
         the_other = l2
-        while pre and pre.next:
+        w___ pre and pre.next:
             cur = pre.next
-            if the_other and cur.val>the_other.val:
+            __ the_other and cur.val>the_other.val:
                 # insert
                 temp = the_other.next
                 pre.next, the_other.next = the_other, cur
@@ -41,16 +41,16 @@ class Solution:
 
 
         # dangling list
-        if the_other:
+        __ the_other:
             pre.next = the_other  # appending
 
-        return dummy.next
+        r_ dummy.next
 
-if __name__=="__main__":
+__ __name____"__main__":
     length = 10
     list1 = [ListNode(2*i) for i in xrange(length)]
     list2 = [ListNode(2*i+1) for i in xrange(length)]
-    for i in xrange(length-1):
+    for i in xrange(length-1
         list1[i].next = list1[i+1]
         list2[i].next = list2[i+1]
 

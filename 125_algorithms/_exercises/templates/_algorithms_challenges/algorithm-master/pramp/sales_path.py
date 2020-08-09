@@ -7,7 +7,7 @@
 
 Node Structure:
 >>> class TreeNode:
-...     def __init__(self, cost):
+...     ___ __init__(self, cost
 ...         self.cost = cost
 ...         self.children = []
 
@@ -48,7 +48,7 @@ Testing:
 
 1. test get_cheapest_cost:
 >>> gotcha = []
->>> for i in range(len(TEST_CASE)):
+>>> for i in range(le.(TEST_CASE)):
 ...     res = get_cheapest_cost(trees[i])
 ...     if res != TEST_CASE[i][1]: print(i, res)
 ...     gotcha.append(res == TEST_CASE[i][1])
@@ -57,7 +57,7 @@ True
 
 2. test get_cheapest_cost_paths:
 >>> gotcha = []
->>> for i in range(len(TEST_CASE)):
+>>> for i in range(le.(TEST_CASE)):
 ...     res = get_cheapest_cost_paths(trees[i])
 ...     if res != TEST_CASE[i][2]: print(i, res)
 ...     gotcha.append(res == TEST_CASE[i][2])
@@ -66,46 +66,46 @@ True
 """
 
 
-def get_cheapest_cost(root):
-    if not root:
-        return 0
-    if not root.children:
-        return root.cost
+___ get_cheapest_cost(root
+    __ not root:
+        r_ 0
+    __ not root.children:
+        r_ root.cost
 
     res = float('inf')
 
     for child in root.children:
         tmp = get_cheapest_cost(child)
 
-        if tmp < res:
+        __ tmp < res:
             res = tmp
 
-    return res + root.cost
+    r_ res + root.cost
 
 
-def get_cheapest_cost_paths(root):
+___ get_cheapest_cost_paths(root
     ans = []
 
-    if not root:
-        return ans
+    __ not root:
+        r_ ans
 
     min_val = get_cheapest_cost(root)
     _dfs(root, min_val, ans, [root.cost])
 
-    return ans
+    r_ ans
 
 
-def _dfs(root, target, ans, path):
-    if not root:
-        return
-    if not root.children and target == 0:
+___ _dfs(root, target, ans, path
+    __ not root:
+        r_
+    __ not root.children and target __ 0:
         ans.append(path[:])
-        return
-    if not root.children:
-        return
+        r_
+    __ not root.children:
+        r_
 
     for child in root.children:
-        if target < child.cost:
+        __ target < child.cost:
             continue
 
         path.append(child.cost)

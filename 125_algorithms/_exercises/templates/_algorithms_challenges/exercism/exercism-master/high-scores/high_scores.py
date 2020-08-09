@@ -1,30 +1,30 @@
-import heapq
+______ heapq
 
 
-class HighScores(object):
-    def __init__(self, scores):
+class HighScores(object
+    ___ __init__(self, scores
         self.scores = scores
 
-    def highest(self):
-        return max(self.scores)
+    ___ highest(self
+        r_ max(self.scores)
 
-    def latest(self):
-        return self.scores[-1]
+    ___ latest(self
+        r_ self.scores[-1]
 
-    def top(self):
-        return heapq.nlargest(3, self.scores)
+    ___ top(self
+        r_ heapq.nlargest(3, self.scores)
 
-    def report(self):
-        return f"{self.latest_score_message()} {self.personal_best_message()}"
+    ___ report(self
+        r_ f"{self.latest_score_message()} {self.personal_best_message()}"
 
-    def latest_score_message(self):
-        return f"Your latest score was {self.latest()}."
+    ___ latest_score_message(self
+        r_ f"Your latest score was {self.latest()}."
 
-    def personal_best_message(self):
-        if self.amount_short() == 0:
-            return "That's your personal best!"
-        else:
-            return f"That's {self.amount_short()} short of your personal best!"
+    ___ personal_best_message(self
+        __ self.amount_short() __ 0:
+            r_ "That's your personal best!"
+        ____
+            r_ f"That's {self.amount_short()} short of your personal best!"
 
-    def amount_short(self):
-        return self.highest() - self.latest()
+    ___ amount_short(self
+        r_ self.highest() - self.latest()

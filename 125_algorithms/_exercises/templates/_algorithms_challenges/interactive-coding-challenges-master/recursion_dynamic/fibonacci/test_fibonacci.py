@@ -1,24 +1,24 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestFib(object):
+class TestFib(object
 
-    def test_fib(self, func):
+    ___ test_fib(self, func
         result = []
         expected = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
-        for i in range(len(expected)):
+        for i in range(le.(expected)):
             result.append(func(i))
         assert_equal(result, expected)
         print('Success: test_fib')
 
 
-def main():
+___ main(
     test = TestFib()
-    math = Math()
-    test.test_fib(math.fib_recursive)
-    test.test_fib(math.fib_dynamic)
-    test.test_fib(math.fib_iterative)
+    ma__ = Math()
+    test.test_fib(ma__.fib_recursive)
+    test.test_fib(ma__.fib_dynamic)
+    test.test_fib(ma__.fib_iterative)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

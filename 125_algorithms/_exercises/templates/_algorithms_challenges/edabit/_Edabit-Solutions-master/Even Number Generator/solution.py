@@ -1,11 +1,11 @@
-def find_even_nums(num):
-    if num < 2:
-        return []
+___ find_even_nums(num
+    __ num < 2:
+        r_ []
     index = 2
     output = []
-    while index <= num:
-        if index % 2 == 0:
+    w___ index <= num:
+        __ index % 2 __ 0:
             output.append(index)
         index = index + 1
 
-    return output
+    r_ output

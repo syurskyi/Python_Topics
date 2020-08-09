@@ -4,18 +4,18 @@ class Solution:
     @param B: a sparse matrix
     @return: the result of A * B
     """
-    def multiply(self, A, B):
-        if not A or not B or len(A[0]) != len(B):
-            return []
+    ___ multiply(self, A, B
+        __ not A or not B or le.(A[0]) != le.(B
+            r_ []
 
-        m, n = len(A), len(B[0])
-        l = len(B)
+        m, n = le.(A), le.(B[0])
+        l = le.(B)
 
         ans = [[0] * n for _ in range(m)]
 
-        for i in range(m):
-            for j in range(n):
-                for k in range(l):
+        for i in range(m
+            for j in range(n
+                for k in range(l
                     ans[i][j] += A[i][k] * B[k][j]
 
-        return ans
+        r_ ans

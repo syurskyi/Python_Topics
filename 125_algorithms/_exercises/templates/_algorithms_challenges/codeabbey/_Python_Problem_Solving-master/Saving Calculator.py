@@ -7,7 +7,7 @@ for i in range(int(input())):
     
     s,r,p = a
     year_count = 0
-    while r >= s:
+    w___ r >= s:
         #calculate the rate of interest on the amount and the numbers of years it will take to get the R
         s = s + (s*(p/100))
         year_count += 1

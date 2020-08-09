@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_true, assert_raises
+from nose.tools ______ assert_equal, assert_true, assert_raises
 
 
-class TestMathOps(object):
+class TestMathOps(object
 
-    def test_math_ops(self):
+    ___ test_math_ops(self
         solution = Solution()
         assert_raises(TypeError, solution.insert, None)
         solution.insert(5)
@@ -24,10 +24,10 @@ class TestMathOps(object):
         print('Success: test_math_ops')
 
 
-def main():
+___ main(
     test = TestMathOps()
     test.test_math_ops()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

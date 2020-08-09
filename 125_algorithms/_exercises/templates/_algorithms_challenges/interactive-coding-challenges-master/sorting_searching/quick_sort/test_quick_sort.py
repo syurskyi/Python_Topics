@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestQuickSort(object):
+class TestQuickSort(object
 
-    def test_quick_sort(self):
+    ___ test_quick_sort(self
         quick_sort = QuickSort()
 
         print('None input')
@@ -22,10 +22,10 @@ class TestQuickSort(object):
         print('Success: test_quick_sort\n')
 
 
-def main():
+___ main(
     test = TestQuickSort()
     test.test_quick_sort()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

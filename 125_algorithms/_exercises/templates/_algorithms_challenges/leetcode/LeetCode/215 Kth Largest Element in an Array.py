@@ -10,11 +10,11 @@ Note:
 You may assume k is always valid, 1 ≤ k ≤ array's length.
 """
 __author__ = 'Daniel'
-import heapq
+______ heapq
 
 
 class Solution:
-    def findKthLargest(self, nums, k):
+    ___ findKthLargest(self, nums, k
         """
         Algorithm:
         * Partial quick sort average O(n), worst case O(n^2)
@@ -23,19 +23,19 @@ class Solution:
         :rtype: int
         """
         h = []
-        n = len(nums)
-        for i, v in enumerate(nums):
-            if i < k:
+        n = le.(nums)
+        for i, v in enumerate(nums
+            __ i < k:
                 heapq.heappush(h, v)
-            else:
-                if v <= h[0]:
+            ____
+                __ v <= h[0]:
                     continue
                 heapq.heappop(h)
                 heapq.heappush(h, v)
 
-        return heapq.heappop(h)
+        r_ heapq.heappop(h)
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().findKthLargest([3, 2, 1, 5, 6, 4], 2)
 

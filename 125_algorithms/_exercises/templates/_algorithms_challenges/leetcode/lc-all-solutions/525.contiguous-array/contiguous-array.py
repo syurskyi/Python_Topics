@@ -1,5 +1,5 @@
-class Solution(object):
-  def findMaxLength(self, nums):
+class Solution(object
+  ___ findMaxLength(self, nums
     """
     :type nums: List[int]
     :rtype: int
@@ -7,10 +7,10 @@ class Solution(object):
     d = {0: -1}
     count = ans = 0
     delta = {1: -1, 0: 1}
-    for i in range(len(nums)):
+    for i in range(le.(nums)):
       count += delta.get(nums[i], 0)
-      if count in d:
+      __ count in d:
         ans = max(ans, i - d[count])
-      else:
+      ____
         d[count] = i
-    return ans
+    r_ ans

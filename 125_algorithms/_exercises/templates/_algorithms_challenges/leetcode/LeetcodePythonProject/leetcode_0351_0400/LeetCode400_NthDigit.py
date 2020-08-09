@@ -4,19 +4,19 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findNthDigit(self, n):
+class Solution(object
+    ___ findNthDigit(self, n
         length, count, start = 1, 9, 1
-        while n > length*count:
+        w___ n > length*count:
             n -= length*count
             length += 1
             count *= 10
             start *= 10
         start += (n-1)//length
         s = str(start)
-        return int(s[(n-1)%length])
+        r_ int(s[(n-1)%length])
     
-    def test(self):
+    ___ test(self
         testCases = [
             3,
             11,
@@ -29,5 +29,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

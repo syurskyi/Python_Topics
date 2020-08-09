@@ -20,21 +20,21 @@ __author__ = 'Daniel'
 C = 1337
 
 
-class Solution(object):
-    def superPow(self, a, b):
+class Solution(object
+    ___ superPow(self, a, b
         """
         since b is given as a list rather than a number, we need to process it digit by digit.
 
         a^123 = a^120 * a^3
               = a^12 ^ 10 * a^3
 
-        Power math.
+        Power ma__.
         :type a: int
         :type b: List[int]
         :rtype: int
         """
-        if not b:
-            return 1
+        __ not b:
+            r_ 1
         s = 1
         lsd = b.pop()  # list significant digit
         s *= (a % C) ** lsd
@@ -42,9 +42,9 @@ class Solution(object):
         rest = self.superPow(a, b)
         s *= rest ** 10
         s %= C
-        return s
+        r_ s
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().superPow(2, [1, 0])
 
 

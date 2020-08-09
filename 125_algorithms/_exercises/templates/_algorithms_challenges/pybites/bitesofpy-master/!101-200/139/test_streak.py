@@ -1,9 +1,9 @@
-import datetime
+______ datetime
 
-from streak import extract_dates, calculate_streak
+from streak ______ extract_dates, calculate_streak
 
 
-def test_extract_dates():
+___ test_extract_dates(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -20,13 +20,13 @@ def test_extract_dates():
     +------------+------------+---------+
     """
     dates = extract_dates(data)
-    assert len(dates) == 8  # one less = deduped 2018-09-18
+    assert le.(dates) __ 8  # one less = deduped 2018-09-18
     assert datetime.date(2018, 9, 18) in dates
     assert datetime.date(2018, 10, 23) in dates
     assert datetime.date(2018, 11, 9) in dates
 
 
-def test_streak_of_0_days():
+___ test_streak_of_0_days(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -44,10 +44,10 @@ def test_streak_of_0_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 0
+    assert streak __ 0
 
 
-def test_streak_of_1_day_can_still_make_today():
+___ test_streak_of_1_day_can_still_make_today(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -65,10 +65,10 @@ def test_streak_of_1_day_can_still_make_today():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 1
+    assert streak __ 1
 
 
-def test_streak_of_1_day_thanks_to_todays_progress():
+___ test_streak_of_1_day_thanks_to_todays_progress(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -86,10 +86,10 @@ def test_streak_of_1_day_thanks_to_todays_progress():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 1
+    assert streak __ 1
 
 
-def test_streak_of_3_days():
+___ test_streak_of_3_days(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -107,10 +107,10 @@ def test_streak_of_3_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 3
+    assert streak __ 3
 
 
-def test_streak_of_10_days():
+___ test_streak_of_10_days(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -129,10 +129,10 @@ def test_streak_of_10_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 10
+    assert streak __ 10
 
 
-def test_streak_of_almost_10_days_but_gap_so_only_5_days():
+___ test_streak_of_almost_10_days_but_gap_so_only_5_days(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -150,10 +150,10 @@ def test_streak_of_almost_10_days_but_gap_so_only_5_days():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 5
+    assert streak __ 5
 
 
-def test_streak_of_5_days_dates_out_of_order():
+___ test_streak_of_5_days_dates_out_of_order(
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -167,4 +167,4 @@ def test_streak_of_5_days_dates_out_of_order():
     """
     dates = extract_dates(data)
     streak = calculate_streak(dates)
-    assert streak == 5
+    assert streak __ 5

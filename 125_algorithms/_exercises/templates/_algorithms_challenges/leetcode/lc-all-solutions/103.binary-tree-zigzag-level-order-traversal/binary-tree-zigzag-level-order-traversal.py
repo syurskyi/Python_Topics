@@ -1,14 +1,14 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def zigzagLevelOrder(self, root):
+class Solution(object
+  ___ zigzagLevelOrder(self, root
     """
     :type root: TreeNode
     :rtype: List[List[int]]
@@ -16,19 +16,19 @@ class Solution(object):
     stack = deque([root])
     ans = []
     odd = True
-    while stack:
+    w___ stack:
       level = []
-      for k in range(0, len(stack)):
+      for k in range(0, le.(stack)):
         top = stack.popleft()
-        if top is None:
+        __ top is None:
           continue
         level.append(top.val)
         stack.append(top.left)
         stack.append(top.right)
-      if level:
-        if odd:
+      __ level:
+        __ odd:
           ans.append(level)
-        else:
+        ____
           ans.append(level[::-1])
       odd = not odd
-    return ans
+    r_ ans

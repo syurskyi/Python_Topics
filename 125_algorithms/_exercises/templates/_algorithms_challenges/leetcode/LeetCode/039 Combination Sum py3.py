@@ -29,22 +29,22 @@ A solution set is:
   [3,5]
 ]
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+    ___ combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         ret = []
         self.dfs(candidates, 0, [], 0, target, ret)
-        return ret
+        r_ ret
 
-    def dfs(self, candidates, i, cur, cur_sum, target, ret):
-        if cur_sum == target:
+    ___ dfs(self, candidates, i, cur, cur_sum, target, ret
+        __ cur_sum __ target:
             ret.append(list(cur))
-            return
+            r_
             
-        if cur_sum > target or i >= len(candidates):
-            return
+        __ cur_sum > target or i >= le.(candidates
+            r_
 
         # not choose A_i
         self.dfs(candidates, i + 1, cur, cur_sum, target, ret)

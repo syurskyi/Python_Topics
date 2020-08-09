@@ -15,8 +15,8 @@ Return the array [2, 1, 1, 0].
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    def __init__(self, start, end, cnt=0):
+class TreeNode(object
+    ___ __init__(self, start, end, cnt=0
         self.start = start
         self.end = end
         self.cnt = cnt
@@ -24,45 +24,45 @@ class TreeNode(object):
         self.right = None
 
 
-class SegmentTree(object):
-    def __init__(self, n):
+class SegmentTree(object
+    ___ __init__(self, n
         self.root = self.build(0, n)
 
-    def build(self, start, end):
-        if start >= end: return
-        if start == end-1: return TreeNode(start, end)
+    ___ build(self, start, end
+        __ start >= end: r_
+        __ start __ end-1: r_ TreeNode(start, end)
         node = TreeNode(start, end)
         node.left = self.build(start, (start+end)/2)
         node.right = self.build((start+end)/2, end)
-        return node
+        r_ node
 
-    def inc(self, idx, val):
+    ___ inc(self, idx, val
         cur = self.root
-        while cur:
+        w___ cur:
             cur.cnt += val
             mid = (cur.start+cur.end)/2
-            if cur.start <= idx < mid:
+            __ cur.start <= idx < mid:
                 cur = cur.left
-            elif mid <= idx < cur.end:
+            ____ mid <= idx < cur.end:
                 cur = cur.right
-            else:
-                return
+            ____
+                r_
 
-    def query_less(self, cur, idx):
-        if not cur:
-            return 0
+    ___ query_less(self, cur, idx
+        __ not cur:
+            r_ 0
 
         mid = (cur.start+cur.end)/2
-        if cur.start <= idx < mid:
-            return self.query_less(cur.left, idx)
-        elif mid <= idx < cur.end:
-            return (cur.left.cnt if cur.left else 0) + self.query_less(cur.right, idx)
-        else:
-            return 0
+        __ cur.start <= idx < mid:
+            r_ self.query_less(cur.left, idx)
+        ____ mid <= idx < cur.end:
+            r_ (cur.left.cnt __ cur.left else 0) + self.query_less(cur.right, idx)
+        ____
+            r_ 0
 
 
-class Solution(object):
-    def countSmaller(self, nums):
+class Solution(object
+    ___ countSmaller(self, nums
         """
         Brute force: O(n^2)
         Segment Tree
@@ -76,16 +76,16 @@ class Solution(object):
             h[v] = i  # override duplicates
 
         A = [h[v] for v in nums]
-        n = len(A)
+        n = le.(A)
         st = SegmentTree(n)
         ret = []
-        for i in xrange(n-1, -1, -1):
+        for i in xrange(n-1, -1, -1
             ret.append(st.query_less(st.root, A[i]))
             st.inc(A[i], 1)
 
-        return ret[::-1]
+        r_ ret[::-1]
 
 
-if __name__ == "__main__":
-    assert Solution().countSmaller([5, 2, 6, 1]) == [2, 1, 1, 0]
-    assert Solution().countSmaller([-1, -1]) == [0, 0]
+__ __name__ __ "__main__":
+    assert Solution().countSmaller([5, 2, 6, 1]) __ [2, 1, 1, 0]
+    assert Solution().countSmaller([-1, -1]) __ [0, 0]

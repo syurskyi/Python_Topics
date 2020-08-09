@@ -1,18 +1,18 @@
 #! /usr/bin/env python
-import random
-import numpy as np
+______ random
+______ numpy as np
 
 
-def removeDuplicates(list):
+___ removeDuplicates(list
     result = []
     for el in list:
-        if el not in result:
+        __ el not in result:
             result.append(el)
 
-    return result
+    r_ result
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     list = list(np.random.choice(5, 8, replace=True))
     result = removeDuplicates(list)
     print('List: ' + str(list) + '\nNo dups: ' + str(result))

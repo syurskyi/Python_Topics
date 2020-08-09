@@ -1,12 +1,12 @@
-class Logger(object):
+class Logger(object
 
-  def __init__(self):
+  ___ __init__(self
     """
     Initialize your data structure here.
     """
     self.d = {}
 
-  def shouldPrintMessage(self, timestamp, message):
+  ___ shouldPrintMessage(self, timestamp, message
     """
     Returns true if the message should be printed in the given timestamp, otherwise returns false.
     If this method returns false, the message will not be printed.
@@ -15,13 +15,13 @@ class Logger(object):
     :type message: str
     :rtype: bool
     """
-    if message not in self.d:
+    __ message not in self.d:
       self.d[message] = timestamp
-      return True
-    elif timestamp - self.d[message] >= 10:
+      r_ True
+    ____ timestamp - self.d[message] >= 10:
       self.d[message] = timestamp
-      return True
-    return False
+      r_ True
+    r_ False
 
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()

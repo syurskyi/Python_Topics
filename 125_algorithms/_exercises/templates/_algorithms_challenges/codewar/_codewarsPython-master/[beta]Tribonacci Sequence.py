@@ -1,5 +1,5 @@
-def tribonacci(signature,n):
-    while len(signature) < n:
+___ tribonacci(signature,n
+    w___ le.(signature) < n:
         signature.append(sum(signature[-3:]))
-    return signature if n >= len(signature) else signature[:n]
+    r_ signature __ n >= le.(signature) else signature[:n]
 

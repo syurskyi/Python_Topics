@@ -1,17 +1,17 @@
 amount_values = int(input())
 results = []
 
-def calc(A, B, C):
-    return A*B+C
+___ calc(A, B, C
+    r_ A*B+C
 
-def sum_digits(num):
+___ sum_digits(num
     sum = 0
-    while(num != 0):
+    w___(num != 0
         sum = sum + (num % 10)
         num //= 10
-    return sum
+    r_ sum
 
-for i in range(amount_values):
+for i in range(amount_values
     A, B, C = map(int, input().split())
     num = calc(A,B,C)
     results.append(sum_digits(num))

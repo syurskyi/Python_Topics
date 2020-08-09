@@ -3,9 +3,9 @@ Created on Sep 3, 2017
 
 @author: MT
 '''
-class Solution(object):
+class Solution(object
     # Don't need extra space if using maxDiff
-    def minDistance(self, height, width, tree, squirrel, nuts):
+    ___ minDistance(self, height, width, tree, squirrel, nuts
         """
         :type height: int
         :type width: int
@@ -19,9 +19,9 @@ class Solution(object):
             dist = abs(tree[0]-nut[0])+abs(tree[1]-nut[1])
             sumVal += dist*2
             maxDiff = max(maxDiff, dist-abs(squirrel[0]-nut[0])-abs(squirrel[1]-nut[1]))
-        return sumVal-maxDiff
+        r_ sumVal-maxDiff
     
-    def minDistance_space(self, height, width, tree, squirrel, nuts):
+    ___ minDistance_space(self, height, width, tree, squirrel, nuts
         """
         :type height: int
         :type width: int
@@ -30,21 +30,21 @@ class Solution(object):
         :type nuts: List[List[int]]
         :rtype: int
         """
-        n = len(nuts)
+        n = le.(nuts)
         nutToTree = [0]*n
         nutToSquirrel = [0]*n
         sumVal = 0
-        for i in range(n):
+        for i in range(n
             nutToTree[i] = abs(nuts[i][0]-tree[0])+abs(nuts[i][1]-tree[1])
             sumVal += nutToTree[i]*2
             nutToSquirrel[i] = abs(nuts[i][0]-squirrel[0])+abs(nuts[i][1]-squirrel[1])
         minVal = float('inf')
-        for i in range(n):
+        for i in range(n
             dist = sumVal + nutToSquirrel[i]-nutToTree[i]
             minVal = min(minVal, dist)
-        return minVal
+        r_ minVal
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 5,
@@ -66,5 +66,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

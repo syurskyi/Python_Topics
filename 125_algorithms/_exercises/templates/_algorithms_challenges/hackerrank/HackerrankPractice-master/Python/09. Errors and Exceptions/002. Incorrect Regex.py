@@ -2,7 +2,7 @@
 # Score: 20
 
 
-import re
+______ re
 
 
 for _ in range(int(input())):

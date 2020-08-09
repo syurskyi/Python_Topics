@@ -1,2 +1,2 @@
-def word_count():
+___ word_count(
     pass

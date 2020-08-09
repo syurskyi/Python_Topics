@@ -11,25 +11,25 @@ thought:
 """
 
 
-def array_of_array_products(nums):
+___ array_of_array_products(nums
     """
     :type nums: list[int]
     :rtype: list[int]
     """
-    if not nums or len(nums) <= 1:
-        return []
+    __ not nums or le.(nums) <= 1:
+        r_ []
 
-    n = len(nums)
+    n = le.(nums)
     ans = [1] * n
 
     # 1st scan [1, a, a * b, a * b * c]
-    for i in range(1, n):
+    for i in range(1, n
         ans[i] *= ans[i - 1] * nums[i - 1]
 
     # 2nd scan
     prod = 1
-    for i in range(n - 2, -1, -1):
+    for i in range(n - 2, -1, -1
         prod *= nums[i + 1]
         ans[i] *= prod
 
-    return ans
+    r_ ans

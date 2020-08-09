@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestMath(object):
+class TestMath(object
 
-    def test_generate_primes(self):
+    ___ test_generate_primes(self
         prime_generator = PrimeGenerator()
         assert_raises(TypeError, prime_generator.generate_primes, None)
         assert_raises(TypeError, prime_generator.generate_primes, 98.6)
@@ -17,10 +17,10 @@ class TestMath(object):
         print('Success: generate_primes')
 
 
-def main():
+___ main(
     test = TestMath()
     test.test_generate_primes()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

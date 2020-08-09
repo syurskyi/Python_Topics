@@ -1,24 +1,24 @@
-from itertools import combinations
-from re import match
+from itertools ______ combinations
+from re ______ match
 
-def count(diagram=""):
+___ count(diagram=""
     """count find the number of rectangles in a given diagram"""
     corners = find_char(diagram, '+')
-    return sum(1 for rect in combinations(corners, 4) if is_rect(rect, diagram))
+    r_ sum(1 for rect in combinations(corners, 4) __ is_rect(rect, diagram))
 
-def find_char(lines, char):
+___ find_char(lines, char
     """find_char returns the location of all the corner characters"""
-    return [ (row, col)
+    r_ [ (row, col)
         for row, line in enumerate(lines)
         for col, elem in enumerate(line)
-        if elem == char]
+        __ elem __ char]
 
-def is_rect(corners, diagram):
+___ is_rect(corners, diagram
     """is_rect determines if a set of corners is a rectangle
     by checking alignment and characters between the corners"""
     (a_r, a_c), (b_r, b_c), (c_r, c_c), (d_r, d_c) = sorted(corners)
-    if not (a_r == b_r and a_c == c_c and b_c == d_c and c_r == d_r):
-        return False
+    __ not (a_r __ b_r and a_c __ c_c and b_c __ d_c and c_r __ d_r
+        r_ False
 
     horz_regex = '\+[-+]{{{}}}\+'.format( d_c - a_c - 1)
     vert_regex = '\+[|+]{{{}}}\+'.format( d_r - a_r - 1)
@@ -27,5 +27,5 @@ def is_rect(corners, diagram):
     left = ''.join(row[a_c] for row in diagram[a_r:(d_r+1)])
     right = ''.join(row[d_c] for row in diagram[a_r:(d_r+1)])
 
-    return match(horz_regex, top) and match(horz_regex, bottom) and \
+    r_ match(horz_regex, top) and match(horz_regex, bottom) and \
         match(vert_regex, right) and match(vert_regex, left)

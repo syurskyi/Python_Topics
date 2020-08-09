@@ -1,2 +1,2 @@
-def is_pangram():
+___ is_pangram(
     pass

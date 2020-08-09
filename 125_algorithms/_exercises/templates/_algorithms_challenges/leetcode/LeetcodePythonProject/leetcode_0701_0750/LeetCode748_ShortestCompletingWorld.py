@@ -3,8 +3,8 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def shortestCompletingWord(self, licensePlate, words):
+class Solution(object
+    ___ shortestCompletingWord(self, licensePlate, words
         """
         :type licensePlate: str
         :type words: List[str]
@@ -12,27 +12,27 @@ class Solution(object):
         """
         hashmap = {}
         for c in licensePlate:
-            if not c.isdigit() and c != ' ':
+            __ not c.isdigit() and c != ' ':
                 hashmap[c.lower()] = hashmap.get(c.lower(), 0)+1
         res = ''
         l = float('inf')
         for word in words:
-            if len(word) < l:
-                if self.contains(hashmap, word):
+            __ le.(word) < l:
+                __ self.contains(hashmap, word
                     res = word
-                    l = len(res)
-        return res
+                    l = le.(res)
+        r_ res
     
-    def contains(self, hashmap, word):
+    ___ contains(self, hashmap, word
         hashmap0 = {}
         for c in word:
             hashmap0[c] = hashmap0.get(c, 0)+1
         for c in hashmap:
-            if hashmap[c] > hashmap0.get(c, 0):
-                return False
-        return True
+            __ hashmap[c] > hashmap0.get(c, 0
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 '1s3 PSt',
@@ -54,5 +54,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

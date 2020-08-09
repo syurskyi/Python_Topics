@@ -4,30 +4,30 @@ class Solution:
     @param: target: An integer
     @return: An integer
     """
-    def twoSum6(self, nums, target):
+    ___ twoSum6(self, nums, target
         ans = 0
-        if not nums:
-            return ans
+        __ not nums:
+            r_ ans
 
         nums.sort()
 
-        left, right = 0, len(nums) - 1
+        left, right = 0, le.(nums) - 1
         _sum = 0
-        while left < right:
+        w___ left < right:
             _sum = nums[left] + nums[right]
-            if _sum == target:
+            __ _sum __ target:
                 ans += 1
                 left += 1
                 right -= 1
-                while left < right and nums[right] == nums[right + 1]:
+                w___ left < right and nums[right] __ nums[right + 1]:
                     right -= 1
-                while left < right and nums[left] == nums[left - 1]:
+                w___ left < right and nums[left] __ nums[left - 1]:
                     left -= 1
                 continue
 
-            if _sum > target:
+            __ _sum > target:
                 right -= 1
-            else:
+            ____
                 left += 1
 
-        return ans
+        r_ ans

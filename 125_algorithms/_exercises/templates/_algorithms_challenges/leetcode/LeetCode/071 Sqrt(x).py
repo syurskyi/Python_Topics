@@ -5,7 +5,7 @@ Compute and return the square root of x.
 """
 __author__ = 'Danyang'
 class Solution:
-    def sqrt(self, x):
+    ___ sqrt(self, x
         """
         Newton's method
         x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \
@@ -14,14 +14,14 @@ class Solution:
         :param x: Integer
         :return: Integer
         """
-        if x==0: return 0  # avoid Division by zero
+        __ x__0: r_ 0  # avoid Division by zero
         m = x
-        while True:
+        w___ True:
             m_before = m
             m = m - float(m*m-x)/(2*m)
-            if abs(m-m_before)<1e-7: break
+            __ abs(m-m_before)<1e-7: break
 
-        return int(m)
+        r_ int(m)
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().sqrt(2)

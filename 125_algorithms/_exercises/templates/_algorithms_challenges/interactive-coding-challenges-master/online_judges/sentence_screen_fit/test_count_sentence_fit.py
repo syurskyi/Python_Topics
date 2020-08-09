@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSolution(object):
+class TestSolution(object
 
-    def test_count_sentence_fit(self):
+    ___ test_count_sentence_fit(self
         solution = Solution()
         assert_raises(TypeError, solution.count_sentence_fit, 
                       None, None, None)
@@ -24,10 +24,10 @@ class TestSolution(object):
         print('Success: test_count_sentence_fit')
 
 
-def main():
+___ main(
     test = TestSolution()
     test.test_count_sentence_fit()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

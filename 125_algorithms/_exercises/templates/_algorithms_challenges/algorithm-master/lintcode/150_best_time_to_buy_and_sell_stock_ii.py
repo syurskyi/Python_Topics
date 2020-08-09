@@ -3,13 +3,13 @@ class Solution:
     @param: P: Given an integer array
     @return: Maximum profit
     """
-    def maxProfit(self, P):
+    ___ maxProfit(self, P
         ans = 0
-        if not P:
-            return ans
+        __ not P:
+            r_ ans
 
-        for i in range(1, len(P)):
-            if P[i] > P[i - 1]:
+        for i in range(1, le.(P)):
+            __ P[i] > P[i - 1]:
                 ans += P[i] - P[i - 1]
 
-        return ans
+        r_ ans

@@ -4,23 +4,23 @@ Created on Apr 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def removeKdigits(self, num, k):
-        n = len(num)
+class Solution(object
+    ___ removeKdigits(self, num, k
+        n = le.(num)
         longest = n-k
-        if k >= n: return '0'
+        __ k >= n: r_ '0'
         stack = []
         for c in num:
-            while k > 0 and stack and stack[-1] > c:
+            w___ k > 0 and stack and stack[-1] > c:
                 stack.pop()
                 k -= 1
             stack.append(c)
         stack = stack[:longest]
         res = ''.join(stack)
         res = res.lstrip('0')
-        return res if res else '0'
+        r_ res __ res else '0'
     
-    def test(self):
+    ___ test(self
         testCases = [
             ("1432219", 3),
             ("10200", 1),
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

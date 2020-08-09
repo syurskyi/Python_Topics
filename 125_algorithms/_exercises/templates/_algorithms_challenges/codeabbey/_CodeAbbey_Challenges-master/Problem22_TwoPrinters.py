@@ -1,4 +1,4 @@
-##import math
+##______ ma__
 ##infile = open("prob22.txt")
 ##infile.readline()
 ##data = infile.readlines()
@@ -6,14 +6,14 @@
 ##
 ##for line in data:
 ##    x,y,n = line.strip().split(" ")
-##    if int(x)>int(y): # make X to be the smaller ones
+##    if int(x)>int(y # make X to be the smaller ones
 ##        x,y=y,x
 ##    x= int(x)
 ##    y= int(y)
 ##    n = int(n)
 ##    page_x = n//2  #round down
-##    page_y = math.ceil(n/2) # round up
-##    while page_x*x < page_y*y:
+##    page_y = ma__.ceil(n/2) # round up
+##    w___ page_x*x < page_y*y:
 ####        print(page_x,page_y)
 ##        if page_x*x == page_y*y:
 ##            break

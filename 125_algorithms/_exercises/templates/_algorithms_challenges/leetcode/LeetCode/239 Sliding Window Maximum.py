@@ -26,7 +26,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def maxSlidingWindow(self, nums, k):
+    ___ maxSlidingWindow(self, nums, k
         """
         Algorithms
         1. brute force
@@ -45,14 +45,14 @@ class Solution:
         """
         q = []  # store the index
         ret = []
-        n = len(nums)
-        for i in xrange(n):
-            while q and q[0] <= i-k:
+        n = le.(nums)
+        for i in xrange(n
+            w___ q and q[0] <= i-k:
                 q.pop(0)
-            while q and nums[q[-1]] < nums[i]:
+            w___ q and nums[q[-1]] < nums[i]:
                 q.pop()
             q.append(i)
-            if i >= k-1:
+            __ i >= k-1:
                 ret.append(nums[q[0]])
 
-        return ret
+        r_ ret

@@ -44,7 +44,7 @@ dirs = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 
 class Solution:
-    def isRobotBounded(self, instructions: str) -> bool:
+    ___ isRobotBounded(self, instructions: str) -> bool:
         """
         LL: op
         LLL: R
@@ -58,15 +58,15 @@ class Solution:
         """
         x, y = 0, 0
         i = 0
-        for _ in range(4):
+        for _ in range(4
             for cmd in instructions:
-                if cmd == "G":
+                __ cmd __ "G":
                     dx, dy = dirs[i]
                     x += dx
                     y += dy
-                elif cmd == "L":
+                ____ cmd __ "L":
                     i = (i - 1) % 4
-                else:
+                ____
                     i = (i + 1) % 4
                     
-        return x == 0 and y == 0
+        r_ x __ 0 and y __ 0

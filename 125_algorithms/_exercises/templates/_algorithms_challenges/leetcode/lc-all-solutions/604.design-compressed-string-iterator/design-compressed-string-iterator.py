@@ -1,6 +1,6 @@
-class StringIterator(object):
+class StringIterator(object
 
-  def __init__(self, compressedString):
+  ___ __init__(self, compressedString
     """
     :type compressedString: str
     """
@@ -8,35 +8,35 @@ class StringIterator(object):
     self.idx = -1
     self.decodeNext()
 
-  def decodeNext(self):
+  ___ decodeNext(self
     self.idx += 1
-    if self.idx + 1 < len(self.data):
+    __ self.idx + 1 < le.(self.data
       self.cur = self.data[self.idx]
       end = self.idx + 1
-      while end < len(self.data) and self.data[end].isdigit():
+      w___ end < le.(self.data) and self.data[end].isdigit(
         end += 1
       print
       end
       self.num = int(self.data[self.idx + 1:end])
       self.idx = end - 1
 
-  def next(self):
+  ___ next(self
     """
     :rtype: str
     """
-    if self.hasNext():
+    __ self.hasNext(
       ret = self.cur
       self.num -= 1
-      if self.num <= 0:
+      __ self.num <= 0:
         self.decodeNext()
-      return ret
-    return " "
+      r_ ret
+    r_ " "
 
-  def hasNext(self):
+  ___ hasNext(self
     """
     :rtype: bool
     """
-    return self.idx < len(self.data) and self.num > 0
+    r_ self.idx < le.(self.data) and self.num > 0
 
 # Your StringIterator object will be instantiated and called as such:
 # obj = StringIterator(compressedString)

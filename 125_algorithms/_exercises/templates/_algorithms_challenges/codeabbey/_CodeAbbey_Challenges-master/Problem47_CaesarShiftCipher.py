@@ -5,7 +5,7 @@ infile.close()
 
 ## Gen Alphabets
 alpha = []
-for i in range(26):
+for i in range(26
     char = chr(65+i)
     alpha.append(char)
 
@@ -16,9 +16,9 @@ for line in data:
     output = ""
     line = line.strip()
     for char in line:
-        if char.isalpha():
+        __ char.isalpha(
             i = alpha.index(char)-int(k)
             output += alpha[i]
-        else:
+        ____
             output+=char
     print(output,end=" ")

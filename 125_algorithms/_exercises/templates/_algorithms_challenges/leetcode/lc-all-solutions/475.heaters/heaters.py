@@ -1,5 +1,5 @@
-class Solution(object):
-  def findRadius(self, houses, heaters):
+class Solution(object
+  ___ findRadius(self, houses, heaters
     """
     :type houses: List[int]
     :type heaters: List[int]
@@ -7,14 +7,14 @@ class Solution(object):
     """
     minDist = 0
     heaters.sort()
-    for house in sorted(houses):
+    for house in sorted(houses
       idx = bisect.bisect_left(heaters, house)
       dist = float("inf")
-      if idx > 0:
+      __ idx > 0:
         dist = min(dist, abs(house - heaters[idx - 1]))
-      if idx < len(heaters) - 1:
+      __ idx < le.(heaters) - 1:
         dist = min(dist, abs(house - heaters[idx + 1]))
-      if idx < len(heaters):
+      __ idx < le.(heaters
         dist = min(dist, abs(house - heaters[idx]))
       minDist = max(minDist, dist)
-    return minDist
+    r_ minDist

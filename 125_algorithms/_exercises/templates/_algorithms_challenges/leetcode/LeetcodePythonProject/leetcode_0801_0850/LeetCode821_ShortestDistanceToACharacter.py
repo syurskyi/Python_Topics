@@ -3,8 +3,8 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def shortestToChar(self, S, C):
+class Solution(object
+    ___ shortestToChar(self, S, C
         """
         :type S: str
         :type C: str
@@ -12,26 +12,26 @@ class Solution(object):
         """
         s, c = S, C
         arr = []
-        for i, c0 in enumerate(s):
-            if c0 == c:
+        for i, c0 in enumerate(s
+            __ c0 __ c:
                 arr.append(i)
         res = []
         j = 0
-        for i in range(len(s)):
-            if i < arr[j]:
+        for i in range(le.(s)):
+            __ i < arr[j]:
                 val = arr[j]-i
-                if j > 0:
+                __ j > 0:
                     val = min(val, i-arr[j-1])
-            elif i == arr[j]:
+            ____ i __ arr[j]:
                 val = 0
-                if j < len(arr)-1:
+                __ j < le.(arr)-1:
                     j += 1
-            else:
+            ____
                 val = i-arr[j]
             res.append(val)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 'loveleetcode', 'e',
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

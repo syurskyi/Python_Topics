@@ -1,19 +1,19 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-import os
+______ os
 
-def fileToArray(filePath):
+___ fileToArray(filePath
     with open(filePath, 'r') as file:
         lines = []
         line = file.readline()
-        while line:
-            if line != '':
+        w___ line:
+            __ line != '':
                 lines.append(line.rstrip())
                 line = file.readline()
-        return lines
+        r_ lines
 
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     cwd = os.getcwd()
     prime = cwd + '/23-file-overlap/prime.txt'
     happy = cwd + '/23-file-overlap/happy.txt'

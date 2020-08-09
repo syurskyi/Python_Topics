@@ -12,28 +12,28 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-class Solution(object):
-    def productExceptSelf(self, nums):
+class Solution(object
+    ___ productExceptSelf(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         Space: O(n)
         """
-        n = len(nums)
+        n = le.(nums)
         # left[i] is the product to the left of i (nums[0..i - 1])
         left = [1 for i in range(n)]
         # right[i] is the product to the right of i (nums[i + 1..-1])
         right = [1 for i in range(n)]
-        for i in range(1, n):
+        for i in range(1, n
             # i ranges from 1 to n - 1
             # j ranges from n - 2 to 0
             j = n - 1 - i
             left[i] = left[i - 1] * nums[i - 1]
             right[j] = right[j + 1] * nums[j + 1]
         res = [1 for i in range(n)]
-        for i in range(n):
+        for i in range(n
             res[i] = left[i] * right[i]
-        return res
+        r_ res
 
 
 a0 = [0, 0]

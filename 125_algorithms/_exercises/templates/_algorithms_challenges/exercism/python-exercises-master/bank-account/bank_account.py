@@ -1,18 +1,18 @@
-class BankAccount(object):
-    def __init__(self):
+class BankAccount(object
+    ___ __init__(self
         pass
 
-    def get_balance(self):
+    ___ get_balance(self
         pass
 
-    def open(self):
+    ___ open(self
         pass
 
-    def deposit(self, amount):
+    ___ deposit(self, amount
         pass
 
-    def withdraw(self, amount):
+    ___ withdraw(self, amount
         pass
 
-    def close(self):
+    ___ close(self
         pass

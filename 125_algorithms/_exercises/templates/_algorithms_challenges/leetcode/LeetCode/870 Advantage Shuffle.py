@@ -21,12 +21,12 @@ Note:
 0 <= A[i] <= 10^9
 0 <= B[i] <= 10^9
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def advantageCount(self, A: List[int], B: List[int]) -> List[int]:
+    ___ advantageCount(self, A: List[int], B: List[int]) -> List[int]:
         """
         Gready select the smallest larger number
         Then we need sort A
@@ -40,29 +40,29 @@ class Solution:
         then keep a list
         """
         idxes = defaultdict(list)
-        for i, b in enumerate(B):
+        for i, b in enumerate(B
             idxes[b].append(i)
 
-        n = len(A)
+        n = le.(A)
         A.sort()
         B.sort()
         ret = [None for _ in range(n)]
         not_used = []
         j = 0
         for a in A:
-            if a > B[j]:
+            __ a > B[j]:
                 i = idxes[B[j]].pop()
                 ret[i] = a
                 j += 1
-            else:
+            ____
                 not_used.append(a)
 
-        for i in range(n):
-            if ret[i] is None:
+        for i in range(n
+            __ ret[i] is None:
                 ret[i] = not_used.pop()
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().advantageCount([2,7,11,15], [1,10,4,11]) == [2,11,7,15]
+__ __name__ __ "__main__":
+    assert Solution().advantageCount([2,7,11,15], [1,10,4,11]) __ [2,11,7,15]

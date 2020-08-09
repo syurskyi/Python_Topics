@@ -1,10 +1,10 @@
-def sum_of_n(n):
+___ sum_of_n(n
 	res = []
 	v = 0
-	for i in range(abs(n)+1):
-		v += i if n >= 0 else -i
+	for i in range(abs(n)+1
+		v += i __ n >= 0 else -i
 		res.append(v)
-	return res
+	r_ res
 
 
 print(sum_of_n(5))

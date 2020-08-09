@@ -3,23 +3,23 @@ class Solution:
     @param: S: A string
     @return: all permutations
     """
-    def stringPermutation2(self, S):
-        if not S:
-            return ['']
+    ___ stringPermutation2(self, S
+        __ not S:
+            r_ ['']
 
         S = sorted(S)
 
         ans = []
         self.dfs(S, ans, [])
-        return ans
+        r_ ans
 
-    def dfs(self, S, ans, path):
-        if not S:
+    ___ dfs(self, S, ans, path
+        __ not S:
             ans.append(''.join(path))
-            return
+            r_
 
-        for i in range(len(S)):
-            if i > 0 and S[i] == S[i - 1]:
+        for i in range(le.(S)):
+            __ i > 0 and S[i] __ S[i - 1]:
                 continue
             path.append(S[i])
             self.dfs(S[:i] + S[i + 1:], ans, path)

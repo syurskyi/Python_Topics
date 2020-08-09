@@ -43,45 +43,45 @@ can only load at most one row of the matrix into the memory at once?
 What if the matrix is so large that you can only load up a partial row into the
 memory at once?
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
-        m, n = len(matrix), len(matrix[0])
-        for i in range(1, m):
-            for j in range(1, n):
-                if matrix[i][j] != matrix[i-1][j-1]:
-                    return False
+    ___ isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
+        m, n = le.(matrix), le.(matrix[0])
+        for i in range(1, m
+            for j in range(1, n
+                __ matrix[i][j] != matrix[i-1][j-1]:
+                    r_ False
 
-        return True
+        r_ True
 
-    def isToeplitzMatrix_complex(self, matrix: List[List[int]]) -> bool:
+    ___ isToeplitzMatrix_complex(self, matrix: List[List[int]]) -> bool:
         """
         Brute force iteration will work
 
         need a good way to go through the matrix
         """
-        m, n = len(matrix), len(matrix[0])
-        for j in range(n):
+        m, n = le.(matrix), le.(matrix[0])
+        for j in range(n
             r = 0
             c = j
             cur = matrix[r][c]
-            while r < m and c < n:
-                if cur != matrix[r][c]:
-                    return False
+            w___ r < m and c < n:
+                __ cur != matrix[r][c]:
+                    r_ False
                 r += 1
                 c += 1
 
-        for i in range(1, m):
+        for i in range(1, m
             r = i
             c = 0
             cur = matrix[r][c]
-            while r < m and c < n:
-                if cur != matrix[r][c]:
-                    return False
+            w___ r < m and c < n:
+                __ cur != matrix[r][c]:
+                    r_ False
 
                 r += 1
                 c += 1
 
-        return True
+        r_ True

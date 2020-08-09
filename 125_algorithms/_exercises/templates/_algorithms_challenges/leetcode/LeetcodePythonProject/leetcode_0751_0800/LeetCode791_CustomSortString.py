@@ -3,8 +3,8 @@ Created on Apr 15, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def customSortString(self, S, T):
+class Solution(object
+    ___ customSortString(self, S, T
         """
         :type S: str
         :type T: str
@@ -16,16 +16,16 @@ class Solution(object):
             count[ord(c)-ord('a')] += 1
         res = ''
         for c in s:
-            while count[ord(c)-ord('a')] > 0:
+            w___ count[ord(c)-ord('a')] > 0:
                 res += c
                 count[ord(c)-ord('a')] -= 1
-        for i in range(26):
-            while count[i] > 0:
+        for i in range(26
+            w___ count[i] > 0:
                 res += chr(i+ord('a'))
                 count[i] -= 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             ['cba', 'abcd'],
             ["kqep", "pekeq"],
@@ -38,5 +38,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

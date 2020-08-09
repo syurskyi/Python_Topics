@@ -3,8 +3,8 @@ Created on Oct 24, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def topKFrequent(self, words, k):
+class Solution(object
+    ___ topKFrequent(self, words, k
         """
         :type words: List[str]
         :type k: int
@@ -13,20 +13,20 @@ class Solution(object):
         hashmap = {}
         for word in words:
             hashmap[word] = hashmap.get(word, 0)+1
-        n = len(words)
+        n = le.(words)
         dp = [[] for _ in range(n+1)]
-        for word, freq in hashmap.items():
+        for word, freq in hashmap.items(
             dp[freq].append(word)
         res = []
-        for i in range(n, -1, -1):
-            if dp[i]:
+        for i in range(n, -1, -1
+            __ dp[i]:
                 dp[i].sort()
                 res += dp[i]
-                if len(res) >= k:
+                __ le.(res) >= k:
                     break
-        return res[:k]
+        r_ res[:k]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["i", "love", "leetcode", "i", "love", "coding"],
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,5 +1,5 @@
 class Solution:
-    def hasPath(self, maze, start, destination):
+    ___ hasPath(self, maze, start, destination
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -19,29 +19,29 @@ class Solution:
         >>> s.hasPath(maze, [0, 4], [3, 2])
         False
         """
-        if not maze or not maze[0] or not start or not destination:
-            return False
+        __ not maze or not maze[0] or not start or not destination:
+            r_ False
 
         x, y = start
         tx, ty = destination
         visited = set()
-        return self.dfs(maze, x, y, tx, ty, visited)
+        r_ self.dfs(maze, x, y, tx, ty, visited)
 
-    def dfs(self, maze, x, y, tx, ty, visited):
-        if x == tx and y == ty:
-            return True
-        if (x, y) in visited:
-            return False
+    ___ dfs(self, maze, x, y, tx, ty, visited
+        __ x __ tx and y __ ty:
+            r_ True
+        __ (x, y) in visited:
+            r_ False
 
         visited.add((x, y))
 
-        m, n = len(maze), len(maze[0])
+        m, n = le.(maze), le.(maze[0])
 
         for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
             _x = x + dx
             _y = y + dy
 
-            while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] == 0:
+            w___ 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
                 _x += dx
                 _y += dy
 
@@ -49,7 +49,7 @@ class Solution:
             _x -= dx
             _y -= dy
 
-            if self.dfs(maze, _x, _y, tx, ty, visited):
-                return True
+            __ self.dfs(maze, _x, _y, tx, ty, visited
+                r_ True
 
-        return False
+        r_ False

@@ -27,11 +27,11 @@ N is an integer within the range [1, 20,000].
 The elements of A are all distinct.
 Each element of A is an integer within the range [0, N-1].
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def arrayNesting(self, nums: List[int]) -> int:
+    ___ arrayNesting(self, nums: List[int]) -> int:
         """
         You can think of it as graph. If circle, then you can start with any
         node
@@ -42,17 +42,17 @@ class Solution:
             count = self.dfs(nums, n, set(), visited)
             ret = max(ret, count)
 
-        return ret
+        r_ ret
 
-    def dfs(self, nums, num, path, visited):
-        if num in visited:
-            return 0
+    ___ dfs(self, nums, num, path, visited
+        __ num in visited:
+            r_ 0
 
         visited.add(num)
         path.add(num)  # path is subset of visited
         self.dfs(nums, nums[num], path, visited)
-        return len(path)
+        r_ le.(path)
 
 
-if __name__ == "__main__":
-    assert Solution().arrayNesting([5,4,0,3,1,6,2]) == 4
+__ __name__ __ "__main__":
+    assert Solution().arrayNesting([5,4,0,3,1,6,2]) __ 4

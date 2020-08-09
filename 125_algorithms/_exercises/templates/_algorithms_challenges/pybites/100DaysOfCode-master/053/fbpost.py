@@ -1,8 +1,8 @@
-import os
-import sys
+______ os
+______ sys
 
-import click
-import facebook
+______ click
+______ facebook
 
 token = os.environ.get('FB_POSTCLI_TOKEN') or sys.exit('Please set FB_POSTCLI_PW env var')
 graph = facebook.GraphAPI(access_token=token, version='2.7')  # 2.9 (docs) facebook.GraphAPIError ?!
@@ -14,8 +14,8 @@ CONNECTION_NAME = 'feed'
 @click.command()
 @click.option('--connection', default=PYBITES, help='Where to post to (me, group name/id)')  # TODO: post to page
 @click.option('--message', help='The message to post. For now embed any links in here')
-def fbpost(connection, message):
-    if message is None:
+___ fbpost(connection, message
+    __ message is None:
         raise ValueError('I need to know what message to post please')
 
     graph.put_object(
@@ -24,5 +24,5 @@ def fbpost(connection, message):
         message=message)   # TODO: allow link kwarg
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     fbpost()

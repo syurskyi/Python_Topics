@@ -1,11 +1,11 @@
-from nose.tools import assert_equal
-from nose.tools import assert_raises
-from nose.tools import assert_true
+from nose.tools ______ assert_equal
+from nose.tools ______ assert_raises
+from nose.tools ______ assert_true
 
 
-class TestMaxProfit(object):
+class TestMaxProfit(object
 
-    def test_max_profit(self):
+    ___ test_max_profit(self
         stock_trader = StockTrader()
         assert_raises(TypeError, stock_trader.find_max_profit, None, None)
         assert_equal(stock_trader.find_max_profit(prices=[], k=0), [])
@@ -36,10 +36,10 @@ class TestMaxProfit(object):
         print('Success: test_max_profit')
 
 
-def main():
+___ main(
     test = TestMaxProfit()
     test.test_max_profit()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

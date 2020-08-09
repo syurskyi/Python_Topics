@@ -3,46 +3,46 @@ Created on Jun 10, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def maxDistToClosest(self, seats):
+class Solution(object
+    ___ maxDistToClosest(self, seats
         """
         :type seats: List[int]
         :rtype: int
         """
         res = i = 0
-        for j in range(len(seats)):
-            if seats[j] == 1:
-                if i == 0:
+        for j in range(le.(seats)):
+            __ seats[j] __ 1:
+                __ i __ 0:
                     res = j
-                else:
+                ____
                     res = max(res, (j-i+1) >> 1)
                 i = j+1
-        return max(res, len(seats)-i)
+        r_ max(res, le.(seats)-i)
     
-    def maxDistToClosest_twoPass(self, seats):
+    ___ maxDistToClosest_twoPass(self, seats
         """
         :type seats: List[int]
         :rtype: int
         """
         # two passes, there is a better solution for one pass
-        n = len(seats)
+        n = le.(seats)
         left = [0]*(n+1)
         right = [0]*(n+1)
         left[0] = float('inf')
-        for i in range(n):
-            if seats[i] == 0:
+        for i in range(n
+            __ seats[i] __ 0:
                 left[i+1] = left[i]+1
         right[-1] = float('inf')
-        for i in range(n-1, -1, -1):
-            if seats[i] == 0:
+        for i in range(n-1, -1, -1
+            __ seats[i] __ 0:
                 right[i] = right[i+1]+1
         res = float('-inf')
-        for i in range(n):
-            if left[i+1] != 0 and right[i] != 0:
+        for i in range(n
+            __ left[i+1] != 0 and right[i] != 0:
                 res = max(res, min(left[i+1], right[i]))
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1,0,0,0,1,0,1],
             [1,0,0,0],
@@ -54,5 +54,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

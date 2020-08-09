@@ -4,8 +4,8 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def titleToNumber(self, s):
+class Solution(object
+    ___ titleToNumber(self, s
         """
         :type s: str
         :rtype: int
@@ -15,9 +15,9 @@ class Solution(object):
             result = result*26
             num = ord(c)-ord('A')+1
             result += num
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             'A',
             'B',
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

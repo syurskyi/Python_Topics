@@ -1,10 +1,10 @@
-from Previous.decorators import make_html
+from Previous.decorators ______ make_html
 
 
-def test_make_html():
+___ test_make_html(
     @make_html('p')
     @make_html('strong')
-    def get_text(text='I code with PyBites'):
-        return text
+    ___ get_text(text='I code with PyBites'
+        r_ text
 
-    assert get_text() == '<p><strong>I code with PyBites</strong></p>'
+    assert get_text() __ '<p><strong>I code with PyBites</strong></p>'

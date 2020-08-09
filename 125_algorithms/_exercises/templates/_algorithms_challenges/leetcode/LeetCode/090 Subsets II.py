@@ -18,7 +18,7 @@ If S = [1,2,2], a solution is:
 """
 __author__ = 'Danyang'
 class Solution:
-    def subsetsWithDup(self, S):
+    ___ subsetsWithDup(self, S
         """
         dfs
         notice the skipping
@@ -28,16 +28,16 @@ class Solution:
         S.sort()
         result = []
         self.get_subset(S, [], result)
-        return result
+        r_ result
 
-    def get_subset(self, S, current, result):
+    ___ get_subset(self, S, current, result
         result.append(current)
-        for ind, val in enumerate(S):
+        for ind, val in enumerate(S
             # JUMP, avoid duplicates
-            if ind-1>=0 and val==S[ind-1]:  # ensure uni-direction
+            __ ind-1>=0 and val__S[ind-1]:  # ensure uni-direction
                 continue
             self.get_subset(S[ind+1:], current+[val], result)
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().subsetsWithDup([1, 2, 3])

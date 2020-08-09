@@ -21,13 +21,13 @@ Input: "2*3-4*5"
 (((2*3)-4)*5) = 10
 Output: [-34, -14, -10, -10, 10]
 """
-import re
+______ re
 
 __author__ = 'Daniel'
 
 
 class Solution:
-    def diffWaysToCompute(self, input):
+    ___ diffWaysToCompute(self, input
         """
         Looping + Divide & Conquer
 
@@ -38,30 +38,30 @@ class Solution:
         nums = map(int, filter(lambda x: re.match(r"\d+", x), input_lst))
         ops = filter(lambda x: re.match(r"\D", x), input_lst)
         ret = self.dfs_eval(nums, ops)
-        return ret
+        r_ ret
 
-    def dfs_eval(self, nums, ops):
+    ___ dfs_eval(self, nums, ops
         ret = []
-        if not ops:
-            assert len(nums) == 1
-            return nums
+        __ not ops:
+            assert le.(nums) __ 1
+            r_ nums
 
-        for i, op in enumerate(ops):
+        for i, op in enumerate(ops
             left_vals = self.dfs_eval(nums[:i+1], ops[:i])
             right_vals = self.dfs_eval(nums[i+1:], ops[i+1:])
             for l in left_vals:
                 for r in right_vals:
                     ret.append(self._eval(l, r, op))
 
-        return ret
+        r_ ret
 
-    def _eval(self, a, b, op):
-        return {
+    ___ _eval(self, a, b, op
+        r_ {
             "+": lambda a, b: a+b,
             "-": lambda a, b: a-b,
             "*": lambda a, b: a*b,
         }[op](a, b)
 
 
-if __name__ == "__main__":
-    assert Solution().diffWaysToCompute("1+1") == [2]
+__ __name__ __ "__main__":
+    assert Solution().diffWaysToCompute("1+1") __ [2]

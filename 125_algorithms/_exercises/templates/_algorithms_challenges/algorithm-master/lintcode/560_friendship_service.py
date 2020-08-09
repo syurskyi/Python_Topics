@@ -1,45 +1,45 @@
 class FriendshipService:
-    def __init__(self):
+    ___ __init__(self
         self.followers = {}
         self.followings = {}
 
-    def getFollowers(self, user_id):
-        return self.get_followers(user_id)
+    ___ getFollowers(self, user_id
+        r_ self.get_followers(user_id)
 
-    def getFollowings(self, user_id):
-        return self.get_followings(user_id)
+    ___ getFollowings(self, user_id
+        r_ self.get_followings(user_id)
 
     """
     @param: user_id: An integer
     @return: all followers and sort by user_id
     """
-    def get_followers(self, user_id):
-        if user_id in self.followers:
-            return sorted(self.followers[user_id])
+    ___ get_followers(self, user_id
+        __ user_id in self.followers:
+            r_ sorted(self.followers[user_id])
 
-        return []
+        r_ []
 
     """
     @param: user_id: An integer
     @return: all followings and sort by user_id
     """
-    def get_followings(self, user_id):
-        if user_id in self.followings:
-            return sorted(self.followings[user_id])
+    ___ get_followings(self, user_id
+        __ user_id in self.followings:
+            r_ sorted(self.followings[user_id])
 
-        return []
+        r_ []
 
     """
     @param: to_id: An integer
     @param: from_id: An integer
     @return: nothing
     """
-    def follow(self, to_id, from_id):
-        if from_id not in self.followings:
+    ___ follow(self, to_id, from_id
+        __ from_id not in self.followings:
             self.followings[from_id] = set()
         self.followings[from_id].add(to_id)
 
-        if to_id not in self.followers:
+        __ to_id not in self.followers:
             self.followers[to_id] = set()
         self.followers[to_id].add(from_id)
 
@@ -48,9 +48,9 @@ class FriendshipService:
     @param: from_id: An integer
     @return: nothing
     """
-    def unfollow(self, to_id, from_id):
-        if from_id in self.followings:
+    ___ unfollow(self, to_id, from_id
+        __ from_id in self.followings:
             self.followings[from_id].discard(to_id)
 
-        if to_id in self.followers:
+        __ to_id in self.followers:
             self.followers[to_id].discard(from_id)

@@ -1,38 +1,38 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
 
 
 class Solution:
-    def binaryTreePaths(self, root):
+    ___ binaryTreePaths(self, root
         """
         :type root: TreeNode
         :rtype: list[str]
         """
         ans = []
-        if not root:
-            return ans
+        __ not root:
+            r_ ans
 
         self.dfs(root, ans, [])
 
-        return ans
+        r_ ans
 
-    def dfs(self, node, ans, path):
+    ___ dfs(self, node, ans, path
         path.append(str(node.val))
 
-        if not node.left and not node.right:
+        __ not node.left and not node.right:
             ans.append('->'.join(path))
             path.pop()
-            return
+            r_
 
-        if node.left:
+        __ node.left:
             self.dfs(node.left, ans, path)
 
-        if node.right:
+        __ node.right:
             self.dfs(node.right, ans, path)
 
         path.pop()

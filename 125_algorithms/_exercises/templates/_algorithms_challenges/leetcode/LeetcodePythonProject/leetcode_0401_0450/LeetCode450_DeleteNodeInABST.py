@@ -4,47 +4,47 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def deleteNode(self, root, key):
-        if not root: return None
+class Solution(object
+    ___ deleteNode(self, root, key
+        __ not root: r_ None
         parent, node = self.findNode(key, root, None)
-        if not node: return root
-        if not parent:
-            return self.removeNode(node)
-        else:
+        __ not node: r_ root
+        __ not parent:
+            r_ self.removeNode(node)
+        ____
             newNode = self.removeNode(node)
-            if node == parent.left:
+            __ node __ parent.left:
                 parent.left = newNode
-            else:
+            ____
                 parent.right = newNode
-            return root
+            r_ root
     
-    def removeNode(self, node):
-        if node.right:
+    ___ removeNode(self, node
+        __ node.right:
             newRoot = node.right
             left = node.left
             node = newRoot
-            while node.left:
+            w___ node.left:
                 node = node.left
             node.left = left
-            return newRoot
-        elif node.left:
+            r_ newRoot
+        ____ node.left:
             newRoot = node.left
             right = node.right
             node = newRoot
-            while node.right:
+            w___ node.right:
                 node = node.right
             node.right = right
-            return newRoot
-        else:
-            return None
+            r_ newRoot
+        ____
+            r_ None
     
-    def findNode(self, key, root, parent):
-        if not root:
-            return None, None
-        if root.val == key:
-            return parent, root
-        elif root.val > key:
-            return self.findNode(key, root.left, root)
-        else:
-            return self.findNode(key, root.right, root)
+    ___ findNode(self, key, root, parent
+        __ not root:
+            r_ None, None
+        __ root.val __ key:
+            r_ parent, root
+        ____ root.val > key:
+            r_ self.findNode(key, root.left, root)
+        ____
+            r_ self.findNode(key, root.right, root)

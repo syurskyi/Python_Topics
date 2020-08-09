@@ -4,16 +4,16 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def fizzBuzz(self, n):
+class Solution(object
+    ___ fizzBuzz(self, n
         result = []
-        for num in range(1, n+1):
-            if num % 15 == 0:
+        for num in range(1, n+1
+            __ num % 15 __ 0:
                 result.append('FizzBuzz')
-            elif num % 5 == 0:
+            ____ num % 5 __ 0:
                 result.append('Buzz')
-            elif num % 3 == 0:
+            ____ num % 3 __ 0:
                 result.append('Fizz')
-            else:
+            ____
                 result.append(str(num))
-        return result
+        r_ result

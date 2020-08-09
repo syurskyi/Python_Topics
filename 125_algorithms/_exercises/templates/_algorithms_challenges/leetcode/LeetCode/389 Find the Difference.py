@@ -18,13 +18,13 @@ Explanation:
 'e' is the letter that was added.
 
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def findTheDifference(self, s, t):
+class Solution(object
+    ___ findTheDifference(self, s, t
         """
         :type s: str
         :type t: str
@@ -35,8 +35,8 @@ class Solution(object):
             d[e] += 1
 
         for e in t:
-            if d[e] == 0:
-                return e
+            __ d[e] __ 0:
+                r_ e
             d[e] -= 1
 
-        return ''
+        r_ ''

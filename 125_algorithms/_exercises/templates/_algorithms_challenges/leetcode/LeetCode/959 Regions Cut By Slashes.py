@@ -69,31 +69,31 @@ Note:
 1 <= grid.length == grid[0].length <= 30
 grid[i][j] is either '/', '\', or ' '.
 """
-from typing import List
+from typing ______ List
 
 
 class DisjointSet:
-    def __init__(self):
+    ___ __init__(self
         """
         unbalanced DisjointSet
         """
         self.pi = {}
 
-    def union(self, x, y):
+    ___ union(self, x, y
         pi_x = self.find(x)
         pi_y = self.find(y)
         self.pi[pi_y] = pi_x
 
-    def find(self, x):
+    ___ find(self, x
         # LHS self.pi[x]
-        if x not in self.pi:
+        __ x not in self.pi:
             self.pi[x] = x
-        if self.pi[x] != x:
+        __ self.pi[x] != x:
             self.pi[x] = self.find(self.pi[x])
-        return self.pi[x]
+        r_ self.pi[x]
 
 class Solution:
-    def regionsBySlashes(self, grid: List[str]) -> int:
+    ___ regionsBySlashes(self, grid: List[str]) -> int:
         """
         in 1 x 1 cell
         3 possibilities
@@ -112,22 +112,22 @@ class Solution:
         |\ /|
         |/_\|
         """
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         ds = DisjointSet()
         T, R, B, L = range(4)  # top, right, bottom, left
-        for i in range(m):
-            for j in range(n):
+        for i in range(m
+            for j in range(n
                 e = grid[i][j]
-                if e == "/" or e == " ":
+                __ e __ "/" or e __ " ":
                     ds.union((i, j, B), (i, j, R))
                     ds.union((i, j, T), (i, j, L))
-                if e == "\\" or e == " ":  # not elif
+                __ e __ "\\" or e __ " ":  # not elif
                     ds.union((i, j, T), (i, j, R))
                     ds.union((i, j, B), (i, j, L))
                 # nbr
-                if i - 1 >= 0:
+                __ i - 1 >= 0:
                     ds.union((i, j, T), (i-1, j, B))
-                if j - 1 >= 0:
+                __ j - 1 >= 0:
                     ds.union((i, j, L), (i, j-1, R))
 
                 # unnessary, half closed half open
@@ -137,18 +137,18 @@ class Solution:
                 #     ds.union((i, j, R), (i, j+1, L))
 
 
-        return len(set(
+        r_ le.(set(
             ds.find(x)
             for x in ds.pi.keys()
         ))
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().regionsBySlashes([
           " /",
           "/ "
-        ]) == 2
+        ]) __ 2
     assert Solution().regionsBySlashes([
           "//",
           "/ "
-        ]) == 3
+        ]) __ 3

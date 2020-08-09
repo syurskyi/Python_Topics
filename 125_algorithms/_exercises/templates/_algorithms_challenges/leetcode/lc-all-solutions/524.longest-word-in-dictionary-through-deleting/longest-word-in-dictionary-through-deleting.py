@@ -1,25 +1,25 @@
-import collections
+______ collections
 
 
-class Solution(object):
-  def findLongestWord(self, s, d):
+class Solution(object
+  ___ findLongestWord(self, s, d
     """
     :type s: str
     :type d: List[str]
     :rtype: str
     """
-    d.sort(key=lambda x: (-len(x), x))
+    d.sort(key=lambda x: (-le.(x), x))
 
-    def isSubseq(word, s):
+    ___ isSubseq(word, s
       i = 0
       for c in s:
-        if c == word[i]:
+        __ c __ word[i]:
           i += 1
-        if i == len(word):
-          return True
-      return False
+        __ i __ le.(word
+          r_ True
+      r_ False
 
     for word in d:
-      if isSubseq(word, s):
-        return word
-    return ""
+      __ isSubseq(word, s
+        r_ word
+    r_ ""

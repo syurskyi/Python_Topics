@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-import re
-import sys
+______ re
+______ sys
 
-import pyperclip
+______ pyperclip
 
 AMAZON = 'amazon'
 CODE = 'pyb0f-20'
@@ -18,13 +18,13 @@ URL = re.compile(r"""
 # https://pybit.es/pyperclip.html
 url = pyperclip.paste()
 
-if AMAZON not in url or '/dp/' not in url:
+__ AMAZON not in url or '/dp/' not in url:
     sys.exit('Copy URL and run this script again')
 
 print('Grabbed link from clipboard: \n'.format(url))
 
 m = URL.match(url)
-if not m:
+__ not m:
     sys.exit('URL does not match')
 
 asin = m.group('asin')

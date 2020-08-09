@@ -3,25 +3,25 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def triangleNumber(self, nums):
+class Solution(object
+    ___ triangleNumber(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
         nums.sort()
         count = 0
-        for i in range(len(nums)-1, 0, -1):
+        for i in range(le.(nums)-1, 0, -1
             l, r = 0, i-1
-            while l < r:
-                if nums[l]+nums[r] > nums[i]:
+            w___ l < r:
+                __ nums[l]+nums[r] > nums[i]:
                     count += r-l
                     r -= 1
-                else:
+                ____
                     l += 1
-        return count
+        r_ count
     
-    def test(self):
+    ___ test(self
         testCases = [
             [2, 2, 3, 4],
         ]
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

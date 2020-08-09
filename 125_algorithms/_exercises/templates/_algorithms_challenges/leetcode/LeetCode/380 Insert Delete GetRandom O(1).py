@@ -1,8 +1,8 @@
 """
 Design a data structure that supports all following operations in average O(1) time.
 
-insert(val): Inserts an item val to the set if not already present.
-remove(val): Removes an item val from the set if present.
+insert(val Inserts an item val to the set if not already present.
+remove(val Removes an item val from the set if present.
 getRandom: Returns a random element from current set of elements. Each element must have the same probability of
 being returned.
 Example:
@@ -31,13 +31,13 @@ randomSet.insert(2);
 // Since 1 is the only number in the set, getRandom always return 1.
 randomSet.getRandom();
 """
-import random
+______ random
 
 __author__ = 'Daniel'
 
 
-class RandomizedSet(object):
-    def __init__(self):
+class RandomizedSet(object
+    ___ __init__(self
         """
         1. Use List of numbers to support O(1) getRandom
         2. need an efficient way to find and delete an element
@@ -47,56 +47,56 @@ class RandomizedSet(object):
         self.lst = []
         self.pos = {}
 
-    def insert(self, val):
+    ___ insert(self, val
         """
         Inserts a value to the set. Returns true if the set did not already contain the specified element.
         :type val: int
         :rtype: bool
         """
-        if val in self.pos:
-            return False
+        __ val in self.pos:
+            r_ False
 
         self.lst.append(val)
-        self.pos[val] = len(self.lst) - 1
+        self.pos[val] = le.(self.lst) - 1
 
-        return True
+        r_ True
 
-    def remove(self, val):
+    ___ remove(self, val
         """
         Removes a value from the set. Returns true if the set contained the specified element.
         :type val: int
         :rtype: bool
         """
-        if val not in self.pos:
-            return False
+        __ val not in self.pos:
+            r_ False
 
-        idx, last = self.pos[val], len(self.lst) - 1
+        idx, last = self.pos[val], le.(self.lst) - 1
 
-        if idx != last:
+        __ idx != last:
             self.lst[idx], self.lst[last] = self.lst[last], self.lst[idx]
             self.pos[self.lst[idx]] = idx
 
         del self.pos[val]
         self.lst.pop()
 
-        return True
+        r_ True
 
-    def getRandom(self):
+    ___ getRandom(self
         """
         Gets a random element from the set.
         :rtype: int
         """
-        return random.choice(self.lst)
+        r_ random.choice(self.lst)
 
 
-class RandomizedSetTLE(object):
-    def __init__(self):
+class RandomizedSetTLE(object
+    ___ __init__(self
         """
         Initialize your data structure here.
         """
         self.set = set()
 
-    def insert(self, val):
+    ___ insert(self, val
         """
         Inserts a value to the set. Returns true if the set did not already contain the specified element.
         :type val: int
@@ -104,9 +104,9 @@ class RandomizedSetTLE(object):
         """
         ret = val not in self.set
         self.set.add(val)
-        return ret
+        r_ ret
 
-    def remove(self, val):
+    ___ remove(self, val
         """
         Removes a value from the set. Returns true if the set contained the specified element.
         :type val: int
@@ -114,14 +114,14 @@ class RandomizedSetTLE(object):
         """
         ret = val in self.set
         self.set.discard(val)
-        return ret
+        r_ ret
 
-    def getRandom(self):
+    ___ getRandom(self
         """
         Get a random element from the set.
         :rtype: int
         """
-        return random.sample(self.set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
+        r_ random.sample(self.set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
 
 
 

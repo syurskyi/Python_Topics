@@ -4,38 +4,38 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-class MinStack(object):
+class MinStack(object
 
-    def __init__(self):
+    ___ __init__(self
         """
         initialize your data structure here.
         """
         self.stack = []
 
-    def push(self, x):
+    ___ push(self, x
         """
         :type x: int
         :rtype: void
         """
-        if not self.stack:
+        __ not self.stack:
             self.stack.append((x, x))
-        else:
+        ____
             self.stack.append((x, min(self.stack[-1][1], x)))
 
-    def pop(self):
+    ___ pop(self
         """
         :rtype: void
         """
         self.stack.pop()
 
-    def top(self):
+    ___ top(self
         """
         :rtype: int
         """
-        return self.stack[-1][0]
+        r_ self.stack[-1][0]
 
-    def getMin(self):
+    ___ getMin(self
         """
         :rtype: int
         """
-        return self.stack[-1][1]
+        r_ self.stack[-1][1]

@@ -7,40 +7,40 @@ class Solution:
         lambda a, b: a / b,
     )
 
-    def judgePoint24(self, nums):
+    ___ judgePoint24(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
-        if not nums:
-            return False
+        __ not nums:
+            r_ False
 
-        n = len(nums)
+        n = le.(nums)
 
-        if n == 1:
-            return abs(nums[0] - 24) < self.EPS
+        __ n __ 1:
+            r_ abs(nums[0] - 24) < self.EPS
 
-        for i in range(n):
-            for j in range(n):
-                if i == j:
+        for i in range(n
+            for j in range(n
+                __ i __ j:
                     continue
 
-                nxts = [nums[k] for k in range(n) if i != k != j]  # i != j != k is different
+                nxts = [nums[k] for k in range(n) __ i != k != j]  # i != j != k is different
 
-                for k in range(len(self.OP)):
-                    if i < j and k < 2:
+                for k in range(le.(self.OP)):
+                    __ i < j and k < 2:
                         # since a + b == b + a, so just do half in j >= i
                         # same for `*`
                         continue
-                    if nums[j] == 0 and k == 3:
+                    __ nums[j] __ 0 and k __ 3:
                         # divide by 0
                         continue
 
                     nxts.append(self.OP[k](nums[i], nums[j]))
 
-                    if self.judgePoint24(nxts):
-                        return True
+                    __ self.judgePoint24(nxts
+                        r_ True
 
                     nxts.pop()
 
-        return False
+        r_ False

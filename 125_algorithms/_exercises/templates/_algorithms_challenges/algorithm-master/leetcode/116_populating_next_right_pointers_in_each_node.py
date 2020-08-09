@@ -1,7 +1,7 @@
 """
 Definition for binary tree with next pointer.
 class TreeLinkNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -13,18 +13,18 @@ class Solution:
     """
     Recursion
     """
-    def connect(self, root):
+    ___ connect(self, root
         """
         :type root: TreeLinkNode
         :rtype: void
         """
-        if not root:
-            return
+        __ not root:
+            r_
 
-        if root.left:
+        __ root.left:
             root.left.next = root.right
 
-        if root.right and root.next:
+        __ root.right and root.next:
             root.right.next = root.next.left
 
         # leave to None if root.right: root.right.next = None
@@ -37,28 +37,28 @@ class Solution:
     """
     Iteration
     """
-    def connect(self, root):
+    ___ connect(self, root
         """
         :type root: TreeLinkNode
         :rtype: void
         """
-        if not root:
-            return
+        __ not root:
+            r_
 
         head = root
         nxt = None
 
         # this loop only for find left
-        while head:
+        w___ head:
             nxt = head
             head = nxt.left
 
             # this loop find for every next, do level move
-            while nxt:
-                if nxt.left:
+            w___ nxt:
+                __ nxt.left:
                     nxt.left.next = nxt.right
 
-                if nxt.right and nxt.next:
+                __ nxt.right and nxt.next:
                     nxt.right.next = nxt.next.left
 
                 nxt = nxt.next

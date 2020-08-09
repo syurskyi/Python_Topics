@@ -3,41 +3,41 @@ Created on Oct 9, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def checkPossibility(self, nums):
+class Solution(object
+    ___ checkPossibility(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         prev = nums[0]
         modified = False
-        for i in range(1, len(nums)):
-            if nums[i] < prev:
-                if modified:
-                    return False
+        for i in range(1, le.(nums)):
+            __ nums[i] < prev:
+                __ modified:
+                    r_ False
                 modified = True
-                if i-2 >= 0 and nums[i-2] > nums[i]:
+                __ i-2 >= 0 and nums[i-2] > nums[i]:
                     continue
             prev = nums[i]
-        return True
+        r_ True
     
-    def checkPossibility_modifying(self, nums):
+    ___ checkPossibility_modifying(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         modified = 0
-        for i in range(1, len(nums)):
-            if nums[i-1] > nums[i]:
-                if modified != 0: return False
+        for i in range(1, le.(nums)):
+            __ nums[i-1] > nums[i]:
+                __ modified != 0: r_ False
                 modified += 1
-                if i - 2 < 0 or nums[i-2] <= nums[i]:
+                __ i - 2 < 0 or nums[i-2] <= nums[i]:
                     nums[i-1] = nums[i]
-                else:
+                ____
                     nums[i] = nums[i-1]
-        return True
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [4, 2, 3],
             [4, 2, 1],
@@ -53,5 +53,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,22 +1,22 @@
 class Solution:
-    def isUgly(self, num):
+    ___ isUgly(self, num
         """
         :type num: int
         :rtype: bool
         """
-        if not num:
-            return False
-        if num == 1:
-            return True
+        __ not num:
+            r_ False
+        __ num __ 1:
+            r_ True
 
         for factor in (
             125, 27, 8,
             5, 3, 2,
-        ):
-            while num % factor == 0:
+
+            w___ num % factor __ 0:
                 num //= factor
 
-            if num == 1:
-                return True
+            __ num __ 1:
+                r_ True
 
-        return num == 1
+        r_ num __ 1

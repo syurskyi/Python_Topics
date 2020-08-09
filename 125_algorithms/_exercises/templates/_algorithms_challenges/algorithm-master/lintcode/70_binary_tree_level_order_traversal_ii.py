@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -12,10 +12,10 @@ class Solution:
     @param: root: A tree
     @return: buttom-up level order a list of lists of integer
     """
-    def levelOrderBottom(self, root):
+    ___ levelOrderBottom(self, root
         ans = []
-        if not root:
-            return ans
+        __ not root:
+            r_ ans
 
         preorder = [(root, 1)]
         self.dfs(root, ans, preorder, 0)
@@ -24,22 +24,22 @@ class Solution:
         cannot do append in dfs,
         since it may be the deepest node is at right child
         """
-        height = len(ans)
+        height = le.(ans)
         for node, level in preorder:
             ans[height - level].append(node.val)
 
-        return ans
+        r_ ans
 
-    def dfs(self, node, ans, preorder, parent_at):
-        if len(ans) < preorder[parent_at][1]:
+    ___ dfs(self, node, ans, preorder, parent_at
+        __ le.(ans) < preorder[parent_at][1]:
             ans.append([])
 
         depth = preorder[parent_at][1] + 1
 
-        if node.left:
+        __ node.left:
             preorder.append((node.left, depth))
-            self.dfs(node.left, ans, preorder, len(preorder) - 1)
+            self.dfs(node.left, ans, preorder, le.(preorder) - 1)
 
-        if node.right:
+        __ node.right:
             preorder.append((node.right, depth))
-            self.dfs(node.right, ans, preorder, len(preorder) - 1)
+            self.dfs(node.right, ans, preorder, le.(preorder) - 1)

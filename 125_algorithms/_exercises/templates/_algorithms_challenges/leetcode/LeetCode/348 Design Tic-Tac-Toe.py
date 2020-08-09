@@ -52,8 +52,8 @@ Could you do better than O(n2) per move() operation?
 __author__ = 'Daniel'
 
 
-class TicTacToe(object):
-    def __init__(self, n):
+class TicTacToe(object
+    ___ __init__(self, n
         """
         Initialize your data structure here.
         :type n: int
@@ -64,7 +64,7 @@ class TicTacToe(object):
         self.diag_count = 0
         self.diag_inv_count = 0
 
-    def move(self, row, col, player):
+    ___ move(self, row, col, player
         """
         Since guarantee the move is valid, only store row, col, diagonal.
         1: -1
@@ -82,20 +82,20 @@ class TicTacToe(object):
         :type player: int
         :rtype: int
         """
-        delta = -1 if player == 1 else 1
+        delta = -1 __ player __ 1 else 1
         self.cols_count[col] += delta
         self.rows_count[row] += delta
-        if col == row:
+        __ col __ row:
             self.diag_count += delta
-        if col + row == self.n - 1:
+        __ col + row __ self.n - 1:
             self.diag_inv_count += delta
 
         # since winning condition is taking up the entire row or col, the row or col must be consecutive
-        is_win = lambda count: delta * count == self.n
-        if any(map(is_win, [self.rows_count[row], self.cols_count[col], self.diag_count, self.diag_inv_count])):
-            return player
+        is_win = lambda count: delta * count __ self.n
+        __ any(map(is_win, [self.rows_count[row], self.cols_count[col], self.diag_count, self.diag_inv_count])):
+            r_ player
 
-        return 0
+        r_ 0
 
 # Your TicTacToe object will be instantiated and called as such:
 # obj = TicTacToe(n)

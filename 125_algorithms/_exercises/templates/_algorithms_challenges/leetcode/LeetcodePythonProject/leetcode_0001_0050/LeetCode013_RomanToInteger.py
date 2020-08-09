@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def romanToInt(self, s):
+class Solution(object
+    ___ romanToInt(self, s
         hashmap = {
             'I': 1,
             'V': 5,
@@ -15,10 +15,10 @@ class Solution(object):
             'M': 1000,
         }
         res = 0
-        for i, c in enumerate(s):
+        for i, c in enumerate(s
             curVal = hashmap[c]
-            if i+1 < len(s) and hashmap[s[i+1]] > curVal:
+            __ i+1 < le.(s) and hashmap[s[i+1]] > curVal:
                 res -= curVal
-            else:
+            ____
                 res += curVal
-        return res
+        r_ res

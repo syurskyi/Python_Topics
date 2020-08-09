@@ -1,9 +1,9 @@
-from string import ascii_lowercase
-import sys
+from string ______ ascii_lowercase
+______ sys
 
-if sys.version_info[0] == 2:
-    from string import maketrans
-else:
+__ sys.version_info[0] __ 2:
+    from string ______ maketrans
+____
     maketrans = str.maketrans
 
 
@@ -11,15 +11,15 @@ BLKSZ = 5
 trtbl = maketrans(ascii_lowercase, ascii_lowercase[::-1])
 
 
-def base_trans(text):
-    return ''.join([c for c in text if c.isalnum()]).lower().translate(trtbl)
+___ base_trans(text
+    r_ ''.join([c for c in text __ c.isalnum()]).lower().translate(trtbl)
 
 
-def encode(plain):
+___ encode(plain
     cipher = base_trans(plain)
-    return " ".join([cipher[i:i + BLKSZ]
-                     for i in range(0, len(cipher), BLKSZ)])
+    r_ " ".join([cipher[i:i + BLKSZ]
+                     for i in range(0, le.(cipher), BLKSZ)])
 
 
-def decode(ciphered):
-    return base_trans(ciphered)
+___ decode(ciphered
+    r_ base_trans(ciphered)

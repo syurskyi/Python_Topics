@@ -4,8 +4,8 @@ Created on May 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findMaxConsecutiveOnes(self, nums):
+class Solution(object
+    ___ findMaxConsecutiveOnes(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -13,15 +13,15 @@ class Solution(object):
         left = -1
         nextLeft = -1
         maxLen = 0
-        for i, num in enumerate(nums):
-            if num == 0:
+        for i, num in enumerate(nums
+            __ num __ 0:
                 maxLen = max(maxLen, i-left-1)
                 left = nextLeft
                 nextLeft = i
-        maxLen = max(maxLen, len(nums)-left-1)
-        return maxLen
+        maxLen = max(maxLen, le.(nums)-left-1)
+        r_ maxLen
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 0, 1, 1, 0],
             [1, 0, 1, 1,0, 1],
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

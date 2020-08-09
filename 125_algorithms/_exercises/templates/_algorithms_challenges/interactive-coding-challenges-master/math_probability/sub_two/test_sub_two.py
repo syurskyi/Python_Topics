@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSubTwo(object):
+class TestSubTwo(object
 
-    def test_sub_two(self):
+    ___ test_sub_two(self
         solution = Solution()
         assert_raises(TypeError, solution.sub_two, None)
         assert_equal(solution.sub_two(7, 5), 2)
@@ -13,10 +13,10 @@ class TestSubTwo(object):
         print('Success: test_sub_two')
 
 
-def main():
+___ main(
     test = TestSubTwo()
     test.test_sub_two()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

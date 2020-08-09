@@ -1,8 +1,8 @@
-from unicodedata import decomposition
+from unicodedata ______ decomposition
 
 
-def filter_accents(text):
+___ filter_accents(text
     """Return a sequence of accented characters found in
        the passed in lowercased text string
     """
-    return [c for c in text.lower() if decomposition(c) != '']
+    r_ [c for c in text.lower() __ decomposition(c) != '']

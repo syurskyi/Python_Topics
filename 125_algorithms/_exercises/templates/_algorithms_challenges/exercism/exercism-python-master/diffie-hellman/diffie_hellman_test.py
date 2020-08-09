@@ -1,25 +1,25 @@
-import unittest
+______ unittest
 
-import diffie_hellman
+______ diffie_hellman
 
 
-class DiffieHellmanTest(unittest.TestCase):
+class DiffieHellmanTest(unittest.TestCase
 
-    def test_private_in_range(self):
+    ___ test_private_in_range(self
         primes = [5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
         for i in primes:
             self.assertTrue(1 < diffie_hellman.private_key(i) < i)
 
     # Can fail due to randomness, but most likely will not,
     # due to pseudo-randomness and the large number chosen
-    def test_private_key_randomness(self):
+    ___ test_private_key_randomness(self
         p = 2147483647
         private_keys = []
-        for i in range(5):
+        for i in range(5
             private_keys.append(diffie_hellman.private_key(p))
-        self.assertEqual(len(list(set(private_keys))), len(private_keys))
+        self.assertEqual(le.(list(set(private_keys))), le.(private_keys))
 
-    def test_public_key_correct(self):
+    ___ test_public_key_correct(self
         p = 23
         g = 5
         private = 6
@@ -28,7 +28,7 @@ class DiffieHellmanTest(unittest.TestCase):
         actual = diffie_hellman.public_key(p, g, private)
         self.assertEqual(actual, expected)
 
-    def test_secret_key_correct(self):
+    ___ test_secret_key_correct(self
         p = 23
         public = 19
         private = 6
@@ -37,7 +37,7 @@ class DiffieHellmanTest(unittest.TestCase):
         actual = diffie_hellman.secret(p, public, private)
         self.assertEqual(actual, expected)
 
-    def test_secret_key_correct_large_nums(self):
+    ___ test_secret_key_correct_large_nums(self
         p = int("""120227323036150778550155526710966921740030662\
         69457894729842354923526575959371158734103742634711454153\
         30066288563005527069961435922404533456428692335628867529\
@@ -67,7 +67,7 @@ class DiffieHellmanTest(unittest.TestCase):
         actual = diffie_hellman.secret(p, public, private)
         self.assertEqual(actual, expected)
 
-    def test_exchange(self):
+    ___ test_exchange(self
         p = 23
         g = 5
 
@@ -83,5 +83,5 @@ class DiffieHellmanTest(unittest.TestCase):
         self.assertEqual(secretA, secretB)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

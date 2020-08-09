@@ -1,37 +1,37 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def smallestRange(self, nums):
+class Solution(object
+  ___ smallestRange(self, nums
     """
     :type nums: List[List[int]]
     :rtype: List[int]
     """
-    k = len(nums)
+    k = le.(nums)
     d = collections.defaultdict(int)
     tuples = []
 
-    for i in range(len(nums)):
+    for i in range(le.(nums)):
       for num in nums[i]:
         tuples.append((num, i))
 
     tuples.sort()
-    length = len(tuples)
+    length = le.(tuples)
     left = tuples[0][0]
     right = tuples[-1][0]
     deq = deque([])
-    for i in range(length):
+    for i in range(length
       num, no = tuples[i]
       deq.append(tuples[i])
       d[no] += 1
-      while len(deq) > 1 and d[deq[0][1]] > 1:
+      w___ le.(deq) > 1 and d[deq[0][1]] > 1:
         _num, _no = deq.popleft()
         d[_no] -= 1
-        if d[_no] == 0:
+        __ d[_no] __ 0:
           del d[_no]
-      if len(d) == k:
+      __ le.(d) __ k:
         l, r = deq[0][0], deq[-1][0]
-        if r - l < right - left:
+        __ r - l < right - left:
           left = l
           right = r
-    return (left, right)
+    r_ (left, right)

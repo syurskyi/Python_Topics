@@ -4,8 +4,8 @@ Created on Feb 7, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def longestConsecutive(self, nums):
+class Solution(object
+    ___ longestConsecutive(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -13,14 +13,14 @@ class Solution(object):
         nums = set(nums)
         maxLen = 0
         for x in nums:
-            if x-1 not in nums:
+            __ x-1 not in nums:
                 y = x+1
-                while y in nums:
+                w___ y in nums:
                     y+=1
                 maxLen = max(y-x, maxLen)
-        return maxLen
+        r_ maxLen
     
-    def test(self):
+    ___ test(self
         testCases = [
             [100, 4, 200, 1, 3, 2],
         ]
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

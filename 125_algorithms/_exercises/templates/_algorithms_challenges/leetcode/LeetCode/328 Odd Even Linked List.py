@@ -16,30 +16,30 @@ __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
+class ListNode(object
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
-class Solution(object):
-    def oddEvenList(self, head):
+class Solution(object
+    ___ oddEvenList(self, head
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head:
-            return
+        __ not head:
+            r_
 
         ptr = head  # end of odd position
         pre = head  # don't move the first
         cnt = 1
-        while pre and pre.next:
+        w___ pre and pre.next:
             cur = pre.next
             cnt += 1
-            if cnt % 2 == 0:
+            __ cnt % 2 __ 0:
                 pre = pre.next
-            else:
+            ____
                 start = ptr.next
                 nxt = cur.next
 
@@ -49,26 +49,26 @@ class Solution(object):
 
                 ptr = ptr.next
 
-        return head
+        r_ head
 
-    def oddEvenListError(self, head):
+    ___ oddEvenListError(self, head
         """
         Wrongly move by node value
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head:
-            return
+        __ not head:
+            r_
 
         ptr = head  # end of first parity
         parity = ptr.val % 2
 
         pre = head
-        while pre and pre.next:
+        w___ pre and pre.next:
             cur = pre.next
-            if cur.val % 2 != parity:
+            __ cur.val % 2 != parity:
                 pre = pre.next
-            else:
+            ____
                 start = ptr.next
                 nxt = cur.next
 
@@ -78,4 +78,4 @@ class Solution(object):
 
                 ptr = ptr.next
 
-        return head
+        r_ head

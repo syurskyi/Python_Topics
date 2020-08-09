@@ -1,9 +1,9 @@
-def smooth(amount, numbers):
+___ smooth(amount, numbers
     answer = []
-    for x in range(amount):
-        if x == 0 or x == amount-1:
+    for x in range(amount
+        __ x __ 0 or x __ amount-1:
             answer.append(str(numbers[x]))
-        else:
+        ____
             smoothNum = (float(numbers[x-1]) + float(numbers[x]) + float(numbers[x+1])) / 3
             answer.append(str(smoothNum))
     print(' '.join(answer))

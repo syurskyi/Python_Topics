@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 CHARACTERS = ['Red Riding Hood',
               # we're omitting 'mother' here for simplicity
@@ -46,7 +46,7 @@ Little Red Riding Hood and her Grandmother had a nice lunch and a long chat.
 """
 
 
-def make_character_index(text=text, characters=CHARACTERS):
+___ make_character_index(text=text, characters=CHARACTERS
     """Return a dict with keys are characters (lowercased) and values
        the lines they appear in sorted order.
        Matches should be case insensitive.
@@ -56,17 +56,17 @@ def make_character_index(text=text, characters=CHARACTERS):
     """
     result = defaultdict(list)
     for x, s in enumerate(text.splitlines()):
-        if s == '':
+        __ s __ '':
             continue
         for c in characters:
-            if isinstance(c, tuple):
+            __ isinstance(c, tuple
                 flag = False
                 for p in c:
-                    if p.lower() in s.lower():
+                    __ p.lower() in s.lower(
                         flag = True
-                if flag:
+                __ flag:
                     result[c[0].lower()].append(x)
-            else:
-                if c.lower() in s.lower():
+            ____
+                __ c.lower() in s.lower(
                     result[c.lower()].append(x)
-    return result
+    r_ result

@@ -10,20 +10,20 @@ class Hexa:
     BASE = 16
 
     @classmethod
-    def convert(cls, inp):
-        if not cls.valid(inp):
+    ___ convert(cls, inp
+        __ not cls.valid(inp
             raise ValueError
-        return sum([cls.convert_char(char) * cls.BASE**index for index, char in
+        r_ sum([cls.convert_char(char) * cls.BASE**index for index, char in
                     enumerate(reversed(inp))])
 
     @classmethod
-    def valid(cls, inp):
-        return set(inp) <= cls.VALID_CHARS
+    ___ valid(cls, inp
+        r_ set(inp) <= cls.VALID_CHARS
 
     @classmethod
-    def convert_char(cls, char):
-        return int(char) if char.isdigit() else cls.CHAR_VALUES[char]
+    ___ convert_char(cls, char
+        r_ int(char) __ char.isdigit() else cls.CHAR_VALUES[char]
 
 
-def hexa(inp):
-    return Hexa.convert(inp.lower())
+___ hexa(inp
+    r_ Hexa.convert(inp.lower())

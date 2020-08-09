@@ -1,22 +1,22 @@
-import csv
-import os
-import re
-import urllib.request
-from collections import namedtuple
-from datetime import datetime
+______ csv
+______ os
+______ re
+______ urllib.request
+from collections ______ namedtuple
+from datetime ______ datetime
 
-import pandas as pd
+______ pandas as pd
 
 DATA_FILE = "http://projects.bobbelderbos.com/pcc/weather-ann-arbor.csv"
 STATION = namedtuple("Station", "ID Date Value")
 
 TMP = '/tmp'
 LOCAL_FILE = os.path.join('/tmp', 'weather-ann-arbor.csv')
-if not os.path.isfile(LOCAL_FILE):
+__ not os.path.isfile(LOCAL_FILE
     urllib.request.urlretrieve(DATA_FILE, LOCAL_FILE)
 
 
-def high_low_record_breakers_for_2015():
+___ high_low_record_breakers_for_2015(
     """Extract the high and low record breaking temperatures for 2015
 
     The expected value will be a tuple with the highest and lowest record
@@ -55,7 +55,7 @@ def high_low_record_breakers_for_2015():
             'date': datetime.strptime(x['Date'], '%Y-%m-%d').date(),
             'element': x['Element'],
             'value': int(x['Data_Value'])
-        } for x in csv.DictReader(f) if not re.match(r'\d{4}-02-29', x['Date'])],
+        } for x in csv.DictReader(f) __ not re.match(r'\d{4}-02-29', x['Date'])],
             key=lambda x: (x['id'] + x['date'].strftime('%m%d%Y')))
     dataset = [{'id': x['id'],
                 'monthday': x['date'].strftime('%m%d'),
@@ -64,21 +64,21 @@ def high_low_record_breakers_for_2015():
                 'value': x['value']
                 } for x in the_data]
 
-    data_before_2015_left = pd.DataFrame(x for x in dataset if x['year'] < 2015 and x['element'] == 'TMIN').drop(
+    data_before_2015_left = pd.DataFrame(x for x in dataset __ x['year'] < 2015 and x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).min(level='monthday').rename(columns={'value': 'mina'})
 
-    data_before_2015_right = pd.DataFrame(x for x in dataset if x['year'] < 2015 and x['element'] == 'TMAX').drop(
+    data_before_2015_right = pd.DataFrame(x for x in dataset __ x['year'] < 2015 and x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxa'})
 
     early_dataset = data_before_2015_left.join(data_before_2015_right, lsuffix='_l', rsuffix='_r')
 
-    data_for_2015_left = pd.DataFrame(x for x in dataset if x['year'] == 2015 and x['element'] == 'TMIN').drop(
+    data_for_2015_left = pd.DataFrame(x for x in dataset __ x['year'] __ 2015 and x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'minb'})
 
-    data_for_2015_right = pd.DataFrame(x for x in dataset if x['year'] == 2015 and x['element'] == 'TMAX').drop(
+    data_for_2015_right = pd.DataFrame(x for x in dataset __ x['year'] __ 2015 and x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxb'})
 
@@ -87,12 +87,12 @@ def high_low_record_breakers_for_2015():
     compare_set = early_dataset.join(late_dataset)
 
     result = {'min': [], 'max': []}
-    for row in compare_set.itertuples():
-        if row.mina > row.minb:
+    for row in compare_set.itertuples(
+        __ row.mina > row.minb:
             result['min'].append(
                 STATION(row.Index[0], datetime.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))
-        if row.maxa < row.maxb:
+        __ row.maxa < row.maxb:
             result['max'].append(
                 STATION(row.Index[0], datetime.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.maxb / 10.0))
 
-    return max(result['max'], key=lambda x: x.Value), min(result['min'], key=lambda x: x.Value)
+    r_ max(result['max'], key=lambda x: x.Value), min(result['min'], key=lambda x: x.Value)

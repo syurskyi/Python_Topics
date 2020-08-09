@@ -28,24 +28,24 @@ Input: A = [9,9,9,9,9,9,9,9,9,9], K = 1
 Output: [1,0,0,0,0,0,0,0,0,0,0]
 Explanation: 9999999999 + 1 = 10000000000
 """
-from typing import List
-from collections import deque
+from typing ______ List
+from collections ______ deque
 
 
 class Solution:
-    def addToArrayForm(self, A: List[int], K: int) -> List[int]:
+    ___ addToArrayForm(self, A: List[int], K: int) -> List[int]:
         """
         carry
         """
         carry = K
-        for i in range(len(A)-1, -1, -1):
+        for i in range(le.(A)-1, -1, -1
             A[i] += carry
             carry = A[i] // 10
             A[i] %= 10
             
         head = deque()
-        while carry:
+        w___ carry:
             head.appendleft(carry % 10)
             carry //= 10
 
-        return list(head) + A
+        r_ list(head) + A

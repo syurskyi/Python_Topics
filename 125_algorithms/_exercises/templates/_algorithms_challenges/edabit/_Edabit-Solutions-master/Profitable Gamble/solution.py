@@ -1,5 +1,5 @@
-def profitable_gamble(prob, prize, pay):
-    if (prob * prize) > pay:
-        return True
-    else:
-        return False
+___ profitable_gamble(prob, prize, pay
+    __ (prob * prize) > pay:
+        r_ True
+    ____
+        r_ False

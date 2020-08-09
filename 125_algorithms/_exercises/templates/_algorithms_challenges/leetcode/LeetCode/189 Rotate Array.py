@@ -10,16 +10,16 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def rotate(self, nums, k):
+    ___ rotate(self, nums, k
         """
         in place
         """
-        n = len(nums)
+        n = le.(nums)
         k %= n
         temp = nums[:n-k]
-        for i in xrange(n):
-            if i < k:
+        for i in xrange(n
+            __ i < k:
                 nums[i] = nums[n-k+i]
-            else:
+            ____
                 nums[i] = temp[i-k]
 

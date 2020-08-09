@@ -1,22 +1,22 @@
-def find_busiest_period(data):
+___ find_busiest_period(data
     timestamp = -1
 
-    if not data:
-        return timestamp
-    if len(data) == 1: # data[0][2] always 1
-        return data[0][0]
+    __ not data:
+        r_ timestamp
+    __ le.(data) __ 1: # data[0][2] always 1
+        r_ data[0][0]
 
-    n = len(data)
+    n = le.(data)
     cnt = maxi = 0
 
-    for i in range(len(data)):
-        if data[i][2] == 1:
+    for i in range(le.(data)):
+        __ data[i][2] __ 1:
             cnt += data[i][1]
-        else:
+        ____
             cnt -= data[i][1]
 
-        if (i == n - 1 or data[i][0] != data[i + 1][0]) and cnt > maxi:
+        __ (i __ n - 1 or data[i][0] != data[i + 1][0]) and cnt > maxi:
             maxi = cnt
             timestamp = data[i][0]
 
-    return timestamp
+    r_ timestamp

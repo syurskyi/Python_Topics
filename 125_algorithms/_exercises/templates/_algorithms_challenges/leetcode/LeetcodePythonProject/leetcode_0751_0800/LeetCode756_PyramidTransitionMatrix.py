@@ -3,44 +3,44 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def pyramidTransition(self, bottom, allowed):
+class Solution(object
+    ___ pyramidTransition(self, bottom, allowed
         """
         :type bottom: str
         :type allowed: List[str]
         :rtype: bool
         """
-        if not bottom:
-            return False
+        __ not bottom:
+            r_ False
         hashmap = {}
         for s in allowed:
-            if s[:2] in hashmap:
+            __ s[:2] in hashmap:
                 hashmap[s[:2]].add(s[-1])
-            else:
+            ____
                 hashmap[s[:2]] = set([s[-1]])
-        level = len(bottom)
+        level = le.(bottom)
         queue = list(bottom)
-        while queue:
-            if level == 1:
-                if queue and queue[0]:
-                    return True
-                else:
-                    return False
+        w___ queue:
+            __ level __ 1:
+                __ queue and queue[0]:
+                    r_ True
+                ____
+                    r_ False
             nextQueue = [set() for _ in range(level-1)]
-            for i in range(level-1):
+            for i in range(level-1
                 arr1 = queue[i]
                 arr2 = queue[i+1]
                 for c1 in arr1:
                     for c2 in arr2:
-                        if c1+c2 in hashmap:
+                        __ c1+c2 in hashmap:
                             nextQueue[i] = nextQueue[i].union(hashmap[c1+c2])
-                if not nextQueue[i]:
-                    return False
+                __ not nextQueue[i]:
+                    r_ False
             queue = nextQueue
             level -= 1
-        return True
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [ "XYZ", ["XYD", "YZE", "DEA", "FFF"], ],
             [ 'XXYX', ["XXX", "XXY", "XYX", "XYY", "YXZ"], ],
@@ -56,5 +56,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,33 +1,33 @@
-class Solution(object):
-  def findLUSlength(self, strs):
+class Solution(object
+  ___ findLUSlength(self, strs
     """
     :type strs: List[str]
     :rtype: int
     """
 
-    def findLUSlength(a, b):
-      return max(len(a), len(b)) if a != b else -1
+    ___ findLUSlength(a, b
+      r_ max(le.(a), le.(b)) __ a != b else -1
 
-    def isSubsequence(s, t):
+    ___ isSubsequence(s, t
       d = collections.defaultdict(list)
-      for i, c in enumerate(t):
+      for i, c in enumerate(t
         d[c].append(i)
       start = 0
       for c in s:
         idx = bisect.bisect_left(d[c], start)
-        if len(d[c]) == 0 or idx >= len(d[c]):
-          return False
+        __ le.(d[c]) __ 0 or idx >= le.(d[c]
+          r_ False
         start = d[c][idx] + 1
-      return True
+      r_ True
 
     ans = -1
-    strs.sort(key=len, reverse=True)
-    for i in range(len(strs)):
+    strs.sort(key=le., reverse=True)
+    for i in range(le.(strs)):
       flag = True
-      for j in range(len(strs)):
-        if i != j and (findLUSlength(strs[i], strs[j]) == -1 or isSubsequence(strs[i], strs[j])):
+      for j in range(le.(strs)):
+        __ i != j and (findLUSlength(strs[i], strs[j]) __ -1 or isSubsequence(strs[i], strs[j])):
           flag = False
           break
-      if flag:
-        return len(strs[i])
-    return -1
+      __ flag:
+        r_ le.(strs[i])
+    r_ -1

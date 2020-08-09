@@ -1,29 +1,29 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def isBalanced(self, root):
+class Solution(object
+  ___ isBalanced(self, root
     """
     :type root: TreeNode
     :rtype: bool
     """
 
-    def dfs(p):
-      if not p:
-        return 0
+    ___ dfs(p
+      __ not p:
+        r_ 0
 
       left = dfs(p.left)
       right = dfs(p.right)
-      if left == -1 or right == -1:
-        return -1
-      if abs(left - right) > 1:
-        return -1
-      return 1 + max(left, right)
+      __ left __ -1 or right __ -1:
+        r_ -1
+      __ abs(left - right) > 1:
+        r_ -1
+      r_ 1 + max(left, right)
 
-    if dfs(root) == -1:
-      return False
-    return True
+    __ dfs(root) __ -1:
+      r_ False
+    r_ True

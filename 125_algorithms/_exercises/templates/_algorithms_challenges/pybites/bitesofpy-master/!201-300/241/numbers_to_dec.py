@@ -1,7 +1,7 @@
-from typing import List
+from typing ______ List
 
 
-def list_to_decimal(nums: List[int]) -> int:
+___ list_to_decimal(nums: List[int]) -> int:
     """Accept a list of positive integers in the range(0, 10)
        and return a integer where each int of the given list represents
        decimal place values from first element to last.  E.g
@@ -12,10 +12,10 @@ def list_to_decimal(nums: List[int]) -> int:
         1,     3  ,  4  , 5
         1000's, 100's, 10's, 1's
     """
-    if not all(isinstance(num, int) for num in nums):
+    __ not all(isinstance(num, int) for num in nums
         raise TypeError
 
-    if not all(num in range(0, 10) for num in nums):
+    __ not all(num in range(0, 10) for num in nums
         raise ValueError
 
-    return int(''.join(map(str, nums)))
+    r_ int(''.join(map(str, nums)))

@@ -1,13 +1,13 @@
-import inspect
+______ inspect
 
-import pytest
+______ pytest
 
-from order import OrderedList
+from order ______ OrderedList
 
 
 @pytest.fixture(scope='module')
-def order():
-    return OrderedList()
+___ order(
+    r_ OrderedList()
 
 
 @pytest.mark.parametrize("num, expected", [
@@ -19,11 +19,11 @@ def order():
     (1, '1, 2, 7, 9, 10, 16'),
     (5, '1, 2, 5, 7, 9, 10, 16'),
 ])
-def test_order(order, num, expected):
+___ test_order(order, num, expected
     order.add(num)
-    assert str(order) == expected
+    assert str(order) __ expected
 
 
-def test_does_not_use_manual_sort():
+___ test_does_not_use_manual_sort(
     assert '.sorted' not in inspect.getsource(OrderedList)
     assert '.sort(' not in inspect.getsource(OrderedList)

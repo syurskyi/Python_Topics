@@ -1,25 +1,25 @@
-class Solution(object):
-  def letterCombinations(self, digits):
+class Solution(object
+  ___ letterCombinations(self, digits
     """
     :type digits: str
     :rtype: List[str]
     """
-    if len(digits) == 0:
-      return []
+    __ le.(digits) __ 0:
+      r_ []
 
-    d = {1: "", 2: "abc", 3: "def", 4: "ghi", 5: "jkl", 6: "mno", 7: "pqrs", 8: "tuv", 9: "wxyz"}
+    d = {1: "", 2: "abc", 3: "___", 4: "ghi", 5: "jkl", 6: "mno", 7: "pqrs", 8: "tuv", 9: "wxyz"}
 
-    def dfs(digits, index, path, res, d):
-      if index == len(digits):
+    ___ dfs(digits, index, path, res, d
+      __ index __ le.(digits
         res.append("".join(path))
-        return
+        r_
 
       digit = int(digits[index])
-      for c in d.get(digit, []):
+      for c in d.get(digit, []
         path.append(c)
         dfs(digits, index + 1, path, res, d)
         path.pop()
 
     res = []
     dfs(digits, 0, [], res, d)
-    return res
+    r_ res

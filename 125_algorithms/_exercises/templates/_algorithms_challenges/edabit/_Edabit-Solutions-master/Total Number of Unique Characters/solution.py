@@ -1,4 +1,4 @@
-def count_unique(s1, s2):
+___ count_unique(s1, s2
     s = s1 + s2
     b = set(s)
-    return len(b)
+    r_ le.(b)

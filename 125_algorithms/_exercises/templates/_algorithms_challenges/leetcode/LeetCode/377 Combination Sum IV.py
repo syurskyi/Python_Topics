@@ -27,8 +27,8 @@ What limitation we need to add to the question to allow negative numbers?
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def combinationSum4(self, nums, target):
+class Solution(object
+    ___ combinationSum4(self, nums, target
         """
         Let F[i] be the number of combinations ways for number i
         F[i] = sum(F[i-k] for k in nums)
@@ -44,13 +44,13 @@ class Solution(object):
         for k in nums:
             F[k] = 1
 
-        for i in xrange(target + 1):
+        for i in xrange(target + 1
             for k in nums:
-                if i - k >= 0:
+                __ i - k >= 0:
                     F[i] += F[i-k]
 
-        return F[target]
+        r_ F[target]
 
 
-if __name__ == "__main__":
-    assert Solution().combinationSum4([1, 2, 3], 4) == 7
+__ __name__ __ "__main__":
+    assert Solution().combinationSum4([1, 2, 3], 4) __ 7

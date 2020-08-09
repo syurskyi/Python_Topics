@@ -1,4 +1,4 @@
-from cal import get_weekdays
+from cal ______ get_weekdays
 
 april_1981 = """     April 1981
 Su Mo Tu We Th Fr Sa
@@ -28,22 +28,22 @@ Su Mo Tu We Th Fr Sa
 """
 
 
-def test_april_1981():
+___ test_april_1981(
     weekdays = get_weekdays(april_1981)
-    assert len(weekdays) == 30
-    assert weekdays[25] == 'Sa'
-    assert weekdays[22] == 'We'
+    assert le.(weekdays) __ 30
+    assert weekdays[25] __ 'Sa'
+    assert weekdays[22] __ 'We'
 
 
-def test_jan_1986():
+___ test_jan_1986(
     weekdays = get_weekdays(jan_1986)
-    assert len(weekdays) == 31
-    assert weekdays[20] == 'Mo'
-    assert weekdays[16] == 'Th'
+    assert le.(weekdays) __ 31
+    assert weekdays[20] __ 'Mo'
+    assert weekdays[16] __ 'Th'
 
 
-def test_jan_1956():
+___ test_jan_1956(
     weekdays = get_weekdays(jan_1956)
-    assert len(weekdays) == 31
-    assert weekdays[13] == 'Fr'
-    assert weekdays[31] == 'Tu'
+    assert le.(weekdays) __ 31
+    assert weekdays[13] __ 'Fr'
+    assert weekdays[31] __ 'Tu'

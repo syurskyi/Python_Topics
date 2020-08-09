@@ -1,10 +1,10 @@
-class Solution(object):
-  def reverseWords(self, s):
+class Solution(object
+  ___ reverseWords(self, s
     """
     :type s: str
     :rtype: str
     """
     s = s.split()
-    for i, word in enumerate(s):
+    for i, word in enumerate(s
       s[i] = word[::-1]
-    return " ".join(s)
+    r_ " ".join(s)

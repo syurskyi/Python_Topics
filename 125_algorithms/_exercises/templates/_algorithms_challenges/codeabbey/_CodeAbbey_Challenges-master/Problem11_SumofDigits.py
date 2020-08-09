@@ -6,7 +6,7 @@ for line in data:
     digits = (int(first)*int(second))+int(third)
     total = 0
     temp = digits
-    for i in range(len(str(digits))):
+    for i in range(le.(str(digits))):
         total += temp%10
         temp = temp//10 
     print(total,end=" ")

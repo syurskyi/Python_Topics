@@ -10,22 +10,22 @@ class Solution:
     @param: target: target = A[index1] + A[index2]
     @return: [index1, index2] (index1 < index2)
     """
-    def twoSum(self, A, target):
+    ___ twoSum(self, A, target
         NOT_FOUND = [-1, -1]
-        if not A or len(A) < 2:
-            return NOT_FOUND
+        __ not A or le.(A) < 2:
+            r_ NOT_FOUND
 
         remaining = {}
-        for i in range(len(A)):
-            if A[i] in remaining:
-                return [
+        for i in range(le.(A)):
+            __ A[i] in remaining:
+                r_ [
                     remaining[A[i]],
                     i,
                 ]
 
             remaining[target - A[i]] = i
 
-        return NOT_FOUND
+        r_ NOT_FOUND
 
 
 """
@@ -40,27 +40,27 @@ class Solution:
     @param: target: target = A[index1] + A[index2]
     @return: [index1, index2] (index1 < index2)
     """
-    def twoSum(self, A, target):
+    ___ twoSum(self, A, target
         NOT_FOUND = [-1, -1]
-        if not A or len(A) < 2:
-            return NOT_FOUND
+        __ not A or le.(A) < 2:
+            r_ NOT_FOUND
 
-        n = len(A)
+        n = le.(A)
         A = [(A[i], i) for i in range(n)]
         A.sort()
 
         left, right = 0, n - 1
-        while left < right:
+        w___ left < right:
             _sum = A[left][0] + A[right][0]
-            if _sum == target:
-                return sorted([
+            __ _sum __ target:
+                r_ sorted([
                     A[left][1],
                     A[right][1],
                 ])
 
-            if _sum < target:
+            __ _sum < target:
                 left += 1
-            else:
+            ____
                 right -= 1
 
-        return NOT_FOUND
+        r_ NOT_FOUND

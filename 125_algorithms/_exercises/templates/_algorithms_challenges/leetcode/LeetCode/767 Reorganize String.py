@@ -18,11 +18,11 @@ Note:
 
 S will consist of lowercase letters and have length in range [1, 500].
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def reorganizeString(self, S: str) -> str:
+    ___ reorganizeString(self, S: str) -> str:
         """
         piles by max char and circular append
         """
@@ -37,24 +37,24 @@ class Solution:
         lst.sort()
         piles = []
         _, n, c = lst[0]
-        for i in range(n):
+        for i in range(n
             piles.append([c])
 
         cnt = 0
         for _, n, c in lst[1:]:
-            for _ in range(n):
+            for _ in range(n
                 piles[cnt].append(c)
-                cnt = (cnt + 1) % len(piles)
+                cnt = (cnt + 1) % le.(piles)
 
-        if len(piles) > 1 and len(piles[-2]) == 1:
-            return ""
+        __ le.(piles) > 1 and le.(piles[-2]) __ 1:
+            r_ ""
 
-        return "".join(
+        r_ "".join(
             map(lambda x: "".join(x), piles)
         )
 
 
-if __name__ == "__main__":
-    assert Solution().reorganizeString("vvvlo") == "vlvov"
-    assert Solution().reorganizeString("aab") == "aba"
-    assert Solution().reorganizeString("aaab") == ""
+__ __name__ __ "__main__":
+    assert Solution().reorganizeString("vvvlo") __ "vlvov"
+    assert Solution().reorganizeString("aab") __ "aba"
+    assert Solution().reorganizeString("aaab") __ ""

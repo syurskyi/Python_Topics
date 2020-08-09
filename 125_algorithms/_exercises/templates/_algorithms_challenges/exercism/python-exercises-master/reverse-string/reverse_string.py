@@ -1,2 +1,2 @@
-def reverse(text=''):
+___ reverse(text=''
     pass

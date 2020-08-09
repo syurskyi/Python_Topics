@@ -1,8 +1,8 @@
-def countdown(start):
+___ countdown(start
     index = 1
     output = [start]
-    while index <= start:
+    w___ index <= start:
         s = start - index
         output.append(s)
         index += 1
-    return output
+    r_ output

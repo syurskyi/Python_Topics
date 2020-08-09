@@ -4,32 +4,32 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findCircleNum(self, M):
+class Solution(object
+    ___ findCircleNum(self, M
         """
         :type M: List[List[int]]
         :rtype: int
         """
         matrix = M
-        n = len(matrix)
+        n = le.(matrix)
         roots = [-1]*n
         count = n
-        for i in range(n):
-            for j in range(n):
-                if i > j and matrix[i][j] == 1:
+        for i in range(n
+            for j in range(n
+                __ i > j and matrix[i][j] __ 1:
                     root1 = self.getRoot(roots, i)
                     root2 = self.getRoot(roots, j)
-                    if root1 != root2:
+                    __ root1 != root2:
                         count -= 1
                         roots[root1] = root2
-        return count
+        r_ count
     
-    def getRoot(self, roots, num):
-        while roots[num] != -1:
+    ___ getRoot(self, roots, num
+        w___ roots[num] != -1:
             num = roots[num]
-        return num
+        r_ num
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 1, 1],
@@ -55,5 +55,5 @@ class Solution(object):
             print('result: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

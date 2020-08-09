@@ -1,21 +1,21 @@
 #!python3
 #exchante_rates.py is a script to list out current exchange rates for all currencies
 
-import requests
-import json
+______ requests
+______ json
 
 API_URL = "https://openexchangerates.org/api/latest.json?app_id="
 API_KEY = "<INSERT YOUR APP ID KEY HERE>"
 
-def get_json():
-    return requests.get(API_URL + API_KEY).json()
+___ get_json(
+    r_ requests.get(API_URL + API_KEY).json()
 
-def exchange_rates(data):
+___ exchange_rates(data
     rates = data['rates']
     print("US$1.00 currently buys:")
-    for k, v in rates.items():
+    for k, v in rates.items(
         print("{}: {}".format(k, v))
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     data = get_json()
     exchange_rates(data)

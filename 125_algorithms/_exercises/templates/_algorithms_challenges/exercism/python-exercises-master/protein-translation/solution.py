@@ -6,20 +6,20 @@ CODONS = {'AUG': "Methionine", 'UUU': "Phenylalanine",
           'UAA': "STOP", 'UAG': "STOP", 'UGA': "STOP"}
 
 
-def of_codon(codon):
-    if codon not in CODONS:
+___ of_codon(codon
+    __ codon not in CODONS:
         raise ValueError('Invalid codon: %s' % codon)
-    return CODONS[codon]
+    r_ CODONS[codon]
 
 
-def of_rna(strand):
+___ of_rna(strand
     proteins = []
     for codon in map(of_codon, _chunkstring(strand, 3)):
-        if codon == 'STOP':
+        __ codon __ 'STOP':
             break
         proteins.append(codon)
-    return proteins
+    r_ proteins
 
 
-def _chunkstring(string, n):
-    return (string[i:n + i] for i in range(0, len(string), n))
+___ _chunkstring(string, n
+    r_ (string[i:n + i] for i in range(0, le.(string), n))

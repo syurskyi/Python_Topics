@@ -1,5 +1,5 @@
-class Solution(object):
-  def lastRemaining(self, n):
+class Solution(object
+  ___ lastRemaining(self, n
     """
     :type n: int
     :rtype: int
@@ -8,10 +8,10 @@ class Solution(object):
     head = 1
     isFromLeft = True
     step = 1
-    while count > 1:
-      if isFromLeft or count % 2 == 1:
+    w___ count > 1:
+      __ isFromLeft or count % 2 __ 1:
         head = head + step
       count /= 2
       step *= 2
       isFromLeft = not isFromLeft
-    return head
+    r_ head

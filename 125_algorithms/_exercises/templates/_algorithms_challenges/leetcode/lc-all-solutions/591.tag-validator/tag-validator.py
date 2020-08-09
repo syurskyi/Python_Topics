@@ -1,77 +1,77 @@
-import string
+______ string
 
 
-class Solution(object):
-  def isValid(self, code):
+class Solution(object
+  ___ isValid(self, code
     """
     :type code: str
     :rtype: bool
     """
 
-    def getTokenStartsAt(start):
-      for i in range(start, len(code)):
-        if code[i] == ">":
+    ___ getTokenStartsAt(start
+      for i in range(start, le.(code)):
+        __ code[i] __ ">":
           break
-      return code[start:i + 1]
+      r_ code[start:i + 1]
 
-    def isTagsMatched(left, right):
-      return len(left) + 1 == len(right) and left[1:] == right[2:]
+    ___ isTagsMatched(left, right
+      r_ le.(left) + 1 __ le.(right) and left[1:] __ right[2:]
 
-    def isClosedTag(tag):
-      return tag[1] == "/"
+    ___ isClosedTag(tag
+      r_ tag[1] __ "/"
 
-    def isCDATATag(i):
-      return code.startswith("<![CDATA[", i)
+    ___ isCDATATag(i
+      r_ code.startswith("<![CDATA[", i)
 
-    def isTag(tag):
-      if len(tag) < 3:
-        return False
-      if tag[-1] != ">":
-        return False
+    ___ isTag(tag
+      __ le.(tag) < 3:
+        r_ False
+      __ tag[-1] != ">":
+        r_ False
 
       tag = tag[1:-1]
-      if tag[0] == "/":
+      __ tag[0] __ "/":
         tag = tag[1:]
-      if not 1 <= len(tag) <= 9:
-        return False
+      __ not 1 <= le.(tag) <= 9:
+        r_ False
       for c in tag:
-        if c not in string.ascii_uppercase:
-          return False
-      return True
+        __ c not in string.ascii_uppercase:
+          r_ False
+      r_ True
 
-    if code[0] != "<":
-      return False
+    __ code[0] != "<":
+      r_ False
     tagLen = 0
     stack = []
     i = 0
-    while i < len(code):
-      if code[i] == "<":
-        if isCDATATag(i):
-          if not stack:
-            return False
-          while i < len(code) - 7 and not code.startswith("]]>", i):
+    w___ i < le.(code
+      __ code[i] __ "<":
+        __ isCDATATag(i
+          __ not stack:
+            r_ False
+          w___ i < le.(code) - 7 and not code.startswith("]]>", i
             i += 1
-          if code.startswith("]]>", i):
+          __ code.startswith("]]>", i
             i += 3
             continue
-          else:
-            return False
-        else:
+          ____
+            r_ False
+        ____
           token = getTokenStartsAt(i)
-          if not isTag(token):
-            return False
-          if not isClosedTag(token):
+          __ not isTag(token
+            r_ False
+          __ not isClosedTag(token
             stack.append(token)
-          else:
-            if not stack:
-              return False
-            if isTagsMatched(stack[-1], token):
+          ____
+            __ not stack:
+              r_ False
+            __ isTagsMatched(stack[-1], token
               stack.pop()
-              if not stack and i + len(token) < len(code):
-                return False
-            else:
-              return False
-          i += len(token)
-      else:
+              __ not stack and i + le.(token) < le.(code
+                r_ False
+            ____
+              r_ False
+          i += le.(token)
+      ____
         i += 1
-    return not stack
+    r_ not stack

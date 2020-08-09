@@ -1,10 +1,10 @@
-def matrix(x, y, z):
+___ matrix(x, y, z
     lst = []
-    for i in range(x):
+    for i in range(x
         lst.append([])
     for q in lst:
-        for a in range(y):
+        for a in range(y
             q.append(z)
-    return lst
+    r_ lst
 
 

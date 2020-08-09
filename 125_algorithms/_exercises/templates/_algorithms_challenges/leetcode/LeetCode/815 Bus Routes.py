@@ -23,12 +23,12 @@ Note:
 1 <= routes[i].length <= 500.
 0 <= routes[i][j] < 10 ^ 6.
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def numBusesToDestination(self, routes: List[List[int]], S: int, T: int) -> int:
+    ___ numBusesToDestination(self, routes: List[List[int]], S: int, T: int) -> int:
         """
         BFS
         bus based nodes rather than stop based nodes
@@ -36,42 +36,42 @@ class Solution:
         BFS = O(|V| + |E|) = O(N + N^2), where N is number of routes
         Construction = O (N^2 * S), where S is number of stops
         """
-        if S == T:
-            return 0
+        __ S __ T:
+            r_ 0
 
         routes = [set(e) for e in routes]
         G = defaultdict(set)
-        for i in range(len(routes)):
-            for j in range(i + 1, len(routes)):
+        for i in range(le.(routes)):
+            for j in range(i + 1, le.(routes)):
                 stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
                 for stop in stops_1:  # any(stop in stops_2 for stop in stops_1)
-                    if stop in stops_2:
+                    __ stop in stops_2:
                         G[i].add(j)
                         G[j].add(i)
                         break
 
-        q = [i for i, stops in enumerate(routes) if S in stops]
-        target_set = set([i for i, stops in enumerate(routes) if T in stops])
+        q = [i for i, stops in enumerate(routes) __ S in stops]
+        target_set = set([i for i, stops in enumerate(routes) __ T in stops])
         visited = defaultdict(bool)
         for i in q:
             visited[i] = True
         step = 1
-        while q:
+        w___ q:
             cur_q = []
             for e in q:
-                if e in target_set:
-                    return step
+                __ e in target_set:
+                    r_ step
                 for nbr in G[e]:
-                    if not visited[nbr]:
+                    __ not visited[nbr]:
                         visited[nbr] = True
                         cur_q.append(nbr)
 
             step += 1
             q = cur_q
 
-        return -1
+        r_ -1
 
-    def numBusesToDestination_TLE(self, routes: List[List[int]], S: int, T: int) -> int:
+    ___ numBusesToDestination_TLE(self, routes: List[List[int]], S: int, T: int) -> int:
         """
         BFS
         Lest number of buses rather than bus stops
@@ -80,8 +80,8 @@ class Solution:
         """
         G = defaultdict(set)
         for stops in routes:
-            for i in range(len(stops)):
-                for j in range(i + 1, len(stops)):
+            for i in range(le.(stops)):
+                for j in range(i + 1, le.(stops)):
                     u, v = stops[i], stops[j]
                     G[u].add(v)
                     G[v].add(u)
@@ -90,21 +90,21 @@ class Solution:
         step = 0
         visited = defaultdict(bool)
         visited[S] = True  # avoid add duplicate
-        while q:
+        w___ q:
             cur_q = []
             for e in q:
-                if e == T:
-                    return step
+                __ e __ T:
+                    r_ step
                 for nbr in G[e]:
-                    if not visited[nbr]:
+                    __ not visited[nbr]:
                         visited[nbr] = True
                         cur_q.append(nbr)
 
             step += 1
             q = cur_q
 
-        return -1
+        r_ -1
 
 
-if __name__ == "__main__":
-    assert Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) == 2
+__ __name__ __ "__main__":
+    assert Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) __ 2

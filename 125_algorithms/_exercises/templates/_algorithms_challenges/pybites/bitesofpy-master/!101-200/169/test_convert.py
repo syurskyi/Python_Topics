@@ -1,21 +1,21 @@
-import pytest
+______ pytest
 
-from convert import convert
+from convert ______ convert
 
 
-def test_non_numeric_value():
-    with pytest.raises(TypeError):
+___ test_non_numeric_value(
+    with pytest.raises(TypeError
         convert("153.67", "in")
 
 
-def test_unsupported_formats():
-    with pytest.raises(ValueError):
+___ test_unsupported_formats(
+    with pytest.raises(ValueError
         convert(300, "km")
 
 
-def test_with_mixed_case_formats():
+___ test_with_mixed_case_formats(
     expected = 153.67
-    assert convert(60.5, "CM") == expected
+    assert convert(60.5, "CM") __ expected
 
 
 @pytest.mark.parametrize(
@@ -45,8 +45,8 @@ def test_with_mixed_case_formats():
         (100, 254.0),
     ],
 )
-def test_convert_from_inches_to_centimeters(input_argument, expected_output):
-    assert convert(input_argument, "cm") == expected_output
+___ test_convert_from_inches_to_centimeters(input_argument, expected_output
+    assert convert(input_argument, "cm") __ expected_output
 
 
 @pytest.mark.parametrize(
@@ -76,5 +76,5 @@ def test_convert_from_inches_to_centimeters(input_argument, expected_output):
         (100, 39.3701),
     ],
 )
-def test_convert_from_centimeters_to_inches(input_argument, expected_output):
-    assert convert(input_argument, "in") == expected_output
+___ test_convert_from_centimeters_to_inches(input_argument, expected_output
+    assert convert(input_argument, "in") __ expected_output

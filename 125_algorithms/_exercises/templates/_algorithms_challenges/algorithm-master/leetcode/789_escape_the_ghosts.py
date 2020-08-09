@@ -1,5 +1,5 @@
 class Solution:
-    def escapeGhosts(self, ghosts, target):
+    ___ escapeGhosts(self, ghosts, target
         """
         :type ghosts: List[List[int]]
         :type target: List[int]
@@ -10,7 +10,7 @@ class Solution:
 
         for x, y in ghosts:
             ghost_dist = abs(R - x) + abs(C - y)
-            if ghost_dist <= pacman_dist:
-                return False
+            __ ghost_dist <= pacman_dist:
+                r_ False
 
-        return True
+        r_ True

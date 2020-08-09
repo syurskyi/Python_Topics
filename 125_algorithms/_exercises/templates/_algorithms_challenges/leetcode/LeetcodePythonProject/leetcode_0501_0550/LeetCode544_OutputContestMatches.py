@@ -4,25 +4,25 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findContestMatch(self, n):
+class Solution(object
+    ___ findContestMatch(self, n
         """
         :type n: int
         :rtype: str
         """
         l = list(range(1, n+1))
-        return self.helper(l)
+        r_ self.helper(l)
     
-    def helper(self, l):
-        if len(l) <= 2:
-            return '(%s,%s)' % (l[0], l[1])
+    ___ helper(self, l
+        __ le.(l) <= 2:
+            r_ '(%s,%s)' % (l[0], l[1])
         l0 = []
-        while l:
+        w___ l:
             l0.append('(%s,%s)' % (l.pop(0), l.pop()))
         res = self.helper(l0)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             2,
             4,
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % res)
             print('-='*30+'-')
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

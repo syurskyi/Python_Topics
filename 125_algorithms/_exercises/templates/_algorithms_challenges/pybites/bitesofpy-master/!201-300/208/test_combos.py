@@ -1,10 +1,10 @@
-import pytest
+______ pytest
 
-from Previous.combos import find_number_pairs
+from Previous.combos ______ find_number_pairs
 
 
-def _sort_all(ret):
-    return sorted(
+___ _sort_all(ret
+    r_ sorted(
         [tuple(sorted(n)) for n in ret]
     )
 
@@ -22,7 +22,7 @@ def _sort_all(ret):
     ([1.69, 1.82, 2.91, 4.67, 4.81, 3.05, 5.82, 5.06,
       4.28, 6.36, 5.19, 4.57], 10, [(4.81, 5.19)]),
 ])
-def test_find_number_pairs(numbers, N, expected):
+___ test_find_number_pairs(numbers, N, expected
     actual = find_number_pairs(numbers, N=N)
-    assert type(actual) == list
-    assert _sort_all(actual) == _sort_all(expected)
+    assert type(actual) __ list
+    assert _sort_all(actual) __ _sort_all(expected)

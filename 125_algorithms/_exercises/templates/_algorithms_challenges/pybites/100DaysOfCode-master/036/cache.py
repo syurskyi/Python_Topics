@@ -1,36 +1,36 @@
-from collections import defaultdict
-from datetime import datetime
-import pickle
-from random import choice
+from collections ______ defaultdict
+from datetime ______ datetime
+______ pickle
+from random ______ choice
 
 CACHE = 'data'
 NAMES = ('bob', 'julian', 'martin', 'dante', 'snake')
 TIMES = range(15, 61, 15)
 
 
-def gen_random_entry():
-    while True:
+___ gen_random_entry(
+    w___ True:
         yield datetime.now(), choice(NAMES), choice(TIMES)
 
 
 class Cache:
 
-    def __enter__(self):
+    ___ __enter__(self
         try:
             self.cache = pickle.load(open(CACHE, "rb"))
         except F..
             self.cache = defaultdict(list)
-        return self.cache
+        r_ self.cache
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    ___ __exit__(self, exc_type, exc_val, exc_tb
         pickle.dump(self.cache, open(CACHE, "wb"))
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     it = gen_random_entry()
 
     with Cache() as wl:
-        for i in range(5):
+        for i in range(5
             d, n, t = next(it)
             wl[n].append((d, t))
 

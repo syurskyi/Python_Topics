@@ -16,43 +16,43 @@ You may assume the number of calls to update and sumRange function is distribute
 __author__ = 'Daniel'
 
 
-class BinaryIndexTree(object):
-    def __init__(self, nums):
+class BinaryIndexTree(object
+    ___ __init__(self, nums
         """BIT 0 is dummy root"""
-        n = len(nums)
+        n = le.(nums)
         self.nums = [0 for _ in xrange(n+1)]
         self.N = [0 for _ in xrange(n+1)]
-        for i, v in enumerate(nums):
+        for i, v in enumerate(nums
             self.set(i+1, v)
 
-    def _lowbit(self, a):
-        return a & -a
+    ___ _lowbit(self, a
+        r_ a & -a
 
-    def set(self, i, val):
+    ___ set(self, i, val
         diff = val - self.nums[i]
         self.nums[i] = val
-        while i < len(self.N):
+        w___ i < le.(self.N
             self.N[i] += diff
             i += self._lowbit(i)
 
-    def get(self, i):
+    ___ get(self, i
         ret = 0
-        while i > 0:
+        w___ i > 0:
             ret += self.N[i]
             i -= self._lowbit(i)
 
-        return ret
+        r_ ret
 
 
-class NumArray(object):
-    def __init__(self, nums):
+class NumArray(object
+    ___ __init__(self, nums
         """
         initialize your data structure here.
         :type nums: List[int]
         """
         self.bit = BinaryIndexTree(nums)
 
-    def update(self, i, val):
+    ___ update(self, i, val
         """
         :type i: int
         :type val: int
@@ -60,11 +60,11 @@ class NumArray(object):
         """
         self.bit.set(i+1, val)
 
-    def sumRange(self, i, j):
+    ___ sumRange(self, i, j
         """
         sum of elements nums[i..j], inclusive.
         :type i: int
         :type j: int
         :rtype: int
         """
-        return self.bit.get(j+1)-self.bit.get(i)
+        r_ self.bit.get(j+1)-self.bit.get(i)

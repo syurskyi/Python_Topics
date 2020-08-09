@@ -1,69 +1,69 @@
 class Trie:
-    def __init__(self):
+    ___ __init__(self
         self.root = {}
 
-    def insert(self, string):
-        if not string:
-            return
+    ___ insert(self, string
+        __ not string:
+            r_
         parent = self.root
         for char in string:
-            if char in parent:
+            __ char in parent:
                 parent = parent[char]
-            else:
+            ____
                 parent[char] = {}
                 parent = parent[char]
         parent['_end'] = True
 
-    def search(self, string):
-        if not string:
-            return False
+    ___ search(self, string
+        __ not string:
+            r_ False
         parent = self.root
         for char in string:
-            if char in parent:
+            __ char in parent:
                 parent = parent[char]
-            else:
-                return False
-        return True
+            ____
+                r_ False
+        r_ True
 
-    def search_in_regex(self, string):
-        if not string:
-            return False
-        return self._search_in_regex(string, self.root, 0)
+    ___ search_in_regex(self, string
+        __ not string:
+            r_ False
+        r_ self._search_in_regex(string, self.root, 0)
 
-    def _search_in_regex(self, string, parent, i):
-        if i == len(string):
-            return parent.get('_end', False)
+    ___ _search_in_regex(self, string, parent, i
+        __ i __ le.(string
+            r_ parent.get('_end', False)
         result = False
-        if string[i] == '.':
+        __ string[i] __ '.':
             for child in parent:
-                if child[0] != '_' and self._search_in_regex(string, parent[child], i + 1):
+                __ child[0] != '_' and self._search_in_regex(string, parent[child], i + 1
                     result = True
-        elif string[i] in parent:
-            if self._search_in_regex(string, parent[string[i]], i + 1):
+        ____ string[i] in parent:
+            __ self._search_in_regex(string, parent[string[i]], i + 1
                 result = True
-        return result
+        r_ result
 
 class WordDictionary:
-    def __init__(self):
+    ___ __init__(self
         self.trie = Trie()
 
     """
     @param: word: Adds a word into the data structure.
     @return: nothing
     """
-    def addWord(self, word):
-        if not word:
-            return
+    ___ addWord(self, word
+        __ not word:
+            r_
         self.trie.insert(word)
 
     """
     @param: word: A word could contain the dot character '.' to represent any one letter.
     @return: if the word is in the data structure.
     """
-    def search(self, word):
-        if not word:
-            return False
-        return self.trie.search_in_regex(word)
+    ___ search(self, word
+        __ not word:
+            r_ False
+        r_ self.trie.search_in_regex(word)
 
 
 # Your WordDictionary object will be instantiated and called as such:

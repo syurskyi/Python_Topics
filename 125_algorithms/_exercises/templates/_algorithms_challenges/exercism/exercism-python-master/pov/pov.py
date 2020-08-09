@@ -1,42 +1,42 @@
-from json import dumps
-from itertools import chain
+from json ______ dumps
+from itertools ______ chain
 
-class Tree(object):
-    def __init__(self, label, children=None):
+class Tree(object
+    ___ __init__(self, label, children=None
         self.label = label
         self.children = children or []
 
-    def __dict__(self):
-        return {self.label: [c.__dict__() for c in sorted(self.children)]}
+    ___ __dict__(self
+        r_ {self.label: [c.__dict__() for c in sorted(self.children)]}
 
-    def __str__(self, indent=None):
-        return dumps(self.__dict__(), indent=indent)
+    ___ __str__(self, indent=None
+        r_ dumps(self.__dict__(), indent=indent)
 
-    def __lt__(self, other):
-        return self.label < other.label
+    ___ __lt__(self, other
+        r_ self.label < other.label
 
-    def __eq__(self, other):
-        return self.__dict__() == other.__dict__()
+    ___ __eq__(self, other
+        r_ self.__dict__() __ other.__dict__()
 
-    def from_pov(self, from_node):
+    ___ from_pov(self, from_node
         steps = self.find(from_node)
         for step in steps[1:]:
-            self.children = [c for c in self.children if c.label != step.label]
+            self.children = [c for c in self.children __ c.label != step.label]
             step.label, self.label = self.label, step.label
             step.children, self.children = self.children, step.children
             self.children.append(step)
-        return self
+        r_ self
 
-    def path_to(self, from_node, to_node):
+    ___ path_to(self, from_node, to_node
         to_path, from_path = self.find(to_node), self.find(from_node)
-        return list(n.label for n in chain(reversed(from_path), to_path[1:]))
+        r_ list(n.label for n in chain(reversed(from_path), to_path[1:]))
 
-    def find(self, to_node):
+    ___ find(self, to_node
         queue = [(self, tuple())]
-        while queue:
+        w___ queue:
             node, path = queue.pop()
             path += (node,)
-            if node.label == to_node:
-                return path
+            __ node.label __ to_node:
+                r_ path
             queue.extend((c, path) for c in node.children)
         raise ValueError("No node {}".format(to_node))

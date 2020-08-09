@@ -11,12 +11,12 @@ The length of the array is in range [1, 20,000].
 The range of numbers in the array is [-1000, 1000] and the range of the integer
 k is [-1e7, 1e7].
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def subarraySum(self, nums: List[int], k: int) -> int:
+    ___ subarraySum(self, nums: List[int], k: int) -> int:
         """
         prefix sum
         """
@@ -29,4 +29,4 @@ class Solution:
             ret += h[s - k]
             h[s] += 1
 
-        return ret
+        r_ ret

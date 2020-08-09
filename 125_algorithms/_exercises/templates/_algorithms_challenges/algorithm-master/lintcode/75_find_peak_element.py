@@ -1,20 +1,20 @@
 class Solution:
-    def findPeak(self, nums):
+    ___ findPeak(self, nums
         """
         :type nums: list
         :rtype: int
         """
-        if not nums:
-            return -1
+        __ not nums:
+            r_ -1
 
-        left, right = 0, len(nums) - 1
+        left, right = 0, le.(nums) - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
 
-            if nums[mid] < nums[mid + 1]:
+            __ nums[mid] < nums[mid + 1]:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        return right if nums[left] < nums[right] else left
+        r_ right __ nums[left] < nums[right] else left

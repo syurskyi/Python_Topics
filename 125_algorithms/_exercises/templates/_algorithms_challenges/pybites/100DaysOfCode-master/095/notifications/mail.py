@@ -1,11 +1,11 @@
-from datetime import datetime
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import os
-import smtplib
-import sys
+from datetime ______ datetime
+from email.mime.multipart ______ MIMEMultipart
+from email.mime.text ______ MIMEText
+______ os
+______ smtplib
+______ sys
 
-from themoviedb import get_genres_cache
+from themoviedb ______ get_genres_cache
 
 BASE_IMG_URL = 'http://image.tmdb.org/t/p/w92{}'
 BASE_MOVIE_URL = 'https://www.themoviedb.org/{}/{}'
@@ -15,7 +15,7 @@ GENRES = get_genres_cache()
 FROM_MAIL = os.environ.get('FROM_MAIL')
 TO_MAIL = os.environ.get('TO_MAIL')
 
-if not FROM_MAIL or not TO_MAIL:
+__ not FROM_MAIL or not TO_MAIL:
     print('set FROM_MAIL and TO_MAIL in env')
     sys.exit(1)
 
@@ -37,17 +37,17 @@ TEMPLATE = '''<tr>
             '''
 
 
-def generate_mail_msg(items):
+___ generate_mail_msg(items
     output = []
 
     for kind in items:
         output.append('<h2>{}</h2>'.format(kind.upper()))
 
-        for listing, entries in items[kind].items():
+        for listing, entries in items[kind].items(
             listing_header = listing.replace('_', ' ').title()
             output.append('<h3>{}</h3>'.format(listing_header))
 
-            if not entries:
+            __ not entries:
                 output.append('No new items')
                 continue
 
@@ -55,13 +55,13 @@ def generate_mail_msg(items):
             for entry in sorted(entries,
                                 key=lambda x: datetime.strptime(
                                               x.release_date, '%Y-%m-%d'),
-                                reverse=True):
+                                reverse=True
 
                 img = BASE_IMG_URL.format(entry.poster)
                 kind_for_url = kind.replace('movies', 'movie')
                 url = BASE_MOVIE_URL.format(kind_for_url, entry.id)
                 genres = ', '.join([GENRES.get(gen) for gen in entry.genres
-                                    if GENRES.get(gen)])
+                                    __ GENRES.get(gen)])
 
                 output.append(TEMPLATE.format(link=url,
                                               title=entry.title,
@@ -71,11 +71,11 @@ def generate_mail_msg(items):
                                               release=entry.release_date))
             output.append('</table>')
 
-    return '\n'.join(output)
+    r_ '\n'.join(output)
 
 
-def mail_msg(content, recipients=TO_MAIL, subject=SUBJECT):
-    if isinstance(recipients, list):
+___ mail_msg(content, recipients=TO_MAIL, subject=SUBJECT
+    __ isinstance(recipients, list
         recipients = ', '.join(recipients)
 
     sender = FROM_MAIL

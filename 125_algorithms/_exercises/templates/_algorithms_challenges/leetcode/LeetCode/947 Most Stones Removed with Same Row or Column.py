@@ -27,12 +27,12 @@ Note:
 1 <= stones.length <= 1000
 0 <= stones[i][j] < 10000
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def removeStones(self, stones: List[List[int]]) -> int:
+    ___ removeStones(self, stones: List[List[int]]) -> int:
         """
         convert to graph problem
         each component in the graph can be removed to only one node
@@ -42,29 +42,29 @@ class Solution:
         DFS - O(N)
         """
         G = defaultdict(list)
-        n = len(stones)
-        for i in range(n):
-            for j in range(i):
-                if stones[i][0] == stones[j][0] or stones[i][1] == stones[j][1]:
+        n = le.(stones)
+        for i in range(n
+            for j in range(i
+                __ stones[i][0] __ stones[j][0] or stones[i][1] __ stones[j][1]:
                     G[i].append(j)
                     G[j].append(i)
 
         # dfs
         comp_cnt = 0
         visited = [False for _ in range(n)]
-        for i in range(n):
-            if not visited[i]:
+        for i in range(n
+            __ not visited[i]:
                 comp_cnt += 1
                 self.dfs(G, i, visited)
 
-        return n - comp_cnt
+        r_ n - comp_cnt
 
-    def dfs(self, G, i, visited):
+    ___ dfs(self, G, i, visited
         visited[i] = True
         for nbr in G[i]:
-            if not visited[nbr]:
+            __ not visited[nbr]:
                 self.dfs(G, nbr, visited)
 
 
-if __name__ == "__main__":
-    assert Solution().removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]]) == 3
+__ __name__ __ "__main__":
+    assert Solution().removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]]) __ 3

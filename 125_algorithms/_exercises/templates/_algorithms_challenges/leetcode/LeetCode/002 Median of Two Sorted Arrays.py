@@ -6,7 +6,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def findMedianSortedArrays(self, A, B):
+    ___ findMedianSortedArrays(self, A, B
         """
         Merge two arrays to get the median, O((m+n)/2)
 
@@ -28,14 +28,14 @@ class Solution:
         :param B: list
         :return: float
         """
-        m = len(A)
-        n = len(B)
-        if ((m+n)&1 == 0):
-            return (self.find_kth(A, B, (m+n)/2)+self.find_kth(A, B, (m+n)/2-1))/2.0
-        else:
-            return self.find_kth(A, B, (m+n)/2)
+        m = le.(A)
+        n = le.(B)
+        __ ((m+n)&1 __ 0
+            r_ (self.find_kth(A, B, (m+n)/2)+self.find_kth(A, B, (m+n)/2-1))/2.0
+        ____
+            r_ self.find_kth(A, B, (m+n)/2)
 
-    def find_kth(self, A, B, k):
+    ___ find_kth(self, A, B, k
         """
 
         :param A:
@@ -43,23 +43,23 @@ class Solution:
         :param k: index starting from 0
         :return:
         """
-        if not A:  return B[k]
-        if not B:  return A[k]
-        if k == 0: return min(A[0], B[0])
+        __ not A:  r_ B[k]
+        __ not B:  r_ A[k]
+        __ k __ 0: r_ min(A[0], B[0])
 
-        m, n = len(A), len(B)
+        m, n = le.(A), le.(B)
         # pay attention to consider the equal sign. Assigning equal sign is an art.
-        if A[m/2] >= B[n/2]:
-            if k > m/2+n/2:
-                return self.find_kth(A, B[n/2+1:], k-n/2-1)  # exclude B[n/2] to make progress
-            else:
-                return self.find_kth(A[:m/2], B, k)  # exclude A[m/2] to make progress
-        else:
-            return self.find_kth(B, A, k)
+        __ A[m/2] >= B[n/2]:
+            __ k > m/2+n/2:
+                r_ self.find_kth(A, B[n/2+1:], k-n/2-1)  # exclude B[n/2] to make progress
+            ____
+                r_ self.find_kth(A[:m/2], B, k)  # exclude A[m/2] to make progress
+        ____
+            r_ self.find_kth(B, A, k)
 
 
-if __name__ == "__main__":
-    assert Solution().findMedianSortedArrays([1, 2], [1, 2, 3]) == 2
-    assert Solution().findMedianSortedArrays([1, 2], [3]) == 2
-    assert Solution().findMedianSortedArrays([1], [2, 3]) == 2
-    assert Solution().findMedianSortedArrays([1, 2], [1, 2]) == 1.5
+__ __name__ __ "__main__":
+    assert Solution().findMedianSortedArrays([1, 2], [1, 2, 3]) __ 2
+    assert Solution().findMedianSortedArrays([1, 2], [3]) __ 2
+    assert Solution().findMedianSortedArrays([1], [2, 3]) __ 2
+    assert Solution().findMedianSortedArrays([1, 2], [1, 2]) __ 1.5

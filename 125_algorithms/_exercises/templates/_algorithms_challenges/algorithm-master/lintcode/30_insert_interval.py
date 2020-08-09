@@ -8,43 +8,43 @@ Main Concept:
 
 
 Definition of Interval.
-class Interval(object):
-    def __init__(self, start, end):
+class Interval(object
+    ___ __init__(self, start, end
         self.start = start
         self.end = end
 """
 
 
 class Solution:
-    def insert(self, intvs, intv):
+    ___ insert(self, intvs, intv
         """
         :type intvs: list[Interval]
         :type intv: Interval
         :rtype: list[Interval]
         """
-        if not intvs and not intv:
-            return []
-        if not intvs:
-            return [intv]
-        if not intv:
-            return intvs
+        __ not intvs and not intv:
+            r_ []
+        __ not intvs:
+            r_ [intv]
+        __ not intv:
+            r_ intvs
 
         ans = []
-        index = len(intvs)
+        index = le.(intvs)
 
-        for i in range(len(intvs) - 1, -1, -1):
-            if intvs[i].start <= intv.start:
+        for i in range(le.(intvs) - 1, -1, -1
+            __ intvs[i].start <= intv.start:
                 break
             index -= 1
 
         intvs.append(intv)
-        for i in range(len(intvs) - 1, index, -1):
+        for i in range(le.(intvs) - 1, index, -1
             intvs[i], intvs[i - 1] = intvs[i - 1], intvs[i]
 
-        for i in range(len(intvs)):  # since there is one more child in intvs
-            if ans and intvs[i].start <= ans[-1].end:
+        for i in range(le.(intvs)):  # since there is one more child in intvs
+            __ ans and intvs[i].start <= ans[-1].end:
                 ans[-1].end = max(ans[-1].end, intvs[i].end)
-            else:
+            ____
                 ans.append(intvs[i])
 
-        return ans
+        r_ ans

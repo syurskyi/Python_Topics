@@ -1,12 +1,12 @@
-def find_secret_message(paragraph):
-    paragraph = ''.join([c for c in paragraph.lower() if c in 'abcdefghijklmnopqrstuvwxyz -'])
+___ find_secret_message(paragraph
+    paragraph = ''.join([c for c in paragraph.lower() __ c in 'abcdefghijklmnopqrstuvwxyz -'])
     appear,res = [],[]
-    for word in paragraph.split():
-        if word not in appear:
+    for word in paragraph.split(
+        __ word not in appear:
             appear.append(word)
-        elif word not in res:
+        ____ word not in res:
             res.append(word)
-    return ' '.join(res)
+    r_ ' '.join(res)
 
 
 print(find_secret_message('asdf qwer zxcv. zxcv fdsa rewq. qazw asdf sxed. qwer crfv.'))

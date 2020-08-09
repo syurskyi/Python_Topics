@@ -9,13 +9,13 @@ infile2.close()
 
 ##for word in data:
 ##    word = word.strip()
-##    temp_d = [string.strip() for string in dictionary if len(string.strip())==len(word)]
+##    temp_d = [string.strip() for string in dictionary if le.(string.strip())==le.(word)]
 ##    count = 0
 ##    for each in temp_d:
 ##        flag = True
 ##        if each != word:
 ##            for char in word:
-##                if word.count(char)!=each.count(char):
+##                if word.count(char)!=each.count(char
 ##                    flag = False
 ##                    break
 ##            if flag:
@@ -29,14 +29,14 @@ infile2.close()
 for word in data:
     word = word.strip()
     word_s = sorted(list(word))
-    temp_d = [string.strip() for string in dictionary if len(string.strip())==len(word)]
+    temp_d = [string.strip() for string in dictionary __ le.(string.strip())__le.(word)]
     count = 0
 ##    word_d = dict()
     for each in temp_d:
         flag = True
-        if each != word:
+        __ each != word:
             each = sorted(list(each))
-            if each == word_s:
+            __ each __ word_s:
                 count+=1
                 
     print(count,end=" ")

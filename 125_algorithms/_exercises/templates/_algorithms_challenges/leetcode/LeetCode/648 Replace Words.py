@@ -26,68 +26,68 @@ The input will only have lower-case letters.
 1 <= root length <= 100
 1 <= sentence words length <= 1000
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Node:
-    def __init__(self, chr):
+    ___ __init__(self, chr
         self.chr = chr
         self.ended = False
         self.children = defaultdict(lambda: None)
 
 
 class Trie:
-    def __init__(self):
+    ___ __init__(self
         self.root = Node(None)  # dummy
 
     @classmethod
-    def insert(cls, node, w, i):
-        if not node:
+    ___ insert(cls, node, w, i
+        __ not node:
             node = Node(w[i])
 
-        if i == len(w) - 1:
+        __ i __ le.(w) - 1:
             node.ended = True
-        else:
+        ____
             nxt = w[i + 1]
             node.children[nxt] = cls.insert(node.children[nxt], w, i + 1)
 
-        return node
+        r_ node
 
     @classmethod
-    def search(cls, node, w, i):
-        if not node:
-            return
+    ___ search(cls, node, w, i
+        __ not node:
+            r_
 
-        if node.chr != w[i]:
-            return
+        __ node.chr != w[i]:
+            r_
 
-        if node.ended:
-            return w[:i+1]
-        elif i + 1 < len(w):
-            return cls.search(node.children[w[i + 1]], w, i + 1)
-        else:
-            return
+        __ node.ended:
+            r_ w[:i+1]
+        ____ i + 1 < le.(w
+            r_ cls.search(node.children[w[i + 1]], w, i + 1)
+        ____
+            r_
 
 class Solution:
-    def replaceWords(self, dic: List[str], sentence: str) -> str:
+    ___ replaceWords(self, dic: List[str], sentence: str) -> str:
         trie = Trie()
         for word in dic:
             root = trie.root
             root.children[word[0]] = Trie.insert(root.children[word[0]], word, 0)
 
         ret = []
-        for word in sentence.split(" "):
-            for child in trie.root.children.values():
+        for word in sentence.split(" "
+            for child in trie.root.children.values(
                 searched = Trie.search(child, word, 0)
-                if searched:
+                __ searched:
                     ret.append(searched)
                     break
-            else:
+            ____
                 ret.append(word)
 
-        return " ".join(ret)
+        r_ " ".join(ret)
 
 
-if __name__ == "__main__":
-    assert Solution().replaceWords(["cat", "bat", "rat"], "the cattle was rattled by the battery") == "the cat was rat by the bat"
+__ __name__ __ "__main__":
+    assert Solution().replaceWords(["cat", "bat", "rat"], "the cattle was rattled by the battery") __ "the cat was rat by the bat"

@@ -1,5 +1,5 @@
-class Solution(object):
-  def decodeString(self, s):
+class Solution(object
+  ___ decodeString(self, s
     """
     :type s: str
     :rtype: str
@@ -7,14 +7,14 @@ class Solution(object):
     num = ""
     stack = [["", 1]]
     for c in s:
-      if c in "0123456789":
+      __ c in "0123456789":
         num += c
-      elif c == "[":
+      ____ c __ "[":
         stack.append(["", int(num)])
         num = ""
-      elif c == "]":
+      ____ c __ "]":
         ss, k = stack.pop()
         stack[-1][0] += ss * k
-      else:
+      ____
         stack[-1][0] += c
-    return stack[-1][0]
+    r_ stack[-1][0]

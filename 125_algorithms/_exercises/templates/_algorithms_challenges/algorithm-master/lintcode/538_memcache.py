@@ -9,15 +9,15 @@ class Memcache:
     @param: key: An integer
     @return: An integer
     """
-    def get(self, curtTime, key):
-        if key not in self.storage:
-            return self.INT_MAX
+    ___ get(self, curtTime, key
+        __ key not in self.storage:
+            r_ self.INT_MAX
 
-        if (curtTime < self.storage[key]['expired_at'] or
-            self.storage[key]['expired_at'] == self.PERMANENT_TTL):
-            return self.storage[key]['val']
+        __ (curtTime < self.storage[key]['expired_at'] or
+            self.storage[key]['expired_at'] __ self.PERMANENT_TTL
+            r_ self.storage[key]['val']
 
-        return self.INT_MAX
+        r_ self.INT_MAX
 
     """
     @param: curtTime: An integer
@@ -26,10 +26,10 @@ class Memcache:
     @param: ttl: An integer
     @return: nothing
     """
-    def set(self, curtTime, key, value, ttl):
-        if ttl > 0:
+    ___ set(self, curtTime, key, value, ttl
+        __ ttl > 0:
             self.storage[key] = self._new_item(key, value, curtTime + ttl)
-        else:
+        ____
             self.storage[key] = self._new_item(key, value, self.PERMANENT_TTL)
 
     """
@@ -37,8 +37,8 @@ class Memcache:
     @param: key: An integer
     @return: nothing
     """
-    def delete(self, curtTime, key):
-        if key in self.storage:
+    ___ delete(self, curtTime, key
+        __ key in self.storage:
             del self.storage[key]
 
     """
@@ -47,16 +47,16 @@ class Memcache:
     @param: delta: An integer
     @return: An integer
     """
-    def incr(self, curtTime, key, delta):
-        if key not in self.storage:
-            return self.INT_MAX
+    ___ incr(self, curtTime, key, delta
+        __ key not in self.storage:
+            r_ self.INT_MAX
 
-        if (curtTime < self.storage[key]['expired_at'] or
-            self.storage[key]['expired_at'] == self.PERMANENT_TTL):
+        __ (curtTime < self.storage[key]['expired_at'] or
+            self.storage[key]['expired_at'] __ self.PERMANENT_TTL
             self.storage[key]['val'] += delta
-            return self.storage[key]['val']
+            r_ self.storage[key]['val']
 
-        return self.INT_MAX
+        r_ self.INT_MAX
 
     """
     @param: curtTime: An integer
@@ -64,11 +64,11 @@ class Memcache:
     @param: delta: An integer
     @return: An integer
     """
-    def decr(self, curtTime, key, delta):
-        return self.incr(curtTime, key, -1 * delta)
+    ___ decr(self, curtTime, key, delta
+        r_ self.incr(curtTime, key, -1 * delta)
 
-    def _new_item(self, key, value, expired_at):
-        return {
+    ___ _new_item(self, key, value, expired_at
+        r_ {
             'key': key,
             'val': value,
             'expired_at': expired_at

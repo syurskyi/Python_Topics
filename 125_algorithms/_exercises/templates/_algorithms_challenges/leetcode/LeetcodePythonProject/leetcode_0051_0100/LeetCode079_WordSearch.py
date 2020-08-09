@@ -4,43 +4,43 @@ Created on Jan 24, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def exist(self, board, word):
+class Solution(object
+    ___ exist(self, board, word
         """
         :type board: List[List[str]]
         :type word: str
         :rtype: bool
         """
-        if not board or not word:
-            return False
-        m = len(board)
-        n = len(board[0])
-        for i in range(m):
-            for j in range(n):
-                if self.helper(board, word, 0, i, j):
-                    return True
-        return False
+        __ not board or not word:
+            r_ False
+        m = le.(board)
+        n = le.(board[0])
+        for i in range(m
+            for j in range(n
+                __ self.helper(board, word, 0, i, j
+                    r_ True
+        r_ False
     
-    def helper(self, board, word, start, i, j):
-        if i < 0 or j < 0 or i >= len(board) or j >= len(board[0]):
-            return False
-        if word[start] == board[i][j]:
-            if start == len(word)-1:
-                return True
+    ___ helper(self, board, word, start, i, j
+        __ i < 0 or j < 0 or i >= le.(board) or j >= le.(board[0]
+            r_ False
+        __ word[start] __ board[i][j]:
+            __ start __ le.(word)-1:
+                r_ True
             tmp = board[i][j]
             board[i][j] = '#'
             result = False
-            if self.helper(board, word, start+1, i+1, j) or\
+            __ self.helper(board, word, start+1, i+1, j) or\
                 self.helper(board, word, start+1, i, j+1) or\
                 self.helper(board, word, start+1, i-1, j) or\
-                self.helper(board, word, start+1, i, j-1):
+                self.helper(board, word, start+1, i, j-1
                 result = True
             board[i][j] = tmp
-            if result:
-                return True
-        return False
+            __ result:
+                r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         board = [
             ['A','B','C','E'],
             ['S','F','C','S'],
@@ -64,5 +64,5 @@ class Solution(object):
             print('-='*15+'-')
         
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

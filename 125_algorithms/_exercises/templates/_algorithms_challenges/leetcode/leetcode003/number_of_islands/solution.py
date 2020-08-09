@@ -1,31 +1,31 @@
 class Solution:
     # @param {character[][]} grid
     # @return {integer}
-    def numIslands(self, grid):
+    ___ numIslands(self, grid
         self.islands = set()  # coordinates of 1s (set of tuples)
         res = 0
-        n = len(grid)
-        if n == 0:
-            return 0
-        m = len(grid[0])
-        if m == 0:
-            return 0
-        for y in range(n):
-            for x in range(m):
-                if grid[y][x] == '1' and (x, y) not in self.islands:
+        n = le.(grid)
+        __ n __ 0:
+            r_ 0
+        m = le.(grid[0])
+        __ m __ 0:
+            r_ 0
+        for y in range(n
+            for x in range(m
+                __ grid[y][x] __ '1' and (x, y) not in self.islands:
                     self.probe(grid, x, y, m, n)
                     res += 1
-        return res
+        r_ res
 
-    def probe(self, grid, x, y, m, n):
+    ___ probe(self, grid, x, y, m, n
         """
         Probe right and down
         """
-        if x >= m or y >= n:
-            return
-        elif grid[y][x] == '0':
-            return
-        else:
+        __ x >= m or y >= n:
+            r_
+        ____ grid[y][x] __ '0':
+            r_
+        ____
             self.islands.add((x, y))
             self.probe(grid, x + 1, y, m, n)
             self.probe(grid, x, y + 1, m, n)

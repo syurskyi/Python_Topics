@@ -35,14 +35,14 @@ The target node is a node in the tree.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:
+    ___ distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:
         """
         similar to SolutionComplicated
         get its ancestor's distance, but at the same down go down through the tree
@@ -51,43 +51,43 @@ class Solution:
         """
         ret = []
         self.ancestor_dist(root, K, target, ret)
-        return ret
+        r_ ret
 
-    def dfs_down(self, node, d, ret):
+    ___ dfs_down(self, node, d, ret
         """
         same as dfs1
         """
-        if not node:
-            return
-        if d == 0:
+        __ not node:
+            r_
+        __ d __ 0:
             ret.append(node.val)
-        else:
+        ____
             self.dfs_down(node.left, d - 1, ret)
             self.dfs_down(node.right, d - 1, ret)
 
-    def ancestor_dist(self, node, K, target, ret):
-        if not node:
-            return float('inf')
+    ___ ancestor_dist(self, node, K, target, ret
+        __ not node:
+            r_ float('inf')
 
-        if node.val == target.val:
+        __ node.val __ target.val:
             # d = 0
             self.dfs_down(node, K, ret)
-            return 0
-        else:
+            r_ 0
+        ____
             l = self.ancestor_dist(node.left, K, target, ret)
             r = self.ancestor_dist(node.right, K, target, ret)
             d = min(l, r) + 1
-            if d == K:
+            __ d __ K:
                 ret.append(node.val)
-            elif l == float('inf'):
+            ____ l __ float('inf'
                 self.dfs_down(node.left, K - d - 1, ret)
-            else:  # r == float('inf')
+            ____  # r == float('inf')
                 self.dfs_down(node.right, K - d - 1, ret)
-            return d
+            r_ d
 
 
 class SolutionComplicated:
-    def distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:
+    ___ distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:
         """
         break the problem into two part
         1st problem: target's subtree - easy to solve
@@ -98,42 +98,42 @@ class SolutionComplicated:
         hm = {}
         self.ancestor_dist(root, target, hm)
         self.dfs2(root, target, K, float("inf"), hm, ret)
-        return ret
+        r_ ret
 
-    def dfs1(self, node, K, ret):
+    ___ dfs1(self, node, K, ret
         """1st problem"""
-        if not node:
-            return
+        __ not node:
+            r_
 
-        if K == 0:
+        __ K __ 0:
             ret.append(node.val)
-        else:
+        ____
             self.dfs1(node.left, K-1, ret)
             self.dfs1(node.right, K-1, ret)
 
-    def ancestor_dist(self, node, target, hm):
-        if not node:
-            return float('inf')
+    ___ ancestor_dist(self, node, target, hm
+        __ not node:
+            r_ float('inf')
 
-        if node.val == target.val:
+        __ node.val __ target.val:
             hm[node.val] = 0
-        else:
+        ____
             left = self.ancestor_dist(node.left, target, hm)
             right = self.ancestor_dist(node.right, target, hm)
             hm[node.val] = min(left, right) + 1
 
-        return hm[node.val]
+        r_ hm[node.val]
 
-    def dfs2(self, node, target, K, dist, hm, ret):
+    ___ dfs2(self, node, target, K, dist, hm, ret
         """2nd problem"""
-        if not node:
-            return
+        __ not node:
+            r_
 
-        if node.val == target.val:
-            return
+        __ node.val __ target.val:
+            r_
 
         dist = min(dist, hm[node.val])
-        if dist == K:
+        __ dist __ K:
             ret.append(node.val)
 
         self.dfs2(node.left, target, K, dist + 1, hm, ret)

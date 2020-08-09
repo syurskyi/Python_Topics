@@ -14,48 +14,48 @@ ava_check = True
 #dictionary to store the count of variable
 arr_check ={}
 
-while len(ele) < num_ele:
+w___ le.(ele) < num_ele:
     ele = input().split()
     ele.sort()
     #going through the all the elements
-    for i in range(len(ele)):
+    for i in range(le.(ele)):
         #print('starting i',i,'value of ele is',ele[i])
-        if len(check)==0:
+        __ le.(check)__0:
             check.append(ele[i])
             #checking if the element is with the unique array
-        for j in range(0,len(check)):
+        for j in range(0,le.(check)):
             #print('starting j',j,' value of ele is',check[j])
-            if ele[i] == check[j]:
+            __ ele[i] __ check[j]:
                 ava_check = True
                 # if the element is encountered for the first time then store it in dictionary and initialize the count else increment the count
-                if ele[i] in arr_check:
+                __ ele[i] in arr_check:
                     
                     arr_check[ele[i]] += 1
                     #print('True dictionary',ele[i],'is',arr_check[ele[i]])
-                else:
+                ____
                     
                     arr_check[ele[i]] = 1
                     #print('True else dictionary for ', ele[i],'is',arr_check[ele[i]])
                 
-            else:
+            ____
                     ava_check = False
                    
         #if element was not found within the unique list
         #element must be added to the unique list
         #and also must be checked for dictionary
-        if ava_check == False:
+        __ ava_check __ False:
             #print('value about to be append is:')
             check.append(ele[i])
-            if ele[i] in arr_check:
+            __ ele[i] in arr_check:
 
                 arr_check[ele[i]] += 1
                 #print('False dictionary for',ele[i],'is',arr_check[ele[i]])
-            else:
+            ____
 
                 arr_check[ele[i]] = 1
                 #print('False else dictionary for ', ele[i],'is',arr_check[ele[i]])
             #print(check)
             
 #finally print the element count
-for i,v in arr_check.items():
+for i,v in arr_check.items(
     print(v,end=(' '))

@@ -3,8 +3,8 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def crackSafe(self, n, k):
+class Solution(object
+    ___ crackSafe(self, n, k
         """
         :type n: int
         :type k: int
@@ -14,24 +14,24 @@ class Solution(object):
         arr = ['0']*n
         visited = set(['0'*n])
         self.dfs(arr, total, visited, n, k)
-        return ''.join(arr)
+        r_ ''.join(arr)
     
-    def dfs(self, arr, goal, visited, n, k):
-        if len(visited) == goal: return True
-        prevArr = arr[len(arr)-n+1:]
-        for i in range(k):
+    ___ dfs(self, arr, goal, visited, n, k
+        __ le.(visited) __ goal: r_ True
+        prevArr = arr[le.(arr)-n+1:]
+        for i in range(k
             nextArr = prevArr+[str(i)]
             nextStr = ''.join(nextArr)
-            if nextStr not in visited:
+            __ nextStr not in visited:
                 visited.add(nextStr)
                 arr.append(str(i))
-                if self.dfs(arr, goal, visited, n, k):
-                    return True
+                __ self.dfs(arr, goal, visited, n, k
+                    r_ True
                 visited.remove(nextStr)
                 arr.pop()
-        return False
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2],
             [2, 2],
@@ -43,5 +43,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

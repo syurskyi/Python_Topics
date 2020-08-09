@@ -3,15 +3,15 @@ Created on Apr 16, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def numMatchingSubseq(self, S, words):
+class Solution(object
+    ___ numMatchingSubseq(self, S, words
         """
         :type S: str
         :type words: List[str]
         :rtype: int
         """
         hashmap = {}
-        for i in range(26):
+        for i in range(26
             c = chr(ord('a')+i)
             hashmap[c] = []
         for word in words:
@@ -19,16 +19,16 @@ class Solution(object):
         count = 0
         for c in S:
             deque = hashmap[c]
-            size = len(deque)
-            for i in range(size):
+            size = le.(deque)
+            for i in range(size
                 word = deque.pop(0)
-                if len(word) == 1:
+                __ le.(word) __ 1:
                     count += 1
-                else:
+                ____
                     hashmap[word[1]].append(word[1:])
-        return count
+        r_ count
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 'abcde',
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

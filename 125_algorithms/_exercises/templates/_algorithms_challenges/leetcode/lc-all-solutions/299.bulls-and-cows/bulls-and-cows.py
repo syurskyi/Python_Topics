@@ -1,8 +1,8 @@
-from collections import Counter
+from collections ______ Counter
 
 
-class Solution(object):
-  def getHint(self, secret, guess):
+class Solution(object
+  ___ getHint(self, secret, guess
     """
     :type secret: str
     :type guess: str
@@ -11,20 +11,20 @@ class Solution(object):
     a = b = 0
     ds = Counter()
     dg = Counter()
-    for i in range(len(secret)):
+    for i in range(le.(secret)):
       s = secret[i]
       g = guess[i]
-      if secret[i] == guess[i]:
+      __ secret[i] __ guess[i]:
         a += 1
-      else:
+      ____
         ds[s] += 1
         dg[g] += 1
-        if ds[g] > 0:
+        __ ds[g] > 0:
           b += 1
           dg[g] -= 1
           ds[g] -= 1
-        if dg[s] > 0:
+        __ dg[s] > 0:
           b += 1
           ds[s] -= 1
           dg[s] -= 1
-    return "{}A{}B".format(a, b)
+    r_ "{}A{}B".format(a, b)

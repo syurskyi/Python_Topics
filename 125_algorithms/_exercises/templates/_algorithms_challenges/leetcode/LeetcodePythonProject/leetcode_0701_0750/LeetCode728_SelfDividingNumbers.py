@@ -3,27 +3,27 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def selfDividingNumbers(self, left, right):
+class Solution(object
+    ___ selfDividingNumbers(self, left, right
         """
         :type left: int
         :type right: int
         :rtype: List[int]
         """
         res = []
-        for num in range(left, right+1):
-            if self.isSelfDividing(num):
+        for num in range(left, right+1
+            __ self.isSelfDividing(num
                 res.append(num)
-        return res
+        r_ res
         
-    def isSelfDividing(self, num):
-        for digit in str(num):
+    ___ isSelfDividing(self, num
+        for digit in str(num
             d = int(digit)
-            if d == 0 or num%d != 0:
-                return False
-        return True
+            __ d __ 0 or num%d != 0:
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 22],
         ]
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

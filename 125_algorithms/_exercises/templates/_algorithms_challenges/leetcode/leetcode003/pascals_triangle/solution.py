@@ -14,31 +14,31 @@ Return
 """
 
 
-class Solution(object):
-    def generate(self, numRows):
+class Solution(object
+    ___ generate(self, numRows
         """
         :type numRows: int
         :rtype: List[List[int]]
         """
         res = []
-        if numRows == 0:
-            return res
+        __ numRows __ 0:
+            r_ res
         res.append([1])
-        if numRows == 1:
-            return res
+        __ numRows __ 1:
+            r_ res
         res.append([1, 1])
-        if numRows == 2:
-            return res
+        __ numRows __ 2:
+            r_ res
         # n is current row index (starting from 0)
-        for n in range(2, numRows):
+        for n in range(2, numRows
             cur = []
-            for i in range(n + 1):
-                if i == 0:
+            for i in range(n + 1
+                __ i __ 0:
                     cur.append(1)
-                elif i == n:
+                ____ i __ n:
                     cur.append(1)
-                else:
+                ____
                     c = res[n - 1][i - 1] + res[n - 1][i]
                     cur.append(c)
             res.append(cur)
-        return res
+        r_ res

@@ -6,8 +6,8 @@ Note: The numbers can be arbitrarily large and are non-negative.
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def multiply(self, num1, num2):
+class Solution(object
+    ___ multiply(self, num1, num2
         """
         Google Phone Interview Question, 20 Sep 2013
         Steps:
@@ -27,8 +27,8 @@ class Solution(object):
         result = []
 
         # pre processing
-        if len(num1) > len(num2):  # order them first
-            return self.multiply(num2, num1)
+        __ le.(num1) > le.(num2  # order them first
+            r_ self.multiply(num2, num1)
 
         # reverse them first
         num1 = map(int, list(num1[::-1]))
@@ -44,11 +44,11 @@ class Solution(object):
         # post processing
         lst.reverse()  # reverse back
         result = "".join(map(str, lst)).lstrip("0")
-        if not result:
-            return "0"
-        return result
+        __ not result:
+            r_ "0"
+        r_ result
 
-    def multiply_1_digit(self, digit, num):
+    ___ multiply_1_digit(self, digit, num
         """
         :param digit: String
         :param num: String
@@ -63,12 +63,12 @@ class Solution(object):
             mul %= 10
             ret.append(mul)
 
-        if carry != 0:
+        __ carry != 0:
             ret.append(carry)
 
-        return ret
+        r_ ret
 
-    def add_list(self, lst):
+    ___ add_list(self, lst
         """
         add lst of string
         :param lst:
@@ -76,25 +76,25 @@ class Solution(object):
         """
         sig = 0
         ret = [0]
-        for ind, val in enumerate(lst):
-            for i in xrange(sig): val.insert(0, 0)  # possible deque
+        for ind, val in enumerate(lst
+            for i in xrange(sig val.insert(0, 0)  # possible deque
             ret = self.add(ret, val)
             sig += 1
-        return ret
+        r_ ret
 
-    def add(self, num1, num2):
+    ___ add(self, num1, num2
         """
         :param num1: list of digits in reverse order
         :param num2: list of digits in reverse order
         :return: list of digits in reverse order
         """
 
-        if len(num1) > len(num2):
-            return self.add(num2, num1)
+        __ le.(num1) > le.(num2
+            r_ self.add(num2, num1)
 
         ret = []
         carry = 0
-        for idx in xrange(len(num2)):  # longer one
+        for idx in xrange(le.(num2)):  # longer one
             try:
                 sm = num1[idx] + num2[idx] + carry
             except IndexError:
@@ -103,15 +103,15 @@ class Solution(object):
             carry = sm/10
             ret.append(sm % 10)
 
-        if carry != 0:
+        __ carry != 0:
             ret.append(carry)
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     solution = Solution()
-    assert [1, 2] == solution.add([2, 1], [9])
-    assert str(123*999) == solution.multiply("123", "999")
-    assert str(0) == solution.multiply("0", "0")
-    assert str(123*456) == solution.multiply("123", "456")
+    assert [1, 2] __ solution.add([2, 1], [9])
+    assert str(123*999) __ solution.multiply("123", "999")
+    assert str(0) __ solution.multiply("0", "0")
+    assert str(123*456) __ solution.multiply("123", "456")

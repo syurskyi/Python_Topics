@@ -1,5 +1,5 @@
-class Solution(object):
-  def findRestaurant(self, list1, list2):
+class Solution(object
+  ___ findRestaurant(self, list1, list2
     """
     :type list1: List[str]
     :type list2: List[str]
@@ -8,13 +8,13 @@ class Solution(object):
     minSum = float("inf")
     ans = []
     d = {}
-    for i, name in enumerate(list2):
+    for i, name in enumerate(list2
       d[name] = i
-    for i, name in enumerate(list1):
+    for i, name in enumerate(list1
       idxSum = i + d.get(name, float("inf"))
-      if idxSum == minSum:
+      __ idxSum __ minSum:
         ans.append(name)
-      if idxSum < minSum:
+      __ idxSum < minSum:
         ans = [name]
         minSum = idxSum
-    return ans
+    r_ ans

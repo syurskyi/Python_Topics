@@ -3,47 +3,47 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def buddyStrings(self, A, B):
+class Solution(object
+    ___ buddyStrings(self, A, B
         """
         :type A: str
         :type B: str
         :rtype: bool
         """
         a, b = A, B
-        if len(a) != len(b): return False
-        if a == b and len(set(a)) < len(a): return True
-        dif = [(c1, c2) for c1, c2 in zip(a, b) if c1 != c2]
-        return len(dif) == 2 and dif[0] == dif[1][::-1]
+        __ le.(a) != le.(b r_ False
+        __ a __ b and le.(set(a)) < le.(a r_ True
+        dif = [(c1, c2) for c1, c2 in zip(a, b) __ c1 != c2]
+        r_ le.(dif) __ 2 and dif[0] __ dif[1][::-1]
     
-    def buddyStrings_own(self, A, B):
+    ___ buddyStrings_own(self, A, B
         """
         :type A: str
         :type B: str
         :rtype: bool
         """
         a, b = A, B
-        if len(a) != len(b):
-            return False
+        __ le.(a) != le.(b
+            r_ False
         c01, c02 = '', ''
         times = 0
-        for c1, c2 in zip(a, b):
-            if c1 != c2:
-                if times > 1:
-                    return False
-                elif times == 1:
-                    if c01 == c2 and c02 == c1:
+        for c1, c2 in zip(a, b
+            __ c1 != c2:
+                __ times > 1:
+                    r_ False
+                ____ times __ 1:
+                    __ c01 __ c2 and c02 __ c1:
                         times += 1
-                    else:
-                        return False
-                else:
+                    ____
+                        r_ False
+                ____
                     c01, c02 = c1, c2
                     times += 1
-        if times == 0:
-            return len(set(a)) < len(a)
-        return times == 2
+        __ times __ 0:
+            r_ le.(set(a)) < le.(a)
+        r_ times __ 2
     
-    def test(self):
+    ___ test(self
         testCase = [
             ['ab', 'ba'],
             ['ab', 'ab'],
@@ -56,5 +56,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

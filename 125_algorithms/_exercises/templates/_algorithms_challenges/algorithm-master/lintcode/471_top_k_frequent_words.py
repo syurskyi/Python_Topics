@@ -4,9 +4,9 @@ class Solution:
     @param: k: An integer
     @return: an array of string
     """
-    def topKFrequentWords(self, words, k):
-        if not words or not k:
-            return []
+    ___ topKFrequentWords(self, words, k
+        __ not words or not k:
+            r_ []
 
         F = {}
         for word in words:
@@ -15,4 +15,4 @@ class Solution:
         W = [(freq, word) for word, freq in F.items()]
         W.sort(key=lambda item: (-item[0], item[1]))
 
-        return [W[i][1] for i in range(k)]
+        r_ [W[i][1] for i in range(k)]

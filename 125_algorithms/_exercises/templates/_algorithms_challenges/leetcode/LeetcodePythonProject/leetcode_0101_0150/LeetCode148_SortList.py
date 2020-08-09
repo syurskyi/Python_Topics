@@ -5,29 +5,29 @@ Created on Feb 10, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
+class ListNode(object
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
-class Solution(object):
-    def sortList(self, head):
+class Solution(object
+    ___ sortList(self, head
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        return self.helper(head)
+        r_ self.helper(head)
     
-    def helper(self, node):
-        if not node or not node.next:
-            return node
+    ___ helper(self, node
+        __ not node or not node.next:
+            r_ node
         prev = ListNode(-1)
         node1 = node
         prev.next = node1
         node2 = node
-        while node2:
+        w___ node2:
             node2 = node2.next
-            if not node2: break
+            __ not node2: break
             prev = node1
             node1 = node1.next
             node2 = node2.next
@@ -36,39 +36,39 @@ class Solution(object):
         result1 = self.helper(node)
         result2 = self.helper(mid)
         result = self.merge(result1, result2)
-        return result
+        r_ result
     
-    def merge(self, node1, node2):
-        if not node1:
-            return node2
-        if not node2:
-            return node1
-        if node1.val > node2.val:
+    ___ merge(self, node1, node2
+        __ not node1:
+            r_ node2
+        __ not node2:
+            r_ node1
+        __ node1.val > node2.val:
             node = node2
             node2 = node2.next
-        else:
+        ____
             node = node1
             node1 = node1.next
         head = node
-        while node:
-            if not node1 and not node2:
-                return head
-            elif not node1 and node2:
+        w___ node:
+            __ not node1 and not node2:
+                r_ head
+            ____ not node1 and node2:
                 node.next = node2
                 node = node.next
                 node2 = node2.next
-            elif node1 and not node2:
+            ____ node1 and not node2:
                 node.next = node1
                 node = node.next
                 node1 = node1.next
-            else:
-                if node1.val < node2.val:
+            ____
+                __ node1.val < node2.val:
                     node.next = node1
                     node = node.next
                     node1 = node1.next
-                else:
+                ____
                     node.next = node2
                     node = node.next
                     node2 = node2.next
-        return head
+        r_ head
     

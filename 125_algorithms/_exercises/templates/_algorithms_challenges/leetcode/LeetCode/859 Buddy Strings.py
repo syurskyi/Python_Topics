@@ -37,34 +37,34 @@ USED = True
 
 
 class Solution:
-    def buddyStrings(self, A: str, B: str) -> bool:
+    ___ buddyStrings(self, A: str, B: str) -> bool:
         """
         iterate
         """
-        if len(A) != len(B):
-            return False
-        if A == B:
+        __ le.(A) != le.(B
+            r_ False
+        __ A __ B:
             # find dup
             seen = set()
             for a in A:
-                if a in seen:
-                    return True
+                __ a in seen:
+                    r_ True
                 seen.add(a)
-            else:
-                return False
+            ____
+                r_ False
 
         # Find a pair
         pair = None
-        for i in range(len(A)):
-            if A[i] != B[i]:
-                if not pair:
+        for i in range(le.(A)):
+            __ A[i] != B[i]:
+                __ not pair:
                     pair = (A[i], B[i])
-                elif pair == (B[i], A[i]):
+                ____ pair __ (B[i], A[i]
                     pair = USED
-                else:
-                    return False
+                ____
+                    r_ False
 
-        if pair is None or pair is USED:
-            return True
+        __ pair is None or pair is USED:
+            r_ True
 
-        return False
+        r_ False

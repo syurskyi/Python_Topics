@@ -5,8 +5,8 @@ Created on Oct 24, 2017
 '''
 """
 # Employee info
-class Employee(object):
-    def __init__(self, id, importance, subordinates):
+class Employee(object
+    ___ __init__(self, id, importance, subordinates
         # It's the unique id of each node.
         # unique id of this employee
         self.id = id
@@ -15,8 +15,8 @@ class Employee(object):
         # the id of direct subordinates
         self.subordinates = subordinates
 """
-class Solution(object):
-    def getImportance(self, employees, id):
+class Solution(object
+    ___ getImportance(self, employees, id
         """
         :type employees: Employee
         :type id: int
@@ -27,13 +27,13 @@ class Solution(object):
             hashmap[emp.id] = hashmap.get(emp.id, []) + [emp]
         queue = []
         for emp in employees:
-            if emp.id == id:
+            __ emp.id __ id:
                 queue.append(emp)
         res = 0
-        while queue:
+        w___ queue:
             emp = queue.pop(0)
             subs = emp.subordinates
             res += emp.importance
             for sub in subs:
                 queue += hashmap.get(sub, [])
-        return res
+        r_ res

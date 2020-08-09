@@ -16,27 +16,27 @@ Bonus point if you are able to do this using only O(n) extra space, where n is t
 """
 __author__ = 'Danyang'
 class Solution:
-    def minimumTotal(self, triangle):
+    ___ minimumTotal(self, triangle
         """
         bottom-up dp
         :param triangle: a list of lists of integers
         :return: integer
         """
         dp = []
-        length = len(triangle)
+        length = le.(triangle)
 
         # trivial
         dp.insert(0, [num for num in triangle[length-1]])
         # starting from penultimate row
-        for row in xrange(length-1-1, -1, -1):
+        for row in xrange(length-1-1, -1, -1
             dp.insert(0, [])
-            for col in xrange(len(triangle[row])):
+            for col in xrange(le.(triangle[row])):
                 dp[0].append(triangle[row][col]+min(dp[1][col], dp[1][col+1]))  # next level
 
-        assert len(dp[0])==1
+        assert le.(dp[0])__1
 
-        return dp[0][0]
+        r_ dp[0][0]
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     Solution().minimumTotal([[-1], [2, 3], [1, -1, -3]])

@@ -2,5 +2,5 @@
 # Score: 10
 
 
-def swap_case(s):
-    return s.swapcase()
+___ swap_case(s
+    r_ s.swapcase()

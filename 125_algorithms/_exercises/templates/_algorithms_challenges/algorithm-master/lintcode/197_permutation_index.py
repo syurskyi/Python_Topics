@@ -13,18 +13,18 @@ class Solution:
     @param: A: An array of integers
     @return: A long integer
     """
-    def permutationIndex(self, A):
+    ___ permutationIndex(self, A
         ans = 1
-        if not A:
-            return ans
+        __ not A:
+            r_ ans
 
-        n = len(A)
+        n = le.(A)
         factorial = 1
 
-        for i in range(n - 1, -1, -1):
+        for i in range(n - 1, -1, -1
             cnt = 0
-            for j in range(i + 1, n):
-                if A[i] > A[j]:
+            for j in range(i + 1, n
+                __ A[i] > A[j]:
                     cnt += 1
 
             """
@@ -34,4 +34,4 @@ class Solution:
             ans += cnt * factorial
             factorial *= n - i
 
-        return ans
+        r_ ans

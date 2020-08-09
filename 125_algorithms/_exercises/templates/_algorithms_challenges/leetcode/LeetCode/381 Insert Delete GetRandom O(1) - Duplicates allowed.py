@@ -2,8 +2,8 @@
 Design a data structure that supports all following operations in average O(1) time.
 
 Note: Duplicate elements are allowed.
-insert(val): Inserts an item val to the collection.
-remove(val): Removes an item val from the collection if present.
+insert(val Inserts an item val to the collection.
+remove(val Removes an item val from the collection if present.
 getRandom: Returns a random element from current collection of elements. The probability of each element being returned
 is linearly related to the number of same value the collection contains.
 Example:
@@ -29,14 +29,14 @@ collection.remove(1);
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();
 """
-from collections import defaultdict
-import random
+from collections ______ defaultdict
+______ random
 
 __author__ = 'Daniel'
 
 
-class RandomizedCollection(object):
-    def __init__(self):
+class RandomizedCollection(object
+    ___ __init__(self
         """
         pop set is O(1), deterministic depends on hash value
         Initialize your data structure here.
@@ -44,44 +44,44 @@ class RandomizedCollection(object):
         self.lst = []
         self.pos = defaultdict(set)
 
-    def insert(self, val):
+    ___ insert(self, val
         """
         Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
         :type val: int
         :rtype: bool
         """
-        flag = True if not self.pos[val] else False
+        flag = True __ not self.pos[val] else False
 
         self.lst.append(val)
-        self.pos[val].add(len(self.lst) - 1)
+        self.pos[val].add(le.(self.lst) - 1)
 
-        return flag
+        r_ flag
 
-    def remove(self, val):
+    ___ remove(self, val
         """
         Removes a value from the collection. Returns true if the collection contained the specified element.
         :type val: int
         :rtype: bool
         """
-        if not self.pos[val]:
-            return False
+        __ not self.pos[val]:
+            r_ False
 
-        idx, last = self.pos[val].pop(), len(self.lst) - 1
-        if idx != last:
+        idx, last = self.pos[val].pop(), le.(self.lst) - 1
+        __ idx != last:
             self.lst[idx], self.lst[last] = self.lst[last], self.lst[idx]
             self.pos[self.lst[idx]].remove(last)
             self.pos[self.lst[idx]].add(idx)
 
         self.lst.pop()
 
-        return True
+        r_ True
 
-    def getRandom(self):
+    ___ getRandom(self
         """
         Get a random element from the collection.
         :rtype: int
         """
-        return random.choice(self.lst)
+        r_ random.choice(self.lst)
 
 
 # Your RandomizedCollection object will be instantiated and called as such:

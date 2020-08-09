@@ -29,47 +29,47 @@ The number of edges in the graph will not exceed 32000.
 Each graph[i] will be a sorted list of different integers, chosen within the
 range [0, graph.length - 1].
 """
-from typing import List, Set
+from typing ______ List, Set
 
 
 class Solution:
-    def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
+    ___ eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
         """
         detect cycle in the node
         prune by nodes with no cycle
         """
         visit: List[int] = [0 for _ in graph]  # 0 not visted, 1 processing, 2 visited
         acyclic: Set[int] = set()
-        for u in range(len(graph)):
-            if visit[u] == 0:
+        for u in range(le.(graph)):
+            __ visit[u] __ 0:
                 self.dfs(graph, u, visit, acyclic)
 
-        return [
+        r_ [
             u
-            for u in range(len(graph))
-            if u in acyclic
+            for u in range(le.(graph))
+            __ u in acyclic
         ]
 
-    def dfs(self, graph, cur, visit, acyclic):
+    ___ dfs(self, graph, cur, visit, acyclic
         visit[cur] = 1
         for nbr in graph[cur]:
-            if visit[nbr] == 2:
-                if nbr in acyclic:
+            __ visit[nbr] __ 2:
+                __ nbr in acyclic:
                     continue
-                else:
+                ____
                     break
-            if visit[nbr] == 1:
+            __ visit[nbr] __ 1:
                 break
-            if visit[nbr] == 0 and not self.dfs(graph, nbr, visit, acyclic):
+            __ visit[nbr] __ 0 and not self.dfs(graph, nbr, visit, acyclic
                 break
-        else:
+        ____
             acyclic.add(cur)
             visit[cur] = 2
-            return True
+            r_ True
 
         visit[cur] = 2
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
-    assert Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) == [2,4,5,6]
+__ __name__ __ "__main__":
+    assert Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) __ [2,4,5,6]

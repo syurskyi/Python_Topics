@@ -4,25 +4,25 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def numberOfArithmeticSlices(self, A):
+class Solution(object
+    ___ numberOfArithmeticSlices(self, A
         """
         :type A: List[int]
         :rtype: int
         """
         nums = A
-        if not nums or len(nums) < 3: return 0
+        __ not nums or le.(nums) < 3: r_ 0
         res = 0
         curr = 0
-        for i in range(2, len(nums)):
-            if nums[i]-nums[i-1] == nums[i-1]-nums[i-2]:
+        for i in range(2, le.(nums)):
+            __ nums[i]-nums[i-1] __ nums[i-1]-nums[i-2]:
                 curr += 1
-            else:
+            ____
                 curr = 0
             res += curr
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 3, 4],
         ]
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

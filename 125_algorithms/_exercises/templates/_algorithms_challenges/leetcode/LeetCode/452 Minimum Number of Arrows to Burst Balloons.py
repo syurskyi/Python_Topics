@@ -24,21 +24,21 @@ Explanation:
 One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8]
 and [1,6]) and another arrow at x = 11 (bursting the other two balloons).
 """
-import heapq
+______ heapq
 
 
 class Balloon:
-    def __init__(self, s, e):
+    ___ __init__(self, s, e
         self.s = s
         self.e = e
 
-    def __lt__(self, other):
+    ___ __lt__(self, other
         # __cmp__ removed in py3
-        return self.e < other.e
+        r_ self.e < other.e
 
 
 class Solution:
-    def findMinArrowShots(self, points):
+    ___ findMinArrowShots(self, points
         """
         greedy shot since if two balloon no overlap, then must shot separately
 
@@ -53,17 +53,17 @@ class Solution:
         heap = []
         for point in points:
             s, e = point
-            if heap and heap[0].e < s:
+            __ heap and heap[0].e < s:
                 ret += 1
                 heap = []
 
             heapq.heappush(heap, Balloon(s, e))
 
-        if heap:
+        __ heap:
             ret += 1
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().findMinArrowShots([[10,16], [2,8], [1,6], [7,12]]) == 2
+__ __name__ __ "__main__":
+    assert Solution().findMinArrowShots([[10,16], [2,8], [1,6], [7,12]]) __ 2

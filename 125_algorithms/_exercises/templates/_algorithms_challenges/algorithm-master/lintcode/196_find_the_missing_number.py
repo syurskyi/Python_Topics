@@ -1,33 +1,33 @@
 class Solution:
-    def findMissing(self, nums):
+    ___ findMissing(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return 0
+        __ not nums:
+            r_ 0
 
-        ans = n = len(nums)
+        ans = n = le.(nums)
 
-        for i in range(n):
+        for i in range(n
             ans ^= i ^ nums[i]
 
-        return ans
+        r_ ans
 
 
 class Solution:
-    def findMissing(self, nums):
+    ___ findMissing(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return 0
+        __ not nums:
+            r_ 0
 
         nums.sort()
 
-        for i in range(len(nums)):
-            if i != nums[i]:
-                return i
+        for i in range(le.(nums)):
+            __ i != nums[i]:
+                r_ i
 
-        return i + 1
+        r_ i + 1

@@ -1,46 +1,46 @@
-import unittest
+______ unittest
 
-from anagram import detect_anagrams
+from anagram ______ detect_anagrams
 
 
-class AnagramTests(unittest.TestCase):
-    def test_no_matches(self):
+class AnagramTests(unittest.TestCase
+    ___ test_no_matches(self
         self.assertEqual(
             [],
             detect_anagrams('diaper', 'hello world zombies pants'.split())
         )
 
-    def test_detect_simple_anagram(self):
+    ___ test_detect_simple_anagram(self
         self.assertEqual(
             ['tan'],
             detect_anagrams('ant', 'tan stand at'.split())
         )
 
-    def test_detect_multiple_anagrams(self):
+    ___ test_detect_multiple_anagrams(self
         self.assertEqual(
             ['stream', 'maters'],
             detect_anagrams('master', 'stream pigeon maters'.split())
         )
 
-    def test_does_not_confuse_different_duplicates(self):
+    ___ test_does_not_confuse_different_duplicates(self
         self.assertEqual(
             [],
             detect_anagrams('galea', ['eagle'])
         )
 
-    def test_eliminate_anagram_subsets(self):
+    ___ test_eliminate_anagram_subsets(self
         self.assertEqual(
             [],
             detect_anagrams('good', 'dog goody'.split())
         )
 
-    def test_detect_anagram(self):
+    ___ test_detect_anagram(self
         self.assertEqual(
             ['inlets'],
             detect_anagrams('listen', 'enlists google inlets banana'.split())
         )
 
-    def test_multiple_anagrams(self):
+    ___ test_multiple_anagrams(self
         self.assertEqual(
             'gallery regally largely'.split(),
             detect_anagrams(
@@ -49,14 +49,14 @@ class AnagramTests(unittest.TestCase):
             )
         )
 
-    def test_anagrams_are_case_insensitive(self):
+    ___ test_anagrams_are_case_insensitive(self
         self.assertEqual(
             ['Carthorse'],
             detect_anagrams('Orchestra',
                             'cashregister Carthorse radishes'.split())
         )
 
-    def test_same_word_isnt_anagram(self):
+    ___ test_same_word_isnt_anagram(self
         self.assertEqual(
             [],
             detect_anagrams('banana', ['banana'])
@@ -67,5 +67,5 @@ class AnagramTests(unittest.TestCase):
             detect_anagrams('go', 'go Go GO'.split())
         )
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

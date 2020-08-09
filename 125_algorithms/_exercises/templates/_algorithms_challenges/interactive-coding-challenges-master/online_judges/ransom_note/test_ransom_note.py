@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestRansomNote(object):
+class TestRansomNote(object
 
-    def test_ransom_note(self):
+    ___ test_ransom_note(self
         solution = Solution()
         assert_raises(TypeError, solution.match_note_to_magazine, None, None)
         assert_equal(solution.match_note_to_magazine('', ''), True)
@@ -13,10 +13,10 @@ class TestRansomNote(object):
         print('Success: test_ransom_note')
 
 
-def main():
+___ main(
     test = TestRansomNote()
     test.test_ransom_note()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

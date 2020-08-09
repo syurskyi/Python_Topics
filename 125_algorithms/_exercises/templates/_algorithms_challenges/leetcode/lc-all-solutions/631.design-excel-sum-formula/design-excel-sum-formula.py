@@ -1,5 +1,5 @@
-class Excel(object):
-  def __init__(self, H, W):
+class Excel(object
+  ___ __init__(self, H, W
     """
     :type H: int
     :type W: str
@@ -8,10 +8,10 @@ class Excel(object):
     self.data = [[0] * (W + 1) for _ in range(H + 1)]
     self.formulas = {}
 
-  def decodeCoord(self, r, c):
-    return int(r) - 1, ord(c) - ord("A") + 1
+  ___ decodeCoord(self, r, c
+    r_ int(r) - 1, ord(c) - ord("A") + 1
 
-  def set(self, r, c, v):
+  ___ set(self, r, c, v
     """
     :type r: int
     :type c: str
@@ -19,42 +19,42 @@ class Excel(object):
     :rtype: void
     """
     r, c = self.decodeCoord(r, c)
-    if (r, c) in self.formulas:
+    __ (r, c) in self.formulas:
       del self.formulas[(r, c)]
     self.data[r][c] = v
 
-  def get(self, r, c):
+  ___ get(self, r, c
     """
     :type r: int
     :type c: str
     :rtype: int
     """
     r, c = self.decodeCoord(r, c)
-    if (r, c) in self.formulas:
-      return self.computeFormula(self.formulas[(r, c)])
-    return self.data[r][c]
+    __ (r, c) in self.formulas:
+      r_ self.computeFormula(self.formulas[(r, c)])
+    r_ self.data[r][c]
 
-  def computeFormula(self, strs):
+  ___ computeFormula(self, strs
     ans = 0
     for s in strs:
       startI, startJ, endI, endJ = self.parseRange(s)
-      for i in range(startI, endI + 1):
-        for j in range(startJ, endJ + 1):
-          if (i, j) in self.formulas:
+      for i in range(startI, endI + 1
+        for j in range(startJ, endJ + 1
+          __ (i, j) in self.formulas:
             ans += self.computeFormula(self.formulas[(i, j)])
-          else:
+          ____
             ans += self.data[i][j]
-    return ans
+    r_ ans
 
-  def parseRange(self, s):
+  ___ parseRange(self, s
     start = end = s
-    if ":" in s:
+    __ ":" in s:
       start, end = s.split(":")
     startI, startJ = self.decodeCoord(start[1:], start[0])
     endI, endJ = self.decodeCoord(end[1:], end[0])
-    return (startI, startJ, endI, endJ)
+    r_ (startI, startJ, endI, endJ)
 
-  def sum(self, r, c, strs):
+  ___ sum(self, r, c, strs
     """
     :type r: int
     :type c: str
@@ -63,7 +63,7 @@ class Excel(object):
     """
     r, c = self.decodeCoord(r, c)
     self.formulas[(r, c)] = strs
-    return self.computeFormula(strs)
+    r_ self.computeFormula(strs)
 
 # Your Excel object will be instantiated and called as such:
 # obj = Excel(H, W)

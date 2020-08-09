@@ -16,21 +16,21 @@ __author__ = 'Daniel'
 
 
 # Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
+class Interval(object
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
 
 
-class SummaryRanges(object):
-    def __init__(self):
+class SummaryRanges(object
+    ___ __init__(self
         """
-        BST is the most efficient, while heap is simple to write
+        BST is the most efficient, w___ heap is simple to write
         Initialize your data structure here.
         """
         self.itvls = []
 
-    def addNum(self, val):
+    ___ addNum(self, val
         """
         O(lg n)
         :type val: int
@@ -38,7 +38,7 @@ class SummaryRanges(object):
         """
         self.itvls.append(Interval(val, val))
 
-    def getIntervals(self):
+    ___ getIntervals(self
         """
         O(n lg n)
         :rtype: List[Interval]
@@ -48,13 +48,13 @@ class SummaryRanges(object):
         ret = [self.itvls[0]]
         for itvl in self.itvls[1:]:
             pre = ret[-1]
-            if itvl.start <= pre.end + 1:
+            __ itvl.start <= pre.end + 1:
                 pre.end = max(itvl.end, pre.end)
-            else:
+            ____
                 ret.append(itvl)
 
         self.itvls = ret
-        return ret
+        r_ ret
 
 # Your SummaryRanges object will be instantiated and called as such:
 # obj = SummaryRanges()

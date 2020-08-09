@@ -4,30 +4,30 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def nextPermutation(self, nums):
+class Solution(object
+    ___ nextPermutation(self, nums
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        j = len(nums)-1
-        while j > 0 and nums[j-1] >= nums[j]:
+        j = le.(nums)-1
+        w___ j > 0 and nums[j-1] >= nums[j]:
             j -= 1
-        self.reverse(nums, j, len(nums)-1)
-        if j == 0:
-            return
+        self.reverse(nums, j, le.(nums)-1)
+        __ j __ 0:
+            r_
         i = j-1
-        while j+1 < len(nums) and nums[i] >= nums[j]:
+        w___ j+1 < le.(nums) and nums[i] >= nums[j]:
             j += 1
         nums[i], nums[j] = nums[j], nums[i]
     
-    def reverse(self, nums, i, j):
-        while i < j:
+    ___ reverse(self, nums, i, j
+        w___ i < j:
             nums[i], nums[j] = nums[j], nums[i]
             i += 1
             j -= 1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 3],
             [3, 2, 1],
@@ -39,5 +39,5 @@ class Solution(object):
             print('nums: %s' % nums)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

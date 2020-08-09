@@ -5,7 +5,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def isPalindrome(self, x):
+    ___ isPalindrome(self, x
         """
         Algorithm: int, compare lsb and msb
         No extra space
@@ -14,20 +14,20 @@ class Solution:
         :param x: int
         :return: boolean
         """
-        if x < 0:
-            return False
+        __ x < 0:
+            r_ False
 
         # find order of magnitude
         div = 1
-        while x/div >= 10:
+        w___ x/div >= 10:
             div *= 10  # without touch x
 
-        while x > 0:
+        w___ x > 0:
             msb = x/div
             lsb = x%10
 
-            if msb != lsb:
-                return False
+            __ msb != lsb:
+                r_ False
 
             # shrink
             x %= div
@@ -35,8 +35,8 @@ class Solution:
 
             div /= 100
 
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     Solution().isPalindrome(2147483647)

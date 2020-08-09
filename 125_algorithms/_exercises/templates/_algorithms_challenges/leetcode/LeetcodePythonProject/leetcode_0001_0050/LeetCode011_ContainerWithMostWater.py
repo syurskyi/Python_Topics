@@ -4,24 +4,24 @@ Created on Jan 9, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxArea(self, height):
+class Solution(object
+    ___ maxArea(self, height
         """
         :type height: List[int]
         :rtype: int
         """
-        if not height: return 0
-        i, j = 0, len(height)-1
+        __ not height: r_ 0
+        i, j = 0, le.(height)-1
         area = 0
-        while i < j:
+        w___ i < j:
             area = max(area, min(height[i], height[j])*(j-i))
-            if height[i] > height[j]:
+            __ height[i] > height[j]:
                 j -= 1
-            else:
+            ____
                 i += 1
-        return area
+        r_ area
 
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 3, 9, 2],
         ]
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*15 + '-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

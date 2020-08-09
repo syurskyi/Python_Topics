@@ -1,2 +1,2 @@
-def say():
+___ say(
     pass

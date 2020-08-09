@@ -22,11 +22,11 @@ Notes:
 Both rectangles rec1 and rec2 are lists of 4 integers.
 All coordinates in rectangles will be between -10^9 and 10^9.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def isRectangleOverlap(self, rec1: List[int], rec2: List[int]) -> bool:
+    ___ isRectangleOverlap(self, rec1: List[int], rec2: List[int]) -> bool:
         """
         De Morgan's Law
            0      1       2        3
@@ -34,7 +34,7 @@ class Solution:
 
         Non-overlap if on the left, right, top, bottom
         """
-        return not (
+        r_ not (
             rec1[2] <= rec2[0] or  # left
             rec1[0] >= rec2[2] or  # right
             rec1[1] >= rec2[3] or  # top
@@ -42,11 +42,11 @@ class Solution:
         )
 
 
-    def isRectangleOverlap_error(self, rec1: List[int], rec2: List[int]) -> bool:
-        if rec1[0] > rec2[0]:
-            return self.isRectangleOverlap(rec2, rec1)
+    ___ isRectangleOverlap_error(self, rec1: List[int], rec2: List[int]) -> bool:
+        __ rec1[0] > rec2[0]:
+            r_ self.isRectangleOverlap(rec2, rec1)
 
-        return (
+        r_ (
             rect1[0] < rect2[0] < rec1[2] and
             (
                 rec2[1] < rect1[3] < rect2[3] or

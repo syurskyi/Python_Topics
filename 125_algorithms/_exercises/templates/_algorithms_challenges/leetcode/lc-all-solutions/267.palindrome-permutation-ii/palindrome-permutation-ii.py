@@ -1,20 +1,20 @@
-import collections
+______ collections
 
 
-class Solution(object):
-  def generatePalindromes(self, s):
+class Solution(object
+  ___ generatePalindromes(self, s
     """
     :type s: str
     :rtype: List[str]
     """
 
-    def helper(s, path, ans, visited):
-      if len(path) == len(s):
+    ___ helper(s, path, ans, visited
+      __ le.(path) __ le.(s
         ans.append("".join(path))
-        return
+        r_
 
-      for i in range(len(s)):
-        if i > 0 and s[i] == s[i - 1] and i - 1 not in visited or i in visited:
+      for i in range(le.(s)):
+        __ i > 0 and s[i] __ s[i - 1] and i - 1 not in visited or i in visited:
           continue
         visited |= {i}
         path.append(s[i])
@@ -27,15 +27,15 @@ class Solution(object):
     ss = ""
     mid = ""
     counter = collections.Counter(s)
-    oddChars = filter(lambda x: counter[x] % 2 == 1, counter)
-    if len(s) % 2 == 1:
-      if len(oddChars) == 1:
+    oddChars = filter(lambda x: counter[x] % 2 __ 1, counter)
+    __ le.(s) % 2 __ 1:
+      __ le.(oddChars) __ 1:
         mid = oddChars[0]
         counter[mid] -= 1
-      else:
-        return []
-    elif len(oddChars) > 0:
-      return []
+      ____
+        r_ []
+    ____ le.(oddChars) > 0:
+      r_ []
 
     for key in counter:
       ss += key * (counter[key] / 2)
@@ -43,4 +43,4 @@ class Solution(object):
     helper(sorted(ss), [], res, set())
     for hword in res:
       ans.append(hword + mid + hword[::-1])
-    return ans
+    r_ ans

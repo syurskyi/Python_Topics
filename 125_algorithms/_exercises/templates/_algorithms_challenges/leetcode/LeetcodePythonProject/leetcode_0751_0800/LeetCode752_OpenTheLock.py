@@ -3,8 +3,8 @@ Created on Mar 27, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def openLock(self, deadends, target):
+class Solution(object
+    ___ openLock(self, deadends, target
         """
         :type deadends: List[str]
         :type target: str
@@ -14,35 +14,35 @@ class Solution(object):
         level = 0
         visited = set(['0000'])
         deadends = set(deadends)
-        if '0000' in deadends:
-            return -1
-        while queue:
-            n = len(queue)
-            for _ in range(n):
+        __ '0000' in deadends:
+            r_ -1
+        w___ queue:
+            n = le.(queue)
+            for _ in range(n
                 s = queue.pop(0)
-                if s == target:
-                    return level
-                for i in range(4):
+                __ s __ target:
+                    r_ level
+                for i in range(4
                     s01 = int(s[i])+1
-                    if s01 >= 10:
+                    __ s01 >= 10:
                         s01 -= 10
                     s01 = str(s01)
                     s02 = int(s[i])-1
-                    if s02 < 0:
+                    __ s02 < 0:
                         s02 += 10
                     s02 = str(s02)
                     s0 = s[:i]+s01+s[i+1:]
-                    if s0 not in visited and s0 not in deadends:
+                    __ s0 not in visited and s0 not in deadends:
                         queue.append(s0)
                         visited.add(s0)
                     s0 = s[:i]+s02+s[i+1:]
-                    if s0 not in visited and s0 not in deadends:
+                    __ s0 not in visited and s0 not in deadends:
                         queue.append(s0)
                         visited.add(s0)
             level += 1
-        return -1
+        r_ -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["0201","0101","0102","1212","2002"],
@@ -66,5 +66,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestFindMagicIndex(object):
+class TestFindMagicIndex(object
 
-    def test_find_magic_index(self):
+    ___ test_find_magic_index(self
         magic_index = MagicIndex()
         assert_equal(magic_index.find_magic_index(None), -1)
         assert_equal(magic_index.find_magic_index([]), -1)
@@ -16,10 +16,10 @@ class TestFindMagicIndex(object):
         print('Success: test_find_magic')
 
 
-def main():
+___ main(
     test = TestFindMagicIndex()
     test.test_find_magic_index()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

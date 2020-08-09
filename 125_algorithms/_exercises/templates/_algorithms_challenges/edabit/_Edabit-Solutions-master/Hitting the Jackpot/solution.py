@@ -1,12 +1,12 @@
-def test_jackpot(result):
-    if len(set(result)) == 1:
-        return True
-    else:
-        return False
+___ test_jackpot(result
+    __ le.(set(result)) __ 1:
+        r_ True
+    ____
+        r_ False
 
-def test():
+___ test(
     print("test has started")
-    if test_jackpot(['@', '@', '@', '@']) != True:
+    __ test_jackpot(['@', '@', '@', '@']) != True:
         print("error1")
-    if test_jackpot(['SS', 'SS', 'SS', 'Ss']) != False:
+    __ test_jackpot(['SS', 'SS', 'SS', 'Ss']) != False:
         print("error2")

@@ -3,8 +3,8 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def calPoints(self, ops):
+class Solution(object
+    ___ calPoints(self, ops
         """
         :type ops: List[str]
         :rtype: int
@@ -12,21 +12,21 @@ class Solution(object):
         valids = []
         res = 0
         for c in ops:
-            if c == '+':
+            __ c __ '+':
                 res += valids[-1]+valids[-2]
                 valids.append(valids[-1]+valids[-2])
-            elif c == 'D':
+            ____ c __ 'D':
                 res += valids[-1]*2
                 valids.append(valids[-1]*2)
-            elif c == 'C':
+            ____ c __ 'C':
                 d = valids.pop()
                 res -= d
-            else:
+            ____
                 res += int(c)
                 valids.append(int(c))
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             ["5","2","C","D","+"],
             ["5","-2","4","C","D","9","+","+"],
@@ -37,5 +37,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

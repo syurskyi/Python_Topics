@@ -1,24 +1,24 @@
-import unittest
+______ unittest
 
-from sieve import sieve
+from sieve ______ sieve
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
-class SieveTest(unittest.TestCase):
-    def test_no_primes_under_two(self):
+class SieveTest(unittest.TestCase
+    ___ test_no_primes_under_two(self
         self.assertEqual(sieve(1), [])
 
-    def test_find_first_prime(self):
+    ___ test_find_first_prime(self
         self.assertEqual(sieve(2), [2])
 
-    def test_find_primes_up_to_10(self):
+    ___ test_find_primes_up_to_10(self
         self.assertEqual(sieve(10), [2, 3, 5, 7])
 
-    def test_limit_is_prime(self):
+    ___ test_limit_is_prime(self
         self.assertEqual(sieve(13), [2, 3, 5, 7, 11, 13])
 
-    def test_find_primes_up_to_1000(self):
+    ___ test_find_primes_up_to_1000(self
         self.assertEqual(
             sieve(1000), [
                 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
@@ -38,5 +38,5 @@ class SieveTest(unittest.TestCase):
             ])
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

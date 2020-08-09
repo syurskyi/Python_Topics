@@ -1,4 +1,4 @@
-from passwd import get_users_for_shell
+from passwd ______ get_users_for_shell
 
 # https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/com.ibm.aix.security/passwords_etc_passwd_file.htm
 OTHER_PASSWD_OUTPUT = """root:!:0:0::/:/usr/bin/ksh
@@ -17,30 +17,30 @@ paul:!:201:1::/home/paul:/usr/bin/ksh
 jdoe:*:202:1:John Doe:/home/jdoe:/usr/bin/ksh"""
 
 
-def test_get_users_for_shell_default_args():
+___ test_get_users_for_shell_default_args(
     actual = get_users_for_shell()
     expected = ['artagnon', 'avar', 'chad', 'gerrit2',
                 'git-svn-mirror', 'root', 'ssh-rsa']
-    assert sorted(actual) == expected
+    assert sorted(actual) __ expected
 
 
-def test_get_users_for_sh_shell():
+___ test_get_users_for_sh_shell(
     actual = get_users_for_shell(grep_shell='sh')
     expected = ['backup', 'bin', 'daemon', 'games', 'gnats', 'irc',
                 'libuuid', 'list', 'lp', 'mail', 'man', 'news',
                 'nobody', 'proxy', 'sys', 'uucp', 'www-data']
-    assert sorted(actual) == expected
+    assert sorted(actual) __ expected
 
 
-def test_get_users_for_false_shell():
+___ test_get_users_for_false_shell(
     actual = get_users_for_shell(grep_shell='false')
     expected = ['Debian-exim', 'avahi', 'ftp', 'messagebus',
                 'mysql', 'postfix', 'statd']
-    assert sorted(actual) == expected
+    assert sorted(actual) __ expected
 
 
-def test_get_users_for_different_passwd_output_and_ksh_shell():
+___ test_get_users_for_different_passwd_output_and_ksh_shell(
     actual = get_users_for_shell(passwd_output=OTHER_PASSWD_OUTPUT,
                                  grep_shell='ksh')
     expected = ['invscout', 'jdoe', 'paul', 'root']
-    assert sorted(actual) == expected
+    assert sorted(actual) __ expected

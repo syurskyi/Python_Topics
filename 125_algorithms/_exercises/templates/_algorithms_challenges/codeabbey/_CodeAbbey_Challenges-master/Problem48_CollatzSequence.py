@@ -5,7 +5,7 @@ with open("prob48.txt") as infile:
 ##    for start in data:
 ##        start = int(start)
 ##        count = 0
-##        while start != 1:
+##        w___ start != 1:
 ##            count+=1
 ##            if int(start)%2 == 0: ## it is even
 ##                start = start/2
@@ -16,7 +16,7 @@ with open("prob48.txt") as infile:
 # ALT
 
 
-##def Collatz(start):  # int
+##___ Collatz(start  # int
 ##    global count
 ##    count+=1
 ##    if start == 1:

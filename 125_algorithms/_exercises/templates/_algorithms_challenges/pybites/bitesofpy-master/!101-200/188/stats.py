@@ -1,10 +1,10 @@
-import re
-from os import path
-import statistics as st
-from urllib.request import urlretrieve
+______ re
+from os ______ path
+______ statistics as st
+from urllib.request ______ urlretrieve
 
 STATS = path.join('/tmp', 'testfiles_number_loc.txt')
-if not path.isfile(STATS):
+__ not path.isfile(STATS
     urlretrieve('https://bit.ly/2Jp5CUt', STATS)
 
 STATS_OUTPUT = """
@@ -25,17 +25,17 @@ Estimated variance for sample:
 """
 
 
-def get_all_line_counts(data: str = STATS) -> list:
+___ get_all_line_counts(data: str = STATS) -> list:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
     with open(data) as f:
         content = f.read()
-    return list(map(int, re.findall(r'\s+(\d+)\s+.*?\n', content)))
+    r_ list(map(int, re.findall(r'\s+(\d+)\s+.*?\n', content)))
 
 
-def create_stats_report(data=None):
-    if data is None:
+___ create_stats_report(data=None
+    __ data is None:
         # converting to a list in case a generator was returned
         data = list(get_all_line_counts())
 
@@ -44,15 +44,15 @@ def create_stats_report(data=None):
 
     # TODO 2: complete this dict, use data list and
     # for the last 3 sample_ variables, use sample list
-    stats = dict(count=len(data),
+    stats = dict(count=le.(data),
                  min_=min(data),
                  max_=max(data),
                  mean=st.mean(data),
                  pstdev=st.pstdev(data),
                  pvariance=st.pvariance(data),
-                 sample_count=len(sample),
+                 sample_count=le.(sample),
                  sample_stdev=st.stdev(sample),
                  sample_variance=st.variance(sample),
                  )
 
-    return STATS_OUTPUT.format(**stats)
+    r_ STATS_OUTPUT.format(**stats)

@@ -1,7 +1,7 @@
 STAR = '*'
 
 
-def gen_rhombus(width):
+___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row
        by row. So if width = 5 it should generate the following
        rows one by one:
@@ -18,8 +18,8 @@ def gen_rhombus(width):
           *
     """
     half = width // 2
-    for n in range(width):
-        if n < half:
+    for n in range(width
+        __ n < half:
             yield (STAR * (2 * n + 1)).center(width, ' ')
-        else:
+        ____
             yield (STAR * (2 * (width - n) - 1)).center(width, ' ')

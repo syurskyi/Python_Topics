@@ -1,17 +1,17 @@
 class Solution:
-    def containsDuplicate(self, A):
+    ___ containsDuplicate(self, A
         """
         :type A: List[int]
         :rtype: bool
         """
-        if not A:
-            return False
+        __ not A:
+            r_ False
 
         S = set()
 
         for a in A:
-            if a in S:
-                return True
+            __ a in S:
+                r_ True
             S.add(a)
 
-        return False
+        r_ False

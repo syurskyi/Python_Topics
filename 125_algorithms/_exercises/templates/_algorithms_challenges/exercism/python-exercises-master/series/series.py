@@ -1,2 +1,2 @@
-def slices():
+___ slices(
     pass

@@ -3,11 +3,11 @@
 
 
 n = int(input())
-for _ in range(n):
+for _ in range(n
     __, k = map(int, input().split())
     a = sorted(list(map(int, input().split())))
     b = sorted(list(map(int, input().split())), reverse=True)
-    if all([a[i] + b[i] >= k for i in range(len(a))]):
+    __ all([a[i] + b[i] >= k for i in range(le.(a))]
         print('YES')
-    else:
+    ____
         print('NO')

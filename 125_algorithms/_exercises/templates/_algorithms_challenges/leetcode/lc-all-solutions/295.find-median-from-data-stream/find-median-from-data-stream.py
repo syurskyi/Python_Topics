@@ -1,8 +1,8 @@
-import heapq
+______ heapq
 
 
 class MedianFinder:
-  def __init__(self):
+  ___ __init__(self
     """
     Initialize your data structure here.
     """
@@ -10,7 +10,7 @@ class MedianFinder:
     self.right = []
     self.median = None
 
-  def addNum(self, num):
+  ___ addNum(self, num
     """
     Adds a num into the data structure.
     :type num: int
@@ -18,36 +18,36 @@ class MedianFinder:
     """
     left = self.left
     right = self.right
-    if self.median is None:
+    __ self.median is None:
       self.median = num
-      return
+      r_
 
-    if num <= self.median:
+    __ num <= self.median:
       heapq.heappush(left, -num)
-    else:
+    ____
       heapq.heappush(right, num)
 
-    if len(left) > len(right) + 1:
+    __ le.(left) > le.(right) + 1:
       top = -heapq.heappop(left)
       heapq.heappush(right, self.median)
       self.median = top
-    if len(right) > len(left) + 1:
+    __ le.(right) > le.(left) + 1:
       top = heapq.heappop(right)
       heapq.heappush(left, -self.median)
       self.median = top
 
-  def findMedian(self):
+  ___ findMedian(self
     """
     Returns the median of current data stream
     :rtype: float
     """
     left, right = self.left, self.right
-    if len(left) == len(right):
-      return self.median
-    elif len(left) > len(right):
-      return (self.median - left[0]) / 2.0
-    if len(right) > len(left):
-      return (self.median + right[0]) / 2.0
+    __ le.(left) __ le.(right
+      r_ self.median
+    ____ le.(left) > le.(right
+      r_ (self.median - left[0]) / 2.0
+    __ le.(right) > le.(left
+      r_ (self.median + right[0]) / 2.0
 
 # Your MedianFinder object will be instantiated and called as such:
 # mf = MedianFinder()

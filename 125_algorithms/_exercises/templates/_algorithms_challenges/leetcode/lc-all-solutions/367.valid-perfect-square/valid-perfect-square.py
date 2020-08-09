@@ -1,5 +1,5 @@
-class Solution(object):
-  def isPerfectSquare(self, num):
+class Solution(object
+  ___ isPerfectSquare(self, num
     """
     :type num: int
     :rtype: bool
@@ -32,4 +32,4 @@ class Solution(object):
     r = (r + num / r) / 2
     r = (r + num / r) / 2
     r = (r + num / r) / 2
-    return r * r == num
+    r_ r * r __ num

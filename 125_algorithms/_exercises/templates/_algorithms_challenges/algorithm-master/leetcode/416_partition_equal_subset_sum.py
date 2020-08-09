@@ -7,28 +7,28 @@ REF: https://leetcode.com/problems/partition-equal-subset-sum/discuss/90592
 
 
 class Solution:
-    def canPartition(self, nums):
+    ___ canPartition(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
-        if not nums:
-            return True
+        __ not nums:
+            r_ True
 
         target = sum(nums)
 
-        if target & 1 == 1:
-            return False
+        __ target & 1 __ 1:
+            r_ False
 
         target //= 2
         dp = [False] * (target + 1)
         dp[0] = True
 
         for a in nums:
-            for s in range(target, a - 1, -1):
-                if dp[s]:
+            for s in range(target, a - 1, -1
+                __ dp[s]:
                     continue
 
                 dp[s] = dp[s - a]
 
-        return dp[target]
+        r_ dp[target]

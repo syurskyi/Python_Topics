@@ -3,8 +3,8 @@ Created on Sep 12, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def scoreOfParentheses(self, S):
+class Solution(object
+    ___ scoreOfParentheses(self, S
         """
         :type S: str
         :rtype: int
@@ -12,14 +12,14 @@ class Solution(object):
         s = S
         stack, cur = [], 0
         for c in s:
-            if c == '(':
+            __ c __ '(':
                 stack.append(cur)
                 cur = 0
-            else:
+            ____
                 cur += stack.pop() + max(cur, 1)
-        return cur
+        r_ cur
     
-    def test(self):
+    ___ test(self
         testCases = [
             '()',
             '(())',
@@ -32,5 +32,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

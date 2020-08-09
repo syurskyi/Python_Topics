@@ -3,16 +3,16 @@ Created on Feb 27, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def isPerfectSquare(self, num):
-        if num <= 0: return False
+class Solution(object
+    ___ isPerfectSquare(self, num
+        __ num <= 0: r_ False
         l, r = 1, num//2+1
-        while l <= r:
+        w___ l <= r:
             mid = (l+r)//2
-            if mid*mid == num:
-                return True
-            elif mid*mid > num:
+            __ mid*mid __ num:
+                r_ True
+            ____ mid*mid > num:
                 r = mid-1
-            else:
+            ____
                 l = mid+1
-        return False
+        r_ False

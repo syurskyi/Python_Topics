@@ -1,21 +1,21 @@
-from itertools import count
+from itertools ______ count
 
-import pandas as pd
-import numpy as np
+______ pandas as pd
+______ numpy as np
 
 movie_excel_file = "https://bit.ly/2BVUyrO"
 
 
-def explode(df, lst_cols, fill_value='', preserve_index=False):
+___ explode(df, lst_cols, fill_value='', preserve_index=False
     """Helper found on SO to split pipe (|) separted genres into
        multiple rows so it becomes easier to group the data -
        https://stackoverflow.com/a/40449726
     """
-    if (lst_cols is not None and len(lst_cols) > 0 and not
+    __ (lst_cols is not None and le.(lst_cols) > 0 and not
     isinstance(lst_cols, (list, tuple, np.ndarray, pd.Series))):
         lst_cols = [lst_cols]
     idx_cols = df.columns.difference(lst_cols)
-    lens = df[lst_cols[0]].str.len()
+    lens = df[lst_cols[0]].str.le.()
     idx = np.repeat(df.index.values, lens)
     res = (pd.DataFrame({
         col: np.repeat(df[col].values, lens)
@@ -23,16 +23,16 @@ def explode(df, lst_cols, fill_value='', preserve_index=False):
         index=idx)
            .assign(**{col: np.concatenate(df.loc[lens > 0, col].values)
                       for col in lst_cols}))
-    if (lens == 0).any():
-        res = (res.append(df.loc[lens == 0, idx_cols], sort=False)
+    __ (lens __ 0).any(
+        res = (res.append(df.loc[lens __ 0, idx_cols], sort=False)
                .fillna(fill_value))
     res = res.sort_index()
-    if not preserve_index:
+    __ not preserve_index:
         res = res.reset_index(drop=True)
-    return res
+    r_ res
 
 
-def group_by_genre(data=movie_excel_file):
+___ group_by_genre(data=movie_excel_file
     """Takes movies data excel file (https://bit.ly/2BXra4w) and loads it
        into a DataFrame (df).
 
@@ -51,5 +51,5 @@ def group_by_genre(data=movie_excel_file):
     df = df[df.genres != '(no genres listed)']
     df = df.groupby('genres').agg(movie=('movie','count'))
     df = df.sort_values(by=['movie'], ascending=False)
-    return df
+    r_ df
 

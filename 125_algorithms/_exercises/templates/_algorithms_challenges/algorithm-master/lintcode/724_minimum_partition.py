@@ -1,11 +1,11 @@
 class Solution:
-    def findMin(self, nums):
+    ___ findMin(self, nums
         """
         :type nums: list[int]
         :rtype: int
         """
-        if not nums:
-            return 0
+        __ not nums:
+            r_ 0
 
         target = sum(nums)
         dp = [False] * (target + 1)
@@ -14,13 +14,13 @@ class Solution:
         ans = float('inf')
 
         for num in nums:
-            for i in range(target, num - 1, -1):
+            for i in range(target, num - 1, -1
                 dp[i] = dp[i] or dp[i - num]
 
-                if dp[i]:
+                __ dp[i]:
                     ans = min(
                         ans,
                         abs(target - i * 2)
                     )
 
-        return ans
+        r_ ans

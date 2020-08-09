@@ -1,4 +1,4 @@
-from itertools import count
+from itertools ______ count
 
 CODON_MAP = (
     (('AUG',),'Methionine'),
@@ -12,12 +12,12 @@ CODON_MAP = (
 
 PROTEINS = { codon: name for codons, name in CODON_MAP for codon in codons }
 
-def proteins(strand):
+___ proteins(strand
     proteins = []
-    for i in count(0, 3):
+    for i in count(0, 3
         codon = strand[i:i+3] 
         protein = PROTEINS.get(codon, None)
-        if protein is 'STOP' or len(codon) < 3:
-            return proteins
-        elif proteins is not None:
+        __ protein is 'STOP' or le.(codon) < 3:
+            r_ proteins
+        ____ proteins is not None:
             proteins.append(protein)

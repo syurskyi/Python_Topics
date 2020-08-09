@@ -25,7 +25,7 @@ int2roman = {
 
 
 class Solution:
-    def intToRoman(self, num):
+    ___ intToRoman(self, num
         """
         dealing with digits
         notice the 1, 4, 5, 9, 10 repetition
@@ -37,9 +37,9 @@ class Solution:
         components = [1, 4, 5, 9, 10, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
 
         # starting from the largest
-        for component in reversed(components):  # reversed
-            while num >= component:
+        for component in reversed(components  # reversed
+            w___ num >= component:
                 string_builder.append(int2roman[component])
                 num -= component
 
-        return "".join(string_builder)
+        r_ "".join(string_builder)

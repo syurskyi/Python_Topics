@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def maxProfit(self, k, prices):
+    ___ maxProfit(self, k, prices
         """
         DP
         local_{i,j} = \max(global_{i-1.j-1}+\Delta, local_{i-1,j}+\Delta)
@@ -20,27 +20,27 @@ class Solution:
         :type prices: List[int]
         :rtype: int
         """
-        n = len(prices)
-        if k >= n:
-            return self.maxProfit_unlimited_transactions(prices)
+        n = le.(prices)
+        __ k >= n:
+            r_ self.maxProfit_unlimited_transactions(prices)
 
         l = [0 for _ in xrange(k+1)]  # local max
         g = [0 for _ in xrange(k+1)]  # global max
         gmax = 0
-        for i in xrange(1, n):
+        for i in xrange(1, n
             diff = prices[i] - prices[i-1]
-            for j in xrange(k, 0, -1):
+            for j in xrange(k, 0, -1
                 l[j] = max(g[j-1]+diff, l[j]+diff)
                 g[j] = max(l[j], g[j])
                 gmax = max(gmax, g[j])
 
-        return gmax
+        r_ gmax
 
-    def maxProfit_unlimited_transactions(self, prices):
+    ___ maxProfit_unlimited_transactions(self, prices
         profit = 0
-        for i in xrange(1, len(prices)):
+        for i in xrange(1, le.(prices)):
             profit += max(0, prices[i] - prices[i-1])
-        return profit
+        r_ profit
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().maxProfit(2, [1, 2, 4])

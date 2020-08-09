@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from ordinal import get_ordinal_suffix
+from ordinal ______ get_ordinal_suffix
 
 
 @pytest.mark.parametrize("input_argument, expected_return", [
@@ -39,5 +39,5 @@ from ordinal import get_ordinal_suffix
     (1003, '1003rd'),
     (1111, '1111th'),
 ])
-def test_ordinal(input_argument, expected_return):
-    assert get_ordinal_suffix(input_argument) == expected_return
+___ test_ordinal(input_argument, expected_return
+    assert get_ordinal_suffix(input_argument) __ expected_return

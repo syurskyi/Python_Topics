@@ -3,13 +3,13 @@ Created on Sep 5, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def fractionAddition(self, expression):
+class Solution(object
+    ___ fractionAddition(self, expression
         """
         :type expression: str
         :rtype: str
         """
-        import re
+        ______ re
         ints = map(int, re.findall('[+-]?\d+', expression))
         A, B = 0, 1
         for a in ints:
@@ -19,15 +19,15 @@ class Solution(object):
             g = self.gcd(A, B)
             A //= g
             B //= g
-        return '%s/%s' % (A, B)
+        r_ '%s/%s' % (A, B)
     
-    def gcd(self, a, b):
-        if a == 0:
-            return abs(b)
-        else:
-            return self.gcd(b%a, a)
+    ___ gcd(self, a, b
+        __ a __ 0:
+            r_ abs(b)
+        ____
+            r_ self.gcd(b%a, a)
     
-    def test(self):
+    ___ test(self
         testCases = [
             '-1/2+1/2',
             '-1/2+1/2+1/3',
@@ -39,5 +39,5 @@ class Solution(object):
             result = self.fractionAddition(expression)
             print('result: %s' % result)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

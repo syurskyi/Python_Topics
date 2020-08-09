@@ -1,24 +1,24 @@
-def flatten_dictionary(dictionary):
+___ flatten_dictionary(dictionary
     ans = {}
 
-    if not dictionary:
-        return ans
+    __ not dictionary:
+        r_ ans
 
     dfs(dictionary, [], ans)
-    return ans
+    r_ ans
 
 
-def dfs(dictionary, keys, ans):
-    if not isinstance(dictionary, dict):
+___ dfs(dictionary, keys, ans
+    __ not isinstance(dictionary, dict
         key = '.'.join(keys)
         ans[key] = dictionary
-        return
+        r_
 
     for key in dictionary:
-        if key:
+        __ key:
             keys.append(key)
 
         dfs(dictionary[key], keys, ans)
 
-        if key:
+        __ key:
             keys.pop()

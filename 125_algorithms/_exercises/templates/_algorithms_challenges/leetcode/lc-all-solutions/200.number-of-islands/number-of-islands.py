@@ -1,5 +1,5 @@
-class Solution(object):
-  def numIslands(self, grid):
+class Solution(object
+  ___ numIslands(self, grid
     """
     :type grid: List[List[str]]
     :rtype: int
@@ -7,17 +7,17 @@ class Solution(object):
     visited = set()
     ans = 0
 
-    def dfs(grid, i, j, visited):
-      if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == "0" or (i, j) in visited:
-        return False
+    ___ dfs(grid, i, j, visited
+      __ i < 0 or i >= le.(grid) or j < 0 or j >= le.(grid[0]) or grid[i][j] __ "0" or (i, j) in visited:
+        r_ False
       visited |= {(i, j)}
       for di, dj in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
         newi, newj = i + di, j + dj
         dfs(grid, newi, newj, visited)
-      return True
+      r_ True
 
-    for i in range(0, len(grid)):
-      for j in range(0, len(grid[0])):
-        if dfs(grid, i, j, visited):
+    for i in range(0, le.(grid)):
+      for j in range(0, le.(grid[0])):
+        __ dfs(grid, i, j, visited
           ans += 1
-    return ans
+    r_ ans

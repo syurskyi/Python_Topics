@@ -1,15 +1,15 @@
-def comp(txt1, txt2):
-    if len(txt1) == len(txt2):
-        return True
-    else:
-        return False
+___ comp(txt1, txt2
+    __ le.(txt1) __ le.(txt2
+        r_ True
+    ____
+        r_ False
 
 
-def test_comp():
+___ test_comp(
     print("test has started")
-    if comp("test","food") != True:
+    __ comp("test","food") != True:
         print("error")
-    if comp ("too", "good") != False:
+    __ comp ("too", "good") != False:
         print("error2")
-    else:
+    ____
         print("success")

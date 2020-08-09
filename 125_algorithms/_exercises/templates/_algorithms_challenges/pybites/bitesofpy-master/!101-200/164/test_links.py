@@ -1,33 +1,33 @@
-from os import path
-import platform
-import subprocess
+from os ______ path
+______ platform
+______ subprocess
 
-import pytest
+______ pytest
 
-# no need to import make_html_links as we call links.py from CLI!
+# no need to ______ make_html_links as we call links.py from CLI!
 
 TMP = '/tmp'
 SCRIPT = 'links.py'
 IS_LOCAL = platform.system() in ['Darwin', 'Linux']
-MY_CODE = SCRIPT if IS_LOCAL else path.join(TMP, SCRIPT)
+MY_CODE = SCRIPT __ IS_LOCAL else path.join(TMP, SCRIPT)
 
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
 
 @pytest.fixture
-def my_file(tmp_path):
+___ my_file(tmp_path
     f = tmp_path / "some_file.txt"
-    return f
+    r_ f
 
 
-def _create_and_verify_links(my_file, lines, expected_links):
+___ _create_and_verify_links(my_file, lines, expected_links
     my_file.write_bytes(b'\n'.join(lines))
     cmd = f'cat {my_file.resolve()} | python {MY_CODE}'
     output = subprocess.check_output(cmd, shell=True).splitlines()
     assert all(link in output for link in expected_links)
 
 
-def test_make_html_links_first_data_set(my_file):
+___ test_make_html_links_first_data_set(my_file
     lines = [b"https://www.python.org, Python Homepage",
              b"bad data,blabla,123",
              (b"https://pybit.es/generators.html , "
@@ -42,7 +42,7 @@ def test_make_html_links_first_data_set(my_file):
     _create_and_verify_links(my_file, lines, expected_links)
 
 
-def test_make_html_links_second_data_set(my_file):
+___ test_make_html_links_second_data_set(my_file
     lines = [b"bogus data, again",
              b"https://codechalleng.es/bites/ , Bites of Py",
              (b"https://stackoverflow.com/a/12927564,How to capture"

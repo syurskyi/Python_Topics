@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestPalindrome(object):
+class TestPalindrome(object
 
-    def test_palindrome(self):
+    ___ test_palindrome(self
         print('Test: Empty list')
         linked_list = MyLinkedList()
         assert_equal(linked_list.is_palindrome(), False)
@@ -37,10 +37,10 @@ class TestPalindrome(object):
         print('Success: test_palindrome')
 
 
-def main():
+___ main(
     test = TestPalindrome()
     test.test_palindrome()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

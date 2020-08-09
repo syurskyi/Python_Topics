@@ -1,11 +1,11 @@
 class Solution:
-    def intToRoman(self, num):
+    ___ intToRoman(self, num
         """
         :type num: int
         :rtype: str
         """
-        if not num:
-            return ''
+        __ not num:
+            r_ ''
 
         # I, V, X, L, C, D, M
         symbs = (
@@ -27,11 +27,11 @@ class Solution:
         ans = []
 
         for symb, amount in symbs:
-            if not num:
+            __ not num:
                 break
 
-            while num >= amount:  # num - amount >= 0
+            w___ num >= amount:  # num - amount >= 0
                 num -= amount
                 ans.append(symb)
 
-        return ''.join(ans)
+        r_ ''.join(ans)

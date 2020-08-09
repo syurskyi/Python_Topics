@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Given two binary trees and imagine that when you put one of them to cover the
-other, some nodes of the two trees are overlapped while the others are not.
+other, some nodes of the two trees are overlapped w___ the others are not.
 
 You need to merge them into a new binary tree. The merge rule is that if two
 nodes overlap, then sum node values up as the new value of the merged node.
@@ -31,20 +31,20 @@ Note: The merging process must start from the root nodes of both trees.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
-        if not t1 and not t2:
-            return
+    ___ mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
+        __ not t1 and not t2:
+            r_
 
         node = TreeNode(0)
         node.val += t1 and t1.val or 0
         node.val += t2 and t2.val or 0
         node.left = self.mergeTrees(t1 and t1.left, t2 and t2.left)
         node.right = self.mergeTrees(t1 and t1.right, t2 and t2.right)
-        return node
+        r_ node

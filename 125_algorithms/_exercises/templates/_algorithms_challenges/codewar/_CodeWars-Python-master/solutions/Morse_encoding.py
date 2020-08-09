@@ -5,31 +5,31 @@ https://www.codewars.com/kata/morse-encoding/train/python
 class Morse:
 
     @classmethod
-    def encode(self, message):
+    ___ encode(self, message
         words = message.split(' ')
         code = ('0' * 7).join(['000'.join([Morse.alpha[c.upper()]
                                            for c in word]) for word in words])
         result = []
-        for i in range(0, len(code), 32):
+        for i in range(0, le.(code), 32
             num = code[i:i + 32].ljust(32, '0')
             result.append(int(num[1:], 2) -
-                          (0 if num[0] == '0' else Morse.neg))
-        return result
+                          (0 __ num[0] __ '0' else Morse.neg))
+        r_ result
 
     @classmethod
-    def decode(self, array):
+    ___ decode(self, array
         code = ''
         for num in array:
-            if num < 0:
+            __ num < 0:
                 num += Morse.neg
                 code += '1' + bin(num)[2:].rjust(31, '0')
-            else:
+            ____
                 code += bin(num)[2:].rjust(32, '0')
         code = code.rstrip('0')
-        result = ' '.join([''.join([next(k for k, v in Morse.alpha.items() if v == char)
+        result = ' '.join([''.join([next(k for k, v in Morse.alpha.items() __ v __ char)
                                     for char in words.split('000')]) for words in code.split('0' * 7)])
 
-        return result
+        r_ result
 
     neg = 1 << 31
 
@@ -90,7 +90,7 @@ class Morse:
         '@': '10111011101011101',
         ' ': '0'}
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     print(Morse.encode('hello world'))
     # print(Morse.encode('EEEEEEEIE'))
     # print(Morse.decode([-2004318070, 536870912]))

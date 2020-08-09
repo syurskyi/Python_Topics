@@ -1,5 +1,5 @@
-class Solution(object):
-  def isInterleave(self, s1, s2, s3):
+class Solution(object
+  ___ isInterleave(self, s1, s2, s3
     """
     :type s1: str
     :type s2: str
@@ -8,32 +8,32 @@ class Solution(object):
     """
     d = {}
     s3 = list(s3)
-    if len(s1) + len(s2) != len(s3):
-      return False
+    __ le.(s1) + le.(s2) != le.(s3
+      r_ False
 
-    def dfs(s1, i, s2, j, d, path, s3):
-      if (i, j) in d:
-        return d[(i, j)]
+    ___ dfs(s1, i, s2, j, d, path, s3
+      __ (i, j) in d:
+        r_ d[(i, j)]
 
-      if path == s3:
-        return True
+      __ path __ s3:
+        r_ True
 
-      if i < len(s1):
-        if s3[i + j] == s1[i]:
+      __ i < le.(s1
+        __ s3[i + j] __ s1[i]:
           path.append(s1[i])
-          if dfs(s1, i + 1, s2, j, d, path, s3):
-            return True
+          __ dfs(s1, i + 1, s2, j, d, path, s3
+            r_ True
           path.pop()
           d[(i + 1, j)] = False
 
-      if j < len(s2):
-        if s3[i + j] == s2[j]:
+      __ j < le.(s2
+        __ s3[i + j] __ s2[j]:
           path.append(s2[j])
-          if dfs(s1, i, s2, j + 1, d, path, s3):
-            return True
+          __ dfs(s1, i, s2, j + 1, d, path, s3
+            r_ True
           path.pop()
           d[(i, j + 1)] = False
 
-      return False
+      r_ False
 
-    return dfs(s1, 0, s2, 0, d, [], s3)
+    r_ dfs(s1, 0, s2, 0, d, [], s3)

@@ -11,7 +11,7 @@ Note:
 
 
 class Solution:
-    def hammingDistance(self, x, y):
+    ___ hammingDistance(self, x, y
         """
         :type x: int
         :type y: int
@@ -19,13 +19,13 @@ class Solution:
         """
         diff = x ^ y
         ret = 0
-        while diff:
+        w___ diff:
             ret += diff & 1
             diff >>= 1
             
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().hammingDistance(3, 1) == 1
-    assert Solution().hammingDistance(1, 4) == 2
+__ __name__ __ "__main__":
+    assert Solution().hammingDistance(3, 1) __ 1
+    assert Solution().hammingDistance(1, 4) __ 2

@@ -1,18 +1,18 @@
 '''
 Definition of BaseGFSClient
 class BaseGFSClient:
-    def readChunk(self, filename, chunkIndex):
+    ___ readChunk(self, filename, chunkIndex
         # Read a chunk from GFS
-    def writeChunk(self, filename, chunkIndex, content):
+    ___ writeChunk(self, filename, chunkIndex, content
         # Write a chunk to GFS
 '''
 
 
-class GFSClient(BaseGFSClient):
+class GFSClient(BaseGFSClient
     """
     @param: chunkSize: An integer
     """
-    def __init__(self, chunkSize):
+    ___ __init__(self, chunkSize
         BaseGFSClient.__init__(self)
         self.chunk_size = chunkSize
         self.chunk_num = {}
@@ -21,23 +21,23 @@ class GFSClient(BaseGFSClient):
     @param: filename: a file name
     @return: conetent of the file given from GFS
     """
-    def read(self, filename):
-        if filename not in self.chunk_num:
-            return
+    ___ read(self, filename
+        __ filename not in self.chunk_num:
+            r_
         i, content = 0, ''
-        while i < self.chunk_num[filename]:
+        w___ i < self.chunk_num[filename]:
             content += self.readChunk(filename, i)
             i += 1
-        return content
+        r_ content
 
     """
     @param: filename: a file name
     @param: content: a string
     @return: nothing
     """
-    def write(self, filename, content):
-        i, j, n = 0, 0, len(content)
-        while j < n:
+    ___ write(self, filename, content
+        i, j, n = 0, 0, le.(content)
+        w___ j < n:
             self.writeChunk(filename, i, content[j : j + self.chunk_size])
             i += 1
             j += self.chunk_size

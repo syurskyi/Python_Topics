@@ -16,39 +16,39 @@ __author__ = 'Daniel'
 
 
 class Queue:
-    def __init__(self):
+    ___ __init__(self
         self.in_stk = []
         self.out_stk = []
 
-    def push(self, x):
+    ___ push(self, x
         """
         :type x: int
         :rtype: None
         """
         self.in_stk.append(x)
 
-    def pop(self):
+    ___ pop(self
         """
         :rtype: None
         """
-        if not self.out_stk:
-            while self.in_stk:
+        __ not self.out_stk:
+            w___ self.in_stk:
                 self.out_stk.append(self.in_stk.pop())
 
         self.out_stk.pop()
 
-    def peek(self):
+    ___ peek(self
         """
         :rtype: int
         """
-        if not self.out_stk:
-            while self.in_stk:
+        __ not self.out_stk:
+            w___ self.in_stk:
                 self.out_stk.append(self.in_stk.pop())
 
-        return self.out_stk[-1]
+        r_ self.out_stk[-1]
 
-    def empty(self):
+    ___ empty(self
         """
         :rtype: bool
         """
-        return not self.out_stk and not self.in_stk
+        r_ not self.out_stk and not self.in_stk

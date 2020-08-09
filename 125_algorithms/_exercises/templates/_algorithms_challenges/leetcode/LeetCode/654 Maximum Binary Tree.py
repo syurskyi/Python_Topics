@@ -29,18 +29,18 @@ The size of the given array will be in the range [1,1000].
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-from typing import List
-import heapq
+from typing ______ List
+______ heapq
 
 
 class Solution:
-    def constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
+    ___ constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
         """
         monotonic stack - a stack to keep a decreasing subsequence from left to
         right
@@ -50,25 +50,25 @@ class Solution:
         stk = []
         for n in nums:
             cur = TreeNode(n)
-            while stk and stk[-1].val < cur.val:
+            w___ stk and stk[-1].val < cur.val:
                 left = stk.pop()
                 cur.left = left
 
-            if stk:
+            __ stk:
                 stk[-1].right = cur
 
             stk.append(cur)
 
-        return stk[0]
+        r_ stk[0]
 
 class Solution_heap:
-    def constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
+    ___ constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
         """
         heap O(n lgn)
         insert by index O(n lgn)
         """
-        if not nums:
-            return
+        __ not nums:
+            r_
 
         h = [(-v, v) for v in nums]
         idx = {
@@ -77,21 +77,21 @@ class Solution_heap:
         }
         heapq.heapify(h)
         root = None
-        while h:
+        w___ h:
             _, m = heapq.heappop(h)
             root = self.insert(root, m, idx)
 
-        return root
+        r_ root
 
-    def insert(self, node, m, idx):
-        if not node:
-            return TreeNode(m)
+    ___ insert(self, node, m, idx
+        __ not node:
+            r_ TreeNode(m)
 
-        if idx[m] < idx[node.val]:
+        __ idx[m] < idx[node.val]:
             node.left = self.insert(node.left, m, idx)
-        elif idx[m] > idx[node.val]:
+        ____ idx[m] > idx[node.val]:
             node.right = self.insert(node.right, m, idx)
-        else:
+        ____
             raise
 
-        return node
+        r_ node

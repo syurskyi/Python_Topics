@@ -19,13 +19,13 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def levelOrder(self, root):
+    ___ levelOrder(self, root
         """
         Queue
         BFS
@@ -34,23 +34,23 @@ class Solution:
         """
         result = []
         q = []
-        if root:
+        __ root:
             q.append(root)
 
-        while q:
-            length = len(q)
+        w___ q:
+            length = le.(q)
             # cur_level = []
-            for i in range(length):
+            for i in range(length
                 cur = q[i]
-                if cur.left:
+                __ cur.left:
                     q.append(cur.left)
-                if cur.right:
+                __ cur.right:
                     q.append(cur.right)
             result.append(map(lambda x: x.val, q[:length]))  # no need to create a new list
             q = q[length:]  # no need to create a new list
-        return result
+        r_ result
 
-if __name__=="__main__":
+__ __name____"__main__":
     nodes = [TreeNode(i) for i in range(3)]
     nodes[0].left = nodes[1]
     nodes[1].left = nodes[2]

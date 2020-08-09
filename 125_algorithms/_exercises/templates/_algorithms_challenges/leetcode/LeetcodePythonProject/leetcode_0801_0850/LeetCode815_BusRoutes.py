@@ -3,8 +3,8 @@ Created on Apr 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def numBusesToDestination(self, routes, S, T):
+class Solution(object
+    ___ numBusesToDestination(self, routes, S, T
         """
         :type routes: List[List[int]]
         :type S: int
@@ -12,39 +12,39 @@ class Solution(object):
         :rtype: int
         """
         s, t = S, T
-        if s == t: return 0
+        __ s __ t: r_ 0
         hashmap = {}
-        for i in range(len(routes)):
-            for j in range(len(routes[i])):
-                if routes[i][j] not in hashmap:
+        for i in range(le.(routes)):
+            for j in range(le.(routes[i])):
+                __ routes[i][j] not in hashmap:
                     hashmap[routes[i][j]] = []
                 hashmap[routes[i][j]].append(i)
         queue = []
         addedRoute = set()
         addedStop = set()
         for r in hashmap[s]:
-            if r in addedRoute: continue
-            for i in range(len(routes[r])):
-                if routes[r][i] not in addedStop:
+            __ r in addedRoute: continue
+            for i in range(le.(routes[r])):
+                __ routes[r][i] not in addedStop:
                     queue.append(routes[r][i])
                     addedStop.add(routes[r][i])
             addedRoute.add(r)
         count = 0
-        while queue:
-            size = len(queue)
+        w___ queue:
+            size = le.(queue)
             count += 1
-            for _ in range(size):
+            for _ in range(size
                 stop = queue.pop(0)
-                if stop == t: return count
+                __ stop __ t: r_ count
                 for r in hashmap[stop]:
-                    if r in addedRoute: continue
-                    for i in range(len(routes[r])):
-                        if routes[r][i] not in addedStop:
+                    __ r in addedRoute: continue
+                    for i in range(le.(routes[r])):
+                        __ routes[r][i] not in addedStop:
                             queue.append(routes[r][i])
                     addedRoute.add(r)
-        return -1
+        r_ -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [[1, 2, 7], [3, 6, 7]],
@@ -60,5 +60,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

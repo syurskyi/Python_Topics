@@ -11,11 +11,11 @@ REF: https://leetcode.com/problems/redundant-connection-ii/discuss/108070/Python
 """
 
 
-import collections
+______ collections
 
 
 class Solution:
-    def findRedundantDirectedConnection(self, edges):
+    ___ findRedundantDirectedConnection(self, edges
         """
         :type edges: List[List[int]]
         :rtype: List[int]
@@ -28,48 +28,48 @@ class Solution:
         for u, v in edges:
             adj[u].add(v)
 
-            if v in has_parent:
+            __ v in has_parent:
                 ans = (u, v)
 
-            if not self.union(uf, u, v):
+            __ not self.union(uf, u, v
                 edge = (u, v)
 
             has_parent.add(v)
 
-        if not ans:
-            return edge
+        __ not ans:
+            r_ edge
 
         res = self.dfs(ans[1], adj, set())
-        return res if res else ans
+        r_ res __ res else ans
 
-    def union(self, uf, u, v):
+    ___ union(self, uf, u, v
         a = self.find(uf, u)
         b = self.find(uf, v)
 
-        if a == b:
-            return False
+        __ a __ b:
+            r_ False
 
         uf[b] = a
-        return True
+        r_ True
 
-    def find(self, uf, u):
-        if uf[u] == 0:
+    ___ find(self, uf, u
+        __ uf[u] __ 0:
             uf[u] = u
-            return u
-        if uf[u] == u:
-            return u
+            r_ u
+        __ uf[u] __ u:
+            r_ u
 
         uf[u] = self.find(uf, uf[u])
-        return uf[u]
+        r_ uf[u]
 
-    def dfs(self, u, adj, visited):
+    ___ dfs(self, u, adj, visited
         # to detect cycle
         visited.add(u)
 
         for v in adj[u]:
-            if v in visited:
-                return (u, v)
+            __ v in visited:
+                r_ (u, v)
 
             res = self.dfs(v, adj, visited)
-            if res:
-                return res
+            __ res:
+                r_ res

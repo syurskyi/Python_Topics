@@ -4,33 +4,33 @@ Created on Oct 4, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def findDuplicateSubtrees(self, root):
+class Solution(object
+    ___ findDuplicateSubtrees(self, root
         """
         :type root: TreeNode
         :rtype: List[TreeNode]
         """
         res = []
         self.postorder(root, {}, res)
-        return res
+        r_ res
     
-    def postorder(self, cur, hashmap, res):
-        if not cur: return '#'
+    ___ postorder(self, cur, hashmap, res
+        __ not cur: r_ '#'
         serial = '%s,%s,%s' % (cur.val,\
                 self.postorder(cur.left, hashmap, res),\
                 self.postorder(cur.right, hashmap, res))
-        if hashmap.get(serial, 0) == 1:
+        __ hashmap.get(serial, 0) __ 1:
             res.append(cur)
         hashmap[serial] = hashmap.get(serial, 0)+1
-        return serial
+        r_ serial
     
-    def test(self):
+    ___ test(self
         testCases = [
             TreeNode(2, TreeNode(1), TreeNode(1)),
             TreeNode(1, TreeNode(2, TreeNode(4)), TreeNode(3, TreeNode(2, TreeNode(4)), TreeNode(4))),
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % [node.val for node in res])
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

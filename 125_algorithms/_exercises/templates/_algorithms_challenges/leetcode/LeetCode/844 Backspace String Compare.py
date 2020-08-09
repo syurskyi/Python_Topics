@@ -22,7 +22,7 @@ Example 4:
 
 Input: S = "a#c", T = "b"
 Output: false
-Explanation: S becomes "c" while T becomes "b".
+Explanation: S becomes "c" w___ T becomes "b".
 Note:
 
 1 <= S.length <= 200
@@ -35,7 +35,7 @@ Can you solve it in O(N) time and O(1) space?
 
 
 class Solution:
-    def backspaceCompare(self, S: str, T: str) -> bool:
+    ___ backspaceCompare(self, S: str, T: str) -> bool:
         """
         stk
         use a stk to build the string
@@ -44,15 +44,15 @@ class Solution:
         Iterate the string reversely. When encountering "#", count, and skip
         the chars based on skip count.
         """
-        return self.make_stk(S) == self.make_stk(T)
+        r_ self.make_stk(S) __ self.make_stk(T)
 
-    def make_stk(self, S):
+    ___ make_stk(self, S
         stk = []
         for s in S:
-            if s == "#":
-                if stk:
+            __ s __ "#":
+                __ stk:
                     stk.pop()
-            else:
+            ____
                 stk.append(s)
 
-        return stk
+        r_ stk

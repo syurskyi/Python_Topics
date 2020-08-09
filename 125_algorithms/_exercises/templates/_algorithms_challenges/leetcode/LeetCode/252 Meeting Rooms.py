@@ -1,28 +1,28 @@
 """
 Premium Question
 """
-import operator
+______ operator
 
 __author__ = 'Daniel'
 
 
 class Interval:
-    def __init__(self, s=0, e=0):
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
 
 
 class Solution:
-    def canAttendMeetings(self, intervals):
+    ___ canAttendMeetings(self, intervals
         """
 
         :type intervals: list[Interval]
         :rtype: bool
         """
         intervals.sort(key=operator.attrgetter("start"))
-        for i in xrange(len(intervals)-1):
-            if intervals[i].end > intervals[i+1].start:
-                return False
+        for i in xrange(le.(intervals)-1
+            __ intervals[i].end > intervals[i+1].start:
+                r_ False
 
-        return True
+        r_ True
 

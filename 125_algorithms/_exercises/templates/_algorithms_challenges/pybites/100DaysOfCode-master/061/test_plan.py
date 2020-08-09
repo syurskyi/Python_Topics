@@ -1,8 +1,8 @@
-from datetime import date, timedelta
+from datetime ______ date, timedelta
 
-import pytest
+______ pytest
 
-from plan import Book, Video
+from plan ______ Book, Video
 
 TODAY = date(2017, 5, 29)
 
@@ -19,26 +19,26 @@ book2_tasks = list(book2.tasks)
 video1_tasks = list(video1.tasks)
 
 
-def test_number_of_days():
-    assert len(book1_tasks) == 33
-    assert len(book2_tasks) == 21
-    assert len(video1_tasks) == 22
+___ test_number_of_days(
+    assert le.(book1_tasks) __ 33
+    assert le.(book2_tasks) __ 21
+    assert le.(video1_tasks) __ 22
 
 
-def test_task_descriptions():
-    assert book1_tasks[0] == \
+___ test_task_descriptions(
+    assert book1_tasks[0] __ \
            '2017-05-29 goal: reach 10 pages (3.0% done)'
-    assert book1_tasks[-1] == \
+    assert book1_tasks[-1] __ \
            '2017-06-30 goal: reach 328 pages (100.0% done)'
-    assert book2_tasks[0] == \
+    assert book2_tasks[0] __ \
            '2017-06-05 goal: reach 20 pages (4.8% done)'
-    assert book2_tasks[-1] == \
+    assert book2_tasks[-1] __ \
            '2017-06-25 goal: reach 416 pages (100.0% done)'
-    assert video1_tasks[0] == \
+    assert video1_tasks[0] __ \
            '2017-06-02 goal: reach 30 minutes (4.5% done)'
-    assert video1_tasks[-1] == \
+    assert video1_tasks[-1] __ \
            '2017-06-23 goal: reach 660 minutes (100.0% done)'
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     pytest.main()

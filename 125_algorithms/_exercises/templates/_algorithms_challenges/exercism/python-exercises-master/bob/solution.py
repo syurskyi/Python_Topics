@@ -1,23 +1,23 @@
-def hey(stimulus):
+___ hey(stimulus
     stimulus = stimulus.strip()
 
-    if _is_silence(stimulus):
-        return 'Fine. Be that way!'
-    elif _is_shouting(stimulus):
-        return 'Whoa, chill out!'
-    elif _is_question(stimulus):
-        return 'Sure.'
-    else:
-        return 'Whatever.'
+    __ _is_silence(stimulus
+        r_ 'Fine. Be that way!'
+    ____ _is_shouting(stimulus
+        r_ 'Whoa, chill out!'
+    ____ _is_question(stimulus
+        r_ 'Sure.'
+    ____
+        r_ 'Whatever.'
 
 
-def _is_silence(stimulus):
-    return stimulus == ''
+___ _is_silence(stimulus
+    r_ stimulus __ ''
 
 
-def _is_shouting(stimulus):
-    return stimulus.isupper()
+___ _is_shouting(stimulus
+    r_ stimulus.isupper()
 
 
-def _is_question(stimulus):
-    return stimulus.endswith('?')
+___ _is_question(stimulus
+    r_ stimulus.endswith('?')

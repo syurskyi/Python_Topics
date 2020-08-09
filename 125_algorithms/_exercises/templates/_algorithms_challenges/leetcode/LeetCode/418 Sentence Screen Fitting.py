@@ -53,11 +53,11 @@ had--
 
 The character '-' signifies an empty space on the screen.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def wordsTyping(self, sentence: List[str], rows: int, cols: int) -> int:
+    ___ wordsTyping(self, sentence: List[str], rows: int, cols: int) -> int:
         """
         How many times to fit
 
@@ -65,13 +65,13 @@ class Solution:
         """
         sentence = " ".join(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
         i = 0
-        for r in range(rows):
+        for r in range(rows
             i += cols
-            while sentence[i % len(sentence)] != " ":
+            w___ sentence[i % le.(sentence)] != " ":
                 i -= 1
 
             # now sentence[i] is " "
             i += 1
 
-        ret = i // len(sentence)
-        return ret 
+        ret = i // le.(sentence)
+        r_ ret

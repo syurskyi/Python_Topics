@@ -1,8 +1,8 @@
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def evalRPN(self, tokens):
+class Solution(object
+    ___ evalRPN(self, tokens
         """
         stack
         basic in bytecode operation
@@ -12,20 +12,20 @@ class Solution(object):
         """
         ops = ["+", "-", "*", "/"]
 
-        def arith(a, b, op):
-            if (op == "+"):
-                return a+b
-            if (op == "-"):
-                return a-b
-            if (op == "/"):
+        ___ arith(a, b, op
+            __ (op __ "+"
+                r_ a+b
+            __ (op __ "-"
+                r_ a-b
+            __ (op __ "/"
                 # return a/b # python treat differently for division 6/-132 is -1
-                return int(float(a)/b)  # round towards 0
-            if (op == "*"):
-                return a*b
+                r_ int(float(a)/b)  # round towards 0
+            __ (op __ "*"
+                r_ a*b
 
         # function is first-order class
         # not supported by leetcode
-        # import operator
+        # ______ operator
         # ops = {
         # "+": operator.add,
         #     "-": operator.sub,
@@ -33,21 +33,21 @@ class Solution(object):
         #     "/": operator.div,
         # }
         #
-        # def arith(a, b, op):
+        # ___ arith(a, b, op
         #     return ops[op](a, b)
 
         # stack
         stack = []
         for token in tokens:
-            if token not in ops:
+            __ token not in ops:
                 stack.append(int(token))
-            else:
+            ____
                 arg2 = stack.pop()
                 arg1 = stack.pop()
                 result = arith(arg1, arg2, token)
                 stack.append(result)
-        return stack.pop()
+        r_ stack.pop()
 
 
-if __name__ == "__main__":
-    assert Solution().evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]) == 22
+__ __name__ __ "__main__":
+    assert Solution().evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]) __ 22

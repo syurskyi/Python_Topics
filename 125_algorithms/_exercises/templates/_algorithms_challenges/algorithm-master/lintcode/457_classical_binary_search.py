@@ -4,22 +4,22 @@ class Solution:
     @param: target: An integer
     @return: An integer
     """
-    def findPosition(self, A, target):
-        if not A:
-            return -1
+    ___ findPosition(self, A, target
+        __ not A:
+            r_ -1
 
-        left, right = 0, len(A) - 1
-        while left + 1 < right:
+        left, right = 0, le.(A) - 1
+        w___ left + 1 < right:
             mid = (left + right) // 2
-            if A[mid] == target:
-                return mid
-            if A[mid] < target:
+            __ A[mid] __ target:
+                r_ mid
+            __ A[mid] < target:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        if A[left] == target:
-            return left
-        if A[right] == target:
-            return right
-        return -1
+        __ A[left] __ target:
+            r_ left
+        __ A[right] __ target:
+            r_ right
+        r_ -1

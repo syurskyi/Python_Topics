@@ -1,14 +1,14 @@
 """
-- count chars: minimum length: `while cnt == k` to reduce window size if possible
-- count chars: maximum length: `while cnt > k` to record the maximum window size
+- count chars: minimum length: `w___ cnt == k` to reduce window size if possible
+- count chars: maximum length: `w___ cnt > k` to record the maximum window size
 """
 
 
-import collections
+______ collections
 
 
 class Solution:
-    def lengthOfLongestSubstringKDistinct(self, s, k):
+    ___ lengthOfLongestSubstringKDistinct(self, s, k
         """
         :type s: str
         :type k: int
@@ -16,24 +16,24 @@ class Solution:
         """
         ans = 0
 
-        if not s or not k or k < 0:
-            return ans
+        __ not s or not k or k < 0:
+            r_ ans
 
         freqs = collections.defaultdict(int)
         i = cnt = 0
 
-        for j in range(len(s)):
+        for j in range(le.(s)):
             freqs[s[j]] += 1
-            if freqs[s[j]] == 1:
+            __ freqs[s[j]] __ 1:
                 cnt += 1
 
-            while cnt > k:
+            w___ cnt > k:
                 freqs[s[i]] -= 1
-                if freqs[s[i]] == 0:
+                __ freqs[s[i]] __ 0:
                     cnt -= 1
 
                 i += 1
 
             ans = max(ans, j - i + 1)
 
-        return ans
+        r_ ans

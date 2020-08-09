@@ -1,17 +1,17 @@
-from itertools import count
+from itertools ______ count
 
-def classify(number):
+___ classify(number
     factor_sum = sum(factor_gen(number))
     # Switch
-    if factor_sum == number:
-        return "perfect"
-    elif factor_sum < number:
-        return "deficient"
-    elif factor_sum > number:
-        return "abundant"
+    __ factor_sum __ number:
+        r_ "perfect"
+    ____ factor_sum < number:
+        r_ "deficient"
+    ____ factor_sum > number:
+        r_ "abundant"
     # Oops
 
-def factor_gen(number):
+___ factor_gen(number
     """
     Factors that evenly divide some number and are not equal to the number 
     
@@ -21,17 +21,17 @@ def factor_gen(number):
         factors(2) = [1]
         factors(42) = [1, 2, 3, 6, 7, 14, 21]
     """
-    if number <= 0:
+    __ number <= 0:
         raise ValueError("Not a valid number {}".format(number))
     # O(sqrt(n)) sorted solution
     # For the unsorted solution, remove the queue and yield when found
     queue = []
-    for f in count(1):
-        if number != 1 and (f == 1 or f * f == number):
+    for f in count(1
+        __ number != 1 and (f __ 1 or f * f __ number
             yield f
-        elif number <= f * f:
+        ____ number <= f * f:
             yield from iter(queue)
             raise StopIteration
-        elif number % f == 0:
+        ____ number % f __ 0:
             yield f
             queue.insert(0, number // f)

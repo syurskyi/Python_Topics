@@ -30,19 +30,19 @@ STOP_CODONS = set({"UAA", "UAG", "UGA"})
 CODON_LENGTH = 3
 
 
-def proteins(strand):
+___ proteins(strand
     polypeptide = []
     codons = split_into_codons(strand)
 
     for codon in codons:
-        if (codon in STOP_CODONS):
-            return polypeptide
-        else:
+        __ (codon in STOP_CODONS
+            r_ polypeptide
+        ____
             polypeptide.append(CODON_TO_PROTEIN[codon])
 
-    return polypeptide
+    r_ polypeptide
 
 
-def split_into_codons(strand):
-    return [strand[i:i + CODON_LENGTH] for i in range(0, len(strand),
+___ split_into_codons(strand
+    r_ [strand[i:i + CODON_LENGTH] for i in range(0, le.(strand),
                                                       CODON_LENGTH)]

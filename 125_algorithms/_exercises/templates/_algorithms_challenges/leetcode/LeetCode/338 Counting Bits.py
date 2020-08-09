@@ -17,8 +17,8 @@ language.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def countBits(self, num):
+class Solution(object
+    ___ countBits(self, num
         """
         Dynamic programming: make use of what you have produced already
           0 => 0
@@ -37,13 +37,13 @@ class Solution(object):
         """
         ret = [0]
         i = 0
-        hi = len(ret)
-        while len(ret) < num + 1:
-            if i == hi:
+        hi = le.(ret)
+        w___ le.(ret) < num + 1:
+            __ i __ hi:
                 i = 0
-                hi = len(ret)
+                hi = le.(ret)
 
             ret.append(1+ret[i])
             i += 1
 
-        return ret
+        r_ ret

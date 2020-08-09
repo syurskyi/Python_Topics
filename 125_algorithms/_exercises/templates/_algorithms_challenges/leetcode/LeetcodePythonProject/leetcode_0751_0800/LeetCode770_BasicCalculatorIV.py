@@ -3,8 +3,8 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def basicCalculatorIV(self, expression, evalvars, evalints):
+class Solution(object
+    ___ basicCalculatorIV(self, expression, evalvars, evalints
         """
         :type expression: str
         :type evalvars: List[str]
@@ -13,7 +13,7 @@ class Solution(object):
         """
         pass
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "e + 8 - a + 5",
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

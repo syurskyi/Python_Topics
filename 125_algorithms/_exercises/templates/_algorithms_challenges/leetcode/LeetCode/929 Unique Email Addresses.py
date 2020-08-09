@@ -39,11 +39,11 @@ Each emails[i] contains exactly one '@' character.
 All local and domain names are non-empty.
 Local names do not start with a '+' character.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def numUniqueEmails(self, emails: List[str]) -> int:
+    ___ numUniqueEmails(self, emails: List[str]) -> int:
         """
         stemming
         """
@@ -53,7 +53,7 @@ class Solution:
             local = self.stem(local)
             s.add((local, domain))
 
-        return len(s)
+        r_ le.(s)
 
-    def stem(self, local):
-        return local.split("+")[0].replace(".", "")
+    ___ stem(self, local
+        r_ local.split("+")[0].replace(".", "")

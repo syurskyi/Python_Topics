@@ -3,64 +3,64 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findMaxAverage(self, nums, k):
+class Solution(object
+    ___ findMaxAverage(self, nums, k
         """
         :type nums: List[int]
         :type k: int
         :rtype: float
         """
-        import collections
-        n = len(nums)
+        ______ collections
+        n = le.(nums)
         dp = [0]
         for num in nums:
             dp.append(dp[-1] + num)
-        def d(x, y):
-            return (dp[y+1]-dp[x])/float(y+1-x)
+        ___ d(x, y
+            r_ (dp[y+1]-dp[x])/float(y+1-x)
         hull = collections.deque()
         ans = float('-inf')
-        for j in range(k-1, n):
-            while len(hull) >= 2 and d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k):
+        for j in range(k-1, n
+            w___ le.(hull) >= 2 and d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k
                 hull.pop()
             hull.append(j-k+1)
-            while len(hull) >= 2 and d(hull[0], hull[1]-1) <= d(hull[0], j):
+            w___ le.(hull) >= 2 and d(hull[0], hull[1]-1) <= d(hull[0], j
                 hull.popleft()
             ans = max(ans, d(hull[0], j))
-        return ans
+        r_ ans
     
-    def findMaxAverage_binarySearch(self, nums, k):
+    ___ findMaxAverage_binarySearch(self, nums, k
         """
         :type nums: List[int]
         :type k: int
         :rtype: float
         """
         l, r = -float(2**31), float(2**31)
-        while r-l > 10**-5:
+        w___ r-l > 10**-5:
             mid = (l+r)/2.0
-            if self.check(nums, k, mid):
+            __ self.check(nums, k, mid
                 l = mid
-            else:
+            ____
                 r = mid
-        return r
+        r_ r
     
-    def check(self, nums, k, val):
+    ___ check(self, nums, k, val
         now, last = 0, 0
         dp = [num-val for num in nums]
-        for i in range(k):
+        for i in range(k
             now += dp[i]
-        if now > 0:
-            return True
-        for i in range(k, len(nums)):
+        __ now > 0:
+            r_ True
+        for i in range(k, le.(nums)):
             now += dp[i]
             last += dp[i-k]
-            if last < 0:
+            __ last < 0:
                 now -= last
                 last = 0
-            if now > 0:
-                return True
-        return False
+            __ now > 0:
+                r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 12, -5, -6, 50, 3],
@@ -80,5 +80,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,20 +1,20 @@
-def cleanWord(data):
+___ cleanWord(data
     word = []
     for char in data:
-        if str.isalpha(char) == True:
+        __ str.isalpha(char) __ True:
             word.append(char)
-        else:
+        ____
             word.append('')
-    return word
+    r_ word
 
-def isPalindrome(wordCount):
+___ isPalindrome(wordCount
     answer = []
-    for x in range(wordCount):
+    for x in range(wordCount
         word = cleanWord(raw_input().lower())
         word = ''.join(word)
-        if word == word[::-1]:
+        __ word __ word[::-1]:
             answer.append('Y')
-        else:
+        ____
             answer.append('N')
     print(' '.join(answer))
 

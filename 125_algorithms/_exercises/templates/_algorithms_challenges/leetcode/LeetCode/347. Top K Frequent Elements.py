@@ -8,23 +8,23 @@ Note:
 You may assume k is always valid, 1 <= k <= number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 """
-from collections import defaultdict
-import heapq
+from collections ______ defaultdict
+______ heapq
 
 __author__ = 'Daniel'
 
 
-class Counter(object):
-    def __init__(self, val, cnt):
+class Counter(object
+    ___ __init__(self, val, cnt
         self.val = val
         self.cnt = cnt
 
-    def __cmp__(self, other):
-        return self.cnt - other.cnt
+    ___ __cmp__(self, other
+        r_ self.cnt - other.cnt
 
 
-class Solution(object):
-    def topKFrequent(self, nums, K):
+class Solution(object
+    ___ topKFrequent(self, nums, K
         """
         Count and Maintain a heap with size k -> O(n lg k)
         Since python heapq does not support cmp, need to wrap data in a struct
@@ -38,15 +38,15 @@ class Solution(object):
             cnt[e] += 1
 
         lst = []
-        for k, v in cnt.items():
+        for k, v in cnt.items(
             lst.append(Counter(k, v))
 
         ret = []
         for elt in lst:
-            if len(ret) < K:
+            __ le.(ret) < K:
                 heapq.heappush(ret, elt)
-            else:
+            ____
                 heapq.heappushpop(ret, elt)
 
-        return map(lambda x: x.val, ret)
+        r_ map(lambda x: x.val, ret)
 

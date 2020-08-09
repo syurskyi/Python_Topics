@@ -1,14 +1,14 @@
 
 
 class Node:
-    def __init__(self, value):
+    ___ __init__(self, value
         self.left = None
         self.right = None
         self.data = value
 
 
-def preorder(node):
-    if(node is not None):
+___ preorder(node
+    __(node is not None
         print(node.data)
         preorder(node.left)
         preorder(node.right)

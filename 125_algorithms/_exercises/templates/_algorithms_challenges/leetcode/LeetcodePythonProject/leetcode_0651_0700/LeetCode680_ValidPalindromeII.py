@@ -3,37 +3,37 @@ Created on Oct 19, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def validPalindrome(self, s):
+class Solution(object
+    ___ validPalindrome(self, s
         """
         :type s: str
         :rtype: bool
         """
-        if not s:
-            return True
-        i, j = 0, len(s)-1
-        while i < j and s[i] == s[j]:
+        __ not s:
+            r_ True
+        i, j = 0, le.(s)-1
+        w___ i < j and s[i] __ s[j]:
             i += 1
             j -= 1
-        if i >= j:
-            return True
+        __ i >= j:
+            r_ True
         i0, j0 = i, j
         i += 1
-        while i < j and s[i] == s[j]:
+        w___ i < j and s[i] __ s[j]:
             i += 1
             j -= 1
-        if i >= j:
-            return True
+        __ i >= j:
+            r_ True
         i, j = i0, j0
         j -= 1
-        while i < j and s[i] == s[j]:
+        w___ i < j and s[i] __ s[j]:
             i += 1
             j -= 1
-        if i >= j:
-            return True
-        return False
+        __ i >= j:
+            r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             'aba',
             'abca',
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

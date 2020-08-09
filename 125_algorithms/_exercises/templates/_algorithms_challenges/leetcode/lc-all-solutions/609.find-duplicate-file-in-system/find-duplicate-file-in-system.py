@@ -1,5 +1,5 @@
-class Solution(object):
-  def findDuplicate(self, paths):
+class Solution(object
+  ___ findDuplicate(self, paths
     """
     :type paths: List[str]
     :rtype: List[List[str]]
@@ -11,4 +11,4 @@ class Solution(object):
       for data in raw[1:]:
         name, sign = data.split("(")
         d[sign].append(dirPath + "/" + name)
-    return filter(lambda x: len(x) > 1, d.values())
+    r_ filter(lambda x: le.(x) > 1, d.values())

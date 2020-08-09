@@ -1,8 +1,8 @@
-from math import sqrt
+from ma__ ______ sqrt
 
-def triangleArea(amount):
+___ triangleArea(amount
     answer = []
-    for triangle in range(amount):
+    for triangle in range(amount
         x1,y1,x2,y2,x3,y3 = [int(x) for x in raw_input().split()]
         #A = x1,y1      B = x2,y2       C = x3,y3
         a = sqrt((x2 - x1)**2 + (y2-y1)**2) # Distance between A and B

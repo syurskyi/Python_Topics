@@ -4,28 +4,28 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def hIndex(self, citations):
+class Solution(object
+    ___ hIndex(self, citations
         """
         :type citations: List[int]
         :rtype: int
         """
-        length = len(citations)
+        length = le.(citations)
         count = [0]*(length+1)
         for c in citations:
-            if c > length:
+            __ c > length:
                 count[length]+=1
-            else:
+            ____
                 count[c]+=1
         total = 0
         print('count: %s' % (count))
-        for i in range(length, -1, -1):
+        for i in range(length, -1, -1
             total += count[i]
-            if total >= i:
-                return i
-        return 0
+            __ total >= i:
+                r_ i
+        r_ 0
     
-    def test(self):
+    ___ test(self
         testCases = [
             [3, 0, 6, 1, 5],
         ]
@@ -35,5 +35,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

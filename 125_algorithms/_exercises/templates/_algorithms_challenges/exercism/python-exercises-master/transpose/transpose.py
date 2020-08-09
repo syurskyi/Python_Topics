@@ -1,2 +1,2 @@
-def transpose():
+___ transpose(
     pass

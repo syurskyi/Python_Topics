@@ -1,2 +1,2 @@
-def proverb():
+___ proverb(
     pass

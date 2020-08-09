@@ -9,7 +9,7 @@ This question is the follow-up of `leetcode/288_unique_word_abbreviation`
 ...     ('dog', ['3', 'd2', '2g', 'dog']),
 ...     ('abcd', ['4', 'a3', '3d', 'ab2', 'a2d', '2cd', 'abcd']),
 ...     ('price', ['5', 'p4', '4e', 'pr3', 'p3e', '3ce', 'pri2', 'pr2e', 'p2ce', '2ice', 'price']),
-... ):
+...
 ...     res = [w for w in WordIterator(_in)]
 ...     if res != _out: print(_in, res)
 ...     gotcha.append(res == _out)
@@ -35,7 +35,7 @@ True
 ...         ['abcdef', 'abdeef', 'abefef'],
 ...         ['abc3', 'abd3', 'abe3'],
 ...     ),
-... ):
+...
 ...     res = find_unique_abbreviations(_in)
 ...     if res != _out: print(_in, res)
 ...     gotcha.append(res == _out)
@@ -44,24 +44,24 @@ True
 """
 
 
-def find_unique_abbreviations(words):
+___ find_unique_abbreviations(words
     iterators = {}  # {abbr: iterator}
 
-    for word in set(words):
+    for word in set(words
         iterator = (WordIterator(word).__iter__(), word)
         abbr = next(iterator[0], None)
 
-        if not abbr:
+        __ not abbr:
             continue
 
-        if abbr in iterators:
+        __ abbr in iterators:
             iterators[abbr].append(iterator)
-        else:
+        ____
             iterators[abbr] = [iterator]
 
-    collisions = [key for key, iters in iterators.items() if len(iters) > 1]
+    collisions = [key for key, iters in iterators.items() __ le.(iters) > 1]
 
-    while collisions:
+    w___ collisions:
         for key in collisions:
             iters = iterators[key]
             del iterators[key]
@@ -69,41 +69,41 @@ def find_unique_abbreviations(words):
             for iterator in iters:
                 abbr = next(iterator[0], None)
 
-                if not abbr:
+                __ not abbr:
                     continue
 
-                if abbr in iterators:
+                __ abbr in iterators:
                     iterators[abbr].append(iterator)
-                else:
+                ____
                     iterators[abbr] = [iterator]
 
-        collisions = [key for key, iters in iterators.items() if len(iters) > 1]
+        collisions = [key for key, iters in iterators.items() __ le.(iters) > 1]
 
-    reversed_index = {iters[0][1]: key for key, iters in iterators.items() if len(iters) == 1}
+    reversed_index = {iters[0][1]: key for key, iters in iterators.items() __ le.(iters) __ 1}
 
-    return [reversed_index[word] for word in words]
+    r_ [reversed_index[word] for word in words]
 
 
 class WordIterator:
-    def __init__(self, word):
+    ___ __init__(self, word
         self.word = word
         self.TMPL = '{}{}{}'
 
-    def __iter__(self):
-        if not self.word:
-            return
+    ___ __iter__(self
+        __ not self.word:
+            r_
 
-        n = len(self.word)
+        n = le.(self.word)
 
-        if n > 1:
+        __ n > 1:
             yield str(n)
 
-        for i in range(1, n - 1):
-            for j in range(i + 1):
+        for i in range(1, n - 1
+            for j in range(i + 1
                 yield self.TMPL.format(
                     self.word[:i - j],
                     n - i,
-                    self.word[-j:] if j > 0 else ''
+                    self.word[-j:] __ j > 0 else ''
                 )
 
         yield self.word

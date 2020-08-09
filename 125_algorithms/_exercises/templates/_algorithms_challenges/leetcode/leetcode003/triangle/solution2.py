@@ -16,34 +16,34 @@ Bonus point if you are able to do this using only O(n) extra space, where n is
 the total number of rows in the triangle.
 """
 
-class Solution(object):
-    def minimumTotal(self, triangle):
+class Solution(object
+    ___ minimumTotal(self, triangle
         """
         :type triangle: List[List[int]]
         :rtype: int
         """
-        n = len(triangle)
+        n = le.(triangle)
         m = 0
         res = None
-        for i, row in enumerate(triangle):
-            m = len(row)
-            if i > 0:
-                for j, col in enumerate(row):
-                    if 0 < j < m - 1:
+        for i, row in enumerate(triangle
+            m = le.(row)
+            __ i > 0:
+                for j, col in enumerate(row
+                    __ 0 < j < m - 1:
                         triangle[i][j] += min(triangle[i - 1][j - 1],
                                               triangle[i - 1][j])
-                    elif j == 0:
+                    ____ j __ 0:
                         triangle[i][j] += triangle[i - 1][j]
                     # j == m - 1
-                    else:
+                    ____
                         triangle[i][j] += triangle[i - 1][j - 1]
-            if i == n - 1:
+            __ i __ n - 1:
                 for col in row:
-                    if res is None:
+                    __ res is None:
                         res = col
-                    else:
+                    ____
                         res = min(col, res)
-        return res
+        r_ res
 
 
 a1 = [

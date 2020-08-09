@@ -3,59 +3,59 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def canTransform(self, start, end):
+class Solution(object
+    ___ canTransform(self, start, end
         """
         :type start: str
         :type end: str
         :rtype: bool
         """
-        import re
-        if re.sub('X', '', start) != re.sub('X', '', end):
-            return False
+        ______ re
+        __ re.sub('X', '', start) != re.sub('X', '', end
+            r_ False
         p1, p2 = 0, 0
-        while p1 < len(start) and p2 < len(end):
-            while p1 < len(start) and start[p1] == 'X':
+        w___ p1 < le.(start) and p2 < le.(end
+            w___ p1 < le.(start) and start[p1] __ 'X':
                 p1 += 1
-            while p2 < len(end) and end[p2] == 'X':
+            w___ p2 < le.(end) and end[p2] __ 'X':
                 p2 += 1
-            if p1 == len(start) and p2 == len(end):
-                return True
-            if p1 == len(start) or p2 == len(end):
-                return False
-            if start[p1] != end[p2]:
-                return False
+            __ p1 __ le.(start) and p2 __ le.(end
+                r_ True
+            __ p1 __ le.(start) or p2 __ le.(end
+                r_ False
+            __ start[p1] != end[p2]:
+                r_ False
             # if the character is 'L', it can only be moved to the left. p1 should be greater or equal to p2.
-            if start[p1] == 'L' and p2 > p1:
-                return False
+            __ start[p1] __ 'L' and p2 > p1:
+                r_ False
             # if the character is 'R', it can only be moved to the right. p2 should be greater or equal to p1.
-            if start[p1] == 'R' and p1 > p2:
-                return False
+            __ start[p1] __ 'R' and p1 > p2:
+                r_ False
             p1 += 1
             p2 += 1
-        return True
+        r_ True
     
-    def canTransform_another(self, start, end):
+    ___ canTransform_another(self, start, end
         """
         :type start: str
         :type end: str
         :rtype: bool
         """
         l, r = 0, 0
-        for i in range(len(start)):
-            if start[i] == 'R': r += 1
-            if end[i] == 'L': l += 1
-            if start[i] == 'L': l -= 1
-            if end[i] == 'R': r -= 1
-            if (l < 0 or r != 0) and (l != 0 or r < 0):
-                return False
-        if l == 0 and r == 0:
-            return True
-        return False
+        for i in range(le.(start)):
+            __ start[i] __ 'R': r += 1
+            __ end[i] __ 'L': l += 1
+            __ start[i] __ 'L': l -= 1
+            __ end[i] __ 'R': r -= 1
+            __ (l < 0 or r != 0) and (l != 0 or r < 0
+                r_ False
+        __ l __ 0 and r __ 0:
+            r_ True
+        r_ False
     
     # The following BFS solution is TLE
     
-    def canTransform_bfs_TLE(self, start, end):
+    ___ canTransform_bfs_TLE(self, start, end
         """
         :type start: str
         :type end: str
@@ -63,19 +63,19 @@ class Solution(object):
         """
         visited = set([start])
         queue = [start]
-        while queue:
+        w___ queue:
             s = queue.pop()
-            if s == end:
-                return True
-            for i in range(len(s)-1):
-                if s[i:i+2] in ('XL', 'RX'):
+            __ s __ end:
+                r_ True
+            for i in range(le.(s)-1
+                __ s[i:i+2] in ('XL', 'RX'
                     newS = s[:i]+s[i:i+2][::-1]+s[i+2:]
-                    if newS not in visited:
+                    __ newS not in visited:
                         visited.add(newS)
                         queue.append(newS)
-        return False
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "RXXLRXRXL",
@@ -93,5 +93,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

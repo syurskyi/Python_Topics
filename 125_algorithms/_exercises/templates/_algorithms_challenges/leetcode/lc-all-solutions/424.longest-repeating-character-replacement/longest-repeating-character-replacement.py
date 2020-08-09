@@ -1,8 +1,8 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def characterReplacement(self, s, k):
+class Solution(object
+  ___ characterReplacement(self, s, k
     """
     :type s: str
     :type k: int
@@ -13,11 +13,11 @@ class Solution(object):
     start = 0
     maxCount = 0
     window = deque([])
-    for end in range(0, len(s)):
+    for end in range(0, le.(s)):
       d[s[end]] = d.get(s[end], 0) + 1
       maxCount = max(maxCount, d[s[end]])
-      if end - start + 1 - maxCount > k:
+      __ end - start + 1 - maxCount > k:
         d[s[start]] -= 1
         start += 1
       ans = max(ans, end - start + 1)
-    return ans
+    r_ ans

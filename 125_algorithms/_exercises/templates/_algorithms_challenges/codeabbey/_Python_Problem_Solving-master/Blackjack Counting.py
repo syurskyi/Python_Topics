@@ -14,25 +14,25 @@ for i in range(int(input())):
             tot +=  temp
         except:
             #check if it is other than 'A' then add 10 to total TKJQ
-            if j != 'A':
+            __ j != 'A':
                 tot += 10
-            else:
+            ____
                 #if A then check whether adding A = 11 it goes above 21
-                if tot + 11 > 21:
+                __ tot + 11 > 21:
                     #check if it goes above 21 after adding A = 1
-                    if tot + 1 > 21:
+                    __ tot + 1 > 21:
                         #if yes then add 1
                         tot += 1
-                    else:
+                    ____
                         #else add 1
                         tot += 1   
-                else:
+                ____
                     #else add 11
                     tot += 11
     #check the tot
-    if tot <= 21:
+    __ tot <= 21:
         print(int(tot),end= ' ')
-    else:
+    ____
         print("Bust",end = ' ')
 
             

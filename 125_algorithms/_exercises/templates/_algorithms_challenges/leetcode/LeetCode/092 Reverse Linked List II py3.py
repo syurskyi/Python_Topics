@@ -13,18 +13,18 @@ Output: 1->4->3->2->5->NULL
 
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
 class Solution:
-    def reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
+    ___ reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
         prev = None
         cur = head
 
         l = 1
-        while l < m:
+        w___ l < m:
             nxt = cur.next
             prev = cur
             cur = nxt
@@ -37,17 +37,17 @@ class Solution:
         leftend = prev
         rightend = cur
 
-        while l <= n:  # notice is it <=
+        w___ l <= n:  # notice is it <=
             nxt = cur.next
             cur.next = prev
             prev = cur
             cur = nxt
             l += 1
 
-        if m != 1:  # leftend is None
+        __ m != 1:  # leftend is None
             leftend.next = prev
-        else:
+        ____
             head = prev
 
         rightend.next = cur
-        return head
+        r_ head

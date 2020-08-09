@@ -1,5 +1,5 @@
-class Solution(object):
-  def lexicalOrder(self, n):
+class Solution(object
+  ___ lexicalOrder(self, n
     """
     :type n: int
     :rtype: List[int]
@@ -7,19 +7,19 @@ class Solution(object):
     ans = [0] * n
     self.cnt = 0
     self.dfs(ans, n, 0)
-    return ans
+    r_ ans
 
-  def dfs(self, ans, n, pre):
-    if self.cnt == n or pre > n:
-      return
-    if pre * 10 > n:
-      return
-    for i in range(0, 10):
+  ___ dfs(self, ans, n, pre
+    __ self.cnt __ n or pre > n:
+      r_
+    __ pre * 10 > n:
+      r_
+    for i in range(0, 10
       cur = pre * 10 + i
-      if cur == 0:
+      __ cur __ 0:
         continue
-      if self.cnt == n or cur > n:
-        return
+      __ self.cnt __ n or cur > n:
+        r_
       ans[self.cnt] = cur
       self.cnt += 1
       self.dfs(ans, n, cur)

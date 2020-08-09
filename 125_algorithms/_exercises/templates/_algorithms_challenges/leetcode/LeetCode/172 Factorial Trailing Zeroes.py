@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def trailingZeroes(self, n):
+    ___ trailingZeroes(self, n
         """
         10 = 5*2
         Number of 2's > number of 5's, thus count the number of 5 in the factors of n
@@ -18,8 +18,8 @@ class Solution:
         :rtype: int
         """
         cnt = 0
-        while n:
+        w___ n:
             n /= 5
             cnt += n
 
-        return cnt
+        r_ cnt

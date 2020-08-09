@@ -1,67 +1,67 @@
-class Node(object):
-    def __init__(self, value):
+class Node(object
+    ___ __init__(self, value
         self._value = value
         self._next = None
 
-    def value(self):
-        return self._value
+    ___ value(self
+        r_ self._value
 
-    def next(self):
-        return self._next
+    ___ next(self
+        r_ self._next
 
 
-class LinkedIterator(object):
-    def __init__(self, linked_list):
+class LinkedIterator(object
+    ___ __init__(self, linked_list
         self.current = linked_list._head
 
-    def __iter__(self):
-        return self
+    ___ __iter__(self
+        r_ self
 
-    def __next__(self):
-        if self.current is None:
+    ___ __next__(self
+        __ self.current is None:
             raise StopIteration
         value = self.current.value()
         self.current = self.current.next()
-        return value
+        r_ value
 
-    def next(self):
-        return self.__next__()
+    ___ next(self
+        r_ self.__next__()
 
 
-class LinkedList(object):
-    def __init__(self, values=[]):
+class LinkedList(object
+    ___ __init__(self, values=[]
         self._head = None
         self._len = 0
         [self.push(v) for v in values]
 
-    def __iter__(self):
-        return LinkedIterator(self)
+    ___ __iter__(self
+        r_ LinkedIterator(self)
 
-    def __len__(self):
-        return self._len
+    ___ __len__(self
+        r_ self._len
 
-    def head(self):
-        if self._head is None:
+    ___ head(self
+        __ self._head is None:
             raise EmptyListException("The list is empty")
-        return self._head
+        r_ self._head
 
-    def push(self, value):
+    ___ push(self, value
         newNode = Node(value)
         newNode._next = self._head
         self._head = newNode
         self._len += 1
 
-    def pop(self):
-        if self._head is None:
+    ___ pop(self
+        __ self._head is None:
             raise EmptyListException("The list is empty")
         self._len -= 1
         ret = self._head.value()
         self._head = self._head.next()
-        return ret
+        r_ ret
 
-    def reversed(self):
-        return LinkedList(self)
+    ___ reversed(self
+        r_ LinkedList(self)
 
 
-class EmptyListException(Exception):
+class EmptyListException(Exception
     pass

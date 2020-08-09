@@ -7,8 +7,8 @@ b = "1"
 Return "100".
 """
 
-class Solution(object):
-    def addBinary(self, a, b):
+class Solution(object
+    ___ addBinary(self, a, b
         """
         :type a: str
         :type b: str
@@ -16,29 +16,29 @@ class Solution(object):
         """
         a = a[::-1]
         b = b[::-1]
-        m = len(a)
-        n = len(b)
+        m = le.(a)
+        n = le.(b)
         i = 0
         c = 0
         res = ['0' for _ in range(max(m, n) + 1)]
-        while i < m or i < n or c > 0:
+        w___ i < m or i < n or c > 0:
             tmp = c
-            if i < m:
+            __ i < m:
                 tmp += int(a[i])
-            if i < n:
+            __ i < n:
                 tmp += int(b[i])
             bit = tmp % 2
             c = tmp / 2
             res[i] = str(bit)
             i += 1
         res = res[::-1]
-        for i, c in enumerate(res):
-            if c != '0':
+        for i, c in enumerate(res
+            __ c != '0':
                 res = res[i:]
                 break
-        else:
+        ____
             res = ['0']
-        return ''.join(res)
+        r_ ''.join(res)
 
 
 s = Solution()

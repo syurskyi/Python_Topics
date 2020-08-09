@@ -4,9 +4,9 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-from itertools import product, groupby
-from collections import Counter, namedtuple
-import operator
+from itertools ______ product, groupby
+from collections ______ Counter, namedtuple
+______ operator
 
 CHEESES = [
     "Red Leicester",
@@ -99,34 +99,34 @@ WINE_LIST = {
 Scores = namedtuple('Scores', 'wine cheese score')
 
 
-def calculate_similarity(cheese, wine):
+___ calculate_similarity(cheese, wine
     wine_count = Counter(wine.lower())
     cheese_count = Counter(cheese.lower())
     common_letters = (wine_count & cheese_count)
-    similarity = sum(common_letters.values()) / (1 + (len(wine) - len(cheese)) ** 2)
-    return similarity
+    similarity = sum(common_letters.values()) / (1 + (le.(wine) - le.(cheese)) ** 2)
+    r_ similarity
 
 
-def best_match_per_wine(wine_type="all"):
+___ best_match_per_wine(wine_type="all"
     """ wine cheese pair with the highest match score
     returns a tuple which contains wine, cheese, score
     """
-    if wine_type in WINE_LIST:
+    __ wine_type in WINE_LIST:
         wines = WINE_LIST[wine_type]
-    elif wine_type in WINE_LIST['all']:
+    ____ wine_type in WINE_LIST['all']:
         wines = [wine_type]
-    else:
+    ____
         raise ValueError('Wine not recognised')
     cheeses = CHEESES
     hi_score = Scores('', '', 0)
-    for wine, cheese in product(wines, cheeses):
+    for wine, cheese in product(wines, cheeses
         similarity = calculate_similarity(cheese, wine)
-        if similarity > hi_score.score:
+        __ similarity > hi_score.score:
             hi_score = Scores(wine, cheese, similarity)
-    return tuple(hi_score)
+    r_ tuple(hi_score)
 
 
-def match_wine_5cheeses():
+___ match_wine_5cheeses(
     """  pairs all types of wines with cheeses ; returns a sorted list of tuples,
     where each tuple contains: wine, list of 5 best matching cheeses.
     List of cheeses is sorted by score descending then alphabetically ascending.
@@ -138,11 +138,11 @@ def match_wine_5cheeses():
     ]
     """
     scores = []
-    for wine, cheese in product(WINE_LIST['all'], CHEESES):
+    for wine, cheese in product(WINE_LIST['all'], CHEESES
         similarity = calculate_similarity(cheese, wine)
         scores.append(Scores(wine, cheese, similarity))
     scores = sorted(scores, key=lambda x: (x.wine, -x.score, x.cheese))
     res = []
-    for k, g in groupby(scores, lambda x: x.wine):
+    for k, g in groupby(scores, lambda x: x.wine
         res.append((k, [rec.cheese for rec in g][:5]))
-    return res
+    r_ res

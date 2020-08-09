@@ -1,18 +1,18 @@
-from random import choice
+from random ______ choice
 
 COLORS = 'red blue green yellow brown purple'.split()
 
 
 class EggCreator:
-    def __init__(self, limit: int):
+    ___ __init__(self, limit: int
         self.limit = limit
         self.current = 1
 
-    def __iter__(self):
-        return self
+    ___ __iter__(self
+        r_ self
 
-    def __next__(self):
-        if self.current > self.limit:
+    ___ __next__(self
+        __ self.current > self.limit:
             raise StopIteration
         self.current += 1
-        return f'{choice(COLORS)} egg'
+        r_ f'{choice(COLORS)} egg'

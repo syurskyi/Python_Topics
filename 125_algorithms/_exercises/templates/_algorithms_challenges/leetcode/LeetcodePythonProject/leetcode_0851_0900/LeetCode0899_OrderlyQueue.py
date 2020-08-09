@@ -1,24 +1,24 @@
-class Solution(object):
-    def orderlyQueue(self, S, K):
+class Solution(object
+    ___ orderlyQueue(self, S, K
         """
         :type S: str
         :type K: int
         :rtype: str
         """
-        if K > 1:
-            return ''.join(sorted(S))
-        n = len(S)
+        __ K > 1:
+            r_ ''.join(sorted(S))
+        n = le.(S)
         minIdx = 0
-        for i in range(1, n):
-            for i1 in range(n):
-                if S[(i+i1)%n] < S[(minIdx+i1)%n]:
+        for i in range(1, n
+            for i1 in range(n
+                __ S[(i+i1)%n] < S[(minIdx+i1)%n]:
                     minIdx = i
                     break
-                elif S[(i+i1)%n] > S[(minIdx+i1)%n]:
+                ____ S[(i+i1)%n] > S[(minIdx+i1)%n]:
                     break
-        return S[minIdx:] + S[:minIdx]
+        r_ S[minIdx:] + S[:minIdx]
 
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "cba", 1,
@@ -36,5 +36,5 @@ class Solution(object):
             print('-='*30+'-')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

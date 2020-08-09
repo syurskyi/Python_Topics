@@ -1,28 +1,28 @@
-class Solution(object):
-  def searchMatrix(self, matrix, target):
+class Solution(object
+  ___ searchMatrix(self, matrix, target
     """
     :type matrix: List[List[int]]
     :type target: int
     :rtype: bool
     """
 
-    def binarySearch(nums, target):
-      start, end = 0, len(nums) - 1
-      while start + 1 < end:
+    ___ binarySearch(nums, target
+      start, end = 0, le.(nums) - 1
+      w___ start + 1 < end:
         mid = start + (end - start) / 2
-        if nums[mid] > target:
+        __ nums[mid] > target:
           end = mid
-        elif nums[mid] < target:
+        ____ nums[mid] < target:
           start = mid
-        else:
-          return True
-      if nums[start] == target:
-        return True
-      if nums[end] == target:
-        return True
-      return False
+        ____
+          r_ True
+      __ nums[start] __ target:
+        r_ True
+      __ nums[end] __ target:
+        r_ True
+      r_ False
 
     for nums in matrix:
-      if binarySearch(nums, target):
-        return True
-    return False
+      __ binarySearch(nums, target
+        r_ True
+    r_ False

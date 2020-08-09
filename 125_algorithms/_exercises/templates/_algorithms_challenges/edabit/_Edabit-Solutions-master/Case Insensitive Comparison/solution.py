@@ -1,3 +1,3 @@
-def match(s1, s2):
-    if s1.casefold() == s2.casefold():
-        return True
+___ match(s1, s2
+    __ s1.casefold() __ s2.casefold(
+        r_ True

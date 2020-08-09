@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestMultOtherNumbers(object):
+class TestMultOtherNumbers(object
 
-    def test_mult_other_numbers(self):
+    ___ test_mult_other_numbers(self
         solution = Solution()
         assert_raises(TypeError, solution.mult_other_numbers, None)
         assert_equal(solution.mult_other_numbers([0]), [])
@@ -13,10 +13,10 @@ class TestMultOtherNumbers(object):
         print('Success: test_mult_other_numbers')
 
 
-def main():
+___ main(
     test = TestMultOtherNumbers()
     test.test_mult_other_numbers()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

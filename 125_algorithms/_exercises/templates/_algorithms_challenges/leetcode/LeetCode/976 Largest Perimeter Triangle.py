@@ -28,17 +28,17 @@ Note:
 3 <= A.length <= 10000
 1 <= A[i] <= 10^6
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def largestPerimeter(self, A: List[int]) -> int:
+    ___ largestPerimeter(self, A: List[int]) -> int:
         """
         sort and scanning from right
         """
         A.sort()
-        for i in range(len(A) - 3, -1, -1):
-            if A[i] + A[i+1] > A[i+2]:
-                return sum(A[i:i+3])
-        else:
-            return 0
+        for i in range(le.(A) - 3, -1, -1
+            __ A[i] + A[i+1] > A[i+2]:
+                r_ sum(A[i:i+3])
+        ____
+            r_ 0

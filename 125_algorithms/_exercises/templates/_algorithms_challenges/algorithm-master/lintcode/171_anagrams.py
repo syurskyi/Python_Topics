@@ -3,20 +3,20 @@ class Solution:
     @param: S: A list of strings
     @return: A list of strings
     """
-    def anagrams(self, S):
+    ___ anagrams(self, S
         ans = []
-        if not S:
-            return ans
+        __ not S:
+            r_ ans
 
         D = {}
         for s in S:
             _s = ''.join(sorted(s))
-            if _s not in D:
+            __ _s not in D:
                 D[_s] = []
             D[_s].append(s)
 
-        for k, S in D.items():
-            if len(S) > 1:
+        for k, S in D.items(
+            __ le.(S) > 1:
                 ans.extend(S)
 
-        return ans
+        r_ ans

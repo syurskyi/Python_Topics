@@ -1,44 +1,44 @@
-from __future__ import division
+from __future__ ______ division
 
 
-class Rational(object):
-    def __init__(self, numer, denom):
+class Rational(object
+    ___ __init__(self, numer, denom
         gcd, b = sorted([numer, denom])
-        while b != 0:
+        w___ b != 0:
             gcd, b = b, gcd % b
-        if denom < 0 < gcd:
+        __ denom < 0 < gcd:
             gcd = -gcd
         self.numer = numer // gcd
         self.denom = denom // gcd
 
-    def __eq__(self, other):
-        return self.numer == other.numer and self.denom == other.denom
+    ___ __eq__(self, other
+        r_ self.numer __ other.numer and self.denom __ other.denom
 
-    def __repr__(self):
-        return '{}/{}'.format(self.numer, self.denom)
+    ___ __repr__(self
+        r_ '{}/{}'.format(self.numer, self.denom)
 
-    def __add__(self, other):
+    ___ __add__(self, other
         numer = self.numer * other.denom + other.numer * self.denom
         denom = self.denom * other.denom
-        return Rational(numer, denom)
+        r_ Rational(numer, denom)
 
-    def __sub__(self, other):
-        return self + Rational(-1, 1) * other
+    ___ __sub__(self, other
+        r_ self + Rational(-1, 1) * other
 
-    def __mul__(self, other):
-        return Rational(self.numer * other.numer, self.denom * other.denom)
+    ___ __mul__(self, other
+        r_ Rational(self.numer * other.numer, self.denom * other.denom)
 
-    def __truediv__(self, other):
-        return self * (other ** -1)
+    ___ __truediv__(self, other
+        r_ self * (other ** -1)
 
-    def __abs__(self):
-        return Rational(abs(self.numer), self.denom)
+    ___ __abs__(self
+        r_ Rational(abs(self.numer), self.denom)
 
-    def __pow__(self, power):
-        if power < 0:
+    ___ __pow__(self, power
+        __ power < 0:
             self.numer, self.denom  = self.denom, self.numer
             power = -power
-        return Rational(self.numer ** power, self.denom ** power)
+        r_ Rational(self.numer ** power, self.denom ** power)
 
-    def __rpow__(self, base):
-        return base ** (self.numer / self.denom)
+    ___ __rpow__(self, base
+        r_ base ** (self.numer / self.denom)

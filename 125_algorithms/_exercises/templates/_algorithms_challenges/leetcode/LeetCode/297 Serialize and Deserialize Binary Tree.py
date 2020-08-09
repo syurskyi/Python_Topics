@@ -19,20 +19,20 @@ follow this format, so please be creative and come up with different approaches 
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should
 be stateless.
 """
-from collections import deque
+from collections ______ deque
 
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Codec:
-    def serialize(self, root):
+    ___ serialize(self, root
         """
         bfs
         Encodes a tree to a single string.
@@ -41,27 +41,27 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        if not root:
-            return "null"
+        __ not root:
+            r_ "null"
 
         ret = []
         q = []
         q.append(root)
         ret.append(str(root.val))  # add result when enqueue
-        while q:
-            l = len(q)
-            for i in xrange(l):
+        w___ q:
+            l = le.(q)
+            for i in xrange(l
                 cur = q[i]
-                if cur.left: q.append(cur.left)
+                __ cur.left: q.append(cur.left)
                 ret.append(self.encode(cur.left))
-                if cur.right: q.append(cur.right)
+                __ cur.right: q.append(cur.right)
                 ret.append(self.encode(cur.right))
 
             q = q[l:]
 
-        return ",".join(ret)
+        r_ ",".join(ret)
 
-    def deserialize(self, data):
+    ___ deserialize(self, data
         """
         Decodes your encoded data to tree.
         decode: 1, 2, 3, null, null, 4, 5, null, null, null, null
@@ -73,27 +73,27 @@ class Codec:
 
         q = deque([root])
         i = 1
-        while q:
+        w___ q:
             cur = q.popleft()
-            if i < len(lst):
+            __ i < le.(lst
                 cur.left = self.decode(lst[i])
                 i += 1
-                if cur.left: q.append(cur.left)
-            if i < len(lst):
+                __ cur.left: q.append(cur.left)
+            __ i < le.(lst
                 cur.right = self.decode(lst[i])
                 i += 1
-                if cur.right: q.append(cur.right)
+                __ cur.right: q.append(cur.right)
 
-        return root
+        r_ root
 
-    def decode(self, s):
-        if s == "null":
-            return None
-        else:
-            return TreeNode(int(s))
+    ___ decode(self, s
+        __ s __ "null":
+            r_ None
+        ____
+            r_ TreeNode(int(s))
 
-    def encode(self, node):
-        if not node:
-            return "null"
-        else:
-            return str(node.val)
+    ___ encode(self, node
+        __ not node:
+            r_ "null"
+        ____
+            r_ str(node.val)

@@ -1,6 +1,6 @@
-def sumDigits(sumCount):
+___ sumDigits(sumCount
         answer = []
-        for eachLine in range(sumCount):
+        for eachLine in range(sumCount
                 [a,b,c] = raw_input().split(' ')
                 value = (int(a) * int(b)) + int(c)
                 value = list(str(value))

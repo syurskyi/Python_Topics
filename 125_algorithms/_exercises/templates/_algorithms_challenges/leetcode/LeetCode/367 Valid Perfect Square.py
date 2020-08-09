@@ -15,24 +15,24 @@ Returns: False
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def isPerfectSquare(self, num):
+class Solution(object
+    ___ isPerfectSquare(self, num
         """
         Debugging binary search
         :type num: int
         :rtype: bool
         """
-        if num == 1: return True
+        __ num __ 1: r_ True
         lo = 1
         hi = num/2 + 1
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo + hi) / 2
             midsq = mid**2
-            if midsq == num:
-                return True
-            elif midsq < num:
+            __ midsq __ num:
+                r_ True
+            ____ midsq < num:
                 lo = mid + 1
-            else:
+            ____
                 hi = mid
 
-        return False
+        r_ False

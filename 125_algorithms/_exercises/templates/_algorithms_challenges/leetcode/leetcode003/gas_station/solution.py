@@ -2,42 +2,42 @@ class Solution:
     # @param gas, a list of integers
     # @param cost, a list of integers
     # @return an integer
-    def canCompleteCircuit(self, gas, cost):
-        n = len(gas)
+    ___ canCompleteCircuit(self, gas, cost
+        n = le.(gas)
         t = [0 for i in range(n)]
-        for i in range(n):
+        for i in range(n
             t[i] = gas[i] - cost[i]
         res = 0
         cs = 0  # Current sum
         ts = 0  # Total sum
-        for i in range(n):
+        for i in range(n
             cs += t[i]
             ts += t[i]
-            if cs < 0:
+            __ cs < 0:
                 res = i + 1
                 cs = 0
-        if ts < 0:
-            return -1
-        else:
-            return res
+        __ ts < 0:
+            r_ -1
+        ____
+            r_ res
 
-    def canCompleteCircuit2(self, gas, cost):
+    ___ canCompleteCircuit2(self, gas, cost
         # Brute-force
-        n = len(gas)
-        for i in range(n):
-            if gas[i] - cost[i] < 0:
+        n = le.(gas)
+        for i in range(n
+            __ gas[i] - cost[i] < 0:
                 continue
             carry = gas[i] - cost[i]
             j = (i + 1) % n
             flag = True
-            while j != i % n:
-                if carry + gas[j] - cost[j] < 0:
+            w___ j != i % n:
+                __ carry + gas[j] - cost[j] < 0:
                     flag = False
                     break
                 j = (j + 1) % n
-            if flag:
-                return i
-        return -1
+            __ flag:
+                r_ i
+        r_ -1
 
 
 s = Solution()

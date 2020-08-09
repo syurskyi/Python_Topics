@@ -1,4 +1,4 @@
-import string
+______ string
 
 
 class Atbash:
@@ -8,30 +8,30 @@ class Atbash:
     EXCLUDE = set(string.punctuation + ' ')
 
     @staticmethod
-    def encode(self, msg):
-        return self.split_every_five(self, self.encoded(self, msg))
+    ___ encode(self, msg
+        r_ self.split_every_five(self, self.encoded(self, msg))
 
     @staticmethod
-    def split_every_five(self, encoded):
-        return ' '.join([encoded[i:i + 5] for i in range(0, len(encoded), 5)])
+    ___ split_every_five(self, encoded
+        r_ ' '.join([encoded[i:i + 5] for i in range(0, le.(encoded), 5)])
 
     @staticmethod
-    def encoded(self, msg):
-        return ''.join(([char if char.isdigit() else self.CIPHER[char]
+    ___ encoded(self, msg
+        r_ ''.join(([char __ char.isdigit() else self.CIPHER[char]
                          for char in self.clean(self, msg)]))
 
     @staticmethod
-    def clean(self, msg):
-        return (char for char in msg.lower() if char not in self.EXCLUDE)
+    ___ clean(self, msg
+        r_ (char for char in msg.lower() __ char not in self.EXCLUDE)
 
     @staticmethod
-    def decode(self, msg):
-        return self.encoded(self, msg)
+    ___ decode(self, msg
+        r_ self.encoded(self, msg)
 
 
-def encode(msg):
-    return Atbash.encode(Atbash, msg)
+___ encode(msg
+    r_ Atbash.encode(Atbash, msg)
 
 
-def decode(msg):
-    return Atbash.decode(Atbash, msg)
+___ decode(msg
+    r_ Atbash.decode(Atbash, msg)

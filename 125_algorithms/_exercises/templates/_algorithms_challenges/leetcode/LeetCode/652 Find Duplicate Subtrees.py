@@ -28,35 +28,35 @@ Therefore, you need to return above trees' root in the form of a list.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class MerkleHash:
-    def __init__(self):
+    ___ __init__(self
         self.start_key = 0
         self.merkle_hash = defaultdict(self._auto_incr)  # subtree -> id
 
-    def _auto_incr(self):
+    ___ _auto_incr(self
         self.start_key += 1
-        return self.start_key
+        r_ self.start_key
 
-    def __call__(self, val):
-        return self.merkle_hash[val]
+    ___ __call__(self, val
+        r_ self.merkle_hash[val]
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.counter = defaultdict(int)
         self.merkle_hash = MerkleHash()
 
-    def findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
+    ___ findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
         """
         Merkle hash based on current val, and left substree merkle and right merkle
         Assign each subtree a identity/hash
@@ -64,34 +64,34 @@ class Solution:
         """
         ret = []
         self.walk(root, ret)
-        return ret
+        r_ ret
 
-    def walk(self, cur, ret) -> int:
+    ___ walk(self, cur, ret) -> int:
         """
         return merkle hash id
         """
-        if not cur:
-            return self.merkle_hash(None)
+        __ not cur:
+            r_ self.merkle_hash(None)
 
         subtree_value = (cur.val, self.walk(cur.left, ret), self.walk(cur.right, ret))
         merkle_hash = self.merkle_hash(subtree_value)
-        if self.counter[merkle_hash] == 1:
+        __ self.counter[merkle_hash] __ 1:
             ret.append(cur)
 
         self.counter[merkle_hash] += 1
-        return merkle_hash
+        r_ merkle_hash
 
 
 class Solution2:
-    def findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
+    ___ findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
         """
         Only need to return the root
         """
         ret = []
         self.walk(root, defaultdict(int), ret)
-        return ret
+        r_ ret
 
-    def walk(self, cur, counter, ret) -> str:
+    ___ walk(self, cur, counter, ret) -> str:
         """
         serialize the subtrees and check existence
 
@@ -111,16 +111,16 @@ class Solution2:
 
         complexity: O(N) * O(N) (string concatenation),
         """
-        if not cur:
-            return "None"
+        __ not cur:
+            r_ "None"
 
         cur_key = ",".join([
             self.walk(cur.left, counter, ret),
             self.walk(cur.right, counter, ret),
             str(cur.val),
         ])
-        if counter[cur_key] == 1:
+        __ counter[cur_key] __ 1:
             ret.append(cur)
 
         counter[cur_key] += 1
-        return cur_key
+        r_ cur_key

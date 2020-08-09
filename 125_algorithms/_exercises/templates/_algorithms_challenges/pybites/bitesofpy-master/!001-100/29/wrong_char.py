@@ -1,8 +1,8 @@
-# def get_index_different_char(chars):
+# ___ get_index_different_char(chars
 #     char_vals = [(1 if str(c).isalnum() else 0) for c in chars]
 #     return char_vals.index(1 if sum(char_vals) == 1 else 0)
 
-def get_index_different_char(chars):
+___ get_index_different_char(chars
     '''
     This algorithm finishes early. It does not definitely traverse the whole list.
     To do this I tally how many alphanumeric and non alphanumeric characters I
@@ -17,11 +17,11 @@ def get_index_different_char(chars):
         # In the case when the odd character is in the first 2 characters, the 'p'
         # variable allows me to determine the initial characters type and locate the
         # position of the minority type within the first 2 characters.
-        if an[False] == 1 == an[True]:
-            return 1 - p if c else p
+        __ an[False] __ 1 __ an[True]:
+            r_ 1 - p __ c else p
         an[c] += 1
-        if (c and an[False] < 2) or (not c and an[True] < 2):
-            if c and sum(an) == 0:
+        __ (c and an[False] < 2) or (not c and an[True] < 2
+            __ c and sum(an) __ 0:
                 p = 1
             continue
-        return chars.index(ch)
+        r_ chars.index(ch)

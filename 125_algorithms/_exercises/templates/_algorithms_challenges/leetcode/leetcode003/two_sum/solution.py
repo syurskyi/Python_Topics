@@ -1,8 +1,8 @@
 class Solution:
     # @return a tuple, (index1, index2)
-    def twoSum(self, num, target):
+    ___ twoSum(self, num, target
         d = {}
-        for i, e in enumerate(num):
-            if e in d:
-                return d[e] + 1, i + 1
+        for i, e in enumerate(num
+            __ e in d:
+                r_ d[e] + 1, i + 1
             d[target - e] = i

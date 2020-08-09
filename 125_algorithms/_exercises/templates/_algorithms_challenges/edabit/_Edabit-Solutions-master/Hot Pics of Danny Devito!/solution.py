@@ -1,9 +1,9 @@
-def prevent_distractions(txt):
+___ prevent_distractions(txt
     a_list = ["Danny Devito","roasts","vine","meme","anime"]
     index = 0
-    while index < len(a_list):
+    w___ index < le.(a_list
         word = a_list[index]
-        if txt.count(word) > 0:
-            return "NO!"
+        __ txt.count(word) > 0:
+            r_ "NO!"
         index = index + 1
-    return "Safe watching!
+    r_ "Safe watching!

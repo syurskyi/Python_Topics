@@ -1,14 +1,14 @@
-import collections
+______ collections
 
 
 class Solution:
-    def isRectangleCover(self, recs):
+    ___ isRectangleCover(self, recs
         """
         :type recs: List[List[int]]
         :rtype: bool
         """
-        if not recs:
-            return False
+        __ not recs:
+            r_ False
 
         left = bottom = float('inf')
         right = top = float('-inf')
@@ -25,17 +25,17 @@ class Solution:
                 (r, b, 2),
                 (r, t, 4),
                 (l, t, 8),
-            ):
-                if points[x, y] & val:
-                    return False
+
+                __ points[x, y] & val:
+                    r_ False
                 points[x, y] |= val
 
-        if any(
+        __ any(
             # only check the mid-points
             val not in (3, 6, 9, 12, 15)
             for (x, y), val in points.items()
-            if left < x < right or bottom < y < top
-        ):
-            return False
+            __ left < x < right or bottom < y < top
 
-        return True
+            r_ False
+
+        r_ True

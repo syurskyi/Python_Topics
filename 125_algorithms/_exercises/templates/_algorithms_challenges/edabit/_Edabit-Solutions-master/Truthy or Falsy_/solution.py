@@ -1,5 +1,5 @@
-def is_truthy(val):
-    if bool(val) == True:
-        return 1
-    else:
-        return 0
+___ is_truthy(val
+    __ bool(val) __ True:
+        r_ 1
+    ____
+        r_ 0

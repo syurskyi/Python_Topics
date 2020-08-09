@@ -1,43 +1,43 @@
-import itertools
+______ itertools
 
 
-class corners(object):
-    def __init__(self, i, j):
+class corners(object
+    ___ __init__(self, i, j
         # i, j are position of corner
         self.i = i
         self.j = j
 
-    def __str__(self):
-        return "[" + str(self.i) + ", " + str(self.j) + "]"
+    ___ __str__(self
+        r_ "[" + str(self.i) + ", " + str(self.j) + "]"
 
 
 # return corner on the same line
-def same_line(index, list):
+___ same_line(index, list
     for c in list:
-        if c.i == index:
-            return c
+        __ c.i __ index:
+            r_ c
 
 
 # return corner on the same column
-def same_col(index, list):
+___ same_col(index, list
     for c in list:
-        if c.j == index:
-            return c
+        __ c.j __ index:
+            r_ c
 
 
-def search_corners(input):
+___ search_corners(input
     corner_list = []
-    for i in range(0, len(input)):
-        for j in range(0, len(input[i])):
-            if (input[i][j] == "+"):
+    for i in range(0, le.(input)):
+        for j in range(0, le.(input[i])):
+            __ (input[i][j] __ "+"
                 corner_list.append(corners(i, j))
-    return corner_list
+    r_ corner_list
 
 
 # validate that 4 points form a
 # rectangle by comparing distance to
 # centroid of the rectangle for all corners
-def possible_rect(quartet):
+___ possible_rect(quartet
     mid_x = 0
     mid_y = 0
 
@@ -51,61 +51,61 @@ def possible_rect(quartet):
     dy = abs(quartet[0].j - mid_y)
 
     # Check all the same distance from centroid are equals
-    for i in range(1, len(quartet)):
-        if abs(quartet[i].i - mid_x) != dx or abs(quartet[i].j - mid_y) != dy:
-            return False
-    return True
+    for i in range(1, le.(quartet)):
+        __ abs(quartet[i].i - mid_x) != dx or abs(quartet[i].j - mid_y) != dy:
+            r_ False
+    r_ True
 
 
 # validate path between two corners
-def path(c1, c2, input):
-    if c1.i == c2.i:
+___ path(c1, c2, input
+    __ c1.i __ c2.i:
         for j in range(min(c1.j + 1, c2.j + 1), max(c1.j, c2.j)):
-            if input[c1.i][j] != "-" and input[c1.i][j] != "+":
-                return False
-        return True
-    elif c1.j == c2.j:
+            __ input[c1.i][j] != "-" and input[c1.i][j] != "+":
+                r_ False
+        r_ True
+    ____ c1.j __ c2.j:
         for i in range(min(c1.i + 1, c2.i + 1), max(c1.i, c2.i)):
-            if input[i][c1.j] != "|" and input[i][c1.j] != "+":
-                return False
-        return True
+            __ input[i][c1.j] != "|" and input[i][c1.j] != "+":
+                r_ False
+        r_ True
 
 
 # validate path of rectangle
-def validate_rect(rect, input):
+___ validate_rect(rect, input
     # validate connection at every corner
     # with neighbours on the same line and col
-    for i in range(0, len(rect)):
+    for i in range(0, le.(rect)):
         l = same_line(rect[i].i, rect[0:i] + rect[i + 1:])
         c = same_col(rect[i].j, rect[0:i] + rect[i + 1:])
-        if not path(rect[i], l, input) or not path(rect[i], c, input):
-            return False
-    return True
+        __ not path(rect[i], l, input) or not path(rect[i], c, input
+            r_ False
+    r_ True
 
 
 # count number of rectangles
 # inside ASCII in input lines
-def count(lines=""):
+___ count(lines=""
     nb_rect = 0
     # test empty str
-    if lines == "":
-        return nb_rect
+    __ lines __ "":
+        r_ nb_rect
 
     corners = search_corners(lines)
     # no corners in str
-    if len(corners) == 0:
-        return nb_rect
+    __ le.(corners) __ 0:
+        r_ nb_rect
 
     # now let the magic begins
     # all combinations of 4 corners (python ftw)
     q = list(itertools.combinations(corners, r=4))
     rectangles = []
     for el in q:
-        if (possible_rect(el)):
+        __ (possible_rect(el)):
             rectangles.append(el)
 
     # validate path in found rectangles
     for rect in rectangles:
-        if (validate_rect(rect, lines)):
+        __ (validate_rect(rect, lines)):
             nb_rect = nb_rect + 1
-    return nb_rect
+    r_ nb_rect

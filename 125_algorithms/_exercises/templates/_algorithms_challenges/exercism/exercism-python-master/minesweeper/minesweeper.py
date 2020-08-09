@@ -1,37 +1,37 @@
 """Fills in number on a minesweeper board"""
 
-from re import match
+from re ______ match
 
-def validate_and_format(func):
+___ validate_and_format(func
     """Finds bad boards and formats function return"""
-    def minesweeper(minefield):
+    ___ minesweeper(minefield
         """Finds bad boards and formats function returns"""
-        width = len(minefield[0])
+        width = le.(minefield[0])
         row_regex = r'^\|[* ]{%d}\|$' %(width-2)
         cap_regex = r'^\+-{%d}\+$' %(width-2)
-        if not all(match(row_regex, row) for row in minefield[1:-1]) or \
+        __ not all(match(row_regex, row) for row in minefield[1:-1]) or \
            not match(cap_regex, minefield[0]) or \
-           not match(cap_regex, minefield[-1]):
+           not match(cap_regex, minefield[-1]
             raise ValueError
         minefield = [list(row) for row in minefield]
-        return [''.join(row) for row in func(minefield)]
-    return minesweeper
+        r_ [''.join(row) for row in func(minefield)]
+    r_ minesweeper
 
 @validate_and_format
-def board(minefield):
+___ board(minefield
     """Fills in numbers on a minesweeper board"""
-    for i, row in enumerate(minefield[1:-1], 1):
-        for j, char in enumerate(row[1:-1], 1):
-            if char == "*":
+    for i, row in enumerate(minefield[1:-1], 1
+        for j, char in enumerate(row[1:-1], 1
+            __ char __ "*":
                 update(minefield, i, j)
-    return minefield
+    r_ minefield
 
-def update(field, row, col):
+___ update(field, row, col
     """Updates a set of 9 cells"""
     # Uses pass by reference (sort of)
-    for m in range(row-1, row+2):
-        for n in range(col-1, col+2):
-            if field[m][n] == ' ':
+    for m in range(row-1, row+2
+        for n in range(col-1, col+2
+            __ field[m][n] __ ' ':
                 field[m][n] = '1'
-            elif field[m][n].isdigit():
+            ____ field[m][n].isdigit(
                 field[m][n] = str(int(field[m][n]) + 1)

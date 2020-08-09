@@ -1,7 +1,7 @@
-import os
-import sys
+______ os
+______ sys
 
-from instagram.client import InstagramAPI
+from instagram.client ______ InstagramAPI
 
 client_id = os.environ.get('IG_100D_CLIENT_ID')
 client_secret = os.environ.get('IG_100D_CLIENT_SECRET')
@@ -10,14 +10,14 @@ IG_USER_ID = '4799'  # bbelderbos
 SCOPE = ''
 REDIRECT_URL = 'http://127.0.0.1:5000'
 
-if not client_id or not client_secret:
+__ not client_id or not client_secret:
     print('Please set the following env vars: ')
     print('IG_100D_CLIENT_ID')
     print('IG_100D_CLIENT_SECRET')
     sys.exit(1)
 
 
-def _get_access_token():
+___ _get_access_token(
     api = InstagramAPI(client_id=client_id,
                        client_secret=client_secret,
                        redirect_uri=REDIRECT_URL)
@@ -28,15 +28,15 @@ def _get_access_token():
 
     access_token, user_info = api.exchange_code_for_access_token(code)
 
-    return access_token
+    r_ access_token
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     # this script lets you use access_token from env or get it on the fly
     # you can also use:
     # https://github.com/facebookarchive/python-instagram/blob/master/get_access_token.py
     access_token = os.environ.get('IG_100D_ACCESS_TOKEN')
-    if not access_token:
+    __ not access_token:
         _get_access_token()
 
     api = InstagramAPI(access_token=access_token)

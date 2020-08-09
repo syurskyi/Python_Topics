@@ -4,30 +4,30 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def minPathSum(self, grid):
+class Solution(object
+    ___ minPathSum(self, grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        if not grid: return 0
-        n = len(grid[0])
-        m = len(grid)
+        __ not grid: r_ 0
+        n = le.(grid[0])
+        m = le.(grid)
         dp = [[0]*n for i in range(m)]
-        for i in range(m):
-            for j in range(n):
-                if i == 0 and j == 0:
+        for i in range(m
+            for j in range(n
+                __ i __ 0 and j __ 0:
                     dp[i][j] = grid[i][j]
-                elif i == 0 and j != 0:
+                ____ i __ 0 and j != 0:
                     dp[i][j] = dp[i][j-1] + grid[i][j]
-                elif i != 0 and j == 0:
+                ____ i != 0 and j __ 0:
                     dp[i][j] = dp[i-1][j] + grid[i][j]
-                else:
+                ____
                     dp[i][j] = min(dp[i-1][j], dp[i][j-1])+grid[i][j]
-        return dp[-1][-1]
+        r_ dp[-1][-1]
     
-    def test(self):
+    ___ test(self
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

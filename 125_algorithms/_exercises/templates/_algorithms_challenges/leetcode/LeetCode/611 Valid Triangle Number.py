@@ -16,11 +16,11 @@ Note:
 The length of the given array won't exceed 1000.
 The integers in the given array are in the range of [0, 1000].
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def triangleNumber(self, nums: List[int]) -> int:
+    ___ triangleNumber(self, nums: List[int]) -> int:
         """
         b - a < c < a + b
         Brute force O(n^3)
@@ -31,20 +31,20 @@ class Solution:
         """
         ret = 0
         nums.sort()
-        n = len(nums)
-        for k in range(n-1, 1, -1):
+        n = le.(nums)
+        for k in range(n-1, 1, -1
             i = 0
             j = k - 1
-            while i < j:
-                if nums[i] + nums[j] > nums[k]:
+            w___ i < j:
+                __ nums[i] + nums[j] > nums[k]:
                     ret += j - i  # move i will always satisfy the constraint
                     j -= 1  # to break
-                else:
+                ____
                     i += 1  # to satisfy
 
-        return ret
+        r_ ret
 
-    def triangleNumber_error(self, nums: List[int]) -> int:
+    ___ triangleNumber_error(self, nums: List[int]) -> int:
         """
         b - a < c < a + b
         Brute force O(n^3)
@@ -55,21 +55,21 @@ class Solution:
         """
         ret = 0
         nums.sort()
-        n = len(nums)
-        for i in range(n - 2):
+        n = le.(nums)
+        for i in range(n - 2
             j = i + 1
             k = n - 1
-            while j < k:
+            w___ j < k:
                 # error, since move k will not break the formula
-                if nums[i] + nums[j] > nums[k]:
+                __ nums[i] + nums[j] > nums[k]:
                     ret += k - j
                     k -= 1
-                else:
+                ____
                     j += 1
 
-        return ret
+        r_ ret
 
-    def triangleNumber_slow(self, nums: List[int]) -> int:
+    ___ triangleNumber_slow(self, nums: List[int]) -> int:
         """
         b - a < c < a + b
         Brute force O(n^3)
@@ -78,22 +78,22 @@ class Solution:
         """
         cache = {}
         nums.sort()
-        n = len(nums)
+        n = le.(nums)
         ret = 0
-        for i in range(n):
-            for j in range(i + 1, n):
-                if (i, j) not in cache:
+        for i in range(n
+            for j in range(i + 1, n
+                __ (i, j) not in cache:
                     cur = 0
-                    for k in range(j + 1, n):
-                        if nums[k] < nums[i] + nums[j]:
+                    for k in range(j + 1, n
+                        __ nums[k] < nums[i] + nums[j]:
                             cur += 1
-                        else:
+                        ____
                             break
                     cache[(i, j)] = cur
                 ret += cache[(i, j)]
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().triangleNumber([2,2,3,4]) == 3
+__ __name__ __ "__main__":
+    assert Solution().triangleNumber([2,2,3,4]) __ 3

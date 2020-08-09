@@ -5,7 +5,7 @@ with open("prob20.txt") as infile:
     for line in data:
         count = 0    # resets every line
         for each_char in line:
-            if each_char in ["a","e","i","o","u","y"]:
+            __ each_char in ["a","e","i","o","u","y"]:
                 count+=1
 
         print(count, end=" ")

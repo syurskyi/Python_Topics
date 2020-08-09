@@ -1,62 +1,62 @@
 class Solution:
-    def solveSudoku(self, board):
+    ___ solveSudoku(self, board
         """
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        if not board or not board[0] or len(board) != len(board[0]):
-            return
+        __ not board or not board[0] or le.(board) != le.(board[0]
+            r_
 
         self.dfs(board, 0, 0)
 
-    def dfs(self, board, x, y):
-        n = len(board)
+    ___ dfs(self, board, x, y
+        n = le.(board)
 
-        if x == n:
-            return True
+        __ x __ n:
+            r_ True
 
         _x, _y = x, y + 1
 
-        if y == n - 1:
+        __ y __ n - 1:
             _x = x + 1
             _y = 0
 
-        if board[x][y] != '.':
-            if not self.is_valid(board, x, y):
-                return False
-            return self.dfs(board, _x, _y)
+        __ board[x][y] != '.':
+            __ not self.is_valid(board, x, y
+                r_ False
+            r_ self.dfs(board, _x, _y)
 
-        for i in range(1, n + 1):
+        for i in range(1, n + 1
             board[x][y] = str(i)
-            if (
+            __ (
                 self.is_valid(board, x, y) and
                 self.dfs(board, _x, _y)
-            ):
-                return True
+
+                r_ True
 
         board[x][y] = '.'
-        return False
+        r_ False
 
-    def is_valid(self, board, x, y):
-        if board[x][y] not in '123456789':
-            return False
+    ___ is_valid(self, board, x, y
+        __ board[x][y] not in '123456789':
+            r_ False
 
-        n = len(board)
+        n = le.(board)
 
-        for i in range(n):
-            if y != i and board[x][y] == board[x][i]:
-                return False
-            if x != i and board[x][y] == board[i][y]:
-                return False
+        for i in range(n
+            __ y != i and board[x][y] __ board[x][i]:
+                r_ False
+            __ x != i and board[x][y] __ board[i][y]:
+                r_ False
 
         r = x // 3 * 3
         c = y // 3 * 3
 
-        for i in range(r, r + 3):
-            for j in range(c, c + 3):
-                if x == i and y == j:
+        for i in range(r, r + 3
+            for j in range(c, c + 3
+                __ x __ i and y __ j:
                     continue
-                if board[x][y] == board[i][j]:
-                    return False
+                __ board[x][y] __ board[i][j]:
+                    r_ False
 
-        return True
+        r_ True

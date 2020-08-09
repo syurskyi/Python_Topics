@@ -1,4 +1,4 @@
-from Previous.poem import print_hanging_indents
+from Previous.poem ______ print_hanging_indents
 
 # part of William Shakespeare's play Hamlet
 shakespeare_unformatted = """
@@ -41,13 +41,13 @@ Remember me when no more day by day
 """
 
 
-def test_shakespeare_text(capfd):
+___ test_shakespeare_text(capfd
     print_hanging_indents(shakespeare_unformatted)
     output = capfd.readouterr()[0]
-    assert output.strip() == shakespeare_formatted.strip()
+    assert output.strip() __ shakespeare_formatted.strip()
 
 
-def test_rosetti_poem(capfd):
+___ test_rosetti_poem(capfd
     print_hanging_indents(rosetti_unformatted)
     output = capfd.readouterr()[0]
-    assert output.strip() == rosetti_formatted.strip()
+    assert output.strip() __ rosetti_formatted.strip()

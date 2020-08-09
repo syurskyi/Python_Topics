@@ -14,7 +14,7 @@ rectangular, width and height don't exceed 100. Determine the perimeter of the i
 class Solution:
     dirs = [(0, -1), (-1, 0), (0, 1), (1, 0)]
 
-    def islandPerimeter(self, grid):
+    ___ islandPerimeter(self, grid
         """
         There is constraint that one concrete island
 
@@ -24,29 +24,29 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        if not grid:
-            return ret
-        R = len(grid)
-        C = len(grid[0])
-        for r0 in range(R):
-            for c0 in range(C):
-                if grid[r0][c0] == 1:
+        __ not grid:
+            r_ ret
+        R = le.(grid)
+        C = le.(grid[0])
+        for r0 in range(R
+            for c0 in range(C
+                __ grid[r0][c0] __ 1:
                     for dr, dc in self.dirs:
                         r = r0 + dr
                         c = c0 + dc
-                        if r < 0 or r >= R or c < 0 or c >= C:
+                        __ r < 0 or r >= R or c < 0 or c >= C:
                             ret += 1
-                        elif grid[r][c] == 0:
+                        ____ grid[r][c] __ 0:
                             ret += 1
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     grid = [
         [0,1,0,0],
         [1,1,1,0],
         [0,1,0,0],
         [1,1,0,0],
     ]
-    assert Solution().islandPerimeter(grid) == 16
+    assert Solution().islandPerimeter(grid) __ 16

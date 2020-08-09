@@ -9,12 +9,12 @@ Do NOT use system's Math.random().
 
 
 # The rand7() API is already defined for you.
-def rand7():
-    return 0
+___ rand7(
+    r_ 0
 
 
 class Solution:
-    def rand10(self):
+    ___ rand10(self
         """
         generate 7 twice, (rv1, rv2), 49 combination
         assign 40 combinations for the 1 to 10 respectively
@@ -22,9 +22,9 @@ class Solution:
         7-ary system
         :rtype: int
         """
-        while True:
+        w___ True:
             rv1 = rand7()
             rv2 = rand7()
             s = (rv1 - 1) * 7 + (rv2 - 1)  # make it start from 0
-            if s < 40:   # s \in [0, 40)
-                return s % 10 + 1  # since I make it start from 0
+            __ s < 40:   # s \in [0, 40)
+                r_ s % 10 + 1  # since I make it start from 0

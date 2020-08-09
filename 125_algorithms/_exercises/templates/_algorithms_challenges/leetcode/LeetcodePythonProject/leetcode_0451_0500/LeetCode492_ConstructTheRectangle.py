@@ -4,17 +4,17 @@ Created on May 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def constructRectangle(self, area):
+class Solution(object
+    ___ constructRectangle(self, area
         """
         :type area: int
         :rtype: List[int]
         """
-        import math
-        l = int(math.sqrt(area))
-        while l < area:
-            if area%l == 0:
-                return [max(l, area/l), min(l, area/l)]
-            else:
+        ______ ma__
+        l = int(ma__.sqrt(area))
+        w___ l < area:
+            __ area%l __ 0:
+                r_ [max(l, area/l), min(l, area/l)]
+            ____
                 l += 1
-        return [area, 1]
+        r_ [area, 1]

@@ -1,24 +1,24 @@
-class Solution(object):
-    def numPermsDISequence(self, S):
+class Solution(object
+    ___ numPermsDISequence(self, S
         """
         :type S: str
         :rtype: int
         """
         MOD = 10**9+7
-        n = len(S)+1
+        n = le.(S)+1
         dp = [[0 for _ in range(n)] for _ in range(n)]
         dp[0][0] = 1
-        for i in range(1, n):
-            for j in range(i+1):
-                if S[i-1] == 'D':
-                    for k in range(j, i):
+        for i in range(1, n
+            for j in range(i+1
+                __ S[i-1] __ 'D':
+                    for k in range(j, i
                         dp[i][j] = (dp[i-1][k] + dp[i][j]) % MOD
-                elif S[i-1] == 'I':
-                    for k in range(j):
+                ____ S[i-1] __ 'I':
+                    for k in range(j
                         dp[i][j] = (dp[i-1][k] + dp[i][j]) % MOD
-        return sum(dp[-1]) % MOD
+        r_ sum(dp[-1]) % MOD
 
-    def test(self):
+    ___ test(self
         testCases = [
             'DID',
         ]
@@ -27,5 +27,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

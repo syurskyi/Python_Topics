@@ -7,13 +7,13 @@ Return a deep copy of the list.
 __author__ = 'Danyang'
 # Definition for singly-linked list with a random pointer.
 class RandomListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.label = x
         self.next = None
         self.random = None
 
 class Solution:
-    def copyRandomList(self, head):
+    ___ copyRandomList(self, head
         """
         Algorithm:
 
@@ -35,7 +35,7 @@ class Solution:
         dummy.next = head
 
         pre = dummy
-        while pre.next:
+        w___ pre.next:
             cur = pre.next
             cur_copy = RandomListNode(cur.label)
 
@@ -47,26 +47,26 @@ class Solution:
 
         # copy random
         pre = dummy
-        while pre.next:
+        w___ pre.next:
             cur = pre.next
 
-            if cur.random:
+            __ cur.random:
                 cur.next.random = cur.random.next  # for duplicated node. NEXT IS RANDOM
 
             pre = pre.next.next
 
         # split
         pre = dummy
-        head_copy = pre.next.next if pre.next else None
-        while pre.next:
+        head_copy = pre.next.next __ pre.next else None
+        w___ pre.next:
             cur = pre.next
             cur_copy = cur.next
 
             cur.next = cur_copy.next
-            if cur_copy.next:
+            __ cur_copy.next:
                 cur_copy.next = cur_copy.next.next
 
             pre = pre.next
 
 
-        return head_copy
+        r_ head_copy

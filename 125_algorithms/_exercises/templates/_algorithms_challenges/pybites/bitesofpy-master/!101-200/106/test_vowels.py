@@ -1,10 +1,10 @@
-from vowels import strip_vowels, text
+from vowels ______ strip_vowels, text
 
 
-def test_strip_vowels_on_zen():
+___ test_strip_vowels_on_zen(
     output, number_replacements = strip_vowels(text)
 
-    assert number_replacements == 262
+    assert number_replacements __ 262
 
     assert 'Th* Z*n *f Pyth*n, by T*m P*t*rs' in output
     assert 'B***t*f*l *s b*tt*r th*n *gly' in output
@@ -12,7 +12,7 @@ def test_strip_vowels_on_zen():
     assert '*lth**gh pr*ct*c*l*ty b**ts p*r*ty.' in output
 
 
-def test_strip_vowels_on_other_text():
+___ test_strip_vowels_on_other_text(
     text = """Hello world!
               We hope that you are learning a lot of Python.
               Have fun with our Bites of Py.
@@ -22,7 +22,7 @@ def test_strip_vowels_on_other_text():
 
     output, number_replacements = strip_vowels(text)
 
-    assert number_replacements == 46
+    assert number_replacements __ 46
 
     assert 'H*ll* w*rld!' in output
     assert 'H*v* f*n w*th **r B*t*s *f Py' in output

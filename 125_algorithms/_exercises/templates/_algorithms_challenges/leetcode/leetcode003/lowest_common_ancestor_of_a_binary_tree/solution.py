@@ -19,14 +19,14 @@ itself according to the LCA definition.
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def lowestCommonAncestor(self, root, p, q):
+class Solution(object
+    ___ lowestCommonAncestor(self, root, p, q
         """
         :type root: TreeNode
         :type p: TreeNode
@@ -36,17 +36,17 @@ class Solution(object):
         # If both a and b exist in root, return their LCA;
         # if either a or b exist in root, return whichever exists;
         # if neither of them exist in root, return None
-        if root is None:
-            return None
-        elif root is p or root is q:
-            return root
-        else:
+        __ root is None:
+            r_ None
+        ____ root is p or root is q:
+            r_ root
+        ____
             l = self.lowestCommonAncestor(root.left, p, q)
             r = self.lowestCommonAncestor(root.right, p, q)
-            if l is not None and r is not None:
-                return root
-            else:
-                if l is not None:
-                    return l
-                if r is not None:
-                    return r
+            __ l is not None and r is not None:
+                r_ root
+            ____
+                __ l is not None:
+                    r_ l
+                __ r is not None:
+                    r_ r

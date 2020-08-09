@@ -4,31 +4,31 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def validTree(self, n, edges):
+class Solution(object
+    ___ validTree(self, n, edges
         roots = [-1]*n
         for e in edges:
             root0 = self.findRoot(roots, e[0])
             root1 = self.findRoot(roots, e[1])
-            if root0 != root1:
+            __ root0 != root1:
                 roots[root0] = root1
-            else:
-                return False
-        return len(edges) == n-1
+            ____
+                r_ False
+        r_ le.(edges) __ n-1
     
-    def findRoot(self, roots, ind):
-        while roots[ind] != -1:
+    ___ findRoot(self, roots, ind
+        w___ roots[ind] != -1:
             ind = roots[ind]
-        return ind
+        r_ ind
     
-    def validTreeBFS(self, n, edges):
+    ___ validTreeBFS(self, n, edges
         """
         :type n: int
         :type edges: List[List[int]]
         :rtype: bool
         """
         hashmap = {}
-        for i in range(n):
+        for i in range(n
             hashmap[i] = []
         for edge in edges:
             hashmap[edge[0]].append(edge[1])
@@ -36,43 +36,43 @@ class Solution(object):
         queue = []
         queue.append(0)
         visited = [False]*n
-        while queue:
+        w___ queue:
             top = queue[0]
             queue.pop(0)
-            if visited[top]:
-                return False
+            __ visited[top]:
+                r_ False
             visited[top] = True
             for i in hashmap[top]:
-                if not visited[i]:
+                __ not visited[i]:
                     queue.append(i)
         for b in visited:
-            if not b:
-                return False
-        return True
+            __ not b:
+                r_ False
+        r_ True
     
-    def validTreeDFS(self, n, edges):
+    ___ validTreeDFS(self, n, edges
         hashmap = {}
-        for i in range(n):
+        for i in range(n
             hashmap[i] = []
         for edge in edges:
             hashmap[edge[0]].append(edge[1])
             hashmap[edge[1]].append(edge[0])
         visited = [False]*n
-        if not self.helper(0, -1, hashmap, visited):
-            return False
+        __ not self.helper(0, -1, hashmap, visited
+            r_ False
         for b in visited:
-            if not b: return False
-        return True
+            __ not b: r_ False
+        r_ True
     
-    def helper(self, curr, parent, hashmap, visited):
-        if visited[curr]: return False
+    ___ helper(self, curr, parent, hashmap, visited
+        __ visited[curr]: r_ False
         visited[curr] = True
         for i in hashmap[curr]:
-            if i != parent and not self.helper(i, curr, hashmap, visited):
-                return False
-        return True
+            __ i != parent and not self.helper(i, curr, hashmap, visited
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 5,
@@ -94,5 +94,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
         
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

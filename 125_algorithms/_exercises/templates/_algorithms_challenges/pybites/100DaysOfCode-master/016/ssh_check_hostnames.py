@@ -1,14 +1,14 @@
-import paramiko
-from contextlib import contextmanager
+______ paramiko
+from contextlib ______ contextmanager
 
-from hosts import HOSTS
+from hosts ______ HOSTS
 
 username = ''
 password = ''
 host_list = HOSTS
 
 #@contextmanager
-def check_hostname(host_list):
+___ check_hostname(host_list
     for host in host_list:
         try:
             ssh = paramiko.SSHClient()

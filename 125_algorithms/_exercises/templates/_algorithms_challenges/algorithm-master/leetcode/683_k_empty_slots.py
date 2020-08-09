@@ -4,21 +4,21 @@
 ...     for _in, _out in (
 ...         (([1,3,2], 1), 2),
 ...         (([1,2,3], 1), -1),
-...     ):
+...
 ...         res = s.kEmptySlots(*_in)
 ...         if res != _out: print(_in, res)
 ...         gotcha.append(res == _out)
 >>> bool(gotcha) and all(gotcha)
 True
 """
-import bisect
+______ bisect
 
 
 class Solution:
     """
     Maintain pos by bloom order
     """
-    def kEmptySlots(self, flowers, k):
+    ___ kEmptySlots(self, flowers, k
         """
         :type flowers: List[int]
         :type k: int
@@ -26,15 +26,15 @@ class Solution:
         """
         bloom = []
 
-        for day in range(len(flowers)):
+        for day in range(le.(flowers)):
             x = flowers[day]
             i = bisect.bisect_left(bloom, x)
-            for _x in bloom[max(0, i - 1):i + 1]:
-                if abs(_x - x) - 1 == k:
-                    return day + 1  # changed to 1-based
+            for _x in bloom[max(0, i - 1i + 1]:
+                __ abs(_x - x) - 1 __ k:
+                    r_ day + 1  # changed to 1-based
             bloom.insert(i, x)
 
-        return -1
+        r_ -1
 
 
 class Solution2:
@@ -42,15 +42,15 @@ class Solution2:
     Two Pointer:
     https://blog.csdn.net/magicbean2/article/details/79235465
     """
-    def kEmptySlots(self, flowers, k):
+    ___ kEmptySlots(self, flowers, k
         """
         :type flowers: List[int]
         :type k: int
         :rtype: int
         """
-        n = len(flowers)
+        n = le.(flowers)
         x2day = [0] * n
-        for day in range(n):
+        for day in range(n
             """
             day: 0-based => 1-based
             x:   1-based => 0-based
@@ -62,14 +62,14 @@ class Solution2:
         left, right = 0, k + 1
         i = 0
 
-        while right < n:
-            if any((
+        w___ right < n:
+            __ any((
                 x2day[i] < x2day[left],
                 x2day[i] <= x2day[right],
             )):
-                if i == right:
+                __ i __ right:
                     ans = min(ans, max(x2day[left], x2day[right]))
                 left, right = i, k + i + 1
             i += 1
 
-        return ans if ans < INF else -1
+        r_ ans __ ans < INF else -1

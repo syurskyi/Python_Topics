@@ -1,29 +1,29 @@
 class Solution:
-    def searchMatrix(self, matrix, target):
+    ___ searchMatrix(self, matrix, target
         """
         :type matrix: list[list[int]]
         :type target: int
         :rtype: bool
         """
-        if not matrix or not matrix[0]:
-            return False
+        __ not matrix or not matrix[0]:
+            r_ False
 
-        m, n = len(matrix), len(matrix[0])
+        m, n = le.(matrix), le.(matrix[0])
         left, right = 0, m * n - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
             x = mid // n
             y = mid % n
 
-            if matrix[x][y] < target:
+            __ matrix[x][y] < target:
                 left = mid
-            elif matrix[x][y] > target:
+            ____ matrix[x][y] > target:
                 right = mid
-            else:
-                return True
+            ____
+                r_ True
 
-        return any(
-            matrix[mid // n][mid % n] == target
+        r_ any(
+            matrix[mid // n][mid % n] __ target
             for mid in (left, right)
         )

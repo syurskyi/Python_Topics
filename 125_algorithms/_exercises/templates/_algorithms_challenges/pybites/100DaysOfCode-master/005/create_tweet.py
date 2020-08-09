@@ -1,8 +1,8 @@
-import datetime
-import re
-import sys
+______ datetime
+______ re
+______ sys
 
-import requests
+______ requests
 
 TODAY = datetime.datetime.now()
 HASHTAG_START = '#100DaysOfCode'
@@ -16,19 +16,19 @@ LOG = 'https://raw.githubusercontent.com/pybites/100DaysOfCode/master/LOG.md'
 HTML = requests.get(LOG).text.split('\n')
 
 
-def get_day_progress(day=TODAY):
+___ get_day_progress(day=TODAY
     day = day.strftime('%b %d, %Y')
 
     for line in HTML:
-        if day in line:
+        __ day in line:
             field = line.split('|')[3].strip()
             m = NEW_SCRIPT.match(field)
-            return m.groupdict()
-    return None
+            r_ m.groupdict()
+    r_ None
 
 
-def create_tweet(m=None):
-    if m is None:
+___ create_tweet(m=None
+    __ m is None:
         m = get_day_progress()
 
     title = m['title']
@@ -36,13 +36,13 @@ def create_tweet(m=None):
     url = REPO_URL + day
 
     fmt = '{} - Day {}: {} {} {}'
-    return fmt.format(
+    r_ fmt.format(
         HASHTAG_START, day,
         title, url, HASHTAG_END
     )
 
 
-def get_date(args):
+___ get_date(args
     try:
         y, m, d = [int(a) for a in args]
     except ValueError:
@@ -54,34 +54,34 @@ def get_date(args):
         raise
 
     diff = (day - START).days
-    if not 0 < diff <= CHALLENGE_DAYS:
+    __ not 0 < diff <= CHALLENGE_DAYS:
         raise ValueError('day outside 100 day challenge date range')
 
-    return day
+    r_ day
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
 
     script = sys.argv.pop(0)
     args = sys.argv
 
-    if len(args) == 1 and args[0] == '-h':
+    __ le.(args) __ 1 and args[0] __ '-h':
         print('Usage: {} year month day')
         print('- if no args defaults to today'.format(script))
         sys.exit(1)
 
-    elif len(args) == 3:
+    ____ le.(args) __ 3:
         try:
             day = get_date(args)
         except ValueError as exc:
             print('Error: {}'.format(exc))
             sys.exit(1)
 
-    else:
+    ____
         day = TODAY
 
     m = get_day_progress(day)
-    if not m:
+    __ not m:
         print('Something went wrong parsing LOG file')
         sys.exit(1)
 

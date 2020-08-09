@@ -1,63 +1,63 @@
-import random
+______ random
 
 
-class Solution(object):
-  def wiggleSort(self, nums):
+class Solution(object
+  ___ wiggleSort(self, nums
     """
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-    if len(nums) <= 2:
+    __ le.(nums) <= 2:
       nums.sort()
-      return
+      r_
     numscopy = nums + []
-    mid = self.quickselect(0, len(nums) - 1, nums, len(nums) / 2 - 1)
-    ans = [mid] * len(nums)
-    if len(nums) % 2 == 0:
-      l = len(nums) - 2
+    mid = self.quickselect(0, le.(nums) - 1, nums, le.(nums) / 2 - 1)
+    ans = [mid] * le.(nums)
+    __ le.(nums) % 2 __ 0:
+      l = le.(nums) - 2
       r = 1
-      for i in range(0, len(nums)):
-        if nums[i] < mid:
+      for i in range(0, le.(nums)):
+        __ nums[i] < mid:
           ans[l] = nums[i]
           l -= 2
-        elif nums[i] > mid:
+        ____ nums[i] > mid:
           ans[r] = nums[i]
           r += 2
-    else:
+    ____
       l = 0
-      r = len(nums) - 2
-      for i in range(0, len(nums)):
-        if nums[i] < mid:
+      r = le.(nums) - 2
+      for i in range(0, le.(nums)):
+        __ nums[i] < mid:
           ans[l] = nums[i]
           l += 2
-        elif nums[i] > mid:
+        ____ nums[i] > mid:
           ans[r] = nums[i]
           r -= 2
-    for i in range(0, len(nums)):
+    for i in range(0, le.(nums)):
       nums[i] = ans[i]
 
-  def quickselect(self, start, end, A, k):
-    if start == end:
-      return A[start]
+  ___ quickselect(self, start, end, A, k
+    __ start __ end:
+      r_ A[start]
 
     mid = self.partition(start, end, A)
 
-    if mid == k:
-      return A[k]
-    elif mid > k:
-      return self.quickselect(start, mid - 1, A, k)
-    else:
-      return self.quickselect(mid + 1, end, A, k)
+    __ mid __ k:
+      r_ A[k]
+    ____ mid > k:
+      r_ self.quickselect(start, mid - 1, A, k)
+    ____
+      r_ self.quickselect(mid + 1, end, A, k)
 
-  def partition(self, start, end, A):
+  ___ partition(self, start, end, A
     left, right = start, end
     pivot = A[left]
-    while left < right:
-      while left < right and A[right] <= pivot:
+    w___ left < right:
+      w___ left < right and A[right] <= pivot:
         right -= 1
       A[left] = A[right]
-      while left < right and A[left] >= pivot:
+      w___ left < right and A[left] >= pivot:
         left += 1
       A[right] = A[left]
     A[left] = pivot
-    return left
+    r_ left

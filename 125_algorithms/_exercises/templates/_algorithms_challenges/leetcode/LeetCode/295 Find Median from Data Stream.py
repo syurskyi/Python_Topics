@@ -20,13 +20,13 @@ findMedian() -> 1.5
 add(3)
 findMedian() -> 2
 """
-import heapq
+______ heapq
 
 __author__ = 'Daniel'
 
 
-class DualHeap(object):
-    def __init__(self):
+class DualHeap(object
+    ___ __init__(self
         """
         Dual Heap is great in the case where there is no removal.
 
@@ -37,46 +37,46 @@ class DualHeap(object):
         self.min_h = []
         self.max_h = []
 
-    def insert(self, num):
-        if not self.min_h or num > self.min_h[0]:
+    ___ insert(self, num
+        __ not self.min_h or num > self.min_h[0]:
             heapq.heappush(self.min_h, num)
-        else:
+        ____
             heapq.heappush(self.max_h, -num)
         self.balance()
 
-    def balance(self):
-        l1 = len(self.min_h)
-        l2 = len(self.max_h)
-        if abs(l1 - l2) <= 1:
-            return
-        elif l1 - l2 > 1:
+    ___ balance(self
+        l1 = le.(self.min_h)
+        l2 = le.(self.max_h)
+        __ abs(l1 - l2) <= 1:
+            r_
+        ____ l1 - l2 > 1:
             heapq.heappush(self.max_h, -heapq.heappop(self.min_h))
             self.balance()
-        else:
+        ____
             heapq.heappush(self.min_h, -heapq.heappop(self.max_h))
             self.balance()
 
-    def get_median(self):
-        l1 = len(self.min_h)
-        l2 = len(self.max_h)
-        if (l1 + l2) % 2 == 1:
+    ___ get_median(self
+        l1 = le.(self.min_h)
+        l2 = le.(self.max_h)
+        __ (l1 + l2) % 2 __ 1:
             m = (l1 + l2) / 2  # median index, equivalent to (l1 + l2 - 1) / 2
-            if m < l2:
-                return -self.max_h[0]
-            else:
-                return self.min_h[0]
-        else:
-            return (-self.max_h[0] + self.min_h[0]) / 2.0
+            __ m < l2:
+                r_ -self.max_h[0]
+            ____
+                r_ self.min_h[0]
+        ____
+            r_ (-self.max_h[0] + self.min_h[0]) / 2.0
 
 
-class MedianFinder(object):
-    def __init__(self):
+class MedianFinder(object
+    ___ __init__(self
         """
         Initialize your data structure here.
         """
         self.dh = DualHeap()
 
-    def addNum(self, num):
+    ___ addNum(self, num
         """
         Adds a num into the data structure.
         :type num: int
@@ -84,9 +84,9 @@ class MedianFinder(object):
         """
         self.dh.insert(num)
 
-    def findMedian(self):
+    ___ findMedian(self
         """
         Returns the median of current data stream
         :rtype: float
         """
-        return self.dh.get_median()
+        r_ self.dh.get_median()

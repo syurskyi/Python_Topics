@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from ini import ToxIniParser
+from ini ______ ToxIniParser
 
 cookiecutter = """[tox]
 envlist = py27, py34, py35, py36, pypy, flake8
@@ -114,7 +114,7 @@ skip_install = true
 deps =
     flake8
     flake8-docstrings>=0.2.7
-    flake8-import-order>=0.9
+    flake8-______-order>=0.9
 commands =
     flake8 src/oeuvre/ tests/ setup.py
 
@@ -221,8 +221,8 @@ exclude =
     .cache,
     .eggs
 max-complexity = 10
-import-order-style = google
-application-import-names = oeuvre"""
+______-order-style = google
+application-______-names = oeuvre"""
 
 pyramid = """[tox]
 envlist =
@@ -297,7 +297,7 @@ skip_install = true
 basepython = python3.6
 commands =
     # clean up build/ and dist/ folders
-    python -c 'import shutil; shutil.rmtree("dist", ignore_errors=True)'
+    python -c '______ shutil; shutil.rmtree("dist", ignore_errors=True)'
     python setup.py clean --all
     # build sdist
     python setup.py sdist --dist-dir {toxinidir}/dist
@@ -326,12 +326,12 @@ ini_files = (cookiecutter, django, oeuvre, pyramid)
       'py35', 'py36'],
      ['python3']),
 ])
-def test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path):
+___ test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path
     f = tmp_path / "some_file.txt"
     f.write_bytes(ini_file.encode())  # https://bugs.python.org/issue17271
 
     tip = ToxIniParser(f.resolve())
 
-    assert tip.number_of_sections == num_sections
-    assert sorted(tip.environments) == sorted(envs)
-    assert sorted(tip.base_python_versions) == sorted(base_pys)
+    assert tip.number_of_sections __ num_sections
+    assert sorted(tip.environments) __ sorted(envs)
+    assert sorted(tip.base_python_versions) __ sorted(base_pys)

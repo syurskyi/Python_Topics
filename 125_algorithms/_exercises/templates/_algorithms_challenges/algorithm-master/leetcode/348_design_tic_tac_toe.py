@@ -1,8 +1,8 @@
-class TicTacToe(object):
+class TicTacToe(object
     PLER_A = 1
     PLER_B = 2
 
-    def __init__(self, n):
+    ___ __init__(self, n
         """
         Initialize your data structure here.
         :type n: int
@@ -12,7 +12,7 @@ class TicTacToe(object):
         self.DR = 0  # only one
         self.DL = 0  # only one
 
-    def move(self, x, y, player):
+    ___ move(self, x, y, player
         """
         Player {player} makes a move at ({x}, {y}).
         :type x: int The row of the board.
@@ -23,16 +23,16 @@ class TicTacToe(object):
                 1: Player 1 wins.
                 2: Player 2 wins.
         """
-        n = len(self.R)
-        delta = 1 if player == self.PLER_A else -1
+        n = le.(self.R)
+        delta = 1 __ player __ self.PLER_A else -1
         self.R[x] += delta
         self.C[y] += delta
-        self.DR += delta if x == y else 0  # x - y == 0
-        self.DL += delta if x == n - 1 - y else 0  # x + y == n - 1
-        return (abs(self.R[x]) == n or
-                abs(self.C[y]) == n or
-                abs(self.DR) == n or
-                abs(self.DL) == n)
+        self.DR += delta __ x __ y else 0  # x - y == 0
+        self.DL += delta __ x __ n - 1 - y else 0  # x + y == n - 1
+        r_ (abs(self.R[x]) __ n or
+                abs(self.C[y]) __ n or
+                abs(self.DR) __ n or
+                abs(self.DL) __ n)
 
 
 # Your TicTacToe object will be instantiated and called as such:

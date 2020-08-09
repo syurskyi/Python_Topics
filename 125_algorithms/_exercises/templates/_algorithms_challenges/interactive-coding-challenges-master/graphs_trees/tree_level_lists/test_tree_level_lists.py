@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestTreeLevelLists(object):
+class TestTreeLevelLists(object
 
-    def test_tree_level_lists(self):
+    ___ test_tree_level_lists(self
         bst = BstLevelLists(Node(5))
         bst.insert(3)
         bst.insert(8)
@@ -33,10 +33,10 @@ class TestTreeLevelLists(object):
         print('Success: test_tree_level_lists')
 
 
-def main():
+___ main(
     test = TestTreeLevelLists()
     test.test_tree_level_lists()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

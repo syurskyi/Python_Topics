@@ -4,21 +4,21 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findPoisonedDurationAnother(self, timeSeries, duration):
+class Solution(object
+    ___ findPoisonedDurationAnother(self, timeSeries, duration
         """
         :type timeSeries: List[int]
         :type duration: int
         :rtype: int
         """
-        if not timeSeries: return 0
+        __ not timeSeries: r_ 0
         res = 0
-        for i in range(1, len(timeSeries)):
+        for i in range(1, le.(timeSeries)):
             res += min(timeSeries[i]-timeSeries[i-1], duration)
         res += duration
-        return res
+        r_ res
     
-    def findPoisonedDuration(self, timeSeries, duration):
+    ___ findPoisonedDuration(self, timeSeries, duration
         """
         :type timeSeries: List[int]
         :type duration: int
@@ -28,14 +28,14 @@ class Solution(object):
         prev = 0
         maxTime = 0
         for time in timeSeries:
-            if maxTime < time:
+            __ maxTime < time:
                 result += maxTime - prev
                 prev = time
             maxTime = max(maxTime, time+duration)
         result += maxTime-prev
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 4],
@@ -53,5 +53,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

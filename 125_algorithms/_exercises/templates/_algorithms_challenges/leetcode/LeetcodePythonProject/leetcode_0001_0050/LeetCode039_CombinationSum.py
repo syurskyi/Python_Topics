@@ -3,8 +3,8 @@ Created on Jun 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def combinationSum(self, candidates, target):
+class Solution(object
+    ___ combinationSum(self, candidates, target
         """
         :type candidates: List[int]
         :type target: int
@@ -12,15 +12,15 @@ class Solution(object):
         """
         res = []
         self.helper(candidates, 0, [], target, res)
-        return res
+        r_ res
     
-    def helper(self, nums, ind, curr, target, res):
-        if target == 0:
+    ___ helper(self, nums, ind, curr, target, res
+        __ target __ 0:
             res.append(list(curr))
-            return
-        if target < 0:
-            return
-        for i in range(ind, len(nums)):
+            r_
+        __ target < 0:
+            r_
+        for i in range(ind, le.(nums)):
             curr.append(nums[i])
             self.helper(nums, i, curr, target-nums[i], res)
             curr.pop()

@@ -1,10 +1,10 @@
-from nose.tools import assert_equal
-from nose.tools import assert_true
+from nose.tools ______ assert_equal
+from nose.tools ______ assert_true
 
 
-class TestBuildOrder(object):
+class TestBuildOrder(object
 
-    def __init__(self):
+    ___ __init__(self
         self.dependencies = [
             Dependency('d', 'g'),
             Dependency('f', 'c'),
@@ -16,7 +16,7 @@ class TestBuildOrder(object):
             Dependency('b', 'e'),
         ]
 
-    def test_build_order(self):
+    ___ test_build_order(self
         build_order = BuildOrder(self.dependencies)
         processed_nodes = build_order.find_build_order()
 
@@ -32,7 +32,7 @@ class TestBuildOrder(object):
 
         print('Success: test_build_order')
 
-    def test_build_order_circular(self):
+    ___ test_build_order_circular(self
         self.dependencies.append(Dependency('e', 'f'))
         build_order = BuildOrder(self.dependencies)
         processed_nodes = build_order.find_build_order()
@@ -41,11 +41,11 @@ class TestBuildOrder(object):
         print('Success: test_build_order_circular')
 
 
-def main():
+___ main(
     test = TestBuildOrder()
     test.test_build_order()
     test.test_build_order_circular()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

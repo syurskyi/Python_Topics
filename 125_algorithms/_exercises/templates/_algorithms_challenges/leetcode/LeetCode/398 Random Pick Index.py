@@ -16,19 +16,19 @@ solution.pick(3);
 // pick(1) should return 0. Since in the array only nums[0] is equal to 1.
 solution.pick(1);
 """
-import random
+______ random
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def __init__(self, nums):
+class Solution(object
+    ___ __init__(self, nums
         """
         :type nums: List[int]
         """
         self.A = nums
 
-    def pick(self, target):
+    ___ pick(self, target
         """
         O(n)
         Reservoir Sampling
@@ -37,38 +37,38 @@ class Solution(object):
         """
         sz = 0
         ret = None
-        for idx, val in enumerate(self.A):
-            if val == target:
+        for idx, val in enumerate(self.A
+            __ val __ target:
                 sz += 1
                 p = random.randrange(0, sz)
-                if p == 0:
+                __ p __ 0:
                     ret = idx
 
-        return ret
+        r_ ret
 
 
-class SolutionError(object):
-    def __init__(self, nums):
+class SolutionError(object
+    ___ __init__(self, nums
         """
         Reservoir Sampling
         Assume pick is only called once
         :type nums: List[int]
         """
         self.d = {}
-        for idx, val in enumerate(nums):
-            if val not in self.d:
+        for idx, val in enumerate(nums
+            __ val not in self.d:
                 self.d[val] = (idx, 1)
-            else:
+            ____
                 prev, sz = self.d[val]
                 p = random.randrange(0, sz)
-                if p < sz:
+                __ p < sz:
                     self.d[val] = (idx, sz + 1)
-                else:
+                ____
                     self.d[val] = (prev, sz + 1)
 
-    def pick(self, target):
+    ___ pick(self, target
         """
         :type target: int
         :rtype: int
         """
-        return self.d[target][0]
+        r_ self.d[target][0]

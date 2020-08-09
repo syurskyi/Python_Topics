@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestAddDigits(object):
+class TestAddDigits(object
 
-    def test_add_digits(self, func):
+    ___ test_add_digits(self, func
         assert_raises(TypeError, func, None)
         assert_raises(ValueError, func, -1)
         assert_equal(func(0), 0)
@@ -13,7 +13,7 @@ class TestAddDigits(object):
         print('Success: test_add_digits')
 
 
-def main():
+___ main(
     test = TestAddDigits()
     solution = Solution()
     test.test_add_digits(solution.add_digits)
@@ -25,5 +25,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

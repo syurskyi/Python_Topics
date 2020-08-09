@@ -1,45 +1,45 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def findMinHeightTrees(self, n, edges):
+class Solution(object
+  ___ findMinHeightTrees(self, n, edges
     """
     :type n: int
     :type edges: List[List[int]]
     :rtype: List[int]
     """
-    if len(edges) == 0:
-      if n > 0:
-        return [0]
-      return []
+    __ le.(edges) __ 0:
+      __ n > 0:
+        r_ [0]
+      r_ []
 
-    def bfs(graph, start):
+    ___ bfs(graph, start
       queue = deque([(start, None)])
       level = 0
       maxLevel = -1
       farthest = None
-      while queue:
+      w___ queue:
         level += 1
-        for i in range(0, len(queue)):
+        for i in range(0, le.(queue)):
           label, parent = queue.popleft()
-          for child in graph.get(label, []):
-            if child != parent:
+          for child in graph.get(label, []
+            __ child != parent:
               queue.append((child, label))
-              if level > maxLevel:
+              __ level > maxLevel:
                 maxLevel = level
                 farthest = child
-      return farthest
+      r_ farthest
 
-    def dfs(graph, start, end, visited, path, res):
-      if start == end:
+    ___ dfs(graph, start, end, visited, path, res
+      __ start __ end:
         res.append(path + [])
-        return True
+        r_ True
       visited[start] = 1
-      for child in graph.get(start, []):
-        if visited[child] == 0:
+      for child in graph.get(start, []
+        __ visited[child] __ 0:
           path.append(child)
-          if dfs(graph, child, end, visited, path, res):
-            return True
+          __ dfs(graph, child, end, visited, path, res
+            r_ True
           path.pop()
 
     graph = {}
@@ -51,10 +51,10 @@ class Solution(object):
     end = bfs(graph, start)
     res, visited = [], [0 for i in range(0, n)]
     dfs(graph, start, end, visited, [start], res)
-    if not res:
-      return []
+    __ not res:
+      r_ []
     path = res[0]
-    if len(path) % 2 == 0:
-      return [path[len(path) / 2 - 1], path[len(path) / 2]]
-    else:
-      return [path[len(path) / 2]]
+    __ le.(path) % 2 __ 0:
+      r_ [path[le.(path) / 2 - 1], path[le.(path) / 2]]
+    ____
+      r_ [path[le.(path) / 2]]

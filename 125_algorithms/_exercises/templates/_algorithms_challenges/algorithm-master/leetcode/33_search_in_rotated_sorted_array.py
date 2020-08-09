@@ -1,5 +1,5 @@
 class Solution:
-    def search(self, nums, target):
+    ___ search(self, nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -7,30 +7,30 @@ class Solution:
         """
         NOT_FOUND = -1
 
-        if not nums:
-            return NOT_FOUND
+        __ not nums:
+            r_ NOT_FOUND
 
-        left, right = 0, len(nums) - 1
+        left, right = 0, le.(nums) - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
 
-            if nums[mid] == target:
-                return mid
+            __ nums[mid] __ target:
+                r_ mid
 
-            if nums[mid] < nums[0]:
-                if nums[mid] < target <= nums[right]:
+            __ nums[mid] < nums[0]:
+                __ nums[mid] < target <= nums[right]:
                     left = mid
-                else:
+                ____
                     right = mid
-            else:
-                if nums[left] <= target < nums[mid]:
+            ____
+                __ nums[left] <= target < nums[mid]:
                     right = mid
-                else:
+                ____
                     left = mid
 
-        for mid in (left, right):
-            if nums[mid] == target:
-                return mid
+        for mid in (left, right
+            __ nums[mid] __ target:
+                r_ mid
 
-        return NOT_FOUND
+        r_ NOT_FOUND

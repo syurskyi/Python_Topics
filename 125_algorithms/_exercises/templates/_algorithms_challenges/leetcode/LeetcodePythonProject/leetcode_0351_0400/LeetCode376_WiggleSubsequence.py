@@ -4,24 +4,24 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def wiggleMaxLength(self, nums):
-        if not nums: return 0
+class Solution(object
+    ___ wiggleMaxLength(self, nums
+        __ not nums: r_ 0
         maxLen = 1
         i = 1
-        while i < len(nums):
-            if nums[i] > nums[i-1]:
-                while i+1 < len(nums) and nums[i] <= nums[i+1]:
+        w___ i < le.(nums
+            __ nums[i] > nums[i-1]:
+                w___ i+1 < le.(nums) and nums[i] <= nums[i+1]:
                     i += 1
                 maxLen += 1
-            elif nums[i-1] > nums[i]:
-                while i+1 < len(nums) and nums[i+1] <= nums[i]:
+            ____ nums[i-1] > nums[i]:
+                w___ i+1 < le.(nums) and nums[i+1] <= nums[i]:
                     i += 1
                 maxLen += 1
             i += 1
-        return maxLen
+        r_ maxLen
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1,7,4,9,2,5],
             [1,17,5,10,13,15,10,5,16,8],
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

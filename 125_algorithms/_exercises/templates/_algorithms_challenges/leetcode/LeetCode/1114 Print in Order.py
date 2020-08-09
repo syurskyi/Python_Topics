@@ -28,12 +28,12 @@ Output: "firstsecondthird"
 Explanation: The input [1,3,2] means thread A calls first(), thread B calls
 third(), and thread C calls second(). "firstsecondthird" is the correct output.
 """
-from typing import Callable
-from threading import Lock
+from typing ______ Callable
+from threading ______ Lock
 
 
 class Foo:
-    def __init__(self):
+    ___ __init__(self
         """
         Two locks
         """
@@ -42,28 +42,28 @@ class Foo:
         self.locks[1].a..
 
 
-    def first(self, printFirst: Callable[[], None]) -> None:
+    ___ first(self, printFirst: Callable[[], None]) -> None:
         # printFirst() outputs "first". Do not change or remove this line.
         printFirst()
         self.locks[0].release()
 
 
 
-    def second(self, printSecond: Callable[[], None]) -> None:
+    ___ second(self, printSecond: Callable[[], None]) -> None:
         with self.locks[0]:
             # printSecond() outputs "second". Do not change or remove this line.
             printSecond()
             self.locks[1].release()
 
 
-    def third(self, printThird: Callable[[], None]) -> None:
+    ___ third(self, printThird: Callable[[], None]) -> None:
         with self.locks[1]:
             # printThird() outputs "third". Do not change or remove this line.
             printThird()
 
 
 class FooError:
-    def __init__(self):
+    ___ __init__(self
         """
         Have a counter, and only the corresponding method can change update the
         counter.
@@ -74,25 +74,25 @@ class FooError:
         self._lock = Lock()
 
 
-    def first(self, printFirst: 'Callable[[], None]') -> None:
+    ___ first(self, printFirst: 'Callable[[], None]') -> None:
         with self._lock:
-            if self._value == 1:
+            __ self._value __ 1:
                 # printFirst() outputs "first". Do not change or remove this line.
                 self._value += 1
                 printFirst()
 
 
-    def second(self, printSecond: 'Callable[[], None]') -> None:
+    ___ second(self, printSecond: 'Callable[[], None]') -> None:
         with self._lock:
-            if self._value == 2:
+            __ self._value __ 2:
                 # printSecond() outputs "second". Do not change or remove this line.
                 self._value += 1
                 printSecond()
 
 
-    def third(self, printThird: 'Callable[[], None]') -> None:
+    ___ third(self, printThird: 'Callable[[], None]') -> None:
         with self._lock:
-            if self._value == 3:
+            __ self._value __ 3:
                 # printThird() outputs "third". Do not change or remove this line.
                 self._value += 1
                 printThird()

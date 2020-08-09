@@ -1,6 +1,6 @@
-def is_omnipresent(lst, val):
+___ is_omnipresent(lst, val
     for i in lst:
-        if val in i:
-            return True
-        else:
-            return False
+        __ val in i:
+            r_ True
+        ____
+            r_ False

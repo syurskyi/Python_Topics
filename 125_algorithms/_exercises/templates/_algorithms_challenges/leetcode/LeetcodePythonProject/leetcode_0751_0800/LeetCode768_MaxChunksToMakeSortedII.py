@@ -3,15 +3,15 @@ Created on Apr 4, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def maxChunksToSorted(self, arr):
+class Solution(object
+    ___ maxChunksToSorted(self, arr
         """
         :type arr: List[int]
         :rtype: int
         """
         pass
     
-    def test(self):
+    ___ test(self
         testCases = [
             
         ]
@@ -21,5 +21,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

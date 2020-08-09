@@ -3,7 +3,7 @@ Problem: https://www.geeksforgeeks.org/snake-ladder-problem-2/
 """
 
 
-def get_min_dice_throws(moves):
+___ get_min_dice_throws(moves
     """
     :type moves: list[int]
     :type n: int
@@ -21,34 +21,34 @@ def get_min_dice_throws(moves):
     ...     (20,  8),
     ...     (16,  3),
     ...     (18,  6),
-    ... ):
+    ... 
     ...     moves[i] = val
     >>> get_min_dice_throws(moves)
     3
     """
-    if not moves:
-        return -1
+    __ not moves:
+        r_ -1
 
-    n = len(moves)
+    n = le.(moves)
     queue, _queue = [0], []
     steps = {0: 0}  # min steps to get i
 
-    while queue:
+    w___ queue:
         for i in queue:
             for j in range(i + 1, min(i + 7, n)):
                 # 6-faced dice => max 6 steps but up to n
-                if j == n - 1:
-                    return steps[i]
+                __ j __ n - 1:
+                    r_ steps[i]
 
-                if j in steps:
+                __ j in steps:
                     # is visited
                     continue
 
                 # next cell
-                k = moves[j] if moves[j] != -1 else j
+                k = moves[j] __ moves[j] != -1 else j
                 steps[k] = steps[i] + 1
                 _queue.append(k)
 
         queue, _queue = _queue, []
 
-    return -1
+    r_ -1

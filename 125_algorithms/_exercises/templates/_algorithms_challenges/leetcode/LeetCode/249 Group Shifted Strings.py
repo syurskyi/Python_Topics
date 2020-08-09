@@ -1,13 +1,13 @@
 """
 Premium Question
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
 class Solution:
-    def groupStrings(self, strings):
+    ___ groupStrings(self, strings
         """
 
         :type strings: list[str]
@@ -15,12 +15,12 @@ class Solution:
         """
         hm = defaultdict(list)
         for s in strings:
-            if len(s) == 1:
+            __ le.(s) __ 1:
                 hm[0].append(s)
-            else:
+            ____
                 lst = []
-                for i in xrange(1, len(s)):
+                for i in xrange(1, le.(s)):
                     lst.append((ord(s[i])-ord(s[i-1]))%26)
                 hm[tuple(lst)].append(s)
 
-        return map(sorted, hm.values())
+        r_ map(sorted, hm.values())

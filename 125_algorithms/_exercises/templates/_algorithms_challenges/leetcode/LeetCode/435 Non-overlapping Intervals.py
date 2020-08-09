@@ -11,42 +11,42 @@ each other.
 
 # Definition for an interval.
 class Interval:
-    def __init__(self, s=0, e=0):
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
 
     @classmethod
-    def new(cls, lst):
-        return [
+    ___ new(cls, lst
+        r_ [
             cls(s, e)
             for s, e in lst
         ]
         
 
 class Solution:
-    def eraseOverlapIntervals(self, intervals):
+    ___ eraseOverlapIntervals(self, intervals
         """
         Greedy remove the large e when overlapping
         :type intervals: List[Interval]
         :rtype: int
         """
         ret = 0
-        if not intervals:
-            return ret
+        __ not intervals:
+            r_ ret
 
         intervals.sort(key=lambda x: x.start)
         cur = intervals[0]
         for itv in intervals[1:]:
-            if cur.end <= itv.start:
+            __ cur.end <= itv.start:
                 cur = itv
-            else:
+            ____
                 ret += 1
-                cur = cur if cur.end < itv.end else itv
+                cur = cur __ cur.end < itv.end else itv
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3], [3,4], [1,3] ])) == 1
-    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [1,2], [1,2] ])) == 2
-    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3] ])) == 0
+__ __name__ __ "__main__":
+    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3], [3,4], [1,3] ])) __ 1
+    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [1,2], [1,2] ])) __ 2
+    assert Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3] ])) __ 0

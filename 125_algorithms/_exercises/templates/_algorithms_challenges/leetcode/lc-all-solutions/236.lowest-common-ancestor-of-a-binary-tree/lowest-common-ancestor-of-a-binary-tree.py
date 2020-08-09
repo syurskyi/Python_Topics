@@ -1,32 +1,32 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def lowestCommonAncestor(self, root, p, q):
+class Solution(object
+  ___ lowestCommonAncestor(self, root, p, q
     """
     :type root: TreeNode
     :type p: TreeNode
     :type q: TreeNode
     :rtype: TreeNode
     """
-    if not root:
-      return root
+    __ not root:
+      r_ root
 
     left = self.lowestCommonAncestor(root.left, p, q)
     right = self.lowestCommonAncestor(root.right, p, q)
 
-    if left and right:
-      return root
+    __ left and right:
+      r_ root
 
-    if root == p or root == q:
-      return root
+    __ root __ p or root __ q:
+      r_ root
 
-    if left:
-      return left
-    if right:
-      return right
-    return None
+    __ left:
+      r_ left
+    __ right:
+      r_ right
+    r_ None

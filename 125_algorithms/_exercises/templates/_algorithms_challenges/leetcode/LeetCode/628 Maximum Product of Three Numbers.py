@@ -22,19 +22,19 @@ the range [-1000, 1000].
 Multiplication of any three numbers in the input won't exceed the range of
 32-bit signed integer.
 """
-import heapq
+______ heapq
 
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def maximumProduct(self, nums: List[int]) -> int:
+    ___ maximumProduct(self, nums: List[int]) -> int:
         """
         heapq nlargest nsmallest
         """
         mxes = heapq.nlargest(3, nums)
         mns = heapq.nsmallest(3, nums)
-        return max(
+        r_ max(
             mxes[0] * mxes[1] * mxes[2],
             mns[0] * mns[1] * mxes[0],
         )

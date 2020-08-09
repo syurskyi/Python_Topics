@@ -1,5 +1,5 @@
-from collections import namedtuple
-from datetime import datetime
+from collections ______ namedtuple
+from datetime ______ datetime
 
 Composer = namedtuple('Composer', 'name born died')
 Opera = namedtuple('Opera', 'author play date')
@@ -50,15 +50,15 @@ operas = [
 ]
 
 
-def _get_date(date_str):
-    return datetime.date(datetime.strptime(date_str, "%d %B %Y"))
+___ _get_date(date_str
+    r_ datetime.date(datetime.strptime(date_str, "%d %B %Y"))
 
 
-def _alive_for_opera(composer: Composer, opera: Opera) -> bool:
-    return _get_date(composer.born) < _get_date(opera.date) < _get_date(composer.died)
+___ _alive_for_opera(composer: Composer, opera: Opera) -> bool:
+    r_ _get_date(composer.born) < _get_date(opera.date) < _get_date(composer.died)
 
 
-def operas_both_at_premiere(guest, composer):
+___ operas_both_at_premiere(guest, composer
     """Retrieves a list of titles of operas, where the guest and the composer
        could have been together at premiere.
 
@@ -69,14 +69,14 @@ def operas_both_at_premiere(guest, composer):
        ValueError
 
        Args:
-       guest (str): one of the composers but not the author of an opera
-       composer (str): the author of an opera
+       guest (str one of the composers but not the author of an opera
+       composer (str the author of an opera
 
        Returns a list (or generator) of titles of operas.
     """
-    if guest not in composers or composer not in composers:
+    __ guest not in composers or composer not in composers:
         raise ValueError
     for opera in operas:
-        if opera.author == composer:
-            if _alive_for_opera(composers[composer], opera) and _alive_for_opera(composers[guest], opera):
+        __ opera.author __ composer:
+            __ _alive_for_opera(composers[composer], opera) and _alive_for_opera(composers[guest], opera
                 yield opera.play

@@ -14,5 +14,5 @@ BIG_STRAIGHT = None
 CHOICE = None
 
 
-def score(dice, category):
+___ score(dice, category
     pass

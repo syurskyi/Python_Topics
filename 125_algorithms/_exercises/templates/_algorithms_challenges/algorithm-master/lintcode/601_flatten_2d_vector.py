@@ -1,37 +1,37 @@
 """
 Your Vector2D object will be instantiated and called as such:
 i, v = Vector2D(vec2d), []
-while i.hasNext(): v.append(i.next())
+w___ i.hasNext( v.append(i.next())
 """
 
 
 class Vector2D:
     # @param vec2d {List[List[int]]}
-    def __init__(self, vec2d):
+    ___ __init__(self, vec2d
         self.g = vec2d
         self.x = 0
         self.y = 0
 
     # @return {int} a next element
-    def next(self):
-        if not self.hasNext():
-            return -1
+    ___ next(self
+        __ not self.hasNext(
+            r_ -1
 
         x = self.x
         y = self.y
 
         self.y += 1
 
-        return self.g[x][y]
+        r_ self.g[x][y]
 
     # @return {boolean} true if it has next element
     # or false
-    def hasNext(self):
-        while self.x < len(self.g):
-            if self.y < len(self.g[self.x]):
-                return True
+    ___ hasNext(self
+        w___ self.x < le.(self.g
+            __ self.y < le.(self.g[self.x]
+                r_ True
 
             self.x += 1
             self.y = 0
 
-        return False
+        r_ False

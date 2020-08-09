@@ -1,8 +1,8 @@
-def flatten(list_of_lists):
+___ flatten(list_of_lists
     res = []
     for i in list_of_lists:
-        if isinstance(i, (list, tuple)):
+        __ isinstance(i, (list, tuple)):
             res.extend(flatten(i))
-        else:
+        ____
             res.append(i)
-    return res
+    r_ res

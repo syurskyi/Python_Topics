@@ -6,20 +6,20 @@ class Solution:
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
     """
-    def minimumTotal(self, triangle):
-        if not triangle or not triangle[0]:
-            return 0
+    ___ minimumTotal(self, triangle
+        __ not triangle or not triangle[0]:
+            r_ 0
 
-        return self.memo_search(0, 0, triangle, {})
+        r_ self.memo_search(0, 0, triangle, {})
 
-    def memo_search(self, depth, start, triangle, memo):
-        if depth == len(triangle) - 1:
-            return triangle[depth][start]
+    ___ memo_search(self, depth, start, triangle, memo
+        __ depth __ le.(triangle) - 1:
+            r_ triangle[depth][start]
 
         key = (depth, start)
 
-        if key in memo:
-            return memo[key]
+        __ key in memo:
+            r_ memo[key]
 
         memo[key] = min(
             self.memo_search(depth + 1, start, triangle, memo),
@@ -28,7 +28,7 @@ class Solution:
 
         memo[key] += triangle[depth][start]
 
-        return memo[key]
+        r_ memo[key]
 
 
 """
@@ -39,20 +39,20 @@ class Solution:
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
     """
-    def minimumTotal(self, triangle):
-        if not triangle or not triangle[0]:
-            return 0
+    ___ minimumTotal(self, triangle
+        __ not triangle or not triangle[0]:
+            r_ 0
 
         INFINITY = float('inf')
-        m = len(triangle)
+        m = le.(triangle)
         dp = [[INFINITY] * (m + 1) for _ in range(2)]
 
         prev = curr = 0
-        for i in range(1, m + 1):
+        for i in range(1, m + 1
             prev = curr
             curr = 1 - curr
 
-            for j in range(1, i + 1):
+            for j in range(1, i + 1
                 """
                 dp[prev][j] == dp[i - 1][j]
                 dp[curr][j] == dp[i][j]
@@ -60,7 +60,7 @@ class Solution:
 
                 dp[curr][j] = triangle[i - 1][j - 1]
 
-                if dp[prev][j - 1] < INFINITY or dp[prev][j] < INFINITY:
+                __ dp[prev][j - 1] < INFINITY or dp[prev][j] < INFINITY:
                     """
                     NO need to calculate first,
                     since only one path from top
@@ -70,7 +70,7 @@ class Solution:
                         dp[prev][j]
                     )
 
-        return min(dp[curr])
+        r_ min(dp[curr])
 
 
 """
@@ -81,20 +81,20 @@ class Solution:
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
     """
-    def minimumTotal(self, triangle):
-        if not triangle or not triangle[0]:
-            return 0
+    ___ minimumTotal(self, triangle
+        __ not triangle or not triangle[0]:
+            r_ 0
 
         INFINITY = float('inf')
-        m = len(triangle)
+        m = le.(triangle)
         dp = [[INFINITY] * (m + 1) for _ in range(m + 1)]
 
         prev = curr = 0
-        for i in range(m - 1, -1, -1):
+        for i in range(m - 1, -1, -1
             prev = curr
             curr = 1 - curr
 
-            for j in range(i + 1):
+            for j in range(i + 1
                 """
                 dp[prev][j] == dp[i + 1][j]
                 dp[curr][j] == dp[i][j]
@@ -102,7 +102,7 @@ class Solution:
 
                 dp[curr][j] = triangle[i][j]
 
-                if dp[prev][j] < INFINITY or dp[prev][j + 1] < INFINITY:
+                __ dp[prev][j] < INFINITY or dp[prev][j + 1] < INFINITY:
                     """
                     MUST be calculated first,
                     since there are two paths from bottom
@@ -113,4 +113,4 @@ class Solution:
                         dp[curr][j] + dp[prev][j + 1]
                     )
 
-        return dp[curr][0]
+        r_ dp[curr][0]

@@ -4,39 +4,39 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def validIPAddress(self, IP):
+class Solution(object
+    ___ validIPAddress(self, IP
         """
         :type IP: str
         :rtype: str
         """
-        if ':' in IP and self.checkIP6(IP):
-            return 'IPv6'
-        elif '.' in IP and self.checkIP4(IP):
-            return 'IPv4'
-        return 'Neither'
+        __ ':' in IP and self.checkIP6(IP
+            r_ 'IPv6'
+        ____ '.' in IP and self.checkIP4(IP
+            r_ 'IPv4'
+        r_ 'Neither'
     
-    def checkIP4(self, ip):
+    ___ checkIP4(self, ip
         arr = ip.split('.')
-        if len(arr) != 4: return False
+        __ le.(arr) != 4: r_ False
         for elem in arr:
-            if not elem: return False
-            if elem.startswith('0') and len(elem) > 1: return False
-            if not elem.isdigit() or int(elem) > 255:
-                return False
-        return True
+            __ not elem: r_ False
+            __ elem.startswith('0') and le.(elem) > 1: r_ False
+            __ not elem.isdigit() or int(elem) > 255:
+                r_ False
+        r_ True
     
-    def checkIP6(self, ip):
+    ___ checkIP6(self, ip
         arr = ip.split(':')
-        if len(arr) != 8: return False
+        __ le.(arr) != 8: r_ False
         digits = set(list('0123456789abcdefABCDEF'))
-        for i, elem in enumerate(arr):
-            if i > 0 and len(elem) > 4: return False
-            if i == 0 and len(elem) > 4:
-                if elem[:len(elem)-4] != '0'*(len(elem)-4):
-                    return False
-            if not elem: return False
+        for i, elem in enumerate(arr
+            __ i > 0 and le.(elem) > 4: r_ False
+            __ i __ 0 and le.(elem) > 4:
+                __ elem[:le.(elem)-4] != '0'*(le.(elem)-4
+                    r_ False
+            __ not elem: r_ False
             for c in elem:
-                if c not in digits:
-                    return False
-        return True
+                __ c not in digits:
+                    r_ False
+        r_ True

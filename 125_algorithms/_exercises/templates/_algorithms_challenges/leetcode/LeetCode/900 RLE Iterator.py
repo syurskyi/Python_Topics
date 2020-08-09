@@ -47,11 +47,11 @@ A.length is an even integer.
 There are at most 1000 calls to RLEIterator.next(int n) per test case.
 Each call to RLEIterator.next(int n) will have 1 <= n <= 10^9.
 """
-from typing import List
+from typing ______ List
 
 
 class RLEIterator:
-    def __init__(self, A: List[int]):
+    ___ __init__(self, A: List[int]
         """
         counter
         """
@@ -59,14 +59,14 @@ class RLEIterator:
         self.cur_used = 0
         self.A = A
 
-    def next(self, n: int) -> int:
+    ___ next(self, n: int) -> int:
         run = self.cur_used + n
-        while self.cur_i < len(self.A) and run > self.A[self.cur_i]:
+        w___ self.cur_i < le.(self.A) and run > self.A[self.cur_i]:
             run -= self.A[self.cur_i]
             self.cur_i += 2
 
-        if self.cur_i >= len(self.A):
-            return -1
+        __ self.cur_i >= le.(self.A
+            r_ -1
 
         self.cur_used = run
-        return self.A[self.cur_i + 1]
+        r_ self.A[self.cur_i + 1]

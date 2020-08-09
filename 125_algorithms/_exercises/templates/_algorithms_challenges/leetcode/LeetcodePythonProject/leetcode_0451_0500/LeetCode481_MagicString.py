@@ -4,30 +4,30 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def magicalString(self, n):
+class Solution(object
+    ___ magicalString(self, n
         """
         :type n: int
         :rtype: int
         """
         s = '122112122122'
-        if n <= len(s):
-            return s[:n].count('1')
+        __ n <= le.(s
+            r_ s[:n].count('1')
         i = 8
         j = 11
-        while len(s) < n:
-            if s[i] == '2':
-                if s[j] == '1':
+        w___ le.(s) < n:
+            __ s[i] __ '2':
+                __ s[j] __ '1':
                     s += '22'
-                else:
+                ____
                     s += '11'
                 j += 2
-            else:
-                if s[j] == '1':
+            ____
+                __ s[j] __ '1':
                     s += '2'
-                else:
+                ____
                     s += '1'
                 j += 1
             i += 1
-        return s[:n].count('1')
+        r_ s[:n].count('1')
 

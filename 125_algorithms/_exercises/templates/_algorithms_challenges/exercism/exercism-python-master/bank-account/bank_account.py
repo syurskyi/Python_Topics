@@ -1,49 +1,49 @@
-from threading import Lock
+from threading ______ Lock
 
-class BankAccount(object):
-    def with_lock(lock):
-        def wrapper(func):
-            def wrapped(self, *args):
-                with getattr(self, lock):
-                    return func(self, *args)
-            return wrapped
-        return wrapper
+class BankAccount(object
+    ___ with_lock(lock
+        ___ wrapper(func
+            ___ wrapped(self, *args
+                with getattr(self, lock
+                    r_ func(self, *args)
+            r_ wrapped
+        r_ wrapper
 
-    def is_open(func):
-        def wrapped(self, *args):
-            if self._state is not 'opened':
+    ___ is_open(func
+        ___ wrapped(self, *args
+            __ self._state is not 'opened':
                 raise ValueError("Account is {}, not open".format(self._state))
-            return func(self, *args)
-        return wrapped
+            r_ func(self, *args)
+        r_ wrapped
 
-    def __init__(self):
+    ___ __init__(self
         self._balance = 0
         self._state = 'created'
         self._lock = Lock()
 
     @is_open
-    def get_balance(self):
-        return self._balance
+    ___ get_balance(self
+        r_ self._balance
 
-    def open(self):
+    ___ open(self
         self._state = 'opened'
 
     @is_open
     @with_lock('_lock')
-    def deposit(self, amount):
-        if not (0 <= amount):
+    ___ deposit(self, amount
+        __ not (0 <= amount
             raise ValueError("Cannot deposite amount {}".format(amount))
         self._balance += amount
 
     @is_open
     @with_lock('_lock')
-    def withdraw(self, amount):
-        if not (0 <= amount <= self._balance):
+    ___ withdraw(self, amount
+        __ not (0 <= amount <= self._balance
             raise ValueError("Cannot withdraw amount {}".format(amount))
         self._balance -= amount
 
     @is_open
     @with_lock('_lock')
-    def close(self):
+    ___ close(self
         self._state = 'closed'
-        return self._balance
+        r_ self._balance

@@ -17,26 +17,26 @@ Explanation: The longest continuous increasing subsequence is [2], its length
 is 1.
 Note: Length of the array will not exceed 10,000.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def findLengthOfLCIS(self, nums: List[int]) -> int:
+    ___ findLengthOfLCIS(self, nums: List[int]) -> int:
         """
         pointer is sufficient
         """
-        if not nums:
-            return 0
+        __ not nums:
+            r_ 0
 
         ret = 1
         i = 1
-        while i < len(nums):
+        w___ i < le.(nums
             cur = 1
-            while i < len(nums) and nums[i] > nums[i-1]:
+            w___ i < le.(nums) and nums[i] > nums[i-1]:
                 cur += 1
                 i += 1
 
             i += 1
             ret = max(ret, cur)
 
-        return ret
+        r_ ret

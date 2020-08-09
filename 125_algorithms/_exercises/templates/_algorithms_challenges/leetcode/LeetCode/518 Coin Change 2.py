@@ -25,11 +25,11 @@ Example 3:
 Input: amount = 10, coins = [10]
 Output: 1
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def change(self, amount, coins):
+    ___ change(self, amount, coins
         """
         let F[amount][l] = # ways ending (but not necesserily) using coins[l-1]
         (i.e. coins[:l])
@@ -43,19 +43,19 @@ class Solution:
         :rtype: int
         """
         F = defaultdict(lambda: defaultdict(int))
-        n = len(coins)
-        for l in range(n + 1):
+        n = le.(coins)
+        for l in range(n + 1
             F[0][l] = 1   # trivial case
              # why not start from 0, because we need to handle trivial case F[0][0]
 
-        for a in range(1, amount + 1):
-            for l in range(1, n + 1):
+        for a in range(1, amount + 1
+            for l in range(1, n + 1
                 F[a][l] = F[a][l-1] + F[a - coins[l-1]][l]
 
-        return F[amount][n]
+        r_ F[amount][n]
 
 
-    def change_TLE(self, amount, coins):
+    ___ change_TLE(self, amount, coins
         """
         Like the take the step for the stairs dp
 
@@ -67,23 +67,23 @@ class Solution:
         :type coins: List[int]
         :rtype: int
         """
-        if amount == 0:
-            return 1
+        __ amount __ 0:
+            r_ 1
 
         coins.sort()
-        n = len(coins)
+        n = le.(coins)
         F = defaultdict(lambda: defaultdict(int))
-        for i in range(n):
+        for i in range(n
             F[coins[i]][i] = 1
 
-        for a in range(1, amount + 1):
-            for i in range(n):
-                for j in range(i + 1):
+        for a in range(1, amount + 1
+            for i in range(n
+                for j in range(i + 1
                     F[a][i] += F[a - coins[i]][j]
 
-        return sum(F[amount].values())
+        r_ sum(F[amount].values())
 
-    def change_error(self, amount, coins):
+    ___ change_error(self, amount, coins
         """
         Like the take the step for the stairs dp
 
@@ -96,14 +96,14 @@ class Solution:
         :rtype: int
         """
         F = {0: 1}
-        for a in range(1, amount + 1):
+        for a in range(1, amount + 1
             F[a] = 0
             for c in coins:
-                if a - c in F:
+                __ a - c in F:
                     F[a] += F[a - c]
 
-        return F[amount]
+        r_ F[amount]
 
 
-if __name__ == "__main__":
-    assert Solution().change(5, [1, 2, 5]) == 4
+__ __name__ __ "__main__":
+    assert Solution().change(5, [1, 2, 5]) __ 4

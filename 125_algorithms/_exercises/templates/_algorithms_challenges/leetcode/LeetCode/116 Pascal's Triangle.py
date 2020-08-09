@@ -14,23 +14,23 @@ Return
 """
 __author__ = 'Danyang'
 class Solution:
-    def generate(self, numRows):
+    ___ generate(self, numRows
         """
-        math
+        ma__
         :param numRows: integer
         :return: a list of lists of integers
         """
         result = []
-        for row in xrange(numRows):
+        for row in xrange(numRows
             current = []
-            for col in xrange(row+1):
-                if col==0 or col==row:
+            for col in xrange(row+1
+                __ col__0 or col__row:
                     current.append(1)
-                else:
+                ____
                     current.append(result[row-1][col-1]+result[row-1][col])
             result.append(current)
 
-        return result
+        r_ result
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().generate(5)

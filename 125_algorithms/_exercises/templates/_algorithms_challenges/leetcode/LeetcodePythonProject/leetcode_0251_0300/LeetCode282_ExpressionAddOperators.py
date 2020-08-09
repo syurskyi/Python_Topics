@@ -3,8 +3,8 @@ Created on Mar 6, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def addOperators(self, num, target):
+class Solution(object
+    ___ addOperators(self, num, target
         """
         :type num: str
         :type target: int
@@ -12,26 +12,26 @@ class Solution(object):
         """
         res = []
         self.helper(num, 0, target, '', 0, 0, res)
-        return res
+        r_ res
     
-    def helper(self, num, pos, target, curr, evalVal, mult, res):
-        if pos == len(num):
+    ___ helper(self, num, pos, target, curr, evalVal, mult, res
+        __ pos __ le.(num
             evalVal += mult
-            if target == evalVal:
+            __ target __ evalVal:
                 res.append(curr)
-            return
-        for i in range(pos+1, len(num)+1):
-            if i > pos+1 and num[pos] == '0':
+            r_
+        for i in range(pos+1, le.(num)+1
+            __ i > pos+1 and num[pos] __ '0':
                 break
             numStr = num[pos:i]
-            if pos == 0:
+            __ pos __ 0:
                 self.helper(num, i, target, numStr, 0, int(numStr), res)
-            else:
+            ____
                 self.helper(num, i, target, curr+'+'+numStr, evalVal+mult, int(numStr), res)
                 self.helper(num, i, target, curr+'-'+numStr, evalVal+mult, -int(numStr), res)
                 self.helper(num, i, target, curr+'*'+numStr, evalVal, mult*int(numStr), res)
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('123', 6),
             ('232', 8),
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

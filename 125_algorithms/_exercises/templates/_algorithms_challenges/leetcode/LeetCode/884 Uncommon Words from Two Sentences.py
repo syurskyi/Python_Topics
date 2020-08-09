@@ -28,12 +28,12 @@ Note:
 0 <= B.length <= 200
 A and B both contain only spaces and lowercase letters.
 """
-from typing import List
-from collections import Counter
+from typing ______ List
+from collections ______ Counter
 
 
 class Solution:
-    def uncommonFromSentences(self, A: str, B: str) -> List[str]:
+    ___ uncommonFromSentences(self, A: str, B: str) -> List[str]:
         """
         need counter, only need to appear once
         """
@@ -41,31 +41,31 @@ class Solution:
         ret = [
             k
             for k, v in c.items()
-            if v == 1
+            __ v __ 1
         ]
-        return ret
+        r_ ret
 
-    def uncommonFromSentences_complext(self, A: str, B: str) -> List[str]:
+    ___ uncommonFromSentences_complext(self, A: str, B: str) -> List[str]:
         """
         need counter
         """
         c_A, c_B = Counter(A.split()), Counter(B.split())
         ret = []
-        for k, v in c_A.items():
-            if v == 1 and k not in c_B:
+        for k, v in c_A.items(
+            __ v __ 1 and k not in c_B:
                 ret.append(k)
 
-        for k, v in c_B.items():
-            if v == 1 and k not in c_A:
+        for k, v in c_B.items(
+            __ v __ 1 and k not in c_A:
                 ret.append(k)
 
-        return ret
+        r_ ret
 
-    def uncommonFromSentences_error(self, A: str, B: str) -> List[str]:
+    ___ uncommonFromSentences_error(self, A: str, B: str) -> List[str]:
         """
         set difference
         """
         s_A, s_B = set(A.split()), set(B.split())
-        return list(
+        r_ list(
             (s_A - s_B) | (s_B - s_A)
         )

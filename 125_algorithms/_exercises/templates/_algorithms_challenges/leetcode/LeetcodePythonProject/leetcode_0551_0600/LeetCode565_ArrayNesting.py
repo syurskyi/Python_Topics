@@ -3,8 +3,8 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def arrayNesting(self, nums):
+class Solution(object
+    ___ arrayNesting(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -12,20 +12,20 @@ class Solution(object):
         hashmap = {}
         maxLen = 0
         for num in nums:
-            if num not in hashmap:
+            __ num not in hashmap:
                 hashset = set()
                 count = 0
                 num0 = num
-                while num0 != num or count == 0:
+                w___ num0 != num or count __ 0:
                     count += 1
                     num0 = nums[num0]
                     hashset.add(num0)
                 for num0 in hashset:
                     hashmap[num0] = count
                 maxLen = max(maxLen, count)
-        return maxLen
+        r_ maxLen
     
-    def test(self):
+    ___ test(self
         testCases = [
             [5,4,0,3,1,6,2],
             [0],
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

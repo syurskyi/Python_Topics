@@ -13,18 +13,18 @@ Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
 
 Output: ["AAAAACCCCC", "CCCCCAAAAA"]
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def findRepeatedDnaSequences(self, s: str) -> List[str]:
+    ___ findRepeatedDnaSequences(self, s: str) -> List[str]:
         ret = set()
         seen = set()
-        for i in range(len(s) - 10 + 1):
+        for i in range(le.(s) - 10 + 1
             sub = s[i:i+10]
-            if sub in seen and sub not in ret:
+            __ sub in seen and sub not in ret:
                 ret.add(sub)
-            else:
+            ____
                 seen.add(sub)
 
-        return list(ret)
+        r_ list(ret)

@@ -3,8 +3,8 @@ Created on Mar 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def anagramMappings(self, A, B):
+class Solution(object
+    ___ anagramMappings(self, A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -12,16 +12,16 @@ class Solution(object):
         """
         arr1, arr2 = A, B
         hashmap = {}
-        for i, num in enumerate(arr2):
-            if num not in hashmap:
+        for i, num in enumerate(arr2
+            __ num not in hashmap:
                 hashmap[num] = []
             hashmap[num].append(i)
         res = []
         for num in arr1:
             res.append(hashmap[num].pop())
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [12, 28, 46, 32, 50],
@@ -35,5 +35,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

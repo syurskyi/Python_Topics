@@ -1,19 +1,19 @@
 class Solution:
     # @param num, a list of integer
     # @return a list of integer
-    def nextPermutation(self, num):
-        n = len(num)
+    ___ nextPermutation(self, num
+        n = le.(num)
         k = -1
         l = -1
         # Find the largest k such that num[k] < num[k + 1]
-        for i in range(n - 1):
-            if num[i] < num[i + 1]:
+        for i in range(n - 1
+            __ num[i] < num[i + 1]:
                 k = i
 
         # Find the largest l such that num[k] < num[l] (if k exists)
-        if k >= 0:
-            for i in range(n):
-                if num[i] > num[k]:
+        __ k >= 0:
+            for i in range(n
+                __ num[i] > num[k]:
                     l = i
             # Swap num[l] and num[k]
             num[l], num[k] = num[k], num[l]
@@ -21,11 +21,11 @@ class Solution:
         # Reverse num[k + 1:]
         left = k + 1
         right = n - 1
-        while left < right:
+        w___ left < right:
             num[left], num[right] = num[right], num[left]
             left += 1
             right -= 1
-        return num
+        r_ num
 
 
 s = Solution()

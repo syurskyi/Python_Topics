@@ -3,8 +3,8 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def numJewelsInStones(self, J, S):
+class Solution(object
+    ___ numJewelsInStones(self, J, S
         """
         :type J: str
         :type S: str
@@ -14,11 +14,11 @@ class Solution(object):
         jset = set(list(j))
         res = 0
         for c in s:
-            if c in jset:
+            __ c in jset:
                 res += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 'aA',
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

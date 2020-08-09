@@ -1,12 +1,12 @@
 games_won = dict(sara=0, bob=1, tim=5, julian=3, jim=1)
 
 
-def print_game_stats(games_won=games_won):
+___ print_game_stats(games_won=games_won
     """Loop through games_won's dict (key, value) pairs (dict.items)
        printing (print, not return) how many games each person has won,
        pluralize 'game' based on number.
 
-       Expected output (ignore the docstring's indentation):
+       Expected output (ignore the docstring's indentation
 
        sara has won 0 games
        bob has won 1 game
@@ -17,5 +17,5 @@ def print_game_stats(games_won=games_won):
        (Note that as of Python 3.7 - which we're using atm - dict insert order is retained
         so no sorting is required for this Bite.)
     """
-    for name, score in games_won.items():
-        print(f"{name} has won {score} game{'' if score == 1 else 's'}")
+    for name, score in games_won.items(
+        print(f"{name} has won {score} game{'' __ score __ 1 else 's'}")

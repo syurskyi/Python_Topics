@@ -3,24 +3,24 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findMaxAverage(self, nums, k):
+class Solution(object
+    ___ findMaxAverage(self, nums, k
         """
         :type nums: List[int]
         :type k: int
         :rtype: float
         """
-        if k <= 0: return 0
+        __ k <= 0: r_ 0
         sumVal = 0
         maxVal = float('-inf')
-        for i, num in enumerate(nums):
+        for i, num in enumerate(nums
             sumVal += num
-            if i >= k-1:
+            __ i >= k-1:
                 maxVal = max(maxVal, sumVal)
                 sumVal -= nums[i-k+1]
-        return float(maxVal)/k
+        r_ float(maxVal)/k
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 12, -5, -6, 50, 3],
@@ -38,5 +38,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

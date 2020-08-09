@@ -3,26 +3,26 @@ Created on Apr 21, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def hitBricks(self, grid, hits):
+class Solution(object
+    ___ hitBricks(self, grid, hits
         """
         :type grid: List[List[int]]
         :type hits: List[List[int]]
         :rtype: List[int]
         """
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         
-        def dfs(i, j):
-            if not (0<=i<m and 0<=j<n) or grid[i][j]!=1:
-                return 0
+        ___ dfs(i, j
+            __ not (0<=i<m and 0<=j<n) or grid[i][j]!=1:
+                r_ 0
             res = 1
             grid[i][j] = 2
             res += sum(dfs(x, y) for x, y in [(i-1, j), (i, j-1), (i+1, j), (i, j+1)])
-            return res
+            r_ res
         
         # Check whether (i, j) is connected to Not Failling Bricks
-        def is_connected(i, j):
-            return i==0 or any([0<=x<m and 0<=y<n and grid[x][y]==2\
+        ___ is_connected(i, j
+            r_ i__0 or any([0<=x<m and 0<=y<n and grid[x][y]__2\
                                 for x, y in [(i+1, j), (i, j+1), (i-1, j), (i, j-1)]])
         
         # Mark whether there is a brick at the each hit
@@ -30,19 +30,19 @@ class Solution(object):
             grid[i][j] -= 1
         
         # Get grid after all hits
-        for i in range(n):
+        for i in range(n
             dfs(0, i)
         
         # Reversely and the block of each hits and get count of newly add bricks
-        res = [0]*len(hits)
-        for k in reversed(range(len(hits))):
+        res = [0]*le.(hits)
+        for k in reversed(range(le.(hits))):
             i, j = hits[k]
             grid[i][j] += 1
-            if grid[i][j] == 1 and is_connected(i, j):
+            __ grid[i][j] __ 1 and is_connected(i, j
                 res[k] = dfs(i, j)-1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [
@@ -66,5 +66,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

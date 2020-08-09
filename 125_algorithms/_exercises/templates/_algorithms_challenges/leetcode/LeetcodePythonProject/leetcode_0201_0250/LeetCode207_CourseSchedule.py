@@ -4,8 +4,8 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def canFinishBFS(self, numCourses, prerequisites):
+class Solution(object
+    ___ canFinishBFS(self, numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -19,25 +19,25 @@ class Solution(object):
             degree[prereq[0]] += 1
             graph[prereq[1]].append(prereq[0])
         print('degree: %s' % (degree))
-        for i in range(numCourses):
-            if degree[i] == 0:
+        for i in range(numCourses
+            __ degree[i] __ 0:
                 queue.append(i)
                 count += 1
-        while queue:
+        w___ queue:
             course = queue.pop(0)
             for pointer in graph[course]:
                 degree[pointer] -= 1
-                if degree[pointer] == 0:
+                __ degree[pointer] __ 0:
                     queue.append(pointer)
                     count += 1
         print('graph:  %s' % (graph))
         print('degree: %s' % (degree))
-        if count == numCourses:
-            return True
-        else:
-            return False
+        __ count __ numCourses:
+            r_ True
+        ____
+            r_ False
     
-    def canFinishDFS(self, numCourses, prerequisites):
+    ___ canFinishDFS(self, numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -45,25 +45,25 @@ class Solution(object):
         """
         graph = [[] for _ in range(numCourses)]
         visited = [False]*numCourses
-        for i, prereq in enumerate(prerequisites):
+        for i, prereq in enumerate(prerequisites
             graph[prereq[1]].append(prereq[0])
-        for i in range(numCourses):
-            if not self.dfs(graph, visited, i):
-                return False
-        return True
+        for i in range(numCourses
+            __ not self.dfs(graph, visited, i
+                r_ False
+        r_ True
     
-    def dfs(self, graph, visited, course):
-        if visited[course]:
-            return False
-        else:
+    ___ dfs(self, graph, visited, course
+        __ visited[course]:
+            r_ False
+        ____
             visited[course] = True
         for precourse in graph[course]:
-            if not self.dfs(graph, visited, precourse):
-                return False
+            __ not self.dfs(graph, visited, precourse
+                r_ False
         visited[course] = False
-        return True
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             (2, [[1, 0]]),
             (5, [[0, 1], [1, 2], [2, 3]]),
@@ -80,5 +80,5 @@ class Solution(object):
             print('BFS Result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

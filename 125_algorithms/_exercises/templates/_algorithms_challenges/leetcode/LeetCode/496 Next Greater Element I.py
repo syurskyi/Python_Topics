@@ -27,7 +27,7 @@ The length of both nums1 and nums2 would not exceed 1000.
 
 
 class Solution:
-    def nextGreaterElement(self, nums1, nums2):
+    ___ nextGreaterElement(self, nums1, nums2
         """
         Brute force O(mn)
 
@@ -48,14 +48,14 @@ class Solution:
         h = {}  # num -> next greater element
         stk = []
         for e in nums2[::-1]:
-            while stk and stk[-1] <= e:
+            w___ stk and stk[-1] <= e:
                 # until stk[-1] > e
                 stk.pop()
 
-            h[e] = stk[-1] if stk else -1
+            h[e] = stk[-1] __ stk else -1
             stk.append(e)
 
-        return [
+        r_ [
             h[q]
             for q in nums1
         ]

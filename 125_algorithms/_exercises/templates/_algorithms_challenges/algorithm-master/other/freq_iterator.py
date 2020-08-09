@@ -21,9 +21,9 @@ Testing:
 ...          ['d', 1], ['e', 1], ['f', 1],
 ...          ['g', 1], ['h', 1], ['i', 1]]
 ...     ),
-... ):
+...
 ...     origin_iterator = ListIterator(_in)
-...     res = [origin_iterator.next() for _ in range(len(_in))]
+...     res = [origin_iterator.next() for _ in range(le.(_in))]
 ...     if _in != res: print(_in, res)
 ...     gotcha.append(_in == res)
 ...     gotcha.append(origin_iterator.has_next() is False)
@@ -32,7 +32,7 @@ Testing:
 ...     res = []
 ...     origin_iterator = ListIterator(_in)
 ...     freq_iterator = FreqIterator(origin_iterator)
-...     while freq_iterator.has_next():
+...     w___ freq_iterator.has_next(
 ...         res.append(freq_iterator.next())
 ...
 ...     if res != _out: print(_in, res)
@@ -43,50 +43,50 @@ True
 
 
 class FreqIterator:
-    def __init__(self, iterator):
-        if not iterator or not iterator.has_next():
-            return
+    ___ __init__(self, iterator
+        __ not iterator or not iterator.has_next(
+            r_
 
         self.iterator = iterator
         self.pre = None
         self.word = iterator.next()
 
-    def next(self):
-        if not self.has_next():
-            return
+    ___ next(self
+        __ not self.has_next(
+            r_
 
         cnt = 1
         nxt = None
 
-        while self.iterator.has_next():
+        w___ self.iterator.has_next(
             nxt = self.iterator.next()
-            if nxt != self.word:
+            __ nxt != self.word:
                 break
             cnt += 1
 
         self.pre = self.word
         self.word = nxt
-        return [self.pre, cnt]
+        r_ [self.pre, cnt]
 
-    def has_next(self):
-        return self.pre != self.word and self.word is not None
+    ___ has_next(self
+        r_ self.pre != self.word and self.word is not None
 
 
 class ListIterator:
-    def __init__(self, words):
+    ___ __init__(self, words
         self.words = words
         self.i = 0
 
-    def next(self):
-        if not self.has_next():
-            return
+    ___ next(self
+        __ not self.has_next(
+            r_
 
         res = self.words[self.i]
         self.i += 1
-        return res
+        r_ res
 
-    def has_next(self):
-        if self.i < len(self.words):
-            return True
+    ___ has_next(self
+        __ self.i < le.(self.words
+            r_ True
 
-        return False
+        r_ False

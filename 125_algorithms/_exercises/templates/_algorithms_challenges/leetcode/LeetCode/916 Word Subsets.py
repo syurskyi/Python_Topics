@@ -42,12 +42,12 @@ Note:
 A[i] and B[i] consist only of lowercase letters.
 All words in A[i] are unique: there isn't i != j with A[i] == A[j].
 """
-from typing import List
-from collections import Counter, defaultdict
+from typing ______ List
+from collections ______ Counter, defaultdict
 
 
 class Solution:
-    def wordSubsets(self, A: List[str], B: List[str]) -> List[str]:
+    ___ wordSubsets(self, A: List[str], B: List[str]) -> List[str]:
         """
         brute foce check b subset of a: two pointers O(|a| + |b|)
         O(n * m * (|a|+|b|))
@@ -60,16 +60,16 @@ class Solution:
         mx = defaultdict(int)
         for b in B:
             c = Counter(b)
-            for k, v in c.items():
+            for k, v in c.items(
                 mx[k] = max(mx[k], v)
 
         ret = []
         for a in A:
             c = Counter(a)
-            for k, v in mx.items():
-                if c[k] < v:
+            for k, v in mx.items(
+                __ c[k] < v:
                     break
-            else:
+            ____
                 ret.append(a)
 
-        return ret
+        r_ ret

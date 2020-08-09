@@ -1,8 +1,8 @@
-class Cipher(object):
-    def __init__(self):
+class Cipher(object
+    ___ __init__(self
         pass
 
 
-class Caesar(object):
-    def __init__(self):
+class Caesar(object
+    ___ __init__(self
         pass

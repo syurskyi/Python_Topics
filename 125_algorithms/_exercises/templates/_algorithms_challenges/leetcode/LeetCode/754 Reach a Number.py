@@ -27,9 +27,9 @@ target will be a non-zero integer in the range [-10^9, 10^9].
 
 
 class Solution:
-    def reachNumber(self, target: int) -> int:
+    ___ reachNumber(self, target: int) -> int:
         """
-        math
+        ma__
 
         put -/+ for 1, 2, 3, 4, ..., k
         flip a sign change in even number
@@ -40,15 +40,15 @@ class Solution:
         target = abs(target)
         s = 0
         k = 0
-        while s < target:
+        w___ s < target:
             k += 1
             s += k
 
         delta = s - target
-        if delta % 2 == 0:
-            return k
-        else:  # delta is odd
-            if (k + 1) % 2 == 1:
-                return k + 1
-            else:
-                return k + 2
+        __ delta % 2 __ 0:
+            r_ k
+        ____  # delta is odd
+            __ (k + 1) % 2 __ 1:
+                r_ k + 1
+            ____
+                r_ k + 2

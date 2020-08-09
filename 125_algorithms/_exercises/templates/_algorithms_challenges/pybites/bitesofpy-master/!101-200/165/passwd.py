@@ -16,7 +16,7 @@ www-data:x:33:33:www-data:/var/www:/bin/sh
 backup:x:34:34:backup:/var/backups:/bin/sh
 list:x:38:38:Mailing List Manager:/var/list:/bin/sh
 irc:x:39:39:ircd:/var/run/ircd:/bin/sh
-gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+gnats:x:41:41:Gnats Bug-Reporting System (admin/var/lib/gnats:/bin/sh
 nobody:x:65534:65534:nobody:/nonexistent:/bin/sh
 libuuid:x:100:101::/var/lib/libuuid:/bin/sh
 Debian-exim:x:101:103::/var/spool/exim4:/bin/false
@@ -35,9 +35,9 @@ ssh-rsa:x:1004:1004::/home/ssh-rsa:/bin/bash
 artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash"""
 
 
-def get_users_for_shell(passwd_output: str = PASSWD_OUTPUT,
+___ get_users_for_shell(passwd_output: str = PASSWD_OUTPUT,
                         grep_shell: str = DEFAULT_SHELL) -> list:
     """Match the passwd_output string for users with grep_shell.
        Return a list of users.
     """
-    return [x.split(':')[0] for x in passwd_output.splitlines() if '/'+grep_shell in x.split(':')[6]]
+    r_ [x.split(':')[0] for x in passwd_output.splitlines() __ '/'+grep_shell in x.split(':')[6]]

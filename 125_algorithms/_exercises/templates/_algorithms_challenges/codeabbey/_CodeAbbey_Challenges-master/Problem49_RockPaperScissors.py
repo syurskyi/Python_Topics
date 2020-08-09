@@ -15,27 +15,27 @@ for line in data:
     for game in match:
         c1 = game[0] # p1 choice
         c2 = game[1]
-        if c1 == "S":
-            if c2 == "P":
+        __ c1 __ "S":
+            __ c2 __ "P":
                 p1+=1
-            elif c2 == "R":
+            ____ c2 __ "R":
                 p2+=1
                 
-        elif c1 == "R":
-            if c2 == "S":
+        ____ c1 __ "R":
+            __ c2 __ "S":
                 p1+=1
-            elif c2 == "P":
+            ____ c2 __ "P":
                 p2+=1
                 
-        elif c1 == "P":
-            if c2 == "R":
+        ____ c1 __ "P":
+            __ c2 __ "R":
                 p1+=1
-            elif c2 == "S":
+            ____ c2 __ "S":
                 p2+=1
 
-    if p1>p2:
+    __ p1>p2:
         print("1",end=" ")
-    else:
+    ____
         print("2",end=" ")
 
 

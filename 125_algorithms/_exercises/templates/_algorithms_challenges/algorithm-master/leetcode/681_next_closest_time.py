@@ -13,7 +13,7 @@ just a `next combination`
 ...     ('22:22', '22:22'), ('24:24', ''),
 ...     ('23:23', '23:32'), ('12:34', '12:41'),
 ...     ('00:00', '00:00'), ('01:32', '01:33'),
-... ):
+...
 ...     res = s.nextClosestTime(_in)
 ...     if res != _out: print('in: {}, out: {}, exp: {}'.format(_in, res, _out))
 ...     gotcha.append(res == _out)
@@ -23,22 +23,22 @@ True
 
 
 class Solution:
-    def nextClosestTime(self, time):
+    ___ nextClosestTime(self, time
         """
         :type time: str
         :rtype: str
         """
-        if not (
-            time and len(time) == 5 and time[2] == ':' and
+        __ not (
+            time and le.(time) __ 5 and time[2] __ ':' and
             0 <= int(time[:2]) < 24 and 0 <= int(time[3:]) < 60
-        ):
-            return ''
 
-        times = [int(t) for t in time if t != ':']
+            r_ ''
+
+        times = [int(t) for t in time __ t != ':']
         digits = []
 
-        for a in sorted(times):
-            if digits and a == digits[-1]:
+        for a in sorted(times
+            __ digits and a __ digits[-1]:
                 continue
 
             digits.append(a)
@@ -46,36 +46,36 @@ class Solution:
         ids = [digits.index(t) for t in times]
         ids[-1] += 1
 
-        while not self.is_valid(ids, digits):
+        w___ not self.is_valid(ids, digits
             ids[-1] += 1
 
         h = digits[ids[0]] * 10 + digits[ids[1]]
         m = digits[ids[2]] * 10 + digits[ids[3]]
 
-        return '{}:{}'.format(
-            '0' + str(h) if h < 10 else str(h),
-            '0' + str(m) if m < 10 else str(m)
+        r_ '{}:{}'.format(
+            '0' + str(h) __ h < 10 else str(h),
+            '0' + str(m) __ m < 10 else str(m)
         )
 
-    def is_valid(self, ids, digits):
-        n = len(digits)
+    ___ is_valid(self, ids, digits
+        n = le.(digits)
         carry = 0
-        i = len(ids) - 1
+        i = le.(ids) - 1
 
-        while i >= 0:
+        w___ i >= 0:
             carry += ids[i]
             ids[i] = carry % n
             carry = carry // n
             i -= 1
 
-        if carry:
-            ids[:] = [0] * len(ids)
-            return True
+        __ carry:
+            ids[:] = [0] * le.(ids)
+            r_ True
 
         h = digits[ids[0]] * 10 + digits[ids[1]]
         m = digits[ids[2]] * 10 + digits[ids[3]]
 
-        if 0 <= h < 24 and 0 <= m < 60:
-            return True
+        __ 0 <= h < 24 and 0 <= m < 60:
+            r_ True
 
-        return False
+        r_ False

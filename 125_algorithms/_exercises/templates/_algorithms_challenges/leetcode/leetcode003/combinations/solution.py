@@ -16,24 +16,24 @@ If n = 4 and k = 2, a solution is:
 """
 
 
-class Solution(object):
-    def combine(self, n, k):
+class Solution(object
+    ___ combine(self, n, k
         """
         :type n: int
         :type k: int
         :rtype: List[List[int]]
         """
         a = range(1, n + 1)
-        return self.combine_aux(a, k)
+        r_ self.combine_aux(a, k)
 
-    def combine_aux(self, a, k):
-        if k == 0:
-            return [[]]
-        else:
+    ___ combine_aux(self, a, k
+        __ k __ 0:
+            r_ [[]]
+        ____
             res = []
-            for i, e in enumerate(a):
+            for i, e in enumerate(a
                 rest_comb = self.combine_aux(a[i + 1:], k - 1)
                 for comb in rest_comb:
                     comb.insert(0, e)
                 res += rest_comb
-            return res
+            r_ res

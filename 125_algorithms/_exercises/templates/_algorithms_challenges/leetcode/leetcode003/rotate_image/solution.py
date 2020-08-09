@@ -1,14 +1,14 @@
 class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of lists of integers
-    def rotate(self, matrix):
-        n = len(matrix)
+    ___ rotate(self, matrix
+        n = le.(matrix)
         # Layers
-        for i in range(n / 2):
+        for i in range(n / 2
             # Each layer's index range
             start = i
             end = n - 1 - i
-            for j in range(start, end):
+            for j in range(start, end
                 offset = j - start
                 top = matrix[start][j]
                 # Left to Top
@@ -19,4 +19,4 @@ class Solution:
                 matrix[end][end - offset] = matrix[j][end]
                 # Top to Right
                 matrix[j][end] = top
-        return matrix
+        r_ matrix

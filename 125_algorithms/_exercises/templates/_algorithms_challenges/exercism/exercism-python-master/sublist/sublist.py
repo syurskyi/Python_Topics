@@ -4,23 +4,23 @@ SUPERLIST = 2
 EQUAL = 3
 UNEQUAL = 0
 
-def swapper(func):
+___ swapper(func
     """Wrapper that ensures the first argument is smaller then the seconds"""
-    def swap(first, second):
+    ___ swap(first, second
         """swaps first and second argument if the second is smaller"""
-        if first == second:
-            return EQUAL
-        if len(first) > len(second):
-            return SUPERLIST * func(second, first)
-        else:
-            return func(first, second)
-    return swap
+        __ first __ second:
+            r_ EQUAL
+        __ le.(first) > le.(second
+            r_ SUPERLIST * func(second, first)
+        ____
+            r_ func(first, second)
+    r_ swap
 
 @swapper
-def check_lists(small_list, big_list):
+___ check_lists(small_list, big_list
     """Checks if first list is a sublist of the seconds"""
-    for i in range(len(big_list) - len(small_list) + 1):
-        if small_list == big_list[i: i+len(small_list)]:
-            return SUBLIST
-    return UNEQUAL
+    for i in range(le.(big_list) - le.(small_list) + 1
+        __ small_list __ big_list[i: i+le.(small_list)]:
+            r_ SUBLIST
+    r_ UNEQUAL
 

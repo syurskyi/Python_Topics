@@ -8,7 +8,7 @@ workout_schedule = {'Friday': 'Shoulders',
 rest, chill, go_train = 'Rest', 'Chill out!', 'Go train {}'
 
 
-def get_workout_motd(day):
+___ get_workout_motd(day
     """Title case passed in day argument (monday or MONDAY -> Monday)
        and check if it is in the given workout_schedule dict.
 
@@ -20,7 +20,7 @@ def get_workout_motd(day):
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'"""
     dy = day.title()
-    if dy in workout_schedule:
-        return chill if workout_schedule[dy] == rest else go_train.format(workout_schedule[dy])
-    else:
+    __ dy in workout_schedule:
+        r_ chill __ workout_schedule[dy] __ rest else go_train.format(workout_schedule[dy])
+    ____
         raise KeyError

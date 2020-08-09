@@ -3,13 +3,13 @@ line = ""
 strValues = ""
 result = 0
 
-while True:
+w___ True:
     line = input()
-    if(line):
+    __(line
         values.append(line.replace(" ", ""))
-    else:
+    ____
         break
-mod = int(values[len(values)-1][1:])
+mod = int(values[le.(values)-1][1:])
 
 for i in values:
     strValues += i

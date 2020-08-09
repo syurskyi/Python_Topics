@@ -1,13 +1,13 @@
-import bisect
+______ bisect
 
 
 class OrderedList:
 
-    def __init__(self):
+    ___ __init__(self
         self._numbers = []
 
-    def add(self, num):
+    ___ add(self, num
         bisect.insort(self._numbers,num)
 
-    def __str__(self):
-        return ', '.join(str(num) for num in self._numbers)
+    ___ __str__(self
+        r_ ', '.join(str(num) for num in self._numbers)

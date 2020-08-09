@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestPowerSet(object):
+class TestPowerSet(object
 
-    def test_power_set(self):
+    ___ test_power_set(self
         input_set = ''
         expected = ['']
         self.run_test(input_set, expected)
@@ -24,16 +24,16 @@ class TestPowerSet(object):
         self.run_test(input_set, expected)
         print('Success: test_power_set')
 
-    def run_test(self, input_set, expected):
+    ___ run_test(self, input_set, expected
         combinatoric = Combinatoric()
         result = combinatoric.find_power_set(input_set)
         assert_equal(result, expected)
 
 
-def main():
+___ main(
     test = TestPowerSet()
     test.test_power_set()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -4,7 +4,7 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def arrayPairSum(self, nums):
+class Solution(object
+    ___ arrayPairSum(self, nums
         nums.sort()
-        return sum(nums[::2])
+        r_ sum(nums[::2])

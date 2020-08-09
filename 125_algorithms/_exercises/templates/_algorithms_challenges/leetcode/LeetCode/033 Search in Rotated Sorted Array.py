@@ -9,7 +9,7 @@ You may assume no duplicate exists in the array.
 """
 __author__ = 'Danyang'
 class Solution:
-    def search(self, A, target):
+    ___ search(self, A, target
         """
         assume no duplicate exists in the array
         Algorithm: modification of binary search
@@ -36,34 +36,34 @@ class Solution:
         :return: index, integer
         """
 
-        length = len(A)
+        length = le.(A)
         start = 0
         end = length-1  # [start, end]
-        while start<=end:
+        w___ start<=end:
             mid = (start+end)/2
             # found
-            if A[mid]==target:
-                return mid
+            __ A[mid]__target:
+                r_ mid
             # case 1
-            if A[start]<A[mid]<A[end]:
-                if target>A[mid]:
+            __ A[start]<A[mid]<A[end]:
+                __ target>A[mid]:
                     start = mid+1
-                else:
+                ____
                     end = mid-1
             # case 2
-            elif A[start]>A[mid] and A[mid]<A[end]:
-                if target>A[mid] and target<=A[end]:
+            ____ A[start]>A[mid] and A[mid]<A[end]:
+                __ target>A[mid] and target<=A[end]:
                     start = mid+1
-                else:
+                ____
                     end = mid -1
             # case 3
-            else:
-                if target<A[mid] and target>=A[start]:
+            ____
+                __ target<A[mid] and target>=A[start]:
                     end = mid-1
-                else:
+                ____
                     start = mid+1
 
-        return -1
+        r_ -1
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().search([5,1,3], 5)

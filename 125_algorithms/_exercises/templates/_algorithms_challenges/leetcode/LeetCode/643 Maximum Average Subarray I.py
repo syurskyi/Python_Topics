@@ -16,21 +16,21 @@ Note:
 1 <= k <= n <= 30,000.
 Elements of the given array will be in the range [-10,000, 10,000].
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def findMaxAverage(self, nums: List[int], k: int) -> float:
+    ___ findMaxAverage(self, nums: List[int], k: int) -> float:
         """
         two pointers
         """
         cur_sum = sum(nums[:k])
         maxa = cur_sum
         i = k
-        while i < len(nums):
+        w___ i < le.(nums
             cur_sum += nums[i]
             cur_sum -= nums[i-k]
             maxa = max(maxa, cur_sum)
             i += 1
 
-        return maxa / k
+        r_ maxa / k

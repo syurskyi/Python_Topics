@@ -1,5 +1,5 @@
 class Solution:
-    def mergeSortedArray(self, a, m, b, n):
+    ___ mergeSortedArray(self, a, m, b, n
         """
         :type a: List[int]
         :type m: int
@@ -10,16 +10,16 @@ class Solution:
         i, j = m - 1, n - 1
         k = m + n - 1
 
-        while i >= 0 and j >= 0:
-            if a[i] > b[j]:
+        w___ i >= 0 and j >= 0:
+            __ a[i] > b[j]:
                 a[k] = a[i]
                 i -= 1
-            else:
+            ____
                 a[k] = b[j]
                 j -= 1
             k -= 1
 
-        while j >= 0:
+        w___ j >= 0:
             a[k] = b[j]
             j -= 1
             k -= 1

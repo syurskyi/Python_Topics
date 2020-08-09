@@ -23,52 +23,52 @@ Note: Do not use the eval built-in library function.
 
 
 class Solution:
-    def calculate(self, s: str) -> int:
+    ___ calculate(self, s: str) -> int:
         """
         make +, - lower precedence operator as a unary operation
         recursively handle bracket
         """
         s = s + "\0"  # signal the end
         ret, _ = self.eval(s, 0, [])
-        return ret
+        r_ ret
 
-    def eval(self, s, i, stk):
+    ___ eval(self, s, i, stk
         """
         return the cursor since the cursor advances in recursion
         """
         operand = 0
         prev_op = "+"
-        while i < len(s):
+        w___ i < le.(s
             c = s[i]
-            if c == " ":
+            __ c __ " ":
                 pass  # not continue since need trigger i += 1
-            elif c.isdigit():
+            ____ c.isdigit(
                 operand = operand * 10 + int(c)
-            elif c in ("+", "-", "*", "/", ")", "\0"):   # delimiter
-                if prev_op == "+":
+            ____ c in ("+", "-", "*", "/", ")", "\0"   # delimiter
+                __ prev_op __ "+":
                     stk.append(operand)
-                elif prev_op == "-":
+                ____ prev_op __ "-":
                     stk.append(-operand)
-                elif prev_op == "*":
+                ____ prev_op __ "*":
                     prev_operand = stk.pop()
                     stk.append(prev_operand * operand)
-                elif prev_op == "/":
+                ____ prev_op __ "/":
                     prev_operand = stk.pop()
                     stk.append(int(prev_operand / operand))
 
-                if c in ("+", "-", "*", "/"):
+                __ c in ("+", "-", "*", "/"
                     operand = 0
                     prev_op = c
-                elif c in (")", "\0"):
-                    return sum(stk), i
-            elif c == "(":  # "(" is not delimiter
+                ____ c in (")", "\0"
+                    r_ sum(stk), i
+            ____ c __ "(":  # "(" is not delimiter
                 operand, i = self.eval(s, i + 1, [])
-            else:
+            ____
                 raise
 
             i += 1
 
 
-if __name__ == "__main__":
-    assert Solution().calculate("(( ( ( 4- 2)+ ( 6+ 10 ) )+ 1) /( ( ( 7 + 9 )* ( 5*8) )- ( 5 + ( 2 * 10 ) ) ) )") == 0
-    assert Solution().calculate("(2+6* 3+5- (3*14/7+2)*5)+3") == -12
+__ __name__ __ "__main__":
+    assert Solution().calculate("(( ( ( 4- 2)+ ( 6+ 10 ) )+ 1) /( ( ( 7 + 9 )* ( 5*8) )- ( 5 + ( 2 * 10 ) ) ) )") __ 0
+    assert Solution().calculate("(2+6* 3+5- (3*14/7+2)*5)+3") __ -12

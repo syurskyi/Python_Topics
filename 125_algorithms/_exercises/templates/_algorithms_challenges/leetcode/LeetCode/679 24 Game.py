@@ -18,36 +18,36 @@ unary operator. For example, with [1, 1, 1, 1] as input, the expression -1 - 1 -
 You cannot concatenate numbers together. For example, if the input is
 [1, 2, 1, 2], we cannot write this as 12 + 12.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def judgePoint24(self, nums: List[int]) -> bool:
-        return self.dfs(nums, {})
+    ___ judgePoint24(self, nums: List[int]) -> bool:
+        r_ self.dfs(nums, {})
 
-    def dfs(self, A, cache):
-        if tuple(A) not in cache:
-            n = len(A)
-            if n == 1:
-                return abs(A[0] - 24) < 0.001
+    ___ dfs(self, A, cache
+        __ tuple(A) not in cache:
+            n = le.(A)
+            __ n __ 1:
+                r_ abs(A[0] - 24) < 0.001
 
-            for i in range(n):
-                for j in range(i):
+            for i in range(n
+                for j in range(i
                     a = A[i]
                     b = A[j]
-                    for c in (a+b, a-b, b-a, a*b, b and a/b, a and b/a):
+                    for c in (a+b, a-b, b-a, a*b, b and a/b, a and b/a
                         # if 0, duplicated as a * b 
                         A_new = A[:j] + A[j+1:i] + A[i+1:] + [c]
                         A_new.sort()
-                        if self.dfs(A_new, cache):
+                        __ self.dfs(A_new, cache
                             cache[tuple(A)] = True
-                            return cache[tuple(A)]
+                            r_ cache[tuple(A)]
 
             cache[tuple(A)] = False
 
-        return cache[tuple(A)]
+        r_ cache[tuple(A)]
 
 
-if __name__ == "__main__":
-    assert Solution().judgePoint24([4, 1, 8, 7]) == True
-    assert Solution().judgePoint24([1, 2, 1, 2]) == False
+__ __name__ __ "__main__":
+    assert Solution().judgePoint24([4, 1, 8, 7]) __ True
+    assert Solution().judgePoint24([1, 2, 1, 2]) __ False

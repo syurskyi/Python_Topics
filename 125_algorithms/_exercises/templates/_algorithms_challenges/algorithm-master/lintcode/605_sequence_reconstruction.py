@@ -8,46 +8,46 @@ Topological Sort
 
 
 class Solution:
-    def sequenceReconstruction(self, org, seqs):
+    ___ sequenceReconstruction(self, org, seqs
         """
         :type org: list[int]
         :type seqs: list[list[int]]
         :rtype: bool
         """
-        if org is None or seqs is None:
-            return False
+        __ org is None or seqs is None:
+            r_ False
 
-        n = len(org)
+        n = le.(org)
         edges = dict.fromkeys(org)
         indeg = dict.fromkeys(org, 0)
 
         cnt = 0
         for seq in seqs:
-            if not seq:
+            __ not seq:
                 continue
 
-            cnt += len(seq)
+            cnt += le.(seq)
 
-            for i in range(len(seq)):
-                if not (1 <= seq[i] <= n):
-                    return False
-                if not edges[seq[i]]:
+            for i in range(le.(seq)):
+                __ not (1 <= seq[i] <= n
+                    r_ False
+                __ not edges[seq[i]]:
                     edges[seq[i]] = set()
 
                 # dedup same edge
-                if i > 0 and seq[i] not in edges[seq[i - 1]]:
+                __ i > 0 and seq[i] not in edges[seq[i - 1]]:
                     indeg[seq[i]] += 1
                     edges[seq[i - 1]].add(seq[i])
 
         # for case: org == [1], seqs == [[], []]
-        if cnt < n:
-            return False
+        __ cnt < n:
+            r_ False
 
-        for i in range(n - 1):
-            if indeg[org[i]] != 0:
-                return False
-            if org[i + 1] not in edges[org[i]]:
-                return False
+        for i in range(n - 1
+            __ indeg[org[i]] != 0:
+                r_ False
+            __ org[i + 1] not in edges[org[i]]:
+                r_ False
             indeg[org[i + 1]] -= 1
 
-        return True
+        r_ True

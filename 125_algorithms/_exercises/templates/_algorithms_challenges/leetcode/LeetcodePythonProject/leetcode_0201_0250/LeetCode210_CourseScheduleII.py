@@ -4,8 +4,8 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findOrder(self, numCourses, prerequisites):
+class Solution(object
+    ___ findOrder(self, numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -17,22 +17,22 @@ class Solution(object):
             graph[p[1]].append(p[0])
             degree[p[0]]+=1
         queue = []
-        for num, cnt in enumerate(degree):
-            if cnt == 0:
+        for num, cnt in enumerate(degree
+            __ cnt __ 0:
                 queue.append(num)
         res = []
         count = 0
-        while queue:
+        w___ queue:
             node = queue.pop(0)
             res.append(node)
             count += 1
             for node0 in graph[node]:
                 degree[node0] -= 1
-                if degree[node0] == 0:
+                __ degree[node0] __ 0:
                     queue.append(node0)
-        return res if count == numCourses else []
+        r_ res __ count __ numCourses else []
     
-    def test(self):
+    ___ test(self
         testCases = [
             [4, [[1,0],[2,0],[3,1],[3,2]]],
             [4, [[1,0],[2,0],[0,2],[3,1]]],
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

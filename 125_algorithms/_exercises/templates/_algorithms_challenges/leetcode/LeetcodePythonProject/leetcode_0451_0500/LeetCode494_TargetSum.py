@@ -4,29 +4,29 @@ Created on May 9, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findTargetSumWays(self, nums, S):
+class Solution(object
+    ___ findTargetSumWays(self, nums, S
         """
         :type nums: List[int]
         :type S: int
         :rtype: int
         """
         sumVal = sum(nums)
-        if sumVal < S or (sumVal+S)%2 != 0:
-            return 0
+        __ sumVal < S or (sumVal+S)%2 != 0:
+            r_ 0
         target = (sumVal+S)//2
-        return self.helper(nums, target)
+        r_ self.helper(nums, target)
     
-    def helper(self, nums, target):
+    ___ helper(self, nums, target
         dp = [0]*(target+1)
         dp[0] = 1
         for num in nums:
-            for i in range(target, -1, -1):
-                if i >= num:
+            for i in range(target, -1, -1
+                __ i >= num:
                     dp[i] += dp[i-num]
-        return dp[-1]
+        r_ dp[-1]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 1, 1, 1, 1],
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

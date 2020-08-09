@@ -5,32 +5,32 @@ The root's parent is null.
 
 Definition of ParentTreeNode:
 class ParentTreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.parent, self.left, self.right = None, None, None
 """
 
 
 class Solution:
-    def lowestCommonAncestorII(self, root, a, b):
+    ___ lowestCommonAncestorII(self, root, a, b
         """
         :type root: ParentTreeNode
         :type a: ParentTreeNode
         :type b: ParentTreeNode
         :rtype: ParentTreeNode
         """
-        if not root:
-            return root
+        __ not root:
+            r_ root
 
         nodes = set()
 
-        while a:
+        w___ a:
             nodes.add(a)
             a = a.parent
 
-        while b:
-            if b in nodes:
-                return b
+        w___ b:
+            __ b in nodes:
+                r_ b
             b = b.parent
 
-        return root
+        r_ root

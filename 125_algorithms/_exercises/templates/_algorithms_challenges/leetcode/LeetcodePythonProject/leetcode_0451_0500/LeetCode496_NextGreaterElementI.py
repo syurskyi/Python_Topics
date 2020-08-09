@@ -4,25 +4,25 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def nextGreaterElement(self, findNums, nums):
+class Solution(object
+    ___ nextGreaterElement(self, findNums, nums
         """
         :type findNums: List[int]
         :type nums: List[int]
         :rtype: List[int]
         """
         res = []
-        for k, num0 in enumerate(findNums):
+        for k, num0 in enumerate(findNums
             ind = nums.index(num0)
-            for i in range(ind, len(nums)):
-                if nums[i] > num0:
+            for i in range(ind, le.(nums)):
+                __ nums[i] > num0:
                     res.append(nums[i])
                     break
-            if len(res) == k:
+            __ le.(res) __ k:
                 res.append(-1)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 [4, 1, 2],
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -27,13 +27,13 @@ Note:
 0 <= K <= A.length
 A[i] is 0 or 1
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def longestOnes(self, A: List[int], K: int) -> int:
+    ___ longestOnes(self, A: List[int], K: int) -> int:
         """
-        len(gap)
+        le.(gap)
         But there is multiple gap need to fill, and which gaps to fill is
         undecided. Greedy? No. DP?
 
@@ -41,25 +41,25 @@ class Solution:
         """
         i, j = 0, 0
         cnt_0 = 0
-        n = len(A)
+        n = le.(A)
         ret = 0
-        while i < n and j < n:
-            while j < n:
-                if A[j] == 0 and cnt_0 < K:
+        w___ i < n and j < n:
+            w___ j < n:
+                __ A[j] __ 0 and cnt_0 < K:
                     j += 1
                     cnt_0 += 1
-                elif A[j] == 1:
+                ____ A[j] __ 1:
                     j += 1
-                else:
+                ____
                     break
 
             ret = max(ret, j - i)
-            if A[i] == 0:
+            __ A[i] __ 0:
                 cnt_0 -= 1
             i += 1
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2) == 6
+__ __name__ __ "__main__":
+    assert Solution().longestOnes([1,1,1,0,0,0,1,1,1,1,0], 2) __ 6

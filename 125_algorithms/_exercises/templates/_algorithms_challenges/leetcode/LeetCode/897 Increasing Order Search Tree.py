@@ -43,33 +43,33 @@ Each node will have a unique integer value from 0 to 1000.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.prev = None
         self.root = None
 
-    def increasingBST(self, root: TreeNode) -> TreeNode:
+    ___ increasingBST(self, root: TreeNode) -> TreeNode:
         """
         keep a previous index
         in-order is easy
         """
         self.dfs(root)
-        return self.root
+        r_ self.root
 
-    def dfs(self, node):
-        if not node:
-            return
+    ___ dfs(self, node
+        __ not node:
+            r_
 
         self.dfs(node.left)
-        if not self.prev:
+        __ not self.prev:
             self.root = node
-        else:
+        ____
             self.prev.right = node
             node.left = None  # need test case to test it
 

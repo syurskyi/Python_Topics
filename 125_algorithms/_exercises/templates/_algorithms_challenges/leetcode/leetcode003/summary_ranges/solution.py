@@ -5,37 +5,37 @@ ranges.
 For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 """
 
-class Solution(object):
-    def summaryRanges(self, nums):
+class Solution(object
+    ___ summaryRanges(self, nums
         """
         :type nums: List[int]
         :rtype: List[str]
         """
         res = []
-        n = len(nums)
+        n = le.(nums)
         start = -1
         end = -1
-        for i, e in enumerate(nums):
-            if i == 0:
+        for i, e in enumerate(nums
+            __ i __ 0:
                 start = 0
                 end = 0
-            else:
-                if e != nums[i - 1] + 1:
+            ____
+                __ e != nums[i - 1] + 1:
                     r = self.make_range(start, end, nums)
                     res.append(r)
                     start = i
                 end = i
-            if i == n - 1:
+            __ i __ n - 1:
                 end = i
                 r = self.make_range(start, end, nums)
                 res.append(r)
-        return res
+        r_ res
 
-    def make_range(self, start, end, nums):
-        if end > start:
-            return "%d->%d" % (nums[start], nums[end])
-        elif end == start:
-            return "%d" % nums[end]
+    ___ make_range(self, start, end, nums
+        __ end > start:
+            r_ "%d->%d" % (nums[start], nums[end])
+        ____ end __ start:
+            r_ "%d" % nums[end]
 
 
 a1 = [0, 1, 2, 4, 5, 7]

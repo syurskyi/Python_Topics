@@ -3,19 +3,19 @@
 As a joke for the PyBites guys, I don't see why it wouldn't work anywhere else though. They always 
 start off their newsletter annoucements with:
 
-from @PyBites import newsletter
+from @PyBites ______ newsletter
 
 So I turned it into actual code that pulls their feed and opens their latest newsletter in a browser :)
 """
-import os
-import requests
-import webbrowser
+______ os
+______ requests
+______ webbrowser
 
-from bs4 import BeautifulSoup
-from re import sub
+from bs4 ______ BeautifulSoup
+from re ______ sub
 
 
-def newsletter():
+___ newsletter(
     """Parses rss feed
     
     It pulls out the articles and displays their title, link, and description.
@@ -32,8 +32,8 @@ def newsletter():
     news = soup.find_all('li', class_='campaign')
     
     # iterate over all the newsletters
-    for i, link in enumerate(news):
-        if i == 0:
+    for i, link in enumerate(news
+        __ i __ 0:
             article = link.a['href']
         print(link.text, '\n', link.a['href'])
     
@@ -41,9 +41,9 @@ def newsletter():
     webbrowser.open(article)
     
 
-def main():
+___ main(
     newsletter()
     
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     main()

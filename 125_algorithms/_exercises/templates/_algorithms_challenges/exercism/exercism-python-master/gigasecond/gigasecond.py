@@ -1,7 +1,7 @@
 """Adds a gigaseconds to a give date"""
 
-from datetime import timedelta
+from datetime ______ timedelta
 
-def add_gigasecond(now):
+___ add_gigasecond(now
     """Adds a gigaseconds to a given date"""
-    return now + timedelta(seconds=10**9)
+    r_ now + timedelta(seconds=10**9)

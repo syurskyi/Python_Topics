@@ -7,14 +7,14 @@ class Solution:
     @param: k: An integer
     @return: an integer
     """
-    def copyBooks(self, P, k):
-        if not P or not k:
-            return 0
-        n = len(P)
-        if n == 1:
-            return P[0]
+    ___ copyBooks(self, P, k
+        __ not P or not k:
+            r_ 0
+        n = le.(P)
+        __ n __ 1:
+            r_ P[0]
 
-        if k > n:
+        __ k > n:
             k = n
 
         INFINITY = float('inf')
@@ -24,14 +24,14 @@ class Solution:
         """
         dp = [[INFINITY] * k for _ in range(n)]
 
-        for j in range(k):
+        for j in range(k
             dp[0][j] = P[0]
-        for i in range(1, n):
+        for i in range(1, n
             dp[i][0] = dp[i - 1][0] + P[i]
 
-        for i in range(1, n):
-            for j in range(1, k):
-                if j > i:
+        for i in range(1, n
+            for j in range(1, k
+                __ j > i:
                     """
                     if `j > i`, means books more than copiers
                     the people after `j`th people dont have to work
@@ -39,7 +39,7 @@ class Solution:
                     dp[i][j] = dp[i][j - 1]
                     continue
 
-                for h in range(j - 1, i + 1):
+                for h in range(j - 1, i + 1
                     """
                     `copied_pages` is the maximum copied pages,
                     and also means the maximum time spent
@@ -49,12 +49,12 @@ class Solution:
                     then `j`th man will be able to spend less time finishing it
                     """
                     copied_pages = dp[i][0] - dp[h][0]
-                    if dp[h][j - 1] > copied_pages:
+                    __ dp[h][j - 1] > copied_pages:
                         copied_pages = dp[h][j - 1]
-                    if copied_pages < dp[i][j]:
+                    __ copied_pages < dp[i][j]:
                         dp[i][j] = copied_pages
 
-        return dp[n - 1][k - 1]
+        r_ dp[n - 1][k - 1]
 
 
 """
@@ -66,14 +66,14 @@ class Solution:
     @param: k: An integer
     @return: an integer
     """
-    def copyBooks(self, P, k):
-        if not P or not k:
-            return 0
-        n = len(P)
-        if n == 1:
-            return P[0]
+    ___ copyBooks(self, P, k
+        __ not P or not k:
+            r_ 0
+        n = le.(P)
+        __ n __ 1:
+            r_ P[0]
 
-        if k > n:
+        __ k > n:
             k = n
 
         """
@@ -81,13 +81,13 @@ class Solution:
         """
         dp = [[0] * k for _ in range(n)]
 
-        for j in range(k):
+        for j in range(k
             dp[0][j] = P[0]
-        for i in range(1, n):
+        for i in range(1, n
             dp[i][0] = dp[i - 1][0] + P[i]
 
-        for j in range(1, k):
-            for i in range(1, j):
+        for j in range(1, k
+            for i in range(1, j
                 """
                 if `j > i`, means books more than copiers
                 the people after `j`th people dont have to work
@@ -95,16 +95,16 @@ class Solution:
                 dp[i][j] = dp[i][j - 1]
 
             h = copied_pages = 0
-            for i in range(j, n):
+            for i in range(j, n
                 """
                 `h` means the maximum books `j - 1` men copied in shortest time
                 """
-                while h < i and dp[h][j - 1] < dp[i][0] - dp[h][0]:
+                w___ h < i and dp[h][j - 1] < dp[i][0] - dp[h][0]:
                     h += 1
 
                 dp[i][j] = dp[h][j - 1]
 
-                if h == 0:
+                __ h __ 0:
                     continue
 
                 """
@@ -118,12 +118,12 @@ class Solution:
                 then `j`th man will be able to spend less time finishing it
                 """
                 copied_pages = dp[i][0] - dp[h - 1][0]
-                if dp[h - 1][j - 1] > copied_pages:
+                __ dp[h - 1][j - 1] > copied_pages:
                     copied_pages = dp[h - 1][j - 1]
-                if copied_pages < dp[i][j]:
+                __ copied_pages < dp[i][j]:
                     dp[i][j] = copied_pages
 
-        return dp[n - 1][k - 1]
+        r_ dp[n - 1][k - 1]
 
 
 """
@@ -143,52 +143,52 @@ class Solution:
     @param: k: An integer
     @return: an integer
     """
-    def copyBooks(self, P, k):
-        if not P or not k:
-            return 0
-        n = len(P)
-        if n == 1:
-            return P[0]
+    ___ copyBooks(self, P, k
+        __ not P or not k:
+            r_ 0
+        n = le.(P)
+        __ n __ 1:
+            r_ P[0]
 
-        if k > n:
+        __ k > n:
             k = n
 
         left = right = P[0]
-        for i in range(1, len(P)):
-            if P[i] > left:
+        for i in range(1, le.(P)):
+            __ P[i] > left:
                 left = P[i]
 
             right += P[i]
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
-            if self.check_if_possible(P, mid, k):
+            __ self.check_if_possible(P, mid, k
                 right = mid
-            else:
+            ____
                 left = mid
 
         """
         MUST check `left` first, since we need the min spent time
         """
-        return left if self.check_if_possible(P, left, k) else right
+        r_ left __ self.check_if_possible(P, left, k) else right
 
-    def check_if_possible(self, P, spent_time, max_copiers):
+    ___ check_if_possible(self, P, spent_time, max_copiers
         """
         check if possible to copy all `pages` in `spent_time`
         and participation is not more than `max_copiers`
         """
         copied_pages, copiers = 0, 1
 
-        for i in range(len(P)):
+        for i in range(le.(P)):
             """
             if a copier will spend more than `spent_time`
             add one more copier in
             """
-            if copied_pages + P[i] > spent_time:
+            __ copied_pages + P[i] > spent_time:
                 copied_pages = 0
                 copiers += 1
-            if copiers > max_copiers:
-                return False
+            __ copiers > max_copiers:
+                r_ False
             copied_pages += P[i]
 
-        return True
+        r_ True

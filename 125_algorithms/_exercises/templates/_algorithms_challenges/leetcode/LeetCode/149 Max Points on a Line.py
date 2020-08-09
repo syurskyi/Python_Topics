@@ -4,7 +4,7 @@ Given n points on a 2D plane, find the maximum number of points that lie on the 
 __author__ = 'Danyang'
 #Definition for a point
 class Point:
-    def __init__(self, a=0, b=0):
+    ___ __init__(self, a=0, b=0
         """
 
         :param a: int
@@ -15,7 +15,7 @@ class Point:
         self.y = b
 
 class Solution:
-    def maxPoints_complicated(self, points):
+    ___ maxPoints_complicated(self, points
         """
 
         :param points: a list of Points
@@ -24,14 +24,14 @@ class Solution:
 
         hash_map = {}  # key -> inner_dict, where key = (k, b), inner_dict is index -> list
 
-        length = len(points)
-        for i in xrange(length):
-            for j in xrange(i+1, length):
+        length = le.(points)
+        for i in xrange(length
+            for j in xrange(i+1, length
                 point1 = points[i]
                 point2 = points[j]
-                if point1.x == point2.x:
+                __ point1.x __ point2.x:
                     key = (1 << 32, point1.x)
-                else:
+                ____
                     slope = float(point1.y-point2.y)/(point1.x-point2.x)
                     intersection = slope*point1.x - point1.y
 
@@ -40,78 +40,78 @@ class Solution:
 
                     key = (slope, intersection)  # only tuples can be hashed, whereas lists cannot
 
-                if key not in hash_map:
+                __ key not in hash_map:
                     hash_map[key] = [0 for _ in points]
                 hash_map[key][i] = 1  # avoid duplicate
                 hash_map[key][j] = 1
 
 
-        if (length<=1):
-            return length
+        __ (length<=1
+            r_ length
 
-        if(len(hash_map)==0):
-            return 0
+        __(le.(hash_map)__0
+            r_ 0
 
         maxa = -1<<32
-        for key, item in hash_map.items():
-            # current = len(filter(lambda x: x==1, item)) # increase complexity
+        for key, item in hash_map.items(
+            # current = le.(filter(lambda x: x==1, item)) # increase complexity
             current = item.count(1)
-            if current>maxa:
+            __ current>maxa:
                 maxa = current
 
-        return maxa
+        r_ maxa
 
-    def maxPoints(self, points):
+    ___ maxPoints(self, points
         """
         reference: http://fisherlei.blogspot.sg/2013/12/leetcode-max-points-on-line-solution.html
         :param points: a list of Points
         :return: int
         """
         maxa = -1<<32
-        length = len(points)
-        if (length<=1):
-            return length
+        length = le.(points)
+        __ (length<=1
+            r_ length
 
-        for i in xrange(length):
+        for i in xrange(length
             hash_map = {}
             duplicate = 1 # point_i itself
-            for j in xrange(length):
-                if i==j:
+            for j in xrange(length
+                __ i__j:
                     continue
 
                 point1 = points[i]
                 point2 = points[j]
-                if point1.x==point2.x and point1.y==point2.y:
+                __ point1.x__point2.x and point1.y__point2.y:
                     duplicate += 1
                     continue
-                if point1.x==point2.x:
+                __ point1.x__point2.x:
                     key = 1<<32
-                else:
+                ____
                     slope = float(point1.y-point2.y)/(point1.x-point2.x)
                     slope = int(slope*10000) # avoid numeric errors
                     # no need to calculate intersection. During this iteration, all lines pass point1
                     key = slope
 
-                if key not in hash_map:
+                __ key not in hash_map:
                     hash_map[key] = 0
                 hash_map[key]+=1
 
 
-            if hash_map:
+            __ hash_map:
                 max_key = max(hash_map, key=hash_map.get)
                 max_value = hash_map[max_key]
-            else:
+            ____
                 max_value  = 0
             maxa = max(maxa, max_value+duplicate)
 
-        return maxa
+        r_ maxa
 
 
 
 
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     points = [(560, 248), (0, 16), (30, 250), (950, 187), (630, 277), (950, 187), (-212, -268), (-287, -222), (53, 37),
               (-280, -100), (-1, -14), (-5, 4), (-35, -387), (-95, 11), (-70, -13), (-700, -274), (-95, 11), (-2, -33),
               (3, 62), (-4, -47), (106, 98), (-7, -65), (-8, -71), (-8, -147), (5, 5), (-5, -90), (-420, -158),
@@ -126,4 +126,4 @@ if __name__=="__main__":
 
     points = [Point(point[0], point[1]) for point in points]
     print Solution().maxPoints(points)
-    assert Solution().maxPoints(points)==22
+    assert Solution().maxPoints(points)__22

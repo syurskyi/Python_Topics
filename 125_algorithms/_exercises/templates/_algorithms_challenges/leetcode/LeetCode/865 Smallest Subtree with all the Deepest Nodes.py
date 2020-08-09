@@ -27,52 +27,52 @@ Both the input and output have TreeNode type.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.deepest = -1
         self.deepest_nodes = None
         self.ret = None
 
-    def subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
+    ___ subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
         """
         lowest common ancestor of deepest node
         """
         self.down(root, 0)
-        if len(self.deepest_nodes) == 1:
-            return self.deepest_nodes.pop()
+        __ le.(self.deepest_nodes) __ 1:
+            r_ self.deepest_nodes.pop()
 
         self.count(root)
-        return self.ret
+        r_ self.ret
 
-    def down(self, node: TreeNode, d: int) -> None:
-        if not node:
-            return
+    ___ down(self, node: TreeNode, d: int) -> None:
+        __ not node:
+            r_
 
-        if d > self.deepest:
+        __ d > self.deepest:
             self.deepest = d
             self.deepest_nodes = set([node])
-        elif d == self.deepest:
+        ____ d __ self.deepest:
             self.deepest_nodes.add(node)
 
         self.down(node.left, d + 1)
         self.down(node.right, d + 1)
 
-    def count(self, node: TreeNode) -> int:
-        if not node:
-            return 0
+    ___ count(self, node: TreeNode) -> int:
+        __ not node:
+            r_ 0
 
         l = self.count(node.left)
         r = self.count(node.right)
-        if l != 0 and r != 0 and l + r == len(self.deepest_nodes):
+        __ l != 0 and r != 0 and l + r __ le.(self.deepest_nodes
             self.ret = node
 
         count = l + r
-        if node in self.deepest_nodes:
+        __ node in self.deepest_nodes:
             count += 1
-        return count
+        r_ count

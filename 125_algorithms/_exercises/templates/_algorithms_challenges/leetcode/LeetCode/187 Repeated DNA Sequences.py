@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def findRepeatedDnaSequences(self, s):
+    ___ findRepeatedDnaSequences(self, s
         """
         Limited space of possible values --> rewrite hash function
 
@@ -29,32 +29,32 @@ class Solution:
         :type s: str
         :rtype: list[str]
         """
-        if len(s) < 10:
-            return []
+        __ le.(s) < 10:
+            r_ []
 
         s = map(self.mapping, list(s))
         h = set()
         # in_ret = set()
         ret = set()
         cur = 0
-        for i in xrange(10):
+        for i in xrange(10
             cur <<= 2
             cur &= 0xFFFFF
             cur += s[i]
         h.add(cur)
 
-        for i in xrange(10, len(s)):
+        for i in xrange(10, le.(s)):
             cur <<= 2
             cur &= 0xFFFFF  # 10 * 2 = 20 position
             cur += s[i]
-            if cur in h and cur not in ret:
+            __ cur in h and cur not in ret:
                 ret.add(cur)
-            else:
+            ____
                 h.add(cur)
 
-        return map(self.decode, ret)
+        r_ map(self.decode, ret)
 
-    def decode(self, s):
+    ___ decode(self, s
         dic = {
             0: "A",
             1: "C",
@@ -62,13 +62,13 @@ class Solution:
             3: "T"
         }
         ret = []
-        for i in xrange(10):
+        for i in xrange(10
             ret.append(dic[s%4])
             s >>= 2
 
-        return "".join(reversed(ret))
+        r_ "".join(reversed(ret))
 
-    def mapping(self, a):
+    ___ mapping(self, a
         dic = {
             "A": 0,
             "C": 1,
@@ -76,7 +76,7 @@ class Solution:
             "T": 3,
             }
 
-        return dic[a]
+        r_ dic[a]
 
-if __name__ == "__main__":
-    assert Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT") == ['CCCCCAAAAA', 'AAAAACCCCC']
+__ __name__ __ "__main__":
+    assert Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT") __ ['CCCCCAAAAA', 'AAAAACCCCC']

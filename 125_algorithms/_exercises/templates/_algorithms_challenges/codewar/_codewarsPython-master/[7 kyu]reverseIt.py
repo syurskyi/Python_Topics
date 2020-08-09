@@ -1,14 +1,14 @@
-def reverse_it(data):
-    if isinstance(data,bool):
-        return data
-    elif isinstance(data,int):
-        return int(str(data)[::-1])
-    elif isinstance(data,str):
-        return data[::-1]
-    elif isinstance(data,float):
-        return float(str(data)[::-1])
+___ reverse_it(data
+    __ isinstance(data,bool
+        r_ data
+    ____ isinstance(data,int
+        r_ int(str(data)[::-1])
+    ____ isinstance(data,str
+        r_ data[::-1]
+    ____ isinstance(data,float
+        r_ float(str(data)[::-1])
 
-    else:
-        return data
+    ____
+        r_ data
 
     

@@ -20,11 +20,11 @@ Note:
 2 <= A.length <= 50000
 1 <= A[i] <= 1000
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def maxScoreSightseeingPair(self, A: List[int]) -> int:
+    ___ maxScoreSightseeingPair(self, A: List[int]) -> int:
         """
         Attribute the result to the ending element
 
@@ -37,33 +37,33 @@ class Solution:
             ret = max(ret, prev_max - 1 + a)
             prev_max = max(prev_max - 1, a)
 
-        return ret
+        r_ ret
 
-    def maxScoreSightseeingPair_error(self, A: List[int]) -> int:
+    ___ maxScoreSightseeingPair_error(self, A: List[int]) -> int:
         """
         brute force O(N^2)
 
         pre-processing, adjust A[i] as A[i] - i
         error, no direction
         """
-        n = len(A)
+        n = le.(A)
         B = []
-        for i in range(n):
+        for i in range(n
             B.append(A[i] - i)
 
         # find top 2
         m1, m2 = None, None
-        for i in range(n):
-            if m1 is None:
+        for i in range(n
+            __ m1 is None:
                 m1 = i
-            elif m2 is None:
+            ____ m2 is None:
                 m2 = i
-            elif B[i] + (i - m1) > B[m1]:
+            ____ B[i] + (i - m1) > B[m1]:
                 m1 = i
-            elif B[i] + (i - m2) > B[m2]:
+            ____ B[i] + (i - m2) > B[m2]:
                 m2 = i
-        return A[m2] + A[m1] - abs(m2 - m1)
+        r_ A[m2] + A[m1] - abs(m2 - m1)
 
 
-if __name__ == "__main__":
-    assert Solution().maxScoreSightseeingPair([8,1,5,2,6]) == 11
+__ __name__ __ "__main__":
+    assert Solution().maxScoreSightseeingPair([8,1,5,2,6]) __ 11

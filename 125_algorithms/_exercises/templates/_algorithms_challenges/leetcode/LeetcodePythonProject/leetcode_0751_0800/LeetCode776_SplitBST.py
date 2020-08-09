@@ -4,64 +4,64 @@ Created on Apr 8, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def splitBST(self, root, V):
+class Solution(object
+    ___ splitBST(self, root, V
         """
         :type root: TreeNode
         :type V: int
         :rtype: List[TreeNode]
         """
-        if not root: return [None, None]
+        __ not root: r_ [None, None]
         stack = []
         root0 = root
-        while root0:
+        w___ root0:
             stack.append(root0)
             root0 = root0.left
         preNode = None
-        while stack:
+        w___ stack:
             node = stack.pop()
-            if (not preNode and V < node.val)\
-                or (preNode and preNode.val <= V < node.val):
-                return self.getRes(root, preNode)
-            else:
+            __ (not preNode and V < node.val)\
+                or (preNode and preNode.val <= V < node.val
+                r_ self.getRes(root, preNode)
+            ____
                 preNode = node
                 node0 = node.right
-                while node0:
+                w___ node0:
                     stack.append(node0)
                     node0 = node0.left
-        return [root, None]
+        r_ [root, None]
     
-    def getRes(self, root, node):
+    ___ getRes(self, root, node
         root0 = root
-        if not node:
-            return [root0, None]
+        __ not node:
+            r_ [root0, None]
         stack = []
-        while node != root0:
+        w___ node != root0:
             stack.append(root0)
-            if root0.val > node.val:
+            __ root0.val > node.val:
                 root0 = root0.left
-            else:
+            ____
                 root0 = root0.right
         cand = node
-        while stack and stack[-1].val < node.val:
+        w___ stack and stack[-1].val < node.val:
             cand = stack.pop()
-        if not stack:
+        __ not stack:
             right = node.right
             node.right = None
-            return [root, right]
-        else:
+            r_ [root, right]
+        ____
             right = node.right
             node.right = None
             stack[-1].left = right
-            return [root, cand]
+            r_ [root, cand]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 TreeNode(4,
@@ -83,5 +83,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

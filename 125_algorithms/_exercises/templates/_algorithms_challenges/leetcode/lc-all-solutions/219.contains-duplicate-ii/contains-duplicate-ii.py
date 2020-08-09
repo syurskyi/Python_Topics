@@ -1,31 +1,31 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def containsNearbyDuplicate(self, nums, k):
+class Solution(object
+  ___ containsNearbyDuplicate(self, nums, k
     """
     :type nums: List[int]
     :type k: int
     :rtype: bool
     """
-    if not nums:
-      return False
-    if k == 0:
-      return False
+    __ not nums:
+      r_ False
+    __ k __ 0:
+      r_ False
     k = k + 1
-    k = min(k, len(nums))
+    k = min(k, le.(nums))
 
     window = deque([])
     d = set()
-    for i in range(0, k):
-      if nums[i] in d:
-        return True
+    for i in range(0, k
+      __ nums[i] in d:
+        r_ True
       d |= {nums[i]}
       window.append(i)
-    for i in range(k, len(nums)):
+    for i in range(k, le.(nums)):
       d -= {nums[window.popleft()]}
-      if nums[i] in d:
-        return True
+      __ nums[i] in d:
+        r_ True
       d |= {nums[i]}
       window.append(i)
-    return False
+    r_ False

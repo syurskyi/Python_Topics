@@ -5,8 +5,8 @@ simple DFS
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def countComponents(self, n, edges):
+class Solution(object
+    ___ countComponents(self, n, edges
         """
         :type n: int
         :type edges: List[List[int]]
@@ -19,15 +19,15 @@ class Solution(object):
 
         visited = [False for _ in xrange(n)]
         cnt = 0
-        for v in xrange(n):
-            if not visited[v]:
+        for v in xrange(n
+            __ not visited[v]:
                 cnt += 1
                 self.dfs(V, v, visited)
 
-        return cnt
+        r_ cnt
 
-    def dfs(self, V, v, visited):
+    ___ dfs(self, V, v, visited
         visited[v] = True
         for nbr in V[v]:
-            if not visited[nbr]:
+            __ not visited[nbr]:
                 self.dfs(V, nbr, visited)

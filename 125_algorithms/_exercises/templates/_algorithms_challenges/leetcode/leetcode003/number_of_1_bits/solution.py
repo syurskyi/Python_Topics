@@ -7,15 +7,15 @@ For example, the 32-bit integer ’11' has binary representation
 
 """
 
-class Solution(object):
-    def hammingWeight(self, n):
+class Solution(object
+    ___ hammingWeight(self, n
         """
         :type n: int
         :rtype: int
         """
         res = 0
-        while n > 0:
-            if n & 1 == 1:
+        w___ n > 0:
+            __ n & 1 __ 1:
                 res += 1
             n >>= 1
-        return res
+        r_ res

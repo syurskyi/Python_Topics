@@ -5,7 +5,7 @@ Main Concept
 
 class SVNRepo:
     @classmethod
-    def isBadVersion(cls, id)
+    ___ isBadVersion(cls, id)
         # Run unit tests to check whether verison `id` is a bad version
         # return true if unit tests passed else false.
 You can use SVNRepo.isBadVersion(10) to check whether version 10 is a
@@ -14,20 +14,20 @@ bad version.
 
 
 class Solution:
-    def findFirstBadVersion(self, n):
+    ___ findFirstBadVersion(self, n
         """
         :type n: int
         :rtype: int
         """
-        if not n:
-            return 0
+        __ not n:
+            r_ 0
 
         left, right = 1, n
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
-            if isBadVersion(mid):
+            __ isBadVersion(mid
                 right = mid
-            else:
+            ____
                 left = mid
 
-        return left if isBadVersion(left) else right
+        r_ left __ isBadVersion(left) else right

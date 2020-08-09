@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 class Vector2D:
-    def __init__(self, vec2d):
+    ___ __init__(self, vec2d
         """
         :type vec2d: list[list[int]]
         :type: None
@@ -14,26 +14,26 @@ class Vector2D:
         self.i = 0
         self.j = 0
 
-    def next(self):
+    ___ next(self
         """
 
         :rtype: int
         """
         ret = None
-        if self.hasNext():
+        __ self.hasNext(
             ret = self.vec2d[self.i][self.j]
             self.j += 1
 
-        return ret
+        r_ ret
 
-    def hasNext(self):
+    ___ hasNext(self
         """
         This function structures the two pointers.
         :rtype: bool
         """
         # update
-        while self.i < len(self.vec2d) and self.j >= len(self.vec2d[self.i]):
+        w___ self.i < le.(self.vec2d) and self.j >= le.(self.vec2d[self.i]
             self.i += 1
             self.j = 0
 
-        return self.i < len(self.vec2d) and self.j < len(self.vec2d[self.i])
+        r_ self.i < le.(self.vec2d) and self.j < le.(self.vec2d[self.i])

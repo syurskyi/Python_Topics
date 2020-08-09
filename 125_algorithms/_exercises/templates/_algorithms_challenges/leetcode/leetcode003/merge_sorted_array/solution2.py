@@ -9,8 +9,8 @@ initialized in nums1 and nums2 are m and n respectively.
 """
 
 
-class Solution(object):
-    def merge(self, nums1, m, nums2, n):
+class Solution(object
+    ___ merge(self, nums1, m, nums2, n
         """
         :type nums1: List[int]
         :type m: int
@@ -21,17 +21,17 @@ class Solution(object):
         i = m - 1
         j = n - 1
         k = m + n - 1
-        while k >= 0:
-            if i >= 0 and j >= 0:
-                if nums1[i] > nums2[j]:
+        w___ k >= 0:
+            __ i >= 0 and j >= 0:
+                __ nums1[i] > nums2[j]:
                     nums1[k] = nums1[i]
                     i -= 1
-                else:
+                ____
                     nums1[k] = nums2[j]
                     j -= 1
-            elif i < 0:
+            ____ i < 0:
                 nums1[k] = nums2[j]
                 j -= 1
-            else:
+            ____
                 break
             k -= 1

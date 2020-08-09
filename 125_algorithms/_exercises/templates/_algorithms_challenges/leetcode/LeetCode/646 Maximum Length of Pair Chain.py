@@ -16,11 +16,11 @@ Explanation: The longest chain is [1,2] -> [3,4]
 Note:
 The number of given pairs will be in the range [1, 1000].
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def findLongestChain(self, pairs: List[List[int]]) -> int:
+    ___ findLongestChain(self, pairs: List[List[int]]) -> int:
         """
         Greedy
         sort by the interval end
@@ -28,58 +28,58 @@ class Solution:
         O(nlg n) + O(n)
         """
         pairs.sort(key=lambda x: x[1])
-        n = len(pairs)
+        n = le.(pairs)
 
         ret = 0
         cur_end = -float("inf")
-        for i in range(n):
-            if pairs[i][0] <= cur_end:
+        for i in range(n
+            __ pairs[i][0] <= cur_end:
                 continue
 
             cur_end = pairs[i][1]
             ret += 1
 
-        return ret
+        r_ ret
 
-    def findLongestChain2(self, pairs: List[List[int]]) -> int:
+    ___ findLongestChain2(self, pairs: List[List[int]]) -> int:
         """
         Greedy
         sort by the interval end
         similar to 435 Non-overlaping interval
         """
         pairs.sort(key=lambda x: x[1])
-        n = len(pairs)
+        n = le.(pairs)
 
         ret = 0
         i = 0
-        while i < n:
+        w___ i < n:
             ret += 1
             cur_end = pairs[i][1]
 
             i += 1
-            while i < n and pairs[i][0] <= cur_end:
+            w___ i < n and pairs[i][0] <= cur_end:
                 i += 1
 
-        return ret
+        r_ ret
 
 
 class Solution2:
-    def findLongestChain(self, pairs: List[List[int]]) -> int:
+    ___ findLongestChain(self, pairs: List[List[int]]) -> int:
         """
         Let F[i] be the longest chain   ended at A[i]
         F[i] = max(F[j] + 1 if predicate A[i] A[j])
         O(N^2)
         """
         pairs.sort(key=lambda x: tuple(x))
-        n = len(pairs)
+        n = le.(pairs)
         F = [1 for _ in range(n)]
-        for i in range(n):
-            for j in range(i):
-                if pairs[j][1] < pairs[i][0]:
+        for i in range(n
+            for j in range(i
+                __ pairs[j][1] < pairs[i][0]:
                     F[i] = max(F[i], F[j] + 1)
 
-        return max(F)
+        r_ max(F)
 
 
-if __name__ == "__main__":
-    assert Solution().findLongestChain([[1,2], [2,3], [3,4]]) == 2
+__ __name__ __ "__main__":
+    assert Solution().findLongestChain([[1,2], [2,3], [3,4]]) __ 2

@@ -1,20 +1,20 @@
 #! /usr/bin/env python
-import numpy as np
+______ numpy as np
 
 
-def binarySearch(element, list):
-    currentIndex = len(list) / 2
-    if currentIndex < 2:
+___ binarySearch(element, list
+    currentIndex = le.(list) / 2
+    __ currentIndex < 2:
         print('Element is not in the list :/')
-    elif element < list[currentIndex]:
+    ____ element < list[currentIndex]:
         binarySearch(element, list[0:currentIndex])
-    elif element > list[currentIndex]:
-        binarySearch(element, list[currentIndex:len(list) - 1])
-    elif element == list[currentIndex]:
+    ____ element > list[currentIndex]:
+        binarySearch(element, list[currentIndex:le.(list) - 1])
+    ____ element __ list[currentIndex]:
         print('Element is in the list!')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     list = list(np.random.choice(100, 20, replace=True))
     list.sort()
     print(str(list))

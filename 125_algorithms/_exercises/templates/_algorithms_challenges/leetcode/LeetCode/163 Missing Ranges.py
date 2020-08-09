@@ -6,34 +6,34 @@ For example, given [0, 1, 3, 50, 75], lower = 0 and upper = 99, return ["2", "4-
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def findMissingRanges(self, nums, lower, upper):
+class Solution(object
+    ___ findMissingRanges(self, nums, lower, upper
         """
         :type nums: List[int]
         :type lower: int
         :type upper: int
         :rtype: List[str]
         """
-        n = len(nums)
+        n = le.(nums)
         ret = []
-        if not nums:
+        __ not nums:
             ret.append([lower, upper])
-            return map(self.mapper, ret)
+            r_ map(self.mapper, ret)
 
-        if nums[0] > lower:
+        __ nums[0] > lower:
             ret.append([lower, nums[0]-1])
 
-        for i in xrange(1, n):
-            if nums[i] > nums[i-1]+1:
+        for i in xrange(1, n
+            __ nums[i] > nums[i-1]+1:
                 ret.append([nums[i-1]+1, nums[i]-1])
 
-        if upper > nums[-1]:
+        __ upper > nums[-1]:
             ret.append([nums[-1]+1, upper])
 
-        return map(self.mapper, ret)
+        r_ map(self.mapper, ret)
 
-    def mapper(self, x):
-        if x[0] == x[1]:
-            return "%d" % x[0]
-        else:
-            return "%d->%d" % tuple(x)
+    ___ mapper(self, x
+        __ x[0] __ x[1]:
+            r_ "%d" % x[0]
+        ____
+            r_ "%d->%d" % tuple(x)

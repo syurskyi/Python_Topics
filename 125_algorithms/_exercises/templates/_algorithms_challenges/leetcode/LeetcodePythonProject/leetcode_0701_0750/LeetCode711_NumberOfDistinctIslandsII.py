@@ -3,83 +3,83 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def numDistinctIslands2(self, grid):
+class Solution(object
+    ___ numDistinctIslands2(self, grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        if not grid or not grid[0]: return 0
-        m, n = len(grid), len(grid[0])
+        __ not grid or not grid[0]: r_ 0
+        m, n = le.(grid), le.(grid[0])
         hashset = set()
         count = 0
-        for i in range(m):
-            for j in range(n):
-                if grid[i][j] == 1:
+        for i in range(m
+            for j in range(n
+                __ grid[i][j] __ 1:
                     res = [i, i, j, j]
                     grid[i][j] = 2
                     self.helper(grid, i, j, res)
                     keys = self.generateKeys(grid, res)
                     found = False
                     for key in keys:
-                        if key in hashset:
+                        __ key in hashset:
                             found = True
                             break
-                    if not found:
+                    __ not found:
                         hashset.add(keys.pop())
                         count += 1
-        return count
+        r_ count
     
-    def helper(self, grid, i, j, res):
+    ___ helper(self, grid, i, j, res
         res[0] = min(res[0], i)
         res[1] = max(res[1], i)
         res[2] = min(res[2], j)
         res[3] = max(res[3], j)
-        m, n = len(grid), len(grid[0])
-        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-            if 0 <= x < m and 0 <= y < n and grid[x][y] == 1:
+        m, n = le.(grid), le.(grid[0])
+        for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
+            __ 0 <= x < m and 0 <= y < n and grid[x][y] __ 1:
                 grid[x][y] = 2
                 self.helper(grid, x, y, res)
     
-    def generateKeys(self, grid, res):
+    ___ generateKeys(self, grid, res
         hashset = set()
         up, down, left, right = res[0], res[1], res[2], res[3]
         subGrid = []
-        for i in range(up, down+1):
+        for i in range(up, down+1
             tmp = []
-            for j in range(left, right+1):
+            for j in range(left, right+1
                 tmp.append(grid[i][j])
             subGrid.append(tmp)
         self.addRotationKeys(subGrid, hashset)
-        return hashset
+        r_ hashset
     
-    def addRotationKeys(self, grid, hashset):
+    ___ addRotationKeys(self, grid, hashset
         grid1 = grid
         grid2 = grid[::-1]
         grid3 = [row[::-1] for row in grid]
         for grid in [grid1, grid2, grid3]:
             grid0 = grid
-            for _ in range(4):
-                m, n = len(grid0), len(grid0[0])
+            for _ in range(4
+                m, n = le.(grid0), le.(grid0[0])
                 newGrid = [[0]*m for _ in range(n)]
-                for i in range(m):
-                    for j in range(n):
+                for i in range(m
+                    for j in range(n
                         newGrid[j][i] = grid0[i][j]
                 hashset.add(self.getKey(newGrid))
                 grid0 = newGrid
-            for _ in range(4):
-                m, n = len(grid0), len(grid0[0])
+            for _ in range(4
+                m, n = le.(grid0), le.(grid0[0])
                 newGrid = [[0]*m for _ in range(n)]
-                for i in range(m):
-                    for j in range(n):
+                for i in range(m
+                    for j in range(n
                         newGrid[n-1-j][m-1-i] = grid0[i][j]
                 hashset.add(self.getKey(newGrid))
                 grid0 = newGrid
     
-    def getKey(self, grid):
-        return ','.join([''.join([str(num) for num in row]) for row in grid])
+    ___ getKey(self, grid
+        r_ ','.join([''.join([str(num) for num in row]) for row in grid])
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 '11000',
@@ -169,5 +169,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

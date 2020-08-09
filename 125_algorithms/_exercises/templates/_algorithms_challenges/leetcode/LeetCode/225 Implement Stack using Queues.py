@@ -16,51 +16,51 @@ __author__ = 'Daniel'
 
 
 class Stack:
-    def __init__(self):
+    ___ __init__(self
         """
         initialize your data structure here.
         One queue cannot mimic the stack, then you should use two queues.
         """
         self.q = [[], []]
 
-    def push(self, x):
+    ___ push(self, x
         """
         :type x: int
         :rtype: nothing
         """
         t = 0
-        if not self.q[t]:
+        __ not self.q[t]:
             t ^= 1
 
         self.q[t].append(x)
 
-    def pop(self):
+    ___ pop(self
         """
         :rtype: nothing
         """
         t = 0
-        if not self.q[t]:
+        __ not self.q[t]:
             t ^= 1
 
-        while len(self.q[t]) > 1:
+        w___ le.(self.q[t]) > 1:
             self.q[t^1].append(self.q[t].pop(0))
 
-        return self.q[t].pop()
+        r_ self.q[t].pop()
 
-    def top(self):
+    ___ top(self
         """
         :rtype:  int
         """
         popped = self.pop()
         t = 0
-        if not self.q[t]:
+        __ not self.q[t]:
             t ^= 1
 
         self.q[t].append(popped)
-        return popped
+        r_ popped
 
-    def empty(self):
+    ___ empty(self
         """
         :rtype: bool
         """
-        return not self.q[0] and not self.q[1]
+        r_ not self.q[0] and not self.q[1]

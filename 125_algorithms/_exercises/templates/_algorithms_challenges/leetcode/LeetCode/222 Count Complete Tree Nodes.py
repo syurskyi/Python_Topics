@@ -8,89 +8,89 @@ __author__ = 'Daniel'
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-    def __repr__(self):
-        return repr(self.val)
+    ___ __repr__(self
+        r_ repr(self.val)
 
 
 class Solution:
-    def countNodes(self, root):
+    ___ countNodes(self, root
         """
         O((lg n)^2)
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
         h = self.get_height(root)
         h_r = self.get_height(root.right)
-        if h == h_r+1:
-            return 2**(h-1)-1+1+self.countNodes(root.right)  # left_tree nodes + root + right_tree nodes
-        else:
-            return 2**(h-2)-1+1+self.countNodes(root.left)  # right_tree nodes + root + left_tree nodes
+        __ h __ h_r+1:
+            r_ 2**(h-1)-1+1+self.countNodes(root.right)  # left_tree nodes + root + right_tree nodes
+        ____
+            r_ 2**(h-2)-1+1+self.countNodes(root.left)  # right_tree nodes + root + left_tree nodes
 
-    def get_height(self, cur):
+    ___ get_height(self, cur
         h = 0  # depth starting from 0
-        while cur:
+        w___ cur:
             h += 1
             cur = cur.left
 
-        return h
+        r_ h
 
 
 class Solution_TLE:
-    def __init__(self):
+    ___ __init__(self
         self.depth = 0  # depth starts from 1
         self.cnt = 0
         self.stopped = False
 
-    def countNodes(self, root):
+    ___ countNodes(self, root
         """
 
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
         self.get_depth(root)
         self.fanthom(root, 1)
-        return 2**(self.depth-1)-1+self.cnt
+        r_ 2**(self.depth-1)-1+self.cnt
 
-    def get_depth(self, root):
+    ___ get_depth(self, root
         self.depth += 1
-        if root.left:
+        __ root.left:
             self.get_depth(root.left)
 
-    def fanthom(self, root, depth):
-        if self.stopped:
-            return
+    ___ fanthom(self, root, depth
+        __ self.stopped:
+            r_
 
-        if not root.left and not root.left:
-            if self.depth == depth:
+        __ not root.left and not root.left:
+            __ self.depth __ depth:
                 self.cnt += 1
-            else:
+            ____
                 self.stopped = True
-            return
+            r_
 
-        if root.left:
+        __ root.left:
             self.fanthom(root.left, depth+1)
-        if root.right:
+        __ root.right:
             self.fanthom(root.right, depth+1)
 
-    def countNodes_TLE(self, root):
+    ___ countNodes_TLE(self, root
         """
         Brute Force
 
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
 
-        return 1+self.countNodes(root.left)+self.countNodes(root.right)
+        r_ 1+self.countNodes(root.left)+self.countNodes(root.right)
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     pass

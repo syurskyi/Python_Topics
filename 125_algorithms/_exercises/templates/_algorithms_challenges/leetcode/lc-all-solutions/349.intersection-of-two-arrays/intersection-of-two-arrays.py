@@ -1,5 +1,5 @@
-class Solution(object):
-  def intersection(self, nums1, nums2):
+class Solution(object
+  ___ intersection(self, nums1, nums2
     """
     :type nums1: List[int]
     :type nums2: List[int]
@@ -11,7 +11,7 @@ class Solution(object):
       d[num] = d.get(num, 0) + 1
 
     for num in nums2:
-      if num in d:
+      __ num in d:
         ans.append(num)
         del d[num]
-    return ans
+    r_ ans

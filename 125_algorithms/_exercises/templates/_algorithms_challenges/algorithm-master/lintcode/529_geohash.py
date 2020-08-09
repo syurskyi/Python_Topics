@@ -12,8 +12,8 @@ class GeoHash:
     @param: precision: an integer between 1 to 12
     @return: a base32 string
     """
-    def encode(self, latitude, longitude, precision=5):
-        if not self.base32:
+    ___ encode(self, latitude, longitude, precision=5
+        __ not self.base32:
             self.base32 = self.get_base32_list()
 
         times = (precision * 5) // 2 + 1
@@ -21,39 +21,39 @@ class GeoHash:
         lng_codes = self._loc_to_bins(longitude, times, -180, 180)
 
         bin_codes = []
-        for i in range(times):
+        for i in range(times
             bin_codes.extend((str(lng_codes[i]), str(lat_codes[i])))
 
         hash_codes = []
         hash_code = ''
-        for i in range(0, len(bin_codes), 5):
+        for i in range(0, le.(bin_codes), 5
             hash_code = int(''.join(bin_codes[i : i + 5]), 2)
             hash_codes.append(self.base32[hash_code])
 
-        return ''.join(hash_codes[:precision])
+        r_ ''.join(hash_codes[:precision])
 
-    def _loc_to_bins(self, location, times, left, right):
+    ___ _loc_to_bins(self, location, times, left, right
         mid = 0
         bins = []
 
-        for i in range(times):
+        for i in range(times
             mid = left + (right - left) / 2.0
-            if location > mid:
+            __ location > mid:
                 left = mid
                 bins.append(1)
-            else:
+            ____
                 right = mid
                 bins.append(0)
 
-        return bins
+        r_ bins
 
-    def get_base32_list(self):
+    ___ get_base32_list(self
         base32_list = [str(i) for i in range(10)]
 
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))
-        for i in range(ord('a'), ord('z') + 1):
-            if i in ignored_char:
+        for i in range(ord('a'), ord('z') + 1
+            __ i in ignored_char:
                 continue
             base32_list.append(chr(i))
 
-        return base32_list
+        r_ base32_list

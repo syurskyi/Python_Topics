@@ -1,26 +1,26 @@
-class SgfTree(object):
-    def __init__(self, properties=None, children=None):
+class SgfTree(object
+    ___ __init__(self, properties=None, children=None
         self.properties = properties or {}
         self.children = children or []
 
-    def __eq__(self, other):
-        if not isinstance(other, SgfTree):
-            return False
-        for k, v in self.properties.items():
-            if k not in other.properties:
-                return False
-            if other.properties[k] != v:
-                return False
-        for k in other.properties.keys():
-            if k not in self.properties:
-                return False
-        if len(self.children) != len(other.children):
-            return False
-        for a, b in zip(self.children, other.children):
-            if a != b:
-                return False
-        return True
+    ___ __eq__(self, other
+        __ not isinstance(other, SgfTree
+            r_ False
+        for k, v in self.properties.items(
+            __ k not in other.properties:
+                r_ False
+            __ other.properties[k] != v:
+                r_ False
+        for k in other.properties.keys(
+            __ k not in self.properties:
+                r_ False
+        __ le.(self.children) != le.(other.children
+            r_ False
+        for a, b in zip(self.children, other.children
+            __ a != b:
+                r_ False
+        r_ True
 
 
-def parse(input_string):
+___ parse(input_string
     pass

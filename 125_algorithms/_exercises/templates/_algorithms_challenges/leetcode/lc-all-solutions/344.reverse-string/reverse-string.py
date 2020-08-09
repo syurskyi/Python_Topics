@@ -1,7 +1,7 @@
-class Solution(object):
-  def reverseString(self, s):
+class Solution(object
+  ___ reverseString(self, s
     """
     :type s: str
     :rtype: str
     """
-    return s[::-1]
+    r_ s[::-1]

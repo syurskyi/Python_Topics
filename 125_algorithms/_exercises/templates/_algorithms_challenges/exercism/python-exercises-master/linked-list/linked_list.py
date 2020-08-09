@@ -1,8 +1,8 @@
-class Node(object):
-    def __init__(self):
+class Node(object
+    ___ __init__(self
         pass
 
 
-class LinkedList(object):
-    def __init__(self):
+class LinkedList(object
+    ___ __init__(self
         pass

@@ -1,28 +1,28 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def minArea(self, image, x, y):
+class Solution(object
+  ___ minArea(self, image, x, y
     top = self.searchRows(image, 0, x, True)
-    bottom = self.searchRows(image, x + 1, len(image), False)
+    bottom = self.searchRows(image, x + 1, le.(image), False)
     left = self.searchCols(image, 0, y, top, bottom, True)
-    right = self.searchCols(image, y + 1, len(image[0]), top, bottom, False)
-    return (right - left) * (bottom - top)
+    right = self.searchCols(image, y + 1, le.(image[0]), top, bottom, False)
+    r_ (right - left) * (bottom - top)
 
-  def searchRows(self, image, i, j, opt):
-    while i < j:
+  ___ searchRows(self, image, i, j, opt
+    w___ i < j:
       mid = i + (j - i) / 2
-      if ("1" in image[mid]) == opt:
+      __ ("1" in image[mid]) __ opt:
         j = mid
-      else:
+      ____
         i = mid + 1
-    return j
+    r_ j
 
-  def searchCols(self, image, i, j, top, bottom, opt):
-    while i < j:
+  ___ searchCols(self, image, i, j, top, bottom, opt
+    w___ i < j:
       mid = i + (j - i) / 2
-      if any([image[k][mid] == "1" for k in range(top, bottom)]) == opt:
+      __ any([image[k][mid] __ "1" for k in range(top, bottom)]) __ opt:
         j = mid
-      else:
+      ____
         i = mid + 1
-    return j
+    r_ j

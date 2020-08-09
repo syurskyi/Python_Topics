@@ -13,12 +13,12 @@ Try to do this in one pass.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 class Solution:
-    def removeNthFromEnd(self, head, n):
+    ___ removeNthFromEnd(self, head, n
         """
         O(n)+O(n)
         :param head: head node
@@ -32,22 +32,22 @@ class Solution:
         # get length of the linked list
         length = 0
         pre = dummy
-        while pre.next:
+        w___ pre.next:
             length += 1
             pre=pre.next
 
         # find & remove
         pre = dummy
         count = 0
-        while pre.next:
+        w___ pre.next:
             cur = pre.next
-            if count==length-n:
+            __ count__length-n:
                 pre.next = cur.next  # remove
                 break
-            else:
+            ____
                 count += 1
                 pre = pre.next
 
-        return dummy.next
+        r_ dummy.next
 
 

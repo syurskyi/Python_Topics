@@ -1,9 +1,9 @@
 class Solution:
     # @return a list of strings, [s1, s2]
-    def letterCombinations(self, digits):
+    ___ letterCombinations(self, digits
         d = {
             '2': 'abc',
-            '3': 'def',
+            '3': '___',
             '4': 'ghi',
             '5': 'jkl',
             '6': 'mno',
@@ -14,14 +14,14 @@ class Solution:
         cand = []
         res = []
         self.letter_combination_aux(digits, d, cand, res)
-        return res
+        r_ res
 
-    def letter_combination_aux(self, digits, d, cand, res):
-        if not digits:
+    ___ letter_combination_aux(self, digits, d, cand, res
+        __ not digits:
             res.append(''.join(cand))
-        else:
+        ____
             digit = digits[0]
-            if digit in d:
+            __ digit in d:
                 letters = d[digit]
                 for letter in letters:
                     cand.append(letter)

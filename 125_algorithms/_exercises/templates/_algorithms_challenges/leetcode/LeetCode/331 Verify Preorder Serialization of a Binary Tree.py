@@ -35,51 +35,51 @@ Return false
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def isValidSerialization(self, preorder):
+class Solution(object
+    ___ isValidSerialization(self, preorder
         """
         :type preorder: str
         :rtype: bool
         """
         stk = preorder.split(',')
         child_cnt = 0
-        while stk:
-            if stk[-1] == '#':
+        w___ stk:
+            __ stk[-1] __ '#':
                 stk.pop()
                 child_cnt += 1
-            else:
+            ____
                 child_cnt -= 2
-                if child_cnt < 0:
-                    return False
+                __ child_cnt < 0:
+                    r_ False
 
                 stk.pop()
                 child_cnt += 1
 
-        return not stk and child_cnt == 1
+        r_ not stk and child_cnt __ 1
 
-    def isValidSerializationSpace(self, preorder):
+    ___ isValidSerializationSpace(self, preorder
         """
         :type preorder: str
         :rtype: bool
         """
         stk = preorder.split(',')
         child_stk = []
-        while stk:
-            if stk[-1] == '#':
+        w___ stk:
+            __ stk[-1] __ '#':
                 child_stk.append(stk.pop())  # a counter is enough
-            else:
+            ____
                 try:
                     child_stk.pop()
                     child_stk.pop()
                     stk.pop()
                     child_stk.append('#')
                 except IndexError:
-                    return False
+                    r_ False
 
-        return not stk and len(child_stk) == 1
+        r_ not stk and le.(child_stk) __ 1
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#")
 
 

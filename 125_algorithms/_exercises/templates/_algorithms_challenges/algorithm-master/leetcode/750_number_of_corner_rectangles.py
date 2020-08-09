@@ -1,5 +1,5 @@
 class Solution:
-    def countCornerRectangles(self, G):
+    ___ countCornerRectangles(self, G
         """
         :type G: List[List[int]]
         :rtype: int
@@ -22,21 +22,21 @@ class Solution:
         """
         ans = 0
 
-        if not G:
-            return ans
+        __ not G:
+            r_ ans
 
         n = 0
         count = {}
         for R in G:
-            for end in range(1, len(R)):
-                if R[end] == 0:
+            for end in range(1, le.(R)):
+                __ R[end] __ 0:
                     continue
 
-                for start in range(end):
-                    if R[start] == 0:
+                for start in range(end
+                    __ R[start] __ 0:
                         continue
 
-                    if (start, end) not in count:
+                    __ (start, end) not in count:
                         count[start, end] = 0
                         continue
 
@@ -44,4 +44,4 @@ class Solution:
 
                     ans += count[start, end]
 
-        return ans
+        r_ ans

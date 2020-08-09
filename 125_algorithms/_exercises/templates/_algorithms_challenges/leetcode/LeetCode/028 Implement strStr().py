@@ -5,7 +5,7 @@ Returns a pointer to the first occurrence of needle in haystack, or null if need
 """
 __author__ = 'Danyang'
 class Solution:
-    def strStr_brute_force(self, haystack, needle):
+    ___ strStr_brute_force(self, haystack, needle
         """
         Algorithm:
         two pointers
@@ -14,14 +14,14 @@ class Solution:
         :param needle: str
         :return: str or None
         """
-        l_hay = len(haystack)
-        l_ndl = len(needle)
-        for i in xrange(l_hay-l_ndl+1):  # i+l_ndl <= l_hay
-            if haystack[i:i+l_ndl]==needle:
-                return haystack[i:]
-        return None
+        l_hay = le.(haystack)
+        l_ndl = le.(needle)
+        for i in xrange(l_hay-l_ndl+1  # i+l_ndl <= l_hay
+            __ haystack[i:i+l_ndl]__needle:
+                r_ haystack[i:]
+        r_ None
 
-    def strStr(self, haystack, needle):
+    ___ strStr(self, haystack, needle
         """
         KMP algorithm
         :type haystack: str
@@ -30,16 +30,16 @@ class Solution:
         :param needle:
         :return:
         """
-        ln = len(needle)
-        lh = len(haystack)
-        if ln==0:
-            return haystack
-        if ln==1:
+        ln = le.(needle)
+        lh = le.(haystack)
+        __ ln__0:
+            r_ haystack
+        __ ln__1:
             try:
                 index = haystack.index(needle)
-                return haystack[index:]
+                r_ haystack[index:]
             except ValueError:
-                return None
+                r_ None
 
         # construct T
         T = [0 for _ in xrange(ln)]
@@ -47,14 +47,14 @@ class Solution:
         T[1] = 0
         pos = 2
         cnd = 0
-        while pos<ln:
-            if needle[pos-1]==needle[cnd]:  # pos-1 rather than pos
+        w___ pos<ln:
+            __ needle[pos-1]__needle[cnd]:  # pos-1 rather than pos
                 cnd += 1
                 T[pos] = cnd
                 pos += 1
-            elif T[cnd]!=-1:
+            ____ T[cnd]!=-1:
                 cnd = T[cnd]
-            else:
+            ____
                 cnd = 0
                 T[pos] = cnd
                 pos += 1
@@ -62,27 +62,27 @@ class Solution:
         # search
         i = 0
         m = 0
-        while m+i<lh:
-            if needle[i]==haystack[m+i]:
+        w___ m+i<lh:
+            __ needle[i]__haystack[m+i]:
                 i += 1
-                if i==ln:
-                    return haystack[m:]
-            else:
-                if T[i]!=-1:
+                __ i__ln:
+                    r_ haystack[m:]
+            ____
+                __ T[i]!=-1:
                     m = m+i-T[i]
                     i = T[i]
-                else:
+                ____
                     m += 1
                     i = 0
 
-        return None
+        r_ None
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     needle = "ABCDABD"
     haystack = "ABC ABCDAB ABCDABCDABDE"
     needle = "aaa"
     haystack = "aaa"
     solution = Solution()
-    assert solution.strStr_brute_force(haystack, needle)==solution.strStr(haystack, needle)
+    assert solution.strStr_brute_force(haystack, needle)__solution.strStr(haystack, needle)
 

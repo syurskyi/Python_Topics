@@ -1,7 +1,7 @@
 """
 Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -9,22 +9,22 @@ class TreeNode:
 
 
 class Solution:
-    def hasPathSum(self, root, target):
+    ___ hasPathSum(self, root, target
         """
         :type root: TreeNode
         :type target: int
         :rtype: bool
         """
-        if not root:
-            return False
+        __ not root:
+            r_ False
 
-        if not root.left and not root.right:
-            return root.val == target
+        __ not root.left and not root.right:
+            r_ root.val __ target
 
-        if root.left and self.hasPathSum(root.left, target - root.val):
-            return True
+        __ root.left and self.hasPathSum(root.left, target - root.val
+            r_ True
 
-        if root.right and self.hasPathSum(root.right, target - root.val):
-            return True
+        __ root.right and self.hasPathSum(root.right, target - root.val
+            r_ True
 
-        return False
+        r_ False

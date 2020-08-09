@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime ______ date, datetime
 
 MAC1 = """
 reboot    ~                         Wed Apr 10 22:39
@@ -11,14 +11,14 @@ reboot    ~                         Mon Jan 14 09:25
 """
 
 
-def extract_date(reboots):
+___ extract_date(reboots
     months = {
         'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
         'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12,
     }
     lines = reboots.splitlines(keepends=False)
     for line in lines:
-        if len(line.strip()) == 0:
+        __ le.(line.strip()) __ 0:
             continue
         line_parts = line.strip().split()
         time_part = line_parts[-1].split(':')
@@ -29,7 +29,7 @@ def extract_date(reboots):
                        minute=int(time_part[1]))
 
 
-def calc_max_uptime(reboots):
+___ calc_max_uptime(reboots
     """Parse the passed in reboots output,
        extracting the datetimes.
 
@@ -44,10 +44,10 @@ def calc_max_uptime(reboots):
     """
     previous = None
     records = []
-    for this_date in extract_date(reboots):
-        if previous is None:
+    for this_date in extract_date(reboots
+        __ previous is None:
             previous = this_date
             continue
         records.append(((previous - this_date).days, str(previous.date())))
         previous = this_date
-    return sorted(records)[-1]
+    r_ sorted(records)[-1]

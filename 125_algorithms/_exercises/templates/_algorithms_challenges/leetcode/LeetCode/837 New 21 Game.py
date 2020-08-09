@@ -2,7 +2,7 @@
 """
 Alice plays the following game, loosely based on the card game "21".
 
-Alice starts with 0 points, and draws numbers while she has less than K points.
+Alice starts with 0 points, and draws numbers w___ she has less than K points.
 During each draw, she gains an integer number of points randomly from the range
 [1, W], where W is an integer.  Each draw is independent and the outcomes have
 equal probabilities.
@@ -36,7 +36,7 @@ The judging time limit has been reduced for this question.
 
 
 class Solution:
-    def new21Game(self, N: int, K: int, W: int) -> float:
+    ___ new21Game(self, N: int, K: int, W: int) -> float:
         """
         F[i]: probability of get points i
         F[i] = F[j] * (1 / W) for every i - j <= W
@@ -46,27 +46,27 @@ class Solution:
         sliding window with size at most K.
         => O(N)
         """
-        if K == 0:
-            return 1
+        __ K __ 0:
+            r_ 1
 
         F = [0 for _ in range(N+1)]
         F[0] = 1
         cur_sum = F[0]
         ret = 0
-        for i in range(1, N+1):
+        for i in range(1, N+1
             F[i] = cur_sum * (1/W)
-            if i >= K:
+            __ i >= K:
                 ret += F[i]
                 # stop
-            else:
+            ____
                 cur_sum += F[i]
                 
-            if i - W >= 0:
+            __ i - W >= 0:
                 cur_sum -= F[i - W]
 
-        return ret
+        r_ ret
 
-    def new21Game_error(self, N: int, K: int, W: int) -> float:
+    ___ new21Game_error(self, N: int, K: int, W: int) -> float:
         """
         DP
         Let F[i] be the probability of reaching point i
@@ -75,17 +75,17 @@ class Solution:
         """
         F = [0 for _ in range(K+W+1)]
         F[0] = 1
-        for i in range(1, K+W+1):
-            for j in range(W, 0, -1):
-                if i - j >= K:
+        for i in range(1, K+W+1
+            for j in range(W, 0, -1
+                __ i - j >= K:
                     break
-                if i - j >= 0:
+                __ i - j >= 0:
                     F[i] += F[i-j] * 1 / W
 
         ret = sum(F[1:N+1])  # error
         print(F, ret)
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().new21Game(6, 1, 10) == 0.6
+__ __name__ __ "__main__":
+    assert Solution().new21Game(6, 1, 10) __ 0.6

@@ -1,17 +1,17 @@
 class Solution:
-    def kthSmallest(self, root: TreeNode, k: int) -> int:
+    ___ kthSmallest(self, root: TreeNode, k: int) -> int:
         self.k = k
         self.res = None
         self.helper(root)
-        return self.res
+        r_ self.res
 
-    def helper(self, root):
-        if not root:
-            return
+    ___ helper(self, root
+        __ not root:
+            r_
         self.helper(root.left)
         
         self.k -= 1
-        if self.k == 0:
+        __ self.k __ 0:
             self.res = root.val
-            return
+            r_
         self.helper(root.right)

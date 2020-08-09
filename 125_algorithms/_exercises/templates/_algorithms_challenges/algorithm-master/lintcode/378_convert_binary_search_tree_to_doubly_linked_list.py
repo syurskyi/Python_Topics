@@ -1,13 +1,13 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         this.val = val
         this.left, this.right = None, None
 
 Definition of Doubly-ListNode
-class DoublyListNode(object):
-    def __init__(self, val, next=None):
+class DoublyListNode(object
+    ___ __init__(self, val, next=None
         self.val = val
         self.next = self.prev = next
 """
@@ -18,16 +18,16 @@ class Solution:
     @param: root: The root of tree
     @return: the head of doubly list node
     """
-    def bstToDoublyList(self, root):
-        if not root:
-            return
+    ___ bstToDoublyList(self, root
+        __ not root:
+            r_
 
         dummy = tail = DoublyListNode(-1)
         stack = []
         node = root
 
-        while node or stack:
-            while node:
+        w___ node or stack:
+            w___ node:
                 stack.append(node)
                 node = node.left
 
@@ -40,4 +40,4 @@ class Solution:
 
             node = node.right
 
-        return dummy.next
+        r_ dummy.next

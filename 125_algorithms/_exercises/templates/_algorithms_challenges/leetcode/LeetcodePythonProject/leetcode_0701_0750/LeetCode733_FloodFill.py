@@ -3,8 +3,8 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def floodFill(self, image, sr, sc, newColor):
+class Solution(object
+    ___ floodFill(self, image, sr, sc, newColor
         """
         :type image: List[List[int]]
         :type sr: int
@@ -13,19 +13,19 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         oldColor = image[sr][sc]
-        if oldColor == newColor:
-            return image
+        __ oldColor __ newColor:
+            r_ image
         self.helper(image, sr, sc, oldColor, newColor)
-        return image
+        r_ image
     
-    def helper(self, image, i, j, oldColor, newColor):
-        m, n = len(image), len(image[0])
+    ___ helper(self, image, i, j, oldColor, newColor
+        m, n = le.(image), le.(image[0])
         image[i][j] = newColor
-        for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1):
-            if 0 <= x < m and 0 <= y < n and image[x][y] == oldColor:
+        for x, y in (i+1, j), (i, j+1), (i-1, j), (i, j-1
+            __ 0 <= x < m and 0 <= y < n and image[x][y] __ oldColor:
                 self.helper(image, x, y, oldColor, newColor)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [
@@ -43,5 +43,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,10 +1,10 @@
-def square_of_sum(x):
-    return sum(range(x + 1)) ** 2
+___ square_of_sum(x
+    r_ sum(range(x + 1)) ** 2
 
 
-def sum_of_squares(x):
-    return sum(y ** 2 for y in range(x + 1))
+___ sum_of_squares(x
+    r_ sum(y ** 2 for y in range(x + 1))
 
 
-def difference(x):
-    return square_of_sum(x) - sum_of_squares(x)
+___ difference(x
+    r_ square_of_sum(x) - sum_of_squares(x)

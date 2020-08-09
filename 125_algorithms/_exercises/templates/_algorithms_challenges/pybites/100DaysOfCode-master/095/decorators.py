@@ -1,7 +1,7 @@
-from collections import namedtuple
-from functools import wraps
-import re
-import shelve
+from collections ______ namedtuple
+from functools ______ wraps
+______ re
+______ shelve
 
 CACHE = 'items.shelve'
 DEFAULT_OVERWRITE = False
@@ -9,26 +9,26 @@ DEFAULT_OVERWRITE = False
 Item = namedtuple('Item', 'id kind title genres overview poster')
 
 
-def _get_title(item):
+___ _get_title(item
     # movies API uses 'title', series API uses 'name'
     title = item.get('title')
 
-    if not title:
+    __ not title:
         title = item.get('name')
 
-    return title
+    r_ title
 
 
-def _store(kind, resp, overwrite=DEFAULT_OVERWRITE):
+___ _store(kind, resp, overwrite=DEFAULT_OVERWRITE
     with shelve.open(CACHE) as sh:
         for item in resp:
             key = str(item['id'])
 
-            if overwrite and key in sh:
+            __ overwrite and key in sh:
                 del sh[key]
 
             title = _get_title(item)
-            if not title:
+            __ not title:
                 continue
 
             item = Item(id=item['id'],
@@ -41,14 +41,14 @@ def _store(kind, resp, overwrite=DEFAULT_OVERWRITE):
             sh[key] = item
 
 
-def store_results(f):
+___ store_results(f
     @wraps(f)
-    def wrapped(*args, **kwargs):
+    ___ wrapped(*args, **kwargs
         func_name = str(args[1]).lower()
         kind = re.sub(r'.*bound.*?\.(\S+) of.*', r'\1', func_name)
         print(kind)
         resp = f(*args, **kwargs)
         _store(kind, resp)
-        print(len(resp))
-        return resp
-    return wrapped
+        print(le.(resp))
+        r_ resp
+    r_ wrapped

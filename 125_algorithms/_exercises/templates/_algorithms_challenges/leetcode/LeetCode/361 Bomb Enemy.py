@@ -17,8 +17,8 @@ return 3. (Placing a bomb at (1,1) kills 3 enemies)
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def maxKilledEnemies(self, grid):
+class Solution(object
+    ___ maxKilledEnemies(self, grid
         """
         Brute force: O(n * n^2)
         Place the bomb around boundary
@@ -28,34 +28,34 @@ class Solution(object):
         :type grid: List[List[str]]
         :rtype: int
         """
-        if not grid: return 0
+        __ not grid: r_ 0
 
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         rows = [0 for _ in xrange(m)]
         cols = [0 for _ in xrange(n)]
         gmax = 0
-        for i in xrange(m):
-            for j in xrange(n):
-                if i == 0 or grid[i-1][j] == 'W':
+        for i in xrange(m
+            for j in xrange(n
+                __ i __ 0 or grid[i-1][j] __ 'W':
                     cols[j] = 0
-                    for k in xrange(i, m):
-                        if grid[k][j] == 'E':
+                    for k in xrange(i, m
+                        __ grid[k][j] __ 'E':
                             cols[j] += 1
-                        elif grid[k][j] == 'W':
+                        ____ grid[k][j] __ 'W':
                             break
 
-                if j == 0 or grid[i][j-1] == 'W':
+                __ j __ 0 or grid[i][j-1] __ 'W':
                     rows[i] = 0
-                    for k in xrange(j, n):
-                        if grid[i][k] == 'E':
+                    for k in xrange(j, n
+                        __ grid[i][k] __ 'E':
                             rows[i] += 1
-                        elif grid[i][k] == 'W':
+                        ____ grid[i][k] __ 'W':
                             break
 
-                if grid[i][j] == '0':
+                __ grid[i][j] __ '0':
                     gmax = max(gmax, rows[i] + cols[j])
 
-        return gmax
+        r_ gmax
 
-if __name__ == "__main__":
-    assert Solution().maxKilledEnemies(["0E00", "E0WE", "0E00"]) == 3
+__ __name__ __ "__main__":
+    assert Solution().maxKilledEnemies(["0E00", "E0WE", "0E00"]) __ 3

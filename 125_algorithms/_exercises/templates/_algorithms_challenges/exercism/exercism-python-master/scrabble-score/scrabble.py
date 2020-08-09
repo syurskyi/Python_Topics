@@ -10,10 +10,10 @@ LETTER_SCORE = {'a': 1, 'e': 1, 'i': 1, 'o': 1, 'u': 1,
                 'q': 10, 'z': 10,
                }
 
-def score(word):
+___ score(word
     """Calculates a word score in scabble"""
     try:
-        return sum([LETTER_SCORE[c] for c in word.strip().lower()])
+        r_ sum([LETTER_SCORE[c] for c in word.strip().lower()])
     except KeyError:
-        return 0
+        r_ 0
 

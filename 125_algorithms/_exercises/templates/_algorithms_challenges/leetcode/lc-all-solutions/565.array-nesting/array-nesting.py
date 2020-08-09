@@ -1,19 +1,19 @@
-class Solution(object):
-  def arrayNesting(self, nums):
+class Solution(object
+  ___ arrayNesting(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
-    cache = [0] * len(nums)
+    cache = [0] * le.(nums)
     ans = 0
-    for i, start in enumerate(nums):
-      if cache[i]:
+    for i, start in enumerate(nums
+      __ cache[i]:
         continue
       p = start
       length = 1
-      while nums[p] != start:
+      w___ nums[p] != start:
         cache[nums[p]] = 1
         p = nums[p]
         length += 1
       ans = max(ans, length)
-    return ans
+    r_ ans

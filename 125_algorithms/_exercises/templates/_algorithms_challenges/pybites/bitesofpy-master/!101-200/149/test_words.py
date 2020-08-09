@@ -1,17 +1,17 @@
-from words import sort_words_case_insensitively
+from words ______ sort_words_case_insensitively
 
 
-def test_sort_words_case_insensitively():
+___ test_sort_words_case_insensitively(
     words = ("It's almost Holidays and PyBites wishes You a "
              "Merry Christmas and a Happy 2019").split()
     actual = sort_words_case_insensitively(words)
     expected = ['a', 'a', 'almost', 'and', 'and', 'Christmas',
                 'Happy', 'Holidays', "It's", 'Merry', 'PyBites',
                 'wishes', 'You', '2019']
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_sort_words_case_insensitively_another_phrase():
+___ test_sort_words_case_insensitively_another_phrase(
     words = ("Andrew Carnegie's 64-room chateau at 2 East 91st "
              "Street was converted into the Cooper-Hewitt National "
              "Design Museum of the Smithsonian Institution "
@@ -22,4 +22,4 @@ def test_sort_words_case_insensitively_another_phrase():
                 'into', 'Museum', 'National', 'of', 'Smithsonian',
                 'Street', 'the', 'the', 'the', 'was', "1970's", '2',
                 '64-room', '91st']
-    assert actual == expected
+    assert actual __ expected

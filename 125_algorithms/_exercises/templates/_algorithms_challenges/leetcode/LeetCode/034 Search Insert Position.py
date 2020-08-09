@@ -12,7 +12,7 @@ Here are few examples.
 """
 __author__ = 'Danyang'
 class Solution:
-    def searchInsert_complex(self, A, target):
+    ___ searchInsert_complex(self, A, target
         """
         binary search
         iterative solution
@@ -20,28 +20,28 @@ class Solution:
         :param target: an integer to be inserted
         :return: integer
         """
-        length = len(A)
-        if not A or length==0:
-            return 0
+        length = le.(A)
+        __ not A or length__0:
+            r_ 0
 
         start = 0
         end = length -1
-        # while start<=end:
-        while True:
+        # w___ start<=end:
+        w___ True:
             mid = (start+end)/2
-            if target==A[mid]:
-                return mid
-            elif target<A[mid]:
+            __ target__A[mid]:
+                r_ mid
+            ____ target<A[mid]:
                 end = mid-1
-                if not start<=end:
+                __ not start<=end:
                     # return end if end>=0 else 0
-                    return mid if mid>=0 else 0
-            else:
+                    r_ mid __ mid>=0 else 0
+            ____
                 start = mid+1
-                if not start<=end:
-                    return start
+                __ not start<=end:
+                    r_ start
 
-    def searchInsert(self, A, target):
+    ___ searchInsert(self, A, target
         """
         binary search
         iterative solution
@@ -49,28 +49,28 @@ class Solution:
         :param target: an integer to be inserted
         :return: integer
         """
-        length = len(A)
-        if not A or length==0:
-            return 0
+        length = le.(A)
+        __ not A or length__0:
+            r_ 0
 
         start = 0
         end = length
-        while start<end:
+        w___ start<end:
             mid = (start + end) / 2
-            if target==A[mid]:
-                return mid
-            elif target<A[mid]:
+            __ target__A[mid]:
+                r_ mid
+            ____ target<A[mid]:
                 end = mid
-            else:
+            ____
                 start = mid + 1
 
-        return start
+        r_ start
 
-if __name__=="__main__":
-    assert Solution().searchInsert([1, 3, 5, 6], 5)==2
-    assert Solution().searchInsert([1, 3, 5, 6], 2)==1
-    assert Solution().searchInsert([1, 3, 5, 6], 7)==4
-    assert Solution().searchInsert([1, 3, 5, 6], 0)==0
+__ __name____"__main__":
+    assert Solution().searchInsert([1, 3, 5, 6], 5)__2
+    assert Solution().searchInsert([1, 3, 5, 6], 2)__1
+    assert Solution().searchInsert([1, 3, 5, 6], 7)__4
+    assert Solution().searchInsert([1, 3, 5, 6], 0)__0
 
 
 

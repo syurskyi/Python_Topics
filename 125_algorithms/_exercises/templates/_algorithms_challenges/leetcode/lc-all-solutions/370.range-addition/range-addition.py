@@ -1,5 +1,5 @@
-class Solution(object):
-  def getModifiedArray(self, length, updates):
+class Solution(object
+  ___ getModifiedArray(self, length, updates
     """
     :type length: int
     :type updates: List[List[int]]
@@ -9,11 +9,11 @@ class Solution(object):
     for update in updates:
       start, end, delta = update
       ans[start] += delta
-      if end + 1 < length:
+      __ end + 1 < length:
         ans[end + 1] -= delta
 
     delta = 0
-    for i in range(0, length):
+    for i in range(0, length
       delta += ans[i]
       ans[i] = delta
-    return ans
+    r_ ans

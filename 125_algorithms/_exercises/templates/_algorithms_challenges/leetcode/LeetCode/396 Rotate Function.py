@@ -22,31 +22,31 @@ F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 
 So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.
 """
-import sys
+______ sys
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def maxRotateFunction(self, A):
+class Solution(object
+    ___ maxRotateFunction(self, A
         """
         See the rotation pattern
         :type A: List[int]
         :rtype: int
         """
-        if not A: return 0
+        __ not A: r_ 0
 
         gmax = -sys.maxint
-        n = len(A)
+        n = le.(A)
         s = sum(A)
 
         cur = sum(idx * val for idx, val in enumerate(A))
-        for r in reversed(A):
+        for r in reversed(A
             cur = cur + s - n * r
             gmax = max(gmax, cur)
 
-        return gmax
+        r_ gmax
 
 
-if __name__ == "__main__":
-    assert Solution().maxRotateFunction([4, 3, 2, 6]) == 26
+__ __name__ __ "__main__":
+    assert Solution().maxRotateFunction([4, 3, 2, 6]) __ 26

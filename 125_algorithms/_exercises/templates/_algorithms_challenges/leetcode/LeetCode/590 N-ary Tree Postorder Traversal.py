@@ -13,52 +13,52 @@ Recursive solution is trivial, could you do it iteratively?
 
 # Definition for a Node.
 class Node:
-    def __init__(self, val, children):
+    ___ __init__(self, val, children
         self.val = val
         self.children = children
 
 
-from typing import List
-from collections import deque
+from typing ______ List
+from collections ______ deque
 
 
 class Solution:
-    def postorder(self, root: 'Node') -> List[int]:
+    ___ postorder(self, root: 'Node') -> List[int]:
         """
         maintain a stack, pop and reverse
         """
-        if not root:
-            return []
+        __ not root:
+            r_ []
 
         ret = deque()
         stk = [root]
         visited = set()
-        while stk:
+        w___ stk:
             cur = stk.pop()
             ret.appendleft(cur.val)
             for c in cur.children:
                 stk.append(c)
 
-        return list(ret)
+        r_ list(ret)
         
-    def postorder_visited(self, root: 'Node') -> List[int]:
+    ___ postorder_visited(self, root: 'Node') -> List[int]:
         """
         maintain a stack, if visited before, then pop
         """
         ret = []
-        if not root:
-            return ret
+        __ not root:
+            r_ ret
 
         stk = [root]
         visited = set()
-        while stk:
+        w___ stk:
             cur = stk[-1]
-            if cur in visited:
+            __ cur in visited:
                 stk.pop()
                 ret.append(cur.val)
-            else:
+            ____
                 visited.add(cur)
-                for c in reversed(cur.children):
+                for c in reversed(cur.children
                     stk.append(c)
 
-        return ret
+        r_ ret

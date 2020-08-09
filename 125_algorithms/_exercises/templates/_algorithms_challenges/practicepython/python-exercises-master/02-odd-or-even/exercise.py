@@ -1,10 +1,10 @@
 #! /usr/bin/env python
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     number = int(raw_input('Give me a number: '))
-    if number % 2:
+    __ number % 2:
         statement = 'The number is odd'
-    else:
+    ____
         statement = 'The number is even'
 
     print(statement)

@@ -1,2 +1,2 @@
-def largest_product():
+___ largest_product(
     pass

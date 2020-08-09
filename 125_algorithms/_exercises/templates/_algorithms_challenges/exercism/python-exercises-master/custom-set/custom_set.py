@@ -1,30 +1,30 @@
-class CustomSet(object):
-    def __init__(self, elements=[]):
+class CustomSet(object
+    ___ __init__(self, elements=[]
         pass
 
-    def isempty(self):
+    ___ isempty(self
         pass
 
-    def __contains__(self, element):
+    ___ __contains__(self, element
         pass
 
-    def issubset(self, other):
+    ___ issubset(self, other
         pass
 
-    def isdisjoint(self, other):
+    ___ isdisjoint(self, other
         pass
 
-    def __eq__(self, other):
+    ___ __eq__(self, other
         pass
 
-    def add(self, element):
+    ___ add(self, element
         pass
 
-    def intersection(self, other):
+    ___ intersection(self, other
         pass
 
-    def difference(self, other):
+    ___ difference(self, other
         pass
 
-    def union(self, other):
+    ___ union(self, other
         pass

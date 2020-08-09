@@ -3,30 +3,30 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def kEmptySlots(self, flowers, k):
+class Solution(object
+    ___ kEmptySlots(self, flowers, k
         """
         :type flowers: List[int]
         :type k: int
         :rtype: int
         """
-        if not flowers: return -1
-        n = len(flowers)
+        __ not flowers: r_ -1
+        n = le.(flowers)
         days = [False]*n
-        for i in range(n):
+        for i in range(n
             days[flowers[i]-1] = i+1
         left, right = 0, k+1
         res = float('inf')
-        for i in range(n):
-            if right >= n: break
-            if days[i] == days[right] and i == right:
+        for i in range(n
+            __ right >= n: break
+            __ days[i] __ days[right] and i __ right:
                 res = min(res, max(days[left], days[right]))
-            if days[i] < days[left] or days[i] < days[right]:
+            __ days[i] < days[left] or days[i] < days[right]:
                 left = i
                 right = k+1+i
-        return res if res != float('inf') else -1
+        r_ res __ res != float('inf') else -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 3, 2],
@@ -48,5 +48,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

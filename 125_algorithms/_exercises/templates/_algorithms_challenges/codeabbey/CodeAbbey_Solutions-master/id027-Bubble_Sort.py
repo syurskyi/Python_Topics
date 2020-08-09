@@ -1,11 +1,11 @@
-def bubbleSort(amount, numbers):
+___ bubbleSort(amount, numbers
     sorted = False
     swapCount, passCount = 0,0
 
-    while not sorted:
+    w___ not sorted:
         sorted = True
-        for i in range(amount-1):
-            if numbers[i] > numbers[i+1]:
+        for i in range(amount-1
+            __ numbers[i] > numbers[i+1]:
                 sorted = False
                 swapCount += 1
                 numbers[i], numbers[i+1] = numbers[i+1], numbers[i]

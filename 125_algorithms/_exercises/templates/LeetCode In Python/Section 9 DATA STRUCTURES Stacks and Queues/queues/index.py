@@ -1,17 +1,17 @@
 class QueueLine:
-	def __init__(self):
+	___ __init__(self
         self.q = []
     
-    def enqueue(self, x: int) -> None:
+    ___ enqueue(self, x: int) -> None:
         self.q.append(x)
 
 
-    def dequeue(self) -> None:
-        if(len(self.q) > 0):
+    ___ dequeue(self) -> None:
+        __(le.(self.q) > 0
             self.q.pop(0)
 
-    def front(self) -> int:
-        if(len(self.q) == 0):
-            return None
+    ___ front(self) -> int:
+        __(le.(self.q) __ 0
+            r_ None
 
-        return self.q[0]
+        r_ self.q[0]

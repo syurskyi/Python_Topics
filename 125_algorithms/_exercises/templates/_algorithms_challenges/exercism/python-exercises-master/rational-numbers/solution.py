@@ -1,58 +1,58 @@
-from __future__ import division
+from __future__ ______ division
 
-from fractions import gcd
+from fractions ______ gcd
 
 
-class Rational(object):
+class Rational(object
     """
     Toyish implementation of rational numbers. For production purpose,
     please use `fractions.Fraction` in standard library instead.
     """
-    def __init__(self, numer, denom):
+    ___ __init__(self, numer, denom
         self.numer, self.denom = self._reduce(numer, denom)
 
-    def _reduce(self, numer, denom):
-        if numer == 0:
+    ___ _reduce(self, numer, denom
+        __ numer __ 0:
             n, d = 0, 1
-        else:
+        ____
             g = gcd(numer, denom)
             n, d = int(numer/g), int(denom/g)
-            if n > 0 and d < 0:
+            __ n > 0 and d < 0:
                 n, d = -n, -d
-        return n, d
+        r_ n, d
 
-    def __eq__(self, other):
-        return self.numer == other.numer and self.denom == other.denom
+    ___ __eq__(self, other
+        r_ self.numer __ other.numer and self.denom __ other.denom
 
-    def __repr__(self):
-        return '{}/{}'.format(self.numer, self.denom)
+    ___ __repr__(self
+        r_ '{}/{}'.format(self.numer, self.denom)
 
-    def __add__(self, other):
-        return Rational(
+    ___ __add__(self, other
+        r_ Rational(
             self.numer*other.denom + self.denom*other.numer,
             self.denom*other.denom
         )
 
-    def __sub__(self, other):
-        return Rational(
+    ___ __sub__(self, other
+        r_ Rational(
             self.numer*other.denom - self.denom*other.numer,
             self.denom*other.denom
         )
 
-    def __mul__(self, other):
-        return Rational(self.numer * other.numer, self.denom * other.denom)
+    ___ __mul__(self, other
+        r_ Rational(self.numer * other.numer, self.denom * other.denom)
 
-    def __truediv__(self, other):
-        return Rational(self.numer * other.denom, self.denom * other.numer)
+    ___ __truediv__(self, other
+        r_ Rational(self.numer * other.denom, self.denom * other.numer)
 
-    def __abs__(self):
-        if self.numer >= 0:
-            return self
-        else:
-            return Rational(-self.numer, self.denom)
+    ___ __abs__(self
+        __ self.numer >= 0:
+            r_ self
+        ____
+            r_ Rational(-self.numer, self.denom)
 
-    def __pow__(self, power):
-        return Rational(self.numer ** power, self.denom ** power)
+    ___ __pow__(self, power
+        r_ Rational(self.numer ** power, self.denom ** power)
 
-    def __rpow__(self, base):
-        return base ** (self.numer / self.denom)
+    ___ __rpow__(self, base
+        r_ base ** (self.numer / self.denom)

@@ -1,12 +1,12 @@
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    ___ maxProfit(self, prices: List[int]) -> int:
         buyPrice = float("inf")
         profit = 0
 
-        for i, price in enumerate(prices):
-            if(buyPrice > price):
+        for i, price in enumerate(prices
+            __(buyPrice > price
                 buyPrice = price
-            else:
+            ____
                 profit = max(profit, price-buyPrice)
 
-        return profit
+        r_ profit

@@ -1,13 +1,13 @@
-class Solution(object):
-    def smallestRangeI(self, A, K):
+class Solution(object
+    ___ smallestRangeI(self, A, K
         """
         :type A: List[int]
         :type K: int
         :rtype: int
         """
-        return max(max(A)-min(A)-2*K, 0)
+        r_ max(max(A)-min(A)-2*K, 0)
 
-    def smallestRangeI_own(self, A, K):
+    ___ smallestRangeI_own(self, A, K
         """
         :type A: List[int]
         :type K: int
@@ -19,21 +19,21 @@ class Solution(object):
         minVal = float('inf')
         maxVal = float('-inf')
         for num in A:
-            if num > med:
-                if num - med > K:
+            __ num > med:
+                __ num - med > K:
                     num -= K
-                else:
+                ____
                     num = med
-            elif num < med:
-                if med - num > K:
+            ____ num < med:
+                __ med - num > K:
                     num += K
-                else:
+                ____
                     num = med
             maxVal = max(maxVal, num)
             minVal = min(minVal, num)
-        return maxVal - minVal
+        r_ maxVal - minVal
 
-    def test(self):
+    ___ test(self
         testCases = [
             [[1], 0],
             [[0,10], 2],
@@ -45,5 +45,5 @@ class Solution(object):
             print('-='*30+'-')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

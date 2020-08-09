@@ -9,18 +9,18 @@ n is a non-negative integer and fits within the range of a 32-bit signed integer
 
 
 class Solution:
-    def arrangeCoins(self, n):
+    ___ arrangeCoins(self, n
         """
-        Solve a math equation
+        Solve a ma__ equation
         (1+r)r/2 <= n
         :type n: int
         :rtype: int
         """
-        return int(
+        r_ int(
             (2*n + 1/4)**(1/2)  - 1/2
         )
 
 
-if __name__ == "__main__":
-    assert Solution().arrangeCoins(5) == 2
-    assert Solution().arrangeCoins(8) == 3
+__ __name__ __ "__main__":
+    assert Solution().arrangeCoins(5) __ 2
+    assert Solution().arrangeCoins(8) __ 3

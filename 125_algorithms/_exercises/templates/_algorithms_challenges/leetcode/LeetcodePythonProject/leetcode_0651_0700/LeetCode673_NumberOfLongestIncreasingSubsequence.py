@@ -3,35 +3,35 @@ Created on Oct 15, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findNumberOfLIS(self, nums):
+class Solution(object
+    ___ findNumberOfLIS(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums: return 0
-        n = len(nums)
+        __ not nums: r_ 0
+        n = le.(nums)
         res = 0
         maxLen = 0
         lengths = [0]*n
         counts = [0]*n
-        for i in range(n):
+        for i in range(n
             lengths[i], counts[i] = 1, 1
-            for j in range(i):
-                if nums[i] > nums[j]:
-                    if lengths[i] == lengths[j]+1:
+            for j in range(i
+                __ nums[i] > nums[j]:
+                    __ lengths[i] __ lengths[j]+1:
                         counts[i] += counts[j]
-                    elif lengths[i] < lengths[j]+1:
+                    ____ lengths[i] < lengths[j]+1:
                         lengths[i] = lengths[j] + 1
                         counts[i] = counts[j]
-            if maxLen == lengths[i]:
+            __ maxLen __ lengths[i]:
                 res += counts[i]
-            elif maxLen < lengths[i]:
+            ____ maxLen < lengths[i]:
                 maxLen = lengths[i]
                 res = counts[i]
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 3, 5, 4, 7],
             [2, 2, 2, 2, 2],
@@ -43,5 +43,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

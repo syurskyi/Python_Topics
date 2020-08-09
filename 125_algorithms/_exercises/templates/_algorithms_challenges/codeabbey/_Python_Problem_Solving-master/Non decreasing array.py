@@ -1,39 +1,39 @@
 class Solution:
-    def checkPossibility(self, nums: List[int]) -> bool:
+    ___ checkPossibility(self, nums: List[int]) -> bool:
                 i = 0
                 non_count = 0
                 equals = False
-                while i!= len(nums)-1:
+                w___ i!= le.(nums)-1:
                     try:
-                        if nums[i] > nums[i+1]:
-                            if i+1 == len(nums)-1:
+                        __ nums[i] > nums[i+1]:
+                            __ i+1 __ le.(nums)-1:
                                 nums[i+1] += (nums[i] - nums[i+1]) + 1
                                
                                 non_count +=1
                                 i = 0
-                            else:    
-                                if nums[i+1] < nums[i+2]:
-                                    if equals == True:
+                            ____
+                                __ nums[i+1] < nums[i+2]:
+                                    __ equals __ True:
                                         nums[i+1] = nums[i]
-                                    else:
-                                        if nums[i] < nums[i+2]:
+                                    ____
+                                        __ nums[i] < nums[i+2]:
                                             nums[i+1] = nums[i+2]
-                                        else:
+                                        ____
                                             nums[i] = nums[i+1]
-                                else:
+                                ____
                                     nums[i] = (nums[i] - nums[i+1])
                                 non_count += 1
                                 i = 0
-                        elif nums[i] == nums[i+1]:
+                        ____ nums[i] __ nums[i+1]:
                             equals = True
                             i += 1
-                        else:
+                        ____
                             i += 1
                     except:
                         pass
-                    if non_count >= 2:
+                    __ non_count >= 2:
                         break
-                if non_count <= 1:
-                    return True
-                else:
-                    return False
+                __ non_count <= 1:
+                    r_ True
+                ____
+                    r_ False

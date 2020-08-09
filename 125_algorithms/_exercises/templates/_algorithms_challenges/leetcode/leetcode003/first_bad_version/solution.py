@@ -15,23 +15,23 @@ minimize the number of calls to the API.
 # The isBadVersion API is already defined for you.
 # @param version, an integer
 # @return a bool
-# def isBadVersion(version):
+# ___ isBadVersion(version
 
-class Solution(object):
-    def firstBadVersion(self, n):
+class Solution(object
+    ___ firstBadVersion(self, n
         """
         :type n: int
         :rtype: int
         """
         left = 1
         right = n
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = left + (right - left) / 2
-            if isBadVersion(mid):
+            __ isBadVersion(mid
                 right = mid
-            else:
+            ____
                 left = mid
-        if isBadVersion(left):
-            return left
-        elif isBadVersion(right):
-            return right
+        __ isBadVersion(left
+            r_ left
+        ____ isBadVersion(right
+            r_ right

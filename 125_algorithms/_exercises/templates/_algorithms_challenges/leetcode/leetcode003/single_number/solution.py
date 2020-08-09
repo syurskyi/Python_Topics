@@ -1,10 +1,10 @@
 class Solution:
     # @param A, a list of integer
     # @return an integer
-    def singleNumber(self, A):
-        if not A:
-            return None
+    ___ singleNumber(self, A
+        __ not A:
+            r_ None
         p = A[0]
-        for i in range(1, len(A)):
+        for i in range(1, le.(A)):
             p = p ^ A[i]
-        return p
+        r_ p

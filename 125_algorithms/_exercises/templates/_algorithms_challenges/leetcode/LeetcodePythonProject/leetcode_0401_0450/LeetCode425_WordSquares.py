@@ -3,67 +3,67 @@ Created on Apr 15, 2017
 
 @author: MT
 '''
-from lib2to3.pytree import Node
+from lib2to3.pytree ______ Node
 
-class TrieNode(object):
-    def __init__(self, val):
+class TrieNode(object
+    ___ __init__(self, val
         self.val = val
         self.children = {}
         self.candidates = set()
 
-class Solution(object):
-    def wordSquares(self, words):
-        if not words: return []
+class Solution(object
+    ___ wordSquares(self, words
+        __ not words: r_ []
         self.root = TrieNode(-1)
         self.buildTrie(words)
         res = []
         self.dfs(words, [], res, words)
-        return res
+        r_ res
     
-    def dfs(self, words, elems, result, nextWords):
-        if len(elems) == len(words[0]):
+    ___ dfs(self, words, elems, result, nextWords
+        __ le.(elems) __ le.(words[0]
             result.append(list(elems))
-            return
+            r_
         for word in nextWords:
             elems.append(word)
-            if len(elems) < len(words[0]):
+            __ le.(elems) < le.(words[0]
                 prefix = ''
-                for i in range(len(elems)):
-                    prefix += elems[i][len(elems)]
+                for i in range(le.(elems)):
+                    prefix += elems[i][le.(elems)]
                 candidates = self.wordsWithPrefix(prefix)
-            else:
+            ____
                 candidates = []
             self.dfs(words, elems, result, candidates)
             elems.pop()
     
-    def buildTrie(self, words):
+    ___ buildTrie(self, words
         self.root.candidates = words
         for word in words:
             children = self.root.children
             for c in word:
-                if c in children:
+                __ c in children:
                     node = children[c]
-                else:
+                ____
                     node = TrieNode(c)
                     children[c] = node
                 node.candidates.add(word)
                 children = node.children
     
-    def wordsWithPrefix(self, prefix):
-        if not prefix: return []
+    ___ wordsWithPrefix(self, prefix
+        __ not prefix: r_ []
         children = self.root.children
-        for i, c in enumerate(prefix):
-            if c in children:
+        for i, c in enumerate(prefix
+            __ c in children:
                 node = children[c]
-                if i == len(prefix)-1:
-                    return list(node.candidates)
-                else:
+                __ i __ le.(prefix)-1:
+                    r_ list(node.candidates)
+                ____
                     children = node.children
-            else:
-                return []
-        return []
+            ____
+                r_ []
+        r_ []
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["area","lead","wall","lady","ball"],
             ["abat","baba","atan","atal"],
@@ -74,5 +74,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

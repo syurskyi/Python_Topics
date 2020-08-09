@@ -1,7 +1,7 @@
-import csv
-import os
-from collections import defaultdict, namedtuple
-from urllib.request import urlretrieve
+______ csv
+______ os
+from collections ______ defaultdict, namedtuple
+from urllib.request ______ urlretrieve
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'
 TMP = '/tmp'
@@ -18,7 +18,7 @@ MIN_YEAR = 1960
 Movie = namedtuple('Movie', 'title year score')
 
 
-def get_movies_by_director():
+___ get_movies_by_director(
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
@@ -29,27 +29,27 @@ def get_movies_by_director():
                  for r in reader]
     result = defaultdict()
     for r in films:
-        yr = int(r['year'], 10) if r['year'] else 0
-        if yr >= MIN_YEAR:
-            score = float(r['score']) if r['score'] else 0.0
+        yr = int(r['year'], 10) __ r['year'] else 0
+        __ yr >= MIN_YEAR:
+            score = float(r['score']) __ r['score'] else 0.0
             movie = Movie(r['title'], yr, score)
-            if r['director'] in result:
+            __ r['director'] in result:
                 result[r['director']].append(movie)
-            else:
+            ____
                 result[r['director']] = [movie]
-    return result
+    r_ result
 
 
-def calc_mean_score(movies: list):
+___ calc_mean_score(movies: list
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    return round(sum(x.score for x in movies) / len(movies), 1)
+    r_ round(sum(x.score for x in movies) / le.(movies), 1)
 
 
-def get_average_scores(directors: defaultdict):
+___ get_average_scores(directors: defaultdict
     """Iterate through the directors dict (returned by get_movies_by_director),
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    return sorted([(d, calc_mean_score(directors[d])) for d in directors.keys() if len(directors[d]) >= MIN_MOVIES],
+    r_ sorted([(d, calc_mean_score(directors[d])) for d in directors.keys() __ le.(directors[d]) >= MIN_MOVIES],
                   key=lambda x: -x[1])

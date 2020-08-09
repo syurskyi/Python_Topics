@@ -1,7 +1,7 @@
-class Solution(object):
-  def minMoves(self, nums):
+class Solution(object
+  ___ minMoves(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
-    return sum(nums) - len(nums) * min(nums)
+    r_ sum(nums) - le.(nums) * min(nums)

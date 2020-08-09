@@ -3,28 +3,28 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findLength(self, A, B):
+class Solution(object
+    ___ findLength(self, A, B
         """
         :type A: List[int]
         :type B: List[int]
         :rtype: int
         """
         nums1, nums2 = A, B
-        m, n = len(nums1), len(nums2)
+        m, n = le.(nums1), le.(nums2)
         maxLen = 0
         dp = [[0]*(n+1) for _ in range(m+1)]
-        for i in range(m+1):
-            for j in range(n+1):
-                if i == 0 or j == 0:
+        for i in range(m+1
+            for j in range(n+1
+                __ i __ 0 or j __ 0:
                     dp[i][j] = 0
-                else:
-                    if nums1[i-1] == nums2[j-1]:
+                ____
+                    __ nums1[i-1] __ nums2[j-1]:
                         dp[i][j] = dp[i-1][j-1]+1
                         maxLen = max(maxLen, dp[i][j])
-        return maxLen
+        r_ maxLen
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1,2,3,2,1],
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

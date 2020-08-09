@@ -1,28 +1,28 @@
-import re
+______ re
 
 
-def password_complexity(password: str):
+___ password_complexity(password: str
     """Input: password string, calculate score according to 5 criteria in bite,
        return: score int"""
     up = lo = num = spec = 0
     for l in password:
-        if l.isupper():
+        __ l.isupper(
             up += 1
-        elif l.islower():
+        ____ l.islower(
             lo += 1
-        elif l.isdigit():
+        ____ l.isdigit(
             num += 1
-        else:
+        ____
             spec += 1
     score = 0
-    if 0 < up and 0 < lo:
+    __ 0 < up and 0 < lo:
         score += 1
-    if 0 < up + lo and 0 < num:
+    __ 0 < up + lo and 0 < num:
         score += 1
-    if 0 < spec:
+    __ 0 < spec:
         score += 1
-    if len(password) >= 8:
+    __ le.(password) >= 8:
         score += 1
-        if not re.search(r'(.)\1', password):
+        __ not re.search(r'(.)\1', password
             score += 1
-    return score
+    r_ score

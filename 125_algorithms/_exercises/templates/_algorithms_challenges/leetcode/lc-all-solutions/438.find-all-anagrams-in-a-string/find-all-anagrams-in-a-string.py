@@ -1,22 +1,22 @@
-from collections import Counter
+from collections ______ Counter
 
 
-class Solution(object):
-  def findAnagrams(self, s, p):
+class Solution(object
+  ___ findAnagrams(self, s, p
     """
     :type s: str
     :type p: str
     :rtype: List[int]
     """
-    sCount = Counter(s[:len(p) - 1])
+    sCount = Counter(s[:le.(p) - 1])
     pCount = Counter(p)
     ans = []
 
-    for i in range(len(p) - 1, len(s)):
+    for i in range(le.(p) - 1, le.(s)):
       sCount[s[i]] += 1
-      if sCount == pCount:
-        ans.append(i - len(p) + 1)
-      sCount[s[i - len(p) + 1]] -= 1
-      if sCount[s[i - len(p) + 1]] == 0:
-        del sCount[s[i - len(p) + 1]]
-    return ans
+      __ sCount __ pCount:
+        ans.append(i - le.(p) + 1)
+      sCount[s[i - le.(p) + 1]] -= 1
+      __ sCount[s[i - le.(p) + 1]] __ 0:
+        del sCount[s[i - le.(p) + 1]]
+    r_ ans

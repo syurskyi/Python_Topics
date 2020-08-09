@@ -3,26 +3,26 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def replaceWords(self, dict, sentence):
+class Solution(object
+    ___ replaceWords(self, dict, sentence
         """
         :type dict: List[str]
         :type sentence: str
         :rtype: str
         """
-        dict.sort(key=lambda x: len(x))
+        dict.sort(key=lambda x: le.(x))
         resArr = []
         words = sentence.split(' ')
-        for i, word in enumerate(words):
+        for i, word in enumerate(words
             for s in dict:
-                if word[:len(s)] == s:
+                __ word[:le.(s)] __ s:
                     resArr.append(s)
                     break
-            if i+1 > len(resArr):
+            __ i+1 > le.(resArr
                 resArr.append(word)
-        return ' '.join(resArr)
+        r_ ' '.join(resArr)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["cat", "bat", "rat"],
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

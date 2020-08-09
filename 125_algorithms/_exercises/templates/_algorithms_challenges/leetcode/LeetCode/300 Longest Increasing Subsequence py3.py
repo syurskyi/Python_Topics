@@ -16,12 +16,12 @@ return the length.
 Your algorithm should run in O(n2) complexity.
 Follow up: Could you improve it to O(n log n) time complexity?
 """
-from typing import List
-from bisect import bisect_left
+from typing ______ List
+from bisect ______ bisect_left
 
 
 class Solution:
-    def lengthOfLIS(self, nums: List[int]) -> int:
+    ___ lengthOfLIS(self, nums: List[int]) -> int:
         """
         LIS dp + binary search
         Patience sort
@@ -38,4 +38,4 @@ class Solution:
             F[i] = n
             l = max(l, i + 1)
 
-        return l
+        r_ l

@@ -3,8 +3,8 @@ Created on Feb 22, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def calculate(self, s):
+class Solution(object
+    ___ calculate(self, s
         """
         :type s: str
         :rtype: int
@@ -14,33 +14,33 @@ class Solution(object):
         stack = []
         sign = 1
         preVal = 0
-        while i < len(s):
-            if s[i].isdigit():
+        w___ i < le.(s
+            __ s[i].isdigit(
                 preVal = 0
-                while i < len(s) and s[i].isdigit():
+                w___ i < le.(s) and s[i].isdigit(
                     preVal = preVal*10 + int(s[i])
                     i += 1
                 i -= 1
-            elif s[i] == '(':
+            ____ s[i] __ '(':
                 stack.append(res)
                 stack.append(sign)
                 res = 0
                 sign = 1
-            elif s[i] == ')':
+            ____ s[i] __ ')':
                 res += sign*preVal
                 res = stack.pop()*res + stack.pop()
                 preVal = 0
-            elif s[i] == '+':
+            ____ s[i] __ '+':
                 res += preVal*sign
                 sign = 1
-            elif s[i] == '-':
+            ____ s[i] __ '-':
                 res += preVal*sign
                 sign = -1
             i += 1
         res += preVal*sign
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             '(1+(4+5+2)-3)+(6+8)',
             '(1-3)+(3-5+(3-10)-10)',
@@ -55,5 +55,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

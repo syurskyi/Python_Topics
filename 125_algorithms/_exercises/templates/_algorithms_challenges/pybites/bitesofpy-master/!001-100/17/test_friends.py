@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from Previous.friends import friends_teams
+from Previous.friends ______ friends_teams
 
 friends = 'Bob Dante Julian Martin'.split()
 
@@ -22,13 +22,13 @@ friends = 'Bob Dante Julian Martin'.split()
     # not with self
     (('Julian', 'Julian'), False),
 ])
-def test_team_of_two_order_does_not_matter(test_input, expected):
+___ test_team_of_two_order_does_not_matter(test_input, expected
     """First test lists all combos"""
     combos = list(friends_teams(friends, team_size=2, order_does_matter=False))
-    assert len(combos) == 6
-    if expected:
+    assert le.(combos) __ 6
+    __ expected:
         assert test_input in combos
-    else:
+    ____
         assert test_input not in combos
 
 
@@ -41,10 +41,10 @@ def test_team_of_two_order_does_not_matter(test_input, expected):
     (('Julian', 'Dante'), True),
     (('Martin', 'Dante'), True),
 ])
-def test_team_of_two_order_does_matter(test_input, expected):
+___ test_team_of_two_order_does_matter(test_input, expected
     """From here on just test a subset of combos"""
     combos = list(friends_teams(friends, team_size=2, order_does_matter=True))
-    assert len(combos) == 12
+    assert le.(combos) __ 12
     assert test_input in combos
 
 
@@ -59,12 +59,12 @@ def test_team_of_two_order_does_matter(test_input, expected):
     # no one goes twice
     (('Dante', 'Dante', 'Martin'), False),
 ])
-def test_team_of_three_order_does_not_matter(test_input, expected):
+___ test_team_of_three_order_does_not_matter(test_input, expected
     combos = list(friends_teams(friends, team_size=3, order_does_matter=False))
-    assert len(combos) == 4
-    if expected:
+    assert le.(combos) __ 4
+    __ expected:
         assert test_input in combos
-    else:
+    ____
         assert test_input not in combos
 
 
@@ -77,7 +77,7 @@ def test_team_of_three_order_does_not_matter(test_input, expected):
     (('Dante', 'Bob', 'Martin'), True),
     (('Julian', 'Martin', 'Dante'), True),
 ])
-def test_team_of_three_order_does_matter(test_input, expected):
+___ test_team_of_three_order_does_matter(test_input, expected
     combos = list(friends_teams(friends, team_size=3, order_does_matter=True))
-    assert len(combos) == 24
+    assert le.(combos) __ 24
     assert test_input in combos

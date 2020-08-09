@@ -1,11 +1,11 @@
-class Allergies(object):
+class Allergies(object
 
-    def __init__(self, number):
+    ___ __init__(self, number
         pass
 
-    def is_allergic_to(self, string):
+    ___ is_allergic_to(self, string
         pass
 
     @property
-    def lst(self):
+    ___ lst(self
         pass

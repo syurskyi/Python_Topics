@@ -29,7 +29,7 @@ cache.get(4);       // returns 4
 
 
 class Node:
-    def __init__(self, key, val):
+    ___ __init__(self, key, val
         self.key = key
         self.val = val
         self.prev, self.next = None, None
@@ -37,7 +37,7 @@ class Node:
 
 class LRUCache:
 
-    def __init__(self, capacity: int):
+    ___ __init__(self, capacity: int
         """
         O(1) look up - Map
         O(1) update most recent vs. least recent - Linked List
@@ -54,26 +54,26 @@ class LRUCache:
         self.cap = capacity
         self.map = {}
 
-    def get(self, key: int) -> int:
-        if key in self.map:
+    ___ get(self, key: int) -> int:
+        __ key in self.map:
             node = self.map[key]
             self._remove(key)
             self._appendleft(node)
-            return node.val
+            r_ node.val
 
-        return -1
+        r_ -1
 
-    def put(self, key: int, value: int) -> None:
-        if key in self.map:
+    ___ put(self, key: int, value: int) -> None:
+        __ key in self.map:
             self._remove(key)
-        elif len(self.map) >= self.cap:
+        ____ le.(self.map) >= self.cap:
             node = self.tail.prev
             self._remove(node.key)
 
         node = Node(key, value)
         self._appendleft(node)
 
-    def _appendleft(self, node: Node):
+    ___ _appendleft(self, node: Node
         self.map[node.key] = node  # update/delete map in these two operators
         nxt = self.head.next
         self.head.next = node
@@ -81,7 +81,7 @@ class LRUCache:
         node.next = nxt
         nxt.prev = node
 
-    def _remove(self, key: int):
+    ___ _remove(self, key: int
         node = self.map[key]
         prev = node.prev
         nxt = node.next

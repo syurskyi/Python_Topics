@@ -1,5 +1,5 @@
-class Solution(object):
-  def validUtf8(self, data):
+class Solution(object
+  ___ validUtf8(self, data
     """
     :type data: List[int]
     :rtype: bool
@@ -9,25 +9,25 @@ class Solution(object):
     new = True
     followed = 0
     i = 0
-    while i < len(data):
-      if new:
+    w___ i < le.(data
+      __ new:
         followed = -1
         for mask in masks:
-          if (data[i] & mask) in features:
+          __ (data[i] & mask) in features:
             followed = features[data[i] & mask]
             break
-        if followed == -1:
-          return False
-        elif followed != 0:
+        __ followed __ -1:
+          r_ False
+        ____ followed != 0:
           new = False
-        else:
+        ____
           new = True
-      else:
-        if (data[i] & 0xc0) != 0x80:
-          return False
+      ____
+        __ (data[i] & 0xc0) != 0x80:
+          r_ False
         followed -= 1
-        if followed == 0:
+        __ followed __ 0:
           new = True
       i += 1
 
-    return followed == 0
+    r_ followed __ 0

@@ -1,38 +1,38 @@
 class Node:
 
-    def __init__(self, data):
+    ___ __init__(self, data
         self.data = data
         self.next = None
 
 
 class LinkedList:
 
-    def __init__(self):
+    ___ __init__(self
         self.head = None
 
-    def printList(self):
+    ___ printList(self
         temp = self.head
         linked_list = ""
-        while(temp):
+        w___(temp
             linked_list += (str(temp.data) + " ")
             temp = temp.next
         print(linked_list)
 
     # list start at 0
-    def insertNode(self, val, pos):
+    ___ insertNode(self, val, pos
         target = Node(val)
-        if(pos == 0):
+        __(pos __ 0
             target.next = self.head
             self.head = target
-            return
+            r_
 
-        def getPrev(pos):
+        ___ getPrev(pos
             temp = self.head
             count = 1
-            while(count < pos):
+            w___(count < pos
                 temp = temp.next
                 count += 1
-            return temp
+            r_ temp
 
         prev = getPrev(pos)
         nextNode = prev.next

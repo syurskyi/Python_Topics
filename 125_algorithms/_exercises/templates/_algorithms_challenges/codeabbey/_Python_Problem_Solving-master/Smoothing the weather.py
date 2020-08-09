@@ -6,16 +6,16 @@ mea = list(map(float, input().split()))
 mea_store = []
 
 #traversing through each element of the measurements
-for i in range(len(mea)):
+for i in range(le.(mea)):
     #if first element then store it in the result
-    if i == 0:
+    __ i __ 0:
         mea_store.append(mea[i])
     #if last element then store it in the result array
-    elif i== len(mea)-1:
+    ____ i__ le.(mea)-1:
         mea_store.append(mea[i])
         break
     #else calculate the average of the middle numbers and store in the result
-    else:
+    ____
         res = (mea[i]+mea[i-1]+mea[i+1])/3
         mea_store.append(res)
         

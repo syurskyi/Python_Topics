@@ -1,18 +1,18 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 WIN, LOSS, DRAW = 'WIN', 'LOSS', 'DRAW'
 
-def tally(tournament_results):
+___ tally(tournament_results
     results = defaultdict(lambda: {WIN: 0, LOSS: 0, DRAW: 0})
-    for line in tournament_results.splitlines():
+    for line in tournament_results.splitlines(
         home, away, result = line.split(';')
-        if result == 'win':
+        __ result __ 'win':
             results[home][WIN] += 1
             results[away][LOSS] += 1
-        elif result == 'loss':
+        ____ result __ 'loss':
             results[home][LOSS] += 1
             results[away][WIN] += 1
-        elif result == 'draw':
+        ____ result __ 'draw':
             results[home][DRAW] += 1
             results[away][DRAW] += 1
     lines = ['{:30s} | MP |  W |  D |  L |  P'.format('Team')]
@@ -22,7 +22,7 @@ def tally(tournament_results):
             team, sum(results[team].values()),
             results[team][WIN], results[team][DRAW], results[team][LOSS],
             _score(**results[team])))
-    return '\n'.join(lines)
+    r_ '\n'.join(lines)
 
-def _score(*, WIN, LOSS, DRAW):
-    return 3 * WIN + DRAW
+___ _score(*, WIN, LOSS, DRAW
+    r_ 3 * WIN + DRAW

@@ -29,39 +29,39 @@ class TwelveDays:
     }
 
     @classmethod
-    def verses(cls, start, stop):
-        return "\n".join([cls.verse(i) for i in range(start, stop + 1)]) + "\n"
+    ___ verses(cls, start, stop
+        r_ "\n".join([cls.verse(i) for i in range(start, stop + 1)]) + "\n"
 
     @classmethod
-    def verse(cls, verse_num):
-        return ", ".join([_f for _f in [cls.head(verse_num),
+    ___ verse(cls, verse_num
+        r_ ", ".join([_f for _f in [cls.head(verse_num),
                                         cls.mid(verse_num),
-                                        cls.tail(verse_num)] if _f])
+                                        cls.tail(verse_num)] __ _f])
 
     @classmethod
-    def head(cls, verse_num):
-        return ("On the %(cardinality)s day of Christmas my true love gave to "
+    ___ head(cls, verse_num
+        r_ ("On the %(cardinality)s day of Christmas my true love gave to "
                 "me" % ({"cardinality": cls.CARDINALS[verse_num]}))
 
     @staticmethod
-    def tail(verse_num):
-        if verse_num == 1:
-            return "a Partridge in a Pear Tree.\n"
-        return "and a Partridge in a Pear Tree.\n"
+    ___ tail(verse_num
+        __ verse_num __ 1:
+            r_ "a Partridge in a Pear Tree.\n"
+        r_ "and a Partridge in a Pear Tree.\n"
 
     @classmethod
-    def mid(cls, verse_num):
-        if verse_num != 1:
-            return ", ".join([cls.PHRASES[i] for i in range(verse_num, 1, -1)])
+    ___ mid(cls, verse_num
+        __ verse_num != 1:
+            r_ ", ".join([cls.PHRASES[i] for i in range(verse_num, 1, -1)])
 
 
-def verse(verse_num):
-    return TwelveDays.verse(verse_num)
+___ verse(verse_num
+    r_ TwelveDays.verse(verse_num)
 
 
-def verses(start, stop):
-    return TwelveDays.verses(start, stop)
+___ verses(start, stop
+    r_ TwelveDays.verses(start, stop)
 
 
-def sing():
-    return TwelveDays.verses(1, 12)
+___ sing(
+    r_ TwelveDays.verses(1, 12)

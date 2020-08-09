@@ -22,7 +22,7 @@ __author__ = 'Daniel'
 
 
 class TrieNode:
-    def __init__(self):
+    ___ __init__(self
         """
         Initialize your data structure here.
         """
@@ -32,13 +32,13 @@ class TrieNode:
 
 
 class WordDictionary:
-    def __init__(self):
+    ___ __init__(self
         """
         initialize your data structure here.
         """
         self.root = TrieNode()
 
-    def addWord(self, word):
+    ___ addWord(self, word
         """
         Adds a word into the data structure.
         :type word: str
@@ -46,39 +46,39 @@ class WordDictionary:
         """
         cur = self.root
         for w in word:
-            if w not in cur.children:
+            __ w not in cur.children:
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
 
         cur.ended = True
 
-    def search(self, word):
+    ___ search(self, word
         """
         Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one
         letter.
         :type word: str
         :rtype: bool
         """
-        return self.__search(word, self.root)
+        r_ self.__search(word, self.root)
 
-    def __search(self, word, cur):
-        if not word:
-            return cur.ended
+    ___ __search(self, word, cur
+        __ not word:
+            r_ cur.ended
 
         w = word[0]
-        if w != ".":
-            if w in cur.children:
-                return self.__search(word[1:], cur.children[w])
-            else:
-                return False
-        else:
-            for child in cur.children.values():
-                if self.__search(word[1:], child):
-                    return True
+        __ w != ".":
+            __ w in cur.children:
+                r_ self.__search(word[1:], cur.children[w])
+            ____
+                r_ False
+        ____
+            for child in cur.children.values(
+                __ self.__search(word[1:], child
+                    r_ True
 
-        return False
+        r_ False
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     dic = WordDictionary()
     dic.addWord("a")
-    assert dic.search(".") == True
+    assert dic.search(".") __ True

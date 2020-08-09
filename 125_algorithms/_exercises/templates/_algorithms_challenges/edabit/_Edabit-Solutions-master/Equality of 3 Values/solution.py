@@ -1,9 +1,9 @@
-def equal(a, b, c):
-    if a == b and a == c:
-        return 3
-    elif a == b or a == c:
-        return 2
-    elif b == c:
-        return 2
-    else:
-        return 0
+___ equal(a, b, c
+    __ a __ b and a __ c:
+        r_ 3
+    ____ a __ b or a __ c:
+        r_ 2
+    ____ b __ c:
+        r_ 2
+    ____
+        r_ 0

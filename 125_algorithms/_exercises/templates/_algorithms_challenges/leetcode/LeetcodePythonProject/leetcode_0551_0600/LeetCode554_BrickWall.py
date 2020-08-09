@@ -4,8 +4,8 @@ Created on Aug 24, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def leastBricks(self, wall):
+class Solution(object
+    ___ leastBricks(self, wall
         """
         :type wall: List[List[int]]
         :rtype: int
@@ -16,13 +16,13 @@ class Solution(object):
             for val in vals:
                 sumVal += val
                 hashmap[sumVal] = hashmap.get(sumVal, 0)+1
-        minRes = len(wall)
-        for val, count in hashmap.items():
-            if 1 <= val < sum(wall[0]): # not the start and end
-                minRes = min(minRes, len(wall)-count)
-        return minRes
+        minRes = le.(wall)
+        for val, count in hashmap.items(
+            __ 1 <= val < sum(wall[0] # not the start and end
+                minRes = min(minRes, le.(wall)-count)
+        r_ minRes
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1,2,2,1],
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,8 +1,8 @@
 infile = open("prob61.txt")
 infile.readline()
 data = infile.read()
-import math
-import time
+______ ma__
+______ time
 ##start = time.clock()
 
 ## TWO METHODS: Sieve of Eratosthenes or Trial Division
@@ -10,16 +10,16 @@ n = 3000000
 # Seive
 digitlist = [0 for i in range(n)] # 0 is not marked
 
-for i in range(2,int(math.sqrt(n))):
+for i in range(2,int(ma__.sqrt(n))):
     j=0
-    while (i**2)+i*j< n:
+    w___ (i**2)+i*j< n:
         digitlist[(i**2)+i*j] = 1 # marked to be not prime
         j+=1
         
 
 primelist = []
-for prime in range(2,n):
-    if digitlist[prime] == 0:
+for prime in range(2,n
+    __ digitlist[prime] __ 0:
         primelist.append(prime)
 
 ###### using Enumerate
@@ -28,8 +28,8 @@ for prime in range(2,n):
 ### Trial
 ##
 ##primelist = []
-##for i in range(2,int(math.sqrt(n))):
-##    for j in range(i):
+##for i in range(2,int(ma__.sqrt(n))):
+##    for j in range(i
         
     
 #

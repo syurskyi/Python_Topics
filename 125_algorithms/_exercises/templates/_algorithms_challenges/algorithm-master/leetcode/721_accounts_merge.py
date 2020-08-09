@@ -1,16 +1,16 @@
 class Solution:
-    def accountsMerge(self, A):
+    ___ accountsMerge(self, A
         """
         :type A: List[List[str]]
         :rtype: List[List[str]]
         """
-        if not A:
-            return []
+        __ not A:
+            r_ []
 
         M = {}  # mails
         M2N = {}  # mail to name
         for L in A:
-            for i in range(1, len(L)):
+            for i in range(1, le.(L)):
                 M2N[L[i]] = L[0]
                 self.connect(M, L[i], L[1])
 
@@ -18,27 +18,27 @@ class Solution:
             self.find(M, a)
 
         res = {}
-        for m1, m0 in M.items():
-            if m0 not in res:
+        for m1, m0 in M.items(
+            __ m0 not in res:
                 res[m0] = []
 
             res[m0].append(m1)
 
-        return [[M2N[m]] + sorted(M) for m, M in res.items()]
+        r_ [[M2N[m]] + sorted(M) for m, M in res.items()]
 
-    def connect(self, N, a, b):
+    ___ connect(self, N, a, b
         _a = self.find(N, a)
         _b = self.find(N, b)
 
-        if _a is not _b:
+        __ _a is not _b:
             N[_a] = _b
 
-    def find(self, N, a):
-        if a not in N:
+    ___ find(self, N, a
+        __ a not in N:
             N[a] = a
-            return a
-        if N[a] is a:
-            return a
+            r_ a
+        __ N[a] is a:
+            r_ a
 
         N[a] = self.find(N, N[a])
-        return N[a]
+        r_ N[a]

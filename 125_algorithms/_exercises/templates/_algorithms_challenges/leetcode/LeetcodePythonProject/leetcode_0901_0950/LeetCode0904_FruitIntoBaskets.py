@@ -1,5 +1,5 @@
-class Solution(object):
-    def totalFruit(self, tree):
+class Solution(object
+    ___ totalFruit(self, tree
         """
         :type tree: List[int]
         :rtype: int
@@ -7,18 +7,18 @@ class Solution(object):
         left = 0
         res = 0
         hashmap = {}
-        for i, num in enumerate(tree):
+        for i, num in enumerate(tree
             hashmap[num] = hashmap.get(num, 0) + 1
-            while len(hashmap) > 2:
+            w___ le.(hashmap) > 2:
                 hashmap[tree[left]] -= 1
-                if hashmap[tree[left]] == 0:
+                __ hashmap[tree[left]] __ 0:
                     del hashmap[tree[left]]
                 left += 1
             res = max(res, i-left+1)
-        res = max(res, len(tree)-left)
-        return res
+        res = max(res, le.(tree)-left)
+        r_ res
 
-    def test(self):
+    ___ test(self
         testCases = [
             [0,1,2],
             [1,2,1],
@@ -32,5 +32,5 @@ class Solution(object):
             print('-='*30+'-')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

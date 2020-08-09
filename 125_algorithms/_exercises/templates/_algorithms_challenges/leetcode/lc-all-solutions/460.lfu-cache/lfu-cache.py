@@ -1,95 +1,95 @@
-class List(object):
+class List(object
   @staticmethod
-  def delete(elem):
+  ___ delete(elem
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
     elem.next = elem.prev = None
-    return elem
+    r_ elem
 
   @staticmethod
-  def move(elem, newPrev, newNext):
+  ___ move(elem, newPrev, newNext
     elem.prev = newPrev
     elem.next = newNext
     newPrev.next = elem
     newNext.prev = elem
 
   @staticmethod
-  def append(head, elem):
+  ___ append(head, elem
     List.move(elem, head.prev, head)
 
   @staticmethod
-  def insertAfter(head, elem):
+  ___ insertAfter(head, elem
     List.move(elem, head, head.next)
 
   @staticmethod
-  def isEmpty(head):
-    return head.next == head.prev == head
+  ___ isEmpty(head
+    r_ head.next __ head.prev __ head
 
   @staticmethod
-  def initHead(head):
+  ___ initHead(head
     head.prev = head.next = head
 
 
-class FreqNode(object):
-  def __init__(self, freq):
+class FreqNode(object
+  ___ __init__(self, freq
     self.prev = self.next = None
     self.freq = freq
     self.head = Cache(-1, -1, self)
     List.initHead(self.head)
 
-  def popCache(self):
+  ___ popCache(self
     head = self.head
     ret = List.delete(head.next)
-    if List.isEmpty(head):
+    __ List.isEmpty(head
       List.delete(self)
-    return ret
+    r_ ret
 
 
-class Cache(object):
-  def __init__(self, key, val, freqNode):
+class Cache(object
+  ___ __init__(self, key, val, freqNode
     self.prev = self.next = None
     self.freqNode = freqNode
     self.val = val
     self.key = key
 
-  def increaseFreq(self):
+  ___ increaseFreq(self
     freqNode = self.freqNode
     newFreqNode = None
-    if List.isEmpty(freqNode) or freqNode.next.freq != freqNode.freq + 1:
+    __ List.isEmpty(freqNode) or freqNode.next.freq != freqNode.freq + 1:
       newFreqNode = FreqNode(self.freqNode.freq + 1)
       List.insertAfter(freqNode, newFreqNode)
-    else:
+    ____
       newFreqNode = freqNode.next
     self.freqNode = newFreqNode
     List.delete(self)
     List.append(newFreqNode.head, self)
-    if List.isEmpty(freqNode.head):
+    __ List.isEmpty(freqNode.head
       List.delete(freqNode)
 
 
-class LFUCache(object):
-  def __init__(self, capacity):
+class LFUCache(object
+  ___ __init__(self, capacity
     self.d = {}
     self.cap = capacity
     self.head = FreqNode(-1)
     List.initHead(self.head)
 
-  def get(self, key):
-    if key not in self.d:
-      return -1
+  ___ get(self, key
+    __ key not in self.d:
+      r_ -1
     cacheNode = self.d[key]
     cacheNode.increaseFreq()
-    return cacheNode.val
+    r_ cacheNode.val
 
-  def set(self, key, value):
-    if self.cap == 0:
-      return
-    if key in self.d:
+  ___ set(self, key, value
+    __ self.cap __ 0:
+      r_
+    __ key in self.d:
       cacheNode = self.d[key]
       cacheNode.val = value
       cacheNode.increaseFreq()
-    else:
-      if len(self.d) >= self.cap:
+    ____
+      __ le.(self.d) >= self.cap:
         del self.d[self.head.next.popCache().key]
       newFreqNode = FreqNode(0)
       newCacheNode = Cache(key, value, newFreqNode)

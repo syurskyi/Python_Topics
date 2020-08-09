@@ -25,7 +25,7 @@ Do not use the eval built-in library function.
 
 
 class Solution:
-    def calculate(self, s: str) -> int:
+    ___ calculate(self, s: str) -> int:
         """
         No brackets. Look at previous operand and operator, when finishing
         scanning current operand.
@@ -33,21 +33,21 @@ class Solution:
         operand = 0
         stk = []
         prev_op = "+"
-        for i, c in enumerate(s):
-            if c.isdigit():
+        for i, c in enumerate(s
+            __ c.isdigit(
                 operand = operand * 10 + int(c)
 
-            #  i == len(s) - 1
-            delimited = c in ("+", "-", "*", "/") or i == len(s) - 1
-            if delimited:
-                if prev_op == "+":
+            #  i == le.(s) - 1
+            delimited = c in ("+", "-", "*", "/") or i __ le.(s) - 1
+            __ delimited:
+                __ prev_op __ "+":
                     cur = operand
-                elif prev_op == "-":
+                ____ prev_op __ "-":
                     cur = -operand
-                elif prev_op == "*":
+                ____ prev_op __ "*":
                     cur = stk.pop() * operand
-                else:
-                    assert prev_op == "/"
+                ____
+                    assert prev_op __ "/"
                     # instead of op1 // op2 due to negative handling, -3 // 2 == -2
                     cur = int(stk.pop() / operand)
 
@@ -55,22 +55,22 @@ class Solution:
                 prev_op = c
                 operand = 0
 
-        return sum(stk)
+        r_ sum(stk)
 
-    def calculate_error(self, s: str) -> int:
+    ___ calculate_error(self, s: str) -> int:
         """
         cannot use dictionary, since it is eager evaluation
         """
         operand = 0
         stk = []
         prev_op = "+"
-        for i, c in enumerate(s):
-            if c.isdigit():
+        for i, c in enumerate(s
+            __ c.isdigit(
                 operand = operand * 10 + int(c)
 
-            #  i == len(s) - 1
-            delimited = c in ("+", "-", "*", "/") or i == len(s) - 1
-            if delimited:
+            #  i == le.(s) - 1
+            delimited = c in ("+", "-", "*", "/") or i __ le.(s) - 1
+            __ delimited:
                 cur = {
                     "+": operand,
                     "-": -operand,
@@ -82,8 +82,8 @@ class Solution:
                 prev_op = c
                 operand = 0
 
-        return sum(stk)
+        r_ sum(stk)
 
 
-if __name__ == "__main__":
-    assert Solution().calculate("3+2*2") == 7
+__ __name__ __ "__main__":
+    assert Solution().calculate("3+2*2") __ 7

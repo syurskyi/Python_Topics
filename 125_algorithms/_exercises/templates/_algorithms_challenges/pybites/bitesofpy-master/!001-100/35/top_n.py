@@ -1,6 +1,6 @@
-from datetime import datetime
-import heapq
-from operator import attrgetter
+from datetime ______ datetime
+______ heapq
+from operator ______ attrgetter
 
 numbers = [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6]
 dates = [datetime(2018, 1, 23, 0, 0),
@@ -28,13 +28,13 @@ earnings_mln = [
 ]
 
 
-def get_largest_number(numbers, n=3):
-    return heapq.nlargest(n, numbers)
+___ get_largest_number(numbers, n=3
+    r_ heapq.nlargest(n, numbers)
 
 
-def get_latest_dates(dates, n=3):
-    return heapq.nlargest(n, dates)
+___ get_latest_dates(dates, n=3
+    r_ heapq.nlargest(n, dates)
 
 
-def get_highest_earnings(earnings_mln, n=3):
-    return heapq.nlargest(n, earnings_mln, key=lambda x : x['earnings'])
+___ get_highest_earnings(earnings_mln, n=3
+    r_ heapq.nlargest(n, earnings_mln, key=lambda x : x['earnings'])

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestMergeRanges(object):
+class TestMergeRanges(object
 
-    def test_merge_ranges(self):
+    ___ test_merge_ranges(self
         solution = Solution()
         assert_raises(TypeError, solution.merge_ranges, None)
         assert_equal(solution.merge_ranges([]), [])
@@ -19,10 +19,10 @@ class TestMergeRanges(object):
         print('Success: test_merge_ranges')
 
 
-def main():
+___ main(
     test = TestMergeRanges()
     test.test_merge_ranges()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

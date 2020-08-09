@@ -1,2 +1,2 @@
-def translate():
+___ translate(
     pass

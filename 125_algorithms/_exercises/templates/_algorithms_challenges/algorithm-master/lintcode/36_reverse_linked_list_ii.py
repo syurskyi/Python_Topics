@@ -1,8 +1,8 @@
 """
 Definition of ListNode
 
-class ListNode(object):
-    def __init__(self, val, next=None):
+class ListNode(object
+    ___ __init__(self, val, next=None
         self.val = val
         self.next = next
 """
@@ -15,9 +15,9 @@ class Solution:
     @param: n: An integer
     @return: The head of the reversed ListNode
     """
-    def reverseBetween(self, head, m, n):
-        if not head:
-            return
+    ___ reverseBetween(self, head, m, n
+        __ not head:
+            r_
 
         """
         to get to `n`th node from `m`th node needs `n - m` operations
@@ -28,7 +28,7 @@ class Solution:
         `A` will stay at `m-1`th node
         """
         A = dummy = ListNode(-1, head)
-        while m > 1:
+        w___ m > 1:
             m -= 1
             A = A.next
 
@@ -38,7 +38,7 @@ class Solution:
         """
         B = cur = A.next
         pre = nxt = None
-        while n >= 0:
+        w___ n >= 0:
             n -= 1
             nxt = B.next
             B.next = pre
@@ -48,4 +48,4 @@ class Solution:
         A.next = pre
         cur.next = B
 
-        return dummy.next
+        r_ dummy.next

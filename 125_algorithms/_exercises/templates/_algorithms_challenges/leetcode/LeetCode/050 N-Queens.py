@@ -27,7 +27,7 @@ QUEEN = 1
 DEFAULT = 0
 directions = [(+1, +1), (-1, -1), (-1, +1), (+1, -1)]
 class Solution:
-    def solveNQueens(self, n):
+    ___ solveNQueens(self, n
         """
         backtracking
         :param n: integer
@@ -36,9 +36,9 @@ class Solution:
         result = []
         current = [[0 for _ in xrange(n)] for _ in xrange(n)]
         self.backtrack(0, current, result)
-        return self.transform2string(result)
+        r_ self.transform2string(result)
 
-    def backtrack(self, queen_index, current, result):
+    ___ backtrack(self, queen_index, current, result
         """
         Search problem: dfs, backtracking
 
@@ -50,13 +50,13 @@ class Solution:
         :param result: list of 2D matrix
         :return: Nothing
         """
-        n = len(current)
-        if queen_index==n:
+        n = le.(current)
+        __ queen_index__n:
             result.append(current)
-            return
+            r_
 
-        for i in xrange(n):
-            if current[queen_index][i]==INVALID:
+        for i in xrange(n
+            __ current[queen_index][i]__INVALID:
                 continue
 
             # place the queen
@@ -64,12 +64,12 @@ class Solution:
             new_config[queen_index][i] = QUEEN
 
             # update invalid position in the new config
-            for m in xrange(n):
+            for m in xrange(n
                 # col
-                if new_config[m][i]==DEFAULT:
+                __ new_config[m][i]__DEFAULT:
                     new_config[m][i] = INVALID
                 # row
-                if new_config[queen_index][m]==DEFAULT:
+                __ new_config[queen_index][m]__DEFAULT:
                     new_config[queen_index][m] = INVALID
 
                 # diagonal - not optimized
@@ -93,7 +93,7 @@ class Solution:
                 for direction in directions:
                     row = queen_index+direction[0]*m
                     col = i+direction[1]*m
-                    if 0<=row<n and 0<=col<n and new_config[row][col]==DEFAULT:
+                    __ 0<=row<n and 0<=col<n and new_config[row][col]__DEFAULT:
                         new_config[row][col] = INVALID
 
             # dfs
@@ -101,17 +101,17 @@ class Solution:
             self.backtrack(queen_index+1, new_config, result)
 
 
-    def transform2string(self, result):
+    ___ transform2string(self, result
         string_result = []
         for configuration in result:
             current = []
             for row in configuration:
-                row = map(lambda x: "." if x==-1 else "Q", row)
+                row = map(lambda x: "." __ x__-1 else "Q", row)
                 row = "".join(row)
                 current.append(row)
             string_result.append(current)
-        return string_result
+        r_ string_result
 
 
-if __name__=="__main__":
-    assert Solution().solveNQueens(4)==[['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]
+__ __name____"__main__":
+    assert Solution().solveNQueens(4)__[['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]

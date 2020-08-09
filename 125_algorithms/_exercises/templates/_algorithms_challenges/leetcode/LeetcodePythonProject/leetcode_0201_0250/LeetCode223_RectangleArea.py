@@ -3,8 +3,8 @@ Created on Feb 21, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def computeArea(self, A, B, C, D, E, F, G, H):
+class Solution(object
+    ___ computeArea(self, A, B, C, D, E, F, G, H
         """
         :type A: int
         :type B: int
@@ -22,20 +22,20 @@ class Solution(object):
         aArea = (xA2-xA1)*(yA2-yA1)
         bArea = (xB2-xB1)*(yB2-yB1)
         
-        if xA1 <= xB1 <= xA2:
+        __ xA1 <= xB1 <= xA2:
             xTmp = min(xB2, xA2)
-            if yA1 <= yB1 < yA2:
+            __ yA1 <= yB1 < yA2:
                 yTmp = min(yB2, yA2)
                 common = (xTmp-xB1)*(yTmp-yB1)
-            elif yB1 <= yA1 < yB2:
+            ____ yB1 <= yA1 < yB2:
                 yTmp = min(yA2, yB2)
                 common = (xTmp-xB1)*(yTmp-yA1)
-        elif xB1 <= xA1 <= xB2:
+        ____ xB1 <= xA1 <= xB2:
             xTmp = min(xB2, xA2)
-            if yA1 <= yB1 < yA2:
+            __ yA1 <= yB1 < yA2:
                 yTmp = min(yB2, yA2)
                 common = (xTmp-xA1)*(yTmp-yB1)
-            elif yB1 <= yA1 < yB2:
+            ____ yB1 <= yA1 < yB2:
                 yTmp = min(yA2, yB2)
                 common = (xTmp-xA1)*(yTmp-yA1)
-        return aArea+bArea-common
+        r_ aArea+bArea-common

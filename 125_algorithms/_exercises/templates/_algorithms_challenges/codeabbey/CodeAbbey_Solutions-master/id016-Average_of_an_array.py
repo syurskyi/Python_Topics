@@ -1,20 +1,20 @@
-def cleanData(data):
+___ cleanData(data
         array = []
         for x in data:
-                if x != '0' or 0:
+                __ x != '0' or 0:
                         array.append(x)
-        return array
+        r_ array
 
-def average(amount):
+___ average(amount
         answer = []
-        for x in range(amount):
+        for x in range(amount
                 array = raw_input().split()
                 array = cleanData(array)
                 total, average, y = 0,0,0
-                while y < len(array):
+                w___ y < le.(array
                         total += int(array[y])
                         y+=1
-                        average = "%.02f" % ((float(total)) / float(len(array)))
+                        average = "%.02f" % ((float(total)) / float(le.(array)))
                         average = int(round(float(average)))
                 answer.append(str(average))
         print(' '.join(answer))

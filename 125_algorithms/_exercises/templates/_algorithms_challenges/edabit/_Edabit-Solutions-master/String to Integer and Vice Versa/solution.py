@@ -1,5 +1,5 @@
-def to_int(txt):
-    return int(txt)
+___ to_int(txt
+    r_ int(txt)
 	
-def to_str(num):
-    return str(num)
+___ to_str(num
+    r_ str(num)

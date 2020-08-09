@@ -1,10 +1,10 @@
-def split(txt):
+___ split(txt
     output = ""
     output2 = ""
     vset = {"a","e","i","o","u"}
     for i in txt:
-        if i in vset:
+        __ i in vset:
             output += i
-        if i not in vset:
+        __ i not in vset:
             output2 += i
-    return output + output2
+    r_ output + output2

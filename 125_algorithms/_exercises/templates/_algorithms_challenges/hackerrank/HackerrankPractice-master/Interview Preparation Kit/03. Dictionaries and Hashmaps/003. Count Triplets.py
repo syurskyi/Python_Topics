@@ -2,10 +2,10 @@
 #  Score: 25
 
 
-from collections import defaultdict
+from collections ______ defaultdict
 
 
-def count_triplets(arr, r):
+___ count_triplets(arr, r
     arr2 = defaultdict(int)
     arr3 = defaultdict(int)
     count = 0
@@ -13,7 +13,7 @@ def count_triplets(arr, r):
         count += arr3[i]
         arr3[i*r] += arr2[i]
         arr2[i*r] += 1
-    return count
+    r_ count
 
 
 n, r = map(int, input().split())

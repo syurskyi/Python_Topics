@@ -3,60 +3,60 @@ Created on Feb 21, 2018
 
 @author: tongq
 '''
-import re
-class Solution(object):
-    def countOfAtoms(self, formula):
+______ re
+class Solution(object
+    ___ countOfAtoms(self, formula
         """
         :type formula: str
         :rtype: str
         """
         hashmap = self.helper(formula)
-        arr = sorted([str(c)+str(count) if count > 1 else str(c) for c, count in hashmap.items()])
+        arr = sorted([str(c)+str(count) __ count > 1 else str(c) for c, count in hashmap.items()])
         res = ''.join(arr)
-        return res
+        r_ res
     
-    def helper(self, s):
+    ___ helper(self, s
         hashmap = {}
         i = 0
-        while i < len(s):
-            if s[i] == '(':
+        w___ i < le.(s
+            __ s[i] __ '(':
                 count0 = 1
                 i += 1
                 prev = i
-                while i < len(s) and count0 > 0:
-                    if s[i] == ')':
+                w___ i < le.(s) and count0 > 0:
+                    __ s[i] __ ')':
                         count0 -= 1
-                    elif s[i] == '(':
+                    ____ s[i] __ '(':
                         count0 += 1
                     i += 1
                 hashmap0 = self.helper(s[prev:i-1])
-                if i == len(s) or not s[i].isdigit():
+                __ i __ le.(s) or not s[i].isdigit(
                     count = 1
-                else:
+                ____
                     prev = i
-                    while i < len(s) and s[i].isdigit():
+                    w___ i < le.(s) and s[i].isdigit(
                         i += 1
                     count = int(s[prev:i])
-                for elem, freq in hashmap0.items():
+                for elem, freq in hashmap0.items(
                     hashmap[elem] = hashmap.get(elem, 0)+freq*count
-            else:
-                if i+1 < len(s) and re.match('[a-z]', s[i+1]):
+            ____
+                __ i+1 < le.(s) and re.match('[a-z]', s[i+1]
                     elem = s[i:i+2]
                     i+=1
-                else:
+                ____
                     elem = s[i]
                 i+=1
-                if i == len(s) or not s[i].isdigit() or s[i] == '(':
+                __ i __ le.(s) or not s[i].isdigit() or s[i] __ '(':
                     count = 1
-                else:
+                ____
                     prev = i
-                    while i < len(s) and s[i].isdigit():
+                    w___ i < le.(s) and s[i].isdigit(
                         i += 1
                     count = int(s[prev:i])
                 hashmap[elem] = hashmap.get(elem, 0)+count
-        return hashmap
+        r_ hashmap
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             'H2O',
 #             'Mg(OH)2',
@@ -70,5 +70,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
         
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

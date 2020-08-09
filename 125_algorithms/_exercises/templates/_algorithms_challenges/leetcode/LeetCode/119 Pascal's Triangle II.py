@@ -9,7 +9,7 @@ Could you optimize your algorithm to use only O(k) extra space?
 """
 __author__ = 'Danyang'
 class Solution:
-    def getRow(self, rowIndex):
+    ___ getRow(self, rowIndex
         """
         iteration.
 
@@ -20,25 +20,25 @@ class Solution:
         :param rowIndex: integer
         :return: a list of integers
         """
-        if rowIndex<0:
-            return None
-        if rowIndex==0:
-            return [1]
+        __ rowIndex<0:
+            r_ None
+        __ rowIndex__0:
+            r_ [1]
 
         current_level = [1, 1]
-        for row in xrange(2, rowIndex+1):
+        for row in xrange(2, rowIndex+1
 
             # generating next level
             temp = current_level[0]
-            for col in xrange(1, row): # middle
+            for col in xrange(1, row # middle
                 summation = current_level[col] + temp
                 temp = current_level[col]
                 current_level[col] = summation
 
             current_level.append(1)
 
-        return current_level
+        r_ current_level
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().getRow(3)

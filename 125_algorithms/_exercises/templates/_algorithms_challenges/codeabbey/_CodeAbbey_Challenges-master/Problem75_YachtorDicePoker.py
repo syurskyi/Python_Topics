@@ -10,21 +10,21 @@ for line in data:
     counter = [0 for i in range(7)]# ignore index 0
     for digit in line:
         counter[int(digit)] +=1
-    if counter.count(5) == 1:
+    __ counter.count(5) __ 1:
         print("yacht",end=" ")
-    elif counter.count(4) != 0:
+    ____ counter.count(4) != 0:
         print("four",end=" ")
-    elif counter.count(3) == 1 and counter.count(2) ==1:
+    ____ counter.count(3) __ 1 and counter.count(2) __1:
         print("full-house",end=" ")
-    elif counter.count(3) == 1:
+    ____ counter.count(3) __ 1:
         print("three",end=" ")
-    elif counter.count(2) == 1:
+    ____ counter.count(2) __ 1:
         print("pair",end=" ")
-    elif counter.count(2) == 2:
+    ____ counter.count(2) __ 2:
         print("two-pairs",end=" ")
-    elif counter.count(1) == 5:
-        if counter[1] == 0:
+    ____ counter.count(1) __ 5:
+        __ counter[1] __ 0:
             print("big-straight",end=" ")
-        else:
+        ____
             print("small-straight",end=" ")
 

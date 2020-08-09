@@ -3,8 +3,8 @@ Created on May 14, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def shortestWordDistance(self, words, word1, word2):
+class Solution(object
+    ___ shortestWordDistance(self, words, word1, word2
         """
         :type words: List[str]
         :type word1: str
@@ -12,12 +12,12 @@ class Solution(object):
         :rtype: int
         """
         res = float('inf')
-        for i, word in enumerate(words):
-            if word in [word1, word2]:
-                target = word2 if word == word1 else word1
+        for i, word in enumerate(words
+            __ word in [word1, word2]:
+                target = word2 __ word __ word1 else word1
                 j = i+1
-                while j < len(words):
-                    if words[j] == target:
+                w___ j < le.(words
+                    __ words[j] __ target:
                         res = min(res, j-i)
                     j += 1
-        return res
+        r_ res

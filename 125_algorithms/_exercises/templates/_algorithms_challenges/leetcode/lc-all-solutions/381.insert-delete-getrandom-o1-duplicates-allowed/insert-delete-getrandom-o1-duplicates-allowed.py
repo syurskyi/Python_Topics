@@ -1,5 +1,5 @@
-class RandomizedCollection(object):
-  def __init__(self):
+class RandomizedCollection(object
+  ___ __init__(self
     """
     Initialize your data structure here.
     """
@@ -7,18 +7,18 @@ class RandomizedCollection(object):
     self.d = collections.defaultdict(list)
     self.a = []
 
-  def insert(self, val):
+  ___ insert(self, val
     """
     Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
     :type val: int
     :rtype: bool
     """
-    self.d[val].append(len(self.a))
-    self.dOfd[val][len(self.a)] = len(self.d[val]) - 1
+    self.d[val].append(le.(self.a))
+    self.dOfd[val][le.(self.a)] = le.(self.d[val]) - 1
     self.a.append(val)
-    return len(self.d[val]) == 1
+    r_ le.(self.d[val]) __ 1
 
-  def remove(self, val):
+  ___ remove(self, val
     """
     Removes a value from the collection. Returns true if the collection contained the specified element.
     :type val: int
@@ -27,26 +27,26 @@ class RandomizedCollection(object):
     dd = self.dOfd
     a = self.a
     d = self.d
-    if not d[val]:
-      return False
+    __ not d[val]:
+      r_ False
     idx = d[val][-1]
     a[idx] = a[-1]
-    idxInDForLast = dd[a[-1]][len(a) - 1]
+    idxInDForLast = dd[a[-1]][le.(a) - 1]
     d[a[-1]][idxInDForLast] = idx
     dd[a[-1]][idx] = idxInDForLast
 
     # del dd[val][idx]
-    del dd[a[-1]][len(a) - 1]
+    del dd[a[-1]][le.(a) - 1]
     d[val].pop()
     a.pop()
-    return True
+    r_ True
 
-  def getRandom(self):
+  ___ getRandom(self
     """
     Get a random element from the collection.
     :rtype: int
     """
-    return self.a[random.randrange(0, len(self.a))]
+    r_ self.a[random.randrange(0, le.(self.a))]
 
 # Your RandomizedCollection object will be instantiated and called as such:
 # obj = RandomizedCollection()

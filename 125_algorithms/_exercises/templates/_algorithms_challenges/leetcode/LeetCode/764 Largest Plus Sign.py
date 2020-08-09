@@ -65,11 +65,11 @@ mines[i] will be length 2 and consist of integers in the range [0, N-1].
 (Additionally, programs submitted in C, C++, or C# will be judged with a
 slightly smaller time limit.)
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def orderOfLargestPlusSign(self, N: int, mines: List[List[int]]) -> int:
+    ___ orderOfLargestPlusSign(self, N: int, mines: List[List[int]]) -> int:
         """
         < ^ > V four directions
         Let F[i][j][k] be the number of consecutive 1 including G[i][j] it self
@@ -79,27 +79,27 @@ class Solution:
             G[i][j] = 0
 
         F = [[[G[i][j] for _ in range(4)] for j in range(N)] for i in range(N)]
-        for i in range(N):
-            for j in range(N):
-                if j - 1 >= 0 and G[i][j] == 1:
+        for i in range(N
+            for j in range(N
+                __ j - 1 >= 0 and G[i][j] __ 1:
                     F[i][j][0] = F[i][j-1][0] + 1
-                if i - 1 >= 0 and G[i][j] == 1:
+                __ i - 1 >= 0 and G[i][j] __ 1:
                     F[i][j][1] = F[i-1][j][1] + 1
 
-        for i in range(N-1, -1, -1):
-            for j in range(N-1, -1, -1):
-                if j + 1 < N and G[i][j] == 1:
+        for i in range(N-1, -1, -1
+            for j in range(N-1, -1, -1
+                __ j + 1 < N and G[i][j] __ 1:
                     F[i][j][2] = F[i][j+1][2] + 1
-                if i + 1 < N and G[i][j] == 1:
+                __ i + 1 < N and G[i][j] __ 1:
                     F[i][j][3] = F[i+1][j][3] + 1
 
         ret = 0
-        for i in range(N):
-            for j in range(N):
+        for i in range(N
+            for j in range(N
                 ret = max(ret, min(F[i][j]))
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().orderOfLargestPlusSign(5, [[4, 2]]) == 2
+__ __name__ __ "__main__":
+    assert Solution().orderOfLargestPlusSign(5, [[4, 2]]) __ 2

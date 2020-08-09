@@ -1,5 +1,5 @@
-class Solution(object):
-  def permuteUnique(self, nums):
+class Solution(object
+  ___ permuteUnique(self, nums
     """
     :type nums: List[int]
     :rtype: List[List[int]]
@@ -7,15 +7,15 @@ class Solution(object):
     res = []
     nums.sort()
 
-    def dfs(nums, res, path, visited):
-      if len(path) == len(nums):
+    ___ dfs(nums, res, path, visited
+      __ le.(path) __ le.(nums
         res.append(path + [])
-        return
+        r_
 
-      for i in range(len(nums)):
-        if i in visited:
+      for i in range(le.(nums)):
+        __ i in visited:
           continue
-        if i > 0 and nums[i] == nums[i - 1] and i - 1 not in visited:
+        __ i > 0 and nums[i] __ nums[i - 1] and i - 1 not in visited:
           continue
         visited |= {i}
         path.append(nums[i])
@@ -24,4 +24,4 @@ class Solution(object):
         visited -= {i}
 
     dfs(nums, res, [], set())
-    return res
+    r_ res

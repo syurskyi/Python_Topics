@@ -1,20 +1,20 @@
-class Solution(object):
-  def hIndex(self, citations):
+class Solution(object
+  ___ hIndex(self, citations
     """
     :type citations: List[int]
     :rtype: int
     """
-    n = len(citations)
+    n = le.(citations)
     dp = [0] * (n + 1)
     for c in citations:
-      if c > n:
+      __ c > n:
         dp[n] += 1
-      else:
+      ____
         dp[c] += 1
 
     total = 0
-    for i in reversed(range(1, len(dp))):
+    for i in reversed(range(1, le.(dp))):
       total += dp[i]
-      if total >= i:
-        return i
-    return 0
+      __ total >= i:
+        r_ i
+    r_ 0

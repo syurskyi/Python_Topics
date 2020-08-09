@@ -17,63 +17,63 @@ return 13.
 Note:
 You may assume k is always valid, 1 <= k <= n2.
 """
-import heapq
+______ heapq
 
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def kthSmallest(self, matrix, k):
+class Solution(object
+    ___ kthSmallest(self, matrix, k
         """
         Heap of list
         :type matrix: List[List[int]]
         :type k: int
         :rtype: int
         """
-        m, n = len(matrix), len(matrix[0])
+        m, n = le.(matrix), le.(matrix[0])
 
-        class Node(object):
-            def __init__(self, i, j):
+        class Node(object
+            ___ __init__(self, i, j
                 self.i = i
                 self.j = j
 
-            def __cmp__(self, other):
-                return matrix[self.i][self.j] - matrix[other.i][other.j]
+            ___ __cmp__(self, other
+                r_ matrix[self.i][self.j] - matrix[other.i][other.j]
 
-            def hasnext(self):
-                return self.j+1 < n
+            ___ hasnext(self
+                r_ self.j+1 < n
 
-            def next(self):
-                if self.hasnext():
-                    return Node(self.i, self.j + 1)
+            ___ next(self
+                __ self.hasnext(
+                    r_ Node(self.i, self.j + 1)
 
                 raise StopIteration
 
         h = []
-        for i in xrange(m):
+        for i in xrange(m
             heapq.heappush(h, Node(i, 0))
 
         ret = None
-        for _ in xrange(k):
+        for _ in xrange(k
             ret = heapq.heappop(h)
-            if ret.hasnext():
+            __ ret.hasnext(
                 heapq.heappush(h, ret.next())
 
-        return matrix[ret.i][ret.j]
+        r_ matrix[ret.i][ret.j]
 
-    def kthSmallestError(self, matrix, k):
+    ___ kthSmallestError(self, matrix, k
         """
         :type matrix: List[List[int]]
         :type k: int
         :rtype: int
         """
-        m, n = len(matrix), len(matrix[0])
+        m, n = le.(matrix), le.(matrix[0])
         i = k % n
         j = k - (i * m)
-        return matrix[i][j]
+        r_ matrix[i][j]
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     matrix = [
         [1, 5, 9],
         [10, 11, 13],

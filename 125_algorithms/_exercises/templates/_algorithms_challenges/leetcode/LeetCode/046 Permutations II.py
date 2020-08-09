@@ -7,7 +7,7 @@ For example,
 """
 __author__ = 'Danyang'
 class Solution:
-    def permuteUnique_TLE(self, num):
+    ___ permuteUnique_TLE(self, num
         """
         list to set
         Time Limit Exceeded
@@ -16,19 +16,19 @@ class Solution:
         """
         result = []
         self.get_permute(num, [], result)
-        return map(list, set(map(tuple, result)))
+        r_ map(list, set(map(tuple, result)))
 
 
-    def get_permute_TLE(self, nums, current, result):
-        length = len(nums)
-        if length==0:
+    ___ get_permute_TLE(self, nums, current, result
+        length = le.(nums)
+        __ length__0:
             result.append(current)
 
-        for ind, val in enumerate(nums):
+        for ind, val in enumerate(nums
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 
-    def permuteUnique(self, num):
+    ___ permuteUnique(self, num
         """
         Jump
         compared to 045 Permutation, two lines added: sort and continue
@@ -38,15 +38,15 @@ class Solution:
         result = []
         num.sort()
         self.get_permute(num, [], result)
-        return result
+        r_ result
 
-    def get_permute(self, nums, current, result):
-        if not nums:
+    ___ get_permute(self, nums, current, result
+        __ not nums:
             result.append(current)
 
-        for ind, val in enumerate(nums):
-            if ind-1>=0 and val==nums[ind-1]: continue  # JUMP; only need to compare to previous value
+        for ind, val in enumerate(nums
+            __ ind-1>=0 and val__nums[ind-1]: continue  # JUMP; only need to compare to previous value
             self.get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().permuteUnique([1, 1, 2])

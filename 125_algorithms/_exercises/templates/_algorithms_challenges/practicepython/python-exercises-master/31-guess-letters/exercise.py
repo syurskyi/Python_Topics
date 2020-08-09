@@ -1,21 +1,21 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-import os
-import random
-import sys
+______ os
+______ random
+______ sys
 
 
-def getWord():
+___ getWord(
     cwd = os.getcwd()
     filePath = cwd + '/30-pick-word/sowpods.txt'
     with open(filePath, 'r') as file:
         lines = file.readlines()
         word = random.choice(lines).strip()
-        return word
+        r_ word
 
 
 class HangMan:
 
-    def __init__(self, word):
+    ___ __init__(self, word
         self.word = word
         self.state = []
         self.generateState()
@@ -23,16 +23,16 @@ class HangMan:
         self.welcome()
         self.startGame()
 
-    def generateState(self):
+    ___ generateState(self
         for char in self.word:
             self.state.append('_')
 
-    def startGame(self):
+    ___ startGame(self
         guess = self.askForGuess()
         self.checkGuess(guess)
         self.goOn()
 
-    def welcome(self):
+    ___ welcome(self
         print('''
                                                 
   /\  /\__ _ _ __   __ _    /\/\   __ _ _ __  
@@ -45,44 +45,44 @@ class HangMan:
             
         ''')
 
-    def askForGuess(self):
+    ___ askForGuess(self
         guess = str(input('Guess a latter: ')).upper()
         self.guessCount += 1
-        return guess
+        r_ guess
 
-    def checkGuess(self, guess):
+    ___ checkGuess(self, guess
         countCorrect = 0
-        for index, value in enumerate(self.word):
-            if guess == value:
+        for index, value in enumerate(self.word
+            __ guess __ value:
                 self.state[index] = value
                 countCorrect += 1
-        if countCorrect != 0:
+        __ countCorrect != 0:
             print('You guessed!')
-        else:
+        ____
             print('Try again!')
 
-    def goOn(self):
+    ___ goOn(self
         self.displayState()
         guess = self.askForGuess()
         self.checkGuess(guess)
         self.checkIfWon()
         self.goOn()
 
-    def displayState(self):
+    ___ displayState(self
         for char in self.state:
             print(char, end='')
         print('\n')
 
-    def checkIfWon(self):
+    ___ checkIfWon(self
         countCorrect = 0
-        for index, value in enumerate(self.state):
-            if value == self.word[index]:
+        for index, value in enumerate(self.state
+            __ value __ self.word[index]:
                 countCorrect += 1
-        if countCorrect == len(self.word):
+        __ countCorrect __ le.(self.word
             sys.exit('You won!')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     word = getWord()
     print(word)
     game = HangMan(word)

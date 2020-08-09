@@ -16,6 +16,6 @@ bites = {6: 'PyBites Die Hard',
 exclude_bites = {6, 10, 16, 18, 21}
 
 
-def filter_bites(bites=bites, bites_done=exclude_bites):
+___ filter_bites(bites=bites, bites_done=exclude_bites
     """return the bites dict with the exclude_bites filtered out"""
-    return dict((x,bites[x]) for x in bites.keys() if x not in exclude_bites)
+    r_ dict((x,bites[x]) for x in bites.keys() __ x not in exclude_bites)

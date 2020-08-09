@@ -1,4 +1,4 @@
-def get_gcd(a, b):
+___ get_gcd(a, b
     """
     :type a: int
     :type b: int
@@ -9,12 +9,12 @@ def get_gcd(a, b):
     >>> get_gcd(500, 375)
     125
     """
-    while b:
+    w___ b:
         a, b = b, a % b
-    return a
+    r_ a
 
 
-def get_lcm(a, b):
+___ get_lcm(a, b
     """
     :type a: int
     :type b: int
@@ -25,4 +25,4 @@ def get_lcm(a, b):
     >>> get_lcm(500, 375)
     1500
     """
-    return (a * b) // get_gcd(a, b)
+    r_ (a * b) // get_gcd(a, b)

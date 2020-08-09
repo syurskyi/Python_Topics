@@ -2,9 +2,9 @@
 # Anagrams may be created as a commentary on the subject.
 # They may be a synonym or antonym of their subject,
 # a parody, a criticism or satire.
-import pytest
+______ pytest
 
-from anagram import is_anagram
+from anagram ______ is_anagram
 
 
 @pytest.mark.parametrize("word1, word2", [
@@ -22,7 +22,7 @@ from anagram import is_anagram
     ("William Shakespeare", "I am a weakish speller"),
     ("Madam Curie", "Radium came"),
 ])
-def test_is_anagram(word1, word2):
+___ test_is_anagram(word1, word2
     assert is_anagram(word1, word2)
 
 
@@ -37,5 +37,5 @@ def test_is_anagram(word1, word2):
     ("William Shakespeare", "I am a strong speller"),
     ("Madam Curie", "Radium come"),
 ])
-def test_is_not_anagram(word1, word2):
+___ test_is_not_anagram(word1, word2
     assert not is_anagram(word1, word2)

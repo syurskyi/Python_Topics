@@ -6,27 +6,27 @@ The minimum depth is the number of nodes along the shortest path from the root n
 __author__ = 'Danyang'
 
 
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def minDepth(self, root):
+class Solution(object
+    ___ minDepth(self, root
         """
         :param root: TreeNode
         :return: integer
         """
-        return self.fathom(root, 0)
+        r_ self.fathom(root, 0)
 
-    def fathom(self, root, depth):
+    ___ fathom(self, root, depth
         """
         DFS
         """
-        if not root: return depth
-        elif root.right and not root.left: return self.fathom(root.right, depth+1)
-        elif root.left and not root.right: return self.fathom(root.left, depth+1)
-        else: return min(self.fathom(root.left, depth+1),
+        __ not root: r_ depth
+        ____ root.right and not root.left: r_ self.fathom(root.right, depth+1)
+        ____ root.left and not root.right: r_ self.fathom(root.left, depth+1)
+        ____ r_ min(self.fathom(root.left, depth+1),
                          self.fathom(root.right, depth+1))

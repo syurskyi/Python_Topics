@@ -24,7 +24,7 @@ Explanation: You cannot find a way to form a square with all the matchsticks.
 
 
 class Solution:
-    def makesquare(self, nums):
+    ___ makesquare(self, nums
         """
         need to use up all the stics
         greedily fit the largest first - error, consider [5, 4, 2, 2, 2, 2, 3]
@@ -33,31 +33,31 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        if not nums:
-            return False
+        __ not nums:
+            r_ False
 
         square = [0 for _ in range(4)]
         l = sum(nums) // 4
-        if sum(nums) % 4 != 0:
-            return False
+        __ sum(nums) % 4 != 0:
+            r_ False
 
         nums.sort(reverse=True)
-        return self.dfs(nums, 0, l, square)
+        r_ self.dfs(nums, 0, l, square)
 
-    def dfs(self, nums, i, l, square):
-        if i >= len(nums):
-            return True
+    ___ dfs(self, nums, i, l, square
+        __ i >= le.(nums
+            r_ True
 
-        for j in range(len(square)):
-            if nums[i] + square[j] <= l:
+        for j in range(le.(square)):
+            __ nums[i] + square[j] <= l:
                 square[j] += nums[i]
-                if self.dfs(nums, i + 1, l, square):
-                    return True
+                __ self.dfs(nums, i + 1, l, square
+                    r_ True
                 square[j] -= nums[i]
 
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
-    assert Solution().makesquare([1,1,2,2,2]) == True
-    assert Solution().makesquare([3,3,3,3,4]) == False
+__ __name__ __ "__main__":
+    assert Solution().makesquare([1,1,2,2,2]) __ True
+    assert Solution().makesquare([3,3,3,3,4]) __ False

@@ -11,37 +11,37 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 A solution is ["cats and dog", "cat sand dog"].
 """
 
-class Solution(object):
-    def wordBreak(self, s, wordDict):
+class Solution(object
+    ___ wordBreak(self, s, wordDict
         """
         :type s: str
         :type wordDict: Set[str]
         :rtype: bool
         """
-        n = len(s)
+        n = le.(s)
         t = [None for i in range(n)]
         res = self.word_break_aux(s, wordDict, n - 1, t)
-        return res
+        r_ res
 
-    def word_break_aux(self, s, wordDict, i, t):
+    ___ word_break_aux(self, s, wordDict, i, t
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
-        if s[:i + 1] in wordDict:
+        __ s[:i + 1] in wordDict:
             t[i] = [s[:i + 1]]
-            return t[i]
-        elif t[i] is not None:
-            return t[i]
-        else:
+            r_ t[i]
+        ____ t[i] is not None:
+            r_ t[i]
+        ____
             res = []
-            for j in range(i):
+            for j in range(i
                 rest = self.word_break_aux(s, wordDict, j, t)
                 word = s[j + 1:i + 1]
-                if rest and word in wordDict:
+                __ rest and word in wordDict:
                     for r in rest:
                         res.append(r + ' ' + word)
             t[i] = res
-            return t[i]
+            r_ t[i]
 
 
 s1 = "catsanddog"

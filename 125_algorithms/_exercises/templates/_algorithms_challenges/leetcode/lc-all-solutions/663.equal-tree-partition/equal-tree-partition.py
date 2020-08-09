@@ -1,19 +1,19 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def checkEqualTree(self, root):
-    def sum(node):
-      if not node:
-        return 0
+class Solution(object
+  ___ checkEqualTree(self, root
+    ___ sum(node
+      __ not node:
+        r_ 0
       s = node.val + sum(node.left) + sum(node.right)
-      if node is not root:
+      __ node is not root:
         cuts.add(s)
-      return s
+      r_ s
 
     cuts = set()
-    return sum(root) / 2. in cuts
+    r_ sum(root) / 2. in cuts

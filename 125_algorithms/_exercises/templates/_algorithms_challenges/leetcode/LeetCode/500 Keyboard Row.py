@@ -6,7 +6,7 @@ alphabet on only one row's of American keyboard like the image below.
 
 
 class Solution:
-    def findWords(self, words):
+    ___ findWords(self, words
         """
         :type words: List[str]
         :rtype: List[str]
@@ -21,12 +21,12 @@ class Solution:
             for i, v in enumerate(rows)
             for e in v
         }
-        return [
+        r_ [
             w
             for w in words
-            if all(d[w[0].lower()] == d[l.lower()] for l in w)
+            __ all(d[w[0].lower()] __ d[l.lower()] for l in w)
         ]
 
 
-if __name__ == "__main__":
-    assert Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]) == ["Alaska", "Dad"]
+__ __name__ __ "__main__":
+    assert Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]) __ ["Alaska", "Dad"]

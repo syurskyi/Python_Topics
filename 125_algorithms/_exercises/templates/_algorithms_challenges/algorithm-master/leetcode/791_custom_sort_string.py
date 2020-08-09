@@ -1,8 +1,8 @@
 class Solution:
-    def customSortString(self, S, T):
+    ___ customSortString(self, S, T
         """
         :type S: str
         :type T: str
         :rtype: str
         """
-        return ''.join(sorted(T, key=lambda c: S.find(c)))
+        r_ ''.join(sorted(T, key=lambda c: S.find(c)))

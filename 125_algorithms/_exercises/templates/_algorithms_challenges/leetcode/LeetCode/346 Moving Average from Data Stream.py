@@ -1,13 +1,13 @@
 """
 Premium Question
 """
-from collections import deque
+from collections ______ deque
 
 __author__ = 'Daniel'
 
 
-class MovingAverage(object):
-    def __init__(self, size):
+class MovingAverage(object
+    ___ __init__(self, size
         """
         Initialize your data structure here.
         :type size: int
@@ -16,17 +16,17 @@ class MovingAverage(object):
         self.q = deque()
         self.sum = 0
 
-    def next(self, val):
+    ___ next(self, val
         """
         :type val: int
         :rtype: float
         """
         self.q.append(val)
         self.sum += val
-        if len(self.q) > self.size:
+        __ le.(self.q) > self.size:
             self.sum -= self.q.popleft()
 
-        return float(self.sum) / len(self.q)
+        r_ float(self.sum) / le.(self.q)
 
 
 # Your MovingAverage object will be instantiated and called as such:

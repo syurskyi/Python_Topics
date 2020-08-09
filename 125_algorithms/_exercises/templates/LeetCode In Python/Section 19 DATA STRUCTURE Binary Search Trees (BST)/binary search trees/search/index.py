@@ -1,42 +1,42 @@
 
 
 class Node:
-    def __init__(self, value):
+    ___ __init__(self, value
         self.left = None
         self.right = None
         self.data = value
 
 
-def insert(root, node):
-    if(root is None):
+___ insert(root, node
+    __(root is None
         root = node
-        return
+        r_
 
-    if(root.data < node.data):
-        if(root.right is None):
+    __(root.data < node.data
+        __(root.right is None
             root.right = node
-        else:
+        ____
             insert(root.right, node)
-    else:
-        if(root.left is None):
+    ____
+        __(root.left is None
             root.left = node
-        else:
+        ____
             insert(root.left, node)
 
 
-def search(node, key):
+___ search(node, key
     print("Current Node is: ", node.data)
-    if(node is None):
+    __(node is None
         print("No node found")
-        return None
-    if(node.data == key):
+        r_ None
+    __(node.data __ key
         print("Node found !")
-        return node
+        r_ node
 
-    if(node.data < key):
-        return search(node.right, key)
+    __(node.data < key
+        r_ search(node.right, key)
 
-    return search(node.left, key)
+    r_ search(node.left, key)
 
 
 #	           5

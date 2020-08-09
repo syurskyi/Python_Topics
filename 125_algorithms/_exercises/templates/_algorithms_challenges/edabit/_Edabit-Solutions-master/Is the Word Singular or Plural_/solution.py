@@ -1,15 +1,15 @@
-def is_plural(word):
-    if word[-1] == "s":
-        return True
-    else:
-        return False
+___ is_plural(word
+    __ word[-1] __ "s":
+        r_ True
+    ____
+        r_ False
 
 
-def test():
+___ test(
     print("test has started")
-    if is_plural("dudes") != True:
+    __ is_plural("dudes") != True:
         print("error1")
-    if is_plural("doubles") != True:
+    __ is_plural("doubles") != True:
         print("error2")
-    if is_plural("mood") != False:
+    __ is_plural("mood") != False:
         print("error3")

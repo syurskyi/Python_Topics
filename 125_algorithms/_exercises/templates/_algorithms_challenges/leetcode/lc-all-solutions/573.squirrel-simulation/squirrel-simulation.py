@@ -1,5 +1,5 @@
-class Solution(object):
-  def minDistance(self, height, width, tree, squirrel, nuts):
+class Solution(object
+  ___ minDistance(self, height, width, tree, squirrel, nuts
     """
     :type height: int
     :type width: int
@@ -9,10 +9,10 @@ class Solution(object):
     :rtype: int
     """
 
-    def dist(s, t):
+    ___ dist(s, t
       x1, y1 = s
       x2, y2 = t
-      return abs(x1 - x2) + abs(y1 - y2)
+      r_ abs(x1 - x2) + abs(y1 - y2)
 
     ans = 0
     for nut in nuts:
@@ -21,4 +21,4 @@ class Solution(object):
     ret = float("inf")
     for nut in nuts:
       ret = min(ret, ans - dist(nut, tree) + dist(nut, squirrel))
-    return ret
+    r_ ret

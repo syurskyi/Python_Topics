@@ -1,10 +1,10 @@
 
 #tail recursion
-def tail(n):
+___ tail(n
 
 	#base case
-	if n==0:
-		return
+	__ n__0:
+		r_
 		
 	#do some operation before the recursive call
 	print(n)
@@ -12,11 +12,11 @@ def tail(n):
 	#recursive call
 	tail(n-1)
 
-def head(n):
+___ head(n
 
 	#base case 
-	if n==0:
-		return
+	__ n__0:
+		r_
 	
 	#recursive call
 	head(n-1)
@@ -24,7 +24,7 @@ def head(n):
 	#do some operation after the recursive call
 	print(n)
 	
-if __name__ == "__main__":
+__ __name__ __ "__main__":
 
 	print("Tail recursion:\n")
 	tail(5)

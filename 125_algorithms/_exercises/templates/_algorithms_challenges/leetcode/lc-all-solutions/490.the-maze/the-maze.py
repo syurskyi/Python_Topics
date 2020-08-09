@@ -1,8 +1,8 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def hasPath(self, maze, start, destination):
+class Solution(object
+  ___ hasPath(self, maze, start, destination
     """
     :type maze: List[List[int]]
     :type start: List[int]
@@ -10,14 +10,14 @@ class Solution(object):
     :rtype: bool
     """
 
-    def next(curr, maze):
-      height = len(maze)
-      width = len(maze[0])
+    ___ next(curr, maze
+      height = le.(maze)
+      width = le.(maze[0])
       directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
       for di, dj in directions:
         dist = 0
         i, j = curr
-        while 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
+        w___ 0 <= i + di < height and 0 <= j + dj < width and maze[i + di][j + dj] != 1:
           i += di
           j += dj
           dist += 1
@@ -26,13 +26,13 @@ class Solution(object):
     queue = deque([tuple(start)])
     visited = set()
     destination = tuple(destination)
-    while queue:
+    w___ queue:
       curr = queue.popleft()
-      if curr in visited:
+      __ curr in visited:
         continue
-      if curr == destination:
-        return True
+      __ curr __ destination:
+        r_ True
       visited |= {curr}
-      for nbr in next(curr, maze):
+      for nbr in next(curr, maze
         queue.append(nbr)
-    return False
+    r_ False

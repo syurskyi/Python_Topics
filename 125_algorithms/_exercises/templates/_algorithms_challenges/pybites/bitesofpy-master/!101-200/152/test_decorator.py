@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from Previous.decorator import strip_range
+from Previous.decorator ______ strip_range
 
 TEXTS = ['Hello world', 'Welcome to PyBites',
          'Decorators for fun and profit']
@@ -16,9 +16,9 @@ TEXTS = ['Hello world', 'Welcome to PyBites',
     (100, 110, TEXTS[2], 'Decorators for fun and profit'),
     (20, 100, TEXTS[2], 'Decorators for fun a.........'),
 ])
-def test_strip_range(start, end, arg, expected):
+___ test_strip_range(start, end, arg, expected
     @strip_range(start, end)
-    def gen_output(text):
-        return text
+    ___ gen_output(text
+        r_ text
     actual = gen_output(text=arg)
-    assert actual == expected
+    assert actual __ expected

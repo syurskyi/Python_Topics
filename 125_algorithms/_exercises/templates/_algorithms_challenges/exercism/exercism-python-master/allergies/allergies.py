@@ -1,6 +1,6 @@
 """Tracks allergies"""
 
-class Allergies(object):
+class Allergies(object
     """Generates and stores allergies from a given score"""
 
                    # Allergie       # score
@@ -14,12 +14,12 @@ class Allergies(object):
                      'cats',        # 128
                     ]
 
-    def __init__(self, score):
+    ___ __init__(self, score
         """Generates a list of allergies from a score"""
         self.lst = [allergie
                     for i, allergie in enumerate(Allergies.allergie_list)
-                    if 0 < (score & 1 << i )]
+                    __ 0 < (score & 1 << i )]
 
-    def is_allergic_to(self, allergie):
+    ___ is_allergic_to(self, allergie
         """Tests if allergie is on the list"""
-        return allergie in self.lst
+        r_ allergie in self.lst

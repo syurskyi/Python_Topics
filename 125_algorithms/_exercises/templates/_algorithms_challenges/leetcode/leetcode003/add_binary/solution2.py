@@ -7,8 +7,8 @@ b = "1"
 Return "100".
 """
 
-class Solution(object):
-    def addBinary(self, a, b):
+class Solution(object
+    ___ addBinary(self, a, b
         """
         :type a: str
         :type b: str
@@ -16,21 +16,21 @@ class Solution(object):
         """
         list_a = [int(i) for i in a[::-1]]
         list_b = [int(i) for i in b[::-1]]
-        la = len(list_a)
-        lb = len(list_b)
+        la = le.(list_a)
+        lb = le.(list_b)
         # Pad zeroes
-        if la < lb:
+        __ la < lb:
             list_a += [0 for i in range(lb - la)]
-            la = len(list_a)
-        else:
+            la = le.(list_a)
+        ____
             list_b += [0 for i in range(la - lb)]
-            lb = len(list_b)
+            lb = le.(list_b)
         carry = 0
         res = []
-        for i in range(la):
+        for i in range(la
             t = (list_a[i] + list_b[i] + carry) % 2
             carry = (list_a[i] + list_b[i] + carry) / 2
             res.append(t)
-        if carry == 1:
+        __ carry __ 1:
             res.append(1)
-        return ''.join([str(d) for d in res[::-1]])
+        r_ ''.join([str(d) for d in res[::-1]])

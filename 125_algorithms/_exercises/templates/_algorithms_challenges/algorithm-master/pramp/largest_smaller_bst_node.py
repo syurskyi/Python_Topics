@@ -1,14 +1,14 @@
-def largest_smaller_bst_node(root, target):
+___ largest_smaller_bst_node(root, target
     ans = -1
 
-    if not root:
-        return ans
+    __ not root:
+        r_ ans
 
-    while root:
-        if root.val < target:
+    w___ root:
+        __ root.val < target:
             ans = root.val
             root = root.right
-        else:
+        ____
             root = root.left
 
-    return ans
+    r_ ans

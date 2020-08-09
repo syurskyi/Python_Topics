@@ -5,19 +5,19 @@ Created on Jan 21, 2017
 '''
 
 # Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
+class Interval(object
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
     
-    def __str__(self):
-        return '<s: %s, e: %s>' % (self.start, self.end)
+    ___ __str__(self
+        r_ '<s: %s, e: %s>' % (self.start, self.end)
     
-    def __repr__(self):
-        return self.__str__()
+    ___ __repr__(self
+        r_ self.__str__()
 
-class Solution(object):
-    def insert(self, intervals, newInterval):
+class Solution(object
+    ___ insert(self, intervals, newInterval
         """
         :type intervals: List[Interval]
         :type newInterval: Interval
@@ -25,19 +25,19 @@ class Solution(object):
         """
         result = []
         for interval in intervals:
-            if interval.end < newInterval.start:
+            __ interval.end < newInterval.start:
                 result.append(interval)
-            elif interval.start > newInterval.end:
+            ____ interval.start > newInterval.end:
                 result.append(newInterval)
                 newInterval = interval
-            elif interval.end >= newInterval.start or interval.start <= newInterval.end:
+            ____ interval.end >= newInterval.start or interval.start <= newInterval.end:
                 newInterval = Interval(\
                     min(newInterval.start, interval.start),\
                     max(newInterval.end, interval.end))
         result.append(newInterval)
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             ([[1,2],[3,5],[6,7],[8,10],[12,16]], [4,9]),
             ([[1,2],[3,5],[6,7],[8,10],[12,16],[15,23]], [4,9]),
@@ -51,5 +51,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*15+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -17,49 +17,49 @@ __author__ = 'Daniel'
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def binaryTreePaths(self, root):
+    ___ binaryTreePaths(self, root
         """
 
         :type root: TreeNode
         :rtype: list[str]
         """
-        if not root:
-            return []
+        __ not root:
+            r_ []
 
         ret = []
         self.dfs(root, [], ret)
-        return ret
+        r_ ret
 
-    def dfs(self, cur, path, ret):
+    ___ dfs(self, cur, path, ret
         """
         pre-check
         """
         path.append(cur)
-        if not cur.left and not cur.right:
+        __ not cur.left and not cur.right:
             ret.append("->".join(map(lambda x: str(x.val), path)))
-            return
+            r_
 
-        if cur.left:
+        __ cur.left:
             self.dfs(cur.left, path, ret)
             path.pop()  # pop the shared path
 
-        if cur.right:
+        __ cur.right:
             self.dfs(cur.right, path, ret)
             path.pop()  # pop the shared path
 
-    def dfs_path(self, cur, path, ret):
-        if not cur:
-            return
+    ___ dfs_path(self, cur, path, ret
+        __ not cur:
+            r_
 
         path.append(cur)
-        if not cur.left and not cur.right:
+        __ not cur.left and not cur.right:
             ret.append("->".join(map(lambda x: str(x.val), path)))
 
         self.dfs_path(cur.left, path, ret)

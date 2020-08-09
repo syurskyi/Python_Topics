@@ -1,21 +1,21 @@
-class Solution(object):
-    def addBinary(self, a, b):
+class Solution(object
+    ___ addBinary(self, a, b
         result = []
         carry = 0
-        i = len(a)-1
-        j = len(b)-1
+        i = le.(a)-1
+        j = le.(b)-1
 
-        while i >= 0 or j >= 0 or carry:
+        w___ i >= 0 or j >= 0 or carry:
             total = carry
 
-            if i >= 0:
+            __ i >= 0:
                 total += int(a[i])
                 i -= 1
-            if j >= 0:
+            __ j >= 0:
                 total += int(b[j])
                 j -= 1
 
             result.append(str(total % 2))
             carry = total//2
 
-        return ''.join(reversed(result))
+        r_ ''.join(reversed(result))

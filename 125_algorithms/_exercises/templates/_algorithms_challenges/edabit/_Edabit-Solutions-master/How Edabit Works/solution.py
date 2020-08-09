@@ -1,2 +1,2 @@
-def hello():
-    return "hello edabit.com"
+___ hello(
+    r_ "hello edabit.com"

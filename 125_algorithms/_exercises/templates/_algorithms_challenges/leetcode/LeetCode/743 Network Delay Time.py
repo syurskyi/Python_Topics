@@ -16,13 +16,13 @@ K will be in the range [1, N].
 The length of times will be in the range [1, 6000].
 All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 0 <= w <= 100.
 """
-from typing import List
-from collections import defaultdict
-import heapq
+from typing ______ List
+from collections ______ defaultdict
+______ heapq
 
 
 class Solution:
-    def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
+    ___ networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
         """
         Dijkstra's algorithm
         """
@@ -33,19 +33,19 @@ class Solution:
 
         h = [(0, K)]
         reach_time[K] = 0
-        while h:
+        w___ h:
             t, s = heapq.heappop(h)
-            if s in G:
-                for d, w in G[s].items():
-                    if t + w < reach_time[d]:
+            __ s in G:
+                for d, w in G[s].items(
+                    __ t + w < reach_time[d]:
                         reach_time[d] = t + w
                         heapq.heappush(h, (t + w, d))
 
         ret = max(reach_time[1:])  # notice reach_time[0] is dummy
-        if ret == float('inf'):
-            return -1
-        return ret
+        __ ret __ float('inf'
+            r_ -1
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2) == 2
+__ __name__ __ "__main__":
+    assert Solution().networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2) __ 2

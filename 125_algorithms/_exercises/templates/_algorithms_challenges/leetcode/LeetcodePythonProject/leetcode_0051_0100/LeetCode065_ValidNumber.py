@@ -3,8 +3,8 @@ Created on Jan 22, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def isNumber(self, s):
+class Solution(object
+    ___ isNumber(self, s
         """
         :type s: str
         :rtype: bool
@@ -14,29 +14,29 @@ class Solution(object):
         s = s.lstrip('+')
         i = 0
         num, dot, exp = False, False, False
-        while i < len(s):
+        w___ i < le.(s
             c = s[i]
-            if c.isdigit():
+            __ c.isdigit(
                 num = True
-            elif c == '.':
-                if exp or dot:
-                    return False
+            ____ c __ '.':
+                __ exp or dot:
+                    r_ False
                 dot = True
-            elif c == 'e':
-                if exp or not num:
-                    return False
+            ____ c __ 'e':
+                __ exp or not num:
+                    r_ False
                 exp = True
                 num = False
-            elif c == '+' or c == '-':
-                if s[i-1] != 'e':
-                    return False
-            else:
-                return False
+            ____ c __ '+' or c __ '-':
+                __ s[i-1] != 'e':
+                    r_ False
+            ____
+                r_ False
             i += 1
-        return num
+        r_ num
     
-    def test(self):
+    ___ test(self
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -33,7 +33,7 @@ Input:
 asteroids = [-2, -1, 1, 2]
 Output: [-2, -1, 1, 2]
 Explanation:
-The -2 and -1 are moving left, while the 1 and 2 are moving right.
+The -2 and -1 are moving left, w___ the 1 and 2 are moving right.
 Asteroids moving the same direction never meet, so no asteroids will meet each
 other.
 Note:
@@ -41,38 +41,38 @@ Note:
 The length of asteroids will be at most 10000.
 Each asteroid will be a non-zero integer in the range [-1000, 1000]..
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+    ___ asteroidCollision(self, asteroids: List[int]) -> List[int]:
         """
         simplified
 
-        while-else: break statement break the entire while-else block
+        w___-else: break statement break the entire w___-else block
         for-else: break statement break the entire for-else block
 
         stack from left to right, only -> <- will pop the stack
         """
         stk = []
         for e in asteroids:
-            while stk and e < 0 < stk[-1]:
-                if abs(e) > abs(stk[-1]):
+            w___ stk and e < 0 < stk[-1]:
+                __ abs(e) > abs(stk[-1]
                     # -> exploded, <- continues
                     stk.pop()
-                elif abs(e) == abs(stk[-1]):
+                ____ abs(e) __ abs(stk[-1]
                     # -> <- both exploded
                     stk.pop()
                     break
-                else:
+                ____
                     # <- exploded, -> continue
                     break
-            else:
+            ____
                 stk.append(e)
 
-        return stk
+        r_ stk
 
-    def asteroidCollision_complex(self, asteroids: List[int]) -> List[int]:
+    ___ asteroidCollision_complex(self, asteroids: List[int]) -> List[int]:
         """
         asteroids same speed
         list of size
@@ -82,30 +82,30 @@ class Solution:
         only -> <- will collide
         """
         stk = []
-        n = len(asteroids)
-        for i in range(n-1, -1, -1):
+        n = le.(asteroids)
+        for i in range(n-1, -1, -1
             cur = asteroids[i]
-            while stk and asteroids[stk[-1]] < 0 and cur > 0 and abs(asteroids[stk[-1]]) < abs(cur):
+            w___ stk and asteroids[stk[-1]] < 0 and cur > 0 and abs(asteroids[stk[-1]]) < abs(cur
                 stk.pop()
 
-            if stk and cur > 0 and asteroids[stk[-1]] == -cur:
+            __ stk and cur > 0 and asteroids[stk[-1]] __ -cur:
                 stk.pop()
                 continue
 
-            if not stk:
+            __ not stk:
                 stk.append(i)
                 continue
 
-            if not (asteroids[stk[-1]] < 0 and cur > 0) or abs(cur) > abs(asteroids[stk[-1]]):
+            __ not (asteroids[stk[-1]] < 0 and cur > 0) or abs(cur) > abs(asteroids[stk[-1]]
                 stk.append(i)
 
-        return [
+        r_ [
             asteroids[i]
             for i in stk[::-1]
         ]
 
 
-if __name__ == "__main__":
-    assert Solution().asteroidCollision([10, 2, -5]) == [10]
-    assert Solution().asteroidCollision([5, 10, -5]) == [5, 10]
-    assert Solution().asteroidCollision([8, -8]) == []
+__ __name__ __ "__main__":
+    assert Solution().asteroidCollision([10, 2, -5]) __ [10]
+    assert Solution().asteroidCollision([5, 10, -5]) __ [5, 10]
+    assert Solution().asteroidCollision([8, -8]) __ []

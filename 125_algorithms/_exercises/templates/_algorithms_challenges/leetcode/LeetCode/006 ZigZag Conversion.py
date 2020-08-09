@@ -15,26 +15,26 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def convert(self, s, nRows):
+    ___ convert(self, s, nRows
         """
         Algorithm: matrix
         :param s:
         :param nRows:
         :return: a String
         """
-        length = len(s)
+        length = le.(s)
         matrix = [[] for _ in xrange(nRows)]
 
         i = 0
-        while i < length:
+        w___ i < length:
             try:
                 # going down
-                for j in xrange(nRows):
+                for j in xrange(nRows
                     matrix[j].append(s[i])
                     i += 1
 
                 # going up
-                for j in xrange(nRows-1-1, 0, -1):
+                for j in xrange(nRows-1-1, 0, -1
                     matrix[j].append(s[i])
                     i += 1
 
@@ -42,8 +42,8 @@ class Solution:
                 break
 
         lst = ["".join(element) for element in matrix]
-        return "".join(lst)
+        r_ "".join(lst)
 
 
-if __name__ == "__main__":
-    assert Solution().convert("ABCD", 2) == "ACBD"
+__ __name__ __ "__main__":
+    assert Solution().convert("ABCD", 2) __ "ACBD"

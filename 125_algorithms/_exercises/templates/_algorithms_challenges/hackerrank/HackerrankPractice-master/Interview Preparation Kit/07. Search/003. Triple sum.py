@@ -2,17 +2,17 @@
 #  Score: 40
 
 
-def binary_search_last(arr, el, low, high):
-    if low + 1 >= high:
-        if arr[low] > el:
-            return 0
-        else:
-            return low + 1
+___ binary_search_last(arr, el, low, high
+    __ low + 1 >= high:
+        __ arr[low] > el:
+            r_ 0
+        ____
+            r_ low + 1
     middle = (low + high) // 2
-    if arr[middle] > el:
-        return binary_search_last(arr, el, low, middle)
-    else:
-        return binary_search_last(arr, el, middle, high)
+    __ arr[middle] > el:
+        r_ binary_search_last(arr, el, low, middle)
+    ____
+        r_ binary_search_last(arr, el, middle, high)
 
 
 len_a, len_b, len_c = map(int, input().split())
@@ -21,6 +21,6 @@ b = sorted(list(set(map(int, input().split()))))
 c = sorted(list(set(map(int, input().split()))))
 
 ans = 0
-for i in set(b):
-    ans += binary_search_last(a, i, 0, len(a)) * binary_search_last(c, i, 0, len(c))
+for i in set(b
+    ans += binary_search_last(a, i, 0, le.(a)) * binary_search_last(c, i, 0, le.(c))
 print(ans)

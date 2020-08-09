@@ -4,25 +4,25 @@ Created on Mar 6, 2017
 @author: MT
 '''
 
-class ZigzagIterator(object):
-    def __init__(self, v1, v2):
+class ZigzagIterator(object
+    ___ __init__(self, v1, v2
         self.vec = [v1, v2]
         self.pointer = 0
     
-    def next(self):
-        while self.hashNext():
-            if self.vec[self.pointer]:
+    ___ next(self
+        w___ self.hashNext(
+            __ self.vec[self.pointer]:
                 val = self.vec[self.pointer][0]
                 self.vec[self.pointer].pop()
                 self.pointer += 1
-                if self.pointer >= len(self.vec):
+                __ self.pointer >= le.(self.vec
                     self.pointer = 0
-                return val
-            else:
+                r_ val
+            ____
                 self.pointer += 1
-                if self.pointer >= len(self.vec):
+                __ self.pointer >= le.(self.vec
                     self.pointer = 0
-        return None
+        r_ None
     
-    def hasNext(self):
-        return any([x != [] for x in self.vec])
+    ___ hasNext(self
+        r_ any([x != [] for x in self.vec])

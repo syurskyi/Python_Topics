@@ -1,10 +1,10 @@
-def square_of_sum():
+___ square_of_sum(
     pass
 
 
-def sum_of_squares():
+___ sum_of_squares(
     pass
 
 
-def difference():
+___ difference(
     pass

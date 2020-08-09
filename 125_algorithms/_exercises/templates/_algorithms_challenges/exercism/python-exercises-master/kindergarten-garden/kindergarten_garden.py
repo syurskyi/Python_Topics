@@ -1,3 +1,3 @@
-class Garden(object):
-    def __init__(self):
+class Garden(object
+    ___ __init__(self
         pass

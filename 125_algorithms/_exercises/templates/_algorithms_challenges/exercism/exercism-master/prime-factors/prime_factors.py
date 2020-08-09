@@ -1,10 +1,10 @@
-def prime_factors(num):
+___ prime_factors(num
     factors = []
     i = 2
-    while i <= num:
-        if num % i == 0:
+    w___ i <= num:
+        __ num % i __ 0:
             factors.append(i)
             num /= i
-        else:
+        ____
             i += 1
-    return factors
+    r_ factors

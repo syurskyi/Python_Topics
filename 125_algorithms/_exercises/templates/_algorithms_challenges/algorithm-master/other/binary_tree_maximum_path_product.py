@@ -2,7 +2,7 @@
 Testing:
 
 >>> class TreeNode:
-...     def __init__(self, val):
+...     ___ __init__(self, val
 ...         self.val = val
 ...         self.left = self.right = None
 
@@ -54,7 +54,7 @@ Testing:
 
 >>> gotcha = []
 >>> s = Solution()
->>> for i in range(len(trees)):
+>>> for i in range(le.(trees)):
 ...     res = s.maxPathProd(trees[i])
 ...     if res != tree_infos[i][1]: print(res, tree_infos[i])
 ...     gotcha.append(res == tree_infos[i][1])
@@ -64,20 +64,20 @@ True
 
 
 class Solution:
-    def maxPathProd(self, root):
+    ___ maxPathProd(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
 
         ans, _, _ = self.divide_conquer(root)
-        return ans
+        r_ ans
 
-    def divide_conquer(self, node):
-        if not node:
-            return float('-inf'), 1, 1
+    ___ divide_conquer(self, node
+        __ not node:
+            r_ float('-inf'), 1, 1
 
         res_left, max_left, min_left = self.divide_conquer(node.left)
         res_right, max_right, min_right = self.divide_conquer(node.right)
@@ -98,4 +98,4 @@ class Solution:
             node.val * min_left * min_right,
         )
 
-        return res, max(a, b), min(a, b)
+        r_ res, max(a, b), min(a, b)

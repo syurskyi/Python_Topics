@@ -10,7 +10,7 @@ Note: n will be less than 15,000.
 
 
 class Solution:
-    def find132pattern(self, nums):
+    ___ find132pattern(self, nums
         """
         Brute force i, j, k O(n^3)
 
@@ -36,17 +36,17 @@ class Solution:
         stack = []  # List[Interval]
         mini = float('Inf')
         for v in nums:
-            while stack and stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
+            w___ stack and stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
                 stack.pop()
-            if stack and stack[-1][0] < v:
-                return True
+            __ stack and stack[-1][0] < v:
+                r_ True
             mini = min(mini, v)
             stack.append((mini, v))
 
-        return False
+        r_ False
 
 
-    def find132pattern_TLE(self, nums):
+    ___ find132pattern_TLE(self, nums
         """
         Brute force i, j, k O(n^3)
 
@@ -54,19 +54,19 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        for i in range(len(nums)):
+        for i in range(le.(nums)):
             maxa = nums[i]
-            for j in range(i + 1, len(nums)):
-                if nums[j] > nums[i]:
-                    if nums[j] < maxa:
-                        return True
+            for j in range(i + 1, le.(nums)):
+                __ nums[j] > nums[i]:
+                    __ nums[j] < maxa:
+                        r_ True
                     maxa = max(maxa, nums[j])
 
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
-    assert Solution().find132pattern([1, 2, 3, 4]) == False
-    assert Solution().find132pattern([3, 1, 4, 2]) == True
-    assert Solution().find132pattern([-1, 3, 2, 0]) == True
-    assert Solution().find132pattern([-2, 1, 1]) == True
+__ __name__ __ "__main__":
+    assert Solution().find132pattern([1, 2, 3, 4]) __ False
+    assert Solution().find132pattern([3, 1, 4, 2]) __ True
+    assert Solution().find132pattern([-1, 3, 2, 0]) __ True
+    assert Solution().find132pattern([-2, 1, 1]) __ True

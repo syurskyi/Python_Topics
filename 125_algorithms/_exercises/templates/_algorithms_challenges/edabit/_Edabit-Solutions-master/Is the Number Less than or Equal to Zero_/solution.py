@@ -1,5 +1,5 @@
-def lessThanOrEqualToZero(num):
-    if num <= 0:
-        return True
-    else:
-        return False
+___ lessThanOrEqualToZero(num
+    __ num <= 0:
+        r_ True
+    ____
+        r_ False

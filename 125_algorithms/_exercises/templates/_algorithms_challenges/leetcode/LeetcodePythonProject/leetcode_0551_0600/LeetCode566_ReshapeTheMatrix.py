@@ -3,32 +3,32 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def matrixReshape(self, nums, r, c):
+class Solution(object
+    ___ matrixReshape(self, nums, r, c
         """
         :type nums: List[List[int]]
         :type r: int
         :type c: int
         :rtype: List[List[int]]
         """
-        if not nums or not nums[0]: return nums
-        m, n = len(nums), len(nums[0])
-        if m*n != r*c:
-            return nums
+        __ not nums or not nums[0]: r_ nums
+        m, n = le.(nums), le.(nums[0])
+        __ m*n != r*c:
+            r_ nums
         res = []
         k, l = 0, 0
-        for _ in range(r):
+        for _ in range(r
             cur = []
-            for _ in range(c):
+            for _ in range(c
                 cur.append(nums[k][l])
                 l += 1
-                if l == n:
+                __ l __ n:
                     l = 0
                     k += 1
             res.append(cur)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [[1, 2],
@@ -53,5 +53,5 @@ class Solution(object):
             print('\n'.join([str(row) for row in result]))
             print('-='*30)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

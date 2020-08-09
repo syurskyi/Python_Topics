@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestPriorityQueue(object):
+class TestPriorityQueue(object
 
-    def test_priority_queue(self):
+    ___ test_priority_queue(self
         priority_queue = PriorityQueue()
         assert_equal(priority_queue.extract_min(), None)
         priority_queue.insert(PriorityQueueNode('a', 20))
@@ -15,16 +15,16 @@ class TestPriorityQueue(object):
         priority_queue.decrease_key('f', 2)
         priority_queue.decrease_key('a', 19)
         mins = []
-        while priority_queue.array:
+        w___ priority_queue.array:
             mins.append(priority_queue.extract_min().key)
         assert_equal(mins, [2, 5, 15, 19, 22, 40])
         print('Success: test_min_heap')
 
 
-def main():
+___ main(
     test = TestPriorityQueue()
     test.test_priority_queue()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

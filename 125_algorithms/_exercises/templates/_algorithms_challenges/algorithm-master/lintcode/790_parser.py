@@ -5,34 +5,34 @@ class Solution:
     @param e: Symbol string.
     @return: Return true if the symbol string can be generated, otherwise return false.
     """
-    def canBeGenerated(self, S, start, end):
-        if not start:
+    ___ canBeGenerated(self, S, start, end
+        __ not start:
             start = ''
 
         N = {}
 
         for s in S:
             cur, nxt = s.split(' -> ')
-            if cur not in N:
+            __ cur not in N:
                 N[cur] = set()
             N[cur].add(nxt)
 
-        return self.dfs(N, end, start)
+        r_ self.dfs(N, end, start)
 
-    def dfs(self, N, end, s):
-        if len(s) > len(end):
-            return False
-        if s == end:
-            return True
+    ___ dfs(self, N, end, s
+        __ le.(s) > le.(end
+            r_ False
+        __ s __ end:
+            r_ True
 
-        for i in range(len(s)):
-            if (not ord('A') <= ord(s[i]) <= ord('Z') or
-                s[i] not in N):
+        for i in range(le.(s)):
+            __ (not ord('A') <= ord(s[i]) <= ord('Z') or
+                s[i] not in N
                 continue
 
             for _s in N[s[i]]:
                 res = self.dfs(N, end, s[:i] + _s + s[i + 1:])
-                if res:
-                    return True
+                __ res:
+                    r_ True
 
-        return False
+        r_ False

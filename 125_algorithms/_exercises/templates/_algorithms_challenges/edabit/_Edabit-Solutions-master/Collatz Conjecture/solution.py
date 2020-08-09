@@ -1,10 +1,10 @@
-def collatz(n):
+___ collatz(n
     output = [n]
-    while n != 1:
-        if n % 2 == 0:
+    w___ n != 1:
+        __ n % 2 __ 0:
             n = n // 2
             output.append(n)
-        else:
+        ____
             n = n*3 + 1
             output.append(n)
-    return len(output),max(output)
+    r_ le.(output),max(output)

@@ -11,10 +11,10 @@ The input of blood type can be in the form of:
 Keywords: enum, exception handling, multi type input
 """
 
-from enum import Enum
+from enum ______ Enum
 
 
-class Bloodtype(Enum):
+class Bloodtype(Enum
     ZERO_NEG = 0
     ZERO_POS = 1
     B_NEG = 2
@@ -38,33 +38,33 @@ blood_type_text = {
 
 
 # complete :
-def _blood_int(b_type):
-    if isinstance(b_type, int):
-        if b_type not in range(Bloodtype.ZERO_NEG.value, Bloodtype.AB_POS.value + 1):
+___ _blood_int(b_type
+    __ isinstance(b_type, int
+        __ b_type not in range(Bloodtype.ZERO_NEG.value, Bloodtype.AB_POS.value + 1
             raise ValueError(f'Bad blood integer {b_type}')
-        return b_type
-    elif isinstance(b_type, str):
-        if b_type not in blood_type_text:
+        r_ b_type
+    ____ isinstance(b_type, str
+        __ b_type not in blood_type_text:
             raise ValueError(f'Bad blood type {b_type}')
         b_type = blood_type_text[b_type]
-    elif not isinstance(b_type, Bloodtype):
+    ____ not isinstance(b_type, Bloodtype
         raise TypeError(f'Invalid blood type type {type(b_type)}')
-    return b_type.value
+    r_ b_type.value
 
 
-def check_bt(donor, recipient):
+___ check_bt(donor, recipient
     """ Checks red blood cell compatibility based on 8 blood types
         Args:
-        donor (int | str | Bloodtype): red blood cell type of the donor
-        recipient (int | str | Bloodtype): red blood cell type of the recipient
+        donor (int | str | Bloodtype red blood cell type of the donor
+        recipient (int | str | Bloodtype red blood cell type of the recipient
         Returns:
         bool: True for compatability, False otherwise.
     """
-    return all(a >= 0 for a in _particular_antigen_comp(donor=_blood_int(donor), recipient=_blood_int(recipient)))
+    r_ all(a >= 0 for a in _particular_antigen_comp(donor=_blood_int(donor), recipient=_blood_int(recipient)))
 
 
 # hint
-def _particular_antigen_comp(donor: int, recipient: int) -> tuple:
+___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.
@@ -77,7 +77,7 @@ def _particular_antigen_comp(donor: int, recipient: int) -> tuple:
     _particular_antigen_comp(2, 5) -> (1, -1, 1)   B+ cannot donate to A+
     _particular_antigen_comp(7, 0) -> (-1, -1, -1) AB+ cannot donate to 0-
     """
-    return (
+    r_ (
         ((recipient // 4) % 2) - ((donor // 4) % 2),
         ((recipient // 2) % 2) - ((donor // 2) % 2),
         (recipient % 2) - (donor % 2),

@@ -1,10 +1,10 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def getHint(self, secret, guess):
+class Solution(object
+    ___ getHint(self, secret, guess
         """
         Need to revert B
 
@@ -22,20 +22,20 @@ class Solution(object):
         for c in secret:
             cnt[c] += 1
 
-        for i, v in enumerate(guess):
-            if v == secret[i]:
+        for i, v in enumerate(guess
+            __ v __ secret[i]:
                 A += 1
-                if cnt[v] > 0:
+                __ cnt[v] > 0:
                     cnt[v] -= 1
-                else:
+                ____
                     B -= 1
 
-            elif cnt[v] > 0:
+            ____ cnt[v] > 0:
                 B += 1
                 cnt[v] -= 1
 
-        return "%dA%dB" % (A, B)
+        r_ "%dA%dB" % (A, B)
 
 
-if __name__ == "__main__":
-    assert Solution().getHint("0", "1") == "0A0B"
+__ __name__ __ "__main__":
+    assert Solution().getHint("0", "1") __ "0A0B"

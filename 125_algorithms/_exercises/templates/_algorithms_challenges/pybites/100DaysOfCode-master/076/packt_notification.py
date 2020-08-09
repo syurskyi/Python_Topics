@@ -1,13 +1,13 @@
-from collections import namedtuple
-from datetime import datetime
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import os
-import smtplib
-import sys
+from collections ______ namedtuple
+from datetime ______ datetime
+from email.mime.multipart ______ MIMEMultipart
+from email.mime.text ______ MIMEText
+______ os
+______ smtplib
+______ sys
 
-from bs4 import BeautifulSoup as Soup
-import requests
+from bs4 ______ BeautifulSoup as Soup
+______ requests
 
 FROM_MAIL = os.environ.get('FROM_MAIL') or sys.exit('set FROM_MAIL in env')
 
@@ -24,23 +24,23 @@ HEADERS = {'Connection': 'keep-alive',
 Book = namedtuple('Book', 'title description summary image link timeleft')
 
 
-def retrieve_page_html():
-    if os.path.isfile(FREE_LEARNING_PAGE):
+___ retrieve_page_html(
+    __ os.path.isfile(FREE_LEARNING_PAGE
         with open(FREE_LEARNING_PAGE) as f:
-            return f.read()
-    else:
-        return requests.get(PACKT_FREE_LEARNING_LINK, headers=HEADERS).text
+            r_ f.read()
+    ____
+        r_ requests.get(PACKT_FREE_LEARNING_LINK, headers=HEADERS).text
 
 
-def _create_time_left_string(countdown_unix_tstamp):
+___ _create_time_left_string(countdown_unix_tstamp
     expires = datetime.fromtimestamp(int(countdown_unix_tstamp))
     now = datetime.now()
     left = str(expires - now)
     hh, mm, _ = left.split(':')
-    return TIME_LEFT.format(hh, mm)
+    r_ TIME_LEFT.format(hh, mm)
 
 
-def extract_book_data_page(content):
+___ extract_book_data_page(content
     soup = Soup(content, 'html.parser')
     book_image = soup.find('div', {'class': 'dotd-main-book-image'})
     link = BASE_URL + book_image.find('a').get('href')
@@ -52,12 +52,12 @@ def extract_book_data_page(content):
     description = descr_div.text.strip()
     summary_html = descr_div.find_next_sibling("div")
     # sometimes 2nd paragraph = form, then don't include it
-    if 'dotd-main-book-form' in str(summary_html):
+    __ 'dotd-main-book-form' in str(summary_html
         summary_html = ''
     js_countdown = book_main.find('span', {'class': 'packt-js-countdown'})
     countdown = js_countdown.get('data-countdown-to')
     timeleft = _create_time_left_string(countdown)
-    return Book(title=title,
+    r_ Book(title=title,
                 description=description,
                 summary=summary_html,
                 image=image,
@@ -65,8 +65,8 @@ def extract_book_data_page(content):
                 timeleft=timeleft)
 
 
-def generate_mail_msg(book):
-    return '''<h2><a href='{link}'>{title}</a></h2>
+___ generate_mail_msg(book
+    r_ '''<h2><a href='{link}'>{title}</a></h2>
         <div>{description}</div>
         {summary_html}
         <hr>
@@ -84,7 +84,7 @@ def generate_mail_msg(book):
                 url=PACKT_FREE_LEARNING_LINK)
 
 
-def mail_html(recipients, subject, content):
+___ mail_html(recipients, subject, content
     sender = FROM_MAIL
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
@@ -97,8 +97,8 @@ def mail_html(recipients, subject, content):
     s.quit()
 
 
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
+__ __name__ __ '__main__':
+    __ le.(sys.argv) < 2:
         print('Usage {} email1 email2 ...'.format(sys.argv[0]))
         sys.exit(1)
 

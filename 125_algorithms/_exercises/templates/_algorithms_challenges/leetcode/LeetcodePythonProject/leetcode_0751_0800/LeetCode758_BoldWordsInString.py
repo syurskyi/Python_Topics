@@ -3,8 +3,8 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def boldWords(self, words, S):
+class Solution(object
+    ___ boldWords(self, words, S
         """
         :type words: List[str]
         :type S: str
@@ -15,22 +15,22 @@ class Solution(object):
         start = False
         j = 0
         res = ''
-        for i in range(len(s)):
+        for i in range(le.(s)):
             for word in words:
-                if i+len(word) <= len(s) and s[i:i+len(word)] == word:
-                    if not start:
+                __ i+le.(word) <= le.(s) and s[i:i+le.(word)] __ word:
+                    __ not start:
                         res += '<b>'
                         start = True
-                    j = max(j, i+len(word))
-            if i == j and start:
+                    j = max(j, i+le.(word))
+            __ i __ j and start:
                 res += '</b>'
                 start = False
             res += s[i]
-        if j >= len(s):
+        __ j >= le.(s
             res += '</b>'
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ['ab', 'bc'],
@@ -52,5 +52,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

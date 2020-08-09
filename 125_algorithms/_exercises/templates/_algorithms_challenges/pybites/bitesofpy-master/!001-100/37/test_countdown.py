@@ -1,6 +1,6 @@
-import inspect
+______ inspect
 
-from countdown import countdown_for, countdown_recursive
+from countdown ______ countdown_for, countdown_recursive
 
 expected = '''10
 9
@@ -21,25 +21,25 @@ expected_other_start_arg = '''13
 expected_other_start_arg += expected
 
 
-def test_countdown_for(capfd):
+___ test_countdown_for(capfd
     countdown_for()
     out, _ = capfd.readouterr()
-    assert out == expected
+    assert out __ expected
 
 
-def test_countdown_recursive(capfd):
+___ test_countdown_recursive(capfd
     countdown_recursive()
     out, _ = capfd.readouterr()
-    assert out == expected
+    assert out __ expected
 
 
-def test_test_countdown_recursive_different_start(capfd):
+___ test_test_countdown_recursive_different_start(capfd
     countdown_recursive(13)
     out, _ = capfd.readouterr()
-    assert out == expected_other_start_arg
+    assert out __ expected_other_start_arg
 
 
-def test_recursion_used():
+___ test_recursion_used(
     func = countdown_recursive
     err = f'expecting {func.__name__} twice in your answer'
-    assert inspect.getsource(func).count(func.__name__) == 2, err
+    assert inspect.getsource(func).count(func.__name__) __ 2, err

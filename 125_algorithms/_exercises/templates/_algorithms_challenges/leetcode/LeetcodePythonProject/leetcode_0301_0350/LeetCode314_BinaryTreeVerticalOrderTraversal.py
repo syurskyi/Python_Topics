@@ -5,33 +5,33 @@ Created on Mar 15, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
-    def verticalOrder(self, root):
-        if not root: return []
+class Solution(object
+    ___ verticalOrder(self, root
+        __ not root: r_ []
         hashmap = {}
         result = []
         queue = [(0, root)]
         minLevel, maxLevel = 0, 0
-        while queue:
+        w___ queue:
             level, node = queue.pop(0)
             maxLevel = max(maxLevel, level)
             minLevel = min(minLevel, level)
-            if level not in hashmap:
+            __ level not in hashmap:
                 hashmap[level] = [node.val]
-            else:
+            ____
                 hashmap[level].append(node.val)
-            if node.left:
+            __ node.left:
                 queue.append((level-1, node.left))
-            if node.right:
+            __ node.right:
                 queue.append((level+1, node.right))
-        for i in range(minLevel, maxLevel+1):
+        for i in range(minLevel, maxLevel+1
             result.append(hashmap[i])
-        return result
+        r_ result
     
     

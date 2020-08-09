@@ -35,8 +35,8 @@ Note:
 schedule and schedule[i] are lists with lengths in range [1, 50].
 0 <= schedule[i].start < schedule[i].end <= 10^8.
 """
-from typing import List
-import heapq
+from typing ______ List
+______ heapq
 
 
 S = 0
@@ -44,7 +44,7 @@ E = 1
 
 
 class Solution:
-    def employeeFreeTime(self, schedule: List[List[List[int]]]) -> List[List[int]]:
+    ___ employeeFreeTime(self, schedule: List[List[List[int]]]) -> List[List[int]]:
         """
         Method 1
         Looking at the head of each list through iterator
@@ -66,30 +66,30 @@ class Solution:
             for itv in itvs
         )
         q = []
-        for i, itvs in enumerate(schedule):
+        for i, itvs in enumerate(schedule
             # head
             j = 0
             itv = itvs[j]
             heapq.heappush(q, (itv[S], i, j))
 
         ret = []
-        while q:
+        w___ q:
             _, i, j = heapq.heappop(q)
             itv = schedule[i][j]
-            if cur_max_end < itv[S]:
+            __ cur_max_end < itv[S]:
                 ret.append([cur_max_end, itv[S]])
 
             cur_max_end = max(cur_max_end, itv[E])
 
             # next
             j += 1
-            if j < len(schedule[i]):
+            __ j < le.(schedule[i]
                 itv = schedule[i][j]
                 heapq.heappush(q, (itv[S], i, j))
 
-        return ret
+        r_ ret
 
-    def employeeFreeTime(self, schedule: List[List[List[int]]]) -> List[List[int]]:
+    ___ employeeFreeTime(self, schedule: List[List[List[int]]]) -> List[List[int]]:
         """
         Method 2
         """
@@ -105,18 +105,18 @@ class Solution:
         prev = None
         ret = []
         for t, flag in lst:
-            if count == 0 and prev:
+            __ count __ 0 and prev:
                 ret.append([prev, t])
 
-            if flag == S:
+            __ flag __ S:
                 count += 1
-            else:
+            ____
                 prev = t
                 count -= 1
 
-        return ret
+        r_ ret
 
-    def employeeFreeTime_error(self, schedule: List[List[List[int]]]) -> List[List[int]]:
+    ___ employeeFreeTime_error(self, schedule: List[List[List[int]]]) -> List[List[int]]:
         """
         Cannot store iterator in the heap to compare
         use index instead
@@ -130,22 +130,22 @@ class Solution:
         q = []
         for emp_iter in schedules:
             itv = next(emp_iter, None)
-            if itv:
+            __ itv:
                 heapq.heappush(q, (itv[S], itv, emp_iter))
 
         ret = []
-        while q:
+        w___ q:
             _, itv, emp_iter = heapq.heappop(q)
-            if cur_max_end < itv[S]:
+            __ cur_max_end < itv[S]:
                 ret.append([cur_max_end, itv[S]])
             cur_max_end = max(cur_max_end, itv[E])
             itv = next(emp_iter, None)
-            if itv:
+            __ itv:
                 heapq.heappush(q, (itv[S], itv, emp_iter))
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().employeeFreeTime([[[1,2],[5,6]],[[1,3]],[[4,10]]]) == [[3,4]]
-    assert Solution().employeeFreeTime([[[4,16],[31,36],[42,50],[80,83],[95,96]],[[4,13],[14,19],[37,53],[64,66],[85,89]],[[17,24],[38,39],[49,51],[62,67],[79,81]],[[9,15],[17,24],[45,63],[65,68],[87,88]],[[17,33],[39,41],[43,57],[58,63],[70,84]]]) == [[36, 37], [68, 70], [84, 85], [89, 95]]
+__ __name__ __ "__main__":
+    assert Solution().employeeFreeTime([[[1,2],[5,6]],[[1,3]],[[4,10]]]) __ [[3,4]]
+    assert Solution().employeeFreeTime([[[4,16],[31,36],[42,50],[80,83],[95,96]],[[4,13],[14,19],[37,53],[64,66],[85,89]],[[17,24],[38,39],[49,51],[62,67],[79,81]],[[9,15],[17,24],[45,63],[65,68],[87,88]],[[17,33],[39,41],[43,57],[58,63],[70,84]]]) __ [[36, 37], [68, 70], [84, 85], [89, 95]]

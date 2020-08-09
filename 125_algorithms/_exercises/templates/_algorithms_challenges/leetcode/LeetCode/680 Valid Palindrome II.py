@@ -17,31 +17,31 @@ string is 50000.
 
 
 class Solution:
-    def validPalindrome(self, s: str) -> bool:
+    ___ validPalindrome(self, s: str) -> bool:
         """
         Brute force, delete and check. O(n^2)
 
         Start from start and end, then check equal. If not match, skip either
         side (i.e. delete a character), then check palindrome
         """
-        n = len(s)
+        n = le.(s)
         i = 0
         j = n - 1
-        while i < j:
-            if s[i] == s[j]:
+        w___ i < j:
+            __ s[i] __ s[j]:
                 i += 1
                 j -= 1
-            else:
+            ____
                 # error, for -1, start > end. Indexing is like range
                 # return s[i:j] == s[i:j:-1] or s[i+1:j+1] == s[i+1:j+1:-1]
-                return self.is_palindrome(s[i:j]) or self.is_palindrome(s[i+1:j+1])
+                r_ self.is_palindrome(s[i:j]) or self.is_palindrome(s[i+1:j+1])
 
-        return True
+        r_ True
 
-    def is_palindrome(self, s):
-        return s == s[::-1]
+    ___ is_palindrome(self, s
+        r_ s __ s[::-1]
 
 
-if __name__ == "__main__":
-    assert Solution().validPalindrome("aba") == True
-    assert Solution().validPalindrome("abca") == True
+__ __name__ __ "__main__":
+    assert Solution().validPalindrome("aba") __ True
+    assert Solution().validPalindrome("abca") __ True

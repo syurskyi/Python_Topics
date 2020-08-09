@@ -1,5 +1,5 @@
-class Solution(object):
-  def findMaxConsecutiveOnes(self, nums):
+class Solution(object
+  ___ findMaxConsecutiveOnes(self, nums
     """
     :type nums: List[int]
     :rtype: int
@@ -7,9 +7,9 @@ class Solution(object):
     ans = 0
     count = 0
     for num in nums:
-      if num == 1:
+      __ num __ 1:
         count += 1
-      else:
+      ____
         count = 0
       ans = max(ans, count)
-    return ans
+    r_ ans

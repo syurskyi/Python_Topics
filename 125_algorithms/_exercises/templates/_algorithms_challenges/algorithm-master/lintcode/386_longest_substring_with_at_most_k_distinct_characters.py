@@ -1,8 +1,8 @@
-import collections
+______ collections
 
 
 class Solution:
-    def lengthOfLongestSubstringKDistinct(self, s, k):
+    ___ lengthOfLongestSubstringKDistinct(self, s, k
         """
         :type s: str
         :type k: int
@@ -10,28 +10,28 @@ class Solution:
         """
         ans = 0
 
-        if not s or not k:
-            return ans
+        __ not s or not k:
+            r_ ans
 
         freq = collections.defaultdict(int)
-        n = len(s)
+        n = le.(s)
         left = right = cnt = 0
 
-        while right < n:
+        w___ right < n:
             freq[s[right]] += 1
-            if freq[s[right]] == 1:
+            __ freq[s[right]] __ 1:
                 cnt += 1
 
             right += 1
 
-            while cnt > k:
+            w___ cnt > k:
                 freq[s[left]] -= 1
-                if freq[s[left]] == 0:
+                __ freq[s[left]] __ 0:
                     cnt -= 1
 
                 left += 1
 
-            if right - left > ans:
+            __ right - left > ans:
                 ans = right - left
 
-        return ans
+        r_ ans

@@ -1,5 +1,5 @@
-class Solution(object):
-  def maxSubArrayLen(self, nums, k):
+class Solution(object
+  ___ maxSubArrayLen(self, nums, k
     """
     :type nums: List[int]
     :type k: int
@@ -8,10 +8,10 @@ class Solution(object):
     d = {0: -1}
     maxLen = 0
     _sum = 0
-    for i in range(0, len(nums)):
+    for i in range(0, le.(nums)):
       _sum += nums[i]
-      if _sum not in d:
+      __ _sum not in d:
         d[_sum] = i
-      if _sum - k in d:
+      __ _sum - k in d:
         maxLen = max(maxLen, i - d[_sum - k])
-    return maxLen
+    r_ maxLen

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestPairParentheses(object):
+class TestPairParentheses(object
 
-    def test_pair_parentheses(self):
+    ___ test_pair_parentheses(self
         parentheses = Parentheses()
         assert_raises(TypeError, parentheses.find_pair, None)
         assert_raises(ValueError, parentheses.find_pair, -1)
@@ -19,10 +19,10 @@ class TestPairParentheses(object):
         print('Success: test_pair_parentheses')
 
 
-def main():
+___ main(
     test = TestPairParentheses()
     test.test_pair_parentheses()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

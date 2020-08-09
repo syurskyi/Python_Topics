@@ -4,50 +4,50 @@ Created on Apr 3, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def isSubsequence(self, s, t):
-        import bisect
+class Solution(object
+    ___ isSubsequence(self, s, t
+        ______ bisect
         hashmap = {}
-        for i, c in enumerate(t):
-            if c in hashmap:
+        for i, c in enumerate(t
+            __ c in hashmap:
                 hashmap[c].append(i)
-            else:
+            ____
                 hashmap[c] = [i]
         prev = 0
-        for i, c in enumerate(s):
-            if c not in hashmap: return False
+        for i, c in enumerate(s
+            __ c not in hashmap: r_ False
             j = bisect.bisect_left(hashmap[c], prev)
-            if j == len(hashmap[c]): return False
+            __ j __ le.(hashmap[c] r_ False
             prev = hashmap[c][j]+1
-        return True
+        r_ True
     
-    def isSubsequence_orig(self, s, t):
-        import bisect
+    ___ isSubsequence_orig(self, s, t
+        ______ bisect
         idx = [[] for _ in range(256)]
-        for i, c in enumerate(t):
+        for i, c in enumerate(t
             idx[ord(c)].append(i)
         prev = 0
-        for i, c in enumerate(s):
-            if idx[ord(c)] == []: return False
+        for i, c in enumerate(s
+            __ idx[ord(c)] __ []: r_ False
             j = bisect.bisect_left(idx[ord(c)], prev)
-            if j == len(idx[ord(c)]): return False
+            __ j __ le.(idx[ord(c)] r_ False
             prev = idx[ord(c)][j] + 1
-        return True
+        r_ True
     
-    def isSubsequence_slow(self, s, t):
+    ___ isSubsequence_slow(self, s, t
         i, j = 0, 0
-        while i < len(s) and j < len(t):
-            if s[i] == t[j]:
+        w___ i < le.(s) and j < le.(t
+            __ s[i] __ t[j]:
                 i+=1
                 j+=1
-            else:
+            ____
                 j+=1
-        if i < len(s):
-            return False
-        else:
-            return True
+        __ i < le.(s
+            r_ False
+        ____
+            r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('abc', 'ahbgdc'),
             ('axc', 'ahbgdc'),
@@ -59,6 +59,6 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

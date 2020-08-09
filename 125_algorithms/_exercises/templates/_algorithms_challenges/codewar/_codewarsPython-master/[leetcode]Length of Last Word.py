@@ -1,14 +1,14 @@
 class Solution:
     # @param {string} s
     # @return {integer}
-    def lengthOfLastWord(self, s):
+    ___ lengthOfLastWord(self, s
         num = 0
         s = s.strip()
         for c in s[::-1]:
-            if c == ' ':
+            __ c __ ' ':
                 break
             num += 1
-        return num
+        r_ num
 
 test = Solution()
 print(test.lengthOfLastWord('H '))

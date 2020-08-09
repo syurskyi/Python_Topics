@@ -18,11 +18,11 @@ Output:
 2
 One possible longest palindromic subsequence is "bb".
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def longestPalindromeSubseq(self, s):
+    ___ longestPalindromeSubseq(self, s
         """
         Brute force 0-1, exponential
 
@@ -35,19 +35,19 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        n = len(s)
+        n = le.(s)
         F = defaultdict(lambda: defaultdict(int))
-        for i in range(n):
+        for i in range(n
             F[i][i] = 1
 
-        for i in range(n-1, -1, -1):
-            for j in range(i+1, n):
+        for i in range(n-1, -1, -1
+            for j in range(i+1, n
                 F[i][j] = max(F[i+1][j], F[i][j-1])
-                if s[i] == s[j]:
+                __ s[i] __ s[j]:
                     F[i][j] = max(F[i][j], F[i+1][j-1] + 2)
 
-        return F[0][n-1]
+        r_ F[0][n-1]
 
 
-if __name__ == "__main__":
-    assert Solution().longestPalindromeSubseq("bbbab") == 4
+__ __name__ __ "__main__":
+    assert Solution().longestPalindromeSubseq("bbbab") __ 4

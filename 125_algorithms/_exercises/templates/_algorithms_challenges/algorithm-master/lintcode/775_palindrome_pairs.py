@@ -7,139 +7,139 @@ Main Concept:
 2. Since we now use <= in for (int j=0; j<=words[i].length(); j++) instead of <. There may be duplicates in the output (consider test case [“abcd”, “dcba”]). Therefore I put a str2.length()!=0 to avoid duplicates.
 """
 class Solution:
-    def palindromePairs(self, words):
+    ___ palindromePairs(self, words
         """
         :type words: list[str]
         :rtype: list[list[int]]
         """
         ans = []
 
-        if not words:
-            return ans
+        __ not words:
+            r_ ans
 
-        n = len(words)
+        n = le.(words)
         w2i = {}
 
-        for i in range(n):
+        for i in range(n
             w2i[words[i]] = i
 
-        for i in range(n):
-            for j in range(len(words[i]) + 1):
+        for i in range(n
+            for j in range(le.(words[i]) + 1
                 s = words[i][:j]
                 t = words[i][j:]
                 _s = ''.join(reversed(s))
                 _t = ''.join(reversed(t))
 
-                if (self.is_palindrome(s) and
+                __ (self.is_palindrome(s) and
                     _t in w2i and
                     w2i[_t] != i
-                ):
+
                     ans.append([w2i[_t], i])
 
-                if (self.is_palindrome(t) and
-                    len(t) != 0 and  # since len(word) + 1, may empty here
+                __ (self.is_palindrome(t) and
+                    le.(t) != 0 and  # since le.(word) + 1, may empty here
                     _s in w2i and
                     w2i[_s] != i
-                ):
+
                     ans.append([i, w2i[_s]])
 
-        return ans
+        r_ ans
 
-    def is_palindrome(self, word):
-        n = len(word)
+    ___ is_palindrome(self, word
+        n = le.(word)
         left, right = 0, n - 1
 
-        while left < right:
-            if word[left] != word[right]:
-                return False
+        w___ left < right:
+            __ word[left] != word[right]:
+                r_ False
 
             left += 1
             right -= 1
 
-        return True
+        r_ True
 
 
 """
 TLE: Brute Force
 """
 class Solution:
-    def palindromePairs(self, words):
+    ___ palindromePairs(self, words
         """
         :type words: list[str]
         :rtype: list[list[int]]
         """
         ans = []
 
-        if not words:
-            return ans
+        __ not words:
+            r_ ans
 
-        n = len(words)
+        n = le.(words)
 
-        for i in range(n):
-            for j in range(i):
-                if self.is_palindrome(words, i, j):
+        for i in range(n
+            for j in range(i
+                __ self.is_palindrome(words, i, j
                     ans.append([i, j])
 
-                if self.is_palindrome(words, j, i):
+                __ self.is_palindrome(words, j, i
                     ans.append([j, i])
 
-        return ans
+        r_ ans
 
-    def is_palindrome(self, words, i, j):
+    ___ is_palindrome(self, words, i, j
         s, t = words[i], words[j]
-        a, b = len(s), len(t)
+        a, b = le.(s), le.(t)
         n = a + b
         left, right = 0, n - 1
 
-        while left < right:
-            if left >= a and t[left - a] != t[right - a]:
-                return False
-            elif right < a and s[left] != s[right]:
-                return False
-            elif left < a and right >= a and s[left] != t[right - a]:
-                return False
+        w___ left < right:
+            __ left >= a and t[left - a] != t[right - a]:
+                r_ False
+            ____ right < a and s[left] != s[right]:
+                r_ False
+            ____ left < a and right >= a and s[left] != t[right - a]:
+                r_ False
 
             left += 1
             right -= 1
 
-        return True
+        r_ True
 
 
 """
 TLE: Brute Force
 """
 class Solution:
-    def palindromePairs(self, words):
+    ___ palindromePairs(self, words
         """
         :type words: list[str]
         :rtype: list[list[int]]
         """
         ans = []
 
-        if not words:
-            return ans
+        __ not words:
+            r_ ans
 
-        n = len(words)
+        n = le.(words)
 
-        for i in range(n):
-            for j in range(n):
-                if i == j:
+        for i in range(n
+            for j in range(n
+                __ i __ j:
                     continue
 
-                if self.is_palindrome(words[i] + words[j]):
+                __ self.is_palindrome(words[i] + words[j]
                     ans.append([i, j])
 
-        return ans
+        r_ ans
 
-    def is_palindrome(self, s):
-        n = len(s)
+    ___ is_palindrome(self, s
+        n = le.(s)
         left, right = 0, n - 1
 
-        while left < right:
-            if s[left] != s[right]:
-                return False
+        w___ left < right:
+            __ s[left] != s[right]:
+                r_ False
 
             left += 1
             right -= 1
 
-        return True
+        r_ True

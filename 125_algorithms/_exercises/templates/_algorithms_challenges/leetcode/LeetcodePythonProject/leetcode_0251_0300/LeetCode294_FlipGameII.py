@@ -4,29 +4,29 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def canWin(self, s):
+class Solution(object
+    ___ canWin(self, s
         """
         :type s: str
         :rtype: bool
         """
         memo = {}
-        return self.helper(s, memo)
+        r_ self.helper(s, memo)
     
-    def helper(self, s, memo):
-        if s in memo:
-            return memo[s]
+    ___ helper(self, s, memo
+        __ s in memo:
+            r_ memo[s]
         otherWin = True
-        for i in range(len(s)-1):
-            if s[i:i+2] == '++':
+        for i in range(le.(s)-1
+            __ s[i:i+2] __ '++':
                 s0 = s[:i]+'--'+s[i+2:]
-                if not self.helper(s0, memo):
+                __ not self.helper(s0, memo
                     otherWin = False
                     break
         memo[s] = not otherWin
-        return memo[s]
+        r_ memo[s]
     
-    def test(self):
+    ___ test(self
         testCases = [
             '++++',
         ]
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

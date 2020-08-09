@@ -1,6 +1,6 @@
-from dataclasses import dataclass
-from functools import total_ordering
-from typing import List
+from dataclasses ______ dataclass
+from functools ______ total_ordering
+from typing ______ List
 
 bites: List[int] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
 names: List[str] = [
@@ -32,14 +32,14 @@ class Ninja:
     name: str
     bites: int
 
-    def __lt__(self, other):
-        return self.bites < other.bites
+    ___ __lt__(self, other
+        r_ self.bites < other.bites
 
-    def __eq__(self, other):
-        return self.bites == other.bites
+    ___ __eq__(self, other
+        r_ self.bites __ other.bites
 
-    def __str__(self):
-        return f'[{self.bites}] {self.name}'
+    ___ __str__(self
+        r_ f'[{self.bites}] {self.name}'
 
 
 @dataclass
@@ -53,34 +53,34 @@ class Rankings:
             count parameter indicating how many of the highest ranking Ninjas to return
     method: lowest(), the same as highest but returns the lowest ranking Ninjas, also
             supports an optional count parameter
-    returns how many Ninjas are in Rankings when len() is called on it
+    returns how many Ninjas are in Rankings when le.() is called on it
     method: pair_up(), pairs up study partners, takes an optional count
             parameter indicating how many Ninjas to pair up
     returns List containing tuples of the paired up Ninja objects
     """
     ninja_list = []
 
-    def add(self, ninja):
-        if ninja not in self.ninja_list:
+    ___ add(self, ninja
+        __ ninja not in self.ninja_list:
             self.ninja_list.append(ninja)
         self.ninja_list.sort()
 
-    def dump(self):
-        return self.ninja_list.pop(0)
+    ___ dump(self
+        r_ self.ninja_list.pop(0)
 
-    def highest(self, count: int = 1):
+    ___ highest(self, count: int = 1
         result = self.ninja_list[-count:]
         result.reverse()
-        return result
+        r_ result
 
-    def lowest(self, count: int = 1):
+    ___ lowest(self, count: int = 1
         result = self.ninja_list[:count]
-        return result
+        r_ result
 
-    def pair_up(self, count: int = 3):
+    ___ pair_up(self, count: int = 3
         highest = self.highest(count)
         lowest = self.lowest(count)
-        return list(zip(highest, lowest))
+        r_ list(zip(highest, lowest))
 
-    def __len__(self):
-        return len(self.ninja_list)
+    ___ __len__(self
+        r_ le.(self.ninja_list)

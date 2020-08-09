@@ -11,14 +11,14 @@ class SpaceAge:
         'neptune': 5200418592.0
     }
 
-    def __init__(self, seconds):
+    ___ __init__(self, seconds
         self.seconds = seconds
 
-    def on_planet(self, planet):
-        return round(self.seconds / self.ORBITAL_PERIODS[planet], 2)
+    ___ on_planet(self, planet
+        r_ round(self.seconds / self.ORBITAL_PERIODS[planet], 2)
 
 
-def add_on_planet_fn(planet):
+___ add_on_planet_fn(planet
     setattr(SpaceAge, 'on_' + planet, lambda self: self.on_planet(planet))
 
 

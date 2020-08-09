@@ -1,9 +1,9 @@
-from collections import deque
+from collections ______ deque
 
 
-class SnakeGame(object):
+class SnakeGame(object
 
-  def __init__(self, width, height, food):
+  ___ __init__(self, width, height, food
     """
     Initialize your data structure here.
     @param width - screen width
@@ -22,7 +22,7 @@ class SnakeGame(object):
     self.directions = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
     self.score = 0
 
-  def move(self, direction):
+  ___ move(self, direction
     """
     Moves the snake.
     @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down 
@@ -31,27 +31,27 @@ class SnakeGame(object):
     :type direction: str
     :rtype: int
     """
-    if direction not in self.directions:
-      return -1
+    __ direction not in self.directions:
+      r_ -1
     di, dj = self.directions[direction]
     ni, nj = self.snake[0][0] + di, self.snake[0][1] + dj
 
-    if ni < 0 or ni >= self.height or nj < 0 or nj >= self.width:
-      return -1
+    __ ni < 0 or ni >= self.height or nj < 0 or nj >= self.width:
+      r_ -1
 
     self.snake.appendleft((ni, nj))
 
-    if self.food and [ni, nj] == self.food[0]:
+    __ self.food and [ni, nj] __ self.food[0]:
       self.score += 1
       self.food.popleft()
-    else:
+    ____
       self.snakeSet.discard(self.snake.pop())
 
-    if (ni, nj) in self.snakeSet:
-      return -1
+    __ (ni, nj) in self.snakeSet:
+      r_ -1
     self.snakeSet |= {(ni, nj)}
 
-    return self.score
+    r_ self.score
 
 # Your SnakeGame object will be instantiated and called as such:
 # obj = SnakeGame(width, height, food)

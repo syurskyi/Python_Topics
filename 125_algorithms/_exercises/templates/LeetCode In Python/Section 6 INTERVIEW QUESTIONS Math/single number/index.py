@@ -1,7 +1,7 @@
-class Solution(object):
-    def singleNumber(self, nums):
+class Solution(object
+    ___ singleNumber(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        return 2*sum(set(nums))-sum(nums)
+        r_ 2*sum(set(nums))-sum(nums)

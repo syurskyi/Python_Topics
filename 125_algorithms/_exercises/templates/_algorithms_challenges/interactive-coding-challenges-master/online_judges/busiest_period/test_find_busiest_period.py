@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSolution(object):
+class TestSolution(object
 
-    def test_find_busiest_period(self):
+    ___ test_find_busiest_period(self
         solution = Solution()
         assert_raises(TypeError, solution.find_busiest_period, None)
         assert_equal(solution.find_busiest_period([]), None)
@@ -19,10 +19,10 @@ class TestSolution(object):
         print('Success: test_find_busiest_period')
 
 
-def main():
+___ main(
     test = TestSolution()
     test.test_find_busiest_period()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

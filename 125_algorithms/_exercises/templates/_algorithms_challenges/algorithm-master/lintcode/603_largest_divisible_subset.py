@@ -1,16 +1,16 @@
 class Solution:
-    def largestDivisibleSubset(self, A):
+    ___ largestDivisibleSubset(self, A
         """
         :type A: List[int]
         :rtype: List[int]
         """
         ans = []
-        if not A:
-            return ans
+        __ not A:
+            r_ ans
 
-        n = len(A)
-        if n == 1:
-            return A
+        n = le.(A)
+        __ n __ 1:
+            r_ A
 
         A.sort()
 
@@ -29,25 +29,25 @@ class Solution:
         pi = [0] * n
         pe = max_size = 0
 
-        for i in range(n):
-            for j in range(i):
+        for i in range(n
+            for j in range(i
                 """
                 backtracking
 
                 `A[i]` is larger than `A[j]`,
                 so check `A[i] % A[j]` if its zero
                 """
-                if A[i] % A[j] == 0 and dp[j] + 1 > dp[i]:
+                __ A[i] % A[j] __ 0 and dp[j] + 1 > dp[i]:
                     dp[i] = dp[j] + 1
                     pi[i] = j
 
-                if dp[i] > max_size:
+                __ dp[i] > max_size:
                     max_size = dp[i]
                     pe = i
 
         ans = [0] * max_size
-        for i in range(max_size - 1, -1, -1):
+        for i in range(max_size - 1, -1, -1
             ans[i] = A[pe]
             pe = pi[pe]
 
-        return ans
+        r_ ans

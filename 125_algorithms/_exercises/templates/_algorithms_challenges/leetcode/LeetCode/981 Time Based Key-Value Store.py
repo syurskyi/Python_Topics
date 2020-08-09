@@ -47,13 +47,13 @@ The timestamps for all TimeMap.set operations are strictly increasing.
 TimeMap.set and TimeMap.get functions will be called a total of 120000 times
 combined) per test case.
 """
-import bisect
-from collections import defaultdict
+______ bisect
+from collections ______ defaultdict
 
 
 class TimeMap:
 
-    def __init__(self):
+    ___ __init__(self
         """
         Initialize your data structure here.
         Looks like Cassandra
@@ -63,24 +63,24 @@ class TimeMap:
         """
         self.m = defaultdict(list)
 
-    def set(self, key: str, value: str, timestamp: int) -> None:
+    ___ set(self, key: str, value: str, timestamp: int) -> None:
         n = (timestamp, value)
         bisect.insort(self.m[key], n)
 
-    def get(self, key: str, timestamp: int) -> str:
-        if key not in self.m:
-            return ""
+    ___ get(self, key: str, timestamp: int) -> str:
+        __ key not in self.m:
+            r_ ""
 
         # find the largest v, s.t. v <= t
         lst = self.m[key]
         i = bisect.bisect(lst, (timestamp, ""))
-        if i < len(lst) and lst[i][0] == timestamp:
-            return lst[i][1]
+        __ i < le.(lst) and lst[i][0] __ timestamp:
+            r_ lst[i][1]
         i -= 1
-        if i >= 0:
-            return lst[i][1]
+        __ i >= 0:
+            r_ lst[i][1]
             
-        return ""
+        r_ ""
 
 
 # Your TimeMap object will be instantiated and called as such:

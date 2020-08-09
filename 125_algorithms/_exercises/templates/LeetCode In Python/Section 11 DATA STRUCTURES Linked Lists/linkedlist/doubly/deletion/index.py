@@ -5,7 +5,7 @@
 
 class Node:
 
-    def __init__(self, data):
+    ___ __init__(self, data
         self.data = data
         self.prev = None
         self.next = None
@@ -14,39 +14,39 @@ class Node:
 # Linked List class
 class LinkedList:
 
-    def __init__(self):
+    ___ __init__(self
         self.head = None
 
-    def createList(self, arr):
+    ___ createList(self, arr
         start = self.head
-        n = len(arr)
+        n = le.(arr)
         # Declare newNode and temporary pointer
         temp = start
         i = 0
 
         # Iterate the loop until array length
-        while (i < n):
+        w___ (i < n
 
             # Create new node
             newNode = Node(arr[i])
 
-            if (i == 0):
+            __ (i __ 0
                 start = newNode
                 newNode.prev = start
                 temp = start
 
-            else:
+            ____
                 temp.next = newNode
                 newNode.prev = temp
                 temp = temp.next
             i = i + 1
         self.head = start
-        return start
+        r_ start
 
-    def printList(self):
+    ___ printList(self
         temp = self.head
         linked_list = ""
-        while(temp):
+        w___(temp
             linked_list += (str(temp.data) + " ")
             temp = temp.next
         print(linked_list)
@@ -54,7 +54,7 @@ class LinkedList:
     # Function to count nunmber of
     # elements in the list
 
-    def countList(self):
+    ___ countList(self
 
         # Declare temp pointer to
         # traverse the list
@@ -64,36 +64,36 @@ class LinkedList:
         count = 0
 
         # Iterate the list and increment the count
-        while (temp is not None):
+        w___ (temp is not None
             temp = temp.next
             count = count + 1
 
-        return count
+        r_ count
 
     # we will consider that the index begin at 1
-    def deleteAtLocation(self, index):
+    ___ deleteAtLocation(self, index
       temp = self.head
 
       count = self.countList()
 
-      if(count < index):
-        return temp
+      __(count < index
+        r_ temp
 
-      if(index == 1):
+      __(index __ 1
         temp = temp.next
         self.head = temp
-        return self.head
+        r_ self.head
 
-      if(count == index):
-        while(temp.next is not None and temp.next.next is not None):
+      __(count __ index
+        w___(temp.next is not None and temp.next.next is not None
           temp = temp.next
          # 1 => 2 => 3 => 4
         temp.next = None
-        return self.head
+        r_ self.head
       
 
       i = 1 
-      while(i<index-1):
+      w___(i<index-1
         temp = temp.next
         i+=1
       
@@ -107,7 +107,7 @@ class LinkedList:
       nextNode.prev = prevNode
       prevNode.next = nextNode
 
-      return self.head
+      r_ self.head
 
         
 # create an empty list

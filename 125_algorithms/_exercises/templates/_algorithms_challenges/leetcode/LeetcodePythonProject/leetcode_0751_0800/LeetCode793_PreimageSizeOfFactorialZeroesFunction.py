@@ -3,23 +3,23 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def preimageSizeFZF(self, K):
+class Solution(object
+    ___ preimageSizeFZF(self, K
         """
         :type K: int
         :rtype: int
         """
         dp = [0]*13
         dp[0] = 1
-        for i in range(1, 13):
+        for i in range(1, 13
             dp[i] = dp[i-1]*5+1
-        for i in range(12, -1, -1):
-            if K//dp[i] == 5:
-                return 0
+        for i in range(12, -1, -1
+            __ K//dp[i] __ 5:
+                r_ 0
             K = K%dp[i]
-        return 5
+        r_ 5
     
-    def test(self):
+    ___ test(self
         testCases = [
             0,
             5,
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -3,8 +3,8 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def exclusiveTime(self, n, logs):
+class Solution(object
+    ___ exclusiveTime(self, n, logs
         """
         :type n: int
         :type logs: List[str]
@@ -15,17 +15,17 @@ class Solution(object):
         prevTime = 0
         for log in logs:
             arr = log.split(':')
-            if stack:
+            __ stack:
                 res[stack[-1]] += int(arr[2])-prevTime
             prevTime = int(arr[2])
-            if arr[1] == 'start':
+            __ arr[1] __ 'start':
                 stack.append(int(arr[0]))
-            else:
+            ____
                 res[stack.pop()] += 1
                 prevTime += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 2,
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,6 +1,6 @@
 # Python 2.7
 
-def compress_string(string):
+___ compress_string(string
     answer = []
     value_dict = {
         ' ': '11',             'e': '101',
@@ -30,11 +30,11 @@ def compress_string(string):
 
     # Split into chunks of 8
     chunks = []
-    for byte in range(len(eight_bit)):
-        if len(eight_bit) > 0 and len(eight_bit) < 8:
-            while len(eight_bit) < 8:
+    for byte in range(le.(eight_bit)):
+        __ le.(eight_bit) > 0 and le.(eight_bit) < 8:
+            w___ le.(eight_bit) < 8:
                 eight_bit += '0'
-        while len(eight_bit) > 7:
+        w___ le.(eight_bit) > 7:
             byte = eight_bit[:8]
             chunks.append(byte)
             eight_bit = eight_bit[8:]
@@ -44,7 +44,7 @@ def compress_string(string):
     for chunk in chunks:
         chunk = int(chunk, 2)
         encoded_value = hex(chunk)[2:].upper() #[2:] to remove the '0x'
-        if len(encoded_value) == 1:
+        __ le.(encoded_value) __ 1:
             encoded_value = '0' + encoded_value
         answer.append(encoded_value)
     print(' '.join(answer))

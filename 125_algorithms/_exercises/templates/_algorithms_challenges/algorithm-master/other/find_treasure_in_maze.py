@@ -28,7 +28,7 @@ Testing:
 ...     (['aX.S', 'bXAB', 'cXCD', 'dXGX'], False),
 ...     (['SbAdX.', 'a.BD.G', 'cBCdaX'], True),
 ...     (['S.Aa.X.', 'a.Xc.C.', 'b.X..DG', '.cB..Xd'], True),
-... ):
+...
 ...     res = s.find_treasure_in_maze(_in)
 ...     if res != _out: print(_in, res)
 ...     gotcha.append(res == _out)
@@ -45,16 +45,16 @@ class Solution:
     DOORS = 'ABCDE'
     KEYS = 'abcde'
 
-    def find_treasure_in_maze(self, maze):
+    ___ find_treasure_in_maze(self, maze
         """
         :type maze: list[str]
         :rtype: bool
         """
-        if not maze or not maze[0]:
-            return False
+        __ not maze or not maze[0]:
+            r_ False
 
-        m, n = len(maze), len(maze[0])
-        k = len(self.DOORS)
+        m, n = le.(maze), le.(maze[0])
+        k = le.(self.DOORS)
         keys = [0] * k  # all keys count
         has_gold = False
 
@@ -63,26 +63,26 @@ class Solution:
         holds = [0] * k  # keys meet when bfs
         visited = set()  # visited cell when bfs
 
-        for x in range(m):
-            for y in range(n):
-                if maze[x][y] == self.START:
+        for x in range(m
+            for y in range(n
+                __ maze[x][y] __ self.START:
                     queue.append((x, y))
-                elif maze[x][y] == self.GOLD:
+                ____ maze[x][y] __ self.GOLD:
                     has_gold = True
-                elif maze[x][y] in self.KEYS:
+                ____ maze[x][y] in self.KEYS:
                     i = ord(maze[x][y]) - ord('a')
                     keys[i] += 1
 
-        if not has_gold or not queue:
-            return False
+        __ not has_gold or not queue:
+            r_ False
 
-        while queue or self.is_possible(maze, keys, holds, doors):
-            if self.bfs(maze, queue, keys, holds, doors, visited):
-                return True
+        w___ queue or self.is_possible(maze, keys, holds, doors
+            __ self.bfs(maze, queue, keys, holds, doors, visited
+                r_ True
 
-        return False
+        r_ False
 
-    def bfs(self, maze, queue, keys, holds, doors, visited):
+    ___ bfs(self, maze, queue, keys, holds, doors, visited
         """
         return True if got gold, otherwise False
 
@@ -94,31 +94,31 @@ class Solution:
         :type visited: set[tuple[int]]
         :rtype: bool
         """
-        m, n = len(maze), len(maze[0])
+        m, n = le.(maze), le.(maze[0])
 
         for x, y in queue:
             for dx, dy in (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
-            ):
+
                 _x = x + dx
                 _y = y + dy
 
-                if not (0 <= _x < m and 0 <= _y < n):
+                __ not (0 <= _x < m and 0 <= _y < n
                     continue
-                if (_x, _y) in visited or maze[_x][_y] == self.OBSTACLE:
+                __ (_x, _y) in visited or maze[_x][_y] __ self.OBSTACLE:
                     continue
-                if maze[_x][_y] == self.GOLD:
-                    return True
+                __ maze[_x][_y] __ self.GOLD:
+                    r_ True
 
-                if maze[_x][_y] in self.DOORS:
+                __ maze[_x][_y] in self.DOORS:
                     i = ord(maze[_x][_y]) - ord('A')
-                    if holds[i] < keys[i]:
+                    __ holds[i] < keys[i]:
                         doors[i] = (_x, _y)
                         continue
                     doors[i] = None
 
-                if maze[_x][_y] in self.KEYS:
+                __ maze[_x][_y] in self.KEYS:
                     i = ord(maze[_x][_y]) - ord('a')
                     holds[i] += 1
 
@@ -126,9 +126,9 @@ class Solution:
                 queue.append((_x, _y))
 
         queue.clear()
-        return False
+        r_ False
 
-    def is_possible(self, maze, keys, holds, doors):
+    ___ is_possible(self, maze, keys, holds, doors
         """
         :type maze: list[str]
         :type keys: list[int]
@@ -137,12 +137,12 @@ class Solution:
         :rtype: bool
         """
         for door in doors:
-            if not door:
+            __ not door:
                 continue
 
             x, y = door
             i = ord(maze[x][y]) - ord('A')
-            if holds[i] >= keys[i]:
-                return True
+            __ holds[i] >= keys[i]:
+                r_ True
 
-        return False
+        r_ False

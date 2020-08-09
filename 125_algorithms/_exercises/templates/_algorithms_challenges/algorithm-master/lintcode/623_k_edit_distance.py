@@ -1,21 +1,21 @@
 class TrieNode:
-    def __init__(self):
+    ___ __init__(self
         self.end_of = None
         self.children = {}
 
 
 class Trie:
-    def __init__(self):
+    ___ __init__(self
         self.root = TrieNode()
 
-    def put(self, word):
-        if not isinstance(word, str):
-            return
+    ___ put(self, word
+        __ not isinstance(word, str
+            r_
 
         node = self.root
 
         for c in word:
-            if c not in node.children:
+            __ c not in node.children:
                 node.children[c] = TrieNode()
 
             node = node.children[c]
@@ -24,7 +24,7 @@ class Trie:
 
 
 class Solution:
-    def kDistance(self, words, target, k):
+    ___ kDistance(self, words, target, k
         """
         :type words: list[str]
         :type target: str
@@ -37,16 +37,16 @@ class Solution:
             trie.put(word)
 
         ans = []
-        dp = [i for i in range(len(target) + 1)]
+        dp = [i for i in range(le.(target) + 1)]
 
         self.dfs(trie.root, k, target, ans, dp)
 
-        return ans
+        r_ ans
 
-    def dfs(self, node, k, target, ans, pre):
-        n = len(target)
+    ___ dfs(self, node, k, target, ans, pre
+        n = le.(target)
 
-        if node.end_of is not None and pre[n] <= k:
+        __ node.end_of is not None and pre[n] <= k:
             ans.append(node.end_of)
 
         dp = [0] * (n + 1)
@@ -54,14 +54,14 @@ class Solution:
         for c in node.children:
             dp[0] = pre[0] + 1
 
-            for i in range(1, n + 1):
-                if target[i - 1] == c:
+            for i in range(1, n + 1
+                __ target[i - 1] __ c:
                     dp[i] = min(
                         dp[i - 1] + 1,
                         pre[i] + 1,
                         pre[i - 1]
                     )
-                else:
+                ____
                     dp[i] = min(
                         dp[i - 1] + 1,
                         pre[i] + 1,

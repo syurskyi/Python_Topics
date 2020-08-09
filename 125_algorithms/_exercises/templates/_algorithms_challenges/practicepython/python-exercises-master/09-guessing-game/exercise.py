@@ -1,24 +1,24 @@
 #! /urs/bin/env python
-import random
+______ random
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     number = random.randint(0,9)
     attempts = 0
 
-    while True:
+    w___ True:
         player = (raw_input('Guess the number from 0 to 9: '))
-        if player == 'exit':
+        __ player __ 'exit':
             break
         player = int(player)
         attempts+=1
 
-        if player == number:
+        __ player __ number:
             print('Conrates! You guessed!\n')
             break
-        elif player != number:
-            if number > player:
+        ____ player != number:
+            __ number > player:
                 print('To low!\n')
-            else:
+            ____
                 print('To high!\n')
 
 

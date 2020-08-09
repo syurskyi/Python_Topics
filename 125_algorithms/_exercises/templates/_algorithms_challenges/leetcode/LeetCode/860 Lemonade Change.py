@@ -52,26 +52,26 @@ bills[i] will be either 5, 10, or 20.
 
 
 class Solution:
-    def lemonadeChange(self, bills: List[int]) -> bool:
+    ___ lemonadeChange(self, bills: List[int]) -> bool:
         """
         count
         """
         five, ten, twenty = 0, 0, 0
         for b in bills:
-            if b == 5:
+            __ b __ 5:
                 five += 1
-            elif b == 10:
-                if five < 1:
-                    return False
+            ____ b __ 10:
+                __ five < 1:
+                    r_ False
                 five -= 1
                 ten += 1
-            else:  # 20
-                if ten >= 1 and five >= 1:
+            ____  # 20
+                __ ten >= 1 and five >= 1:
                     ten -= 1  # ten first
                     five -= 1
-                elif five >= 3:
+                ____ five >= 3:
                     five -= 3
-                else:
-                    return False
+                ____
+                    r_ False
 
-        return True
+        r_ True

@@ -8,45 +8,45 @@ Please optimize your algorithm to use less time and space. The input size may be
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def lexicalOrder(self, n):
+class Solution(object
+    ___ lexicalOrder(self, n
         """
         :type n: int
         :rtype: List[int]
         """
-        def gen():
+        ___ gen(
             i = 1
-            for _ in xrange(n):  # erroneous for while i <= n:
+            for _ in xrange(n  # erroneous for w___ i <= n:
                 yield i
-                if i * 10 <= n:
+                __ i * 10 <= n:
                     i *= 10  # * 10
-                elif i % 10 != 9 and i + 1 <= n:
+                ____ i % 10 != 9 and i + 1 <= n:
                     i += 1  # for current digit
-                else:
-                    while i % 10 == 9 or i + 1 > n:
+                ____
+                    w___ i % 10 __ 9 or i + 1 > n:
                         i /= 10
                     i += 1
 
-        return list(gen())
+        r_ list(gen())
 
-    def lexicalOrderError(self, n):
+    ___ lexicalOrderError(self, n
         """
         :type n: int
         :rtype: List[int]
         """
         ret = []
-        for i in xrange(1, 10):
+        for i in xrange(1, 10
             sig = 1
-            while i * sig <= n:
+            w___ i * sig <= n:
                 ret.extend(range(
                     i * sig,
                     min((1+i)*sig-1, n)+1),
                 )
                 sig *= 10
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().lexicalOrder(30) == [1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2, 20, 21, 22, 23, 24, 25, 26, 27,
+__ __name__ __ "__main__":
+    assert Solution().lexicalOrder(30) __ [1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2, 20, 21, 22, 23, 24, 25, 26, 27,
                                            28, 29, 3, 30, 4, 5, 6, 7, 8, 9]

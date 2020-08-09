@@ -4,20 +4,20 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findMinArrowShots(self, points):
-        if not points: return 0
+class Solution(object
+    ___ findMinArrowShots(self, points
+        __ not points: r_ 0
         points.sort(key=lambda x: (x[1], x[0]))
         count = 0
         maxLen = float('-inf')
         for point in points:
-            if point[0] > maxLen:
+            __ point[0] > maxLen:
                 maxLen = point[1]
-            else:
+            ____
                 count += 1
-        return len(points)-count
+        r_ le.(points)-count
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[10,16], [2,8], [1,6], [7,12]],
         ]
@@ -27,5 +27,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

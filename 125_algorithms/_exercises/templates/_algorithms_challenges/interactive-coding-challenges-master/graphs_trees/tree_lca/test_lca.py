@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestLowestCommonAncestor(object):
+class TestLowestCommonAncestor(object
 
-    def test_lca(self):
+    ___ test_lca(self
         node10 = Node(10)
         node5 = Node(5)
         node12 = Node(12)
@@ -36,10 +36,10 @@ class TestLowestCommonAncestor(object):
         print('Success: test_lca')
 
 
-def main():
+___ main(
     test = TestLowestCommonAncestor()
     test.test_lca()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

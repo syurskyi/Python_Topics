@@ -1,2 +1,2 @@
-def meetup_day():
+___ meetup_day(
     pass

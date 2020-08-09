@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestHanoi(object):
+class TestHanoi(object
 
-    def test_hanoi(self):
+    ___ test_hanoi(self
         hanoi = Hanoi()
         num_disks = 3
         src = Stack()
@@ -23,19 +23,19 @@ class TestHanoi(object):
         assert_equal(dest.pop(), 5)
 
         print('Test: 2 or more disks')
-        for disk_index in range(num_disks, -1, -1):
+        for disk_index in range(num_disks, -1, -1
             src.push(disk_index)
         hanoi.move_disks(num_disks, src, dest, buff)
-        for disk_index in range(0, num_disks):
+        for disk_index in range(0, num_disks
             assert_equal(dest.pop(), disk_index)
 
         print('Success: test_hanoi')
 
 
-def main():
+___ main(
     test = TestHanoi()
     test.test_hanoi()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

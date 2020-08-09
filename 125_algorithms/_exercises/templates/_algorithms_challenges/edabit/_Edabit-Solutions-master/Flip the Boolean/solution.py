@@ -1,5 +1,5 @@
-def reverse(arg):
-    if type(arg) != bool:
-        return "boolean expected"
-    else:
-        return not arg
+___ reverse(arg
+    __ type(arg) != bool:
+        r_ "boolean expected"
+    ____
+        r_ not arg

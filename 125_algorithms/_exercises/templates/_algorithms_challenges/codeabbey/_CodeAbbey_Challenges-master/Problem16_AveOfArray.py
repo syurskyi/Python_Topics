@@ -4,9 +4,9 @@ infile.readline()
 data = infile.readlines()
 
 
-def avg(num):
+___ avg(num
     total = sum(num)
-    ave = total/len(num)
+    ave = total/le.(num)
     print(round(ave),end=" ")
     
 

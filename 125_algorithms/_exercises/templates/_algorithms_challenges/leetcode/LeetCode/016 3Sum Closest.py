@@ -8,7 +8,7 @@ the sum of the three integers. You may assume that each input would have exactly
 """
 __author__ = 'Danyang'
 class Solution:
-    def threeSumClosest(self, num, target):
+    ___ threeSumClosest(self, num, target
         """
         Three pointers scanning algorithm
         Similar to 014 3Sum
@@ -21,22 +21,22 @@ class Solution:
         num.sort()
         min_summation = 0
 
-        for i, val in enumerate(num):
+        for i, val in enumerate(num
             j = i+1
-            k = len(num)-1
-            while j<k:
+            k = le.(num)-1
+            w___ j<k:
                 lst = [val, num[j], num[k]]
-                if min_distance>abs(target-sum(lst)):
+                __ min_distance>abs(target-sum(lst)):
                     min_summation = sum(lst)
-                    if sum(lst)==target:
-                        return min_summation
+                    __ sum(lst)__target:
+                        r_ min_summation
                     min_distance = abs(target-min_summation)
-                elif sum(lst)>target:
+                ____ sum(lst)>target:
                     k -= 1
-                else:
+                ____
                     j += 1
-        return min_summation
+        r_ min_summation
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().threeSumClosest([1, 1, 1, 1], 0)
 

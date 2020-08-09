@@ -3,13 +3,13 @@ Created on Feb 27, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def canMeasureWater(self, x, y, z):
-        if x+y<z: return False
-        if x == z or y == z or x+y == z:
-            return True
-        while y != 0:
+class Solution(object
+    ___ canMeasureWater(self, x, y, z
+        __ x+y<z: r_ False
+        __ x __ z or y __ z or x+y __ z:
+            r_ True
+        w___ y != 0:
             tmp = y
             y = x%y
             x = tmp
-        return bool(z%x==0)
+        r_ bool(z%x__0)

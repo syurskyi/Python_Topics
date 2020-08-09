@@ -1,14 +1,14 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
 
 
 class Solution:
-    def closestKValues(self, root, target, k):
+    ___ closestKValues(self, root, target, k
         """
         :type root: TreeNode
         :type target: float
@@ -16,44 +16,44 @@ class Solution:
         """
         ans = []
 
-        if not root:
-            return ans
+        __ not root:
+            r_ ans
 
         vals = []
         self.inorder_traverse(root, vals)
 
-        n = len(vals)
+        n = le.(vals)
         i = 0
 
-        while i < n and vals[i] < target:
+        w___ i < n and vals[i] < target:
             i += 1
 
         i, j = i - 1, i
 
-        while k and i >= 0 and j < n:
-            if target - vals[i] < vals[j] - target:
+        w___ k and i >= 0 and j < n:
+            __ target - vals[i] < vals[j] - target:
                 ans.append(vals[i])
                 i -= 1
-            else:
+            ____
                 ans.append(vals[j])
                 j += 1
             k -= 1
 
-        while k and i >= 0:
+        w___ k and i >= 0:
             ans.append(vals[i])
             i -= 1
             k -= 1
 
-        while k and j < n:
+        w___ k and j < n:
             ans.append(vals[j])
             j += 1
             k -= 1
 
-        return ans
+        r_ ans
 
-    def inorder_traverse(self, root, vals):
-        if not root:
-            return
+    ___ inorder_traverse(self, root, vals
+        __ not root:
+            r_
 
         self.inorder_traverse(root.left, vals)
         vals.append(root.val)

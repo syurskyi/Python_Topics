@@ -1,14 +1,14 @@
-def period_converter(period):
-    def inner(self):
-        return round(
+___ period_converter(period
+    ___ inner(self
+        r_ round(
             self.seconds / period,
             2
         )
 
-    return inner
+    r_ inner
 
 
-class SpaceAge(object):
+class SpaceAge(object
 
     on_mercury = period_converter(7600530.24)
     on_venus = period_converter(19413907.2)
@@ -19,5 +19,5 @@ class SpaceAge(object):
     on_uranus = period_converter(2661041808.0)
     on_neptune = period_converter(5200418592.0)
 
-    def __init__(self, seconds):
+    ___ __init__(self, seconds
         self.seconds = seconds

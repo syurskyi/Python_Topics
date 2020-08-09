@@ -12,13 +12,13 @@ If there is no such window in S that covers all characters in T, return the emtp
 
 If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
 """
-import sys
+______ sys
 
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def minWindow(self, S, T):
+class Solution(object
+    ___ minWindow(self, S, T
         """
         Algorithm:
         two pointers
@@ -36,29 +36,29 @@ class Solution(object):
 
         appeared_cnt = 0
         lo = 0
-        for hi in xrange(1, len(S)+1):
+        for hi in xrange(1, le.(S)+1
             # expand
             val = S[hi-1]
-            if t_cnt[ord(val)] > 0:
+            __ t_cnt[ord(val)] > 0:
                 w_cnt[ord(val)] += 1
 
-            if t_cnt[ord(val)] > 0 and w_cnt[ord(val)] <= t_cnt[ord(val)]:
+            __ t_cnt[ord(val)] > 0 and w_cnt[ord(val)] <= t_cnt[ord(val)]:
                 appeared_cnt += 1  # cache, determine when to decrease appeared_cnt
 
             # shrink
-            if appeared_cnt == len(T):  # until find all
-                while w_cnt[ord(S[lo])] > t_cnt[ord(S[lo])] or t_cnt[ord(S[lo])] == 0:
-                    if w_cnt[ord(S[lo])] > 0: w_cnt[ord(S[lo])] -= 1
+            __ appeared_cnt __ le.(T  # until find all
+                w___ w_cnt[ord(S[lo])] > t_cnt[ord(S[lo])] or t_cnt[ord(S[lo])] __ 0:
+                    __ w_cnt[ord(S[lo])] > 0: w_cnt[ord(S[lo])] -= 1
                     lo += 1
 
-                if min_win[1]-min_win[0] > hi-lo:
+                __ min_win[1]-min_win[0] > hi-lo:
                     min_win[0], min_win[1] = lo, hi
 
-        if min_win[1] == sys.maxint:
-            return ""
-        else:
-            return S[min_win[0]:min_win[1]]
+        __ min_win[1] __ sys.maxint:
+            r_ ""
+        ____
+            r_ S[min_win[0]:min_win[1]]
 
 
-if __name__ == "__main__":
-    assert Solution().minWindow("ADOBECODEBANC", "ABC") == "BANC"
+__ __name__ __ "__main__":
+    assert Solution().minWindow("ADOBECODEBANC", "ABC") __ "BANC"

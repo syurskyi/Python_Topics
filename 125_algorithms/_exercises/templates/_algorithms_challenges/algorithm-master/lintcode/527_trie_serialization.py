@@ -1,7 +1,7 @@
 """
 Definition of TrieNode:
 class TrieNode:
-    def __init__(self):
+    ___ __init__(self
         # <key, value>: <Character, TrieNode>
         self.children = collections.OrderedDict()
 """
@@ -29,13 +29,13 @@ class Solution:
           >
         >
     '''
-    def serialize(self, root):
-        if not root:
-            return ''
+    ___ serialize(self, root
+        __ not root:
+            r_ ''
         data = ''
-        for key, node in root.children.items():
+        for key, node in root.children.items(
             data += key + self.serialize(node)
-        return '<%s>' % data
+        r_ '<%s>' % data
 
     '''
     @param data: A string serialized by your serialize method.
@@ -45,21 +45,21 @@ class Solution:
     designed by yourself, and deserialize it here as you serialize it in
     "serialize" method.
     '''
-    def deserialize(self, data):
-        if not data \
+    ___ deserialize(self, data
+        __ not data \
                 or data[0] != '<' \
                 or data[-1] != '>' \
-                or len(data) < 1:
-            return
+                or le.(data) < 1:
+            r_
         root = TrieNode()
         current = root
         queue = []
         for char in data:
-            if char == '<':
+            __ char __ '<':
                 queue.append(current)
-            elif char == '>':
+            ____ char __ '>':
                 queue.pop()
-            else:
+            ____
                 current = TrieNode()
                 queue[-1].children[char] = current
-        return root
+        r_ root

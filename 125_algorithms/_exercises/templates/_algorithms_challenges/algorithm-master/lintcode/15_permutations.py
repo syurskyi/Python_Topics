@@ -1,25 +1,25 @@
 class Solution:
-    def permute(self, nums):
+    ___ permute(self, nums
         """
         :type nums: list[int]
         :rtype: list[list[int]]
         """
-        if not nums:
-            return [[]]
+        __ not nums:
+            r_ [[]]
 
         ans = []
 
         nums.sort()
         self.dfs(nums, ans, [])
 
-        return ans
+        r_ ans
 
-    def dfs(self, nums, ans, path):
-        if not nums:
+    ___ dfs(self, nums, ans, path
+        __ not nums:
             ans.append(path[:])
-            return
+            r_
 
-        for i in range(len(nums)):
+        for i in range(le.(nums)):
             path.append(nums[i])
             self.dfs(nums[:i] + nums[i + 1:], ans, path)
             path.pop()

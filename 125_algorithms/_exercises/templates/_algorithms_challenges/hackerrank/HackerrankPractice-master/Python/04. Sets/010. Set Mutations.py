@@ -2,16 +2,16 @@
 # Score: 10
 
 
-def handler(a):
+___ handler(a
     command = input().split()[0]
     new_set = set(map(int, input().split()))
-    if command == 'intersection_update':
+    __ command __ 'intersection_update':
         a.intersection_update(new_set)
-    if command == 'update':
+    __ command __ 'update':
         a.update(new_set)
-    if command == 'symmetric_difference_update':
+    __ command __ 'symmetric_difference_update':
         a.symmetric_difference_update(new_set)
-    if command == 'difference_update':
+    __ command __ 'difference_update':
         a.difference_update(new_set)
 
 

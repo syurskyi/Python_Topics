@@ -1,10 +1,10 @@
-def get_digits(number):
-    return list(map(int, list(str(number))))
+___ get_digits(number
+    r_ list(map(int, list(str(number))))
 
 
-def is_armstrong(number):
+___ is_armstrong(number
     digits = get_digits(number)
-    num_digits = len(digits)
+    num_digits = le.(digits)
     digits_raised_to_num_digits = [digit ** num_digits for digit in digits]
 
-    return number == sum(digits_raised_to_num_digits)
+    r_ number __ sum(digits_raised_to_num_digits)

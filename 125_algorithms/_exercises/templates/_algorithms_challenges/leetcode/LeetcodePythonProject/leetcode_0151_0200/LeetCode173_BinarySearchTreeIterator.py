@@ -5,40 +5,40 @@ Created on Feb 14, 2017
 '''
 
 # Definition for a  binary tree node
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class BSTIterator(object):
-    def __init__(self, root):
+class BSTIterator(object
+    ___ __init__(self, root
         """
         :type root: TreeNode
         """
         self.stack = []
-        if root:
+        __ root:
             self.stack.append(root)
-            while root.left:
+            w___ root.left:
                 root = root.left
                 self.stack.append(root)
 
-    def hasNext(self):
+    ___ hasNext(self
         """
         :rtype: bool
         """
-        return len(self.stack) != 0
+        r_ le.(self.stack) != 0
     
-    def next(self):
+    ___ next(self
         """
         :rtype: int
         """
         node = self.stack.pop()
         val = node.val
-        if node.right:
+        __ node.right:
             node = node.right
             self.stack.append(node)
-            while node.left:
+            w___ node.left:
                 node = node.left
                 self.stack.append(node)
-        return val
+        r_ val

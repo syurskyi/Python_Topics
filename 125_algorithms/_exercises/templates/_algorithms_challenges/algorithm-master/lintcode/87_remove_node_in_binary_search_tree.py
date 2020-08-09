@@ -5,7 +5,7 @@ https://discuss.leetcode.com/topic/65792/recursive-easy-to-understand-java-solut
 
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -17,32 +17,32 @@ class Solution:
     @param: target: Remove the node with given value.
     @return: The root of the binary search tree after removal.
     """
-    def removeNode(self, root, target):
-        if not root:
-            return root
+    ___ removeNode(self, root, target
+        __ not root:
+            r_ root
 
-        if root.val == target:
-            if not root.left:
-                return root.right
-            if not root.right:
-                return root.left
+        __ root.val __ target:
+            __ not root.left:
+                r_ root.right
+            __ not root.right:
+                r_ root.left
 
             min_node = self.find_min(root.right)
             root.val = min_node.val
             root.right = self.removeNode(root.right, root.val)
 
-            return root
+            r_ root
 
-        if target < root.val:
+        __ target < root.val:
             root.left = self.removeNode(root.left, target)
-        else:
+        ____
             root.right = self.removeNode(root.right, target)
 
-        return root
+        r_ root
 
-    def find_min(self, node):
-        if not node:
-            return node
-        while node.left:
+    ___ find_min(self, node
+        __ not node:
+            r_ node
+        w___ node.left:
             node = node.left
-        return node
+        r_ node

@@ -16,12 +16,12 @@ Note:
 -10000 <= A[i] <= 10000
 2 <= K <= 10000
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def subarraysDivByK_2(self, A: List[int], K: int) -> int:
+    ___ subarraysDivByK_2(self, A: List[int], K: int) -> int:
         """
         count the prefix sum mod K
         nC2
@@ -35,12 +35,12 @@ class Solution:
             counter[prefix_sum] += 1
 
         ret = 0
-        for v in counter.values():
+        for v in counter.values(
             ret += v * (v-1) // 2
 
-        return ret
+        r_ ret
 
-    def subarraysDivByK(self, A: List[int], K: int) -> int:
+    ___ subarraysDivByK(self, A: List[int], K: int) -> int:
         """
         Prefix sum
         O(N^2)
@@ -59,4 +59,4 @@ class Solution:
             ret += counter[prefix_sum]  # count of previously matching prefix sum
             counter[prefix_sum] += 1
 
-        return ret
+        r_ ret

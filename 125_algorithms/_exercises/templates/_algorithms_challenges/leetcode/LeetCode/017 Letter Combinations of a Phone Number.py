@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 class Solution:
     digit2letters = {
         '2': "abc",
-        '3': "def",
+        '3': "___",
         '4': "ghi",
         '5': "jkl",
         '6': "mno",
@@ -19,7 +19,7 @@ class Solution:
         '9': "wxyz"
     }
 
-    def letterCombinations(self, digits):
+    ___ letterCombinations(self, digits
         """
         DFS
         :param digits: str
@@ -27,16 +27,16 @@ class Solution:
         """
         result = []
         self.dfs_traverse(digits, "", result)
-        return result
+        r_ result
 
-    def dfs_traverse(self, string_seq, current, result):
-        if not string_seq:
+    ___ dfs_traverse(self, string_seq, current, result
+        __ not string_seq:
             result.append(current)
-            return
+            r_
 
         for letter in self.digit2letters[string_seq[0]]:
             self.dfs_traverse(string_seq[1:], current+letter, result)
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().letterCombinations("23")

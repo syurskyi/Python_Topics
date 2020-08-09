@@ -1,2 +1,2 @@
-def flatten():
+___ flatten(
     pass

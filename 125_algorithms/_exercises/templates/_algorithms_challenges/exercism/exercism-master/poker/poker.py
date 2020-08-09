@@ -10,80 +10,80 @@ HIGH_CARD = 0
 
 
 class Poker:
-    def __init__(self, hands):
+    ___ __init__(self, hands
         self.hands = [Hand(hand) for hand in hands]
 
-    def best_hand(self):
-        return [hand.hand for hand, score in list(
-            self.scores().items()) if score == self.best_score()]
+    ___ best_hand(self
+        r_ [hand.hand for hand, score in list(
+            self.scores().items()) __ score __ self.best_score()]
 
-    def best_score(self):
-        return max(self.scores(), key=self.scores().get).score()
+    ___ best_score(self
+        r_ max(self.scores(), key=self.scores().get).score()
 
-    def scores(self):
-        return {hand: hand.score() for hand in self.hands}
+    ___ scores(self
+        r_ {hand: hand.score() for hand in self.hands}
 
 
 class Hand:
-    def __init__(self, hand):
+    ___ __init__(self, hand
         self.hand = hand
         self.cards = [Card(card) for card in hand]
         self.ranks = [card.rank for card in self.cards]
         self.suits = [card.suit for card in self.cards]
 
-    def score(self):
-        if self.straight_flush():
-            return STRAIGHT_FLUSH + self.high_card()
-        elif self.four_of_a_kind():
-            return FOUR_OF_A_KIND + self.rank_of_card_with_highest_occurence()
-        elif self.full_house():
-            return FULL_HOUSE + self.rank_of_card_with_highest_occurence()
-        elif self.flush():
-            return FLUSH + self.high_card()
-        elif self.straight():
-            return STRAIGHT + self.high_card()
-        elif self.three_of_a_kind():
-            return THREE_OF_A_KIND + self.rank_of_card_with_highest_occurence()
-        elif self.two_pair():
-            return TWO_PAIR + self.high_card()
-        elif self.one_pair():
-            return ONE_PAIR + self.rank_of_card_with_highest_occurence()
-        else:
-            return self.high_card()
+    ___ score(self
+        __ self.straight_flush(
+            r_ STRAIGHT_FLUSH + self.high_card()
+        ____ self.four_of_a_kind(
+            r_ FOUR_OF_A_KIND + self.rank_of_card_with_highest_occurence()
+        ____ self.full_house(
+            r_ FULL_HOUSE + self.rank_of_card_with_highest_occurence()
+        ____ self.flush(
+            r_ FLUSH + self.high_card()
+        ____ self.straight(
+            r_ STRAIGHT + self.high_card()
+        ____ self.three_of_a_kind(
+            r_ THREE_OF_A_KIND + self.rank_of_card_with_highest_occurence()
+        ____ self.two_pair(
+            r_ TWO_PAIR + self.high_card()
+        ____ self.one_pair(
+            r_ ONE_PAIR + self.rank_of_card_with_highest_occurence()
+        ____
+            r_ self.high_card()
 
-    def straight_flush(self):
-        return self.straight() and self.flush()
+    ___ straight_flush(self
+        r_ self.straight() and self.flush()
 
-    def straight(self):
-        return (list(range(min(self.ranks), max(self.ranks) + 1)) ==
+    ___ straight(self
+        r_ (list(range(min(self.ranks), max(self.ranks) + 1)) __
                 sorted(self.ranks))
 
-    def flush(self):
-        return len(set(self.suits)) == 1
+    ___ flush(self
+        r_ le.(set(self.suits)) __ 1
 
-    def four_of_a_kind(self):
-        return max(self.rank_occurences().values()) == 4
+    ___ four_of_a_kind(self
+        r_ max(self.rank_occurences().values()) __ 4
 
-    def full_house(self):
-        return self.three_of_a_kind() and self.one_pair()
+    ___ full_house(self
+        r_ self.three_of_a_kind() and self.one_pair()
 
-    def three_of_a_kind(self):
-        return 3 in list(self.rank_occurences().values())
+    ___ three_of_a_kind(self
+        r_ 3 in list(self.rank_occurences().values())
 
-    def two_pair(self):
-        return 2 == list(self.rank_occurences().values()).count(2)
+    ___ two_pair(self
+        r_ 2 __ list(self.rank_occurences().values()).count(2)
 
-    def one_pair(self):
-        return 2 in list(self.rank_occurences().values())
+    ___ one_pair(self
+        r_ 2 in list(self.rank_occurences().values())
 
-    def high_card(self):
-        return max(self.ranks)
+    ___ high_card(self
+        r_ max(self.ranks)
 
-    def rank_occurences(self):
-        return {rank: self.ranks.count(rank) for rank in self.ranks}
+    ___ rank_occurences(self
+        r_ {rank: self.ranks.count(rank) for rank in self.ranks}
 
-    def rank_of_card_with_highest_occurence(self):
-        return max(self.rank_occurences(), key=self.rank_occurences().get)
+    ___ rank_of_card_with_highest_occurence(self
+        r_ max(self.rank_occurences(), key=self.rank_occurences().get)
 
 
 class Card:
@@ -93,19 +93,19 @@ class Card:
                   "K": 13,
                   "A": 14}
 
-    def __init__(self, inp):
+    ___ __init__(self, inp
         self.rank = self.numberify_face_cards(inp[0])
         self.suit = inp[1]
 
-    def __str__(self):
-        return str(self.rank) + self.suit
+    ___ __str__(self
+        r_ str(self.rank) + self.suit
 
     @classmethod
-    def numberify_face_cards(cls, rank):
-        if rank in list(cls.FACE_CARDS.keys()):
-            return cls.FACE_CARDS[rank]
-        return int(rank)
+    ___ numberify_face_cards(cls, rank
+        __ rank in list(cls.FACE_CARDS.keys()):
+            r_ cls.FACE_CARDS[rank]
+        r_ int(rank)
 
 
-def poker(inp):
-    return Poker(inp).best_hand()
+___ poker(inp
+    r_ Poker(inp).best_hand()

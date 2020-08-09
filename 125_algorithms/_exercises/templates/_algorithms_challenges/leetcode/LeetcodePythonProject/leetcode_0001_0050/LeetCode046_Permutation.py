@@ -3,27 +3,27 @@ Created on Jan 19, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def permute(self, nums):
+class Solution(object
+    ___ permute(self, nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
         res = []
-        if not nums: return res
+        __ not nums: r_ res
         self.dfs(nums, [], res)
-        return res
+        r_ res
     
-    def dfs(self, nums, curr, res):
-        if nums == []:
+    ___ dfs(self, nums, curr, res
+        __ nums __ []:
             res.append(list(curr))
-            return
-        for i, num in enumerate(nums):
+            r_
+        for i, num in enumerate(nums
             curr.append(num)
             self.dfs(nums[:i]+nums[i+1:], curr, res)
             curr.pop()
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 3]
         ]
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*15+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

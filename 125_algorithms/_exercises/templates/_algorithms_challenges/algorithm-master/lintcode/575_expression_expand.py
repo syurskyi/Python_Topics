@@ -1,28 +1,28 @@
 class Solution:
-    def expressionExpand(self, s):
+    ___ expressionExpand(self, s
         """
         :type s: str
         :rtype: str
         """
-        if not s:
-            return ''
+        __ not s:
+            r_ ''
 
         times = 0
         stack = []
 
         for c in s:
-            if c.isdigit():
+            __ c.isdigit(
                 times = times * 10 + int(c)
-            elif c == '[':
+            ____ c __ '[':
                 stack.append(times)
                 times = 0
-            elif c == ']':
+            ____ c __ ']':
                 part = []
-                while stack and isinstance(stack[-1], str):
+                w___ stack and isinstance(stack[-1], str
                     part.append(stack.pop())
-                cnt = int(stack.pop()) if stack else 1
+                cnt = int(stack.pop()) __ stack else 1
                 stack.append(cnt * ''.join(reversed(part)))
-            else:
+            ____
                 stack.append(c)
 
-        return ''.join(stack)
+        r_ ''.join(stack)

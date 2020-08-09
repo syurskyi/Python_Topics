@@ -1,37 +1,37 @@
 # -*- coding: utf-8 -*-
-from collections import Counter
-import unittest
+from collections ______ Counter
+______ unittest
 
-from parallel_letter_frequency import calculate
+from parallel_letter_frequency ______ calculate
 
 
-class ParallelLetterFrequencyTest(unittest.TestCase):
-    def test_one_letter(self):
+class ParallelLetterFrequencyTest(unittest.TestCase
+    ___ test_one_letter(self
         actual = calculate(['a'])
         expected = {'a': 1}
         self.assertDictEqual(actual, expected)
 
-    def test_case_insensitivity(self):
+    ___ test_case_insensitivity(self
         actual = calculate(['aA'])
         expected = {'a': 2}
         self.assertDictEqual(actual, expected)
 
-    def test_numbers(self):
+    ___ test_numbers(self
         actual = calculate(['012', '345', '6789'])
         expected = {}
         self.assertDictEqual(actual, expected)
 
-    def test_punctuations(self):
+    ___ test_punctuations(self
         actual = calculate(['[]\;,', './{}|', ':"<>?'])
         expected = {}
         self.assertDictEqual(actual, expected)
 
-    def test_whitespaces(self):
+    ___ test_whitespaces(self
         actual = calculate(['  ', '\t ', '\n\n'])
         expected = {}
         self.assertDictEqual(actual, expected)
 
-    def test_repeated_string_with_known_frequencies(self):
+    ___ test_repeated_string_with_known_frequencies(self
         letter_frequency = 3
         text_input = 'abc\n' * letter_frequency
         actual = calculate(text_input.split('\n'))
@@ -39,7 +39,7 @@ class ParallelLetterFrequencyTest(unittest.TestCase):
                     'c': letter_frequency}
         self.assertDictEqual(actual, expected)
 
-    def test_multiline_text(self):
+    ___ test_multiline_text(self
         text_input = "3 Quotes from Excerism Homepage:\n" + \
                      "\tOne moment you feel like you're\n" + \
                      "getting it. The next moment you're\n" + \
@@ -53,9 +53,9 @@ class ParallelLetterFrequencyTest(unittest.TestCase):
                      "expensive yak shave waiting to\n" + \
                      "happen."
         actual = calculate(text_input.split('\n'))
-        expected = Counter([x for x in text_input.lower() if x.isalpha()])
+        expected = Counter([x for x in text_input.lower() __ x.isalpha()])
         self.assertDictEqual(actual, expected)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

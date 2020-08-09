@@ -1,5 +1,5 @@
-import os
-import urllib.request
+______ os
+______ urllib.request
 
 # PREWORK
 DICTIONARY = os.path.join('/tmp', 'dictionary.txt')
@@ -12,7 +12,7 @@ LETTER_SCORES = {letter: score for score, letters in scrabble_scores
 
 # start coding
 
-def load_words():
+___ load_words(
     """load the words dictionary (DICTIONARY constant) into a list and return it"""
     try:
         d = open(DICTIONARY,'r')
@@ -22,26 +22,26 @@ def load_words():
     finally:
         d.close()
 
-    return result
+    r_ result
 
 
-def calc_word_value(word):
+___ calc_word_value(word
     """given a word calculate its value using LETTER_SCORES"""
     result = 0
     for l in word:
         lu = l.upper()
-        result += LETTER_SCORES[lu] if lu in LETTER_SCORES else 0
-    return result
+        result += LETTER_SCORES[lu] __ lu in LETTER_SCORES else 0
+    r_ result
 
 
-def max_word_value(words=None):
+___ max_word_value(words=None
     """given a list of words return the word with the maximum word value"""
-    if words is None or len(words) == 0:
+    __ words is None or le.(words) __ 0:
         raise ValueError()
     lst = {word:calc_word_value(word) for word in words}
     result = sorted(lst.items(),key=lambda x:-x[1])[0]
-    return result[0]
+    r_ result[0]
 
 #words = load_words()
 
-#print('word count %d' % len(words))
+#print('word count %d' % le.(words))

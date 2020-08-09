@@ -15,8 +15,8 @@ All inputs will be in lower-case.
 
 """
 
-class Solution(object):
-    def groupAnagrams(self, strs):
+class Solution(object
+    ___ groupAnagrams(self, strs
         """
         :type strs: List[str]
         :rtype: List[List[str]]
@@ -25,16 +25,16 @@ class Solution(object):
         res = []
         for s in strs:
             k = self.make_key(s)
-            if k not in d:
+            __ k not in d:
                 d[k] = [s]
-            else:
+            ____
                 d[k].append(s)
         for k in d:
             res.append(sorted(d[k]))
-        return res
+        r_ res
 
-    def make_key(self, s):
-        return ''.join(sorted(s))
+    ___ make_key(self, s
+        r_ ''.join(sorted(s))
 
 
 s = Solution()

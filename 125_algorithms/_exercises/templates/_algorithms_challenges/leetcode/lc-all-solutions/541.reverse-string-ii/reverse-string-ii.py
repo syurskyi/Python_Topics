@@ -1,5 +1,5 @@
-class Solution(object):
-  def reverseStr(self, s, k):
+class Solution(object
+  ___ reverseStr(self, s, k
     """
     :type s: str
     :type k: int
@@ -11,18 +11,18 @@ class Solution(object):
     b = ""
     ans = []
     for c in s:
-      if isFirst:
+      __ isFirst:
         a = c + a
-      else:
+      ____
         b += c
       cnt += 1
-      if cnt == k:
-        if isFirst:
+      __ cnt __ k:
+        __ isFirst:
           ans.append(a)
           a = ""
-        else:
+        ____
           ans.append(b)
           b = ""
         isFirst = not isFirst
         cnt = 0
-    return "".join(ans) + a + b
+    r_ "".join(ans) + a + b

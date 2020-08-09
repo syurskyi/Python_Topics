@@ -5,11 +5,11 @@ array. If it does not exist, return the maximum number. The time complexity
 must be in O(n).
 """
 __author__ = 'Danyang'
-import heapq
+______ heapq
 
 
 class Solution:
-    def thirdMax(self, nums):
+    ___ thirdMax(self, nums
         """
         It is an easy question but error prone:
           1. Choice of min heap or max heap: use min heap (not max heap) because
@@ -18,26 +18,26 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return None
+        __ not nums:
+            r_ None
 
         h = []
-        for e in set(nums):
-            if len(h) < 3:
+        for e in set(nums
+            __ le.(h) < 3:
                 heapq.heappush(h, e)
-            elif len(h) == 3 and e > h[0]:
+            ____ le.(h) __ 3 and e > h[0]:
                 heapq.heappushpop(h, e)
 
-        assert len(h) <= 3
-        if len(h) == 3:
+        assert le.(h) <= 3
+        __ le.(h) __ 3:
             ret = min(h)
-        else:
+        ____
             ret = max(h)
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().thirdMax([1, 2, 3, 4]) == 2
-    assert Solution().thirdMax([4, 3, 2, 1]) == 2
-    assert Solution().thirdMax([2, 2, 3, 1]) == 1
-    assert Solution().thirdMax([4, 3]) == 4
+__ __name__ __ "__main__":
+    assert Solution().thirdMax([1, 2, 3, 4]) __ 2
+    assert Solution().thirdMax([4, 3, 2, 1]) __ 2
+    assert Solution().thirdMax([2, 2, 3, 1]) __ 1
+    assert Solution().thirdMax([4, 3]) __ 4

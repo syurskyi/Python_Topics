@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from calculator import simple_calculator
+from calculator ______ simple_calculator
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -8,8 +8,8 @@ from calculator import simple_calculator
     ('5 + 11', 16),
     ('12 + 18', 30),
 ])
-def test_sum(arg, expected):
-    assert simple_calculator(arg) == expected
+___ test_sum(arg, expected
+    assert simple_calculator(arg) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -17,8 +17,8 @@ def test_sum(arg, expected):
     ('16 - 11', 5),
     ('12 - 18', -6),
 ])
-def test_subtract(arg, expected):
-    assert simple_calculator(arg) == expected
+___ test_subtract(arg, expected
+    assert simple_calculator(arg) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -26,8 +26,8 @@ def test_subtract(arg, expected):
     ('-5 * -11', 55),
     ('3 * -6', -18),
 ])
-def test_multiply(arg, expected):
-    assert simple_calculator(arg) == expected
+___ test_multiply(arg, expected
+    assert simple_calculator(arg) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -35,8 +35,8 @@ def test_multiply(arg, expected):
     ('1 / 5', 0.2),
     ('-2 / 175', -0.01),
 ])
-def test_true_division(arg, expected):
-    assert round(simple_calculator(arg), 2) == expected
+___ test_true_division(arg, expected
+    assert round(simple_calculator(arg), 2) __ expected
 
 
 @pytest.mark.parametrize("arg", [
@@ -44,6 +44,6 @@ def test_true_division(arg, expected):
     '1 x 2', 'some random string', '1 / 0',
     'really_bad_data'
 ])
-def test_bad_inputs(arg):
-    with pytest.raises(ValueError):
+___ test_bad_inputs(arg
+    with pytest.raises(ValueError
         simple_calculator(arg)

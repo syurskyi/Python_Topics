@@ -13,28 +13,28 @@ Recursive solution is trivial, could you do it iteratively?
 
 # Definition for a Node.
 class Node:
-    def __init__(self, val, children):
+    ___ __init__(self, val, children
         self.val = val
         self.children = children
 
 
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def preorder(self, root: "Node") -> List[int]:
+    ___ preorder(self, root: "Node") -> List[int]:
         """
         reversely add the children to stk
         """
         ret = []
-        if not root:
-            return ret
+        __ not root:
+            r_ ret
 
         stk = [root]
-        while stk:
+        w___ stk:
             cur = stk.pop()
             ret.append(cur.val)
-            for c in reversed(cur.children):
+            for c in reversed(cur.children
                 stk.append(c)
 
-        return ret
+        r_ ret

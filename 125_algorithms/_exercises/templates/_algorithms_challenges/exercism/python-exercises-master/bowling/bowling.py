@@ -1,9 +1,9 @@
-class BowlingGame(object):
-    def __init__(self):
+class BowlingGame(object
+    ___ __init__(self
         pass
 
-    def roll(self, pins):
+    ___ roll(self, pins
         pass
 
-    def score(self):
+    ___ score(self
         pass

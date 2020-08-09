@@ -9,23 +9,23 @@ Main Concept:
 
 
 class Solution:
-    def nthUglyNumber(self, n):
+    ___ nthUglyNumber(self, n
         """
         :type n: int
         :rtype: int
         """
-        if not n:
-            return 0
+        __ not n:
+            r_ 0
 
         ans = [1]
         i2 = i3 = i5 = 0
 
-        for _ in range(1, n):
-            while ans[i2] * 2 <= ans[-1]:
+        for _ in range(1, n
+            w___ ans[i2] * 2 <= ans[-1]:
                 i2 += 1
-            while ans[i3] * 3 <= ans[-1]:
+            w___ ans[i3] * 3 <= ans[-1]:
                 i3 += 1
-            while ans[i5] * 5 <= ans[-1]:
+            w___ ans[i5] * 5 <= ans[-1]:
                 i5 += 1
 
             ans.append(min((
@@ -34,4 +34,4 @@ class Solution:
                 ans[i5] * 5,
             )))
 
-        return ans[-1]
+        r_ ans[-1]

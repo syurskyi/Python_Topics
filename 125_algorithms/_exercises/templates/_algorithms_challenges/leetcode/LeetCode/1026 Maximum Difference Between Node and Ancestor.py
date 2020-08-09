@@ -26,34 +26,34 @@ Each node will have value between 0 and 100000.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.ret = 0
 
-    def maxAncestorDiff(self, root: TreeNode) -> int:
+    ___ maxAncestorDiff(self, root: TreeNode) -> int:
         """
         dfs return min and max
         """
         self.dfs(root)
-        return self.ret
+        r_ self.ret
 
-    def dfs(self, node):
-        if not node:
-            return float("inf"), -float("inf")
+    ___ dfs(self, node
+        __ not node:
+            r_ float("inf"), -float("inf")
 
         lmin, lmax = self.dfs(node.left)
         rmin, rmax = self.dfs(node.right)
         mini = min(lmin, rmin)
         maxa = max(lmax, rmax)
-        if mini != float("inf"):
+        __ mini != float("inf"
             self.ret = max(self.ret, abs(mini - node.val))
-        if maxa != -float("inf"):
+        __ maxa != -float("inf"
             self.ret = max(self.ret, abs(maxa - node.val))
 
-        return min(mini, node.val), max(maxa, node.val)
+        r_ min(mini, node.val), max(maxa, node.val)

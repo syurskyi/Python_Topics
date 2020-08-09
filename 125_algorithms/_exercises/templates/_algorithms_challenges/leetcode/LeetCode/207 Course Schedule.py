@@ -23,7 +23,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def canFinish(self, numCourses, prerequisites):
+    ___ canFinish(self, numCourses, prerequisites
         """
         Determine whether the graph is cyclic
         Marked twice -> cycle
@@ -38,28 +38,28 @@ class Solution:
 
         visited = [False for _ in xrange(numCourses)]  # visited and fine (cleared)
         marked = [False for _ in xrange(numCourses)]  # marked during one dfs
-        for i in xrange(numCourses):
-            if not visited[i]:
-                if self.dfs_have_cycle(V, i, visited, marked):
-                    return False
+        for i in xrange(numCourses
+            __ not visited[i]:
+                __ self.dfs_have_cycle(V, i, visited, marked
+                    r_ False
 
-        return True
+        r_ True
 
-    def dfs_have_cycle(self, V, i, visited, marked):
-        if marked[i]:
-            return True
+    ___ dfs_have_cycle(self, V, i, visited, marked
+        __ marked[i]:
+            r_ True
 
         marked[i] = True
 
         for neighbor in V[i]:
-            if not visited[neighbor] and self.dfs_have_cycle(V, neighbor, visited, marked):
-                return True
+            __ not visited[neighbor] and self.dfs_have_cycle(V, neighbor, visited, marked
+                r_ True
 
         # clean up
         marked[i] = False
         visited[i] = True
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().canFinish(2, [[1, 0], [0, 1]]) is False

@@ -1,18 +1,18 @@
 
 
-def linear_search(array,item):
+___ linear_search(array,item
 
 	#simple linear search in O(N) running time complexity
-	for i in range(len(array)):
+	for i in range(le.(array)):
 		
 		#we have found the given item so return with the index
-		if array[i] == item:
-			return i
+		__ array[i] __ item:
+			r_ i
 
 	#search miss: item not found
-	return -1 
+	r_ -1 
         
-if __name__ == "__main__":
+__ __name__ __ "__main__":
 
 	array = [1,4,7,3,6,8,10,11,20,22]
 	print(linear_search(array,111))

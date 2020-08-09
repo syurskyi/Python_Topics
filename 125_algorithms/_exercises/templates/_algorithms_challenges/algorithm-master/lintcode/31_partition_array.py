@@ -4,21 +4,21 @@ class Solution:
     @param: k: An integer
     @return: The index after partition
     """
-    def partitionArray(self, A, k):
-        if not A:
-            return 0
+    ___ partitionArray(self, A, k
+        __ not A:
+            r_ 0
 
-        left, right = 0, len(A) - 1
+        left, right = 0, le.(A) - 1
 
-        while left <= right:
-            while left <= right and A[left] < k:
+        w___ left <= right:
+            w___ left <= right and A[left] < k:
                 left += 1
-            while left <= right and A[right] >= k:
+            w___ left <= right and A[right] >= k:
                 right -= 1
 
-            if left <= right:
+            __ left <= right:
                 A[left], A[right] = A[right], A[left]
                 left += 1
                 right -= 1
 
-        return left
+        r_ left

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestBits(object):
+class TestBits(object
 
-    def test_pairwise_swap(self):
+    ___ test_pairwise_swap(self
         bits = Bits()
         assert_equal(bits.pairwise_swap(0), 0)
         assert_equal(bits.pairwise_swap(1), 1)
@@ -15,10 +15,10 @@ class TestBits(object):
         print('Success: test_pairwise_swap')
 
 
-def main():
+___ main(
     test = TestBits()
     test.test_pairwise_swap()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

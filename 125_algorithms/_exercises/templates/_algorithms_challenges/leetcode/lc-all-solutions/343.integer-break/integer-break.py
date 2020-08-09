@@ -1,14 +1,14 @@
-class Solution(object):
-  def integerBreak(self, n):
+class Solution(object
+  ___ integerBreak(self, n
     """
     :type n: int
     :rtype: int
     """
-    if n <= 3:
-      return n - 1
-    if n % 3 == 0:
-      return 3 ** (n / 3)
-    if n % 3 == 1:
-      return 3 ** ((n / 3) - 1) * 4
-    if n % 3 == 2:
-      return 3 ** (n / 3) * 2
+    __ n <= 3:
+      r_ n - 1
+    __ n % 3 __ 0:
+      r_ 3 ** (n / 3)
+    __ n % 3 __ 1:
+      r_ 3 ** ((n / 3) - 1) * 4
+    __ n % 3 __ 2:
+      r_ 3 ** (n / 3) * 2

@@ -1,4 +1,4 @@
-from typing import List
+from typing ______ List
 
 OCR_INPUT = [
     ' _     _  _     _  _  _  _  _ ',
@@ -10,64 +10,64 @@ OCR_WIDTH = 3
 OCR_HEIGHT = 4
 
 
-def split_ocr_numbers(ocr_numbers: List[str]) -> List[List[str]]:
+___ split_ocr_numbers(ocr_numbers: List[str]) -> List[List[str]]:
     ocrs_split = []
-    len_line = len(ocr_numbers[0])
-    for start in range(0, len_line, OCR_WIDTH):
+    len_line = le.(ocr_numbers[0])
+    for start in range(0, len_line, OCR_WIDTH
         ocrs_split.append(
             [line[start:start+OCR_WIDTH] for line in ocr_numbers]
         )
-    return ocrs_split
+    r_ ocrs_split
 
 OCR_NUMBERS = split_ocr_numbers(OCR_INPUT)
 
 
-def split_ocr_lines(ocr_numbers: List[str]) -> List[List[str]]:
+___ split_ocr_lines(ocr_numbers: List[str]) -> List[List[str]]:
     ocr_lines = []
-    for start in range(0, len(ocr_numbers), OCR_HEIGHT):
+    for start in range(0, le.(ocr_numbers), OCR_HEIGHT
         ocr_lines.append(ocr_numbers[start:start+OCR_HEIGHT])
-    return ocr_lines
+    r_ ocr_lines
 
 
-def validate_ocr_numbers(ocr_numbers: List[str]):
-    n_first_line = len(ocr_numbers[0])
-    if n_first_line % OCR_WIDTH:
+___ validate_ocr_numbers(ocr_numbers: List[str]
+    n_first_line = le.(ocr_numbers[0])
+    __ n_first_line % OCR_WIDTH:
         message = str(n_first_line) + ' is not a multiple of ' + str(OCR_WIDTH)
         raise ValueError(message)
-    if len(ocr_numbers) % OCR_HEIGHT:
+    __ le.(ocr_numbers) % OCR_HEIGHT:
         message = 'numbers of rows is not a multiple of ' + str(OCR_HEIGHT)
         raise ValueError(message)
-    if any(len(line) != n_first_line for line in ocr_numbers[1:]):
+    __ any(le.(line) != n_first_line for line in ocr_numbers[1:]
         raise ValueError('All lines must have the same length.')
 
 
-def validate_numbers(numbers: str):
-    if not numbers.isdigit():
+___ validate_numbers(numbers: str
+    __ not numbers.isdigit(
         raise ValueError(numbers + ' is not a digit')
 
 
-def _convert_ocr_line(ocr_numbers: List[str]) -> str:
+___ _convert_ocr_line(ocr_numbers: List[str]) -> str:
     ocrs_split = split_ocr_numbers(ocr_numbers)
     numbers = [
-        str(OCR_NUMBERS.index(ocr)) if ocr in OCR_NUMBERS else '?'
+        str(OCR_NUMBERS.index(ocr)) __ ocr in OCR_NUMBERS else '?'
         for ocr in ocrs_split
     ]
-    return ''.join(numbers)
+    r_ ''.join(numbers)
 
 
-def number(ocr_numbers: List[str]) -> str:
+___ number(ocr_numbers: List[str]) -> str:
     validate_ocr_numbers(ocr_numbers)
-    return ','.join(
+    r_ ','.join(
         [_convert_ocr_line(line) for line in split_ocr_lines(ocr_numbers)]
     )
 
 
-def grid(numbers: str) -> List[str]:
+___ grid(numbers: str) -> List[str]:
     validate_numbers(numbers)
     ocr_numbers_split = [
         OCR_NUMBERS[int(number)] for number in numbers
     ]
-    return [
+    r_ [
         ''.join(lines) for lines in zip(*ocr_numbers_split)
     ]
 
@@ -82,6 +82,6 @@ multiline_ocr = [
                 " _|  ||_|",
                 "         ",
 ]
-assert number(multiline_ocr) == '318,318'
+assert number(multiline_ocr) __ '318,318'
 
 

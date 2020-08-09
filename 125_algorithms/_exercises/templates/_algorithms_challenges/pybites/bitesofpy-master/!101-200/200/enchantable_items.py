@@ -1,10 +1,10 @@
-import re
-from dataclasses import dataclass, field
-from pathlib import Path
-from typing import List
-from urllib.request import urlretrieve
+______ re
+from dataclasses ______ dataclass, field
+from pathlib ______ Path
+from typing ______ List
+from urllib.request ______ urlretrieve
 
-from bs4 import BeautifulSoup as Soup
+from bs4 ______ BeautifulSoup as Soup
 
 out_dir = "/tmp"
 html_file = f"{out_dir}/enchantment_list_pc.html"
@@ -26,11 +26,11 @@ class Enchantment:
     description: str
     items: List[str] = field(default_factory=list)
 
-    def __post_init__(self):
+    ___ __post_init__(self
         self.name = self.name.replace('_', ' ')
 
-    def __repr__(self):
-        return f'{self.name} ({self.max_level}): {self.description}'
+    ___ __repr__(self
+        r_ f'{self.name} ({self.max_level} {self.description}'
 
 
 @dataclass()
@@ -43,13 +43,13 @@ class Item:
     name: str
     enchantments: List[str] = field(default_factory=list)
 
-    # def __post_init__(self):
+    # ___ __post_init__(self
     #     self.name = self.name.replace('_',' ').title()
 
-    def __repr__(self):
+    ___ __repr__(self
         en = [f'  [{chant.max_level}] {chant.id_name}'
               for chant in sorted(self.enchantments, key=lambda x : x.id_name)]
-        return f'{self.name.replace("_"," ").title()}: \n' + '\n'.join(en)
+        r_ f'{self.name.replace("_"," ").title()}: \n' + '\n'.join(en)
 
 
 # Lookup values of the first five roman numerals
@@ -60,15 +60,15 @@ LEVEL_TRANSLATE = {'I': 1,
                    'V': 5}
 
 
-def generate_enchantments(soup):
+___ generate_enchantments(soup
     """Generates a dictionary of Enchantment objects
     
     With the key being the id_name of the enchantment.
     """
     res = dict()
-    for row in soup.select('table#minecraft_items > tr'):
+    for row in soup.select('table#minecraft_items > tr'
         data_items = row.find_all('td')
-        if data_items is None or len(data_items) == 0:
+        __ data_items is None or le.(data_items) __ 0:
             continue
         enchant, maxlevel, descr, id, item, version = data_items
         id_name = enchant.em.text
@@ -87,39 +87,39 @@ def generate_enchantments(soup):
                                    items
                                    )
 
-    return res
+    r_ res
 
 
-def generate_items(data):
+___ generate_items(data
     """Generates a dictionary of Item objects
     
     With the key being the item name.
     """
     res = dict()
-    for enchantment in data.values():
+    for enchantment in data.values(
         for i in enchantment.items:
-            if i in res.keys():
+            __ i in res.keys(
                 res[i].enchantments.append(enchantment)
-            else:
+            ____
                 res[i] = Item(i, [enchantment])
-    return dict(sorted(res.items(), key=lambda t: t[0]))
+    r_ dict(sorted(res.items(), key=lambda t: t[0]))
 
 
-def get_soup(file=HTML_FILE):
+___ get_soup(file=HTML_FILE
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
-    if isinstance(file, Path):
-        if not HTML_FILE.is_file():
+    __ isinstance(file, Path
+        __ not HTML_FILE.is_file(
             urlretrieve(URL, HTML_FILE)
 
         with file.open() as html_source:
             soup = Soup(html_source, "html.parser")
-    else:
+    ____
         soup = Soup(file, "html.parser")
 
-    return soup
+    r_ soup
 
 
-def main():
+___ main(
     """This function is here to help you test your final code.
     
     Once complete, the print out should match what's at the bottom of this file"""
@@ -130,7 +130,7 @@ def main():
         print(minecraft_items[item], "\n")
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     main()
 
 """

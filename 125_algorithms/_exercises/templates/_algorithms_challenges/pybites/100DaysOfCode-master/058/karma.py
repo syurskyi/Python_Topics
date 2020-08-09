@@ -27,59 +27,59 @@ class Employee:
     '''Employee base class'''
     count = 0  # class var to keep track of how many people are around
 
-    def __init__(self, name):
+    ___ __init__(self, name
         self.name = name
         self.karma = 0
         Employee.count += 1
         self.klout = 1
 
-    def _validation(self, points):
+    ___ _validation(self, points
         limit = MAX_POINTS * self.klout
-        if not isinstance(points, int) or abs(points) > limit:
+        __ not isinstance(points, int) or abs(points) > limit:
             raise ValueError('need int points of <= {}'.format(limit))
 
-    def __lshift__(self, points):
+    ___ __lshift__(self, points
         points = self.klout * points
         self._validation(points)
         self.karma += points
 
-    def __rshift__(self, points):
+    ___ __rshift__(self, points
         points = self.klout * points
         self._validation(points)
         self.karma -= points
 
-    def __str__(self):
+    ___ __str__(self
         role = self.__class__.__name__
-        return '{} ({} = klout: {}) has {} karma'.format(
+        r_ '{} ({} = klout: {}) has {} karma'.format(
             self.name, role, self.klout, self.karma)
 
 
-class Manager(Employee):
+class Manager(Employee
     '''Manager and subsequent subclasses have more klout.
        This leads them to get more points (yeah it sucks)'''
 
-    def __init__(self, name):
+    ___ __init__(self, name
         super().__init__(name)
         self.klout = 2
 
 
-class Director(Employee):
+class Director(Employee
     '''He will get a lot of points'''
 
-    def __init__(self, name):
+    ___ __init__(self, name
         super().__init__(name)
         self.klout = 3
 
 
-class VicePresident(Employee):
+class VicePresident(Employee
     '''She will be world famous lol'''
 
-    def __init__(self, name):
+    ___ __init__(self, name
         super().__init__(name)
         self.klout = 4
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     e1 = Employee('pybites')
     e1 << 3
     try:
@@ -94,10 +94,10 @@ if __name__ == '__main__':
     except:
         pass
     e1 >> 1
-    assert e1.karma == 0
+    assert e1.karma __ 0
     e1 << 2
     e1 << 3
-    assert e1.karma == 5
+    assert e1.karma __ 5
     print(e1)
 
     print()
@@ -113,10 +113,10 @@ if __name__ == '__main__':
     v1 << 3; v1 << 2; v1 >> 1; v1 << 2
     print('\n'.join([str(p) for p in [e2, m1, d1, v1]]))
 
-    assert e2.karma == 6
-    assert m1.karma == 12
-    assert d1.karma == 18
-    assert v1.karma == 24
+    assert e2.karma __ 6
+    assert m1.karma __ 12
+    assert d1.karma __ 18
+    assert v1.karma __ 24
 
     print()
     print('Community has {} members (cls var)'.format(Employee.count))

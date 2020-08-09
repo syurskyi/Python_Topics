@@ -32,42 +32,42 @@ Each node in the tree will have a value between 0 and 25.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-from typing import Tuple
-from collections import deque
+from typing ______ Tuple
+from collections ______ deque
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.mn: Tuple[int] = None
 
-    def smallestFromLeaf(self, root: TreeNode) -> str:
+    ___ smallestFromLeaf(self, root: TreeNode) -> str:
         """
         dfs
         """
         self.dfs(root, deque())
-        if not self.mn:
-            return ""
-        return "".join(
+        __ not self.mn:
+            r_ ""
+        r_ "".join(
             chr(e + ord("a"))
             for e in self.mn
         )
 
-    def dfs(self, node, cur_deque):
-        if not node:
-            return
+    ___ dfs(self, node, cur_deque
+        __ not node:
+            r_
 
         cur_deque.appendleft(node.val)
-        if not node.left and not node.right:
+        __ not node.left and not node.right:
             t = tuple(cur_deque)
-            if not self.mn or t < self.mn:
+            __ not self.mn or t < self.mn:
                 self.mn = t
-        else:
+        ____
             self.dfs(node.left, cur_deque)
             self.dfs(node.right, cur_deque)
         # need to pop at the end

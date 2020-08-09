@@ -1,5 +1,5 @@
-class Solution(object):
-  def calculate(self, s):
+class Solution(object
+  ___ calculate(self, s
     """
     :type s: str
     :rtype: int
@@ -8,38 +8,38 @@ class Solution(object):
     stack = []
     _stack = []
     i = 0
-    while i < len(s):
-      if s[i] == " ":
+    w___ i < le.(s
+      __ s[i] __ " ":
         i += 1
-      elif s[i] == "(":
-        _stack.append(len(stack))
+      ____ s[i] __ "(":
+        _stack.append(le.(stack))
         i += 1
-      elif s[i] == ")":
+      ____ s[i] __ ")":
         start = _stack.pop()
         j = start
         a = stack[j]
-        while j + 2 < len(stack):
+        w___ j + 2 < le.(stack
           ops = stack[j + 1]
-          if ops == "+":
+          __ ops __ "+":
             a = a + stack[j + 2]
-          elif ops == "-":
+          ____ ops __ "-":
             a = a - stack[j + 2]
-          else:
-            return "invalid"
+          ____
+            r_ "invalid"
           j += 2
-        k = len(stack) - start
-        while k > 0:
+        k = le.(stack) - start
+        w___ k > 0:
           stack.pop()
           k -= 1
         stack.append(a)
         i += 1
-      elif s[i] in "+-":
+      ____ s[i] in "+-":
         stack.append(s[i])
         i += 1
-      else:
+      ____
         start = i
-        while i < len(s) and s[i] not in "-+() ":
+        w___ i < le.(s) and s[i] not in "-+() ":
           i += 1
         num = int(s[start:i])
         stack.append(num)
-    return stack[0]
+    r_ stack[0]

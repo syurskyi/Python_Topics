@@ -1,5 +1,5 @@
-class Solution(object):
-  def uniquePaths(self, m, n):
+class Solution(object
+  ___ uniquePaths(self, m, n
     """
     :type m: int
     :type n: int
@@ -7,9 +7,9 @@ class Solution(object):
     """
     dp = [1] * n
 
-    for i in range(1, m):
+    for i in range(1, m
       pre = 1
-      for j in range(1, n):
+      for j in range(1, n
         dp[j] = dp[j] + pre
         pre = dp[j]
-    return dp[-1]
+    r_ dp[-1]

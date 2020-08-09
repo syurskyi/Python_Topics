@@ -1,9 +1,9 @@
-import re
+______ re
 
 amount_values = int(input())
 results = []
 
-def is_matching(word):
+___ is_matching(word
     word = re.sub(r"[^()[\]{}<>]","",word)
 
     open_brackets = ["[","(","{","<"]
@@ -11,20 +11,20 @@ def is_matching(word):
 
     open_brackets_in_word =[]
     for i in word:
-        if(i in open_brackets):
+        __(i in open_brackets
             open_brackets_in_word.append(i)
-        elif(i in close_brackets):
-            if(len(open_brackets_in_word) == 0):
-                return 0
-            if(open_brackets.index(open_brackets_in_word[-1]) != close_brackets.index(i)):
-                return 0
-            else:
+        ____(i in close_brackets
+            __(le.(open_brackets_in_word) __ 0
+                r_ 0
+            __(open_brackets.index(open_brackets_in_word[-1]) != close_brackets.index(i)):
+                r_ 0
+            ____
                 open_brackets_in_word.pop()
-    if(len(open_brackets_in_word) > 0):
-        return 0
-    return 1
+    __(le.(open_brackets_in_word) > 0
+        r_ 0
+    r_ 1
 
-for i in range(amount_values):
+for i in range(amount_values
     word = input()
     results.append(is_matching(word))
 

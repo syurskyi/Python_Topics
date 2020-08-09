@@ -1,40 +1,40 @@
-from collections import deque
+from collections ______ deque
 
 
 class CircularBuffer:
 
-    def __init__(self, capacity):
+    ___ __init__(self, capacity
         self.capacity = capacity
         self.buffer = deque([], capacity)
 
-    def read(self):
-        if self.empty():
+    ___ read(self
+        __ self.empty(
             raise BufferEmptyException
-        return self.buffer.popleft()
+        r_ self.buffer.popleft()
 
-    def write(self, data):
-        if self.full():
+    ___ write(self, data
+        __ self.full(
             raise BufferFullException
         self.buffer.append(data)
 
-    def overwrite(self, data):
-        if self.full():
+    ___ overwrite(self, data
+        __ self.full(
             self.buffer.popleft()
         self.buffer.append(data)
 
-    def clear(self):
+    ___ clear(self
         self.buffer.clear()
 
-    def empty(self):
-        return len(self.buffer) == 0
+    ___ empty(self
+        r_ le.(self.buffer) __ 0
 
-    def full(self):
-        return len(self.buffer) == self.capacity
+    ___ full(self
+        r_ le.(self.buffer) __ self.capacity
 
 
-class BufferFullException(Exception):
+class BufferFullException(Exception
     pass
 
 
-class BufferEmptyException(Exception):
+class BufferEmptyException(Exception
     pass

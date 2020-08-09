@@ -1,16 +1,16 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-def height(node):
-    if node is None:
-        return 0
-    return 1 + max(height(node.left),
+___ height(node
+    __ node is None:
+        r_ 0
+    r_ 1 + max(height(node.left),
                    height(node.right))
 
 
-class TestBstMin(object):
+class TestBstMin(object
 
-    def test_bst_min(self):
+    ___ test_bst_min(self
         min_bst = MinBst()
         array = [0, 1, 2, 3, 4, 5, 6]
         root = min_bst.create_min_bst(array)
@@ -24,10 +24,10 @@ class TestBstMin(object):
         print('Success: test_bst_min')
 
 
-def main():
+___ main(
     test = TestBstMin()
     test.test_bst_min()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -2,7 +2,7 @@
 # Score: 10
 
 
-import calendar
+______ calendar
 
 
 m, d, y = map(int, input().split())

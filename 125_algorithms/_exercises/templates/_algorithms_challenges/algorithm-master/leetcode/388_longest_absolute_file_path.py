@@ -26,25 +26,25 @@ there is error in that case if save the max size
 
 
 class Solution:
-    def lengthLongestPath(self, path):
+    ___ lengthLongestPath(self, path
         """
         :type path: str
         :rtype: int
         """
         ans = 0
-        if not path:
-            return ans
+        __ not path:
+            r_ ans
 
         dep2size = {0: 0}
 
-        for line in path.split('\n'):
+        for line in path.split('\n'
             name = line.lstrip('\t')
-            size = len(name)
-            depth = len(line) - len(name)
+            size = le.(name)
+            depth = le.(line) - le.(name)
 
-            if '.' in name:
+            __ '.' in name:
                 ans = max(ans, dep2size[depth] + size)
-            else:
+            ____
                 dep2size[depth + 1] = dep2size[depth] + size + 1
 
-        return ans
+        r_ ans

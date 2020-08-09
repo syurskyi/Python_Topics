@@ -1,19 +1,19 @@
 class Solution:
-    def numRescueBoats(self, people: List[int], limit: int) -> int:
+    ___ numRescueBoats(self, people: List[int], limit: int) -> int:
         people.sort()
 
         left = 0
-        right = len(people)-1
+        right = le.(people)-1
 
         boats_number = 0
 
-        while(left<=right):
-            if(left==right):
+        w___(left<=right
+            __(left__right
                 boats_number+=1
                 break
-            if(people[left]+people[right]<=limit):
+            __(people[left]+people[right]<=limit
                 left+=1
 
             right-=1
             boats_number+=1
-        return boats_number
+        r_ boats_number

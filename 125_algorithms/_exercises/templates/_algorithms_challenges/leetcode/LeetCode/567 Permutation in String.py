@@ -15,11 +15,11 @@ Note:
 The input strings only contain lower case letters.
 The length of both given strings is in range [1, 10,000].
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def checkInclusion(self, s1: str, s2: str) -> bool:
+    ___ checkInclusion(self, s1: str, s2: str) -> bool:
         """
         counter + two pointers
         """
@@ -30,23 +30,23 @@ class Solution:
 
         i = 0
         j = 0
-        while j < len(s2):
-            if counter[s2[j]] > 0:
+        w___ j < le.(s2
+            __ counter[s2[j]] > 0:
                 counter[s2[j]] -= 1
-                if j - i + 1 == len(s1):
-                    return True
+                __ j - i + 1 __ le.(s1
+                    r_ True
                 j += 1
-            else:
-                if s2[i] in s1_set:
+            ____
+                __ s2[i] in s1_set:
                     # not check s2[i] in counter, dangerous to check defaultdict
                     counter[s2[i]] += 1
                 i += 1
-                if j < i:
+                __ j < i:
                     j = i
 
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
-    assert Solution().checkInclusion("ab", "eidbaooo") == True
-    assert Solution().checkInclusion("ab", "eidboaoo") == False
+__ __name__ __ "__main__":
+    assert Solution().checkInclusion("ab", "eidbaooo") __ True
+    assert Solution().checkInclusion("ab", "eidboaoo") __ False

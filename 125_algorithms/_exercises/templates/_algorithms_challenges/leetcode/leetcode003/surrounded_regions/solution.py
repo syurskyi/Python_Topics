@@ -2,49 +2,49 @@ class Solution:
     # @param board, a 9x9 2D array
     # Capture all regions by modifying the input board in-place.
     # Do not return any value.
-    def solve(self, board):
-        n = len(board)
-        if n == 0:
-            return
-        m = len(board[0])
-        if m == 0:
-            return
+    ___ solve(self, board
+        n = le.(board)
+        __ n __ 0:
+            r_
+        m = le.(board[0])
+        __ m __ 0:
+            r_
         self.n = n
         self.m = m
         # Go through the four edges to search O's
-        for i in range(n):
-            for j in range(m):
-                if i == 0 or i == n - 1 or j == 0 or j == m - 1:
-                    if board[i][j] == 'O':
+        for i in range(n
+            for j in range(m
+                __ i __ 0 or i __ n - 1 or j __ 0 or j __ m - 1:
+                    __ board[i][j] __ 'O':
                         self.bfs(board, j, i)
-        for i in range(n):
-            for j in range(m):
-                if board[i][j] == 'O':
+        for i in range(n
+            for j in range(m
+                __ board[i][j] __ 'O':
                     board[i][j] = 'X'
-                if board[i][j] == 'Y':
+                __ board[i][j] __ 'Y':
                     board[i][j] = 'O'
 
-    def bfs(self, board, x, y):
+    ___ bfs(self, board, x, y
         """Use BFS to set O to Y"""
         queue = []
         board[y][x] = 'Y'
         queue.append((x, y))
-        while queue:
+        w___ queue:
             root_x, root_y = queue.pop(0)
-            for node in self.adjacent(board, root_x, root_y):
+            for node in self.adjacent(board, root_x, root_y
                 x, y = node
-                if board[y][x] != 'Y':
+                __ board[y][x] != 'Y':
                     board[y][x] = 'Y'
                     queue.append((x, y))
 
-    def adjacent(self, board, x, y):
+    ___ adjacent(self, board, x, y
         res = []
-        if x + 1 < self.m and board[y][x + 1] == 'O':
+        __ x + 1 < self.m and board[y][x + 1] __ 'O':
             res.append((x + 1, y))
-        if x - 1 > 0 and board[y][x - 1] == 'O':
+        __ x - 1 > 0 and board[y][x - 1] __ 'O':
             res.append((x - 1, y))
-        if y + 1 < self.n and board[y + 1][x] == 'O':
+        __ y + 1 < self.n and board[y + 1][x] __ 'O':
             res.append((x, y + 1))
-        if y - 1 > 0 and board[y - 1][x] == 'O':
+        __ y - 1 > 0 and board[y - 1][x] __ 'O':
             res.append((x, y - 1))
-        return res
+        r_ res

@@ -15,8 +15,8 @@ transactions = [buy, sell, cooldown, buy, sell]
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def maxProfit(self, A):
+class Solution(object
+    ___ maxProfit(self, A
         """
         O(n^2)
         Let F[i] be max profit from day 0 to day i, selling stock at day i
@@ -31,11 +31,11 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
-        if n == 0 or n == 1:
-            return 0
-        if n == 2:
-            return max(0, A[1]-A[0])
+        n = le.(A)
+        __ n __ 0 or n __ 1:
+            r_ 0
+        __ n __ 2:
+            r_ max(0, A[1]-A[0])
 
         CD = 1  # cool down
         F = [0 for _ in xrange(n)]
@@ -46,12 +46,12 @@ class Solution(object):
         M[2] = max(M[1], F[2])
 
         # core
-        for i in xrange(3, n):
+        for i in xrange(3, n
             F[i] = max(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
             M[i] = max(M[i-1], F[i])
 
-        return M[-1]
+        r_ M[-1]
 
 
-if __name__ == "__main__":
-    assert Solution().maxProfit([1, 2, 3, 0, 2]) == 3
+__ __name__ __ "__main__":
+    assert Solution().maxProfit([1, 2, 3, 0, 2]) __ 3

@@ -1,4 +1,4 @@
-class StackUnderflowError(Exception):
+class StackUnderflowError(Exception
     pass
 
 
@@ -14,29 +14,29 @@ keywords = {
     }
 
 
-def evaluate(input_data):
+___ evaluate(input_data
     tokens = [token for line in input_data for token in line.split()]
     stack = []
     env = {}
-    while tokens:
+    w___ tokens:
         token = tokens.pop(0).lower()
-        if token == ':':
+        __ token __ ':':
             keyword = tokens.pop(0).lower()
-            if keyword.isdigit():
+            __ keyword.isdigit(
                 raise ValueError("Variables cannot be numbers: " + keyword)
             env[keyword] = [tokens.pop(0)]
-            while env[keyword][-1] != ';':
+            w___ env[keyword][-1] != ';':
                 env[keyword].append(tokens.pop(0))
             env[keyword].pop()
-        elif token in env:
+        ____ token in env:
             tokens.extend(env[token])
-        elif token in keywords:
+        ____ token in keywords:
             try:
                 n_args, func = keywords[token]
                 args = tuple(reversed([stack.pop() for _ in range(n_args)]))
                 stack.extend(func(*args))
             except IndexError:
                 raise StackUnderflowError('Cannot apply ' + token)
-        else:
+        ____
             stack.append(int(token))
-    return stack
+    r_ stack

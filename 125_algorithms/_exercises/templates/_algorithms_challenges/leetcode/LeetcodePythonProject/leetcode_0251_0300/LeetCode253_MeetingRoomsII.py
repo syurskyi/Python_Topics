@@ -4,29 +4,29 @@ Created on Mar 1, 2017
 @author: MT
 '''
 # Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
+class Interval(object
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
 
-class Solution(object):
-    def minMeetingRooms(self, intervals):
+class Solution(object
+    ___ minMeetingRooms(self, intervals
         """
         :type intervals: List[Interval]
         :rtype: int
         """
-        import heapq
+        ______ heapq
         intervals.sort(key=lambda x: x.start)
         heap = []
         maxLen = 0
         for interval in intervals:
-            while heap and heap[0] <= interval.start:
+            w___ heap and heap[0] <= interval.start:
                 heapq.heappop(heap)
             heapq.heappush(heap, interval.end)
-            maxLen = max(maxLen, len(heap))
-        return maxLen
+            maxLen = max(maxLen, le.(heap))
+        r_ maxLen
      
-    def test(self):
+    ___ test(self
         testCases = [
             [[0, 30], [5, 10], [15, 20]],
             [[0, 50], [5, 10], [15, 20], [17, 23], [19, 30]],
@@ -40,9 +40,9 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-def main():
+___ main(
     Solution().test()
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()
 

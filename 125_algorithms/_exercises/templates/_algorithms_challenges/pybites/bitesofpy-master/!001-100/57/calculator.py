@@ -1,7 +1,7 @@
-import argparse
+______ argparse
 
 
-def calculator(operation, numbers):
+___ calculator(operation, numbers
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
@@ -10,15 +10,15 @@ def calculator(operation, numbers):
            'mul': lambda x: x[0] * x[1],
            'div': lambda x: x[0] / x[1]
            }
-    if isinstance(numbers, int):
+    __ isinstance(numbers, int
         numbers = [numbers]
     res = float(numbers[0])
     for num in numbers[1:]:
         res = ops[operation]([res, float(num)])
-    return round(res,2)
+    r_ round(res,2)
 
 
-def create_parser():
+___ create_parser(
     """TODO 2:
        Create an ArgumentParser object:
        - have one operation argument,
@@ -32,23 +32,23 @@ def create_parser():
     parser.add_argument('-s', '--sub', type=str, nargs='+', help='Subtracts numbers')
     parser.add_argument('-m', '--mul', type=str, nargs='+', help='Multiplies numbers')
     parser.add_argument('-d', '--div', type=str, nargs='+', help='Divides numbers')
-    return parser
+    r_ parser
 
 
-def call_calculator(args=None, stdout=False):
+___ call_calculator(args=None, stdout=False
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
     parser = create_parser()
 
-    if args is None:
+    __ args is None:
         args = parser.parse_args()
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    for operation, numbers in vars(args).items():
-        if numbers is None:
+    for operation, numbers in vars(args).items(
+        __ numbers is None:
             continue
 
         try:
@@ -56,11 +56,11 @@ def call_calculator(args=None, stdout=False):
         except ZeroDivisionError:
             res = 0
 
-        if stdout:
+        __ stdout:
             print(res)
 
-        return res
+        r_ res
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     call_calculator(stdout=True)

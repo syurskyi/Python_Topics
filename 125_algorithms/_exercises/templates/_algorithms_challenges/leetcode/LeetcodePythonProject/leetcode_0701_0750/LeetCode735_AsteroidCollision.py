@@ -3,35 +3,35 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def asteroidCollision(self, asteroids):
+class Solution(object
+    ___ asteroidCollision(self, asteroids
         """
         :type asteroids: List[int]
         :rtype: List[int]
         """
         res = []
-        while True:
+        w___ True:
             changed = False
             i = 0
-            while i < len(asteroids):
-                if i+1 <len(asteroids) and\
+            w___ i < le.(asteroids
+                __ i+1 <le.(asteroids) and\
                     asteroids[i] > 0 and asteroids[i+1] < 0:
-                    if asteroids[i] + asteroids[i+1] != 0:
-                        val = asteroids[i] if asteroids[i]+asteroids[i+1] > 0\
+                    __ asteroids[i] + asteroids[i+1] != 0:
+                        val = asteroids[i] __ asteroids[i]+asteroids[i+1] > 0\
                             else asteroids[i+1]
                         res.append(val) 
                     i += 1
                     changed = True
-                else:
+                ____
                     res.append(asteroids[i])
                 i += 1
-            if not changed:
+            __ not changed:
                 break
             asteroids = res
             res = []
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [5, 10, -5],
             [8, -8],
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -22,26 +22,26 @@ class Solution:
     # @param matrix, a list of lists of integers
     # @param target, an integer
     # @return a boolean
-    def searchMatrix(self, matrix, target):
+    ___ searchMatrix(self, matrix, target
         row_left = 0
-        row_right = len(matrix) - 1
-        while row_left <= row_right:
+        row_right = le.(matrix) - 1
+        w___ row_left <= row_right:
             row_mid = row_left + (row_right - row_left) / 2
             row = matrix[row_mid]
-            if target >= row[0] and target <= row[-1]:
+            __ target >= row[0] and target <= row[-1]:
                 left = 0
-                right = len(row) - 1
-                while left <= right:
+                right = le.(row) - 1
+                w___ left <= right:
                     mid = left + (right - left) / 2
-                    if target == row[mid]:
-                        return True
-                    elif target < row[mid]:
+                    __ target __ row[mid]:
+                        r_ True
+                    ____ target < row[mid]:
                         right = mid - 1
-                    else:
+                    ____
                         left = mid + 1
-                return False
-            elif target < row[0]:
+                r_ False
+            ____ target < row[0]:
                 row_right = row_mid - 1
-            else:
+            ____
                 row_left = row_mid + 1
-        return False
+        r_ False

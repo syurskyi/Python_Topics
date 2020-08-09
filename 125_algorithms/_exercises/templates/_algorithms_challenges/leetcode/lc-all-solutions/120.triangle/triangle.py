@@ -1,21 +1,21 @@
-class Solution(object):
-  def minimumTotal(self, triangle):
+class Solution(object
+  ___ minimumTotal(self, triangle
     """
     :type triangle: List[List[int]]
     :rtype: int
     """
-    dp = [0] * len(triangle)
+    dp = [0] * le.(triangle)
     dp[0] = triangle[0][0]
-    for i in range(1, len(triangle)):
+    for i in range(1, le.(triangle)):
       pre = dp[0]
-      for j in range(len(triangle[i])):
+      for j in range(le.(triangle[i])):
         tmp = dp[j]
-        if j == 0:
+        __ j __ 0:
           dp[j] = pre
-        elif j == len(triangle[i]) - 1:
+        ____ j __ le.(triangle[i]) - 1:
           dp[j] = pre
-        else:
+        ____
           dp[j] = min(dp[j], pre)
         dp[j] += triangle[i][j]
         pre = tmp
-    return min(dp)
+    r_ min(dp)

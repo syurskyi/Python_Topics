@@ -1,5 +1,5 @@
-class Solution(object):
-  def findBlackPixel(self, picture, N):
+class Solution(object
+  ___ findBlackPixel(self, picture, N
     """
     :type picture: List[List[str]]
     :type N: int
@@ -9,15 +9,15 @@ class Solution(object):
     ans = 0
     col = {}
     row = {}
-    for i in range(len(picture)):
+    for i in range(le.(picture)):
       sign = "".join(picture[i])
-      rowSign[sign] = rowSign.get(sign, 0) + 1 if sign.count("B") == N else 0
-      for j in range(len(picture[0])):
-        if picture[i][j] == "B":
+      rowSign[sign] = rowSign.get(sign, 0) + 1 __ sign.count("B") __ N else 0
+      for j in range(le.(picture[0])):
+        __ picture[i][j] __ "B":
           col[j] = col.get(j, 0) + 1
     for key in rowSign:
-      if rowSign[key] == N:
-        for j in range(len(key)):
-          if key[j] == "B" and col.get(j, 0) == N:
+      __ rowSign[key] __ N:
+        for j in range(le.(key)):
+          __ key[j] __ "B" and col.get(j, 0) __ N:
             ans += N
-    return ans
+    r_ ans

@@ -31,8 +31,8 @@ or
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def integerReplacement(self, n):
+class Solution(object
+    ___ integerReplacement(self, n
         """
         Simulation using dp fails since bi-directional
         Simple recursion
@@ -44,29 +44,29 @@ class Solution(object):
         :rtype: int
         """
         ret = 0
-        while n != 1:
+        w___ n != 1:
             ret += 1
-            if n & 1 == 0:
+            __ n & 1 __ 0:
                 n >>= 1
-            elif n == 0b11 or n >> 1 & 1 == 0:
+            ____ n __ 0b11 or n >> 1 & 1 __ 0:
                 n -= 1
-            else:
+            ____
                 n += 1
 
-        return ret
+        r_ ret
 
-    def integerReplacementRecur(self, n):
+    ___ integerReplacementRecur(self, n
         """
         Simple recursion
         :type n: int
         :rtype: int
         """
-        if n == 1: return 0
+        __ n __ 1: r_ 0
 
         ret = 1
-        if n%2 == 0:
+        __ n%2 __ 0:
             ret += self.integerReplacement(n/2)
-        else:
+        ____
             ret += min(self.integerReplacement(n+1), self.integerReplacement(n-1))
 
-        return ret
+        r_ ret

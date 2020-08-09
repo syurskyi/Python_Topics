@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestBits(object):
+class TestBits(object
 
-    def test_get_next_largest(self):
+    ___ test_get_next_largest(self
         bits = Bits()
         assert_raises(Exception, bits.get_next_largest, None)
         assert_raises(Exception, bits.get_next_largest, 0)
@@ -13,7 +13,7 @@ class TestBits(object):
         assert_equal(bits.get_next_largest(num), expected)
         print('Success: test_get_next_largest')
 
-    def test_get_next_smallest(self):
+    ___ test_get_next_smallest(self
         bits = Bits()
         assert_raises(Exception, bits.get_next_smallest, None)
         assert_raises(Exception, bits.get_next_smallest, 0)
@@ -23,11 +23,11 @@ class TestBits(object):
         assert_equal(bits.get_next_smallest(num), expected)
         print('Success: test_get_next_smallest')
 
-def main():
+___ main(
     test = TestBits()
     test.test_get_next_largest()
     test.test_get_next_smallest()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

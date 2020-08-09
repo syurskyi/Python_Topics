@@ -33,63 +33,63 @@ Each node will have a value between 1 and 10^9.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-from collections import OrderedDict
+from collections ______ OrderedDict
 
 
 class Solution:
-    def recoverFromPreorder(self, S: str) -> TreeNode:
+    ___ recoverFromPreorder(self, S: str) -> TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)
         """
         depth = 0
         # parse
-        n = len(S)
+        n = le.(S)
         i = 0
         root = None
         stk = []
-        while i < n:
-            if S[i] == "-":
+        w___ i < n:
+            __ S[i] __ "-":
                 depth += 1
                 i += 1
-            else:
+            ____
                 j = i
-                while j < n and S[j] != "-":
+                w___ j < n and S[j] != "-":
                     j += 1
 
                 val = int(S[i:j])
 
                 # construct
                 cur = TreeNode(val)
-                if depth == 0:
+                __ depth __ 0:
                     root = cur
                     stk = [(depth, root)]
-                else:
+                ____
                     assert stk
-                    while stk[-1][0] != depth - 1:
+                    w___ stk[-1][0] != depth - 1:
                         stk.pop()
 
                     _, pi = stk[-1]
-                    if not pi.left:
+                    __ not pi.left:
                         pi.left = cur
-                    elif not pi.right:
+                    ____ not pi.right:
                         pi.right = cur
                         stk.pop()
-                    else:
+                    ____
                         raise
                     stk.append((depth, cur))
 
                 depth = 0
                 i = j
 
-        return root
+        r_ root
 
-    def recoverFromPreorder_error(self, S: str) -> TreeNode:
+    ___ recoverFromPreorder_error(self, S: str) -> TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)
@@ -97,15 +97,15 @@ class Solution:
         depth = 0
         depths = OrderedDict()
         # parse
-        n = len(S)
+        n = le.(S)
         i = 0
-        while i < n:
-            if S[i] == "-":
+        w___ i < n:
+            __ S[i] __ "-":
                 depth += 1
                 i += 1
-            else:
+            ____
                 j = i
-                while j < n and S[j] != "-":
+                w___ j < n and S[j] != "-":
                     j += 1
 
                 val = int(S[i:j])
@@ -116,28 +116,28 @@ class Solution:
         # construct
         stk = []
         root = None
-        for k, v in depths.items():
+        for k, v in depths.items(
             cur = TreeNode(k)
-            if v == 0:
+            __ v __ 0:
                 root = cur
                 stk = [root]
-            else:
+            ____
                 assert stk
-                while depths[stk[-1].val] != v - 1:
+                w___ depths[stk[-1].val] != v - 1:
                     stk.pop()
 
-                if not stk[-1].left:
+                __ not stk[-1].left:
                     stk[-1].left = cur
-                elif not stk[-1].right:
+                ____ not stk[-1].right:
                     stk[-1].right = cur
                     stk.pop()
-                else:
+                ____
                     raise
                 stk.append(cur)
 
-        return root
+        r_ root
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().recoverFromPreorder("5-4--4")
     assert Solution().recoverFromPreorder("1-2--3--4-5--6--7")

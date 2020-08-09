@@ -1,32 +1,32 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def isSubtree(self, s, t):
+class Solution(object
+  ___ isSubtree(self, s, t
     """
     :type s: TreeNode
     :type t: TreeNode
     :rtype: bool
     """
 
-    def serialize(root):
+    ___ serialize(root
       ans = []
       stack = [(root, 1)]
-      while stack:
+      w___ stack:
         node, p = stack.pop()
-        if not node:
+        __ not node:
           ans.append("#")
           continue
-        if p == 0:
+        __ p __ 0:
           ans.append("|" + str(node.val))
-        else:
+        ____
           stack.append((node.right, 1))
           stack.append((node.left, 1))
           stack.append((node, 0))
-      return ",".join(ans)
+      r_ ",".join(ans)
 
-    return serialize(t) in serialize(s)
+    r_ serialize(t) in serialize(s)

@@ -19,14 +19,14 @@ Both of the given trees will have between 1 and 100 nodes.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def leafSimilar(self, root1: TreeNode, root2: TreeNode) -> bool:
+    ___ leafSimilar(self, root1: TreeNode, root2: TreeNode) -> bool:
         """
         brute force, get all the leaf and then compare
         to save space, use generator
@@ -34,24 +34,24 @@ class Solution:
         """
         itr1 = self.dfs(root1)
         itr2 = self.dfs(root2)
-        while True:
+        w___ True:
             a = next(itr1, None)
             b = next(itr2, None)
-            if a != b:
-                return False
-            if a is None and b is None:
+            __ a != b:
+                r_ False
+            __ a is None and b is None:
                 break
-        return True
+        r_ True
 
-    def dfs(self, node):
+    ___ dfs(self, node
         stk = [node]
         # pre-order
-        while stk:
+        w___ stk:
             cur = stk.pop()
-            if not cur:
+            __ not cur:
                 continue
-            if not cur.left and not cur.right:
+            __ not cur.left and not cur.right:
                 yield cur.val
-            else:
+            ____
                 stk.append(cur.right)
                 stk.append(cur.left)

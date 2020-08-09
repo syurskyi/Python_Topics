@@ -16,36 +16,36 @@ Output:
 
 Explanation:
 Only two moves are needed (remember each move increments or decrements one
-element):
+element
 
 [1,2,3]  =>  [2,2,3]  =>  [2,2,2]
 """
 
 
 class Solution:
-    def pivot(self, A, lo, hi):
+    ___ pivot(self, A, lo, hi
         pivot = lo
         closed = pivot  # closed == pivot, means no closed set
-        for i in range(lo + 1, hi):
-            if A[i] < A[pivot]:
+        for i in range(lo + 1, hi
+            __ A[i] < A[pivot]:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]
 
         A[closed], A[pivot] = A[pivot], A[closed]
-        return closed  # the pivot index
+        r_ closed  # the pivot index
 
-    def quick_select(self, nums, lo, hi, k):
+    ___ quick_select(self, nums, lo, hi, k
         """find k-th (0-indexed)"""
         pivot = self.pivot(nums, lo, hi)
-        if pivot == k:
-            return nums[pivot]
-        elif pivot > k:
-            return self.quick_select(nums, lo, pivot, k)
-        else:
-            return self.quick_select(nums, pivot + 1, hi, k)
+        __ pivot __ k:
+            r_ nums[pivot]
+        ____ pivot > k:
+            r_ self.quick_select(nums, lo, pivot, k)
+        ____
+            r_ self.quick_select(nums, pivot + 1, hi, k)
 
 
-    def minMoves2(self, nums):
+    ___ minMoves2(self, nums
         """
         find the median rather than the average
 
@@ -57,16 +57,16 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         median = self.quick_select(nums, 0, n, n//2)
-        return sum(map(lambda x: abs(x - median), nums))
+        r_ sum(map(lambda x: abs(x - median), nums))
 
-    def find_median(self, nums):
-        n = len(nums)
+    ___ find_median(self, nums
+        n = le.(nums)
         nums.sort()
-        return nums[n//2]
+        r_ nums[n//2]
 
-    def minMoves2_error(self, nums):
+    ___ minMoves2_error(self, nums
         """
         move to the average, since incr and decr cost is 1
 
@@ -75,11 +75,11 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         avg = round(sum(nums) / n)
-        return sum(map(lambda x: abs(x - avg), nums))
+        r_ sum(map(lambda x: abs(x - avg), nums))
 
 
-if __name__ == "__main__":
-    assert Solution().minMoves2([1,2,3]) == 2
-    assert Solution().minMoves2([1,0,0,8,6]) == 14
+__ __name__ __ "__main__":
+    assert Solution().minMoves2([1,2,3]) __ 2
+    assert Solution().minMoves2([1,0,0,8,6]) __ 14

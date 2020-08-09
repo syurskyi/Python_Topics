@@ -9,27 +9,27 @@ may assume that each input would have exactly one solution.
 """
 
 
-class Solution(object):
-    def threeSumClosest(self, nums, target):
+class Solution(object
+    ___ threeSumClosest(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: int
         """
         nums.sort()
-        n = len(nums)
+        n = le.(nums)
         res = nums[0] + nums[1] + nums[2]
-        for i in range(n - 2):
+        for i in range(n - 2
             l = i + 1
             r = n - 1
-            while l < r:
+            w___ l < r:
                 s = nums[i] + nums[l] + nums[r]
-                if abs(s - target) < abs(res - target):
+                __ abs(s - target) < abs(res - target
                     res = s
-                if s == target:
-                    return s
-                elif s < target:
+                __ s __ target:
+                    r_ s
+                ____ s < target:
                     l += 1
-                else:
+                ____
                     r -= 1
-        return res
+        r_ res

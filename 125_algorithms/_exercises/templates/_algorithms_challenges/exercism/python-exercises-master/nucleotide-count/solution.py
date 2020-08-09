@@ -1,18 +1,18 @@
 NUCLEOTIDES = 'ATCG'
 
 
-def count(strand, abbreviation):
+___ count(strand, abbreviation
     _validate(abbreviation)
-    return strand.count(abbreviation)
+    r_ strand.count(abbreviation)
 
 
-def nucleotide_counts(strand):
-    return {
+___ nucleotide_counts(strand
+    r_ {
         abbr: strand.count(abbr)
         for abbr in NUCLEOTIDES
     }
 
 
-def _validate(abbreviation):
-    if abbreviation not in NUCLEOTIDES:
+___ _validate(abbreviation
+    __ abbreviation not in NUCLEOTIDES:
         raise ValueError('%s is not a nucleotide.' % abbreviation)

@@ -3,8 +3,8 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def lengthOfLongestSubstringTwoDistinct(self, s):
+class Solution(object
+    ___ lengthOfLongestSubstringTwoDistinct(self, s
         """
         :type s: str
         :rtype: int
@@ -12,17 +12,17 @@ class Solution(object):
         hashmap = {}
         l = 0
         res = 0
-        for i, c in enumerate(s):
+        for i, c in enumerate(s
             hashmap[c] = hashmap.get(c, 0)+1
-            while len(hashmap) > 2:
+            w___ le.(hashmap) > 2:
                 hashmap[s[l]] -= 1
-                if hashmap[s[l]] == 0: del hashmap[s[l]]
+                __ hashmap[s[l]] __ 0: del hashmap[s[l]]
                 l += 1
             res = max(res, i-l+1)
-        res = max(res, len(s)-l)
-        return res
+        res = max(res, le.(s)-l)
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             'abccccbbb',
             'eceba',
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

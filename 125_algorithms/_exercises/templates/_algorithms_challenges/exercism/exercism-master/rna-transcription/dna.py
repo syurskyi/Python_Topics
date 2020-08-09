@@ -1,16 +1,16 @@
-def to_rna(strand):
+___ to_rna(strand
     result = ""
 
     for i in strand:
         result += pairing_for(i)
 
-    return result
+    r_ result
 
 
-def pairing_for(nucleobase):
+___ pairing_for(nucleobase
     pairings = {"G": "C",
                 "C": "G",
                 "A": "U",
                 "T": "A"}
 
-    return pairings[nucleobase]
+    r_ pairings[nucleobase]

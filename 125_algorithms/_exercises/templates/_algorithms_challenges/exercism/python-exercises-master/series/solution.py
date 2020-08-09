@@ -1,6 +1,6 @@
-def slices(series, length):
+___ slices(series, length
     numbers = [int(digit) for digit in series]
-    if not 1 <= length <= len(numbers):
+    __ not 1 <= length <= le.(numbers
         raise ValueError("Invalid slice length for this series: " + str(
             length))
-    return [numbers[i:i + length] for i in range(len(numbers) - length + 1)]
+    r_ [numbers[i:i + length] for i in range(le.(numbers) - length + 1)]

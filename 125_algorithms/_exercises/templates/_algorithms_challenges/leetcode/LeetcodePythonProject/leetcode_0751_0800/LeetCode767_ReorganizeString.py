@@ -3,36 +3,36 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def reorganizeString(self, S):
+class Solution(object
+    ___ reorganizeString(self, S
         """
         :type S: str
         :rtype: str
         """
-        import heapq
+        ______ heapq
         s = S
         hashmap = {}
         for c in s:
             hashmap[c] = hashmap.get(c, 0)+1
         heap = []
-        for c, freq in hashmap.items():
+        for c, freq in hashmap.items(
             heapq.heappush(heap, [-freq, c])
         res = ''
-        while heap:
+        w___ heap:
             freq1, c1 = heapq.heappop(heap)
-            if res and res[-1] == c1:
-                return ''
+            __ res and res[-1] __ c1:
+                r_ ''
             res += c1
-            if heap:
+            __ heap:
                 freq2, c2 = heapq.heappop(heap)
                 res += c2
-                if freq2+1 < 0:
+                __ freq2+1 < 0:
                     heapq.heappush(heap, [freq2+1, c2])
-            if freq1+1 < 0:
+            __ freq1+1 < 0:
                 heapq.heappush(heap, [freq1+1, c1])
-        return ''.join(res)
+        r_ ''.join(res)
     
-    def test(self):
+    ___ test(self
         testCases = [
             "vvvlo",
             "aab",
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

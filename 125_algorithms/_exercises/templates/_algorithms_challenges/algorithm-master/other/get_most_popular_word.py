@@ -5,7 +5,7 @@ Given an integer W that represents number of words and unlimited space complexit
 Write functions insert(word) and getMostPopularWord()
 such that getMostPopularWord() will always return the most popular word in the last W number of words.
 Create two solutions that will optimize run-time complexity for either function
-while sacrificing the run-time for the other function.
+w___ sacrificing the run-time for the other function.
 
 example1:
 let W = 2
@@ -48,9 +48,9 @@ Testing:
 ...     ((8, 'AB'), 'AB'),
 ...     ((8, 'AABB'), 'AAAB'),
 ...     ((8, 'ABABCCCBAC'), 'ABABBCCBBC'),
-... ):
+...
 ...     s = Solution(freq)
-...     for i in range(len(words)):
+...     for i in range(le.(words)):
 ...         gotcha.append(s.insert(words[i]) is None)
 ...         res = s.get_most_popular_word()
 ...         if freq == 0:
@@ -65,7 +65,7 @@ True
 
 
 class Solution:
-    def __init__(self, W):
+    ___ __init__(self, W
         self.cap = W
 
         self.size = 0
@@ -78,23 +78,23 @@ class Solution:
         self.freqs[0].nxt = self.freqs[1]
         self.freqs[1].pre = self.freqs[0]
 
-    def insert(self, word):
-        if not word or self.cap <= 0:
-            return
+    ___ insert(self, word
+        __ not word or self.cap <= 0:
+            r_
 
         # needs to evict first,
         # to ensure the coming word will be added at the tail
-        while self.size >= self.cap:
+        w___ self.size >= self.cap:
             self.size -= 1
             self._evict_word()
 
         self.size += 1
         self._add_word(word)
 
-    def get_most_popular_word(self):
-        return self.freqs[1].pre.words[1].pre.word
+    ___ get_most_popular_word(self
+        r_ self.freqs[1].pre.words[1].pre.word
 
-    def _add_word(self, word):
+    ___ _add_word(self, word
         # update self.words
         node = WordNode(word)
         node.link(self.words[1].pre, self.words[1])
@@ -102,27 +102,27 @@ class Solution:
         # update self.freqs
         node = from_freq = to_freq = None
 
-        if self.nodes.get(word):
+        __ self.nodes.get(word
             node = self.nodes[word]
             from_freq = node.freq_node
             node.unlink()
-        else:
+        ____
             node = WordNode(word)
             from_freq = self.freqs[0]
             self.nodes[word] = node
 
-        if from_freq.nxt.freq == from_freq.freq + 1:
+        __ from_freq.nxt.freq __ from_freq.freq + 1:
             to_freq = from_freq.nxt
-        else:
+        ____
             to_freq = FreqNode(from_freq.freq + 1)
             from_freq.after(to_freq)
 
         to_freq.append_tail(node)
 
-        if from_freq.freq != 0 and from_freq.is_empty():
+        __ from_freq.freq != 0 and from_freq.is_empty(
             from_freq.unlink()
 
-    def _evict_word(self):
+    ___ _evict_word(self
         # update self.words
         node = self.words[0].nxt
         node.unlink()
@@ -134,45 +134,45 @@ class Solution:
         to_freq = None
         node.unlink()
 
-        if from_freq.freq == 1:
+        __ from_freq.freq __ 1:
             self.nodes[word] = None
-            if from_freq.is_empty():
+            __ from_freq.is_empty(
                 from_freq.unlink()
-            return
+            r_
 
-        if from_freq.pre.freq == from_freq.freq - 1:
+        __ from_freq.pre.freq __ from_freq.freq - 1:
             to_freq = from_freq.pre
-        else:
+        ____
             to_freq = FreqNode(from_freq.freq - 1)
             from_freq.before(to_freq)
 
         to_freq.append_tail(node)
 
-        if from_freq.is_empty():
+        __ from_freq.is_empty(
             from_freq.unlink()
 
 
 class WordNode:
-    def __init__(self, word, freq_node=None, pre=None, nxt=None):
+    ___ __init__(self, word, freq_node=None, pre=None, nxt=None
         self.word = word
         self.freq_node = freq_node
         self.pre = pre
         self.nxt = nxt
 
-    def link(self, pre, nxt):
+    ___ link(self, pre, nxt
         self.pre = pre
         self.nxt = nxt
         pre.nxt = self
         nxt.pre = self
 
-    def unlink(self):
+    ___ unlink(self
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
         self.pre = self.nxt = self.freq_node = None
 
 
 class FreqNode:
-    def __init__(self, freq, pre=None, nxt=None):
+    ___ __init__(self, freq, pre=None, nxt=None
         self.freq = freq
         self.pre = pre
         self.nxt = nxt
@@ -180,27 +180,27 @@ class FreqNode:
         self.words[0].nxt = self.words[1]
         self.words[1].pre = self.words[0]
 
-    def unlink(self):
+    ___ unlink(self
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
         self.pre = self.nxt = self.words = None
 
-    def before(self, freq_node):
+    ___ before(self, freq_node
         freq_node.pre = self.pre
         freq_node.nxt = self
         self.pre.nxt = freq_node
         self.pre = freq_node
 
-    def after(self, freq_node):
+    ___ after(self, freq_node
         freq_node.pre = self
         freq_node.nxt = self.nxt
         self.nxt.pre = freq_node
         self.nxt = freq_node
 
-    def is_empty(self):
-        return self.words[0].nxt is self.words[1]
+    ___ is_empty(self
+        r_ self.words[0].nxt is self.words[1]
 
-    def append_tail(self, word_node):
+    ___ append_tail(self, word_node
         word_node.freq_node = self
         word_node.pre = self.words[1].pre
         word_node.nxt = self.words[1]
@@ -208,15 +208,15 @@ class FreqNode:
         self.words[1].pre = word_node
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     s = Solution(8)
     _in, _out = 'ABABCCCBAC', 'ABABBCCBBC'
     gotcha = []
 
-    for i in range(len(_in)):
+    for i in range(le.(_in)):
         gotcha.append(s.insert(_in[i]) is None)
         res = s.get_most_popular_word()
-        if res != _out[i]: print(_in, i, _in[i], res)
-        gotcha.append(res == _out[i])
+        __ res != _out[i]: print(_in, i, _in[i], res)
+        gotcha.append(res __ _out[i])
 
     print(bool(gotcha) and all(gotcha))

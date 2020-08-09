@@ -1,11 +1,11 @@
 #!python3
 #water_reminder.py is a script to email you a reminder to drink water hourly
 
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+______ smtplib
+from email.mime.multipart ______ MIMEMultipart
+from email.mime.text ______ MIMEText
 
-from email_list import EMAILS
+from email_list ______ EMAILS
 
 DATA_FILE = 'data'
 from_addr = 'your-gmail@gmail.com'

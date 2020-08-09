@@ -1,5 +1,5 @@
 class Solution:
-    def isValid(self, s):
+    ___ isValid(self, s
         """
         :type s: str
         :rtype: bool
@@ -8,11 +8,11 @@ class Solution:
         pairs = {')': '(', ']': '[', '}': '{'}
 
         for c in s:
-            if c in '([{':
+            __ c in '([{':
                 stack.append(c)
-            elif c not in ')]}':
-                return False
-            elif not stack or pairs[c] != stack.pop():
-                return False
+            ____ c not in ')]}':
+                r_ False
+            ____ not stack or pairs[c] != stack.pop(
+                r_ False
 
-        return not stack
+        r_ not stack

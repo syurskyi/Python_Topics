@@ -34,13 +34,13 @@ Given n = 6, edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]
         5
 return [3, 4]
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def findMinHeightTrees(self, n, edges):
+class Solution(object
+    ___ findMinHeightTrees(self, n, edges
         """
         Longest path algorithm
         Diameter of a tree
@@ -48,8 +48,8 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        if not edges:
-            return [0]
+        __ not edges:
+            r_ [0]
 
         V = {i: [] for i in xrange(n)}
         for a, b in edges:
@@ -62,49 +62,49 @@ class Solution(object):
 
         ret = []
         cur = last
-        for _ in xrange((level-1)/2):
+        for _ in xrange((level-1)/2
             cur = pi[cur]
         ret.append(cur)
 
-        if level%2 == 0:
+        __ level%2 __ 0:
             ret.append(pi[cur])
 
-        return ret
+        r_ ret
 
-    def bfs(self, s, V):
+    ___ bfs(self, s, V
         # bfs
-        visited = [False for _ in xrange(len(V))]
-        pi = [-1 for _ in xrange(len(V))]
+        visited = [False for _ in xrange(le.(V))]
+        pi = [-1 for _ in xrange(le.(V))]
         last = s
         level = 0
         q = []
         q.append(s)
-        while q:
-            l = len(q)
-            for i in xrange(l):
+        w___ q:
+            l = le.(q)
+            for i in xrange(l
                 cur = q[i]
                 last = cur
                 visited[cur] = True
                 for nbr in V[cur]:
-                    if not visited[nbr]:
+                    __ not visited[nbr]:
                         pi[nbr] = cur
                         q.append(nbr)
 
             q = q[l:]
             level += 1
 
-        return level, pi, last
+        r_ level, pi, last
 
 
-class Solution_TLE(object):
-    def findMinHeightTrees_TLE(self, n, edges):
+class Solution_TLE(object
+    ___ findMinHeightTrees_TLE(self, n, edges
         """
         :type n: int
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        if not edges:
-            return 0
+        __ not edges:
+            r_ 0
 
         V = {i: [] for i in xrange(n)}
         for a, b in edges:
@@ -113,47 +113,47 @@ class Solution_TLE(object):
 
         ret = []
         mini = n
-        for k in V.keys():
+        for k in V.keys(
             l = self.bfs(k, V)
-            if l < mini:
+            __ l < mini:
                 ret = [k]
                 mini = l
-            elif l == mini:
+            ____ l __ mini:
                 ret.append(k)
 
-        return ret
+        r_ ret
 
-    def bfs(self, s, V):
+    ___ bfs(self, s, V
         # bfs
-        visisted = [False for _ in xrange(len(V))]
+        visisted = [False for _ in xrange(le.(V))]
         q = []
         level = 0
         q.append(s)
-        while q:
-            l = len(q)
-            for i in xrange(l):
+        w___ q:
+            l = le.(q)
+            for i in xrange(l
                 cur = q[i]
                 visisted[cur] = True
                 for nbr in V[cur]:
-                    if not visisted[nbr]:
+                    __ not visisted[nbr]:
                         q.append(nbr)
 
             q = q[l:]
             level += 1
 
-        return level
+        r_ level
 
 
-class SolutionError(object):
-    def findMinHeightTrees(self, n, edges):
+class SolutionError(object
+    ___ findMinHeightTrees(self, n, edges
         """
         One pass
         :type n: int
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        if not edges:
-            return 0
+        __ not edges:
+            r_ 0
 
         V = {i: [] for i in xrange(n)}
         for a, b in edges:
@@ -161,8 +161,8 @@ class SolutionError(object):
             V[b].append(a)
 
         leaf = None
-        for k, v in V.items():
-            if len(v) == 1:
+        for k, v in V.items(
+            __ le.(v) __ 1:
                 leaf = k
                 break
 
@@ -172,25 +172,25 @@ class SolutionError(object):
         q = []
         level = 0
         q.append(leaf)
-        while q:
-            l = len(q)
-            for i in xrange(l):
+        w___ q:
+            l = le.(q)
+            for i in xrange(l
                 cur = q[i]
                 h2v[level].append(cur)
                 visisted[cur] = True
                 for nbr in V[cur]:
-                    if not visisted[nbr]:
+                    __ not visisted[nbr]:
                         q.append(nbr)
 
             q = q[l:]
             level += 1
 
-        if level%2 == 0:
-            return h2v[level/2-1]+h2v[level/2]
-        else:
-            return h2v[level/2]
+        __ level%2 __ 0:
+            r_ h2v[level/2-1]+h2v[level/2]
+        ____
+            r_ h2v[level/2]
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     # print Solution().findMinHeightTrees(6, [[3,0],[3,1],[3,2],[3,4],[5,4]])
-    assert Solution().findMinHeightTrees(7, [[0, 1], [1, 2], [1, 3], [2, 4], [3, 5], [4, 6]]) == [1, 2]
+    assert Solution().findMinHeightTrees(7, [[0, 1], [1, 2], [1, 3], [2, 4], [3, 5], [4, 6]]) __ [1, 2]

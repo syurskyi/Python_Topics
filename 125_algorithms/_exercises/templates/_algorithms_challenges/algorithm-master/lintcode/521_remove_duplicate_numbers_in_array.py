@@ -7,18 +7,18 @@ class Solution:
     @param: nums: an array of integers
     @return: the number of unique integers
     """
-    def deduplication(self, nums):
+    ___ deduplication(self, nums
         ans = 0
-        if not nums:
-            return ans
+        __ not nums:
+            r_ ans
 
         exists = set()
-        for i in range(len(nums)):
-            if nums[i] not in exists:
+        for i in range(le.(nums)):
+            __ nums[i] not in exists:
                 exists.add(nums[i])
                 ans += 1
 
-        return ans
+        r_ ans
 
 
 """
@@ -30,18 +30,18 @@ class Solution:
     @param: nums: an array of integers
     @return: the number of unique integers
     """
-    def deduplication(self, nums):
+    ___ deduplication(self, nums
         ans = 0
-        if not nums:
-            return ans
+        __ not nums:
+            r_ ans
 
         nums.sort()
 
         # for `nums[0]`
         ans = 1
-        for i in range(1, len(nums)):
-            if nums[i - 1] != nums[i]:
+        for i in range(1, le.(nums)):
+            __ nums[i - 1] != nums[i]:
                 nums[ans] = nums[i]
                 ans += 1
 
-        return ans
+        r_ ans

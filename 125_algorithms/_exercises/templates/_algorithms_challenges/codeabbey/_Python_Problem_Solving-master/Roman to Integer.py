@@ -1,49 +1,49 @@
 class Solution:
-    def romanToInt(self, s: str) -> int:
+    ___ romanToInt(self, s: str) -> int:
         rom_dic = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
         count = 0
         #i will track the length of the string
         i = 0
-        while i != len(s):
-            if s[i] == 'I':
+        w___ i != le.(s
+            __ s[i] __ 'I':
                 try:
-                    if s[i+1]=='V':
+                    __ s[i+1]__'V':
                         count += 4
                         i += 2
                         continue
-                    elif s[i+1]=='X':
+                    ____ s[i+1]__'X':
                         count += 9
                         i += 2
                         continue
                 except:
                     pass
-            if s[i] == 'X':
+            __ s[i] __ 'X':
                 try:
-                    if s[i+1]=='L':
+                    __ s[i+1]__'L':
                         count += 40
                         i += 2
                         continue
-                    elif s[i+1]=='C':
+                    ____ s[i+1]__'C':
                         count += 90
                         i += 2
                         continue
                 except:
                     pass
-            if s[i] == 'C':
+            __ s[i] __ 'C':
                 try:
-                    if s[i+1]=='D':
+                    __ s[i+1]__'D':
                         count += 400
                         i += 2
                         continue
-                    elif s[i+1]=='M':
+                    ____ s[i+1]__'M':
                         count += 900
                         i += 2
                         continue
                 except:
                     pass
-            if s[i] in rom_dic:
+            __ s[i] in rom_dic:
                 count += rom_dic[s[i]]
                 i += 1
             
-        return count
+        r_ count
                 

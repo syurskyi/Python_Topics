@@ -15,8 +15,8 @@ r2 => requery => same seats if seats are also available,
 
 
 class Reservation:
-    def __init__(self, m, n):
+    ___ __init__(self, m, n
         pass
 
-    def get_seats(self, user_id, n=0):
+    ___ get_seats(self, user_id, n=0
         pass

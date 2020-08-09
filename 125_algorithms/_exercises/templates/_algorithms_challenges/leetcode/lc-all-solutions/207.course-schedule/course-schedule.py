@@ -1,20 +1,20 @@
-class Solution(object):
-  def canFinish(self, numCourses, prerequisites):
+class Solution(object
+  ___ canFinish(self, numCourses, prerequisites
     """
     :type numCourses: int
     :type prerequisites: List[List[int]]
     :rtype: bool
     """
 
-    def dfs(start, parent, visited, graph):
+    ___ dfs(start, parent, visited, graph
       visited[start] = 1
       for nbr in graph[start]:
-        if visited[nbr] == 1:
-          return False
-        if dfs(nbr, start, visited, graph) == False:
-          return False
+        __ visited[nbr] __ 1:
+          r_ False
+        __ dfs(nbr, start, visited, graph) __ False:
+          r_ False
       visited[start] = 2
-      return True
+      r_ True
 
     graph = [[] for _ in range(0, numCourses)]
     for pre in prerequisites:
@@ -25,7 +25,7 @@ class Solution(object):
 
     for pre in prerequisites:
       start, end = pre
-      if visited[start] == 0:
-        if dfs(start, None, visited, graph) == False:
-          return False
-    return True
+      __ visited[start] __ 0:
+        __ dfs(start, None, visited, graph) __ False:
+          r_ False
+    r_ True

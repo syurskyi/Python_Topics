@@ -8,13 +8,13 @@ m = 2097152
 consonants = "bcdfghjklmnprstvwxz"
 vowels = "aeiou"
 
-for length in data.strip().split(" "):
+for length in data.strip().split(" "
     output = ""
     for i in range(int(length)):
         x = (int(a)*int(x)+int(c))%int(m)
-        if i%2==0: # ODDS
+        __ i%2__0: # ODDS
             output+=consonants[x%19]
-        else: # EVENS
+        ____ # EVENS
             output+=vowels[x%5]
             
     print(output,end=" ")

@@ -20,7 +20,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def isMatch_error(self, s, p):
+    ___ isMatch_error(self, s, p
         """
         Using FSA? It is complicated to build compared to 066 Valid Number, since you have to construct the transition
         table from the pattern
@@ -37,38 +37,38 @@ class Solution:
 
         index = 0
         state = 0
-        while index < len(tape) and state < len(regex):
+        w___ index < le.(tape) and state < le.(regex
             char = tape[index]
-            if state+1 < len(regex) and regex[state+1] == "*":
-                if regex[state] != ".":
-                    if char == regex[state]:  # advance tape
-                        while index < len(tape) and tape[index] == char: index += 1
+            __ state+1 < le.(regex) and regex[state+1] __ "*":
+                __ regex[state] != ".":
+                    __ char __ regex[state]:  # advance tape
+                        w___ index < le.(tape) and tape[index] __ char: index += 1
                         state += 2
-                    else:
+                    ____
                         state += 2
-                else:  # .*
+                ____  # .*
                     state += 2
-                    if state < len(regex):
-                        if regex[state] != ".":  # find until the next char in regex
-                            while index < len(tape) and tape[index] != regex[state]: index += 1
-                        else:  # difficult part
+                    __ state < le.(regex
+                        __ regex[state] != ".":  # find until the next char in regex
+                            w___ index < le.(tape) and tape[index] != regex[state]: index += 1
+                        ____  # difficult part
                             count = 1
 
-                    else:
-                        return True
-            else:  # no * appended
-                if char == regex[state] or regex[state] == ".":
+                    ____
+                        r_ True
+            ____  # no * appended
+                __ char __ regex[state] or regex[state] __ ".":
                     index += 1
                     state += 1
-                else:
+                ____
                     break
 
-        if index == len(tape) and state == len(regex):
-            return True
-        return False
+        __ index __ le.(tape) and state __ le.(regex
+            r_ True
+        r_ False
 
 
-    def isMatch_TLE(self, s, p):
+    ___ isMatch_TLE(self, s, p
         """
         Algorithm: dfs, advancing the tape
         "." is not a problem
@@ -86,32 +86,32 @@ class Solution:
         state = 0
 
         # dfs terminal condition
-        if not tape and not regex:
-            return True
+        __ not tape and not regex:
+            r_ True
         # if not s and p or s and not p:
-        if tape and not regex:  # possible "", "a*"
-            return False
+        __ tape and not regex:  # possible "", "a*"
+            r_ False
 
-        if not tape and regex:
-            if state+1 < len(regex) and regex[state+1] == "*":
-                return self.isMatch(tape, regex[state+2:])
-            else:
-                return False
+        __ not tape and regex:
+            __ state+1 < le.(regex) and regex[state+1] __ "*":
+                r_ self.isMatch(tape, regex[state+2:])
+            ____
+                r_ False
 
-        if state+1 < len(regex) and regex[state+1] == "*":
-            if tape[index] == regex[state] or regex[state] == ".":  # consume tokens
-                return self.isMatch(tape[index+1:], regex[state:]) or \
+        __ state+1 < le.(regex) and regex[state+1] __ "*":
+            __ tape[index] __ regex[state] or regex[state] __ ".":  # consume tokens
+                r_ self.isMatch(tape[index+1:], regex[state:]) or \
                        self.isMatch(tape[index+1:], regex[state+2:]) or \
                        self.isMatch(tape[index:], regex[state+2:])
-            else:
-                return self.isMatch(tape[index:], regex[state+2:])
-        else:  # without trailing *
-            if tape[index] == regex[state] or regex[state] == ".":
-                return self.isMatch(tape[index+1:], regex[state+1:])
-            else:
-                return False
+            ____
+                r_ self.isMatch(tape[index:], regex[state+2:])
+        ____  # without trailing *
+            __ tape[index] __ regex[state] or regex[state] __ ".":
+                r_ self.isMatch(tape[index+1:], regex[state+1:])
+            ____
+                r_ False
 
-    def isMatch(self, s, p):
+    ___ isMatch(self, s, p
         """
         Algorithm: dfs, advancing the tape  --> dp
 
@@ -136,52 +136,52 @@ class Solution:
         tape = s
         regex = p
 
-        m = len(tape)
-        n = len(regex)
+        m = le.(tape)
+        n = le.(regex)
 
         dp = [[False for _ in xrange(n+1)] for _ in xrange(m+1)]
 
         # edge cases
         dp[m][n] = True
-        for j in xrange(n-1, -1, -1):
-            if regex[j] == "*":
+        for j in xrange(n-1, -1, -1
+            __ regex[j] __ "*":
                 dp[m][j] = dp[m][j+1]
-            elif j+1 < n and regex[j+1] == "*":
+            ____ j+1 < n and regex[j+1] __ "*":
                 dp[m][j] = dp[m][j+1]
-            else:
+            ____
                 dp[m][j] = False
 
         # normal cases
-        for i in xrange(m-1, -1, -1):
-            for j in xrange(n-1, -1, -1):
-                if regex[j] == "*":
-                    if j-1 >= 0 and regex[j-1] != "*":
+        for i in xrange(m-1, -1, -1
+            for j in xrange(n-1, -1, -1
+                __ regex[j] __ "*":
+                    __ j-1 >= 0 and regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip
-                    else:
-                        return False  # two consecutive *
-                elif j+1 < n and regex[j+1] == "*":
-                    if tape[i] == regex[j] or regex[j] == ".":
+                    ____
+                        r_ False  # two consecutive *
+                ____ j+1 < n and regex[j+1] __ "*":
+                    __ tape[i] __ regex[j] or regex[j] __ ".":
                         dp[i][j] = dp[i][j+2] or dp[i+1][j] or dp[i+1][j+2]  # what is done in dfs
-                    else:
+                    ____
                         dp[i][j] = dp[i][j+2]
-                else:
-                    if tape[i] == regex[j] or regex[j] == ".":
+                ____
+                    __ tape[i] __ regex[j] or regex[j] __ ".":
                         dp[i][j] = dp[i+1][j+1]
-                    else:
+                    ____
                         dp[i][j] = False
 
         # notice that in edge cases and normal cases, checking conditions are exactly the same
 
-        return dp[0][0]
+        r_ dp[0][0]
 
 
-if __name__ == "__main__":
-    assert Solution().isMatch("aa", "a") == False
-    assert Solution().isMatch("aa", "aa") == True
-    assert Solution().isMatch("aaa", "aa") == False
-    assert Solution().isMatch("aa", "a*") == True
-    assert Solution().isMatch("ab", ".*") == True
-    assert Solution().isMatch("aab", "c*a*b") == True
-    assert Solution().isMatch("aaa", "a*a") == True
-    assert Solution().isMatch("bbbba", ".*a*a") == True
-    assert Solution().isMatch("a", "aa*") == True
+__ __name__ __ "__main__":
+    assert Solution().isMatch("aa", "a") __ False
+    assert Solution().isMatch("aa", "aa") __ True
+    assert Solution().isMatch("aaa", "aa") __ False
+    assert Solution().isMatch("aa", "a*") __ True
+    assert Solution().isMatch("ab", ".*") __ True
+    assert Solution().isMatch("aab", "c*a*b") __ True
+    assert Solution().isMatch("aaa", "a*a") __ True
+    assert Solution().isMatch("bbbba", ".*a*a") __ True
+    assert Solution().isMatch("a", "aa*") __ True

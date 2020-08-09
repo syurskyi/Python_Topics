@@ -1,20 +1,20 @@
-def meeting_planner(slots1, slots2, duration):
-    if not slots1 or not slots2 or not duration:
-        return []
+___ meeting_planner(slots1, slots2, duration
+    __ not slots1 or not slots2 or not duration:
+        r_ []
 
-    m, n = len(slots1), len(slots2)
+    m, n = le.(slots1), le.(slots2)
     i = j = 0
 
-    while i < m and j < n:
+    w___ i < m and j < n:
         start = max(slots1[i][0], slots2[j][0])
         end = min(slots1[i][1], slots2[j][1])
 
-        if start + duration <= end:
-            return [start, start + duration]
+        __ start + duration <= end:
+            r_ [start, start + duration]
 
-        if slots1[i][1] < slots2[j][1]:
+        __ slots1[i][1] < slots2[j][1]:
             i += 1
-        else:
+        ____
             j += 1
 
-    return []
+    r_ []

@@ -3,18 +3,18 @@ by Peter Norvig for the course "Design of Computer Programs" on Udacity.
 https://www.udacity.com/course/cs212
 """
 
-from itertools import permutations
+from itertools ______ permutations
 
 
-def just_right_of(x, y):
-    return x - y == 1
+___ just_right_of(x, y
+    r_ x - y __ 1
 
 
-def next_to(x, y):
-    return abs(x - y) == 1
+___ next_to(x, y
+    r_ abs(x - y) __ 1
 
 
-def solution():
+___ solution(
     houses = first, _, middle, _, _ = range(5)
     orderings = list(permutations(houses))
     result = next(
@@ -26,16 +26,16 @@ def solution():
             Norwegian: "Norwegian"
         }[x] for x in (water, zebra)]
         for (red, green, ivory, yellow, blue) in orderings
-        if just_right_of(green, ivory)
+        __ just_right_of(green, ivory)
         for (Englishman, Spaniard, Ukranian, Japanese, Norwegian) in orderings
-        if Englishman is red if Norwegian is first if next_to(Norwegian, blue)
-        for (coffee, tea, milk, oj, water) in orderings if coffee is green
-        if Ukranian is tea if milk is middle
+        __ Englishman is red __ Norwegian is first __ next_to(Norwegian, blue)
+        for (coffee, tea, milk, oj, water) in orderings __ coffee is green
+        __ Ukranian is tea __ milk is middle
         for (OldGold, Kools, Chesterfields, LuckyStrike, Parliaments
-             ) in orderings if Kools is yellow if LuckyStrike is oj
-        if Japanese is Parliaments
-        for (dog, snails, fox, horse, zebra) in orderings if Spaniard is dog
-        if OldGold is snails if next_to(Chesterfields, fox)
-        if next_to(Kools, horse))
-    return ("It is the {} who drinks the water.\n"
+             ) in orderings __ Kools is yellow __ LuckyStrike is oj
+        __ Japanese is Parliaments
+        for (dog, snails, fox, horse, zebra) in orderings __ Spaniard is dog
+        __ OldGold is snails __ next_to(Chesterfields, fox)
+        __ next_to(Kools, horse))
+    r_ ("It is the {} who drinks the water.\n"
             "The {} keeps the zebra.").format(*result)

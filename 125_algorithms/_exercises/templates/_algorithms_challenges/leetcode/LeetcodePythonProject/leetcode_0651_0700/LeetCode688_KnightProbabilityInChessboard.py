@@ -3,8 +3,8 @@ Created on Oct 23, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def knightProbability(self, N, K, r, c):
+class Solution(object
+    ___ knightProbability(self, N, K, r, c
         """
         :type N: int
         :type K: int
@@ -13,19 +13,19 @@ class Solution(object):
         :rtype: float
         """
         dp = [[1]*N for _ in range(N)]
-        for _ in range(K):
+        for _ in range(K
             dp1 = [[0]*N for _ in range(N)]
-            for i in range(N):
-                for j in range(N):
+            for i in range(N
+                for j in range(N
                     for row, col in (i+2, j-1), (i+2, j+1),\
                         (i-2, j-1), (i-2, j+1), (i+1, j-2), (i+1, j+2),\
-                        (i-1, j+2), (i-1, j-2):
-                        if 0 <= row < N and 0 <= col < N:
+                        (i-1, j+2), (i-1, j-2
+                        __ 0 <= row < N and 0 <= col < N:
                             dp1[i][j] += dp[row][col]
             dp = dp1
-        return float(dp[r][c])/8**K
+        r_ float(dp[r][c])/8**K
     
-    def test(self):
+    ___ test(self
         testCases = [
             [3, 2, 0, 0],
         ]
@@ -38,5 +38,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

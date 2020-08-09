@@ -1,4 +1,4 @@
-from karma import User, Transaction
+from karma ______ User, Transaction
 
 alice = User('alice')
 bob = User('bob')
@@ -13,41 +13,41 @@ transactions = [
 ]
 
 
-def test_init():
-    assert alice.name == 'alice'
-    assert bob.name == 'bob'
-    assert tim.name == 'tim'
-    assert alice._transactions == []
-    assert bob._transactions == []
-    assert tim._transactions == []
+___ test_init(
+    assert alice.name __ 'alice'
+    assert bob.name __ 'bob'
+    assert tim.name __ 'tim'
+    assert alice._transactions __ []
+    assert bob._transactions __ []
+    assert tim._transactions __ []
 
 
-def test_adding_karma():
+___ test_adding_karma(
     bob + transactions[0]
-    assert bob.karma == 1
+    assert bob.karma __ 1
     alice + transactions[1]
-    assert alice.karma == 2
+    assert alice.karma __ 2
     bob + transactions[2]
-    assert bob.karma == 4
+    assert bob.karma __ 4
     alice + transactions[3]
-    assert alice.karma == 6
+    assert alice.karma __ 6
     tim + transactions[4]
-    assert tim.karma == 2
+    assert tim.karma __ 2
 
 
-def test_upvotes_property():
-    assert bob.points == [1, 3]
-    assert alice.points == [2, 4]
-    assert tim.points == [2]
+___ test_upvotes_property(
+    assert bob.points __ [1, 3]
+    assert alice.points __ [2, 4]
+    assert tim.points __ [2]
 
 
-def test_fans_property():
-    assert tim.fans == 1
-    assert bob.fans == 2
-    assert alice.fans == 2
+___ test_fans_property(
+    assert tim.fans __ 1
+    assert bob.fans __ 2
+    assert alice.fans __ 2
 
 
-def test_str_dunder():
-    assert str(tim) == 'tim has a karma of 2 and 1 fan'
-    assert str(alice) == 'alice has a karma of 6 and 2 fans'
-    assert str(bob) == 'bob has a karma of 4 and 2 fans'
+___ test_str_dunder(
+    assert str(tim) __ 'tim has a karma of 2 and 1 fan'
+    assert str(alice) __ 'alice has a karma of 6 and 2 fans'
+    assert str(bob) __ 'bob has a karma of 4 and 2 fans'

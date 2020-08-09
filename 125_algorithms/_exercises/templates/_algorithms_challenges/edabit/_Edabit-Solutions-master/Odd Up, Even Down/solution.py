@@ -1,8 +1,8 @@
-def transform(lst):
+___ transform(lst
     output= []
     for i in lst:
-        if i % 2 == 0:
+        __ i % 2 __ 0:
             output.append(i-1)
-        else:
+        ____
              output.append(i+1)
-    return output
+    r_ output

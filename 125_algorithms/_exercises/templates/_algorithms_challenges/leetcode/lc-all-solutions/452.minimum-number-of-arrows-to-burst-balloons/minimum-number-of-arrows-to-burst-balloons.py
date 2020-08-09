@@ -1,5 +1,5 @@
-class Solution(object):
-  def findMinArrowShots(self, points):
+class Solution(object
+  ___ findMinArrowShots(self, points
     """
     :type points: List[List[int]]
     :rtype: int
@@ -8,7 +8,7 @@ class Solution(object):
     points.sort(key=lambda p: p[1])
     end = float("-inf")
     for s, e in points:
-      if s > end:
+      __ s > end:
         ans += 1
         end = e
-    return ans
+    r_ ans

@@ -3,8 +3,8 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def slidingPuzzle(self, board):
+class Solution(object
+    ___ slidingPuzzle(self, board
         """
         :type board: List[List[int]]
         :rtype: int
@@ -14,34 +14,34 @@ class Solution(object):
         target = '123450'
         queue = [s]
         res = 0
-        while queue:
-            size = len(queue)
-            for _ in range(size):
+        w___ queue:
+            size = le.(queue)
+            for _ in range(size
                 s = queue.pop(0)
-                if s == target:
-                    return res
+                __ s __ target:
+                    r_ res
                 i = s.index('0')
                 for j in [i+1, i-1, i+3, i-3]:
-                    if j < 0 or j > 5 or\
-                        (i == 2 and j == 3) or\
-                        (i == 3 and j == 2):
+                    __ j < 0 or j > 5 or\
+                        (i __ 2 and j __ 3) or\
+                        (i __ 3 and j __ 2
                         continue
                     arr = list(s)
                     arr[i], arr[j] = arr[j], arr[i]
                     newS = ''.join(arr)
-                    if newS not in visited:
+                    __ newS not in visited:
                         visited.add(newS)
                         queue.append(newS)
             res += 1
-        return -1
+        r_ -1
     
-    def getZero(self, board):
-        for i in range(2):
-            for j in range(3):
-                if board[i][j] == 0:
-                    return i, j
+    ___ getZero(self, board
+        for i in range(2
+            for j in range(3
+                __ board[i][j] __ 0:
+                    r_ i, j
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[1,2,3],[4,0,5]],
             [[1,2,3],[5,4,0]],
@@ -55,5 +55,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

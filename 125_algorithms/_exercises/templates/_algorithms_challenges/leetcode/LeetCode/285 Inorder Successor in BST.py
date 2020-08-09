@@ -4,15 +4,15 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def inorderSuccessor(self, root, p):
+class Solution(object
+    ___ inorderSuccessor(self, root, p
         """
         search
 
@@ -23,14 +23,14 @@ class Solution(object):
         """
         find = [None]
         self.search(root, p, find)
-        return find[0]
+        r_ find[0]
 
-    def search(self, cur, p, find):
-        if not cur:
-            return
+    ___ search(self, cur, p, find
+        __ not cur:
+            r_
 
-        if cur.val > p.val:
+        __ cur.val > p.val:
             find[0] = cur
             self.search(cur.left, p, find)
-        else:
+        ____
             self.search(cur.right, p, find)

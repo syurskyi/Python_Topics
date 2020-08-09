@@ -3,8 +3,8 @@ Created on Oct 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def new21Game(self, N, K, W):
+class Solution(object
+    ___ new21Game(self, N, K, W
         """
         :type N: int
         :type K: int
@@ -12,16 +12,16 @@ class Solution(object):
         :rtype: float
         """
         n, k, w = N, K, W
-        if k == 0 or n >= k+w: return 1
+        __ k __ 0 or n >= k+w: r_ 1
         dp = [1.0]+[0.0]*n
         wSum = 1.0
-        for i in range(1, n+1):
+        for i in range(1, n+1
             dp[i] = wSum/w
-            if i < k: wSum += dp[i]
-            if i - w >= 0: wSum -= dp[i-w]
-        return sum(dp[k:])
+            __ i < k: wSum += dp[i]
+            __ i - w >= 0: wSum -= dp[i-w]
+        r_ sum(dp[k:])
     
-    def test(self):
+    ___ test(self
         testCases = [
             [10, 1, 10],
             [6, 1, 10],
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

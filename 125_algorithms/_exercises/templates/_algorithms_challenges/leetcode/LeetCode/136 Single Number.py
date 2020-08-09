@@ -6,7 +6,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 """
 __author__ = 'Danyang'
 class Solution:
-    def singleNumber(self, A):
+    ___ singleNumber(self, A
         """
         Cannot use hash table since extra memory
         Use XOR instead
@@ -35,4 +35,4 @@ class Solution:
         for element in A:
             storage ^= element # XOR
 
-        return storage
+        r_ storage

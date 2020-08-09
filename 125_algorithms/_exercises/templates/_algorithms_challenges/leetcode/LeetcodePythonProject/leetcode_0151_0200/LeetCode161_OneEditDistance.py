@@ -4,42 +4,42 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def isOneEditDistance(self, s, t):
+class Solution(object
+    ___ isOneEditDistance(self, s, t
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        if s is None or t is None:
-            return False
-        m, n = len(t), len(s)
-        if abs(m-n) > 1:
-            return False
+        __ s is None or t is None:
+            r_ False
+        m, n = le.(t), le.(s)
+        __ abs(m-n) > 1:
+            r_ False
         i, j, count = 0, 0, 0
-        while i < n and j < m:
-            if s[i] == t[j]:
+        w___ i < n and j < m:
+            __ s[i] __ t[j]:
                 i+=1
                 j+=1
-            else:
+            ____
                 count+=1
-                if count>1:
-                    return False
-                if m>n:
+                __ count>1:
+                    r_ False
+                __ m>n:
                     j+=1
-                elif n>m:
+                ____ n>m:
                     i+=1
-                else:
+                ____
                     i+=1
                     j+=1
-        if i < n or j < m:
+        __ i < n or j < m:
             count += 1
-        if count == 1:
-            return True
-        return False
+        __ count __ 1:
+            r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

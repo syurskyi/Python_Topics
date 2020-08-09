@@ -14,7 +14,7 @@ You cannot assign more than one cookie to one child.
 
 
 class Solution:
-    def findContentChildren(self, g, s):
+    ___ findContentChildren(self, g, s
         """
         Greedy
 
@@ -27,16 +27,16 @@ class Solution:
         ret = 0
         i = 0
         j = 0
-        while i < len(g) and j < len(s):
-            if g[i] <= s[j]:
+        w___ i < le.(g) and j < le.(s
+            __ g[i] <= s[j]:
                 ret += 1
                 i += 1
                 j += 1
-            else:
+            ____
                 j += 1
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().findContentChildren([10,9,8,7], [5,6,7,8]) == 2
+__ __name__ __ "__main__":
+    assert Solution().findContentChildren([10,9,8,7], [5,6,7,8]) __ 2

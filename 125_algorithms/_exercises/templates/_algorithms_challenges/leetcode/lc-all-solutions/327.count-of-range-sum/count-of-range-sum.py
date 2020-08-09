@@ -1,5 +1,5 @@
-class Solution(object):
-  def countRangeSum(self, nums, lower, upper):
+class Solution(object
+  ___ countRangeSum(self, nums, lower, upper
     """
     :type nums: List[int]
     :type lower: int
@@ -7,23 +7,23 @@ class Solution(object):
     :rtype: int
     """
 
-    def update(b, i, delta):
-      while i < len(b):
+    ___ update(b, i, delta
+      w___ i < le.(b
         b[i] += delta
         i += (i & -i)
 
-    def sumRange(b, i):
+    ___ sumRange(b, i
       ret = 0
-      while i > 0:
+      w___ i > 0:
         ret += b[i]
         i -= (i & -i)
-      return ret
+      r_ ret
 
     ans = 0
-    pres = [0] * (len(nums) + 1)
-    b = [0] * (len(nums) + 2)
+    pres = [0] * (le.(nums) + 1)
+    b = [0] * (le.(nums) + 2)
 
-    for i in range(0, len(nums)):
+    for i in range(0, le.(nums)):
       pres[i + 1] = pres[i] + nums[i]
 
     sortedPres = sorted(pres)
@@ -33,4 +33,4 @@ class Solution(object):
                                                                                                          end - upper))
       ans += count
       update(b, bisect.bisect_left(sortedPres, end) + 1, 1)
-    return ans
+    r_ ans

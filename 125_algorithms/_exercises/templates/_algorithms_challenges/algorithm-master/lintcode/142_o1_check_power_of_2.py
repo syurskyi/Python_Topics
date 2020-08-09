@@ -3,8 +3,8 @@ class Solution:
     @param: n: An integer
     @return: True or false
     """
-    def checkPowerOf2(self, n):
-        if not n or n <= 0:
-            return False
+    ___ checkPowerOf2(self, n
+        __ not n or n <= 0:
+            r_ False
 
-        return n & (n - 1) == 0
+        r_ n & (n - 1) __ 0

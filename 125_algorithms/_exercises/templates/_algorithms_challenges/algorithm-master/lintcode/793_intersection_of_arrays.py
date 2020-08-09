@@ -3,25 +3,25 @@ class Solution:
     @param A: the arrays
     @return: the number of the intersection of the arrays
     """
-    def intersectionOfArrays(self, A):
+    ___ intersectionOfArrays(self, A
         ans = 0
-        if not A:
-            return ans
+        __ not A:
+            r_ ans
 
-        n = len(A)
+        n = le.(A)
         C = {}
 
-        for i in range(n):
-            if not A[i]:
-                return ans
+        for i in range(n
+            __ not A[i]:
+                r_ ans
 
             for a in A[i]:
-                if a not in C:
+                __ a not in C:
                     C[a] = set()
                 C[a].add(i)
 
-        for a, S in C.items():
-            if len(S) == n:
+        for a, S in C.items(
+            __ le.(S) __ n:
                 ans += 1
 
-        return ans
+        r_ ans

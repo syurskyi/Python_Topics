@@ -3,23 +3,23 @@ class Solution:
     @param: s: the string that represents a number
     @return: whether the string is a valid number
     """
-    def isNumber(self, s):
-        if not s:
-            return False
+    ___ isNumber(self, s
+        __ not s:
+            r_ False
 
-        n = len(s)
+        n = le.(s)
         left, right = 0, n - 1
-        while left < n and s[left] == ' ':
+        w___ left < n and s[left] __ ' ':
             left += 1
-        while right >= 0 and s[right] == ' ':
+        w___ right >= 0 and s[right] __ ' ':
             right -= 1
-        if left < n and s[left] in ('+', '-'):
+        __ left < n and s[left] in ('+', '-'
             left += 1
 
-        if left > right:
-            return False
+        __ left > right:
+            r_ False
 
-        if left != 0 or right != n - 1:
+        __ left != 0 or right != n - 1:
             s = s[left:right + 1]
 
         zero = ord('0')
@@ -27,13 +27,13 @@ class Solution:
         is_contained_dot = False
         is_contained_num = False
         for char in s:
-            if char == '.' and is_contained_dot:
-                return False
-            if not (char == '.' or zero <= ord(char) <= nine):
-                return False
-            if char == '.':
+            __ char __ '.' and is_contained_dot:
+                r_ False
+            __ not (char __ '.' or zero <= ord(char) <= nine
+                r_ False
+            __ char __ '.':
                 is_contained_dot = True
-            if zero <= ord(char) <= nine:
+            __ zero <= ord(char) <= nine:
                 is_contained_num = True
 
-        return is_contained_num
+        r_ is_contained_num

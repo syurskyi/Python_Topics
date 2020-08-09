@@ -1,13 +1,13 @@
-import os
-import pickle
-from pprint import pprint as pp
-import sys
-import xml.dom.minidom
-import xmltodict
+______ os
+______ pickle
+from pprint ______ pprint as pp
+______ sys
+______ xml.dom.minidom
+______ xmltodict
 
-from goodreads import client
+from goodreads ______ client
 
-from authorize import authorize
+from authorize ______ authorize
 
 CONSUMER_KEY = os.environ.get('GR_KEY')
 CONSUMER_SECRET = os.environ.get('GR_SECRET')

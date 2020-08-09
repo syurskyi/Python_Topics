@@ -1,7 +1,7 @@
-import re
+______ re
 
 
-def count_indents(text):
+___ count_indents(text
     """Takes a string and counts leading white spaces, return int count"""
     t = re.match(r'^( *)', text)
-    return len(t.group(0))
+    r_ le.(t.group(0))

@@ -39,7 +39,7 @@ for all other languages.
 
 
 class StockSpanner:
-    def __init__(self):
+    ___ __init__(self
         """
         Consecutive Backward <=
         insort? O(n) or O(log n) using BST. Probably not for consecutive days
@@ -49,13 +49,13 @@ class StockSpanner:
         """
         self.stk = []   # [(price, span)]
 
-    def next(self, price: int) -> int:
+    ___ next(self, price: int) -> int:
         cur_span = 1
-        while self.stk and self.stk[-1][0] <= price:
+        w___ self.stk and self.stk[-1][0] <= price:
             _, span = self.stk.pop()
             cur_span += span
         self.stk.append((price, cur_span))
-        return cur_span
+        r_ cur_span
 
 
 

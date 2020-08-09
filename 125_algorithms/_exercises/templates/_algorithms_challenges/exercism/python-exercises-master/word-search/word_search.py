@@ -1,27 +1,27 @@
-class Point(object):
-    def __init__(self, x, y):
+class Point(object
+    ___ __init__(self, x, y
         self.x = x
         self.y = y
 
-    def __repr__(self):
-        return 'Point({}:{})'.format(self.x, self.y)
+    ___ __repr__(self
+        r_ 'Point({}:{})'.format(self.x, self.y)
 
-    def __add__(self, other):
-        return Point(self.x + other.x, self.y + other.y)
+    ___ __add__(self, other
+        r_ Point(self.x + other.x, self.y + other.y)
 
-    def __sub__(self, other):
-        return Point(self.x - other.x, self.y - other.y)
+    ___ __sub__(self, other
+        r_ Point(self.x - other.x, self.y - other.y)
 
-    def __eq__(self, other):
-        return self.x == other.x and self.y == other.y
+    ___ __eq__(self, other
+        r_ self.x __ other.x and self.y __ other.y
 
-    def __ne__(self, other):
-        return not(self == other)
+    ___ __ne__(self, other
+        r_ not(self __ other)
 
 
-class WordSearch(object):
-    def __init__(self, puzzle):
+class WordSearch(object
+    ___ __init__(self, puzzle
         pass
 
-    def search(self, word):
-        return None
+    ___ search(self, word
+        r_ None

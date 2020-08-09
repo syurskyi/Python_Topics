@@ -2,7 +2,7 @@
 # Score: 10
 
 
-import itertools
+______ itertools
 
 
 s = input().split()

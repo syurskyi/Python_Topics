@@ -27,11 +27,11 @@ Explantion: (-2) ^ 2 = 4
 Note:
 0 <= N <= 10^9
 """
-from collections import deque
+from collections ______ deque
 
 
 class Solution:
-    def baseNeg2(self, N: int) -> str:
+    ___ baseNeg2(self, N: int) -> str:
         """
         % -2, // -2 ? not really
 
@@ -53,15 +53,15 @@ class Solution:
         (-2) ^ 0, LSB set
         """
         ret = deque()
-        while N != 0:
+        w___ N != 0:
             r = N % 2  # r is the range of 0 and 2
             ret.appendleft(r)
             N -= r
             N //= -2
 
-        return "".join(map(str, ret)) or "0"
+        r_ "".join(map(str, ret)) or "0"
 
 
-if __name__ == "__main__":
-    assert Solution().baseNeg2(3) == "111"
-    assert Solution().baseNeg2(4) == "100"
+__ __name__ __ "__main__":
+    assert Solution().baseNeg2(3) __ "111"
+    assert Solution().baseNeg2(4) __ "100"

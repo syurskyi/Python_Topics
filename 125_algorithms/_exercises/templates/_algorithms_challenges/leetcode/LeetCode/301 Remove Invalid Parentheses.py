@@ -12,8 +12,8 @@ Examples:
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def removeInvalidParentheses(self, s):
+class Solution(object
+    ___ removeInvalidParentheses(self, s
         """
         Brute force: BFS and then validate
 
@@ -26,9 +26,9 @@ class Solution(object):
         rmcnt = self.minrm(s)
         ret = []
         self.dfs(s, "", 0, None, 0, rmcnt, ret)
-        return ret
+        r_ ret
 
-    def minrm(self, s):
+    ___ minrm(self, s
         """
         Find the minimal removal count to limit the search depth
         returns minimal number of removals
@@ -36,18 +36,18 @@ class Solution(object):
         rmcnt = 0
         left = 0
         for c in s:
-            if c == "(":
+            __ c __ "(":
                 left += 1
-            elif c == ")":
-                if left > 0:
+            ____ c __ ")":
+                __ left > 0:
                     left -= 1
-                else:
+                ____
                     rmcnt += 1
 
         rmcnt += left
-        return rmcnt
+        r_ rmcnt
 
-    def dfs(self, s, cur, left, pi, i, rmcnt, ret):
+    ___ dfs(self, s, cur, left, pi, i, rmcnt, ret
         """
         Remove parenthesis
         backtracking, post-check
@@ -59,24 +59,24 @@ class Solution(object):
         :param rmcnt: number of remaining removals needed
         :param ret: results
         """
-        if left < 0 or rmcnt < 0 or i > len(s):
-            return
-        if i == len(s):
-            if rmcnt == 0 and left == 0:
+        __ left < 0 or rmcnt < 0 or i > le.(s
+            r_
+        __ i __ le.(s
+            __ rmcnt __ 0 and left __ 0:
                 ret.append(cur)
-            return
+            r_
 
-        if s[i] not in ("(", ")"):  # skip non-parenthesis
+        __ s[i] not in ("(", ")"  # skip non-parenthesis
             self.dfs(s, cur+s[i], left, None, i+1, rmcnt, ret)
-        else:
-            if pi == s[i]:  # jump, if rm, rm them all to avoid duplication
-                while i < len(s) and pi and pi == s[i]: i, rmcnt = i+1, rmcnt-1
+        ____
+            __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
+                w___ i < le.(s) and pi and pi __ s[i]: i, rmcnt = i+1, rmcnt-1
                 self.dfs(s, cur, left, pi, i, rmcnt, ret)
-            else:
+            ____
                 self.dfs(s, cur, left, s[i], i+1, rmcnt-1, ret)
-                L = left+1 if s[i] == "(" else left-1  # consume "("
+                L = left+1 __ s[i] __ "(" else left-1  # consume "("
                 self.dfs(s, cur+s[i], L, None, i+1, rmcnt, ret)  # put
 
 
-if __name__ == "__main__":
-    assert Solution().removeInvalidParentheses("(a)())()") == ['(a())()', '(a)()()']
+__ __name__ __ "__main__":
+    assert Solution().removeInvalidParentheses("(a)())()") __ ['(a())()', '(a)()()']

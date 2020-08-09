@@ -1,4 +1,4 @@
-from Previous.community import get_csv, create_user_bar_chart
+from Previous.community ______ get_csv, create_user_bar_chart
 
 
 # making sure to call requests just once!
@@ -43,7 +43,7 @@ Pacific/Honolulu     | +
 """.splitlines()
 
 
-def test_output(capfd):
+___ test_output(capfd
     create_user_bar_chart(content)
     actual_output = [line.strip().replace(' ', '') for line in
                      capfd.readouterr()[0].splitlines()]

@@ -2,18 +2,18 @@
 # Score: 15
 
 
-def catAndMouse(catA, catB, mouseC):
+___ catAndMouse(catA, catB, mouseC
     distanceA = abs(catA - mouseC)
     distanceB = abs(catB - mouseC)
-    if distanceA > distanceB:
+    __ distanceA > distanceB:
         print('Cat B')
-    elif distanceA == distanceB:
+    ____ distanceA __ distanceB:
         print('Mouse C')
-    else:
+    ____
         print('Cat A')
 
 
 n = int(input())
-for i in range(n):
+for i in range(n
     catA, catB, mouseC = map(int, input().split())
     catAndMouse(catA, catB, mouseC)

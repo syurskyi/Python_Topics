@@ -19,45 +19,45 @@ Given word = "ABCCED", return true.
 Given word = "SEE", return true.
 Given word = "ABCB", return false.
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 
 class Solution:
-    def exist(self, board: List[List[str]], word: str) -> bool:
-        m, n = len(board), len(board[0])
+    ___ exist(self, board: List[List[str]], word: str) -> bool:
+        m, n = le.(board), le.(board[0])
         visited = defaultdict(lambda: defaultdict(bool))
-        for i in range(m):
-            for j in range(n):
-                if board[i][j] == word[0]:
-                    if self.dfs(board, visited, i, j, word, 1):
-                        return True
+        for i in range(m
+            for j in range(n
+                __ board[i][j] __ word[0]:
+                    __ self.dfs(board, visited, i, j, word, 1
+                        r_ True
 
-        return False
+        r_ False
 
-    def dfs(self, board, visited, i, j, word, idx):
+    ___ dfs(self, board, visited, i, j, word, idx
         visited[i][j] = True
-        if idx >= len(word):
-            return True
+        __ idx >= le.(word
+            r_ True
 
-        m, n = len(board), len(board[0])
+        m, n = le.(board), le.(board[0])
         for di, dj in dirs:
             I = i + di
             J = j + dj
-            if 0 <= I < m and 0 <= J < n and not visited[I][J] and board[I][J] == word[idx]:
-                if self.dfs(board, visited, I, J, word, idx + 1):
-                    return True
+            __ 0 <= I < m and 0 <= J < n and not visited[I][J] and board[I][J] __ word[idx]:
+                __ self.dfs(board, visited, I, J, word, idx + 1
+                    r_ True
 
         visited[i][j] = False  # restore
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().exist([
         ["A","B","C","E"],
         ["S","F","E","S"],
         ["A","D","E","E"]
-    ], "ABCESEEEFS") == True
+    ], "ABCESEEEFS") __ True

@@ -9,9 +9,9 @@ class Solution:
     @param: n: the number of floors
     @return: the number of drops in the worst case
     """
-    def dropEggs2(self, m, n):
-        if not m or not n:
-            return 0
+    ___ dropEggs2(self, m, n
+        __ not m or not n:
+            r_ 0
 
         INFINITY = float('inf')
 
@@ -24,20 +24,20 @@ class Solution:
         """
         only one egg
         """
-        for i in range(1, m + 1):
+        for i in range(1, m + 1
             dp[i][1] = 1
 
         """
         only one floor
         """
-        for j in range(1, n + 1):
+        for j in range(1, n + 1
             dp[1][j] = j
 
-        for i in range(2, m + 1):
-            for j in range(2, n + 1):
+        for i in range(2, m + 1
+            for j in range(2, n + 1
                 dp[i][j] = INFINITY
 
-                for k in range(1, j + 1):
+                for k in range(1, j + 1
                     """
                     backtracking to drop one egg on arbitrary floor `k`
                     there is two cases, if previous egg is:
@@ -52,7 +52,7 @@ class Solution:
                     """
                     find the minimum worst case
                     """
-                    if _worst < dp[i][j]:
+                    __ _worst < dp[i][j]:
                         dp[i][j] = _worst
 
-        return dp[m][n]
+        r_ dp[m][n]

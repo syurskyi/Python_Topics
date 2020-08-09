@@ -1,6 +1,6 @@
 # Definition for a  binary tree node
 # class TreeNode:
-#     def __init__(self, x):
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
@@ -9,24 +9,24 @@
 class Solution:
     # @param root, a tree node
     # @return nothing
-    def connect(self, root):
+    ___ connect(self, root
         head = None  # Head node of the next level
         prev = None
-        while root is not None:
+        w___ root is not None:
             # Build the next level of root
-            while root is not None:
-                if root.left is not None:
-                    if prev is None:
+            w___ root is not None:
+                __ root.left is not None:
+                    __ prev is None:
                         head = root.left
                         prev = head
-                    else:
+                    ____
                         prev.next = root.left
                         prev = prev.next
-                if root.right is not None:
-                    if prev is None:
+                __ root.right is not None:
+                    __ prev is None:
                         head = root.right
                         prev = head
-                    else:
+                    ____
                         prev.next = root.right
                         prev = prev.next
                 root = root.next

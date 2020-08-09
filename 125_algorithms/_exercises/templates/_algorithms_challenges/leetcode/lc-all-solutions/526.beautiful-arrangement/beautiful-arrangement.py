@@ -1,19 +1,19 @@
-class Solution(object):
-  def countArrangement(self, N):
+class Solution(object
+  ___ countArrangement(self, N
     """
     :type N: int
     :rtype: int
     """
 
-    def dfs(pos, unused):
-      if len(unused) == 0:
-        return 1
+    ___ dfs(pos, unused
+      __ le.(unused) __ 0:
+        r_ 1
       ret = 0
-      for num in list(unused):
-        if pos % num == 0 or num % pos == 0:
+      for num in list(unused
+        __ pos % num __ 0 or num % pos __ 0:
           unused -= {num}
           ret += dfs(pos + 1, unused)
           unused |= {num}
-      return ret
+      r_ ret
 
-    return dfs(1, set([i for i in range(1, N + 1)]))
+    r_ dfs(1, set([i for i in range(1, N + 1)]))

@@ -13,18 +13,18 @@ Given m, n satisfy the following condition:
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
-    def __repr__(self):
-        return repr(self.val)
+    ___ __repr__(self
+        r_ repr(self.val)
 
-    def __str__(self):
-        return str(self.val)+", "+str(self.next)
+    ___ __str__(self
+        r_ str(self.val)+", "+str(self.next)
 
 class Solution:
-    def reverseBetween(self, head, m, n):
+    ___ reverseBetween(self, head, m, n
         """
         Linked List
         [m, n)
@@ -34,8 +34,8 @@ class Solution:
         :return: ListNode
         """
         # trivial
-        if not head or m>=n:
-            return head
+        __ not head or m>=n:
+            r_ head
 
         dummy = ListNode(0)
         dummy.next = head
@@ -46,17 +46,17 @@ class Solution:
         start_pre = None
         start = None
 
-        cur = pre.next  # cannot put it in while loop? affect reverse link
-        while pre.next:
+        cur = pre.next  # cannot put it in w___ loop? affect reverse link
+        w___ pre.next:
             # record starting point
-            if cnt==m:
+            __ cnt__m:
                 start_pre = pre
                 start = cur
 
             # reverse link (not node)
             # 1 -> 2 -> 3
             # 1 <- 2 -> 3
-            elif m<cnt<=n:
+            ____ m<cnt<=n:
                 # temp = cur.next
                 # cur.next = pre
                 # pre = cur
@@ -68,7 +68,7 @@ class Solution:
                 continue
 
             # reconnect
-            elif cnt==n+1:
+            ____ cnt__n+1:
                 end = pre
                 start_pre.next = end
                 start.next = cur
@@ -80,11 +80,11 @@ class Solution:
             cur = cur.next
             cnt += 1
 
-        return dummy.next
+        r_ dummy.next
 
-if __name__=="__main__":
+__ __name____"__main__":
     length = 3
     lst = [ListNode(i+1) for i in range(length)]
-    for i in xrange(length-1):
+    for i in xrange(length-1
         lst[i].next = lst[i+1]
     print Solution().reverseBetween(lst[0], 1, 3)

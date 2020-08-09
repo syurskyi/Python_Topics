@@ -1,7 +1,7 @@
-def fib(n):
-   if n < 0:
+___ fib(n
+   __ n < 0:
         raise ValueError
-   elif n in (0, 1):
-       return n
-   else:
-       return(fib(n-1) + fib(n-2))
+   ____ n in (0, 1
+       r_ n
+   ____
+       r_(fib(n-1) + fib(n-2))

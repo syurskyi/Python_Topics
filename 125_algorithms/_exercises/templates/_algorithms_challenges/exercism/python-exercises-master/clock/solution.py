@@ -1,24 +1,24 @@
 
-class Clock(object):
+class Clock(object
     'Clock that displays 24 hour clock that rollsover properly'
 
-    def __init__(self, hour, minute):
+    ___ __init__(self, hour, minute
         self.hour = hour
         self.minute = minute
         self.cleanup()
 
-    def __repr__(self):
-        return "%02d:%02d" % (self.hour, self.minute)
+    ___ __repr__(self
+        r_ "%02d:%02d" % (self.hour, self.minute)
 
-    def __eq__(self, other):
-        return repr(self) == repr(other)
+    ___ __eq__(self, other
+        r_ repr(self) __ repr(other)
 
-    def add(self, minutes):
+    ___ add(self, minutes
         self.minute += minutes
-        return self.cleanup()
+        r_ self.cleanup()
 
-    def cleanup(self):
+    ___ cleanup(self
         self.hour += self.minute // 60
         self.hour %= 24
         self.minute %= 60
-        return self
+        r_ self

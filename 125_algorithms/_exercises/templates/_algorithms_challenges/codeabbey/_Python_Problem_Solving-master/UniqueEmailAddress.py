@@ -7,20 +7,20 @@ for i in x:
     j = 0
     plus_check = False
     string = ''
-    while i[j]!= '@':
-        if plus_check == False:
-            if i[j] == '.':
+    w___ i[j]!= '@':
+        __ plus_check __ False:
+            __ i[j] __ '.':
                 i.pop(j)
-            elif i[j] == '+':
+            ____ i[j] __ '+':
                 plus_check = True
-            else:
+            ____
                 j += 1
                 pass
-        else:
+        ____
             i.pop(j)
     string = ''.join(i)
-    if string not in store_add:
+    __ string not in store_add:
         store_add.append(string)
         count += 1
     
-return(count)    
+r_(count)

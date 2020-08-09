@@ -1,13 +1,13 @@
-import os
-import pickle
+______ os
+______ pickle
 
-from rauth.service import OAuth1Service, OAuth1Session
+from rauth.service ______ OAuth1Service, OAuth1Session
 
 CONSUMER_KEY = os.environ.get('GR_KEY')
 CONSUMER_SECRET = os.environ.get('GR_SECRET')
 SESSION = 'session' 
 
-def authorize():
+___ authorize(
     goodreads = OAuth1Service(
 	consumer_key=CONSUMER_KEY,
 	consumer_secret=CONSUMER_SECRET,
@@ -23,12 +23,12 @@ def authorize():
     authorize_url = goodreads.get_authorize_url(request_token)
     print('Visit this URL in your browser: ' + authorize_url)
     accepted = 'n'
-    while accepted.lower() == 'n':
+    w___ accepted.lower() __ 'n':
         # you need to access the authorize_link via a browser,
         # and proceed to manually authorize the consumer
         accepted = input('Have you authorized me? (y/n) ')
 
     session = goodreads.get_auth_session(request_token, request_token_secret)
     pickle.dump(session, open(SESSION, "wb"))
-    return session
+    r_ session
 

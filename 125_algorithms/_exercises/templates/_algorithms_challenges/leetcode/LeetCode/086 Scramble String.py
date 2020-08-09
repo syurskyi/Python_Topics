@@ -38,7 +38,7 @@ Given two strings s1 and s2 of the same length, determine if s2 is a scrambled s
 """
 __author__ = 'Danyang'
 class Solution:
-    def isScramble(self, s1, s2):
+    ___ isScramble(self, s1, s2
         """
         dfs
         partition and compare
@@ -54,32 +54,32 @@ class Solution:
         :param s2:
         :return: boolean
         """
-        if len(s1)!=len(s2):
-            return False
+        __ le.(s1)!=le.(s2
+            r_ False
         chars = [0 for _ in xrange(26)]
         for char in s1:
             chars[ord(char)-ord('a')] += 1
         for char in s2:
             chars[ord(char)-ord('a')] -= 1
 
-        # if filter(lambda x: x!=0, chars):
+        # if filter(lambda x: x!=0, chars
         #     return False
         for val in chars:
-            if val!=0:
-                return False
+            __ val!=0:
+                r_ False
 
-        if len(s1)==1:
-            return True
-
-
-        for i in xrange(1, len(s1)):
-            if self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]) or \
-                self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:len(s2)-i]):
-                return True
-
-        return False
+        __ le.(s1)__1:
+            r_ True
 
 
+        for i in xrange(1, le.(s1)):
+            __ self.isScramble(s1[:i], s2[:i]) and self.isScramble(s1[i:], s2[i:]) or \
+                self.isScramble(s1[:i], s2[-i:]) and self.isScramble(s1[i:], s2[:le.(s2)-i]
+                r_ True
 
-if __name__=="__main__":
-    assert Solution().isScramble("abc", "bca")==True
+        r_ False
+
+
+
+__ __name____"__main__":
+    assert Solution().isScramble("abc", "bca")__True

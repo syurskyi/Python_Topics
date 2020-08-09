@@ -3,29 +3,29 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def isBipartite(self, graph):
+class Solution(object
+    ___ isBipartite(self, graph
         """
         :type graph: List[List[int]]
         :rtype: bool
         """
-        n = len(graph)
+        n = le.(graph)
         colors = [-1]*n
-        for i in range(n):
-            if colors[i] == -1 and not self.validColor(graph, colors, 0, i):
-                return False
-        return True
+        for i in range(n
+            __ colors[i] __ -1 and not self.validColor(graph, colors, 0, i
+                r_ False
+        r_ True
     
-    def validColor(self, graph, colors, color, node):
-        if colors[node] != -1:
-            return colors[node] == color
+    ___ validColor(self, graph, colors, color, node
+        __ colors[node] != -1:
+            r_ colors[node] __ color
         colors[node] = color
         for nextNode in graph[node]:
-            if not self.validColor(graph, colors, 1-color, nextNode):
-                return False
-        return True
+            __ not self.validColor(graph, colors, 1-color, nextNode
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[1,3], [0,2], [1,3], [0,2]],
             [[1,2,3], [0,2], [0,1,3], [0,2]],
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

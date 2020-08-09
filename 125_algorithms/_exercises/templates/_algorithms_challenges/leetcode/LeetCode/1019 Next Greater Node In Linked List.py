@@ -32,16 +32,16 @@ The given list has length in the range [0, 10000].
 
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def nextLargerNodes(self, head: ListNode) -> List[int]:
+    ___ nextLargerNodes(self, head: ListNode) -> List[int]:
         """
         If input is an array, use stack from right to left. Maintain a decreasing stack
 
@@ -52,8 +52,8 @@ class Solution:
         stk = []  # [[index, value]]
         i = 0
         cur = head
-        while cur:
-            while stk and stk[-1][1] < cur.val:
+        w___ cur:
+            w___ stk and stk[-1][1] < cur.val:
                 idx, _ = stk.pop()
                 ret[idx] = cur.val
 
@@ -62,4 +62,4 @@ class Solution:
             cur = cur.next
             i += 1
 
-        return ret
+        r_ ret

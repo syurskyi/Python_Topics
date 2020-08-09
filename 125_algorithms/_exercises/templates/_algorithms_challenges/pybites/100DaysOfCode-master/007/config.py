@@ -1,7 +1,7 @@
-import logging
-import os
+______ logging
+______ os
 
-import tweepy
+______ tweepy
 
 CONSUMER_KEY = os.environ["CONSUMER_KEY"]
 CONSUMER_SECRET = os.environ["CONSUMER_SECRET"]

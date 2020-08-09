@@ -17,19 +17,19 @@ The binary representation of 7 is: 111.
 
 
 class Solution:
-    def hasAlternatingBits(self, n: int) -> bool:
+    ___ hasAlternatingBits(self, n: int) -> bool:
         last = None
-        while n:
+        w___ n:
             cur = n & 1
             # `if last` is error
-            if last is not None and last ^ cur == 0:
-                return False
+            __ last is not None and last ^ cur __ 0:
+                r_ False
             last = cur
             n >>= 1
 
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
-    assert Solution().hasAlternatingBits(5) == True
-    assert Solution().hasAlternatingBits(7) == False
+__ __name__ __ "__main__":
+    assert Solution().hasAlternatingBits(5) __ True
+    assert Solution().hasAlternatingBits(7) __ False

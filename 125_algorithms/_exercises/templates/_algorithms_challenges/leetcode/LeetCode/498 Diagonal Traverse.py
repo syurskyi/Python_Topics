@@ -17,7 +17,7 @@ Output:  [1,2,4,7,5,3,6,8,9]
 
 
 class Solution:
-    def findDiagonalOrder(self, matrix):
+    ___ findDiagonalOrder(self, matrix
         """
         2nd approach
         diagonal - i + j is constant
@@ -26,25 +26,25 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
-        if not matrix:
-            return []
+        __ not matrix:
+            r_ []
 
-        R, C = len(matrix), len(matrix[0])
+        R, C = le.(matrix), le.(matrix[0])
         F = [[] for _ in range(R+C-1)]
-        for r in range(R):
-            for c in range(C):
+        for r in range(R
+            for c in range(C
                 F[r+c].append(matrix[r][c])
 
         ret = []
-        for i in range(R+C-1):
-            if i % 2 == 1:
+        for i in range(R+C-1
+            __ i % 2 __ 1:
                 ret.extend(F[i])
-            else:
+            ____
                 ret.extend(F[i][::-1])
 
-        return ret
+        r_ ret
 
-    def findDiagonalOrder_2(self, matrix):
+    ___ findDiagonalOrder_2(self, matrix
         """
         1st approach
         try 2 * 4 and 4 * 2 and 3 * 3 matrix to find the pattern
@@ -52,44 +52,44 @@ class Solution:
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
-        if not matrix:
-            return []
+        __ not matrix:
+            r_ []
         i = 0
         j = 0
         inc = True
         ret = []
-        R, C = len(matrix), len(matrix[0])
-        while True:
+        R, C = le.(matrix), le.(matrix[0])
+        w___ True:
             ret.append(matrix[i][j])
-            if i == R - 1 and j == C - 1:
+            __ i __ R - 1 and j __ C - 1:
                 break
-            if inc:
+            __ inc:
                 i -= 1
                 j += 1
-                if i < 0 or j >= C:
+                __ i < 0 or j >= C:
                     inc = False
-                    if i < 0 and j < C:
+                    __ i < 0 and j < C:
                         i = 0
-                    else:
+                    ____
                         i += 2
                         j = C - 1
-            else:
+            ____
                 i += 1
                 j -= 1
-                if i >= R or j < 0:
+                __ i >= R or j < 0:
                     inc = True
-                    if j < 0 and i < R:
+                    __ j < 0 and i < R:
                         j = 0
-                    else:
+                    ____
                         i = R - 1
                         j += 2
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().findDiagonalOrder([
         [ 1, 2, 3 ],
         [ 4, 5, 6 ],
         [ 7, 8, 9 ]
-    ]) == [1,2,4,7,5,3,6,8,9]
+    ]) __ [1,2,4,7,5,3,6,8,9]

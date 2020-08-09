@@ -1,20 +1,20 @@
 class Codec:
 
-  def encode(self, longUrl):
+  ___ encode(self, longUrl
     """Encodes a URL to a shortened URL.
     
     :type longUrl: str
     :rtype: str
     """
-    return longUrl
+    r_ longUrl
 
-  def decode(self, shortUrl):
+  ___ decode(self, shortUrl
     """Decodes a shortened URL to its original URL.
     
     :type shortUrl: str
     :rtype: str
     """
-    return shortUrl
+    r_ shortUrl
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

@@ -1,2 +1,2 @@
-def solution():
+___ solution(
     pass

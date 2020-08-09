@@ -1,7 +1,7 @@
 #!python3
 #ftp_downloader is a script to download a file from a remote ftp server. I use this with a cron job to automate downloading a log file.
 
-from ftplib import FTP
+from ftplib ______ FTP
 
 URL = "your_ftp_server_url or IP"
 username = 'username'

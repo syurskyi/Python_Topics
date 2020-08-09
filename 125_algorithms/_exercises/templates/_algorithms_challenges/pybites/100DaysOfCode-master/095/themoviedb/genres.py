@@ -1,12 +1,12 @@
-import os
-import pickle
+______ os
+______ pickle
 
-from .tmdb_init import tmdb
+from .tmdb_init ______ tmdb
 
 CACHE = 'genres.pkl'
 
 
-def cache_genres():
+___ cache_genres(
     gen = tmdb.Genres()
     genres = gen.list()
 
@@ -16,20 +16,20 @@ def cache_genres():
         pickle.dump(genres, f)
 
 
-def get_genres_cache():
-    if not os.path.isfile(CACHE):
+___ get_genres_cache(
+    __ not os.path.isfile(CACHE
         print('Cache file not found, generating one')
         cache_genres()
 
     with open(CACHE, 'rb') as f:
-        return pickle.load(f)
+        r_ pickle.load(f)
 
 
-if __name__ == '__main__':
-    if os.path.isfile(CACHE):
+__ __name__ __ '__main__':
+    __ os.path.isfile(CACHE
         os.remove(CACHE)
 
     genres = get_genres_cache()
 
-    from pprint import pprint as pp
+    from pprint ______ pprint as pp
     pp(genres)

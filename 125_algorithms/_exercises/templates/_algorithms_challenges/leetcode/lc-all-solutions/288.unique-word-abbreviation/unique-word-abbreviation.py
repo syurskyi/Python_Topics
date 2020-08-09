@@ -1,5 +1,5 @@
-class ValidWordAbbr(object):
-  def __init__(self, dictionary):
+class ValidWordAbbr(object
+  ___ __init__(self, dictionary
     """
     initialize your data structure here.
     :type dictionary: List[str]
@@ -7,31 +7,31 @@ class ValidWordAbbr(object):
     self.d = {}
     self.dict = dictionary = set(dictionary)
     for word in dictionary:
-      wordLen = len(word)
-      if wordLen > 2:
+      wordLen = le.(word)
+      __ wordLen > 2:
         key = word[0] + str(wordLen - 2) + word[-1]
         self.d[key] = self.d.get(key, 0) + 1
-      else:
+      ____
         self.d[word] = self.d.get(word, 0) + 1
 
-  def isUnique(self, word):
+  ___ isUnique(self, word
     """
     check if a word is unique.
     :type word: str
     :rtype: bool
     """
-    wordLen = len(word)
+    wordLen = le.(word)
     key = None
-    if wordLen > 2:
+    __ wordLen > 2:
       key = word[0] + str(wordLen - 2) + word[-1]
-    else:
+    ____
       key = word
-    if key in self.d:
-      if self.d[key] == 1 and word in self.dict:
-        return True
-      return False
-    else:
-      return True
+    __ key in self.d:
+      __ self.d[key] __ 1 and word in self.dict:
+        r_ True
+      r_ False
+    ____
+      r_ True
 
 # Your ValidWordAbbr object will be instantiated and called as such:
 # vwa = ValidWordAbbr(dictionary)

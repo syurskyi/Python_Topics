@@ -3,21 +3,21 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-class TreeNode(object):
-    def __init__(self, val):
+class TreeNode(object
+    ___ __init__(self, val
         self.val = val
         self.children = {}
         self.isLeaf = False
 
-class MagicDictionary(object):
+class MagicDictionary(object
 
-    def __init__(self):
+    ___ __init__(self
         """
         Initialize your data structure here.
         """
         self.root = TreeNode(None)
 
-    def buildDict(self, dict):
+    ___ buildDict(self, dict
         """
         Build a dictionary through a list of words
         :type dict: List[str]
@@ -27,36 +27,36 @@ class MagicDictionary(object):
         for word in dict:
             node = self.root
             for c in word:
-                if c not in node.children:
+                __ c not in node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
             node.isLeaf = True
 
-    def search(self, word):
+    ___ search(self, word
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         :type word: str
         :rtype: bool
         """
-        return self.helper(self.root, word, 0, False)
+        r_ self.helper(self.root, word, 0, False)
     
-    def helper(self, node, word, ind, diffFlag):
-        if not node: return False
-        if ind == len(word):
-            if node.isLeaf and diffFlag:
-                return True
-            return False
+    ___ helper(self, node, word, ind, diffFlag
+        __ not node: r_ False
+        __ ind __ le.(word
+            __ node.isLeaf and diffFlag:
+                r_ True
+            r_ False
         c = word[ind]
         for c0 in node.children:
-            if c0 != c and diffFlag:
+            __ c0 != c and diffFlag:
                 continue
-            if self.helper(node.children.get(c, None), word, ind+1, diffFlag) or\
+            __ self.helper(node.children.get(c, None), word, ind+1, diffFlag) or\
                 (c0 != c and self.helper(node.children[c0], word, ind+1, True)):
-                return True
-        return False
+                r_ True
+        r_ False
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     magicDict = MagicDictionary()
     magicDict.buildDict(['hello', 'leetcode', 'hallo'])
     print(magicDict.search('hello'))

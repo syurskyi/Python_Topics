@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -12,11 +12,11 @@ class Solution:
     @param root: The root of binary tree.
     @return: An integer
     """
-    def maxDepth(self, root):
-        if not root:
-            return 0
+    ___ maxDepth(self, root
+        __ not root:
+            r_ 0
 
-        return 1 + max(
+        r_ 1 + max(
             self.maxDepth(root.left),
             self.maxDepth(root.right)
         )

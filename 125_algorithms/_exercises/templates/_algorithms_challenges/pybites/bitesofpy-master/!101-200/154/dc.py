@@ -1,14 +1,14 @@
-from dataclasses import dataclass
+from dataclasses ______ dataclass
 
 
 @dataclass
-class Bite(object):
+class Bite(object
     number: int
     title: str
     level: str = 'Beginner'
 
-    def __post_init__(self):
+    ___ __post_init__(self
         self.title = self.title.capitalize()
 
-    def __lt__(self, other):
-        return self.number < other.number if isinstance(other, Bite) else False
+    ___ __lt__(self, other
+        r_ self.number < other.number __ isinstance(other, Bite) else False

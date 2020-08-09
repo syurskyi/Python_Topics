@@ -15,16 +15,16 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def convertToTitle(self, n):
+    ___ convertToTitle(self, n
         """
         :type n: int
         :rtype: str
         """
         sb = []  # string builder
-        while n:
+        w___ n:
             n -= 1  # there is not 0 representation in excel title
             sb.append(chr(ord("A")+n%26))
             n /= 26
 
-        return "".join(reversed(sb))
+        r_ "".join(reversed(sb))
 

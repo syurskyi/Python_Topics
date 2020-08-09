@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSteps(object):
+class TestSteps(object
 
-    def test_steps(self):
+    ___ test_steps(self
         steps = Steps()
         assert_raises(TypeError, steps.count_ways, None)
         assert_raises(TypeError, steps.count_ways, -1)
@@ -16,10 +16,10 @@ class TestSteps(object):
         print('Success: test_steps')
 
 
-def main():
+___ main(
     test = TestSteps()
     test.test_steps()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

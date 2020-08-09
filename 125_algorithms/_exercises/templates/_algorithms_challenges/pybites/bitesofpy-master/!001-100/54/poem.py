@@ -1,15 +1,15 @@
 INDENTS = 4
 
 
-def print_hanging_indents(poem):
+___ print_hanging_indents(poem
     indent = False
-    for line in poem.splitlines():
+    for line in poem.splitlines(
         l = line.strip()
-        if len(l) == 0:
+        __ le.(l) __ 0:
             indent = False
             continue
-        if indent:
+        __ indent:
             print(f'{" " * INDENTS}{l}')
-        else:
+        ____
             print(f'{l}')
             indent = True

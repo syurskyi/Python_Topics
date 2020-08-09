@@ -11,65 +11,65 @@ You may imagine that num[-1] = num[n] = -∞.
 For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
 """
 __author__ = 'Daniel'
-import sys
+______ sys
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.A = None
 
-    def findPeakElement(self, nums):
+    ___ findPeakElement(self, nums
         """
         :type nums: list[int]
         :rtype: int
         """
         self.A = nums
-        n = len(self.A)
-        if n < 2:
-            return 0
+        n = le.(self.A)
+        __ n < 2:
+            r_ 0
 
         l = 0
         h = n
-        while l < h:
+        w___ l < h:
             m = (l+h)/2
-            if self._get(m-1) < self._get(m) > self._get(m+1):
-                return m
-            elif self._get(m+1) > self._get(m):
+            __ self._get(m-1) < self._get(m) > self._get(m+1
+                r_ m
+            ____ self._get(m+1) > self._get(m
                 l = m+1
-            else:
+            ____
                 h = m
 
-        return -1
+        r_ -1
 
-    def _get(self, i):
-        if i < 0 or i >= len(self.A):
-            return -sys.maxint-1
-        else:
-            return self.A[i]
+    ___ _get(self, i
+        __ i < 0 or i >= le.(self.A
+            r_ -sys.maxint-1
+        ____
+            r_ self.A[i]
 
-    def findPeakElement_complicated(self, nums):
+    ___ findPeakElement_complicated(self, nums
         """
         :type nums: list[int]
         :rtype: int
         """
-        n = len(nums)
-        if n < 2:
-            return 0
+        n = le.(nums)
+        __ n < 2:
+            r_ 0
 
         l = 0
         h = n
-        while l < h:
+        w___ l < h:
             m = (l+h)/2
-            if m == 0 and nums[m] > nums[m+1]:
-                return m
-            elif m == n-1 and nums[m] > nums[m-1]:
-                return m
-            elif nums[m-1] < nums[m] > nums[m+1]:
-                return m
+            __ m __ 0 and nums[m] > nums[m+1]:
+                r_ m
+            ____ m __ n-1 and nums[m] > nums[m-1]:
+                r_ m
+            ____ nums[m-1] < nums[m] > nums[m+1]:
+                r_ m
 
-            elif m+1 < n and nums[m+1] > nums[m]:
+            ____ m+1 < n and nums[m+1] > nums[m]:
                 l = m+1
-            else:
+            ____
                 h = m
 
-        return -1
+        r_ -1

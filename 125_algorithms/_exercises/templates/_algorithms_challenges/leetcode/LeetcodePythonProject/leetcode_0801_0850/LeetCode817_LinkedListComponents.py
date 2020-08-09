@@ -4,13 +4,13 @@ Created on May 1, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x, nextNode=None):
+class ListNode(object
+    ___ __init__(self, x, nextNode=None
         self.val = x
         self.next = nextNode
 
-class Solution(object):
-    def numComponents(self, head, G):
+class Solution(object
+    ___ numComponents(self, head, G
         """
         :type head: ListNode
         :type G: List[int]
@@ -18,19 +18,19 @@ class Solution(object):
         """
         count = 0
         hashset = set(G)
-        while head:
-            while head and head.val not in hashset:
+        w___ head:
+            w___ head and head.val not in hashset:
                 head = head.next
-            while head and head.val in hashset:
+            w___ head and head.val in hashset:
                 hashset.remove(head.val)
                 head = head.next
             count += 1
-            if not head or not hashset:
+            __ not head or not hashset:
                 break
             head = head.next
-        return count
+        r_ count
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [0,1,2,3],
@@ -51,5 +51,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

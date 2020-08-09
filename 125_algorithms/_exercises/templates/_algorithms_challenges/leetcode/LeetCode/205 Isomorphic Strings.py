@@ -3,7 +3,7 @@ Given two strings s and t, determine if they are isomorphic.
 
 Two strings are isomorphic if the characters in s can be replaced to get t.
 
-All occurrences of a character must be replaced with another character while preserving the order of characters. No two
+All occurrences of a character must be replaced with another character w___ preserving the order of characters. No two
 characters may map to the same character but a character may map to itself.
 
 For example,
@@ -20,7 +20,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def isIsomorphic(self, s, t):
+    ___ isIsomorphic(self, s, t
         """
 
         :param s:
@@ -29,13 +29,13 @@ class Solution:
         """
         m = {}
         mapped = set()  # case "ab", "aa"
-        for i in xrange(len(s)):
-            if s[i] not in m and t[i] not in mapped:
+        for i in xrange(le.(s)):
+            __ s[i] not in m and t[i] not in mapped:
                 m[s[i]] = t[i]
                 mapped.add(t[i])
-            elif s[i] in m and m[s[i]] == t[i]:
+            ____ s[i] in m and m[s[i]] __ t[i]:
                 pass
-            else:
-                return False
+            ____
+                r_ False
 
-        return True
+        r_ True

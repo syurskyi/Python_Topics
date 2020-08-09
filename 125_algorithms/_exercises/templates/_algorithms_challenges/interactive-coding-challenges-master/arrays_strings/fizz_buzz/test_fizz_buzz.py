@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestFizzBuzz(object):
+class TestFizzBuzz(object
 
-    def test_fizz_buzz(self):
+    ___ test_fizz_buzz(self
         solution = Solution()
         assert_raises(TypeError, solution.fizz_buzz, None)
         assert_raises(ValueError, solution.fizz_buzz, 0)
@@ -28,10 +28,10 @@ class TestFizzBuzz(object):
         print('Success: test_fizz_buzz')
 
 
-def main():
+___ main(
     test = TestFizzBuzz()
     test.test_fizz_buzz()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

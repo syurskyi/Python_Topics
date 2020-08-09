@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestMatrixMultiplicationCost(object):
+class TestMatrixMultiplicationCost(object
 
-    def test_find_min_cost(self):
+    ___ test_find_min_cost(self
         matrix_mult_cost = MatrixMultiplicationCost()
         assert_raises(TypeError, matrix_mult_cost.find_min_cost, None)
         assert_equal(matrix_mult_cost.find_min_cost([]), 0)
@@ -16,10 +16,10 @@ class TestMatrixMultiplicationCost(object):
         print('Success: test_find_min_cost')
 
 
-def main():
+___ main(
     test = TestMatrixMultiplicationCost()
     test.test_find_min_cost()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -1,12 +1,12 @@
-import random
+______ random
 
-def private_key(p):
-    return random.choice(range(2, p))
-
-
-def public_key(p, g, private):
-    return pow(g, private, p)
+___ private_key(p
+    r_ random.choice(range(2, p))
 
 
-def secret(p, public, private):
-    return pow(public, private, p)
+___ public_key(p, g, private
+    r_ pow(g, private, p)
+
+
+___ secret(p, public, private
+    r_ pow(public, private, p)

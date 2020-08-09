@@ -1,36 +1,36 @@
-class Solution(object):
-  def solveNQueens(self, n):
+class Solution(object
+  ___ solveNQueens(self, n
     """
     :type n: int
     :rtype: List[List[str]]
     """
     ans = []
 
-    def dfs(path, n, ans):
-      if len(path) == n:
+    ___ dfs(path, n, ans
+      __ le.(path) __ n:
         ans.append(drawChess(path))
-        return
+        r_
 
-      for i in range(n):
-        if i not in path and isValidQueen(path, i):
+      for i in range(n
+        __ i not in path and isValidQueen(path, i
           path.append(i)
           dfs(path, n, ans)
           path.pop()
 
-    def isValidQueen(path, k):
-      for i in range(len(path)):
-        if abs(k - path[i]) == abs(len(path) - i):
-          return False
-      return True
+    ___ isValidQueen(path, k
+      for i in range(le.(path)):
+        __ abs(k - path[i]) __ abs(le.(path) - i
+          r_ False
+      r_ True
 
-    def drawChess(path):
+    ___ drawChess(path
       ret = []
-      chess = [["."] * len(path) for _ in range(len(path))]
-      for i in range(0, len(path)):
+      chess = [["."] * le.(path) for _ in range(le.(path))]
+      for i in range(0, le.(path)):
         chess[i][path[i]] = "Q"
       for chs in chess:
         ret.append("".join(chs))
-      return ret
+      r_ ret
 
     dfs([], n, ans)
-    return ans
+    r_ ans

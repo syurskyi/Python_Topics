@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestHeight(object):
+class TestHeight(object
 
-    def test_height(self):
+    ___ test_height(self
         bst = BstHeight(Node(5))
         assert_equal(bst.height(bst.root), 1)
         bst.insert(2)
@@ -15,10 +15,10 @@ class TestHeight(object):
         print('Success: test_height')
 
 
-def main():
+___ main(
     test = TestHeight()
     test.test_height()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

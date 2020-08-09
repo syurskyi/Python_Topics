@@ -1,13 +1,13 @@
 #!python3
 #random_movie.py is a script to demonstrate pulling a row from an sqlite db at random.
 
-from contextlib import contextmanager
-import sqlite3
+from contextlib ______ contextmanager
+______ sqlite3
 
 DB = "movies.db"
 
 @contextmanager
-def open_db(name):
+___ open_db(name
     try:
         conn = sqlite3.connect('%s' % name)
         cursor = conn.cursor()
@@ -16,12 +16,12 @@ def open_db(name):
         conn.close()
 
         
-def select_movie():
+___ select_movie(
     with open_db(DB) as cursor:
         movie = cursor.execute("SELECT * FROM test_table ORDER BY RANDOM() LIMIT 1;")
         for i in movie:
             print("A random movie to watch is %s."  % i[0])
-    return
+    r_
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     select_movie()

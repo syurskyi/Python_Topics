@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def majorityElement(self, nums):
+    ___ majorityElement(self, nums
         """
         Algorithm:
         O(n lgn) sort and take the middle one
@@ -19,15 +19,15 @@ class Solution:
         """
         mjr = nums[0]
         cnt = 0
-        for i, v in enumerate(nums):
-            if mjr == v:
+        for i, v in enumerate(nums
+            __ mjr __ v:
                 cnt += 1
-            else:
+            ____
                 cnt -= 1
 
-            if cnt < 0:
+            __ cnt < 0:
                 mjr = v
                 cnt = 1
 
-        return mjr
+        r_ mjr
 

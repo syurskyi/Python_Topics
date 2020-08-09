@@ -1,6 +1,6 @@
-def splitInteger(num,parts):
+___ splitInteger(num,parts
     mul,mod = divmod(num,parts)
-    return [mul] * parts
+    r_ [mul] * parts
 
 print(splitInteger(23,2))
 

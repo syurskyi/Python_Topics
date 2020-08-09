@@ -4,8 +4,8 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findAnagrams(self, s, p):
+class Solution(object
+    ___ findAnagrams(self, s, p
         """
         :type s: str
         :type p: str
@@ -17,44 +17,44 @@ class Solution(object):
         left = 0
         res = []
         arr = [0]*26
-        for i, c in enumerate(s):
+        for i, c in enumerate(s
             arr[ord(c)-ord('a')] += 1
-            while left <= i and arr[ord(c)-ord('a')] > arr0[ord(c)-ord('a')]:
+            w___ left <= i and arr[ord(c)-ord('a')] > arr0[ord(c)-ord('a')]:
                 arr[ord(s[left])-ord('a')] -= 1
                 left += 1
-            if i-left+1 == len(p):
+            __ i-left+1 __ le.(p
                 res.append(left)
-        return res
+        r_ res
     
-    def findAnagrams_orig(self, s, p):
+    ___ findAnagrams_orig(self, s, p
         """
         :type s: str
         :type p: str
         :rtype: List[int]
         """
         arr0 = [0]*26
-        count = len(p)
+        count = le.(p)
         for c in p:
             arr0[ord(c)-ord('a')] += 1
         left = 0
         arr1 = [0]*26
         result = []
         end = 0
-        while end < len(s):
+        w___ end < le.(s
             numInd = ord(s[end]) - ord('a')
-            if arr1[numInd] < arr0[numInd]:
+            __ arr1[numInd] < arr0[numInd]:
                 arr1[numInd] += 1
                 count -= 1
                 end += 1
-                if count == 0:
+                __ count __ 0:
                     result.append(left)
-            else:
+            ____
                 arr1[ord(s[left]) - ord('a')] -= 1
                 count += 1
                 left += 1
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('cbaebabacd', 'abc'),
             ('abab', 'ab'),
@@ -66,5 +66,5 @@ class Solution(object):
             print('result0: %s' % result0)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

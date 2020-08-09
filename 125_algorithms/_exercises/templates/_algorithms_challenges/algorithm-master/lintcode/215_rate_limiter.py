@@ -1,4 +1,4 @@
-import collections
+______ collections
 
 
 class Solution:
@@ -13,7 +13,7 @@ class Solution:
     4. count the child between res of (3) to the end of list
     5. if cnt >= freq => is limited
     """
-    def __init__(self):
+    ___ __init__(self
         self.times = {
             's': 1,
             'm': 60,
@@ -22,7 +22,7 @@ class Solution:
         }
         self.logs = collections.defaultdict(list)
 
-    def isRatelimited(self, timestamp, event, rate, increment):
+    ___ isRatelimited(self, timestamp, event, rate, increment
         """
         :type timestamp: int
         :type event: str
@@ -30,35 +30,35 @@ class Solution:
         :type increment: bool
         :rtype: bool
         """
-        if '/' not in rate:
-            return False
+        __ '/' not in rate:
+            r_ False
 
         freq, t = rate.split('/')
         freq = int(freq)
         begin_time = timestamp - self.times.get(t, 1) + 1
         is_limited = self.check_limited(event, freq, begin_time)
 
-        if increment and not is_limited:
+        __ increment and not is_limited:
             self.logs[event].append(timestamp)
 
-        return is_limited
+        r_ is_limited
 
-    def check_limited(self, event, freq, begin_time):
+    ___ check_limited(self, event, freq, begin_time
         logs = self.logs[event]
 
-        if not logs or logs[-1] < begin_time:
+        __ not logs or logs[-1] < begin_time:
             # if freq is 0 => is limited
-            return freq == 0
+            r_ freq __ 0
 
-        left, right = 0, len(logs) - 1
+        left, right = 0, le.(logs) - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
 
-            if logs[mid] < begin_time:
+            __ logs[mid] < begin_time:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        mid = left if logs[left] >= begin_time else right
-        return len(logs) - mid >= freq
+        mid = left __ logs[left] >= begin_time else right
+        r_ le.(logs) - mid >= freq

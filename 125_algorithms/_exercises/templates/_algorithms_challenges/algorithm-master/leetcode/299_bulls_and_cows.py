@@ -1,46 +1,46 @@
 class Solution:
-    def getHint(self, secret, guess):
+    ___ getHint(self, secret, guess
         """
         :type secret: str
         :type guess: str
         :rtype: str
         """
-        if not secret or not guess or len(secret) != len(guess):
-            return ''
+        __ not secret or not guess or le.(secret) != le.(guess
+            r_ ''
 
         TMPL = '{}A{}B'
         bulls = 0
         cows = 0
         cnts = [0] * 10
 
-        for i in range(len(secret)):
+        for i in range(le.(secret)):
             s = ord(secret[i]) - ord('0')
             g = ord(guess[i]) - ord('0')
 
-            if s == g:
+            __ s __ g:
                 bulls += 1
                 continue
 
             cnts[s] += 1
             cnts[g] -= 1
 
-            if cnts[s] <= 0:
+            __ cnts[s] <= 0:
                 cows += 1
-            if cnts[g] >= 0:
+            __ cnts[g] >= 0:
                 cows += 1
 
-        return TMPL.format(bulls, cows)
+        r_ TMPL.format(bulls, cows)
 
 
 class Solution:
-    def getHint(self, secret, guess):
+    ___ getHint(self, secret, guess
         """
         :type secret: str
         :type guess: str
         :rtype: str
         """
-        if not secret or not guess or len(secret) != len(guess):
-            return ''
+        __ not secret or not guess or le.(secret) != le.(guess
+            r_ ''
 
         TMPL = '{}A{}B'
         bulls = 0
@@ -48,14 +48,14 @@ class Solution:
         cnt_s = [0] * 10
         cnt_g = [0] * 10
 
-        for i in range(len(secret)):
-            if secret[i] == guess[i]:
+        for i in range(le.(secret)):
+            __ secret[i] __ guess[i]:
                 bulls += 1
-            else:
+            ____
                 cnt_s[int(secret[i])] += 1
                 cnt_g[int(guess[i])] += 1
 
-        for i in range(10):
+        for i in range(10
             cows += min(cnt_s[i], cnt_g[i])
 
-        return TMPL.format(bulls, cows)
+        r_ TMPL.format(bulls, cows)

@@ -1,31 +1,31 @@
 
-def _is_pling(number):
-    return number % 3 == 0
+___ _is_pling(number
+    r_ number % 3 __ 0
 
 
-def _is_plang(number):
-    return number % 5 == 0
+___ _is_plang(number
+    r_ number % 5 __ 0
 
 
-def _is_plong(number):
-    return number % 7 == 0
+___ _is_plong(number
+    r_ number % 7 __ 0
 
 
-def _drops_for(number):
+___ _drops_for(number
     drops = []
-    if _is_pling(number):
+    __ _is_pling(number
         drops.append('Pling')
 
-    if _is_plang(number):
+    __ _is_plang(number
         drops.append('Plang')
 
-    if _is_plong(number):
+    __ _is_plong(number
         drops.append('Plong')
 
-    return drops
+    r_ drops
 
 
-def raindrops(number):
+___ raindrops(number
     drops = _drops_for(number)
 
-    return ''.join(drops) or str(number)
+    r_ ''.join(drops) or str(number)

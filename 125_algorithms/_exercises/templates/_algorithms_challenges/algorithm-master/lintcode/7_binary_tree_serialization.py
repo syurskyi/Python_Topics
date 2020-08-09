@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -10,20 +10,20 @@ class TreeNode:
 class Solution:
     EMPTY = '#'
 
-    def serialize(self, root):
+    ___ serialize(self, root
         """Encodes a tree to a single string.
         :type root: TreeNode
         :rtype: str
         """
         TEMPLATE = '{{{}}}'  # {{, }} is to escape brackets
-        if not root:
-            return TEMPLATE.format('')
+        __ not root:
+            r_ TEMPLATE.format('')
 
         vals = []
         queue = [root]
 
         for node in queue:
-            if not node:
+            __ not node:
                 vals.append(self.EMPTY)
                 continue
 
@@ -31,41 +31,41 @@ class Solution:
             queue.append(node.left)
             queue.append(node.right)
 
-        while vals[-1] == self.EMPTY:
+        w___ vals[-1] __ self.EMPTY:
             vals.pop()
 
-        return TEMPLATE.format(','.join(vals))
+        r_ TEMPLATE.format(','.join(vals))
 
-    def deserialize(self, data):
+    ___ deserialize(self, data
         """Decodes your encoded data to tree.
         :type data: str
         :rtype: TreeNode
         """
-        if (not data or
+        __ (not data or
             data[0] != '{' or
             data[-1] != '}' or
-            len(data) < 3 or
-            data[1] == '#'
-        ):
-            return
+            le.(data) < 3 or
+            data[1] __ '#'
+
+            r_
 
         vals = data[1:-1].split(',')
-        n = len(vals)
+        n = le.(vals)
         i = 0
 
         root = TreeNode(int(vals[i]))
         queue = [root]
 
         for node in queue:
-            for branch in ('left', 'right'):
+            for branch in ('left', 'right'
                 i += 1
 
-                if i >= n:
+                __ i >= n:
                     break
-                if vals[i] == self.EMPTY:
+                __ vals[i] __ self.EMPTY:
                     continue
 
                 setattr(node, branch, TreeNode(int(vals[i])))
                 queue.append(getattr(node, branch))
 
-        return root
+        r_ root

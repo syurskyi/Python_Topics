@@ -25,13 +25,13 @@ Output: False
 Note:
 The length of the input is in range of [1, 10000]
 """
-from typing import List
-from collections import defaultdict
-import heapq
+from typing ______ List
+from collections ______ defaultdict
+______ heapq
 
 
 class Solution:
-    def isPossible(self, nums: List[int]) -> bool:
+    ___ isPossible(self, nums: List[int]) -> bool:
         """
         Attribute a number to a existing consecutive subsequences
         future numbers depend on this number to form the subsequence can also
@@ -48,40 +48,40 @@ class Solution:
 
         F = defaultdict(int)
         for e in nums:
-            if counter[e] == 0:
+            __ counter[e] __ 0:
                 continue
             counter[e] -= 1
 
-            if F[e - 1] > 0:
+            __ F[e - 1] > 0:
                 F[e - 1] -= 1
                 F[e] += 1
-            elif counter[e + 1] > 0 and counter[e + 2] > 0:
+            ____ counter[e + 1] > 0 and counter[e + 2] > 0:
                 F[e + 2] += 1
                 counter[e + 1] -= 1
                 counter[e + 2] -= 1
-            else:
-                return False
+            ____
+                r_ False
 
-        return True
+        r_ True
 
             
 class Interval:
-    def __init__(self, end, length):
+    ___ __init__(self, end, length
         self.end = end
         self.length = length
 
-    def __lt__(self, other):
-        if self.end == other.end:
-            return self.length < other.length
+    ___ __lt__(self, other
+        __ self.end __ other.end:
+            r_ self.length < other.length
 
-        return self.end < other.end
+        r_ self.end < other.end
 
-    def __repr__(self):
-        return repr((self.end, self.length))
+    ___ __repr__(self
+        r_ repr((self.end, self.length))
 
 
 class Solution2:
-    def isPossible(self, nums: List[int]) -> bool:
+    ___ isPossible(self, nums: List[int]) -> bool:
         """
         (length, last)
         heap sortest first
@@ -91,27 +91,27 @@ class Solution2:
         """
         h = []
         for n in nums:
-            while h and h[0].end + 1 < n:
+            w___ h and h[0].end + 1 < n:
                 itvl = heapq.heappop(h)
-                if itvl.length < 3:
-                    return False
+                __ itvl.length < 3:
+                    r_ False
 
-            if not h:
+            __ not h:
                 heapq.heappush(h, Interval(n, 1))
-            elif h[0].end + 1 == n:
+            ____ h[0].end + 1 __ n:
                 itvl = heapq.heappop(h)
                 heapq.heappush(h, Interval(n, itvl.length + 1))
-            else:  # n == end
+            ____  # n == end
                 heapq.heappush(h, Interval(n, 1))
 
 
         for itvl in h:
-            if itvl.length < 3:
-                return False
+            __ itvl.length < 3:
+                r_ False
 
-        return True
+        r_ True
 
-if __name__ == "__main__":
-    assert Solution().isPossible([1,2,3,3,4,5]) == True
-    assert Solution().isPossible([1,2,3,3,4,4,5,5]) == True
-    assert Solution().isPossible([1,2,3,4,4,5]) == False
+__ __name__ __ "__main__":
+    assert Solution().isPossible([1,2,3,3,4,5]) __ True
+    assert Solution().isPossible([1,2,3,3,4,4,5,5]) __ True
+    assert Solution().isPossible([1,2,3,4,4,5]) __ False

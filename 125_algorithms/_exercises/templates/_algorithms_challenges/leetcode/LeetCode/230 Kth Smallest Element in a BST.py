@@ -14,29 +14,29 @@ __author__ = 'Daniel'
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def kthSmallest(self, root, k):
+    ___ kthSmallest(self, root, k
         """
         :type root: TreeNode
         :type k: int
         :rtype: int
         """
         l = self.cnt(root.left)
-        if l+1 == k:
-            return root.val
-        elif l+1 < k:
-            return self.kthSmallest(root.right, k-(l+1))
-        else:
-            return self.kthSmallest(root.left, k)
+        __ l+1 __ k:
+            r_ root.val
+        ____ l+1 < k:
+            r_ self.kthSmallest(root.right, k-(l+1))
+        ____
+            r_ self.kthSmallest(root.left, k)
 
-    def cnt(self, root):
-        if not root:
-            return 0
+    ___ cnt(self, root
+        __ not root:
+            r_ 0
 
-        return 1+self.cnt(root.left)+self.cnt(root.right)
+        r_ 1+self.cnt(root.left)+self.cnt(root.right)

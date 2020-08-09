@@ -32,17 +32,17 @@ Note:
 
 1 <= N <= 10^9
 """
-from collections import Counter
+from collections ______ Counter
 
 
 class Solution:
-    def reorderedPowerOf2(self, N: int) -> bool:
+    ___ reorderedPowerOf2(self, N: int) -> bool:
         """
         count the digit and compare
         """
         counts = Counter(str(N))
-        for i in range(31):  # 32 bit unsighed int 
-            if counts == Counter(str(1 << i)):
-                return True
-        else:
-            return False
+        for i in range(31  # 32 bit unsighed int
+            __ counts __ Counter(str(1 << i)):
+                r_ True
+        ____
+            r_ False

@@ -13,18 +13,18 @@ For the purpose of this problem, we define empty string as valid palindrome.
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def isPalindrome(self, s):
+class Solution(object
+    ___ isPalindrome(self, s
         """
 
         :param s: a string
         :return: a boolean
         """
         s = s.lower()
-        # import re  # not supported
+        # ______ re  # not supported
         # s = re.sub('[^a-zA-Z0-9]', '', s)  # not supported
-        s = ''.join(e for e in s if e.isalnum())
-        if not s:
-            return True
+        s = ''.join(e for e in s __ e.isalnum())
+        __ not s:
+            r_ True
 
-        return s == s[::-1]
+        r_ s __ s[::-1]

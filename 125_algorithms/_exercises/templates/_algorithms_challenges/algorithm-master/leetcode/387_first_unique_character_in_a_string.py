@@ -1,19 +1,19 @@
 class Solution:
-    def firstUniqChar(self, s):
+    ___ firstUniqChar(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s:
-            return -1
+        __ not s:
+            r_ -1
 
         freq = {}
 
         for c in s:
             freq[c] = freq.get(c, 0) + 1
 
-        for i in range(len(s)):
-            if freq[s[i]] == 1:
-                return i
+        for i in range(le.(s)):
+            __ freq[s[i]] __ 1:
+                r_ i
 
-        return -1
+        r_ -1

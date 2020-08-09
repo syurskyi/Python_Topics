@@ -8,8 +8,8 @@ the contiguous subarray [4,−1,2,1] has the largest sum = 6.
 """
 
 
-class Solution(object):
-    def maxSubArray(self, nums):
+class Solution(object
+    ___ maxSubArray(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -18,17 +18,17 @@ class Solution(object):
         # s[i] - s[j] is the sum of nums[j + 1] .. nums[i]
         s = [0 for _ in nums]
         ts = 0  # temporary sum
-        for i, c in enumerate(nums):
+        for i, c in enumerate(nums
             ts += c
             s[i] = ts
         min_sum = 0
         res = 0
-        for i, c in enumerate(s):
+        for i, c in enumerate(s
             res = max(res, c - min_sum)
             min_sum = min(min_sum, c)
-        if res == 0:
-            return max(nums)
-        return res
+        __ res __ 0:
+            r_ max(nums)
+        r_ res
 
 
 a1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4]

@@ -34,7 +34,7 @@ S is a balanced parentheses string, containing only ( and ).
 
 
 class Solution:
-    def scoreOfParentheses(self, S: str) -> int:
+    ___ scoreOfParentheses(self, S: str) -> int:
         """
         stk
 
@@ -44,41 +44,41 @@ class Solution:
         stk = []
         ret = 0
         for s in S:
-            if s == "(":
+            __ s __ "(":
                 stk.append(0)
-            else:
+            ____
                 cur = stk.pop()
                 score = max(2 * cur, 1)
-                if stk:
+                __ stk:
                     stk[-1] += score
-                else:
+                ____
                     ret += score
 
-        return ret
+        r_ ret
 
-    def scoreOfParentheses_error(self, S: str) -> int:
+    ___ scoreOfParentheses_error(self, S: str) -> int:
         """
         stk
         """
         ret = 0
         cur_stk = []
         for s in S:
-            if s == "(":
+            __ s __ "(":
                 cur_stk.append(0)
                 stk.append(s)
-            else:
+            ____
                 stk.pop()
-                if cur_stk[-1] == 0:
+                __ cur_stk[-1] __ 0:
                     cur_stk[-1] = 1
-                else:
+                ____
                     cur_stk[-1] *= 2
-            if not stk:
+            __ not stk:
                 ret += cur
                 cur = 0
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().scoreOfParentheses("(())") == 2
-    assert Solution().scoreOfParentheses("(()(()))") == 6
+__ __name__ __ "__main__":
+    assert Solution().scoreOfParentheses("(())") __ 2
+    assert Solution().scoreOfParentheses("(()(()))") __ 6

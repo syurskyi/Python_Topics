@@ -1,5 +1,5 @@
-class Solution(object):
-  def fullJustify(self, words, maxWidth):
+class Solution(object
+  ___ fullJustify(self, words, maxWidth
     """
     :type words: List[str]
     :type maxWidth: int
@@ -7,41 +7,41 @@ class Solution(object):
     """
     ans = []
     line = []
-    lens = map(len, words)
+    lens = map(le., words)
     idx = 0
     curLen = 0
-    while idx < len(words):
-      if curLen == 0:
+    w___ idx < le.(words
+      __ curLen __ 0:
         curLen = lens[idx]
-      else:
+      ____
         curLen += lens[idx] + 1
       line.append(words[idx])
       idx += 1
-      if curLen > maxWidth:
+      __ curLen > maxWidth:
         curLen = 0
         line.pop()
         idx -= 1
-        if len(line) == 1:
-          ans.append(line[0] + " " * (maxWidth - len(line[0])))
+        __ le.(line) __ 1:
+          ans.append(line[0] + " " * (maxWidth - le.(line[0])))
           line = []
           continue
-        spaces = maxWidth - sum(map(len, line))
-        avgSpace = spaces / (len(line) - 1)
-        extraSpace = spaces % (len(line) - 1)
+        spaces = maxWidth - sum(map(le., line))
+        avgSpace = spaces / (le.(line) - 1)
+        extraSpace = spaces % (le.(line) - 1)
         res = ""
-        for i in range(0, len(line)):
+        for i in range(0, le.(line)):
           res += line[i]
-          if i < len(line) - 1:
+          __ i < le.(line) - 1:
             res += " " * (avgSpace + (extraSpace > 0))
             extraSpace -= 1
         ans.append(res)
         line = []
-      elif idx == len(words):
+      ____ idx __ le.(words
         res = ""
-        for i in range(0, len(line)):
+        for i in range(0, le.(line)):
           res += line[i]
-          if i < len(line) - 1:
+          __ i < le.(line) - 1:
             res += " "
-        res += " " * (maxWidth - len(res))
+        res += " " * (maxWidth - le.(res))
         ans.append(res)
-    return ans
+    r_ ans

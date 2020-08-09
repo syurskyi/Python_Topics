@@ -1,14 +1,14 @@
 # Definition for singly-linked list.
 # class ListNode:
-#     def __init__(self, x):
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
-from random import randint
+from random ______ randint
 
 
 class Solution:
-    def __init__(self, head):
+    ___ __init__(self, head
         """
         @param head The linked list's head.
         Note that the head is guaranteed to be not null, so it contains at least one node.
@@ -16,7 +16,7 @@ class Solution:
         """
         self.head = head
 
-    def getRandom(self):
+    ___ getRandom(self
         """
         Returns a random node's value.
         :rtype: int
@@ -24,13 +24,13 @@ class Solution:
         res = node = self.head
         i = 0
 
-        while node:
-            if randint(0, i) == i:
+        w___ node:
+            __ randint(0, i) __ i:
                 res = node
             node = node.next
             i += 1
 
-        return res.val
+        r_ res.val
 
 
 # Your Solution object will be instantiated and called as such:

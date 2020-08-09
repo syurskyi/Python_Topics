@@ -1,5 +1,5 @@
 class Solution:
-    def fourSumCount(self, A, B, C, D):
+    ___ fourSumCount(self, A, B, C, D
         """
         :type A: List[int]
         :type B: List[int]
@@ -8,8 +8,8 @@ class Solution:
         :rtype: int
         """
         ans = 0
-        if not A or not B or not C or not D:
-            return ans
+        __ not A or not B or not C or not D:
+            r_ ans
 
         S = {}
 
@@ -20,7 +20,7 @@ class Solution:
 
         for a in A:
             for b in B:
-                if a + b in S:
+                __ a + b in S:
                     ans += S[a + b]
 
-        return ans
+        r_ ans

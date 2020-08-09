@@ -1,26 +1,26 @@
-class Solution(object):
-  def longestCommonPrefix(self, strs):
+class Solution(object
+  ___ longestCommonPrefix(self, strs
     """
     :type strs: List[str]
     :rtype: str
     """
-    if len(strs) == 0:
-      return ""
+    __ le.(strs) __ 0:
+      r_ ""
     i = 0
     j = 0
     end = 0
-    while j < len(strs) and i < len(strs[j]):
-      if j == 0:
+    w___ j < le.(strs) and i < le.(strs[j]
+      __ j __ 0:
         char = strs[j][i]
-      else:
-        if strs[j][i] != char:
+      ____
+        __ strs[j][i] != char:
           break
 
-      if j == len(strs) - 1:
+      __ j __ le.(strs) - 1:
         i += 1
         j = 0
         end += 1
-      else:
+      ____
         j += 1
 
-    return strs[j][:end]
+    r_ strs[j][:end]

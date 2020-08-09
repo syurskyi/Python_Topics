@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestBit(object):
+class TestBit(object
 
-    def test_insert_m_into_n(self):
+    ___ test_insert_m_into_n(self
         n = int('0000010000111101', base=2)
         m = int('0000000000010011', base=2)
         expected = int('0000010001001101', base=2)
@@ -12,10 +12,10 @@ class TestBit(object):
         print('Success: test_insert_m_into_n')
 
 
-def main():
+___ main(
     test = TestBit()
     test.test_insert_m_into_n()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

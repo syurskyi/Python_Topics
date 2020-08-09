@@ -24,38 +24,38 @@ The answer will not exceed 2^31 - 1.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.ret = 0
         self.lst = []
 
-    def sumRootToLeaf(self, root: TreeNode) -> int:
+    ___ sumRootToLeaf(self, root: TreeNode) -> int:
         """
         Brute force, keep a lst, space O(log n)
         Error-prone
         """
         self.dfs(root)
-        return self.ret
+        r_ self.ret
 
-    def dfs(self, node):
-        if not node:
-            return
+    ___ dfs(self, node
+        __ not node:
+            r_
 
         self.lst.append(node.val)  # error prone
-        if not node.left and not node.right:
+        __ not node.left and not node.right:
             # leaf
             cur = 0
             for a in self.lst:
                 cur <<= 1
                 cur += a
             self.ret += cur
-        else:
+        ____
             self.dfs(node.left)
             self.dfs(node.right)
         self.lst.pop()

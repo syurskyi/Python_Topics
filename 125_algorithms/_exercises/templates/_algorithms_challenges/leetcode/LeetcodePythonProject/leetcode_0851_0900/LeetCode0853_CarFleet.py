@@ -3,8 +3,8 @@ Created on Sep 10, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def carFleet(self, target, position, speed):
+class Solution(object
+    ___ carFleet(self, target, position, speed
         """
         :type target: int
         :type position: List[int]
@@ -14,12 +14,12 @@ class Solution(object):
         time = [float(target-p)/s for p, s in sorted(zip(position, speed))]
         res = cur = 0
         for t in time[::-1]:
-            if t > cur:
+            __ t > cur:
                 res += 1
                 cur = t
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 12,
@@ -32,5 +32,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

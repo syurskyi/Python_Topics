@@ -1,7 +1,7 @@
-from functools import reduce
+from functools ______ reduce
 
 
-def trinary(s):
-    if set(s) - set('012'):
-        return 0
-    return reduce(lambda x, y: x * 3 + int(y), s, 0)
+___ trinary(s
+    __ set(s) - set('012'
+        r_ 0
+    r_ reduce(lambda x, y: x * 3 + int(y), s, 0)

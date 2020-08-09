@@ -1,12 +1,12 @@
-class HitCounter(object):
+class HitCounter(object
 
-  def __init__(self):
+  ___ __init__(self
     """
     Initialize your data structure here.
     """
     self.q = [(0, 0)] * 300
 
-  def hit(self, timestamp):
+  ___ hit(self, timestamp
     """
     Record a hit.
     @param timestamp - The current timestamp (in seconds granularity).
@@ -15,12 +15,12 @@ class HitCounter(object):
     """
     idx = timestamp % 300
     time, hit = self.q[idx]
-    if time != timestamp:
+    __ time != timestamp:
       self.q[idx] = timestamp, 1
-    else:
+    ____
       self.q[idx] = time, hit + 1
 
-  def getHits(self, timestamp):
+  ___ getHits(self, timestamp
     """
     Return the number of hits in the past 5 minutes.
     @param timestamp - The current timestamp (in seconds granularity).
@@ -28,11 +28,11 @@ class HitCounter(object):
     :rtype: int
     """
     ans = 0
-    for i in range(0, len(self.q)):
+    for i in range(0, le.(self.q)):
       time, hit = self.q[i]
-      if timestamp - time < 300:
+      __ timestamp - time < 300:
         ans += hit
-    return ans
+    r_ ans
 
 # Your HitCounter object will be instantiated and called as such:
 # obj = HitCounter()

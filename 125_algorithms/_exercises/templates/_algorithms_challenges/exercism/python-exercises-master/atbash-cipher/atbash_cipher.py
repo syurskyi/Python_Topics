@@ -1,6 +1,6 @@
-def encode(string):
+___ encode(string
     pass
 
 
-def decode(string):
+___ decode(string
     pass

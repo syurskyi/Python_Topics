@@ -4,8 +4,8 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def sortColors(self, nums):
+class Solution(object
+    ___ sortColors(self, nums
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
@@ -14,15 +14,15 @@ class Solution(object):
         for num in nums:
             colors[num]+=1
         i, j = 0, 0
-        while j < 3:
-            if colors[j]:
+        w___ j < 3:
+            __ colors[j]:
                 nums[i]=j
                 colors[j] -= 1
                 i += 1
-            else:
+            ____
                 j += 1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [2, 1, 0, 0, 1, 2, 2, 1],
         ]
@@ -32,5 +32,5 @@ class Solution(object):
             print('After sort')
             print('nums: %s' % (nums))
             print('-='*15+'-')
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

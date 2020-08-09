@@ -1,12 +1,12 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestPathExists(object):
+class TestPathExists(object
 
-    def test_path_exists(self):
+    ___ test_path_exists(self
         nodes = []
         graph = GraphPathExists()
-        for id in range(0, 6):
+        for id in range(0, 6
             nodes.append(graph.add_node(id))
         graph.add_edge(0, 1, 5)
         graph.add_edge(0, 4, 3)
@@ -24,10 +24,10 @@ class TestPathExists(object):
         print('Success: test_path_exists')
 
 
-def main():
+___ main(
     test = TestPathExists()
     test.test_path_exists()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

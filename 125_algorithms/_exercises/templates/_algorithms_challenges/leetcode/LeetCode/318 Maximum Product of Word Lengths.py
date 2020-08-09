@@ -21,30 +21,30 @@ No such pair of words.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def maxProduct(self, words):
+class Solution(object
+    ___ maxProduct(self, words
         """
         Brute force: O(n*n*k)
         Encode string using bit manipulation
         :type words: List[str]
         :rtype: int
         """
-        l = map(len, words)
+        l = map(le., words)
         codes = map(self.encode, words)
         maxa = 0
-        for i in xrange(len(codes)):
-            for j in xrange(i+1, len(codes)):
-                if codes[i] & codes[j] == 0:
+        for i in xrange(le.(codes)):
+            for j in xrange(i+1, le.(codes)):
+                __ codes[i] & codes[j] __ 0:
                     maxa = max(maxa, l[i]*l[j])
 
-        return maxa
+        r_ maxa
 
-    def encode(self, x):
+    ___ encode(self, x
         ret = 0
         for c in x:
             ret |= 1 << (ord(c)-ord('a'))
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) == 16
+__ __name__ __ "__main__":
+    assert Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) __ 16

@@ -5,48 +5,48 @@ Created on Mar 6, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def inorderSuccessor(self, root, p):
-        if not root: return None
-        if root.val <= p.val:
-            return self.inorderSuccessor(root.right, p)
-        else:
+class Solution(object
+    ___ inorderSuccessor(self, root, p
+        __ not root: r_ None
+        __ root.val <= p.val:
+            r_ self.inorderSuccessor(root.right, p)
+        ____
             left = self.inorderSuccessor(root.left, p)
-            if left:
-                return left
-            else:
-                return root
+            __ left:
+                r_ left
+            ____
+                r_ root
     
-    def inorderSuccessorNonRec(self, root, p):
+    ___ inorderSuccessorNonRec(self, root, p
         """
         :type root: TreeNode
         :type p: TreeNode
         :rtype: TreeNode
         """
-        if p.right:
+        __ p.right:
             node = p.right
-            while node.left:
+            w___ node.left:
                 node = node.left
-            return node.val
+            r_ node.val
         stack = []
         node = root
-        while node != p:
+        w___ node != p:
             stack.append(node)
-            if node.val > p.val:
+            __ node.val > p.val:
                 node = node.left
-            elif node.val < p.val:
+            ____ node.val < p.val:
                 node = node.right
-            else:
+            ____
                 break
-        while stack and stack[-1].val < p.val:
+        w___ stack and stack[-1].val < p.val:
             stack.pop()
-        if not stack:
-            return None
+        __ not stack:
+            r_ None
         node = stack[-1]
-        return node
+        r_ node

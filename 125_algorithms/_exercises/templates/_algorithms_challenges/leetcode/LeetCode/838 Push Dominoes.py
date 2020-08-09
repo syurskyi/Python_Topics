@@ -41,47 +41,47 @@ String dominoes contains only 'L', 'R' and '.'
 
 
 class Solution:
-    def pushDominoes(self, dominoes: str) -> str:
+    ___ pushDominoes(self, dominoes: str) -> str:
         """
         DP L & R from both ends
         Let L[i] be the distance to the "L" from the right
 
         we will consider that a falling domino expends no additional force
         """
-        n = len(dominoes)
+        n = le.(dominoes)
         L = [float("inf") for i in range(n)]
         R = [float("inf") for i in range(n)]
-        for i in range(n-1, -1, -1):
-            if dominoes[i] == "L":
+        for i in range(n-1, -1, -1
+            __ dominoes[i] __ "L":
                 L[i] = 0
-            elif dominoes[i] == "R":
+            ____ dominoes[i] __ "R":
                 L[i] = float("inf")
-            elif i + 1 < n:
+            ____ i + 1 < n:
                 L[i] = L[i+1] + 1
 
-        for i in range(n):
-            if dominoes[i] == "R":
+        for i in range(n
+            __ dominoes[i] __ "R":
                 R[i] = 0
-            elif dominoes[i] == "L":
+            ____ dominoes[i] __ "L":
                 R[i] = float("inf")
-            elif i - 1 >= 0:
+            ____ i - 1 >= 0:
                 R[i] = R[i-1] + 1
 
         ret = []
-        for i in range(n):
+        for i in range(n
             d = min(R[i], L[i])
-            if d == float("inf"):
+            __ d __ float("inf"
                 cur = "."
-            elif R[i] == L[i]:
+            ____ R[i] __ L[i]:
                 cur = "."
-            elif d == R[i]:
+            ____ d __ R[i]:
                 cur = "R"
-            else:
+            ____
                 cur = "L"
             ret.append(cur)
 
-        return "".join(ret)
+        r_ "".join(ret)
 
 
-if __name__ == "__main__":
-    assert Solution().pushDominoes(".L.R...LR..L..") == "LL.RR.LLRRLL.."
+__ __name__ __ "__main__":
+    assert Solution().pushDominoes(".L.R...LR..L..") __ "LL.RR.LLRRLL.."

@@ -1,37 +1,37 @@
 """
 Heap
 """
-import heapq
+______ heapq
 
 
 class Solution:
-    def searchMatrix(self, matrix, target):
+    ___ searchMatrix(self, matrix, target
         """
         :type matrix: list[list[int]]
         :type target: int
         :rtype: int
         """
         ans = 0
-        if not matrix or not matrix[0]:
-            return ans
+        __ not matrix or not matrix[0]:
+            r_ ans
 
         heap = []
-        m, n = len(matrix), len(matrix[0])
+        m, n = le.(matrix), le.(matrix[0])
 
-        for i in range(m):
+        for i in range(m
             heapq.heappush(heap, (matrix[i][0], i, 0))
 
-        while heap and heap[0][0] <= target:
+        w___ heap and heap[0][0] <= target:
             num, x, y = heapq.heappop(heap)
 
-            if num == target:
+            __ num __ target:
                 ans += 1
 
             y += 1
-            if y < n:
+            __ y < n:
                 heapq.heappush(heap, (matrix[x][y], x, y))
 
-        return ans
+        r_ ans
 
 
 """
@@ -47,7 +47,7 @@ else:
     need to check `y + 1`
 """
 class Solution:
-    def searchMatrix(self, matrix, target):
+    ___ searchMatrix(self, matrix, target
         """
         :type matrix: list[list[int]]
         :type target: int
@@ -55,20 +55,20 @@ class Solution:
         """
         ans = 0
 
-        if not matrix or not matrix[0]:
-            return ans
+        __ not matrix or not matrix[0]:
+            r_ ans
 
-        m, n = len(matrix), len(matrix[0])
+        m, n = le.(matrix), le.(matrix[0])
         x, y = m - 1, 0
 
-        while x >= 0 and y < n:
-            if matrix[x][y] < target:
+        w___ x >= 0 and y < n:
+            __ matrix[x][y] < target:
                 y += 1
-            elif matrix[x][y] > target:
+            ____ matrix[x][y] > target:
                 x -= 1
-            else:
+            ____
                 ans += 1
                 x -= 1
                 y += 1
 
-        return ans
+        r_ ans

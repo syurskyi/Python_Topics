@@ -9,10 +9,10 @@ for number in guess:
     c1 = 0 # condition 1
     c2 = 0 # condition 2
     for digit in number:
-        if digit in value:
-            if number.index(digit) == value.index(digit):
+        __ digit in value:
+            __ number.index(digit) __ value.index(digit
                 c1 +=1
-            else:
+            ____
                 c2 +=1
     print("{}-{}".format(c1,c2),end=" ")
     

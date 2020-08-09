@@ -1,11 +1,11 @@
 class Solution:
-    def evalRPN(self, E):
+    ___ evalRPN(self, E
         """
         :type E: List[str]
         :rtype: int
         """
-        if not E:
-            return 0
+        __ not E:
+            r_ 0
 
         stack = []
         operation = {
@@ -16,7 +16,7 @@ class Solution:
         }
 
         for char in E:
-            if char not in operation:
+            __ char not in operation:
                 stack.append(int(char))
                 continue
 
@@ -25,4 +25,4 @@ class Solution:
 
             stack.append(int(operation[char](a, b)))
 
-        return stack[0]
+        r_ stack[0]

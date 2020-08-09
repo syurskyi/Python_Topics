@@ -1,59 +1,59 @@
-class FileNode(object):
-  def __init__(self, name):
+class FileNode(object
+  ___ __init__(self, name
     self.isFolder = True
     self.childs = {}
     self.name = name
     self.data = ""
 
-  def appendData(self, data):
+  ___ appendData(self, data
     self.data += data
 
-  def readAll(self):
-    return self.data
+  ___ readAll(self
+    r_ self.data
 
 
-class FileSystem(object):
-  def __init__(self):
+class FileSystem(object
+  ___ __init__(self
     self.root = FileNode("/")
 
-  def ls(self, path):
+  ___ ls(self, path
     """
     :type path: str
     :rtype: List[str]
     """
     fd = self.lookup(path, False)
-    if not fd:
-      return []
-    if not fd.isFolder:
-      return [fd.name]
+    __ not fd:
+      r_ []
+    __ not fd.isFolder:
+      r_ [fd.name]
     files = []
     for file in fd.childs:
       files.append(file)
     files.sort()
-    return files
+    r_ files
 
-  def lookup(self, path, isAutoCreate):
+  ___ lookup(self, path, isAutoCreate
     path = path.split("/")
     p = self.root
     for name in path:
-      if not name:
+      __ not name:
         continue
-      if name not in p.childs:
-        if isAutoCreate:
+      __ name not in p.childs:
+        __ isAutoCreate:
           p.childs[name] = FileNode(name)
-        else:
-          return None
+        ____
+          r_ None
       p = p.childs[name]
-    return p
+    r_ p
 
-  def mkdir(self, path):
+  ___ mkdir(self, path
     """
     :type path: str
     :rtype: void
     """
     self.lookup(path, True)
 
-  def addContentToFile(self, filePath, content):
+  ___ addContentToFile(self, filePath, content
     """
     :type filePath: str
     :type content: str
@@ -63,15 +63,15 @@ class FileSystem(object):
     fd.isFolder = False
     fd.appendData(content)
 
-  def readContentFromFile(self, filePath):
+  ___ readContentFromFile(self, filePath
     """
     :type filePath: str
     :rtype: str
     """
     fd = self.lookup(filePath, False)
-    if fd:
-      return fd.readAll()
-    return ""
+    __ fd:
+      r_ fd.readAll()
+    r_ ""
 
 # Your FileSystem object will be instantiated and called as such:
 # obj = FileSystem()

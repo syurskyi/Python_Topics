@@ -1,66 +1,66 @@
-from email.mime.text import MIMEText
-import os
-import random
-import shelve
-import smtplib
-import sys
-import time
+from email.mime.text ______ MIMEText
+______ os
+______ random
+______ shelve
+______ smtplib
+______ sys
+______ time
 
-import feedparser
-import schedule
+______ feedparser
+______ schedule
 
 CACHE = 'cache'
 
 
 class Episode:
 
-    def __init__(self, id, title, link):
+    ___ __init__(self, id, title, link
         self.id = id
         self.title = title
         self.link = link
         self.done = False
 
-    def __str__(self):
-        status = 'done' if self.done else 'not done'
-        return 'Podcast {}: {} - {} (status: "{}")'.format(self.id, self.title, self.link, status)
+    ___ __str__(self
+        status = 'done' __ self.done else 'not done'
+        r_ 'Podcast {}: {} - {} (status: "{}")'.format(self.id, self.title, self.link, status)
 
 
-def store_new_episodes(feed):
+___ store_new_episodes(feed
     episodes = _parse_feed(feed)
     _update_cache(episodes)
 
 
-def _parse_feed(feed):
+___ _parse_feed(feed
     for e in feedparser.parse(feed)['entries']:
         id, title, link = e.get('id'), e.get('title'), e.get('link')
         yield Episode(id, title, link)
 
 
-def _update_cache(episodes):
+___ _update_cache(episodes
     with shelve.open(CACHE) as s:
         for ep in episodes:
-            if ep.id not in s:
+            __ ep.id not in s:
                 s[ep.id] = ep
 
 
-def get_random_episode():
+___ get_random_episode(
     with shelve.open(CACHE) as s:
         episodes = list(s.keys())
         random.shuffle(episodes)
         for key in episodes:
             ep = s[key]
-            if ep.done:
+            __ ep.done:
                 print('Nope cannot take this episode as already listened ({})'.format(ep))
                 continue
             print('Episode to listen to next: {}'.format(ep))
             ep.done = True
             s[key] = ep
-            return ep
-        else:
+            r_ ep
+        ____
             print('No unplayed episodes, stay tuned')
 
 
-def mail_episode(ep):
+___ mail_episode(ep
     # ok did cheat here, got this from cverna
     # https://github.com/pybites/challenges/blob/community/17/cverna/podcast.py
     # TODO: test on server
@@ -84,8 +84,8 @@ def mail_episode(ep):
     smtp_server.quit()
 
 
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
+__ __name__ __ '__main__':
+    __ le.(sys.argv) < 2:
         print('Specify a feed rss feed please')
         sys.exit(1)
 
@@ -94,6 +94,6 @@ if __name__ == '__main__':
     schedule.every().tuesday.at("9:00").do(store_new_episodes, feed)
     schedule.every().wednesday.at("10:52").do(get_random_episode)
 
-    while True:
+    w___ True:
         schedule.run_pending()
         time.sleep(1)

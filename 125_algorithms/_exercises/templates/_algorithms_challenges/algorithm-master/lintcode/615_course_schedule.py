@@ -1,5 +1,5 @@
 class Solution:
-    def canFinish(self, n, P):
+    ___ canFinish(self, n, P
         """
         :type n: int
         :type P: List[List[int]]
@@ -12,11 +12,11 @@ class Solution:
             indeg[c] += 1
             edges[p].append(c)
 
-        queue = [i for i in range(n) if indeg[i] == 0]
+        queue = [i for i in range(n) __ indeg[i] __ 0]
         for p in queue:
             for c in edges[p]:
                 indeg[c] -= 1
-                if indeg[c] == 0:
+                __ indeg[c] __ 0:
                     queue.append(c)
 
-        return len(queue) == n
+        r_ le.(queue) __ n

@@ -1,5 +1,5 @@
 class Solution:
-    def totalNQueens(self, n):
+    ___ totalNQueens(self, n
         """
         :type n: int
         :rtype: int
@@ -7,22 +7,22 @@ class Solution:
         Xs = set()
         DLs = set()  # left diagonal lines
         DRs = set()  # right diagonal lines
-        return self.divide_conquer(n, 0, 0, Xs, DLs, DRs)
+        r_ self.divide_conquer(n, 0, 0, Xs, DLs, DRs)
 
-    def divide_conquer(self, n, y, cnt, Xs, DLs, DRs):
-        for x in range(n):
-            if x in Xs:
+    ___ divide_conquer(self, n, y, cnt, Xs, DLs, DRs
+        for x in range(n
+            __ x in Xs:
                 continue
 
             dl = x - y
-            if dl in DLs:
+            __ dl in DLs:
                 continue
 
             dr = x + y
-            if dr in DRs:
+            __ dr in DRs:
                 continue
 
-            if y == n - 1:
+            __ y __ n - 1:
                 cnt += 1
                 continue
 
@@ -34,4 +34,4 @@ class Solution:
             DLs.discard(dl)
             DRs.discard(dr)
 
-        return cnt
+        r_ cnt

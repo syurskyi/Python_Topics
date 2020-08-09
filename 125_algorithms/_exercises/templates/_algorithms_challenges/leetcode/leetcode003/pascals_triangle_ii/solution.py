@@ -15,18 +15,18 @@ Note:
 Could you optimize your algorithm to use only O(k) extra space?
 """
 
-class Solution(object):
-    def getRow(self, rowIndex):
+class Solution(object
+    ___ getRow(self, rowIndex
         """
         :type rowIndex: int
         :rtype: List[int]
         """
         res = [1 for i in range(rowIndex + 1)]
-        for row in range(rowIndex + 1):
-            for col in range(1, row):
+        for row in range(rowIndex + 1
+            for col in range(1, row
                 col = row - col
                 res[col] += res[col - 1]
-        return res
+        r_ res
 
 s = Solution()
 print s.getRow(3)

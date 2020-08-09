@@ -1,14 +1,14 @@
-from random import randint
+from random ______ randint
 
 
 class Solution:
-    def __init__(self, A):
+    ___ __init__(self, A
         """
         :type A: List[int]
         """
         self.A = A
 
-    def pick(self, target):
+    ___ pick(self, target
         """
         :type target: int
         :rtype: int
@@ -16,14 +16,14 @@ class Solution:
         res = -1
         cnt = 0
 
-        for i in range(len(self.A)):
-            if self.A[i] != target:
+        for i in range(le.(self.A)):
+            __ self.A[i] != target:
                 continue
             cnt += 1
-            if randint(1, cnt) == cnt:
+            __ randint(1, cnt) __ cnt:
                 res = i
 
-        return res
+        r_ res
 
 
 # Your Solution object will be instantiated and called as such:

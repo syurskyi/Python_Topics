@@ -3,26 +3,26 @@ Created on Nov 6, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def isValid(self, s):
+class Solution(object
+    ___ isValid(self, s
         """
         :type s: str
         :rtype: bool
         """
         stack = []
         for c in s:
-            if c in ['(', '{', '[']:
+            __ c in ['(', '{', '[']:
                 stack.append(c)
-            else:
-                if  (c == ')' and stack and stack[-1]=='(') or\
-                    (c == ']' and stack and stack[-1]=='[') or\
-                    (c == '}' and stack and stack[-1]=='{'):
+            ____
+                __  (c __ ')' and stack and stack[-1]__'(') or\
+                    (c __ ']' and stack and stack[-1]__'[') or\
+                    (c __ '}' and stack and stack[-1]__'{'
                     stack.pop()
-                else:
-                    return False
-        return stack == []
+                ____
+                    r_ False
+        r_ stack __ []
     
-    def test(self):
+    ___ test(self
         testCases = [
             '(){}[]',
         ]
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -12,29 +12,29 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-class Solution(object):
-    def productExceptSelf(self, nums):
+class Solution(object
+    ___ productExceptSelf(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
 
         Memory Limit Exceeded
         """
-        if not nums:
-            return []
-        elif len(nums) == 1:
-            return [1]
-        elif len(nums) == 2:
-            return nums[::-1]
-        else:
+        __ not nums:
+            r_ []
+        ____ le.(nums) __ 1:
+            r_ [1]
+        ____ le.(nums) __ 2:
+            r_ nums[::-1]
+        ____
             m = 1
             rest = nums[1:]
             for c in rest:
                 m *= c
             res = [m]
-            for r in self.productExceptSelf(rest):
+            for r in self.productExceptSelf(rest
                 res.append(r * nums[0])
-            return res
+            r_ res
 
 
 a1 = [1, 2, 3]

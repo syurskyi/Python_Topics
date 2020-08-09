@@ -4,24 +4,24 @@ Created on Aug 24, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def splitLoopedString(self, strs):
+class Solution(object
+    ___ splitLoopedString(self, strs
         """
         :type strs: List[str]
         :rtype: str
         """
         res = None
         arr = [max(s, s[::-1]) for s in strs]
-        for i, s in enumerate(arr):
-            for start in (s, s[::-1]):
-                for j in range(len(start)+1):
-                    if not res:
+        for i, s in enumerate(arr
+            for start in (s, s[::-1]
+                for j in range(le.(start)+1
+                    __ not res:
                         res = start[j:] + ''.join(arr[i+1:]+arr[:i]) + start[:j]
-                    else:
+                    ____
                         res = max(res, start[j:] + ''.join(arr[i+1:]+arr[:i]) + start[:j])
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             ['abc', 'xyz'],
         ]
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -15,13 +15,13 @@ Note: Recursive solution is trivial, could you do it iteratively? - see postTrav
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def postorderTraversal(self, root):
+    ___ postorderTraversal(self, root
         """
         dfs
         Recursive post-order traversal is trivial. What is the iteration version for this
@@ -30,19 +30,19 @@ class Solution:
         """
         lst = []
         self.postTraverse_itr(root, lst)
-        return lst
+        r_ lst
 
 
 
-    def postTraverse(self, node, lst):
-        if not node:
-            return
+    ___ postTraverse(self, node, lst
+        __ not node:
+            r_
         self.postTraverse(node.left, lst)
         self.postTraverse(node.right, lst)
 
         lst.append(node.val)
 
-    def postTraverse_itr(self, root, lst):
+    ___ postTraverse_itr(self, root, lst
         """
         stack = [L, R, cur]
 
@@ -52,16 +52,16 @@ class Solution:
         :param lst:
         :return:
         """
-        if not root:
-            return
+        __ not root:
+            r_
         stk = [root]
-        while stk:
+        w___ stk:
             cur = stk.pop()
             lst.insert(0, cur.val)  # reversely insert
-            if cur.left:
+            __ cur.left:
                 stk.append(cur.left)
 
-            if cur.right:
+            __ cur.right:
                 stk.append(cur.right)
 
 
@@ -69,7 +69,7 @@ class Solution:
 
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     t1 = TreeNode(1)
     t1.left = TreeNode(2)
     print Solution().postorderTraversal(t1)

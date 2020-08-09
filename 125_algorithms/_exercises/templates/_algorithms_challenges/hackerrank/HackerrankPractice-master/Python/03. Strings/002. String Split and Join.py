@@ -2,5 +2,5 @@
 # Score: 10
 
 
-def split_and_join(line):
-    return "-".join(line.split())
+___ split_and_join(line
+    r_ "-".join(line.split())

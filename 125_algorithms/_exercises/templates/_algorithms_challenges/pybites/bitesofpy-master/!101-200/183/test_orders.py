@@ -1,44 +1,44 @@
-import pytest
-from pandas.core.frame import DataFrame
+______ pytest
+from pandas.core.frame ______ DataFrame
 
-from Previous.orders import (load_excel_into_dataframe,
+from Previous.orders ______ (load_excel_into_dataframe,
                              get_year_region_breakdown,
                              get_best_sales_rep,
                              get_most_sold_item)
 
 
 @pytest.fixture(scope="module")
-def df():
-    return load_excel_into_dataframe()
+___ df(
+    r_ load_excel_into_dataframe()
 
 
-def test_load_excel_into_dataframe(df):
-    assert type(df) == DataFrame
-    assert df.shape == (43, 7)
+___ test_load_excel_into_dataframe(df
+    assert type(df) __ DataFrame
+    assert df.shape __ (43, 7)
 
 
-def test_get_year_region_breakdown(df):
+___ test_get_year_region_breakdown(df
     ret = get_year_region_breakdown(df)
 
-    assert ret.index.levels[0][0] == 2018
-    assert ret.index.levels[0][1] == 2019
+    assert ret.index.levels[0][0] __ 2018
+    assert ret.index.levels[0][1] __ 2019
 
-    assert ret.index.names[0] == 'Year'
-    assert ret.index.names[1] == 'Region'
+    assert ret.index.names[0] __ 'Year'
+    assert ret.index.names[1] __ 'Region'
 
     actual = [round(val, 2) for val in ret.values]
     expected = [3833.51, 5193.71, 231.12, 7305.56,
                 808.38, 2255.6]
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_get_best_sales_rep(df):
+___ test_get_best_sales_rep(df
     best_rep = get_best_sales_rep(df)
-    assert best_rep[0] == 'Kivell'
-    assert best_rep[1] == 3109.44
+    assert best_rep[0] __ 'Kivell'
+    assert best_rep[1] __ 3109.44
 
 
-def test_get_most_sold_item(df):
+___ test_get_most_sold_item(df
     most_sold = get_most_sold_item(df)
-    assert most_sold[0] == 'Binder'
-    assert int(most_sold[1]) == 722
+    assert most_sold[0] __ 'Binder'
+    assert int(most_sold[1]) __ 722

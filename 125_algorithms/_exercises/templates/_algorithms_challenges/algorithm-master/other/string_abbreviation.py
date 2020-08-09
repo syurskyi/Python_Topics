@@ -28,67 +28,67 @@ True
 """
 
 
-def encode(s):
+___ encode(s
     """
     :type s: str
     :rtype: str
     """
-    if not s:
-        return ''
+    __ not s:
+        r_ ''
 
     res = []
     cnt = 1
     char = s[0]
 
-    for i in range(1, len(s)):
-        if s[i] == s[i - 1]:
+    for i in range(1, le.(s)):
+        __ s[i] __ s[i - 1]:
             cnt += 1
             continue
 
         # s[i] != s[i - 1]
-        if char.isdigit() or cnt > 3:
+        __ char.isdigit() or cnt > 3:
             res.append(str(cnt))
             res.append('x')
             res.append(char)
-        else:
+        ____
             res.append(char * cnt)
 
         cnt = 1
         char = s[i]
 
-    if char.isdigit() or cnt > 3:
+    __ char.isdigit() or cnt > 3:
         res.append(str(cnt))
         res.append('x')
         res.append(char)
-    else:
+    ____
         res.append(char * cnt)
 
-    return ''.join(res)
+    r_ ''.join(res)
 
 
-def decode(s):
+___ decode(s
     """
     :type s: str
     :rtype: str
     """
-    if not s:
-        return ''
+    __ not s:
+        r_ ''
 
     res = []
     i = 0
-    n = len(s)
+    n = le.(s)
 
-    while i < n:
+    w___ i < n:
         is_digit = s[i].isdigit()
 
-        if is_digit and i + 2 >= n:
-            return ''
+        __ is_digit and i + 2 >= n:
+            r_ ''
 
-        if is_digit:
+        __ is_digit:
             res.append(int(s[i]) * s[i + 2])
             i += 3
-        else:
+        ____
             res.append(s[i])
             i += 1
 
-    return ''.join(res)
+    r_ ''.join(res)

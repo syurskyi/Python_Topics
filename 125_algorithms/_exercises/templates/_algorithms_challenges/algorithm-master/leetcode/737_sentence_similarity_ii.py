@@ -7,7 +7,7 @@
 ...         ((['great', 'acting'], ['fine', 'talent'], pairs), False),
 ...         ((['great'], ['great'], []), True),
 ...         ((['great'], ['fine', 'drama'], pairs), False),
-...     ):
+...
 ...         res = s.areSentencesSimilarTwo(*_in)
 ...         if res != _out: print(_in, res)
 ...         gotcha.append(res == _out)
@@ -20,68 +20,68 @@ class Solution:
     """
     UnionFind
     """
-    def areSentencesSimilarTwo(self, words1, words2, pairs):
+    ___ areSentencesSimilarTwo(self, words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        if len(words1) != len(words2):
-            return False
+        __ le.(words1) != le.(words2
+            r_ False
 
         nodes = {}
 
         for a, b in pairs:
             self.union(nodes, a, b)
 
-        for i in range(len(words1)):
+        for i in range(le.(words1)):
             a = words1[i]
             b = words2[i]
             _a = self.find(nodes, a)
             _b = self.find(nodes, b)
 
-            if a != b and _a != _b:
-                return False
+            __ a != b and _a != _b:
+                r_ False
 
-        return True
+        r_ True
 
-    def union(self, nodes, a, b):
+    ___ union(self, nodes, a, b
         _a = self.find(nodes, a)
         _b = self.find(nodes, b)
 
-        if _a is not _b:
+        __ _a is not _b:
             nodes[_a] = _b
 
-        return _b
+        r_ _b
 
-    def find(self, nodes, a):
-        if a not in nodes:
+    ___ find(self, nodes, a
+        __ a not in nodes:
             nodes[a] = a
-            return a
-        if nodes[a] is a:
-            return a
+            r_ a
+        __ nodes[a] is a:
+            r_ a
 
         nodes[a] = self.find(nodes, nodes[a])
-        return nodes[a]
+        r_ nodes[a]
 
 
-import collections
+______ collections
 
 
 class Solution2:
     """
     DFS
     """
-    def areSentencesSimilarTwo(self, words1, words2, pairs):
+    ___ areSentencesSimilarTwo(self, words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        if len(words1) != len(words2):
-            return False
+        __ le.(words1) != le.(words2
+            r_ False
 
         simils = collections.defaultdict(set)
 
@@ -89,31 +89,31 @@ class Solution2:
             simils[a].add(b)
             simils[b].add(a)
 
-        for i in range(len(words1)):
+        for i in range(le.(words1)):
             a = words1[i]
             b = words2[i]
 
-            if a != b and not self.dfs(a, b, simils, set()):
-                return False
+            __ a != b and not self.dfs(a, b, simils, set()):
+                r_ False
 
-        return True
+        r_ True
 
-    def dfs(self, start, end, simils, path):
+    ___ dfs(self, start, end, simils, path
         # check start and end are connected
-        if start == end:
-            return True
-        if start not in simils or start in path:
-            return False
+        __ start __ end:
+            r_ True
+        __ start not in simils or start in path:
+            r_ False
 
         path.add(start)
 
         for nxt in simils[start]:
-            if nxt in path:
+            __ nxt in path:
                 continue
 
             res = self.dfs(nxt, end, simils, path)
-            if res:
-                return True
+            __ res:
+                r_ True
 
         path.discard(start)
-        return False
+        r_ False

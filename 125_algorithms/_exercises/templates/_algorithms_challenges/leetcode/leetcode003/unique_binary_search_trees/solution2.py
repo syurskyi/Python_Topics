@@ -12,17 +12,17 @@ Given n = 3, there are a total of 5 unique BST's.
    2     1         2                 3
 """
 
-class Solution(object):
-    def numTrees(self, n):
+class Solution(object
+    ___ numTrees(self, n
         t = [-1 for _ in range(n + 1)]
         t[0] = 1
         t[1] = 1
-        if n <= 1:
-            return t[n]
-        else:
-            for i in range(2, n + 1):
+        __ n <= 1:
+            r_ t[n]
+        ____
+            for i in range(2, n + 1
                 res = 0
-                for j in range(i):
+                for j in range(i
                     res += t[j] * t[i - 1 - j]
                 t[i] = res
-        return t[n]
+        r_ t[n]

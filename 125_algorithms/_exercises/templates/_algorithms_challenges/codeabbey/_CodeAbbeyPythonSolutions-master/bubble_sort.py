@@ -1,19 +1,19 @@
 amount_values = int(input())
 
-def get_pass_and_swap_number(array):
+___ get_pass_and_swap_number(array
     passed = 0
     swapped = 0
 
-    n = len(array)
-    for i in range(n):
+    n = le.(array)
+    for i in range(n
         previous_swap = swapped
-        for j in range(n-i-1):
-            if(array[j] > array[j+1]):
+        for j in range(n-i-1
+            __(array[j] > array[j+1]
                 swapped += 1
                 array[j], array[j+1] = array[j+1], array[j]
         passed += 1
 
-        if(previous_swap == swapped):
+        __(previous_swap __ swapped
             break  
     
 

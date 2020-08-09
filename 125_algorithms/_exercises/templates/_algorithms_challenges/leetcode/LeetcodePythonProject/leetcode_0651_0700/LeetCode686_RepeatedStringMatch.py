@@ -3,23 +3,23 @@ Created on Oct 22, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def repeatedStringMatch(self, A, B):
+class Solution(object
+    ___ repeatedStringMatch(self, A, B
         """
         :type A: str
         :type B: str
         :rtype: int
         """
         s1, s2 = A, B
-        n1, n2 = len(s1), len(s2)
+        n1, n2 = le.(s1), le.(s2)
         k = n2//n1+2
-        if str(s1*k).count(s2)==0:
-            return -1
-        while k >= 1 and str(s1*k).count(s2)!=0:
+        __ str(s1*k).count(s2)__0:
+            r_ -1
+        w___ k >= 1 and str(s1*k).count(s2)!=0:
             k -= 1
-        return k+1
+        r_ k+1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 'abcd',
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

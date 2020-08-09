@@ -1,83 +1,83 @@
-from functools import wraps
-from typing import List, Set
+from functools ______ wraps
+from typing ______ List, Set
 
-from time import time
+from time ______ time
 
 
-def timing(f):
+___ timing(f
     """A simple timer decorator to print the elapsed time of
        the execution of the function it wraps.
        Returns (timing, result) tuple"""
 
     @wraps(f)
-    def wrapper(*args, **kwargs):
+    ___ wrapper(*args, **kwargs
         start = time()
         result = f(*args, **kwargs)
         end = time()
         duration = end - start
         print(f'Elapsed time {f.__name__}: {duration}')
-        return duration, result
+        r_ duration, result
 
-    return wrapper
+    r_ wrapper
 
 
 @timing
-def contains(sequence: List[int], num: int) -> bool:
+___ contains(sequence: List[int], num: int) -> bool:
     for n in sequence:
-        if n == num:
-            return True
-    return False
+        __ n __ num:
+            r_ True
+    r_ False
 
 
 @timing
-def contains_fast(sequence: Set[int], num: int) -> bool:
-    return num in sequence
+___ contains_fast(sequence: Set[int], num: int) -> bool:
+    r_ num in sequence
 
 
 @timing
-def ordered_list_max(sequence: List[int]) -> int:
-    return max(sequence)
+___ ordered_list_max(sequence: List[int]) -> int:
+    r_ max(sequence)
 
 
 @timing
-def ordered_list_max_fast(sequence: List[int]) -> int:
-    return sequence[-1]
+___ ordered_list_max_fast(sequence: List[int]) -> int:
+    r_ sequence[-1]
 
 
 @timing
-def list_concat(sequence: List[str]) -> str:
+___ list_concat(sequence: List[str]) -> str:
     bigstr = ''
     for i in sequence:
         bigstr += str(i)
-    return bigstr
+    r_ bigstr
 
 
 @timing
-def list_concat_fast(sequence: List[str]) -> str:
-    return ''.join(sequence)
+___ list_concat_fast(sequence: List[str]) -> str:
+    r_ ''.join(sequence)
 
 
 @timing
-def list_inserts(n: int) -> List[int]:
+___ list_inserts(n: int) -> List[int]:
     lst = []
-    for i in range(n):
+    for i in range(n
         lst.insert(0, i)
-    return lst
+    r_ lst
 
 
 @timing
-def list_inserts_fast(n: int) -> List[int]:
-    return [v for v in range(n)][::-1]
+___ list_inserts_fast(n: int) -> List[int]:
+    r_ [v for v in range(n)][::-1]
 
 
 @timing
-def list_creation(n: int) -> List[int]:
+___ list_creation(n: int) -> List[int]:
     lst = []
-    for i in range(n):
+    for i in range(n
         lst.append(i)
-    return lst
+    r_ lst
 
 
 @timing
-def list_creation_fast(n: int):
+___ list_creation_fast(n: int
     yield from (v for v in range(n))

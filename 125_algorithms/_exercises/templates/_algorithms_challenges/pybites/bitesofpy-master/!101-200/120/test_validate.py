@@ -1,27 +1,27 @@
-import pytest
+______ pytest
 
-from Previous.validate import int_args
+from Previous.validate ______ int_args
 
 
 @int_args
-def sum_numbers(*numbers):
-    return sum(numbers)
+___ sum_numbers(*numbers
+    r_ sum(numbers)
 
 
-def test_valid_args():
-    assert sum_numbers(1, 2, 3) == 6
+___ test_valid_args(
+    assert sum_numbers(1, 2, 3) __ 6
 
 
-def test_invalid_type_str():
-    with pytest.raises(TypeError):
+___ test_invalid_type_str(
+    with pytest.raises(TypeError
         sum_numbers(1, 'string', 3)
 
 
-def test_invalid_type_float():
-    with pytest.raises(TypeError):
+___ test_invalid_type_float(
+    with pytest.raises(TypeError
         sum_numbers(1, 2.1, 3)
 
 
-def test_negative_number():
-    with pytest.raises(ValueError):
+___ test_negative_number(
+    with pytest.raises(ValueError
         sum_numbers(1, 2, -3)

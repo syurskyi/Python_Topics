@@ -2,7 +2,7 @@
 #  Score: 40
 
 
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 arr = defaultdict(int)
@@ -10,16 +10,16 @@ frequencies = defaultdict(int)
 result = []
 for i in range(int(input())):
     command, value = map(int, input().split())
-    if command == 1:
+    __ command __ 1:
         arr[value] += 1
         frequencies[arr[value]] += 1
         frequencies[arr[value] - 1] -= 1
-    if command == 2 and arr[value] != 0:
+    __ command __ 2 and arr[value] != 0:
         arr[value] -= 1
         frequencies[arr[value]] += 1
         frequencies[arr[value] + 1] -= 1
-    if command == 3:
-        result.append(1 if frequencies[value] > 0 else 0)
+    __ command __ 3:
+        result.append(1 __ frequencies[value] > 0 else 0)
 
 for i in result:
     print(i)

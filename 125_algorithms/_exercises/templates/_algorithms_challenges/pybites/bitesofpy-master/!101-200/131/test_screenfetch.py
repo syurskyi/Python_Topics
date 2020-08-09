@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from screenfetch import output, sysinfo_scrape
+from screenfetch ______ output, sysinfo_scrape
 
 debian = """
          _,met$$$$$gg.           mohh@SERENiTY
@@ -42,37 +42,37 @@ mac = """
 
 
 @pytest.fixture(scope="module")
-def sysinfo():
+___ sysinfo(
     """Make a module scope sysinfo object"""
-    return sysinfo_scrape(output)
+    r_ sysinfo_scrape(output)
 
 
-def test_sysinfo_scrape_type(sysinfo):
+___ test_sysinfo_scrape_type(sysinfo
     """Test for proper object"""
     assert isinstance(sysinfo, dict)
 
 
-def test_sysinfo_scrape_name(sysinfo):
+___ test_sysinfo_scrape_name(sysinfo
     """Test for inclusion of the 'Name' key"""
-    assert sysinfo["Name"] == "mohh@SERENiTY"
+    assert sysinfo["Name"] __ "mohh@SERENiTY"
 
 
-def test_sysinfo_scrape_length(sysinfo):
+___ test_sysinfo_scrape_length(sysinfo
     """Test for correct amount of entries"""
-    assert len(sysinfo) == 16
+    assert le.(sysinfo) __ 16
 
 
-def test_sysinfo_scrape_keys(sysinfo):
+___ test_sysinfo_scrape_keys(sysinfo
     """Test for the proper keys"""
     expected = [
         'Name', 'OS', 'Kernel', 'Uptime', 'Packages', 'Shell', 
         'Resolution', 'DE', 'WM', 'WM Theme', 'GTK Theme', 'Icon Theme', 
         'Font', 'CPU', 'GPU', 'RAM'
     ]
-    assert list(sysinfo.keys()) == expected
+    assert list(sysinfo.keys()) __ expected
 
 
-def test_sysinfo_scrape_values(sysinfo):
+___ test_sysinfo_scrape_values(sysinfo
     """Test for the proper values"""
     expected = [
         'mohh@SERENiTY', 'Mint 19 tara', 'x86_64 Linux 4.15.0-34-generic', 
@@ -82,16 +82,16 @@ def test_sysinfo_scrape_values(sysinfo):
         'AMD KAVERI (DRM 2.50.0 / 4.15.0-34-generic, LLVM 6.0.0)', 
         '1886MiB / 6915MiB'
     ]
-    assert list(sysinfo.values()) == expected
+    assert list(sysinfo.values()) __ expected
 
 
-def test_sysinfo_scrape_debian():
+___ test_sysinfo_scrape_debian(
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(debian)
-    assert sysinfo["Resolution"] == "1366x768"
+    assert sysinfo["Resolution"] __ "1366x768"
 
 
-def test_sysinfo_scrape_mac():
+___ test_sysinfo_scrape_mac(
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(mac)
-    assert sysinfo["Name"] == "ejo@BlackOil"
+    assert sysinfo["Name"] __ "ejo@BlackOil"

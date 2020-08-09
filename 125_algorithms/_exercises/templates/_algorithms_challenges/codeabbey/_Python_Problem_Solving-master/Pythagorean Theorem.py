@@ -1,14 +1,14 @@
-import math
+______ ma__
 for i in range(int(input())):
     triangle= list(map(int,input().split()))
     a,b,c = triangle
-    cal = math.sqrt(a**2 + b**2)
+    cal = ma__.sqrt(a**2 + b**2)
     print(cal)
-    if c == cal:
+    __ c __ cal:
         print('R',end=' ')
     #acute triangle which is less than 90 degree
-    elif c < cal:
+    ____ c < cal:
         print('A',end=' ')
     #obtuse triangle which is greater than 90 degree
-    else:
+    ____
         print('O',end=' ')

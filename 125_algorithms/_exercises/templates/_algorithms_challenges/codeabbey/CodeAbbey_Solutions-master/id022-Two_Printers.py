@@ -1,9 +1,9 @@
 # Python 3.4
 
-def two_printers():
+___ two_printers(
     tests = int(input())
     answer = []
-    for test in range(tests):
+    for test in range(tests
         x, y, n = [float(x) for x in input().split()]
         a = int(y * n / (x + y))
         b = int(x * n / (x + y))

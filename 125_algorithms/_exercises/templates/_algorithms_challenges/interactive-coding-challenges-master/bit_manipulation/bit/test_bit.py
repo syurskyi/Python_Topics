@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestBit(object):
+class TestBit(object
 
-    def test_bit(self):
+    ___ test_bit(self
         number = int('10001110', base=2)
         bit = Bit(number)
         assert_equal(bit.get_bit(index=3), True)
@@ -29,10 +29,10 @@ class TestBit(object):
         print('Success: test_bit')
 
 
-def main():
+___ main(
     test = TestBit()
     test.test_bit()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

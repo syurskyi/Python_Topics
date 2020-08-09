@@ -12,25 +12,25 @@ prime numbers up to n would be O(n2). Could we do better?
 
 """
 
-class Solution(object):
-    def countPrimes(self, n):
+class Solution(object
+    ___ countPrimes(self, n
         """
         :type n: int
         :rtype: int
         """
         res = 0
-        for i in range(2, n):
-            if self.is_prime(i):
+        for i in range(2, n
+            __ self.is_prime(i
                 res += 1
-        return res
+        r_ res
 
-    def is_prime(self, k):
+    ___ is_prime(self, k
         i = 2
-        while i * i <= k:
-            if k % i == 0:
-                return False
+        w___ i * i <= k:
+            __ k % i __ 0:
+                r_ False
             i += 1
-        return True
+        r_ True
 
 
 s = Solution()

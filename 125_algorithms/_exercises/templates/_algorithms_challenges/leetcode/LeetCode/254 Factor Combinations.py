@@ -1,13 +1,13 @@
 """
 Premium Question
 """
-from math import sqrt
+from ma__ ______ sqrt
 
 __author__ = 'Daniel'
 
 
 class Solution:
-    def getFactors(self, n):
+    ___ getFactors(self, n
         """
 
         :type n: int
@@ -15,9 +15,9 @@ class Solution:
         """
         ret = []
         self.dfs([n], ret)
-        return ret
+        r_ ret
 
-    def dfs(self, cur, ret):
+    ___ dfs(self, cur, ret
         """
         16
 
@@ -31,44 +31,44 @@ class Solution:
 
         [4, 4]
         """
-        if len(cur) > 1:
+        __ le.(cur) > 1:
             ret.append(list(cur))
 
         n = cur.pop()
-        start = cur[-1] if cur else 2
-        for i in xrange(start, int(sqrt(n))+1):
-            if n % i == 0:
+        start = cur[-1] __ cur else 2
+        for i in xrange(start, int(sqrt(n))+1
+            __ n % i __ 0:
                 cur.append(i)
                 cur.append(n/i)
                 self.dfs(cur, ret)
                 cur.pop()
 
-    def dfs2(self, n, cur, ret):
-        if n > 1 and cur and len(cur) >= 1:
+    ___ dfs2(self, n, cur, ret
+        __ n > 1 and cur and le.(cur) >= 1:
             ret.append(list(cur)+[n])
 
-        start = cur[-1] if cur else 2
-        for i in xrange(start, int(sqrt(n))+1):
-            if n%i == 0:
+        start = cur[-1] __ cur else 2
+        for i in xrange(start, int(sqrt(n))+1
+            __ n%i __ 0:
                 cur.append(i)
                 self.dfs(n/i, cur, ret)
                 cur.pop()
 
-    def dfs_TLE(self, n, cur, ret):
-        if n == 1 and cur and len(cur) >= 2:
+    ___ dfs_TLE(self, n, cur, ret
+        __ n __ 1 and cur and le.(cur) >= 2:
             ret.append(list(cur))
 
-        if cur:
+        __ cur:
             start = cur[-1]
-        else:
+        ____
             start = 2
 
         for i in xrange(start, int(sqrt(n+1))):
-            if n%i == 0:
+            __ n%i __ 0:
                 cur.append(i)
                 self.dfs_TLE(n/i, cur, ret)
                 cur.pop()
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().getFactors(16)

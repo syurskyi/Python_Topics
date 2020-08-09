@@ -6,8 +6,8 @@ The digits are stored such that the most significant digit is at the head of the
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def plusOne(self, digits):
+class Solution(object
+    ___ plusOne(self, digits
         """
         Math
 
@@ -15,18 +15,18 @@ class Solution(object):
         :param digits: a list of integer digits
         :return: a list of integer digits
         """
-        for i in xrange(len(digits)-1, -1, -1):
+        for i in xrange(le.(digits)-1, -1, -1
             digits[i] += 1
-            if digits[i] < 10:
-                return digits
-            else:
+            __ digits[i] < 10:
+                r_ digits
+            ____
                 digits[i] -= 10
 
         # MSB
         digits.insert(0, 1)
-        return digits
+        r_ digits
 
-    def plusOne(self, digits):
+    ___ plusOne(self, digits
         """
         Good habit to reverse it first
         :param digits:
@@ -36,22 +36,22 @@ class Solution(object):
 
         digits[0] += 1
         carry = 0
-        for i in xrange(len(digits)):  # for ind, val in enumerate(digits):
+        for i in xrange(le.(digits)):  # for ind, val in enumerate(digits
             digits[i] += carry
-            if digits[i] > 9:
+            __ digits[i] > 9:
                 digits[i] -= 10
                 carry = 1
-            else:
+            ____
                 carry = 0
                 break
 
-        if carry:
+        __ carry:
             digits.append(1)
 
         digits.reverse()
-        return digits
+        r_ digits
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     digits = [9]
-    assert Solution().plusOne(digits) == [1, 0]
+    assert Solution().plusOne(digits) __ [1, 0]

@@ -1,11 +1,11 @@
-from collections import namedtuple
-from itertools import cycle, islice
-from time import sleep
+from collections ______ namedtuple
+from itertools ______ cycle, islice
+from time ______ sleep
 
 State = namedtuple('State', 'color command timeout')
 
 
-def traffic_light():
+___ traffic_light(
     """Returns an itertools.cycle iterator that
        when iterated over returns State namedtuples
        as shown in the Bite's description"""
@@ -14,8 +14,8 @@ def traffic_light():
         yield s
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     # print a sample of 10 states if run as standalone program
-    for state in islice(traffic_light(), 10):
+    for state in islice(traffic_light(), 10
         print(f'{state.command}! The light is {state.color}')
         sleep(state.timeout)

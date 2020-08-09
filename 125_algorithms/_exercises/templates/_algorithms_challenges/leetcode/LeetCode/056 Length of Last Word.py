@@ -12,7 +12,7 @@ return 5.
 """
 __author__ = 'Danyang'
 class Solution:
-    def lengthOfLastWord(self, s):
+    ___ lengthOfLastWord(self, s
         """
         String
 
@@ -24,6 +24,6 @@ class Solution:
         lst = s.split(" ")
         try:
             last_word = lst[-1]
-            return len(last_word)
+            r_ le.(last_word)
         except IndexError:
-            return 0
+            r_ 0

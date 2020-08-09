@@ -1,7 +1,7 @@
-def get_sum():
+___ get_sum(
     A, B = map(int, input().split())
     result = A+B    
     
-    return result
+    r_ result
 
 print(get_sum())

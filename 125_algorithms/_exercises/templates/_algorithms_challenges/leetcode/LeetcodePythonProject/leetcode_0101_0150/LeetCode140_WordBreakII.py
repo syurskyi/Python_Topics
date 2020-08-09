@@ -4,37 +4,37 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def wordBreak(self, s, wordDict):
+class Solution(object
+    ___ wordBreak(self, s, wordDict
         """
         :type s: str
         :type wordDict: List[str]
         :rtype: List[str]
         """
-        if not s: return []
-        dp = [[] for _ in range(len(s)+1)]
+        __ not s: r_ []
+        dp = [[] for _ in range(le.(s)+1)]
         dp[0] = True
-        for i in range(len(s)+1):
-            if dp[i]:
+        for i in range(le.(s)+1
+            __ dp[i]:
                 for word in wordDict:
-                    if s[i:i+len(word)] == word:
-                        dp[i+len(word)].append(word)
+                    __ s[i:i+le.(word)] __ word:
+                        dp[i+le.(word)].append(word)
         res = []
-        self.helper(dp, len(s), res, [])
-        return res
+        self.helper(dp, le.(s), res, [])
+        r_ res
     
-    def helper(self, dp, i, res, curr):
-        if i <= 0:
-            if i == 0:
+    ___ helper(self, dp, i, res, curr
+        __ i <= 0:
+            __ i __ 0:
                 res.append(' '.join(curr))
-            return
+            r_
         for word in dp[i]:
-            if i >= len(word):
+            __ i >= le.(word
                 curr.insert(0, word)
-                self.helper(dp, i-len(word), res, curr)
+                self.helper(dp, i-le.(word), res, curr)
                 curr.pop(0)
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('catsanddog', ["cat", "cats", "and", "sand", "dog"]),
         ]
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

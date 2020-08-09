@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestAssignCookie(object):
+class TestAssignCookie(object
 
-    def test_assign_cookie(self):
+    ___ test_assign_cookie(self
         solution = Solution()
         assert_raises(TypeError, solution.find_content_children, None, None)
         assert_equal(solution.find_content_children([1, 2, 3], 
@@ -15,10 +15,10 @@ class TestAssignCookie(object):
         print('Success: test_find_content_children')
 
 
-def main():
+___ main(
     test = TestAssignCookie()
     test.test_assign_cookie()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

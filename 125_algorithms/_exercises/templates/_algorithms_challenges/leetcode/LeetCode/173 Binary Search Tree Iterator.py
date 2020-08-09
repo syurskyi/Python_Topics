@@ -9,35 +9,35 @@ __author__ = 'Daniel'
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class BSTIterator:
-    def __init__(self, root):
+    ___ __init__(self, root
         """
         :type root: TreeNode
         """
         self.cur = root
         self.stk = []
 
-    def hasNext(self):
+    ___ hasNext(self
         """
         :rtype: bool
         """
-        return self.cur or self.stk
+        r_ self.cur or self.stk
 
-    def next(self):
+    ___ next(self
         """
         :rtype: int
         :return: the next smallest number
         """
-        while self.cur:
+        w___ self.cur:
             self.stk.append(self.cur)
             self.cur = self.cur.left
 
         nxt = self.stk.pop()
         self.cur = nxt.right
-        return nxt.val
+        r_ nxt.val

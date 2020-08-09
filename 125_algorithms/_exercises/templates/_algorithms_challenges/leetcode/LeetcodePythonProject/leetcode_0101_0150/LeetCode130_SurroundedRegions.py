@@ -3,54 +3,54 @@ Created on Feb 8, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def solve(self, board):
+class Solution(object
+    ___ solve(self, board
         """
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        if not board or len(board) <= 1 or len(board[0]) <= 1: return
-        m, n = len(board), len(board[0])
-        for i in range(m):
-            if board[i][0] == 'O':
+        __ not board or le.(board) <= 1 or le.(board[0]) <= 1: r_
+        m, n = le.(board), le.(board[0])
+        for i in range(m
+            __ board[i][0] __ 'O':
                 self.bfs(board, i, 0)
-            if board[i][n-1] == 'O':
+            __ board[i][n-1] __ 'O':
                 self.bfs(board, i, n-1)
-        for i in range(n):
-            if board[0][i] == 'O':
+        for i in range(n
+            __ board[0][i] __ 'O':
                 self.bfs(board, 0, i)
-            if board[m-1][i] == 'O':
+            __ board[m-1][i] __ 'O':
                 self.bfs(board, m-1, i)
-        for i in range(m):
-            for j in range(n):
-                if board[i][j] == 'O':
+        for i in range(m
+            for j in range(n
+                __ board[i][j] __ 'O':
                     board[i][j] = 'X'
-                if board[i][j] == '#':
+                __ board[i][j] __ '#':
                     board[i][j] = 'O'
     
-    def bfs(self, board, x, y):
+    ___ bfs(self, board, x, y
         board[x][y] = '#'
-        m, n = len(board), len(board[0])
+        m, n = le.(board), le.(board[0])
         index = x*n+y
         queue = [index]
-        while queue:
+        w___ queue:
             nextInd = queue.pop(0)
             i = int(nextInd/n)
             j = nextInd%n
-            if i > 1 and board[i-1][j] == 'O':
+            __ i > 1 and board[i-1][j] __ 'O':
                 board[i-1][j] = '#'
                 queue.append((i-1)*n+j)
-            if j > 1 and board[i][j-1] == 'O':
+            __ j > 1 and board[i][j-1] __ 'O':
                 board[i][j-1] = '#'
                 queue.append(i*n+j-1)
-            if i+1 < m and board[i+1][j] == 'O':
+            __ i+1 < m and board[i+1][j] __ 'O':
                 board[i+1][j] = '#'
                 queue.append((i+1)*n+j)
-            if j+1 < n and board[i][j+1] == 'O':
+            __ j+1 < n and board[i][j+1] __ 'O':
                 board[i][j+1] = '#'
                 queue.append(i*n+j+1)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 'XXXX',
@@ -68,5 +68,5 @@ class Solution(object):
             print('%s' % (board))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

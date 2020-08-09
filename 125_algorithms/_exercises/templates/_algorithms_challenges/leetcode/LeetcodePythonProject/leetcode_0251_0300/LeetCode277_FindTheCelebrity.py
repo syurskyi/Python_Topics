@@ -7,25 +7,25 @@ Created on May 12, 2018
 # @param a, person a
 # @param b, person b
 # @return a boolean, whether a knows b
-def knows(a, b):
-    import random
-    return random(0, 1) == 0
+___ knows(a, b
+    ______ random
+    r_ random(0, 1) __ 0
 
-class Solution(object):
-    def findCelebrity(self, n):
+class Solution(object
+    ___ findCelebrity(self, n
         """
         :type n: int
         :rtype: int
         """
         l, r = 0, n-1
-        while l < r:
-            if knows(l, r):
+        w___ l < r:
+            __ knows(l, r
                 l += 1
-            else:
+            ____
                 r -= 1
-        for i in range(n):
-            if i == l or (knows(i, l) and not knows(l, i)):
+        for i in range(n
+            __ i __ l or (knows(i, l) and not knows(l, i)):
                 continue
-            else:
-                return -1
-        return l
+            ____
+                r_ -1
+        r_ l

@@ -1,7 +1,7 @@
 d = int(input())
 
 lista = []
-while len(lista) < d:
+w___ le.(lista) < d:
     result = 0
     num =  input().split()
     mul = int(num[0]) * int(num[1])
@@ -9,7 +9,7 @@ while len(lista) < d:
 
     res = str(addi)    
     
-    for i in range(0,len(res)):
+    for i in range(0,le.(res)):
         result = result + int(res[i])
     
     lista.append(result)

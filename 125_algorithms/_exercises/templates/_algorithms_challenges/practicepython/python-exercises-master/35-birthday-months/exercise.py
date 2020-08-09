@@ -1,17 +1,17 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-import json
-import os
-from collections import Counter
+______ json
+______ os
+from collections ______ Counter
 
 
-def getFromJson():
+___ getFromJson(
     cwd = os.getcwd()
     filePath = cwd + '/34-birthday-json/birthdays.json'
     with open(filePath, 'r') as file:
-        return json.load(file)
+        r_ json.load(file)
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     birthdays = getFromJson()
     values = list(birthdays.values())
     months = []
@@ -35,5 +35,5 @@ if __name__ == "__main__":
     }
 
     count = Counter(months)
-    for key in count.keys():
+    for key in count.keys(
         print('In {} were {} guys'.format(yearMonths[key], count[key]))

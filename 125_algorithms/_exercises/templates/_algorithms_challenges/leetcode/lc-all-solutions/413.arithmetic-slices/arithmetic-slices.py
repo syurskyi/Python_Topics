@@ -1,20 +1,20 @@
-class Solution(object):
-  def numberOfArithmeticSlices(self, nums):
+class Solution(object
+  ___ numberOfArithmeticSlices(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
     ans = 0
-    if len(nums) > 2:
-      diff = [nums[i] - nums[i - 1] for i in range(1, len(nums))]
+    __ le.(nums) > 2:
+      diff = [nums[i] - nums[i - 1] for i in range(1, le.(nums))]
       count = 1
       pre = diff[0]
-      for i in range(1, len(diff)):
-        if diff[i] == pre:
+      for i in range(1, le.(diff)):
+        __ diff[i] __ pre:
           count += 1
-        else:
+        ____
           ans += count * (count - 1) / 2
           count = 1
         pre = diff[i]
       ans += count * (count - 1) / 2
-    return ans
+    r_ ans

@@ -1,7 +1,7 @@
-def factorial(Z):
+___ factorial(Z
     index = 1
     output = 1
-    while index <= Z:
+    w___ index <= Z:
         output = output * index
         index = index + 1
-    return output
+    r_ output

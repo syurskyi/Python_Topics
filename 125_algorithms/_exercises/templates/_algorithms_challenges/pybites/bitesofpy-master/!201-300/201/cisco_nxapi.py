@@ -1,7 +1,7 @@
-import requests
+______ requests
 
 
-def nxapi_show_version():
+___ nxapi_show_version(
     url = 'https://sbx-nxos-mgmt.cisco.com/ins'
     switchuser = 'admin'
     switchpassword = 'Admin_1234!'
@@ -16,9 +16,9 @@ def nxapi_show_version():
                              auth=(switchuser, switchpassword), verify=False).json()
 
     version = response['result']['body']['kickstart_ver_str']
-    return version
+    r_ version
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     result = nxapi_show_version()
     print(result)

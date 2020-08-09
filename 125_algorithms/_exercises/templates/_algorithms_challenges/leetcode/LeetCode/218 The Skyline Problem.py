@@ -31,19 +31,19 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 as such: [...[2 3], [4 5], [12 7], ...]
 """
 __author__ = 'Daniel'
-from collections import defaultdict, namedtuple
-import heapq
+from collections ______ defaultdict, namedtuple
+______ heapq
 
 
-class Building(object):
-    def __init__(self, h):
+class Building(object
+    ___ __init__(self, h
         self.h = h
         self.deleted = False  # lazy deletion
 
-    def __cmp__(self, other):
+    ___ __cmp__(self, other
         # Reverse order by height to get max-heap
         assert isinstance(other, Building)
-        return other.h - self.h
+        r_ other.h - self.h
 
 # An event represents the buildings that start and end at a particular
 # x-coordinate.
@@ -51,7 +51,7 @@ Event = namedtuple('Event', 'starts ends')
 
 
 class Solution:
-    def getSkyline(self, buildings):
+    ___ getSkyline(self, buildings
         """
         Sweep line
         The change of skyline only happens at start and end of buildings.
@@ -79,20 +79,20 @@ class Solution:
 
             # Pop any finished buildings from the top of the heap.
             # To avoid using multiset - lazy deletion.
-            while heap_h and heap_h[0].deleted:
+            w___ heap_h and heap_h[0].deleted:
                 heapq.heappop(heap_h)
 
             # Top of heap (if any) is the highest standing building, so
             # its height is the current height of the skyline.
-            new_h = heap_h[0].h if heap_h else 0
+            new_h = heap_h[0].h __ heap_h else 0
 
-            if new_h != cur_h:
+            __ new_h != cur_h:
                 cur_h = new_h
                 ret.append([x, cur_h])
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]) == \
+__ __name__ __ "__main__":
+    assert Solution().getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]) __ \
            [[2, 10], [3, 15], [7, 12], [12, 0], [15, 10], [20, 8], [24, 0]]

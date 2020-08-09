@@ -44,14 +44,14 @@ Note:
 1 <= S.length <= 200
 S contains only digits.
 """
-from typing import List
+from typing ______ List
 
 
 MAX = 2 ** 31 - 1
 
 
 class Solution:
-    def splitIntoFibonacci(self, S: str) -> List[int]:
+    ___ splitIntoFibonacci(self, S: str) -> List[int]:
         """
         The first two elements of the array uniquely determine the rest of the
         sequence.
@@ -59,45 +59,45 @@ class Solution:
         2^31 - 1 is length 10
         brute force
         """
-        l = len(S)
-        for i in range(1, l + 1):
+        l = le.(S)
+        for i in range(1, l + 1
             num_str = S[:i]
-            if len(num_str) > 1 and num_str.startswith("0"):
+            __ le.(num_str) > 1 and num_str.startswith("0"
                 continue
 
             num = int(num_str)
-            if num > MAX:
+            __ num > MAX:
                 break
 
-            for j in range(i + 1, l + 1):
+            for j in range(i + 1, l + 1
                 num2_str = S[i:j]
-                if len(num2_str) > 1 and num2_str.startswith("0"):
+                __ le.(num2_str) > 1 and num2_str.startswith("0"
                     continue
 
                 num2 = int(num2_str)
-                if num2 > MAX:
+                __ num2 > MAX:
                     break
 
                 ret = [num, num2]
                 k = j
-                while k < l:
+                w___ k < l:
                     nxt = ret[-1] + ret[-2]
-                    if nxt > MAX:
+                    __ nxt > MAX:
                         break
 
                     nxt_str = str(nxt)
-                    if S[k:k+len(nxt_str)] == nxt_str:
-                        k = k + len(nxt_str)
+                    __ S[k:k+le.(nxt_str)] __ nxt_str:
+                        k = k + le.(nxt_str)
                         ret.append(nxt)
-                    else:
+                    ____
                         break
-                else:
-                    if k == l and len(ret) >= 3:
-                        return ret
+                ____
+                    __ k __ l and le.(ret) >= 3:
+                        r_ ret
 
-        return []
+        r_ []
 
 
-if __name__ == "__main__":
-    assert Solution().splitIntoFibonacci("123456579") == [123,456,579]
-    assert Solution().splitIntoFibonacci("01123581321345589") == [0,1,1,2,3,5,8,13,21,34,55,89]
+__ __name__ __ "__main__":
+    assert Solution().splitIntoFibonacci("123456579") __ [123,456,579]
+    assert Solution().splitIntoFibonacci("01123581321345589") __ [0,1,1,2,3,5,8,13,21,34,55,89]

@@ -15,25 +15,25 @@ Note: You may assume the string contain only lowercase letters.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def firstUniqChar(self, s):
+class Solution(object
+    ___ firstUniqChar(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s:
-            return -1
+        __ not s:
+            r_ -1
 
         first = {}
         for i, v in enumerate(list(s)):
-            if v not in first:
+            __ v not in first:
                 first[v] = i
-            else:
+            ____
                 first[v] = -1
 
         lst = filter(lambda x: x != -1, first.values())
-        return min(lst) if lst else -1
+        r_ min(lst) __ lst else -1
 
 
-if __name__ == "__main__":
-    assert Solution().firstUniqChar("leetcode") == 0
+__ __name__ __ "__main__":
+    assert Solution().firstUniqChar("leetcode") __ 0

@@ -12,8 +12,8 @@ When s3 = "aadbbbaccc", return false.
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def isInterleave(self, s1, s2, s3):
+class Solution(object
+    ___ isInterleave(self, s1, s2, s3
         """
         dfs
         dp
@@ -52,31 +52,31 @@ class Solution(object):
         :param s3:
         :return: boolean
         """
-        m = len(s1)
-        n = len(s2)
-        if m+n != len(s3):
-            return False
+        m = le.(s1)
+        n = le.(s2)
+        __ m+n != le.(s3
+            r_ False
 
         dp = [[False for _ in xrange(n+1)] for _ in xrange(m+1)]
 
         # initialize boundary conditions
         dp[0][0] = True
-        for i in xrange(1, m+1):
-            dp[i][0] = dp[i-1][0] and s3[i+0-1] == s1[i-1]
-        for j in xrange(1, n+1):
-            dp[0][j] = dp[0][j-1] and s3[0+j-1] == s2[j-1]
+        for i in xrange(1, m+1
+            dp[i][0] = dp[i-1][0] and s3[i+0-1] __ s1[i-1]
+        for j in xrange(1, n+1
+            dp[0][j] = dp[0][j-1] and s3[0+j-1] __ s2[j-1]
 
         # calculating
-        for i in xrange(1, m+1):
-            for j in xrange(1, n+1):
-                if not dp[i][j]:
-                    dp[i][j] = dp[i-1][j] and s3[i+j-1] == s1[i-1]
-                if not dp[i][j]:
-                    dp[i][j] = dp[i][j-1] and s3[i+j-1] == s2[j-1]
+        for i in xrange(1, m+1
+            for j in xrange(1, n+1
+                __ not dp[i][j]:
+                    dp[i][j] = dp[i-1][j] and s3[i+j-1] __ s1[i-1]
+                __ not dp[i][j]:
+                    dp[i][j] = dp[i][j-1] and s3[i+j-1] __ s2[j-1]
 
-        return dp[-1][-1]
+        r_ dp[-1][-1]
 
-    def isInterleave_TLE(self, s1, s2, s3):
+    ___ isInterleave_TLE(self, s1, s2, s3
         """
         dfs
         Time Limit Exceeded
@@ -85,19 +85,19 @@ class Solution(object):
         :param s3:
         :return: boolean
         """
-        if not s3:
-            return True
+        __ not s3:
+            r_ True
         letter = s3[0]
-        if s1 and s1[0] == letter:
-            if self.isInterleave(s1[1:], s2, s3[1:]):
-                return True
-        if s2 and s2[0] == letter:
-            if self.isInterleave(s1, s2[1:], s3[1:]):
-                return True
-        return False
+        __ s1 and s1[0] __ letter:
+            __ self.isInterleave(s1[1:], s2, s3[1:]
+                r_ True
+        __ s2 and s2[0] __ letter:
+            __ self.isInterleave(s1, s2[1:], s3[1:]
+                r_ True
+        r_ False
 
 
-if __name__ == "__main__":
-    assert Solution().isInterleave("aa", "ab", "abaa") == True
-    assert Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") == True
-    assert Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") == False
+__ __name__ __ "__main__":
+    assert Solution().isInterleave("aa", "ab", "abaa") __ True
+    assert Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") __ True
+    assert Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") __ False

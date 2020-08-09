@@ -13,7 +13,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def twoSum_TLE(self, num, target):
+    ___ twoSum_TLE(self, num, target
         """
         built-in method .index
         :param num: list
@@ -21,20 +21,20 @@ class Solution:
         :return: tuple, (index1, index2)
         """
         nums = num
-        for ind1, val in enumerate(nums):
+        for ind1, val in enumerate(nums
             try:
                 ind2 = nums.index(target - val)
-                return ind1+1, ind2+1
+                r_ ind1+1, ind2+1
             except ValueError:
                 continue
 
-    def twoSum_TLE_2(self, num, target):
+    ___ twoSum_TLE_2(self, num, target
         nums = num
-        for ind1, val in enumerate(nums):
-            if target-val in nums:
-                return ind1+1, nums.index(target-val)+1
+        for ind1, val in enumerate(nums
+            __ target-val in nums:
+                r_ ind1+1, nums.index(target-val)+1
 
-    def twoSum(self, num, target):
+    ___ twoSum(self, num, target
         """
         Hash Map
 
@@ -43,15 +43,15 @@ class Solution:
         :return: tuple, (index1, index2)
         """
         hash_map = {}
-        for ind, val in enumerate(num):
+        for ind, val in enumerate(num
             hash_map[val] = ind
 
-        for ind1, val in enumerate(num):
-            if target-val in hash_map:
+        for ind1, val in enumerate(num
+            __ target-val in hash_map:
                 ind2 = hash_map[target-val]
-                if ind1!=ind2:
-                    return ind1+1, ind2+1
+                __ ind1!=ind2:
+                    r_ ind1+1, ind2+1
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     print(Solution().twoSum([3, 2, 4], 6))

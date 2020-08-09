@@ -4,36 +4,36 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def evalRPN(self, tokens):
+class Solution(object
+    ___ evalRPN(self, tokens
         """
         :type tokens: List[str]
         :rtype: int
         """
-        import operator
+        ______ operator
         stack = []
         for token in tokens:
-            if token == '+':
+            __ token __ '+':
                 num1 = stack.pop()
                 num2 = stack.pop()
                 stack.append(num1+num2)
-            elif token == '-':
+            ____ token __ '-':
                 num1 = stack.pop()
                 num2 = stack.pop()
                 stack.append(num2-num1)
-            elif token == '*':
+            ____ token __ '*':
                 num1 = stack.pop()
                 num2 = stack.pop()
                 stack.append(num1*num2)
-            elif token == '/':
+            ____ token __ '/':
                 num1 = stack.pop()
                 num2 = stack.pop()
                 stack.append(int(operator.truediv(num2, num1) ))
-            else:
+            ____
                 stack.append(int(token))
-        return stack[-1]
+        r_ stack[-1]
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             ["2", "1", "+", "3", "*"],
 #             ["4", "13", "5", "/", "+"],
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

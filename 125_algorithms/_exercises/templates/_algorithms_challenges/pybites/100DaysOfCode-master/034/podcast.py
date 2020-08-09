@@ -1,14 +1,14 @@
-import argparse
-from collections import namedtuple
-from datetime import datetime
-import ssl
-import time
+______ argparse
+from collections ______ namedtuple
+from datetime ______ datetime
+______ ssl
+______ time
 
-import feedparser
-from sqlalchemy import create_engine
-from sqlalchemy import Column, String, DateTime, Boolean
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+______ feedparser
+from sqlalchemy ______ create_engine
+from sqlalchemy ______ Column, String, DateTime, Boolean
+from sqlalchemy.orm ______ sessionmaker
+from sqlalchemy.ext.declarative ______ declarative_base
 
 DEFAULT_FEED = 'https://talkpython.fm/episodes/rss'
 
@@ -17,7 +17,7 @@ Base = declarative_base()
 Episode = namedtuple('Episode', 'id title link published')
 
 
-class Podcast(Base):
+class Podcast(Base
     __tablename__ = 'podcasts'
     id = Column('id', String(), primary_key=True)
     title = Column('title', String(), index=True)
@@ -29,8 +29,8 @@ class Podcast(Base):
     updated_on = Column('updated_on', DateTime(),
                         default=datetime.now, onupdate=datetime.now)
 
-    def __repr__(self):
-        return "<Podcast(id='%s', title='%s', link='%s', \
+    ___ __repr__(self
+        r_ "<Podcast(id='%s', title='%s', link='%s', \
                  published='%s', done='%s')>" \
                % (self.id, self.title, self.link, self.published, self.done)
 
@@ -46,7 +46,7 @@ session = Session()
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
-def dump_episodes_to_db(episodes):
+___ dump_episodes_to_db(episodes
     records = [Podcast(id=ep.id, title=ep.title,
                link=ep.link, published=ep.published)
                for ep in episodes.values()]
@@ -54,7 +54,7 @@ def dump_episodes_to_db(episodes):
     session.commit()
 
 
-def parse_feed(feed):
+___ parse_feed(feed
     output = feedparser.parse(feed)
 
     d = {}
@@ -64,21 +64,21 @@ def parse_feed(feed):
         link = e.get('link')
         published = _to_dt(e.get('published_parsed'))
         d[id] = Episode(id, title, link, published)
-    return d
+    r_ d
 
 
-def _to_dt(struct):
-    return datetime.fromtimestamp(time.mktime(struct))
+___ _to_dt(struct
+    r_ datetime.fromtimestamp(time.mktime(struct))
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--feed', help='Podcast feed to parse')
     args = parser.parse_args()
 
-    if args.feed:
+    __ args.feed:
         feed = args.feed
-    else:
+    ____
         feed = DEFAULT_FEED
 
     episodes = parse_feed(feed)

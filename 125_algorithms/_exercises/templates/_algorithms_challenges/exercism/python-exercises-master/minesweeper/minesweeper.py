@@ -1,2 +1,2 @@
-def board():
+___ board(
     pass

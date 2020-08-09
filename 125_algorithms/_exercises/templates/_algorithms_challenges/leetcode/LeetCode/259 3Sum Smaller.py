@@ -5,8 +5,8 @@ Smaller than the target.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def threeSumSmaller(self, nums, target):
+class Solution(object
+    ___ threeSumSmaller(self, nums, target
         """
 
         :type nums: list[int]
@@ -15,15 +15,15 @@ class Solution(object):
         """
         nums.sort()
         cnt = 0
-        n = len(nums)
-        for i in xrange(n-2):
+        n = le.(nums)
+        for i in xrange(n-2
             l = i+1
             h = n-1
-            while l < h:
-                if nums[i]+nums[l]+nums[h] < target:
+            w___ l < h:
+                __ nums[i]+nums[l]+nums[h] < target:
                     cnt += h-l  # move the high ptr leftward till low.
                     l += 1
-                else:
+                ____
                     h -= 1
 
-        return cnt
+        r_ cnt

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestMaxProfit(object):
+class TestMaxProfit(object
 
-    def test_max_profit(self):
+    ___ test_max_profit(self
         solution = Solution()
         assert_raises(TypeError, solution.find_max_profit, None)
         assert_raises(ValueError, solution.find_max_profit, [])
@@ -12,10 +12,10 @@ class TestMaxProfit(object):
         print('Success: test_max_profit')
 
 
-def main():
+___ main(
     test = TestMaxProfit()
     test.test_max_profit()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

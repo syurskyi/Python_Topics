@@ -1,16 +1,16 @@
-def limit_number(num, range_low, range_high):
-    if num < range_low:
-        return range_low
-    elif num > range_high:
-        return range_high
-    else:
-        return num
+___ limit_number(num, range_low, range_high
+    __ num < range_low:
+        r_ range_low
+    ____ num > range_high:
+        r_ range_high
+    ____
+        r_ num
 
-def test():
+___ test(
     print("test has started")
-    if limit_number(5, 1, 10) != 5:
+    __ limit_number(5, 1, 10) != 5:
         print("error1")
-    if limit_number(-3, 1, 10) != 1:
+    __ limit_number(-3, 1, 10) != 1:
         print("error2")
-    if limit_number(14, 1, 10) != 10:
+    __ limit_number(14, 1, 10) != 10:
         print("error3")

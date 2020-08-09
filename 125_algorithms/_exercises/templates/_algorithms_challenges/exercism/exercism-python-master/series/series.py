@@ -1,12 +1,12 @@
 """Finds consecutive number sequences"""
 
-def slices(digits, size):
+___ slices(digits, size
     """Returns list of lists of consecutive digits"""
-    if size <= 0 or size > len(digits):
+    __ size <= 0 or size > le.(digits
         raise ValueError
 
     slice_list = []
 
-    for i in range(len(digits) - size + 1):
+    for i in range(le.(digits) - size + 1
         slice_list.append([int(d) for d in digits[i:i+size]])
-    return slice_list
+    r_ slice_list

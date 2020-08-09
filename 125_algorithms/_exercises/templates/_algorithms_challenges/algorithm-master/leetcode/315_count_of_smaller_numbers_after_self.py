@@ -2,66 +2,66 @@ class Solution:
     """
     REF: https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76657/
     """
-    def countSmaller(self, nums):
+    ___ countSmaller(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        if not nums:
-            return []
+        __ not nums:
+            r_ []
 
-        n = len(nums)
+        n = le.(nums)
         ans = [0] * n
 
         cands = sorted(set(nums))
-        v2i = {cands[i]: i for i in range(len(cands))}
-        self.bits = [0] * (len(v2i) + 1)
+        v2i = {cands[i]: i for i in range(le.(cands))}
+        self.bits = [0] * (le.(v2i) + 1)
 
-        for i in range(n - 1, -1, -1):
+        for i in range(n - 1, -1, -1
             j = v2i[nums[i]]
             ans[i] = self.sum(j)
             self.update(j)
 
-        return ans
+        r_ ans
 
-    def update(self, i):
+    ___ update(self, i
         i += 1
 
-        while i < len(self.bits):
+        w___ i < le.(self.bits
             self.bits[i] += 1
             i += (i & -i)
 
-    def sum(self, i):
+    ___ sum(self, i
         res = 0
 
-        while i > 0:
+        w___ i > 0:
             res += self.bits[i]
             i -= (i & -i)
 
-        return res
+        r_ res
 
 
 class Solution:
     """
     Brute Force: TLE
     """
-    def countSmaller(self, nums):
+    ___ countSmaller(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
         ans = []
 
-        if not nums:
-            return ans
+        __ not nums:
+            r_ ans
 
-        n = len(nums)
+        n = le.(nums)
 
-        for i in range(n):
+        for i in range(n
             ans.append(0)
 
-            for j in range(i, n):
-                if nums[j] < nums[i]:
+            for j in range(i, n
+                __ nums[j] < nums[i]:
                     ans[-1] += 1
 
-        return ans
+        r_ ans

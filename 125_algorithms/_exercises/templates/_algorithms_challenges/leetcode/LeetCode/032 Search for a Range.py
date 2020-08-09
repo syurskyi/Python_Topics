@@ -12,7 +12,7 @@ return [3, 4].
 
 __author__ = 'Danyang'
 class Solution:
-    def searchRange(self, A, target):
+    ___ searchRange(self, A, target
         """
         Binary Search Twice
         Notice the low-bound & high-bound binary search
@@ -22,32 +22,32 @@ class Solution:
         :return: a list of length 2, [index1, index2]
         """
         result = []
-        length = len(A)
+        length = le.(A)
 
         # low-bound binary search
         start = 0
         end = length  # [0, length)
-        while start<end:
+        w___ start<end:
             mid = (start+end)/2
-            if A[mid]<target:  # NOTICE: less than
+            __ A[mid]<target:  # NOTICE: less than
                 start = mid+1
-            else:
+            ____
                 end = mid
 
-        if start<length and A[start]==target:
+        __ start<length and A[start]__target:
             result.append(start)
-        else:
-            return [-1, -1]
+        ____
+            r_ [-1, -1]
 
         # high-bound binary search
         start = start
         end = length  # no "-1" # [0, length)
-        while start<end:
+        w___ start<end:
             mid = (start+end)/2
-            if A[mid]<=target:  # NOTICE: less than or equal
+            __ A[mid]<=target:  # NOTICE: less than or equal
                 start = mid+1
-            else:
+            ____
                 end = mid
 
         result.append(start-1)
-        return result
+        r_ result

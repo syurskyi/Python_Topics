@@ -35,29 +35,29 @@ image[0].length.
 The value of each color in image[i][j] and newColor will be an integer in
 [0, 65535].
 """
-from typing import List
+from typing ______ List
 dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
 
 class Solution:
-    def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
+    ___ floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
         """
         dfs fill
 
         mistake: corner case image == new color
         """
         cur_color = image[sr][sc]
-        if cur_color == newColor:
-            return image
+        __ cur_color __ newColor:
+            r_ image
 
         self.dfs(image, sr, sc, cur_color, newColor)
-        return image
+        r_ image
 
-    def dfs(self, image, i, j, cur_color, new_color):
+    ___ dfs(self, image, i, j, cur_color, new_color
         image[i][j] = new_color
-        m, n = len(image), len(image[0])
+        m, n = le.(image), le.(image[0])
         for di, dj in dirs:
             I = i + di
             J = j + dj
-            if 0 <= I < m and 0 <= J < n and image[I][J] == cur_color:
+            __ 0 <= I < m and 0 <= J < n and image[I][J] __ cur_color:
                 self.dfs(image, I, J, cur_color, new_color)

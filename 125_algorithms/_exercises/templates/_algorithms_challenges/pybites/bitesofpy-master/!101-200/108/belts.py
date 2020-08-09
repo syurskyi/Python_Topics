@@ -1,4 +1,4 @@
-from collections import namedtuple
+from collections ______ namedtuple
 
 BeltStats = namedtuple('BeltStats', 'score ninjas')
 
@@ -8,7 +8,7 @@ ninja_belts = {'yellow': BeltStats(50, 11),
                'blue': BeltStats(250, 5)}
 
 
-def get_total_points(belts=ninja_belts):
+___ get_total_points(belts=ninja_belts
     """Calculate the amount of points rewarded on PyBites given the
        ninja_belts dictionary, formula: belt score x belt owners (aka ninjas)
        (of course there are more points but let's keep it simple)
@@ -23,6 +23,6 @@ def get_total_points(belts=ninja_belts):
 
        Return the total number of points int from the function."""
     total = 0
-    for colour, belt in belts.items():
+    for colour, belt in belts.items(
         total += belt.score * belt.ninjas
-    return total
+    r_ total

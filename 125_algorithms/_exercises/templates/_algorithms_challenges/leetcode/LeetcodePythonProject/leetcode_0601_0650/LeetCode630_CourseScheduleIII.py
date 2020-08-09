@@ -3,24 +3,24 @@ Created on Sep 12, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def scheduleCourse(self, courses):
+class Solution(object
+    ___ scheduleCourse(self, courses
         """
         :type courses: List[List[int]]
         :rtype: int
         """
-        import heapq
+        ______ heapq
         heap = []
         courses.sort(key=lambda x: x[1])
         time = 0
         for course in courses:
             time += course[0]
             heapq.heappush(heap, -course[0])
-            if time > course[1]:
+            __ time > course[1]:
                 time -= -heapq.heappop(heap)
-        return len(heap)
+        r_ le.(heap)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[1,2]],
             [[100, 200], [200, 1300], [1000, 1250], [2000, 3200]],
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

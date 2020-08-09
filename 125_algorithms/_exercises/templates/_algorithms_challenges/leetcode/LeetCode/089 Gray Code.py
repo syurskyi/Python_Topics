@@ -19,7 +19,7 @@ For now, the judge is able to judge based on one instance of gray code sequence.
 """
 __author__ = 'Danyang'
 class Solution:
-    def grayCode(self, n):
+    ___ grayCode(self, n
         """
         Graycode: The reflected binary code solves this problem by changing only one switch at a time, so there is never
         any ambiguity of position,
@@ -51,22 +51,22 @@ class Solution:
         :param n:
         :return: list of integers (dec_repr)
         """
-        if n==0:
-            return [0]
+        __ n__0:
+            r_ [0]
         result = [0, 1]
 
-        for num_of_bit in range(2, n+1):
+        for num_of_bit in range(2, n+1
             msb = 1<<num_of_bit-1
-            for element in reversed(result):
+            for element in reversed(result
                 result.append(msb+element)
 
-        return result
+        r_ result
 
 
-    def grayCode_math(self, n):
+    ___ grayCode_math(self, n
         """
         a-th gray code is a>>1 XOR a
         :param n:
         :return: list of integers (dec_repr)
         """
-        return [(x>>1)^x for x in xrange(1<<n)]
+        r_ [(x>>1)^x for x in xrange(1<<n)]

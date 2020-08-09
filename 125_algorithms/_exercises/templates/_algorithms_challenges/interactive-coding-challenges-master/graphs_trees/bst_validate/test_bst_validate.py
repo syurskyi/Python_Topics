@@ -1,14 +1,14 @@
-from nose.tools import assert_equal
-from nose.tools import raises
+from nose.tools ______ assert_equal
+from nose.tools ______ raises
 
 
-class TestBstValidate(object):
+class TestBstValidate(object
 
     @raises(Exception)
-    def test_bst_validate_empty(self):
+    ___ test_bst_validate_empty(self
         validate_bst(None)
 
-    def test_bst_validate(self):
+    ___ test_bst_validate(self
         bst = BstValidate(Node(5))
         bst.insert(8)
         bst.insert(5)
@@ -29,11 +29,11 @@ class TestBstValidate(object):
         print('Success: test_bst_validate')
 
 
-def main():
+___ main(
     test = TestBstValidate()
     test.test_bst_validate_empty()
     test.test_bst_validate()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

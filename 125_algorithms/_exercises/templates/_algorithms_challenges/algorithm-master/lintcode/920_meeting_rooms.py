@@ -1,7 +1,7 @@
 """
 Definition of Interval.
 class Interval:
-    def __init__(self, start, end):
+    ___ __init__(self, start, end
         self.start = start
         self.end = end
 """
@@ -13,7 +13,7 @@ time: O(n)
 space: O(n)
 """
 class Solution:
-    def canAttendMeetings(self, intervals):
+    ___ canAttendMeetings(self, intervals
         """
         :type intervals: list[Interval]
         :rtype: bool
@@ -29,15 +29,15 @@ class Solution:
         cnt = 0
 
         for time, is_start in timeline:
-            if is_start:
+            __ is_start:
                 cnt += 1
-            else:
+            ____
                 cnt -= 1
 
-            if cnt > 1:
-                return False
+            __ cnt > 1:
+                r_ False
 
-        return True
+        r_ True
 
 
 """
@@ -46,15 +46,15 @@ time: O(nlogn)
 space: O(1)
 """
 class Solution:
-    def canAttendMeetings(self, intervals):
+    ___ canAttendMeetings(self, intervals
         """
         :type intervals: list[Interval]
         :rtype: bool
         """
         intervals.sort(key=lambda x: (x.start, x.end))
 
-        for i in range(1, len(intervals)):
-            if intervals[i].start < intervals[i - 1].end:
-                return False
+        for i in range(1, le.(intervals)):
+            __ intervals[i].start < intervals[i - 1].end:
+                r_ False
 
-        return True
+        r_ True

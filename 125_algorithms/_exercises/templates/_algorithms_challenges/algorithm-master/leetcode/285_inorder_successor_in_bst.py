@@ -1,7 +1,7 @@
 """
 Definition for a binary tree node.
 >>> class TreeNode:
-...     def __init__(self, x):
+...     ___ __init__(self, x
 ...         self.val = x
 ...         self.left = None
 ...         self.right = None
@@ -57,7 +57,7 @@ Definition for a binary tree node.
 >>> for _in, _out in (
 ...     ((trees[0], trees[0]), trees[0].right),
 ...     ((trees[1], trees[1].left.right.right), trees[1]),
-... ):
+...
 ...     for s in (Solution(), Solution2(), Solution3(), Solution4()):
 ...         res = s.inorderSuccessor(*_in)
 ...         if res is not _out: print(_in[0].val, res.val)
@@ -74,31 +74,31 @@ class Solution:
     1. if `target` has right child, then successor lies at the most-left child in right child of `target`
     2. otherwise, just traverse down from root, and record `ans` when every time go left
     """
-    def inorderSuccessor(self, root, target):
+    ___ inorderSuccessor(self, root, target
         """
         :type root: TreeNode
         :type target: TreeNode
         :rtype: TreeNode
         """
-        if not root or not target:
-            return
+        __ not root or not target:
+            r_
 
         ans = None
 
-        if target.right:
+        __ target.right:
             ans = target.right
-            while ans and ans.left:
+            w___ ans and ans.left:
                 ans = ans.left
-            return ans
+            r_ ans
 
-        while root and target.val != root.val:
-            if target.val < root.val:
+        w___ root and target.val != root.val:
+            __ target.val < root.val:
                 ans = root
                 root = root.left
-            else:
+            ____
                 root = root.right
 
-        return ans
+        r_ ans
 
 
 class Solution2:
@@ -107,29 +107,29 @@ class Solution2:
 
     just do inorder traverse
     """
-    def inorderSuccessor(self, root, target):
+    ___ inorderSuccessor(self, root, target
         """
         :type root: TreeNode
         :type target: TreeNode
         :rtype: TreeNode
         """
-        if not root or not target:
-            return
+        __ not root or not target:
+            r_
 
         stack = []
         node = root
         got_target = False
 
-        while node or stack:
-            while node:
+        w___ node or stack:
+            w___ node:
                 stack.append(node)
                 node = node.left
 
             node = stack.pop()
 
-            if got_target:
-                return node
-            if node.val == target.val:
+            __ got_target:
+                r_ node
+            __ node.val __ target.val:
                 got_target = True
 
             node = node.right
@@ -143,29 +143,29 @@ class Solution3:
     1. if `target` has right child, then successor lies at the most-left child in right child of `target`
     2. otherwise, just traverse top to root
     """
-    def inorderSuccessor(self, root, target):
+    ___ inorderSuccessor(self, root, target
         """
         :type root: TreeNode
         :type target: TreeNode
         :rtype: TreeNode
         """
-        if not root or not target:
-            return
+        __ not root or not target:
+            r_
 
         ans = None
 
-        if target.right:
+        __ target.right:
             ans = target.right
-            while ans and ans.left:
+            w___ ans and ans.left:
                 ans = ans.left
-            return ans
+            r_ ans
 
         ans = target.parent
-        while ans and target is ans.right:
+        w___ ans and target is ans.right:
             target = ans
             ans = ans.parent
 
-        return ans
+        r_ ans
 
 
 class Solution4:
@@ -176,23 +176,23 @@ class Solution4:
     1. if `target` has right child, then successor lies at the most-left child in right child of `target`
     2. otherwise, just traverse top to root
     """
-    def inorderSuccessor(self, root, target):
+    ___ inorderSuccessor(self, root, target
         """
         :type root: TreeNode
         :type target: TreeNode
         :rtype: TreeNode
         """
-        if not root or not target:
-            return
+        __ not root or not target:
+            r_
 
-        if target.right:
+        __ target.right:
             ans = target.right
-            while ans and ans.left:
+            w___ ans and ans.left:
                 ans = ans.left
-            return ans
+            r_ ans
 
         ans = target.parent
-        while ans and ans.val < target.val:
+        w___ ans and ans.val < target.val:
             ans = ans.parent
 
-        return ans
+        r_ ans

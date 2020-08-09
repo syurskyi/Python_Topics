@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestPartition(object):
+class TestPartition(object
 
-    def test_partition(self):
+    ___ test_partition(self
         print('Test: Empty list')
         linked_list = MyLinkedList(None)
         linked_list.partition(10)
@@ -39,10 +39,10 @@ class TestPartition(object):
         print('Success: test_partition')
 
 
-def main():
+___ main(
     test = TestPartition()
     test.test_partition()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -39,32 +39,32 @@ Note:
 1 <= deck.length <= 10000
 0 <= deck[i] < 10000
 """
-from typing import List
-from collections import Counter
+from typing ______ List
+from collections ______ Counter
 
 
 class Solution:
-    def hasGroupsSizeX(self, deck: List[int]) -> bool:
+    ___ hasGroupsSizeX(self, deck: List[int]) -> bool:
         """
         gcd of all > 2
         """
         counter = Counter(deck)
         gcd = None
-        for v in counter.values():
-            if gcd is None:
+        for v in counter.values(
+            __ gcd is None:
                 gcd = v
             gcd = self.gcd(gcd, v)
-            if gcd == 1:
-                return False
+            __ gcd __ 1:
+                r_ False
 
-        return True
+        r_ True
 
-    def gcd(self, a, b):
+    ___ gcd(self, a, b
         """
         a = k * b + r
         gcd(a, b) = gcd(b, r)
         """
-        while b:
+        w___ b:
             a, b = b, a % b
 
-        return a
+        r_ a

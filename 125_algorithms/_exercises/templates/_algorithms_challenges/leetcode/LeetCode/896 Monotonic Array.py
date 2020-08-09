@@ -37,22 +37,22 @@ Note:
 1 <= A.length <= 50000
 -100000 <= A[i] <= 100000
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def isMonotonic(self, A: List[int]) -> bool:
+    ___ isMonotonic(self, A: List[int]) -> bool:
         mono = 0  # 0 undecided, 1 decr, 2 incr
-        for i in range(1, len(A)):
-            if mono == 0:
-                if A[i] > A[i-1]:
+        for i in range(1, le.(A)):
+            __ mono __ 0:
+                __ A[i] > A[i-1]:
                     mono = 2
-                elif A[i] < A[i-1]:
+                ____ A[i] < A[i-1]:
                     mono = 1
-            else:
-                if A[i] > A[i-1] and mono == 1:
-                    return False
-                elif A[i] < A[i-1] and mono == 2:
-                    return False
-        else:
-            return True
+            ____
+                __ A[i] > A[i-1] and mono __ 1:
+                    r_ False
+                ____ A[i] < A[i-1] and mono __ 2:
+                    r_ False
+        ____
+            r_ True

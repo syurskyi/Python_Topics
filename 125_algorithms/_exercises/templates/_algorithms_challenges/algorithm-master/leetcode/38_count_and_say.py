@@ -1,22 +1,22 @@
 class Solution:
-    def countAndSay(self, N):
+    ___ countAndSay(self, N
         """
         :type N: int
         :rtype: str
         """
         queue = '1'
 
-        if not N:
-            return queue
+        __ not N:
+            r_ queue
 
         _queue = []
 
-        for _ in range(N - 1):
+        for _ in range(N - 1
             cnt = 0
             char = queue[0]
 
             for c in queue:
-                if c == char:
+                __ c __ char:
                     cnt += 1
                     continue
                 _queue.extend((str(cnt), char))
@@ -26,4 +26,4 @@ class Solution:
             _queue.extend((str(cnt), char))
             queue, _queue = ''.join(_queue), []
 
-        return queue
+        r_ queue

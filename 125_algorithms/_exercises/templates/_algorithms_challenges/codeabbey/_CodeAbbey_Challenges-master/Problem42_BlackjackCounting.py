@@ -9,20 +9,20 @@ for line in data:
     total = 0
     hand = line.strip().split(" ")
     for card in hand:
-        if card.isdigit():
+        __ card.isdigit(
             total += int(card)
-        elif card in "TJQK":
+        ____ card in "TJQK":
             total += int(10)
-        elif card == "A":
+        ____ card __ "A":
             total += int(11)
 
     count = hand.count("A")
-    while count > 0 and total>21:
+    w___ count > 0 and total>21:
         count-=1
         total -= 10
 
-    if total<=21:
+    __ total<=21:
         print(total ,end=" ")
-    else:
+    ____
         print("Bust",end=" ")
             

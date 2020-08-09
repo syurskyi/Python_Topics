@@ -5,28 +5,28 @@ Created on Feb 1, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
-    def flatten(self, root):
+class Solution(object
+    ___ flatten(self, root
         """
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
         """
-        if not root: return root
+        __ not root: r_ root
         stack = [root]
         prev = TreeNode(-1)
-        while stack:
+        w___ stack:
             node = stack.pop()
             prev.right = node
-            if node.right:
+            __ node.right:
                 stack.append(node.right)
                 node.right = None
-            if node.left:
+            __ node.left:
                 stack.append(node.left)
                 node.left = None
             prev = node

@@ -4,28 +4,28 @@ Created on May 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findSubsequences(self, nums):
+class Solution(object
+    ___ findSubsequences(self, nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
         res = set()
         self.helper(nums, 0, [], res)
-        return [list(row) for row in res]
+        r_ [list(row) for row in res]
     
-    def helper(self, nums, ind, curr, res):
-        if len(curr) >= 2:
+    ___ helper(self, nums, ind, curr, res
+        __ le.(curr) >= 2:
             res.add(tuple(curr))
-        for i in range(ind, len(nums)):
-            if i > ind and nums[i] == nums[i-1]:
+        for i in range(ind, le.(nums)):
+            __ i > ind and nums[i] __ nums[i-1]:
                 continue
-            if not curr or curr[-1] <= nums[i]:
+            __ not curr or curr[-1] <= nums[i]:
                 curr.append(nums[i])
                 self.helper(nums, i+1, curr, res)
                 curr.pop()
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1, 2, 3, 3],
             [4, 6, 7, 7],
@@ -37,5 +37,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

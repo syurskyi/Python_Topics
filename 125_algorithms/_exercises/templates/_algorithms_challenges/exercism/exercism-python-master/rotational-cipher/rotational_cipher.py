@@ -1,8 +1,8 @@
-def rotate(text, key):
-    def rot(letter):
-        if letter.islower():
-            return chr((ord(letter) - ord('a') + key) % 26 + ord('a'))
-        if letter.isupper():
-            return chr((ord(letter) - ord('A') + key) % 26 + ord('A'))
-        return letter
-    return ''.join(rot(l) for l in text) 
+___ rotate(text, key
+    ___ rot(letter
+        __ letter.islower(
+            r_ chr((ord(letter) - ord('a') + key) % 26 + ord('a'))
+        __ letter.isupper(
+            r_ chr((ord(letter) - ord('A') + key) % 26 + ord('A'))
+        r_ letter
+    r_ ''.join(rot(l) for l in text)

@@ -1,5 +1,5 @@
-class Solution(object):
-  def wordPattern(self, pattern, str):
+class Solution(object
+  ___ wordPattern(self, pattern, str
     """
     :type pattern: str
     :type str: str
@@ -9,4 +9,4 @@ class Solution(object):
     a = zip(pattern, str)
     print
     a
-    return len(pattern) == len(str) and len(set(a)) == len(set(pattern)) == len(set(str))
+    r_ le.(pattern) __ le.(str) and le.(set(a)) __ le.(set(pattern)) __ le.(set(str))

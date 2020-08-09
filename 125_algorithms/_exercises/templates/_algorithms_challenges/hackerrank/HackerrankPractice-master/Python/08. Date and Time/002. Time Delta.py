@@ -2,7 +2,7 @@
 # Score: 30
 
 
-from datetime import datetime as dt
+from datetime ______ datetime as dt
 
 fmt = '%a %d %b %Y %H:%M:%S %z'
 for _ in range(int(input())):

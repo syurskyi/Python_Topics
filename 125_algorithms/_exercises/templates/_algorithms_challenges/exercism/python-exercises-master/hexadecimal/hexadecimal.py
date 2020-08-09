@@ -1,2 +1,2 @@
-def hexa():
+___ hexa(
     pass

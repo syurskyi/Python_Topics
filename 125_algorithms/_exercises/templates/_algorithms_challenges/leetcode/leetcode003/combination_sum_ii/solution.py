@@ -2,25 +2,25 @@ class Solution:
     # @param candidates, a list of integers
     # @param target, integer
     # @return a list of lists of integers
-    def combinationSum2(self, candidates, target):
+    ___ combinationSum2(self, candidates, target
         candidates.sort()
         res = []
         cand = []
         self.combination_sum(candidates, target, cand, res)
-        return res
+        r_ res
 
-    def combination_sum(self, candidates, target, cand, res):
-        if target == 0:
+    ___ combination_sum(self, candidates, target, cand, res
+        __ target __ 0:
             res.append(cand[:])
-        elif target < 0:
-            return
-        else:
-            for i, c in enumerate(candidates):
-                if i == 0:
+        ____ target < 0:
+            r_
+        ____
+            for i, c in enumerate(candidates
+                __ i __ 0:
                     prev = c
-                elif prev == c:
+                ____ prev __ c:
                     continue
-                else:
+                ____
                     prev = c
                 cand.append(c)
                 self.combination_sum(candidates[i + 1:], target - c, cand, res)

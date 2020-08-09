@@ -3,8 +3,8 @@ Created on May 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def findLadders(self, beginWord, endWord, wordList):
+class Solution(object
+    ___ findLadders(self, beginWord, endWord, wordList
         """
         :type beginWord: str
         :type endWord: str
@@ -17,40 +17,40 @@ class Solution(object):
         self.bfs(beginWord, endWord, distance, wordSet)
         res = []
         self.dfs(beginWord, endWord, distance, wordSet, res, [])
-        return res
+        r_ res
     
-    def bfs(self, beginWord, endWord, distance, wordSet):
+    ___ bfs(self, beginWord, endWord, distance, wordSet
         queue = [beginWord]
         distance[beginWord] = 0
-        while queue:
+        w___ queue:
             word = queue.pop(0)
             nextWords = self.getNextWords(word, wordSet)
             for nextWord in nextWords:
-                if nextWord not in distance:
+                __ nextWord not in distance:
                     distance[nextWord] = distance[word]+1
                     queue.append(nextWord)
     
-    def dfs(self, beginWord, word, distance, wordSet, res, curr):
+    ___ dfs(self, beginWord, word, distance, wordSet, res, curr
         curr.insert(0, word)
-        if word == beginWord:
+        __ word __ beginWord:
             res.append(list(curr))
-        else:
-            for nextWord in self.getNextWords(word, wordSet):
-                if nextWord in distance and distance[nextWord]+1 == distance.get(word, 0):
+        ____
+            for nextWord in self.getNextWords(word, wordSet
+                __ nextWord in distance and distance[nextWord]+1 __ distance.get(word, 0
                     self.dfs(beginWord, nextWord, distance, wordSet, res, curr)
         curr.pop(0)
     
-    def getNextWords(self, word, wordSet):
+    ___ getNextWords(self, word, wordSet
         res = []
-        for i, c in enumerate(word):
+        for i, c in enumerate(word
             for c0 in 'abcdefghijklmnopqrstuvwxyz':
-                if c0 != c:
+                __ c0 != c:
                     word0 = word[:i] + c0 + word[i+1:]
-                    if word0 in wordSet:
+                    __ word0 in wordSet:
                         res.append(word0)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "hit",
@@ -63,5 +63,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,5 +1,5 @@
-class Solution(object):
-  def validWordAbbreviation(self, dest, src):
+class Solution(object
+  ___ validWordAbbreviation(self, dest, src
     """
     :type word: str
     :type abbr: str
@@ -7,26 +7,26 @@ class Solution(object):
     """
     start = j = 0
     digit = False
-    for i in range(0, len(src)):
-      if src[i].isdigit():
-        if not digit:
-          if src[i] == "0":
-            return False
+    for i in range(0, le.(src)):
+      __ src[i].isdigit(
+        __ not digit:
+          __ src[i] __ "0":
+            r_ False
           start = i
           digit = True
-      else:
-        if digit:
+      ____
+        __ digit:
           jump = int(src[start:i])
           digit = False
           j += jump
-        if j >= len(dest) or src[i] != dest[j]:
-          return False
+        __ j >= le.(dest) or src[i] != dest[j]:
+          r_ False
         j += 1
-      if i == len(src) - 1:
-        if digit:
+      __ i __ le.(src) - 1:
+        __ digit:
           jump = int(src[start:i + 1])
           digit = False
           j += jump
-          if j != len(dest):
-            return False
-    return True
+          __ j != le.(dest
+            r_ False
+    r_ True

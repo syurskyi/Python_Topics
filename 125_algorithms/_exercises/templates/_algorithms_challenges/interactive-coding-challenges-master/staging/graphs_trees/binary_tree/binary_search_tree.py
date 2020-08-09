@@ -1,155 +1,155 @@
 
-class Node (object):
-	def __init__ (self, data):
+class Node (object
+	___ __init__ (self, data
 		self.data = data
 		self.rightChild = None
 		self.leftChild = None
 
-class BinaryTree (object):
-	def __init__ (self):
+class BinaryTree (object
+	___ __init__ (self
 		self.root = None
 
-	def insert (self, newData):
+	___ insert (self, newData
 		leaf = Node(newData)
 
-		if self.root is None:
+		__ self.root is None:
 			self.root = leaf
-		else:
+		____
 			current = self.root
 			parent = self.root
-			while current is not None:
+			w___ current is not None:
 				parent = current
-				if newData < current.data:
+				__ newData < current.data:
 					current = current.leftChild
-				else:
+				____
 					current = current.rightChild
 
-			if newData < parent.data:
+			__ newData < parent.data:
 				parent.leftChild = leaf
-			else:
+			____
 				parent.rightChild = leaf
 
 	# returns false if the item to be deleted is not on the tree
-	def delete (self, data):
+	___ delete (self, data
 		current = self.root
 		parent = self.root
 		isLeft = False
 
-		if current is None:
-			return False
+		__ current is None:
+			r_ False
 
-		while current is not None and current.data is not data:
+		w___ current is not None and current.data is not data:
 			parent = current
-			if data < current.data:
+			__ data < current.data:
 				current = current.leftChild
 				isLeft = True 
-			else:
+			____
 				current = current.rightChild
 				isLeft = False
 
-		if current is None:
-			return False
+		__ current is None:
+			r_ False
 
-		if current.leftChild is None and current.rightChild is None:
-			if current is self.root:
+		__ current.leftChild is None and current.rightChild is None:
+			__ current is self.root:
 				self.root = None
-			elif isLeft:
+			____ isLeft:
 				parent.leftChild = None
-			else:
+			____
 				parent.rightChild = None
 
-		elif current.rightChild is None:
-			if current is self.root:
+		____ current.rightChild is None:
+			__ current is self.root:
 				self.root = current.leftChild
-			elif isLeft:
+			____ isLeft:
 				parent.leftChild = current.leftChild
-			else:
+			____
 				parent.rightChild = current.leftChild
 
-		elif current.rightChild is None:
-			if current is self.root:
+		____ current.rightChild is None:
+			__ current is self.root:
 				self.root = current.rightChild
-			elif isLeft:
+			____ isLeft:
 				parent.lChild = current.rightChild
-			else:
+			____
 				parent.rightChild = current.rightChild
 
-		else:
+		____
 			successor = current.rightChild
 			successorParent = current
 
-			while successor.leftChild is not None:
+			w___ successor.leftChild is not None:
 				successorParent = successor
 				successor = successor.leftChild
 
-			if current is self.root:
+			__ current is self.root:
 				self.root = successor
-			elif isLeft:
+			____ isLeft:
 				parent.leftChild = successor
-			else:
+			____
 				parent.rightChild = successor
 
 			successor.leftChild = current.leftChild
 
-			if successor is not current.rightChild:
+			__ successor is not current.rightChild:
 				successorParent.leftChild = successor.rightChild
 				successor.rightChild = current.rightChild
 
-		return True 
+		r_ True
 
 
-	def minNode (self):
+	___ minNode (self
 		current = self.root
-		while current.leftChild is not None:
+		w___ current.leftChild is not None:
 			current = current.leftChild
 
-		return current.data
+		r_ current.data
 
-	def maxNode (self):
+	___ maxNode (self
 		current = self.root
-		while current.rightChild is not None:
+		w___ current.rightChild is not None:
 			current = current.rightChild
 
-		return current.data
+		r_ current.data
 
-	def printPostOrder (self):
+	___ printPostOrder (self
 		global postOrder
 		postOrder = []
 
-		def PostOrder(node):
-			if node is not None:
+		___ PostOrder(node
+			__ node is not None:
 				PostOrder(node.leftChild)
 				PostOrder(node.rightChild)
 				postOrder.append(node.data)
 
 		PostOrder(self.root)
-		return postOrder
+		r_ postOrder
 
-	def printInOrder (self):
+	___ printInOrder (self
 		global inOrder 
 		inOrder = []
 
-		def InOrder (node):
-			if node is not None:
+		___ InOrder (node
+			__ node is not None:
 				InOrder(node.leftChild)
 				inOrder.append(node.data)
 				InOrder(node.rightChild)
 
 		InOrder(self.root)
-		return inOrder
+		r_ inOrder
 
-	def printPreOrder (self):
+	___ printPreOrder (self
 		global preOrder
 		preOrder = []
 
-		def PreOrder (node):
-			if node is not None:
+		___ PreOrder (node
+			__ node is not None:
 				preOrder.append(node.data)
 				PreOrder(node.leftChild)
 				PreOrder(node.rightChild)
 
 		PreOrder(self.root)
-		return preOrder
+		r_ preOrder
 
-	def treeIsEmpty (self):
-		return self.root is None
+	___ treeIsEmpty (self
+		r_ self.root is None

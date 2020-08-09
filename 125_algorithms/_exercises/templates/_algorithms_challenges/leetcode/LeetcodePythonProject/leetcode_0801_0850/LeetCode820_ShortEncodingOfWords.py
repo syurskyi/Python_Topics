@@ -3,22 +3,22 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def minimumLengthEncoding(self, words):
+class Solution(object
+    ___ minimumLengthEncoding(self, words
         """
         :type words: List[str]
         :rtype: int
         """
         hashset = set(words)
         for word in words:
-            for i in range(1, len(word)):
+            for i in range(1, le.(word)):
                 hashset.discard(word[i:])
         res = 0
         for word in hashset:
-            res += len(word)+1
-        return res
+            res += le.(word)+1
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["time", "me", "bell"],
             ["me", "time"],
@@ -29,5 +29,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

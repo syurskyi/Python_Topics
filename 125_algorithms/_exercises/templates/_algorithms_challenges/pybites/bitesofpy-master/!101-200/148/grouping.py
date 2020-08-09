@@ -1,4 +1,4 @@
-from itertools import groupby
+from itertools ______ groupby
 
 cars = [
     # need mock data? -> https://www.mockaroo.com == awesome
@@ -17,7 +17,7 @@ cars = [
 ]
 
 
-def group_cars_by_manufacturer(cars):
+___ group_cars_by_manufacturer(cars
     """Iterate though the list of (manufacturer, model) tuples
        of the cars list defined above and generate the output as described
        in the Bite description (see the tests for the full output).
@@ -25,7 +25,7 @@ def group_cars_by_manufacturer(cars):
        No return here, just print to the console. We use pytest > capfd to
        validate your output :)
     """
-    for k, g in groupby(sorted(cars), lambda car: car[0]):
+    for k, g in groupby(sorted(cars), lambda car: car[0]
         print(k.upper())
         for c in g:
             print(f'- {c[1]}')

@@ -28,30 +28,30 @@ Note:
 1 <= S.length <= 10000
 S only contains characters "I" or "D".
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def diStringMatch(self, S: str) -> List[int]:
+    ___ diStringMatch(self, S: str) -> List[int]:
         """
         Looking at prev rather than cur
             If "I", then put smallest as prev. Increase from the min
             If "D", then put the largest as prev. Decrese from the max
         """
-        mini, maxa = 0, len(S)
+        mini, maxa = 0, le.(S)
         ret = []
         for c in S:
-            if c == "I":
+            __ c __ "I":
                 ret.append(mini)
                 mini += 1
-            else:  # "D"
+            ____  # "D"
                 ret.append(maxa)
                 maxa -= 1
 
         ret.append(mini)
-        return ret
+        r_ ret
 
-    def diStringMatchErrror(self, S: str) -> List[int]:
+    ___ diStringMatchErrror(self, S: str) -> List[int]:
         """
         start with 0, then add the min up to 0
 
@@ -59,12 +59,12 @@ class Solution:
         """
         ret = [0]
         for c in S:
-            if c == "I":
+            __ c __ "I":
                 ret.append(ret[-1] + 1)
-            else:
+            ____
                 ret.append(ret[-1] -1)
         mn = min(ret)
-        return [
+        r_ [
             e - mn
             for e in ret
         ]

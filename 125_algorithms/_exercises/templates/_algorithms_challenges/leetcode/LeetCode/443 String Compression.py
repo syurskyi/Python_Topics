@@ -15,7 +15,7 @@ Could you solve it using only O(1) extra space?
 
 
 class Solution:
-    def compress(self, chars):
+    ___ compress(self, chars
         """
         tedious pointer manipulation
         :type chars: List[str]
@@ -23,45 +23,45 @@ class Solution:
         """
         ret = 1
         s = 0  # start index of current char
-        for i in range(1, len(chars) + 1):
-            if i < len(chars) and chars[i] == chars[s]:
+        for i in range(1, le.(chars) + 1
+            __ i < le.(chars) and chars[i] __ chars[s]:
                 continue
             l = i - s
-            if l > 1:
-                for digit in str(l):
+            __ l > 1:
+                for digit in str(l
                     chars[ret] = digit
                     ret += 1
-            if i < len(chars):
+            __ i < le.(chars
                 chars[ret] = chars[i]
                 ret += 1
                 s = i
                 
-        return ret
+        r_ ret
 
-    def compress_error(self, chars):
+    ___ compress_error(self, chars
         """
         tedious pointer manipulation
         :type chars: List[str]
         :rtype: int
         """
         s = 0
-        for idx in range(1, len(chars) + 1):
-            if idx < len(chars) and chars[idx] == chars[s]:
+        for idx in range(1, le.(chars) + 1
+            __ idx < le.(chars) and chars[idx] __ chars[s]:
                 continue
             l = idx - s
-            if l == 1:
-                s = min(s + 1, len(chars) - 1)
-            else:
-                for digit in str(l):
+            __ l __ 1:
+                s = min(s + 1, le.(chars) - 1)
+            ____
+                for digit in str(l
                     s += 1
                     chars[s] = digit
-                if idx < len(chars):
+                __ idx < le.(chars
                     s += 1
                     chars[s] = chars[idx]
-        return s + 1
+        r_ s + 1
 
 
-if __name__ == "__main__":
-    assert Solution().compress(["a"]) == 1
-    assert Solution().compress(["a","a","b","b","c","c","c"]) == 6
-    assert Solution().compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"]) == 4
+__ __name__ __ "__main__":
+    assert Solution().compress(["a"]) __ 1
+    assert Solution().compress(["a","a","b","b","c","c","c"]) __ 6
+    assert Solution().compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"]) __ 4

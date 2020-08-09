@@ -1,3 +1,3 @@
-class School(object):
-    def __init__(self):
+class School(object
+    ___ __init__(self
         pass

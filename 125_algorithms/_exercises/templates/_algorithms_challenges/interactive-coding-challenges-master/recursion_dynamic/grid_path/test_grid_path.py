@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestGridPath(object):
+class TestGridPath(object
 
-    def test_grid_path(self):
+    ___ test_grid_path(self
         grid = Grid()
         assert_equal(grid.find_path(None), None)
         assert_equal(grid.find_path([[]]), None)
@@ -30,10 +30,10 @@ class TestGridPath(object):
         print('Success: test_grid_path')
 
 
-def main():
+___ main(
     test = TestGridPath()
     test.test_grid_path()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

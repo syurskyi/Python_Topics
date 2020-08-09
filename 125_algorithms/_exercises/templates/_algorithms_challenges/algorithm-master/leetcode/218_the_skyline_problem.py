@@ -1,55 +1,55 @@
 """
 REF: https://briangordon.github.io/2014/08/the-skyline-problem.html
 """
-import heapq
+______ heapq
 
 
 class HashHeapq:
-    def __init__(self):
+    ___ __init__(self
         self.heap = []
         self.deleted = {}
 
-    def push(self, val):
+    ___ push(self, val
         heapq.heappush(self.heap, val)
 
-    def pop(self):
-        if self.is_empty():
-            return -1
+    ___ pop(self
+        __ self.is_empty(
+            r_ -1
 
-        return heapq.heappop(self.heap)
+        r_ heapq.heappop(self.heap)
 
-    def remove(self, val):
-        if self.is_empty():
-            return
+    ___ remove(self, val
+        __ self.is_empty(
+            r_
 
-        if val not in self.deleted:
+        __ val not in self.deleted:
             self.deleted[val] = 0
 
         self.deleted[val] += 1
 
-    def top(self):
-        if self.is_empty():
-            return -1
+    ___ top(self
+        __ self.is_empty(
+            r_ -1
 
-        return self.heap[0]
+        r_ self.heap[0]
 
-    def is_empty(self):
-        while self.heap and self.deleted.get(self.heap[0]):
+    ___ is_empty(self
+        w___ self.heap and self.deleted.get(self.heap[0]
             val = heapq.heappop(self.heap)
             self.deleted[val] -= 1
 
-        return not self.heap
+        r_ not self.heap
 
 
 class Solution:
-    def getSkyline(self, buildings):
+    ___ getSkyline(self, buildings
         """
         :type buildings: List[List[int]]
         :rtype: List[List[int]]
         """
         ans = []
-        if not buildings:
-            return ans
+        __ not buildings:
+            r_ ans
 
         time = []
 
@@ -61,17 +61,17 @@ class Solution:
         heap = HashHeapq()
 
         for x, height, is_start in time:
-            if is_start:
+            __ is_start:
                 heap.push(-height)
-            else:
+            ____
                 heap.remove(-height)
 
-            max_h = -heap.top() if not heap.is_empty() else 0
+            max_h = -heap.top() __ not heap.is_empty() else 0
 
-            if ans and ans[-1][0] == x:
+            __ ans and ans[-1][0] __ x:
                 ans.pop()
-            if ans and ans[-1][1] == max_h:
+            __ ans and ans[-1][1] __ max_h:
                 continue
             ans.append([x, max_h])
 
-        return ans
+        r_ ans

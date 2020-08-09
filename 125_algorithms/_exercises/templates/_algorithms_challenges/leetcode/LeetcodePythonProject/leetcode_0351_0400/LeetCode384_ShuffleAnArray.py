@@ -4,19 +4,19 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def __init__(self, nums):
+class Solution(object
+    ___ __init__(self, nums
         self.nums = nums
     
-    def reset(self):
-        return self.nums
+    ___ reset(self
+        r_ self.nums
     
-    def shuffle(self):
-        import random
+    ___ shuffle(self
+        ______ random
         newNums = list(self.nums)
-        if not newNums:
-            return newNums
-        for i in range(len(newNums)-1, 0, -1):
+        __ not newNums:
+            r_ newNums
+        for i in range(le.(newNums)-1, 0, -1
             ind = random.randint(0, i)
             newNums[ind], newNums[i] = newNums[i], newNums[ind]
-        return newNums
+        r_ newNums

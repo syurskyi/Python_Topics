@@ -9,7 +9,7 @@ Could you do this in O(n) runtime?
 
 
 class Solution:
-    def findMaximumXOR(self, nums):
+    ___ findMaximumXOR(self, nums
         """
         Brute force: O(n^2)
         constrinat: 32 bit
@@ -27,12 +27,12 @@ class Solution:
             cur = ret + 1
             for p in prefixes:
                 # a ^ b ^ a = b
-                if cur ^ p in prefixes:
+                __ cur ^ p in prefixes:
                     ret = cur
                     break  # found one
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().findMaximumXOR([3, 10, 5, 25, 2, 8]) == 28
+__ __name__ __ "__main__":
+    assert Solution().findMaximumXOR([3, 10, 5, 25, 2, 8]) __ 28

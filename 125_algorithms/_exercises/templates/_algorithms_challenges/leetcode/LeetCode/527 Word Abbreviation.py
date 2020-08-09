@@ -3,12 +3,12 @@
 premium question
 """
 
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def wordsAbbreviation(self, words: List[str]) -> List[str]:
+    ___ wordsAbbreviation(self, words: List[str]) -> List[str]:
         """
         Sort the word, check prefix and last word
 
@@ -19,12 +19,12 @@ class Solution:
         """
         hm = defaultdict(list)
         ret = [None for _ in words]
-        for i, w in enumerate(words):
-            hm[w[0], w[-1], len(w)].append(i)
+        for i, w in enumerate(words
+            hm[w[0], w[-1], le.(w)].append(i)
 
         TrieNode = lambda: defaultdict(TrieNode)
 
-        for lst in hm.values():
+        for lst in hm.values(
             root = TrieNode()
             for i in lst:
                 w = words[i]
@@ -40,19 +40,19 @@ class Solution:
                 for c in w:
                     prefix_l += 1
                     cur = cur[c]
-                    if cur["count"] == 1:
+                    __ cur["count"] __ 1:
                         break
 
                 ret[i] = self.abbrev(w, prefix_l)
 
-        return ret
+        r_ ret
 
-    def abbrev(self, w, prefix_l):
-        abbrev_l = len(w) - 2 - prefix_l + 1
-        if abbrev_l > 1:
-            return w[:prefix_l] + str(abbrev_l) + w[-1]
-        return w
+    ___ abbrev(self, w, prefix_l
+        abbrev_l = le.(w) - 2 - prefix_l + 1
+        __ abbrev_l > 1:
+            r_ w[:prefix_l] + str(abbrev_l) + w[-1]
+        r_ w
 
 
-if __name__ == "__main__":
-    assert Solution().wordsAbbreviation(["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]) == ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]
+__ __name__ __ "__main__":
+    assert Solution().wordsAbbreviation(["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]) __ ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]

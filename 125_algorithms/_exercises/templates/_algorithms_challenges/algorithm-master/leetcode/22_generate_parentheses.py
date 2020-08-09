@@ -1,27 +1,27 @@
 class Solution:
-    def generateParenthesis(self, n):
+    ___ generateParenthesis(self, n
         """
         :type n: int
         :rtype: list[str]
         """
         ans = []
-        if not n:
-            return ans
+        __ not n:
+            r_ ans
 
         self.dfs(n, 1, 0, ans, ['('])
-        return ans
+        r_ ans
 
-    def dfs(self, n, lcnt, rcnt, ans, path):
-        if len(path) == 2 * n:
+    ___ dfs(self, n, lcnt, rcnt, ans, path
+        __ le.(path) __ 2 * n:
             ans.append(''.join(path))
-            return
+            r_
 
-        if rcnt < lcnt:
+        __ rcnt < lcnt:
             path.append(')')
             self.dfs(n, lcnt, rcnt + 1, ans, path)
             path.pop()
 
-        if lcnt < n:
+        __ lcnt < n:
             path.append('(')
             self.dfs(n, lcnt + 1, rcnt, ans, path)
             path.pop()

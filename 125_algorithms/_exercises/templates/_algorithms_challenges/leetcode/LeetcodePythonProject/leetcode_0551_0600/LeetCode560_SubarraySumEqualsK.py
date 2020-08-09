@@ -4,8 +4,8 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def subarraySum(self, nums, k):
+class Solution(object
+    ___ subarraySum(self, nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -16,12 +16,12 @@ class Solution(object):
         res = 0
         for num in nums:
             sumVal += num
-            if sumVal-k in hashmap:
+            __ sumVal-k in hashmap:
                 res += hashmap[sumVal-k]
             hashmap[sumVal] = hashmap.get(sumVal, 0)+1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 1, 1],
@@ -51,5 +51,5 @@ class Solution(object):
             print('result: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

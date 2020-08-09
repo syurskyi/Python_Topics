@@ -1,10 +1,10 @@
-import unittest
+______ unittest
 try:
-    import builtins
+    ______ builtins
 except ImportError:
-    import __builtin__ as builtins
+    ______ __builtin__ as builtins
 
-from grep import grep
+from grep ______ grep
 
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
@@ -46,24 +46,24 @@ FILENAMES = [
 FILES = {}
 
 
-class File(object):
-    def __init__(self, name=''):
+class File(object
+    ___ __init__(self, name=''
         self.name = name
         self.contents = ''
 
-    def read(self):
-        return self.contents
+    ___ read(self
+        r_ self.contents
 
-    def readlines(self):
-        return [line + '\n' for line in self.read().split('\n') if line]
+    ___ readlines(self
+        r_ [line + '\n' for line in self.read().split('\n') __ line]
 
-    def write(self, data):
+    ___ write(self, data
         self.contents += data
 
-    def __enter__(self):
-        return self
+    ___ __enter__(self
+        r_ self
 
-    def __exit__(self, *args):
+    ___ __exit__(self, *args
         pass
 
 
@@ -71,33 +71,33 @@ class File(object):
 builtins.oldopen = builtins.open
 
 
-def open(name, mode='r', *args, **kwargs):
+___ open(name, mode='r', *args, **kwargs
     # if name is a mocked file name, lookup corresponding mocked file
-    if name in FILENAMES:
-        if mode == 'w' or name not in FILES:
+    __ name in FILENAMES:
+        __ mode __ 'w' or name not in FILES:
             FILES[name] = File(name)
-        return FILES[name]
+        r_ FILES[name]
     # else call builtin open()
-    else:
-        return builtins.oldopen(name, mode, *args, **kwargs)
+    ____
+        r_ builtins.oldopen(name, mode, *args, **kwargs)
 
 
 builtins.open = open
 
 
 # remove mocked file contents
-def remove_file(file_name):
+___ remove_file(file_name
     del FILES[file_name]
 
 
-def create_file(name, contents):
+___ create_file(name, contents
     with open(name, 'w') as f:
         f.write(contents)
 
 
-class GrepTest(unittest.TestCase):
+class GrepTest(unittest.TestCase
     @classmethod
-    def setUpClass(self):
+    ___ setUpClass(self
         # Override builtin open() with mock-file-enabled one
         builtins.open = open
         create_file(ILIADFILENAME, ILIADCONTENTS)
@@ -105,45 +105,45 @@ class GrepTest(unittest.TestCase):
         create_file(PARADISELOSTFILENAME, PARADISELOSTCONTENTS)
 
     @classmethod
-    def tearDownClass(self):
+    ___ tearDownClass(self
         remove_file(ILIADFILENAME)
         remove_file(MIDSUMMERNIGHTFILENAME)
         remove_file(PARADISELOSTFILENAME)
         # Restore builtin open()
         builtins.open = builtins.oldopen
 
-    def test_one_file_one_match_no_flags(self):
+    ___ test_one_file_one_match_no_flags(self
         self.assertMultiLineEqual(
             grep("Agamemnon", [ILIADFILENAME]),
             "Of Atreus, Agamemnon, King of men.\n"
         )
 
-    def test_one_file_one_match_print_line_numbers_flag(self):
+    ___ test_one_file_one_match_print_line_numbers_flag(self
         self.assertMultiLineEqual(
             grep("Forbidden", [PARADISELOSTFILENAME], "-n"),
             "2:Of that Forbidden Tree, whose mortal tast\n"
         )
 
-    def test_one_file_one_match_case_insensitive_flag(self):
+    ___ test_one_file_one_match_case_insensitive_flag(self
         self.assertMultiLineEqual(
             grep("FORBIDDEN", [PARADISELOSTFILENAME], "-i"),
             "Of that Forbidden Tree, whose mortal tast\n"
         )
 
-    def test_one_file_one_match_print_file_names_flag(self):
+    ___ test_one_file_one_match_print_file_names_flag(self
         self.assertMultiLineEqual(
             grep("Forbidden", [PARADISELOSTFILENAME], "-l"),
             PARADISELOSTFILENAME + '\n'
         )
 
-    def test_one_file_one_match_match_entire_lines_flag(self):
+    ___ test_one_file_one_match_match_entire_lines_flag(self
         self.assertMultiLineEqual(
             grep("With loss of Eden, till one greater Man",
                  [PARADISELOSTFILENAME], "-x"),
             "With loss of Eden, till one greater Man\n"
         )
 
-    def test_one_file_one_match_multiple_flags(self):
+    ___ test_one_file_one_match_multiple_flags(self
         self.assertMultiLineEqual(
             grep(
                 "OF ATREUS, Agamemnon, KIng of MEN.",
@@ -153,7 +153,7 @@ class GrepTest(unittest.TestCase):
             "9:Of Atreus, Agamemnon, King of men.\n"
         )
 
-    def test_one_file_several_matches_no_flags(self):
+    ___ test_one_file_several_matches_no_flags(self
         self.assertMultiLineEqual(
             grep("may", [MIDSUMMERNIGHTFILENAME]),
             "Nor how it may concern my modesty,\n"
@@ -161,7 +161,7 @@ class GrepTest(unittest.TestCase):
             "The worst that may befall me in this case,\n"
         )
 
-    def test_one_file_several_matches_print_line_numbers_flag(self):
+    ___ test_one_file_several_matches_print_line_numbers_flag(self
         self.assertMultiLineEqual(
             grep("may", [MIDSUMMERNIGHTFILENAME], "-n"),
             "3:Nor how it may concern my modesty,\n"
@@ -169,20 +169,20 @@ class GrepTest(unittest.TestCase):
             "6:The worst that may befall me in this case,\n"
         )
 
-    def test_one_file_several_matches_match_entire_lines_flag(self):
+    ___ test_one_file_several_matches_match_entire_lines_flag(self
         self.assertMultiLineEqual(
             grep("may", [MIDSUMMERNIGHTFILENAME], "-x"),
             ""
         )
 
-    def test_one_file_several_matches_case_insensitive_flag(self):
+    ___ test_one_file_several_matches_case_insensitive_flag(self
         self.assertMultiLineEqual(
             grep("ACHILLES", [ILIADFILENAME], "-i"),
             "Achilles sing, O Goddess! Peleus' son;\n"
             "The noble Chief Achilles from the son\n"
         )
 
-    def test_one_file_several_matches_inverted_flag(self):
+    ___ test_one_file_several_matches_inverted_flag(self
         self.assertMultiLineEqual(
             grep("Of", [PARADISELOSTFILENAME], "-v"),
             "Brought Death into the World, and all our woe,\n"
@@ -192,19 +192,19 @@ class GrepTest(unittest.TestCase):
             "That Shepherd, who first taught the chosen Seed\n"
         )
 
-    def test_one_file_no_matches_various_flags(self):
+    ___ test_one_file_no_matches_various_flags(self
         self.assertMultiLineEqual(
             grep("Gandalf", [ILIADFILENAME], "-n -l -x -i"),
             ""
         )
 
-    def test_multiple_files_one_match_no_flags(self):
+    ___ test_multiple_files_one_match_no_flags(self
         self.assertMultiLineEqual(
             grep("Agamemnon", FILENAMES),
             "iliad.txt:Of Atreus, Agamemnon, King of men.\n"
         )
 
-    def test_multiple_files_several_matches_no_flags(self):
+    ___ test_multiple_files_several_matches_no_flags(self
         self.assertMultiLineEqual(
             grep("may", FILENAMES),
             "midsummer-night.txt:Nor how it may concern my modesty,\n"
@@ -212,7 +212,7 @@ class GrepTest(unittest.TestCase):
             "midsummer-night.txt:The worst that may befall me in this case,\n"
         )
 
-    def test_multiple_files_several_matches_print_line_numbers_flag(self):
+    ___ test_multiple_files_several_matches_print_line_numbers_flag(self
         expected = (
             "midsummer-night.txt:5:But I beseech your grace that I may know\n"
             "midsummer-night.txt:6:The worst that may befall me in this case,"
@@ -224,12 +224,12 @@ class GrepTest(unittest.TestCase):
             expected
         )
 
-    def test_multiple_files_one_match_print_file_names_flag(self):
+    ___ test_multiple_files_one_match_print_file_names_flag(self
         self.assertMultiLineEqual(
             grep("who", FILENAMES, "-l"),
             ILIADFILENAME + '\n' + PARADISELOSTFILENAME + '\n')
 
-    def test_multiple_files_several_matches_case_insensitive_flag(self):
+    ___ test_multiple_files_several_matches_case_insensitive_flag(self
         expected = (
             "iliad.txt:Caused to Achaia's host, sent many a soul\n"
             "iliad.txt:Illustrious into Ades premature,\n"
@@ -247,7 +247,7 @@ class GrepTest(unittest.TestCase):
             expected
         )
 
-    def test_multiple_files_several_matches_inverted_flag(self):
+    ___ test_multiple_files_several_matches_inverted_flag(self
         self.assertMultiLineEqual(
             grep("a", FILENAMES, "-v"),
             "iliad.txt:Achilles sing, O Goddess! Peleus' son;\n"
@@ -255,24 +255,24 @@ class GrepTest(unittest.TestCase):
             "midsummer-night.txt:If I refuse to wed Demetrius.\n"
         )
 
-    def test_multiple_files_one_match_match_entire_lines_flag(self):
+    ___ test_multiple_files_one_match_match_entire_lines_flag(self
         self.assertMultiLineEqual(
             grep("But I beseech your grace that I may know",
                  FILENAMES, "-x"),
             "midsummer-night.txt:But I beseech your grace that I may know\n")
 
-    def test_multiple_files_one_match_multiple_flags(self):
+    ___ test_multiple_files_one_match_multiple_flags(self
         self.assertMultiLineEqual(
             grep("WITH LOSS OF EDEN, TILL ONE GREATER MAN",
                  FILENAMES, "-n -i -x"),
             "paradise-lost.txt:4:With loss of Eden, till one greater Man\n")
 
-    def test_multiple_files_no_matches_various_flags(self):
+    ___ test_multiple_files_no_matches_various_flags(self
         self.assertMultiLineEqual(
             grep("Frodo", FILENAMES, "-n -l -x -i"),
             ""
         )
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

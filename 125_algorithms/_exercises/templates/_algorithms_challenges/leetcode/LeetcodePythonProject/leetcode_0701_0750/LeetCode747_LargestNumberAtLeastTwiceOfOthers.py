@@ -3,26 +3,26 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def dominantIndex(self, nums):
+class Solution(object
+    ___ dominantIndex(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return -1
+        __ not nums:
+            r_ -1
         first, fInd = float('-inf'), -1
         second = float('-inf')
-        for i, num in enumerate(nums):
-            if num > first:
+        for i, num in enumerate(nums
+            __ num > first:
                 second = first
                 first = num
                 fInd = i
-            elif num > second:
+            ____ num > second:
                 second = num
-        return fInd if first >= 2*second else -1
+        r_ fInd __ first >= 2*second else -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [3, 6, 1, 0],
             [1, 2, 3, 4],
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

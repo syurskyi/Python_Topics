@@ -1,34 +1,34 @@
-from __future__ import division
+from __future__ ______ division
 
 
-class Rational(object):
-    def __init__(self, numer, denom):
+class Rational(object
+    ___ __init__(self, numer, denom
         self.numer = None
         self.denom = None
 
-    def __eq__(self, other):
-        return self.numer == other.numer and self.denom == other.denom
+    ___ __eq__(self, other
+        r_ self.numer __ other.numer and self.denom __ other.denom
 
-    def __repr__(self):
-        return '{}/{}'.format(self.numer, self.denom)
+    ___ __repr__(self
+        r_ '{}/{}'.format(self.numer, self.denom)
 
-    def __add__(self, other):
+    ___ __add__(self, other
         pass
 
-    def __sub__(self, other):
+    ___ __sub__(self, other
         pass
 
-    def __mul__(self, other):
+    ___ __mul__(self, other
         pass
 
-    def __truediv__(self, other):
+    ___ __truediv__(self, other
         pass
 
-    def __abs__(self):
+    ___ __abs__(self
         pass
 
-    def __pow__(self, power):
+    ___ __pow__(self, power
         pass
 
-    def __rpow__(self, base):
+    ___ __rpow__(self, base
         pass

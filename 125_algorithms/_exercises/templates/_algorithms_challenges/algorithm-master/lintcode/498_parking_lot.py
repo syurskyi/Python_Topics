@@ -6,15 +6,15 @@ VEHICLE_ID = {
 
 
 class Vehicle:
-    def __init__(self):
+    ___ __init__(self
         self.type = ''
         self.costs = 0
         self.at_level = None
         self.at_spots = None
 
-    def unpark(self):
-        if not self.at_level:
-            return
+    ___ unpark(self
+        __ not self.at_level:
+            r_
 
         for x, y in self.at_spots:
             self.at_level.spots[x, y] = None
@@ -23,75 +23,75 @@ class Vehicle:
         self.at_spots = None
 
 
-class Motorcycle(Vehicle):
-    def __init__(self):
+class Motorcycle(Vehicle
+    ___ __init__(self
         self.type = VEHICLE_ID['MOTOCYCLE']
         self.costs = 1
 
 
-class Car(Vehicle):
-    def __init__(self):
+class Car(Vehicle
+    ___ __init__(self
         self.type = VEHICLE_ID['CAR']
         self.costs = 1
 
 
-class Bus(Vehicle):
-    def __init__(self):
+class Bus(Vehicle
+    ___ __init__(self
         self.type = VEHICLE_ID['BUS']
         self.costs = 5
 
 
 class Level:
-    def __init__(self, id, m, n):
+    ___ __init__(self, id, m, n
         self.id = id
         self.m = m
         self.n = n
         self.spots = {}
 
-    def get_range(self, vehicle_type):
+    ___ get_range(self, vehicle_type
         quarter = self.n // 4
 
-        if vehicle_type == VEHICLE_ID['BUS']:
-            return range(quarter * 3, self.n)
+        __ vehicle_type __ VEHICLE_ID['BUS']:
+            r_ range(quarter * 3, self.n)
 
-        if vehicle_type == VEHICLE_ID['CAR']:
-            return range(quarter, self.n)
+        __ vehicle_type __ VEHICLE_ID['CAR']:
+            r_ range(quarter, self.n)
 
-        return range(self.n)
+        r_ range(self.n)
 
-    def park_vehicle(self, vehicle):
+    ___ park_vehicle(self, vehicle
         """
         :type vehicle: Vehicle
         :rtype: bool
         """
         RANGE = self.get_range(vehicle.type)
 
-        for x in range(self.m):
+        for x in range(self.m
             gotcha = 0
 
             for y in RANGE:
-                if self.spots.get((x, y)):
+                __ self.spots.get((x, y)):
                     gotcha = 0
                     continue
 
                 gotcha += 1
 
-                if gotcha == vehicle.costs:
+                __ gotcha __ vehicle.costs:
                     spots = []
 
-                    for i in range(y, y - gotcha, -1):
+                    for i in range(y, y - gotcha, -1
                         spots.append((x, i))
                         self.spots[x, i] = vehicle
 
                     vehicle.at_level = self
                     vehicle.at_spots = spots
-                    return True
+                    r_ True
 
-        return False
+        r_ False
 
 
 class ParkingLot:
-    def __init__(self, k, m, n):
+    ___ __init__(self, k, m, n
         """
         :type k: int, number of levels
         :type m: int, each level has m rows of spots
@@ -99,20 +99,20 @@ class ParkingLot:
         """
         self.levels = [Level(i, m, n) for i in range(k)]
 
-    def park_vehicle(self, vehicle):
+    ___ park_vehicle(self, vehicle
         """
         :type vehicle: Vehicle
         :rtype: bool
         """
-        if any(
+        __ any(
             level.park_vehicle(vehicle)
             for level in self.levels
-        ):
-            return True
 
-        return False
+            r_ True
 
-    def unpark_vehicle(self, vehicle):
+        r_ False
+
+    ___ unpark_vehicle(self, vehicle
         """
         :type vehicle: Vehicle
         """

@@ -4,8 +4,8 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def __init__(self, nums):
+class Solution(object
+    ___ __init__(self, nums
         """
         
         :type nums: List[int]
@@ -13,17 +13,17 @@ class Solution(object):
         """
         self.nums = nums
 
-    def pick(self, target):
+    ___ pick(self, target
         """
         :type target: int
         :rtype: int
         """
-        import random
+        ______ random
         count = 0
         res = -1
-        for i, num in enumerate(self.nums):
-            if target == num:
-                if random.randint(0, count) == 0:
+        for i, num in enumerate(self.nums
+            __ target __ num:
+                __ random.randint(0, count) __ 0:
                     res = i
                 count += 1
-        return res
+        r_ res

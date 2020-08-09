@@ -4,38 +4,38 @@ Created on Feb 15, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findRepeatedDnaSequences(self, s):
+class Solution(object
+    ___ findRepeatedDnaSequences(self, s
         """
         :type s: str
         :rtype: List[str]
         """
         result = set()
         resultCodes = set()
-        if not s or len(s) < 10: return []
-        for i in range(0, len(s)-9):
+        __ not s or le.(s) < 10: r_ []
+        for i in range(0, le.(s)-9
             subStr = s[i:i+10]
             code = self.encode(subStr)
-            if code in resultCodes:
+            __ code in resultCodes:
                 result.add(subStr)
-            else:
+            ____
                 resultCodes.add(code)
-        return list(result)
+        r_ list(result)
     
-    def encode(self, s):
+    ___ encode(self, s
         sumVal = 0
-        for _, c in enumerate(s):
-            if c == 'A':
+        for _, c in enumerate(s
+            __ c __ 'A':
                 sumVal = sumVal*4
-            elif c == 'C':
+            ____ c __ 'C':
                 sumVal = sumVal*4+1
-            elif c == 'G':
+            ____ c __ 'G':
                 sumVal = sumVal*4+2
-            else:
+            ____
                 sumVal = sumVal*4+3
-        return sumVal
+        r_ sumVal
     
-    def test(self):
+    ___ test(self
         testCases = [
             'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT',
             'AAAAAAAAAAAA',
@@ -48,5 +48,5 @@ class Solution(object):
         print(self.encode('AAAAACCCCC'))
         print(self.encode('CCCCCAAAAA'))
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

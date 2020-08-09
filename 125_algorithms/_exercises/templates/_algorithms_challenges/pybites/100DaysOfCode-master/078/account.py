@@ -1,42 +1,42 @@
 class Account:
 
-    def __init__(self):
+    ___ __init__(self
         self._transactions = []
 
     @property
-    def balance(self):
-        return sum(self._transactions)
+    ___ balance(self
+        r_ sum(self._transactions)
 
-    def __add__(self, amount):
-        if not isinstance(amount, int):
+    ___ __add__(self, amount
+        __ not isinstance(amount, int
             raise ValueError('please use int for amount')
         self._transactions.append(amount)
 
-    def __enter__(self):
+    ___ __enter__(self
         print('ENTER WITH: making backup of transactions for rollback')
         self._copy_transactions = list(self._transactions)
-        return self
+        r_ self
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    ___ __exit__(self, exc_type, exc_val, exc_tb
         print('EXIT WITH:', end=' ')
-        if exc_type:
+        __ exc_type:
             self._transactions = self._copy_transactions
             print('rolling back to previous transactions')
             print('transaction {} err ({})'.format(exc_type.__name__, exc_val))
-        else:
+        ____
             print('transaction ok')
 
 
-def validate_transaction(acc, amount_to_add):
+___ validate_transaction(acc, amount_to_add
     with acc as a:
         print('adding {} to account'.format(amount_to_add))
         a + amount_to_add
         print('new balance would be: {}'.format(a.balance))
-        if a.balance < 0:
+        __ a.balance < 0:
             raise ValueError('sorry cannot go in debt!')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     bob = Account()
 
     # ok transaction

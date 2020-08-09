@@ -1,14 +1,14 @@
-class Solution(object):
-  def combine(self, n, k):
-    if k == 1:
-      return [[i] for i in range(1, n + 1)]
-    elif k == n:
-      return [[i for i in range(1, n + 1)]]
-    else:
+class Solution(object
+  ___ combine(self, n, k
+    __ k __ 1:
+      r_ [[i] for i in range(1, n + 1)]
+    ____ k __ n:
+      r_ [[i for i in range(1, n + 1)]]
+    ____
       rs = []
       rs += self.combine(n - 1, k)
       part = self.combine(n - 1, k - 1)
       for ls in part:
         ls.append(n)
       rs += part
-      return rs
+      r_ rs

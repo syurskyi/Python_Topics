@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestAddReverse(object):
+class TestAddReverse(object
 
-    def test_add_reverse(self):
+    ___ test_add_reverse(self
         print('Test: Empty list(s)')
         assert_equal(MyLinkedList().add_reverse(None, None), None)
         assert_equal(MyLinkedList().add_reverse(Node(5), None), None)
@@ -39,10 +39,10 @@ class TestAddReverse(object):
         print('Success: test_add_reverse')
 
 
-def main():
+___ main(
     test = TestAddReverse()
     test.test_add_reverse()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

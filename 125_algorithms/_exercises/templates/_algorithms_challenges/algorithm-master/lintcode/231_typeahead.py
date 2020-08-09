@@ -2,27 +2,27 @@ class Typeahead:
     """
     @param: dict: A dictionary of words dict
     """
-    def __init__(self, dict):
+    ___ __init__(self, dict
         self.map = {}
         n = 0
         for key in dict:
-            n = len(key)
-            for l in range(n):
-                for r in range(l + 1, n + 1):
+            n = le.(key)
+            for l in range(n
+                for r in range(l + 1, n + 1
                     substr = key[l:r]
-                    if substr not in self.map:
+                    __ substr not in self.map:
                         self.map[substr] = [key]
-                    elif self.map[substr][-1] != key:
+                    ____ self.map[substr][-1] != key:
                         self.map[substr].append(key)
 
     """
     @param: str: a string
     @return: a list of words
     """
-    def search(self, str):
-        if str in self.map:
-            return self.map[str]
-        return []
+    ___ search(self, str
+        __ str in self.map:
+            r_ self.map[str]
+        r_ []
 
 
 # Solution2
@@ -33,50 +33,50 @@ Since the description said 'return all words that contains the string as a subst
 But its a good solution for the auto-completion
 '''
 class Trie:
-    def __init__(self):
+    ___ __init__(self
         self.root = self.new_node()
 
-    def new_node(self):
-        return {
+    ___ new_node(self
+        r_ {
             'result': [],
             'children': {}
         }
 
-    def put(self, key):
-        if not key:
-            return
-        for word in key.split():
+    ___ put(self, key
+        __ not key:
+            r_
+        for word in key.split(
             self._put(word, key)
 
-    def _put(self, word, key):
+    ___ _put(self, word, key
         parent = self.root
-        for char in word.lower():
-            if char not in parent['children']:
+        for char in word.lower(
+            __ char not in parent['children']:
                 parent['children'][char] = self.new_node()
             parent = parent['children'][char]
             parent['result'].append(key)
 
-    def search(self, key):
-        if not key:
-            return []
+    ___ search(self, key
+        __ not key:
+            r_ []
         parent = self.root
-        for char in key.lower():
-            if char not in parent['children']:
-                return []
+        for char in key.lower(
+            __ char not in parent['children']:
+                r_ []
             parent = parent['children'][char]
-        return parent['result']
+        r_ parent['result']
 
     # To support search with 2+ word
-    # def search(self, key):
+    # ___ search(self, key
     #     if not key:
     #         return []
     #     result = []
-    #     for word in key.split():
+    #     for word in key.split(
     #         result += self._search(word)
     #     return result
-    # def _search(self, word):
+    # ___ _search(self, word
     #     parent = self.root
-    #     for char in word.lower():
+    #     for char in word.lower(
     #         if char not in parent['children']:
     #             return []
     #         parent = parent['children'][char]
@@ -86,7 +86,7 @@ class Typeahead:
     """
     @param: dict: A dictionary of words dict
     """
-    def __init__(self, dict):
+    ___ __init__(self, dict
         self.trie = Trie()
         for word in dict:
             self.trie.put(word)
@@ -95,5 +95,5 @@ class Typeahead:
     @param: str: a string
     @return: a list of words
     """
-    def search(self, str):
-        return self.trie.search(str)
+    ___ search(self, str
+        r_ self.trie.search(str)

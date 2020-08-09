@@ -1,2 +1,2 @@
-def reverse_case(txt):
-    return txt.swapcase()
+___ reverse_case(txt
+    r_ txt.swapcase()

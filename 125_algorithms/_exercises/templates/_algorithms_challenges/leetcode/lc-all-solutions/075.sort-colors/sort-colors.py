@@ -1,32 +1,32 @@
-class Solution(object):
-  def sortColors(self, nums):
+class Solution(object
+  ___ sortColors(self, nums
     """
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
     x = y = z = -1
-    for i in range(0, len(nums)):
-      if nums[i] == 0:
+    for i in range(0, le.(nums)):
+      __ nums[i] __ 0:
         x += 1
         y += 1
         z += 1
-        if z != -1:
+        __ z != -1:
           nums[z] = 2
-        if y != -1:
+        __ y != -1:
           nums[y] = 1
         nums[x] = 0
-      elif nums[i] == 1:
+      ____ nums[i] __ 1:
         y += 1
         z += 1
         nums[z] = 2
-        if x != -1:
+        __ x != -1:
           nums[x] = 0
-        if y != -1:
+        __ y != -1:
           nums[y] = 1
-      elif nums[i] == 2:
+      ____ nums[i] __ 2:
         z += 1
-        if y != -1:
+        __ y != -1:
           nums[y] = 1
-        if x != -1:
+        __ x != -1:
           nums[x] = 0
         nums[z] = 2

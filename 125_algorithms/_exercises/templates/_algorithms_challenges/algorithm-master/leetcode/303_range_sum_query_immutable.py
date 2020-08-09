@@ -6,29 +6,29 @@ param_1 = obj.sumRange(i,j)
 
 
 class NumArray:
-    def __init__(self, nums):
+    ___ __init__(self, nums
         """
         :type nums: List[int]
         """
-        if not nums:
-            return
+        __ not nums:
+            r_
 
-        n = len(nums)
+        n = le.(nums)
         self.prefix_sum = [0] * (n + 1)
 
-        for i in range(1, n + 1):
+        for i in range(1, n + 1
             self.prefix_sum[i] = self.prefix_sum[i - 1] + nums[i - 1]
 
-    def sumRange(self, i, j):
+    ___ sumRange(self, i, j
         """
         :type i: int
         :type j: int
         :rtype: int
         """
-        if (
+        __ (
             not self.prefix_sum or
             i < 0 or
-            j + 1 >= len(self.prefix_sum)
-        ):
-            return 0
-        return self.prefix_sum[j + 1] - self.prefix_sum[i]
+            j + 1 >= le.(self.prefix_sum)
+
+            r_ 0
+        r_ self.prefix_sum[j + 1] - self.prefix_sum[i]

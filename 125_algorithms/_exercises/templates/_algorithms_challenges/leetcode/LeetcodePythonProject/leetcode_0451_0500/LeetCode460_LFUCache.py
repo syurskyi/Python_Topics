@@ -4,17 +4,17 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-class Node(object):
-    def __init__(self, key, val):
+class Node(object
+    ___ __init__(self, key, val
         self.val = val
         self.next = None
         self.prev = None
         self.freq = 1
         self.key = key
 
-class LFUCache(object):
+class LFUCache(object
 
-    def __init__(self, capacity):
+    ___ __init__(self, capacity
         """
         :type capacity: int
         """
@@ -28,36 +28,36 @@ class LFUCache(object):
         self.head.freq = float('-inf')
         self.tail.freq = float('inf')
     
-    def get(self, key):
+    ___ get(self, key
         """
         :type key: int
         :rtype: int
         """
-        if key not in self.hashmap:
-            return -1
-        else:
+        __ key not in self.hashmap:
+            r_ -1
+        ____
             value = self.hashmap[key].val
             self.updateNode(self.hashmap[key])
-            return value
+            r_ value
     
-    def put(self, key, value):
+    ___ put(self, key, value
         """
         :type key: int
         :type value: int
         :rtype: void
         """
-        if self.capacity == 0:
-            return
-        if key in self.hashmap:
+        __ self.capacity __ 0:
+            r_
+        __ key in self.hashmap:
             self.hashmap[key].val = value
             self.updateNode(self.hashmap[key])
-        else:
-            if self.capacity > self.length:
+        ____
+            __ self.capacity > self.length:
                 self.length += 1
                 node = Node(key, value)
                 self.hashmap[key] = node
                 node.freq = 1
-                if 1 in self.freqMap:
+                __ 1 in self.freqMap:
                     tmp = self.freqMap[1][1] # tail of freq
                     nextNode = tmp.next
                     tmp.next = node
@@ -65,28 +65,28 @@ class LFUCache(object):
                     node.next = nextNode
                     node.next.prev = node
                     self.freqMap[1][1] = node
-                else:
+                ____
                     nextNode = self.head.next
                     node.next = nextNode
                     node.prev = self.head
                     nextNode.prev = node
                     self.head.next = node
                     self.freqMap[1] = [node, node]
-            else:
+            ____
                 node = Node(key, value)
                 self.hashmap[key] = node
                 firstNode = self.head.next
                 freq = firstNode.freq
-                if self.freqMap[freq][0] == self.freqMap[freq][1]:
+                __ self.freqMap[freq][0] __ self.freqMap[freq][1]:
                     self.head.next = firstNode.next
                     firstNode.next.prev = self.head
                     del self.freqMap[freq]
-                else:
+                ____
                     self.freqMap[freq][0] = self.freqMap[freq][0].next
                     self.head.next = firstNode.next
                     firstNode.next.prev = self.head
                 del self.hashmap[firstNode.key]
-                if 1 in self.freqMap:
+                __ 1 in self.freqMap:
                     tmp = self.freqMap[1][1] # tail of freq
                     nextNode = tmp.next
                     tmp.next = node
@@ -94,7 +94,7 @@ class LFUCache(object):
                     node.next = nextNode
                     node.next.prev = node
                     self.freqMap[1][1] = node
-                else:
+                ____
                     nextNode = self.head.next
                     nextNode.prev = node
                     node.next = nextNode
@@ -102,28 +102,28 @@ class LFUCache(object):
                     node.prev = self.head
                     self.freqMap[1] = [node, node]
     
-    def updateNode(self, node):
+    ___ updateNode(self, node
         freq = node.freq
         nextNode = self.freqMap[freq][1].next
         node.prev.next = node.next
         node.next.prev = node.prev
-        if self.freqMap[freq][0] == self.freqMap[freq][1]:
+        __ self.freqMap[freq][0] __ self.freqMap[freq][1]:
             del self.freqMap[freq]
-        else:
-            if self.freqMap[freq][0] == node:
+        ____
+            __ self.freqMap[freq][0] __ node:
                 self.freqMap[freq][0] = node.next
-            if self.freqMap[freq][1] == node:
+            __ self.freqMap[freq][1] __ node:
                 self.freqMap[freq][1] = node.prev
         node.freq += 1
         freq += 1
-        if freq in self.freqMap:
+        __ freq in self.freqMap:
             tail = self.freqMap[freq][1]
             node.next = tail.next
             tail.next = node
             node.next.prev = node
             node.prev = tail
             self.freqMap[freq][1] = node
-        else:
+        ____
             prevNode = nextNode.prev
             prevNode.next = node
             node.next = nextNode

@@ -1,5 +1,5 @@
-class Solution(object):
-  def judgeCircle(self, moves):
+class Solution(object
+  ___ judgeCircle(self, moves
     """
     :type moves: str
     :rtype: bool
@@ -10,4 +10,4 @@ class Solution(object):
       dx, dy = dirs[move]
       x += dx
       y += dy
-    return x == y == 0
+    r_ x __ y __ 0

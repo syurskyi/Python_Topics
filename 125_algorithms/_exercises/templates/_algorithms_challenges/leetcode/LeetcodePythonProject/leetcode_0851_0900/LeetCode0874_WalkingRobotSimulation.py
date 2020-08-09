@@ -3,8 +3,8 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def robotSim(self, commands, obstacles):
+class Solution(object
+    ___ robotSim(self, commands, obstacles
         """
         :type commands: List[int]
         :type obstacles: List[List[int]]
@@ -18,24 +18,24 @@ class Solution(object):
         for ob in obstacles:
             hashset.add(tuple(ob))
         for c in commands:
-            if c in (-1, -2):
+            __ c in (-1, -2
                 d = self.calDirection(d, c)
-            else:
-                for _ in range(c):
-                    if (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) not in hashset:
+            ____
+                for _ in range(c
+                    __ (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) not in hashset:
                         pos = [pos[0] + dirs[d][0], pos[1] + dirs[d][1]]
             res = max(res, pos[0]**2 + pos[1]**2)
-        return res
+        r_ res
     
-    def calDirection(self, d, c):
-        if c == -2:
+    ___ calDirection(self, d, c
+        __ c __ -2:
             d -= 1
-        elif c == -1:
+        ____ c __ -1:
             d += 1
         d %= 4
-        return d
+        r_ d
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [4,-1,3],
@@ -46,5 +46,5 @@ class Solution(object):
             res = self.robotSim(commands, obstacles)
             print('res: %s' % res)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

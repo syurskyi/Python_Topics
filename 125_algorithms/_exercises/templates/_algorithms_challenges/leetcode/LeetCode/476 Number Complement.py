@@ -10,18 +10,18 @@ You could assume no leading zero bit in the integer’s binary representation.
 
 
 class Solution:
-    def findComplement(self, num):
+    ___ findComplement(self, num
         """
         :type num: int
         :rtype: int
         """
         msb = 0
-        while num >> msb:
+        w___ num >> msb:
             msb += 1
 
         mask = (1 << msb) - 1
-        return mask & ~num
+        r_ mask & ~num
 
 
-if __name__ == "__main__":
-    assert Solution().findComplement(5) == 2
+__ __name__ __ "__main__":
+    assert Solution().findComplement(5) __ 2

@@ -1,20 +1,20 @@
 class Solution:
-    def strStr(self, haystack, needle):
+    ___ strStr(self, haystack, needle
         """
         :type haystack: str
         :type needle: str
         :rtype: int
         """
         NOT_FOUND = -1
-        if haystack is None or needle is None:
-            return NOT_FOUND
-        if haystack == needle:
-            return 0
+        __ haystack is None or needle is None:
+            r_ NOT_FOUND
+        __ haystack __ needle:
+            r_ 0
 
-        m, n = len(haystack), len(needle)
+        m, n = le.(haystack), le.(needle)
 
-        for i in range(m - n + 1):
-            if haystack[i:i + n] == needle:
-                return i
+        for i in range(m - n + 1
+            __ haystack[i:i + n] __ needle:
+                r_ i
 
-        return NOT_FOUND
+        r_ NOT_FOUND

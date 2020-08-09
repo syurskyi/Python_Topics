@@ -1,23 +1,23 @@
-from rhombus import gen_rhombus
+from rhombus ______ gen_rhombus
 
 
-def test_rhombus_width3():
+___ test_rhombus_width3(
     # recommended: actual before expected
     # https://twitter.com/brianokken/status/1063337328553295876
     actual = list(gen_rhombus(3))
     expected = [' * ', '***', ' * ']
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_rhombus_width5():
+___ test_rhombus_width5(
     actual = list(gen_rhombus(5))
     expected = ['  *  ', ' *** ', '*****',
                 ' *** ', '  *  ']
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_rhombus_width11():
-    """print('\n'.join(expected)) would give (ignore indents):
+___ test_rhombus_width11(
+    """print('\n'.join(expected)) would give (ignore indents
          *
         ***
        *****
@@ -34,4 +34,4 @@ def test_rhombus_width11():
     expected = ['     *     ', '    ***    ', '   *****   ',
                 '  *******  ', ' ********* ', '***********', ' ********* ',
                 '  *******  ', '   *****   ', '    ***    ', '     *     ']
-    assert actual == expected
+    assert actual __ expected

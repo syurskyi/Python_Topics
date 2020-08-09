@@ -4,29 +4,29 @@ Created on Feb 6, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxProfit(self, prices):
+class Solution(object
+    ___ maxProfit(self, prices
         """
         :type prices: List[int]
         :rtype: int
         """
-        if not prices or len(prices) <= 1: return 0
-        left = [0]*len(prices)
-        right = [0]*len(prices)
+        __ not prices or le.(prices) <= 1: r_ 0
+        left = [0]*le.(prices)
+        right = [0]*le.(prices)
         minVal = prices[0]
-        for i in range(1, len(prices)):
+        for i in range(1, le.(prices)):
             left[i] = max(prices[i]-minVal, left[i])
             minVal = min(minVal, prices[i])
         maxVal = prices[-1]
-        for i in range(len(prices)-2, -1, -1):
+        for i in range(le.(prices)-2, -1, -1
             right[i] = max(maxVal-prices[i], right[i+1])
             maxVal = max(maxVal, prices[i])
         profit = 0
-        for i in range(len(prices)):
+        for i in range(le.(prices)):
             profit = max(left[i]+right[i], profit)
-        return profit
+        r_ profit
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 9, 2, 1, 3, 7, 2],
             [1, 7, 2, 9, 3, 1, 10],
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

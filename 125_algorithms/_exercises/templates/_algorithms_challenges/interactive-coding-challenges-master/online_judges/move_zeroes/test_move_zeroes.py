@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestMoveZeroes(object):
+class TestMoveZeroes(object
 
-    def test_move_zeroes(self):
+    ___ test_move_zeroes(self
         solution = Solution()
         assert_raises(TypeError, solution.move_zeroes, None)
         array = [0, 1, 0, 3, 12]
@@ -27,10 +27,10 @@ class TestMoveZeroes(object):
         print('Success: test_move_zeroes')
 
 
-def main():
+___ main(
     test = TestMoveZeroes()
     test.test_move_zeroes()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

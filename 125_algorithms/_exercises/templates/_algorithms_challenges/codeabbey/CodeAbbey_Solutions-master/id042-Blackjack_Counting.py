@@ -1,6 +1,6 @@
 # Python 2.7
 
-def blackjack_counter(games):
+___ blackjack_counter(games
     answer = []
     values = {
         '2':2,    '3':3,    '4':4,
@@ -10,22 +10,22 @@ def blackjack_counter(games):
         'K':10,   'A':11
         }
     
-    for game in range(games):
+    for game in range(games
         cards = [x for x in raw_input().split()]
         total, ace_count = 0, 0
         
         for card in cards:
             total += values[card]
-            if card == 'A':
+            __ card __ 'A':
                 ace_count += 1
                 
-        while total > 21 and ace_count > 0:
+        w___ total > 21 and ace_count > 0:
             total -= 10
             ace_count -= 1
 
-        if total > 21:
+        __ total > 21:
             answer.append('Bust')
-        else:
+        ____
             answer.append(str(total))
 
     print(' '.join(answer))

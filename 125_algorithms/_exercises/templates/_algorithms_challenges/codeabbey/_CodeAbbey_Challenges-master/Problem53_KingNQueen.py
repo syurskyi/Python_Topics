@@ -6,14 +6,14 @@ infile.close()
 board = [["-" for i in range(8)]for j in range(8)]
 col = ["a","b","c","d","e","f","g","h"]
 
-def display():
+___ display(
     global board
-    for i in range(8+1):
-        if i == 8:
+    for i in range(8+1
+        __ i __ 8:
             print("  a b c d e f g h")
             break
         print("{}".format(8-i),end=" ")
-        for j in range(8):
+        for j in range(8
             print(board[i][j],end=" ")
         print()
 
@@ -39,7 +39,7 @@ for line in data:
 ##    temp_row = q[0]
 ##    temp_col = q[1]
 ##    i = 1
-##    while temp_row-1 >= 0 and temp_row-1 <8:
+##    w___ temp_row-1 >= 0 and temp_row-1 <8:
 ##        temp_row -=1
 ##        if temp_col-i >=0 and temp_col-i <8:
 ##            queen_moves.append(str(temp_row)+str(temp_col-i))
@@ -50,7 +50,7 @@ for line in data:
 ##    temp_col = q[1]
 ##    i = 1
 ##    #lower diag
-##    while temp_row+1 >= 0 and temp_row+1 <8:
+##    w___ temp_row+1 >= 0 and temp_row+1 <8:
 ##        temp_row +=1
 ##        if temp_col-i >=0 and temp_col-i <8:
 ##            queen_moves.append(str(temp_row)+str(temp_col-i))

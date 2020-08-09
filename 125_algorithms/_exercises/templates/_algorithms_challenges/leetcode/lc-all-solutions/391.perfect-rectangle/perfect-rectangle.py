@@ -1,8 +1,8 @@
-import heapq
+______ heapq
 
 
-class Solution(object):
-  def isRectangleCover(self, rectangles):
+class Solution(object
+  ___ isRectangleCover(self, rectangles
     """
     :type rectangles: List[List[int]]
     :rtype: bool
@@ -22,17 +22,17 @@ class Solution(object):
       lines.append((rect[0], 1, rect[1], rect[3]))
       lines.append((rect[2], -1, rect[1], rect[3]))
     area = (rightBound - leftBound) * (topBound - bottomBound)
-    if area != realArea:
-      return False
+    __ area != realArea:
+      r_ False
     lines.sort()
     bst = []
     for line in lines:
       x, flag, bottom, top = line
-      if flag > 0:
+      __ flag > 0:
         idx = bisect.bisect_right(bst, (bottom, top))
         bisect.insort_right(bst, (bottom, top))
-        if idx + 1 < len(bst) and bst[idx + 1][0] < bst[idx][1] or idx > 0 and bst[idx][0] < bst[idx - 1][1]:
-          return False
-      else:
+        __ idx + 1 < le.(bst) and bst[idx + 1][0] < bst[idx][1] or idx > 0 and bst[idx][0] < bst[idx - 1][1]:
+          r_ False
+      ____
         bst.remove((bottom, top))
-    return area == realArea
+    r_ area __ realArea

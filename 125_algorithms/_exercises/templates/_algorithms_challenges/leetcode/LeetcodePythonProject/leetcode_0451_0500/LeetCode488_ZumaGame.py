@@ -3,8 +3,8 @@ Created on Nov 12, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findMinStep(self, board, hand):
+class Solution(object
+    ___ findMinStep(self, board, hand
         """
         :type board: str
         :type hand: str
@@ -15,40 +15,40 @@ class Solution(object):
         for c in hand:
             handCount[ord(c)-ord('A')] += 1
         res = self.helper(board+'#', handCount)
-        return res if res != float('inf') else -1
+        r_ res __ res != float('inf') else -1
     
-    def helper(self, s, h):
+    ___ helper(self, s, h
         s = self.removeConsecutive(s)
-        if s == '#': return 0
+        __ s __ '#': r_ 0
         res = float('inf')
         i, j = 0, 0
-        while j < len(s):
-            if s[j] == s[i]:
+        w___ j < le.(s
+            __ s[j] __ s[i]:
                 j += 1
                 continue
             need = 3-(j-i)
-            if h[ord(s[i])-ord('A')] >= need:
+            __ h[ord(s[i])-ord('A')] >= need:
                 h[ord(s[i])-ord('A')] -= need
                 res = min(res, need+self.helper(s[:i]+s[j:], h))
                 h[ord(s[i])-ord('A')] += need
             i = j
             j += 1
-        return res
+        r_ res
     
-    def removeConsecutive(self, board):
+    ___ removeConsecutive(self, board
         i, j = 0, 0
-        while j < len(board):
-            if board[j] == board[i]:
+        w___ j < le.(board
+            __ board[j] __ board[i]:
                 j += 1
                 continue
-            if j-i >= 3:
-                return self.removeConsecutive(board[:i]+board[j:])
-            else:
+            __ j-i >= 3:
+                r_ self.removeConsecutive(board[:i]+board[j:])
+            ____
                 i = j
             j += 1
-        return board
+        r_ board
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "WRRBBW",
@@ -74,5 +74,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

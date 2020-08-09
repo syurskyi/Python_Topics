@@ -1,41 +1,41 @@
-from operator import mul
-from functools import reduce
+from operator ______ mul
+from functools ______ reduce
 
 
 class Palindromes:
     @classmethod
-    def smallest_palindrome(cls, max_factor, min_factor=0):
-        return min(cls.palindromes(max_factor, min_factor), key=lambda
+    ___ smallest_palindrome(cls, max_factor, min_factor=0
+        r_ min(cls.palindromes(max_factor, min_factor), key=lambda
                    item: item[0])
 
     @classmethod
-    def largest_palindrome(cls, max_factor, min_factor=0):
-        return max(cls.palindromes(max_factor, min_factor), key=lambda
+    ___ largest_palindrome(cls, max_factor, min_factor=0
+        r_ max(cls.palindromes(max_factor, min_factor), key=lambda
                    item: item[0])
 
     @classmethod
-    def palindromes(cls, max_factor, min_factor):
-        return [(cls.product(candidate), candidate) for candidate in
-                cls.candidates(max_factor, min_factor) if
+    ___ palindromes(cls, max_factor, min_factor
+        r_ [(cls.product(candidate), candidate) for candidate in
+                cls.candidates(max_factor, min_factor) __
                 cls.is_palindrome(cls.product(candidate))]
 
     @staticmethod
-    def candidates(max_factor, min_factor):
-        return [(i, j) for i in range(min_factor, max_factor + 1)
+    ___ candidates(max_factor, min_factor
+        r_ [(i, j) for i in range(min_factor, max_factor + 1)
                 for j in range(i, max_factor + 1)]
 
     @staticmethod
-    def product(s):
-        return reduce(mul, s, 1)
+    ___ product(s
+        r_ reduce(mul, s, 1)
 
     @staticmethod
-    def is_palindrome(num):
-        return str(num) == ''.join(reversed(str(num)))
+    ___ is_palindrome(num
+        r_ str(num) __ ''.join(reversed(str(num)))
 
 
-def smallest_palindrome(max_factor, min_factor=0):
-    return Palindromes.smallest_palindrome(max_factor, min_factor)
+___ smallest_palindrome(max_factor, min_factor=0
+    r_ Palindromes.smallest_palindrome(max_factor, min_factor)
 
 
-def largest_palindrome(max_factor, min_factor=0):
-    return Palindromes.largest_palindrome(max_factor, min_factor)
+___ largest_palindrome(max_factor, min_factor=0
+    r_ Palindromes.largest_palindrome(max_factor, min_factor)

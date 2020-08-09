@@ -27,26 +27,26 @@ Another possible answer is: "abcabcda"
 The same letters are at least distance 2 from each other.
 
 """
-from collections import defaultdict
-import heapq
+from collections ______ defaultdict
+______ heapq
 
 __author__ = 'Daniel'
 
 
-class Val(object):
-    def __init__(self, cnt, val):
+class Val(object
+    ___ __init__(self, cnt, val
         self.cnt = cnt
         self.val = val
 
-    def __cmp__(self, other):
-        if self.cnt == other.cnt:
-            return cmp(self.val, other.val)
+    ___ __cmp__(self, other
+        __ self.cnt __ other.cnt:
+            r_ cmp(self.val, other.val)
 
-        return -cmp(self.cnt, other.cnt)
+        r_ -cmp(self.cnt, other.cnt)
 
 
-class Solution(object):
-    def rearrangeString(self, s, k):
+class Solution(object
+    ___ rearrangeString(self, s, k
         """
         Greedy, largest first, fill k first
         O(lg(26) n)
@@ -54,34 +54,34 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-        if not s or k == 0: return s
+        __ not s or k __ 0: r_ s
 
         d = defaultdict(int)
         for c in s:
             d[c] += 1
 
         h = []
-        for char, cnt in d.items():
+        for char, cnt in d.items(
             heapq.heappush(h, Val(cnt, char))
 
         ret = []
-        while h:
+        w___ h:
             cur = []
-            for _ in xrange(k):
-                if not h:
-                    return "".join(ret) if len(ret) == len(s) else ""
+            for _ in xrange(k
+                __ not h:
+                    r_ "".join(ret) __ le.(ret) __ le.(s) else ""
 
                 e = heapq.heappop(h)
                 ret.append(e.val)
                 e.cnt -= 1
-                if e.cnt > 0:
+                __ e.cnt > 0:
                     cur.append(e)
 
             for e in cur:
                 heapq.heappush(h, e)
 
-        return "".join(ret)
+        r_ "".join(ret)
 
 
-if __name__ == "__main__":
-    assert Solution().rearrangeString("aabbccdd", 4) == "abcdabcd"
+__ __name__ __ "__main__":
+    assert Solution().rearrangeString("aabbccdd", 4) __ "abcdabcd"

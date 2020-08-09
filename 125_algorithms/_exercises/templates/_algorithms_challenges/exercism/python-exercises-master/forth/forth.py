@@ -1,6 +1,6 @@
-class StackUnderflowError(Exception):
+class StackUnderflowError(Exception
     pass
 
 
-def evaluate(input_data):
+___ evaluate(input_data
     pass

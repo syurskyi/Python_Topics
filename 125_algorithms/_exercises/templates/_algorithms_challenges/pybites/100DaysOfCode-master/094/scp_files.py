@@ -1,8 +1,8 @@
 #!python3
 #A simple script to pull a log file from a remote host
 
-import paramiko
-from scp import SCPClient
+______ paramiko
+from scp ______ SCPClient
 
 username = ''
 password = ''

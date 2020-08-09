@@ -3,8 +3,8 @@ Created on Oct 14, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def profitableSchemes(self, G, P, group, profit):
+class Solution(object
+    ___ profitableSchemes(self, G, P, group, profit
         """
         :type G: int
         :type P: int
@@ -14,13 +14,13 @@ class Solution(object):
         """
         dp = [[0]*(G+1) for _ in range(P+1)]
         dp[0][0] = 1
-        for p, g in zip(profit, group):
-            for i in range(P, -1, -1):
-                for j in range(G-g, -1, -1):
+        for p, g in zip(profit, group
+            for i in range(P, -1, -1
+                for j in range(G-g, -1, -1
                     dp[min(i+p, P)][j+g] += dp[i][j]
-        return sum(dp[P])%(10**9 + 7)
+        r_ sum(dp[P])%(10**9 + 7)
     
-    def profitableSchemes_DFS_TLE(self, G, P, group, profit):
+    ___ profitableSchemes_DFS_TLE(self, G, P, group, profit
         """
         :type G: int
         :type P: int
@@ -30,19 +30,19 @@ class Solution(object):
         """
         res = [0]
         self.dfs(0, group, profit, G, P, [], 0, res)
-        return res[0]
+        r_ res[0]
     
-    def dfs(self, ind, group, profit, G, P, curGroup, curProfit, res):
-        if curProfit >= P and sum(curGroup) <= G:
+    ___ dfs(self, ind, group, profit, G, P, curGroup, curProfit, res
+        __ curProfit >= P and sum(curGroup) <= G:
             res[0] += 1
-        for i in range(ind, len(group)):
+        for i in range(ind, le.(group)):
             curProfit += profit[i]
             curGroup.append(group[i])
             self.dfs(i+1, group, profit, G, P, curGroup, curProfit, res)
             curGroup.pop()
             curProfit -= profit[i]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 5, 3, [2,2], [2,3]
@@ -56,5 +56,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

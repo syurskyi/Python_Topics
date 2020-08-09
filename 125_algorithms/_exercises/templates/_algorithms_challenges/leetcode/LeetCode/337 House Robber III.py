@@ -25,46 +25,46 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def __init__(self):
+class Solution(object
+    ___ __init__(self
         self.cache_rob = {}
         self.cache_notrob = {}
 
-    def rob(self, root):
+    ___ rob(self, root
         """
         possible rob at root
         :type root: TreeNode
         :rtype: int
         """
-        if root is None:
-            return 0
+        __ root is None:
+            r_ 0
 
-        if root not in self.cache_rob:
+        __ root not in self.cache_rob:
             val = max(
                 self.notrob(root),
                 root.val + self.notrob(root.left) + self.notrob(root.right)
             )
             self.cache_rob[root] = val
 
-        return self.cache_rob[root]
+        r_ self.cache_rob[root]
 
-    def notrob(self, root):
+    ___ notrob(self, root
         """
         not rob at the root
         :param root: TreeNode
         :return: int
         """
-        if root is None:
-            return 0
+        __ root is None:
+            r_ 0
 
-        if root not in self.cache_notrob:
+        __ root not in self.cache_notrob:
             val = (
                 self.rob(root.left) +
                 self.rob(root.right)
@@ -72,36 +72,36 @@ class Solution(object):
 
             self.cache_notrob[root] = val
 
-        return self.cache_notrob[root]
+        r_ self.cache_notrob[root]
 
 
-class SolutionTLE(object):
-    def rob(self, root):
+class SolutionTLE(object
+    ___ rob(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
-        if root is None:
-            return 0
+        __ root is None:
+            r_ 0
 
-        return max(
+        r_ max(
             self.dorob(root),
             self.notrob(root)
         )
 
-    def dorob(self, root):
-        if root is None:
-            return 0
+    ___ dorob(self, root
+        __ root is None:
+            r_ 0
 
-        return (
+        r_ (
             root.val +
             self.notrob(root.left) +
             self.notrob(root.right)
         )
 
-    def notrob(self, root):
-        if root is None:
-            return 0
+    ___ notrob(self, root
+        __ root is None:
+            r_ 0
 
-        return (max(self.notrob(root.left), self.rob(root.left)) +
+        r_ (max(self.notrob(root.left), self.rob(root.left)) +
                     max(self.notrob(root.right), self.rob(root.right)))

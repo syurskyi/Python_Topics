@@ -4,22 +4,22 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def kSmallestPairs(self, nums1, nums2, k):
-        import heapq
+class Solution(object
+    ___ kSmallestPairs(self, nums1, nums2, k
+        ______ heapq
         heap = []
         for num1 in nums1:
             for num2 in nums2:
                 heapq.heappush(heap, (num1+num2, num1, num2))
         result = []
-        for _ in range(k):
-            if not heap:
+        for _ in range(k
+            __ not heap:
                 break
             _, num1, num2 = heapq.heappop(heap)
             result.append((num1, num2))
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 [1, 7, 11],
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

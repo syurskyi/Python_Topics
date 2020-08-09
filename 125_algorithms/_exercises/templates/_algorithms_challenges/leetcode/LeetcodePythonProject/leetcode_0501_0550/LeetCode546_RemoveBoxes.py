@@ -4,34 +4,34 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def removeBoxes(self, boxes):
+class Solution(object
+    ___ removeBoxes(self, boxes
         """
         :type boxes: List[int]
         :rtype: int
         """
-        if not boxes: return 0
-        n = len(boxes)
+        __ not boxes: r_ 0
+        n = le.(boxes)
         dp = [[[0]*n for _ in range(n)] for _ in range(n)]
-        return self.helper(dp, boxes, 0, n-1, 1)
+        r_ self.helper(dp, boxes, 0, n-1, 1)
     
-    def helper(self, dp, boxes, i, j, k):
-        if i > j:
-            return 0
-        elif i == j:
-            return k*k
-        elif dp[i][j][k] != 0:
-            return dp[i][j][k]
-        else:
+    ___ helper(self, dp, boxes, i, j, k
+        __ i > j:
+            r_ 0
+        ____ i __ j:
+            r_ k*k
+        ____ dp[i][j][k] != 0:
+            r_ dp[i][j][k]
+        ____
             tmp = self.helper(dp, boxes, i+1, j, 1) + k*k
-            for m in range(i+1, j+1):
-                if boxes[i] == boxes[m]:
+            for m in range(i+1, j+1
+                __ boxes[i] __ boxes[m]:
                     tmp = max(tmp, self.helper(dp, boxes, i+1, m-1, 1)+\
                               self.helper(dp, boxes, m, j, k+1))
             dp[i][j][k] = tmp
-            return tmp
+            r_ tmp
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 3, 2, 2, 2, 3, 4, 3, 1],
         ]
@@ -41,5 +41,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,5 +1,5 @@
 class Solution:
-    def isHappy(self, n):
+    ___ isHappy(self, n
         """
         :type n: int
         :rtype: bool
@@ -7,20 +7,20 @@ class Solution:
         slow = self.square_sum(n)
         fast = self.square_sum(slow)
 
-        while slow != fast:
+        w___ slow != fast:
             slow = self.square_sum(slow)
             fast = self.square_sum(
                 self.square_sum(fast)
             )
 
-        return True if slow == 1 else False
+        r_ True __ slow __ 1 else False
 
-    def square_sum(self, a):
+    ___ square_sum(self, a
         res = b = 0
 
-        while a != 0:
+        w___ a != 0:
             b = a % 10
             res += b * b
             a //= 10
 
-        return res
+        r_ res

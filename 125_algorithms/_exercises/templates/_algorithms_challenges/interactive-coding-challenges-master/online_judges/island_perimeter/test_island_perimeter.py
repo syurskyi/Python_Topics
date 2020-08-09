@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestIslandPerimeter(object):
+class TestIslandPerimeter(object
 
-    def test_island_perimeter(self):
+    ___ test_island_perimeter(self
         solution = Solution()
         assert_raises(TypeError, solution.island_perimeter, None)
         data = [[1, 0]]
@@ -18,10 +18,10 @@ class TestIslandPerimeter(object):
         print('Success: test_island_perimeter')
 
 
-def main():
+___ main(
     test = TestIslandPerimeter()
     test.test_island_perimeter()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

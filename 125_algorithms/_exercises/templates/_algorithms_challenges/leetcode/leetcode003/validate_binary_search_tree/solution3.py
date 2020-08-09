@@ -12,7 +12,7 @@ Both the left and right subtrees must also be binary search trees.
 
 # Definition for a  binary tree node
 # class TreeNode:
-#     def __init__(self, x):
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
@@ -20,20 +20,20 @@ Both the left and right subtrees must also be binary search trees.
 class Solution:
     # @param root, a tree node
     # @return a boolean
-    def isValidBST(self, root):
+    ___ isValidBST(self, root
         self.prev = None
-        return self.is_valid_bst_aux(root)
+        r_ self.is_valid_bst_aux(root)
 
-    def is_valid_bst_aux(self, root):
-        if root is None:
-            return True
-        else:
-            if not self.is_valid_bst_aux(root.left):
-                return False
-            if self.prev is not None:
-                if self.prev.val >= root.val:
-                    return False
+    ___ is_valid_bst_aux(self, root
+        __ root is None:
+            r_ True
+        ____
+            __ not self.is_valid_bst_aux(root.left
+                r_ False
+            __ self.prev is not None:
+                __ self.prev.val >= root.val:
+                    r_ False
             self.prev = root
-            if not self.is_valid_bst_aux(root.right):
-                return False
-            return True
+            __ not self.is_valid_bst_aux(root.right
+                r_ False
+            r_ True

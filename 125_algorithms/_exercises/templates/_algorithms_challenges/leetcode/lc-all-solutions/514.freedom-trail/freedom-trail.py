@@ -1,19 +1,19 @@
-import collections
+______ collections
 
 
-class Solution(object):
-  def findRotateSteps(self, ring, key):
+class Solution(object
+  ___ findRotateSteps(self, ring, key
     """
     :type ring: str
     :type key: str
     :rtype: int
     """
 
-    def dfs(ring, key, pointTo, d, length, cache):
-      if (pointTo, key) in cache:
-        return cache[pointTo, key]
-      if not key:
-        return 0
+    ___ dfs(ring, key, pointTo, d, length, cache
+      __ (pointTo, key) in cache:
+        r_ cache[pointTo, key]
+      __ not key:
+        r_ 0
       minDist = float("inf")
       toChar = key[0]
       for i in d[toChar]:
@@ -21,11 +21,11 @@ class Solution(object):
         cost += dfs(ring, key[1:], i, d, length, cache)
         minDist = min(minDist, cost)
       cache[pointTo, key] = minDist
-      return minDist
+      r_ minDist
 
     cache = {}
     d = collections.defaultdict(list)
-    for i, c in enumerate(ring):
+    for i, c in enumerate(ring
       d[c].append(i)
-    length = len(ring)
-    return dfs(ring, key, 0, d, length, cache)
+    length = le.(ring)
+    r_ dfs(ring, key, 0, d, length, cache)

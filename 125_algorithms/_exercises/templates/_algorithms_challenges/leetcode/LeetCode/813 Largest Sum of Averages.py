@@ -26,11 +26,11 @@ Note:
 1 <= K <= A.length.
 Answers within 10^-6 of the correct answer will be accepted as correct.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def largestSumOfAverages(self, A: List[int], K: int) -> float:
+    ___ largestSumOfAverages(self, A: List[int], K: int) -> float:
         """
         Memoized Backtracking + Prefix sum
         My first hunch is correct
@@ -39,30 +39,30 @@ class Solution:
 
         calculating each F[l, k] will need O(N) time, thus total O(n^2 k)
         """
-        n = len(A)
+        n = le.(A)
         prefix_sum = [0 for _ in range(n+1)]
-        for i in range(1, n+1):
+        for i in range(1, n+1
             prefix_sum[i] = prefix_sum[i-1] + A[i-1]
 
         F = {}
         self.dfs(A, n, prefix_sum, F, K)
-        return F[n, K]
+        r_ F[n, K]
 
-    def dfs(self, A, l, prefix_sum, F, k):
+    ___ dfs(self, A, l, prefix_sum, F, k
         """
         dfs search divide
         make A[:l] k groups
         """
-        if l < k:
-            return -float('inf')
+        __ l < k:
+            r_ -float('inf')
 
-        if (l, k) not in F:
-            if k == 1:
+        __ (l, k) not in F:
+            __ k __ 1:
                 ret = prefix_sum[l] / l
-            else:
-                n = len(A)
+            ____
+                n = le.(A)
                 ret = -float('inf')
-                for j in range(l-1, -1, -1):
+                for j in range(l-1, -1, -1
                     trail = (prefix_sum[l] - prefix_sum[j]) / (l - j)
                     ret = max(
                         ret,
@@ -71,9 +71,9 @@ class Solution:
 
             F[l, k] = ret
 
-        return F[l, k]
+        r_ F[l, k]
 
-    def dfs_error(self, A, i, prefix_sum, F, k):
+    ___ dfs_error(self, A, i, prefix_sum, F, k
         """
         inconvenient
 
@@ -81,19 +81,19 @@ class Solution:
         make A[:i] 1 group
         make A[i:] k - 1 group
         """
-        if (i, k) not in F:
+        __ (i, k) not in F:
             ret = 0
             avg = prefix_sum[i] / i
             ret += avg
             ret += max(
                 # error
                 self.dfs(A, j, prefix_sum, F, k - 1)
-                for j in range(i, len(A))
+                for j in range(i, le.(A))
             )
             F[i, k] = ret
 
-        return F[i, k]
+        r_ F[i, k]
 
 
-if __name__ == "__main__":
-    assert Solution().largestSumOfAverages([9,1,2,3,9], 3) == 20
+__ __name__ __ "__main__":
+    assert Solution().largestSumOfAverages([9,1,2,3,9], 3) __ 20

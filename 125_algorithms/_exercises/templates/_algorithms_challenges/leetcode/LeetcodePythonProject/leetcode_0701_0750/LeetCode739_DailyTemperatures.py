@@ -3,26 +3,26 @@ Created on Mar 14, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def dailyTemperatures(self, temperatures):
+class Solution(object
+    ___ dailyTemperatures(self, temperatures
         """
         :type temperatures: List[int]
         :rtype: List[int]
         """
         stack = []
         res = []
-        for i in range(len(temperatures)-1, -1, -1):
+        for i in range(le.(temperatures)-1, -1, -1
             t = temperatures[i]
-            while stack and temperatures[stack[-1]] <= t:
+            w___ stack and temperatures[stack[-1]] <= t:
                 stack.pop()
-            if not stack:
+            __ not stack:
                 res.insert(0, 0)
-            else:
+            ____
                 res.insert(0, stack[-1]-i)
             stack.append(i)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [73, 74, 75, 71, 69, 72, 76, 73],
         ]
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

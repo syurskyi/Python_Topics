@@ -7,21 +7,21 @@ Example2: x = -123, return -321
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def reverse(self, x):
+class Solution(object
+    ___ reverse(self, x
         """
         Sign for preserving negative number of positive number
         :param x: int
         :return: int
         """
-        sign = -1 if x < 0 else 1  # preserve the sign first
+        sign = -1 __ x < 0 else 1  # preserve the sign first
         x *= sign
 
         # eliminated leading zero in the reversed integer
-        while x:
-            if x%10 == 0:
+        w___ x:
+            __ x%10 __ 0:
                 x /= 10
-            else:
+            ____
                 break
 
         # string manipulation
@@ -30,9 +30,9 @@ class Solution(object):
         lst.reverse()
         x = "".join(lst)
         x = int(x)
-        return sign*x
+        r_ sign*x
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().reverse(123)
 

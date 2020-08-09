@@ -1,14 +1,14 @@
-import os
-import sys
-import time
+______ os
+______ sys
+______ time
 
-import feedparser
+______ feedparser
 
 cwd = os.getcwd()
 project_root = os.path.dirname(cwd)
 sys.path.append(project_root)
 
-from common.twitter_config import tweet_status
+from common.twitter_config ______ tweet_status
 
 DEFAULT_GOBACK_HOURS = 24
 NOW = time.localtime()
@@ -17,7 +17,7 @@ SEC_IN_HOUR = 60 * 60
 TWEET = 'New @lynda course: {} - {}'
 
 
-def get_tweets(grep):
+___ get_tweets(grep
     data = feedparser.parse(RSS)
     for item in data['entries']:
         url = item['id']
@@ -27,22 +27,22 @@ def get_tweets(grep):
         diff = abs(time.mktime(published) - time.mktime(NOW))
         diff_hours = int(diff / (SEC_IN_HOUR))
 
-        if diff_hours > DEFAULT_GOBACK_HOURS:
+        __ diff_hours > DEFAULT_GOBACK_HOURS:
             continue
 
-        if grep.lower() not in title.lower():
+        __ grep.lower() not in title.lower(
             continue
 
         yield TWEET.format(title.replace(grep, '#'+grep), url)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
 
-    if len(sys.argv) < 2:
+    __ le.(sys.argv) < 2:
         print('Usage: $ python {} <grep>'.format(sys.argv[0]))
         sys.exit(1)
 
     grep = sys.argv[1].title()
 
-    for tweet in get_tweets(grep):
+    for tweet in get_tweets(grep
         tweet_status(tweet)

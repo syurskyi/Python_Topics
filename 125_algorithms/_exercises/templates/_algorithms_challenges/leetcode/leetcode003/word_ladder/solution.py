@@ -19,8 +19,8 @@ All words have the same length.
 All words contain only lowercase alphabetic characters.
 """
 
-class Solution(object):
-    def ladderLength(self, beginWord, endWord, wordDict):
+class Solution(object
+    ___ ladderLength(self, beginWord, endWord, wordDict
         """
         :type beginWord: str
         :type endWord: str
@@ -32,27 +32,27 @@ class Solution(object):
         self.letters = map(chr, range(ord('a'), ord('z') + 1))
         self.word_dict = wordDict
         # Remove words that are same as beginWord
-        for word in set(wordDict):
-            if beginWord == word:
+        for word in set(wordDict
+            __ beginWord __ word:
                 wordDict.remove(beginWord)
         wordDict.add(endWord)
-        while queue:
+        w___ queue:
             cur = queue.pop(0)
-            if cur[0] == endWord:
-                return cur[1] + 1
-            for word in self.get_adjacent(cur[0]):
+            __ cur[0] __ endWord:
+                r_ cur[1] + 1
+            for word in self.get_adjacent(cur[0]
                 wordDict.remove(word)  # Mark as visited
                 queue.append((word, cur[1] + 1))
-        return 0
+        r_ 0
 
-    def get_adjacent(self, word1):
+    ___ get_adjacent(self, word1
         res = []
-        for i, e in enumerate(word1):
+        for i, e in enumerate(word1
             for letter in self.letters:
                 word = word1[:i] + letter + word1[i + 1:]
-                if word in self.word_dict:
+                __ word in self.word_dict:
                     res.append(word)
-        return res
+        r_ res
 
 
 s = Solution()

@@ -1,2 +1,2 @@
-def difference_max_min(lst):
-    return max(lst) - min(lst)
+___ difference_max_min(lst
+    r_ max(lst) - min(lst)

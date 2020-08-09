@@ -13,7 +13,7 @@ Testing:
 ...     ('abcdefghijklmnopqrstuvwxyz', 'bvqmjhgghjmqvbiqzjugthwmdv'),
 ...     ('drugtrafficking', 'eobamwpnlmhklrq'),
 ...     ('', ''),
-... ):
+...
 ...     res = encrypt(origin)
 ...     if res != encryption: print('L18', origin, res)
 ...     gotcha.append(res == encryption)
@@ -38,52 +38,52 @@ True
 """
 
 
-def encrypt(word):
-    if not word:
-        return ''
+___ encrypt(word
+    __ not word:
+        r_ ''
 
     a = ord('a')
     ans = [ord(c) for c in word]
     cumul = 1
 
-    for i in range(len(word)):
+    for i in range(le.(word)):
         cumul += ans[i]
         ans[i] = chr((cumul - a) % 26 + a)
 
-    return ''.join(ans)
+    r_ ''.join(ans)
 
 
-def decrypt(word):
-    if not word:
-        return ''
+___ decrypt(word
+    __ not word:
+        r_ ''
 
     a = ord('a')
     ans = [ord(c) for c in word]
 
-    for i in range(len(word) - 1, -1, -1):
-        if i == 0:
+    for i in range(le.(word) - 1, -1, -1
+        __ i __ 0:
             ans[i] = chr((ans[i] - 1 - a) % 26 + a)
-        else:
+        ____
             ans[i] = chr((ans[i] - ans[i - 1] - a) % 26 + a)
 
-    return ''.join(ans)
+    r_ ''.join(ans)
 
 
-def decrypt2(word):
-    if not word:
-        return ''
+___ decrypt2(word
+    __ not word:
+        r_ ''
 
     a = ord('a')
     ans = [ord(c) for c in word]
     cumul = 1
 
-    for i in range(len(word)):
+    for i in range(le.(word)):
         # substract the cumul sum
         ans[i] -= cumul
 
         # keep adding 26 to make ans[i] in [ord('a'), ord('z')]
         steps = (a - ans[i]) // 26
-        if (a - ans[i]) % 26:
+        __ (a - ans[i]) % 26:
             # (a - ans[i]) % 26 != 0
             # add 1 more
             steps += 1
@@ -93,4 +93,4 @@ def decrypt2(word):
         cumul += ans[i]
         ans[i] = chr(ans[i])
 
-    return ''.join(ans)
+    r_ ''.join(ans)

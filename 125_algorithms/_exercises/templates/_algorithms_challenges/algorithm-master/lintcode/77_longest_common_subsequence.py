@@ -4,14 +4,14 @@ class Solution:
     @param: B: A string
     @return: The length of longest common subsequence of A and B
     """
-    def longestCommonSubsequence(self, A, B):
+    ___ longestCommonSubsequence(self, A, B
         """
         remove the single line comment to print paths
         """
-        if not A or not B:
-            return 0
+        __ not A or not B:
+            r_ 0
 
-        m, n = len(A), len(B)
+        m, n = le.(A), le.(B)
 
         """
         `dp[i][j]` means the size of LCS, consisting of
@@ -24,10 +24,10 @@ class Solution:
         # pi = [[0] * (n + 1) for _ in range(m + 1)]
 
         prev = curr = 0
-        for i in range(1, m + 1):
+        for i in range(1, m + 1
             prev = curr
             curr = 1 - curr
-            for j in range(1, n + 1):
+            for j in range(1, n + 1
                 """
                 case 1: `A[i]` is not one of pairs
                 case 2: `B[j]` is not one of pairs
@@ -40,7 +40,7 @@ class Solution:
                 # else:
                 #     pi[i][j] = 2
 
-                if A[i - 1] == B[j - 1]:
+                __ A[i - 1] __ B[j - 1]:
                     dp[curr][j] = max(dp[curr][j], dp[prev][j - 1] + 1)
 
                     # if dp[curr][j] == dp[prev][j - 1] + 1:
@@ -49,7 +49,7 @@ class Solution:
         # path = [None] * dp[curr][n]
         # i, j, k = m, n, dp[curr][n] - 1
 
-        # while i > 0 and j > 0:
+        # w___ i > 0 and j > 0:
         #     if pi[i][j] == 1:
         #         i -= 1
         #     elif pi[i][j] == 2:
@@ -62,4 +62,4 @@ class Solution:
 
         # print(path)
 
-        return dp[curr][n]
+        r_ dp[curr][n]

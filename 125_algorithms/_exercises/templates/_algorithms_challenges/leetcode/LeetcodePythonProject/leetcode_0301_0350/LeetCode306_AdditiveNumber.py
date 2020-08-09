@@ -4,59 +4,59 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-class STreeNode(object):
-    def __init__(self, left, right, sumVal=0):
+class STreeNode(object
+    ___ __init__(self, left, right, sumVal=0
         self.start = left
         self.end = right
         self.sumVal = sumVal
         self.leftChild = None
         self.rightChild = None
 
-class NumArray(object):
-    def __init__(self, nums):
-        if not nums:
+class NumArray(object
+    ___ __init__(self, nums
+        __ not nums:
             self.root = None
-        else:
-            self.root = self.buildTree(nums, 0, len(nums)-1)
+        ____
+            self.root = self.buildTree(nums, 0, le.(nums)-1)
     
-    def buildTree(self, nums, i, j):
-        if not nums or i > j:
-            return None
-        if i == j:
-            return STreeNode(i, j, nums[i])
+    ___ buildTree(self, nums, i, j
+        __ not nums or i > j:
+            r_ None
+        __ i __ j:
+            r_ STreeNode(i, j, nums[i])
         curr = STreeNode(i, j)
         mid = i+(j-i)//2
         curr.leftChild = self.buildTree(nums, i, mid)
         curr.rightChild = self.buildTree(nums, mid+1, j)
         curr.sumVal = curr.leftChild.sumVal + curr.rightChild.sumVal
-        return curr
+        r_ curr
     
-    def update(self, i, val):
+    ___ update(self, i, val
         self.updateHelper(self.root, i, val)
     
-    def updateHelper(self, root, i, val):
-        if not root:
-            return
+    ___ updateHelper(self, root, i, val
+        __ not root:
+            r_
         mid = root.start+(root.end-root.start)//2
-        if i <= mid:
+        __ i <= mid:
             self.updateHelper(root.leftChild, i, val)
-        else:
+        ____
             self.updateHelper(root.rightChild, i, val)
-        if root.start == i and root.end == i:
+        __ root.start __ i and root.end __ i:
             root.sumVal = val
-            return
+            r_
         root.sumVal = root.leftChild.sumVal + root.rightChild.sumVal
     
-    def sumRange(self, i, j):
-        return self.sumRangeHelper(self.root, i, j)
+    ___ sumRange(self, i, j
+        r_ self.sumRangeHelper(self.root, i, j)
     
-    def sumRangeHelper(self, root, i, j):
-        if not root or i > j or j < root.start or i > root.end:
-            return 0
-        if i == root.start and j == root.end:
-            return root.sumVal
+    ___ sumRangeHelper(self, root, i, j
+        __ not root or i > j or j < root.start or i > root.end:
+            r_ 0
+        __ i __ root.start and j __ root.end:
+            r_ root.sumVal
         mid = root.start + (root.end-root.start)//2
         result = self.sumRangeHelper(root.leftChild, i, min(j, mid)) +\
             self.sumRangeHelper(root.rightChild, max(i, mid+1), j)
-        return result
+        r_ result
     

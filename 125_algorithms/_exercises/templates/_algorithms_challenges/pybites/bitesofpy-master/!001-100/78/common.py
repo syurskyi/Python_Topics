@@ -1,6 +1,6 @@
-from collections import Counter
+from collections ______ Counter
 
 
-def common_languages(programmers):
+___ common_languages(programmers
     languages = Counter(lang for _, langs in programmers.items() for lang in langs)
-    return list(lang for lang, count in languages.items() if count == len(programmers))
+    r_ list(lang for lang, count in languages.items() __ count __ le.(programmers))

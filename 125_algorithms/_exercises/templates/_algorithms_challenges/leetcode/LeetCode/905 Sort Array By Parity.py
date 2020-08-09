@@ -19,18 +19,18 @@ Note:
 1 <= A.length <= 5000
 0 <= A[i] <= 5000
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def sortArrayByParity(self, A: List[int]) -> List[int]:
+    ___ sortArrayByParity(self, A: List[int]) -> List[int]:
         """
         pointer
         """
         closed = -1
-        for i in range(len(A)):
-            if A[i] % 2 == 0:
+        for i in range(le.(A)):
+            __ A[i] % 2 __ 0:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]
 
-        return A
+        r_ A

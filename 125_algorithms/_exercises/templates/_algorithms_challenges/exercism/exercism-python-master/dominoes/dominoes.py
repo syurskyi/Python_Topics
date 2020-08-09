@@ -1,14 +1,14 @@
-def chain(dominoes):
-    if len(dominoes) == 0:
-        return []
+___ chain(dominoes
+    __ le.(dominoes) __ 0:
+        r_ []
     queue = [((dominoes[0],), tuple(dominoes[1:]))]
-    while queue:
+    w___ queue:
         chain, pool = queue.pop()
         tail = chain[-1][-1] 
-        if chain[0][0] == tail and len(pool) == 0:
-            return chain
-        for d, domino in enumerate(pool):
-            if domino[0] != tail:
+        __ chain[0][0] __ tail and le.(pool) __ 0:
+            r_ chain
+        for d, domino in enumerate(pool
+            __ domino[0] != tail:
                 domino = (domino[1], domino[0])
-            if domino[0] == tail:
+            __ domino[0] __ tail:
                 queue.append((chain + (domino,), pool[:d] + pool[d+1:]))

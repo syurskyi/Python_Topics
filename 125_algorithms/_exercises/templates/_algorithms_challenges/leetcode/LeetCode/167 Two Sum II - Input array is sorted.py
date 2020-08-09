@@ -4,23 +4,23 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def twoSum(self, numbers, target):
+class Solution(object
+    ___ twoSum(self, numbers, target
         """
         :type numbers: List[int]
         :type target: int
         :rtype: List[int]
         """
-        n = len(numbers)
+        n = le.(numbers)
         i = 0
         j = n-1
-        while i < j:
+        w___ i < j:
             s = numbers[i] + numbers[j]
-            if s == target:
-                return i+1, j+1
-            elif s < target:
+            __ s __ target:
+                r_ i+1, j+1
+            ____ s < target:
                 i += 1
-            else:
+            ____
                 j -= 1
 
-        return -1, -1
+        r_ -1, -1

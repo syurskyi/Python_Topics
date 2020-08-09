@@ -4,13 +4,13 @@ class Solution:
     @param b: The second string
     @return true or false
     """
-    def anagram(self, s, t):
-        if s == '' and t == '':
-            return True
-        if not s or not t:
-            return False
+    ___ anagram(self, s, t
+        __ s __ '' and t __ '':
+            r_ True
+        __ not s or not t:
+            r_ False
 
         s = sorted(s)
         t = sorted(t)
 
-        return s == t
+        r_ s __ t

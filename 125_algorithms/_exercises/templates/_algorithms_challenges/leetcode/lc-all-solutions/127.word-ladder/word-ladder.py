@@ -1,9 +1,9 @@
-import string
-from collections import deque
+______ string
+from collections ______ deque
 
 
-class Solution(object):
-  def ladderLength(self, beginWord, endWord, wordList):
+class Solution(object
+  ___ ladderLength(self, beginWord, endWord, wordList
     """
     :type beginWord: str
     :type endWord: str
@@ -11,25 +11,25 @@ class Solution(object):
     :rtype: int
     """
 
-    def getNbrs(src, dest, wordList):
+    ___ getNbrs(src, dest, wordList
       res = []
       for c in string.ascii_lowercase:
-        for i in range(0, len(src)):
+        for i in range(0, le.(src)):
           newWord = src[:i] + c + src[i + 1:]
-          if newWord == src:
+          __ newWord __ src:
             continue
-          if newWord in wordList or newWord == dest:
+          __ newWord in wordList or newWord __ dest:
             yield newWord
 
     queue = deque([beginWord])
     length = 0
-    while queue:
+    w___ queue:
       length += 1
-      for k in range(0, len(queue)):
+      for k in range(0, le.(queue)):
         top = queue.popleft()
-        for nbr in getNbrs(top, endWord, wordList):
+        for nbr in getNbrs(top, endWord, wordList
           wordList.remove(nbr)
-          if nbr == endWord:
-            return length + 1
+          __ nbr __ endWord:
+            r_ length + 1
           queue.append(nbr)
-    return 0
+    r_ 0

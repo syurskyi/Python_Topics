@@ -59,94 +59,94 @@ nbrs = {
 }
 
 
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def knightDialer(self, N: int) -> int:
+    ___ knightDialer(self, N: int) -> int:
         """
         DP
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
         """
         F = defaultdict(lambda: defaultdict(int))
-        for pos in range(10):
+        for pos in range(10
             F[pos][N-1] = 1
 
-        for n in range(N-2, -1, -1):
-            for pos in range(10):
+        for n in range(N-2, -1, -1
+            for pos in range(10
                 for nbr in nbrs[pos]:
                     F[pos][n] += F[nbr][n+1]
                     F[pos][n] %= MOD
 
         ret = 0
-        for i in range(10):
+        for i in range(10
             ret += F[i][0]
             ret %= MOD
 
-        return ret
+        r_ ret
 
 
 class SolutionTLE2:
-    def __init__(self):
+    ___ __init__(self
         self.cache = {}
 
-    def knightDialer(self, N: int) -> int:
+    ___ knightDialer(self, N: int) -> int:
         ret = 0
-        for i in range(10):
+        for i in range(10
             ret += self.dfs(i, N-1)
             ret %= MOD
 
-        return ret
+        r_ ret
 
-    def dfs(self, i, r):
-        if (i, r) not in self.cache:
+    ___ dfs(self, i, r
+        __ (i, r) not in self.cache:
             ret = 0
-            if r == 0:
+            __ r __ 0:
                 ret = 1
-            else:
+            ____
                 for nbr in nbrs[i]:
                     ret += self.dfs(nbr, r-1)
 
             self.cache[i, r] = ret
 
-        return self.cache[i, r]
+        r_ self.cache[i, r]
 
 
 class SolutionTLE:
-    def __init__(self):
+    ___ __init__(self
         # row, col size
         self.m = 4
         self.n = 3
         self.cache = {}
 
-    def knightDialer(self, N: int) -> int:
+    ___ knightDialer(self, N: int) -> int:
         ret = 0
-        for i in range(self.m):
-            for j in range(self.n):
-                if (i, j) != (3, 0) and (i, j) != (3, 2):
+        for i in range(self.m
+            for j in range(self.n
+                __ (i, j) != (3, 0) and (i, j) != (3, 2
                     ret += self.dfs(i, j, N-1)
                     ret %= MOD
-        return ret
+        r_ ret
 
-    def dfs(self, i, j, r):
-        if (i, j, r) not in self.cache:
+    ___ dfs(self, i, j, r
+        __ (i, j, r) not in self.cache:
             ret = 0
-            if r == 0:
+            __ r __ 0:
                 ret = 1
-            else:
+            ____
                 for di, dj in dirs:
                     I = i + di
                     J = j + dj
-                    if 0 <= I < self.m and 0 <= J < self.n and (I, J) != (3, 0) and (I, J) != (3, 2):
+                    __ 0 <= I < self.m and 0 <= J < self.n and (I, J) != (3, 0) and (I, J) != (3, 2
                         ret += self.dfs(I, J, r - 1)
                         ret %= MOD
 
             self.cache[i, j, r] = ret
 
-        return self.cache[i, j, r]
+        r_ self.cache[i, j, r]
 
 
-if __name__ == "__main__":
-    assert Solution().knightDialer(1) == 10
-    assert Solution().knightDialer(2) == 20
-    assert Solution().knightDialer(3) == 46
+__ __name__ __ "__main__":
+    assert Solution().knightDialer(1) __ 10
+    assert Solution().knightDialer(2) __ 20
+    assert Solution().knightDialer(3) __ 46

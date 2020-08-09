@@ -1,12 +1,12 @@
-def binary_search(search_list, value):
+___ binary_search(search_list, value
     low = 0
-    high = len(search_list) - 1
-    while low <= high:
+    high = le.(search_list) - 1
+    w___ low <= high:
         middle = (low + high) // 2
-        if search_list[middle] > value:
+        __ search_list[middle] > value:
             high = middle - 1
-        elif search_list[middle] < value:
+        ____ search_list[middle] < value:
             low = middle + 1
-        else:
-            return middle
+        ____
+            r_ middle
     raise ValueError("Value not found.")

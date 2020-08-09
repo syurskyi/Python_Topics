@@ -9,7 +9,7 @@ Could you do it without extra space and in O(n) runtime? You may assume the retu
 
 
 class Solution:
-    def findDisappearedNumbers(self, A):
+    ___ findDisappearedNumbers(self, A
         """
         You can use hash map with extra space O(n).
         To use without extra space, notice the additional constraints that:
@@ -19,19 +19,19 @@ class Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        for idx in range(len(A)):
-            while True:
+        for idx in range(le.(A)):
+            w___ True:
                 target = A[idx] - 1
-                if idx == target or A[idx] == A[target]:
+                __ idx __ target or A[idx] __ A[target]:
                     break 
                 A[idx], A[target] = A[target], A[idx]
 
         missing = []
-        for idx, elm in enumerate(A):
-            if idx != elm - 1:
+        for idx, elm in enumerate(A
+            __ idx != elm - 1:
                 missing.append(idx + 1)
-        return missing
+        r_ missing
 
 
-if __name__ == "__main__":
-    assert Solution().findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]) == [5, 6]
+__ __name__ __ "__main__":
+    assert Solution().findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]) __ [5, 6]

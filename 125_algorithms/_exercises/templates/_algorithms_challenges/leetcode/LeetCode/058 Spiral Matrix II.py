@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def generateMatrix(self, n):
+    ___ generateMatrix(self, n
         """
         algorithm: array, simulation
         :param n: Integer
@@ -28,18 +28,18 @@ class Solution:
 
         result = [[-1 for _ in xrange(n)] for _ in xrange(n)]
         num = 1
-        while left <= right and top <= bottom:
-            for i in xrange(left, right + 1):  # tuning ending condition, be greedy
+        w___ left <= right and top <= bottom:
+            for i in xrange(left, right + 1  # tuning ending condition, be greedy
                 result[top][i] = num
                 num += 1
-            for i in xrange(top + 1, bottom):
+            for i in xrange(top + 1, bottom
                 result[i][right] = num
                 num += 1
 
-            for i in xrange(right, left, -1):
+            for i in xrange(right, left, -1
                 result[bottom][i] = num
                 num += 1
-            for i in xrange(bottom, top, -1):
+            for i in xrange(bottom, top, -1
                 result[i][left] = num
                 num += 1
 
@@ -48,11 +48,11 @@ class Solution:
             top += 1
             bottom -= 1
 
-        return result
+        r_ result
 
 
 class SolutionError:
-    def generateMatrix(self, n):
+    ___ generateMatrix(self, n
         """
         algorithm: array, simulation
         :param n: Integer
@@ -65,19 +65,19 @@ class SolutionError:
 
         result = [[-1 for _ in xrange(n)] for _ in xrange(n)]
         num = 1
-        while left <= right and top <= bottom:
-            for i in xrange(left, right):  # tuning ending condition, this will fail in the middle
+        w___ left <= right and top <= bottom:
+            for i in xrange(left, right  # tuning ending condition, this will fail in the middle
                 result[top][i] = num
                 num += 1
-            for i in xrange(top, bottom):
+            for i in xrange(top, bottom
                 result[i][right] = num
                 num += 1
 
-            for i in xrange(right, left, -1):
+            for i in xrange(right, left, -1
                 result[bottom][i] = num
                 num += 1
 
-            for i in xrange(bottom, top, -1):
+            for i in xrange(bottom, top, -1
                 result[i][left] = num
                 num += 1
 
@@ -86,10 +86,10 @@ class SolutionError:
             top += 1
             bottom -= 1
 
-        return result
+        r_ result
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     result = Solution().generateMatrix(4)
     for row in result:
         print row

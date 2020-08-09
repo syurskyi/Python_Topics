@@ -1,12 +1,12 @@
-from datetime import timedelta
+from datetime ______ timedelta
 
-import pytest
+______ pytest
 
-from humanize_date import pretty_date, NOW
+from humanize_date ______ pretty_date, NOW
 
 
-def n_days_ago_str(days):
-    return (NOW - timedelta(days=days)).strftime('%m/%d/%y')
+___ n_days_ago_str(days
+    r_ (NOW - timedelta(days=days)).strftime('%m/%d/%y')
 
 
 @pytest.mark.parametrize("arg, expected", [
@@ -29,15 +29,15 @@ def n_days_ago_str(days):
     (NOW - timedelta(days=100), n_days_ago_str(100)),
     (NOW - timedelta(days=365), n_days_ago_str(365)),
 ])
-def test_pretty_date(arg, expected):
-    assert pretty_date(arg) == expected
+___ test_pretty_date(arg, expected
+    assert pretty_date(arg) __ expected
 
 
-def test_input_variable_of_wrong_type():
-    with pytest.raises(ValueError):
+___ test_input_variable_of_wrong_type(
+    with pytest.raises(ValueError
         pretty_date(123)
 
 
-def test_input_variable_future_date():
-    with pytest.raises(ValueError):
+___ test_input_variable_future_date(
+    with pytest.raises(ValueError
         pretty_date(NOW + timedelta(days=1))

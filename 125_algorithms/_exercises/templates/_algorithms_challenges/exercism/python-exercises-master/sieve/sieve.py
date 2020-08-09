@@ -1,2 +1,2 @@
-def sieve():
+___ sieve(
     pass

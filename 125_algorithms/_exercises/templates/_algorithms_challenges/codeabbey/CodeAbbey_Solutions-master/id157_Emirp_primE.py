@@ -3,27 +3,27 @@
 # It works, but takes a brute-force method that will only
 # work on realistic numbers (ie: not a quintillion)
 
-def find_answer(entry):
+___ find_answer(entry
     for emirp in semirp:
-        if emirp > entry:
-            return emirp
+        __ emirp > entry:
+            r_ emirp
 
-def gen_primes(limit=300000000):
+___ gen_primes(limit=300000000
     data = [int(input()) for x in range(int(input()))]
     primes, semirp, answer = [], [], []
     global semirp
 
     # Sieve of Eratosthenes
     sieve = [True] * (limit + 1)
-    for num in range(2, limit + 1):
-        if sieve[num]:
+    for num in range(2, limit + 1
+        __ sieve[num]:
            primes.append(num)
-           for i in range(num * num, limit + 1, num):
+           for i in range(num * num, limit + 1, num
                sieve[i] = False
 
     # Find reversable primes
     for prime in primes:
-        if int(str(prime)[::-1]) in primes:
+        __ int(str(prime)[::-1]) in primes:
             semirp.append(prime)
 
     # Find answer

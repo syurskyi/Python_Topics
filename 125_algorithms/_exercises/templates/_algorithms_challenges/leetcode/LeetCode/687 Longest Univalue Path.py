@@ -36,62 +36,62 @@ tree is not more than 1000.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.ret = 0
 
-    def longestUnivaluePath(self, root: TreeNode) -> int:
+    ___ longestUnivaluePath(self, root: TreeNode) -> int:
         self.find(root)
-        return self.ret
+        r_ self.ret
 
-    def find(self, node):
+    ___ find(self, node
         """
         the longest path ended at node
         """
-        if not node:
-            return 0
+        __ not node:
+            r_ 0
 
         left = self.find(node.left)
         right = self.find(node.right)
-        left_path = left + 1 if node.left and node.left.val == node.val else 0
-        right_path = right + 1 if node.right and node.right.val == node.val else 0
+        left_path = left + 1 __ node.left and node.left.val __ node.val else 0
+        right_path = right + 1 __ node.right and node.right.val __ node.val else 0
         self.ret = max(self.ret, left_path + right_path)
-        return max(left_path, right_path)
+        r_ max(left_path, right_path)
 
 
 class Solution_error:
-    def __init__(self):
+    ___ __init__(self
         self.ret = 0
 
-    def longestUnivaluePath(self, root: TreeNode) -> int:
+    ___ longestUnivaluePath(self, root: TreeNode) -> int:
         self.find(root)
-        return self.ret
+        r_ self.ret
 
-    def find(self, node):
+    ___ find(self, node
         """
         the longest path ended at node
         """
-        if not node:
-            return 0
+        __ not node:
+            r_ 0
 
         left = self.find(node.left)
         right = self.find(node.right)
         cur = 1  # node.val
         path = 1
-        if left and node.left.val == node.val:
+        __ left and node.left.val __ node.val:
             path += left
             cur = left + 1
 
-        if right and node.right.val == node.val:
+        __ right and node.right.val __ node.val:
             path += right
-            if right > left:
+            __ right > left:
                 cur = right + 1
 
         self.ret = max(self.ret, path - 1)
-        return cur
+        r_ cur

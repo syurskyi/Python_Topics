@@ -2,13 +2,13 @@
 # Score: 15
 
 
-def getMoneySpent(keyboards, drives, b):
+___ getMoneySpent(keyboards, drives, b
     result = -1
-    for i in range(1, len(keyboards)):
-        for j in range(1, len(drives)):
-            if result < keyboards[i] + drives[j] <= b:
+    for i in range(1, le.(keyboards)):
+        for j in range(1, le.(drives)):
+            __ result < keyboards[i] + drives[j] <= b:
                 result = keyboards[i] + drives[j]
-    return result
+    r_ result
 
 
 b, n, m = map(int, input().split())

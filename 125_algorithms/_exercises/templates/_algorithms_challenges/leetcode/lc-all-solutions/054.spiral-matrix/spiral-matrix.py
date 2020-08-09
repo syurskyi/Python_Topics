@@ -1,18 +1,18 @@
-class Solution(object):
-  def spiralOrder(self, matrix):
+class Solution(object
+  ___ spiralOrder(self, matrix
     """
     :type matrix: List[List[int]]
     :rtype: List[int]
     """
-    if len(matrix) == 0 or len(matrix[0]) == 0:
-      return []
+    __ le.(matrix) __ 0 or le.(matrix[0]) __ 0:
+      r_ []
     ans = []
-    left, up, down, right = 0, 0, len(matrix) - 1, len(matrix[0]) - 1
-    while left <= right and up <= down:
-      for i in range(left, right + 1):
+    left, up, down, right = 0, 0, le.(matrix) - 1, le.(matrix[0]) - 1
+    w___ left <= right and up <= down:
+      for i in range(left, right + 1
         ans += matrix[up][i],
       up += 1
-      for i in range(up, down + 1):
+      for i in range(up, down + 1
         ans += matrix[i][right],
       right -= 1
       for i in reversed(range(left, right + 1)):
@@ -21,4 +21,4 @@ class Solution(object):
       for i in reversed(range(up, down + 1)):
         ans += matrix[i][left],
       left += 1
-    return ans[:(len(matrix) * len(matrix[0]))]
+    r_ ans[:(le.(matrix) * le.(matrix[0]))]

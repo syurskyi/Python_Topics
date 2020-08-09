@@ -1,8 +1,8 @@
-from collections import Counter
+from collections ______ Counter
 
 
-class Solution(object):
-  def findContentChildren(self, children, cookies):
+class Solution(object
+  ___ findContentChildren(self, children, cookies
     """
     :type g: List[int]
     :type s: List[int]
@@ -12,8 +12,8 @@ class Solution(object):
     children.sort()
     i = 0
     for cookie in cookies:
-      if i >= len(children):
+      __ i >= le.(children
         break
-      if children[i] <= cookie:
+      __ children[i] <= cookie:
         i += 1
-    return i
+    r_ i

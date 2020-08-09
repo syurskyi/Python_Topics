@@ -18,8 +18,8 @@ the h-index.
 """
 
 
-class Solution(object):
-    def hIndex(self, citations):
+class Solution(object
+    ___ hIndex(self, citations
         """
         :type citations: List[int]
         :rtype: int
@@ -28,14 +28,14 @@ class Solution(object):
         count = 0
         lowest = 0
         h = 0
-        for i, c in enumerate(citations):
+        for i, c in enumerate(citations
             lowest = c
             count = i + 1
-            if lowest >= count:
+            __ lowest >= count:
                 h = count
-            else:
+            ____
                 break
-        return h
+        r_ h
 
 
 a1 = [3, 0, 6, 1, 5]

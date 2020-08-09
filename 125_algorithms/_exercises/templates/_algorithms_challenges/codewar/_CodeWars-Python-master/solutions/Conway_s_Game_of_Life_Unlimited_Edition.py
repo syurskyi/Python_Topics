@@ -3,66 +3,66 @@ Conway's Game of Life - Unlimited Edition
 http://www.codewars.com/kata/52423db9add6f6fc39000354/train/python
 """
 
-from copy import deepcopy
+from copy ______ deepcopy
 
 
-def get_generation(cells, generations):
+___ get_generation(cells, generations
     origin = deepcopy(cells)
-    if generations == 0:
-        return origin
-    if generations > 1:
+    __ generations __ 0:
+        r_ origin
+    __ generations > 1:
         origin = get_generation(origin, generations - 1)
 
     for row in origin:
         row.insert(0, 0)
         row.append(0)
-    origin.insert(0, [0] * len(origin[0]))
-    origin.append([0] * len(origin[0]))
+    origin.insert(0, [0] * le.(origin[0]))
+    origin.append([0] * le.(origin[0]))
 
     result = deepcopy(origin)
-    for r in range(len(origin)):
-        for c in range(len(origin[0])):
+    for r in range(le.(origin)):
+        for c in range(le.(origin[0])):
             neighbours = get_living_neighbours(origin, r, c)
-            if neighbours > 3 or neighbours < 2:
+            __ neighbours > 3 or neighbours < 2:
                 result[r][c] = 0
-            elif neighbours == 3:
+            ____ neighbours __ 3:
                 result[r][c] = 1
 
     trim_result(result)
 
-    return result
+    r_ result
 
 
-def trim_result(result):
-    while is_row_all_empty(result[0]):
+___ trim_result(result
+    w___ is_row_all_empty(result[0]
         result.pop(0)
-    while is_row_all_empty(result[-1]):
+    w___ is_row_all_empty(result[-1]
         result.pop()
     start_empty, end_empty = True, True
-    while start_empty or end_empty:
+    w___ start_empty or end_empty:
         for r in result:
-            if r[0] != 0:
+            __ r[0] != 0:
                 start_empty = False
-            if r[-1] != 0:
+            __ r[-1] != 0:
                 end_empty = False
         for r in result:
-            if start_empty:
+            __ start_empty:
                 r.pop(0)
-            if end_empty:
+            __ end_empty:
                 r.pop()
 
 
-def is_row_all_empty(row):
-    return sum(row) == 0
+___ is_row_all_empty(row
+    r_ sum(row) __ 0
 
 
-def get_living_neighbours(cells, row, col):
+___ get_living_neighbours(cells, row, col
     livings = 0
     for r in [-1, 0, 1]:
-        if 0 <= row + r <= len(cells) - 1:
+        __ 0 <= row + r <= le.(cells) - 1:
             for c in [-1, 0, 1]:
-                if 0 <= col + c <= len(cells[0]) - 1:
-                    if c == 0 and r == 0:
+                __ 0 <= col + c <= le.(cells[0]) - 1:
+                    __ c __ 0 and r __ 0:
                         continue
                     livings += cells[row + r][col + c]
-    return livings
+    r_ livings

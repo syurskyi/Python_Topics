@@ -1,2 +1,2 @@
-def poker():
+___ poker(
     pass

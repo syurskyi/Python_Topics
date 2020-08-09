@@ -3,26 +3,26 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findErrorNums(self, nums):
+class Solution(object
+    ___ findErrorNums(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
         hashset = set()
-        n = len(nums)
+        n = le.(nums)
         sumVal = n*(n+1)//2
         res = []
         for num in nums:
-            if num not in hashset:
+            __ num not in hashset:
                 hashset.add(num)
                 sumVal -= num
-            else:
+            ____
                 res.append(num)
         res.append(sumVal)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 2, 4],
         ]
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

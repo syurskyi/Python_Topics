@@ -15,8 +15,8 @@ The number of ways decoding "12" is 2.
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def numDecodings(self, s):
+class Solution(object
+    ___ numDecodings(self, s
         """
         F
         Let F[i] be the number of decode ways for s[:i]
@@ -29,32 +29,32 @@ class Solution(object):
         :param s: a string
         :return: an integer
         """
-        if s.startswith("0"):
-            return 0
+        __ s.startswith("0"
+            r_ 0
 
-        n = len(s)
-        if not s:
-            return 0
+        n = le.(s)
+        __ not s:
+            r_ 0
         F = [0 for _ in xrange(n+1)]
         F[0] = 1
         F[1] = 1
 
-        for i in xrange(2, n+1):
-            if s[i-1] != "0":
+        for i in xrange(2, n+1
+            __ s[i-1] != "0":
                 F[i] = F[i-1]
-                if 10 <= int(s[i-2]+s[i-1]) < 27:
+                __ 10 <= int(s[i-2]+s[i-1]) < 27:
                     F[i] += F[i-2]
-            else:  # 0 is special
-                if s[i-2] in ("1", "2"):
+            ____  # 0 is special
+                __ s[i-2] in ("1", "2"
                     F[i] = F[i-2]
-                else:
-                    return 0
+                ____
+                    r_ 0
 
-        return F[-1]
+        r_ F[-1]
 
 
-if __name__ == "__main__":
-    assert Solution().numDecodings("10") == 1
-    assert Solution().numDecodings("27") == 1
-    assert Solution().numDecodings("12") == 2
-    assert Solution().numDecodings("0") == 0
+__ __name__ __ "__main__":
+    assert Solution().numDecodings("10") __ 1
+    assert Solution().numDecodings("27") __ 1
+    assert Solution().numDecodings("12") __ 2
+    assert Solution().numDecodings("0") __ 0

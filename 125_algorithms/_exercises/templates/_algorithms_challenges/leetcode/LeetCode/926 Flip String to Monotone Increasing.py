@@ -35,28 +35,28 @@ S only consists of '0' and '1' characters.
 
 
 class Solution:
-    def minFlipsMonoIncr(self, S: str) -> int:
+    ___ minFlipsMonoIncr(self, S: str) -> int:
         """
         let S[i] be the flipping point, leftside 0, rightside 1
         count number of 1 from the left,
         count number of 0 from the right
         O(N)
         """
-        n = len(S)
+        n = le.(S)
         Z = [0 for _ in range(n+1)]  # let Z[i] be #zero in A[i:]
         O = [0 for _ in range(n+1)]  # let O[i] be #one in A[:i]
-        for i in range(1, n+1):
+        for i in range(1, n+1
             O[i] = O[i-1]
-            if S[i-1] == "1":
+            __ S[i-1] __ "1":
                 O[i] += 1
 
-        for i in range(n-1, -1, -1):
+        for i in range(n-1, -1, -1
             Z[i] = Z[i+1]
-            if S[i] == "0":
+            __ S[i] __ "0":
                 Z[i] += 1
 
         ret = float('inf')
-        for i in range(n):
+        for i in range(n
             ret = min(ret, O[i] + Z[i+1])
 
-        return ret
+        r_ ret

@@ -1,25 +1,25 @@
-def get_checksum(values):
+___ get_checksum(values
     limit = 10000007
     result = 0
     seed = 113
 
     for i in values:
         result = (result + i) * seed
-        if(result > limit):
+        __(result > limit
             result = result % limit
 
-    return result
+    r_ result
 
-def get_swap_number(array):
+___ get_swap_number(array
 
     swapped = 0
 
-    n = len(array)
-    for i in range(n-1):
-        if(array[i] > array[i+1]):
+    n = le.(array)
+    for i in range(n-1
+        __(array[i] > array[i+1]
             swapped += 1
             array[i], array[i+1] = array[i+1], array[i]
-    return swapped
+    r_ swapped
 
 array = list(map(int, input().split()))[:-1]
 

@@ -1,10 +1,10 @@
-from functools import wraps
+from functools ______ wraps
 
 UPPER_SLICE = "=== Upper bread slice ==="
 LOWER_SLICE = "=== Lower bread slice ==="
 
 
-def sandwich(func):
+___ sandwich(func
     """Write a decorator that prints UPPER_SLICE and
        LOWER_SLICE before and after calling the function (func)
        that is passed in  (@wraps is to preserve the original
@@ -12,9 +12,9 @@ def sandwich(func):
     """
 
     @wraps(func)
-    def wrapped(*args, **kwargs):
+    ___ wrapped(*args, **kwargs
         print(UPPER_SLICE)
         func(*args, **kwargs)
         print(LOWER_SLICE)
 
-    return wrapped
+    r_ wrapped

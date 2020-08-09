@@ -16,11 +16,11 @@ Note:
 Then length of the input array is in range [1, 10,000].
 The input array may contain duplicates, so ascending order here means <=.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def findUnsortedSubarray(self, nums: List[int]) -> int:
+    ___ findUnsortedSubarray(self, nums: List[int]) -> int:
         """
         Sorted at both ends
         Then search for the two ends by nums[i+1] > nums[i] on the left side
@@ -31,46 +31,46 @@ class Solution:
 
         nums[lo - 1] <= min && max <= nums[hi + 1]
         """
-        n = len(nums)
+        n = le.(nums)
         lo, hi = 0, n - 1
-        while lo < hi and nums[lo] <= nums[lo + 1]:
+        w___ lo < hi and nums[lo] <= nums[lo + 1]:
             lo += 1
 
-        while lo < hi and nums[hi - 1] <= nums[hi]:
+        w___ lo < hi and nums[hi - 1] <= nums[hi]:
             hi -= 1
 
-        if hi <= lo:
-            return 0
+        __ hi <= lo:
+            r_ 0
 
         mini = float('inf')
         maxa = -float('inf')
-        for i in range(lo, hi + 1):
+        for i in range(lo, hi + 1
             mini = min(mini, nums[i])
             maxa = max(maxa, nums[i])
 
-        while lo - 1 >= 0 and nums[lo - 1] > mini:
+        w___ lo - 1 >= 0 and nums[lo - 1] > mini:
             lo -= 1
-        while hi + 1 < n and nums[hi + 1] < maxa:
+        w___ hi + 1 < n and nums[hi + 1] < maxa:
             hi += 1
 
-        return hi - lo + 1
+        r_ hi - lo + 1
 
-    def findUnsortedSubarray_sort(self, nums: List[int]) -> int:
+    ___ findUnsortedSubarray_sort(self, nums: List[int]) -> int:
         """
         Brute force sort and compare O(n lgn)
         """
         expected = list(sorted(nums))
         i = 0
-        while i < len(nums) and nums[i] == expected[i]:
+        w___ i < le.(nums) and nums[i] __ expected[i]:
             i += 1
 
-        j = len(nums) - 1
-        while j >= i and nums[j] == expected[j]:
+        j = le.(nums) - 1
+        w___ j >= i and nums[j] __ expected[j]:
             j -= 1
 
-        return j - i + 1
+        r_ j - i + 1
 
 
-if __name__ == "__main__":
-    assert Solution().findUnsortedSubarray([2, 1]) == 2
-    assert Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]) == 5
+__ __name__ __ "__main__":
+    assert Solution().findUnsortedSubarray([2, 1]) __ 2
+    assert Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]) __ 5

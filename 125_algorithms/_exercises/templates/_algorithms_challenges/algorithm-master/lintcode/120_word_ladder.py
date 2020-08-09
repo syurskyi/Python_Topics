@@ -9,53 +9,53 @@ Test Case:
 
 
 class Solution:
-    def ladderLength(self, s, e, D):
+    ___ ladderLength(self, s, e, D
         """
         :type s: str
         :type e: str
         :type D: List[str]
         :rtype: int
         """
-        if (not s or not e or
-            len(s) != len(e) or not D):
-            return 0
-        if s == e:
-            return 1
+        __ (not s or not e or
+            le.(s) != le.(e) or not D
+            r_ 0
+        __ s __ e:
+            r_ 1
 
-        if s not in D:
+        __ s not in D:
             D.append(s)
-        if e not in D:
+        __ e not in D:
             D.append(e)
 
-        n = len(s)
+        n = le.(s)
         next_words = [None] * n
-        for i in range(n):
+        for i in range(n
             next_words[i] = _words = {}
             for word in D:
                 key = word[:i] + word[i + 1:]
-                if key not in _words:
+                __ key not in _words:
                     _words[key] = set()
                 _words[key].add(word)
 
         queue = [e]
         distance = {e: 1}
         for word in queue:
-            for _word in self.get_next_word(word, next_words):
-                if _word in distance:
+            for _word in self.get_next_word(word, next_words
+                __ _word in distance:
                     continue
                 distance[_word] = distance[word] + 1
-                if _word == s:
-                    return distance[_word]
+                __ _word __ s:
+                    r_ distance[_word]
                 queue.append(_word)
 
-        return 0
+        r_ 0
 
-    def get_next_word(self, word, next_words):
-        for i in range(len(word)):
+    ___ get_next_word(self, word, next_words
+        for i in range(le.(word)):
             key = word[:i] + word[i + 1:]
-            if key not in next_words[i]:
+            __ key not in next_words[i]:
                 continue
             for _word in next_words[i][key]:
-                if _word == word:
+                __ _word __ word:
                     continue
                 yield _word

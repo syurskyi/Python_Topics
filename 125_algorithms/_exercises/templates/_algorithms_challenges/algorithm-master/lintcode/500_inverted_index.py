@@ -1,23 +1,23 @@
 '''
 Definition of Document
 class Document:
-    def __init__(self, id, cotent):
+    ___ __init__(self, id, cotent
         self.id = id
         self.content = content
 '''
 class Solution:
     # @param {Document[]} docs a list of documents
     # @return {dict(string, int[])} an inverted index
-    def invertedIndex(self, docs):
-        if not docs or len(docs) < 1:
-            return {}
+    ___ invertedIndex(self, docs
+        __ not docs or le.(docs) < 1:
+            r_ {}
         result = {}
         for doc in docs:
-            if not doc.content:
+            __ not doc.content:
                 continue
-            for word in doc.content.split():
-                if word not in result:
+            for word in doc.content.split(
+                __ word not in result:
                     result[word] = []
-                if doc.id not in result[word]:
+                __ doc.id not in result[word]:
                     result[word].append(doc.id)
-        return result
+        r_ result

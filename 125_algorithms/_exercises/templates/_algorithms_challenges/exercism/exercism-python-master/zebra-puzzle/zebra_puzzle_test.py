@@ -1,14 +1,14 @@
-import unittest
+______ unittest
 
-from zebra_puzzle import solution
+from zebra_puzzle ______ solution
 
 
-class ZebraPuzzleTest(unittest.TestCase):
-    def test_solution(self):
+class ZebraPuzzleTest(unittest.TestCase
+    ___ test_solution(self
         self.assertEqual(("It is the Norwegian who drinks the water.\n"
                           "The Japanese keeps the zebra."),
                          solution())
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

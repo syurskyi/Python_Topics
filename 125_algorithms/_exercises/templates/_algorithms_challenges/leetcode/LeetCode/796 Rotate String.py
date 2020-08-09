@@ -21,21 +21,21 @@ A and B will have length at most 100.
 
 
 class Solution:
-    def rotateString(self, A: str, B: str) -> bool:
+    ___ rotateString(self, A: str, B: str) -> bool:
         """
         brute force O(n^2), shift and compare but short circuit
         """
-        if len(A) != len(B):
-            return False
+        __ le.(A) != le.(B
+            r_ False
 
-        if not A and not B:
-            return True
+        __ not A and not B:
+            r_ True
 
-        for i in range(1, len(A)):
-            for j in range(len(B)):
-                if A[(i + j) % len(A)] != B[j]:
+        for i in range(1, le.(A)):
+            for j in range(le.(B)):
+                __ A[(i + j) % le.(A)] != B[j]:
                     break
-            else:
-                return True
+            ____
+                r_ True
 
-        return False
+        r_ False

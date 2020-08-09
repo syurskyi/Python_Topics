@@ -1,14 +1,14 @@
-def retrieve_major(semver):
+___ retrieve_major(semver
     a = semver.split(".")
-    return a[0]
+    r_ a[0]
 
 
 
-def retrieve_minor(semver):
+___ retrieve_minor(semver
     a = semver.split(".")
-    return a[1]
+    r_ a[1]
 
 
-def retrieve_patch(semver):
+___ retrieve_patch(semver
     a = semver.split(".")
-    return a[2]
+    r_ a[2]

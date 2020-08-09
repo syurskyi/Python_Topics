@@ -1,5 +1,5 @@
 class Solution:
-    def getNumberOfWays(self, n, m, limit, cost):
+    ___ getNumberOfWays(self, n, m, limit, cost
         """
         :type n: int
         :type m: int
@@ -14,11 +14,11 @@ class Solution:
         dp = [[0] * (m + 1) for _ in range(n + 1)]
         dp[0][m] = 1
 
-        for i in range(1, n + 1):
-            for j in range(m + 1):
-                for k in range(max(0, i - limit), i):
-                    if j + cost[i] > m:
+        for i in range(1, n + 1
+            for j in range(m + 1
+                for k in range(max(0, i - limit), i
+                    __ j + cost[i] > m:
                         continue
                     dp[i][j] += dp[k][j + cost[i]]
 
-        return sum(dp[n])
+        r_ sum(dp[n])

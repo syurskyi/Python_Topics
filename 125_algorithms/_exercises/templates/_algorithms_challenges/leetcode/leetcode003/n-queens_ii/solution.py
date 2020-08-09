@@ -1,26 +1,26 @@
 class Solution:
     # @return an integer
-    def totalNQueens(self, n):
+    ___ totalNQueens(self, n
         self.res = 0
         self.n = n
         columns = [-1 for i in range(n)]
         self.solve(columns, 0)
-        return self.res
+        r_ self.res
 
-    def is_valid(self, columns, row, col):
-        for r in range(row):
+    ___ is_valid(self, columns, row, col
+        for r in range(row
             c = columns[r]
-            if c == col:
-                return False
-            if abs(c - col) == row - r:
-                return False
-        return True
+            __ c __ col:
+                r_ False
+            __ abs(c - col) __ row - r:
+                r_ False
+        r_ True
 
-    def solve(self, columns, row):
-        if row == self.n:
+    ___ solve(self, columns, row
+        __ row __ self.n:
             self.res += 1
-        else:
-            for col in range(self.n):
-                if self.is_valid(columns, row, col):
+        ____
+            for col in range(self.n
+                __ self.is_valid(columns, row, col
                     columns[row] = col
                     self.solve(columns, row + 1)

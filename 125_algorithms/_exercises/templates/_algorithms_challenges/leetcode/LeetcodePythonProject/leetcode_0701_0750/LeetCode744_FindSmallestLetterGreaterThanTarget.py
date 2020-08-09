@@ -3,23 +3,23 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def nextGreatestLetter(self, letters, target):
+class Solution(object
+    ___ nextGreatestLetter(self, letters, target
         """
         :type letters: List[str]
         :type target: str
         :rtype: str
         """
-        l, r = 0, len(letters)
-        while l < r:
+        l, r = 0, le.(letters)
+        w___ l < r:
             mid = (l+r)//2
-            if target >= letters[mid]:
+            __ target >= letters[mid]:
                 l = mid+1
-            else:
+            ____
                 r = mid
-        return letters[l] if l < len(letters) else letters[0]
+        r_ letters[l] __ l < le.(letters) else letters[0]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["c", "f", "j"],
@@ -43,5 +43,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

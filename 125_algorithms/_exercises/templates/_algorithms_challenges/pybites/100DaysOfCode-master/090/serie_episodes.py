@@ -1,8 +1,8 @@
-import os
-from pprint import pprint as pp
-import sys
+______ os
+from pprint ______ pprint as pp
+______ sys
 
-import tvdbsimple as tvdb
+______ tvdbsimple as tvdb
 
 api_key = os.environ.get('TVDB_APIKEY') or sys.exit('set api key in env')
 tvdb.KEYS.API_KEY = api_key

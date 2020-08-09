@@ -1,6 +1,6 @@
-from collections import Counter
+from collections ______ Counter
 
-import requests
+______ requests
 
 CAR_DATA = 'https://bit.ly/2Ov65SJ'
 
@@ -11,13 +11,13 @@ with requests.Session() as s:
 
 
 # your turn:
-def most_prolific_automaker(year):
+___ most_prolific_automaker(year
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
-    return ((Counter([x['automaker'] for x in data if x['year'] == year]).most_common(1))[0])[0]
+    r_ ((Counter([x['automaker'] for x in data __ x['year'] __ year]).most_common(1))[0])[0]
 
 
-def get_models(automaker, year):
+___ get_models(automaker, year
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
-    return {x['model'] for x in data if x['automaker'] == automaker and x['year'] == year}
+    r_ {x['model'] for x in data __ x['automaker'] __ automaker and x['year'] __ year}

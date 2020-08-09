@@ -7,7 +7,7 @@ MIN_INT = -2147483648
 
 
 class Solution:
-    def divide(self, dividend, divisor):
+    ___ divide(self, dividend, divisor
         """
         O(n lgn)
         use concept of binary
@@ -17,30 +17,30 @@ class Solution:
         :return: integer
         """
         # exceptions
-        if divisor == 0 or dividend == 0:
-            return 0
+        __ divisor __ 0 or dividend __ 0:
+            r_ 0
 
-        if dividend == MIN_INT and divisor == -1:
-            return MAX_INT
+        __ dividend __ MIN_INT and divisor __ -1:
+            r_ MAX_INT
 
         # handle signs
-        sign = 1 if dividend >= 0 and divisor >= 0 or dividend < 0 and divisor < 0 else -1
+        sign = 1 __ dividend >= 0 and divisor >= 0 or dividend < 0 and divisor < 0 else -1
         dividend = abs(dividend)
         divisor = abs(divisor)
 
         result = 0
-        while dividend >= divisor:
+        w___ dividend >= divisor:
             current_result = 1
             current = divisor  # write inner loop first
-            while current <= dividend:
+            w___ current <= dividend:
                 current <<= 1
                 current_result <<= 1
 
             dividend -= current>>1
             result += current_result>>1
 
-        return sign*result
+        r_ sign*result
 
 
-if __name__ == "__main__":
-    assert Solution().divide(5, -1) == -5
+__ __name__ __ "__main__":
+    assert Solution().divide(5, -1) __ -5

@@ -24,8 +24,8 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def removeKdigits(self, num, k):
+class Solution(object
+    ___ removeKdigits(self, num, k
         """
         Stack and greedy.
         The leading digits should be as small as possible
@@ -35,12 +35,12 @@ class Solution(object):
         """
         stk = []  # result after removal
         for char in num:
-            while k and stk and stk[-1] > char:
+            w___ k and stk and stk[-1] > char:
                 stk.pop()
                 k -= 1
 
             stk.append(char)
 
-        for _ in xrange(k): stk.pop()
+        for _ in xrange(k stk.pop()
 
-        return ''.join(stk).lstrip('0') or '0'
+        r_ ''.join(stk).lstrip('0') or '0'

@@ -1,5 +1,5 @@
-class Solution(object):
-  def fourSumCount(self, A, B, C, D):
+class Solution(object
+  ___ fourSumCount(self, A, B, C, D
     """
     :type A: List[int]
     :type B: List[int]
@@ -9,15 +9,15 @@ class Solution(object):
     """
     ans = 0
     abDict = {}
-    for i in range(len(A)):
-      for j in range(len(B)):
-        if A[i] + B[j] not in abDict:
+    for i in range(le.(A)):
+      for j in range(le.(B)):
+        __ A[i] + B[j] not in abDict:
           abDict[A[i] + B[j]] = 1
-        else:
+        ____
           abDict[A[i] + B[j]] += 1
 
-    for i in range(len(C)):
-      for j in range(len(D)):
-        if -C[i] - D[j] in abDict:
+    for i in range(le.(C)):
+      for j in range(le.(D)):
+        __ -C[i] - D[j] in abDict:
           ans += abDict[-C[i] - D[j]]
-    return ans
+    r_ ans

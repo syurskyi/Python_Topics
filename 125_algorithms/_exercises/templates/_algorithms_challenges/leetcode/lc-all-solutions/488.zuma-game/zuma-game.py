@@ -1,64 +1,64 @@
-class Solution(object):
-  def findMinStep(self, board, hand):
+class Solution(object
+  ___ findMinStep(self, board, hand
     """
     :type board: str
     :type hand: str
     :rtype: int
     """
 
-    def dfs(line, balls, visited):
+    ___ dfs(line, balls, visited
       line = reduceLine(line)
-      if (line, balls) in visited:
-        return visited[line, balls]
-      if len(line) == 0:
-        return len(hand) - len(balls)
-      if len(balls) == 0:
-        return float("inf")
+      __ (line, balls) in visited:
+        r_ visited[line, balls]
+      __ le.(line) __ 0:
+        r_ le.(hand) - le.(balls)
+      __ le.(balls) __ 0:
+        r_ float("inf")
       res = float("inf")
-      for i in range(len(balls)):
-        for j in range(len(line) + 1):
-          if j == 0 and line[0] != balls[i]:
+      for i in range(le.(balls)):
+        for j in range(le.(line) + 1
+          __ j __ 0 and line[0] != balls[i]:
             continue
-          elif j == len(line) and line[-1] != balls[i]:
+          ____ j __ le.(line) and line[-1] != balls[i]:
             continue
-          elif 0 < j < len(line) and balls[i] != line[j - 1] and balls[i] != line[j]:
+          ____ 0 < j < le.(line) and balls[i] != line[j - 1] and balls[i] != line[j]:
             continue
           res = min(res, dfs(line[:j] + balls[i] + line[j:], balls[:i] + balls[i + 1:], visited))
       visited[line, balls] = res
-      return res
+      r_ res
 
-    def reduceLine(line):
-      def reducer(line):
-        if len(line) < 3:
-          return line
+    ___ reduceLine(line
+      ___ reducer(line
+        __ le.(line) < 3:
+          r_ line
         ret = []
-        dp = [1] * len(line)
+        dp = [1] * le.(line)
         pre = line[-1]
         count = 1
-        for i in reversed(range(len(line) - 1)):
-          if line[i] == pre:
+        for i in reversed(range(le.(line) - 1)):
+          __ line[i] __ pre:
             count += 1
-          else:
+          ____
             pre = line[i]
             count = 1
           dp[i] = count
         i = 0
 
-        while i < len(line):
-          if dp[i] >= 3:
+        w___ i < le.(line
+          __ dp[i] >= 3:
             i += dp[i]
-          else:
+          ____
             ret.extend(line[i:i + dp[i]])
             i += dp[i]
-        return "".join(ret)
+        r_ "".join(ret)
 
-      if len(line) < 3:
-        return line
+      __ le.(line) < 3:
+        r_ line
       ans = line
-      for _ in range(len(line) / 3):
+      for _ in range(le.(line) / 3
         ans = reducer(ans)
-      return ans
+      r_ ans
 
     visited = {}
     ret = dfs(board, "".join(sorted(hand)), visited)
-    return ret if ret != float("inf") else -1
+    r_ ret __ ret != float("inf") else -1

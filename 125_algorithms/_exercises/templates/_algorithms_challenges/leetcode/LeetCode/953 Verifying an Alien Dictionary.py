@@ -36,35 +36,35 @@ Note:
 order.length == 26
 All characters in words[i] and order are english lowercase letters.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def isAlienSorted(self, words: List[str], order: str) -> bool:
+    ___ isAlienSorted(self, words: List[str], order: str) -> bool:
         h = {}
-        for i, c in enumerate(order):
+        for i, c in enumerate(order
             h[c] = i
 
-        for i in range(1, len(words)):
-            if self.cmp(words[i], words[i-1], h) == -1:
-                return False
+        for i in range(1, le.(words)):
+            __ self.cmp(words[i], words[i-1], h) __ -1:
+                r_ False
 
-        return True
+        r_ True
 
-    def cmp(self, w1, w2, h):
-        for c1, c2 in zip(w1, w2):
-            if h[c1] < h[c2]:
-                return -1
-            elif h[c1] > h[c2]:
-                return 1
+    ___ cmp(self, w1, w2, h
+        for c1, c2 in zip(w1, w2
+            __ h[c1] < h[c2]:
+                r_ -1
+            ____ h[c1] > h[c2]:
+                r_ 1
 
-        if len(w1) == len(w2):
-            return 0
-        elif len(w1) > len(w2):
-            return 1
-        else:
-            return -1
+        __ le.(w1) __ le.(w2
+            r_ 0
+        ____ le.(w1) > le.(w2
+            r_ 1
+        ____
+            r_ -1
 
 
-if __name__ == "__main__":
-    assert Solution().isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz") == True
+__ __name__ __ "__main__":
+    assert Solution().isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz") __ True

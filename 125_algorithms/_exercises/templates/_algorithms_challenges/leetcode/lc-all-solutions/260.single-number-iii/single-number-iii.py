@@ -1,5 +1,5 @@
-class Solution(object):
-  def singleNumber(self, nums):
+class Solution(object
+  ___ singleNumber(self, nums
     """
     :type nums: List[int]
     :rtype: List[int]
@@ -11,9 +11,9 @@ class Solution(object):
     xor = xor & -xor
     a, b = 0, 0
     for num in nums:
-      if num & xor:
+      __ num & xor:
         a ^= num
-      else:
+      ____
         b ^= num
 
-    return a, b
+    r_ a, b

@@ -2,7 +2,7 @@
 # Score: 50
 
 
-from itertools import product
+from itertools ______ product
 
 k, m = map(int, input().split())
 n = (list(map(int, input().split()))[1:] for _ in range(k))

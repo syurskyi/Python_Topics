@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def maxArea(self, height):
+    ___ maxArea(self, height
         """
         Two pointers scanning
         starting from two ends since x-coordinate is maximized
@@ -19,19 +19,19 @@ class Solution:
         :return: max area, integer
         """
         start = 0
-        end = len(height)-1
+        end = le.(height)-1
 
         max_area = -1 << 32
-        while start < end:
+        w___ start < end:
             area = min(height[start], height[end])*(end-start)
             max_area = max(area, max_area)
 
             # move the shorter boarder
             # move two pointers
-            if height[start] < height[end]:
+            __ height[start] < height[end]:
                 start += 1
-            else:
+            ____
                 end -= 1
 
-        return max_area
+        r_ max_area
 

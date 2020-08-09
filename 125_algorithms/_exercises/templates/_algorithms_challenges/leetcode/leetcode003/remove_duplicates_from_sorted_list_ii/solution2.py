@@ -9,37 +9,37 @@ Given 1->1->1->2->3, return 2->3.
 """
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
+# class ListNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def deleteDuplicates(self, head):
+class Solution(object
+    ___ deleteDuplicates(self, head
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        if head is None:
-            return None
+        __ head is None:
+            r_ None
         current = head
         last = None
         count = 0  # Repeated count of `last`
         dummy = ListNode(0)
         dummy_end = dummy
-        while current is not None:
-            if last is not None:
-                if current.val == last.val:
+        w___ current is not None:
+            __ last is not None:
+                __ current.val __ last.val:
                     count += 1
-                else:
-                    if count == 0:
+                ____
+                    __ count __ 0:
                         dummy_end.next = last
                         dummy_end = last
                     count = 0
             last = current
             current = current.next
-        if count == 0:
+        __ count __ 0:
             dummy_end.next = last
             dummy_end = last
         dummy_end.next = None
-        return dummy.next
+        r_ dummy.next

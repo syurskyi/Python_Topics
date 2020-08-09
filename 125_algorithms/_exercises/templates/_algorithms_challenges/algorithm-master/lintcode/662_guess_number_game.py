@@ -7,25 +7,25 @@ you can call Guess.guess(num)
 
 
 class Solution:
-    def guessNumber(self, n):
+    ___ guessNumber(self, n
         """
         :type n: int
         :rtype: int
         """
-        if not n or n <= 1:
-            return 1
+        __ not n or n <= 1:
+            r_ 1
 
         left, right = 1, n
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
             res = Guess.guess(mid)
 
-            if res == 0:
-                return mid
-            elif res == 1:
+            __ res __ 0:
+                r_ mid
+            ____ res __ 1:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        return left if Guess.guess(left) == 0 else right
+        r_ left __ Guess.guess(left) __ 0 else right

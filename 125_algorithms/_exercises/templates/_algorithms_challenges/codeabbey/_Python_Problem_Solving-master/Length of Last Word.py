@@ -1,14 +1,14 @@
 class Solution:
-    def lengthOfLastWord(self, s: str) -> int:
-        l = len(s)-1
+    ___ lengthOfLastWord(self, s: str) -> int:
+        l = le.(s)-1
         count = 0
-        while l > -1:
-            if s[l] == ' ':
+        w___ l > -1:
+            __ s[l] __ ' ':
                 l -= 1
                 
-            if s[l].isalpha():
+            __ s[l].isalpha(
                 count += 1
                 l -= 1
-                if s[l] == ' ':
+                __ s[l] __ ' ':
                     break
-        return count
+        r_ count

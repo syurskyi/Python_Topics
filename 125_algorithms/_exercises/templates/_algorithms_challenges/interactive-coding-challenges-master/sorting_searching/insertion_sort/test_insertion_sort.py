@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestInsertionSort(object):
+class TestInsertionSort(object
 
-    def test_insertion_sort(self):
+    ___ test_insertion_sort(self
         insertion_sort = InsertionSort()
 
         print('None input')
@@ -22,10 +22,10 @@ class TestInsertionSort(object):
         print('Success: test_insertion_sort')
 
 
-def main():
+___ main(
     test = TestInsertionSort()
     test.test_insertion_sort()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

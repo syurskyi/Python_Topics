@@ -3,18 +3,18 @@ Created on Feb 14, 2018
 
 @author: tongq
 '''
-import heapq
+______ heapq
 
-class MaxStack(object):
+class MaxStack(object
 
-    def __init__(self):
+    ___ __init__(self
         """
         initialize your data structure here.
         """
         self.stack = []
         self.heap = []
 
-    def push(self, x):
+    ___ push(self, x
         """
         :type x: int
         :rtype: void
@@ -22,35 +22,35 @@ class MaxStack(object):
         self.stack.append(x)
         heapq.heappush(self.heap, (-x))
 
-    def pop(self):
+    ___ pop(self
         """
         :rtype: int
         """
         val = self.stack.pop()
         self.heap.remove((-val))
         heapq.heapify(self.heap)
-        return val
+        r_ val
 
-    def top(self):
+    ___ top(self
         """
         :rtype: int
         """
-        return self.stack[-1]
+        r_ self.stack[-1]
 
-    def peekMax(self):
+    ___ peekMax(self
         """
         :rtype: int
         """
-        return -self.heap[0]
+        r_ -self.heap[0]
 
-    def popMax(self):
+    ___ popMax(self
         """
         :rtype: int
         """
         val = heapq.heappop(self.heap)
         val = -val
-        for i in range(len(self.stack)-1, -1, -1):
-            if self.stack[i] == val:
+        for i in range(le.(self.stack)-1, -1, -1
+            __ self.stack[i] __ val:
                 self.stack = self.stack[:i]+self.stack[i+1:]
                 break
-        return val
+        r_ val

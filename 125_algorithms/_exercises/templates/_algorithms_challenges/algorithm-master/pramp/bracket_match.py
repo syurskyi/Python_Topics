@@ -1,21 +1,21 @@
-def bracket_match(text):
+___ bracket_match(text
     ans = 0
-    if not text:
-        return ans
+    __ not text:
+        r_ ans
 
     cnt = 0
 
     for c in text:
-        if c == '(':
+        __ c __ '(':
             cnt += 1
-        elif c == ')':
+        ____ c __ ')':
             cnt -= 1
 
-        if cnt < 0:
+        __ cnt < 0:
             cnt = 0
             ans += 1
 
-    if cnt > 0:
+    __ cnt > 0:
         ans += cnt
 
-    return ans
+    r_ ans

@@ -11,19 +11,19 @@ Follow up:
 Could you do it without any loop/recursion in O(1) runtime?
 """
 
-class Solution(object):
-    def addDigits(self, num):
+class Solution(object
+    ___ addDigits(self, num
         """
         :type num: int
         :rtype: int
         """
-        while num / 10:
+        w___ num / 10:
             d = 0
-            while num > 0:
+            w___ num > 0:
                 d += num % 10
                 num /= 10
             num = d
-        return num
+        r_ num
 
 
 s = Solution()

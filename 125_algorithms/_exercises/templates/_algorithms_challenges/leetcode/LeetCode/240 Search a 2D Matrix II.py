@@ -21,8 +21,8 @@ Given target = 20, return false.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def searchMatrix(self, mat, target):
+class Solution(object
+    ___ searchMatrix(self, mat, target
         """
         Manhattan work
         O(m+n) eliminate a row or a column at a time
@@ -32,24 +32,24 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        m = len(mat)
-        n = len(mat[0])
+        m = le.(mat)
+        n = le.(mat[0])
 
         i = 0
         j = n-1
-        while i < m and 0 <= j:
-            if mat[i][j] == target:
-                return True
-            elif mat[i][j] > target:
+        w___ i < m and 0 <= j:
+            __ mat[i][j] __ target:
+                r_ True
+            ____ mat[i][j] > target:
                 j -= 1
-            else:
+            ____
                 i += 1
 
-        return False
+        r_ False
 
 
-class SolutionBinSearch(object):
-    def searchMatrix(self, mat, target):
+class SolutionBinSearch(object
+    ___ searchMatrix(self, mat, target
         """
         Binary search
 
@@ -62,8 +62,8 @@ class SolutionBinSearch(object):
         :type target: int
         :rtype: bool
         """
-        m = len(mat)
-        n = len(mat[0])
+        m = le.(mat)
+        n = le.(mat[0])
 
         col = [mat[i][0] for i in xrange(m)]
         row_by_first = self.bin_search(col, target)
@@ -71,30 +71,30 @@ class SolutionBinSearch(object):
         col = [mat[i][-1] for i in xrange(m)]
         row_by_last = self.bin_search(col, target, False)
 
-        for i in range(row_by_first, row_by_last-1, -1):
+        for i in range(row_by_first, row_by_last-1, -1
             col = self.bin_search(mat[i], target)
-            if mat[i][col] == target:
-                return True
+            __ mat[i][col] __ target:
+                r_ True
 
-        return False
+        r_ False
 
-    def bin_search(self, A, t, lower=True):
+    ___ bin_search(self, A, t, lower=True
         lo = 0
-        hi = len(A)
-        while lo < hi:
+        hi = le.(A)
+        w___ lo < hi:
             mid = (lo+hi)/2
-            if A[mid] == t:
-                return mid
-            elif A[mid] < t:
+            __ A[mid] __ t:
+                r_ mid
+            ____ A[mid] < t:
                 lo = mid+1
-            else:
+            ____
                 hi = mid
 
-        if lower:
-            return lo-1
-        else:
-            return lo
+        __ lower:
+            r_ lo-1
+        ____
+            r_ lo
 
-if __name__ == "__main__":
-    assert Solution().searchMatrix([[1, 4], [2, 5]], 4) == True
-    assert SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) == True
+__ __name__ __ "__main__":
+    assert Solution().searchMatrix([[1, 4], [2, 5]], 4) __ True
+    assert SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) __ True

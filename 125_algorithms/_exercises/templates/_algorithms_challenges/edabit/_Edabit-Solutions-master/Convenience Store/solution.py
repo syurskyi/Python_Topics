@@ -1,16 +1,16 @@
     sum = 0
     index = 0
-    while index < len(change):
-        if index == 0:
+    w___ index < le.(change
+        __ index __ 0:
             sum += change[index] * 0.25
-        elif index == 1:
+        ____ index __ 1:
             sum += change[index] * 0.10
-        elif index == 2:
+        ____ index __ 2:
             sum += change[index] * 0.05
-        else:
+        ____
             sum += change[index] * 0.01
         index += 1
-    if sum >= amount_due:
-        return True
-    else:
-        return False
+    __ sum >= amount_due:
+        r_ True
+    ____
+        r_ False

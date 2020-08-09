@@ -1,32 +1,32 @@
-import pytest
+______ pytest
 
-from Previous.kwargs import get_profile
-
-
-def test_no_arguments():
-    assert get_profile() == 'julian is a programmer'
+from Previous.kwargs ______ get_profile
 
 
-def test_one_positional_arg():
-    with pytest.raises(TypeError):
+___ test_no_arguments(
+    assert get_profile() __ 'julian is a programmer'
+
+
+___ test_one_positional_arg(
+    with pytest.raises(TypeError
         get_profile('julian')
 
 
-def test_wrong_single_kw():
-    with pytest.raises(TypeError):
+___ test_wrong_single_kw(
+    with pytest.raises(TypeError
         get_profile(test=True)
 
 
-def test_wrong_additional_kw():
-    with pytest.raises(TypeError):
+___ test_wrong_additional_kw(
+    with pytest.raises(TypeError
         get_profile(name='bob', profession='software developer',
                     another_flag=False)
 
 
-def test_correct_kw_second_default():
-    assert get_profile(name='bob') == 'bob is a programmer'
+___ test_correct_kw_second_default(
+    assert get_profile(name='bob') __ 'bob is a programmer'
 
 
-def test_two_correct_kws():
+___ test_two_correct_kws(
     ret = get_profile(name='bob', profession='software developer')
-    assert ret == 'bob is a software developer'
+    assert ret __ 'bob is a software developer'

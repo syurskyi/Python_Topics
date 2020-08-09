@@ -7,10 +7,10 @@ with open("prob9.txt") as infile:
         line = [int(i) for i in line]
         flag = True
         for side in line:
-            if int(side) > sum(line)-int(side):
+            __ int(side) > sum(line)-int(side
                 flag = False
                 break
-        if flag:
+        __ flag:
             print("1",end=" ")
-        else:
+        ____
             print("0",end=" ")

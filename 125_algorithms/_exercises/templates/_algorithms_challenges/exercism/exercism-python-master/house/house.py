@@ -1,12 +1,12 @@
 """Recites 'This is the House that Jack Built'"""
 
-def rhyme():
+___ rhyme(
     """Recites the entire rhyme"""
-    return "\n\n".join(verse(n) for n in range(12))
+    r_ "\n\n".join(verse(n) for n in range(12))
 
-def verse(v):
+___ verse(v
     """Recites a verse"""
-    return ''.join(["This is "] + VERSES[-v-1:])
+    r_ ''.join(["This is "] + VERSES[-v-1:])
 
 VERSES = ["the horse and the hound and the horn\nthat belonged to ",
           "the farmer sowing his corn\nthat kept ",

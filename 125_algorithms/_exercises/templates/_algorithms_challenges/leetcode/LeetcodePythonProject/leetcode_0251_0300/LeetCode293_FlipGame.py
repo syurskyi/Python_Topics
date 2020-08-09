@@ -4,15 +4,15 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def generatePossibleNextMoves(self, s):
+class Solution(object
+    ___ generatePossibleNextMoves(self, s
         result = []
-        for i in range(1, len(s)):
-            if s[i-1] == '+' and s[i] == '+':
+        for i in range(1, le.(s)):
+            __ s[i-1] __ '+' and s[i] __ '+':
                 result.append(s[:i-1]+'--'+s[i+1:])
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             '++++',
         ]
@@ -22,5 +22,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -7,7 +7,7 @@ For example,
 """
 __author__ = 'Danyang'
 class Solution:
-    def permute(self, num):
+    ___ permute(self, num
         """
         Catalan
         :param num: a list of integer
@@ -15,19 +15,19 @@ class Solution:
         """
         result = []
         self.get_permute(num, [], result)
-        return result
+        r_ result
 
-    def get_permute(self, seq, current, result):
-        length = len(seq)
-        if length==0:
+    ___ get_permute(self, seq, current, result
+        length = le.(seq)
+        __ length__0:
             result.append(current)
 
-        for ind, val in enumerate(seq):
+        for ind, val in enumerate(seq
             # try:
             self.get_permute(seq[:ind]+seq[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:
             #     self.get_permute(seq[:ind], current+[val], result)
             # array slice out of index will return []
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().permute([1, 2, 3])

@@ -1,24 +1,24 @@
 class Solution:
-    def sqrt(self, x):
+    ___ sqrt(self, x
         """
         :type x: int
         :rtype: int
         """
-        if not x or x <= 1:
-            return x
+        __ not x or x <= 1:
+            r_ x
 
         left, right = 0, x
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
             square = mid * mid
 
-            if square == x:
-                return mid
+            __ square __ x:
+                r_ mid
 
-            if square < x:
+            __ square < x:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        return left
+        r_ left

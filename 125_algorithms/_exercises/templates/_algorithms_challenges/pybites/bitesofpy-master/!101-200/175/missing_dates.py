@@ -1,7 +1,7 @@
-from datetime import timedelta
+from datetime ______ timedelta
 
 
-def get_missing_dates(dates):
+___ get_missing_dates(dates
     """Receives a range of dates and returns a sequence
        of missing datetime.date objects (no worries about order).
 
@@ -13,6 +13,6 @@ def get_missing_dates(dates):
     dt = sorted(dates)
     start_date, end_date = dt[0], dt[-1]
     rng: timedelta = end_date - start_date
-    return [start_date + timedelta(d)
+    r_ [start_date + timedelta(d)
             for d in range(rng.days)
-            if (start_date + timedelta(d)) not in dt]
+            __ (start_date + timedelta(d)) not in dt]

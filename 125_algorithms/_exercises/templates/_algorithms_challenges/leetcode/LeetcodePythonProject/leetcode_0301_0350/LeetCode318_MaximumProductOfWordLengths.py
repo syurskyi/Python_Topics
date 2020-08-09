@@ -4,21 +4,21 @@ Created on Mar 17, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxProduct(self, words):
-        if not words: return 0
-        arr = [0]*len(words)
-        for i, word in enumerate(words):
-            for _, c in enumerate(word):
+class Solution(object
+    ___ maxProduct(self, words
+        __ not words: r_ 0
+        arr = [0]*le.(words)
+        for i, word in enumerate(words
+            for _, c in enumerate(word
                 arr[i] = arr[i] | (1 << (ord(c) - ord('a')))
         result = 0
-        for i, word in enumerate(words):
-            for j in range(i+1, len(words)):
-                if arr[i] & arr[j] == 0:
-                    result = max(result, len(words[i])*len(words[j]))
-        return result
+        for i, word in enumerate(words
+            for j in range(i+1, le.(words)):
+                __ arr[i] & arr[j] __ 0:
+                    result = max(result, le.(words[i])*le.(words[j]))
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["abcw", "baz", "foo", "bar", "xtfn", "abcdef"],
             ["a", "ab", "abc", "d", "cd", "bcd", "abcd"],
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -18,11 +18,11 @@ Note:
 0 < nums[i] < 1000.
 0 <= k < 10^6.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
+    ___ numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
         """
         Two pointer
         Count attribute to the end
@@ -30,13 +30,13 @@ class Solution:
         i = 0
         ret = 0
         p = 1
-        for j in range(len(nums)):
+        for j in range(le.(nums)):
             p *= nums[j]
-            while p >= k and i <= j:
+            w___ p >= k and i <= j:
                 p //= nums[i]
                 i += 1
 
             ret += j - i + 1  # count attribute
             # if i > j, i can only be j + 1
 
-        return ret
+        r_ ret

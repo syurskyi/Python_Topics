@@ -1,20 +1,20 @@
 class Solution:
-    def increasingTriplet(self, A):
+    ___ increasingTriplet(self, A
         """
         :type A: List[int]
         :rtype: bool
         """
-        if not A:
-            return False
+        __ not A:
+            r_ False
 
         a = b = float('inf')
 
         for x in A:
-            if x <= a:
+            __ x <= a:
                 a = x
-            elif x <= b:
+            ____ x <= b:
                 b = x
-            else:
-                return True
+            ____
+                r_ True
 
-        return False
+        r_ False

@@ -11,15 +11,15 @@ for i in guess:
     bull_count = 0
     res = ''
     #look for the index , if the numbers of the real number and guess number positions are same
-    for j in range(len(i)):
-        if i[j] in n:
+    for j in range(le.(i)):
+        __ i[j] in n:
             bull = True
-            if i[j] == n[j]:
+            __ i[j] __ n[j]:
                 cow = True
-        if bull and cow:
+        __ bull and cow:
             cow_count += 1 
             bull = cow = False
-        if bull:
+        __ bull:
             bull_count += 1
             bull = False
     res = str(cow_count)+'-'+str(bull_count)

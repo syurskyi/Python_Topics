@@ -3,16 +3,16 @@ REF: https://leetcode.com/articles/largest-number/
 """
 
 
-class LgSort(str):
-    def __lt__(a, b):
-        return a + b > b + a
+class LgSort(str
+    ___ __lt__(a, b
+        r_ a + b > b + a
 
 
 class Solution:
-    def largestNumber(self, A):
+    ___ largestNumber(self, A
         """
         :type A: List[int]
         :rtype: str
         """
         A = ''.join(sorted(map(str, A), key=LgSort))
-        return '0' if A[0] == '0' else A
+        r_ '0' __ A[0] __ '0' else A

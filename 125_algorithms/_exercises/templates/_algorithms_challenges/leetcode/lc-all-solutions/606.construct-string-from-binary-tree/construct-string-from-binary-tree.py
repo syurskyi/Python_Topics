@@ -1,16 +1,16 @@
-class Solution(object):
-  def tree2str(self, t):
+class Solution(object
+  ___ tree2str(self, t
     """
     :type t: TreeNode
     :rtype: str
     """
-    if not t:
-      return ""
+    __ not t:
+      r_ ""
     res = ""
     left = self.tree2str(t.left)
     right = self.tree2str(t.right)
-    if left or right:
+    __ left or right:
       res += "(%s)" % left
-    if right:
+    __ right:
       res += "(%s)" % right
-    return str(t.val) + res
+    r_ str(t.val) + res

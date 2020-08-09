@@ -1,5 +1,5 @@
-def slices(string, length):
-    if length <= 0 or length > len(string):
+___ slices(string, length
+    __ length <= 0 or length > le.(string
         raise ValueError('Invalid slice length')
 
-    return [string[i:i + length] for i in range(len(string) - length + 1)]
+    r_ [string[i:i + length] for i in range(le.(string) - length + 1)]

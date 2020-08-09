@@ -1,22 +1,22 @@
-import unittest
+______ unittest
 
-import etl
+______ etl
 
 
-class TransformTest(unittest.TestCase):
-    def test_transform_one_value(self):
+class TransformTest(unittest.TestCase
+    ___ test_transform_one_value(self
         old = {1: ['WORLD']}
         expected = {'world': 1}
 
         self.assertEqual(expected, etl.transform(old))
 
-    def test_transform_more_values(self):
+    ___ test_transform_more_values(self
         old = {1: ['WORLD', 'GSCHOOLERS']}
         expected = {'world': 1, 'gschoolers': 1}
 
         self.assertEqual(expected, etl.transform(old))
 
-    def test_more_keys(self):
+    ___ test_more_keys(self
         old = {1: ['APPLE', 'ARTICHOKE'], 2: ['BOAT', 'BALLERINA']}
         expected = {
             'apple': 1,
@@ -27,7 +27,7 @@ class TransformTest(unittest.TestCase):
 
         self.assertEqual(expected, etl.transform(old))
 
-    def test_full_dataset(self):
+    ___ test_full_dataset(self
         old = {
             1: "AEIOULNRST",
             2: "DG",
@@ -50,5 +50,5 @@ class TransformTest(unittest.TestCase):
         self.assertEqual(expected, etl.transform(old))
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

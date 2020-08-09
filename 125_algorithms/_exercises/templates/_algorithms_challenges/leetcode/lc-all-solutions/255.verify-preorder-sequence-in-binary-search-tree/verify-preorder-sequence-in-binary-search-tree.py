@@ -1,19 +1,19 @@
-class Solution(object):
+class Solution(object
 
   # O(n) sapce complexity, **stack**
-  def verifyPreorder(self, preorder):
+  ___ verifyPreorder(self, preorder
     """
     :type preorder: List[int]
     :rtype: bool
     """
-    if len(preorder) <= 1:
-      return True
+    __ le.(preorder) <= 1:
+      r_ True
     stack, lastElem = [preorder[0]], None
-    for i in range(1, len(preorder)):
-      if lastElem > preorder[i]:
-        return False
-      while len(stack) > 0 and preorder[i] > stack[-1]:
+    for i in range(1, le.(preorder)):
+      __ lastElem > preorder[i]:
+        r_ False
+      w___ le.(stack) > 0 and preorder[i] > stack[-1]:
         lastElem = stack.pop()
       stack.append(preorder[i])
 
-    return True
+    r_ True

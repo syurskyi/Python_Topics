@@ -1,5 +1,5 @@
-class Solution(object):
-  def groupStrings(self, strings):
+class Solution(object
+  ___ groupStrings(self, strings
     """
     :type strings: List[str]
     :rtype: List[List[str]]
@@ -8,21 +8,21 @@ class Solution(object):
     ans = []
     single = []
     for s in strings:
-      if len(s) == 1:
+      __ le.(s) __ 1:
         single.append(s)
         continue
       hashcodeArray = []
       pre = ord(s[0]) - ord("a")
-      for i in range(1, len(s)):
+      for i in range(1, le.(s)):
         hashcodeArray.append(str(((ord(s[i]) - ord("a")) - pre) % 26))
         pre = ord(s[i]) - ord("a")
       hashcode = ",".join(hashcodeArray)
-      if hashcode not in d:
+      __ hashcode not in d:
         d[hashcode] = [s]
-      else:
+      ____
         d[hashcode].append(s)
     for k in d:
       ans.append(d[k])
-    if single:
+    __ single:
       ans.append(single)
-    return ans
+    r_ ans

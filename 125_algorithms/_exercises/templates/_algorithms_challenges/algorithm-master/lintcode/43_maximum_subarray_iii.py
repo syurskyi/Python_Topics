@@ -9,12 +9,12 @@ class Solution:
     @param: k: An integer denote to find k non-overlapping subarrays
     @return: An integer denote the sum of max k non-overlapping subarrays
     """
-    def maxSubArray(self, A, k):
-        if not A or not k or len(A) < k:
-            return 0
+    ___ maxSubArray(self, A, k
+        __ not A or not k or le.(A) < k:
+            r_ 0
 
         _INFINITY = float('-inf')
-        n = len(A)
+        n = le.(A)
 
         """
         `G[i][j]` means the global max sum, to pick `j` arrays in [0, i)
@@ -24,16 +24,16 @@ class Solution:
         G = [[_INFINITY] * (k + 1) for _ in range(n + 1)]
         L = [[_INFINITY] * (k + 1) for _ in range(n + 1)]
 
-        for i in range(n + 1):
+        for i in range(n + 1
             L[i][0] = 0
             G[i][0] = 0
 
-        for i in range(1, n + 1):
+        for i in range(1, n + 1
             end = i
-            if k < end:
+            __ k < end:
                 end = k
-            for j in range(1, end + 1):
+            for j in range(1, end + 1
                 L[i][j] = A[i - 1] + max(L[i - 1][j], G[i - 1][j - 1])
                 G[i][j] = max(L[i][j], G[i - 1][j])
 
-        return G[n][k]
+        r_ G[n][k]

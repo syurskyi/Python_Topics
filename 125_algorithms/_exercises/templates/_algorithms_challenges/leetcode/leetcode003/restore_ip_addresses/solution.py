@@ -11,35 +11,35 @@ return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 class Solution:
     # @param {string} s
     # @return {string[]}
-    def restoreIpAddresses(self, s):
+    ___ restoreIpAddresses(self, s
         res = []
         cand = []
         self.restore_ip(s, cand, res)
-        return res
+        r_ res
 
-    def restore_ip(self, s, cand, res):
+    ___ restore_ip(self, s, cand, res
         # If more than 4 parts, or 4 parts already but with remaining
         # unprocessed sub-string
-        if len(cand) > 4 or len(cand) == 4 and s:
-            return
-        elif not s and len(cand) == 4:
+        __ le.(cand) > 4 or le.(cand) __ 4 and s:
+            r_
+        ____ not s and le.(cand) __ 4:
                 res.append('.'.join(cand))
-        else:
-            k = min(3, len(s))  # Ensures s[:j + 1] won't be duplicate
-            for j in range(k):
+        ____
+            k = min(3, le.(s))  # Ensures s[:j + 1] won't be duplicate
+            for j in range(k
                 b = s[:j + 1]
-                if self.is_valid_byte(b):
+                __ self.is_valid_byte(b
                     cand.append(b)
                     self.restore_ip(s[j + 1:], cand, res)
                     cand.pop()
 
-    def is_valid_byte(self, b):
-        if b == '0':
-            return True
-        elif b.startswith('0'):
-            return False
-        else:
-            return int(b) < 256
+    ___ is_valid_byte(self, b
+        __ b __ '0':
+            r_ True
+        ____ b.startswith('0'
+            r_ False
+        ____
+            r_ int(b) < 256
 
 a = "25525511135"
 b = "010010"

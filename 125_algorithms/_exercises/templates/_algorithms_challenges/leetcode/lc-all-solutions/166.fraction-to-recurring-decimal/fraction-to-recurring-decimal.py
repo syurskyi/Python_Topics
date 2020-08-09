@@ -1,34 +1,34 @@
-class Solution(object):
-  def fractionToDecimal(self, numerator, denominator):
+class Solution(object
+  ___ fractionToDecimal(self, numerator, denominator
     """
     :type numerator: int
     :type denominator: int
     :rtype: str
     """
-    ans = "-" if numerator * denominator < 0 else ""
+    ans = "-" __ numerator * denominator < 0 else ""
     numerator = abs(numerator)
     denominator = abs(denominator)
     ans += str(numerator / denominator)
-    if numerator % denominator:
+    __ numerator % denominator:
       ans += "."
     numerator = (numerator % denominator) * 10
-    if numerator == 0:
-      return ans
+    __ numerator __ 0:
+      r_ ans
     d = {}
     res = []
-    while True:
+    w___ True:
       r = numerator % denominator
       v = numerator / denominator
-      if numerator in d:
+      __ numerator in d:
         idx = d[numerator]
-        return ans + "".join(res[:idx]) + "(" + "".join(res[idx:]) + ")"
+        r_ ans + "".join(res[:idx]) + "(" + "".join(res[idx:]) + ")"
       res.append(str(v))
-      if v == 0:
-        d[numerator] = len(res) - 1
+      __ v __ 0:
+        d[numerator] = le.(res) - 1
         numerator *= 10
         continue
-      d[numerator] = len(res) - 1
+      d[numerator] = le.(res) - 1
       numerator = r * 10
-      if r == 0:
-        return ans + "".join(res)
-    return ans + "".join(res)
+      __ r __ 0:
+        r_ ans + "".join(res)
+    r_ ans + "".join(res)

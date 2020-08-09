@@ -3,8 +3,8 @@ Created on Mar 18, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def backspaceCompare(self, S, T):
+class Solution(object
+    ___ backspaceCompare(self, S, T
         """
         :type S: str
         :type T: str
@@ -13,18 +13,18 @@ class Solution(object):
         s, t = S, T
         s0, t0 = '', ''
         for c in s:
-            if c == '#':
+            __ c __ '#':
                 s0 = s0[:-1]
-            else:
+            ____
                 s0 += c
         for c in t:
-            if c == '#':
+            __ c __ '#':
                 t0 = t0[:-1]
-            else:
+            ____
                 t0 += c
-        return s0 == t0
+        r_ s0 __ t0
     
-    def test(self):
+    ___ test(self
         testCases = [
             
         ]
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

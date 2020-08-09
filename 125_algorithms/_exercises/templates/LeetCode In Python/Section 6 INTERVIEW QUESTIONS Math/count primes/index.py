@@ -1,14 +1,14 @@
 class Solution:
-    def countPrimes(self, n: int) -> int:		
+    ___ countPrimes(self, n: int) -> int:		
         
-        if n<2:
-            return 0
+        __ n<2:
+            r_ 0
         isPrime = [True]*n
         isPrime[0] = isPrime[1] = False
         
-        for i in range(2,math.ceil(math.sqrt(n))):
-            if isPrime[i]:
-                for multiples_of_i in range(i*i,n,i):
+        for i in range(2,ma__.ceil(ma__.sqrt(n))):
+            __ isPrime[i]:
+                for multiples_of_i in range(i*i,n,i
                     isPrime[multiples_of_i] = False
         
-        return sum(isPrime)
+        r_ sum(isPrime)

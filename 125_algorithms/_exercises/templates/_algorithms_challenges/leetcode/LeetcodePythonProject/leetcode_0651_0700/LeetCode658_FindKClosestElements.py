@@ -3,30 +3,30 @@ Created on Oct 7, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findClosestElements(self, arr, k, x):
+class Solution(object
+    ___ findClosestElements(self, arr, k, x
         """
         :type arr: List[int]
         :type k: int
         :type x: int
         :rtype: List[int]
         """
-        import bisect, heapq
+        ______ bisect, heapq
         ind = bisect.bisect_left(arr, x)
-        if ind == 0:
-            return arr[:k]
-        if ind == len(arr):
-            return arr[-k:]
+        __ ind __ 0:
+            r_ arr[:k]
+        __ ind __ le.(arr
+            r_ arr[-k:]
         heap = []
-        for i in range(max(0, ind-k), min(len(arr), ind+k)):
+        for i in range(max(0, ind-k), min(le.(arr), ind+k)):
             diff = abs(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]))
         res = []
-        for _ in range(k):
+        for _ in range(k
             res.append(heapq.heappop(heap)[1])
-        return sorted(res)
+        r_ sorted(res)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 2, 3, 4, 5],
@@ -52,5 +52,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,25 +1,25 @@
-import unittest
+______ unittest
 
-from etl import transform
+from etl ______ transform
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-class TransformTest(unittest.TestCase):
-    def test_a_single_letter(self):
+class TransformTest(unittest.TestCase
+    ___ test_a_single_letter(self
         self.assertEqual(transform({1: ['A']}), {'a': 1})
 
-    def test_single_score_with_multiple_letters(self):
+    ___ test_single_score_with_multiple_letters(self
         legacy_data = {1: ["A", "E", "I", "O", "U"]}
         data = {"a": 1, "e": 1, "i": 1, "o": 1, "u": 1}
         self.assertEqual(transform(legacy_data), data)
 
-    def test_multiple_scores_with_multiple_letters(self):
+    ___ test_multiple_scores_with_multiple_letters(self
         legacy_data = {1: ["A", "E"], 2: ["D", "G"]}
         data = {"a": 1, "d": 2, "e": 1, "g": 2}
         self.assertEqual(transform(legacy_data), data)
 
-    def test_multiple_scores_with_differing_numbers_of_letters(self):
+    ___ test_multiple_scores_with_differing_numbers_of_letters(self
         legacy_data = {
             1: ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
             2: ["D", "G"],
@@ -39,5 +39,5 @@ class TransformTest(unittest.TestCase):
         self.assertEqual(transform(legacy_data), data)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

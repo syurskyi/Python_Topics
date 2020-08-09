@@ -39,20 +39,20 @@ S only consists of '(' and ')' characters.
 
 
 class Solution:
-    def minAddToMakeValid(self, S: str) -> int:
+    ___ minAddToMakeValid(self, S: str) -> int:
         """
         stk
         """
         ret = 0
         stk = []
         for s in S:
-            if s == "(":
+            __ s __ "(":
                 stk.append(s)
-            else:
-                if stk:
+            ____
+                __ stk:
                     stk.pop()
-                else:
+                ____
                     ret += 1
 
-        ret += len(stk)
-        return ret
+        ret += le.(stk)
+        r_ ret

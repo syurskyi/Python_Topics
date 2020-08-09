@@ -4,26 +4,26 @@ Created on Mar 14, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def longestValidParentheses(self, s):
+class Solution(object
+    ___ longestValidParentheses(self, s
         left = -1
         stack = []
         res = 0
-        for i, c in enumerate(s):
-            if c == '(':
+        for i, c in enumerate(s
+            __ c __ '(':
                 stack.append(i)
-            else:
-                if stack:
+            ____
+                __ stack:
                     stack.pop()
-                    if stack:
+                    __ stack:
                         res = max(res, i-stack[-1])
-                    else:
+                    ____
                         res = max(res, i-left)
-                else:
+                ____
                     left = i
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             '()',
             '(()',
@@ -35,5 +35,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

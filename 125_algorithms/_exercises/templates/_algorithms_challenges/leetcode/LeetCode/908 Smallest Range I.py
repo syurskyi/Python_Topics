@@ -30,12 +30,12 @@ Note:
 0 <= A[i] <= 10000
 0 <= K <= 10000
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def smallestRangeI(self, A: List[int], K: int) -> int:
+    ___ smallestRangeI(self, A: List[int], K: int) -> int:
         """
         only need the max and min
         """
-        return max(0, max(A) - K - (min(A) + K))
+        r_ max(0, max(A) - K - (min(A) + K))

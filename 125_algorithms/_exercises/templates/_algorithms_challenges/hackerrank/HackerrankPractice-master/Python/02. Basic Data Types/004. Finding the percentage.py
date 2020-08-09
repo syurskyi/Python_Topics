@@ -2,7 +2,7 @@
 # Score: 10
 
 
-def readScores(listOfStudents):
+___ readScores(listOfStudents
     line = list(input().split())
     avScore = sum(map(float, line[1:])) / 3
     name = line[0]
@@ -11,6 +11,6 @@ def readScores(listOfStudents):
 
 n = int(input())
 listOfStudents = dict()
-for i in range(n):
+for i in range(n
     readScores(listOfStudents)
 print('%.2f' % listOfStudents[input()])

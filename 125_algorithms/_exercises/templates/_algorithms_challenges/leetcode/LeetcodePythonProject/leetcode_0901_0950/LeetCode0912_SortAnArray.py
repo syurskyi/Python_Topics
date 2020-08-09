@@ -1,30 +1,30 @@
-class Solution(object):
-    def sortArray(self, nums):
+class Solution(object
+    ___ sortArray(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        if not nums: return nums
-        self.quickSort(0, len(nums)-1, nums)
-        return nums
+        __ not nums: r_ nums
+        self.quickSort(0, le.(nums)-1, nums)
+        r_ nums
 
-    def quickSort(self, i, j, nums):
-        if i < j:
+    ___ quickSort(self, i, j, nums
+        __ i < j:
             pi = self.partition(i, j, nums)
             self.quickSort(i, pi-1, nums)
             self.quickSort(pi+1, j, nums)
 
-    def partition(self, low, high, nums):
+    ___ partition(self, low, high, nums
         pivot = nums[high]
         i = low-1
-        for j in range(low, high):
-            if nums[j] < pivot:
+        for j in range(low, high
+            __ nums[j] < pivot:
                 i += 1
                 nums[i], nums[j] = nums[j], nums[i]
         nums[i+1], nums[high] = nums[high], nums[i+1]
-        return i+1
+        r_ i+1
 
-    def test(self):
+    ___ test(self
         testCases = [
             [0,3,1,2],
             # [1,1,1,1],
@@ -37,5 +37,5 @@ class Solution(object):
             print('-='*30+'-')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

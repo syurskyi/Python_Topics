@@ -1,5 +1,5 @@
 class Solution:
-    def findCheapestPrice(self, n, flights, src, dst, K):
+    ___ findCheapestPrice(self, n, flights, src, dst, K
         """
         :type n: int
         :type flights: List[List[int]]
@@ -12,16 +12,16 @@ class Solution:
         costs = [float('inf')] * n
         min_cost[src] = costs[src] = 0
 
-        for _ in range(K + 1):
+        for _ in range(K + 1
             for u, v, cost in flights:
                 costs[v] = min(costs[v], min_cost[u] + cost)
             min_cost = costs
 
-        return costs[dst] if costs[dst] < float('inf') else -1
+        r_ costs[dst] __ costs[dst] < float('inf') else -1
 
 
 class Solution:
-    def findCheapestPrice(self, n, flights, src, dst, K):
+    ___ findCheapestPrice(self, n, flights, src, dst, K
         """
         :type n: int
         :type flights: List[List[int]]
@@ -30,8 +30,8 @@ class Solution:
         :type K: int
         :rtype: int
         """
-        if src == dst:
-            return 0
+        __ src __ dst:
+            r_ 0
 
         INF = float('inf')
 
@@ -42,11 +42,11 @@ class Solution:
         dp[src][0] = 0
 
         for start, end, cost in flights:
-            if start == src and cost < dp[end][0]:
+            __ start __ src and cost < dp[end][0]:
                 dp[end][0] = cost
 
-        for k in range(1, K + 1):
-            for i in range(n):
+        for k in range(1, K + 1
+            for i in range(n
                 dp[i][k] = dp[i][k - 1]
 
             for start, end, cost in flights:
@@ -55,4 +55,4 @@ class Solution:
                     dp[start][k - 1] + cost
                 )
 
-        return dp[dst][K] if dp[dst][K] < INF else -1
+        r_ dp[dst][K] __ dp[dst][K] < INF else -1

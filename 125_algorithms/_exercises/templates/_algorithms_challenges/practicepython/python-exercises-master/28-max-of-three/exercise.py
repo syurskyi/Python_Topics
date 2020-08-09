@@ -1,14 +1,14 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-import random
+______ random
 
-def max(list):
+___ max(list
     max = list[0]
     for el in list:
-        if el > max:
+        __ el > max:
             max = el
-    return max
+    r_ max
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     random = random.sample(range(0,100), 3)
 
     print(random)

@@ -23,32 +23,32 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def isSymmetric(self, root):
+class Solution(object
+    ___ isSymmetric(self, root
         """
         dfs
         :param root: TreeNode
         :return: boolean
         """
-        if not root:
-            return True
+        __ not root:
+            r_ True
 
-        return self.isSymmetrical(root.left, root.right)
+        r_ self.isSymmetrical(root.left, root.right)
 
-    def isSymmetrical(self, l, r):
-        if not l and not r:
-            return True
+    ___ isSymmetrical(self, l, r
+        __ not l and not r:
+            r_ True
 
         # recursive
-        if (l and r and
-            l.val == r.val and self.isSymmetrical(l.left, r.right) and self.isSymmetrical(l.right, r.left)):
-            return True
+        __ (l and r and
+            l.val __ r.val and self.isSymmetrical(l.left, r.right) and self.isSymmetrical(l.right, r.left)):
+            r_ True
 
-        return False
+        r_ False

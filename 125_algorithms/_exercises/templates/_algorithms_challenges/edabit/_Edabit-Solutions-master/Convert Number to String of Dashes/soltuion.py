@@ -1,7 +1,7 @@
-def num_to_dashes(num):
+___ num_to_dashes(num
     var = ""
     i = 1
-    while i <= num:
+    w___ i <= num:
         var = var + "-"
         i = i + 1
-    return var
+    r_ var

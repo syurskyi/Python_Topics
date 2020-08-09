@@ -4,22 +4,22 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def smallestGoodBase(self, n):
+class Solution(object
+    ___ smallestGoodBase(self, n
         """
         :type n: str
         :rtype: str
         """
-        import math
+        ______ ma__
         n = int(n)
-        max_n = int(math.log(n, 2))
-        for m in range(max_n, 1, -1):
+        max_n = int(ma__.log(n, 2))
+        for m in range(max_n, 1, -1
             k = int(n**m**-1)
-            if (k**(m+1)-1)//(k-1) == n:
-                return str(k)
-        return str(n-1)
+            __ (k**(m+1)-1)//(k-1) __ n:
+                r_ str(k)
+        r_ str(n-1)
     
-    def test(self):
+    ___ test(self
         testCases = [
             '13',
             '4681',
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,4 +1,4 @@
-def bitCount():
+___ bitCount(
 
     codeAbbeyWaste = input() # Required by CodeAbbey
 

@@ -1,33 +1,33 @@
-import unittest
+______ unittest
 
-from proverb import proverb
+from proverb ______ proverb
 
 
-class ProverbTest(unittest.TestCase):
-    def test_a_single_consequence(self):
+class ProverbTest(unittest.TestCase
+    ___ test_a_single_consequence(self
         expected = 'For want of a nail the shoe was lost.\n'\
                    'And all for the want of a nail.'
         self.assertEqual(proverb(['nail', 'shoe']), expected)
 
-    def test_short_list(self):
+    ___ test_short_list(self
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'And all for the want of a nail.'
         self.assertEqual(proverb(['nail', 'shoe', 'horse']), expected)
 
-    def test_long_list(self):
+    ___ test_long_list(self
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
                    'And all for the want of a nail.'
         self.assertEqual(proverb(['nail', 'shoe', 'horse', 'rider']), expected)
 
-    def test_new_itens(self):
+    ___ test_new_itens(self
         expected = 'For want of a key the value was lost.\n'\
                    'And all for the want of a key.'
         self.assertEqual(proverb(['key', 'value']), expected)
 
-    def test_whole_proverb(self):
+    ___ test_whole_proverb(self
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
@@ -41,7 +41,7 @@ class ProverbTest(unittest.TestCase):
                 'kingdom'
             ]), expected)
 
-    def test_qualifier(self):
+    ___ test_qualifier(self
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
@@ -58,5 +58,5 @@ class ProverbTest(unittest.TestCase):
                 qualifier='horseshoe'), expected)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

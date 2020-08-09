@@ -1,58 +1,58 @@
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
+# class ListNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-  def reverseList(self, root):
-    if not root or not root.next:
-      return root
+class Solution(object
+  ___ reverseList(self, root
+    __ not root or not root.next:
+      r_ root
 
     ret = self.reverseList(root.next)
     root.next.next = root
     root.next = None
-    return ret
+    r_ ret
 
-  def _reverseList(self, head):
+  ___ _reverseList(self, head
     pre = None
     cur = head
-    while cur:
+    w___ cur:
       tmp = cur.next
       cur.next = pre
       pre = cur
       cur = tmp
-    return pre
+    r_ pre
 
   # iteratively as queue head inserting
-  def __reverseList(self, head):
+  ___ __reverseList(self, head
     """
     :type head: ListNode
     :rtype: ListNode
     """
     dHead = dummy = ListNode(-1)
     p = head
-    while p:
+    w___ p:
       tmp = dummy.next
       dummy.next = p
       p = p.next
       dummy.next.next = tmp
-    return dHead.next
+    r_ dHead.next
 
   # easily leads to a circle. Remove current node's next after recursive call.
-  def ___reverseList(self, head):
+  ___ ___reverseList(self, head
     self.newHead = None
 
-    def rec(head):
-      if not head:
-        return head
+    ___ rec(head
+      __ not head:
+        r_ head
       p = rec(head.next)
       head.next = None
-      if p:
+      __ p:
         p.next = head
-      else:
+      ____
         self.newHead = head
-      return head
+      r_ head
 
     rec(head)
-    return self.newHead
+    r_ self.newHead

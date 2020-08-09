@@ -1,20 +1,20 @@
-from functools import wraps
-from random import random
-from time import sleep
+from functools ______ wraps
+from random ______ random
+from time ______ sleep
 
 
-def cached_property(func):
+___ cached_property(func
     """decorator used to cache expensive object attribute lookup"""
 
     @wraps(func)
-    def getter(self, *args, **kwargs):
-        if not hasattr(cached_property, "cache"):
+    ___ getter(self, *args, **kwargs
+        __ not hasattr(cached_property, "cache"
             cached_property.cache = dict()
-        if func not in cached_property.cache:
+        __ func not in cached_property.cache:
             cached_property.cache[func] = func(self)
-        return cached_property.cache[func]
+        r_ cached_property.cache[func]
 
-    return getter
+    r_ getter
 
 
 class Planet:
@@ -24,19 +24,19 @@ class Planet:
     TEMPORAL_SHIFT = 0.12345
     SOLAR_MASS_UNITS = 'M\N{SUN}'
 
-    def __init__(self, color):
+    ___ __init__(self, color
         self.color = color
         self._mass = None
 
-    def __repr__(self):
-        return f'{self.__class__.__name__}({repr(self.color)})'
+    ___ __repr__(self
+        r_ f'{self.__class__.__name__}({repr(self.color)})'
 
     @cached_property
-    def mass(self):
+    ___ mass(self
         scale_factor = random()
         sleep(self.TEMPORAL_SHIFT)
         self._mass = (f'{round(scale_factor * self.GRAVITY_CONSTANT, 4)} '
                       f'{self.SOLAR_MASS_UNITS}')
-        return self._mass
+        r_ self._mass
 
     mass = property(mass)

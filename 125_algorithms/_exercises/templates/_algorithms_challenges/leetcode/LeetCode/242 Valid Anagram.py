@@ -8,13 +8,13 @@ s = "rat", t = "car", return false.
 Note:
 You may assume the string contains only lowercase alphabets.
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
 class Solution:
-    def isAnagram(self, s, t):
+    ___ isAnagram(self, s, t
         """
         bucket
 
@@ -27,13 +27,13 @@ class Solution:
             cnt[c] += 1
 
         for c in t:
-            if c not in cnt or cnt[c] < 1:
-                return False
+            __ c not in cnt or cnt[c] < 1:
+                r_ False
 
             cnt[c] -= 1
 
-        for v in cnt.values():
-            if v != 0:
-                return False
+        for v in cnt.values(
+            __ v != 0:
+                r_ False
 
-        return True
+        r_ True

@@ -4,18 +4,18 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findDuplicates(self, nums):
+class Solution(object
+    ___ findDuplicates(self, nums
         result = []
         for num in nums:
             ind = abs(num)-1
-            if nums[ind] < 0:
+            __ nums[ind] < 0:
                 result.append(abs(num))
-            else:
+            ____
                 nums[ind] = -nums[ind]
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             [4,3,2,7,8,2,3,1],
             [10,2,5,10,9,1,1,4,3,7],
@@ -26,5 +26,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

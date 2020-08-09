@@ -1,10 +1,10 @@
-from datetime import datetime
-from itertools import islice
+from datetime ______ datetime
+from itertools ______ islice
 
-from gendates import gen_special_pybites_dates
+from gendates ______ gen_special_pybites_dates
 
 
-def test_gen_special_pybites_dates():
+___ test_gen_special_pybites_dates(
     gen = gen_special_pybites_dates()
     dates = list(islice(gen, 10))
 
@@ -19,4 +19,4 @@ def test_gen_special_pybites_dates():
                 datetime(2018, 12, 19, 0, 0),  # PyBites 2 years old
                 datetime(2019, 2, 27, 0, 0)]
 
-    assert dates == expected
+    assert dates __ expected

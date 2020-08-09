@@ -23,7 +23,7 @@ Length of the array will not exceed 10^4.
 
 
 class Solution:
-    def totalHammingDistance(self, nums):
+    ___ totalHammingDistance(self, nums
         """
         Brute force, check every combination O(n^2 * b)
 
@@ -35,19 +35,19 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        while any(nums):  # any not 0
+        w___ any(nums  # any not 0
             z, o = 0, 0
-            for i in range(len(nums)):
-                if nums[i] & 1 == 0:
+            for i in range(le.(nums)):
+                __ nums[i] & 1 __ 0:
                     o += 1
-                else:
+                ____
                     z += 1
                 nums[i] >>= 1
 
             ret += z * o
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().totalHammingDistance([4, 14, 2]) == 6
+__ __name__ __ "__main__":
+    assert Solution().totalHammingDistance([4, 14, 2]) __ 6

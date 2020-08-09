@@ -5,13 +5,13 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def isPowerOfTwo(self, n):
+    ___ isPowerOfTwo(self, n
         """
         Bit manipulation
         :type n: int
         :rtype: bool
         """
-        if n <= 0:
-            return False
+        __ n <= 0:
+            r_ False
 
-        return n & (n-1) == 0
+        r_ n & (n-1) __ 0

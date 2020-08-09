@@ -26,29 +26,29 @@ chosen the maximum
 
 
 class Solution:
-    def firstWillWin(self, values):
+    ___ firstWillWin(self, values
         """
         :type values: list[int]
         :rtype: bool
         """
-        if not values:
-            return False
+        __ not values:
+            r_ False
 
-        n = len(values)
+        n = le.(values)
 
-        if n < 2:
-            return True
+        __ n < 2:
+            r_ True
 
         dp = [[0] * n for _ in range(n)]
 
-        for i in range(n):
+        for i in range(n
             dp[i][i] = values[i]
 
-        for i in range(n - 1 - 1, -1, -1):
-            for j in range(i + 1, n):
+        for i in range(n - 1 - 1, -1, -1
+            for j in range(i + 1, n
                 dp[i][j] = max((
                     values[i] - dp[i + 1][j],
                     values[j] - dp[i][j - 1],
                 ))
 
-        return dp[0][n - 1] >= 0
+        r_ dp[0][n - 1] >= 0

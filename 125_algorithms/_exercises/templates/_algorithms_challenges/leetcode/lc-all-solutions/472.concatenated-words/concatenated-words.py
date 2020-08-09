@@ -1,29 +1,29 @@
-class Solution(object):
-  def findAllConcatenatedWordsInADict(self, words):
+class Solution(object
+  ___ findAllConcatenatedWordsInADict(self, words
     """
     :type words: List[str]
     :rtype: List[str]
     """
 
-    def wordBreak(word, cands):
-      if not cands:
-        return False
-      dp = [False] * (len(word) + 1)
+    ___ wordBreak(word, cands
+      __ not cands:
+        r_ False
+      dp = [False] * (le.(word) + 1)
       dp[0] = True
-      for i in range(1, len(word) + 1):
+      for i in range(1, le.(word) + 1
         for j in reversed(range(0, i)):
-          if not dp[j]:
+          __ not dp[j]:
             continue
-          if word[j:i] in cands:
+          __ word[j:i] in cands:
             dp[i] = True
             break
-      return dp[-1]
+      r_ dp[-1]
 
-    words.sort(key=lambda x: -len(x))
+    words.sort(key=lambda x: -le.(x))
     cands = set(words)
     ans = []
-    for i in range(0, len(words)):
+    for i in range(0, le.(words)):
       cands -= {words[i]}
-      if wordBreak(words[i], cands):
+      __ wordBreak(words[i], cands
         ans += words[i],
-    return ans
+    r_ ans

@@ -13,7 +13,7 @@ Input: ip = "255.0.0.7", n = 10
 Output: ["255.0.0.7/32","255.0.0.8/29","255.0.0.16/32"]
 Explanation:
 The initial ip address, when converted to binary, looks like this (spaces added
-for clarity):
+for clarity
 255.0.0.7 -> 11111111 00000000 00000000 00000111
 The address "255.0.0.7/32" specifies all addresses with a common prefix of 32
 bits to the given address,
@@ -53,7 +53,7 @@ ip will be a valid IPv4 address.
 Every implied address ip + x (for x < n) will be a valid IPv4 address.
 n will be an integer in the range [1, 1000].
 """
-from typing import List
+from typing ______ List
 
 
 # the weights of ip when converting to binary
@@ -66,7 +66,7 @@ weights = [
 
 
 class Solution:
-    def ipToCIDR(self, ip: str, n: int) -> List[str]:
+    ___ ipToCIDR(self, ip: str, n: int) -> List[str]:
         """
         bit manipulation
 
@@ -90,9 +90,9 @@ class Solution:
         """
         num_ip = self.to_bin(ip)
         ret = []
-        while n > 0:
+        w___ n > 0:
             lsb = self.get_lsb(num_ip)
-            while (1 << lsb) > n:
+            w___ (1 << lsb) > n:
                 lsb -= 1
 
             cur_cover = 1 << lsb
@@ -102,31 +102,31 @@ class Solution:
             )
             num_ip += cur_cover
 
-        return ret
+        r_ ret
 
-    def to_bin(self, ip):
+    ___ to_bin(self, ip
         ret = 0
-        for n, w in zip(map(int, ip.split(".")), weights):
+        for n, w in zip(map(int, ip.split(".")), weights
             ret += n << w
 
-        return ret
+        r_ ret
 
-    def to_ip(self, bin):
+    ___ to_ip(self, bin
         ret = []
         for w in weights:
             ret.append(
                 (bin >> w) & 255
             )
-        return ".".join(map(str, ret))
+        r_ ".".join(map(str, ret))
 
-    def get_lsb(self, n):
+    ___ get_lsb(self, n
         lsb = 0
-        while (n >> lsb) & 1 == 0:
+        w___ (n >> lsb) & 1 __ 0:
             lsb += 1
             #  n >>= lsb  # error
-        return lsb
+        r_ lsb
 
 
-if __name__ == "__main__":
-    assert Solution().ipToCIDR("60.166.253.147", 12) == ["60.166.253.147/32","60.166.253.148/30","60.166.253.152/30","60.166.253.156/31","60.166.253.158/32"]
-    assert Solution().ipToCIDR("255.0.0.7", 10) == ["255.0.0.7/32","255.0.0.8/29","255.0.0.16/32"]
+__ __name__ __ "__main__":
+    assert Solution().ipToCIDR("60.166.253.147", 12) __ ["60.166.253.147/32","60.166.253.148/30","60.166.253.152/30","60.166.253.156/31","60.166.253.158/32"]
+    assert Solution().ipToCIDR("255.0.0.7", 10) __ ["255.0.0.7/32","255.0.0.8/29","255.0.0.16/32"]

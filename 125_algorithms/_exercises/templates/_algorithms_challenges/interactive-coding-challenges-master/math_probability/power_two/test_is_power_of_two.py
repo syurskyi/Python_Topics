@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSolution(object):
+class TestSolution(object
 
-    def test_is_power_of_two(self):
+    ___ test_is_power_of_two(self
         solution = Solution()
         assert_raises(TypeError, solution.is_power_of_two, None)
         assert_equal(solution.is_power_of_two(0), False)
@@ -14,10 +14,10 @@ class TestSolution(object):
         print('Success: test_is_power_of_two')
 
 
-def main():
+___ main(
     test = TestSolution()
     test.test_is_power_of_two()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

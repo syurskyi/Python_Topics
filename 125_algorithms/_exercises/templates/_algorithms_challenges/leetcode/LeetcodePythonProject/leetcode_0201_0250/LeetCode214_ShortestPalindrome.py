@@ -4,24 +4,24 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def shortestPalindrome(self, s):
+class Solution(object
+    ___ shortestPalindrome(self, s
         """
         :type s: str
         :rtype: str
         """
-        i, j = 0, len(s)-1
-        while j >= 0:
-            if s[i] == s[j]:
+        i, j = 0, le.(s)-1
+        w___ j >= 0:
+            __ s[i] __ s[j]:
                 i += 1
             j -= 1
-        if i == len(s):
-            return s
+        __ i __ le.(s
+            r_ s
         mid = s[:i]
         suffix = s[i:]
-        return suffix[::-1]+self.shortestPalindrome(mid)+suffix
+        r_ suffix[::-1]+self.shortestPalindrome(mid)+suffix
     
-    def test(self):
+    ___ test(self
         testCases = [
             'aacecaaa',
             'abcd',
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

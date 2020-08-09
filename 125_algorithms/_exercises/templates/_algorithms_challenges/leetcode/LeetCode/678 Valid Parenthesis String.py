@@ -26,7 +26,7 @@ The string size will be in the range [1, 100].
 
 
 class Solution:
-    def checkValidString(self, s: str) -> bool:
+    ___ checkValidString(self, s: str) -> bool:
         """
         Brute force: dfs branching on "*".
 
@@ -35,27 +35,27 @@ class Solution:
         """
         stk_left = []
         stk_star = []
-        for i, c in enumerate(s):
-            if c == "(":
+        for i, c in enumerate(s
+            __ c __ "(":
                 stk_left.append(i)
-            elif c == "*":
+            ____ c __ "*":
                 stk_star.append(i)
-            else:
-                if stk_left:
+            ____
+                __ stk_left:
                     stk_left.pop()
-                elif stk_star:
+                ____ stk_star:
                     stk_star.pop()
-                else:
-                    return False
+                ____
+                    r_ False
 
-        while stk_left and stk_star and stk_star[-1] > stk_left[-1]:
+        w___ stk_left and stk_star and stk_star[-1] > stk_left[-1]:
             stk_star.pop()
             stk_left.pop()
 
-        return not stk_left
+        r_ not stk_left
 
 
-if __name__ == "__main__":
-    assert Solution().checkValidString("(*))") == True
-    assert Solution().checkValidString("*(") == False
-    assert Solution().checkValidString("(*)") == True
+__ __name__ __ "__main__":
+    assert Solution().checkValidString("(*))") __ True
+    assert Solution().checkValidString("*(") __ False
+    assert Solution().checkValidString("(*)") __ True

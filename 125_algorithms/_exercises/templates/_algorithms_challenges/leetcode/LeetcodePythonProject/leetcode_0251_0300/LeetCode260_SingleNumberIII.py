@@ -4,8 +4,8 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def singleNumber(self, nums):
+class Solution(object
+    ___ singleNumber(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -16,33 +16,33 @@ class Solution(object):
         diff = diff&(-diff)
         res = [0, 0]
         for num in nums:
-            if num & diff == 0:
+            __ num & diff __ 0:
                 res[0] ^= num
-            else:
+            ____
                 res[1] ^= num
-        return res
+        r_ res
     
-    def singleNumber_orig(self, nums):
+    ___ singleNumber_orig(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        if not nums or len(nums) < 2:
-            return []
+        __ not nums or le.(nums) < 2:
+            r_ []
         xor = 0
         for num in nums:
             xor ^= num
         group0, group1 = 0, 0
         lastBit = xor-(xor&(xor-1))
         for num in nums:
-            if lastBit & num == 0:
+            __ lastBit & num __ 0:
                 group0 ^= num
-            else:
+            ____
                 group1 ^= num
         result = [group0, group1]
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 1, 3, 2, 5],
         ]
@@ -52,11 +52,11 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
     
-    import random
-    for num in range(30):
+    ______ random
+    for num in range(30
         num = random.randint(0, num)
         print('num:  %08s' % bin(num & 0b11111111))
         print('-num: %8s' % bin(-num & 0b11111111))

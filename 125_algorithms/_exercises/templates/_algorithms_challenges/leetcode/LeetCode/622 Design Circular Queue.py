@@ -12,21 +12,21 @@ using the circular queue, we can use the space to store new values.
 
 Your implementation should support following operations:
 
-MyCircularQueue(k): Constructor, set the size of the queue to be k.
+MyCircularQueue(k Constructor, set the size of the queue to be k.
 Front: Get the front item from the queue. If the queue is empty, return -1.
 Rear: Get the last item from the queue. If the queue is empty, return -1.
-enQueue(value): Insert an element into the circular queue. Return true if the
+enQueue(value Insert an element into the circular queue. Return true if the
 operation is successful.
-deQueue(): Delete an element from the circular queue. Return true if the
+deQueue( Delete an element from the circular queue. Return true if the
 operation is successful.
-isEmpty(): Checks whether the circular queue is empty or not.
-isFull(): Checks whether the circular queue is full or not.
+isEmpty( Checks whether the circular queue is empty or not.
+isFull( Checks whether the circular queue is full or not.
 """
 
 
 class MyCircularQueue:
 
-    def __init__(self, k: int):
+    ___ __init__(self, k: int
         """
         Initialize your data structure here. Set the size of the queue to be k.
         """
@@ -37,55 +37,55 @@ class MyCircularQueue:
         self.lst = [None for _ in range(k)]
 
 
-    def enQueue(self, value: int) -> bool:
+    ___ enQueue(self, value: int) -> bool:
         """
         Insert an element into the circular queue. Return true if the operation is successful.
         """
-        if self.sz >= self.k:
-            return False
+        __ self.sz >= self.k:
+            r_ False
 
         self.tail += 1
         self.lst[self.tail % self.k] = value
         self.sz += 1
-        return True
+        r_ True
 
-    def deQueue(self) -> bool:
+    ___ deQueue(self) -> bool:
         """
         Delete an element from the circular queue. Return true if the operation is successful.
         """
-        if self.sz <= 0:
-            return False
+        __ self.sz <= 0:
+            r_ False
 
         self.lst[self.head % self.k] = None
         self.head += 1
         self.sz -= 1
-        return True
+        r_ True
 
-    def Front(self) -> int:
+    ___ Front(self) -> int:
         """
         Get the front item from the queue.
         """
         ret = self.lst[self.head % self.k]
-        return ret if ret is not None else -1
+        r_ ret __ ret is not None else -1
 
-    def Rear(self) -> int:
+    ___ Rear(self) -> int:
         """
         Get the last item from the queue.
         """
         ret = self.lst[self.tail % self.k]
-        return ret if ret is not None else -1
+        r_ ret __ ret is not None else -1
 
-    def isEmpty(self) -> bool:
+    ___ isEmpty(self) -> bool:
         """
         Checks whether the circular queue is empty or not.
         """
-        return self.sz == 0
+        r_ self.sz __ 0
 
-    def isFull(self) -> bool:
+    ___ isFull(self) -> bool:
         """
         Checks whether the circular queue is full or not.
         """
-        return self.sz == self.k
+        r_ self.sz __ self.k
 
 
 # Your MyCircularQueue object will be instantiated and called as such:

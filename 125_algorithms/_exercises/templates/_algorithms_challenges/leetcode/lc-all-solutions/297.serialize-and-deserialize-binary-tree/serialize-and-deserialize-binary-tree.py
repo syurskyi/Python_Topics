@@ -1,15 +1,15 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+from collections ______ deque
 
 
 class Codec:
 
-  def serialize(self, root):
+  ___ serialize(self, root
     """Encodes a tree to a single string.
     
     :type root: TreeNode
@@ -17,18 +17,18 @@ class Codec:
     """
     ret = []
     queue = deque([root])
-    while queue:
+    w___ queue:
       top = queue.popleft()
-      if not top:
+      __ not top:
         ret.append("None")
         continue
-      else:
+      ____
         ret.append(str(top.val))
       queue.append(top.left)
       queue.append(top.right)
-    return ",".join(ret)
+    r_ ",".join(ret)
 
-  def deserialize(self, data):
+  ___ deserialize(self, data
     """Decodes your encoded data to tree.
     
     :type data: str
@@ -37,27 +37,27 @@ class Codec:
     left = lambda n: 2 * n + 1
     right = lambda n: 2 * n + 2
     data = data.split(",")
-    if data[0] == "None":
-      return None
+    __ data[0] __ "None":
+      r_ None
     root = TreeNode(int(data[0]))
     queue = deque([root])
     i = 0
-    while queue and i < len(data):
+    w___ queue and i < le.(data
       top = queue.popleft()
       i += 1
       left = right = None
-      if i < len(data) and data[i] != "None":
+      __ i < le.(data) and data[i] != "None":
         left = TreeNode(int(data[i]))
         queue.append(left)
       i += 1
-      if i < len(data) and data[i] != "None":
+      __ i < le.(data) and data[i] != "None":
         right = TreeNode(int(data[i]))
         queue.append(right)
 
       top.left = left
       top.right = right
 
-    return root
+    r_ root
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

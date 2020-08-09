@@ -4,38 +4,38 @@ Created on Oct 22, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def longestUnivaluePath(self, root):
+class Solution(object
+    ___ longestUnivaluePath(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
         self.maxLen = 0
         self.helper(root)
-        return self.maxLen
+        r_ self.maxLen
     
-    def helper(self, root):
-        if not root: return 0
+    ___ helper(self, root
+        __ not root: r_ 0
         left = self.helper(root.left)
         right = self.helper(root.right)
-        if root.left and root.left.val == root.val:
+        __ root.left and root.left.val __ root.val:
             left += 1
-        else:
+        ____
             left = 0
-        if root.right and root.right.val == root.val:
+        __ root.right and root.right.val __ root.val:
             right += 1
-        else:
+        ____
             right = 0
         self.maxLen = max(self.maxLen, left+right)
-        return max(left, right)
+        r_ max(left, right)
     
-    def test(self):
+    ___ test(self
         testCases = [
             TreeNode(5, TreeNode(4, TreeNode(1), TreeNode(1)), TreeNode(5, None, TreeNode(5))),
             TreeNode(1, TreeNode(4, TreeNode(4), TreeNode(4)), TreeNode(5, None, TreeNode(5))),
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

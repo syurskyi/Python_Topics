@@ -62,14 +62,14 @@ Explanation:The maximum width existing in the fourth level with the length 8 (6,
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def widthOfBinaryTree(self, root: TreeNode) -> int:
+    ___ widthOfBinaryTree(self, root: TreeNode) -> int:
         """
            0
           0 1
@@ -77,21 +77,21 @@ class Solution:
 
         BFS, level index
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
 
         ret = 0
         q = [(0, root)]  # (index, node)
-        while q:
+        w___ q:
             cur_q = []
             left, right = q[0][0], q[-1][0]
             ret = max(ret, right - left + 1)
             for idx, node in q:
-                if node.left:
+                __ node.left:
                     cur_q.append((idx * 2, node.left))
-                if node.right:
+                __ node.right:
                     cur_q.append((idx * 2 + 1, node.right))
 
             q = cur_q
 
-        return ret
+        r_ ret

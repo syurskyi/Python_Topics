@@ -7,17 +7,17 @@ class Solution:
     @param: s: A string
     @return: A list of lists of string
     """
-    def partition(self, s):
-        if not s:
-            return self.ans
+    ___ partition(self, s
+        __ not s:
+            r_ self.ans
 
-        self.n = len(s)
+        self.n = le.(s)
         self.check_palindrome(s)
         self.dfs(s, 0, [])
 
-        return self.ans
+        r_ self.ans
 
-    def check_palindrome(self, s):
+    ___ check_palindrome(self, s
         """
         assuming string = 'aabb'
         s: start_index, e: end_index
@@ -50,34 +50,34 @@ class Solution:
         # check the diagonal line `r1` and `r2`
         # the traversal order is top-left -> bottom-right, see graph above
         # since the status of `r3`, `r4`, ... depends on that
-        for end in range(self.n):
+        for end in range(self.n
             self.is_palindrome[end][end] = True
 
-            if end > 0:
+            __ end > 0:
                 start = end - 1
-                self.is_palindrome[start][end] = (s[start] == s[end])
+                self.is_palindrome[start][end] = (s[start] __ s[end])
 
         # check the remaining triangle and traverse by line: `r3`, `r4`, ...
         # the traversal order is bottom -> top, see graph above
         # n - 3 = (n - 1) - 2
         # start + 2
-        for start in range(self.n - 3, -1, -1):
-            for end in range(start + 2, self.n):
+        for start in range(self.n - 3, -1, -1
+            for end in range(start + 2, self.n
                 self.is_palindrome[start][end] = (
                     self.is_palindrome[start + 1][end - 1]
-                    and s[start] == s[end]
+                    and s[start] __ s[end]
                 )
 
     # traverse all of the possible substring from start
     # if is a palindrome, continue to traverse
     # otherwise will be ignored
     # and catch all result at the end
-    def dfs(self, s, start, palindromes):
-        if start >= self.n:
+    ___ dfs(self, s, start, palindromes
+        __ start >= self.n:
             self.ans.append(palindromes)
         next_start = 0
-        for end in range(start, self.n):
-            if self.is_palindrome[start][end]:
+        for end in range(start, self.n
+            __ self.is_palindrome[start][end]:
                 # `palindromes + [s[start:next_start]]`
                 # will create and return new list
                 next_start = end + 1

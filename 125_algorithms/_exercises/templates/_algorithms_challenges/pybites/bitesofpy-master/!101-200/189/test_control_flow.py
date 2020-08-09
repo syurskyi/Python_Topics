@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from control_flow import filter_names
+from control_flow ______ filter_names
 
 
 @pytest.mark.parametrize("names, expected_return", [
@@ -21,5 +21,5 @@ from control_flow import filter_names
     (['tim', 'amber', 'ana', 'c1ndy', 'sara', 'molly', 'henry'],
      ['tim', 'amber', 'ana', 'sara', 'molly']),
 ])
-def test_filter_names(names, expected_return):
-    assert list(filter_names(names)) == expected_return
+___ test_filter_names(names, expected_return
+    assert list(filter_names(names)) __ expected_return

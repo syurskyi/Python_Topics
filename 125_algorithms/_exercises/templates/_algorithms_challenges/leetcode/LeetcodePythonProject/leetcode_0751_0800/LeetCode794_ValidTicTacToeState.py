@@ -3,8 +3,8 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def validTicTacToe(self, board):
+class Solution(object
+    ___ validTicTacToe(self, board
         """
         :type board: List[str]
         :rtype: bool
@@ -14,31 +14,31 @@ class Solution(object):
         cols = [0]*3
         diag = 0
         antidiag = 0
-        for i in range(3):
-            for j in range(3):
-                if board[i][j] == 'X':
+        for i in range(3
+            for j in range(3
+                __ board[i][j] __ 'X':
                     turns += 1
                     rows[i] += 1
                     cols[j] += 1
-                    if i == j: diag += 1
-                    if i+j == 2: antidiag += 1
-                elif board[i][j] == 'O':
+                    __ i __ j: diag += 1
+                    __ i+j __ 2: antidiag += 1
+                ____ board[i][j] __ 'O':
                     turns -= 1
                     rows[i] -= 1
                     cols[j] -= 1
-                    if i == j: diag -= 1
-                    if i+j == 2: antidiag -= 1
-        xwin = rows[0]==3 or rows[1]==3 or rows[2]==3 or\
-            cols[0]==3 or cols[1]== 3 or cols[2]==3 or\
-            diag == 3 or antidiag == 3
-        owin = rows[0]==-3 or rows[1]==-3 or rows[2]==-3 or\
-            cols[0]==-3 or cols[1]==-3 or cols[2]==-3 or\
-            diag == -3 or antidiag == -3
-        if (xwin and turns == 0) or (owin and turns == 1):
-            return False
-        return (turns==0 or turns==1) and (not xwin or not owin)
+                    __ i __ j: diag -= 1
+                    __ i+j __ 2: antidiag -= 1
+        xwin = rows[0]__3 or rows[1]__3 or rows[2]__3 or\
+            cols[0]__3 or cols[1]__ 3 or cols[2]__3 or\
+            diag __ 3 or antidiag __ 3
+        owin = rows[0]__-3 or rows[1]__-3 or rows[2]__-3 or\
+            cols[0]__-3 or cols[1]__-3 or cols[2]__-3 or\
+            diag __ -3 or antidiag __ -3
+        __ (xwin and turns __ 0) or (owin and turns __ 1
+            r_ False
+        r_ (turns__0 or turns__1) and (not xwin or not owin)
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["O  ", "   ", "   "],
             ["XOX", " X ", "   "],
@@ -52,5 +52,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

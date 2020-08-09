@@ -1,6 +1,6 @@
-def of_codon():
+___ of_codon(
     pass
 
 
-def of_rna():
+___ of_rna(
     pass

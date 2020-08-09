@@ -3,8 +3,8 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findPaths(self, m, n, N, i, j):
+class Solution(object
+    ___ findPaths(self, m, n, N, i, j
         """
         :type m: int
         :type n: int
@@ -13,24 +13,24 @@ class Solution(object):
         :type j: int
         :rtype: int
         """
-        if N < 0: return 0
+        __ N < 0: r_ 0
         mod = 10**9+7
         count = [[0]*n for _ in range(m)]
         count[i][j] = 1
         result = 0
-        for _ in range(N):
+        for _ in range(N
             tmp = [[0]*n for _ in range(m)]
-            for r in range(m):
-                for c in range(n):
-                    for nr, nc in (r+1, c), (r-1, c), (r, c+1), (r, c-1):
-                        if 0 <= nr < m and 0 <= nc < n:
+            for r in range(m
+                for c in range(n
+                    for nr, nc in (r+1, c), (r-1, c), (r, c+1), (r, c-1
+                        __ 0 <= nr < m and 0 <= nc < n:
                             tmp[nr][nc] = (tmp[nr][nc]+count[r][c])%mod
-                        else:
+                        ____
                             result = (result+count[r][c])%mod
             count = tmp
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             [2, 2, 2, 0, 0],
             [1, 3, 3, 0, 1],
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

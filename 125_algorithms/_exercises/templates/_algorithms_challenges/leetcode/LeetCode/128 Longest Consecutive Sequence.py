@@ -9,7 +9,7 @@ Your algorithm should run in O(n) complexity.
 """
 __author__ = 'Danyang'
 class Solution:
-    def longestConsecutive_TLE(self, num):
+    ___ longestConsecutive_TLE(self, num
         """
         O(n) within in one scan
         algorithm: array, inverted index
@@ -20,29 +20,29 @@ class Solution:
         :param num: a list of integer
         :return: an integer
         """
-        length = len(num)
+        length = le.(num)
         inverted_table = dict(zip(num, range(length)))
 
         max_length = -1<<31
-        for ind, val in enumerate(num):
+        for ind, val in enumerate(num
             current_length = 1
             # check val--
             sequence_val_expected = val-1
-            while sequence_val_expected in inverted_table:
+            w___ sequence_val_expected in inverted_table:
                 sequence_val_expected -= 1
                 current_length += 1
 
             # check val++
             sequence_val_expected = val+1
-            while sequence_val_expected in inverted_table:
+            w___ sequence_val_expected in inverted_table:
                 sequence_val_expected += 1
                 current_length += 1
 
             max_length = max(max_length, current_length)
 
-        return max_length
+        r_ max_length
 
-    def longestConsecutive(self, num):
+    ___ longestConsecutive(self, num
         """
         Algorithm: pivot scanning
         array, inverted index (visited)
@@ -57,26 +57,26 @@ class Solution:
         visited = {item: False for item in num}
 
         max_length = -1<<31
-        for ind, val in enumerate(num):
-            if visited[val]: continue
+        for ind, val in enumerate(num
+            __ visited[val]: continue
 
             current_length = 1
 
             # check val--
             sequence_val_expected = val-1
-            while sequence_val_expected in visited:
+            w___ sequence_val_expected in visited:
                 visited[sequence_val_expected] = True
                 sequence_val_expected -= 1
                 current_length += 1
 
             # check val++
             sequence_val_expected = val+1
-            while sequence_val_expected in visited:
+            w___ sequence_val_expected in visited:
                 visited[sequence_val_expected] = True
                 sequence_val_expected += 1
                 current_length += 1
 
             max_length = max(max_length, current_length)
 
-        return max_length
+        r_ max_length
 

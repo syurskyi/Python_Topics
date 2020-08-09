@@ -4,8 +4,8 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def verifyPreorder(self, preorder):
+class Solution(object
+    ___ verifyPreorder(self, preorder
         """
         :type preorder: List[int]
         :rtype: bool
@@ -13,16 +13,16 @@ class Solution(object):
         low = float('-inf')
         i = -1
         for p in preorder:
-            if p < low:
-                return False
-            while i >= 0 and p > preorder[i]:
+            __ p < low:
+                r_ False
+            w___ i >= 0 and p > preorder[i]:
                 low = preorder[i]
                 i -= 1
             i += 1
             preorder[i] = p
-        return True
+        r_ True
     
-    def verifyPreorderStack(self, preorder):
+    ___ verifyPreorderStack(self, preorder
         """
         :type preorder: List[int]
         :rtype: bool
@@ -30,9 +30,9 @@ class Solution(object):
         stack = []
         low = float('-inf')
         for p in preorder:
-            if p < low:
-                return False
-            while stack and stack[-1] < p:
+            __ p < low:
+                r_ False
+            w___ stack and stack[-1] < p:
                 low = stack.pop()
             stack.append(p)
-        return True
+        r_ True

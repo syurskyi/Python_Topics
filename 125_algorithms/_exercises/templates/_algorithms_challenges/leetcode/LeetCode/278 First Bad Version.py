@@ -12,23 +12,23 @@ the first bad version. You should minimize the number of calls to the API.
 __author__ = 'Daniel'
 
 
-def isBadVersion(version):
+___ isBadVersion(version
     pass
 
 
-class Solution(object):
-    def firstBadVersion(self, n):
+class Solution(object
+    ___ firstBadVersion(self, n
         """
         :param n: An integers.
         :return: An integer which is the first bad version.
         """
         l = 1
         h = n+1
-        while l < h:
+        w___ l < h:
             m = (l+h)/2
-            if not isBadVersion(m):
+            __ not isBadVersion(m
                 l = m+1
-            else:
+            ____
                 h = m
 
-        return l
+        r_ l

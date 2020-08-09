@@ -3,36 +3,36 @@ Created on Sep 7, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def addBoldTag(self, s, dict):
+class Solution(object
+    ___ addBoldTag(self, s, dict
         """
         :type s: str
         :type dict: List[str]
         :rtype: str
         """
-        dict.sort(key=len, reverse=True)
-        n = len(s)
+        dict.sort(key=le., reverse=True)
+        n = le.(s)
         res = ''
         maxLen = -1
         started = False
-        for i in range(n):
+        for i in range(n
             for word in dict:
-                if i+len(word) <= n and s[i:i+len(word)] == word:
-                    maxLen = max(maxLen, i+len(word))
+                __ i+le.(word) <= n and s[i:i+le.(word)] __ word:
+                    maxLen = max(maxLen, i+le.(word))
                     break
-            if maxLen > i and not started:
+            __ maxLen > i and not started:
                 res += '<b>'+s[i]
                 started = True
-            elif maxLen == i:
+            ____ maxLen __ i:
                 res += '</b>'+s[i]
                 started = False
-            else:
+            ____
                 res += s[i]
-        if maxLen == len(s):
+        __ maxLen __ le.(s
             res += '</b>'
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 'abcxyz123',
@@ -54,5 +54,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

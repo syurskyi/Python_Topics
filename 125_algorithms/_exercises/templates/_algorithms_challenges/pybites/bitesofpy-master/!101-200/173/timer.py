@@ -1,10 +1,10 @@
-from datetime import datetime, timedelta
+from datetime ______ datetime, timedelta
 
 NOW = datetime(year=2019, month=2, day=6,
                hour=22, minute=0, second=0)
 
 
-def add_todo(delay_time: str, task: str,
+___ add_todo(delay_time: str, task: str,
              start_time: datetime = NOW) -> str:
     """
     Add a todo list item in the future with a delay time.
@@ -16,21 +16,21 @@ def add_todo(delay_time: str, task: str,
     - 45 or 45s = 45 seconds
 
     Return the task and planned time which is calculated from
-    provided start_time (here default = NOW):
+    provided start_time (here default = NOW
     >>> add_todo("1h 10m", "Wash my car")
     >>> "Wash my car @ 2019-02-06 23:10:00"
     """
     delay = delay_time.split()
     td = start_time
     for dl in delay:
-        if dl[-1] == 'd':
+        __ dl[-1] __ 'd':
             td += timedelta(days=int(dl[:-1]))
-        elif dl[-1] == 'h':
+        ____ dl[-1] __ 'h':
             td += timedelta(hours=int(dl[:-1]))
-        elif dl[-1] == 'm':
+        ____ dl[-1] __ 'm':
             td += timedelta(minutes=int(dl[:-1]))
-        elif dl[-1] == 's':
+        ____ dl[-1] __ 's':
             td += timedelta(seconds=int(dl[:-1]))
-        else:
+        ____
             td += timedelta(seconds=int(dl))
-    return f'{task} @ {td.strftime("%Y-%m-%d %H:%M:%S")}'
+    r_ f'{task} @ {td.strftime("%Y-%m-%d %H:%M:%S")}'

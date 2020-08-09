@@ -1,4 +1,4 @@
-import collections
+______ collections
 
 
 class Solution:
@@ -7,39 +7,39 @@ class Solution:
     @param end: The end points set
     @return: Return if the graph is cyclic
     """
-    def isCyclicGraph(self, start, end):
-        if not start or not end or len(start) != len(end):
-            return False
+    ___ isCyclicGraph(self, start, end
+        __ not start or not end or le.(start) != le.(end
+            r_ False
 
-        n = len(start)
+        n = le.(start)
         nxt = collections.defaultdict(set)
         visited = set()
         rec_stack = set()
 
-        for i in range(n):
+        for i in range(n
             nxt[start[i]].add(end[i])
 
-        for i in range(n):
-            if start[i] in visited:
+        for i in range(n
+            __ start[i] in visited:
                 continue
-            if self.dfs(start[i], nxt, visited, rec_stack):
-                return True
+            __ self.dfs(start[i], nxt, visited, rec_stack
+                r_ True
 
-        return False
+        r_ False
 
-    def dfs(self, u, nxt, visited, rec_stack):
-        if u not in nxt:
-            return False
+    ___ dfs(self, u, nxt, visited, rec_stack
+        __ u not in nxt:
+            r_ False
 
         visited.add(u)
         rec_stack.add(u)
 
         for v in nxt[u]:
-            if v in rec_stack:
-                return True
+            __ v in rec_stack:
+                r_ True
 
-            if v not in visited and self.dfs(v, nxt, visited, rec_stack):
-                return True
+            __ v not in visited and self.dfs(v, nxt, visited, rec_stack
+                r_ True
 
         rec_stack.discard(u)
-        return False
+        r_ False

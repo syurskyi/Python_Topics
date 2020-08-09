@@ -1,9 +1,9 @@
 """
 Definition of ListNode
 
-class ListNode(object):
+class ListNode(object
 
-    def __init__(self, val, next=None):
+    ___ __init__(self, val, next=None
         self.val = val
         self.next = next
 """
@@ -14,7 +14,7 @@ class Solution:
     @param: head: n
     @return: The new head of reversed linked list.
     """
-    def reverse(self, head):
+    ___ reverse(self, head
         """
         example: 1->2->3
 
@@ -37,10 +37,10 @@ class Solution:
         """
         pre = nxt = None
 
-        while head:
+        w___ head:
             nxt = head.next  # save the remaining children
             head.next = pre  # break the link
             pre = head       # save the new head
             head = nxt       # pointer the old head
 
-        return pre
+        r_ pre

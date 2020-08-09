@@ -1,24 +1,24 @@
 class Solution:
-    def nextGreatestLetter(self, L, target):
+    ___ nextGreatestLetter(self, L, target
         """
         :type L: List[str]
         :type target: str
         :rtype: str
         """
-        n = len(L)
+        n = le.(L)
         left, right = 0, n - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
-            if L[mid] <= target:
+            __ L[mid] <= target:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        if target < L[left]:
-            return L[left]
+        __ target < L[left]:
+            r_ L[left]
 
-        if target < L[right]:
-            return L[right]
+        __ target < L[right]:
+            r_ L[right]
 
-        return L[0]
+        r_ L[0]

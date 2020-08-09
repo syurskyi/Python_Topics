@@ -14,14 +14,14 @@ All root-to-leaf paths are:
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def binaryTreePaths(self, root):
+class Solution(object
+    ___ binaryTreePaths(self, root
         """
         :type root: TreeNode
         :rtype: List[str]
@@ -29,14 +29,14 @@ class Solution(object):
         res = []
         cand = []
         self.binary_tree_paths(root, cand, res)
-        return res
+        r_ res
 
-    def binary_tree_paths(self, root, cand, res):
-        if root is None:
-            return
-        else:
+    ___ binary_tree_paths(self, root, cand, res
+        __ root is None:
+            r_
+        ____
             cand.append(root.val)
-            if root.left is None and root.right is None:
+            __ root.left is None and root.right is None:
                 p = '->'.join(map(str, cand))
                 res.append(p)
             self.binary_tree_paths(root.left, cand, res)

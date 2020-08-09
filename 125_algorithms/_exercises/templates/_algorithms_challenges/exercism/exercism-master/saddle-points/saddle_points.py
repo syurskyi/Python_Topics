@@ -1,31 +1,31 @@
 class SaddlePoints:
-    def __init__(self, matrix):
+    ___ __init__(self, matrix
         self.matrix = matrix
         self.columns = list(zip(*self.matrix))
 
-    def get_saddle_points(self):
-        if self.invalid_matrix():
+    ___ get_saddle_points(self
+        __ self.invalid_matrix(
             raise ValueError('Matrix has rows of unequal length')
-        return self.saddle_points()
+        r_ self.saddle_points()
 
-    def saddle_points(self):
+    ___ saddle_points(self
         saddle_points = set()
-        for row in range(len(self.matrix)):
-            for col in range(len(self.matrix[row])):
-                if self.saddle_point(row, col):
+        for row in range(le.(self.matrix)):
+            for col in range(le.(self.matrix[row])):
+                __ self.saddle_point(row, col
                     saddle_points.add((row, col))
-        return saddle_points
+        r_ saddle_points
 
-    def saddle_point(self, row, col):
-        return (self.matrix[row][col] == max(self.matrix[row]) and
-                self.matrix[row][col] == min(self.columns[col]))
+    ___ saddle_point(self, row, col
+        r_ (self.matrix[row][col] __ max(self.matrix[row]) and
+                self.matrix[row][col] __ min(self.columns[col]))
 
-    def invalid_matrix(self):
-        for row in range(len(self.matrix)):
-            if len(self.matrix[row]) != len(self.matrix[0]):
-                return True
-        return False
+    ___ invalid_matrix(self
+        for row in range(le.(self.matrix)):
+            __ le.(self.matrix[row]) != le.(self.matrix[0]
+                r_ True
+        r_ False
 
 
-def saddle_points(inp):
-    return SaddlePoints(inp).get_saddle_points()
+___ saddle_points(inp
+    r_ SaddlePoints(inp).get_saddle_points()

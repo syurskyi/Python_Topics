@@ -1,21 +1,21 @@
 class Solution:
     # @param num, a list of integer
     # @return a list of lists of integer
-    def subsetsWithDup(self, S):
+    ___ subsetsWithDup(self, S
         S.sort()
-        return self._subsets(S, len(S))
+        r_ self._subsets(S, le.(S))
 
-    def _subsets(self, S, k):
-        if k == 0:
-            return [[]]
-        else:
+    ___ _subsets(self, S, k
+        __ k __ 0:
+            r_ [[]]
+        ____
             res = [[]]
-            for i in range(len(S)):
-                if i > 0 and S[i] == S[i - 1]:
+            for i in range(le.(S)):
+                __ i > 0 and S[i] __ S[i - 1]:
                     pass
-                else:
+                ____
                     rest_subsets = self._subsets(S[i + 1:], k - 1)
                     for subset in rest_subsets:
                         subset.insert(0, S[i])
                     res += rest_subsets
-            return res
+            r_ res

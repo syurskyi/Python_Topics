@@ -3,25 +3,25 @@ Created on Jan 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def longestWord(self, words):
+class Solution(object
+    ___ longestWord(self, words
         """
         :type words: List[str]
         :rtype: str
         """
-        if not words: return ''
-        words.sort(key=len)
-        n = len(words[-1])
+        __ not words: r_ ''
+        words.sort(key=le.)
+        n = le.(words[-1])
         dp = [set() for _ in range(n+1)]
         for word in words:
-            if len(word) == 1 or word[:-1] in dp[len(word)-1]:
-                dp[len(word)].add(word)
-        for i in range(n, -1, -1):
-            if dp[i]:
-                return sorted(list(dp[i])).pop(0)
-        return ''
+            __ le.(word) __ 1 or word[:-1] in dp[le.(word)-1]:
+                dp[le.(word)].add(word)
+        for i in range(n, -1, -1
+            __ dp[i]:
+                r_ sorted(list(dp[i])).pop(0)
+        r_ ''
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["w","wo","wor","worl", "world"],
             ["a", "banana", "app", "appl", "ap", "apply", "apple"],
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

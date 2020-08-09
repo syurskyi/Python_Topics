@@ -5,7 +5,7 @@ Note:
 """
 
 
-import collections
+______ collections
 
 
 class Solution:
@@ -22,55 +22,55 @@ class Solution:
     HOUSE = 1
     WALL = 2
 
-    def shortestDistance(self, grid):
+    ___ shortestDistance(self, grid
         """
         :type grid: list[list[int]]
         :rtype: int
         """
-        if not grid or not grid[0]:
-            return -1
+        __ not grid or not grid[0]:
+            r_ -1
 
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         cnt = 0
         times = collections.defaultdict(int)
         steps = collections.defaultdict(int)
 
-        for x in range(m):
-            for y in range(n):
-                if grid[x][y] == self.HOUSE:
+        for x in range(m
+            for y in range(n
+                __ grid[x][y] __ self.HOUSE:
                     cnt += 1
                     self.bfs(grid, x, y, times, steps)
 
         ans = INF = float('inf')
 
-        for (x, y), t in times.items():
-            if t == cnt and steps[x, y] < ans:
+        for (x, y), t in times.items(
+            __ t __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
-        return ans if ans < INF else -1
+        r_ ans __ ans < INF else -1
 
-    def bfs(self, grid, x, y, times, steps):
-        m, n = len(grid), len(grid[0])
+    ___ bfs(self, grid, x, y, times, steps
+        m, n = le.(grid), le.(grid[0])
         queue, _queue = [(x, y)], []
         visited = set(queue)
         step = 0
 
-        while queue:
+        w___ queue:
             step += 1
 
             for x, y in queue:
                 for dx, dy in (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
-                ):
+
                     _x = x + dx
                     _y = y + dy
 
-                    if not (0 <= _x < m and 0 <= _y < n):
+                    __ not (0 <= _x < m and 0 <= _y < n
                         continue
-                    if grid[_x][_y] != self.EMPTY:
+                    __ grid[_x][_y] != self.EMPTY:
                         continue
-                    if (_x, _y) in visited:
+                    __ (_x, _y) in visited:
                         continue
 
                     visited.add((_x, _y))
@@ -82,7 +82,7 @@ class Solution:
             queue, _queue = _queue, []
 
 
-import collections
+______ collections
 
 
 class Solution:
@@ -97,22 +97,22 @@ class Solution:
     HOUSE = 1
     WALL = 2
 
-    def shortestDistance(self, grid):
+    ___ shortestDistance(self, grid
         """
         :type grid: list[list[int]]
         :rtype: int
         """
-        if not grid or not grid[0]:
-            return -1
+        __ not grid or not grid[0]:
+            r_ -1
 
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         cnt = 0
         ids = collections.defaultdict(set)  # record house ids
         steps = collections.defaultdict(int)  # total steps for all houses
 
-        for x in range(m):
-            for y in range(n):
-                if grid[x][y] != self.HOUSE:
+        for x in range(m
+            for y in range(n
+                __ grid[x][y] != self.HOUSE:
                     continue
 
                 cnt += 1
@@ -121,27 +121,27 @@ class Solution:
 
         ans = INF = float('inf')
 
-        for (x, y), hids in ids.items():
-            if len(hids) == cnt and steps[x, y] < ans:
+        for (x, y), hids in ids.items(
+            __ le.(hids) __ cnt and steps[x, y] < ans:
                 ans = steps[x, y]
 
-        return ans if ans < INF else -1
+        r_ ans __ ans < INF else -1
 
-    def dfs(self, grid, x, y, id, ids, steps, step):
-        m, n = len(grid), len(grid[0])
+    ___ dfs(self, grid, x, y, id, ids, steps, step
+        m, n = le.(grid), le.(grid[0])
 
         for dx, dy in (
             (-1, 0), (1, 0),
             (0, -1), (0, 1),
-        ):
+
             _x = x + dx
             _y = y + dy
 
-            if not (0 <= _x < m and 0 <= _y < n):
+            __ not (0 <= _x < m and 0 <= _y < n
                 continue
-            if grid[_x][_y] != self.EMPTY:
+            __ grid[_x][_y] != self.EMPTY:
                 continue
-            if step[x, y] + 1 >= step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
+            __ step[x, y] + 1 >= step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
                 continue
 
             ids[_x, _y].add(id)

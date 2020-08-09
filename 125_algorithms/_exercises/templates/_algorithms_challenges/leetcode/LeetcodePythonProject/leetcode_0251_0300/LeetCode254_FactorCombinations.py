@@ -4,49 +4,49 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def getFactors(self, n):
+class Solution(object
+    ___ getFactors(self, n
         """
         :type n: int
         :rtype: List[List[int]]
         """
         res, stack, x = [], [], 2
-        while True:
-            if x > n//x:
-                if not stack:
-                    return res
+        w___ True:
+            __ x > n//x:
+                __ not stack:
+                    r_ res
                 res.append(stack+[n])
                 x = stack.pop()
                 n *= x
                 x += 1
-            elif n % x == 0:
+            ____ n % x __ 0:
                 stack.append(x)
                 n = n//x
-            else:
+            ____
                 x += 1
     
-    def getFactorsSlow(self, n):
+    ___ getFactorsSlow(self, n
         """
         :type n: int
         :rtype: List[List[int]]
         """
         result = []
         self.helper(result, [], n, 2)
-        return result
+        r_ result
     
-    def helper(self, result, item, n, start):
-        if n <= 1:
-            if len(item)>1:
+    ___ helper(self, result, item, n, start
+        __ n <= 1:
+            __ le.(item)>1:
                 result.append(list(item))
-            return
+            r_
         
-        for i in range(start, n+1):
-            if n % i == 0:
+        for i in range(start, n+1
+            __ n % i __ 0:
                 item.append(i)
                 self.helper(result, item, int(n/i), i)
                 item.pop()
     
-    def test(self):
+    ___ test(self
         testCases = [
             8,
             1,
@@ -60,7 +60,7 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 
     

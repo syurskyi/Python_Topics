@@ -8,7 +8,7 @@ for i in range(int(input())):
     a,c,m,x,n = listo
     
     #run the loop to get the value of the nth number
-    for j in range(n):
+    for j in range(n
         x = (a*x + c) % m
         
     #print the output

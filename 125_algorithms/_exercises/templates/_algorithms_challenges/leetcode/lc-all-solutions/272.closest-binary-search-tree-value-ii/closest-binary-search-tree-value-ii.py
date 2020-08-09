@@ -1,12 +1,12 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def closestKValues(self, root, target, k):
+class Solution(object
+  ___ closestKValues(self, root, target, k
     """
     :type root: TreeNode
     :type target: float
@@ -17,49 +17,49 @@ class Solution(object):
     preStack = []
     sucStack = []
 
-    while root:
-      if root.val < target:
+    w___ root:
+      __ root.val < target:
         preStack.append(root)
         root = root.right
-      else:
+      ____
         sucStack.append(root)
         root = root.left
 
-    def getPredecessor(stack):
-      if not stack:
-        return
+    ___ getPredecessor(stack
+      __ not stack:
+        r_
       pre = stack.pop()
       p = pre.left
-      while p:
+      w___ p:
         stack.append(p)
         p = p.right
-      return pre
+      r_ pre
 
-    def getSuccessor(stack):
-      if not stack:
-        return
+    ___ getSuccessor(stack
+      __ not stack:
+        r_
       suc = stack.pop()
       p = suc.right
-      while p:
+      w___ p:
         stack.append(p)
         p = p.left
-      return suc
+      r_ suc
 
     pre = getPredecessor(preStack)
     suc = getSuccessor(sucStack)
 
-    while k:
+    w___ k:
       k -= 1
-      if pre and not suc:
+      __ pre and not suc:
         ans.append(pre.val)
         pre = getPredecessor(preStack)
-      elif not pre and suc:
+      ____ not pre and suc:
         ans.append(suc.val)
         suc = getSuccessor(sucStack)
-      elif pre and suc and abs(pre.val - target) <= abs(suc.val - target):
+      ____ pre and suc and abs(pre.val - target) <= abs(suc.val - target
         ans.append(pre.val)
         pre = getPredecessor(preStack)
-      elif pre and suc and abs(pre.val - target) >= abs(suc.val - target):
+      ____ pre and suc and abs(pre.val - target) >= abs(suc.val - target
         ans.append(suc.val)
         suc = getSuccessor(sucStack)
-    return ans
+    r_ ans

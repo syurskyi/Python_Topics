@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from Previous.anyall import (contains_only_vowels,
+from Previous.anyall ______ (contains_only_vowels,
                              contains_any_py_chars,
                              contains_digits)
 
@@ -15,7 +15,7 @@ from Previous.anyall import (contains_only_vowels,
     ('AE123', False),
     ('AiOuef', False),
 ])
-def test_contains_only_vowels(arg, expected):
+___ test_contains_only_vowels(arg, expected
     assert bool(contains_only_vowels(arg)) is expected
 
 
@@ -35,7 +35,7 @@ def test_contains_only_vowels(arg, expected):
     ('123', False),
     ('', False),
 ])
-def test_contains_any_py_chars(arg, expected):
+___ test_contains_any_py_chars(arg, expected
     assert bool(contains_any_py_chars(arg)) is expected
 
 
@@ -48,5 +48,5 @@ def test_contains_any_py_chars(arg, expected):
     ('hello', False),
     ('', False),
 ])
-def test_contains_digits(arg, expected):
+___ test_contains_digits(arg, expected
     assert bool(contains_digits(arg)) is expected

@@ -1,5 +1,5 @@
 class Solution:
-    def fourSum(self, nums, target):
+    ___ fourSum(self, nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -7,36 +7,36 @@ class Solution:
         """
         ans = []
 
-        if not nums or len(nums) < 4 or target is None:
-            return ans
+        __ not nums or le.(nums) < 4 or target is None:
+            r_ ans
 
-        n = len(nums)
+        n = le.(nums)
         nums.sort()
 
-        for a in range(n - 3):
-            if a > 0 and nums[a] == nums[a - 1]:
+        for a in range(n - 3
+            __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
-            for b in range(a + 1, n - 2):
-                if b > a + 1 and nums[b] == nums[b - 1]:
+            for b in range(a + 1, n - 2
+                __ b > a + 1 and nums[b] __ nums[b - 1]:
                     continue
 
                 c, d = b + 1, n - 1
 
-                while c < d:
+                w___ c < d:
                     total = nums[a] + nums[b] + nums[c] + nums[d]
 
-                    if total == target:
+                    __ total __ target:
                         ans.append([nums[a], nums[b], nums[c], nums[d]])
                         c += 1
                         d -= 1
-                        while c < d and nums[c] == nums[c - 1]:
+                        w___ c < d and nums[c] __ nums[c - 1]:
                             c += 1
-                        while c < d and nums[d] == nums[d + 1]:
+                        w___ c < d and nums[d] __ nums[d + 1]:
                             d -= 1
-                    elif total < target:
+                    ____ total < target:
                         c += 1
-                    else:
+                    ____
                         d -= 1
 
-        return ans
+        r_ ans

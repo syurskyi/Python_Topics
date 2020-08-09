@@ -1,5 +1,5 @@
-from collections import namedtuple
-from datetime import datetime
+from collections ______ namedtuple
+from datetime ______ datetime
 
 TimeOffset = namedtuple('TimeOffset', 'offset date_str divider')
 
@@ -16,28 +16,28 @@ TIME_OFFSETS = (
 )
 
 
-def pretty_date(date: datetime):
+___ pretty_date(date: datetime
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
-    if not isinstance(date, datetime) or date > NOW:
+    __ not isinstance(date, datetime) or date > NOW:
         raise ValueError('pretty_date() only accepts datetime objects in the past')
     diff = NOW - date
     seconds = int(diff.total_seconds())
     minutes = seconds // 60
     hours = minutes // 60
     # This doesn't _feel_ very pythonic…
-    if seconds < 10:
-        return 'just now'
-    if seconds < 60:
-        return f'{seconds} seconds ago'
-    if minutes < 2:
-        return 'a minute ago'
-    if minutes < 60:
-        return f'{minutes} minutes ago'
-    if hours < 2:
-        return 'an hour ago'
-    if hours < 24:
-        return f'{hours} hours ago'
-    if hours < 48:
-        return 'yesterday'
-    return date.strftime('%m/%d/%y')
+    __ seconds < 10:
+        r_ 'just now'
+    __ seconds < 60:
+        r_ f'{seconds} seconds ago'
+    __ minutes < 2:
+        r_ 'a minute ago'
+    __ minutes < 60:
+        r_ f'{minutes} minutes ago'
+    __ hours < 2:
+        r_ 'an hour ago'
+    __ hours < 24:
+        r_ f'{hours} hours ago'
+    __ hours < 48:
+        r_ 'yesterday'
+    r_ date.strftime('%m/%d/%y')

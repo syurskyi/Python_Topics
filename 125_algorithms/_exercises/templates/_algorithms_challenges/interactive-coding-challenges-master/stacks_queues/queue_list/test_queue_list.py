@@ -1,11 +1,11 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestQueue(object):
+class TestQueue(object
 
     # TODO: It would be better if we had unit tests for each
     # method in addition to the following end-to-end test
-    def test_end_to_end(self):
+    ___ test_end_to_end(self
         print('Test: Dequeue an empty queue')
         queue = Queue()
         assert_equal(queue.dequeue(), None)
@@ -29,10 +29,10 @@ class TestQueue(object):
         print('Success: test_end_to_end')
 
 
-def main():
+___ main(
     test = TestQueue()
     test.test_end_to_end()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

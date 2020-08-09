@@ -3,25 +3,25 @@ Created on Oct 5, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def judgeCircle(self, moves):
+class Solution(object
+    ___ judgeCircle(self, moves
         """
         :type moves: str
         :rtype: bool
         """
         up, left = 0, 0
         for c in moves:
-            if c == 'L':
+            __ c __ 'L':
                 left += 1
-            elif c == 'R':
+            ____ c __ 'R':
                 left -= 1
-            elif c == 'U':
+            ____ c __ 'U':
                 up += 1
-            else:
+            ____
                 up -= 1
-        return up == 0 and left == 0
+        r_ up __ 0 and left __ 0
     
-    def test(self):
+    ___ test(self
         testCases = [
             'UD',
             'LL',
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

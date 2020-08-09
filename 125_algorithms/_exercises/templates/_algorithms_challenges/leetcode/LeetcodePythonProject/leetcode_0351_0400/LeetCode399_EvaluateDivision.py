@@ -4,8 +4,8 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def calcEquation(self, equations, values, queries):
+class Solution(object
+    ___ calcEquation(self, equations, values, queries
         """
         :type equations: List[List[str]]
         :type values: List[float]
@@ -14,39 +14,39 @@ class Solution(object):
         """
         valuesMap = {}
         graph = {}
-        for e, v in zip(equations, values):
+        for e, v in zip(equations, values
             valuesMap[(e[0], e[1])] = v
             valuesMap[(e[1], e[0])] = 1.0/v
-            if e[0] in graph:
+            __ e[0] in graph:
                 graph[e[0]].add(e[1])
-            else:
+            ____
                 graph[e[0]] = set([e[1]])
-            if e[1] in graph:
+            __ e[1] in graph:
                 graph[e[1]].add(e[0])
-            else:
+            ____
                 graph[e[1]] = set([e[0]])
         result = []
         for query in queries:
-            if query[0] not in graph:
+            __ query[0] not in graph:
                 result.append(-1.0)
-            elif query[0] == query[1]:
+            ____ query[0] __ query[1]:
                 result.append(1.0)
-            else:
+            ____
                 tmp = [-1.0]
                 self.dfs(valuesMap, graph, query[0], query[1], 1.0, set(), tmp)
                 result.append(tmp[0])
-        return result
+        r_ result
     
-    def dfs(self, valuesMap, graph, start, target, curr, visited, result):
+    ___ dfs(self, valuesMap, graph, start, target, curr, visited, result
         visited.add(start)
-        if start == target:
+        __ start __ target:
             result[0] = curr
-        if start in graph:
+        __ start in graph:
             for nextNode in graph[start]:
-                if nextNode not in visited:
+                __ nextNode not in visited:
                     self.dfs(valuesMap, graph, nextNode, target, curr*valuesMap[(start, nextNode)], visited, result)
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 [["a", "b"], ["b", "c"]],
@@ -59,7 +59,7 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 
 

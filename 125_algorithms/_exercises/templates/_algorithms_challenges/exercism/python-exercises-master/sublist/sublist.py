@@ -1,2 +1,2 @@
-def check_lists():
+___ check_lists(
     pass

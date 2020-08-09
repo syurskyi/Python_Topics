@@ -1,10 +1,10 @@
-def fence_pattern():
+___ fence_pattern(
     pass
 
 
-def encode():
+___ encode(
     pass
 
 
-def decode():
+___ decode(
     pass

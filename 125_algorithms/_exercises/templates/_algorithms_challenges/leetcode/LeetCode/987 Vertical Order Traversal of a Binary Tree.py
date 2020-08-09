@@ -20,7 +20,7 @@ Example 1:
 Input: [3,9,20,null,null,15,7]
 Output: [[9],[3,15],[20],[7]]
 Explanation:
-Without loss of generality, we can assume the root node is at position (0, 0):
+Without loss of generality, we can assume the root node is at position (0, 0
 Then, the node with value 9 occurs at position (-1, -1);
 The nodes with values 3 and 15 occur at positions (0, 0) and (0, -2);
 The node with value 20 occurs at position (1, -1);
@@ -43,34 +43,34 @@ Each node's value will be between 0 and 1000.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.mp = defaultdict(list)  # element (-Y, val)  # from left to right, top to bottom
 
-    def verticalTraversal(self, root: TreeNode) -> List[List[int]]:
+    ___ verticalTraversal(self, root: TreeNode) -> List[List[int]]:
         self.dfs(root, 0, 0)
         ret = []
         mn = min(self.mp)
         mx = max(self.mp)
-        for i in range(mn, mx+1):
+        for i in range(mn, mx+1
             ret.append([
                 val
                 for _, val in sorted(self.mp[i])
             ])
-        return ret
+        r_ ret
 
-    def dfs(self, node, x, y):
-        if not node:
-            return
+    ___ dfs(self, node, x, y
+        __ not node:
+            r_
         self.mp[x].append((-y, node.val))
         self.dfs(node.left, x-1, y-1)
         self.dfs(node.right, x+1, y-1)

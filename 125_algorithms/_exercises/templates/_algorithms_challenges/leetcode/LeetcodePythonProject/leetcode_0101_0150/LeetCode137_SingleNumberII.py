@@ -4,8 +4,8 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def singleNumber(self, nums):
+class Solution(object
+    ___ singleNumber(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -17,9 +17,9 @@ class Solution(object):
             mask = ~(num1 & num2)
             num2 &= mask
             num1 &= mask
-        return num1
+        r_ num1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 1, 1, 3, 3, 3],
         ]
@@ -29,5 +29,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

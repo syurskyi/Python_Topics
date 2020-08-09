@@ -1,5 +1,5 @@
 class Solution:
-    def intersection(self, a, b):
+    ___ intersection(self, a, b
         """
         :type a: List[int]
         :type b: List[int]
@@ -7,21 +7,21 @@ class Solution:
         """
         ans = []
 
-        if not a or not b:
-            return ans
+        __ not a or not b:
+            r_ ans
 
         s = set(a)
         t = set(b)
 
         for x in s:
-            if x in t:
+            __ x in t:
                 ans.append(x)
 
-        return ans
+        r_ ans
 
 
 class Solution:
-    def intersection(self, a, b):
+    ___ intersection(self, a, b
         """
         :type a: List[int]
         :type b: List[int]
@@ -29,24 +29,24 @@ class Solution:
         """
         ans = []
 
-        if not a or not b:
-            return ans
+        __ not a or not b:
+            r_ ans
 
         a.sort()
         b.sort()
 
-        m, n = len(a), len(b)
+        m, n = le.(a), le.(b)
         i = j = 0
 
-        while i < m and j < n:
-            if a[i] == b[j]:
-                if not ans or a[i] != ans[-1]:
+        w___ i < m and j < n:
+            __ a[i] __ b[j]:
+                __ not ans or a[i] != ans[-1]:
                     ans.append(a[i])
                 i += 1
                 j += 1
-            elif a[i] < b[j]:
+            ____ a[i] < b[j]:
                 i += 1
-            else:
+            ____
                 j += 1
 
-        return ans
+        r_ ans

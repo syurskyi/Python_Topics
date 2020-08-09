@@ -6,7 +6,7 @@ in product case, needs to remove product in last recursion, and adds the product
 
 
 class Solution:
-    def addOperators(self, s, target):
+    ___ addOperators(self, s, target
         """
         :type s: str
         :type target: int
@@ -14,28 +14,28 @@ class Solution:
         """
         ans = []
 
-        if not s:
-            return ans
+        __ not s:
+            r_ ans
 
         self.dfs(s, 0, target, 0, 0, ans, [])
-        return ans
+        r_ ans
 
-    def dfs(self, s, start, target, val, multi, ans, path):
-        if start == len(s) and target == val:
+    ___ dfs(self, s, start, target, val, multi, ans, path
+        __ start __ le.(s) and target __ val:
             ans.append(''.join(path))
-            return
-        if start >= len(s):
-            return
+            r_
+        __ start >= le.(s
+            r_
 
-        for i in range(start, len(s)):
-            if i > start and s[start] == '0':
+        for i in range(start, le.(s)):
+            __ i > start and s[start] __ '0':
                 # only allow i == start and its `0`
                 break
 
             sa = s[start:i + 1]
             a = int(sa)
 
-            if start == 0:
+            __ start __ 0:
                 self.dfs(s, i + 1, target, a, a, ans, [sa])
                 continue
 

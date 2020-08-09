@@ -10,21 +10,21 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-    def __repr__(self):
-        return repr(self.val)
+    ___ __repr__(self
+        r_ repr(self.val)
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.swapped_pair = []
         self.current = None
         self.pre = None
 
-    def recoverTree(self, root):
+    ___ recoverTree(self, root
         """
         In-order traversal
         binary tree: {1, 2, 3, 4, 5, 6}
@@ -48,28 +48,28 @@ class Solution:
         :return: TreeNode
         """
         self.in_order(root)
-        if len(self.swapped_pair)==2:
+        __ le.(self.swapped_pair)__2:
             self.swapped_pair[0][0].val, self.swapped_pair[1][1].val = self.swapped_pair[1][1].val, self.swapped_pair[0][0].val
-        else: # neighboring
+        ____ # neighboring
             self.swapped_pair[0][0].val, self.swapped_pair[0][1].val = self.swapped_pair[0][1].val, self.swapped_pair[0][0].val
-        return root
+        r_ root
 
-    def in_order(self, current):
-        if not current:
-            return
+    ___ in_order(self, current
+        __ not current:
+            r_
 
         self.in_order(current.left)
         # update global
         self.pre = self.current
         self.current = current
-        if self.pre and not self.pre.val<self.current.val:
-            if not self.swapped_pair:
+        __ self.pre and not self.pre.val<self.current.val:
+            __ not self.swapped_pair:
                 self.swapped_pair.append((self.pre, self.current))  # pre is wrong
-            else:
+            ____
                 self.swapped_pair.append((self.pre, self.current))  # current is wrong
         self.in_order(current.right)
 
-    # def __get_smallest(self, root):
+    # ___ __get_smallest(self, root
     #     if not root.left and not root.right:
     #         return root.val
     #     if root.left:
@@ -77,7 +77,7 @@ class Solution:
     #     else:
     #         return self.__get_smallest(root.right)
     #
-    # def __get_largest(self, root):
+    # ___ __get_largest(self, root
     #     if not root.left and not root.right:
     #         return root.val
     #     if root.right:
@@ -85,7 +85,7 @@ class Solution:
     #     else:
     #         return self.__get_largest(root.left)
     #
-    # def __is_bst(self, root):
+    # ___ __is_bst(self, root
     #     if not root:
     #         return True
     #     if root.left and self.__get_largest(root.left)>root.val:
@@ -94,13 +94,13 @@ class Solution:
     #         return False
     #     return True
     #
-    # def __find(self, root, result):
-    #     if self.__is_bst(root.left) and self.__is_bst(root.right) and not self.__is_bst(root):
+    # ___ __find(self, root, result
+    #     if self.__is_bst(root.left) and self.__is_bst(root.right) and not self.__is_bst(root
     #         result.append(root)
     #     if root.left: self.__find(root.left, result)
     #     if root.right: self.__find(root.right, result)
 
-if __name__=="__main__":
+__ __name____"__main__":
     node1 = TreeNode(2)
     node2 = TreeNode(1)
     node1.right = node2

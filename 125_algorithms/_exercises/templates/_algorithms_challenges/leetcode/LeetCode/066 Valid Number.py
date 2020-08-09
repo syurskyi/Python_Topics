@@ -12,7 +12,7 @@ implementing one.
 """
 __author__ = 'Danyang'
 class Solution:
-    def isNumber_builtin(self, s):
+    ___ isNumber_builtin(self, s
         """
         using built-in function
         :param s: a string
@@ -20,11 +20,11 @@ class Solution:
         """
         try:
             float(s)
-            return True
+            r_ True
         except ValueError:
-            return False
+            r_ False
 
-    def isNumber(self, s):
+    ___ isNumber(self, s
         """
         D-FSA: Deterministic Finite State Automata
         Transition table T, which is constructed from FSA
@@ -54,33 +54,33 @@ class Solution:
         ]
         state = 0
         for char in s:
-            if state==-1:
-                return False
-            if char==" ":
+            __ state__-1:
+                r_ False
+            __ char__" ":
                 token = SPACE
-            elif char in ("-", "+"):
+            ____ char in ("-", "+"
                 token = SIGN
-            elif char in map(str, range(10)):
+            ____ char in map(str, range(10)):
                 token = DIGIT
-            elif char==".":
+            ____ char__".":
                 token = DOT
-            elif char in ("e", "E"):
+            ____ char in ("e", "E"
                 token = E
-            else:
+            ____
                 token = INVALID
 
             state = T[state][token]
-        if state in (1, 4, 7, 8):  # accept state
-            return True
-        else:
-            return False
+        __ state in (1, 4, 7, 8  # accept state
+            r_ True
+        ____
+            r_ False
 
-if __name__=="__main__":
-    assert Solution().isNumber(".2e81")==True
-    assert Solution().isNumber("6+1")==False
-    assert Solution().isNumber("1 a")==False
-    assert Solution().isNumber("1e10")==True
-    assert Solution().isNumber(" 0.1")==True
-    assert Solution().isNumber("abc")==False
+__ __name____"__main__":
+    assert Solution().isNumber(".2e81")__True
+    assert Solution().isNumber("6+1")__False
+    assert Solution().isNumber("1 a")__False
+    assert Solution().isNumber("1e10")__True
+    assert Solution().isNumber(" 0.1")__True
+    assert Solution().isNumber("abc")__False
 
 

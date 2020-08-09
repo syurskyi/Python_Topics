@@ -8,11 +8,11 @@ Return 0 if the array contains less than 2 elements.
 You may assume all elements in the array are non-negative integers and fit in the 32-bit signed integer range.
 """
 __author__ = 'Daniel'
-import sys
+______ sys
 
 
 class Solution:
-    def maximumGap(self, nums):
+    ___ maximumGap(self, nums
         """
         Brute force O(n lgn)
 
@@ -22,9 +22,9 @@ class Solution:
         :type nums: list[int]
         :rtype: int
         """
-        n = len(nums)
-        if n < 2:
-            return 0
+        n = le.(nums)
+        __ n < 2:
+            r_ 0
 
         g_min = min(nums)
         g_max = max(nums)
@@ -39,12 +39,12 @@ class Solution:
 
         max_gap = 0
         pre_max = g_min
-        for i in xrange(0, (g_max-g_min)/bin_width+1):
-            if i in bins_min:
+        for i in xrange(0, (g_max-g_min)/bin_width+1
+            __ i in bins_min:
                 max_gap = max(max_gap, bins_min[i]-pre_max)
                 pre_max = bins_max[i]
 
-        return max_gap
+        r_ max_gap
 
-if __name__ == "__main__":
-    assert Solution().maximumGap([1, 1000]) == 999
+__ __name__ __ "__main__":
+    assert Solution().maximumGap([1, 1000]) __ 999

@@ -1,7 +1,7 @@
-class Solution(object):
-  def isPowerOfFour(self, num):
+class Solution(object
+  ___ isPowerOfFour(self, num
     """
     :type num: int
     :rtype: bool
     """
-    return num & (num - 1) == 0 and (num - 1) % 3 == 0
+    r_ num & (num - 1) __ 0 and (num - 1) % 3 __ 0

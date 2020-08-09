@@ -1,22 +1,22 @@
-class Solution(object):
-  def strStr(self, haystack, needle):
+class Solution(object
+  ___ strStr(self, haystack, needle
     """
     :type haystack: str
     :type needle: str
     :rtype: int
     """
-    if len(haystack) == len(needle):
-      if haystack == needle:
-        return 0
-      else:
-        return -1
+    __ le.(haystack) __ le.(needle
+      __ haystack __ needle:
+        r_ 0
+      ____
+        r_ -1
 
-    for i in range(0, len(haystack)):
+    for i in range(0, le.(haystack)):
       k = i
       j = 0
-      while j < len(needle) and k < len(haystack) and haystack[k] == needle[j]:
+      w___ j < le.(needle) and k < le.(haystack) and haystack[k] __ needle[j]:
         j += 1
         k += 1
-      if j == len(needle):
-        return i
-    return -1 if needle else 0
+      __ j __ le.(needle
+        r_ i
+    r_ -1 __ needle else 0

@@ -15,43 +15,43 @@ Each letter in pattern must map to a word with length that is at least 1.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def wordPattern(self, pattern, s):
+class Solution(object
+    ___ wordPattern(self, pattern, s
         lst = s.split(" ")
-        if len(pattern) != len(lst):
-            return False
+        __ le.(pattern) != le.(lst
+            r_ False
 
         char2word = {}
         words = set()
-        for i in xrange(len(pattern)):
-            if pattern[i] in char2word:
-                if char2word[pattern[i]] != lst[i]:
-                    return False
-                else:
+        for i in xrange(le.(pattern)):
+            __ pattern[i] in char2word:
+                __ char2word[pattern[i]] != lst[i]:
+                    r_ False
+                ____
                     assert lst[i] in words
-            else:
-                if lst[i] in words:
-                    return False
+            ____
+                __ lst[i] in words:
+                    r_ False
                 char2word[pattern[i]] = lst[i]
                 words.add(lst[i])
 
-        return True
+        r_ True
 
 
-class OneToOneMap(object):
-    def __init__(self):
+class OneToOneMap(object
+    ___ __init__(self
         self.m = {}  # keep a single map
 
-    def set(self, a, b):
+    ___ set(self, a, b
         self.m[a] = b
         self.m[b] = a
 
-    def get(self, a):
-        return self.m.get(a)
+    ___ get(self, a
+        r_ self.m.get(a)
 
 
-class SolutionError(object):
-    def wordPattern(self, pattern, str):
+class SolutionError(object
+    ___ wordPattern(self, pattern, str
         """
         May not always work due to OneToOneMap implementation in the case that a word is 1-letter.
 
@@ -61,21 +61,21 @@ class SolutionError(object):
         """
         m = OneToOneMap()
         lst = str.split(" ")
-        if len(pattern) != len(lst):
-            return False
+        __ le.(pattern) != le.(lst
+            r_ False
 
-        for i in xrange(len(pattern)):
+        for i in xrange(le.(pattern)):
             a = m.get(pattern[i])
             b = m.get(lst[i])
-            if a is None and b is None:
+            __ a is None and b is None:
                 m.set(pattern[i], lst[i])
-            elif a is None and b is not None:
-                return False
-            elif a != lst[i]:
-                return False
+            ____ a is None and b is not None:
+                r_ False
+            ____ a != lst[i]:
+                r_ False
 
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
-    assert Solution().wordPattern("abba", "dog cat cat dog") == True
+__ __name__ __ "__main__":
+    assert Solution().wordPattern("abba", "dog cat cat dog") __ True

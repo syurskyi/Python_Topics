@@ -1,15 +1,15 @@
-def is_empty(dictionary):
-    if len(dictionary) == 0:
-        return True
-    else:
-        return False
+___ is_empty(dictionary
+    __ le.(dictionary) __ 0:
+        r_ True
+    ____
+        r_ False
 
 
-def test():
+___ test(
     print("Test has started")
     dict = {"Name": "Eleven"}
-    if is_empty(dict) != False:
+    __ is_empty(dict) != False:
         print("error1")
     b_dict = {}
-    if is_empty(b_dict) != True:
+    __ is_empty(b_dict) != True:
         print("error2")

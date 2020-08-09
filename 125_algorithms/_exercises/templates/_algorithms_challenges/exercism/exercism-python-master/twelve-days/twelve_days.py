@@ -1,18 +1,18 @@
 """Sings the twelve days of christmas"""
 
-def sing():
+___ sing(
     """Sings the twelve days of chirstmas"""
-    return verses(1, 12)
+    r_ verses(1, 12)
 
-def verses(start, stop):
+___ verses(start, stop
     """Sings several verses of the twelve days of christmas"""
-    return "\n".join(verse(n) for n in range(start, stop+1)) + "\n"
+    r_ "\n".join(verse(n) for n in range(start, stop+1)) + "\n"
 
-def verse(v):
+___ verse(v
     """Sings a verse of the twelve days of christmas"""
-    if v == 1:
+    __ v __ 1:
         # Stupid "and a"!!!!
-        return "On the first day of Christmas my true love gave to me, " \
+        r_ "On the first day of Christmas my true love gave to me, " \
                 "a Partridge in a Pear Tree.\n"
 
     nums = ["first", "second", "third", "fourth", "fifth", "sixth",
@@ -31,4 +31,4 @@ def verse(v):
              "twelve Drummers Drumming",
             ]
     start = "On the %s day of Christmas my true love gave to me"
-    return ", ".join([start % nums[v-1]] + gifts[v-1::-1]) + ".\n"
+    r_ ", ".join([start % nums[v-1]] + gifts[v-1::-1]) + ".\n"

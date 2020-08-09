@@ -12,20 +12,20 @@ Empty list is considered to have zero greatest sum. Note that the empty list or 
 """
 
 
-def maxSequence(arr):
+___ maxSequence(arr
     maximum = 0
     local_maximum = 0
     for i in arr:
-        if local_maximum > 0:
+        __ local_maximum > 0:
             local_maximum += i
-            if local_maximum < 0:
+            __ local_maximum < 0:
                 local_maximum = 0
-            elif local_maximum > maximum:
+            ____ local_maximum > maximum:
                 maximum = local_maximum
-        elif i > 0:
+        ____ i > 0:
             local_maximum += i
 
-    return maximum
+    r_ maximum
 
 
-assert maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == 6
+assert maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]) __ 6

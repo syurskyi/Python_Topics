@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestBits(object):
+class TestBits(object
 
-    def test_bits_to_flip(self):
+    ___ test_bits_to_flip(self
         bits = Bits()
         a = int('11101', base=2)
         b = int('01111', base=2)
@@ -12,10 +12,10 @@ class TestBits(object):
         print('Success: test_bits_to_flip')
 
 
-def main():
+___ main(
     test = TestBits()
     test.test_bits_to_flip()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

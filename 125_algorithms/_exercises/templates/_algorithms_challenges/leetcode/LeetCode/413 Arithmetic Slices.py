@@ -7,10 +7,10 @@ The function should return the number of arithmetic slices in the array A.
 """
 
 class Solution:
-    def count(self, l):
-        return (l-1) * l // 2
+    ___ count(self, l
+        r_ (l-1) * l // 2
 
-    def numberOfArithmeticSlices(self, A):
+    ___ numberOfArithmeticSlices(self, A
         """
         Diff the array, find the pattern.
         Find that it is a function of length of the sequence
@@ -20,17 +20,17 @@ class Solution:
         :rtype: int
         """
         ret = 0
-        if len(A) < 3:
-            return ret
+        __ le.(A) < 3:
+            r_ ret
 
         delta = []
-        for i in range(1, len(A)):
+        for i in range(1, le.(A)):
             delta.append(A[i] - A[i-1])
 
         s = 0
         e = 0
-        while s < len(delta):
-            while e < len(delta) and delta[s] == delta[e]:
+        w___ s < le.(delta
+            w___ e < le.(delta) and delta[s] __ delta[e]:
                 e += 1
 
             l = e - s
@@ -38,8 +38,8 @@ class Solution:
 
             s = e
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().numberOfArithmeticSlices([1, 2, 3, 4]) == 3
+__ __name__ __ "__main__":
+    assert Solution().numberOfArithmeticSlices([1, 2, 3, 4]) __ 3

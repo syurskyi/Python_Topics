@@ -3,8 +3,8 @@ Created on Feb 22, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def calculate(self, s):
+class Solution(object
+    ___ calculate(self, s
         """
         :type s: str
         :rtype: int
@@ -15,32 +15,32 @@ class Solution(object):
         curVal = 0
         preVal = 0
         sign = '+'
-        while i < len(s):
-            if s[i].isdigit():
+        w___ i < le.(s
+            __ s[i].isdigit(
                 curVal = 0
-                while i < len(s) and s[i].isdigit():
+                w___ i < le.(s) and s[i].isdigit(
                     curVal = curVal*10+int(s[i])
                     i += 1
-            if sign == '+':
+            __ sign __ '+':
                 res += preVal
                 preVal = curVal
-            elif sign == '-':
+            ____ sign __ '-':
                 res += preVal
                 preVal = -curVal
-            elif sign == '*':
+            ____ sign __ '*':
                 preVal *= curVal
-            elif sign == '/':
-                if preVal//curVal < 0 and preVal%curVal != 0:
+            ____ sign __ '/':
+                __ preVal//curVal < 0 and preVal%curVal != 0:
                     preVal = preVal//curVal+1
-                else:
+                ____
                     preVal = preVal//curVal
-            if i < len(s):
+            __ i < le.(s
                 sign = s[i]
                 i += 1
         res += preVal
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             '3*3-5',
             '-5+3*5',
@@ -53,5 +53,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

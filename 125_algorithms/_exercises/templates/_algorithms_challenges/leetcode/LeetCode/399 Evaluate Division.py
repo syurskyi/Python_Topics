@@ -18,14 +18,14 @@ values = [2.0, 3.0],
 queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 
 """
-from collections import defaultdict
-from itertools import izip
+from collections ______ defaultdict
+from itertools ______ izip
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def calcEquation(self, equations, values, queries):
+class Solution(object
+    ___ calcEquation(self, equations, values, queries
         """
         transitive closure
         :type equations: List[List[str]]
@@ -34,31 +34,31 @@ class Solution(object):
         :rtype: List[float]
         """
         G = defaultdict(dict)
-        for edge, val in izip(equations, values):
+        for edge, val in izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
-        return [self.dfs(G, s, e, set()) for s, e in queries]
+        r_ [self.dfs(G, s, e, set()) for s, e in queries]
 
-    def dfs(self, G, s, e, path):
-        if s not in G or e not in G:
-            return -1.0
-        if e in G[s]:
-            return G[s][e]
+    ___ dfs(self, G, s, e, path
+        __ s not in G or e not in G:
+            r_ -1.0
+        __ e in G[s]:
+            r_ G[s][e]
         for nbr in G[s]:
-            if nbr not in path:
+            __ nbr not in path:
                 path.add(nbr)
                 val = self.dfs(G, nbr, e, path)
-                if val != -1.0:
-                    return val * G[s][nbr]
+                __ val != -1.0:
+                    r_ val * G[s][nbr]
                 path.remove(nbr)
 
-        return -1.0
+        r_ -1.0
 
 
-class Solution(object):
-    def calcEquation(self, equations, values, queries):
+class Solution(object
+    ___ calcEquation(self, equations, values, queries
         """
         Floyd-Warshall algorithm
         transitive closure
@@ -68,7 +68,7 @@ class Solution(object):
         :rtype: List[float]
         """
         G = defaultdict(dict)
-        for edge, val in izip(equations, values):
+        for edge, val in izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
@@ -79,5 +79,5 @@ class Solution(object):
                 for e in G[mid]:
                     G[s][e] = G[s][mid] * G[mid][e]
 
-        return [G[s].get(e, -1.0) for s, e in queries]
+        r_ [G[s].get(e, -1.0) for s, e in queries]
 

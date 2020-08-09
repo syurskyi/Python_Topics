@@ -19,13 +19,13 @@ return
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def pathSum(self, root, sum):
+    ___ pathSum(self, root, sum
         """
         :param root: TreeNode
         :param sum: integer
@@ -33,24 +33,24 @@ class Solution:
         """
         result = []
         self.accumulatePathSum(root, sum, [], result)
-        return result
+        r_ result
 
-    def accumulatePathSum(self, root, sum, cur_path, result):
+    ___ accumulatePathSum(self, root, sum, cur_path, result
         """
         DFS
         Similar to previous path sum
         """
         # trivial
-        if not root:
-            return
+        __ not root:
+            r_
 
         sum = sum - root.val
         cur_path.append(root.val)
         # terminal condition
-        if sum==0 and root.left is None and root.right is None:
+        __ sum__0 and root.left is None and root.right is None:
             result.append(list(cur_path))  # new copy
-            return
+            r_
 
         # dfs with pre-checking
-        if root.left: self.accumulatePathSum(root.left, sum, list(cur_path), result)  # new copy
-        if root.right: self.accumulatePathSum(root.right, sum, list(cur_path), result)  # new copy
+        __ root.left: self.accumulatePathSum(root.left, sum, list(cur_path), result)  # new copy
+        __ root.right: self.accumulatePathSum(root.right, sum, list(cur_path), result)  # new copy

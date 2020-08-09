@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from split import split_words_and_quoted_text
+from split ______ split_words_and_quoted_text
 
 some_strings = (
     'Should give "3 words only"',
@@ -21,5 +21,5 @@ expected_returns = (
 @pytest.mark.parametrize("arg, ret",
                          zip(some_strings, expected_returns))
 
-def test_split_words_and_quoted_text(arg, ret):
-    assert split_words_and_quoted_text(arg) == ret
+___ test_split_words_and_quoted_text(arg, ret
+    assert split_words_and_quoted_text(arg) __ ret

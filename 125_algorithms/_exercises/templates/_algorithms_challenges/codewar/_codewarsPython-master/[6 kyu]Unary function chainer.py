@@ -1,19 +1,19 @@
-def chained(f):
+___ chained(f
     z = lambda x:x
     for func in f:
         func(z)
-        return z
+        r_ z
          
 
 
 
 
-def f1(x): return x*2
-def f2(x): return x+2
-def f3(x): return x**2
-def f4(x): return x.split()
-def f5(xs): return [x[::-1].title() for x in xs]
-def f6(xs): return "_".join(xs)
+___ f1(x r_ x*2
+___ f2(x r_ x+2
+___ f3(x r_ x**2
+___ f4(x r_ x.split()
+___ f5(xs r_ [x[::-1].title() for x in xs]
+___ f6(xs r_ "_".join(xs)
 
 print(chained([f1,f2,f3])(0)) #4 
 

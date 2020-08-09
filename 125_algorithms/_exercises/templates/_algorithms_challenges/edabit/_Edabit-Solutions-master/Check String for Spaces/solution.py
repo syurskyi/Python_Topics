@@ -1,17 +1,17 @@
-def has_spaces(txt):
-    if txt.find(" ") == -1:
-        return False
-    else:
-        return True
+___ has_spaces(txt
+    __ txt.find(" ") __ -1:
+        r_ False
+    ____
+        r_ True
 
 
-def test():
+___ test(
     print("test has started")
-    if has_spaces("FOO") != False:
+    __ has_spaces("FOO") != False:
         print("error1")
-    if has_spaces("FOO BAR") != True:
+    __ has_spaces("FOO BAR") != True:
         print('error2')
-    if has_spaces("Foo ") != True:
+    __ has_spaces("Foo ") != True:
         print("error3")
-    if has_spaces("") != False:
+    __ has_spaces("") != False:
         print("error4")

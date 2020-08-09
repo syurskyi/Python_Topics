@@ -16,38 +16,38 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def preorderTraversal(self, root):
+class Solution(object
+    ___ preorderTraversal(self, root
         """Morris"""
         ret = []
         cur = root
-        while cur:
-            if not cur.left:
+        w___ cur:
+            __ not cur.left:
                 ret.append(cur.val)
                 cur = cur.right
-            else:
+            ____
                 pre = cur.left
-                while pre.right and pre.right != cur:
+                w___ pre.right and pre.right != cur:
                     pre = pre.right
 
-                if not pre.right:
+                __ not pre.right:
                     pre.right = cur
                     ret.append(cur.val)
                     cur = cur.left
-                else:
+                ____
                     pre.right = None
                     cur = cur.right
 
-        return ret
+        r_ ret
 
-    def preorderTraversal_memory(self, root):
+    ___ preorderTraversal_memory(self, root
         """
         dfs
         :param root:
@@ -55,18 +55,18 @@ class Solution(object):
         """
         lst = []
         self.preTraverse_itr(root, lst)
-        return lst
+        r_ lst
 
 
-    def preTraverse(self, node, lst):
-        if not node:
-            return
+    ___ preTraverse(self, node, lst
+        __ not node:
+            r_
         lst.append(node.val)
 
         self.preTraverse(node.left, lst)
         self.preTraverse(node.right, lst)
 
-    def preTraverse_itr(self, root, lst):
+    ___ preTraverse_itr(self, root, lst
         """
         stack = [R, L, cur]
 
@@ -77,21 +77,21 @@ class Solution(object):
         :param lst:
         :return:
         """
-        if not root:
-            return
+        __ not root:
+            r_
         stk = [root]
-        while stk:
+        w___ stk:
             node = stk.pop()
             lst.append(node.val)
-            if node.right:  # right first
+            __ node.right:  # right first
                 stk.append(node.right)
 
-            if node.left:
+            __ node.left:
                 stk.append(node.left)
 
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     t1 = TreeNode(1)
     t1.left = TreeNode(2)
     print Solution().preorderTraversal(t1)

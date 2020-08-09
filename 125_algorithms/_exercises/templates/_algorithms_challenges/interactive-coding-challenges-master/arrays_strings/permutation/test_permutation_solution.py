@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestPermutation(object):
+class TestPermutation(object
 
-    def test_permutation(self, func):
+    ___ test_permutation(self, func
         assert_equal(func(None, 'foo'), False)
         assert_equal(func('', 'foo'), False)
         assert_equal(func('Nib', 'bin'), False)
@@ -13,7 +13,7 @@ class TestPermutation(object):
         print('Success: test_permutation')
 
 
-def main():
+___ main(
     test = TestPermutation()
     permutations = Permutations()
     test.test_permutation(permutations.is_permutation)
@@ -26,5 +26,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

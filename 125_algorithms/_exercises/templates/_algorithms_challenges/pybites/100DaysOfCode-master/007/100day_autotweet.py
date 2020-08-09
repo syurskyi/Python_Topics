@@ -1,12 +1,12 @@
-import datetime
-import os
-import re
-import sys
+______ datetime
+______ os
+______ re
+______ sys
 
-import requests
-import pytz
+______ requests
+______ pytz
 
-from config import logging, api
+from config ______ logging, api
 
 tz = pytz.timezone('Europe/Amsterdam')
 now = datetime.datetime.now(tz)
@@ -20,39 +20,39 @@ TWEET_LEN = 140
 TWEET_LINK_LEN = 23
 
 
-def get_log():
-    return requests.get(LOG).text.split('\n')
+___ get_log(
+    r_ requests.get(LOG).text.split('\n')
 
 
-def get_day_progress(html):
+___ get_day_progress(html
     lines = [line.strip()
              for line in html
-             if line.strip()]
+             __ line.strip()]
 
     for line in lines:
         day_entry = line.strip('|').split('|')[0].strip()
-        if day_entry == CURRENT_CHALLENGE_DAY:
-            return LOG_ENTRY.search(line).groupdict()
+        __ day_entry __ CURRENT_CHALLENGE_DAY:
+            r_ LOG_ENTRY.search(line).groupdict()
 
 
-def create_tweet(m):
+___ create_tweet(m
     ht1, ht2 = '#100DaysOfCode', '#Python'
     title = m['title']
     day = m['day']
     url = REPO_URL + day
-    allowed_len = TWEET_LEN + len(url) - TWEET_LINK_LEN
+    allowed_len = TWEET_LEN + le.(url) - TWEET_LINK_LEN
 
     fmt = '{} - Day {}: {} {} {}'
     tweet = fmt.format(ht1, day, title, url, ht2)
-    surplus = len(tweet) - allowed_len
+    surplus = le.(tweet) - allowed_len
 
-    if surplus > 0:
+    __ surplus > 0:
         new_title = title[:-(surplus + 4)] + '...'
         tweet = tweet.replace(title, new_title)
-    return tweet
+    r_ tweet
 
 
-def tweet_status(tweet):
+___ tweet_status(tweet
     try:
         api.update_status(tweet)
         logging.info('Posted to Twitter')
@@ -60,25 +60,25 @@ def tweet_status(tweet):
         logging.error('Error posting to Twitter: {}'.format(exc))
 
 
-if __name__ == '__main__':
-    import socket
+__ __name__ __ '__main__':
+    ______ socket
     local = 'MacBook' in socket.gethostname()
     test = local or 'dry' in sys.argv[1:]
 
-    if test:
+    __ test:
         log = os.path.basename(LOG)
         with open(log) as f:
             html = f.readlines()
-    else:
+    ____
         html = get_log()
 
     m = get_day_progress(html)
-    if not m:
+    __ not m:
         logging.error('Error getting day progress from log')
         sys.exit(1)
 
     tweet = create_tweet(m)
-    if test:
+    __ test:
         logging.info('Test: tweet to send: {}'.format(tweet))
-    else:
+    ____
         tweet_status(tweet)

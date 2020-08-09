@@ -1,12 +1,12 @@
-from datetime import date, timedelta
-from random import shuffle
+from datetime ______ date, timedelta
+from random ______ shuffle
 
-import pytest
+______ pytest
 
-from missing_dates import get_missing_dates
+from missing_dates ______ get_missing_dates
 
 
-def _create_dates(missing, year=2019, month=2):
+___ _create_dates(missing, year=2019, month=2
     """Helper function to build up test cases.
 
        Returns a list of dates omitting days given
@@ -21,8 +21,8 @@ def _create_dates(missing, year=2019, month=2):
     # only the ones not in missing
     yield first
 
-    for day in range(first.day + 1, last.day):
-        if day not in missing:
+    for day in range(first.day + 1, last.day
+        __ day not in missing:
             yield first.replace(day=day)
 
     yield last
@@ -36,7 +36,7 @@ def _create_dates(missing, year=2019, month=2):
     ([1, 3, 7, 31], 5),  # expected = 3, 7, not start/end month
     (list(range(1, 31)), 6),  # 0 missing
 ])
-def test_get_missing_dates(missing, month):
+___ test_get_missing_dates(missing, month
     my_date_range = list(_create_dates(missing, month=month))
     start, end = my_date_range[0].day, my_date_range[-1].day
 
@@ -48,7 +48,7 @@ def test_get_missing_dates(missing, month):
                     get_missing_dates(my_date_range))
 
     # filter out begin and end dates of range
-    expected = sorted(d for d in missing if
+    expected = sorted(d for d in missing __
                       d not in (start, end))
 
-    assert actual == expected
+    assert actual __ expected

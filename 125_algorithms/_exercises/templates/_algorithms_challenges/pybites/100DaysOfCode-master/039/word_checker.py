@@ -1,25 +1,25 @@
 #!python3
 #word_checker.py is a script to print out every word combination using the word or letters provided.
 
-import itertools
+______ itertools
 
 DICTIONARY = 'dictionary.txt'
 
-def load_dictionary():
+___ load_dictionary(
     words = []
-    for i in open(DICTIONARY).readlines():
+    for i in open(DICTIONARY).readlines(
         words.append(i.lower().strip())
-    return words
+    r_ words
 	
-def check_word(dictionary, word):
+___ check_word(dictionary, word
     permutations = set(map(''.join, itertools.permutations(word)))
-    return {w for w in permutations if w in dictionary}
+    r_ {w for w in permutations __ w in dictionary}
 	
-def print_words(words):
+___ print_words(words
     for i in words:
         print(i)
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     ALL_WORDS = load_dictionary()
     user_word = input('Please enter a word to check: ').lower()
     print_words(check_word(ALL_WORDS, user_word))

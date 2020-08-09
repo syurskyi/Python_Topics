@@ -1,9 +1,9 @@
-def fizzbuzz(num):
-    if num % 3 == 0 and num % 5 == 0:
-        return 'Fizz Buzz'
-    elif num % 3 == 0:
-        return 'Fizz'
-    elif num % 5 == 0:
-        return 'Buzz'
-    else:
-        return num
+___ fizzbuzz(num
+    __ num % 3 __ 0 and num % 5 __ 0:
+        r_ 'Fizz Buzz'
+    ____ num % 3 __ 0:
+        r_ 'Fizz'
+    ____ num % 5 __ 0:
+        r_ 'Buzz'
+    ____
+        r_ num

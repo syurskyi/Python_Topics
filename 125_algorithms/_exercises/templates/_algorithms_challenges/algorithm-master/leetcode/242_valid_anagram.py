@@ -1,14 +1,14 @@
 class Solution:
-    def isAnagram(self, s, t):
+    ___ isAnagram(self, s, t
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        if s == t:
-            return True
-        if not s or not t or len(s) != len(t):
-            return False
+        __ s __ t:
+            r_ True
+        __ not s or not t or le.(s) != le.(t
+            r_ False
 
         freq = {}
 
@@ -16,9 +16,9 @@ class Solution:
             freq[c] = freq.get(c, 0) + 1
 
         for c in t:
-            if c not in freq:
-                return False
+            __ c not in freq:
+                r_ False
 
             freq[c] -= 1
 
-        return all(v == 0 for v in freq.values())
+        r_ all(v __ 0 for v in freq.values())

@@ -40,12 +40,12 @@ The price of each flight will be in the range [1, 10000].
 k is in the range of [0, n - 1].
 There will not be any duplicated flights or self cycles.
 """
-from collections import defaultdict
-import heapq
+from collections ______ defaultdict
+______ heapq
 
 
 class Solution:
-    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, K: int) -> int:
+    ___ findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, K: int) -> int:
         """
         dijkstra
         """
@@ -55,15 +55,15 @@ class Solution:
             G[u][v] = w
 
         pq = [(0, 0, src)]  # (cost, step, city)
-        while pq:
+        w___ pq:
             cost, k, u = heapq.heappop(pq)
-            if u == dst:
-                return cost
+            __ u __ dst:
+                r_ cost
 
             stops = k - 1 + 1
-            if stops <= K:
-                for v, w in G[u].items():
+            __ stops <= K:
+                for v, w in G[u].items(
                     heapq.heappush(pq, (cost + w, k + 1, v))
 
 
-        return -1
+        r_ -1

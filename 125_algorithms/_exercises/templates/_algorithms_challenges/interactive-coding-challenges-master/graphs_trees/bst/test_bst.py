@@ -1,12 +1,12 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestTree(object):
+class TestTree(object
 
-    def __init__(self):
+    ___ __init__(self
         self.results = Results()
 
-    def test_tree_one(self):
+    ___ test_tree_one(self
         bst = Bst()
         bst.insert(5)
         bst.insert(2)
@@ -17,7 +17,7 @@ class TestTree(object):
         assert_equal(str(self.results), '[1, 2, 3, 5, 8]')
         self.results.clear_results()
 
-    def test_tree_two(self):
+    ___ test_tree_two(self
         bst = Bst()
         bst.insert(1)
         bst.insert(2)
@@ -30,11 +30,11 @@ class TestTree(object):
         print('Success: test_tree')
 
 
-def main():
+___ main(
     test = TestTree()
     test.test_tree_one()
     test.test_tree_two()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

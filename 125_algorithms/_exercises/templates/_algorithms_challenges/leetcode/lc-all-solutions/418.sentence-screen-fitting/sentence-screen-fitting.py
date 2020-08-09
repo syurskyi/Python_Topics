@@ -1,5 +1,5 @@
-class Solution(object):
-  def wordsTyping(self, sentence, rows, cols):
+class Solution(object
+  ___ wordsTyping(self, sentence, rows, cols
     """
     :type sentence: List[str]
     :type rows: int
@@ -7,15 +7,15 @@ class Solution(object):
     :rtype: int
     """
     s = " ".join(sentence) + " "
-    n = len(s)
+    n = le.(s)
     start = 0
-    for _ in range(rows):
+    for _ in range(rows
       start += cols - 1
-      if s[start % n] == " ":
+      __ s[start % n] __ " ":
         start += 1
-      elif s[(start + 1) % n] == " ":
+      ____ s[(start + 1) % n] __ " ":
         start += 2
-      else:
-        while start > 0 and s[(start - 1) % n] != " ":
+      ____
+        w___ start > 0 and s[(start - 1) % n] != " ":
           start -= 1
-    return start / n
+    r_ start / n

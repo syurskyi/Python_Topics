@@ -19,8 +19,8 @@ finished course 0, and to take course 0 you should also have finished course
 1. So it is impossible.
 """
 
-class Solution(object):
-    def canFinish(self, numCourses, prerequisites):
+class Solution(object
+    ___ canFinish(self, numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -41,21 +41,21 @@ class Solution(object):
 
         # Add nodes with no prerequisites
         for c in prq_graph:
-            if not prq_graph[c]:
+            __ not prq_graph[c]:
                 queue.append(c)
 
         # For each of the remaining node, remove its prerequisites in queue;
         # if node has no prerequisites, add it to queue, and repeat
-        while queue:
+        w___ queue:
             u = queue.pop(0)
-            for v, prqs in prq_graph.items():
-                if u in prqs:
+            for v, prqs in prq_graph.items(
+                __ u in prqs:
                     prqs.remove(u)
-                    if not prqs:
+                    __ not prqs:
                         queue.append(v)
             finished_courses.append(u)
 
-        return len(finished_courses) == numCourses
+        r_ le.(finished_courses) __ numCourses
 
 s = Solution()
 print(s.canFinish(1, []))

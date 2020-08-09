@@ -30,20 +30,20 @@ expected output (serialized tree format) as [], not null.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def searchBST(self, root: TreeNode, val: int) -> TreeNode:
-        if not root:
-            return None
+    ___ searchBST(self, root: TreeNode, val: int) -> TreeNode:
+        __ not root:
+            r_ None
 
-        if root.val == val:
-            return root
-        elif root.val < val:
-            return self.searchBST(root.right, val)
-        else:
-            return self.searchBST(root.left, val)
+        __ root.val __ val:
+            r_ root
+        ____ root.val < val:
+            r_ self.searchBST(root.right, val)
+        ____
+            r_ self.searchBST(root.left, val)

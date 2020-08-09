@@ -7,68 +7,68 @@ every node never differ by more than 1.
 __author__ = 'Danyang'
 
 
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def __init__(self):
+class Solution(object
+    ___ __init__(self
         self.depth_bottom = {}
 
-    def isBalanced(self, root):
+    ___ isBalanced(self, root
         self.fathom(root, 0)
-        return self._is_balanced(root, 0)
+        r_ self._is_balanced(root, 0)
 
-    def _is_balanced(self, cur, depth):
+    ___ _is_balanced(self, cur, depth
         """
         :param depth: depth from root to current node.
         """
-        if not cur:
-            return True
+        __ not cur:
+            r_ True
 
         h1 = h2 = depth
-        if cur.left: h1 = self.depth_bottom[cur.left]
-        if cur.right: h2 = self.depth_bottom[cur.right]
+        __ cur.left: h1 = self.depth_bottom[cur.left]
+        __ cur.right: h2 = self.depth_bottom[cur.right]
 
-        if abs(h1 - h2) > 1:
-            return False
+        __ abs(h1 - h2) > 1:
+            r_ False
 
-        return all([self._is_balanced(cur.left, depth+1), self._is_balanced(cur.right, depth+1)])
+        r_ all([self._is_balanced(cur.left, depth+1), self._is_balanced(cur.right, depth+1)])
 
-    def fathom(self, root, depth):
-        if not root:
-            return depth-1
+    ___ fathom(self, root, depth
+        __ not root:
+            r_ depth-1
 
         ret = max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
         self.depth_bottom[root] = ret
-        return ret
+        r_ ret
 
 
-class SolutionSlow(object):
-    def isBalanced(self, root):
+class SolutionSlow(object
+    ___ isBalanced(self, root
         """
         pre-order traversal
 
         :param root: TreeNode
         :return: boolean
         """
-        if not root:
-            return True
-        if abs(self.fathom(root.left, 0)-self.fathom(root.right, 0)) > 1:
-            return False
+        __ not root:
+            r_ True
+        __ abs(self.fathom(root.left, 0)-self.fathom(root.right, 0)) > 1:
+            r_ False
 
-        if self.isBalanced(root.left) and self.isBalanced(root.right):
-            return True
-        else:
-            return False
+        __ self.isBalanced(root.left) and self.isBalanced(root.right
+            r_ True
+        ____
+            r_ False
 
-    def fathom(self, root, depth):
+    ___ fathom(self, root, depth
         """
         DFS
         """
-        if not root:
-            return depth-1  # test cases
-        return max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
+        __ not root:
+            r_ depth-1  # test cases
+        r_ max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))

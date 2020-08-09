@@ -1,16 +1,16 @@
 amount_values = int(input())
 results = []
 
-def get_sum(values):
+___ get_sum(values
 
     result = 0
 
     for i in values:
         result = result + i
     
-    return result
+    r_ result
 
-for i in range(amount_values):
+for i in range(amount_values
     values = list(map(int, input().split()))
     results.append(get_sum(values))
 

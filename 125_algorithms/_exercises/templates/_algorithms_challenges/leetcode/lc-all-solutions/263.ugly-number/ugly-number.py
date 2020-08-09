@@ -1,18 +1,18 @@
-class Solution(object):
-  def isUgly(self, n):
+class Solution(object
+  ___ isUgly(self, n
     """
     :type num: int
     :rtype: bool
     """
-    if n <= 0:
-      return False
-    while n % 2 == 0 or n % 3 == 0 or n % 5 == 0:
-      if n % 2 == 0:
+    __ n <= 0:
+      r_ False
+    w___ n % 2 __ 0 or n % 3 __ 0 or n % 5 __ 0:
+      __ n % 2 __ 0:
         n /= 2
-      if n % 3 == 0:
+      __ n % 3 __ 0:
         n /= 3
-      if n % 5 == 0:
+      __ n % 5 __ 0:
         n /= 5
-    if n == 1:
-      return True
-    return False
+    __ n __ 1:
+      r_ True
+    r_ False

@@ -1,2 +1,2 @@
-def summation(a,b): # int int
-    return int(a)+int(b)
+___ summation(a,b # int int
+    r_ int(a)+int(b)

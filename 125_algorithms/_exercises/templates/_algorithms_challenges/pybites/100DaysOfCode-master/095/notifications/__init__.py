@@ -1,1 +1,1 @@
-from .mail import generate_mail_msg, mail_msg
+from .mail ______ generate_mail_msg, mail_msg

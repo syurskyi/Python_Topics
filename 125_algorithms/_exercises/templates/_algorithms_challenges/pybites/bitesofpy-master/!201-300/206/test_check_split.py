@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from check_split import check_split
+from check_split ______ check_split
 
 
 @pytest.mark.parametrize("args, expected", [
@@ -17,7 +17,7 @@ from check_split import check_split
     (('$16.99', '10%', '20%', 3), '$22.43'),
     (('$16.99', '10%', '20%', 4), '$22.43'),
 ])
-def test_check_split(args, expected):
+___ test_check_split(args, expected
     grand_total, splits = check_split(*args)
-    assert grand_total == expected
-    assert grand_total == f'${sum(splits)}'
+    assert grand_total __ expected
+    assert grand_total __ f'${sum(splits)}'

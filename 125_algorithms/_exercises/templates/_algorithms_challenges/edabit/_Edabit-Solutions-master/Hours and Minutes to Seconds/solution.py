@@ -1,2 +1,2 @@
-def convert(hours, minutes):
-    return (hours * 60) * 60 + (minutes * 60)
+___ convert(hours, minutes
+    r_ (hours * 60) * 60 + (minutes * 60)

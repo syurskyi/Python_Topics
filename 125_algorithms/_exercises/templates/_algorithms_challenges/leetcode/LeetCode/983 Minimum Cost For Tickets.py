@@ -44,11 +44,11 @@ days is in strictly increasing order.
 costs.length == 3
 1 <= costs[i] <= 1000
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def mincostTickets(self, days: List[int], costs: List[int]) -> int:
+    ___ mincostTickets(self, days: List[int], costs: List[int]) -> int:
         """
         Iterate backward.
 
@@ -61,22 +61,22 @@ class Solution:
         O(365)
         """
         F = [float("inf") for _ in range(366 + 30)]
-        for i in range(366, 366 + 30):
+        for i in range(366, 366 + 30
             F[i] = 0
 
         days_set = set(days)
-        for i in range(365, 0, -1):
-            if i not in days_set:
+        for i in range(365, 0, -1
+            __ i not in days_set:
                 F[i] = F[i+1]
-            else:
+            ____
                 F[i] = min(
                     c + F[i+d]
                     for d, c in zip([1, 7, 30], costs)
                 )
 
-        return F[1]
+        r_ F[1]
 
-    def mincostTickets_error(self, days: List[int], costs: List[int]) -> int:
+    ___ mincostTickets_error(self, days: List[int], costs: List[int]) -> int:
         """
         Iterate backward on days
         O(30 * |days|)
@@ -84,23 +84,23 @@ class Solution:
         Iterate throughout the year is more elegant
         Need buffer day
         """
-        n = len(days)
+        n = le.(days)
         F = [float("inf") for _ in range(n)]
         F[-1] = costs[0]
-        for i in range(n-2, -1, -1):
-            for j in range(i+1, n):
+        for i in range(n-2, -1, -1
+            for j in range(i+1, n
                 delta = days[j] - days[i]
-                if delta <= 1:
+                __ delta <= 1:
                     F[i] = min(F[i], costs[0] + F[j])
-                if delta <= 7:
+                __ delta <= 7:
                     F[i] = min(F[i], costs[1] + F[j])
-                if delta <= 30:
+                __ delta <= 30:
                     F[i] = min(F[i], costs[2] + F[j])
-                else:
+                ____
                     break
-        return F[0]
+        r_ F[0]
 
-    def mincostTickets_error(self, days: List[int], costs: List[int]) -> int:
+    ___ mincostTickets_error(self, days: List[int], costs: List[int]) -> int:
         """
         dp
         Let F[i] be the min cost at day i, covering all trips from day 1 to i
@@ -113,13 +113,13 @@ class Solution:
         F = [float("inf") for _ in range(365 + 1)]
         F[0] = 0
         days_set = set(days)
-        for i in range(1, 366):
-            if i not in days_set:
+        for i in range(1, 366
+            __ i not in days_set:
                 F[i] = F[i-1]
-            else:
+            ____
                 # iterate forward does not work
                 F[i] = min(F[i], F[i-1] + costs[0])
 
 
-if __name__ == "__main__":
-    assert Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]) == 11
+__ __name__ __ "__main__":
+    assert Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]) __ 11

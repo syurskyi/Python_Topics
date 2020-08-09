@@ -1,16 +1,16 @@
-from random import randint
-from nose.tools import assert_equal
+from random ______ randint
+from nose.tools ______ assert_equal
 
 
-class TestSortStack(object):
+class TestSortStack(object
 
-    def get_sorted_stack(self, stack, numbers):
+    ___ get_sorted_stack(self, stack, numbers
         for x in numbers:
             stack.push(x)
         sorted_stack = stack.sort()
-        return sorted_stack
+        r_ sorted_stack
 
-    def test_sort_stack(self, stack):
+    ___ test_sort_stack(self, stack
         print('Test: Empty stack')
         sorted_stack = self.get_sorted_stack(stack, [])
         assert_equal(sorted_stack.pop(), None)
@@ -24,18 +24,18 @@ class TestSortStack(object):
         numbers = [randint(0, 10) for x in range(num_items)]
         sorted_stack = self.get_sorted_stack(stack, numbers)
         sorted_numbers = []
-        for _ in range(num_items):
+        for _ in range(num_items
             sorted_numbers.append(sorted_stack.pop())
         assert_equal(sorted_numbers, sorted(numbers, reverse=True))
 
         print('Success: test_sort_stack')
 
 
-def main():
+___ main(
     test = TestSortStack()
     test.test_sort_stack(MyStack())
     test.test_sort_stack(MyStackSimplified())
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

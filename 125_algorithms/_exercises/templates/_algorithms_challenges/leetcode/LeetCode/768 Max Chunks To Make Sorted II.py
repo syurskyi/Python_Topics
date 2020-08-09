@@ -31,12 +31,12 @@ Note:
 arr will have length in range [1, 2000].
 arr[i] will be an integer in range [0, 10**8].
 """
-from typing import List
-from collections import defaultdict, deque
+from typing ______ List
+from collections ______ defaultdict, deque
 
 
 class Solution:
-    def maxChunksToSorted(self, arr: List[int]) -> int:
+    ___ maxChunksToSorted(self, arr: List[int]) -> int:
         """
         not necessarily distinct
         sort and assign index
@@ -44,7 +44,7 @@ class Solution:
         """
         A = sorted(arr)
         hm = defaultdict(deque)
-        for i, e in enumerate(A):
+        for i, e in enumerate(A
             hm[e].append(i)
 
         proxy = []
@@ -53,9 +53,9 @@ class Solution:
 
         ret = 0
         cur_max_idx = 0
-        for i, e in enumerate(proxy):
+        for i, e in enumerate(proxy
             cur_max_idx = max(cur_max_idx, e)
-            if cur_max_idx == i:
+            __ cur_max_idx __ i:
                 ret += 1
 
-        return ret
+        r_ ret

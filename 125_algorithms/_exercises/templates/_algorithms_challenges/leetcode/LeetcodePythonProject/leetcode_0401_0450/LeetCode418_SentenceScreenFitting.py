@@ -4,37 +4,37 @@ Created on Apr 12, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def wordsTyping(self, sentence, rows, cols):
+class Solution(object
+    ___ wordsTyping(self, sentence, rows, cols
         """
         :type sentence: List[str]
         :type rows: int
         :type cols: int
         :rtype: int
         """
-        length = len(sentence)
+        length = le.(sentence)
         times = [0]*length
         nextInd = [0]*length
-        for i in range(length):
+        for i in range(length
             ind = i
             curLen = 0
             time = 0
-            while curLen+len(sentence[ind])<=cols:
-                curLen += len(sentence[ind])+1
+            w___ curLen+le.(sentence[ind])<=cols:
+                curLen += le.(sentence[ind])+1
                 ind += 1
-                if ind == len(sentence):
+                __ ind __ le.(sentence
                     ind = 0
                     time += 1
             nextInd[i] = ind
             times[i] = time
         ind = 0
         res = 0
-        for _ in range(rows):
+        for _ in range(rows
             res += times[ind]
             ind = nextInd[ind]
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             (["hello", "world"], 2, 8),
             (["a", "bcd", "e"], 3, 6),
@@ -48,5 +48,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

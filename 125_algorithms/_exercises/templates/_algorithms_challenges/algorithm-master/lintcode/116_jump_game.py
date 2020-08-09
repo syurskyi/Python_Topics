@@ -4,36 +4,36 @@ Greedy
 https://leetcode.com/articles/jump-game/
 """
 class Solution:
-    def canJump(self, A):
+    ___ canJump(self, A
         """
         :type A: List[int]
         :rtype: bool
         """
-        if not A:
-            return False
+        __ not A:
+            r_ False
 
-        last_at = len(A) - 1
+        last_at = le.(A) - 1
 
-        for i in range(last_at, -1, -1):
-            if i + A[i] >= last_at:
+        for i in range(last_at, -1, -1
+            __ i + A[i] >= last_at:
                 last_at = i
 
-        return last_at == 0
+        r_ last_at __ 0
 
 
 """
 DP
 """
 class Solution:
-    def canJump(self, A):
+    ___ canJump(self, A
         """
         :type A: List[int]
         :rtype: bool
         """
-        if not A:
-            return False
+        __ not A:
+            r_ False
 
-        n = len(A)
+        n = le.(A)
         dp = [False] * n
 
         """
@@ -41,17 +41,17 @@ class Solution:
         """
         dp[0] = True
 
-        for i in range(1, n):
-            for j in range(i):
+        for i in range(1, n
+            for j in range(i
                 """
                 backtracking
                 if `j` could be reached
                 """
-                if dp[j] and j + A[j] >= i:
+                __ dp[j] and j + A[j] >= i:
                     """
                     if jump from `j` can reach `i`
                     """
                     dp[i] = True
                     break
 
-        return dp[n - 1]
+        r_ dp[n - 1]

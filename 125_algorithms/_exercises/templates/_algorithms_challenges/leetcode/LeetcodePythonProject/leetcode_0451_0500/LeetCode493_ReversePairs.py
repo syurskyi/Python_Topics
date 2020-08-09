@@ -4,76 +4,76 @@ Created on May 9, 2017
 @author: MT
 '''
 
-class Node(object):
-    def __init__(self, val):
+class Node(object
+    ___ __init__(self, val
         self.val = val
         self.less = 0
         self.same = 1
         self.left = None
         self.right = None
 
-class Solution(object):
-    def reversePairs_mergeSort(self, nums):
+class Solution(object
+    ___ reversePairs_mergeSort(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
         self.cnt = 0
-        def msort(lst):
-            n = len(lst)
-            if n <= 1:
-                return lst
-            else:
-                return merger(msort(lst[:int(n/2)]), msort(lst[int(n/2):]))
-        def merger(left, right):
+        ___ msort(lst
+            n = le.(lst)
+            __ n <= 1:
+                r_ lst
+            ____
+                r_ merger(msort(lst[:int(n/2)]), msort(lst[int(n/2]))
+        ___ merger(left, right
             l, r = 0, 0
-            while l < len(left) and r < len(right):
-                if left[l] <= 2*right[r]:
+            w___ l < le.(left) and r < le.(right
+                __ left[l] <= 2*right[r]:
                     l += 1
-                else:
-                    self.cnt += len(left)-l
+                ____
+                    self.cnt += le.(left)-l
                     r += 1
-            return sorted(left+right)
+            r_ sorted(left+right)
         msort(nums)
-        return self.cnt
+        r_ self.cnt
     
-    def reversePairs(self, nums):
+    ___ reversePairs(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
         root = None
         cnt = [0]
-        for i in range(len(nums)-1, -1, -1):
+        for i in range(le.(nums)-1, -1, -1
             num = nums[i]
             self.search(cnt, root, num/2.0)
             root = self.build(num, root)
-        return cnt[0]
+        r_ cnt[0]
     
-    def search(self, cnt, node, target):
-        if not node:
-            return
-        elif target == node.val:
+    ___ search(self, cnt, node, target
+        __ not node:
+            r_
+        ____ target __ node.val:
             cnt[0] += node.less
-        elif target < node.val:
+        ____ target < node.val:
             self.search(cnt, node.left, target)
-        else:
+        ____
             cnt[0] += node.less + node.same
             self.search(cnt, node.right, target)
     
-    def build(self, val, node):
-        if not node:
-            return Node(val)
-        elif val == node.val:
+    ___ build(self, val, node
+        __ not node:
+            r_ Node(val)
+        ____ val __ node.val:
             node.same += 1
-        elif val > node.val:
+        ____ val > node.val:
             node.right = self.build(val, node.right)
-        else:
+        ____
             node.less += 1
             node.left = self.build(val, node.left)
-        return node
+        r_ node
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 3, 2, 3, 1],
             [2, 4, 3, 5, 1],
@@ -84,5 +84,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

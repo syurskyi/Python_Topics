@@ -23,51 +23,51 @@ The minute must be consist of two digits and may contain a leading zero, for exa
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def __init__(self):
+class Solution(object
+    ___ __init__(self
         self.hours = (1, 2, 4, 8)
         self.minutes = (1, 2, 4, 8, 16, 32)
 
-    def readBinaryWatch(self, num):
+    ___ readBinaryWatch(self, num
         """
         orderly backtracking
 
         :type num: int
         :rtype: List[str]
         """
-        def gen():
-            for hour_n in xrange(min(num, 4)+1):
-                for hour in self.hour(hour_n):
-                    for minute in self.minute(num-hour_n):
+        ___ gen(
+            for hour_n in xrange(min(num, 4)+1
+                for hour in self.hour(hour_n
+                    for minute in self.minute(num-hour_n
                         hour = str(hour)
                         minute = ('0' + str(minute))[-2:]
                         yield hour + ':' + minute
 
-        return list(gen())
+        r_ list(gen())
 
-    def gen(self, n, head, lst, func):
-        if head == len(lst):
+    ___ gen(self, n, head, lst, func
+        __ head __ le.(lst
             yield None
 
-        if n == 0:
+        __ n __ 0:
             yield 0
 
-        for i in xrange(head, len(lst)):
-            for rest in self.gen(n-1, i+1, lst, func):
-                if rest is not None:
+        for i in xrange(head, le.(lst)):
+            for rest in self.gen(n-1, i+1, lst, func
+                __ rest is not None:
                     ret = lst[i]+rest
-                    if func(ret):
+                    __ func(ret
                         yield ret
-                    else:
+                    ____
                         break
 
-    def hour(self, n):
-        return self.gen(n, 0, self.hours, lambda x: x < 12)
+    ___ hour(self, n
+        r_ self.gen(n, 0, self.hours, lambda x: x < 12)
 
-    def minute(self, n):
-        return self.gen(n, 0, self.minutes, lambda x: x < 60)
+    ___ minute(self, n
+        r_ self.gen(n, 0, self.minutes, lambda x: x < 60)
 
 
-if __name__ == "__main__":
-    assert Solution().readBinaryWatch(1) == ['0:01', '0:02', '0:04', '0:08', '0:16', '0:32', '1:00', '2:00', '4:00',
+__ __name__ __ "__main__":
+    assert Solution().readBinaryWatch(1) __ ['0:01', '0:02', '0:04', '0:08', '0:16', '0:32', '1:00', '2:00', '4:00',
                                              '8:00']

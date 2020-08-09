@@ -11,8 +11,8 @@ There is only one duplicate number in the array, but it could be repeated more t
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def findDuplicate(self, nums):
+class Solution(object
+    ___ findDuplicate(self, nums
         """
         Condition for convert the array problem to linked list problem:
         CANNOT contains integer with 0; otherwise cycle: A = [1, 0]
@@ -21,27 +21,27 @@ class Solution(object):
 
         For possibly multiple duplications: Floyd's loop detection
         Abstract the array to linked list, current index as value, current value as next
-        Need to derive the math proof
+        Need to derive the ma__ proof
 
         Abstract array to linked list
         :type nums: List[int]
         :rtype: int
         """
         f, s = 0, 0
-        while True:
+        w___ True:
             f = nums[nums[f]]
             s = nums[s]
-            if f == s:
+            __ f __ s:
                 break
 
         t = 0
-        while t != s:
+        w___ t != s:
             t = nums[t]
             s = nums[s]
 
-        return t
+        r_ t
 
 
-if __name__ == "__main__":
-    assert Solution().findDuplicate([1, 2, 3 ,4, 5, 5]) == 5
+__ __name__ __ "__main__":
+    assert Solution().findDuplicate([1, 2, 3 ,4, 5, 5]) __ 5
 

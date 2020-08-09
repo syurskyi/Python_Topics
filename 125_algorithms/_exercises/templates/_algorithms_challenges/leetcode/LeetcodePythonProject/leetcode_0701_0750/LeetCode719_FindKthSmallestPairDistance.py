@@ -3,56 +3,56 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def smallestDistancePair(self, nums, k):
+class Solution(object
+    ___ smallestDistancePair(self, nums, k
         """
         :type nums: List[int]
         :type k: int
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         nums.sort()
         low = float('inf')
-        for i in range(n-1):
+        for i in range(n-1
             low = min(low, nums[i+1]-nums[i])
         high = nums[-1]-nums[0]
-        while low < high:
+        w___ low < high:
             mid = (low+high)//2
-            if self.countPair(nums, mid) < k:
+            __ self.countPair(nums, mid) < k:
                 low = mid+1
-            else:
+            ____
                 high = mid
-        return low
+        r_ low
     
-    def countPair(self, nums, mid):
-        n = len(nums)
+    ___ countPair(self, nums, mid
+        n = le.(nums)
         res = 0
-        for i in range(n):
+        for i in range(n
             res += self.upperBound(nums, i, n-1, nums[i]+mid)-i-1
-        return res
+        r_ res
     
-    def upperBound(self, nums, low, high, key):
-        if nums[high] <= key:
-            return high+1
-        while low < high:
+    ___ upperBound(self, nums, low, high, key
+        __ nums[high] <= key:
+            r_ high+1
+        w___ low < high:
             mid = (low+high)//2
-            if key >= nums[mid]:
+            __ key >= nums[mid]:
                 low = mid+1
-            else:
+            ____
                 high = mid
-        return low
+        r_ low
     
-    def countPairs_slow(self, nums, mid):
-        n = len(nums)
+    ___ countPairs_slow(self, nums, mid
+        n = le.(nums)
         res = 0
-        for i in range(n):
+        for i in range(n
             j = i
-            while j < n and nums[j]-nums[i] <= mid:
+            w___ j < n and nums[j]-nums[i] <= mid:
                 j += 1
             res += j-i-1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 3, 1],
@@ -70,5 +70,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSortedMatrix(object):
+class TestSortedMatrix(object
 
-    def test_find_val(self):
+    ___ test_find_val(self
         matrix = [[20, 40, 63, 80],
                   [30, 50, 80, 90],
                   [40, 60, 110, 110],
@@ -15,10 +15,10 @@ class TestSortedMatrix(object):
         print('Success: test_find_val')
 
 
-def main():
+___ main(
     test = TestSortedMatrix()
     test.test_find_val()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

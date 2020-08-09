@@ -1,16 +1,16 @@
-class Solution(object):
-  def findContestMatch(self, n):
+class Solution(object
+  ___ findContestMatch(self, n
     """
     :type n: int
     :rtype: str
     """
 
-    def helper(schedule):
-      if len(schedule) == 1:
-        return schedule[0]
+    ___ helper(schedule
+      __ le.(schedule) __ 1:
+        r_ schedule[0]
       m = []
-      for i in range(len(schedule) / 2):
+      for i in range(le.(schedule) / 2
         m.append("({},{})".format(schedule[i], schedule[-i - 1]))
-      return helper(m)
+      r_ helper(m)
 
-    return helper(map(str, range(1, n + 1)))
+    r_ helper(map(str, range(1, n + 1)))

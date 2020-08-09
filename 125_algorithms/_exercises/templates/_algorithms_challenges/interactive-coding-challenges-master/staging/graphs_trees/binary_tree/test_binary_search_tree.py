@@ -1,8 +1,8 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
-class TestBinaryTree(object):
+class TestBinaryTree(object
 
-	def test_insert_traversals (self):
+	___ test_insert_traversals (self
 		myTree = BinaryTree()
 		myTree2 = BinaryTree()
 		for num in [50, 30, 70, 10, 40, 60, 80, 7, 25, 38]:
@@ -31,7 +31,7 @@ class TestBinaryTree(object):
 
 		print("Success: test_insert_traversals")
 
-	def test_max_min_nodes (self):
+	___ test_max_min_nodes (self
 		myTree = BinaryTree()
 		myTree.insert(5)
 		myTree.insert(1)
@@ -51,7 +51,7 @@ class TestBinaryTree(object):
 
 		print("Success: test_max_min_nodes")
 
-	def test_delete (self):
+	___ test_delete (self
 		myTree = BinaryTree()
 		myTree.insert(5)
 
@@ -69,11 +69,11 @@ class TestBinaryTree(object):
 
 		print("Success: test_delete")
 
-def main():
+___ main(
     testing = TestBinaryTree()
     testing.test_insert_traversals()
     testing.test_max_min_nodes()
     testing.test_delete()
     
-if __name__=='__main__':
+__ __name____'__main__':
     main()

@@ -1,9 +1,9 @@
-from collections import namedtuple
-import csv
-from pathlib import Path
-import sqlite3
+from collections ______ namedtuple
+______ csv
+from pathlib ______ Path
+______ sqlite3
 
-import requests
+______ requests
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path('/tmp')
@@ -16,7 +16,7 @@ conn = sqlite3.connect(DB)
 cur = conn.cursor()
 
 
-def import_data():
+___ import_data(
     with requests.Session() as session:
         content = session.get(DATA_URL).content.decode('utf-8')
 
@@ -41,38 +41,38 @@ def import_data():
     conn.commit()
 
 
-if DB.stat().st_size == 0:
+__ DB.stat().st_size __ 0:
     print('loading data')
     import_data()
 
 
 # you code:
 
-def player_with_max_points_per_game():
+___ player_with_max_points_per_game(
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
     cur.execute('''SELECT name, avg_points FROM players ORDER BY -avg_points LIMIT 0,1;''')
     result = cur.fetchall()
-    return result[0][0]
+    r_ result[0][0]
 
 
-def number_of_players_from_duke():
+___ number_of_players_from_duke(
     """Return the number of players with college == Duke University"""
     cur.execute('''SELECT COUNT(*) FROM players WHERE college='Duke University';''')
     result = cur.fetchall()
-    return result[0][0]
+    r_ result[0][0]
 
 
-def avg_years_active_players_stanford():
+___ avg_years_active_players_stanford(
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
     cur.execute('''SELECT AVG(active) FROM players WHERE college='Stanford University';''')
     result = cur.fetchall()
-    return result[0][0]
+    r_ result[0][0]
 
 
-def year_with_most_drafts():
+___ year_with_most_drafts(
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
     cur.execute('''SELECT year, count(*) c FROM players group by year order by -c limit 0,1;''')
     result = cur.fetchall()
-    return result[0][0]
+    r_ result[0][0]

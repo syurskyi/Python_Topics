@@ -24,11 +24,11 @@ Note:
 1 <= words[i].length <= 7.
 Each word has only lowercase letters.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def minimumLengthEncoding(self, words: List[str]) -> int:
+    ___ minimumLengthEncoding(self, words: List[str]) -> int:
         """
         suffix trie
         only suffix matters
@@ -37,21 +37,21 @@ class Solution:
         """
         root = {}
         ends = []
-        for word in set(words):
+        for word in set(words
             cur = root
             for c in word[::-1]:
                 nxt = cur.get(c, {})
                 cur[c] = nxt
                 cur = nxt
 
-            ends.append((cur, len(word)))
+            ends.append((cur, le.(word)))
 
-        return sum(
+        r_ sum(
             l + 1
             for node, l in ends
-            if len(node) == 0  # no child
+            __ le.(node) __ 0  # no child
         )
 
 
-if __name__ == "__main__":
-    assert Solution().minimumLengthEncoding(["time", "me", "bell"]) == 10
+__ __name__ __ "__main__":
+    assert Solution().minimumLengthEncoding(["time", "me", "bell"]) __ 10

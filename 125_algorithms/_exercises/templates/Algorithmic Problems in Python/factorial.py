@@ -1,9 +1,9 @@
 
-def factorial(n):
+___ factorial(n
 
 	#base case: 1!=1 (factorial 1 is 1)
-	if n == 1:
-		return 1
+	__ n __ 1:
+		r_ 1
         
 	#we make a recursive call
 	subres1 = factorial(n-1)	
@@ -11,17 +11,17 @@ def factorial(n):
 	#we do some operations
 	subres2 = n*subres1		
 	
-	return subres2	
+	r_ subres2
 	
-def factorial_accumulator(n,accumulator=1):
+___ factorial_accumulator(n,accumulator=1
 
 	#base case: 1!=1
-	if n==1:
-		return accumulator
+	__ n__1:
+		r_ accumulator
 		
 	#now it is a tail recursion !!!
-	return factorial_accumulator(n-1,n*accumulator)
+	r_ factorial_accumulator(n-1,n*accumulator)
 	
-if __name__ == "__main__":
+__ __name__ __ "__main__":
 
 	print(factorial_accumulator(5))

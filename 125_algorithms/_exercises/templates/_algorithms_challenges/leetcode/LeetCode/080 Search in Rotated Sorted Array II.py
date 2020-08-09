@@ -8,7 +8,7 @@ Write a function to determine if a given target is in the array.
 """
 __author__ = 'Danyang'
 class Solution:
-    def search_set(self, A, target):
+    ___ search_set(self, A, target
         """
         Follow up 033 Search in Rotated Sorted Array
         Duplicate allowed
@@ -28,36 +28,36 @@ class Solution:
         """
         A = list(set(A))  # short-cut eliminate duplicates  # but O(n)
 
-        length = len(A)
+        length = le.(A)
         start = 0
         end = length-1
-        while start<=end:
+        w___ start<=end:
             mid = (start+end)/2
             # found
-            if A[mid]==target:
-                return True
+            __ A[mid]__target:
+                r_ True
             # case 1
-            if A[start]<A[mid]<A[end]:
-                if target>A[mid]:
+            __ A[start]<A[mid]<A[end]:
+                __ target>A[mid]:
                     start = mid+1
-                else:
+                ____
                     end = mid-1
             # case 2
-            elif A[start]>A[mid] and A[mid]<A[end]:
-                if target>A[mid] and target<=A[end]:
+            ____ A[start]>A[mid] and A[mid]<A[end]:
+                __ target>A[mid] and target<=A[end]:
                     start = mid+1
-                else:
+                ____
                     end = mid-1
             # case 3
-            else:
-                if target<A[mid] and target>=A[start]:
+            ____
+                __ target<A[mid] and target>=A[start]:
                     end = mid-1
-                else:
+                ____
                     start = mid+1
 
-        return False
+        r_ False
 
-    def search(self, A, target):
+    ___ search(self, A, target
         """
         Follow up 033 Search in Rotated Sorted Array
         Duplicate allowed
@@ -75,37 +75,37 @@ class Solution:
         :param target: an integer
         :return: a boolean
         """
-        length = len(A)
+        length = le.(A)
         start = 0
         end = length-1
-        while start<=end:
+        w___ start<=end:
             mid = (start+end)/2
             # found
-            if A[mid]==target:
-                return True
+            __ A[mid]__target:
+                r_ True
             # undetermined  # the only significant difference.
-            if A[start]==A[mid]:
+            __ A[start]__A[mid]:
                 start += 1
             # case 1
-            elif A[start]<A[mid]<=A[end]:
-                if target>A[mid]:
+            ____ A[start]<A[mid]<=A[end]:
+                __ target>A[mid]:
                     start = mid+1
-                else:
+                ____
                     end = mid-1
             # case 2
-            elif A[start]>A[mid] and A[mid]<=A[end]:  # slight difference compared to A[mid]<A[end]
-                if target>A[mid] and target<=A[end]:
+            ____ A[start]>A[mid] and A[mid]<=A[end]:  # slight difference compared to A[mid]<A[end]
+                __ target>A[mid] and target<=A[end]:
                     start = mid+1
-                else:
+                ____
                     end = mid-1
             # case 3
-            else:
-                if target<A[mid] and target>=A[start]:
+            ____
+                __ target<A[mid] and target>=A[start]:
                     end = mid-1
-                else:
+                ____
                     start = mid+1
 
-        return False
+        r_ False
 
-if __name__=="__main__":
-    assert Solution().search([1,1,3,1], 3)==True
+__ __name____"__main__":
+    assert Solution().search([1,1,3,1], 3)__True

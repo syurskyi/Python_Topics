@@ -1,11 +1,11 @@
-class Solution(object):
+class Solution(object
 
-  def repeatedSubstringPattern(self, str):
+  ___ repeatedSubstringPattern(self, str
     """
     :type str: str
     :rtype: bool
     """
-    for i in range(0, len(str) / 2):
-      if not len(str) % (i + 1) and str[:i + 1] * (len(str) / (i + 1)) == str:
-        return True
-    return False
+    for i in range(0, le.(str) / 2
+      __ not le.(str) % (i + 1) and str[:i + 1] * (le.(str) / (i + 1)) __ str:
+        r_ True
+    r_ False

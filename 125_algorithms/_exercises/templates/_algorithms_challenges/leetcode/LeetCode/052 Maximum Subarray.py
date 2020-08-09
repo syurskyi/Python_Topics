@@ -12,7 +12,7 @@ more subtle.
 """
 __author__ = 'Danyang'
 class Solution:
-    def maxSubArray(self, A):
+    ___ maxSubArray(self, A
         """
         maximum sub-array problem.
         O(n) scanning
@@ -20,21 +20,21 @@ class Solution:
         :return: integer
         """
         # trivial
-        if not A:
-            return 0
+        __ not A:
+            r_ 0
 
         # in case of A = [-1]
         largest = max(A)
-        if largest<0:
-            return largest
+        __ largest<0:
+            r_ largest
 
         max_result = -1<<31
         current_max = 0
-        for i in range(len(A)):
-            if current_max+A[i]>=0:
+        for i in range(le.(A)):
+            __ current_max+A[i]>=0:
                 current_max+=A[i]
-            else:
+            ____
                 current_max = 0
             max_result = max(max_result, current_max)
 
-        return max_result
+        r_ max_result

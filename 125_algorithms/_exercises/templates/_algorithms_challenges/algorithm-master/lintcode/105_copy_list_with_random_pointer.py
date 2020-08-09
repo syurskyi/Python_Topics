@@ -1,7 +1,7 @@
 """
 Definition for singly-linked list with a random pointer.
 class RandomListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.label = x
         self.next = None
         self.random = None
@@ -14,7 +14,7 @@ time: O(2n) => O(n)
 space: O(n)
 """
 class Solution:
-    def copyRandomList(self, head):
+    ___ copyRandomList(self, head
         """
         :type head: RandomListNode
         :rtype: RandomListNode
@@ -22,7 +22,7 @@ class Solution:
         N = {}
         dummy = tail = RandomListNode(-1)
 
-        while head:
+        w___ head:
             node = RandomListNode(head.label)
             node.random = head.random
             tail.next = node
@@ -31,12 +31,12 @@ class Solution:
             head = head.next
 
         head = dummy.next
-        while head:
-            if head.random:
+        w___ head:
+            __ head.random:
                 head.random = N[head.random]
             head = head.next
 
-        return dummy.next
+        r_ dummy.next
 
 
 """
@@ -61,17 +61,17 @@ split_list/
          |--------->|
 """
 class Solution:
-    def copyRandomList(self, head):
+    ___ copyRandomList(self, head
         """
         :type head: RandomListNode
         :rtype: RandomListNode
         """
-        if not head:
-            return
+        __ not head:
+            r_
 
         tail = head
         node = None
-        while tail:
+        w___ tail:
             node = RandomListNode(tail.label)
             node.random = tail.random
             node.next = tail.next
@@ -79,14 +79,14 @@ class Solution:
             tail = tail.next.next
 
         tail = head
-        while tail:
-            if tail.next and tail.random:
+        w___ tail:
+            __ tail.next and tail.random:
                 tail.next.random = tail.random.next
             tail = tail.next.next
 
         node = tail = head.next
-        while tail and tail.next:
+        w___ tail and tail.next:
             tail.next = tail.next.next
             tail = tail.next
 
-        return node
+        r_ node

@@ -1,17 +1,17 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-import json
-import sys
-import os
+______ json
+______ sys
+______ os
 
 
-def getFromJson():
+___ getFromJson(
     cwd = os.getcwd()
     filePath = cwd + '/34-birthday-json/birthdays.json'
     with open(filePath, 'r') as file:
-        return json.load(file)
+        r_ json.load(file)
 
 
-def addToJson(dict):
+___ addToJson(dict
     cwd = os.getcwd()
     filePath = cwd + '/34-birthday-json/birthdays.json'
     with open(filePath, 'r') as file:
@@ -22,7 +22,7 @@ def addToJson(dict):
 
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     birthdays = getFromJson()
     print('We know birthdays of: ' + str(list(birthdays.keys())))
     name = str(input("Who's  birthday you want to know ?"))

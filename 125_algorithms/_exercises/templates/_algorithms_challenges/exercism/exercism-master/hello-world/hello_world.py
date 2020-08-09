@@ -1,2 +1,2 @@
-def hello():
-    return 'Hello, World!'
+___ hello(
+    r_ 'Hello, World!'

@@ -18,12 +18,12 @@ There are a total of 2 courses to take. To take course 1 you should have
 finished course 0, and to take course 0 you should also have finished course
 1. So it is impossible.
 """
-import sys
+______ sys
 
 sys.setrecursionlimit(5000)
 
-class Solution(object):
-    def canFinish(self, numCourses, prerequisites):
+class Solution(object
+    ___ canFinish(self, numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -39,21 +39,21 @@ class Solution(object):
         for c, p in prerequisites:
             self.graph[p].add(c)
 
-        for u in range(numCourses):
-            if u in self.unvisited:
-                if self.visit(u) is False:
-                    return False
-        return True
+        for u in range(numCourses
+            __ u in self.unvisited:
+                __ self.visit(u) is False:
+                    r_ False
+        r_ True
 
-    def visit(self, u):
-        if u in self.visiting:
-            return False
-        elif u in self.unvisited:
+    ___ visit(self, u
+        __ u in self.visiting:
+            r_ False
+        ____ u in self.unvisited:
             self.unvisited.remove(u)
             self.visiting.add(u)
             for v in self.graph[u]:
-                if self.visit(v) is False:
-                    return False
+                __ self.visit(v) is False:
+                    r_ False
             self.visiting.remove(u)
             self.visited.add(u)
 

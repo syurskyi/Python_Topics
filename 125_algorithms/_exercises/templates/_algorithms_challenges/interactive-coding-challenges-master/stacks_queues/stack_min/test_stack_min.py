@@ -1,10 +1,10 @@
-import sys
-from nose.tools import assert_equal
+______ sys
+from nose.tools ______ assert_equal
 
 
-class TestStackMin(object):
+class TestStackMin(object
 
-    def test_stack_min(self):
+    ___ test_stack_min(self
         print('Test: Push on empty stack, non-empty stack')
         stack = StackMin()
         stack.push(5)
@@ -36,10 +36,10 @@ class TestStackMin(object):
         print('Success: test_stack_min')
 
 
-def main():
+___ main(
     test = TestStackMin()
     test.test_stack_min()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

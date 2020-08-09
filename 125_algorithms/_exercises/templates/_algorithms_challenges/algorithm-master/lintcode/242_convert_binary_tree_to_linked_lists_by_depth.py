@@ -1,13 +1,13 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         this.val = val
         this.left, this.right = None, None
 
 Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 """
@@ -16,13 +16,13 @@ class ListNode:
 class Solution:
     # @param {TreeNode} root the root of binary tree
     # @return {ListNode[]} a lists of linked list
-    def binaryTreeToLists(self, root):
+    ___ binaryTreeToLists(self, root
         ans = []
-        if not root:
-            return ans
+        __ not root:
+            r_ ans
 
         queue = [root]
-        while queue:
+        w___ queue:
             _queue = []
             dummy = tail = ListNode(-1)
 
@@ -30,12 +30,12 @@ class Solution:
                 tail.next = ListNode(node.val)
                 tail = tail.next
 
-                if node.left:
+                __ node.left:
                     _queue.append(node.left)
-                if node.right:
+                __ node.right:
                     _queue.append(node.right)
 
             queue = _queue
             ans.append(dummy.next)
 
-        return ans
+        r_ ans

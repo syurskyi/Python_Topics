@@ -59,44 +59,44 @@ Output:
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
-        return self.add(root, v, d, 1, "left")
+    ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
+        r_ self.add(root, v, d, 1, "left")
 
-    def add(self, node, v, d, cur_d, child) -> TreeNode:
+    ___ add(self, node, v, d, cur_d, child) -> TreeNode:
         # use the return value for parent's reference 
-        if cur_d == d:
+        __ cur_d __ d:
             new = TreeNode(v)
             setattr(new, child, node)
-            return new
+            r_ new
 
-        if node:
+        __ node:
             node.left = self.add(node.left, v, d, cur_d + 1, "left")
             node.right = self.add(node.right, v, d, cur_d + 1, "right")
-            return node
+            r_ node
 
 
 class Solution2:
-    def addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
-        if d == 1:
+    ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
+        __ d __ 1:
             node = TreeNode(v)
             node.left = root
-            return node
+            r_ node
 
         self.add(self, root, v, d, 1)
-        return root
+        r_ root
 
-    def add(self, node, v, d, cur_d) -> None:
-        if not node:
-            return
+    ___ add(self, node, v, d, cur_d) -> None:
+        __ not node:
+            r_
 
-        if cur_d + 1 == d:
+        __ cur_d + 1 __ d:
             left = node.left
             right = node.right
             node.left = TreeNode(v)

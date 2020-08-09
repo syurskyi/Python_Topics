@@ -1,39 +1,39 @@
 class Solution:
-    def minWindow(self, s, t):
+    ___ minWindow(self, s, t
         """
         :type s: str
         :type t: str
         :rtype: str
         """
-        if not s or not t:
-            return ''
+        __ not s or not t:
+            r_ ''
 
         F = {}
         for c in t:
             F[c] = F.get(c, 0) + 1
 
-        n, cnt = len(s), len(F)
+        n, cnt = le.(s), le.(F)
         start = size = INFINITY = float('inf')
         left = right = 0
 
-        while right < n:
-            if s[right] in F:
+        w___ right < n:
+            __ s[right] in F:
                 F[s[right]] -= 1
-                if F[s[right]] == 0:
+                __ F[s[right]] __ 0:
                     cnt -= 1
 
             right += 1
 
-            while cnt == 0:
-                if s[left] in F:
+            w___ cnt __ 0:
+                __ s[left] in F:
                     F[s[left]] += 1
-                    if F[s[left]] == 1:
+                    __ F[s[left]] __ 1:
                         cnt += 1
 
-                if right - left < size:
+                __ right - left < size:
                     size = right - left
                     start = left
 
                 left += 1
 
-        return s[start:start + size] if size < INFINITY else ''
+        r_ s[start:start + size] __ size < INFINITY else ''

@@ -1,31 +1,31 @@
 
 
 class Node:
-    def __init__(self, value):
+    ___ __init__(self, value
         self.left = None
         self.right = None
         self.data = value
 
 
-def insert(root, node):
-    if(root is None):
+___ insert(root, node
+    __(root is None
         root = node
-        return
+        r_
 
-    if(root.data < node.data):
-        if(root.right is None):
+    __(root.data < node.data
+        __(root.right is None
             root.right = node
-        else:
+        ____
             insert(root.right, node)
-    else:
-        if(root.left is None):
+    ____
+        __(root.left is None
             root.left = node
-        else:
+        ____
             insert(root.left, node)
 
 
-def preorder(node):
-    if(node is not None):
+___ preorder(node
+    __(node is not None
         print(node.data)
         preorder(node.left)
         preorder(node.right)

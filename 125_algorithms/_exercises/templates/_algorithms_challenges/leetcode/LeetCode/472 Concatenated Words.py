@@ -21,23 +21,23 @@ The length sum of elements in the given array will not exceed 600,000.
 All the input string will only include lower case letters.
 The returned elements order does not matter.
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         TrieNode = lambda: defaultdict(TrieNode)  # not defaultdict(lambda: TrieNode)
         self.root = TrieNode()  # root of tire
 
-    def findAllConcatenatedWordsInADict(self, words: List[str]) -> List[str]:
+    ___ findAllConcatenatedWordsInADict(self, words: List[str]) -> List[str]:
         """
         Trie + DFS
         """
-        words.sort(key=len)
+        words.sort(key=le.)
         ret = []
         for w in words:
-            if self.can_concat(w, 0):
+            __ self.can_concat(w, 0
                 ret.append(w)
 
             cur = self.root
@@ -45,27 +45,27 @@ class Solution:
                 cur = cur[c]
             cur["end"] = True
 
-        return ret
+        r_ ret
 
-    def can_concat(self, word, lo):
-        if not word:
-            return False
+    ___ can_concat(self, word, lo
+        __ not word:
+            r_ False
 
-        k = len(word)
-        if lo >= k:
-            return True
+        k = le.(word)
+        __ lo >= k:
+            r_ True
 
         cur = self.root
-        for i in range(lo, k):
+        for i in range(lo, k
             cur = cur[word[i]]
-            if cur.get("end", False) and self.can_concat(word, i + 1):
-                return True
+            __ cur.get("end", False) and self.can_concat(word, i + 1
+                r_ True
 
-        return False
+        r_ False
 
 
 class SolutionTLE:
-    def findAllConcatenatedWordsInADict(self, words: List[str]) -> List[str]:
+    ___ findAllConcatenatedWordsInADict(self, words: List[str]) -> List[str]:
         """
         Trie check cannot be greedy: cat sdog vs cats dog
 
@@ -86,27 +86,27 @@ class SolutionTLE:
         # words.sort()  # sorting is unnecessary
         visited = set(words)
         for w in words:
-            if self.can_concat(w, visited):
+            __ self.can_concat(w, visited
                 ret.append(w)
 
-        return ret
+        r_ ret
 
-    def can_concat(self, w, visited):
-        if not w:
-            return False
+    ___ can_concat(self, w, visited
+        __ not w:
+            r_ False
 
-        k = len(w)
+        k = le.(w)
         F = [False for _ in range(k + 1)]
         F[0] = True
-        for i in range(1, k + 1):
-            for j in range(i):
-                if j == 0 and i == k:
+        for i in range(1, k + 1
+            for j in range(i
+                __ j __ 0 and i __ k:
                     continue  # word itself
-                if F[j] and w[j:i] in visited:
+                __ F[j] and w[j:i] in visited:
                     F[i] = True
 
-        return F[k]
+        r_ F[k]
 
 
-if __name__ == "__main__":
-    assert Solution().findAllConcatenatedWordsInADict(["cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"]) == ["catsdogcats","dogcatsdog","ratcatdogcat"]
+__ __name__ __ "__main__":
+    assert Solution().findAllConcatenatedWordsInADict(["cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"]) __ ["catsdogcats","dogcatsdog","ratcatdogcat"]

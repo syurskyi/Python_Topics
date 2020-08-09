@@ -1,2 +1,2 @@
-def tally(data):
+___ tally(data
     pass

@@ -1,7 +1,7 @@
 #!python3
 
-from flask import Flask, render_template, request
-import sqlite3
+from flask ______ Flask, render_template, request
+______ sqlite3
 
 with sqlite3.connect("friends.db") as connection:
     c = connection.cursor()
@@ -15,30 +15,30 @@ with sqlite3.connect("friends.db") as connection:
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
-def index():
+___ index(
     info = []
-    if request.method == 'POST' and 'name' in request.form:
+    __ request.method __ 'POST' and 'name' in request.form:
         name = request.form.get('name')
         address = request.form.get('address')
         number = request.form.get('number')
-        for i in (name, address, number):
+        for i in (name, address, number
             info.append(i)
         
         with sqlite3.connect("friends.db") as connection:
             c = connection.cursor()
             c.execute("INSERT INTO friend_details VALUES(?, ?, ?)", info)
-    return render_template('index.html',
+    r_ render_template('index.html',
                             info=info)
 
 
 @app.route('/friends', methods=['GET', 'POST'])
-def friends():
+___ friends(
     choice = ''
     with sqlite3.connect("friends.db") as connection:
         c = connection.cursor()
-    if request.method == 'POST' and 'friend_menu' in request.form:
+    __ request.method __ 'POST' and 'friend_menu' in request.form:
         choice = request.form.get('friend_menu')
-    return render_template('friends.html',
+    r_ render_template('friends.html',
                             c=c,
                             choice=choice)
 

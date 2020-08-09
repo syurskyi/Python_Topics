@@ -1,10 +1,10 @@
-def triangle():
+___ triangle(
     pass
 
 
-def is_triangle():
+___ is_triangle(
     pass
 
 
-def row():
+___ row(
     pass

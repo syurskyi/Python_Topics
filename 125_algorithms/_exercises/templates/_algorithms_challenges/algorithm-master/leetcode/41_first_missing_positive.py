@@ -4,14 +4,14 @@ REF: http://www.cnblogs.com/yuzhangcmu/p/4200096.html
 
 
 class Solution:
-    def firstMissingPositive(self, A):
+    ___ firstMissingPositive(self, A
         """
         :type A: List[int]
         :rtype: int
         """
-        left, right = 0, len(A) - 1
+        left, right = 0, le.(A) - 1
 
-        while left <= right:
+        w___ left <= right:
             """
             for `A[left]`, the index it should be at is `A[left] - 1`
             1. if it is already at `i` => pass
@@ -19,13 +19,13 @@ class Solution:
             3. if it is legal => swap to let `A[left]` go to `i`
             """
             i = A[left] - 1
-            if i == left:
+            __ i __ left:
                 left += 1
-            elif i < 0 or i > right or A[i] == A[left]:
+            ____ i < 0 or i > right or A[i] __ A[left]:
                 A[left], A[right] = A[right], A[left]
                 # `A[left] = A[right]` is also ok, since no need to visit `A[right]` again
                 right -= 1
-            else:
+            ____
                 A[left], A[i] = A[i], A[left]
 
-        return left + 1
+        r_ left + 1

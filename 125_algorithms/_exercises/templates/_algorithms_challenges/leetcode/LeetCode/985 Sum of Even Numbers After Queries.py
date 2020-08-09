@@ -31,23 +31,23 @@ Note:
 -10000 <= queries[i][0] <= 10000
 0 <= queries[i][1] < A.length
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def sumEvenAfterQueries(self, A: List[int], queries: List[List[int]]) -> List[int]:
+    ___ sumEvenAfterQueries(self, A: List[int], queries: List[List[int]]) -> List[int]:
         """
         maintain a sum
         """
-        cur_sum = sum(filter(lambda x: x % 2 == 0, A))
+        cur_sum = sum(filter(lambda x: x % 2 __ 0, A))
         ret = []
         for val, idx in queries:
             prev = A[idx]
-            if prev % 2 == 0:
+            __ prev % 2 __ 0:
                 cur_sum -= prev
             A[idx] += val
-            if A[idx] % 2 == 0:
+            __ A[idx] % 2 __ 0:
                 cur_sum += A[idx]
             ret.append(cur_sum)
 
-        return ret
+        r_ ret

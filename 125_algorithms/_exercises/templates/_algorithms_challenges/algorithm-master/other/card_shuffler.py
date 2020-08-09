@@ -10,47 +10,47 @@ True
 """
 
 
-def card_shuffler(cards, shuffles):
+___ card_shuffler(cards, shuffles
     """
     :type cards: Iterable[str]
     :type shuffles: list[int]
     :rtype: int
     """
-    n = len(cards)
+    n = le.(cards)
     offsets = [0] * n
 
-    for i in range(n):
+    for i in range(n
         offsets[i] = get_offset(i, shuffles)
-        if offsets[i] == -1:
-            return -1
+        __ offsets[i] __ -1:
+            r_ -1
 
-    return get_lcm(*offsets)
+    r_ get_lcm(*offsets)
 
 
-def get_offset(start, shuffles):
+___ get_offset(start, shuffles
     visited = set()
     i = start
     offset = 0
 
-    while i not in visited:
+    w___ i not in visited:
         visited.add(i)
         i = shuffles[i]
         offset += 1
 
-    return offset if i == start else -1
+    r_ offset __ i __ start else -1
 
 
-def get_lcm(*nums):
+___ get_lcm(*nums
     lcm = nums[0]
 
-    for i in range(1, len(nums)):
+    for i in range(1, le.(nums)):
         lcm = lcm // get_gcd(lcm, nums[i]) * nums[i]
 
-    return lcm
+    r_ lcm
 
 
-def get_gcd(a, b):
-    while b:
+___ get_gcd(a, b
+    w___ b:
         a, b = b, a % b
 
-    return a
+    r_ a

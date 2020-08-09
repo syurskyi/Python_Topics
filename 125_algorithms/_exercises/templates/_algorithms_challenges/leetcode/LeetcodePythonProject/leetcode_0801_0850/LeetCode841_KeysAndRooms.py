@@ -3,25 +3,25 @@ Created on Jan 30, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def canVisitAllRooms(self, rooms):
+class Solution(object
+    ___ canVisitAllRooms(self, rooms
         """
         :type rooms: List[List[int]]
         :rtype: bool
         """
         dfs = [0]
         seen = set(dfs)
-        while dfs:
+        w___ dfs:
             i = dfs.pop()
             for j in rooms[i]:
-                if j not in seen:
+                __ j not in seen:
                     dfs.append(j)
                     seen.add(j)
-                    if len(seen) == len(rooms):
-                        return True
-        return len(seen) == len(rooms)
+                    __ le.(seen) __ le.(rooms
+                        r_ True
+        r_ le.(seen) __ le.(rooms)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[1],[2],[3],[]],
             [[1,3],[3,0,1],[2],[0]],
@@ -34,5 +34,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

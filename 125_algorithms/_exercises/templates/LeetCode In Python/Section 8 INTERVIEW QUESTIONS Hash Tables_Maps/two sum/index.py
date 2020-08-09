@@ -1,10 +1,10 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    ___ twoSum(self, nums: List[int], target: int) -> List[int]:
         m = {}
-        n = len(nums)
-        for i in range(0,n):
+        n = le.(nums)
+        for i in range(0,n
             goal = target - nums[i]
-            if(goal in m):
-                return [m[goal], i]
+            __(goal in m
+                r_ [m[goal], i]
             m[nums[i]] = i
         

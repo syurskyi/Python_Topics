@@ -1,18 +1,18 @@
-class Solution(object):
-  def searchInsert(self, nums, target):
+class Solution(object
+  ___ searchInsert(self, nums, target
     """
     :type nums: List[int]
     :type target: int
     :rtype: int
     """
     lo = 0
-    hi = len(nums)
-    while lo < hi:
+    hi = le.(nums)
+    w___ lo < hi:
       mid = lo + (hi - lo) / 2
-      if nums[mid] > target:
+      __ nums[mid] > target:
         hi = mid
-      elif nums[mid] < target:
+      ____ nums[mid] < target:
         lo = mid + 1
-      else:
-        return mid
-    return lo
+      ____
+        r_ mid
+    r_ lo

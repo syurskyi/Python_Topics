@@ -16,16 +16,16 @@ A = [3,2,1,0,4], return false.
 class Solution:
     # @param A, a list of integers
     # @return a boolean
-    def canJump(self, A):
-        n = len(A)
-        if n == 1:
-            return True
+    ___ canJump(self, A
+        n = le.(A)
+        __ n __ 1:
+            r_ True
         # d[i] is the max index A[i] can reach in A
         d = [i + A[i] for i in range(n)]
         reach = n - 1
-        for i in range(1, n):
+        for i in range(1, n
             # j is from n - 1 to 0
             j = n - 1 - i
-            if d[j] >= reach:
+            __ d[j] >= reach:
                 reach = j
-        return reach == 0
+        r_ reach __ 0

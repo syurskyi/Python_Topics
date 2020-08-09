@@ -3,100 +3,100 @@ Created on Mar 10, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def evaluate(self, expression):
+class Solution(object
+    ___ evaluate(self, expression
         """
         :type expression: str
         :rtype: int
         """
         st, d, tokens = [], {}, ['']
         
-        def getVal(x):
-            return d.get(x, x)
+        ___ getVal(x
+            r_ d.get(x, x)
         
-        def evaluate(tokens):
-            if tokens[0] in ('add', 'mult'):
+        ___ evaluate(tokens
+            __ tokens[0] in ('add', 'mult'
                 tmp = list(map(int, map(getVal, tokens[1:])))
-                return str(tmp[0]+tmp[1] if tokens[0]=='add' else tmp[0]*tmp[1])
-            else:
-                for i in range(1, len(tokens)-1, 2):
-                    if tokens[i+1]:
+                r_ str(tmp[0]+tmp[1] __ tokens[0]__'add' else tmp[0]*tmp[1])
+            ____
+                for i in range(1, le.(tokens)-1, 2
+                    __ tokens[i+1]:
                         d[tokens[i]] = getVal(tokens[i+1])
-                return getVal(tokens[-1])
+                r_ getVal(tokens[-1])
         
         for c in expression:
-            if c == '(':
-                if tokens[0] == 'let':
+            __ c __ '(':
+                __ tokens[0] __ 'let':
                     evaluate(tokens)
                 st.append((tokens, dict(d)))
                 tokens = ['']
-            elif c == ' ':
+            ____ c __ ' ':
                 tokens.append('')
-            elif c == ')':
+            ____ c __ ')':
                 val = evaluate(tokens)
                 tokens, d = st.pop()
                 tokens[-1] += val
-            else:
+            ____
                 tokens[-1] += c
-        return int(tokens[0])
+        r_ int(tokens[0])
     
-    def evaluate_own_error(self, expression):
+    ___ evaluate_own_error(self, expression
         """
         :type expression: str
         :rtype: int
         """
         hashmap = {}
-        return self.helper(expression, hashmap)
+        r_ self.helper(expression, hashmap)
     
-    def helper(self, exp, hashmap):
-        if exp[0] == '-' or exp.isdigit():
-            return int(exp)
-        elif exp[0] != '(':
-            return hashmap[exp]
-        else:
+    ___ helper(self, exp, hashmap
+        __ exp[0] __ '-' or exp.isdigit(
+            r_ int(exp)
+        ____ exp[0] != '(':
+            r_ hashmap[exp]
+        ____
             exp = exp[1:-1]
-            if exp[:3] == 'add':
+            __ exp[:3] __ 'add':
                 sub1, i = self.nextElem(exp, 4)
                 sub2, _ = self.nextElem(exp, i+1)
                 res = self.helper(sub1, hashmap)+self.helper(sub2, hashmap)
-                return res
-            elif exp[:4] == 'mult':
+                r_ res
+            ____ exp[:4] __ 'mult':
                 sub1, i = self.nextElem(exp, 5)
                 sub2, _ = self.nextElem(exp, i+1)
                 res = self.helper(sub1, hashmap)*self.helper(sub2, hashmap)
-                return res
-            else:
+                r_ res
+            ____
                 i = 3
-                while True:
+                w___ True:
                     sub1, i = self.nextElem(exp, i+1)
-                    if i == len(exp):
-                        return self.helper(sub1, hashmap)
+                    __ i __ le.(exp
+                        r_ self.helper(sub1, hashmap)
                     sub2, i = self.nextElem(exp, i+1)
                     hashmap[sub1] = self.helper(sub2, hashmap)
     
-    def nextElem(self, s, i):
+    ___ nextElem(self, s, i
         res = ''
-        if i >= len(s):
-            return res, i
-        elif s[i] == '(':
+        __ i >= le.(s
+            r_ res, i
+        ____ s[i] __ '(':
             res = '('
             count = 1
             i += 1
-            while i < len(s) and count > 0:
-                if s[i] == '(':
+            w___ i < le.(s) and count > 0:
+                __ s[i] __ '(':
                     count += 1
-                elif s[i] == ')':
+                ____ s[i] __ ')':
                     count -= 1
                 res += s[i]
                 i += 1
-            return res, i
-        else:
-            while i < len(s) and s[i] != ' ':
+            r_ res, i
+        ____
+            w___ i < le.(s) and s[i] != ' ':
                 res += s[i]
                 i += 1
-            return res, i
+            r_ res, i
     
-    def test(self):
+    ___ test(self
         testCases = [
             '(add 1 2)',
             '(mult 3 (add 2 3))',
@@ -113,5 +113,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

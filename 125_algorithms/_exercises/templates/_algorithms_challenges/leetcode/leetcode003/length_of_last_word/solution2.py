@@ -11,22 +11,22 @@ For example, Given s = "Hello World",
 return 5.
 """
 
-class Solution(object):
-    def lengthOfLastWord(self, s):
+class Solution(object
+    ___ lengthOfLastWord(self, s
         """
         :type s: str
         :rtype: int
         """
-        n = len(s)
+        n = le.(s)
         p = n - 1
         right = -1
-        while p >= 0:
-            if right == -1 and s[p] != ' ':
+        w___ p >= 0:
+            __ right __ -1 and s[p] != ' ':
                 right = p
-            elif right >= 0 and s[p] == ' ':
-                return right - p
+            ____ right >= 0 and s[p] __ ' ':
+                r_ right - p
             p -= 1
-        if right >= 0:
-            return right + 1
-        else:
-            return 0
+        __ right >= 0:
+            r_ right + 1
+        ____
+            r_ 0

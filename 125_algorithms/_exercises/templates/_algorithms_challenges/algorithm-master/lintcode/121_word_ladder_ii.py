@@ -14,60 +14,60 @@ class Solution:
     @param: D: a set of string
     @return: a list of lists of string
     """
-    def findLadders(self, A, B, D):
+    ___ findLadders(self, A, B, D
         ans = []
-        if (D is None or A is None or B is None or
-            len(A) != len(B)):
-            return ans
+        __ (D is None or A is None or B is None or
+            le.(A) != le.(B)):
+            r_ ans
 
-        if A not in D:
+        __ A not in D:
             D.add(A)
-        if B not in D:
+        __ B not in D:
             D.add(B)
 
-        n = len(A)
+        n = le.(A)
         next_words = [None] * n
-        for i in range(n):
+        for i in range(n
             next_words[i] = W = {}
             for word in D:
                 key = word[:i] + word[i + 1:]
-                if key not in W:
+                __ key not in W:
                     W[key] = set()
                 W[key].add(word)
 
         queue = [B]
         distance = {B: 1}
         for word in queue:
-            if word == A:
+            __ word __ A:
                 break
-            for _word in self.get_next_word(word, next_words):
-                if _word in distance:
+            for _word in self.get_next_word(word, next_words
+                __ _word in distance:
                     continue
                 distance[_word] = distance[word] + 1
                 queue.append(_word)
 
         self.dfs(A, B, next_words, distance, ans, [A])
-        return ans
+        r_ ans
 
-    def dfs(self, word, B, next_words, distance, ans, path):
-        if word == B:
+    ___ dfs(self, word, B, next_words, distance, ans, path
+        __ word __ B:
             ans.append(path[:])
-            return
+            r_
 
-        for _word in self.get_next_word(word, next_words):
-            if (_word not in distance or
-                distance[_word] != distance[word] - 1):
+        for _word in self.get_next_word(word, next_words
+            __ (_word not in distance or
+                distance[_word] != distance[word] - 1
                 continue
             path.append(_word)
             self.dfs(_word, B, next_words, distance, ans, path)
             path.pop()
 
-    def get_next_word(self, word, next_words):
-        for i in range(len(word)):
+    ___ get_next_word(self, word, next_words
+        for i in range(le.(word)):
             key = word[:i] + word[i + 1:]
-            if key not in next_words[i]:
+            __ key not in next_words[i]:
                 continue
             for _word in next_words[i][key]:
-                if _word == word:
+                __ _word __ word:
                     continue
                 yield _word

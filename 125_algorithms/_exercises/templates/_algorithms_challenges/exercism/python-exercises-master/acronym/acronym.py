@@ -1,2 +1,2 @@
-def abbreviate():
+___ abbreviate(
     pass

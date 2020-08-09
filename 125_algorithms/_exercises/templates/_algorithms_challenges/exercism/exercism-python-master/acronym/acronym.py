@@ -1,11 +1,11 @@
-from re import split
+from re ______ split
 
-def abbreviate(phrase):
+___ abbreviate(phrase
     """abbreviate creates an acronym for a phrase"""
-    return ''.join(abbreviate_word(word) for word in split('\W+', phrase))
+    r_ ''.join(abbreviate_word(word) for word in split('\W+', phrase))
 
-def abbreviate_word(word):
+___ abbreviate_word(word
     """abbreviate_word selects the letters in a word to use for abbriviation"""
-    if all(letter.isupper() for letter in word):
-        return word[0]
-    return word[0].upper() + ''.join(letter for letter in word[1:] if letter.isupper())
+    __ all(letter.isupper() for letter in word
+        r_ word[0]
+    r_ word[0].upper() + ''.join(letter for letter in word[1:] __ letter.isupper())

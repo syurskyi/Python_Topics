@@ -29,51 +29,51 @@ process:
 
 
 class Solution:
-    def reconstructQueue(self, people):
+    ___ reconstructQueue(self, people
         """
         :type people: List[List[int]]
         :rtype: List[List[int]]
         """
         ans = []
 
-        if not people:
-            return ans
+        __ not people:
+            r_ ans
 
         people.sort(key=lambda p: (p[0], -p[1]))
 
-        for i in range(len(people) - 1, -1, -1):
+        for i in range(le.(people) - 1, -1, -1
             ans.insert(people[i][1], people[i])
 
-        return ans
+        r_ ans
 
 
 class Solution:
-    def reconstructQueue(self, people):
+    ___ reconstructQueue(self, people
         """
         :type people: List[List[int]]
         :rtype: List[List[int]]
         """
         ans = []
 
-        if not people:
-            return ans
+        __ not people:
+            r_ ans
 
         h2mans = {}
         heights = []
 
-        for i in range(len(people)):
+        for i in range(le.(people)):
             h, k = people[i]
 
-            if h in h2mans:
+            __ h in h2mans:
                 h2mans[h].append((k, i))
-            else:
+            ____
                 h2mans[h] = [(k, i)]
                 heights.append(h)
 
         heights.sort()
 
         for height in heights[::-1]:
-            for k, i in sorted(h2mans[height]):
+            for k, i in sorted(h2mans[height]
                 ans.insert(k, people[i])
 
-        return ans
+        r_ ans

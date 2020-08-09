@@ -1,9 +1,9 @@
-import unittest
+______ unittest
 
-import roman
+______ roman
 
 
-class RomanTest(unittest.TestCase):
+class RomanTest(unittest.TestCase
     numerals = {
         1: 'I',
         2: 'II',
@@ -25,9 +25,9 @@ class RomanTest(unittest.TestCase):
         3000: 'MMM',
     }
 
-    def test_numerals(self):
-        for arabic, numeral in self.numerals.items():
+    ___ test_numerals(self
+        for arabic, numeral in self.numerals.items(
             self.assertEqual(numeral, roman.numeral(arabic))
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

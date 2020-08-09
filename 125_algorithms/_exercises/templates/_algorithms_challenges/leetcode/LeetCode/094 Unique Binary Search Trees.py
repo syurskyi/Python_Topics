@@ -10,13 +10,13 @@ Given n = 3, there are a total of 5 unique BST's.
     /     /       \                 \
    2     1         2                 3
 """
-import math
+______ ma__
 
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def numTrees_math(self, n):
+class Solution(object
+    ___ numTrees_math(self, n
         """
         number of unique binary search tree
         Catalan Number
@@ -26,10 +26,10 @@ class Solution(object):
         :param n: integer
         :return: integer
         """
-        return math.factorial(2*n)/(math.factorial(n)*math.factorial(n))-math.factorial(2*n)/(
-            math.factorial(n+1)*math.factorial(n-1))
+        r_ ma__.factorial(2*n)/(ma__.factorial(n)*ma__.factorial(n))-ma__.factorial(2*n)/(
+            ma__.factorial(n+1)*ma__.factorial(n-1))
 
-    def numTrees(self, n):
+    ___ numTrees(self, n
         """
         number of unique binary search tree
         dp
@@ -45,16 +45,16 @@ class Solution(object):
         :param n: integer
         :return: integer
         """
-        if n < 2:
-            return n
+        __ n < 2:
+            r_ n
 
         dp = [0 for _ in xrange(n+1)]
         dp[0] = 1
-        for i in xrange(1, n+1):
-            for j in xrange(i):
+        for i in xrange(1, n+1
+            for j in xrange(i
                 dp[i] += dp[j]*dp[i-j-1]
-        return dp[-1]
+        r_ dp[-1]
 
 
-if __name__ == "__main__":
-    assert Solution().numTrees(100) == Solution().numTrees_math(100)
+__ __name__ __ "__main__":
+    assert Solution().numTrees(100) __ Solution().numTrees_math(100)

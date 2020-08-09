@@ -9,8 +9,8 @@ Note: You may assume that n is not less than 2 and not larger than 58.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def integerBreak(self, n):
+class Solution(object
+    ___ integerBreak(self, n
         """
         First visualize the breakdown process into a search tree. The search tree dynamic programming
         Dynamic programming
@@ -28,10 +28,10 @@ class Solution(object):
         """
         F = [None for _ in xrange(n+1)]
         F[1] = 1
-        for i in xrange(2, n+1):
+        for i in xrange(2, n+1
             F[i] = max(
                 max(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j))
                 for j in xrange(1, i/2)
             )
 
-        return F[n]
+        r_ F[n]

@@ -1,7 +1,7 @@
-import logging
-import os
+______ logging
+______ os
 
-import tweepy
+______ tweepy
 
 CONSUMER_KEY = os.environ["CONSUMER_KEY"]
 CONSUMER_SECRET = os.environ["CONSUMER_SECRET"]
@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.DEBUG,
                     filename='script.log',
                     filemode='a')
 
-def tweet_status(tweet):
+___ tweet_status(tweet
     try:
         api.update_status(tweet)
         logging.info('Posted to Twitter')

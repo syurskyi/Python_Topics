@@ -21,11 +21,11 @@ data = """Luke Skywalker,172,77
 """
 
 
-def person_max_bmi(data=data):
+___ person_max_bmi(data=data
     """Return (name, BMI float) of the character in data that
        has the highest BMI (rounded on 2 decimals)"""
     res = []
-    for line in data.splitlines(keepends=False):
+    for line in data.splitlines(keepends=False
         name, height, mass = line.strip().split(',')
         res.append((name, round(float(mass) / ((int(height) / 100) ** 2), 2)))
-    return max(res, key=lambda x: x[1])
+    r_ max(res, key=lambda x: x[1])

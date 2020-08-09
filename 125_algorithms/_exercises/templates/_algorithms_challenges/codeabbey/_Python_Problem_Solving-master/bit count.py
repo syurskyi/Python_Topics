@@ -10,66 +10,66 @@ for j in binary:
     res_str = ''
     
     #check if negative or positive
-    if j > 0:
+    __ j > 0:
         #append in the list
         bin_list.append(j)
-        while j != 1:
+        w___ j != 1:
             j =int(j / 2)
             bin_list.append(j)
             
         #store the binary format according to the result
         for k in bin_list:
-            if k & 1: 
+            __ k & 1:
                 #odd
                 res_str = '1' + res_str
-            else:
+            ____
                 #even
                 res_str = '0' + res_str
         print(res_str.count('1'),end=' ')
-    else:
+    ____
         j = abs(j)
         bin_list.append(j)
-        while j != 1:
+        w___ j != 1:
             j =int(j / 2)
             bin_list.append(j)
         count = 0
         #we are doing 1's compliement 
         for k in bin_list:
-            if k & 1: 
+            __ k & 1:
                 #odd
                 res_str = '0' + res_str
-            else:
+            ____
                 #even
                 res_str = '1' + res_str
         res = 1
         carry = 0
         result = ''
         #here we are doing 2's compliement
-        for i in range(len(res_str)-1,-1,-1):
+        for i in range(le.(res_str)-1,-1,-1
             res = int(res_str[i]) + res + carry
-            if res == 3:
+            __ res __ 3:
                 carry = 1
                 res = 1
                 result = str(res) + result
-            elif res > 1:
+            ____ res > 1:
                 carry = 1
                 res = 0
                 result = str(res) + result
-            elif res == 1:
+            ____ res __ 1:
                 carry = 0 
                 res= 0 
                 result = '1' + result
-            elif res == 0:
+            ____ res __ 0:
                 carry = 0
                 res = 0
                 result = '0' + result
-            else:
+            ____
                 pass
         #if at the end carry has 1 then append 1
-        if carry == 1:
+        __ carry __ 1:
             result = '1' + result
         
         # add 1 till it become 32 in length
-        while len(result) != 32:
+        w___ le.(result) != 32:
             result += '1'
         print(result.count('1'),end=' ')    

@@ -1,70 +1,70 @@
-from json import dumps
+from json ______ dumps
 
 
-class Tree(object):
-    def __init__(self, label, children=[]):
+class Tree(object
+    ___ __init__(self, label, children=[]
         self.label = label
         self.children = children
 
-    def __dict__(self):
-        return {self.label: [c.__dict__() for c in sorted(self.children)]}
+    ___ __dict__(self
+        r_ {self.label: [c.__dict__() for c in sorted(self.children)]}
 
-    def __str__(self, indent=None):
-        return dumps(self.__dict__(), indent=indent)
+    ___ __str__(self, indent=None
+        r_ dumps(self.__dict__(), indent=indent)
 
-    def __lt__(self, other):
-        return self.label < other.label
+    ___ __lt__(self, other
+        r_ self.label < other.label
 
-    def __eq__(self, other):
-        return self.__dict__() == other.__dict__()
+    ___ __eq__(self, other
+        r_ self.__dict__() __ other.__dict__()
 
-    def __iter__(self):
+    ___ __iter__(self
         yield self.label
         for child in self.children:
             for gchild in child:
                 yield gchild
 
-    def dup(self):
-        return Tree(self.label, [c.dup() for c in self.children])
+    ___ dup(self
+        r_ Tree(self.label, [c.dup() for c in self.children])
 
-    def add(self, other):
+    ___ add(self, other
         tree = self.dup()
         tree.children.append(other)
-        return tree
+        r_ tree
 
-    def remove(self, node):
+    ___ remove(self, node
         tree = self.dup()
-        for child in list(tree.children):
+        for child in list(tree.children
             tree.children.remove(child)
-            if child.label == node:
+            __ child.label __ node:
                 break
             tree.children.append(child.remove(node))
-        return tree
+        r_ tree
 
-    def from_pov(self, from_node):
+    ___ from_pov(self, from_node
         stack = [self]
         visited = set()
-        while stack:
+        w___ stack:
             tree = stack.pop(0)
-            if tree.label in visited:
+            __ tree.label in visited:
                 continue
             visited.add(tree.label)
-            if from_node == tree.label:
-                return tree
+            __ from_node __ tree.label:
+                r_ tree
             for child in tree.children:
                 stack.append(child.add(tree.remove(child.label)))
         raise ValueError("Tree could not be reoriented")
 
-    def path_to(self, from_node, to_node):
+    ___ path_to(self, from_node, to_node
         reordered = self.from_pov(from_node)
         stack = reordered.children
         path = [from_node]
-        while path[-1] != to_node:
+        w___ path[-1] != to_node:
             try:
                 tree = stack.pop()
             except IndexError:
                 raise ValueError("No path found")
-            if to_node in tree:
+            __ to_node in tree:
                 path.append(tree.label)
                 stack = tree.children
-        return path
+        r_ path

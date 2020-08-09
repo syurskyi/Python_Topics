@@ -1,5 +1,5 @@
-class Solution(object):
-  def simplifyPath(self, path):
+class Solution(object
+  ___ simplifyPath(self, path
     """
     :type path: str
     :rtype: str
@@ -7,11 +7,11 @@ class Solution(object):
     path = path.split("/")
     stack = []
     for p in path:
-      if p in ["", "."]:
+      __ p in ["", "."]:
         continue
-      if p == "..":
-        if stack:
+      __ p __ "..":
+        __ stack:
           stack.pop()
-      else:
+      ____
         stack.append(p)
-    return "/" + "/".join(stack)
+    r_ "/" + "/".join(stack)

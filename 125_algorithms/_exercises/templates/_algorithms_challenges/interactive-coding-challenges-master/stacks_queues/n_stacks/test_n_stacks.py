@@ -1,24 +1,24 @@
-from nose.tools import assert_equal
-from nose.tools import raises
+from nose.tools ______ assert_equal
+from nose.tools ______ raises
 
 
-class TestStacks(object):
+class TestStacks(object
 
     @raises(Exception)
-    def test_pop_on_empty(self, num_stacks, stack_size):
+    ___ test_pop_on_empty(self, num_stacks, stack_size
         print('Test: Pop on empty stack')
         stacks = Stacks(num_stacks, stack_size)
         stacks.pop(0)
 
     @raises(Exception)
-    def test_push_on_full(self, num_stacks, stack_size):
+    ___ test_push_on_full(self, num_stacks, stack_size
         print('Test: Push to full stack')
         stacks = Stacks(num_stacks, stack_size)
-        for i in range(0, stack_size):
+        for i in range(0, stack_size
             stacks.push(2, i)
         stacks.push(2, stack_size)
 
-    def test_stacks(self, num_stacks, stack_size):
+    ___ test_stacks(self, num_stacks, stack_size
         print('Test: Push to non-full stack')
         stacks = Stacks(num_stacks, stack_size)
         stacks.push(0, 1)
@@ -35,7 +35,7 @@ class TestStacks(object):
         print('Success: test_stacks\n')
 
 
-def main():
+___ main(
     num_stacks = 3
     stack_size = 100
     test = TestStacks()
@@ -44,5 +44,5 @@ def main():
     test.test_stacks(num_stacks, stack_size)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

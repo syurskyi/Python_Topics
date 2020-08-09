@@ -1,11 +1,11 @@
 class Solution:
-    def titleToNumber(self, s):
+    ___ titleToNumber(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
         s = s.upper()
 
@@ -15,4 +15,4 @@ class Solution:
         for char in s:
             ans = ans * 26 + ord(char) - BASE
 
-        return ans
+        r_ ans

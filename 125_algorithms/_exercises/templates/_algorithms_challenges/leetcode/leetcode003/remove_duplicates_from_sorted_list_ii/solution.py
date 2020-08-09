@@ -9,32 +9,32 @@ Given 1->1->1->2->3, return 2->3.
 """
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
+# class ListNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def deleteDuplicates(self, head):
+class Solution(object
+    ___ deleteDuplicates(self, head
         """
         :type head: ListNode
         :rtype: ListNode
         """
         d = {}
         current = head
-        while current is not None:
-            if current.val not in d:
+        w___ current is not None:
+            __ current.val not in d:
                 d[current.val] = 1
-            else:
+            ____
                 d[current.val] += 1
             current = current.next
         current = head
         dummy = ListNode(0)
         dummy_end = dummy
-        while current is not None:
-            if d[current.val] == 1:
+        w___ current is not None:
+            __ d[current.val] __ 1:
                 dummy_end.next = current
                 dummy_end = current
             current = current.next
         dummy_end.next = None
-        return dummy.next
+        r_ dummy.next

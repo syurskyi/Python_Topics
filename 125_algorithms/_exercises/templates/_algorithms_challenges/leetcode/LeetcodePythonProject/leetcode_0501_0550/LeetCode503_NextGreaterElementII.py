@@ -4,26 +4,26 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def nextGreaterElements(self, nums):
+class Solution(object
+    ___ nextGreaterElements(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
         res = []
-        n = len(nums)
+        n = le.(nums)
         stack = list(range(n-1, -1, -1))
-        for i in range(n-1, -1, -1):
-            while stack and nums[stack[-1]] <= nums[i]:
+        for i in range(n-1, -1, -1
+            w___ stack and nums[stack[-1]] <= nums[i]:
                 stack.pop()
-            if stack:
+            __ stack:
                 res.insert(0, nums[stack[-1]])
-            else:
+            ____
                 res.insert(0, -1)
             stack.append(i)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             [1, 2, 1],
             [1, 6, 2, 7, 4, 5],
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

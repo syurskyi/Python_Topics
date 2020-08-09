@@ -9,13 +9,13 @@ Example:
 Given envelopes = [[5,4],[6,4],[6,7],[2,3]], the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4]
 => [6,7]).
 """
-import bisect
+______ bisect
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def maxEnvelopes(self, A):
+class Solution(object
+    ___ maxEnvelopes(self, A
         """
         LIS
         binary search
@@ -24,41 +24,41 @@ class Solution(object):
         :type A: List[List[int]]
         :rtype: int
         """
-        if not A: return 0
+        __ not A: r_ 0
 
-        A.sort(key=lambda (w, h): (w, -h))
-        F = [-1 for _ in xrange(len(A)+1)]
+        A.sort(key=lambda (w, h (w, -h))
+        F = [-1 for _ in xrange(le.(A)+1)]
 
         F[1] = A[0][1]  # store value rather than index
         k = 1
         for _, h in A[1:]:
             idx = bisect.bisect_left(F, h, 1, k+1)
             F[idx] = h
-            k += 1 if idx == k+1 else 0
+            k += 1 __ idx __ k+1 else 0
 
-        return k
+        r_ k
 
-    def maxEnvelopesTLE(self, A):
+    ___ maxEnvelopesTLE(self, A
         """
         LIS
         O(n^2)
         :type A: List[List[int]]
         :rtype: int
         """
-        if not A: return 0
+        __ not A: r_ 0
 
         predicate = lambda a, b: b[0] > a[0] and b[1] > a[1]
         A.sort()
-        n = len(A)
+        n = le.(A)
         F = [1 for _ in xrange(n)]
-        for i in xrange(1, n):
-            for j in xrange(i):
-                if predicate(A[j], A[i]):
+        for i in xrange(1, n
+            for j in xrange(i
+                __ predicate(A[j], A[i]
                     F[i] = max(F[i], 1 + F[j])
 
-        return max(F)
+        r_ max(F)
 
 
-if __name__ == "__main__":
-    assert Solution().maxEnvelopes([[5, 4], [6, 4], [6, 7], [2, 3]]) == 3
-    assert Solution().maxEnvelopes([[2,100],[3,200],[4,300],[5,500],[5,400],[5,250],[6,370],[6,360],[7,380]]) == 5
+__ __name__ __ "__main__":
+    assert Solution().maxEnvelopes([[5, 4], [6, 4], [6, 7], [2, 3]]) __ 3
+    assert Solution().maxEnvelopes([[2,100],[3,200],[4,300],[5,500],[5,400],[5,250],[6,370],[6,360],[7,380]]) __ 5

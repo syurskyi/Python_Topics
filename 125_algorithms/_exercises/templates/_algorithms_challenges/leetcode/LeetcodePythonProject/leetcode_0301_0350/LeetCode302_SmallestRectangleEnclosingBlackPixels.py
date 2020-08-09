@@ -4,38 +4,38 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def minArea(self, image, x, y):
-        m, n = len(image), len(image[0])
+class Solution(object
+    ___ minArea(self, image, x, y
+        m, n = le.(image), le.(image[0])
         left = self.searchColumns(image, 0, y, 0, m, True)
         right = self.searchColumns(image, y+1, n, 0, m, False)
         top = self.searchRows(image, 0, x, left, right, True)
         bottom = self.searchRows(image, x+1, m, left, right, False)
-        return (right-left)*(bottom-top)
+        r_ (right-left)*(bottom-top)
     
-    def searchColumns(self, image, i, j, top, bottom, opt):
-        while i < j:
+    ___ searchColumns(self, image, i, j, top, bottom, opt
+        w___ i < j:
             k, mid = top, (i+j)//2
-            while k < bottom and image[k][mid] == '0':
+            w___ k < bottom and image[k][mid] __ '0':
                 k+=1
-            if (k < bottom) == opt:
+            __ (k < bottom) __ opt:
                 j = mid
-            else:
+            ____
                 i = mid+1
-        return i
+        r_ i
     
-    def searchRows(self, image, i, j, left, right, opt):
-        while i < j:
+    ___ searchRows(self, image, i, j, left, right, opt
+        w___ i < j:
             k, mid = left, (i+j)//2
-            while k < right and image[mid][k] == '0':
+            w___ k < right and image[mid][k] __ '0':
                 k+=1
-            if (k < right) == opt:
+            __ (k < right) __ opt:
                 j = mid
-            else:
+            ____
                 i  = mid+1
-        return i
+        r_ i
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 [
@@ -51,5 +51,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

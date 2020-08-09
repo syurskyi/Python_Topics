@@ -4,22 +4,22 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxSubArrayLen(self, nums, k):
+class Solution(object
+    ___ maxSubArrayLen(self, nums, k
         hashmap = {}
         sumVal = 0
         maxLen = 0
-        for i, num in enumerate(nums):
+        for i, num in enumerate(nums
             sumVal += num
-            if sumVal == k:
+            __ sumVal __ k:
                 maxLen = max(maxLen, i+1)
-            if sumVal-k in hashmap:
+            __ sumVal-k in hashmap:
                 maxLen = max(maxLen, i-hashmap[sumVal-k])
-            if sumVal not in hashmap:
+            __ sumVal not in hashmap:
                 hashmap[sumVal] = i
-        return maxLen
+        r_ maxLen
     
-    def test(self):
+    ___ test(self
         testCases = [
             ([1, -1, 5, -2, 3], 3),
             ([-2, -1, 2, 1], 1),
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

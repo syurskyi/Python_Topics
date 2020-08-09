@@ -2,32 +2,32 @@ class Solution:
     """
     dfs with ignoring self and same num
     """
-    def permuteUnique(self, nums):
+    ___ permuteUnique(self, nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
 
-        if not nums:
-            return [[]]
+        __ not nums:
+            r_ [[]]
 
         ans = []
 
         nums.sort()
         self.dfs(nums, ans, [])
 
-        return ans
+        r_ ans
 
-    def dfs(self, nums, ans, path):
-        if not nums:
+    ___ dfs(self, nums, ans, path
+        __ not nums:
             ans.append(path[:])
-            return
+            r_
 
-        for i in range(len(nums)):
+        for i in range(le.(nums)):
             """
             ignore same num
             """
-            if i > 0 and nums[i] == nums[i - 1]:
+            __ i > 0 and nums[i] __ nums[i - 1]:
                 continue
 
             """
@@ -42,30 +42,30 @@ class Solution:
     """
     dfs with visited indices
     """
-    def permuteUnique(self, nums):
+    ___ permuteUnique(self, nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
 
-        if not nums:
-            return [[]]
+        __ not nums:
+            r_ [[]]
 
         ans = []
-        visited = [False] * len(nums)
+        visited = [False] * le.(nums)
 
         nums.sort()
         self.dfs(nums, visited, ans, [])
 
-        return ans
+        r_ ans
 
-    def dfs(self, nums, visited, ans, path):
-        if len(path) == len(nums):
+    ___ dfs(self, nums, visited, ans, path
+        __ le.(path) __ le.(nums
             ans.append(path[:])
-            return
+            r_
 
-        for i in range(len(nums)):
-            if visited[i]:
+        for i in range(le.(nums)):
+            __ visited[i]:
                 continue
 
             """
@@ -74,7 +74,7 @@ class Solution:
             we need to ensure `3`, `3'` is picked
             otherwise repeated result will be included
             """
-            if i > 0 and not visited[i - 1] and nums[i] == nums[i - 1]:
+            __ i > 0 and not visited[i - 1] and nums[i] __ nums[i - 1]:
                 continue
 
             visited[i] = True

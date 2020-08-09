@@ -3,8 +3,8 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def numDecodings(self, s):
+class Solution(object
+    ___ numDecodings(self, s
         """
         :type s: str
         :rtype: int
@@ -12,18 +12,18 @@ class Solution(object):
         MOD = 10**9+7
         e0, e1, e2 = 1, 0, 0
         for c in s:
-            if c == '*':
+            __ c __ '*':
                 f0 = e0*9 + e1*9 + e2*6
                 f1 = e0
                 f2 = e0
-            else:
+            ____
                 f0 = e0*(c>'0') + e1 + e2*(c<='6')
-                f1 = e0*(c=='1')
-                f2 = e0*(c=='2')
+                f1 = e0*(c__'1')
+                f2 = e0*(c__'2')
             e0, e1, e2 = f0%MOD, f1, f2
-        return e0
+        r_ e0
     
-    def test(self):
+    ___ test(self
         testCases = [
             '*',
             '1*',
@@ -35,5 +35,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

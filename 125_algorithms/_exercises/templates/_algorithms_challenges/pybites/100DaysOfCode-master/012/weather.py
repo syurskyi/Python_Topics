@@ -1,8 +1,8 @@
-from datetime import datetime
-import os
+from datetime ______ datetime
+______ os
 
-import pytz
-import requests
+______ pytz
+______ requests
 
 API_KEY = os.environ.get('WEATHER_API')
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?q='
@@ -17,7 +17,7 @@ URL = ('http://api.openweathermap.org/data/2.5/weather?'
        'q={}&mode=json&units=metric&appid={}')
 
 
-def get_weather(cities=TIMEZONES.keys()):
+___ get_weather(cities=TIMEZONES.keys()):
     fmt = 'In {} the weather is: {}, today sun rises at {} and sets at {}'
 
     output = []
@@ -29,11 +29,11 @@ def get_weather(cities=TIMEZONES.keys()):
         sunset = get_local_tstamp(city, info["sys"]["sunset"])
         output.append(fmt.format(city, main, sunrise, sunset))
 
-    return '\n'.join(output)
+    r_ '\n'.join(output)
 
 
-def get_local_tstamp(city, utstamp):
-    if city not in TIMEZONES:
+___ get_local_tstamp(city, utstamp
+    __ city not in TIMEZONES:
         raise ValueError('Not a valid city, check what you call me with')
     tz = TIMEZONES[city]
 
@@ -48,8 +48,8 @@ def get_local_tstamp(city, utstamp):
     dt = utc_dt.astimezone(loc_tz)
 
     fmt = '%H:%M:%S %Z%z'
-    return dt.strftime(fmt)
+    r_ dt.strftime(fmt)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     print(get_weather())

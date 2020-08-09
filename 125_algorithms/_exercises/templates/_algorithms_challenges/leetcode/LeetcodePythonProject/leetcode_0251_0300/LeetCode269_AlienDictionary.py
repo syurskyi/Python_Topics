@@ -4,8 +4,8 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def alienOrder(self, words):
+class Solution(object
+    ___ alienOrder(self, words
         """
         :type words: List[str]
         :rtype: str
@@ -15,34 +15,34 @@ class Solution(object):
         for word in words:
             for c in word:
                 degree[c] = 0
-        for i in range(1, len(words)):
+        for i in range(1, le.(words)):
             currWord = words[i]
             prevWord = words[i-1]
-            length = min(len(currWord), len(prevWord))
-            for j in range(length):
+            length = min(le.(currWord), le.(prevWord))
+            for j in range(length
                 c1, c2 = prevWord[j], currWord[j]
-                if c1 != c2:
-                    if c1 not in graph:
+                __ c1 != c2:
+                    __ c1 not in graph:
                         graph[c1] = set()
-                    if c2 not in graph[c1]:
+                    __ c2 not in graph[c1]:
                         degree[c2] += 1
                     graph[c1].add(c2)
                     break
         queue = []
-        for c, cnt in degree.items():
-            if cnt == 0:
+        for c, cnt in degree.items(
+            __ cnt __ 0:
                 queue.append(c)
         res = ''
-        while queue:
+        w___ queue:
             c = queue.pop(0)
             res += c
-            for c0 in graph.get(c, []):
+            for c0 in graph.get(c, []
                 degree[c0] -= 1
-                if degree[c0] == 0:
+                __ degree[c0] __ 0:
                     queue.append(c0)
-        return res if len(res) == len(degree) else ''
+        r_ res __ le.(res) __ le.(degree) else ''
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "wrt",
@@ -69,5 +69,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
     
-if __name__  == '__main__':
+__ __name__  __ '__main__':
     Solution().test()

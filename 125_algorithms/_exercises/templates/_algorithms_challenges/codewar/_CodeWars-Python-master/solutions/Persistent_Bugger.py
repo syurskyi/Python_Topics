@@ -15,14 +15,14 @@ For example:
  persistence(4) => 0   # Because 4 is already a one-digit number.
 """
 
-import functools
+______ functools
 
 
-def persistence(n):
+___ persistence(n
     times = 0
 
-    while n > 9:
+    w___ n > 9:
         n = functools.reduce(lambda x, y: x * y, [int(i) for i in str(n)])
         times += 1
 
-    return times
+    r_ times

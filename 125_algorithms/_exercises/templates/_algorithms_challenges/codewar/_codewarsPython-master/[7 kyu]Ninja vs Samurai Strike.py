@@ -1,14 +1,14 @@
 class Warrior:
-    def __init__(self,name):
+    ___ __init__(self,name
         self.name = name
         self.health = 100
         self.visible = True
         
-    def strike(self,enemy,swings):
+    ___ strike(self,enemy,swings
         #health cannot go below zero
-        enemy.health = max([0,enemy.health-(swings*10)]) if enemy.visible else enemy.health
+        enemy.health = max([0,enemy.health-(swings*10)]) __ enemy.visible else enemy.health
 
-    def hide(self):
+    ___ hide(self
         self.visible = not(self.visible)
 
 ninja = Warrior('Ninja')

@@ -2,5 +2,5 @@
 # Score: 10
 
 
-def average(array):
-    return sum(set(array)) / len(set(array))
+___ average(array
+    r_ sum(set(array)) / le.(set(array))

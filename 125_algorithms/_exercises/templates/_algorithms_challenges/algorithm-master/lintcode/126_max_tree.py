@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -21,16 +21,16 @@ class Solution:
     step5/ val: 3, stack: [6{5{2,},3{0,}}, 3{0,}]
     step6/ val: 1, stack: [6{5{2,},3{0,1}}, 3{0,1}, 1]
     """
-    def maxTree(self, A):
+    ___ maxTree(self, A
         stack = []
         for val in A:
             node = TreeNode(val)
-            while stack and val > stack[-1].val:
+            w___ stack and val > stack[-1].val:
                 node.left = stack.pop()
 
             # current val less than the last node in stack
-            if stack:
+            __ stack:
                 stack[-1].right = node
 
             stack.append(node)
-        return stack[0]
+        r_ stack[0]

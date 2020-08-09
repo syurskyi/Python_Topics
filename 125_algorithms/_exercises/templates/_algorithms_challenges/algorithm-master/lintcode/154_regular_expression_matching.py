@@ -20,16 +20,16 @@ case 3: `P[j-1]` is `a` and `a` == `P[j-1]` == `S[i-1]`
 
 
 class Solution:
-    def isMatch(self, s, p):
+    ___ isMatch(self, s, p
         """
         :type s: str
         :type p: str
         :rtype: bool
         """
-        if s == p == '':
-            return True
+        __ s __ p __ '':
+            r_ True
 
-        m, n = len(s), len(p)
+        m, n = le.(s), le.(p)
         MULTI = '*'
         ANY = '.'
 
@@ -42,18 +42,18 @@ class Solution:
         # dp[i][0] = False  # i = 1 -> m + 1
         # dp[0][j] -> ?, need to check
 
-        for i in range(m + 1):
-            for j in range(1, n + 1):
-                if i > 0 and p[j - 1] == s[i - 1] and dp[i - 1][j - 1]:
+        for i in range(m + 1
+            for j in range(1, n + 1
+                __ i > 0 and p[j - 1] __ s[i - 1] and dp[i - 1][j - 1]:
                     dp[i][j] = True
-                elif i > 0 and p[j - 1] == ANY and dp[i - 1][j - 1]:
+                ____ i > 0 and p[j - 1] __ ANY and dp[i - 1][j - 1]:
                     dp[i][j] = True
-                elif j > 1 and p[j - 1] == MULTI:
-                    if dp[i][j - 2]:
+                ____ j > 1 and p[j - 1] __ MULTI:
+                    __ dp[i][j - 2]:
                         dp[i][j] = True
-                    elif i > 0 and p[j - 2] == s[i - 1] and dp[i - 1][j]:
+                    ____ i > 0 and p[j - 2] __ s[i - 1] and dp[i - 1][j]:
                         dp[i][j] = True
-                    elif i > 0 and p[j - 2] == ANY and dp[i - 1][j]:
+                    ____ i > 0 and p[j - 2] __ ANY and dp[i - 1][j]:
                         dp[i][j] = True
 
-        return dp[m][n]
+        r_ dp[m][n]

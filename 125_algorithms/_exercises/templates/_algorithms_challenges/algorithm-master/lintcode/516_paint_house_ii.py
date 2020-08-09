@@ -21,19 +21,19 @@ class Solution:
     @param: C: n x k cost matrix
     @return: an integer, the minimum cost to paint all houses
     """
-    def minCostII(self, C):
-        if not C or not C[0]:
-            return 0
+    ___ minCostII(self, C
+        __ not C or not C[0]:
+            r_ 0
 
         INFINITY = float('inf')
-        n, k = len(C), len(C[0])
+        n, k = le.(C), le.(C[0])
         dp = [[0] * k for _ in range(n)]
         prev = curr = 0
 
-        for j in range(k):
+        for j in range(k
             dp[curr][j] = C[0][j]
 
-        for i in range(1, n):
+        for i in range(1, n
             prev = curr
             curr = 1 - curr
             min1 = min2 = INFINITY
@@ -41,12 +41,12 @@ class Solution:
             """
             to find the minimum and second minimum in previous iteration
             """
-            for j in range(k):
-                if dp[prev][j] < min1:
+            for j in range(k
+                __ dp[prev][j] < min1:
                     min2 = min1
                     min1 = dp[prev][j]
                     continue
-                if dp[prev][j] < min2:
+                __ dp[prev][j] < min2:
                     min2 = dp[prev][j]
 
             """
@@ -55,11 +55,11 @@ class Solution:
             and then we need to take the color
             with the second minimum in `dp[prev]`
             """
-            for j in range(k):
+            for j in range(k
                 dp[curr][j] = C[i][j]
-                if dp[prev][j] == min1:
+                __ dp[prev][j] __ min1:
                     dp[curr][j] += min2
-                else:
+                ____
                     dp[curr][j] += min1
 
-        return min(dp[curr])
+        r_ min(dp[curr])

@@ -11,80 +11,80 @@ class Solution:
     """
     UnionFind
     """
-    def findRedundantConnection(self, edges):
+    ___ findRedundantConnection(self, edges
         """
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        if not edges:
-            return []
+        __ not edges:
+            r_ []
 
         nodes = {}
 
         for u, v in edges:
-            if not self.union(nodes, u, v):
-                return [u, v]
+            __ not self.union(nodes, u, v
+                r_ [u, v]
 
-        return []
+        r_ []
 
-    def union(self, nodes, u, v):
+    ___ union(self, nodes, u, v
         a = self.find(nodes, u)
         b = self.find(nodes, v)
 
-        if a == b:
-            return False
+        __ a __ b:
+            r_ False
 
         nodes[a] = b
-        return True
+        r_ True
 
-    def find(self, nodes, u):
-        if u not in nodes:
+    ___ find(self, nodes, u
+        __ u not in nodes:
             nodes[u] = u
-            return u
-        if nodes[u] == u:
-            return u
+            r_ u
+        __ nodes[u] __ u:
+            r_ u
 
         nodes[u] = self.find(nodes, nodes[u])
-        return nodes[u]
+        r_ nodes[u]
 
 
-import collections
+______ collections
 
 
 class Solution:
     """
     DFS
     """
-    def findRedundantConnection(self, edges):
+    ___ findRedundantConnection(self, edges
         """
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        if not edges:
-            return []
+        __ not edges:
+            r_ []
 
         nodes = collections.defaultdict(set)
 
         for u, v in edges:
             # dfs to check u and v are connected already => cycle
-            if u in nodes and v in nodes and self.dfs(nodes, u, v, set()):
-                return [u, v]
+            __ u in nodes and v in nodes and self.dfs(nodes, u, v, set()):
+                r_ [u, v]
 
             nodes[u].add(v)
             nodes[v].add(u)
 
-        return []
+        r_ []
 
-    def dfs(self, nodes, u, v, visited):
-        if u == v:
-            return True
-        if u in visited:
-            return False
+    ___ dfs(self, nodes, u, v, visited
+        __ u __ v:
+            r_ True
+        __ u in visited:
+            r_ False
 
         visited.add(u)
 
         for x in nodes[u]:
-            if self.dfs(nodes, x, v, visited):
-                return True
+            __ self.dfs(nodes, x, v, visited
+                r_ True
 
-        return False
+        r_ False

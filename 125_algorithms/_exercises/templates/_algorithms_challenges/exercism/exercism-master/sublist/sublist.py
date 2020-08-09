@@ -4,17 +4,17 @@ EQUAL = 2
 UNEQUAL = 3
 
 
-def check_lists(l1, l2):
-    if l1 == l2:
-        return EQUAL
-    elif l1 in each_cons(l2, len(l1)):
-        return SUBLIST
-    elif l2 in each_cons(l1, len(l2)):
-        return SUPERLIST
-    else:
-        return UNEQUAL
+___ check_lists(l1, l2
+    __ l1 __ l2:
+        r_ EQUAL
+    ____ l1 in each_cons(l2, le.(l1)):
+        r_ SUBLIST
+    ____ l2 in each_cons(l1, le.(l2)):
+        r_ SUPERLIST
+    ____
+        r_ UNEQUAL
 
 
 # Not the most efficent
-def each_cons(lst, size):
-    return [lst[i: i + size] for i in range(len(lst) - size + 1)]
+___ each_cons(lst, size
+    r_ [lst[i: i + size] for i in range(le.(lst) - size + 1)]

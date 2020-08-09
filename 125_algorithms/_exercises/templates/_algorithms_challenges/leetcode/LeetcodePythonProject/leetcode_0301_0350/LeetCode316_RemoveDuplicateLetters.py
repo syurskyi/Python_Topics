@@ -4,43 +4,43 @@ Created on Mar 16, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def removeDuplicateLetters(self, s):
-        if not s: return ''
+class Solution(object
+    ___ removeDuplicateLetters(self, s
+        __ not s: r_ ''
         cnt = [0]*26
         pos = 0
         for c in s:
             cnt[ord(c)-ord('a')] += 1
-        for i, c in enumerate(s):
-            if s[i] < s[pos]:
+        for i, c in enumerate(s
+            __ s[i] < s[pos]:
                 pos = i
             cnt[ord(c)-ord('a')] -= 1
-            if cnt[ord(c)-ord('a')] == 0:
+            __ cnt[ord(c)-ord('a')] __ 0:
                 break
-        return s[pos]+self.removeDuplicateLetters(s[pos+1:].replace(s[pos], ''))
+        r_ s[pos]+self.removeDuplicateLetters(s[pos+1:].replace(s[pos], ''))
     
-    def removeDuplicateLetters_another(self, s):
-        if not s: return ''
+    ___ removeDuplicateLetters_another(self, s
+        __ not s: r_ ''
         lastPosMap = {}
-        for i, c in enumerate(s):
+        for i, c in enumerate(s
             lastPosMap[c] = i
-        length = len(lastPosMap)
+        length = le.(lastPosMap)
         res = ['a']*length
         begin, end = 0, min(lastPosMap.values())
-        for i in range(length):
+        for i in range(length
             minChar = chr(ord('z')+1)
-            for j in range(begin, end+1):
-                if s[j] in lastPosMap and s[j] < minChar:
+            for j in range(begin, end+1
+                __ s[j] in lastPosMap and s[j] < minChar:
                     minChar = s[j]
                     begin = j+1
             res[i] = minChar
-            if i == length-1:
+            __ i __ length-1:
                 break
             del lastPosMap[minChar]
             end = min(lastPosMap.values())
-        return ''.join(res)
+        r_ ''.join(res)
     
-    def test(self):
+    ___ test(self
         testCases = [
             'bcabc',
             'cbacbcbc',
@@ -51,5 +51,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

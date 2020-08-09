@@ -3,11 +3,11 @@
 #The idea is to assign a web-scraped file to the DATA_FILE constant.
 #The data in the file is then read in and sent as the body of the email.
 
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+______ smtplib
+from email.mime.multipart ______ MIMEMultipart
+from email.mime.text ______ MIMEText
 
-from email_list import EMAILS
+from email_list ______ EMAILS
 
 DATA_FILE = 'data.txt'
 from_addr = 'your_email@gmail.com'

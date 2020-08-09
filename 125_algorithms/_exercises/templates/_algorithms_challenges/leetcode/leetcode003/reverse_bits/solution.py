@@ -1,24 +1,24 @@
 class Solution:
     # @param n, an integer
     # @return an integer
-    def reverseBits(self, n):
+    ___ reverseBits(self, n
         res = 0
         size = 32
-        for i in range(size):
-            if self.test_bit(n, i):
+        for i in range(size
+            __ self.test_bit(n, i
                 print(i)
                 res = self.set_bit(res, size - 1 - i)
-        return res
+        r_ res
 
-    def test_bit(self, n, i):
+    ___ test_bit(self, n, i
         mask = 1 << i
-        if n & mask > 0:
-            return True
-        return False
+        __ n & mask > 0:
+            r_ True
+        r_ False
 
-    def set_bit(self, n, i):
+    ___ set_bit(self, n, i
         mask = 1 << i
-        return n | mask
+        r_ n | mask
 
 s = Solution()
 print(bin(43261596))

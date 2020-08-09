@@ -16,13 +16,13 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def hasPathSum(self, root, sum):
+    ___ hasPathSum(self, root, sum
         """
         dfs
 
@@ -31,8 +31,8 @@ class Solution:
         :return: boolean
         """
         # trivial
-        if not root:
-            return False
+        __ not root:
+            r_ False
 
         # don't prune, possible negative
         # if sum<0:
@@ -41,11 +41,11 @@ class Solution:
         sum = sum-root.val
 
         # terminal condition
-        if sum==0 and root.left is None and root.right is None:
-            return True
+        __ sum__0 and root.left is None and root.right is None:
+            r_ True
 
         # dfs without pre-checking
-        return self.hasPathSum(root.left, sum) or self.hasPathSum(root.right, sum)
+        r_ self.hasPathSum(root.left, sum) or self.hasPathSum(root.right, sum)
 
 
 

@@ -1,14 +1,14 @@
 class Solution:
     # @return an integer
-    def lengthOfLongestSubstring(self, s):
+    ___ lengthOfLongestSubstring(self, s
         res = 0
         cur = 0
         d = {}
-        for i, c in enumerate(s):
-            if c not in d:
+        for i, c in enumerate(s
+            __ c not in d:
                 cur += 1
-            else:
+            ____
                 cur = min(i - d[c], cur + 1)
             d[c] = i
             res = max(res, cur)
-        return res
+        r_ res

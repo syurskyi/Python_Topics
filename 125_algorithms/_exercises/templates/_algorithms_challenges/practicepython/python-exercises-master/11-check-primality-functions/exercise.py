@@ -1,18 +1,18 @@
 #! /urs/bin/env python
-def isPrimary(number):
+___ isPrimary(number
     list = range(2,number/2 + 1)
     primary = True
     for el in list:
-        if number % el == 0:
+        __ number % el __ 0:
             primary = False
             break
 
-    if primary:
+    __ primary:
         print('%s is a primary number!'%number)
-    else:
+    ____
         print('%s is not a primary number!'%number)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     number = int(raw_input('Give me a number: '))
     isPrimary(number)
 

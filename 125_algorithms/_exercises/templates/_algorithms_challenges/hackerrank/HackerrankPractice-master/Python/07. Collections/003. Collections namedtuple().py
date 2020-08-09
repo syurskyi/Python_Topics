@@ -2,7 +2,7 @@
 # Score: 20
 
 
-from collections import namedtuple
+from collections ______ namedtuple
 
 
 n, Student = int(input()), namedtuple('Student', input())

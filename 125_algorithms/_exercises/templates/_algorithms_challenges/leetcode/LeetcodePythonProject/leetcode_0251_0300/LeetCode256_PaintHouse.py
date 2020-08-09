@@ -4,15 +4,15 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def minCost(self, costs):
+class Solution(object
+    ___ minCost(self, costs
         """
         :type costs: List[List[int]]
         :rtype: int
         """
-        if not costs: return 0
-        for i in range(1, len(costs)):
+        __ not costs: r_ 0
+        for i in range(1, le.(costs)):
             costs[i][0] += min(costs[i-1][1], costs[i-1][2])
             costs[i][1] += min(costs[i-1][0], costs[i-1][2])
             costs[i][2] += min(costs[i-1][0], costs[i-1][1])
-        return min(costs[-1])
+        r_ min(costs[-1])

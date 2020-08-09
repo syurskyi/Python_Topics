@@ -1,44 +1,44 @@
-class List(object):
+class List(object
   @staticmethod
-  def delete(elem):
+  ___ delete(elem
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
-    return elem
+    r_ elem
 
   @staticmethod
-  def move(elem, newPrev, newNext):
+  ___ move(elem, newPrev, newNext
     elem.prev = newPrev
     elem.next = newNext
     newPrev.next = elem
     newNext.prev = elem
 
   @staticmethod
-  def append(head, elem):
+  ___ append(head, elem
     List.move(elem, head.prev, head)
 
   @staticmethod
-  def isEmpty(head):
-    return head.next == head.prev == head
+  ___ isEmpty(head
+    r_ head.next __ head.prev __ head
 
   @staticmethod
-  def initHead(head):
+  ___ initHead(head
     head.prev = head.next = head
 
 
-class Node(object):
-  def __init__(self, key, value, head):
+class Node(object
+  ___ __init__(self, key, value, head
     self.key = key
     self.value = value
     self.head = head
     self.prev = self.next = None
 
-  def hit(self):
+  ___ hit(self
     List.delete(self)
     List.append(self.head, self)
 
 
-class LRUCache(object):
-  def __init__(self, capacity):
+class LRUCache(object
+  ___ __init__(self, capacity
     """
     :type capacity: int
     """
@@ -47,29 +47,29 @@ class LRUCache(object):
     self.head = Node(-1, -1, None)
     List.initHead(self.head)
 
-  def get(self, key):
+  ___ get(self, key
     """
     :rtype: int
     """
-    if key not in self.d:
-      return -1
+    __ key not in self.d:
+      r_ -1
     self.d[key].hit()
-    return self.d[key].value
+    r_ self.d[key].value
 
-  def set(self, key, value):
+  ___ set(self, key, value
     """
     :type key: int
     :type value: int
     :rtype: nothing
     """
-    if self.cap == 0:
-      return
+    __ self.cap __ 0:
+      r_
 
-    if key in self.d:
+    __ key in self.d:
       self.d[key].hit()
       self.d[key].value = value
-    else:
-      if len(self.d) >= self.cap:
+    ____
+      __ le.(self.d) >= self.cap:
         oldNode = List.delete(self.head.next)
         del self.d[oldNode.key]
 

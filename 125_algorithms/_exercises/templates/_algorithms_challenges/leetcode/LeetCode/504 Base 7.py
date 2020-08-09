@@ -14,27 +14,27 @@ Note: The input will be in range of [-1e7, 1e7].
 
 
 class Solution:
-    def convertToBase7(self, num):
+    ___ convertToBase7(self, num
         """
         simplfied for negative number
         :type num: int
         :rtype: str
         """
-        if num == 0:
-            return "0"
+        __ num __ 0:
+            r_ "0"
         ret = []
         n = abs(num)
-        while n:
+        w___ n:
             ret.append(n % 7)
             n //= 7
 
         ret = "".join(map(str, ret[::-1]))
-        if num < 0:
+        __ num < 0:
             ret = "-" + ret
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().convertToBase7(100) == "202"
-    assert Solution().convertToBase7(-7) == "-10"
+__ __name__ __ "__main__":
+    assert Solution().convertToBase7(100) __ "202"
+    assert Solution().convertToBase7(-7) __ "-10"

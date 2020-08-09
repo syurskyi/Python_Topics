@@ -1,24 +1,24 @@
-class ComplexNumber(object):
-    def __init__(self, real, imaginary):
+class ComplexNumber(object
+    ___ __init__(self, real, imaginary
         pass
 
-    def add(self, other):
+    ___ add(self, other
         pass
 
-    def mul(self, other):
+    ___ mul(self, other
         pass
 
-    def sub(self, other):
+    ___ sub(self, other
         pass
 
-    def div(self, other):
+    ___ div(self, other
         pass
 
-    def abs(self):
+    ___ abs(self
         pass
 
-    def conjugate(self):
+    ___ conjugate(self
         pass
 
-    def exp(self):
+    ___ exp(self
         pass

@@ -1,8 +1,8 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestGroupOrdered(object):
-    def test_group_ordered(self, func):
+class TestGroupOrdered(object
+    ___ test_group_ordered(self, func
 
         assert_equal(func(None), None)
         print('Success: ' + func.__name__ + " None case.")
@@ -17,7 +17,7 @@ class TestGroupOrdered(object):
         print('Success: ' + func.__name__)
 
 
-def main():
+___ main(
     test = TestGroupOrdered()
     test.test_group_ordered(group_ordered)
     try:
@@ -27,5 +27,5 @@ def main():
         # in the solutions file
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

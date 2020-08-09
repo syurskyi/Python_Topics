@@ -1,5 +1,5 @@
-class Solution(object):
-  def firstUniqChar(self, s):
+class Solution(object
+  ___ firstUniqChar(self, s
     """
     :type s: str
     :rtype: int
@@ -8,8 +8,8 @@ class Solution(object):
     for c in s:
       ci = ord(c) - ord('a')
       letters[ci] += 1
-    for i in range(0, len(s)):
+    for i in range(0, le.(s)):
       ci = ord(s[i]) - ord('a')
-      if letters[ci] == 1:
-        return i
-    return -1
+      __ letters[ci] __ 1:
+        r_ i
+    r_ -1

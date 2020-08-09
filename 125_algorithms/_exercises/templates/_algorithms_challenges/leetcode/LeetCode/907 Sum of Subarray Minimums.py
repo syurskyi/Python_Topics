@@ -21,13 +21,13 @@ Note:
 1 <= A.length <= 30000
 1 <= A[i] <= 30000
 """
-from typing import List
+from typing ______ List
 
 MOD = 10 ** 9 + 7
 
 
 class Solution:
-    def sumSubarrayMins(self, A: List[int]) -> int:
+    ___ sumSubarrayMins(self, A: List[int]) -> int:
         """
         Let F[i][j] be the min of A[i:j]
         O(N^2)
@@ -44,43 +44,43 @@ class Solution:
 
         use an increasing stk from both left and right
         L[i] records the index of m, default -1
-        R[i] records the index of n, default len(A)
+        R[i] records the index of n, default le.(A)
         """
-        n = len(A)
+        n = le.(A)
         L = [-1 for _ in A]
         R = [n for _ in A]
 
         stk = []
-        for i in range(n):
-            while stk and A[stk[-1]] >= A[i]:
+        for i in range(n
+            w___ stk and A[stk[-1]] >= A[i]:
                 stk.pop()
 
-            if stk:
+            __ stk:
                 L[i] = stk[-1]
             stk.append(i)
 
         stk = []
-        for i in range(n-1, -1, -1):
+        for i in range(n-1, -1, -1
             # avoid double count when equal, attribtue to leftmost duplicate
-            while stk and A[stk[-1]] > A[i]:
+            w___ stk and A[stk[-1]] > A[i]:
                 stk.pop()
 
-            if stk:
+            __ stk:
                 R[i] = stk[-1]
             stk.append(i)
 
         ret = 0
-        for i in range(n):
+        for i in range(n
             ret += (
                 A[i] * (i - L[i]) * (R[i] - i)
             )
             ret %= MOD
 
-        return ret
+        r_ ret
 
 
 class Solution:
-    def sumSubarrayMins(self, A: List[int]) -> int:
+    ___ sumSubarrayMins(self, A: List[int]) -> int:
         """
         Improve the above solution using one stack
         use an increasing stk
@@ -88,17 +88,17 @@ class Solution:
         stk = []
         A = [-float('inf')] + A + [-float('inf')]
         ret = 0
-        for i, a in enumerate(A):
-            while stk and A[stk[-1]] > a:
+        for i, a in enumerate(A
+            w___ stk and A[stk[-1]] > a:
                 h = stk.pop()
                 # record for h
                 ret += A[h] * (h - stk[-1]) * (i - h)
                 ret %= MOD
 
             stk.append(i)
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().sumSubarrayMins([71,55,82,55]) == 593
-    assert Solution().sumSubarrayMins([3,1,2,4]) == 17
+__ __name__ __ "__main__":
+    assert Solution().sumSubarrayMins([71,55,82,55]) __ 593
+    assert Solution().sumSubarrayMins([3,1,2,4]) __ 17

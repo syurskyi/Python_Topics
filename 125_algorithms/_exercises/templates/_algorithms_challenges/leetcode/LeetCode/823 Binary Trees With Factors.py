@@ -27,24 +27,24 @@ Note:
 1 <= A.length <= 1000.
 2 <= A[i] <= 10 ^ 9.
 """
-from typing import List
+from typing ______ List
 
 
 MOD =  10 ** 9 + 7
 
 
 class Solution:
-    def numFactoredBinaryTrees(self, A: List[int]) -> int:
+    ___ numFactoredBinaryTrees(self, A: List[int]) -> int:
         """
         Let F[i] be the number of factored binary tree rooted at i
         """
         A.sort()
         F = {}
-        for i in range(len(A)):
+        for i in range(le.(A)):
             F[A[i]] = 1
-            for j in range(i):
-                if A[i] % A[j] == 0 and A[i] // A[j] in F:
+            for j in range(i
+                __ A[i] % A[j] __ 0 and A[i] // A[j] in F:
                     F[A[i]] += F[A[j]] * F[A[i] // A[j]]  # #left * #right
                     F[A[i]] %= MOD
 
-        return sum(F.values()) % MOD
+        r_ sum(F.values()) % MOD

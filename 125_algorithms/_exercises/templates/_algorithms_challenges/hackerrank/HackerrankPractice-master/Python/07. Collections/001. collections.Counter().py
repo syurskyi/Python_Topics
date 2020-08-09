@@ -2,7 +2,7 @@
 # Score: 10
 
 
-import collections
+______ collections
 
 
 number_of_shoes = int(input())
@@ -12,7 +12,7 @@ total_revenue = 0
 
 for _ in range(int(input())):
     size, price = map(int, input().split())
-    if sizes_in_stock[size]:
+    __ sizes_in_stock[size]:
         total_revenue += price
         sizes_in_stock[size] -= 1
 

@@ -3,22 +3,22 @@ class Solution:
     @param: A: a list of n integers
     @return: true if there is a 132 pattern or false
     """
-    def find132pattern(self, A):
-        if not A:
-            return False
+    ___ find132pattern(self, A
+        __ not A:
+            r_ False
 
         stack = [float('-inf')]
-        for i in range(len(A) - 1, -1, -1):
-            if A[i] < stack[-1]:
-                return True
+        for i in range(le.(A) - 1, -1, -1
+            __ A[i] < stack[-1]:
+                r_ True
 
             v = None
-            while stack and A[i] > stack[-1]:
+            w___ stack and A[i] > stack[-1]:
                 v = stack.pop()
 
             stack.append(A[i])
 
-            if v is not None:
+            __ v is not None:
                 stack.append(v)
 
-        return False
+        r_ False

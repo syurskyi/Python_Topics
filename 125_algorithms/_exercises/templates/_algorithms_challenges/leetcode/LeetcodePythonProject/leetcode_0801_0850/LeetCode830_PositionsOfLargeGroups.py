@@ -3,8 +3,8 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def largeGroupPositions(self, S):
+class Solution(object
+    ___ largeGroupPositions(self, S
         """
         :type S: str
         :rtype: List[List[int]]
@@ -12,14 +12,14 @@ class Solution(object):
         s = S
         res = []
         left = 0
-        for i in range(len(s)+1):
-            if i == len(s) or s[i] != s[left]:
-                if i-left >= 3:
+        for i in range(le.(s)+1
+            __ i __ le.(s) or s[i] != s[left]:
+                __ i-left >= 3:
                     res.append([left, i-1])
                 left = i
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             'aaa',
             'abbxxxxzzy',
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

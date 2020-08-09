@@ -1,6 +1,6 @@
-from typing import List
+from typing ______ List
 
-def sum_numbers(numbers: List[int]) -> int:
+___ sum_numbers(numbers: List[int]) -> int:
     """Sums numbers
 
     :param numbers: a list of numbers

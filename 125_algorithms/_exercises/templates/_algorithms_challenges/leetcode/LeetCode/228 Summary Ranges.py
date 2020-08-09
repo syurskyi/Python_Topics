@@ -7,36 +7,36 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def summaryRanges(self, nums):
+    ___ summaryRanges(self, nums
         """
         :type nums: list[int]
         :rtype: list[str]
         """
         ret = []
-        n = len(nums)
-        if n < 1:
-            return ret
+        n = le.(nums)
+        __ n < 1:
+            r_ ret
 
         bgn = nums[0]
         pre = nums[0]
-        for i in xrange(1, n):
-            if nums[i] != pre+1:
-                if pre != bgn:
+        for i in xrange(1, n
+            __ nums[i] != pre+1:
+                __ pre != bgn:
                     ret.append("%d->%d"%(bgn, pre))
-                else:
+                ____
                     ret.append("%d"%bgn)
                 bgn = nums[i]
 
             pre = nums[i]
 
         # clean up
-        if pre != bgn:
+        __ pre != bgn:
             ret.append("%d->%d"%(bgn, pre))
-        else:
+        ____
             ret.append("%d"%bgn)
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().summaryRanges([0, 1, 2, 4, 5, 7]) == ['0->2', '4->5', '7']
+__ __name__ __ "__main__":
+    assert Solution().summaryRanges([0, 1, 2, 4, 5, 7]) __ ['0->2', '4->5', '7']

@@ -1,14 +1,14 @@
-def keep(seq, pred):
+___ keep(seq, pred
     res = []
     for el in seq:
-        if pred(el):
+        __ pred(el
             res.append(el)
-    return res
+    r_ res
 
 
-def discard(seq, pred):
+___ discard(seq, pred
     res = []
     for el in seq:
-        if not pred(el):
+        __ not pred(el
             res.append(el)
-    return res
+    r_ res

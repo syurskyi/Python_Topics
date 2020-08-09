@@ -3,39 +3,39 @@ Created on Oct 31, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def searchRange(self, nums, target):
+class Solution(object
+    ___ searchRange(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        l, r = 0, len(nums)
+        l, r = 0, le.(nums)
         res = [float('inf'), float('-inf')]
-        while l < r:
+        w___ l < r:
             mid = (l+r)//2
-            if target == nums[mid]:
+            __ target __ nums[mid]:
                 res[1] = max(res[1], mid)
                 l = mid+1
-            elif target < nums[mid]:
+            ____ target < nums[mid]:
                 r = mid
-            else:
+            ____
                 l = mid+1
-        l, r = 0, len(nums)
-        while l < r:
+        l, r = 0, le.(nums)
+        w___ l < r:
             mid = (l+r)//2
-            if target == nums[mid]:
+            __ target __ nums[mid]:
                 res[0] = min(res[0], mid)
                 r = mid
-            elif target < nums[mid]:
+            ____ target < nums[mid]:
                 r = mid
-            else:
+            ____
                 l = mid+1
-        if r == len(nums):
-            return [-1, -1]
-        return res if res != [float('inf'), float('-inf')] else [-1, -1]
+        __ r __ le.(nums
+            r_ [-1, -1]
+        r_ res __ res != [float('inf'), float('-inf')] else [-1, -1]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 1],
@@ -61,5 +61,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

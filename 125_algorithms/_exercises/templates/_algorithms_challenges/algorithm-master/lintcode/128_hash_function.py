@@ -4,9 +4,9 @@ class Solution:
     @param: HASH_SIZE: An integer
     @return: An integer
     """
-    def hashCode(self, key, HASH_SIZE):
-        if not key:
-            return 0
+    ___ hashCode(self, key, HASH_SIZE
+        __ not key:
+            r_ 0
 
         MAGIC_NUMBER = 33
 
@@ -14,4 +14,4 @@ class Solution:
         for char in key:
             _code = (_code * MAGIC_NUMBER + ord(char)) % HASH_SIZE
 
-        return _code
+        r_ _code

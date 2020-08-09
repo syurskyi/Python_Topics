@@ -4,32 +4,32 @@ Created on Mar 7, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def wallsAndGates(self, rooms):
+class Solution(object
+    ___ wallsAndGates(self, rooms
         """
         :type rooms: List[List[int]]
         :rtype: void Do not return anything, modify rooms in-place instead.
         """
-        if not rooms: return
-        m, n = len(rooms), len(rooms[0])
-        for i in range(m):
-            for j in range(n):
-                if rooms[i][j] == 0:
+        __ not rooms: r_
+        m, n = le.(rooms), le.(rooms[0])
+        for i in range(m
+            for j in range(n
+                __ rooms[i][j] __ 0:
                     self.bfs(rooms, i, j)
     
-    def bfs(self, rooms, i, j):
-        m, n = len(rooms), len(rooms[0])
+    ___ bfs(self, rooms, i, j
+        m, n = le.(rooms), le.(rooms[0])
         queue = [(i, j, 0)]
-        while queue:
+        w___ queue:
             i0, j0, dist = queue.pop(0)
             for x, y in ((i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1)):
-                if 0 <= x < m and 0 <= y < n and rooms[x][y] != -1:
+                __ 0 <= x < m and 0 <= y < n and rooms[x][y] != -1:
                     newDist = dist + 1
                     rooms[x][y] = min(rooms[x][y], newDist)
-                    if rooms[x][y] > rooms[i0][j0]:
+                    __ rooms[x][y] > rooms[i0][j0]:
                         queue.append((x, y, newDist))
     
-    def test(self):
+    ___ test(self
         matrix = [
             [float('inf'), -1, 0, float('inf')],
             [float('inf'), float('inf'), float('inf'), -1],
@@ -43,5 +43,5 @@ class Solution(object):
         print('\n'.join([str(l) for l in matrix]))
         print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

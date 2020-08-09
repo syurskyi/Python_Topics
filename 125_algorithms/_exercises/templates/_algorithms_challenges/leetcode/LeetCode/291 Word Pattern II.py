@@ -4,46 +4,46 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def wordPatternMatch(self, pattern, s):
+class Solution(object
+    ___ wordPatternMatch(self, pattern, s
         """
         Backtracking with prune
         :type pattern: str
         :type s: str
         :rtype: bool
         """
-        return self.dfs(pattern, s, {}, set())
+        r_ self.dfs(pattern, s, {}, set())
 
-    def dfs(self, pattern, s, char2word, words):
+    ___ dfs(self, pattern, s, char2word, words
         """
         Loop & DFS
         :return: pattern can match s
         """
-        if not pattern and s or not s and pattern:
-            return False
+        __ not pattern and s or not s and pattern:
+            r_ False
 
-        if not pattern and not s:
-            return True
+        __ not pattern and not s:
+            r_ True
 
 
-        if pattern[0] in char2word:
+        __ pattern[0] in char2word:
             word = char2word[pattern[0]]
-            if s[:len(word)] != word:
-                return False
-            else:
+            __ s[:le.(word)] != word:
+                r_ False
+            ____
                 assert word in words
-                return self.dfs(pattern[1:], s[len(word):], char2word, words)
-        else:
-            for i in xrange(len(s)):
+                r_ self.dfs(pattern[1:], s[le.(word], char2word, words)
+        ____
+            for i in xrange(le.(s)):
                 word = s[:i+1]
-                if word in words:
+                __ word in words:
                     continue
 
                 char2word[pattern[0]] = word
                 words.add(word)
-                if self.dfs(pattern[1:], s[len(word):], char2word, words):
-                    return True
+                __ self.dfs(pattern[1:], s[le.(word], char2word, words
+                    r_ True
                 words.remove(word)
                 del char2word[pattern[0]]
 
-            return False
+            r_ False

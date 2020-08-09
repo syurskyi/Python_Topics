@@ -1,37 +1,37 @@
-class TreeNode(object):
-    def __init__(self, data, left, right):
+class TreeNode(object
+    ___ __init__(self, data, left, right
         self.data = data
         self.left = left
         self.right = right
 
-    def __str__(self):
+    ___ __str__(self
         fmt = 'TreeNode(data={}, left={}, right={})'
-        return fmt.format(self.data, self.left, self.right)
+        r_ fmt.format(self.data, self.left, self.right)
 
 
-class BinarySearchTree(object):
-    def __init__(self, tree_data):
+class BinarySearchTree(object
+    ___ __init__(self, tree_data
         self._root = TreeNode(tree_data[0], None, None)
         for data in tree_data[1:]:
             branch = self._root
-            while branch is not None:
+            w___ branch is not None:
                 root = branch
-                attr = 'right' if root.data < data else 'left'
+                attr = 'right' __ root.data < data else 'left'
                 branch = getattr(root, attr)
             setattr(root, attr, TreeNode(data, None, None))
 
-    def data(self):
-        return self._root
+    ___ data(self
+        r_ self._root
 
-    def sorted_data(self):
+    ___ sorted_data(self
         result = []
         queue = [self._root]
-        while queue:
+        w___ queue:
             node = queue[-1]
-            if node.left is not None and node.left not in result:
+            __ node.left is not None and node.left not in result:
                 queue.append(node.left)
-            else:
+            ____
                 result.append(queue.pop())
-                if node.right is not None:
+                __ node.right is not None:
                     queue.append(node.right)
-        return [n.data for n in result]
+        r_ [n.data for n in result]

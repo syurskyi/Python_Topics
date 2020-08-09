@@ -3,8 +3,8 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def reachNumber(self, target):
+class Solution(object
+    ___ reachNumber(self, target
         """
         :type target: int
         :rtype: int
@@ -12,15 +12,15 @@ class Solution(object):
         target = abs(target)
         step = 0
         sumVal = 0
-        while sumVal < target:
+        w___ sumVal < target:
             step += 1
             sumVal += step
-        while (sumVal-target)%2 != 0:
+        w___ (sumVal-target)%2 != 0:
             step += 1
             sumVal += step
-        return step
+        r_ step
     
-    def test(self):
+    ___ test(self
         testCases = [
             3,
             2,
@@ -31,5 +31,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

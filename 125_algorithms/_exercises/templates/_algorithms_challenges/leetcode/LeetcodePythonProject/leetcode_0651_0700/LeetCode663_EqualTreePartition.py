@@ -4,45 +4,45 @@ Created on Oct 8, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None,right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None,right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def checkEqualTree(self, root):
+class Solution(object
+    ___ checkEqualTree(self, root
         """
         :type root: TreeNode
         :rtype: bool
         """
-        if not root: return False
-        return self.helper(root, 0, True)
+        __ not root: r_ False
+        r_ self.helper(root, 0, True)
     
-    def helper(self, root, sumVal, firstLevel):
-        if not root:
-            return False
-        if sumVal == self.sum(root) and not firstLevel:
-            return True
-        if (root.left and self.helper(root.left, sumVal+root.val+self.sum(root.right), False)) or\
+    ___ helper(self, root, sumVal, firstLevel
+        __ not root:
+            r_ False
+        __ sumVal __ self.sum(root) and not firstLevel:
+            r_ True
+        __ (root.left and self.helper(root.left, sumVal+root.val+self.sum(root.right), False)) or\
             (root.right and self.helper(root.right, sumVal+root.val+self.sum(root.left), False)):
-            return True
-        return False
+            r_ True
+        r_ False
     
-    def sum(self, root):
-        if not root: return 0
+    ___ sum(self, root
+        __ not root: r_ 0
         res = root.val
         res += self.sum(root.left)
         res += self.sum(root.right)
-        return res
+        r_ res
     
-    def sumVal(self, root):
-        if not root: return 0
-        return root.val +\
+    ___ sumVal(self, root
+        __ not root: r_ 0
+        r_ root.val +\
             self.sumVal(root.left)+\
             self.sumVal(root.right)
     
-    def test(self):
+    ___ test(self
         testCases = [
             TreeNode(5, TreeNode(10), TreeNode(10, TreeNode(2), TreeNode(3))),
             TreeNode(1, TreeNode(2), TreeNode(10, TreeNode(2), TreeNode(20))),
@@ -55,5 +55,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

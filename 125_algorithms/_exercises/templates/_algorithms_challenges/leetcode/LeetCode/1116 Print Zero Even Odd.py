@@ -30,12 +30,12 @@ Example 2:
 Input: n = 5
 Output: "0102030405"
 """
-from typing import Callable
-from threading import Lock
+from typing ______ Callable
+from threading ______ Lock
 
 
 class ZeroEvenOdd:
-    def __init__(self, n):
+    ___ __init__(self, n
         """
         only use 3 locks, and zero() knows and commonds which lock to release,
         determing whether even() or odd() will run.
@@ -46,30 +46,30 @@ class ZeroEvenOdd:
         self.locks[2].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
-    def zero(self, printNumber: Callable[[int], None]) -> None:
-        for i in range(self.n):
+    ___ zero(self, printNumber: Callable[[int], None]) -> None:
+        for i in range(self.n
             self.locks[0].a..
             printNumber(0)
-            if (i + 1) % 2 == 1:
+            __ (i + 1) % 2 __ 1:
                 self.locks[1].release()
-            else:
+            ____
                 self.locks[2].release()
 
-    def odd(self, printNumber: Callable[[int], None]) -> None:
-        for i in range((self.n + 1) // 2):
+    ___ odd(self, printNumber: Callable[[int], None]) -> None:
+        for i in range((self.n + 1) // 2
             self.locks[1].a..
             printNumber(i * 2 + 1)
             self.locks[0].release()
 
-    def even(self, printNumber: Callable[[int], None]) -> None:
-        for i in range(self.n // 2):
+    ___ even(self, printNumber: Callable[[int], None]) -> None:
+        for i in range(self.n // 2
             self.locks[2].a..
             printNumber(i * 2 + 2)
             self.locks[0].release()
 
 
 class ZeroEvenOddError:
-    def __init__(self, n):
+    ___ __init__(self, n
         """
         Like 1115, two layer of locks can do: zero and non-zero alternating,
         odd and even alternating. 4 locks required.
@@ -78,18 +78,18 @@ class ZeroEvenOddError:
         """
         self.n = n
         self.locks = [Lock(), Lock(), Lock(), Lock()]
-        for i in range(1, len(self.locks)):
+        for i in range(1, le.(self.locks)):
             self.locks[i].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
-    def zero(self, printNumber: 'Callable[[int], None]') -> None:
+    ___ zero(self, printNumber: 'Callable[[int], None]') -> None:
         with self.locks[0]:
             printNumber(0)
 
-    def even(self, printNumber: 'Callable[[int], None]') -> None:
+    ___ even(self, printNumber: 'Callable[[int], None]') -> None:
         # cannot lock self.locks[1] from both "even" and "odd"
         pass
 
 
-    def odd(self, printNumber: 'Callable[[int], None]') -> None:
+    ___ odd(self, printNumber: 'Callable[[int], None]') -> None:
         pass

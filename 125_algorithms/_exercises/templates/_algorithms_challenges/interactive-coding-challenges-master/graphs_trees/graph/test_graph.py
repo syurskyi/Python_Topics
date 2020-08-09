@@ -1,15 +1,15 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestGraph(object):
+class TestGraph(object
 
-    def create_graph(self):
+    ___ create_graph(self
         graph = Graph()
-        for key in range(0, 6):
+        for key in range(0, 6
             graph.add_node(key)
-        return graph
+        r_ graph
 
-    def test_graph(self):
+    ___ test_graph(self
         graph = self.create_graph()
         graph.add_edge(0, 1, weight=5)
         graph.add_edge(0, 5, weight=2)
@@ -47,7 +47,7 @@ class TestGraph(object):
 
         print('Success: test_graph')
 
-    def test_graph_undirected(self):
+    ___ test_graph_undirected(self
         graph = self.create_graph()
         graph.add_undirected_edge(0, 1, weight=5)
         graph.add_undirected_edge(0, 5, weight=2)
@@ -63,11 +63,11 @@ class TestGraph(object):
         print('Success: test_graph_undirected')
 
 
-def main():
+___ main(
     test = TestGraph()
     test.test_graph()
     test.test_graph_undirected()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -1,41 +1,41 @@
-import sys
+______ sys
 
 
-class PriorityQueueNode(object):
+class PriorityQueueNode(object
 
-    def __init__(self, obj, key):
+    ___ __init__(self, obj, key
         self.obj = obj
         self.key = key
 
-    def __repr__(self):
-        return str(self.obj) + ': ' + str(self.key)
+    ___ __repr__(self
+        r_ str(self.obj) + ': ' + str(self.key)
 
 
-class PriorityQueue(object):
+class PriorityQueue(object
 
-    def __init__(self):
+    ___ __init__(self
         self.array = []
 
-    def __len__(self):
-        return len(self.array)
+    ___ __len__(self
+        r_ le.(self.array)
 
-    def insert(self, node):
+    ___ insert(self, node
         self.array.append(node)
-        return self.array[-1]
+        r_ self.array[-1]
 
-    def extract_min(self):
-        if not self.array:
-            return None
+    ___ extract_min(self
+        __ not self.array:
+            r_ None
         minimum = sys.maxsize
-        for index, node in enumerate(self.array):
-            if node.key < minimum:
+        for index, node in enumerate(self.array
+            __ node.key < minimum:
                 minimum = node.key
                 minimum_index = index
-        return self.array.pop(minimum_index)
+        r_ self.array.pop(minimum_index)
 
-    def decrease_key(self, obj, new_key):
+    ___ decrease_key(self, obj, new_key
         for node in self.array:
-            if node.obj is obj:
+            __ node.obj is obj:
                 node.key = new_key
-                return node
-        return None
+                r_ node
+        r_ None

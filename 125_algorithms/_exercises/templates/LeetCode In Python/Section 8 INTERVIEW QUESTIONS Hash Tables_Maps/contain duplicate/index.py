@@ -1,11 +1,11 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    ___ containsDuplicate(self, nums: List[int]) -> bool:
         m = defaultdict(int)
 
         for num in nums:
-            if m[num]:
-                return True
+            __ m[num]:
+                r_ True
             m[num]+=1
-        return False
+        r_ False

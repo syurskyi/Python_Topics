@@ -1,12 +1,12 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestDfs(object):
+class TestDfs(object
 
-    def __init__(self):
+    ___ __init__(self
         self.results = Results()
 
-    def test_dfs(self):
+    ___ test_dfs(self
         bst = BstDfs(Node(5))
         bst.insert(2)
         bst.insert(8)
@@ -45,10 +45,10 @@ class TestDfs(object):
         print('Success: test_dfs')
 
 
-def main():
+___ main(
     test = TestDfs()
     test.test_dfs()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

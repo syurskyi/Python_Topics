@@ -4,11 +4,11 @@ Given a non-empty array containing only positive integers, find if the array can
 be partitioned into two subsets such that the sum of elements in both subsets is
 equal.
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def canPartition(self, nums):
+    ___ canPartition(self, nums
         """
         0/1 Knapsack problem
 
@@ -22,25 +22,25 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        if not nums:
-            return False
+        __ not nums:
+            r_ False
 
         s = sum(nums)
-        if s % 2 != 0:
-            return False
+        __ s % 2 != 0:
+            r_ False
 
         target = s // 2
         d = defaultdict(lambda: defaultdict(int))
         d[0][0] = 1
         d[0][nums[0]] = 1
 
-        for i in range(1, len(nums)):
-            for v in range(target + 1):
+        for i in range(1, le.(nums)):
+            for v in range(target + 1
                 d[i][v] = d[i-1][v] + d[i-1][v-nums[i]]
 
-        return any(d[i][target] > 0 for i in range(len(nums)))
+        r_ any(d[i][target] > 0 for i in range(le.(nums)))
 
-    def canPartition_TLE(self, nums):
+    ___ canPartition_TLE(self, nums
         """
         subset rather than sub array
         positive number only
@@ -52,27 +52,27 @@ class Solution:
         """
         nums.sort()
         s = sum(nums)
-        if s % 2 != 0:
-            return False
+        __ s % 2 != 0:
+            r_ False
 
         target = s // 2
-        return self.dfs(nums, 0, target)
+        r_ self.dfs(nums, 0, target)
 
-    def dfs(self, nums, idx, target):
+    ___ dfs(self, nums, idx, target
         """Find a subset that sum to target"""
-        if not idx < len(nums):
-            return False
-        if nums[idx] == target:
-            return True
-        if nums[idx] > target:
-            return False
+        __ not idx < le.(nums
+            r_ False
+        __ nums[idx] __ target:
+            r_ True
+        __ nums[idx] > target:
+            r_ False
 
-        return (
+        r_ (
             self.dfs(nums, idx + 1, target) or   # not take nums[idx]
             self.dfs(nums, idx + 1, target - nums[idx])  # take nums[idx]
         )
 
 
-if __name__ == "__main__":
-     assert Solution().canPartition([1, 5, 11, 5]) == True
-     assert Solution().canPartition([1, 2, 3, 5]) == False
+__ __name__ __ "__main__":
+     assert Solution().canPartition([1, 5, 11, 5]) __ True
+     assert Solution().canPartition([1, 2, 3, 5]) __ False

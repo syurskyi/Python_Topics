@@ -7,7 +7,7 @@ Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 """
 __author__ = 'Danyang'
 class Solution:
-    def trap(self, A):
+    ___ trap(self, A
         """
         Simplified version of Palantir Technology Online Test 2013
 
@@ -22,7 +22,7 @@ class Solution:
         right_maxs = [0 for _ in A]  # on the right including itself
 
         left_max = 0
-        for ind, val in enumerate(A):
+        for ind, val in enumerate(A
             left_max = max(left_max, val)
             left_maxs[ind] = left_max
 
@@ -34,13 +34,13 @@ class Solution:
 
         # calculate the volume
         volume = 0
-        for ind, val in enumerate(A):
+        for ind, val in enumerate(A
             volume += max(0, min(left_maxs[ind], right_maxs[ind]) - val)
 
-        return volume
+        r_ volume
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])
 
 

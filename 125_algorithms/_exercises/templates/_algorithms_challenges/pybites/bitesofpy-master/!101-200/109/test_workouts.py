@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from workouts import (get_workout_motd,
+from workouts ______ (get_workout_motd,
                       CHILL_OUT, INVALID_DAY)
 
 
@@ -20,5 +20,5 @@ from workouts import (get_workout_motd,
     ('nonsense', INVALID_DAY),
     ('monday2', INVALID_DAY),
 ])
-def test_get_workout_valid_case_insensitive_dict_lookups(day, expected):
-    assert get_workout_motd(day) == expected
+___ test_get_workout_valid_case_insensitive_dict_lookups(day, expected
+    assert get_workout_motd(day) __ expected

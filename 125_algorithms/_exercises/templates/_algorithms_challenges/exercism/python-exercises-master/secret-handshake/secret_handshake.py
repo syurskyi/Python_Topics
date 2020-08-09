@@ -1,6 +1,6 @@
-def handshake():
+___ handshake(
     pass
 
 
-def code():
+___ code(
     pass

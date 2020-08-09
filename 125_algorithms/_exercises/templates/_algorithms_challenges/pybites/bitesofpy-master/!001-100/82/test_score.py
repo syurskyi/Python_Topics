@@ -1,22 +1,22 @@
-from score import Score
+from score ______ Score
 
 
-def test_enum_content():
-    assert list(Score) == [Score.BEGINNER, Score.INTERMEDIATE,
+___ test_enum_content(
+    assert list(Score) __ [Score.BEGINNER, Score.INTERMEDIATE,
                            Score.ADVANCED, Score.CHEATED]
 
 
-def test_equality_comparison():
+___ test_equality_comparison(
     assert Score.BEGINNER is Score.BEGINNER
     assert Score.INTERMEDIATE is not Score.ADVANCED
 
 
-def test_str_using_thumbsup():
-    assert str(Score.BEGINNER) == 'BEGINNER => 👍👍'
-    assert str(Score.INTERMEDIATE) == 'INTERMEDIATE => 👍👍👍'
-    assert str(Score.ADVANCED) == 'ADVANCED => 👍👍👍👍'
-    assert str(Score.CHEATED) == 'CHEATED => 👍'
+___ test_str_using_thumbsup(
+    assert str(Score.BEGINNER) __ 'BEGINNER => 👍👍'
+    assert str(Score.INTERMEDIATE) __ 'INTERMEDIATE => 👍👍👍'
+    assert str(Score.ADVANCED) __ 'ADVANCED => 👍👍👍👍'
+    assert str(Score.CHEATED) __ 'CHEATED => 👍'
 
 
-def test_average():
-    assert Score.average() == 2.5
+___ test_average(
+    assert Score.average() __ 2.5

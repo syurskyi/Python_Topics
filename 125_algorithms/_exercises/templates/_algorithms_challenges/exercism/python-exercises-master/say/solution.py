@@ -1,4 +1,4 @@
-def say(number, recursive=False):
+___ say(number, recursive=False
     small = dict(enumerate((
         'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
         'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
@@ -9,34 +9,34 @@ def say(number, recursive=False):
 
     k, m, b, t = 1e3, 1e6, 1e9, 1e12
 
-    if number < 0:
+    __ number < 0:
         raise AttributeError('number is negative')
-    if number >= t:
+    __ number >= t:
         raise AttributeError('number is too large: %s' % str(number))
 
-    if number < 20:
-        return small[number] if not recursive else 'and ' + small[number]
+    __ number < 20:
+        r_ small[number] __ not recursive else 'and ' + small[number]
 
-    if number < 100:
-        if number % 10 == 0:
-            return small[number]
-        return tens[number // 10 * 10] + '-' + small[number % 10]
+    __ number < 100:
+        __ number % 10 __ 0:
+            r_ small[number]
+        r_ tens[number // 10 * 10] + '-' + small[number % 10]
 
-    if number < k:
-        if number % 100 == 0:
-            return small[number // 100] + ' hundred'
-        return small[number // 100] + ' hundred and ' + say(number % 100)
+    __ number < k:
+        __ number % 100 __ 0:
+            r_ small[number // 100] + ' hundred'
+        r_ small[number // 100] + ' hundred and ' + say(number % 100)
 
-    if number < m:
-        if number % k == 0:
-            return say(number // k) + ' thousand'
-        return say(number // k) + ' thousand ' + say(number % k, True)
+    __ number < m:
+        __ number % k __ 0:
+            r_ say(number // k) + ' thousand'
+        r_ say(number // k) + ' thousand ' + say(number % k, True)
 
-    if number < b:
-        if number % m == 0:
-            return say(number // m) + ' million'
-        return say(number // m) + ' million ' + say(number % m, True)
+    __ number < b:
+        __ number % m __ 0:
+            r_ say(number // m) + ' million'
+        r_ say(number // m) + ' million ' + say(number % m, True)
 
-    if number % b == 0:
-        return say(number // b) + ' billion'
-    return say(number // b) + ' billion ' + say(number % b, True)
+    __ number % b __ 0:
+        r_ say(number // b) + ' billion'
+    r_ say(number // b) + ' billion ' + say(number % b, True)

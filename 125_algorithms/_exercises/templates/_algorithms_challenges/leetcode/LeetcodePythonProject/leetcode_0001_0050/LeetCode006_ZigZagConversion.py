@@ -3,20 +3,20 @@ Created on Jun 7, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def convert(self, s, numRows):
+class Solution(object
+    ___ convert(self, s, numRows
         """
         :type s: str
         :type numRows: int
         :rtype: str
         """
-        if not s or len(s) <= 1 or numRows == 1:
-            return s
+        __ not s or le.(s) <= 1 or numRows __ 1:
+            r_ s
         step = 2*numRows-2
         res = ''
-        for i in range(numRows):
-            for j in range(i, len(s), step):
+        for i in range(numRows
+            for j in range(i, le.(s), step
                 res += s[j]
-                if i != 0 and i != numRows-1 and j+step-2*i < len(s):
+                __ i != 0 and i != numRows-1 and j+step-2*i < le.(s
                     res += s[j+step-2*i]
-        return res
+        r_ res

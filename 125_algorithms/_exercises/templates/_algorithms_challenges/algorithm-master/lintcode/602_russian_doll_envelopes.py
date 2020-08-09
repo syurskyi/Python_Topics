@@ -3,7 +3,7 @@ DP: time => O(nlogn)
 
 REF: https://leetcode.com/problems/russian-doll-envelopes/discuss/82763
 """
-from bisect import bisect_left
+from bisect ______ bisect_left
 
 
 class Solution:
@@ -11,21 +11,21 @@ class Solution:
     @param: E: a number of envelopes with widths and heights
     @return: the maximum number of envelopes
     """
-    def maxEnvelopes(self, E):
-        if not E or not E[0] or len(E[0]) != 2:
-            return 0
+    ___ maxEnvelopes(self, E
+        __ not E or not E[0] or le.(E[0]) != 2:
+            r_ 0
 
         E.sort(key=lambda e: (e[0], -e[1]))
 
-        dp = [0] * len(E)
+        dp = [0] * le.(E)
         size = 0
         for _, h in E:
             i = bisect_left(dp, h, 0, size)
             dp[i] = h
-            if i == size:
+            __ i __ size:
                 size += 1
 
-        return size
+        r_ size
 
 
 """
@@ -36,12 +36,12 @@ class Solution:
     @param: E: a number of envelopes with widths and heights
     @return: the maximum number of envelopes
     """
-    def maxEnvelopes(self, E):
+    ___ maxEnvelopes(self, E
         ans = 0
-        if not E:
-            return ans
+        __ not E:
+            r_ ans
 
-        n = len(E)
+        n = le.(E)
 
         """
         `dp[i]` means the maximum number of envelopes
@@ -51,12 +51,12 @@ class Solution:
 
         E.sort()
 
-        for i in range(n):
-            for j in range(i):
-                if (E[j][0] < E[i][0] and E[j][1] < E[i][1] and
-                    dp[j] + 1 > dp[i]):
+        for i in range(n
+            for j in range(i
+                __ (E[j][0] < E[i][0] and E[j][1] < E[i][1] and
+                    dp[j] + 1 > dp[i]
                     dp[i] = dp[j] + 1
-                if dp[i] > ans:
+                __ dp[i] > ans:
                     ans = dp[i]
 
-        return ans
+        r_ ans

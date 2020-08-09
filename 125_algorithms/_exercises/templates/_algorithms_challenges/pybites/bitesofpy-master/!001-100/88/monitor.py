@@ -1,7 +1,7 @@
-from collections import Counter
-from contextlib import contextmanager
-from datetime import date
-from time import time
+from collections ______ Counter
+from contextlib ______ contextmanager
+from datetime ______ date
+from time ______ time
 
 OPERATION_THRESHOLD_IN_SECONDS = 2.2
 ALERT_THRESHOLD = 3
@@ -10,18 +10,18 @@ ALERT_MSG = 'ALERT: suffering performance hit today'
 violations = Counter()
 
 
-def get_today():
+___ get_today(
     """Making it easier to test/mock"""
-    return date.today()
+    r_ date.today()
 
 
 @contextmanager
-def timeit():
+___ timeit(
     start = time()
     yield
     end = time()
-    if end - start >= OPERATION_THRESHOLD_IN_SECONDS:
+    __ end - start >= OPERATION_THRESHOLD_IN_SECONDS:
         dt = get_today()
         violations[dt] += 1
-        if violations[dt] >= ALERT_THRESHOLD:
+        __ violations[dt] >= ALERT_THRESHOLD:
             print(ALERT_MSG)

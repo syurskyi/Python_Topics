@@ -1,19 +1,19 @@
-class Solution(object):
-  def countComponents(self, n, edges):
-    def find(x):
-      if parent[x] != x:
+class Solution(object
+  ___ countComponents(self, n, edges
+    ___ find(x
+      __ parent[x] != x:
         parent[x] = find(parent[x])
-      return parent[x]
+      r_ parent[x]
 
-    def union(xy):
+    ___ union(xy
       x, y = map(find, xy)
-      if rank[x] > rank[y]:
+      __ rank[x] > rank[y]:
         parent[y] = x
-      else:
+      ____
         parent[x] = y
-        if rank[x] == rank[y]:
+        __ rank[x] __ rank[y]:
           rank[y] += 1
 
     parent, rank = range(n), [0] * n
     map(union, edges)
-    return len({find(x) for x in parent})
+    r_ le.({find(x) for x in parent})

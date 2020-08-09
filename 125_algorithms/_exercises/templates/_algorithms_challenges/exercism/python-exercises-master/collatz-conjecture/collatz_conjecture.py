@@ -1,2 +1,2 @@
-def collatz_steps():
+___ collatz_steps(
     pass

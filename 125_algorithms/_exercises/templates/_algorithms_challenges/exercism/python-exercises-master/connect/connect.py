@@ -1,7 +1,7 @@
 
 class ConnectGame:
-    def __init__(self, board):
+    ___ __init__(self, board
         pass
 
-    def get_winner(self):
+    ___ get_winner(self
         pass

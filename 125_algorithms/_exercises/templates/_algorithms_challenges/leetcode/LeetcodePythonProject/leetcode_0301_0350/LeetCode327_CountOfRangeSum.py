@@ -3,28 +3,28 @@ Created on Mar 18, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def countRangeSum(self, nums, lower, upper):
+class Solution(object
+    ___ countRangeSum(self, nums, lower, upper
         first = [0]
         for num in nums:
             first.append(first[-1]+num)
-        return self.mergeSort(0, len(first), first, lower, upper)
+        r_ self.mergeSort(0, le.(first), first, lower, upper)
     
-    def mergeSort(self, l, r, first, lower, upper):
+    ___ mergeSort(self, l, r, first, lower, upper
         mid = (l+r)//2
-        if mid == l:
-            return 0
+        __ mid __ l:
+            r_ 0
         count = self.mergeSort(l, mid, first, lower, upper)+\
             self.mergeSort(mid, r, first, lower, upper)
         i, j = mid, mid
         for left in first[l:mid]:
-            while i < r and first[i]-left <  lower: i+=1
-            while j < r and first[j]-left <= upper: j+=1
+            w___ i < r and first[i]-left <  lower: i+=1
+            w___ j < r and first[j]-left <= upper: j+=1
             count += j-i
         first[l:r] = sorted(first[l:r])
-        return count
+        r_ count
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 [-2,5,-1],
@@ -47,5 +47,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

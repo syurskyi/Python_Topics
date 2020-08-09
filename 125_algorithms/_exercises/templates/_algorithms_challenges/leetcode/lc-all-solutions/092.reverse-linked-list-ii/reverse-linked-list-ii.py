@@ -1,11 +1,11 @@
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
+# class ListNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-  def reverseBetween(self, head, m, n):
+class Solution(object
+  ___ reverseBetween(self, head, m, n
     """
     :type head: ListNode
     :type m: int
@@ -13,11 +13,11 @@ class Solution(object):
     :rtype: ListNode
     """
 
-    def reverse(root, prep, k):
+    ___ reverse(root, prep, k
       cur = root
       pre = None
       next = None
-      while cur and k > 0:
+      w___ cur and k > 0:
         next = cur.next
         cur.next = pre
         pre = cur
@@ -25,18 +25,18 @@ class Solution(object):
         k -= 1
       root.next = next
       prep.next = pre
-      return pre
+      r_ pre
 
     dummy = ListNode(-1)
     dummy.next = head
     k = 1
     p = dummy
     start = None
-    while p:
-      if k == m:
+    w___ p:
+      __ k __ m:
         start = p
-      if k == n + 1:
+      __ k __ n + 1:
         reverse(start.next, start, n - m + 1)
-        return dummy.next
+        r_ dummy.next
       k += 1
       p = p.next

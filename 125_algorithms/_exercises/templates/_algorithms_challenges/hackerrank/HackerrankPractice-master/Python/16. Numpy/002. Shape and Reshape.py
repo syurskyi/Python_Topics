@@ -2,7 +2,7 @@
 # Score: 20
 
 
-import numpy as np
+______ numpy as np
 
 
 array = np.array(list(map(int, input().split())))

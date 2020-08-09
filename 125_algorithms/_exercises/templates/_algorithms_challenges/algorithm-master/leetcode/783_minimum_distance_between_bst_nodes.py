@@ -1,7 +1,7 @@
 """
 Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -17,23 +17,23 @@ class Solution:
     ans = float('inf')
     pre = None
 
-    def minDiffInBST(self, root):
+    ___ minDiffInBST(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return self.ans
+        __ not root:
+            r_ self.ans
 
         self.minDiffInBST(root.left)
 
-        if self.pre and root.val - self.pre.val < self.ans:
+        __ self.pre and root.val - self.pre.val < self.ans:
             self.ans = root.val - self.pre.val
 
         self.pre = root
 
         self.minDiffInBST(root.right)
-        return self.ans
+        r_ self.ans
 
 
 class Solution:
@@ -42,13 +42,13 @@ class Solution:
     time: O(n)
     space: O(n)
     """
-    def minDiffInBST(self, root):
+    ___ minDiffInBST(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return
+        __ not root:
+            r_
 
         ans = float('inf')
         pre = None
@@ -56,18 +56,18 @@ class Solution:
         stack = []
         node = root
 
-        while node or stack:
-            while node:
+        w___ node or stack:
+            w___ node:
                 stack.append(node)
                 node = node.left
 
             node = stack.pop()
 
-            if pre and node.val - pre.val < ans:
+            __ pre and node.val - pre.val < ans:
                 ans = node.val - pre.val
 
             pre = node
 
             node = node.right
 
-        return ans
+        r_ ans

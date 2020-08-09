@@ -27,29 +27,29 @@ You may assume that row1 ≤ row2 and col1 ≤ col2.
 __author__ = 'Daniel'
 
 
-class NumMatrix(object):
-    def __init__(self, matrix):
+class NumMatrix(object
+    ___ __init__(self, matrix
         """
         initialize your data structure here.
         dp F[i][j] = F[i-1][j]+F[i][j-1]-F[i-1][j-1]+mat[i][j]
         :type matrix: List[List[int]]
         """
-        m = len(matrix)
-        if m == 0:
+        m = le.(matrix)
+        __ m __ 0:
             self.F = None
-            return
+            r_
 
-        n = len(matrix[0])
+        n = le.(matrix[0])
         self.F = [[0 for _ in xrange(n+1)] for _ in xrange(m+1)]
-        for i in xrange(1, m+1):
-            for j in xrange(1, n+1):
+        for i in xrange(1, m+1
+            for j in xrange(1, n+1
                 self.F[i][j] = self.F[i-1][j]+self.F[i][j-1]-self.F[i-1][j-1]+matrix[i-1][j-1]
 
-    def sumRegion(self, row1, col1, row2, col2):
+    ___ sumRegion(self, row1, col1, row2, col2
         """
         sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
         """
-        if not self.F:
-            return 0
+        __ not self.F:
+            r_ 0
 
-        return self.F[row2+1][col2+1] - self.F[row2+1][col1] - self.F[row1][col2+1] + self.F[row1][col1]
+        r_ self.F[row2+1][col2+1] - self.F[row2+1][col1] - self.F[row1][col2+1] + self.F[row1][col1]

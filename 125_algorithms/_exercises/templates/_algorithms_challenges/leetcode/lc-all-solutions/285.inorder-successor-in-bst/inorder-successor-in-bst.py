@@ -1,30 +1,30 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def inorderSuccessor(self, root, q):
+class Solution(object
+  ___ inorderSuccessor(self, root, q
     """
     :type root: TreeNode
     :type p: TreeNode
     :rtype: TreeNode
     """
-    if root and q:
+    __ root and q:
       flag = False
       stack = [(1, root)]
-      while stack:
+      w___ stack:
         p = stack.pop()
-        if not p[1]:
+        __ not p[1]:
           continue
-        if p[0] == 0:
-          if flag:
-            return p[1]
-          if p[1] == q:
+        __ p[0] __ 0:
+          __ flag:
+            r_ p[1]
+          __ p[1] __ q:
             flag = True
-        else:
+        ____
           stack.extend([(1, p[1].right), (0, p[1]), (1, p[1].left)])
 
-      return None
+      r_ None

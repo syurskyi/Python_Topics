@@ -1,7 +1,7 @@
 class Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
-    def plusOne(self, digits):
+    ___ plusOne(self, digits
         digits.reverse()
         res = []
         t = (digits[0] + 1) % 10
@@ -11,7 +11,7 @@ class Solution:
             t = (d + carry) % 10
             carry = (d + carry) / 10
             res.append(t)
-        if carry == 1:
+        __ carry __ 1:
             res.append(1)
         res.reverse()
-        return res
+        r_ res

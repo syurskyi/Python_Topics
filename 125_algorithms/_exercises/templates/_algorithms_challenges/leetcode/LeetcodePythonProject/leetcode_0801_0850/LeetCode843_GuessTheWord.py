@@ -8,37 +8,37 @@ Created on Mar 6, 2019
 # You should not implement it, or speculate about its implementation
 # """
 
-import collections, itertools
+______ collections, itertools
 
-class Master(object):
-    def guess(self, word):
+class Master(object
+    ___ guess(self, word
         """
         :type word: str
         :rtype int
         """
         pass
 
-class Solution(object):
-    def findSecretWord(self, wordlist, master):
+class Solution(object
+    ___ findSecretWord(self, wordlist, master
         """
         :type wordlist: List[Str]
         :type master: Master
         :rtype: None
         """
         n = 0
-        while n < 6:
-            count = collections.Counter(w1 for w1, w2 in itertools.permutations(wordlist, 2) if self.match(w1, w2) == 0)
+        w___ n < 6:
+            count = collections.Counter(w1 for w1, w2 in itertools.permutations(wordlist, 2) __ self.match(w1, w2) __ 0)
             guess = min(wordlist, key=lambda w:count[w])
             n = master.guess(guess)
-            wordlist = [w for w in wordlist if self.match(w, guess) == n]
+            wordlist = [w for w in wordlist __ self.match(w, guess) __ n]
     
-    def match(self, w1, w2):
+    ___ match(self, w1, w2
         matches = 0
-        for c1, c2 in zip(w1, w2):
-            if c1 == c2: matches += 1
-        return matches
+        for c1, c2 in zip(w1, w2
+            __ c1 __ c2: matches += 1
+        r_ matches
     
-    def test(self):
+    ___ test(self
         testCases = [
             
         ]
@@ -46,5 +46,5 @@ class Solution(object):
             result = self.findSecretWord(wordlist, master)
             print('result: %s' % result)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

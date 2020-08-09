@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestRemoveDupes(object):
+class TestRemoveDupes(object
 
-    def test_remove_dupes(self, linked_list):
+    ___ test_remove_dupes(self, linked_list
         print('Test: Empty list')
         linked_list.remove_dupes()
         assert_equal(linked_list.get_all_data(), [])
@@ -31,11 +31,11 @@ class TestRemoveDupes(object):
         print('Success: test_remove_dupes\n')
 
 
-def main():
+___ main(
     test = TestRemoveDupes()
     linked_list = MyLinkedList(None)
     test.test_remove_dupes(linked_list)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -14,16 +14,16 @@ class Solution:
     @param: node: insert this node into the binary search tree
     @return: The root of the new binary search tree.
     """
-    def insertNode(self, root, node):
-        if not root:
-            return node
+    ___ insertNode(self, root, node
+        __ not root:
+            r_ node
 
-        if node.val < root.val:
+        __ node.val < root.val:
             root.left = self.insertNode(root.left, node)
-        else:
+        ____
             root.right = self.insertNode(root.right, node)
 
-        return root
+        r_ root
 
 
 # iteration
@@ -33,19 +33,19 @@ class Solution:
     @param: node: insert this node into the binary search tree
     @return: The root of the new binary search tree.
     """
-    def insertNode(self, root, node):
-        if not root:
-            return node
+    ___ insertNode(self, root, node
+        __ not root:
+            r_ node
 
         curr = root
-        while curr is not node:
-            if node.val < curr.val:
-                if curr.left is None:
+        w___ curr is not node:
+            __ node.val < curr.val:
+                __ curr.left is None:
                     curr.left = node
                 curr = curr.left
-            else:
-                if curr.right is None:
+            ____
+                __ curr.right is None:
                     curr.right = node
                 curr = curr.right
 
-        return root
+        r_ root

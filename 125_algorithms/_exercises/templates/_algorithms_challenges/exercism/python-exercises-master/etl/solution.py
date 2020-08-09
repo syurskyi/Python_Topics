@@ -1,6 +1,6 @@
-def transform(old):
-    return {
-        letter.lower(): points
+___ transform(old
+    r_ {
+        letter.lower( points
         for points, letters in old.items()
         for letter in letters
     }

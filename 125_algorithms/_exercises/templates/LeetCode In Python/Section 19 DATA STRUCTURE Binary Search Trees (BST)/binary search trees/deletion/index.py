@@ -1,65 +1,65 @@
 
 
 class Node:
-    def __init__(self, value):
+    ___ __init__(self, value
         self.left = None
         self.right = None
         self.data = value
 
 
-def insert(root, node):
-    if(root is None):
+___ insert(root, node
+    __(root is None
         root = node
-        return
+        r_
 
-    if(root.data < node.data):
-        if(root.right is None):
+    __(root.data < node.data
+        __(root.right is None
             root.right = node
-        else:
+        ____
             insert(root.right, node)
-    else:
-        if(root.left is None):
+    ____
+        __(root.left is None
             root.left = node
-        else:
+        ____
             insert(root.left, node)
 
 
-def preorder(node):
-    if(node is not None):
+___ preorder(node
+    __(node is not None
         print(node.data)
         preorder(node.left)
         preorder(node.right)
 
 
-def minValueNode(node):
-    while(node.left is not None):
+___ minValueNode(node
+    w___(node.left is not None
         node = node.left
-    return node
+    r_ node
 
 
-def deleteNode(node, key):
-    if(node is None):
-        return node
+___ deleteNode(node, key
+    __(node is None
+        r_ node
     # If the key to be deleted is smaller than the node's
     # key then it lies in  left subtree
-    if key < node.data:
+    __ key < node.data:
         node.left = deleteNode(node.left, key)
     # If the kye to be delete is greater than the node's key
     # then it lies in right subtree
-    elif(key > node.data):
+    ____(key > node.data
         node.right = deleteNode(node.right, key)
     # If key is same as node's key, then this is the node
     # to be deleted
-    else:
+    ____
         # Node with only one child or no child
-        if node.left is None:
+        __ node.left is None:
             temp = node.right
             node = None
-            return temp
-        elif node.right is None:
+            r_ temp
+        ____ node.right is None:
             temp = node.left
             node = None
-            return temp
+            r_ temp
 
         # Node with two children: Get the inorder successor
         # (smallest in the right subtree)
@@ -69,7 +69,7 @@ def deleteNode(node, key):
         # Delete the inorder successor
         node.right = deleteNode(node.right, temp.data)
 
-    return node
+    r_ node
 
 
 #	           5

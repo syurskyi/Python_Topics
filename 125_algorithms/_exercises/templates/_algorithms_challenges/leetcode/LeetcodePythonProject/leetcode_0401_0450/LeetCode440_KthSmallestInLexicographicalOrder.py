@@ -4,29 +4,29 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findKthNumber(self, n, k):
+class Solution(object
+    ___ findKthNumber(self, n, k
         curr = 1
         k -= 1
-        while k > 0:
+        w___ k > 0:
             steps = self.calSteps(n, curr, curr+1)
-            if steps <= k:
+            __ steps <= k:
                 curr += 1
                 k -= steps
-            else:
+            ____
                 curr *= 10
                 k -= 1
-        return curr
+        r_ curr
     
-    def calSteps(self, n, n1, n2):
+    ___ calSteps(self, n, n1, n2
         steps = 0
-        while n1 <= n:
+        w___ n1 <= n:
             steps += min(n+1, n2)-n1
             n1 *= 10
             n2 *= 10
-        return steps
+        r_ steps
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 13,
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

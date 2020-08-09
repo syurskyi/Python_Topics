@@ -13,13 +13,13 @@ return true.
 Given [5, 4, 3, 2, 1],
 return false.
 """
-import sys
+______ sys
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def increasingTriplet(self, nums):
+class Solution(object
+    ___ increasingTriplet(self, nums
         """
         Brute force: O(N^3)
 
@@ -30,16 +30,16 @@ class Solution(object):
         min1 = sys.maxint
         min2 = sys.maxint
         for e in nums:
-            if e < min1:
+            __ e < min1:
                 min1 = e
-            elif e != min1 and e < min2:
+            ____ e != min1 and e < min2:
                 min2 = e
-            elif e > min2:
-                return True
+            ____ e > min2:
+                r_ True
 
-        return False
+        r_ False
 
-    def increasingTripletError(self, nums):
+    ___ increasingTripletError(self, nums
         """
         use stack
         :type nums: List[int]
@@ -47,11 +47,11 @@ class Solution(object):
         """
         stk = []
         for elt in nums:
-            while stk and stk[-1] >= elt:
+            w___ stk and stk[-1] >= elt:
                 stk.pop()
 
             stk.append(elt)
-            if len(stk) >= 3:
-                return True
+            __ le.(stk) >= 3:
+                r_ True
 
-        return False
+        r_ False

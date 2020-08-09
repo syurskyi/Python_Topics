@@ -1,11 +1,11 @@
 # Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
+# class Interval(object
+#     ___ __init__(self, s=0, e=0
 #         self.start = s
 #         self.end = e
 
-class Solution(object):
-  def insert(self, intervals, newInterval):
+class Solution(object
+  ___ insert(self, intervals, newInterval
     """
     :type intervals: List[Interval]
     :type newInterval: Interval
@@ -14,7 +14,7 @@ class Solution(object):
     s, e = newInterval.start, newInterval.end
     left = filter(lambda x: x.end < newInterval.start, intervals)
     right = filter(lambda x: x.start > newInterval.end, intervals)
-    if left + right != intervals:
-      s = min(intervals[len(left)].start, s)
-      e = max(intervals[~len(right)].end, e)
-    return left + [Interval(s, e)] + right
+    __ left + right != intervals:
+      s = min(intervals[le.(left)].start, s)
+      e = max(intervals[~le.(right)].end, e)
+    r_ left + [Interval(s, e)] + right

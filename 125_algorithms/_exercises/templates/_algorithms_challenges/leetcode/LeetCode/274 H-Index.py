@@ -14,10 +14,10 @@ Note: If there are several possible values for h, the maximum one is taken as th
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def hIndex(self, A):
+class Solution(object
+    ___ hIndex(self, A
         """
-        Determine the range of output (i.e. h-index):
+        Determine the range of output (i.e. h-index
           Range of output: [0, N]
           Chunk by N
         Reverse mapping & DP
@@ -27,37 +27,37 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
+        n = le.(A)
         cnt = [0 for _ in xrange(n+1)]
         for e in A:
-            if e >= n:  # chunk
+            __ e >= n:  # chunk
                 cnt[n] += 1
-            else:
+            ____
                 cnt[e] += 1
 
         F = [0 for _ in xrange(n+2)]
-        for i in xrange(n, -1, -1):
+        for i in xrange(n, -1, -1
             F[i] += F[i+1] + cnt[i]
-            if F[i] >= i:
-                return i
+            __ F[i] >= i:
+                r_ i
 
-        return 0
+        r_ 0
 
-    def hIndex_sort(self, citations):
+    ___ hIndex_sort(self, citations
         """
         Algorithm forward sort
         :type citations: List[int]
         :rtype: int
         """
-        n = len(citations)
+        n = le.(citations)
         citations.sort()
-        for i in xrange(n):
-            if citations[i] >= n-i:
-                return n-i
+        for i in xrange(n
+            __ citations[i] >= n-i:
+                r_ n-i
 
-        return 0
+        r_ 0
 
-    def hIndex_reverse_sort(self, citations):
+    ___ hIndex_reverse_sort(self, citations
         """
         Algorithm sort
         :type citations: List[int]
@@ -66,14 +66,14 @@ class Solution(object):
         citations.sort(reverse=True)
         citations.append(0)
         h = 0
-        for i in xrange(len(citations)-1):
-            if citations[i] >= i+1 >= citations[i+1]:
+        for i in xrange(le.(citations)-1
+            __ citations[i] >= i+1 >= citations[i+1]:
                 h = i+1
-            elif h:
+            ____ h:
                 break
 
-        return h
+        r_ h
 
 
-if __name__ == "__main__":
-    assert Solution().hIndex([3, 0, 6, 1, 5]) == 3
+__ __name__ __ "__main__":
+    assert Solution().hIndex([3, 0, 6, 1, 5]) __ 3

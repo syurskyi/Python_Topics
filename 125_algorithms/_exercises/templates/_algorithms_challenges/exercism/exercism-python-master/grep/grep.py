@@ -1,43 +1,43 @@
-def grep(pattern, files, flags=''):
+___ grep(pattern, files, flags=''
     matches = []
     for file_name in files:
         file_matches = []
-        for l, line in enumerate(open(file_name).readlines(), 1):
-            if match(pattern, line, flags):
+        for l, line in enumerate(open(file_name).readlines(), 1
+            __ match(pattern, line, flags
                 file_matches.append((l, line))
-                if 'l' in flags:
+                __ 'l' in flags:
                     break
         matches.append((file_name, file_matches))
-    return formatter(matches, flags)
+    r_ formatter(matches, flags)
 
-def match(pattern, line, flags):
-    if 'i' in flags:
+___ match(pattern, line, flags
+    __ 'i' in flags:
         pattern, line = pattern.lower(), line.lower()
 
-    if 'x' in flags:
-        return pattern == line.strip()
-    elif 'v' in flags:
-        return pattern not in line
+    __ 'x' in flags:
+        r_ pattern __ line.strip()
+    ____ 'v' in flags:
+        r_ pattern not in line
 
-    return pattern in line
+    r_ pattern in line
 
-def formatter(matches, flags):
+___ formatter(matches, flags
     output = []
 
-    if 'l' in flags:
+    __ 'l' in flags:
         format_str = '{filename}\n'
-    elif 'n' in flags:
+    ____ 'n' in flags:
         format_str = '{ln}:{line}'
-    else:
+    ____
         format_str = '{line}'
 
-    if len(matches) > 1 and 'l' not in flags:
+    __ le.(matches) > 1 and 'l' not in flags:
         format_str = '{filename}:' + format_str
 
     for filename, lines in matches:
         for ln, line in lines:
             output.append(format_str.format(ln=ln, line=line, filename=filename))
-            if 'l' in flags:
+            __ 'l' in flags:
                 break
 
-    return ''.join(output)
+    r_ ''.join(output)

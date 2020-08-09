@@ -14,20 +14,20 @@ After third round, the three bulbs are [on, off, off].
 
 So you should return 1, because there is only one bulb is on.
 """
-import math
+______ ma__
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def bulbSwitch(self, n):
+class Solution(object
+    ___ bulbSwitch(self, n
         """
         Only bulbs with index being a perfect square number toggled odd number of times
         Brainteaser
         :type n: int
         :rtype: int
         """
-        cnt = int(math.sqrt(n))
-        return cnt
+        cnt = int(ma__.sqrt(n))
+        r_ cnt
 
 

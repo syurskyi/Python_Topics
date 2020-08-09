@@ -2,5 +2,5 @@
 # Score: 10
 
 
-def mutate_string(string, position, character):
-    return string[:position] + character + string[position + 1:]
+___ mutate_string(string, position, character
+    r_ string[:position] + character + string[position + 1:]

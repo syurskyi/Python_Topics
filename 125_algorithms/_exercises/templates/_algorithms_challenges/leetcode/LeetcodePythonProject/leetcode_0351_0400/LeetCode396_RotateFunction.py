@@ -4,21 +4,21 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxRotateFunction(self, A):
+class Solution(object
+    ___ maxRotateFunction(self, A
         nums = A
         sumVal = 0
         sample = 0
-        for i, num in enumerate(nums):
+        for i, num in enumerate(nums
             sample += i*num
             sumVal += num
         maxVal = sample
-        for i in range(len(nums)-1, 0, -1):
-            sample = sample+sumVal-len(nums)*nums[i]
+        for i in range(le.(nums)-1, 0, -1
+            sample = sample+sumVal-le.(nums)*nums[i]
             maxVal = max(maxVal, sample)
-        return maxVal
+        r_ maxVal
 
-    def test(self):
+    ___ test(self
         testCases = [
             [4, 3, 2, 6],
         ]
@@ -28,5 +28,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

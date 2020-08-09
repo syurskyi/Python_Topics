@@ -1,8 +1,8 @@
-import os
-import re
-from collections import Counter
-from urllib.request import urlretrieve
-from dateutil.parser import parse
+______ os
+______ re
+from collections ______ Counter
+from urllib.request ______ urlretrieve
+from dateutil.parser ______ parse
 
 commits = os.path.join('/tmp', 'commits')
 urlretrieve('https://bit.ly/2H1EuZQ', commits)
@@ -11,8 +11,8 @@ urlretrieve('https://bit.ly/2H1EuZQ', commits)
 YEAR_MONTH = '{y}-{m:02d}'
 
 
-def get_min_max_amount_of_commits(commit_log: str = commits,
-                                  year: int = None) -> (str, str):
+___ get_min_max_amount_of_commits(commit_log: str = commits,
+                                  year: int = None) -> (str, str
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -36,7 +36,7 @@ def get_min_max_amount_of_commits(commit_log: str = commits,
         for x in log_regex.findall(cl.read()):
             c += 1
             dt = parse(x[0])
-            if year is None or year == dt.year:
+            __ year is None or year __ dt.year:
                 log += Counter({(YEAR_MONTH.format(y=dt.year, m=dt.month)): int('0' + x[1]) - int('0' + x[2])})
     lst = sorted([(k, v) for k, v in log.items()], key=lambda x: x[1])
-    return lst[0][0], lst[-1][0]
+    r_ lst[0][0], lst[-1][0]

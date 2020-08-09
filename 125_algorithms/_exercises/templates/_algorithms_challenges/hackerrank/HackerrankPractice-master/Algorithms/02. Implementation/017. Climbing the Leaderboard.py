@@ -2,34 +2,34 @@
 # Score: 20
 
 
-def climbingLeaderboard(leaderboard, aliceScores):
+___ climbingLeaderboard(leaderboard, aliceScores
     rankings = createRankings(leaderboard)
-    i = len(leaderboard) - 1
+    i = le.(leaderboard) - 1
     for score in aliceScores:
         flag = True
-        while flag:
-            if i == -1:
+        w___ flag:
+            __ i __ -1:
                 print(1)
                 flag = False
-            elif score < leaderboard[i]:
+            ____ score < leaderboard[i]:
                 print(rankings[i] + 1)
                 flag = False
-            elif score == leaderboard[i]:
+            ____ score __ leaderboard[i]:
                 print(rankings[i])
                 flag = False
-            elif score > leaderboard[i]:
+            ____ score > leaderboard[i]:
                 i -= 1
-    return
+    r_
 
 
-def createRankings(leaderboard):
+___ createRankings(leaderboard
     rankings = [1]
     rank = 1
-    for i in range(1, len(leaderboard)):
-        if leaderboard[i] < leaderboard[i - 1]:
+    for i in range(1, le.(leaderboard)):
+        __ leaderboard[i] < leaderboard[i - 1]:
             rank += 1
         rankings.append(rank)
-    return rankings
+    r_ rankings
 
 
 lenOfLeaderboard = int(input())

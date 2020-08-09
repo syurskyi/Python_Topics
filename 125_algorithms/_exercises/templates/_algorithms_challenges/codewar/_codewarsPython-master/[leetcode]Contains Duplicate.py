@@ -1,11 +1,11 @@
 class Solution:
     # @param {integer[]} nums
     # @return {boolean}
-    def containsDuplicate(self, nums):
+    ___ containsDuplicate(self, nums
         res = None
-        for n in sorted(nums):
-            if n == res:
-                return True
-            else:
+        for n in sorted(nums
+            __ n __ res:
+                r_ True
+            ____
                 res = n
-        return False                
+        r_ False                

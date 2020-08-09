@@ -18,7 +18,7 @@ Dm <-> 2 <-> 3 <-> 8 <-> dm   |<- freq_list (dll)
 
 
 class LFUCache:
-    def __init__(self, capacity):
+    ___ __init__(self, capacity
         """
         :type capacity: int
         """
@@ -29,72 +29,72 @@ class LFUCache:
         self.D.nxt = self.d
         self.d.pre = self.D
 
-    def get(self, key):
+    ___ get(self, key
         """
         :type key: int
         :rtype: int
         """
-        if key not in self.nodes:
-            return -1
+        __ key not in self.nodes:
+            r_ -1
 
         self._update(key)
-        return self.nodes[key].val
+        r_ self.nodes[key].val
 
-    def set(self, key, val):
+    ___ set(self, key, val
         """
         :type key: int
         :type val: int
         :rtype: void
         """
-        if self.cap <= 0:
-            return
+        __ self.cap <= 0:
+            r_
 
-        if key in self.nodes:
+        __ key in self.nodes:
             self._update(key, val)
-            return
+            r_
 
-        while len(self.nodes) >= self.cap:
+        w___ le.(self.nodes) >= self.cap:
             self._evict()
 
         self._add(key, val)
 
-    def _evict(self):
+    ___ _evict(self
         freq_head = self.D.nxt
         cache_node = freq_head.pop_head()
         del self.nodes[cache_node.key]
 
-        if freq_head.is_empty():
+        __ freq_head.is_empty(
             freq_head.unlink()
 
-    def _update(self, key, val=None):
+    ___ _update(self, key, val=None
         cache_node = self.nodes[key]
 
-        if val:
+        __ val:
             cache_node.val = val
 
         from_freq = cache_node.freq_node
         to_freq = None
 
-        if from_freq.nxt and from_freq.nxt.freq == from_freq.freq + 1:
+        __ from_freq.nxt and from_freq.nxt.freq __ from_freq.freq + 1:
             to_freq = from_freq.nxt
-        else:
+        ____
             to_freq = FreqNode(from_freq.freq + 1)
             from_freq.after(to_freq)
 
         cache_node.unlink()
         to_freq.append_tail(cache_node)
 
-        if from_freq.is_empty():
+        __ from_freq.is_empty(
             from_freq.unlink()
 
-    def _add(self, key, val):
+    ___ _add(self, key, val
         cache_node = CacheNode(key, val)
         self.nodes[key] = cache_node
 
         freq_head = self.D.nxt
-        if freq_head and freq_head.freq == 0:
+        __ freq_head and freq_head.freq __ 0:
             freq_head.append_tail(cache_node)
-            return
+            r_
 
         freq_head = FreqNode(0)
         freq_head.append_tail(cache_node)
@@ -102,7 +102,7 @@ class LFUCache:
 
 
 class CacheNode:
-    def __init__(self, key, val=None, freq_node=None, pre=None, nxt=None):
+    ___ __init__(self, key, val=None, freq_node=None, pre=None, nxt=None
         self.key = key
         self.val = val
         self.freq_node = freq_node
@@ -110,14 +110,14 @@ class CacheNode:
         self.nxt = nxt
 
     # to change self in cache nodes
-    def unlink(self):
+    ___ unlink(self
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
         self.freq_node = self.pre = self.nxt = None
 
 
 class FreqNode:
-    def __init__(self, freq, pre=None, nxt=None):
+    ___ __init__(self, freq, pre=None, nxt=None
         self.freq = freq
         self.pre = pre
         self.nxt = nxt
@@ -127,33 +127,33 @@ class FreqNode:
         self.d.pre = self.D
 
     # to change self in freq nodes
-    def unlink(self):
+    ___ unlink(self
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
         self.pre = self.nxt = self.D = self.d = None
 
     # to change self in freq nodes
-    def after(self, freq_node):
+    ___ after(self, freq_node
         freq_node.pre = self
         freq_node.nxt = self.nxt
         self.nxt.pre = freq_node
         self.nxt = freq_node
 
     # to manage cache nodes
-    def is_empty(self):
-        return self.D.nxt is self.d
+    ___ is_empty(self
+        r_ self.D.nxt is self.d
 
     # to manage cache nodes
-    def pop_head(self):
-        if self.is_empty():
-            return
+    ___ pop_head(self
+        __ self.is_empty(
+            r_
 
         head = self.D.nxt
         head.unlink()
-        return head
+        r_ head
 
     # to manage cache nodes
-    def append_tail(self, cache_node):
+    ___ append_tail(self, cache_node
         cache_node.freq_node = self
         cache_node.pre = self.d.pre
         cache_node.nxt = self.d

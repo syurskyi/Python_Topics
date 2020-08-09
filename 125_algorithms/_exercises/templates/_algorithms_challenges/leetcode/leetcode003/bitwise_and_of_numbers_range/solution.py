@@ -5,19 +5,19 @@ of all numbers in this range, inclusive.
 For example, given the range [5, 7], you should return 4.
 """
 
-class Solution(object):
-    def rangeBitwiseAnd(self, m, n):
+class Solution(object
+    ___ rangeBitwiseAnd(self, m, n
         """
         :type m: int
         :type n: int
         :rtype: int
         """
         shift = 0
-        while n > m:
+        w___ n > m:
             shift += 1
             m = m >> 1
             n = n >> 1
-        return m << shift
+        r_ m << shift
 
 
 s = Solution()

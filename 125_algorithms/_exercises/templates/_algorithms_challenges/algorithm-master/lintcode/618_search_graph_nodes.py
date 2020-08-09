@@ -9,7 +9,7 @@ Test Case:
 """
 Definition for a undirected graph node
 class UndirectedGraphNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.label = x
         self.neighbors = []
 """
@@ -23,17 +23,17 @@ class Solution:
     @param {int} target an integer
     @return {UndirectedGraphNode} a node
     """
-    def searchNode(self, graph, values, node, target):
-        if not graph:
-            return
+    ___ searchNode(self, graph, values, node, target
+        __ not graph:
+            r_
 
         queue = [node]
         visited = {_node: False for _node in graph}
 
         for _node in queue:
             visited[_node] = True
-            if values[_node] == target:
-                return _node
+            __ values[_node] __ target:
+                r_ _node
             for _neighbor in _node.neighbors:
-                if not visited[_neighbor]:
+                __ not visited[_neighbor]:
                     queue.append(_neighbor)

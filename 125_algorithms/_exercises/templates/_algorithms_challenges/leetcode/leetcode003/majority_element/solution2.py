@@ -6,8 +6,8 @@ You may assume that the array is non-empty and the majority element always
 exist in the array.
 """
 
-class Solution(object):
-    def majorityElement(self, nums):
+class Solution(object
+    ___ majorityElement(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -15,11 +15,11 @@ class Solution(object):
         count = 0
         cand = None
         for c in nums:
-            if count == 0:
+            __ count __ 0:
                 cand = c
                 count += 1
-            elif cand == c:
+            ____ cand __ c:
                 count += 1
-            else:
+            ____
                 count -= 1
-        return cand
+        r_ cand

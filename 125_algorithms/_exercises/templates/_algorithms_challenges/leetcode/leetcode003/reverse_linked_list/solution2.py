@@ -9,32 +9,32 @@ implement both?
 """
 
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
+class ListNode(object
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
-class Solution(object):
-    def reverseList(self, head):
+class Solution(object
+    ___ reverseList(self, head
         """
         :type head: ListNode
         :rtype: ListNode
 
         Recursive (Time Limit Exceeded)
         """
-        if head is None:
-            return None
-        else:
+        __ head is None:
+            r_ None
+        ____
             rev_rest = self.reverseList(head.next)
             current = rev_rest
-            if current is None:
-                return head
-            while current and current.next is not None:
+            __ current is None:
+                r_ head
+            w___ current and current.next is not None:
                 current = current.next
             current.next = head
             head.next = None
-            return rev_rest
+            r_ rev_rest
 
 
 n1 = ListNode(1)

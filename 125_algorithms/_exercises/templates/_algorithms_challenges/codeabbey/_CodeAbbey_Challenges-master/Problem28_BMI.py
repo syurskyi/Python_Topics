@@ -6,12 +6,12 @@ with open("prob28.txt") as infile:
         bmi = lambda x,y : int(x)/(float(y)**2)
         
         ans =float(bmi(weight,height))
-        if ans < 18.5:
+        __ ans < 18.5:
             print("under",end=" ")
-        elif ans < 25.0:
+        ____ ans < 25.0:
             print("normal",end=" ")
-        elif ans < 30.0:
+        ____ ans < 30.0:
             print("over",end= " ")
-        else:
+        ____
             print("obese",end=" ")
             

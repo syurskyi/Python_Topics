@@ -7,16 +7,16 @@ For example, given n = 3, a solution set is:
 """
 __author__ = 'Danyang'
 class Solution:
-    def generateParenthesis(self, n):
+    ___ generateParenthesis(self, n
         """
         :param n: integer
         :return: list of string
         """
         result = []
         self.generateParenthesisDfs(result, "", n, n)
-        return result
+        r_ result
 
-    def generateParenthesisDfs(self, result, cur, left, right):
+    ___ generateParenthesisDfs(self, result, cur, left, right
         """
         DFS
         Catalan Number
@@ -25,17 +25,17 @@ class Solution:
         :param left: number of left parenthesis remaining
         :param right: number of right parenthesis remaining
         """
-        if left == 0 and right == 0:
+        __ left __ 0 and right __ 0:
             result.append(cur)
-            return
+            r_
 
         # add left parenthesis
-        if left > 0:
+        __ left > 0:
             self.generateParenthesisDfs(result, cur + "(", left - 1, right)
         # add right parenthesis
-        if right > left:
+        __ right > left:
             self.generateParenthesisDfs(result, cur + ")", left, right - 1)
 
 
-if __name__=="__main__":
-    assert Solution().generateParenthesis(3)==['((()))', '(()())', '(())()', '()(())', '()()()']
+__ __name____"__main__":
+    assert Solution().generateParenthesis(3)__['((()))', '(()())', '(())()', '()(())', '()()()']

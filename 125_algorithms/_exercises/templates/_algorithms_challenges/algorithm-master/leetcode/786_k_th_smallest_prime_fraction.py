@@ -10,30 +10,30 @@ example: [1, 2, 5, 7]
 5  ...
 7  ...
 """
-from heapq import heappush, heappop
+from heapq ______ heappush, heappop
 
 
 class Solution:
-    def kthSmallestPrimeFraction(self, A, K):
+    ___ kthSmallestPrimeFraction(self, A, K
         """
         :type A: List[int]
         :type K: int
         :rtype: List[int]
         """
         heap = []
-        n = len(A)
+        n = le.(A)
 
         A.sort()
 
-        for i in range(n):
+        for i in range(n
             heappush(heap, (A[i]/A[-1], i, n - 1))
 
-        for _ in range(K - 1):
+        for _ in range(K - 1
             _, i, j = heappop(heap)
 
             j -= 1
-            if j >= 0:
+            __ j >= 0:
                 heappush(heap, (A[i]/A[j], i, j))
 
         _, i, j = heappop(heap)
-        return [A[i], A[j]]
+        r_ [A[i], A[j]]

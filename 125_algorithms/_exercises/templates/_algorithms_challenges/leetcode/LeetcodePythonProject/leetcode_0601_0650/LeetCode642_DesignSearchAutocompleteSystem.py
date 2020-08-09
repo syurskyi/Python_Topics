@@ -3,16 +3,16 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-class TreeNode(object):
-    def __init__(self, val):
+class TreeNode(object
+    ___ __init__(self, val
         self.val = val
         self.children = {}
         self.candidates = {}
         self.isLeaf = False
 
-class AutocompleteSystem(object):
+class AutocompleteSystem(object
 
-    def __init__(self, sentences, times):
+    ___ __init__(self, sentences, times
         """
         :type sentences: List[str]
         :type times: List[int]
@@ -20,52 +20,52 @@ class AutocompleteSystem(object):
         self.root = TreeNode(None)
         self.node = self.root
         self.s = ''
-        for s, count in zip(sentences, times):
+        for s, count in zip(sentences, times
             node = self.root
             for c in s:
-                if c not in node.children:
+                __ c not in node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
                 node.candidates[s] = node.candidates.get(s, 0)+count
             node.isLeaf = True
 
-    def input(self, c):
+    ___ input(self, c
         """
         :type c: str
         :rtype: List[str]
         """
-        if c == '#':
+        __ c __ '#':
             res = []
             self.node = self.root
             self.addCandidate(self.s)
             self.s = ''
-            return res
-        else:
+            r_ res
+        ____
             self.s += c
-            if self.node and c in self.node.children:
+            __ self.node and c in self.node.children:
                 node = self.node.children[c]
                 self.node = node
                 candidates = node.candidates
                 res = [(-count, s) for s, count in candidates.items()]
                 res.sort()
                 res = res[:3]
-                return [s for count, s in res]
-            else:
+                r_ [s for count, s in res]
+            ____
                 self.node = None
-                return []
+                r_ []
     
-    def addCandidate(self, s):
+    ___ addCandidate(self, s
         node = self.root
         for c in s:
-            if c not in node.children:
+            __ c not in node.children:
                 newNode = TreeNode(c)
                 node.children[c] = newNode
             node = node.children[c]
             node.candidates[s] = node.candidates.get(s, 0)+1
         node.isLeaf = True
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
 #     autoSys = AutocompleteSystem(["i love you", "island","ironman", "i love leetcode"], [5,3,2,2])
 #     print(autoSys.input('i'))
 #     print(autoSys.input(' '))

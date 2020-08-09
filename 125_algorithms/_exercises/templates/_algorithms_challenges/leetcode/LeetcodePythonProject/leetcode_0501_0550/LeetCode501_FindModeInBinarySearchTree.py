@@ -5,14 +5,14 @@ Created on May 10, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def findMode(self, root):
+class Solution(object
+    ___ findMode(self, root
         """
         :type root: TreeNode
         :rtype: List[int]
@@ -23,28 +23,28 @@ class Solution(object):
         count = 0
         maxCount = 0
         node = root
-        while node:
+        w___ node:
             stack.append(node)
             node = node.left
-        while stack:
+        w___ stack:
             node = stack.pop()
-            if node.val != prev:
+            __ node.val != prev:
                 count = 1
                 prev = node.val
-            else:
+            ____
                 count += 1
-            if count > maxCount:
+            __ count > maxCount:
                 maxCount = count
                 res = [node.val]
-            elif count == maxCount:
+            ____ count __ maxCount:
                 res.append(node.val)
             node0 = node.right
-            while node0:
+            w___ node0:
                 stack.append(node0)
                 node0 = node0.left
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             TreeNode(1),
         ]
@@ -53,6 +53,6 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

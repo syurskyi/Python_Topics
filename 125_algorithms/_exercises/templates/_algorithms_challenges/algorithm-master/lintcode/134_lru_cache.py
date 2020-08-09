@@ -13,7 +13,7 @@ Dm <-> a <-> b <-> c <-> dm  |<- cache_list (dll)
 
 
 class LRUCache:
-    def __init__(self, capacity):
+    ___ __init__(self, capacity
         """
         :type capacity: int
         """
@@ -24,75 +24,75 @@ class LRUCache:
         self.D.nxt = self.d
         self.d.pre = self.D
 
-    def get(self, key):
+    ___ get(self, key
         """
         :type key: int
         :rtype: int
         """
-        if key not in self.nodes:
-            return -1
+        __ key not in self.nodes:
+            r_ -1
 
         self._update(key)
-        return self.nodes[key].val
+        r_ self.nodes[key].val
 
-    def set(self, key, val):
+    ___ set(self, key, val
         """
         :type key: int
         :type val: int
         :rtype: void
         """
-        if self.cap <= 0:
-            return
+        __ self.cap <= 0:
+            r_
 
-        if key in self.nodes:
+        __ key in self.nodes:
             self._update(key, val)
-            return
+            r_
 
-        while len(self.nodes) >= self.cap:
+        w___ le.(self.nodes) >= self.cap:
             self._evict()
 
         self._add(key, val)
 
-    def _evict(self):
+    ___ _evict(self
         node = self._pop_head()
         del self.nodes[node.key]
 
-    def _update(self, key, val=None):
+    ___ _update(self, key, val=None
         node = self.nodes[key]
 
-        if val:
+        __ val:
             node.val = val
 
         node.unlink()
         self._add_tail(node)
 
-    def _add(self, key, val):
+    ___ _add(self, key, val
         self.nodes[key] = CacheNode(key, val)
         self._add_tail(self.nodes[key])
 
-    def _pop_head(self):
+    ___ _pop_head(self
         node = self.D.nxt
         node.unlink()
-        return node
+        r_ node
 
-    def _add_tail(self, node):
+    ___ _add_tail(self, node
         node.link(self.d.pre, self.d)
 
 
 class CacheNode:
-    def __init__(self, key, val=None, pre=None, nxt=None):
+    ___ __init__(self, key, val=None, pre=None, nxt=None
         self.key = key
         self.val = val
         self.pre = pre
         self.nxt = nxt
 
-    def link(self, pre, nxt):
+    ___ link(self, pre, nxt
         self.pre = pre
         self.nxt = nxt
         pre.nxt = self
         nxt.pre = self
 
-    def unlink(self):
+    ___ unlink(self
         self.pre.nxt = self.nxt
         self.nxt.pre = self.pre
         self.pre = self.nxt = None

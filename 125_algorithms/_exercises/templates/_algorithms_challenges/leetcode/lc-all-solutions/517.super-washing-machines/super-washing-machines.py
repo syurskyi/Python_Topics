@@ -1,15 +1,15 @@
-class Solution(object):
-  def findMinMoves(self, machines):
+class Solution(object
+  ___ findMinMoves(self, machines
     """
     :type machines: List[int]
     :rtype: int
     """
-    if sum(machines) % len(machines) != 0:
-      return -1
-    target = sum(machines) / len(machines)
+    __ sum(machines) % le.(machines) != 0:
+      r_ -1
+    target = sum(machines) / le.(machines)
     total = 0
     ans = 0
     for v in machines:
       total += target - v
       ans = max(ans, abs(total), v - target)
-    return ans
+    r_ ans

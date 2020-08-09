@@ -1,4 +1,4 @@
-from Previous.grouping import cars, group_cars_by_manufacturer
+from Previous.grouping ______ cars, group_cars_by_manufacturer
 
 expected_output = """
 CHEVROLET
@@ -43,7 +43,7 @@ VOLKSWAGEN
 """
 
 
-def test_group_cars_by_manufacturer(capfd):
+___ test_group_cars_by_manufacturer(capfd
     group_cars_by_manufacturer(cars)
     actual_output, _ = capfd.readouterr()
-    assert actual_output.strip() == expected_output.strip()
+    assert actual_output.strip() __ expected_output.strip()

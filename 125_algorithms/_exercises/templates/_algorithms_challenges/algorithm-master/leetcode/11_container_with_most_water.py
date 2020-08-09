@@ -1,22 +1,22 @@
 class Solution:
-    def maxArea(self, H):
+    ___ maxArea(self, H
         """
         :type H: List[int]
         :rtype: int
         """
         ans = 0
-        if not H:
-            return ans
+        __ not H:
+            r_ ans
 
-        left, right = 0, len(H) - 1
-        while left < right:
+        left, right = 0, le.(H) - 1
+        w___ left < right:
             area = min(H[left], H[right]) * (right - left)
-            if area > ans:
+            __ area > ans:
                 ans = area
 
-            if H[left] < H[right]:
+            __ H[left] < H[right]:
                 left += 1
-            else:
+            ____
                 right -= 1
 
-        return ans
+        r_ ans

@@ -3,61 +3,61 @@ Created on Mar 13, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def areSentencesSimilarTwo(self, words1, words2, pairs):
+class Solution(object
+    ___ areSentencesSimilarTwo(self, words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        if len(words1) != len(words2):
-            return False
+        __ le.(words1) != le.(words2
+            r_ False
         pairInfo = {}
         for p in pairs:
-            if p[0] not in pairInfo:
+            __ p[0] not in pairInfo:
                 pairInfo[p[0]] = set()
-            if p[1] not in pairInfo:
+            __ p[1] not in pairInfo:
                 pairInfo[p[1]] = set()
             pairInfo[p[0]].add(p[1])
             pairInfo[p[1]].add(p[0])
-        for w1, w2 in zip(words1, words2):
-            if w1 == w2:
+        for w1, w2 in zip(words1, words2
+            __ w1 __ w2:
                 continue
-            if w1 not in pairInfo:
-                return False
-            if not self.dfs(w1, w2, pairInfo, set()):
-                return False
-        return True
+            __ w1 not in pairInfo:
+                r_ False
+            __ not self.dfs(w1, w2, pairInfo, set()):
+                r_ False
+        r_ True
     
-    def dfs(self, source, target, pairInfo, visited):
-        if target in pairInfo.get(source, set()):
-            return True
+    ___ dfs(self, source, target, pairInfo, visited
+        __ target in pairInfo.get(source, set()):
+            r_ True
         visited.add(source)
         for nextWord in pairInfo.get(source, set()):
-            if nextWord not in visited and self.dfs(nextWord, target, pairInfo, visited):
-                return True
-        return False
+            __ nextWord not in visited and self.dfs(nextWord, target, pairInfo, visited
+                r_ True
+        r_ False
     
     # This is Exceeding Time Limit
-    def areSentencesSimilarTwo_own(self, words1, words2, pairs):
+    ___ areSentencesSimilarTwo_own(self, words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        if len(words1) != len(words2):
-            return False
+        __ le.(words1) != le.(words2
+            r_ False
         hashmap = {}
         n = 0
         l = []
         for p in pairs:
-            if p[0] not in hashmap:
+            __ p[0] not in hashmap:
                 l.append(p[0])
                 hashmap[p[0]] = n
                 n += 1
-            if p[1] not in hashmap:
+            __ p[1] not in hashmap:
                 l.append(p[1])
                 hashmap[p[1]] = n
                 n += 1
@@ -66,24 +66,24 @@ class Solution(object):
             root0 = self.getRoot(roots, hashmap[p[0]])
             root1 = self.getRoot(roots, hashmap[p[1]])
             roots[root0] = root1
-        for w1, w2 in zip(words1, words2):
-            if w1 == w2:
+        for w1, w2 in zip(words1, words2
+            __ w1 __ w2:
                 continue
-            elif w1 not in hashmap or w2 not in hashmap:
-                return False
-            else:
+            ____ w1 not in hashmap or w2 not in hashmap:
+                r_ False
+            ____
                 r1 = self.getRoot(roots, hashmap[w1])
                 r2 = self.getRoot(roots, hashmap[w2])
-                if r1 != r2:
-                    return False
-        return True
+                __ r1 != r2:
+                    r_ False
+        r_ True
     
-    def getRoot(self, roots, ind):
-        while roots[ind] != -1:
+    ___ getRoot(self, roots, ind
+        w___ roots[ind] != -1:
             ind = roots[ind]
-        return ind
+        r_ ind
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["great", "acting", "skills"],
@@ -116,5 +116,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

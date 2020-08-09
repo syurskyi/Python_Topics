@@ -3,22 +3,22 @@ Created on Apr 12, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def rotatedDigits(self, N):
+class Solution(object
+    ___ rotatedDigits(self, N
         """
         :type N: int
         :rtype: int
         """
         cnt = 0
-        for num in range(1, N+1):
-            if self.checkNum(num):
+        for num in range(1, N+1
+            __ self.checkNum(num
                 cnt += 1
-        return cnt
+        r_ cnt
     
-    def checkNum(self, num):
+    ___ checkNum(self, num
         arr = list(str(num))
-        i, j = 0, len(arr)-1
-        arr0 = ['']*len(arr)
+        i, j = 0, le.(arr)-1
+        arr0 = ['']*le.(arr)
         hashmap = {
             '1':'1',
             '2':'5',
@@ -28,16 +28,16 @@ class Solution(object):
             '9':'6',
             '0':'0',
         }
-        while i <= j:
-            if arr[i] in hashmap and arr[j] in hashmap:
+        w___ i <= j:
+            __ arr[i] in hashmap and arr[j] in hashmap:
                 arr0[i], arr0[j] = hashmap[arr[i]], hashmap[arr[j]]
                 i += 1
                 j -= 1
-            else:
-                return False
-        return arr0 != arr
+            ____
+                r_ False
+        r_ arr0 != arr
     
-    def test(self):
+    ___ test(self
         testCases = [
             10,
             100,
@@ -49,5 +49,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

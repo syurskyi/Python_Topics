@@ -1,17 +1,17 @@
-from emoji import what_means_emoji, find_emoji
+from emoji ______ what_means_emoji, find_emoji
 
 
-def test_what_means_emoji_found():
-    what_means_emoji('🐶').lower() == 'dog face'
-    what_means_emoji('🏋').lower() == 'weight lifter'
-    what_means_emoji('🌇').lower() == 'sunset over buildings'
+___ test_what_means_emoji_found(
+    what_means_emoji('🐶').lower() __ 'dog face'
+    what_means_emoji('🏋').lower() __ 'weight lifter'
+    what_means_emoji('🌇').lower() __ 'sunset over buildings'
 
 
-def test_what_means_emoji_not_found():
-    assert what_means_emoji('aaa').lower() == 'not found'
+___ test_what_means_emoji_not_found(
+    assert what_means_emoji('aaa').lower() __ 'not found'
 
 
-def test_find_matches(capfd):
+___ test_find_matches(capfd
     find_emoji('sun')
     output = capfd.readouterr()[0].lower()
     # some of the results you should get back
@@ -23,7 +23,7 @@ def test_find_matches(capfd):
     assert '🌻' in output
 
 
-def test_find_no_match(capfd):
+___ test_find_no_match(capfd
     find_emoji('awesome')
     output = capfd.readouterr()[0].lower()
     assert not output.strip() or 'no matches' in output.lower()

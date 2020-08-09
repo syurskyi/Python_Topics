@@ -1,4 +1,4 @@
-class Allergies(object):
+class Allergies(object
 
     _allergies = [
         "eggs",
@@ -11,13 +11,13 @@ class Allergies(object):
         "cats"
     ]
 
-    def __init__(self, score):
+    ___ __init__(self, score
         self.score = score
 
-    def is_allergic_to(self, allergy):
-        return self.score & 1 << self._allergies.index(allergy)
+    ___ is_allergic_to(self, allergy
+        r_ self.score & 1 << self._allergies.index(allergy)
 
     @property
-    def lst(self):
-        return [allergy for allergy in self._allergies
-                if self.is_allergic_to(allergy)]
+    ___ lst(self
+        r_ [allergy for allergy in self._allergies
+                __ self.is_allergic_to(allergy)]

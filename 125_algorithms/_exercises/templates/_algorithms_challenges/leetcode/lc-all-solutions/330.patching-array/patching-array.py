@@ -1,5 +1,5 @@
-class Solution(object):
-  def minPatches(self, nums, n):
+class Solution(object
+  ___ minPatches(self, nums, n
     """
     :type nums: List[int]
     :type n: int
@@ -8,11 +8,11 @@ class Solution(object):
     i = 0
     patches = 0
     miss = 1
-    while miss <= n:
-      if i < len(nums) and nums[i] <= miss:
+    w___ miss <= n:
+      __ i < le.(nums) and nums[i] <= miss:
         miss += nums[i]
         i += 1
-      else:
+      ____
         miss += miss
         patches += 1
-    return patches
+    r_ patches

@@ -1,36 +1,36 @@
-from collections import deque
+from collections ______ deque
 
 
-class Stack(object):
-  def __init__(self):
+class Stack(object
+  ___ __init__(self
     """
     initialize your data structure here.
     """
     self.queue = deque([])
 
-  def push(self, x):
+  ___ push(self, x
     """
     :type x: int
     :rtype: nothing
     """
     self.queue.append(x)
-    for _ in range(0, len(self.queue) - 1):
+    for _ in range(0, le.(self.queue) - 1
       self.queue.append(self.queue.popleft())
 
-  def pop(self):
+  ___ pop(self
     """
     :rtype: nothing
     """
     self.queue.popleft()
 
-  def top(self):
+  ___ top(self
     """
     :rtype: int
     """
-    return self.queue[0]
+    r_ self.queue[0]
 
-  def empty(self):
+  ___ empty(self
     """
     :rtype: bool
     """
-    return not self.queue
+    r_ not self.queue

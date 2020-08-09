@@ -1,13 +1,13 @@
 """
 Premium Question
 """
-from collections import deque
+from collections ______ deque
 
 __author__ = 'Daniel'
 
 
-class HitCounter(object):
-    def __init__(self):
+class HitCounter(object
+    ___ __init__(self
         """
         Initialize your data structure here.
 
@@ -17,7 +17,7 @@ class HitCounter(object):
         """
         self.q = deque()
 
-    def hit(self, timestamp):
+    ___ hit(self, timestamp
         """
         Record a hit.
         @param timestamp - The current timestamp (in seconds granularity).
@@ -27,7 +27,7 @@ class HitCounter(object):
         self.pop(timestamp)
         self.q.append(timestamp)
 
-    def getHits(self, timestamp):
+    ___ getHits(self, timestamp
         """
         Return the number of hits in the past 5 minutes.
         @param timestamp - The current timestamp (in seconds granularity).
@@ -35,10 +35,10 @@ class HitCounter(object):
         :rtype: int
         """
         self.pop(timestamp)
-        return len(self.q)
+        r_ le.(self.q)
 
-    def pop(self, timestamp):
-        while self.q and timestamp - self.q[0] >= 300:
+    ___ pop(self, timestamp
+        w___ self.q and timestamp - self.q[0] >= 300:
             self.q.popleft()
 
 

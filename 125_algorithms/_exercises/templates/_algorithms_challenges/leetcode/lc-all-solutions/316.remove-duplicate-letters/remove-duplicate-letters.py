@@ -1,5 +1,5 @@
-class Solution(object):
-  def removeDuplicateLetters(self, s):
+class Solution(object
+  ___ removeDuplicateLetters(self, s
     """
     :type s: str
     :rtype: str
@@ -12,10 +12,10 @@ class Solution(object):
     stack = []
     cache = set()
     for c in s:
-      if c not in cache:
-        while stack and stack[-1] > c and d[stack[-1]] > 1 and d[stack[-1]] != 1 and count[stack[-1]] > 0:
+      __ c not in cache:
+        w___ stack and stack[-1] > c and d[stack[-1]] > 1 and d[stack[-1]] != 1 and count[stack[-1]] > 0:
           cache.discard(stack.pop())
         stack.append(c)
         cache.add(c)
       count[c] -= 1
-    return "".join(stack)
+    r_ "".join(stack)

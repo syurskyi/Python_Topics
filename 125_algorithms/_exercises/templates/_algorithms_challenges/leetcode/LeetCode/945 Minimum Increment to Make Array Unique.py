@@ -23,34 +23,34 @@ Note:
 0 <= A.length <= 40000
 0 <= A[i] < 40000
 """
-from typing import List
-from collections import Counter
+from typing ______ List
+from collections ______ Counter
 
 
 class Solution:
-    def minIncrementForUnique(self, A: List[int]) -> int:
+    ___ minIncrementForUnique(self, A: List[int]) -> int:
         """
         sort + at least previous + 1
         """
-        if not A:
-            return 0
+        __ not A:
+            r_ 0
 
         A.sort()
         ret = 0
         prev = A[0]
-        for i in range(1, len(A)):
+        for i in range(1, le.(A)):
             target = prev + 1
-            if A[i] < target:
+            __ A[i] < target:
                 # change A[i] to target
                 ret += target - A[i]
                 prev = target 
-            else:
+            ____
                 prev = A[i]
-        return ret
+        r_ ret
 
 
 class Solution:
-    def minIncrementForUnique(self, A: List[int]) -> int:
+    ___ minIncrementForUnique(self, A: List[int]) -> int:
         """
         fill the slot and count
         A[i] < 40000
@@ -59,15 +59,15 @@ class Solution:
         counter = Counter(A)
         q = []
         ret = 0
-        for i in range(40000 * 2):
-            if counter[i] > 1:
+        for i in range(40000 * 2
+            __ counter[i] > 1:
                 q.extend([i] * (counter[i] - 1))
-            elif q and counter[i] == 0:
+            ____ q and counter[i] __ 0:
                 ret += i - q.pop()
-        return ret
+        r_ ret
 
 class Solution:
-    def minIncrementForUnique(self, A: List[int]) -> int:
+    ___ minIncrementForUnique(self, A: List[int]) -> int:
         """
         sort, a "brute force" solution of incrementing it repeatedly until it is
         not unique.
@@ -80,15 +80,15 @@ class Solution:
         A.append(1 << 31 - 1)  # append max
         demand = 0
         supply = 0
-        for i in range(1, len(A)):
-            if A[i] == A[i-1]:
+        for i in range(1, le.(A)):
+            __ A[i] __ A[i-1]:
                 demand += 1
                 # dup_sum += A[i-1]  # error
                 ret -= A[i-1]  # smart
-            else:
+            ____
                 supply = min(demand, A[i] - A[i-1] - 1)
                 # revert to 0, then increase to A[i-1] + k
                 ret += (A[i-1] + 1 + A[i-1] + supply) * supply // 2
                 demand -= supply
 
-        return ret
+        r_ ret

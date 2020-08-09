@@ -14,8 +14,8 @@ The encoded string should be as compact as possible.
 
 
 # Definition for a binary tree node.
-class TreeNode(object):
-  def __init__(self, x):
+class TreeNode(object
+  ___ __init__(self, x
       self.val = x
       self.left = None
       self.right = None
@@ -24,7 +24,7 @@ class TreeNode(object):
 class Codec:
     DELIMITER = ","
 
-    def serialize(self, root):
+    ___ serialize(self, root
         """Encodes a tree to a single string.
         Basic binary tree serialize (BFS), see Serialize and Deserialize
         Binary Tree
@@ -40,9 +40,9 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        def traverse(root, ret):
-            if not root:
-                return
+        ___ traverse(root, ret
+            __ not root:
+                r_
 
             ret.append(root.val)
             traverse(root.left, ret)
@@ -50,37 +50,37 @@ class Codec:
 
         ret = []
         traverse(root, ret)
-        return self.DELIMITER.join(map(str, ret))
+        r_ self.DELIMITER.join(map(str, ret))
 
-    def deserialize(self, data):
+    ___ deserialize(self, data
         """Decodes your encoded data to tree.
 
         Normal BST insert
         :type data: str
         :rtype: TreeNode
         """
-        if not data:
-            return
+        __ not data:
+            r_
             
         lst = list(map(int, data.split(self.DELIMITER)))
         root = TreeNode(lst[0])
-        def insert(root, val):
+        ___ insert(root, val
             # need to keep the parent
-            if val < root.val:
-                if not root.left:
+            __ val < root.val:
+                __ not root.left:
                     root.left = TreeNode(val)
-                else:
+                ____
                     insert(root.left, val)
-            else:
-                if not root.right:
+            ____
+                __ not root.right:
                     root.right = TreeNode(val)
-                else:
+                ____
                     insert(root.right, val)
 
         for a in lst[1:]:
             insert(root, a)
 
-        return root
+        r_ root
 
 
 # Your Codec object will be instantiated and called as such:

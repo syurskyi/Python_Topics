@@ -1,18 +1,18 @@
-def run_length_encoding(s):
-	if len(s) == 0:
-		return []
+___ run_length_encoding(s
+	__ le.(s) __ 0:
+		r_ []
 	res = []
 	char = s[0]
 	count = 1
 	for c in s[1:]:
-		if char == c:
+		__ char __ c:
 			count += 1
-		else:
+		____
 			res.append([count,str(char)])
 			char = c
 			count = 1
 	res.append([count,str(char)])
-	return res
+	r_ res
 
 
 

@@ -8,7 +8,7 @@ __author__ = 'Daniel'
 
 
 class TrieNode:
-    def __init__(self):
+    ___ __init__(self
         """
         Initialize your data structure here.
         """
@@ -17,7 +17,7 @@ class TrieNode:
 
 
 class Trie:
-    def __init__(self):
+    ___ __init__(self
         """
         Notice:
         * When insert new word, do not override the existing TrieNode
@@ -25,7 +25,7 @@ class Trie:
         """
         self.root = TrieNode()
 
-    def insert(self, word):
+    ___ insert(self, word
         """
         Inserts a word into the trie.
         :type word: str
@@ -33,13 +33,13 @@ class Trie:
         """
         cur = self.root
         for w in word:
-            if w not in cur.children:   # not override
+            __ w not in cur.children:   # not override
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
 
         cur.ended = True
 
-    def search(self, word):
+    ___ search(self, word
         """
         Returns if the word is in the trie.
         :type word: str
@@ -47,17 +47,17 @@ class Trie:
         """
         cur = self.root
         for w in word:
-            if w in cur.children:
+            __ w in cur.children:
                 cur = cur.children[w]
-            else:
-                return False
+            ____
+                r_ False
 
-        if not cur.ended:  # not ended here
-            return False
+        __ not cur.ended:  # not ended here
+            r_ False
 
-        return True
+        r_ True
 
-    def startsWith(self, prefix):
+    ___ startsWith(self, prefix
         """
         Returns if there is any word in the trie that starts with the given prefix.
         :type prefix: str
@@ -65,9 +65,9 @@ class Trie:
         """
         cur = self.root
         for w in prefix:
-            if w in cur.children:
+            __ w in cur.children:
                 cur = cur.children[w]
-            else:
-                return False
+            ____
+                r_ False
 
-        return True
+        r_ True

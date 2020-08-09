@@ -30,22 +30,22 @@ Return:
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def fizzBuzz(self, n):
+class Solution(object
+    ___ fizzBuzz(self, n
         """
         :type n: int
         :rtype: List[str]
         """
         ret = []
-        for i in xrange(1, n+1):
+        for i in xrange(1, n+1
             cur = ""
-            if i % 3 == 0:
+            __ i % 3 __ 0:
                 cur += "Fizz"
-            if i % 5 == 0:
+            __ i % 5 __ 0:
                 cur += "Buzz"
-            if not cur:
+            __ not cur:
                 cur = str(i)
 
             ret.append(cur)
 
-        return ret
+        r_ ret

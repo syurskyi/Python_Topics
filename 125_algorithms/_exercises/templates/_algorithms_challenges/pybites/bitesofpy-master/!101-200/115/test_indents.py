@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from Previous.indents import count_indents
+from Previous.indents ______ count_indents
 
 
 @pytest.mark.parametrize("input_string, count", [
@@ -9,5 +9,5 @@ from Previous.indents import count_indents
    ('    string', 4),
    ('            string', 12),
 ])
-def test_count_indents(input_string, count):
-    assert count_indents(input_string) == count
+___ test_count_indents(input_string, count
+    assert count_indents(input_string) __ count

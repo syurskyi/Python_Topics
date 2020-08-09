@@ -3,31 +3,31 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def countBinarySubstrings(self, s):
+class Solution(object
+    ___ countBinarySubstrings(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s: return 0
+        __ not s: r_ 0
         res = 0
         i = 0
         ind = i
-        while i+1 < len(s) and s[i+1] == s[ind]:
+        w___ i+1 < le.(s) and s[i+1] __ s[ind]:
             i += 1
         prev = i+1-ind
         i += 1
-        while i < len(s):
+        w___ i < le.(s
             ind = i
-            while i+1 < len(s) and s[i+1] == s[ind]:
+            w___ i+1 < le.(s) and s[i+1] __ s[ind]:
                 i += 1
             curr = i+1-ind
             res += min(curr, prev)
             prev = curr
             i += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             '00110011',
 #             '10101',
@@ -39,5 +39,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -3,35 +3,35 @@ Created on Nov 19, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def largestPalindrome(self, n):
+class Solution(object
+    ___ largestPalindrome(self, n
         """
         :type n: int
         :rtype: int
         """
-        if n == 1: return 9
+        __ n __ 1: r_ 9
         upperBound = 10**n-1
         lowerBound = upperBound//10
         maxNum = upperBound*upperBound
         firstHalf = maxNum//(10**n)
         palindromeFound = False
         palindrome = 0
-        while not palindromeFound:
+        w___ not palindromeFound:
             palindrome = self.createPalindrome(firstHalf)
-            for i in range(upperBound, lowerBound, -1):
-                if palindrome//i > maxNum or i*i < palindrome:
+            for i in range(upperBound, lowerBound, -1
+                __ palindrome//i > maxNum or i*i < palindrome:
                     break
-                if palindrome % i == 0:
+                __ palindrome % i __ 0:
                     palindromeFound = True
                     break
             firstHalf -= 1
-        return int(palindrome%1337)
+        r_ int(palindrome%1337)
     
-    def createPalindrome(self, num):
+    ___ createPalindrome(self, num
         s = str(num)+str(num)[::-1]
-        return int(s)
+        r_ int(s)
     
-    def test(self):
+    ___ test(self
         testCases = [
             1,
             2,
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -11,29 +11,29 @@ You may assume the string contains only lowercase alphabets.
 """
 
 
-class Solution(object):
-    def isAnagram(self, s, t):
+class Solution(object
+    ___ isAnagram(self, s, t
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        if len(s) != len(t):
-            return False
+        __ le.(s) != le.(t
+            r_ False
         d = {}
         for c in s:
-            if c in d:
+            __ c in d:
                 d[c] += 1
-            else:
+            ____
                 d[c] = 1
         for c in t:
-            if c not in d:
-                return False
-            else:
+            __ c not in d:
+                r_ False
+            ____
                 d[c] -= 1
-            if d[c] < 0:
-                return False
-        return True
+            __ d[c] < 0:
+                r_ False
+        r_ True
 
 
 s = Solution()

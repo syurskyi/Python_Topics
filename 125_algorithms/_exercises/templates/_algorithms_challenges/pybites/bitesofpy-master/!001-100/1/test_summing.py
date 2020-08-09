@@ -1,15 +1,15 @@
-import inspect
+______ inspect
 
-from summing import sum_numbers
-
-
-def test_sum_numbers_default_args():
-    assert sum_numbers() == 5050
-    assert sum_numbers(numbers=None) == 5050
+from summing ______ sum_numbers
 
 
-def test_sum_numbers_various_inputs():
-    assert sum_numbers(range(1, 11)) == 55
-    assert sum_numbers([1, 2, 3]) == 6
-    assert sum_numbers((1, 2, 3)) == 6
-    assert sum_numbers([]) == 0  # !! [] not the same as None
+___ test_sum_numbers_default_args(
+    assert sum_numbers() __ 5050
+    assert sum_numbers(numbers=None) __ 5050
+
+
+___ test_sum_numbers_various_inputs(
+    assert sum_numbers(range(1, 11)) __ 55
+    assert sum_numbers([1, 2, 3]) __ 6
+    assert sum_numbers((1, 2, 3)) __ 6
+    assert sum_numbers([]) __ 0  # !! [] not the same as None

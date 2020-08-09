@@ -13,13 +13,13 @@ What if nums1's size is small compared to nums2's size? Which algorithm is bette
 What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the
 memory at once?
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def intersect(self, nums1, nums2):
+class Solution(object
+    ___ intersect(self, nums1, nums2
         """
         Hash table
         Time O(m+n)
@@ -35,10 +35,10 @@ class Solution(object):
             h2[b] += 1
 
         ret = []
-        for k, v in h1.items():
+        for k, v in h1.items(
             cnt = min(v, h2[k])
             ret.extend([k]*cnt)
 
-        return ret
+        r_ ret
 
 

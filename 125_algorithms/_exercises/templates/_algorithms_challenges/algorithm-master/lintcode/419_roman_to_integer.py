@@ -1,13 +1,13 @@
 class Solution:
-    def romanToInt(self, s):
+    ___ romanToInt(self, s
         """
         :type s: str
         :rtype: int
         """
         ans = 0
 
-        if not s:
-            return ans
+        __ not s:
+            r_ ans
 
         symbs = {
             'I': 1,
@@ -21,10 +21,10 @@ class Solution:
 
         ans += symbs[s[-1]]
 
-        for i in range(len(s) - 2, -1, -1):
-            if symbs[s[i]] >= symbs[s[i + 1]]:
+        for i in range(le.(s) - 2, -1, -1
+            __ symbs[s[i]] >= symbs[s[i + 1]]:
                 ans += symbs[s[i]]
-            else:
+            ____
                 ans -= symbs[s[i]]
 
-        return ans
+        r_ ans

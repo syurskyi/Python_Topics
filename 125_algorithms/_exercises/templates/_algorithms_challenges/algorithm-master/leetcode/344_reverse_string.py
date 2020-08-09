@@ -1,7 +1,7 @@
 class Solution:
-    def reverseString(self, s):
+    ___ reverseString(self, s
         """
         :type s: str
         :rtype: str
         """
-        return ''.join(reversed(s))
+        r_ ''.join(reversed(s))

@@ -3,8 +3,8 @@ class Solution:
     @param s: the string that needs to be sorted
     @return: sorted string
     """
-    def stringSort(self, s):
-        if not s:
-            return ''
+    ___ stringSort(self, s
+        __ not s:
+            r_ ''
 
-        return ''.join(sorted(s, key=lambda c: (-s.count(c), c)))
+        r_ ''.join(sorted(s, key=lambda c: (-s.count(c), c)))

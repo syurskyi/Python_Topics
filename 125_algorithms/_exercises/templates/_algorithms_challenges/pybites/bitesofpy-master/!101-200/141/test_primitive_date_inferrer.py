@@ -1,8 +1,8 @@
-import pytest
-from primitive_date_inferrer import get_dates, InfDateFmtError
+______ pytest
+from primitive_date_inferrer ______ get_dates, InfDateFmtError
 
 
-def test_tie():
+___ test_tie(
     """ any date string can be parsed using the following formats:
     dd/mm/yy , mm/dd/yy, yy/mm/dd
     so no the prevalent format cannot be inferred """
@@ -20,11 +20,11 @@ def test_tie():
         "10/10/12",
         "03/10/02",
     ]
-    with pytest.raises(InfDateFmtError):
+    with pytest.raises(InfDateFmtError
         get_dates(dates)
 
 
-def test_too_many_nonparsable():
+___ test_too_many_nonparsable(
     """{<DateFormat.MMDDYY: 1>: 2,  <DateFormat.NONPARSABLE: -999>: 5,
          <DateFormat.DDMMYY: 0>: 2, <DateFormat.YYMMDD: 2>: 3}
     """
@@ -42,11 +42,11 @@ def test_too_many_nonparsable():
         "71/14/19",
         "85/08/09",
     ]
-    with pytest.raises(InfDateFmtError):
+    with pytest.raises(InfDateFmtError
         get_dates(dates)
 
 
-def test_mmddyy():
+___ test_mmddyy(
     """ {<DateFormat.MMDDYY: 1>: 7, <DateFormat.DDMMYY: 0>: 5,
          <DateFormat.YYMMDD: 2>: 5, <DateFormat.NONPARSABLE: -999>: 2}
         the single most prevalent format is mm/dd/yy
@@ -79,10 +79,10 @@ def test_mmddyy():
         "Invalid",
         "Invalid",
     ]
-    assert get_dates(dates) == results
+    assert get_dates(dates) __ results
 
 
-def test_yymmdd():
+___ test_yymmdd(
     """ {<DateFormat.YYMMDD: 2>: 7, <DateFormat.NONPARSABLE: -999>: 1,
          <DateFormat.MMDDYY: 1>: 3, <DateFormat.DDMMYY: 0>: 3}
          the single most prevalent format is yy/mm/dd """
@@ -114,10 +114,10 @@ def test_yymmdd():
         "1971-04-19",
         "1985-08-09",
     ]
-    assert get_dates(dates) == results
+    assert get_dates(dates) __ results
 
 
-def test_ddmmyy():
+___ test_ddmmyy(
     """ {<DateFormat.MMDDYY: 1>: 7, <DateFormat.DDMMYY: 0>: 9,
         <DateFormat.YYMMDD: 2>: 4}
         the single most prevalent format is dd/mm/yy """
@@ -149,17 +149,17 @@ def test_ddmmyy():
         "2024-11-30",
         "2051-01-08",
     ]
-    assert get_dates(dates) == results
+    assert get_dates(dates) __ results
 
 
-def test_different_enum():
+___ test_different_enum(
     """ Modified enum - now it supports 4 different time formats.
         Order of formats is changed as well"""
-    from enum import Enum
-    # import the module with the tested code which contains the original emum
-    import primitive_date_inferrer as pdi
+    from enum ______ Enum
+    # ______ the module with the tested code which contains the original emum
+    ______ primitive_date_inferrer as pdi
 
-    class DateFormat_ext(Enum):
+    class DateFormat_ext(Enum
         DDMMYYYY = 0
         DDMMYY = 1
         YYMMDD = 2
@@ -167,12 +167,12 @@ def test_different_enum():
         NONPARSABLE = -999
 
         @classmethod
-        def get_d_parse_formats(cls, idx=None):
+        ___ get_d_parse_formats(cls, idx=None
             d_parse_formats = ["%d.%m.%Y", "%d/%m/%y", "%y/%m/%d", "%m/%d/%y"]
-            if idx is None:
-                return d_parse_formats
-            if 0 <= idx <= len(d_parse_formats):
-                return d_parse_formats[idx]
+            __ idx is None:
+                r_ d_parse_formats
+            __ 0 <= idx <= le.(d_parse_formats
+                r_ d_parse_formats[idx]
             raise ValueError
 
     # override the enum in the tested code module
@@ -206,4 +206,4 @@ def test_different_enum():
         "Invalid",
         "1951-01-08",
     ]
-    assert get_dates(dates) == results
+    assert get_dates(dates) __ results

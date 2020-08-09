@@ -3,30 +3,30 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def decodeAtIndex(self, S, K):
+class Solution(object
+    ___ decodeAtIndex(self, S, K
         """
         :type S: str
         :type K: int
         :rtype: str
         """
         n = 0
-        for i, c in enumerate(S):
-            if c.isdigit():
+        for i, c in enumerate(S
+            __ c.isdigit(
                 n = n*int(c)
-            else:
+            ____
                 n += 1
-        for j in range(i, -1, -1):
+        for j in range(i, -1, -1
             c = S[j]
-            if c.isdigit():
+            __ c.isdigit(
                 n //= int(c)
                 K %= n
-            else:
-                if K == n or K == 0:
-                    return c
+            ____
+                __ K __ n or K __ 0:
+                    r_ c
                 n -= 1
     
-    def decodeAtIndex_own_MLE(self, S, K):
+    ___ decodeAtIndex_own_MLE(self, S, K
         """
         :type S: str
         :type K: int
@@ -34,10 +34,10 @@ class Solution(object):
         """
         tmp = ''
         for c in S:
-            if c.isdigit():
+            __ c.isdigit(
                 tmp += tmp*(int(c)-1)
-            else:
+            ____
                 tmp += c
-            if K-1 < len(tmp):
-                return tmp[K-1]
-        return tmp[K-1]
+            __ K-1 < le.(tmp
+                r_ tmp[K-1]
+        r_ tmp[K-1]

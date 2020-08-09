@@ -39,14 +39,14 @@ Explanation: A = [2,1,5,3], B = [2,1,5,3,4]
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def insertIntoMaxTree(self, root: TreeNode, val: int) -> TreeNode:
+    ___ insertIntoMaxTree(self, root: TreeNode, val: int) -> TreeNode:
         """
         Suppose B is a copy of A with the value val appended to it.
         val is ALWAYS on the right
@@ -55,13 +55,13 @@ class Solution:
         Go through the example one by one.
         Need to maintain the parent relationship -> return the sub-root
         """
-        if not root:
-            return TreeNode(val)
+        __ not root:
+            r_ TreeNode(val)
 
-        if val > root.val:
+        __ val > root.val:
             node = TreeNode(val)
             node.left = root
-            return node
+            r_ node
 
         root.right = self.insertIntoMaxTree(root.right, val)
-        return root
+        r_ root

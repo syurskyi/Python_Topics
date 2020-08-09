@@ -1,2 +1,2 @@
-def get_first_value(number_list):
-    return number_list[0]
+___ get_first_value(number_list
+    r_ number_list[0]

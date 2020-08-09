@@ -4,16 +4,16 @@ to n.
 
 For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
 """
-import math
-import sys
+______ ma__
+______ sys
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
+class Solution(object
     F = [0]  # static dp for all test cases
 
-    def numSquares(self, n):
+    ___ numSquares(self, n
         """
         static dp
         F_i = min(F_{i - j^2}+1, \forall j)
@@ -21,17 +21,17 @@ class Solution(object):
         O(n), think it as a tree, cache tree O(m+n) = O(2n); rather than O(n sqrt(n))
         backward
         """
-        while len(Solution.F) <= n:
-            i = len(Solution.F)
+        w___ le.(Solution.F) <= n:
+            i = le.(Solution.F)
             Solution.F.append(sys.maxint)
             j = 1
-            while i - j*j >= 0:
+            w___ i - j*j >= 0:
                 Solution.F[i] = min(Solution.F[i], Solution.F[i-j*j]+1)
                 j += 1
 
-        return Solution.F[n]
+        r_ Solution.F[n]
 
-    def numSquares_bfs(self, n):
+    ___ numSquares_bfs(self, n
         """
         bfs
         the q stores the intermediate result of sum of squares 
@@ -42,39 +42,39 @@ class Solution(object):
         visited = [False for _ in xrange(n+1)]
 
         level = 0
-        while q:
+        w___ q:
             level += 1
-            l = len(q)
-            for i in xrange(l):
-                for j in xrange(1, int(math.sqrt(n))+1):
+            l = le.(q)
+            for i in xrange(l
+                for j in xrange(1, int(ma__.sqrt(n))+1
                     nxt = q[i]+j*j
-                    if nxt <= n and visited[nxt]:
+                    __ nxt <= n and visited[nxt]:
                         continue
-                    elif nxt < n:
+                    ____ nxt < n:
                         visited[nxt] = True
                         q.append(nxt)
-                    elif nxt == n:
-                        return level
-                    else:
+                    ____ nxt __ n:
+                        r_ level
+                    ____
                         break
             q = q[l:]
 
-        return None
+        r_ None
 
-    def numSquares_TLE(self, n):
+    ___ numSquares_TLE(self, n
         """
         DP
         :type n: int
         :rtype: int
         """
         F = [i for i in xrange(n+1)]
-        for i in xrange(1, n+1):
-            for j in xrange(1, int(math.sqrt(i))+1):
-                if i-j*j >= 0:
+        for i in xrange(1, n+1
+            for j in xrange(1, int(ma__.sqrt(i))+1
+                __ i-j*j >= 0:
                     F[i] = min(F[i], F[i-j*j]+1)
 
-        return F[n]
+        r_ F[n]
 
 
-if __name__ == "__main__":
-    assert Solution().numSquares(6) == 3
+__ __name__ __ "__main__":
+    assert Solution().numSquares(6) __ 3

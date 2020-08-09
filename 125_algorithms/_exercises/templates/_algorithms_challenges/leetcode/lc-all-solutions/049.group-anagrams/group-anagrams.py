@@ -1,17 +1,17 @@
-class Solution(object):
-  def groupAnagrams(self, strs):
+class Solution(object
+  ___ groupAnagrams(self, strs
     """
     :type strs: List[str]
     :rtype: List[List[str]]
     """
 
-    def hash(count):
+    ___ hash(count
       p1, p2 = 2903, 29947
       ret = 0
       for c in count:
         ret = ret * p1 + c
         p1 *= p2
-      return ret
+      r_ ret
 
     d = {}
 
@@ -20,8 +20,8 @@ class Solution(object):
       for c in str:
         count[ord(c) - ord('a')] += 1
       key = hash(count)
-      if key not in d:
+      __ key not in d:
         d[key] = [str]
-      else:
+      ____
         d[key].append(str)
-    return [d[k] for k in d]
+    r_ [d[k] for k in d]

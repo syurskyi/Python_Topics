@@ -1,51 +1,51 @@
-import random
+______ random
 
 
 class RandomizedCollection:
-    def __init__(self):
+    ___ __init__(self
         self.A = []
         self.I = {}
 
-    def insert(self, val):
+    ___ insert(self, val
         """
         Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
         :type val: int
         :rtype: bool
         """
         A, I = self.A, self.I
-        if val not in I:
+        __ val not in I:
             I[val] = set()
 
         A.append(val)
-        I[val].add(len(A) - 1)
-        return len(I[val]) == 1
+        I[val].add(le.(A) - 1)
+        r_ le.(I[val]) __ 1
 
-    def remove(self, val):
+    ___ remove(self, val
         """
         Removes a value from the collection. Returns true if the collection contained the specified element.
         :type val: int
         :rtype: bool
         """
         A, I = self.A, self.I
-        if val not in I or not I[val]:
-            return False
+        __ val not in I or not I[val]:
+            r_ False
 
         i = I[val].pop()
         _val = A[-1]
 
         I[_val].add(i)
-        I[_val].discard(len(A) - 1)
+        I[_val].discard(le.(A) - 1)
 
         A[i] = _val
         A.pop()
-        return True
+        r_ True
 
-    def getRandom(self):
+    ___ getRandom(self
         """
         Get a random element from the collection.
         :rtype: int
         """
-        return random.choice(self.A)
+        r_ random.choice(self.A)
 
 
 # Your RandomizedCollection object will be instantiated and called as such:

@@ -3,7 +3,7 @@ class Solution:
 
     # @return: The same instance of this class every time
     @classmethod
-    def getInstance(cls):
-        if not cls.instance:
+    ___ getInstance(cls
+        __ not cls.instance:
             cls.instance = Solution()
-        return cls.instance
+        r_ cls.instance

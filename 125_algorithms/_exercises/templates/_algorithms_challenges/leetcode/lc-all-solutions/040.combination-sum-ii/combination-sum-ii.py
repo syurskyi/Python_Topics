@@ -1,22 +1,22 @@
-class Solution(object):
-  def combinationSum2(self, candidates, target):
+class Solution(object
+  ___ combinationSum2(self, candidates, target
     """
     :type candidates: List[int]
     :type target: int
     :rtype: List[List[int]]
     """
 
-    def dfs(nums, target, start, visited, path, res):
-      if target == 0:
+    ___ dfs(nums, target, start, visited, path, res
+      __ target __ 0:
         res.append(path + [])
-        return
+        r_
 
-      for i in range(start, len(nums)):
-        if i > start and nums[i] == nums[i - 1]:
+      for i in range(start, le.(nums)):
+        __ i > start and nums[i] __ nums[i - 1]:
           continue
-        if target - nums[i] < 0:
-          return 0
-        if i not in visited:
+        __ target - nums[i] < 0:
+          r_ 0
+        __ i not in visited:
           visited.add(i)
           path.append(nums[i])
           dfs(nums, target - nums[i], i + 1, visited, path, res)
@@ -27,4 +27,4 @@ class Solution(object):
     res = []
     visited = set([])
     dfs(candidates, target, 0, visited, [], res)
-    return res
+    r_ res

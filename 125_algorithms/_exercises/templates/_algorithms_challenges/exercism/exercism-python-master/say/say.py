@@ -4,50 +4,50 @@ TEENS = 'ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen 
 
 POWERS = [''] + ' thousand- million- billion'.split('-')
 
-def say(num):
+___ say(num
     """say constructs the english phrase for a number between 0 and one trillion"""
 
-    if not (0 <= num < 1E12):
+    __ not (0 <= num < 1E12
         raise AttributeError("Number must be between 0 and one trillion")
-    if num == 0:
-        return 'zero'
+    __ num __ 0:
+        r_ 'zero'
 
     p = -1
     number = ''
-    while num > 0:
+    w___ num > 0:
         p += 1
         num, power = divmod(num, 1000)
-        if power == 0:
+        __ power __ 0:
             continue
 
         str_pow = say_power(power) + POWERS[p]
 
-        if p == 0 and 0 < power < 100 and num != 0:
+        __ p __ 0 and 0 < power < 100 and num != 0:
             number = 'and ' + str_pow
-        elif number == '':
+        ____ number __ '':
             number = str_pow
         else :
             number = str_pow + ' ' + number
-    return number
+    r_ number
 
-def say_power(num):
+___ say_power(num
     """say_power converts a number between 1 and 999 to the english phrase"""
     hundereds, tens, ones = int(num // 100), int((num % 100) // 10), int(num % 10)
     number = ''
-    if hundereds != 0:
+    __ hundereds != 0:
         number += '{} hundred'.format(NUMBERS[hundereds])
-        if tens == 0 and ones == 0:
-            return number
+        __ tens __ 0 and ones __ 0:
+            r_ number
         number += ' and '
 
-    if tens == 1:
-        return number + TEENS[ones]
-    if tens != 0:
+    __ tens __ 1:
+        r_ number + TEENS[ones]
+    __ tens != 0:
         number += TENS[tens]
-        if ones == 0:
-            return number
+        __ ones __ 0:
+            r_ number
 
-    if number == '':
-        return NUMBERS[ones]
-    return number + '-' + NUMBERS[ones]
+    __ number __ '':
+        r_ NUMBERS[ones]
+    r_ number + '-' + NUMBERS[ones]
 

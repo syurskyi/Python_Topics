@@ -7,28 +7,28 @@
 """
 
 
-class Solution(object):
-  def _minSteps(self, n):
+class Solution(object
+  ___ _minSteps(self, n
     """
     :type n: int
     :rtype: int
     """
-    if n == 1:
-      return 0
-    for i in range(2, int((n + 1) ** 0.5) + 1):
-      if n % i == 0:
-        return i + self.minSteps(n / i)
-    return n
+    __ n __ 1:
+      r_ 0
+    for i in range(2, int((n + 1) ** 0.5) + 1
+      __ n % i __ 0:
+        r_ i + self.minSteps(n / i)
+    r_ n
 
-  def minSteps(self, n):
-    def factor(n):
+  ___ minSteps(self, n
+    ___ factor(n
       d = 2
-      while d * d <= n:
-        while n % d == 0:
+      w___ d * d <= n:
+        w___ n % d __ 0:
           n /= d
           yield d
         d += 1
-      if n > 1:
+      __ n > 1:
         yield n
 
-    return sum(factor(n))
+    r_ sum(factor(n))

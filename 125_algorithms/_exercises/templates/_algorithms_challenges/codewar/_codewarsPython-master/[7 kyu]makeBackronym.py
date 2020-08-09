@@ -1,4 +1,4 @@
 #preloaded variable: "dictionary"
 
-def make_backronym(acronym):
-    return ' '.join([dictionary[c.upper()] for c in acronym])
+___ make_backronym(acronym
+    r_ ' '.join([dictionary[c.upper()] for c in acronym])

@@ -4,26 +4,26 @@ Created on Feb 27, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def shortestDistance(self, words, word1, word2):
+class Solution(object
+    ___ shortestDistance(self, words, word1, word2
         """
         :type words: List[str]
         :type word1: str
         :type word2: str
         :rtype: int
         """
-        minLen = len(words)
-        for i, word in enumerate(words):
-            if word in (word1, word2):
-                target = word1 if word == word2 else word2
+        minLen = le.(words)
+        for i, word in enumerate(words
+            __ word in (word1, word2
+                target = word1 __ word __ word2 else word2
                 j = i+1
-                while j < len(words):
-                    if words[j] == target:
+                w___ j < le.(words
+                    __ words[j] __ target:
                         minLen = min(minLen, j-i)
                     j+=1
-        return minLen
+        r_ minLen
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 ["a","c","b","a"],
@@ -39,5 +39,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -13,7 +13,7 @@ followup5: 起点和终点改成从左上到左下，每一步只能 ↓↘↙�
 """
 
 
-def find_unique_paths(m, n):
+___ find_unique_paths(m, n
     """
     :type m: int
     :type n: int
@@ -29,26 +29,26 @@ def find_unique_paths(m, n):
     >>> bool(gotcha) and all(gotcha)
     True
     """
-    if not m or not n:
-        return 0
+    __ not m or not n:
+        r_ 0
 
     dp = [[0] * n for _ in range(m)]
     dp[0][0] = 1
 
-    for y in range(1, n):
-        for x in range(m):
+    for y in range(1, n
+        for x in range(m
             dp[x][y] = dp[x][y - 1]
 
-            if x > 0:
+            __ x > 0:
                 dp[x][y] += dp[x - 1][y - 1]
 
-            if x + 1 < m:
+            __ x + 1 < m:
                 dp[x][y] += dp[x + 1][y - 1]
 
-    return dp[0][n - 1]
+    r_ dp[0][n - 1]
 
 
-def find_unique_paths1(m, n):
+___ find_unique_paths1(m, n
     """
     :type m: int
     :type n: int
@@ -64,29 +64,29 @@ def find_unique_paths1(m, n):
     >>> bool(gotcha) and all(gotcha)
     True
     """
-    if not m or not n:
-        return 0
+    __ not m or not n:
+        r_ 0
 
     dp = [0] * m
     dp[0] = 1
     pre = cur = 0
 
-    for y in range(1, n):
+    for y in range(1, n
         pre = cur = 0
 
-        for x in range(m):
+        for x in range(m
             pre, cur = cur, dp[x]
 
-            if x > 0:
+            __ x > 0:
                 dp[x] += pre
 
-            if x + 1 < m:
+            __ x + 1 < m:
                 dp[x] += dp[x + 1]
 
-    return dp[0]
+    r_ dp[0]
 
 
-def find_unique_paths2(m, n, points):
+___ find_unique_paths2(m, n, points
     """
     :type m: int
     :type n: int
@@ -110,25 +110,25 @@ def find_unique_paths2(m, n, points):
     >>> bool(gotcha) and all(gotcha)
     True
     """
-    if not m or not n or not points or len(points) < 3:
-        return False
+    __ not m or not n or not points or le.(points) < 3:
+        r_ False
 
     path = [(0, 0), (0, n - 1)]
     path.extend(tuple(p) for p in points)
     path.sort(key=lambda p: (p[1], p[0]))
 
-    for i in range(1, len(path)):
+    for i in range(1, le.(path)):
         x, y = path[i]
         _x, _y = path[i - 1]
         delta = y - _y
 
-        if not (x - delta <= _x <= x + delta):
-            return False
+        __ not (x - delta <= _x <= x + delta
+            r_ False
 
-    return True
+    r_ True
 
 
-def find_unique_paths3(m, n, points):
+___ find_unique_paths3(m, n, points
     """
     :type m: int
     :type n: int
@@ -154,42 +154,42 @@ def find_unique_paths3(m, n, points):
     """
     NOT_FOUND = 0
 
-    if not m or not n or not points:
-        return NOT_FOUND
+    __ not m or not n or not points:
+        r_ NOT_FOUND
 
     points.sort(key=lambda p: (p[1], p[0]))
 
     dp = [[0] * n for _ in range(m)]
     dp[0][0] = 1
-    k = len(points)
+    k = le.(points)
     i = 0
 
-    while points[i][1] == 0:
+    w___ points[i][1] __ 0:
         i += 1
 
-    if i >= k:
-        return NOT_FOUND
+    __ i >= k:
+        r_ NOT_FOUND
 
-    for y in range(1, n):
-        for x in range(m):
+    for y in range(1, n
+        for x in range(m
             dp[x][y] = dp[x][y - 1]
 
-            if x > 0:
+            __ x > 0:
                 dp[x][y] += dp[x - 1][y - 1]
 
-            if x + 1 < m:
+            __ x + 1 < m:
                 dp[x][y] += dp[x + 1][y - 1]
 
-        if i < k and y == points[i][1]:
-            for x in range(m):
-                if x != points[i][0]:
+        __ i < k and y __ points[i][1]:
+            for x in range(m
+                __ x != points[i][0]:
                     dp[x][y] = 0
             i += 1
 
-    return dp[0][n - 1] if i == k else NOT_FOUND
+    r_ dp[0][n - 1] __ i __ k else NOT_FOUND
 
 
-def find_unique_paths4(m, n, h):
+___ find_unique_paths4(m, n, h
     """
     :type m: int
     :type n: int
@@ -208,43 +208,43 @@ def find_unique_paths4(m, n, h):
     >>> bool(gotcha) and all(gotcha)
     True
     """
-    if not m or not n:
-        return 0
+    __ not m or not n:
+        r_ 0
 
     dp = [[0] * n for _ in range(m)]
     dp[0][0] = 1
 
-    for y in range(1, n):
-        for x in range(m):
+    for y in range(1, n
+        for x in range(m
             dp[x][y] = dp[x][y - 1]
 
-            if x > 0:
+            __ x > 0:
                 dp[x][y] += dp[x - 1][y - 1]
 
-            if x + 1 < m:
+            __ x + 1 < m:
                 dp[x][y] += dp[x + 1][y - 1]
 
-    if h < 1:
-        return dp[0][n - 1]
+    __ h < 1:
+        r_ dp[0][n - 1]
 
-    for y in range(n):
-        for x in range(h):
+    for y in range(n
+        for x in range(h
             dp[x][y] = 0
 
-    for y in range(1, n):
-        for x in range(h - 1, -1, -1):
+    for y in range(1, n
+        for x in range(h - 1, -1, -1
             dp[x][y] = dp[x][y - 1]
 
-            if x > 0:
+            __ x > 0:
                 dp[x][y] += dp[x - 1][y - 1]
 
-            if x + 1 < m:
+            __ x + 1 < m:
                 dp[x][y] += dp[x + 1][y - 1]
 
-    return dp[0][n - 1]
+    r_ dp[0][n - 1]
 
 
-def find_unique_paths5(m, n):
+___ find_unique_paths5(m, n
     """
     :type m: int
     :type n: int
@@ -260,20 +260,20 @@ def find_unique_paths5(m, n):
     >>> bool(gotcha) and all(gotcha)
     True
     """
-    if not m or not n:
-        return 0
+    __ not m or not n:
+        r_ 0
 
     dp = [[0] * n for _ in range(m)]
     dp[0][0] = 1
 
-    for x in range(1, m):
-        for y in range(n):
+    for x in range(1, m
+        for y in range(n
             dp[x][y] = dp[x - 1][y]
 
-            if y > 0:
+            __ y > 0:
                 dp[x][y] += dp[x - 1][y - 1]
 
-            if y + 1 < n:
+            __ y + 1 < n:
                 dp[x][y] += dp[x - 1][y + 1]
 
-    return dp[m - 1][0]
+    r_ dp[m - 1][0]

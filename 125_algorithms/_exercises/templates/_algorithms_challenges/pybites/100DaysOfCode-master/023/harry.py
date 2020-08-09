@@ -1,24 +1,24 @@
-from collections import Counter
-from string import punctuation, whitespace
-import sys
+from collections ______ Counter
+from string ______ punctuation, whitespace
+______ sys
 
 
-def most_common_str(s, n=None):
+___ most_common_str(s, n=None
     words = s.lower().translate(str.maketrans('', '', punctuation)).split()
-    return Counter(words).most_common(n)
+    r_ Counter(words).most_common(n)
 
 
-def most_common_re(s, n=None):
-    return Counter(re.findall(rf'[^{punctuation}{whitespace}]+',
+___ most_common_re(s, n=None
+    r_ Counter(re.findall(rf'[^{punctuation}{whitespace}]+',
                               s.lower())).most_common(n)
 
 
-def most_common_iter(s, n=None):
-    return Counter(''.join(c for c in w if c not in punctuation)
+___ most_common_iter(s, n=None
+    r_ Counter(''.join(c for c in w __ c not in punctuation)
                    for w in s.lower().split()).most_common(n)
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     try:
         file = sys.argv[1]
     except IndexError:

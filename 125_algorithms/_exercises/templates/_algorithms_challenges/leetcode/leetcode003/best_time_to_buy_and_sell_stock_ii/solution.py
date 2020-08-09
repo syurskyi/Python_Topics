@@ -9,16 +9,16 @@ same time (ie, you must sell the stock before you buy again).
 """
 
 
-class Solution(object):
-    def maxProfit(self, prices):
+class Solution(object
+    ___ maxProfit(self, prices
         """
         :type prices: List[int]
         :rtype: int
         """
-        if not prices:
-            return 0
+        __ not prices:
+            r_ 0
         max_profit = 0
-        for i in range(1, len(prices)):
-            if prices[i] > prices[i - 1]:
+        for i in range(1, le.(prices)):
+            __ prices[i] > prices[i - 1]:
                 max_profit += prices[i] - prices[i - 1]
-        return max_profit
+        r_ max_profit

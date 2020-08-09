@@ -1,22 +1,22 @@
 # awesome stuff!
 # https://github.com/joke2k/faker
-from itertools import islice
+from itertools ______ islice
 
-from faker import Factory
+from faker ______ Factory
 
 # cool can do Dutch names
 fake = Factory.create('nl_NL')  # Julian: use en_AU
 
-def gen_names():
+___ gen_names(
     '''Compare this to gen_names of 044 :)'''
-    while True:
+    w___ True:
         yield fake.name()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     print('Some random Dutch names: ')
     
-    for name in islice(gen_names(), 10):
+    for name in islice(gen_names(), 10
         print('\t' + name)
 
     print()
@@ -26,6 +26,6 @@ if __name__ == '__main__':
     print()
 
     print('Some fixed set of Dutch names: ')
-    for name in islice(gen_names(), 10):
+    for name in islice(gen_names(), 10
         print('\t' + name)
 

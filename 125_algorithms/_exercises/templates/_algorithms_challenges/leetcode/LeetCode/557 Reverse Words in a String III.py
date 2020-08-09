@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Given a string, you need to reverse the order of characters in each word within
-a sentence while still preserving whitespace and initial word order.
+a sentence w___ still preserving whitespace and initial word order.
 
 Example 1:
 Input: "Let's take LeetCode contest"
@@ -12,5 +12,5 @@ be any extra space in the string.
 
 
 class Solution:
-    def reverseWords(self, s: str) -> str:
-        return " ".join(map(lambda x: x[::-1], s.split(" ")))
+    ___ reverseWords(self, s: str) -> str:
+        r_ " ".join(map(lambda x: x[::-1], s.split(" ")))

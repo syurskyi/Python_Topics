@@ -3,8 +3,8 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def killProcess(self, pid, ppid, kill):
+class Solution(object
+    ___ killProcess(self, pid, ppid, kill
         """
         :type pid: List[int]
         :type ppid: List[int]
@@ -12,23 +12,23 @@ class Solution(object):
         :rtype: List[int]
         """
         hashmap = {}
-        for p, pp in zip(pid, ppid):
+        for p, pp in zip(pid, ppid
             hashset = hashmap.get(pp, set())
             hashset.add(p)
             hashmap[pp] = hashset
-        if kill not in hashmap:
-            return [kill]
+        __ kill not in hashmap:
+            r_ [kill]
         queue = list(hashmap[kill])
         result = set([kill])
-        while queue:
+        w___ queue:
             node = queue.pop(0)
             result.add(node)
-            for node0 in hashmap.get(node, []):
-                if node0 not in result:
+            for node0 in hashmap.get(node, []
+                __ node0 not in result:
                     queue.append(node0)
-        return list(result)
+        r_ list(result)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 3, 10, 5],
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

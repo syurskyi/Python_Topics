@@ -12,25 +12,25 @@ using only constant extra space complexity?
 
 # Alternative solution using a method similar to First Missing Positive
 
-class Solution(object):
-    def missingNumber(self, nums):
+class Solution(object
+    ___ missingNumber(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         i = 0
-        while i < n:
+        w___ i < n:
             j = nums[i]
-            if nums[i] != i and j < n:
+            __ nums[i] != i and j < n:
                 nums[i], nums[j] = nums[j], nums[i]
-            else:
+            ____
                 i += 1
-        for i, e in enumerate(nums):
-            if i != e:
-                return i
-        else:
-            return n
+        for i, e in enumerate(nums
+            __ i != e:
+                r_ i
+        ____
+            r_ n
 
 
 a0 = [0]

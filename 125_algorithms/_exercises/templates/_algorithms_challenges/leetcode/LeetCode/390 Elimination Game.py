@@ -24,10 +24,10 @@ Output:
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def lastRemaining(self, n):
+class Solution(object
+    ___ lastRemaining(self, n
         """
-        Brute force O(n): A = A[::2][::-1]
+        Brute force O(n A = A[::2][::-1]
 
         Simulate the game and find pattern of head/first element: O(lg n)
         :type n: int
@@ -37,14 +37,14 @@ class Solution(object):
         head = 1
         step = 1
         from_left = True
-        while remain > 1:
-            if from_left:
+        w___ remain > 1:
+            __ from_left:
                 head += step
-            elif remain % 2 == 1:
+            ____ remain % 2 __ 1:
                 head += step
 
             step *= 2
             remain /= 2
             from_left = not from_left
 
-        return head
+        r_ head

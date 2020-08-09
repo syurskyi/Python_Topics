@@ -29,21 +29,21 @@ Note:
 1 <= people.length <= 50000
 1 <= people[i] <= limit <= 30000
 """
-from typing import List
-from collections import deque
+from typing ______ List
+from collections ______ deque
 
 
 class Solution:
-    def numRescueBoats(self, people: List[int], limit: int) -> int:
+    ___ numRescueBoats(self, people: List[int], limit: int) -> int:
         """
         sort + gready
         """
         ret = 0
         q = deque(sorted(people))
-        while q:
+        w___ q:
             tail = q.pop()
             ret += 1
-            if q and q[0] + tail <= limit:
+            __ q and q[0] + tail <= limit:
                 q.popleft()
 
-        return ret
+        r_ ret

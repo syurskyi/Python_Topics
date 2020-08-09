@@ -1,9 +1,9 @@
 class Solution:
     # @return a list of strings, [s1, s2]
-    def letterCombinations(self, digits):
+    ___ letterCombinations(self, digits
         d = {
             '2': 'abc',
-            '3': 'def',
+            '3': '___',
             '4': 'ghi',
             '5': 'jkl',
             '6': 'mno',
@@ -11,12 +11,12 @@ class Solution:
             '8': 'tuv',
             '9': 'wxyz',
         }
-        return self.combinations(digits, 0, d)
+        r_ self.combinations(digits, 0, d)
 
-    def combinations(self, digits, i, d):
-        if i == len(digits):
-            return ['']
-        else:
+    ___ combinations(self, digits, i, d
+        __ i __ le.(digits
+            r_ ['']
+        ____
             res = []
             rest_combs = self.combinations(digits, i + 1, d)
             for comb in rest_combs:
@@ -24,4 +24,4 @@ class Solution:
                 letters = d[number]
                 for letter in letters:
                     res.append(letter + comb)
-            return res
+            r_ res

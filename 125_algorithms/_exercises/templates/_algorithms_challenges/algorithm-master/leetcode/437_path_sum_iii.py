@@ -1,7 +1,7 @@
 """
 Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -12,27 +12,27 @@ class Solution:
     """
     find path count
     """
-    def pathSum(self, root, target):
+    ___ pathSum(self, root, target
         """
         :type root: TreeNode
         :type target: int
         :rtype: int
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
 
-        return sum((
+        r_ sum((
             self.count_valid_path(root, target),
             self.pathSum(root.left, target),
             self.pathSum(root.right, target),
         ))
 
-    def count_valid_path(self, node, remaining):
-        if not node:
-            return 0
+    ___ count_valid_path(self, node, remaining
+        __ not node:
+            r_ 0
 
-        return sum((
-            int(node.val == remaining),
+        r_ sum((
+            int(node.val __ remaining),
             self.count_valid_path(node.left, remaining - node.val),
             self.count_valid_path(node.right, remaining - node.val),
         ))
@@ -42,7 +42,7 @@ class Solution:
     """
     print path
     """
-    def pathSum(self, root, target):
+    ___ pathSum(self, root, target
         """
         :type root: TreeNode
         :type target: int
@@ -50,24 +50,24 @@ class Solution:
         """
         ans = []
 
-        if not root:
-            return ans
+        __ not root:
+            r_ ans
 
         self.dfs(root, target, ans, [])
 
-        return ans
+        r_ ans
 
-    def dfs(self, node, target, ans, path):
-        if not node:
-            return
+    ___ dfs(self, node, target, ans, path
+        __ not node:
+            r_
 
         path.append(node.val)
 
         remaining = target
-        for i in range(len(path) - 1, -1, -1):
+        for i in range(le.(path) - 1, -1, -1
             remaining -= path[i]
 
-            if remaining == 0:
+            __ remaining __ 0:
                 ans.append(path[i:])
 
         self.dfs(node.left, target, ans, path)

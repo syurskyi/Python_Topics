@@ -1,7 +1,7 @@
 """
 Definition for a undirected graph node
 class UndirectedGraphNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.label = x
         self.neighbors = []
 """
@@ -11,13 +11,13 @@ class Solution:
     """
     Union Find
     """
-    def connectedSet(self, nodes):
+    ___ connectedSet(self, nodes
         """
         :type nodes: list[UndirectedGraphNode]
         :rtype: list[list[UndirectedGraphNode]]
         """
-        if not nodes:
-            return []
+        __ not nodes:
+            r_ []
 
         uf = {}
 
@@ -31,63 +31,63 @@ class Solution:
             # to correct root again
             root = self.find(uf, node)
 
-            if root not in ans:
+            __ root not in ans:
                 ans[root] = []
 
             ans[root].append(node.label)
 
-        return list(ans.values())
+        r_ list(ans.values())
 
-    def union(self, nodes, a, b):
+    ___ union(self, nodes, a, b
         _a = self.find(nodes, a)
         _b = self.find(nodes, b)
 
-        if _a is not _b:
+        __ _a is not _b:
             nodes[_b] = _a
 
-    def find(self, nodes, a):
-        if a not in nodes:
+    ___ find(self, nodes, a
+        __ a not in nodes:
             nodes[a] = a
-            return a
-        if nodes[a] is a:
-            return a
+            r_ a
+        __ nodes[a] is a:
+            r_ a
 
         nodes[a] = self.find(nodes, nodes[a])
-        return nodes[a]
+        r_ nodes[a]
 
 
 class Solution:
     """
     DFS
     """
-    def connectedSet(self, nodes):
+    ___ connectedSet(self, nodes
         """
         :type nodes: list[UndirectedGraphNode]
         :rtype: list[list[UndirectedGraphNode]]
         """
         ans = []
 
-        if not nodes:
-            return ans
+        __ not nodes:
+            r_ ans
 
         visited = set()
 
         for node in nodes:
-            if node in visited:
+            __ node in visited:
                 continue
 
             path = []
             self.dfs(node, visited, path)
             ans.append(sorted(path))
 
-        return ans
+        r_ ans
 
-    def dfs(self, a, visited, path):
+    ___ dfs(self, a, visited, path
         visited.add(a)
         path.append(a.label)
 
         for b in a.neighbors:
-            if b in visited:
+            __ b in visited:
                 continue
 
             self.dfs(b, visited, path)

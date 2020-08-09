@@ -3,8 +3,8 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def solveEquation(self, equation):
+class Solution(object
+    ___ solveEquation(self, equation
         """
         :type equation: str
         :rtype: str
@@ -16,46 +16,46 @@ class Solution(object):
         valX2, val2 = self.solveHelper(s2)
 #         print('valX1, val1: %s, %s' % (valX1, val1))
 #         print('valX2, val2: %s, %s' % (valX2, val2))
-        if val1 == val2:
-            if valX1 == valX2:
-                return 'Infinite solutions'
-            else:
-                return 'x=0'
-        else:
-            if valX1 == valX2:
-                return 'No solution'
-            else:
+        __ val1 __ val2:
+            __ valX1 __ valX2:
+                r_ 'Infinite solutions'
+            ____
+                r_ 'x=0'
+        ____
+            __ valX1 __ valX2:
+                r_ 'No solution'
+            ____
                 val = (val2-val1)//(valX1-valX2)
-                return 'x=%s' % val
+                r_ 'x=%s' % val
     
-    def solveHelper(self, s):
+    ___ solveHelper(self, s
         valX1, val1 = 0, 0
         i = 0
-        while i < len(s):
-            if s[i].isdigit():
+        w___ i < le.(s
+            __ s[i].isdigit(
                 sig = 1
-                if i>=1 and s[i-1] == '-':
+                __ i>=1 and s[i-1] __ '-':
                     sig = -1
                 num = 0
-                while i < len(s) and s[i].isdigit():
+                w___ i < le.(s) and s[i].isdigit(
                     num = 10*num+int(s[i])
                     i += 1
-                if i < len(s) and s[i] == 'x':
+                __ i < le.(s) and s[i] __ 'x':
                     valX1 += num*sig
                     i += 1
-                else:
+                ____
                     val1 += num*sig
-            elif s[i] == 'x':
-                if i == 0:
+            ____ s[i] __ 'x':
+                __ i __ 0:
                     valX1 += 1
-                elif s[i-1] == '-':
+                ____ s[i-1] __ '-':
                     valX1 -= 1
-                elif s[i-1] == '+':
+                ____ s[i-1] __ '+':
                     valX1 += 1
             i += 1
-        return valX1, val1
+        r_ valX1, val1
     
-    def test(self):
+    ___ test(self
         testCases = [
             'x+5-3+x=6+x-2',
             'x=x',
@@ -69,5 +69,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -35,11 +35,11 @@ all test cases.
 Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in
 seat number p.
 """
-import bisect
+______ bisect
 
 
 class ExamRoom:
-    def __init__(self, N: int):
+    ___ __init__(self, N: int
         """
         Maintain a sorted array of index. BST
         BST -> bisect sort
@@ -48,36 +48,36 @@ class ExamRoom:
         self.N = N
         self.idxes = []  # sorted arry of taken idx
 
-    def seat(self) -> int:
+    ___ seat(self) -> int:
         """
         similar to 849
         """
-        if not self.idxes:
+        __ not self.idxes:
             ret_idx = 0
-        else:
+        ____
             max_dist, ret_idx = 0, 0
             # begin
             dist = self.idxes[0] - 0
-            if dist > max_dist:
+            __ dist > max_dist:
                 max_dist = dist
                 ret_idx = 0
             # middle
-            for j in range(len(self.idxes)-1):
+            for j in range(le.(self.idxes)-1
                 i = (self.idxes[j] + self.idxes[j+1]) // 2
                 dist = min(abs(self.idxes[j] - i), abs(self.idxes[j+1] - i))
-                if dist > max_dist:
+                __ dist > max_dist:
                     max_dist = dist
                     ret_idx = i
             # end
             dist = self.N-1 - self.idxes[-1]
-            if dist > max_dist:
+            __ dist > max_dist:
                 max_dist = dist
                 ret_idx = self.N-1
 
         bisect.insort(self.idxes, ret_idx)
-        return ret_idx
+        r_ ret_idx
 
-    def leave(self, p: int) -> None:
+    ___ leave(self, p: int) -> None:
         self.idxes.remove(p)
 
 

@@ -1,15 +1,15 @@
-def check(lst, el):
-    if lst.count(el) > 0:
-        return True
-    else:
-        return False
+___ check(lst, el
+    __ lst.count(el) > 0:
+        r_ True
+    ____
+        r_ False
 
 
-def test():
+___ test(
     print("test has started")
     a_list = [4.6,4,7]
-    if check(a_list,4) != True:
+    __ check(a_list,4) != True:
         print("error")
-    if check(a_list,2) != False:
+    __ check(a_list,2) != False:
         print("erro2")
 

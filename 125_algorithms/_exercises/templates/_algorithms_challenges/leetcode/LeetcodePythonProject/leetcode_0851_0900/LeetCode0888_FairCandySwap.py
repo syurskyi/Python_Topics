@@ -3,8 +3,8 @@ Created on Oct 29, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def fairCandySwap(self, A, B):
+class Solution(object
+    ___ fairCandySwap(self, A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -17,7 +17,7 @@ class Solution(object):
         setB = set(B)
         ans = [0, 0]
         for a in setA:
-            if evenNum - (sumA - a) in setB:
+            __ evenNum - (sumA - a) in setB:
                 ans[0] = a
                 ans[1] = evenNum - (sumA-a)
-                return ans
+                r_ ans

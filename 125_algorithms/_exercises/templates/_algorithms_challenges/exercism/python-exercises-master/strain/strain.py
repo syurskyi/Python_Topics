@@ -1,6 +1,6 @@
-def keep():
+___ keep(
     pass
 
 
-def discard():
+___ discard(
     pass

@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def rangeBitwiseAnd(self, m, n):
+    ___ rangeBitwiseAnd(self, m, n
         """
         Brute force O(N), which is suitable for all bit operations not just AND.
 
@@ -22,10 +22,10 @@ class Solution:
         :rtype: int
         """
         pos = 0
-        while m != n:
+        w___ m != n:
             pos += 1
             m >>= 1
             n >>= 1
 
-        return n << pos  # or m << pos
+        r_ n << pos  # or m << pos
 

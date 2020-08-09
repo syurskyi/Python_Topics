@@ -4,22 +4,22 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxSubArray(self, nums):
+class Solution(object
+    ___ maxSubArray(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         dp = [0]*n
         dp[0] = nums[0]
         maxVal = dp[0]
-        for i in range(1, n):
+        for i in range(1, n
             dp[i] = max(nums[i], dp[i-1]+nums[i])
             maxVal = max(maxVal, dp[i])
-        return maxVal
+        r_ maxVal
     
-    def maxSubArrayDAC(self, nums):
+    ___ maxSubArrayDAC(self, nums
         """
         :type nums: List[int]
         :rtype: int
@@ -27,7 +27,7 @@ class Solution(object):
         # Divide and Co
         pass
     
-    def test(self):
+    ___ test(self
         testCases = [
             [-2,1,-3,4,-1,2,1,-5,4],
         ]
@@ -37,5 +37,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*15+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

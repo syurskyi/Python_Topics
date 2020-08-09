@@ -4,9 +4,9 @@
 #TODO: Update to allow users to select which data to pull, ie, Char Info, Guild Info, Achieve Info etc.
 #TODO-2: Would be nice to strip out Item IDs/names & have them link to Wowhead.
 
-import requests
-import json
-from pprint import pprint
+______ requests
+______ json
+from pprint ______ pprint
 
 API_KEY = ""
 

@@ -1,5 +1,5 @@
 """
-Given an array nums, write a function to move all 0's to the end of it while
+Given an array nums, write a function to move all 0's to the end of it w___
 maintaining the relative order of the non-zero elements.
 
 For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums
@@ -11,15 +11,15 @@ Minimize the total number of operations.
 """
 
 
-class Solution(object):
-    def moveZeroes(self, nums):
+class Solution(object
+    ___ moveZeroes(self, nums
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         j = 0
-        for i, c in enumerate(nums):
-            if c != 0:
+        for i, c in enumerate(nums
+            __ c != 0:
                 nums[i], nums[j] = nums[j], nums[i]
                 j += 1
 

@@ -1,16 +1,16 @@
-class Solution(object):
-  def twoSum(self, nums, target):
+class Solution(object
+  ___ twoSum(self, nums, target
     """
     :type numbers: List[int]
     :type target: int
     :rtype: List[int]
     """
-    start, end = 0, len(nums) - 1
-    while start < end:
+    start, end = 0, le.(nums) - 1
+    w___ start < end:
       s = nums[start] + nums[end]
-      if s > target:
+      __ s > target:
         end -= 1
-      elif s < target:
+      ____ s < target:
         start += 1
-      else:
-        return (start + 1, end + 1)
+      ____
+        r_ (start + 1, end + 1)

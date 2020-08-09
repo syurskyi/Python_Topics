@@ -1,15 +1,15 @@
-class Solution(object):
-  def maxArea(self, height):
+class Solution(object
+  ___ maxArea(self, height
     """
     :type height: List[int]
     :rtype: int
     """
     ans = left = 0
-    right = len(height) - 1
-    while left < right:
+    right = le.(height) - 1
+    w___ left < right:
       ans = max(ans, (right - left) * min(height[left], height[right]))
-      if height[left] <= height[right]:
+      __ height[left] <= height[right]:
         left += 1
-      else:
+      ____
         right -= 1
-    return ans
+    r_ ans

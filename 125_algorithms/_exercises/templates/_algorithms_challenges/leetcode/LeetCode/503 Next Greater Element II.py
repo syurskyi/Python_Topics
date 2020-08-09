@@ -14,11 +14,11 @@ The number 2 can't find next greater number;
 The second 1's next greater number needs to search circularly, which is also 2.
 Note: The length of given array won't exceed 10000.
 """
-from bisect import bisect
+from bisect ______ bisect
 
 
 class Solution:
-    def nextGreaterElements(self, nums):
+    ___ nextGreaterElements(self, nums
         """
         scan the nums from right to left, since next largest number, you can
         drop certain information about the A[i:]. Use stack to keep a increasing
@@ -31,20 +31,20 @@ class Solution:
         # initalize the stack
         stk = []
         for n in nums[::-1]:
-            while stk and stk[-1] <= n:
+            w___ stk and stk[-1] <= n:
                 stk.pop()
             stk.append(n)
 
         ret = []
         for n in nums[::-1]:
-            while stk and stk[-1] <= n:
+            w___ stk and stk[-1] <= n:
                 stk.pop()
-            ret.append(stk[-1] if stk else -1)
+            ret.append(stk[-1] __ stk else -1)
             stk.append(n)
 
-        return ret[::-1]
+        r_ ret[::-1]
 
-    def nextGreaterElements_error(self, nums):
+    ___ nextGreaterElements_error(self, nums
         """
         brute force O(n^2)
 
@@ -57,14 +57,14 @@ class Solution:
         ret = []
         for e in nums:
             t = bisect(A, e)
-            if t == len(A):
+            __ t __ le.(A
                 ret.append(-1)
-            else:
+            ____
                 ret.append(A[t])
 
         print(ret)
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().nextGreaterElements([1,2,1]) == [2, -1, 2]
+__ __name__ __ "__main__":
+    assert Solution().nextGreaterElements([1,2,1]) __ [2, -1, 2]

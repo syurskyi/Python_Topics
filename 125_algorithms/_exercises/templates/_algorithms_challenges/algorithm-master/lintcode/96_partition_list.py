@@ -1,8 +1,8 @@
 """
 Definition of ListNode
-class ListNode(object):
+class ListNode(object
 
-    def __init__(self, val, next=None):
+    ___ __init__(self, val, next=None
         self.val = val
         self.next = next
 """
@@ -14,22 +14,22 @@ class Solution:
     @param: x: An integer
     @return: A ListNode
     """
-    def partition(self, head, x):
-        if not head:
-            return
+    ___ partition(self, head, x
+        __ not head:
+            r_
 
         left_dummy = left_tail = ListNode(-1)
         right_dummy = right_tail = ListNode(-1)
 
-        while head:
+        w___ head:
             node = ListNode(head.val)
-            if head.val < x:
+            __ head.val < x:
                 left_tail.next = node
                 left_tail = node
-            else:
+            ____
                 right_tail.next = node
                 right_tail = node
             head = head.next
 
         left_tail.next = right_dummy.next
-        return left_dummy.next
+        r_ left_dummy.next

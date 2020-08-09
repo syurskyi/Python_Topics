@@ -8,10 +8,10 @@ not exceed 10000.
 
 
 class Solution:
-    def repeatedSubstringPattern(self, s):
+    ___ repeatedSubstringPattern(self, s
         """
         The start of the substring is always 0, then incr the ending index e
-        until n/2 where n = len(s)
+        until n/2 where n = le.(s)
         Brute force: O(n/2) * O(n)
 
         test substring using KMP is O(|target|)
@@ -28,34 +28,34 @@ class Solution:
         :type s: str
         :rtype: bool
         """
-        return s in (s + s)[1:-1]
+        r_ s in (s + s)[1:-1]
 
-    def repeatedSubstringPattern_error(self, s):
+    ___ repeatedSubstringPattern_error(self, s
         """
         Two pointers algorithm. The start of the substring is always 0
         :type s: str
         :rtype: bool
         """
-        if not s:
-            return False
+        __ not s:
+            r_ False
         p1 = 0
         e = 1  # ending s[0:e] is the substring
         p2 = 1
-        while p2 < len(s):
-            if s[p1] == s[p2]:
+        w___ p2 < le.(s
+            __ s[p1] __ s[p2]:
                 p1 += 1
-                if p1 == e:
+                __ p1 __ e:
                     p1 = 0
-            else:
+            ____
                 p1 = 0
                 e = p2 + 1
 
             p2 += 1
 
-        return p2 == len(s) and p1 == 0 and e != len(s)
+        r_ p2 __ le.(s) and p1 __ 0 and e != le.(s)
 
 
-if __name__ == "__main__":
-    assert Solution().repeatedSubstringPattern("abab") == True
-    assert Solution().repeatedSubstringPattern("abcd") == False
-    assert Solution().repeatedSubstringPattern("abacababacab") == True
+__ __name__ __ "__main__":
+    assert Solution().repeatedSubstringPattern("abab") __ True
+    assert Solution().repeatedSubstringPattern("abcd") __ False
+    assert Solution().repeatedSubstringPattern("abacababacab") __ True

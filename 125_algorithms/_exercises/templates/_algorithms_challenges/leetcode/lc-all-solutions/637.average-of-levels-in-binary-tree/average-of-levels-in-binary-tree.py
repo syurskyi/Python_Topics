@@ -1,29 +1,29 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def averageOfLevels(self, root):
+class Solution(object
+  ___ averageOfLevels(self, root
     """
     :type root: TreeNode
     :rtype: List[float]
     """
     ans = []
     queue = deque([root])
-    while queue:
+    w___ queue:
       s = 0
-      n = len(queue)
-      for _ in range(n):
+      n = le.(queue)
+      for _ in range(n
         top = queue.popleft()
         s += top.val
-        if top.left:
+        __ top.left:
           queue.append(top.left)
-        if top.right:
+        __ top.right:
           queue.append(top.right)
       ans.append(float(s) / n)
-    return ans
+    r_ ans

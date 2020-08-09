@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSolution(object):
+class TestSolution(object
 
-    def test_can_win_nim(self):
+    ___ test_can_win_nim(self
         solution = Solution()
         assert_raises(TypeError, solution.can_win_nim, None)
         assert_equal(solution.can_win_nim(1), True)
@@ -15,10 +15,10 @@ class TestSolution(object):
         print('Success: test_can_win_nim')
 
 
-def main():
+___ main(
     test = TestSolution()
     test.test_can_win_nim()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -3,8 +3,8 @@ Created on Sep 5, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findRestaurant(self, list1, list2):
+class Solution(object
+    ___ findRestaurant(self, list1, list2
         """
         :type list1: List[str]
         :type list2: List[str]
@@ -12,25 +12,25 @@ class Solution(object):
         """
         hashmap1 = {}
         hashmap2 = {}
-        for i, s in enumerate(list1):
-            if s not in hashmap1:
+        for i, s in enumerate(list1
+            __ s not in hashmap1:
                 hashmap1[s] = i
-        for i, s in enumerate(list2):
-            if s not in hashmap2:
+        for i, s in enumerate(list2
+            __ s not in hashmap2:
                 hashmap2[s] = i
         minInd = float('inf')
         res = []
-        for s, i in hashmap1.items():
-            if s in hashmap2:
+        for s, i in hashmap1.items(
+            __ s in hashmap2:
                 ind = i+hashmap2[s]
-                if ind == minInd:
+                __ ind __ minInd:
                     res.append(s)
-                elif ind < minInd:
+                ____ ind < minInd:
                     minInd = ind
                     res = [s]
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["Shogun", "Tapioca Express", "Burger King", "KFC"],
@@ -48,5 +48,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSolution(object):
+class TestSolution(object
 
-    def test_format_license_key(self):
+    ___ test_format_license_key(self
         solution = Solution()
         assert_raises(TypeError, solution.format_license_key, None, None)
         license_key = '---'
@@ -20,10 +20,10 @@ class TestSolution(object):
         assert_equal(solution.format_license_key(license_key, k), expected)
         print('Success: test_format_license_key')
 
-def main():
+___ main(
     test = TestSolution()
     test.test_format_license_key()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

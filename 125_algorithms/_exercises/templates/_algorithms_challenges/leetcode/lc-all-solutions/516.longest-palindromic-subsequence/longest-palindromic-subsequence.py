@@ -1,18 +1,18 @@
-class Solution(object):
-  def longestPalindromeSubseq(self, s):
+class Solution(object
+  ___ longestPalindromeSubseq(self, s
     """
     :type s: str
     :rtype: int
     """
-    n = len(s)
+    n = le.(s)
     dp = [1] * n
-    for j in range(1, len(s)):
+    for j in range(1, le.(s)):
       pre = dp[j]
       for i in reversed(range(0, j)):
         tmp = dp[i]
-        if s[i] == s[j]:
-          dp[i] = 2 + pre if i + 1 <= j - 1 else 2
-        else:
+        __ s[i] __ s[j]:
+          dp[i] = 2 + pre __ i + 1 <= j - 1 else 2
+        ____
           dp[i] = max(dp[i + 1], dp[i])
         pre = tmp
-    return dp[0]
+    r_ dp[0]

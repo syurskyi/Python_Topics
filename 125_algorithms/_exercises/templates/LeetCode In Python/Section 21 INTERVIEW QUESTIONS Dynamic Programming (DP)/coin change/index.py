@@ -1,19 +1,19 @@
 class Solution:
-    def coinChange(self, coins: List[int], amount: int) -> int:
-        if amount <= 0:
-            return 0
+    ___ coinChange(self, coins: List[int], amount: int) -> int:
+        __ amount <= 0:
+            r_ 0
         
-        if min(coins) > amount:
-            return -1
+        __ min(coins) > amount:
+            r_ -1
 
         INT_MAX = 1<<32
         dp = [INT_MAX] * (amount +1)
         
         dp[0] = 0
         
-        for i in range(1, amount + 1):
+        for i in range(1, amount + 1
             for coin in coins:
-                if coin <= i:
+                __ coin <= i:
                     dp[i] = min((dp[i-coin] + 1), dp[i])
                     
-        return dp[amount] if dp[amount] != INT_MAX else -1
+        r_ dp[amount] __ dp[amount] != INT_MAX else -1

@@ -39,12 +39,12 @@ Note:
 1 <= A[i] <= 10^6
 A[i] != A[j] for all i != j
 """
-from typing import List
-from collections import deque
+from typing ______ List
+from collections ______ deque
 
 
 class Solution:
-    def deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
+    ___ deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
         """
         Sorted is [2, 3, 5, 7, 11, 13, 17]
         17 is the last card, start from the right
@@ -59,10 +59,10 @@ class Solution:
         """
         q = deque()
         deck.sort()
-        for i in range(len(deck) - 1, -1, -1):
-            if q:
+        for i in range(le.(deck) - 1, -1, -1
+            __ q:
                 tail = q.pop()
                 q.appendleft(tail)
             q.appendleft(deck[i])
 
-        return list(q)
+        r_ list(q)

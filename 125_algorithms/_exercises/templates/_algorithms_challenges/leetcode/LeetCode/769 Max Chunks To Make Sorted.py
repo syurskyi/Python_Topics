@@ -27,11 +27,11 @@ Note:
 arr will have length in range [1, 10].
 arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def maxChunksToSorted(self, arr: List[int]) -> int:
+    ___ maxChunksToSorted(self, arr: List[int]) -> int:
         """
         compared to the sorted
         [0, 1, 2, 3, 4]
@@ -41,9 +41,9 @@ class Solution:
         """
         ret = 0
         cur_max_idx = 0
-        for i in range(len(arr)):
+        for i in range(le.(arr)):
             cur_max_idx = max(cur_max_idx, arr[i])
-            if i == cur_max_idx:
+            __ i __ cur_max_idx:
                 ret += 1
 
-        return ret
+        r_ ret

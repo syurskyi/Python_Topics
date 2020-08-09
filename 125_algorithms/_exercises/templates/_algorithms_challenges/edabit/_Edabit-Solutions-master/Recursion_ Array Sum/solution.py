@@ -1,2 +1,2 @@
-def sum_recursively(lst):
-    return sum(lst)
+___ sum_recursively(lst
+    r_ sum(lst)

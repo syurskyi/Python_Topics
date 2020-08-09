@@ -1,8 +1,8 @@
 """Does a natrual language calculation"""
-from operator import add, sub, mul, truediv
-from re import finditer, match
+from operator ______ add, sub, mul, truediv
+from re ______ finditer, match
 
-def calculate(string):
+___ calculate(string
     """Parses and preforms natrual language calculation"""
     operators = {"plus": add,
                  "minus": sub,
@@ -15,11 +15,11 @@ def calculate(string):
     regex = start + "(?P<first>" + number + ")" + "(?P<calculation>" +\
             "(" + function + number + ")+)" + r"\?$"
     regex_match = match(regex, string)
-    if not regex_match:
+    __ not regex_match:
         raise ValueError
     val = int(regex_match.group('first'))
     remaining = regex_match.group('calculation')
-    for step in finditer(function + number, remaining):
+    for step in finditer(function + number, remaining
         (func, num) = step.groups()
         val = operators[func](val, int(num))
-    return val
+    r_ val

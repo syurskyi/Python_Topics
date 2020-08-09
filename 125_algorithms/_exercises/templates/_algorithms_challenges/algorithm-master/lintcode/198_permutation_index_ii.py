@@ -12,25 +12,25 @@ class Solution:
     @param: A: An array of integers
     @return: A long integer
     """
-    def permutationIndexII(self, A):
+    ___ permutationIndexII(self, A
         ans = 1
-        if not A:
-            return ans
+        __ not A:
+            r_ ans
 
-        n = len(A)
+        n = le.(A)
         factorial = dup_fact = 1
         dups = {}
 
-        for i in range(n - 1, -1, -1):
+        for i in range(n - 1, -1, -1
             dups[A[i]] = dups.get(A[i], 0) + 1
             dup_fact *= dups[A[i]]
 
             cnt = 0
-            for j in range(i + 1, n):
-                if A[i] > A[j]:
+            for j in range(i + 1, n
+                __ A[i] > A[j]:
                     cnt += 1
 
             ans += cnt * factorial // dup_fact
             factorial *= n - i
 
-        return ans
+        r_ ans

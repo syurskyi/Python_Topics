@@ -3,29 +3,29 @@ Created on Feb 19, 2017
 
 @author: MT
 '''
-class TrieNode(object):
-    def __init__(self, c=None):
+class TrieNode(object
+    ___ __init__(self, c=None
         self.c = c
         self.children = {}
         self.isLeaf = False
 
-def buildTrie(words):
+___ buildTrie(words
     root = TrieNode()
     for word in words:
         p = root
-        for i, c in enumerate(word):
-            if c not in p.children:
+        for i, c in enumerate(word
+            __ c not in p.children:
                 t = TrieNode(c)
                 p.children[c] = t
-            else:
+            ____
                 t = p.children[c]
             p = t
-            if i == len(word)-1:
+            __ i __ le.(word)-1:
                 t.isLeaf = True
-    return root
+    r_ root
 
-class Solution(object):
-    def findWords(self, board, words):
+class Solution(object
+    ___ findWords(self, board, words
         """
         :type board: List[List[str]]
         :type words: List[str]
@@ -33,31 +33,31 @@ class Solution(object):
         """
         result = set()
         root = buildTrie(words)
-        m, n = len(board), len(board[0])
-        for i in range(m):
-            for j in range(n):
+        m, n = le.(board), le.(board[0])
+        for i in range(m
+            for j in range(n
                 self.dfs(board, i, j, root, [], result)
-        return list(result)
+        r_ list(result)
     
-    def dfs(self, board, i, j, p, elem, result):
+    ___ dfs(self, board, i, j, p, elem, result
         c = board[i][j]
-        if c == '#' or c not in p.children: return
+        __ c __ '#' or c not in p.children: r_
         p = p.children[c]
-        if p.isLeaf:
+        __ p.isLeaf:
             elem.append(c)
             result.add(''.join(elem))
             elem.pop()
-        m, n = len(board), len(board[0])
+        m, n = le.(board), le.(board[0])
         
         for x, y in ((i, j+1), (i, j-1), (i+1, j), (i-1, j)):
-            if 0 <= x < m and 0 <= y < n:
+            __ 0 <= x < m and 0 <= y < n:
                 board[i][j] = '#'
                 elem.append(c)
                 self.dfs(board, x, y, p, elem, result)
                 board[i][j] = c
                 elem.pop()
         
-    def test(self):
+    ___ test(self
         testCases = [
 #             (
 #                 [
@@ -90,5 +90,5 @@ class Solution(object):
             print(result)
             print('-='*20 + '-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

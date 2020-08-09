@@ -1,26 +1,26 @@
 CHECK_BIT = 0x80
 
-def encode(numbers):
+___ encode(numbers
     result = []
-    for number in reversed(numbers):
+    for number in reversed(numbers
         result.insert(0, 0x00)
-        while True:
+        w___ True:
             result[0] |= number & (CHECK_BIT - 1)
             number >>= 7
-            if number <= 0:
+            __ number <= 0:
                 break
             result.insert(0, CHECK_BIT)
-    return result
+    r_ result
 
 
-def decode(bytes_):
+___ decode(bytes_
     results = []
     value = 0
     for byte in bytes_:
         value = (value << 7) | byte & ~(CHECK_BIT)
-        if byte & CHECK_BIT <= 0:
+        __ byte & CHECK_BIT <= 0:
             results.append(value)
             value = 0
-    if byte & CHECK_BIT == 0:
-        return results
+    __ byte & CHECK_BIT __ 0:
+        r_ results
     raise ValueError("Not a valid bit stream")

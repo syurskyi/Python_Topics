@@ -1,5 +1,5 @@
-import datetime
-import os
+______ datetime
+______ os
 
 LOG = 'LOG.md'
 DAY_ZERO = datetime.datetime(2017, 3, 29)  # = PyBites 100 days :)
@@ -15,28 +15,28 @@ INIT_FILE = '__init__.py'
 AUTHOR = "__author__ = 'PyBites'\n"
 
 
-def gen_days():
+___ gen_days(
     '''Generate day range 001...100'''
-    for day in range(1, NUM_DAYS + 1):
+    for day in range(1, NUM_DAYS + 1
         yield str(day).zfill(NUM_WIDTH)
 
 
-def get_date(day):
+___ get_date(day
     '''Get date by offsetting nth day from day 0'''
     date = DAY_ZERO + datetime.timedelta(int(day))
-    return date.strftime('%b %d, %Y')
+    r_ date.strftime('%b %d, %Y')
 
 
-def create_log():
+___ create_log(
     '''Create progress log file with markdown table '''
     with open(LOG, 'w') as f:
         f.write(TABLE_HEADER)
-        for d in gen_days():
+        for d in gen_days(
             date = get_date(d)
             f.write(DAY.format(d, date))
 
 
-def create_init(path):
+___ create_init(path
     '''Create init file so each day dir is package,
     and gets committed to git from the start'''
     initfile = os.path.join(path, INIT_FILE)
@@ -44,17 +44,17 @@ def create_init(path):
         f.write(AUTHOR)
 
 
-if __name__ == '__main__':
-    if os.path.isfile(LOG):
+__ __name__ __ '__main__':
+    __ os.path.isfile(LOG
         print('Logfile already created')
-    else:
+    ____
         print('Creating logfile')
         create_log()
 
-    dirs = [d for d in gen_days() if not os.path.isdir(d)]
-    if not dirs:
+    dirs = [d for d in gen_days() __ not os.path.isdir(d)]
+    __ not dirs:
         print('All 100 days directories already created')
-    else:
+    ____
         print('Creating missing day directories')
         for d in dirs:
             os.makedirs(d)

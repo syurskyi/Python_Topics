@@ -1,17 +1,17 @@
-import pytest
-from fibonacci import fib
+______ pytest
+from fibonacci ______ fib
 
 
 # write one or more pytest functions below, they need to start with test_
-def test_fib_zero():
-    assert fib(0) == 0
+___ test_fib_zero(
+    assert fib(0) __ 0
 
 
-def test_fib_neg():
-    with pytest.raises(ValueError):
+___ test_fib_neg(
+    with pytest.raises(ValueError
         fib(-1)
 
 
-def test_fib_pos():
-    assert fib(1) == 1
-    assert fib(10) == 55
+___ test_fib_pos(
+    assert fib(1) __ 1
+    assert fib(10) __ 55

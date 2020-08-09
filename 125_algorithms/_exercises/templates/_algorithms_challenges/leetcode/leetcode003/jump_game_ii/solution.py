@@ -15,31 +15,31 @@ index 0 to 1, then 3 steps to the last index.)
 """
 
 class Solution:
-    def jump(self, nums):
+    ___ jump(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        if n == 1:
-            return 0
+        n = le.(nums)
+        __ n __ 1:
+            r_ 0
         start = 1
         end = nums[0]  # `end` is nums[start - 1]
-        res = 1  # At least one step if len(nums) > 1
+        res = 1  # At least one step if le.(nums) > 1
         reached = False
-        while end < n - 1:
+        w___ end < n - 1:
             res += 1
             max_end = end  # `end` for the next loop
-            for i in range(start, end + 1):
-                if i + nums[i] > max_end:
+            for i in range(start, end + 1
+                __ i + nums[i] > max_end:
                     max_end = i + nums[i]
                     reached = True
-            if not reached:
-                return -1
+            __ not reached:
+                r_ -1
             reached = False
             start = end + 1
             end = max_end
-        return res
+        r_ res
 
 
 s = Solution()

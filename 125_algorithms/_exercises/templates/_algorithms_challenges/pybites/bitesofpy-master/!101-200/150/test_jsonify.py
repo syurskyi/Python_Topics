@@ -1,23 +1,23 @@
-import json
+______ json
 
-import pytest
+______ pytest
 
-from Previous.jsonify import convert_to_json
+from Previous.jsonify ______ convert_to_json
 
 
 @pytest.fixture(scope="module")
-def output():
-    return convert_to_json()
+___ output(
+    r_ convert_to_json()
 
 
-def test_return_type(output):
-    assert type(output) == str
+___ test_return_type(output
+    assert type(output) __ str
 
 
-def test_extracted_data_is_correct(output):
+___ test_extracted_data_is_correct(output
     data = json.loads(output)
-    assert type(data) == list
-    assert len(data) == 10
+    assert type(data) __ list
+    assert le.(data) __ 10
     for row in [{'id': '1', 'first_name': 'Junie', 'last_name': 'Kybert',
                  'email': 'jkybert0@army.mil'},
                 {'id': '2', 'first_name': 'Sid', 'last_name': 'Churching',

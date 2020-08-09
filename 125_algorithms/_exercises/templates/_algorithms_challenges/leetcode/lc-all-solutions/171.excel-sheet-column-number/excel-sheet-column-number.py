@@ -1,5 +1,5 @@
-class Solution(object):
-  def titleToNumber(self, s):
+class Solution(object
+  ___ titleToNumber(self, s
     """
     :type s: str
     :rtype: int
@@ -10,7 +10,7 @@ class Solution(object):
     s = s.upper()
     ret = 0
     b = 0
-    for c in reversed(s):
+    for c in reversed(s
       ret += letters[c] * 26 ** (b)
       b += 1
-    return ret
+    r_ ret

@@ -1,5 +1,5 @@
-class Solution(object):
-  def judgeSquareSum(self, c):
+class Solution(object
+  ___ judgeSquareSum(self, c
     """
     :type c: int
     :rtype: bool
@@ -7,12 +7,12 @@ class Solution(object):
     n = int(c ** 0.5)
     start = 0
     end = n
-    while start <= end:
+    w___ start <= end:
       mid = start ** 2 + end ** 2
-      if mid == c:
-        return True
-      elif mid < c:
+      __ mid __ c:
+        r_ True
+      ____ mid < c:
         start += 1
-      else:
+      ____
         end -= 1
-    return False
+    r_ False

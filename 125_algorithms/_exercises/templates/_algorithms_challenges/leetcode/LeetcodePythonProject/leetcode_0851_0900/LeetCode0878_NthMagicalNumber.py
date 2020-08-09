@@ -3,8 +3,8 @@ Created on Oct 13, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def nthMagicalNumber(self, N, A, B):
+class Solution(object
+    ___ nthMagicalNumber(self, N, A, B
         """
         :type N: int
         :type A: int
@@ -12,18 +12,18 @@ class Solution(object):
         :rtype: int
         """
         n, a, b = N, A, B
-        while b:
+        w___ b:
             a, b = b, a%b
         l, r, lcm = 2, 10**14, A*B // a
-        while l < r:
+        w___ l < r:
             m = (l+r)//2
-            if m // A + m // B - m // lcm < n:
+            __ m // A + m // B - m // lcm < n:
                 l = m+1
-            else:
+            ____
                 r = m
-        return l % (10**9+7)
+        r_ l % (10**9+7)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [5, 2, 4],
         ]
@@ -32,5 +32,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

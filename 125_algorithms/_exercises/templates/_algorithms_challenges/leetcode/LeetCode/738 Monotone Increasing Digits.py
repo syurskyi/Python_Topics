@@ -20,7 +20,7 @@ Note: N is an integer in the range [0, 10^9].
 
 
 class Solution:
-    def monotoneIncreasingDigits(self, N: int) -> int:
+    ___ monotoneIncreasingDigits(self, N: int) -> int:
         """
         332
         322
@@ -29,18 +29,18 @@ class Solution:
         299
         """
         digits = [int(e) for e in str(N)]
-        pointer = len(digits)
-        for i in range(len(digits) - 1, 0, -1):
-            if digits[i - 1] > digits[i]:
+        pointer = le.(digits)
+        for i in range(le.(digits) - 1, 0, -1
+            __ digits[i - 1] > digits[i]:
                 pointer = i
                 digits[i - 1] -= 1
 
-        for i in range(pointer, len(digits)):
+        for i in range(pointer, le.(digits)):
             digits[i] = 9
 
-        return int("".join(map(str, digits)))
+        r_ int("".join(map(str, digits)))
 
 
-if __name__ == "__main__":
-    assert Solution().monotoneIncreasingDigits(10) == 9
-    assert Solution().monotoneIncreasingDigits(332) == 299
+__ __name__ __ "__main__":
+    assert Solution().monotoneIncreasingDigits(10) __ 9
+    assert Solution().monotoneIncreasingDigits(332) __ 299

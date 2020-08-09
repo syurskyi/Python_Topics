@@ -1,12 +1,12 @@
-def programmers(one, two, three):
+___ programmers(one, two, three
     a_list = [one, two, three]
     a_list.sort()
-    return a_list[-1] - a_list[0]
+    r_ a_list[-1] - a_list[0]
 
 
-def test_programmers():
+___ test_programmers(
     print("test has started")
-    if programmers(5, 10, 3) != 7:
+    __ programmers(5, 10, 3) != 7:
         print("error1")
-    if programmers(20, 5, 15) != 15:
+    __ programmers(20, 5, 15) != 15:
         print("error2")

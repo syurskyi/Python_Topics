@@ -33,14 +33,14 @@ implicit stack space incurred due to recursion does not count).
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def findMode(self, root):
+    ___ findMode(self, root
         """
         In-order traversal
         O(1) space thus cannot keep a set of current modes
@@ -53,32 +53,32 @@ class Solution:
         ret = [[], 0]  # [results, length]
         self.find_mode(root, [None, 0], ret, False)
         self.find_mode(root, [None, 0], ret, True)
-        return ret[0]
+        r_ ret[0]
 
-    def find_mode(self, root, prev, ret, collect):
+    ___ find_mode(self, root, prev, ret, collect
         """
         prev: [previous_value, count]. Need to survice the call stack
         """
-        if not root:
-            return
+        __ not root:
+            r_
 
         self.find_mode(root.left, prev, ret, collect)
 
-        if prev[0] == root.val:
+        __ prev[0] __ root.val:
             prev[1] += 1
-        else:
+        ____
             prev[1] = 1
         prev[0] = root.val
 
-        if not collect:
+        __ not collect:
             ret[1] = max(ret[1], prev[1])
-        else:
-            if prev[1] == ret[1]:
+        ____
+            __ prev[1] __ ret[1]:
                 ret[0].append(root.val)
 
         self.find_mode(root.right, prev, ret, collect)
 
-    def findMode_error(self, root):
+    ___ findMode_error(self, root
         """
         counter (extra space) for any tree
         use recursion
@@ -86,27 +86,27 @@ class Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
-        if not root:
-            return []
+        __ not root:
+            r_ []
 
         ret = [0, []]
         self.find_mode_error(root, root.val, ret)
-        return ret[1]
+        r_ ret[1]
 
-    def find_mode_error(self, root, target, ret):
+    ___ find_mode_error(self, root, target, ret
         cur = 0
-        if not root:
-            return cur
+        __ not root:
+            r_ cur
 
-        if root.val == target:
+        __ root.val __ target:
             cur += 1
             cur += self.find_mode_error(root.left, root.val, ret)
             cur += self.find_mode_error(root.right, root.val, ret)
-            if cur > ret[0]:
+            __ cur > ret[0]:
                 ret[0], ret[1] = cur, [target]
-            elif cur == ret[0]:
+            ____ cur __ ret[0]:
                 ret[1].append(target)
-        else:
+        ____
             self.find_mode_error(root, root.val, ret)
 
-        return cur
+        r_ cur

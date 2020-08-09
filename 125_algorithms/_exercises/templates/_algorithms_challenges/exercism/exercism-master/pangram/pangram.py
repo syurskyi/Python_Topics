@@ -1,5 +1,5 @@
 ALPHABET = 'abcdefghijklmnopqrstuvwxyz '
 
 
-def is_pangram(s):
-    return set(list(s.lower())) >= set(ALPHABET)
+___ is_pangram(s
+    r_ set(list(s.lower())) >= set(ALPHABET)

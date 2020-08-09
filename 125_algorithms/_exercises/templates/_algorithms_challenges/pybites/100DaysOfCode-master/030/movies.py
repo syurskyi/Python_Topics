@@ -1,9 +1,9 @@
-import csv
-from contextlib import contextmanager
-import os
-from pprint import pprint as pp
-import sqlite3
-import sys
+______ csv
+from contextlib ______ contextmanager
+______ os
+from pprint ______ pprint as pp
+______ sqlite3
+______ sys
 
 # Useful:
 # A thorough guide to SQLite database operations in Python
@@ -17,7 +17,7 @@ CSV_FILE = 'data.csv'
 
 
 @contextmanager
-def conn_db():
+___ conn_db(
     try:
         conn = sqlite3.connect(DB)
         conn.row_factory = sqlite3.Row  # want dict rows, thanks Row
@@ -28,20 +28,20 @@ def conn_db():
         conn.close()
 
 
-def clean_name(input_var):
+___ clean_name(input_var
     # from rasbt article
-    return ''.join(char for char in input_var if char.isalnum())
+    r_ ''.join(char for char in input_var __ char.isalnum())
 
 
-def read_csv(cf=CSV_FILE):
+___ read_csv(cf=CSV_FILE
     with open(cf, 'r') as csvfile:
-        return list(csv.DictReader(csvfile))
+        r_ list(csv.DictReader(csvfile))
 
 
-def create_db(table, col_names, overwrite=False):
-    if overwrite:
+___ create_db(table, col_names, overwrite=False
+    __ overwrite:
         print('Recreating DB')
-        if os.path.isfile(DB):
+        __ os.path.isfile(DB
             os.remove(DB)
 
     idx = 'id INTEGER PRIMARY KEY AUTOINCREMENT,'
@@ -54,9 +54,9 @@ def create_db(table, col_names, overwrite=False):
             print('Table already exists')
 
 
-def insert_movies(data):
+___ insert_movies(data
     cols = ', '.join(data[0].keys())
-    placeholders = ', '.join(['?'] * len(data[0]))
+    placeholders = ', '.join(['?'] * le.(data[0]))
 
     with conn_db() as c:
         rows = [list(d.values()) for d in data]
@@ -65,21 +65,21 @@ def insert_movies(data):
             cols, placeholders), rows)
 
 
-def get_movies():
+___ get_movies(
     with conn_db() as c:
         c.execute("SELECT * FROM movies;")
-        for row in c.fetchall():
+        for row in c.fetchall(
             yield dict(row)
 
 
-def get_movie_info(idx):
+___ get_movie_info(idx
     idx = clean_name(str(idx))
     with conn_db() as c:
         c.execute("SELECT * FROM movies WHERE id LIKE ?", (idx, ))
-        return dict(c.fetchone())
+        r_ dict(c.fetchone())
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     overwrite = '-r' in sys.argv[1:]
 
     data = read_csv()

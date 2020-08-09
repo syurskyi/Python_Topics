@@ -2,13 +2,13 @@ class Solution:
     # @param {string} s
     # @param {string} t
     # @return {boolean}
-    def isIsomorphic(self, s, t):
-        def isomorphic(s,t):
+    ___ isIsomorphic(self, s, t
+        ___ isomorphic(s,t
             d = {}
-            for k,v in zip(s,t):
+            for k,v in zip(s,t
                 d[k] = v
-            return ''.join([d[c] for c in s]) == t
-        return isomorphic(s,t) and isomorphic(t,s)
+            r_ ''.join([d[c] for c in s]) __ t
+        r_ isomorphic(s,t) and isomorphic(t,s)
 
 test = Solution()
 print(test.isIsomorphic('ab','aa'))

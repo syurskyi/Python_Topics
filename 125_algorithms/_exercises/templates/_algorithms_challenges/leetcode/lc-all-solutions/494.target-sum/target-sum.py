@@ -1,21 +1,21 @@
-class Solution(object):
-  def findTargetSumWays(self, nums, S, visited={}, index=0):
+class Solution(object
+  ___ findTargetSumWays(self, nums, S, visited={}, index=0
     """
     :type nums: List[int]
     :type S: int
     :rtype: int
     """
 
-    def helper(nums, S, visited={}, index=0):
-      if (index, S) in visited:
-        return visited[index, S]
+    ___ helper(nums, S, visited={}, index=0
+      __ (index, S) in visited:
+        r_ visited[index, S]
       ans = 0
-      if nums:
+      __ nums:
         ans += helper(nums[1:], S - nums[0], visited, index + 1)
         ans += helper(nums[1:], S + nums[0], visited, index + 1)
-      elif S == 0:
+      ____ S __ 0:
         ans += 1
       visited[index, S] = ans
-      return ans
+      r_ ans
 
-    return helper(nums, S, {}, 0)
+    r_ helper(nums, S, {}, 0)

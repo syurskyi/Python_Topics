@@ -1,20 +1,20 @@
 """
 Premium Question
 """
-import sys
+______ sys
 
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def closestValue(self, root, target):
+class Solution(object
+    ___ closestValue(self, root, target
         """
         Divide the problem into 2 parts:
         1. find the value just smaller than target
@@ -27,26 +27,26 @@ class Solution(object):
         self.find(root, target, lo, True)
         hi = [sys.float_info.max]
         self.find(root, target, hi, False)
-        if hi[0] - target < target - lo[0]:
-            return int(hi[0])
-        else:
-            return int(lo[0])
+        __ hi[0] - target < target - lo[0]:
+            r_ int(hi[0])
+        ____
+            r_ int(lo[0])
 
-    def find(self, root, target, ret, lower=True):
-        if not root:
-            return
+    ___ find(self, root, target, ret, lower=True
+        __ not root:
+            r_
 
-        if root.val == target:
+        __ root.val __ target:
             ret[0] = root.val
-            return
+            r_
 
-        if root.val < target:
-            if lower: ret[0] = max(ret[0], root.val)
+        __ root.val < target:
+            __ lower: ret[0] = max(ret[0], root.val)
             self.find(root.right, target, ret, lower)
-        else:
-            if not lower: ret[0] = min(ret[0], root.val)
+        ____
+            __ not lower: ret[0] = min(ret[0], root.val)
             self.find(root.left, target, ret, lower)
 
 
-if __name__ == "__main__":
-    assert Solution().closestValue(TreeNode(2147483647), 0.0) == 2147483647
+__ __name__ __ "__main__":
+    assert Solution().closestValue(TreeNode(2147483647), 0.0) __ 2147483647

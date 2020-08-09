@@ -1,5 +1,5 @@
 class Solution:
-    def change(self, amount, coins):
+    ___ change(self, amount, coins
         """
         :type amount: int
         :type coins: List[int]
@@ -17,8 +17,8 @@ class Solution:
         re-count if `[1, 2]` and `[2, 1]`, but they are same
         """
         for c in coins:
-            for a in range(c, amount + 1):
+            for a in range(c, amount + 1
                 # if a < c: continue
                 dp[a] += dp[a - c]
 
-        return dp[amount]
+        r_ dp[amount]

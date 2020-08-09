@@ -25,20 +25,20 @@ Note:
 1 <= A[i].length <= 100
 A[i][j] is a lowercase letter
 """
-import string
+______ string
 
-from typing import List
-from collections import Counter
+from typing ______ List
+from collections ______ Counter
 
 
 class Solution:
-    def commonChars(self, A: List[str]) -> List[str]:
+    ___ commonChars(self, A: List[str]) -> List[str]:
         """
         running counter
         """
         ret = []
-        if not A:
-            return ret
+        __ not A:
+            r_ ret
             
         counter = Counter(A[0])
         for a in A[1:]:
@@ -47,7 +47,7 @@ class Solution:
                 counter[c] = min(counter[c], cur[c])
 
         for c in string.ascii_lowercase:
-            if counter[c] > 0:
+            __ counter[c] > 0:
                 ret.extend([c] * counter[c])
 
-        return ret
+        r_ ret

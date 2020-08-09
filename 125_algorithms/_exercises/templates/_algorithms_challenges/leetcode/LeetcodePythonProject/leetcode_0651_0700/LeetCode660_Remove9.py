@@ -3,19 +3,19 @@ Created on Oct 8, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def newInteger(self, n):
+class Solution(object
+    ___ newInteger(self, n
         """
         :type n: int
         :rtype: int
         """
         res = ''
-        while n:
+        w___ n:
             res = str(n%9) + res
             n //= 9
-        return int(res)
+        r_ int(res)
     
-    def test(self):
+    ___ test(self
         testCases = [
             9,
         ]
@@ -25,5 +25,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

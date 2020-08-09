@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSelectionSort(object):
+class TestSelectionSort(object
 
-    def test_selection_sort(self, func):
+    ___ test_selection_sort(self, func
         print('None input')
         assert_raises(TypeError, func, None)
 
@@ -20,7 +20,7 @@ class TestSelectionSort(object):
         print('Success: test_selection_sort\n')
 
 
-def main():
+___ main(
     test = TestSelectionSort()
     selection_sort = SelectionSort()
     test.test_selection_sort(selection_sort.sort)
@@ -33,5 +33,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

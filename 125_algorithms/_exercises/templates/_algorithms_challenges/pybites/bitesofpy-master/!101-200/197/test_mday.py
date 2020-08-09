@@ -1,12 +1,12 @@
-from datetime import date
+from datetime ______ date
 
-import pytest
+______ pytest
 
-from mday import get_mothers_day_date
+from mday ______ get_mothers_day_date
 
 
-def test_check_type():
-    assert type(get_mothers_day_date(2019)) == date
+___ test_check_type(
+    assert type(get_mothers_day_date(2019)) __ date
 
 
 @pytest.mark.parametrize('arg,expected', [
@@ -22,5 +22,5 @@ def test_check_type():
     (2023, date(2023, 5, 14)),
     (2024, date(2024, 5, 12)),
 ])
-def test_return_various_years(arg, expected):
-    assert get_mothers_day_date(arg) == expected
+___ test_return_various_years(arg, expected
+    assert get_mothers_day_date(arg) __ expected

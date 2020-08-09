@@ -5,8 +5,8 @@ tens = {2: "Twenty", 3: "Thirty", 4: "Forty", 5: "Fifty", 6: "Sixty", 7: "Sevent
 digit = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten"}
 
 
-class Solution(object):
-  def numberToWords(self, num):
+class Solution(object
+  ___ numberToWords(self, num
     """
     :type num: int
     :rtype: str
@@ -14,33 +14,33 @@ class Solution(object):
     global units, tenToTwenty, tens, digit
     ans = []
 
-    def getNum(number):
+    ___ getNum(number
       global units, tenToTwenty, tens, digit
       divider = 1000
       ans = []
       h = number / 100
-      if h != 0:
+      __ h != 0:
         ans.append(digit[h] + " Hundred")
       number = number % 100
-      if number in tenToTwenty:
+      __ number in tenToTwenty:
         ans.append(tenToTwenty[number])
-      else:
+      ____
         t = number / 10
-        if t != 0:
+        __ t != 0:
           ans.append(tens[t])
         number = number % 10
         d = number
-        if d != 0:
+        __ d != 0:
           ans.append(digit[d])
-      return " ".join(ans)
+      r_ " ".join(ans)
 
     divider = 1000000000
-    while num > 0:
+    w___ num > 0:
       res = num / divider
-      if res != 0:
+      __ res != 0:
         ans.append(getNum(res) + units[divider])
       num = num % divider
       divider /= 1000
-    if not ans:
-      return "Zero"
-    return " ".join(ans)
+    __ not ans:
+      r_ "Zero"
+    r_ " ".join(ans)

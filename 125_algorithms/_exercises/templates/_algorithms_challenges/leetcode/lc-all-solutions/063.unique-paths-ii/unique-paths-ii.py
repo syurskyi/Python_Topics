@@ -1,31 +1,31 @@
-class Solution(object):
-  def uniquePathsWithObstacles(self, grid):
+class Solution(object
+  ___ uniquePathsWithObstacles(self, grid
     """
     :type obstacleGrid: List[List[int]]
     :rtype: int
     """
-    if not grid:
-      return 0
-    if grid[0][0] == 1:
-      return 0
-    dp = [[0] * len(grid[0]) for _ in range(0, len(grid))]
-    dp[0][0] = 1 if grid[0][0] == 0 else 0
-    for i in range(1, len(grid)):
-      if grid[i][0] == 0:
+    __ not grid:
+      r_ 0
+    __ grid[0][0] __ 1:
+      r_ 0
+    dp = [[0] * le.(grid[0]) for _ in range(0, le.(grid))]
+    dp[0][0] = 1 __ grid[0][0] __ 0 else 0
+    for i in range(1, le.(grid)):
+      __ grid[i][0] __ 0:
         dp[i][0] = 1
-      else:
+      ____
         break
 
-    for j in range(1, len(grid[0])):
-      if grid[0][j] == 0:
+    for j in range(1, le.(grid[0])):
+      __ grid[0][j] __ 0:
         dp[0][j] = 1
-      else:
+      ____
         break
 
-    for i in range(1, len(grid)):
-      for j in range(1, len(grid[0])):
-        if grid[i][j] == 1:
+    for i in range(1, le.(grid)):
+      for j in range(1, le.(grid[0])):
+        __ grid[i][j] __ 1:
           dp[i][j] = 0
-        else:
+        ____
           dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-    return dp[-1][-1]
+    r_ dp[-1][-1]

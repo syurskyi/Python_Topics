@@ -4,17 +4,17 @@ class Solution:
     @param: target: An integer
     @return: An integer
     """
-    def backPackVI(self, A, target):
-        if not A:
-            return 0
+    ___ backPackVI(self, A, target
+        __ not A:
+            r_ 0
 
-        n = len(A)
+        n = le.(A)
         dp = [0] * (target + 1)
         dp[0] = 1
 
-        for i in range(1, target + 1):
-            for j in range(n):
-                if i >= A[j]:
+        for i in range(1, target + 1
+            for j in range(n
+                __ i >= A[j]:
                     dp[i] += dp[i - A[j]]
 
-        return dp[target]
+        r_ dp[target]

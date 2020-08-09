@@ -22,8 +22,8 @@ Return 167
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def maxCoins(self, A):
+class Solution(object
+    ___ maxCoins(self, A
         """
         Divide & Conquer <- Divide Boundary <- Reverse Thinking
 
@@ -34,23 +34,23 @@ class Solution(object):
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
+        n = le.(A)
 
-        def get(i):
-            if i < 0 or i >= n: return 1
-            return A[i]
+        ___ get(i
+            __ i < 0 or i >= n: r_ 1
+            r_ A[i]
 
         F = [[0 for _ in xrange(n+1)] for _ in xrange(n+1)]
-        for i in xrange(n+1, -1, -1):
-            for j in xrange(i+1, n+1):
+        for i in xrange(n+1, -1, -1
+            for j in xrange(i+1, n+1
                 F[i][j] = max(
                     F[i][k]+get(i-1)*get(k)*get(j)+F[k+1][j]
                     for k in xrange(i, j)
                 )
 
-        return max(map(max, F))
+        r_ max(map(max, F))
 
 
-if __name__ == "__main__":
-    assert Solution().maxCoins([3, 1, 5, 8]) == 167
+__ __name__ __ "__main__":
+    assert Solution().maxCoins([3, 1, 5, 8]) __ 167
 

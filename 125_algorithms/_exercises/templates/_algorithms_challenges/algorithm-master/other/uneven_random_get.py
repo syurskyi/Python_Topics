@@ -2,69 +2,69 @@
 TODO:
 1. do expectations like `chi-square calculator`
 """
-import random
+______ random
 
 
-def uneven_random_get(options, rate):
+___ uneven_random_get(options, rate
     """unevenly fetch the option according to the corresponding rate
     :type options: list[str]
     :type rate: list[num]
     :rtype: str
     """
-    if not options or not rate or len(options) != len(rate):
-        return ''
+    __ not options or not rate or le.(options) != le.(rate
+        r_ ''
 
     num = 0
     rand = random.randint(1, sum(rate))
 
-    for i in range(len(rate)):
+    for i in range(le.(rate)):
         num += rate[i]
 
-        if num >= rand:
-            return options[i]
+        __ num >= rand:
+            r_ options[i]
 
-    return options[0]
+    r_ options[0]
 
 
-def uneven_random_get2(options, rate):
+___ uneven_random_get2(options, rate
     """unevenly fetch the option according to the corresponding rate
     :type options: list[str]
     :type rate: list[num]
     :rtype: str
     """
-    if not options or not rate or len(options) != len(rate):
-        return ''
+    __ not options or not rate or le.(options) != le.(rate
+        r_ ''
 
     k = total = 0
 
-    for i in range(len(rate)):
-        if random.randrange(total + rate[i]) >= total:
+    for i in range(le.(rate)):
+        __ random.randrange(total + rate[i]) >= total:
             k = i
 
         total += rate[i]
 
-    return options[k]
+    r_ options[k]
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     gotcha = []
     options = 'abc'
 
-    for uneven_get in (uneven_random_get, uneven_random_get2):
+    for uneven_get in (uneven_random_get, uneven_random_get2
         freq = dict.fromkeys(options, 0)
-        for _ in range(10000):
+        for _ in range(10000
             c = uneven_get(options, (10, 10, 10))
             freq[c] += 1
         gotcha.append(all(2833 <= freq[c] <= 3833 for c in options))
 
         freq = dict.fromkeys(options, 0)
-        for _ in range(10000):
+        for _ in range(10000
             c = uneven_get(options, (1, 1, 1))
             freq[c] += 1
         gotcha.append(all(2833 <= freq[c] <= 3833 for c in options))
 
         freq = dict.fromkeys(options, 0)
-        for _ in range(10000):
+        for _ in range(10000
             c = uneven_get(options, (8, 1, 1))
             freq[c] += 1
         gotcha.append(all((

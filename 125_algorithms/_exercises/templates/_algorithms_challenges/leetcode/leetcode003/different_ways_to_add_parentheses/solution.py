@@ -23,34 +23,34 @@ Input: "2*3-4*5"
 Output: [-34, -14, -10, -10, 10]
 """
 
-class Solution(object):
-    def diffWaysToCompute(self, input):
+class Solution(object
+    ___ diffWaysToCompute(self, input
         """
         :type input: str
         :rtype: List[int]
         """
         self.operators = set(['+', '-', '*'])
-        return self.diff_ways(input)
+        r_ self.diff_ways(input)
 
-    def calculate(self, a, b, operator):
-        return eval('%d %s %d' % (a, operator, b))
+    ___ calculate(self, a, b, operator
+        r_ eval('%d %s %d' % (a, operator, b))
 
-    def diff_ways(self, inp):
-        if not inp:
-            return []
-        elif inp.isdigit():
-            return [int(inp)]
-        else:
+    ___ diff_ways(self, inp
+        __ not inp:
+            r_ []
+        ____ inp.isdigit(
+            r_ [int(inp)]
+        ____
             res = []
-            for i, c in enumerate(inp):
-                if c in self.operators:
+            for i, c in enumerate(inp
+                __ c in self.operators:
                     left = self.diff_ways(inp[:i])
                     right = self.diff_ways(inp[i + 1:])
                     for l in left:
                         for r in right:
                             s = self.calculate(l, r, c)
                             res.append(s)
-            return res
+            r_ res
 
 
 s1 = '2*3-4*5'

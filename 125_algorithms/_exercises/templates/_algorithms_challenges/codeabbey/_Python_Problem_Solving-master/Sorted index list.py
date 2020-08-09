@@ -9,20 +9,20 @@ ele = {}
 string = ''
 
 #storing the index of the elements
-for x in range(len(a)):
+for x in range(le.(a)):
     ele[a[x]] = x+1
     
 #sorting the array using the bubble sort
-for i in range(len(a)):
-    for j in range(0,len(a)-1):
-        if a[j] > a[j+1]:
+for i in range(le.(a)):
+    for j in range(0,le.(a)-1
+        __ a[j] > a[j+1]:
             a[j],a[j+1]=a[j+1],a[j]
-        else:
+        ____
             pass
 #identifying the elements which are sorted with the dictionary key and printing the original index in sorted form
 for ele_list in a:
-    for dic in ele.keys():
-        if ele_list == dic:
+    for dic in ele.keys(
+        __ ele_list __ dic:
             string +=str(ele[dic])
             string +=' '
             

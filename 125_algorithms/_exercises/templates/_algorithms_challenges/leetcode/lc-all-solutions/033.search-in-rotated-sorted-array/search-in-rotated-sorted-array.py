@@ -1,26 +1,26 @@
-class Solution(object):
-  def search(self, nums, target):
+class Solution(object
+  ___ search(self, nums, target
     """
     :type nums: List[int]
     :type target: int
     :rtype: int
     """
-    if not nums:
-      return -1
+    __ not nums:
+      r_ -1
     left = 0
-    right = len(nums) - 1
-    while left <= right:
+    right = le.(nums) - 1
+    w___ left <= right:
       mid = (right + left) / 2
-      if nums[mid] == target:
-        return mid
-      if nums[mid] >= nums[left]:
-        if nums[left] <= target <= nums[mid]:
+      __ nums[mid] __ target:
+        r_ mid
+      __ nums[mid] >= nums[left]:
+        __ nums[left] <= target <= nums[mid]:
           right = mid - 1
-        else:
+        ____
           left = mid + 1
-      else:
-        if nums[mid] <= target <= nums[right]:
+      ____
+        __ nums[mid] <= target <= nums[right]:
           left = mid + 1
-        else:
+        ____
           right = mid - 1
-    return -1
+    r_ -1

@@ -3,51 +3,51 @@ Created on Jun 3, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def searchMatrix(self, matrix, target):
+class Solution(object
+    ___ searchMatrix(self, matrix, target
         """
         :type matrix: List[List[int]]
         :type target: int
         :rtype: bool
         """
-        if not matrix or not matrix[0]:
-            return False
-        m, n = len(matrix), len(matrix[0])
+        __ not matrix or not matrix[0]:
+            r_ False
+        m, n = le.(matrix), le.(matrix[0])
         l, r = 0, m*n-1
-        while l < r:
+        w___ l < r:
             mid = (l+r-1)//2
-            if matrix[mid//n][mid%n] < target:
+            __ matrix[mid//n][mid%n] < target:
                 l = mid+1
-            else:
+            ____
                 r = mid
-        return matrix[r//n][r%n] == target
+        r_ matrix[r//n][r%n] __ target
     
-    def searchMatrix_orig(self, matrix, target):
+    ___ searchMatrix_orig(self, matrix, target
         """
         :type matrix: List[List[int]]
         :type target: int
         :rtype: bool
         """
-        if not matrix or not matrix[0]:
-            return False
-        m, n = len(matrix), len(matrix[0])
+        __ not matrix or not matrix[0]:
+            r_ False
+        m, n = le.(matrix), le.(matrix[0])
         lo, hi = 0, m
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo+hi)//2
-            if target == matrix[mid][0]:
-                return True
-            elif target > matrix[mid][0]:
+            __ target __ matrix[mid][0]:
+                r_ True
+            ____ target > matrix[mid][0]:
                 lo = mid+1
-            else:
+            ____
                 hi = mid
-        row = lo-1 if lo > 0 else lo
+        row = lo-1 __ lo > 0 else lo
         lo, hi = 0, n
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo+hi)//2
-            if target == matrix[row][mid]:
-                return True
-            elif target > matrix[row][mid]:
+            __ target __ matrix[row][mid]:
+                r_ True
+            ____ target > matrix[row][mid]:
                 lo = mid+1
-            else:
+            ____
                 hi = mid
-        return False
+        r_ False

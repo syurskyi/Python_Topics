@@ -3,35 +3,35 @@ Created on Aug 27, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def nextGreaterElement(self, n):
+class Solution(object
+    ___ nextGreaterElement(self, n
         """
         :type n: int
         :rtype: int
         """
         s = str(n)
         arr = list(s)
-        i = len(s)-1
-        while i > 0 and arr[i-1] >= arr[i]:
+        i = le.(s)-1
+        w___ i > 0 and arr[i-1] >= arr[i]:
             i -= 1
-        if i == 0:
-            return -1
-        j = len(s)-1
+        __ i __ 0:
+            r_ -1
+        j = le.(s)-1
         ind = i
-        while i < j:
+        w___ i < j:
             arr[i], arr[j] = arr[j], arr[i]
             i += 1
             j -= 1
         j = ind
-        while j < len(s) and arr[j] <= arr[ind-1]:
+        w___ j < le.(s) and arr[j] <= arr[ind-1]:
             j += 1
         arr[ind-1], arr[j] = arr[j], arr[ind-1]
         res = int(''.join(arr))
-        if res >= 1 << 32-1:
-            return -1
-        return res
+        __ res >= 1 << 32-1:
+            r_ -1
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             21,
             123,
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

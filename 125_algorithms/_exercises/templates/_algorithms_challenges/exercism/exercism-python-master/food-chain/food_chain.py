@@ -1,5 +1,5 @@
-def recite(start_verse, end_verse):
-    return [verse(v) for v in range(start_verse-1, end_verse)]
+___ recite(start_verse, end_verse
+    r_ [verse(v) for v in range(start_verse-1, end_verse)]
 
 
 animals = (
@@ -17,15 +17,15 @@ animals = (
 end = "I don't know why she swallowed the fly. Perhaps she'll die."
 
 
-def verse(v):
+___ verse(v
     words = ["I know an old lady who swallowed a {}.".format(animals[v][0]), 
             animals[v][1]]
     
-    if v == 7:
-        return ''.join(words)
+    __ v __ 7:
+        r_ ''.join(words)
 
     for i in reversed(range(0, v)):
         words.append("She swallowed the {} to catch the {}{}.".format(
             animals[i+1][0], animals[i][0], animals[i][2]))
 
-    return ''.join(words) + end
+    r_ ''.join(words) + end

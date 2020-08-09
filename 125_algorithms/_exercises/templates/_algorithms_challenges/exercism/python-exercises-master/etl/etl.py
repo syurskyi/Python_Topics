@@ -1,2 +1,2 @@
-def transform():
+___ transform(
     pass

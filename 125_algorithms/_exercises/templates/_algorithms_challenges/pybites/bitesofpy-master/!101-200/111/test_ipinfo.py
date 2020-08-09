@@ -1,13 +1,13 @@
-import json
-from unittest.mock import patch, Mock
+______ json
+from unittest.mock ______ patch, Mock
 
-import requests
+______ requests
 
-from Previous.ipinfo import get_ip_country
+from Previous.ipinfo ______ get_ip_country
 
 
 @patch.object(requests, 'get')
-def test_ipinfo_mexican_ip(mockget):
+___ test_ipinfo_mexican_ip(mockget
     # hardcoding a requests response
     content = (b'{\n  "ip": "187.190.38.36",\n  "hostname": "domain.net",\n'
                b'  "city": "Mexico City",\n  "region": "Mexico City",\n  '
@@ -17,11 +17,11 @@ def test_ipinfo_mexican_ip(mockget):
                                 text=content.decode("utf-8"),
                                 json=lambda: json.loads(content),
                                 status_code=200)
-    assert get_ip_country('187.190.38.36') == 'MX'
+    assert get_ip_country('187.190.38.36') __ 'MX'
 
 
 @patch.object(requests, 'get')
-def test_ipinfo_japan_ip(mockget):
+___ test_ipinfo_japan_ip(mockget
     # and another IP in Japan
     content = (b'{\n  "ip": "185.161.200.10",\n  "city": "Tokyo",\n  '
                b'"region": "Tokyo",\n ' b'"country": "JP",\n  "loc": '
@@ -31,4 +31,4 @@ def test_ipinfo_japan_ip(mockget):
                                 text=content.decode("utf-8"),
                                 json=lambda: json.loads(content),
                                 status_code=200)
-    assert get_ip_country('185.161.200.10') == 'JP'
+    assert get_ip_country('185.161.200.10') __ 'JP'

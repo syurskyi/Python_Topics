@@ -24,8 +24,8 @@ return [9, 8, 9]
 __author__ = 'Daniel'
 
 
-class SolutionTLE(object):
-    def maxNumber(self, nums1, nums2, k):
+class SolutionTLE(object
+    ___ maxNumber(self, nums1, nums2, k
         """
         http://algobox.org/2015/12/24/create-maximum-number/
         O(kN(N+M))
@@ -35,52 +35,52 @@ class SolutionTLE(object):
         :rtype: List[int]
         """
         maxa = []
-        n1, n2 = len(nums1), len(nums2)
-        for l1 in xrange(min(n1, k)+1):
+        n1, n2 = le.(nums1), le.(nums2)
+        for l1 in xrange(min(n1, k)+1
             l2 = k - l1
             assert l2 >= 0
             A1, A2 = self.maxNumberSingle(nums1, l1), self.maxNumberSingle(nums2, l2)
             cur = self.maxNumberDual(A1, A2)
-            if not maxa or self.eval(maxa) < self.eval(cur):
+            __ not maxa or self.eval(maxa) < self.eval(cur
                 maxa = cur
 
-        return maxa
+        r_ maxa
 
-    def eval(self, lst):
-        return int("".join(map(str, lst)))
+    ___ eval(self, lst
+        r_ int("".join(map(str, lst)))
 
-    def maxNumberSingle(self, A, k):
+    ___ maxNumberSingle(self, A, k
         """
         maxNumber of k elements from a single list A
         """
         stk = []
-        n = len(A)
-        for i in xrange(n):
-            while stk and len(stk)-1+(n-1-i+1) >= k and stk[-1] < A[i]: stk.pop()
-            if len(stk) < k:
+        n = le.(A)
+        for i in xrange(n
+            w___ stk and le.(stk)-1+(n-1-i+1) >= k and stk[-1] < A[i]: stk.pop()
+            __ le.(stk) < k:
                 stk.append(A[i])
 
-        return stk
+        r_ stk
 
-    def maxNumberDual(self, A1, A2):
+    ___ maxNumberDual(self, A1, A2
         """
         maxNumber of all elements from dual lists A1 and A2.
         """
         ret = []
         p1, p2 = 0, 0
-        while p1 < len(A1) and p2 < len(A2):
+        w___ p1 < le.(A1) and p2 < le.(A2
             ahead1, ahead2 = p1, p2
-            while ahead1 < len(A1) and ahead2 < len(A2) and A1[ahead1] == A2[ahead2]:
+            w___ ahead1 < le.(A1) and ahead2 < le.(A2) and A1[ahead1] __ A2[ahead2]:
                 ahead1, ahead2 = ahead1+1, ahead2+1
 
-            if ahead2 >= len(A2) or (ahead1 < len(A1) and A1[ahead1] > A2[ahead2]):
+            __ ahead2 >= le.(A2) or (ahead1 < le.(A1) and A1[ahead1] > A2[ahead2]
                 ret.append(A1[p1])
                 p1 += 1
-            else:
+            ____
                 ret.append(A2[p2])
                 p2 += 1
 
         # dangling
         ret.extend(A1[p1:])
         ret.extend(A2[p2:])
-        return ret
+        r_ ret

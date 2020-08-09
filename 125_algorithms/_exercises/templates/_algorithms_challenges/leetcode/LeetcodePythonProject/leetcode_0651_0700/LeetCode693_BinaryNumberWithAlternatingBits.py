@@ -3,23 +3,23 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def hasAlternatingBits(self, n):
+class Solution(object
+    ___ hasAlternatingBits(self, n
         """
         :type n: int
         :rtype: bool
         """
         prev = n&1
         n >>= 1
-        while n > 0:
+        w___ n > 0:
             digit = n & 1
-            if not digit ^ prev:
-                return False
+            __ not digit ^ prev:
+                r_ False
             prev = digit
             n >>= 1
-        return True
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             4,
             5,
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

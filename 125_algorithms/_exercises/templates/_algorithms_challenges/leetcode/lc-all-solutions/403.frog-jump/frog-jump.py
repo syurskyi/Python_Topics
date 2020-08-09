@@ -1,27 +1,27 @@
-class Solution(object):
-  def canCross(self, stones):
+class Solution(object
+  ___ canCross(self, stones
     """
     :type stones: List[int]
     :rtype: bool
     """
     dp = {}
 
-    def dfs(stones, pos, k):
+    ___ dfs(stones, pos, k
       key = pos + k * 10000;
-      if dp.has_key(key):
-        return dp[key]
-      else:
-        for i in range(pos + 1, len(stones)):
+      __ dp.has_key(key
+        r_ dp[key]
+      ____
+        for i in range(pos + 1, le.(stones)):
           step = stones[i] - stones[pos]
-          if step < k - 1:
+          __ step < k - 1:
             continue;
-          if step > k + 1:
+          __ step > k + 1:
             dp[key] = False
-            return False
-          if dfs(stones, i, step):
+            r_ False
+          __ dfs(stones, i, step
             dp[key] = True
-            return True
-      dp[key] = (pos == len(stones) - 1)
-      return (pos == len(stones) - 1)
+            r_ True
+      dp[key] = (pos __ le.(stones) - 1)
+      r_ (pos __ le.(stones) - 1)
 
-    return dfs(stones, 0, 0)
+    r_ dfs(stones, 0, 0)

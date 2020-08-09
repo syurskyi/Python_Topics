@@ -19,7 +19,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def reverseWords(self, s):
+    ___ reverseWords(self, s
         """
         Notice: ask how to deal with punctuations
         :param s: a string
@@ -27,4 +27,4 @@ class Solution:
         """
         words_lst = s.split()  # not s.split(" ")
         words_lst = reversed(words_lst)
-        return ' '.join(words_lst)
+        r_ ' '.join(words_lst)

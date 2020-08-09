@@ -2,8 +2,8 @@
 # Score: 20
 
 
-def repeated_string(s, n):
-    return n // len(s) * s.count('a') + s[0: n % len(s)].count('a')
+___ repeated_string(s, n
+    r_ n // le.(s) * s.count('a') + s[0: n % le.(s)].count('a')
 
 
 s = input()

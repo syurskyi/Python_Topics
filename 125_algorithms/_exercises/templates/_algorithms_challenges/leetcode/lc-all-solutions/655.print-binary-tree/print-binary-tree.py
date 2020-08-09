@@ -1,24 +1,24 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def printTree(self, root):
+class Solution(object
+  ___ printTree(self, root
     """
     :type root: TreeNode
     :rtype: List[List[str]]
     """
 
-    def height(root):
-      if not root:
-        return 0
-      return 1 + max(height(root.left), height(root.right))
+    ___ height(root
+      __ not root:
+        r_ 0
+      r_ 1 + max(height(root.left), height(root.right))
 
-    def fill(root, res, left, right, h):
-      if root:
+    ___ fill(root, res, left, right, h
+      __ root:
         val = str(root.val)
         mid = left + (right - left) / 2
         res[h][mid] = val
@@ -27,5 +27,5 @@ class Solution(object):
 
     h = height(root)
     res = [[""] * (2 ** h - 1) for _ in range(h)]
-    fill(root, res, 0, len(res[0]) - 1, 0)
-    return res
+    fill(root, res, 0, le.(res[0]) - 1, 0)
+    r_ res

@@ -2,9 +2,9 @@
 #  Score: 20
 
 
-def array_left_rotation(a, k):
+___ array_left_rotation(a, k
     result = a[k:] + a[:k]
-    return result
+    r_ result
 
 
 n, k = map(int, input().strip().split(' '))

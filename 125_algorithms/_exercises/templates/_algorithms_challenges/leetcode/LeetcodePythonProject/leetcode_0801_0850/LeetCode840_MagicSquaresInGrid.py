@@ -3,38 +3,38 @@ Created on Dec 20, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def numMagicSquaresInside(self, grid):
+class Solution(object
+    ___ numMagicSquaresInside(self, grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         res = 0
-        for i in range(m-2):
-            for j in range(n-2):
-                if self.isValid(grid, i, j):
+        for i in range(m-2
+            for j in range(n-2
+                __ self.isValid(grid, i, j
                     res += 1
-        return res
+        r_ res
     
-    def isValid(self, grid, i, j):
+    ___ isValid(self, grid, i, j
         hashset = set([grid[i][j], grid[i][j+1], grid[i][j+2],\
                        grid[i+1][j], grid[i+1][j+1], grid[i+1][j+2],\
                        grid[i+2][j], grid[i+2][j+1], grid[i+2][j+2]])
-        if hashset != set(range(1, 10)):
-            return False
+        __ hashset != set(range(1, 10)):
+            r_ False
         val = grid[i][j] + grid[i+1][j] + grid[i+2][j]
-        if val != grid[i][j] + grid[i][j+1] + grid[i][j+2] or\
+        __ val != grid[i][j] + grid[i][j+1] + grid[i][j+2] or\
             val != grid[i+1][j] + grid[i+1][j+1] + grid[i+1][j+2] or\
             val != grid[i+2][j] + grid[i+2][j+1] + grid[i+2][j+2] or\
             val != grid[i][j+1] + grid[i+1][j+1] + grid[i+2][j+1] or\
             val != grid[i][j+2] + grid[i+1][j+2] + grid[i+2][j+2] or\
             val != grid[i][j] + grid[i+1][j+1] + grid[i+2][j+2] or\
             val != grid[i+2][j] + grid[i+1][j+1] + grid[i][j+2]:
-            return False
-        return True
+            r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[4,3,8,4],[9,5,1,9],[2,7,6,2]],
         ]
@@ -43,5 +43,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

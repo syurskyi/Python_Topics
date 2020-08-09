@@ -1,42 +1,42 @@
-from collections import Sequence
-from types import GeneratorType
-import unittest
+from collections ______ Sequence
+from types ______ GeneratorType
+______ unittest
 
-from school import School
+from school ______ School
 
 
-class SchoolTest(unittest.TestCase):
-    def setUp(self):
+class SchoolTest(unittest.TestCase
+    ___ setUp(self
         self.school = School("Haleakala Hippy School")
 
-    def test_an_empty_school(self):
+    ___ test_an_empty_school(self
         self.assertEqual({}, self.school.db)
 
-    def test_add_student(self):
+    ___ test_add_student(self
         self.school.add("Aimee", 2)
         self.assertEqual({2: {"Aimee"}}, self.school.db)
 
-    def test_add_more_students_in_same_class(self):
+    ___ test_add_more_students_in_same_class(self
         self.school.add("James", 2)
         self.school.add("Blair", 2)
         self.school.add("Paul", 2)
         self.assertEqual({2: {"James", "Blair", "Paul"}}, self.school.db)
 
-    def test_add_students_to_different_grades(self):
+    ___ test_add_students_to_different_grades(self
         self.school.add("Chelsea", 3)
         self.school.add("Logan", 7)
         self.assertEqual({3: {"Chelsea"}, 7: {"Logan"}}, self.school.db)
 
-    def test_get_students_in_a_grade(self):
+    ___ test_get_students_in_a_grade(self
         self.school.add("Franklin", 5)
         self.school.add("Bradley", 5)
         self.school.add("Jeff", 1)
         self.assertEqual({"Franklin", "Bradley"}, self.school.grade(5))
 
-    def test_get_students_in_a_non_existant_grade(self):
+    ___ test_get_students_in_a_non_existant_grade(self
         self.assertEqual(set(), self.school.grade(1))
 
-    def test_sort_school(self):
+    ___ test_sort_school(self
         students = [
             (3, ("Kyle",)),
             (4, ("Christopher", "Jennifer",)),
@@ -54,11 +54,11 @@ class SchoolTest(unittest.TestCase):
                         isinstance(result, GeneratorType) or
                         callable(getattr(result, '__reversed__', False)))
 
-        result_list = list(result.items() if hasattr(result, "items")
+        result_list = list(result.items() __ hasattr(result, "items")
                            else result)
 
         self.assertEqual(result_list, students)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

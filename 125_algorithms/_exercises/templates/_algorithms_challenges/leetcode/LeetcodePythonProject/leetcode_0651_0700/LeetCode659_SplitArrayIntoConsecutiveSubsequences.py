@@ -3,8 +3,8 @@ Created on Oct 7, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def isPossible(self, nums):
+class Solution(object
+    ___ isPossible(self, nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -13,21 +13,21 @@ class Solution(object):
         for num in nums:
             freqMap[num] = freqMap.get(num, 0)+1
         for num in nums:
-            if freqMap[num] == 0:
+            __ freqMap[num] __ 0:
                 continue
-            elif appendFreqMap.get(num, 0) > 0:
+            ____ appendFreqMap.get(num, 0) > 0:
                 appendFreqMap[num] -= 1
                 appendFreqMap[num+1] = appendFreqMap.get(num+1, 0)+1
-            elif freqMap.get(num+1, 0)>0 and freqMap.get(num+2, 0)>0:
+            ____ freqMap.get(num+1, 0)>0 and freqMap.get(num+2, 0)>0:
                 freqMap[num+1] -= 1
                 freqMap[num+2] -= 1
                 appendFreqMap[num+3] = appendFreqMap.get(num+3, 0)+1
-            else:
-                return False
+            ____
+                r_ False
             freqMap[num] -= 1
-        return True
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 3, 3, 4, 5],
             [1, 2, 2, 3, 3, 3, 4, 4, 5],
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

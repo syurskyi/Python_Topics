@@ -3,9 +3,9 @@ class Solution:
     @param: P: Given an integer array
     @return: Maximum profit
     """
-    def maxProfit(self, P):
-        if not P:
-            return 0
+    ___ maxProfit(self, P
+        __ not P:
+            r_ 0
 
         K = 2
         STAGE = 2 * K + 1
@@ -24,11 +24,11 @@ class Solution:
         dp = [[0] * STAGE for _ in range(2)]
 
         i = j = prev = curr = profit = 0
-        for i in range(1, len(P)):
+        for i in range(1, le.(P)):
             prev = curr
             curr = 1 - curr
             profit = P[i] - P[i - 1]
-            for j in range(1, STAGE, 2):
+            for j in range(1, STAGE, 2
                 """
                 in stage 1 and 3, holding a stock
                 profit comes from:
@@ -39,7 +39,7 @@ class Solution:
                 choose the maximum
                 """
                 dp[curr][j] = max(dp[prev][j] + profit, dp[prev][j - 1])
-            for j in range(2, STAGE, 2):
+            for j in range(2, STAGE, 2
                 """
                 in stage 2 and 4, holding no any stock
                 profit comes from:
@@ -51,4 +51,4 @@ class Solution:
                 """
                 dp[curr][j] = max(dp[prev][j], dp[prev][j - 1] + profit)
 
-        return max(dp[curr])
+        r_ max(dp[curr])

@@ -3,8 +3,8 @@ Created on Nov 15, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def compress(self, chars):
+class Solution(object
+    ___ compress(self, chars
         """
         :type chars: List[str]
         :rtype: int
@@ -12,27 +12,27 @@ class Solution(object):
         res = 0
         i = 0
         j = 0
-        n = len(chars)
-        while i < n:
-            if i+1 < n and chars[i+1] == chars[i]:
+        n = le.(chars)
+        w___ i < n:
+            __ i+1 < n and chars[i+1] __ chars[i]:
                 chars[j] = chars[i]
                 j += 1
                 prev = i
-                while i+1 < n and chars[i+1] == chars[i]:
+                w___ i+1 < n and chars[i+1] __ chars[i]:
                     i += 1
                 numStr = str(i-prev+1)
                 for c0 in numStr:
                     chars[j] = c0
                     j += 1
-                res += 1+len(numStr)
-            else:
+                res += 1+le.(numStr)
+            ____
                 chars[j] = chars[i]
                 j += 1
                 res += 1
             i += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             'aabbccc',
             'a',
@@ -46,5 +46,5 @@ class Solution(object):
             print('chars: %s' % chars)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

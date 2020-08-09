@@ -13,19 +13,19 @@ matrix in the same row-traversing order as they were.
 If the 'reshape' operation with given parameters is possible and legal, output
 the new reshaped matrix; Otherwise, output the original matrix.
 """
-from typing import List
+from typing ______ List
 
 class Solution:
-    def matrixReshape(self, nums: List[List[int]], r: int, c: int) -> List[List[int]]:
-        m, n = len(nums), len(nums[0])
-        if m * n != r * c:
-            return nums
+    ___ matrixReshape(self, nums: List[List[int]], r: int, c: int) -> List[List[int]]:
+        m, n = le.(nums), le.(nums[0])
+        __ m * n != r * c:
+            r_ nums
 
         ret = []
-        for i in range(m):
-            for j in range(n):
-                if (i * n + j) % c == 0:
+        for i in range(m
+            for j in range(n
+                __ (i * n + j) % c __ 0:
                     ret.append([])
                 ret[-1].append(nums[i][j])
 
-        return ret 
+        r_ ret 

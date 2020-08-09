@@ -4,42 +4,42 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def countComponents(self, n, edges):
+class Solution(object
+    ___ countComponents(self, n, edges
         count = n
         roots = [-1]*count
         for edge in edges:
             root1 = self.findRoot(roots, edge[0])
             root2 = self.findRoot(roots, edge[1])
-            if root1 != root2:
+            __ root1 != root2:
                 roots[root1] = root2
                 count -= 1
 #         print('roots: %s' % roots)
-        return count
+        r_ count
     
-    def findRoot(self, roots, ind):
-        while roots[ind] != -1:
+    ___ findRoot(self, roots, ind
+        w___ roots[ind] != -1:
             ind = roots[ind]
-        return ind
+        r_ ind
     
-    def countComponentsAnother(self, n, edges):
+    ___ countComponentsAnother(self, n, edges
         count = n
         roots = list(range(n))
         for edge in edges:
             root1 = self.find(roots, edge[0])
             root2 = self.find(roots, edge[1])
-            if root1 != root2:
+            __ root1 != root2:
                 roots[root1] = roots[root2]
                 count -= 1
-        return count
+        r_ count
         
-    def find(self, roots, ind):
-        while roots[ind] != ind:
+    ___ find(self, roots, ind
+        w___ roots[ind] != ind:
             roots[ind] = roots[roots[ind]]
             ind = roots[ind]
-        return ind
+        r_ ind
     
-    def test(self):
+    ___ test(self
         testCases = [
             (5, [[0, 1], [1, 2], [3, 4]]),
             (5, [[0, 1], [1, 2], [2, 3], [3, 4]]),
@@ -53,6 +53,6 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

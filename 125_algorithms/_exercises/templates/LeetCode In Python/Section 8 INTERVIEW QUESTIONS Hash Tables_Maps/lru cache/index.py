@@ -1,33 +1,33 @@
-from collections import deque
+from collections ______ deque
 
 
 class LRUCache:
 
-    def __init__(self, capacity: int):
+    ___ __init__(self, capacity: int
         self.c = capacity
         self.m = dict()
         self.deq = deque()
 
-    def get(self, key: int) -> int:
-        if key in self.m:
+    ___ get(self, key: int) -> int:
+        __ key in self.m:
             value = self.m[key]
             self.deq.remove(key)
             self.deq.append(key)
-            return value
-        else:
-            return -1
+            r_ value
+        ____
+            r_ -1
 
-    def put(self, key: int, value: int) -> None:
+    ___ put(self, key: int, value: int) -> None:
 
         # Your LRUCache object will be instantiated and called as such:
         # obj = LRUCache(capacity)
         # param_1 = obj.get(key)
         # obj.put(key,value)
-        if key not in self.m:
-            if len(self.deq) == self.c:
+        __ key not in self.m:
+            __ le.(self.deq) __ self.c:
                 oldest = self.deq.popleft()
                 del self.m[oldest]
-        else:
+        ____
             self.deq.remove(key)
 
         self.m[key] = value

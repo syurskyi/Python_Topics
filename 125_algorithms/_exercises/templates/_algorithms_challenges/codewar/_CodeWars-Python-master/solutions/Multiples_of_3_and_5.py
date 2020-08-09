@@ -7,10 +7,10 @@ Courtesy of ProjectEuler.net
 """
 
 
-def solution(number):
+___ solution(number
     result = []
-    for i in range(1, number):
-        if i % 3 == 0 or i % 5 == 0:
+    for i in range(1, number
+        __ i % 3 __ 0 or i % 5 __ 0:
             result.append(i)
 
-    return sum(result)
+    r_ sum(result)

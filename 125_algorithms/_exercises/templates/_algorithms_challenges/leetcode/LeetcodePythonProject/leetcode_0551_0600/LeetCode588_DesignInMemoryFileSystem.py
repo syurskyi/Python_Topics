@@ -3,72 +3,72 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-class TreeNode(object):
-    def __init__(self, folder=None):
+class TreeNode(object
+    ___ __init__(self, folder=None
         self.folder = folder
         self.content = ''
         self.children = {}
         self.childFolders = []
         self.isFile = False
 
-class FileSystem(object):
-    def __init__(self):
+class FileSystem(object
+    ___ __init__(self
         self.root = TreeNode()
     
-    def ls(self, path):
+    ___ ls(self, path
         path = path[1:]
         arr = path.split('/')
-        if arr[0] == '':
+        __ arr[0] __ '':
             arr = []
         node = self.root
         for folder in arr:
             node = node.children[folder]
         node.childFolders.sort()
-        if node.isFile:
-            return [node.folder]
-        else:
-            return node.childFolders
+        __ node.isFile:
+            r_ [node.folder]
+        ____
+            r_ node.childFolders
     
-    def mkdir(self, path):
+    ___ mkdir(self, path
         path = path[1:]
         arr = path.split('/')
         node = self.root
         for folder in arr:
-            if folder in node.children:
+            __ folder in node.children:
                 node = node.children[folder]
-            else:
+            ____
                 newNode = TreeNode(folder)
                 node.children[folder] = newNode
                 node.childFolders.append(folder)
                 node = newNode
     
-    def addContentToFile(self, filePath, content):
+    ___ addContentToFile(self, filePath, content
         filePath = filePath[1:]
         arr = filePath.split('/')
         file = arr[-1]
         arr = arr[:-1]
         node = self.root
         for folder in arr:
-            if folder in node.children:
+            __ folder in node.children:
                 node = node.children[folder]
-            else:
+            ____
                 newNode = TreeNode(folder)
                 node.children[folder] = newNode
                 node.childFolders.append(folder)
                 node = newNode
-        if file in node.children:
+        __ file in node.children:
             node.children[file].content += content
-        else:
+        ____
             newNode = TreeNode(file)
             node.children[file] = newNode
             node.childFolders.append(file)
             newNode.isFile = True
             newNode.content += content
     
-    def readContentFromFile(self, filePath):
+    ___ readContentFromFile(self, filePath
         filePath = filePath[1:]
         arr = filePath.split('/')
         node = self.root
         for folder in arr:
             node = node.children[folder]
-        return node.content
+        r_ node.content

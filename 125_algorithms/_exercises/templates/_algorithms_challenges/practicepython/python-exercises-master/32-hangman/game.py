@@ -1,9 +1,9 @@
-import sys
-import os
+______ sys
+______ os
 
 class HangMan:
 
-    def __init__(self, word, hangmans):
+    ___ __init__(self, word, hangmans
         os.system('clear')
         self.hangmans = hangmans
         self.word = word
@@ -13,17 +13,17 @@ class HangMan:
         self.welcome()
         self.startGame()
 
-    def generateState(self):
+    ___ generateState(self
         for char in self.word:
             self.state.append('_')
 
-    def startGame(self):
+    ___ startGame(self
         self.displayHangman()
         guess = self.askForGuess()
         self.checkGuess(guess)
         self.goOn()
 
-    def welcome(self):
+    ___ welcome(self
         print('''
                                                 
   /\  /\__ _ _ __   __ _    /\/\   __ _ _ __  
@@ -39,27 +39,27 @@ class HangMan:
         input()
         os.system('clear')
 
-    def displayHangman(self):
+    ___ displayHangman(self
         print(self.hangmans[self.guessCount])
 
 
-    def askForGuess(self):
+    ___ askForGuess(self
         guess = str(input('Guess a latter: ')).upper()
         self.guessCount += 1
-        return guess
+        r_ guess
 
-    def checkGuess(self, guess):
+    ___ checkGuess(self, guess
         countCorrect = 0
-        for index, value in enumerate(self.word):
-            if guess == value:
+        for index, value in enumerate(self.word
+            __ guess __ value:
                 self.state[index] = value
                 countCorrect += 1
-        if countCorrect != 0:
+        __ countCorrect != 0:
             print('You guessed!')
-        else:
+        ____
             print('Try again!')
 
-    def goOn(self):
+    ___ goOn(self
         os.system('clear')
         self.displayHangman()
         self.displayState()
@@ -68,17 +68,17 @@ class HangMan:
         self.checkIfWon()
         self.goOn()
 
-    def displayState(self):
+    ___ displayState(self
         for char in self.state:
             print(" " + char + " ", end='')
         print('\n')
 
-    def checkIfWon(self):
-        if self.guessCount == 6:
+    ___ checkIfWon(self
+        __ self.guessCount __ 6:
             sys.exit('You lose! The right word was: ' + self.word)
         countCorrect = 0
-        for index, value in enumerate(self.state):
-            if value == self.word[index]:
+        for index, value in enumerate(self.state
+            __ value __ self.word[index]:
                 countCorrect += 1
-        if countCorrect == len(self.word):
+        __ countCorrect __ le.(self.word
             sys.exit('You won!')

@@ -1,5 +1,5 @@
 class Solution:
-    def maxNumber(self, a, b, k):
+    ___ maxNumber(self, a, b, k
         """
         :type a: list[int]
         :type b: list[int]
@@ -9,36 +9,36 @@ class Solution:
         ans = []
 
         for size in range(
-            max(0, k - len(a)),
-            min(k, len(b)) + 1
-        ):
+            max(0, k - le.(a)),
+            min(k, le.(b)) + 1
+
             res = self.merge(
                 self.get_max(a, k - size),
                 self.get_max(b, size)
             )
             ans = max(ans, res)
 
-        return ans
+        r_ ans
 
-    def get_max(self, a, size):
+    ___ get_max(self, a, size
         res = []
-        n = len(a)
+        n = le.(a)
 
-        for i in range(n):
-            while (
+        for i in range(n
+            w___ (
                 res and
-                len(res) + n - i > size and
+                le.(res) + n - i > size and
                 res[-1] < a[i]
-            ):
+
                 res.pop()
 
-            if len(res) < size:
+            __ le.(res) < size:
                 res.append(a[i])
 
-        return res
+        r_ res
 
-    def merge(self, a, b):
-        return [
+    ___ merge(self, a, b
+        r_ [
             max(a, b).pop(0)
-            for _ in range(len(a) + len(b))
+            for _ in range(le.(a) + le.(b))
         ]

@@ -1,22 +1,22 @@
-from functools import wraps
+from functools ______ wraps
 
 known_users = ['bob', 'julian', 'mike', 'carmen', 'sue']
 loggedin_users = ['mike', 'sue']
 
 
-def login_required(func):
+___ login_required(func
     @wraps(func)
-    def wrapped(user):
-        if user not in known_users:
-            return 'please create an account'
-        if user not in loggedin_users:
-            return 'please login'
-        return func(user)
+    ___ wrapped(user
+        __ user not in known_users:
+            r_ 'please create an account'
+        __ user not in loggedin_users:
+            r_ 'please login'
+        r_ func(user)
 
-    return wrapped
+    r_ wrapped
 
 
 @login_required
-def welcome(user):
+___ welcome(user
     '''Return a welcome message if logged in'''
-    return f'welcome back {user}'
+    r_ f'welcome back {user}'

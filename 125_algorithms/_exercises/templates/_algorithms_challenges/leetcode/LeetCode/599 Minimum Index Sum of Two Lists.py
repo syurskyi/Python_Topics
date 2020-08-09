@@ -25,24 +25,24 @@ The length of strings in both lists will be in the range of [1, 30].
 The index is starting from 0 to the list length minus 1.
 No duplicates in both lists.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
+    ___ findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
         index = {}
-        for i, v in enumerate(list2):
+        for i, v in enumerate(list2
             index[v] = i
 
         ret = []
         mini = float('inf')
-        for i, v in enumerate(list1):
-            if v in index:
+        for i, v in enumerate(list1
+            __ v in index:
                 cur = i + index[v]  # current index sum
-                if cur < mini:
+                __ cur < mini:
                     mini = cur
                     ret = [v]
-                elif cur == mini:
+                ____ cur __ mini:
                     ret.append(v)
 
-        return ret
+        r_ ret

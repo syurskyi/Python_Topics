@@ -1,12 +1,12 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestShortestPath(object):
+class TestShortestPath(object
 
-    def test_shortest_path(self):
+    ___ test_shortest_path(self
         nodes = []
         graph = GraphShortestPath()
-        for id in range(0, 6):
+        for id in range(0, 6
             nodes.append(graph.add_node(id))
         graph.add_edge(0, 1)
         graph.add_edge(0, 4)
@@ -24,10 +24,10 @@ class TestShortestPath(object):
         print('Success: test_shortest_path')
 
 
-def main():
+___ main(
     test = TestShortestPath()
     test.test_shortest_path()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

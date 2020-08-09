@@ -4,31 +4,31 @@ Created on Mar 23, 2017
 @author: MT
 '''
 
-import heapq
+______ heapq
 
-class Solution(object):
-    def rearrangeString(self, s, k):
+class Solution(object
+    ___ rearrangeString(self, s, k
         hashmap = {}
         for c in s:
             hashmap[c] = hashmap.get(c, 0)+1
         heap = []
-        for c, freq in hashmap.items():
+        for c, freq in hashmap.items(
             heapq.heappush(heap, [-freq, c])
         queue = []
         res = []
-        while heap:
+        w___ heap:
             freq, c = heapq.heappop(heap)
             res.append(c)
             queue.append([freq, c])
-            if len(queue) < k:
+            __ le.(queue) < k:
                 continue
             freq, c = queue.pop(0)
             freq = -freq-1
-            if freq > 0:
+            __ freq > 0:
                 heapq.heappush(heap, [-freq, c])
-        return ''.join(res) if len(res) == len(s) else ''
+        r_ ''.join(res) __ le.(res) __ le.(s) else ''
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('aabbcc', 3),
             ('aaabc', 3),
@@ -41,5 +41,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -29,7 +29,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def findOrder(self, numCourses, prerequisites):
+    ___ findOrder(self, numCourses, prerequisites
         """
         Graph -> Start from V with no predecessor (pi) -> Topological Sorting
         :type numCourses: int
@@ -37,47 +37,47 @@ class Solution:
         :rtype: list[int]
         """
         V = {}
-        for i in xrange(numCourses):
+        for i in xrange(numCourses
             V[i] = []
 
         for edge in prerequisites:
             V[edge[1]].append(edge[0])
 
-        return self.topological_sort(V)
+        r_ self.topological_sort(V)
 
-    def topological_sort(self, V):
+    ___ topological_sort(self, V
         visited = set()
         marked = set()
         ret = []
 
-        for k in V.keys():
-            if k not in visited:
-                if not self.dfs(V, k, visited, marked, ret):
-                    return []
+        for k in V.keys(
+            __ k not in visited:
+                __ not self.dfs(V, k, visited, marked, ret
+                    r_ []
 
         ret.reverse()
-        return ret
+        r_ ret
 
-    def dfs(self, V, k, visited, marked, ret):
+    ___ dfs(self, V, k, visited, marked, ret
         """
-        dfs construct the ret while at the same time check acyclic
+        dfs construct the ret w___ at the same time check acyclic
 
         :return: whether it is acyclic
         """
-        if k in marked:
-            return False
+        __ k in marked:
+            r_ False
 
         marked.add(k)
         for neighbor in V[k]:
-            if neighbor not in visited:
-                if not self.dfs(V, neighbor, visited, marked, ret):
-                    return False
+            __ neighbor not in visited:
+                __ not self.dfs(V, neighbor, visited, marked, ret
+                    r_ False
 
         marked.remove(k)
         visited.add(k)
         ret.append(k)
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
-    assert Solution().findOrder(2, [[0, 1], [1, 0]]) == []
+__ __name__ __ "__main__":
+    assert Solution().findOrder(2, [[0, 1], [1, 0]]) __ []

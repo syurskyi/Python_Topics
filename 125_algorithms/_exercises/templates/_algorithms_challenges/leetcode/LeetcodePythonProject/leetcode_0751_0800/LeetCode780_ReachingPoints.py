@@ -3,8 +3,8 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def reachingPoints(self, sx, sy, tx, ty):
+class Solution(object
+    ___ reachingPoints(self, sx, sy, tx, ty
         """
         :type sx: int
         :type sy: int
@@ -12,16 +12,16 @@ class Solution(object):
         :type ty: int
         :rtype: bool
         """
-        while sx < tx and sy < ty:
+        w___ sx < tx and sy < ty:
             tx, ty = tx%ty, ty%tx
-        if sx == tx and (ty-sy) % sx == 0 or\
-            sy == ty and (tx-sx) % sy == 0:
-            return True
-        else:
-            return False
+        __ sx __ tx and (ty-sy) % sx __ 0 or\
+            sy __ ty and (tx-sx) % sy __ 0:
+            r_ True
+        ____
+            r_ False
     
     # RuntimeError: maximum recursion depth exceeded
-    def reachingPoints_own(self, sx, sy, tx, ty):
+    ___ reachingPoints_own(self, sx, sy, tx, ty
         """
         :type sx: int
         :type sy: int
@@ -30,23 +30,23 @@ class Solution(object):
         :rtype: bool
         """
         mem = {}
-        return self.helper(sx, sy, tx, ty, mem)
+        r_ self.helper(sx, sy, tx, ty, mem)
     
-    def helper(self, sx, sy, tx, ty, mem):
-        if sx == tx and sy == ty:
+    ___ helper(self, sx, sy, tx, ty, mem
+        __ sx __ tx and sy __ ty:
             mem[(sx, sy)] = True
-            return True
-        if sx > tx or sy > ty:
+            r_ True
+        __ sx > tx or sy > ty:
             mem[(sx, sy)] = False
-            return False
-        if (sx, sy) in mem:
-            return mem[(sx, sy)]
+            r_ False
+        __ (sx, sy) in mem:
+            r_ mem[(sx, sy)]
         res = self.helper(sx, sx+sy, tx, ty, mem) or\
             self.helper(sx+sy, sy, tx, ty, mem)
         mem[(sx, sy)] = res
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1, 3, 5], # True
             [1, 1, 2, 2], # False
@@ -59,5 +59,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

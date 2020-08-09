@@ -2,10 +2,10 @@
 # Score: 30
 
 
-from collections import Counter, OrderedDict
+from collections ______ Counter, OrderedDict
 
 
-class OrderedCounter(Counter, OrderedDict):
+class OrderedCounter(Counter, OrderedDict
     pass
 
 

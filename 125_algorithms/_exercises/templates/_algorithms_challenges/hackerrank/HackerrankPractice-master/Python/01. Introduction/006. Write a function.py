@@ -2,5 +2,5 @@
 # Score: 10
 
 
-def is_leap(y):
-    return y % 4 == 0 and (y % 100 != 0 or y % 400 == 0)
+___ is_leap(y
+    r_ y % 4 __ 0 and (y % 100 != 0 or y % 400 __ 0)

@@ -1,31 +1,31 @@
-from string import ascii_uppercase, digits
-import random
+from string ______ ascii_uppercase, digits
+______ random
 
-from license import validate_license
+from license ______ validate_license
 
 ALPHABET = ascii_uppercase + digits
 
 
-def _create_license():
-    return 'PB-' + '-'.join(
+___ _create_license(
+    r_ 'PB-' + '-'.join(
         [''.join(random.sample(ALPHABET, 8))
          for _ in range(4)]
     )
 
 
-def test_valid_license():
-    for _ in range(10):
+___ test_valid_license(
+    for _ in range(10
         key = _create_license()
         assert validate_license(key)
 
 
-def test_return_type():
+___ test_return_type(
     key = _create_license()
     assert validate_license(key) is True
     assert validate_license(key[:-1]) is False
 
 
-def test_invalid_license():
+___ test_invalid_license(
     pool = [_create_license() for _ in range(5)]
     lcase_key = pool[0].lower()
     assert not validate_license(lcase_key)
@@ -41,7 +41,7 @@ def test_invalid_license():
     assert not validate_license(key_reversed)
 
 
-def test_valid_prefix():
+___ test_valid_prefix(
     license = "PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"
     assert validate_license(license)
     assert not validate_license(license.replace('PB', 'APB'))

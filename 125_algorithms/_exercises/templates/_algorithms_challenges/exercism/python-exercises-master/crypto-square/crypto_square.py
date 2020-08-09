@@ -1,2 +1,2 @@
-def encode():
+___ encode(
     pass

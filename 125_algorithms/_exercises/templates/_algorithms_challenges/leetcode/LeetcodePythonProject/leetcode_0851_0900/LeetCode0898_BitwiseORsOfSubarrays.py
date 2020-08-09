@@ -1,5 +1,5 @@
-class Solution(object):
-    def subarrayBitwiseORs(self, A):
+class Solution(object
+    ___ subarrayBitwiseORs(self, A
         """
         :type A: List[int]
         :rtype: int
@@ -13,9 +13,9 @@ class Solution(object):
                 currSet.add(num | num1)
                 uniqSet.add(num | num1)
             prevSet = currSet
-        return len(uniqSet)
+        r_ le.(uniqSet)
 
-    def test(self):
+    ___ test(self
         testCases = [
             # [0],
             # [1, 1, 2],
@@ -27,5 +27,5 @@ class Solution(object):
             print('-='*30+'-')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

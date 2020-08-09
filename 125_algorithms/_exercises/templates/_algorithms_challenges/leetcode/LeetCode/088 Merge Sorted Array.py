@@ -8,8 +8,8 @@ number of elements initialized in A and B are m and n respectively.
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def merge(self, A, m, B, n):
+class Solution(object
+    ___ merge(self, A, m, B, n
         """
         array, ascending order.
         basic of merge sort.
@@ -26,16 +26,16 @@ class Solution(object):
         j = n-1
         closed = m+n
 
-        while i >= 0 and j >= 0:
+        w___ i >= 0 and j >= 0:
             closed -= 1
-            if A[i] > B[j]:
+            __ A[i] > B[j]:
                 A[closed] = A[i]
                 i -= 1
-            else:
+            ____
                 A[closed] = B[j]
                 j -= 1
 
         # either-or
         # dangling
-        if j >= 0: A[:closed] = B[:j+1]
+        __ j >= 0: A[:closed] = B[:j+1]
         # if i >= 0: A[:closed] = A[:i+1]

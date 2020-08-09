@@ -3,37 +3,37 @@ Created on Mar 14, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findMinHeightTrees(self, n, edges):
+class Solution(object
+    ___ findMinHeightTrees(self, n, edges
         """
         :type n: int
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        if n == 0: return []
-        if n == 1: return [0]
+        __ n __ 0: r_ []
+        __ n __ 1: r_ [0]
         graph = [set() for _ in range(n)]
         for e in edges:
             graph[e[0]].add(e[1])
             graph[e[1]].add(e[0])
         leaves = []
-        for i, nodes in enumerate(graph):
-            if len(nodes) == 1:
+        for i, nodes in enumerate(graph
+            __ le.(nodes) __ 1:
                 leaves.append(i)
-        if not leaves:
-            return []
-        while n > 2:
-            n = n-len(leaves)
+        __ not leaves:
+            r_ []
+        w___ n > 2:
+            n = n-le.(leaves)
             newLeaves = []
             for leaf in leaves:
                 neighbor = graph[leaf].pop()
                 graph[neighbor].remove(leaf)
-                if len(graph[neighbor]) == 1:
+                __ le.(graph[neighbor]) __ 1:
                     newLeaves.append(neighbor)
             leaves = newLeaves
-        return leaves
+        r_ leaves
     
-    def test(self):
+    ___ test(self
         testCases = [
             (4, [[1, 0], [1, 2], [1, 3]]),
             (6, [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]),
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,15 +1,15 @@
 d = int(input())
 count = 0
 res = []
-while count < d:
+w___ count < d:
     a = input().split()
     a = list(map(int,a))
     val = a[0]
     step = a[1]
-    for i in range(0,a[2]):
-        if i==0:
+    for i in range(0,a[2]
+        __ i__0:
             result = val
-        else:
+        ____
             result = result + (val + step * i)
             
     res.append(result)

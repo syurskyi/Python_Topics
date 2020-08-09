@@ -2,14 +2,14 @@
 #  Score: 20
 
 
-def jumping_on_clouds(n, c):
+___ jumping_on_clouds(n, c
     c.append(0)
     ans = 0
     position = 0
-    while position < n-1:
-        position += (c[position+2] == 0) + 1
+    w___ position < n-1:
+        position += (c[position+2] __ 0) + 1
         ans += 1
-    return ans
+    r_ ans
 
 
 n = int(input())

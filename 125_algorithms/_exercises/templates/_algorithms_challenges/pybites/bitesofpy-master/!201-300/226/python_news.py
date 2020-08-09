@@ -1,8 +1,8 @@
-import re
-from collections import namedtuple
+______ re
+from collections ______ namedtuple
 
-import requests
-from bs4 import BeautifulSoup
+______ requests
+from bs4 ______ BeautifulSoup
 
 # feed = https://news.python.sc/, to get predictable results we cached
 # first two pages - use these:
@@ -12,14 +12,14 @@ from bs4 import BeautifulSoup
 Entry = namedtuple('Entry', 'title points comments')
 
 
-def _create_soup_obj(url):
+___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
     resp = requests.get(url)
     resp.encoding = "utf-8"
-    return BeautifulSoup(resp.text, "html.parser")
+    r_ BeautifulSoup(resp.text, "html.parser")
 
 
-def get_top_titles(url, top=5):
+___ get_top_titles(url, top=5
     """Parse the titles (class 'title') using the soup object.
        Return a list of top (default = 5) titles ordered descending
        by number of points and comments.
@@ -36,4 +36,4 @@ def get_top_titles(url, top=5):
         extract = re.search(r'(\d+) point.* (\d+) comment', stats, re.DOTALL)
         articles.append(Entry(article.text.strip(), int(extract.group(1)), int(extract.group(2))))
 
-    return sorted(articles, key=lambda x: -(x.points + x.comments / 1000))[:top]
+    r_ sorted(articles, key=lambda x: -(x.points + x.comments / 1000))[:top]

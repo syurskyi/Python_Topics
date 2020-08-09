@@ -3,9 +3,9 @@ class Solution:
     @param: s: a string
     @return: it's index
     """
-    def firstUniqChar(self, s):
-        if not s:
-            return -1
+    ___ firstUniqChar(self, s
+        __ not s:
+            r_ -1
 
         D = {}
         for c in s:
@@ -13,8 +13,8 @@ class Solution:
 
         i = 0
         for c in s:
-            if D[c] == 1:
-                return i
+            __ D[c] __ 1:
+                r_ i
             i += 1
 
-        return -1
+        r_ -1

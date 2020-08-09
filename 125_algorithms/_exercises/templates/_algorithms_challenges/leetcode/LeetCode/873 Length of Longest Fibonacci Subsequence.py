@@ -35,11 +35,11 @@ Note:
 1 <= A[0] < A[1] < ... < A[A.length - 1] <= 10^9
 (The time limit has been reduced by 50% for submissions in Java, C, and C++.)
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def lenLongestFibSubseq(self, A: List[int]) -> int:
+    ___ lenLongestFibSubseq(self, A: List[int]) -> int:
             """
             F[i][j] longest fib subsequence ending at A[i] with 2nd last element
             A[j]
@@ -50,31 +50,31 @@ class Solution:
 
             can be optimized to O(N^2) by look forward
             """
-            n = len(A)
+            n = le.(A)
             F = [[0 for _ in range(n)] for _ in range(n)]
-            for i in range(n):
+            for i in range(n
                 F[i][i] = 1
-                for j in range(i):
+                for j in range(i
                     F[i][j] = 2
 
             idxes = {}
-            for i in range(n):
+            for i in range(n
                 idxes[A[i]] = i
 
-            for i in range(n):
-                for j in range(i):
+            for i in range(n
+                for j in range(i
                     Ak = A[i] + A[j]
-                    if Ak in idxes:
+                    __ Ak in idxes:
                         k = idxes[Ak]
                         F[k][i] = max(F[k][i], F[i][j] + 1)
 
-            return max(
-                F[i][j] if F[i][j] > 2 else 0
+            r_ max(
+                F[i][j] __ F[i][j] > 2 else 0
                 for i in range(n)
                 for j in range(i)
             )
 
-    def lenLongestFibSubseq_TLE(self, A: List[int]) -> int:
+    ___ lenLongestFibSubseq_TLE(self, A: List[int]) -> int:
         """
         F[i][j] longest fib subsequence ending at A[i] with 2nd last element
         A[j]
@@ -85,24 +85,24 @@ class Solution:
 
         can be optimized to O(N^2) by look forward
         """
-        n = len(A)
+        n = le.(A)
         F = [[0 for _ in range(n)] for _ in range(n)]
-        for i in range(n):
+        for i in range(n
             F[i][i] = 1
-            for j in range(i):
+            for j in range(i
                 F[i][j] = 2
 
-        for k in range(n):
-            for i in range(k):
-                for j in range(i):
-                    if A[i] + A[j] == A[k]:
+        for k in range(n
+            for i in range(k
+                for j in range(i
+                    __ A[i] + A[j] __ A[k]:
                         F[k][i] = max(F[k][i], F[i][j] + 1)
 
-        return max(
-            F[i][j] if F[i][j] > 2 else 0
+        r_ max(
+            F[i][j] __ F[i][j] > 2 else 0
             for i in range(n)
             for j in range(i)
         )
 
-if __name__ == "__main__":
-    assert Solution().lenLongestFibSubseq([1,2,3,4,5,6,7,8]) == 5
+__ __name__ __ "__main__":
+    assert Solution().lenLongestFibSubseq([1,2,3,4,5,6,7,8]) __ 5

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSolution(object):
+class TestSolution(object
 
-    def test_length_longest_path(self):
+    ___ test_length_longest_path(self
         solution = Solution()
         assert_raises(TypeError, solution.length_longest_path, None)
         assert_equal(solution.length_longest_path(''), 0)
@@ -13,10 +13,10 @@ class TestSolution(object):
         print('Success: test_length_longest_path')
 
 
-def main():
+___ main(
     test = TestSolution()
     test.test_length_longest_path()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -1,2 +1,2 @@
-def next_edge(side1, side2):
-    return (side1 + side2) - 1
+___ next_edge(side1, side2
+    r_ (side1 + side2) - 1

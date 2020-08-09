@@ -42,28 +42,28 @@ Output:
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
+    ___ trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
         """
         post-order traverse
         """
-        return self.walk(root, L, R)
+        r_ self.walk(root, L, R)
 
-    def walk(self, node, L, R):
-        if not node:
-            return None
+    ___ walk(self, node, L, R
+        __ not node:
+            r_ None
 
         node.left = self.walk(node.left, L, R)
         node.right = self.walk(node.right, L, R)
-        if node.val < L:
-            return node.right
-        elif node.val > R:
-            return node.left
-        else:
-            return node
+        __ node.val < L:
+            r_ node.right
+        ____ node.val > R:
+            r_ node.left
+        ____
+            r_ node

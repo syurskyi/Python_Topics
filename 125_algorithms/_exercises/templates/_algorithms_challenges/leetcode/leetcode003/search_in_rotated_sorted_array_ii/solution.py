@@ -12,31 +12,31 @@ Would this affect the run-time complexity? How and why?
 Write a function to determine if a given target is in the array.
 """
 
-class Solution(object):
-    def search(self, nums, target):
+class Solution(object
+    ___ search(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: bool
         """
         left = 0
-        right = len(nums) - 1
-        while left <= right:
+        right = le.(nums) - 1
+        w___ left <= right:
             mid = left + (right - left) / 2
-            if target == nums[mid]:
-                return True
+            __ target __ nums[mid]:
+                r_ True
             # Left part is sorted
-            elif nums[mid] > nums[right]:
-                if target < nums[mid] and target >= nums[left]:
+            ____ nums[mid] > nums[right]:
+                __ target < nums[mid] and target >= nums[left]:
                     right = mid - 1
-                else:
+                ____
                     left = mid + 1
             # Right part is sorted
-            elif nums[mid] < nums[right]:
-                if target > nums[mid] and target <= nums[right]:
+            ____ nums[mid] < nums[right]:
+                __ target > nums[mid] and target <= nums[right]:
                     left = mid + 1
-                else:
+                ____
                     right = mid - 1
-            else:
+            ____
                 right -= 1
-        return False
+        r_ False

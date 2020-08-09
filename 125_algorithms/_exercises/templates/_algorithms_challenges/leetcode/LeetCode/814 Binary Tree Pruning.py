@@ -39,27 +39,27 @@ The value of each node will only be 0 or 1.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-from typing import Tuple
+from typing ______ Tuple
 
 
 class Solution:
-    def pruneTree(self, root: TreeNode) -> TreeNode:
+    ___ pruneTree(self, root: TreeNode) -> TreeNode:
         root, _ = self.prune(root)
-        return root
+        r_ root
 
-    def prune(self, node) -> Tuple[TreeNode, bool]:
-        if not node:
-            return None, False
+    ___ prune(self, node) -> Tuple[TreeNode, bool]:
+        __ not node:
+            r_ None, False
 
         node.left, contain_left = self.prune(node.left)
         node.right, contain_right = self.prune(node.right)
-        if not contain_left and not contain_right and node.val == 0:
-            return None, False
+        __ not contain_left and not contain_right and node.val __ 0:
+            r_ None, False
 
-        return node, True
+        r_ node, True

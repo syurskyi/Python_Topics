@@ -11,35 +11,35 @@ class Solution:
     @param: s: A string
     @return: A boolean
     """
-    def exist(self, G, s):
-        if G is None or G[0] is None or s is None:
-            return False
+    ___ exist(self, G, s
+        __ G is None or G[0] is None or s is None:
+            r_ False
 
-        m, n = len(G), len(G[0])
+        m, n = le.(G), le.(G[0])
         visited = [[False] * n for _ in range(m)]
-        for x in range(m):
-            for y in range(n):
-                if (G[x][y] == s[0] and
+        for x in range(m
+            for y in range(n
+                __ (G[x][y] __ s[0] and
                     self.dfs(G, x, y, s, 1, visited)):
-                    return True
+                    r_ True
 
-        return False
+        r_ False
 
-    def dfs(self, G, x, y, s, i, visited):
-        if i >= len(s):
-            return True
+    ___ dfs(self, G, x, y, s, i, visited
+        __ i >= le.(s
+            r_ True
 
         for dx, dy in self.V:
             _x = x + dx
             _y = y + dy
-            if not (0 <= _x < len(G) and 0 <= _y < len(G[0])):
+            __ not (0 <= _x < le.(G) and 0 <= _y < le.(G[0])):
                 continue
-            if visited[_x][_y] or G[_x][_y] != s[i]:
+            __ visited[_x][_y] or G[_x][_y] != s[i]:
                 continue
 
             visited[_x][_y] = True
-            if self.dfs(G, _x, _y, s, i + 1, visited):
-                return True
+            __ self.dfs(G, _x, _y, s, i + 1, visited
+                r_ True
             visited[_x][_y] = False
 
-        return False
+        r_ False

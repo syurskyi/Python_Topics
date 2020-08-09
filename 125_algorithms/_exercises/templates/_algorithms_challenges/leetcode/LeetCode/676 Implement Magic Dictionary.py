@@ -15,57 +15,57 @@ Input: search("hhllo"), Output: True
 Input: search("hell"), Output: False
 Input: search("leetcoded"), Output: False
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class MagicDictionary:
 
-    def __init__(self):
+    ___ __init__(self
         """
         Initialize your data structure here.
         """
         class Node:
-            def __init__(self, chr):
+            ___ __init__(self, chr
                 self.chr = chr
                 self.end = False  # a word ends here
                 self.children = defaultdict(lambda: None)
 
         class Trie:
-            def __init__(self):
+            ___ __init__(self
                 self.root = Node(None)
 
-            def insert(self, cur, s, i):
-                if not cur:
+            ___ insert(self, cur, s, i
+                __ not cur:
                     cur = Node(s[i])
 
-                if i == len(s) -1:
+                __ i __ le.(s) -1:
                     cur.end = True
-                else:
+                ____
                     nxt = s[i+1]
                     cur.children[nxt] = self.insert(cur.children[nxt], s, i + 1)
 
-                return cur
+                r_ cur
 
-            def search(self, cur, s, i, modified):
-                if cur.chr != s[i]:
-                    if modified:
-                        return False
+            ___ search(self, cur, s, i, modified
+                __ cur.chr != s[i]:
+                    __ modified:
+                        r_ False
                     modified = True
 
-                if i == len(s) - 1:
+                __ i __ le.(s) - 1:
                     # modified exactly once and have a word ends here 
-                    return modified and cur.end
+                    r_ modified and cur.end
 
-                for child in cur.children.values():
-                    if self.search(child, s, i + 1, modified):
-                        return True
+                for child in cur.children.values(
+                    __ self.search(child, s, i + 1, modified
+                        r_ True
 
-                return False
+                r_ False
 
         self.trie = Trie()
 
-    def buildDict(self, dic: List[str]) -> None:
+    ___ buildDict(self, dic: List[str]) -> None:
         """
         Build a dictionary through a list of words
         """
@@ -73,15 +73,15 @@ class MagicDictionary:
             root = self.trie.root
             root.children[s[0]] = self.trie.insert(root.children[s[0]], s, 0)
 
-    def search(self, word: str) -> bool:
+    ___ search(self, word: str) -> bool:
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         """
-        for child in self.trie.root.children.values():
-            if self.trie.search(child, word, 0, False):
-                return True
+        for child in self.trie.root.children.values(
+            __ self.trie.search(child, word, 0, False
+                r_ True
 
-        return False
+        r_ False
 
 
 # Your MagicDictionary object will be instantiated and called as such:

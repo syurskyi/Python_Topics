@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestMinHeap(object):
+class TestMinHeap(object
 
-    def test_min_heap(self):
+    ___ test_min_heap(self
         heap = MinHeap()
         assert_equal(heap.peek_min(), None)
         assert_equal(heap.extract_min(), None)
@@ -35,16 +35,16 @@ class TestMinHeap(object):
         assert_equal(heap.array[4], 40)
         assert_equal(heap.array[5], 15)
         mins = []
-        while heap:
+        w___ heap:
             mins.append(heap.extract_min())
         assert_equal(mins, [3, 5, 15, 20, 22, 40])
         print('Success: test_min_heap')
 
         
-def main():
+___ main(
     test = TestMinHeap()
     test.test_min_heap()
 
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -16,27 +16,27 @@ solution.reset();
 // Returns the random shuffling of array [1,2,3].
 solution.shuffle();
 """
-import random
+______ random
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def __init__(self, nums):
+class Solution(object
+    ___ __init__(self, nums
         """
         :type nums: List[int]
         :type size: int
         """
         self.original = nums
 
-    def reset(self):
+    ___ reset(self
         """
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        return list(self.original)
+        r_ list(self.original)
 
-    def shuffle(self):
+    ___ shuffle(self
         """
         Returns a random shuffling of the array.
         like shuffle the poker cards
@@ -44,12 +44,12 @@ class Solution(object):
         :rtype: List[int]
         """
         lst = self.reset()
-        n = len(lst)
-        for i in xrange(n):
+        n = le.(lst)
+        for i in xrange(n
             j = random.randrange(i, n)
             lst[i], lst[j] = lst[j], lst[i]
 
-        return lst
+        r_ lst
 
 
 # Your Solution object will be instantiated and called as such:

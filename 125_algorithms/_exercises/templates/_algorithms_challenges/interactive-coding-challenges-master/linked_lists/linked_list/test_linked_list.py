@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestLinkedList(object):
+class TestLinkedList(object
 
-    def test_insert_to_front(self):
+    ___ test_insert_to_front(self
         print('Test: insert_to_front on an empty list')
         linked_list = LinkedList(None)
         linked_list.insert_to_front(10)
@@ -20,7 +20,7 @@ class TestLinkedList(object):
 
         print('Success: test_insert_to_front\n')
 
-    def test_append(self):
+    ___ test_append(self
         print('Test: append on an empty list')
         linked_list = LinkedList(None)
         linked_list.append(10)
@@ -37,7 +37,7 @@ class TestLinkedList(object):
 
         print('Success: test_append\n')
 
-    def test_find(self):
+    ___ test_find(self
         print('Test: find on an empty list')
         linked_list = LinkedList(None)
         node = linked_list.find('a')
@@ -63,7 +63,7 @@ class TestLinkedList(object):
 
         print('Success: test_find\n')
 
-    def test_delete(self):
+    ___ test_delete(self
         print('Test: delete on an empty list')
         linked_list = LinkedList(None)
         linked_list.delete('a')
@@ -89,22 +89,22 @@ class TestLinkedList(object):
 
         print('Success: test_delete\n')
 
-    def test_len(self):
-        print('Test: len on an empty list')
+    ___ test_len(self
+        print('Test: le. on an empty list')
         linked_list = LinkedList(None)
-        assert_equal(len(linked_list), 0)
+        assert_equal(le.(linked_list), 0)
 
-        print('Test: len general case')
+        print('Test: le. general case')
         head = Node(10)
         linked_list = LinkedList(head)
         linked_list.insert_to_front('a')
         linked_list.insert_to_front('bc')
-        assert_equal(len(linked_list), 3)
+        assert_equal(le.(linked_list), 3)
 
         print('Success: test_len\n')
 
 
-def main():
+___ main(
     test = TestLinkedList()
     test.test_insert_to_front()
     test.test_append()
@@ -113,5 +113,5 @@ def main():
     test.test_len()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

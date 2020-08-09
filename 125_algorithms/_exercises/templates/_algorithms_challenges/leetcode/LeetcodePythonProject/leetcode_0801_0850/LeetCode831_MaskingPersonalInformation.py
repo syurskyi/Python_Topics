@@ -3,31 +3,31 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def maskPII(self, S):
+class Solution(object
+    ___ maskPII(self, S
         """
         :type S: str
         :rtype: str
         """
-        import re
+        ______ re
         s = S
-        if re.match('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s):
+        __ re.match('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s
             s = s.lower()
             ind = s.find('@')
             name = s[:ind]
             mail = s[ind:]
-            return name[0]+'*****'+name[-1]+mail
-        else:
+            r_ name[0]+'*****'+name[-1]+mail
+        ____
             s0 = re.sub('[{|}|(|)|\+|\-|\s]', '', s)
-            if len(s0) == 11 and s0[0] == '1' and s[0]!='+':
+            __ le.(s0) __ 11 and s0[0] __ '1' and s[0]!='+':
                 s0 = s0[1:]
-            if len(s0) == 10:
-                return '***-***-%s' % s0[-4:]
-            else:
-                cnt = len(s0)-10
-                return '+'+'*'*cnt+('-***-***-%s' % s0[-4:])
+            __ le.(s0) __ 10:
+                r_ '***-***-%s' % s0[-4:]
+            ____
+                cnt = le.(s0)-10
+                r_ '+'+'*'*cnt+('-***-***-%s' % s0[-4:])
     
-    def test(self):
+    ___ test(self
         testCases = [
             'LeetCode@LeetCode.com',
             'AB@qq.com',
@@ -42,5 +42,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

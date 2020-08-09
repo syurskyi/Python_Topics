@@ -18,35 +18,35 @@ Note:
 S will be a string with length between 1 and 12.
 S will consist only of letters or digits.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.ret = []
 
-    def letterCasePermutation(self, S: str) -> List[str]:
+    ___ letterCasePermutation(self, S: str) -> List[str]:
         """
         dfs
         """
         # S_lst = S.split()  # error
         S_lst = list(S)
         self.dfs([], S_lst, 0)
-        return [
+        r_ [
             "".join(e)
             for e in self.ret
         ]
 
-    def dfs(self, lst, S_lst, i):
-        if len(lst) == len(S_lst):
+    ___ dfs(self, lst, S_lst, i
+        __ le.(lst) __ le.(S_lst
             self.ret.append(list(lst))
-            return
+            r_
 
-        if S_lst[i].isdigit():
+        __ S_lst[i].isdigit(
             lst.append(S_lst[i])
             self.dfs(lst, S_lst, i + 1)
             lst.pop()
-        else:
+        ____
             lst.append(S_lst[i].lower())
             self.dfs(lst, S_lst, i + 1)
             lst.pop()
@@ -55,5 +55,5 @@ class Solution:
             lst.pop()
 
 
-if __name__ == "__main__":
-    assert Solution().letterCasePermutation("a1b2") == ['a1b2', 'a1B2', 'A1b2', 'A1B2']
+__ __name__ __ "__main__":
+    assert Solution().letterCasePermutation("a1b2") __ ['a1b2', 'a1B2', 'A1b2', 'A1B2']

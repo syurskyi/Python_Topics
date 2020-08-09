@@ -2,7 +2,7 @@
 #requests_login.py is a code snippet/script you can customise to do a request get of a site behind a login.
 #For this example file I'm pulling down my home page post listing on freecycle.org.
 
-import requests
+______ requests
 
 #This URL will be the URL that your login form points to with the "action" tag.
 POST_LOGIN_URL = 'https://my.freecycle.org/login'

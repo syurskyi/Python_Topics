@@ -29,23 +29,23 @@ If you notice carefully in the flattened tree, each node's right child points to
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
-    def __repr__(self):
-        return repr(self.val)
+    ___ __repr__(self
+        r_ repr(self.val)
 
 class Solution:
-    def flatten_data_structure(self, root):
+    ___ flatten_data_structure(self, root
         """
 
         :param root: TreeNode
         :return: nothing, do it in place
         """
         # trivial
-        if not root:
-            return
+        __ not root:
+            r_
 
         lst = []
         self.dfs_traverse(root, lst)
@@ -60,17 +60,17 @@ class Solution:
             cur = cur.right
 
 
-    def dfs_traverse(self, root, lst):
+    ___ dfs_traverse(self, root, lst
         """
         pre_order traverse
         """
-        if not root:
-            return
+        __ not root:
+            r_
         lst.append(root)
         self.dfs_traverse(root.left, lst)
         self.dfs_traverse(root.right, lst)
 
-    def flatten(self, root):
+    ___ flatten(self, root
         """
         pre-order should be easy
         flatten left subtree
@@ -82,8 +82,8 @@ class Solution:
         :param root:
         :return:
         """
-        if not root:
-            return None
+        __ not root:
+            r_ None
 
 
         left_last = self.get_last(root.left)
@@ -92,33 +92,33 @@ class Solution:
         right = self.flatten(root.right)
 
         # left_last = left
-        # while left_last and left_last.right:
+        # w___ left_last and left_last.right:
         #     left_last = left_last.right
 
         root.left = None
-        if left:
+        __ left:
             root.right = left
             left_last.right = right
-        else:
+        ____
             root.right = right
-        return root
+        r_ root
 
-    def get_last(self, root):
+    ___ get_last(self, root
         """
         pre-order last
         :param root:
         :return:
         """
-        if not root:
-            return None
-        if not root.left and not root.right:
-            return root
-        if root.right:
-            return self.get_last(root.right)
-        else:
-            return self.get_last(root.left)
+        __ not root:
+            r_ None
+        __ not root.left and not root.right:
+            r_ root
+        __ root.right:
+            r_ self.get_last(root.right)
+        ____
+            r_ self.get_last(root.left)
 
-if __name__=="__main__":
+__ __name____"__main__":
     node1 = TreeNode(1)
     node2 = TreeNode(2)
     node1.left = node2

@@ -1,4 +1,4 @@
-import random
+______ random
 
 BITES = {6: 'PyBites Die Hard',
          7: 'Parsing dates from logs',
@@ -18,22 +18,22 @@ BITES = {6: 'PyBites Die Hard',
 bites_done = {6, 10, 16, 18, 21}
 
 
-class NoBitesAvailable(Exception):
+class NoBitesAvailable(Exception
     pass
 
 
 class Promo:
 
-    def __init__(self, bites_done=bites_done):
+    ___ __init__(self, bites_done=bites_done
         self.bites_done = bites_done
 
-    def _pick_random_bite(self):
-        bites_available = [x for x, _ in BITES.items() if x not in self.bites_done]
-        if len(bites_available) < 1:
+    ___ _pick_random_bite(self
+        bites_available = [x for x, _ in BITES.items() __ x not in self.bites_done]
+        __ le.(bites_available) < 1:
             raise NoBitesAvailable
-        return random.choice(bites_available)
+        r_ random.choice(bites_available)
 
-    def new_bite(self):
+    ___ new_bite(self
         picked = self._pick_random_bite()
         self.bites_done.add(picked)
-        return BITES[picked]
+        r_ BITES[picked]

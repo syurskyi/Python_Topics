@@ -3,8 +3,8 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def divide(self, dividend, divisor):
+class Solution(object
+    ___ divide(self, dividend, divisor
         """
         :type dividend: int
         :type divisor: int
@@ -12,31 +12,31 @@ class Solution(object):
         """
         # num=a_0*2^0+a_1*2^1+a_2*2^2+...+a_n*2^n
         sign = 1
-        if (dividend > 0 and divisor < 0) or\
-            (dividend < 0 and divisor > 0):
+        __ (dividend > 0 and divisor < 0) or\
+            (dividend < 0 and divisor > 0
             sign = -1
-        if dividend < 0: dividend = -dividend
-        if divisor < 0: divisor = -divisor
-        if divisor == 0: return 2**32-1
-        if dividend == 0 or dividend < divisor:
-            return 0
+        __ dividend < 0: dividend = -dividend
+        __ divisor < 0: divisor = -divisor
+        __ divisor __ 0: r_ 2**32-1
+        __ dividend __ 0 or dividend < divisor:
+            r_ 0
         res = self.ldivide(dividend, divisor)
-        if res >= 2**31-1:
-            res = 2**31-1 if sign == 1 else -2**31
-        else:
-            res = res if sign > 0 else -res
-        return res
+        __ res >= 2**31-1:
+            res = 2**31-1 __ sign __ 1 else -2**31
+        ____
+            res = res __ sign > 0 else -res
+        r_ res
         
-    def ldivide(self, dividend, divisor):
-        if dividend < divisor: return 0
+    ___ ldivide(self, dividend, divisor
+        __ dividend < divisor: r_ 0
         sumVal = divisor
         multiple = 1
-        while sumVal+sumVal <= dividend:
+        w___ sumVal+sumVal <= dividend:
             sumVal += sumVal
             multiple += multiple
-        return multiple + self.ldivide(dividend-sumVal, divisor)
+        r_ multiple + self.ldivide(dividend-sumVal, divisor)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1],
             [5, 2],
@@ -50,5 +50,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

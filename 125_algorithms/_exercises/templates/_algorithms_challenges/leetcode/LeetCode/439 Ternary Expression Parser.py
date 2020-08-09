@@ -5,27 +5,27 @@ Premium question
 
 
 class Solution:
-    def parseTernary(self, expression: str) -> str:
+    ___ parseTernary(self, expression: str) -> str:
         """
         stk from right to left parsing, including the operand and operator
         """
         stk = []
-        for c in reversed(expression):
-            if stk and stk[-1] == "?":
+        for c in reversed(expression
+            __ stk and stk[-1] __ "?":
                 stk.pop()  # ?
                 first = stk.pop()
                 stk.pop()  # :
                 second = stk.pop()
-                if c == "T":
+                __ c __ "T":
                     stk.append(first)
-                else:
+                ____
                     stk.append(second)
-            else:
+            ____
                 stk.append(c)
 
-        return stk[0]
+        r_ stk[0]
 
-    def parseTernary_complex(self, expression: str) -> str:
+    ___ parseTernary_complex(self, expression: str) -> str:
         """
         tokenize + recursive (dfs)?
 
@@ -33,34 +33,34 @@ class Solution:
 
         can handle multiple digit (not required)
         """
-        n = len(expression)
+        n = le.(expression)
         stk = []
         i = n - 1
-        while i >= 0:
+        w___ i >= 0:
             j = i
-            while j >= 0 and expression[j] not in (":", "?"):
+            w___ j >= 0 and expression[j] not in (":", "?"
                 j -= 1
 
-            if j < i:
+            __ j < i:
                 stk.append(expression[j+1:i+1])
 
-            if expression[j] == ":":
+            __ expression[j] __ ":":
                 i = j - 1
-            else:  # "?"
+            ____  # "?"
                 i = j - 1
-                if expression[i] == "T":
+                __ expression[i] __ "T":
                     a = stk.pop()
                     stk.pop()
                     stk.append(a)
                     i -= 1
-                else:
+                ____
                     stk.pop()
                     i -= 1
 
-        return stk[0]
+        r_ stk[0]
 
 
 
-if __name__ == "__main__":
-    assert Solution().parseTernary("F?1:T?4:5") == "4"
-    assert Solution().parseTernary("T?T?F:5:3") == "F"
+__ __name__ __ "__main__":
+    assert Solution().parseTernary("F?1:T?4:5") __ "4"
+    assert Solution().parseTernary("T?T?F:5:3") __ "F"

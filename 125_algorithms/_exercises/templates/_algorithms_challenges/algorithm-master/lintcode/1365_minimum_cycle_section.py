@@ -3,20 +3,20 @@ class Solution:
     @param array: an integer array
     @return: the length of the minimum cycle section
     """
-    def minimumCycleSection(self, array):
-        if not array:
-            return 0
+    ___ minimumCycleSection(self, array
+        __ not array:
+            r_ 0
 
-        n = len(array)
+        n = le.(array)
 
-        for size in range(1, n + 1):
+        for size in range(1, n + 1
             gotcha = True
 
-            for i in range(size):
-                if any(array[i] != array[j] for j in range(i + size, n, size)):
+            for i in range(size
+                __ any(array[i] != array[j] for j in range(i + size, n, size)):
                     gotcha = False
 
-            if gotcha:
-                return size
+            __ gotcha:
+                r_ size
 
-        return n
+        r_ n

@@ -6,66 +6,66 @@ and raise ValueErrors with meaningful error messages
 if necessary.
 """
 
-import unittest
+______ unittest
 
-from ocr_numbers import grid, number
+from ocr_numbers ______ grid, number
 
 
-class OcrTest(unittest.TestCase):
-    def test_0(self):
+class OcrTest(unittest.TestCase
+    ___ test_0(self
         self.assertEqual(number([" _ ",
                                  "| |",
                                  "|_|",
                                  "   "]), '0')
 
-    def test_1(self):
+    ___ test_1(self
         self.assertEqual(number(["   ",
                                  "  |",
                                  "  |",
                                  "   "]), '1')
 
-    def test_garbage(self):
+    ___ test_garbage(self
         self.assertEqual(number([" _ ",
                                  " _|",
                                  "  |",
                                  "   "]), '?')
 
-    def test_last_line_nonblank(self):
+    ___ test_last_line_nonblank(self
         self.assertEqual(number(["   ",
                                  "  |",
                                  "  |",
                                  "| |"]), '?')
 
-    def test_unknown_char(self):
+    ___ test_unknown_char(self
         self.assertEqual(number([" - ",
                                  " _|",
                                  " X|",
                                  "   "]), '?')
 
-    def test_too_short_row(self):
+    ___ test_too_short_row(self
         self.assertRaises(ValueError, number, ["   ",
                                                " _|",
                                                " |",
                                                "   "])
 
-    def test_insufficient_rows(self):
+    ___ test_insufficient_rows(self
         self.assertRaises(ValueError, number, ["   ",
                                                " _|",
                                                " X|"])
 
-    def test_grid0(self):
+    ___ test_grid0(self
         self.assertEqual(grid('0'), [" _ ",
                                      "| |",
                                      "|_|",
                                      "   "])
 
-    def test_grid1(self):
+    ___ test_grid1(self
         self.assertEqual(grid('1'), ["   ",
                                      "  |",
                                      "  |",
                                      "   "])
 
-    def test_0010110(self):
+    ___ test_0010110(self
         self.assertEqual(
             number([
                 " _  _     _        _ ",
@@ -74,7 +74,7 @@ class OcrTest(unittest.TestCase):
                 "                     "
             ]), '0010110')
 
-    def test_3186547290(self):
+    ___ test_3186547290(self
         digits = '3186547290'
         self.assertEqual(
             number([
@@ -84,7 +84,7 @@ class OcrTest(unittest.TestCase):
                 "                              "
             ]), digits)
 
-    def test_Lost(self):
+    ___ test_Lost(self
         digits = '4815162342'
         self.assertEqual(
             number([
@@ -94,7 +94,7 @@ class OcrTest(unittest.TestCase):
                 "                              "
             ]), digits)
 
-    def test_garble_middle(self):
+    ___ test_garble_middle(self
         self.assertEqual(
             number([
                 "    _  _     _ ",
@@ -103,7 +103,7 @@ class OcrTest(unittest.TestCase):
                 "               "
             ]), '12?45')
 
-    def test_grid3186547290(self):
+    ___ test_grid3186547290(self
         digits = '3186547290'
         self.assertEqual(
             grid(digits), [
@@ -113,9 +113,9 @@ class OcrTest(unittest.TestCase):
                 "                              "
             ])
 
-    def test_invalid_grid(self):
+    ___ test_invalid_grid(self
         self.assertRaises(ValueError, grid, '123a')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

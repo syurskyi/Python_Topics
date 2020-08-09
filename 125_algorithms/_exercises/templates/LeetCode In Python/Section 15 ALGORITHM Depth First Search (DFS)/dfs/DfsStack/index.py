@@ -1,29 +1,29 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Graph:
 
-    def __init__(self):
+    ___ __init__(self
         self.graph = defaultdict(list)
 
-    def insertEdge(self, v1, v2):
+    ___ insertEdge(self, v1, v2
         self.graph[v1].append(v2)
 
-    def DFS(self, startNode):
+    ___ DFS(self, startNode
         visited = set()
         st = []
         st.append(startNode)
 
-        while(len(st)):
+        w___(le.(st)):
             cur = st[-1]
             st.pop()
 
-            if(cur not in visited):
+            __(cur not in visited
                 print(cur, end=" ")
                 visited.add(cur)
 
             for vertex in self.graph[cur]:
-                if(vertex not in visited):
+                __(vertex not in visited
                     st.append(vertex)
 
 

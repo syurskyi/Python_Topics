@@ -3,8 +3,8 @@
 
 some_dict = {"Julian": 25, "Bob": 26, "Dan": 47, "Cornelius": 3}
 
-def print_dict(dictionary):
-	for k, v in dictionary.items():
+___ print_dict(dictionary
+	for k, v in dictionary.items(
 		print('\n{}: {}'.format(k, v))	
 
 print_dict(some_dict)

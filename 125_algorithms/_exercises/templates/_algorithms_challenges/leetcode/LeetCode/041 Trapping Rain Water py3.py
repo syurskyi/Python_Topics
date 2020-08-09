@@ -13,25 +13,25 @@ Output: 6
 """
 
 class Solution:
-    def trap(self, height: List[int]) -> int:
+    ___ trap(self, height: List[int]) -> int:
         """
         At each position, the water is determined by the left and right max
 
         Let lefts[i] be the max(height[:i])
         Let rights[i] be the max(height[i:])
         """
-        n = len(height)
+        n = le.(height)
         lefts = [0 for _ in range(n+1)]
         rights = [0 for _ in range(n+1)]
-        for i in range(1, n+1):  # i, index of lefts
+        for i in range(1, n+1  # i, index of lefts
             lefts[i] = max(lefts[i-1], height[i-1])
-        for i in range(n-1, -1, -1):
+        for i in range(n-1, -1, -1
             rights[i] = max(rights[i+1], height[i])
 
         ret = 0
-        for i in range(n):
+        for i in range(n
             ret += max(
                 0,
                 min(lefts[i], rights[i+1]) - height[i]
             )
-        return ret
+        r_ ret

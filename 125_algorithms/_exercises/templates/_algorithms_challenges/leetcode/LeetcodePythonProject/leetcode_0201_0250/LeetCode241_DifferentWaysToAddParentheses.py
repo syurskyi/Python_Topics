@@ -4,30 +4,30 @@ Created on Feb 27, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def diffWaysToCompute(self, s):
+class Solution(object
+    ___ diffWaysToCompute(self, s
         """
         :type s: str
         :rtype: List[int]
         """
         res = []
-        for i, c in enumerate(s):
-            if c in ('+', '-', '*'):
+        for i, c in enumerate(s
+            __ c in ('+', '-', '*'
                 res1 = self.diffWaysToCompute(s[:i])
                 res2 = self.diffWaysToCompute(s[i+1:])
                 for num1 in res1:
                     for num2 in res2:
-                        if c == '+':
+                        __ c __ '+':
                             res.append(num1+num2)
-                        elif c == '-':
+                        ____ c __ '-':
                             res.append(num1-num2)
-                        else:
+                        ____
                             res.append(num1*num2)
-        if not res:
+        __ not res:
             res = [int(s)]
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             '2-1-1',
             '2*3-4*5',
@@ -38,5 +38,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

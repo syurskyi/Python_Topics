@@ -3,18 +3,18 @@ Created on May 14, 2018
 
 @author: tongq
 '''
-class WordDistance(object):
+class WordDistance(object
 
-    def __init__(self, words):
+    ___ __init__(self, words
         """
         :type words: List[str]
         """
         hashmap = {}
-        for i, word in enumerate(words):
+        for i, word in enumerate(words
             hashmap[word] = hashmap.get(word, [])+[i]
         self.hashmap = hashmap
     
-    def shortest(self, word1, word2):
+    ___ shortest(self, word1, word2
         """
         :type word1: str
         :type word2: str
@@ -23,10 +23,10 @@ class WordDistance(object):
         i, j = 0, 0
         res = float('inf')
         arr1, arr2 = self.hashmap[word1], self.hashmap[word2]
-        while i < len(arr1) and j < len(arr2):
+        w___ i < le.(arr1) and j < le.(arr2
             res = min(res, abs(arr1[i]-arr2[j]))
-            if arr1[i] > arr2[j]:
+            __ arr1[i] > arr2[j]:
                 j += 1
-            else:
+            ____
                 i += 1
-        return res
+        r_ res

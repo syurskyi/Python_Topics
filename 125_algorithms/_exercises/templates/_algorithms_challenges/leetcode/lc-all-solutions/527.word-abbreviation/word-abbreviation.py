@@ -1,5 +1,5 @@
-class Solution(object):
-  def wordsAbbreviation(self, dict):
+class Solution(object
+  ___ wordsAbbreviation(self, dict
     """
     :type dict: List[str]
     :rtype: List[str]
@@ -13,26 +13,26 @@ class Solution(object):
       abbr2word[abbr].add(word)
 
     # resolve conflicts in each group
-    for abbr, words in abbr2word.items():
-      if len(words) > 1:
+    for abbr, words in abbr2word.items(
+      __ le.(words) > 1:
         for word in words:
-          for i in range(2, len(word)):
+          for i in range(2, le.(word)):
             prefix = word[:i]
-            if self.checkUnique(prefix, words):
+            __ self.checkUnique(prefix, words
               nabbr = self.getAbbr(word, prefix)
               word2abbr[word] = nabbr
               break
-      else:
+      ____
         word2abbr[words.pop()] = abbr
-    return [word2abbr[word] for word in dict]
+    r_ [word2abbr[word] for word in dict]
 
-  def checkUnique(self, prefix, words):
-    return sum(word.startswith(prefix) for word in words) == 1
+  ___ checkUnique(self, prefix, words
+    r_ sum(word.startswith(prefix) for word in words) __ 1
 
-  def getAbbr(self, word, prefix):
-    abbr = prefix + str(len(word) - 1 - len(prefix)) + word[-1]
-    return abbr if len(abbr) < len(word) else word
+  ___ getAbbr(self, word, prefix
+    abbr = prefix + str(le.(word) - 1 - le.(prefix)) + word[-1]
+    r_ abbr __ le.(abbr) < le.(word) else word
 
-  def getAbbreviation(self, word):
-    abbr = word[0] + str(len(word) - 2) + word[-1]
-    return abbr if len(abbr) < len(word) else word
+  ___ getAbbreviation(self, word
+    abbr = word[0] + str(le.(word) - 2) + word[-1]
+    r_ abbr __ le.(abbr) < le.(word) else word

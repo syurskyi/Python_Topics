@@ -4,45 +4,45 @@ Created on Mar 15, 2017
 @author: MT
 '''
 
-class TreeNode(object):
-    def __init__(self, val, num=1):
+class TreeNode(object
+    ___ __init__(self, val, num=1
         self.val = val
         self.num = num
         self.left = None
         self.right = None
     
-    def __str__(self):
-        return '<val: %s, num: %s>' % (self.val, self.num)
+    ___ __str__(self
+        r_ '<val: %s, num: %s>' % (self.val, self.num)
     
-    def __repr__(self):
-        return self.__str__()
+    ___ __repr__(self
+        r_ self.__str__()
 
-class Solution(object):
-    def countSmaller(self, nums):
-        if not nums: return []
+class Solution(object
+    ___ countSmaller(self, nums
+        __ not nums: r_ []
         root = TreeNode(nums[-1])
         result = [0]
-        for i in range(len(nums)-2, -1, -1):
+        for i in range(le.(nums)-2, -1, -1
             result.insert(0, self.getVal(root, nums[i], 0))
-        return result, root
+        r_ result, root
     
-    def getVal(self, root, val, num):
-        if root.val >= val:
+    ___ getVal(self, root, val, num
+        __ root.val >= val:
             root.num += 1
-            if not root.left:
+            __ not root.left:
                 root.left = TreeNode(val)
-                return num
-            else:
-                return self.getVal(root.left, val, num)
-        else:
+                r_ num
+            ____
+                r_ self.getVal(root.left, val, num)
+        ____
             num += root.num
-            if not root.right:
+            __ not root.right:
                 root.right = TreeNode(val)
-                return num
-            else:
-                return self.getVal(root.right, val, num)
+                r_ num
+            ____
+                r_ self.getVal(root.right, val, num)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [5, 2, 6, 1],
             [-1, -1],
@@ -57,20 +57,20 @@ class Solution(object):
             queue= [root]
             line = []
             nextQueue = []
-            while queue:
+            w___ queue:
                 node = queue.pop(0)
                 line.append(node)
-                if node.left:
+                __ node.left:
                     nextQueue.append(node.left)
-                if node.right:
+                __ node.right:
                     nextQueue.append(node.right)
-                if not queue:
+                __ not queue:
                     queue = nextQueue
                     nextQueue = []
                     print(line)
                     line = []
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

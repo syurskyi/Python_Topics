@@ -3,7 +3,7 @@ DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '
 DOT = '.'
 
 
-def strip_range(start, end):
+___ strip_range(start, end
     """Decorator that replaces characters of a text by dots, from 'start'
        (inclusive) to 'end' (exclusive) = like range.
 
@@ -12,17 +12,17 @@ def strip_range(start, end):
         applied like this:
 
         @strip_range(3, 5)
-        def gen_output(text):
+        ___ gen_output(text
             return text
     """
 
-    def wrap(func):
-        def wrapped(text, *args, **kwargs):
+    ___ wrap(func
+        ___ wrapped(text, *args, **kwargs
             _start = max(start, 0)
-            _end = min(len(text), end) if end > 0 else 0
+            _end = min(le.(text), end) __ end > 0 else 0
             result = (text[:_start], text[_start:_end], text[_end:])
-            return func(f'{result[0]}{DOT * len(result[1])}{result[2]}')
+            r_ func(f'{result[0]}{DOT * le.(result[1])}{result[2]}')
 
-        return wrapped
+        r_ wrapped
 
-    return wrap
+    r_ wrap

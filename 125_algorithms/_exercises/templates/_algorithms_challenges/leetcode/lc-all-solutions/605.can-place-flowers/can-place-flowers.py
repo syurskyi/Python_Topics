@@ -1,5 +1,5 @@
-class Solution(object):
-  def canPlaceFlowers(self, flowerbed, n):
+class Solution(object
+  ___ canPlaceFlowers(self, flowerbed, n
     """
     :type flowerbed: List[int]
     :type n: int
@@ -8,9 +8,9 @@ class Solution(object):
     ans = 0
     cnt = 1
     for plot in flowerbed:
-      if plot == 0:
+      __ plot __ 0:
         cnt += 1
-      else:
+      ____
         ans += abs(cnt - 1) / 2
         cnt = 0
-    return ans + cnt / 2 >= n
+    r_ ans + cnt / 2 >= n

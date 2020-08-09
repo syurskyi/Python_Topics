@@ -1,5 +1,5 @@
-class Solution(object):
-  def intToRoman(self, num):
+class Solution(object
+  ___ intToRoman(self, num
     """
     :type num: int
     :rtype: str
@@ -11,13 +11,13 @@ class Solution(object):
       k = num / values[literals[idx]]
       re = (num % values[literals[idx]]) / values[literals[idx + 2]]
       ans += k * literals[idx]
-      if re >= 9:
+      __ re >= 9:
         ans += literals[idx + 2] + literals[idx]
-      elif re >= 5:
+      ____ re >= 5:
         ans += literals[idx + 1] + (re - 5) * literals[idx + 2]
-      elif re == 4:
+      ____ re __ 4:
         ans += literals[idx + 2] + literals[idx + 1]
-      else:
+      ____
         ans += re * literals[idx + 2]
       num %= values[literals[idx + 2]]
-    return ans
+    r_ ans

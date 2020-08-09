@@ -1,7 +1,7 @@
 """
 Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -9,20 +9,20 @@ class TreeNode:
 
 
 class Solution:
-    def maxPathSum(self, root):
+    ___ maxPathSum(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
 
         ans, _ = self.divide_conquer(root)
-        return ans
+        r_ ans
 
-    def divide_conquer(self, node):
-        if not node:
-            return float('-inf'), 0
+    ___ divide_conquer(self, node
+        __ not node:
+            r_ float('-inf'), 0
 
         max_left, left = self.divide_conquer(node.left)
         max_right, right = self.divide_conquer(node.right)
@@ -31,30 +31,30 @@ class Solution:
         res = max(max_left, max_right, node.val + left + right)
         path = max(node.val + left, node.val + right, 0)
 
-        return res, path
+        r_ res, path
 
 
 class Solution:
-    def maxPathSum(self, root):
+    ___ maxPathSum(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return 0
+        __ not root:
+            r_ 0
 
         self.ans = float('-inf')
         self.divide_conquer(root)
-        return self.ans
+        r_ self.ans
 
-    def divide_conquer(self, node):
-        if not node:
-            return 0
+    ___ divide_conquer(self, node
+        __ not node:
+            r_ 0
 
         left = max(0, self.divide_conquer(node.left))
         right = max(0, self.divide_conquer(node.right))
 
-        if node.val + left + right > self.ans:
+        __ node.val + left + right > self.ans:
             self.ans = node.val + left + right
 
-        return node.val + max(left, right)
+        r_ node.val + max(left, right)

@@ -8,7 +8,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def singleNumber_optimal(self, A):
+    ___ singleNumber_optimal(self, A
         """
         No extra memory, thus unable to use hash table, requiring constant space solution
 
@@ -44,9 +44,9 @@ class Solution:
             bit_2 = (bit_1 & elmt) | (bit_2 & ~elmt)
             bit_1 = (bit_0 & elmt) | (bit_1 & ~elmt)
             bit_0 = (bit_t & elmt) | (bit_0 & ~elmt)  # three times means 0 times (mod 3)
-        return bit_1
+        r_ bit_1
 
-    def singleNumber_array(self, A):
+    ___ singleNumber_array(self, A
         """
         add the bit vertically; bit sum
 
@@ -60,18 +60,18 @@ class Solution:
         cnt = [0 for _ in xrange(32)]
 
         for elmt in A:
-            for i in xrange(32):
-                if elmt>>i&1==1:
+            for i in xrange(32
+                __ elmt>>i&1__1:
                     cnt[i] = (cnt[i]+1)%3
 
         result = 0
-        for i in xrange(32):
+        for i in xrange(32
             result |= cnt[i]<<i
 
-        return result
+        r_ result
 
 
-    def singleNumber(self, A):
+    ___ singleNumber(self, A
         """
         add the bit vertically; bit sum
 
@@ -99,19 +99,19 @@ class Solution:
 
             one &= ~three
             two &= ~three
-        return one
+        r_ one
 
 
 
 
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     # possible negative numbers
     tests = [
         [1, 1, 1, 2, 2, 2, 3, 4, 4, 4],
         [1]
     ]
     for A in tests:
-        assert Solution().singleNumber_optimal(A)==Solution().singleNumber_array(A)
-        assert Solution().singleNumber_optimal(A)==Solution().singleNumber(A)
+        assert Solution().singleNumber_optimal(A)__Solution().singleNumber_array(A)
+        assert Solution().singleNumber_optimal(A)__Solution().singleNumber(A)

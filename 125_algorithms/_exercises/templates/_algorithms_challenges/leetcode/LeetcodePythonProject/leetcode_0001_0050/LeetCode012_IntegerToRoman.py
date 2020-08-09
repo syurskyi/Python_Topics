@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def intToRoman(self, num):
+class Solution(object
+    ___ intToRoman(self, num
         """
         :type num: int
         :rtype: str
@@ -12,9 +12,9 @@ class Solution(object):
         res = ''
         nums =  [1000, 900,  500, 400,  100, 90,   50,  40,   10,  9,    5,   4,    1]
         chars = ['M',  'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
-        for c, n in zip(chars, nums):
+        for c, n in zip(chars, nums
             times = num//n
-            if times:
+            __ times:
                 res += c*times
                 num -= n*times
-        return res
+        r_ res

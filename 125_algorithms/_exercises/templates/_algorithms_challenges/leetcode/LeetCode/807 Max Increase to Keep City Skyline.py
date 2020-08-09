@@ -39,15 +39,15 @@ All heights grid[i][j] are in the range [0, 100].
 All buildings in grid[i][j] occupy the entire grid cell: that is, they are a
 1 x 1 x grid[i][j] rectangular prism.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
+    ___ maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
         """
         grow the to limit constraint by 2D skyline
         """
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         # left to right projection
         lr = [
             max(row)
@@ -63,9 +63,9 @@ class Solution:
         ]
 
         ret = 0
-        for i in range(m):
-            for j in range(n):
+        for i in range(m
+            for j in range(n
                 diff = min(lr[i], tb[j]) - grid[i][j]
                 ret += diff
 
-        return ret
+        r_ ret

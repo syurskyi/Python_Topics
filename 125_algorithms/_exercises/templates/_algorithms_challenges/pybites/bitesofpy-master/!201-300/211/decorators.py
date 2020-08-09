@@ -1,27 +1,27 @@
-from functools import wraps
+from functools ______ wraps
 
 MAX_RETRIES = 3
 
 
-class MaxRetriesException(Exception):
+class MaxRetriesException(Exception
     pass
 
 
-def retry(func):
+___ retry(func
     """Complete this decorator, make sure
        you print the exception thrown"""
 
     @wraps(func)
-    def wrapper(*args, **kwargs):
+    ___ wrapper(*args, **kwargs
         count = 0
-        for i in range(MAX_RETRIES):
+        for i in range(MAX_RETRIES
             try:
                 func(*args, **kwargs)
             except Exception as exc:
                 print(exc)
                 continue
-            else:
-                return
+            ____
+                r_
         raise MaxRetriesException()
 
-    return wrapper
+    r_ wrapper

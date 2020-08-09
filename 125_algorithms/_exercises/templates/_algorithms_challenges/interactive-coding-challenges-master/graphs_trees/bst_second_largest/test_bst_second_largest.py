@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestBstSecondLargest(object):
+class TestBstSecondLargest(object
 
-    def test_bst_second_largest(self):
+    ___ test_bst_second_largest(self
         bst = Solution(None)
         assert_raises(TypeError, bst.find_second_largest)
         root = Node(10)
@@ -27,10 +27,10 @@ class TestBstSecondLargest(object):
         print('Success: test_bst_second_largest')
 
 
-def main():
+___ main(
     test = TestBstSecondLargest()
     test.test_bst_second_largest()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

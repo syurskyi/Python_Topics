@@ -8,7 +8,7 @@
     - no food
 
 3. dont pop food in every move, just track its index
-4. the score is just the len(body) - 1, except the head
+4. the score is just the le.(body) - 1, except the head
 
 5. what its return if no food or food is all taken?
 6. does allow the snake just back if its body only 2?
@@ -32,11 +32,11 @@ True
 >>> all(snake.move(d) == -1 for d in 'RUDL')
 True
 """
-import collections
+______ collections
 
 
 class SnakeGame:
-    def __init__(self, width, height, food):
+    ___ __init__(self, width, height, food
         """
         :type width: int, screen width
         :type height: int, screen height
@@ -45,9 +45,9 @@ class SnakeGame:
         E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1],
         the second is at [1,0].
         """
-        if not width or not height or not food:
+        __ not width or not height or not food:
             # raise error
-            return
+            r_
 
         self.width = width
         self.height = height
@@ -68,20 +68,20 @@ class SnakeGame:
             'R': ( 0,  1),
         }
 
-    def move(self, direction):
+    ___ move(self, direction
         """Moves the snake.
         :type direction: str, 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
         :rtype: int, The game's score after the move. Return -1 if game over.
 
         Game over when snake crosses the screen boundary or bites its body.
         """
-        if direction not in self.dn:
+        __ direction not in self.dn:
             # treat this move as invalid action
-            return len(self.snake) - 1
+            r_ le.(self.snake) - 1
 
-        if self.is_over:
+        __ self.is_over:
             # this game is over
-            return self.SCORE_IN_OVER
+            r_ self.SCORE_IN_OVER
 
         """
         new head will hit wall?
@@ -91,19 +91,19 @@ class SnakeGame:
         hx = x + dx
         hy = y + dy
 
-        if not (0 <= hx < self.height and 0 <= hy < self.width):
+        __ not (0 <= hx < self.height and 0 <= hy < self.width
             self.is_over = True
-            return self.SCORE_IN_OVER
+            r_ self.SCORE_IN_OVER
 
         """
         eat food or not
         """
         fx, fy = self.food[self.fi]
 
-        if fx == hx and fy == hy:
+        __ fx __ hx and fy __ hy:
             # eat that food
             self.fi += 1
-        else:
+        ____
             # move to empty cell and need to remove tail
             tail = self.snake.pop()
             self.body.discard(tail)
@@ -112,9 +112,9 @@ class SnakeGame:
         new head will hit its self?
         this detection MUST AFTER removing tail
         """
-        if (hx, hy) in self.body:
+        __ (hx, hy) in self.body:
             self.is_over = True
-            return self.SCORE_IN_OVER
+            r_ self.SCORE_IN_OVER
 
         """
         new head is valid, track it
@@ -125,7 +125,7 @@ class SnakeGame:
         """
         There is no food anymore
         """
-        if self.fi >= len(self.food):
+        __ self.fi >= le.(self.food
             self.is_over = True
 
-        return len(self.snake) - 1
+        r_ le.(self.snake) - 1

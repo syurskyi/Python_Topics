@@ -3,8 +3,8 @@ Created on Nov 4, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def numSpecialEquivGroups(self, A):
+class Solution(object
+    ___ numSpecialEquivGroups(self, A
         """
         :type A: List[str]
         :rtype: int
@@ -12,15 +12,15 @@ class Solution(object):
         hashset = set()
         for w in A:
             hashset.add(self.getHash(w))
-        return len(hashset)
+        r_ le.(hashset)
     
-    def getHash(self, word):
+    ___ getHash(self, word
         arr = [[0]*26, [0]*26]
-        for i, c in enumerate(word):
+        for i, c in enumerate(word
             arr[i%2][ord(c)-ord('a')] += 1
-        return '|'.join([','.join(str(num) for num in arr0) for arr0 in arr])
+        r_ '|'.join([','.join(str(num) for num in arr0) for arr0 in arr])
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["abcd","cdab","cbad","xyzz","zzxy","zzyx"],
         ]
@@ -29,5 +29,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

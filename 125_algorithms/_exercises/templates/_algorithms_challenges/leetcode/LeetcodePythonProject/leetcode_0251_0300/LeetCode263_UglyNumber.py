@@ -4,32 +4,32 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def isUgly_noRec(self, num):
+class Solution(object
+    ___ isUgly_noRec(self, num
         """
         :type num: int
         :rtype: bool
         """
-        if num == 0: return False
-        while num > 1:
-            if num%2 == 0:
+        __ num __ 0: r_ False
+        w___ num > 1:
+            __ num%2 __ 0:
                 num //= 2
-            elif num%3 == 0:
+            ____ num%3 __ 0:
                 num //= 3
-            elif num%5 == 0:
+            ____ num%5 __ 0:
                 num //= 5
-            else:
+            ____
                 break
-        return num == 1
+        r_ num __ 1
     
-    def isUgly(self, num):
+    ___ isUgly(self, num
         """
         :type num: int
         :rtype: bool
         """
-        if num == 0: return False
-        if num == 1: return True
-        if num%2 == 0: return self.isUgly(num/2)
-        if num%3 == 0: return self.isUgly(num/3)
-        if num%5 == 0: return self.isUgly(num/5)
-        return False
+        __ num __ 0: r_ False
+        __ num __ 1: r_ True
+        __ num%2 __ 0: r_ self.isUgly(num/2)
+        __ num%3 __ 0: r_ self.isUgly(num/3)
+        __ num%5 __ 0: r_ self.isUgly(num/5)
+        r_ False

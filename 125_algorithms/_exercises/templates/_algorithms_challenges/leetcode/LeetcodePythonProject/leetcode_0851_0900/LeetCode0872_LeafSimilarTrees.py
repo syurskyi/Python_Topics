@@ -4,38 +4,38 @@ Created on Oct 3, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
-    def leafSimilar(self, root1, root2):
+class Solution(object
+    ___ leafSimilar(self, root1, root2
         """
         :type root1: TreeNode
         :type root2: TreeNode
         :rtype: bool
         """
-        if not root1 and not root2: return True
-        if not root1 or not root2: return False
-        return self.getLeaves(root1) == self.getLeaves(root2)
+        __ not root1 and not root2: r_ True
+        __ not root1 or not root2: r_ False
+        r_ self.getLeaves(root1) __ self.getLeaves(root2)
         
     
-    def getLeaves(self, root):
+    ___ getLeaves(self, root
         res = []
         node = root
         stack = []
-        while node:
+        w___ node:
             stack.append(node)
             node = node.left
-        while stack:
+        w___ stack:
             node = stack.pop()
-            if not node.left and not node.right:
+            __ not node.left and not node.right:
                 res.append(node.val)
-            if node.right:
+            __ node.right:
                 node0 = node.right
-                while node0:
+                w___ node0:
                     stack.append(node0)
                     node0 = node0.left
-        return res
+        r_ res

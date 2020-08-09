@@ -19,49 +19,49 @@ word = "ABCB", -> returns false.
 """
 __author__ = 'Danyang'
 class Solution:
-    def exist(self, board, word):
+    ___ exist(self, board, word
         """
         dfs
         :param board: a list of lists of 1 length string
         :param word: a string
         :return: boolean
         """
-        if not board:
-            return
+        __ not board:
+            r_
         # unpack
         # board = [item[0] for item in board]
 
-        m = len(board)
-        n = len(board[0])
+        m = le.(board)
+        n = le.(board[0])
         visited = [[False for _ in xrange(n)] for _ in xrange(m)]  # avoid loop
-        for i in xrange(m):
-            for j in xrange(n):
-                if board[i][j]==word[0]:
+        for i in xrange(m
+            for j in xrange(n
+                __ board[i][j]__word[0]:
                     visited[i][j] = True
-                    if self.search(board, i, j, word[1:], visited):
-                        return True
+                    __ self.search(board, i, j, word[1:], visited
+                        r_ True
                     visited[i][j] = False
-        return False
+        r_ False
 
-    def search(self, board, pre_row, pre_col, word, visited):
-        if not word:
-            return True
+    ___ search(self, board, pre_row, pre_col, word, visited
+        __ not word:
+            r_ True
         # searching for word[0]
-        m = len(board)
-        n = len(board[0])
+        m = le.(board)
+        n = le.(board[0])
         next_positions = [(pre_row-1, pre_col), (pre_row+1, pre_col), (pre_row, pre_col-1), (pre_row, pre_col+1)]  # four directions
         for next_position in next_positions:
-            if 0<=next_position[0]<m and 0<=next_position[1]<n:  # pre-checking
-                if visited[next_position[0]][next_position[1]]==False and board[next_position[0]][next_position[1]]==word[0]:
+            __ 0<=next_position[0]<m and 0<=next_position[1]<n:  # pre-checking
+                __ visited[next_position[0]][next_position[1]]__False and board[next_position[0]][next_position[1]]__word[0]:
                     visited[next_position[0]][next_position[1]] = True
-                    if self.search(board, next_position[0], next_position[1], word[1:], visited):
-                        return True
+                    __ self.search(board, next_position[0], next_position[1], word[1:], visited
+                        r_ True
                     visited[next_position[0]][next_position[1]] = False  # restore
-        return False
+        r_ False
 
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     board = [
         "ABCE",
         "SFCS",

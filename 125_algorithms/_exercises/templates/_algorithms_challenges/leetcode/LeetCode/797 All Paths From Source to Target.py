@@ -21,24 +21,24 @@ The number of nodes in the graph will be in the range [2, 15].
 You can print different paths in any order, but you should keep the order of
 nodes inside one path.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
+    ___ allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
         G = graph
         ret = []
         visited = [False for _ in G]
-        self.dfs(G, 0, len(G) - 1, [0], visited, ret)
-        return ret
+        self.dfs(G, 0, le.(G) - 1, [0], visited, ret)
+        r_ ret
 
-    def dfs(self, G, cur, d, cur_path, visited, ret):
-        if cur == d:
+    ___ dfs(self, G, cur, d, cur_path, visited, ret
+        __ cur __ d:
             ret.append(list(cur_path))
-            return 
+            r_
 
         for nbr in G[cur]:
-            if not visited[nbr]:
+            __ not visited[nbr]:
                 visited[nbr] = True
                 cur_path.append(nbr)
                 # pre-check

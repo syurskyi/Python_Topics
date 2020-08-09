@@ -1,29 +1,29 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 RESULTS = dict(win=0, draw=1, loss=2)
 
 
-def invert_result(result):
-    if result == 0:
-        return 2
-    elif result == 2:
-        return 0
-    return result
+___ invert_result(result
+    __ result __ 0:
+        r_ 2
+    ____ result __ 2:
+        r_ 0
+    r_ result
 
 
-def parse_game(game_line):
+___ parse_game(game_line
     game = game_line.split(';')
-    if len(game) == 3 and game[2] in RESULTS:
+    __ le.(game) __ 3 and game[2] in RESULTS:
         result = RESULTS[game[2]]
-        return (game[0], result), (game[1], invert_result(result))
-    return []
+        r_ (game[0], result), (game[1], invert_result(result))
+    r_ []
 
 
-def calculate_points(stats):
-    return stats[0] * 3 + stats[1]
+___ calculate_points(stats
+    r_ stats[0] * 3 + stats[1]
 
 
-def format_table(results):
+___ format_table(results
     table = ['Team                           | MP |  W |  D |  L |  P']
 
     for team, games in sorted(
@@ -32,14 +32,14 @@ def format_table(results):
         table.append(
             team_fmt.format(team, sum(games), calculate_points(games), *games))
 
-    return '\n'.join(table)
+    r_ '\n'.join(table)
 
 
-def tally(data):
+___ tally(data
     table = defaultdict(lambda: [0, 0, 0])
 
-    for line in data.split('\n'):
-        for team, result in parse_game(line):
+    for line in data.split('\n'
+        for team, result in parse_game(line
             table[team][result] += 1
 
-    return format_table(table)
+    r_ format_table(table)

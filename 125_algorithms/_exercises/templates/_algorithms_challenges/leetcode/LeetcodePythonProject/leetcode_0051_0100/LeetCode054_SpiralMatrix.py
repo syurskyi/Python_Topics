@@ -4,47 +4,47 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def spiralOrder(self, matrix):
+class Solution(object
+    ___ spiralOrder(self, matrix
         """
         :type matrix: List[List[int]]
         :rtype: List[int]
         """
-        if not matrix:
-            return matrix
-        m = len(matrix)
-        n = len(matrix[0])
+        __ not matrix:
+            r_ matrix
+        m = le.(matrix)
+        n = le.(matrix[0])
         result = []
         
         top, down, left, right = 0, m-1, 0, n-1
         
-        while top <= down and left <= right:
-            if top == down:
-                for i in range(left, right+1):
+        w___ top <= down and left <= right:
+            __ top __ down:
+                for i in range(left, right+1
                     result.append(matrix[top][i])
                 break
               
-            if left == right:
-                for i in range(top, down+1):
+            __ left __ right:
+                for i in range(top, down+1
                     result.append(matrix[i][left])
                 break
                 
-            for i in range(left, right+1):
+            for i in range(left, right+1
                 result.append(matrix[top][i])
             top += 1
-            for i in range(top, down+1):
+            for i in range(top, down+1
                 result.append(matrix[i][right])
             right-=1
-            for i in range(right, left-1, -1):
+            for i in range(right, left-1, -1
                 result.append(matrix[down][i])
             down-=1
-            for i in range(down, top-1, -1):
+            for i in range(down, top-1, -1
                 result.append(matrix[i][left])
             left+=1
         
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         matrixes = [
             [
                 [ 1, 2, 3 ],
@@ -77,5 +77,5 @@ class Solution(object):
             print(result)
             print('-='*15+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

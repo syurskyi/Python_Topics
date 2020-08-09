@@ -14,28 +14,28 @@ Note: Recursive solution is trivial, could you do it iteratively?
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def inorderTraversal(self, root):
+class Solution(object
+    ___ inorderTraversal(self, root
         """
         :type root: TreeNode
         :rtype: List[int]
         """
         path = []
-        if root is None:
-            return path
+        __ root is None:
+            r_ path
         stack = []
-        while stack or root is not None:
-            if root is not None:
+        w___ stack or root is not None:
+            __ root is not None:
                 stack.append(root)
                 root = root.left
-            else:
+            ____
                 root = stack.pop()
                 path.append(root.val)
                 root = root.right
-        return path
+        r_ path

@@ -3,38 +3,38 @@ Created on Feb 8, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def partition(self, s):
+class Solution(object
+    ___ partition(self, s
         """
         :type s: str
         :rtype: List[List[str]]
         """
         result = []
-        if not s: return result
+        __ not s: r_ result
         self.helper(s, 0, [], result)
-        return result
+        r_ result
     
-    def helper(self, s, startInd, elem, result):
-        if startInd == len(s):
+    ___ helper(self, s, startInd, elem, result
+        __ startInd __ le.(s
             result.append(list(elem))
-            return
-        for i in range(startInd, len(s)):
-            if self.isPalindrome(s[startInd:i+1]):
+            r_
+        for i in range(startInd, le.(s)):
+            __ self.isPalindrome(s[startInd:i+1]
                 elem.append(s[startInd:i+1])
                 self.helper(s, i+1, elem, result)
                 elem.pop()
     
-    def isPalindrome(self, s):
-        if not s: return False
-        start, end = 0, len(s)-1
-        while start<=end:
-            if s[start] != s[end]:
-                return False
+    ___ isPalindrome(self, s
+        __ not s: r_ False
+        start, end = 0, le.(s)-1
+        w___ start<=end:
+            __ s[start] != s[end]:
+                r_ False
             start += 1
             end -= 1
-        return True
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             'aab',
             'aabbcc',
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

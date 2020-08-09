@@ -1,6 +1,6 @@
-class TopVotedCandidate(object):
+class TopVotedCandidate(object
 
-    def __init__(self, persons, times):
+    ___ __init__(self, persons, times
         """
         :type persons: List[int]
         :type times: List[int]
@@ -9,29 +9,29 @@ class TopVotedCandidate(object):
         hashmap = {}
         maxNum = 0
         maxP = None
-        for p, t in zip(persons, times):
+        for p, t in zip(persons, times
             hashmap[p] = hashmap.get(p, 0)+1
-            if hashmap[p] >= maxNum:
+            __ hashmap[p] >= maxNum:
                 maxP = p
                 maxNum = hashmap[p]
             self.arr.append([t, maxP])
 
-    def q(self, t):
+    ___ q(self, t
         """
         :type t: int
         :rtype: int
         """
-        i, j = 0, len(self.arr)
-        while i < j:
+        i, j = 0, le.(self.arr)
+        w___ i < j:
             mid = (i+j)//2
-            if t < self.arr[mid][0]:
+            __ t < self.arr[mid][0]:
                 j = mid
-            else:
+            ____
                 i = mid+1
-        return self.arr[i-1][1]
+        r_ self.arr[i-1][1]
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     candidate = TopVotedCandidate(
         [0,  1, 0, 1, 1],
         [24,29,31,76,81]

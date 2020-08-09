@@ -1,2 +1,2 @@
-def tri_area(base, height):
-    return base * height / 2
+___ tri_area(base, height
+    r_ base * height / 2

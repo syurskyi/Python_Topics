@@ -3,8 +3,8 @@ Created on Sep 24, 2017
 
 @author: MT
 '''
-class LogSystem(object):
-    def __init__(self):
+class LogSystem(object
+    ___ __init__(self
         self.units = {
             'Year': 4,
             'Month': 7,
@@ -15,7 +15,7 @@ class LogSystem(object):
             }
         self.timestamps = []
 
-    def put(self, id, timestamp):
+    ___ put(self, id, timestamp
         """
         :type id: int
         :type timestamp: str
@@ -23,7 +23,7 @@ class LogSystem(object):
         """
         self.timestamps.append((id, timestamp))
 
-    def retrieve(self, s, e, gra):
+    ___ retrieve(self, s, e, gra
         """
         :type s: str
         :type e: str
@@ -33,12 +33,12 @@ class LogSystem(object):
         res = []
         idx = self.units[gra]
         for timestamp in self.timestamps:
-            if timestamp[1][:idx] >= s[:idx] and\
+            __ timestamp[1][:idx] >= s[:idx] and\
                 timestamp[1][:idx] <= e[:idx]:
                 res.append(timestamp[0])
-        return res
+        r_ res
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     log = LogSystem()
     log.put(1, "2017:01:01:23:59:59")
     log.put(2, "2017:01:01:22:59:59")

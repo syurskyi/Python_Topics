@@ -4,32 +4,32 @@ Created on Nov 6, 2017
 @author: MT
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, val, nextNode=None):
+class ListNode(object
+    ___ __init__(self, val, nextNode=None
         self.val = val
         self.next = nextNode
 
-class Solution(object):
-    def mergeKLists(self, lists):
+class Solution(object
+    ___ mergeKLists(self, lists
         """
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-        import heapq
+        ______ heapq
         heap = []
         for l in lists:
-            while l:
+            w___ l:
                 heapq.heappush(heap, l.val)
                 l = l.next
         dummy = ListNode(-1)
         prev = dummy
-        while heap:
+        w___ heap:
             val = heapq.heappop(heap)
             prev.next = ListNode(val)
             prev = prev.next
-        return dummy.next
+        r_ dummy.next
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ListNode(-1, ListNode(-1, ListNode(-1))),
@@ -38,11 +38,11 @@ class Solution(object):
         ]
         for lists in testCases:
             node = self.mergeKLists(lists)
-            while node:
+            w___ node:
                 print('%s -> ' % node.val, end='')
                 node = node.next
             print('')
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,22 +1,22 @@
 class Solution:
-    def calPoints(self, ops):
+    ___ calPoints(self, ops
         """
         :type ops: List[str]
         :rtype: int
         """
-        if not ops:
-            return 0
+        __ not ops:
+            r_ 0
 
         stack = []
 
         for op in ops:
-            if op == 'C':
+            __ op __ 'C':
                 stack.pop()
-            elif op == 'D':
+            ____ op __ 'D':
                 stack.append(2 * stack[-1])
-            elif op == '+':
+            ____ op __ '+':
                 stack.append(stack[-1] + stack[-2])
-            else:
+            ____
                 stack.append(int(op))
 
-        return sum(stack)
+        r_ sum(stack)

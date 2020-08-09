@@ -2,20 +2,20 @@ class Binary:
     VALID_CHARS = set("01")
 
     @classmethod
-    def parse_binary(cls, inp):
-        if not cls.valid(inp):
+    ___ parse_binary(cls, inp
+        __ not cls.valid(inp
             raise ValueError
-        return cls.convert_to_decimal(inp)
+        r_ cls.convert_to_decimal(inp)
 
     @classmethod
-    def convert_to_decimal(cls, inp):
-        return sum([2**idx for idx, val in enumerate(reversed(inp))
-                    if val == "1"])
+    ___ convert_to_decimal(cls, inp
+        r_ sum([2**idx for idx, val in enumerate(reversed(inp))
+                    __ val __ "1"])
 
     @classmethod
-    def valid(cls, inp):
-        return set(inp) <= cls.VALID_CHARS
+    ___ valid(cls, inp
+        r_ set(inp) <= cls.VALID_CHARS
 
 
-def parse_binary(inp):
-    return Binary.parse_binary(inp)
+___ parse_binary(inp
+    r_ Binary.parse_binary(inp)

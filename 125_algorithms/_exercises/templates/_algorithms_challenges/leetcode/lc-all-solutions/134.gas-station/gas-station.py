@@ -1,5 +1,5 @@
-class Solution(object):
-  def canCompleteCircuit(self, gas, cost):
+class Solution(object
+  ___ canCompleteCircuit(self, gas, cost
     """
     :type gas: List[int]
     :type cost: List[int]
@@ -10,16 +10,16 @@ class Solution(object):
     totalcost = 0
     start = 0
     balance = 0
-    for i in range(0, len(gas)):
+    for i in range(0, le.(gas)):
       totalgas += gas[i]
       totalcost += cost[i]
 
-    for i in range(0, len(gas)):
+    for i in range(0, le.(gas)):
       balance += gas[i] - cost[i]
-      if balance < 0:
+      __ balance < 0:
         start = i + 1
         balance = 0
 
-    if totalcost <= totalgas:
-      return start
-    return -1
+    __ totalcost <= totalgas:
+      r_ start
+    r_ -1

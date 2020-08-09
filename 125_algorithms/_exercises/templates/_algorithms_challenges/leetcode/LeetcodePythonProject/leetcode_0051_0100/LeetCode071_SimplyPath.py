@@ -4,33 +4,33 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def simplifyPath(self, path):
+class Solution(object
+    ___ simplifyPath(self, path
         """
         :type path: str
         :rtype: str
         """
-        if not path: return path
+        __ not path: r_ path
         result = ''
-        if path.endswith('/'): path = path[:-1]
-        if path.startswith('/'): path = path[1:]
+        __ path.endswith('/' path = path[:-1]
+        __ path.startswith('/' path = path[1:]
         l = path.split('/')
         cont = 0
-        for i in range(len(l)-1, -1, -1):
-            if l[i] == '.' or l[i] == '':
+        for i in range(le.(l)-1, -1, -1
+            __ l[i] __ '.' or l[i] __ '':
                 continue
-            if l[i] == '..':
+            __ l[i] __ '..':
                 cont += 1
                 continue
-            if cont > 0:
+            __ cont > 0:
                 cont -= 1
-            else:
+            ____
                 result = '/' + l[i] + result
-        if result == '':
+        __ result __ '':
             result = '/'
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             '/home/',
             '/a/./b/../../c/',
@@ -41,5 +41,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*15+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

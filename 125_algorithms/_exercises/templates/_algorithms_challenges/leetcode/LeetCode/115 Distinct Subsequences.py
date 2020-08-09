@@ -3,7 +3,7 @@ Given a string S and a string T, count the number of distinct subsequences of T 
 
 A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the
  characters without disturbing the relative positions of the remaining characters. (ie, "ACE" is a subsequence of
- "ABCDE" while "AEC" is not).
+ "ABCDE" w___ "AEC" is not).
 
 Here is an example:
 S = "rabbbit", T = "rabbit"
@@ -12,7 +12,7 @@ Return 3.
 """
 __author__ = 'Danyang'
 class Solution:
-    def numDistinct(self, S, T):
+    ___ numDistinct(self, S, T
         """
         Algorithm: dp, sub-sequence and matching
 
@@ -42,23 +42,23 @@ class Solution:
         :param T: string
         :return: integer
         """
-        len_s = len(S)
-        len_t = len(T)
+        len_s = le.(S)
+        len_t = le.(T)
 
         dp = [[-1 for _ in xrange(len_s+1)] for _ in xrange(len_t+1)]
-        for col in xrange(len_s+1):
+        for col in xrange(len_s+1
             dp[0][col] = 1
-        for row in xrange(1, len_t+1):
+        for row in xrange(1, len_t+1
             dp[row][0] = 0
 
-        for row in xrange(1, len_t+1):
-            for col in xrange(1, len_s+1):
-                if S[col-1]==T[row-1]:
+        for row in xrange(1, len_t+1
+            for col in xrange(1, len_s+1
+                __ S[col-1]__T[row-1]:
                     dp[row][col] = dp[row][col-1]+dp[row-1][col-1]
-                else:
+                ____
                     dp[row][col] = dp[row][col-1]
 
-        return dp[-1][-1]
+        r_ dp[-1][-1]
 
-if __name__=="__main__":
-    assert Solution().numDistinct("rabbbit", "rabbit")==3
+__ __name____"__main__":
+    assert Solution().numDistinct("rabbbit", "rabbit")__3

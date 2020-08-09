@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestSetOfStacks(object):
+class TestSetOfStacks(object
 
-    def test_set_of_stacks(self):
+    ___ test_set_of_stacks(self
         print('Test: Push on an empty stack')
         stacks = SetOfStacks(indiv_stack_capacity=2)
         stacks.push(3)
@@ -27,10 +27,10 @@ class TestSetOfStacks(object):
         print('Success: test_set_of_stacks')
 
 
-def main():
+___ main(
     test = TestSetOfStacks()
     test.test_set_of_stacks()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

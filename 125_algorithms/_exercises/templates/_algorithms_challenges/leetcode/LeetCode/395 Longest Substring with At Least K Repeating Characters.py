@@ -21,21 +21,21 @@ Output:
 
 The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def longestSubstring(self, s, k):
+class Solution(object
+    ___ longestSubstring(self, s, k
         """
         D & C, forming boundary by the letter of min count
         :type s: str
         :type k: int
         :rtype: int
         """
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
         cnt = defaultdict(int)
         for e in s: cnt[e] += 1
@@ -45,9 +45,9 @@ class Solution(object):
             key=lambda x: cnt[x],
         )
 
-        if cnt[c] >= k:
-            return len(s)
+        __ cnt[c] >= k:
+            r_ le.(s)
 
-        return max(
+        r_ max(
             map(lambda x: self.longestSubstring(x, k), s.split(c))
         )

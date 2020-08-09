@@ -15,22 +15,22 @@ You may assume the interval's end point is always bigger than its start point.
 You may assume none of these intervals have the same start point.
 """
 class Interval:
-    def __init__(self, s=0, e=0):
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
 
     @classmethod
-    def new(cls, lst):
-        return [
+    ___ new(cls, lst
+        r_ [
             cls(s, e)
             for s, e in lst
         ]
 
-from bisect import bisect_left
+from bisect ______ bisect_left
 
 
 class Solution:
-    def findRightInterval(self, intervals):
+    ___ findRightInterval(self, intervals
         """
         given e, find the right s - bisect
 
@@ -45,17 +45,17 @@ class Solution:
         ret = []
         for itv in intervals:
             idx = bisect_left(starts, itv.end)
-            if idx >= len(starts):
+            __ idx >= le.(starts
                 ret.append(-1)
-            else:
+            ____
                 ret.append(
                     indexes[starts[idx]]
                 )
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ])) == [-1, 0, 1]
-    assert Solution().findRightInterval(Interval.new([ [1,2] ])) == [-1]
-    assert Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ])) == [-1, 2, -1]
+__ __name__ __ "__main__":
+    assert Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ])) __ [-1, 0, 1]
+    assert Solution().findRightInterval(Interval.new([ [1,2] ])) __ [-1]
+    assert Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ])) __ [-1, 2, -1]

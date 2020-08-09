@@ -3,27 +3,27 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def isOneBitCharacter(self, bits):
+class Solution(object
+    ___ isOneBitCharacter(self, bits
         """
         :type bits: List[int]
         :rtype: bool
         """
-        if not bits: return False
-        n = len(bits)
-        if n == 1: return True
+        __ not bits: r_ False
+        n = le.(bits)
+        __ n __ 1: r_ True
         dp = [1]*n
         i = 0
-        while i < n:
-            if bits[i] == 1:
+        w___ i < n:
+            __ bits[i] __ 1:
                 i += 2
-            else:
-                if i > 0:
+            ____
+                __ i > 0:
                     dp[i] += dp[i-1]
                 i += 1
-        return dp[-1] > 1
+        r_ dp[-1] > 1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 0, 0],
             [1, 1, 1, 0],
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

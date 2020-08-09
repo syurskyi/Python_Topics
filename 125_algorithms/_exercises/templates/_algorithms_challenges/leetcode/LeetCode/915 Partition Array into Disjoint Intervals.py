@@ -27,30 +27,30 @@ Note:
 0 <= A[i] <= 10^6
 It is guaranteed there is at least one way to partition A as described.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def partitionDisjoint(self, A: List[int]) -> int:
+    ___ partitionDisjoint(self, A: List[int]) -> int:
         """
         max(left) <= min(right)
 
         similar to 2 in terms of keyboard stroke count 
         """
-        n = len(A)
+        n = le.(A)
         MX = [-float('inf') for _ in range(n+1)]
         MI = [float('inf') for _ in range(n+1)]
-        for i in range(n):
+        for i in range(n
             MX[i+1] = max(M[i], A[i])
-        for i in range(n-1, -1, -1):
+        for i in range(n-1, -1, -1
             MI[i] = min(MI[i+1], A[i])
 
-        for l in range(1, n+1):
-            if MX[l] <= MI[l]:
-                return l
+        for l in range(1, n+1
+            __ MX[l] <= MI[l]:
+                r_ l
         raise
 
-    def partitionDisjoint_2(self, A: List[int]) -> int:
+    ___ partitionDisjoint_2(self, A: List[int]) -> int:
         """
         max(left) <= min(right)
         """
@@ -58,14 +58,14 @@ class Solution:
         MI = [0 for _ in A]
         MX[0] = A[0]
         MI[-1] = A[-1]
-        n = len(A)
-        for i in range(1, n):
+        n = le.(A)
+        for i in range(1, n
             MX[i] = max(MX[i-1], A[i])
-        for i in range(n-2, -1, -1):
+        for i in range(n-2, -1, -1
             MI[i] = min(MI[i+1], A[i])
 
-        for i in range(n-1):
-            if MX[i] <= MI[i+1]:
-                return i
+        for i in range(n-1
+            __ MX[i] <= MI[i+1]:
+                r_ i
 
         raise

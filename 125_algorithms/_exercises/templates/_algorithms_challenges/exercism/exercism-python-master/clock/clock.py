@@ -1,17 +1,17 @@
-class Clock(object):
-    def __init__(self, hour, minute):
+class Clock(object
+    ___ __init__(self, hour, minute
         hour += minute // 60
         self.hour = hour % 24
         self.minute = minute % 60
 
-    def __repr__(self):
-        return '{:02}:{:02}'.format(self.hour, self.minute)
+    ___ __repr__(self
+        r_ '{:02}:{:02}'.format(self.hour, self.minute)
 
-    def __eq__(self, other):
-        return self.hour == other.hour and self.minute == other.minute
+    ___ __eq__(self, other
+        r_ self.hour __ other.hour and self.minute __ other.minute
 
-    def __add__(self, minutes):
-        return Clock(self.hour, self.minute + minutes) 
+    ___ __add__(self, minutes
+        r_ Clock(self.hour, self.minute + minutes) 
 
-    def __sub__(self, minutes):
-        return Clock(self.hour, self.minute - minutes) 
+    ___ __sub__(self, minutes
+        r_ Clock(self.hour, self.minute - minutes) 

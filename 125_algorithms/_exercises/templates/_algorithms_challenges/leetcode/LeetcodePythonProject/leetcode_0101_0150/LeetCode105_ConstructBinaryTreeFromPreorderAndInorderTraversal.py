@@ -4,24 +4,24 @@ Created on May 30, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
-    def buildTree(self, preorder, inorder):
+class Solution(object
+    ___ buildTree(self, preorder, inorder
         """
         :type preorder: List[int]
         :type inorder: List[int]
         :rtype: TreeNode
         """
-        return self.helper(preorder, 0, len(preorder)-1, inorder, 0, len(inorder)-1)
+        r_ self.helper(preorder, 0, le.(preorder)-1, inorder, 0, le.(inorder)-1)
     
-    def helper(self, preorder, pstart, pend, inorder, istart, iend):
-        if pstart > pend or istart > iend:
-            return None
+    ___ helper(self, preorder, pstart, pend, inorder, istart, iend
+        __ pstart > pend or istart > iend:
+            r_ None
         val = preorder[pstart]
         root = TreeNode(val)
         k = inorder.index(val)
@@ -42,4 +42,4 @@ class Solution(object):
         root.right = self.helper(preorder, new_pstart, new_pend,\
                                 inorder, new_istart, new_iend)
         
-        return root
+        r_ root

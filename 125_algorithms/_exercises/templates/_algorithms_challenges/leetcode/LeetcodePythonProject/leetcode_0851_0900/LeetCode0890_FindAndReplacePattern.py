@@ -3,8 +3,8 @@ Created on Oct 31, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def findAndReplacePattern(self, words, pattern):
+class Solution(object
+    ___ findAndReplacePattern(self, words, pattern
         """
         :type words: List[str]
         :type pattern: str
@@ -12,27 +12,27 @@ class Solution(object):
         """
         res = []
         for word in words:
-            if self.isSimliar(word, pattern):
+            __ self.isSimliar(word, pattern
                 res.append(word)
-        return res
+        r_ res
     
-    def isSimliar(self, w1, w2):
-        if len(w1) != len(w2): return False
+    ___ isSimliar(self, w1, w2
+        __ le.(w1) != le.(w2 r_ False
         hashmap1, hashmap2 = {}, {}
-        for c1, c2 in zip(w1, w2):
-            if c1 not in hashmap1:
-                if c2 in hashmap2:
-                    return False
+        for c1, c2 in zip(w1, w2
+            __ c1 not in hashmap1:
+                __ c2 in hashmap2:
+                    r_ False
                 hashmap1[c1] = c2
                 hashmap2[c2] = c1
-            else:
-                if c2 not in hashmap2:
-                    return False
-                if hashmap2[c2] != c1 or hashmap1[c1] != c2:
-                    return False
-        return True
+            ____
+                __ c2 not in hashmap2:
+                    r_ False
+                __ hashmap2[c2] != c1 or hashmap1[c1] != c2:
+                    r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["abc","deq","mee","aqq","dkd","ccc"],
@@ -44,5 +44,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

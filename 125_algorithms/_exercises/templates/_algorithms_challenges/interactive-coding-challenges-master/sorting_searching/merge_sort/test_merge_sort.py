@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestMergeSort(object):
+class TestMergeSort(object
 
-    def test_merge_sort(self):
+    ___ test_merge_sort(self
         merge_sort = MergeSort()
 
         print('None input')
@@ -22,10 +22,10 @@ class TestMergeSort(object):
         print('Success: test_merge_sort')
 
 
-def main():
+___ main(
     test = TestMergeSort()
     test.test_merge_sort()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

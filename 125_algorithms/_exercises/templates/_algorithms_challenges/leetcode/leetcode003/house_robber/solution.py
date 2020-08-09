@@ -10,23 +10,23 @@ house, determine the maximum amount of money you can rob tonight without
 alerting the police.
 """
 
-class Solution(object):
-    def rob(self, nums):
+class Solution(object
+    ___ rob(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         t = [0 for i in range(n + 1)]
-        if n == 0:
-            return t[n]
+        __ n __ 0:
+            r_ t[n]
         t[1] = nums[0]
-        if n <= 1:
-            return t[n]
+        __ n <= 1:
+            r_ t[n]
         t[2] = max(nums[:2])
-        for i in range(3, n + 1):
+        for i in range(3, n + 1
             t[i] = max(t[i - 2] + nums[i - 1], t[i - 1])
-        return t[n]
+        r_ t[n]
 
 
 a1 = [4, 1, 6, 10, 5, 13, 2, 7]

@@ -11,32 +11,32 @@ of it; and B is not a substring of A repeated two times ("abcdabcd").
 Note:
 The length of A and B will be between 1 and 10000.
 """
-import math
+______ ma__
 
 
 class Solution:
-    def repeatedStringMatch(self, A, B):
-        r = math.ceil(len(B) / len(A))
-        for count in (r, r + 1):  # r + 1 when len(B) % len(A) == 0
-            if B in A * count:
-                return count
+    ___ repeatedStringMatch(self, A, B
+        r = ma__.ceil(le.(B) / le.(A))
+        for count in (r, r + 1  # r + 1 when le.(B) % le.(A) == 0
+            __ B in A * count:
+                r_ count
 
-        return -1
+        r_ -1
 
-    def repeatedStringMatch_TLE(self, A: str, B: str) -> int:
-        for i in range(len(A)):
+    ___ repeatedStringMatch_TLE(self, A: str, B: str) -> int:
+        for i in range(le.(A)):
             j = 0
             count = 0
-            while j < len(B):
-                if i + j - count * len(A) >= len(A):
+            w___ j < le.(B
+                __ i + j - count * le.(A) >= le.(A
                     count += 1
-                idx = i + j - count * len(A)
-                if A[idx] == B[j]:
+                idx = i + j - count * le.(A)
+                __ A[idx] __ B[j]:
                     j += 1
-                else:
+                ____
                     break
 
-            if j == len(B):
-                return count + 1
+            __ j __ le.(B
+                r_ count + 1
 
-        return -1
+        r_ -1

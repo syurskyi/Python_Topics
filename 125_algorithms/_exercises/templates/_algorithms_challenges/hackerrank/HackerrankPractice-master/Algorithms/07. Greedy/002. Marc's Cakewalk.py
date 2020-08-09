@@ -6,6 +6,6 @@ _ = input()
 calories = list(map(int, input().split()))
 calories = sorted(calories, reverse=True)
 ans = 0
-for index, cupcake in enumerate(calories):
+for index, cupcake in enumerate(calories
     ans += 2**index*cupcake
 print(ans)

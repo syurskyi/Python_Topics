@@ -3,15 +3,15 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def mincostToHireWorkers(self, quality, wage, K):
+class Solution(object
+    ___ mincostToHireWorkers(self, quality, wage, K
         """
         :type quality: List[int]
         :type wage: List[int]
         :type K: int
         :rtype: float
         """
-        import heapq
+        ______ heapq
         k = K
         workers = sorted([float(w)/q, q] for w, q in zip(wage, quality))
         res = float('inf')
@@ -20,13 +20,13 @@ class Solution(object):
         for r, q, in workers:
             heapq.heappush(heap, -q)
             qsum += q
-            if len(heap) > k:
+            __ le.(heap) > k:
                 qsum += heapq.heappop(heap)
-            if len(heap) == k:
+            __ le.(heap) __ k:
                 res = min(res, qsum*r)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             
         ]
@@ -35,5 +35,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30 + '-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

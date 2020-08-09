@@ -8,8 +8,8 @@ Given a = 1 and b = 2, return 3.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def getSum(self, a, b):
+class Solution(object
+    ___ getSum(self, a, b
         """
         circuit full-adder
         since Python don't restrict to 32bit, we need
@@ -29,11 +29,11 @@ class Solution(object):
         carry &= MSK
         out &= MSK
 
-        if carry != 0:
-            return self.getSum(out, carry)
-        else:
+        __ carry != 0:
+            r_ self.getSum(out, carry)
+        ____
             # handle overflow
-            if out < MAX:
-                return out
-            else:  # negative
-                return ~(out ^ MSK)
+            __ out < MAX:
+                r_ out
+            ____  # negative
+                r_ ~(out ^ MSK)

@@ -19,7 +19,7 @@ desiredTotal will not be larger than 300.
 
 
 class Solution:
-    def canIWin(self, maxChoosableInteger, desiredTotal):
+    ___ canIWin(self, maxChoosableInteger, desiredTotal
         """
         can p win?
         F^p_{total, choice_set - i} = not any(
@@ -32,36 +32,36 @@ class Solution:
         :rtype: bool
         """
         cache = {}
-        # set is not hashable while frozenset is
+        # set is not hashable w___ frozenset is
         choices = frozenset([choice for choice in range(1, maxChoosableInteger + 1)])
-        return self._can_win(desiredTotal, choices, sum(choices), cache)
+        r_ self._can_win(desiredTotal, choices, sum(choices), cache)
 
-    def _can_win(self, total, choices, gross,cache):
-        if (total, choices) in cache:
-            return cache[(total, choices)]
+    ___ _can_win(self, total, choices, gross,cache
+        __ (total, choices) in cache:
+            r_ cache[(total, choices)]
 
         ret = False
-        if max(choices) >= total:
+        __ max(choices) >= total:
             ret = True
 
-        elif gross < total:
+        ____ gross < total:
             ret = False
-        else:
+        ____
             for choice in choices:
-                if not self._can_win(
+                __ not self._can_win(
                         total - choice,
                         choices - set([choice]),
                         gross - choice,
                         cache
-                ):
+
                     ret = True
                     break
 
         cache[(total, choices)] = ret
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().canIWin(10, 11) == False
-    assert Solution().canIWin(10, 0) == True
-    assert Solution().canIWin(13, 11) == True
+__ __name__ __ "__main__":
+    assert Solution().canIWin(10, 11) __ False
+    assert Solution().canIWin(10, 0) __ True
+    assert Solution().canIWin(13, 11) __ True

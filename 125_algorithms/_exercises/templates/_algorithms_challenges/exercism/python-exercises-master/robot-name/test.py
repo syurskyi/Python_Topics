@@ -1,32 +1,32 @@
-import unittest
-import random
+______ unittest
+______ random
 
-from robot_name import Robot
+from robot_name ______ Robot
 
 
-class RobotTest(unittest.TestCase):
+class RobotTest(unittest.TestCase
     # assertRegex() alias to adress DeprecationWarning
     # assertRegexpMatches got renamed in version 3.2
-    if not hasattr(unittest.TestCase, "assertRegex"):
+    __ not hasattr(unittest.TestCase, "assertRegex"
         assertRegex = unittest.TestCase.assertRegexpMatches
 
     name_re = r'^[A-Z]{2}\d{3}$'
 
-    def test_has_name(self):
+    ___ test_has_name(self
         self.assertRegex(Robot().name, self.name_re)
 
-    def test_name_sticks(self):
+    ___ test_name_sticks(self
         robot = Robot()
         robot.name
         self.assertEqual(robot.name, robot.name)
 
-    def test_different_robots_have_different_names(self):
+    ___ test_different_robots_have_different_names(self
         self.assertNotEqual(
             Robot().name,
             Robot().name
         )
 
-    def test_reset_name(self):
+    ___ test_reset_name(self
         # Set a seed
         seed = "Totally random."
 
@@ -47,5 +47,5 @@ class RobotTest(unittest.TestCase):
         self.assertRegex(name2, self.name_re)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

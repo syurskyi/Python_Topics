@@ -1,5 +1,5 @@
-class Solution(object):
-  def numberOfBoomerangs(self, points):
+class Solution(object
+  ___ numberOfBoomerangs(self, points
     """
     :type points: List[List[int]]
     :rtype: int
@@ -11,9 +11,9 @@ class Solution(object):
     for p1 in points:
       d = {}
       for p2 in points:
-        if p1 != p2:
+        __ p1 != p2:
           dist = (p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2
           d[dist] = d.get(dist, 0) + 1
       for k in d:
         ans += d[k] * (d[k] - 1)
-    return ans
+    r_ ans

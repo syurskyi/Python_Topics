@@ -1,22 +1,22 @@
 class Solution:
-    def fourSumCount(self, A: List[int], B: List[int], C: List[int], D: List[int]) -> int:
+    ___ fourSumCount(self, A: List[int], B: List[int], C: List[int], D: List[int]) -> int:
       m = {}
       ans = 0
 
-      for i in range(0,len(A)):
+      for i in range(0,le.(A)):
         x = A[i]
-        for j in range(0,len(B)):
+        for j in range(0,le.(B)):
           y = B[j]
-          if(x+y not in m):
+          __(x+y not in m
             m[x+y] = 0
           m[x+y]+=1
 
-      for i in range(0,len(C)):
+      for i in range(0,le.(C)):
         x = C[i]
-        for j in range(0,len(D)):
+        for j in range(0,le.(D)):
           y = D[j]
           target = -(x+y)
-          if(target in m):
+          __(target in m
             ans+=m[target]
 
-      return ans
+      r_ ans

@@ -1,33 +1,33 @@
-class Node(object):
-    def __init__(self, value):
+class Node(object
+    ___ __init__(self, value
         pass
 
-    def value(self):
+    ___ value(self
         pass
 
-    def next(self):
-        pass
-
-
-class LinkedList(object):
-    def __init__(self, values=[]):
-        pass
-
-    def __len__(self):
-        pass
-
-    def head(self):
-        pass
-
-    def push(self, value):
-        pass
-
-    def pop(self):
-        pass
-
-    def reversed(self):
+    ___ next(self
         pass
 
 
-class EmptyListException(Exception):
+class LinkedList(object
+    ___ __init__(self, values=[]
+        pass
+
+    ___ __len__(self
+        pass
+
+    ___ head(self
+        pass
+
+    ___ push(self, value
+        pass
+
+    ___ pop(self
+        pass
+
+    ___ reversed(self
+        pass
+
+
+class EmptyListException(Exception
     pass

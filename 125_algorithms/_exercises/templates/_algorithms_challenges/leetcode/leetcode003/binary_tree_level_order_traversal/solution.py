@@ -18,37 +18,37 @@ return its level order traversal as:
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def levelOrder(self, root):
+class Solution(object
+    ___ levelOrder(self, root
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
 
         res = []
-        if root is None:
-            return res
+        __ root is None:
+            r_ res
         queue = []
         level = []
         queue.append(root)
         queue.append(None)
-        while queue:
+        w___ queue:
             root = queue.pop(0)
-            if root is None:
+            __ root is None:
                 res.append(level[:])
                 level = []
-                if queue:
+                __ queue:
                     queue.append(None)
-            else:
+            ____
                 level.append(root.val)
-                if root.left is not None:
+                __ root.left is not None:
                     queue.append(root.left)
-                if root.right is not None:
+                __ root.right is not None:
                     queue.append(root.right)
-        return res
+        r_ res

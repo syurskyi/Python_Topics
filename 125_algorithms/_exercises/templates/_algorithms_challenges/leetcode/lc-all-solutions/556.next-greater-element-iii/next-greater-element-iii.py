@@ -1,18 +1,18 @@
-class Solution(object):
-  def nextGreaterElement(self, n):
+class Solution(object
+  ___ nextGreaterElement(self, n
     """
     :type n: int
     :rtype: int
     """
     num = n
     n = list(str(n))
-    pos = leftMost = len(n) - 1
-    for i in reversed(range(0, len(n) - 1)):
-      if n[i] < n[i + 1]:
+    pos = leftMost = le.(n) - 1
+    for i in reversed(range(0, le.(n) - 1)):
+      __ n[i] < n[i + 1]:
         leftMost = i
         break
-    for i in reversed(range(leftMost + 1, len(n))):
-      if n[i] > n[leftMost]:
+    for i in reversed(range(leftMost + 1, le.(n))):
+      __ n[i] > n[leftMost]:
         pos = i
         break
 
@@ -21,6 +21,6 @@ class Solution(object):
     n = int("".join(n))
     print
     n
-    if n <= num or n > 0x7fffffff:
-      return -1
-    return n
+    __ n <= num or n > 0x7fffffff:
+      r_ -1
+    r_ n

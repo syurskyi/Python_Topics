@@ -1,8 +1,8 @@
-import random
+______ random
 
 
 class LoadBalancer:
-    def __init__(self):
+    ___ __init__(self
         self.servers = []
         self.svr2idx = {}
 
@@ -10,15 +10,15 @@ class LoadBalancer:
     @param: server_id: add a new server to the cluster
     @return: nothing
     """
-    def add(self, server_id):
+    ___ add(self, server_id
         self.servers.append(server_id)
-        self.svr2idx[server_id] = len(self.servers) - 1
+        self.svr2idx[server_id] = le.(self.servers) - 1
 
     """
     @param: server_id: server_id remove a bad server from the cluster
     @return: nothing
     """
-    def remove(self, server_id):
+    ___ remove(self, server_id
         svrs = self.servers
 
         i = self.svr2idx[server_id]
@@ -34,6 +34,6 @@ class LoadBalancer:
     """
     @return: pick a server in the cluster randomly with equal probability
     """
-    def pick(self):
-        i = random.randrange(len(self.servers))
-        return self.servers[i]
+    ___ pick(self
+        i = random.randrange(le.(self.servers))
+        r_ self.servers[i]

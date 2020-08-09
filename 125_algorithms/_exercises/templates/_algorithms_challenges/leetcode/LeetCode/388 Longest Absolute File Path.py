@@ -39,8 +39,8 @@ Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def lengthLongestPath(self, input):
+class Solution(object
+    ___ lengthLongestPath(self, input
         """
         :type input: str
         :rtype: int
@@ -50,18 +50,18 @@ class Solution(object):
         gmax = 0
         for elt in input:
             idx = elt.count('\t')
-            idx = min(idx, len(F))
+            idx = min(idx, le.(F))
             e = elt.strip('\t')
-            prev = -1 if idx == 0 else F[idx-1]
-            if idx == len(F):
-                F.append(prev + 1 + len(e))
-            else:
-                F[idx] = prev + 1 + len(e)  # reset
+            prev = -1 __ idx __ 0 else F[idx-1]
+            __ idx __ le.(F
+                F.append(prev + 1 + le.(e))
+            ____
+                F[idx] = prev + 1 + le.(e)  # reset
 
-            if '.' in elt:
+            __ '.' in elt:
                 gmax = max(gmax, F[idx])
 
-        return gmax
+        r_ gmax
 
-if __name__ == "__main__":
-    assert Solution().lengthLongestPath("dir\n    file.txt") == 12
+__ __name__ __ "__main__":
+    assert Solution().lengthLongestPath("dir\n    file.txt") __ 12

@@ -1,2 +1,2 @@
-def distance():
+___ distance(
     pass

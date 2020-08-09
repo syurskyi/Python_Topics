@@ -1,6 +1,6 @@
 Num = int(input())
 listo = []
-while len(listo) < Num:
+w___ le.(listo) < Num:
     number = input()
     listo = number.split()
 result = 0

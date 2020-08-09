@@ -18,39 +18,39 @@ return its bottom-up level order traversal as:
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def levelOrderBottom(self, root):
+class Solution(object
+    ___ levelOrderBottom(self, root
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
         stack = []
-        if root is None:
-            return stack
+        __ root is None:
+            r_ stack
         queue = []
         level = []
         queue.append(root)
         queue.append(None)
-        while queue:
+        w___ queue:
             root = queue.pop(0)
-            if root is None:
+            __ root is None:
                 stack.append(level[:])
                 level = []
-                if queue:
+                __ queue:
                     queue.append(None)
-            else:
+            ____
                 level.append(root.val)
-                if root.left is not None:
+                __ root.left is not None:
                     queue.append(root.left)
-                if root.right is not None:
+                __ root.right is not None:
                     queue.append(root.right)
         res = []
-        while stack:
+        w___ stack:
             res.append(stack.pop())
-        return res
+        r_ res

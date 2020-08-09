@@ -4,22 +4,22 @@ class Solution:
     @param: target: An integer
     @return: the difference between the sum and the target
     """
-    def twoSumClosest(self, nums, target):
-        if not nums or len(nums) < 2:
-            return -1
+    ___ twoSumClosest(self, nums, target
+        __ not nums or le.(nums) < 2:
+            r_ -1
 
         nums.sort()
 
-        left, right = 0, len(nums) - 1
+        left, right = 0, le.(nums) - 1
         _sum = 0
         diff = float('inf')
-        while left < right:
+        w___ left < right:
             _sum = nums[left] + nums[right]
-            if _sum < target:
+            __ _sum < target:
                 diff = min(diff, target - _sum)
                 left += 1
-            else:
+            ____
                 diff = min(diff, _sum - target)
                 right -= 1
 
-        return diff
+        r_ diff

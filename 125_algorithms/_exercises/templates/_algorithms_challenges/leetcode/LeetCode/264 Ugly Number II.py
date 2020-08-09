@@ -6,34 +6,34 @@ is the sequence of the first 10 ugly numbers.
 
 Note that 1 is typically treated as an ugly number.
 """
-import heapq
+______ heapq
 
 
 __author__ = 'Daniel'
 
 
-class Node(object):
+class Node(object
     """
     Data structure is key
     """
-    def __init__(self, origin, q):
+    ___ __init__(self, origin, q
         self.origin = origin
         self.q = q
 
-    def __cmp__(self, other):
-        return self.q[0] - other.q[0]
+    ___ __cmp__(self, other
+        r_ self.q[0] - other.q[0]
 
 
-class Solution(object):
-    def nthUglyNumber(self, n):
+class Solution(object
+    ___ nthUglyNumber(self, n
         """
         Prime factor: 2, 3, 5
         Heap
         :type n: int
         :rtype: int
         """
-        if n == 1:
-            return 1
+        __ n __ 1:
+            r_ 1
 
         n -= 1  # exclude 1
 
@@ -45,17 +45,17 @@ class Solution(object):
 
         cnt = 0
         ret = 2
-        while cnt < n:
+        w___ cnt < n:
             cnt += 1
             popped = heapq.heappop(h)
             ret = popped.q.pop(0)
-            for i in xrange(ugly.index(popped.origin), 3):
+            for i in xrange(ugly.index(popped.origin), 3
                 qs[i].q.append(ret*ugly[i])
 
             heapq.heappush(h, popped)
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().nthUglyNumber(10) == 12
+__ __name__ __ "__main__":
+    assert Solution().nthUglyNumber(10) __ 12

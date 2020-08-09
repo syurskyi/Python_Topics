@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from color import Color
+from color ______ Color
 
 
 @pytest.mark.parametrize("color, expected", [
@@ -12,9 +12,9 @@ from color import Color
     ("orange", (255, 128, 0)),
     ("puke", None),
 ])
-def test_color_class(color, expected):
+___ test_color_class(color, expected
     c = Color(color)
-    assert c.rgb == expected
+    assert c.rgb __ expected
 
 
 @pytest.mark.parametrize("rgb, expected", [
@@ -25,8 +25,8 @@ def test_color_class(color, expected):
     ((0, 128, 0), "#008000"),
     ((255, 128, 0), "#ff8000"),
 ])
-def test_color_classmethod_rgb2hex(rgb, expected):
-    assert Color.rgb2hex(rgb) == expected
+___ test_color_classmethod_rgb2hex(rgb, expected
+    assert Color.rgb2hex(rgb) __ expected
 
 
 @pytest.mark.parametrize("rgb", [
@@ -36,8 +36,8 @@ def test_color_classmethod_rgb2hex(rgb, expected):
     ((256, 0, 0)),
 ])
 
-def test_color_rgb2hex_bad_value(rgb):
-    with pytest.raises(ValueError):
+___ test_color_rgb2hex_bad_value(rgb
+    with pytest.raises(ValueError
         Color.rgb2hex(rgb)
 
 
@@ -49,8 +49,8 @@ def test_color_rgb2hex_bad_value(rgb):
     ("#008000", (0, 128, 0)),
     ("#ff8000", (255, 128, 0)),
 ])
-def test_color_classmethod_hex2rgb(hex, expected):
-    assert Color.hex2rgb(hex) == expected
+___ test_color_classmethod_hex2rgb(hex, expected
+    assert Color.hex2rgb(hex) __ expected
 
 
 @pytest.mark.parametrize("value", [
@@ -59,21 +59,21 @@ def test_color_classmethod_hex2rgb(hex, expected):
     ("#stopit"),
     ("pink"),
 ])
-def test_color_hex2rgb_bad_value(value):
-    with pytest.raises(ValueError):
+___ test_color_hex2rgb_bad_value(value
+    with pytest.raises(ValueError
         Color.hex2rgb(value)
 
 
-def test_color_string_output():
+___ test_color_string_output(
     color = Color("brown")
-    assert str(color) == "(165, 42, 42)"
+    assert str(color) __ "(165, 42, 42)"
 
 
-def test_color_repr_output():
+___ test_color_repr_output(
     color = Color("brown")
-    assert repr(color) == "Color('brown')"
+    assert repr(color) __ "Color('brown')"
 
 
-def test_unknown_color():
+___ test_unknown_color(
     color = Color("puke green")
-    assert str(color) == "Unknown"
+    assert str(color) __ "Unknown"

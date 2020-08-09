@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def verifyPreorder(self, preorder):
+    ___ verifyPreorder(self, preorder
         """
         * Draw a valid BST, and swap a pair of nodes to get an invalid BST.
         * Get the preorder traversal of the 2 BSTs and compare and contrast them.
@@ -16,17 +16,17 @@ class Solution:
         left_finished = None
         stk = []
         for num in preorder:
-            if left_finished and num < left_finished:
-                return False
+            __ left_finished and num < left_finished:
+                r_ False
 
-            while stk and stk[-1] < num:
+            w___ stk and stk[-1] < num:
                 left_finished = stk.pop()
 
             stk.append(num)
 
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     preorder = [3, 5, 2, 1, 4, 7, 6, 9, 8, 10]
-    assert Solution().verifyPreorder(preorder) == False
+    assert Solution().verifyPreorder(preorder) __ False

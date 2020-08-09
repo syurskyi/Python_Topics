@@ -4,41 +4,41 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def minAbbreviation(self, target, dictionary):
+class Solution(object
+    ___ minAbbreviation(self, target, dictionary
         diffs = []
-        m = len(target)
+        m = le.(target)
         for word in dictionary:
-            if len(word) != m: continue
+            __ le.(word) != m: continue
             bits = 0
-            for i, c in enumerate(word):
-                if c != target[i]:
+            for i, c in enumerate(word
+                __ c != target[i]:
                     bits += 2**i
             diffs.append(bits)
-        if not diffs:
-            return str(m)
+        __ not diffs:
+            r_ str(m)
         abbrs = []
-        for i in range(2**m):
-            if all(d&i for d in diffs):
+        for i in range(2**m
+            __ all(d&i for d in diffs
                 abbrs.append(self.abbr(target, i))
-        return min(abbrs, key=lambda x: len(x))
+        r_ min(abbrs, key=lambda x: le.(x))
     
-    def abbr(self, target, num):
+    ___ abbr(self, target, num
         word, count = '', 0
         for w in target:
-            if num & 1 == 1:
-                if count:
+            __ num & 1 __ 1:
+                __ count:
                     word += str(count)
                     count = 0
                 word += w
-            else:
+            ____
                 count += 1
             num >>= 1
-        if count:
+        __ count:
             word += str(count)
-        return word
+        r_ word
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "apple",
@@ -56,5 +56,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

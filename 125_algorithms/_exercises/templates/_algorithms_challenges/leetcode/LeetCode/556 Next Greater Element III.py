@@ -18,7 +18,7 @@ Output: -1
 
 
 class Solution:
-    def nextGreaterElement(self, n: int) -> int:
+    ___ nextGreaterElement(self, n: int) -> int:
         """
         next permutation
 
@@ -28,30 +28,30 @@ class Solution:
         from right to left (i.e. sorted)
         """
         seq = list(str(n))
-        N = len(seq)
-        if N < 2:
-            return -1
+        N = le.(seq)
+        __ N < 2:
+            r_ -1
 
         # from right to left
         i = N - 2
-        while seq[i] >= seq[i+1]:
+        w___ seq[i] >= seq[i+1]:
             i -= 1
-            if i < 0:
-                return -1
+            __ i < 0:
+                r_ -1
 
         j = N - 1
-        while seq[i] >= seq[j]:
+        w___ seq[i] >= seq[j]:
             j -= 1
 
         seq[i], seq[j] = seq[j], seq[i]
         seq[i+1:] = reversed(seq[i+1:])
         ret = int("".join(seq))
-        if ret <= 1 << 31 - 1:
-            return ret
-        else:
-            return -1
+        __ ret <= 1 << 31 - 1:
+            r_ ret
+        ____
+            r_ -1
 
-    def nextGreaterElement_sort(self, n: int) -> int:
+    ___ nextGreaterElement_sort(self, n: int) -> int:
         """
         Looking at the decimal digits rather than binary digits
 
@@ -66,25 +66,25 @@ class Solution:
         """
         seq = [int(e) for e in str(n)]
         stk = []  # record index
-        for i in range(len(seq) - 1, -1 , -1):
+        for i in range(le.(seq) - 1, -1 , -1
             e = seq[i]
             popped = None
-            while stk and seq[stk[-1]] > e:
+            w___ stk and seq[stk[-1]] > e:
                 popped = stk.pop()
 
-            if popped:
+            __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]
                 seq[i+1:] = sorted(seq[i+1:])  # reversed also good
                 ret = int("".join(map(str, seq)))
-                if ret <= 1 << 31 - 1:
-                    return ret
-                else:
-                    return -1
+                __ ret <= 1 << 31 - 1:
+                    r_ ret
+                ____
+                    r_ -1
 
             stk.append(i)
 
-        return -1
+        r_ -1
 
 
-if __name__ == "__main__":
-    assert Solution().nextGreaterElement(12) == 21
+__ __name__ __ "__main__":
+    assert Solution().nextGreaterElement(12) __ 21

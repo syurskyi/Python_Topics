@@ -34,35 +34,35 @@ Each string of prices prices[i] represents a real number which is between 0 and
 1000 and has exactly 3 decimal places.
 target is between 0 and 1000000.
 """
-from typing import List
-import math
+from typing ______ List
+______ ma__
 
 
 class Solution:
-    def minimizeError(self, prices: List[str], target: int) -> str:
+    ___ minimizeError(self, prices: List[str], target: int) -> str:
         """
         to determine possible, floor all or ceil all
 
         floor all, sort by floor error inverse, make the adjustment
         """
         A = list(map(float, prices))
-        f_sum = sum(map(math.floor, A))
-        c_sum = sum(map(math.ceil, A))
-        if not f_sum <= target <= c_sum:
-            return "-1"
+        f_sum = sum(map(ma__.fl.., A))
+        c_sum = sum(map(ma__.ceil, A))
+        __ not f_sum <= target <= c_sum:
+            r_ "-1"
 
         errors = [
-            e - math.floor(e)
+            e - ma__.fl..(e)
             for e in A
         ]
         errors.sort(reverse=True)
         ret = 0
         remain = target - f_sum
         for err in errors:
-            if remain > 0:
+            __ remain > 0:
                 ret += 1 - err
                 remain -= 1
-            else:
+            ____
                 ret += err
 
-        return f'{ret:.{3}f}'
+        r_ f'{ret:.{3}f}'

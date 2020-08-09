@@ -1,8 +1,8 @@
-import glob
-import json
-import os
-import re
-from urllib.request import urlretrieve
+______ glob
+______ json
+______ os
+______ re
+from urllib.request ______ urlretrieve
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/omdb/'
 MOVIES = ('bladerunner2049 fightclub glengary '
@@ -19,23 +19,23 @@ for movie in MOVIES:
 files = glob.glob(os.path.join(TMP, '*json'))
 
 
-def get_movie_data(files=files):
+___ get_movie_data(files=files
     result = []
     for file in files:
         with open(file) as f:
             result.append(json.load(f))
-    return result
+    r_ result
 
 
-def get_single_comedy(movies):
-    return [m['Title'] for m in movies if 'Comedy' in m['Genre'].split(', ')][0]
+___ get_single_comedy(movies
+    r_ [m['Title'] for m in movies __ 'Comedy' in m['Genre'].split(', ')][0]
 
 
-def get_movie_most_nominations(movies):
+___ get_movie_most_nominations(movies
     r = re.compile(r'(\d+) nomin')
-    return sorted([(m['Title'], m['Awards']) for m in movies], key=lambda x: int(r.findall(x[1])[0]))[-1][0]
+    r_ sorted([(m['Title'], m['Awards']) for m in movies], key=lambda x: int(r.findall(x[1])[0]))[-1][0]
 
 
-def get_movie_longest_runtime(movies):
+___ get_movie_longest_runtime(movies
     r = re.compile(r'(\d+) min')
-    return sorted([(m['Title'], int(r.findall(m['Runtime'])[0])) for m in movies], key=lambda x: -x[1])[0][0]
+    r_ sorted([(m['Title'], int(r.findall(m['Runtime'])[0])) for m in movies], key=lambda x: -x[1])[0][0]

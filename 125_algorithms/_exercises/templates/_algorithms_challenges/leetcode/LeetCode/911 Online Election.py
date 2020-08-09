@@ -29,13 +29,13 @@ times is a strictly increasing array with all elements in [0, 10^9].
 TopVotedCandidate.q is called at most 10000 times per test case.
 TopVotedCandidate.q(int t) is always called with t >= times[0].
 """
-from typing import List
-from collections import defaultdict
-import bisect
+from typing ______ List
+from collections ______ defaultdict
+______ bisect
 
 
 class TopVotedCandidate:
-    def __init__(self, persons: List[int], times: List[int]):
+    ___ __init__(self, persons: List[int], times: List[int]
         """
         Running top vote
         Need to maintain list
@@ -48,18 +48,18 @@ class TopVotedCandidate:
         tp = sorted(zip(times, persons))
         for t, p in tp:
             counter[p] += 1
-            if not self.maxes or counter[self.maxes[-1][1]] <= counter[p]:
+            __ not self.maxes or counter[self.maxes[-1][1]] <= counter[p]:
                 self.maxes.append((t, p))
 
-    def q(self, t: int) -> int:
+    ___ q(self, t: int) -> int:
         i = bisect.bisect(self.maxes, (t, 0))
         # equal
-        if i < len(self.maxes) and self.maxes[i][0] == t:
-            return self.maxes[i][1]
+        __ i < le.(self.maxes) and self.maxes[i][0] __ t:
+            r_ self.maxes[i][1]
 
         # smaller
         i -= 1
-        return self.maxes[i][1]
+        r_ self.maxes[i][1]
 
 
 # Your TopVotedCandidate object will be instantiated and called as such:

@@ -4,24 +4,24 @@ Created on Mar 9, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def getHint(self, secret, guess):
+class Solution(object
+    ___ getHint(self, secret, guess
         bulls = set()
         hashmap = {}
         for i, (c1, c2) in enumerate(zip(secret, guess)):
-            if c1 == c2:
+            __ c1 __ c2:
                 bulls.add(i)
-            else:
+            ____
                 hashmap[c1] = hashmap.get(c1, 0)+1
         cows = 0
-        for i, c in enumerate(guess):
-            if i not in bulls:
-                if c in hashmap and hashmap[c] > 0:
+        for i, c in enumerate(guess
+            __ i not in bulls:
+                __ c in hashmap and hashmap[c] > 0:
                     hashmap[c] -= 1
                     cows += 1
-        return '%sA%sB' % (len(bulls), cows)
+        r_ '%sA%sB' % (le.(bulls), cows)
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('1807', '7810'),
             ('1123', '0111'),
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

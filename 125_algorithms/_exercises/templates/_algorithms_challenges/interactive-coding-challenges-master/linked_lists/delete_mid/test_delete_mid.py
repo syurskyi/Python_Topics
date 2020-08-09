@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestDeleteNode(object):
+class TestDeleteNode(object
 
-    def test_delete_node(self):
+    ___ test_delete_node(self
         print('Test: Empty list, null node to delete')
         linked_list = MyLinkedList(None)
         linked_list.delete_node(None)
@@ -36,10 +36,10 @@ class TestDeleteNode(object):
         print('Success: test_delete_node')
 
 
-def main():
+___ main(
     test = TestDeleteNode()
     test.test_delete_node()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

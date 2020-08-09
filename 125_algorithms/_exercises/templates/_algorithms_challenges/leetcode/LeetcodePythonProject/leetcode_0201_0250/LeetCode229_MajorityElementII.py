@@ -4,34 +4,34 @@ Created on Feb 23, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def majorityElement(self, nums):
+class Solution(object
+    ___ majorityElement(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        if not nums: return []
+        __ not nums: r_ []
         count1, count2, candidate1, candidate2 = 0, 0, 0, 0
         for n in nums:
-            if n == candidate1:
+            __ n __ candidate1:
                 count1 += 1
-            elif n == candidate2:
+            ____ n __ candidate2:
                 count2 += 1
-            elif count1 == 0:
+            ____ count1 __ 0:
                 candidate1, count1 = n, 1
-            elif count2 == 0:
+            ____ count2 __ 0:
                 candidate2, count2 = n, 1
-            else:
+            ____
                 count1 -= 1
                 count2 -= 1
         result = []
-        if nums.count(candidate1) > len(nums)//3:
+        __ nums.count(candidate1) > le.(nums)//3:
             result.append(candidate1)
-        if nums.count(candidate2) > len(nums)//3 and candidate2 != candidate1:
+        __ nums.count(candidate2) > le.(nums)//3 and candidate2 != candidate1:
             result.append(candidate2)
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
 #             [1, 2, 3],
             [2, 2, 1, 3],
@@ -42,5 +42,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

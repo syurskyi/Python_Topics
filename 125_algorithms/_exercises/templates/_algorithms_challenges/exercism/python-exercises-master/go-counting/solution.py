@@ -7,24 +7,24 @@ DIRECTIONS = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
 
 class Board:
-    def __init__(self, board):
+    ___ __init__(self, board
         self.board = board
-        self.width = len(self.board[0])
-        self.height = len(self.board)
+        self.width = le.(self.board[0])
+        self.height = le.(self.board)
 
-    def valid(self, x, y):
-        return x >= 0 and x < self.width and y >= 0 and y < self.height
+    ___ valid(self, x, y
+        r_ x >= 0 and x < self.width and y >= 0 and y < self.height
 
-    def walk(self, x, y,
+    ___ walk(self, x, y,
              visited_territory=[],
              visited_coords=[],
-             visited_stones=[]):
-        if not (x, y) in visited_coords and self.valid(x, y):
+             visited_stones=[]
+        __ not (x, y) in visited_coords and self.valid(x, y
             s = self.board[y][x]
-            if s in STONES:
-                if s not in visited_stones:
-                    return (visited_territory, visited_stones + [s])
-            else:  # s is empty
+            __ s in STONES:
+                __ s not in visited_stones:
+                    r_ (visited_territory, visited_stones + [s])
+            ____  # s is empty
                 for d in DIRECTIONS:
                     visited = self.walk(x + d[0], y + d[1],
                                         visited_territory + [(x, y)],
@@ -33,30 +33,30 @@ class Board:
                     visited_territory = visited[0]
                     visited_stones = visited[1]
 
-        return (visited_territory, visited_stones)
+        r_ (visited_territory, visited_stones)
 
-    def territory(self, x, y):
-        if not self.valid(x, y):
+    ___ territory(self, x, y
+        __ not self.valid(x, y
             raise ValueError('invalid coordinate')
-        if self.board[y][x] in STONES:
-            return (NONE, set())
+        __ self.board[y][x] in STONES:
+            r_ (NONE, set())
 
         visited_territory, visited_stones = self.walk(x, y)
         result = set(visited_territory)
 
-        if len(visited_stones) == 1:
-            return (visited_stones[0], result)
-        return (NONE, result)
+        __ le.(visited_stones) __ 1:
+            r_ (visited_stones[0], result)
+        r_ (NONE, result)
 
-    def territories(self):
+    ___ territories(self
         owners = STONES + [NONE]
         result = dict([(owner, set()) for owner in owners])
         visited = set()
-        for y in range(self.height):
-            for x in range(self.width):
-                if not (x, y) in visited:
+        for y in range(self.height
+            for x in range(self.width
+                __ not (x, y) in visited:
                     owner, owned_territories = self.territory(x, y)
                     result[owner].update(owned_territories)
                     visited.update(owned_territories)
 
-        return result
+        r_ result

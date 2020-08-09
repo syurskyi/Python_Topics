@@ -1,27 +1,27 @@
-class Node(object):
+class Node(object
 
-    def __init__(self, data, next=None):
+    ___ __init__(self, data, next=None
         self.data = data
         self.next = next
 
 
-class Stack(object):
+class Stack(object
 
-    def __init__(self, top=None):
+    ___ __init__(self, top=None
         self.top = top
 
-    def push(self, data):
+    ___ push(self, data
         self.top = Node(data, self.top)
 
-    def pop(self):
-        if self.top is None:
-            return None
+    ___ pop(self
+        __ self.top is None:
+            r_ None
         data = self.top.data
         self.top = self.top.next
-        return data
+        r_ data
 
-    def peek(self):
-        return self.top.data if self.top is not None else None
+    ___ peek(self
+        r_ self.top.data __ self.top is not None else None
 
-    def is_empty(self):
-        return self.peek() is None
+    ___ is_empty(self
+        r_ self.peek() is None

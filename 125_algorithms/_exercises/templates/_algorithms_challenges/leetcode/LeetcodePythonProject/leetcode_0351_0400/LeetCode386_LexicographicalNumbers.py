@@ -4,23 +4,23 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def lexicalOrder(self, n):
+class Solution(object
+    ___ lexicalOrder(self, n
         res = []
         curr = 1
-        for _ in range(n):
+        for _ in range(n
             res.append(curr)
-            if curr*10 <= n:
+            __ curr*10 <= n:
                 curr *= 10
-            elif curr%10 != 9 and curr+1 <= n:
+            ____ curr%10 != 9 and curr+1 <= n:
                 curr += 1
-            else:
-                while (curr//10)%10 == 9:
+            ____
+                w___ (curr//10)%10 __ 9:
                     curr //= 10
                 curr = curr//10+1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             113,
         ]
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -3,14 +3,14 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-class Interval(object):
-    def __init__(self, start, end, height):
+class Interval(object
+    ___ __init__(self, start, end, height
         self.start = start
         self.end = end
         self.height = height
 
-class Solution(object):
-    def fallingSquares(self, positions):
+class Solution(object
+    ___ fallingSquares(self, positions
         """
         :type positions: List[List[int]]
         :rtype: List[int]
@@ -22,19 +22,19 @@ class Solution(object):
             cur = Interval(pos[0], pos[0]+pos[1], pos[1])
             h = max(h, self.getHeight(intervals, cur))
             res.append(h)
-        return res
+        r_ res
     
-    def getHeight(self, intervals, cur):
+    ___ getHeight(self, intervals, cur
         preMaxHeight = 0
         for i in intervals:
-            if i.end <= cur.start: continue
-            if i.start >= cur.end: continue
+            __ i.end <= cur.start: continue
+            __ i.start >= cur.end: continue
             preMaxHeight = max(preMaxHeight, i.height)
         cur.height += preMaxHeight
         intervals.append(cur)
-        return cur.height
+        r_ cur.height
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[1, 2], [2, 3], [6, 1]],
             [[100, 100], [200, 100]],
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

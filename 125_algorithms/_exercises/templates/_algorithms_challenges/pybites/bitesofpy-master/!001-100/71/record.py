@@ -1,13 +1,13 @@
-from pprint import pprint
+from pprint ______ pprint
 
 
-class RecordScore():
+class RecordScore(
     """Class to track a game's maximum score"""
-    def __init__(self):
+    ___ __init__(self
         self.max = 0
 
-    def __call__(self, *args, **kwargs):
-        if self.max < args[0]:
+    ___ __call__(self, *args, **kwargs
+        __ self.max < args[0]:
             self.max = args[0]
-        return self.max
+        r_ self.max
 

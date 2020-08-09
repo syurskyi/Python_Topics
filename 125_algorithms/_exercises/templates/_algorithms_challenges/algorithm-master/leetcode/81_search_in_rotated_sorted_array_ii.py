@@ -1,15 +1,15 @@
 class Solution:
-    def search(self, nums, target):
+    ___ search(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: bool
         """
-        if not nums:
-            return False
+        __ not nums:
+            r_ False
 
         for num in nums:
-            if num == target:
-                return True
+            __ num __ target:
+                r_ True
 
-        return False
+        r_ False

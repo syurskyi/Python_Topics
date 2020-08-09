@@ -1,34 +1,34 @@
-import pytest
+______ pytest
 
-from Previous.account import Account
+from Previous.account ______ Account
 
 
 @pytest.fixture()
-def account():
-    return Account()
+___ account(
+    r_ Account()
 
 
-def test_balance(account):
-    assert account.balance == 0
+___ test_balance(account
+    assert account.balance __ 0
     account + 10
-    assert account.balance == 10
+    assert account.balance __ 10
     account - 5
-    assert account.balance == 5
+    assert account.balance __ 5
 
 
-def test_without_contextman_balance_negative(account):
-    assert account.balance == 0
+___ test_without_contextman_balance_negative(account
+    assert account.balance __ 0
     account - 5
-    assert account.balance == -5
+    assert account.balance __ -5
 
 
-def test_with_contextman_performs_rollback(account):
-    assert account.balance == 0
+___ test_with_contextman_performs_rollback(account
+    assert account.balance __ 0
     with account as acc:
         acc - 5
         acc - 5
-    assert account.balance == 0
+    assert account.balance __ 0
     # adding this ensures all required dunders are used:
     with account as acc:
         acc + 10
-    assert account.balance == 10
+    assert account.balance __ 10

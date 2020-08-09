@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestFindLoopStart(object):
+class TestFindLoopStart(object
 
-    def test_find_loop_start(self):
+    ___ test_find_loop_start(self
         print('Test: Empty list')
         linked_list = MyLinkedList()
         assert_equal(linked_list.find_loop_start(), None)
@@ -40,10 +40,10 @@ class TestFindLoopStart(object):
         print('Success: test_find_loop_start')
 
 
-def main():
+___ main(
     test = TestFindLoopStart()
     test.test_find_loop_start()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

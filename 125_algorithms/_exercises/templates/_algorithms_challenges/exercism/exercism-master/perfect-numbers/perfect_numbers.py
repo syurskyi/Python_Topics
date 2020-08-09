@@ -1,14 +1,14 @@
-import math
-from functools import reduce
+______ ma__
+from functools ______ reduce
 
 
-def is_perfect(number):
-    return sum(factors(number)) == number
+___ is_perfect(number
+    r_ sum(factors(number)) __ number
 
 
-def factors(n):
-    return set(reduce(list.__add__, pairs_of_factors(n))) - set([n])
+___ factors(n
+    r_ set(reduce(list.__add__, pairs_of_factors(n))) - set([n])
 
 
-def pairs_of_factors(n):
-    return [[i, n / i] for i in range(1, int(math.sqrt(n)) + 1) if n % i == 0]
+___ pairs_of_factors(n
+    r_ [[i, n / i] for i in range(1, int(ma__.sqrt(n)) + 1) __ n % i __ 0]

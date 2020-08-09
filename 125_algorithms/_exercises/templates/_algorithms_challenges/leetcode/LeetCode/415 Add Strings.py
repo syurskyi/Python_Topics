@@ -11,10 +11,10 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 
 
 class Solution:
-    def int(self, n):
-        return ord(n) - ord("0")
+    ___ int(self, n
+        r_ ord(n) - ord("0")
 
-    def addStrings(self, num1, num2):
+    ___ addStrings(self, num1, num2
         """
         :type num1: str
         :type num2: str
@@ -22,35 +22,35 @@ class Solution:
         """
         ret = []
         # let num2 to be one has more digit
-        if len(num1) > len(num2):
+        __ le.(num1) > le.(num2
             num1, num2 = num2, num1
 
         num1 = num1[::-1]
         num2 = num2[::-1]
         carry = 0
         idx = 0
-        while idx < len(num2):
-            if idx < len(num1):
+        w___ idx < le.(num2
+            __ idx < le.(num1
                 s = self.int(num1[idx]) + self.int(num2[idx]) + carry
-            else:
+            ____
                 s = self.int(num2[idx]) + carry
 
-            if s >= 10:
+            __ s >= 10:
                 s -= 10
                 carry = 1
-            else:
+            ____
                 carry = 0
 
             ret.append(s)
             idx += 1
 
-        if carry:
+        __ carry:
             ret.append(carry)
 
-        return "".join(map(str, ret[::-1]))
+        r_ "".join(map(str, ret[::-1]))
 
 
-if __name__ == "__main__":
-    assert Solution().addStrings("9999", "1") == "10000"
-    assert Solution().addStrings("9999", "9999") == "19998"
-    assert Solution().addStrings("23", "8") == "31"
+__ __name__ __ "__main__":
+    assert Solution().addStrings("9999", "1") __ "10000"
+    assert Solution().addStrings("9999", "9999") __ "19998"
+    assert Solution().addStrings("23", "8") __ "31"

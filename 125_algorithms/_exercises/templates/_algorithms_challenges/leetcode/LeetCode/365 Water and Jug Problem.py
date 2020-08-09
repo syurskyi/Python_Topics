@@ -21,12 +21,12 @@ Output: False
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def canMeasureWater(self, x, y, z):
+class Solution(object
+    ___ canMeasureWater(self, x, y, z
         """
         Number theory
         Use the property of Bezout's identity and check if z is a multiple of GCD(x, y)
-        https://discuss.leetcode.com/topic/49238/math-solution-java-solution
+        https://discuss.leetcode.com/topic/49238/ma__-solution-java-solution
 
         ax + by = d
         :type x: int
@@ -34,13 +34,13 @@ class Solution(object):
         :type z: int
         :rtype: bool
         """
-        if x + y < z: return False
-        if x == z or y == z: return True
+        __ x + y < z: r_ False
+        __ x __ z or y __ z: r_ True
 
-        return z % self.gcd(x, y) == 0
+        r_ z % self.gcd(x, y) __ 0
 
-    def gcd(self, a, b):
-        while b:
+    ___ gcd(self, a, b
+        w___ b:
             a, b = b, a%b
-        return a
+        r_ a
 

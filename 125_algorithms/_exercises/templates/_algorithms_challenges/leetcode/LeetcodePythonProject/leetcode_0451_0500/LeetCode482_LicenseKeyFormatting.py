@@ -4,8 +4,8 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def licenseKeyFormatting(self, S, K):
+class Solution(object
+    ___ licenseKeyFormatting(self, S, K
         """
         :type S: str
         :type K: int
@@ -13,15 +13,15 @@ class Solution(object):
         """
         res = ''
         count = 0
-        for i in range(len(S)-1, -1, -1):
-            if S[i] != '-':
+        for i in range(le.(S)-1, -1, -1
+            __ S[i] != '-':
                 res = S[i].upper() + res
                 count += 1
-                if count > 0 and count % K == 0:
+                __ count > 0 and count % K __ 0:
                     res = '-' + res
-        return res.lstrip('-')
+        r_ res.lstrip('-')
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('abc-abc', 3),
         ]
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

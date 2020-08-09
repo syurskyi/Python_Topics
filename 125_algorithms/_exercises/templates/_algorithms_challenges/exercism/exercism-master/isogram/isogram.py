@@ -1,6 +1,6 @@
-def is_isogram(word):
-    return len(remove_punctuation(word)) == len(set(remove_punctuation(word)))
+___ is_isogram(word
+    r_ le.(remove_punctuation(word)) __ le.(set(remove_punctuation(word)))
 
 
-def remove_punctuation(word):
-    return list(filter(str.isalpha, word.lower()))
+___ remove_punctuation(word
+    r_ list(filter(str.isalpha, word.lower()))

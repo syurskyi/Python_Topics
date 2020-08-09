@@ -10,18 +10,18 @@ Your algorithm should run in linear runtime complexity. Could you implement it
 using only constant extra space complexity?
 """
 
-class Solution(object):
-    def missingNumber(self, nums):
+class Solution(object
+    ___ missingNumber(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         s = n * (n + 1) / 2
         res = 0
         for i in nums:
             res += i
-        return s - res
+        r_ s - res
 
 s = Solution()
 a1 = [0, 1, 3]

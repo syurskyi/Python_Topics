@@ -4,22 +4,22 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def frequencySort(self, s):
+class Solution(object
+    ___ frequencySort(self, s
         hashmap = {}
         for c in s:
             hashmap[c] = hashmap.get(c, 0)+1
-        bucket = [[] for _ in range(len(s)+1)]
-        for c, count in hashmap.items():
+        bucket = [[] for _ in range(le.(s)+1)]
+        for c, count in hashmap.items(
             bucket[count].append(c)
         result = ''
-        for i in range(len(bucket)-1, -1, -1):
-            while bucket[i]:
+        for i in range(le.(bucket)-1, -1, -1
+            w___ bucket[i]:
                 c = bucket[i].pop()
                 result += c*(i)
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             'aaaa',
             'tree',
@@ -32,7 +32,7 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 
 

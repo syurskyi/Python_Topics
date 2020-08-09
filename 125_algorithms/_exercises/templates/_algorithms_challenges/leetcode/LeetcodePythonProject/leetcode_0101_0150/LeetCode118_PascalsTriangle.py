@@ -3,20 +3,20 @@ Created on May 29, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def generate(self, numRows):
+class Solution(object
+    ___ generate(self, numRows
         """
         :type numRows: int
         :rtype: List[List[int]]
         """
-        if numRows <= 0: return []
+        __ numRows <= 0: r_ []
         res = [[1]]
-        for i in range(1, numRows):
+        for i in range(1, numRows
             tmp = []
-            for j in range(i+1):
-                if j == 0 or j == i:
+            for j in range(i+1
+                __ j __ 0 or j __ i:
                     tmp.append(1)
-                else:
+                ____
                     tmp.append(res[i-1][j] + res[i-1][j-1])
             res.append(tmp)
-        return res
+        r_ res

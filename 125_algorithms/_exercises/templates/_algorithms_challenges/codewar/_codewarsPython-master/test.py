@@ -1,4 +1,4 @@
-if True:
+__ True:
     print('a')
     print('a')
     print('a')

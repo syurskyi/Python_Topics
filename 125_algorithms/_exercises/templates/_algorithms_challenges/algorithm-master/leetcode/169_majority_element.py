@@ -1,58 +1,58 @@
 class Solution:
-    def majorityElement(self, nums):
+    ___ majorityElement(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return 0
+        __ not nums:
+            r_ 0
 
         ans = None
         cnt = 0
 
         for num in nums:
-            if cnt == 0:
+            __ cnt __ 0:
                 ans, cnt = num, 1
-            elif ans == num:
+            ____ ans __ num:
                 cnt += 1
-            else:
+            ____
                 cnt -= 1
 
-        return ans
+        r_ ans
 
 
 class Solution:
-    def majorityElement(self, nums):
+    ___ majorityElement(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return 0
+        __ not nums:
+            r_ 0
 
         nums.sort()
 
-        return nums[len(nums) // 2]
+        r_ nums[le.(nums) // 2]
 
 
 class Solution:
-    def majorityElement(self, nums):
+    ___ majorityElement(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
         NOT_FOUND = 0
 
-        if not nums:
-            return NOT_FOUND
+        __ not nums:
+            r_ NOT_FOUND
 
         freq = {}
 
         for a in nums:
             freq[a] = freq.get(a, 0) + 1
 
-        for a, cnt in freq.items():
-            if cnt > len(nums) // 2:
-                return a
+        for a, cnt in freq.items(
+            __ cnt > le.(nums) // 2:
+                r_ a
 
-        return NOT_FOUND
+        r_ NOT_FOUND

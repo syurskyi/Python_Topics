@@ -4,24 +4,24 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findMin(self, nums):
+class Solution(object
+    ___ findMin(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        l, r = 0, len(nums)-1
-        while l < r:
-            if nums[l] < nums[r]:
-                return nums[l]
+        l, r = 0, le.(nums)-1
+        w___ l < r:
+            __ nums[l] < nums[r]:
+                r_ nums[l]
             mid = (l+r)//2
-            if nums[mid] > nums[r]:
+            __ nums[mid] > nums[r]:
                 l = mid+1
-            else:
+            ____
                 r = mid
-        return nums[l]
+        r_ nums[l]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [0, 1, 2, 4, 5, 6, 7],
             [4, 5, 6, 7, 0, 1, 2],
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

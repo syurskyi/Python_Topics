@@ -3,21 +3,21 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def isIdealPermutation(self, A):
+class Solution(object
+    ___ isIdealPermutation(self, A
         """
         :type A: List[int]
         :rtype: bool
         """
         arr = A
         cmax = 0
-        for i in range(len(arr)-2):
+        for i in range(le.(arr)-2
             cmax = max(cmax, arr[i])
-            if cmax > arr[i+2]:
-                return False
-        return True
+            __ cmax > arr[i+2]:
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1,0,2],
             [1,2,0],
@@ -28,5 +28,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -9,13 +9,13 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def hammingWeight(self, n):
+    ___ hammingWeight(self, n
         """
         /2 and %2
         """
         cnt = 0
-        while n:
+        w___ n:
             cnt += n&1
             n >>= 1
 
-        return cnt
+        r_ cnt

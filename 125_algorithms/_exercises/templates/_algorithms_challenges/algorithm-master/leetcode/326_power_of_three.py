@@ -1,14 +1,14 @@
 class Solution:
-    def isPowerOfThree(self, n):
+    ___ isPowerOfThree(self, n
         """
         :type n: int
         :rtype: bool
         """
-        if not n:
-            return False
+        __ not n:
+            r_ False
 
-        for i in (81, 27, 9, 3):
-            while n % i == 0:
+        for i in (81, 27, 9, 3
+            w___ n % i __ 0:
                 n //= i
 
-        return n == 1
+        r_ n __ 1

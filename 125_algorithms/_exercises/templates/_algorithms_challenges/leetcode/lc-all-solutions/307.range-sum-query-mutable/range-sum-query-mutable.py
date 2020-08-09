@@ -1,6 +1,6 @@
 # Segment tree node
-class STNode(object):
-  def __init__(self, start, end):
+class STNode(object
+  ___ __init__(self, start, end
     self.start = start
     self.end = end
     self.total = 0
@@ -8,18 +8,18 @@ class STNode(object):
     self.right = None
 
 
-class SegmentedTree(object):
-  def __init__(self, nums, start, end):
+class SegmentedTree(object
+  ___ __init__(self, nums, start, end
     self.root = self.buildTree(nums, start, end)
 
-  def buildTree(self, nums, start, end):
-    if start > end:
-      return None
+  ___ buildTree(self, nums, start, end
+    __ start > end:
+      r_ None
 
-    if start == end:
+    __ start __ end:
       node = STNode(start, end)
       node.total = nums[start]
-      return node
+      r_ node
 
     mid = start + (end - start) / 2
 
@@ -27,64 +27,64 @@ class SegmentedTree(object):
     root.left = self.buildTree(nums, start, mid)
     root.right = self.buildTree(nums, mid + 1, end)
     root.total = root.left.total + root.right.total
-    return root
+    r_ root
 
-  def updateVal(self, i, val):
-    def updateVal(root, i, val):
-      if root.start == root.end:
+  ___ updateVal(self, i, val
+    ___ updateVal(root, i, val
+      __ root.start __ root.end:
         root.total = val
-        return val
+        r_ val
       mid = root.start + (root.end - root.start) / 2
-      if i <= mid:
+      __ i <= mid:
         updateVal(root.left, i, val)
-      else:
+      ____
         updateVal(root.right, i, val)
 
       root.total = root.left.total + root.right.total
-      return root.total
+      r_ root.total
 
-    return updateVal(self.root, i, val)
+    r_ updateVal(self.root, i, val)
 
-  def sumRange(self, i, j):
-    def rangeSum(root, start, end):
-      if root.start == start and root.end == end:
-        return root.total
+  ___ sumRange(self, i, j
+    ___ rangeSum(root, start, end
+      __ root.start __ start and root.end __ end:
+        r_ root.total
 
       mid = root.start + (root.end - root.start) / 2
-      if j <= mid:
-        return rangeSum(root.left, start, end)
-      elif i >= mid + 1:
-        return rangeSum(root.right, start, end)
-      else:
-        return rangeSum(root.left, start, mid) + rangeSum(root.right, mid + 1, end)
+      __ j <= mid:
+        r_ rangeSum(root.left, start, end)
+      ____ i >= mid + 1:
+        r_ rangeSum(root.right, start, end)
+      ____
+        r_ rangeSum(root.left, start, mid) + rangeSum(root.right, mid + 1, end)
 
-    return rangeSum(self.root, i, j)
+    r_ rangeSum(self.root, i, j)
 
 
-class NumArray(object):
-  def __init__(self, nums):
+class NumArray(object
+  ___ __init__(self, nums
     """
     initialize your data structure here.
     :type nums: List[int]
     """
-    self.stTree = SegmentedTree(nums, 0, len(nums) - 1)
+    self.stTree = SegmentedTree(nums, 0, le.(nums) - 1)
 
-  def update(self, i, val):
+  ___ update(self, i, val
     """
     :type i: int
     :type val: int
     :rtype: int
     """
-    return self.stTree.updateVal(i, val)
+    r_ self.stTree.updateVal(i, val)
 
-  def sumRange(self, i, j):
+  ___ sumRange(self, i, j
     """
     sum of elements nums[i..j], inclusive.
     :type i: int
     :type j: int
     :rtype: int
     """
-    return self.stTree.sumRange(i, j)
+    r_ self.stTree.sumRange(i, j)
 
 # Your NumArray object will be instantiated and called as such:
 # numArray = NumArray(nums)

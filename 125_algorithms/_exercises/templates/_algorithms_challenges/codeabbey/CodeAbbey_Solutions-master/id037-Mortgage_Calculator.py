@@ -1,5 +1,5 @@
 # Python 3.4
-def mortgage_calculator():
+___ mortgage_calculator(
     data = input().split()
     p = loan_amount = int(data[0])
     i = interest_rate = (int(data[1]) / 100.0) / 12

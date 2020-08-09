@@ -4,16 +4,16 @@ class Solution:
     @param target: the target string
     @return: The ans
     """
-    def theLongestCommonPrefix(self, D, target):
+    ___ theLongestCommonPrefix(self, D, target
         ans = 0
 
         for word in D:
             i = 0
             for c in word:
-                if c != target[i]:
+                __ c != target[i]:
                     break
                 i += 1
-            if i > ans:
+            __ i > ans:
                 ans = i
 
-        return ans
+        r_ ans

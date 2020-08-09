@@ -1,16 +1,16 @@
 
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Graph:
 
-    def __init__(self):
+    ___ __init__(self
         self.graph = defaultdict(list)
 
-    def setEdge(self, u, v):
+    ___ setEdge(self, u, v
         self.graph[u].append(v)
 
-    def bfs(self, s):
+    ___ bfs(self, s
         visited = set()
 
         queue = []
@@ -18,12 +18,12 @@ class Graph:
 
         visited.add(s)
 
-        while queue:
+        w___ queue:
             u = queue.pop(0)
             print(u, end=" ")
 
             for v in self.graph[u]:
-                if v not in visited:
+                __ v not in visited:
                     queue.append(v)
                     visited.add(v)
 

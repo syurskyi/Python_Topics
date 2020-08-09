@@ -5,14 +5,14 @@ data = [int(i) for i in data]
 
 passes = 0
 swaps = 0
-i=len(data)
+i=le.(data)
 flag = True
-while i>2 and flag:
+w___ i>2 and flag:
     passes+=1
     j=0
     flag =False
-    while j<i-1:
-        if data[j]>data[j+1]:
+    w___ j<i-1:
+        __ data[j]>data[j+1]:
             swaps +=1
             flag = True
             data[j],data[j+1]= data[j+1],data[j]

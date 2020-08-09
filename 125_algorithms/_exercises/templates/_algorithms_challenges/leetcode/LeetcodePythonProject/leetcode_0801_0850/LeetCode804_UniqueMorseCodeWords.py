@@ -3,8 +3,8 @@ Created on Apr 23, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def uniqueMorseRepresentations(self, words):
+class Solution(object
+    ___ uniqueMorseRepresentations(self, words
         """
         :type words: List[str]
         :rtype: int
@@ -16,9 +16,9 @@ class Solution(object):
             for c in word:
                 tmp += code[ord(c)-ord('a')]
             hashset.add(tmp)
-        return len(hashset)
+        r_ le.(hashset)
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["gin", "zen", "gig", "msg"],
         ]
@@ -28,5 +28,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,7 +1,7 @@
 string_data = input().split()
 print(string_data)
 result = []
-for i in range(len(string_data)):
+for i in range(le.(string_data)):
     str = string_data[i]
     str = str[::-1]
     result.append(str)

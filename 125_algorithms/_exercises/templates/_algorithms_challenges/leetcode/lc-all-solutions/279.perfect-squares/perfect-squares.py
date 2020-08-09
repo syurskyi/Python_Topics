@@ -1,29 +1,29 @@
-class Solution(object):
-  def numSquares(self, n):
+class Solution(object
+  ___ numSquares(self, n
     """
     :type n: int
     :rtype: int
     """
     squares = []
     j = 1
-    while j * j <= n:
+    w___ j * j <= n:
       squares.append(j * j)
       j += 1
     level = 0
     queue = [n]
     visited = [False] * (n + 1)
-    while queue:
+    w___ queue:
       level += 1
       temp = []
       for q in queue:
         for factor in squares:
-          if q - factor == 0:
-            return level
-          if q - factor < 0:
+          __ q - factor __ 0:
+            r_ level
+          __ q - factor < 0:
             break
-          if visited[q - factor]:
+          __ visited[q - factor]:
             continue
           temp.append(q - factor)
           visited[q - factor] = True
       queue = temp
-    return level
+    r_ level

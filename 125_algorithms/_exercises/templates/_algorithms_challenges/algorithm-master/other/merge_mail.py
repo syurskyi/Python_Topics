@@ -1,4 +1,4 @@
-def merge_mail(data):
+___ merge_mail(data
     """group owners if their mails got a connection
     >>> merge_mail({
     ...     'A1': ['a1@gmail.com', 'a2@gmail.com'],
@@ -21,10 +21,10 @@ def merge_mail(data):
     owners = {}  # owners
     mail2owners = {}  # mail to owners
 
-    for owner, mails in data.items():
+    for owner, mails in data.items(
         find(owners, owner)
         for mail in mails:
-            if mail not in mail2owners:
+            __ mail not in mail2owners:
                 mail2owners[mail] = owner
                 continue
             mail2owners[mail] = connect(
@@ -32,24 +32,24 @@ def merge_mail(data):
             )
 
     ans = {}
-    for k, v in owners.items():
-        if v not in ans:
+    for k, v in owners.items(
+        __ v not in ans:
             ans[v] = []
         ans[v].append(k)
-    return list(ans.values())
+    r_ list(ans.values())
 
-def connect(nodes, a, b):
+___ connect(nodes, a, b
     _a = find(nodes, a)
     _b = find(nodes, b)
-    if _a is not _b:
+    __ _a is not _b:
         nodes[_a] = _b
-    return _b
+    r_ _b
 
-def find(nodes, a):
-    if a not in nodes:
+___ find(nodes, a
+    __ a not in nodes:
         nodes[a] = a
-        return a
-    if nodes[a] is a:
-        return a
+        r_ a
+    __ nodes[a] is a:
+        r_ a
     nodes[a] = find(nodes, nodes[a])
-    return nodes[a]
+    r_ nodes[a]

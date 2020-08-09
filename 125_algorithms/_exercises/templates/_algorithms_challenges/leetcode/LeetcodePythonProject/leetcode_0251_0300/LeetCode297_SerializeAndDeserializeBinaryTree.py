@@ -5,43 +5,43 @@ Created on Mar 9, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
 class Codec:
-    def serialize(self, root):
+    ___ serialize(self, root
         stack = [root]
         result = ''
-        while stack:
+        w___ stack:
             node = stack.pop()
-            if node:
+            __ node:
                 result += '%s,' % (node.val)
                 stack.append(node.right)
                 stack.append(node.left)
-            else:
+            ____
                 result += '#,'
-        return result[:-1]
+        r_ result[:-1]
     
-    def deserialize(self, data):
+    ___ deserialize(self, data
         arr = data.split(',')
         ind = [0]
         root = self.helper(arr, ind)
-        return root
+        r_ root
     
-    def helper(self, arr, ind):
-        if arr[ind[0]] == '#':
-            return None
+    ___ helper(self, arr, ind
+        __ arr[ind[0]] __ '#':
+            r_ None
         root = TreeNode(arr[ind[0]])
         ind[0]+=1
         root.left = self.helper(arr, ind)
         ind[0]+=1
         root.right = self.helper(arr, ind)
-        return root
+        r_ root
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     root = TreeNode(1, TreeNode(2), TreeNode(3, TreeNode(4), TreeNode(5)))
     codec = Codec()
     s = codec.serialize(root)
@@ -51,14 +51,14 @@ if __name__ == '__main__':
     queue = [root]
     line = []
     nextQueue= []
-    while queue:
+    w___ queue:
         node = queue.pop(0)
         line.append(node.val)
-        if node.left:
+        __ node.left:
             nextQueue.append(node.left)
-        if node.right:
+        __ node.right:
             nextQueue.append(node.right)
-        if not queue:
+        __ not queue:
             print(line)
             line = []
             queue = nextQueue

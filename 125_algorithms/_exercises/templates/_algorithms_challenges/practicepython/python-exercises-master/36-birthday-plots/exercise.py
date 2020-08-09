@@ -1,9 +1,9 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-import json
-import os
-from collections import Counter
+______ json
+______ os
+from collections ______ Counter
 
-from bokeh.plotting import figure, show, output_file
+from bokeh.plotting ______ figure, show, output_file
 
 yearMonths = {
     '01': 'January',
@@ -21,14 +21,14 @@ yearMonths = {
 }
 
 
-def getFromJson():
+___ getFromJson(
     cwd = os.getcwd()
     filePath = cwd + '/34-birthday-json/birthdays.json'
     with open(filePath, 'r') as file:
-        return json.load(file)
+        r_ json.load(file)
 
 
-def formatDataToStringMonths(values):
+___ formatDataToStringMonths(values
     months = []
     for date in values:
         month = (date.split('.'))[1]
@@ -37,13 +37,13 @@ def formatDataToStringMonths(values):
     count = Counter(months)
     print(count)
     result = {}
-    for key in count.keys():
+    for key in count.keys(
         result[yearMonths[key]] = count[key]
 
-    return result
+    r_ result
 
 
-def printPlot(data):
+___ printPlot(data
     output_file("plot.html")
     x_categories = list(yearMonths.values())
     x = list(data.keys())
@@ -52,7 +52,7 @@ def printPlot(data):
     p.vbar(x=x, top=y, width=0.5)
     show(p)
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     birthdays = getFromJson()
     values = list(birthdays.values())
     data = formatDataToStringMonths(values)

@@ -4,16 +4,16 @@ class Solution:
     @param: b: An integer
     @return: The sum of a and b
     """
-    def aplusb(self, a, b):
-        if not a:
-            return b
-        if not b:
-            return a
+    ___ aplusb(self, a, b
+        __ not a:
+            r_ b
+        __ not b:
+            r_ a
 
         INT_RANGE = 0xFFFFFFFF
 
-        while b != 0:
+        w___ b != 0:
             a, b = a ^ b, (a & b) << 1
             a &= INT_RANGE
 
-        return a if a >> 31 <= 0 else a ^ ~INT_RANGE
+        r_ a __ a >> 31 <= 0 else a ^ ~INT_RANGE

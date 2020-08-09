@@ -5,26 +5,26 @@ shape = sf.getShape(shapeType)
 shape.draw()
 """
 class Shape:
-    def draw(self):
+    ___ draw(self
         raise NotImplementedError('This method should have implemented.')
 
 
-class Triangle(Shape):
-    def draw(self):
+class Triangle(Shape
+    ___ draw(self
         print '  /\\'
         print ' /  \\'
         print '/____\\'
 
 
-class Rectangle(Shape):
-    def draw(self):
+class Rectangle(Shape
+    ___ draw(self
         print ' ----'
         print '|    |'
         print ' ----'
 
 
-class Square(Shape):
-    def draw(self):
+class Square(Shape
+    ___ draw(self
         print ' ----'
         print '|    |'
         print '|    |'
@@ -34,10 +34,10 @@ class Square(Shape):
 class ShapeFactory:
     # @param {string} shapeType a string
     # @return {Shape} Get object of type Shape
-    def getShape(self, shapeType):
-        if shapeType == 'Triangle':
-            return Triangle()
-        if shapeType == 'Rectangle':
-            return Rectangle()
-        if shapeType == 'Square':
-            return Square()
+    ___ getShape(self, shapeType
+        __ shapeType __ 'Triangle':
+            r_ Triangle()
+        __ shapeType __ 'Rectangle':
+            r_ Rectangle()
+        __ shapeType __ 'Square':
+            r_ Square()

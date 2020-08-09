@@ -5,11 +5,11 @@ class Solution:
     @param: k: An integer
     @return: an integer array
     """
-    def kClosestNumbers(self, A, target, k):
-        if not A:
-            return []
+    ___ kClosestNumbers(self, A, target, k
+        __ not A:
+            r_ []
 
-        n = len(A)
+        n = le.(A)
 
         """
         if `b` in `A`:
@@ -20,11 +20,11 @@ class Solution:
              l  r
         """
         left, mid, right = 0, 0, n - 1
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = left + (right - left) // 2
-            if A[mid] <= target:
+            __ A[mid] <= target:
                 left = mid
-            else:
+            ____
                 right = mid
 
         """
@@ -38,18 +38,18 @@ class Solution:
         append first if that `num` is more closer `target`
         """
         ans = [0] * k
-        for i in range(k):
-            if left < 0:
+        for i in range(k
+            __ left < 0:
                 ans[i] = A[right]
                 right += 1
-            elif right >= n:
+            ____ right >= n:
                 ans[i] = A[left]
                 left -= 1
-            elif A[right] - target < target - A[left]:
+            ____ A[right] - target < target - A[left]:
                 ans[i] = A[right]
                 right += 1
-            else:
+            ____
                 ans[i] = A[left]
                 left -= 1
 
-        return ans
+        r_ ans

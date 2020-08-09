@@ -8,8 +8,8 @@ Given n = 2, return 91. (The answer should be the total numbers in the range of 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def countNumbersWithUniqueDigits(self, n):
+class Solution(object
+    ___ countNumbersWithUniqueDigits(self, n
         """
         Let F(i) be the number of numbers with unique digits of length i
         F(1) = 1 // special case
@@ -22,8 +22,8 @@ class Solution(object):
         """
         ret = 1
         Fi = 1
-        for i in xrange(n):
-            Fi *= (10-i) if i != 0 else 9
+        for i in xrange(n
+            Fi *= (10-i) __ i != 0 else 9
             ret += Fi
 
-        return ret
+        r_ ret

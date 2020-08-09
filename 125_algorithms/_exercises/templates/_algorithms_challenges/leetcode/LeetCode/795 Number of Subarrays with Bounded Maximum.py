@@ -19,11 +19,11 @@ Note:
 L, R  and A[i] will be an integer in the range [0, 10^9].
 The length of A will be in the range of [1, 50000].
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def numSubarrayBoundedMax(self, A: List[int], L: int, R: int) -> int:
+    ___ numSubarrayBoundedMax(self, A: List[int], L: int, R: int) -> int:
         """
         DP: Let F[i] be the num subarray with bounded max at A[i]
         if L <= A[i] <= R: F[i] = i - prev, where prev is previously invalid F[prev] = 0
@@ -35,20 +35,20 @@ class Solution:
         F = 0
         ret = 0
         prev = -1
-        for i, a in enumerate(A):
-            if L <= a <= R:
+        for i, a in enumerate(A
+            __ L <= a <= R:
                 F = i - prev
                 ret += F
-            elif a > R:
+            ____ a > R:
                 F = 0
                 prev = i
-            else:
+            ____
                 # F = F
                 ret += F
 
-        return ret
+        r_ ret
 
-    def numSubarrayBoundedMax_error(self, A: List[int], L: int, R: int) -> int:
+    ___ numSubarrayBoundedMax_error(self, A: List[int], L: int, R: int) -> int:
         """
         DP: Let F[i] be the num subarray with bounded max at A[i]
         if L <= A[i] <= R: F[i] = F[i-1] + 1  # append itself to every array in F[i-1] and one more itself
@@ -61,13 +61,13 @@ class Solution:
         F = 0
         ret = 0
         for a in A:
-            if L <= a <= R:
+            __ L <= a <= R:
                 F += 1  # error
                 ret += F
-            elif a > R:
+            ____ a > R:
                 F = 0
-            else:
+            ____
                 # F = F
                 ret += F
 
-        return ret
+        r_ ret

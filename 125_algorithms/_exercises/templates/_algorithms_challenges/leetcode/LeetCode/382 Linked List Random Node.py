@@ -17,20 +17,20 @@ Solution solution = new Solution(head);
 // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
 solution.getRandom();
 """
-import random
+______ random
 
 __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
+class ListNode(object
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
-class Solution(object):
-    def __init__(self, head):
+class Solution(object
+    ___ __init__(self, head
         """
         Reservoir sampling
         :param: head The linked list's head.
@@ -39,7 +39,7 @@ class Solution(object):
         """
         self.head = head
 
-    def getRandom(self):
+    ___ getRandom(self
         """
         Returns a random node's value.
         :rtype: int
@@ -47,13 +47,13 @@ class Solution(object):
         ret = self.head
         cur = self.head.next
         idx = 1
-        while cur:
-            if random.randrange(0, idx+1) == 0:
+        w___ cur:
+            __ random.randrange(0, idx+1) __ 0:
                 ret = cur
             cur = cur.next
             idx += 1
 
-        return ret.val
+        r_ ret.val
 
 
 # Your Solution object will be instantiated and called as such:

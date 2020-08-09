@@ -3,33 +3,33 @@ Created on Apr 19, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def minSwap(self, A, B):
+class Solution(object
+    ___ minSwap(self, A, B
         """
         :type A: List[int]
         :type B: List[int]
         :rtype: int
         """
         arr1, arr2 = A, B
-        n = len(arr1)
+        n = le.(arr1)
         dp = [[0]*2 for _ in range(n)]
         dp[-1][0] = 0
         dp[-1][1] = 1
-        for i in range(n-2, -1, -1):
-            if arr1[i] < arr1[i+1] and arr2[i] < arr2[i+1]:
-                if arr1[i] < arr2[i+1] and arr2[i] < arr1[i+1]:
+        for i in range(n-2, -1, -1
+            __ arr1[i] < arr1[i+1] and arr2[i] < arr2[i+1]:
+                __ arr1[i] < arr2[i+1] and arr2[i] < arr1[i+1]:
                     dp[i][0] = min(dp[i+1][0], dp[i+1][1])
                     dp[i][1] = min(dp[i+1][0]+1, dp[i+1][0]+1)
-                else:
+                ____
                     dp[i][0] = dp[i+1][0]
                     dp[i][1] = dp[i+1][1]+1
-            else:
+            ____
                 dp[i][0] = dp[i+1][1]
                 dp[i][1] = dp[i+1][0]+1
-        return min(dp[0][0], dp[0][1])
+        r_ min(dp[0][0], dp[0][1])
     
     # My solution DFS is TLE
-    def minSwap_own_slow(self, A, B):
+    ___ minSwap_own_slow(self, A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -38,20 +38,20 @@ class Solution(object):
         arr1, arr2 = A, B
         self.res = float('inf')
         self.helper(arr1, arr2, 0, 0)
-        return self.res
+        r_ self.res
         
-    def helper(self, arr1, arr2, i, cur):
-        if i == len(arr1):
+    ___ helper(self, arr1, arr2, i, cur
+        __ i __ le.(arr1
             self.res = min(self.res, cur)
-            return
-        if i == 0 or (arr1[i] > arr2[i-1] and arr2[i] > arr1[i-1]):
+            r_
+        __ i __ 0 or (arr1[i] > arr2[i-1] and arr2[i] > arr1[i-1]
             arr1[i], arr2[i] = arr2[i], arr1[i]
             self.helper(arr1, arr2, i+1, cur+1)
             arr1[i], arr2[i] = arr2[i], arr1[i]
-        if i == 0 or (arr1[i] > arr1[i-1] and arr2[i] > arr2[i-1]):
+        __ i __ 0 or (arr1[i] > arr1[i-1] and arr2[i] > arr2[i-1]
             self.helper(arr1, arr2, i+1, cur)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1,3,5,4],
@@ -69,5 +69,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

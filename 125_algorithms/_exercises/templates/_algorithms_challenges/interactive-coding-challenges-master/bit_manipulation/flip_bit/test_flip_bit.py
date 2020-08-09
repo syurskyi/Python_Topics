@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestBits(object):
+class TestBits(object
 
-    def test_flip_bit(self):
+    ___ test_flip_bit(self
         bits = Bits()
         assert_raises(TypeError, bits.flip_bit, None)
         assert_equal(bits.flip_bit(0), 1)
@@ -20,10 +20,10 @@ class TestBits(object):
         print('Success: test_print_binary')
 
 
-def main():
+___ main(
     test = TestBits()
     test.test_flip_bit()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

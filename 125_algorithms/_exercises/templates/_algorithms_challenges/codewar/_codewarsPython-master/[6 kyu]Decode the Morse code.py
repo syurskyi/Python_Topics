@@ -11,10 +11,10 @@ MORSE_CODE = {'.-...': '&', '--..--': ',', '....-': '4',
 '.---': 'J', '-----': '0', '----.': '9', '.-..-.': '"', '-.--.': '(',
 '---..': '8', '...--': '3'}
 
-def decodeMorse(morseCode):
+___ decodeMorse(morseCode
     MORSE_CODE['@'] = ' '
     morseCode = morseCode.strip().replace('  ',' @ ')
-    return ''.join([MORSE_CODE[code] for code in morseCode.split()])
+    r_ ''.join([MORSE_CODE[code] for code in morseCode.split()])
 
 
 print(decodeMorse('.... . -.--   .--- ..- -.. .   '))

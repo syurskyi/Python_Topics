@@ -4,43 +4,43 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Codec(object):
-    def encode(self, strs):
+class Codec(object
+    ___ encode(self, strs
         """Encodes a list of strings to a single string.
         
         :type strs: List[str]
         :rtype: str
         """
-        return ''.join('%d:%s' % (len(s), s) for s in strs)
+        r_ ''.join('%d:%s' % (le.(s), s) for s in strs)
     
-    def decode(self, s):
+    ___ decode(self, s
         """Decodes a single string to a list of strings.
         
         :type s: str
         :rtype: List[str]
         """
         arr = []
-        n = len(s)
+        n = le.(s)
         prev = 0
         i = 0
-        while i < n:
-            if s[i] == ':':
+        w___ i < n:
+            __ s[i] __ ':':
                 sub = s[prev:i]
                 j = i
-                while j < n and s[j] != '#':
+                w___ j < n and s[j] != '#':
                     j += 1
-                if s[i+1:j].isdigit() and int(s[i+1:j]) == len(sub):
+                __ s[i+1:j].isdigit() and int(s[i+1:j]) __ le.(sub
                     arr.append(sub)
                     i = j
                     prev = i+1
             i += 1
-        return arr
+        r_ arr
     
-    def decode_orig(self, s):
+    ___ decode_orig(self, s
         result = []
         i = 0
-        while i < len(s):
+        w___ i < le.(s
             j = s.find(':', i)
             i = j+1+int(s[i:j])
             result.append(s[j+1:i])
-        return result
+        r_ result

@@ -3,8 +3,8 @@ Created on Apr 14, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def escapeGhosts(self, ghosts, target):
+class Solution(object
+    ___ escapeGhosts(self, ghosts, target
         """
         :type ghosts: List[List[int]]
         :type target: List[int]
@@ -13,11 +13,11 @@ class Solution(object):
         maxVal = abs(target[0])+abs(target[1])
         for g in ghosts:
             d = abs(g[0]-target[0])+abs(g[1]-target[1])
-            if d <= maxVal:
-                return False
-        return True
+            __ d <= maxVal:
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             
         ]
@@ -26,5 +26,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

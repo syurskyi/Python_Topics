@@ -1,8 +1,8 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def findItinerary(self, tickets):
+class Solution(object
+  ___ findItinerary(self, tickets
     """
     :type tickets: List[List[str]]
     :rtype: List[str]
@@ -12,23 +12,23 @@ class Solution(object):
     for ticket in tickets:
       graph[ticket[0]] = graph.get(ticket[0], []) + [ticket[1]]
 
-    maxLen = len(tickets) + 1
+    maxLen = le.(tickets) + 1
 
     for k in graph:
       graph[k] = deque(sorted(graph[k]))
 
-    def dfs(path, graph, maxLen, start):
-      if len(path) == maxLen:
-        return path + []
-      for k in range(0, len(graph.get(start, []))):
+    ___ dfs(path, graph, maxLen, start
+      __ le.(path) __ maxLen:
+        r_ path + []
+      for k in range(0, le.(graph.get(start, []))):
         nbr = graph.get(start, [])
         top = nbr.popleft()
         path.append(top)
         ret = dfs(path, graph, maxLen, top)
-        if ret:
-          return ret
+        __ ret:
+          r_ ret
         path.pop()
         nbr.append(top)
-      return []
+      r_ []
 
-    return dfs(["JFK"], graph, maxLen, "JFK")
+    r_ dfs(["JFK"], graph, maxLen, "JFK")

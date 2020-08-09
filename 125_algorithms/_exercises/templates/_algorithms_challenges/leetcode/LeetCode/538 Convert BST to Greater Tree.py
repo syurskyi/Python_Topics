@@ -19,24 +19,24 @@ Output: The root of a Greater Tree like this:
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def convertBST(self, root: 'TreeNode') -> 'TreeNode':
+    ___ convertBST(self, root: 'TreeNode') -> 'TreeNode':
         """
         in-order traversal, right first
         """
         self.walk(root, 0)
-        return root
+        r_ root
 
-    def walk(self, node, cur_sum):
+    ___ walk(self, node, cur_sum
         """stateless walk"""
-        if not node:
-            return cur_sum
+        __ not node:
+            r_ cur_sum
         s = self.walk(node.right, cur_sum)
         node.val += s
-        return self.walk(node.left, node.val)
+        r_ self.walk(node.left, node.val)

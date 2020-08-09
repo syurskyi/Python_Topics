@@ -14,7 +14,7 @@ body = ''
 with sqlite3.connect("my.db") as connection:
     c = connection.cursor()
     c.execute("SELECT {data-to-be-mailed} FROM {table_name} WHERE Emailed='0'")
-    for item in c.fetchall():
+    for item in c.fetchall(
 		#in this example I'm taking the first two columns from the db
         body += item[0] + ': ' + item[1] + '\n'
     c.execute("UPDATE table_name SET Emailed='1'")

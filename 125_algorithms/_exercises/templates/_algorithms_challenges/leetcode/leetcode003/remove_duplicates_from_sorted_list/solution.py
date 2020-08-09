@@ -8,28 +8,28 @@ Given 1->1->2->3->3, return 1->2->3.
 """
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
+# class ListNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def deleteDuplicates(self, head):
+class Solution(object
+    ___ deleteDuplicates(self, head
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        if head is None:
-            return None
-        if head.next is None:
-            return head
+        __ head is None:
+            r_ None
+        __ head.next is None:
+            r_ head
         last = head
         current = head.next
-        while current is not None:
+        w___ current is not None:
             next_node = current.next
-            if current.val == last.val:
+            __ current.val __ last.val:
                 last.next = next_node
-            else:
+            ____
                 last = current
             current = next_node
-        return head
+        r_ head

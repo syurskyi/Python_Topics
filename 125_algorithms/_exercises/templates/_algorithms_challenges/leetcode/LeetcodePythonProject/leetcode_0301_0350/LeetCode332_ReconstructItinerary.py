@@ -4,27 +4,27 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-import heapq
+______ heapq
 
-class Solution(object):
-    def findItinerary_orig(self, tickets):
-        if not tickets:
-            return []
+class Solution(object
+    ___ findItinerary_orig(self, tickets
+        __ not tickets:
+            r_ []
         hashmap = {}
         for t1, t2 in tickets:
-            if t1 not in hashmap:
+            __ t1 not in hashmap:
                 hashmap[t1] = []
             heapq.heappush(hashmap[t1], t2)
         result = []
         self.dfs(result, hashmap, 'JFK')
-        return result
+        r_ result
         
-    def dfs(self, result, hashmap, elem):
-        while hashmap.get(elem):
+    ___ dfs(self, result, hashmap, elem
+        w___ hashmap.get(elem
             self.dfs(result, hashmap, heapq.heappop(hashmap[elem]))
         result.insert(0, elem)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]],
             [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]],
@@ -36,6 +36,6 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

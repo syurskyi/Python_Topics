@@ -21,49 +21,49 @@ space: O(n) -> O(1)
 
 
 class Solution:
-    def maxChunksToSorted(self, nums):
+    ___ maxChunksToSorted(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
         ans = 0
 
-        if not nums:
-            return ans
+        __ not nums:
+            r_ ans
 
         _max = 0  # since 0 is the min in nums
 
-        for i in range(len(nums)):
+        for i in range(le.(nums)):
             _max = max(_max, nums[i])
 
-            if _max == i:
+            __ _max __ i:
                 ans += 1
 
-        return ans
+        r_ ans
 
 
 class Solution:
-    def maxChunksToSorted(self, nums):
+    ___ maxChunksToSorted(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
         ans = 0
 
-        if not nums:
-            return ans
+        __ not nums:
+            r_ ans
 
-        n = len(nums)
+        n = le.(nums)
         M = [0] * n  # `M[i]` means the max in [0:i] in nums
 
-        for i in range(n):
+        for i in range(n
             M[i] = nums[i]
 
-            if i > 0 and M[i - 1] > M[i]:
+            __ i > 0 and M[i - 1] > M[i]:
                 M[i] = M[i - 1]
 
-        for i in range(n):
-            if M[i] == i:
+        for i in range(n
+            __ M[i] __ i:
                 ans += 1
 
-        return ans
+        r_ ans

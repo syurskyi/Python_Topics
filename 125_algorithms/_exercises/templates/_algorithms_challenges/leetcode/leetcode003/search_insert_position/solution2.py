@@ -14,29 +14,29 @@ Here are few examples.
 
 """
 
-class Solution(object):
-    def searchInsert(self, nums, target):
-        n = len(nums)
+class Solution(object
+    ___ searchInsert(self, nums, target
+        n = le.(nums)
         left = 0
         right = n - 1
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = left + (right - left) / 2
-            if mid > 0 and nums[mid - 1] < target < nums[mid]:
-                return mid
-            elif target <= nums[mid]:
+            __ mid > 0 and nums[mid - 1] < target < nums[mid]:
+                r_ mid
+            ____ target <= nums[mid]:
                 right = mid
-            else:
+            ____
                 left = mid
-        if nums[left] < target < nums[right]:
-            return left + 1
-        elif nums[left] == target:
-            return left
-        elif nums[right] == target:
-            return right
-        elif nums[left] > target:
-            return min(0, left)
-        elif nums[right] < target:
-            return max(n, right)
+        __ nums[left] < target < nums[right]:
+            r_ left + 1
+        ____ nums[left] __ target:
+            r_ left
+        ____ nums[right] __ target:
+            r_ right
+        ____ nums[left] > target:
+            r_ min(0, left)
+        ____ nums[right] < target:
+            r_ max(n, right)
 
 
 a1 = [1, 3]

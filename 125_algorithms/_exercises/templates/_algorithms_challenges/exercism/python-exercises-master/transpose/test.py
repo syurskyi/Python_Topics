@@ -1,11 +1,11 @@
-import unittest
-from transpose import transpose
+______ unittest
+from transpose ______ transpose
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-class TransposeTests(unittest.TestCase):
-    def test_empty_string(self):
+class TransposeTests(unittest.TestCase
+    ___ test_empty_string(self
         input_line = ""
         expected = ""
         self.assertEqual(
@@ -13,19 +13,19 @@ class TransposeTests(unittest.TestCase):
             expected
         )
 
-    def test_two_characters_in_a_row(self):
+    ___ test_two_characters_in_a_row(self
         self.assertEqual(
             transpose("A1"),
             "\n".join(["A", "1"])
         )
 
-    def test_two_characters_in_a_column(self):
+    ___ test_two_characters_in_a_column(self
         self.assertEqual(
             transpose("\n".join(["A", "1"])),
             "A1"
         )
 
-    def test_simple(self):
+    ___ test_simple(self
         input_line = [
             "ABC",
             "123"
@@ -41,7 +41,7 @@ class TransposeTests(unittest.TestCase):
             "\n".join(expected)
         )
 
-    def test_single_line(self):
+    ___ test_single_line(self
         input_line = ["Single line."]
         expected = [
             "S",
@@ -62,7 +62,7 @@ class TransposeTests(unittest.TestCase):
             "\n".join(expected)
         )
 
-    def test_first_line_longer_than_second_line(self):
+    ___ test_first_line_longer_than_second_line(self
         input_line = [
             "The fourth line.",
             "The fifth line."
@@ -90,7 +90,7 @@ class TransposeTests(unittest.TestCase):
             "\n".join(expected)
         )
 
-    def test_second_line_longer_than_first_line(self):
+    ___ test_second_line_longer_than_first_line(self
         input_line = [
             "The first line.",
             "The second line."
@@ -118,7 +118,7 @@ class TransposeTests(unittest.TestCase):
             "\n".join(expected)
         )
 
-    def test_square(self):
+    ___ test_square(self
         input_line = [
             "HEART",
             "EMBER",
@@ -138,7 +138,7 @@ class TransposeTests(unittest.TestCase):
             "\n".join(expected)
         )
 
-    def test_rectangle(self):
+    ___ test_rectangle(self
         input_line = [
             "FRACTURE",
             "OUTLINED",
@@ -160,7 +160,7 @@ class TransposeTests(unittest.TestCase):
             "\n".join(expected)
         )
 
-    def test_triangle(self):
+    ___ test_triangle(self
         input_line = [
             "T",
             "EE",
@@ -182,7 +182,7 @@ class TransposeTests(unittest.TestCase):
             "\n".join(expected)
         )
 
-    def test_many_lines(self):
+    ___ test_many_lines(self
         input_line = [
             "Chor. Two households, both alike in dignity,",
             "In fair Verona, where we lay our scene,",
@@ -260,5 +260,5 @@ class TransposeTests(unittest.TestCase):
         )
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

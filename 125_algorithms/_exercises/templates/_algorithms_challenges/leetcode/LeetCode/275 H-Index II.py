@@ -4,26 +4,26 @@ Follow up for H-Index: What if the citations array is sorted in ascending order?
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def hIndex(self, A):
+class Solution(object
+    ___ hIndex(self, A
         """
         Given sorted -> binary search
         From linear search into bin search
         :type A: List[int]
         :rtype: int
         """
-        n = len(A)
+        n = le.(A)
         s = 0
         e = n
-        while s < e:
+        w___ s < e:
             m = (s+e)/2
-            if A[m] >= n-m:
+            __ A[m] >= n-m:
                 e = m
-            else:
+            ____
                 s = m+1
 
-        return n-s
+        r_ n-s
 
 
-if __name__ == "__main__":
-    assert Solution().hIndex([0, 1, 3, 5, 6]) == 3
+__ __name__ __ "__main__":
+    assert Solution().hIndex([0, 1, 3, 5, 6]) __ 3

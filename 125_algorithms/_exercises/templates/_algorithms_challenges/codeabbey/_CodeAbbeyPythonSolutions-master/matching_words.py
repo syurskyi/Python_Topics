@@ -5,7 +5,7 @@ words_list.sort()
 
 word = ""
 for i in words_list:
-    if(words.index(i) == words.index(word) and i not in results):
+    __(words.index(i) __ words.index(word) and i not in results
         results.append(i)        
     word = i
 

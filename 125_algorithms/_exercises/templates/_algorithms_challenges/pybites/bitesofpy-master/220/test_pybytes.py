@@ -1,47 +1,47 @@
-import pytest
+______ pytest
 
-from pybytes import Duration, PythonBytes
+from pybytes ______ Duration, PythonBytes
 
 REAL_PYTHON = "realpython.com"
 PYBITES = 'pybit.es'
 
 
 @pytest.fixture(scope="module")
-def pb():
-    return PythonBytes()
+___ pb(
+    r_ PythonBytes()
 
 
-def test_get_episodes_pybites_was_mentioned(pb):
+___ test_get_episodes_pybites_was_mentioned(pb
     actual = pb.get_episode_numbers_for_mentioned_domain(PYBITES)
     expected = ['106', '98', '34', '26', '14']
-    assert sorted(actual) == sorted(expected)
+    assert sorted(actual) __ sorted(expected)
 
 
-def test_get_episodes_realpython_was_mentioned(pb):
+___ test_get_episodes_realpython_was_mentioned(pb
     actual = pb.get_episode_numbers_for_mentioned_domain(REAL_PYTHON)
     expected = ['143', '134', '123', '119', '118', '114', '110', '102',
                 '100', '97', '88', '86', '85', '84', '83', '82', '80', '76',
                 '75', '71', '66', '56', '37', '20', '7']
-    assert sorted(actual) == sorted(expected)
+    assert sorted(actual) __ sorted(expected)
 
 
-def test_number_episodes_with_special_guests(pb):
+___ test_number_episodes_with_special_guests(pb
     actual = pb.number_episodes_with_special_guest()
     expected = 17
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_number_episodes_with_special_guests_half_feed(pb):
+___ test_number_episodes_with_special_guests_half_feed(pb
     """To prevent hardcoding the answer"""
     org_entries = pb.entries
     pb.entries = pb.entries[:20]
     actual = pb.number_episodes_with_special_guest()
     expected = 7
     pb.entries = org_entries  # pb is module scope so restore entries
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_get_most_mentioned_domain_names_default_top_15(pb):
+___ test_get_most_mentioned_domain_names_default_top_15(pb
     actual = pb.get_most_mentioned_domain_names()
     expected = [('https://github.com', 120),
                 ('https://www.youtube.com', 50),
@@ -58,20 +58,20 @@ def test_get_most_mentioned_domain_names_default_top_15(pb):
                 ('https://docs.pytest.org', 11),
                 ('http://rollbar.com', 11),
                 ('https://dbader.org', 9)]
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_get_most_mentioned_domain_names_top_5(pb):
+___ test_get_most_mentioned_domain_names_top_5(pb
     actual = pb.get_most_mentioned_domain_names(n=5)
     expected = [('https://github.com', 120),
                 ('https://www.youtube.com', 50),
                 ('https://medium.com', 38),
                 ('https://www.python.org', 26),
                 ('https://www.reddit.com', 26)]
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_average_episode_duration_full_feed(pb):
+___ test_average_episode_duration_full_feed(pb
     actual = pb.get_average_duration_episode_in_seconds()
     max_, min_ = '00:56:54', '00:15:27'
     expected = Duration(avg=1439, max_=max_, min_=min_)
@@ -80,9 +80,9 @@ def test_average_episode_duration_full_feed(pb):
     assert actual in (expected, expected_alt)
 
 
-def test_average_episode_duration_half_feed(pb):
+___ test_average_episode_duration_half_feed(pb
     """To prevent hardcoding the answer"""
-    num_half_episodes = int(len(pb.entries) / 2)
+    num_half_episodes = int(le.(pb.entries) / 2)
     org_entries = pb.entries
     pb.entries = pb.entries[:num_half_episodes]
     actual = pb.get_average_duration_episode_in_seconds()

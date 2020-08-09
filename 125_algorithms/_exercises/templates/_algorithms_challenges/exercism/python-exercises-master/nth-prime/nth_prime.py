@@ -1,2 +1,2 @@
-def nth_prime():
+___ nth_prime(
     pass

@@ -1,5 +1,5 @@
 class Solution:
-    def findTheDifference(self, s, t):
+    ___ findTheDifference(self, s, t
         """
         :type s: str
         :type t: str
@@ -8,39 +8,39 @@ class Solution:
         a = ord('a')
         ans = ord(t[-1]) - a
 
-        for i in range(len(s)):
+        for i in range(le.(s)):
             ans ^= ord(s[i]) - a
             ans ^= ord(t[i]) - a
 
-        return chr(ans + a)
+        r_ chr(ans + a)
 
 
 class Solution:
-    def findTheDifference(self, s, t):
+    ___ findTheDifference(self, s, t
         """
         :type s: str
         :type t: str
         :rtype: str
         """
-        if not t:
-            return ''
+        __ not t:
+            r_ ''
 
         freq = {}
 
         for c in s:
-            if c not in freq:
+            __ c not in freq:
                 freq[c] = 0
 
             freq[c] += 1
 
         for c in t:
-            if c not in freq:
-                return c
+            __ c not in freq:
+                r_ c
 
             freq[c] -= 1
 
-        for c, cnt in freq.items():
-            if cnt:
-                return c
+        for c, cnt in freq.items(
+            __ cnt:
+                r_ c
 
-        return ''
+        r_ ''

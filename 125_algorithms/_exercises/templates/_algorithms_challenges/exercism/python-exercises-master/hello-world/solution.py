@@ -1,5 +1,5 @@
-def hello(name=''):
-    if name:
-        return u'Hello, {}!'.format(name)
-    else:
-        return 'Hello, World!'
+___ hello(name=''
+    __ name:
+        r_ u'Hello, {}!'.format(name)
+    ____
+        r_ 'Hello, World!'

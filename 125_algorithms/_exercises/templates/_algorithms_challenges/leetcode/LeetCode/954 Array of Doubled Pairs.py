@@ -2,7 +2,7 @@
 """
 Given an array of integers A with even length, return true if and only if it is
 possible to reorder it such that A[2 * i + 1] = 2 * A[2 * i] for every
-0 <= i < len(A) / 2.
+0 <= i < le.(A) / 2.
 
 
 
@@ -32,49 +32,49 @@ Note:
 A.length is even
 -100000 <= A[i] <= 100000
 """
-from typing import List
-from collections import Counter
+from typing ______ List
+from collections ______ Counter
 
 
 class Solution:
-    def canReorderDoubled(self, A: List[int]) -> bool:
+    ___ canReorderDoubled(self, A: List[int]) -> bool:
         A.sort(key=abs)
         counter = Counter(A)
         for a in A:
-            if counter[a] == 0:
+            __ counter[a] __ 0:
                 continue
-            if counter[2*a] == 0:
-                return False
+            __ counter[2*a] __ 0:
+                r_ False
 
             counter[a] -= 1
             counter[2*a] -= 1
 
-        return True
+        r_ True
 
-    def canReorderDoubled_positive_negative(self, A: List[int]) -> bool:
+    ___ canReorderDoubled_positive_negative(self, A: List[int]) -> bool:
         """
         sort + counter to form the doubled pairs
         """
         A.sort()
         counter = Counter(A)
         for a in A:
-            if counter[a] == 0:
+            __ counter[a] __ 0:
                 continue
             counter[a] -= 1
-            if a > 0:
+            __ a > 0:
                 target = 2 * a
-            elif a % 2 != 0:
-                return False
-            else:
+            ____ a % 2 != 0:
+                r_ False
+            ____
                 target = a // 2
 
-            if counter[target] > 0:
+            __ counter[target] > 0:
                 counter[target] -= 1
-            else:
-                return False
+            ____
+                r_ False
 
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
-    assert Solution().canReorderDoubled([4,-2,2,-4]) == True
+__ __name__ __ "__main__":
+    assert Solution().canReorderDoubled([4,-2,2,-4]) __ True

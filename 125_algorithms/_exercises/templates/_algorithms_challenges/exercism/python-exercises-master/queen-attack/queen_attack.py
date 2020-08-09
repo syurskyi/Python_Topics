@@ -1,6 +1,6 @@
-def board():
+___ board(
     pass
 
 
-def can_attack():
+___ can_attack(
     pass

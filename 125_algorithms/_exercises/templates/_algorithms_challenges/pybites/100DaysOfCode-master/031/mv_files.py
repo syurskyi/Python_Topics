@@ -1,7 +1,7 @@
 #!python3
 
-import os
-import shutil
+______ os
+______ shutil
 
 #These dirs are specified relative to where the script is run from.
 #In this case, the script was run on Win10 thus the \ in the path.

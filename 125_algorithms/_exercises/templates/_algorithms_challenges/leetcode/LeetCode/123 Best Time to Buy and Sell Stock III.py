@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 
 
 class Solution:
-    def maxProfit(self, prices):
+    ___ maxProfit(self, prices
         """
         Algorithm: dp
         1-D dp.
@@ -22,13 +22,13 @@ class Solution:
         :param prices: list of integers
         :return: integer
         """
-        if len(prices) <= 1:
-            return 0
+        __ le.(prices) <= 1:
+            r_ 0
 
         # O(n) using dp
-        forward = [0 for _ in xrange(len(prices))]  # forward[i] for 0..i
+        forward = [0 for _ in xrange(le.(prices))]  # forward[i] for 0..i
         lowest_buy_price = prices[0]
-        for i in xrange(1, len(prices)):
+        for i in xrange(1, le.(prices)):
             # if i==0:
             # forward[i] = 0
             # else:
@@ -36,10 +36,10 @@ class Solution:
 
             lowest_buy_price = min(prices[i], lowest_buy_price)
 
-        backward = [0 for _ in xrange(len(prices))]  # backward[i] for i..len-1
+        backward = [0 for _ in xrange(le.(prices))]  # backward[i] for i..le.-1
         highest_sell_price = prices[-1]
-        for i in xrange(len(prices)-2, -1, -1):
-            # if i==len(prices)-1:
+        for i in xrange(le.(prices)-2, -1, -1
+            # if i==le.(prices)-1:
             # backward[i] = 0
             # else:
             backward[i] = max(backward[i+1], highest_sell_price-prices[i])
@@ -47,11 +47,11 @@ class Solution:
             highest_sell_price = max(prices[i], highest_sell_price)
 
         max_profit = 0
-        for i in xrange(len(prices)):
+        for i in xrange(le.(prices)):
             max_profit = max(max_profit, forward[i]+backward[i])
-        return max_profit
+        r_ max_profit
 
-    def maxProfit_error(self, prices):
+    ___ maxProfit_error(self, prices
         """
         2 transactions
         you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
@@ -60,11 +60,11 @@ class Solution:
         :return: integer
         """
 
-        if len(prices) <= 1:
-            return 0
+        __ le.(prices) <= 1:
+            r_ 0
 
         delta_prices = []
-        for i in xrange(1, len(prices)):
+        for i in xrange(1, le.(prices)):
             delta_prices.append(prices[i]-prices[i-1])
 
         # O(n)
@@ -72,18 +72,18 @@ class Solution:
 
         max_sub_array = 0
         current_sub_array = 0
-        for j in xrange(len(delta_prices)):
-            if current_sub_array+delta_prices[j] >= 0:
+        for j in xrange(le.(delta_prices)):
+            __ current_sub_array+delta_prices[j] >= 0:
                 current_sub_array += delta_prices[j]
                 max_sub_array = max(max_sub_array, current_sub_array)
-            else:
+            ____
                 # keep two 2
-                if max_sub_array > max_profits[0]:
+                __ max_sub_array > max_profits[0]:
                     max_profits[1] = max_profits[0]
                     max_profits[0] = max_sub_array
-                elif max_sub_array > max_profits[1]:
+                ____ max_sub_array > max_profits[1]:
                     max_profits[1] = max_sub_array
                 max_sub_array = 0
                 current_sub_array = 0
 
-        return sum(max_profits)
+        r_ sum(max_profits)

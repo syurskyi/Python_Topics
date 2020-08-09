@@ -1,17 +1,17 @@
 class Node:
-    def __init__(self, data):
+    ___ __init__(self, data
         self.data = data
         self.next = None
 
 
 class LinkedList:
-    def __init__(self):
+    ___ __init__(self
         self.head = None
 
-    def printList(self):
+    ___ printList(self
         temp = self.head
         linked_list = ""
-        while(temp):
+        w___(temp
             linked_list += (str(temp.data) + " ")
             temp = temp.next
         print(linked_list)

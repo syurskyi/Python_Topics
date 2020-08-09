@@ -1,36 +1,36 @@
-class Solution(object):
-    def snakesAndLadders(self, board):
+class Solution(object
+    ___ snakesAndLadders(self, board
         """
         :type board: List[List[int]]
         :rtype: int
         """
-        n = len(board)
+        n = le.(board)
         newboard = []
-        for i in range(n):
-            newboard.extend(board[n-i-1] if i % 2 == 0 else board[n-i-1][::-1])
+        for i in range(n
+            newboard.extend(board[n-i-1] __ i % 2 __ 0 else board[n-i-1][::-1])
         board = newboard
-        n = len(board)
+        n = le.(board)
         queue = [(0, 0)]
         visited = set([0])
-        while queue:
+        w___ queue:
             i, d = queue.pop(0)
-            for j in range(i+1, i+7):
-                if j == n-1:
-                    return d+1
-                if j not in visited:
+            for j in range(i+1, i+7
+                __ j __ n-1:
+                    r_ d+1
+                __ j not in visited:
                     visited.add(j)
-                    if board[j] == -1:
+                    __ board[j] __ -1:
                         queue.append((j, d+1))
-                    else:
-                        if board[j] == n:
-                            return d+1
-                        if board[board[j]-1] == -1:
+                    ____
+                        __ board[j] __ n:
+                            r_ d+1
+                        __ board[board[j]-1] __ -1:
                             visited.add(board[j]-1)
                             # if not, later moves can visit it again?
                         queue.append((board[j]-1, d+1))
-        return -1
+        r_ -1
 
-    def test(self):
+    ___ test(self
         testCases = [
             [[-1, 1, 2,-1],
              [2, 13,15,-1],
@@ -69,5 +69,5 @@ class Solution(object):
             print('-='*30+'-')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

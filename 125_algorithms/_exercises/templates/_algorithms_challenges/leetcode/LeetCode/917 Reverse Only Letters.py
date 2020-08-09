@@ -25,26 +25,26 @@ S doesn't contain \ or "
 
 
 class Solution:
-    def reverseOnlyLetters(self, S: str) -> str:
+    ___ reverseOnlyLetters(self, S: str) -> str:
         lst = list(S)
         i = 0
-        n = len(lst)
+        n = le.(lst)
         j = n - 1
-        while True:
-            while i < n and not lst[i].isalpha():
+        w___ True:
+            w___ i < n and not lst[i].isalpha(
                 i += 1
-            while j >= 0 and not lst[j].isalpha():
+            w___ j >= 0 and not lst[j].isalpha(
                 j -= 1
 
-            if i < j and i < n and j >= 0:
+            __ i < j and i < n and j >= 0:
                 lst[i], lst[j] = lst[j], lst[i]
                 i += 1
                 j -= 1
-            else:
+            ____
                 break
 
-        return "".join(lst)
+        r_ "".join(lst)
 
 
-if __name__ == "__main__":
-    assert Solution().reverseOnlyLetters("Test1ng-Leet=code-Q!") == "Qedo1ct-eeLg=ntse-T!"
+__ __name__ __ "__main__":
+    assert Solution().reverseOnlyLetters("Test1ng-Leet=code-Q!") __ "Qedo1ct-eeLg=ntse-T!"

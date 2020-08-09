@@ -25,7 +25,7 @@ budget = 190
 ...     (([2, 100, 35, 120, 1000], 190), 51.0),
 ...     (([21, 100, 50, 120, 130, 110], 140), 23.8),
 ...     (([210, 200, 150, 193, 130, 110, 209, 342, 117], 1530), 211.0),
-... ):
+...
 ...     res = find_grants_cap(*_in)
 ...     if abs(res - _out) >= EPS: print(_in, res)
 ...     gotcha.append(abs(res - _out) < EPS)
@@ -34,30 +34,30 @@ True
 """
 
 
-def find_grants_cap(grantsArray, newBudget):
+___ find_grants_cap(grantsArray, newBudget
     """
     :type grantsArray: list[int]
     :type newBudget: int
     :rtype: float
     """
-    n = len(grantsArray)
+    n = le.(grantsArray)
     area = sum(grantsArray) - newBudget
 
     grantsArray.sort(reverse=True)
 
     i = segment_sum = 0
 
-    while i < n:
-        if i == n - 1:
+    w___ i < n:
+        __ i __ n - 1:
             # (i + 1) * (grantsArray[i] - 0)
             segment_sum = n * grantsArray[i]
-        else:
+        ____
             segment_sum = (i + 1) * (grantsArray[i] - grantsArray[i + 1])
 
-        if area < segment_sum:
+        __ area < segment_sum:
             break
 
         area -= segment_sum
         i += 1
 
-    return grantsArray[i] - area / float(i + 1)
+    r_ grantsArray[i] - area / float(i + 1)

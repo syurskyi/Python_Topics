@@ -1,14 +1,14 @@
-from pathlib import Path
-from urllib.request import urlretrieve
-from dataclasses import dataclass
+from pathlib ______ Path
+from urllib.request ______ urlretrieve
+from dataclasses ______ dataclass
 
-from bs4 import BeautifulSoup, Tag
+from bs4 ______ BeautifulSoup, Tag
 
 url = "https://bites-data.s3.us-east-2.amazonaws.com/" "best-programming-books.html"
 tmp = Path("/tmp")
 html_file = tmp / "books.html"
 
-if not html_file.exists():
+__ not html_file.exists(
     urlretrieve(url, html_file)
 
 
@@ -29,22 +29,22 @@ class Book:
     rank: int
     rating: float
 
-    def _rating(self):
+    ___ _rating(self
         res = f"{self.rating:.2f}"
-        return res[:-1] if res[-1] == "0" else res
+        r_ res[:-1] __ res[-1] __ "0" else res
 
-    def __str__(self):
-        return (
+    ___ __str__(self
+        r_ (
             f"[{self.rank:03}] {self.title} ({self.year})\n"
             f"      {self.author} {self._rating()}"
         )
 
 
-def _get_soup(file):
-    return BeautifulSoup(file.read_text(), "html.parser")
+___ _get_soup(file
+    r_ BeautifulSoup(file.read_text(), "html.parser")
 
 
-def display_books(books, limit=10, year=None):
+___ display_books(books, limit=10, year=None
     """Prints the specified books to the console
 
     :param books: list of all the books
@@ -53,14 +53,14 @@ def display_books(books, limit=10, year=None):
     :return: None
     """
     for b in books:
-        if limit == 0:
+        __ limit __ 0:
             break
-        if year is None or b.year >= year:
+        __ year is None or b.year >= year:
             print(b)
             limit -= 1
 
 
-def load_data():
+___ load_data(
     """Loads the data from the html file
 
     Creates the soup object and processes it to extract the information
@@ -76,15 +76,15 @@ def load_data():
     book_list = soup.find("div", {"class": "books"})
     books = []
     book: Tag
-    for book in book_list.find_all("div", {"class": "book"}):
+    for book in book_list.find_all("div", {"class": "book"}
         title = book.select("h2.main")[0].text
-        if "python" not in title.lower():
+        __ "python" not in title.lower(
             continue
         try:
             author_a = book.select("h3.authors > a")[0].text.split(" ")
             author = f'{author_a[-1]}, {" ".join(author_a[:-1])}'
             date_span = book.select("span.date")
-            if len(date_span) == 0:
+            __ le.(date_span) __ 0:
                 continue
             year = int(date_span[0].text[-4:])
             rank = int(book.select("div.rank > span")[0].text)
@@ -100,13 +100,13 @@ def load_data():
             books, key=lambda b: (-b.rating, b.year, b.title.lower(), b.author.lower())
         ),
         start=1,
-    ):
+
         b.rank = n
         res.append(b)
-    return res
+    r_ res
 
 
-def main():
+___ main(
     books = load_data()
     display_books(books, limit=5, year=2017)
     """If done correctly, the previous function call should display the
@@ -114,7 +114,7 @@ def main():
     """
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     main()
 
 """

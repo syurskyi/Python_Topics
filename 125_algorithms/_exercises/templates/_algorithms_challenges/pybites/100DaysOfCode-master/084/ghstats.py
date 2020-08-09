@@ -1,27 +1,27 @@
-from collections import namedtuple
-import os
-import sys
+from collections ______ namedtuple
+______ os
+______ sys
 
-from github import Github
+from github ______ Github
 
 Repo = namedtuple('Repo', 'name stars forks')
 
 
 GH_USER = os.environ.get('GH_USER')
 GH_PW = os.environ.get('GH_PW')
-if not GH_USER or not GH_PW:
+__ not GH_USER or not GH_PW:
     print('Please set GH_USER and GH_PW env vars')
     sys.exit(1)
 
 
-def get_user(user):
+___ get_user(user
     gh = Github(GH_USER, GH_PW)
-    return gh.get_user(user)
+    r_ gh.get_user(user)
 
 
-def get_repo_stats(user):
-    for repo in user.get_repos():
-        if repo.fork:
+___ get_repo_stats(user
+    for repo in user.get_repos(
+        __ repo.fork:
             continue
 
         yield Repo(name=repo.name,
@@ -29,10 +29,10 @@ def get_repo_stats(user):
                    forks=repo.forks_count)
 
 
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
+__ __name__ __ '__main__':
+    __ le.(sys.argv) < 2:
         user = 'pybites'
-    else:
+    ____
         user = sys.argv[1]
 
     try:
@@ -56,5 +56,5 @@ if __name__ == '__main__':
 
     for repo in sorted(repo_stats,
                        key=lambda r: (r.stars + r.forks)/2,
-                       reverse=True):
+                       reverse=True
         print(fmt.format(repo.name, repo.stars, repo.forks))

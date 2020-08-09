@@ -1,13 +1,13 @@
-from datetime import date
+from datetime ______ date
 
-from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta ______ relativedelta
 
 START_DATE = date(2018, 11, 1)
 MIN_DAYS_TO_COUNT_AS_MONTH = 10
 MONTHS_PER_YEAR = 12
 
 
-def calc_months_passed(year, month, day):
+___ calc_months_passed(year, month, day
     """Construct a date object from the passed in arguments.
        If this fails due to bad inputs reraise the exception.
        Also if the new date is < START_DATE raise a ValueError.
@@ -31,9 +31,9 @@ def calc_months_passed(year, month, day):
     """
     end_date = date(year=year, month=month, day=day)
 
-    if end_date < START_DATE:
+    __ end_date < START_DATE:
         raise ValueError('Invalid date')
 
     result = relativedelta(end_date, START_DATE)
 
-    return result.months + (1 if result.days >= 10 else 0) + 12 * result.years
+    r_ result.months + (1 __ result.days >= 10 else 0) + 12 * result.years

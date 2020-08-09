@@ -4,41 +4,41 @@ http://www.codewars.com/kata/prime-number-decompositions/train/python
 """
 
 
-def getAllPrimeFactors(n):
-    if n == 1:
-        return [1]
+___ getAllPrimeFactors(n
+    __ n __ 1:
+        r_ [1]
 
     result = []
-    if isvalidparameter(n):
+    __ isvalidparameter(n
         factor = 2
-        while n > 1:
-            while n % factor == 0:
+        w___ n > 1:
+            w___ n % factor __ 0:
                 n /= factor
                 result.append(factor)
             factor += 1
-    return result
+    r_ result
 
 
-def getUniquePrimeFactorsWithCount(n):
+___ getUniquePrimeFactorsWithCount(n
     result = [[], []]
-    if isvalidparameter(n):
+    __ isvalidparameter(n
         factors = getAllPrimeFactors(n)
         for f in factors:
-            if f in result[0]:
+            __ f in result[0]:
                 result[1][-1] += 1
-            else:
+            ____
                 result[0].append(f)
                 result[1].append(1)
-    return result
+    r_ result
 
 
-def getUniquePrimeFactorsWithProducts(n):
+___ getUniquePrimeFactorsWithProducts(n
     result = []
-    if isvalidparameter(n):
+    __ isvalidparameter(n
         factors = getUniquePrimeFactorsWithCount(n)
         result = map(lambda x: x[0] ** x[1], zip(factors[0], factors[1]))
-    return result
+    r_ result
 
 
-def isvalidparameter(n):
-    return isinstance(n, int) and n > 0
+___ isvalidparameter(n
+    r_ isinstance(n, int) and n > 0

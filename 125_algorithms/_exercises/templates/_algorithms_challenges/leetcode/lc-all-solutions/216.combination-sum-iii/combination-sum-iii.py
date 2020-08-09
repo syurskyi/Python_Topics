@@ -1,20 +1,20 @@
-class Solution(object):
-  def combinationSum3(self, k, n):
+class Solution(object
+  ___ combinationSum3(self, k, n
     """
     :type k: int
     :type n: int
     :rtype: List[List[int]]
     """
 
-    def dfs(k, start, path, subsum, res, visited):
-      if len(path) == k and subsum == 0:
+    ___ dfs(k, start, path, subsum, res, visited
+      __ le.(path) __ k and subsum __ 0:
         res.append(path + [])
-        return
-      if len(path) >= k or subsum <= 0:
-        return
+        r_
+      __ le.(path) >= k or subsum <= 0:
+        r_
 
-      for i in range(start, 10):
-        if visited[i] == 0:
+      for i in range(start, 10
+        __ visited[i] __ 0:
           visited[i] = 1
           path.append(i)
           dfs(k, i + 1, path, subsum - i, res, visited)
@@ -24,4 +24,4 @@ class Solution(object):
     visited = [0] * 10
     res = []
     dfs(k, 1, [], n, res, visited)
-    return res
+    r_ res

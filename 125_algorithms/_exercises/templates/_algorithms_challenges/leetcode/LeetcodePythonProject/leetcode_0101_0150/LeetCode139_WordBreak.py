@@ -4,28 +4,28 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def wordBreak(self, s, wordDict):
+class Solution(object
+    ___ wordBreak(self, s, wordDict
         """
         :type s: str
         :type wordDict: List[str]
         :rtype: bool
         """
         wordDict = set(wordDict)
-        dp = [False]*(len(s)+1)
+        dp = [False]*(le.(s)+1)
         dp[0] = True
-        for i in range(len(s)):
-            if not dp[i]:
+        for i in range(le.(s)):
+            __ not dp[i]:
                 continue
             for word in wordDict:
-                end = i+len(word)
+                end = i+le.(word)
                 sub = s[i:end]
-                if sub == word:
+                __ sub __ word:
                     dp[end] = True
-        return dp[-1]
+        r_ dp[-1]
     
-    def test(self):
+    ___ test(self
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -19,14 +19,14 @@ __author__ = 'Daniel'
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def lowestCommonAncestor(self, root, p, q):
+    ___ lowestCommonAncestor(self, root, p, q
         """
 
         :type root: TreeNode
@@ -35,10 +35,10 @@ class Solution:
         :rtype: TreeNode
         """
         cur = root
-        while True:
-            if p.val < cur.val and q.val < cur.val:
+        w___ True:
+            __ p.val < cur.val and q.val < cur.val:
                 cur = cur.left
-            elif p.val > cur.val and q.val > cur.val:
+            ____ p.val > cur.val and q.val > cur.val:
                 cur = cur.right
-            else:  # including case in self-descendant
-                return cur
+            ____  # including case in self-descendant
+                r_ cur

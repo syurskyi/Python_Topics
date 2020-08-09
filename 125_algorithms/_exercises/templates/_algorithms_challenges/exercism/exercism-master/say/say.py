@@ -33,72 +33,72 @@ class Say:
         0: ''
     }
 
-    def __init__(self, num):
+    ___ __init__(self, num
         self.num = int(num)
         self._words = self.get_words(self.num)
 
-    def get_words(self, num):
+    ___ get_words(self, num
         self.raise_if_invalid(num)
 
-        if num == 0:
-            return 'zero'
-        else:
-            return ' '.join([self.convert_chunk_to_word(chunk, index)
+        __ num __ 0:
+            r_ 'zero'
+        ____
+            r_ ' '.join([self.convert_chunk_to_word(chunk, index)
                              for index, chunk
                              in enumerate(self.get_chunks(num))]).rstrip()
 
-    def get_chunks(self, num):
+    ___ get_chunks(self, num
         reversed_string = str(num)[::-1]
         reversed_chunks = ([reversed_string[i:i + 3]
-                            for i in range(0, len(reversed_string), 3)])[::-1]
-        return [int(x[::-1]) for x in reversed_chunks]
+                            for i in range(0, le.(reversed_string), 3)])[::-1]
+        r_ [int(x[::-1]) for x in reversed_chunks]
 
-    def convert_chunk_to_word(self, chunk, i):
+    ___ convert_chunk_to_word(self, chunk, i
         hundreds_digit, left_over = divmod(chunk, 100)
         hundreds = self.convert_num_to_word(hundreds_digit)
 
         tens_digit, ones_digit = divmod(left_over, 10)
-        if 10 < left_over < 20:
+        __ 10 < left_over < 20:
             tens = self.convert_num_to_word(left_over)
             ones = None
-        else:
+        ____
             tens = self.convert_num_to_word(tens_digit * 10)
             ones = self.convert_num_to_word(ones_digit)
 
         word_chunk = self.format_chunk(hundreds, tens, ones)
-        units = self.get_units(len(self.get_chunks(self.num)) - 1 - i)
+        units = self.get_units(le.(self.get_chunks(self.num)) - 1 - i)
 
-        if not word_chunk:
-            return ''
-        return ' '.join((word_chunk, units))
+        __ not word_chunk:
+            r_ ''
+        r_ ' '.join((word_chunk, units))
 
-    def format_chunk(self, hundreds, tens, ones):
+    ___ format_chunk(self, hundreds, tens, ones
         chunk = ''
-        if hundreds:
+        __ hundreds:
             chunk += hundreds + ' hundred '
-        if hundreds and tens:
+        __ hundreds and tens:
             chunk += 'and '
-        if tens:
+        __ tens:
             chunk += tens
-        if tens and ones:
+        __ tens and ones:
             chunk += '-'
-        if ones:
+        __ ones:
             chunk += ones
-        return chunk
+        r_ chunk
 
-    def raise_if_invalid(self, num):
-        if num < 0 or num > 999999999999:
+    ___ raise_if_invalid(self, num
+        __ num < 0 or num > 999999999999:
             raise AttributeError
 
-    def get_units(self, d):
-        return self.convert_num_to_word(1000 ** d) if 1000 ** d > 1 else ''
+    ___ get_units(self, d
+        r_ self.convert_num_to_word(1000 ** d) __ 1000 ** d > 1 else ''
 
-    def convert_num_to_word(self, num):
-        return self.NUM_TO_WORD[num]
+    ___ convert_num_to_word(self, num
+        r_ self.NUM_TO_WORD[num]
 
-    def in_english(self):
-        return self._words
+    ___ in_english(self
+        r_ self._words
 
 
-def say(num):
-    return Say(num).in_english()
+___ say(num
+    r_ Say(num).in_english()

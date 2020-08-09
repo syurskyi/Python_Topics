@@ -4,23 +4,23 @@ Created on Aug 23, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def optimalDivision(self, nums):
+class Solution(object
+    ___ optimalDivision(self, nums
         """
         :type nums: List[int]
         :rtype: str
         """
         res = '%s' % nums[0]
-        for i in range(1, len(nums)):
-            if i == 1 and len(nums) > 2:
+        for i in range(1, le.(nums)):
+            __ i __ 1 and le.(nums) > 2:
                 res += '/(%s' % nums[i]
-            else:
+            ____
                 res += '/%s' % nums[i]
-        if len(nums) > 2:
+        __ le.(nums) > 2:
             res += ')'
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1000,100,10,2],
         ]
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
         
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

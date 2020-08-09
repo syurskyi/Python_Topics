@@ -12,12 +12,12 @@ For example,
 Given height = [2,1,5,6,2,3],
 return 10.
 """
-import sys
+______ sys
 __author__ = 'Danyang'
 
 
 class Solution:
-    def largestRectangleArea(self, height):
+    ___ largestRectangleArea(self, height
         """
         O(2*n)
         every bar at most enter the stack once and is popped out once.
@@ -39,19 +39,19 @@ class Solution:
         :param height: a list of int
         :return: int
         """
-        if not height:
-            return 0
+        __ not height:
+            r_ 0
 
-        n = len(height)
+        n = le.(height)
         gmax = -sys.maxint-1
         inc_stack = []  # store the idx, increasing stack
 
-        for i in xrange(n):
-            while inc_stack and height[inc_stack[-1]] > height[i]:
+        for i in xrange(n
+            w___ inc_stack and height[inc_stack[-1]] > height[i]:
                 last = inc_stack.pop()
-                if inc_stack:  # calculate area when popping
+                __ inc_stack:  # calculate area when popping
                     area = height[last]*(i-(inc_stack[-1]+1))
-                else:
+                ____
                     area = height[last]*i
                 gmax = max(gmax, area)
 
@@ -59,38 +59,38 @@ class Solution:
 
         # after processing all heights, process the remaining stack
         i = n
-        while inc_stack:
+        w___ inc_stack:
             last = inc_stack.pop()
-            if inc_stack:
+            __ inc_stack:
                 area = height[last]*(i-(inc_stack[-1]+1))
-            else:
+            ____
                 area = height[last]*i
             gmax = max(gmax, area)
 
-        return gmax
+        r_ gmax
 
-    def largestRectangleArea_TLE(self, height):
+    ___ largestRectangleArea_TLE(self, height
         """
         O(n*n)
         :param height: a list of int
         :return: int
         """
-        if not height:
-            return 0
+        __ not height:
+            r_ 0
 
         max_area = -1<<32
-        for ind, val in enumerate(height):
+        for ind, val in enumerate(height
             min_h = val
             max_area = max(max_area, val*1)
-            for j in xrange(ind, -1, -1):
+            for j in xrange(ind, -1, -1
                 min_h = min(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 max_area = max(max_area, current_area)
 
-        return max_area
+        r_ max_area
 
 
-    def largestRectangleArea_complex(self, height):
+    ___ largestRectangleArea_complex(self, height
         """
         O(n*n) + prune
 
@@ -100,25 +100,25 @@ class Solution:
         :param height: a list of int
         :return: int
         """
-        if not height:
-            return 0
+        __ not height:
+            r_ 0
 
         global_max = -1<<32
-        for ind, val in enumerate(height):
-            if ind+1<len(height) and val<=height[ind+1]:  # PRUNE, find until peak
+        for ind, val in enumerate(height
+            __ ind+1<le.(height) and val<=height[ind+1]:  # PRUNE, find until peak
                 continue
 
             min_h = val
             global_max = max(global_max, min_h*1)
-            for j in xrange(ind, -1, -1):  # scanning backward
+            for j in xrange(ind, -1, -1  # scanning backward
                 min_h = min(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 global_max = max(global_max, current_area)
 
-        return global_max
+        r_ global_max
 
 
-    def largestRectangleArea_error(self, height):
+    ___ largestRectangleArea_error(self, height
         """
         O(n)
 
@@ -128,41 +128,41 @@ class Solution:
         :param height: a list of int
         :return: int
         """
-        if not height:
-            return 0
+        __ not height:
+            r_ 0
 
-        length = len(height)
+        length = le.(height)
         global_max = -1<<32
         inc_stack = []  # store the pointer
 
         i = 0
-        while i<length:
-            if not inc_stack or height[i]>=height[inc_stack[-1]]:
+        w___ i<length:
+            __ not inc_stack or height[i]>=height[inc_stack[-1]]:
                 inc_stack.append(i)
                 i += 1
-            else:
+            ____
                 last = inc_stack.pop()
-                if inc_stack:
+                __ inc_stack:
                     area = height[last] * (i-last)
-                else:
+                ____
                     area = height[last] * i
                 global_max = max(global_max, area)
 
         # remaining stack
-        while inc_stack:
+        w___ inc_stack:
             last = inc_stack.pop()
-            if inc_stack:
+            __ inc_stack:
                 area = height[last]*(i-last)
-            else:
+            ____
                 area = height[last]*i
             global_max = max(global_max, area)
-        return global_max
+        r_ global_max
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     # height = [2, 1, 2]
     height = [4, 2, 0, 3, 2, 5]
-    assert Solution().largestRectangleArea(height) == Solution().largestRectangleArea_complex(height)
+    assert Solution().largestRectangleArea(height) __ Solution().largestRectangleArea_complex(height)
 
 
 

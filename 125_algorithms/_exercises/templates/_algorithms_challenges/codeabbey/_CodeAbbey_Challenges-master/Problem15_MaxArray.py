@@ -5,9 +5,9 @@ with open("prob15.txt") as infile:
     data = data.split(" ")
     for each_digit in data:
         each_digit =int(each_digit)
-        if int(each_digit) < min_:
+        __ int(each_digit) < min_:
             min_ = each_digit
-        if int(each_digit) > max_:
+        __ int(each_digit) > max_:
             max_ = each_digit
 
     print(max_,min_)

@@ -24,23 +24,23 @@ Testing:
 ...     (['A N B', 'B NW C', 'C S A'], True),
 ...     (['A E B', 'B E C', 'C S D', 'D S E'], True),
 ...     (['A N B', 'B S A', 'C E D', 'D W C'], True),
-... ):
+...
 ...     res = is_valid_relation(_in)
 ...     if res != _out: print(_in, res)
 ...     gotcha.append(res == _out)
 >>> bool(gotcha) and all(gotcha)
 True
 """
-import collections
+______ collections
 
 
-def is_valid_relation(strs):
+___ is_valid_relation(strs
     """
     :type strs: list[str]
     :rtype: bool
     """
-    if not strs:
-        return False
+    __ not strs:
+        r_ False
 
     # egraph => scan from east to west
     egraph = collections.defaultdict(set)
@@ -49,34 +49,34 @@ def is_valid_relation(strs):
     sgraph = collections.defaultdict(set)
 
     for s in strs:
-        if not s:
-            return False
+        __ not s:
+            r_ False
 
         dst, d, src = s.split()
 
-        if 'E' in d:
+        __ 'E' in d:
             egraph[dst].add(src)
             wgraph[src].add(dst)
-        elif 'W' in d:
+        ____ 'W' in d:
             wgraph[dst].add(src)
             egraph[src].add(dst)
 
-        if 'N' in d:
+        __ 'N' in d:
             ngraph[dst].add(src)
             sgraph[src].add(dst)
-        elif 'S' in d:
+        ____ 'S' in d:
             sgraph[dst].add(src)
             ngraph[src].add(dst)
 
-    for graph in (egraph, wgraph, ngraph, sgraph):
-        for node in graph.keys():
-            if dfs(graph, node, set()):
-                return False
+    for graph in (egraph, wgraph, ngraph, sgraph
+        for node in graph.keys(
+            __ dfs(graph, node, set()):
+                r_ False
 
-    return True
+    r_ True
 
 
-def dfs(graph, node, visited):
+___ dfs(graph, node, visited
     """
     returns True if there is cycle in graph
     :type graph: dict{str: set}
@@ -84,15 +84,15 @@ def dfs(graph, node, visited):
     :type visited: set
     :rtype: bool
     """
-    if node not in graph:
-        return False
-    if node in visited:
-        return True
+    __ node not in graph:
+        r_ False
+    __ node in visited:
+        r_ True
 
     visited.add(node)
 
     for nxt in graph[node]:
-        if dfs(graph, nxt, visited):
-            return True
+        __ dfs(graph, nxt, visited
+            r_ True
 
-    return False
+    r_ False

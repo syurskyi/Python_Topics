@@ -1,12 +1,12 @@
 #! /usr/bin/env python
-import random
+______ random
 
 
-def firstAndLast(list):
-    return [list[0], list[-1]]
+___ firstAndLast(list
+    r_ [list[0], list[-1]]
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     list = random.sample(range(0, 100), random.randint(1, 20))
     print('List: ' + str(list) + '\n')
     result = firstAndLast(list)

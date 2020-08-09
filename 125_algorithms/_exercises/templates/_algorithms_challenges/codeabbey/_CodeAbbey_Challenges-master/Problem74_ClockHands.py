@@ -1,4 +1,4 @@
-import math
+______ ma__
 
 infile = open("prob74.txt")
 infile.readline()
@@ -13,11 +13,11 @@ for time in data:
 
 for item in times:
     hrAngle = int(item[0])*30 + 30*(int(item[1])/60)
-    xhr = 10+6*math.sin(hrAngle*math.pi/180) # convert degree to radian
-    yhr = 10+6*math.cos(hrAngle*math.pi/180)
+    xhr = 10+6*ma__.sin(hrAngle*ma__.pi/180) # convert degree to radian
+    yhr = 10+6*ma__.cos(hrAngle*ma__.pi/180)
 
     minAngle = int(item[1])*6
-    xmin = 10+9*math.sin(minAngle*math.pi/180)
-    ymin = 10+9*math.cos(minAngle*math.pi/180)
+    xmin = 10+9*ma__.sin(minAngle*ma__.pi/180)
+    ymin = 10+9*ma__.cos(minAngle*ma__.pi/180)
 
     print("{:.7f} {:.7f} {:.7f} {:.7f}".format(xhr,yhr,xmin,ymin),end=" ")

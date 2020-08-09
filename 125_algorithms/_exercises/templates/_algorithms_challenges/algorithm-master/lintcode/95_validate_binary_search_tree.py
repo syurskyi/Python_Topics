@@ -8,14 +8,14 @@ is must be a non-descending sequence, that is, A[i+1] >= A[i].
 
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
 
 
 class Solution:
-    def isValidBST(self, root):
+    ___ isValidBST(self, root
         """
         :type root: TreeNode
         :rtype: bool
@@ -24,43 +24,43 @@ class Solution:
         node = root
         pre = None
 
-        while node or stack:
-            while node:
+        w___ node or stack:
+            w___ node:
                 stack.append(node)
                 node = node.left
 
             node = stack.pop()
 
-            if pre and node.val <= pre.val:
-                return False
+            __ pre and node.val <= pre.val:
+                r_ False
 
             pre = node
 
             node = node.right
 
-        return True
+        r_ True
 
 
 class Solution:
     ans = True
     pre = None
 
-    def isValidBST(self, root):
+    ___ isValidBST(self, root
         """
         :type root: TreeNode
         :rtype: bool
         """
-        if not root:
-            return self.ans
+        __ not root:
+            r_ self.ans
 
         self.isValidBST(root.left)
 
-        if self.pre and root.val <= self.pre.val:
+        __ self.pre and root.val <= self.pre.val:
             self.ans = False
-            return self.ans
+            r_ self.ans
 
         self.pre = root
 
         self.isValidBST(root.right)
 
-        return self.ans
+        r_ self.ans

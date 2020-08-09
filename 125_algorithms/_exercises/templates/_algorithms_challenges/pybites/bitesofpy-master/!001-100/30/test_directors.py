@@ -1,35 +1,35 @@
-from collections import defaultdict
-from directors import (get_movies_by_director, get_average_scores,
+from collections ______ defaultdict
+from directors ______ (get_movies_by_director, get_average_scores,
                        calc_mean_score, Movie)
 
 director_movies = get_movies_by_director()
 
 
-def test_get_movies_by_director():
+___ test_get_movies_by_director(
     assert 'Sergio Leone' in director_movies
-    assert len(director_movies['Sergio Leone']) == 4
-    assert len(director_movies['Peter Jackson']) == 12
+    assert le.(director_movies['Sergio Leone']) __ 4
+    assert le.(director_movies['Peter Jackson']) __ 12
 
 
-def test_director_movies_data_structure():
+___ test_director_movies_data_structure(
     assert type(director_movies) in (dict, defaultdict)
-    assert type(director_movies['Peter Jackson']) == list
-    assert type(director_movies['Peter Jackson'][0]) == Movie
+    assert type(director_movies['Peter Jackson']) __ list
+    assert type(director_movies['Peter Jackson'][0]) __ Movie
 
 
-def test_calc_mean_score():
+___ test_calc_mean_score(
     movies_sergio = director_movies['Sergio Leone']
     movies_nolan = director_movies['Christopher Nolan']
-    assert calc_mean_score(movies_sergio) == 8.5
-    assert calc_mean_score(movies_nolan) == 8.4
+    assert calc_mean_score(movies_sergio) __ 8.5
+    assert calc_mean_score(movies_nolan) __ 8.4
 
 
-def test_get_average_scores():
+___ test_get_average_scores(
     # top 2
     scores = get_average_scores(director_movies)
 
-    assert scores[0] == ('Sergio Leone', 8.5)
-    assert scores[1] == ('Christopher Nolan', 8.4)
+    assert scores[0] __ ('Sergio Leone', 8.5)
+    assert scores[1] __ ('Christopher Nolan', 8.4)
 
     # order / score might slightly change depending the way the mean
     # is calculated so only test director names in top scores

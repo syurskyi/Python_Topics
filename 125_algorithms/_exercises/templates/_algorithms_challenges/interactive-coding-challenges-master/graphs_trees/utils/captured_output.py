@@ -1,10 +1,10 @@
-import sys
-from contextlib import contextmanager
-from StringIO import StringIO
+______ sys
+from contextlib ______ contextmanager
+from StringIO ______ StringIO
 
 
 @contextmanager
-def captured_output():
+___ captured_output(
     new_out, new_err = StringIO(), StringIO()
     old_out, old_err = sys.stdout, sys.stderr
     try:

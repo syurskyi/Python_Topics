@@ -17,29 +17,29 @@ The given number is in the range [0, 108]
 
 
 class Solution:
-    def maximumSwap(self, num: int) -> int:
+    ___ maximumSwap(self, num: int) -> int:
         """
         stk maintain a increasing stack from right to left
         """
         stk = []
         nums = list(str(num))
-        n = len(nums)
-        for i in range(n-1, -1, -1):
-            if stk and stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
+        n = le.(nums)
+        for i in range(n-1, -1, -1
+            __ stk and stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
                 continue
             stk.append((i, nums[i]))
 
-        for i in range(n):
-            while stk and stk[-1][0] <= i:
+        for i in range(n
+            w___ stk and stk[-1][0] <= i:
                 stk.pop()
-            if stk and stk[-1][1] > nums[i]:
+            __ stk and stk[-1][1] > nums[i]:
                 j = stk[-1][0]
                 nums[i], nums[j] = nums[j], nums[i]
                 break
 
-        return int("".join(nums))
+        r_ int("".join(nums))
 
 
-if __name__ == "__main__":
-    assert Solution().maximumSwap(2736) == 7236
-    assert Solution().maximumSwap(9973) == 9973
+__ __name__ __ "__main__":
+    assert Solution().maximumSwap(2736) __ 7236
+    assert Solution().maximumSwap(9973) __ 9973

@@ -17,21 +17,21 @@ For example:
     BA -> 52 + 1 = 53
 """
 
-class Solution(object):
-    def titleToNumber(self, s):
+class Solution(object
+    ___ titleToNumber(self, s
         """
         :type s: str
         :rtype: int
         """
         d = {}
         res = 0
-        for i, k in enumerate(range(ord('A'), ord('Z') + 1), start=1):
+        for i, k in enumerate(range(ord('A'), ord('Z') + 1), start=1
             d[chr(k)] = i
         j = 0
         for c in s[::-1]:
             res += d[c] * (26 ** j)
             j += 1
-        return res
+        r_ res
 
 
 s = Solution()

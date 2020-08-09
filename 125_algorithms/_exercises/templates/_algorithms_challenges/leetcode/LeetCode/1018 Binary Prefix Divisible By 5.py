@@ -31,11 +31,11 @@ Note:
 1 <= A.length <= 30000
 A[i] is 0 or 1
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def prefixesDivBy5(self, A: List[int]) -> List[bool]:
+    ___ prefixesDivBy5(self, A: List[int]) -> List[bool]:
         """
         brute force
         """
@@ -44,9 +44,9 @@ class Solution:
         for a in A:
             cur = (cur << 1) + a
             cur %= 5
-            if cur == 0:
+            __ cur __ 0:
                 ret.append(True)
-            else:
+            ____
                 ret.append(False)
 
-        return ret
+        r_ ret

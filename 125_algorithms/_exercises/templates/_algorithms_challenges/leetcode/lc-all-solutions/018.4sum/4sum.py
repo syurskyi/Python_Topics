@@ -1,5 +1,5 @@
-class Solution(object):
-  def fourSum(self, nums, target):
+class Solution(object
+  ___ fourSum(self, nums, target
     """
     :type nums: List[int]
     :type target: int
@@ -7,26 +7,26 @@ class Solution(object):
     """
     nums.sort()
     res = []
-    for i in range(0, len(nums)):
-      if i > 0 and nums[i] == nums[i - 1]:
+    for i in range(0, le.(nums)):
+      __ i > 0 and nums[i] __ nums[i - 1]:
         continue
-      for j in range(i + 1, len(nums)):
-        if j > i + 1 and nums[j] == nums[j - 1]:
+      for j in range(i + 1, le.(nums)):
+        __ j > i + 1 and nums[j] __ nums[j - 1]:
           continue
         start = j + 1
-        end = len(nums) - 1
-        while start < end:
+        end = le.(nums) - 1
+        w___ start < end:
           sum = nums[i] + nums[j] + nums[start] + nums[end]
-          if sum < target:
+          __ sum < target:
             start += 1
-          elif sum > target:
+          ____ sum > target:
             end -= 1
-          else:
+          ____
             res.append((nums[i], nums[j], nums[start], nums[end]))
             start += 1
             end -= 1
-            while start < end and nums[start] == nums[start - 1]:
+            w___ start < end and nums[start] __ nums[start - 1]:
               start += 1
-            while start < end and nums[end] == nums[end + 1]:
+            w___ start < end and nums[end] __ nums[end + 1]:
               end -= 1
-    return res
+    r_ res

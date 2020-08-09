@@ -3,8 +3,8 @@ Created on Oct 11, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def findKthNumber(self, m, n, k):
+class Solution(object
+    ___ findKthNumber(self, m, n, k
         """
         :type m: int
         :type n: int
@@ -12,23 +12,23 @@ class Solution(object):
         :rtype: int
         """
         low, high = 1, m*n+1
-        while low < high:
+        w___ low < high:
             mid = (low+high)//2
             c = self.count(mid, m, n)
-            if c >= k:
+            __ c >= k:
                 high = mid
-            else:
+            ____
                 low = mid+1
-        return high
+        r_ high
     
-    def count(self, val, m, n):
+    ___ count(self, val, m, n
         count = 0
-        for i in range(1, m+1):
+        for i in range(1, m+1
             tmp = min(val//i, n)
             count += tmp
-        return count
+        r_ count
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 3,
@@ -49,5 +49,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

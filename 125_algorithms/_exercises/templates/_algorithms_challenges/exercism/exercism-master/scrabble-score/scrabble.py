@@ -8,15 +8,15 @@ class Scrabble:
     }
 
     @classmethod
-    def score(cls, word):
-        if not cls.valid(word):
-            return 0
-        return sum([cls.LETTER_VALUES[c.lower()] for c in word])
+    ___ score(cls, word
+        __ not cls.valid(word
+            r_ 0
+        r_ sum([cls.LETTER_VALUES[c.lower()] for c in word])
 
     @classmethod
-    def valid(cls, word):
-        return word.isalpha()
+    ___ valid(cls, word
+        r_ word.isalpha()
 
 
-def score(word):
-    return Scrabble.score(word)
+___ score(word
+    r_ Scrabble.score(word)

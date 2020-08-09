@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestUtopianTree(object):
+class TestUtopianTree(object
 
-    def test_utopian_tree(self):
+    ___ test_utopian_tree(self
         solution = Solution()
         assert_equal(solution.calc_utopian_tree_height(0), 1)
         assert_equal(solution.calc_utopian_tree_height(1), 2)
@@ -11,10 +11,10 @@ class TestUtopianTree(object):
         print('Success: test_utopian_tree')
 
 
-def main():
+___ main(
     test = TestUtopianTree()
     test.test_utopian_tree()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

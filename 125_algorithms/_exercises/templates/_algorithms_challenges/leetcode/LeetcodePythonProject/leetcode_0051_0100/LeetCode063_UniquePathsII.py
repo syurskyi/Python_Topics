@@ -4,36 +4,36 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def uniquePathsWithObstacles(self, obstacleGrid):
+class Solution(object
+    ___ uniquePathsWithObstacles(self, obstacleGrid
         """
         :type obstacleGrid: List[List[int]]
         :rtype: int
         """
-        if not obstacleGrid:
-            return 0
-        m = len(obstacleGrid)
-        n = len(obstacleGrid[0])
+        __ not obstacleGrid:
+            r_ 0
+        m = le.(obstacleGrid)
+        n = le.(obstacleGrid[0])
         dp = [[0]*n for i in range(m)]
-        if obstacleGrid[0][0] == 1:
-            return 0
-        for i in range(m):
-            for j in range(n):
-                if obstacleGrid[i][j] == 1:
+        __ obstacleGrid[0][0] __ 1:
+            r_ 0
+        for i in range(m
+            for j in range(n
+                __ obstacleGrid[i][j] __ 1:
                     dp[i][j] = 0
                     continue
-                if i == 0 and j == 0:
+                __ i __ 0 and j __ 0:
                     dp[i][j] = 1
-                elif i == 0 and j != 0:
+                ____ i __ 0 and j != 0:
                     dp[i][j] = dp[i][j-1]
-                elif i != 0 and j == 0:
+                ____ i != 0 and j __ 0:
                     dp[i][j] = dp[i-1][j]
-                else:
+                ____
                     dp[i][j] = dp[i][j-1] + dp[i-1][j]
-        return dp[-1][-1]
+        r_ dp[-1][-1]
     
-    def test(self):
+    ___ test(self
         pass
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

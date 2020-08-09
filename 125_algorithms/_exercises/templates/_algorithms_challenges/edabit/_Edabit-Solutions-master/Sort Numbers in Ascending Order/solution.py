@@ -1,5 +1,5 @@
-def sort_nums_ascending(lst):
-    if len(lst) == 0:
-        return []
-    else:
-        return sorted(lst)
+___ sort_nums_ascending(lst
+    __ le.(lst) __ 0:
+        r_ []
+    ____
+        r_ sorted(lst)

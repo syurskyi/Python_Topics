@@ -1,15 +1,15 @@
 class Solution:
     # @param {string} s
     # @return {integer}
-    def romanToInt(self, s):
+    ___ romanToInt(self, s
         trans = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
         signToValue = [trans[c] for c in s]
         values = 0
         current = 0
         for v in signToValue[::-1]:
-            values += v if v >= current else -v
+            values += v __ v >= current else -v
             current = v
-        return values
+        r_ values
 
 
 

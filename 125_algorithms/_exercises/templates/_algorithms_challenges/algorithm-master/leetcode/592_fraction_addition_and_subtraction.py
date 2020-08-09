@@ -1,25 +1,25 @@
-import re
+______ re
 
 
 class Solution:
-    def fractionAddition(self, E):
+    ___ fractionAddition(self, E
         """
         :type E: str
         :rtype: str
         """
         S = []  # signs
 
-        if E[0] != '-':
+        __ E[0] != '-':
             S.append('+')
 
         for c in E:
-            if c == '+' or c == '-':
+            __ c __ '+' or c __ '-':
                 S.append(c)
 
         a, b = 0, 1
         i = 0
-        for frac in re.split('\+|-', E):
-            if not frac:
+        for frac in re.split('\+|-', E
+            __ not frac:
                 continue
 
             _a, _b = frac.split('/')
@@ -27,9 +27,9 @@ class Solution:
             _b = int(_b)
 
             # if needs to prevent overflow, `// gcd`
-            if S[i] == '+':
+            __ S[i] __ '+':
                 a = a * _b + _a * b
-            else:
+            ____
                 a = a * _b - _a * b
 
             b = b * _b
@@ -40,9 +40,9 @@ class Solution:
 
             i += 1
 
-        return '{}/{}'.format(a, b)
+        r_ '{}/{}'.format(a, b)
 
-    def get_gcd(self, a, b):
-        while b:
+    ___ get_gcd(self, a, b
+        w___ b:
             a, b = b, a % b
-        return a
+        r_ a

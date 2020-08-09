@@ -3,53 +3,53 @@ The read4 API is already defined for you.
 @param buf, a list of characters
 @return an integer
 
-def read4(buf):
+___ read4(buf
     pass
 """
 
 
 class Solution:
-    def read(self, buf, n):
+    ___ read(self, buf, n
         """
         :type buf: List[str], Destination buffer
         :type n: int, Maximum number of characters to read
         :rtype: int, The number of characters read
         """
-        if not buf or n <= 0:
-            return 0
+        __ not buf or n <= 0:
+            r_ 0
 
         i = 0
         k = 4
         tmp = [0] * k
 
-        while i < n and k == 4:
+        w___ i < n and k __ 4:
             k = read4(tmp)
             j = 0
 
-            while i < n and j < k:
+            w___ i < n and j < k:
                 buf[j] = tmp[j]
                 i += 1
                 j += 1
 
-        return i
+        r_ i
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     data = 'abcdferrdsjfklsdjfdsr'
-    n = len(data)
+    n = le.(data)
     i = 0
     k = 4
 
-    def read4(buf):
+    ___ read4(buf
         global i
         j = 0
 
-        while i < n and j < k:
+        w___ i < n and j < k:
             buf[j] = data[i]
             i += 1
             j += 1
 
-        return j
+        r_ j
 
     s = Solution()
     res = s.read([0] * 4, 4)

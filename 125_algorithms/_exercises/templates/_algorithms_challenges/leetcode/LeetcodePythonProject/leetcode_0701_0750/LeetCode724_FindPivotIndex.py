@@ -3,22 +3,22 @@ Created on Feb 21, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def pivotIndex(self, nums):
+class Solution(object
+    ___ pivotIndex(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if not nums or len(nums) < 3: return -1
+        __ not nums or le.(nums) < 3: r_ -1
         sumVal = sum(nums)
         tmp = 0
-        for i in range(len(nums)):
-            if tmp == sumVal-tmp-nums[i]:
-                return i
+        for i in range(le.(nums)):
+            __ tmp __ sumVal-tmp-nums[i]:
+                r_ i
             tmp += nums[i]
-        return -1
+        r_ -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 7, 3, 6, 5, 6],
             [1, 2, 3],
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

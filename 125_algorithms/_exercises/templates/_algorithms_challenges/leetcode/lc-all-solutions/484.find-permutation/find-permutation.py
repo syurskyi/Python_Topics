@@ -1,17 +1,17 @@
-class Solution(object):
-  def findPermutation(self, s):
+class Solution(object
+  ___ findPermutation(self, s
     """
     :type s: str
     :rtype: List[int]
     """
-    ans = range(1, len(s) + 2)
+    ans = range(1, le.(s) + 2)
     cnt = 0
-    for i in range(len(s)):
-      if s[i] == "D":
+    for i in range(le.(s)):
+      __ s[i] __ "D":
         cnt += 1
-      else:
+      ____
         ans[i - cnt:i + 1] = ans[i - cnt:i + 1][::-1]
         cnt = 0
-    if s[-1] == "D":
-      ans[len(s) - cnt:len(s) + 1] = ans[len(s) - cnt:len(s) + 1][::-1]
-    return ans
+    __ s[-1] __ "D":
+      ans[le.(s) - cnt:le.(s) + 1] = ans[le.(s) - cnt:le.(s) + 1][::-1]
+    r_ ans

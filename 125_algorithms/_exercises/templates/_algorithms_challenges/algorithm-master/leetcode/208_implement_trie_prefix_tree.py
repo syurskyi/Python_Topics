@@ -1,60 +1,60 @@
 class TrieNode:
-    def __init__(self, val=None):
+    ___ __init__(self, val=None
         self.end_at = val
         self.children = {}
 
 
 class Trie:
-    def __init__(self):
+    ___ __init__(self
         self.trie = TrieNode()
 
-    def insert(self, word):
+    ___ insert(self, word
         """
         Inserts a word into the trie.
         :type word: str
         :rtype: void
         """
-        if not word:
-            return
+        __ not word:
+            r_
 
         node = self.trie
         for char in word:
-            if char not in node.children:
+            __ char not in node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
         node.end_at = word
 
-    def search(self, word):
+    ___ search(self, word
         """
         Returns if the word is in the trie.
         :type word: str
         :rtype: bool
         """
-        if not word:
-            return False
+        __ not word:
+            r_ False
 
         node = self.trie
         for char in word:
-            if char not in node.children:
-                return False
+            __ char not in node.children:
+                r_ False
             node = node.children[char]
-        return node.end_at == word
+        r_ node.end_at __ word
 
-    def startsWith(self, prefix):
+    ___ startsWith(self, prefix
         """
         Returns if there is any word in the trie that starts with the given prefix.
         :type prefix: str
         :rtype: bool
         """
-        if not prefix:
-            return False
+        __ not prefix:
+            r_ False
 
         node = self.trie
         for char in prefix:
-            if char not in node.children:
-                return False
+            __ char not in node.children:
+                r_ False
             node = node.children[char]
-        return True
+        r_ True
 
 
 # Your Trie object will be instantiated and called as such:

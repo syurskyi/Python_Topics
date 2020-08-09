@@ -11,8 +11,8 @@ complexity?
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def missingNumber(self, nums):
+class Solution(object
+    ___ missingNumber(self, nums
         """
         Algorithm:
         Hashmap, but to save space, use the array itself as the hashmap
@@ -33,27 +33,27 @@ class Solution(object):
         :rtype: int
         """
         num_n = None
-        n = len(nums)
+        n = le.(nums)
 
         i = 0
-        while i < n:
-            if nums[i] == n:
+        w___ i < n:
+            __ nums[i] __ n:
                 num_n = nums[i]
                 nums[i] = None
                 i += 1
 
-            elif nums[i] is not None and nums[i] != i:
+            ____ nums[i] is not None and nums[i] != i:
                 j = nums[i]
                 nums[i], nums[j] = nums[j], nums[i]
 
-            else:
+            ____
                 i += 1
 
-        if not num_n:
-            return n
+        __ not num_n:
+            r_ n
 
-        return nums.index(None)
+        r_ nums.index(None)
 
 
-if __name__ == "__main__":
-    assert Solution().missingNumber([2, 0]) == 1
+__ __name__ __ "__main__":
+    assert Solution().missingNumber([2, 0]) __ 1

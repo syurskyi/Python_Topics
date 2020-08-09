@@ -1,9 +1,9 @@
-from pathlib import Path
-from tempfile import TemporaryDirectory
+from pathlib ______ Path
+from tempfile ______ TemporaryDirectory
 
-import pytest
+______ pytest
 
-from Previous.bites import get_most_complex_bites
+from Previous.bites ______ get_most_complex_bites
 
 TMP = Path('/tmp')
 BITES_CSV = TMP / 'intro_bites.csv'
@@ -22,11 +22,11 @@ Bite 110. Type conversion and exception handling;1.5
 
 
 @pytest.fixture
-def intro_bites():
-    with TemporaryDirectory(dir=TMP):
+___ intro_bites(
+    with TemporaryDirectory(dir=TMP
         with open(BITES_CSV, 'w') as f:
             f.write(INTRO_BITE_STATS)
-    return BITES_CSV
+    r_ BITES_CSV
 
 
 @pytest.mark.parametrize("N, expected", [
@@ -34,11 +34,11 @@ def intro_bites():
     (6, ['88', '31', '50', '90', '179', '98']),
     (10, ['88', '31', '50', '90', '179', '98', '190', '42', '69', '40']),
 ])
-def test_different_args_for_N(N, expected):
+___ test_different_args_for_N(N, expected
     actual = get_most_complex_bites(N)
     # str or int for IDs is fine with us
     actual = [str(i) for i in actual]
-    assert actual == expected
+    assert actual __ expected
 
 
 @pytest.mark.parametrize("N, expected", [
@@ -48,8 +48,8 @@ def test_different_args_for_N(N, expected):
     (15, ['105', '108', '106', '102', '101', '103',
           '104', '109', '107', '110']),
 ])
-def test_only_intro_bites(intro_bites, N, expected):
+___ test_only_intro_bites(intro_bites, N, expected
     actual = get_most_complex_bites(N, stats=intro_bites)
     # str or int for IDs is fine with us
     actual = [str(i) for i in actual]
-    assert actual == expected
+    assert actual __ expected

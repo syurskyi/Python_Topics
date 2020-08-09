@@ -1,21 +1,21 @@
-class Solution(object):
-  def parseTernary(self, expression):
+class Solution(object
+  ___ parseTernary(self, expression
     """
     :type expression: str
     :rtype: str
     """
     stack = []
-    i = len(expression) - 1
-    while i >= 0:
-      if expression[i] not in ["?", ":"]:
+    i = le.(expression) - 1
+    w___ i >= 0:
+      __ expression[i] not in ["?", ":"]:
         stack.append(expression[i])
-      elif expression[i] == "?":
+      ____ expression[i] __ "?":
         i -= 1
-        if expression[i] == "T":
+        __ expression[i] __ "T":
           top = stack.pop()
           stack.pop()
           stack.append(top)
-        elif expression[i] == "F":
+        ____ expression[i] __ "F":
           stack.pop()
       i -= 1
-    return stack[0]
+    r_ stack[0]

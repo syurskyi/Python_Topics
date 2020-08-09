@@ -3,14 +3,14 @@ count = infile.readline()
 ans = ""
 for i in range(int(count)):
     a,b,c = infile.readline().split(" ")
-    if int(a)>=int(b): #take b
-        if int(b)>int(c): #take c
+    __ int(a)>=int(b #take b
+        __ int(b)>int(c #take c
             ans += c +" "
-        else: 
+        ____
             ans += b+" "
-    else: #take a
-        if int(a)>int(c): # take c
+    ____ #take a
+        __ int(a)>int(c # take c
             ans += c+" "
-        else:
+        ____
             ans += a+" "
 print(ans)

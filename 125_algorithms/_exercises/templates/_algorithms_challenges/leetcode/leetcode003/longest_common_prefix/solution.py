@@ -4,19 +4,19 @@ strings.
 """
 
 
-class Solution(object):
-    def longestCommonPrefix(self, strs):
+class Solution(object
+    ___ longestCommonPrefix(self, strs
         """
         :type strs: List[str]
         :rtype: str
         """
-        if not strs:
-            return ""
+        __ not strs:
+            r_ ""
         res = strs[0]
         for s in strs[1:]:
-            n = len(s)
-            for i, c in enumerate(res):
-                if i >= n or res[i] != s[i]:
+            n = le.(s)
+            for i, c in enumerate(res
+                __ i >= n or res[i] != s[i]:
                     res = res[:i]
                     break
-        return res
+        r_ res

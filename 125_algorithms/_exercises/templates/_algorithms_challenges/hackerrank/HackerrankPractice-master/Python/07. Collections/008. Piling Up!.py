@@ -2,20 +2,20 @@
 # Score: 50
 
 
-from collections import deque
+from collections ______ deque
 
 
 for i in range(int(input())):
     _, n = input(), deque(map(int, input().split()))
     ans = True
 
-    for j in range(len(n) - 1):
-        if n[0] >= n[1]:
+    for j in range(le.(n) - 1
+        __ n[0] >= n[1]:
             n.popleft()
-        elif n[-1] >= n[-2]:
+        ____ n[-1] >= n[-2]:
             n.pop()
-        else:
+        ____
             ans = False
             break
 
-    print('Yes' if ans else 'No')
+    print('Yes' __ ans else 'No')

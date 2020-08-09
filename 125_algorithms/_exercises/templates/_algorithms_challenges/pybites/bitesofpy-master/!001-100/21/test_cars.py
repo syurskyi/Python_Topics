@@ -1,31 +1,31 @@
-from cars import (get_all_jeeps, get_first_model_each_manufacturer,
+from cars ______ (get_all_jeeps, get_first_model_each_manufacturer,
                   get_all_matching_models, sort_car_models)
 
 
-def test_get_all_jeeps():
+___ test_get_all_jeeps(
     expected = 'Grand Cherokee, Cherokee, Trailhawk, Trackhawk'
     actual = get_all_jeeps()
-    assert type(actual) == str
-    assert actual == expected
+    assert type(actual) __ str
+    assert actual __ expected
 
 
-def test_get_first_model_each_manufacturer():
+___ test_get_first_model_each_manufacturer(
     actual = get_first_model_each_manufacturer()
     expected = ['Falcon', 'Commodore', 'Maxima', 'Civic', 'Grand Cherokee']
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_get_all_matching_models_default_grep():
+___ test_get_all_matching_models_default_grep(
     expected = ['Trailblazer', 'Trailhawk']
-    assert get_all_matching_models() == expected
+    assert get_all_matching_models() __ expected
 
 
-def test_get_all_matching_models_different_grep():
+___ test_get_all_matching_models_different_grep(
     expected = ['Accord', 'Commodore', 'Falcon']
-    assert get_all_matching_models(grep='CO') == expected
+    assert get_all_matching_models(grep='CO') __ expected
 
 
-def test_sort_dict_alphabetically():
+___ test_sort_dict_alphabetically(
     actual = sort_car_models()
     # Order of keys should not matter, two dicts are equal if they have the
     # same keys and the same values.
@@ -37,4 +37,4 @@ def test_sort_dict_alphabetically():
         'Jeep': ['Cherokee', 'Grand Cherokee', 'Trackhawk', 'Trailhawk'],
         'Nissan': ['350Z', 'Maxima', 'Navara', 'Pulsar'],
     }
-    assert actual == expected
+    assert actual __ expected

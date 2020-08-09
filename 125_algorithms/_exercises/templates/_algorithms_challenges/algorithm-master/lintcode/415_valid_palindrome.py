@@ -1,26 +1,26 @@
 class Solution:
-    def isPalindrome(self, s):
+    ___ isPalindrome(self, s
         """
         :type s: str
         :rtype: bool
         """
-        if not s:
-            return True
+        __ not s:
+            r_ True
 
         s = s.lower()
-        n = len(s)
+        n = le.(s)
         left, right = 0, n - 1
 
-        while left < right:
-            while left < right and not s[left].isalnum():
+        w___ left < right:
+            w___ left < right and not s[left].isalnum(
                 left += 1
-            while left < right and not s[right].isalnum():
+            w___ left < right and not s[right].isalnum(
                 right -= 1
 
-            if s[left] != s[right]:
-                return False
+            __ s[left] != s[right]:
+                r_ False
 
             left += 1
             right -= 1
 
-        return True
+        r_ True

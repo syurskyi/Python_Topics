@@ -3,61 +3,61 @@ Created on Feb 20, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def candyCrush(self, board):
+class Solution(object
+    ___ candyCrush(self, board
         """
         :type board: List[List[int]]
         :rtype: List[List[int]]
         """
-        m, n = len(board), len(board[0])
+        m, n = le.(board), le.(board[0])
         res = [[0]*n for _ in range(m)]
-        while True:
+        w___ True:
             changed = False
-            for i in range(m):
-                for j in range(n):
+            for i in range(m
+                for j in range(n
                     changed = self.bfs(board, i, j) or changed
-            if not changed:
+            __ not changed:
                 res = board
                 break
             self.convert(res, board)
             board = res
-        return res
+        r_ res
     
-    def bfs(self, board, i, j):
-        if board[i][j] == 0: return False
-        m, n = len(board), len(board[0])
+    ___ bfs(self, board, i, j
+        __ board[i][j] __ 0: r_ False
+        m, n = le.(board), le.(board[0])
         val = abs(board[i][j])
         changed = False
-        if i+2 < m and val == abs(board[i+1][j]) == abs(board[i+2][j]):
-            for i0 in range(i+1, m):
-                if abs(board[i0][j]) == val:
+        __ i+2 < m and val __ abs(board[i+1][j]) __ abs(board[i+2][j]
+            for i0 in range(i+1, m
+                __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
-                else:
+                ____
                     break
             changed = True
-        if j+2 < n and val == abs(board[i][j+1]) == abs(board[i][j+2]):
-            for j0 in range(j+1, n):
-                if abs(board[i][j0]) == val:
+        __ j+2 < n and val __ abs(board[i][j+1]) __ abs(board[i][j+2]
+            for j0 in range(j+1, n
+                __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
-                else:
+                ____
                     break
             changed = True
-        if changed:
+        __ changed:
             board[i][j] = -val
-        return changed
+        r_ changed
     
-    def convert(self, res, board):
-        m, n = len(res), len(res[0])
-        for j in range(n):
+    ___ convert(self, res, board
+        m, n = le.(res), le.(res[0])
+        for j in range(n
             i0 = m-1
-            for i in range(m-1, -1, -1):
-                if board[i][j] > 0:
+            for i in range(m-1, -1, -1
+                __ board[i][j] > 0:
                     res[i0][j] = board[i][j]
                     i0 -= 1
-            for i in range(i0, -1, -1):
+            for i in range(i0, -1, -1
                 res[i][j] = 0
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [110,5,112,113,114],
@@ -83,5 +83,5 @@ class Solution(object):
             print('\n'.join([str(row) for row in result]))
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

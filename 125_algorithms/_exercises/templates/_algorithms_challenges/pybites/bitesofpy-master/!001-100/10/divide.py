@@ -1,10 +1,10 @@
-def positive_divide(numerator, denominator):
-    if denominator == 0:
-        return 0
+___ positive_divide(numerator, denominator
+    __ denominator __ 0:
+        r_ 0
     try:
         result = numerator / denominator
-        if result < 0:
+        __ result < 0:
             raise ValueError()
     except TypeError as e:
         raise e
-    return result
+    r_ result

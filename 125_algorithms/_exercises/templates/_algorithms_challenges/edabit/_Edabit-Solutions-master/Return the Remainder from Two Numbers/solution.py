@@ -1,2 +1,2 @@
-def remainder(x, y):
-    return x % y
+___ remainder(x, y
+    r_ x % y

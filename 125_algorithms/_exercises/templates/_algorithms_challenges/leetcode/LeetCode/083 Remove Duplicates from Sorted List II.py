@@ -9,12 +9,12 @@ Given 1->1->1->2->3, return 2->3.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 class Solution:
-    def deleteDuplicates(self, head):
+    ___ deleteDuplicates(self, head
         """
         Two pointers
         :param head: ListNode
@@ -24,21 +24,21 @@ class Solution:
         dummy.next = head
 
         pre = dummy
-        while pre.next:
+        w___ pre.next:
             cur = pre.next
-            if cur.next and cur.next.val==cur.val:  # duplicated
+            __ cur.next and cur.next.val__cur.val:  # duplicated
                 # find the next non_duplicate
                 next_non_duplicate = cur.next
-                while next_non_duplicate and cur.val==next_non_duplicate.val:
+                w___ next_non_duplicate and cur.val__next_non_duplicate.val:
                     next_non_duplicate = next_non_duplicate.next
 
                 # remove all duplicated nodes 
                 pre.next = next_non_duplicate
 
-            else:
+            ____
                 pre = pre.next
 
-        return dummy.next
+        r_ dummy.next
 
 
 

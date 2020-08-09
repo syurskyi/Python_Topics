@@ -3,38 +3,38 @@ Created on Feb 12, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def maximumGap(self, nums):
+class Solution(object
+    ___ maximumGap(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        import math
-        if not nums or len(nums) < 2:
-            return 0
+        ______ ma__
+        __ not nums or le.(nums) < 2:
+            r_ 0
         minVal = min(nums)
         maxVal = max(nums)
-        n = len(nums)
-        gap = math.ceil(float(maxVal-minVal)/(n-1))
+        n = le.(nums)
+        gap = ma__.ceil(float(maxVal-minVal)/(n-1))
         bucketsMin = [float('inf')]*(n-1)
         bucketsMax = [float('-inf')]*(n-1)
         for num in nums:
-            if num == minVal or num == maxVal:
+            __ num __ minVal or num __ maxVal:
                 continue
             idx = int((num-minVal)//gap)
             bucketsMin[idx] = min(bucketsMin[idx], num)
             bucketsMax[idx] = max(bucketsMax[idx], num)
         maxGap = float('-inf')
         prev = minVal
-        for i in range(n-1):
-            if bucketsMin[i] == float('inf') and bucketsMax[i] == float('-inf'):
+        for i in range(n-1
+            __ bucketsMin[i] __ float('inf') and bucketsMax[i] __ float('-inf'
                 continue
             maxGap = max(maxGap, bucketsMin[i]-prev)
             prev = bucketsMax[i]
         maxGap = max(maxGap, maxVal-prev)
-        return maxGap
+        r_ maxGap
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1000],
         ]
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

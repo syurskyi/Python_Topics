@@ -13,28 +13,28 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-class Solution(object):
-    def productExceptSelf(self, nums):
+class Solution(object
+    ___ productExceptSelf(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        n = len(nums)
+        n = le.(nums)
         res = [1 for i in range(n)]
         # Scan from left to right
-        for i in range(1, n):
+        for i in range(1, n
             # i is from 1 to n - 1
             # res[i] is the product accumulated to the left
             res[i] = res[i - 1] * nums[i - 1]
 
         # right_product is the product accumulated to the right
         right_product = 1
-        for i in range(1, n):
+        for i in range(1, n
             # j ranges from i - 2 to 0
             j = n - 1 - i
             right_product *= nums[j + 1]
             res[j] *= right_product
-        return res
+        r_ res
 
 
 a0 = [0, 0]

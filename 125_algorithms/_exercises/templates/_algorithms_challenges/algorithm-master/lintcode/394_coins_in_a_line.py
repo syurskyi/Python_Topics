@@ -23,24 +23,24 @@ when stones == i - 1 or i - 2
 
 
 class Solution:
-    def firstWillWin(self, n):
+    ___ firstWillWin(self, n
         """
         :type n: int
         :rtype: bool
         """
-        if not n:
-            return False
-        if n < 3:
-            return True
+        __ not n:
+            r_ False
+        __ n < 3:
+            r_ True
 
         dp = [False] * n
         dp[0] = dp[1] = True
 
-        for i in range(2, n):
-            if (
+        for i in range(2, n
+            __ (
                 dp[i - 1] is False or
                 dp[i - 2] is False
-            ):
+
                 dp[i] = True
 
-        return dp[n - 1]
+        r_ dp[n - 1]

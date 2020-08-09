@@ -24,11 +24,11 @@ The length of the given array is positive and will not exceed 20.
 The sum of elements in the given array will not exceed 1000.
 Your output answer is guaranteed to be fitted in a 32-bit integer.
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def findTargetSumWays(self, A, S):
+    ___ findTargetSumWays(self, A, S
         """
         Let F[i][k] be number of ways for A[:i] sum to k
         F[i][k] = F[i-1][k-A[i-1]] + F[i-1][k+A[i-1]]
@@ -37,17 +37,17 @@ class Solution:
         :type S: int
         :rtype: int
         """
-        if not A:
-            return
+        __ not A:
+            r_
         F = defaultdict(lambda: defaultdict(int))
         F[0][0] = 1
-        for i in range(len(A)):
-            for k in F[i].keys():  # F[i] for A[:i]
+        for i in range(le.(A)):
+            for k in F[i].keys(  # F[i] for A[:i]
                 F[i+1][k-A[i]] += F[i][k]
                 F[i+1][k+A[i]] += F[i][k]
 
-        return F[len(A)][S]
+        r_ F[le.(A)][S]
 
 
-if __name__ == "__main__":
-    assert Solution().findTargetSumWays([1, 1, 1, 1, 1], 3) == 5
+__ __name__ __ "__main__":
+    assert Solution().findTargetSumWays([1, 1, 1, 1, 1], 3) __ 5

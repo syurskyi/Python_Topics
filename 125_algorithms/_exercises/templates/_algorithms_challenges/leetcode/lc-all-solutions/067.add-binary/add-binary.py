@@ -1,43 +1,43 @@
-class Solution(object):
-  def addBinary(self, a, b):
+class Solution(object
+  ___ addBinary(self, a, b
     """
     :type a: str
     :type b: str
     :rtype: str
     """
-    diff = abs(len(a) - len(b))
-    if len(a) > len(b):
+    diff = abs(le.(a) - le.(b))
+    __ le.(a) > le.(b
       b = "0" * diff + b
-    else:
+    ____
       a = "0" * diff + a
 
     ret = ""
     carry = 0
-    ai, bi = len(a) - 1, len(b) - 1
-    al, bl = len(a), len(b)
-    while ai >= 0 and bi >= 0:
+    ai, bi = le.(a) - 1, le.(b) - 1
+    al, bl = le.(a), le.(b)
+    w___ ai >= 0 and bi >= 0:
       ac, bc = a[ai], b[bi]
-      if ac == "1" and bc == "1":
-        if carry == 1:
+      __ ac __ "1" and bc __ "1":
+        __ carry __ 1:
           ret += "1"
-        else:
+        ____
           ret += "0"
         carry = 1
-      elif ac == "0" and bc == "0":
-        if carry == 1:
+      ____ ac __ "0" and bc __ "0":
+        __ carry __ 1:
           ret += "1"
-        else:
+        ____
           ret += "0"
         carry = 0
-      else:
-        if carry == 1:
+      ____
+        __ carry __ 1:
           ret += "0"
-        else:
+        ____
           ret += "1"
 
       ai -= 1
       bi -= 1
 
-    if carry == 1:
+    __ carry __ 1:
       ret += "1"
-    return ret[::-1]
+    r_ ret[::-1]

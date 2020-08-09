@@ -4,8 +4,8 @@ Premium question
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def getModifiedArray(self, length, updates):
+class Solution(object
+    ___ getModifiedArray(self, length, updates
         """
         Brute force: O(kn)
 
@@ -26,7 +26,7 @@ class Solution(object):
         deltas = [0 for _ in xrange(length)]
         for i, j, k in updates:
             deltas[i] += k
-            if j + 1 < length: deltas[j + 1] -= k
+            __ j + 1 < length: deltas[j + 1] -= k
 
         ret = []
         acc = 0
@@ -34,4 +34,4 @@ class Solution(object):
             acc += delta
             ret.append(acc)
 
-        return ret
+        r_ ret

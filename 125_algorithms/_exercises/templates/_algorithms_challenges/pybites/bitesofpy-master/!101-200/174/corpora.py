@@ -1,8 +1,8 @@
-import re
-from collections import Counter
-from dataclasses import dataclass, field
-from string import punctuation
-from typing import List, Set, Tuple
+______ re
+from collections ______ Counter
+from dataclasses ______ dataclass, field
+from string ______ punctuation
+from typing ______ List, Set, Tuple
 
 STOPWORDS: set = {
     "she's", "wasn", "through", "won", "that'll", "his", "once", "this",
@@ -23,7 +23,7 @@ STOPWORDS: set = {
     "couldn't", "you'd", "for", "of", "her", "those", "needn't", "you're",
     "t", "hadn't", "down", "o", "did", "about", "from", "does", "wouldn",
     "off", "then", "ain", "few", "hasn't", "some", "i", "ourselves", "an",
-    "when", "are", "under", "more", "with", "hadn", "what", "while", "didn",
+    "when", "are", "under", "more", "with", "hadn", "what", "w___", "didn",
     "doesn't", "only", "him", "mightn", "be", "mightn't", "a", "how", "no",
     "there", "that", "so", "we", "same", "mustn", "wasn't", "shouldn", "own",
 }
@@ -45,11 +45,11 @@ class Corpora:
     extra: List[str] = field(default_factory=list)
     stopwords: Set[str] = field(init=False)
 
-    def __post_init__(self):
+    ___ __post_init__(self
         self.stopwords = STOPWORDS
 
     @property
-    def cleaned(self) -> str:
+    ___ cleaned(self) -> str:
         """Takes a corpus and cleans it up.
 
         * All text is made lowercase
@@ -59,13 +59,13 @@ class Corpora:
         :param txt: Corpus of text
         :return: cleaned up corpus
         """
-        text = ''.join(c for c in self.txt.lower() if c not in punctuation)
+        text = ''.join(c for c in self.txt.lower() __ c not in punctuation)
         for x in self.extra:
             text = re.sub(x, ' ', text)
-        return text
+        r_ text
 
     @property
-    def metrics(self) -> List[Tuple[str, int]]:
+    ___ metrics(self) -> List[Tuple[str, int]]:
         """Generates word count metrics.
 
         * Using the cleaned up corpus, count up how many times each word is used
@@ -74,13 +74,13 @@ class Corpora:
 
         :return: List of tuples, i.e. ("word", count)
         """
-        wordlist = [word for word in self.cleaned.split() if not word in self.stopwords]
+        wordlist = [word for word in self.cleaned.split() __ not word in self.stopwords]
         metrics = Counter(wordlist)
 
-        return metrics.most_common(self.count)
+        r_ metrics.most_common(self.count)
 
     @property
-    def graph(self) -> None:
+    ___ graph(self) -> None:
         """Generates a textual graph of the words
 
         * Prints out the words along with a "tag" bar graph, defaults to using
@@ -107,4 +107,4 @@ class Corpora:
         """
         for m in self.metrics:
             print(f'{m[0]:>10} {self.tag * m[1]}')
-        return None
+        r_ None

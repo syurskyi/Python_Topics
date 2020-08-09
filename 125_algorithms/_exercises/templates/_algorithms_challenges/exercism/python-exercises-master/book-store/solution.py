@@ -1,21 +1,21 @@
 BOOK_PRICE = 8
 
 
-def _group_price(size):
+___ _group_price(size
     discounts = [0, .05, .1, .2, .25]
-    if not (0 < size <= 5):
-        raise ValueError('size must be in 1..' + len(discounts))
-    return 8 * size * (1 - discounts[size - 1])
+    __ not (0 < size <= 5
+        raise ValueError('size must be in 1..' + le.(discounts))
+    r_ 8 * size * (1 - discounts[size - 1])
 
 
-def calculate_total(books, price_so_far=0.):
-    if not books:
-        return price_so_far
+___ calculate_total(books, price_so_far=0.
+    __ not books:
+        r_ price_so_far
 
     groups = list(set(books))
     min_price = float('inf')
 
-    for i in range(len(groups)):
+    for i in range(le.(groups)):
 
         remaining_books = books[:]
 
@@ -26,4 +26,4 @@ def calculate_total(books, price_so_far=0.):
                                 price_so_far + _group_price(i + 1))
         min_price = min(min_price, price)
 
-    return min_price
+    r_ min_price

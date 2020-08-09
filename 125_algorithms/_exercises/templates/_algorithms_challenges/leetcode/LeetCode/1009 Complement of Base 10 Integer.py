@@ -35,15 +35,15 @@ Note:
 
 
 class Solution:
-    def bitwiseComplement(self, N: int) -> int:
+    ___ bitwiseComplement(self, N: int) -> int:
         """
         invert the bit, and the mask it
         """
         mask = 1
         cur = N
-        while cur >> 1:
+        w___ cur >> 1:
             cur >>= 1
             mask <<= 1
             mask += 1
 
-        return ~N & mask
+        r_ ~N & mask

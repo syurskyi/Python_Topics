@@ -4,27 +4,27 @@ EQUAL = 2
 UNEQUAL = 3
 
 
-def check_lists(l1, l2):
-    if l1 == l2:
-        return EQUAL
-    if contains(l1, l2):
-        return SUPERLIST
-    if contains(l2, l1):
-        return SUBLIST
-    return UNEQUAL
+___ check_lists(l1, l2
+    __ l1 __ l2:
+        r_ EQUAL
+    __ contains(l1, l2
+        r_ SUPERLIST
+    __ contains(l2, l1
+        r_ SUBLIST
+    r_ UNEQUAL
 
 
-def contains(l1, l2):
-    if not l2:
-        return True
-    if len(l2) > len(l1):
-        return False
-    for i in range(len(l1) - len(l2) + 1):
-        if l1[i] != l2[0]:
+___ contains(l1, l2
+    __ not l2:
+        r_ True
+    __ le.(l2) > le.(l1
+        r_ False
+    for i in range(le.(l1) - le.(l2) + 1
+        __ l1[i] != l2[0]:
             continue
-        for j in range(len(l2)):
-            if l1[i + j] != l2[j]:
+        for j in range(le.(l2)):
+            __ l1[i + j] != l2[j]:
                 break
-        else:
-            return True
-    return False
+        ____
+            r_ True
+    r_ False

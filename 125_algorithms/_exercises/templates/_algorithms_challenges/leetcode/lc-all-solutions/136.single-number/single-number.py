@@ -1,9 +1,9 @@
-class Solution(object):
-  def singleNumber(self, nums):
+class Solution(object
+  ___ singleNumber(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
-    for i in range(1, len(nums)):
+    for i in range(1, le.(nums)):
       nums[0] ^= nums[i]
-    return nums[0]
+    r_ nums[0]

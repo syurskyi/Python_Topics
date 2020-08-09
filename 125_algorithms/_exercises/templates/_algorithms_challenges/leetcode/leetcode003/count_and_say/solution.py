@@ -11,21 +11,21 @@ Note: The sequence of integers will be represented as a string.
 """
 
 
-class Solution(object):
-    def countAndSay(self, n):
+class Solution(object
+    ___ countAndSay(self, n
         """
         :type n: int
         :rtype: str
         """
         ln = list(str(1))
-        for i in range(1, n):
+        for i in range(1, n
             tn = []
             count = 1
             prev = None
             for c in ln:
-                if prev == c:
+                __ prev __ c:
                     count += 1
-                if prev is not None and prev != c:
+                __ prev is not None and prev != c:
                     tn.append(str(count))
                     tn.append(str(prev))
                     count = 1
@@ -33,7 +33,7 @@ class Solution(object):
             tn.append(str(count))
             tn.append(str(prev))
             ln = tn
-        return ''.join(ln)
+        r_ ''.join(ln)
 
 
 s = Solution()

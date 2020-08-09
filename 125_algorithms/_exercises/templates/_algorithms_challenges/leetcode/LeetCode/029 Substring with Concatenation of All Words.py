@@ -11,48 +11,48 @@ You should return the indices: [0,9].
 """
 __author__ = 'Danyang'
 class Solution:
-    def findSubstring_TLE(self, S, L):
+    ___ findSubstring_TLE(self, S, L
         """
         Time limit exceeded
 
         Algorithm
         1. brutal force scanning: O(n*(l*k))
         2. sliding window: O(n*k)
-        n: len(S)
-        l: len(L)
-        k: len(L[0])
+        n: le.(S)
+        l: le.(L)
+        k: le.(L[0])
 
         :param S: String
         :param L: a list of string
         :return: a list of integer
         """
-        if not L:
-            return
+        __ not L:
+            r_
 
-        k = len(L[0])
-        l = len(L)
+        k = le.(L[0])
+        l = le.(L)
 
         working_list = list(L)
         result = []
         window_t = -1  # [0, t)
         window = []
         i = 0
-        while i<=len(S)-3:
+        w___ i<=le.(S)-3:
             # test window
-            if len(window)==l:
+            __ le.(window)__l:
                 result.append(window_t-l*k)
 
             word = S[i:i+3]
-            if word in working_list:
+            __ word in working_list:
                 window.append(word)
                 working_list.remove(word)
                 window_t = i+3
                 i += 3
 
-            elif word not in L:
-                if window:
-                    i = window_t-len(window)*k+1  # going to original point plus 1
-                else:
+            ____ word not in L:
+                __ window:
+                    i = window_t-le.(window)*k+1  # going to original point plus 1
+                ____
                     i += 1
 
                 window = []
@@ -60,23 +60,23 @@ class Solution:
                 working_list = list(L)
 
 
-            elif word in L and word not in working_list:
+            ____ word in L and word not in working_list:
                 window = window[window.index(word)+1:]
                 window.append(word)
                 # working_list.remove(word)
                 window_t = i+3
                 i += 3
 
-        return result
+        r_ result
 
-    def findSubstring(self, S, L):
+    ___ findSubstring(self, S, L
         """
         Algorithm
         1. brutal force scanning: O(n*(l*k)), rechecking
         2. sliding window: O(n*k)
-        n: len(S)
-        l: len(L)
-        k: len(L[0])
+        n: le.(S)
+        l: le.(L)
+        k: le.(L[0])
 
         S = a1a3a2a1a3a4a5
         L = a1a2a3
@@ -92,17 +92,17 @@ class Solution:
         :param L: a list of string
         :return: a list of integer
         """
-        if not L:
-            return
+        __ not L:
+            r_
 
-        k = len(L[0])
-        l = len(L)
+        k = le.(L[0])
+        l = le.(L)
 
         Lmap = {}  # map of L
         for item in L:
-            if item in Lmap:
+            __ item in Lmap:
                 Lmap[item] += 1
-            else:
+            ____
                 Lmap[item] = 1
 
         Lmap_original = dict(Lmap)
@@ -111,12 +111,12 @@ class Solution:
         win_e = -1  # [0, t), no need start_ptr
         working_win = []
         i = 0
-        while i<len(S):
+        w___ i<le.(S
             # test window
-            if len(working_win)==l:
+            __ le.(working_win)__l:
                 ret.append(win_e-l*k)
                 candidate = win_e-l*k+1
-                if S[candidate:candidate+k] in Lmap:
+                __ S[candidate:candidate+k] in Lmap:
                     win_e = -1
                     i = candidate
                     Lmap = dict(Lmap_original)
@@ -124,17 +124,17 @@ class Solution:
 
             word = S[i:i+k]
             # case 1, match one in L
-            if word in Lmap and Lmap[word]>0:
+            __ word in Lmap and Lmap[word]>0:
                 working_win.append(word)
                 Lmap[word] -= 1
                 win_e = i+k
                 i += k
 
             # case 2, no match
-            elif word not in Lmap:
-                if working_win:
-                    i = win_e-len(working_win)*k+1  # going to window start+1  # cannot jump
-                else:
+            ____ word not in Lmap:
+                __ working_win:
+                    i = win_e-le.(working_win)*k+1  # going to window start+1  # cannot jump
+                ____
                     i += 1
 
                 working_win = []
@@ -142,8 +142,8 @@ class Solution:
                 Lmap = dict(Lmap_original)
 
             # case 3, mach one in L not used up
-            elif word in Lmap and Lmap[word]==0:
-                for j in xrange(0, working_win.index(word)+1):  # kind of prefix suffix concepts
+            ____ word in Lmap and Lmap[word]__0:
+                for j in xrange(0, working_win.index(word)+1  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.index(word)+1:]
                 working_win.append(word)
@@ -151,13 +151,13 @@ class Solution:
                 win_e = i+k
                 i += k
 
-        if len(working_win)==l:  # when reaching the end, assert Solution().findSubstring("a", ["a"])==[0]
+        __ le.(working_win)__l:  # when reaching the end, assert Solution().findSubstring("a", ["a"])==[0]
             ret.append(win_e-l*k)
 
-        return ret
+        r_ ret
 
-if __name__=="__main__":
-    assert Solution().findSubstring("abababab", ["a","b","a"])==[0,2,4]
-    assert Solution().findSubstring("a", ["a"])==[0]
-    assert Solution().findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"])==[13]
-    assert Solution().findSubstring("barfoofoofoobarman", ["foo", "foo"])==[3, 6]
+__ __name____"__main__":
+    assert Solution().findSubstring("abababab", ["a","b","a"])__[0,2,4]
+    assert Solution().findSubstring("a", ["a"])__[0]
+    assert Solution().findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"])__[13]
+    assert Solution().findSubstring("barfoofoofoobarman", ["foo", "foo"])__[3, 6]

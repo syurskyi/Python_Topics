@@ -17,7 +17,7 @@ True
 
 
 class ValidWordAbbr:
-    def __init__(self, dictionary):
+    ___ __init__(self, dictionary
         """
         initialize your data structure here.
         :type dictionary: List[str]
@@ -28,21 +28,21 @@ class ValidWordAbbr:
             abbr = self.abbreviation(word)
             self.abbrs[abbr] = word
 
-    def isUnique(self, word):
+    ___ isUnique(self, word
         """
         check if a word is unique.
         :type word: str
         :rtype: bool
         """
         abbr = self.abbreviation(word)
-        return abbr not in self.abbrs
+        r_ abbr not in self.abbrs
 
-    def abbreviation(self, word):
-        if len(word) < 3:
-            return word
+    ___ abbreviation(self, word
+        __ le.(word) < 3:
+            r_ word
 
-        cnt = len(word) - 2
-        return '{}{}{}'.format(
+        cnt = le.(word) - 2
+        r_ '{}{}{}'.format(
             word[0],
             str(cnt),
             word[-1]

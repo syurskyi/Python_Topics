@@ -17,30 +17,30 @@ Given target = 3, return true.
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def searchMatrix(self, mat, target):
+class Solution(object
+    ___ searchMatrix(self, mat, target
         """
         binary search. Two exactly the same binary search algorithm
         :param mat: a list of lists of integers
         :param target: an integer
         :return: a boolean
         """
-        if not mat:
-            return False
+        __ not mat:
+            r_ False
 
-        m = len(mat)
-        n = len(mat[0])
+        m = le.(mat)
+        n = le.(mat[0])
 
         # binary search
         lo = 0
         hi = m  # [0, m)
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo+hi)/2
-            if mat[mid][0] == target:
-                return True
-            elif mat[mid][0] < target:
+            __ mat[mid][0] __ target:
+                r_ True
+            ____ mat[mid][0] < target:
                 lo = mid+1
-            else:
+            ____
                 hi = mid
 
         lst = mat[lo-1]  # <=
@@ -48,17 +48,17 @@ class Solution(object):
         # binary search
         lo = 0
         hi = n  # [0, n)
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo+hi)/2
-            if lst[mid] == target:
-                return True
-            elif lst[mid] < target:
+            __ lst[mid] __ target:
+                r_ True
+            ____ lst[mid] < target:
                 lo = mid+1
-            else:
+            ____
                 hi = mid
 
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
-    assert Solution().searchMatrix([[1], [3]], 3) == True
+__ __name__ __ "__main__":
+    assert Solution().searchMatrix([[1], [3]], 3) __ True

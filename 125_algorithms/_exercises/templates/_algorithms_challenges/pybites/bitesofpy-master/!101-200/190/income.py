@@ -1,17 +1,17 @@
-from pathlib import Path
-from collections import defaultdict
-from urllib.request import urlretrieve
-import xml.etree.ElementTree as ET
+from pathlib ______ Path
+from collections ______ defaultdict
+from urllib.request ______ urlretrieve
+______ xml.etree.ElementTree as ET
 
-# import the countries xml file
+# ______ the countries xml file
 tmp = Path('/tmp')
 countries = tmp / 'countries.xml'
 
-if not countries.exists():
+__ not countries.exists(
     urlretrieve('https://bit.ly/2IzGKav', countries)
 
 
-def get_income_distribution(xml=countries):
+___ get_income_distribution(xml=countries
     """
     - Read in the countries xml as stored in countries variable.
     - Parse the XML
@@ -25,7 +25,7 @@ def get_income_distribution(xml=countries):
 
     xpath = f".//wb:country"
     country_list = defaultdict(list)
-    for x in root.findall(xpath, namespaces):
+    for x in root.findall(xpath, namespaces
         country_list[x.find('wb:incomeLevel', namespaces).text].append(x.find('wb:name', namespaces).text)
 
-    return country_list
+    r_ country_list

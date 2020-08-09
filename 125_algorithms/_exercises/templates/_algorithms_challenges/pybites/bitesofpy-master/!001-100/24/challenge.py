@@ -1,42 +1,42 @@
-from abc import ABC, abstractmethod
+from abc ______ ABC, abstractmethod
 
 
-class Challenge(ABC):
-    def __init__(self, number, title):
+class Challenge(ABC
+    ___ __init__(self, number, title
         self.number = number
         self.title = title
 
     @abstractmethod
-    def verify(self, _):
+    ___ verify(self, _
         raise TypeError()
 
     @property
     @abstractmethod
-    def pretty_title(self):
+    ___ pretty_title(self
         raise TypeError()
 
 
-class BlogChallenge(Challenge):
-    def __init__(self, number, title, merged_prs):
+class BlogChallenge(Challenge
+    ___ __init__(self, number, title, merged_prs
         super().__init__(number, title)
         self.merged_prs = merged_prs
 
-    def verify(self, pr):
-        return pr in self.merged_prs
+    ___ verify(self, pr
+        r_ pr in self.merged_prs
 
     @property
-    def pretty_title(self):
-        return f'PCC{self.number} - {self.title}'
+    ___ pretty_title(self
+        r_ f'PCC{self.number} - {self.title}'
 
 
-class BiteChallenge(Challenge):
-    def __init__(self, number, title, result):
+class BiteChallenge(Challenge
+    ___ __init__(self, number, title, result
         super().__init__(number, title)
         self.result = result
 
-    def verify(self, result):
-        return result == self.result
+    ___ verify(self, result
+        r_ result __ self.result
 
     @property
-    def pretty_title(self):
-        return f'Bite {self.number}. {self.title}'
+    ___ pretty_title(self
+        r_ f'Bite {self.number}. {self.title}'

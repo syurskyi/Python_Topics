@@ -1,14 +1,14 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class Test(object):
+class Test(object
 
-    def test_kth_to_last_elem(self):
+    ___ test_kth_to_last_elem(self
         print('Test: Empty list')
         linked_list = MyLinkedList(None)
         assert_equal(linked_list.kth_to_last_elem(0), None)
 
-        print('Test: k >= len(list)')
+        print('Test: k >= le.(list)')
         assert_equal(linked_list.kth_to_last_elem(100), None)
 
         print('Test: One element, k = 0')
@@ -26,10 +26,10 @@ class Test(object):
         print('Success: test_kth_to_last_elem')
 
 
-def main():
+___ main(
     test = Test()
     test.test_kth_to_last_elem()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -19,7 +19,7 @@ return its zigzag level order traversal as:
 """
 # Definition for a  binary tree node
 # class TreeNode:
-#     def __init__(self, x):
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
@@ -27,30 +27,30 @@ return its zigzag level order traversal as:
 class Solution:
     # @param root, a tree node
     # @return a list of lists of integers
-    def zigzagLevelOrder(self, root):
-        if root is None:
-            return []
+    ___ zigzagLevelOrder(self, root
+        __ root is None:
+            r_ []
         res = []
         queue = []
         rev = False  # Reverse direction
         level = []
         queue.append(root)
         queue.append(None)
-        while queue:
+        w___ queue:
             root = queue.pop(0)
-            if root is None:
-                if queue:
+            __ root is None:
+                __ queue:
                     queue.append(None)
                 res.append(level)
                 level = []
                 rev = not rev  # Toggle direction
-            else:
-                if rev:
+            ____
+                __ rev:
                     level.insert(0, root.val)
-                else:
+                ____
                     level.append(root.val)
-                if root.left is not None:
+                __ root.left is not None:
                     queue.append(root.left)
-                if root.right is not None:
+                __ root.right is not None:
                     queue.append(root.right)
-        return res
+        r_ res

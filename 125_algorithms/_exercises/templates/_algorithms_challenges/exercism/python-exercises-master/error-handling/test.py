@@ -1,48 +1,48 @@
-import unittest
+______ unittest
 
-import error_handling as er
+______ error_handling as er
 
 
-class FileLike(object):
-    def __init__(self, fail_something=True):
+class FileLike(object
+    ___ __init__(self, fail_something=True
         self.is_open = False
         self.was_open = False
         self.did_something = False
         self.fail_something = fail_something
 
-    def open(self):
+    ___ open(self
         self.was_open = False
         self.is_open = True
 
-    def close(self):
+    ___ close(self
         self.is_open = False
         self.was_open = True
 
-    def __enter__(self):
+    ___ __enter__(self
         self.open()
-        return self
+        r_ self
 
-    def __exit__(self, *args):
+    ___ __exit__(self, *args
         self.close()
 
-    def do_something(self):
+    ___ do_something(self
         self.did_something = True
-        if self.fail_something:
-            raise Exception("Failed while doing something")
+        __ self.fail_something:
+            raise Exception("Failed w___ doing something")
 
 
-class ErrorHandlingTest(unittest.TestCase):
-    def test_throw_exception(self):
-        with self.assertRaisesWithMessage(Exception):
+class ErrorHandlingTest(unittest.TestCase
+    ___ test_throw_exception(self
+        with self.assertRaisesWithMessage(Exception
             er.handle_error_by_throwing_exception()
 
-    def test_return_none(self):
+    ___ test_return_none(self
         self.assertEqual(er.handle_error_by_returning_none('1'), 1,
                          'Result of valid input should not be None')
         self.assertIsNone(er.handle_error_by_returning_none('a'),
                           'Result of invalid input should be None')
 
-    def test_return_tuple(self):
+    ___ test_return_tuple(self
         successful_result, result = er.handle_error_by_returning_tuple('1')
         self.assertIs(successful_result, True,
                       'Valid input should be successful')
@@ -52,9 +52,9 @@ class ErrorHandlingTest(unittest.TestCase):
         self.assertIs(failure_result, False,
                       'Invalid input should not be successful')
 
-    def test_filelike_objects_are_closed_on_exception(self):
+    ___ test_filelike_objects_are_closed_on_exception(self
         filelike_object = FileLike(fail_something=True)
-        with self.assertRaisesWithMessage(Exception):
+        with self.assertRaisesWithMessage(Exception
             er.filelike_objects_are_closed_on_exception(filelike_object)
         self.assertIs(filelike_object.is_open, False,
                       'filelike_object should be closed')
@@ -63,7 +63,7 @@ class ErrorHandlingTest(unittest.TestCase):
         self.assertIs(filelike_object.did_something, True,
                       'filelike_object should call do_something()')
 
-    def test_filelike_objects_are_closed_without_exception(self):
+    ___ test_filelike_objects_are_closed_without_exception(self
         filelike_object = FileLike(fail_something=False)
         er.filelike_objects_are_closed_on_exception(filelike_object)
         self.assertIs(filelike_object.is_open, False,
@@ -74,15 +74,15 @@ class ErrorHandlingTest(unittest.TestCase):
                       'filelike_object should call do_something()')
 
     # Utility functions
-    def setUp(self):
+    ___ setUp(self
         try:
             self.assertRaisesRegex
         except AttributeError:
             self.assertRaisesRegex = self.assertRaisesRegexp
 
-    def assertRaisesWithMessage(self, exception):
-        return self.assertRaisesRegex(exception, r".+")
+    ___ assertRaisesWithMessage(self, exception
+        r_ self.assertRaisesRegex(exception, r".+")
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

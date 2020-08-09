@@ -41,50 +41,50 @@ Total length of input string will be 3n, where 1 ≤ n ≤ 20.
 Total number of H will be 2n in the input string.
 Total number of O will be n in the input string.
 """
-from typing import Callable
-from threading import Semaphore
+from typing ______ Callable
+from threading ______ Semaphore
 
-from collections import deque
+from collections ______ deque
 
 class H2O:
-    def __init__(self):
+    ___ __init__(self
         self.hq = deque()
         self.oq = deque()
 
-    def hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
+    ___ hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
         self.hq.append(releaseHydrogen)
         self.try_output()
 
-    def oxygen(self, releaseOxygen: Callable[[], None]) -> None:
+    ___ oxygen(self, releaseOxygen: Callable[[], None]) -> None:
         self.oq.append(releaseOxygen)
         self.try_output()
 
-    def try_output(self):
-        if len(self.hq) >= 2 and len(self.oq) >= 1:
+    ___ try_output(self
+        __ le.(self.hq) >= 2 and le.(self.oq) >= 1:
             self.hq.popleft()()
             self.hq.popleft()()
             self.oq.popleft()()
 
 
 class H2O_TLE2:
-    def __init__(self):
+    ___ __init__(self
         """
         Conditional Variable as counter? - Semaphore
         """
         self.gates = [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
 
-    def hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
+    ___ hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
         self.gates[0].a..
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
-        if self.gates[0].acquire(blocking=False):  # self.gates[0]._value > 0
+        __ self.gates[0].acquire(blocking=False  # self.gates[0]._value > 0
             # still have available count
             self.gates[0].release()
-        else:
+        ____
             self.gates[1].release()
 
 
-    def oxygen(self, releaseOxygen: Callable[[], None]) -> None:
+    ___ oxygen(self, releaseOxygen: Callable[[], None]) -> None:
         self.gates[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
@@ -93,7 +93,7 @@ class H2O_TLE2:
 
 
 class H2O_TLE:
-    def __init__(self):
+    ___ __init__(self
         """
         Conditional Variable as counter?
         Fixed at HHO pattern
@@ -103,18 +103,18 @@ class H2O_TLE:
         self.locks[1].a..
 
 
-    def hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
+    ___ hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
         self.locks[0].a..
         self.h_cnt += 1
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
-        if self.h_cnt < 2:
+        __ self.h_cnt < 2:
             self.locks[0].release()
-        else:
+        ____
             self.locks[1].release()
 
 
-    def oxygen(self, releaseOxygen: Callable[[], None]) -> None:
+    ___ oxygen(self, releaseOxygen: Callable[[], None]) -> None:
         self.locks[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()

@@ -1,23 +1,23 @@
 class Solution:
-    def findStrobogrammatic(self, n):
+    ___ findStrobogrammatic(self, n
         """
         :type n: int
         :rtype: list[str]
         """
         ans = ['']
 
-        if not n:
-            return ans
+        __ not n:
+            r_ ans
 
-        if n & 1:
+        __ n & 1:
             ans = ['0', '1', '8']
             n -= 1
 
-        while n:
+        w___ n:
             queue = []
 
             for s in ans:
-                if n != 2:
+                __ n != 2:
                     queue.append('0' + s + '0')
 
                 queue.append('1' + s + '1')
@@ -28,4 +28,4 @@ class Solution:
             ans = queue
             n -= 2
 
-        return ans
+        r_ ans

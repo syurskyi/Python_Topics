@@ -1,7 +1,7 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 """
@@ -12,16 +12,16 @@ class Solution:
     @param: root: A Tree
     @return: Inorder in ArrayList which contains node values.
     """
-    def inorderTraversal(self, root):
+    ___ inorderTraversal(self, root
         ans = []
-        if not root:
-            return ans
+        __ not root:
+            r_ ans
         self._traversal(root, ans)
-        return ans
+        r_ ans
 
-    def _traversal(self, node, res):
-        if not node:
-            return
+    ___ _traversal(self, node, res
+        __ not node:
+            r_
 
         self._traversal(node.left, res)
         res.append(node.val)

@@ -1,31 +1,31 @@
-import functools
+______ functools
 
 NODE, EDGE, ATTR = range(3)
 
 
-class Node(object):
-    def __init__(self, name, attrs={}, *args):
+class Node(object
+    ___ __init__(self, name, attrs={}, *args
         self.name = name
         self.attrs = attrs
 
-    def __eq__(self, other):
-        return self.name == other.name and self.attrs == other.attrs
+    ___ __eq__(self, other
+        r_ self.name __ other.name and self.attrs __ other.attrs
 
 
-class Edge(object):
-    def __init__(self, src, dst, attrs={}):
+class Edge(object
+    ___ __init__(self, src, dst, attrs={}
         self.src = src
         self.dst = dst
         self.attrs = attrs
 
-    def __eq__(self, other):
-        return (self.src == other.src and
-                self.dst == other.dst and
-                self.attrs == other.attrs)
+    ___ __eq__(self, other
+        r_ (self.src __ other.src and
+                self.dst __ other.dst and
+                self.attrs __ other.attrs)
 
 
-class Graph(object):
-    def __init__(self, data=[]):
+class Graph(object
+    ___ __init__(self, data=[]
         self.nodes = []
         self.edges = []
         self.attrs = {} 
@@ -36,25 +36,25 @@ class Graph(object):
                 }
 
         for datum in data:
-            if type(datum) != tuple or len(datum) < 1:
+            __ type(datum) != tuple or le.(datum) < 1:
                 raise TypeError("Not a valid entry: {}".format(datum))
-            elif datum[0] not in costructors:
+            ____ datum[0] not in costructors:
                 raise ValueError("Not a known type")
             
             costructors[datum[0]](*datum[1:])
 
-    def _add_node(self, *args):
+    ___ _add_node(self, *args
         name, attrs = args
         self.nodes.append(Node(name, attrs=attrs))
 
-    def _add_edge(self, *args):
+    ___ _add_edge(self, *args
         src, dst, attrs = args
         self.edges.append(Edge(src, dst, attrs=attrs))
 
-    def _add_attr(self, *args):
+    ___ _add_attr(self, *args
         FORMAT = "(ATTR, key, val)"
-        if len(args) < 2:
+        __ le.(args) < 2:
             raise TypeError("{} Not enough args: {}".format(FORMAT, args))
-        elif len(args) > 2:
+        ____ le.(args) > 2:
             raise ValueError("{} To many args: {}".format(FORMAT, args))
         self.attrs[args[0]] = args[1]

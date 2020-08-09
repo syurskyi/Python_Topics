@@ -1,13 +1,13 @@
 """
 Definition of TreeNode:
 class TreeNode:
-    def __init__(self, val):
+    ___ __init__(self, val
         self.val = val
         self.left, self.right = None, None
 
 Example of iterate a tree:
 iterator = BSTIterator(root)
-while iterator.hasNext():
+w___ iterator.hasNext(
     node = iterator.next()
     do something for node
 """
@@ -17,24 +17,24 @@ class BSTIterator:
     """
     @param: root: The root of binary tree.
     """
-    def __init__(self, root):
+    ___ __init__(self, root
         self.stack = []
         self.node = root
 
     """
     @return: True if there has next node, or false
     """
-    def hasNext(self):
-        return self.node or self.stack
+    ___ hasNext(self
+        r_ self.node or self.stack
 
     """
     @return: return next node
     """
-    def next(self):
+    ___ next(self
         node = self.node
         stack = self.stack
 
-        while node:
+        w___ node:
             stack.append(node)
             node = node.left
 
@@ -44,4 +44,4 @@ class BSTIterator:
 
         self.node = node.right
 
-        return nxt
+        r_ nxt

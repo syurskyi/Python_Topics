@@ -1,37 +1,37 @@
-import unittest
+______ unittest
 
-from bracket_push import check_brackets
+from bracket_push ______ check_brackets
 
 
-class BracketPushTests(unittest.TestCase):
+class BracketPushTests(unittest.TestCase
 
-    def test_input_empty(self):
+    ___ test_input_empty(self
         self.assertEqual(check_brackets(""), True)
 
-    def test_single(self):
+    ___ test_single(self
         self.assertEqual(check_brackets("{}"), True)
 
-    def test_unclosed(self):
+    ___ test_unclosed(self
         self.assertEqual(check_brackets("{{"), False)
 
-    def test_wrong_order(self):
+    ___ test_wrong_order(self
         self.assertEqual(check_brackets("}{"), False)
 
-    def test_mixed_not_nested(self):
+    ___ test_mixed_not_nested(self
         self.assertEqual(check_brackets("{}[]"), True)
 
-    def test_mixed_nested(self):
+    ___ test_mixed_nested(self
         self.assertEqual(check_brackets("{[]}"), True)
 
-    def test_improperly_nested(self):
+    ___ test_improperly_nested(self
         self.assertEqual(check_brackets("{[}]"), False)
 
-    def test_not_opened_nested(self):
+    ___ test_not_opened_nested(self
         self.assertEqual(check_brackets("{[)][]}"), False)
 
-    def test_nested_ensemble(self):
+    ___ test_nested_ensemble(self
         self.assertEqual(check_brackets("{[]([()])}"), True)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

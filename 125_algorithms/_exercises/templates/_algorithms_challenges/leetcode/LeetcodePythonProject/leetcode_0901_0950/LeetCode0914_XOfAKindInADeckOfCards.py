@@ -1,17 +1,17 @@
-class Solution(object):
-    def hasGroupsSizeX(self, deck):
+class Solution(object
+    ___ hasGroupsSizeX(self, deck
         """
         :type deck: List[int]
         :rtype: bool
         """
-        if not deck: return False
+        __ not deck: r_ False
         hashmap = {}
         for num in deck:
             hashmap[num] = hashmap.get(num, 0)+1
         counts = list(hashmap.values())
         minVal = min(hashmap.values())
-        while counts:
-            if 1 in counts:
-                return False
-            counts = [c - minVal for c in counts if c > minVal]
-        return True
+        w___ counts:
+            __ 1 in counts:
+                r_ False
+            counts = [c - minVal for c in counts __ c > minVal]
+        r_ True

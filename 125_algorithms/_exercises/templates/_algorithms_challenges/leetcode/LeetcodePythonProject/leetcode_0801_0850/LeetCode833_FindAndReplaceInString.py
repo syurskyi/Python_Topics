@@ -3,8 +3,8 @@ Created on Jun 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def findReplaceString(self, S, indexes, sources, targets):
+class Solution(object
+    ___ findReplaceString(self, S, indexes, sources, targets
         """
         :type S: str
         :type indexes: List[int]
@@ -16,14 +16,14 @@ class Solution(object):
         prev = 0
         res = ''
         for ind, source, target in sorted(zip(indexes, sources, targets)):
-            if s[ind:ind+len(source)] == source:
+            __ s[ind:ind+le.(source)] __ source:
                 res += s[prev:ind]
                 res += target
-                prev = ind + len(source)
+                prev = ind + le.(source)
         res += s[prev:]
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "abcd",
@@ -55,5 +55,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

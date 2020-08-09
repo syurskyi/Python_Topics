@@ -2,13 +2,13 @@
 # Score: 10
 
 
-def handler(result):
+___ handler(result
     inp = input().split()
     command = inp[0]
     values = inp[1:]
-    if command == 'print':
+    __ command __ 'print':
         print(result)
-    else:
+    ____
         execute = 'result.' + command + "(" + ",".join(values) + ")"
         eval(execute)
 

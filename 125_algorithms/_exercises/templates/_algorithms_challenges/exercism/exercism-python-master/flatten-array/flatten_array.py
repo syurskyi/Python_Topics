@@ -1,11 +1,11 @@
-def flatten(iterable):
-    if type(iterable) is str:
-        return list(iterable)
+___ flatten(iterable
+    __ type(iterable) is str:
+        r_ list(iterable)
     flat = []
     for item in iterable:
         try:
             flat.extend(flatten(item))
         except TypeError:
-            if item is not None:
+            __ item is not None:
                 flat.append(item)
-    return flat
+    r_ flat

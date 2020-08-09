@@ -3,50 +3,50 @@ Created on Oct 10, 2018
 
 @author: tongq
 '''
-import itertools
+______ itertools
 
-class Solution(object):
-    def numSimilarGroups(self, A):
+class Solution(object
+    ___ numSimilarGroups(self, A
         """
         :type A: List[str]
         :rtype: int
         """
         arr = list(set(A))
         parents = {x: x for x in arr}
-        n, m = len(arr), len(arr[0])
+        n, m = le.(arr), le.(arr[0])
         self.count = n
         
-        def find(x):
-            if x != parents[x]:
+        ___ find(x
+            __ x != parents[x]:
                 parents[x] = find(parents[x])
-            return parents[x]
+            r_ parents[x]
         
-        def union(x, y):
+        ___ union(x, y
             x, y = find(x), find(y)
-            if x != y:
+            __ x != y:
                 parents[x] = y
                 self.count -= 1
-                return True
-            return False
+                r_ True
+            r_ False
         
-        def similar(x, y):
-            return sum(i != j for i, j in zip(x, y)) == 2
+        ___ similar(x, y
+            r_ sum(i != j for i, j in zip(x, y)) __ 2
         
         ## Solution part ##
-        if n < m:
-            for x, y in itertools.combinations(arr, 2):
-                if similar(x, y):
+        __ n < m:
+            for x, y in itertools.combinations(arr, 2
+                __ similar(x, y
                     union(x, y)
-        else:
+        ____
             for x in arr:
-                for i, j in itertools.combinations(range(m), 2):
+                for i, j in itertools.combinations(range(m), 2
                     y = x[:i] + x[j] + x[i+1:j] + x[i] + x[j+1:]
-                    if y in parents:
+                    __ y in parents:
                         union(x, y)
         
-        return self.count
+        r_ self.count
     
-    def test(self):
+    ___ test(self
         testCases = [
             ["aaa", "aaa", "aaa"],
             ["tars","rats","arts","star"],
@@ -59,5 +59,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

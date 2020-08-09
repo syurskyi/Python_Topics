@@ -1,20 +1,20 @@
 """Names robots"""
-from string import ascii_uppercase
+from string ______ ascii_uppercase
 
-class Robot(object):
+class Robot(object
     """A robot naming class"""
     num_robots = 0
 
-    def __init__(self):
+    ___ __init__(self
         """Creates a new robot name"""
         self.name = self.create_name()
 
-    def reset(self):
+    ___ reset(self
         """Gives the robot a new name"""
         self.name = self.create_name()
 
     @staticmethod
-    def create_name():
+    ___ create_name(
         """Changes the number of robots into name"""
         # Creates a binary representation of the number of robots
         robot_num = format(Robot.num_robots % 10**3 * 26**2, "020b")
@@ -26,4 +26,4 @@ class Robot(object):
         name = "%c%c%03d" %(ascii_uppercase[chr_seed // 26 - 1],
                             ascii_uppercase[chr_seed % 26], digit_seed)
         Robot.num_robots += 1
-        return name
+        r_ name

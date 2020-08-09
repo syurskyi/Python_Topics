@@ -11,7 +11,7 @@ The solution is guaranteed to be unique.
 """
 __author__ = 'Danyang'
 class Solution:
-    def canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit(self, gas, cost
         """
 
               .-''''-.
@@ -39,26 +39,26 @@ class Solution:
         :param cost: a list of integers, cost[i] from i to i+1
         :return: an integer
         """
-        length = len(gas)
+        length = le.(gas)
 
         # gas difference
         diff = [gas[i]-cost[i] for i in xrange(length)]
 
         # find whether can cover one cycle
         # starting from arbitrary point
-        if sum(diff)<0:
-            return -1
+        __ sum(diff)<0:
+            r_ -1
 
         # find the starting index
         start_index = 0
         sum_before = 0
-        for ind, val in enumerate(diff):  # O(N), rather than brutal force O(N^2)
+        for ind, val in enumerate(diff  # O(N), rather than brutal force O(N^2)
             sum_before += val
-            if sum_before<0:  # reset sum_before since gas insufficient for the journey. # sum[i, j]<0
+            __ sum_before<0:  # reset sum_before since gas insufficient for the journey. # sum[i, j]<0
                 start_index = ind+1
                 sum_before = 0
 
-        return start_index
+        r_ start_index
 
-if __name__=="__main__":
+__ __name____"__main__":
     Solution().canCompleteCircuit([5], [4])

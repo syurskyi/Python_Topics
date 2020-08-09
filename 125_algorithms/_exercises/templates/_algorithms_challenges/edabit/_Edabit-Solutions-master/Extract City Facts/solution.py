@@ -1,9 +1,9 @@
-def city_facts(city):
+___ city_facts(city
     for i in city:
-        if i == "name":
+        __ i __ "name":
             c = city[i]
-        elif i == "population":
+        ____ i __ "population":
             p = city[i]
-        else:
+        ____
             co = city[i]
-    return ("{} has a population of {} and is situated in {}".format(c,p,co))
+    r_ ("{} has a population of {} and is situated in {}".format(c,p,co))

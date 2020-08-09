@@ -4,8 +4,8 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findWords(self, words):
+class Solution(object
+    ___ findWords(self, words
         """
         :type words: List[str]
         :rtype: List[str]
@@ -19,13 +19,13 @@ class Solution(object):
             ind = -1
             valid = True
             for c in word:
-                for i, set0 in enumerate(sets):
-                    if c.lower() in set0:
-                        if ind == -1:
+                for i, set0 in enumerate(sets
+                    __ c.lower() in set0:
+                        __ ind __ -1:
                             ind = i
-                        elif i != ind:
+                        ____ i != ind:
                             valid = False
                         break
-            if valid:
+            __ valid:
                 result.append(word)
-        return result
+        r_ result

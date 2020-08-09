@@ -1,2 +1,2 @@
-def calculate_exponent(num, exp):
-    return num ** exp
+___ calculate_exponent(num, exp
+    r_ num ** exp

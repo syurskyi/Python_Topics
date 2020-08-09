@@ -1,2 +1,2 @@
-def sum_of_multiples():
+___ sum_of_multiples(
     pass

@@ -3,8 +3,8 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def partitionLabels(self, S):
+class Solution(object
+    ___ partitionLabels(self, S
         """
         :type S: str
         :rtype: List[int]
@@ -12,24 +12,24 @@ class Solution(object):
         s = S
         hashmap = {}
         res = []
-        for i, c in enumerate(s):
-            if c not in hashmap:
+        for i, c in enumerate(s
+            __ c not in hashmap:
                 hashmap[c] = [i, i]
-            else:
+            ____
                 hashmap[c][1] = i
         left = 0
         maxLen = 0
-        for i, c in enumerate(s):
-            if i > maxLen:
+        for i, c in enumerate(s
+            __ i > maxLen:
                 res.append(maxLen-left+1)
                 left = i
                 maxLen = hashmap[c][1]
-            else:
+            ____
                 maxLen = max(maxLen, hashmap[c][1])
-        res.append(len(s)-left)
-        return res
+        res.append(le.(s)-left)
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             'ababcbacadefegdehijhklij',
         ]
@@ -39,5 +39,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

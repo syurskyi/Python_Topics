@@ -3,25 +3,25 @@ Created on Feb 13, 2017
 
 @author: MT
 '''
-class TwoSum(object):
+class TwoSum(object
 
-    def __init__(self):
+    ___ __init__(self
         """
         initialize your data structure here
         """
         self.elements = {}
 
-    def add(self, number):
+    ___ add(self, number
         """
         Add the number to an internal data structure.
         :rtype: nothing
         """
-        if number in self.elements:
+        __ number in self.elements:
             self.elements[number] += 1
-        else:
+        ____
             self.elements[number] = 1
 
-    def find(self, value):
+    ___ find(self, value
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         :type value: int
@@ -29,8 +29,8 @@ class TwoSum(object):
         """
         for num in self.elements:
             target = value-num
-            if target in self.elements:
-                if target == num and self.elements[target]<2:
+            __ target in self.elements:
+                __ target __ num and self.elements[target]<2:
                     continue
-                return True
-        return False
+                r_ True
+        r_ False

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestUniqueChars(object):
+class TestUniqueChars(object
 
-    def test_unique_chars(self, func):
+    ___ test_unique_chars(self, func
         assert_equal(func(None), False)
         assert_equal(func(''), True)
         assert_equal(func('foo'), False)
@@ -11,7 +11,7 @@ class TestUniqueChars(object):
         print('Success: test_unique_chars')
 
 
-def main():
+___ main(
     test = TestUniqueChars()
     unique_chars = UniqueChars()
     test.test_unique_chars(unique_chars.has_unique_chars)
@@ -26,5 +26,5 @@ def main():
         pass
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

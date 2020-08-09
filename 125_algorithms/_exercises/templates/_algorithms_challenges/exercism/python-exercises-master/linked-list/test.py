@@ -1,37 +1,37 @@
-import unittest
+______ unittest
 
-from linked_list import LinkedList
+from linked_list ______ LinkedList
 
 
-class LinkedListTests(unittest.TestCase):
-    def setUp(self):
+class LinkedListTests(unittest.TestCase
+    ___ setUp(self
         self.list = LinkedList()
 
-    def test_push_pop(self):
+    ___ test_push_pop(self
         self.list.push(10)
         self.list.push(20)
         self.assertEqual(self.list.pop(), 20)
         self.assertEqual(self.list.pop(), 10)
 
-    def test_push_shift(self):
+    ___ test_push_shift(self
         self.list.push(10)
         self.list.push(20)
         self.assertEqual(self.list.shift(), 10)
         self.assertEqual(self.list.shift(), 20)
 
-    def test_unshift_shift(self):
+    ___ test_unshift_shift(self
         self.list.unshift(10)
         self.list.unshift(20)
         self.assertEqual(self.list.shift(), 20)
         self.assertEqual(self.list.shift(), 10)
 
-    def test_unshift_pop(self):
+    ___ test_unshift_pop(self
         self.list.unshift(10)
         self.list.unshift(20)
         self.assertEqual(self.list.pop(), 10)
         self.assertEqual(self.list.pop(), 20)
 
-    def test_all(self):
+    ___ test_all(self
         self.list.push(10)
         self.list.push(20)
         self.assertEqual(self.list.pop(), 20)
@@ -44,17 +44,17 @@ class LinkedListTests(unittest.TestCase):
         self.assertEqual(self.list.shift(), 30)
 
     @unittest.skip("extra-credit")
-    def test_length(self):
+    ___ test_length(self
         self.list.push(10)
         self.list.push(20)
-        self.assertEqual(len(self.list), 2)
+        self.assertEqual(le.(self.list), 2)
         self.list.shift()
-        self.assertEqual(len(self.list), 1)
+        self.assertEqual(le.(self.list), 1)
         self.list.pop()
-        self.assertEqual(len(self.list), 0)
+        self.assertEqual(le.(self.list), 0)
 
     @unittest.skip("extra-credit")
-    def test_iterator(self):
+    ___ test_iterator(self
         self.list.push(10)
         self.list.push(20)
         iterator = iter(self.list)
@@ -62,5 +62,5 @@ class LinkedListTests(unittest.TestCase):
         self.assertEqual(next(iterator), 20)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     unittest.main()

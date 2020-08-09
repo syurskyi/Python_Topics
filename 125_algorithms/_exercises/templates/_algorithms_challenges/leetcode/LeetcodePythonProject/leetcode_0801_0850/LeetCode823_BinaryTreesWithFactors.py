@@ -3,8 +3,8 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def numFactoredBinaryTrees(self, A):
+class Solution(object
+    ___ numFactoredBinaryTrees(self, A
         """
         :type A: List[int]
         :rtype: int
@@ -14,16 +14,16 @@ class Solution(object):
         res = 0
         arr.sort()
         hashmap = {}
-        for i in range(len(arr)):
+        for i in range(le.(arr)):
             hashmap[arr[i]] = 1
-            for j in range(i):
-                if arr[j] in hashmap and arr[i]%arr[j]==0 and\
+            for j in range(i
+                __ arr[j] in hashmap and arr[i]%arr[j]__0 and\
                     arr[i]/arr[j] in hashmap:
                     hashmap[arr[i]] += hashmap[arr[j]]*hashmap[(arr[i]/arr[j])]
             res = (res+hashmap[arr[i]])%MOD
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [2, 4],
             [2, 4, 5, 10],
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

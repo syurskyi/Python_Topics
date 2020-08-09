@@ -1,80 +1,80 @@
 class Node:
-    def __init__(self, data):
+    ___ __init__(self, data
         self.data = data
         self.prev = None
         self.next = None
 
 
 class LinkedList:
-    def __init__(self):
+    ___ __init__(self
         self.head = None
 
-    def createList(self, arr):
+    ___ createList(self, arr
         start = self.head
-        n = len(arr)
+        n = le.(arr)
 
         temp = start
         i = 0
 
-        while(i < n):
+        w___(i < n
             newNode = Node(arr[i])
-            if(i == 0):
+            __(i __ 0
                 start = newNode
                 temp = start
-            else:
+            ____
                 temp.next = newNode
                 newNode.prev = temp
                 temp = temp.next
             i += 1
         self.head = start
-        return start
+        r_ start
 
-    def printList(self):
+    ___ printList(self
         temp = self.head
         linked_list = ""
-        while(temp):
+        w___(temp
             linked_list += (str(temp.data) + " ")
             temp = temp.next
 
         print(linked_list)
 
-    def countList(self):
+    ___ countList(self
         temp = self.head
         count = 0
-        while(temp is not None):
+        w___(temp is not None
             temp = temp.next
             count += 1
-        return count
+        r_ count
 
     # we will consider that the index begin at 1
-    def insertAtLocation(self, value, index):
+    ___ insertAtLocation(self, value, index
         temp = self.head
 
         count = self.countList()
 
         #index is 6, count is 5, valid 
         #index is 7, count is 5, 
-        if(count+1<index):
-            return temp
+        __(count+1<index
+            r_ temp
         
         newNode = Node(value)
 
-        if(index == 1):
+        __(index __ 1
             newNode.next = temp
             temp.prev = newNode
             self.head = newNode
-            return self.head
+            r_ self.head
         
-        if(index == count +1):
-            while(temp.next is not None):
+        __(index __ count +1
+            w___(temp.next is not None
                 temp = temp.next
 
             temp.next = newNode
             newNode.prev = temp 
-            return self.head
+            r_ self.head
         
         i = 1
-        while(i < index-1):
+        w___(i < index-1
             temp = temp.next
             i+=1
         
@@ -86,7 +86,7 @@ class LinkedList:
         temp.next = newNode
         newNode.prev = temp
 
-        return self.head
+        r_ self.head
 
 
 arr = [1, 2, 3, 4, 5]

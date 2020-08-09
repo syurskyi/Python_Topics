@@ -1,5 +1,5 @@
-class Solution(object):
-  def findTheDifference(self, s, t):
+class Solution(object
+  ___ findTheDifference(self, s, t
     """
     :type s: str
     :type t: str
@@ -7,4 +7,4 @@ class Solution(object):
     """
     sum1 = sum(map(ord, [c for c in s]))
     sum2 = sum(map(ord, [c for c in t]))
-    return chr(sum2 - sum1)
+    r_ chr(sum2 - sum1)

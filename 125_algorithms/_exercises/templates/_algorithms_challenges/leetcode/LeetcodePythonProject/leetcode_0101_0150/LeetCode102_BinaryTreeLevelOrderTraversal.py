@@ -4,29 +4,29 @@ Created on Feb 1, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def levelOrder(self, root):
+class Solution(object
+    ___ levelOrder(self, root
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
         result = []
-        if not root: return result
+        __ not root: r_ result
         queue = []
         nextQueue = []
         elem = []
         queue.append(root)
-        while queue:
+        w___ queue:
             first = queue[0]
             elem.append(first.val)
             del queue[0]
-            if first.left:
+            __ first.left:
                 nextQueue.append(first.left)
-            if first.right:
+            __ first.right:
                 nextQueue.append(first.right)
-            if not queue:
+            __ not queue:
                 result.append(elem)
                 elem = []
                 queue = nextQueue
                 nextQueue = []
-        return result
+        r_ result

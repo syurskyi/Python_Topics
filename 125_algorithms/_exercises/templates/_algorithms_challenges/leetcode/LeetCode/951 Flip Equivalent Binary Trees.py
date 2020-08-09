@@ -27,24 +27,24 @@ Each value in each tree will be a unique integer in the range [0, 99].
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def flipEquiv(self, root1: TreeNode, root2: TreeNode) -> bool:
+    ___ flipEquiv(self, root1: TreeNode, root2: TreeNode) -> bool:
         """
         O(N)
         """
-        if not root1 and not root2:
-            return True
-        elif not root1 or not root2:
-            return False
+        __ not root1 and not root2:
+            r_ True
+        ____ not root1 or not root2:
+            r_ False
 
-        if root1.val != root2.val:
-            return False
+        __ root1.val != root2.val:
+            r_ False
 
-        return self.flipEquiv(root1.left, root2.left) and self.flipEquiv(root1.right, root2.right) or \
+        r_ self.flipEquiv(root1.left, root2.left) and self.flipEquiv(root1.right, root2.right) or \
             self.flipEquiv(root1.left, root2.right) and self.flipEquiv(root1.right, root2.left)

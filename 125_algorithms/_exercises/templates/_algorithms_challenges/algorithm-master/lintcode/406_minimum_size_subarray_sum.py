@@ -4,27 +4,27 @@ class Solution:
     @param: s: An integer
     @return: an integer representing the minimum size of subarray
     """
-    def minimumSize(self, nums, s):
-        if not nums or len(nums) == 0:
-            return -1
-        n = len(nums)
+    ___ minimumSize(self, nums, s
+        __ not nums or le.(nums) __ 0:
+            r_ -1
+        n = le.(nums)
         min_len = n + 1
         l = r = t = 0
-        while r < n:
+        w___ r < n:
             # Keep adding the next int into total until total >= s
-            while r < n and t < s:
+            w___ r < n and t < s:
                 t += nums[r]
                 r += 1
 
             # Terminate iteration if all the children in nums have been added
-            if r >= n and t < s:
+            __ r >= n and t < s:
                 break
 
             # Keep substracting the prev int from total until total < s
-            while l < r and t >= s:
+            w___ l < r and t >= s:
                 t -= nums[l]
                 l += 1
 
             # Save the min_size
             min_len = min(min_len, r - l + 1)
-        return -1 if min_len > n else min_len
+        r_ -1 __ min_len > n else min_len

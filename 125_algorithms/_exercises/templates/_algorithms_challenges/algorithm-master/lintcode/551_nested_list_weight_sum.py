@@ -2,58 +2,58 @@
 This is the interface that allows for creating nested lists.
 You should not implement it, or speculate about its implementation
 
-class NestedInteger(object):
-    def isInteger(self):
+class NestedInteger(object
+    ___ isInteger(self
         # @return {boolean} True if this NestedInteger holds a single integer,
         # rather than a nested list.
 
-    def getInteger(self):
+    ___ getInteger(self
         # @return {int} the single integer that this NestedInteger holds,
         # if it holds a single integer
         # Return None if this NestedInteger holds a nested list
 
-    def getList(self):
+    ___ getList(self
         # @return {NestedInteger[]} the nested list that this NestedInteger holds,
         # if it holds a nested list
         # Return None if this NestedInteger holds a single integer
 """
 
 
-class Solution(object):
+class Solution(object
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
-    def depthSum(self, L):
-        return self.dfs(L, 1)
+    ___ depthSum(self, L
+        r_ self.dfs(L, 1)
 
-    def dfs(self, L, depth):
+    ___ dfs(self, L, depth
         _sum = 0
 
         for obj in L:
-            if obj.isInteger():
+            __ obj.isInteger(
                 _sum += depth * obj.getInteger()
                 continue
 
             _sum += self.dfs(obj.getList(), depth + 1)
 
-        return _sum
+        r_ _sum
 
 
-class Solution(object):
+class Solution(object
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
-    def depthSum(self, L):
+    ___ depthSum(self, L
         ans = 0
-        if not L:
-            return ans
+        __ not L:
+            r_ ans
 
         queue = L
         depth = 0
-        while queue:
+        w___ queue:
             _queue = []
             depth += 1
 
             for obj in queue:
-                if obj.isInteger():
+                __ obj.isInteger(
                     ans += depth * obj.getInteger()
                     continue
 
@@ -61,4 +61,4 @@ class Solution(object):
 
             queue = _queue
 
-        return ans
+        r_ ans

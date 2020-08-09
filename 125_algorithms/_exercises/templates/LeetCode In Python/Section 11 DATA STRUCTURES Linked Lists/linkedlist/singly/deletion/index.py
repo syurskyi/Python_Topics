@@ -1,33 +1,33 @@
 class Node:
 
-    def __init__(self, data):
+    ___ __init__(self, data
         self.data = data
         self.next = None
 
 
 class LinkedList:
 
-    def __init__(self):
+    ___ __init__(self
         self.head = None
 
-    def printList(self):
+    ___ printList(self
         temp = self.head
         linked_list = ""
-        while(temp):
+        w___(temp
             linked_list += (str(temp.data) + " ")
             temp = temp.next
         print(linked_list)
 
-    def deleteNode(self, key):
+    ___ deleteNode(self, key
         temp = self.head
-        if(temp is None):
-            return
-        if(temp.data == key):
+        __(temp is None
+            r_
+        __(temp.data __ key
             self.head = temp.next
             temp = None
-            return
+            r_
 
-        while(temp.next.data != key):
+        w___(temp.next.data != key
             temp = temp.next
 
         target_node = temp.next

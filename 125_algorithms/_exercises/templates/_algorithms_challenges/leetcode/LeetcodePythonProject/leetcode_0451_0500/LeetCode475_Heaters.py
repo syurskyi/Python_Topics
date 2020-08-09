@@ -4,25 +4,25 @@ Created on Apr 27, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findRadius(self, houses, heaters):
+class Solution(object
+    ___ findRadius(self, houses, heaters
         houses.sort()
         heaters.sort()
         i = 0
         radius = 0
         for house in houses:
-            while i+1 < len(heaters) and heaters[i+1] < house:
+            w___ i+1 < le.(heaters) and heaters[i+1] < house:
                 i += 1
-            if heaters[i] > house:
+            __ heaters[i] > house:
                 tmp = heaters[i]-house
-            else:
+            ____
                 tmp = house-heaters[i]
-                if i+1 < len(heaters):
+                __ i+1 < le.(heaters
                     tmp = min(tmp, heaters[i+1]-house)
             radius = max(radius, tmp)
-        return radius
+        r_ radius
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [1, 2, 3],
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,2 +1,2 @@
-def score():
+___ score(
     pass

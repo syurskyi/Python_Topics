@@ -4,21 +4,21 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def lastRemaining(self, n):
+class Solution(object
+    ___ lastRemaining(self, n
         left = True
         remaining = n
         head = 1
         step = 1
-        while remaining > 1:
-            if left or remaining%2==1:
+        w___ remaining > 1:
+            __ left or remaining%2__1:
                 head += step
             remaining //= 2
             step *= 2
             left = not left
-        return head
+        r_ head
     
-    def test(self):
+    ___ test(self
         testCases = [
             9
         ]
@@ -28,5 +28,5 @@ class Solution(object):
             print('result1: %s' % result)
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

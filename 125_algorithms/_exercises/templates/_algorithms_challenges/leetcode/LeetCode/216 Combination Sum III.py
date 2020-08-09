@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def combinationSum3(self, k, n):
+    ___ combinationSum3(self, k, n
         """
         Backtracking
 
@@ -35,25 +35,25 @@ class Solution:
         """
         ret = []
         self.dfs(k, n, [], ret)
-        return ret
+        r_ ret
 
-    def dfs(self, remain_k, remain_n, cur, ret):
-        if remain_k == 0 and remain_n == 0:
+    ___ dfs(self, remain_k, remain_n, cur, ret
+        __ remain_k __ 0 and remain_n __ 0:
             ret.append(list(cur))
-            return
+            r_
 
         # check max and min reach
-        if remain_k * 9 < remain_n or remain_k * 1 > remain_n:
-            return
+        __ remain_k * 9 < remain_n or remain_k * 1 > remain_n:
+            r_
 
         start = 1
-        if cur:
+        __ cur:
             start = cur[-1] + 1  # unique
-        for i in xrange(start, 10):
+        for i in xrange(start, 10
             cur.append(i)
             self.dfs(remain_k - 1, remain_n - i, cur, ret)
             cur.pop()
 
 
-if __name__ == "__main__":
-    assert Solution().combinationSum3(3, 9) == [[1, 2, 6], [1, 3, 5], [2, 3, 4]]
+__ __name__ __ "__main__":
+    assert Solution().combinationSum3(3, 9) __ [[1, 2, 6], [1, 3, 5], [2, 3, 4]]

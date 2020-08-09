@@ -1,40 +1,40 @@
-class Solution(object):
-  def canIWin(self, maxChoosableInteger, desiredTotal):
+class Solution(object
+  ___ canIWin(self, maxChoosableInteger, desiredTotal
     """
     :type maxChoosableInteger: int
     :type desiredTotal: int
     :rtype: bool
     """
 
-    def helper(pool, target, visited):
-      if pool in visited:
-        return visited[pool]
-      if target <= 0:
-        return False
-      if pool >= self.maxPool:
-        return True
+    ___ helper(pool, target, visited
+      __ pool in visited:
+        r_ visited[pool]
+      __ target <= 0:
+        r_ False
+      __ pool >= self.maxPool:
+        r_ True
 
       mask = 0x01
-      for i in range(0, maxChoosableInteger):
-        if pool & mask == 0:
+      for i in range(0, maxChoosableInteger
+        __ pool & mask __ 0:
           newPool = pool | mask
-          if helper(newPool, target - (i + 1), visited) == False:
+          __ helper(newPool, target - (i + 1), visited) __ False:
             visited[pool] = True
-            return True
+            r_ True
         mask = mask << 1
       visited[pool] = False
-      return False
+      r_ False
 
-    if (1 + maxChoosableInteger) * (maxChoosableInteger / 2) < desiredTotal:
-      return False
+    __ (1 + maxChoosableInteger) * (maxChoosableInteger / 2) < desiredTotal:
+      r_ False
 
-    if desiredTotal == 0:
-      return True
+    __ desiredTotal __ 0:
+      r_ True
     self.maxPool = 0
     mask = 1
-    for i in range(0, maxChoosableInteger):
+    for i in range(0, maxChoosableInteger
       self.maxPool |= mask
       mask = mask << 1
     pool = 0
     visited = {}
-    return helper(pool, desiredTotal, visited)
+    r_ helper(pool, desiredTotal, visited)

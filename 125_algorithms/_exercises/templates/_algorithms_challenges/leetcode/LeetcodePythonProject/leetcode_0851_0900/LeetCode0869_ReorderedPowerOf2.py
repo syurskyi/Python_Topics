@@ -3,44 +3,44 @@ Created on Sep 30, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def reorderedPowerOf2(self, N):
+class Solution(object
+    ___ reorderedPowerOf2(self, N
         """
         :type N: int
         :rtype: bool
         """
         n = N
-        if n == 1: return True
+        __ n __ 1: r_ True
         s = str(n)
-        length = len(s)
+        length = le.(s)
         nums = self.getNums(length)
         for num in nums:
-            if self.matches(n, num):
-                return True
-        return False
+            __ self.matches(n, num
+                r_ True
+        r_ False
     
-    def matches(self, n, num):
+    ___ matches(self, n, num
         hashmap = {}
-        for c in str(n):
-            if c in hashmap:
+        for c in str(n
+            __ c in hashmap:
                 hashmap[c] += 1
-            else:
+            ____
                 hashmap[c] = 1
-        for c in str(num):
-            if c in hashmap:
+        for c in str(num
+            __ c in hashmap:
                 hashmap[c] -= 1
-                if hashmap[c] == 0:
+                __ hashmap[c] __ 0:
                     del hashmap[c]
-            else:
-                return False
-        return True
+            ____
+                r_ False
+        r_ True
     
-    def getNums(self, length):
+    ___ getNums(self, length
         res = []
         num = 2
-        while len(str(num)) < length:
+        w___ le.(str(num)) < length:
             num *= 2
-        while len(str(num)) == length:
+        w___ le.(str(num)) __ length:
             res.append(num)
             num *= 2
-        return res
+        r_ res

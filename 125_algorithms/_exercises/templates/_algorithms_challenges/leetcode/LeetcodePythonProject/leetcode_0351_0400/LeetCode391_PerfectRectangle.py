@@ -4,10 +4,10 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def isRectangleCover(self, rectangles):
-        if not rectangles:
-            return False
+class Solution(object
+    ___ isRectangleCover(self, rectangles
+        __ not rectangles:
+            r_ False
         x1, x2, y1, y2 = float('inf'), float('-inf'), float('inf'), float('-inf')
         hashset = set()
         area = 0
@@ -19,30 +19,30 @@ class Solution(object):
             
             area += (rect[2]-rect[0])*(rect[3]-rect[1])
             
-            if (rect[0], rect[1]) not in hashset:
+            __ (rect[0], rect[1]) not in hashset:
                 hashset.add((rect[0], rect[1]))
-            else:
+            ____
                 hashset.discard((rect[0], rect[1]))
-            if (rect[0], rect[3]) not in hashset:
+            __ (rect[0], rect[3]) not in hashset:
                 hashset.add((rect[0], rect[3]))
-            else:
+            ____
                 hashset.discard((rect[0], rect[3]))
-            if (rect[2], rect[3]) not in hashset:
+            __ (rect[2], rect[3]) not in hashset:
                 hashset.add((rect[2], rect[3]))
-            else:
+            ____
                 hashset.discard((rect[2], rect[3]))
-            if (rect[2], rect[1]) not in hashset:
+            __ (rect[2], rect[1]) not in hashset:
                 hashset.add((rect[2], rect[1]))
-            else:
+            ____
                 hashset.discard((rect[2], rect[1]))
         
-        if (x1, y1) not in hashset or\
+        __ (x1, y1) not in hashset or\
             (x1, y2) not in hashset or\
             (x2, y1) not in hashset or\
             (x2, y2) not in hashset or\
-            len(hashset) != 4:
-            return False
+            le.(hashset) != 4:
+            r_ False
         
-        return area == (x2-x1)*(y2-y1)
+        r_ area __ (x2-x1)*(y2-y1)
         
     

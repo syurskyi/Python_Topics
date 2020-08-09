@@ -4,14 +4,14 @@ Created on Mar 21, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def findClosestLeaf(self, root, k):
+class Solution(object
+    ___ findClosestLeaf(self, root, k
         """
         :type root: TreeNode
         :type k: int
@@ -21,37 +21,37 @@ class Solution(object):
         kNode = self.dfs(root, k, backMap)
         queue = [kNode]
         visited = set([kNode])
-        while queue:
+        w___ queue:
             curr = queue.pop(0)
-            if not curr.left and not curr.right:
-                return curr.val
-            if curr.left and curr.left not in visited:
+            __ not curr.left and not curr.right:
+                r_ curr.val
+            __ curr.left and curr.left not in visited:
                 queue.append(curr.left)
                 visited.add(curr.left)
-            if curr.right and curr.right not in visited:
+            __ curr.right and curr.right not in visited:
                 queue.append(curr.right)
                 visited.add(curr.right)
-            if curr in backMap and backMap[curr] not in visited:
+            __ curr in backMap and backMap[curr] not in visited:
                 queue.append(backMap[curr])
                 visited.add(backMap[curr])
-        return -1
+        r_ -1
     
-    def dfs(self, root, k, backMap):
-        if root.val == k:
-            return root
-        if root.left:
+    ___ dfs(self, root, k, backMap
+        __ root.val __ k:
+            r_ root
+        __ root.left:
             backMap[root.left] = root
             left = self.dfs(root.left, k, backMap)
-            if left:
-                return left
-        if root.right:
+            __ left:
+                r_ left
+        __ root.right:
             backMap[root.right] = root
             right = self.dfs(root.right, k, backMap)
-            if right:
-                return right
-        return None
+            __ right:
+                r_ right
+        r_ None
     
-    def test(self):
+    ___ test(self
         testCases = [
             
         ]
@@ -60,5 +60,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

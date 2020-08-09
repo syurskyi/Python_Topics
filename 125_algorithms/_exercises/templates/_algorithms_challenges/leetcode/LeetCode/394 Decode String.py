@@ -18,8 +18,8 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def decodeString(self, s):
+class Solution(object
+    ___ decodeString(self, s
         """
         :type s: str
         :rtype: str
@@ -28,28 +28,28 @@ class Solution(object):
             [1, []]
         ]  # with default
         i = 0
-        while i < len(s):
-            if s[i].isdigit():  # construct number from digit
+        w___ i < le.(s
+            __ s[i].isdigit(  # construct number from digit
                 j = i+1
-                while s[j] != '[': j += 1
+                w___ s[j] != '[': j += 1
                 stk.append([
                     int(s[i:j]), []
                 ])
                 i = j+1
-            elif s[i].islower():  # append alphabet
+            ____ s[i].islower(  # append alphabet
                 stk[-1][1].append(s[i])
                 i += 1
-            elif s[i] == ']':  # pop
+            ____ s[i] __ ']':  # pop
                 cnt, partial = stk.pop()
                 partial = ''.join(partial) * cnt
                 stk[-1][1].append(partial)
                 i += 1
 
-        return ''.join(stk.pop()[1])
+        r_ ''.join(stk.pop()[1])
 
 
-class SolutionVerbose(object):
-    def decodeString(self, s):
+class SolutionVerbose(object
+    ___ decodeString(self, s
         """
         :type s: str
         :rtype: str
@@ -57,35 +57,35 @@ class SolutionVerbose(object):
         stk = []
         i = 0
         ret = []
-        while i < len(s):
-            if s[i].isdigit():  # construct number from digit
+        w___ i < le.(s
+            __ s[i].isdigit(  # construct number from digit
                 j = i+1
-                while s[j] != '[': j += 1
+                w___ s[j] != '[': j += 1
                 stk.append([
                     int(s[i:j]), []
                 ])
                 i = j+1
-            elif s[i].islower():  # append alphabet
-                if not stk:
+            ____ s[i].islower(  # append alphabet
+                __ not stk:
                     ret.append(s[i])
-                else:
+                ____
                     stk[-1][1].append(s[i])
                 i += 1
-            elif s[i] == ']':  # pop
+            ____ s[i] __ ']':  # pop
                 cnt, partial = stk.pop()
                 partial = ''.join(partial) * cnt
-                if not stk:
+                __ not stk:
                    ret.append(partial)
-                else:
+                ____
                     stk[-1][1].append(partial)
 
                 i += 1
 
-        return ''.join(ret)
+        r_ ''.join(ret)
 
 
-class SolutionError(object):
-    def decodeString(self, s):
+class SolutionError(object
+    ___ decodeString(self, s
         """
         :type s: str
         :rtype: str
@@ -93,26 +93,26 @@ class SolutionError(object):
         stk = []
         i = 0
         ret = []
-        while i < len(s):
-            if s[i].isdigit():
+        w___ i < le.(s
+            __ s[i].isdigit(
                 j = i + 1
-                while s[j] != '[': j += 1
-                prev = stk[-1] if stk else 1
+                w___ s[j] != '[': j += 1
+                prev = stk[-1] __ stk else 1
                 stk.append(prev * int(s[i:j]))
                 i = j + 1
-            elif s[i].islower():
-                repeat = stk[-1] if stk else 1
-                for _ in xrange(repeat): ret.append(s[i])
+            ____ s[i].islower(
+                repeat = stk[-1] __ stk else 1
+                for _ in xrange(repeat ret.append(s[i])
                 i += 1
-            elif s[i] == ']':
+            ____ s[i] __ ']':
                 stk.pop()
                 i += 1
 
-        return ''.join(ret)
+        r_ ''.join(ret)
 
 
-if __name__ == "__main__":
-    assert Solution().decodeString('2[abc]3[cd]ef') == 'abcabccdcdcdef'
+__ __name__ __ "__main__":
+    assert Solution().decodeString('2[abc]3[cd]ef') __ 'abcabccdcdcdef'
 
 
 

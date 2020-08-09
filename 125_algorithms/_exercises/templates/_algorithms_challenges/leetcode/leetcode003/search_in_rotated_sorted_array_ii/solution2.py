@@ -12,33 +12,33 @@ Would this affect the run-time complexity? How and why?
 Write a function to determine if a given target is in the array.
 """
 
-class Solution(object):
-    def search(self, nums, target):
+class Solution(object
+    ___ search(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: bool
         """
         left = 0
-        right = len(nums) - 1
-        while left + 1 < right:
+        right = le.(nums) - 1
+        w___ left + 1 < right:
             mid = left + (right - left) / 2
-            if target == nums[mid]:
-                return True
+            __ target __ nums[mid]:
+                r_ True
             # Left part is sorted
-            elif nums[mid] > nums[right]:
-                if nums[left] <= target < nums[mid]:
+            ____ nums[mid] > nums[right]:
+                __ nums[left] <= target < nums[mid]:
                     right = mid
-                else:
+                ____
                     left = mid
             # Right part is sorted
-            elif nums[mid] < nums[right]:
-                if nums[mid] < target <= nums[right]:
+            ____ nums[mid] < nums[right]:
+                __ nums[mid] < target <= nums[right]:
                     left = mid
-                else:
+                ____
                     right = mid
-            else:
+            ____
                 right -= 1
-        if nums[left] == target or nums[right] == target:
-            return True
-        return False
+        __ nums[left] __ target or nums[right] __ target:
+            r_ True
+        r_ False

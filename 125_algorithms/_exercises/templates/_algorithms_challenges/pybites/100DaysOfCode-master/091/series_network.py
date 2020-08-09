@@ -1,15 +1,15 @@
-from __future__ import print_function
+from __future__ ______ print_function
 
-import os
-from pprint import pprint as pp
-import sys
+______ os
+from pprint ______ pprint as pp
+______ sys
 
-from tvdb_client import ApiV2Client
+from tvdb_client ______ ApiV2Client
 
 user = os.environ.get('TVDB_USER')
 api_key = os.environ.get('TVDB_APIKEY')
 acc_ident = os.environ.get('TVDB_IDENT')
-if not user or not api_key or not acc_ident:
+__ not user or not api_key or not acc_ident:
     print('set user, api_key and acc_ident in env')
     sys.exit(1)
 
@@ -18,17 +18,17 @@ if not user or not api_key or not acc_ident:
 api_client = ApiV2Client(user, api_key, acc_ident)
 api_client.login()
 
-if not api_client.is_authenticated:
+__ not api_client.is_authenticated:
     print('not authenticated')
     sys.exit(1)
 
-if len(sys.argv) < 2:
+__ le.(sys.argv) < 2:
     search = raw_input('Search for series: ')
-else:
+____
     search = " ".join(sys.argv[1:])
 
 resp = api_client.search_series(name=search)
-if 'code' in resp and resp['code'] != 200:
+__ 'code' in resp and resp['code'] != 200:
     print('{} response from API'.format(resp['code']))
     sys.exit(1)
 

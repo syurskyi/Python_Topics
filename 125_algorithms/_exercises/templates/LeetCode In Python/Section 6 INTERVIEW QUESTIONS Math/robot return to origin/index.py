@@ -1,16 +1,16 @@
 class Solution:
-    def judgeCircle(self, moves: str) -> bool:
+    ___ judgeCircle(self, moves: str) -> bool:
         
         x = 0
         y = 0
 
         for move in moves:
-            if(move=='U'):
+            __(move__'U'
                 y+=1
-            elif(move=='R'):
+            ____(move__'R'
                 x+=1
-            elif(move=='D'):
+            ____(move__'D'
                 y-=1
-            elif(move=='L'):
+            ____(move__'L'
                 x-=1
-        return x==0 and y==0
+        r_ x__0 and y__0

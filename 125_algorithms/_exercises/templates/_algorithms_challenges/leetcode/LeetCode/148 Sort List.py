@@ -4,37 +4,37 @@ Sort a linked list in O(n log n) time using constant space complexity.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
-    def __repr__(self):
-        return repr(self.val)
+    ___ __repr__(self
+        r_ repr(self.val)
 
 class Solution:
-    def sortList_array(self, head):
+    ___ sortList_array(self, head
         """
         Workaround by sorted()
         :param head: ListNode
         :return: ListNode
         """
-        if head==None:
-            return None
+        __ head__None:
+            r_ None
         lst = [] # must be constant space
         current = head
-        while(current):
+        w___(current
             lst.append(current)
             current = current.next
 
 
         comparator = lambda x, y: cmp(x.val, y.val)
         lst = sorted(lst, comparator)  # return # sorted is not side-effect # O(n log n)
-        for i in range(len(lst)-1):
+        for i in range(le.(lst)-1
             lst[i].next = lst[i+1]
         lst[-1].next = None
-        return lst[0]
+        r_ lst[0]
 
-    def sortList(self, head):
+    ___ sortList(self, head
         """
         Quick sort: not guarantee to be O(n lgn)
         Heap sort: not great as index
@@ -43,15 +43,15 @@ class Solution:
         :param head: ListNode
         :return: ListNode
         """
-        if not head or not head.next:
-            return head
+        __ not head or not head.next:
+            r_ head
 
         dummy = ListNode(0)
         dummy.next = head
 
         slow_pre = dummy
         fast_pre = dummy
-        while fast_pre.next and fast_pre.next.next:
+        w___ fast_pre.next and fast_pre.next.next:
             fast_pre = fast_pre.next.next
             slow_pre = slow_pre.next
 
@@ -68,31 +68,31 @@ class Solution:
         dummy_mid.next = mid_head
         pre = dummy
         pre_mid = dummy_mid
-        while pre.next and pre_mid.next:
-            if pre.next.val > pre_mid.next.val:
+        w___ pre.next and pre_mid.next:
+            __ pre.next.val > pre_mid.next.val:
                 pre.next, pre_mid.next.next, pre_mid.next = pre_mid.next, pre.next, pre_mid.next.next
                 pre = pre.next
-            else:
+            ____
                 pre = pre.next
 
         # dangling
-        if  pre_mid.next:
+        __  pre_mid.next:
             pre.next = pre_mid.next
 
-        return dummy.next
+        r_ dummy.next
 
 
 
 
-if __name__=="__main__":
+__ __name____"__main__":
     length = 5
     lst = [ListNode(length-i) for i in range(length)]
-    for i in range(length-1):
+    for i in range(length-1
         lst[i].next = lst[i+1]
 
     head = Solution().sortList(lst[0])
 
     cur = head
-    while(cur):
+    w___(cur
         print cur.val
         cur = cur.next

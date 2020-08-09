@@ -1,9 +1,9 @@
-def maxSum(arr, windowSize):
-    arraySize = len(arr)
+___ maxSum(arr, windowSize
+    arraySize = le.(arr)
     # n must be greater than k
-    if arraySize <= windowSize:
+    __ arraySize <= windowSize:
         print("Invalid operation")
-        return -1
+        r_ -1
 
     # Compute sum of first window of size k
     window_sum = sum([arr[i] for i in range(windowSize)])
@@ -12,11 +12,11 @@ def maxSum(arr, windowSize):
     # removing first element of previous
     # window and adding last element of
     # current window.
-    for i in range(arraySize-windowSize):
+    for i in range(arraySize-windowSize
         window_sum = window_sum - arr[i] + arr[i + windowSize]
         max_sum = max(window_sum, max_sum)
 
-    return max_sum
+    r_ max_sum
 
 
 arr = [1, 2, 100, -1, 5]

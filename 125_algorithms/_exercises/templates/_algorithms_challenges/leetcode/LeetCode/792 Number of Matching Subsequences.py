@@ -17,12 +17,12 @@ The length of S will be in the range of [1, 50000].
 The length of words will be in the range of [1, 5000].
 The length of words[i] will be in the range of [1, 50].
 """
-from typing import List
-from collections import defaultdict
+from typing ______ List
+from collections ______ defaultdict
 
 
 class Solution:
-    def numMatchingSubseq(self, S: str, words: List[str]) -> int:
+    ___ numMatchingSubseq(self, S: str, words: List[str]) -> int:
         """
         Linear O(|S| + sum(|word|))
         no need to if-check
@@ -40,9 +40,9 @@ class Solution:
                 v = next(itr, None)
                 itrs_m[v].append(itr)
 
-        return len(itrs_m[None])
+        r_ le.(itrs_m[None])
 
-    def numMatchingSubseq_TLE(self, S: str, words: List[str]) -> int:
+    ___ numMatchingSubseq_TLE(self, S: str, words: List[str]) -> int:
         """
         Brute force O(|S| |Words| M)
 
@@ -54,16 +54,16 @@ class Solution:
         """
         I = [0 for _ in words]
         for a in S:
-            for wi, i in enumerate(I):
-                if i < len(words[wi]) and words[wi][i] == a:
+            for wi, i in enumerate(I
+                __ i < le.(words[wi]) and words[wi][i] __ a:
                     I[wi] += 1
 
-        return sum(
+        r_ sum(
             1
             for wi, i in enumerate(I)
-            if i == len(words[wi])
+            __ i __ le.(words[wi])
         )
 
 
-if __name__ == "__main__":
-    assert Solution().numMatchingSubseq("abcde", ["a", "bb", "acd", "ace"]) == 3
+__ __name__ __ "__main__":
+    assert Solution().numMatchingSubseq("abcde", ["a", "bb", "acd", "ace"]) __ 3

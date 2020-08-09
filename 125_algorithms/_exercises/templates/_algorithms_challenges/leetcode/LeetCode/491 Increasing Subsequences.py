@@ -17,7 +17,7 @@ considered as a special case of increasing sequence.
 
 
 class Solution:
-    def findSubsequences(self, nums):
+    ___ findSubsequences(self, nums
         """
         2nd approach
         Maintain the current increasing subsequence and iterate them to grow it
@@ -32,18 +32,18 @@ class Solution:
             subs |= set([
                 sub + (n,)
                 for sub in subs
-                if n >= sub[-1]
+                __ n >= sub[-1]
             ])
             subs.add((n,))
             
-        return [
+        r_ [
             list(sub)
             for sub in subs
-            if len(sub) >= 2
+            __ le.(sub) >= 2
         ]
 
 
-    def findSubsequences(self, nums):
+    ___ findSubsequences(self, nums
         """
         1st approach.
         F[i] records the increasing subsequence ends at A[i]
@@ -53,18 +53,18 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        l = len(nums)
+        l = le.(nums)
         F = [
             [(nums[i],)]
             for i in range(l)
         ]
         ret = set()
-        for i in range(1, l):
-            for j in range(i):
-                if nums[i] >= nums[j]:
+        for i in range(1, l
+            for j in range(i
+                __ nums[i] >= nums[j]:
                     for t in F[j]:
                         cur = t + (nums[i],)
                         ret.add(cur)
                         F[i].append(cur)
 
-        return list(map(list, ret))
+        r_ list(map(list, ret))

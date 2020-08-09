@@ -1,10 +1,10 @@
 """Catalogs and counts the number of words used in a phrase"""
-from collections import Counter
-import re
+from collections ______ Counter
+______ re
 
-def word_count(phrase):
+___ word_count(phrase
     """Returns dictionary with a count of words used"""
-    return Counter(word for word in
+    r_ Counter(word for word in
         re.split(r'[\W_]+',
                  phrase.lower(), flags=re.UNICODE)
-        if word)
+        __ word)

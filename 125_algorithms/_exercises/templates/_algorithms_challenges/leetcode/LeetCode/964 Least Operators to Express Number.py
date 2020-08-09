@@ -40,11 +40,11 @@ Note:
 2 <= x <= 100
 1 <= target <= 2 * 10^8
 """
-from functools import lru_cache
+from functools ______ lru_cache
 
 
 class Solution:
-    def leastOpsExpressTarget(self, x: int, target: int) -> int:
+    ___ leastOpsExpressTarget(self, x: int, target: int) -> int:
         """
         x/x is 1
         x * x is power 2
@@ -53,29 +53,29 @@ class Solution:
 
         To make target divisible, it can be target - a0 or target + (x^1 - a0)
         """
-        return self.dfs(target, x, 0) - 1
+        r_ self.dfs(target, x, 0) - 1
 
     @lru_cache(maxsize=None)
-    def dfs(self, target, x, power):
+    ___ dfs(self, target, x, power
         """
         power: power, pow(x, power)
         """
-        if target == 0:
-            return 0
+        __ target __ 0:
+            r_ 0
 
-        if target == 1:
-            return self.ops(power)
+        __ target __ 1:
+            r_ self.ops(power)
 
         d, r = target // x, target % x
         ret = r * self.ops(power) + self.dfs(d, x, power + 1)
         # either -r or +(x-r)
-        if r != 0:
+        __ r != 0:
             ret2 = (x - r) * self.ops(power) + self.dfs(d + 1, x, power + 1)
             ret = min(ret, ret2)
 
-        return ret
+        r_ ret
 
-    def ops(self, power):
+    ___ ops(self, power
         """
         number of ops required
 
@@ -84,13 +84,13 @@ class Solution:
         + x * x
         + x * x * x
         """
-        if power == 0:
-            return 2
-        else:
-            return power
+        __ power __ 0:
+            r_ 2
+        ____
+            r_ power
 
 
-if __name__ == "__main__":
-    assert Solution().leastOpsExpressTarget(3, 19) == 5
-    assert Solution().leastOpsExpressTarget(5, 501) == 8
-    assert Solution().leastOpsExpressTarget(2, 125046) == 50
+__ __name__ __ "__main__":
+    assert Solution().leastOpsExpressTarget(3, 19) __ 5
+    assert Solution().leastOpsExpressTarget(5, 501) __ 8
+    assert Solution().leastOpsExpressTarget(2, 125046) __ 50

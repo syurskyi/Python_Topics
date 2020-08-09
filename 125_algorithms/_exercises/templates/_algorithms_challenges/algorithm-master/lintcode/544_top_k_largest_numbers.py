@@ -1,4 +1,4 @@
-from heapq import heappush, heappop
+from heapq ______ heappush, heappop
 
 
 class Solution:
@@ -7,20 +7,20 @@ class Solution:
     @param: k: An integer
     @return: the top k largest numbers in array
     """
-    def topk(self, nums, k):
+    ___ topk(self, nums, k
         """
         min heap (normal case in heapq, max heap needs to times -1)
         """
-        if not nums:
-            return
+        __ not nums:
+            r_
 
         ans = []
         for num in nums:
             heappush(ans, num)
 
-            if len(ans) > k:
+            __ le.(ans) > k:
                 heappop(ans)
 
         ans.sort(reverse=True)
 
-        return ans
+        r_ ans

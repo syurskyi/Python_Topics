@@ -1,9 +1,9 @@
-def repeat(item, times):
-    if times == 0:
-        return []
+___ repeat(item, times
+    __ times __ 0:
+        r_ []
     index = 1
     output = []
-    while index <= times:
+    w___ index <= times:
         output.append(item)
         index += 1
-    return output
+    r_ output

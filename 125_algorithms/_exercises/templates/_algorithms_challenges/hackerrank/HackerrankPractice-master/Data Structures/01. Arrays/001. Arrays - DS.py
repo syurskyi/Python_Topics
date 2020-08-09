@@ -2,9 +2,9 @@
 # Score: 10
 
 
-def reverseArray(arr):
+___ reverseArray(arr
     result = arr[::-1]
-    return result
+    r_ result
 
 
 arrСount = int(input())

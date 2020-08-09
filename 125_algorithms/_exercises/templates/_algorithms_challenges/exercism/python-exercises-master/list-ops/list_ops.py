@@ -1,34 +1,34 @@
-def map_clone():
+___ map_clone(
     pass
 
 
-def length():
+___ length(
     pass
 
 
-def filter_clone():
+___ filter_clone(
     pass
 
 
-def reverse():
+___ reverse(
     pass
 
 
-def append():
+___ append(
     pass
 
 
-def foldl():
+___ foldl(
     pass
 
 
-def foldr():
+___ foldr(
     pass
 
 
-def flat():
+___ flat(
     pass
 
 
-def concat():
+___ concat(
     pass

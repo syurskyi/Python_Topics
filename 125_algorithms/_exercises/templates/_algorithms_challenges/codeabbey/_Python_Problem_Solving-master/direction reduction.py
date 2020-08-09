@@ -4,20 +4,20 @@ direction = list(map(str, input().split()))
 direction = [x.upper() for x in direction]
 
 #defining the definition of the direction reduction
-def dirReduc(dir = []):
+___ dirReduc(dir = []
     #traversing through all the elements of the list
-    for j in range(len(dir)):
+    for j in range(le.(dir)):
         #traversing through all the elements except the last one
-        for i in range(0,len(dir)-1):
-            if dir[i] == 'NORTH' and dir[i+1] == 'SOUTH' or dir[i] == 'SOUTH' and dir[i+1] == 'NORTH':
+        for i in range(0,le.(dir)-1
+            __ dir[i] __ 'NORTH' and dir[i+1] __ 'SOUTH' or dir[i] __ 'SOUTH' and dir[i+1] __ 'NORTH':
                 dir.pop(i)
                 dir.pop(i)  
                 break
-            elif dir[i] == 'WEST' and dir[i+1] == 'EAST' or dir[i] == 'EAST' and dir[i+1] == 'WEST':
+            ____ dir[i] __ 'WEST' and dir[i+1] __ 'EAST' or dir[i] __ 'EAST' and dir[i+1] __ 'WEST':
                 dir.pop(i)
                 dir.pop(i)
                 break
-            else:
+            ____
                 pass
     #print the result of the direction reduction
     print(dir)

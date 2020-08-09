@@ -14,22 +14,22 @@ sum(P) - sum(N) = target
 
 
 class Solution:
-    def findTargetSumWays(self, A, target):
+    ___ findTargetSumWays(self, A, target
         """
         :type A: List[int]
         :type target: int
         :rtype: int
         """
-        if not A:
-            return 0
+        __ not A:
+            r_ 0
 
         _sum = sum(A)
-        if _sum < target or (_sum + target) % 2 == 1:
-            return 0
+        __ _sum < target or (_sum + target) % 2 __ 1:
+            r_ 0
 
-        return self.subset_sum(A, (_sum + target) // 2)
+        r_ self.subset_sum(A, (_sum + target) // 2)
 
-    def subset_sum(self, A, target):
+    ___ subset_sum(self, A, target
         """
         `dp[i]` means the number of ways
         to make sum `i` using non-repeated children in `A`
@@ -40,7 +40,7 @@ class Solution:
         dp[0] = 1
 
         for a in A:
-            for i in range(target, a - 1, -1):
+            for i in range(target, a - 1, -1
                 dp[i] += dp[i - a]
 
-        return dp[target]
+        r_ dp[target]

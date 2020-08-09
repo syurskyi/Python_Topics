@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def rob(self, nums):
+    ___ rob(self, nums
         """
         DP
         O(n)
@@ -23,15 +23,15 @@ class Solution:
         F_i = max(F_{i-2-k}+A[i] for k \in [0, i-2]),
         Then time complexity is quadratic
         """
-        n = len(nums)
+        n = le.(nums)
         f = [0 for _ in xrange(n+2)]
-        for i in xrange(2, n+2):
+        for i in xrange(2, n+2
             f[i] = max(
                 f[i-1],
                 f[i-2] + nums[i-2]
             )
 
-        return f[-1]
+        r_ f[-1]
 
 
 

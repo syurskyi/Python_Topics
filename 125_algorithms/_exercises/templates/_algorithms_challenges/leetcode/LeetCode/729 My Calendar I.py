@@ -38,7 +38,7 @@ In calls to MyCalendar.book(start, end), start and end are integers in the range
 
 
 class Node:
-    def __init__(self, s, e):
+    ___ __init__(self, s, e
         self.s = s
         self.e = e
         self.left = None
@@ -46,7 +46,7 @@ class Node:
 
 
 class MyCalendar:
-    def __init__(self):
+    ___ __init__(self
         """
         binary search
         disregard
@@ -62,32 +62,32 @@ class MyCalendar:
         """
         self.root = None
 
-    def insert(self, node: Node, s: int, e: int) -> Node:
-        if not node:
-            return Node(s, e)
+    ___ insert(self, node: Node, s: int, e: int) -> Node:
+        __ not node:
+            r_ Node(s, e)
 
-        if e <= node.s:
+        __ e <= node.s:
             left = self.insert(node.left, s, e)
-            if left is None:
-                return None
+            __ left is None:
+                r_ None
             node.left = left
-            return node
-        elif s >= node.e:
+            r_ node
+        ____ s >= node.e:
             right = self.insert(node.right, s, e)
-            if right is None:
-                return None
+            __ right is None:
+                r_ None
             node.right = right
-            return node
-        else:
-            return None
+            r_ node
+        ____
+            r_ None
 
-    def book(self, start: int, end: int) -> bool:
+    ___ book(self, start: int, end: int) -> bool:
         ret = self.insert(self.root, start, end)
-        if ret is None:
-            return False
+        __ ret is None:
+            r_ False
 
         self.root = ret
-        return True
+        r_ True
 
 
 # Your MyCalendar object will be instantiated and called as such:

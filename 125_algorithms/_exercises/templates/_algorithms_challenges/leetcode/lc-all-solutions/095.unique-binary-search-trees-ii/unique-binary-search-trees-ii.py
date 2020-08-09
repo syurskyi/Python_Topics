@@ -1,30 +1,30 @@
-class Solution(object):
-  def generateTrees(self, n):
+class Solution(object
+  ___ generateTrees(self, n
     """
     :type n: int
     :rtype: List[TreeNode]
     """
 
-    def clone(root, offset):
-      if root:
+    ___ clone(root, offset
+      __ root:
         newRoot = TreeNode(root.val + offset)
         left = clone(root.left, offset)
         right = clone(root.right, offset)
         newRoot.left = left
         newRoot.right = right
-        return newRoot
+        r_ newRoot
 
-    if not n:
-      return []
+    __ not n:
+      r_ []
     dp = [[]] * (n + 1)
     dp[0] = [None]
-    for i in range(1, n + 1):
+    for i in range(1, n + 1
       dp[i] = []
-      for j in range(1, i + 1):
+      for j in range(1, i + 1
         for left in dp[j - 1]:
           for right in dp[i - j]:
             root = TreeNode(j)
             root.left = left
             root.right = clone(right, j)
             dp[i].append(root)
-    return dp[-1]
+    r_ dp[-1]

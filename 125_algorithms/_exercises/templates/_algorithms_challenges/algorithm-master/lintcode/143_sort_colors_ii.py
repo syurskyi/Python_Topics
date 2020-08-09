@@ -8,28 +8,28 @@ class Solution:
     @param: k: An integer
     @return: nothing
     """
-    def sortColors2(self, colors, k):
-        if not colors or not k:
-            return
-        self.rainbow_sort(colors, 0, len(colors) - 1, 1, k)
+    ___ sortColors2(self, colors, k
+        __ not colors or not k:
+            r_
+        self.rainbow_sort(colors, 0, le.(colors) - 1, 1, k)
 
-    def rainbow_sort(self, colors, start, end, color_from, color_to):
+    ___ rainbow_sort(self, colors, start, end, color_from, color_to
         """
         like quick sort
         """
-        if color_from >= color_to:
-            return
-        if start >= end:
-            return
+        __ color_from >= color_to:
+            r_
+        __ start >= end:
+            r_
 
         left, right = start, end
         color_mid = (color_from + color_to) // 2
-        while left <= right:
-            while left <= right and colors[left] <= color_mid:
+        w___ left <= right:
+            w___ left <= right and colors[left] <= color_mid:
                 left += 1
-            while left <= right and colors[right] > color_mid:
+            w___ left <= right and colors[right] > color_mid:
                 right -= 1
-            if left <= right:
+            __ left <= right:
                 colors[left], colors[right] = colors[right], colors[left]
                 left += 1
                 right -= 1
@@ -49,7 +49,7 @@ class Solution:
     @param: k: An integer
     @return: nothing
     """
-    def sortColors2(self, colors, k):
+    ___ sortColors2(self, colors, k
         """
         1. ensure the `min_color` in the `left_scope`,
            and the `max_color` in the `right_scope`
@@ -58,29 +58,29 @@ class Solution:
            pick min/max color to the left/right scope
         """
         count = 0
-        n = len(colors)
+        n = le.(colors)
         left, right = 0, n - 1
         i = _min = _max = 0
 
-        while count < k:
+        w___ count < k:
             _min = _max = colors[left]
-            for i in range(left + 1, right + 1):
-                if colors[i] < _min:
+            for i in range(left + 1, right + 1
+                __ colors[i] < _min:
                     _min = colors[i]
-                if colors[i] > _max:
+                __ colors[i] > _max:
                     _max = colors[i]
 
             i = left
-            while i <= right:
-                if colors[i] == _min:
+            w___ i <= right:
+                __ colors[i] __ _min:
                     colors[left], colors[i] = colors[i], colors[left]
                     left += 1
                     i += 1
-                elif _min < colors[i] < _max:
+                ____ _min < colors[i] < _max:
                     # leave it to
-                    # the next iteration of `while count < k` to sort
+                    # the next iteration of `w___ count < k` to sort
                     i += 1
-                else:
+                ____
                     colors[i], colors[right] = colors[right], colors[i]
                     right -= 1
 

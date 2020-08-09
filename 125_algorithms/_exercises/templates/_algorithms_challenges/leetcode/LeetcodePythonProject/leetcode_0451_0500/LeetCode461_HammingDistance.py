@@ -4,14 +4,14 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def hammingDistance(self, x, y):
+class Solution(object
+    ___ hammingDistance(self, x, y
         count = 0
-        for i in range(32):
+        for i in range(32
             count += (x>>i&1)^(y>>i&1)
-        return count
+        r_ count
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 4],
         ]
@@ -22,5 +22,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

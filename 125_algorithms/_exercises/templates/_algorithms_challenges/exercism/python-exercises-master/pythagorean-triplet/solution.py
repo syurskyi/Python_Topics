@@ -1,38 +1,38 @@
-from itertools import product
-from functools import reduce
-from operator import mul
-from math import sqrt
+from itertools ______ product
+from functools ______ reduce
+from operator ______ mul
+from ma__ ______ sqrt
 
 
-def primitive_triplets(nbr):
-    if nbr % 4 != 0:
+___ primitive_triplets(nbr
+    __ nbr % 4 != 0:
         raise ValueError('Argument must be divisible by 4')
     prime_factors, powers = factor(nbr / 2)
-    args = [(1, prime_factors[i1] ** powers[i1]) for i1 in range(len(powers))]
+    args = [(1, prime_factors[i1] ** powers[i1]) for i1 in range(le.(powers))]
     a = [reduce(mul, p) for p in product(*args)]
     a.sort()
-    factors = [(m, n) for m, n in zip(reversed(a), a) if m > n]
+    factors = [(m, n) for m, n in zip(reversed(a), a) __ m > n]
     ts = set()
     for m, n in factors:
         ts.update([tuple(sorted([nbr, m * m - n * n, m * m + n * n]))])
-    return ts
+    r_ ts
 
 
-def is_triplet(t):
+___ is_triplet(t
     t = list(t)
     t.sort()
     a, b, c = t
-    return c * c == a * a + b * b
+    r_ c * c __ a * a + b * b
 
 
-def triplets_in_range(m, n):
+___ triplets_in_range(m, n
     t = set()
-    for a in range(m, n + 1):
-        for b in range(a + 1, n + 1):
+    for a in range(m, n + 1
+        for b in range(a + 1, n + 1
             c = int(sqrt(a * a + b * b) + 0.5)
-            if c * c == a * a + b * b and c >= m and c <= n:
+            __ c * c __ a * a + b * b and c >= m and c <= n:
                 t.update([(a, b, c)])
-    return t
+    r_ t
 
 
 primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
@@ -49,22 +49,22 @@ primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
           941, 947, 953, 967, 971, 977, 983, 991, 997]
 
 
-def factor(n):
+___ factor(n
     global primes
-    if n == 1:
-        return (1,), (0,)
+    __ n __ 1:
+        r_ (1,), (0,)
     factors = []
     powers = []
     idx = 0
-    while n > 1:
+    w___ n > 1:
         prime = primes[idx]
         idx += 1
-        if n % prime != 0:
+        __ n % prime != 0:
             continue
         factors.append(prime)
         p = 0
-        while n % prime == 0:
+        w___ n % prime __ 0:
             p += 1
             n /= prime
         powers.append(p)
-    return factors, powers
+    r_ factors, powers

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestKnapsack(object):
+class TestKnapsack(object
 
-    def test_knapsack_bottom_up(self):
+    ___ test_knapsack_bottom_up(self
         knapsack = Knapsack()
         assert_raises(TypeError, knapsack.fill_knapsack, None, None)
         assert_equal(knapsack.fill_knapsack(0, 0), 0)
@@ -23,7 +23,7 @@ class TestKnapsack(object):
         assert_equal(total_value, expected_value)
         print('Success: test_knapsack_bottom_up')
 
-    def test_knapsack_top_down(self):
+    ___ test_knapsack_top_down(self
         knapsack = KnapsackTopDown()
         assert_raises(TypeError, knapsack.fill_knapsack, None, None)
         assert_equal(knapsack.fill_knapsack(0, 0), 0)
@@ -37,11 +37,11 @@ class TestKnapsack(object):
         assert_equal(knapsack.fill_knapsack(items, total_weight), expected_value)
         print('Success: test_knapsack_top_down')
 
-def main():
+___ main(
     test = TestKnapsack()
     test.test_knapsack_bottom_up()
     test.test_knapsack_top_down()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

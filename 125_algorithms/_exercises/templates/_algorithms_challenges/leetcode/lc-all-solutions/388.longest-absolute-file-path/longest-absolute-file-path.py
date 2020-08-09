@@ -1,5 +1,5 @@
-class Solution(object):
-  def lengthLongestPath(self, input):
+class Solution(object
+  ___ lengthLongestPath(self, input
     """
     :type input: str
     :rtype: int
@@ -12,42 +12,42 @@ class Solution(object):
     start = 0
     level = 0
 
-    for i in range(0, len(input)):
+    for i in range(0, le.(input)):
       chr = input[i]
-      if chr == '\n':
-        curLen = 0 if len(stack) == 0 else stack[-1][1]
-        if state == dfa["char"]:
+      __ chr __ '\n':
+        curLen = 0 __ le.(stack) __ 0 else stack[-1][1]
+        __ state __ dfa["char"]:
           curLen += i - start
           stack.append((input[start:i], curLen + 1, level))
-        elif state == dfa["file"]:
+        ____ state __ dfa["file"]:
           maxLen = max(maxLen, curLen + (i - start))
-        else:
-          return -1
+        ____
+          r_ -1
         state = dfa["escapeCMD"]
         level = 0
-      elif chr == '\t':
-        if state == dfa["escapeCMD"]:
+      ____ chr __ '\t':
+        __ state __ dfa["escapeCMD"]:
           level += 1
-        else:
-          return "TAB cannot be here"
-      elif chr == '.':
-        if state == dfa["char"] or state == dfa["file"] or state == dfa["escapeCMD"]:
+        ____
+          r_ "TAB cannot be here"
+      ____ chr __ '.':
+        __ state __ dfa["char"] or state __ dfa["file"] or state __ dfa["escapeCMD"]:
           state = dfa["file"]
-        else:
-          return "unexpected char before dot", state
-      else:
-        if state == dfa["escapeCMD"]:
-          while stack and stack[-1][2] >= level:
+        ____
+          r_ "unexpected char before dot", state
+      ____
+        __ state __ dfa["escapeCMD"]:
+          w___ stack and stack[-1][2] >= level:
             stack.pop()
           start = i
           state = dfa["char"]
-        elif state == dfa["init"]:
+        ____ state __ dfa["init"]:
           state = dfa["char"]
-        elif i == len(input) - 1:
-          curLen = 0 if len(stack) == 0 else stack[-1][1]
+        ____ i __ le.(input) - 1:
+          curLen = 0 __ le.(stack) __ 0 else stack[-1][1]
           maxLen = max(maxLen, curLen + (i - start) + 1)
 
       # print 'state:', state
       # print 'stack:', stack
       # print 'level', level 
-    return maxLen
+    r_ maxLen

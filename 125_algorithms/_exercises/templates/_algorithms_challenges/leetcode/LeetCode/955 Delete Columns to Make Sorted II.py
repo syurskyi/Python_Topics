@@ -46,11 +46,11 @@ Note:
 1 <= A.length <= 100
 1 <= A[i].length <= 100
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def minDeletionSize(self, A: List[str]) -> int:
+    ___ minDeletionSize(self, A: List[str]) -> int:
         """
         Greedily delete
         Scannign from left to right
@@ -59,19 +59,19 @@ class Solution:
 
         handle equal case [aa, ab, aa]
         """
-        m, n = len(A), len(A[0])
+        m, n = le.(A), le.(A[0])
         lt = [False for i in range(m)]
         deleted = 0
-        for j in range(n):
-            for i in range(m-1):
-                if lt[i]:
+        for j in range(n
+            for i in range(m-1
+                __ lt[i]:
                     continue
-                if A[i][j] > A[i+1][j]:
+                __ A[i][j] > A[i+1][j]:
                     deleted += 1
                     break
-            else:  # not deleted
+            ____  # not deleted
                 # handle equal case
-                for i in range(m-1):
+                for i in range(m-1
                     lt[i] = lt[i] or A[i][j] < A[i+1][j]
 
-        return deleted
+        r_ deleted

@@ -3,31 +3,31 @@ Created on May 5, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def isMatch(self, s, p):
+class Solution(object
+    ___ isMatch(self, s, p
         """
         :type s: str
         :type p: str
         :rtype: bool
         """
-        m, n = len(s), len(p)
+        m, n = le.(s), le.(p)
         dp = [[False]*(n+1) for _ in range(m+1)]
         dp[0][0] = True
-        for j in range(n):
-            if p[j] == '*' and dp[0][j-1]:
+        for j in range(n
+            __ p[j] __ '*' and dp[0][j-1]:
                 dp[0][j+1] = True
-        for i in range(m):
-            for j in range(n):
-                if s[i] == p[j] or p[j] == '.':
+        for i in range(m
+            for j in range(n
+                __ s[i] __ p[j] or p[j] __ '.':
                     dp[i+1][j+1] = dp[i][j]
-                elif p[j] == '*':
-                    if p[j-1] == '.' or s[i] == p[j-1]:
+                ____ p[j] __ '*':
+                    __ p[j-1] __ '.' or s[i] __ p[j-1]:
                         dp[i+1][j+1] = dp[i][j+1] or dp[i+1][j-1]
-                    else:
+                    ____
                         dp[i+1][j+1] = dp[i+1][j-1]
-        return dp[-1][-1]
+        r_ dp[-1][-1]
     
-    def test(self):
+    ___ test(self
         testCases = [
             ['aa', 'a'],
             ['aa', 'a*'],
@@ -42,5 +42,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -4,16 +4,16 @@ Created on Sep 5, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def isValid(self, code):
+class Solution(object
+    ___ isValid(self, code
         """
         :type code: str
         :rtype: bool
         """
-        import re
+        ______ re
         code = re.sub(r'<!\[CDATA\[.*?\]\]>|t', '-', code)
         prev = None
-        while code != prev:
+        w___ code != prev:
             prev = code
             code = re.sub(r'<([A-Z]{1,9})>[^<]*</\1>', 't', code)
-        return code == 't'
+        r_ code __ 't'

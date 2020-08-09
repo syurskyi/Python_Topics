@@ -4,44 +4,44 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class TrieNode(object):
-    def __init__(self, s = None):
+class TrieNode(object
+    ___ __init__(self, s = None
         self.c = s
         self.children = {}
         self.isLeaf = False
 
-class Trie(object):
-    def __init__(self):
+class Trie(object
+    ___ __init__(self
         self.root = TrieNode()
     
-    def insert(self, word):
+    ___ insert(self, word
         children = self.root.children
-        for i, c in enumerate(word):
-            if c in children:
+        for i, c in enumerate(word
+            __ c in children:
                 t = children[c]
-            else:
+            ____
                 t = TrieNode(c)
                 children[c] = t
             children = t.children
-            if i == len(word)-1:
+            __ i __ le.(word)-1:
                 t.isLeaf = True
     
-    def searchNode(self, word):
+    ___ searchNode(self, word
         children = self.root.children
         for c in word:
-            if c in children:
+            __ c in children:
                 t = children[c]
                 children = t.children
-            else:
-                return None
-        return t
+            ____
+                r_ None
+        r_ t
     
-    def search(self, word):
+    ___ search(self, word
         t = self.searchNode(word)
-        return bool(t and t.isLeaf)
+        r_ bool(t and t.isLeaf)
     
-    def startsWith(self, prefix):
+    ___ startsWith(self, prefix
         t = self.searchNode(prefix)
-        return bool(t is not None)
+        r_ bool(t is not None)
     
     

@@ -1,32 +1,32 @@
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
+# class ListNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def sortedListToBST(self, head):
+class Solution(object
+  ___ sortedListToBST(self, head
     """
     :type head: ListNode
     :rtype: TreeNode
     """
-    if head:
+    __ head:
       pre = None
       slow = fast = head
-      while fast and fast.next:
+      w___ fast and fast.next:
         pre = slow
         slow = slow.next
         fast = fast.next.next
       root = TreeNode(slow.val)
-      if pre:
+      __ pre:
         pre.next = None
         root.left = self.sortedListToBST(head)
       root.right = self.sortedListToBST(slow.next)
-      return root
+      r_ root

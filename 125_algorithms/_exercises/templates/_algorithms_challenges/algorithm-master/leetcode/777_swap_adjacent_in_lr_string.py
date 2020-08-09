@@ -1,35 +1,35 @@
 class Solution:
-    def canTransform(self, start, end):
+    ___ canTransform(self, start, end
         """
         :type start: str
         :type end: str
         :rtype: bool
         """
-        if len(start) != len(end):
-            return False
+        __ le.(start) != le.(end
+            r_ False
 
-        m, n = len(start), len(end)
+        m, n = le.(start), le.(end)
         i = j = 0
 
-        while i < m and j < n:
-            while i < m and start[i] == 'X':
+        w___ i < m and j < n:
+            w___ i < m and start[i] __ 'X':
                 i += 1
-            while j < n and end[j] == 'X':
+            w___ j < n and end[j] __ 'X':
                 j += 1
 
-            if i == m and j == n:
-                return True
-            if i == m or j == n:
-                return False
+            __ i __ m and j __ n:
+                r_ True
+            __ i __ m or j __ n:
+                r_ False
 
-            if start[i] != end[j]:
-                return False
-            if start[i] == 'L' and j > i:
-                return False
-            if start[i] == 'R' and i > j:
-                return False
+            __ start[i] != end[j]:
+                r_ False
+            __ start[i] __ 'L' and j > i:
+                r_ False
+            __ start[i] __ 'R' and i > j:
+                r_ False
 
             i += 1
             j += 1
 
-        return True
+        r_ True

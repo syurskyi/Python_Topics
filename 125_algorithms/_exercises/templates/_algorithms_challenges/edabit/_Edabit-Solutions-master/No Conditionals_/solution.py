@@ -1,5 +1,5 @@
-def flip(y):
-    if y == 0:
-        return 1
-    else:
-        return 0
+___ flip(y
+    __ y __ 0:
+        r_ 1
+    ____
+        r_ 0

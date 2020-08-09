@@ -17,30 +17,30 @@ Note:
 Your solution should be in logarithmic complexity.
 """
 
-class Solution(object):
-    def findPeakElement(self, nums):
+class Solution(object
+    ___ findPeakElement(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         left = 0
         right = n - 1
-        if n == 1:
-            return 0
-        while left <= right:
+        __ n __ 1:
+            r_ 0
+        w___ left <= right:
             mid = left + (right - left) / 2
-            if mid == 0 and nums[mid] > nums[mid + 1]:
-                return mid
-            elif mid == n - 1 and nums[mid] > nums[mid - 1]:
-                return mid
-            elif nums[mid - 1] < nums[mid] > nums[mid + 1]:
-                return mid
-            elif mid > 0 and nums[mid - 1] > nums[mid]:
+            __ mid __ 0 and nums[mid] > nums[mid + 1]:
+                r_ mid
+            ____ mid __ n - 1 and nums[mid] > nums[mid - 1]:
+                r_ mid
+            ____ nums[mid - 1] < nums[mid] > nums[mid + 1]:
+                r_ mid
+            ____ mid > 0 and nums[mid - 1] > nums[mid]:
                 right = mid - 1
-            else:
+            ____
                 left = mid + 1
-        return mid
+        r_ mid
 
 a1 = [1, 2]
 a2 = [1, 2, 1]

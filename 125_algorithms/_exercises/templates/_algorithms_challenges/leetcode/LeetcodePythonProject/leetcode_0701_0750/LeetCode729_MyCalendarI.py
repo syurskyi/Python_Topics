@@ -3,35 +3,35 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-class Interval(object):
-    def __init__(self, start, end):
+class Interval(object
+    ___ __init__(self, start, end
         self.start = start
         self.end = end
 
-class MyCalendar(object):
+class MyCalendar(object
 
-    def __init__(self):
+    ___ __init__(self
         self.intervals = []
 
-    def book(self, start, end):
+    ___ book(self, start, end
         """
         :type start: int
         :type end: int
         :rtype: bool
         """
         newInterval = Interval(start, end)
-        for i, interval in enumerate(self.intervals):
-            if newInterval.end <= interval.start:
+        for i, interval in enumerate(self.intervals
+            __ newInterval.end <= interval.start:
                 self.intervals.insert(i, newInterval)
-                return True
-            elif newInterval.start >= interval.end:
+                r_ True
+            ____ newInterval.start >= interval.end:
                 continue
-            else:
-                return False
+            ____
+                r_ False
         self.intervals.append(newInterval)
-        return True
+        r_ True
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     cal = MyCalendar()
     print(cal.book(10, 20))
     print(cal.book(15, 25))

@@ -15,10 +15,10 @@ NUMERAL_MAPPINGS = (
 )
 
 
-def numeral(number):
+___ numeral(number
     s = ''
     for arabic, roman in NUMERAL_MAPPINGS:
-        while number >= arabic:
+        w___ number >= arabic:
             s += roman
             number -= arabic
-    return s
+    r_ s

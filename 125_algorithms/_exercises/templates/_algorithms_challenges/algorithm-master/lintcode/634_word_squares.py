@@ -8,40 +8,40 @@ Trie + DFS
 TLE: DFS
 """
 class Solution:
-    def wordSquares(self, words):
+    ___ wordSquares(self, words
         """
         :type words: list[str]
         :rtype: list[list[str]]
         """
         ans = []
-        if not words:
-            return ans
+        __ not words:
+            r_ ans
 
-        self.dfs(words, len(words[0]), ans, [])
+        self.dfs(words, le.(words[0]), ans, [])
 
-        return ans
+        r_ ans
 
-    def dfs(self, words, n, ans, path):
-        if (len(path) == n and
+    ___ dfs(self, words, n, ans, path
+        __ (le.(path) __ n and
             self.is_valid(path)):
             ans.append(path[:])
-            return
+            r_
 
-        if len(path) >= n:
-            return
+        __ le.(path) >= n:
+            r_
 
-        for i in range(len(words)):
+        for i in range(le.(words)):
             path.append(words[i])
             self.dfs(words, n, ans, path)
             path.pop()
 
-    def is_valid(self, path):
-        if not path or len(path) != len(path[0]):
-            return False
+    ___ is_valid(self, path
+        __ not path or le.(path) != le.(path[0]
+            r_ False
 
-        for i in range(1, len(path)):
-            for j in range(i):
-                if path[i][j] != path[j][i]:
-                    return False
+        for i in range(1, le.(path)):
+            for j in range(i
+                __ path[i][j] != path[j][i]:
+                    r_ False
 
-        return True
+        r_ True

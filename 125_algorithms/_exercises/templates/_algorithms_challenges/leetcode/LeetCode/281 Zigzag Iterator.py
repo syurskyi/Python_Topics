@@ -4,53 +4,53 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class ZigzagIterator(object):
-    def __init__(self, v1, v2):
+class ZigzagIterator(object
+    ___ __init__(self, v1, v2
         """
         Initialize your data structure here.
         :type v1: List[int]
         :type v2: List[int]
         """
         self.mat = [v1, v2]
-        self.maxa = max((c, r) for r, c in enumerate(map(lambda x: len(x)-1, self.mat)))
+        self.maxa = max((c, r) for r, c in enumerate(map(lambda x: le.(x)-1, self.mat)))
         self.i = 0
         self.j = 0
         self._reposition()
 
-    def _reposition(self):
-        while self.i >= len(self.mat) or self.j >= len(self.mat[self.i]):
-            if not self.hasNext():
-                return
+    ___ _reposition(self
+        w___ self.i >= le.(self.mat) or self.j >= le.(self.mat[self.i]
+            __ not self.hasNext(
+                r_
 
-            elif self.i >= len(self.mat):
+            ____ self.i >= le.(self.mat
                 self.i = 0
                 self.j += 1
 
-            elif self.j >= len(self.mat[self.i]):
+            ____ self.j >= le.(self.mat[self.i]
                 self.i += 1
 
-    def next(self):
+    ___ next(self
         """
         :rtype: int
         """
-        if not self.hasNext():
+        __ not self.hasNext(
             raise StopIteration
 
         ret = self.mat[self.i][self.j]
         self.i += 1
         self._reposition()
-        return ret
+        r_ ret
 
-    def hasNext(self):
+    ___ hasNext(self
         """
         :rtype: bool
         """
-        return self.j <= self.maxa[0]
+        r_ self.j <= self.maxa[0]
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     v1 = [1, 2]
     v2 = [3, 4, 5, 6]
     itr = ZigzagIterator(v1, v2)
-    while itr.hasNext():
+    w___ itr.hasNext(
         print itr.next()

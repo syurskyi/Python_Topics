@@ -1,8 +1,8 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def updateBoard(self, board, click):
+class Solution(object
+  ___ updateBoard(self, board, click
     """
     :type board: List[List[str]]
     :type click: List[int]
@@ -11,23 +11,23 @@ class Solution(object):
     numbers = "B123456789"
     queue = deque([click])
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
-    while queue:
+    w___ queue:
       i, j = queue.popleft()
-      if board[i][j] == "B":
+      __ board[i][j] __ "B":
         continue
-      if board[i][j] == "M":
+      __ board[i][j] __ "M":
         board[i][j] = "X"
         break
       mineCnt = 0
       nbrs = []
       for di, dj in directions:
         ni, nj = i + di, j + dj
-        if 0 <= ni < len(board) and 0 <= nj < len(board[0]) and board[ni][nj] in ["M", "E"]:
-          if board[ni][nj] == "M":
+        __ 0 <= ni < le.(board) and 0 <= nj < le.(board[0]) and board[ni][nj] in ["M", "E"]:
+          __ board[ni][nj] __ "M":
             mineCnt += 1
-          else:
+          ____
             nbrs.append((ni, nj))
-      if mineCnt == 0:
+      __ mineCnt __ 0:
         queue.extend(nbrs)
       board[i][j] = numbers[mineCnt]
-    return board
+    r_ board

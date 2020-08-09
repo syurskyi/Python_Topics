@@ -9,15 +9,15 @@ Created on Mar 20, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-class NestedInteger(object):
-    def isInteger(self):
+class NestedInteger(object
+    ___ isInteger(self
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
         pass
 
-    def getInteger(self):
+    ___ getInteger(self
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
@@ -25,7 +25,7 @@ class NestedInteger(object):
         """
         pass
 
-    def getList(self):
+    ___ getList(self
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -33,20 +33,20 @@ class NestedInteger(object):
         """
         pass
 
-class Solution(object):
-    def depthSum(self, nestedList):
+class Solution(object
+    ___ depthSum(self, nestedList
         """
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
-        return self.helper(nestedList, 1)
+        r_ self.helper(nestedList, 1)
     
-    def helper(self, nestedList, level):
+    ___ helper(self, nestedList, level
         sumVal = 0
         for ni in nestedList:
-            if ni.isInteger():
+            __ ni.isInteger(
                 sumVal += ni.getInteger()*level
-            else:
+            ____
                 sumVal += self.helper(ni.getList(), level+1)
-        return sumVal
+        r_ sumVal
     

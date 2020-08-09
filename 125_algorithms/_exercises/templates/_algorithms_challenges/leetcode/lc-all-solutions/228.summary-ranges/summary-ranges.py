@@ -1,22 +1,22 @@
-class Solution(object):
-  def summaryRanges(self, nums):
+class Solution(object
+  ___ summaryRanges(self, nums
     """
     :type nums: List[int]
     :rtype: List[str]
     """
 
-    def outputRange(start, end):
-      if start == end:
-        return str(start)
-      return "{}->{}".format(start, end)
+    ___ outputRange(start, end
+      __ start __ end:
+        r_ str(start)
+      r_ "{}->{}".format(start, end)
 
-    if not nums:
-      return []
+    __ not nums:
+      r_ []
     ans = []
     start = 0
-    for i in range(0, len(nums) - 1):
-      if nums[i] + 1 != nums[i + 1]:
+    for i in range(0, le.(nums) - 1
+      __ nums[i] + 1 != nums[i + 1]:
         ans.append(outputRange(nums[start], nums[i]))
         start = i + 1
     ans.append(outputRange(nums[start], nums[-1]))
-    return ans
+    r_ ans

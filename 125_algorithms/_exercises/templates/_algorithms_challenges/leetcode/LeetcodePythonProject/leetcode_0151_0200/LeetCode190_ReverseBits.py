@@ -7,10 +7,10 @@ Created on Feb 16, 2017
 class Solution:
     # @param n, an integer
     # @return an integer
-    def reverseBits(self, n):
+    ___ reverseBits(self, n
         res = 0
-        for i in range(0, 32):
+        for i in range(0, 32
             last = n >> i
             res = res << 1
             res |= last & 1
-        return res
+        r_ res

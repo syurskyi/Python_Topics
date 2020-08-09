@@ -3,36 +3,36 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def canPartitionKSubsets(self, nums, k):
+class Solution(object
+    ___ canPartitionKSubsets(self, nums, k
         """
         :type nums: List[int]
         :type k: int
         :rtype: bool
         """
         sumVal = sum(nums)
-        if sumVal%k != 0:
-            return False
+        __ sumVal%k != 0:
+            r_ False
         nums.sort(reverse=True)
-        return self.helper(nums, [0]*k, sumVal//k, 0, k)
+        r_ self.helper(nums, [0]*k, sumVal//k, 0, k)
     
-    def helper(self, nums, elems, target, ind, k):
-        if ind == k:
-            return True
-        for i in range(len(nums)):
-            if elems[ind]+nums[i] <= target:
+    ___ helper(self, nums, elems, target, ind, k
+        __ ind __ k:
+            r_ True
+        for i in range(le.(nums)):
+            __ elems[ind]+nums[i] <= target:
                 elems[ind] += nums[i]
-                if elems[ind] == target and\
-                    self.helper(nums[:i]+nums[i+1:], elems, target, ind+1, k):
-                    return True
-                elif self.helper(nums[:i]+nums[i+1:], elems, target, ind, k):
-                    return True
+                __ elems[ind] __ target and\
+                    self.helper(nums[:i]+nums[i+1:], elems, target, ind+1, k
+                    r_ True
+                ____ self.helper(nums[:i]+nums[i+1:], elems, target, ind, k
+                    r_ True
                 elems[ind] -= nums[i]
-            else:
+            ____
                 break
-        return False
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [4, 3, 2, 3, 5, 2, 1],
@@ -54,5 +54,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

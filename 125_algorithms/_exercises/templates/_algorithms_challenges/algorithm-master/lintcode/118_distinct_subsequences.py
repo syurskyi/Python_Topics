@@ -4,14 +4,14 @@ class Solution:
     @param: : A string
     @return: Count the number of distinct subsequences
     """
-    def numDistinct(self, S, T):
-        if S is None or T is None:
-            return 0
+    ___ numDistinct(self, S, T
+        __ S is None or T is None:
+            r_ 0
 
-        if S is '' and '':
-            return 1
+        __ S is '' and '':
+            r_ 1
 
-        m, n = len(S), len(T)
+        m, n = le.(S), le.(T)
 
         """
         `dp[i][j]` means the count of distinct subsequences
@@ -21,13 +21,13 @@ class Solution:
 
         prev = curr = 0
         dp[curr][0] = 1
-        for i in range(1, m + 1):
+        for i in range(1, m + 1
             prev = curr
             curr = 1 - curr
 
             dp[curr][0] = 1
 
-            for j in range(1, n + 1):
+            for j in range(1, n + 1
                 """
                 case 1: `S[i - 1]` and `T[j - 1]` is not a pair
                 so keep `T[j - 1]` in candidates
@@ -38,7 +38,7 @@ class Solution:
                 case 2: `S[i - 1]` and `T[j - 1]` is a pair
                 do NOT `+1` -> its for size, this problem is for count
                 """
-                if S[i - 1] == T[j - 1]:
+                __ S[i - 1] __ T[j - 1]:
                     dp[curr][j] += dp[prev][j - 1]
 
-        return dp[curr][n]
+        r_ dp[curr][n]

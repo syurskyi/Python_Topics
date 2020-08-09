@@ -1,21 +1,21 @@
-class Solution(object):
-  def removeDuplicates(self, nums):
+class Solution(object
+  ___ removeDuplicates(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
-    if len(nums) <= 2:
-      return len(nums)
+    __ le.(nums) <= 2:
+      r_ le.(nums)
     cnt = 0
     j = 1
-    for i in range(1, len(nums)):
-      if nums[i] == nums[i - 1]:
+    for i in range(1, le.(nums)):
+      __ nums[i] __ nums[i - 1]:
         cnt += 1
-        if cnt < 2:
+        __ cnt < 2:
           nums[j] = nums[i]
           j += 1
-      else:
+      ____
         nums[j] = nums[i]
         j += 1
         cnt = 0
-    return j
+    r_ j

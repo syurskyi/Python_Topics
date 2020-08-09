@@ -1,37 +1,37 @@
-import random
-import re
+______ random
+______ re
 
-import pytest
+______ pytest
 
-from decorators import (retry,
+from decorators ______ (retry,
                         MaxRetriesException,
                         MAX_RETRIES)
 
 
 @retry
-def get_two_numbers(numbers):
+___ get_two_numbers(numbers
     """Give a list of items pick 2 random ones,
        if both are not ints raise a ValueError
     """
     chosen = random.sample(numbers, 2)
-    if not all(type(i) == int for i in chosen):
+    __ not all(type(i) __ int for i in chosen
         raise ValueError('not all ints')
 
 
-def test_bad_data_max_retries_and_exception(capfd):
-    with pytest.raises(MaxRetriesException):
+___ test_bad_data_max_retries_and_exception(capfd
+    with pytest.raises(MaxRetriesException
         get_two_numbers(['a', 'b'])
     output = capfd.readouterr()[0]
-    assert output.count('not all ints') == MAX_RETRIES
+    assert output.count('not all ints') __ MAX_RETRIES
 
 
-def test_good_data_no_retry_and_no_exception(capfd):
+___ test_good_data_no_retry_and_no_exception(capfd
     get_two_numbers([1, 2, 3])
     output = capfd.readouterr()[0]
-    assert output.count('not all ints') == 0
+    assert output.count('not all ints') __ 0
 
 
-def test_decorated_function_preserves_docstring(capfd):
+___ test_decorated_function_preserves_docstring(capfd
     docstring = get_two_numbers.__doc__
     assert docstring is not None
     line1 = "Give a list of items pick 2 random ones,"

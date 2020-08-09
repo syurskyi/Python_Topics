@@ -15,14 +15,14 @@ __author__ = 'Daniel'
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def rightSideView(self, root):
+    ___ rightSideView(self, root
         """
         Binary tree level traversal
         :type root: TreeNode
@@ -32,17 +32,17 @@ class Solution:
         nxt_lvl = []
         ret = []
 
-        if root:
+        __ root:
             cur_lvl.append(root)
 
-        while cur_lvl:
+        w___ cur_lvl:
             ret.append(cur_lvl[-1].val)
-            while cur_lvl:
+            w___ cur_lvl:
                 cur = cur_lvl.pop(0)
-                if cur.left: nxt_lvl.append(cur.left)
-                if cur.right: nxt_lvl.append(cur.right)
+                __ cur.left: nxt_lvl.append(cur.left)
+                __ cur.right: nxt_lvl.append(cur.right)
 
             cur_lvl = nxt_lvl
             nxt_lvl = []
 
-        return ret
+        r_ ret

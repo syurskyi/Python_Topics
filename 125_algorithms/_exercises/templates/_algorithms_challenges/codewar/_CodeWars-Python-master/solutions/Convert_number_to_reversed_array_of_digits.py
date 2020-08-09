@@ -15,8 +15,8 @@ Example:
 """
 
 
-def digitize(n):
-    return [int(s) for s in str(n)][::-1]
+___ digitize(n
+    r_ [int(s) for s in str(n)][::-1]
 
 
 print(digitize(35231))

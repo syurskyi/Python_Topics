@@ -2,15 +2,15 @@
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 """
 __author__ = 'Danyang'
-import heapq
+______ heapq
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 class Solution:
-    def mergeKLists_TLE1(self, lists):
+    ___ mergeKLists_TLE1(self, lists
         """
         k lists; each list has N items
         Algorithm 1:
@@ -27,14 +27,14 @@ class Solution:
         :return: ListNode
         """
         lists = filter(lambda x: x is not None, lists)
-        if not lists:
-            return
+        __ not lists:
+            r_
 
-        length = len(lists)
+        length = le.(lists)
         factor = 2
-        while length>0:
+        w___ length>0:
             i = 0
-            while True:
+            w___ True:
                 try:
                     lists[i] = self.mergeTwoLists(lists[i], lists[i+factor/2])
                 except IndexError:
@@ -44,26 +44,26 @@ class Solution:
             length /= 2
             factor *= 2
 
-        return lists[0]
+        r_ lists[0]
 
-    def mergeKLists_TLE2(self, lists):
+    ___ mergeKLists_TLE2(self, lists
         """
 
         :param lists: a list of ListNode
         :return: ListNode
         """
         lists = filter(lambda x: x is not None, lists)
-        if not lists:
-            return
+        __ not lists:
+            r_
 
         result = lists[0]
-        for i in xrange(1, len(lists)):
+        for i in xrange(1, le.(lists)):
             result = self.mergeTwoLists(result, lists[i])
-        return result
+        r_ result
 
 
 
-    def mergeTwoLists(self, l1, l2):
+    ___ mergeTwoLists(self, l1, l2
         """
         Linked List
         assuming ascending order
@@ -76,9 +76,9 @@ class Solution:
 
         pre = dummy
         the_other = l2
-        while pre and pre.next:
+        w___ pre and pre.next:
             cur = pre.next
-            if the_other and cur.val>the_other.val:
+            __ the_other and cur.val>the_other.val:
                 # insert
                 temp = the_other.next
                 pre.next, the_other.next = the_other, cur
@@ -88,12 +88,12 @@ class Solution:
 
 
         # dangling list
-        if the_other:
+        __ the_other:
             pre.next = the_other  # appending
 
-        return dummy.next
+        r_ dummy.next
 
-    def mergeKLists(self, lists):
+    ___ mergeKLists(self, lists
         """
         use heap
         heap pointer
@@ -110,20 +110,20 @@ class Solution:
         """
         heap = []
         for head_node in lists:
-            if head_node:
+            __ head_node:
                 heapq.heappush(heap, (head_node.val, head_node))
 
         dummy = ListNode(0)
 
         cur = dummy
-        while heap:
+        w___ heap:
             smallest_node = heapq.heappop(heap)[1]
             cur.next = smallest_node
             cur = cur.next
-            if smallest_node.next:
+            __ smallest_node.next:
                 heapq.heappush(heap, (smallest_node.next.val, smallest_node.next))
-        return dummy.next
+        r_ dummy.next
 
-if __name__=="__main__":
-    assert  Solution().mergeKLists([None, None])==None
-    assert Solution().mergeKLists([ListNode(1), ListNode(0)]).val==0
+__ __name____"__main__":
+    assert  Solution().mergeKLists([None, None])__None
+    assert Solution().mergeKLists([ListNode(1), ListNode(0)]).val__0

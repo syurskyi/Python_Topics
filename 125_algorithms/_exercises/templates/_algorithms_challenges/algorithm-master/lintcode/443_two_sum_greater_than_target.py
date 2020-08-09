@@ -4,18 +4,18 @@ class Solution:
     @param: target: An integer
     @return: an integer
     """
-    def twoSum2(self, A, target):
+    ___ twoSum2(self, A, target
         ans = 0
-        if not A or len(A) < 2:
-            return ans
+        __ not A or le.(A) < 2:
+            r_ ans
 
         A.sort()
 
-        left, right = 0, len(A) - 1
-        while left < right:
+        left, right = 0, le.(A) - 1
+        w___ left < right:
             # if minimum + maximum still <= target
             # ignore the 2nd, 3rd maximum
-            if A[left] + A[right] <= target:
+            __ A[left] + A[right] <= target:
                 left += 1
                 continue
 
@@ -24,4 +24,4 @@ class Solution:
             ans += right - left
             right -= 1
 
-        return ans
+        r_ ans

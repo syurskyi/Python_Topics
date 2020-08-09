@@ -12,24 +12,24 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-class Solution(object):
-    def productExceptSelf(self, nums):
+class Solution(object
+    ___ productExceptSelf(self, nums
         """
         :type nums: List[int]
         :rtype: List[int]
 
         Time Limit Exceeded
         """
-        n = len(nums)
+        n = le.(nums)
         res = [1 for i in range(n)]
         # product of nums[0..i - 1]
         product = 1
-        for i in range(1, n):
-            for j in range(i):
+        for i in range(1, n
+            for j in range(i
                 res[j] *= nums[i]
             product *= nums[i - 1]
             res[i] = product
-        return res
+        r_ res
 
 
 a1 = [1, 2, 3]

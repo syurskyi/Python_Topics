@@ -1,7 +1,7 @@
 """
 Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
@@ -16,20 +16,20 @@ class Solution:
     ans = float('inf')
     pre = None
 
-    def getMinimumDifference(self, root):
+    ___ getMinimumDifference(self, root
         """
         :type root: TreeNode
         :rtype: int
         """
-        if not root:
-            return self.ans
+        __ not root:
+            r_ self.ans
 
         self.getMinimumDifference(root.left)
 
-        if self.pre and root.val - self.pre.val < self.ans:
+        __ self.pre and root.val - self.pre.val < self.ans:
             self.ans = root.val - self.pre.val
 
         self.pre = root
 
         self.getMinimumDifference(root.right)
-        return self.ans
+        r_ self.ans

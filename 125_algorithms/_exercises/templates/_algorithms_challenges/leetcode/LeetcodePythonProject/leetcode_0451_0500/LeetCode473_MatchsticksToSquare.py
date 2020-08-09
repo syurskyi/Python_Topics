@@ -4,36 +4,36 @@ Created on Apr 26, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def makesquare(self, nums):
+class Solution(object
+    ___ makesquare(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
-        if not nums: return False
+        __ not nums: r_ False
         sumVal = sum(nums)
-        if sumVal%4 != 0: return False
+        __ sumVal%4 != 0: r_ False
         target = sumVal//4
         # Faster
         nums.sort(reverse=True)
-        return self.helper(nums, [0]*4, 0, target)
+        r_ self.helper(nums, [0]*4, 0, target)
     
-    def helper(self, nums, sums, ind, target):
-        if ind == len(nums):
-            if sums[0] == target and sums[1] == target and\
-                sums[2] == target and sums[3] == target:
-                return True
-            return False
-        for i in range(4):
-            if sums[i]+nums[ind] > target:
+    ___ helper(self, nums, sums, ind, target
+        __ ind __ le.(nums
+            __ sums[0] __ target and sums[1] __ target and\
+                sums[2] __ target and sums[3] __ target:
+                r_ True
+            r_ False
+        for i in range(4
+            __ sums[i]+nums[ind] > target:
                 continue
             sums[i] += nums[ind]
-            if self.helper(nums, sums, ind+1, target):
-                return True
+            __ self.helper(nums, sums, ind+1, target
+                r_ True
             sums[i] -= nums[ind]
-        return False
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1, 2, 2, 2],
             [3, 3, 3, 3, 4],
@@ -44,5 +44,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

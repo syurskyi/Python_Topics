@@ -1,8 +1,8 @@
 class StockStream:
-    def __init__(self, prices):
+    ___ __init__(self, prices
         pass
 
-    def update(self, timestamp, price):
+    ___ update(self, timestamp, price
         """
         :type timestamp: int
         :type price: int
@@ -10,19 +10,19 @@ class StockStream:
         """
         pass
 
-    def get_highest(self):
+    ___ get_highest(self
         """
         :rtype: int
         """
         pass
 
-    def get_lowest(self):
+    ___ get_lowest(self
         """
         :rtype: int
         """
         pass
 
-    def get_latest(self):
+    ___ get_latest(self
         """
         :rtype: int
         """

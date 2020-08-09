@@ -1,20 +1,20 @@
-class Solution(object):
-  def thirdMax(self, nums):
+class Solution(object
+  ___ thirdMax(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
     first = second = third = float("-inf")
     for num in nums:
-      if num in [first, second, third]:
+      __ num in [first, second, third]:
         continue
-      if num > first:
+      __ num > first:
         third = second
         second = first
         first = num
-      elif num > second:
+      ____ num > second:
         third = second
         second = num
-      elif num > third:
+      ____ num > third:
         third = num
-    return third if third != float("-inf") else first
+    r_ third __ third != float("-inf") else first

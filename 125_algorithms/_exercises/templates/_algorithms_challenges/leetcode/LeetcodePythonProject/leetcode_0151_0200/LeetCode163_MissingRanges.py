@@ -3,8 +3,8 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def findMissingRanges(self, nums, lower, upper):
+class Solution(object
+    ___ findMissingRanges(self, nums, lower, upper
         """
         :type nums: List[int]
         :type lower: int
@@ -14,20 +14,20 @@ class Solution(object):
         res = []
         prev = lower
         for num in nums:
-            if num == prev+1:
+            __ num __ prev+1:
                 res.append('%s' % prev)
-            elif num > prev+1:
+            ____ num > prev+1:
                 res.append('%s->%s' % (prev, min(num-1, upper)))
             prev = num+1
-            if prev > upper:
+            __ prev > upper:
                 break
-        if upper == prev:
+        __ upper __ prev:
             res.append('%s' % prev)
-        elif upper > prev:
+        ____ upper > prev:
             res.append('%s->%s' % (prev, upper))
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [0,1,3,50,75],
@@ -42,5 +42,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

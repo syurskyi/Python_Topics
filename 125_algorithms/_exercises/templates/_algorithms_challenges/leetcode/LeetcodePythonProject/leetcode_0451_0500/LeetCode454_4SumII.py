@@ -3,8 +3,8 @@ Created on Jan 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def fourSumCount(self, A, B, C, D):
+class Solution(object
+    ___ fourSumCount(self, A, B, C, D
         """
         :type A: List[int]
         :type B: List[int]
@@ -20,9 +20,9 @@ class Solution(object):
         for c in C:
             for d in D:
                 res += hashmap.get(-c-d, 0)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [ 1, 2],
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -20,32 +20,32 @@ Output: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.cache = {}
 
-    def allPossibleFBT(self, N: int) -> List[TreeNode]:
+    ___ allPossibleFBT(self, N: int) -> List[TreeNode]:
         """
         recursive + memoization
         """
-        if N not in self.cache:
-            if N == 0:
+        __ N not in self.cache:
+            __ N __ 0:
                 ret = []
-            elif N == 1:
+            ____ N __ 1:
                 ret = [TreeNode(0)]
-            else:
+            ____
                 ret = []
-                for i in range(N):
+                for i in range(N
                     lefts = self.allPossibleFBT(i)
                     rights = self.allPossibleFBT(N-1-i)
                     # 0 or 2 child, cannot have only 1
-                    if lefts and rights:
+                    __ lefts and rights:
                         for left in lefts:
                             for right in rights:
                                 node = TreeNode(0)
@@ -54,4 +54,4 @@ class Solution:
                                 ret.append(node)
             self.cache[N] = ret
 
-        return self.cache[N]
+        r_ self.cache[N]

@@ -1,11 +1,11 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestStack(object):
+class TestStack(object
 
     # TODO: It would be better if we had unit tests for each
     # method in addition to the following end-to-end test
-    def test_end_to_end(self):
+    ___ test_end_to_end(self
         print('Test: Empty stack')
         stack = Stack()
         assert_equal(stack.peek(), None)
@@ -34,10 +34,10 @@ class TestStack(object):
         print('Success: test_end_to_end')
 
 
-def main():
+___ main(
     test = TestStack()
     test.test_end_to_end()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

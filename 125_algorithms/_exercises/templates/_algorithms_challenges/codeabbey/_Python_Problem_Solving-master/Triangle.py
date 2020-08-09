@@ -1,7 +1,7 @@
 data = int(input())
 
 res= ''
-for i in range(0,data):
+for i in range(0,data
     para = input().split()
     
     para = list(map(int,para))
@@ -10,10 +10,10 @@ for i in range(0,data):
     b = para[1]
     c = para[2]
     
-    if a + b > c and a + c > b  and b + c > a:
+    __ a + b > c and a + c > b  and b + c > a:
         res +='1'
         res += ' '
-    else:
+    ____
         res += '0'
         res += ' '
     

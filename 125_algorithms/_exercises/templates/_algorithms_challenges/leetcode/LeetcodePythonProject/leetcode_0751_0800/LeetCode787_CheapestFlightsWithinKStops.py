@@ -3,8 +3,8 @@ Created on Apr 12, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def findCheapestPrice(self, n, flights, src, dst, K):
+class Solution(object
+    ___ findCheapestPrice(self, n, flights, src, dst, K
         """
         :type n: int
         :type flights: List[List[int]]
@@ -13,26 +13,26 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        import heapq
+        ______ heapq
         graph = {}
         for f in flights:
-            if f[0] not in graph:
+            __ f[0] not in graph:
                 graph[f[0]] = [[f[2], f[1]]]
-            else:
+            ____
                 graph[f[0]].append([f[2], f[1]])
         pq = [[0, K+1, src]]
-        while pq:
-            size = len(pq)
-            for _ in range(size):
+        w___ pq:
+            size = le.(pq)
+            for _ in range(size
                 curLen, level, node = heapq.heappop(pq)
-                if node == dst:
-                    return curLen
-                if level > 0:
-                    for dist, node0 in graph.get(node, []):
+                __ node __ dst:
+                    r_ curLen
+                __ level > 0:
+                    for dist, node0 in graph.get(node, []
                         heapq.heappush(pq, [curLen+dist, level-1, node0])
-        return -1
+        r_ -1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 1],
             [3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 0],
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -17,37 +17,37 @@ Given a string represents an integer, write a function to determine if it's an a
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def isAdditiveNumber(self, num):
+class Solution(object
+    ___ isAdditiveNumber(self, num
         """
         Backtracking
         :type num: str
         :rtype: bool
         """
-        n = len(num)
-        for i in xrange(1, n):
-            for j in xrange(i, n):
-                if self.predicate(num, 0, i, j):
-                    return True
+        n = le.(num)
+        for i in xrange(1, n
+            for j in xrange(i, n
+                __ self.predicate(num, 0, i, j
+                    r_ True
 
-        return False
+        r_ False
 
-    def predicate(self, s, b, i, j):
+    ___ predicate(self, s, b, i, j
         n1 = s[b:i]
         n2 = s[i:j]
 
-        if b != 0 and j == len(s):
-            return True
-        if not n1 or not n2:
-            return False
-        if len(n1) > 1 and n1[0] == '0' or len(n2) > 1 and n2[0] == '0':
-            return False
+        __ b != 0 and j __ le.(s
+            r_ True
+        __ not n1 or not n2:
+            r_ False
+        __ le.(n1) > 1 and n1[0] __ '0' or le.(n2) > 1 and n2[0] __ '0':
+            r_ False
 
         n3 = str(int(n1)+int(n2))
-        J = j+len(n3)
-        if s[j:J] == n3:
-            return self.predicate(s, i, j, J)
+        J = j+le.(n3)
+        __ s[j:J] __ n3:
+            r_ self.predicate(s, i, j, J)
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().isAdditiveNumber("12012122436")

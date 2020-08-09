@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestInvertTree(object):
+class TestInvertTree(object
 
-    def test_invert_tree(self):
+    ___ test_invert_tree(self
         root = Node(5)
         bst = InverseBst(root)
         node2 = bst.insert(2)
@@ -23,10 +23,10 @@ class TestInvertTree(object):
         print('Success: test_invert_tree')
 
 
-def main():
+___ main(
     test = TestInvertTree()
     test.test_invert_tree()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

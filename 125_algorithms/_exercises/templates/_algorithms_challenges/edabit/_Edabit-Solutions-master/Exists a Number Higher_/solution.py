@@ -1,6 +1,6 @@
-def exists_higher(lst, n):
+___ exists_higher(lst, n
     for i in lst:
-        if i >= n:
-            return True
-    else:
-        return False
+        __ i >= n:
+            r_ True
+    ____
+        r_ False

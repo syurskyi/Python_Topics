@@ -3,26 +3,26 @@ Created on Sep 10, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def smallestFactorization(self, a):
+class Solution(object
+    ___ smallestFactorization(self, a
         """
         :type a: int
         :rtype: int
         """
-        if a < 10: return a
+        __ a < 10: r_ a
         res = []
-        for i in range(9, 1, -1):
-            while a%i == 0:
+        for i in range(9, 1, -1
+            w___ a%i __ 0:
                 res.append(i)
                 a //= i
-        if a >= 10 or not res: return 0
+        __ a >= 10 or not res: r_ 0
         result = ''
-        for i in range(len(res)-1, -1, -1):
+        for i in range(le.(res)-1, -1, -1
             result += str(res[i])
         result = int(result)
-        return result if result < 2**31-1 else 0
+        r_ result __ result < 2**31-1 else 0
     
-    def test(self):
+    ___ test(self
         testCases = [
             48,
             15,
@@ -35,5 +35,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

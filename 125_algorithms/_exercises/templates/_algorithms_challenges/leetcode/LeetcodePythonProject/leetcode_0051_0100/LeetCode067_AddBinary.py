@@ -4,60 +4,60 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def addBinary(self, a, b):
+class Solution(object
+    ___ addBinary(self, a, b
         """
         :type a: str
         :type b: str
         :rtype: str
         """
-        if not a and not b: return ''
-        if not a: return b
-        if not b: return a
-        if len(a) < len(b):
+        __ not a and not b: r_ ''
+        __ not a: r_ b
+        __ not b: r_ a
+        __ le.(a) < le.(b
             tmp = a
             a = b
             b = tmp
-        length1 = len(a)
-        length2 = len(b)
+        length1 = le.(a)
+        length2 = le.(b)
         result = ''
         i1, i2 = length1-1, length2-1
         carry = False
-        while i2 >= 0:
+        w___ i2 >= 0:
             c1 = a[i1]
             c2 = b[i2]
-            if c1 == '0' and c2 == '0':
-                if carry:
+            __ c1 __ '0' and c2 __ '0':
+                __ carry:
                     result = '1' + result
-                else:
+                ____
                     result = '0' + result
                 carry = False
-            elif c1 == '1' and c2 == '1':
-                if carry:
+            ____ c1 __ '1' and c2 __ '1':
+                __ carry:
                     result = '1' + result
-                else:
+                ____
                     result = '0' + result
                 carry = True
-            else:
-                if carry:
+            ____
+                __ carry:
                     result = '0' + result
                     carry = True
-                else:
+                ____
                     result = '1' + result
                     carry = False
             i1 -= 1
             i2 -= 1
-        if carry:
-            if i1 == -1:
+        __ carry:
+            __ i1 __ -1:
                 result = '1' + result
-            else:
+            ____
                 tmp = self.addBinary(a[:i1+1], '1')
                 result = tmp + result
-        else:
+        ____
             result = a[:i1+1]+ result
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('11', '1'),
             ('1', '1'),
@@ -69,5 +69,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*15 + '-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

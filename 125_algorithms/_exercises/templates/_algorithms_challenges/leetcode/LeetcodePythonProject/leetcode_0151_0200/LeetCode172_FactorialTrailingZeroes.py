@@ -4,21 +4,21 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def trailingZeroes(self, n):
+class Solution(object
+    ___ trailingZeroes(self, n
         """
         :type n: int
         :rtype: int
         """
-        if n < 0: return -1
+        __ n < 0: r_ -1
         count = 0
         i = 5
-        while n//i > 0:
+        w___ n//i > 0:
             count += n//i
             i *= 5
-        return count
+        r_ count
     
-    def test(self):
+    ___ test(self
         testCases = [
             3,
             5,
@@ -30,5 +30,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

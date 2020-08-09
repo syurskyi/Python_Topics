@@ -9,7 +9,7 @@ is potentially a very long (length ~= 500,000) string, and s is a short string
 A subsequence of a string is a new string which is formed from the original
 string by deleting some (can be none) of the characters without disturbing the
 relative positions of the remaining characters. (ie, "ace" is a subsequence of
-"abcde" while "aec" is not).
+"abcde" w___ "aec" is not).
 
 Example 1:
 s = "abc", t = "ahbgdc"
@@ -27,33 +27,33 @@ would you change your code?
 Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases
 """
-from bisect import bisect_left
-from collections import defaultdict
+from bisect ______ bisect_left
+from collections ______ defaultdict
 
 
 class Solution:
-    def isSubsequence(self, s: str, t: str) -> bool:
+    ___ isSubsequence(self, s: str, t: str) -> bool:
         """
         Subsequence - Binary search
         """
         char_pos = defaultdict(list)
-        for p, c in enumerate(t):
+        for p, c in enumerate(t
             char_pos[c].append(p)
             # the list is naturally sorted
 
         lo_po = -1
         for c in s:
-            if c not in char_pos:
-                return False
+            __ c not in char_pos:
+                r_ False
             pos = char_pos[c]
             i = bisect_left(pos, lo_po)
-            if i == len(pos):
-                return False
+            __ i __ le.(pos
+                r_ False
             lo_po = pos[i] + 1  # pitfall
 
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
-    assert Solution().isSubsequence("abc", "ahbgdc") == True
-    assert Solution().isSubsequence("acb", "ahbgdc") == False
+__ __name__ __ "__main__":
+    assert Solution().isSubsequence("abc", "ahbgdc") __ True
+    assert Solution().isSubsequence("acb", "ahbgdc") __ False

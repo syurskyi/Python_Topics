@@ -1,38 +1,38 @@
 class Solution:
-    def smallestDistancePair(self, A, k):
+    ___ smallestDistancePair(self, A, k
         """
         :type A: List[int]
         :type k: int
         :rtype: int
         """
-        if not A or not k:
-            return -1
+        __ not A or not k:
+            r_ -1
 
         A.sort()
 
         left, right = 0, A[-1] - A[0]
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
-            if self.check_valid(A, mid, k):
+            __ self.check_valid(A, mid, k
                 right = mid
-            else:
+            ____
                 left = mid
 
-        return left if self.check_valid(A, left, k) else right
+        r_ left __ self.check_valid(A, left, k) else right
 
-    def check_valid(self, A, mid, k):
+    ___ check_valid(self, A, mid, k
         """
         valid if there are at least `k` pairs when distance is `mid`
         """
         cnt = left = 0
 
-        for right in range(len(A)):
-            while A[right] - A[left] > mid:
+        for right in range(le.(A)):
+            w___ A[right] - A[left] > mid:
                 left += 1
 
             cnt += right - left
 
-            if cnt >= k:
-                return True
+            __ cnt >= k:
+                r_ True
 
-        return False
+        r_ False

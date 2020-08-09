@@ -1,6 +1,6 @@
-import pytest
+______ pytest
 
-from enumerate_data import enumerate_names_countries
+from enumerate_data ______ enumerate_names_countries
 
 expected_lines = ['1. Julian     Australia',
                   '2. Bob        Spain',
@@ -11,7 +11,7 @@ expected_lines = ['1. Julian     Australia',
 
 
 @pytest.mark.parametrize("line", expected_lines)
-def test_enumerate_names_countries(capfd, line):
+___ test_enumerate_names_countries(capfd, line
     enumerate_names_countries()
     output = capfd.readouterr()[0]
     assert line in output, f'{line} not in output'

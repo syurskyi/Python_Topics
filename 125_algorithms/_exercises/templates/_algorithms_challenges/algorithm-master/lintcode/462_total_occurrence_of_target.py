@@ -1,5 +1,5 @@
 class Solution:
-    def totalOccurrence(self, A, target):
+    ___ totalOccurrence(self, A, target
         """
         :type A: List[int]
         :type target: int
@@ -16,32 +16,32 @@ class Solution:
         r1    l  r,s
         r2           e,l  r
         """
-        if not A:
-            return 0
+        __ not A:
+            r_ 0
 
-        n = len(A)
-
-        left, mid, right = 0, 0, n - 1
-        while left + 1 < right:
-            mid = left + (right - left) // 2
-            if A[mid] < target:
-                left = mid
-            else:
-                right = mid
-
-        start = left if A[left] == target else right
-
-        if A[start] != target:
-            return 0
+        n = le.(A)
 
         left, mid, right = 0, 0, n - 1
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = left + (right - left) // 2
-            if A[mid] <= target:
+            __ A[mid] < target:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        end = right if A[right] == target else left
+        start = left __ A[left] __ target else right
 
-        return end - start + 1
+        __ A[start] != target:
+            r_ 0
+
+        left, mid, right = 0, 0, n - 1
+        w___ left + 1 < right:
+            mid = left + (right - left) // 2
+            __ A[mid] <= target:
+                left = mid
+            ____
+                right = mid
+
+        end = right __ A[right] __ target else left
+
+        r_ end - start + 1

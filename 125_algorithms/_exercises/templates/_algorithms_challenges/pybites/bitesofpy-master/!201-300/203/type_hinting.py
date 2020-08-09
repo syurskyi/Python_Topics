@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses ______ dataclass
 
 
 @dataclass
@@ -18,15 +18,15 @@ class Employee:
     hours_per_day: float
     wage: float
 
-    # def __init__(self, first_name: str, last_name: str, days_per_week: int,
-    #              hours_per_day: float, wage: float):
+    # ___ __init__(self, first_name: str, last_name: str, days_per_week: int,
+    #              hours_per_day: float, wage: float
     #     self.first_name = first_name
     #     self.last_name = last_name
     #     self.days_per_week = days_per_week
     #     self.hours_per_day = hours_per_day
     #     self.wage = wage
 
-    def _rounder(self, number: float, places: int) -> str:
+    ___ _rounder(self, number: float, places: int) -> str:
         """Rounds a number the specified number of places
 
         :param number: Float of number of round
@@ -34,19 +34,19 @@ class Employee:
         :return: String representation of the rounded number in US $
         """
         amount = round(number, places)
-        return f"${amount:0.2f}"
+        r_ f"${amount:0.2f}"
 
     @property
-    def weekly_pay(self) -> str:
+    ___ weekly_pay(self) -> str:
         """Returns amount of weekly pay in US currency
 
         For instance: $250.75
         """
         total_hours = self.hours_per_day * self.days_per_week
         total_wage = total_hours * self.wage
-        return self._rounder(total_wage, 2)
+        r_ self._rounder(total_wage, 2)
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     coder = Employee("Joe", "Blow", 5, 8, 18.0)
     print(coder.weekly_pay)

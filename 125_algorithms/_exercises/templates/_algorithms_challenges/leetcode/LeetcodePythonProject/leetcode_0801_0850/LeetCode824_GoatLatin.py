@@ -3,8 +3,8 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def toGoatLatin(self, S):
+class Solution(object
+    ___ toGoatLatin(self, S
         """
         :type S: str
         :rtype: str
@@ -13,18 +13,18 @@ class Solution(object):
         vowels = set(list('aeiouAEIOU'))
         arr = s.split(' ')
         res = ''
-        for i in range(len(arr)):
-            if not arr[i]:
+        for i in range(le.(arr)):
+            __ not arr[i]:
                 continue
             word = arr[i]
-            if word[0] not in vowels:
+            __ word[0] not in vowels:
                 word = word[1:]+word[0]
             word += 'ma'
             word += 'a'*(i+1)
             res += ' ' + word
-        return res[1:]
+        r_ res[1:]
     
-    def test(self):
+    ___ test(self
         testCases = [
             'I speak Goat Latin',
             'The quick brown fox jumped over the lazy dog',
@@ -35,5 +35,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

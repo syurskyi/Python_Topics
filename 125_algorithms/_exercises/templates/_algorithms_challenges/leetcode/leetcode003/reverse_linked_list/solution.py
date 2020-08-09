@@ -9,14 +9,14 @@ implement both?
 """
 
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
+class ListNode(object
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
-class Solution(object):
-    def reverseList(self, head):
+class Solution(object
+    ___ reverseList(self, head
         """
         :type head: ListNode
         :rtype: ListNode
@@ -24,18 +24,18 @@ class Solution(object):
         Iterative
         """
         res = None
-        while head is not None:
+        w___ head is not None:
             next_node = head.next
             # First node encountered
-            if res is None:
+            __ res is None:
                 res = head
                 res.next = None
-            else:
+            ____
                 # Insert to the head of `res`
                 head.next = res
                 res = head
             head = next_node
-        return res
+        r_ res
 
 
 n1 = ListNode(1)

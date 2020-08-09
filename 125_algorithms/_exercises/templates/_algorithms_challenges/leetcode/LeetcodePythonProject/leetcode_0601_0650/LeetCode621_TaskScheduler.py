@@ -3,8 +3,8 @@ Created on Sep 9, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def leastInterval(self, tasks, n):
+class Solution(object
+    ___ leastInterval(self, tasks, n
         """
         :type tasks: List[str]
         :type n: int
@@ -15,49 +15,49 @@ class Solution(object):
             arr[ord(t)-ord('A')] += 1
         arr.sort()
         i = 25
-        while i >= 0 and arr[i]==arr[-1]:
+        w___ i >= 0 and arr[i]__arr[-1]:
             i -= 1
-        return max(len(tasks), (arr[-1]-1)*(n+1)+25-i)
+        r_ max(le.(tasks), (arr[-1]-1)*(n+1)+25-i)
     
-    def leastInterval_own(self, tasks, n):
+    ___ leastInterval_own(self, tasks, n
         """
         :type tasks: List[str]
         :type n: int
         :rtype: int
         """
-        import heapq
+        ______ heapq
         hashmap = {}
         for task in tasks:
             hashmap[task] = hashmap.get(task, 0)+1
         heap = []
-        for c, count in hashmap.items():
+        for c, count in hashmap.items(
             heapq.heappush(heap, (-count, c))
         res = 0
         queue = []
-        while heap:
+        w___ heap:
             count, c = heapq.heappop(heap)
             queue.append((-count, c))
-            if len(queue) > n:
-                res += len(queue)
-                while queue:
+            __ le.(queue) > n:
+                res += le.(queue)
+                w___ queue:
                     count, c = queue.pop(0)
                     count -= 1
-                    if count > 0:
+                    __ count > 0:
                         heapq.heappush(heap, (-count, c))
-            if not heap:
-                count0 = len(queue)
-                while queue:
+            __ not heap:
+                count0 = le.(queue)
+                w___ queue:
                     count, c = queue.pop(0)
                     count -= 1
-                    if count > 0:
+                    __ count > 0:
                         heapq.heappush(heap, (-count, c))
-                if not heap:
+                __ not heap:
                     res += count0
-                else:
+                ____
                     res += n+1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ['A', 'A', 'A', 'B', 'B', 'B'],
@@ -77,5 +77,5 @@ class Solution(object):
             print('result2: %s' % result2)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

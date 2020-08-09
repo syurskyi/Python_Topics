@@ -3,24 +3,24 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def countSubstrings(self, s):
+class Solution(object
+    ___ countSubstrings(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s: return 0
-        n = len(s)
+        __ not s: r_ 0
+        n = le.(s)
         dp = [[False]*n for _ in range(n)]
         res = 0
-        for i in range(n):
-            for j in range(i, -1, -1):
-                if s[i] == s[j] and (i-j<=1 or dp[i-1][j+1]):
+        for i in range(n
+            for j in range(i, -1, -1
+                __ s[i] __ s[j] and (i-j<=1 or dp[i-1][j+1]
                     dp[i][j] = True
                     res += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             'abc',
             'aaa',
@@ -32,5 +32,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

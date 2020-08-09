@@ -2,7 +2,7 @@ class Solution:
     """
     BFS
     """
-    def shortestDistance(self, maze, start, destination):
+    ___ shortestDistance(self, maze, start, destination
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -22,14 +22,14 @@ class Solution:
         >>> s.shortestDistance(maze, [0, 4], [3, 2])
         -1
         """
-        if not maze or not maze[0]:
-            return -1
+        __ not maze or not maze[0]:
+            r_ -1
 
-        m, n = len(maze), len(maze[0])
+        m, n = le.(maze), le.(maze[0])
         sx, sy = start
         tx, ty = destination
         queue = [(sx, sy)]
-        distance = {(sx, sy): 0}
+        distance = {(sx, sy 0}
 
         for x, y in queue:
             for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
@@ -37,7 +37,7 @@ class Solution:
                 _y = y + dy
                 _step = 0
 
-                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] == 0:
+                w___ 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
                     _x += dx
                     _y += dy
                     _step += 1
@@ -45,30 +45,30 @@ class Solution:
                 _x -= dx
                 _y -= dy
 
-                if ((_x, _y) in distance and
-                    distance[x, y] + _step >= distance[_x, _y]):
+                __ ((_x, _y) in distance and
+                    distance[x, y] + _step >= distance[_x, _y]
                     continue
 
                 distance[_x, _y] = distance[x, y] + _step
 
-                if _x == tx and _y == ty:
-                    return distance[_x, _y]
+                __ _x __ tx and _y __ ty:
+                    r_ distance[_x, _y]
 
                 queue.append((_x, _y))
 
-        return -1
+        r_ -1
 
 
 
 
-import heapq
+______ heapq
 
 
 class Solution2:
     """
     Dijkstra
     """
-    def shortestDistance(self, maze, start, destination):
+    ___ shortestDistance(self, maze, start, destination
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -88,23 +88,23 @@ class Solution2:
         >>> s.shortestDistance(maze, [0, 4], [3, 2])
         -1
         """
-        if not maze or not maze[0]:
-            return -1
+        __ not maze or not maze[0]:
+            r_ -1
 
-        m, n = len(maze), len(maze[0])
+        m, n = le.(maze), le.(maze[0])
         sx, sy = start
         tx, ty = destination
         heap = [(sx, sy)]
-        distance = {(sx, sy): 0}
+        distance = {(sx, sy 0}
 
-        while heap:
+        w___ heap:
             x, y = heapq.heappop(heap)
 
             for dx, dy in ((-1, 0), (1, 0), (0, -1), (0, 1)):
                 _x = x + dx
                 _y = y + dy
 
-                while 0 <= _x < m and 0 <= _y < n and maze[_x][_y] == 0:
+                w___ 0 <= _x < m and 0 <= _y < n and maze[_x][_y] __ 0:
                     _x += dx
                     _y += dy
 
@@ -113,13 +113,13 @@ class Solution2:
 
                 _step = distance[x, y] + abs(_x - x) + abs(_y - y)
 
-                if (_x, _y) in distance and _step >= distance[_x, _y]:
+                __ (_x, _y) in distance and _step >= distance[_x, _y]:
                     continue
 
-                if _x == tx and _y == ty:
-                    return _step
+                __ _x __ tx and _y __ ty:
+                    r_ _step
 
                 distance[_x, _y] = _step
                 heapq.heappush(heap, (_x, _y))
 
-        return -1
+        r_ -1

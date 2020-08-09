@@ -42,31 +42,31 @@ The decoded string is guaranteed to have less than 2^63 letters.
 
 
 class Solution:
-    def decodeAtIndex(self, S: str, K: int) -> str:
+    ___ decodeAtIndex(self, S: str, K: int) -> str:
         """
         walk backward
         """
         l = 0
         for s in S:
-            if s.isdigit():
+            __ s.isdigit(
                 l *= int(s)
-            else:
+            ____
                 l += 1
 
         # walk backward
-        for s in reversed(S):
+        for s in reversed(S
             K %= l
-            if K == 0 and s.isalpha():
+            __ K __ 0 and s.isalpha(
                 # K == l * n, return the last chr
-                return s
-            if s.isdigit():
+                r_ s
+            __ s.isdigit(
                 l //= int(s)
-            else:
+            ____
                 l -= 1
 
         raise
 
-    def decodeAtIndex_error(self, S: str, K: int) -> str:
+    ___ decodeAtIndex_error(self, S: str, K: int) -> str:
         """
         don't generate the final string, too memory expensive
         two pointer
@@ -77,27 +77,27 @@ class Solution:
         i = 0
         j = 0
         last = None
-        n = len(S)
-        while j < n:
-            if S[j].isdigit():
-                if not last:
+        n = le.(S)
+        w___ j < n:
+            __ S[j].isdigit(
+                __ not last:
                     last = j
 
                 d = int(S[j])
                 l = last - i
-                while K >= l and d > 0:
+                w___ K >= l and d > 0:
                     K -= l
                     d -= 1
-                if d > 0:
-                    return S[i + K]
-            elif last:
+                __ d > 0:
+                    r_ S[i + K]
+            ____ last:
                     i = j
                     last = None
 
             j += 1
 
-        return S[i+K]
+        r_ S[i+K]
 
 
-if __name__ == "__main__":
-    assert Solution().decodeAtIndex("ha22", 5) == "h"
+__ __name__ __ "__main__":
+    assert Solution().decodeAtIndex("ha22", 5) __ "h"

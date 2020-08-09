@@ -2,13 +2,13 @@
 # Score: 50
 
 
-from collections import Counter, OrderedDict
+from collections ______ Counter, OrderedDict
 
 
-class OrderedCounter(Counter, OrderedDict):
+class OrderedCounter(Counter, OrderedDict
     pass
 
 
 ordered_counter = OrderedCounter(input() for _ in range(int(input())))
-print(len(ordered_counter))
+print(le.(ordered_counter))
 print(*ordered_counter.values())

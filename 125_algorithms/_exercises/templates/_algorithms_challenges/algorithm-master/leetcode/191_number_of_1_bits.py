@@ -1,15 +1,15 @@
 class Solution:
-    def hammingWeight(self, n):
+    ___ hammingWeight(self, n
         """
         :type n: int
         :rtype: int
         """
         ans = 0
-        if not n:
-            return ans
+        __ not n:
+            r_ ans
 
-        while n != 0:
+        w___ n != 0:
             n = n & (n - 1)
             ans += 1
 
-        return ans
+        r_ ans

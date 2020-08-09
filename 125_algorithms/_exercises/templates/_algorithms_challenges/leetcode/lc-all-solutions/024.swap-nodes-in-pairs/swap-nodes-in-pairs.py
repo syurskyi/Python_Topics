@@ -1,37 +1,37 @@
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
+# class ListNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-  def swapPairs(self, head):
+class Solution(object
+  ___ swapPairs(self, head
     """
     :type head: ListNode
     :rtype: ListNode
     """
 
-    def reverseList(head, k):
+    ___ reverseList(head, k
       pre = None
       cur = head
-      while cur and k > 0:
+      w___ cur and k > 0:
         tmp = cur.next
         cur.next = pre
         pre = cur
         cur = tmp
         k -= 1
       head.next = cur
-      return cur, pre
+      r_ cur, pre
 
-    if not head or not head.next:
-      return head
+    __ not head or not head.next:
+      r_ head
     ret = head.next
     p = head
     pre = None
-    while p:
+    w___ p:
       next, newHead = reverseList(p, 2)
-      if pre:
+      __ pre:
         pre.next = newHead
       pre = p
       p = next
-    return ret
+    r_ ret

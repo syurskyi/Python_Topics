@@ -1,4 +1,4 @@
-from heapq import heappop, heappush
+from heapq ______ heappop, heappush
 
 
 class Solution:
@@ -6,22 +6,22 @@ class Solution:
     @param: G: k sorted integer arrays
     @return: a sorted array
     """
-    def mergekSortedArrays(self, G):
+    ___ mergekSortedArrays(self, G
         ans = []
-        if not G:
-            return ans
+        __ not G:
+            r_ ans
 
         heap = []
-        for i in range(len(G)):
-            if not G[i]:
+        for i in range(le.(G)):
+            __ not G[i]:
                 continue
 
             heappush(heap, (G[i][0], i, 0))
 
-        while heap:
+        w___ heap:
             num, x, y = heappop(heap)
             ans.append(num)
-            if y + 1 < len(G[x]):
+            __ y + 1 < le.(G[x]
                 heappush(heap, (G[x][y + 1], x, y + 1))
 
-        return ans
+        r_ ans

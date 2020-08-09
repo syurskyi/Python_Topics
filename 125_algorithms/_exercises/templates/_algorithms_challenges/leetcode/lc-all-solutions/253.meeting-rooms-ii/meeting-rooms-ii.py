@@ -1,5 +1,5 @@
-class Solution(object):
-  def minMeetingRooms(self, intervals):
+class Solution(object
+  ___ minMeetingRooms(self, intervals
     """
     :type intervals: List[Interval]
     :rtype: int
@@ -12,9 +12,9 @@ class Solution(object):
     ans = 0
     count = 0
     for meeting in meetings:
-      if meeting[1] == 1:
+      __ meeting[1] __ 1:
         count += 1
-      else:
+      ____
         count -= 1
       ans = max(ans, count)
-    return ans
+    r_ ans

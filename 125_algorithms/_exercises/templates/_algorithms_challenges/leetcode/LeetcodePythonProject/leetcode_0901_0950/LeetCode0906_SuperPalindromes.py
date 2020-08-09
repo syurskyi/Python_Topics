@@ -1,37 +1,37 @@
-import math
+______ ma__
 
 
-class Solution(object):
-    def superpalindromesInRange(self, L, R):
+class Solution(object
+    ___ superpalindromesInRange(self, L, R
         """
         :type L: str
         :type R: str
         :rtype: int
         """
-        low = int(math.sqrt(int(L)))
-        high = int(math.sqrt(int(R)))
+        low = int(ma__.sqrt(int(L)))
+        high = int(ma__.sqrt(int(R)))
 
-        res = 1 if low <= 3 <= high else 0
+        res = 1 __ low <= 3 <= high else 0
         res += self.dfs(low, high, '')
         res += self.dfs(low, high, '0')
         res += self.dfs(low, high, '1')
         res += self.dfs(low, high, '2')
 
-        return res
+        r_ res
 
-    def dfs(self, low, high, s):
-        if len(s) > len(str(high)):
-            return 0
+    ___ dfs(self, low, high, s
+        __ le.(s) > le.(str(high)):
+            r_ 0
         count = 0
-        if s and s[0] != '0':
+        __ s and s[0] != '0':
             num = int(s)
-            if num > high:
-                return 0
-            if num >= low and self.isPalindrome(num*num):
+            __ num > high:
+                r_ 0
+            __ num >= low and self.isPalindrome(num*num
                 count += 1
-        for c in list('012'):
+        for c in list('012'
             count += self.dfs(low, high, c+s+c)
-        return count
+        r_ count
 
-    def isPalindrome(self, num):
-        return str(num) == str(num)[::-1]
+    ___ isPalindrome(self, num
+        r_ str(num) __ str(num)[::-1]

@@ -1,4 +1,4 @@
-import heapq
+______ heapq
 
 class Solution:
 
@@ -7,10 +7,10 @@ class Solution:
     @param: k: An integer
     @return: an integer, K-th largest element in N arrays
     """
-    def KthInArrays(self, arrays, k):
+    ___ KthInArrays(self, arrays, k
         res = []
         for arr in arrays: res += arr
-        if k > len(res):
-            return 'error'
+        __ k > le.(res
+            r_ 'error'
         res.sort()
-        return res[-k]
+        r_ res[-k]

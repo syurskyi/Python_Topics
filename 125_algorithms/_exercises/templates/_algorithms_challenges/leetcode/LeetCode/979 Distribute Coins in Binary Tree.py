@@ -36,26 +36,26 @@ Note:
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.ret = 0
 
-    def distributeCoins(self, root: TreeNode) -> int:
+    ___ distributeCoins(self, root: TreeNode) -> int:
         """
         dfs
         """
         self.demand(root)
-        return self.ret
+        r_ self.ret
 
-    def demand(self, node) -> int:
-        if not node:
-            return 0
+    ___ demand(self, node) -> int:
+        __ not node:
+            r_ 0
 
         demand_l = self.demand(node.left)
         demand_r = self.demand(node.right)
@@ -63,4 +63,4 @@ class Solution:
         # attribut the move to the node required
         demand = demand_l + demand_r + demand_m
         self.ret += abs(demand)
-        return demand
+        r_ demand

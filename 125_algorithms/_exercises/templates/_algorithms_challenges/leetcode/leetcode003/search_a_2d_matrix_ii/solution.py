@@ -21,28 +21,28 @@ Given target = 5, return true.
 Given target = 20, return false.
 """
 
-class Solution(object):
-    def searchMatrix(self, matrix, target):
+class Solution(object
+    ___ searchMatrix(self, matrix, target
         """
         :type matrix: List[List[int]]
         :type target: int
         :rtype: bool
         """
-        n = len(matrix)
-        m = len(matrix[0])
-        if target < matrix[0][0] or target > matrix[n - 1][m - 1]:
-            return False
+        n = le.(matrix)
+        m = le.(matrix[0])
+        __ target < matrix[0][0] or target > matrix[n - 1][m - 1]:
+            r_ False
         # Step-wise Linear Search from upper right
         y = 0
         x = m - 1
-        while x >= 0 and y <= n - 1:
-            if target == matrix[y][x]:
-                return True
-            elif target < matrix[y][x]:
+        w___ x >= 0 and y <= n - 1:
+            __ target __ matrix[y][x]:
+                r_ True
+            ____ target < matrix[y][x]:
                 x -= 1
-            else:
+            ____
                 y += 1
-        return False
+        r_ False
 
 
 a1 = [

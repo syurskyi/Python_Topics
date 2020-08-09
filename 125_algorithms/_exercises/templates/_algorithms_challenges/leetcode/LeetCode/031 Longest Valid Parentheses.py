@@ -9,8 +9,8 @@ Another example is ")()())", where the longest valid parentheses substring is "(
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def longestValidParentheses(self, s):
+class Solution(object
+    ___ longestValidParentheses(self, s
         """
         Stack holds the index of unpaired brackets
 
@@ -27,21 +27,21 @@ class Solution(object):
         """
         stk = []  # hold the INDEX of UNPAIRED bracket, either ( or )
         maxa = 0
-        for idx, val in enumerate(s):
-            if val == ")" and stk and s[stk[-1]] == "(":
+        for idx, val in enumerate(s
+            __ val __ ")" and stk and s[stk[-1]] __ "(":
                 stk.pop()
-                if not stk:
+                __ not stk:
                     maxa = max(maxa, idx+1)
-                else:
+                ____
                     maxa = max(maxa, idx-stk[-1])
-            else:
+            ____
                 stk.append(idx)
 
-        return maxa
+        r_ maxa
 
 
-if __name__ == "__main__":
-    assert Solution().longestValidParentheses("(()()") == 4
-    assert Solution().longestValidParentheses("()(()") == 2
-    assert Solution().longestValidParentheses("(()") == 2
-    assert Solution().longestValidParentheses(")()())") == 4
+__ __name__ __ "__main__":
+    assert Solution().longestValidParentheses("(()()") __ 4
+    assert Solution().longestValidParentheses("()(()") __ 2
+    assert Solution().longestValidParentheses("(()") __ 2
+    assert Solution().longestValidParentheses(")()())") __ 4

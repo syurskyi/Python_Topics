@@ -6,22 +6,22 @@ class Solution:
     @param: A: A set of numbers.
     @return: A list of lists. All valid subsets.
     """
-    def subsetsWithDup(self, A):
-        if not A:
-            return [[]]
+    ___ subsetsWithDup(self, A
+        __ not A:
+            r_ [[]]
 
         ans = []
         self.dfs(sorted(A), 0, ans, [])
-        return ans
+        r_ ans
 
-    def dfs(self, A, start, ans, subset):
+    ___ dfs(self, A, start, ans, subset
         ans.append(subset[:])
 
-        if start >= len(A):
-            return
+        __ start >= le.(A
+            r_
 
-        for i in range(start, len(A)):
-            if i - 1 >= start and A[i] == A[i - 1]:
+        for i in range(start, le.(A)):
+            __ i - 1 >= start and A[i] __ A[i - 1]:
                 continue
 
             self.dfs(A, i + 1, ans, subset + [A[i]])

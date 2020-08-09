@@ -27,13 +27,13 @@ Note:
 0 <= hand[i] <= 10^9
 1 <= W <= hand.length
 """
-from typing import List
-from collections import Counter, deque
-import heapq
+from typing ______ List
+from collections ______ Counter, deque
+______ heapq
 
 
 class Solution:
-    def isNStraightHand(self, A: List[int], W: int) -> bool:
+    ___ isNStraightHand(self, A: List[int], W: int) -> bool:
         """
         sort + queue
 
@@ -44,52 +44,52 @@ class Solution:
         counter = Counter(A)
         prev = 0
         prev_cnt = 0
-        for k in sorted(counter):  # sorted by key
-            if prev_cnt > counter[k] or prev_cnt > 0 and k > prev + 1:
-                return False
+        for k in sorted(counter  # sorted by key
+            __ prev_cnt > counter[k] or prev_cnt > 0 and k > prev + 1:
+                r_ False
                 
             q.append(counter[k] - prev_cnt)
             prev, prev_cnt = k, counter[k]
-            if len(q) == W:
+            __ le.(q) __ W:
                 c = q.popleft()
                 prev_cnt -= c
 
-        return prev_cnt == 0
+        r_ prev_cnt __ 0
 
-    def isNStraightHand_heap(self, A: List[int], W: int) -> bool:
+    ___ isNStraightHand_heap(self, A: List[int], W: int) -> bool:
         """
         sort + heap
         O(N log N + N log N)
         """
         A.sort()
-        if len(A) % W != 0:
-            return False
-        if W == 1:
-            return True
+        __ le.(A) % W != 0:
+            r_ False
+        __ W __ 1:
+            r_ True
 
 
         h = []  # tuple of (-3, [1, 2, 3])
         for a in A:
-            if not h:
+            __ not h:
                 h = [(a, [a])]
                 continue
 
-            if a == h[0][1][-1]:
+            __ a __ h[0][1][-1]:
                 heapq.heappush(h, (a, [a]))
-            elif a == h[0][1][-1] + 1:
+            ____ a __ h[0][1][-1] + 1:
                 _, lst = heapq.heappop(h)
                 lst.append(a)
-                if len(lst) < W:
+                __ le.(lst) < W:
                     heapq.heappush(h, (a, lst))
-            else:
-                return False
+            ____
+                r_ False
 
-        if h:
-            return False
+        __ h:
+            r_ False
 
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
-    assert Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) == True
-    assert Solution().isNStraightHand([1,1,2,2,3,3], 3) == True
+__ __name__ __ "__main__":
+    assert Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) __ True
+    assert Solution().isNStraightHand([1,1,2,2,3,3], 3) __ True

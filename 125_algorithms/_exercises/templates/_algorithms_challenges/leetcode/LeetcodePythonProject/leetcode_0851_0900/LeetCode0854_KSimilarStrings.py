@@ -3,44 +3,44 @@ Created on Sep 11, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def kSimilarity(self, A, B):
+class Solution(object
+    ___ kSimilarity(self, A, B
         """
         :type A: str
         :type B: str
         :rtype: int
         """
         a, b = A, B
-        if a == b:
-            return 0
+        __ a __ b:
+            r_ 0
         q = [a]
         hashset = set([a])
         res = 0
-        while q:
+        w___ q:
             res += 1
-            size = len(q)
-            for _ in range(size):
+            size = le.(q)
+            for _ in range(size
                 s = q.pop(0)
                 i = 0
-                while s[i] == b[i]:
+                w___ s[i] __ b[i]:
                     i += 1
-                for j in range(i+1, len(s)):
-                    if s[j] == b[j] or s[i] != b[j]:
+                for j in range(i+1, le.(s)):
+                    __ s[j] __ b[j] or s[i] != b[j]:
                         continue
                     tmp = self.swap(s, i, j)
-                    if tmp == b:
-                        return res
-                    if tmp not in hashset:
+                    __ tmp __ b:
+                        r_ res
+                    __ tmp not in hashset:
                         hashset.add(tmp)
                         q.append(tmp)
-        return res
+        r_ res
     
-    def swap(self, s, i, j):
+    ___ swap(self, s, i, j
         l = list(s)
         l[i], l[j] = l[j], l[i]
-        return ''.join(l)
+        r_ ''.join(l)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 'ab',
@@ -68,5 +68,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

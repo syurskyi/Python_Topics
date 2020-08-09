@@ -4,23 +4,23 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def rangeBitwiseAnd(self, m, n):
+class Solution(object
+    ___ rangeBitwiseAnd(self, m, n
         """
         :type m: int
         :type n: int
         :rtype: int
         """
-        if m == 0:
-            return 0
+        __ m __ 0:
+            r_ 0
         moveFactor = 1
-        while m != n:
+        w___ m != n:
             m >>= 1
             n >>= 1
             moveFactor <<= 1
-        return moveFactor*m
+        r_ moveFactor*m
     
-    def test(self):
+    ___ test(self
         testCases = [
             (5, 7),
             (5, 20),
@@ -33,6 +33,6 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
     

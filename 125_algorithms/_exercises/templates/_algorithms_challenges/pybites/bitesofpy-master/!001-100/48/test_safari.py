@@ -1,4 +1,4 @@
-from safari import create_chart
+from safari ______ create_chart
 
 expected_lines = """02-13 ...........
 02-14 ..............
@@ -9,7 +9,7 @@ expected_lines = """02-13 ...........
 02-21 ..............🐍
 02-22 🐍...................""".split('\n')
 
-def test_valid_output(capfd):
+___ test_valid_output(capfd
     create_chart()
     out, _ = capfd.readouterr()
     for line in expected_lines:

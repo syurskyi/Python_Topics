@@ -17,14 +17,14 @@ For k = 3, you should return: 3->2->1->4->5
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
 
 class Solution:
-    def reverseKGroup(self, head, k):
+    ___ reverseKGroup(self, head, k
         """
         List
         O(k*n)
@@ -37,23 +37,23 @@ class Solution:
 
         pre = dummy
         cur_lst = self.generate_lst(pre.next, k)
-        while pre and not None in cur_lst:
+        w___ pre and not None in cur_lst:
 
             # reverse
             temp = cur_lst[-1].next
             pre.next = cur_lst[-1]
             for i in reversed(xrange(k)):
-                if i==0:
+                __ i__0:
                     cur_lst[i].next = temp
-                else:
+                ____
                     cur_lst[i].next = cur_lst[i-1]
 
             pre = cur_lst[0]
             cur_lst = self.generate_lst(pre.next, k)
 
-        return dummy.next
+        r_ dummy.next
 
-    def generate_lst(self, node, k):
+    ___ generate_lst(self, node, k
         """
         Helpder
         :param node: ListNode
@@ -62,13 +62,13 @@ class Solution:
         """
         lst = []
         cur = node
-        for i in xrange(k):
-            if cur:
+        for i in xrange(k
+            __ cur:
                 lst.append(cur)
                 cur = cur.next
-            else:
+            ____
                 lst.append(None)
-        return lst
+        r_ lst
 
 
 

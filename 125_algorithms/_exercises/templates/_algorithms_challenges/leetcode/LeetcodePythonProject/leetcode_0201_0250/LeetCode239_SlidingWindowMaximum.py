@@ -4,8 +4,8 @@ Created on Feb 26, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxSlidingWindow(self, nums, k):
+class Solution(object
+    ___ maxSlidingWindow(self, nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -13,17 +13,17 @@ class Solution(object):
         """
         res = []
         deque = []
-        for i, num in enumerate(nums):
-            if deque and deque[0] == i-k:
+        for i, num in enumerate(nums
+            __ deque and deque[0] __ i-k:
                 deque.pop(0)
-            while deque and nums[deque[-1]] < num:
+            w___ deque and nums[deque[-1]] < num:
                 deque.pop()
             deque.append(i)
-            if i+1>=k:
+            __ i+1>=k:
                 res.append(nums[deque[0]])
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             ([1,3,-1,-3,5,3,6,7], 3),
         ]
@@ -33,5 +33,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

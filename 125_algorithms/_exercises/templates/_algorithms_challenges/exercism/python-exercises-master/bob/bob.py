@@ -1,2 +1,2 @@
-def hey(string):
+___ hey(string
     pass

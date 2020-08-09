@@ -52,11 +52,11 @@ Note:
 1 <= D <= weights.length <= 50000
 1 <= weights[i] <= 500
 """
-from tying import List
+from tying ______ List
 
 
 class Solution:
-    def shipWithinDays(self, weights: List[int], D: int) -> int:
+    ___ shipWithinDays(self, weights: List[int], D: int) -> int:
         """
         Must respect conveyor's order
 
@@ -64,19 +64,19 @@ class Solution:
         """
         lo = max(weights)
         hi = sum(weights)
-        while lo < hi:
+        w___ lo < hi:
             mid = (lo + hi) // 2
             cnt = 1
             cur = 0
             for w in weights:
                 cur += w
-                if cur > mid:
+                __ cur > mid:
                     cnt += 1
                     cur = w
                     
-            if cnt > D:
+            __ cnt > D:
                 lo = mid + 1
-            else:
+            ____
                 hi = mid
 
-        return lo
+        r_ lo

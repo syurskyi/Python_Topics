@@ -1,4 +1,4 @@
-def get_ordinal_suffix(number):
+___ get_ordinal_suffix(number
     """Receives a number int and returns it appended with its ordinal suffix,
        so 1 -> 1st, 2 -> 2nd, 4 -> 4th, 11 -> 11th, etc.
 
@@ -14,7 +14,7 @@ def get_ordinal_suffix(number):
        """
     s_num = str(number)
     units = int(s_num[-1])
-    if not (10 < int(s_num[-2:]) < 20):
-        if 0 < units < 4:
-            return f'{number}{["st", "nd", "rd"][units - 1]}'
-    return f'{number}th'
+    __ not (10 < int(s_num[-2:]) < 20
+        __ 0 < units < 4:
+            r_ f'{number}{["st", "nd", "rd"][units - 1]}'
+    r_ f'{number}th'

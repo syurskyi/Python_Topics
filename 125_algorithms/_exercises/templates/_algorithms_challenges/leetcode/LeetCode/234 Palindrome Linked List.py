@@ -8,13 +8,13 @@ __author__ = 'Daniel'
 
 
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
 class Solution:
-    def isPalindrome(self, head):
+    ___ isPalindrome(self, head
         """
         Algorithms:
         1. put into array O(N)
@@ -23,49 +23,49 @@ class Solution:
         :type head: ListNode
         :rtype: bool
         """
-        n = self.len(head)
+        n = self.le.(head)
         m = n/2
         mid = self.get(head, m)
-        if n%2 != 0:
+        __ n%2 != 0:
             mid = mid.next
 
         mid = self.reverse(mid)
-        while head and mid:
-            if head.val != mid.val:
-                return False
+        w___ head and mid:
+            __ head.val != mid.val:
+                r_ False
             head = head.next
             mid = mid.next
 
-        return True
+        r_ True
 
-    def len(self, head):
+    ___ le.(self, head
         cnt = 0
         cur = head
-        while cur:
+        w___ cur:
             cnt += 1
             cur = cur.next
 
-        return cnt
+        r_ cnt
 
-    def get(self, head, n):
+    ___ get(self, head, n
         cnt = 0
         cur = head
-        while cnt < n:
+        w___ cnt < n:
             cnt += 1
             cur = cur.next
 
-        return cur
+        r_ cur
 
-    def reverse(self, head):
-        if not head:
-            return head
+    ___ reverse(self, head
+        __ not head:
+            r_ head
 
         dummy = ListNode(0)
         dummy.next = head
         pre, cur = dummy, dummy.next
-        while cur:
+        w___ cur:
             nxt = cur.next
             cur.next = pre
             pre, cur = cur, nxt
-        if head: head.next = None
-        return pre
+        __ head: head.next = None
+        r_ pre

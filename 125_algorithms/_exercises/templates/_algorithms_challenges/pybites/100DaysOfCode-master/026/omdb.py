@@ -1,10 +1,10 @@
-from pprint import pprint as pp
-import sys
+from pprint ______ pprint as pp
+______ sys
 
-import requests
-import requests_cache
+______ requests
+______ requests_cache
 
-from templates import TEMPLATE, HTML_TEMPLATE
+from templates ______ TEMPLATE, HTML_TEMPLATE
 
 OMDB = 'http://www.omdbapi.com'
 OMDB_BY_IMDB = OMDB + '/?i={imdb}'
@@ -14,41 +14,41 @@ OMDB_BY_TITLE_YEAR = OMDB + '/?t={title}&y={year}'
 requests_cache.install_cache()
 
 
-def query_omdb(**kwargs):
-    if 'imdb' in kwargs:
+___ query_omdb(**kwargs
+    __ 'imdb' in kwargs:
         url = OMDB_BY_IMDB.format(**kwargs)
-    else:
+    ____
         url = OMDB_BY_TITLE_YEAR.format(**kwargs)
-    return requests.get(url).json()
+    r_ requests.get(url).json()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     args = sys.argv[1:]
-    html = True if '-h' in args else False
-    verbose = True if '-v' in args else False
+    html = True __ '-h' in args else False
+    verbose = True __ '-v' in args else False
     answer = None
 
     print('Script to query OMDb API')
 
-    while answer != 'q':
-        answer = input('Enter IMDB ID or title (q to exit): ').lower()
+    w___ answer != 'q':
+        answer = input('Enter IMDB ID or title (q to exit ').lower()
         params = dict()
 
-        if answer == 'q':
+        __ answer __ 'q':
             print('Bye')
             break
-        elif 'tt' in answer:
+        ____ 'tt' in answer:
             params['imdb'] = answer
-        else:
+        ____
             params['title'] = answer
             params['year'] = input('Year of release? ')
 
         resp = query_omdb(**params)
-        if verbose: 
+        __ verbose:
             pp(resp)
 
-        if 'Error' in resp:
+        __ 'Error' in resp:
             print('Error: {}'.format(resp['Error']))
-        else:
-            tmpl = HTML_TEMPLATE if html else TEMPLATE
+        ____
+            tmpl = HTML_TEMPLATE __ html else TEMPLATE
             print(tmpl.format(**dict(resp)))

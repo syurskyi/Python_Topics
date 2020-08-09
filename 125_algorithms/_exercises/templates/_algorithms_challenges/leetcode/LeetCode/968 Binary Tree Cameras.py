@@ -31,41 +31,41 @@ Every node has value 0.
 
 # Definition for a binary tree node.
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def __init__(self):
+    ___ __init__(self
         self.covered = {None}
         self.cnt = 0
 
-    def minCameraCover(self, root: TreeNode) -> int:
+    ___ minCameraCover(self, root: TreeNode) -> int:
         """
         Greedy?
         Bottom up, cover leaf's parent is strictly better than cover leaf
         """
         self.dfs(root, None)
-        if root not in self.covered:
+        __ root not in self.covered:
             self.covered.add(root)
             self.cnt += 1
 
-        return self.cnt
+        r_ self.cnt
 
 
-    def dfs(self, node, pi):
+    ___ dfs(self, node, pi
         """
         post order
         rely on the parents to cover it 
         """
-        if not node:
-            return
+        __ not node:
+            r_
 
         self.dfs(node.left, node)
         self.dfs(node.right, node)
-        if node.left not in self.covered or node.right not in self.covered:
+        __ node.left not in self.covered or node.right not in self.covered:
             self.cnt += 1
             self.covered.add(node.left)
             self.covered.add(node.right)
@@ -74,10 +74,10 @@ class Solution:
 
 
 class SolutionErrror:
-    def __init__(self):
+    ___ __init__(self
         self.covered = set()
 
-    def minCameraCover(self, root: TreeNode) -> int:
+    ___ minCameraCover(self, root: TreeNode) -> int:
         """
         Greedy?
         Top-down, no good.
@@ -87,21 +87,21 @@ class SolutionErrror:
         dummy.left = root
         self.dfs(root, dummy)
         self.covered.discard(dummy)  # swallow KeyError
-        return len(self.covered)
+        r_ le.(self.covered)
 
-    def dfs(self, node, pi):
+    ___ dfs(self, node, pi
         """
         post order
         """
-        if not node:
-            return
+        __ not node:
+            r_
 
         self.dfs(node.left, node)
         self.dfs(node.right, node)
         # post oder
-        if (
+        __ (
             (not node.left or node.left in self.covered) and
             (not node.right or node.right in self.covered)
-        ):
+
             self.covered.add(pi)
-            return
+            r_

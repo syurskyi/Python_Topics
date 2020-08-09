@@ -3,8 +3,8 @@ class Solution:
     @param matrix : the martix
     @return: the distance of grid to the police
     """
-    def policeDistance(self, matrix):
-        m, n = len(matrix), len(matrix)
+    ___ policeDistance(self, matrix
+        m, n = le.(matrix), le.(matrix)
 
         POLICE = 1
         WALL = -1
@@ -13,11 +13,11 @@ class Solution:
         ans = [[float('inf')] * n for _ in range(m)]
         queue = []
 
-        for x in range(m):
-            for y in range(n):
-                if matrix[x][y] == WALL:
+        for x in range(m
+            for y in range(n
+                __ matrix[x][y] __ WALL:
                     ans[x][y] = -1
-                elif matrix[x][y] == POLICE:
+                ____ matrix[x][y] __ POLICE:
                     ans[x][y] = 0
                     queue.append((x, y))
 
@@ -25,18 +25,18 @@ class Solution:
             for dx, dy in (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
-            ):
+
                 _x = x + dx
                 _y = y + dy
 
-                if not (0 <= _x < m and 0 <= _y < n):
+                __ not (0 <= _x < m and 0 <= _y < n
                     continue
-                if matrix[_x][_y] == WALL:
+                __ matrix[_x][_y] __ WALL:
                     continue
-                if ans[_x][_y] <= ans[x][y] + 1:
+                __ ans[_x][_y] <= ans[x][y] + 1:
                     continue
 
                 ans[_x][_y] = ans[x][y] + 1
                 queue.append((_x, _y))
 
-        return ans
+        r_ ans

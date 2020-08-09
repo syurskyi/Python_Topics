@@ -2,7 +2,7 @@
 Binary Searching
 """
 class Solution:
-    def longestIncreasingSubsequence(self, A):
+    ___ longestIncreasingSubsequence(self, A
         """
         :type A: List[int]
         :rtype: int
@@ -19,50 +19,50 @@ class Solution:
 
         lis_size = 4
         """
-        if not A:
-            return 0
+        __ not A:
+            r_ 0
 
         INFINITY = float('inf')
-        n = len(A)
+        n = le.(A)
         P = [-INFINITY] + [INFINITY] * n
 
-        for i in range(n):
+        for i in range(n
             j = self.binary_search(P, A[i])
             P[j] = A[i]
 
-        for i in range(n, -1, -1):
-            if P[i] < INFINITY:
-                return i
+        for i in range(n, -1, -1
+            __ P[i] < INFINITY:
+                r_ i
 
-        return 0
+        r_ 0
 
-    def binary_search(self, P, a):
-        left, right = 0, len(P) - 1
+    ___ binary_search(self, P, a
+        left, right = 0, le.(P) - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
-            if P[mid] < a:
+            __ P[mid] < a:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        return right
+        r_ right
 
 
 """
 DP + Print Paths
 """
 class Solution:
-    def longestIncreasingSubsequence(self, A):
+    ___ longestIncreasingSubsequence(self, A
         """
         :type A: List[int]
         :rtype: int
         """
         lis_size = 0
-        if not A:
-            return lis_size
+        __ not A:
+            r_ lis_size
 
-        n = len(A)
+        n = le.(A)
 
         """
         `dp[i]` means the maximum size of LIS end at `i`
@@ -72,24 +72,24 @@ class Solution:
         # pi = [0] * n
         # end_at = -1
 
-        for i in range(n):
-            for j in range(i):
+        for i in range(n
+            for j in range(i
                 """
                 `dp[j]` the existing subseq end at `j`
                 `+ 1` means included `A[i]`
                 """
-                if A[j] < A[i] and dp[j] + 1 > dp[i]:
+                __ A[j] < A[i] and dp[j] + 1 > dp[i]:
                     dp[i] = dp[j] + 1
                     # pi[i] = j
 
-                if dp[i] > lis_size:
+                __ dp[i] > lis_size:
                     lis_size = dp[i]
                     # end_at = i
 
         # paths = [0] * lis_size
-        # for i in range(lis_size - 1, -1, -1):
+        # for i in range(lis_size - 1, -1, -1
         #     paths[i] = A[end_at]
         #     end_at = pi[end_at]
         # print(paths)
 
-        return lis_size
+        r_ lis_size

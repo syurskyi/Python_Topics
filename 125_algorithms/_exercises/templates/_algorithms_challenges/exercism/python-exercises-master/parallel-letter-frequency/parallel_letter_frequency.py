@@ -1,2 +1,2 @@
-def calculate(text_input):
+___ calculate(text_input
     pass

@@ -1,17 +1,17 @@
-class Solution(object):
-  def hIndex(self, citations):
+class Solution(object
+  ___ hIndex(self, citations
     """
     :type citations: List[int]
     :rtype: int
     """
-    if not citations:
-      return 0
-    n = len(citations)
+    __ not citations:
+      r_ 0
+    n = le.(citations)
     start, end = 0, n - 1
-    while start < end:
+    w___ start < end:
       mid = start + (end - start) / 2
-      if citations[mid] >= n - mid:
+      __ citations[mid] >= n - mid:
         end = mid
-      else:
+      ____
         start = mid + 1
-    return n - start if citations[start] != 0 else 0
+    r_ n - start __ citations[start] != 0 else 0

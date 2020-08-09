@@ -2,7 +2,7 @@
 # Score: 10
 
 
-from itertools import product
+from itertools ______ product
 
 
 a = list(map(int, input().split()))

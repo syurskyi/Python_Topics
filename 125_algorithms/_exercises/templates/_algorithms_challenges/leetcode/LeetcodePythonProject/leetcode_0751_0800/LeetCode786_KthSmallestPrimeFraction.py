@@ -3,8 +3,8 @@ Created on Apr 10, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def kthSmallestPrimeFraction(self, A, K):
+class Solution(object
+    ___ kthSmallestPrimeFraction(self, A, K
         """
         :type A: List[int]
         :type K: int
@@ -13,7 +13,7 @@ class Solution(object):
         # Use Java PriorityQueue comparator
         pass
     
-    def test(self):
+    ___ test(self
         testCases = [
             [ [1, 2, 3, 5], 3 ],
             [ [1, 7], 1 ],
@@ -25,5 +25,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -10,7 +10,7 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
 """
 __author__ = 'Danyang'
 class Solution:
-    def isValidSudoku(self, board):
+    ___ isValidSudoku(self, board
         """
         Brute force - check rows, cols, and squares and maintain a hashmap to store the previously seen elements
 
@@ -32,17 +32,17 @@ class Solution:
         :return: boolean
         """
         # check row & column
-        for i in xrange(9):
+        for i in xrange(9
             row = []  # change to hashamp
             column = []
             square = []
-            for j in xrange(9):
+            for j in xrange(9
                 # check row
                 try:
                     row_element = int(board[i][j])
-                    if row_element in row:
-                        return False
-                    else:
+                    __ row_element in row:
+                        r_ False
+                    ____
                         row.append(row_element)
                 except ValueError:
                     pass
@@ -50,9 +50,9 @@ class Solution:
                 # check column
                 try:
                     column_element = int(board[j][i])
-                    if column_element in column:
-                        return False
-                    else:
+                    __ column_element in column:
+                        r_ False
+                    ____
                         column.append(column_element)
                 except ValueError:
                     pass
@@ -60,17 +60,17 @@ class Solution:
                 # check square
                 try:
                     square_element = int(board[i/3*3 + j/3][i%3*3 + j%3])
-                    if square_element in square:
-                        return False
-                    else:
+                    __ square_element in square:
+                        r_ False
+                    ____
                         square.append(square_element)
                 except ValueError:
                     pass
 
-        return True
+        r_ True
 
-if __name__=="__main__":
+__ __name____"__main__":
     assert Solution().isValidSudoku(
         ["..4...63.", ".........", "5......9.", "...56....", "4.3.....1", "...7.....", "...5.....", ".........",
          "........."]
-    )==False
+    )__False

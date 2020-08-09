@@ -2,7 +2,7 @@
 #flask_setup.py is a script to create a default Flask dir setup to start work
 #on new Flask projects.
 
-import os
+______ os
 
 project = input("Please specify a new project path. Folder will be created: ")
 

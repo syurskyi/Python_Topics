@@ -17,7 +17,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def isHappy(self, n):
+    ___ isHappy(self, n
         """
         Start with several simple cases and find the pattern.
 
@@ -28,14 +28,14 @@ class Solution:
         """
         nxt = 0
         appeared = set()
-        while True:
+        w___ True:
             nxt += (n%10)*(n%10)
             n /= 10
-            if n == 0:
-                if nxt == 1:
-                    return True
-                if nxt in appeared:
-                    return False
+            __ n __ 0:
+                __ nxt __ 1:
+                    r_ True
+                __ nxt in appeared:
+                    r_ False
 
                 appeared.add(nxt)
                 n = nxt

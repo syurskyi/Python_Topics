@@ -1,6 +1,6 @@
-class Solution(object):
+class Solution(object
 
-  def __init__(self, nums):
+  ___ __init__(self, nums
     """
 
     :type nums: List[int]
@@ -9,16 +9,16 @@ class Solution(object):
     self.nums = nums
     self.reset = lambda: self.nums
 
-  def shuffle(self):
+  ___ shuffle(self
     """
     Returns a random shuffling of the array.
     :rtype: List[int]
     """
     nums = self.nums + []
-    for i in reversed(range(0, len(nums))):
+    for i in reversed(range(0, le.(nums))):
       idx = random.randrange(0, i + 1)
       nums[i], nums[idx] = nums[idx], nums[i]
-    return nums
+    r_ nums
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)

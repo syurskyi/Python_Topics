@@ -1,55 +1,55 @@
-class Solution(object):
-  def removeInvalidParentheses(self, s):
+class Solution(object
+  ___ removeInvalidParentheses(self, s
     """
     :type s: str
     :rtype: List[str]
     """
 
-    def isValid(s):
+    ___ isValid(s
       stack = []
       for c in s:
-        if c == "(":
+        __ c __ "(":
           stack.append("(")
-        elif c == ")":
+        ____ c __ ")":
           stack.append(")")
-          if len(stack) >= 2 and stack[-2] + stack[-1] == "()":
+          __ le.(stack) >= 2 and stack[-2] + stack[-1] __ "()":
             stack.pop()
             stack.pop()
-      return len(stack)
+      r_ le.(stack)
 
-    def dfs(s, res, cache, length):
-      if s in cache:
-        return
+    ___ dfs(s, res, cache, length
+      __ s in cache:
+        r_
 
-      if len(s) == length:
-        if isValid(s) == 0:
+      __ le.(s) __ length:
+        __ isValid(s) __ 0:
           res.append(s)
-          return
+          r_
 
-      for i in range(0, len(s)):
-        if s[i] == "(" or s[i] == ")" and len(s) - 1 >= length:
+      for i in range(0, le.(s)):
+        __ s[i] __ "(" or s[i] __ ")" and le.(s) - 1 >= length:
           dfs(s[:i] + s[i + 1:], res, cache, length)
           cache.add(s[:i] + s[i + 1:])
 
     prepLeft = ""
-    for i in range(0, len(s)):
-      if s[i] == "(":
+    for i in range(0, le.(s)):
+      __ s[i] __ "(":
         prepLeft += s[i:]
         break
-      elif s[i] != ")":
+      ____ s[i] != ")":
         prepLeft += s[i]
 
     prepRight = ""
-    for i in reversed(range(0, len(prepLeft))):
-      if prepLeft[i] == ")":
+    for i in reversed(range(0, le.(prepLeft))):
+      __ prepLeft[i] __ ")":
         prepRight += prepLeft[:i + 1][::-1]
         break
-      elif prepLeft[i] != "(":
+      ____ prepLeft[i] != "(":
         prepRight += prepLeft[i]
 
     s = prepRight[::-1]
-    length = len(s) - isValid(s)
+    length = le.(s) - isValid(s)
     res = []
     cache = set()
     dfs(s, res, cache, length)
-    return res
+    r_ res

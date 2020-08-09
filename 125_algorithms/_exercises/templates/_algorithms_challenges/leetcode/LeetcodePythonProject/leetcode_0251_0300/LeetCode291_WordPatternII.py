@@ -4,34 +4,34 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def wordPatternMatch(self, pattern, s):
-        if not pattern and not s: return True
-        if not pattern or not s: return False
+class Solution(object
+    ___ wordPatternMatch(self, pattern, s
+        __ not pattern and not s: r_ True
+        __ not pattern or not s: r_ False
         hashmap = {}
-        return self.helper(pattern, s, 0, 0, hashmap, set())
+        r_ self.helper(pattern, s, 0, 0, hashmap, set())
          
-    def helper(self, pattern, s, i, j, hashmap, hashset):
-        if i == len(pattern) and j == len(s):
-            return True
-        if i >= len(pattern) or j >= len(s):
-            return False
+    ___ helper(self, pattern, s, i, j, hashmap, hashset
+        __ i __ le.(pattern) and j __ le.(s
+            r_ True
+        __ i >= le.(pattern) or j >= le.(s
+            r_ False
         c = pattern[i]
-        for k in range(j+1, len(s)+1):
+        for k in range(j+1, le.(s)+1
             sub = s[j:k]
-            if c not in hashmap and sub not in hashset:
+            __ c not in hashmap and sub not in hashset:
                 hashmap[c] = sub
                 hashset.add(sub)
-                if self.helper(pattern, s, i+1, k, hashmap, hashset):
-                    return True
+                __ self.helper(pattern, s, i+1, k, hashmap, hashset
+                    r_ True
                 del hashmap[c]
                 hashset.remove(sub)
-            elif c in hashmap and hashmap[c] == sub:
-                if self.helper(pattern, s, i+1, k, hashmap, hashset):
-                    return True
-        return False
+            ____ c in hashmap and hashmap[c] __ sub:
+                __ self.helper(pattern, s, i+1, k, hashmap, hashset
+                    r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('abab', 'redblueredblue'),
             ('aaaa', 'asdasdasdasd'),
@@ -45,5 +45,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
     
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

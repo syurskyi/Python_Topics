@@ -1,13 +1,13 @@
-from collections import deque
+from collections ______ deque
 
 
-def my_queue(n=5):
-    return deque(maxlen=n)
+___ my_queue(n=5
+    r_ deque(maxlen=n)
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     mq = my_queue()
-    for i in range(10):
+    for i in range(10
         mq.append(i)
         print((i, list(mq)))
 

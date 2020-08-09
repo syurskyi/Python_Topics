@@ -4,30 +4,30 @@ Created on Nov 5, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
-    def __init__(self):
+class Solution(object
+    ___ __init__(self
         self.cache = {}
     
-    def allPossibleFBT(self, N):
+    ___ allPossibleFBT(self, N
         """
         :type N: int
         :rtype: List[TreeNode]
         """
         res = []
-        if N%2 == 0:
-            return res
-        if N in self.cache:
-            return self.cache[N]
-        if N == 1:
+        __ N%2 __ 0:
+            r_ res
+        __ N in self.cache:
+            r_ self.cache[N]
+        __ N __ 1:
             res.append(TreeNode(0))
-            return res
-        for i in range(N):
+            r_ res
+        for i in range(N
             left = self.allPossibleFBT(i)
             right = self.allPossibleFBT(N-i-1)
             for leftNode in left:
@@ -36,19 +36,19 @@ class Solution(object):
                     root.left = leftNode
                     root.right = rightNode
                     res.append(root)
-        return res
+        r_ res
     
-    def allPossibleFBT_own_TLE(self, N):
+    ___ allPossibleFBT_own_TLE(self, N
         """
         :type N: int
         :rtype: List[TreeNode]
         """
-        if N <= 0:
-            return []
-        if N == 1:
-            return [TreeNode(0)]
+        __ N <= 0:
+            r_ []
+        __ N __ 1:
+            r_ [TreeNode(0)]
         res = []
-        for i in range(N):
+        for i in range(N
             left = self.allPossibleFBT(i)
             right = self.allPossibleFBT(N-i-1)
             for leftNode in left:
@@ -57,4 +57,4 @@ class Solution(object):
                     root.left = leftNode
                     root.right = rightNode
                     res.append(root)
-        return res
+        r_ res

@@ -4,15 +4,15 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def reconstructQueue(self, people):
+class Solution(object
+    ___ reconstructQueue(self, people
         res = []
         people.sort(key=lambda x: (-x[0], x[1]))
         for p in people:
             res.insert(p[1], p)
-        return res
+        r_ res
         
-    def test(self):
+    ___ test(self
         testCases = [
             [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]],
         ]
@@ -22,5 +22,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

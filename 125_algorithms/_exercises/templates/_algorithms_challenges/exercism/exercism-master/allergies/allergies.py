@@ -11,10 +11,10 @@ class Allergies:
         'cats': 128
     }
 
-    def __init__(self, score):
+    ___ __init__(self, score
         self.score = score
-        self.lst = list(allergy for allergy in self.ALLERGY_SCORES if
+        self.lst = list(allergy for allergy in self.ALLERGY_SCORES __
                         self.is_allergic_to(allergy))
 
-    def is_allergic_to(self, allergen):
-        return self.ALLERGY_SCORES[allergen] & self.score
+    ___ is_allergic_to(self, allergen
+        r_ self.ALLERGY_SCORES[allergen] & self.score

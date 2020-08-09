@@ -1,5 +1,5 @@
 
-from collections import defaultdict
+from collections ______ defaultdict
 
 # This class represents a directed graph using adjacency list representation
 
@@ -7,20 +7,20 @@ from collections import defaultdict
 class Graph:
 
     # Constructor
-    def __init__(self):
+    ___ __init__(self
 
         self.graph = defaultdict(list)
 
-    def setEdge(self, u, v):
+    ___ setEdge(self, u, v
         self.graph[u].append(v)
         print(self.graph)
 
-    def DFS(self, u, visited):
+    ___ DFS(self, u, visited
         visited.add(u)
         print(u, end=' ')
 
         for v in self.graph[u]:
-            if v not in visited:
+            __ v not in visited:
                 self.DFS(v, visited)
 
 

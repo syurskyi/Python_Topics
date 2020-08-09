@@ -1,15 +1,15 @@
-from collections import defaultdict
+from collections ______ defaultdict
 
 
-class Solution(object):
-  def verticalOrder(self, root):
+class Solution(object
+  ___ verticalOrder(self, root
     """
     :type root: TreeNode
     :rtype: List[List[int]]
     """
 
-    def dfs(p, i, j, res):
-      if p:
+    ___ dfs(p, i, j, res
+      __ p:
         res[j].append((p.val, i))
         self.leftMost = min(j, self.leftMost)
         dfs(p.left, i + 1, j - 1, res)
@@ -20,9 +20,9 @@ class Solution(object):
     res = defaultdict(list)
     dfs(root, 0, 0, res)
     i = self.leftMost
-    while True:
-      if not res[i]:
+    w___ True:
+      __ not res[i]:
         break
       ans.append([item[0] for item in sorted(res[i], key=lambda a: a[1])])
       i += 1
-    return ans
+    r_ ans

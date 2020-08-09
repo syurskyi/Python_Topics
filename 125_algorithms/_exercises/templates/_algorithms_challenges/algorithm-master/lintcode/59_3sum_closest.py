@@ -1,35 +1,35 @@
 class Solution:
-    def threeSumClosest(self, nums, target):
+    ___ threeSumClosest(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: int
         """
-        if not nums or len(nums) < 3 or target is None:
-            return -1
+        __ not nums or le.(nums) < 3 or target is None:
+            r_ -1
 
         ans = INF = float('inf')
-        n = len(nums)
+        n = le.(nums)
         nums.sort()
 
-        for a in range(n - 2):
-            if a > 0 and nums[a] == nums[a - 1]:
+        for a in range(n - 2
+            __ a > 0 and nums[a] __ nums[a - 1]:
                 continue
 
             b, c = a + 1, n - 1
 
-            while b < c:
+            w___ b < c:
                 total = nums[a] + nums[b] + nums[c]
 
-                if total == target:
-                    return total
+                __ total __ target:
+                    r_ total
 
-                if abs(total - target) < abs(ans - target):
+                __ abs(total - target) < abs(ans - target
                     ans = total
 
-                if total < target:
+                __ total < target:
                     b += 1
-                else:
+                ____
                     c -= 1
 
-        return ans if ans < INF else -1
+        r_ ans __ ans < INF else -1

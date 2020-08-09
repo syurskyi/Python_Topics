@@ -1,57 +1,57 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def shortestDistance(self, grid):
+class Solution(object
+  ___ shortestDistance(self, grid
     """
     :type grid: List[List[int]]
     :rtype: int
     """
 
-    def bfs(si, sj, grid, buildNum, hit):
+    ___ bfs(si, sj, grid, buildNum, hit
       dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
       queue = deque([(si, sj, 0)])
       visited = set([(si, sj)])
       count = 1
-      while queue:
+      w___ queue:
         i, j, dist = queue.popleft()
         for di, dj in dirs:
           newi, newj = i + di, j + dj
-          if (newi, newj) in visited:
+          __ (newi, newj) in visited:
             continue
-          if 0 <= newi < len(grid) and 0 <= newj < len(grid[0]) and grid[newi][newj] != 2:
-            if grid[newi][newj] != 1:
+          __ 0 <= newi < le.(grid) and 0 <= newj < le.(grid[0]) and grid[newi][newj] != 2:
+            __ grid[newi][newj] != 1:
               grid[newi][newj] -= dist + 1
               hit[newi][newj] += 1
               visited |= {(newi, newj)}
               queue.append((newi, newj, dist + 1))
-            else:
+            ____
               count += 1
             visited |= {(newi, newj)}
 
-      if count != buildNum:
+      __ count != buildNum:
         print
         count, buildNum
-        return False
-      return True
+        r_ False
+      r_ True
 
     count = 0
-    for i in range(0, len(grid)):
-      for j in range(0, len(grid[0])):
-        if grid[i][j] == 1:
+    for i in range(0, le.(grid)):
+      for j in range(0, le.(grid[0])):
+        __ grid[i][j] __ 1:
           count += 1
 
-    hit = [[0] * len(grid[0]) for _ in range(0, len(grid))]
-    for i in range(0, len(grid)):
-      for j in range(0, len(grid[0])):
-        if grid[i][j] == 1:
-          if not bfs(i, j, grid, count, hit):
-            return -1
+    hit = [[0] * le.(grid[0]) for _ in range(0, le.(grid))]
+    for i in range(0, le.(grid)):
+      for j in range(0, le.(grid[0])):
+        __ grid[i][j] __ 1:
+          __ not bfs(i, j, grid, count, hit
+            r_ -1
 
     ans = float("-inf")
-    for i in range(0, len(grid)):
-      for j in range(0, len(grid[0])):
-        if grid[i][j] < 0 and hit[i][j] == count:
+    for i in range(0, le.(grid)):
+      for j in range(0, le.(grid[0])):
+        __ grid[i][j] < 0 and hit[i][j] __ count:
           ans = max(ans, grid[i][j])
           grid[i][j] = 0
-    return -ans if ans != float("-inf") else -1
+    r_ -ans __ ans != float("-inf") else -1

@@ -26,16 +26,16 @@ You may assume start and end string is not the same.
 
 
 class Solution:
-    def is_neighbor(self, p, q):
+    ___ is_neighbor(self, p, q
         diff = 0
-        for a, b in zip(p, q):
-            if a != b:
+        for a, b in zip(p, q
+            __ a != b:
                 diff += 1
-            if diff > 1:
-                return False
-        return True
+            __ diff > 1:
+                r_ False
+        r_ True
 
-    def minMutation(self, start, end, bank):
+    ___ minMutation(self, start, end, bank
         """
         BFS, record level and avoid loop
 
@@ -49,22 +49,22 @@ class Solution:
         q = [start]
         visited = {start}
         lvl = 0
-        while q:
+        w___ q:
             cur_q = []
             for e in q:
-                if e == end:
-                    return lvl
+                __ e __ end:
+                    r_ lvl
                 for t in bank:
-                    if t not in visited and self.is_neighbor(e, t):
+                    __ t not in visited and self.is_neighbor(e, t
                         visited.add(t)
                         cur_q.append(t)
 
             lvl += 1
             q = cur_q
 
-        return -1
+        r_ -1
 
 
-if __name__ == "__main__":
-    assert Solution().minMutation("AACCTTGG", "AATTCCGG", ["AATTCCGG","AACCTGGG","AACCCCGG","AACCTACC"]) == -1
-    assert Solution().minMutation("AACCGGTT", "AAACGGTA", ["AACCGGTA", "AACCGCTA", "AAACGGTA"]) == 2
+__ __name__ __ "__main__":
+    assert Solution().minMutation("AACCTTGG", "AATTCCGG", ["AATTCCGG","AACCTGGG","AACCCCGG","AACCTACC"]) __ -1
+    assert Solution().minMutation("AACCGGTT", "AAACGGTA", ["AACCGGTA", "AACCGCTA", "AAACGGTA"]) __ 2

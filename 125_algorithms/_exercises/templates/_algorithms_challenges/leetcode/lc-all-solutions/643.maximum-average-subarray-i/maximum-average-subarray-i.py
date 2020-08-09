@@ -1,8 +1,8 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def findMaxAverage(self, nums, k):
+class Solution(object
+  ___ findMaxAverage(self, nums, k
     """
     :type nums: List[int]
     :type k: int
@@ -14,8 +14,8 @@ class Solution(object):
     for num in nums:
       queue.append(num)
       s += num
-      if len(queue) > k:
+      __ le.(queue) > k:
         s -= queue.popleft()
-      if len(queue) == k:
+      __ le.(queue) __ k:
         ans = max(ans, float(s) / k)
-    return ans
+    r_ ans

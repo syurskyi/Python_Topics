@@ -4,56 +4,56 @@ Created on Oct 4, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x, left=None, right=None):
+class TreeNode(object
+    ___ __init__(self, x, left=None, right=None
         self.val = x
         self.left = left
         self.right = right
 
-class Solution(object):
-    def findTarget(self, root, k):
-        return self.dfs(root, set(), k)
+class Solution(object
+    ___ findTarget(self, root, k
+        r_ self.dfs(root, set(), k)
     
-    def dfs(self, root, hashset, k):
-        if not root:
-            return False
-        if k-root.val in hashset:
-            return True
+    ___ dfs(self, root, hashset, k
+        __ not root:
+            r_ False
+        __ k-root.val in hashset:
+            r_ True
         hashset.add(root.val)
-        return self.dfs(root.left, hashset, k) or\
+        r_ self.dfs(root.left, hashset, k) or\
             self.dfs(root.right, hashset, k)
     
-    def findTargetSpace(self, root, k):
+    ___ findTargetSpace(self, root, k
         """
         :type root: TreeNode
         :type k: int
         :rtype: bool
         """
-        if not root: return False
+        __ not root: r_ False
         arr = []
         stack = []
         node = root
-        while node:
+        w___ node:
             stack.append(node)
             node = node.left
-        while stack:
+        w___ stack:
             node = stack.pop()
             arr.append(node.val)
             node0 = node.right
-            while node0:
+            w___ node0:
                 stack.append(node0)
                 node0 = node0.left
-        i, j = 0, len(arr)-1
-        while i < j:
-            if k == arr[i]+arr[j]:
-                return True
-            elif k > arr[i]+arr[j]:
+        i, j = 0, le.(arr)-1
+        w___ i < j:
+            __ k __ arr[i]+arr[j]:
+                r_ True
+            ____ k > arr[i]+arr[j]:
                 i += 1
-            else:
+            ____
                 j -= 1
-        return False
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 TreeNode(2, TreeNode(1), TreeNode(3)),
@@ -73,5 +73,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

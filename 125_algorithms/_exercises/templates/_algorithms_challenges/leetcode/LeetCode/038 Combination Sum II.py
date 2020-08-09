@@ -17,7 +17,7 @@ A solution set is:
 """
 __author__ = 'Danyang'
 class Solution:
-    def combinationSum2(self, candidates, target):
+    ___ combinationSum2(self, candidates, target
         """
         dfs
         :param candidates: a list of integers
@@ -27,9 +27,9 @@ class Solution:
         result = []
         candidates.sort()
         self.get_combination_sum(candidates, [], target, result)
-        return result
+        r_ result
 
-    def get_combination_sum(self, candidates, cur, target, result):
+    ___ get_combination_sum(self, candidates, cur, target, result
         """
         dfs with post-order jump
         :param candidates: a list of integers
@@ -38,22 +38,22 @@ class Solution:
         :param result: a list of lists of integers
         :return:
         """
-        if sum(cur)==target:
+        __ sum(cur)__target:
             result.append(cur)
-            return
-        if sum(cur)>target:
-            return
+            r_
+        __ sum(cur)>target:
+            r_
 
-        # for ind, element in enumerate(candidates):
+        # for ind, element in enumerate(candidates
         #    self.get_combination_sum(candidates[ind+1:], cur+[element], target, result)
 
         # consider [1, 1, 1, 6], target 8
         ind = 0
-        while ind<len(candidates):
+        w___ ind<le.(candidates
             self.get_combination_sum(candidates[ind+1:], cur+[candidates[ind]], target, result)
             # post-order jump
-            while ind+1<len(candidates) and candidates[ind]==candidates[ind+1]: ind+= 1  # jump to avoid duplicate
+            w___ ind+1<le.(candidates) and candidates[ind]__candidates[ind+1]: ind+= 1  # jump to avoid duplicate
             ind += 1
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)

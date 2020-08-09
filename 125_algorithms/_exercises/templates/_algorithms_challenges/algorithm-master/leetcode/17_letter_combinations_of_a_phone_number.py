@@ -1,22 +1,22 @@
 class Solution:
-    def letterCombinations(self, s):
+    ___ letterCombinations(self, s
         """
         :type s: str
         :rtype: List[str]
         """
-        if not s:
-            return []
+        __ not s:
+            r_ []
 
         L = {
-            '2': 'abc', '3': 'def',  '4': 'ghi', '5': 'jkl',
+            '2': 'abc', '3': '___',  '4': 'ghi', '5': 'jkl',
             '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz',
         }
 
         queue, _queue = [], []
         for d in s:
-            if d not in L:
-                return []
-            if not queue:
+            __ d not in L:
+                r_ []
+            __ not queue:
                 queue.extend(list(L[d]))
                 continue
 
@@ -26,4 +26,4 @@ class Solution:
             queue, _queue = _queue, []
 
         queue.sort()
-        return queue
+        r_ queue

@@ -36,26 +36,26 @@ N is a positive integer and will not exceed 15.
 
 
 class Solution:
-    def countArrangement(self, N: int) -> int:
+    ___ countArrangement(self, N: int) -> int:
         """
         dfs
         """
         candidates = set(range(1, N+1))
         ret = self.dfs(candidates, 1, N)
-        return ret
+        r_ ret
 
-    def dfs(self, candidates, i, N):
-        if i > N:
-            return 1
+    ___ dfs(self, candidates, i, N
+        __ i > N:
+            r_ 1
 
         ret = 0
         for c in candidates:
-            if c % i == 0 or i % c == 0:
+            __ c % i __ 0 or i % c __ 0:
                 candidates.remove(c)
                 ret += self.dfs(candidates, i+1, N)
                 candidates.add(c)
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().countArrangement(2) == 2
+__ __name__ __ "__main__":
+    assert Solution().countArrangement(2) __ 2

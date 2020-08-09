@@ -1,38 +1,38 @@
 '''Script to convert multiple images into a gif. Found out about imageio here:
 http://stackoverflow.com/questions/753190/programmatically-generate-video-or-animated-gif-in-python'''
-import glob
-import sys
+______ glob
+______ sys
 
-import imageio
+______ imageio
 
 DURATION = 1.5
 OUT_GIF = 'out.gif'
 VALID_EXTENSIONS = ('png', 'jpg')
 
 
-def create_gif(filenames, duration=DURATION):
+___ create_gif(filenames, duration=DURATION
     images = []
     for filename in filenames:
         images.append(imageio.imread(filename))
     imageio.mimsave(OUT_GIF, images, duration=duration)
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
 
     script = sys.argv.pop(0)
     args = sys.argv
 
-    if len(args) == 0:
+    __ le.(args) __ 0:
         print('Usage: {} <glob pattern or list images>'.format(script))
         sys.exit(1)
 
-    elif len(args) == 1:
+    ____ le.(args) __ 1:
         filenames = glob.glob(args[0])
 
-    else:
+    ____
         filenames = args
 
-    if not all(f.lower().endswith(VALID_EXTENSIONS) for f in filenames):
+    __ not all(f.lower().endswith(VALID_EXTENSIONS) for f in filenames
         print('Only png and jpg files allowed')
         sys.exit(1)
 

@@ -1,2 +1,2 @@
-def rotate():
+___ rotate(
     pass

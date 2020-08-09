@@ -1,20 +1,20 @@
-class Solution(object):
-  def canWin(self, s):
+class Solution(object
+  ___ canWin(self, s
     """
     :type s: str
     :rtype: bool
     """
 
-    def helper(s, visited):
-      if s in visited:
-        return visited[s]
+    ___ helper(s, visited
+      __ s in visited:
+        r_ visited[s]
 
       visited[s] = False
-      for i in range(0, len(s) - 1):
-        if s[i] + s[i + 1] == "++":
-          if helper(s[:i] + "--" + s[i + 2:], visited) == False:
+      for i in range(0, le.(s) - 1
+        __ s[i] + s[i + 1] __ "++":
+          __ helper(s[:i] + "--" + s[i + 2:], visited) __ False:
             visited[s] = True
-      return visited[s]
+      r_ visited[s]
 
     visited = {}
-    return helper(s, visited)
+    r_ helper(s, visited)

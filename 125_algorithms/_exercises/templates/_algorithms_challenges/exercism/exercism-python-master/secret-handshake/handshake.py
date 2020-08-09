@@ -1,39 +1,39 @@
 """Creates and decodes binary handshakes from Mary Poppins"""
 
-def binary(func):
+___ binary(func
     """Decorator to force correct string into handshake"""
-    def force_binary(secret):
+    ___ force_binary(secret
         """force binary string"""
-        if type(secret) != int:
+        __ type(secret) != int:
             try:
                 secret = int(secret, 2)
             except ValueError:
                 secret = 0
-        if secret < 0:
+        __ secret < 0:
             secret = 0
-        return func(format(secret, "05b")[::-1])
-    return force_binary
+        r_ func(format(secret, "05b")[::-1])
+    r_ force_binary
 
 @binary
-def handshake(secret):
+___ handshake(secret
     """Decodes binary handshake"""
     steps = ["wink", "double blink", "close your eyes", "jump"]
     to_do = []
-    for bit, action in zip(secret, steps):
-        if bit == "1":
+    for bit, action in zip(secret, steps
+        __ bit __ "1":
             to_do.append(action)
-    if secret[-1] == "1":
+    __ secret[-1] __ "1":
         to_do.reverse()
-    return to_do
+    r_ to_do
 
-def code(shake):
+___ code(shake
     """Creat binary handshake"""
     values = ("wink", "double blink", "close your eyes", "jump")
     secret = 0
     for action in shake:
-        if action not in values:
-            return '0'
+        __ action not in values:
+            r_ '0'
         secret |= 2 ** values.index(action)
-    if shake and values.index(shake[0]) > values.index(shake[-1]):
+    __ shake and values.index(shake[0]) > values.index(shake[-1]
         secret |= 16
-    return format(secret, "b")
+    r_ format(secret, "b")

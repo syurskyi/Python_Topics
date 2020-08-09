@@ -1,32 +1,32 @@
-class Solution(object):
+class Solution(object
   # brutal force TLE
-  def _shortestPalindrome(self, s):
+  ___ _shortestPalindrome(self, s
     """
     :type s: str
     :rtype: str
     """
 
-    def isPal(cand):
-      start, end = 0, len(cand) - 1
-      while start < end:
-        if cand[start] != cand[end]:
-          return False
+    ___ isPal(cand
+      start, end = 0, le.(cand) - 1
+      w___ start < end:
+        __ cand[start] != cand[end]:
+          r_ False
         start += 1
         end -= 1
-      return True
+      r_ True
 
-    n = len(s)
+    n = le.(s)
     ans = s[::-1] + s
-    ansLen = 2 * len(s)
-    for i in reversed(range(0, len(s) + 1)):
+    ansLen = 2 * le.(s)
+    for i in reversed(range(0, le.(s) + 1)):
       newPal = s[i:][::-1] + s
-      if isPal(newPal) and n + len(s) - i < ansLen:
-        ansLen = n + len(s) - i
+      __ isPal(newPal) and n + le.(s) - i < ansLen:
+        ansLen = n + le.(s) - i
         ans = newPal
-    return ans
+    r_ ans
 
-  def shortestPalindrome(self, s):
+  ___ shortestPalindrome(self, s
     r = s[::-1]
-    for i in range(len(s) + 1):
-      if s.startswith(r[i:]):
-        return r[:i] + s
+    for i in range(le.(s) + 1
+      __ s.startswith(r[i:]
+        r_ r[:i] + s

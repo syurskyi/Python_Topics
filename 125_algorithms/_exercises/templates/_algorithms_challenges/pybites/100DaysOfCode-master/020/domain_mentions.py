@@ -1,8 +1,8 @@
-import configparser
-import logging
+______ configparser
+______ logging
 
-from slacker import Slacker
-from twython import TwythonStreamer
+from slacker ______ Slacker
+from twython ______ TwythonStreamer
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -31,13 +31,13 @@ logging.basicConfig(level=logging.DEBUG,
                     filename='bot.log')
 
 
-def create_post(data):
+___ create_post(data
     tweet_text = data['text']
     tweet_id = data['id_str']
     user = data['user']['screen_name']
     name = data['user']['name']
     followers = data['user']['followers_count']
-    return MSG.format(domain='.'.join(DOMAIN),
+    r_ MSG.format(domain='.'.join(DOMAIN),
                       user=user,
                       name=name,
                       followers=followers,
@@ -45,10 +45,10 @@ def create_post(data):
                       tweet_id=tweet_id)
 
 
-class MyStreamer(TwythonStreamer):
+class MyStreamer(TwythonStreamer
     ''' https://twython.readthedocs.io/en/latest/usage/streaming_api.html '''
 
-    def on_success(self, data):
+    ___ on_success(self, data
         post = create_post(data)
         logging.debug(post)
         try:
@@ -58,12 +58,12 @@ class MyStreamer(TwythonStreamer):
             logging.error('an exception occurred in slack.chat.post_message({}, {}, as_user=True)'.format(CHANNEL, post))
             logging.error('exception raised by slack API was:\n{}\n'.format(exc))
 
-    def on_error(self, status_code, data):
+    ___ on_error(self, status_code, data
         print('An error occurred: {}, exiting'.format(status_code))
         self.disconnect()
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
 
     stream = MyStreamer(CONSUMER_KEY, CONSUMER_SECRET,
                         ACCESS_TOKEN, ACCESS_SECRET)

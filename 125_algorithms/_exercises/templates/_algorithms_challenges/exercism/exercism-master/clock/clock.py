@@ -1,34 +1,34 @@
 class Clock:
-    def __init__(self, hours, mins):
+    ___ __init__(self, hours, mins
         self.hours = hours
         self.mins = mins
         self.fixup()
 
-    def __eq__(self, other):
-        return self.hours == other.hours and self.mins == other.mins
+    ___ __eq__(self, other
+        r_ self.hours __ other.hours and self.mins __ other.mins
 
-    def __str__(self):
-        return (self.format_hours() + ':' +
+    ___ __str__(self
+        r_ (self.format_hours() + ':' +
                 self.format_mins())
 
-    def add(self, additional_mins):
+    ___ add(self, additional_mins
         self.mins += additional_mins
         self.fixup()
-        return self
+        r_ self
 
-    def fixup(self):
+    ___ fixup(self
         self.fixup_mins()
         self.fixup_hours()
 
-    def fixup_hours(self):
+    ___ fixup_hours(self
         self.hours = int(self.hours % 24)
 
-    def fixup_mins(self):
+    ___ fixup_mins(self
         self.hours += self.mins // 60
         self.mins = int(self.mins % 60)
 
-    def format_hours(self):
-        return str(self.hours).zfill(2)
+    ___ format_hours(self
+        r_ str(self.hours).zfill(2)
 
-    def format_mins(self):
-        return str(self.mins).zfill(2)
+    ___ format_mins(self
+        r_ str(self.mins).zfill(2)

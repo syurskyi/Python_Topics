@@ -7,13 +7,13 @@ You may assume that duplicates do not exist in the tree.
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 class Solution:
-    def buildTree(self, inorder, postorder):
+    ___ buildTree(self, inorder, postorder
         """
         Recursive algorithm. Pre-order, in-order, post-order traversal relationship
 
@@ -24,8 +24,8 @@ class Solution:
         :param postorder: a list of integers
         :return: TreeNode root
         """
-        if not inorder:
-            return None
+        __ not inorder:
+            r_ None
 
         root = TreeNode(postorder[-1])
         root_index = inorder.index(root.val)
@@ -33,4 +33,4 @@ class Solution:
         root.left = self.buildTree(inorder[:root_index], postorder[:root_index])
         root.right = self.buildTree(inorder[root_index+1:], postorder[root_index:-1])
 
-        return root
+        r_ root

@@ -1,5 +1,5 @@
 class Solution:
-    def findOrder(self, n, prerequisites):
+    ___ findOrder(self, n, prerequisites
         """
         :type n: int
         :type prerequisites: list[list[int]]
@@ -7,8 +7,8 @@ class Solution:
         """
         ans = []
 
-        if not n:
-            return ans
+        __ not n:
+            r_ ans
 
         indeg = [0] * n
         edges = [[] for _ in range(n)]
@@ -17,16 +17,16 @@ class Solution:
             indeg[c] += 1
             edges[p].append(c)
 
-        queue = [c for c in range(n) if indeg[c] == 0]
+        queue = [c for c in range(n) __ indeg[c] __ 0]
 
         for p in queue:
             for c in edges[p]:
                 indeg[c] -= 1
 
-                if indeg[c] == 0:
+                __ indeg[c] __ 0:
                     queue.append(c)
 
-        if len(queue) != n:
-            return []
+        __ le.(queue) != n:
+            r_ []
 
-        return queue
+        r_ queue

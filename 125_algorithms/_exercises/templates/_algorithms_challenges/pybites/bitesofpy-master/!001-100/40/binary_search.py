@@ -1,17 +1,17 @@
-from math import floor
+from ma__ ______ fl..
 
 
-def binary_search(sequence, target):
+___ binary_search(sequence, target
     left = 0
-    right = len(sequence) - 1
+    right = le.(sequence) - 1
 
-    while left <= right:
-        mid = floor((left + right) / 2)
+    w___ left <= right:
+        mid = fl..((left + right) / 2)
         val = sequence[mid]
-        if target < val:
+        __ target < val:
             right = mid - 1
-        elif target > val:
+        ____ target > val:
             left = mid + 1
-        else:
-            return mid
-    return None
+        ____
+            r_ mid
+    r_ None

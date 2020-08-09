@@ -1,23 +1,23 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def closestValue(self, p, target):
+class Solution(object
+  ___ closestValue(self, p, target
     """
     :type root: TreeNode
     :type target: float
     :rtype: int
     """
     ans = p.val
-    while p:
-      if abs(target - p.val) < abs(ans - target):
+    w___ p:
+      __ abs(target - p.val) < abs(ans - target
         ans = p.val
-      if target < p.val:
+      __ target < p.val:
         p = p.left
-      else:
+      ____
         p = p.right
-    return ans
+    r_ ans

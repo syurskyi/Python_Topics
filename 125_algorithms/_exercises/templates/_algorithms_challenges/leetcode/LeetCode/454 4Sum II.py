@@ -23,11 +23,11 @@ The two tuples are:
 1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
 2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def fourSumCount(self, A, B, C, D):
+    ___ fourSumCount(self, A, B, C, D
         """
         Brute force with map: O(N^3)
 
@@ -43,26 +43,26 @@ class Solution:
         :type D: List[int]
         :rtype: int
         """
-        N = len(A)
+        N = le.(A)
         AB = defaultdict(int)
         CD = defaultdict(int)
-        for i in range(N):
-            for j in range(N):
+        for i in range(N
+            for j in range(N
                 AB[A[i] + B[j]] += 1
                 CD[C[i] + D[j]] += 1
 
         ret = 0
         # O(N^2)
-        for gross, count in AB.items():
+        for gross, count in AB.items(
             target = 0 - gross
             ret += count * CD[target]
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     A = [ 1, 2]
     B = [-2,-1]
     C = [-1, 2]
     D = [ 0, 2]
-    assert Solution().fourSumCount(A, B, C, D) == 2
+    assert Solution().fourSumCount(A, B, C, D) __ 2

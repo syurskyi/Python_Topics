@@ -18,12 +18,12 @@ Example 2:
 Input: [5,4,3,2,1]
 Output: false
 """
-from typing import List
-from bisect import bisect_left
+from typing ______ List
+from bisect ______ bisect_left
 
 
 class Solution:
-    def increasingTriplet(self, nums: List[int]) -> bool:
+    ___ increasingTriplet(self, nums: List[int]) -> bool:
         """
         Patience sort
         LIS dp with binary search
@@ -31,8 +31,8 @@ class Solution:
         F = [float('inf') for _ in range(3)]
         for n in nums:
             i = bisect_left(F, n)
-            if i >= 2:
-                return True
+            __ i >= 2:
+                r_ True
             F[i] = n
 
-        return False
+        r_ False

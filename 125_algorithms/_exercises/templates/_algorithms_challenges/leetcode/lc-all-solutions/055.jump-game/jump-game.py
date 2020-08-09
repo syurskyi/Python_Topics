@@ -1,22 +1,22 @@
-class Solution(object):
-  def canJump(self, nums):
+class Solution(object
+  ___ canJump(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
     pos = 0
-    bound = len(nums)
-    while pos < len(nums) - 1:
+    bound = le.(nums)
+    w___ pos < le.(nums) - 1:
       dis = nums[pos]
-      if dis == 0:
-        return False
+      __ dis __ 0:
+        r_ False
       farthest = posToFarthest = 0
       for i in range(pos + 1, min(pos + dis + 1, bound)):
         canReach = i + nums[i]
-        if i == len(nums) - 1:
-          return True
-        if canReach > farthest:
+        __ i __ le.(nums) - 1:
+          r_ True
+        __ canReach > farthest:
           farthest = canReach
           posToFarthest = i
       pos = posToFarthest
-    return True if pos >= len(nums) - 1 else False
+    r_ True __ pos >= le.(nums) - 1 else False

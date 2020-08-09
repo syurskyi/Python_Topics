@@ -7,7 +7,7 @@ elements by 1.
 
 
 class Solution:
-    def minMoves(self, nums):
+    ___ minMoves(self, nums
         """
         List out, find the pattern
         for every operation, the max number does not change, then bring the min
@@ -17,8 +17,8 @@ class Solution:
         :rtype: int
         """
         mini = min(nums)
-        return sum(map(lambda e: e - mini, nums))
+        r_ sum(map(lambda e: e - mini, nums))
 
 
-if __name__ == "__main__":
-    assert Solution().minMoves([1, 2, 3]) == 3
+__ __name__ __ "__main__":
+    assert Solution().minMoves([1, 2, 3]) __ 3

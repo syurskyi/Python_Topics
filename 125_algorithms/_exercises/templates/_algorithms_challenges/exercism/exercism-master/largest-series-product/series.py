@@ -1,16 +1,16 @@
-from functools import reduce
+from functools ______ reduce
 
 
-def largest_product(digits, size):
+___ largest_product(digits, size
     products = [reduce(lambda x, y: x * y, s, 1) for s in slices(digits, size)]
-    return max(products)
+    r_ max(products)
 
 
-def slices(digits, size):
-    if len(digits) < size:
+___ slices(digits, size
+    __ le.(digits) < size:
         raise ValueError
-    return each_cons(list(map(int, list(digits))), size)
+    r_ each_cons(list(map(int, list(digits))), size)
 
 
-def each_cons(x, size):
-    return [x[i: i + size] for i in range(len(x) - size + 1)]
+___ each_cons(x, size
+    r_ [x[i: i + size] for i in range(le.(x) - size + 1)]

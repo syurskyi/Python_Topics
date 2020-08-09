@@ -1,6 +1,6 @@
-def verse():
+___ verse(
     pass
 
 
-def rhyme():
+___ rhyme(
     pass

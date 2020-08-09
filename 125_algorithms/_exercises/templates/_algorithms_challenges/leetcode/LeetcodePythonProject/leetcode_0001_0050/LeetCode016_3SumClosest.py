@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def threeSumClosest(self, nums, target):
+class Solution(object
+    ___ threeSumClosest(self, nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -12,23 +12,23 @@ class Solution(object):
         """
         nums.sort()
         res = float('inf')
-        n = len(nums)
-        for i in range(n-2):
+        n = le.(nums)
+        for i in range(n-2
             j, k = i+1, n-1
-            while j < k:
+            w___ j < k:
                 tmp = nums[i]+nums[j]+nums[k]
                 diff = abs(tmp-target)
-                if diff < abs(res-target):
+                __ diff < abs(res-target
                     res = tmp
-                if tmp == target:
-                    return target
-                elif tmp > target:
+                __ tmp __ target:
+                    r_ target
+                ____ tmp > target:
                     k -= 1
-                else:
+                ____
                     j += 1
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [-1, 2, 1, -4],
@@ -42,5 +42,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

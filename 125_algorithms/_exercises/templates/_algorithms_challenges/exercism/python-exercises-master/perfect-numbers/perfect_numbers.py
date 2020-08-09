@@ -1,6 +1,6 @@
-def divisor_generator():
+___ divisor_generator(
     pass
 
 
-def is_perfect():
+___ is_perfect(
     pass

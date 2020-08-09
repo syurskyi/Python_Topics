@@ -2,13 +2,13 @@
 Given an array of integers, find out whether there are two distinct indices i and j in the array such that the
 difference between nums[i] and nums[j] is at most t and the difference between i and j is at most k.
 """
-from collections import OrderedDict
+from collections ______ OrderedDict
 
 __author__ = 'Daniel'
 
 
 class Solution:
-    def containsNearbyAlmostDuplicate(self, nums, k, t):
+    ___ containsNearbyAlmostDuplicate(self, nums, k, t
         """
         Two Intervals k & t:
         * Use OrderedDict to remember the index and n/t to shrink the interval to -1, 0, 1.
@@ -20,40 +20,40 @@ class Solution:
         :type nums: list[int]
         :rtype: bool
         """
-        if k < 1 or t < 0:
-            return False
+        __ k < 1 or t < 0:
+            r_ False
 
-        if t == 0:
-            return self.containsNearByDuplicate(nums, k)
+        __ t __ 0:
+            r_ self.containsNearByDuplicate(nums, k)
 
         od = OrderedDict()  # keep the window
         for n in nums:
             key = n/t
-            for j in (-1, 0, 1):  # (n-t, n, n+t), shrink the interval
+            for j in (-1, 0, 1  # (n-t, n, n+t), shrink the interval
                 m = od.get(key+j)
-                if m is not None and abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
-                    return True
+                __ m is not None and abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
+                    r_ True
 
-            while len(od) >= k:
+            w___ le.(od) >= k:
                 od.popitem(False)  # not last, i.e. the first
 
             od[key] = n
 
-        return False
+        r_ False
 
-    def containsNearByDuplicate(self, nums, k):
+    ___ containsNearByDuplicate(self, nums, k
         od = OrderedDict()
         for n in nums:
-            if od.get(n):
-                return True
+            __ od.get(n
+                r_ True
 
-            while len(od) >= k:
+            w___ le.(od) >= k:
                 od.popitem(False)
 
             od[n] = n
 
-        return False
+        r_ False
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     print Solution().containsNearbyAlmostDuplicate([-3, 3], 2, 4)

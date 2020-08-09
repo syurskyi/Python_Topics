@@ -7,7 +7,7 @@ Can you solve it without using extra space?
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
@@ -15,7 +15,7 @@ class ListNode:
 class Solution:
     # @param head, a ListNode
     # @return a list node
-    def detectCycle(self, head):
+    ___ detectCycle(self, head
         """
         if extra space available, hash table
         if not, use the model of Hare and Tortoise
@@ -26,7 +26,7 @@ class Solution:
         When hare and tortoise meet, the hare totally runs: x+hy+m. The tortoise totally runs: x+ty+m
         Because x+hy+m = 2(x+ty+m)
         Thus, ky = 2ty+x+m we have (x+m) mod y = 0 We can conclude that if the tortoise runs more x steps, it will reach\
-        the cycle's starting node, while x is the initial list size before cycle.
+        the cycle's starting node, w___ x is the initial list size before cycle.
                                 ____     ____
                               /'    |   |    \
                             /    /  |   | \   \
@@ -58,22 +58,22 @@ class Solution:
         hare = head
         tortoise = head
         flag = False
-        while hare and hare.next and tortoise:
+        w___ hare and hare.next and tortoise:
             hare = hare.next.next
             tortoise = tortoise.next
-            if hare==tortoise:
+            __ hare__tortoise:
                 flag = True
                 break
 
-        if not flag:
-            return None
+        __ not flag:
+            r_ None
 
         # run more x steps
         cur = head
-        while cur:
-            if cur==tortoise:
+        w___ cur:
+            __ cur__tortoise:
                 break
             cur = cur.next
             tortoise = tortoise.next
 
-        return cur
+        r_ cur

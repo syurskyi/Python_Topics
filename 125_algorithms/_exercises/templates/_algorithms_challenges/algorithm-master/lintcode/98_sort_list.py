@@ -1,8 +1,8 @@
 """
 Definition of ListNode
-class ListNode(object):
+class ListNode(object
 
-    def __init__(self, val, next=None):
+    ___ __init__(self, val, next=None
         self.val = val
         self.next = next
 """
@@ -13,12 +13,12 @@ class Solution:
     @param: head: The head of linked list.
     @return: You should return the head of the sorted linked list, using constant space complexity.
     """
-    def sortList(self, head):
-        return self.merge_sort(head)
+    ___ sortList(self, head
+        r_ self.merge_sort(head)
 
-    def quick_sort(self, head):
-        if not head or not head.next:
-            return head
+    ___ quick_sort(self, head
+        __ not head or not head.next:
+            r_ head
 
         mid = self.find_middle(head)
 
@@ -26,14 +26,14 @@ class Solution:
         mid_dummy = mid_tail = ListNode(0)
         right_dummy = right_tail = ListNode(0)
 
-        while head:
-            if head.val < mid.val:
+        w___ head:
+            __ head.val < mid.val:
                 left_tail.next = head
                 left_tail = head
-            elif head.val > mid.val:
+            ____ head.val > mid.val:
                 right_tail.next = head
                 right_tail = head
-            else:
+            ____
                 mid_tail.next = head
                 mid_tail = head
             head = head.next
@@ -48,11 +48,11 @@ class Solution:
             tail.next = node.next
             tail = self.get_tail(tail)
 
-        return dummy.next
+        r_ dummy.next
 
-    def merge_sort(self, head):
-        if not head or not head.next:
-            return head
+    ___ merge_sort(self, head
+        __ not head or not head.next:
+            r_ head
 
         left = head
         mid = self.find_middle(head)
@@ -64,36 +64,36 @@ class Solution:
 
         dummy = tail = ListNode(0)
 
-        while left and right:
-            if left.val < right.val:
+        w___ left and right:
+            __ left.val < right.val:
                 tail.next = left
                 left = left.next
-            else:
+            ____
                 tail.next = right
                 right = right.next
             tail = tail.next
 
-        if left:
+        __ left:
             tail.next = left
-        else:
+        ____
             tail.next = right
 
-        return dummy.next
+        r_ dummy.next
 
-    def find_middle(self, head):
+    ___ find_middle(self, head
         slow, fast = head, head.next
 
-        while fast and fast.next:
+        w___ fast and fast.next:
             slow = slow.next
             fast = fast.next.next
 
-        return slow
+        r_ slow
 
-    def get_tail(self, head):
-        if not head:
-            return
+    ___ get_tail(self, head
+        __ not head:
+            r_
 
-        while head.next:
+        w___ head.next:
             head = head.next
 
-        return head
+        r_ head

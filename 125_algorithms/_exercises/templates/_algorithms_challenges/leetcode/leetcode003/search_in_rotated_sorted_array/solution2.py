@@ -9,33 +9,33 @@ index, otherwise return -1.
 You may assume no duplicate exists in the array.
 """
 
-class Solution(object):
-    def search(self, nums, target):
+class Solution(object
+    ___ search(self, nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: int
         """
         left = 0
-        right = len(nums) - 1
-        while left + 1 < right:
+        right = le.(nums) - 1
+        w___ left + 1 < right:
             mid = left + (right - left) / 2
-            if target == nums[mid]:
-                return mid
+            __ target __ nums[mid]:
+                r_ mid
             # Right side is sorted
-            elif nums[mid] < nums[right]:
-                if nums[mid] <= target <= nums[right]:
+            ____ nums[mid] < nums[right]:
+                __ nums[mid] <= target <= nums[right]:
                     left = mid
-                else:
+                ____
                     right = mid
             # Left side is sorted
-            else:
-                if nums[left] <= target <= nums[mid]:
+            ____
+                __ nums[left] <= target <= nums[mid]:
                     right = mid
-                else:
+                ____
                     left = mid
-        if nums[left] == target:
-            return left
-        elif nums[right] == target:
-            return right
-        return -1
+        __ nums[left] __ target:
+            r_ left
+        ____ nums[right] __ target:
+            r_ right
+        r_ -1

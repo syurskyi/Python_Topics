@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestArray(object):
+class TestArray(object
 
-    def test_search_sorted_array(self):
+    ___ test_search_sorted_array(self
         array = Array()
         assert_raises(TypeError, array.search_sorted_array, None)
         assert_equal(array.search_sorted_array([3, 1, 2], 0), None)
@@ -15,10 +15,10 @@ class TestArray(object):
         print('Success: test_search_sorted_array')
 
 
-def main():
+___ main(
     test = TestArray()
     test.test_search_sorted_array()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

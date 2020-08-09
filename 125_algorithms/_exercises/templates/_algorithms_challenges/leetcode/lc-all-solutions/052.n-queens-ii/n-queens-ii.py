@@ -1,25 +1,25 @@
-class Solution(object):
-  def totalNQueens(self, n):
+class Solution(object
+  ___ totalNQueens(self, n
     """
     :type n: int
     :rtype: int
     """
 
-    def dfs(path, n):
-      if len(path) == n:
-        return 1
+    ___ dfs(path, n
+      __ le.(path) __ n:
+        r_ 1
       res = 0
-      for i in range(n):
-        if i not in path and isValidQueen(path, i):
+      for i in range(n
+        __ i not in path and isValidQueen(path, i
           path.append(i)
           res += dfs(path, n)
           path.pop()
-      return res
+      r_ res
 
-    def isValidQueen(path, k):
-      for i in range(len(path)):
-        if abs(k - path[i]) == abs(len(path) - i):
-          return False
-      return True
+    ___ isValidQueen(path, k
+      for i in range(le.(path)):
+        __ abs(k - path[i]) __ abs(le.(path) - i
+          r_ False
+      r_ True
 
-    return dfs([], n)
+    r_ dfs([], n)

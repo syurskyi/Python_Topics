@@ -3,8 +3,8 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def shoppingOffers(self, price, special, needs):
+class Solution(object
+    ___ shoppingOffers(self, price, special, needs
         """
         :type price: List[int]
         :type special: List[List[int]]
@@ -13,28 +13,28 @@ class Solution(object):
         """
         self.minPrice = sum([p*n for p, n in zip(price, needs)])
         self.helper(price, special, needs, 0)
-        return self.minPrice
+        r_ self.minPrice
     
-    def helper(self, price, special, needs, curPrice):
-        n = len(price)
+    ___ helper(self, price, special, needs, curPrice
+        n = le.(price)
         added = False
         for arr in special:
             overflow = False
-            for i in range(n):
-                if needs[i] < arr[i]:
+            for i in range(n
+                __ needs[i] < arr[i]:
                     overflow = True
                 needs[i] -= arr[i]
-            if not overflow:
+            __ not overflow:
                 added = True
                 self.helper(price, special, needs, curPrice+arr[-1])
-            for i in range(n):
+            for i in range(n
                 needs[i] += arr[i]
-        if not added:
-            for i in range(n):
+        __ not added:
+            for i in range(n
                 curPrice += needs[i]*price[i]
             self.minPrice = min(self.minPrice, curPrice)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [2,5],
@@ -65,5 +65,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestRotation(object):
+class TestRotation(object
 
-    def test_rotation(self):
+    ___ test_rotation(self
         rotation = Rotation()
         assert_equal(rotation.is_rotation('o', 'oo'), False)
         assert_equal(rotation.is_rotation(None, 'foo'), False)
@@ -13,10 +13,10 @@ class TestRotation(object):
         print('Success: test_rotation')
 
 
-def main():
+___ main(
     test = TestRotation()
     test.test_rotation()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

@@ -1,7 +1,7 @@
-class Solution(object):
-  def arrayPairSum(self, nums):
+class Solution(object
+  ___ arrayPairSum(self, nums
     """
     :type nums: List[int]
     :rtype: int
     """
-    return sum([c for i, c in enumerate(sorted(nums)) if i % 2 == 0])
+    r_ sum([c for i, c in enumerate(sorted(nums)) __ i % 2 __ 0])

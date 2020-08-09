@@ -3,8 +3,8 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def spiralMatrixIII(self, R, C, r0, c0):
+class Solution(object
+    ___ spiralMatrixIII(self, R, C, r0, c0
         """
         :type R: int
         :type C: int
@@ -14,15 +14,15 @@ class Solution(object):
         """
         res = []
         dx, dy, n = 0, 1, 0
-        while len(res) < R*C:
-            for _ in range(n//2+1):
-                if 0 <= r0 < R and 0 <= c0 < C:
+        w___ le.(res) < R*C:
+            for _ in range(n//2+1
+                __ 0 <= r0 < R and 0 <= c0 < C:
                     res.append([r0, c0])
                 r0, c0 = r0+dx, c0+dy
             dx, dy, n = dy, -dx, n+1
-        return res
+        r_ res
     
-    def spiralMatrixIII_own(self, R, C, r0, c0):
+    ___ spiralMatrixIII_own(self, R, C, r0, c0
         """
         :type R: int
         :type C: int
@@ -35,21 +35,21 @@ class Solution(object):
         length = 1
         dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
         i = 0
-        while len(res) < R*C:
-            for _ in range(2):
-                for _ in range(length):
-                    if self.isInRange(pos, R, C):
+        w___ le.(res) < R*C:
+            for _ in range(2
+                for _ in range(length
+                    __ self.isInRange(pos, R, C
                         res.append(pos)
                     d = dirs[i%4]
                     pos = [pos[0]+d[0], pos[1]+d[1]]
                 i += 1
             length += 1
-        return res
+        r_ res
     
-    def isInRange(self, pos, R, C):
-        return 0 <= pos[0] < R and 0 <= pos[1] < C
+    ___ isInRange(self, pos, R, C
+        r_ 0 <= pos[0] < R and 0 <= pos[1] < C
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 4, 0, 0],
         ]
@@ -57,5 +57,5 @@ class Solution(object):
             res = self.spiralMatrixIII(R, C, r0, c0)
             print('res: %s' % res)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

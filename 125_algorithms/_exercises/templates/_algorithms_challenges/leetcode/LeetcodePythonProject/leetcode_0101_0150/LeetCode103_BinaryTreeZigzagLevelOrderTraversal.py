@@ -4,36 +4,36 @@ Created on May 30, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
-class Solution(object):
-    def zigzagLevelOrder(self, root):
+class Solution(object
+    ___ zigzagLevelOrder(self, root
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
         res = []
-        if not root: return res
+        __ not root: r_ res
         queue, nextQueue, elem = [root], [], []
         order = True
-        while queue:
+        w___ queue:
             node = queue.pop(0)
             elem.append(node.val)
-            if node.left:
+            __ node.left:
                 nextQueue.append(node.left)
-            if node.right:
+            __ node.right:
                 nextQueue.append(node.right)
-            if not queue:
-                if not order:
+            __ not queue:
+                __ not order:
                     res.append(elem[::-1])
-                else:
+                ____
                     res.append(elem)
                 elem = []
                 queue = nextQueue
                 nextQueue = []
                 order = not order
-        return res
+        r_ res

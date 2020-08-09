@@ -43,11 +43,11 @@ S.length <= 10000
 S[i] is "(" or ")"
 S is a valid parentheses string
 """
-from collections import deque
+from collections ______ deque
 
 
 class Solution:
-    def removeOuterParentheses(self, S: str) -> str:
+    ___ removeOuterParentheses(self, S: str) -> str:
         """
         Primitive parentheses will have equal number of opened and closed
         parentheses.
@@ -58,19 +58,19 @@ class Solution:
         ret = []
         cnt = 0
         for e in S:
-            if e == "(":
+            __ e __ "(":
                 cnt += 1
-                if cnt > 1:
+                __ cnt > 1:
                     ret.append(e)
-            else:
+            ____
                 cnt -= 1
-                if cnt > 0:
+                __ cnt > 0:
                     ret.append(e)
 
-        return "".join(ret)
+        r_ "".join(ret)
 
 
-    def removeOuterParentheses_error(self, S: str) -> str:
+    ___ removeOuterParentheses_error(self, S: str) -> str:
         """
         stack + deque
         """
@@ -78,19 +78,19 @@ class Solution:
         stk = []
         cur_q = deque()
         for e in S:
-            if e == "(":
+            __ e __ "(":
                 stk.append(e)
-            else:
+            ____
                 prev = stk.pop()
-                if stk:
+                __ stk:
                     cur_q.appendleft(prev)
                     cur_q.append(e)
-                else:
+                ____
                     ret.extend(cur_q)
                     cur_q = deque()
 
-        return "".join(ret)
+        r_ "".join(ret)
 
 
-if __name__ == "__main__":
-    assert Solution().removeOuterParentheses("(()())(())(()(()))") == "()()()()(())"
+__ __name__ __ "__main__":
+    assert Solution().removeOuterParentheses("(()())(())(()(()))") __ "()()()()(())"

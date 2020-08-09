@@ -3,8 +3,8 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def numSubarrayBoundedMax(self, A, L, R):
+class Solution(object
+    ___ numSubarrayBoundedMax(self, A, L, R
         """
         :type A: List[int]
         :type L: int
@@ -15,18 +15,18 @@ class Solution(object):
         res = 0
         j = 0
         count = 0
-        for i in range(len(arr)):
-            if l <= arr[i] <= r:
+        for i in range(le.(arr)):
+            __ l <= arr[i] <= r:
                 res += i-j+1
                 count = i-j+1
-            elif arr[i] < l:
+            ____ arr[i] < l:
                 res += count
-            else:
+            ____
                 j = i+1
                 count = 0
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [2, 1, 4, 3],
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

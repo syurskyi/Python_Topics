@@ -3,8 +3,8 @@ Created on Feb 12, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def accountsMerge(self, accounts):
+class Solution(object
+    ___ accountsMerge(self, accounts
         """
         :type accounts: List[List[str]]
         :rtype: List[List[str]]
@@ -13,30 +13,30 @@ class Solution(object):
         parents = {}
         unions = {}
         for a in accounts:
-            for i in range(1, len(a)):
+            for i in range(1, le.(a)):
                 parents[a[i]] = a[i]
                 owner[a[i]] = a[0]
         for a in accounts:
             p = self.find(a[1], parents)
-            for i in range(2, len(a)):
+            for i in range(2, le.(a)):
                 parents[self.find(a[i], parents)] = p
         for a in accounts:
             p = self.find(a[1], parents)
-            if p not in unions:
+            __ p not in unions:
                 unions[p] = set()
-            for i in range(1, len(a)):
+            for i in range(1, le.(a)):
                 unions[p].add(a[i])
         res = []
         for p in unions:
             emails = sorted(list(unions[p]))
             emails.insert(0, owner[p])
             res.append(emails)
-        return res
+        r_ res
     
-    def find(self, s, hashmap):
-        return s if hashmap[s] == s else self.find(hashmap[s], hashmap)
+    ___ find(self, s, hashmap
+        r_ s __ hashmap[s] __ s else self.find(hashmap[s], hashmap)
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ["John", "johnsmith@mail.com", "john00@mail.com"],
@@ -60,5 +60,5 @@ class Solution(object):
             print('\n'.join([str(row) for row in result]))
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

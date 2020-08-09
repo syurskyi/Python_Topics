@@ -1,15 +1,15 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestBfs(object):
+class TestBfs(object
 
-    def __init__(self):
+    ___ __init__(self
         self.results = Results()
 
-    def test_bfs(self):
+    ___ test_bfs(self
         nodes = []
         graph = GraphBfs()
-        for id in range(0, 6):
+        for id in range(0, 6
             nodes.append(graph.add_node(id))
         graph.add_edge(0, 1, 5)
         graph.add_edge(0, 4, 3)
@@ -25,10 +25,10 @@ class TestBfs(object):
         print('Success: test_bfs')
 
 
-def main():
+___ main(
     test = TestBfs()
     test.test_bfs()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

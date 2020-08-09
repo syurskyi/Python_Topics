@@ -7,27 +7,27 @@ For example,
 [1,1,2], [1,2,1], and [2,1,1].
 """
 
-class Solution(object):
-    def permuteUnique(self, nums):
+class Solution(object
+    ___ permuteUnique(self, nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
         d = {}
-        return self.permute(nums, d)
+        r_ self.permute(nums, d)
 
-    def permute(self, nums, d):
-        if not nums:
-            return [[]]
-        else:
+    ___ permute(self, nums, d
+        __ not nums:
+            r_ [[]]
+        ____
             res = []
-            for i, c in enumerate(nums):
-                if c in d:
+            for i, c in enumerate(nums
+                __ c in d:
                     continue
-                else:
+                ____
                     d[c] = True
                 rest_perms = self.permuteUnique(nums[:i] + nums[i + 1:])
                 for perm in rest_perms:
                     perm.insert(0, c)
                 res += rest_perms
-            return res
+            r_ res

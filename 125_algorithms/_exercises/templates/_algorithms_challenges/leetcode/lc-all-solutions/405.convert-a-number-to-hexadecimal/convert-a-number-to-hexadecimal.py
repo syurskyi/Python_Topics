@@ -1,5 +1,5 @@
-class Solution(object):
-  def toHex(self, num):
+class Solution(object
+  ___ toHex(self, num
     """
     :type num: int
     :rtype: str
@@ -9,13 +9,13 @@ class Solution(object):
     ans = ""
     mask = 0xf0000000
     flag = False
-    for i in range(0, 8):
+    for i in range(0, 8
       halfb = (num & mask) >> 28
-      if halfb != 0:
+      __ halfb != 0:
         flag = True
-      if flag:
+      __ flag:
         ans = ans + d[(num & mask) >> 28]
       num = num << 4
-    if ans == "":
-      return "0"
-    return ans
+    __ ans __ "":
+      r_ "0"
+    r_ ans

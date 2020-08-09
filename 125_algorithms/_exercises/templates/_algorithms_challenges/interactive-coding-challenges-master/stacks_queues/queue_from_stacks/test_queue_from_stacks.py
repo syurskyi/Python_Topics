@@ -1,9 +1,9 @@
-from nose.tools import assert_equal
+from nose.tools ______ assert_equal
 
 
-class TestQueueFromStacks(object):
+class TestQueueFromStacks(object
 
-    def test_queue_from_stacks(self):
+    ___ test_queue_from_stacks(self
         print('Test: Dequeue on empty stack')
         queue = QueueFromStacks()
         assert_equal(queue.dequeue(), None)
@@ -12,7 +12,7 @@ class TestQueueFromStacks(object):
         print('Test: Enqueue on non-empty stack')
         print('Test: Multiple enqueue in a row')
         num_items = 3
-        for i in range(0, num_items):
+        for i in range(0, num_items
             queue.enqueue(i)
 
         print('Test: Dequeue on non-empty stack')
@@ -30,10 +30,10 @@ class TestQueueFromStacks(object):
         print('Success: test_queue_from_stacks')
 
 
-def main():
+___ main(
     test = TestQueueFromStacks()
     test.test_queue_from_stacks()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

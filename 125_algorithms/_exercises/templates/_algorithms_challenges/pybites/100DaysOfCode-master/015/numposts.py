@@ -1,8 +1,8 @@
-import os
-import re
-import sys
-import time
-import urllib.request
+______ os
+______ re
+______ sys
+______ time
+______ urllib.request
 
 HTML = 'authors.html'
 NOW = int(time.time())
@@ -16,23 +16,23 @@ author_regex = re.compile(
     % SITE)
 
 
-def download_page(test=False):
+___ download_page(test=False
     print('Getting authors page which lists number of posts per author')
-    if test:
+    __ test:
         print('Test mode, using cached html file')
-    elif (NOW - os.stat(HTML).st_ctime) < SECONDS_IN_HOUR:
+    ____ (NOW - os.stat(HTML).st_ctime) < SECONDS_IN_HOUR:
         print('Cache file less than an hour old, using it')
-    else:
+    ____
         print('Not test mode nor cache file expired, retrieving fresh copy')
         urllib.request.urlretrieve(URL, HTML)
 
 
-def get_posts():
+___ get_posts(
     with open(HTML) as f:
-        return {k: int(v) for k, v in author_regex.findall(f.read())}
+        r_ {k: int(v) for k, v in author_regex.findall(f.read())}
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     test = '-t' in sys.argv[1:]
     download_page(test)
 

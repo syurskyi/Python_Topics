@@ -4,35 +4,35 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def splitArray(self, nums, m):
+class Solution(object
+    ___ splitArray(self, nums, m
         left, right = 0, 0
         for num in nums:
             left = max(left, num)
             right += num
-        while left < right:
+        w___ left < right:
             mid = (left+right)//2
-            if self.doable(nums, m-1, mid):
+            __ self.doable(nums, m-1, mid
                 right = mid
-            else:
+            ____
                 left = mid+1
-        return left
+        r_ left
     
-    def doable(self, nums, cuts, maxVal):
+    ___ doable(self, nums, cuts, maxVal
         acc = 0
         for num in nums:
-            if num > maxVal:
-                return False
-            elif acc+num <= maxVal:
+            __ num > maxVal:
+                r_ False
+            ____ acc+num <= maxVal:
                 acc += num
-            else:
+            ____
                 cuts -= 1
                 acc = num
-                if cuts < 0:
-                    return False
-        return True
+                __ cuts < 0:
+                    r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 [7,2,5,10,8],
@@ -46,5 +46,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

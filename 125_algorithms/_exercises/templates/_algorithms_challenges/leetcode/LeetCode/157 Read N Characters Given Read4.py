@@ -4,18 +4,18 @@ Premium Question
 __author__ = 'Daniel'
 
 
-def read4(buf):
+___ read4(buf
     """
     read 4 chars to buf
 
     :type buf: List[str]
     :rtype: int
     """
-    return 0
+    r_ 0
 
 
-class Solution(object):
-    def read(self, buf, n):
+class Solution(object
+    ___ read(self, buf, n
         """
         read n chars to buf
         Algorithm:
@@ -28,15 +28,15 @@ class Solution(object):
         :rtype: The number of characters read (int)
         """
         idx = 0
-        while idx < n:
+        w___ idx < n:
             buf4 = ["" for _ in xrange(4)]
             r = read4(buf4)
-            if idx+r < n:
+            __ idx+r < n:
                 buf[idx:idx+r] = buf4[:r]
                 idx += r
-                if r < 4: break
-            else:
+                __ r < 4: break
+            ____
                 buf[idx:n] = buf4[:n-idx]
                 idx = n
 
-        return idx
+        r_ idx

@@ -4,22 +4,22 @@ REF: https://discuss.leetcode.com/topic/25720/java-python-o-n-calls-o-1-space-ea
 
 
 class Solution:
-    def findCelebrity(self, n):
-        if not n:
-            return -1
+    ___ findCelebrity(self, n
+        __ not n:
+            r_ -1
 
         x = 0
 
-        for i in range(n):
-            if knows(x, i):
+        for i in range(n
+            __ knows(x, i
                 x = i
 
-        for i in range(x):
-            if knows(x, i):
-                return -1
+        for i in range(x
+            __ knows(x, i
+                r_ -1
 
-        for i in range(n):
-            if not knows(i, x):
-                return -1
+        for i in range(n
+            __ not knows(i, x
+                r_ -1
 
-        return x
+        r_ x

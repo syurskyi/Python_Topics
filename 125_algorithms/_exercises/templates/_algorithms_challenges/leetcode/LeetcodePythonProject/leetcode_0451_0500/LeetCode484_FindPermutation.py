@@ -4,31 +4,31 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findPermutation(self, s):
+class Solution(object
+    ___ findPermutation(self, s
         """
         :type s: str
         :rtype: List[int]
         """
-        n = len(s)
+        n = le.(s)
         res = list(range(1, n+2))
         i = 0
-        while i < n:
-            if s[i] == 'D':
+        w___ i < n:
+            __ s[i] __ 'D':
                 prev = i
-                while i+1 < n and s[i+1]=='D':
+                w___ i+1 < n and s[i+1]__'D':
                     i += 1
                 self.reverse(res, prev, i+1)
             i += 1
-        return res
+        r_ res
     
-    def reverse(self, res, l, r):
-        while l < r:
+    ___ reverse(self, res, l, r
+        w___ l < r:
             res[l], res[r] = res[r], res[l]
             l += 1
             r -= 1
     
-    def test(self):
+    ___ test(self
         testCases = [
             'I',
             'DI',
@@ -42,5 +42,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

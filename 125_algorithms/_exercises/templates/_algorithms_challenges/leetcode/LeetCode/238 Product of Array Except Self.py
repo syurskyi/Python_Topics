@@ -14,19 +14,19 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def productExceptSelf(self, nums):
+    ___ productExceptSelf(self, nums
         """
         dp
 
         :type nums: list[int]
         :rtype: list[int]
         """
-        n = len(nums)
+        n = le.(nums)
         left = [1 for _ in xrange(n+1)]  # the 0th one is dummy
         right = [1 for _ in xrange(n+1)]  # the last one is dummy
-        for i in xrange(1, n+1):
+        for i in xrange(1, n+1
             left[i] = left[i-1]*nums[i-1]
-        for i in xrange(n-1, -1, -1):
+        for i in xrange(n-1, -1, -1
             right[i] = right[i+1]*nums[i]
 
-        return [left[i]*right[i+1] for i in xrange(n)]
+        r_ [left[i]*right[i+1] for i in xrange(n)]

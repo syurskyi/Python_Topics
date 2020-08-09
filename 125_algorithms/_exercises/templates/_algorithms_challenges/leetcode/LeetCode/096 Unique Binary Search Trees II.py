@@ -15,38 +15,38 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-class TreeNode(object):
-    def __init__(self, x):
+class TreeNode(object
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
-class Solution(object):
-    def __init__(self):
+class Solution(object
+    ___ __init__(self
         self.cache = {}
 
-    def generateTrees(self, n):
+    ___ generateTrees(self, n
         """
         dfs
         Catalan
         :param n: integer
         :return: list of TreeNode
         """
-        if n == 0:
-            return [None]
+        __ n __ 0:
+            r_ [None]
 
-        return self.generate_cache(1, n)
+        r_ self.generate_cache(1, n)
 
-    def generate_cache(self, start, end):
+    ___ generate_cache(self, start, end
         """80ms"""
-        if (start, end) not in self.cache:
+        __ (start, end) not in self.cache:
             roots = []
-            if start > end:
+            __ start > end:
                 roots.append(None)
-                return roots
+                r_ roots
 
-            for pivot in range(start, end+1):
+            for pivot in range(start, end+1
                 left_roots = self.generate_cache(start, pivot-1)
                 right_roots = self.generate_cache(pivot+1, end)
                 for left_root in left_roots:
@@ -59,9 +59,9 @@ class Solution(object):
 
             self.cache[(start, end)] = roots
 
-        return self.cache[(start, end)]
+        r_ self.cache[(start, end)]
 
-    def generate(self, start, end):
+    ___ generate(self, start, end
         """
         dfs (cache possible)
         100 ms
@@ -75,13 +75,13 @@ class Solution(object):
         subtree_roots = []
 
         # trivial
-        if start > end:
+        __ start > end:
             subtree_roots.append(None)
-            return subtree_roots
+            r_ subtree_roots
 
         # pivot
         # list of unique subtrees = list of unique left subtrees, pivot, list of unique right subtrees
-        for pivot in range(start, end+1):
+        for pivot in range(start, end+1
             left_subtree_roots = self.generate(start, pivot-1)
             right_subtree_roots = self.generate(pivot+1, end)
 
@@ -93,4 +93,4 @@ class Solution(object):
 
                     subtree_roots.append(pivot_node)
 
-        return subtree_roots
+        r_ subtree_roots

@@ -3,8 +3,8 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def champagneTower(self, poured, query_row, query_glass):
+class Solution(object
+    ___ champagneTower(self, poured, query_row, query_glass
         """
         :type poured: int
         :type query_row: int
@@ -13,15 +13,15 @@ class Solution(object):
         """
         result = [[0.0]*101 for _ in range(101)]
         result[0][0] = poured
-        for i in range(100):
-            for j in range(i+1):
-                if result[i][j] >= 1:
+        for i in range(100
+            for j in range(i+1
+                __ result[i][j] >= 1:
                     result[i+1][j] += (result[i][j]-1)/2.0
                     result[i+1][j+1] += (result[i][j]-1)/2.0
                     result[i][j] = 1.0
-        return result[query_row][query_glass]
+        r_ result[query_row][query_glass]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1, 1], # 0.0
             [2, 1, 1], # 0.5
@@ -39,5 +39,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

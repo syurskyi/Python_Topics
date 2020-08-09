@@ -3,23 +3,23 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def kthGrammar(self, N, K):
+class Solution(object
+    ___ kthGrammar(self, N, K
         """
         :type N: int
         :type K: int
         :rtype: int
         """
-        if N == 1:
-            return 0
-        if K%2 == 0:
+        __ N __ 1:
+            r_ 0
+        __ K%2 __ 0:
             prev = self.kthGrammar(N-1, K/2)
-            return 1 if prev == 0 else 0
-        else:
+            r_ 1 __ prev __ 0 else 0
+        ____
             prev = self.kthGrammar(N-1, (K+1)/2)
-            return 0 if prev == 0 else 1
+            r_ 0 __ prev __ 0 else 1
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 1],
             [2, 1],
@@ -34,5 +34,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

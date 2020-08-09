@@ -31,31 +31,31 @@ Note:
 1 <= K <= 10000
 -100 <= A[i] <= 100
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def largestSumAfterKNegations(self, A: List[int], K: int) -> int:
+    ___ largestSumAfterKNegations(self, A: List[int], K: int) -> int:
         """
         revert all the negative, if positive, revert multiple times the smallest
 
         since -100 <= A[i] <= 100, then sort can be done in linear time
         """
         A.sort()
-        for i in range(len(A)):
-            if K == 0:
+        for i in range(le.(A)):
+            __ K __ 0:
                 break
 
-            if A[i] < 0:
+            __ A[i] < 0:
                 A[i] *= -1
                 prev = A[i]
                 K -= 1
-            else:
-                if K % 2 != 0:
-                    if i - 1 >= 0 and A[i-1] < A[i]:
+            ____
+                __ K % 2 != 0:
+                    __ i - 1 >= 0 and A[i-1] < A[i]:
                         A[i-1] *= -1
-                    else:
+                    ____
                         A[i] *= -1
                 break
 
-        return sum(A)
+        r_ sum(A)

@@ -1,5 +1,5 @@
-class Solution(object):
-  def removeKdigits(self, num, k):
+class Solution(object
+  ___ removeKdigits(self, num, k
     """
     :type num: str
     :type k: int
@@ -7,10 +7,10 @@ class Solution(object):
     """
     stack = []
     for c in num:
-      while k > 0 and stack and stack[-1] > c:
+      w___ k > 0 and stack and stack[-1] > c:
         stack.pop()
         k -= 1
       stack.append(c)
-    if k > 0:
+    __ k > 0:
       stack = stack[:-k]
-    return "".join(stack).lstrip("0") or "0"
+    r_ "".join(stack).lstrip("0") or "0"

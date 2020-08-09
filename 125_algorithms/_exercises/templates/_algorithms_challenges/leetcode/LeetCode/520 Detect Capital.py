@@ -23,13 +23,13 @@ latin letters.
 
 
 class Solution:
-    def detectCapitalUse(self, word: str) -> bool:
+    ___ detectCapitalUse(self, word: str) -> bool:
         """
         Two passes is easy
         How to do it in one pass
         """
-        if not word:
-            return True
+        __ not word:
+            r_ True
 
         head_upper = word[0].isupper()
 
@@ -37,12 +37,12 @@ class Solution:
         has_lower = False
         has_upper = False
         for w in word[1:]:
-            if w.isupper():
+            __ w.isupper(
                 has_upper = True
-                if has_lower or not head_upper:
-                    return False
-            else:
+                __ has_lower or not head_upper:
+                    r_ False
+            ____
                 has_lower = True
-                if has_upper:
-                    return False
-        return True
+                __ has_upper:
+                    r_ False
+        r_ True

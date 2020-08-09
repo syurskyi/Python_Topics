@@ -15,8 +15,8 @@ Example: 19 is a happy number
 1^2 + 0^2 + 0^2 = 1
 """
 
-class Solution(object):
-    def isHappy(self, n):
+class Solution(object
+    ___ isHappy(self, n
         """
         :type n: int
         :rtype: bool
@@ -24,18 +24,18 @@ class Solution(object):
 
         # Use set d to check endless loop
         d = set()
-        while n not in d:
+        w___ n not in d:
             d.add(n)
             t = n
             s = 0  # sum
-            while t != 0:
+            w___ t != 0:
                 digit = (t % 10)
                 s += digit * digit
                 t /= 10
             n = s
-            if n == 1:
-                return True
-        return False
+            __ n __ 1:
+                r_ True
+        r_ False
 
 
 s = Solution()

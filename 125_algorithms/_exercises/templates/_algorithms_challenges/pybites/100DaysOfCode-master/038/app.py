@@ -1,11 +1,11 @@
-import os
-from pprint import pprint as pp
-import ssl
-import sys
+______ os
+from pprint ______ pprint as pp
+______ ssl
+______ sys
 
-from flask import Flask, render_template, request, g
-from flask import session, flash, redirect, url_for
-from flask_oauthlib.client import OAuth
+from flask ______ Flask, render_template, request, g
+from flask ______ session, flash, redirect, url_for
+from flask_oauthlib.client ______ OAuth
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('PYB_100D_APP_SECRET') or sys.exit('need secret app key')
@@ -29,52 +29,52 @@ twitter = oauth.remote_app(
 
 
 @twitter.tokengetter
-def get_twitter_token():
-    if 'twitter_oauth' in session:
+___ get_twitter_token(
+    __ 'twitter_oauth' in session:
         resp = session['twitter_oauth']
-        return resp['oauth_token'], resp['oauth_token_secret']
+        r_ resp['oauth_token'], resp['oauth_token_secret']
 
 
 @app.before_request
-def before_request():
+___ before_request(
     g.user = None
-    if 'twitter_oauth' in session:
+    __ 'twitter_oauth' in session:
         g.user = session['twitter_oauth']
 
 
 @app.route('/login')
-def login():
+___ login(
     # this snippet works better:
     # https://github.com/mitsuhiko/flask-oauth/blob/master/example/tweet.py
-    return twitter.authorize(callback=url_for('oauthorized',
+    r_ twitter.authorize(callback=url_for('oauthorized',
                              next=request.args.get('next') or request.referrer or None))
 
 
 @app.route('/logout')
-def logout():
+___ logout(
     session.pop('twitter_oauth', None)
-    return redirect(request.referrer or url_for('index'))  # fix: redirect to previous url
+    r_ redirect(request.referrer or url_for('index'))  # fix: redirect to previous url
 
 
 @app.route('/oauthorized')
-def oauthorized():
+___ oauthorized(
     resp = twitter.authorized_response()
-    if resp is None:
+    __ resp is None:
         flash('You denied the request to sign in.')
-    else:
+    ____
         session['twitter_oauth'] = resp
     #return redirect(url_for('index'))
-    return redirect(request.args.get('next')
+    r_ redirect(request.args.get('next')
                     or request.referrer or
                     url_for('index'))  # fix: redirect to previous url
 
 
 @app.route('/', methods=['GET', 'POST'])
-def index():
-    if g.user:
+___ index(
+    __ g.user:
         pp(g.user['screen_name'])
-    return render_template("login.html")
+    r_ render_template("login.html")
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     app.run(debug=True)

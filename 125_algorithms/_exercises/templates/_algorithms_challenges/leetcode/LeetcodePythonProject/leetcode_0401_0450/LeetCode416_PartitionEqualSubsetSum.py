@@ -4,21 +4,21 @@ Created on Apr 12, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def canPartition(self, nums):
+class Solution(object
+    ___ canPartition(self, nums
         sumVal = sum(nums)
-        if sumVal%2 != 0:
-            return False
+        __ sumVal%2 != 0:
+            r_ False
         target = sumVal//2
         dp = [False]*(target+1)
         dp[0] = True
         for num in nums:
-            for i in range(target, -1, -1):
-                if i-num >= 0 and dp[i-num]:
+            for i in range(target, -1, -1
+                __ i-num >= 0 and dp[i-num]:
                     dp[i] = True
-        return dp[-1]
+        r_ dp[-1]
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 5],
         ]
@@ -28,5 +28,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

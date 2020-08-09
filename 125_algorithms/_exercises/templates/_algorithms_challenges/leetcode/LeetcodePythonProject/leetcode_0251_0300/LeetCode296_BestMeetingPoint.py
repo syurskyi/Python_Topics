@@ -4,24 +4,24 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def minTotalDistance(self, grid):
-        m, n = len(grid), len(grid[0])
+class Solution(object
+    ___ minTotalDistance(self, grid
+        m, n = le.(grid), le.(grid[0])
         rows, cols = [], []
-        for i in range(m):
-            for j in range(n):
-                if grid[i][j] == 1:
+        for i in range(m
+            for j in range(n
+                __ grid[i][j] __ 1:
                     rows.append(i)
                     cols.append(j)
         cols.sort()
         sumVal = 0
         for row in rows:
-            sumVal += abs(row - rows[len(rows)//2])
+            sumVal += abs(row - rows[le.(rows)//2])
         for col in cols:
-            sumVal += abs(col - cols[len(cols)//2])
-        return sumVal
+            sumVal += abs(col - cols[le.(cols)//2])
+        r_ sumVal
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 '10001',
@@ -36,5 +36,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20 + '-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

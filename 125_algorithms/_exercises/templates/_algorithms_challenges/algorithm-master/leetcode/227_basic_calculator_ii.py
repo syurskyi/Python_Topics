@@ -1,11 +1,11 @@
 class Solution:
-    def calculate(self, s):
+    ___ calculate(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
         s = self.to_rpn(s, {
             '+': 1,
@@ -14,117 +14,117 @@ class Solution:
             '/': 2,
         })
 
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
-        return self.eval_rpn(s, {
+        r_ self.eval_rpn(s, {
             '+': lambda a, b: a + b,
             '-': lambda a, b: a - b,
             '*': lambda a, b: a * b,
             '/': lambda a, b: a // b,
         })
 
-    def to_rpn(self, s, P):
+    ___ to_rpn(self, s, P
         stack, res = [], []
 
-        for i in range(len(s)):
+        for i in range(le.(s)):
             char = s[i]
 
-            if i > 0 and s[i - 1].isdigit() and char.isdigit():
+            __ i > 0 and s[i - 1].isdigit() and char.isdigit(
                 res[-1] += char
-            elif char.isdigit():
+            ____ char.isdigit(
                 res.append(char)
-            elif char in P:
-                while stack and stack[-1] in P and P[char] <= P[stack[-1]]:
+            ____ char in P:
+                w___ stack and stack[-1] in P and P[char] <= P[stack[-1]]:
                     res.append(stack.pop())
                 stack.append(char)
-            elif char == '(':
+            ____ char __ '(':
                 stack.append(char)
-            elif char == ')':
-                while stack and stack[-1] != '(':
+            ____ char __ ')':
+                w___ stack and stack[-1] != '(':
                     res.append(stack.pop())
                 stack.pop()
 
-        while stack:
+        w___ stack:
             res.append(stack.pop())
 
-        return res
+        r_ res
 
-    def eval_rpn(self, s, OP):
+    ___ eval_rpn(self, s, OP
         stack = []
 
         for char in s:
-            if char.isdigit():
+            __ char.isdigit(
                 stack.append(int(char))
-            elif char in OP:
+            ____ char in OP:
                 b = stack.pop()
                 a = stack.pop()
                 stack.append(OP[char](a, b))
 
-        return stack[0]
+        r_ stack[0]
 
 
 class Solution:
-    def calculate(self, s):
+    ___ calculate(self, s
         """
         :type s: str
         :rtype: int
         """
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
         s = self.to_rpn(s)
 
-        if not s:
-            return 0
+        __ not s:
+            r_ 0
 
-        return self.eval_rpn(s)
+        r_ self.eval_rpn(s)
 
-    def to_rpn(self, s):
+    ___ to_rpn(self, s
         stack, res = [], []
 
-        for i in range(len(s)):
+        for i in range(le.(s)):
             char = s[i]
 
-            if i > 0 and s[i - 1].isdigit() and char.isdigit():
+            __ i > 0 and s[i - 1].isdigit() and char.isdigit(
                 res[-1] += char
-            elif char.isdigit():
+            ____ char.isdigit(
                 res.append(char)
-            elif char in '+-*/':
-                while stack and stack[-1] in '+-*/':
-                    if char in '*/' and stack[-1] in '+-':
+            ____ char in '+-*/':
+                w___ stack and stack[-1] in '+-*/':
+                    __ char in '*/' and stack[-1] in '+-':
                         break
                     res.append(stack.pop())
                 stack.append(char)
-            elif char == '(':
+            ____ char __ '(':
                 stack.append(char)
-            elif char == ')':
-                while stack and stack[-1] != '(':
+            ____ char __ ')':
+                w___ stack and stack[-1] != '(':
                     res.append(stack.pop())
                 stack.pop()
 
-        while stack:
+        w___ stack:
             res.append(stack.pop())
 
-        return res
+        r_ res
 
-    def eval_rpn(self, s):
+    ___ eval_rpn(self, s
         stack = []
 
         for char in s:
-            if char.isdigit():
+            __ char.isdigit(
                 stack.append(int(char))
-            elif char in '+-*/':
+            ____ char in '+-*/':
                 b = stack.pop()
                 a = stack.pop()
 
-                if char == '+':
+                __ char __ '+':
                     stack.append(a + b)
-                elif char == '-':
+                ____ char __ '-':
                     stack.append(a - b)
-                elif char == '*':
+                ____ char __ '*':
                     stack.append(a * b)
-                elif char == '/':
+                ____ char __ '/':
                     stack.append(a // b)
 
-        return stack[0]
+        r_ stack[0]

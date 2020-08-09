@@ -7,8 +7,8 @@ but "(]" and "([)]" are not.
 """
 
 
-class Solution(object):
-    def isValid(self, s):
+class Solution(object
+    ___ isValid(self, s
         """
         :type s: str
         :rtype: bool
@@ -21,18 +21,18 @@ class Solution(object):
         stack = []
         for c in s:
             # Left parenthesis
-            if c not in pars:
+            __ c not in pars:
                 stack.append(c)
             # Right parenthesis
-            else:
-                if stack:
-                    if stack[-1] == pars[c]:
+            ____
+                __ stack:
+                    __ stack[-1] __ pars[c]:
                         stack.pop()
-                    else:
-                        return False
-                else:
-                    return False
-        if stack:
-            return False
-        else:
-            return True
+                    ____
+                        r_ False
+                ____
+                    r_ False
+        __ stack:
+            r_ False
+        ____
+            r_ True

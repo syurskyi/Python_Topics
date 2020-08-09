@@ -10,19 +10,19 @@ class Solution:
     @param: target: an integer
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    def twoSum7(self, A, target):
+    ___ twoSum7(self, A, target
         NOT_FOUND = [-1, -1]
-        if not A or len(A) < 2:
-            return NOT_FOUND
+        __ not A or le.(A) < 2:
+            r_ NOT_FOUND
 
         remaining = {}
-        for i in range(len(A)):
+        for i in range(le.(A)):
             """
             if a - b = t
             => a = b + t
             """
-            if A[i] + target in remaining:
-                return [
+            __ A[i] + target in remaining:
+                r_ [
                     remaining[A[i] + target] + 1,
                     i + 1
                 ]
@@ -31,15 +31,15 @@ class Solution:
             if b - a = t
             => a = b - t
             """
-            if A[i] - target in remaining:
-                return [
+            __ A[i] - target in remaining:
+                r_ [
                     remaining[A[i] - target] + 1,
                     i + 1
                 ]
 
             remaining[A[i]] = i
 
-        return NOT_FOUND
+        r_ NOT_FOUND
 
 
 """
@@ -54,26 +54,26 @@ class Solution:
     @param: target: an integer
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    def twoSum7(self, A, target):
+    ___ twoSum7(self, A, target
         NOT_FOUND = [-1, -1]
-        if not A or len(A) < 2:
-            return NOT_FOUND
+        __ not A or le.(A) < 2:
+            r_ NOT_FOUND
 
-        if target < 0:
+        __ target < 0:
             target = -1 * target
 
-        n = len(A)
+        n = le.(A)
         A = [(A[i], i) for i in range(n)]
         A.sort()
 
         left = 0
-        for right in range(1, n):
-            while left + 1 < right and A[right][0] - A[left][0] > target:
+        for right in range(1, n
+            w___ left + 1 < right and A[right][0] - A[left][0] > target:
                 left += 1
-            if A[right][0] - A[left][0] == target:
-                return sorted([
+            __ A[right][0] - A[left][0] __ target:
+                r_ sorted([
                     A[left][1] + 1,
                     A[right][1] + 1
                 ])
 
-        return NOT_FOUND
+        r_ NOT_FOUND

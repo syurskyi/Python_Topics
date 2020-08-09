@@ -1,5 +1,5 @@
-class Solution(object):
-  def permute(self, nums):
+class Solution(object
+  ___ permute(self, nums
     """
     :type nums: List[int]
     :rtype: List[List[int]]
@@ -7,15 +7,15 @@ class Solution(object):
     res = []
     visited = set([])
 
-    def dfs(nums, path, res, visited):
-      if len(path) == len(nums):
+    ___ dfs(nums, path, res, visited
+      __ le.(path) __ le.(nums
         res.append(path + [])
-        return
+        r_
 
-      for i in range(0, len(nums)):
+      for i in range(0, le.(nums)):
         # if i > 0 and nums[i - 1] == nums[i]:
         #     continue
-        if i not in visited:
+        __ i not in visited:
           visited.add(i)
           path.append(nums[i])
           dfs(nums, path, res, visited)
@@ -23,4 +23,4 @@ class Solution(object):
           visited.discard(i)
 
     dfs(nums, [], res, visited)
-    return res
+    r_ res

@@ -1,31 +1,31 @@
 class Solution:
-    def maximalRectangle(self, G):
+    ___ maximalRectangle(self, G
         """
         :type G: List[List[str]]
         :rtype: int
         """
         ans = 0
-        if not G or not G[0]:
-            return ans
+        __ not G or not G[0]:
+            r_ ans
 
-        m, n = len(G), len(G[0])
+        m, n = le.(G), le.(G[0])
         L, R, H = {}, {}, {}
 
-        for i in range(m):
+        for i in range(m
             curr = 0  # left boundary
-            for j in range(n):
-                if G[i][j] == '1':
+            for j in range(n
+                __ G[i][j] __ '1':
                     H[j] = H.get(j, 0) + 1
                     L[j] = max(L.get(j, 0), curr)
-                else:
+                ____
                     H[j] = L[j] = 0
                     curr = j + 1
 
             curr = n  # right boundary
-            for j in range(n - 1, -1, -1):
-                if G[i][j] == '1':
+            for j in range(n - 1, -1, -1
+                __ G[i][j] __ '1':
                     R[j] = min(R.get(j, n), curr)
-                else:
+                ____
                     R[j] = n
                     curr = j
 
@@ -34,7 +34,7 @@ class Solution:
                     H[j] * (R[j] - L[j])
                 )
 
-        return ans
+        r_ ans
 
 
 """
@@ -47,7 +47,7 @@ Assuming matrix: [
 ]
 
 Concept:
-For each (i, j), 0 <= i < len(mat), 0 <= j < len(mat[0])
+For each (i, j), 0 <= i < le.(mat), 0 <= j < le.(mat[0])
 the rectangle area is (r[j] - l[j]) * h[j]
 
 m = 0
@@ -87,23 +87,23 @@ max = 6 = (5 - 2) * 2
 # Mono Stack
 # This problem could be treated as histogram, see lintcode#122
 class Solution:
-    def maximalRectangle(self, G):
+    ___ maximalRectangle(self, G
         """
         :type G: List[List[str]]
         :rtype: int
         """
         ans = 0
-        if not G or not G[0]:
-            return ans
+        __ not G or not G[0]:
+            r_ ans
 
-        m, n = len(G), len(G[0])
+        m, n = le.(G), le.(G[0])
         H = [0] * n
 
-        for i in range(m):
-            for j in range(n):
-                if G[i][j] == '1':
+        for i in range(m
+            for j in range(n
+                __ G[i][j] __ '1':
                     H[j] += 1
-                else:
+                ____
                     H[j] = 0
 
             ans = max(ans, self.largestRectangleArea(H))
@@ -111,12 +111,12 @@ class Solution:
             # To remove the trick `0`
             H.pop()
 
-        return ans
+        r_ ans
 
-    def largestRectangleArea(self, H):
+    ___ largestRectangleArea(self, H
         area = 0
-        if not H:
-            return area
+        __ not H:
+            r_ area
 
         # To ensure the last element in monostack will be handled
         H.append(0)
@@ -124,14 +124,14 @@ class Solution:
         I = []
         left = height = 0
 
-        for right in range(len(H)):
-            while I and H[I[-1]] >= H[right]:
+        for right in range(le.(H)):
+            w___ I and H[I[-1]] >= H[right]:
                 height = H[I.pop()]
-                left = I[-1] if I else -1
+                left = I[-1] __ I else -1
                 area = max(
                     area,
                     height * (right - left - 1)
                 )
             I.append(right)
 
-        return area
+        r_ area

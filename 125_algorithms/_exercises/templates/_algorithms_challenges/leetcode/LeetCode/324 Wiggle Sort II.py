@@ -14,8 +14,8 @@ Can you do it in O(n) time and/or in-place with O(1) extra space?
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def wiggleSort(self, A):
+class Solution(object
+    ___ wiggleSort(self, A
         """
         1. Quick selection for finding median (Average O(n))
         2. Three-way partitioning to split the data
@@ -25,7 +25,7 @@ class Solution(object):
         :type A: List[int]
         :rtype: in-place
         """
-        n = len(A)
+        n = le.(A)
         median_idx = self.find_kth(A, 0, n, n/2)
         v = A[median_idx]
 
@@ -33,52 +33,52 @@ class Solution(object):
         lt = -1
         hi = n
         i = 0
-        while i < hi:
-            if A[idx(i)] > v:
+        w___ i < hi:
+            __ A[idx(i)] > v:
                 lt += 1
                 A[idx(lt)], A[idx(i)] = A[idx(i)], A[idx(lt)]
                 i += 1
-            elif A[idx(i)] == v:
+            ____ A[idx(i)] __ v:
                 i += 1
-            else:
+            ____
                 hi -= 1
                 A[idx(hi)], A[idx(i)] = A[idx(i)], A[idx(hi)]
 
-    def pivot(self, A, lo, hi, pidx=None):
+    ___ pivot(self, A, lo, hi, pidx=None
         lt = lo-1
         gt = hi
-        if not pidx: pidx = lo
+        __ not pidx: pidx = lo
 
         v = A[pidx]
         i = lo
-        while i < gt:
-            if A[i] < v:
+        w___ i < gt:
+            __ A[i] < v:
                 lt += 1
                 A[lt], A[i] = A[i], A[lt]
                 i += 1
-            elif A[i] == v:
+            ____ A[i] __ v:
                 i += 1
-            else:
+            ____
                 gt -= 1
                 A[gt], A[i] = A[i], A[gt]
 
-        return lt, gt
+        r_ lt, gt
 
-    def find_kth(self, A, lo, hi, k):
-        if lo >= hi: return
+    ___ find_kth(self, A, lo, hi, k
+        __ lo >= hi: r_
 
         lt, gt = self.pivot(A, lo, hi)
 
-        if lt < k < gt:
-            return k
-        if k <= lt:
-            return self.find_kth(A, lo, lt+1, k)
-        else:
-            return self.find_kth(A, gt, hi, k)
+        __ lt < k < gt:
+            r_ k
+        __ k <= lt:
+            r_ self.find_kth(A, lo, lt+1, k)
+        ____
+            r_ self.find_kth(A, gt, hi, k)
 
 
-class SolutionSort(object):
-    def wiggleSort(self, nums):
+class SolutionSort(object
+    ___ wiggleSort(self, nums
         """
         Sort-based: interleave the small half and large half
 
@@ -89,20 +89,20 @@ class SolutionSort(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        n = len(nums)
+        n = le.(nums)
         A = sorted(nums)
 
         j, k = (n-1) / 2, n-1
-        for i in xrange(len(nums)):
-            if i % 2 == 0:
+        for i in xrange(le.(nums)):
+            __ i % 2 __ 0:
                 nums[i] = A[j]
                 j -= 1
-            else:
+            ____
                 nums[i] = A[k]
                 k -= 1
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     # A = [1, 5, 1, 1, 6, 4]
     A = [3, 2, 1, 1, 3, 2]
     Solution().wiggleSort(A)

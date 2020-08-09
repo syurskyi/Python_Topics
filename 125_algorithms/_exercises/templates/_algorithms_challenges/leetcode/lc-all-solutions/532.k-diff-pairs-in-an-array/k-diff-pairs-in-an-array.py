@@ -1,26 +1,26 @@
-class Solution(object):
-  def findPairs(self, nums, k):
+class Solution(object
+  ___ findPairs(self, nums, k
     """
     :type nums: List[int]
     :type k: int
     :rtype: int
     """
-    if k < 0 or len(nums) < 2:
-      return 0
+    __ k < 0 or le.(nums) < 2:
+      r_ 0
     ans = 0
     nums.sort()
     start, end = 0, 1
-    while start < len(nums) and end < len(nums):
-      if start > 0 and nums[start - 1] == nums[start]:
+    w___ start < le.(nums) and end < le.(nums
+      __ start > 0 and nums[start - 1] __ nums[start]:
         start += 1
         continue
-      if nums[end] - nums[start] > k:
+      __ nums[end] - nums[start] > k:
         start += 1
-      elif start == end or nums[end] - nums[start] < k:
+      ____ start __ end or nums[end] - nums[start] < k:
         end += 1
-      elif nums[end] - nums[start] == k:
+      ____ nums[end] - nums[start] __ k:
         ans += 1
         end += 1
-        while end < len(nums) and nums[end - 1] == nums[end]:
+        w___ end < le.(nums) and nums[end - 1] __ nums[end]:
           end += 1
-    return ans
+    r_ ans

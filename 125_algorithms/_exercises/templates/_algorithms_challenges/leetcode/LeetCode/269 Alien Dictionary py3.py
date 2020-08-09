@@ -38,38 +38,38 @@ Output: ""
 
 Explanation: The order is invalid, so return "".
 """
-from typing import List
-from collections import defaultdict, deque
+from typing ______ List
+from collections ______ defaultdict, deque
 
 
-class Solution(object):
-    def alienOrder(self, words: List[str]) -> str:
+class Solution(object
+    ___ alienOrder(self, words: List[str]) -> str:
         G = self.construct_graph(words)
         visited = defaultdict(int)  # 0 not visited, 1 visiting, 2 visted
         ret = deque()
-        for u in G.keys():
-            if visited[u] == 0:
-                if not self.topo_dfs(G, u, visited, ret):
-                    return ""
+        for u in G.keys(
+            __ visited[u] __ 0:
+                __ not self.topo_dfs(G, u, visited, ret
+                    r_ ""
 
-        return "".join(ret)
+        r_ "".join(ret)
 
-    def construct_graph(self, words):
+    ___ construct_graph(self, words
         G = defaultdict(list)
         # need to initialize, consider test case ["z", "z"]
         for w in words:  # error
             for c in w:
                 G[c]
 
-        for i in range(len(words) - 1):  # compare word_i and word_{i+1}
-            for c1, c2 in zip(words[i], words[i+1]):
-                if c1 != c2:  # lexical order 
+        for i in range(le.(words) - 1  # compare word_i and word_{i+1}
+            for c1, c2 in zip(words[i], words[i+1]
+                __ c1 != c2:  # lexical order
                     G[c1].append(c2)
                     break  # need to break for lexical order
 
-        return G
+        r_ G
 
-    def topo_dfs(self, G, u, visited, ret):
+    ___ topo_dfs(self, G, u, visited, ret
         """
         Topological sort
         G = defaultdict(list)
@@ -79,18 +79,18 @@ class Solution(object):
         """
         visited[u] = 1
         for nbr in G[u]:
-            if visited[nbr] == 1:
-                return False
-            if visited[nbr] == 0:
-                if not self.topo_dfs(G, nbr, visited, ret):
-                    return False
+            __ visited[nbr] __ 1:
+                r_ False
+            __ visited[nbr] __ 0:
+                __ not self.topo_dfs(G, nbr, visited, ret
+                    r_ False
 
         visited[u] = 2
         ret.appendleft(u)  # visit larger first
-        return True
+        r_ True
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     lst = ["ze", "yf", "xd", "wd", "vd", "ua", "tt", "sz", "rd", "qd", "pz", "op", "nw", "mt", "ln", "ko", "jm", "il",
            "ho", "gk", "fa", "ed", "dg", "ct", "bb", "ba"]
-    assert Solution().alienOrder(lst) == "zyxwvutsrqponmlkjihgfedcba"
+    assert Solution().alienOrder(lst) __ "zyxwvutsrqponmlkjihgfedcba"

@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestBits(object):
+class TestBits(object
 
-    def test_new_int(self):
+    ___ test_new_int(self
         bits = Bits()
         max_size = 32
         assert_raises(TypeError, bits.new_int, None, max_size)
@@ -16,10 +16,10 @@ class TestBits(object):
         print('Success: test_find_int_excluded_from_input')
 
 
-def main():
+___ main(
     test = TestBits()
     test.test_new_int()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

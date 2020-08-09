@@ -1,39 +1,39 @@
 # Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
+# class Interval(object
+#     ___ __init__(self, s=0, e=0
 #         self.start = s
 #         self.end = e
-class IntvArray(object):
-  def __init__(self):
+class IntvArray(object
+  ___ __init__(self
     self._array = []
     self.append = lambda x: self._array.append(x)
     self.sort = self._array.sort
 
-  def __len__(self):
-    return len(self._array)
+  ___ __len__(self
+    r_ le.(self._array)
 
-  def __getitem__(self, x):
-    return self._array[x][0]
+  ___ __getitem__(self, x
+    r_ self._array[x][0]
 
-  def getIdx(self, x):
-    if x >= len(self._array):
-      return -1
-    return self._array[x][1]
+  ___ getIdx(self, x
+    __ x >= le.(self._array
+      r_ -1
+    r_ self._array[x][1]
 
 
-class Solution(object):
-  def findRightInterval(self, intervals):
+class Solution(object
+  ___ findRightInterval(self, intervals
     """
     :type intervals: List[Interval]
     :rtype: List[int]
     """
     bst = IntvArray()
     ans = []
-    for i, intv in enumerate(intervals):
+    for i, intv in enumerate(intervals
       bst.append((intv.start, i))
     bst.sort()
-    length = len(bst)
+    length = le.(bst)
     for intv in intervals:
       idx = bisect.bisect_left(bst, intv.end)
       ans.append(bst.getIdx(idx))
-    return ans
+    r_ ans

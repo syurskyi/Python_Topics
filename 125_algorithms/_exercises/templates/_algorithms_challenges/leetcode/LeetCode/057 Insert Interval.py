@@ -15,45 +15,45 @@ __author__ = 'Danyang'
 
 
 # Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
+class Interval(object
+    ___ __init__(self, s=0, e=0
         self.start = s
         self.end = e
 
-    def __str__(self):
-        return "[%d, %d]" % (self.start, self.end)
+    ___ __str__(self
+        r_ "[%d, %d]" % (self.start, self.end)
 
-    def __repr__(self):
-        return repr(self.__str__())
+    ___ __repr__(self
+        r_ repr(self.__str__())
 
 
-class Solution(object):
-    def insert(self, itvls, newItvl):
+class Solution(object
+    ___ insert(self, itvls, newItvl
         s, e = newItvl.start, newItvl.end
         left = filter(lambda x: x.end < s, itvls)
         right = filter(lambda x: x.start > e, itvls)
-        if len(left)+len(right) != len(itvls):
-            s = min(s, itvls[len(left)].start)
-            e = max(e, itvls[-len(right)-1].end)
+        __ le.(left)+le.(right) != le.(itvls
+            s = min(s, itvls[le.(left)].start)
+            e = max(e, itvls[-le.(right)-1].end)
 
-        return left + [Interval(s, e)] + right
+        r_ left + [Interval(s, e)] + right
 
-    def insert_itr(self, itvls, newItvl):
+    ___ insert_itr(self, itvls, newItvl
         """
         iterator TODO
         """
 
 
-class SolutionSlow(object):
-    def insert(self, itvls, newItvl):
+class SolutionSlow(object
+    ___ insert(self, itvls, newItvl
         """
         :param itvls: a list of Intervals
         :param newItvl: a Interval
         :return: a list of Interval
         """
-        return self.merge(itvls+[newItvl])
+        r_ self.merge(itvls+[newItvl])
 
-    def merge(self, itvls):
+    ___ merge(self, itvls
         """
         sort first by .start
         then decide whether to extend the .end
@@ -65,15 +65,15 @@ class SolutionSlow(object):
         ret = [itvls[0]]
         for cur in itvls[1:]:
             pre = ret[-1]
-            if cur.start <= pre.end:  # overlap
+            __ cur.start <= pre.end:  # overlap
                 pre.end = max(pre.end, cur.end)
-            else:
+            ____
                 ret.append(cur)
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     lst = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
     insert = [4, 9]
     lst_interval = []

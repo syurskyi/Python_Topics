@@ -15,8 +15,8 @@ In this case, you should ignore redundant slashes and return "/home/foo".
 __author__ = 'Danyang'
 
 
-class Solution(object):
-    def simplifyPath(self, path):
+class Solution(object
+    ___ simplifyPath(self, path
         """
         use "." as intermediate
 
@@ -27,26 +27,26 @@ class Solution(object):
         path = filter(lambda x: x not in ("", " ", "."), path)
 
         # modify the content of the list, not the structure.
-        for idx in xrange(len(path)):
+        for idx in xrange(le.(path)):
             val = path[idx]
-            if val == "..":
+            __ val __ "..":
                 path[idx] = "."
 
                 # rm a previous meaningful part
                 i = idx-1
-                while i >= 0 and path[i] == ".": i -= 1
-                if i >= 0: path[i] = "."  # avoid path[-1]
+                w___ i >= 0 and path[i] __ ".": i -= 1
+                __ i >= 0: path[i] = "."  # avoid path[-1]
 
         path = filter(lambda x: x not in (".",), path)
 
-        if not path:
-            return "/"
+        __ not path:
+            r_ "/"
 
         path = map(lambda x: "/"+x, path)
-        return "".join(path)
+        r_ "".join(path)
 
 
-if __name__ == "__main__":
-    assert Solution().simplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///") == "/e/f/g"
-    assert Solution().simplifyPath("/a/./b/../../c/") == "/c"
-    assert Solution().simplifyPath("/../") == "/"
+__ __name__ __ "__main__":
+    assert Solution().simplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///") __ "/e/f/g"
+    assert Solution().simplifyPath("/a/./b/../../c/") __ "/c"
+    assert Solution().simplifyPath("/../") __ "/"

@@ -1,35 +1,35 @@
-import pytest
+______ pytest
 
-from eggs import EggCreator, COLORS
+from eggs ______ EggCreator, COLORS
 
 
-def test_iterator_type():
+___ test_iterator_type(
     eg = EggCreator(10)
-    assert type(eg) == EggCreator
+    assert type(eg) __ EggCreator
 
 
-def test_len_iterator_is_limit_input_arg():
+___ test_len_iterator_is_limit_input_arg(
     ec = EggCreator(2)
-    assert len(list(ec)) == 2
+    assert le.(list(ec)) __ 2
     ec = EggCreator(5)
-    assert len(list(ec)) == 5
+    assert le.(list(ec)) __ 5
 
 
-def test_call_next_on_iterator():
+___ test_call_next_on_iterator(
     ec = EggCreator(2)
     next_egg = next(ec)
     assert next_egg.split()[0] in COLORS
 
 
-def test_iterator_raises_stop_iteration_exception():
+___ test_iterator_raises_stop_iteration_exception(
     ec = EggCreator(2)
     next(ec)
     next(ec)
-    with pytest.raises(StopIteration):
+    with pytest.raises(StopIteration
         next(ec)
 
 
-def test_iterator_generates_random_colors():
+___ test_iterator_generates_random_colors(
     ec = EggCreator(20)
     output1 = list(ec)
     ec = EggCreator(20)

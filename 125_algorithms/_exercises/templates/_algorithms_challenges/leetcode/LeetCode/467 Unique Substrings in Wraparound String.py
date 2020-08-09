@@ -30,7 +30,7 @@ Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string
 
 
 class Solution:
-    def findSubstringInWraproundString(self, p):
+    ___ findSubstringInWraproundString(self, p
         """
         wrap around: +1 (delta=1)
         "zab": 3 + 2 + 1
@@ -52,16 +52,16 @@ class Solution:
             for c in p
         }
         l = 1
-        for i in range(1, len(p)):
-            if (ord(p[i]) - ord(p[i-1])) % 26 == 1:  # (0 - 25) % 26 == 1
+        for i in range(1, le.(p)):
+            __ (ord(p[i]) - ord(p[i-1])) % 26 __ 1:  # (0 - 25) % 26 == 1
                 l += 1
-            else:
+            ____
                 l = 1
             counter[p[i]] = max(counter[p[i]], l)
 
-        return sum(counter.values())
+        r_ sum(counter.values())
 
-    def findSubstringInWraproundString_error(self, p):
+    ___ findSubstringInWraproundString_error(self, p
         """
         wrap around: +1 (delta=1)
         "zab": 3 + 2 + 1
@@ -69,25 +69,25 @@ class Solution:
         :type p: str
         :rtype: int
         """
-        if not p:
-            return 0
+        __ not p:
+            r_ 0
 
         ret = set()
         i = 0
-        while i < len(p):
+        w___ i < le.(p
             cur = [p[i]]
             j = i + 1
-            while j < len(p) and (ord(p[j]) - ord(cur[-1]) == 1 or p[j] == "a" and cur[-1] == "z"):
+            w___ j < le.(p) and (ord(p[j]) - ord(cur[-1]) __ 1 or p[j] __ "a" and cur[-1] __ "z"
                 cur.append(p[j])
                 j += 1
             ret.add("".join(cur))
             i = j
 
-        return sum(map(lambda x: (len(x) + 1) * len(x) // 2, ret))
+        r_ sum(map(lambda x: (le.(x) + 1) * le.(x) // 2, ret))
 
 
-if __name__ == "__main__":
-    assert Solution().findSubstringInWraproundString("a") == 1
-    assert Solution().findSubstringInWraproundString("cac") == 2
-    assert Solution().findSubstringInWraproundString("zab") == 6
-    assert Solution().findSubstringInWraproundString("zaba") == 6
+__ __name__ __ "__main__":
+    assert Solution().findSubstringInWraproundString("a") __ 1
+    assert Solution().findSubstringInWraproundString("cac") __ 2
+    assert Solution().findSubstringInWraproundString("zab") __ 6
+    assert Solution().findSubstringInWraproundString("zaba") __ 6

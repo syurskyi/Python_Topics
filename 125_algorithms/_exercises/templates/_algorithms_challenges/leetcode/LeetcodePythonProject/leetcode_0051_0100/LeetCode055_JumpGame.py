@@ -4,21 +4,21 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def canJump(self, nums):
+class Solution(object
+    ___ canJump(self, nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         furthest = 0
-        for i, num in enumerate(nums):
-            if furthest >= i:
+        for i, num in enumerate(nums
+            __ furthest >= i:
                 furthest = max(furthest, i+num)
-            if furthest >= len(nums)-1:
-                return True
-        return False
+            __ furthest >= le.(nums)-1:
+                r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [2,3,1,1,4],
             [3,2,1,0,4],
@@ -29,5 +29,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*15+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

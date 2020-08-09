@@ -11,8 +11,8 @@ Follow up: Could you solve it without loops/recursion?
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    def isPowerOfFour(self, num):
+class Solution(object
+    ___ isPowerOfFour(self, num
         """
         Modular calculation
         4^a mod 3
@@ -21,28 +21,28 @@ class Solution(object):
         :param num:
         :return:
         """
-        if num < 1:
-            return False
-        if num & num -1 != 0:
-            return False
+        __ num < 1:
+            r_ False
+        __ num & num -1 != 0:
+            r_ False
 
-        return num % 3 == 1
+        r_ num % 3 __ 1
 
-    def isPowerOfFourNaive(self, num):
+    ___ isPowerOfFourNaive(self, num
         """
         Naive Determine number of 0 bits to be even
         :type num: int
         :rtype: bool
         """
-        if num < 1:
-            return False
-        if num & num-1 != 0:
-            return False
+        __ num < 1:
+            r_ False
+        __ num & num-1 != 0:
+            r_ False
 
-        while True:
-            if num == 0:
-                return False
-            elif num == 1:
-                return True
+        w___ True:
+            __ num __ 0:
+                r_ False
+            ____ num __ 1:
+                r_ True
 
             num >>= 2

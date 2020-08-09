@@ -3,30 +3,30 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def checkValidString(self, s):
+class Solution(object
+    ___ checkValidString(self, s
         """
         :type s: str
         :rtype: bool
         """
         low, high = 0, 0
         for c in s:
-            if c == '(':
+            __ c __ '(':
                 low += 1
                 high += 1
-            elif c == ')':
-                if low > 0:
+            ____ c __ ')':
+                __ low > 0:
                     low -= 1
                 high -= 1
-            else:
-                if low > 0:
+            ____
+                __ low > 0:
                     low -= 1
                 high += 1
-            if high < 0:
-                return False
-        return low == 0
+            __ high < 0:
+                r_ False
+        r_ low __ 0
     
-    def test(self):
+    ___ test(self
         testCases = [
             '()',
             '(*)',
@@ -40,5 +40,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

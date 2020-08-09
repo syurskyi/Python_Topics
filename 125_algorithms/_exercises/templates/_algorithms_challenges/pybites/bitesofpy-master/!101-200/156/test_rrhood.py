@@ -1,4 +1,4 @@
-from Previous.rrhood import make_character_index
+from Previous.rrhood ______ make_character_index
 
 
 the_neetle_tree = """
@@ -21,7 +21,7 @@ The tree saw the change in the elder brother’s heart and gave them all the gol
 characters = ('elder brother', 'younger brother', ('the tree', 'magical tree'))
 
 
-def test_make_character_index_with_default_args():
+___ test_make_character_index_with_default_args(
     keys = ('red riding hood', 'grandmother', 'wolf', 'woodsman')
     values = (
         [1, 2, 3, 6, 7, 8, 11, 18, 19, 21, 24, 26, 28, 30, 33, 36],
@@ -31,10 +31,10 @@ def test_make_character_index_with_default_args():
     )
     expected = dict(zip(keys, values))
     actual = make_character_index()
-    assert actual == expected
+    assert actual __ expected
 
 
-def test_make_character_index_with_other_args():
+___ test_make_character_index_with_other_args(
     keys = ('elder brother', 'younger brother', 'the tree')
     values = (
         [2, 3, 7, 9, 10, 11, 14, 15],
@@ -44,4 +44,4 @@ def test_make_character_index_with_other_args():
     actual = make_character_index(text=the_neetle_tree,
                                   characters=characters)
     expected = dict(zip(keys, values))
-    assert actual == expected
+    assert actual __ expected

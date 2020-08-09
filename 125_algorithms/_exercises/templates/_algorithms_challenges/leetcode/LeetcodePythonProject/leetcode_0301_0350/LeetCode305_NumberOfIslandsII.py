@@ -3,8 +3,8 @@ Created on Mar 11, 2017
 
 @author: MT
 '''
-class Solution(object):
-    def numIslands2(self, m, n, positions):
+class Solution(object
+    ___ numIslands2(self, m, n, positions
         res = []
         roots = [-1]*(m*n)
         grid = [[False]*n for _ in range(m)]
@@ -14,21 +14,21 @@ class Solution(object):
             grid[i][j] = True
             count += 1
             root0 = i*n+j
-            for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-                if 0 <= x < m and 0 <= y < n and grid[x][y]:
+            for x, y in (i+1, j), (i-1, j), (i, j+1), (i, j-1
+                __ 0 <= x < m and 0 <= y < n and grid[x][y]:
                     root = self.getRoot(roots, x*n+y)
-                    if root != root0:
+                    __ root != root0:
                         count -= 1
                         roots[root] = root0
             res.append(count)
-        return res
+        r_ res
     
-    def getRoot(self, roots, ind):
-        while roots[ind] != -1:
+    ___ getRoot(self, roots, ind
+        w___ roots[ind] != -1:
             ind = roots[ind]
-        return ind
+        r_ ind
     
-    def test(self):
+    ___ test(self
         testCases = [
             (3, 3, [[0,0], [0,1], [1,2], [2,1]]),
             [
@@ -50,5 +50,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

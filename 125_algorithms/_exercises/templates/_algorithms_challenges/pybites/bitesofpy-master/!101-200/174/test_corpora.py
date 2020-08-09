@@ -1,5 +1,5 @@
-import pytest
-from corpora import GETTYSBURG, Corpora
+______ pytest
+from corpora ______ GETTYSBURG, Corpora
 
 # https://www.oaktreecapital.com/insights/howard-marks-memos
 TAX_SYSTEM_IN_US = """Suppose that every day, ten men go out for beer, and the bill for all ten comes to $100.  If they paid their bill the way we pay our taxes (by taxpayer decile), it would go something like this:
@@ -46,45 +46,45 @@ EXTRA_CHAR = ["—", "\n", "  "]
 
 
 @pytest.fixture
-def getty():
-    return Corpora(GETTYSBURG)
+___ getty(
+    r_ Corpora(GETTYSBURG)
 
 
 @pytest.fixture
-def beer_tax():
-    return Corpora(TAX_SYSTEM_IN_US)
+___ beer_tax(
+    r_ Corpora(TAX_SYSTEM_IN_US)
 
 
-def test_cleanup_text(getty):
+___ test_cleanup_text(getty
     cleaned = getty.cleaned
-    assert len(cleaned) == 1419
+    assert le.(cleaned) __ 1419
     for char in EXTRA_CHAR[:2]:
         assert char in cleaned
 
 
-def test_cleanup_text_one_extra_char(getty):
+___ test_cleanup_text_one_extra_char(getty
     getty.extra = [EXTRA_CHAR[0]]
     cleaned = getty.cleaned
-    assert len(cleaned) == 1419
+    assert le.(cleaned) __ 1419
     assert EXTRA_CHAR[0] not in cleaned
     assert EXTRA_CHAR[1] in cleaned
 
 
-def test_cleanup_text_multiple_extra_char(getty):
+___ test_cleanup_text_multiple_extra_char(getty
     getty.extra = EXTRA_CHAR
     cleaned = getty.cleaned
-    assert len(cleaned) == 1416
+    assert le.(cleaned) __ 1416
     for char in EXTRA_CHAR:
         assert char not in cleaned
 
 
-def test_cleanup_text_alt_text(beer_tax):
+___ test_cleanup_text_alt_text(beer_tax
     cleaned = beer_tax.cleaned
-    assert len(cleaned) == 2762
+    assert le.(cleaned) __ 2762
     assert "$" not in cleaned
 
 
-def test_word_metrics_gettysburg_default(getty):
+___ test_word_metrics_gettysburg_default(getty
     expected = [
         ("nation", 5),
         ("dedicated", 4),
@@ -92,21 +92,21 @@ def test_word_metrics_gettysburg_default(getty):
         ("cannot", 3),
         ("dead", 3),
     ]
-    assert getty.metrics == expected
+    assert getty.metrics __ expected
 
 
-def test_word_metrics_beer_tax(beer_tax):
+___ test_word_metrics_beer_tax(beer_tax
     expected = [("pay", 13), ("would", 12), ("men", 8), ("paid", 7), ("man", 7)]
-    assert beer_tax.metrics == expected
+    assert beer_tax.metrics __ expected
 
 
-def test_word_metrics_with_word_removed(beer_tax):
+___ test_word_metrics_with_word_removed(beer_tax
     expected = [("pay", 13), ("would", 12), ("paid", 7), ("bill", 6), ("saving", 6)]
     beer_tax.extra = ["men", "man"]
-    assert beer_tax.metrics == expected
+    assert beer_tax.metrics __ expected
 
 
-def test_graph_gettysburgh(getty, capfd):
+___ test_graph_gettysburgh(getty, capfd
     expected = [
         "    nation #####",
         " dedicated ####",
@@ -117,10 +117,10 @@ def test_graph_gettysburgh(getty, capfd):
     getty.extra = EXTRA_CHAR
     getty.graph
     output = capfd.readouterr()[0].splitlines()
-    assert output == expected
+    assert output __ expected
 
 
-def test_graph_beer_tax(beer_tax, capfd):
+___ test_graph_beer_tax(beer_tax, capfd
     expected = [
         "       pay #############",
         "     would ############",
@@ -136,10 +136,10 @@ def test_graph_beer_tax(beer_tax, capfd):
     beer_tax.count = 10
     beer_tax.graph
     output = capfd.readouterr()[0].splitlines()
-    assert output == expected
+    assert output __ expected
 
 
-def test_graph_beer_tax_asterisk(beer_tax, capfd):
+___ test_graph_beer_tax_asterisk(beer_tax, capfd
     expected = [
         "       pay *************",
         "     would ************",
@@ -150,4 +150,4 @@ def test_graph_beer_tax_asterisk(beer_tax, capfd):
     beer_tax.tag = "*"
     beer_tax.graph
     output = capfd.readouterr()[0].splitlines()
-    assert output == expected
+    assert output __ expected

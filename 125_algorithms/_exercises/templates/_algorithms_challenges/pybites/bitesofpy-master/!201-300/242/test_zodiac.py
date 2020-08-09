@@ -1,12 +1,12 @@
-from datetime import datetime
-import json
-import os
-from pathlib import Path
-from urllib.request import urlretrieve
+from datetime ______ datetime
+______ json
+______ os
+from pathlib ______ Path
+from urllib.request ______ urlretrieve
 
-import pytest
+______ pytest
 
-from zodiac import (get_signs, get_sign_with_most_famous_people,
+from zodiac ______ (get_signs, get_sign_with_most_famous_people,
                     signs_are_mutually_compatible, get_sign_by_date, Sign)
 
 # original source: https://zodiacal.herokuapp.com/api
@@ -16,26 +16,26 @@ PATH = Path(TMP, "zodiac.json")
 
 
 @pytest.fixture(scope='module')
-def signs():
-    if not PATH.exists():
+___ signs(
+    __ not PATH.exists(
         urlretrieve(URL, PATH)
     with open(PATH) as f:
         data = json.loads(f.read())
-    return get_signs(data)
+    r_ get_signs(data)
 
 
 # write your pytest code here ...
-def test_named_tuple(signs):
-    assert list(Sign._fields) == list('name compatibility famous_people sun_dates'.split(' '))
+___ test_named_tuple(signs
+    assert list(Sign._fields) __ list('name compatibility famous_people sun_dates'.split(' '))
     assert repr(signs[0]).startswith('Sign(')
 
 
-def test_get_signs(signs):
-    assert len(signs) == 12
+___ test_get_signs(signs
+    assert le.(signs) __ 12
 
 
-def test_get_sign_with_most_famouse_people(signs):
-    assert get_sign_with_most_famous_people(signs) == ('Scorpio', 35)
+___ test_get_sign_with_most_famouse_people(signs
+    assert get_sign_with_most_famous_people(signs) __ ('Scorpio', 35)
 
 
 @pytest.mark.parametrize("sgn1, sgn2, result", [
@@ -44,8 +44,8 @@ def test_get_sign_with_most_famouse_people(signs):
     ('Aries', 'Capricorn', False),
     ('Aries', 'Aquarius', True)
 ])
-def test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
-    assert signs_are_mutually_compatible(signs, sgn1, sgn2) == result
+___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result
+    assert signs_are_mutually_compatible(signs, sgn1, sgn2) __ result
 
 
 @pytest.mark.parametrize("dt, result", [
@@ -74,6 +74,6 @@ def test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
     ([2, 19], 'Pisces'),
     ([3, 20], 'Pisces')
 ])
-def test_get_sign_by_date(signs, dt, result):
+___ test_get_sign_by_date(signs, dt, result
     m, d = dt
-    assert get_sign_by_date(signs, datetime(year=2000, month=m, day=d)) == result
+    assert get_sign_by_date(signs, datetime(year=2000, month=m, day=d)) __ result

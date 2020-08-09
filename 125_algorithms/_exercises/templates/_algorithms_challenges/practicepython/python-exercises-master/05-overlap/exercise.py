@@ -1,10 +1,10 @@
 #/#! /urs/bin/env python
-import random
+______ random
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     list_1 = []
     list_2 = []
-    for a in range(0,40):
+    for a in range(0,40
         list_1.append(random.randint(0,40))
         list_2.append(random.randint(0,40))
 
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     match = []
 
     for el in list_1:
-        if el in list_2:
+        __ el in list_2:
             match.append(el)
 
     print('The overlaped numbers are: ' + str(list(set(match))))

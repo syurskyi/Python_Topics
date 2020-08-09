@@ -1,5 +1,5 @@
-class Solution(object):
-  def licenseKeyFormatting(self, S, K):
+class Solution(object
+  ___ licenseKeyFormatting(self, S, K
     """
     :type S: str
     :type K: int
@@ -7,12 +7,12 @@ class Solution(object):
     """
     s = S.split("-")
     s = "".join(s)
-    n = len(s)
+    n = le.(s)
     start = n % K
     res = []
-    if start != 0:
+    __ start != 0:
       res.append(s[:start].upper())
-    for k in range(0, (len(s) - start) / K):
+    for k in range(0, (le.(s) - start) / K
       res.append(s[start:start + K].upper())
       start += K
-    return "-".join(res)
+    r_ "-".join(res)

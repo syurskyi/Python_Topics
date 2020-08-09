@@ -1,7 +1,7 @@
-from winners import print_game_stats, games_won
+from winners ______ print_game_stats, games_won
 
 
-def test_print_game_stats(capfd):
+___ test_print_game_stats(capfd
     winner_prints = ["sara has won 0 games",
                      "bob has won 1 game",
                      "tim has won 5 games",

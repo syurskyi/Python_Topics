@@ -40,7 +40,7 @@ Note:
 """
 
 class Solution:
-    def subarrayBitwiseORs(self, A: List[int]) -> int:
+    ___ subarrayBitwiseORs(self, A: List[int]) -> int:
         """
         Use a dp array to record OR
         F[i][j]
@@ -57,4 +57,4 @@ class Solution:
             cur = {a | e for e in cur} | {a}
             ret |= cur
 
-        return len(ret)
+        r_ le.(ret)

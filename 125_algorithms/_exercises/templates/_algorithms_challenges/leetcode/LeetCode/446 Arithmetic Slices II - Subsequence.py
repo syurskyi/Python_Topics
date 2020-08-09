@@ -6,11 +6,11 @@ elements and if the difference between any two consecutive elements is the same.
 The function should return the number of arithmetic subsequence slices in the
 array A. (Subsequence rather than slide)
 """
-from collections import defaultdict
+from collections ______ defaultdict
 
 
 class Solution:
-    def numberOfArithmeticSlices(self, A):
+    ___ numberOfArithmeticSlices(self, A
         """
         Subsequence, count the number, looks like dp
         use defaultdict for easy dp array construction
@@ -34,35 +34,35 @@ class Solution:
         """
         ret = 0
         D = defaultdict(lambda: defaultdict(int))
-        for i in range(len(A)):
-            for j in range(i):
+        for i in range(le.(A)):
+            for j in range(i
                 d = A[i] - A[j]
                 D[i][d] += 1 + D[j][d]
-                if D[j][d] > 0:
+                __ D[j][d] > 0:
                     # >= 3 subsequence with A[k], A[j], A[i]
                     ret += D[j][d]  # not D[i][d]
 
-        return ret
+        r_ ret
 
-    def numberOfArithmeticSlices_error(self, A):
+    ___ numberOfArithmeticSlices_error(self, A
         """
         :type A: List[int]
         :rtype: int
         """
         ret = 0
         D = defaultdict(lambda: defaultdict(int))
-        for i in range(len(A)):
-            for j in range(i):
+        for i in range(le.(A)):
+            for j in range(i
                 delta = A[i] - A[j]
                 D[i][delta] += 1 + D[j][delta]
 
-            for j in range(i):
+            for j in range(i
                 delta = A[i] - A[j]
-                if D[j][delta] > 0:
+                __ D[j][delta] > 0:
                     ret += D[i][delta]  # counted the length 2
 
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().numberOfArithmeticSlices([2, 4, 6, 8, 10]) == 7
+__ __name__ __ "__main__":
+    assert Solution().numberOfArithmeticSlices([2, 4, 6, 8, 10]) __ 7

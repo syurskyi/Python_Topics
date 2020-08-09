@@ -1,8 +1,8 @@
-def caffeineBuzz(n):
+___ caffeineBuzz(n
 	print(n)
-	if n%3 == 0 and n % 4 == 0:
-		return 'CoffeeScript'
-	elif n%3 == 0:
-		return 'JavaScript' if n % 2 == 0 else 'Java'
-	else:
-		return 'mocha_missing!'
+	__ n%3 __ 0 and n % 4 __ 0:
+		r_ 'CoffeeScript'
+	____ n%3 __ 0:
+		r_ 'JavaScript' __ n % 2 __ 0 else 'Java'
+	____
+		r_ 'mocha_missing!'

@@ -4,28 +4,28 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def validWordAbbreviation(self, word, abbr):
+class Solution(object
+    ___ validWordAbbreviation(self, word, abbr
         i, j = 0, 0
-        while i < len(word) and j < len(abbr):
-            if abbr[j].isdigit():
+        w___ i < le.(word) and j < le.(abbr
+            __ abbr[j].isdigit(
                 prev = j
-                while j+1 < len(abbr) and abbr[j+1].isdigit():
+                w___ j+1 < le.(abbr) and abbr[j+1].isdigit(
                     j+=1
-                if abbr[prev:j+1].startswith('0'): return False
+                __ abbr[prev:j+1].startswith('0' r_ False
                 num = int(abbr[prev:j+1])
                 i += num
                 j += 1
-            else:
-                if word[i] != abbr[j]:
-                    return False
+            ____
+                __ word[i] != abbr[j]:
+                    r_ False
                 i+=1
                 j+=1
-        if i != len(word) or j != len(abbr):
-            return False
-        return True
+        __ i != le.(word) or j != le.(abbr
+            r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             ('internationalization', 'i12iz4n'),
             ('apple', 'a2e'),
@@ -37,5 +37,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

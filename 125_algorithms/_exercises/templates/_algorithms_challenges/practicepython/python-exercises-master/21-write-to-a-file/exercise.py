@@ -1,19 +1,19 @@
 #! /Users/piotrjankiewicz/anaconda3/bin/python3.6
-import requests
-from bs4 import BeautifulSoup
+______ requests
+from bs4 ______ BeautifulSoup
 
 
-def getPortions(soup):
+___ getPortions(soup
     # this is a generator
     heading = soup.find('div', {'class': 'deck'})
-    if heading:
+    __ heading:
         yield heading.text
 
-    for p in soup.find_all('p', {'class': ''}):
+    for p in soup.find_all('p', {'class': ''}
         yield p.text
 
 
-def writePageToFile(url):
+___ writePageToFile(url
     page = requests.get(url)
 
     soup = BeautifulSoup(page.text, 'html.parser')
@@ -22,7 +22,7 @@ def writePageToFile(url):
 
     open_file = open(name + '.txt', 'a')
 
-    for element in getPortions(soup):
+    for element in getPortions(soup
         open_file.write(element + '\n')
 
     open_file.close()
@@ -30,6 +30,6 @@ def writePageToFile(url):
     print('\nArticle was saved in ' + name + '.txt file.')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     url = 'https://www.vanityfair.com/style/society/2014/06/monica-lewinsky-humiliation-culture'
     writePageToFile(url)

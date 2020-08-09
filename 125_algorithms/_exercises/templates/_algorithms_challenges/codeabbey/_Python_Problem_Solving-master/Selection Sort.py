@@ -1,10 +1,10 @@
 d = int(input())
 a = list(map(int,input().split()))
 
-while len(a)!= 1:
+w___ le.(a)!= 1:
     max = 0
-    for i in range(len(a)):
-        if a[i] > max:
+    for i in range(le.(a)):
+        __ a[i] > max:
             max = a[i]
     ind = a.index(max)
     print(ind,end=' ')

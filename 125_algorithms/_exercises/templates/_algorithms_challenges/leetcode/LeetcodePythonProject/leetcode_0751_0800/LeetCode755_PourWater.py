@@ -3,37 +3,37 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def pourWater(self, heights, V, K):
+class Solution(object
+    ___ pourWater(self, heights, V, K
         """
         :type heights: List[int]
         :type V: int
         :type K: int
         :rtype: List[int]
         """
-        if not heights: return heights
+        __ not heights: r_ heights
         idx = 0
-        while V > 0:
+        w___ V > 0:
             idx = K
-            for i in range(K-1, -1, -1):
-                if heights[i] > heights[idx]:
+            for i in range(K-1, -1, -1
+                __ heights[i] > heights[idx]:
                     break
-                elif heights[i] < heights[idx]:
+                ____ heights[i] < heights[idx]:
                     idx = i
-            if idx != K:
+            __ idx != K:
                 heights[idx] += 1
                 V -= 1
                 continue
-            for i in range(K+1, len(heights)):
-                if heights[i] > heights[idx]:
+            for i in range(K+1, le.(heights)):
+                __ heights[i] > heights[idx]:
                     break
-                elif heights[i] < heights[idx]:
+                ____ heights[i] < heights[idx]:
                     idx = i
             heights[idx] += 1
             V -= 1
-        return heights
+        r_ heights
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[2,1,1,2,1,2,2], 4, 3],
             [[1,2,3,4], 2, 2],
@@ -62,5 +62,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

@@ -11,8 +11,8 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 A solution is ["cats and dog", "cat sand dog"].
 """
 
-class Solution(object):
-    def wordBreak(self, s, wordDict):
+class Solution(object
+    ___ wordBreak(self, s, wordDict
         """
         :type s: str
         :type wordDict: Set[str]
@@ -23,19 +23,19 @@ class Solution(object):
         cand = []
         res = []
         self.word_break_aux(s, wordDict, cand, res)
-        return res
+        r_ res
 
-    def word_break_aux(self, s, wordDict, cand, res):
+    ___ word_break_aux(self, s, wordDict, cand, res
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
-        if not s:
+        __ not s:
             res.append(' '.join(cand))
-        else:
-            for i, c in enumerate(s):
+        ____
+            for i, c in enumerate(s
                 word = s[:i + 1]
                 rest = s[i + 1:]
-                if word in wordDict:
+                __ word in wordDict:
                     cand.append(word)
                     self.word_break_aux(rest, wordDict, cand, res)
                     cand.pop()

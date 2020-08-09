@@ -1,22 +1,22 @@
-class Solution(object):
-    def sumSubarrayMins(self, A):
+class Solution(object
+    ___ sumSubarrayMins(self, A
         """
         :type A: List[int]
         :rtype: int
         """
-        if not A: return 0
+        __ not A: r_ 0
         MOD = 10**9+7
         stack = [[float('-inf'), -1, 0]] # value, index, accumulated_sum
         res = 0
-        for i, num in enumerate(A):
-            while stack and stack[-1][0] > num:
+        for i, num in enumerate(A
+            w___ stack and stack[-1][0] > num:
                 stack.pop()
             total = (stack[-1][2] + (i-stack[-1][1]) * num) % MOD
             stack.append([num, i, total])
             res = (res + total) % MOD
-        return int(res)
+        r_ int(res)
 
-    def test(self):
+    ___ test(self
         testCases = [
             [3,1,2,4],
         ]
@@ -26,5 +26,5 @@ class Solution(object):
             print('-='*30+'-')
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

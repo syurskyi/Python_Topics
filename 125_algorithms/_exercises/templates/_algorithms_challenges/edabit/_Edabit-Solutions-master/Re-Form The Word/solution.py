@@ -1,13 +1,13 @@
-def get_word(left, right):
-    return left.capitalize() + right
+___ get_word(left, right
+    r_ left.capitalize() + right
 
 
 
-def test():
+___ test(
     print("test has started")
-    if get_word("reli", "able") != "Reliable":
+    __ get_word("reli", "able") != "Reliable":
         print("error1")
-    if get_word("maga", "zine") != "Magazine":
+    __ get_word("maga", "zine") != "Magazine":
         print("error2")
-    if get_word("offi", "cial") != "Official":
+    __ get_word("offi", "cial") != "Official":
         print("error3")

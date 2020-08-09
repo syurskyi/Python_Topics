@@ -1,15 +1,15 @@
-class Solution(object):
-  def increasingTriplet(self, nums):
+class Solution(object
+  ___ increasingTriplet(self, nums
     """
     :type nums: List[int]
     :rtype: bool
     """
     a = b = float("inf")
     for num in nums:
-      if num <= a:
+      __ num <= a:
         a = num
-      elif num <= b:
+      ____ num <= b:
         b = num
-      else:
-        return True
-    return False
+      ____
+        r_ True
+    r_ False

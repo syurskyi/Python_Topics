@@ -1,20 +1,20 @@
-import re
+______ re
 
-from text2cols import text_to_columns
+from text2cols ______ text_to_columns
 
 
-def test_text_to_one_col():
+___ test_text_to_one_col(
     text = """My house is small but cosy."""
     expected = [
         r"^My house is small",
         r"^but cosy."
     ]
     output = text_to_columns(text).split("\n")
-    for line, match in zip(output, expected):
+    for line, match in zip(output, expected
         assert re.search(match, line)
 
 
-def test_text_to_two_cols():
+___ test_text_to_two_cols(
     text = """My house is small but cosy.
 
     It has a white kitchen and an empty fridge."""
@@ -24,11 +24,11 @@ def test_text_to_two_cols():
         r".*fridge."
     ]
     output = text_to_columns(text).split("\n")
-    for line, match in zip(output, expected):
+    for line, match in zip(output, expected
         assert re.search(match, line)
 
 
-def test_text_to_three_cols():
+___ test_text_to_three_cols(
     text = """My house is small but cosy.
 
     It has a white kitchen and an empty fridge.
@@ -41,11 +41,11 @@ def test_text_to_three_cols():
         r".*on it."
     ]
     output = text_to_columns(text).split("\n")
-    for line, match in zip(output, expected):
+    for line, match in zip(output, expected
         assert re.search(match, line)
 
 
-def test_text_to_four_cols():
+___ test_text_to_four_cols(
     text = """My house is small but cosy.
 
     It has a white kitchen and an empty fridge.
@@ -61,5 +61,5 @@ def test_text_to_four_cols():
         r".*on it\.\s+I had a garden",
     ]
     output = text_to_columns(text).split("\n")
-    for line, match in zip(output, expected):
+    for line, match in zip(output, expected
         assert re.search(match, line)

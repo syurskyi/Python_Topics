@@ -4,13 +4,13 @@ Created on Feb 21, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x, nextNode=None):
+class ListNode(object
+    ___ __init__(self, x, nextNode=None
         self.val = x
         self.next = nextNode
 
-class Solution(object):
-    def splitListToParts(self, root, k):
+class Solution(object
+    ___ splitListToParts(self, root, k
         """
         :type root: ListNode
         :type k: int
@@ -19,13 +19,13 @@ class Solution(object):
         res = []
         length = 0
         head = root
-        while head:
+        w___ head:
             head = head.next
             length += 1
         length0 = length//k
         count0 = length-length0*k
         lengths = [length0]*k
-        for i in range(count0):
+        for i in range(count0
             lengths[i] += 1
         head = root
         prev = ListNode(-1)
@@ -35,8 +35,8 @@ class Solution(object):
         print('lengths: %s' % lengths)
         print('length: %s' % length)
         print('count0: %s' % count0)
-        while head:
-            if lengths[i] == 0:
+        w___ head:
+            __ lengths[i] __ 0:
                 prev.next = None
                 i += 1
                 res.append(prevHead)
@@ -45,11 +45,11 @@ class Solution(object):
             prev = head
             head = head.next
         res.append(prevHead)
-        for _ in range(i+1, k):
+        for _ in range(i+1, k
             res.append(None)
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 ListNode(1, ListNode(2, ListNode(3, ListNode(4)))),
@@ -64,5 +64,5 @@ class Solution(object):
             res = self.splitListToParts(head, k)
             print('res: %s' % res)
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

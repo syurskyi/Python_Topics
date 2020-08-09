@@ -29,7 +29,7 @@ A[i], B[i] are integer values in the range [0, 2000].
 
 
 class Solution:
-    def minSwap(self, A: List[int], B: List[int]) -> int:
+    ___ minSwap(self, A: List[int], B: List[int]) -> int:
         """
         Let F[0][i] be number of swaps to make satisfy if not swap A[i], B[i]
         Let F[1][i] be ... if swap A[i], B[i]
@@ -37,27 +37,27 @@ class Solution:
         There is a binary array [0, 1, ...] to denote whether to swap A[i], B[i]
         without actually swapping the array
         """
-        n = len(A)
+        n = le.(A)
         F = [[0 for _ in range(n)] for _ in range(2)]
         F[1][0] = 1
-        for i in range(1, n):
-            if A[i] > max(A[i-1], B[i-1]) and B[i] > max(A[i-1], B[i-1]):
+        for i in range(1, n
+            __ A[i] > max(A[i-1], B[i-1]) and B[i] > max(A[i-1], B[i-1]
                 # freedom of two options - swap or not swap
                 F[0][i] = min(F[0][i-1], F[1][i-1])
                 F[1][i] = min(F[0][i-1], F[1][i-1]) + 1
-            elif A[i] > A[i-1] and B[i] > B[i-1]:
+            ____ A[i] > A[i-1] and B[i] > B[i-1]:
                 # elif meaning that has to stick with previous swap choice
                 # A[i] <= B[i-1] and B[i] <=A[i-1], cannot flip
                 F[0][i] = F[0][i-1]
                 F[1][i] = F[1][i-1] + 1
-            else:
+            ____
                 # has to swap, flip 
                 F[0][i] = F[1][i-1]
                 F[1][i] = F[0][i-1] + 1
 
-        return min(F[0][n-1], F[1][n-1])
+        r_ min(F[0][n-1], F[1][n-1])
 
-    def minSwap_error(self, A: List[int], B: List[int]) -> int:
+    ___ minSwap_error(self, A: List[int], B: List[int]) -> int:
         """
         for length 2
         swap A[0] and B[0] is the same as swapping A[1], B[2]
@@ -68,16 +68,16 @@ class Solution:
         swap can be length - times (swap the other)
         """
         t = 0
-        for i in range(1, len(A)):
-            if A[i] <= A[i-1] or B[i] <= B[i-1]:
+        for i in range(1, le.(A)):
+            __ A[i] <= A[i-1] or B[i] <= B[i-1]:
                 t += 1
-                if t < i + 1 - t:
+                __ t < i + 1 - t:
                     A[i], B[i] = B[i], A[i]
-                else:
+                ____
                     t = i + 1 - t
 
-        return t
+        r_ t
 
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     assert Solution().minSwap([0,4,4,5,9], [0,1,6,8,10])

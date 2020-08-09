@@ -1,17 +1,17 @@
-from calendar import Calendar
+from calendar ______ Calendar
 
 
-def meetup_day(year, month, day_of_the_week, which):
+___ meetup_day(year, month, day_of_the_week, which
     candidates = [date
                   for date in Calendar().itermonthdates(year, month)
-                  if date.month == month
-                  if date.strftime('%A') == day_of_the_week]
-    return _choice(which)(candidates)
+                  __ date.month __ month
+                  __ date.strftime('%A') __ day_of_the_week]
+    r_ _choice(which)(candidates)
 
 
-def _choice(which):
-    if which == 'teenth':
-        return lambda dates: next(d for d in dates if 13 <= d.day <= 19)
+___ _choice(which
+    __ which __ 'teenth':
+        r_ lambda dates: next(d for d in dates __ 13 <= d.day <= 19)
 
-    ix = -1 if (which == 'last') else (int(which[0]) - 1)
-    return lambda dates: dates[ix]
+    ix = -1 __ (which __ 'last') else (int(which[0]) - 1)
+    r_ lambda dates: dates[ix]

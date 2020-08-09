@@ -4,22 +4,22 @@ Created on Apr 8, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def readBinaryWatch(self, num):
+class Solution(object
+    ___ readBinaryWatch(self, num
         result = []
-        for i in range(12):
-            for j in range(60):
+        for i in range(12
+            for j in range(60
                 total = self.countDigits(i) + self.countDigits(j)
-                if total == num:
+                __ total __ num:
                     s = '%s:%02d' % (i, j)
                     result.append(s)
-        return result
+        r_ result
     
-    def countDigits(self, num):
+    ___ countDigits(self, num
         result = 0
-        while num > 0:
-            if num & 1 == 1:
+        w___ num > 0:
+            __ num & 1 __ 1:
                 result += 1
             num >>= 1
-        return result
+        r_ result
     

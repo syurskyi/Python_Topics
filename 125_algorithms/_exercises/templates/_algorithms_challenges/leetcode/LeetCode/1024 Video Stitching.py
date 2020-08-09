@@ -44,11 +44,11 @@ Note:
 0 <= clips[i][0], clips[i][1] <= 100
 0 <= T <= 100
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def videoStitching(self, clips: List[List[int]], T: int) -> int:
+    ___ videoStitching(self, clips: List[List[int]], T: int) -> int:
         """
         Greedy is correct. The larger the coverage, the better
         """
@@ -57,23 +57,23 @@ class Solution:
         ret = 0
 
         i = 0
-        while i < len(clips):
-            if clips[i][0] > prev_e:  # gap
+        w___ i < le.(clips
+            __ clips[i][0] > prev_e:  # gap
                 break
 
             max_e = -float("inf")
-            while i < len(clips) and clips[i][0] <= prev_e:
+            w___ i < le.(clips) and clips[i][0] <= prev_e:
                 max_e = max(max_e, clips[i][1])
                 i += 1
 
             prev_e = max_e  # take
             ret += 1
-            if prev_e >= T:
+            __ prev_e >= T:
                 break
 
-        return ret if prev_e >= T else -1
+        r_ ret __ prev_e >= T else -1
 
-    def videoStitching_error(self, clips: List[List[int]], T: int) -> int:
+    ___ videoStitching_error(self, clips: List[List[int]], T: int) -> int:
         """
         gready take the max coverage?
         """
@@ -81,14 +81,14 @@ class Solution:
         A.sort()
         ret = 1
         _, _, prev_s, prev_e = A[0]
-        if prev_s > 0:
-            return False
+        __ prev_s > 0:
+            r_ False
 
         for _, _, s, e in A[1:]:
-            if s <= prev_e and e > prev_e:
+            __ s <= prev_e and e > prev_e:
                 prev_e = e
                 ret += 1
 
 
-if __name__ == "__main__":
-    assert Solution().videoStitching([[0,4],[2,8]], 5) == 2
+__ __name__ __ "__main__":
+    assert Solution().videoStitching([[0,4],[2,8]], 5) __ 2

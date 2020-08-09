@@ -26,69 +26,69 @@ class Solution:
     EMPTY = 0
     HOUSE = 1
 
-    def shortestDistance(self, grid):
+    ___ shortestDistance(self, grid
         """
         :type grid: list[list[int]]
         :rtype: int
         """
-        if not grid or not grid[0]:
-            return -1
+        __ not grid or not grid[0]:
+            r_ -1
 
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         xs, ys = [], []
 
-        for x in range(m):
-            for y in range(n):
-                if grid[x][y] != self.HOUSE:
+        for x in range(m
+            for y in range(n
+                __ grid[x][y] != self.HOUSE:
                     continue
                 xs.append(x)
                 ys.append(y)
 
-        if not xs or len(xs) == m * n:
-            return -1
+        __ not xs or le.(xs) __ m * n:
+            r_ -1
 
         ys.sort()
 
-        k = len(xs) + 1
+        k = le.(xs) + 1
         psx, psy = [0] * k, [0] * k  # prefix sum
 
-        for i in range(1, k):
+        for i in range(1, k
             psx[i] = psx[i - 1] + xs[i - 1]
             psy[i] = psy[i - 1] + ys[i - 1]
 
         ans = INF = float('inf')
 
-        for x in range(m):
-            for y in range(n):
-                if grid[x][y] != self.EMPTY:
+        for x in range(m
+            for y in range(n
+                __ grid[x][y] != self.EMPTY:
                     continue
 
                 step = self.get_step(psx, xs, x) + self.get_step(psy, ys, y)
 
-                if step < ans:
+                __ step < ans:
                     ans = step
 
-        return ans if ans < INF else -1
+        r_ ans __ ans < INF else -1
 
-    def get_step(self, ps, axis, pos):
-        n = len(axis)
+    ___ get_step(self, ps, axis, pos
+        n = le.(axis)
 
-        if axis[0] > pos:
-            return ps[n] - pos * n
-        if axis[-1] < pos:
-            return pos * n - ps[n]
+        __ axis[0] > pos:
+            r_ ps[n] - pos * n
+        __ axis[-1] < pos:
+            r_ pos * n - ps[n]
 
         left, right = 0, n - 1
 
-        while left + 1 < right:
+        w___ left + 1 < right:
             mid = (left + right) // 2
 
-            if axis[mid] < pos:
+            __ axis[mid] < pos:
                 left = mid
-            else:
+            ____
                 right = mid
 
-        return sum((
+        r_ sum((
             pos * right - ps[right],
             ps[n] - ps[right] - pos * (n - right),
         ))
@@ -106,60 +106,60 @@ class Solution:
     EMPTY = 0
     HOUSE = 1
 
-    def shortestDistance(self, grid):
+    ___ shortestDistance(self, grid
         """
         :type grid: list[list[int]]
         :rtype: int
         """
-        if not grid or not grid[0]:
-            return -1
+        __ not grid or not grid[0]:
+            r_ -1
 
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         houses = []
         xc = yc = 0  # the center of the shape composed of houses
 
-        for x in range(m):
-            for y in range(n):
-                if grid[x][y] == self.HOUSE:
+        for x in range(m
+            for y in range(n
+                __ grid[x][y] __ self.HOUSE:
                     houses.append((x, y))
                     xc += x
                     yc += y
 
-        xc //= len(houses)
-        yc //= len(houses)
+        xc //= le.(houses)
+        yc //= le.(houses)
 
         ans = INF = float('inf')
         queue = [(xc, yc)]
         visited = set(queue)
 
         for x, y in queue:
-            if grid[x][y] == self.EMPTY:
+            __ grid[x][y] __ self.EMPTY:
                 ans = min(ans, self.get_step(houses, x, y))
 
             for dx, dy in (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
-            ):
+
                 _x = x + dx
                 _y = y + dy
 
-                if not (0 <= _x < m and 0 <= _y < n):
+                __ not (0 <= _x < m and 0 <= _y < n
                     continue
-                if (_x, _y) in visited:
+                __ (_x, _y) in visited:
                     continue
 
                 visited.add((_x, _y))
                 queue.append((_x, _y))
 
-        return ans if ans < INF else -1
+        r_ ans __ ans < INF else -1
 
-    def get_step(self, houses, x, y):
+    ___ get_step(self, houses, x, y
         step = 0
 
         for _x, _y in houses:
             step += abs(_x - x) + abs(_y - y)
 
-        return step
+        r_ step
 
 
 class Solution:
@@ -173,53 +173,53 @@ class Solution:
     EMPTY = 0
     HOUSE = 1
 
-    def shortestDistance(self, grid):
+    ___ shortestDistance(self, grid
         """
         :type grid: list[list[int]]
         :rtype: int
         """
-        if not grid or not grid[0]:
-            return -1
+        __ not grid or not grid[0]:
+            r_ -1
 
-        m, n = len(grid), len(grid[0])
+        m, n = le.(grid), le.(grid[0])
         steps = [[0] * n for _ in range(m)]
 
-        for x in range(m):
-            for y in range(n):
-                if grid[x][y] == self.HOUSE:
+        for x in range(m
+            for y in range(n
+                __ grid[x][y] __ self.HOUSE:
                     self.bfs(grid, x, y, steps)
 
         ans = INF = float('inf')
 
-        for x in range(m):
-            for y in range(n):
-                if grid[x][y] != self.EMPTY:
+        for x in range(m
+            for y in range(n
+                __ grid[x][y] != self.EMPTY:
                     continue
-                if steps[x][y] < ans:
+                __ steps[x][y] < ans:
                     ans = steps[x][y]
 
-        return ans if ans < INF else -1
+        r_ ans __ ans < INF else -1
 
-    def bfs(self, grid, x, y, steps):
-        m, n = len(grid), len(grid[0])
+    ___ bfs(self, grid, x, y, steps
+        m, n = le.(grid), le.(grid[0])
         queue, _queue = [(x, y)], []
         visited = set(queue)
         step = 0
 
-        while queue:
+        w___ queue:
             step += 1
 
             for x, y in queue:
                 for dx, dy in (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
-                ):
+
                     _x = x + dx
                     _y = y + dy
 
-                    if not (0 <= _x < m and 0 <= _y < n):
+                    __ not (0 <= _x < m and 0 <= _y < n
                         continue
-                    if (_x, _y) in visited:
+                    __ (_x, _y) in visited:
                         continue
 
                     visited.add((_x, _y))

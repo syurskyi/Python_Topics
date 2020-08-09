@@ -4,33 +4,33 @@ Created on Jan 11, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def generateParenthesis(self, n):
+class Solution(object
+    ___ generateParenthesis(self, n
         """
         :type n: int
         :rtype: List[str]
         """
-        if n <= 0: return []
+        __ n <= 0: r_ []
         res = []
         self.dfs(n, n, '', res)
-        return res
+        r_ res
     
-    def dfs(self, left, right, curr, res):
-        if left == 0 and right == 0:
+    ___ dfs(self, left, right, curr, res
+        __ left __ 0 and right __ 0:
             res.append(curr)
-        if left > right:
-            return
-        if left > 0:
+        __ left > right:
+            r_
+        __ left > 0:
             self.dfs(left-1, right, curr+'(', res)
-        if right > 0:
+        __ right > 0:
             self.dfs(left, right-1, curr+')', res)
     
-    def test(self):
-        for n in range(4):
+    ___ test(self
+        for n in range(4
             print('n: %s' % n)
             result = self.generateParenthesis(n)
             print('result: %s' % result)
             print('-='*15+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

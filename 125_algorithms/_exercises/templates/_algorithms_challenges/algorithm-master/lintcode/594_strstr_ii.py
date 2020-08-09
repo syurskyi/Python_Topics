@@ -32,7 +32,7 @@ Test Case:
 
 
 class Solution:
-    def strStr2(self, S, T):
+    ___ strStr2(self, S, T
         """
         :type S: List[str]
         :type T: List[str]
@@ -41,15 +41,15 @@ class Solution:
 
         NOT_FOUND = -1
 
-        if S is not None and T is '':
-            return 0
+        __ S is not None and T is '':
+            r_ 0
 
-        if not S or not T:
-            return NOT_FOUND
+        __ not S or not T:
+            r_ NOT_FOUND
 
-        m, n = len(S), len(T)
-        if n > m:
-            return NOT_FOUND
+        m, n = le.(S), le.(T)
+        __ n > m:
+            r_ NOT_FOUND
 
         MOD = 1000000  # hashsize to mod
         MG = 31  # magic number
@@ -57,10 +57,10 @@ class Solution:
 
         p = 1  # `p == MG ** (n - 1)`
         tcode = 0  # the code of T
-        for i in range(n):
+        for i in range(n
             tcode = (tcode * MG + ord(T[i]) - A) % MOD
 
-            if i == 0:
+            __ i __ 0:
                 continue
             """
             continue here since p only need `n - 1` times
@@ -68,14 +68,14 @@ class Solution:
             p = (p * MG) % MOD
 
         _code = 0
-        for i in range(m):
+        for i in range(m
             """
             kick out `S[i - n]`
             """
-            if i >= n:
+            __ i >= n:
                 _code = (_code - (ord(S[i - n]) - A) * p) % MOD
 
-            if _code < 0:
+            __ _code < 0:
                 _code += MOD
 
             """
@@ -83,7 +83,7 @@ class Solution:
             """
             _code = (_code * MG + ord(S[i]) - A) % MOD
 
-            if _code == tcode and S[i - n + 1:i + 1] == T:
-                return i - n + 1
+            __ _code __ tcode and S[i - n + 1:i + 1] __ T:
+                r_ i - n + 1
 
-        return NOT_FOUND
+        r_ NOT_FOUND

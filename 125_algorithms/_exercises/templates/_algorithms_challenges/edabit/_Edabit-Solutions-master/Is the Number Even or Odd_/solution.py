@@ -1,17 +1,17 @@
-def isEvenOrOdd(num):
-    if num % 2 == 0:
-        return "even"
-    else:
-        return "odd"
+___ isEvenOrOdd(num
+    __ num % 2 __ 0:
+        r_ "even"
+    ____
+        r_ "odd"
 
 
-def test():
+___ test(
     print("test has started")
-    if isEvenOrOdd(3) != "odd":
+    __ isEvenOrOdd(3) != "odd":
         print("error1")
-    if isEvenOrOdd(0) != "even":
+    __ isEvenOrOdd(0) != "even":
         print("error2")
-    if isEvenOrOdd(-3) != "odd":
+    __ isEvenOrOdd(-3) != "odd":
         print("error3")
-    if isEvenOrOdd(-0) != "even":
+    __ isEvenOrOdd(-0) != "even":
         print("error4")

@@ -17,21 +17,21 @@ class Solution:
     @param: target: An integer
     @return: An integer which is the first index of target.
     """
-    def searchBigSortedArray(self, reader, target):
+    ___ searchBigSortedArray(self, reader, target
         end = 0
-        while reader.get(end) < target:
+        w___ reader.get(end) < target:
             # `+1` is to avoid `end == 0`
             end = end * 2 + 1
 
         l, m, r = 0, 0, end
-        while l + 1 < r:
+        w___ l + 1 < r:
             m = l + (r - l) // 2
-            if reader.get(m) < target:
+            __ reader.get(m) < target:
                 l = m
-            else:
+            ____
                 r = m
 
         for i in [l, r]:
-            if reader.get(i) == target:
-                return i
-        return -1
+            __ reader.get(i) __ target:
+                r_ i
+        r_ -1

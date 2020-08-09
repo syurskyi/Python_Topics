@@ -21,8 +21,8 @@ Test Case:
 ...     ([' ', ' ', 'a', ' ', 'b', 'c'], ['b', 'c', ' ', 'a', ' ', ' ']),
 ...     (['b', 'c', ' ', 'a', ' ', ' '], [' ', ' ', 'a', ' ', 'b', 'c']),
 ...     ([' ', ' ', 'a', ' ', 'b', 'c', ' '], [' ', 'b', 'c', ' ', 'a', ' ', ' ']),
-... ):
-...     for test_func in (reverse_words, reverse_words2):
+...
+...     for test_func in (reverse_words, reverse_words2
 ...         res = test_func(_in)
 ...         if res != _out: print(_in, res)
 ...         gotcha.append(res == _out)
@@ -34,27 +34,27 @@ True
 """
 Approach 1: use built-in function
 """
-def reverse_words(arr):
-    return list(' '.join(reversed(''.join(arr).split(' '))))
+___ reverse_words(arr
+    r_ list(' '.join(reversed(''.join(arr).split(' '))))
 
 
 """
 Approach 2: swap children and modify in place
 """
-def reverse_words2(arr):
-    if not arr:
-        return []
+___ reverse_words2(arr
+    __ not arr:
+        r_ []
 
-    n = len(arr)
+    n = le.(arr)
     reverse_in_range(arr, 0, n - 1)
 
     left = 0
 
-    while left < n and arr[left] == ' ':
+    w___ left < n and arr[left] __ ' ':
         left += 1
 
-    for right in range(n):
-        if arr[right] != ' ':
+    for right in range(n
+        __ arr[right] != ' ':
             continue
 
         reverse_in_range(arr, left, right - 1)
@@ -62,19 +62,19 @@ def reverse_words2(arr):
 
     right = n - 1
 
-    while right >= 0 and arr[right] == ' ':
+    w___ right >= 0 and arr[right] __ ' ':
         right -= 1
 
     reverse_in_range(arr, left, right)
 
-    return arr
+    r_ arr
 
 
-def reverse_in_range(arr, i, j):
+___ reverse_in_range(arr, i, j
     """
     to reverse arr[i:j + 1]
     """
-    while i < j:
+    w___ i < j:
         arr[i], arr[j] = arr[j], arr[i]
         i += 1
         j -= 1

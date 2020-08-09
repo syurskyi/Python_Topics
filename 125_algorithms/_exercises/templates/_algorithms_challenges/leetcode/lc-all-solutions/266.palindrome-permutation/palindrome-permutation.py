@@ -1,5 +1,5 @@
-class Solution(object):
-  def canPermutePalindrome(self, s):
+class Solution(object
+  ___ canPermutePalindrome(self, s
     """
     :type s: str
     :rtype: bool
@@ -10,15 +10,15 @@ class Solution(object):
     for c in s:
       d[c] = d.get(c, 0) + 1
     for k in d:
-      if d[k] % 2 == 1:
+      __ d[k] % 2 __ 1:
         oddCount += 1
-      else:
+      ____
         evenCount += 1
 
-    if len(s) % 2 == 1:
-      if oddCount == 1:
-        return True
-    else:
-      if oddCount == 0:
-        return True
-    return False
+    __ le.(s) % 2 __ 1:
+      __ oddCount __ 1:
+        r_ True
+    ____
+      __ oddCount __ 0:
+        r_ True
+    r_ False

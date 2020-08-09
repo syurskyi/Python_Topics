@@ -1,9 +1,9 @@
-from nose.tools import assert_equal, assert_raises
+from nose.tools ______ assert_equal, assert_raises
 
 
-class TestSolution(object):
+class TestSolution(object
 
-    def test_longest_substr(self):
+    ___ test_longest_substr(self
         solution = Solution()
         assert_raises(TypeError, solution.longest_substr, None)
         assert_equal(solution.longest_substr('', k=3), 0)
@@ -12,10 +12,10 @@ class TestSolution(object):
         print('Success: test_longest_substr')
 
 
-def main():
+___ main(
     test = TestSolution()
     test.test_longest_substr()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

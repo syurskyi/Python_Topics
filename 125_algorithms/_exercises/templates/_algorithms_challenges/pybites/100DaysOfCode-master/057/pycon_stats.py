@@ -1,9 +1,9 @@
-from collections import namedtuple
-import os
-import sys
+from collections ______ namedtuple
+______ os
+______ sys
 
-import requests
-import requests_cache
+______ requests
+______ requests_cache
 
 requests_cache.install_cache()
 
@@ -21,28 +21,28 @@ fmt += '&type=video&key={}&maxResults={}&pageToken={}'
 search_url = fmt.format(base_url, channel_id, api_key, maxres, next_page)
 
 
-def get_videos(url):
+___ get_videos(url
     '''Get all video ids for a YT channel id using its API'''
     global next_page
     videos = {}
-    while 1:
+    w___ 1:
         resp = requests.get(url).json()
         for item in resp['items']:
             id_ = item['id']['videoId']
             videos[id_] = item['snippet']['title']
         prev_page = next_page
         next_page = resp.get('nextPageToken')
-        if next_page:
+        __ next_page:
             url = url.replace(prev_page, next_page)
-        else:
+        ____
             break
-    return videos
+    r_ videos
 
 
-def get_stats(videos):
+___ get_stats(videos
     '''Get stats for a list of video ids'''
     video_ids = list(videos.keys())
-    for i in range(0, len(video_ids), maxres):
+    for i in range(0, le.(video_ids), maxres
         start, end = i, i + maxres
         vids = plus_encoded.join(video_ids[start:end])
         fmt = '{}/videos?part=statistics&id={}&key={}'
@@ -56,12 +56,12 @@ def get_stats(videos):
             )
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     videos = get_videos(search_url)
-    assert len(videos) == 143
+    assert le.(videos) __ 143
 
     stats = list(get_stats(videos))
-    assert len(stats) == 143
+    assert le.(stats) __ 143
 
     row = '{:<10} {}'
     top = 10

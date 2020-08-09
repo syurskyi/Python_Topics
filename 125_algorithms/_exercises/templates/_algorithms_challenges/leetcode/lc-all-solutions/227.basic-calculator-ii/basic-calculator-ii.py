@@ -1,44 +1,44 @@
-from collections import deque
+from collections ______ deque
 
 
-class Solution(object):
-  def calculate(self, s):
+class Solution(object
+  ___ calculate(self, s
     """
     :type s: str
     :rtype: int
     """
     i = 0
     queue = deque([])
-    while i < len(s):
-      if s[i] == " ":
+    w___ i < le.(s
+      __ s[i] __ " ":
         i += 1
-      elif s[i] in "-+*/":
+      ____ s[i] in "-+*/":
         queue.append(s[i])
         i += 1
-      else:
+      ____
         start = i
-        while i < len(s) and s[i] not in "+-*/ ":
+        w___ i < le.(s) and s[i] not in "+-*/ ":
           i += 1
         num = int(s[start:i])
         queue.append(num)
-        while len(queue) > 2 and queue[-2] in "*/":
+        w___ le.(queue) > 2 and queue[-2] in "*/":
           b = queue.pop()
           ops = queue.pop()
           a = queue.pop()
-          if ops == "*":
+          __ ops __ "*":
             queue.append(a * b)
-          elif ops == "/":
+          ____ ops __ "/":
             queue.append(int(float(a) / b))
-          else:
-            return "invalid"
-    if queue:
+          ____
+            r_ "invalid"
+    __ queue:
       a = queue.popleft()
-      while len(queue) >= 2:
+      w___ le.(queue) >= 2:
         ops = queue.popleft()
         b = queue.popleft()
-        if ops == "+":
+        __ ops __ "+":
           a = a + b
-        elif ops == "-":
+        ____ ops __ "-":
           a = a - b
-      return a
-    return 0
+      r_ a
+    r_ 0

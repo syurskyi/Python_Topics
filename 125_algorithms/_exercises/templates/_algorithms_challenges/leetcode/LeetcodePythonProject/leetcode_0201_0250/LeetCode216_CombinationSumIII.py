@@ -4,8 +4,8 @@ Created on Feb 20, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def combinationSum3(self, k, n):
+class Solution(object
+    ___ combinationSum3(self, k, n
         """
         :type k: int
         :type n: int
@@ -14,20 +14,20 @@ class Solution(object):
         elem = []
         result = []
         self.helper(elem, 1, k, n, result)
-        return result
+        r_ result
     
-    def helper(self, elem, start, k, n, result):
-        if len(elem) == k and n == 0:
+    ___ helper(self, elem, start, k, n, result
+        __ le.(elem) __ k and n __ 0:
             result.append(list(elem))
-            return
-        if n < 0:
-            return
-        for i in range(start, 10):
+            r_
+        __ n < 0:
+            r_
+        for i in range(start, 10
             elem.append(i)
             self.helper(elem, i+1, k, n-i, result)
             elem.pop()
     
-    def test(self):
+    ___ test(self
         testCases = [
             (3, 7),
             (3, 9),
@@ -39,5 +39,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

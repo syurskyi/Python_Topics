@@ -12,7 +12,7 @@ __author__ = 'Daniel'
 
 
 class Solution:
-    def addDigits(self, num):
+    ___ addDigits(self, num
         """
         Enumerate and find the pattern
 
@@ -26,7 +26,7 @@ class Solution:
         :rtype: int
         """
         digit = num % 9
-        if digit == 0 and num != 0:
-            return 9
-        else:
-            return digit
+        __ digit __ 0 and num != 0:
+            r_ 9
+        ____
+            r_ digit

@@ -6,21 +6,21 @@ class Solution:
     @param: A: A set of numbers
     @return: A list of lists
     """
-    def subsets(self, A):
-        if not A:
-            return [[]]
+    ___ subsets(self, A
+        __ not A:
+            r_ [[]]
 
         ans = []
         self.dfs(sorted(A), 0, ans, [])
-        return ans
+        r_ ans
 
-    def dfs(self, A, start, ans, subset):
+    ___ dfs(self, A, start, ans, subset
         ans.append(subset[:])
 
-        if start >= len(A):
-            return
+        __ start >= le.(A
+            r_
 
-        for i in range(start, len(A)):
+        for i in range(start, le.(A)):
             self.dfs(A, i + 1, ans, subset + [A[i]])
 
 
@@ -32,18 +32,18 @@ class Solution:
     @param: A: A set of numbers
     @return: A list of lists
     """
-    def subsets(self, A):
-        if not A:
-            return [[]]
+    ___ subsets(self, A
+        __ not A:
+            r_ [[]]
 
         ans = []
-        n = len(A)
+        n = le.(A)
 
         A.sort()
 
-        for i in range(1 << n):
+        for i in range(1 << n
             subset = []
-            for j in range(n):
+            for j in range(n
                 """
                 check `j`th digit in `bin(i)`
 
@@ -53,9 +53,9 @@ class Solution:
                 j == 1 => 1 << 1 == 010 => 011 & 010 == 1
                 j == 2 => 1 << 2 == 100 => 011 & 100 == 0
                 """
-                if i & (1 << j):
+                __ i & (1 << j
                     subset.append(A[j])
 
             ans.append(subset)
 
-        return ans
+        r_ ans

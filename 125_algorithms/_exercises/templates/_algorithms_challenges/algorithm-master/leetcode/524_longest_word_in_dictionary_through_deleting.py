@@ -4,7 +4,7 @@ class Solution:
     2. ignoring if the length less than current ans
     3. ignoring if the length equal current ans but has larger lexicographical order
     """
-    def findLongestWord(self, s, words):
+    ___ findLongestWord(self, s, words
         """
         :type s: str
         :type words: List[str]
@@ -13,37 +13,37 @@ class Solution:
         ans = ''
 
         for w in words:
-            if any((
+            __ any((
                 not self.is_subseq(s, w),
-                len(w) < len(ans),
-                len(w) == len(ans) and w >= ans,  # means w has larger lexicographical order
+                le.(w) < le.(ans),
+                le.(w) __ le.(ans) and w >= ans,  # means w has larger lexicographical order
             )):
                 continue
 
             ans = w
 
-        return ans
+        r_ ans
 
-    def is_subseq(self, s, t):
+    ___ is_subseq(self, s, t
         """
         return True if `t` is subsequence of `s`
         """
-        m, n = len(s), len(t)
+        m, n = le.(s), le.(t)
         i = j = 0
 
-        while i < m and j < n:
-            if s[i] == t[j]:
+        w___ i < m and j < n:
+            __ s[i] __ t[j]:
                 j += 1
             i += 1
 
-        return j == n
+        r_ j __ n
 
 
 class Solution:
     """
     Brute Force: TLE
     """
-    def findLongestWord(self, s, words):
+    ___ findLongestWord(self, s, words
         """
         :type s: str
         :type words: List[str]
@@ -56,21 +56,21 @@ class Solution:
         target = set(words)
 
         for w in cands:
-            if any((
+            __ any((
                 w not in target,
-                len(w) < len(ans),
-                len(w) == len(ans) and w >= ans,
+                le.(w) < le.(ans),
+                le.(w) __ le.(ans) and w >= ans,
             )):
                 continue
 
             ans = w
 
-        return ans
+        r_ ans
 
-    def find_cands(self, s, i, cands, path):
-        if i == len(s):
+    ___ find_cands(self, s, i, cands, path
+        __ i __ le.(s
             cands.append(''.join(path))
-            return
+            r_
 
         # keep s[i]
         path.append(s[i])

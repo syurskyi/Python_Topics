@@ -3,8 +3,8 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def expressiveWords(self, S, words):
+class Solution(object
+    ___ expressiveWords(self, S, words
         """
         :type S: str
         :type words: List[str]
@@ -13,34 +13,34 @@ class Solution(object):
         s = S
         res = 0
         for s0 in words:
-            if self.isstretchy(s0, s):
+            __ self.isstretchy(s0, s
                 res += 1
-        return res
+        r_ res
     
-    def isstretchy(self, s0, s):
-        m, n = len(s0), len(s)
-        if m > n: return False
-        if m == n and s0 != s: return False
+    ___ isstretchy(self, s0, s
+        m, n = le.(s0), le.(s)
+        __ m > n: r_ False
+        __ m __ n and s0 != s: r_ False
         i, j = 0, 0
         flag = True
-        while i < m and j < n:
-            if s0[i] == s[j]:
+        w___ i < m and j < n:
+            __ s0[i] __ s[j]:
                 i0, j0 = i, j
-                while i0 < m and s0[i0] == s0[i]:
+                w___ i0 < m and s0[i0] __ s0[i]:
                     i0 += 1
-                while j0 < n and s[j0] == s[j]:
+                w___ j0 < n and s[j0] __ s[j]:
                     j0 += 1
-                if j0-j < 3 and s0[i:i0] != s[j:j0]:
+                __ j0-j < 3 and s0[i:i0] != s[j:j0]:
                     flag = False
                     break
                 i, j = i0, j0
-            else:
+            ____
                 break
-        if i == m and j == n and flag:
-            return True
-        return False
+        __ i __ m and j __ n and flag:
+            r_ True
+        r_ False
     
-    def test(self):
+    ___ test(self
         testCases = [
             [
                 "heeellooo",
@@ -63,5 +63,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

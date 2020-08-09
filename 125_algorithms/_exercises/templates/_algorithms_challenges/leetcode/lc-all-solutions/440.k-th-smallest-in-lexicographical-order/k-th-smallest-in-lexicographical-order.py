@@ -1,54 +1,54 @@
-class Solution(object):
+class Solution(object
   # naive pre-order traversal on denary tree
-  def _findKthNumber(self, n, k):
+  ___ _findKthNumber(self, n, k
     """
     :type n: int
     :type k: int
     :rtype: int
     """
 
-    def dfs(cur, n):
-      if self.k == 0:
-        return cur
+    ___ dfs(cur, n
+      __ self.k __ 0:
+        r_ cur
       self.k -= 1
-      if cur == 0:
-        for i in range(1, 10):
-          if i > n:
+      __ cur __ 0:
+        for i in range(1, 10
+          __ i > n:
             break
           ret = dfs(i, n)
-          if ret:
-            return ret
-      else:
-        for i in range(0, 10):
-          if cur * 10 + i > n:
+          __ ret:
+            r_ ret
+      ____
+        for i in range(0, 10
+          __ cur * 10 + i > n:
             break
           ret = dfs(cur * 10 + i, n)
-          if ret:
-            return ret
+          __ ret:
+            r_ ret
 
     self.k = k
-    return dfs(0, n)
+    r_ dfs(0, n)
 
   # optimized solution
-  def findKthNumber(self, n, k):
-    def getGap(n, ans):
+  ___ findKthNumber(self, n, k
+    ___ getGap(n, ans
       gap = 0
       start = ans
       end = start + 1
-      while start <= n:
+      w___ start <= n:
         gap += max(0, min(n + 1, end) - start)
         start *= 10
         end *= 10
-      return gap
+      r_ gap
 
     ans = 1
     k -= 1
-    while k > 0:
+    w___ k > 0:
       gap = getGap(n, ans)
-      if gap <= k:
+      __ gap <= k:
         ans += 1
         k -= gap
-      else:
+      ____
         ans *= 10
         k -= 1
-    return ans
+    r_ ans

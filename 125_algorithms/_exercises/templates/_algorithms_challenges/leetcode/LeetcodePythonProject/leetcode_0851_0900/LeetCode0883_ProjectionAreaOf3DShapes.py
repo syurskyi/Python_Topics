@@ -3,29 +3,29 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
-    def projectionArea(self, grid):
+class Solution(object
+    ___ projectionArea(self, grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        n = len(grid)
+        n = le.(grid)
         res = 0
-        for i in range(n):
+        for i in range(n
             maxNum = 0
-            for j in range(n):
-                if grid[i][j]:
+            for j in range(n
+                __ grid[i][j]:
                     res += 1
                 maxNum = max(maxNum, grid[i][j])
             res += maxNum
-        for j in range(n):
+        for j in range(n
             maxNum = 0
-            for i in range(n):
+            for i in range(n
                 maxNum = max(maxNum, grid[i][j])
             res += maxNum
-        return res
+        r_ res
     
-    def test(self):
+    ___ test(self
         testCases = [
             [[2]],
             [[1,0],[0,2]],
@@ -36,5 +36,5 @@ class Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

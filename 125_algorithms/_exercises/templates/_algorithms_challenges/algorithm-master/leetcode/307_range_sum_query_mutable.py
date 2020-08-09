@@ -10,21 +10,21 @@ param_2 = obj.sumRange(i,j)
 
 
 class NumArray:
-    def __init__(self, nums):
+    ___ __init__(self, nums
         """
         :type nums: List[int]
         """
-        if not nums:
-            return
+        __ not nums:
+            r_
 
-        n = len(nums)
+        n = le.(nums)
         self.bits = [0] * (n + 1)  # bits
         self.incr = [0] * (n + 1)  # increments
 
-        for i in range(n):
+        for i in range(n
             self.update(i, nums[i])
 
-    def update(self, i, val):
+    ___ update(self, i, val
         """
         :type i: int
         :type val: int
@@ -37,24 +37,24 @@ class NumArray:
         delta = val - self.incr[j]
         self.incr[j] = val
 
-        while j < len(self.incr):
+        w___ j < le.(self.incr
             self.bits[j] += delta
             j += (j & -j)
 
-    def sumRange(self, i, j):
+    ___ sumRange(self, i, j
         """
         :type i: int
         :type j: int
         :rtype: int
         """
-        return self.sum(j + 1) - self.sum(i)
+        r_ self.sum(j + 1) - self.sum(i)
 
-    def sum(self, i):
+    ___ sum(self, i
         res = 0
         j = i
 
-        while j > 0:
+        w___ j > 0:
             res += self.bits[j]
             j -= (j & -j)
 
-        return res
+        r_ res

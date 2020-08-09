@@ -11,18 +11,18 @@ Note: The sequence of integers will be represented as a string.
 """
 __author__ = 'Danyang'
 class Solution:
-    def countAndSay(self, n):
+    ___ countAndSay(self, n
         """
         :param n: integer
         :return: output representation in string
         """
         string = "1"
-        for i in range(1, n):
+        for i in range(1, n
             string = self.singleCountAndSay(string)
-        return string
+        r_ string
 
 
-    def singleCountAndSay(self, num_string):
+    ___ singleCountAndSay(self, num_string
         """
         Two pointers algorithm: FIND NEXT DIFFERENT
         :param num_string: input number as string
@@ -31,16 +31,16 @@ class Solution:
         string_builder = ""
 
         i = 0
-        while i<len(num_string):
+        w___ i<le.(num_string
             # find next different number
             j = i+1
-            while j<len(num_string) and num_string[j]==num_string[i]:
+            w___ j<le.(num_string) and num_string[j]__num_string[i]:
                 j += 1
             count = j-i
             string_builder += str(count)+str(num_string[i])
             i = j
 
-        return string_builder
+        r_ string_builder
 
-if __name__=="__main__":
+__ __name____"__main__":
     print Solution().countAndSay(4)

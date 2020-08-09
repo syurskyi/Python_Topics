@@ -1,31 +1,31 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  def str2tree(self, s):
+class Solution(object
+  ___ str2tree(self, s
     """
     :type s: str
     :rtype: TreeNode
     """
-    if s:
+    __ s:
       cnt = start = 0
       root = None
-      for i, c in enumerate(s):
-        if c == "(":
-          if not root and cnt == 0:
+      for i, c in enumerate(s
+        __ c __ "(":
+          __ not root and cnt __ 0:
             root = TreeNode(s[:i])
           cnt += 1
-          if cnt == 1:
+          __ cnt __ 1:
             start = i + 1
-        if c == ")":
+        __ c __ ")":
           cnt -= 1
-          if cnt == 0:
-            if not root.left:
+          __ cnt __ 0:
+            __ not root.left:
               root.left = self.str2tree(s[start:i])
-            else:
+            ____
               root.right = self.str2tree(s[start:i])
-      return root if root else TreeNode(s)
+      r_ root __ root else TreeNode(s)

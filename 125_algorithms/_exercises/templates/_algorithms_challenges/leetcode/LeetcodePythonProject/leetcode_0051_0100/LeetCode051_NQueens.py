@@ -4,48 +4,48 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def solveNQueens(self, n):
+class Solution(object
+    ___ solveNQueens(self, n
         """
         :type n: int
         :rtype: List[List[str]]
         """
-        if n <= 0: return []
+        __ n <= 0: r_ []
         res = []
         self.helper(n, res, [], 0)
         res = self.convert(res)
-        return res
+        r_ res
     
-    def helper(self, n, res, cur, ind):
-        if ind == n:
+    ___ helper(self, n, res, cur, ind
+        __ ind __ n:
             res.append(list(cur))
-            return
-        for val in range(n):
-            if self.isValid(cur, ind, val):
+            r_
+        for val in range(n
+            __ self.isValid(cur, ind, val
                 cur.append(val)
                 self.helper(n, res, cur, ind+1)
                 cur.pop()
     
-    def convert(self, nums):
-        if not nums: return []
+    ___ convert(self, nums
+        __ not nums: r_ []
         res = []
         for row in nums:
-            n = len(row)
+            n = le.(row)
             curr = []
             for val in row:
                 curr.append('.'*val+'Q'+'.'*(n-val-1))
             res.append(curr)
-        return res
+        r_ res
     
-    def isValid(self, cur, ind, val):
-        for i in range(ind):
-            if cur[i] == val:
-                return False
-            if abs(i-ind) == abs(cur[i]-val):
-                return False
-        return True
+    ___ isValid(self, cur, ind, val
+        for i in range(ind
+            __ cur[i] __ val:
+                r_ False
+            __ abs(i-ind) __ abs(cur[i]-val
+                r_ False
+        r_ True
     
-    def test(self):
+    ___ test(self
         testCases = [
             1,
             2,
@@ -62,5 +62,5 @@ class Solution(object):
                 print('-'*20)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

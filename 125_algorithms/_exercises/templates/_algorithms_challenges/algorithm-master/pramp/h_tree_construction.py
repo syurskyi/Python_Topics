@@ -1,8 +1,8 @@
-def draw_line(x1, y1, x2, y2):
+___ draw_line(x1, y1, x2, y2
     pass
 
 
-def draw_h_tree(x, y, length, depth):
+___ draw_h_tree(x, y, length, depth
     """iteration
     :type x: float
     :type y: float
@@ -12,7 +12,7 @@ def draw_h_tree(x, y, length, depth):
     """
     queue, _queue = [(x, y)], []
 
-    for _ in range(depth):
+    for _ in range(depth
         for x, y in queue:
             x1 = x - length / 2
             y1 = y + length / 2
@@ -32,7 +32,7 @@ def draw_h_tree(x, y, length, depth):
         length /= 2 ** 0.5
 
 
-def draw_h_tree2(x, y, length, depth):
+___ draw_h_tree2(x, y, length, depth
     """recursion
     :type x: float
     :type y: float
@@ -40,8 +40,8 @@ def draw_h_tree2(x, y, length, depth):
     :type depth: float
     :rtype: void
     """
-    if depth == 0:
-        return
+    __ depth __ 0:
+        r_
 
     x1 = x - length / 2
     y1 = y + length / 2

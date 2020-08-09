@@ -3,8 +3,8 @@ Created on Mar 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
-    def makeLargestSpecial(self, S):
+class Solution(object
+    ___ makeLargestSpecial(self, S
         """
         :type S: str
         :rtype: str
@@ -12,14 +12,14 @@ class Solution(object):
         count = 0
         i = 0
         res = []
-        for j, c in enumerate(S):
-            count = count+1 if c=='1' else count-1
-            if count == 0:
+        for j, c in enumerate(S
+            count = count+1 __ c__'1' else count-1
+            __ count __ 0:
                 res.append('1'+self.makeLargestSpecial(S[i+1:j])+'0')
                 i = j+1
-        return ''.join(sorted(res, reverse=True))
+        r_ ''.join(sorted(res, reverse=True))
     
-    def test(self):
+    ___ test(self
         testCases = [
             '11011000',
         ]
@@ -29,5 +29,5 @@ class Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

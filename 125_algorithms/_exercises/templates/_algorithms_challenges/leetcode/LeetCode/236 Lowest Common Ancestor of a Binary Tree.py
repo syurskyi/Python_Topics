@@ -19,14 +19,14 @@ __author__ = 'Daniel'
 
 
 class TreeNode:
-    def __init__(self, x):
+    ___ __init__(self, x
         self.val = x
         self.left = None
         self.right = None
 
 
 class Solution:
-    def lowestCommonAncestor(self, root, p, q):
+    ___ lowestCommonAncestor(self, root, p, q
         """
         O(n)
         construct the path from root to p and q respectively, and check the difference of the two paths
@@ -41,23 +41,23 @@ class Solution:
         self.dfs(root, q, path2, [False])
 
         i = 0
-        while i < min(len(path1), len(path2)):
-            if path1[i] != path2[i]:
-                return path1[i-1]
+        w___ i < min(le.(path1), le.(path2)):
+            __ path1[i] != path2[i]:
+                r_ path1[i-1]
             i += 1
 
-        return path1[i-1]
+        r_ path1[i-1]
 
-    def dfs(self, root, t, path, found):
-        if not root or found[0]:  # post-call check
-            return
+    ___ dfs(self, root, t, path, found
+        __ not root or found[0]:  # post-call check
+            r_
 
         path.append(root)
-        if root == t:
+        __ root __ t:
             found[0] = True
 
         self.dfs(root.left, t, path, found)
         self.dfs(root.right, t, path, found)
-        if not found[0]:
+        __ not found[0]:
             path.pop()  # 1 pop() corresponds to 1 append()
 

@@ -4,28 +4,28 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def findPeakElement(self, nums):
+class Solution(object
+    ___ findPeakElement(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        if len(nums) == 1: return 0
-        start, end = 0, len(nums)-1
-        while start < end:
+        __ le.(nums) __ 1: r_ 0
+        start, end = 0, le.(nums)-1
+        w___ start < end:
             mid = int((start+end)/2)
-            if (mid == 0 and nums[mid] > nums[mid+1]) or (mid == len(nums)-1 and nums[mid] > nums[mid-1]):
-                return mid
-            else:
-                if nums[mid] > nums[mid-1] and nums[mid] > nums[mid+1]:
-                    return mid
-                elif nums[mid] < nums[mid+1]:
+            __ (mid __ 0 and nums[mid] > nums[mid+1]) or (mid __ le.(nums)-1 and nums[mid] > nums[mid-1]
+                r_ mid
+            ____
+                __ nums[mid] > nums[mid-1] and nums[mid] > nums[mid+1]:
+                    r_ mid
+                ____ nums[mid] < nums[mid+1]:
                     start = mid+1
-                else:
+                ____
                     end = mid-1
-        return start
+        r_ start
     
-    def test(self):
+    ___ test(self
         testCases = [
             [1, 2, 3, 1],
             [1, 8, 2, 1, 3, 4],
@@ -37,5 +37,5 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20 + '-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()

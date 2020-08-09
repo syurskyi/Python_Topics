@@ -1,2 +1,2 @@
-def parse_octal():
+___ parse_octal(
     pass

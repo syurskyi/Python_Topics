@@ -24,28 +24,28 @@ Note:
 1 <= A[0].length <= 20
 A[i][j] is 0 or 1.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def matrixScore(self, A: List[List[int]]) -> int:
+    ___ matrixScore(self, A: List[List[int]]) -> int:
         """
         MSB > sum of remaining digit
         => Toggle rows to set MSB to 1
         Then we cannot toggle row anymore
         Toggle the col if #0's < #1's
         """
-        m, n = len(A), len(A[0])
+        m, n = le.(A), le.(A[0])
         ret = 0
         ret += (1 << (n-1)) * m  # all rows with MSB being 1
-        for j in range(1, n):
+        for j in range(1, n
             cnt = 0
-            for i in range(m):
-                if A[i][j] == A[i][0]:
+            for i in range(m
+                __ A[i][j] __ A[i][0]:
                     cnt += 1  #  number of 1's
 
             # toggle 
             cnt = max(cnt, m-cnt)
             ret += (1 << (n-1-j)) * cnt
 
-        return ret
+        r_ ret

@@ -12,32 +12,32 @@ Find the minimum element.
 The array may contain duplicates.
 """
 
-class Solution(object):
-    def findMin(self, nums):
+class Solution(object
+    ___ findMin(self, nums
         """
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
+        n = le.(nums)
         left = 0
         right = n - 1
-        if n == 1:
-            return nums[0]
-        while left <= right:
+        __ n __ 1:
+            r_ nums[0]
+        w___ left <= right:
             mid = left + (right - left) / 2
-            if mid > 0 and nums[mid - 1] > nums[mid]:
-                return nums[mid]
+            __ mid > 0 and nums[mid - 1] > nums[mid]:
+                r_ nums[mid]
             # The minimum element is in the right side
-            elif nums[mid] > nums[right]:
+            ____ nums[mid] > nums[right]:
                 left = mid + 1
             # The minimum element is in the left side
-            elif nums[mid] < nums[right]:
+            ____ nums[mid] < nums[right]:
                 right = mid - 1
             # The mid element equals the right element
-            else:
+            ____
                 right -= 1
         # All elements are equal
-        return nums[0]
+        r_ nums[0]
 
 a1 = [4, 5, 6, 7, 0, 1, 2]
 a2 = [4, 5, 6, 7, 0, 1, 1, 1]

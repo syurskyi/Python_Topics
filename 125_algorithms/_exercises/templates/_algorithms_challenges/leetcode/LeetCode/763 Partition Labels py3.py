@@ -17,29 +17,29 @@ Note:
 S will have length in range [1, 500].
 S will consist of lowercase letters ('a' to 'z') only.
 """
-from typing import List
+from typing ______ List
 
 
 class Solution:
-    def partitionLabels(self, S: str) -> List[int]:
+    ___ partitionLabels(self, S: str) -> List[int]:
         lasts = {}
-        n = len(S)
-        for i in range(n-1, -1, -1):
-            if S[i] not in lasts:
+        n = le.(S)
+        for i in range(n-1, -1, -1
+            __ S[i] not in lasts:
                 lasts[S[i]] = i
 
         indexes = [-1]  # last partition ending index
         cur_last = 0
-        for i in range(n):
+        for i in range(n
             cur_last = max(cur_last, lasts[S[i]])
-            if cur_last == i:
+            __ cur_last __ i:
                 indexes.append(cur_last)
 
         ret = []
-        for i in range(len(indexes) - 1):
+        for i in range(le.(indexes) - 1
             ret.append(indexes[i+1] - indexes[i])
-        return ret
+        r_ ret
 
 
-if __name__ == "__main__":
-    assert Solution().partitionLabels("ababcbacadefegdehijhklij") == [9, 7, 8]
+__ __name__ __ "__main__":
+    assert Solution().partitionLabels("ababcbacadefegdehijhklij") __ [9, 7, 8]

@@ -4,44 +4,44 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
-    def maxNumber(self, nums1, nums2, k):
-        len1, len2 = len(nums1), len(nums2)
+class Solution(object
+    ___ maxNumber(self, nums1, nums2, k
+        len1, len2 = le.(nums1), le.(nums2)
         result = []
-        for i in range(0, k+1):
+        for i in range(0, k+1
             j = k-i
-            if i > len1 or j > len2:
+            __ i > len1 or j > len2:
                 continue
             left = self.getMax(nums1, i)
             right = self.getMax(nums2, j)
             tmpResult = self.merge(left, right)
             result = max(result, tmpResult)
-        return result
+        r_ result
     
-    def getMax(self, nums, maxLen):
+    ___ getMax(self, nums, maxLen
         result = []
-        size = len(nums)
-        for x in range(size):
-            while result and len(result)+size-x>maxLen and result[-1]<nums[x]:
+        size = le.(nums)
+        for x in range(size
+            w___ result and le.(result)+size-x>maxLen and result[-1]<nums[x]:
                 result.pop()
-            if len(result) < maxLen:
+            __ le.(result) < maxLen:
                 result.append(nums[x])
-        return result
+        r_ result
     
-    def merge(self, nums1, nums2):
+    ___ merge(self, nums1, nums2
         result = []
-        while nums1 and nums2:
-            if nums1 >= nums2:
+        w___ nums1 and nums2:
+            __ nums1 >= nums2:
                 result.append(nums1.pop(0))
-            else:
+            ____
                 result.append(nums2.pop(0))
-        while nums1:
+        w___ nums1:
             result.append(nums1.pop(0))
-        while nums2:
+        w___ nums2:
             result.append(nums2.pop(0))
-        return result
+        r_ result
     
-    def test(self):
+    ___ test(self
         testCases = [
             (
                 [3, 4, 6, 5],
@@ -72,6 +72,6 @@ class Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     Solution().test()
 

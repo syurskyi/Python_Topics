@@ -6,37 +6,37 @@ which the depth of the two subtrees of every node never differ by more than 1.
 """
 
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
+# class TreeNode(object
+#     ___ __init__(self, x
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def isBalanced(self, root):
+class Solution(object
+    ___ isBalanced(self, root
         """
         :type root: TreeNode
         :rtype: bool
         """
-        if root is None:
-            return True
-        else:
-            if self.height(root) != -1:
-                return True
-            else:
-                return False
+        __ root is None:
+            r_ True
+        ____
+            __ self.height(root) != -1:
+                r_ True
+            ____
+                r_ False
 
-    def height(self, root):
+    ___ height(self, root
         # Return -1 if not balanced
-        if root is None:
-            return 0
-        else:
+        __ root is None:
+            r_ 0
+        ____
             left_height = self.height(root.left)
             right_height = self.height(root.right)
-            if left_height == -1 or right_height == -1:
-                return -1
-            else:
-                if abs(left_height - right_height) <= 1:
-                    return max(left_height, right_height) + 1
-                else:
-                    return -1
+            __ left_height __ -1 or right_height __ -1:
+                r_ -1
+            ____
+                __ abs(left_height - right_height) <= 1:
+                    r_ max(left_height, right_height) + 1
+                ____
+                    r_ -1

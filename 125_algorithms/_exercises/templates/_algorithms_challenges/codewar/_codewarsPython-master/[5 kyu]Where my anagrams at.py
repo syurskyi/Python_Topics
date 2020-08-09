@@ -1,4 +1,4 @@
-def anagrams(word, words):
-    return [w for w in words if sorted(w) == sorted(word)]
+___ anagrams(word, words
+    r_ [w for w in words __ sorted(w) __ sorted(word)]
 
 print(anagrams('aabb',['aabb','bbaa','ccaa','baba']))

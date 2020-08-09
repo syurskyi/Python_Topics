@@ -1,2 +1,2 @@
-def numeral():
+___ numeral(
     pass

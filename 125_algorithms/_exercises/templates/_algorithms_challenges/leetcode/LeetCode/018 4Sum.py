@@ -14,7 +14,7 @@ The solution set must not contain duplicate quadruplets.
 """
 __author__ = 'Danyang'
 class Solution:
-    def fourSum_TLE(self, num, target):
+    ___ fourSum_TLE(self, num, target
         """
         Algorithm: pointers
         O(n^3) typically, O(n^(k-1))
@@ -30,43 +30,43 @@ class Solution:
         # record result
         result = []
         num.sort()
-        length = len(num)
+        length = le.(num)
 
         h = 0
-        while h<length-3:
+        w___ h<length-3:
             i = h+1
-            while i<length-2:
+            w___ i<length-2:
                 j = i+1
                 k = length-1
-                while j<k:
+                w___ j<k:
                     lst = [num[h], num[i], num[j], num[k]]
                     summation = sum(lst)
-                    if summation==target:
+                    __ summation__target:
                         result.append(lst)
                         k -= 1
                         j += 1
                         # remove duplicate
-                        while j<k and num[j]==num[j-1]:
+                        w___ j<k and num[j]__num[j-1]:
                             j += 1
-                        while j<k and num[k]==num[k+1]:
+                        w___ j<k and num[k]__num[k+1]:
                             k -= 1
-                    elif summation>target:
+                    ____ summation>target:
                         k -= 1
-                    else:
+                    ____
                         j += 1
     
                 i += 1
                 # Jump, remove duplicate
-                while i<length-2 and num[i]==num[i-1]:
+                w___ i<length-2 and num[i]__num[i-1]:
                     i += 1
             h += 1
             # Jump, remove duplicate
-            while h<length-3 and num[h]==num[h-1]:
+            w___ h<length-3 and num[h]__num[h-1]:
                 h += 1
 
-        return result
+        r_ result
 
-    def fourSum(self, num, target):
+    ___ fourSum(self, num, target
         """
         Algorithm: Hash Table
         O(n^2)
@@ -75,26 +75,26 @@ class Solution:
         :param target: int
         :return: a list of lists of length 4, [[val1,val2,val3,val4]]
         """
-        length, result_set, sum2index = len(num), set(), {}
-        if length<4:
-            return []
+        length, result_set, sum2index = le.(num), set(), {}
+        __ length<4:
+            r_ []
         num.sort()
 
-        for p in xrange(length):
-            for q in xrange(p+1, length):
+        for p in xrange(length
+            for q in xrange(p+1, length
                 # record the pair sum
-                if num[p]+num[q] not in sum2index:
+                __ num[p]+num[q] not in sum2index:
                     sum2index[num[p]+num[q]] = [(p, q)]
-                else:
+                ____
                     sum2index[num[p]+num[q]].append((p, q))
 
-        for i in xrange(length):
-            for j in xrange(i+1, length-2):
+        for i in xrange(length
+            for j in xrange(i+1, length-2
                 sum_remain = target-num[i]-num[j]
-                if sum_remain in sum2index:
+                __ sum_remain in sum2index:
                     # construct the result
                     for pair in sum2index[sum_remain]:
-                        if pair[0]>j:  # avoid duplicate
+                        __ pair[0]>j:  # avoid duplicate
                             result_set.add(( num[i], num[j], num[pair[0]], num[pair[1]] ))
 
-        return [list(i) for i in result_set]  # convert tuple to list
+        r_ [list(i) for i in result_set]  # convert tuple to list

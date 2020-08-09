@@ -5,14 +5,14 @@ __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
+class ListNode(object
+    ___ __init__(self, x
         self.val = x
         self.next = None
 
 
-class Solution(object):
-    def plusOne(self, head):
+class Solution(object
+    ___ plusOne(self, head
         """
         reverse, plus one, then reverse
         :type head: ListNode
@@ -21,31 +21,31 @@ class Solution(object):
         head = self.revserse(head)
         head = self.plus(head)
         head = self.revserse(head)
-        return head
+        r_ head
 
-    def plus(self, head):
+    ___ plus(self, head
         cur = head
-        while cur:
+        w___ cur:
             cur.val += 1
-            if cur.val >= 10:
+            __ cur.val >= 10:
                 cur.val -= 10
-                if not cur.next:
+                __ not cur.next:
                     cur.next = ListNode(0)
                 cur = cur.next
-            else:
+            ____
                 break
 
-        return head
+        r_ head
 
-    def revserse(self, head):
-        if not head:
-            return None
+    ___ revserse(self, head
+        __ not head:
+            r_ None
 
         dummy = ListNode(0)
         dummy.next = head
         pre = dummy
         cur = pre.next
-        while pre and cur:
+        w___ pre and cur:
             nxt = cur.next
 
             cur.next = pre
@@ -54,4 +54,4 @@ class Solution(object):
             cur = nxt
 
         dummy.next.next = None  # original head
-        return pre
+        r_ pre

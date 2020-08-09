@@ -6,25 +6,25 @@ Given an n-ary tree, return the level order traversal of its nodes' values. (ie,
 
 # Definition for a Node.
 class Node:
-    def __init__(self, val, children):
+    ___ __init__(self, val, children
         self.val = val
         self.children = children
 
 
 class Solution:
-    def levelOrder(self, root):
+    ___ levelOrder(self, root
         """
         BFS
         
         :type root: Node
         :rtype: List[List[int]]
         """
-        if not root:
-            return []
+        __ not root:
+            r_ []
 
         q = [root]
         ret = []
-        while q:
+        w___ q:
             cur = []
             q_new = []
             for e in q:
@@ -34,4 +34,4 @@ class Solution:
             ret.append(cur)
             q = q_new
 
-        return ret
+        r_ ret

@@ -5,6 +5,6 @@ with open("prob13.txt") as infile:
     
     for num in data:
         wsd = 0
-        for i in range(len(num)):
+        for i in range(le.(num)):
             wsd += (i+1)*int(num[i])
         print(wsd, end =" ")
