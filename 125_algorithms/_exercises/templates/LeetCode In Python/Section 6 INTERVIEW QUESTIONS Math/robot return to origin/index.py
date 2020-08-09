@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ judgeCircle(, moves: str) -> bool:
+    ___ judgeCircle(, moves: st.) -> bool:
         
         x _ 0
         y _ 0

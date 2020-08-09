@@ -1,7 +1,7 @@
 c_ Solution:
     ___ findHash(,s
         r_ ''.join(sorted(s))
-    ___ groupAnagrams(, strs: L..[str]) -> L..[L..[str]]:
+    ___ groupAnagrams(, strs: L..[st.]) -> L..[L..[st.]]:
         answers _ []
         m _ {}
 

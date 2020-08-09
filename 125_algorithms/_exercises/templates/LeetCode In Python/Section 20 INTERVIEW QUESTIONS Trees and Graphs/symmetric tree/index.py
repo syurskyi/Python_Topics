@@ -8,7 +8,7 @@
 c_ Solution:
     ___ isMirror(,t1,t2
         __(t1 is None and t2 is None
-            r_ True
+            r_ T..
         __(t1 is None or t2 is None
             r_ False
         r_ (t1.val__t2.val) and .isMirror(t1.right,t2.left) and .isMirror(t1.left,t2.right)

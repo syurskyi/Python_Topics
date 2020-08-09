@@ -33,7 +33,7 @@ c_ LinkedList:
         temp _ .head
         linked_list _ ""
         w___(temp
-            linked_list +_ (str(temp.data) + " ")
+            linked_list +_ (st.(temp.data) + " ")
             temp _ temp.next
 
         print(linked_list)

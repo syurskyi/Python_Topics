@@ -1,14 +1,14 @@
 c_ Solution:
     ___ isEqual(, c1, c2) -> bool:
         __(c1 __ '(' and c2 __ ')'
-            r_ True
+            r_ T..
         __(c1 __ '[' and c2 __ ']'
-            r_ True
+            r_ T..
         __(c1 __ '{' and c2 __ '}'
-            r_ True
+            r_ T..
         r_ False
 
-    ___ isValid(, s: str) -> bool:
+    ___ isValid(, s: st.) -> bool:
         st _ []
         ___ character __ s:
             __(le.(st) !_ 0

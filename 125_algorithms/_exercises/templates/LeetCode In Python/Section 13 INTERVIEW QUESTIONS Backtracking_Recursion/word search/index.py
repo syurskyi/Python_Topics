@@ -12,25 +12,25 @@ c_ Solution:
         __(cur[le.(cur)-1] !_ word[le.(cur)-1]
             r_ False
         __(cur __ word
-            r_ True
+            r_ T..
 
         temp _ board[x][y]
         board[x][y] _ ' '
 
         ___ i __ ra..(4
             __(.solution(board, word, x+.dx[i], y+.dy[i], cur)):
-                r_ True
+                r_ T..
 
         board[x][y] _ temp
         r_ False
 
-    ___ exist(, board: L..[L..[str]], word: str) -> bool:
+    ___ exist(, board: L..[L..[st.]], word: st.) -> bool:
         __(le.(word) __ 0
-            r_ True
+            r_ T..
         n _ le.(board)
         ___ i __ ra..(n
             m _ le.(board[i])
             ___ j __ ra..(m
                 __(word[0] __ board[i][j] and .solution(board, word, i, j, "")):
-                    r_ True
+                    r_ T..
         r_ False

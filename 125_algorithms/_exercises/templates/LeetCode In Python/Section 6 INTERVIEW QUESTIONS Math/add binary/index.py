@@ -15,7 +15,7 @@ c_ Solution(object
                 total +_ int(b[j])
                 j -_ 1
 
-            result.append(str(total % 2))
+            result.append(st.(total % 2))
             carry _ total//2
 
         r_ ''.join(reversed(result))

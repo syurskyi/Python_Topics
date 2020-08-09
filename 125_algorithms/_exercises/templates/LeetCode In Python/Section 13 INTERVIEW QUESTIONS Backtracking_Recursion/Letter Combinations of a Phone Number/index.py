@@ -14,7 +14,7 @@ c_ Solution:
             .backtracking(ans, m, digits, combination +
                               curString[i], index+1)
 
-    ___ letterCombinations(, digits: str) -> L..[str]:
+    ___ letterCombinations(, digits: st.) -> L..[st.]:
         ans _ []
         __(le.(digits) __ 0
             r_ ans

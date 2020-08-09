@@ -7,9 +7,9 @@ c_ Solution:
                 r_ False
             i +_ 1
             j -_ 1
-        r_ True
+        r_ T..
 
-    ___ dfs(, s: str
+    ___ dfs(, s: st.
         __(le.(s) __ 0 and le.(.temp) > 0
             .res.append(.temp[:])
             r_
@@ -21,7 +21,7 @@ c_ Solution:
                 .dfs(s[i:])
                 .temp.pop()
 
-    ___ partition(, s: str) -> L..[L..[str]]:
+    ___ partition(, s: st.) -> L..[L..[st.]]:
         .res _ []
         .temp _ []
         .dfs(s)

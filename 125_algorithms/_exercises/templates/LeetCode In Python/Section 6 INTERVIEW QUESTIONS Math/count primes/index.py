@@ -3,7 +3,7 @@ c_ Solution:
         
         __ n<2:
             r_ 0
-        isPrime _ [True]*n
+        isPrime _ [T..]*n
         isPrime[0] _ isPrime[1] _ False
         
         ___ i __ ra..(2,ma__.ceil(ma__.sqrt(n))):

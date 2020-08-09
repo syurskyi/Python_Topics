@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestPalindrome(, s: str) -> str:
+    ___ longestPalindrome(, s: st.) -> st.:
         n _ le.(s)
         __(n<2
             r_ s
@@ -12,7 +12,7 @@ c_ Solution:
             ___ i __ ra..(0,j
                 innerIsPalindrome _ palindrome[i+1][j-1] or j-i<_2
                 __(s[i] __ s[j] and innerIsPalindrome
-                    palindrome[i][j] _ True
+                    palindrome[i][j] _ T..
                     __(j-i>right-left
                         left _ i
                         right _ j

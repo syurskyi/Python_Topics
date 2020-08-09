@@ -7,5 +7,5 @@ c_ Solution:
             hare _ hare.next.next
             turtle _ turtle.next
             __(turtle __ hare
-                r_ True
+                r_ T..
         r_ False
