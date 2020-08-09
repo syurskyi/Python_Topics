@@ -18,12 +18,12 @@ c_ Graph:
             cur _ st[-1]
             st.pop()
 
-            __(cur not __ visited
+            __(cur no. __ visited
                 print(cur, end_" ")
                 visited.add(cur)
 
             ___ vertex __ .graph[cur]:
-                __(vertex not __ visited
+                __(vertex no. __ visited
                     st.append(vertex)
 
 

@@ -4,7 +4,7 @@ c_ Solution:
             r_
         ans.append(cur[:])
         ___ i __ ra..(index,le.(nums)):
-            __(nums[i] not __ cur
+            __(nums[i] no. __ cur
                 cur.append(nums[i])
                 .solution(nums,ans,cur,i)
                 cur.pop()

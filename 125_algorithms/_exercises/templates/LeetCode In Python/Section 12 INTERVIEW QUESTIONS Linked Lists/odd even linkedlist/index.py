@@ -6,7 +6,7 @@
 
 c_ Solution:
     ___ oddEvenList(, head: ListNode) -> ListNode:
-        __(not head
+        __(no. head
             r_ head
 
         odd _ head

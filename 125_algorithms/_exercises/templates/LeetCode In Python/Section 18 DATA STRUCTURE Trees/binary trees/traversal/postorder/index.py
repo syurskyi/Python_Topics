@@ -8,7 +8,7 @@ c_ Node:
 
 
 ___ postorder(node
-    __(node is not None
+    __(node is no. None
         postorder(node.left)
         postorder(node.right)
         print(node.data)

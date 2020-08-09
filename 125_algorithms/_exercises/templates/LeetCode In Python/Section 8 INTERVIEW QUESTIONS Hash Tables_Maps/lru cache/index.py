@@ -23,7 +23,7 @@ c_ LRUCache:
         # obj = LRUCache(capacity)
         # param_1 = obj.get(key)
         # obj.put(key,value)
-        __ key not __ .m:
+        __ key no. __ .m:
             __ le.(.deq) __ .c:
                 oldest _ .deq.popleft()
                 del .m[oldest]

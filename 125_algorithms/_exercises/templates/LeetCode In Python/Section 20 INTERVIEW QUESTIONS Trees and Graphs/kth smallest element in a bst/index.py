@@ -6,7 +6,7 @@ c_ Solution:
         r_ .res
 
     ___ helper(, root
-        __ not root:
+        __ no. root:
             r_
         .helper(root.left)
         

@@ -7,7 +7,7 @@ c_ Solution:
         x _ A[i]
         ___ j __ ra..(0,le.(B)):
           y _ B[j]
-          __(x+y not __ m
+          __(x+y no. __ m
             m[x+y] _ 0
           m[x+y]+_1
 

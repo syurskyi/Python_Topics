@@ -8,7 +8,7 @@ c_ Node:
 
 
 ___ inorder(node
-    __(node is not None
+    __(node is no. None
         inorder(node.left)
         print(node.data)
         inorder(node.right)

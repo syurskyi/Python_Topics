@@ -25,7 +25,7 @@ ___ insert(root, node
 
 
 ___ preorder(node
-    __(node is not None
+    __(node is no. None
         print(node.data)
         preorder(node.left)
         preorder(node.right)

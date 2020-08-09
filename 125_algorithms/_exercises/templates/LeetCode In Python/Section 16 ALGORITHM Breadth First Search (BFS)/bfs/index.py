@@ -23,7 +23,7 @@ c_ Graph:
             print(u, end_" ")
 
             ___ v __ .graph[u]:
-                __ v not __ visited:
+                __ v no. __ visited:
                     queue.append(v)
                     visited.add(v)
 

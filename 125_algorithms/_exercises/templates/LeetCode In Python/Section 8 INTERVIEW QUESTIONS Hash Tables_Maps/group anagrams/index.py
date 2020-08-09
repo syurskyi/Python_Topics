@@ -7,7 +7,7 @@ c_ Solution:
 
         ___ s __ strs:
             hashed _ .findHash(s)
-            __(hashed not __ m
+            __(hashed no. __ m
                 m[hashed] _ []
             m[hashed].append(s)
         

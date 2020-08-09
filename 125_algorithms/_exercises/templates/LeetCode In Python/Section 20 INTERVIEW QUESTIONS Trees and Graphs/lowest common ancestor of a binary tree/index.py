@@ -17,7 +17,7 @@ c_ Solution:
 
         __(left is None and right is None
             r_ None
-        __(left is not None and right is not None
+        __(left is no. None and right is no. None
             r_ root
         __(left is None
             r_ right

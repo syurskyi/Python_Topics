@@ -41,7 +41,7 @@ c_ LinkedList:
     ___ countList(
         temp _ .head
         count _ 0
-        w___(temp is not None
+        w___(temp is no. None
             temp _ temp.next
             count +_ 1
         r_ count
@@ -66,7 +66,7 @@ c_ LinkedList:
             r_ .head
         
         __(index __ count +1
-            w___(temp.next is not None
+            w___(temp.next is no. None
                 temp _ temp.next
 
             temp.next _ newNode

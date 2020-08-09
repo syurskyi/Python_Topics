@@ -64,7 +64,7 @@ c_ LinkedList:
         count _ 0
 
         # Iterate the list and increment the count
-        w___ (temp is not None
+        w___ (temp is no. None
             temp _ temp.next
             count _ count + 1
 
@@ -85,7 +85,7 @@ c_ LinkedList:
         r_ .head
 
       __(count __ index
-        w___(temp.next is not None and temp.next.next is not None
+        w___(temp.next is no. None and temp.next.next is no. None
           temp _ temp.next
          # 1 => 2 => 3 => 4
         temp.next _ None

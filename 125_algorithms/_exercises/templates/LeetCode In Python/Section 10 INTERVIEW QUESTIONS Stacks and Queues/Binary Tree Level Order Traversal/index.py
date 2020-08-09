@@ -23,9 +23,9 @@ c_ Solution:
                 f _ q.popleft()
                 temp.append(f.val)
 
-                __(f.left is not None
+                __(f.left is no. None
                     q.append(f.left)
-                __(f.right is not None
+                __(f.right is no. None
                     q.append(f.right)
 
             __(le.(temp)>0

@@ -7,7 +7,7 @@
 
 c_ Solution:
     ___ postorderTraversal(, root: TreeNode) -> L.. in.:
-        __(not root
+        __(no. root
             r_
         
         ans _ []

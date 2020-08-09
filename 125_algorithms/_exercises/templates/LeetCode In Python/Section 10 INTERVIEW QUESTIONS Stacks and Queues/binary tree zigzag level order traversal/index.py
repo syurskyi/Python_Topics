@@ -8,7 +8,7 @@
 
 c_ Solution:
     ___ zigzagLevelOrder(, root: TreeNode) -> L..[L..[int]]:
-        __ not root:
+        __ no. root:
             r_ []
         res _ []
         q _ collections.deque()
@@ -35,6 +35,6 @@ c_ Solution:
                     __ node.right:
                         q.append(node.right)
             res.append(level)
-            zigzag _ not zigzag
+            zigzag _ no. zigzag
 
         r_ res

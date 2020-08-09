@@ -8,7 +8,7 @@
 c_ Solution:
     ___ reverseList(, head: ListNode) -> ListNode:
         node _ None
-        w___(head is not None
+        w___(head is no. None
             next _ head.next
             head.next _ node
             node _ head

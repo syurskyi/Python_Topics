@@ -25,14 +25,14 @@ ___ insert(root, node
 
 
 ___ preorder(node
-    __(node is not None
+    __(node is no. None
         print(node.data)
         preorder(node.left)
         preorder(node.right)
 
 
 ___ minValueNode(node
-    w___(node.left is not None
+    w___(node.left is no. None
         node _ node.left
     r_ node
 
