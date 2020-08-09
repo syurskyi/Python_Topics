@@ -1,14 +1,14 @@
-c_ Solution:
-    ___ countPrimes(, n: in.) -> in.:
-        
-        __ n<2:
-            r_ 0
-        isPrime _ [T..]*n
-        isPrime[0] _ isPrime[1] _ F..
-        
-        ___ i __ ra..(2,ma__.ceil(ma__.sqrt(n))):
-            __ isPrime[i]:
-                ___ multiples_of_i __ ra..(i*i,n,i
-                    isPrime[multiples_of_i] _ F..
-        
-        r_ su.(isPrime)
+# c_ Solution
+#     ___ countPrimes n in. in.
+#
+#         __ ?<2
+#             r_ 0
+#         isPrime _ T.. *?
+#         ? 0 _ ? 1 _ F..
+#
+#         ___ i __ ra.. 2 ma__.c.. ma__.sq.. ?
+#             __ ? ?
+#                 ___ multiples_of_i __ ra.. ?*? ? ?
+#                     ? ? _ F..
+#
+#         r_ su. ?
