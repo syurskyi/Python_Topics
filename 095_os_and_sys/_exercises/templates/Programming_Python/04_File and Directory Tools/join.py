@@ -37,7 +37,7 @@ __ __name__ __ '__main__':
         ____
             interactive _ False
             fromdir, tofile _ ___.a..[1:]
-        absfrom, absto _ map(__.p...abspath, [fromdir, tofile])
+        absfrom, absto _ map(__.p...a.., [fromdir, tofile])
         print('Joining', absfrom, 'to make', absto)
 
         ___

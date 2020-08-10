@@ -80,7 +80,7 @@ ___ getargs():
             __ hasattr(__.p.., 'samefile'):
                 same _ __.p...samefile(dirFrom, dirTo)
             ____
-                same _ __.p...abspath(dirFrom) __ __.p...abspath(dirTo)
+                same _ __.p...a..(dirFrom) __ __.p...a..(dirTo)
             __ same:
                 print('Error: dirFrom same as dirTo')
             ____

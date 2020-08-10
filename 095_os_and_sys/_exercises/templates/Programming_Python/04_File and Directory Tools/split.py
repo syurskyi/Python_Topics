@@ -46,7 +46,7 @@ __ __name__ __ '__main__':
             interactive _ False
             fromfile, todir _ ___.a..[1:3]                  # args in cmdline
             __ le.(___.a..) __ 4: chunksize _ int(___.a..[3])
-        absfrom, absto _ map(__.p...abspath, [fromfile, todir])
+        absfrom, absto _ map(__.p...a.., [fromfile, todir])
         print('Splitting', absfrom, 'to', absto, 'by', chunksize)
 
         ___
