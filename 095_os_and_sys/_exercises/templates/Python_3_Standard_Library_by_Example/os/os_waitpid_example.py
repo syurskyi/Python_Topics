@@ -5,15 +5,15 @@
 #end_pymotw_header
 ______ __
 ______ sys
-______ time
+______ ti__
 
 workers = []
 ___ i __ range(2):
-    print('PARENT {}: Forking {}'.f..(__.getpid(), i))
-    worker_pid = __.fork()
+    print('PARENT {}: Forking {}'.f..(__.g_p_, i))
+    worker_pid = __.f..
     __ not worker_pid:
         print('WORKER {}: Starting'.f..(i))
-        time.sleep(2 + i)
+        ti__.sleep(2 + i)
         print('WORKER {}: Finishing'.f..(i))
         sys.exit(i)
     workers.append(worker_pid)

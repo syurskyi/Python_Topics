@@ -4,10 +4,10 @@
 
 #end_pymotw_header
 ______ __
-______ time
+______ ti__
 
 print('Calling...')
 __.sy..('date; (sleep 3; date) &')
 
 print('Sleeping...')
-time.sleep(5)
+ti__.sleep(5)

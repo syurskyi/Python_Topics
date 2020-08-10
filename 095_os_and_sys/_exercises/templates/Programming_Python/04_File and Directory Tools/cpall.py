@@ -87,11 +87,11 @@ ___ getargs():
                 return (dirFrom, dirTo)
 
 __ __name__ == '__main__':
-    ______ time
+    ______ ti__
     dirstuple = getargs()
     __ dirstuple:
         print('Copying...')
-        start = time.clock()
+        start = ti__.clock()
         fcount, dcount = copytree(*dirstuple)
         print('Copied', fcount, 'files,', dcount, 'directories', end=' ')
-        print('in', time.clock() - start, 'seconds')
+        print('in', ti__.clock() - start, 'seconds')

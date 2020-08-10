@@ -9,10 +9,10 @@
 
 #end_pymotw_header
 ______ __.p..
-______ time
+______ ti__
 
 print('File         :',  -f)
-print('Access time  :', time.ctime(__.p...getatime( -f)))
-print('Modified time:', time.ctime(__.p...getmtime( -f)))
-print('Change time  :', time.ctime(__.p...getctime( -f)))
+print('Access time  :', ti__.ctime(__.p...getatime( -f)))
+print('Modified time:', ti__.ctime(__.p...getmtime( -f)))
+print('Change time  :', ti__.ctime(__.p...getctime( -f)))
 print('Size         :', __.p...getsize( -f))

@@ -4,7 +4,7 @@
 
 #end_pymotw_header
 ______ pathlib
-______ time
+______ ti__
 
 p = pathlib.Path('touched')
 __ p.exists():
@@ -15,10 +15,10 @@ ____
 p.touch()
 start = p.stat()
 
-time.sleep(1)
+ti__.sleep(1)
 
 p.touch()
 end = p.stat()
 
-print('Start:', time.ctime(start.st_mtime))
-print('End  :', time.ctime(end.st_mtime))
+print('Start:', ti__.ctime(start.st_mtime))
+print('End  :', ti__.ctime(end.st_mtime))

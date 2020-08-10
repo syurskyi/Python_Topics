@@ -28,7 +28,7 @@ w__ tarfile.o..('example.tar', 'r') __ tar_file:
 # of the files in it, use .getnames():
 
 ______ tarfile
-______ time
+______ ti__
 
 tar = tarfile.o..('example.tar', mode='r')
 tar.getnames()
@@ -45,7 +45,7 @@ tar.getnames()
 
 ___ entry __ tar.getmembers():
     print(entry.name)
-    print(' Modified:', time.ctime(entry.mtime))
+    print(' Modified:', ti__.ctime(entry.mtime))
     print(' Size    :', entry.size, 'bytes')
     print()
 
