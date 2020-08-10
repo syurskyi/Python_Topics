@@ -1,26 +1,26 @@
-____ __future__ ______ print_function
-______ __, ___
-
-p.. _ '.'
-
-__ le.(___.a..) __ 2:
-    p.. _ ___.a..[1]
-
-files _ __.l_d_(p..)
-___ name __ files:
-    print(name)
-
-    full_path _ __.p...j..(p.., name)
-    print(full_path)
-
-    inode _ __.s..(full_path)
-    print('  ' + str(inode.st_size))
-    print('  ' + str(inode.st_mode))
-    print('  ' + ('f' __ inode.st_mode & 0100000 else '-'))
-    print('  ' + ('d' __ inode.st_mode & 0040000 else '-'))
-
-    __ __.p...isdir(full_path):
-        print('    dir')
-    ____ __.p...i_f_(full_path):
-        print('    file')
-    print('    ' + str(__.p...getsize(full_path)))
+# ____ -f ______ p_f..
+# ______ __ ___
+#
+# p.. _ '.'
+#
+# __ le. ___.a.. __ 2
+#     p.. _ ___.a.. 1
+#
+# files _ __.l_d_ p..
+# ___ name __ ?
+#     print ?
+#
+#     full_path _ __.p...j.. p.. ?
+#     print ?
+#
+#     inode _ __.s.. ?
+#     print('  ' + st. ?.s_s..
+#     print('  ' + st. ?.s_m..
+#     print('  ' + ('f' __ ?.s_m.. _ 0100000 ____ '-'
+#     print('  ' + ('d' __ ?.s_m.. _ 0040000 ____ '-'
+#
+#     __ __.p...i_d.. ?
+#         print '    dir'
+#     ____ __.p...i_f_ ?
+#         print '    file'
+#     print('    ' + st_ __.p...g_s.. ?
