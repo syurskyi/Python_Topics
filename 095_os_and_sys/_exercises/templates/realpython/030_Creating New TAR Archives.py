@@ -1,14 +1,14 @@
 # Here’s how you do it:
 
-______ tarfile
+______ t_f_
 
 file_list _ ['app.py', 'config.py', 'CONTRIBUTORS.md', 'tests.py']
-w__ tarfile.o..('packages.tar', mode_'w') __ tar:
+w__ t_f_.o..('packages.tar', mode_'w') __ tar:
     ___ file __ file_list:
         tar.add(file)
 
 # Read the contents of the newly created archive
-w__ tarfile.o..('package.tar', mode_'r') __ t:
+w__ t_f_.o..('package.tar', mode_'r') __ t:
     ___ member __ t.getmembers():
         print(member.name)
 
@@ -27,10 +27,10 @@ w__ tarfile.o..('package.tar', mode_'r') __ t:
 #
 # To add new files to an existing archive, open the archive in append mode ('a'):
 
-w__ tarfile.o..('package.tar', mode_'a') __ tar:
+w__ t_f_.o..('package.tar', mode_'a') __ tar:
     tar.add('foo.bar')
 
-w__ tarfile.o..('package.tar', mode_'r') __ tar:
+w__ t_f_.o..('package.tar', mode_'r') __ tar:
    ___ member __ tar.getmembers():
        print(member.name)
 

@@ -5,15 +5,15 @@
 # For example, to read or write data to a TAR archive compressed using gzip, use the 'r:gz' or 'w:gz'
 # modes respectively:
 
-______ tarfile
+______ t_f_
 
 files _ ['app.py', 'config.py', 'tests.py']
-w__ tarfile.o..('packages.tar.gz', mode_'w:gz') __ tar:
+w__ t_f_.o..('packages.tar.gz', mode_'w:gz') __ tar:
     tar.add('app.py')
     tar.add('config.py')
     tar.add('tests.py')
 
-w__ tarfile.o..('packages.tar.gz', mode_'r:gz') __ t:
+w__ t_f_.o..('packages.tar.gz', mode_'r:gz') __ t:
     ___ member __ t.getmembers():
         print(member.name)
 
