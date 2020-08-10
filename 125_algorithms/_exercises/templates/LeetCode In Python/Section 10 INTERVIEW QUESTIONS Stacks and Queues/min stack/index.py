@@ -1,5 +1,5 @@
-c_ MinStack:
-    ___  - (
+c_ MinStack
+    ___  -
         .st _   # list
 
     ___ push(, x: in.)  N..
