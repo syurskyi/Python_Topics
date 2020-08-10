@@ -12,10 +12,10 @@
 ______ l____
 ______ l____.config
 
-l____.config.fileConfig(fname='file.conf', disable_existing_loggers=False)
+l____.config.fileConfig(fname_'file.conf', disable_existing_loggers_False)
 
 # Get the logger specified in the file
-logger = l____.getLogger(__name__)
+logger _ l____.getLogger(__name__)
 
 logger.debug('This is a debug message')
 # 2018-07-13 13:57:45,467 - __main__ - DEBUG - This is a debug message

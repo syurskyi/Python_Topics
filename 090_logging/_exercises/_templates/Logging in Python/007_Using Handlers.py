@@ -13,17 +13,17 @@
 ______ l____
 
 # Create a custom logger
-logger = l____.getLogger(__name__)
+logger _ l____.getLogger(__name__)
 
 # Create handlers
-c_handler = l____.StreamHandler()
-f_handler = l____.FileHandler('file.log')
+c_handler _ l____.StreamHandler()
+f_handler _ l____.FileHandler('file.log')
 c_handler.setLevel(l____.WARNING)
 f_handler.setLevel(l____.ERROR)
 
 # Create formatters and add it to handlers
-c_format = l____.Formatter('%(name)s - %(levelname)s - %(message)s')
-f_format = l____.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+c_format _ l____.Formatter('%(name)s - %(levelname)s - %(message)s')
+f_format _ l____.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 c_handler.setFormatter(c_format)
 f_handler.setFormatter(f_format)
 

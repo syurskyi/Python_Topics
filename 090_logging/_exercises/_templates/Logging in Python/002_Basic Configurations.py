@@ -17,7 +17,7 @@
 #
 ______ l____
 
-l____.basicConfig(level=l____.DEBUG)
+l____.basicConfig(level_l____.D..)
 l____.debug('This will get logged')
 # DEBUG:root:This will get logged
 
@@ -27,7 +27,7 @@ l____.debug('This will get logged')
 #
 ______ l____
 
-l____.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+l____.basicConfig(filename_'app.log', filemode_'w', format_'%(name)s - %(levelname)s - %(message)s')
 l____.warning('This will get logged to a file')
 # root - ERROR - This will get logged to a file
 

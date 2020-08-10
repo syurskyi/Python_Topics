@@ -3,13 +3,13 @@
 
 ______ l____
 
-a = 5
-b = 0
+a _ 5
+b _ 0
 
-try:
-  c = a / b
+___
+  c _ a / b
 except Exception as e:
-  l____.error("Exception occurred", exc_info=True)
+  l____.error("Exception occurred", exc_info_True)
 # ERROR:root:Exception occurred
 # Traceback (most recent call last):
 #   File "exceptions.py", line 6, in <module>
@@ -28,10 +28,10 @@ except Exception as e:
 
 ______ l____
 
-a = 5
-b = 0
-try:
-  c = a / b
+a _ 5
+b _ 0
+___
+  c _ a / b
 except Exception as e:
   l____.exception("Exception occurred")
 # ERROR:root:Exception occurred

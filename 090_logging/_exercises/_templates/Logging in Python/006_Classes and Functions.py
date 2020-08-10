@@ -24,7 +24,7 @@
 
 ______ l____
 
-logger = l____.getLogger('example_logger')
+logger _ l____.getLogger('example_logger')
 logger.warning('This is a warning')
 # This is a warning
 

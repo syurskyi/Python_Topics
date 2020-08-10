@@ -4,7 +4,7 @@
 
 ______ l____
 
-l____.basicConfig(format='%(process)d-%(levelname)s-%(message)s')
+l____.basicConfig(format_'%(process)d-%(levelname)s-%(message)s')
 l____.warning('This is a Warning')
 # 18472-WARNING-This is a Warning
 
@@ -15,7 +15,7 @@ l____.warning('This is a Warning')
 
 ______ l____
 
-l____.basicConfig(format='%(asctime)s - %(message)s', level=l____.INFO)
+l____.basicConfig(format_'%(asctime)s - %(message)s', level_l____.INFO)
 l____.info('Admin logged in')
 # 2018-07-11 20:12:06,288 - Admin logged in
 
@@ -24,7 +24,7 @@ l____.info('Admin logged in')
 
 ______ l____
 
-l____.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+l____.basicConfig(format_'%(asctime)s - %(message)s', datefmt_'%d-%b-%y %H:%M:%S')
 l____.warning('Admin logged out')
 # 12-Jul-18 20:53:19 - Admin logged out
 # You can find the guide here.

@@ -6,7 +6,7 @@
 
 ______ l____
 
-name = 'John'
+name _ 'John'
 l____.error('%s raised an error', name)
 # ERROR:root:John raised an error
 
@@ -15,7 +15,7 @@ l____.error('%s raised an error', name)
 # as they can help keep the formatting short and easy to read:
 
 ______ l____
-name = 'John'
+name _ 'John'
 
 l____.error(f'{name} raised an error')
 # ERROR:root:John raised an error
