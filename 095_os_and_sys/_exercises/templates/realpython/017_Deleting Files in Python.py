@@ -23,9 +23,9 @@ ______ __
 data_file = 'home/data.txt'
 
 # If the file exists, delete it
-if __.p...isfile(data_file):
+__ __.p...isfile(data_file):
     __.remove(data_file)
-else:
+____
     print(f'Error: {data_file} not a valid filename')
 
 # os.path.isfile() checks whether data_file is actually a file. If it is, it is deleted by the call to os.remove().

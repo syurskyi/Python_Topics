@@ -7,13 +7,13 @@ ______ __
 ______ sys
 
 ___ entry __ __.scandir(sys.argv[1]):
-    if entry.is_dir():
+    __ entry.is_dir():
         typ = 'dir'
     elif entry.is_file():
         typ = 'file'
     elif entry.is_symlink():
         typ = 'link'
-    else:
+    ____
         typ = 'unknown'
     print('{name} {typ}'.f..(
         name=entry.name,

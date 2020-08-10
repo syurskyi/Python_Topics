@@ -16,12 +16,12 @@ ___ signal_usr1(signum, frame):
 
 print('Forking...')
 child_pid = __.fork()
-if child_pid:
+__ child_pid:
     print('PARENT: Pausing before sending signal...')
     time.sleep(1)
     print('PARENT: Signaling {}'.f..(child_pid))
     __.kill(child_pid, signal.SIGUSR1)
-else:
+____
     print('CHILD: Setting up signal handler')
     signal.signal(signal.SIGUSR1, signal_usr1)
     print('CHILD: Pausing to wait for signal')

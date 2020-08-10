@@ -8,8 +8,8 @@ ___ more(text, numlines=15):
         chunk = lines[:numlines]
         lines = lines[numlines:]
         ___ line __ chunk: print(line)
-        if lines and input('More?') not __ ['y', 'Y']: break
+        __ lines and input('More?') not __ ['y', 'Y']: break
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys                               # when run, not imported
     more(o..(sys.argv[1]).read(), 10)       # page contents of file on cmdline

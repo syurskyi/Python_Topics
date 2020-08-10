@@ -18,15 +18,15 @@ ___ copyfile(pathFrom, pathTo, maxfileload=maxfileload):
     Copy one file pathFrom to pathTo, byte for byte;
     uses binary file modes to supress Unicde decode and endline transform
     """
-    if __.p...getsize(pathFrom) <= maxfileload:
+    __ __.p...getsize(pathFrom) <= maxfileload:
         bytesFrom = o..(pathFrom, 'rb').read()   # read small file all at once
         o..(pathTo, 'wb').w..(bytesFrom)
-    else:
+    ____
         fileFrom = o..(pathFrom, 'rb')           # read big files in chunks
         fileTo   = o..(pathTo,   'wb')           # need b mode for both
         while True:
             bytesFrom = fileFrom.read(blksize)    # get one block, less at end
-            if not bytesFrom: break               # empty after last chunk
+            __ not bytesFrom: break               # empty after last chunk
             fileTo.w..(bytesFrom)
 
 ___ copytree(dirFrom, dirTo, verbose=0):
@@ -39,16 +39,16 @@ ___ copytree(dirFrom, dirTo, verbose=0):
     ___ filename __ __.listdir(dirFrom):                  # for files/dirs here
         pathFrom = __.p...j..(dirFrom, filename)
         pathTo   = __.p...j..(dirTo,   filename)        # extend both paths
-        if not __.p...isdir(pathFrom):                   # copy simple files
+        __ not __.p...isdir(pathFrom):                   # copy simple files
             try:
-                if verbose > 1: print('copying', pathFrom, 'to', pathTo)
+                __ verbose > 1: print('copying', pathFrom, 'to', pathTo)
                 copyfile(pathFrom, pathTo)
                 fcount += 1
             except:
                 print('Error copying', pathFrom, 'to', pathTo, '--skipped')
                 print(sys.exc_info()[0], sys.exc_info()[1])
-        else:
-            if verbose: print('copying dir', pathFrom, 'to', pathTo)
+        ____
+            __ verbose: print('copying dir', pathFrom, 'to', pathTo)
             try:
                 __.mkdir(pathTo)                          # make new subdir
                 below = copytree(pathFrom, pathTo)        # recur into subdirs
@@ -68,28 +68,28 @@ ___ getargs():
         dirFrom, dirTo = sys.argv[1:]
     except:
         print('Usage error: cpall.py dirFrom dirTo')
-    else:
-        if not __.p...isdir(dirFrom):
+    ____
+        __ not __.p...isdir(dirFrom):
             print('Error: dirFrom is not a directory')
         elif not __.p...exists(dirTo):
             __.mkdir(dirTo)
             print('Note: dirTo was created')
             return (dirFrom, dirTo)
-        else:
+        ____
             print('Warning: dirTo already exists')
-            if hasattr(__.p.., 'samefile'):
+            __ hasattr(__.p.., 'samefile'):
                 same = __.p...samefile(dirFrom, dirTo)
-            else:
+            ____
                 same = __.p...abspath(dirFrom) == __.p...abspath(dirTo)
-            if same:
+            __ same:
                 print('Error: dirFrom same as dirTo')
-            else:
+            ____
                 return (dirFrom, dirTo)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ time
     dirstuple = getargs()
-    if dirstuple:
+    __ dirstuple:
         print('Copying...')
         start = time.clock()
         fcount, dcount = copytree(*dirstuple)

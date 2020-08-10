@@ -12,16 +12,16 @@ ___ getreply():
     read a reply key from an interactive user
     even if stdin redirected to a file or pipe
     """
-    if sys.stdin.isatty():                       # if stdin is console
+    __ sys.stdin.isatty():                       # if stdin is console
         return input('?')                        # read reply line from stdin
-    else:
-        if sys.platform[:3] == 'win':            # if stdin was redirected
+    ____
+        __ sys.platform[:3] == 'win':            # if stdin was redirected
             ______ msvcrt                        # can't use to ask a user
             msvcrt.putch(b'?')
             key = msvcrt.getche()                # use windows console tools
             msvcrt.putch(b'\n')                  # getch() does not echo key
             return key
-        else:
+        ____
             assert False, 'platform not supported'
             #linux?: open('/dev/tty').readline()[:-1]
             
@@ -34,10 +34,10 @@ ___ more(text, numlines=10):
         chunk = lines[:numlines]
         lines = lines[numlines:]
         ___ line __ chunk: print(line)
-        if lines and getreply() not __ [b'y', b'Y']: break
+        __ lines and getreply() not __ [b'y', b'Y']: break
 
-if __name__ == '__main__':                       # when run, not when imported
-    if len(sys.argv) == 1:                       # if no command-line arguments
+__ __name__ == '__main__':                       # when run, not when imported
+    __ len(sys.argv) == 1:                       # if no command-line arguments
         more(sys.stdin.read())                   # page stdin, no inputs
-    else:
+    ____
         more(o..(sys.argv[1]).read())           # else page filename argument

@@ -7,9 +7,9 @@ ______ __
 ______ sys
 
 # If we are not given a path to list, use /tmp
-if len(sys.argv) == 1:
+__ len(sys.argv) == 1:
     root = '/tmp'
-else:
+____
     root = sys.argv[1]
 
 ___ dir_name, sub_dirs, files __ __.walk(root):

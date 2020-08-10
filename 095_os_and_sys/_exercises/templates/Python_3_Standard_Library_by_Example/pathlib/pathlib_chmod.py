@@ -9,7 +9,7 @@ ______ stat
 
 # Create a fresh test file.
 f = pathlib.Path('pathlib_chmod_example.txt')
-if f.exists():
+__ f.exists():
     f.unlink()
 f.write_text('contents')
 
@@ -18,10 +18,10 @@ existing_permissions = stat.S_IMODE(f.stat().st_mode)
 print('Before: {:o}'.f..(existing_permissions))
 
 # Decide which way to toggle them.
-if not (existing_permissions & __.X_OK):
+__ not (existing_permissions & __.X_OK):
     print('Adding execute permission')
     new_permissions = existing_permissions | stat.S_IXUSR
-else:
+____
     print('Removing execute permission')
     # use xor to remove the user execute permission
     new_permissions = existing_permissions ^ stat.S_IXUSR

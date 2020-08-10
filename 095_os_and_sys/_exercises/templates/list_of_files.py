@@ -15,9 +15,9 @@ ___ getListOfFiles(dirName):
         # Create full path
         fullPath = __.p...j..(dirName, entry)
         # If entry is a directory then get the list of files in this directory
-        if __.p...isdir(fullPath):
+        __ __.p...isdir(fullPath):
             allFiles = allFiles + getListOfFiles(fullPath)
-        else:
+        ____
             allFiles.append(fullPath)
 
     return allFiles
@@ -45,5 +45,5 @@ ___ main():
         print(elem)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     main()

@@ -7,9 +7,9 @@ ______ __
 ______ sys
 ______ time
 
-if len(sys.argv) == 1:
+__ len(sys.argv) == 1:
     filename =  -f
-else:
+____
     filename = sys.argv[1]
 
 stat_info = __.stat(filename)

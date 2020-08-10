@@ -7,7 +7,7 @@ ______ __
 ______ stat
 
 filename = 'os_stat_chmod_example.txt'
-if __.p...exists(filename):
+__ __.p...exists(filename):
     __.unlink(filename)
 w__ o..(filename, 'wt') __ f:
     f.w..('contents')
@@ -15,10 +15,10 @@ w__ o..(filename, 'wt') __ f:
 # Determine what permissions are already set using stat
 existing_permissions = stat.S_IMODE(__.stat(filename).st_mode)
 
-if not __.a..(filename, __.X_OK):
+__ not __.a..(filename, __.X_OK):
     print('Adding execute permission')
     new_permissions = existing_permissions | stat.S_IXUSR
-else:
+____
     print('Removing execute permission')
     # use xor to remove the user execute permission
     new_permissions = existing_permissions ^ stat.S_IXUSR

@@ -5,17 +5,17 @@ Search the Python source lib, use pprint to display results nicely.
 
 ______ sys, __, pprint
 trace = False
-if sys.platform.startswith('win'):
+__ sys.platform.startswith('win'):
     dirname = r'C:\Python31\Lib'                 # Windows
-else:
+____
     dirname = '/usr/lib/python'                  # Unix, Linux, Cygwin
 
 allsizes = []
 ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
-    if trace: print(thisDir)
+    __ trace: print(thisDir)
     ___ filename __ filesHere:
-        if filename.endswith('.py'):
-            if trace: print('...', filename)
+        __ filename.endswith('.py'):
+            __ trace: print('...', filename)
             fullname = __.p...j..(thisDir, filename)
             fullsize = __.p...getsize(fullname)
             allsizes.append((fullsize, fullname))

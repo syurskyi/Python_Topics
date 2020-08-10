@@ -26,7 +26,7 @@ try:
 except OSError:
     print('ERROR: Could not change effective group. '
           'Rerun as root.')
-else:
+____
     print('CHANGE GROUP:')
     show_user_info()
     print()
@@ -36,7 +36,7 @@ try:
 except OSError:
     print('ERROR: Could not change effective user. '
           'Rerun as root.')
-else:
+____
     print('CHANGE USER:')
     show_user_info()
     print()

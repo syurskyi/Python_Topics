@@ -3,16 +3,16 @@
 ___ getopts(argv):
     opts = {}
     while argv:
-        if argv[0][0] == '-':                  # find "-name value" pairs
+        __ argv[0][0] == '-':                  # find "-name value" pairs
             opts[argv[0]] = argv[1]            # dict key is "-name" arg
             argv = argv[2:]
-        else:
+        ____
             argv = argv[1:]
     return opts
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     from sys ______ argv                       # example client code
     myargs = getopts(argv)
-    if '-i' __ myargs:
+    __ '-i' __ myargs:
         print(myargs['-i'])
     print(myargs)

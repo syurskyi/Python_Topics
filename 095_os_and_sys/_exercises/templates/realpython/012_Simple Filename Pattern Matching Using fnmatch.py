@@ -7,7 +7,7 @@ ______ __
 ______ fnmatch
 
 ___ file_name __ __.listdir('some_directory/'):
-    if fnmatch.fnmatch(file_name, '*.txt'):
+    __ fnmatch.fnmatch(file_name, '*.txt'):
         print(file_name)
 
 # This iterates over the list of files in some_directory and uses .fnmatch() to perform a wildcard search

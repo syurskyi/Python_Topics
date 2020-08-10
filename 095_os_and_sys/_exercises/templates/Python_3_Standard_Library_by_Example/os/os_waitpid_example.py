@@ -11,7 +11,7 @@ workers = []
 ___ i __ range(2):
     print('PARENT {}: Forking {}'.f..(__.getpid(), i))
     worker_pid = __.fork()
-    if not worker_pid:
+    __ not worker_pid:
         print('WORKER {}: Starting'.f..(i))
         time.sleep(2 + i)
         print('WORKER {}: Finishing'.f..(i))

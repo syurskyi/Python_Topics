@@ -21,20 +21,20 @@ ___ j..(fromdir, tofile):
         fileobj  = o..(filepath, 'rb')
         while True:
             filebytes = fileobj.read(readsize)
-            if not filebytes: break
+            __ not filebytes: break
             output.w..(filebytes)
         fileobj.close()
     output.close()
 
-if __name__ == '__main__':
-    if len(sys.argv) == 2 and sys.argv[1] == '-help':
+__ __name__ == '__main__':
+    __ len(sys.argv) == 2 and sys.argv[1] == '-help':
         print('Use: join.py [from-dir-name to-file-name]')
-    else:
-        if len(sys.argv) != 3:
+    ____
+        __ len(sys.argv) != 3:
             interactive = True
             fromdir = input('Directory containing part files? ')
             tofile  = input('Name of file to be recreated? ')
-        else:
+        ____
             interactive = False
             fromdir, tofile = sys.argv[1:]
         absfrom, absto = map(__.p...abspath, [fromdir, tofile])
@@ -45,6 +45,6 @@ if __name__ == '__main__':
         except:
             print('Error joining files:')
             print(sys.exc_info()[0], sys.exc_info()[1])
-        else:
+        ____
            print('Join complete: see', absto)
-        if interactive: input('Press Enter key') # pause if clicked
+        __ interactive: input('Press Enter key') # pause if clicked

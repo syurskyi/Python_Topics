@@ -11,10 +11,10 @@ ___ filter_files(name, function):         # filter file through function
 ___ filter_stream(function):              # no explicit files
     while True:                           # use standard streams
         line = sys.stdin.readline()       # or: input()
-        if not line: break
+        __ not line: break
         print(function(line), end='')     # or: sys.stdout.write()
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     filter_stream(lambda line: line)      # copy stdin to stdout if run
 
 

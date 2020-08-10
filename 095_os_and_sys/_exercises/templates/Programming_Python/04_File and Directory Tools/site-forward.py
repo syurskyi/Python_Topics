@@ -23,7 +23,7 @@ sitefiles = __.listdir(sitefilesdir)     # filenames, no directory prefix
 
 count = 0
 ___ filename __ sitefiles:
-    if filename.endswith('.html') or filename.endswith('.htm'):
+    __ filename.endswith('.html') or filename.endswith('.htm'):
         fwdname = __.p...j..(uploaddir, filename)
         print('creating', filename, 'as', fwdname)
 

@@ -9,7 +9,7 @@ ______ __
 ______ fnmatch
 
 ___ filename __ __.listdir('./some_directory'):
-    if fnmatch.fnmatch(filename, 'data_*_backup.txt'):
+    __ fnmatch.fnmatch(filename, 'data_*_backup.txt'):
         print(filename)
 
 # Here, you print only the names of files that match the data_*_backup.txt pattern. The asterisk in the pattern

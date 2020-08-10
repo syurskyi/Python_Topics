@@ -7,9 +7,9 @@ ______ pathlib
 ______ time
 
 p = pathlib.Path('touched')
-if p.exists():
+__ p.exists():
     print('already exists')
-else:
+____
     print('creating new')
 
 p.touch()

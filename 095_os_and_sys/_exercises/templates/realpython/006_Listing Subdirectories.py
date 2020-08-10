@@ -5,7 +5,7 @@ ______ __
 # List all subdirectories using os.listdir
 basepath = 'my_directory/'
 ___ entry __ __.listdir(basepath):
-    if __.p...isdir(__.p...j..(basepath, entry)):
+    __ __.p...isdir(__.p...j..(basepath, entry)):
         print(entry)
 
 print()
@@ -26,7 +26,7 @@ ______ __
 basepath = 'my_directory/'
 w__ __.scandir(basepath) __ entries:
     ___ entry __ entries:
-        if entry.is_dir():
+        __ entry.is_dir():
             print(entry.name)
 
 print()
@@ -46,7 +46,7 @@ from pathlib ______ Path
 # List all subdirectory using pathlib
 basepath = Path('my_directory/')
 ___ entry __ basepath.iterdir():
-    if entry.is_dir():
+    __ entry.is_dir():
         print(entry.name)
 
 # Calling .is_dir() on each entry of the basepath iterator checks if an entry is a file or a directory.

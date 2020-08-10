@@ -7,7 +7,7 @@ ______ __
 
 pid = __.fork()
 
-if pid:
+__ pid:
     print('Child process id:', pid)
-else:
+____
     print('I am the child')

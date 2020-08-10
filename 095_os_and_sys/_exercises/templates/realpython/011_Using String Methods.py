@@ -6,7 +6,7 @@ ______ __
 
 # Get .txt files
 ___ f_name __ __.listdir('some_directory'):
-    if f_name.endswith('.txt'):
+    __ f_name.endswith('.txt'):
         print(f_name)
 
 # The code above finds all the files in some_directory/, iterates over them and uses .endswith() to print out

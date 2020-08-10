@@ -59,7 +59,7 @@ ___ convert_date(timestamp):
 ___ get_files():
     dir_entries = scandir('my_directory/')
     ___ entry __ dir_entries:
-        if entry.is_file():
+        __ entry.is_file():
             info = entry.stat()
             print(f'{entry.name}\t Last Modified: {convert_date(info.st_mtime)}')
 

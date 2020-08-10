@@ -15,10 +15,10 @@ ______ pathlib
 root = pathlib.Path('test_files')
 
 # Clean up from previous runs.
-if root.exists():
+__ root.exists():
     ___ f __ root.iterdir():
         f.unlink()
-else:
+____
     root.mkdir()
 
 # Create test files

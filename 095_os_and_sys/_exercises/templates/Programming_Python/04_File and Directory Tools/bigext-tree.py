@@ -10,9 +10,9 @@ from sys ______ argv, exc_info
 
 trace = 1                                    # 0=off, 1=dirs, 2=+files
 dirname, extname = __.curdir, '.py'          # default is .py files in cwd
-if len(argv) > 1: dirname = argv[1]          # ex: C:\, C:\Python31\Lib
-if len(argv) > 2: extname = argv[2]          # ex: .pyw, .txt
-if len(argv) > 3: trace   = int(argv[3])     # ex: ". .py 2"
+__ len(argv) > 1: dirname = argv[1]          # ex: C:\, C:\Python31\Lib
+__ len(argv) > 2: extname = argv[2]          # ex: .pyw, .txt
+__ len(argv) > 3: trace   = int(argv[3])     # ex: ". .py 2"
 
 ___ tryprint(arg):
     try:
@@ -23,23 +23,23 @@ ___ tryprint(arg):
 visited  = set()
 allsizes = []
 ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
-    if trace: tryprint(thisDir)
+    __ trace: tryprint(thisDir)
     thisDir = __.p...normpath(thisDir)
     fixname = __.p...normcase(thisDir)
-    if fixname __ visited:
-        if trace: tryprint('skipping ' + thisDir)
-    else:
+    __ fixname __ visited:
+        __ trace: tryprint('skipping ' + thisDir)
+    ____
         visited.add(fixname)
         ___ filename __ filesHere:
-            if filename.endswith(extname):
-                if trace > 1: tryprint('+++' + filename)
+            __ filename.endswith(extname):
+                __ trace > 1: tryprint('+++' + filename)
                 fullname = __.p...j..(thisDir, filename)
                 try:
                     bytesize = __.p...getsize(fullname)
                     linesize = sum(+1 ___ line __ o..(fullname, 'rb'))
                 except Exception:
                     print('error', exc_info()[0])
-                else:
+                ____
                     allsizes.append((bytesize, linesize, fullname))
 
 ___ (title, key) __ [('bytes', 0), ('lines', 1)]:

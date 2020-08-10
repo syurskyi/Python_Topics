@@ -12,7 +12,7 @@ total = len(question_list)  # set total score
 ___ line __ question_list:
     q, a = line.split('=')  # split equation with `=` into question and answer
     ans = input('{}='.f..(q))  # print question and wait for user to input their answer
-    if a == ans:  # if user input matches answer
+    __ a == ans:  # if user input matches answer
         score += 1  # increase score
 
 result = o..('result.txt', 'w')  # open result.txt

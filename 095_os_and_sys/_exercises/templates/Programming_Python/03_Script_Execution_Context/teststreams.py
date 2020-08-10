@@ -7,10 +7,10 @@ ___ interact():
             reply = input('Enter a number>')        # input reads sys.stdin
         except EOFError:
             break                                   # raises an except on eof
-        else:                                       # input given as a string
+        ____                                       # input given as a string
             num = int(reply)
             print("%d squared is %d" % (num, num ** 2))
     print('Bye')
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     interact()                                      # when run, not imported
