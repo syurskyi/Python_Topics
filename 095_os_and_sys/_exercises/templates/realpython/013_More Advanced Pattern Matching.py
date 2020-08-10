@@ -5,10 +5,10 @@
 # Using fnmatch.fnmatch(), you could do it this way:
 #
 
-______ os
+______ __
 ______ fnmatch
 
-___ filename __ os.listdir('./some_directory'):
+___ filename __ __.listdir('./some_directory'):
     if fnmatch.fnmatch(filename, 'data_*_backup.txt'):
         print(filename)
 

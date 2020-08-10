@@ -7,7 +7,7 @@ use it for user reply--use platform-specific tools or GUI;
 
 ______ sys
 
-def getreply():
+___ getreply():
     """
     read a reply key from an interactive user
     even if stdin redirected to a file or pipe
@@ -25,7 +25,7 @@ def getreply():
             assert False, 'platform not supported'
             #linux?: open('/dev/tty').readline()[:-1]
             
-def more(text, numlines=10):
+___ more(text, numlines=10):
     """
     page multiline string to stdout
     """
@@ -40,4 +40,4 @@ if __name__ == '__main__':                       # when run, not when imported
     if len(sys.argv) == 1:                       # if no command-line arguments
         more(sys.stdin.read())                   # page stdin, no inputs
     else:
-        more(open(sys.argv[1]).read())           # else page filename argument
+        more(o..(sys.argv[1]).read())           # else page filename argument

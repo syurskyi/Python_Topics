@@ -3,12 +3,12 @@
 ______ tarfile
 
 file_list = ['app.py', 'config.py', 'CONTRIBUTORS.md', 'tests.py']
-with tarfile.open('packages.tar', mode='w') as tar:
+w__ tarfile.o..('packages.tar', mode='w') __ tar:
     ___ file __ file_list:
         tar.add(file)
 
 # Read the contents of the newly created archive
-with tarfile.open('package.tar', mode='r') as t:
+w__ tarfile.o..('package.tar', mode='r') __ t:
     ___ member __ t.getmembers():
         print(member.name)
 
@@ -27,10 +27,10 @@ with tarfile.open('package.tar', mode='r') as t:
 #
 # To add new files to an existing archive, open the archive in append mode ('a'):
 
-with tarfile.open('package.tar', mode='a') as tar:
+w__ tarfile.o..('package.tar', mode='a') __ tar:
     tar.add('foo.bar')
 
-with tarfile.open('package.tar', mode='r') as tar:
+w__ tarfile.o..('package.tar', mode='r') __ tar:
    ___ member __ tar.getmembers():
        print(member.name)
 

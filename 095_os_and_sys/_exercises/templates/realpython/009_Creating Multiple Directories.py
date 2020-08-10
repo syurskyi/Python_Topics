@@ -5,8 +5,8 @@
 # os.makedirs() is similar to running mkdir -p in Bash. For example, to create a group of directories like 2018/10/05,
 # all you have to do is the following:
 
-______ os
-os.makedirs('2018/10/05')
+______ __
+__.makedirs('2018/10/05')
 
 # This will create a nested directory structure that contains the folders 2018, 10, and 05:
 #
@@ -19,8 +19,8 @@ os.makedirs('2018/10/05')
 # .makedirs() creates directories with default permissions. If you need to create directories with different permissions
 # call .makedirs() and pass in the mode you would like the directories to be created in:
 
-______ os
-os.makedirs('2018/10/05', mode=0o770)
+______ __
+__.makedirs('2018/10/05', mode=0o770)
 
 # This creates the 2018/10/05 directory structure and gives the owner and group users read, write,
 # and execute permissions. The default mode is 0o777, and the file permission bits of existing parent directories

@@ -3,22 +3,22 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 
-print('Initial value:', os.environ.get('TESTVAR', None))
+print('Initial value:', __.environ.get('TESTVAR', None))
 print('Child process:')
-os.system('echo $TESTVAR')
+__.system('echo $TESTVAR')
 
-os.environ['TESTVAR'] = 'THIS VALUE WAS CHANGED'
+__.environ['TESTVAR'] = 'THIS VALUE WAS CHANGED'
 
 print()
-print('Changed value:', os.environ['TESTVAR'])
+print('Changed value:', __.environ['TESTVAR'])
 print('Child process:')
-os.system('echo $TESTVAR')
+__.system('echo $TESTVAR')
 
-del os.environ['TESTVAR']
+del __.environ['TESTVAR']
 
 print()
-print('Removed value:', os.environ.get('TESTVAR', None))
+print('Removed value:', __.environ.get('TESTVAR', None))
 print('Child process:')
-os.system('echo $TESTVAR')
+__.system('echo $TESTVAR')

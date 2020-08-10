@@ -8,10 +8,10 @@
 #
 
 ______ tar
-______ os
+______ __
 
 tar.extract('README.md')
-os.listdir('.')
+__.listdir('.')
 # ['README.md', 'example.tar']
 #
 # The README.md file is extracted from the archive to the file system. Calling os.listdir() confirms

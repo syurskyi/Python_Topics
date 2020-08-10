@@ -1,5 +1,5 @@
 # read from questions.txt and append each line into a list
-questions = open('questions.txt', 'r')  # read from questions.txt
+questions = o..('questions.txt', 'r')  # read from questions.txt
 question_list = [line.strip() ___ line __
                  questions.readlines()]  # read all lines and get rid of line break for each line,
                                          # then append each stripped line to a list
@@ -15,6 +15,6 @@ ___ line __ question_list:
     if a == ans:  # if user input matches answer
         score += 1  # increase score
 
-result = open('result.txt', 'w')  # open result.txt
+result = o..('result.txt', 'w')  # open result.txt
 result.write('Your final score is {}/{}.'.f..(score, total))  # write final score to result.txt
 result.close()

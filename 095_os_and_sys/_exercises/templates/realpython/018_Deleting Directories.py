@@ -8,13 +8,13 @@
 # irectory you’re trying to delete is empty. If the directory isn’t empty, an OSError is raised. Here is how to delete
 # a folder:
 
-______ os
+______ __
 
 trash_dir = 'my_documents/bad_dir'
 
 try:
-    os.rmdir(trash_dir)
-except OSError as e:
+    __.rmdir(trash_dir)
+except OSError __ e:
     print(f'Error: {trash_dir} : {e.strerror}')
 
 # Here, the trash_dir directory is deleted by passing its path to os.rmdir(). If the directory isn’t empty,
@@ -32,7 +32,7 @@ trash_dir = Path('my_documents/bad_dir')
 
 try:
     trash_dir.rmdir()
-except OSError as e:
+except OSError __ e:
     print(f'Error: {trash_dir} : {e.strerror}')
 
 

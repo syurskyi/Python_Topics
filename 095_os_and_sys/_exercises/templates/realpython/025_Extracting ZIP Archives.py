@@ -5,9 +5,9 @@
 # it is automatically created. To extract files from the archive, do the following:
 
 ______ zipfile
-______ os
+______ __
 
-os.listdir('.')
+__.listdir('.')
 
 # ['data.zip']
 
@@ -18,17 +18,17 @@ data_zip.extract('file1.py')
 
 # '/home/terra/test/dir1/zip_extract/file1.py'
 
-os.listdir('.')
+__.listdir('.')
 
 # ['file1.py', 'data.zip']
 
 # Extract all files into a different directory
 data_zip.extractall(path='extract_dir/')
 
-os.listdir('.')
+__.listdir('.')
 # ['file1.py', 'extract_dir', 'data.zip']
 
-os.listdir('extract_dir')
+__.listdir('extract_dir')
 # ['file1.py', 'file3.py', 'file2.py', 'sub_dir']
 
 data_zip.close()

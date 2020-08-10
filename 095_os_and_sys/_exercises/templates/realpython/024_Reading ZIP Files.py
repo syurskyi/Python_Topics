@@ -27,7 +27,7 @@
 
 ______ zipfile
 
-with zipfile.ZipFile('data.zip', 'r') as zipobj:
+w__ zipfile.ZipFile('data.zip', 'r') __ zipobj:
     zipobj.namelist()
 
 # This produces a list:
@@ -39,7 +39,7 @@ with zipfile.ZipFile('data.zip', 'r') as zipobj:
 
 ______ zipfile
 
-with zipfile.ZipFile('data.zip', 'r') as zipobj:
+w__ zipfile.ZipFile('data.zip', 'r') __ zipobj:
     bar_info = zipobj.getinfo('sub_dir/bar.py')
     bar_info.file_size
 

@@ -4,28 +4,28 @@
 
 #end_pymotw_header
 ______ g__
-______ os
+______ __
 
 
-with open('rename_start.txt', 'w') as f:
+w__ o..('rename_start.txt', 'w') __ f:
     f.write('starting as rename_start.txt')
 
 print('Starting:', g__.g__('rename*.txt'))
 
-os.rename('rename_start.txt', 'rename_finish.txt')
+__.rename('rename_start.txt', 'rename_finish.txt')
 
 print('After rename:', g__.g__('rename*.txt'))
 
-with open('rename_finish.txt', 'r') as f:
+w__ o..('rename_finish.txt', 'r') __ f:
     print('Contents:', repr(f.read()))
 
-with open('rename_new_contents.txt', 'w') as f:
+w__ o..('rename_new_contents.txt', 'w') __ f:
     f.write('ending with contents of rename_new_contents.txt')
 
-os.replace('rename_new_contents.txt', 'rename_finish.txt')
+__.replace('rename_new_contents.txt', 'rename_finish.txt')
 
-with open('rename_finish.txt', 'r') as f:
+w__ o..('rename_finish.txt', 'r') __ f:
     print('After replace:', repr(f.read()))
 
 ___ name __ g__.g__('rename*.txt'):
-    os.unlink(name)
+    __.unlink(name)

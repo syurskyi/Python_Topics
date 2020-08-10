@@ -1,14 +1,14 @@
 ______ sys
 
-def filter_files(name, function):         # filter file through function
-    input  = open(name, 'r')              # create file objects
-    output = open(name + '.out', 'w')     # explicit output file too
+___ filter_files(name, function):         # filter file through function
+    input  = o..(name, 'r')              # create file objects
+    output = o..(name + '.out', 'w')     # explicit output file too
     ___ line __ input:
         output.write(function(line))      # write the modified line
     input.close()
     output.close()                        # output has a '.out' suffix
 
-def filter_stream(function):              # no explicit files
+___ filter_stream(function):              # no explicit files
     while True:                           # use standard streams
         line = sys.stdin.readline()       # or: input()
         if not line: break

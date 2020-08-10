@@ -3,10 +3,10 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 
 print('Testing:', __file__)
-print('Exists:', os.access(__file__, os.F_OK))
-print('Readable:', os.access(__file__, os.R_OK))
-print('Writable:', os.access(__file__, os.W_OK))
-print('Executable:', os.access(__file__, os.X_OK))
+print('Exists:', __.access(__file__, __.F_OK))
+print('Readable:', __.access(__file__, __.R_OK))
+print('Writable:', __.access(__file__, __.W_OK))
+print('Executable:', __.access(__file__, __.X_OK))

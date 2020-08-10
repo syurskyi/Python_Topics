@@ -4,7 +4,7 @@
 
 friends = input('Enter three friend names, separated by commas (no spaces, please): ').split(',')
 
-people = open('people.txt', 'r')
+people = o..('people.txt', 'r')
 people_nearby = [line.strip() ___ line __ people.readlines()]
 
 people.close()
@@ -14,7 +14,7 @@ people_nearby_set = set(people_nearby)
 
 friends_nearby_set = friends_set.intersection(people_nearby_set)
 
-nearby_friends_file = open('nearby_friends.txt', 'w')
+nearby_friends_file = o..('nearby_friends.txt', 'w')
 
 ___ friend __ friends_nearby_set:
     print(f'{friend} is nearby! Meet up with them.')

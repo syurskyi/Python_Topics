@@ -1,5 +1,5 @@
 # w - writes and erases existing contents
-with open("haiku.txt", "w") as file:
+w__ o..("haiku.txt", "w") __ file:
     file.write("Here's one more haiku\n")
     file.write("What about the older one?\n")
     file.write("Let's go check it out")
@@ -7,15 +7,15 @@ with open("haiku.txt", "w") as file:
 # a - appends to end, preserving original contents
 # NO CONTROL OVER CURSOR
 
-with open("haiku.txt", "a") as file:
+w__ o..("haiku.txt", "a") __ file:
     file.seek(0)
     file.write(":)\n")
 
 # r+ read and write
-with open("haiku.txt", "r+") as file:
+w__ o..("haiku.txt", "r+") __ file:
     file.write(":)")
     file.seek(10)
     file.write(":(")
 # r+ will not create a file if it doesn't exist
-with open("hello.txt", "a") as file:
+w__ o..("hello.txt", "a") __ file:
     file.write("HELLO!!!")

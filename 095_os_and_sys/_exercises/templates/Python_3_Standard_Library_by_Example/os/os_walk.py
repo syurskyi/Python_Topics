@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ sys
 
 # If we are not given a path to list, use /tmp
@@ -12,7 +12,7 @@ if len(sys.argv) == 1:
 else:
     root = sys.argv[1]
 
-___ dir_name, sub_dirs, files __ os.walk(root):
+___ dir_name, sub_dirs, files __ __.walk(root):
     print(dir_name)
     # Make the subdirectory names stand out with /
     sub_dirs = [n + '/' ___ n __ sub_dirs]

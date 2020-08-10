@@ -3,9 +3,9 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 
-pid = os.fork()
+pid = __.fork()
 
 if pid:
     print('Child process id:', pid)

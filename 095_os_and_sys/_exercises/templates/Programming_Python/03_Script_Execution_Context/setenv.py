@@ -1,12 +1,12 @@
-______ os
+______ __
 print('setenv...', end=' ')
-print(os.environ['USER'])                # show current shell variable value
+print(__.environ['USER'])                # show current shell variable value
 
-os.environ['USER'] = 'Brian'             # runs os.putenv behind the scenes
-os.system('python echoenv.py')
+__.environ['USER'] = 'Brian'             # runs os.putenv behind the scenes
+__.system('python echoenv.py')
 
-os.environ['USER'] = 'Arthur'            # changes passed to spawned programs
-os.system('python echoenv.py')           # and linked-in C library modules
+__.environ['USER'] = 'Arthur'            # changes passed to spawned programs
+__.system('python echoenv.py')           # and linked-in C library modules
 
-os.environ['USER'] = input('?')
-print(os.popen('python echoenv.py').read())
+__.environ['USER'] = input('?')
+print(__.popen('python echoenv.py').read())

@@ -8,12 +8,12 @@
 ______ tarfile
 
 files = ['app.py', 'config.py', 'tests.py']
-with tarfile.open('packages.tar.gz', mode='w:gz') as tar:
+w__ tarfile.o..('packages.tar.gz', mode='w:gz') __ tar:
     tar.add('app.py')
     tar.add('config.py')
     tar.add('tests.py')
 
-with tarfile.open('packages.tar.gz', mode='r:gz') as t:
+w__ tarfile.o..('packages.tar.gz', mode='r:gz') __ t:
     ___ member __ t.getmembers():
         print(member.name)
 

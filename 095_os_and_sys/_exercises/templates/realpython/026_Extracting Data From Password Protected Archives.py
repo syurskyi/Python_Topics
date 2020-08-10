@@ -3,7 +3,7 @@
 #
 ______ zipfile
 
-with zipfile.ZipFile('secret.zip', 'r') as pwd_zip:
+w__ zipfile.ZipFile('secret.zip', 'r') __ pwd_zip:
     # Extract from a password protected archive
     pwd_zip.extractall(path='extract_dir', pwd='Quish3@o')
 #

@@ -9,25 +9,25 @@ also be imported and reused in other applications;
 ################################################################################
 """
 
-______ sys, os
+______ sys, __
 kilobytes = 1024
 megabytes = kilobytes * 1000
 chunksize = int(1.4 * megabytes)                   # default: roughly a floppy
 
-def split(fromfile, todir, chunksize=chunksize):
-    if not os.path.exists(todir):                  # caller handles errors
-        os.mkdir(todir)                            # make dir, read/write parts
+___ split(fromfile, todir, chunksize=chunksize):
+    if not __.path.exists(todir):                  # caller handles errors
+        __.mkdir(todir)                            # make dir, read/write parts
     else:
-        ___ fname __ os.listdir(todir):            # delete any existing files
-            os.remove(os.path.join(todir, fname))
+        ___ fname __ __.listdir(todir):            # delete any existing files
+            __.remove(__.path.join(todir, fname))
     partnum = 0
-    input = open(fromfile, 'rb')                   # use binary mode on Windows
+    input = o..(fromfile, 'rb')                   # use binary mode on Windows
     while True:                                    # eof=empty string from read
         chunk = input.read(chunksize)              # get next part <= chunksize
         if not chunk: break
         partnum += 1
-        filename = os.path.join(todir, ('part%04d' % partnum))
-        fileobj  = open(filename, 'wb')
+        filename = __.path.join(todir, ('part%04d' % partnum))
+        fileobj  = o..(filename, 'wb')
         fileobj.write(chunk)
         fileobj.close()                            # or simply open().write()
     input.close()
@@ -46,7 +46,7 @@ if __name__ == '__main__':
             interactive = False
             fromfile, todir = sys.argv[1:3]                  # args in cmdline
             if len(sys.argv) == 4: chunksize = int(sys.argv[3])
-        absfrom, absto = map(os.path.abspath, [fromfile, todir])
+        absfrom, absto = map(__.path.abspath, [fromfile, todir])
         print('Splitting', absfrom, 'to', absto, 'by', chunksize)
 
         try:

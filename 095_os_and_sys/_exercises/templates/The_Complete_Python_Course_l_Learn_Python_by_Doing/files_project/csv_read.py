@@ -1,4 +1,4 @@
-file = open('csv_data.txt', 'r')
+file = o..('csv_data.txt', 'r')
 lines = file.readlines()
 file.close()
 

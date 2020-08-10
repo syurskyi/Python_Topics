@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ pathlib
 ______ stat
 
@@ -18,7 +18,7 @@ existing_permissions = stat.S_IMODE(f.stat().st_mode)
 print('Before: {:o}'.f..(existing_permissions))
 
 # Decide which way to toggle them.
-if not (existing_permissions & os.X_OK):
+if not (existing_permissions & __.X_OK):
     print('Adding execute permission')
     new_permissions = existing_permissions | stat.S_IXUSR
 else:

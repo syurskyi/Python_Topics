@@ -1,12 +1,12 @@
 # list files in dir tree by recursion 
 
-______ sys, os
+______ sys, __
 
-def mylister(currdir):
+___ mylister(currdir):
     print('[' + currdir + ']')
-    ___ file __ os.listdir(currdir):              # list files here
-        path = os.path.join(currdir, file)        # add dir path back
-        if not os.path.isdir(path):
+    ___ file __ __.listdir(currdir):              # list files here
+        path = __.path.join(currdir, file)        # add dir path back
+        if not __.path.isdir(path):
             print(path)
         else:
             mylister(path)                        # recur into subdirs

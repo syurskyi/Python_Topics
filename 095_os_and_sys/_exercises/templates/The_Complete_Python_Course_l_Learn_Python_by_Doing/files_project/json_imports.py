@@ -1,6 +1,6 @@
 ______ json
 
-file = open('friends_json.txt', 'r')
+file = o..('friends_json.txt', 'r')
 file_contents = json.load(file)  # reads file and turns it to dictionary
 
 file.close()
@@ -12,7 +12,7 @@ cars = [
     {'make': 'Ford', 'model': 'Focus'}
 ]
 
-file = open('cars_json.txt', 'w')
+file = o..('cars_json.txt', 'w')
 json.dump(cars, file)
 file.close()
 

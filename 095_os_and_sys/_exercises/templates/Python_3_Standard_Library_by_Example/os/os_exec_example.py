@@ -3,10 +3,10 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 
-child_pid = os.fork()
+child_pid = __.fork()
 if child_pid:
-    os.waitpid(child_pid, 0)
+    __.waitpid(child_pid, 0)
 else:
-    os.execlp('pwd', 'pwd', '-P')
+    __.execlp('pwd', 'pwd', '-P')

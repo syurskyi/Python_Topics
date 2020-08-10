@@ -3,8 +3,8 @@
 # os.scandir() was introduced in Python 3.5 and is documented in PEP 471. os.scandir() returns an iterator as opposed
 # to a list when called:
 
-______ os
-entries = os.scandir('my_directory/')
+______ __
+entries = __.scandir('my_directory/')
 print(entries)
 
 # <posix.ScandirIterator object at 0x7f5b047f3690>
@@ -12,9 +12,9 @@ print(entries)
 # The ScandirIterator points to all the entries in the current directory. You can loop over the contents
 # of the iterator and print out the filenames:
 #
-______ os
+______ __
 
-with os.scandir('my_directory/') as entries:
+w__ __.scandir('my_directory/') __ entries:
     ___ entry __ entries:
         print(entry.name)
 

@@ -1,5 +1,5 @@
-def scanner(name, function):
-    file = open(name, 'r')               # create a file object
+___ scanner(name, function):
+    file = o..(name, 'r')               # create a file object
     while True:
         line = file.readline()           # call file methods
         if not line: break               # until end-of-file

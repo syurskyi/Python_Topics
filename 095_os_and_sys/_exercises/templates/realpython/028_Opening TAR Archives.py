@@ -5,7 +5,7 @@
 
 ______ tarfile
 
-with tarfile.open('example.tar', 'r') as tar_file:
+w__ tarfile.o..('example.tar', 'r') __ tar_file:
     print(tar_file.getnames())
 
 # tarfile objects open like most file-like objects. They have an open() function that takes a mode
@@ -30,7 +30,7 @@ with tarfile.open('example.tar', 'r') as tar_file:
 ______ tarfile
 ______ time
 
-tar = tarfile.open('example.tar', mode='r')
+tar = tarfile.o..('example.tar', mode='r')
 tar.getnames()
 # ['CONTRIBUTING.rst', 'README.md', 'app.py']
 #

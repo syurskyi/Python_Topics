@@ -12,10 +12,10 @@ os.listdir() calls in dirdiff.comparedirs() by passing results here along.
 ################################################################################
 """
 
-______ os, dirdiff
+______ __, dirdiff
 blocksize = 1024 * 1024              # up to 1M per read
 
-def intersect(seq1, seq2):
+___ intersect(seq1, seq2):
     """
     Return all items in both seq1 and seq2;
     a set(seq1) & set(seq2) woud work too, but sets are randomly 
@@ -23,7 +23,7 @@ def intersect(seq1, seq2):
     """
     return [item ___ item __ seq1 if item __ seq2]
 
-def comparetrees(dir1, dir2, diffs, verbose=False):
+___ comparetrees(dir1, dir2, diffs, verbose=False):
     """
     Compare all subdirectories and files in two directory trees;
     uses binary files to prevent Unicode decoding and endline transforms,
@@ -32,8 +32,8 @@ def comparetrees(dir1, dir2, diffs, verbose=False):
     """
     # compare file name lists
     print('-' * 20)
-    names1 = os.listdir(dir1)
-    names2 = os.listdir(dir2)
+    names1 = __.listdir(dir1)
+    names2 = __.listdir(dir2)
     if not dirdiff.comparedirs(dir1, dir2, names1, names2):
         diffs.append('unique files at %s - %s' % (dir1, dir2))
 
@@ -43,12 +43,12 @@ def comparetrees(dir1, dir2, diffs, verbose=False):
 
     # compare contents of files in common
     ___ name __ common:
-        path1 = os.path.join(dir1, name)
-        path2 = os.path.join(dir2, name)
-        if os.path.isfile(path1) and os.path.isfile(path2):
+        path1 = __.path.join(dir1, name)
+        path2 = __.path.join(dir2, name)
+        if __.path.isfile(path1) and __.path.isfile(path2):
             missed.remove(name)
-            file1 = open(path1, 'rb')
-            file2 = open(path2, 'rb')
+            file1 = o..(path1, 'rb')
+            file2 = o..(path2, 'rb')
             while True:
                 bytes1 = file1.read(blocksize)
                 bytes2 = file2.read(blocksize)
@@ -62,9 +62,9 @@ def comparetrees(dir1, dir2, diffs, verbose=False):
 
     # recur to compare directories in common
     ___ name __ common:
-        path1 = os.path.join(dir1, name)
-        path2 = os.path.join(dir2, name)
-        if os.path.isdir(path1) and os.path.isdir(path2):
+        path1 = __.path.join(dir1, name)
+        path2 = __.path.join(dir2, name)
+        if __.path.isdir(path1) and __.path.isdir(path2):
             missed.remove(name)
             comparetrees(path1, path2, diffs, verbose)
 

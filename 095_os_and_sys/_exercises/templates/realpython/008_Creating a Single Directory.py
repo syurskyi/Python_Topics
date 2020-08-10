@@ -30,7 +30,7 @@ from pathlib ______ Path
 p = Path('example_directory')
 try:
     p.mkdir()
-except FileExistsError as exc:
+except FileExistsError __ exc:
     print(exc)
 
 # Alternatively, you can ignore the FileExistsError by passing the exist_ok=True argument to .mkdir():

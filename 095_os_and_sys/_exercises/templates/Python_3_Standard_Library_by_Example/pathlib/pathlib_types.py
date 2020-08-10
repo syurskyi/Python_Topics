@@ -9,7 +9,7 @@
 
 #end_pymotw_header
 ______ itertools
-______ os
+______ __
 ______ pathlib
 
 root = pathlib.Path('test_files')
@@ -25,7 +25,7 @@ else:
 (root / 'file').write_text(
     'This is a regular file', encoding='utf-8')
 (root / 'symlink').symlink_to('file')
-os.mkfifo(str(root / 'fifo'))
+__.mkfifo(str(root / 'fifo'))
 
 # Check the file types
 to_scan = itertools.chain(

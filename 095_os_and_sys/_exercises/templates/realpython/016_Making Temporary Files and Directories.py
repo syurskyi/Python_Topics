@@ -4,7 +4,7 @@
 #
 # Here’s how to create a temporary file:
 #
-______ os
+______ __
 from tempfile ______ TemporaryFile
 
 # Create a temporary file and write some data to it
@@ -33,7 +33,7 @@ fp.close()
 # with the with statement. Using a context manager takes care of closing and deleting the file automatically after it
 # has been read:
 
-with TemporaryFile('w+t') as fp:
+w__ TemporaryFile('w+t') __ fp:
     fp.write('Hello universe!')
     fp.seek(0)
     fp.read()
@@ -44,9 +44,9 @@ with TemporaryFile('w+t') as fp:
 # tempfile can also be used to create temporary directories. Let’s look at how you can do this using tempfile.TemporaryDirectory():
 
 ______ tempfile
-with tempfile.TemporaryDirectory() as tmpdir:
+w__ tempfile.TemporaryDirectory() __ tmpdir:
     print('Created temporary directory ', tmpdir)
-    os.path.exists(tmpdir)
+    __.path.exists(tmpdir)
 
 
 # Created temporary directory  /tmp/tmpoxbkrm6c

@@ -3,7 +3,7 @@
 ______ zipfile
 
 file_list = ['file1.py', 'sub_dir/', 'sub_dir/bar.py', 'sub_dir/foo.py']
-with zipfile.ZipFile('new.zip', 'w') as new_zip:
+w__ zipfile.ZipFile('new.zip', 'w') __ new_zip:
     ___ name __ file_list:
         new_zip.write(name)
 
@@ -14,7 +14,7 @@ with zipfile.ZipFile('new.zip', 'w') as new_zip:
 # To add files to an existing archive, open a ZipFile object in append mode and then add the files:
 #
 # Open a ZipFile object in append mode
-with zipfile.ZipFile('new.zip', 'a') as new_zip:
+w__ zipfile.ZipFile('new.zip', 'a') __ new_zip:
     new_zip.write('data.txt')
     new_zip.write('latin.txt')
 

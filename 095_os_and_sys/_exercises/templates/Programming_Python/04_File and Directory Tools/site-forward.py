@@ -7,7 +7,7 @@ uploads in scripts either after or during page file creation.
 ################################################################################
 """
 
-______ os
+______ __
 servername   = 'learning-python.com'     # where site is relocating to
 homedir      = 'books'                   # where site will be rooted
 sitefilesdir = r'C:\temp\public_html'    # where site files live locally
@@ -15,22 +15,22 @@ uploaddir    = r'C:\temp\isp-forward'    # where to store forward files
 templatename = 'template.html'           # template for generated pages
 
 try:
-    os.mkdir(uploaddir)                  # make upload dir if needed
+    __.mkdir(uploaddir)                  # make upload dir if needed
 except OSError: pass
 
-template  = open(templatename).read()    # load or ______ template text
-sitefiles = os.listdir(sitefilesdir)     # filenames, no directory prefix
+template  = o..(templatename).read()    # load or ______ template text
+sitefiles = __.listdir(sitefilesdir)     # filenames, no directory prefix
 
 count = 0
 ___ filename __ sitefiles:
     if filename.endswith('.html') or filename.endswith('.htm'):
-        fwdname = os.path.join(uploaddir, filename)
+        fwdname = __.path.join(uploaddir, filename)
         print('creating', filename, 'as', fwdname)
 
         filetext = template.replace('$server$', servername)   # insert text
         filetext = filetext.replace('$home$',   homedir)      # and write
         filetext = filetext.replace('$file$',   filename)     # file varies
-        open(fwdname, 'w').write(filetext)
+        o..(fwdname, 'w').write(filetext)
         count += 1
 
 print('Last file =>\n', filetext, sep='')

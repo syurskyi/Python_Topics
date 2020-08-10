@@ -1,8 +1,8 @@
 # Python includes os.rename(src, dst) for renaming files and directories:
 
-______ os
+______ __
 
-os.rename('first.zip', 'first_01.zip')
+__.rename('first.zip', 'first_01.zip')
 
 # The line above will rename first.zip to first_01.zip. If the destination path points to a directory, it will raise an OSError.
 #

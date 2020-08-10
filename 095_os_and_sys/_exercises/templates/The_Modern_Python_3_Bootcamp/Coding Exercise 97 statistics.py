@@ -1,8 +1,8 @@
 # Statistic Exercise Solution
 
 
-def statistics(file_name):
-    with open(file_name) as file:
+___ statistics(file_name):
+    w__ o..(file_name) __ file:
         lines = file.readlines()
 
     return {"lines": len(lines),

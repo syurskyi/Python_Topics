@@ -8,9 +8,9 @@ extension that does the latter by comparing .read() results.
 ################################################################################
 """
 
-______ os, sys
+______ __, sys
 
-def reportdiffs(unique1, unique2, dir1, dir2):
+___ reportdiffs(unique1, unique2, dir1, dir2):
     """
     Generate diffs report for one dir: part of comparedirs output
     """
@@ -26,7 +26,7 @@ def reportdiffs(unique1, unique2, dir1, dir2):
             ___ file __ unique2:
                 print('...', file)
 
-def difference(seq1, seq2):
+___ difference(seq1, seq2):
     """
     Return all items in seq1 only;
     a set(seq1) - set(seq2) would work too, but sets are randomly 
@@ -35,20 +35,20 @@ def difference(seq1, seq2):
     return [item ___ item __ seq1 if item not __ seq2]
 
 
-def comparedirs(dir1, dir2, files1=None, files2=None):
+___ comparedirs(dir1, dir2, files1=None, files2=None):
     """
     Compare directory contents, but not actual files;
     may need bytes listdir arg for undecodable filenames on some platforms
     """
     print('Comparing', dir1, 'to', dir2)
-    files1  = os.listdir(dir1) if files1 is None else files1
-    files2  = os.listdir(dir2) if files2 is None else files2
+    files1  = __.listdir(dir1) if files1 is None else files1
+    files2  = __.listdir(dir2) if files2 is None else files2
     unique1 = difference(files1, files2)
     unique2 = difference(files2, files1)
     reportdiffs(unique1, unique2, dir1, dir2)
     return not (unique1 or unique2)               # true if no diffs
 
-def getargs():
+___ getargs():
     "Args for command-line mode"
     try:
         dir1, dir2 = sys.argv[1:]                 # 2 command-line args

@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ sys
 ______ time
 
@@ -12,7 +12,7 @@ if len(sys.argv) == 1:
 else:
     filename = sys.argv[1]
 
-stat_info = os.stat(filename)
+stat_info = __.stat(filename)
 
 print('os.stat({}):'.f..(filename))
 print('  Size:', stat_info.st_size)

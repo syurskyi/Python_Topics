@@ -3,13 +3,13 @@ Find the largest Python source file in a single directory.
 Search Windows Python source lib, unless dir command-line arg.
 """
 
-______ os, g__, sys
+______ __, g__, sys
 dirname = r'C:\Python31\Lib' if len(sys.argv) == 1 else sys.argv[1]
 
 allsizes = []
-allpy = g__.g__(dirname + os.sep + '*.py')
+allpy = g__.g__(dirname + __.sep + '*.py')
 ___ filename __ allpy:
-    filesize = os.path.getsize(filename)
+    filesize = __.path.getsize(filename)
     allsizes.append((filesize, filename))
 
 allsizes.sort()

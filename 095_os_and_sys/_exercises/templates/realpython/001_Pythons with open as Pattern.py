@@ -2,13 +2,13 @@
 # the appropriate mode. Here’s an example of how to use Python’s “with open(…) as …” pattern to open a text file
 # and read its contents:
 #
-with open('data.txt', 'r') as f:
+w__ o..('data.txt', 'r') __ f:
     data = f.read()
 #
 # open() takes a filename and a mode as its arguments. r opens the file in read only mode. To write data to a file,
 # pass in w as an argument instead:
 #
-with open('data.txt', 'w') as f:
+w__ o..('data.txt', 'w') __ f:
     data = 'some data to be written to the file'
     f.write(data)
 #

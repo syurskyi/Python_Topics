@@ -3,13 +3,13 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ sys
 ______ time
 
 ___ i __ range(2):
-    print('PARENT {}: Forking {}'.f..(os.getpid(), i))
-    worker_pid = os.fork()
+    print('PARENT {}: Forking {}'.f..(__.getpid(), i))
+    worker_pid = __.fork()
     if not worker_pid:
         print('WORKER {}: Starting'.f..(i))
         time.sleep(2 + i)
@@ -18,5 +18,5 @@ ___ i __ range(2):
 
 ___ i __ range(2):
     print('PARENT: Waiting for {}'.f..(i))
-    done = os.wait()
+    done = __.wait()
     print('PARENT: Child done:', done)

@@ -3,18 +3,18 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 
 TEST_GID = 502
 TEST_UID = 502
 
 
-def show_user_info():
+___ show_user_info():
     print('User (actual/effective)  : {} / {}'.f..(
-        os.getuid(), os.geteuid()))
+        __.getuid(), __.geteuid()))
     print('Group (actual/effective) : {} / {}'.f..(
-        os.getgid(), os.getegid()))
-    print('Actual Groups   :', os.getgroups())
+        __.getgid(), __.getegid()))
+    print('Actual Groups   :', __.getgroups())
 
 
 print('BEFORE CHANGE:')
@@ -22,7 +22,7 @@ show_user_info()
 print()
 
 try:
-    os.setegid(TEST_GID)
+    __.setegid(TEST_GID)
 except OSError:
     print('ERROR: Could not change effective group. '
           'Rerun as root.')
@@ -32,7 +32,7 @@ else:
     print()
 
 try:
-    os.seteuid(TEST_UID)
+    __.seteuid(TEST_UID)
 except OSError:
     print('ERROR: Could not change effective user. '
           'Rerun as root.')

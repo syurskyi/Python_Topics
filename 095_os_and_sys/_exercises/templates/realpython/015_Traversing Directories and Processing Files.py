@@ -22,8 +22,8 @@
 # os.walk() defaults to traversing directories in a top-down manner:
 # # Walking a directory tree and printing the names of the directories and files
 
-______ os
-___ dirpath, dirnames, files __ os.walk('.'):
+______ __
+___ dirpath, dirnames, files __ __.walk('.'):
     print(f'Found directory: {dirpath}')
     ___ file_name __ files:
         print(file_name)
@@ -49,7 +49,7 @@ ___ dirpath, dirnames, files __ os.walk('.'):
 #
 # To traverse the directory tree in a bottom-up manner, pass in a topdown=False keyword argument to os.walk():
 
-___ dirpath, dirnames, files __ os.walk('.', topdown=False):
+___ dirpath, dirnames, files __ __.walk('.', topdown=False):
     print(f'Found directory: {dirpath}')
     ___ file_name __ files:
         print(file_name)

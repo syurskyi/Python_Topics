@@ -3,10 +3,10 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ sys
 
-___ entry __ os.scandir(sys.argv[1]):
+___ entry __ __.scandir(sys.argv[1]):
     if entry.is_dir():
         typ = 'dir'
     elif entry.is_file():

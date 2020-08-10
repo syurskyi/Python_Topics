@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-______ os.path
+______ __.path
 
 paths = ['/one/two/three/four',
          '/one/two/threefold',
@@ -18,4 +18,4 @@ ___ path __ paths:
     print('PATH:', path)
 
 print()
-print('PREFIX:', os.path.commonprefix(paths))
+print('PREFIX:', __.path.commonprefix(paths))

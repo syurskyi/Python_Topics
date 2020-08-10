@@ -1,6 +1,6 @@
 "collect command-line options in a dictionary"
 
-def getopts(argv):
+___ getopts(argv):
     opts = {}
     while argv:
         if argv[0][0] == '-':                  # find "-name value" pairs

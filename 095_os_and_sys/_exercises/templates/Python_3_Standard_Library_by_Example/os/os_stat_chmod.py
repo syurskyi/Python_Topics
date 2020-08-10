@@ -3,19 +3,19 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ stat
 
 filename = 'os_stat_chmod_example.txt'
-if os.path.exists(filename):
-    os.unlink(filename)
-with open(filename, 'wt') as f:
+if __.path.exists(filename):
+    __.unlink(filename)
+w__ o..(filename, 'wt') __ f:
     f.write('contents')
 
 # Determine what permissions are already set using stat
-existing_permissions = stat.S_IMODE(os.stat(filename).st_mode)
+existing_permissions = stat.S_IMODE(__.stat(filename).st_mode)
 
-if not os.access(filename, os.X_OK):
+if not __.access(filename, __.X_OK):
     print('Adding execute permission')
     new_permissions = existing_permissions | stat.S_IXUSR
 else:
@@ -23,4 +23,4 @@ else:
     # use xor to remove the user execute permission
     new_permissions = existing_permissions ^ stat.S_IXUSR
 
-os.chmod(filename, new_permissions)
+__.chmod(filename, new_permissions)

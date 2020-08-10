@@ -2,12 +2,12 @@
 # and pathlib.Path(). To filter out directories and only list files from a directory listing produced by os.listdir(),
 # use os.path:
 #
-______ os
+______ __
 
 # List all files in a directory using os.listdir
 basepath = 'my_directory/'
-___ entry __ os.listdir(basepath):
-    if os.path.isfile(os.path.join(basepath, entry)):
+___ entry __ __.listdir(basepath):
+    if __.path.isfile(__.path.join(basepath, entry)):
         print(entry)
 
 print()
@@ -22,11 +22,11 @@ print()
 #
 # An easier way to list files in a directory is to use os.scandir() or pathlib.Path():
 #
-______ os
+______ __
 
 # List all files in a directory using scandir()
 basepath = 'my_directory/'
-with os.scandir(basepath) as entries:
+w__ __.scandir(basepath) __ entries:
     ___ entry __ entries:
         if entry.is_file():
             print(entry.name)

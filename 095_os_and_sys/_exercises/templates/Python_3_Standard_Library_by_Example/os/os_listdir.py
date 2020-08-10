@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ sys
 
-print(so..(os.listdir(sys.argv[1])))
+print(so..(__.listdir(sys.argv[1])))

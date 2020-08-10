@@ -3,11 +3,11 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 ______ time
 
 print('Calling...')
-os.system('date; (sleep 3; date) &')
+__.system('date; (sleep 3; date) &')
 
 print('Sleeping...')
 time.sleep(5)

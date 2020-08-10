@@ -1,7 +1,7 @@
 # # -*- coding: utf-8 -*-
 
 try:
-    open("C:\temp\new\file.txt")
+    o..("C:\temp\new\file.txt")
 except F..
     print("Файл отсутствует")
 except IsADirectoryError:

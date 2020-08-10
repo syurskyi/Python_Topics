@@ -8,9 +8,9 @@
 
 
 #end_pymotw_header
-______ os.path
-______ os
+______ __.path
+______ __
 
-os.environ['MYVAR'] = 'VALUE'
+__.environ['MYVAR'] = 'VALUE'
 
-print(os.path.expandvars('/path/to/$MYVAR'))
+print(__.path.expandvars('/path/to/$MYVAR'))

@@ -8,22 +8,22 @@
 
 
 #end_pymotw_header
-______ os.path
+______ __.path
 
 FILENAMES = [
     __file__,
-    os.path.dirname(__file__),
+    __.path.dirname(__file__),
     '/',
     './broken_link',
 ]
 
 ___ file __ FILENAMES:
     print('File        : {!r}'.f..(file))
-    print('Absolute    :', os.path.isabs(file))
-    print('Is File?    :', os.path.isfile(file))
-    print('Is Dir?     :', os.path.isdir(file))
-    print('Is Link?    :', os.path.islink(file))
-    print('Mountpoint? :', os.path.ismount(file))
-    print('Exists?     :', os.path.exists(file))
-    print('Link Exists?:', os.path.lexists(file))
+    print('Absolute    :', __.path.isabs(file))
+    print('Is File?    :', __.path.isfile(file))
+    print('Is Dir?     :', __.path.isdir(file))
+    print('Is Link?    :', __.path.islink(file))
+    print('Mountpoint? :', __.path.ismount(file))
+    print('Exists?     :', __.path.exists(file))
+    print('Link Exists?:', __.path.lexists(file))
     print()

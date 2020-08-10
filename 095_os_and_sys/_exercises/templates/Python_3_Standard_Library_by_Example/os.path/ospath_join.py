@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-______ os.path
+______ __.path
 
 PATHS = [
     ('one', 'two', 'three'),
@@ -17,4 +17,4 @@ PATHS = [
 ]
 
 ___ parts __ PATHS:
-    print('{} : {!r}'.f..(parts, os.path.join(*parts)))
+    print('{} : {!r}'.f..(parts, __.path.join(*parts)))

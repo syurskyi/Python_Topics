@@ -1,6 +1,6 @@
 "read numbers till eof and show squares"
 
-def interact():
+___ interact():
     print('Hello stream world')                     # print sends to sys.stdout
     while True:
         try:

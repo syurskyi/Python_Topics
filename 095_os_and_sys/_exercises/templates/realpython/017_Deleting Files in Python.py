@@ -1,30 +1,30 @@
 # To delete a single file, use pathlib.Path.unlink(), os.remove(). or os.unlink().
 # os.remove() and os.unlink() are semantically identical. To delete a file using os.remove(), do the following:
 
-______ os
+______ __
 
 data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
-os.remove(data_file)
+__.remove(data_file)
 
 # Deleting a file using os.unlink() is similar to how you do it using os.remove():
 
-______ os
+______ __
 
 data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
-os.unlink(data_file)
+__.unlink(data_file)
 
 # Calling .unlink() or .remove() on a file deletes the file from the filesystem. These two functions will throw
 # an OSError if the path passed to them points to a directory instead of a file. To avoid this, you can either check
 # that what you’re trying to delete is actually a file and only delete it if it is, or you can use exception handling
 # to handle the OSError:
 
-______ os
+______ __
 
 data_file = 'home/data.txt'
 
 # If the file exists, delete it
-if os.path.isfile(data_file):
-    os.remove(data_file)
+if __.path.isfile(data_file):
+    __.remove(data_file)
 else:
     print(f'Error: {data_file} not a valid filename')
 
@@ -32,14 +32,14 @@ else:
 # If data_file points to a folder, an error message is printed to the console.
 # The following example shows how to use exception handling to handle errors when deleting files:
 
-______ os
+______ __
 
 data_file = 'home/data.txt'
 
 # Use exception handling
 try:
-    os.remove(data_file)
-except OSError as e:
+    __.remove(data_file)
+except OSError __ e:
     print(f'Error: {data_file} : {e.strerror}')
 
 # The code above attempts to delete the file first before checking its type. If data_file isn’t actually a file,
@@ -54,7 +54,7 @@ data_file = Path('home/data.txt')
 
 try:
     data_file.unlink()
-except IsADirectoryError as e:
+except IsADirectoryError __ e:
     print(f'Error: {data_file} : {e.strerror}')
 
 # This creates a Path object called data_file that points to a file. Calling .remove() on data_file will

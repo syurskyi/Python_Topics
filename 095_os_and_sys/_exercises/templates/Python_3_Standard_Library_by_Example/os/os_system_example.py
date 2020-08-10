@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 
 # Simple command
-os.system('pwd')
+__.system('pwd')

@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-______ os
+______ __
 
 # Command with shell expansion
-os.system('echo $TMPDIR')
+__.system('echo $TMPDIR')

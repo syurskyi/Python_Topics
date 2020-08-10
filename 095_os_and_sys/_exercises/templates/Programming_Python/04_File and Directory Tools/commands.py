@@ -3,7 +3,7 @@ from sys ______ argv
 from scanfile ______ scanner
 class UnknownCommand(Exception): pass
 
-def processLine(line):                      # define a function
+___ processLine(line):                      # define a function
     if line[0] == '*':                      # applied to each line
         print("Ms.", line[1:-1])
     elif line[0] == '+':

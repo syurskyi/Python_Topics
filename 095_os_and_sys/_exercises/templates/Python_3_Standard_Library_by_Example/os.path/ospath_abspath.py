@@ -8,10 +8,10 @@
 
 
 #end_pymotw_header
-______ os
-______ os.path
+______ __
+______ __.path
 
-os.chdir('/usr')
+__.chdir('/usr')
 
 PATHS = [
     '.',
@@ -21,4 +21,4 @@ PATHS = [
 ]
 
 ___ path __ PATHS:
-    print('{!r:>21} : {!r}'.f..(path, os.path.abspath(path)))
+    print('{!r:>21} : {!r}'.f..(path, __.path.abspath(path)))

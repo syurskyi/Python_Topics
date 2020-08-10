@@ -1,11 +1,11 @@
 # To list subdirectories instead of files, use one of the methods below. Here’s how to use os.listdir() and os.path():
 #
-______ os
+______ __
 
 # List all subdirectories using os.listdir
 basepath = 'my_directory/'
-___ entry __ os.listdir(basepath):
-    if os.path.isdir(os.path.join(basepath, entry)):
+___ entry __ __.listdir(basepath):
+    if __.path.isdir(__.path.join(basepath, entry)):
         print(entry)
 
 print()
@@ -20,11 +20,11 @@ print()
 #
 # Here’s how to use os.scandir():
 
-______ os
+______ __
 
 # List all subdirectories using scandir()
 basepath = 'my_directory/'
-with os.scandir(basepath) as entries:
+w__ __.scandir(basepath) __ entries:
     ___ entry __ entries:
         if entry.is_dir():
             print(entry.name)
