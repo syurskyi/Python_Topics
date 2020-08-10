@@ -24,7 +24,7 @@ ______ __
 
 # List all subdirectories using scandir()
 basepath _ 'my_directory/'
-w__ __.scandir(basepath) __ entries:
+w__ __.s_d_(basepath) __ entries:
     ___ entry __ entries:
         __ entry.is_dir():
             print(entry.name)

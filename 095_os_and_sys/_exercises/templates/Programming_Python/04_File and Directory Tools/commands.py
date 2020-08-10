@@ -6,7 +6,7 @@ class UnknownCommand(Exception): pass
 ___ processLine(line):                      # define a function
     __ line[0] == '*':                      # applied to each line
         print("Ms.", line[1:-1])
-    elif line[0] == '+':
+    ____ line[0] == '+':
         print("Mr.", line[1:-1])            # strip first and last char: \n
     ____
         raise UnknownCommand(line)          # raise an exception

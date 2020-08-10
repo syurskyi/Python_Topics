@@ -4,7 +4,7 @@
 # to a list when called:
 
 ______ __
-entries _ __.scandir('my_directory/')
+entries _ __.s_d_('my_directory/')
 print(entries)
 
 # <posix.ScandirIterator object at 0x7f5b047f3690>
@@ -14,7 +14,7 @@ print(entries)
 #
 ______ __
 
-w__ __.scandir('my_directory/') __ entries:
+w__ __.s_d_('my_directory/') __ entries:
     ___ entry __ entries:
         print(entry.name)
 

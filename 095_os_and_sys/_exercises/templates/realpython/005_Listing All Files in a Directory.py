@@ -26,7 +26,7 @@ ______ __
 
 # List all files in a directory using scandir()
 basepath _ 'my_directory/'
-w__ __.scandir(basepath) __ entries:
+w__ __.s_d_(basepath) __ entries:
     ___ entry __ entries:
         __ entry.is_file():
             print(entry.name)

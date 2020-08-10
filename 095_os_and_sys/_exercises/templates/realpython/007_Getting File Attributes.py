@@ -5,7 +5,7 @@
 # The examples below show how to get the time the files in my_directory/ were last modified. The output is in seconds:
 #
 ______ __
-w__ __.scandir('my_directory/') __ dir_contents:
+w__ __.s_d_('my_directory/') __ dir_contents:
     ___ entry __ dir_contents:
         info _ entry.stat()
         print(info.st_mtime)
@@ -49,7 +49,7 @@ print()
 # you could write a helper function to convert the seconds into a datetime object:
 
 from datetime ______ datetime
-from __ ______ scandir
+from __ ______ s_d_
 
 ___ convert_date(timestamp):
     d _ datetime.utcfromtimestamp(timestamp)
@@ -57,7 +57,7 @@ ___ convert_date(timestamp):
     return formated_date
 
 ___ get_files():
-    dir_entries _ scandir('my_directory/')
+    dir_entries _ s_d_('my_directory/')
     ___ entry __ dir_entries:
         __ entry.is_file():
             info _ entry.stat()

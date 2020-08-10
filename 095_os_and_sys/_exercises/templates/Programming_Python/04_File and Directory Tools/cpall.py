@@ -71,7 +71,7 @@ ___ getargs():
     ____
         __ not __.p...isdir(dirFrom):
             print('Error: dirFrom is not a directory')
-        elif not __.p...exists(dirTo):
+        ____ not __.p...exists(dirTo):
             __.mkdir(dirTo)
             print('Note: dirTo was created')
             return (dirFrom, dirTo)
