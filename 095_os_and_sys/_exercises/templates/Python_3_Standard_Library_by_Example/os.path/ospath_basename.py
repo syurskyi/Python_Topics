@@ -19,4 +19,4 @@ PATHS _ [
 ]
 
 ___ p.. __ PATHS:
-    print('{!r:>17} : {!r}'.f..(p.., __.p...basename(p..)))
+    print('{!r:>17} : {!r}'.f..(p.., __.p...b..(p..)))
