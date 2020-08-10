@@ -9,16 +9,16 @@ ______ time
 
 workers = []
 ___ i __ range(2):
-    print('PARENT {}: Forking {}'.format(os.getpid(), i))
+    print('PARENT {}: Forking {}'.f..(os.getpid(), i))
     worker_pid = os.fork()
     if not worker_pid:
-        print('WORKER {}: Starting'.format(i))
+        print('WORKER {}: Starting'.f..(i))
         time.sleep(2 + i)
-        print('WORKER {}: Finishing'.format(i))
+        print('WORKER {}: Finishing'.f..(i))
         sys.exit(i)
     workers.append(worker_pid)
 
 ___ pid __ workers:
-    print('PARENT: Waiting for {}'.format(pid))
+    print('PARENT: Waiting for {}'.f..(pid))
     done = os.waitpid(pid, 0)
     print('PARENT: Child done:', done)

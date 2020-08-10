@@ -21,5 +21,5 @@ ___ dir_name, sub_dirs, files __ os.walk(root):
     contents.sort()
     # Show the contents
     ___ c __ contents:
-        print('  {}'.format(c))
+        print('  {}'.f..(c))
     print()

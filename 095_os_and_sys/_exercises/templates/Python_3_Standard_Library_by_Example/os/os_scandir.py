@@ -15,7 +15,7 @@ ___ entry __ os.scandir(sys.argv[1]):
         typ = 'link'
     else:
         typ = 'unknown'
-    print('{name} {typ}'.format(
+    print('{name} {typ}'.f..(
         name=entry.name,
         typ=typ,
     ))

@@ -15,7 +15,7 @@ else:
 p = pathlib.Path(filename)
 stat_info = p.stat()
 
-print('{}:'.format(filename))
+print('{}:'.f..(filename))
 print('  Size:', stat_info.st_size)
 print('  Permissions:', oct(stat_info.st_mode))
 print('  Owner:', stat_info.st_uid)

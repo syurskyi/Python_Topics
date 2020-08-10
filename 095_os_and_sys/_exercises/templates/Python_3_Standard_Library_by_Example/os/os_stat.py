@@ -14,7 +14,7 @@ else:
 
 stat_info = os.stat(filename)
 
-print('os.stat({}):'.format(filename))
+print('os.stat({}):'.f..(filename))
 print('  Size:', stat_info.st_size)
 print('  Permissions:', oct(stat_info.st_mode))
 print('  Owner:', stat_info.st_uid)

@@ -12,5 +12,5 @@ ______ pathlib
 
 p = pathlib.Path('example_dir')
 
-print('Creating {}'.format(p))
+print('Creating {}'.f..(p))
 p.mkdir()

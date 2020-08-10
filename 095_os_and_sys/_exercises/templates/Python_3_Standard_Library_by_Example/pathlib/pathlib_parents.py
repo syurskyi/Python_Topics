@@ -12,7 +12,7 @@ ______ pathlib
 
 p = pathlib.PurePosixPath('/usr/local/lib')
 
-print('parent: {}'.format(p.parent))
+print('parent: {}'.f..(p.parent))
 
 print('\nhierarchy:')
 ___ up __ p.parents:

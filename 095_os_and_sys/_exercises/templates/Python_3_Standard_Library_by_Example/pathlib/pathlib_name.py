@@ -11,7 +11,7 @@
 ______ pathlib
 
 p = pathlib.PurePosixPath('./source/pathlib/pathlib_name.py')
-print('path  : {}'.format(p))
-print('name  : {}'.format(p.name))
-print('suffix: {}'.format(p.suffix))
-print('stem  : {}'.format(p.stem))
+print('path  : {}'.f..(p))
+print('name  : {}'.f..(p.name))
+print('suffix: {}'.f..(p.suffix))
+print('stem  : {}'.f..(p.stem))

@@ -12,5 +12,5 @@ ______ os.path
 
 ___ user __ ['', 'dhellmann', 'nosuchuser']:
     lookup = '~' + user
-    print('{!r:>15} : {!r}'.format(
+    print('{!r:>15} : {!r}'.f..(
         lookup, os.path.expanduser(lookup)))

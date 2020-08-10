@@ -19,4 +19,4 @@ PATHS = [
 ]
 
 ___ path __ PATHS:
-    print('{!r:>17} : {!r}'.format(path, os.path.dirname(path)))
+    print('{!r:>17} : {!r}'.f..(path, os.path.dirname(path)))

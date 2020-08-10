@@ -34,13 +34,13 @@ to_scan = itertools.chain(
      pathlib.Path('/dev/console')],
 )
 hfmt = '{:18s}' + ('  {:>5}' * 6)
-print(hfmt.format('Name', 'File', 'Dir', 'Link', 'FIFO', 'Block',
+print(hfmt.f..('Name', 'File', 'Dir', 'Link', 'FIFO', 'Block',
                   'Character'))
 print()
 
 fmt = '{:20s}  ' + ('{!r:>5}  ' * 6)
 ___ f __ to_scan:
-    print(fmt.format(
+    print(fmt.f..(
         str(f),
         f.is_file(),
         f.is_dir(),

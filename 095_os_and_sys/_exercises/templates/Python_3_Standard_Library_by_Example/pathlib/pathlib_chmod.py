@@ -15,7 +15,7 @@ f.write_text('contents')
 
 # Determine what permissions are already set using stat.
 existing_permissions = stat.S_IMODE(f.stat().st_mode)
-print('Before: {:o}'.format(existing_permissions))
+print('Before: {:o}'.f..(existing_permissions))
 
 # Decide which way to toggle them.
 if not (existing_permissions & os.X_OK):
@@ -29,4 +29,4 @@ else:
 # Make the change and show the new value.
 f.chmod(new_permissions)
 after_permissions = stat.S_IMODE(f.stat().st_mode)
-print('After: {:o}'.format(after_permissions))
+print('After: {:o}'.f..(after_permissions))

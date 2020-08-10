@@ -17,4 +17,4 @@ PATHS = [
 ]
 
 ___ path __ PATHS:
-    print('{!r:>22} : {!r}'.format(path, os.path.normpath(path)))
+    print('{!r:>22} : {!r}'.f..(path, os.path.normpath(path)))

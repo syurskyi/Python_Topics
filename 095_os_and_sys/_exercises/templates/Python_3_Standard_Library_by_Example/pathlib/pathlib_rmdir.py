@@ -12,5 +12,5 @@ ______ pathlib
 
 p = pathlib.Path('example_dir')
 
-print('Removing {}'.format(p))
+print('Removing {}'.f..(p))
 p.rmdir()

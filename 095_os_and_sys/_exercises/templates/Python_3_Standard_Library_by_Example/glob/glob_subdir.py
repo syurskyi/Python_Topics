@@ -31,8 +31,8 @@ ______ g__
 
 print('Named explicitly:')
 ___ name __ so..(g__.g__('dir/subdir/*')):
-    print('  {}'.format(name))
+    print('  {}'.f..(name))
 
 print('Named with wildcard:')
 ___ name __ so..(g__.g__('dir/*/*')):
-    print('  {}'.format(name))
+    print('  {}'.f..(name))

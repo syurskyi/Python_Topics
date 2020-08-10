@@ -117,7 +117,7 @@ print(str(42), repr(42)) # int to string conversions
 # ######################################################################################################################
 
 print('#' * 52 + 'via formatting expression, method')
-print(("%d" % 42), '{:d}'.format(42)) # via formatting expression, method
+print(("%d" % 42), '{:d}'.f..(42)) # via formatting expression, method
 # ('42', '42')
 # ######################################################################################################################
 

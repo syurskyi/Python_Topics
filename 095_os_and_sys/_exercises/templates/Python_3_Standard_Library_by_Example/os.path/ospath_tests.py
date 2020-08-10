@@ -18,7 +18,7 @@ FILENAMES = [
 ]
 
 ___ file __ FILENAMES:
-    print('File        : {!r}'.format(file))
+    print('File        : {!r}'.f..(file))
     print('Absolute    :', os.path.isabs(file))
     print('Is File?    :', os.path.isfile(file))
     print('Is Dir?     :', os.path.isdir(file))
