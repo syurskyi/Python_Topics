@@ -1,18 +1,17 @@
-#!/usr/bin/env python3
-# encoding: utf-8
+# #!/usr/bin/env python3
+# # encoding: utf-8
+# #
+# #
+# """Find attributes of a file other than its name.
+# """
 #
-# Copyright (c) 2008 Doug Hellmann All rights reserved.
 #
-"""Find attributes of a file other than its name.
-"""
-
-
-#end_pymotw_header
-______ __.p..
-______ ti__
-
-print('File         :',  -f)
-print('Access time  :', ti__.ctime(__.p...getatime( -f)))
-print('Modified time:', ti__.ctime(__.p...getmtime( -f)))
-print('Change time  :', ti__.ctime(__.p...getctime( -f)))
-print('Size         :', __.p...getsize( -f))
+# #end_pymotw_header
+# ______ __.p..
+# ______ ti__
+#
+# print('File         :',  -f)
+# print('Access time  :', ti__.ct.. __.p...g_at.. -f
+# print('Modified time:', ti__.ct.. __.p...g_mt.. -f
+# print('Change time  :', ti__.ct.. __.p...g_ct.. -f
+# print('Size         :', __.p...g_s.. -f
