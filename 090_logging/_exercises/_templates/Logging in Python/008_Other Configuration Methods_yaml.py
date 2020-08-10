@@ -1,7 +1,7 @@
 ______ l____.config
 ______ yaml
 
-with open('config.yaml', 'r') as f:
+with open('config.yaml', 'r') __ f:
     config _ yaml.safe_load(f.read())
     l____.config.dictConfig(config)
 
