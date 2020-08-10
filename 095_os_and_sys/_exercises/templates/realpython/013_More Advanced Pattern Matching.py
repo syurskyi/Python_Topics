@@ -6,10 +6,10 @@
 #
 
 ______ __
-______ fnmatch
+______ f_m_
 
 ___ filename __ __.l_d_('./some_directory'):
-    __ fnmatch.fnmatch(filename, 'data_*_backup.txt'):
+    __ f_m_.f_m_(filename, 'data_*_backup.txt'):
         print(filename)
 
 # Here, you print only the names of files that match the data_*_backup.txt pattern. The asterisk in the pattern
