@@ -1,12 +1,12 @@
-#!/usr/bin/env python3
-"""Show some of the system error messages
-"""
-
-#end_pymotw_header
-______ errno
-______ __
-
-___ num __ [errno.ENOENT, errno.EINTR, errno.EBUSY]:
-    name _ errno.errorcode[num]
-    print('[{num:>2}] {name:<6}: {msg}'.f..(
-        name_name, num_num, msg___.strerror(num)))
+# #!/usr/bin/env python3
+# """Show some of the system error messages
+# """
+#
+# #end_pymotw_header
+# ______ er..
+# ______ __
+#
+# ___ num __ [er__.EN.. er__.EI.. er__.EB..
+#     name _ er__.e_c.. ?
+#     print('||?:>2|| |?:<6|: |?|'.f..
+#         na.. _ na.. n.. _ n.. ms. _ __.s_e.. ?
