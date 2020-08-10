@@ -19,7 +19,7 @@ ___ split(fromfile, todir, chunksize_chunksize):
         __.mkdir(todir)                            # make dir, read/write parts
     ____
         ___ fname __ __.l_d_(todir):            # delete any existing files
-            __.remove(__.p...j..(todir, fname))
+            __.r..(__.p...j..(todir, fname))
     partnum _ 0
     input _ o..(fromfile, 'rb')                   # use binary mode on Windows
     while True:                                    # eof=empty string from read

@@ -46,7 +46,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
         path1 _ __.p...j..(dir1, name)
         path2 _ __.p...j..(dir2, name)
         __ __.p...i_f_(path1) and __.p...i_f_(path2):
-            missed.remove(name)
+            missed.r..(name)
             file1 _ o..(path1, 'rb')
             file2 _ o..(path2, 'rb')
             while True:
@@ -65,7 +65,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
         path1 _ __.p...j..(dir1, name)
         path2 _ __.p...j..(dir2, name)
         __ __.p...isdir(path1) and __.p...isdir(path2):
-            missed.remove(name)
+            missed.r..(name)
             comparetrees(path1, path2, diffs, verbose)
 
     # same name but not both files or dirs?
