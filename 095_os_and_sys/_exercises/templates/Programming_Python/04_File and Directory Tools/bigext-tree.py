@@ -9,8 +9,8 @@ ______ __, pprint
 from ___ ______ a.., exc_info
 
 trace _ 1                                    # 0=off, 1=dirs, 2=+files
-dirname, extname _ __.curdir, '.py'          # default is .py files in cwd
-__ le.(a..) > 1: dirname _ a..[1]          # ex: C:\, C:\Python31\Lib
+d.., extname _ __.curdir, '.py'          # default is .py files in cwd
+__ le.(a..) > 1: d.. _ a..[1]          # ex: C:\, C:\Python31\Lib
 __ le.(a..) > 2: extname _ a..[2]          # ex: .pyw, .txt
 __ le.(a..) > 3: trace   _ int(a..[3])     # ex: ". .py 2"
 
@@ -22,7 +22,7 @@ ___ tryprint(arg):
  
 visited  _ set()
 allsizes _ []
-___ (thisDir, subsHere, filesHere) __ __.w..(dirname):
+___ (thisDir, subsHere, filesHere) __ __.w..(d..):
     __ trace: tryprint(thisDir)
     thisDir _ __.p...normpath(thisDir)
     fixname _ __.p...normcase(thisDir)

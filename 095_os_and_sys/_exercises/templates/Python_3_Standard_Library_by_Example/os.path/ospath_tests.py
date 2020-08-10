@@ -12,7 +12,7 @@ ______ __.p..
 
 FILENAMES _ [
      -f,
-    __.p...dirname( -f),
+    __.p...d..( -f),
     '/',
     './broken_link',
 ]

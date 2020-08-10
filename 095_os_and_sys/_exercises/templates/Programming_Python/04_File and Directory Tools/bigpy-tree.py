@@ -6,12 +6,12 @@ Search the Python source lib, use pprint to display results nicely.
 ______ ___, __, pprint
 trace _ False
 __ ___.platform.startswith('win'):
-    dirname _ r'C:\Python31\Lib'                 # Windows
+    d.. _ r'C:\Python31\Lib'                 # Windows
 ____
-    dirname _ '/usr/lib/python'                  # Unix, Linux, Cygwin
+    d.. _ '/usr/lib/python'                  # Unix, Linux, Cygwin
 
 allsizes _ []
-___ (thisDir, subsHere, filesHere) __ __.w..(dirname):
+___ (thisDir, subsHere, filesHere) __ __.w..(d..):
     __ trace: print(thisDir)
     ___ filename __ filesHere:
         __ filename.endswith('.py'):
