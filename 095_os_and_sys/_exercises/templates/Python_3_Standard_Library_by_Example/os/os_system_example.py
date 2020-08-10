@@ -6,4 +6,4 @@
 ______ __
 
 # Simple command
-__.system('pwd')
+__.sy..('pwd')

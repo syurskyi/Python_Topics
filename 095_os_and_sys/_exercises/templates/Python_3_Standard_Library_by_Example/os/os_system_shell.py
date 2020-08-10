@@ -6,4 +6,4 @@
 ______ __
 
 # Command with shell expansion
-__.system('echo $TMPDIR')
+__.sy..('echo $TMPDIR')

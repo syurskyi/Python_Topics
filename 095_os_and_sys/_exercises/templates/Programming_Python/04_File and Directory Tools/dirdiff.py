@@ -35,14 +35,14 @@ ___ difference(seq1, seq2):
     return [item ___ item __ seq1 if item not __ seq2]
 
 
-___ comparedirs(dir1, dir2, files1=None, files2=None):
+___ comparedirs(dir1, dir2, files1=N.., files2=N..):
     """
     Compare directory contents, but not actual files;
     may need bytes listdir arg for undecodable filenames on some platforms
     """
     print('Comparing', dir1, 'to', dir2)
-    files1  = __.listdir(dir1) if files1 is None else files1
-    files2  = __.listdir(dir2) if files2 is None else files2
+    files1  = __.listdir(dir1) if files1 is N.. else files1
+    files2  = __.listdir(dir2) if files2 is N.. else files2
     unique1 = difference(files1, files2)
     unique2 = difference(files2, files1)
     reportdiffs(unique1, unique2, dir1, dir2)

@@ -11,6 +11,6 @@
 ______ __.p..
 ______ __
 
-__.environ['MYVAR'] = 'VALUE'
+__.en..['MYVAR'] = 'VALUE'
 
 print(__.p...expandvars('/path/to/$MYVAR'))

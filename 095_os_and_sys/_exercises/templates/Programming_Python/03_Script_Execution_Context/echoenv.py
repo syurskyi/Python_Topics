@@ -1,3 +1,3 @@
 ______ __
 print('echoenv...', end=' ')
-print('Hello,', __.environ['USER'])
+print('Hello,', __.en..['USER'])

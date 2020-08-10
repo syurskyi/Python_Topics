@@ -7,7 +7,7 @@ ______ __
 ______ time
 
 print('Calling...')
-__.system('date; (sleep 3; date) &')
+__.sy..('date; (sleep 3; date) &')
 
 print('Sleeping...')
 time.sleep(5)

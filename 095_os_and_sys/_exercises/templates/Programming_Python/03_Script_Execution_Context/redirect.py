@@ -17,8 +17,8 @@ class Output:                                   # simulated output file
 class Input:                                    # simulated input file
     ___ __init__(self, input=''):               # default argument
         self.text = input                       # save string when created
-    ___ read(self, size=None):                  # optional argument
-        if size == None:                        # read N bytes, or all
+    ___ read(self, size=N..):                  # optional argument
+        if size == N..:                        # read N bytes, or all
             res, self.text = self.text, ''
         else:
             res, self.text = self.text[:size], self.text[size:]
