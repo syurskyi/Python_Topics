@@ -20,7 +20,7 @@ ___ getListOfFiles(dirName):
         ____
             allFiles.append(fullPath)
 
-    return allFiles
+    r_ allFiles
 
 
 ___ main():

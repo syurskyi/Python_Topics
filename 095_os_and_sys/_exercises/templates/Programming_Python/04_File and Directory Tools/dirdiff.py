@@ -32,7 +32,7 @@ ___ difference(seq1, seq2):
     a set(seq1) - set(seq2) would work too, but sets are randomly 
     ordered, so any platform-dependent directory order would be lost
     """
-    return [item ___ item __ seq1 __ item no. __ seq2]
+    r_ [item ___ item __ seq1 __ item no. __ seq2]
 
 
 ___ comparedirs(dir1, dir2, files1_N.., files2_N..):
@@ -46,7 +46,7 @@ ___ comparedirs(dir1, dir2, files1_N.., files2_N..):
     unique1 _ difference(files1, files2)
     unique2 _ difference(files2, files1)
     reportdiffs(unique1, unique2, dir1, dir2)
-    return no. (unique1 or unique2)               # true if no diffs
+    r_ no. (unique1 or unique2)               # true if no diffs
 
 ___ getargs():
     "Args for command-line mode"
@@ -56,7 +56,7 @@ ___ getargs():
         print('Usage: dirdiff.py dir1 dir2')
         ___.exit(1)
     ____
-        return (dir1, dir2)
+        r_ (dir1, dir2)
 
 __ __name__ __ '__main__':
     dir1, dir2 _ getargs()

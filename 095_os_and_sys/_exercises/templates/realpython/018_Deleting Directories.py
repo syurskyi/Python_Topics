@@ -26,7 +26,7 @@ ______ O.. __ e:
 #
 # Alternatively, you can use pathlib to delete directories:
 
-from pathlib ______ P..
+____ pathlib ______ P..
 
 trash_dir _ P..('my_documents/bad_dir')
 

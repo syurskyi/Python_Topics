@@ -8,10 +8,10 @@ ___ getopts(a..):
             a.. _ a..[2:]
         ____
             a.. _ a..[1:]
-    return opts
+    r_ opts
 
 __ __name__ __ '__main__':
-    from ___ ______ a..                       # example client code
+    ____ ___ ______ a..                       # example client code
     myargs _ getopts(a..)
     __ '-i' __ myargs:
         print(myargs['-i'])

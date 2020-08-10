@@ -22,14 +22,14 @@ class Input:                                    # simulated input file
             res, self.text _ self.text, ''
         ____
             res, self.text _ self.text[:size], self.text[size:]
-        return res
+        r_ res
     ___ readline(self):
         eoln _ self.text.find('\n')             # find offset of next eoln
         __ eoln __ -1:                          # slice off through eoln
             res, self.text _ self.text, ''
         ____
             res, self.text _ self.text[:eoln+1], self.text[eoln+1:]
-        return res
+        r_ res
 
 ___ redirect(function, pargs, kargs, input):    # redirect stdin/out
     savestreams _ ___.stdin, ___.stdout         # run a function object
@@ -40,4 +40,4 @@ ___ redirect(function, pargs, kargs, input):    # redirect stdin/out
         output _ ___.stdout.text
     finally:
         ___.stdin, ___.stdout _ savestreams     # restore if exc or not
-    return (result, output)                     # return result if no exc
+    r_ (result, output)                     # return result if no exc

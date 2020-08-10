@@ -2,6 +2,6 @@ ______ json
 
 
 ___ dict_to_json(d):
-    return json.dumps(d)
+    r_ json.dumps(d)
 
 print(f'json_operations is {__name__}')

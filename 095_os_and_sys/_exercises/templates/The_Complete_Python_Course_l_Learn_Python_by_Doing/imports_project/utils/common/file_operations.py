@@ -1,4 +1,4 @@
-from ..json_operations ______ dict_to_json
+____ ..json_operations ______ dict_to_json
 
 
 ___ save_to_file(content, filename):
@@ -8,6 +8,6 @@ ___ save_to_file(content, filename):
 
 ___ read_file(filename):
     w__ o..(filename, 'r') __ file:
-        return file.read()
+        r_ file.read()
 
 print(f'file_operations is {__name__}')#

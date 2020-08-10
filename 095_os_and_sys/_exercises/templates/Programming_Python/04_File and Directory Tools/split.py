@@ -32,7 +32,7 @@ ___ split(fromfile, todir, chunksize_chunksize):
         fileobj.close()                            # or simply open().write()
     input.close()
     assert partnum <_ 9999                         # join sort fails if 5 digits
-    return partnum
+    r_ partnum
 
 __ __name__ __ '__main__':
     __ le.(___.a..) __ 2 and ___.a..[1] __ '-help':

@@ -13,14 +13,14 @@ ___ getreply():
     even if stdin redirected to a file or pipe
     """
     __ ___.stdin.isatty():                       # if stdin is console
-        return input('?')                        # read reply line from stdin
+        r_ input('?')                        # read reply line from stdin
     ____
         __ ___.platform[:3] __ 'win':            # if stdin was redirected
             ______ msvcrt                        # can't use to ask a user
             msvcrt.putch(b'?')
             key _ msvcrt.getche()                # use windows console tools
             msvcrt.putch(b'\n')                  # getch() does not echo key
-            return key
+            r_ key
         ____
             assert False, 'platform not supported'
             #linux?: open('/dev/tty').readline()[:-1]

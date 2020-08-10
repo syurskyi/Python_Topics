@@ -58,7 +58,7 @@ ___ copytree(dirFrom, dirTo, verbose_0):
             ______:
                 print('Error creating', pathTo, '--skipped')
                 print(___.exc_info()[0], ___.exc_info()[1])
-    return (fcount, dcount)
+    r_ (fcount, dcount)
 
 ___ getargs():
     """
@@ -74,7 +74,7 @@ ___ getargs():
         ____ no. __.p...e..(dirTo):
             __.mkdir(dirTo)
             print('Note: dirTo was created')
-            return (dirFrom, dirTo)
+            r_ (dirFrom, dirTo)
         ____
             print('Warning: dirTo already exists')
             __ hasattr(__.p.., 'samefile'):
@@ -84,7 +84,7 @@ ___ getargs():
             __ same:
                 print('Error: dirFrom same as dirTo')
             ____
-                return (dirFrom, dirTo)
+                r_ (dirFrom, dirTo)
 
 __ __name__ __ '__main__':
     ______ ti__

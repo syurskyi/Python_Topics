@@ -1,6 +1,6 @@
 #!/usr/local/bin/python
-from ___ ______ a..
-from scanfile ______ scanner
+____ ___ ______ a..
+____ scanfile ______ scanner
 class UnknownCommand(Exception): pass
 
 ___ processLine(line):                      # define a function

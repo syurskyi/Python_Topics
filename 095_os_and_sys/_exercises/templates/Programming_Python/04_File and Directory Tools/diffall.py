@@ -21,7 +21,7 @@ ___ intersect(seq1, seq2):
     a set(seq1) & set(seq2) woud work too, but sets are randomly 
     ordered, so any platform-dependent directory order would be lost
     """
-    return [item ___ item __ seq1 __ item __ seq2]
+    r_ [item ___ item __ seq1 __ item __ seq2]
 
 ___ comparetrees(dir1, dir2, diffs, verbose_False):
     """

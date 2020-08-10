@@ -5,7 +5,7 @@
 # Here’s how to create a temporary file:
 #
 ______ __
-from tempfile ______ TemporaryFile
+____ tempfile ______ TemporaryFile
 
 # Create a temporary file and write some data to it
 fp _ TemporaryFile('w+t')
