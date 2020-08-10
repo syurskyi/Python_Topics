@@ -12,4 +12,4 @@ ___ more(text, numlines_15):
 
 __ __name__ __ '__main__':
     ______ ___                               # when run, not imported
-    more(o..(___.a..[1]).read(), 10)       # page contents of file on cmdline
+    more(o..(___.a..[1]).r.., 10)       # page contents of file on cmdline

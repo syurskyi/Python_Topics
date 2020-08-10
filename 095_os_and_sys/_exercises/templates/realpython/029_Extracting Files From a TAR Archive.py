@@ -44,7 +44,7 @@ __.l_d_('.')
 # to extract as an argument. .extractfile() returns a file-like object that can be read and used:
 
 f _ tar.extractfile('app.py')
-f.read()
+f.r..
 tar.close()
 
 # Opened archives should always be closed after they have been read or written to. To close an archive, call .close()

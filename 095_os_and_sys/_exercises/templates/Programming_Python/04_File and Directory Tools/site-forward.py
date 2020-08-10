@@ -18,7 +18,7 @@ ___
     __.mkdir(uploaddir)                  # make upload dir if needed
 ______ O..: pass
 
-template  _ o..(templatename).read()    # load or ______ template text
+template  _ o..(templatename).r..    # load or ______ template text
 sitefiles _ __.l_d_(sitefilesdir)     # filenames, no directory prefix
 
 count _ 0

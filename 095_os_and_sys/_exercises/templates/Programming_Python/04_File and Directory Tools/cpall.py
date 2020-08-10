@@ -19,7 +19,7 @@ ___ copyfile(pathFrom, pathTo, maxfileload_maxfileload):
     uses binary file modes to supress Unicde decode and endline transform
     """
     __ __.p...getsize(pathFrom) <_ maxfileload:
-        bytesFrom _ o..(pathFrom, 'rb').read()   # read small file all at once
+        bytesFrom _ o..(pathFrom, 'rb').r..   # read small file all at once
         o..(pathTo, 'wb').w..(bytesFrom)
     ____
         fileFrom _ o..(pathFrom, 'rb')           # read big files in chunks

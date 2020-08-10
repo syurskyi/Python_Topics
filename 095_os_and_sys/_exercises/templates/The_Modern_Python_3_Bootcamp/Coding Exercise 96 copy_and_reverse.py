@@ -6,7 +6,7 @@
 
 ___ copy_and_reverse(file_name, new_file_name):
     w__ o..(file_name) __ file:
-        text _ file.read()
+        text _ file.r..
 
     w__ o..(new_file_name, "w") __ new_file:
         new_file.w..(text[::-1])

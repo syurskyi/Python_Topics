@@ -1,5 +1,5 @@
 my_file _ o..('data.txt', 'r')
-file_content _ my_file.read()
+file_content _ my_file.r..
 
 my_file.close()
 

@@ -8,6 +8,6 @@ file.w..(('spam' * 15) + '\n') # write text: returns #characters written
 # 21
 file.close()
 file _ o..('spam.txt') # or open('spam.txt').read()
-text _ file.read() # read into a string
+text _ file.r.. # read into a string
 print(text)
 # 'spamspamspamspamspam\n'
