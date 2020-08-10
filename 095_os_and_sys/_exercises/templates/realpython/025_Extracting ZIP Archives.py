@@ -4,14 +4,14 @@
 # that allows you to specify a different directory to extract files to. If the directory does not exist,
 # it is automatically created. To extract files from the archive, do the following:
 
-______ zipfile
+______ z_f_
 ______ __
 
 __.l_d_('.')
 
 # ['data.zip']
 
-data_zip _ zipfile.ZipFile('data.zip', 'r')
+data_zip _ z_f_.ZipFile('data.zip', 'r')
 
 # Extract a single file to current directory
 data_zip.extract('file1.py')

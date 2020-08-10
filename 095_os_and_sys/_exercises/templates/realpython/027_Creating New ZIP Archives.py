@@ -1,9 +1,9 @@
 # To create a new ZIP archive, you open a ZipFile object in write mode (w) and add the files you want to archive:
 
-______ zipfile
+______ z_f_
 
 file_list _ ['file1.py', 'sub_dir/', 'sub_dir/bar.py', 'sub_dir/foo.py']
-w__ zipfile.ZipFile('new.zip', 'w') __ new_zip:
+w__ z_f_.ZipFile('new.zip', 'w') __ new_zip:
     ___ name __ file_list:
         new_zip.w..(name)
 
@@ -14,7 +14,7 @@ w__ zipfile.ZipFile('new.zip', 'w') __ new_zip:
 # To add files to an existing archive, open a ZipFile object in append mode and then add the files:
 #
 # Open a ZipFile object in append mode
-w__ zipfile.ZipFile('new.zip', 'a') __ new_zip:
+w__ z_f_.ZipFile('new.zip', 'a') __ new_zip:
     new_zip.w..('data.txt')
     new_zip.w..('latin.txt')
 
