@@ -3,10 +3,10 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 ______ ti__
 
-p _ pathlib.P..('touched')
+p _ p_l_.P..('touched')
 __ p.e..():
     print('already exists')
 ____

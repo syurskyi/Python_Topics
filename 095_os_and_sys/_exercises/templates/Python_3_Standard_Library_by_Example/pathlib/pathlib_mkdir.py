@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.P..('example_dir')
+p _ p_l_.P..('example_dir')
 
 print('Creating @'.f..(p))
 p.mkdir()

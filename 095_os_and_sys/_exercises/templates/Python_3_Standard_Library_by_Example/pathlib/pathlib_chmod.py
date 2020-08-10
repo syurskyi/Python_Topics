@@ -4,11 +4,11 @@
 
 #end_pymotw_header
 ______ __
-______ pathlib
+______ p_l_
 ______ s..
 
 # Create a fresh test file.
-f _ pathlib.P..('pathlib_chmod_example.txt')
+f _ p_l_.P..('pathlib_chmod_example.txt')
 __ f.e..():
     f.u..()
 f.write_text('contents')

@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.P..('example_link')
+p _ p_l_.P..('example_link')
 
 p.symlink_to('index.rst')
 

@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.P..('..')
+p _ p_l_.P..('..')
 
 ___ f __ p.g__('*.rst'):
     print(f)

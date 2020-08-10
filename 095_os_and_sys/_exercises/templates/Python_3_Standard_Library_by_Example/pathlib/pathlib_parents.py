@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.PurePosixPath('/usr/local/lib')
+p _ p_l_.PurePosixPath('/usr/local/lib')
 
 print('parent: @'.f..(p.parent))
 

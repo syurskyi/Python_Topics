@@ -3,8 +3,8 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.P..( -f)
+p _ p_l_.P..( -f)
 
 print('@ is owned by @/@'.f..(p, p.owner(), p.group()))

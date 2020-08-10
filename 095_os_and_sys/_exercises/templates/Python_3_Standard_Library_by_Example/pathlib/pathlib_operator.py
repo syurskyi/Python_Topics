@@ -8,15 +8,15 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-usr _ pathlib.PurePosixPath('/usr')
+usr _ p_l_.PurePosixPath('/usr')
 print(usr)
 
 usr_local _ usr / 'local'
 print(usr_local)
 
-usr_share _ usr / pathlib.PurePosixPath('share')
+usr_share _ usr / p_l_.PurePosixPath('share')
 print(usr_share)
 
 root _ usr / '..'

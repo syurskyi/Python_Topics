@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-f _ pathlib.P..('example.txt')
+f _ p_l_.P..('example.txt')
 
 f.write_bytes('This is the content'.encode('utf-8'))
 

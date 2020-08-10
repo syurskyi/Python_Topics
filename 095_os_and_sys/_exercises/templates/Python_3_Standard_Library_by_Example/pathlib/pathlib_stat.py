@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 ______ ___
 ______ ti__
 
@@ -12,7 +12,7 @@ __ le.(___.a..) __ 1:
 ____
     filename _ ___.a..[1]
 
-p _ pathlib.P..(filename)
+p _ p_l_.P..(filename)
 stat_info _ p.s..()
 
 print('@:'.f..(filename))

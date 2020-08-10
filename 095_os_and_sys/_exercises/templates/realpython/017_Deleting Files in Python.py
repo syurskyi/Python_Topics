@@ -48,7 +48,7 @@ ______ O.. __ e:
 #
 # Finally, you can also use pathlib.Path.unlink() to delete files:
 
-____ pathlib ______ P..
+____ p_l_ ______ P..
 
 data_file _ P..('home/data.txt')
 

@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-ind _ pathlib.PurePosixPath('source/pathlib/index.rst')
+ind _ p_l_.PurePosixPath('source/pathlib/index.rst')
 print(ind)
 
 py _ ind.with_name('pathlib_from_existing.py')

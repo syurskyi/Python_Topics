@@ -10,9 +10,9 @@
 #end_pymotw_header
 ______ itertools
 ______ __
-______ pathlib
+______ p_l_
 
-root _ pathlib.P..('test_files')
+root _ p_l_.P..('test_files')
 
 # Clean up from previous runs.
 __ root.e..():
@@ -30,8 +30,8 @@ __.mkfifo(str(root / 'fifo'))
 # Check the file types
 to_scan _ itertools.chain(
     root.i_d..,
-    [pathlib.P..('/dev/disk0'),
-     pathlib.P..('/dev/console')],
+    [p_l_.P..('/dev/disk0'),
+     p_l_.P..('/dev/console')],
 )
 hfmt _ '{:18s}' + ('  {:>5}' * 6)
 print(hfmt.f..('Name', 'File', 'Dir', 'Link', 'FIFO', 'Block',

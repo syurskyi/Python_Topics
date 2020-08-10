@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.PurePosixPath('./source/pathlib/pathlib_name.py')
+p _ p_l_.PurePosixPath('./source/pathlib/pathlib_name.py')
 print('path  : @'.f..(p))
 print('name  : @'.f..(p.name))
 print('suffix: @'.f..(p.suffix))

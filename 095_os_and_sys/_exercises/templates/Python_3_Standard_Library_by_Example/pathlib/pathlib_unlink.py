@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.P..('touched')
+p _ p_l_.P..('touched')
 
 p.touch()
 

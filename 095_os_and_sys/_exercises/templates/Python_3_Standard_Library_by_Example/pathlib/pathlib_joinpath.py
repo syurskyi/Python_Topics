@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-root _ pathlib.PurePosixPath('/')
+root _ p_l_.PurePosixPath('/')
 subdirs _ ['usr', 'local']
 usr_local _ root.joinpath(*subdirs)
 print(usr_local)

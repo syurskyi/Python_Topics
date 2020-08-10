@@ -8,7 +8,7 @@
 """
 
 #end_pymotw_header
-______ pathlib
+______ p_l_
 
-p _ pathlib.PurePosixPath('/usr/local')
+p _ p_l_.PurePosixPath('/usr/local')
 print(p.parts)
