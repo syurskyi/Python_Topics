@@ -35,7 +35,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
     names1 _ __.l_d_(dir1)
     names2 _ __.l_d_(dir2)
     __ no. dirdiff.comparedirs(dir1, dir2, names1, names2):
-        diffs.append('unique files at %s - %s' % (dir1, dir2))
+        diffs.ap..('unique files at %s - %s' % (dir1, dir2))
 
     print('Comparing contents')
     common _ intersect(names1, names2)
@@ -56,7 +56,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
                     __ verbose: print(name, 'matches')
                     break
                 __ bytes1 !_ bytes2:
-                    diffs.append('files differ at %s - %s' % (path1, path2))
+                    diffs.ap..('files differ at %s - %s' % (path1, path2))
                     print(name, 'DIFFERS')
                     break
 
@@ -70,7 +70,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
 
     # same name but not both files or dirs?
     ___ name __ missed:
-        diffs.append('files missed at %s - %s: %s' % (dir1, dir2, name))
+        diffs.ap..('files missed at %s - %s: %s' % (dir1, dir2, name))
         print(name, 'DIFFERS')
 
 

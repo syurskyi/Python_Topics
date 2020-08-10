@@ -10,7 +10,7 @@ allsizes _ []
 allpy _ g__.g__(d.. + __.sep + '*.py')
 ___ filename __ allpy:
     filesize _ __.p...getsize(filename)
-    allsizes.append((filesize, filename))
+    allsizes.ap..((filesize, filename))
 
 allsizes.sort()
 print(allsizes[:2])

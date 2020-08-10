@@ -40,7 +40,7 @@ ___ (thisDir, subsHere, filesHere) __ __.w..(d..):
                 ______ Exception:
                     print('error', exc_info()[0])
                 ____
-                    allsizes.append((bytesize, linesize, fullname))
+                    allsizes.ap..((bytesize, linesize, fullname))
 
 ___ (title, key) __ [('bytes', 0), ('lines', 1)]:
     print('\nBy %s...' % title)

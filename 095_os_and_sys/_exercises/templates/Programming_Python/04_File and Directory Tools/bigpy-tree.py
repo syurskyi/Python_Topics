@@ -18,7 +18,7 @@ ___ (thisDir, subsHere, filesHere) __ __.w..(d..):
             __ trace: print('...', filename)
             fullname _ __.p...j..(thisDir, filename)
             fullsize _ __.p...getsize(fullname)
-            allsizes.append((fullsize, fullname))
+            allsizes.ap..((fullsize, fullname))
 
 allsizes.sort()
 pprint.pprint(allsizes[:2])

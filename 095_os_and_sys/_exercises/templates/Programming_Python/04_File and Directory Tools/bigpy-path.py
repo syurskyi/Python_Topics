@@ -29,7 +29,7 @@ ___ srcdir __ ___.p..:
                     print('skipping', pypath, ___.exc_info()[0])
                 ____
                     pylines _ le.(o..(pypath, 'rb').readlines())
-                    allsizes.append((pysize, pylines, pypath))
+                    allsizes.ap..((pysize, pylines, pypath))
 
 print('By size...')
 allsizes.sort()

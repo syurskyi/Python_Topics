@@ -10,7 +10,7 @@ ___ line __ csv_file.readlines():
         'city': city,
         'country': country
     }
-    json_list.append(data)
+    json_list.ap..(data)
 
 csv_file.close()
 
