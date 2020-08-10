@@ -11,5 +11,5 @@ ___ mylister(currdir):
         ____
             mylister(p..)                        # recur into subdirs
 
-__ __name__ == '__main__':
-    mylister(___.argv[1])                         # dir name in cmdline
+__ __name__ __ '__main__':
+    mylister(___.a..[1])                         # dir name in cmdline

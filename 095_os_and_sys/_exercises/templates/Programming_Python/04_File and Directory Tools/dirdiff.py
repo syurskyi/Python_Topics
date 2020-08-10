@@ -51,13 +51,13 @@ ___ comparedirs(dir1, dir2, files1_N.., files2_N..):
 ___ getargs():
     "Args for command-line mode"
     ___
-        dir1, dir2 _ ___.argv[1:]                 # 2 command-line args
+        dir1, dir2 _ ___.a..[1:]                 # 2 command-line args
     ______:
         print('Usage: dirdiff.py dir1 dir2')
         ___.exit(1)
     ____
         return (dir1, dir2)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     dir1, dir2 _ getargs()
     comparedirs(dir1, dir2)

@@ -7,13 +7,13 @@ ______ pathlib
 ______ ___
 ______ ti__
 
-__ len(___.argv) == 1:
+__ le.(___.a..) __ 1:
     filename _  -f
 ____
-    filename _ ___.argv[1]
+    filename _ ___.a..[1]
 
 p _ pathlib.Path(filename)
-stat_info _ p.stat()
+stat_info _ p.s..()
 
 print('@:'.f..(filename))
 print('  Size:', stat_info.st_size)

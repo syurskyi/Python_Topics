@@ -7,10 +7,10 @@ ______ __
 ______ ___
 
 # If we are not given a path to list, use /tmp
-__ len(___.argv) == 1:
+__ le.(___.a..) __ 1:
     root _ '/tmp'
 ____
-    root _ ___.argv[1]
+    root _ ___.a..[1]
 
 ___ dir_name, sub_dirs, files __ __.walk(root):
     print(dir_name)

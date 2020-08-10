@@ -6,13 +6,13 @@ file, and attempts to work around undecodable dir/file name prints.
 """
 
 ______ __, pprint
-from ___ ______ argv, exc_info
+from ___ ______ a.., exc_info
 
 trace _ 1                                    # 0=off, 1=dirs, 2=+files
 dirname, extname _ __.curdir, '.py'          # default is .py files in cwd
-__ len(argv) > 1: dirname _ argv[1]          # ex: C:\, C:\Python31\Lib
-__ len(argv) > 2: extname _ argv[2]          # ex: .pyw, .txt
-__ len(argv) > 3: trace   _ int(argv[3])     # ex: ". .py 2"
+__ le.(a..) > 1: dirname _ a..[1]          # ex: C:\, C:\Python31\Lib
+__ le.(a..) > 2: extname _ a..[2]          # ex: .pyw, .txt
+__ le.(a..) > 3: trace   _ int(a..[3])     # ex: ". .py 2"
 
 ___ tryprint(arg):
     ___

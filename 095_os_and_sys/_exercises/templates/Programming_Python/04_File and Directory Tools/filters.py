@@ -14,7 +14,7 @@ ___ filter_stream(function):              # no explicit files
         __ not line: break
         print(function(line), end_'')     # or: sys.stdout.write()
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     filter_stream(lambda line: line)      # copy stdin to stdout if run
 
 

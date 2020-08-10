@@ -1,18 +1,18 @@
 #!/usr/local/bin/python
-from ___ ______ argv
+from ___ ______ a..
 from scanfile ______ scanner
 class UnknownCommand(Exception): pass
 
 ___ processLine(line):                      # define a function
-    __ line[0] == '*':                      # applied to each line
+    __ line[0] __ '*':                      # applied to each line
         print("Ms.", line[1:-1])
-    ____ line[0] == '+':
+    ____ line[0] __ '+':
         print("Mr.", line[1:-1])            # strip first and last char: \n
     ____
         raise UnknownCommand(line)          # raise an exception
 
 filename _ 'data.txt'
-__ len(argv) == 2: filename _ argv[1]       # allow filename cmd arg
+__ le.(a..) __ 2: filename _ a..[1]       # allow filename cmd arg
 scanner(filename, processLine)              # start the scanner
 
 

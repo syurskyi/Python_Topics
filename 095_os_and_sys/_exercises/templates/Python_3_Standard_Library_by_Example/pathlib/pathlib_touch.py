@@ -13,12 +13,12 @@ ____
     print('creating new')
 
 p.touch()
-start _ p.stat()
+start _ p.s..()
 
 ti__.sleep(1)
 
 p.touch()
-end _ p.stat()
+end _ p.s..()
 
 print('Start:', ti__.ctime(start.st_mtime))
 print('End  :', ti__.ctime(end.st_mtime))

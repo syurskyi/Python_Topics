@@ -45,5 +45,5 @@ ___ main():
         print(elem)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

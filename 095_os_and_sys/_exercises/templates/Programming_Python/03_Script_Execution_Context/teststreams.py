@@ -12,5 +12,5 @@ ___ interact():
             print("%d squared is %d" % (num, num ** 2))
     print('Bye')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     interact()                                      # when run, not imported

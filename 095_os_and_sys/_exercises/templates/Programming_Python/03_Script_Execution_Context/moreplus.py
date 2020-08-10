@@ -15,7 +15,7 @@ ___ getreply():
     __ ___.stdin.isatty():                       # if stdin is console
         return input('?')                        # read reply line from stdin
     ____
-        __ ___.platform[:3] == 'win':            # if stdin was redirected
+        __ ___.platform[:3] __ 'win':            # if stdin was redirected
             ______ msvcrt                        # can't use to ask a user
             msvcrt.putch(b'?')
             key _ msvcrt.getche()                # use windows console tools
@@ -36,8 +36,8 @@ ___ more(text, numlines_10):
         ___ line __ chunk: print(line)
         __ lines and getreply() not __ [b'y', b'Y']: break
 
-__ __name__ == '__main__':                       # when run, not when imported
-    __ len(___.argv) == 1:                       # if no command-line arguments
+__ __name__ __ '__main__':                       # when run, not when imported
+    __ le.(___.a..) __ 1:                       # if no command-line arguments
         more(___.stdin.read())                   # page stdin, no inputs
     ____
-        more(o..(___.argv[1]).read())           # else page filename argument
+        more(o..(___.a..[1]).read())           # else page filename argument

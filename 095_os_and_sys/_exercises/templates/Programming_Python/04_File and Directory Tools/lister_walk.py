@@ -9,5 +9,5 @@ ___ lister(root):                                           # for a root dir
             p.. _ __.p...j..(thisdir, fname)             # add dir name prefix
             print(p..)
 
-__ __name__ == '__main__':
-    lister(___.argv[1])                                     # dir name in cmdline
+__ __name__ __ '__main__':
+    lister(___.a..[1])                                     # dir name in cmdline

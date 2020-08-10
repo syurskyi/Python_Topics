@@ -18,14 +18,14 @@ class Input:                                    # simulated input file
     ___ __init__(self, input_''):               # default argument
         self.text _ input                       # save string when created
     ___ read(self, size_N..):                  # optional argument
-        __ size == N..:                        # read N bytes, or all
+        __ size __ N..:                        # read N bytes, or all
             res, self.text _ self.text, ''
         ____
             res, self.text _ self.text[:size], self.text[size:]
         return res
     ___ readline(self):
         eoln _ self.text.find('\n')             # find offset of next eoln
-        __ eoln == -1:                          # slice off through eoln
+        __ eoln __ -1:                          # slice off through eoln
             res, self.text _ self.text, ''
         ____
             res, self.text _ self.text[:eoln+1], self.text[eoln+1:]

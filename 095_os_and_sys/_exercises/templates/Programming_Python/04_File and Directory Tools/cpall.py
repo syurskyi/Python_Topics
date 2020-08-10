@@ -65,7 +65,7 @@ ___ getargs():
     Get and verify directory name arguments, returns default None on errors
     """
     ___
-        dirFrom, dirTo _ ___.argv[1:]
+        dirFrom, dirTo _ ___.a..[1:]
     ______:
         print('Usage error: cpall.py dirFrom dirTo')
     ____
@@ -80,13 +80,13 @@ ___ getargs():
             __ hasattr(__.p.., 'samefile'):
                 same _ __.p...samefile(dirFrom, dirTo)
             ____
-                same _ __.p...abspath(dirFrom) == __.p...abspath(dirTo)
+                same _ __.p...abspath(dirFrom) __ __.p...abspath(dirTo)
             __ same:
                 print('Error: dirFrom same as dirTo')
             ____
                 return (dirFrom, dirTo)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ______ ti__
     dirstuple _ getargs()
     __ dirstuple:

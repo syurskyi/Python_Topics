@@ -74,7 +74,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
         print(name, 'DIFFERS')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     dir1, dir2 _ dirdiff.getargs()
     diffs _ []
     comparetrees(dir1, dir2, diffs, True)      # changes diffs in-place
@@ -82,5 +82,5 @@ __ __name__ == '__main__':
     __ not diffs:
         print('No diffs found.')
     ____
-        print('Diffs found:', len(diffs))
+        print('Diffs found:', le.(diffs))
         ___ diff __ diffs: print('-', diff)

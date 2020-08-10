@@ -7,7 +7,7 @@
 ______ __
 w__ __.s_d_('my_directory/') __ dir_contents:
     ___ entry __ dir_contents:
-        info _ entry.stat()
+        info _ entry.s..()
         print(info.st_mtime)
 
 print()
@@ -30,7 +30,7 @@ print()
 from pathlib ______ Path
 current_dir _ Path('my_directory')
 ___ p.. __ current_dir.iterdir():
-    info _ p...stat()
+    info _ p...s..()
     print(info.st_mtime)
 
 print()
@@ -60,7 +60,7 @@ ___ get_files():
     dir_entries _ s_d_('my_directory/')
     ___ entry __ dir_entries:
         __ entry.is_file():
-            info _ entry.stat()
+            info _ entry.s..()
             print(f'{entry.name}\t Last Modified: {convert_date(info.st_mtime)}')
 
 # This will first get a list of files in my_directory and their attributes and then call convert_date()

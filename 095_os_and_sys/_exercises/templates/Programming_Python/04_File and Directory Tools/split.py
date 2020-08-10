@@ -34,18 +34,18 @@ ___ split(fromfile, todir, chunksize_chunksize):
     assert partnum <_ 9999                         # join sort fails if 5 digits
     return partnum
 
-__ __name__ == '__main__':
-    __ len(___.argv) == 2 and ___.argv[1] == '-help':
+__ __name__ __ '__main__':
+    __ le.(___.a..) __ 2 and ___.a..[1] __ '-help':
         print('Use: split.py [file-to-split target-dir [chunksize]]')
     ____
-        __ len(___.argv) < 3:
+        __ le.(___.a..) < 3:
             interactive _ True
             fromfile _ input('File to be split? ')           # input if clicked
             todir    _ input('Directory to store part files? ')
         ____
             interactive _ False
-            fromfile, todir _ ___.argv[1:3]                  # args in cmdline
-            __ len(___.argv) == 4: chunksize _ int(___.argv[3])
+            fromfile, todir _ ___.a..[1:3]                  # args in cmdline
+            __ le.(___.a..) __ 4: chunksize _ int(___.a..[3])
         absfrom, absto _ map(__.p...abspath, [fromfile, todir])
         print('Splitting', absfrom, 'to', absto, 'by', chunksize)
 

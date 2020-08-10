@@ -3,8 +3,8 @@ ______ __, ___
 
 p.. _ '.'
 
-__ len(___.argv) == 2:
-    p.. _ ___.argv[1]
+__ le.(___.a..) __ 2:
+    p.. _ ___.a..[1]
 
 files _ __.l_d_(p..)
 ___ name __ files:
@@ -13,7 +13,7 @@ ___ name __ files:
     full_path _ __.p...j..(p.., name)
     print(full_path)
 
-    inode _ __.stat(full_path)
+    inode _ __.s..(full_path)
     print('  ' + str(inode.st_size))
     print('  ' + str(inode.st_mode))
     print('  ' + ('f' __ inode.st_mode & 0100000 else '-'))

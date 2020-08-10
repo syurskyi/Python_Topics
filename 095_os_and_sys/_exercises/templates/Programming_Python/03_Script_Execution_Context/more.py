@@ -10,6 +10,6 @@ ___ more(text, numlines_15):
         ___ line __ chunk: print(line)
         __ lines and input('More?') not __ ['y', 'Y']: break
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ______ ___                               # when run, not imported
-    more(o..(___.argv[1]).read(), 10)       # page contents of file on cmdline
+    more(o..(___.a..[1]).read(), 10)       # page contents of file on cmdline

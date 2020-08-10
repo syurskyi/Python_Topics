@@ -26,17 +26,17 @@ ___ j..(fromdir, tofile):
         fileobj.close()
     output.close()
 
-__ __name__ == '__main__':
-    __ len(___.argv) == 2 and ___.argv[1] == '-help':
+__ __name__ __ '__main__':
+    __ le.(___.a..) __ 2 and ___.a..[1] __ '-help':
         print('Use: join.py [from-dir-name to-file-name]')
     ____
-        __ len(___.argv) !_ 3:
+        __ le.(___.a..) !_ 3:
             interactive _ True
             fromdir _ input('Directory containing part files? ')
             tofile  _ input('Name of file to be recreated? ')
         ____
             interactive _ False
-            fromdir, tofile _ ___.argv[1:]
+            fromdir, tofile _ ___.a..[1:]
         absfrom, absto _ map(__.p...abspath, [fromdir, tofile])
         print('Joining', absfrom, 'to make', absto)
 
