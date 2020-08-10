@@ -1,16 +1,15 @@
-#!/usr/bin/env python3
-# encoding: utf-8
+# #!/usr/bin/env python3
+# # encoding: utf-8
+# #
+# #
+# """Expand shell variables in filenames.
+# """
 #
-# Copyright (c) 2008 Doug Hellmann All rights reserved.
 #
-"""Expand shell variables in filenames.
-"""
-
-
-#end_pymotw_header
-______ __.p..
-______ __
-
-__.en..['MYVAR'] _ 'VALUE'
-
-print(__.p...expandvars('/path/to/$MYVAR'))
+# #end_pymotw_header
+# ______ __.p..
+# ______ __
+#
+# __.en..|'MYVAR' _ 'VALUE'
+#
+# print(__.p...e__v.. '/path/to/$MYVAR'
