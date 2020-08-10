@@ -3,11 +3,11 @@
 """
 
 #end_pymotw_header
-______ __
+import os
 
-print 'Starting:' __.g..
+print('Starting:', os.getcwd())
 
-print('Moving up one:', __.p_d_
-__.c_d_ __.p_d_
+print('Moving up one:', os.pardir)
+os.chdir(os.pardir)
 
-print 'After move:' __.g..
+print('After move:', os.getcwd())
