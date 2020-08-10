@@ -13,7 +13,7 @@ class Calculator:
     @classmethod
     ___ multiply(cls, num1, num2):
         res _ 0
-        ___ x __ range(0, num2):
+        ___ x __ ra..(0, num2):
             res _ cls.add(res, num1)  # add num1 for num2 times
         return res
 

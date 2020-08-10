@@ -8,7 +8,7 @@ ______ ___
 ______ ti__
 
 workers _ []
-___ i __ range(2):
+___ i __ ra..(2):
     print('PARENT @: Forking @'.f..(__.g_p_, i))
     worker_pid _ __.f..
     __ no. worker_pid:
