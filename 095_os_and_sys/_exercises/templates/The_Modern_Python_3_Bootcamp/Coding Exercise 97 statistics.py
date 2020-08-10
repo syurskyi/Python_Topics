@@ -1,10 +1,10 @@
-# Statistic Exercise Solution
-
-
-___ statistics(file_name):
-    w__ o..(file_name) __ file:
-        lines _ file.readlines()
-
-    r_ {"lines": le.(lines),
-            "words": sum(le.(line.split(" ")) ___ line __ lines),
-            "characters": sum(le.(line) ___ line __ lines)}
+# # Statistic Exercise Solution
+#
+#
+# ___ statistics file_name
+#     w__ o.. ? __ file
+#         lines _ ?.r_l..
+#
+#     r_ |"lines" le. ?
+#             "words" su. le. ?.sp.. " " ___ line __ ?
+#             "characters": su. le. ? ___ line __ ?
