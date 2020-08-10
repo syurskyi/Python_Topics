@@ -3,9 +3,9 @@ Find the largest Python source file in an entire directory tree.
 Search the Python source lib, use pprint to display results nicely.  
 """
 
-______ sys, __, pprint
+______ ___, __, pprint
 trace = False
-__ sys.platform.startswith('win'):
+__ ___.platform.startswith('win'):
     dirname = r'C:\Python31\Lib'                 # Windows
 ____
     dirname = '/usr/lib/python'                  # Unix, Linux, Cygwin

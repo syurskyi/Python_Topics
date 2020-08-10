@@ -1,2 +1,2 @@
-______ sys
-print(sum(int(line) ___ line __ sys.stdin))
+______ ___
+print(sum(int(line) ___ line __ ___.stdin))

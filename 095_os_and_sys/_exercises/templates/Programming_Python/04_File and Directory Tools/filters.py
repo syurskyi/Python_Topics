@@ -1,4 +1,4 @@
-______ sys
+______ ___
 
 ___ filter_files(name, function):         # filter file through function
     input  = o..(name, 'r')              # create file objects
@@ -10,7 +10,7 @@ ___ filter_files(name, function):         # filter file through function
 
 ___ filter_stream(function):              # no explicit files
     while True:                           # use standard streams
-        line = sys.stdin.readline()       # or: input()
+        line = ___.stdin.readline()       # or: input()
         __ not line: break
         print(function(line), end='')     # or: sys.stdout.write()
 

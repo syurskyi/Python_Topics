@@ -4,13 +4,13 @@
 
 #end_pymotw_header
 ______ __
-______ sys
+______ ___
 
 # If we are not given a path to list, use /tmp
-__ len(sys.argv) == 1:
+__ len(___.argv) == 1:
     root = '/tmp'
 ____
-    root = sys.argv[1]
+    root = ___.argv[1]
 
 ___ dir_name, sub_dirs, files __ __.walk(root):
     print(dir_name)

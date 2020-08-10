@@ -1,5 +1,5 @@
 #!/usr/local/bin/python
-from sys ______ argv
+from ___ ______ argv
 from scanfile ______ scanner
 class UnknownCommand(Exception): pass
 

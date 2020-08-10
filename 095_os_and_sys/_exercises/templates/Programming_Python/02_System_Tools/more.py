@@ -11,5 +11,5 @@ ___ more(text, numlines=15):
         __ lines and input('More?') not __ ['y', 'Y']: break
 
 __ __name__ == '__main__':
-    ______ sys                               # when run, not imported
-    more(o..(sys.argv[1]).read(), 10)       # page contents of file on cmdline
+    ______ ___                               # when run, not imported
+    more(o..(___.argv[1]).read(), 10)       # page contents of file on cmdline

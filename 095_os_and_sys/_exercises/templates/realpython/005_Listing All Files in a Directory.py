@@ -6,7 +6,7 @@ ______ __
 
 # List all files in a directory using os.listdir
 basepath = 'my_directory/'
-___ entry __ __.listdir(basepath):
+___ entry __ __.l_d_(basepath):
     __ __.p...isfile(__.p...j..(basepath, entry)):
         print(entry)
 

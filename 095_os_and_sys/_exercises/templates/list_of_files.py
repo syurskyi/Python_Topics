@@ -8,7 +8,7 @@ ______ __
 ___ getListOfFiles(dirName):
     # create a list of file and sub directories
     # names in the given directory
-    listOfFile = __.listdir(dirName)
+    listOfFile = __.l_d_(dirName)
     allFiles = list()
     # Iterate over all the entries
     ___ entry __ listOfFile:

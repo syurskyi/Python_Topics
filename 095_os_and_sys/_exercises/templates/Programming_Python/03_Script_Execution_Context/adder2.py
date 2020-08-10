@@ -1,7 +1,7 @@
-______ sys
+______ ___
 sum = 0
 while True:
-    line = sys.stdin.readline()
+    line = ___.stdin.readline()
     __ not line: break
     sum += int(line)
 print(sum)

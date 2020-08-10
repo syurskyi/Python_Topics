@@ -6,7 +6,7 @@
 ______ __
 ______ fnmatch
 
-___ file_name __ __.listdir('some_directory/'):
+___ file_name __ __.l_d_('some_directory/'):
     __ fnmatch.fnmatch(file_name, '*.txt'):
         print(file_name)
 

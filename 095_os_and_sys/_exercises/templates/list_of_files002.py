@@ -1,12 +1,12 @@
 from __future__ ______ print_function
-______ __, sys
+______ __, ___
 
 p.. = '.'
 
-__ len(sys.argv) == 2:
-    p.. = sys.argv[1]
+__ len(___.argv) == 2:
+    p.. = ___.argv[1]
 
-files = __.listdir(p..)
+files = __.l_d_(p..)
 ___ name __ files:
     print(name)
 

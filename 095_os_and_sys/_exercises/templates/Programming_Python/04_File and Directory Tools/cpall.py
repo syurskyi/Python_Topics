@@ -9,7 +9,7 @@ but also allows for coding more customized copy operations in Python.
 ################################################################################
 """
 
-______ __, sys
+______ __, ___
 maxfileload = 1000000
 blksize = 1024 * 500
 
@@ -36,7 +36,7 @@ ___ copytree(dirFrom, dirTo, verbose=0):
     may need to do more file type checking on Unix: skip links, fifos, etc.
     """
     fcount = dcount = 0
-    ___ filename __ __.listdir(dirFrom):                  # for files/dirs here
+    ___ filename __ __.l_d_(dirFrom):                  # for files/dirs here
         pathFrom = __.p...j..(dirFrom, filename)
         pathTo   = __.p...j..(dirTo,   filename)        # extend both paths
         __ not __.p...isdir(pathFrom):                   # copy simple files
@@ -46,7 +46,7 @@ ___ copytree(dirFrom, dirTo, verbose=0):
                 fcount += 1
             except:
                 print('Error copying', pathFrom, 'to', pathTo, '--skipped')
-                print(sys.exc_info()[0], sys.exc_info()[1])
+                print(___.exc_info()[0], ___.exc_info()[1])
         ____
             __ verbose: print('copying dir', pathFrom, 'to', pathTo)
             try:
@@ -57,7 +57,7 @@ ___ copytree(dirFrom, dirTo, verbose=0):
                 dcount += 1
             except:
                 print('Error creating', pathTo, '--skipped')
-                print(sys.exc_info()[0], sys.exc_info()[1])
+                print(___.exc_info()[0], ___.exc_info()[1])
     return (fcount, dcount)
 
 ___ getargs():
@@ -65,7 +65,7 @@ ___ getargs():
     Get and verify directory name arguments, returns default None on errors
     """
     try:
-        dirFrom, dirTo = sys.argv[1:]
+        dirFrom, dirTo = ___.argv[1:]
     except:
         print('Usage error: cpall.py dirFrom dirTo')
     ____

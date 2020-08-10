@@ -4,13 +4,13 @@
 
 #end_pymotw_header
 ______ __
-______ sys
+______ ___
 ______ ti__
 
-__ len(sys.argv) == 1:
+__ len(___.argv) == 1:
     filename =  -f
 ____
-    filename = sys.argv[1]
+    filename = ___.argv[1]
 
 stat_info = __.stat(filename)
 

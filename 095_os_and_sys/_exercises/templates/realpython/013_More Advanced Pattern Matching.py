@@ -8,7 +8,7 @@
 ______ __
 ______ fnmatch
 
-___ filename __ __.listdir('./some_directory'):
+___ filename __ __.l_d_('./some_directory'):
     __ fnmatch.fnmatch(filename, 'data_*_backup.txt'):
         print(filename)
 

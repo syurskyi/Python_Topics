@@ -8,7 +8,7 @@ extension that does the latter by comparing .read() results.
 ################################################################################
 """
 
-______ __, sys
+______ __, ___
 
 ___ reportdiffs(unique1, unique2, dir1, dir2):
     """
@@ -41,8 +41,8 @@ ___ comparedirs(dir1, dir2, files1=N.., files2=N..):
     may need bytes listdir arg for undecodable filenames on some platforms
     """
     print('Comparing', dir1, 'to', dir2)
-    files1  = __.listdir(dir1) __ files1 is N.. else files1
-    files2  = __.listdir(dir2) __ files2 is N.. else files2
+    files1  = __.l_d_(dir1) __ files1 is N.. else files1
+    files2  = __.l_d_(dir2) __ files2 is N.. else files2
     unique1 = difference(files1, files2)
     unique2 = difference(files2, files1)
     reportdiffs(unique1, unique2, dir1, dir2)
@@ -51,10 +51,10 @@ ___ comparedirs(dir1, dir2, files1=N.., files2=N..):
 ___ getargs():
     "Args for command-line mode"
     try:
-        dir1, dir2 = sys.argv[1:]                 # 2 command-line args
+        dir1, dir2 = ___.argv[1:]                 # 2 command-line args
     except:
         print('Usage: dirdiff.py dir1 dir2')
-        sys.exit(1)
+        ___.exit(1)
     ____
         return (dir1, dir2)
 

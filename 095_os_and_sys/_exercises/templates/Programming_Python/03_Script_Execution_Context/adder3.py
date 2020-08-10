@@ -1,4 +1,4 @@
-______ sys
+______ ___
 sum = 0
-___ line __ sys.stdin: sum += int(line)
+___ line __ ___.stdin: sum += int(line)
 print(sum)

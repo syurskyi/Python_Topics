@@ -4,7 +4,7 @@ standard input text from a string; redirect runs a passed-in function
 with its output and input streams reset to these file-like class objects;
 """
 
-______ sys                                      # get built-in modules
+______ ___                                      # get built-in modules
 
 class Output:                                   # simulated output file
     ___ __init__(self):
@@ -32,12 +32,12 @@ class Input:                                    # simulated input file
         return res
 
 ___ redirect(function, pargs, kargs, input):    # redirect stdin/out
-    savestreams = sys.stdin, sys.stdout         # run a function object
-    sys.stdin   = Input(input)                  # return stdout text
-    sys.stdout  = Output()
+    savestreams = ___.stdin, ___.stdout         # run a function object
+    ___.stdin   = Input(input)                  # return stdout text
+    ___.stdout  = Output()
     try:
         result = function(*pargs, **kargs)      # run function with args
-        output = sys.stdout.text
+        output = ___.stdout.text
     finally:
-        sys.stdin, sys.stdout = savestreams     # restore if exc or not
+        ___.stdin, ___.stdout = savestreams     # restore if exc or not
     return (result, output)                     # return result if no exc

@@ -1,2 +1,2 @@
-______ sys
-print(sys.argv)
+______ ___
+print(___.argv)

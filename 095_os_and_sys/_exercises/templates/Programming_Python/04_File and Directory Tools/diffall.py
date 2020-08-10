@@ -32,8 +32,8 @@ ___ comparetrees(dir1, dir2, diffs, verbose=False):
     """
     # compare file name lists
     print('-' * 20)
-    names1 = __.listdir(dir1)
-    names2 = __.listdir(dir2)
+    names1 = __.l_d_(dir1)
+    names2 = __.l_d_(dir2)
     __ not dirdiff.comparedirs(dir1, dir2, names1, names2):
         diffs.append('unique files at %s - %s' % (dir1, dir2))
 

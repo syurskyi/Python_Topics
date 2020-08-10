@@ -7,7 +7,7 @@
 ______ zipfile
 ______ __
 
-__.listdir('.')
+__.l_d_('.')
 
 # ['data.zip']
 
@@ -18,17 +18,17 @@ data_zip.extract('file1.py')
 
 # '/home/terra/test/dir1/zip_extract/file1.py'
 
-__.listdir('.')
+__.l_d_('.')
 
 # ['file1.py', 'data.zip']
 
 # Extract all files into a different directory
 data_zip.extractall(p..='extract_dir/')
 
-__.listdir('.')
+__.l_d_('.')
 # ['file1.py', 'extract_dir', 'data.zip']
 
-__.listdir('extract_dir')
+__.l_d_('extract_dir')
 # ['file1.py', 'file3.py', 'file2.py', 'sub_dir']
 
 data_zip.close()

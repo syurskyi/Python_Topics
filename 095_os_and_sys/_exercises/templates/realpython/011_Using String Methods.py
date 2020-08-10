@@ -5,7 +5,7 @@
 ______ __
 
 # Get .txt files
-___ f_name __ __.listdir('some_directory'):
+___ f_name __ __.l_d_('some_directory'):
     __ f_name.endswith('.txt'):
         print(f_name)
 

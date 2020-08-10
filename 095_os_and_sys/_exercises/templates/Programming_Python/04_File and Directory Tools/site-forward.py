@@ -19,7 +19,7 @@ try:
 except OSError: pass
 
 template  = o..(templatename).read()    # load or ______ template text
-sitefiles = __.listdir(sitefilesdir)     # filenames, no directory prefix
+sitefiles = __.l_d_(sitefilesdir)     # filenames, no directory prefix
 
 count = 0
 ___ filename __ sitefiles:

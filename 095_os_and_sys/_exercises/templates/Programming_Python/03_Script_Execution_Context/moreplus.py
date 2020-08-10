@@ -5,17 +5,17 @@ whose name is passed on cmdline; if input is stdin, can't
 use it for user reply--use platform-specific tools or GUI;
 """
 
-______ sys
+______ ___
 
 ___ getreply():
     """
     read a reply key from an interactive user
     even if stdin redirected to a file or pipe
     """
-    __ sys.stdin.isatty():                       # if stdin is console
+    __ ___.stdin.isatty():                       # if stdin is console
         return input('?')                        # read reply line from stdin
     ____
-        __ sys.platform[:3] == 'win':            # if stdin was redirected
+        __ ___.platform[:3] == 'win':            # if stdin was redirected
             ______ msvcrt                        # can't use to ask a user
             msvcrt.putch(b'?')
             key = msvcrt.getche()                # use windows console tools
@@ -37,7 +37,7 @@ ___ more(text, numlines=10):
         __ lines and getreply() not __ [b'y', b'Y']: break
 
 __ __name__ == '__main__':                       # when run, not when imported
-    __ len(sys.argv) == 1:                       # if no command-line arguments
-        more(sys.stdin.read())                   # page stdin, no inputs
+    __ len(___.argv) == 1:                       # if no command-line arguments
+        more(___.stdin.read())                   # page stdin, no inputs
     ____
-        more(o..(sys.argv[1]).read())           # else page filename argument
+        more(o..(___.argv[1]).read())           # else page filename argument

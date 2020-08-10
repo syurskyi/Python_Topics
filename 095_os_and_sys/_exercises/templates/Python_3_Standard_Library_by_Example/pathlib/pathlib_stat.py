@@ -4,13 +4,13 @@
 
 #end_pymotw_header
 ______ pathlib
-______ sys
+______ ___
 ______ ti__
 
-__ len(sys.argv) == 1:
+__ len(___.argv) == 1:
     filename =  -f
 ____
-    filename = sys.argv[1]
+    filename = ___.argv[1]
 
 p = pathlib.Path(filename)
 stat_info = p.stat()

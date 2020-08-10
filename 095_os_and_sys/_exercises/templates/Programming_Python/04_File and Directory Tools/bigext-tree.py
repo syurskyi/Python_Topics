@@ -6,7 +6,7 @@ file, and attempts to work around undecodable dir/file name prints.
 """
 
 ______ __, pprint
-from sys ______ argv, exc_info
+from ___ ______ argv, exc_info
 
 trace = 1                                    # 0=off, 1=dirs, 2=+files
 dirname, extname = __.curdir, '.py'          # default is .py files in cwd

@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
-"""A simple directory listing.
-"""
-
-#end_pymotw_header
-______ __
-______ sys
-
-print(so..(__.listdir(sys.argv[1])))
+# #!/usr/bin/env python3
+# """A simple directory listing.
+# """
+#
+# #end_pymotw_header
+# ______ __
+# ______ ___
+#
+# print so.. __.l_d_ ___.a.. 1

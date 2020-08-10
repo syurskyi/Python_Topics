@@ -4,7 +4,7 @@
 
 #end_pymotw_header
 ______ __
-______ sys
+______ ___
 ______ ti__
 
 ___ i __ range(2):
@@ -14,7 +14,7 @@ ___ i __ range(2):
         print('WORKER {}: Starting'.f..(i))
         ti__.sleep(2 + i)
         print('WORKER {}: Finishing'.f..(i))
-        sys.exit(i)
+        ___.exit(i)
 
 ___ i __ range(2):
     print('PARENT: Waiting for {}'.f..(i))

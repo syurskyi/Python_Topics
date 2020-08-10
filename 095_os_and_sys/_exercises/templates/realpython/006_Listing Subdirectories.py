@@ -4,7 +4,7 @@ ______ __
 
 # List all subdirectories using os.listdir
 basepath = 'my_directory/'
-___ entry __ __.listdir(basepath):
+___ entry __ __.l_d_(basepath):
     __ __.p...isdir(__.p...j..(basepath, entry)):
         print(entry)
 

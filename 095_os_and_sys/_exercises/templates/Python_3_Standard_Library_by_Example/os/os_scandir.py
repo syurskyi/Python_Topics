@@ -4,9 +4,9 @@
 
 #end_pymotw_header
 ______ __
-______ sys
+______ ___
 
-___ entry __ __.scandir(sys.argv[1]):
+___ entry __ __.scandir(___.argv[1]):
     __ entry.is_dir():
         typ = 'dir'
     elif entry.is_file():

@@ -1,4 +1,4 @@
-______ sys
+______ ___
 sum = 0
 while True:
     try:

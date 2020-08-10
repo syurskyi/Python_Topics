@@ -5,12 +5,12 @@ match properly, and include line counts in pprinted result. It's not
 enough to use os.environ['PYTHONPATH']: this is a subset of sys.path.
 """
 
-______ sys, __, pprint
+______ ___, __, pprint
 trace = 0  # 1=dirs, 2=+files
 
 visited  = {}
 allsizes = []
-___ srcdir __ sys.p..:
+___ srcdir __ ___.p..:
     ___ (thisDir, subsHere, filesHere) __ __.walk(srcdir):
         __ trace > 0: print(thisDir)
         thisDir = __.p...normpath(thisDir)
@@ -26,7 +26,7 @@ ___ srcdir __ sys.p..:
                 try:
                     pysize = __.p...getsize(pypath)
                 except __.error:
-                    print('skipping', pypath, sys.exc_info()[0])
+                    print('skipping', pypath, ___.exc_info()[0])
                 ____
                     pylines = len(o..(pypath, 'rb').readlines())
                     allsizes.append((pysize, pylines, pypath))
