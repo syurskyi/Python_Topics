@@ -6,7 +6,7 @@ ___ mylister(currdir):
     print('[' + currdir + ']')
     ___ file __ __.l_d_(currdir):              # list files here
         p.. _ __.p...j..(currdir, file)        # add dir path back
-        __ not __.p...isdir(p..):
+        __ no. __.p...isdir(p..):
             print(p..)
         ____
             mylister(p..)                        # recur into subdirs

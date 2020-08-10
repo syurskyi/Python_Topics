@@ -11,7 +11,7 @@ __.remove(data_file)
 ______ __
 
 data_file _ 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
-__.unlink(data_file)
+__.u..(data_file)
 
 # Calling .unlink() or .remove() on a file deletes the file from the filesystem. These two functions will throw
 # an OSError if the path passed to them points to a directory instead of a file. To avoid this, you can either check
@@ -53,7 +53,7 @@ from pathlib ______ Path
 data_file _ Path('home/data.txt')
 
 ___
-    data_file.unlink()
+    data_file.u..()
 ______ IsADirectoryError __ e:
     print(f'Error: {data_file} : {e.strerror}')
 

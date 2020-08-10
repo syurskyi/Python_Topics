@@ -7,7 +7,7 @@ ______ pathlib
 ______ ti__
 
 p _ pathlib.Path('touched')
-__ p.exists():
+__ p.e..():
     print('already exists')
 ____
     print('creating new')

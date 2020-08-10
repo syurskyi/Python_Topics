@@ -11,7 +11,7 @@ workers _ []
 ___ i __ range(2):
     print('PARENT @: Forking @'.f..(__.g_p_, i))
     worker_pid _ __.f..
-    __ not worker_pid:
+    __ no. worker_pid:
         print('WORKER @: Starting'.f..(i))
         ti__.sleep(2 + i)
         print('WORKER @: Finishing'.f..(i))

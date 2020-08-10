@@ -34,7 +34,7 @@ ___ more(text, numlines_10):
         chunk _ lines[:numlines]
         lines _ lines[numlines:]
         ___ line __ chunk: print(line)
-        __ lines and getreply() not __ [b'y', b'Y']: break
+        __ lines and getreply() no. __ [b'y', b'Y']: break
 
 __ __name__ __ '__main__':                       # when run, not when imported
     __ le.(___.a..) __ 1:                       # if no command-line arguments

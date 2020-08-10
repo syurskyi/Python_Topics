@@ -15,9 +15,9 @@ ______ pathlib
 root _ pathlib.Path('test_files')
 
 # Clean up from previous runs.
-__ root.exists():
+__ root.e..():
     ___ f __ root.iterdir():
-        f.unlink()
+        f.u..()
 ____
     root.mkdir()
 

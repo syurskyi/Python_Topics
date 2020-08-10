@@ -46,7 +46,7 @@ w__ TemporaryFile('w+t') __ fp:
 ______ tempfile
 w__ tempfile.TemporaryDirectory() __ tmpdir:
     print('Created temporary directory ', tmpdir)
-    __.p...exists(tmpdir)
+    __.p...e..(tmpdir)
 
 
 # Created temporary directory  /tmp/tmpoxbkrm6c

@@ -11,7 +11,7 @@ ___ filter_files(name, function):         # filter file through function
 ___ filter_stream(function):              # no explicit files
     while True:                           # use standard streams
         line _ ___.stdin.readline()       # or: input()
-        __ not line: break
+        __ no. line: break
         print(function(line), end_'')     # or: sys.stdout.write()
 
 __ __name__ __ '__main__':

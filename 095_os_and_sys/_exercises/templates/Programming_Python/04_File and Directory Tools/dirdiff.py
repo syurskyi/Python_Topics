@@ -14,7 +14,7 @@ ___ reportdiffs(unique1, unique2, dir1, dir2):
     """
     Generate diffs report for one dir: part of comparedirs output
     """
-    __ not (unique1 or unique2):
+    __ no. (unique1 or unique2):
         print('Directory lists are identical')
     ____
         __ unique1:
@@ -32,7 +32,7 @@ ___ difference(seq1, seq2):
     a set(seq1) - set(seq2) would work too, but sets are randomly 
     ordered, so any platform-dependent directory order would be lost
     """
-    return [item ___ item __ seq1 __ item not __ seq2]
+    return [item ___ item __ seq1 __ item no. __ seq2]
 
 
 ___ comparedirs(dir1, dir2, files1_N.., files2_N..):
@@ -46,7 +46,7 @@ ___ comparedirs(dir1, dir2, files1_N.., files2_N..):
     unique1 _ difference(files1, files2)
     unique2 _ difference(files2, files1)
     reportdiffs(unique1, unique2, dir1, dir2)
-    return not (unique1 or unique2)               # true if no diffs
+    return no. (unique1 or unique2)               # true if no diffs
 
 ___ getargs():
     "Args for command-line mode"

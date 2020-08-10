@@ -9,8 +9,8 @@ ______ s..
 
 # Create a fresh test file.
 f _ pathlib.Path('pathlib_chmod_example.txt')
-__ f.exists():
-    f.unlink()
+__ f.e..():
+    f.u..()
 f.write_text('contents')
 
 # Determine what permissions are already set using stat.
@@ -18,7 +18,7 @@ existing_permissions _ s...S_IMODE(f.s..().st_mode)
 print('Before: {:o}'.f..(existing_permissions))
 
 # Decide which way to toggle them.
-__ not (existing_permissions & __.X_OK):
+__ no. (existing_permissions & __.X_OK):
     print('Adding execute permission')
     new_permissions _ existing_permissions | s...S_IXUSR
 ____

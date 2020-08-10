@@ -21,7 +21,7 @@ ___ j..(fromdir, tofile):
         fileobj  _ o..(filepath, 'rb')
         while True:
             filebytes _ fileobj.read(readsize)
-            __ not filebytes: break
+            __ no. filebytes: break
             output.w..(filebytes)
         fileobj.close()
     output.close()

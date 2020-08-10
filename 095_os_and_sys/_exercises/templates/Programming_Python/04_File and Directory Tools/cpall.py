@@ -26,7 +26,7 @@ ___ copyfile(pathFrom, pathTo, maxfileload_maxfileload):
         fileTo   _ o..(pathTo,   'wb')           # need b mode for both
         while True:
             bytesFrom _ fileFrom.read(blksize)    # get one block, less at end
-            __ not bytesFrom: break               # empty after last chunk
+            __ no. bytesFrom: break               # empty after last chunk
             fileTo.w..(bytesFrom)
 
 ___ copytree(dirFrom, dirTo, verbose_0):
@@ -39,7 +39,7 @@ ___ copytree(dirFrom, dirTo, verbose_0):
     ___ filename __ __.l_d_(dirFrom):                  # for files/dirs here
         pathFrom _ __.p...j..(dirFrom, filename)
         pathTo   _ __.p...j..(dirTo,   filename)        # extend both paths
-        __ not __.p...isdir(pathFrom):                   # copy simple files
+        __ no. __.p...isdir(pathFrom):                   # copy simple files
             ___
                 __ verbose > 1: print('copying', pathFrom, 'to', pathTo)
                 copyfile(pathFrom, pathTo)
@@ -69,9 +69,9 @@ ___ getargs():
     ______:
         print('Usage error: cpall.py dirFrom dirTo')
     ____
-        __ not __.p...isdir(dirFrom):
+        __ no. __.p...isdir(dirFrom):
             print('Error: dirFrom is not a directory')
-        ____ not __.p...exists(dirTo):
+        ____ no. __.p...e..(dirTo):
             __.mkdir(dirTo)
             print('Note: dirTo was created')
             return (dirFrom, dirTo)

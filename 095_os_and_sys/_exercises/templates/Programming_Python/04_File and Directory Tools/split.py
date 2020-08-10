@@ -15,7 +15,7 @@ megabytes _ kilobytes * 1000
 chunksize _ int(1.4 * megabytes)                   # default: roughly a floppy
 
 ___ split(fromfile, todir, chunksize_chunksize):
-    __ not __.p...exists(todir):                  # caller handles errors
+    __ no. __.p...e..(todir):                  # caller handles errors
         __.mkdir(todir)                            # make dir, read/write parts
     ____
         ___ fname __ __.l_d_(todir):            # delete any existing files
@@ -24,7 +24,7 @@ ___ split(fromfile, todir, chunksize_chunksize):
     input _ o..(fromfile, 'rb')                   # use binary mode on Windows
     while True:                                    # eof=empty string from read
         chunk _ input.read(chunksize)              # get next part <= chunksize
-        __ not chunk: break
+        __ no. chunk: break
         partnum +_ 1
         filename _ __.p...j..(todir, ('part%04d' % partnum))
         fileobj  _ o..(filename, 'wb')

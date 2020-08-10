@@ -16,4 +16,4 @@ print('Permissions:', oct(stat_info.st_mode))
 print('Points to:', __.readlink(link_name))
 
 # Cleanup
-__.unlink(link_name)
+__.u..(link_name)

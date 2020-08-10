@@ -14,8 +14,8 @@ p _ pathlib.Path('touched')
 
 p.touch()
 
-print('exists before removing:', p.exists())
+print('exists before removing:', p.e..())
 
-p.unlink()
+p.u..()
 
-print('exists after removing:', p.exists())
+print('exists after removing:', p.e..())

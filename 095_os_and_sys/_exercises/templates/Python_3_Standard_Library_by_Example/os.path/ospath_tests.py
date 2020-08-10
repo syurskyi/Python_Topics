@@ -24,6 +24,6 @@ ___ file __ FILENAMES:
     print('Is Dir?     :', __.p...isdir(file))
     print('Is Link?    :', __.p...islink(file))
     print('Mountpoint? :', __.p...ismount(file))
-    print('Exists?     :', __.p...exists(file))
+    print('Exists?     :', __.p...e..(file))
     print('Link Exists?:', __.p...lexists(file))
     print()

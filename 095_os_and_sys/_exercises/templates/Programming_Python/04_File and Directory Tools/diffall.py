@@ -34,7 +34,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
     print('-' * 20)
     names1 _ __.l_d_(dir1)
     names2 _ __.l_d_(dir2)
-    __ not dirdiff.comparedirs(dir1, dir2, names1, names2):
+    __ no. dirdiff.comparedirs(dir1, dir2, names1, names2):
         diffs.append('unique files at %s - %s' % (dir1, dir2))
 
     print('Comparing contents')
@@ -52,7 +52,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
             while True:
                 bytes1 _ file1.read(blocksize)
                 bytes2 _ file2.read(blocksize)
-                __ (not bytes1) and (not bytes2):
+                __ (no. bytes1) and (no. bytes2):
                     __ verbose: print(name, 'matches')
                     break
                 __ bytes1 !_ bytes2:
@@ -79,7 +79,7 @@ __ __name__ __ '__main__':
     diffs _ []
     comparetrees(dir1, dir2, diffs, True)      # changes diffs in-place
     print('=' * 40)                            # walk, report diffs list
-    __ not diffs:
+    __ no. diffs:
         print('No diffs found.')
     ____
         print('Diffs found:', le.(diffs))
