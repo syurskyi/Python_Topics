@@ -9,7 +9,7 @@ ___ filter_files(name, function):         # filter file through function
     output.close()                        # output has a '.out' suffix
 
 ___ filter_stream(function):              # no explicit files
-    while True:                           # use standard streams
+    w__ True:                           # use standard streams
         line _ ___.stdin.readline()       # or: input()
         __ no. line: break
         print(function(line), end_'')     # or: sys.stdout.write()

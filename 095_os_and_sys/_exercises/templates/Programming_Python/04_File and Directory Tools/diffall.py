@@ -49,7 +49,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
             missed.r..(name)
             file1 _ o..(path1, 'rb')
             file2 _ o..(path2, 'rb')
-            while True:
+            w__ True:
                 bytes1 _ file1.read(blocksize)
                 bytes2 _ file2.read(blocksize)
                 __ (no. bytes1) and (no. bytes2):

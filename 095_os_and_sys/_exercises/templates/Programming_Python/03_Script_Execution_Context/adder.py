@@ -1,6 +1,6 @@
 ______ ___
 sum _ 0
-while True:
+w__ True:
     ___
         line _ input()                     # or call sys.stdin.readlines()
     ______ EOFError:                       # or for line in sys.stdin:

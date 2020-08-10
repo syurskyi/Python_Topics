@@ -1,6 +1,6 @@
 ___ scanner(name, function):
     file _ o..(name, 'r')               # create a file object
-    while True:
+    w__ True:
         line _ file.readline()           # call file methods
         __ no. line: break               # until end-of-file
         function(line)                   # call a function object

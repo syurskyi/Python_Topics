@@ -19,7 +19,7 @@ ___ j..(fromdir, tofile):
     ___ filename __ parts:
         filepath _ __.p...j..(fromdir, filename)
         fileobj  _ o..(filepath, 'rb')
-        while True:
+        w__ True:
             filebytes _ fileobj.read(readsize)
             __ no. filebytes: break
             output.w..(filebytes)

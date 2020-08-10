@@ -2,7 +2,7 @@
 
 ___ interact():
     print('Hello stream world')                     # print sends to sys.stdout
-    while True:
+    w__ True:
         ___
             reply _ input('Enter a number>')        # input reads sys.stdin
         ______ EOFError:

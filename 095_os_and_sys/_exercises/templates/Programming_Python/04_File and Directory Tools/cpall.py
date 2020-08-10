@@ -24,7 +24,7 @@ ___ copyfile(pathFrom, pathTo, maxfileload_maxfileload):
     ____
         fileFrom _ o..(pathFrom, 'rb')           # read big files in chunks
         fileTo   _ o..(pathTo,   'wb')           # need b mode for both
-        while True:
+        w__ True:
             bytesFrom _ fileFrom.read(blksize)    # get one block, less at end
             __ no. bytesFrom: break               # empty after last chunk
             fileTo.w..(bytesFrom)

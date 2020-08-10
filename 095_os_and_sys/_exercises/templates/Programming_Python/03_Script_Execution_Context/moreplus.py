@@ -30,7 +30,7 @@ ___ more(text, numlines_10):
     page multiline string to stdout
     """
     lines _ text.splitlines()
-    while lines:
+    w__ lines:
         chunk _ lines[:numlines]
         lines _ lines[numlines:]
         ___ line __ chunk: print(line)

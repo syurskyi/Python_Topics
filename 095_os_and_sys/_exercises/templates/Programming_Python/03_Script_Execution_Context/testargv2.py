@@ -2,7 +2,7 @@
 
 ___ getopts(a..):
     opts _ {}
-    while a..:
+    w__ a..:
         __ a..[0][0] __ '-':                  # find "-name value" pairs
             opts[a..[0]] _ a..[1]            # dict key is "-name" arg
             a.. _ a..[2:]

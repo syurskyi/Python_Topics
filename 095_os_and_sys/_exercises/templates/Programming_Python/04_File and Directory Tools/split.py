@@ -22,7 +22,7 @@ ___ split(fromfile, todir, chunksize_chunksize):
             __.r..(__.p...j..(todir, fname))
     partnum _ 0
     input _ o..(fromfile, 'rb')                   # use binary mode on Windows
-    while True:                                    # eof=empty string from read
+    w__ True:                                    # eof=empty string from read
         chunk _ input.read(chunksize)              # get next part <= chunksize
         __ no. chunk: break
         partnum +_ 1
