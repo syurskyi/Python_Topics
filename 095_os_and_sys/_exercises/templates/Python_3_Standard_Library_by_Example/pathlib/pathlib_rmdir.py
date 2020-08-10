@@ -13,4 +13,4 @@ ______ p_l_
 p _ p_l_.P..('example_dir')
 
 print('Removing @'.f..(p))
-p.rmdir()
+p.r_d_()
