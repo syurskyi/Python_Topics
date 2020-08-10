@@ -22,7 +22,7 @@ ___ tryprint(arg):
  
 visited  _ set()
 allsizes _ []
-___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
+___ (thisDir, subsHere, filesHere) __ __.w..(dirname):
     __ trace: tryprint(thisDir)
     thisDir _ __.p...normpath(thisDir)
     fixname _ __.p...normcase(thisDir)

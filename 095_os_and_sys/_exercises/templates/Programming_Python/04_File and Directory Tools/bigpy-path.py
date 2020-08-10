@@ -11,7 +11,7 @@ trace _ 0  # 1=dirs, 2=+files
 visited  _ {}
 allsizes _ []
 ___ srcdir __ ___.p..:
-    ___ (thisDir, subsHere, filesHere) __ __.walk(srcdir):
+    ___ (thisDir, subsHere, filesHere) __ __.w..(srcdir):
         __ trace > 0: print(thisDir)
         thisDir _ __.p...normpath(thisDir)
         fixcase _ __.p...normcase(thisDir)

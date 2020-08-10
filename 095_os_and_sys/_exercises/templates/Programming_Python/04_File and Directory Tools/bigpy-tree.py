@@ -11,7 +11,7 @@ ____
     dirname _ '/usr/lib/python'                  # Unix, Linux, Cygwin
 
 allsizes _ []
-___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
+___ (thisDir, subsHere, filesHere) __ __.w..(dirname):
     __ trace: print(thisDir)
     ___ filename __ filesHere:
         __ filename.endswith('.py'):

@@ -37,7 +37,7 @@ ___ main():
 
     # Get the list of all files in directory tree at given path
     listOfFiles _ list()
-    ___ (dirpath, dirnames, filenames) __ __.walk(dirName):
+    ___ (dirpath, dirnames, filenames) __ __.w..(dirName):
         listOfFiles +_ [__.p...j..(dirpath, file) ___ file __ filenames]
 
     # Print the files
