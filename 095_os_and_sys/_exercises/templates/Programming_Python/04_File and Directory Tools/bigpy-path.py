@@ -13,7 +13,7 @@ allsizes _ []
 ___ srcdir __ ___.p..:
     ___ (thisDir, subsHere, filesHere) __ __.w..(srcdir):
         __ trace > 0: print(thisDir)
-        thisDir _ __.p...normpath(thisDir)
+        thisDir _ __.p...n..(thisDir)
         fixcase _ __.p...normcase(thisDir)
         __ fixcase __ visited:
             continue

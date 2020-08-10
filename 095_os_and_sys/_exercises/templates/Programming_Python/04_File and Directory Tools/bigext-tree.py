@@ -24,7 +24,7 @@ visited  _ set()
 allsizes _ []
 ___ (thisDir, subsHere, filesHere) __ __.w..(d..):
     __ trace: tryprint(thisDir)
-    thisDir _ __.p...normpath(thisDir)
+    thisDir _ __.p...n..(thisDir)
     fixname _ __.p...normcase(thisDir)
     __ fixname __ visited:
         __ trace: tryprint('skipping ' + thisDir)
