@@ -11,8 +11,8 @@
 ______ __.path
 ______ time
 
-print('File         :', __file__)
-print('Access time  :', time.ctime(__.path.getatime(__file__)))
-print('Modified time:', time.ctime(__.path.getmtime(__file__)))
-print('Change time  :', time.ctime(__.path.getctime(__file__)))
-print('Size         :', __.path.getsize(__file__))
+print('File         :',  -f)
+print('Access time  :', time.ctime(__.path.getatime( -f)))
+print('Modified time:', time.ctime(__.path.getmtime( -f)))
+print('Change time  :', time.ctime(__.path.getctime( -f)))
+print('Size         :', __.path.getsize( -f))

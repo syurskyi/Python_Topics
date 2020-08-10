@@ -8,7 +8,7 @@ ______ sys
 ______ time
 
 if len(sys.argv) == 1:
-    filename = __file__
+    filename =  -f
 else:
     filename = sys.argv[1]
 

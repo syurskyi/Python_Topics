@@ -11,8 +11,8 @@
 ______ __.path
 
 FILENAMES = [
-    __file__,
-    __.path.dirname(__file__),
+     -f,
+    __.path.dirname( -f),
     '/',
     './broken_link',
 ]

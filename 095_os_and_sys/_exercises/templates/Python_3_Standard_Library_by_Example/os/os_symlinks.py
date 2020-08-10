@@ -5,10 +5,10 @@
 #end_pymotw_header
 ______ __
 
-link_name = '/tmp/' + __.path.basename(__file__)
+link_name = '/tmp/' + __.path.basename( -f)
 
-print('Creating link {} -> {}'.f..(link_name, __file__))
-__.symlink(__file__, link_name)
+print('Creating link {} -> {}'.f..(link_name,  -f))
+__.symlink( -f, link_name)
 
 stat_info = __.lstat(link_name)
 print('Permissions:', oct(stat_info.st_mode))

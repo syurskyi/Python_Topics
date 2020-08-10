@@ -15,7 +15,7 @@ w__ o..(filename, 'wt') __ f:
 # Determine what permissions are already set using stat
 existing_permissions = stat.S_IMODE(__.stat(filename).st_mode)
 
-if not __.access(filename, __.X_OK):
+if not __.a..(filename, __.X_OK):
     print('Adding execute permission')
     new_permissions = existing_permissions | stat.S_IXUSR
 else:
