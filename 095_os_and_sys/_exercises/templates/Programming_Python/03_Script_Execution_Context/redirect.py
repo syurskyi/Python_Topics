@@ -9,10 +9,10 @@ ______ sys                                      # get built-in modules
 class Output:                                   # simulated output file
     ___ __init__(self):
         self.text = ''                          # empty string when created
-    ___ write(self, string):                    # add a string of bytes
+    ___ w..(self, string):                    # add a string of bytes
         self.text += string
     ___ writelines(self, lines):                # add each line in a list
-        ___ line __ lines: self.write(line)
+        ___ line __ lines: self.w..(line)
 
 class Input:                                    # simulated input file
     ___ __init__(self, input=''):               # default argument

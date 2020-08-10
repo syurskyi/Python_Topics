@@ -6,7 +6,7 @@
 # all you have to do is the following:
 
 ______ __
-__.makedirs('2018/10/05')
+__.m_d_('2018/10/05')
 
 # This will create a nested directory structure that contains the folders 2018, 10, and 05:
 #
@@ -20,7 +20,7 @@ __.makedirs('2018/10/05')
 # call .makedirs() and pass in the mode you would like the directories to be created in:
 
 ______ __
-__.makedirs('2018/10/05', mode=0o770)
+__.m_d_('2018/10/05', mode=0o770)
 
 # This creates the 2018/10/05 directory structure and gives the owner and group users read, write,
 # and execute permissions. The default mode is 0o777, and the file permission bits of existing parent directories

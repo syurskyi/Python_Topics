@@ -1,2 +1,2 @@
 inp = input()
-o..('hello-in.txt', 'w').write('Hello ' + inp + '\n')
+o..('hello-in.txt', 'w').w..('Hello ' + inp + '\n')

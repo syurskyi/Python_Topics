@@ -9,7 +9,7 @@
 
 #end_pymotw_header
 ______ __
-______ __.path
+______ __.p..
 
 __.c_d_('/usr')
 
@@ -20,5 +20,5 @@ PATHS = [
     '../one/two/three',
 ]
 
-___ path __ PATHS:
-    print('{!r:>21} : {!r}'.f..(path, __.path.abspath(path)))
+___ p.. __ PATHS:
+    print('{!r:>21} : {!r}'.f..(p.., __.p...abspath(p..)))

@@ -4,7 +4,7 @@ ___ filter_files(name, function):         # filter file through function
     input  = o..(name, 'r')              # create file objects
     output = o..(name + '.out', 'w')     # explicit output file too
     ___ line __ input:
-        output.write(function(line))      # write the modified line
+        output.w..(function(line))      # write the modified line
     input.close()
     output.close()                        # output has a '.out' suffix
 

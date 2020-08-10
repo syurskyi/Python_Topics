@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-______ __.path
+______ __.p..
 
 PATHS = [
     'one//two//three',
@@ -16,5 +16,5 @@ PATHS = [
     'one/../alt/two/three',
 ]
 
-___ path __ PATHS:
-    print('{!r:>22} : {!r}'.f..(path, __.path.normpath(path)))
+___ p.. __ PATHS:
+    print('{!r:>22} : {!r}'.f..(p.., __.p...normpath(p..)))

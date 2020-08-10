@@ -13,9 +13,9 @@ ___ getListOfFiles(dirName):
     # Iterate over all the entries
     ___ entry __ listOfFile:
         # Create full path
-        fullPath = __.path.join(dirName, entry)
+        fullPath = __.p...j..(dirName, entry)
         # If entry is a directory then get the list of files in this directory
-        if __.path.isdir(fullPath):
+        if __.p...isdir(fullPath):
             allFiles = allFiles + getListOfFiles(fullPath)
         else:
             allFiles.append(fullPath)
@@ -38,7 +38,7 @@ ___ main():
     # Get the list of all files in directory tree at given path
     listOfFiles = list()
     ___ (dirpath, dirnames, filenames) __ __.walk(dirName):
-        listOfFiles += [__.path.join(dirpath, file) ___ file __ filenames]
+        listOfFiles += [__.p...j..(dirpath, file) ___ file __ filenames]
 
     # Print the files
     ___ elem __ listOfFiles:

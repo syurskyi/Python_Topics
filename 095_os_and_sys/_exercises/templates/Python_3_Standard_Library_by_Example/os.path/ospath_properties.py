@@ -8,11 +8,11 @@
 
 
 #end_pymotw_header
-______ __.path
+______ __.p..
 ______ time
 
 print('File         :',  -f)
-print('Access time  :', time.ctime(__.path.getatime( -f)))
-print('Modified time:', time.ctime(__.path.getmtime( -f)))
-print('Change time  :', time.ctime(__.path.getctime( -f)))
-print('Size         :', __.path.getsize( -f))
+print('Access time  :', time.ctime(__.p...getatime( -f)))
+print('Modified time:', time.ctime(__.p...getmtime( -f)))
+print('Change time  :', time.ctime(__.p...getctime( -f)))
+print('Size         :', __.p...getsize( -f))

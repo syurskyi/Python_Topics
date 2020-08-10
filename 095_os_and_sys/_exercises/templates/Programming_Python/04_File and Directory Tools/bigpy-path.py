@@ -10,11 +10,11 @@ trace = 0  # 1=dirs, 2=+files
 
 visited  = {}
 allsizes = []
-___ srcdir __ sys.path:
+___ srcdir __ sys.p..:
     ___ (thisDir, subsHere, filesHere) __ __.walk(srcdir):
         if trace > 0: print(thisDir)
-        thisDir = __.path.normpath(thisDir)
-        fixcase = __.path.normcase(thisDir)
+        thisDir = __.p...normpath(thisDir)
+        fixcase = __.p...normcase(thisDir)
         if fixcase __ visited:
             continue
         else:
@@ -22,9 +22,9 @@ ___ srcdir __ sys.path:
         ___ filename __ filesHere:
             if filename.endswith('.py'):
                 if trace > 1: print('...', filename)
-                pypath = __.path.join(thisDir, filename)
+                pypath = __.p...j..(thisDir, filename)
                 try:
-                    pysize = __.path.getsize(pypath)
+                    pysize = __.p...getsize(pypath)
                 except __.error:
                     print('skipping', pypath, sys.exc_info()[0])
                 else:

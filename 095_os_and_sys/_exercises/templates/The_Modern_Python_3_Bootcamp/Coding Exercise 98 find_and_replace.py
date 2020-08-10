@@ -3,6 +3,6 @@ ___ find_and_replace(file_name, old_word, new_word):
         text = file.read()
         new_text = text.replace(old_word, new_word)
         file.seek(0)
-        file.write(new_text)
+        file.w..(new_text)
         file.truncate()
 

@@ -16,8 +16,8 @@ ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
     ___ filename __ filesHere:
         if filename.endswith('.py'):
             if trace: print('...', filename)
-            fullname = __.path.join(thisDir, filename)
-            fullsize = __.path.getsize(fullname)
+            fullname = __.p...j..(thisDir, filename)
+            fullsize = __.p...getsize(fullname)
             allsizes.append((fullsize, fullname))
 
 allsizes.sort()

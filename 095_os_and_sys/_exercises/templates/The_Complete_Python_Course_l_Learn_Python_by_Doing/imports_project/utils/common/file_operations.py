@@ -3,7 +3,7 @@ from ..json_operations ______ dict_to_json
 
 ___ save_to_file(content, filename):
     w__ o..(filename, 'w') __ file:
-        file.write(content)
+        file.w..(content)
 
 
 ___ read_file(filename):

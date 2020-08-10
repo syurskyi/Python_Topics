@@ -7,10 +7,10 @@ ______ __
 ______ stat
 
 filename = 'os_stat_chmod_example.txt'
-if __.path.exists(filename):
+if __.p...exists(filename):
     __.unlink(filename)
 w__ o..(filename, 'wt') __ f:
-    f.write('contents')
+    f.w..('contents')
 
 # Determine what permissions are already set using stat
 existing_permissions = stat.S_IMODE(__.stat(filename).st_mode)

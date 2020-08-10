@@ -9,7 +9,7 @@ from tempfile ______ TemporaryFile
 
 # Create a temporary file and write some data to it
 fp = TemporaryFile('w+t')
-fp.write('Hello universe!')
+fp.w..('Hello universe!')
 
 # Go back to the beginning and read data from file
 fp.seek(0)
@@ -34,7 +34,7 @@ fp.close()
 # has been read:
 
 w__ TemporaryFile('w+t') __ fp:
-    fp.write('Hello universe!')
+    fp.w..('Hello universe!')
     fp.seek(0)
     fp.read()
 # File is now closed and removed
@@ -46,7 +46,7 @@ w__ TemporaryFile('w+t') __ fp:
 ______ tempfile
 w__ tempfile.TemporaryDirectory() __ tmpdir:
     print('Created temporary directory ', tmpdir)
-    __.path.exists(tmpdir)
+    __.p...exists(tmpdir)
 
 
 # Created temporary directory  /tmp/tmpoxbkrm6c

@@ -5,7 +5,7 @@ ______ __
 # List all subdirectories using os.listdir
 basepath = 'my_directory/'
 ___ entry __ __.listdir(basepath):
-    if __.path.isdir(__.path.join(basepath, entry)):
+    if __.p...isdir(__.p...j..(basepath, entry)):
         print(entry)
 
 print()

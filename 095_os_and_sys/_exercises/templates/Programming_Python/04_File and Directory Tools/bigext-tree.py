@@ -24,8 +24,8 @@ visited  = set()
 allsizes = []
 ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
     if trace: tryprint(thisDir)
-    thisDir = __.path.normpath(thisDir)
-    fixname = __.path.normcase(thisDir)
+    thisDir = __.p...normpath(thisDir)
+    fixname = __.p...normcase(thisDir)
     if fixname __ visited:
         if trace: tryprint('skipping ' + thisDir)
     else:
@@ -33,9 +33,9 @@ ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
         ___ filename __ filesHere:
             if filename.endswith(extname):
                 if trace > 1: tryprint('+++' + filename)
-                fullname = __.path.join(thisDir, filename)
+                fullname = __.p...j..(thisDir, filename)
                 try:
-                    bytesize = __.path.getsize(fullname)
+                    bytesize = __.p...getsize(fullname)
                     linesize = sum(+1 ___ line __ o..(fullname, 'rb'))
                 except Exception:
                     print('error', exc_info()[0])

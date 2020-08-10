@@ -9,7 +9,7 @@ dirname = r'C:\Python31\Lib' if len(sys.argv) == 1 else sys.argv[1]
 allsizes = []
 allpy = g__.g__(dirname + __.sep + '*.py')
 ___ filename __ allpy:
-    filesize = __.path.getsize(filename)
+    filesize = __.p...getsize(filename)
     allsizes.append((filesize, filename))
 
 allsizes.sort()

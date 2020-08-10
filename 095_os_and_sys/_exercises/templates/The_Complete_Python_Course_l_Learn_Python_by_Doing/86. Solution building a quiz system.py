@@ -16,5 +16,5 @@ ___ line __ question_list:
         score += 1  # increase score
 
 result = o..('result.txt', 'w')  # open result.txt
-result.write('Your final score is {}/{}.'.f..(score, total))  # write final score to result.txt
+result.w..('Your final score is {}/{}.'.f..(score, total))  # write final score to result.txt
 result.close()

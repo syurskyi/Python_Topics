@@ -5,7 +5,7 @@
 #end_pymotw_header
 ______ __
 
-link_name = '/tmp/' + __.path.basename( -f)
+link_name = '/tmp/' + __.p...basename( -f)
 
 print('Creating link {} -> {}'.f..(link_name,  -f))
 __.symlink( -f, link_name)

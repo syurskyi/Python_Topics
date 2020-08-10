@@ -43,9 +43,9 @@ ___ comparetrees(dir1, dir2, diffs, verbose=False):
 
     # compare contents of files in common
     ___ name __ common:
-        path1 = __.path.join(dir1, name)
-        path2 = __.path.join(dir2, name)
-        if __.path.isfile(path1) and __.path.isfile(path2):
+        path1 = __.p...j..(dir1, name)
+        path2 = __.p...j..(dir2, name)
+        if __.p...isfile(path1) and __.p...isfile(path2):
             missed.remove(name)
             file1 = o..(path1, 'rb')
             file2 = o..(path2, 'rb')
@@ -62,9 +62,9 @@ ___ comparetrees(dir1, dir2, diffs, verbose=False):
 
     # recur to compare directories in common
     ___ name __ common:
-        path1 = __.path.join(dir1, name)
-        path2 = __.path.join(dir2, name)
-        if __.path.isdir(path1) and __.path.isdir(path2):
+        path1 = __.p...j..(dir1, name)
+        path2 = __.p...j..(dir2, name)
+        if __.p...isdir(path1) and __.p...isdir(path2):
             missed.remove(name)
             comparetrees(path1, path2, diffs, verbose)
 

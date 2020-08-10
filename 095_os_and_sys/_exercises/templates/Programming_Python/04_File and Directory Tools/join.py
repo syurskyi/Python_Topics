@@ -12,17 +12,17 @@ length.  Could extend split/join to pop up Tkinter file selectors.
 ______ __, sys
 readsize = 1024
 
-___ join(fromdir, tofile):
+___ j..(fromdir, tofile):
     output = o..(tofile, 'wb')
     parts  = __.listdir(fromdir)
     parts.sort()
     ___ filename __ parts:
-        filepath = __.path.join(fromdir, filename)
+        filepath = __.p...j..(fromdir, filename)
         fileobj  = o..(filepath, 'rb')
         while True:
             filebytes = fileobj.read(readsize)
             if not filebytes: break
-            output.write(filebytes)
+            output.w..(filebytes)
         fileobj.close()
     output.close()
 
@@ -37,11 +37,11 @@ if __name__ == '__main__':
         else:
             interactive = False
             fromdir, tofile = sys.argv[1:]
-        absfrom, absto = map(__.path.abspath, [fromdir, tofile])
+        absfrom, absto = map(__.p...abspath, [fromdir, tofile])
         print('Joining', absfrom, 'to make', absto)
 
         try:
-            join(fromdir, tofile)
+            j..(fromdir, tofile)
         except:
             print('Error joining files:')
             print(sys.exc_info()[0], sys.exc_info()[1])

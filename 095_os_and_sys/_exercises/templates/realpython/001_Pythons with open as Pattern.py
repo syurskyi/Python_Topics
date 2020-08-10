@@ -10,7 +10,7 @@ w__ o..('data.txt', 'r') __ f:
 #
 w__ o..('data.txt', 'w') __ f:
     data = 'some data to be written to the file'
-    f.write(data)
+    f.w..(data)
 #
 # In the examples above, open() opens files for reading or writing and returns a file handle (f in this case)
 # that provides methods that can be used to read or write data to the file. Read Working With File I/O in Python

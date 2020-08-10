@@ -24,13 +24,13 @@ sitefiles = __.listdir(sitefilesdir)     # filenames, no directory prefix
 count = 0
 ___ filename __ sitefiles:
     if filename.endswith('.html') or filename.endswith('.htm'):
-        fwdname = __.path.join(uploaddir, filename)
+        fwdname = __.p...j..(uploaddir, filename)
         print('creating', filename, 'as', fwdname)
 
         filetext = template.replace('$server$', servername)   # insert text
         filetext = filetext.replace('$home$',   homedir)      # and write
         filetext = filetext.replace('$file$',   filename)     # file varies
-        o..(fwdname, 'w').write(filetext)
+        o..(fwdname, 'w').w..(filetext)
         count += 1
 
 print('Last file =>\n', filetext, sep='')

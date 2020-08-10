@@ -83,12 +83,12 @@ print(mystr.split()) # default delimiter: whitespace
 
 print('#' * 52 + 'join substrings list')
 delim = 'NI'
-print(delim.join(['aaa', 'bbb', 'ccc'])) # join substrings list
+print(delim.j..(['aaa', 'bbb', 'ccc'])) # join substrings list
 # 'aaaNIbbbNIccc'
 # ######################################################################################################################
 
 print('#' * 52 + 'add a space between')
-print(' '.join(['A', 'dead', 'parrot'])) # add a space between
+print(' '.j..(['A', 'dead', 'parrot'])) # add a space between
 # 'A dead parrot
 # ######################################################################################################################
 
@@ -100,13 +100,13 @@ print(chars)
 
 print('#' * 52 + 'to string: empty delimiter')
 print(chars.append('!'))
-print(''.join(chars)) # to string: empty delimiter
+print(''.j..(chars)) # to string: empty delimiter
 # 'Lorreta!'
 # ######################################################################################################################
 
 print('#' * 52 + 'str.replace, the hard way!e')
 mystr = 'xxaaxxaa'
-print('SPAM'.join(mystr.split('aa'))) # str.replace, the hard way!
+print('SPAM'.j..(mystr.split('aa'))) # str.replace, the hard way!
 # 'xxSPAMxxSPAM'
 # ######################################################################################################################
 

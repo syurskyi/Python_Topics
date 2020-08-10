@@ -5,7 +5,7 @@ ______ zipfile
 file_list = ['file1.py', 'sub_dir/', 'sub_dir/bar.py', 'sub_dir/foo.py']
 w__ zipfile.ZipFile('new.zip', 'w') __ new_zip:
     ___ name __ file_list:
-        new_zip.write(name)
+        new_zip.w..(name)
 
 # In the example, new_zip is opened in write mode and each file in file_list is added to the archive.
 # When the with statement suite is finished, new_zip is closed. Opening a ZIP file in write mode erases
@@ -15,8 +15,8 @@ w__ zipfile.ZipFile('new.zip', 'w') __ new_zip:
 #
 # Open a ZipFile object in append mode
 w__ zipfile.ZipFile('new.zip', 'a') __ new_zip:
-    new_zip.write('data.txt')
-    new_zip.write('latin.txt')
+    new_zip.w..('data.txt')
+    new_zip.w..('latin.txt')
 
 # Here, you open the new.zip archive you created in the previous example in append mode. Opening the ZipFile object
 # in append mode allows you to add new files to the ZIP file without deleting its current contents.

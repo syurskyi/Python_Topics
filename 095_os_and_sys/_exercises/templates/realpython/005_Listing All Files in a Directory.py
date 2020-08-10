@@ -7,7 +7,7 @@ ______ __
 # List all files in a directory using os.listdir
 basepath = 'my_directory/'
 ___ entry __ __.listdir(basepath):
-    if __.path.isfile(__.path.join(basepath, entry)):
+    if __.p...isfile(__.p...j..(basepath, entry)):
         print(entry)
 
 print()

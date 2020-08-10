@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-______ __.path
+______ __.p..
 
 PATHS = [
     'filename.txt',
@@ -20,5 +20,5 @@ PATHS = [
     'no-extension.',
 ]
 
-___ path __ PATHS:
-    print('{!r:>21} : {!r}'.f..(path, __.path.splitext(path)))
+___ p.. __ PATHS:
+    print('{!r:>21} : {!r}'.f..(p.., __.p...splitext(p..)))

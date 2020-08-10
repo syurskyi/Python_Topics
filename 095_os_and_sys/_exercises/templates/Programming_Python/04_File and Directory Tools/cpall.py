@@ -18,16 +18,16 @@ ___ copyfile(pathFrom, pathTo, maxfileload=maxfileload):
     Copy one file pathFrom to pathTo, byte for byte;
     uses binary file modes to supress Unicde decode and endline transform
     """
-    if __.path.getsize(pathFrom) <= maxfileload:
+    if __.p...getsize(pathFrom) <= maxfileload:
         bytesFrom = o..(pathFrom, 'rb').read()   # read small file all at once
-        o..(pathTo, 'wb').write(bytesFrom)
+        o..(pathTo, 'wb').w..(bytesFrom)
     else:
         fileFrom = o..(pathFrom, 'rb')           # read big files in chunks
         fileTo   = o..(pathTo,   'wb')           # need b mode for both
         while True:
             bytesFrom = fileFrom.read(blksize)    # get one block, less at end
             if not bytesFrom: break               # empty after last chunk
-            fileTo.write(bytesFrom)
+            fileTo.w..(bytesFrom)
 
 ___ copytree(dirFrom, dirTo, verbose=0):
     """
@@ -37,9 +37,9 @@ ___ copytree(dirFrom, dirTo, verbose=0):
     """
     fcount = dcount = 0
     ___ filename __ __.listdir(dirFrom):                  # for files/dirs here
-        pathFrom = __.path.join(dirFrom, filename)
-        pathTo   = __.path.join(dirTo,   filename)        # extend both paths
-        if not __.path.isdir(pathFrom):                   # copy simple files
+        pathFrom = __.p...j..(dirFrom, filename)
+        pathTo   = __.p...j..(dirTo,   filename)        # extend both paths
+        if not __.p...isdir(pathFrom):                   # copy simple files
             try:
                 if verbose > 1: print('copying', pathFrom, 'to', pathTo)
                 copyfile(pathFrom, pathTo)
@@ -69,18 +69,18 @@ ___ getargs():
     except:
         print('Usage error: cpall.py dirFrom dirTo')
     else:
-        if not __.path.isdir(dirFrom):
+        if not __.p...isdir(dirFrom):
             print('Error: dirFrom is not a directory')
-        elif not __.path.exists(dirTo):
+        elif not __.p...exists(dirTo):
             __.mkdir(dirTo)
             print('Note: dirTo was created')
             return (dirFrom, dirTo)
         else:
             print('Warning: dirTo already exists')
-            if hasattr(__.path, 'samefile'):
-                same = __.path.samefile(dirFrom, dirTo)
+            if hasattr(__.p.., 'samefile'):
+                same = __.p...samefile(dirFrom, dirTo)
             else:
-                same = __.path.abspath(dirFrom) == __.path.abspath(dirTo)
+                same = __.p...abspath(dirFrom) == __.p...abspath(dirTo)
             if same:
                 print('Error: dirFrom same as dirTo')
             else:

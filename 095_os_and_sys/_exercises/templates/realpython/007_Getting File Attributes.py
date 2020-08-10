@@ -29,8 +29,8 @@ print()
 
 from pathlib ______ Path
 current_dir = Path('my_directory')
-___ path __ current_dir.iterdir():
-    info = path.stat()
+___ p.. __ current_dir.iterdir():
+    info = p...stat()
     print(info.st_mtime)
 
 print()

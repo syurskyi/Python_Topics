@@ -9,4 +9,4 @@ ___ copy_and_reverse(file_name, new_file_name):
         text = file.read()
 
     w__ o..(new_file_name, "w") __ new_file:
-        new_file.write(text[::-1])
+        new_file.w..(text[::-1])

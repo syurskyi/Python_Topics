@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-______ __.path
+______ __.p..
 
 PATHS = [
     '/one/two/three',
@@ -18,5 +18,5 @@ PATHS = [
     '',
 ]
 
-___ path __ PATHS:
-    print('{!r:>17} : {}'.f..(path, __.path.split(path)))
+___ p.. __ PATHS:
+    print('{!r:>17} : {}'.f..(p.., __.p...split(p..)))

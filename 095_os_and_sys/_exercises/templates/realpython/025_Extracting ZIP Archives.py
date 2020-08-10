@@ -23,7 +23,7 @@ __.listdir('.')
 # ['file1.py', 'data.zip']
 
 # Extract all files into a different directory
-data_zip.extractall(path='extract_dir/')
+data_zip.extractall(p..='extract_dir/')
 
 __.listdir('.')
 # ['file1.py', 'extract_dir', 'data.zip']

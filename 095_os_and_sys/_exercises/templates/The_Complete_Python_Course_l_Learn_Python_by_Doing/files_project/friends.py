@@ -18,6 +18,6 @@ nearby_friends_file = o..('nearby_friends.txt', 'w')
 
 ___ friend __ friends_nearby_set:
     print(f'{friend} is nearby! Meet up with them.')
-    nearby_friends_file.write(f'{friend}\n')
+    nearby_friends_file.w..(f'{friend}\n')
 
 nearby_friends_file.close()

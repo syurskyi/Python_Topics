@@ -23,7 +23,7 @@ ______ __
 data_file = 'home/data.txt'
 
 # If the file exists, delete it
-if __.path.isfile(data_file):
+if __.p...isfile(data_file):
     __.remove(data_file)
 else:
     print(f'Error: {data_file} not a valid filename')
