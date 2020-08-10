@@ -7,8 +7,8 @@
 # specials _ '?*['
 #
 # ___ car __ ?
-#     pattern _ dir/* + g__.e..  ch.. + .txt
-#     print('Searching for: {!r}'.f.. ?
-#     ___ name __ so..(g__.g__ ?
+#     pattern _ dir/@ + g__.e..  ch.. + .txt
+#     print('Searching for: |__|'.f.. ?
+#     ___ name __ so.. g__.g__ ?
 #         print ?
 #     print()
