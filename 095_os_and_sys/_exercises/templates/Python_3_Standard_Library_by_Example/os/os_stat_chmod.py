@@ -3,8 +3,8 @@
 """
 
 #end_pymotw_header
-import os
-import stat
+______ os
+______ stat
 
 filename = 'os_stat_chmod_example.txt'
 if os.path.exists(filename):

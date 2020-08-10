@@ -4,8 +4,8 @@
 # that allows you to specify a different directory to extract files to. If the directory does not exist,
 # it is automatically created. To extract files from the archive, do the following:
 
-import zipfile
-import os
+______ zipfile
+______ os
 
 os.listdir('.')
 

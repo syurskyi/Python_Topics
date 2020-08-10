@@ -8,12 +8,12 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 p = pathlib.PurePosixPath('/usr/local/lib')
 
 print('parent: {}'.format(p.parent))
 
 print('\nhierarchy:')
-for up in p.parents:
+___ up __ p.parents:
     print(up)

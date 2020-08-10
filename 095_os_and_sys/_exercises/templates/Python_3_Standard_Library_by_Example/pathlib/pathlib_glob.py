@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 p = pathlib.Path('..')
 
-for f in p.glob('*.rst'):
+___ f __ p.g__('*.rst'):
     print(f)

@@ -23,11 +23,11 @@ print(mystr.replace('aa', 'SPAM')) # global replacement
 
 print('#' * 52 + 'in')
 mystr = 'xxxSPAMxxx'
-print('SPAM' in mystr) # substring search/test
+print('SPAM' __ mystr) # substring search/test
 # True
 # ######################################################################################################################
 
-print('Ni' in mystr) # when not found
+print('Ni' __ mystr) # when not found
 # False
 # ######################################################################################################################
 
@@ -60,7 +60,7 @@ print(mystr.isdigit())
 # ######################################################################################################################
 
 print('#' * 52 + 'ascii_lowercase')
-import string # case presets: for 'in', etc.
+______ string # case presets: for 'in', etc.
 print(string.ascii_lowercase)
 # 'abcdefghijklmnopqrstuvwxyz'
 # ######################################################################################################################

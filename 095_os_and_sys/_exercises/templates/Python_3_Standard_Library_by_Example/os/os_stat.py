@@ -3,9 +3,9 @@
 """
 
 #end_pymotw_header
-import os
-import sys
-import time
+______ os
+______ sys
+______ time
 
 if len(sys.argv) == 1:
     filename = __file__

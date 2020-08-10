@@ -1,10 +1,10 @@
 # To list subdirectories instead of files, use one of the methods below. Here’s how to use os.listdir() and os.path():
 #
-import os
+______ os
 
 # List all subdirectories using os.listdir
 basepath = 'my_directory/'
-for entry in os.listdir(basepath):
+___ entry __ os.listdir(basepath):
     if os.path.isdir(os.path.join(basepath, entry)):
         print(entry)
 
@@ -20,12 +20,12 @@ print()
 #
 # Here’s how to use os.scandir():
 
-import os
+______ os
 
 # List all subdirectories using scandir()
 basepath = 'my_directory/'
 with os.scandir(basepath) as entries:
-    for entry in entries:
+    ___ entry __ entries:
         if entry.is_dir():
             print(entry.name)
 
@@ -41,11 +41,11 @@ print()
 #
 # Here’s how to use pathlib.Path():
 
-from pathlib import Path
+from pathlib ______ Path
 
 # List all subdirectory using pathlib
 basepath = Path('my_directory/')
-for entry in basepath.iterdir():
+___ entry __ basepath.iterdir():
     if entry.is_dir():
         print(entry.name)
 

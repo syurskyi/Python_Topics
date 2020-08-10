@@ -1,4 +1,4 @@
-import sys
+______ sys
 sum = 0
-for line in sys.stdin: sum += int(line)
+___ line __ sys.stdin: sum += int(line)
 print(sum)

@@ -1,4 +1,4 @@
-# import __
+# ______ __
 # __.c.m.'spam.txt', 0o777) # enable all accesses
 #
 # __.r.n. _'C:\temp\spam.txt'  _'C:\temp\eggs.txt' # from, to

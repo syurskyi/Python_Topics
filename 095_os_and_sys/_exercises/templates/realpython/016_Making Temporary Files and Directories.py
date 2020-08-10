@@ -4,8 +4,8 @@
 #
 # Here’s how to create a temporary file:
 #
-import os
-from tempfile import TemporaryFile
+______ os
+from tempfile ______ TemporaryFile
 
 # Create a temporary file and write some data to it
 fp = TemporaryFile('w+t')
@@ -18,7 +18,7 @@ data = fp.read()
 # Close the file, after which it will be removed
 fp.close()
 
-# The first step is to import TemporaryFile from the tempfile module. Next, create a file like object using
+# The first step is to ______ TemporaryFile from the tempfile module. Next, create a file like object using
 # the TemporaryFile() method by calling it and passing the mode you want to open the file in. This will create and open
 # a file that can be used as a temporary storage area. In the example above, the mode is 'w+t', which makes tempfile
 # create a temporary text file in write mode. There is no need to give the temporary file a filename since
@@ -43,7 +43,7 @@ with TemporaryFile('w+t') as fp:
 # closed and deleted from the file system.
 # tempfile can also be used to create temporary directories. Let’s look at how you can do this using tempfile.TemporaryDirectory():
 
-import tempfile
+______ tempfile
 with tempfile.TemporaryDirectory() as tmpdir:
     print('Created temporary directory ', tmpdir)
     os.path.exists(tmpdir)

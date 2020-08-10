@@ -2,7 +2,7 @@
 #
 # src is the file or directory to be moved and dst is the destination:
 #
-import shutil
+______ shutil
 shutil.move('dir_1/', 'backup/')
 
 # 'backup'

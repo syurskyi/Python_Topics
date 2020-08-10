@@ -1,6 +1,6 @@
 # To delete non-empty directories and entire directory trees, Python offers shutil.rmtree():
 #
-# import shutil
+# ______ shutil
 #
 # trash_dir = 'my_documents/bad_dir'
 #
@@ -13,7 +13,7 @@
 # to delete empty folders recursively. You can do this using one of the methods discussed above in conjunction
 # with os.walk():
 #
-# import os
+# ______ os
 #
 # for dirpath, dirnames, files in os.walk('.', topdown=False):
 #     try:

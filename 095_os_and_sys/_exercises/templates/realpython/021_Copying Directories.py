@@ -4,7 +4,7 @@
 #
 # Here’s an example of how to copy the contents of one folder to a different location:
 #
-import shutil
+______ shutil
 shutil.copytree('data_1', 'data1_backup')
 
 # 'data1_backup'

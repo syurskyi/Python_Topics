@@ -1,6 +1,6 @@
 #!/usr/local/bin/python
-from sys import argv
-from scanfile import scanner
+from sys ______ argv
+from scanfile ______ scanner
 class UnknownCommand(Exception): pass
 
 def processLine(line):                      # define a function

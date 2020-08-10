@@ -1,5 +1,5 @@
-from __future__ import print_function
-import sys                                  # or sorted(sys.stdin)
+from __future__ ______ print_function
+______ sys                                  # or sorted(sys.stdin)
 lines = sys.stdin.readlines()               # sort stdin input lines,
 lines.sort()                                # send result to stdout
-for line in lines: print(line, end='')      # for further processing
+___ line __ lines: print(line, end='')      # for further processing

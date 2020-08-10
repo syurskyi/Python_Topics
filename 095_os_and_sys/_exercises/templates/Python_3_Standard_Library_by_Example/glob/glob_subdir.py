@@ -27,12 +27,12 @@
 """
 
 #end_pymotw_header
-import glob
+______ g__
 
 print('Named explicitly:')
-for name in sorted(glob.glob('dir/subdir/*')):
+___ name __ so..(g__.g__('dir/subdir/*')):
     print('  {}'.format(name))
 
 print('Named with wildcard:')
-for name in sorted(glob.glob('dir/*/*')):
+___ name __ so..(g__.g__('dir/*/*')):
     print('  {}'.format(name))

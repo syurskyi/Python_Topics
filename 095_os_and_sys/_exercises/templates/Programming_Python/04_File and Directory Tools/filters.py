@@ -1,9 +1,9 @@
-import sys
+______ sys
 
 def filter_files(name, function):         # filter file through function
     input  = open(name, 'r')              # create file objects
     output = open(name + '.out', 'w')     # explicit output file too
-    for line in input:
+    ___ line __ input:
         output.write(function(line))      # write the modified line
     input.close()
     output.close()                        # output has a '.out' suffix

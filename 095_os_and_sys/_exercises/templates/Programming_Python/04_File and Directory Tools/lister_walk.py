@@ -1,11 +1,11 @@
 "list file tree with os.walk"
 
-import sys, os
+______ sys, os
 
 def lister(root):                                           # for a root dir
-    for (thisdir, subshere, fileshere) in os.walk(root):    # generate dirs in tree
+    ___ (thisdir, subshere, fileshere) __ os.walk(root):    # generate dirs in tree
         print('[' + thisdir + ']')
-        for fname in fileshere:                             # print files in this dir
+        ___ fname __ fileshere:                             # print files in this dir
             path = os.path.join(thisdir, fname)             # add dir name prefix
             print(path)
 

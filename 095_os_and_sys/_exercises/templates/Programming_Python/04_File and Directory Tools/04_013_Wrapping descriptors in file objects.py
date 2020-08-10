@@ -1,4 +1,4 @@
-# import __
+# ______ __
 # fdfile = __.o...(r'C:\temp\spam.txt', (__.O_R... | __.O_B..))
 # ?
 # # 3

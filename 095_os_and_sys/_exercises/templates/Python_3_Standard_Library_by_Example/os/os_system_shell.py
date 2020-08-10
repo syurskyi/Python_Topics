@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 # Command with shell expansion
 os.system('echo $TMPDIR')

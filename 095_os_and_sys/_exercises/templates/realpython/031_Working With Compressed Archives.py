@@ -5,7 +5,7 @@
 # For example, to read or write data to a TAR archive compressed using gzip, use the 'r:gz' or 'w:gz'
 # modes respectively:
 
-import tarfile
+______ tarfile
 
 files = ['app.py', 'config.py', 'tests.py']
 with tarfile.open('packages.tar.gz', mode='w:gz') as tar:
@@ -14,7 +14,7 @@ with tarfile.open('packages.tar.gz', mode='w:gz') as tar:
     tar.add('tests.py')
 
 with tarfile.open('packages.tar.gz', mode='r:gz') as t:
-    for member in t.getmembers():
+    ___ member __ t.getmembers():
         print(member.name)
 
 # app.py

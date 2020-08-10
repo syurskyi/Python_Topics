@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-import os.path
+______ os.path
 
 FILENAMES = [
     __file__,
@@ -17,7 +17,7 @@ FILENAMES = [
     './broken_link',
 ]
 
-for file in FILENAMES:
+___ file __ FILENAMES:
     print('File        : {!r}'.format(file))
     print('Absolute    :', os.path.isabs(file))
     print('Is File?    :', os.path.isfile(file))

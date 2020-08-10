@@ -8,7 +8,7 @@
 # irectory you’re trying to delete is empty. If the directory isn’t empty, an OSError is raised. Here is how to delete
 # a folder:
 
-import os
+______ os
 
 trash_dir = 'my_documents/bad_dir'
 
@@ -26,7 +26,7 @@ except OSError as e:
 #
 # Alternatively, you can use pathlib to delete directories:
 
-from pathlib import Path
+from pathlib ______ Path
 
 trash_dir = Path('my_documents/bad_dir')
 

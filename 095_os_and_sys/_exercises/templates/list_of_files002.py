@@ -1,5 +1,5 @@
-from __future__ import print_function
-import os, sys
+from __future__ ______ print_function
+______ os, sys
 
 path = '.'
 
@@ -7,7 +7,7 @@ if len(sys.argv) == 2:
     path = sys.argv[1]
 
 files = os.listdir(path)
-for name in files:
+___ name __ files:
     print(name)
 
     full_path = os.path.join(path, name)

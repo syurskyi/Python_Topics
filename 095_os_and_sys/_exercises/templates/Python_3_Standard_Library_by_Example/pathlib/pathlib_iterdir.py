@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 p = pathlib.Path('.')
 
-for f in p.iterdir():
+___ f __ p.iterdir():
     print(f)

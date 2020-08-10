@@ -8,9 +8,9 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 p = pathlib.Path('..')
 
-for f in p.rglob('pathlib_*.py'):
+___ f __ p.rglob('pathlib_*.py'):
     print(f)

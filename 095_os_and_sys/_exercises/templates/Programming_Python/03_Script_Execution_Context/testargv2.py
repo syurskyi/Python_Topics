@@ -11,8 +11,8 @@ def getopts(argv):
     return opts
 
 if __name__ == '__main__':
-    from sys import argv                       # example client code
+    from sys ______ argv                       # example client code
     myargs = getopts(argv)
-    if '-i' in myargs:
+    if '-i' __ myargs:
         print(myargs['-i'])
     print(myargs)

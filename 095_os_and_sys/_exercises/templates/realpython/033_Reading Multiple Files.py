@@ -2,8 +2,8 @@
 # This module allows you to loop over the contents of one or more text files quickly and easily. Here’s the typical
 # way fileinput is used:
 
-import fileinput
-for line in fileinput.input():
+______ fileinput
+___ line __ fileinput.input():
     process(line)
 
 # fileinput gets its input from command line arguments passed to sys.argv by default.
@@ -15,8 +15,8 @@ for line in fileinput.input():
 # cat will concatenate the text files and display the result in the terminal:
 #
 # # File: fileinput-example.py
-# import fileinput
-# import sys
+# ______ fileinput
+# ______ sys
 #
 # files = fileinput.input()
 # for line in files:

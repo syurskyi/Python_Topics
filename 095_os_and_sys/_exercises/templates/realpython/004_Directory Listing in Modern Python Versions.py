@@ -3,7 +3,7 @@
 # os.scandir() was introduced in Python 3.5 and is documented in PEP 471. os.scandir() returns an iterator as opposed
 # to a list when called:
 
-import os
+______ os
 entries = os.scandir('my_directory/')
 print(entries)
 
@@ -12,10 +12,10 @@ print(entries)
 # The ScandirIterator points to all the entries in the current directory. You can loop over the contents
 # of the iterator and print out the filenames:
 #
-import os
+______ os
 
 with os.scandir('my_directory/') as entries:
-    for entry in entries:
+    ___ entry __ entries:
         print(entry.name)
 
 # Here, os.scandir() is used in conjunction with the with statement because it supports the context manager protocol.
@@ -33,10 +33,10 @@ with os.scandir('my_directory/') as entries:
 # Another way to get a directory listing is to use the pathlib module:
 print()
 
-from pathlib import Path
+from pathlib ______ Path
 
 entries = Path('my_directory/')
-for entry in entries.iterdir():
+___ entry __ entries.iterdir():
     print(entry.name)
 #
 # The objects returned by Path are either PosixPath or WindowsPath objects depending on the OS.

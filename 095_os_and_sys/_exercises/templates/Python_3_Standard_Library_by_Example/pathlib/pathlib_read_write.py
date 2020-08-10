@@ -8,7 +8,7 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 f = pathlib.Path('example.txt')
 

@@ -3,8 +3,8 @@
 """
 
 #end_pymotw_header
-import pathlib
-import time
+______ pathlib
+______ time
 
 p = pathlib.Path('touched')
 if p.exists():

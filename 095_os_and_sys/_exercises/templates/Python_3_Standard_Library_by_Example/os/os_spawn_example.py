@@ -3,6 +3,6 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 os.spawnlp(os.P_WAIT, 'pwd', 'pwd', '-P')

@@ -1,12 +1,12 @@
 # To create a single directory, pass a path to the directory as a parameter to os.mkdir():
 #
-# import os
+# ______ os
 # os.mkdir('example_directory/')
 
 # If a directory already exists, os.mkdir() raises FileExistsError. Alternatively, you can create a directory using
 # pathlib:
 
-from pathlib import Path
+from pathlib ______ Path
 
 p = Path('example_directory/')
 p.mkdir()
@@ -25,7 +25,7 @@ p.mkdir()
 #
 # To avoid errors like this, catch the error when it happens and let your user know:
 
-from pathlib import Path
+from pathlib ______ Path
 
 p = Path('example_directory')
 try:
@@ -35,7 +35,7 @@ except FileExistsError as exc:
 
 # Alternatively, you can ignore the FileExistsError by passing the exist_ok=True argument to .mkdir():
 
-from pathlib import Path
+from pathlib ______ Path
 
 p = Path('example_directory')
 p.mkdir(exist_ok=True)

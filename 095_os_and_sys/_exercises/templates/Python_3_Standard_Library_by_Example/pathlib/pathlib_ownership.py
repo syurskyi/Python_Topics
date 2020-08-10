@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 p = pathlib.Path(__file__)
 

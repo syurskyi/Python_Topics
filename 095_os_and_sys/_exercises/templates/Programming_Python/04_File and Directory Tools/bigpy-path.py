@@ -1,25 +1,25 @@
 """
-Find the largest Python source file on the module import search path.
+Find the largest Python source file on the module ______ search path.
 Skip already-visited directories, normalize path and case so they will
 match properly, and include line counts in pprinted result. It's not
 enough to use os.environ['PYTHONPATH']: this is a subset of sys.path.
 """
 
-import sys, os, pprint
+______ sys, os, pprint
 trace = 0  # 1=dirs, 2=+files
 
 visited  = {}
 allsizes = []
-for srcdir in sys.path:
-    for (thisDir, subsHere, filesHere) in os.walk(srcdir):
+___ srcdir __ sys.path:
+    ___ (thisDir, subsHere, filesHere) __ os.walk(srcdir):
         if trace > 0: print(thisDir)
         thisDir = os.path.normpath(thisDir)
         fixcase = os.path.normcase(thisDir)
-        if fixcase in visited:
+        if fixcase __ visited:
             continue
         else:
             visited[fixcase] = True
-        for filename in filesHere:
+        ___ filename __ filesHere:
             if filename.endswith('.py'):
                 if trace > 1: print('...', filename)
                 pypath = os.path.join(thisDir, filename)

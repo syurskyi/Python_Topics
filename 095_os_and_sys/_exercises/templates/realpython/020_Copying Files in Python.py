@@ -1,7 +1,7 @@
 # shutil offers a couple of functions for copying files. The most commonly used functions are shutil.copy()
 # and shutil.copy2(). To copy a file from one location to another using shutil.copy(), do the following:
 
-import shutil
+______ shutil
 
 src = 'path/to/file.txt'
 dst = 'path/to/dest_dir'
@@ -14,7 +14,7 @@ shutil.copy(src, dst)
 #
 # To preserve all file metadata when copying, use shutil.copy2():
 
-import shutil
+______ shutil
 
 src = 'path/to/file.txt'
 dst = 'path/to/dest_dir'

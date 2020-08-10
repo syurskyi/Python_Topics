@@ -1,4 +1,4 @@
-from addition import Addition
+from addition ______ Addition
 
 
 class Calculator:
@@ -13,7 +13,7 @@ class Calculator:
     @classmethod
     def multiply(cls, num1, num2):
         res = 0
-        for x in range(0, num2):
+        ___ x __ range(0, num2):
             res = cls.add(res, num1)  # add num1 for num2 times
         return res
 

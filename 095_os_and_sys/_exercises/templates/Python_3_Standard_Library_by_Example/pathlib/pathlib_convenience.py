@@ -8,7 +8,7 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 home = pathlib.Path.home()
 print('home: ', home)

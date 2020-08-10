@@ -2,10 +2,10 @@
 # and .endswith(), are useful when you’re searching for patterns in filenames. To do this, first get a directory listing
 # and then iterate over it:
 
-import os
+______ os
 
 # Get .txt files
-for f_name in os.listdir('some_directory'):
+___ f_name __ os.listdir('some_directory'):
     if f_name.endswith('.txt'):
         print(f_name)
 

@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
-import sys
+______ os
+______ sys
 
-print(sorted(os.listdir(sys.argv[1])))
+print(so..(os.listdir(sys.argv[1])))

@@ -8,7 +8,7 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 ind = pathlib.PurePosixPath('source/pathlib/index.rst')
 print(ind)

@@ -3,10 +3,10 @@
 """
 
 #end_pymotw_header
-import os
-import sys
+______ os
+______ sys
 
-for entry in os.scandir(sys.argv[1]):
+___ entry __ os.scandir(sys.argv[1]):
     if entry.is_dir():
         typ = 'dir'
     elif entry.is_file():

@@ -10,7 +10,7 @@
 #
 # This is how to create a TAR archive using shutil:
 
-import shutil
+______ shutil
 
 # shutil.make_archive(base_name, format, root_dir)
 shutil.make_archive('data/backup', 'tar', 'data/')

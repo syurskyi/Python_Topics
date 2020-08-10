@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 link_name = '/tmp/' + os.path.basename(__file__)
 

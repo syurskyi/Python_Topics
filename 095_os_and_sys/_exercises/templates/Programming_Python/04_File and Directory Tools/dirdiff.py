@@ -8,7 +8,7 @@ extension that does the latter by comparing .read() results.
 ################################################################################
 """
 
-import os, sys
+______ os, sys
 
 def reportdiffs(unique1, unique2, dir1, dir2):
     """
@@ -19,11 +19,11 @@ def reportdiffs(unique1, unique2, dir1, dir2):
     else:
         if unique1:
             print('Files unique to', dir1)
-            for file in unique1:
+            ___ file __ unique1:
                 print('...', file)
         if unique2:
             print('Files unique to', dir2)
-            for file in unique2:
+            ___ file __ unique2:
                 print('...', file)
 
 def difference(seq1, seq2):
@@ -32,7 +32,7 @@ def difference(seq1, seq2):
     a set(seq1) - set(seq2) would work too, but sets are randomly 
     ordered, so any platform-dependent directory order would be lost
     """
-    return [item for item in seq1 if item not in seq2]
+    return [item ___ item __ seq1 if item not __ seq2]
 
 
 def comparedirs(dir1, dir2, files1=None, files2=None):

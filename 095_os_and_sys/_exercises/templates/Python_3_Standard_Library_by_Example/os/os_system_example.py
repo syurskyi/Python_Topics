@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 # Simple command
 os.system('pwd')

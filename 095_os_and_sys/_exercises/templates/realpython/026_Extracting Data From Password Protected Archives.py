@@ -1,7 +1,7 @@
 # zipfile supports extracting password protected ZIPs. To extract password protected ZIP files, pass in the password
 # to the .extract() or .extractall() method as an argument:
 #
-import zipfile
+______ zipfile
 
 with zipfile.ZipFile('secret.zip', 'r') as pwd_zip:
     # Extract from a password protected archive

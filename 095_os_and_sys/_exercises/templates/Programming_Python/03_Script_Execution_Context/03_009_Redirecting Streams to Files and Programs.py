@@ -1,5 +1,5 @@
 # C:\...\PP4E\System\Streams> python teststreams.py
-import teststreams
+______ teststreams
 
 # Hello stream world
 # Enter a number>12

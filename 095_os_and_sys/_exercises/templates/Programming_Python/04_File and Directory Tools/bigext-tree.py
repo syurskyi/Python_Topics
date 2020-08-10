@@ -5,8 +5,8 @@ Also uses sets, file iterators and generator to avoid loading entire
 file, and attempts to work around undecodable dir/file name prints.
 """
 
-import os, pprint
-from sys import argv, exc_info
+______ os, pprint
+from sys ______ argv, exc_info
 
 trace = 1                                    # 0=off, 1=dirs, 2=+files
 dirname, extname = os.curdir, '.py'          # default is .py files in cwd
@@ -22,27 +22,27 @@ def tryprint(arg):
  
 visited  = set()
 allsizes = []
-for (thisDir, subsHere, filesHere) in os.walk(dirname):
+___ (thisDir, subsHere, filesHere) __ os.walk(dirname):
     if trace: tryprint(thisDir)
     thisDir = os.path.normpath(thisDir)
     fixname = os.path.normcase(thisDir)
-    if fixname in visited:
+    if fixname __ visited:
         if trace: tryprint('skipping ' + thisDir)
     else:
         visited.add(fixname)
-        for filename in filesHere:
+        ___ filename __ filesHere:
             if filename.endswith(extname):
                 if trace > 1: tryprint('+++' + filename)
                 fullname = os.path.join(thisDir, filename)
                 try:
                     bytesize = os.path.getsize(fullname)
-                    linesize = sum(+1 for line in open(fullname, 'rb'))
+                    linesize = sum(+1 ___ line __ open(fullname, 'rb'))
                 except Exception:
                     print('error', exc_info()[0])
                 else:
                     allsizes.append((bytesize, linesize, fullname))
 
-for (title, key) in [('bytes', 0), ('lines', 1)]:
+___ (title, key) __ [('bytes', 0), ('lines', 1)]:
     print('\nBy %s...' % title)
     allsizes.sort(key=lambda x: x[key])
     pprint.pprint(allsizes[:3])

@@ -3,8 +3,8 @@
 """
 
 #end_pymotw_header
-import os
-import time
+______ os
+______ time
 
 print('Calling...')
 os.system('date; (sleep 3; date) &')

@@ -3,8 +3,8 @@
 """
 
 #end_pymotw_header
-import os
-import sys
+______ os
+______ sys
 
 # If we are not given a path to list, use /tmp
 if len(sys.argv) == 1:
@@ -12,14 +12,14 @@ if len(sys.argv) == 1:
 else:
     root = sys.argv[1]
 
-for dir_name, sub_dirs, files in os.walk(root):
+___ dir_name, sub_dirs, files __ os.walk(root):
     print(dir_name)
     # Make the subdirectory names stand out with /
-    sub_dirs = [n + '/' for n in sub_dirs]
+    sub_dirs = [n + '/' ___ n __ sub_dirs]
     # Mix the directory contents together
     contents = sub_dirs + files
     contents.sort()
     # Show the contents
-    for c in contents:
+    ___ c __ contents:
         print('  {}'.format(c))
     print()

@@ -3,7 +3,7 @@
 # a ZipFile object. ZipFile objects are similar to file objects created using open(). ZipFile is also
 # a context manager and therefore supports the with statement:
 
-# import zipfile
+# ______ zipfile
 #
 # with zipfile.ZipFile('data.zip', 'r') as zipobj:
 
@@ -25,7 +25,7 @@
 #
 # To get a list of files in the archive, call namelist() on the ZipFile object:
 
-import zipfile
+______ zipfile
 
 with zipfile.ZipFile('data.zip', 'r') as zipobj:
     zipobj.namelist()
@@ -37,7 +37,7 @@ with zipfile.ZipFile('data.zip', 'r') as zipobj:
 # .namelist() returns a list of names of the files and directories in the archive. To retrieve information about
 # the files in the archive, use .getinfo():
 
-import zipfile
+______ zipfile
 
 with zipfile.ZipFile('data.zip', 'r') as zipobj:
     bar_info = zipobj.getinfo('sub_dir/bar.py')

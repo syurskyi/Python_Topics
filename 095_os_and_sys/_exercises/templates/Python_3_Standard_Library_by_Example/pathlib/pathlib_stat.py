@@ -3,9 +3,9 @@
 """
 
 #end_pymotw_header
-import pathlib
-import sys
-import time
+______ pathlib
+______ sys
+______ time
 
 if len(sys.argv) == 1:
     filename = __file__

@@ -7,7 +7,7 @@ uploads in scripts either after or during page file creation.
 ################################################################################
 """
 
-import os
+______ os
 servername   = 'learning-python.com'     # where site is relocating to
 homedir      = 'books'                   # where site will be rooted
 sitefilesdir = r'C:\temp\public_html'    # where site files live locally
@@ -18,11 +18,11 @@ try:
     os.mkdir(uploaddir)                  # make upload dir if needed
 except OSError: pass
 
-template  = open(templatename).read()    # load or import template text
+template  = open(templatename).read()    # load or ______ template text
 sitefiles = os.listdir(sitefilesdir)     # filenames, no directory prefix
 
 count = 0
-for filename in sitefiles:
+___ filename __ sitefiles:
     if filename.endswith('.html') or filename.endswith('.htm'):
         fwdname = os.path.join(uploaddir, filename)
         print('creating', filename, 'as', fwdname)

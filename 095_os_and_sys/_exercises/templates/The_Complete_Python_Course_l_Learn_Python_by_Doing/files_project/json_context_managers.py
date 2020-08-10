@@ -1,4 +1,4 @@
-import json
+______ json
 
 with open('friends_json.txt', 'r') as file:
     file_contents = json.load(file)  # reads file and turns it to dictionary

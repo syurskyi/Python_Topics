@@ -29,7 +29,7 @@ extension.
 """
 
 #end_pymotw_header
-import glob
+______ g__
 
-for name in sorted(glob.glob('*.py')):
+___ name __ so..(g__.g__('*.py')):
     print(name)

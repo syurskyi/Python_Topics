@@ -27,7 +27,7 @@
 """
 
 #end_pymotw_header
-import glob
+______ g__
 
-for name in sorted(glob.glob('dir/file?.txt')):
+___ name __ so..(g__.g__('dir/file?.txt')):
     print(name)

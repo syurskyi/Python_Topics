@@ -8,7 +8,7 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 usr = pathlib.PurePosixPath('/usr')
 print(usr)

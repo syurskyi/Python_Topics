@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 dir_name = 'os_directories_example'
 

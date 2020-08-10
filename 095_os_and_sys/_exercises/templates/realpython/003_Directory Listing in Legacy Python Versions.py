@@ -1,6 +1,6 @@
 # In versions of Python prior to Python 3, os.listdir() is the method to use to get a directory listing:
 
-import os
+______ os
 entries = os.listdir('my_directory/')
 
 # os.listdir() returns a Python list containing the names of the files and subdirectories in the directory given
@@ -13,7 +13,7 @@ os.listdir('my_directory/')
 # a loop helps clean things up:
 
 entries = os.listdir('my_directory/')
-for entry in entries:
+___ entry __ entries:
     print(entry)
 
 

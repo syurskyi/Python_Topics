@@ -2,7 +2,7 @@
 """Create test data for the glob examples.
 """
 #end_pymotw_header
-import os
+______ os
 
 
 def mkfile(filename):

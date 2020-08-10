@@ -1,4 +1,4 @@
-import sys
+______ sys
 sum = 0
 while True:
     try:

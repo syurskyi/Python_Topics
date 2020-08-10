@@ -3,10 +3,10 @@
 # such as * and ? to match filenames. For example, in order to find all .txt files in a directory using fnmatch,
 # you would do the following:
 
-import os
-import fnmatch
+______ os
+______ fnmatch
 
-for file_name in os.listdir('some_directory/'):
+___ file_name __ os.listdir('some_directory/'):
     if fnmatch.fnmatch(file_name, '*.txt'):
         print(file_name)
 

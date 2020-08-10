@@ -3,9 +3,9 @@
 """
 
 #end_pymotw_header
-import os
-import pathlib
-import stat
+______ os
+______ pathlib
+______ stat
 
 # Create a fresh test file.
 f = pathlib.Path('pathlib_chmod_example.txt')

@@ -8,8 +8,8 @@
 
 
 #end_pymotw_header
-import os
-import os.path
+______ os
+______ os.path
 
 os.chdir('/usr')
 
@@ -20,5 +20,5 @@ PATHS = [
     '../one/two/three',
 ]
 
-for path in PATHS:
+___ path __ PATHS:
     print('{!r:>21} : {!r}'.format(path, os.path.abspath(path)))

@@ -3,7 +3,7 @@
 #
 # Do this to read from an archive:
 
-import tarfile
+______ tarfile
 
 with tarfile.open('example.tar', 'r') as tar_file:
     print(tar_file.getnames())
@@ -27,8 +27,8 @@ with tarfile.open('example.tar', 'r') as tar_file:
 # .open() defaults to 'r' mode. To read an uncompressed TAR file and retrieve the names
 # of the files in it, use .getnames():
 
-import tarfile
-import time
+______ tarfile
+______ time
 
 tar = tarfile.open('example.tar', mode='r')
 tar.getnames()
@@ -43,7 +43,7 @@ tar.getnames()
 #
 # The metadata of each entry in the archive can be accessed using special attributes:
 
-for entry in tar.getmembers():
+___ entry __ tar.getmembers():
     print(entry.name)
     print(' Modified:', time.ctime(entry.mtime))
     print(' Size    :', entry.size, 'bytes')

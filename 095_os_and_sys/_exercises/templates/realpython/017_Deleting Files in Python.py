@@ -1,14 +1,14 @@
 # To delete a single file, use pathlib.Path.unlink(), os.remove(). or os.unlink().
 # os.remove() and os.unlink() are semantically identical. To delete a file using os.remove(), do the following:
 
-import os
+______ os
 
 data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
 os.remove(data_file)
 
 # Deleting a file using os.unlink() is similar to how you do it using os.remove():
 
-import os
+______ os
 
 data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
 os.unlink(data_file)
@@ -18,7 +18,7 @@ os.unlink(data_file)
 # that what you’re trying to delete is actually a file and only delete it if it is, or you can use exception handling
 # to handle the OSError:
 
-import os
+______ os
 
 data_file = 'home/data.txt'
 
@@ -32,7 +32,7 @@ else:
 # If data_file points to a folder, an error message is printed to the console.
 # The following example shows how to use exception handling to handle errors when deleting files:
 
-import os
+______ os
 
 data_file = 'home/data.txt'
 
@@ -48,7 +48,7 @@ except OSError as e:
 #
 # Finally, you can also use pathlib.Path.unlink() to delete files:
 
-from pathlib import Path
+from pathlib ______ Path
 
 data_file = Path('home/data.txt')
 

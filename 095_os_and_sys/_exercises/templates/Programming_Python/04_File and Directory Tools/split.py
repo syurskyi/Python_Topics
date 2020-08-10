@@ -9,7 +9,7 @@ also be imported and reused in other applications;
 ################################################################################
 """
 
-import sys, os
+______ sys, os
 kilobytes = 1024
 megabytes = kilobytes * 1000
 chunksize = int(1.4 * megabytes)                   # default: roughly a floppy
@@ -18,7 +18,7 @@ def split(fromfile, todir, chunksize=chunksize):
     if not os.path.exists(todir):                  # caller handles errors
         os.mkdir(todir)                            # make dir, read/write parts
     else:
-        for fname in os.listdir(todir):            # delete any existing files
+        ___ fname __ os.listdir(todir):            # delete any existing files
             os.remove(os.path.join(todir, fname))
     partnum = 0
     input = open(fromfile, 'rb')                   # use binary mode on Windows

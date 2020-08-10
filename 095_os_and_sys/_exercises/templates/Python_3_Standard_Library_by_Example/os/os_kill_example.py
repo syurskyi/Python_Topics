@@ -3,9 +3,9 @@
 """
 
 #end_pymotw_header
-import os
-import signal
-import time
+______ os
+______ signal
+______ time
 
 
 def signal_usr1(signum, frame):

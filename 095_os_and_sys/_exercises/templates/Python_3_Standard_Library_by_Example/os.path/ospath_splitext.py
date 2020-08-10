@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-import os.path
+______ os.path
 
 PATHS = [
     'filename.txt',
@@ -20,5 +20,5 @@ PATHS = [
     'no-extension.',
 ]
 
-for path in PATHS:
+___ path __ PATHS:
     print('{!r:>21} : {!r}'.format(path, os.path.splitext(path)))

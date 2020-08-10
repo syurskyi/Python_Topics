@@ -1,4 +1,4 @@
-import os
+______ os
 
 '''
     For the given path, get the List of all files in the directory tree 
@@ -11,7 +11,7 @@ def getListOfFiles(dirName):
     listOfFile = os.listdir(dirName)
     allFiles = list()
     # Iterate over all the entries
-    for entry in listOfFile:
+    ___ entry __ listOfFile:
         # Create full path
         fullPath = os.path.join(dirName, entry)
         # If entry is a directory then get the list of files in this directory
@@ -30,18 +30,18 @@ def main():
     listOfFiles = getListOfFiles(dirName)
 
     # Print the files
-    for elem in listOfFiles:
+    ___ elem __ listOfFiles:
         print(elem)
 
     print ("****************")
 
     # Get the list of all files in directory tree at given path
     listOfFiles = list()
-    for (dirpath, dirnames, filenames) in os.walk(dirName):
-        listOfFiles += [os.path.join(dirpath, file) for file in filenames]
+    ___ (dirpath, dirnames, filenames) __ os.walk(dirName):
+        listOfFiles += [os.path.join(dirpath, file) ___ file __ filenames]
 
     # Print the files
-    for elem in listOfFiles:
+    ___ elem __ listOfFiles:
         print(elem)
 
 

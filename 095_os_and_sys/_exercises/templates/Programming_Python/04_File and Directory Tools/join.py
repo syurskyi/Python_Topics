@@ -9,14 +9,14 @@ length.  Could extend split/join to pop up Tkinter file selectors.
 ################################################################################
 """
 
-import os, sys
+______ os, sys
 readsize = 1024
 
 def join(fromdir, tofile):
     output = open(tofile, 'wb')
     parts  = os.listdir(fromdir)
     parts.sort()
-    for filename in parts:
+    ___ filename __ parts:
         filepath = os.path.join(fromdir, filename)
         fileobj  = open(filepath, 'rb')
         while True:

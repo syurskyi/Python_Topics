@@ -8,9 +8,9 @@
 
 
 #end_pymotw_header
-import os.path
+______ os.path
 
-for user in ['', 'dhellmann', 'nosuchuser']:
+___ user __ ['', 'dhellmann', 'nosuchuser']:
     lookup = '~' + user
     print('{!r:>15} : {!r}'.format(
         lookup, os.path.expanduser(lookup)))

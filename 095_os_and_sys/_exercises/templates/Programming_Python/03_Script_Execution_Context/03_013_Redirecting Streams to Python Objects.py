@@ -27,7 +27,7 @@
 # # Enter a number>6 squared is 36
 # # Enter a number>Bye
 #
-# # from PP4E.System.more import more
+# # from PP4E.System.more ______ more
 # # more(output)
 # # Hello stream world
 # # Enter a number>4 squared is 16

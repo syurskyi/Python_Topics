@@ -1,2 +1,2 @@
-import sys
+______ sys
 print(sys.argv)

@@ -1,2 +1,2 @@
-import sys
-print(sum(int(line) for line in sys.stdin))
+______ sys
+print(sum(int(line) ___ line __ sys.stdin))

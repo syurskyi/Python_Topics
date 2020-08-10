@@ -5,7 +5,7 @@ whose name is passed on cmdline; if input is stdin, can't
 use it for user reply--use platform-specific tools or GUI;
 """
 
-import sys
+______ sys
 
 def getreply():
     """
@@ -16,7 +16,7 @@ def getreply():
         return input('?')                        # read reply line from stdin
     else:
         if sys.platform[:3] == 'win':            # if stdin was redirected
-            import msvcrt                        # can't use to ask a user
+            ______ msvcrt                        # can't use to ask a user
             msvcrt.putch(b'?')
             key = msvcrt.getche()                # use windows console tools
             msvcrt.putch(b'\n')                  # getch() does not echo key
@@ -33,8 +33,8 @@ def more(text, numlines=10):
     while lines:
         chunk = lines[:numlines]
         lines = lines[numlines:]
-        for line in chunk: print(line)
-        if lines and getreply() not in [b'y', b'Y']: break
+        ___ line __ chunk: print(line)
+        if lines and getreply() not __ [b'y', b'Y']: break
 
 if __name__ == '__main__':                       # when run, not when imported
     if len(sys.argv) == 1:                       # if no command-line arguments

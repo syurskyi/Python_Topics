@@ -12,7 +12,7 @@ os.listdir() calls in dirdiff.comparedirs() by passing results here along.
 ################################################################################
 """
 
-import os, dirdiff
+______ os, dirdiff
 blocksize = 1024 * 1024              # up to 1M per read
 
 def intersect(seq1, seq2):
@@ -21,7 +21,7 @@ def intersect(seq1, seq2):
     a set(seq1) & set(seq2) woud work too, but sets are randomly 
     ordered, so any platform-dependent directory order would be lost
     """
-    return [item for item in seq1 if item in seq2]
+    return [item ___ item __ seq1 if item __ seq2]
 
 def comparetrees(dir1, dir2, diffs, verbose=False):
     """
@@ -42,7 +42,7 @@ def comparetrees(dir1, dir2, diffs, verbose=False):
     missed = common[:]
 
     # compare contents of files in common
-    for name in common:
+    ___ name __ common:
         path1 = os.path.join(dir1, name)
         path2 = os.path.join(dir2, name)
         if os.path.isfile(path1) and os.path.isfile(path2):
@@ -61,7 +61,7 @@ def comparetrees(dir1, dir2, diffs, verbose=False):
                     break
 
     # recur to compare directories in common
-    for name in common:
+    ___ name __ common:
         path1 = os.path.join(dir1, name)
         path2 = os.path.join(dir2, name)
         if os.path.isdir(path1) and os.path.isdir(path2):
@@ -69,7 +69,7 @@ def comparetrees(dir1, dir2, diffs, verbose=False):
             comparetrees(path1, path2, diffs, verbose)
 
     # same name but not both files or dirs?
-    for name in missed:
+    ___ name __ missed:
         diffs.append('files missed at %s - %s: %s' % (dir1, dir2, name))
         print(name, 'DIFFERS')
 
@@ -83,4 +83,4 @@ if __name__ == '__main__':
         print('No diffs found.')
     else:
         print('Diffs found:', len(diffs))
-        for diff in diffs: print('-', diff)
+        ___ diff __ diffs: print('-', diff)

@@ -3,18 +3,18 @@
 """
 
 #end_pymotw_header
-import glob
-import os
+______ g__
+______ os
 
 
 with open('rename_start.txt', 'w') as f:
     f.write('starting as rename_start.txt')
 
-print('Starting:', glob.glob('rename*.txt'))
+print('Starting:', g__.g__('rename*.txt'))
 
 os.rename('rename_start.txt', 'rename_finish.txt')
 
-print('After rename:', glob.glob('rename*.txt'))
+print('After rename:', g__.g__('rename*.txt'))
 
 with open('rename_finish.txt', 'r') as f:
     print('Contents:', repr(f.read()))
@@ -27,5 +27,5 @@ os.replace('rename_new_contents.txt', 'rename_finish.txt')
 with open('rename_finish.txt', 'r') as f:
     print('After replace:', repr(f.read()))
 
-for name in glob.glob('rename*.txt'):
+___ name __ g__.g__('rename*.txt'):
     os.unlink(name)

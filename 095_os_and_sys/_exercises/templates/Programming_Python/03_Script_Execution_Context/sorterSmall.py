@@ -1,2 +1,2 @@
-import sys
-for line in sorted(sys.stdin): print(line, end='')
+______ sys
+___ line __ so..(sys.stdin): print(line, end='')

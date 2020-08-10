@@ -10,15 +10,15 @@
 #
 # Here’s an example of how to use glob to search for all Python (.py) source files in the current directory:
 
-import glob
-glob.glob('*.py')
+______ g__
+g__.g__('*.py')
 # ['admin.py', 'tests.py']
 
 # glob.glob('*.py') searches for all files that have the .py extension in the current directory and returns them
 # as a list. glob also supports shell-style wildcards to match patterns:
 
-import glob
-for name in glob.glob('*[0-9]*.txt'):
+______ g__
+___ name __ g__.g__('*[0-9]*.txt'):
     print(name)
 
 # This finds all text (.txt) files that contain digits in the filename:
@@ -32,8 +32,8 @@ for name in glob.glob('*[0-9]*.txt'):
 #
 # glob makes it easy to search for files recursively in subdirectories too:
 
-import glob
-for file in glob.iglob('**/*.py', recursive=True):
+______ g__
+___ file __ g__.iglob('**/*.py', recursive=True):
     print(file)
 
 # This example makes use of glob.iglob() to search for .py files in the current directory and subdirectories.
@@ -51,9 +51,9 @@ for file in glob.iglob('**/*.py', recursive=True):
 # pathlib contains similar methods for making flexible file listings. The example below shows how you can
 # use .Path.glob() to list file types that start with the letter p:
 
-from pathlib import Path
+from pathlib ______ Path
 p = Path('.')
-for name in p.glob('*.p*'):
+___ name __ p.g__('*.p*'):
     print(name)
 
 # admin.py

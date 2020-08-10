@@ -1,10 +1,10 @@
 # To create a new ZIP archive, you open a ZipFile object in write mode (w) and add the files you want to archive:
 
-import zipfile
+______ zipfile
 
 file_list = ['file1.py', 'sub_dir/', 'sub_dir/bar.py', 'sub_dir/foo.py']
 with zipfile.ZipFile('new.zip', 'w') as new_zip:
-    for name in file_list:
+    ___ name __ file_list:
         new_zip.write(name)
 
 # In the example, new_zip is opened in write mode and each file in file_list is added to the archive.

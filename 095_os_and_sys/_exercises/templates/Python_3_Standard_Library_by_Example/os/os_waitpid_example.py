@@ -3,12 +3,12 @@
 """
 
 #end_pymotw_header
-import os
-import sys
-import time
+______ os
+______ sys
+______ time
 
 workers = []
-for i in range(2):
+___ i __ range(2):
     print('PARENT {}: Forking {}'.format(os.getpid(), i))
     worker_pid = os.fork()
     if not worker_pid:
@@ -18,7 +18,7 @@ for i in range(2):
         sys.exit(i)
     workers.append(worker_pid)
 
-for pid in workers:
+___ pid __ workers:
     print('PARENT: Waiting for {}'.format(pid))
     done = os.waitpid(pid, 0)
     print('PARENT: Child done:', done)

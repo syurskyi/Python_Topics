@@ -4,7 +4,7 @@ standard input text from a string; redirect runs a passed-in function
 with its output and input streams reset to these file-like class objects;
 """
 
-import sys                                      # get built-in modules
+______ sys                                      # get built-in modules
 
 class Output:                                   # simulated output file
     def __init__(self):
@@ -12,7 +12,7 @@ class Output:                                   # simulated output file
     def write(self, string):                    # add a string of bytes
         self.text += string
     def writelines(self, lines):                # add each line in a list
-        for line in lines: self.write(line)
+        ___ line __ lines: self.write(line)
 
 class Input:                                    # simulated input file
     def __init__(self, input=''):               # default argument

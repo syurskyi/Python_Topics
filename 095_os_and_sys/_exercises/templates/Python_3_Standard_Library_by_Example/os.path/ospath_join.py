@@ -8,7 +8,7 @@
 
 
 #end_pymotw_header
-import os.path
+______ os.path
 
 PATHS = [
     ('one', 'two', 'three'),
@@ -16,5 +16,5 @@ PATHS = [
     ('/one', '/two', '/three'),
 ]
 
-for parts in PATHS:
+___ parts __ PATHS:
     print('{} : {!r}'.format(parts, os.path.join(*parts)))

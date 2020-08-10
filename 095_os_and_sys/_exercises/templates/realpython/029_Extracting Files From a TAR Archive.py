@@ -7,8 +7,8 @@
 # To extract a single file from a TAR archive, use extract(), passing in the filename:
 #
 
-import tar
-import os
+______ tar
+______ os
 
 tar.extract('README.md')
 os.listdir('.')

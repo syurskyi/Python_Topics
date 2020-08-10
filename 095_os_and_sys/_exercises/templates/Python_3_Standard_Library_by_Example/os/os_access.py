@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 print('Testing:', __file__)
 print('Exists:', os.access(__file__, os.F_OK))

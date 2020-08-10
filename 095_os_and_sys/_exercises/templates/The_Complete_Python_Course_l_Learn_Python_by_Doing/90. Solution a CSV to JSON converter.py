@@ -1,9 +1,9 @@
-import json
+______ json
 
 json_list = []  # store the converted json data for each line
 csv_file = open('csv_file.txt', 'r')
 
-for line in csv_file.readlines():
+___ line __ csv_file.readlines():
     club, city, country = line.strip().split(',')  # first get rid of the \n and then split with ','
     data = {
         'club': club,

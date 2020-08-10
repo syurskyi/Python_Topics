@@ -27,13 +27,13 @@
 """
 
 #end_pymotw_header
-import glob
+______ g__
 
 specials = '?*['
 
-for char in specials:
-    pattern = 'dir/*' + glob.escape(char) + '.txt'
+___ char __ specials:
+    pattern = 'dir/*' + g__.escape(char) + '.txt'
     print('Searching for: {!r}'.format(pattern))
-    for name in sorted(glob.glob(pattern)):
+    ___ name __ so..(g__.g__(pattern)):
         print(name)
     print()

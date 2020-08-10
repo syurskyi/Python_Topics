@@ -8,13 +8,13 @@
 
 
 #end_pymotw_header
-import os.path
+______ os.path
 
 paths = ['/one/two/three/four',
          '/one/two/threefold',
          '/one/two/three/',
          ]
-for path in paths:
+___ path __ paths:
     print('PATH:', path)
 
 print()

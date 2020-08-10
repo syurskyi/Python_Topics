@@ -1,6 +1,6 @@
 # Python includes os.rename(src, dst) for renaming files and directories:
 
-import os
+______ os
 
 os.rename('first.zip', 'first_01.zip')
 
@@ -8,7 +8,7 @@ os.rename('first.zip', 'first_01.zip')
 #
 # Another way to rename files or directories is to use rename() from the pathlib module:
 
-from pathlib import Path
+from pathlib ______ Path
 data_file = Path('data_01.txt')
 data_file.rename('data.txt')
 

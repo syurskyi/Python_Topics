@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 print('Initial value:', os.environ.get('TESTVAR', None))
 print('Child process:')

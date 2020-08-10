@@ -8,8 +8,8 @@
 
 
 #end_pymotw_header
-import os.path
-import time
+______ os.path
+______ time
 
 print('File         :', __file__)
 print('Access time  :', time.ctime(os.path.getatime(__file__)))

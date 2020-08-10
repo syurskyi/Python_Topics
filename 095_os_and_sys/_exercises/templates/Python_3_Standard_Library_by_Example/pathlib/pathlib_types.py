@@ -8,15 +8,15 @@
 """
 
 #end_pymotw_header
-import itertools
-import os
-import pathlib
+______ itertools
+______ os
+______ pathlib
 
 root = pathlib.Path('test_files')
 
 # Clean up from previous runs.
 if root.exists():
-    for f in root.iterdir():
+    ___ f __ root.iterdir():
         f.unlink()
 else:
     root.mkdir()
@@ -39,7 +39,7 @@ print(hfmt.format('Name', 'File', 'Dir', 'Link', 'FIFO', 'Block',
 print()
 
 fmt = '{:20s}  ' + ('{!r:>5}  ' * 6)
-for f in to_scan:
+___ f __ to_scan:
     print(fmt.format(
         str(f),
         f.is_file(),

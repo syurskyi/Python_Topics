@@ -1,4 +1,4 @@
-import os
+______ os
 print('setenv...', end=' ')
 print(os.environ['USER'])                # show current shell variable value
 

@@ -3,7 +3,7 @@
 """
 
 #end_pymotw_header
-import os
+______ os
 
 TEST_GID = 502
 TEST_UID = 502

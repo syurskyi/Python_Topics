@@ -5,7 +5,7 @@
 # os.makedirs() is similar to running mkdir -p in Bash. For example, to create a group of directories like 2018/10/05,
 # all you have to do is the following:
 
-import os
+______ os
 os.makedirs('2018/10/05')
 
 # This will create a nested directory structure that contains the folders 2018, 10, and 05:
@@ -19,7 +19,7 @@ os.makedirs('2018/10/05')
 # .makedirs() creates directories with default permissions. If you need to create directories with different permissions
 # call .makedirs() and pass in the mode you would like the directories to be created in:
 
-import os
+______ os
 os.makedirs('2018/10/05', mode=0o770)
 
 # This creates the 2018/10/05 directory structure and gives the owner and group users read, write,
@@ -40,7 +40,7 @@ os.makedirs('2018/10/05', mode=0o770)
 # indentation lines. As you can see, all of the directories have 770 permissions. An alternative way
 # to create directories is to use .mkdir() from pathlib.Path:
 
-import pathlib
+______ pathlib
 
 p = pathlib.Path('2018/10/05')
 p.mkdir(parents=True)

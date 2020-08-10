@@ -9,7 +9,7 @@ but also allows for coding more customized copy operations in Python.
 ################################################################################
 """
 
-import os, sys
+______ os, sys
 maxfileload = 1000000
 blksize = 1024 * 500
 
@@ -36,7 +36,7 @@ def copytree(dirFrom, dirTo, verbose=0):
     may need to do more file type checking on Unix: skip links, fifos, etc.
     """
     fcount = dcount = 0
-    for filename in os.listdir(dirFrom):                  # for files/dirs here
+    ___ filename __ os.listdir(dirFrom):                  # for files/dirs here
         pathFrom = os.path.join(dirFrom, filename)
         pathTo   = os.path.join(dirTo,   filename)        # extend both paths
         if not os.path.isdir(pathFrom):                   # copy simple files
@@ -87,7 +87,7 @@ def getargs():
                 return (dirFrom, dirTo)
 
 if __name__ == '__main__':
-    import time
+    ______ time
     dirstuple = getargs()
     if dirstuple:
         print('Copying...')

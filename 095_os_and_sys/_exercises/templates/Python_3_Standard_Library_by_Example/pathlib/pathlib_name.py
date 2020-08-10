@@ -8,7 +8,7 @@
 """
 
 #end_pymotw_header
-import pathlib
+______ pathlib
 
 p = pathlib.PurePosixPath('./source/pathlib/pathlib_name.py')
 print('path  : {}'.format(p))
