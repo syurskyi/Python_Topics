@@ -11,7 +11,7 @@ copy('story.txt', 'story_copy.txt') # None
 # Here's my solution:
 
 
-___ copy(file_name, new_file_name):
+___ co..(file_name, new_file_name):
     w__ o..(file_name) __ file:
         text _ file.r..
 
