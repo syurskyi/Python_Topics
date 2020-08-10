@@ -43,7 +43,7 @@ __.l_d_('.')
 # To extract a file object for reading or writing, use .extractfile(), which takes a filename or TarInfo object
 # to extract as an argument. .extractfile() returns a file-like object that can be read and used:
 
-f = tar.extractfile('app.py')
+f _ tar.extractfile('app.py')
 f.read()
 tar.close()
 

@@ -1,13 +1,13 @@
 # # -*- coding: utf-8 -*-
 
-try:
+___
     o..("C:\temp\new\file.txt")
-except F..
+______ F..
     print("Файл отсутствует")
-except IsADirectoryError:
+______ IsADirectoryError:
     print("Это не файл, а папка")
-except PermissionError:
+______ PermissionError:
     print("Отсутствуют права на доступ к файлу")
-except OSError:
+______ O..:
     print("Неустановленная ошибка открытия файла")
 . . .

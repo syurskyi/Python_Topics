@@ -8,12 +8,12 @@ ______ __
 from tempfile ______ TemporaryFile
 
 # Create a temporary file and write some data to it
-fp = TemporaryFile('w+t')
+fp _ TemporaryFile('w+t')
 fp.w..('Hello universe!')
 
 # Go back to the beginning and read data from file
 fp.seek(0)
-data = fp.read()
+data _ fp.read()
 
 # Close the file, after which it will be removed
 fp.close()

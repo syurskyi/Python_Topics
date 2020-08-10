@@ -10,11 +10,11 @@
 
 ______ __
 
-trash_dir = 'my_documents/bad_dir'
+trash_dir _ 'my_documents/bad_dir'
 
-try:
+___
     __.rmdir(trash_dir)
-except OSError __ e:
+______ O.. __ e:
     print(f'Error: {trash_dir} : {e.strerror}')
 
 # Here, the trash_dir directory is deleted by passing its path to os.rmdir(). If the directory isn’t empty,
@@ -28,11 +28,11 @@ except OSError __ e:
 
 from pathlib ______ Path
 
-trash_dir = Path('my_documents/bad_dir')
+trash_dir _ Path('my_documents/bad_dir')
 
-try:
+___
     trash_dir.rmdir()
-except OSError __ e:
+______ O.. __ e:
     print(f'Error: {trash_dir} : {e.strerror}')
 
 

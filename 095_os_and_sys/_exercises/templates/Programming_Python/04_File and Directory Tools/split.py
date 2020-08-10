@@ -10,28 +10,28 @@ also be imported and reused in other applications;
 """
 
 ______ ___, __
-kilobytes = 1024
-megabytes = kilobytes * 1000
-chunksize = int(1.4 * megabytes)                   # default: roughly a floppy
+kilobytes _ 1024
+megabytes _ kilobytes * 1000
+chunksize _ int(1.4 * megabytes)                   # default: roughly a floppy
 
-___ split(fromfile, todir, chunksize=chunksize):
+___ split(fromfile, todir, chunksize_chunksize):
     __ not __.p...exists(todir):                  # caller handles errors
         __.mkdir(todir)                            # make dir, read/write parts
     ____
         ___ fname __ __.l_d_(todir):            # delete any existing files
             __.remove(__.p...j..(todir, fname))
-    partnum = 0
-    input = o..(fromfile, 'rb')                   # use binary mode on Windows
+    partnum _ 0
+    input _ o..(fromfile, 'rb')                   # use binary mode on Windows
     while True:                                    # eof=empty string from read
-        chunk = input.read(chunksize)              # get next part <= chunksize
+        chunk _ input.read(chunksize)              # get next part <= chunksize
         __ not chunk: break
-        partnum += 1
-        filename = __.p...j..(todir, ('part%04d' % partnum))
-        fileobj  = o..(filename, 'wb')
+        partnum +_ 1
+        filename _ __.p...j..(todir, ('part%04d' % partnum))
+        fileobj  _ o..(filename, 'wb')
         fileobj.w..(chunk)
         fileobj.close()                            # or simply open().write()
     input.close()
-    assert partnum <= 9999                         # join sort fails if 5 digits
+    assert partnum <_ 9999                         # join sort fails if 5 digits
     return partnum
 
 __ __name__ == '__main__':
@@ -39,19 +39,19 @@ __ __name__ == '__main__':
         print('Use: split.py [file-to-split target-dir [chunksize]]')
     ____
         __ len(___.argv) < 3:
-            interactive = True
-            fromfile = input('File to be split? ')           # input if clicked
-            todir    = input('Directory to store part files? ')
+            interactive _ True
+            fromfile _ input('File to be split? ')           # input if clicked
+            todir    _ input('Directory to store part files? ')
         ____
-            interactive = False
-            fromfile, todir = ___.argv[1:3]                  # args in cmdline
-            __ len(___.argv) == 4: chunksize = int(___.argv[3])
-        absfrom, absto = map(__.p...abspath, [fromfile, todir])
+            interactive _ False
+            fromfile, todir _ ___.argv[1:3]                  # args in cmdline
+            __ len(___.argv) == 4: chunksize _ int(___.argv[3])
+        absfrom, absto _ map(__.p...abspath, [fromfile, todir])
         print('Splitting', absfrom, 'to', absto, 'by', chunksize)
 
-        try:
-            parts = split(fromfile, todir, chunksize)
-        except:
+        ___
+            parts _ split(fromfile, todir, chunksize)
+        ______:
             print('Error during split:')
             print(___.exc_info()[0], ___.exc_info()[1])
         ____

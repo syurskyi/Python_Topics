@@ -1,8 +1,8 @@
 ______ ___
 
 ___ filter_files(name, function):         # filter file through function
-    input  = o..(name, 'r')              # create file objects
-    output = o..(name + '.out', 'w')     # explicit output file too
+    input  _ o..(name, 'r')              # create file objects
+    output _ o..(name + '.out', 'w')     # explicit output file too
     ___ line __ input:
         output.w..(function(line))      # write the modified line
     input.close()
@@ -10,9 +10,9 @@ ___ filter_files(name, function):         # filter file through function
 
 ___ filter_stream(function):              # no explicit files
     while True:                           # use standard streams
-        line = ___.stdin.readline()       # or: input()
+        line _ ___.stdin.readline()       # or: input()
         __ not line: break
-        print(function(line), end='')     # or: sys.stdout.write()
+        print(function(line), end_'')     # or: sys.stdout.write()
 
 __ __name__ == '__main__':
     filter_stream(lambda line: line)      # copy stdin to stdout if run

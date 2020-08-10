@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ __.p..
 
-PATHS = [
+PATHS _ [
     '/one/two/three',
     '/one/two/three/',
     '/',
@@ -19,4 +19,4 @@ PATHS = [
 ]
 
 ___ p.. __ PATHS:
-    print('{!r:>17} : {}'.f..(p.., __.p...split(p..)))
+    print('{!r:>17} : @'.f..(p.., __.p...split(p..)))

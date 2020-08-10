@@ -8,7 +8,7 @@
 
 from pathlib ______ Path
 
-p = Path('example_directory/')
+p _ Path('example_directory/')
 p.mkdir()
 
 # If the path already exists, mkdir() raises a FileExistsError:
@@ -27,17 +27,17 @@ p.mkdir()
 
 from pathlib ______ Path
 
-p = Path('example_directory')
-try:
+p _ Path('example_directory')
+___
     p.mkdir()
-except FileExistsError __ exc:
+______ FileExistsError __ exc:
     print(exc)
 
 # Alternatively, you can ignore the FileExistsError by passing the exist_ok=True argument to .mkdir():
 
 from pathlib ______ Path
 
-p = Path('example_directory')
-p.mkdir(exist_ok=True)
+p _ Path('example_directory')
+p.mkdir(exist_ok_True)
 
 # This will not raise an error if the directory already exists.

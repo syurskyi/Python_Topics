@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-p = pathlib.Path('example_link')
+p _ pathlib.Path('example_link')
 
 p.symlink_to('index.rst')
 

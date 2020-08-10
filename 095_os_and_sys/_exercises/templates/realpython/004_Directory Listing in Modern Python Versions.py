@@ -4,7 +4,7 @@
 # to a list when called:
 
 ______ __
-entries = __.scandir('my_directory/')
+entries _ __.scandir('my_directory/')
 print(entries)
 
 # <posix.ScandirIterator object at 0x7f5b047f3690>
@@ -35,7 +35,7 @@ print()
 
 from pathlib ______ Path
 
-entries = Path('my_directory/')
+entries _ Path('my_directory/')
 ___ entry __ entries.iterdir():
     print(entry.name)
 #

@@ -11,8 +11,8 @@ ___ processLine(line):                      # define a function
     ____
         raise UnknownCommand(line)          # raise an exception
 
-filename = 'data.txt'
-__ len(argv) == 2: filename = argv[1]       # allow filename cmd arg
+filename _ 'data.txt'
+__ len(argv) == 2: filename _ argv[1]       # allow filename cmd arg
 scanner(filename, processLine)              # start the scanner
 
 
@@ -20,9 +20,9 @@ scanner(filename, processLine)              # start the scanner
 commands = {'*': 'Ms.', '+': 'Mr.'}     # data is easier to expand than code?
 
 def processLine(line):
-    try:
+    ___
         print(commands[line[0]], line[1:-1])
-    except KeyError:
+    ______ KeyError:
         raise UnknownCommand(line)
 
 scanner(argv[1], processLine)

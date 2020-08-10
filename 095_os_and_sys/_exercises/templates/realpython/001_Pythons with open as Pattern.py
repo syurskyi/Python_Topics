@@ -3,13 +3,13 @@
 # and read its contents:
 #
 w__ o..('data.txt', 'r') __ f:
-    data = f.read()
+    data _ f.read()
 #
 # open() takes a filename and a mode as its arguments. r opens the file in read only mode. To write data to a file,
 # pass in w as an argument instead:
 #
 w__ o..('data.txt', 'w') __ f:
-    data = 'some data to be written to the file'
+    data _ 'some data to be written to the file'
     f.w..(data)
 #
 # In the examples above, open() opens files for reading or writing and returns a file handle (f in this case)

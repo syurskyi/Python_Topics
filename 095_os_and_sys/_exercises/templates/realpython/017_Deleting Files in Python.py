@@ -3,14 +3,14 @@
 
 ______ __
 
-data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
+data_file _ 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
 __.remove(data_file)
 
 # Deleting a file using os.unlink() is similar to how you do it using os.remove():
 
 ______ __
 
-data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
+data_file _ 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
 __.unlink(data_file)
 
 # Calling .unlink() or .remove() on a file deletes the file from the filesystem. These two functions will throw
@@ -20,7 +20,7 @@ __.unlink(data_file)
 
 ______ __
 
-data_file = 'home/data.txt'
+data_file _ 'home/data.txt'
 
 # If the file exists, delete it
 __ __.p...isfile(data_file):
@@ -34,27 +34,27 @@ ____
 
 ______ __
 
-data_file = 'home/data.txt'
+data_file _ 'home/data.txt'
 
 # Use exception handling
-try:
+___
     __.remove(data_file)
-except OSError __ e:
+______ O.. __ e:
     print(f'Error: {data_file} : {e.strerror}')
 
 # The code above attempts to delete the file first before checking its type. If data_file isn’t actually a file,
-# the OSError that is thrown is handled in the except clause, and an error message is printed to the console.
+# the OSError that is thrown is handled in the ______ clause, and an error message is printed to the console.
 # The error message that gets printed out is formatted using Python f-strings.
 #
 # Finally, you can also use pathlib.Path.unlink() to delete files:
 
 from pathlib ______ Path
 
-data_file = Path('home/data.txt')
+data_file _ Path('home/data.txt')
 
-try:
+___
     data_file.unlink()
-except IsADirectoryError __ e:
+______ IsADirectoryError __ e:
     print(f'Error: {data_file} : {e.strerror}')
 
 # This creates a Path object called data_file that points to a file. Calling .remove() on data_file will

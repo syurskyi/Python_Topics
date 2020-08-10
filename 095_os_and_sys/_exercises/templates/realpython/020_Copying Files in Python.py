@@ -3,8 +3,8 @@
 
 ______ shutil
 
-src = 'path/to/file.txt'
-dst = 'path/to/dest_dir'
+src _ 'path/to/file.txt'
+dst _ 'path/to/dest_dir'
 shutil.copy(src, dst)
 
 # shutil.copy() is comparable to the cp command in UNIX based systems. shutil.copy(src, dst) will copy the file src
@@ -16,8 +16,8 @@ shutil.copy(src, dst)
 
 ______ shutil
 
-src = 'path/to/file.txt'
-dst = 'path/to/dest_dir'
+src _ 'path/to/file.txt'
+dst _ 'path/to/dest_dir'
 shutil.copy2(src, dst)
 
 # Using .copy2() preserves details about the file such as last access time, permission bits, last modification time,

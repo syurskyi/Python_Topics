@@ -10,11 +10,11 @@
 #end_pymotw_header
 ______ __.p..
 
-PATHS = [
+PATHS _ [
     ('one', 'two', 'three'),
     ('/', 'one', 'two', 'three'),
     ('/one', '/two', '/three'),
 ]
 
 ___ parts __ PATHS:
-    print('{} : {!r}'.f..(parts, __.p...j..(*parts)))
+    print('@ : {!r}'.f..(parts, __.p...j..(*parts)))

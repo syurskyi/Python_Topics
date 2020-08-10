@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-root = pathlib.PurePosixPath('/')
-subdirs = ['usr', 'local']
-usr_local = root.joinpath(*subdirs)
+root _ pathlib.PurePosixPath('/')
+subdirs _ ['usr', 'local']
+usr_local _ root.joinpath(*subdirs)
 print(usr_local)

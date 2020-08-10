@@ -8,24 +8,24 @@ file, and attempts to work around undecodable dir/file name prints.
 ______ __, pprint
 from ___ ______ argv, exc_info
 
-trace = 1                                    # 0=off, 1=dirs, 2=+files
-dirname, extname = __.curdir, '.py'          # default is .py files in cwd
-__ len(argv) > 1: dirname = argv[1]          # ex: C:\, C:\Python31\Lib
-__ len(argv) > 2: extname = argv[2]          # ex: .pyw, .txt
-__ len(argv) > 3: trace   = int(argv[3])     # ex: ". .py 2"
+trace _ 1                                    # 0=off, 1=dirs, 2=+files
+dirname, extname _ __.curdir, '.py'          # default is .py files in cwd
+__ len(argv) > 1: dirname _ argv[1]          # ex: C:\, C:\Python31\Lib
+__ len(argv) > 2: extname _ argv[2]          # ex: .pyw, .txt
+__ len(argv) > 3: trace   _ int(argv[3])     # ex: ". .py 2"
 
 ___ tryprint(arg):
-    try:
+    ___
         print(arg)                           # unprintable filename?
-    except UnicodeEncodeError:
+    ______ UnicodeEncodeError:
         print(arg.encode())                  # try raw byte string
  
-visited  = set()
-allsizes = []
+visited  _ set()
+allsizes _ []
 ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
     __ trace: tryprint(thisDir)
-    thisDir = __.p...normpath(thisDir)
-    fixname = __.p...normcase(thisDir)
+    thisDir _ __.p...normpath(thisDir)
+    fixname _ __.p...normcase(thisDir)
     __ fixname __ visited:
         __ trace: tryprint('skipping ' + thisDir)
     ____
@@ -33,17 +33,17 @@ ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
         ___ filename __ filesHere:
             __ filename.endswith(extname):
                 __ trace > 1: tryprint('+++' + filename)
-                fullname = __.p...j..(thisDir, filename)
-                try:
-                    bytesize = __.p...getsize(fullname)
-                    linesize = sum(+1 ___ line __ o..(fullname, 'rb'))
-                except Exception:
+                fullname _ __.p...j..(thisDir, filename)
+                ___
+                    bytesize _ __.p...getsize(fullname)
+                    linesize _ sum(+1 ___ line __ o..(fullname, 'rb'))
+                ______ Exception:
                     print('error', exc_info()[0])
                 ____
                     allsizes.append((bytesize, linesize, fullname))
 
 ___ (title, key) __ [('bytes', 0), ('lines', 1)]:
     print('\nBy %s...' % title)
-    allsizes.sort(key=lambda x: x[key])
+    allsizes.sort(key_lambda x: x[key])
     pprint.pprint(allsizes[:3])
     pprint.pprint(allsizes[-3:])

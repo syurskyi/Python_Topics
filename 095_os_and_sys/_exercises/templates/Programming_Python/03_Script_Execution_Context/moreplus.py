@@ -18,21 +18,21 @@ ___ getreply():
         __ ___.platform[:3] == 'win':            # if stdin was redirected
             ______ msvcrt                        # can't use to ask a user
             msvcrt.putch(b'?')
-            key = msvcrt.getche()                # use windows console tools
+            key _ msvcrt.getche()                # use windows console tools
             msvcrt.putch(b'\n')                  # getch() does not echo key
             return key
         ____
             assert False, 'platform not supported'
             #linux?: open('/dev/tty').readline()[:-1]
             
-___ more(text, numlines=10):
+___ more(text, numlines_10):
     """
     page multiline string to stdout
     """
-    lines = text.splitlines()
+    lines _ text.splitlines()
     while lines:
-        chunk = lines[:numlines]
-        lines = lines[numlines:]
+        chunk _ lines[:numlines]
+        lines _ lines[numlines:]
         ___ line __ chunk: print(line)
         __ lines and getreply() not __ [b'y', b'Y']: break
 

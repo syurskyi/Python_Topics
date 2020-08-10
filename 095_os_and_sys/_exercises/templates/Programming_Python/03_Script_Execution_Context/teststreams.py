@@ -3,12 +3,12 @@
 ___ interact():
     print('Hello stream world')                     # print sends to sys.stdout
     while True:
-        try:
-            reply = input('Enter a number>')        # input reads sys.stdin
-        except EOFError:
-            break                                   # raises an except on eof
+        ___
+            reply _ input('Enter a number>')        # input reads sys.stdin
+        ______ EOFError:
+            break                                   # raises an ______ on eof
         ____                                       # input given as a string
-            num = int(reply)
+            num _ int(reply)
             print("%d squared is %d" % (num, num ** 2))
     print('Bye')
 

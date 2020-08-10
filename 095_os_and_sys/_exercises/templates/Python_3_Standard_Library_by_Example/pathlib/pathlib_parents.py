@@ -10,9 +10,9 @@
 #end_pymotw_header
 ______ pathlib
 
-p = pathlib.PurePosixPath('/usr/local/lib')
+p _ pathlib.PurePosixPath('/usr/local/lib')
 
-print('parent: {}'.f..(p.parent))
+print('parent: @'.f..(p.parent))
 
 print('\nhierarchy:')
 ___ up __ p.parents:

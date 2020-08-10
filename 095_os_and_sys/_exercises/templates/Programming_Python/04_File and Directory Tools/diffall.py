@@ -13,7 +13,7 @@ os.listdir() calls in dirdiff.comparedirs() by passing results here along.
 """
 
 ______ __, dirdiff
-blocksize = 1024 * 1024              # up to 1M per read
+blocksize _ 1024 * 1024              # up to 1M per read
 
 ___ intersect(seq1, seq2):
     """
@@ -23,7 +23,7 @@ ___ intersect(seq1, seq2):
     """
     return [item ___ item __ seq1 __ item __ seq2]
 
-___ comparetrees(dir1, dir2, diffs, verbose=False):
+___ comparetrees(dir1, dir2, diffs, verbose_False):
     """
     Compare all subdirectories and files in two directory trees;
     uses binary files to prevent Unicode decoding and endline transforms,
@@ -32,38 +32,38 @@ ___ comparetrees(dir1, dir2, diffs, verbose=False):
     """
     # compare file name lists
     print('-' * 20)
-    names1 = __.l_d_(dir1)
-    names2 = __.l_d_(dir2)
+    names1 _ __.l_d_(dir1)
+    names2 _ __.l_d_(dir2)
     __ not dirdiff.comparedirs(dir1, dir2, names1, names2):
         diffs.append('unique files at %s - %s' % (dir1, dir2))
 
     print('Comparing contents')
-    common = intersect(names1, names2)
-    missed = common[:]
+    common _ intersect(names1, names2)
+    missed _ common[:]
 
     # compare contents of files in common
     ___ name __ common:
-        path1 = __.p...j..(dir1, name)
-        path2 = __.p...j..(dir2, name)
+        path1 _ __.p...j..(dir1, name)
+        path2 _ __.p...j..(dir2, name)
         __ __.p...isfile(path1) and __.p...isfile(path2):
             missed.remove(name)
-            file1 = o..(path1, 'rb')
-            file2 = o..(path2, 'rb')
+            file1 _ o..(path1, 'rb')
+            file2 _ o..(path2, 'rb')
             while True:
-                bytes1 = file1.read(blocksize)
-                bytes2 = file2.read(blocksize)
+                bytes1 _ file1.read(blocksize)
+                bytes2 _ file2.read(blocksize)
                 __ (not bytes1) and (not bytes2):
                     __ verbose: print(name, 'matches')
                     break
-                __ bytes1 != bytes2:
+                __ bytes1 !_ bytes2:
                     diffs.append('files differ at %s - %s' % (path1, path2))
                     print(name, 'DIFFERS')
                     break
 
     # recur to compare directories in common
     ___ name __ common:
-        path1 = __.p...j..(dir1, name)
-        path2 = __.p...j..(dir2, name)
+        path1 _ __.p...j..(dir1, name)
+        path2 _ __.p...j..(dir2, name)
         __ __.p...isdir(path1) and __.p...isdir(path2):
             missed.remove(name)
             comparetrees(path1, path2, diffs, verbose)
@@ -75,8 +75,8 @@ ___ comparetrees(dir1, dir2, diffs, verbose=False):
 
 
 __ __name__ == '__main__':
-    dir1, dir2 = dirdiff.getargs()
-    diffs = []
+    dir1, dir2 _ dirdiff.getargs()
+    diffs _ []
     comparetrees(dir1, dir2, diffs, True)      # changes diffs in-place
     print('=' * 40)                            # walk, report diffs list
     __ not diffs:

@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ __.p..
 
-PATHS = [
+PATHS _ [
     '/one/two/three',
     '/one/two/three/',
     '/',

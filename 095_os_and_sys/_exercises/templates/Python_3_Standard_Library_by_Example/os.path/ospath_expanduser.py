@@ -11,6 +11,6 @@
 ______ __.p..
 
 ___ user __ ['', 'dhellmann', 'nosuchuser']:
-    lookup = '~' + user
+    lookup _ '~' + user
     print('{!r:>15} : {!r}'.f..(
         lookup, __.p...expanduser(lookup)))

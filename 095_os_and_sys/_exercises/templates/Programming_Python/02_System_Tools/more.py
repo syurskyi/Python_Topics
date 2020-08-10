@@ -2,11 +2,11 @@
 split and interactively page a string or file of text
 """
 
-___ more(text, numlines=15):
-    lines = text.splitlines()                # like split('\n') but no '' at end
+___ more(text, numlines_15):
+    lines _ text.splitlines()                # like split('\n') but no '' at end
     while lines:
-        chunk = lines[:numlines]
-        lines = lines[numlines:]
+        chunk _ lines[:numlines]
+        lines _ lines[numlines:]
         ___ line __ chunk: print(line)
         __ lines and input('More?') not __ ['y', 'Y']: break
 

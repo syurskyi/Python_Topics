@@ -6,29 +6,29 @@ enough to use os.environ['PYTHONPATH']: this is a subset of sys.path.
 """
 
 ______ ___, __, pprint
-trace = 0  # 1=dirs, 2=+files
+trace _ 0  # 1=dirs, 2=+files
 
-visited  = {}
-allsizes = []
+visited  _ {}
+allsizes _ []
 ___ srcdir __ ___.p..:
     ___ (thisDir, subsHere, filesHere) __ __.walk(srcdir):
         __ trace > 0: print(thisDir)
-        thisDir = __.p...normpath(thisDir)
-        fixcase = __.p...normcase(thisDir)
+        thisDir _ __.p...normpath(thisDir)
+        fixcase _ __.p...normcase(thisDir)
         __ fixcase __ visited:
             continue
         ____
-            visited[fixcase] = True
+            visited[fixcase] _ True
         ___ filename __ filesHere:
             __ filename.endswith('.py'):
                 __ trace > 1: print('...', filename)
-                pypath = __.p...j..(thisDir, filename)
-                try:
-                    pysize = __.p...getsize(pypath)
-                except __.error:
+                pypath _ __.p...j..(thisDir, filename)
+                ___
+                    pysize _ __.p...getsize(pypath)
+                ______ __.error:
                     print('skipping', pypath, ___.exc_info()[0])
                 ____
-                    pylines = len(o..(pypath, 'rb').readlines())
+                    pylines _ len(o..(pypath, 'rb').readlines())
                     allsizes.append((pysize, pylines, pypath))
 
 print('By size...')
@@ -37,6 +37,6 @@ pprint.pprint(allsizes[:3])
 pprint.pprint(allsizes[-3:])
 
 print('By lines...')
-allsizes.sort(key=lambda x: x[1])
+allsizes.sort(key_lambda x: x[1])
 pprint.pprint(allsizes[:3])
 pprint.pprint(allsizes[-3:])

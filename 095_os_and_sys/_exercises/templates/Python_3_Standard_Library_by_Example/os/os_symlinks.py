@@ -5,12 +5,12 @@
 #end_pymotw_header
 ______ __
 
-link_name = '/tmp/' + __.p...basename( -f)
+link_name _ '/tmp/' + __.p...basename( -f)
 
-print('Creating link {} -> {}'.f..(link_name,  -f))
+print('Creating link @ -> @'.f..(link_name,  -f))
 __.symlink( -f, link_name)
 
-stat_info = __.lstat(link_name)
+stat_info _ __.lstat(link_name)
 print('Permissions:', oct(stat_info.st_mode))
 
 print('Points to:', __.readlink(link_name))

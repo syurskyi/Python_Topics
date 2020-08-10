@@ -8,36 +8,36 @@ ______ ___                                      # get built-in modules
 
 class Output:                                   # simulated output file
     ___ __init__(self):
-        self.text = ''                          # empty string when created
+        self.text _ ''                          # empty string when created
     ___ w..(self, string):                    # add a string of bytes
-        self.text += string
+        self.text +_ string
     ___ writelines(self, lines):                # add each line in a list
         ___ line __ lines: self.w..(line)
 
 class Input:                                    # simulated input file
-    ___ __init__(self, input=''):               # default argument
-        self.text = input                       # save string when created
-    ___ read(self, size=N..):                  # optional argument
+    ___ __init__(self, input_''):               # default argument
+        self.text _ input                       # save string when created
+    ___ read(self, size_N..):                  # optional argument
         __ size == N..:                        # read N bytes, or all
-            res, self.text = self.text, ''
+            res, self.text _ self.text, ''
         ____
-            res, self.text = self.text[:size], self.text[size:]
+            res, self.text _ self.text[:size], self.text[size:]
         return res
     ___ readline(self):
-        eoln = self.text.find('\n')             # find offset of next eoln
+        eoln _ self.text.find('\n')             # find offset of next eoln
         __ eoln == -1:                          # slice off through eoln
-            res, self.text = self.text, ''
+            res, self.text _ self.text, ''
         ____
-            res, self.text = self.text[:eoln+1], self.text[eoln+1:]
+            res, self.text _ self.text[:eoln+1], self.text[eoln+1:]
         return res
 
 ___ redirect(function, pargs, kargs, input):    # redirect stdin/out
-    savestreams = ___.stdin, ___.stdout         # run a function object
-    ___.stdin   = Input(input)                  # return stdout text
-    ___.stdout  = Output()
-    try:
-        result = function(*pargs, **kargs)      # run function with args
-        output = ___.stdout.text
+    savestreams _ ___.stdin, ___.stdout         # run a function object
+    ___.stdin   _ Input(input)                  # return stdout text
+    ___.stdout  _ Output()
+    ___
+        result _ function(*pargs, **kargs)      # run function with args
+        output _ ___.stdout.text
     finally:
-        ___.stdin, ___.stdout = savestreams     # restore if exc or not
+        ___.stdin, ___.stdout _ savestreams     # restore if exc or not
     return (result, output)                     # return result if no exc

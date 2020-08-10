@@ -5,6 +5,6 @@
 #end_pymotw_header
 ______ pathlib
 
-p = pathlib.Path( -f)
+p _ pathlib.Path( -f)
 
-print('{} is owned by {}/{}'.f..(p, p.owner(), p.group()))
+print('@ is owned by @/@'.f..(p, p.owner(), p.group()))

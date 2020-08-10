@@ -20,7 +20,7 @@ __.m_d_('2018/10/05')
 # call .makedirs() and pass in the mode you would like the directories to be created in:
 
 ______ __
-__.m_d_('2018/10/05', mode=0o770)
+__.m_d_('2018/10/05', mode_0o770)
 
 # This creates the 2018/10/05 directory structure and gives the owner and group users read, write,
 # and execute permissions. The default mode is 0o777, and the file permission bits of existing parent directories
@@ -42,8 +42,8 @@ __.m_d_('2018/10/05', mode=0o770)
 
 ______ pathlib
 
-p = pathlib.Path('2018/10/05')
-p.mkdir(parents=True)
+p _ pathlib.Path('2018/10/05')
+p.mkdir(parents_True)
 
 # Passing parents=True to Path.mkdir() makes it create the directory 05 and any parent directories necessary to make
 # the path valid.

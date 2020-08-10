@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ __.p..
 
-FILENAMES = [
+FILENAMES _ [
      -f,
     __.p...dirname( -f),
     '/',

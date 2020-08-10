@@ -2,7 +2,7 @@
 
 ______ zipfile
 
-file_list = ['file1.py', 'sub_dir/', 'sub_dir/bar.py', 'sub_dir/foo.py']
+file_list _ ['file1.py', 'sub_dir/', 'sub_dir/bar.py', 'sub_dir/foo.py']
 w__ zipfile.ZipFile('new.zip', 'w') __ new_zip:
     ___ name __ file_list:
         new_zip.w..(name)

@@ -4,9 +4,9 @@
 #
 # trash_dir = 'my_documents/bad_dir'
 #
-# try:
+# ___
 #     shutil.rmtree(trash_dir)
-# except OSError as e:
+# ______ OSError as e:
 #     print(f'Error: {trash_dir} : {e.strerror}')
 #
 # Everything in trash_dir is deleted when shutil.rmtree() is called on it. There may be cases where you want
@@ -16,9 +16,9 @@
 # ______ os
 #
 # for dirpath, dirnames, files in os.walk('.', topdown=False):
-#     try:
+#     ___
 #         os.rmdir(dirpath)
-#     except OSError as ex:
+#     ______ OSError as ex:
 #         pass
 #
 # This walks down the directory tree and tries to delete each directory it finds. If the directory isn’t empty,

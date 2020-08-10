@@ -5,7 +5,7 @@ ______ ___, __
 ___ mylister(currdir):
     print('[' + currdir + ']')
     ___ file __ __.l_d_(currdir):              # list files here
-        p.. = __.p...j..(currdir, file)        # add dir path back
+        p.. _ __.p...j..(currdir, file)        # add dir path back
         __ not __.p...isdir(p..):
             print(p..)
         ____

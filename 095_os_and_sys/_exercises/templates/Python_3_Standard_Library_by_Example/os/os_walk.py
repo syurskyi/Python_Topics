@@ -8,18 +8,18 @@ ______ ___
 
 # If we are not given a path to list, use /tmp
 __ len(___.argv) == 1:
-    root = '/tmp'
+    root _ '/tmp'
 ____
-    root = ___.argv[1]
+    root _ ___.argv[1]
 
 ___ dir_name, sub_dirs, files __ __.walk(root):
     print(dir_name)
     # Make the subdirectory names stand out with /
-    sub_dirs = [n + '/' ___ n __ sub_dirs]
+    sub_dirs _ [n + '/' ___ n __ sub_dirs]
     # Mix the directory contents together
-    contents = sub_dirs + files
+    contents _ sub_dirs + files
     contents.sort()
     # Show the contents
     ___ c __ contents:
-        print('  {}'.f..(c))
+        print('  @'.f..(c))
     print()

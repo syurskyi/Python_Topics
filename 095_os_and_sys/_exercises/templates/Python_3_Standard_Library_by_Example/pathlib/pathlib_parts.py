@@ -10,5 +10,5 @@
 #end_pymotw_header
 ______ pathlib
 
-p = pathlib.PurePosixPath('/usr/local')
+p _ pathlib.PurePosixPath('/usr/local')
 print(p.parts)

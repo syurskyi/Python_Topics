@@ -10,17 +10,17 @@
 #end_pymotw_header
 ______ pathlib
 
-usr = pathlib.PurePosixPath('/usr')
+usr _ pathlib.PurePosixPath('/usr')
 print(usr)
 
-usr_local = usr / 'local'
+usr_local _ usr / 'local'
 print(usr_local)
 
-usr_share = usr / pathlib.PurePosixPath('share')
+usr_share _ usr / pathlib.PurePosixPath('share')
 print(usr_share)
 
-root = usr / '..'
+root _ usr / '..'
 print(root)
 
-etc = root / '/etc/'
+etc _ root / '/etc/'
 print(etc)

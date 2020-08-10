@@ -8,13 +8,13 @@ ______ ___
 ______ ti__
 
 __ len(___.argv) == 1:
-    filename =  -f
+    filename _  -f
 ____
-    filename = ___.argv[1]
+    filename _ ___.argv[1]
 
-stat_info = __.stat(filename)
+stat_info _ __.stat(filename)
 
-print('os.stat({}):'.f..(filename))
+print('os.stat(@):'.f..(filename))
 print('  Size:', stat_info.st_size)
 print('  Permissions:', oct(stat_info.st_mode))
 print('  Owner:', stat_info.st_uid)

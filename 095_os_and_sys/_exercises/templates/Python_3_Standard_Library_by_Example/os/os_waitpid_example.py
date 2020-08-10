@@ -7,18 +7,18 @@ ______ __
 ______ ___
 ______ ti__
 
-workers = []
+workers _ []
 ___ i __ range(2):
-    print('PARENT {}: Forking {}'.f..(__.g_p_, i))
-    worker_pid = __.f..
+    print('PARENT @: Forking @'.f..(__.g_p_, i))
+    worker_pid _ __.f..
     __ not worker_pid:
-        print('WORKER {}: Starting'.f..(i))
+        print('WORKER @: Starting'.f..(i))
         ti__.sleep(2 + i)
-        print('WORKER {}: Finishing'.f..(i))
+        print('WORKER @: Finishing'.f..(i))
         ___.exit(i)
     workers.append(worker_pid)
 
 ___ pid __ workers:
-    print('PARENT: Waiting for {}'.f..(pid))
-    done = __.waitpid(pid, 0)
+    print('PARENT: Waiting for @'.f..(pid))
+    done _ __.waitpid(pid, 0)
     print('PARENT: Child done:', done)

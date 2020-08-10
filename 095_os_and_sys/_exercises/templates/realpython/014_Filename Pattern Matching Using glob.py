@@ -33,7 +33,7 @@ ___ name __ g__.g__('*[0-9]*.txt'):
 # glob makes it easy to search for files recursively in subdirectories too:
 
 ______ g__
-___ file __ g__.iglob('**/*.py', recursive=True):
+___ file __ g__.iglob('**/*.py', recursive_True):
     print(file)
 
 # This example makes use of glob.iglob() to search for .py files in the current directory and subdirectories.
@@ -52,7 +52,7 @@ ___ file __ g__.iglob('**/*.py', recursive=True):
 # use .Path.glob() to list file types that start with the letter p:
 
 from pathlib ______ Path
-p = Path('.')
+p _ Path('.')
 ___ name __ p.g__('*.p*'):
     print(name)
 

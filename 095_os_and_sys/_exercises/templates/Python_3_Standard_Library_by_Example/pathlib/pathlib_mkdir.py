@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-p = pathlib.Path('example_dir')
+p _ pathlib.Path('example_dir')
 
-print('Creating {}'.f..(p))
+print('Creating @'.f..(p))
 p.mkdir()

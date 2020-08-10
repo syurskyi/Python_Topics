@@ -10,17 +10,17 @@ length.  Could extend split/join to pop up Tkinter file selectors.
 """
 
 ______ __, ___
-readsize = 1024
+readsize _ 1024
 
 ___ j..(fromdir, tofile):
-    output = o..(tofile, 'wb')
-    parts  = __.l_d_(fromdir)
+    output _ o..(tofile, 'wb')
+    parts  _ __.l_d_(fromdir)
     parts.sort()
     ___ filename __ parts:
-        filepath = __.p...j..(fromdir, filename)
-        fileobj  = o..(filepath, 'rb')
+        filepath _ __.p...j..(fromdir, filename)
+        fileobj  _ o..(filepath, 'rb')
         while True:
-            filebytes = fileobj.read(readsize)
+            filebytes _ fileobj.read(readsize)
             __ not filebytes: break
             output.w..(filebytes)
         fileobj.close()
@@ -30,19 +30,19 @@ __ __name__ == '__main__':
     __ len(___.argv) == 2 and ___.argv[1] == '-help':
         print('Use: join.py [from-dir-name to-file-name]')
     ____
-        __ len(___.argv) != 3:
-            interactive = True
-            fromdir = input('Directory containing part files? ')
-            tofile  = input('Name of file to be recreated? ')
+        __ len(___.argv) !_ 3:
+            interactive _ True
+            fromdir _ input('Directory containing part files? ')
+            tofile  _ input('Name of file to be recreated? ')
         ____
-            interactive = False
-            fromdir, tofile = ___.argv[1:]
-        absfrom, absto = map(__.p...abspath, [fromdir, tofile])
+            interactive _ False
+            fromdir, tofile _ ___.argv[1:]
+        absfrom, absto _ map(__.p...abspath, [fromdir, tofile])
         print('Joining', absfrom, 'to make', absto)
 
-        try:
+        ___
             j..(fromdir, tofile)
-        except:
+        ______:
             print('Error joining files:')
             print(___.exc_info()[0], ___.exc_info()[1])
         ____

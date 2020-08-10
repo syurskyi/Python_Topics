@@ -40,7 +40,7 @@ w__ zipfile.ZipFile('data.zip', 'r') __ zipobj:
 ______ zipfile
 
 w__ zipfile.ZipFile('data.zip', 'r') __ zipobj:
-    bar_info = zipobj.getinfo('sub_dir/bar.py')
+    bar_info _ zipobj.getinfo('sub_dir/bar.py')
     bar_info.file_size
 
 # Here’s the output:

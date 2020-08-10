@@ -5,7 +5,7 @@
 ______ __
 
 # List all files in a directory using os.listdir
-basepath = 'my_directory/'
+basepath _ 'my_directory/'
 ___ entry __ __.l_d_(basepath):
     __ __.p...isfile(__.p...j..(basepath, entry)):
         print(entry)
@@ -25,7 +25,7 @@ print()
 ______ __
 
 # List all files in a directory using scandir()
-basepath = 'my_directory/'
+basepath _ 'my_directory/'
 w__ __.scandir(basepath) __ entries:
     ___ entry __ entries:
         __ entry.is_file():
@@ -46,8 +46,8 @@ print()
 
 from pathlib ______ Path
 
-basepath = Path('my_directory/')
-files_in_basepath = basepath.iterdir()
+basepath _ Path('my_directory/')
+files_in_basepath _ basepath.iterdir()
 ___ item __ files_in_basepath:
     __ item.is_file():
         print(item.name)
@@ -69,8 +69,8 @@ print()
 from pathlib ______ Path
 
 # List all files in directory using pathlib
-basepath = Path('my_directory/')
-files_in_basepath = (entry ___ entry __ basepath.iterdir() __ entry.is_file())
+basepath _ Path('my_directory/')
+files_in_basepath _ (entry ___ entry __ basepath.iterdir() __ entry.is_file())
 ___ item __ files_in_basepath:
     print(item.name)
 

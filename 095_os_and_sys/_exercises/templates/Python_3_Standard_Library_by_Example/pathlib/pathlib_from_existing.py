@@ -10,11 +10,11 @@
 #end_pymotw_header
 ______ pathlib
 
-ind = pathlib.PurePosixPath('source/pathlib/index.rst')
+ind _ pathlib.PurePosixPath('source/pathlib/index.rst')
 print(ind)
 
-py = ind.with_name('pathlib_from_existing.py')
+py _ ind.with_name('pathlib_from_existing.py')
 print(py)
 
-pyc = py.with_suffix('.pyc')
+pyc _ py.with_suffix('.pyc')
 print(pyc)

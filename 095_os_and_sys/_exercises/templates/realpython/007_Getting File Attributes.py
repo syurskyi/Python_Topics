@@ -7,7 +7,7 @@
 ______ __
 w__ __.scandir('my_directory/') __ dir_contents:
     ___ entry __ dir_contents:
-        info = entry.stat()
+        info _ entry.stat()
         print(info.st_mtime)
 
 print()
@@ -28,9 +28,9 @@ print()
 # The pathlib module has corresponding methods for retrieving file information that give the same results:
 
 from pathlib ______ Path
-current_dir = Path('my_directory')
+current_dir _ Path('my_directory')
 ___ p.. __ current_dir.iterdir():
-    info = p...stat()
+    info _ p...stat()
     print(info.st_mtime)
 
 print()
@@ -52,15 +52,15 @@ from datetime ______ datetime
 from __ ______ scandir
 
 ___ convert_date(timestamp):
-    d = datetime.utcfromtimestamp(timestamp)
-    formated_date = d.strftime('%d %b %Y')
+    d _ datetime.utcfromtimestamp(timestamp)
+    formated_date _ d.strftime('%d %b %Y')
     return formated_date
 
 ___ get_files():
-    dir_entries = scandir('my_directory/')
+    dir_entries _ scandir('my_directory/')
     ___ entry __ dir_entries:
         __ entry.is_file():
-            info = entry.stat()
+            info _ entry.stat()
             print(f'{entry.name}\t Last Modified: {convert_date(info.st_mtime)}')
 
 # This will first get a list of files in my_directory and their attributes and then call convert_date()

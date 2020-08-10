@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-p = pathlib.Path('touched')
+p _ pathlib.Path('touched')
 
 p.touch()
 

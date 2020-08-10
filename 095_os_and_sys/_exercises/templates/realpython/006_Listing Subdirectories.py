@@ -3,7 +3,7 @@
 ______ __
 
 # List all subdirectories using os.listdir
-basepath = 'my_directory/'
+basepath _ 'my_directory/'
 ___ entry __ __.l_d_(basepath):
     __ __.p...isdir(__.p...j..(basepath, entry)):
         print(entry)
@@ -23,7 +23,7 @@ print()
 ______ __
 
 # List all subdirectories using scandir()
-basepath = 'my_directory/'
+basepath _ 'my_directory/'
 w__ __.scandir(basepath) __ entries:
     ___ entry __ entries:
         __ entry.is_dir():
@@ -44,7 +44,7 @@ print()
 from pathlib ______ Path
 
 # List all subdirectory using pathlib
-basepath = Path('my_directory/')
+basepath _ Path('my_directory/')
 ___ entry __ basepath.iterdir():
     __ entry.is_dir():
         print(entry.name)

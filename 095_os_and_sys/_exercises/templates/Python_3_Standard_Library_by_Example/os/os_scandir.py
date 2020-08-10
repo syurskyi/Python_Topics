@@ -8,14 +8,14 @@ ______ ___
 
 ___ entry __ __.scandir(___.argv[1]):
     __ entry.is_dir():
-        typ = 'dir'
+        typ _ 'dir'
     elif entry.is_file():
-        typ = 'file'
+        typ _ 'file'
     elif entry.is_symlink():
-        typ = 'link'
+        typ _ 'link'
     ____
-        typ = 'unknown'
+        typ _ 'unknown'
     print('{name} {typ}'.f..(
-        name=entry.name,
-        typ=typ,
+        name_entry.name,
+        typ_typ,
     ))

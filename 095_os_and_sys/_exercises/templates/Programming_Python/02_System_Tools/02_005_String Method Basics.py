@@ -1,5 +1,5 @@
 print('#' * 52)
-line = 'aaa\nbbb\nccc\n'
+line _ 'aaa\nbbb\nccc\n'
 print(line.split('\n'))
 # ['aaa', 'bbb', 'ccc', '']
 # ######################################################################################################################
@@ -10,19 +10,19 @@ print(line.splitlines())
 # ######################################################################################################################
 
 print('#' * 52 + 'find')
-mystr = 'xxxSPAMxxx'
+mystr _ 'xxxSPAMxxx'
 print(mystr.find('SPAM')) # return first offset
 # 3
 # ######################################################################################################################
 
 print('#' * 52 + 'replace')
-mystr = 'xxaaxxaa'
+mystr _ 'xxaaxxaa'
 print(mystr.replace('aa', 'SPAM')) # global replacement
 # 'xxSPAMxxSPAM
 # ######################################################################################################################
 
 print('#' * 52 + 'in')
-mystr = 'xxxSPAMxxx'
+mystr _ 'xxxSPAMxxx'
 print('SPAM' __ mystr) # substring search/test
 # True
 # ######################################################################################################################
@@ -35,7 +35,7 @@ print(mystr.find('Ni'))
 # -1
 # ######################################################################################################################
 print('#' * 52 + 'strip')
-mystr = '\t Ni\n'
+mystr _ '\t Ni\n'
 print(mystr.strip())  # remove whitespace
 # 'Ni'
 # ######################################################################################################################
@@ -44,7 +44,7 @@ print(mystr.rstrip()) # same, but just on right side
 # '\t Ni'
 # ######################################################################################################################
 print('#' * 52 + 'lower')
-mystr = 'SHRUBBERY'
+mystr _ 'SHRUBBERY'
 print(mystr.lower()) # case converters
 # 'shrubbery'
 # ######################################################################################################################
@@ -70,19 +70,19 @@ print(string.whitespace) # whitespace characters
 # ######################################################################################################################
 
 print('#' * 52 + ' split into substrings list')
-mystr = 'aaa,bbb,ccc'
+mystr _ 'aaa,bbb,ccc'
 print(mystr.split(',')) # split into substrings list
 # ['aaa', 'bbb', 'ccc']
 # ######################################################################################################################
 
 print('#' * 52 + 'default delimiter: whitespace')
-mystr = 'a b\nc\nd'
+mystr _ 'a b\nc\nd'
 print(mystr.split()) # default delimiter: whitespace
 # ['a', 'b', 'c', 'd']
 # ######################################################################################################################
 
 print('#' * 52 + 'join substrings list')
-delim = 'NI'
+delim _ 'NI'
 print(delim.j..(['aaa', 'bbb', 'ccc'])) # join substrings list
 # 'aaaNIbbbNIccc'
 # ######################################################################################################################
@@ -93,7 +93,7 @@ print(' '.j..(['A', 'dead', 'parrot'])) # add a space between
 # ######################################################################################################################
 
 print('#' * 52 + 'convert to characters list')
-chars = list('Lorreta') # convert to characters list
+chars _ list('Lorreta') # convert to characters list
 print(chars)
 # ['L', 'o', 'r', 'r', 'e', 't', 'a']
 # ######################################################################################################################
@@ -105,7 +105,7 @@ print(''.j..(chars)) # to string: empty delimiter
 # ######################################################################################################################
 
 print('#' * 52 + 'str.replace, the hard way!e')
-mystr = 'xxaaxxaa'
+mystr _ 'xxaaxxaa'
 print('SPAM'.j..(mystr.split('aa'))) # str.replace, the hard way!
 # 'xxSPAMxxSPAM'
 # ######################################################################################################################

@@ -13,7 +13,7 @@ ______ __.p..
 
 __.c_d_('/usr')
 
-PATHS = [
+PATHS _ [
     '.',
     '..',
     './one/two/three',

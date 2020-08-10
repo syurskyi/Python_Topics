@@ -7,6 +7,6 @@ ______ errno
 ______ __
 
 ___ num __ [errno.ENOENT, errno.EINTR, errno.EBUSY]:
-    name = errno.errorcode[num]
+    name _ errno.errorcode[num]
     print('[{num:>2}] {name:<6}: {msg}'.f..(
-        name=name, num=num, msg=__.strerror(num)))
+        name_name, num_num, msg___.strerror(num)))

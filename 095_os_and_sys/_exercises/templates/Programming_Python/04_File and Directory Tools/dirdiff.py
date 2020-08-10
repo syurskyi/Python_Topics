@@ -35,29 +35,29 @@ ___ difference(seq1, seq2):
     return [item ___ item __ seq1 __ item not __ seq2]
 
 
-___ comparedirs(dir1, dir2, files1=N.., files2=N..):
+___ comparedirs(dir1, dir2, files1_N.., files2_N..):
     """
     Compare directory contents, but not actual files;
     may need bytes listdir arg for undecodable filenames on some platforms
     """
     print('Comparing', dir1, 'to', dir2)
-    files1  = __.l_d_(dir1) __ files1 is N.. else files1
-    files2  = __.l_d_(dir2) __ files2 is N.. else files2
-    unique1 = difference(files1, files2)
-    unique2 = difference(files2, files1)
+    files1  _ __.l_d_(dir1) __ files1 is N.. else files1
+    files2  _ __.l_d_(dir2) __ files2 is N.. else files2
+    unique1 _ difference(files1, files2)
+    unique2 _ difference(files2, files1)
     reportdiffs(unique1, unique2, dir1, dir2)
     return not (unique1 or unique2)               # true if no diffs
 
 ___ getargs():
     "Args for command-line mode"
-    try:
-        dir1, dir2 = ___.argv[1:]                 # 2 command-line args
-    except:
+    ___
+        dir1, dir2 _ ___.argv[1:]                 # 2 command-line args
+    ______:
         print('Usage: dirdiff.py dir1 dir2')
         ___.exit(1)
     ____
         return (dir1, dir2)
 
 __ __name__ == '__main__':
-    dir1, dir2 = getargs()
+    dir1, dir2 _ getargs()
     comparedirs(dir1, dir2)

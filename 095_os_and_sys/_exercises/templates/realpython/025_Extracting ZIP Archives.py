@@ -11,7 +11,7 @@ __.l_d_('.')
 
 # ['data.zip']
 
-data_zip = zipfile.ZipFile('data.zip', 'r')
+data_zip _ zipfile.ZipFile('data.zip', 'r')
 
 # Extract a single file to current directory
 data_zip.extract('file1.py')
@@ -23,7 +23,7 @@ __.l_d_('.')
 # ['file1.py', 'data.zip']
 
 # Extract all files into a different directory
-data_zip.extractall(p..='extract_dir/')
+data_zip.extractall(p.._'extract_dir/')
 
 __.l_d_('.')
 # ['file1.py', 'extract_dir', 'data.zip']

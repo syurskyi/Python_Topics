@@ -1,5 +1,5 @@
 # myfile = open(filename, 'w')
-# try:
+# ___
 #     ...process myfile...
 # finally:
 #     myfile.close()

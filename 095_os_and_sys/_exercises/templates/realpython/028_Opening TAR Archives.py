@@ -30,7 +30,7 @@ w__ tarfile.o..('example.tar', 'r') __ tar_file:
 ______ tarfile
 ______ ti__
 
-tar = tarfile.o..('example.tar', mode='r')
+tar _ tarfile.o..('example.tar', mode_'r')
 tar.getnames()
 # ['CONTRIBUTING.rst', 'README.md', 'app.py']
 #

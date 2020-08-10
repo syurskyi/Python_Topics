@@ -4,20 +4,20 @@ Search the Python source lib, use pprint to display results nicely.
 """
 
 ______ ___, __, pprint
-trace = False
+trace _ False
 __ ___.platform.startswith('win'):
-    dirname = r'C:\Python31\Lib'                 # Windows
+    dirname _ r'C:\Python31\Lib'                 # Windows
 ____
-    dirname = '/usr/lib/python'                  # Unix, Linux, Cygwin
+    dirname _ '/usr/lib/python'                  # Unix, Linux, Cygwin
 
-allsizes = []
+allsizes _ []
 ___ (thisDir, subsHere, filesHere) __ __.walk(dirname):
     __ trace: print(thisDir)
     ___ filename __ filesHere:
         __ filename.endswith('.py'):
             __ trace: print('...', filename)
-            fullname = __.p...j..(thisDir, filename)
-            fullsize = __.p...getsize(fullname)
+            fullname _ __.p...j..(thisDir, filename)
+            fullsize _ __.p...getsize(fullname)
             allsizes.append((fullsize, fullname))
 
 allsizes.sort()
