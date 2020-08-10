@@ -1,18 +1,18 @@
-﻿# # -*- coding: utf-8 -*-
-#
-# """Пример перезаписи файла"""
-#
-# _______ __.p__
-#
-# filename = __.p___.j.. data example07.txt
-#
-# # Чтение файла
-# w___ o... ? _ a_ file
-#     lines _ ?.r.l.
-#
-# # Модификация данных
-# l___.in.. 2 'inserted line\n
-#
-# # Перезапись файла
-# w___ o.. ? _ a_ file
-#     ?.w.l. lines
+﻿# -*- coding: utf-8 -*-
+
+"""Пример перезаписи файла"""
+
+import os.path
+
+filename = os.path.join('data', 'example07.txt')
+
+# Чтение файла
+with open(filename, 'r') as file:
+    lines = file.readlines()
+
+# Модификация данных
+lines.insert(2, 'inserted line\n')
+
+# Перезапись файла
+with open(filename, 'a') as file:
+    file.writelines(lines)
