@@ -1,29 +1,29 @@
-#!/usr/bin/env python3
-# encoding: utf-8
+# #!/usr/bin/env python3
+# # encoding: utf-8
+# #
+# # Copyright (c) 2008 Doug Hellmann All rights reserved.
+# #
+# """Test properties of a file.
+# """
 #
-# Copyright (c) 2008 Doug Hellmann All rights reserved.
 #
-"""Test properties of a file.
-"""
-
-
-#end_pymotw_header
-______ __.p..
-
-FILENAMES _ [
-     -f,
-    __.p...d..( -f),
-    '/',
-    './broken_link',
-]
-
-___ file __ FILENAMES:
-    print('File        : {!r}'.f..(file))
-    print('Absolute    :', __.p...isabs(file))
-    print('Is File?    :', __.p...isfile(file))
-    print('Is Dir?     :', __.p...isdir(file))
-    print('Is Link?    :', __.p...islink(file))
-    print('Mountpoint? :', __.p...ismount(file))
-    print('Exists?     :', __.p...e..(file))
-    print('Link Exists?:', __.p...lexists(file))
-    print()
+# #end_pymotw_header
+# ______ __.p..
+#
+# FILENAMES _
+#      -f
+#     __.p...d.. -f
+#     '/'
+#     './broken_link'
+#
+#
+# ___ file __ ?
+#     print('File        : {!r}'.f.. ?
+#     print('Absolute    :', __.p...i_a.. ?
+#     print('Is File?    :', __.p...i_f.. ?
+#     print('Is Dir?     :', __.p...i_d.. ?
+#     print('Is Link?    :', __.p...i_l.. ?
+#     print('Mountpoint? :', __.p...i_m.. ?
+#     print('Exists?     :', __.p...e.. ?
+#     print('Link Exists?:', __.p...lex.. ?
+#     print()
