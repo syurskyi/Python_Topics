@@ -8,10 +8,10 @@
 ______ t_f_
 
 files _ ['app.py', 'config.py', 'tests.py']
-w__ t_f_.o..('packages.tar.gz', mode_'w:gz') __ tar:
-    tar.add('app.py')
-    tar.add('config.py')
-    tar.add('tests.py')
+w__ t_f_.o..('packages.tar.gz', mode_'w:gz') __ ta_:
+    ta_.add('app.py')
+    ta_.add('config.py')
+    ta_.add('tests.py')
 
 w__ t_f_.o..('packages.tar.gz', mode_'r:gz') __ t:
     ___ member __ t.getmembers():

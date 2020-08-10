@@ -3,9 +3,9 @@
 ______ t_f_
 
 file_list _ ['app.py', 'config.py', 'CONTRIBUTORS.md', 'tests.py']
-w__ t_f_.o..('packages.tar', mode_'w') __ tar:
+w__ t_f_.o..('packages.tar', mode_'w') __ ta_:
     ___ file __ file_list:
-        tar.add(file)
+        ta_.add(file)
 
 # Read the contents of the newly created archive
 w__ t_f_.o..('package.tar', mode_'r') __ t:
@@ -27,11 +27,11 @@ w__ t_f_.o..('package.tar', mode_'r') __ t:
 #
 # To add new files to an existing archive, open the archive in append mode ('a'):
 
-w__ t_f_.o..('package.tar', mode_'a') __ tar:
-    tar.add('foo.bar')
+w__ t_f_.o..('package.tar', mode_'a') __ ta_:
+    ta_.add('foo.bar')
 
-w__ t_f_.o..('package.tar', mode_'r') __ tar:
-   ___ member __ tar.getmembers():
+w__ t_f_.o..('package.tar', mode_'r') __ ta_:
+   ___ member __ ta_.getmembers():
        print(member.name)
 
 # app.py
