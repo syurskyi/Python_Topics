@@ -23,7 +23,7 @@ ______ __
 data_file _ 'home/data.txt'
 
 # If the file exists, delete it
-__ __.p...isfile(data_file):
+__ __.p...i_f_(data_file):
     __.remove(data_file)
 ____
     print(f'Error: {data_file} not a valid filename')
@@ -48,9 +48,9 @@ ______ O.. __ e:
 #
 # Finally, you can also use pathlib.Path.unlink() to delete files:
 
-from pathlib ______ Path
+from pathlib ______ P..
 
-data_file _ Path('home/data.txt')
+data_file _ P..('home/data.txt')
 
 ___
     data_file.u..()

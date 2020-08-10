@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-p _ pathlib.Path('example_dir')
+p _ pathlib.P..('example_dir')
 
 print('Removing @'.f..(p))
 p.rmdir()

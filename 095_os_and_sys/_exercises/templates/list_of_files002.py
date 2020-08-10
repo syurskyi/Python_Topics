@@ -21,6 +21,6 @@ ___ name __ files:
 
     __ __.p...isdir(full_path):
         print('    dir')
-    ____ __.p...isfile(full_path):
+    ____ __.p...i_f_(full_path):
         print('    file')
     print('    ' + str(__.p...getsize(full_path)))

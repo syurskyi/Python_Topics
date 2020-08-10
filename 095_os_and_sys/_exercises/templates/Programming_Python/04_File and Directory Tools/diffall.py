@@ -45,7 +45,7 @@ ___ comparetrees(dir1, dir2, diffs, verbose_False):
     ___ name __ common:
         path1 _ __.p...j..(dir1, name)
         path2 _ __.p...j..(dir2, name)
-        __ __.p...isfile(path1) and __.p...isfile(path2):
+        __ __.p...i_f_(path1) and __.p...i_f_(path2):
             missed.remove(name)
             file1 _ o..(path1, 'rb')
             file2 _ o..(path2, 'rb')

@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-p _ pathlib.Path('..')
+p _ pathlib.P..('..')
 
 ___ f __ p.rglob('pathlib_*.py'):
     print(f)

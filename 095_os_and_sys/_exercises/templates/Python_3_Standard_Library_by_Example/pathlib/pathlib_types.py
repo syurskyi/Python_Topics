@@ -12,11 +12,11 @@ ______ itertools
 ______ __
 ______ pathlib
 
-root _ pathlib.Path('test_files')
+root _ pathlib.P..('test_files')
 
 # Clean up from previous runs.
 __ root.e..():
-    ___ f __ root.iterdir():
+    ___ f __ root.i_d..:
         f.u..()
 ____
     root.mkdir()
@@ -29,9 +29,9 @@ __.mkfifo(str(root / 'fifo'))
 
 # Check the file types
 to_scan _ itertools.chain(
-    root.iterdir(),
-    [pathlib.Path('/dev/disk0'),
-     pathlib.Path('/dev/console')],
+    root.i_d..,
+    [pathlib.P..('/dev/disk0'),
+     pathlib.P..('/dev/console')],
 )
 hfmt _ '{:18s}' + ('  {:>5}' * 6)
 print(hfmt.f..('Name', 'File', 'Dir', 'Link', 'FIFO', 'Block',
@@ -42,7 +42,7 @@ fmt _ '{:20s}  ' + ('{!r:>5}  ' * 6)
 ___ f __ to_scan:
     print(fmt.f..(
         str(f),
-        f.is_file(),
+        f.i_f..(),
         f.is_dir(),
         f.is_symlink(),
         f.is_fifo(),

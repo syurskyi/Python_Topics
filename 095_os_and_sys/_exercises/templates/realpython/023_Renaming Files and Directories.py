@@ -8,8 +8,8 @@ __.rename('first.zip', 'first_01.zip')
 #
 # Another way to rename files or directories is to use rename() from the pathlib module:
 
-from pathlib ______ Path
-data_file _ Path('data_01.txt')
+from pathlib ______ P..
+data_file _ P..('data_01.txt')
 data_file.rename('data.txt')
 
 # To rename files using pathlib, you first create a pathlib.Path() object that contains a path to the file you want

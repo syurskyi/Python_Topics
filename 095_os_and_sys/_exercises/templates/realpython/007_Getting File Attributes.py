@@ -27,9 +27,9 @@ print()
 #
 # The pathlib module has corresponding methods for retrieving file information that give the same results:
 
-from pathlib ______ Path
-current_dir _ Path('my_directory')
-___ p.. __ current_dir.iterdir():
+from pathlib ______ P..
+current_dir _ P..('my_directory')
+___ p.. __ current_dir.i_d..:
     info _ p...s..()
     print(info.st_mtime)
 
@@ -59,7 +59,7 @@ ___ convert_date(timestamp):
 ___ get_files():
     dir_entries _ s_d_('my_directory/')
     ___ entry __ dir_entries:
-        __ entry.is_file():
+        __ entry.i_f..():
             info _ entry.s..()
             print(f'{entry.name}\t Last Modified: {convert_date(info.st_mtime)}')
 

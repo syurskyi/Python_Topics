@@ -41,11 +41,11 @@ print()
 #
 # Here’s how to use pathlib.Path():
 
-from pathlib ______ Path
+from pathlib ______ P..
 
 # List all subdirectory using pathlib
-basepath _ Path('my_directory/')
-___ entry __ basepath.iterdir():
+basepath _ P..('my_directory/')
+___ entry __ basepath.i_d..:
     __ entry.is_dir():
         print(entry.name)
 

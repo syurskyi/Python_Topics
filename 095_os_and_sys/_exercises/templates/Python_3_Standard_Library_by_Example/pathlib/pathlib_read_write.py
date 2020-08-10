@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-f _ pathlib.Path('example.txt')
+f _ pathlib.P..('example.txt')
 
 f.write_bytes('This is the content'.encode('utf-8'))
 

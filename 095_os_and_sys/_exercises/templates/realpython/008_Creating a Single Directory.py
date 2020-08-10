@@ -6,9 +6,9 @@
 # If a directory already exists, os.mkdir() raises FileExistsError. Alternatively, you can create a directory using
 # pathlib:
 
-from pathlib ______ Path
+from pathlib ______ P..
 
-p _ Path('example_directory/')
+p _ P..('example_directory/')
 p.mkdir()
 
 # If the path already exists, mkdir() raises a FileExistsError:
@@ -25,9 +25,9 @@ p.mkdir()
 #
 # To avoid errors like this, catch the error when it happens and let your user know:
 
-from pathlib ______ Path
+from pathlib ______ P..
 
-p _ Path('example_directory')
+p _ P..('example_directory')
 ___
     p.mkdir()
 ______ FileExistsError __ exc:
@@ -35,9 +35,9 @@ ______ FileExistsError __ exc:
 
 # Alternatively, you can ignore the FileExistsError by passing the exist_ok=True argument to .mkdir():
 
-from pathlib ______ Path
+from pathlib ______ P..
 
-p _ Path('example_directory')
+p _ P..('example_directory')
 p.mkdir(exist_ok_True)
 
 # This will not raise an error if the directory already exists.

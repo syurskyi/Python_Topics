@@ -10,8 +10,8 @@
 #end_pymotw_header
 ______ pathlib
 
-home _ pathlib.Path.home()
+home _ pathlib.P...home()
 print('home: ', home)
 
-cwd _ pathlib.Path.cwd()
+cwd _ pathlib.P...cwd()
 print('cwd : ', cwd)

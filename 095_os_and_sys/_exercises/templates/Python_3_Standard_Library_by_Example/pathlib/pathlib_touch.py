@@ -6,7 +6,7 @@
 ______ pathlib
 ______ ti__
 
-p _ pathlib.Path('touched')
+p _ pathlib.P..('touched')
 __ p.e..():
     print('already exists')
 ____

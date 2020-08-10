@@ -51,8 +51,8 @@ ___ file __ g__.iglob('**/*.py', recursive_True):
 # pathlib contains similar methods for making flexible file listings. The example below shows how you can
 # use .Path.glob() to list file types that start with the letter p:
 
-from pathlib ______ Path
-p _ Path('.')
+from pathlib ______ P..
+p _ P..('.')
 ___ name __ p.g__('*.p*'):
     print(name)
 

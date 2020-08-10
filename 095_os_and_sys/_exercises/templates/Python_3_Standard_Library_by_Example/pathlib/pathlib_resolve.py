@@ -10,6 +10,6 @@
 #end_pymotw_header
 ______ pathlib
 
-usr_local _ pathlib.Path('/usr/local')
+usr_local _ pathlib.P..('/usr/local')
 share _ usr_local / '..' / 'share'
 print(share.resolve())

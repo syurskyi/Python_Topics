@@ -12,7 +12,7 @@ __ le.(___.a..) __ 1:
 ____
     filename _ ___.a..[1]
 
-p _ pathlib.Path(filename)
+p _ pathlib.P..(filename)
 stat_info _ p.s..()
 
 print('@:'.f..(filename))

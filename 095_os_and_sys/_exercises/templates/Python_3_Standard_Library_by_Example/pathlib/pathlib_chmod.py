@@ -8,7 +8,7 @@ ______ pathlib
 ______ s..
 
 # Create a fresh test file.
-f _ pathlib.Path('pathlib_chmod_example.txt')
+f _ pathlib.P..('pathlib_chmod_example.txt')
 __ f.e..():
     f.u..()
 f.write_text('contents')

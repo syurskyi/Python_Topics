@@ -10,7 +10,7 @@
 #end_pymotw_header
 ______ pathlib
 
-p _ pathlib.Path('..')
+p _ pathlib.P..('..')
 
 ___ f __ p.g__('*.rst'):
     print(f)

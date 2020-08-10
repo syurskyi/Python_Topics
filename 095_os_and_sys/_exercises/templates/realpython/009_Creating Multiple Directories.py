@@ -42,7 +42,7 @@ __.m_d_('2018/10/05', mode_0o770)
 
 ______ pathlib
 
-p _ pathlib.Path('2018/10/05')
+p _ pathlib.P..('2018/10/05')
 p.mkdir(parents_True)
 
 # Passing parents=True to Path.mkdir() makes it create the directory 05 and any parent directories necessary to make
