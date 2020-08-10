@@ -31,7 +31,7 @@ ___ (thisDir, subsHere, filesHere) __ __.w..(d..):
     ____
         visited.add(fixname)
         ___ filename __ filesHere:
-            __ filename.endswith(extname):
+            __ filename.e_w_(extname):
                 __ trace > 1: tryprint('+++' + filename)
                 fullname _ __.p...j..(thisDir, filename)
                 ___

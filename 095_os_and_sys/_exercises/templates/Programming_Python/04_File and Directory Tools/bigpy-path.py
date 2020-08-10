@@ -20,7 +20,7 @@ ___ srcdir __ ___.p..:
         ____
             visited[fixcase] _ True
         ___ filename __ filesHere:
-            __ filename.endswith('.py'):
+            __ filename.e_w_('.py'):
                 __ trace > 1: print('...', filename)
                 pypath _ __.p...j..(thisDir, filename)
                 ___

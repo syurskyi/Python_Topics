@@ -23,7 +23,7 @@ sitefiles _ __.l_d_(sitefilesdir)     # filenames, no directory prefix
 
 count _ 0
 ___ filename __ sitefiles:
-    __ filename.endswith('.html') or filename.endswith('.htm'):
+    __ filename.e_w_('.html') or filename.e_w_('.htm'):
         fwdname _ __.p...j..(uploaddir, filename)
         print('creating', filename, 'as', fwdname)
 

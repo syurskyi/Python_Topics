@@ -14,7 +14,7 @@ allsizes _ []
 ___ (thisDir, subsHere, filesHere) __ __.w..(d..):
     __ trace: print(thisDir)
     ___ filename __ filesHere:
-        __ filename.endswith('.py'):
+        __ filename.e_w_('.py'):
             __ trace: print('...', filename)
             fullname _ __.p...j..(thisDir, filename)
             fullsize _ __.p...getsize(fullname)
