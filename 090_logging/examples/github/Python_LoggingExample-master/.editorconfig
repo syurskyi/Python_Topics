@@ -1,0 +1,38 @@
+
+#EditorConfig
+http://EditorConfig.org
+
+
+# Top-most EditorConfig File.
+root = true
+
+
+
+# Unix-style newlines with a newline ending every file.
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+
+
+# Set properties for most filetypes.
+[*.{css,scss,py,js,json,php,jar,c}]
+# Set character encoding
+charset = utf-8
+
+# Set tabbing styles.
+indent_style = space
+indent_size = 4
+
+
+
+# Set properties for html.
+[*.{html,blade.php}]
+# Set character encoding
+charset = utf-8
+
+# Set tabbing styles.
+indent_style = space
+indent_size = 2
+

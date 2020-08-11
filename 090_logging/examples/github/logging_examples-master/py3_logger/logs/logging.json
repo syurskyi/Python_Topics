@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "disable_existing_loggers": true,
+    "formatters": {
+        "standard_file": {
+            "format": "%(asctime)s.%(msecs)03d - %(name)-12s - %(levelname)-8s - %(message)s",
+            "datefmt": "%c"
+        },
+        "tab_delimited_file": {
+            "format": "%(asctime)s.%(msecs)03d\t%(name)s\t%(levelname)s\t%(message)s",
+            "datefmt": "%c"
+        },
+        "console": {
+            "format": "%(name)-12s: %(levelname)-8s %(message)s",
+            "datefmt": "%c"
+        }
+    },
+
+    "handlers": {
+        "warn_file": {
+            "level": "WARN",
+            "class": "logging.handlers.TimedRotatingFileHandler",
+            "formatter": "standard_file",
+            "when": "D",
+            "backupCount": 21,
+            "filename": "../logs/warn.log"
+        },
+        "debug_file": {
+            "level": "WARN",
+            "class": "logging.FileHandler",
+            "formatter": "tab_delimited_file",
+            "mode": "w",
+            "filename": "../logs/debug.log"
+        },
+        "console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "console",
+            "stream" : "ext://sys.stdout"
+        }
+    },
+
+    "root": {
+        "level": "NOTSET",
+        "handlers": ["console", "debug_file", "warn_file"]
+    }
+}
