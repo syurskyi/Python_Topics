@@ -9,14 +9,14 @@
 # print('Child process:')
 # __.sy..('echo $TESTVAR')
 #
-# __.en..['TESTVAR'] = 'THIS VALUE WAS CHANGED'
+# __.en.. 'TESTVAR' _ 'THIS VALUE WAS CHANGED'
 #
 # print()
-# print('Changed value:', __.en..['TESTVAR'])
+# print('Changed value:', __.en.. 'TESTVAR'
 # print('Child process:')
 # __.sy..('echo $TESTVAR')
 #
-# del __.en..['TESTVAR']
+# del __.en.. 'TESTVAR'
 #
 # print()
 # print('Removed value:', __.en...g..('TESTVAR', N..))
