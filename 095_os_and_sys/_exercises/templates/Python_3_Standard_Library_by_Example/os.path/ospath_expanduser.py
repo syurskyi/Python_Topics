@@ -11,5 +11,4 @@
 #
 # ___ user __ '', 'dhellmann', 'nosuchuser'
 #     lookup _ '~' + ?
-#     print('|___>15 _ |__'.f..
-#         ? __.p...e_u.. ?
+#     print('|___>15 _ |__'.f.. ? __.p...e_u.. ?
