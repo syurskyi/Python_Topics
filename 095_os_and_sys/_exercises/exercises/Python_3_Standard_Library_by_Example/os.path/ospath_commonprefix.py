@@ -1,20 +1,20 @@
-# #!/usr/bin/env python3
-# # encoding: utf-8
-# #
-# #
-# """Find the prefix string common to a group of paths.
-# """
+#!/usr/bin/env python3
+# encoding: utf-8
 #
 #
-# #end_pymotw_header
-# ______ __.p..
-#
-# paths _ '/one/two/three/four'
-#          '/one/two/threefold'
-#          '/one/two/three/'
-#
-# ___ p.. __ ?
-#     print('PATH:', p..
-#
-# print()
-# print('PREFIX:', __.p...c_p.. ?
+"""Find the prefix string common to a group of paths.
+"""
+
+
+#end_pymotw_header
+import os.path
+
+paths = ['/one/two/three/four',
+         '/one/two/threefold',
+         '/one/two/three/']
+
+for path in paths:
+    print('PATH:', path)
+
+print()
+print('PREFIX:', os.path.commonprefix(paths))

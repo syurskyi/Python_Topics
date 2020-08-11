@@ -17,4 +17,4 @@ for path in paths:
     print('PATH:', path)
 
 print()
-print('PREFIX:', os.path.commonprefix(paths))
+print('PREFIX:', os.path.commonpath(paths))
