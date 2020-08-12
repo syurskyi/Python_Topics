@@ -1,36 +1,36 @@
-______ argparse
-______ ?
-______ ___
-
-?.bC..(filename_'ex2_log.log', level_?.D..)
-
-
-___ simple_parser():
-    ?.i..("Command Line inputs: " + ' '.j..(___.argv[1:]))
-    
-    parser _ argparse.AP..
-    
-    parser.add_argument('A', type_int)
-    parser.add_argument('B', type_int)
-    parser.add_argument('C', type_int)
-    
-    args _ parser.parse_args()
-    
-    r_ args.A, args.B, args.C
-
-
-___ foo(A, B, C):
-    """Demonstrate basic logging functionality with file output."""
-    
-    ?.i..(f'args: ({A}, {B}, {C})')
-    
-    result _ (A + B) * C
-    ?.i..(f'result: {result}')
-    
-    r_ result
-    
-    
-__  -n __ '__main__':
-    args _ simple_parser()
-    print(foo(*args))
-    
+# ______ argparse
+# ______ ?
+# ______ ___
+#
+# ?.bC.. f.._'ex2_log.log', l.._?.D..
+#
+#
+# ___ simple_parser
+#     ?.i.. "Command Line inputs: " + ' '.j.. ___.argv 1|
+#
+#     parser _ ?.AP..
+#
+#     ?.a.. 'A' t.._in.
+#     ?.a.. 'B' t.._in.
+#     ?.a.. 'C' t.._in.
+#
+#     args _ ?.p_a..
+#
+#     r_ ?.? ?.? ?.?
+#
+#
+# ___ foo A, B, C)
+#     """Demonstrate basic logging functionality with file output."""
+#
+#     ?.i.. _*args: ? ? ?
+#
+#     result _ (A + B) * C
+#     ?.i.. _*result: ?
+#
+#     r_ ?
+#
+#
+# __  -n __ _____
+#     args _ s..
+#     print f.. @
+#
