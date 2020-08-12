@@ -1,25 +1,25 @@
-______ ?
-
-____ . ______ config
-____ . ______ module1
-____ . ______ module2
-
-logger _ ?.gL..( -n)
-
-
-___ main():
-    ______ ?.config
-    ?.config.fileConfig(
-        fname_config.log_config_path,
-        disable_existing_loggers_False,
-        defaults_{"logfilename": config.log_output_path}
-    )
-    x _ module1.fn()
-    y _ module2.fn()
-    z _ x + y
-    logger.i..(f"z = {z}")
-    r_ z
-
-
-__  -n __ "__main__":
-    main()
+# ______ ?
+#
+# ____ . ______ config
+# ____ . ______ module1
+# ____ . ______ module2
+#
+# logger _ ?.gL.. -n
+#
+#
+# ___ main
+#     ______ ?.c..
+#     ?.c__.fC..
+#         fname_config.log_config_path,
+#         disable_existing_loggers_Fa..
+#         defaults_{"logfilename": c .l_o_p..
+#     )
+#     x _ m_1.f.
+#     y _ m_2.f.
+#     z _ x + y
+#     ?.i..(f"z = {z}")
+#     r_ z
+#
+#
+# __  -n __ _____
+#     ?
