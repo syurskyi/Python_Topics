@@ -7,7 +7,7 @@ c_ MayaLogger(Logger):
     
     FORMAT_DEFAULT _ "[%(l..)s][%(name)s] %(m..)s"
     
-    PROPAGATE_DEFAULT _ False
+    PROPAGATE_DEFAULT _ F..
     
     
 __  -n __ "__main__":

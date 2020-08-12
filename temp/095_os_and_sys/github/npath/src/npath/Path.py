@@ -4,8 +4,8 @@ ______ __
 c_ Path(object):
     '''Work with os.path as an object'''
 
-    ___  - (self, *parms, **kwargs):
-        str_parms _ [str(p) for p __ parms]
+    ___  - (, *parms, **kwargs):
+        str_parms _ [str(p) ___ p __ parms]
         __path _ __.path.j..(*str_parms)
 
         __relative_to _ None
@@ -16,7 +16,7 @@ c_ Path(object):
         _____ AttributeError:
             __relative_to _ None
 
-        for k, v __ list(kwargs.items()):
+        ___ k, v __ list(kwargs.items()):
             __ k __ 'relative_to':
                 __ v is no. None:
                     __relative_to _ Path(v)
@@ -30,7 +30,7 @@ c_ Path(object):
     @property
     ___ s
         '''Alias to __str__()'''
-        r_ str(self)
+        r_ str()
 
     ___ __repr__
         r_ "Path('%s')" % (__path)
@@ -49,9 +49,9 @@ c_ Path(object):
     ___ _compare_str
         '''String for comparison.  See .__eq__()'''
         __ __relative_to is None:
-            path _ str(self)
+            path _ str()
         else:
-            path _ __.path.j..(str(__relative_to), str(self))
+            path _ __.path.j..(str(__relative_to), str())
 
         # Normalize path seperators
         path _ Path.normalize_path_sep(path)
@@ -64,7 +64,7 @@ c_ Path(object):
         r_ path.replace('/', __.path.sep).replace('\\', __.path.sep)
 
 
-    ___ __eq__(self, other):
+    ___ __eq__(, other):
         '''
         Paths are equal __ their string values are equal adjusted for os.sep
 
@@ -91,7 +91,7 @@ c_ Path(object):
         r_ hash(__path)
 
 
-    ___ __ne__(self, other):
+    ___ __ne__(, other):
         r_ no. __eq__(other)
 
 
@@ -108,12 +108,12 @@ c_ Path(object):
 
     @property
     ___ is_relative
-        __ len(__path) > 0:
+        __ le.(__path) > 0:
             __ __path[0] __ ('/', '\\'):
-                r_ False
+                r_ F..
             elif __path[1:3] __ (':\\', ':/'):
-                r_ False
-            r_ True
+                r_ F..
+            r_ T..
         r_ None
 
 
@@ -122,18 +122,18 @@ c_ Path(object):
         r_ no. is_relative
 
 
-    ___ make_relative_to(self, root):
+    ___ make_relative_to(, root):
         '''Create a new path object which is same path relative to this'''
         root _ str(root)
 
-        path _ str(self)
+        path _ str()
         __ __relative_to is no. None:
             path _ __.path.j..(str(__relative_to), path)
 
         __ no. path.startswith(root):
             r_ ValueError("%s cannot be represented relative to %s" %(
                 path, root))
-        rel_path _ path[len(root)+1:] # +1 to get dir sep.  Ever want otherwise?
+        rel_path _ path[le.(root)+1:] # +1 to get dir sep.  Ever want otherwise?
         r_ Path(rel_path, relative_to_root)
 
 
@@ -191,31 +191,31 @@ c_ Path(object):
     ___ split
         r_ str(norm).split(__.sep)
 
-    ___ has_ext(self, *exts):
-        r_ ext.lower() __ set([e.lower() for e __ exts])
+    ___ has_ext(, *exts):
+        r_ ext.lower() __ set([e.lower() ___ e __ exts])
 
     @property
     ___ norm
         r_ Path(__.path.normpath(__path))
 
 
-    ___ j..(self, *paths):
-        paths _ [__path, ] + [str(p) for p __ paths]
+    ___ j..(, *paths):
+        paths _ [__path, ] + [str(p) ___ p __ paths]
         r_ Path(__.path.j..(*paths), relative_to_self.__relative_to)
 
 
     @property
     ___ all
-        for p __ dirs:
+        ___ p __ dirs:
             yield p
-        for p __ files:
+        ___ p __ files:
             yield p
 
 
     ___ list_dir
         r_ __.listdir(effective_path_str)
 
-    ___ samefile(self, other):
+    ___ samefile(, other):
         ___
             r_ __.path.samefile(effective_path_str, str(other))
         _____ AttributeError:
@@ -223,25 +223,25 @@ c_ Path(object):
         _____ FileNotFoundError:
             # Keeping this behaviour since I think this is how Python 2 worked.
             # May let this exception bubble up in the future __ file doesn't exist
-            r_ False
+            r_ F..
 
     @property
     ___ dirs
-        for name __ list_dir():
+        ___ name __ list_dir():
             child _ j..(name)
             __ child.is_dir:
                 yield child
 
 
-    ___ startswith(self, path):
+    ___ startswith(, path):
         path_parts _ Path(path).split()
         my_parts _ split()
-        r_ my_parts[:len(path_parts)] __ path_parts
+        r_ my_parts[:le.(path_parts)] __ path_parts
 
 
     @property
     ___ files
-        for name __ list_dir():
+        ___ name __ list_dir():
             child _ j..(name)
             __ child.is_file:
                 yield child
@@ -257,10 +257,10 @@ c_ Path(object):
 
         Returned paths are RelativePath
         '''
-        for dirpath, dirnames, filenames __ __.walk(str(abs)):
-            for name __ dirnames:
+        ___ dirpath, dirnames, filenames __ __.walk(str(abs)):
+            ___ name __ dirnames:
                 yield Path(dirpath, name).make_relative_to(abs)
-            for name __ filenames:
+            ___ name __ filenames:
                 yield Path(dirpath, name).make_relative_to(abs)
 
 

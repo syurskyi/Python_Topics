@@ -2,7 +2,7 @@
 
 ______ argparse
 ______ ?
-______ sys
+______ ___
 
 ____ ex3_sub_module ______ foo
 
@@ -23,7 +23,7 @@ ___ simple_parser():
     # assign the formatted file handler to the logger
     logger.aH..(fh)
     
-    logger.i..("Command Line inputs: " + ' '.j..(sys.argv[1:]))
+    logger.i..("Command Line inputs: " + ' '.j..(___.argv[1:]))
     
     parser _ argparse.ArgumentParser()
     

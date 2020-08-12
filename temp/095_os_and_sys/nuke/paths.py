@@ -17,11 +17,11 @@ ___ get_files_list(filepath):
     files_list _ []
     ___
         basename, file_sequence, ext _ get_file_elements(filename)
-        pattern _ '{}.{}.{}'.f..(basename, '*' * len(file_sequence), ext)
+        pattern _ '{}.{}.{}'.f..(basename, '*' * le.(file_sequence), ext)
         pattern _ __.path.j..(basedir, pattern)
-        files_list _ [ __.path.j..(basedir, __.path.basename(file_)) for file_ __ glob.glob(pattern) ]
+        files_list _ [ __.path.j..(basedir, __.path.basename(file_)) ___ file_ __ glob.glob(pattern) ]
     _____ ValueError:
-        files_list.append(filepath)
+        files_list.ap..(filepath)
 
     r_ sorted(files_list)
 
@@ -39,16 +39,16 @@ ___ scan_for_nukescripts(path, ignore):
     nukescripts _ []
     __ no. ignore:
         ignore _ ''
-    ignore_list _ [ ignore_file.strip() for ignore_file __ ignore.split(',') __ ignore_file ]
-    for root, dirs, files __ __.walk(path):
-        for name __ files:
+    ignore_list _ [ ignore_file.strip() ___ ignore_file __ ignore.split(',') __ ignore_file ]
+    ___ root, dirs, files __ __.walk(path):
+        ___ name __ files:
             __ __.path.splitext(name)[1] __ '.nk':
                 ignore_file_ _ 0
-                for ignore_file __ ignore_list:
+                ___ ignore_file __ ignore_list:
                     __ ignore_file __ name:
                         ignore_file_ +_ 1
 
                 __ no. ignore_file_:
-                    nukescripts.append(__.path.j..(root, name))
+                    nukescripts.ap..(__.path.j..(root, name))
 
     r_ nukescripts

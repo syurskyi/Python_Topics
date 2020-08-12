@@ -30,8 +30,8 @@ ___ send_nk(path):
             ___
                 __ no. __.path.exists(__.path.dirname(path)):
                     __.makedirs(__.path.dirname(path))
-                for n __ nuke.selectedNodes():
-                    nodesName.append(n.knob("name").value())
+                ___ n __ nuke.selectedNodes():
+                    nodesName.ap..(n.knob("name").value())
                 __ nodesName !_ []:
                     temp _ " ".j..(nodesName)
                     nodesStr _ "%s..." % temp[:30]
@@ -47,8 +47,8 @@ ___ send_nk(path):
 
 ___ clear_selection():
     ___
-        for n __ nuke.selectedNodes():
-            n.setSelected(False)
+        ___ n __ nuke.selectedNodes():
+            n.setSelected(F..)
     _______
         p..
 

@@ -9,12 +9,12 @@ c_ File(FileObject):
 
     @property
     ___ is_file
-        r_ True
+        r_ T..
 
 
     @property
     ___ is_dir
-        r_ False
+        r_ F..
 
 
     @property
@@ -22,7 +22,7 @@ c_ File(FileObject):
         r_ __.path.getsize(str(path))
 
 
-    ___ open(self, mode):
+    ___ open(, mode):
         r_ open(str(path), mode)
 
 

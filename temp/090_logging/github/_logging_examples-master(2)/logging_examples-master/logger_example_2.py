@@ -1,12 +1,12 @@
 ______ argparse
 ______ ?
-______ sys
+______ ___
 
 ?.bC..(filename_'ex2_log.log', level_?.D..)
 
 
 ___ simple_parser():
-    ?.i..("Command Line inputs: " + ' '.j..(sys.argv[1:]))
+    ?.i..("Command Line inputs: " + ' '.j..(___.argv[1:]))
     
     parser _ argparse.ArgumentParser()
     

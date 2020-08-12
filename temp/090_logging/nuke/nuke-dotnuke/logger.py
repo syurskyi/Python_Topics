@@ -14,7 +14,7 @@
 # CRITICAL A serious error, indicating that the program itself may be unable to continue running.
 
 ______ __
-______ sys
+______ ___
 ______ ?
 ______ types
 
@@ -23,7 +23,7 @@ ______ types
 c_ MyNkLogger(object):
   ___  -
     level _ ?.D.. \
-                 __ __.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] \
+                 __ __.environ.get("MYNK_DEVEL", F..) __ ['1', 'true', 'True'] \
                  else ?.I..
     exc_format _ '%(a_t_)s %(l..)s: %(m..)s'
     f.. _ '%(a_t_)s %(l..)s %(filename)s:%(l_l_..)d %(m..)s'
@@ -41,27 +41,27 @@ c_ MyNkLogger(object):
     init_handler()
     LOG _ ?.gL..('MyNk')
     LOG.aH..(stream_handler)
-    sys.excepthook _ exception_handler
+    ___.excepthook _ exception_handler
     LOG.flush _ types.MethodType(__flush_log, LOG)
     LOG.remove_stream_handler _ types.MethodType(__remove_stream_handler, LOG)
     LOG.sL..(level)
 
-  ___ __flush_log(self, log):
+  ___ __flush_log(, log):
     '''Flush a log'''
-    for handler __ log.handlers:
+    ___ handler __ log.handlers:
       __ hasattr(handler,'flush'):
         handler.flush()
   
-  ___ __remove_stream_handler(self, log):
+  ___ __remove_stream_handler(, log):
     '''remove stream handler from a given log object'''
     handlers_to_remove _ []
-    for i,handler __ enumerate(log.handlers):
+    ___ i,handler __ enumerate(log.handlers):
       __ handler __ stream_handler:
-        handlers_to_remove.append(i)
-    for x __ reversed(handlers_to_remove):
+        handlers_to_remove.ap..(i)
+    ___ x __ reversed(handlers_to_remove):
       del log.handlers[x]
 
-  ___ exception_handler(self, exception_type, exception_value, traceback):
+  ___ exception_handler(, exception_type, exception_value, traceback):
     '''Creates an exception handler to replace the standard except hook'''
     stream_handler.sF..(exc_formatter)
     LOG.c..("Uncaught exception", exc_info_(exception_type, exception_value, traceback))

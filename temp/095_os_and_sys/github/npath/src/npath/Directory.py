@@ -7,12 +7,12 @@ c_ Directory(FileObject):
 
     @property
     ___ is_file
-        r_ False
+        r_ F..
 
 
     @property
     ___ is_dir
-        r_ True
+        r_ T..
 
 
     @property
@@ -22,21 +22,21 @@ c_ Directory(FileObject):
 
     @property
     ___ files
-        for path __ files:
+        ___ path __ files:
             yield FILE_OBJ_FACTORY(path)
 
 
     @property
     ___ dirs
-        for path __ dirs:
+        ___ path __ dirs:
             yield FILE_OBJ_FACTORY(path)
 
 
     @property
     ___ all
-        for o __ files:
+        ___ o __ files:
             yield o
-        for o __ dirs:
+        ___ o __ dirs:
             yield o
 
 
@@ -48,15 +48,15 @@ c_ Directory(FileObject):
 
         :return: FileObject (File, Directory, UnknownFileObject)
         '''
-        for path __ super(Directory, self).walk():
-            yield FILE_OBJ_FACTORY(path.make_relative_to(self))
+        ___ path __ s___(Directory, ).walk():
+            yield FILE_OBJ_FACTORY(path.make_relative_to())
 
 
-    ___ find(self, files_None, dirs_None):
-        for child __ walk():
+    ___ find(, files_None, dirs_None):
+        ___ child __ walk():
             __ child.is_file:
-                __ files is None or files is True:
+                __ files is None or files is T..:
                     yield child
             elif child.is_dir:
-                __ dirs is None or dirs is True:
+                __ dirs is None or dirs is T..:
                     yield child

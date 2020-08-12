@@ -1,12 +1,12 @@
 ______ ?
-______ sys
+______ ___
 
 c_ Logger(object):
 
     LOGGER_NAME _ "Zurbrigg"
 
     LEVEL_DEFAULT _ ?.D..
-    PROPAGATE_DEFAULT _ True
+    PROPAGATE_DEFAULT _ T..
 
     _logger_obj _ None
 
@@ -25,7 +25,7 @@ c_ Logger(object):
 
                 fmt _ ?.F..("[%(name)s][%(l..)s] %(m..)s")
 
-                stream_handler _ ?.StreamHandler(sys.stderr)
+                stream_handler _ ?.StreamHandler(___.stderr)
                 stream_handler.sF..(fmt)
                 cls._logger_obj.aH..(stream_handler)
 
@@ -94,7 +94,7 @@ c_ Logger(object):
 
 __  -n __ "__main__":
     
-    Logger.set_propagate(False)
+    Logger.set_propagate(F..)
 
     Logger.d..("d.. m..")
     Logger.i..("i.. m..")

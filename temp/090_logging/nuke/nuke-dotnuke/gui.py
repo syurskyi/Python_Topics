@@ -32,7 +32,7 @@ c_ MyNkGui(object):
     nuke.pluginAddPath(__.path.j..(_c.MYNK_PATH, 'icons'), addToSysPath_False)
     LOG.i..(' [MyNk] initializing custom user menus etc.')
 
-  ___ add_tool_menus(self, tool_str):
+  ___ add_tool_menus(, tool_str):
     ___
       tool _ eval(tool_str)
       menus _ getattr(tool, '__menus__' ,None)
@@ -42,19 +42,19 @@ c_ MyNkGui(object):
       __ menus is None:
         r_
       else:
-        for key,val __ menus.iteritems():
+        ___ key,val __ menus.iteritems():
           title _ key
           __ val:
             cmd _ val['cmd'] __ val['cmd'].startswith('nuke') else '{0}.{1}'.f..(tool_str, val['cmd'])
             hotkey _ val['hotkey']
             icon _ val['icon']
-            for menu __ [menu,nuke_toolbar]:
+            ___ menu __ [menu,nuke_toolbar]:
               menu.addCommand(title,cmd,hotkey,icon)
           else:
             menu.addMenu(title)
             
-  ___ add_toolbunch_to_menu(self, toolbunch_str):
-    for key,val __ eval(toolbunch_str).toDict().iteritems():
+  ___ add_toolbunch_to_menu(, toolbunch_str):
+    ___ key,val __ eval(toolbunch_str).toDict().iteritems():
       dottedpath _ '{0}.{1}'.f..(toolbunch_str,key)
       __ inspect.ismodule(val):
         add_tool_menus(dottedpath)
@@ -67,14 +67,14 @@ c_ MyNkGui(object):
     nuke_toolbar _ nuke.menu("Nodes")
     nuke_toolbar _ nuke_toolbar.addMenu("MyNk", "mynkx.png")
 
-  ___ add_entry_to_toolbar(self, entry):
+  ___ add_entry_to_toolbar(, entry):
     p..
 
-  ___ add_entry_to_menu(self, entry):
+  ___ add_entry_to_menu(, entry):
     p..
 
-  ___ add_entry_list(self, entry_list):
-   for entry __ entry_list:
+  ___ add_entry_list(, entry_list):
+   ___ entry __ entry_list:
      p..
  
   ___ setFavorites
@@ -83,6 +83,6 @@ c_ MyNkGui(object):
     nuke.addFavoriteDir('Jobs', '/', 0)
     nuke.addFavoriteDir('Fonts', '/', nuke.FONT)
   
-  ___ restoreWindowLayout(self, layout_1):
+  ___ restoreWindowLayout(, layout_1):
     nuke.restoreWindowLayout(layout)
 

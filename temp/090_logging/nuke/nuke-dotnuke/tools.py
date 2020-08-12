@@ -9,7 +9,7 @@
 
 ______ __
 ______ shutil
-______ sys
+______ ___
 ______ types
 ______ imp
 ______ re
@@ -37,31 +37,31 @@ c_ MyNkTools(object):
   ___  -n
     r_ 'mynk.tools'
 
-  ___  - (self, path_list_[]):
+  ___  - (, path_list_[]):
     path_list _ path_list
     tools_dict _ {}
     python_Bunch()
-    prefix _ inspect.getmodule(self). -n
+    prefix _ inspect.getmodule(). -n
     LOG.i..(' [MyNk] initializing custom user tools')
   
   ___ add_default_path
     __ no. path_list:
-      path_list.append(MYNK_TOOLS_PATH)
+      path_list.ap..(MYNK_TOOLS_PATH)
 
-  ___ add_path(self, path):
+  ___ add_path(, path):
     __ __.path.isdir(path):
       __ no. path __ path_list:
-        path_list.append(path)
+        path_list.ap..(path)
 
   ___ add_python_tools_from_path_list
     __ path_list:
-      for path __ path_list:
+      ___ path __ path_list:
         add_python_tools_from_path(path)
     else:
       add_default_path()
       add_python_tools_from_path_list()
 
-  ___ add_python_tools_from_path(self, path, dest_None):
+  ___ add_python_tools_from_path(, path, dest_None):
     '''Recursively add python modules and packages at path
        to dotted python path at prefix'''
     # expand any tilde home directory shortcuts
@@ -73,11 +73,11 @@ c_ MyNkTools(object):
     __ __.path.isdir(path):
       LOG.d..(u'Loading tools from path: {0}'.f..(path))
       # add path to system path
-      sys.path.append(path)
+      ___.path.ap..(path)
       search_re _ re.compile(".*\.py$", re.IGNORECASE)
       files _ __.listdir(path)
       files.sort()
-      for file_name __ files:
+      ___ file_name __ files:
         # ignore hidden files
         __ no. file_name.startswith('.'):
           file_path _ __.path.j..(path, file_name)
@@ -111,7 +111,7 @@ c_ MyNkTools(object):
     '''
     A debugging function to print out details of the loaded plugins
     '''
-    for i,j __ tools.__dict__.iteritems():
+    ___ i,j __ tools.__dict__.iteritems():
       __ isinstance( j, types.ModuleType ):
         __ hasattr( j, "version" ):
           LOG.i..( "  ---> Plugin: %s %s %s" % (str(i), str(j), str(j.version) ) )

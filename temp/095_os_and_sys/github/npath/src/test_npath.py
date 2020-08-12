@@ -50,16 +50,16 @@ c_ TempDirectory(object):
     ___ contents
         '''List all paths in the test directory'''
         rtn _ list()
-        for dirpath, dirnames, filenames __ __.walk(__path):
-            for dirname __ dirnames:
-                path _ __.path.j..(dirpath, dirname)[len(__path)+1:] + __.path.sep
-                rtn.append(path)
-            for filename __ filenames:
-                path _ __.path.j..(dirpath, filename)[len(__path)+1:]
+        ___ dirpath, dirnames, filenames __ __.walk(__path):
+            ___ dirname __ dirnames:
+                path _ __.path.j..(dirpath, dirname)[le.(__path)+1:] + __.path.sep
+                rtn.ap..(path)
+            ___ filename __ filenames:
+                path _ __.path.j..(dirpath, filename)[le.(__path)+1:]
                 size _ __.path.getsize(__.path.j..(__path, path))
                 with open(__.path.j..(__path, path), 'r') __ fh:
                     contents _ fh.read()
-                rtn.append((path, size, contents))
+                rtn.ap..((path, size, contents))
         r_ rtn
 
     ___ clean

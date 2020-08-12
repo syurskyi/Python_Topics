@@ -1,12 +1,12 @@
 ______ __
 ______ re
-______ sys
+______ ___
 ______ json
 ______ platform
 
 ____ .logger ______ logger
 
-TESTING _ False
+TESTING _ F..
 ___
     TESTING _ __.environ['NON_PRODUCTION_CONTEXT']
 _______
@@ -17,7 +17,7 @@ _______
     else:
         r_ RuntimeError('OS {0} is not supported'.f..(platform.system()))
 
-    match _ re.search(application, sys.executable)
+    match _ re.search(application, ___.executable)
     __ no. match:
         r_ RuntimeError('Import the_silo from within Nuke')
     ______ nuke
@@ -52,7 +52,7 @@ ___ build(toolbar_True):
     with open('{0}/silo_data.json'.f..(silo_location), 'r') __ fp:
         silo_data _ json.load(fp)
 
-    for gizmo_name, gizmo __ sorted(silo_data['gizmos'],
+    ___ gizmo_name, gizmo __ sorted(silo_data['gizmos'],
                                     key_lambda x: x[0]):
         logger.i..('Adding gizmo: {0}'.f..(gizmo_name))
         silo_menu.addCommand('Gizmos/{0}'.f..(gizmo_name),
@@ -60,7 +60,7 @@ ___ build(toolbar_True):
                              'wrapper.create_gizmo(\'{0}\')'.
                              f..(gizmo))
 
-    for script_name, module, func, keys __ sorted(silo_data['scripts'],
+    ___ script_name, module, func, keys __ sorted(silo_data['scripts'],
                                                   key_lambda x: x[0]):
         logger.i..('Adding script: {0}'.f..(script_name))
         silo_menu.addCommand('Scripts/{0}'.f..(script_name),

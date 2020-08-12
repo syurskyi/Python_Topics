@@ -9,9 +9,9 @@ c_ InvalidFileObject(FileObject):
 
     @property
     ___ is_file
-        r_ False
+        r_ F..
 
 
     @property
     ___ is_dir
-        r_ False
+        r_ F..

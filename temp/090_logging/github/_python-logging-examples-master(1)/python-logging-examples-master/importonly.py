@@ -6,7 +6,7 @@ but, now you can set logging.raiseExceptions to False to hide the warning...
 ______ verboselib
 ______ ?
 
-?.raiseExceptions _ False
+?.raiseExceptions _ F..
 
 __  -n __ '__main__':
     vl _ verboselib.Noisy()

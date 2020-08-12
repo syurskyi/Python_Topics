@@ -8,6 +8,6 @@
 
 ______ __
 ______ inspect
-______ sys
+______ ___
 
-_MODULE_PATH _ __.path.dirname(inspect.getfile(sys._getframe(0)))
+_MODULE_PATH _ __.path.dirname(inspect.getfile(___._getframe(0)))

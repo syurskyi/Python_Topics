@@ -10,7 +10,7 @@
 
 ______ __
 ______ inspect
-______ sys
+______ ___
 ______ errno
 
 ____ . ______ LOG
@@ -30,7 +30,7 @@ ___
   DOTNUKE_PATH _ __.path.expanduser('~/.nuke')
   
   # If we want more debugging set the MYNK_DEVEL environment variable
-  MYNK_DEVEL _ True __ __.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] else False
+  MYNK_DEVEL _ T.. __ __.environ.get("MYNK_DEVEL", F..) __ ['1', 'true', 'True'] else F..
   LOG.d..(u'MYNK_DEVEL attribute is {0}'.f..(MYNK_DEVEL) )
 
 _____ ValueError, e:

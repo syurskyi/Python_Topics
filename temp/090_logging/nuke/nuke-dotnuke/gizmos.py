@@ -1,36 +1,36 @@
 ______ __
 ______ re
-______ sys
+______ ___
 ______ platform
 ______ inspect
 ______ nuke
 ______ string
 
 
-D.. _ False
+D.. _ F..
 
 ___ camel(value, delimiter_' '):
   ___ camelCase():
     yield str.lower
-    while True:
+    while T..:
       yield str.capitalize
   c _ camelCase()
-  r_ "".j..(c.next()(x) __ x else delimiter for x __ value.split(delimiter))
+  r_ "".j..(c.next()(x) __ x else delimiter ___ x __ value.split(delimiter))
 
 
 ___ unCamel(value, delimiter_'_', lowercase_True, capitals_False):
   s1 _ re.sub('(.)([A-Z][a-z]+)', r'\1%s\2'%delimiter, value)
   s2 _ re.sub('([a-z0-9])([A-Z])', r'\1%s\2'%delimiter, s1)
-  __ lowercase is True:
+  __ lowercase is T..:
     s2_s2.lower()
-  elif capitals is True:
+  elif capitals is T..:
     s2_string.capwords(s2)
   r_ s2
 
 
 c_ GizmoPathManager(object):
 
-  ___  - (self, exclude_r'^(\.|icons|.*\.bak|readme\.txt)', searchPaths_None):
+  ___  - (, exclude_r'^(\.|icons|.*\.bak|readme\.txt)', searchPaths_None):
     '''Used to add folders within the gizmo folder(s) to the gizmo path
     exclude: a regular expression for folders / gizmos which should NOT be
     added; by default, excludes files / folders that begin with a "."
@@ -71,10 +71,10 @@ c_ GizmoPathManager(object):
     '''
     reset()
     _visited _ set()
-    for gizmoPath __ searchPaths:
+    ___ gizmoPath __ searchPaths:
       _recursiveAddGizmoPaths(gizmoPath, _crawlData, foldersOnly_False)
 
-  ___ _recursiveAddGizmoPaths(self, folder, crawlData, foldersOnly_False):
+  ___ _recursiveAddGizmoPaths(, folder, crawlData, foldersOnly_False):
     # If we're in GUI mode, also store away data in _crawlData to to be used
     # later by addGizmoMenuItems
     __ no. __.path.isdir(folder):
@@ -92,7 +92,7 @@ c_ GizmoPathManager(object):
       r_
     _visited.add(canonicalPath)
 
-    for subItem __ sorted(__.listdir(canonicalPath)):
+    ___ subItem __ sorted(__.listdir(canonicalPath)):
       __ exclude and exclude.search(subItem):
         continue
       subPath _ __.path.j..(canonicalPath, subItem)
@@ -115,13 +115,13 @@ c_ GizmoPathManager(object):
             gizmoName _ name
             version _ '000'
           crawlData['gizmos'][gizmoName]_[]
-          crawlData['gizmos'][gizmoName].append(int(version))
+          crawlData['gizmos'][gizmoName].ap..(int(version))
           __ D..:
             nuke.tprint('GIZMO NAME: %s' % name)
             nuke.tprint('GIZMO VERS: %s' % version )
 
 
-  ___ addGizmoMenuItems(self, toolbar_None, default_top_menu_None):
+  ___ addGizmoMenuItems(, toolbar_None, default_top_menu_None):
     '''
     Recursively create menu items for gizmos found on the searchPaths.
     Only call this __ youre in nuke GUI mode! (ie, from inside menu.py)
@@ -140,20 +140,20 @@ c_ GizmoPathManager(object):
     _recursiveAddGizmoMenuItems(toolbar, _crawlData, defaultSubMenu_default_top_menu, topLevel_True)
 
 
-  ___ _recursiveAddGizmoMenuItems(self, toolbar, crawlData, defaultSubMenu_None, topLevel_False):
-    for name, versions __ crawlData['gizmos'].items():
+  ___ _recursiveAddGizmoMenuItems(, toolbar, crawlData, defaultSubMenu_None, topLevel_False):
+    ___ name, versions __ crawlData['gizmos'].items():
       niceName _ name
       filename _ "%s_%03d" % (name, max(versions))
       niceName _ name.replace('_',' ')
-      niceName _ unCamel(niceName,' ',False,True)
+      niceName _ unCamel(niceName,' ',F..,T..)
       __ D..:
         nuke.tprint('GIZMO NAME: %s' % name)
         nuke.tprint('GIZMO VERS: %s' % ('%03d' % max(versions)) )
         nuke.tprint('GIZMO NICENAME: %s' % niceName)
       toolbar.addCommand(niceName,"nuke.createNode('%s')" % filename, '%s.png' % name )
 
-    for folder, data __ crawlData.get('dirs', {}).iteritems():
-      ______ sys
+    ___ folder, data __ crawlData.get('dirs', {}).iteritems():
+      ______ ___
       subMenu _ toolbar.findItem(folder)
       __ subMenu is None:
         __ defaultSubMenu:

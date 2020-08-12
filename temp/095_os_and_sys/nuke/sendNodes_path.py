@@ -3,13 +3,13 @@
 # 2017/3/7
 
 ______ __
-______ sys
+______ ___
 
-inNuke _ False
+inNuke _ F..
 
 ___
     ______ nuke
-    inNuke _ True
+    inNuke _ T..
 _______
     print "not in nuke"
 

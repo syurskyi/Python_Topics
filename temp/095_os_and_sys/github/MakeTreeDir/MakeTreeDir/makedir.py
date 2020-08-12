@@ -3,7 +3,7 @@ ______ __
 c_ MAKETREEDIR:
 	___  -
 		p..
-	___ makedir(self,dir_path):
+	___ makedir(,dir_path):
 		"""Short summary.
 		Args:
 			dir_path (type): Path of the directory to be created (can be subfolder also).
@@ -25,7 +25,7 @@ c_ MAKETREEDIR:
 			dirs_dir_path.split(sep)
 
 			### for linux abs path
-			__ len(dirs[0])__0:
+			__ le.(dirs[0])__0:
 				dirs[1]_sep+dirs[1]
 				dirs_dirs[1:]
 
@@ -35,7 +35,7 @@ c_ MAKETREEDIR:
 				dirs_dirs[1:]
 
 			### making directory
-			for i,fol __ enumerate(dirs):
+			___ i,fol __ enumerate(dirs):
 				path_dirs[:i+1]
 				directory_os.path.j..(*path)
 				__ no. __.path.exists(directory):

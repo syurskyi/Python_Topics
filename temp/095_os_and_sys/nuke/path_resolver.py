@@ -22,13 +22,13 @@ Usage:
 ______ __
 ______ platform
 ______ re
-______ sys
+______ ___
 
 
 c_ PathResolver(object):
     """Resolve absolute path to PySide and Nuke executable."""
 
-    ___  - (self, path):
+    ___  - (, path):
         """Initialize the PathResolver instance.
 
         Args:
@@ -94,11 +94,11 @@ c_ PathResolver(object):
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
 
-        for root, dirs, files __ __.walk(path, topdown_False):
-            for name __ files:
+        ___ root, dirs, files __ __.walk(path, topdown_False):
+            ___ name __ files:
                 __ re.match(exe_pattern, name):
                     nuke _ __.path.j..(root, name)
-            for name __ dirs:
+            ___ name __ dirs:
                 __ re.match(pyside_pattern, name):
                     pyside_root _ __.path.j..(root, name)
                     site_packages _ __.path.dirname(pyside_root)
@@ -117,9 +117,9 @@ c_ PathResolver(object):
         This is to make PySide/PySide2 available.
 
         """
-        sys.path.append(site_packages)
+        ___.path.ap..(site_packages)
 
-    ___ set_path(self, path):
+    ___ set_path(, path):
         """Set the path to the given path and ensure a directory is used.
 
         Args:

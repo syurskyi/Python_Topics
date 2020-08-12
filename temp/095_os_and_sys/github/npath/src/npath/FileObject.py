@@ -13,7 +13,7 @@ c_ FileObject(Path):
     @property
     ___ path
         '''Return path to file object as a Path (not normally needed)'''
-        r_ Path(self)
+        r_ Path()
 
 
     @abstractproperty

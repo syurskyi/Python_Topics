@@ -43,37 +43,37 @@ To use:
 ## -----------------------------------------------------------------------------
 #   Imports
 ## -----------------------------------------------------------------------------
-______ sys
+______ ___
 ______ ?
 
 ## Load Maya:
 ___
 	______ maya
-	_in_maya _ True
+	_in_maya _ T..
 _____ E..:
-	_in_maya _ False
+	_in_maya _ F..
 
 ## Load Nuke:
 ___
 	______ nuke
-	_in_nuke _ True
+	_in_nuke _ T..
 _____ E..:
-	_in_nuke _ False
+	_in_nuke _ F..
 
 
 ## Load Nuke:
 ___
 	______ nuke
-	_in_nuke _ True
+	_in_nuke _ T..
 _____ E..:
-	_in_nuke _ False
+	_in_nuke _ F..
 
 ## Load Mobu:
 ___
 	______ pyfbsdk
-	_in_mobu _ True
+	_in_mobu _ T..
 _____ E..:
-	_in_mobu _ False
+	_in_mobu _ F..
 
 ## -----------------------------------------------------------------------------
 # Globals
@@ -118,7 +118,7 @@ c_ Logger():
 	'''
 	'''
 
-	___  - (self, name, shell_True, maya_False, nuke_False, mobu_False, file_None, level_INFO ):
+	___  - (, name, shell_True, maya_False, nuke_False, mobu_False, file_None, level_INFO ):
 		'''
 		Init Logger
 		'''
@@ -171,7 +171,7 @@ c_ Logger():
 		'''
 		r_ "%s(%s Level:%i)" % ( __class__, __name, level )
 
-	___ __getattr__(self, attr):
+	___ __getattr__(, attr):
 		'''
 		Use logging.Logger attributes.
 		'''
@@ -181,19 +181,19 @@ c_ Logger():
 			r_ AttributeError, "No attribute %s" %attr
 
 	## LEVELS
-	___ d..(self, msg):
+	___ d..(, msg):
 		__logger.d..(msg)
 
-	___ i..(self, msg):
+	___ i..(, msg):
 		__logger.i..(msg)
 
-	___ w..(self, msg):
+	___ w..(, msg):
 		__logger.w..(msg)
 
-	___ fatal(self, msg):
+	___ fatal(, msg):
 		__logger.fatal(msg)
 
-	___ c..(self, msg):
+	___ c..(, msg):
 		__logger.c..(msg)
 
 
@@ -203,20 +203,20 @@ c_ Logger():
 c_ ShellHandler(?.Handler):
 	'''
 	Shell Handler - emits logs to shell only.
-	by passing maya and nuke editors by using sys.__stdout__
+	by passing maya and nuke editors by using ___.__stdout__
 	'''
 
 	___  -
-		?.Handler. - (self)
+		?.Handler. - ()
 
-	___ emit(self, record):
+	___ emit(, record):
 
 		___
-			sys.__stdout__.write( "%s\n" %f..(record) )
+			___.__stdout__.write( "%s\n" %f..(record) )
 		_____ IOError:
 			## MotionBuilder is doing something funky with python,
 			## so sometimes ( not always ) is blocked from writting:
-			sys.stdout.write( "%s\n" %f..(record) )
+			___.stdout.write( "%s\n" %f..(record) )
 
 
 ## -----------------------------------------------------------------------------
@@ -229,9 +229,9 @@ c_ MayaHandler(?.Handler):
 	c.. and fatal would popup msg dialog to alert of the error.
 	'''
 	___  -
-		?.Handler. - (self)
+		?.Handler. - ()
 
-	___ emit(self, record):
+	___ emit(, record):
 
 		# Formated m..:
 		msg _ f..(record)
@@ -242,10 +242,10 @@ c_ MayaHandler(?.Handler):
 		elif record.funcName __ [ "c..", "fatal" ]:
 
 			## Emit stdout print:
-			sys.stdout.write("\n"+msg+"\n")
+			___.stdout.write("\n"+msg+"\n")
 
 			## Open dialog __ not in batch mode:
-			__ maya.cmds.about( batch_True ) __ False:
+			__ maya.cmds.about( batch_True ) __ F..:
 
 				maya.cmds.confirmDialog(title   _ "A %s have accure" %record.funcName,
 										m.. _ record.m..,
@@ -253,7 +253,7 @@ c_ MayaHandler(?.Handler):
 										messageAlign _ "left")
 
 		else:
-			sys.stdout.write(msg+"\n")
+			___.stdout.write(msg+"\n")
 
 
 ## -----------------------------------------------------------------------------
@@ -266,9 +266,9 @@ c_ NukeHandler(?.Handler):
 	c.. and fatal would popup msg dialog to alert of the error.
 	'''
 	___  -
-		?.Handler. - (self)
+		?.Handler. - ()
 
-	___ emit(self, record):
+	___ emit(, record):
 
 		# Formated m..:
 		msg _ f..(record)
@@ -281,7 +281,7 @@ c_ NukeHandler(?.Handler):
 			nuke.m..(record.m..)
 
 		else:
-			sys.stdout.write(msg)
+			___.stdout.write(msg)
 
 ## -----------------------------------------------------------------------------
 # MobuHandler
@@ -291,25 +291,25 @@ c_ MobuHandler(?.Handler):
 	MotionBuilder Handler - emits logs into motionbuilder's script editor.
 	'''
 	___  -
-		?.Handler. - (self)
+		?.Handler. - ()
 
-	___ emit(self, record):
+	___ emit(, record):
 
 		# Formated m..:
 		msg _ f..(record)
 
 		__ record.funcName __ "warning":
-			sys.stdout.write(msg+"\n")
+			___.stdout.write(msg+"\n")
 
 		elif record.funcName __ "error":
-			sys.stderr.write(msg+"\n")
+			___.stderr.write(msg+"\n")
 
 		elif record.funcName __ [ "c..", "fatal" ]:
 			FBMessageBox( record.funcName, msg, "OK" )
-			sys.stderr.write(msg+"\n")
+			___.stderr.write(msg+"\n")
 
 		else:
-			sys.stdout.write(msg+"\n")
+			___.stdout.write(msg+"\n")
 
 
 ## -----------------------------------------------------------------------------

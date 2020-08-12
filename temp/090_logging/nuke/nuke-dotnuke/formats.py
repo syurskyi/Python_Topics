@@ -31,8 +31,8 @@ ___ add_format(W, H, x, y, r, t, pa, format_name):
 
 ___ add_formats_from_dict(defaults_dict):
   '''Add nuke formats from an iterated dict of formats'''
-  for format_name, f.. __ defaults_dict.iteritems():
-    __ f...get('active', False) __ ['1', 'true', 'True']:
+  ___ format_name, f.. __ defaults_dict.iteritems():
+    __ f...get('active', F..) __ ['1', 'true', 'True']:
       W _ f...get('W', None)
       H _ f...get('H', None)
       x _ f...get('x', 0)

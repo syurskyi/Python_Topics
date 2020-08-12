@@ -24,8 +24,8 @@ ___ add_knob_default(node, knob, default):
 
 ___ add_knob_defaults_from_dict(defaults_dict):
   '''Add defaults for given node knobs from an iterated dict of node knob defaults'''
-  for node, defaults __ defaults_dict.iteritems():
-    for knob, default __ defaults.iteritems():
+  ___ node, defaults __ defaults_dict.iteritems():
+    ___ knob, default __ defaults.iteritems():
       add_knob_default(node, knob, default)
 
 

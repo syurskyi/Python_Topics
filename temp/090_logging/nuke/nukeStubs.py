@@ -20,7 +20,7 @@ c_ NukeStubsGenerator(object):
     # default_directory = os.path.join(os.path.expanduser('~'), 'stubs')
     default_directory _ r'C:\Users\syurskyi\PycharmProjects\TD\__syurskyi_repository__\nuke\tools\github\Nuke-Stubs-Generator'
 
-    ___  - (self, directory_None):
+    ___  - (, directory_None):
         _indent _ 0
         contents _ ''
 
@@ -49,7 +49,7 @@ c_ NukeStubsGenerator(object):
     ___ __str__
         r_ output_file
 
-    ___ write(self, text):
+    ___ write(, text):
         """
         Writes the given text to the contents string with correct indentation
         @param text: the string to add
@@ -58,7 +58,7 @@ c_ NukeStubsGenerator(object):
             r_
 
         lines _ text.split('\n')
-        for line __ lines:
+        ___ line __ lines:
             line _ line.strip()
             line _ '%s%s\n' % (_indent*' ', line)
             contents +_ line
@@ -71,7 +71,7 @@ c_ NukeStubsGenerator(object):
         """Removes an indentation level to the output"""
         _indent _ max(_indent - 4, 0)
 
-    ___ get_builtin_info(self, builtin):
+    ___ get_builtin_info(, builtin):
         """Resolves the signature and docstring for a given builtin function.
         This depends on parsing the docstring for the object.
 
@@ -117,7 +117,7 @@ c_ NukeStubsGenerator(object):
         r_ name, args, defaults
 
 
-    ___ get_info(self, func):
+    ___ get_info(, func):
         """Resolves the signature and docstring for a given object
         @param func: an executable object to work on.
         @return Returns True __ it could resolve i.., otherwise it fails
@@ -143,7 +143,7 @@ c_ NukeStubsGenerator(object):
             args.insert(0, 'self')
 
         # Replace kwargs with their appropriate defaults
-        for kw, val __ zip(args[-len(defaults):], defaults):
+        ___ kw, val __ zip(args[-le.(defaults):], defaults):
             args[args.index(kw)] _ '%s=%s' % (kw, val)
 
         # Finally write the declaration of the function
@@ -155,10 +155,10 @@ c_ NukeStubsGenerator(object):
         write('p..\n')
         dedent()
 
-        r_ True
+        r_ T..
 
 
-    ___ get_class_info(self, cls):
+    ___ get_class_info(, cls):
         """Resolves the signature, docstring and members of a class"""
 
         base _ inspect.getclasstree([cls])[0][0]. -n
@@ -168,7 +168,7 @@ c_ NukeStubsGenerator(object):
         indent()
         doc _ '"""%s"""' % cls.__doc__
         write(doc)
-        for member_name, member __ cls.__dict__.items():
+        ___ member_name, member __ cls.__dict__.items():
             __ member_name.startswith('__'):
                 continue
             __ no. member:
@@ -182,7 +182,7 @@ c_ NukeStubsGenerator(object):
 
     ___ generate
         """Generates the docstring content for the nuke module"""
-        for name __ dir(nuke):
+        ___ name __ dir(nuke):
             __ name.startswith('__'):
                 continue
             obj _ getattr(nuke, name, None)

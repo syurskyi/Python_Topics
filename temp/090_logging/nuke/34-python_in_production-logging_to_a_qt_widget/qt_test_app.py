@@ -1,4 +1,4 @@
-______ sys
+______ ___
 
 ____ PySide2 ______ QtWidgets
 
@@ -8,7 +8,7 @@ ____ qt_logger ______ QtLogger
 c_ StandaloneWindow(QtWidgets.QWidget):
 
     ___  -
-        super(StandaloneWindow, self). - (parent_None)
+        s___(StandaloneWindow, ). - (parent_None)
 
         setWindowTitle("Standalone App")
         setMinimumSize(400, 300)
@@ -26,7 +26,7 @@ c_ StandaloneWindow(QtWidgets.QWidget):
         button_layout.addWidget(warning_btn)
         button_layout.addWidget(error_btn)
 
-        main_layout _ QtWidgets.QVBoxLayout(self)
+        main_layout _ QtWidgets.QVBoxLayout()
         main_layout.addWidget(plain_text_edit)
         main_layout.addLayout(button_layout)
 
@@ -41,7 +41,7 @@ c_ StandaloneWindow(QtWidgets.QWidget):
 
 __  -n __ "__main__":
     # Create the main Qt application
-    app _ QtWidgets.QApplication(sys.argv)
+    app _ QtWidgets.QApplication(___.argv)
 
     window _ StandaloneWindow()
     window.show()

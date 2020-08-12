@@ -11,11 +11,11 @@ c_ QtSignaler(QtCore.QObject):
 
 c_ QtSignalHandler(?.Handler):
 
-    ___  - (self, *args, **kwargs):
-        super(QtSignalHandler, self). - (*args, **kwargs)
+    ___  - (, *args, **kwargs):
+        s___(QtSignalHandler, ). - (*args, **kwargs)
         emitter _ QtSignaler()
 
-    ___ emit(self, record):
+    ___ emit(, record):
         msg _ f..(record)
         emitter.message_logged.emit(msg)
 
@@ -34,10 +34,10 @@ c_ QtLogger(Logger):
             cls._signal_handler _ QtSignalHandler()
             cls._signal_handler.sF..(fmt)
 
-            logger_obj _ super(QtLogger, cls).logger_obj()
+            logger_obj _ s___(QtLogger, cls).logger_obj()
             logger_obj.aH..(cls._signal_handler)
 
-        r_ super(QtLogger, cls).logger_obj()
+        r_ s___(QtLogger, cls).logger_obj()
 
     @classmethod
     ___ signal_handler(cls):

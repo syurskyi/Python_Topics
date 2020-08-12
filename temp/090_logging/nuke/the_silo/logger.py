@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ______ ?
 
 
@@ -14,7 +14,7 @@ ___ create_logger():
     logger.aH..(handler)
 
     logger.sL..(?.I..)
-    logger.propagate _ False
+    logger.propagate _ F..
     r_ logger
 
 
