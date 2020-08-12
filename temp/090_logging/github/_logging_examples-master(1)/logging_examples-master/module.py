@@ -17,7 +17,7 @@ ___ exc_logging():
     ___
         c _ a / b
     _____ ZeroDivisionError:
-        logger.critical("Exception occurred", exc_info_True)
+        logger.c..("Exception occurred", exc_info_True)
 
 
 __  -n __ '__main__':

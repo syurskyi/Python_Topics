@@ -11,7 +11,7 @@ c_ setLogger():
         fh.sL..(?.D..)
         # create console handler with a higher log level
         ch _ ?.SH..
-        ch.sL..(?.ERROR)
+        ch.sL..(?.E.)
         # create formatter and add it to the handlers
         formatter _ ?.F..('%(a_t_)s - %(name)s - %(l..)s - %(funcName)s: %(m..)s')
         fh.sF..(formatter)

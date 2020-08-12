@@ -68,14 +68,14 @@ c_ MyNkGui(object):
     nuke_toolbar _ nuke_toolbar.addMenu("MyNk", "mynkx.png")
 
   ___ add_entry_to_toolbar(self, entry):
-    pass
+    p..
 
   ___ add_entry_to_menu(self, entry):
-    pass
+    p..
 
   ___ add_entry_list(self, entry_list):
    for entry __ entry_list:
-     pass
+     p..
  
   ___ setFavorites
     nuke.removeFavoriteDir('Nuke')

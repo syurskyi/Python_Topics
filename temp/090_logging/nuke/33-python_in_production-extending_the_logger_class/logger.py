@@ -68,9 +68,9 @@ c_ Logger(object):
         lg.e..(msg, *args, **kwargs)
 
     @classmethod
-    ___ critical(cls, msg, *args, **kwargs):
+    ___ c..(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
-        lg.critical(msg, *args, **kwargs)
+        lg.c..(msg, *args, **kwargs)
 
     @classmethod
     ___ log(cls, level, msg, *args, **kwargs):
@@ -102,7 +102,7 @@ __  -n __ "__main__":
     Logger.i..("i.. m..")
     Logger.w..("warning m..")
     Logger.e..("error m..")
-    Logger.critical("critical m..")
+    Logger.c..("c.. m..")
 
 
 

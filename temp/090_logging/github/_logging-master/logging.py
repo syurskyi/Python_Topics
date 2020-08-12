@@ -20,7 +20,7 @@
 # #logging.warning('warning')
 # #logging.i..('i..')
 # #logging.error('error')
-# #logging.critical('critical')
+# #logging.c..('c..')
 #
 # ___ testFunktion
 #     logger _ ?.gL.. "testFunktion"

@@ -11,7 +11,7 @@ inNuke _ SP.inNuke
 ___
     ______ nuke
 _____ ImportError:
-    pass
+    p..
 
 
 ___ paste_nk(path):
@@ -50,7 +50,7 @@ ___ clear_selection():
         for n __ nuke.selectedNodes():
             n.setSelected(False)
     _______
-        pass
+        p..
 
 
 ___ get_nk_name():

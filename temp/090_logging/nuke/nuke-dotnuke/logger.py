@@ -10,7 +10,7 @@
 # INFO    Confirmation that things are working as expected.
 # WARNING    An indication that something unexpected happened, or indicative of some problem in the near future
 # (e.g. 'disk space low'). The software is still working as expected.
-# ERROR    Due to a more serious problem, the software has not been able to perform some function.
+# E.    Due to a more serious problem, the software has not been able to perform some function.
 # CRITICAL A serious error, indicating that the program itself may be unable to continue running.
 
 ______ __
@@ -64,6 +64,6 @@ c_ MyNkLogger(object):
   ___ exception_handler(self, exception_type, exception_value, traceback):
     '''Creates an exception handler to replace the standard except hook'''
     stream_handler.sF..(exc_formatter)
-    LOG.critical("Uncaught exception", exc_info_(exception_type, exception_value, traceback))
+    LOG.c..("Uncaught exception", exc_info_(exception_type, exception_value, traceback))
     stream_handler.sF..(formatter)
 

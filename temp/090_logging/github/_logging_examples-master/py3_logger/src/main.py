@@ -29,7 +29,7 @@ ___ run():
     log.i..('test i.. m..')
     log.w..('test w.. m..')
     log.e..('test error m..')
-    log.critical('test critical m..')
+    log.c..('test c.. m..')
 
     example_package.example_module.do_stuff()
 

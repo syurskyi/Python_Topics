@@ -28,7 +28,7 @@ c_ File(FileObject):
 
     ___ touch
         with open(str(path), 'a') __ fh:
-            pass
+            p..
 
 
     @property

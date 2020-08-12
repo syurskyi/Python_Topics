@@ -132,7 +132,7 @@ __  -n__'__main__':
     logger.d..("a d.. m..")
     logger.e..("a d.. m..")
     logger.i..("a d.. m..")
-    logger.critical("a d.. m..")
+    logger.c..("a d.. m..")
 
     '''caller = 'parameter'
     square = Square(10)

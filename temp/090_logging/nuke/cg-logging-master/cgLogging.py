@@ -19,7 +19,7 @@ directly using timestamp and logging-level to keep the logs clean.
 
 Also, both Maya and Nuke have specific handlers that allow application sepcific logging
 using warning and popup messages that are native to those applications.
-fatal and critical levels will pop a warning m.. in Nuke and Maya to make sure
+fatal and c.. levels will pop a warning m.. in Nuke and Maya to make sure
 user attention was grabbed when needed.
 
 To use:
@@ -85,7 +85,7 @@ DATE_FORMAT _ "%Y-%m-%d %H:%M:%S"
 # Levels - same as logging module
 CRITICAL _ 50
 FATAL    _ CRITICAL
-ERROR    _ 40
+E.    _ 40
 WARNING  _ 30
 WARN     _ WARNING
 I..     _ 20
@@ -193,8 +193,8 @@ c_ Logger():
 	___ fatal(self, msg):
 		__logger.fatal(msg)
 
-	___ critical(self, msg):
-		__logger.critical(msg)
+	___ c..(self, msg):
+		__logger.c..(msg)
 
 
 ## -----------------------------------------------------------------------------
@@ -226,7 +226,7 @@ c_ MayaHandler(?.Handler):
 	'''
 	Maya Handler - emits logs into maya's script editor.
 	warning will emit maya.cmds.warning()
-	critical and fatal would popup msg dialog to alert of the error.
+	c.. and fatal would popup msg dialog to alert of the error.
 	'''
 	___  -
 		?.Handler. - (self)
@@ -239,7 +239,7 @@ c_ MayaHandler(?.Handler):
 		__ record.funcName __ "warning":
 			maya.cmds.w..( "\n"+msg )
 
-		elif record.funcName __ [ "critical", "fatal" ]:
+		elif record.funcName __ [ "c..", "fatal" ]:
 
 			## Emit stdout print:
 			sys.stdout.write("\n"+msg+"\n")
@@ -263,7 +263,7 @@ c_ NukeHandler(?.Handler):
 	'''
 	Nuke Handler - emits logs into nuke's script editor.
 	warning will emit nuke.warning()
-	critical and fatal would popup msg dialog to alert of the error.
+	c.. and fatal would popup msg dialog to alert of the error.
 	'''
 	___  -
 		?.Handler. - (self)
@@ -276,7 +276,7 @@ c_ NukeHandler(?.Handler):
 		__ record.funcName __ "warning":
 			nuke.w..(msg)
 
-		elif record.funcName __ [ "critical", "fatal" ]:
+		elif record.funcName __ [ "c..", "fatal" ]:
 			nuke.e..(msg)
 			nuke.m..(record.m..)
 
@@ -304,7 +304,7 @@ c_ MobuHandler(?.Handler):
 		elif record.funcName __ "error":
 			sys.stderr.write(msg+"\n")
 
-		elif record.funcName __ [ "critical", "fatal" ]:
+		elif record.funcName __ [ "c..", "fatal" ]:
 			FBMessageBox( record.funcName, msg, "OK" )
 			sys.stderr.write(msg+"\n")
 

@@ -41,7 +41,7 @@ ___ build(toolbar_True):
     logger.i..('Version: {0}'.f..(__version__))
 
     __ no. nuke.GUI:
-        logger.critical('Nuke is not in GUI mode, aborting UI creation')
+        logger.c..('Nuke is not in GUI mode, aborting UI creation')
         r_
 
     __ toolbar:

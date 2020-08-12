@@ -7,4 +7,4 @@ ___ do_stuff():
     # because this will confuse you __ you import the module before
     # loading the configuration in main.
     log _ ?.gL..( -n)  # Getting loggers is "cheap".
-    log.critical('Logging from another module.')
+    log.c..('Logging from another module.')

@@ -29,7 +29,7 @@ c_ NukeStubsGenerator(object):
 
         # If we didn't get anything, then lets not bother writing
         __ no. contents:
-            logger.critical('Could not generate stubs')
+            logger.c..('Could not generate stubs')
             r_
 
         # Check the directory to write to
@@ -152,7 +152,7 @@ c_ NukeStubsGenerator(object):
         indent()
         doc _ '"""%s"""' % func.__doc__
         write(doc)
-        write('pass\n')
+        write('p..\n')
         dedent()
 
         r_ True
