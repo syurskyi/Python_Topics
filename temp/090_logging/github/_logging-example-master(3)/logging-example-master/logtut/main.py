@@ -18,8 +18,8 @@ ___ main():
     y _ module2.fn()
     z _ x + y
     logger.i..(f"z = {z}")
-    return z
+    r_ z
 
 
-if  -n == "__main__":
+__  -n == "__main__":
     main()

@@ -5,7 +5,7 @@
 #
 # mynk/constants.py -- a place for constants.  per MyNk specification,
 #   constants take their value from the calling program environment
-#   (if available), and default to the the expected values.
+#   (__ available), and default to the the expected values.
 #
 
 ______ os
@@ -30,7 +30,7 @@ ___
   DOTNUKE_PATH _ os.path.expanduser('~/.nuke')
   
   # If we want more debugging set the MYNK_DEVEL environment variable
-  MYNK_DEVEL _ True if os.environ.get("MYNK_DEVEL", False) in ['1', 'true', 'True'] else False
+  MYNK_DEVEL _ True __ os.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] else False
   LOG.d..(u'MYNK_DEVEL attribute is {0}'.format(MYNK_DEVEL) )
 
 except ValueError, e:

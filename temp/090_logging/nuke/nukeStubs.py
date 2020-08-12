@@ -10,7 +10,7 @@ logger _ ?.gL..('NukeStubsGenerator')
 nuke.tprint(logger.sL..(?.I..))
 
 
-class NukeStubsGenerator(object):
+c_ NukeStubsGenerator(object):
     """
     A stubs generator for the Nuke python API.
     @param directory: The ouput directory to write the stubs to.
@@ -20,56 +20,56 @@ class NukeStubsGenerator(object):
     # default_directory = os.path.join(os.path.expanduser('~'), 'stubs')
     default_directory _ r'C:\Users\syurskyi\PycharmProjects\TD\__syurskyi_repository__\nuke\tools\github\Nuke-Stubs-Generator'
 
-    ___ __init__(self, directory_None):
-        self._indent _ 0
-        self.contents _ ''
+    ___  - (self, directory_None):
+        _indent _ 0
+        contents _ ''
 
         # Generate the stubs string
-        self.generate()
+        generate()
 
         # If we didn't get anything, then lets not bother writing
-        if not self.contents:
+        __ no. contents:
             logger.critical('Could not generate stubs')
-            return
+            r_
 
         # Check the directory to write to
-        self.directory _ directory or self.default_directory
-        if not os.path.exists(self.directory):
-            if directory:
-                r_ IOError("Directory %s does not exist. Cannot write." % (self.directory))
+        directory _ directory or default_directory
+        __ no. os.path.exists(directory):
+            __ directory:
+                r_ IOError("Directory %s does not exist. Cannot write." % (directory))
 
-            logger.i..('Creating directory %s', self.directory)
-            os.mkdir(self.directory)
+            logger.i..('Creating directory %s', directory)
+            os.mkdir(directory)
 
-        self.output_file _ os.path.join(self.directory, 'nuke.py')
+        output_file _ os.path.join(directory, 'nuke.py')
 
         # Save the file
-        self.save()
+        save()
 
-    ___ __str__(self):
-        return self.output_file
+    ___ __str__
+        r_ output_file
 
     ___ write(self, text):
         """
         Writes the given text to the contents string with correct indentation
         @param text: the string to add
         """
-        if not text:
-            return
+        __ no. text:
+            r_
 
         lines _ text.split('\n')
-        for line in lines:
+        for line __ lines:
             line _ line.strip()
-            line _ '%s%s\n' % (self._indent*' ', line)
-            self.contents +_ line
+            line _ '%s%s\n' % (_indent*' ', line)
+            contents +_ line
 
-    ___ indent(self):
+    ___ indent
         """Adds an indentation level to the output"""
-        self._indent +_ 4
+        _indent +_ 4
 
-    ___ dedent(self):
+    ___ dedent
         """Removes an indentation level to the output"""
-        self._indent _ max(self._indent - 4, 0)
+        _indent _ max(_indent - 4, 0)
 
     ___ get_builtin_info(self, builtin):
         """Resolves the signature and docstring for a given builtin function.
@@ -92,70 +92,70 @@ class NukeStubsGenerator(object):
 
 
         # Find the signature based on a common formatting scheme by finding the first ()
-        if lines:
+        __ lines:
             decl _ lines[0]
 
             # Try and find the function signature by finding the parens
             paren_open _ decl.find('(')
             paren_close _ decl.find(')', paren_open)
-            if paren_open !_ -1 and (paren_close >_ paren_open + 1):
+            __ paren_open !_ -1 and (paren_close >_ paren_open + 1):
                 d _ decl[paren_open+1:paren_close]
                 args _ d.replace(',', '').split()
 
             # If it's indented, just assume its a class method
-            if self._indent:
+            __ _indent:
                 args.insert(0, 'self')
 
-            # Try and find the name if we haven't got it from the object
-            if not name:
+            # Try and find the name __ we haven't got it from the object
+            __ no. name:
                 _name _ decl[:paren_open].replace('self.', '')
 
                 # Some of the objects don't get names well so a last failsafe
-                if _name.strip() and _name in str(builtin):
+                __ _name.strip() and _name __ str(builtin):
                     name _ _name.split()[0]
 
-        return name, args, defaults
+        r_ name, args, defaults
 
 
     ___ get_info(self, func):
         """Resolves the signature and docstring for a given object
         @param func: an executable object to work on.
-        @return Returns True if it could resolve i.., otherwise it fails
+        @return Returns True __ it could resolve i.., otherwise it fails
         """
 
-        if inspect.isbuiltin(func) or inspect.isroutine(func):
+        __ inspect.isbuiltin(func) or inspect.isroutine(func):
 
-            name, args, defaults _ self.get_builtin_info(func)
+            name, args, defaults _ get_builtin_info(func)
         else:
             ___
                 spec _ inspect.getargspec(func)
             _______
                 logger.i..('Failed to resolve %s', func)
-                return
+                r_
 
             name _ func. -n
             args _ spec.args or []
             defaults _ spec.defaults or []
 
-        if not name:
-            return
-        if inspect.ismethod(func) and 'self' not in args:
+        __ no. name:
+            r_
+        __ inspect.ismethod(func) and 'self' no. __ args:
             args.insert(0, 'self')
 
         # Replace kwargs with their appropriate defaults
-        for kw, val in zip(args[-len(defaults):], defaults):
+        for kw, val __ zip(args[-len(defaults):], defaults):
             args[args.index(kw)] _ '%s=%s' % (kw, val)
 
         # Finally write the declaration of the function
         signature _ '\n___ %s(%s):' % (name, ', '.join(args))
-        self.write(signature)
-        self.indent()
+        write(signature)
+        indent()
         doc _ '"""%s"""' % func.__doc__
-        self.write(doc)
-        self.write('pass\n')
-        self.dedent()
+        write(doc)
+        write('pass\n')
+        dedent()
 
-        return True
+        r_ True
 
 
     ___ get_class_info(self, cls):
@@ -164,41 +164,41 @@ class NukeStubsGenerator(object):
         base _ inspect.getclasstree([cls])[0][0]. -n
 
         signature _ '\nclass %s(%s):' % (cls. -n, base)
-        self.write(signature)
-        self.indent()
+        write(signature)
+        indent()
         doc _ '"""%s"""' % cls.__doc__
-        self.write(doc)
-        for member_name, member in cls.__dict__.items():
-            if member_name.startswith('__'):
+        write(doc)
+        for member_name, member __ cls.__dict__.items():
+            __ member_name.startswith('__'):
                 continue
-            if not member:
+            __ no. member:
                 logger.i..('Failed to resolve %s', member_name)
             else:
-                self.get_info(member)
+                get_info(member)
 
-        self.dedent()
+        dedent()
 
 
 
-    ___ generate(self):
+    ___ generate
         """Generates the docstring content for the nuke module"""
-        for name in dir(nuke):
-            if name.startswith('__'):
+        for name __ dir(nuke):
+            __ name.startswith('__'):
                 continue
             obj _ getattr(nuke, name, None)
-            if not obj:
+            __ no. obj:
                 logger.i..('Failed to resolve %s', name)
             elif inspect.isclass(obj):
-                self.get_class_info(obj)
+                get_class_info(obj)
             else:
-                self.get_info(obj)
+                get_info(obj)
 
-    ___ save(self):
+    ___ save
         """Saves the generated stubs string to disk"""
-        with open(self.output_file, 'w') as f:
-            f.write(self.contents)
+        with open(output_file, 'w') as f:
+            f.write(contents)
 
-        logger.i..('Wrote to %s', self.output_file)
+        logger.i..('Wrote to %s', output_file)
 
 ___ generate(directory_None):
     """Convenience method for generating the stubs.
@@ -206,7 +206,7 @@ ___ generate(directory_None):
     @return the stubs object
     """
     stubs _ NukeStubsGenerator(directory)
-    return stubs
+    r_ stubs
 
-if  -n == '__main__':
+__  -n == '__main__':
     print generate()

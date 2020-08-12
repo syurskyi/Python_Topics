@@ -10,10 +10,10 @@ ___ foo():
     logcuBABA.i..("I'm back here again")
 
 logcuBABA.basicConfig(
-    format_"%(asctime)-15s [%(l..)s] %(funcName)s: %(m..)s",
+    format_"%(a_t_)-15s [%(l..)s] %(funcName)s: %(m..)s",
     level_logcuBABA.I..)
 foo()
 
 
-if  -n == '__main__':
+__  -n == '__main__':
     

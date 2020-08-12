@@ -17,7 +17,7 @@ ___ simple_parser():
     fh _ ?.FH..("ex3_log.log.log")
     
     # specify a format for the log output
-    formatter _ ?.F..('%(asctime)s - %(name)s - %(l..)s - %(m..)s')
+    formatter _ ?.F..('%(a_t_)s - %(name)s - %(l..)s - %(m..)s')
     fh.sF..(formatter)
     
     # assign the formatted file handler to the logger
@@ -33,10 +33,10 @@ ___ simple_parser():
     
     args _ parser.parse_args()
     
-    return args.A, args.B, args.C
+    r_ args.A, args.B, args.C
 
 
-if  -n == '__main__':
+__  -n == '__main__':
     args _ simple_parser()
     print(foo(*args))
     

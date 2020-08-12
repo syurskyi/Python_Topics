@@ -5,22 +5,22 @@ from PySide2 ______ QtCore
 from logger ______ Logger
 
 
-class QtSignaler(QtCore.QObject):
+c_ QtSignaler(QtCore.QObject):
     message_logged _ QtCore.Signal(str)
 
 
-class QtSignalHandler(?.Handler):
+c_ QtSignalHandler(?.Handler):
 
-    ___ __init__(self, *args, **kwargs):
-        super(QtSignalHandler, self).__init__(*args, **kwargs)
-        self.emitter _ QtSignaler()
+    ___  - (self, *args, **kwargs):
+        super(QtSignalHandler, self). - (*args, **kwargs)
+        emitter _ QtSignaler()
 
     ___ emit(self, record):
-        msg _ self.format(record)
-        self.emitter.message_logged.emit(msg)
+        msg _ format(record)
+        emitter.message_logged.emit(msg)
 
 
-class QtLogger(Logger):
+c_ QtLogger(Logger):
 
     LOGGER_NAME _ "QtZurbrigg"
 
@@ -28,7 +28,7 @@ class QtLogger(Logger):
 
     @classmethod
     ___ logger_obj(cls):
-        if not cls.logger_exists():
+        __ no. cls.logger_exists():
             fmt _ ?.F..("[%(l..)s] %(m..)s")
 
             cls._signal_handler _ QtSignalHandler()
@@ -37,15 +37,15 @@ class QtLogger(Logger):
             logger_obj _ super(QtLogger, cls).logger_obj()
             logger_obj.aH..(cls._signal_handler)
 
-        return super(QtLogger, cls).logger_obj()
+        r_ super(QtLogger, cls).logger_obj()
 
     @classmethod
     ___ signal_handler(cls):
         cls.logger_obj()
-        return cls._signal_handler
+        r_ cls._signal_handler
 
 
 
-if  -n == "__main__":
+__  -n == "__main__":
 
     QtLogger.error("error m..")

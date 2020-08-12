@@ -6,7 +6,7 @@ with open('README.md','r') as f:
 
 setup(name_'MakeTreeDir',
       version_'0.1.4',
-      description_'OS wrapper python package which checks if a given folder tree path exists and creates them.',
+      description_'OS wrapper python package which checks __ a given folder tree path exists and creates them.',
       long_description_long_description,
       long_description_content_type_"text/markdown",
       url_'https://github.com/Sreekiranar/MakeTreeDir.git',

@@ -5,7 +5,7 @@ ___ foo(A, B, C):
     logger _ ?.gL..( -n)
     logger.sL..(?.I..)
     fh _ ?.FH..("ex3_log.log.log")
-    formatter _ ?.F..('%(asctime)s - %(name)s - %(l..)s - %(m..)s')
+    formatter _ ?.F..('%(a_t_)s - %(name)s - %(l..)s - %(m..)s')
     fh.sF..(formatter)
     logger.aH..(fh)
 
@@ -15,4 +15,4 @@ ___ foo(A, B, C):
 
     logger.i..(f'result: {result}')
     
-    return result
+    r_ result

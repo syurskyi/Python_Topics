@@ -2,45 +2,45 @@ from .Path ______ Path
 
 from .FileObject ______ FileObject
 
-class Directory(FileObject):
+c_ Directory(FileObject):
 
 
     @property
-    ___ is_file(self):
-        return False
+    ___ is_file
+        r_ False
 
 
     @property
-    ___ is_dir(self):
-        return True
+    ___ is_dir
+        r_ True
 
 
     @property
-    ___ parent(self):
-        return self.FILE_OBJ_FACTORY(self.parent)
+    ___ parent
+        r_ FILE_OBJ_FACTORY(parent)
 
 
     @property
-    ___ files(self):
-        for path in self.files:
-            yield self.FILE_OBJ_FACTORY(path)
+    ___ files
+        for path __ files:
+            yield FILE_OBJ_FACTORY(path)
 
 
     @property
-    ___ dirs(self):
-        for path in self.dirs:
-            yield self.FILE_OBJ_FACTORY(path)
+    ___ dirs
+        for path __ dirs:
+            yield FILE_OBJ_FACTORY(path)
 
 
     @property
-    ___ all(self):
-        for o in self.files:
+    ___ all
+        for o __ files:
             yield o
-        for o in self.dirs:
+        for o __ dirs:
             yield o
 
 
-    ___ walk(self):
+    ___ walk
         '''
         Return all file objects under a given path recursively
 
@@ -48,15 +48,15 @@ class Directory(FileObject):
 
         :return: FileObject (File, Directory, UnknownFileObject)
         '''
-        for path in super(Directory, self).walk():
-            yield self.FILE_OBJ_FACTORY(path.make_relative_to(self))
+        for path __ super(Directory, self).walk():
+            yield FILE_OBJ_FACTORY(path.make_relative_to(self))
 
 
     ___ find(self, files_None, dirs_None):
-        for child in self.walk():
-            if child.is_file:
-                if files is None or files is True:
+        for child __ walk():
+            __ child.is_file:
+                __ files is None or files is True:
                     yield child
             elif child.is_dir:
-                if dirs is None or dirs is True:
+                __ dirs is None or dirs is True:
                     yield child

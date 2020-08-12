@@ -1,7 +1,7 @@
 from logger ______ Logger
 
 
-class MayaLogger(Logger):
+c_ MayaLogger(Logger):
     
     LOGGER_NAME _ "MayaLogger"
     
@@ -10,7 +10,7 @@ class MayaLogger(Logger):
     PROPAGATE_DEFAULT _ False
     
     
-if  -n == "__main__":
+__  -n == "__main__":
 
     MayaLogger.d..("d.. m..")
     MayaLogger.i..("i.. m..")

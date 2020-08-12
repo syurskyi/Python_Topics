@@ -1,76 +1,76 @@
 ______ os
 
 
-class Path(object):
+c_ Path(object):
     '''Work with os.path as an object'''
 
-    ___ __init__(self, *parms, **kwargs):
-        str_parms _ [str(p) for p in parms]
-        self.__path _ os.path.join(*str_parms)
+    ___  - (self, *parms, **kwargs):
+        str_parms _ [str(p) for p __ parms]
+        __path _ os.path.join(*str_parms)
 
-        self.__relative_to _ None
+        __relative_to _ None
 
-        # Collect relative_to off first path parm if we can
+        # Collect relative_to off first path parm __ we can
         ___
-            self.__relative_to _ parms[0].__relative_to
+            __relative_to _ parms[0].__relative_to
         except AttributeError:
-            self.__relative_to _ None
+            __relative_to _ None
 
-        for k, v in list(kwargs.items()):
-            if k == 'relative_to':
-                if v is not None:
-                    self.__relative_to _ Path(v)
+        for k, v __ list(kwargs.items()):
+            __ k == 'relative_to':
+                __ v is no. None:
+                    __relative_to _ Path(v)
             else:
                 r_ Exception("Unknown keyword argument: s" % (k))
 
 
-    ___ __str__(self):
-        return self.__path
+    ___ __str__
+        r_ __path
 
     @property
-    ___ s(self):
+    ___ s
         '''Alias to __str__()'''
-        return str(self)
+        r_ str(self)
 
-    ___ __repr__(self):
-        return "Path('%s')" % (self.__path)
+    ___ __repr__
+        r_ "Path('%s')" % (__path)
 
 
     @property
-    ___ effective_path_str(self):
+    ___ effective_path_str
         '''Path being pased to os.path'''
-        if self.__relative_to is None:
-            return self.__path
+        __ __relative_to is None:
+            r_ __path
         else:
-            return os.path.join(str(self.__relative_to), self.__path)
+            r_ os.path.join(str(__relative_to), __path)
 
 
     @property
-    ___ _compare_str(self):
+    ___ _compare_str
         '''String for comparison.  See .__eq__()'''
-        if self.__relative_to is None:
+        __ __relative_to is None:
             path _ str(self)
         else:
-            path _ os.path.join(str(self.__relative_to), str(self))
+            path _ os.path.join(str(__relative_to), str(self))
 
         # Normalize path seperators
         path _ Path.normalize_path_sep(path)
 
-        return path
+        r_ path
 
 
     @staticmethod
     ___ normalize_path_sep(path):
-        return path.replace('/', os.path.sep).replace('\\', os.path.sep)
+        r_ path.replace('/', os.path.sep).replace('\\', os.path.sep)
 
 
     ___ __eq__(self, other):
         '''
-        Paths are equal if their string values are equal adjusted for os.sep
+        Paths are equal __ their string values are equal adjusted for os.sep
 
         So:
           - a/b/c == a\b\c
-          - /a/b/c != a/b/c (even if both paths point to the same place)
+          - /a/b/c != a/b/c (even __ both paths point to the same place)
 
         If a path has a .rel_root value, that will be combined with the
         string value before comparing.  So:
@@ -81,45 +81,45 @@ class Path(object):
         :return:
         '''
         ___
-             return other._compare_str == self._compare_str
+             r_ other._compare_str == _compare_str
         except AttributeError:
             a _ Path.normalize_path_sep(str(other))
-            return a == self._compare_str
+            r_ a == _compare_str
 
 
-    ___ __hash__(self):
-        return hash(self.__path)
+    ___ __hash__
+        r_ hash(__path)
 
 
     ___ __ne__(self, other):
-        return not self.__eq__(other)
+        r_ no. __eq__(other)
 
 
     @property
-    ___ rel_root(self):
-        '''The path that this path is relative to (if relative)'''
-        if self.is_relative:
-            if self.__relative_to is not None:
-                return self.__relative_to
+    ___ rel_root
+        '''The path that this path is relative to (__ relative)'''
+        __ is_relative:
+            __ __relative_to is no. None:
+                r_ __relative_to
             else:
-                return os.path.abspath(os.curdir)
-        return None
+                r_ os.path.abspath(os.curdir)
+        r_ None
 
 
     @property
-    ___ is_relative(self):
-        if len(self.__path) > 0:
-            if self.__path[0] in ('/', '\\'):
-                return False
-            elif self.__path[1:3] in (':\\', ':/'):
-                return False
-            return True
-        return None
+    ___ is_relative
+        __ len(__path) > 0:
+            __ __path[0] __ ('/', '\\'):
+                r_ False
+            elif __path[1:3] __ (':\\', ':/'):
+                r_ False
+            r_ True
+        r_ None
 
 
     @property
-    ___ is_absolute(self):
-        return not self.is_relative
+    ___ is_absolute
+        r_ no. is_relative
 
 
     ___ make_relative_to(self, root):
@@ -127,141 +127,141 @@ class Path(object):
         root _ str(root)
 
         path _ str(self)
-        if self.__relative_to is not None:
-            path _ os.path.join(str(self.__relative_to), path)
+        __ __relative_to is no. None:
+            path _ os.path.join(str(__relative_to), path)
 
-        if not path.startswith(root):
+        __ no. path.startswith(root):
             r_ ValueError("%s cannot be represented relative to %s" %(
                 path, root))
         rel_path _ path[len(root)+1:] # +1 to get dir sep.  Ever want otherwise?
-        return Path(rel_path, relative_to_root)
+        r_ Path(rel_path, relative_to_root)
 
 
     @property
-    ___ exists(self):
-        return os.path.exists(self.effective_path_str)
+    ___ exists
+        r_ os.path.exists(effective_path_str)
 
     @property
-    ___ is_file(self):
-        return os.path.isfile(self.effective_path_str)
+    ___ is_file
+        r_ os.path.isfile(effective_path_str)
 
     @property
-    ___ is_dir(self):
-        return os.path.isdir(self.effective_path_str)
+    ___ is_dir
+        r_ os.path.isdir(effective_path_str)
 
     @property
-    ___ is_link(self):
-        return os.path.islink(self.effective_path_str)
+    ___ is_link
+        r_ os.path.islink(effective_path_str)
 
 
     @property
-    ___ abs(self):
-        if self.is_relative:
-            if self.__relative_to is not None:
-                return Path(self.__relative_to, self.__path)
+    ___ abs
+        __ is_relative:
+            __ __relative_to is no. None:
+                r_ Path(__relative_to, __path)
             else:
-                return Path(os.path.abspath(self.__path))
+                r_ Path(os.path.abspath(__path))
         else:
-            return Path(os.path.abspath(self.__path))
+            r_ Path(os.path.abspath(__path))
 
     @property
-    ___ basename(self):
-        return os.path.basename(self.__path)
+    ___ basename
+        r_ os.path.basename(__path)
 
     @property
-    ___ parent(self):
-        return Path(os.path.dirname(self.__path))
+    ___ parent
+        r_ Path(os.path.dirname(__path))
 
 
     @property
-    ___ splitext(self):
-        prefix, ext _ os.path.splitext(self.__path)
-        if ext is not None and ext[0] == '.':
+    ___ splitext
+        prefix, ext _ os.path.splitext(__path)
+        __ ext is no. None and ext[0] == '.':
             ext _ ext[1:]
-        return prefix, ext
+        r_ prefix, ext
 
     @property
-    ___ prefix(self):
-        return self.splitext[0]
+    ___ prefix
+        r_ splitext[0]
 
     @property
-    ___ ext(self):
-        return self.splitext[1]
+    ___ ext
+        r_ splitext[1]
 
-    ___ split(self):
-        return str(self.norm).split(os.sep)
+    ___ split
+        r_ str(norm).split(os.sep)
 
     ___ has_ext(self, *exts):
-        return self.ext.lower() in set([e.lower() for e in exts])
+        r_ ext.lower() __ set([e.lower() for e __ exts])
 
     @property
-    ___ norm(self):
-        return Path(os.path.normpath(self.__path))
+    ___ norm
+        r_ Path(os.path.normpath(__path))
 
 
     ___ join(self, *paths):
-        paths _ [self.__path, ] + [str(p) for p in paths]
-        return Path(os.path.join(*paths), relative_to_self.__relative_to)
+        paths _ [__path, ] + [str(p) for p __ paths]
+        r_ Path(os.path.join(*paths), relative_to_self.__relative_to)
 
 
     @property
-    ___ all(self):
-        for p in self.dirs:
+    ___ all
+        for p __ dirs:
             yield p
-        for p in self.files:
+        for p __ files:
             yield p
 
 
-    ___ list_dir(self):
-        return os.listdir(self.effective_path_str)
+    ___ list_dir
+        r_ os.listdir(effective_path_str)
 
     ___ samefile(self, other):
         ___
-            return os.path.samefile(self.effective_path_str, str(other))
+            r_ os.path.samefile(effective_path_str, str(other))
         except AttributeError:
             r_ AttributeError("os.path.samefile() only available for Unix")
         except FileNotFoundError:
             # Keeping this behaviour since I think this is how Python 2 worked.
-            # May let this exception bubble up in the future if file doesn't exist
-            return False
+            # May let this exception bubble up in the future __ file doesn't exist
+            r_ False
 
     @property
-    ___ dirs(self):
-        for name in self.list_dir():
-            child _ self.join(name)
-            if child.is_dir:
+    ___ dirs
+        for name __ list_dir():
+            child _ join(name)
+            __ child.is_dir:
                 yield child
 
 
     ___ startswith(self, path):
         path_parts _ Path(path).split()
-        my_parts _ self.split()
-        return my_parts[:len(path_parts)] == path_parts
+        my_parts _ split()
+        r_ my_parts[:len(path_parts)] == path_parts
 
 
     @property
-    ___ files(self):
-        for name in self.list_dir():
-            child _ self.join(name)
-            if child.is_file:
+    ___ files
+        for name __ list_dir():
+            child _ join(name)
+            __ child.is_file:
                 yield child
 
 
-    ___ find(self):
-        return self.walk()
+    ___ find
+        r_ walk()
 
 
-    ___ walk(self):
+    ___ walk
         '''
         Return all sub directories and files recursivly
 
         Returned paths are RelativePath
         '''
-        for dirpath, dirnames, filenames in os.walk(str(self.abs)):
-            for name in dirnames:
-                yield Path(dirpath, name).make_relative_to(self.abs)
-            for name in filenames:
-                yield Path(dirpath, name).make_relative_to(self.abs)
+        for dirpath, dirnames, filenames __ os.walk(str(abs)):
+            for name __ dirnames:
+                yield Path(dirpath, name).make_relative_to(abs)
+            for name __ filenames:
+                yield Path(dirpath, name).make_relative_to(abs)
 
 
 

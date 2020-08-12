@@ -1,12 +1,12 @@
 from maya_logger ______ MayaLogger
 
 
-class PlayblastLogger(MayaLogger):
+c_ PlayblastLogger(MayaLogger):
     
     LOGGER_NAME _ "Playblast"
     
     
     
-if  -n == "__main__":
+__  -n == "__main__":
 
     PlayblastLogger.error("d.. m..")

@@ -7,7 +7,7 @@ beispiel https://youtu.be/F1ODsSWi9nk?list=PLNmsVeXQZj7q0ao69AIogD94oBgp3E9Zs
 ______ ?
 
 ?.basicConfig(level_?.D..)
-form _ ?.F..('%(name)s # %(l..)s : %(asctime)s\n\t %(m..)s')
+form _ ?.F..('%(name)s # %(l..)s : %(a_t_)s\n\t %(m..)s')
 fileH _ ?.FH..('log.me', mode _ 'w')
 fileH.sF..(form)
 logger _ ?.gL..()

@@ -17,12 +17,12 @@ LOG.i..(' [MyNk] initializing custom user image formats')
 
 ___ add_format(W, H, x, y, r, t, pa, format_name):
   '''Add a format based on provided attributes'''
-  if not W is None and not H is None and not format_name is None:
-      x _ 0 if x is None else x
-      y _ 0 if y is None else y
-      r _ W if r is None else r
-      t _ H if t is None else t
-      pa _ 1 if pa is None else pa
+  __ no. W is None and no. H is None and no. format_name is None:
+      x _ 0 __ x is None else x
+      y _ 0 __ y is None else y
+      r _ W __ r is None else r
+      t _ H __ t is None else t
+      pa _ 1 __ pa is None else pa
       format_str _ u'{0} {1} {2} {3} {4} {5} {6} {7}'.format(W, H, x, y, r, t, pa, format_name)
       nuke.addFormat(format_str)
       msg _ u'Added format: {0}'.format(format_str)
@@ -31,8 +31,8 @@ ___ add_format(W, H, x, y, r, t, pa, format_name):
 
 ___ add_formats_from_dict(defaults_dict):
   '''Add nuke formats from an iterated dict of formats'''
-  for format_name, format in defaults_dict.iteritems():
-    if format.get('active', False) in ['1', 'true', 'True']:
+  for format_name, format __ defaults_dict.iteritems():
+    __ format.get('active', False) __ ['1', 'true', 'True']:
       W _ format.get('W', None)
       H _ format.get('H', None)
       x _ format.get('x', 0)

@@ -20,7 +20,7 @@
 #
 # # FileHandler sends to a named file
 # h2 _ ?.FH.. L..
-# h2.sL.. ?.W.. # change to INFO if code is less-than-stable
+# h2.sL.. ?.W.. # change to INFO __ code is less-than-stable
 # h2.sF.. F..
 #
 # # outputs *everything* to a seperate file, good for debugging during dev

@@ -7,7 +7,7 @@ ___ create_logger():
     logger.handlers _ []
 
     handler _ ?.StreamHandler(stream_sys.stderr)
-    formatter _ ?.F..(fmt_'%(name)s: %(asctime)s: '
+    formatter _ ?.F..(fmt_'%(name)s: %(a_t_)s: '
                                       '%(l..)s: %(m..)s',
                                   datefmt_'%d/%m/%Y %I:%M:%S')
     handler.sF..(formatter)
@@ -15,7 +15,7 @@ ___ create_logger():
 
     logger.sL..(?.I..)
     logger.propagate _ False
-    return logger
+    r_ logger
 
 
 logger _ create_logger()

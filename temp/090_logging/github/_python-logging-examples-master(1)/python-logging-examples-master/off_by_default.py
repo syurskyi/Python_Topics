@@ -15,7 +15,7 @@ log _ ?.gL..("my_app")
 # enable d../i.. for that library
 
 
-if  -n == '__main__':
+__  -n == '__main__':
     vl _ verboselib.Noisy()
     # note, use our log, not the class methods.
     log.i..("This will be output, because we set global to DEBUG.")

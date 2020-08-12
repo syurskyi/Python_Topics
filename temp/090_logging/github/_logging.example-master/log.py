@@ -2,19 +2,19 @@ ______ ?
 ______ ?.handlers
 
 
-class Log:
-    ___ __init__(self):
+c_ Log:
+    ___  -
         pass
 
-    ___ setup_logging(self):
-        formt _ '%(asctime)s - %(filename)s - %(l..)s - %(m..)s'
+    ___ setup_logging
+        formt _ '%(a_t_)s - %(filename)s - %(l..)s - %(m..)s'
         formatter _ ?.F..(formt)
 
         ch _ ?.SH..
         ch.sL..(?.ERROR)
         ch.sF..(formatter)
 
-        fh _ ?.handlers.RotatingFileHandler('./my_app.log')
+        fh _ ?.handlers.RHFH...('./my_app.log')
         fh.sL..(?.D..)
         fh.sF..(formatter)
 

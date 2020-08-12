@@ -15,7 +15,7 @@ except ImportError:
 
 
 ___ paste_nk(path):
-    if inNuke:
+    __ inNuke:
         ___
             nuke.nodePaste(path)
         _______
@@ -25,14 +25,14 @@ ___ paste_nk(path):
 ___ send_nk(path):
     nodesName _ []
     nodesStr _ ""
-    if inNuke:
-        if nuke.selectedNodes() !_ []:
+    __ inNuke:
+        __ nuke.selectedNodes() !_ []:
             ___
-                if not os.path.exists(os.path.dirname(path)):
+                __ no. os.path.exists(os.path.dirname(path)):
                     os.makedirs(os.path.dirname(path))
-                for n in nuke.selectedNodes():
+                for n __ nuke.selectedNodes():
                     nodesName.append(n.knob("name").value())
-                if nodesName !_ []:
+                __ nodesName !_ []:
                     temp _ " ".join(nodesName)
                     nodesStr _ "%s..." % temp[:30]
                 nuke.nodeCopy(path)
@@ -42,12 +42,12 @@ ___ send_nk(path):
                 f.flush()
                 f.close()
                 print "send node failed"
-    return nodesStr
+    r_ nodesStr
 
 
 ___ clear_selection():
     ___
-        for n in nuke.selectedNodes():
+        for n __ nuke.selectedNodes():
             n.setSelected(False)
     _______
         pass
@@ -55,14 +55,14 @@ ___ clear_selection():
 
 ___ get_nk_name():
     nkName _ ""
-    if inNuke:
+    __ inNuke:
         ___
             filePath _ nuke.root().knob("name").value()
-            if filePath == "":
+            __ filePath == "":
                 nkName _ "Untitled"
             else:
                 nkName _ filePath.split("/")[-1]
         _______
             print "get nk name failed"
-    return nkName
+    r_ nkName
 

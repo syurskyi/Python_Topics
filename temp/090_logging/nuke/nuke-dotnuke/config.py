@@ -16,25 +16,25 @@ from . ______ constants as _c
 from . ______ LOG
 
 
-class MyNkConfig(object):
-  ___ __init__(self):
-    user_cfg_file_path _ self.init_cfg()
-    self.config _ ConfigObj(user_cfg_file_path, indent_type_u'  ')
+c_ MyNkConfig(object):
+  ___  -
+    user_cfg_file_path _ init_cfg()
+    config _ ConfigObj(user_cfg_file_path, indent_type_u'  ')
 
-  ___ init_cfg(self):
+  ___ init_cfg
     '''Initialize the user config by copying the provided default config file'''
     default_cfg_path _ os.path.join(_c.MYNK_PATH, 'data')
     default_cfg_file_path _ os.path.join(default_cfg_path, 'defaults.cfg')
     user_cfg_path _ _c.DOTNUKE_PATH
     user_cfg_file_path _ os.path.join(user_cfg_path, 'mynk.cfg')
-    if not os.path.isdir(user_cfg_path):
+    __ no. os.path.isdir(user_cfg_path):
       ___
         os.makedirs(user_cfg_path)
         LOG.i..("Created initial user config: %s" % user_cfg_file_path)
       _______
-        if not os.path.isdir(user_cfg_path):
+        __ no. os.path.isdir(user_cfg_path):
           r_
-    if not os.path.exists(user_cfg_file_path):
+    __ no. os.path.exists(user_cfg_file_path):
       shutil.copy(default_cfg_file_path, user_cfg_file_path)
-    return user_cfg_file_path
+    r_ user_cfg_file_path
 

@@ -27,8 +27,8 @@ from . ______ config
 
 ______ mynk
 
-class MyNkGui(object):
-  ___ __init__(self):
+c_ MyNkGui(object):
+  ___  -
     nuke.pluginAddPath(os.path.join(_c.MYNK_PATH, 'icons'), addToSysPath_False)
     LOG.i..(' [MyNk] initializing custom user menus etc.')
 
@@ -39,33 +39,33 @@ class MyNkGui(object):
     except AttributeError:
       LOG.warning(' [MyNk] tool has no __menus__ attribute: {0}'.format(tool_str))
     else:
-      if menus is None:
-        return
+      __ menus is None:
+        r_
       else:
-        for key,val in menus.iteritems():
+        for key,val __ menus.iteritems():
           title _ key
-          if val:
-            cmd _ val['cmd'] if val['cmd'].startswith('nuke') else '{0}.{1}'.format(tool_str, val['cmd'])
+          __ val:
+            cmd _ val['cmd'] __ val['cmd'].startswith('nuke') else '{0}.{1}'.format(tool_str, val['cmd'])
             hotkey _ val['hotkey']
             icon _ val['icon']
-            for menu in [self.menu,self.nuke_toolbar]:
+            for menu __ [menu,nuke_toolbar]:
               menu.addCommand(title,cmd,hotkey,icon)
           else:
             menu.addMenu(title)
             
   ___ add_toolbunch_to_menu(self, toolbunch_str):
-    for key,val in eval(toolbunch_str).toDict().iteritems():
+    for key,val __ eval(toolbunch_str).toDict().iteritems():
       dottedpath _ '{0}.{1}'.format(toolbunch_str,key)
-      if inspect.ismodule(val):
-        self.add_tool_menus(dottedpath)
+      __ inspect.ismodule(val):
+        add_tool_menus(dottedpath)
       else:
-        self.add_toolbunch_to_menu(dottedpath)
+        add_toolbunch_to_menu(dottedpath)
 
-  ___ init_gui(self):
+  ___ init_gui
     nuke_menu _ nuke.menu('Nuke')
-    self.menu _ nuke_menu.addMenu('MyNk', icon_'mynk.png')
+    menu _ nuke_menu.addMenu('MyNk', icon_'mynk.png')
     nuke_toolbar _ nuke.menu("Nodes")
-    self.nuke_toolbar _ nuke_toolbar.addMenu("MyNk", "mynkx.png")
+    nuke_toolbar _ nuke_toolbar.addMenu("MyNk", "mynkx.png")
 
   ___ add_entry_to_toolbar(self, entry):
     pass
@@ -74,10 +74,10 @@ class MyNkGui(object):
     pass
 
   ___ add_entry_list(self, entry_list):
-   for entry in entry_list:
+   for entry __ entry_list:
      pass
  
-  ___ setFavorites(self):
+  ___ setFavorites
     nuke.removeFavoriteDir('Nuke')
     nuke.addFavoriteDir('DotNuke', os.path.expanduser('~/.nuke'), 0)
     nuke.addFavoriteDir('Jobs', '/', 0)

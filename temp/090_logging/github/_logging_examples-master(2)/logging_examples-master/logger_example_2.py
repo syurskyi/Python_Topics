@@ -16,7 +16,7 @@ ___ simple_parser():
     
     args _ parser.parse_args()
     
-    return args.A, args.B, args.C
+    r_ args.A, args.B, args.C
 
 
 ___ foo(A, B, C):
@@ -27,10 +27,10 @@ ___ foo(A, B, C):
     result _ (A + B) * C
     ?.i..(f'result: {result}')
     
-    return result
+    r_ result
     
     
-if  -n == '__main__':
+__  -n == '__main__':
     args _ simple_parser()
     print(foo(*args))
     

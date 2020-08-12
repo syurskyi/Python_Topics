@@ -5,36 +5,36 @@ from .Path ______ Path
 
 from .FileObject ______ FileObject
 
-class File(FileObject):
+c_ File(FileObject):
 
     @property
-    ___ is_file(self):
-        return True
-
-
-    @property
-    ___ is_dir(self):
-        return False
+    ___ is_file
+        r_ True
 
 
     @property
-    ___ size(self):
-        return os.path.getsize(str(self.path))
+    ___ is_dir
+        r_ False
+
+
+    @property
+    ___ size
+        r_ os.path.getsize(str(path))
 
 
     ___ open(self, mode):
-        return open(str(self.path), mode)
+        r_ open(str(path), mode)
 
 
-    ___ touch(self):
-        with open(str(self.path), 'a') as fh:
+    ___ touch
+        with open(str(path), 'a') as fh:
             pass
 
 
     @property
-    ___ md5(self):
+    ___ md5
         hasher _ hashlib.md5()
-        with open(str(self.path), 'rb') as fh:
+        with open(str(path), 'rb') as fh:
             data _ fh.read(4096)
             hasher.update(data)
 
@@ -42,15 +42,15 @@ class File(FileObject):
                 data _ fh.read(4096)
                 hasher.update(data)
 
-        return hasher.hexdigest()
+        r_ hasher.hexdigest()
 
 
-    ___ unlink(self):
-        os.unlink(str(self.path))
+    ___ unlink
+        os.unlink(str(path))
 
 
     @property
-    ___ parent(self):
-        return self.FILE_OBJ_FACTORY(self.path.parent)
+    ___ parent
+        r_ FILE_OBJ_FACTORY(path.parent)
 
 

@@ -1,8 +1,8 @@
 ______ ?
 ______ Module
 
-class setLogger():
-    ___ __init__(self):
+c_ setLogger():
+    ___  -
         # create logger with 'spam_application'
         logger _ ?.gL..('build.log')
         logger.sL..(?.D..)
@@ -13,17 +13,17 @@ class setLogger():
         ch _ ?.SH..
         ch.sL..(?.ERROR)
         # create formatter and add it to the handlers
-        formatter _ ?.F..('%(asctime)s - %(name)s - %(l..)s - %(funcName)s: %(m..)s')
+        formatter _ ?.F..('%(a_t_)s - %(name)s - %(l..)s - %(funcName)s: %(m..)s')
         fh.sF..(formatter)
         ch.sF..(formatter)
         # add the handlers to the logger
         logger.aH..(fh)
         logger.aH..(ch)
-        self.logger _ logger
-    ___ gL..(self):
-        return self.logger
+        logger _ logger
+    ___ gL..
+        r_ logger
 
-if  -n == '__main__':
+__  -n == '__main__':
     sLog _ setLogger()
     logger _ sLog.gL..()
     

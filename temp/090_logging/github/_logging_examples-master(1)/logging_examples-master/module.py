@@ -20,7 +20,7 @@ ___ exc_logging():
         logger.critical("Exception occurred", exc_info_True)
 
 
-if  -n == '__main__':
+__  -n == '__main__':
     bar()
     submodule.foo()
     exc_logging()

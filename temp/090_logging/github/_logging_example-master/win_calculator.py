@@ -47,36 +47,36 @@ payouts _ OrderedDict([
 ])
 
 
-class Shape:
-    ___ __init__(self,side):
-        self.side _ side
+c_ Shape:
+    ___  - (self,side):
+        side _ side
 
     ___ process_request(self,caller):
         print(getattr(self,caller))
-        return getattr(self, caller,"Invalid Caller")(caller)
+        r_ getattr(self, caller,"Invalid Caller")(caller)
        
 
     ___ area(self,caller):
         print("Parent")
-        return caller
+        r_ caller
 
     ___ parameter(self,caller):
         print("Parent")
-        return caller
+        r_ caller
 
     
 
-class Square(Shape):
+c_ Square(Shape):
 
-    ___ __init__(self,side):
-        self.side _ side
-        super(Square, self).__init__(side)   
+    ___  - (self,side):
+        side _ side
+        super(Square, self). - (side)
     
     ___ area(self,caller):
-        return self.side*self.side
+        r_ side*side
     
     ___ parameter(self,caller):
-        return 4*self.side
+        r_ 4*side
 
 #caller area/parameter
 
@@ -91,43 +91,43 @@ ___ calculate_winning(symbol_grid, multiplier_1, wild_multiplier_{}):
     #symbol_list = [1,2,3,4,5,6,7,8,9,10,11]
     symbol_list _ set(symbol_grid[0])
     win _ []
-    for symbol in symbol_list:
+    for symbol __ symbol_list:
         sym_data _ {'symbol': symbol, 'offset': []}
-        for col in range(0,len(symbol_grid)):
+        for col __ range(0,len(symbol_grid)):
             col_offset _ []
             sym_found _ False
-            for row in range(len(symbol_grid[col])):
-                if symbol_grid[col][row] == symbol:                
+            for row __ range(len(symbol_grid[col])):
+                __ symbol_grid[col][row] == symbol:
                     col_offset.append([col,row])
                     sym_found _ True
 
-            if row == len(symbol_grid[col])-1:
-                if len(col_offset) > 0:
+            __ row == len(symbol_grid[col])-1:
+                __ len(col_offset) > 0:
                     sym_data['offset'].append(col_offset)
             
-            if not sym_found:
-                if len(col_offset) > 0:
+            __ no. sym_found:
+                __ len(col_offset) > 0:
                     sym_data['offset'].append(col_offset)
                 break  
             
-        if len(sym_data['offset']) > 1 :
+        __ len(sym_data['offset']) > 1 :
             win.append(sym_data)
-    return win_amount(win)
+    r_ win_amount(win)
 
 ___ win_amount(wins):
     global payouts
     amount _ 0
-    for win in wins:
+    for win __ wins:
         symbol _ win['symbol']
         length _ len(win['offset'])
         ways _ 1
-        for offset in win['offset']:
+        for offset __ win['offset']:
             ways *_ len(offset)
         amount +_ payouts[(symbol,length)]*ways
-    return amount
+    r_ amount
 
 
-if  -n=='__main__':
+__  -n=='__main__':
     logger _ get_logger("win_calculator")
     logger.d..("a d.. m..")
     logger.error("a d.. m..")

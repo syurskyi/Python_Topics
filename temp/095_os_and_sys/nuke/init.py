@@ -24,14 +24,14 @@ ______ platform
 # Filename Fix
 # fix paths based on
 # ___ filenameFix(filename):
-#     if platform.system() in ("Windows", "Microsoft"):
+#     __ platform.system() in ("Windows", "Microsoft"):
 #         filename = filename.replace( "/psyop/pfs", "P:" )
 #     else:
 #         filename = filename.replace( "P:", "/psyop/pfs" )
 #     return filename
 
 
-if nuke.GUI:
+__ nuke.GUI:
     ___
         ______ nuke
     _______

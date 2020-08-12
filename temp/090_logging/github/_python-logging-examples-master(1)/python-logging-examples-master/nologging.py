@@ -1,7 +1,7 @@
 
 ______ verboselib
 
-if  -n == '__main__':
+__  -n == '__main__':
     vl _ verboselib.Noisy()
     print "no logging configured, so no output at all here"
     vl.do_debug()

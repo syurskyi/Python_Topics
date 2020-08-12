@@ -3,17 +3,17 @@ ______ ?
 # create logger
 module_logger _ ?.gL..('build.log.gingerModule')
 
-class Copy:
-    ___ __init__(self):
-        self.logger _ ?.gL..('build.log.gingerModule.Copy')
-    ___ execute(self):
-        self.logger.i..('COPY')
-        self.logger.i..('Sucessfull')
+c_ Copy:
+    ___  -
+        logger _ ?.gL..('build.log.gingerModule.Copy')
+    ___ execute
+        logger.i..('COPY')
+        logger.i..('Sucessfull')
 
 
-class Delete:
-    ___ __init__(self):
-        self.logger _ ?.gL..('build.log.gingerModule.Delete')
-    ___ execute(self):
-        self.logger.i..('DELETE')
-        self.logger.i..('Sucessfull')
+c_ Delete:
+    ___  -
+        logger _ ?.gL..('build.log.gingerModule.Delete')
+    ___ execute
+        logger.i..('DELETE')
+        logger.i..('Sucessfull')

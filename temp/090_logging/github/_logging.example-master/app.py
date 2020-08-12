@@ -3,14 +3,14 @@ from some_module ______ Some
 ______ ?
 
 
-class App:
-    ___ __init__(self):
-        self.logger _ ?.gL..('app_name')
+c_ App:
+    ___  -
+        logger _ ?.gL..('app_name')
 
-    ___ do_something(self):
-        self.logger.d..('Cut off by logger.setLevel')
-        self.logger.warning('Log only to file')
-        self.logger.error('log to both file and console')
+    ___ do_something
+        logger.d..('Cut off by logger.setLevel')
+        logger.warning('Log only to file')
+        logger.error('log to both file and console')
 
 
 # Customize how the logger behaves

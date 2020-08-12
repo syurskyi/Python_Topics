@@ -5,41 +5,41 @@ from PySide2 ______ QtWidgets
 from qt_logger ______ QtLogger
 
 
-class StandaloneWindow(QtWidgets.QWidget):
+c_ StandaloneWindow(QtWidgets.QWidget):
 
-    ___ __init__(self):
-        super(StandaloneWindow, self).__init__(parent_None)
+    ___  -
+        super(StandaloneWindow, self). - (parent_None)
 
-        self.setWindowTitle("Standalone App")
-        self.setMinimumSize(400, 300)
+        setWindowTitle("Standalone App")
+        setMinimumSize(400, 300)
 
-        self.plain_text_edit _ QtWidgets.QPlainTextEdit()
+        plain_text_edit _ QtWidgets.QPlainTextEdit()
 
-        self.warning_btn _ QtWidgets.QPushButton("Warning")
-        self.warning_btn.clicked.connect(self.print_warning)
+        warning_btn _ QtWidgets.QPushButton("Warning")
+        warning_btn.clicked.connect(print_warning)
 
-        self.error_btn _ QtWidgets.QPushButton("Error")
-        self.error_btn.clicked.connect(self.print_error)
+        error_btn _ QtWidgets.QPushButton("Error")
+        error_btn.clicked.connect(print_error)
 
         button_layout _ QtWidgets.QHBoxLayout()
         button_layout.addStretch()
-        button_layout.addWidget(self.warning_btn)
-        button_layout.addWidget(self.error_btn)
+        button_layout.addWidget(warning_btn)
+        button_layout.addWidget(error_btn)
 
         main_layout _ QtWidgets.QVBoxLayout(self)
-        main_layout.addWidget(self.plain_text_edit)
+        main_layout.addWidget(plain_text_edit)
         main_layout.addLayout(button_layout)
 
-        QtLogger.signal_handler().emitter.message_logged.connect(self.plain_text_edit.appendPlainText)
+        QtLogger.signal_handler().emitter.message_logged.connect(plain_text_edit.appendPlainText)
 
-    ___ print_warning(self):
+    ___ print_warning
         QtLogger.warning("warning m..")
 
-    ___ print_error(self):
+    ___ print_error
         QtLogger.error("error m..")
 
 
-if  -n == "__main__":
+__  -n == "__main__":
     # Create the main Qt application
     app _ QtWidgets.QApplication(sys.argv)
 

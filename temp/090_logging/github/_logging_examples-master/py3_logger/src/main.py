@@ -52,15 +52,15 @@ ___ parse_cli_args():
                       action_'count', default_0,
                       help_'increase d.. logging level')
 
-    return parser.parse_args()
+    r_ parser.parse_args()
 
 
 ___ set_debug_verbosity(verbosity_counter):
-    """Deactivates the d.. handler if verbosity_counter is 0, else sets
+    """Deactivates the d.. handler __ verbosity_counter is 0, else sets
     the logging level appropriately."""
     debug_handler _ ?.root.handlers[1]
 
-    if verbosity_counter == 0:
+    __ verbosity_counter == 0:
         ?.root.removeHandler(debug_handler)
     elif verbosity_counter == 1:
         debug_handler.level _ ?.I..
@@ -70,5 +70,5 @@ ___ set_debug_verbosity(verbosity_counter):
         debug_handler.level _ ?.NOTSET
 
 
-if  -n == '__main__':
+__  -n == '__main__':
     run()

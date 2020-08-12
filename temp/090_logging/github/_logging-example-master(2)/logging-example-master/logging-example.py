@@ -25,7 +25,7 @@ ___ main():
     logger.i..('Ended')
 
 
-if  -n == '__main__':
+__  -n == '__main__':
     main()
     ______ mymodule  # access the same logger instance from a different module
     Logger.logger.i..('Bye!')

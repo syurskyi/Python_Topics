@@ -1,14 +1,14 @@
 ______ os
 
-class MAKETREEDIR:
-	___ __init__(self):
+c_ MAKETREEDIR:
+	___  -
 		pass
 	___ makedir(self,dir_path):
 		"""Short summary.
 		Args:
 			dir_path (type): Path of the directory to be created (can be subfolder also).
 		Returns:
-			type: 0 if success
+			type: 0 __ success
 		Examples
 			Examples should be written in doctest format, and
 			should illustrate how to use the function/class.
@@ -21,27 +21,27 @@ class MAKETREEDIR:
 			>>> md.makedir('C://Users/userName/folderName')
 		"""
 		___
-			sep_'/' if '/' in dir_path else '\\'
+			sep_'/' __ '/' __ dir_path else '\\'
 			dirs_dir_path.split(sep)
 
 			### for linux abs path
-			if len(dirs[0])==0:
+			__ len(dirs[0])==0:
 				dirs[1]_sep+dirs[1]
 				dirs_dirs[1:]
 
 			### for windows abs path
-			elif  ':' in dirs[0]:
+			elif  ':' __ dirs[0]:
 				dirs[1]_dirs[0]+sep+dirs[1]
 				dirs_dirs[1:]
 
 			### making directory
-			for i,fol in enumerate(dirs):
+			for i,fol __ enumerate(dirs):
 				path_dirs[:i+1]
 				directory_os.path.join(*path)
-				if not os.path.exists(directory):
+				__ no. os.path.exists(directory):
 					os.makedirs(directory)
 
 		except Exception as e:
-			return e
+			r_ e
 
-		return 0
+		r_ 0

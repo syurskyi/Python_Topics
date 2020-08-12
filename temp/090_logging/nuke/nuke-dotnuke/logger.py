@@ -20,50 +20,50 @@ ______ types
 
 
 
-class MyNkLogger(object):
-  ___ __init__(self):
-    self.level _ ?.D.. \
-                 if os.environ.get("MYNK_DEVEL", False) in ['1', 'true', 'True'] \
+c_ MyNkLogger(object):
+  ___  -
+    level _ ?.D.. \
+                 __ os.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] \
                  else ?.I..
-    exc_format _ '%(asctime)s %(l..)s: %(m..)s'
-    format _ '%(asctime)s %(l..)s %(filename)s:%(l_l_..)d %(m..)s'
+    exc_format _ '%(a_t_)s %(l..)s: %(m..)s'
+    format _ '%(a_t_)s %(l..)s %(filename)s:%(l_l_..)d %(m..)s'
     date_format _ '%Y-%m-%d %H:%M:%S'
-    self.exc_formatter _ ?.F..(exc_format, date_format)
-    self.formatter _ ?.F..(format, date_format)
-    self.init_logger()
+    exc_formatter _ ?.F..(exc_format, date_format)
+    formatter _ ?.F..(format, date_format)
+    init_logger()
 
-  ___ init_handler(self):
-    self.stream_handler _ ?.SH..
-    self.stream_handler.sF..(self.formatter)
-    self.stream_handler.sL..(self.level)
+  ___ init_handler
+    stream_handler _ ?.SH..
+    stream_handler.sF..(formatter)
+    stream_handler.sL..(level)
     
-  ___ init_logger(self):
-    self.init_handler()
-    self.LOG _ ?.gL..('MyNk')
-    self.LOG.aH..(self.stream_handler)
-    sys.excepthook _ self.exception_handler
-    self.LOG.flush _ types.MethodType(self.__flush_log, self.LOG)
-    self.LOG.remove_stream_handler _ types.MethodType(self.__remove_stream_handler, self.LOG)
-    self.LOG.sL..(self.level)
+  ___ init_logger
+    init_handler()
+    LOG _ ?.gL..('MyNk')
+    LOG.aH..(stream_handler)
+    sys.excepthook _ exception_handler
+    LOG.flush _ types.MethodType(__flush_log, LOG)
+    LOG.remove_stream_handler _ types.MethodType(__remove_stream_handler, LOG)
+    LOG.sL..(level)
 
   ___ __flush_log(self, log):
     '''Flush a log'''
-    for handler in log.handlers:
-      if hasattr(handler,'flush'):
+    for handler __ log.handlers:
+      __ hasattr(handler,'flush'):
         handler.flush()
   
   ___ __remove_stream_handler(self, log):
     '''remove stream handler from a given log object'''
     handlers_to_remove _ []
-    for i,handler in enumerate(log.handlers):
-      if handler == self.stream_handler:
+    for i,handler __ enumerate(log.handlers):
+      __ handler == stream_handler:
         handlers_to_remove.append(i)
-    for x in reversed(handlers_to_remove):
+    for x __ reversed(handlers_to_remove):
       del log.handlers[x]
 
   ___ exception_handler(self, exception_type, exception_value, traceback):
     '''Creates an exception handler to replace the standard except hook'''
-    self.stream_handler.sF..(self.exc_formatter)
-    self.LOG.critical("Uncaught exception", exc_info_(exception_type, exception_value, traceback))
-    self.stream_handler.sF..(self.formatter)
+    stream_handler.sF..(exc_formatter)
+    LOG.critical("Uncaught exception", exc_info_(exception_type, exception_value, traceback))
+    stream_handler.sF..(formatter)
 

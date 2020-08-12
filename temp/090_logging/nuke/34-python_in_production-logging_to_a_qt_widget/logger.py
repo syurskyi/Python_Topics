@@ -1,7 +1,7 @@
 ______ ?
 ______ sys
 
-class Logger(object):
+c_ Logger(object):
 
     LOGGER_NAME _ "Zurbrigg"
 
@@ -16,8 +16,8 @@ class Logger(object):
     @classmethod
     ___ logger_obj(cls):
 
-        if not cls._logger_obj:
-            if cls.logger_exists():
+        __ no. cls._logger_obj:
+            __ cls.logger_exists():
                 cls._logger_obj _ ?.gL..(cls.LOGGER_NAME)
             else:
                 cls._logger_obj _ ?.gL..(cls.LOGGER_NAME)
@@ -31,11 +31,11 @@ class Logger(object):
                 stream_handler.sF..(fmt)
                 cls._logger_obj.aH..(stream_handler)
 
-        return cls._logger_obj
+        r_ cls._logger_obj
 
     @classmethod
     ___ logger_exists(cls):
-        return cls.LOGGER_NAME in ?.Logger.manager.loggerDict.keys()
+        r_ cls.LOGGER_NAME __ ?.Logger.manager.loggerDict.keys()
 
     @classmethod
     ___ set_level(cls, level):
@@ -87,14 +87,14 @@ class Logger(object):
         file_handler _ ?.FH..(path)
         file_handler.sL..(level)
 
-        fmt _ ?.F..("[%(asctime)s][%(l..)s] %(m..)s")
+        fmt _ ?.F..("[%(a_t_)s][%(l..)s] %(m..)s")
         file_handler.sF..(fmt)
 
         lg _ cls.logger_obj()
         lg.aH..(file_handler)
 
 
-if  -n == "__main__":
+__  -n == "__main__":
     
     Logger.set_propagate(False)
 

@@ -3,46 +3,46 @@ from unittest ______ TestCase
 from test_npath ______ TempDirectory
 from npath ______ Path, File
 
-class TestFile(TestCase):
+c_ TestFile(TestCase):
 
-    ___ test_open(self):
+    ___ test_open
         td _ TempDirectory()
 
         # Test read
         fh _ File(td.path, 'test_file').open('r')
-        self.assertEqual(fh.read(), "test")
+        assertEqual(fh.read(), "test")
         fh.close()
 
         # Test write
         fh _ File(td.path, 'test_file_2.txt').open('w')
         fh.write("test")
         fh.close()
-        self.assertIn(("test_file_2.txt", 4, "test"), td.contents)
+        assertIn(("test_file_2.txt", 4, "test"), td.contents)
 
         td.clean()
 
 
-    ___ test_touch(self):
+    ___ test_touch
         td _ TempDirectory()
         File(td.path, 'new_file').touch()
-        self.assertIn(("new_file", 0, ""), td.contents)
+        assertIn(("new_file", 0, ""), td.contents)
         td.clean()
 
 
-    ___ test_md5(self):
+    ___ test_md5
         td _ TempDirectory()
-        self.assertEqual(File(td.path, 'test_file').md5.lower(),
+        assertEqual(File(td.path, 'test_file').md5.lower(),
                          '098f6bcd4621d373cade4e832627b4f6')
 
 
-    ___ test_unlink(self):
+    ___ test_unlink
         td _ TempDirectory()
         File(td.path, 'test_file').unlink()
-        self.assertNotIn(("test_file", 4, "test"), td.contents)
+        assertNotIn(("test_file", 4, "test"), td.contents)
         td.clean()
 
 
-    ___ test_size(self):
+    ___ test_size
         td _ TempDirectory()
-        self.assertEqual(File(td.path, 'test_file').size, 4)
+        assertEqual(File(td.path, 'test_file').size, 4)
         td.clean()

@@ -10,7 +10,7 @@ TESTING _ False
 ___
     TESTING _ os.environ['NON_PRODUCTION_CONTEXT']
 _______
-    if platform.system() == 'Darwin':
+    __ platform.system() == 'Darwin':
         application _ r'Nuke\d+\.\d+v\d+.app'
     elif platform.system() == 'Windows':
         application _ r'Nuke\d+\.\d+.exe'
@@ -18,7 +18,7 @@ _______
         r_ RuntimeError('OS {0} is not supported'.format(platform.system()))
 
     match _ re.search(application, sys.executable)
-    if not match:
+    __ no. match:
         r_ RuntimeError('Import the_silo from within Nuke')
     ______ nuke
 
@@ -40,11 +40,11 @@ ___ build(toolbar_True):
     logger.i..('Building The Silo UI...')
     logger.i..('Version: {0}'.format(__version__))
 
-    if not nuke.GUI:
+    __ no. nuke.GUI:
         logger.critical('Nuke is not in GUI mode, aborting UI creation')
-        return
+        r_
 
-    if toolbar:
+    __ toolbar:
         silo_menu _ nuke.toolbar('Nodes').addMenu(silo_name)
     else:
         silo_menu _ nuke.menu('Nuke').addMenu(silo_name)
@@ -52,7 +52,7 @@ ___ build(toolbar_True):
     with open('{0}/silo_data.json'.format(silo_location), 'r') as fp:
         silo_data _ json.load(fp)
 
-    for gizmo_name, gizmo in sorted(silo_data['gizmos'],
+    for gizmo_name, gizmo __ sorted(silo_data['gizmos'],
                                     key_lambda x: x[0]):
         logger.i..('Adding gizmo: {0}'.format(gizmo_name))
         silo_menu.addCommand('Gizmos/{0}'.format(gizmo_name),
@@ -60,7 +60,7 @@ ___ build(toolbar_True):
                              'wrapper.create_gizmo(\'{0}\')'.
                              format(gizmo))
 
-    for script_name, module, func, keys in sorted(silo_data['scripts'],
+    for script_name, module, func, keys __ sorted(silo_data['scripts'],
                                                   key_lambda x: x[0]):
         logger.i..('Adding script: {0}'.format(script_name))
         silo_menu.addCommand('Scripts/{0}'.format(script_name),

@@ -6,9 +6,9 @@ ______ re
 ___ get_file_elements(filename):
     file_elements _ re.split('\\.([\\d|#|%\\dd]*).([a-z]*)', filename)
     basename, file_sequence, ext, _ _ file_elements
-    if not file_sequence:
+    __ no. file_sequence:
         r_ ValueError('No file_sequence found in {}'.format(filename))
-    return (basename, file_sequence, ext)
+    r_ (basename, file_sequence, ext)
 
 
 ___ get_files_list(filepath):
@@ -19,36 +19,36 @@ ___ get_files_list(filepath):
         basename, file_sequence, ext _ get_file_elements(filename)
         pattern _ '{}.{}.{}'.format(basename, '*' * len(file_sequence), ext)
         pattern _ os.path.join(basedir, pattern)
-        files_list _ [ os.path.join(basedir, os.path.basename(file_)) for file_ in glob.glob(pattern) ]
+        files_list _ [ os.path.join(basedir, os.path.basename(file_)) for file_ __ glob.glob(pattern) ]
     except ValueError:
         files_list.append(filepath)
 
-    return sorted(files_list)
+    r_ sorted(files_list)
 
 
 ___ get_frame_ranges(filepath):
     files_list _ get_files_list(filepath)
-    if not files_list:
-        return (0, 0)
+    __ no. files_list:
+        r_ (0, 0)
     _, frame_in, _ _ get_file_elements(files_list[0])
     _, frame_out, _ _ get_file_elements(files_list[-1])
-    return (int(frame_in), int(frame_out))
+    r_ (int(frame_in), int(frame_out))
 
 
 ___ scan_for_nukescripts(path, ignore):
     nukescripts _ []
-    if not ignore:
+    __ no. ignore:
         ignore _ ''
-    ignore_list _ [ ignore_file.strip() for ignore_file in ignore.split(',') if ignore_file ]
-    for root, dirs, files in os.walk(path):
-        for name in files:
-            if os.path.splitext(name)[1] == '.nk':
+    ignore_list _ [ ignore_file.strip() for ignore_file __ ignore.split(',') __ ignore_file ]
+    for root, dirs, files __ os.walk(path):
+        for name __ files:
+            __ os.path.splitext(name)[1] == '.nk':
                 ignore_file_ _ 0
-                for ignore_file in ignore_list:
-                    if ignore_file in name:
+                for ignore_file __ ignore_list:
+                    __ ignore_file __ name:
                         ignore_file_ +_ 1
 
-                if not ignore_file_:
+                __ no. ignore_file_:
                     nukescripts.append(os.path.join(root, name))
 
-    return nukescripts
+    r_ nukescripts

@@ -3,15 +3,15 @@ from .Path ______ Path
 
 from .FileObject ______ FileObject
 
-class InvalidFileObject(FileObject):
+c_ InvalidFileObject(FileObject):
     '''When we get a path that doesn't actually point to areadl object'''
 
 
     @property
-    ___ is_file(self):
-        return False
+    ___ is_file
+        r_ False
 
 
     @property
-    ___ is_dir(self):
-        return False
+    ___ is_dir
+        r_ False
