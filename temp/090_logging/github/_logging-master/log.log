@@ -1,0 +1,42 @@
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:testFunktion:run testFunktion
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:testFunktion:run testFunktion
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:testFunktion:run testFunktion
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:testFunktion:run testFunktion
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+WARNING:root:warning
+INFO:root:info
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:testFunktion:run testFunktion
+DEBUG:testFunktion:run testFunktion

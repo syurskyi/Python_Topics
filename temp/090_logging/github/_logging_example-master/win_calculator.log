@@ -1,0 +1,7 @@
+
+2018-05-31 17:28:07,305 — win_calculator — DEBUG — a debug message
+2018-05-31 17:28:07,305 — win_calculator — ERROR — a debug message
+2018-05-31 17:28:07,305 — win_calculator — INFO — a debug message
+2018-05-31 17:28:07,306 — win_calculator — CRITICAL — a debug message
+2018-05-31 17:30:54,708 — win_calculator — ERROR — a debug message
+NoneType: None
