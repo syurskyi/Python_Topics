@@ -1,6 +1,6 @@
 ______ math
-from collections ______ OrderedDict
-from log_config ______ get_logger
+____ collections ______ OrderedDict
+____ log_config ______ get_logger
 
 __metaclass__ _ type
 
@@ -97,11 +97,11 @@ ___ calculate_winning(symbol_grid, multiplier_1, wild_multiplier_{}):
             col_offset _ []
             sym_found _ False
             for row __ range(len(symbol_grid[col])):
-                __ symbol_grid[col][row] == symbol:
+                __ symbol_grid[col][row] __ symbol:
                     col_offset.append([col,row])
                     sym_found _ True
 
-            __ row == len(symbol_grid[col])-1:
+            __ row __ len(symbol_grid[col])-1:
                 __ len(col_offset) > 0:
                     sym_data['offset'].append(col_offset)
             
@@ -127,10 +127,10 @@ ___ win_amount(wins):
     r_ amount
 
 
-__  -n=='__main__':
+__  -n__'__main__':
     logger _ get_logger("win_calculator")
     logger.d..("a d.. m..")
-    logger.error("a d.. m..")
+    logger.e..("a d.. m..")
     logger.i..("a d.. m..")
     logger.critical("a d.. m..")
 

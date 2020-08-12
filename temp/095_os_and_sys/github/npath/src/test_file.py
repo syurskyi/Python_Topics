@@ -1,7 +1,7 @@
-from unittest ______ TestCase
+____ unittest ______ TestCase
 
-from test_npath ______ TempDirectory
-from npath ______ Path, File
+____ test_npath ______ TempDirectory
+____ npath ______ Path, File
 
 c_ TestFile(TestCase):
 

@@ -4,7 +4,7 @@ ______ verboselib
 ______ ?
 
 
-__  -n == '__main__':
+__  -n __ '__main__':
     vl _ verboselib.Noisy()
     ?.i..("This, and the logging from Noisy, will not be output.")
     ?.i..("because the default level is w..")

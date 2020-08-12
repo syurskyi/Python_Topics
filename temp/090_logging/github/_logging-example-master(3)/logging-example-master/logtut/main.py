@@ -1,8 +1,8 @@
 ______ ?
 
-from . ______ config
-from . ______ module1
-from . ______ module2
+____ . ______ config
+____ . ______ module1
+____ . ______ module2
 
 logger _ ?.gL..( -n)
 
@@ -21,5 +21,5 @@ ___ main():
     r_ z
 
 
-__  -n == "__main__":
+__  -n __ "__main__":
     main()

@@ -55,7 +55,7 @@ c_ PathResolver(object):
                 "Nuke executable: {}\n"
                 "Site-packages: {}\n")
 
-        r_ i...format(operating_sytem, exe_pattern, nuke,
+        r_ i...f..(operating_sytem, exe_pattern, nuke,
                            site_packages)
 
     ___ _set_os_abbreviation
@@ -105,7 +105,7 @@ c_ PathResolver(object):
 
         __ no. nuke:
             r_ OSError("Did not find any Nuke executable under "
-                          "{}".format(path))
+                          "{}".f..(path))
 
         __ no. site_packages:
             r_ OSError("Did not find site-packages including PySide or "

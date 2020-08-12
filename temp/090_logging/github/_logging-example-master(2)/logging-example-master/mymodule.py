@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from log_conf ______ Logger
+____ log_conf ______ Logger
 
 
 Logger.logger.i..('Hello from mymodule')

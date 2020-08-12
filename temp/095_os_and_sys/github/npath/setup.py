@@ -1,4 +1,4 @@
-from distutils.core ______ setup
+____ distutils.core ______ setup
 
 setup(
     name_'npath',

@@ -9,28 +9,28 @@
 
 # logger relies on: constants
 ______ ?
-from logger ______ MyNkLogger
+____ logger ______ MyNkLogger
 LOG _ MyNkLogger().LOG
 
 # constants relies on: exceptions, LOG, internal
 ______ constants
 
 # const relies on: constants, exceptions, internal
-from const ______ const, set_const
+____ const ______ const, set_const
 
 # config relies on: constants
-from config ______ MyNkConfig
+____ config ______ MyNkConfig
 config _ MyNkConfig().config
 
 # gui relies on: constants, config
-from gui ______ MyNkGui
+____ gui ______ MyNkGui
 gui _ MyNkGui()
 
 # formats relies on: constants, config
 ______ formats
 
 # tools relies on: constants, config
-from tools ______ MyNkTools
+____ tools ______ MyNkTools
 tools _ MyNkTools()
 
 # knobs relies on: constants, config

@@ -27,7 +27,7 @@ ___ run():
     log.d..('test d.. m..')
     log.i..('test i.. m..')
     log.w..('test w.. m..')
-    log.error('test error m..')
+    log.e..('test error m..')
     log.critical('test critical m..')
 
     example_package.example_module.do_stuff()
@@ -56,15 +56,15 @@ ___ set_debug_verbosity(verbosity_counter):
 
     debug_handler _ ?.root.handlers[1]
 
-    __ verbosity_counter == 0:
+    __ verbosity_counter __ 0:
         ?.root.removeHandler(debug_handler)
-    elif verbosity_counter == 1:
+    elif verbosity_counter __ 1:
         debug_handler.level _ ?.I..
-    elif verbosity_counter == 2:
+    elif verbosity_counter __ 2:
         debug_handler.level _ ?.D..
     else:
         debug_handler.level _ ?.NOTSET
 
 
-__  -n == '__main__':
+__  -n __ '__main__':
     run()

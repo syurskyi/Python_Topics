@@ -8,9 +8,9 @@
 
 ______ nuke
 
-from . ______ constants as _c
-from . ______ LOG
-from . ______ config
+____ . ______ constants __ _c
+____ . ______ LOG
+____ . ______ config
 
 LOG.i..(' [MyNk] initializing custom user image formats')
 
@@ -23,23 +23,23 @@ ___ add_format(W, H, x, y, r, t, pa, format_name):
       r _ W __ r is None else r
       t _ H __ t is None else t
       pa _ 1 __ pa is None else pa
-      format_str _ u'{0} {1} {2} {3} {4} {5} {6} {7}'.format(W, H, x, y, r, t, pa, format_name)
+      format_str _ u'{0} {1} {2} {3} {4} {5} {6} {7}'.f..(W, H, x, y, r, t, pa, format_name)
       nuke.addFormat(format_str)
-      msg _ u'Added format: {0}'.format(format_str)
+      msg _ u'Added format: {0}'.f..(format_str)
       LOG.d..(msg)
 
 
 ___ add_formats_from_dict(defaults_dict):
   '''Add nuke formats from an iterated dict of formats'''
-  for format_name, format __ defaults_dict.iteritems():
-    __ format.get('active', False) __ ['1', 'true', 'True']:
-      W _ format.get('W', None)
-      H _ format.get('H', None)
-      x _ format.get('x', 0)
-      y _ format.get('y', 0)
-      r _ format.get('r', W)
-      t _ format.get('r', H)
-      pa _ format.get('pa', 1)
+  for format_name, f.. __ defaults_dict.iteritems():
+    __ f...get('active', False) __ ['1', 'true', 'True']:
+      W _ f...get('W', None)
+      H _ f...get('H', None)
+      x _ f...get('x', 0)
+      y _ f...get('y', 0)
+      r _ f...get('r', W)
+      t _ f...get('r', H)
+      pa _ f...get('pa', 1)
       add_format(W, H, x, y, r, t, pa, format_name)
 
 

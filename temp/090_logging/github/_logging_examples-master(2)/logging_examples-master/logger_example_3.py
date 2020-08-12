@@ -4,7 +4,7 @@ ______ argparse
 ______ ?
 ______ sys
 
-from ex3_sub_module ______ foo
+____ ex3_sub_module ______ foo
 
 
 ___ simple_parser():
@@ -36,7 +36,7 @@ ___ simple_parser():
     r_ args.A, args.B, args.C
 
 
-__  -n == '__main__':
+__  -n __ '__main__':
     args _ simple_parser()
     print(foo(*args))
     

@@ -1,8 +1,8 @@
 ______ sys
 
-from PySide2 ______ QtWidgets
+____ PySide2 ______ QtWidgets
 
-from qt_logger ______ QtLogger
+____ qt_logger ______ QtLogger
 
 
 c_ StandaloneWindow(QtWidgets.QWidget):
@@ -33,13 +33,13 @@ c_ StandaloneWindow(QtWidgets.QWidget):
         QtLogger.signal_handler().emitter.message_logged.connect(plain_text_edit.appendPlainText)
 
     ___ print_warning
-        QtLogger.warning("warning m..")
+        QtLogger.w..("warning m..")
 
     ___ print_error
-        QtLogger.error("error m..")
+        QtLogger.e..("error m..")
 
 
-__  -n == "__main__":
+__  -n __ "__main__":
     # Create the main Qt application
     app _ QtWidgets.QApplication(sys.argv)
 

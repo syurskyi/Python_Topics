@@ -1,8 +1,8 @@
 ______ ?
 
-from PySide2 ______ QtCore
+____ PySide2 ______ QtCore
 
-from logger ______ Logger
+____ logger ______ Logger
 
 
 c_ QtSignaler(QtCore.QObject):
@@ -16,7 +16,7 @@ c_ QtSignalHandler(?.Handler):
         emitter _ QtSignaler()
 
     ___ emit(self, record):
-        msg _ format(record)
+        msg _ f..(record)
         emitter.message_logged.emit(msg)
 
 
@@ -46,6 +46,6 @@ c_ QtLogger(Logger):
 
 
 
-__  -n == "__main__":
+__  -n __ "__main__":
 
-    QtLogger.error("error m..")
+    QtLogger.e..("error m..")

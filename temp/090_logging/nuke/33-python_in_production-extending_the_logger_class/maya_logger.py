@@ -1,4 +1,4 @@
-from logger ______ Logger
+____ logger ______ Logger
 
 
 c_ MayaLogger(Logger):
@@ -10,12 +10,12 @@ c_ MayaLogger(Logger):
     PROPAGATE_DEFAULT _ False
     
     
-__  -n == "__main__":
+__  -n __ "__main__":
 
     MayaLogger.d..("d.. m..")
     MayaLogger.i..("i.. m..")
-    MayaLogger.warning("warning m..")
-    MayaLogger.error("error m..")
+    MayaLogger.w..("warning m..")
+    MayaLogger.e..("error m..")
     
     
     

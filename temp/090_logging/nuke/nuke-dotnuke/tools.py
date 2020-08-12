@@ -17,11 +17,11 @@ ______ inspect
 
 ______ nuke
 
-from . ______ constants as _c
-from . ______ LOG
+____ . ______ constants __ _c
+____ . ______ LOG
 
 # checkout https://github.com/dsc/bunch
-from .bunch ______ Bunch
+____ .bunch ______ Bunch
 
 MYNK_TOOLS_PATH _ os.path.join(_c.DOTNUKE_PATH, 'tools', 'python')
 
@@ -71,7 +71,7 @@ c_ MyNkTools(object):
       dest _ python
     # we want a filesystem path so check for that first
     __ os.path.isdir(path):
-      LOG.d..(u'Loading tools from path: {0}'.format(path))
+      LOG.d..(u'Loading tools from path: {0}'.f..(path))
       # add path to system path
       sys.path.append(path)
       search_re _ re.compile(".*\.py$", re.IGNORECASE)
@@ -87,9 +87,9 @@ c_ MyNkTools(object):
             ___
               module _ imp.load_source(module_name, file_path)
               setattr(dest, module_name, module)
-              LOG.d..(u'Loaded Module [{0}]: {1}'.format(module_name, file_path))
-            except Exception, detail:
-              LOG.warning(u'Module [{0}] could not be loaded: {1}\n{2}'.format(module_name, file_path, detail))
+              LOG.d..(u'Loaded Module [{0}]: {1}'.f..(module_name, file_path))
+            _____ E.., detail:
+              LOG.w..(u'Module [{0}] could not be loaded: {1}\n{2}'.f..(module_name, file_path, detail))
           # __ file is directory (org or package)
           elif os.path.isdir(file_path):
             path_check _ os.path.join(file_path, "__init__.py" )
@@ -98,14 +98,14 @@ c_ MyNkTools(object):
               ___
                 package _ __import__(package_name)
                 setattr(dest, package_name, package)
-                LOG.d..(debug_msg _ u'Loaded Package [{0}]: {1}'.format(package_name, file_path))
-              except Exception, detail:
-                LOG.warning(u'Package [{0}] could not be loaded from path: {1}\n{2}'.format(package_name, file_path, detail))
+                LOG.d..(debug_msg _ u'Loaded Package [{0}]: {1}'.f..(package_name, file_path))
+              _____ E.., detail:
+                LOG.w..(u'Package [{0}] could not be loaded from path: {1}\n{2}'.f..(package_name, file_path, detail))
             else:
               dir_name _ os.path.splitext(file_name)[0]
               setattr(dest, dir_name, Bunch())
               new_path _ os.path.join(path, dir_name)
-              add_python_tools_from_path(new_path, eval('dest.{0}'.format(dir_name)))
+              add_python_tools_from_path(new_path, eval('dest.{0}'.f..(dir_name)))
   
   ___ list_plugins
     '''

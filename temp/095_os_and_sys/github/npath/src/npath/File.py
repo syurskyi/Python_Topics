@@ -1,9 +1,9 @@
 ______ os
 ______ hashlib
 
-from .Path ______ Path
+____ .Path ______ Path
 
-from .FileObject ______ FileObject
+____ .FileObject ______ FileObject
 
 c_ File(FileObject):
 
@@ -27,14 +27,14 @@ c_ File(FileObject):
 
 
     ___ touch
-        with open(str(path), 'a') as fh:
+        with open(str(path), 'a') __ fh:
             pass
 
 
     @property
     ___ md5
         hasher _ hashlib.md5()
-        with open(str(path), 'rb') as fh:
+        with open(str(path), 'rb') __ fh:
             data _ fh.read(4096)
             hasher.update(data)
 

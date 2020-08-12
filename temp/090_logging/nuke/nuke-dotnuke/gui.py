@@ -16,14 +16,14 @@
 ______ re
 ______ os
 ______ shutil
-from types ______ ModuleType
+____ types ______ ModuleType
 ______ inspect
 
 ______ nuke
 
-from . ______ constants as _c
-from . ______ LOG
-from . ______ config
+____ . ______ constants __ _c
+____ . ______ LOG
+____ . ______ config
 
 ______ mynk
 
@@ -36,8 +36,8 @@ c_ MyNkGui(object):
     ___
       tool _ eval(tool_str)
       menus _ getattr(tool, '__menus__' ,None)
-    except AttributeError:
-      LOG.warning(' [MyNk] tool has no __menus__ attribute: {0}'.format(tool_str))
+    _____ AttributeError:
+      LOG.w..(' [MyNk] tool has no __menus__ attribute: {0}'.f..(tool_str))
     else:
       __ menus is None:
         r_
@@ -45,7 +45,7 @@ c_ MyNkGui(object):
         for key,val __ menus.iteritems():
           title _ key
           __ val:
-            cmd _ val['cmd'] __ val['cmd'].startswith('nuke') else '{0}.{1}'.format(tool_str, val['cmd'])
+            cmd _ val['cmd'] __ val['cmd'].startswith('nuke') else '{0}.{1}'.f..(tool_str, val['cmd'])
             hotkey _ val['hotkey']
             icon _ val['icon']
             for menu __ [menu,nuke_toolbar]:
@@ -55,7 +55,7 @@ c_ MyNkGui(object):
             
   ___ add_toolbunch_to_menu(self, toolbunch_str):
     for key,val __ eval(toolbunch_str).toDict().iteritems():
-      dottedpath _ '{0}.{1}'.format(toolbunch_str,key)
+      dottedpath _ '{0}.{1}'.f..(toolbunch_str,key)
       __ inspect.ismodule(val):
         add_tool_menus(dottedpath)
       else:

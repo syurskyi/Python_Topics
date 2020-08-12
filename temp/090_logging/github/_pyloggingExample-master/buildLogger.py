@@ -23,7 +23,7 @@ c_ setLogger():
     ___ gL..
         r_ logger
 
-__  -n == '__main__':
+__  -n __ '__main__':
     sLog _ setLogger()
     logger _ sLog.gL..()
     

@@ -26,10 +26,10 @@ c_ MyNkLogger(object):
                  __ os.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] \
                  else ?.I..
     exc_format _ '%(a_t_)s %(l..)s: %(m..)s'
-    format _ '%(a_t_)s %(l..)s %(filename)s:%(l_l_..)d %(m..)s'
+    f.. _ '%(a_t_)s %(l..)s %(filename)s:%(l_l_..)d %(m..)s'
     date_format _ '%Y-%m-%d %H:%M:%S'
     exc_formatter _ ?.F..(exc_format, date_format)
-    formatter _ ?.F..(format, date_format)
+    formatter _ ?.F..(f.., date_format)
     init_logger()
 
   ___ init_handler
@@ -56,7 +56,7 @@ c_ MyNkLogger(object):
     '''remove stream handler from a given log object'''
     handlers_to_remove _ []
     for i,handler __ enumerate(log.handlers):
-      __ handler == stream_handler:
+      __ handler __ stream_handler:
         handlers_to_remove.append(i)
     for x __ reversed(handlers_to_remove):
       del log.handlers[x]

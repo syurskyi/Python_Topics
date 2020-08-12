@@ -1,4 +1,4 @@
-from maya_logger ______ MayaLogger
+____ maya_logger ______ MayaLogger
 
 
 c_ PlayblastLogger(MayaLogger):
@@ -7,6 +7,6 @@ c_ PlayblastLogger(MayaLogger):
     
     
     
-__  -n == "__main__":
+__  -n __ "__main__":
 
-    PlayblastLogger.error("d.. m..")
+    PlayblastLogger.e..("d.. m..")

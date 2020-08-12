@@ -8,9 +8,9 @@
 
 ______ nuke
 
-from . ______ constants as _c
-from . ______ LOG
-from . ______ config
+____ . ______ constants __ _c
+____ . ______ LOG
+____ . ______ config
 
 LOG.i..(' [MyNk] initializing custom user knob defaults')
 
@@ -18,8 +18,8 @@ LOG.i..(' [MyNk] initializing custom user knob defaults')
 ___ add_knob_default(node, knob, default):
   '''Add a knob default for a given node'''
   knob_default_{ 'node': node, 'knob': knob, 'default': default }
-  nuke.knobDefault(u'{node}.{knob}'.format(**knob_default) , '{default}'.format(**knob_default))
-  LOG.d..(u'Added knob default: {node}.{knob} = {default}'.format(**knob_default))
+  nuke.knobDefault(u'{node}.{knob}'.f..(**knob_default) , '{default}'.f..(**knob_default))
+  LOG.d..(u'Added knob default: {node}.{knob} = {default}'.f..(**knob_default))
 
 
 ___ add_knob_defaults_from_dict(defaults_dict):

@@ -13,15 +13,15 @@ c_ Path(object):
         # Collect relative_to off first path parm __ we can
         ___
             __relative_to _ parms[0].__relative_to
-        except AttributeError:
+        _____ AttributeError:
             __relative_to _ None
 
         for k, v __ list(kwargs.items()):
-            __ k == 'relative_to':
+            __ k __ 'relative_to':
                 __ v is no. None:
                     __relative_to _ Path(v)
             else:
-                r_ Exception("Unknown keyword argument: s" % (k))
+                r_ E..("Unknown keyword argument: s" % (k))
 
 
     ___ __str__
@@ -81,10 +81,10 @@ c_ Path(object):
         :return:
         '''
         ___
-             r_ other._compare_str == _compare_str
-        except AttributeError:
+             r_ other._compare_str __ _compare_str
+        _____ AttributeError:
             a _ Path.normalize_path_sep(str(other))
-            r_ a == _compare_str
+            r_ a __ _compare_str
 
 
     ___ __hash__
@@ -176,7 +176,7 @@ c_ Path(object):
     @property
     ___ splitext
         prefix, ext _ os.path.splitext(__path)
-        __ ext is no. None and ext[0] == '.':
+        __ ext is no. None and ext[0] __ '.':
             ext _ ext[1:]
         r_ prefix, ext
 
@@ -218,9 +218,9 @@ c_ Path(object):
     ___ samefile(self, other):
         ___
             r_ os.path.samefile(effective_path_str, str(other))
-        except AttributeError:
+        _____ AttributeError:
             r_ AttributeError("os.path.samefile() only available for Unix")
-        except FileNotFoundError:
+        _____ FileNotFoundError:
             # Keeping this behaviour since I think this is how Python 2 worked.
             # May let this exception bubble up in the future __ file doesn't exist
             r_ False
@@ -236,7 +236,7 @@ c_ Path(object):
     ___ startswith(self, path):
         path_parts _ Path(path).split()
         my_parts _ split()
-        r_ my_parts[:len(path_parts)] == path_parts
+        r_ my_parts[:len(path_parts)] __ path_parts
 
 
     @property

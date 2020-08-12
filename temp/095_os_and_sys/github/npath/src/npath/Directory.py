@@ -1,6 +1,6 @@
-from .Path ______ Path
+____ .Path ______ Path
 
-from .FileObject ______ FileObject
+____ .FileObject ______ FileObject
 
 c_ Directory(FileObject):
 

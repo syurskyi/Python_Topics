@@ -195,7 +195,7 @@ c_ NukeStubsGenerator(object):
 
     ___ save
         """Saves the generated stubs string to disk"""
-        with open(output_file, 'w') as f:
+        with open(output_file, 'w') __ f:
             f.write(contents)
 
         logger.i..('Wrote to %s', output_file)
@@ -208,5 +208,5 @@ ___ generate(directory_None):
     stubs _ NukeStubsGenerator(directory)
     r_ stubs
 
-__  -n == '__main__':
+__  -n __ '__main__':
     print generate()

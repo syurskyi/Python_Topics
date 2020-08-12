@@ -58,14 +58,14 @@ c_ Logger(object):
         lg.i..(msg, *args, **kwargs)
 
     @classmethod
-    ___ warning(cls, msg, *args, **kwargs):
+    ___ w..(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
-        lg.warning(msg, *args, **kwargs)
+        lg.w..(msg, *args, **kwargs)
 
     @classmethod
-    ___ error(cls, msg, *args, **kwargs):
+    ___ e..(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
-        lg.error(msg, *args, **kwargs)
+        lg.e..(msg, *args, **kwargs)
 
     @classmethod
     ___ critical(cls, msg, *args, **kwargs):
@@ -94,14 +94,14 @@ c_ Logger(object):
         lg.aH..(file_handler)
 
 
-__  -n == "__main__":
+__  -n __ "__main__":
     
     Logger.set_propagate(False)
 
     Logger.d..("d.. m..")
     Logger.i..("i.. m..")
-    Logger.warning("warning m..")
-    Logger.error("error m..")
+    Logger.w..("warning m..")
+    Logger.e..("error m..")
     Logger.critical("critical m..")
 
 

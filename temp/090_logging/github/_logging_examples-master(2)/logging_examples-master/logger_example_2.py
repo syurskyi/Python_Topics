@@ -30,7 +30,7 @@ ___ foo(A, B, C):
     r_ result
     
     
-__  -n == '__main__':
+__  -n __ '__main__':
     args _ simple_parser()
     print(foo(*args))
     

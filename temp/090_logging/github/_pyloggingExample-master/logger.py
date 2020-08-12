@@ -1,4 +1,4 @@
-______ ? as logcuBABA
+______ ? __ logcuBABA
 
     
 ___ whoami():
@@ -15,5 +15,5 @@ logcuBABA.basicConfig(
 foo()
 
 
-__  -n == '__main__':
+__  -n __ '__main__':
     

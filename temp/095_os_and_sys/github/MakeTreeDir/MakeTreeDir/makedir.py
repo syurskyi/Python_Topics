@@ -25,7 +25,7 @@ c_ MAKETREEDIR:
 			dirs_dir_path.split(sep)
 
 			### for linux abs path
-			__ len(dirs[0])==0:
+			__ len(dirs[0])__0:
 				dirs[1]_sep+dirs[1]
 				dirs_dirs[1:]
 
@@ -41,7 +41,7 @@ c_ MAKETREEDIR:
 				__ no. os.path.exists(directory):
 					os.makedirs(directory)
 
-		except Exception as e:
+		_____ E.. __ e:
 			r_ e
 
 		r_ 0

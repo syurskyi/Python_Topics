@@ -8,7 +8,7 @@ logger _ ?.gL..( -n)
 
 
 ___ bar():
-    logger.warning("Calling bar")
+    logger.w..("Calling bar")
 
 
 ___ exc_logging():
@@ -16,11 +16,11 @@ ___ exc_logging():
 
     ___
         c _ a / b
-    except ZeroDivisionError:
+    _____ ZeroDivisionError:
         logger.critical("Exception occurred", exc_info_True)
 
 
-__  -n == '__main__':
+__  -n __ '__main__':
     bar()
     submodule.foo()
     exc_logging()

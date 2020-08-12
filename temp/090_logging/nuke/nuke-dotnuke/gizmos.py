@@ -107,7 +107,7 @@ c_ GizmoPathManager(object):
         _recursiveAddGizmoPaths(subPath, subData)
       elif nuke.GUI and (no. foldersOnly) and os.path.isfile(subPath):
         name, ext _ os.path.splitext(subItem)
-        __ ext == '.gizmo':
+        __ ext __ '.gizmo':
           __ re.match('[0-9]{3}', name[-3:]):
             gizmoName _ name[:-4]
             version _ name[-3:]

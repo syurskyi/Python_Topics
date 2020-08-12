@@ -7,7 +7,7 @@ ___ get_file_elements(filename):
     file_elements _ re.split('\\.([\\d|#|%\\dd]*).([a-z]*)', filename)
     basename, file_sequence, ext, _ _ file_elements
     __ no. file_sequence:
-        r_ ValueError('No file_sequence found in {}'.format(filename))
+        r_ ValueError('No file_sequence found in {}'.f..(filename))
     r_ (basename, file_sequence, ext)
 
 
@@ -17,10 +17,10 @@ ___ get_files_list(filepath):
     files_list _ []
     ___
         basename, file_sequence, ext _ get_file_elements(filename)
-        pattern _ '{}.{}.{}'.format(basename, '*' * len(file_sequence), ext)
+        pattern _ '{}.{}.{}'.f..(basename, '*' * len(file_sequence), ext)
         pattern _ os.path.join(basedir, pattern)
         files_list _ [ os.path.join(basedir, os.path.basename(file_)) for file_ __ glob.glob(pattern) ]
-    except ValueError:
+    _____ ValueError:
         files_list.append(filepath)
 
     r_ sorted(files_list)
@@ -42,7 +42,7 @@ ___ scan_for_nukescripts(path, ignore):
     ignore_list _ [ ignore_file.strip() for ignore_file __ ignore.split(',') __ ignore_file ]
     for root, dirs, files __ os.walk(path):
         for name __ files:
-            __ os.path.splitext(name)[1] == '.nk':
+            __ os.path.splitext(name)[1] __ '.nk':
                 ignore_file_ _ 0
                 for ignore_file __ ignore_list:
                     __ ignore_file __ name:

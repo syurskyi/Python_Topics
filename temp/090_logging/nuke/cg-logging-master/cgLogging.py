@@ -50,14 +50,14 @@ ______ ?
 ___
 	______ maya
 	_in_maya _ True
-except Exception:
+_____ E..:
 	_in_maya _ False
 
 ## Load Nuke:
 ___
 	______ nuke
 	_in_nuke _ True
-except Exception:
+_____ E..:
 	_in_nuke _ False
 
 
@@ -65,14 +65,14 @@ except Exception:
 ___
 	______ nuke
 	_in_nuke _ True
-except Exception:
+_____ E..:
 	_in_nuke _ False
 
 ## Load Mobu:
 ___
 	______ pyfbsdk
 	_in_mobu _ True
-except Exception:
+_____ E..:
 	_in_mobu _ False
 
 ## -----------------------------------------------------------------------------
@@ -133,36 +133,36 @@ c_ Logger():
 			r_
 
 		# Format
-		format  _ ?.F..( MSG_FORMAT, DATE_FORMAT )
+		f..  _ ?.F..( MSG_FORMAT, DATE_FORMAT )
 
 		# Shell:
 		__ shell:
 			stream_hdlr _ ShellHandler()
-			stream_hdlr.sF..( format )
+			stream_hdlr.sF..( f.. )
 			__logger.aH..( stream_hdlr )
 
 		# File:
 		__ file:
 			file_hdlr _ ?.FH..(file)
-			file_hdlr.sF..( format )
+			file_hdlr.sF..( f.. )
 			__logger.aH..( file_hdlr )
 
 		# Maya:
 		__ maya and _in_maya:
 			maya_hdlr _ MayaHandler()
-			maya_hdlr.sF..( format )
+			maya_hdlr.sF..( f.. )
 			__logger.aH..( maya_hdlr )
 
 		# Nuke:
 		__ nuke and _in_nuke:
 			nuke_hdlr _ NukeHandler()
-			nuke_hdlr.sF..( format )
+			nuke_hdlr.sF..( f.. )
 			__logger.aH..( nuke_hdlr )
 
 		# Mobu:
 		__ mobu and _in_mobu:
 			mobu_hdlr _ MobuHandler()
-			mobu_hdlr.sF..( format )
+			mobu_hdlr.sF..( f.. )
 			__logger.aH..( mobu_hdlr )
 
 	___ __repr__
@@ -187,8 +187,8 @@ c_ Logger():
 	___ i..(self, msg):
 		__logger.i..(msg)
 
-	___ warning(self, msg):
-		__logger.warning(msg)
+	___ w..(self, msg):
+		__logger.w..(msg)
 
 	___ fatal(self, msg):
 		__logger.fatal(msg)
@@ -212,11 +212,11 @@ c_ ShellHandler(?.Handler):
 	___ emit(self, record):
 
 		___
-			sys.__stdout__.write( "%s\n" %format(record) )
-		except IOError:
+			sys.__stdout__.write( "%s\n" %f..(record) )
+		_____ IOError:
 			## MotionBuilder is doing something funky with python,
 			## so sometimes ( not always ) is blocked from writting:
-			sys.stdout.write( "%s\n" %format(record) )
+			sys.stdout.write( "%s\n" %f..(record) )
 
 
 ## -----------------------------------------------------------------------------
@@ -234,10 +234,10 @@ c_ MayaHandler(?.Handler):
 	___ emit(self, record):
 
 		# Formated m..:
-		msg _ format(record)
+		msg _ f..(record)
 
-		__ record.funcName == "warning":
-			maya.cmds.warning( "\n"+msg )
+		__ record.funcName __ "warning":
+			maya.cmds.w..( "\n"+msg )
 
 		elif record.funcName __ [ "critical", "fatal" ]:
 
@@ -245,7 +245,7 @@ c_ MayaHandler(?.Handler):
 			sys.stdout.write("\n"+msg+"\n")
 
 			## Open dialog __ not in batch mode:
-			__ maya.cmds.about( batch_True ) == False:
+			__ maya.cmds.about( batch_True ) __ False:
 
 				maya.cmds.confirmDialog(title   _ "A %s have accure" %record.funcName,
 										m.. _ record.m..,
@@ -271,13 +271,13 @@ c_ NukeHandler(?.Handler):
 	___ emit(self, record):
 
 		# Formated m..:
-		msg _ format(record)
+		msg _ f..(record)
 
-		__ record.funcName == "warning":
-			nuke.warning(msg)
+		__ record.funcName __ "warning":
+			nuke.w..(msg)
 
 		elif record.funcName __ [ "critical", "fatal" ]:
-			nuke.error(msg)
+			nuke.e..(msg)
 			nuke.m..(record.m..)
 
 		else:
@@ -296,12 +296,12 @@ c_ MobuHandler(?.Handler):
 	___ emit(self, record):
 
 		# Formated m..:
-		msg _ format(record)
+		msg _ f..(record)
 
-		__ record.funcName == "warning":
+		__ record.funcName __ "warning":
 			sys.stdout.write(msg+"\n")
 
-		elif record.funcName == "error":
+		elif record.funcName __ "error":
 			sys.stderr.write(msg+"\n")
 
 		elif record.funcName __ [ "critical", "fatal" ]:
@@ -315,13 +315,13 @@ c_ MobuHandler(?.Handler):
 ## -----------------------------------------------------------------------------
 #  -n
 ## -----------------------------------------------------------------------------
-__  -n == '__main__':
+__  -n __ '__main__':
 
 	log _ gL..( "logger_name", shell_True )
 	log.sL..( ?.D.. )
 	log.d..('d.. msg')
 	log.i..('i.. msg')
-	log.warning('warning msg')
+	log.w..('warning msg')
 	log.fatal('fatal msg')
 
 

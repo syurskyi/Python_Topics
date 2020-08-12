@@ -1,4 +1,4 @@
-from setuptools ______ setup, find_packages
+____ setuptools ______ setup, find_packages
 
 setup(
     name_"logtut",

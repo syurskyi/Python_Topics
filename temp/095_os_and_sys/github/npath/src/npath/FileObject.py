@@ -1,6 +1,6 @@
-from abc ______ ABCMeta, abstractmethod, abstractproperty
+____ abc ______ ABCMeta, abstractmethod, abstractproperty
 
-from . ______ Path
+____ . ______ Path
 
 
 c_ FileObject(Path):

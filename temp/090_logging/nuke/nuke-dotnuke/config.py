@@ -11,9 +11,9 @@ ______ shutil
 
 ______ nuke
 
-from configobj ______ ConfigObj
-from . ______ constants as _c
-from . ______ LOG
+____ configobj ______ ConfigObj
+____ . ______ constants __ _c
+____ . ______ LOG
 
 
 c_ MyNkConfig(object):

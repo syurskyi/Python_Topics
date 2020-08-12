@@ -1,7 +1,7 @@
 
-from .Path ______ Path
+____ .Path ______ Path
 
-from .FileObject ______ FileObject
+____ .FileObject ______ FileObject
 
 c_ InvalidFileObject(FileObject):
     '''When we get a path that doesn't actually point to areadl object'''

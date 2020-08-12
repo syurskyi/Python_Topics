@@ -13,8 +13,8 @@ ______ inspect
 ______ sys
 ______ errno
 
-from . ______ LOG
-from .internal ______ _MODULE_PATH
+____ . ______ LOG
+____ .internal ______ _MODULE_PATH
 
 ___
   # Set the default unicode charset to be utf8
@@ -31,8 +31,8 @@ ___
   
   # If we want more debugging set the MYNK_DEVEL environment variable
   MYNK_DEVEL _ True __ os.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] else False
-  LOG.d..(u'MYNK_DEVEL attribute is {0}'.format(MYNK_DEVEL) )
+  LOG.d..(u'MYNK_DEVEL attribute is {0}'.f..(MYNK_DEVEL) )
 
-except ValueError, e:
-  LOG.error(errno.EINVAL, e.m..)
+_____ ValueError, e:
+  LOG.e..(errno.EINVAL, e.m..)
 

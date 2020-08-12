@@ -35,7 +35,7 @@ Modified by Bjorn Lindqvist <bjourne@gmail.com>, January 2006
 #     it doesn't play nice with other types that implement
 #     __radd__().  Test this.
 
-from snitcher ______ snitch
+____ snitcher ______ snitch
 snitch()
 
 ______ fnmatch
@@ -78,7 +78,7 @@ c_ path(_base):
             __ no. isinstance(arg, basestring):
                 r_ ValueError("%s() arguments must be Path, str or "
                                  "unicode" % typ. -n)
-        __ len(args) == 1:
+        __ len(args) __ 1:
             r_ _base.__new__(typ, *args)
         r_ typ(os.path.join(*args))
 
@@ -217,7 +217,7 @@ c_ path(_base):
             prev _ loc
             loc, child _ prev.splitpath()
             loc _ __class__(loc)
-            __ loc == prev:
+            __ loc __ prev:
                 break
             parts.append(child)
         parts.append(loc)
@@ -262,7 +262,7 @@ c_ path(_base):
         segments _ [os.pardir] * (len(orig_list) - i)
         # Need to add the diverging part of dest_list.
         segments +_ dest_list[i:]
-        __ len(segments) == 0:
+        __ len(segments) __ 0:
             # If they happen to be identical, use os.curdir.
             r_ __class__(os.curdir)
         else:

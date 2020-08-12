@@ -5,4 +5,4 @@ logger _ ?.gL..( -n)
 
 
 ___ foo():
-    logger.warning("Calling foo")
+    logger.w..("Calling foo")

@@ -1,5 +1,5 @@
-from log ______ Log
-from some_module ______ Some
+____ log ______ Log
+____ some_module ______ Some
 ______ ?
 
 
@@ -9,8 +9,8 @@ c_ App:
 
     ___ do_something
         logger.d..('Cut off by logger.setLevel')
-        logger.warning('Log only to file')
-        logger.error('log to both file and console')
+        logger.w..('Log only to file')
+        logger.e..('log to both file and console')
 
 
 # Customize how the logger behaves

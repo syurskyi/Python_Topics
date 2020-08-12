@@ -1,13 +1,13 @@
-from .Path ______ Path
+____ .Path ______ Path
 
-from .FileObject ______ FileObject
-from .File ______ File
-from .Directory ______ Directory
-from .InvalidFileObject ______ InvalidFileObject
+____ .FileObject ______ FileObject
+____ .File ______ File
+____ .Directory ______ Directory
+____ .InvalidFileObject ______ InvalidFileObject
 
 ___ file_object_factory(creator, *path_parts):
 
-    __ len(path_parts) == 1 and path_parts[0].__class__ is Path:
+    __ len(path_parts) __ 1 and path_parts[0].__class__ is Path:
         path _ path_parts[0]
     else:
         path _ Path(*path_parts)

@@ -4,13 +4,13 @@
 
 ______ os
 ______ traceback
-______ sendNodes_path as SP
+______ sendNodes_path __ SP
 
 inNuke _ SP.inNuke
 
 ___
     ______ nuke
-except ImportError:
+_____ ImportError:
     pass
 
 
@@ -58,7 +58,7 @@ ___ get_nk_name():
     __ inNuke:
         ___
             filePath _ nuke.root().knob("name").value()
-            __ filePath == "":
+            __ filePath __ "":
                 nkName _ "Untitled"
             else:
                 nkName _ filePath.split("/")[-1]

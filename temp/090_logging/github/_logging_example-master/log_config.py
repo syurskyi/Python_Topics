@@ -1,6 +1,6 @@
 ______ ?
 ______ sys
-from ?.handlers ______ TimedRotatingFileHandler
+____ ?.handlers ______ TimedRotatingFileHandler
 FORMATTER _ ?.F..("%(a_t_)s — %(name)s — %(l..)s — %(m..)s")
 LOG_FILE _ "win_calculator.log"
 

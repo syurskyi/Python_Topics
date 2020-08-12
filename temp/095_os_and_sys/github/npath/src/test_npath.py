@@ -1,10 +1,10 @@
 ______ os
 ______ shutil
-from tempfile ______ mkdtemp
+____ tempfile ______ mkdtemp
 
-from unittest ______ TestCase
+____ unittest ______ TestCase
 
-from npath.Path ______ Path
+____ npath.Path ______ Path
 
 c_ TempDirectory(object):
     '''
@@ -29,17 +29,17 @@ c_ TempDirectory(object):
         os.mkdir(os.path.join(path, 'Dir 2'))
         os.mkdir(os.path.join(path, 'Dir 2', 'Dir 3'))
 
-        with open(os.path.join(path, 'Dir 1', 'File A.exe'), 'w') as fh:
+        with open(os.path.join(path, 'Dir 1', 'File A.exe'), 'w') __ fh:
             pass
-        with open(os.path.join(path, 'Dir 1', 'File B.txt'), 'w') as fh:
+        with open(os.path.join(path, 'Dir 1', 'File B.txt'), 'w') __ fh:
             fh.write("File B")
-        with open(os.path.join(path, 'Dir 2', 'File C'), 'w') as fh:
+        with open(os.path.join(path, 'Dir 2', 'File C'), 'w') __ fh:
             pass
-        with open(os.path.join(path, 'Dir 2', 'File D.txt'), 'w') as fh:
+        with open(os.path.join(path, 'Dir 2', 'File D.txt'), 'w') __ fh:
             fh.write("File B")
-        with open(os.path.join(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') as fh:
+        with open(os.path.join(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') __ fh:
             pass
-        with open(os.path.join(path, 'test_file'), 'w') as fh:
+        with open(os.path.join(path, 'test_file'), 'w') __ fh:
             fh.write("test")
 
     @property
@@ -57,7 +57,7 @@ c_ TempDirectory(object):
             for filename __ filenames:
                 path _ os.path.join(dirpath, filename)[len(__path)+1:]
                 size _ os.path.getsize(os.path.join(__path, path))
-                with open(os.path.join(__path, path), 'r') as fh:
+                with open(os.path.join(__path, path), 'r') __ fh:
                     contents _ fh.read()
                 rtn.append((path, size, contents))
         r_ rtn
