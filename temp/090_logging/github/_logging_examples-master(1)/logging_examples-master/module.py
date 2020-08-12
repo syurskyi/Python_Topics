@@ -1,26 +1,26 @@
-______ ?
-______ ?.config
-______ submodule
-
-
-?.config.fileConfig("logging.ini", disable_existing_loggers_False)
-logger _ ?.gL..( -n)
-
-
-___ bar():
-    logger.w..("Calling bar")
-
-
-___ exc_logging():
-    a, b _ 5, 0
-
-    ___
-        c _ a / b
-    _____ ZeroDivisionError:
-        logger.c..("Exception occurred", exc_info_True)
-
-
-__  -n __ '__main__':
-    bar()
-    submodule.foo()
-    exc_logging()
+# ______ ?
+# ______ ?.config
+# ______ submodule
+#
+#
+# ?.config.fC.. "logging.ini", disable_existing_loggers_F..
+# logger _ ?.gL.. -n
+#
+#
+# ___ bar
+#     ?.w.. "Calling bar"
+#
+#
+# ___ exc_logging
+#     a, b _ 5, 0
+#
+#     ___
+#         c _ a / b
+#     _____ Z..
+#         ?.c..("Exception occurred", e_i.._T..
+#
+#
+# __  -n __ _____
+#     b..
+#     s__.f..
+#     e..

@@ -38,7 +38,7 @@ ___ load_logging_conf(log_cfg_filename):
     src_dir _ __.path.dirname(__.path.realpath( -f))
     cfg_file_path _ __.sep.j..((src_dir, '..', 'logs', log_cfg_filename))
 
-    ?.config.fileConfig(cfg_file_path)
+    ?.config.fC..(cfg_file_path)
 
 
 ___ parse_cli_args():

@@ -1,8 +1,8 @@
-______ ?
-
-
-logger _ ?.gL..( -n)
-
-
-___ foo():
-    logger.w..("Calling foo")
+# ______ ?
+#
+#
+# logger _ ?.gL.. -n
+#
+#
+# ___ foo
+#     ?.w..( Calling foo"
