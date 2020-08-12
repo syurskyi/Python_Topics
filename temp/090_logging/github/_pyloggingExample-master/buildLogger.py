@@ -2,7 +2,7 @@ ______ ?
 ______ Module
 
 class setLogger():
-    def __init__(self):
+    ___ __init__(self):
         # create logger with 'spam_application'
         logger _ ?.gL..('build.log')
         logger.sL..(?.D..)
@@ -20,7 +20,7 @@ class setLogger():
         logger.aH..(fh)
         logger.aH..(ch)
         self.logger _ logger
-    def gL..(self):
+    ___ gL..(self):
         return self.logger
 
 if  -n == '__main__':

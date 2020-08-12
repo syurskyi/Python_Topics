@@ -1,10 +1,10 @@
 ______ ? as logcuBABA
 
     
-def whoami():
+___ whoami():
     logcuBABA.i..("Now I'm there")
 
-def foo():
+___ foo():
     logcuBABA.i..("I'm here")
     whoami()
     logcuBABA.i..("I'm back here again")

@@ -12,7 +12,7 @@ class Logger(object):
 
 
     @classmethod
-    def logger_obj(cls):
+    ___ logger_obj(cls):
 
         if not cls._logger_obj:
             if cls.logger_exists():
@@ -32,56 +32,56 @@ class Logger(object):
         return cls._logger_obj
 
     @classmethod
-    def logger_exists(cls):
+    ___ logger_exists(cls):
         return cls.LOGGER_NAME in ?.Logger.manager.loggerDict.keys()
 
     @classmethod
-    def set_level(cls, level):
+    ___ set_level(cls, level):
         lg _ cls.logger_obj()
         lg.sL..(level)
         
     @classmethod
-    def set_propagate(cls, propagate):
+    ___ set_propagate(cls, propagate):
         lg _ cls.logger_obj()
         lg.propagate _ propagate
 
     @classmethod
-    def d..(cls, msg, *args, **kwargs):
+    ___ d..(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
         lg.d..(msg, *args, **kwargs)
 
     @classmethod
-    def i..(cls, msg, *args, **kwargs):
+    ___ i..(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
         lg.i..(msg, *args, **kwargs)
 
     @classmethod
-    def warning(cls, msg, *args, **kwargs):
+    ___ warning(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
         lg.warning(msg, *args, **kwargs)
 
     @classmethod
-    def error(cls, msg, *args, **kwargs):
+    ___ error(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
         lg.error(msg, *args, **kwargs)
 
     @classmethod
-    def critical(cls, msg, *args, **kwargs):
+    ___ critical(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
         lg.critical(msg, *args, **kwargs)
 
     @classmethod
-    def log(cls, level, msg, *args, **kwargs):
+    ___ log(cls, level, msg, *args, **kwargs):
         lg _ cls.logger_obj()
         lg.log(level, msg, *args, **kwargs)
 
     @classmethod
-    def exception(cls, msg, *args, **kwargs):
+    ___ exception(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
         lg.exception(msg, *args, **kwargs)
 
     @classmethod
-    def write_to_file(cls, path, level_?.WARNING):
+    ___ write_to_file(cls, path, level_?.WARNING):
         file_handler _ ?.FH..(path)
         file_handler.sL..(level)
 

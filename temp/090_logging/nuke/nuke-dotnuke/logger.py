@@ -21,7 +21,7 @@ ______ types
 
 
 class MyNkLogger(object):
-  def __init__(self):
+  ___ __init__(self):
     self.level _ ?.D.. \
                  if os.environ.get("MYNK_DEVEL", False) in ['1', 'true', 'True'] \
                  else ?.I..
@@ -32,12 +32,12 @@ class MyNkLogger(object):
     self.formatter _ ?.F..(format, date_format)
     self.init_logger()
 
-  def init_handler(self):
+  ___ init_handler(self):
     self.stream_handler _ ?.SH..
     self.stream_handler.sF..(self.formatter)
     self.stream_handler.sL..(self.level)
     
-  def init_logger(self):
+  ___ init_logger(self):
     self.init_handler()
     self.LOG _ ?.gL..('MyNk')
     self.LOG.aH..(self.stream_handler)
@@ -46,13 +46,13 @@ class MyNkLogger(object):
     self.LOG.remove_stream_handler _ types.MethodType(self.__remove_stream_handler, self.LOG)
     self.LOG.sL..(self.level)
 
-  def __flush_log(self, log):
+  ___ __flush_log(self, log):
     '''Flush a log'''
     for handler in log.handlers:
       if hasattr(handler,'flush'):
         handler.flush()
   
-  def __remove_stream_handler(self, log):
+  ___ __remove_stream_handler(self, log):
     '''remove stream handler from a given log object'''
     handlers_to_remove _ []
     for i,handler in enumerate(log.handlers):
@@ -61,7 +61,7 @@ class MyNkLogger(object):
     for x in reversed(handlers_to_remove):
       del log.handlers[x]
 
-  def exception_handler(self, exception_type, exception_value, traceback):
+  ___ exception_handler(self, exception_type, exception_value, traceback):
     '''Creates an exception handler to replace the standard except hook'''
     self.stream_handler.sF..(self.exc_formatter)
     self.LOG.critical("Uncaught exception", exc_info_(exception_type, exception_value, traceback))

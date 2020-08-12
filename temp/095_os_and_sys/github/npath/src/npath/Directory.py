@@ -6,41 +6,41 @@ class Directory(FileObject):
 
 
     @property
-    def is_file(self):
+    ___ is_file(self):
         return False
 
 
     @property
-    def is_dir(self):
+    ___ is_dir(self):
         return True
 
 
     @property
-    def parent(self):
+    ___ parent(self):
         return self.FILE_OBJ_FACTORY(self.parent)
 
 
     @property
-    def files(self):
+    ___ files(self):
         for path in self.files:
             yield self.FILE_OBJ_FACTORY(path)
 
 
     @property
-    def dirs(self):
+    ___ dirs(self):
         for path in self.dirs:
             yield self.FILE_OBJ_FACTORY(path)
 
 
     @property
-    def all(self):
+    ___ all(self):
         for o in self.files:
             yield o
         for o in self.dirs:
             yield o
 
 
-    def walk(self):
+    ___ walk(self):
         '''
         Return all file objects under a given path recursively
 
@@ -52,7 +52,7 @@ class Directory(FileObject):
             yield self.FILE_OBJ_FACTORY(path.make_relative_to(self))
 
 
-    def find(self, files_None, dirs_None):
+    ___ find(self, files_None, dirs_None):
         for child in self.walk():
             if child.is_file:
                 if files is None or files is True:

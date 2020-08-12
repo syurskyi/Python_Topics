@@ -22,7 +22,7 @@ class TempDirectory(object):
       `-- test_file             (contents: "test")
 
     '''
-    def __init__(self):
+    ___ __init__(self):
         self.__path _ mkdtemp()
 
         os.mkdir(os.path.join(self.path, 'Dir 1'))
@@ -43,11 +43,11 @@ class TempDirectory(object):
             fh.write("test")
 
     @property
-    def path(self):
+    ___ path(self):
         return self.__path
 
     @property
-    def contents(self):
+    ___ contents(self):
         '''List all paths in the test directory'''
         rtn _ list()
         for dirpath, dirnames, filenames in os.walk(self.__path):
@@ -62,32 +62,32 @@ class TempDirectory(object):
                 rtn.append((path, size, contents))
         return rtn
 
-    def clean(self):
+    ___ clean(self):
         if os.path.exists(self.__path):
             shutil.rmtree(self.__path)
 
-    def __del__(self):
+    ___ __del__(self):
         self.clean()
 
 
 class TestPath(TestCase):
 
-    def test_equal(self):
+    ___ test_equal(self):
         self.assertEqual(Path('a/b/c'), Path('a/b/c'))
         self.assertEqual(Path('a\\b\\c'), Path('a\\b\\c'))
         self.assertEqual(Path('a/b/c'), 'a/b/c')
 
 
-    def test_not_equal(self):
+    ___ test_not_equal(self):
         self.assertNotEqual(Path('a/b/c'), Path('a/b'))
         self.assertNotEqual(Path('a/b/c'), 'a/b')
 
 
-    def test_str(self):
+    ___ test_str(self):
         self.assertEqual(str(Path('a/b/c')), 'a/b/c')
 
 
-    def test_dict(self):
+    ___ test_dict(self):
         d _ {
             Path('a/b/c'): 1,
             Path('a/b'): 2,
@@ -100,7 +100,7 @@ class TestPath(TestCase):
         self.assertEqual(d[Path('a/b')], 2)
 
 
-    def test_set(self):
+    ___ test_set(self):
         s _ set([
             Path('a/b/c'),
             Path('a/b'),
@@ -110,48 +110,48 @@ class TestPath(TestCase):
         self.assertNotIn(Path('a/b/c/d'), s)
 
 
-    def test_abs_path(self):
+    ___ test_abs_path(self):
         self.assertEqual(Path('sub').abs, os.path.abspath('sub'))
 
 
-    def test_norm(self):
+    ___ test_norm(self):
         self.assertEqual(Path('a/b/c').norm, os.path.normpath('a/b/c'))
         self.assertEqual(Path('a\\b\\c').norm, os.path.normpath('a\\b\\c'))
 
 
-    def test_join(self):
+    ___ test_join(self):
         self.assertEqual(Path('a/b/c').join('d', 'e'), Path('a/b/c/d/e'))
         self.assertEqual(Path('a/b/c').join(Path('d/e'), Path('f')), Path('a/b/c/d/e/f'))
 
 
-    def test_basename(self):
+    ___ test_basename(self):
         self.assertEqual(Path('a/b/c').basename, 'c')
 
 
-    def test_parent(self):
+    ___ test_parent(self):
         self.assertEqual(Path('a/b/c').parent, Path('a/b'))
 
 
-    def test_exists(self):
+    ___ test_exists(self):
         td _ TempDirectory()
         self.assertTrue(Path(td.path, 'test_file').exists)
         self.assertFalse(Path(td.path, 'unknown_file').exists)
         td.clean()
 
 
-    def test_is_file(self):
+    ___ test_is_file(self):
         td _ TempDirectory()
         self.assertTrue(Path(td.path, 'test_file').is_file)
         self.assertFalse(Path(td.path, 'Dir 1').is_file)
         self.assertFalse(Path(td.path, 'missing_file').is_file)
         td.clean()
 
-    def test_is_link(self):
+    ___ test_is_link(self):
         td _ TempDirectory()
         self.assertFalse(Path(td.path, 'Dir 1').is_link)
         td.clean()
 
-    def test_is_dir(self):
+    ___ test_is_dir(self):
         td _ TempDirectory()
         self.assertFalse(Path(td.path, 'test_file').is_dir)
         self.assertTrue(Path(td.path, 'Dir 1').is_dir)
@@ -159,7 +159,7 @@ class TestPath(TestCase):
         td.clean()
 
 
-    def test_find(self):
+    ___ test_find(self):
         td _ TempDirectory()
 
         all _ list(Path(td.path).find())
@@ -177,7 +177,7 @@ class TestPath(TestCase):
         td.clean()
 
 
-    def test_walk(self):
+    ___ test_walk(self):
         td _ TempDirectory()
 
         all _ list(Path(td.path).walk())
@@ -195,33 +195,33 @@ class TestPath(TestCase):
         td.clean()
 
 
-    def test_splitext(self):
+    ___ test_splitext(self):
         prefix, ext _ Path('dir/file.txt').splitext
         self.assertEqual(prefix, 'dir/file')
         self.assertEqual(ext, 'txt')
 
 
-    def test_prefix(self):
+    ___ test_prefix(self):
         self.assertEqual(Path('a/b/file.txt').prefix, 'a/b/file')
 
 
-    def test_ext(self):
+    ___ test_ext(self):
         self.assertEqual(Path('a/b/file.txt').ext, 'txt')
 
 
-    def test_has_ext(self):
+    ___ test_has_ext(self):
         self.assertTrue(Path('dir/file.txt').has_ext('txt'))
         self.assertFalse(Path('dir/file.txt').has_ext('dat'))
         self.assertTrue(Path('dir/file.txt').has_ext('txt', 'dat'))
         self.assertFalse(Path('dir/file.txt').has_ext('csv', 'dat'))
 
 
-    def test_split(self):
+    ___ test_split(self):
         self.assertEqual(Path('a/bc/d').split(), ['a', 'bc', 'd'])
         self.assertEqual(Path('a\\bc\\d').split(), ['a', 'bc', 'd'])
 
 
-    def test_files(self):
+    ___ test_files(self):
         td _ TempDirectory()
         self.assertEqual(set(Path(td.path, 'Dir 2').files),
                          set([Path(td.path, 'Dir 2', 'File C'),
@@ -230,7 +230,7 @@ class TestPath(TestCase):
         td.clean()
 
 
-    def test_dirs(self):
+    ___ test_dirs(self):
         td _ TempDirectory()
         self.assertEqual(set(Path(td.path, 'Dir 2').dirs),
                          set([Path(td.path, 'Dir 2', 'Dir 3'),
@@ -238,7 +238,7 @@ class TestPath(TestCase):
         td.clean()
 
 
-    def test_all(self):
+    ___ test_all(self):
         td _ TempDirectory()
         self.assertEqual(set(Path(td.path, 'Dir 2').all),
                          set([Path(td.path, 'Dir 2', 'File C'),
@@ -248,7 +248,7 @@ class TestPath(TestCase):
         td.clean()
 
 
-    def test_samefile(self):
+    ___ test_samefile(self):
         if hasattr(os.path, 'samefile'):
             td _ TempDirectory()
             self.assertTrue(Path(td.path, 'test_file').samefile(Path(td.path, 'test_file')))
@@ -257,26 +257,26 @@ class TestPath(TestCase):
             td.clean()
 
 
-    def test_is_relative(self):
+    ___ test_is_relative(self):
         self.assertTrue(Path('a/b/c').is_relative)
         self.assertFalse(Path('C:\\test').is_relative)
         self.assertFalse(Path('/a/b/c').is_relative)
 
 
-    def test_is_absolute(self):
+    ___ test_is_absolute(self):
         self.assertFalse(Path('a/b/c').is_absolute)
         self.assertTrue(Path('C:\\test').is_absolute)
         self.assertTrue(Path('/a/b/c').is_absolute)
 
 
-    def test_rel_root(self):
+    ___ test_rel_root(self):
         self.assertEqual(Path('a/b/c').rel_root,
                           os.path.abspath(os.curdir))
         self.assertIsNone(Path('/a/b/c').rel_root)
         self.assertIsNone(Path('c:\\a\\b\\c').rel_root)
 
 
-    def test_rel_path(self):
+    ___ test_rel_path(self):
 
         p _ Path('site', relative_to_'/var/www')
         self.assertEqual(str(p), 'site')
@@ -294,7 +294,7 @@ class TestPath(TestCase):
         self.assertEqual(p3.abs, '/var/www/site/files')
         self.assertEqual(p3.rel_root, '/var/www')
 
-    def test_make_relative(self):
+    ___ test_make_relative(self):
 
         p _ Path('/var/www/site').make_relative_to('/var/www')
         self.assertEqual(str(p), 'site')

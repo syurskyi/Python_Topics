@@ -5,7 +5,7 @@ from .File ______ File
 from .Directory ______ Directory
 from .InvalidFileObject ______ InvalidFileObject
 
-def file_object_factory(creator, *path_parts):
+___ file_object_factory(creator, *path_parts):
 
     if len(path_parts) == 1 and path_parts[0].__class__ is Path:
         path _ path_parts[0]

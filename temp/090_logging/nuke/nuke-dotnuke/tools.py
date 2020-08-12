@@ -34,26 +34,26 @@ MYNK_MENU_INDEX _ [
 class MyNkTools(object):
 
   @property
-  def  -n(self):
+  ___  -n(self):
     return 'mynk.tools'
 
-  def __init__(self, path_list_[]):
+  ___ __init__(self, path_list_[]):
     self.path_list _ path_list
     self.tools_dict _ {}
     self.python_Bunch()
     self.prefix _ inspect.getmodule(self). -n
     LOG.i..(' [MyNk] initializing custom user tools')
   
-  def add_default_path(self):
+  ___ add_default_path(self):
     if not self.path_list:
       self.path_list.append(MYNK_TOOLS_PATH)
 
-  def add_path(self, path):
+  ___ add_path(self, path):
     if os.path.isdir(path):
       if not path in self.path_list:
         self.path_list.append(path)
 
-  def add_python_tools_from_path_list(self):
+  ___ add_python_tools_from_path_list(self):
     if self.path_list:
       for path in self.path_list:
         self.add_python_tools_from_path(path)
@@ -61,7 +61,7 @@ class MyNkTools(object):
       self.add_default_path()
       self.add_python_tools_from_path_list()
 
-  def add_python_tools_from_path(self, path, dest_None):
+  ___ add_python_tools_from_path(self, path, dest_None):
     '''Recursively add python modules and packages at path
        to dotted python path at prefix'''
     # expand any tilde home directory shortcuts
@@ -107,7 +107,7 @@ class MyNkTools(object):
               new_path _ os.path.join(path, dir_name)
               self.add_python_tools_from_path(new_path, eval('dest.{0}'.format(dir_name)))
   
-  def list_plugins(self):
+  ___ list_plugins(self):
     '''
     A debugging function to print out details of the loaded plugins
     '''

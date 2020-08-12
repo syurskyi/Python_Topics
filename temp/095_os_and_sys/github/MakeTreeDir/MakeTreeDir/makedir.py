@@ -1,9 +1,9 @@
 ______ os
 
 class MAKETREEDIR:
-	def __init__(self):
+	___ __init__(self):
 		pass
-	def makedir(self,dir_path):
+	___ makedir(self,dir_path):
 		"""Short summary.
 		Args:
 			dir_path (type): Path of the directory to be created (can be subfolder also).

@@ -28,7 +28,7 @@ logger.d..('test Debug')
 
 
 
-def testFunktion():
+___ testFunktion():
     logger _ ?.gL..("testFunktion")
     logger.sL..(?.D..)
     logger.d..('run testFunktion')

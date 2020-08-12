@@ -28,7 +28,7 @@ ______ sys
 class PathResolver(object):
     """Resolve absolute path to PySide and Nuke executable."""
 
-    def __init__(self, path):
+    ___ __init__(self, path):
         """Initialize the PathResolver instance.
 
         Args:
@@ -43,7 +43,7 @@ class PathResolver(object):
         self.nuke _ ""
         self.site_packages _ ""
 
-    def __str__(self):
+    ___ __str__(self):
         """Return string representation using nuke and pyside paths.
 
         Returns:
@@ -58,7 +58,7 @@ class PathResolver(object):
         return i...format(self.operating_sytem, self.exe_pattern, self.nuke,
                            self.site_packages)
 
-    def _set_os_abbreviation(self):
+    ___ _set_os_abbreviation(self):
         """Returns operating system abbreviation based on currently used os.
 
         Returns:
@@ -70,7 +70,7 @@ class PathResolver(object):
         }
         self.operating_sytem _ abbreviations.get(platform.system(), "lnx")
 
-    def _set_exe_pattern(self):
+    ___ _set_exe_pattern(self):
         """Set the name of the executable depending on the operating system."""
         names _ {
             "win": r"Nuke\d+\.\d+\.exe",  # https://regex101.com/r/sWqKht/1
@@ -79,7 +79,7 @@ class PathResolver(object):
         }
         self.exe_pattern _ names[self.operating_sytem]
 
-    def _set_nuke_pyside(self):
+    ___ _set_nuke_pyside(self):
         """Set absolute path of Nuke executable and PySide root directory.
 
         Raises:
@@ -90,7 +90,7 @@ class PathResolver(object):
         pyside_pattern _ r"PySide\d*"  # https://regex101.com/r/LDR591/1
 
         if not self.path:
-            raise OSError("No Nuke root directory set. Please set your Nuke "
+            r_ OSError("No Nuke root directory set. Please set your Nuke "
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
 
@@ -104,14 +104,14 @@ class PathResolver(object):
                     self.site_packages _ os.path.dirname(pyside_root)
 
         if not self.nuke:
-            raise OSError("Did not find any Nuke executable under "
+            r_ OSError("Did not find any Nuke executable under "
                           "{}".format(self.path))
 
         if not self.site_packages:
-            raise OSError("Did not find site-packages including PySide or "
+            r_ OSError("Did not find site-packages including PySide or "
                           "PySide2.")
 
-    def _append_site_packages(self):
+    ___ _append_site_packages(self):
         """Prepend the site-packages root directory.
 
         This is to make PySide/PySide2 available.
@@ -119,7 +119,7 @@ class PathResolver(object):
         """
         sys.path.append(self.site_packages)
 
-    def set_path(self, path):
+    ___ set_path(self, path):
         """Set the path to the given path and ensure a directory is used.
 
         Args:
@@ -131,7 +131,7 @@ class PathResolver(object):
 
         self.path _ path
 
-    def run(self):
+    ___ run(self):
         """Resolve all paths."""
         self._set_os_abbreviation()
         self._set_exe_pattern()

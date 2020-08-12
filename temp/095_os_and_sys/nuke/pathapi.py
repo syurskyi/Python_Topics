@@ -2,7 +2,7 @@
 #coding:utf8
 ______ re
 
-def project(path):
+___ project(path):
 	"""
 	Return the project name in the path
 	"""
@@ -11,7 +11,7 @@ def project(path):
 		return "", "Could not bring project information from the path."
 	return p[0], None
 
-def seq(path):
+___ seq(path):
 	"""
 	Returns the seq name in the path.
 	"""
@@ -20,7 +20,7 @@ def seq(path):
 		return "", "Cannot get seq information from path."
 	return p[0], None
 
-def shot(path):
+___ shot(path):
 	"""
 	Returns the shot name from the path.
 	"""
@@ -29,7 +29,7 @@ def shot(path):
 		return "", "I can't bring shot information from the path."
 	return p[0], None
 
-def task(path):
+___ task(path):
 	"""
 	Returns the task name in the path.
 	"""
@@ -38,7 +38,7 @@ def task(path):
 		return "", "Could not bring task information from the path."
 	return p[0], None
 
-def ver(path):
+___ ver(path):
 	"""
 	Returns version information in the path.
 	"""
@@ -47,7 +47,7 @@ def ver(path):
 		return -1, "Could not bring task information from the path."
 	return int(p[0]), None
 
-def seqnum(path):
+___ seqnum(path):
 	"""
 	Returns the sequence number in the path.
 	"""

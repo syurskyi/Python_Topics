@@ -48,19 +48,19 @@ payouts _ OrderedDict([
 
 
 class Shape:
-    def __init__(self,side):
+    ___ __init__(self,side):
         self.side _ side
 
-    def process_request(self,caller):
+    ___ process_request(self,caller):
         print(getattr(self,caller))
         return getattr(self, caller,"Invalid Caller")(caller)
        
 
-    def area(self,caller):
+    ___ area(self,caller):
         print("Parent")
         return caller
 
-    def parameter(self,caller):
+    ___ parameter(self,caller):
         print("Parent")
         return caller
 
@@ -68,14 +68,14 @@ class Shape:
 
 class Square(Shape):
 
-    def __init__(self,side):
+    ___ __init__(self,side):
         self.side _ side
         super(Square, self).__init__(side)   
     
-    def area(self,caller):
+    ___ area(self,caller):
         return self.side*self.side
     
-    def parameter(self,caller):
+    ___ parameter(self,caller):
         return 4*self.side
 
 #caller area/parameter
@@ -87,7 +87,7 @@ class Square(Shape):
 #                        }]
 
 
-def calculate_winning(symbol_grid, multiplier_1, wild_multiplier_{}):
+___ calculate_winning(symbol_grid, multiplier_1, wild_multiplier_{}):
     #symbol_list = [1,2,3,4,5,6,7,8,9,10,11]
     symbol_list _ set(symbol_grid[0])
     win _ []
@@ -114,7 +114,7 @@ def calculate_winning(symbol_grid, multiplier_1, wild_multiplier_{}):
             win.append(sym_data)
     return win_amount(win)
 
-def win_amount(wins):
+___ win_amount(wins):
     global payouts
     amount _ 0
     for win in wins:

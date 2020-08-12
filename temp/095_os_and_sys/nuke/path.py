@@ -66,7 +66,7 @@ class path(_base):
     """
 
     # --- Special Python methods.
-    def __new__(typ, *args):
+    ___ __new__(typ, *args):
         """
         Creates a new path object concatenating the *args.  *args
         may only contain Path objects or strings.  If *args is
@@ -76,48 +76,48 @@ class path(_base):
             return typ(os.curdir)
         for arg in args:
             if not isinstance(arg, basestring):
-                raise ValueError("%s() arguments must be Path, str or "
+                r_ ValueError("%s() arguments must be Path, str or "
                                  "unicode" % typ. -n)
         if len(args) == 1:
             return _base.__new__(typ, *args)
         return typ(os.path.join(*args))
 
-    def __repr__(self):
+    ___ __repr__(self):
         return '%s(%r)' % (self.__class__. -n, _base(self))
 
     # Adding a path and a string yields a path.
-    def __add__(self, more):
+    ___ __add__(self, more):
         return self.__class__(_base(self) + more)
 
-    def __radd__(self, other):
+    ___ __radd__(self, other):
         return self.__class__(other + _base(self))
 
     @classmethod
-    def cwd(cls):
+    ___ cwd(cls):
         """ Return the current working directory as a path object. """
         return path(os.getcwd())
 
     # --- Operations on path strings.
 
-    def abspath(self):
+    ___ abspath(self):
         return self.__class__(os.path.abspath(self))
 
-    def normcase(self):
+    ___ normcase(self):
         return self.__class__(os.path.normcase(self))
 
-    def normpath(self):
+    ___ normpath(self):
         return self.__class__(os.path.normpath(self))
 
-    def realpath(self):
+    ___ realpath(self):
         return self.__class__(os.path.realpath(self))
 
-    def expanduser(self):
+    ___ expanduser(self):
         return self.__class__(os.path.expanduser(self))
 
-    def expandvars(self):
+    ___ expandvars(self):
         return self.__class__(os.path.expandvars(self))
 
-    def expand(self):
+    ___ expand(self):
         """ Clean up a filename by calling expandvars(),
         expanduser(), and normpath() on it.
 
@@ -126,19 +126,19 @@ class path(_base):
         """
         return self.expandvars().expanduser().normpath()
 
-    def _get_namebase(self):
+    ___ _get_namebase(self):
         base, ext _ os.path.splitext(self.name)
         return base
 
-    def _get_ext(self):
+    ___ _get_ext(self):
         f, ext _ os.path.splitext(_base(self))
         return ext
 
-    def _get_drive(self):
+    ___ _get_drive(self):
         drive, r _ os.path.splitdrive(self)
         return self.__class__(drive)
 
-    def _get_dirname(self):
+    ___ _get_dirname(self):
         return self.__class__(os.path.dirname(self))
 
     parent _ property(
@@ -174,12 +174,12 @@ class path(_base):
         """)
 
 
-    def splitpath(self):
+    ___ splitpath(self):
         """ p.splitpath() -> Return (p.parent, p.name). """
         parent, child _ os.path.split(self)
         return self.__class__(parent), child
 
-    def stripext(self):
+    ___ stripext(self):
         """ p.stripext() -> Remove one file extension from the path.
 
         For example, path('/home/guido/python.tar.gz').stripext()
@@ -188,11 +188,11 @@ class path(_base):
         return path(os.path.splitext(self)[0])
 
     if hasattr(os.path, 'splitunc'):
-        def splitunc(self):
+        ___ splitunc(self):
             unc, rest _ os.path.splitunc(self)
             return self.__class__(unc), rest
 
-        def _get_uncshare(self):
+        ___ _get_uncshare(self):
             unc, r _ os.path.splitunc(self)
             return self.__class__(unc)
 
@@ -201,7 +201,7 @@ class path(_base):
             """ The UNC mount point for this path.
             This is empty for paths on local drives. """)
 
-    def splitall(self):
+    ___ splitall(self):
         """ Return a list of the path components in this path.
 
         The first item in the list will be a path.  Its value will be
@@ -224,14 +224,14 @@ class path(_base):
         parts.reverse()
         return parts
 
-    def relpath(self):
+    ___ relpath(self):
         """ Return this path as a relative path,
         based from the current working directory.
         """
         return self.__class__.cwd().relpathto(self)
 
 
-    def relpathto(self, dest):
+    ___ relpathto(self, dest):
         """ Return a relative path from self to dest.
 
         If there is no relative path from self to dest, for example if
@@ -271,7 +271,7 @@ class path(_base):
 
     # --- Listing, searching, walking, and matching
 
-    def listdir(self, pattern_None):
+    ___ listdir(self, pattern_None):
         """ D.listdir() -> List of items in this directory.
 
         Use D.files() or D.dirs() instead if you want a listing
@@ -287,7 +287,7 @@ class path(_base):
             names _ fnmatch.filter(names, pattern)
         return [path(self, child) for child in names]
 
-    def dirs(self, pattern_None):
+    ___ dirs(self, pattern_None):
         """ D.dirs() -> List of this directory's subdirectories.
 
         The elements of the list are path objects.
@@ -300,7 +300,7 @@ class path(_base):
         """
         return [p for p in self.listdir(pattern) if p.isdir()]
 
-    def files(self, pattern_None):
+    ___ files(self, pattern_None):
         """ D.files() -> List of the files in this directory.
 
         The elements of the list are path objects.
@@ -313,7 +313,7 @@ class path(_base):
 
         return [p for p in self.listdir(pattern) if p.isfile()]
 
-    def walk(self, pattern_None):
+    ___ walk(self, pattern_None):
         """ D.walk() -> iterator over files and subdirs, recursively.
 
         The iterator yields path objects naming each child item of
@@ -330,7 +330,7 @@ class path(_base):
                 for item in child.walk(pattern):
                     yield item
 
-    def walkdirs(self, pattern_None):
+    ___ walkdirs(self, pattern_None):
         """ D.walkdirs() -> iterator over subdirs, recursively.
 
         With the optional 'pattern' argument, this yields only
@@ -345,7 +345,7 @@ class path(_base):
                 yield subsubdir
 
 
-    def walkfiles(self, pattern_None):
+    ___ walkfiles(self, pattern_None):
         """ D.walkfiles() -> iterator over files in D, recursively.
 
         The optional argument, pattern, limits the results to files
@@ -361,7 +361,7 @@ class path(_base):
                 for f in child.walkfiles(pattern):
                     yield f
 
-    def match(self, pattern):
+    ___ match(self, pattern):
         """ Return True if self.name matches the given pattern.
 
         pattern - A filename pattern with wildcards,
@@ -369,13 +369,13 @@ class path(_base):
         """
         return fnmatch.fnmatch(self.name, pattern)
 
-    def matchcase(self, pattern):
+    ___ matchcase(self, pattern):
         """ Test whether the path matches pattern, returning true or
         false; the comparison is always case-sensitive.
         """
         return fnmatch.fnmatchcase(self.name, pattern)
 
-    def glob(self, pattern):
+    ___ glob(self, pattern):
         """ Return a list of path objects that match the pattern.
 
         pattern - a path relative to this directory, with wildcards.
@@ -397,16 +397,16 @@ class path(_base):
     if hasattr(os.path, 'samefile'):
         samefile _ os.path.samefile
 
-    def atime(self):
+    ___ atime(self):
         """Last access time of the file."""
         return os.path.getatime(self)
 
 
-    def mtime(self):
+    ___ mtime(self):
         """Last-modified time of the file."""
         return os.path.getmtime(self)
 
-    def ctime(self):
+    ___ ctime(self):
         """
         Return the system's ctime which, on some systems (like Unix)
         is the time of the last change, and, on others (like Windows),
@@ -418,75 +418,75 @@ class path(_base):
         """
         return os.path.getctime(self)
 
-    def size(self):
+    ___ size(self):
         """Size of the file, in bytes."""
         return os.path.getsize(self)
 
     if hasattr(os, 'access'):
-        def access(self, mode):
+        ___ access(self, mode):
             """ Return true if current user has access to this path.
 
             mode - One of the constants os.F_OK, os.R_OK, os.W_OK, os.X_OK
             """
             return os.access(self, mode)
 
-    def stat(self):
+    ___ stat(self):
         """ Perform a stat() system call on this path. """
         return os.stat(self)
 
-    def lstat(self):
+    ___ lstat(self):
         """ Like path.stat(), but do not follow symbolic links. """
         return os.lstat(self)
 
     if hasattr(os, 'statvfs'):
-        def statvfs(self):
+        ___ statvfs(self):
             """ Perform a statvfs() system call on this path. """
             return os.statvfs(self)
 
     if hasattr(os, 'pathconf'):
-        def pathconf(self, name):
+        ___ pathconf(self, name):
             return os.pathconf(self, name)
 
 
     # --- Modifying operations on files and directories
 
-    def utime(self, times):
+    ___ utime(self, times):
         """ Set the access and modified times of this file. """
         os.utime(self, times)
 
-    def chmod(self, mode):
+    ___ chmod(self, mode):
         os.chmod(self, mode)
 
     if hasattr(os, 'chown'):
-        def chown(self, uid, gid):
+        ___ chown(self, uid, gid):
             os.chown(self, uid, gid)
 
 
-    def rename(self, new):
+    ___ rename(self, new):
         os.rename(self, new)
 
-    def renames(self, new):
+    ___ renames(self, new):
         os.renames(self, new)
 
 
     # --- Create/delete operations on directories
 
-    def mkdir(self, mode_0777):
+    ___ mkdir(self, mode_0777):
         os.mkdir(self, mode)
 
-    def makedirs(self, mode_0777):
+    ___ makedirs(self, mode_0777):
         os.makedirs(self, mode)
 
-    def rmdir(self):
+    ___ rmdir(self):
         os.rmdir(self)
 
-    def removedirs(self):
+    ___ removedirs(self):
         os.removedirs(self)
 
 
     # --- Modifying operations on files
 
-    def touch(self):
+    ___ touch(self):
         """ Set the access/modified times of this file to the current time.
         Create the file if it does not exist.
         """
@@ -494,35 +494,35 @@ class path(_base):
         os.close(fd)
         os.utime(self, None)
 
-    def remove(self):
+    ___ remove(self):
         os.remove(self)
 
-    def unlink(self):
+    ___ unlink(self):
         os.unlink(self)
 
 
     # --- Links
 
     if hasattr(os, 'link'):
-        def link(self, newpath):
+        ___ link(self, newpath):
             """ Create a hard link at 'newpath', pointing to this file. """
             os.link(self, newpath)
 
     if hasattr(os, 'symlink'):
-        def symlink(self, newlink):
+        ___ symlink(self, newlink):
             """ Create a symbolic link at 'newlink', pointing here. """
             os.symlink(self, newlink)
 
 
     if hasattr(os, 'readlink'):
-        def readlink(self):
+        ___ readlink(self):
             """ Return the path to which this symbolic link points.
 
             The result may be an absolute or a relative path.
             """
             return self.__class__(os.readlink(self))
 
-        def readlinkabs(self):
+        ___ readlinkabs(self):
             """ Return the path to which this symbolic link points.
 
             The result is always an absolute path.
@@ -550,5 +550,5 @@ class path(_base):
     # --- Special stuff from os
 
     if hasattr(os, 'chroot'):
-        def chroot(self):
+        ___ chroot(self):
             os.chroot(self)

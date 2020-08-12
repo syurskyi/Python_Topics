@@ -17,11 +17,11 @@ from . ______ LOG
 
 
 class MyNkConfig(object):
-  def __init__(self):
+  ___ __init__(self):
     user_cfg_file_path _ self.init_cfg()
     self.config _ ConfigObj(user_cfg_file_path, indent_type_u'  ')
 
-  def init_cfg(self):
+  ___ init_cfg(self):
     '''Initialize the user config by copying the provided default config file'''
     default_cfg_path _ os.path.join(_c.MYNK_PATH, 'data')
     default_cfg_file_path _ os.path.join(default_cfg_path, 'defaults.cfg')
@@ -33,7 +33,7 @@ class MyNkConfig(object):
         LOG.i..("Created initial user config: %s" % user_cfg_file_path)
       _______
         if not os.path.isdir(user_cfg_path):
-          raise
+          r_
     if not os.path.exists(user_cfg_file_path):
       shutil.copy(default_cfg_file_path, user_cfg_file_path)
     return user_cfg_file_path

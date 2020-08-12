@@ -7,7 +7,7 @@ ______ sys
 from ex3_sub_module ______ foo
 
 
-def simple_parser():
+___ simple_parser():
     
     # principal logger
     logger _ ?.gL..( -n)

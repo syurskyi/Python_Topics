@@ -3,10 +3,10 @@ ______ ?.handlers
 
 
 class Log:
-    def __init__(self):
+    ___ __init__(self):
         pass
 
-    def setup_logging(self):
+    ___ setup_logging(self):
         formt _ '%(asctime)s - %(filename)s - %(l..)s - %(m..)s'
         formatter _ ?.F..(formt)
 

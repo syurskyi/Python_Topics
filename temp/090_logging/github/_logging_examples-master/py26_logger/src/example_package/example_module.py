@@ -2,7 +2,7 @@
 
 ______ ?
 
-def do_stuff():
+___ do_stuff():
     # In Python 2.6, do not initialize the module logger at import,
     # because this will confuse you if you import the module before
     # loading the configuration in main.

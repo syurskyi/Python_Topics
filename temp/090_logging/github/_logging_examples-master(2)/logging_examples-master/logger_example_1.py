@@ -4,7 +4,7 @@ ______ ?
 ?.basicConfig(level_?.D..)
 
 
-def simple_parser():
+___ simple_parser():
     
     parser _ argparse.ArgumentParser()
     
@@ -17,7 +17,7 @@ def simple_parser():
     return args.A, args.B, args.C
 
 
-def foo(A, B, C):
+___ foo(A, B, C):
     """Demonstrate basic logging functionality with command line output."""
     
     ?.d..(f'args: ({A}, {B}, {C})')

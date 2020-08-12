@@ -14,7 +14,7 @@ ______ example_package.example_module
 # This can cause issues, see the module for explanation.
 
 
-def run():
+___ run():
     load_logging_conf('logging.conf')
     # All loggers MUST be started AFTER this point, including for imported modules!
     # Start the logger for this module.
@@ -33,7 +33,7 @@ def run():
     example_package.example_module.do_stuff()
 
 
-def load_logging_conf(log_cfg_filename):
+___ load_logging_conf(log_cfg_filename):
     """Load logging configuration at '<src_dir>/../logs/<filename>' (os agnostic)."""
     src_dir _ os.path.dirname(os.path.realpath(__file__))
     cfg_file_path _ os.sep.join((src_dir, '..', 'logs', log_cfg_filename))
@@ -41,7 +41,7 @@ def load_logging_conf(log_cfg_filename):
     ?.config.fileConfig(cfg_file_path)
 
 
-def parse_cli_args():
+___ parse_cli_args():
     """Parse command line args.  Additional options can be added."""
     parser _ optparse.OptionParser()
     parser.add_option('-v', '--verbose', dest_"verbose",
@@ -50,7 +50,7 @@ def parse_cli_args():
 
     return parser.parse_args()
 
-def set_debug_verbosity(verbosity_counter):
+___ set_debug_verbosity(verbosity_counter):
     """Deactivates the d.. handler if verbosity_counter is 0, else sets
     the logging level appropriately."""
 

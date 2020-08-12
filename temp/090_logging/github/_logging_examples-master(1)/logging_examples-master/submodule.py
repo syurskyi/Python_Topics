@@ -4,5 +4,5 @@ ______ ?
 logger _ ?.gL..( -n)
 
 
-def foo():
+___ foo():
     logger.warning("Calling foo")

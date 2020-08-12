@@ -15,7 +15,7 @@ from . ______ config
 LOG.i..(' [MyNk] initializing custom user image formats')
 
 
-def add_format(W, H, x, y, r, t, pa, format_name):
+___ add_format(W, H, x, y, r, t, pa, format_name):
   '''Add a format based on provided attributes'''
   if not W is None and not H is None and not format_name is None:
       x _ 0 if x is None else x
@@ -29,7 +29,7 @@ def add_format(W, H, x, y, r, t, pa, format_name):
       LOG.d..(msg)
 
 
-def add_formats_from_dict(defaults_dict):
+___ add_formats_from_dict(defaults_dict):
   '''Add nuke formats from an iterated dict of formats'''
   for format_name, format in defaults_dict.iteritems():
     if format.get('active', False) in ['1', 'true', 'True']:
@@ -43,7 +43,7 @@ def add_formats_from_dict(defaults_dict):
       add_format(W, H, x, y, r, t, pa, format_name)
 
 
-def add_formats_from_config():
+___ add_formats_from_config():
   '''wrapper for adding formats from config dict'''
   add_formats_from_dict(config['formats'])
 

@@ -5,7 +5,7 @@ from npath ______ Path, File
 
 class TestFile(TestCase):
 
-    def test_open(self):
+    ___ test_open(self):
         td _ TempDirectory()
 
         # Test read
@@ -22,27 +22,27 @@ class TestFile(TestCase):
         td.clean()
 
 
-    def test_touch(self):
+    ___ test_touch(self):
         td _ TempDirectory()
         File(td.path, 'new_file').touch()
         self.assertIn(("new_file", 0, ""), td.contents)
         td.clean()
 
 
-    def test_md5(self):
+    ___ test_md5(self):
         td _ TempDirectory()
         self.assertEqual(File(td.path, 'test_file').md5.lower(),
                          '098f6bcd4621d373cade4e832627b4f6')
 
 
-    def test_unlink(self):
+    ___ test_unlink(self):
         td _ TempDirectory()
         File(td.path, 'test_file').unlink()
         self.assertNotIn(("test_file", 4, "test"), td.contents)
         td.clean()
 
 
-    def test_size(self):
+    ___ test_size(self):
         td _ TempDirectory()
         self.assertEqual(File(td.path, 'test_file').size, 4)
         td.clean()

@@ -14,7 +14,7 @@ except ImportError:
     pass
 
 
-def paste_nk(path):
+___ paste_nk(path):
     if inNuke:
         ___
             nuke.nodePaste(path)
@@ -22,7 +22,7 @@ def paste_nk(path):
             print "paste node failed"
 
 
-def send_nk(path):
+___ send_nk(path):
     nodesName _ []
     nodesStr _ ""
     if inNuke:
@@ -45,7 +45,7 @@ def send_nk(path):
     return nodesStr
 
 
-def clear_selection():
+___ clear_selection():
     ___
         for n in nuke.selectedNodes():
             n.setSelected(False)
@@ -53,7 +53,7 @@ def clear_selection():
         pass
 
 
-def get_nk_name():
+___ get_nk_name():
     nkName _ ""
     if inNuke:
         ___

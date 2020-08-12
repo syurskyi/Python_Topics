@@ -7,7 +7,7 @@ from . ______ module2
 logger _ ?.gL..( -n)
 
 
-def main():
+___ main():
     ______ ?.config
     ?.config.fileConfig(
         fname_config.log_config_path,

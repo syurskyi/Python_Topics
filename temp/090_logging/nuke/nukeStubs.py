@@ -20,7 +20,7 @@ class NukeStubsGenerator(object):
     # default_directory = os.path.join(os.path.expanduser('~'), 'stubs')
     default_directory _ r'C:\Users\syurskyi\PycharmProjects\TD\__syurskyi_repository__\nuke\tools\github\Nuke-Stubs-Generator'
 
-    def __init__(self, directory_None):
+    ___ __init__(self, directory_None):
         self._indent _ 0
         self.contents _ ''
 
@@ -36,7 +36,7 @@ class NukeStubsGenerator(object):
         self.directory _ directory or self.default_directory
         if not os.path.exists(self.directory):
             if directory:
-                raise IOError("Directory %s does not exist. Cannot write." % (self.directory))
+                r_ IOError("Directory %s does not exist. Cannot write." % (self.directory))
 
             logger.i..('Creating directory %s', self.directory)
             os.mkdir(self.directory)
@@ -46,10 +46,10 @@ class NukeStubsGenerator(object):
         # Save the file
         self.save()
 
-    def __str__(self):
+    ___ __str__(self):
         return self.output_file
 
-    def write(self, text):
+    ___ write(self, text):
         """
         Writes the given text to the contents string with correct indentation
         @param text: the string to add
@@ -63,15 +63,15 @@ class NukeStubsGenerator(object):
             line _ '%s%s\n' % (self._indent*' ', line)
             self.contents +_ line
 
-    def indent(self):
+    ___ indent(self):
         """Adds an indentation level to the output"""
         self._indent +_ 4
 
-    def dedent(self):
+    ___ dedent(self):
         """Removes an indentation level to the output"""
         self._indent _ max(self._indent - 4, 0)
 
-    def get_builtin_info(self, builtin):
+    ___ get_builtin_info(self, builtin):
         """Resolves the signature and docstring for a given builtin function.
         This depends on parsing the docstring for the object.
 
@@ -117,7 +117,7 @@ class NukeStubsGenerator(object):
         return name, args, defaults
 
 
-    def get_info(self, func):
+    ___ get_info(self, func):
         """Resolves the signature and docstring for a given object
         @param func: an executable object to work on.
         @return Returns True if it could resolve i.., otherwise it fails
@@ -147,7 +147,7 @@ class NukeStubsGenerator(object):
             args[args.index(kw)] _ '%s=%s' % (kw, val)
 
         # Finally write the declaration of the function
-        signature _ '\ndef %s(%s):' % (name, ', '.join(args))
+        signature _ '\n___ %s(%s):' % (name, ', '.join(args))
         self.write(signature)
         self.indent()
         doc _ '"""%s"""' % func.__doc__
@@ -158,7 +158,7 @@ class NukeStubsGenerator(object):
         return True
 
 
-    def get_class_info(self, cls):
+    ___ get_class_info(self, cls):
         """Resolves the signature, docstring and members of a class"""
 
         base _ inspect.getclasstree([cls])[0][0]. -n
@@ -180,7 +180,7 @@ class NukeStubsGenerator(object):
 
 
 
-    def generate(self):
+    ___ generate(self):
         """Generates the docstring content for the nuke module"""
         for name in dir(nuke):
             if name.startswith('__'):
@@ -193,14 +193,14 @@ class NukeStubsGenerator(object):
             else:
                 self.get_info(obj)
 
-    def save(self):
+    ___ save(self):
         """Saves the generated stubs string to disk"""
         with open(self.output_file, 'w') as f:
             f.write(self.contents)
 
         logger.i..('Wrote to %s', self.output_file)
 
-def generate(directory_None):
+___ generate(directory_None):
     """Convenience method for generating the stubs.
     @param directory: the directory to write to. Defaults to a stubs folder in your user dir.
     @return the stubs object

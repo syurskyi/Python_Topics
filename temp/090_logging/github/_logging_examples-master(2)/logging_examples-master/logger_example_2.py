@@ -5,7 +5,7 @@ ______ sys
 ?.basicConfig(filename_'ex2_log.log', level_?.D..)
 
 
-def simple_parser():
+___ simple_parser():
     ?.i..("Command Line inputs: " + ' '.join(sys.argv[1:]))
     
     parser _ argparse.ArgumentParser()
@@ -19,7 +19,7 @@ def simple_parser():
     return args.A, args.B, args.C
 
 
-def foo(A, B, C):
+___ foo(A, B, C):
     """Demonstrate basic logging functionality with file output."""
     
     ?.i..(f'args: ({A}, {B}, {C})')

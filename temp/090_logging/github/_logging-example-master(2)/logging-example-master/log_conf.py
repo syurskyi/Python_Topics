@@ -7,9 +7,9 @@ ______ ?.handlers  # required for using additional handlers
 # import logging.config  # if using a config file
 
 
-def singleton(cls):  # singleton, how to:  https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python
+___ singleton(cls):  # singleton, how to:  https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python
     instances _ {}
-    def get_instance():
+    ___ get_instance():
         if cls not in instances:
             instances[cls] _ cls()
         return instances[cls]
@@ -18,7 +18,7 @@ def singleton(cls):  # singleton, how to:  https://stackoverflow.com/questions/6
 
 @singleton
 class Logger():
-    def __init__(self):
+    ___ __init__(self):
         """ Create a logger and attach some handlers with individual formatters.
         """
         # logging.config.fileConfig('logging.conf')  # if using a config file

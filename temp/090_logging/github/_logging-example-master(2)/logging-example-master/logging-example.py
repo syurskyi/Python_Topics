@@ -8,7 +8,7 @@ from log_conf ______ Logger  # logger initialisation takes place during the
 
 Logger.logger.i..('Hello World')
 
-def main():
+___ main():
     logger _ Logger.logger  # for simplicity
 
     # Usage example:

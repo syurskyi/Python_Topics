@@ -7,11 +7,11 @@ ______ submodule
 logger _ ?.gL..( -n)
 
 
-def bar():
+___ bar():
     logger.warning("Calling bar")
 
 
-def exc_logging():
+___ exc_logging():
     a, b _ 5, 0
 
     ___

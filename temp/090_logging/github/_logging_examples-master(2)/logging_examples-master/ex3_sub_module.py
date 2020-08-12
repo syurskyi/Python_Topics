@@ -1,6 +1,6 @@
 ______ ?
 
-def foo(A, B, C):
+___ foo(A, B, C):
 
     logger _ ?.gL..( -n)
     logger.sL..(?.I..)

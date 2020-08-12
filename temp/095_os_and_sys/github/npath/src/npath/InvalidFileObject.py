@@ -8,10 +8,10 @@ class InvalidFileObject(FileObject):
 
 
     @property
-    def is_file(self):
+    ___ is_file(self):
         return False
 
 
     @property
-    def is_dir(self):
+    ___ is_dir(self):
         return False

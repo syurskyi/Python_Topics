@@ -15,11 +15,11 @@ _______
     elif platform.system() == 'Windows':
         application _ r'Nuke\d+\.\d+.exe'
     else:
-        raise RuntimeError('OS {0} is not supported'.format(platform.system()))
+        r_ RuntimeError('OS {0} is not supported'.format(platform.system()))
 
     match _ re.search(application, sys.executable)
     if not match:
-        raise RuntimeError('Import the_silo from within Nuke')
+        r_ RuntimeError('Import the_silo from within Nuke')
     ______ nuke
 
 __version__ _ '0.1.2'
@@ -29,14 +29,14 @@ silo_name _ 'The Silo'
 silo_location _ os.path.dirname(os.path.abspath(__file__))
 
 
-def init():
+___ init():
     logger.i..('Initialising The Silo...')
     logger.i..('Version: {0}'.format(__version__))
     nuke.pluginAddPath('{0}/gizmos'.format(silo_location))
     logger.i..('[DONE]')
 
 
-def build(toolbar_True):
+___ build(toolbar_True):
     logger.i..('Building The Silo UI...')
     logger.i..('Version: {0}'.format(__version__))
 

@@ -7,7 +7,7 @@ from qt_logger ______ QtLogger
 
 class StandaloneWindow(QtWidgets.QWidget):
 
-    def __init__(self):
+    ___ __init__(self):
         super(StandaloneWindow, self).__init__(parent_None)
 
         self.setWindowTitle("Standalone App")
@@ -32,10 +32,10 @@ class StandaloneWindow(QtWidgets.QWidget):
 
         QtLogger.signal_handler().emitter.message_logged.connect(self.plain_text_edit.appendPlainText)
 
-    def print_warning(self):
+    ___ print_warning(self):
         QtLogger.warning("warning m..")
 
-    def print_error(self):
+    ___ print_error(self):
         QtLogger.error("error m..")
 
 

@@ -7,32 +7,32 @@ class FileObject(Path):
     FILE_OBJ_FACTORY _ None # set in __init__.py
 
 
-    def __repr__(self):
+    ___ __repr__(self):
         return "%s('%s')" % (self.__class__. -n, self.__path)
 
     @property
-    def path(self):
+    ___ path(self):
         '''Return path to file object as a Path (not normally needed)'''
         return Path(self)
 
 
     @abstractproperty
-    def is_file(self):
+    ___ is_file(self):
         '''Is this a file object'''
 
 
     @abstractproperty
-    def is_dir(self):
+    ___ is_dir(self):
         '''Is this a directory object'''
 
 
     @property
-    def isfile(self):
+    ___ isfile(self):
         return self.is_file
 
 
     @property
-    def isdir(self):
+    ___ isdir(self):
         return self.is_dir
 
 

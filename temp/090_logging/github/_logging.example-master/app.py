@@ -4,10 +4,10 @@ ______ ?
 
 
 class App:
-    def __init__(self):
+    ___ __init__(self):
         self.logger _ ?.gL..('app_name')
 
-    def do_something(self):
+    ___ do_something(self):
         self.logger.d..('Cut off by logger.setLevel')
         self.logger.warning('Log only to file')
         self.logger.error('log to both file and console')

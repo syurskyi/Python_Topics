@@ -28,11 +28,11 @@ from . ______ config
 ______ mynk
 
 class MyNkGui(object):
-  def __init__(self):
+  ___ __init__(self):
     nuke.pluginAddPath(os.path.join(_c.MYNK_PATH, 'icons'), addToSysPath_False)
     LOG.i..(' [MyNk] initializing custom user menus etc.')
 
-  def add_tool_menus(self, tool_str):
+  ___ add_tool_menus(self, tool_str):
     ___
       tool _ eval(tool_str)
       menus _ getattr(tool, '__menus__' ,None)
@@ -53,7 +53,7 @@ class MyNkGui(object):
           else:
             menu.addMenu(title)
             
-  def add_toolbunch_to_menu(self, toolbunch_str):
+  ___ add_toolbunch_to_menu(self, toolbunch_str):
     for key,val in eval(toolbunch_str).toDict().iteritems():
       dottedpath _ '{0}.{1}'.format(toolbunch_str,key)
       if inspect.ismodule(val):
@@ -61,28 +61,28 @@ class MyNkGui(object):
       else:
         self.add_toolbunch_to_menu(dottedpath)
 
-  def init_gui(self):
+  ___ init_gui(self):
     nuke_menu _ nuke.menu('Nuke')
     self.menu _ nuke_menu.addMenu('MyNk', icon_'mynk.png')
     nuke_toolbar _ nuke.menu("Nodes")
     self.nuke_toolbar _ nuke_toolbar.addMenu("MyNk", "mynkx.png")
 
-  def add_entry_to_toolbar(self, entry):
+  ___ add_entry_to_toolbar(self, entry):
     pass
 
-  def add_entry_to_menu(self, entry):
+  ___ add_entry_to_menu(self, entry):
     pass
 
-  def add_entry_list(self, entry_list):
+  ___ add_entry_list(self, entry_list):
    for entry in entry_list:
      pass
  
-  def setFavorites(self):
+  ___ setFavorites(self):
     nuke.removeFavoriteDir('Nuke')
     nuke.addFavoriteDir('DotNuke', os.path.expanduser('~/.nuke'), 0)
     nuke.addFavoriteDir('Jobs', '/', 0)
     nuke.addFavoriteDir('Fonts', '/', nuke.FONT)
   
-  def restoreWindowLayout(self, layout_1):
+  ___ restoreWindowLayout(self, layout_1):
     nuke.restoreWindowLayout(layout)
 

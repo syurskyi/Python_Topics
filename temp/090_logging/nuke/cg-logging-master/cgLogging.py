@@ -37,7 +37,7 @@ To use:
         ... do something
     except Exception, error :
         log.fatal( "pop up this m.. if we're in nuke or maya" )
-        raise error # re raise the error after we msg the user.
+        r_ error # re r_ the error after we msg the user.
 """
 
 ## -----------------------------------------------------------------------------
@@ -97,7 +97,7 @@ NOTSET   _ 0
 ## -----------------------------------------------------------------------------
 # getLogger - Main Call
 ## -----------------------------------------------------------------------------
-def gL..( name, shell_True, maya__in_maya, nuke__in_nuke, mobu__in_mobu, file_None, level_INFO ):
+___ gL..( name, shell_True, maya__in_maya, nuke__in_nuke, mobu__in_mobu, file_None, level_INFO ):
 	'''
 	Get logger - mimicing the usage of logging.getLogger()
 		name(str) : logger name
@@ -118,7 +118,7 @@ class Logger():
 	'''
 	'''
 
-	def __init__(self, name, shell_True, maya_False, nuke_False, mobu_False, file_None, level_INFO ):
+	___ __init__(self, name, shell_True, maya_False, nuke_False, mobu_False, file_None, level_INFO ):
 		'''
 		Init Logger
 		'''
@@ -165,35 +165,35 @@ class Logger():
 			mobu_hdlr.sF..( format )
 			self.__logger.aH..( mobu_hdlr )
 
-	def __repr__(self):
+	___ __repr__(self):
 		'''
 		string representation.
 		'''
 		return "%s(%s Level:%i)" % ( self.__class__, self.__name, self.level )
 
-	def __getattr__(self, attr):
+	___ __getattr__(self, attr):
 		'''
 		Use logging.Logger attributes.
 		'''
 		if hasattr( self.__logger, attr ):
 			return getattr( self.__logger, attr )
 		else:
-			raise AttributeError, "No attribute %s" %attr
+			r_ AttributeError, "No attribute %s" %attr
 
 	## LEVELS
-	def d..(self, msg):
+	___ d..(self, msg):
 		self.__logger.d..(msg)
 
-	def i..(self, msg):
+	___ i..(self, msg):
 		self.__logger.i..(msg)
 
-	def warning(self, msg):
+	___ warning(self, msg):
 		self.__logger.warning(msg)
 
-	def fatal(self, msg):
+	___ fatal(self, msg):
 		self.__logger.fatal(msg)
 
-	def critical(self, msg):
+	___ critical(self, msg):
 		self.__logger.critical(msg)
 
 
@@ -206,10 +206,10 @@ class ShellHandler(?.Handler):
 	by passing maya and nuke editors by using sys.__stdout__
 	'''
 
-	def __init__(self):
+	___ __init__(self):
 		?.Handler.__init__(self)
 
-	def emit(self, record):
+	___ emit(self, record):
 
 		___
 			sys.__stdout__.write( "%s\n" %self.format(record) )
@@ -228,10 +228,10 @@ class MayaHandler(?.Handler):
 	warning will emit maya.cmds.warning()
 	critical and fatal would popup msg dialog to alert of the error.
 	'''
-	def __init__(self):
+	___ __init__(self):
 		?.Handler.__init__(self)
 
-	def emit(self, record):
+	___ emit(self, record):
 
 		# Formated m..:
 		msg _ self.format(record)
@@ -265,10 +265,10 @@ class NukeHandler(?.Handler):
 	warning will emit nuke.warning()
 	critical and fatal would popup msg dialog to alert of the error.
 	'''
-	def __init__(self):
+	___ __init__(self):
 		?.Handler.__init__(self)
 
-	def emit(self, record):
+	___ emit(self, record):
 
 		# Formated m..:
 		msg _ self.format(record)
@@ -290,10 +290,10 @@ class MobuHandler(?.Handler):
 	'''
 	MotionBuilder Handler - emits logs into motionbuilder's script editor.
 	'''
-	def __init__(self):
+	___ __init__(self):
 		?.Handler.__init__(self)
 
-	def emit(self, record):
+	___ emit(self, record):
 
 		# Formated m..:
 		msg _ self.format(record)
