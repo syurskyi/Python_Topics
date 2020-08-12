@@ -2,7 +2,7 @@ ______ argparse
 ______ ?
 ______ sys
 
-?.basicConfig(filename_'ex2_log.log', level_?.D..)
+?.bC..(filename_'ex2_log.log', level_?.D..)
 
 
 ___ simple_parser():

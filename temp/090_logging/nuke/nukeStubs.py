@@ -5,7 +5,7 @@ ______ nuke
 
 
 ______ ?
-?.basicConfig()
+?.bC..()
 logger _ ?.gL..('NukeStubsGenerator')
 nuke.tprint(logger.sL..(?.I..))
 

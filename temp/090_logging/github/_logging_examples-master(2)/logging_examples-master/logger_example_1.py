@@ -1,7 +1,7 @@
 ______ argparse
 ______ ?
 
-?.basicConfig(level_?.D..)
+?.bC..(level_?.D..)
 
 
 ___ simple_parser():

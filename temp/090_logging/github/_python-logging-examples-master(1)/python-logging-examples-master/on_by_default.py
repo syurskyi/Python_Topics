@@ -5,7 +5,7 @@ ______ ?
 
 # This is one way, where you turn off things you don't want to see
 # and everything is on by default
-?.basicConfig(level_?.D..)
+?.bC..(level_?.D..)
 ?.gL..("verboselib").sL..(?.WARN)
 # ... more lines for each library you want to squelch, not very pretty
 

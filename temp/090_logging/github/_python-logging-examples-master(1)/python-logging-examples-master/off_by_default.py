@@ -9,7 +9,7 @@ ______ ?
 # Doing it this way, only WARN and higher from libraries come out,
 # but you choose the level for your app.
 log _ ?.gL..("my_app")
-?.basicConfig(level_?.WARN)
+?.bC..(level_?.WARN)
 ?.gL..("my_app").sL..(?.D..)
 # no config needed for each library, unless you want to explicitly
 # enable d../i.. for that library
