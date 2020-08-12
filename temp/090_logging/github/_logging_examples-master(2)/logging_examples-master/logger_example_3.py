@@ -10,7 +10,7 @@ from ex3_sub_module ______ foo
 def simple_parser():
     
     # principal logger
-    logger _ ?.gL..(__name__)
+    logger _ ?.gL..( -n)
     logger.sL..(?.I..)
     
     # set a file handler to write output to file
@@ -23,7 +23,7 @@ def simple_parser():
     # assign the formatted file handler to the logger
     logger.aH..(fh)
     
-    logger.info("Command Line inputs: " + ' '.join(sys.argv[1:]))
+    logger.i..("Command Line inputs: " + ' '.join(sys.argv[1:]))
     
     parser _ argparse.ArgumentParser()
     
@@ -36,7 +36,7 @@ def simple_parser():
     return args.A, args.B, args.C
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     args _ simple_parser()
     print(foo(*args))
     

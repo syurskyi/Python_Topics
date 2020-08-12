@@ -32,4 +32,4 @@
 # ?.aH..(h2)
 # ?.aH..(h3)
 #
-# ?.debug("configuration loaded")
+# ?.d..("configuration loaded")

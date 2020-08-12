@@ -10,11 +10,11 @@ ______ ?
 # ... more lines for each library you want to squelch, not very pretty
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     vl _ verboselib.Noisy()
-    ?.info("This will be output, because we set global to DEBUG.")
-    ?.info("But not the verbose lib calls below at debug and info")
+    ?.i..("This will be output, because we set global to DEBUG.")
+    ?.i..("But not the verbose lib calls below at d.. and i..")
     vl.do_debug()
     vl.do_info()
-    ?.warn("Watch out! about to log from noisy!")
+    ?.w..("Watch out! about to log from noisy!")
     vl.do_warn() 

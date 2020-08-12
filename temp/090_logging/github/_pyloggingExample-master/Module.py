@@ -7,13 +7,13 @@ class Copy:
     def __init__(self):
         self.logger _ ?.gL..('build.log.gingerModule.Copy')
     def execute(self):
-        self.logger.info('COPY')        
-        self.logger.info('Sucessfull')
+        self.logger.i..('COPY')
+        self.logger.i..('Sucessfull')
 
 
 class Delete:
     def __init__(self):
         self.logger _ ?.gL..('build.log.gingerModule.Delete')
     def execute(self):
-        self.logger.info('DELETE')        
-        self.logger.info('Sucessfull')
+        self.logger.i..('DELETE')
+        self.logger.i..('Sucessfull')

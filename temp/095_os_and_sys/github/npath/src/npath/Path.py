@@ -11,7 +11,7 @@ class Path(object):
         self.__relative_to _ None
 
         # Collect relative_to off first path parm if we can
-        try:
+        ___
             self.__relative_to _ parms[0].__relative_to
         except AttributeError:
             self.__relative_to _ None
@@ -80,7 +80,7 @@ class Path(object):
         :param other: Another path or string
         :return:
         '''
-        try:
+        ___
              return other._compare_str == self._compare_str
         except AttributeError:
             a _ Path.normalize_path_sep(str(other))
@@ -216,7 +216,7 @@ class Path(object):
         return os.listdir(self.effective_path_str)
 
     def samefile(self, other):
-        try:
+        ___
             return os.path.samefile(self.effective_path_str, str(other))
         except AttributeError:
             raise AttributeError("os.path.samefile() only available for Unix")

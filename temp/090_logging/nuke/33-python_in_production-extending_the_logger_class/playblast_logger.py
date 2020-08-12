@@ -7,6 +7,6 @@ class PlayblastLogger(MayaLogger):
     
     
     
-if __name__ == "__main__":
+if  -n == "__main__":
 
-    PlayblastLogger.error("debug m..")
+    PlayblastLogger.error("d.. m..")

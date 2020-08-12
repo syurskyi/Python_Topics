@@ -6,26 +6,26 @@ from log_conf ______ Logger  # logger initialisation takes place during the
 #     (singleton) Logger class.
 
 
-Logger.logger.info('Hello World')
+Logger.logger.i..('Hello World')
 
 def main():
     logger _ Logger.logger  # for simplicity
 
     # Usage example:
-    logger.info('Started')
-    try:
+    logger.i..('Started')
+    ___
         logger.warning('potential problem...')
         x _ 1337
         y _ 0
         z _ x / y
     except Exception as ex:
         logger.error('Operation failed.')
-        # .debug log level messages will only show up in .log file
-        logger.debug('Encountered "{0}" when trying to perform calculation.'.format(ex))
-    logger.info('Ended')
+        # .d.. log level messages will only show up in .log file
+        logger.d..('Encountered "{0}" when trying to perform calculation.'.format(ex))
+    logger.i..('Ended')
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     main()
     ______ mymodule  # access the same logger instance from a different module
-    Logger.logger.info('Bye!')
+    Logger.logger.i..('Bye!')

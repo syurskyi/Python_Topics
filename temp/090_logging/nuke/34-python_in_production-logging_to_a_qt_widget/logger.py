@@ -48,14 +48,14 @@ class Logger(object):
         lg.propagate _ propagate
 
     @classmethod
-    def debug(cls, msg, *args, **kwargs):
+    def d..(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
-        lg.debug(msg, *args, **kwargs)
+        lg.d..(msg, *args, **kwargs)
 
     @classmethod
-    def info(cls, msg, *args, **kwargs):
+    def i..(cls, msg, *args, **kwargs):
         lg _ cls.logger_obj()
-        lg.info(msg, *args, **kwargs)
+        lg.i..(msg, *args, **kwargs)
 
     @classmethod
     def warning(cls, msg, *args, **kwargs):
@@ -94,12 +94,12 @@ class Logger(object):
         lg.aH..(file_handler)
 
 
-if __name__ == "__main__":
+if  -n == "__main__":
     
     Logger.set_propagate(False)
 
-    Logger.debug("debug m..")
-    Logger.info("info m..")
+    Logger.d..("d.. m..")
+    Logger.i..("i.. m..")
     Logger.warning("warning m..")
     Logger.error("error m..")
     Logger.critical("critical m..")

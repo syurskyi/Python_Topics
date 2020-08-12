@@ -8,7 +8,7 @@ ______ sendNodes_path as SP
 
 inNuke _ SP.inNuke
 
-try:
+___
     ______ nuke
 except ImportError:
     pass
@@ -16,9 +16,9 @@ except ImportError:
 
 def paste_nk(path):
     if inNuke:
-        try:
+        ___
             nuke.nodePaste(path)
-        except:
+        _______
             print "paste node failed"
 
 
@@ -27,7 +27,7 @@ def send_nk(path):
     nodesStr _ ""
     if inNuke:
         if nuke.selectedNodes() !_ []:
-            try:
+            ___
                 if not os.path.exists(os.path.dirname(path)):
                     os.makedirs(os.path.dirname(path))
                 for n in nuke.selectedNodes():
@@ -36,7 +36,7 @@ def send_nk(path):
                     temp _ " ".join(nodesName)
                     nodesStr _ "%s..." % temp[:30]
                 nuke.nodeCopy(path)
-            except:
+            _______
                 f _ open("%s/%s/traceback_log.txt" % (SP.USERS_Folder, os.path.expanduser('~').replace('\\','/').split("/")[-1]), 'a')
                 traceback.print_exc(file_f)
                 f.flush()
@@ -46,23 +46,23 @@ def send_nk(path):
 
 
 def clear_selection():
-    try:
+    ___
         for n in nuke.selectedNodes():
             n.setSelected(False)
-    except:
+    _______
         pass
 
 
 def get_nk_name():
     nkName _ ""
     if inNuke:
-        try:
+        ___
             filePath _ nuke.root().knob("name").value()
             if filePath == "":
                 nkName _ "Untitled"
             else:
                 nkName _ filePath.split("/")[-1]
-        except:
+        _______
             print "get nk name failed"
     return nkName
 

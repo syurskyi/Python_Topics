@@ -77,13 +77,13 @@ class path(_base):
         for arg in args:
             if not isinstance(arg, basestring):
                 raise ValueError("%s() arguments must be Path, str or "
-                                 "unicode" % typ.__name__)
+                                 "unicode" % typ. -n)
         if len(args) == 1:
             return _base.__new__(typ, *args)
         return typ(os.path.join(*args))
 
     def __repr__(self):
-        return '%s(%r)' % (self.__class__.__name__, _base(self))
+        return '%s(%r)' % (self.__class__. -n, _base(self))
 
     # Adding a path and a string yields a path.
     def __add__(self, more):

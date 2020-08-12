@@ -30,10 +30,10 @@ ______ mynk
 class MyNkGui(object):
   def __init__(self):
     nuke.pluginAddPath(os.path.join(_c.MYNK_PATH, 'icons'), addToSysPath_False)
-    LOG.info(' [MyNk] initializing custom user menus etc.')
+    LOG.i..(' [MyNk] initializing custom user menus etc.')
 
   def add_tool_menus(self, tool_str):
-    try:
+    ___
       tool _ eval(tool_str)
       menus _ getattr(tool, '__menus__' ,None)
     except AttributeError:

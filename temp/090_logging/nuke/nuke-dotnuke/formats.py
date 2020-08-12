@@ -12,7 +12,7 @@ from . ______ constants as _c
 from . ______ LOG
 from . ______ config
 
-LOG.info(' [MyNk] initializing custom user image formats')
+LOG.i..(' [MyNk] initializing custom user image formats')
 
 
 def add_format(W, H, x, y, r, t, pa, format_name):
@@ -26,7 +26,7 @@ def add_format(W, H, x, y, r, t, pa, format_name):
       format_str _ u'{0} {1} {2} {3} {4} {5} {6} {7}'.format(W, H, x, y, r, t, pa, format_name)
       nuke.addFormat(format_str)
       msg _ u'Added format: {0}'.format(format_str)
-      LOG.debug(msg)
+      LOG.d..(msg)
 
 
 def add_formats_from_dict(defaults_dict):

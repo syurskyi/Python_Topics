@@ -6,7 +6,7 @@ ______ sys
 
 
 def simple_parser():
-    ?.info("Command Line inputs: " + ' '.join(sys.argv[1:]))
+    ?.i..("Command Line inputs: " + ' '.join(sys.argv[1:]))
     
     parser _ argparse.ArgumentParser()
     
@@ -22,15 +22,15 @@ def simple_parser():
 def foo(A, B, C):
     """Demonstrate basic logging functionality with file output."""
     
-    ?.info(f'args: ({A}, {B}, {C})')
+    ?.i..(f'args: ({A}, {B}, {C})')
     
     result _ (A + B) * C
-    ?.info(f'result: {result}')
+    ?.i..(f'result: {result}')
     
     return result
     
     
-if __name__ == '__main__':
+if  -n == '__main__':
     args _ simple_parser()
     print(foo(*args))
     

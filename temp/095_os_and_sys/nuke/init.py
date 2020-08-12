@@ -32,13 +32,13 @@ ______ platform
 
 
 if nuke.GUI:
-    try:
+    ___
         ______ nuke
-    except:
+    _______
         print "Could not import: nuke"
-    # try:
+    # ___
     #     import hiero_tools
-    # except:
+    # _______
     #     print "Could not import: hiero_tools"
     nuke_toolbar _ nuke.menu("Nodes")
     foot_nuke_toolbar.addMenu('Foooo', icon_"mynk.png")

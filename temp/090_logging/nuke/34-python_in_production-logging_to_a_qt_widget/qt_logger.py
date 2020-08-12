@@ -46,6 +46,6 @@ class QtLogger(Logger):
 
 
 
-if __name__ == "__main__":
+if  -n == "__main__":
 
     QtLogger.error("error m..")

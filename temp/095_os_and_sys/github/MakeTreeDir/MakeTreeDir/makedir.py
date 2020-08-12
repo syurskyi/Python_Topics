@@ -20,7 +20,7 @@ class MAKETREEDIR:
 			>>> md.makedir('../../../folderName')
 			>>> md.makedir('C://Users/userName/folderName')
 		"""
-		try:
+		___
 			sep_'/' if '/' in dir_path else '\\'
 			dirs_dir_path.split(sep)
 

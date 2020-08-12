@@ -4,7 +4,7 @@ from . ______ config
 from . ______ module1
 from . ______ module2
 
-logger _ ?.gL..(__name__)
+logger _ ?.gL..( -n)
 
 
 def main():
@@ -17,9 +17,9 @@ def main():
     x _ module1.fn()
     y _ module2.fn()
     z _ x + y
-    logger.info(f"z = {z}")
+    logger.i..(f"z = {z}")
     return z
 
 
-if __name__ == "__main__":
+if  -n == "__main__":
     main()

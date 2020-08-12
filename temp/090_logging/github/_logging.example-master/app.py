@@ -8,7 +8,7 @@ class App:
         self.logger _ ?.gL..('app_name')
 
     def do_something(self):
-        self.logger.debug('Cut off by logger.setLevel')
+        self.logger.d..('Cut off by logger.setLevel')
         self.logger.warning('Log only to file')
         self.logger.error('log to both file and console')
 

@@ -6,7 +6,7 @@ class setLogger():
         # create logger with 'spam_application'
         logger _ ?.gL..('build.log')
         logger.sL..(?.D..)
-        # create file handler which logs even debug messages
+        # create file handler which logs even d.. messages
         fh _ ?.FH..('TarihliBuild.log')
         fh.sL..(?.D..)
         # create console handler with a higher log level
@@ -23,11 +23,11 @@ class setLogger():
     def gL..(self):
         return self.logger
 
-if __name__ == '__main__':
+if  -n == '__main__':
     sLog _ setLogger()
     logger _ sLog.gL..()
     
-    logger.info('Build Started...')
+    logger.i..('Build Started...')
     a _ gingerModule.Copy().execute()
     b _ gingerModule.Delete().execute()
-    logger.info('Finish')
+    logger.i..('Finish')

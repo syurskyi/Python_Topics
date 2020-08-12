@@ -127,12 +127,12 @@ def win_amount(wins):
     return amount
 
 
-if __name__=='__main__':
+if  -n=='__main__':
     logger _ get_logger("win_calculator")
-    logger.debug("a debug m..")
-    logger.error("a debug m..")
-    logger.info("a debug m..")
-    logger.critical("a debug m..")
+    logger.d..("a d.. m..")
+    logger.error("a d.. m..")
+    logger.i..("a d.. m..")
+    logger.critical("a d.. m..")
 
     '''caller = 'parameter'
     square = Square(10)

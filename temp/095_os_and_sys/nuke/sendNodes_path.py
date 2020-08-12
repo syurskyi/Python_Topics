@@ -7,10 +7,10 @@ ______ sys
 
 inNuke _ False
 
-try:
+___
     ______ nuke
     inNuke _ True
-except:
+_______
     print "not in nuke"
 
 ThisPath _ __file__

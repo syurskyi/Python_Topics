@@ -3,4 +3,4 @@
 from log_conf ______ Logger
 
 
-Logger.logger.info('Hello from mymodule')
+Logger.logger.i..('Hello from mymodule')

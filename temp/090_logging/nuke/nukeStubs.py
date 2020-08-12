@@ -38,7 +38,7 @@ class NukeStubsGenerator(object):
             if directory:
                 raise IOError("Directory %s does not exist. Cannot write." % (self.directory))
 
-            logger.info('Creating directory %s', self.directory)
+            logger.i..('Creating directory %s', self.directory)
             os.mkdir(self.directory)
 
         self.output_file _ os.path.join(self.directory, 'nuke.py')
@@ -79,9 +79,9 @@ class NukeStubsGenerator(object):
         @returns tuple of (name, args, defaults)
         """
 
-        try:
-            name _ builtin.__name__
-        except:
+        ___
+            name _ builtin. -n
+        _______
             name _ None
 
         args _ []
@@ -120,20 +120,20 @@ class NukeStubsGenerator(object):
     def get_info(self, func):
         """Resolves the signature and docstring for a given object
         @param func: an executable object to work on.
-        @return Returns True if it could resolve info, otherwise it fails
+        @return Returns True if it could resolve i.., otherwise it fails
         """
 
         if inspect.isbuiltin(func) or inspect.isroutine(func):
 
             name, args, defaults _ self.get_builtin_info(func)
         else:
-            try:
+            ___
                 spec _ inspect.getargspec(func)
-            except:
-                logger.info('Failed to resolve %s', func)
+            _______
+                logger.i..('Failed to resolve %s', func)
                 return
 
-            name _ func.__name__
+            name _ func. -n
             args _ spec.args or []
             defaults _ spec.defaults or []
 
@@ -161,9 +161,9 @@ class NukeStubsGenerator(object):
     def get_class_info(self, cls):
         """Resolves the signature, docstring and members of a class"""
 
-        base _ inspect.getclasstree([cls])[0][0].__name__
+        base _ inspect.getclasstree([cls])[0][0]. -n
 
-        signature _ '\nclass %s(%s):' % (cls.__name__, base)
+        signature _ '\nclass %s(%s):' % (cls. -n, base)
         self.write(signature)
         self.indent()
         doc _ '"""%s"""' % cls.__doc__
@@ -172,7 +172,7 @@ class NukeStubsGenerator(object):
             if member_name.startswith('__'):
                 continue
             if not member:
-                logger.info('Failed to resolve %s', member_name)
+                logger.i..('Failed to resolve %s', member_name)
             else:
                 self.get_info(member)
 
@@ -187,7 +187,7 @@ class NukeStubsGenerator(object):
                 continue
             obj _ getattr(nuke, name, None)
             if not obj:
-                logger.info('Failed to resolve %s', name)
+                logger.i..('Failed to resolve %s', name)
             elif inspect.isclass(obj):
                 self.get_class_info(obj)
             else:
@@ -198,7 +198,7 @@ class NukeStubsGenerator(object):
         with open(self.output_file, 'w') as f:
             f.write(self.contents)
 
-        logger.info('Wrote to %s', self.output_file)
+        logger.i..('Wrote to %s', self.output_file)
 
 def generate(directory_None):
     """Convenience method for generating the stubs.
@@ -208,5 +208,5 @@ def generate(directory_None):
     stubs _ NukeStubsGenerator(directory)
     return stubs
 
-if __name__ == '__main__':
+if  -n == '__main__':
     print generate()

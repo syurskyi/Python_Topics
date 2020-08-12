@@ -28,10 +28,10 @@ class MyNkConfig(object):
     user_cfg_path _ _c.DOTNUKE_PATH
     user_cfg_file_path _ os.path.join(user_cfg_path, 'mynk.cfg')
     if not os.path.isdir(user_cfg_path):
-      try:
+      ___
         os.makedirs(user_cfg_path)
-        LOG.info("Created initial user config: %s" % user_cfg_file_path)
-      except:
+        LOG.i..("Created initial user config: %s" % user_cfg_file_path)
+      _______
         if not os.path.isdir(user_cfg_path):
           raise
     if not os.path.exists(user_cfg_file_path):

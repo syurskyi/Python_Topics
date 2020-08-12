@@ -18,15 +18,15 @@ def run():
     load_logging_conf('logging.conf')
     # All loggers MUST be started AFTER this point, including for imported modules!
     # Start the logger for this module.
-    log _ ?.gL..(__name__)
+    log _ ?.gL..( -n)
 
     opts, args _ parse_cli_args()
 
     set_debug_verbosity(opts.verbose)
 
-    log.debug('test debug m..')
-    log.info('test info m..')
-    log.warn('test warn m..')
+    log.d..('test d.. m..')
+    log.i..('test i.. m..')
+    log.w..('test w.. m..')
     log.error('test error m..')
     log.critical('test critical m..')
 
@@ -46,12 +46,12 @@ def parse_cli_args():
     parser _ optparse.OptionParser()
     parser.add_option('-v', '--verbose', dest_"verbose",
                       action_'count', default_0,
-                      help_'increase debug logging level')
+                      help_'increase d.. logging level')
 
     return parser.parse_args()
 
 def set_debug_verbosity(verbosity_counter):
-    """Deactivates the debug handler if verbosity_counter is 0, else sets
+    """Deactivates the d.. handler if verbosity_counter is 0, else sets
     the logging level appropriately."""
 
     debug_handler _ ?.root.handlers[1]
@@ -66,5 +66,5 @@ def set_debug_verbosity(verbosity_counter):
         debug_handler.level _ ?.NOTSET
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     run()

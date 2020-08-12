@@ -7,9 +7,9 @@ ______ platform
 from .logger ______ logger
 
 TESTING _ False
-try:
+___
     TESTING _ os.environ['NON_PRODUCTION_CONTEXT']
-except:
+_______
     if platform.system() == 'Darwin':
         application _ r'Nuke\d+\.\d+v\d+.app'
     elif platform.system() == 'Windows':
@@ -30,15 +30,15 @@ silo_location _ os.path.dirname(os.path.abspath(__file__))
 
 
 def init():
-    logger.info('Initialising The Silo...')
-    logger.info('Version: {0}'.format(__version__))
+    logger.i..('Initialising The Silo...')
+    logger.i..('Version: {0}'.format(__version__))
     nuke.pluginAddPath('{0}/gizmos'.format(silo_location))
-    logger.info('[DONE]')
+    logger.i..('[DONE]')
 
 
 def build(toolbar_True):
-    logger.info('Building The Silo UI...')
-    logger.info('Version: {0}'.format(__version__))
+    logger.i..('Building The Silo UI...')
+    logger.i..('Version: {0}'.format(__version__))
 
     if not nuke.GUI:
         logger.critical('Nuke is not in GUI mode, aborting UI creation')
@@ -54,7 +54,7 @@ def build(toolbar_True):
 
     for gizmo_name, gizmo in sorted(silo_data['gizmos'],
                                     key_lambda x: x[0]):
-        logger.info('Adding gizmo: {0}'.format(gizmo_name))
+        logger.i..('Adding gizmo: {0}'.format(gizmo_name))
         silo_menu.addCommand('Gizmos/{0}'.format(gizmo_name),
                              'from the_silo import wrapper;'
                              'wrapper.create_gizmo(\'{0}\')'.
@@ -62,7 +62,7 @@ def build(toolbar_True):
 
     for script_name, module, func, keys in sorted(silo_data['scripts'],
                                                   key_lambda x: x[0]):
-        logger.info('Adding script: {0}'.format(script_name))
+        logger.i..('Adding script: {0}'.format(script_name))
         silo_menu.addCommand('Scripts/{0}'.format(script_name),
                              'from the_silo import wrapper;'
                              'wrapper.exec_script(\'{0}\', \'{1}\')'.
@@ -83,4 +83,4 @@ def build(toolbar_True):
         'import webbrowser;webbrowser.open('
         '\'https://github.com/florianeinfalt/the_silo\')')
 
-    logger.info('[DONE]')
+    logger.i..('[DONE]')

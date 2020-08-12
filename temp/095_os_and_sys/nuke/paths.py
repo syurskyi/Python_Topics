@@ -15,7 +15,7 @@ def get_files_list(filepath):
     basedir _ os.path.dirname(filepath)
     filename _ os.path.basename(filepath)
     files_list _ []
-    try:
+    ___
         basename, file_sequence, ext _ get_file_elements(filename)
         pattern _ '{}.{}.{}'.format(basename, '*' * len(file_sequence), ext)
         pattern _ os.path.join(basedir, pattern)

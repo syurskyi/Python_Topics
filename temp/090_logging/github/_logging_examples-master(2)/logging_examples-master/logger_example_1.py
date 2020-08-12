@@ -20,15 +20,15 @@ def simple_parser():
 def foo(A, B, C):
     """Demonstrate basic logging functionality with command line output."""
     
-    ?.debug(f'args: ({A}, {B}, {C})')
+    ?.d..(f'args: ({A}, {B}, {C})')
     
     result _ (A + B) * C
-    ?.debug(f'result: {result}')
+    ?.d..(f'result: {result}')
     
     return result
     
     
-if __name__ == '__main__':
+if  -n == '__main__':
     args _ simple_parser()
     print(foo(*args))
     

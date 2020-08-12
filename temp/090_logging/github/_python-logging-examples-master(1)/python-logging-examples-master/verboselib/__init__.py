@@ -6,10 +6,10 @@ class Noisy(object):
         self.log _ ?.gL..("verboselib.Noisy")
 
     def do_debug(self):
-        self.log.debug("logged at debug")
+        self.log.d..("logged at d..")
 
     def do_info(self):
-        self.log.info("logged at info")
+        self.log.i..("logged at i..")
 
     def do_warn(self):
-        self.log.warn("logged at warn")
+        self.log.w..("logged at w..")

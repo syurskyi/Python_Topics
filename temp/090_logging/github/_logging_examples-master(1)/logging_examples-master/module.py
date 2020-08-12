@@ -4,7 +4,7 @@ ______ submodule
 
 
 ?.config.fileConfig("logging.ini", disable_existing_loggers_False)
-logger _ ?.gL..(__name__)
+logger _ ?.gL..( -n)
 
 
 def bar():
@@ -14,13 +14,13 @@ def bar():
 def exc_logging():
     a, b _ 5, 0
 
-    try:
+    ___
         c _ a / b
     except ZeroDivisionError:
         logger.critical("Exception occurred", exc_info_True)
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     bar()
     submodule.foo()
     exc_logging()

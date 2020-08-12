@@ -1,7 +1,7 @@
 ______ ?
 
-logger _ ?.gL..(__name__)
+logger _ ?.gL..( -n)
 
 def foo():
-    logger.info("beginning foo")
+    logger.i..("beginning foo")
     raise SystemExit("THE COMPUTER SAYS 'NO'")

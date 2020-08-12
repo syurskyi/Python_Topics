@@ -24,16 +24,16 @@ user attention was grabbed when needed.
 
 To use:
     log = getLogger( 'mylogger' )
-    log.info( 'log something' )
+    log.i..( 'log something' )
 
-    # Set level to debug
+    # Set level to d..
     log = getLogger( 'mylogger', level=DEBUG )
     # OR
     log = getLogger( 'mylogger' )
     log.setLevel( DEBUG )
 
     # Alart user:
-    try:
+    ___
         ... do something
     except Exception, error :
         log.fatal( "pop up this m.. if we're in nuke or maya" )
@@ -47,14 +47,14 @@ ______ sys
 ______ ?
 
 ## Load Maya:
-try:
+___
 	______ maya
 	_in_maya _ True
 except Exception:
 	_in_maya _ False
 
 ## Load Nuke:
-try:
+___
 	______ nuke
 	_in_nuke _ True
 except Exception:
@@ -62,14 +62,14 @@ except Exception:
 
 
 ## Load Nuke:
-try:
+___
 	______ nuke
 	_in_nuke _ True
 except Exception:
 	_in_nuke _ False
 
 ## Load Mobu:
-try:
+___
 	______ pyfbsdk
 	_in_mobu _ True
 except Exception:
@@ -181,11 +181,11 @@ class Logger():
 			raise AttributeError, "No attribute %s" %attr
 
 	## LEVELS
-	def debug(self, msg):
-		self.__logger.debug(msg)
+	def d..(self, msg):
+		self.__logger.d..(msg)
 
-	def info(self, msg):
-		self.__logger.info(msg)
+	def i..(self, msg):
+		self.__logger.i..(msg)
 
 	def warning(self, msg):
 		self.__logger.warning(msg)
@@ -211,7 +211,7 @@ class ShellHandler(?.Handler):
 
 	def emit(self, record):
 
-		try:
+		___
 			sys.__stdout__.write( "%s\n" %self.format(record) )
 		except IOError:
 			## MotionBuilder is doing something funky with python,
@@ -313,14 +313,14 @@ class MobuHandler(?.Handler):
 
 
 ## -----------------------------------------------------------------------------
-# __name__
+#  -n
 ## -----------------------------------------------------------------------------
-if __name__ == '__main__':
+if  -n == '__main__':
 
 	log _ gL..( "logger_name", shell_True )
 	log.sL..( ?.D.. )
-	log.debug('debug msg')
-	log.info('info msg')
+	log.d..('d.. msg')
+	log.i..('i.. msg')
 	log.warning('warning msg')
 	log.fatal('fatal msg')
 

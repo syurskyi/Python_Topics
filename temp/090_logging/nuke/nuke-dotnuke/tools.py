@@ -34,15 +34,15 @@ MYNK_MENU_INDEX _ [
 class MyNkTools(object):
 
   @property
-  def __name__(self):
+  def  -n(self):
     return 'mynk.tools'
 
   def __init__(self, path_list_[]):
     self.path_list _ path_list
     self.tools_dict _ {}
     self.python_Bunch()
-    self.prefix _ inspect.getmodule(self).__name__
-    LOG.info(' [MyNk] initializing custom user tools')
+    self.prefix _ inspect.getmodule(self). -n
+    LOG.i..(' [MyNk] initializing custom user tools')
   
   def add_default_path(self):
     if not self.path_list:
@@ -71,7 +71,7 @@ class MyNkTools(object):
       dest _ self.python
     # we want a filesystem path so check for that first
     if os.path.isdir(path):
-      LOG.debug(u'Loading tools from path: {0}'.format(path))
+      LOG.d..(u'Loading tools from path: {0}'.format(path))
       # add path to system path
       sys.path.append(path)
       search_re _ re.compile(".*\.py$", re.IGNORECASE)
@@ -84,10 +84,10 @@ class MyNkTools(object):
           # if file matches regex (is python file)
           if search_re.search(file_name):
             module_name _ os.path.splitext( file_name )[0]
-            try:
+            ___
               module _ imp.load_source(module_name, file_path)
               setattr(dest, module_name, module)
-              LOG.debug(u'Loaded Module [{0}]: {1}'.format(module_name, file_path))
+              LOG.d..(u'Loaded Module [{0}]: {1}'.format(module_name, file_path))
             except Exception, detail:
               LOG.warning(u'Module [{0}] could not be loaded: {1}\n{2}'.format(module_name, file_path, detail))
           # if file is directory (org or package)
@@ -95,10 +95,10 @@ class MyNkTools(object):
             path_check _ os.path.join(file_path, "__init__.py" )
             if os.path.exists(path_check):
               package_name _ os.path.splitext(file_name)[0]
-              try:
+              ___
                 package _ __import__(package_name)
                 setattr(dest, package_name, package)
-                LOG.debug(debug_msg _ u'Loaded Package [{0}]: {1}'.format(package_name, file_path))
+                LOG.d..(debug_msg _ u'Loaded Package [{0}]: {1}'.format(package_name, file_path))
               except Exception, detail:
                 LOG.warning(u'Package [{0}] could not be loaded from path: {1}\n{2}'.format(package_name, file_path, detail))
             else:
@@ -114,7 +114,7 @@ class MyNkTools(object):
     for i,j in self.tools.__dict__.iteritems():
       if isinstance( j, types.ModuleType ):
         if hasattr( j, "version" ):
-          LOG.info( "  ---> Plugin: %s %s %s" % (str(i), str(j), str(j.version) ) )
+          LOG.i..( "  ---> Plugin: %s %s %s" % (str(i), str(j), str(j.version) ) )
         else:
-          LOG.info( "  ---> Unversioned Plugin: %s %s " % (str(i), str(j)) )
+          LOG.i..( "  ---> Unversioned Plugin: %s %s " % (str(i), str(j)) )
 

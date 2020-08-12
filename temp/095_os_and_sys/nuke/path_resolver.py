@@ -50,12 +50,12 @@ class PathResolver(object):
             str: Representation using nuke and pyside paths.
 
         """
-        info _ ("Operating system: {}\n"
+        i.. _ ("Operating system: {}\n"
                 "Exe pattern: {}\n"
                 "Nuke executable: {}\n"
                 "Site-packages: {}\n")
 
-        return info.format(self.operating_sytem, self.exe_pattern, self.nuke,
+        return i...format(self.operating_sytem, self.exe_pattern, self.nuke,
                            self.site_packages)
 
     def _set_os_abbreviation(self):

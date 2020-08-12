@@ -2,12 +2,12 @@ ______ ? as logcuBABA
 
     
 def whoami():
-    logcuBABA.info("Now I'm there")
+    logcuBABA.i..("Now I'm there")
 
 def foo():
-    logcuBABA.info("I'm here")
+    logcuBABA.i..("I'm here")
     whoami()
-    logcuBABA.info("I'm back here again")
+    logcuBABA.i..("I'm back here again")
 
 logcuBABA.basicConfig(
     format_"%(asctime)-15s [%(l..)s] %(funcName)s: %(m..)s",
@@ -15,5 +15,5 @@ logcuBABA.basicConfig(
 foo()
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     

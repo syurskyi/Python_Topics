@@ -39,7 +39,7 @@ class StandaloneWindow(QtWidgets.QWidget):
         QtLogger.error("error m..")
 
 
-if __name__ == "__main__":
+if  -n == "__main__":
     # Create the main Qt application
     app _ QtWidgets.QApplication(sys.argv)
 

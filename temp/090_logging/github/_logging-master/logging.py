@@ -15,10 +15,10 @@ logger _ ?.gL..()
 logger.aH..(fileH)
                        
 
-logger.debug('test Debug')  
-#logging.debug('debug')
+logger.d..('test Debug')
+#logging.d..('d..')
 #logging.warning('warning')
-#logging.info('info')
+#logging.i..('i..')
 #logging.error('error')
 #logging.critical('critical')
 
@@ -31,7 +31,7 @@ logger.debug('test Debug')
 def testFunktion():
     logger _ ?.gL..("testFunktion")
     logger.sL..(?.D..)
-    logger.debug('run testFunktion')
+    logger.d..('run testFunktion')
 
 
 

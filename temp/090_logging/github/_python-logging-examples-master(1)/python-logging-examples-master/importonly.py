@@ -8,7 +8,7 @@ ______ ?
 
 ?.raiseExceptions _ False
 
-if __name__ == '__main__':
+if  -n == '__main__':
     vl _ verboselib.Noisy()
     print "no logging configured, so no output at all here"
     vl.do_debug()

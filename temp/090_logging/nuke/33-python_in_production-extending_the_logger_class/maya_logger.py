@@ -10,10 +10,10 @@ class MayaLogger(Logger):
     PROPAGATE_DEFAULT _ False
     
     
-if __name__ == "__main__":
+if  -n == "__main__":
 
-    MayaLogger.debug("debug m..")
-    MayaLogger.info("info m..")
+    MayaLogger.d..("d.. m..")
+    MayaLogger.i..("i.. m..")
     MayaLogger.warning("warning m..")
     MayaLogger.error("error m..")
     

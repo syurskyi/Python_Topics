@@ -12,15 +12,15 @@ log _ ?.gL..("my_app")
 ?.basicConfig(level_?.WARN)
 ?.gL..("my_app").sL..(?.D..)
 # no config needed for each library, unless you want to explicitly
-# enable debug/info for that library
+# enable d../i.. for that library
 
 
-if __name__ == '__main__':
+if  -n == '__main__':
     vl _ verboselib.Noisy()
     # note, use our log, not the class methods.
-    log.info("This will be output, because we set global to DEBUG.")
-    log.info("But not the verbose lib calls below at debug and info")
+    log.i..("This will be output, because we set global to DEBUG.")
+    log.i..("But not the verbose lib calls below at d.. and i..")
     vl.do_debug()
     vl.do_info()
-    log.warn("Watch out! about to log from noisy!")
+    log.w..("Watch out! about to log from noisy!")
     vl.do_warn() 

@@ -39,4 +39,4 @@ ______ knobs
 
 __all__ _ [ 'constants', 'const', 'set_const', 'LOG', 'config', 'gui', 'formats', 'tools', 'knobs', ]
 
-__name__ _ 'mynk'
+ -n _ 'mynk'
