@@ -1,4 +1,4 @@
-______ os
+______ __
 
 
 c_ Path(object):
@@ -6,7 +6,7 @@ c_ Path(object):
 
     ___  - (self, *parms, **kwargs):
         str_parms _ [str(p) for p __ parms]
-        __path _ os.path.join(*str_parms)
+        __path _ __.path.j..(*str_parms)
 
         __relative_to _ None
 
@@ -42,7 +42,7 @@ c_ Path(object):
         __ __relative_to is None:
             r_ __path
         else:
-            r_ os.path.join(str(__relative_to), __path)
+            r_ __.path.j..(str(__relative_to), __path)
 
 
     @property
@@ -51,7 +51,7 @@ c_ Path(object):
         __ __relative_to is None:
             path _ str(self)
         else:
-            path _ os.path.join(str(__relative_to), str(self))
+            path _ __.path.j..(str(__relative_to), str(self))
 
         # Normalize path seperators
         path _ Path.normalize_path_sep(path)
@@ -61,7 +61,7 @@ c_ Path(object):
 
     @staticmethod
     ___ normalize_path_sep(path):
-        r_ path.replace('/', os.path.sep).replace('\\', os.path.sep)
+        r_ path.replace('/', __.path.sep).replace('\\', __.path.sep)
 
 
     ___ __eq__(self, other):
@@ -102,7 +102,7 @@ c_ Path(object):
             __ __relative_to is no. None:
                 r_ __relative_to
             else:
-                r_ os.path.abspath(os.curdir)
+                r_ __.path.abspath(__.curdir)
         r_ None
 
 
@@ -128,7 +128,7 @@ c_ Path(object):
 
         path _ str(self)
         __ __relative_to is no. None:
-            path _ os.path.join(str(__relative_to), path)
+            path _ __.path.j..(str(__relative_to), path)
 
         __ no. path.startswith(root):
             r_ ValueError("%s cannot be represented relative to %s" %(
@@ -139,19 +139,19 @@ c_ Path(object):
 
     @property
     ___ exists
-        r_ os.path.exists(effective_path_str)
+        r_ __.path.exists(effective_path_str)
 
     @property
     ___ is_file
-        r_ os.path.isfile(effective_path_str)
+        r_ __.path.isfile(effective_path_str)
 
     @property
     ___ is_dir
-        r_ os.path.isdir(effective_path_str)
+        r_ __.path.isdir(effective_path_str)
 
     @property
     ___ is_link
-        r_ os.path.islink(effective_path_str)
+        r_ __.path.islink(effective_path_str)
 
 
     @property
@@ -160,22 +160,22 @@ c_ Path(object):
             __ __relative_to is no. None:
                 r_ Path(__relative_to, __path)
             else:
-                r_ Path(os.path.abspath(__path))
+                r_ Path(__.path.abspath(__path))
         else:
-            r_ Path(os.path.abspath(__path))
+            r_ Path(__.path.abspath(__path))
 
     @property
     ___ basename
-        r_ os.path.basename(__path)
+        r_ __.path.basename(__path)
 
     @property
     ___ parent
-        r_ Path(os.path.dirname(__path))
+        r_ Path(__.path.dirname(__path))
 
 
     @property
     ___ splitext
-        prefix, ext _ os.path.splitext(__path)
+        prefix, ext _ __.path.splitext(__path)
         __ ext is no. None and ext[0] __ '.':
             ext _ ext[1:]
         r_ prefix, ext
@@ -189,19 +189,19 @@ c_ Path(object):
         r_ splitext[1]
 
     ___ split
-        r_ str(norm).split(os.sep)
+        r_ str(norm).split(__.sep)
 
     ___ has_ext(self, *exts):
         r_ ext.lower() __ set([e.lower() for e __ exts])
 
     @property
     ___ norm
-        r_ Path(os.path.normpath(__path))
+        r_ Path(__.path.normpath(__path))
 
 
-    ___ join(self, *paths):
+    ___ j..(self, *paths):
         paths _ [__path, ] + [str(p) for p __ paths]
-        r_ Path(os.path.join(*paths), relative_to_self.__relative_to)
+        r_ Path(__.path.j..(*paths), relative_to_self.__relative_to)
 
 
     @property
@@ -213,11 +213,11 @@ c_ Path(object):
 
 
     ___ list_dir
-        r_ os.listdir(effective_path_str)
+        r_ __.listdir(effective_path_str)
 
     ___ samefile(self, other):
         ___
-            r_ os.path.samefile(effective_path_str, str(other))
+            r_ __.path.samefile(effective_path_str, str(other))
         _____ AttributeError:
             r_ AttributeError("os.path.samefile() only available for Unix")
         _____ FileNotFoundError:
@@ -228,7 +228,7 @@ c_ Path(object):
     @property
     ___ dirs
         for name __ list_dir():
-            child _ join(name)
+            child _ j..(name)
             __ child.is_dir:
                 yield child
 
@@ -242,7 +242,7 @@ c_ Path(object):
     @property
     ___ files
         for name __ list_dir():
-            child _ join(name)
+            child _ j..(name)
             __ child.is_file:
                 yield child
 
@@ -257,7 +257,7 @@ c_ Path(object):
 
         Returned paths are RelativePath
         '''
-        for dirpath, dirnames, filenames __ os.walk(str(abs)):
+        for dirpath, dirnames, filenames __ __.walk(str(abs)):
             for name __ dirnames:
                 yield Path(dirpath, name).make_relative_to(abs)
             for name __ filenames:

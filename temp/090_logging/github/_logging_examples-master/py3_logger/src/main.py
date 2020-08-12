@@ -8,7 +8,7 @@ ______ argparse
 ______ json
 ______ ?
 ______ ?.config
-______ os
+______ __
 
 ______ example_package.example_module
 # We imported example_module before setting logging configuration.
@@ -36,8 +36,8 @@ ___ run():
 
 ___ load_logging_conf(log_cfg_filename):
     """Load logging configuration at '<src_dir>/../logs/<filename>' (os agnostic)."""
-    src_dir _ os.path.dirname(os.path.realpath(__file__))
-    cfg_file_path _ os.sep.join((src_dir, '..', 'logs', log_cfg_filename))
+    src_dir _ __.path.dirname(__.path.realpath( -f))
+    cfg_file_path _ __.sep.j..((src_dir, '..', 'logs', log_cfg_filename))
 
     # This will disable all previously existing loggers.
     with open(cfg_file_path) __ config_json:

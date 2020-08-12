@@ -19,7 +19,7 @@ Usage:
 """
 
 # Import built-in modules
-______ os
+______ __
 ______ platform
 ______ re
 ______ sys
@@ -94,14 +94,14 @@ c_ PathResolver(object):
                           "installation folder in the setting's 'Nuke root "
                           "dir' section.")
 
-        for root, dirs, files __ os.walk(path, topdown_False):
+        for root, dirs, files __ __.walk(path, topdown_False):
             for name __ files:
                 __ re.match(exe_pattern, name):
-                    nuke _ os.path.join(root, name)
+                    nuke _ __.path.j..(root, name)
             for name __ dirs:
                 __ re.match(pyside_pattern, name):
-                    pyside_root _ os.path.join(root, name)
-                    site_packages _ os.path.dirname(pyside_root)
+                    pyside_root _ __.path.j..(root, name)
+                    site_packages _ __.path.dirname(pyside_root)
 
         __ no. nuke:
             r_ OSError("Did not find any Nuke executable under "
@@ -126,8 +126,8 @@ c_ PathResolver(object):
             path (str): Absolute path to use.
 
         """
-        __ os.path.isfile(path):
-            path _ os.path.dirname(path)
+        __ __.path.isfile(path):
+            path _ __.path.dirname(path)
 
         path _ path
 

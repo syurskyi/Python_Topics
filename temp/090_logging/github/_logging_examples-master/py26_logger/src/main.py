@@ -4,7 +4,7 @@
 """Python2.6+ compatible logging setup module to be used as point-of-entry to a
 program."""
 
-______ os
+______ __
 ______ optparse
 ______ ?
 ______ ?.config
@@ -35,8 +35,8 @@ ___ run():
 
 ___ load_logging_conf(log_cfg_filename):
     """Load logging configuration at '<src_dir>/../logs/<filename>' (os agnostic)."""
-    src_dir _ os.path.dirname(os.path.realpath(__file__))
-    cfg_file_path _ os.sep.join((src_dir, '..', 'logs', log_cfg_filename))
+    src_dir _ __.path.dirname(__.path.realpath( -f))
+    cfg_file_path _ __.sep.j..((src_dir, '..', 'logs', log_cfg_filename))
 
     ?.config.fileConfig(cfg_file_path)
 

@@ -1,4 +1,4 @@
-______ os
+______ __
 
 c_ MAKETREEDIR:
 	___  -
@@ -37,9 +37,9 @@ c_ MAKETREEDIR:
 			### making directory
 			for i,fol __ enumerate(dirs):
 				path_dirs[:i+1]
-				directory_os.path.join(*path)
-				__ no. os.path.exists(directory):
-					os.makedirs(directory)
+				directory_os.path.j..(*path)
+				__ no. __.path.exists(directory):
+					__.makedirs(directory)
 
 		_____ E.. __ e:
 			r_ e

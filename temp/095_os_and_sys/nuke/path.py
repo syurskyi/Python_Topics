@@ -40,7 +40,7 @@ snitch()
 
 ______ fnmatch
 ______ glob
-______ os
+______ __
 ______ shutil
 ______ sys
 
@@ -54,7 +54,7 @@ __ hasattr(file, 'newlines'):
 
 # Use unicode strings __ possible
 _base _ str
-__ os.path.supports_unicode_filenames:
+__ __.path.supports_unicode_filenames:
     _base _ unicode
 
 
@@ -73,14 +73,14 @@ c_ path(_base):
         empty, Path(os.curdir) is created.
         """
         __ no. args:
-            r_ typ(os.curdir)
+            r_ typ(__.curdir)
         for arg __ args:
             __ no. isinstance(arg, basestring):
                 r_ ValueError("%s() arguments must be Path, str or "
                                  "unicode" % typ. -n)
         __ len(args) __ 1:
             r_ _base.__new__(typ, *args)
-        r_ typ(os.path.join(*args))
+        r_ typ(__.path.j..(*args))
 
     ___ __repr__
         r_ '%s(%r)' % (__class__. -n, _base(self))
@@ -95,27 +95,27 @@ c_ path(_base):
     @classmethod
     ___ cwd(cls):
         """ Return the current working directory as a path object. """
-        r_ path(os.getcwd())
+        r_ path(__.getcwd())
 
     # --- Operations on path strings.
 
     ___ abspath
-        r_ __class__(os.path.abspath(self))
+        r_ __class__(__.path.abspath(self))
 
     ___ normcase
-        r_ __class__(os.path.normcase(self))
+        r_ __class__(__.path.normcase(self))
 
     ___ normpath
-        r_ __class__(os.path.normpath(self))
+        r_ __class__(__.path.normpath(self))
 
     ___ realpath
-        r_ __class__(os.path.realpath(self))
+        r_ __class__(__.path.realpath(self))
 
     ___ expanduser
-        r_ __class__(os.path.expanduser(self))
+        r_ __class__(__.path.expanduser(self))
 
     ___ expandvars
-        r_ __class__(os.path.expandvars(self))
+        r_ __class__(__.path.expandvars(self))
 
     ___ expand
         """ Clean up a filename by calling expandvars(),
@@ -127,19 +127,19 @@ c_ path(_base):
         r_ expandvars().expanduser().normpath()
 
     ___ _get_namebase
-        base, ext _ os.path.splitext(name)
+        base, ext _ __.path.splitext(name)
         r_ base
 
     ___ _get_ext
-        f, ext _ os.path.splitext(_base(self))
+        f, ext _ __.path.splitext(_base(self))
         r_ ext
 
     ___ _get_drive
-        drive, r _ os.path.splitdrive(self)
+        drive, r _ __.path.splitdrive(self)
         r_ __class__(drive)
 
     ___ _get_dirname
-        r_ __class__(os.path.dirname(self))
+        r_ __class__(__.path.dirname(self))
 
     parent _ property(
         _get_dirname, None, None,
@@ -149,7 +149,7 @@ c_ path(_base):
         """)
 
     name _ property(
-        os.path.basename, None, None,
+        __.path.basename, None, None,
         """ The name of this file or directory without the full path.
 
         For example, path('/usr/local/lib/libpython.so').name == 'libpython.so'
@@ -176,7 +176,7 @@ c_ path(_base):
 
     ___ splitpath
         """ p.splitpath() -> Return (p.parent, p.name). """
-        parent, child _ os.path.split(self)
+        parent, child _ __.path.split(self)
         r_ __class__(parent), child
 
     ___ stripext
@@ -185,15 +185,15 @@ c_ path(_base):
         For example, path('/home/guido/python.tar.gz').stripext()
         returns path('/home/guido/python.tar').
         """
-        r_ path(os.path.splitext(self)[0])
+        r_ path(__.path.splitext(self)[0])
 
-    __ hasattr(os.path, 'splitunc'):
+    __ hasattr(__.path, 'splitunc'):
         ___ splitunc
-            unc, rest _ os.path.splitunc(self)
+            unc, rest _ __.path.splitunc(self)
             r_ __class__(unc), rest
 
         ___ _get_uncshare
-            unc, r _ os.path.splitunc(self)
+            unc, r _ __.path.splitunc(self)
             r_ __class__(unc)
 
         uncshare _ property(
@@ -213,7 +213,7 @@ c_ path(_base):
         """
         parts _ []
         loc _ self
-        while loc !_ os.curdir and loc !_ os.pardir:
+        while loc !_ __.curdir and loc !_ __.pardir:
             prev _ loc
             loc, child _ prev.splitpath()
             loc _ __class__(loc)
@@ -245,28 +245,28 @@ c_ path(_base):
         # Don't normcase dest!  We want to preserve the case.
         dest_list _ dest.splitall()
 
-        __ orig_list[0] !_ os.path.normcase(dest_list[0]):
+        __ orig_list[0] !_ __.path.normcase(dest_list[0]):
             # Can't get here from there.
             r_ dest
 
         # Find the location where the two paths start to differ.
         i _ 0
         for start_seg, dest_seg __ zip(orig_list, dest_list):
-            __ start_seg !_ os.path.normcase(dest_seg):
+            __ start_seg !_ __.path.normcase(dest_seg):
                 break
             i +_ 1
 
         # Now i is the point where the two paths diverge.
         # Need a certain number of "os.pardir"s to work up
         # from the origin to the point of divergence.
-        segments _ [os.pardir] * (len(orig_list) - i)
+        segments _ [__.pardir] * (len(orig_list) - i)
         # Need to add the diverging part of dest_list.
         segments +_ dest_list[i:]
         __ len(segments) __ 0:
             # If they happen to be identical, use os.curdir.
-            r_ __class__(os.curdir)
+            r_ __class__(__.curdir)
         else:
-            r_ __class__(os.path.join(*segments))
+            r_ __class__(__.path.j..(*segments))
 
 
     # --- Listing, searching, walking, and matching
@@ -282,7 +282,7 @@ c_ path(_base):
         With the optional 'pattern' argument, this only lists
         items whose names match the given pattern.
         """
-        names _ os.listdir(self)
+        names _ __.listdir(self)
         __ pattern is no. None:
             names _ fnmatch.filter(names, pattern)
         r_ [path(self, child) for child __ names]
@@ -387,24 +387,24 @@ c_ path(_base):
 
     # --- Methods for querying the filesystem.
 
-    exists _ os.path.exists
-    isabs _ os.path.isabs
-    isdir _ os.path.isdir
-    isfile _ os.path.isfile
-    islink _ os.path.islink
-    ismount _ os.path.ismount
+    exists _ __.path.exists
+    isabs _ __.path.isabs
+    isdir _ __.path.isdir
+    isfile _ __.path.isfile
+    islink _ __.path.islink
+    ismount _ __.path.ismount
 
-    __ hasattr(os.path, 'samefile'):
-        samefile _ os.path.samefile
+    __ hasattr(__.path, 'samefile'):
+        samefile _ __.path.samefile
 
     ___ atime
         """Last access time of the file."""
-        r_ os.path.getatime(self)
+        r_ __.path.getatime(self)
 
 
     ___ mtime
         """Last-modified time of the file."""
-        r_ os.path.getmtime(self)
+        r_ __.path.getmtime(self)
 
     ___ ctime
         """
@@ -416,72 +416,72 @@ c_ path(_base):
         since the epoch (see the time module). Raise os.error __ the
         file does not exist or is inaccessible.
         """
-        r_ os.path.getctime(self)
+        r_ __.path.getctime(self)
 
     ___ size
         """Size of the file, in bytes."""
-        r_ os.path.getsize(self)
+        r_ __.path.getsize(self)
 
-    __ hasattr(os, 'access'):
+    __ hasattr(__, 'access'):
         ___ access(self, mode):
             """ Return true __ current user has access to this path.
 
             mode - One of the constants os.F_OK, os.R_OK, os.W_OK, os.X_OK
             """
-            r_ os.access(self, mode)
+            r_ __.access(self, mode)
 
     ___ stat
         """ Perform a stat() system call on this path. """
-        r_ os.stat(self)
+        r_ __.stat(self)
 
     ___ lstat
         """ Like path.stat(), but do not follow symbolic links. """
-        r_ os.lstat(self)
+        r_ __.lstat(self)
 
-    __ hasattr(os, 'statvfs'):
+    __ hasattr(__, 'statvfs'):
         ___ statvfs
             """ Perform a statvfs() system call on this path. """
-            r_ os.statvfs(self)
+            r_ __.statvfs(self)
 
-    __ hasattr(os, 'pathconf'):
+    __ hasattr(__, 'pathconf'):
         ___ pathconf(self, name):
-            r_ os.pathconf(self, name)
+            r_ __.pathconf(self, name)
 
 
     # --- Modifying operations on files and directories
 
     ___ utime(self, times):
         """ Set the access and modified times of this file. """
-        os.utime(self, times)
+        __.utime(self, times)
 
     ___ chmod(self, mode):
-        os.chmod(self, mode)
+        __.chmod(self, mode)
 
-    __ hasattr(os, 'chown'):
+    __ hasattr(__, 'chown'):
         ___ chown(self, uid, gid):
-            os.chown(self, uid, gid)
+            __.chown(self, uid, gid)
 
 
     ___ rename(self, new):
-        os.rename(self, new)
+        __.rename(self, new)
 
     ___ renames(self, new):
-        os.renames(self, new)
+        __.renames(self, new)
 
 
     # --- Create/delete operations on directories
 
     ___ mkdir(self, mode_0777):
-        os.mkdir(self, mode)
+        __.mkdir(self, mode)
 
     ___ makedirs(self, mode_0777):
-        os.makedirs(self, mode)
+        __.makedirs(self, mode)
 
     ___ rmdir
-        os.rmdir(self)
+        __.rmdir(self)
 
     ___ removedirs
-        os.removedirs(self)
+        __.removedirs(self)
 
 
     # --- Modifying operations on files
@@ -490,37 +490,37 @@ c_ path(_base):
         """ Set the access/modified times of this file to the current time.
         Create the file __ it does not exist.
         """
-        fd _ os.open(self, os.O_WRONLY | os.O_CREAT, 0666)
-        os.close(fd)
-        os.utime(self, None)
+        fd _ __.open(self, __.O_WRONLY | __.O_CREAT, 0666)
+        __.close(fd)
+        __.utime(self, None)
 
     ___ remove
-        os.remove(self)
+        __.remove(self)
 
     ___ unlink
-        os.unlink(self)
+        __.unlink(self)
 
 
     # --- Links
 
-    __ hasattr(os, 'link'):
+    __ hasattr(__, 'link'):
         ___ link(self, newpath):
             """ Create a hard link at 'newpath', pointing to this file. """
-            os.link(self, newpath)
+            __.link(self, newpath)
 
-    __ hasattr(os, 'symlink'):
+    __ hasattr(__, 'symlink'):
         ___ symlink(self, newlink):
             """ Create a symbolic link at 'newlink', pointing here. """
-            os.symlink(self, newlink)
+            __.symlink(self, newlink)
 
 
-    __ hasattr(os, 'readlink'):
+    __ hasattr(__, 'readlink'):
         ___ readlink
             """ Return the path to which this symbolic link points.
 
             The result may be an absolute or a relative path.
             """
-            r_ __class__(os.readlink(self))
+            r_ __class__(__.readlink(self))
 
         ___ readlinkabs
             """ Return the path to which this symbolic link points.
@@ -549,6 +549,6 @@ c_ path(_base):
 
     # --- Special stuff from os
 
-    __ hasattr(os, 'chroot'):
+    __ hasattr(__, 'chroot'):
         ___ chroot
-            os.chroot(self)
+            __.chroot(self)

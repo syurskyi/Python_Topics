@@ -6,8 +6,8 @@
 # mynk/internal.py -- non-public methods for internal module consumption
 #
 
-______ os
+______ __
 ______ inspect
 ______ sys
 
-_MODULE_PATH _ os.path.dirname(inspect.getfile(sys._getframe(0)))
+_MODULE_PATH _ __.path.dirname(inspect.getfile(sys._getframe(0)))

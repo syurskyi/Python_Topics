@@ -2,7 +2,7 @@
 # __author__ = 'XingHuan'
 # 2017/3/11
 
-______ os
+______ __
 ______ traceback
 ______ sendNodes_path __ SP
 
@@ -28,16 +28,16 @@ ___ send_nk(path):
     __ inNuke:
         __ nuke.selectedNodes() !_ []:
             ___
-                __ no. os.path.exists(os.path.dirname(path)):
-                    os.makedirs(os.path.dirname(path))
+                __ no. __.path.exists(__.path.dirname(path)):
+                    __.makedirs(__.path.dirname(path))
                 for n __ nuke.selectedNodes():
                     nodesName.append(n.knob("name").value())
                 __ nodesName !_ []:
-                    temp _ " ".join(nodesName)
+                    temp _ " ".j..(nodesName)
                     nodesStr _ "%s..." % temp[:30]
                 nuke.nodeCopy(path)
             _______
-                f _ open("%s/%s/traceback_log.txt" % (SP.USERS_Folder, os.path.expanduser('~').replace('\\','/').split("/")[-1]), 'a')
+                f _ open("%s/%s/traceback_log.txt" % (SP.USERS_Folder, __.path.expanduser('~').replace('\\','/').split("/")[-1]), 'a')
                 traceback.print_exc(file_f)
                 f.flush()
                 f.close()

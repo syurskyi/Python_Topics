@@ -1,6 +1,6 @@
 # Embedded file name: /Volumes/Secomba/cragl/Boxcryptor/Dropbox/crypto/_GLOBALS/NUKE/python/cragl/PREPAREFORRELEASE/smartCollect_v1.2/smartCollect/src/paths.py
 ______ glob
-______ os
+______ __
 ______ re
 
 ___ get_file_elements(filename):
@@ -12,14 +12,14 @@ ___ get_file_elements(filename):
 
 
 ___ get_files_list(filepath):
-    basedir _ os.path.dirname(filepath)
-    filename _ os.path.basename(filepath)
+    basedir _ __.path.dirname(filepath)
+    filename _ __.path.basename(filepath)
     files_list _ []
     ___
         basename, file_sequence, ext _ get_file_elements(filename)
         pattern _ '{}.{}.{}'.f..(basename, '*' * len(file_sequence), ext)
-        pattern _ os.path.join(basedir, pattern)
-        files_list _ [ os.path.join(basedir, os.path.basename(file_)) for file_ __ glob.glob(pattern) ]
+        pattern _ __.path.j..(basedir, pattern)
+        files_list _ [ __.path.j..(basedir, __.path.basename(file_)) for file_ __ glob.glob(pattern) ]
     _____ ValueError:
         files_list.append(filepath)
 
@@ -40,15 +40,15 @@ ___ scan_for_nukescripts(path, ignore):
     __ no. ignore:
         ignore _ ''
     ignore_list _ [ ignore_file.strip() for ignore_file __ ignore.split(',') __ ignore_file ]
-    for root, dirs, files __ os.walk(path):
+    for root, dirs, files __ __.walk(path):
         for name __ files:
-            __ os.path.splitext(name)[1] __ '.nk':
+            __ __.path.splitext(name)[1] __ '.nk':
                 ignore_file_ _ 0
                 for ignore_file __ ignore_list:
                     __ ignore_file __ name:
                         ignore_file_ +_ 1
 
                 __ no. ignore_file_:
-                    nukescripts.append(os.path.join(root, name))
+                    nukescripts.append(__.path.j..(root, name))
 
     r_ nukescripts

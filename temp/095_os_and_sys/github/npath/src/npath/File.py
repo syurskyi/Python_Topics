@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ hashlib
 
 ____ .Path ______ Path
@@ -19,7 +19,7 @@ c_ File(FileObject):
 
     @property
     ___ size
-        r_ os.path.getsize(str(path))
+        r_ __.path.getsize(str(path))
 
 
     ___ open(self, mode):
@@ -46,7 +46,7 @@ c_ File(FileObject):
 
 
     ___ unlink
-        os.unlink(str(path))
+        __.unlink(str(path))
 
 
     @property

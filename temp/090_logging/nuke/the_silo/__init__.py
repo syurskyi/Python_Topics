@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ re
 ______ sys
 ______ json
@@ -8,7 +8,7 @@ ____ .logger ______ logger
 
 TESTING _ False
 ___
-    TESTING _ os.environ['NON_PRODUCTION_CONTEXT']
+    TESTING _ __.environ['NON_PRODUCTION_CONTEXT']
 _______
     __ platform.system() __ 'Darwin':
         application _ r'Nuke\d+\.\d+v\d+.app'
@@ -26,7 +26,7 @@ __version__ _ '0.1.2'
 __all__ _ []
 
 silo_name _ 'The Silo'
-silo_location _ os.path.dirname(os.path.abspath(__file__))
+silo_location _ __.path.dirname(__.path.abspath( -f))
 
 
 ___ init():

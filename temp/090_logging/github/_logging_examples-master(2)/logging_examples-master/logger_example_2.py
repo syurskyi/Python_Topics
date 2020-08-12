@@ -6,7 +6,7 @@ ______ sys
 
 
 ___ simple_parser():
-    ?.i..("Command Line inputs: " + ' '.join(sys.argv[1:]))
+    ?.i..("Command Line inputs: " + ' '.j..(sys.argv[1:]))
     
     parser _ argparse.ArgumentParser()
     

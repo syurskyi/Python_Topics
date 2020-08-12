@@ -7,7 +7,7 @@
 #                  namespace: add_tools_path
 #
 
-______ os
+______ __
 ______ shutil
 ______ sys
 ______ types
@@ -23,7 +23,7 @@ ____ . ______ LOG
 # checkout https://github.com/dsc/bunch
 ____ .bunch ______ Bunch
 
-MYNK_TOOLS_PATH _ os.path.join(_c.DOTNUKE_PATH, 'tools', 'python')
+MYNK_TOOLS_PATH _ __.path.j..(_c.DOTNUKE_PATH, 'tools', 'python')
 
 MYNK_MENU_INDEX _ [
   'file',
@@ -49,7 +49,7 @@ c_ MyNkTools(object):
       path_list.append(MYNK_TOOLS_PATH)
 
   ___ add_path(self, path):
-    __ os.path.isdir(path):
+    __ __.path.isdir(path):
       __ no. path __ path_list:
         path_list.append(path)
 
@@ -65,25 +65,25 @@ c_ MyNkTools(object):
     '''Recursively add python modules and packages at path
        to dotted python path at prefix'''
     # expand any tilde home directory shortcuts
-    path _ os.path.expanduser(path)
+    path _ __.path.expanduser(path)
     # __ no prefix list defined use the default internal python bunch
     __ dest is None:
       dest _ python
     # we want a filesystem path so check for that first
-    __ os.path.isdir(path):
+    __ __.path.isdir(path):
       LOG.d..(u'Loading tools from path: {0}'.f..(path))
       # add path to system path
       sys.path.append(path)
       search_re _ re.compile(".*\.py$", re.IGNORECASE)
-      files _ os.listdir(path)
+      files _ __.listdir(path)
       files.sort()
       for file_name __ files:
         # ignore hidden files
         __ no. file_name.startswith('.'):
-          file_path _ os.path.join(path, file_name)
+          file_path _ __.path.j..(path, file_name)
           # __ file matches regex (is python file)
           __ search_re.search(file_name):
-            module_name _ os.path.splitext( file_name )[0]
+            module_name _ __.path.splitext( file_name )[0]
             ___
               module _ imp.load_source(module_name, file_path)
               setattr(dest, module_name, module)
@@ -91,10 +91,10 @@ c_ MyNkTools(object):
             _____ E.., detail:
               LOG.w..(u'Module [{0}] could not be loaded: {1}\n{2}'.f..(module_name, file_path, detail))
           # __ file is directory (org or package)
-          elif os.path.isdir(file_path):
-            path_check _ os.path.join(file_path, "__init__.py" )
-            __ os.path.exists(path_check):
-              package_name _ os.path.splitext(file_name)[0]
+          elif __.path.isdir(file_path):
+            path_check _ __.path.j..(file_path, "__init__.py" )
+            __ __.path.exists(path_check):
+              package_name _ __.path.splitext(file_name)[0]
               ___
                 package _ __import__(package_name)
                 setattr(dest, package_name, package)
@@ -102,9 +102,9 @@ c_ MyNkTools(object):
               _____ E.., detail:
                 LOG.w..(u'Package [{0}] could not be loaded from path: {1}\n{2}'.f..(package_name, file_path, detail))
             else:
-              dir_name _ os.path.splitext(file_name)[0]
+              dir_name _ __.path.splitext(file_name)[0]
               setattr(dest, dir_name, Bunch())
-              new_path _ os.path.join(path, dir_name)
+              new_path _ __.path.j..(path, dir_name)
               add_python_tools_from_path(new_path, eval('dest.{0}'.f..(dir_name)))
   
   ___ list_plugins

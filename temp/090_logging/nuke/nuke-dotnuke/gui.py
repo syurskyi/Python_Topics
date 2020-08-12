@@ -14,7 +14,7 @@
 # convert camel case to titles re.sub("([a-z])([A-Z])","\g<1> \g<2>", key).title()
 
 ______ re
-______ os
+______ __
 ______ shutil
 ____ types ______ ModuleType
 ______ inspect
@@ -29,7 +29,7 @@ ______ mynk
 
 c_ MyNkGui(object):
   ___  -
-    nuke.pluginAddPath(os.path.join(_c.MYNK_PATH, 'icons'), addToSysPath_False)
+    nuke.pluginAddPath(__.path.j..(_c.MYNK_PATH, 'icons'), addToSysPath_False)
     LOG.i..(' [MyNk] initializing custom user menus etc.')
 
   ___ add_tool_menus(self, tool_str):
@@ -79,7 +79,7 @@ c_ MyNkGui(object):
  
   ___ setFavorites
     nuke.removeFavoriteDir('Nuke')
-    nuke.addFavoriteDir('DotNuke', os.path.expanduser('~/.nuke'), 0)
+    nuke.addFavoriteDir('DotNuke', __.path.expanduser('~/.nuke'), 0)
     nuke.addFavoriteDir('Jobs', '/', 0)
     nuke.addFavoriteDir('Fonts', '/', nuke.FONT)
   

@@ -2,7 +2,7 @@
 # __author__ = 'XingHuan'
 # 2017/3/7
 
-______ os
+______ __
 ______ sys
 
 inNuke _ False
@@ -13,11 +13,11 @@ ___
 _______
     print "not in nuke"
 
-ThisPath _ __file__
+ThisPath _  -f
 
 
 USERS_Folder _ "C:/Temp/SendNodes_users"
-GLOBAL_Folder _ os.path.dirname(ThisPath)
+GLOBAL_Folder _ __.path.dirname(ThisPath)
 
 
 

@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ re
 ______ sys
 ______ platform
@@ -15,7 +15,7 @@ ___ camel(value, delimiter_' '):
     while True:
       yield str.capitalize
   c _ camelCase()
-  r_ "".join(c.next()(x) __ x else delimiter for x __ value.split(delimiter))
+  r_ "".j..(c.next()(x) __ x else delimiter for x __ value.split(delimiter))
 
 
 ___ unCamel(value, delimiter_'_', lowercase_True, capitals_False):
@@ -43,12 +43,12 @@ c_ GizmoPathManager(object):
     exclude _ re.compile(exclude)
     exclude _ exclude
     __ searchPaths is None:
-      searchPaths _ os.environ.get('NUKE_GIZMO_PATH', '').split(os.pathsep)
+      searchPaths _ __.environ.get('NUKE_GIZMO_PATH', '').split(__.pathsep)
       __ no. searchPaths:
         ______ inspect
         this_file _ inspect.getsourcefile(lambda: None)
         __ this_file:
-          searchPaths _ [os.path.dirname(os.path.abspath(this_file))]
+          searchPaths _ [__.path.dirname(__.path.abspath(this_file))]
         else:
           searchPaths _ list(nuke.pluginPath())
     searchPaths _ searchPaths
@@ -57,7 +57,7 @@ c_ GizmoPathManager(object):
   @classmethod
   ___ canonicalPath(cls, path):
     # fixes path names and resolution
-    r_ os.path.normcase(os.path.normpath((os.path.abspath(path))))
+    r_ __.path.normcase(__.path.normpath((__.path.abspath(path))))
     # return os.path.normcase(os.path.normpath(os.path.realpath(os.path.abspath(path))))
 
   ___ reset
@@ -77,7 +77,7 @@ c_ GizmoPathManager(object):
   ___ _recursiveAddGizmoPaths(self, folder, crawlData, foldersOnly_False):
     # If we're in GUI mode, also store away data in _crawlData to to be used
     # later by addGizmoMenuItems
-    __ no. os.path.isdir(folder):
+    __ no. __.path.isdir(folder):
       r_
 
     __ nuke.GUI:
@@ -92,21 +92,21 @@ c_ GizmoPathManager(object):
       r_
     _visited.add(canonicalPath)
 
-    for subItem __ sorted(os.listdir(canonicalPath)):
+    for subItem __ sorted(__.listdir(canonicalPath)):
       __ exclude and exclude.search(subItem):
         continue
-      subPath _ os.path.join(canonicalPath, subItem)
-      __ os.path.isdir(subPath):
+      subPath _ __.path.j..(canonicalPath, subItem)
+      __ __.path.isdir(subPath):
         nuke.pluginAppendPath(subPath)
-        nuke.pluginAppendPath(os.path.join(subPath,'icons'))
+        nuke.pluginAppendPath(__.path.j..(subPath,'icons'))
         __ D..:
           nuke.tprint('GIZMO PATH: %s' % subPath)
         subData _ {}
         __ nuke.GUI:
           crawlData['dirs'][subItem] _ subData
         _recursiveAddGizmoPaths(subPath, subData)
-      elif nuke.GUI and (no. foldersOnly) and os.path.isfile(subPath):
-        name, ext _ os.path.splitext(subItem)
+      elif nuke.GUI and (no. foldersOnly) and __.path.isfile(subPath):
+        name, ext _ __.path.splitext(subItem)
         __ ext __ '.gizmo':
           __ re.match('[0-9]{3}', name[-3:]):
             gizmoName _ name[:-4]

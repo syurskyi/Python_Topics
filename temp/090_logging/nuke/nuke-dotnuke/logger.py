@@ -13,7 +13,7 @@
 # ERROR    Due to a more serious problem, the software has not been able to perform some function.
 # CRITICAL A serious error, indicating that the program itself may be unable to continue running.
 
-______ os
+______ __
 ______ sys
 ______ ?
 ______ types
@@ -23,7 +23,7 @@ ______ types
 c_ MyNkLogger(object):
   ___  -
     level _ ?.D.. \
-                 __ os.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] \
+                 __ __.environ.get("MYNK_DEVEL", False) __ ['1', 'true', 'True'] \
                  else ?.I..
     exc_format _ '%(a_t_)s %(l..)s: %(m..)s'
     f.. _ '%(a_t_)s %(l..)s %(filename)s:%(l_l_..)d %(m..)s'

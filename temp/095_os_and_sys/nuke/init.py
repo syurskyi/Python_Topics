@@ -1,10 +1,10 @@
-______ os
+______ __
 ______ sys
 ______ inspect
 
 # System Path
 # Add the current folder to the sys.path
-sys.path.append(os.path.dirname(inspect.getfile(sys._getframe(0))))
+sys.path.append(__.path.dirname(inspect.getfile(sys._getframe(0))))
 
 ______ platform
 

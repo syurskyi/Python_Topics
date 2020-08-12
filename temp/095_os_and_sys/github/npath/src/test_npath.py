@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ shutil
 ____ tempfile ______ mkdtemp
 
@@ -25,21 +25,21 @@ c_ TempDirectory(object):
     ___  -
         __path _ mkdtemp()
 
-        os.mkdir(os.path.join(path, 'Dir 1'))
-        os.mkdir(os.path.join(path, 'Dir 2'))
-        os.mkdir(os.path.join(path, 'Dir 2', 'Dir 3'))
+        __.mkdir(__.path.j..(path, 'Dir 1'))
+        __.mkdir(__.path.j..(path, 'Dir 2'))
+        __.mkdir(__.path.j..(path, 'Dir 2', 'Dir 3'))
 
-        with open(os.path.join(path, 'Dir 1', 'File A.exe'), 'w') __ fh:
+        with open(__.path.j..(path, 'Dir 1', 'File A.exe'), 'w') __ fh:
             pass
-        with open(os.path.join(path, 'Dir 1', 'File B.txt'), 'w') __ fh:
+        with open(__.path.j..(path, 'Dir 1', 'File B.txt'), 'w') __ fh:
             fh.write("File B")
-        with open(os.path.join(path, 'Dir 2', 'File C'), 'w') __ fh:
+        with open(__.path.j..(path, 'Dir 2', 'File C'), 'w') __ fh:
             pass
-        with open(os.path.join(path, 'Dir 2', 'File D.txt'), 'w') __ fh:
+        with open(__.path.j..(path, 'Dir 2', 'File D.txt'), 'w') __ fh:
             fh.write("File B")
-        with open(os.path.join(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') __ fh:
+        with open(__.path.j..(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') __ fh:
             pass
-        with open(os.path.join(path, 'test_file'), 'w') __ fh:
+        with open(__.path.j..(path, 'test_file'), 'w') __ fh:
             fh.write("test")
 
     @property
@@ -50,20 +50,20 @@ c_ TempDirectory(object):
     ___ contents
         '''List all paths in the test directory'''
         rtn _ list()
-        for dirpath, dirnames, filenames __ os.walk(__path):
+        for dirpath, dirnames, filenames __ __.walk(__path):
             for dirname __ dirnames:
-                path _ os.path.join(dirpath, dirname)[len(__path)+1:] + os.path.sep
+                path _ __.path.j..(dirpath, dirname)[len(__path)+1:] + __.path.sep
                 rtn.append(path)
             for filename __ filenames:
-                path _ os.path.join(dirpath, filename)[len(__path)+1:]
-                size _ os.path.getsize(os.path.join(__path, path))
-                with open(os.path.join(__path, path), 'r') __ fh:
+                path _ __.path.j..(dirpath, filename)[len(__path)+1:]
+                size _ __.path.getsize(__.path.j..(__path, path))
+                with open(__.path.j..(__path, path), 'r') __ fh:
                     contents _ fh.read()
                 rtn.append((path, size, contents))
         r_ rtn
 
     ___ clean
-        __ os.path.exists(__path):
+        __ __.path.exists(__path):
             shutil.rmtree(__path)
 
     ___ __del__
@@ -111,17 +111,17 @@ c_ TestPath(TestCase):
 
 
     ___ test_abs_path
-        assertEqual(Path('sub').abs, os.path.abspath('sub'))
+        assertEqual(Path('sub').abs, __.path.abspath('sub'))
 
 
     ___ test_norm
-        assertEqual(Path('a/b/c').norm, os.path.normpath('a/b/c'))
-        assertEqual(Path('a\\b\\c').norm, os.path.normpath('a\\b\\c'))
+        assertEqual(Path('a/b/c').norm, __.path.normpath('a/b/c'))
+        assertEqual(Path('a\\b\\c').norm, __.path.normpath('a\\b\\c'))
 
 
     ___ test_join
-        assertEqual(Path('a/b/c').join('d', 'e'), Path('a/b/c/d/e'))
-        assertEqual(Path('a/b/c').join(Path('d/e'), Path('f')), Path('a/b/c/d/e/f'))
+        assertEqual(Path('a/b/c').j..('d', 'e'), Path('a/b/c/d/e'))
+        assertEqual(Path('a/b/c').j..(Path('d/e'), Path('f')), Path('a/b/c/d/e/f'))
 
 
     ___ test_basename
@@ -249,7 +249,7 @@ c_ TestPath(TestCase):
 
 
     ___ test_samefile
-        __ hasattr(os.path, 'samefile'):
+        __ hasattr(__.path, 'samefile'):
             td _ TempDirectory()
             assertTrue(Path(td.path, 'test_file').samefile(Path(td.path, 'test_file')))
             assertFalse(Path(td.path, 'test_file').samefile(Path(td.path, 'Dir 2', 'Dir 3', 'test_file')))
@@ -271,7 +271,7 @@ c_ TestPath(TestCase):
 
     ___ test_rel_root
         assertEqual(Path('a/b/c').rel_root,
-                          os.path.abspath(os.curdir))
+                          __.path.abspath(__.curdir))
         assertIsNone(Path('/a/b/c').rel_root)
         assertIsNone(Path('c:\\a\\b\\c').rel_root)
 
@@ -283,14 +283,14 @@ c_ TestPath(TestCase):
         assertEqual(p.abs, '/var/www/site')
         assertEqual(p.rel_root, '/var/www')
 
-        p2 _ p.join('drupal')
-        assertEqual(os.path.normpath(str(p2)),
-                          os.path.normpath('site/drupal'))
-        assertEqual(p2.abs, os.path.normpath('/var/www/site/drupal'))
+        p2 _ p.j..('drupal')
+        assertEqual(__.path.normpath(str(p2)),
+                          __.path.normpath('site/drupal'))
+        assertEqual(p2.abs, __.path.normpath('/var/www/site/drupal'))
         assertEqual(p2.rel_root, '/var/www')
 
         p3 _ Path(p, 'files')
-        assertEqual(str(p3), os.path.normpath('site/files'))
+        assertEqual(str(p3), __.path.normpath('site/files'))
         assertEqual(p3.abs, '/var/www/site/files')
         assertEqual(p3.rel_root, '/var/www')
 

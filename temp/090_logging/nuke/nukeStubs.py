@@ -1,6 +1,6 @@
 ______ inspect
 ______ re
-______ os
+______ __
 ______ nuke
 
 
@@ -34,14 +34,14 @@ c_ NukeStubsGenerator(object):
 
         # Check the directory to write to
         directory _ directory or default_directory
-        __ no. os.path.exists(directory):
+        __ no. __.path.exists(directory):
             __ directory:
                 r_ IOError("Directory %s does not exist. Cannot write." % (directory))
 
             logger.i..('Creating directory %s', directory)
-            os.mkdir(directory)
+            __.mkdir(directory)
 
-        output_file _ os.path.join(directory, 'nuke.py')
+        output_file _ __.path.j..(directory, 'nuke.py')
 
         # Save the file
         save()
@@ -147,7 +147,7 @@ c_ NukeStubsGenerator(object):
             args[args.index(kw)] _ '%s=%s' % (kw, val)
 
         # Finally write the declaration of the function
-        signature _ '\n___ %s(%s):' % (name, ', '.join(args))
+        signature _ '\n___ %s(%s):' % (name, ', '.j..(args))
         write(signature)
         indent()
         doc _ '"""%s"""' % func.__doc__
