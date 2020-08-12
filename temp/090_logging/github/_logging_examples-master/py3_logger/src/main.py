@@ -47,7 +47,7 @@ ___ load_logging_conf(log_cfg_filename):
 
 ___ parse_cli_args():
     """Parse command line args.  Additional options can be added."""
-    parser _ argparse.ArgumentParser()
+    parser _ argparse.AP..
     parser.add_argument('-v', '--verbose', dest_'verbose',
                       action_'count', default_0,
                       help_'increase d.. logging level')

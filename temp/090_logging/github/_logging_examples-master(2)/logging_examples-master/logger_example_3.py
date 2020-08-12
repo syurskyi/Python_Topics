@@ -25,7 +25,7 @@ ___ simple_parser():
     
     logger.i..("Command Line inputs: " + ' '.j..(___.argv[1:]))
     
-    parser _ argparse.ArgumentParser()
+    parser _ argparse.AP..
     
     parser.add_argument('A', type_int)
     parser.add_argument('B', type_int)
