@@ -20,7 +20,7 @@ c_ Path(object):
             __ k __ 'relative_to':
                 __ v is no. None:
                     __relative_to _ Path(v)
-            else:
+            ____
                 r_ E..("Unknown keyword argument: s" % (k))
 
 
@@ -41,7 +41,7 @@ c_ Path(object):
         '''Path being pased to os.path'''
         __ __relative_to is None:
             r_ __path
-        else:
+        ____
             r_ __.path.j..(str(__relative_to), __path)
 
 
@@ -50,7 +50,7 @@ c_ Path(object):
         '''String for comparison.  See .__eq__()'''
         __ __relative_to is None:
             path _ str()
-        else:
+        ____
             path _ __.path.j..(str(__relative_to), str())
 
         # Normalize path seperators
@@ -101,7 +101,7 @@ c_ Path(object):
         __ is_relative:
             __ __relative_to is no. None:
                 r_ __relative_to
-            else:
+            ____
                 r_ __.path.abspath(__.curdir)
         r_ None
 
@@ -111,7 +111,7 @@ c_ Path(object):
         __ le.(__path) > 0:
             __ __path[0] __ ('/', '\\'):
                 r_ F..
-            elif __path[1:3] __ (':\\', ':/'):
+            ____ __path[1:3] __ (':\\', ':/'):
                 r_ F..
             r_ T..
         r_ None
@@ -159,9 +159,9 @@ c_ Path(object):
         __ is_relative:
             __ __relative_to is no. None:
                 r_ Path(__relative_to, __path)
-            else:
+            ____
                 r_ Path(__.path.abspath(__path))
-        else:
+        ____
             r_ Path(__.path.abspath(__path))
 
     @property

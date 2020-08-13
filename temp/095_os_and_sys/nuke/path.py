@@ -265,7 +265,7 @@ c_ path(_base):
         __ le.(segments) __ 0:
             # If they happen to be identical, use os.curdir.
             r_ __class__(__.curdir)
-        else:
+        ____
             r_ __class__(__.path.j..(*segments))
 
 
@@ -357,7 +357,7 @@ c_ path(_base):
             __ child.isfile():
                 __ pattern is None or child.match(pattern):
                     yield child
-            elif child.isdir():
+            ____ child.isdir():
                 ___ f __ child.walkfiles(pattern):
                     yield f
 
@@ -490,7 +490,7 @@ c_ path(_base):
         """ Set the access/modified times of this file to the current time.
         Create the file __ it does not exist.
         """
-        fd _ __.open(, __.O_WRONLY | __.O_CREAT, 0666)
+        fd _ __.o..(, __.O_WRONLY | __.O_CREAT, 0666)
         __.close(fd)
         __.utime(, None)
 
@@ -530,7 +530,7 @@ c_ path(_base):
             p _ readlink()
             __ p.isabs():
                 r_ p
-            else:
+            ____
                 r_ __class__(parent, p).abspath()
 
 

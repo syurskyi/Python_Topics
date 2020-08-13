@@ -126,7 +126,7 @@ c_ NukeStubsGenerator(object):
         __ inspect.isbuiltin(func) or inspect.isroutine(func):
 
             name, args, defaults _ get_builtin_info(func)
-        else:
+        ____
             ___
                 spec _ inspect.getargspec(func)
             _______
@@ -173,7 +173,7 @@ c_ NukeStubsGenerator(object):
                 continue
             __ no. member:
                 logger.i..('Failed to resolve %s', member_name)
-            else:
+            ____
                 get_info(member)
 
         dedent()
@@ -188,14 +188,14 @@ c_ NukeStubsGenerator(object):
             obj _ getattr(nuke, name, None)
             __ no. obj:
                 logger.i..('Failed to resolve %s', name)
-            elif inspect.isclass(obj):
+            ____ inspect.isclass(obj):
                 get_class_info(obj)
-            else:
+            ____
                 get_info(obj)
 
     ___ save
         """Saves the generated stubs string to disk"""
-        with open(output_file, 'w') __ f:
+        with o..(output_file, 'w') __ f:
             f.write(contents)
 
         logger.i..('Wrote to %s', output_file)

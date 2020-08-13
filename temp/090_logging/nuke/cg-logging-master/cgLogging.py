@@ -177,7 +177,7 @@ c_ Logger():
 		'''
 		__ hasattr( __logger, attr ):
 			r_ getattr( __logger, attr )
-		else:
+		____
 			r_ AttributeError, "No attribute %s" %attr
 
 	## LEVELS
@@ -239,7 +239,7 @@ c_ MayaHandler(?.Handler):
 		__ record.funcName __ "warning":
 			maya.cmds.w..( "\n"+msg )
 
-		elif record.funcName __ [ "c..", "fatal" ]:
+		____ record.funcName __ [ "c..", "fatal" ]:
 
 			## Emit stdout print:
 			___.stdout.write("\n"+msg+"\n")
@@ -252,7 +252,7 @@ c_ MayaHandler(?.Handler):
 										button  _ ['Dismiss'],
 										messageAlign _ "left")
 
-		else:
+		____
 			___.stdout.write(msg+"\n")
 
 
@@ -276,11 +276,11 @@ c_ NukeHandler(?.Handler):
 		__ record.funcName __ "warning":
 			nuke.w..(msg)
 
-		elif record.funcName __ [ "c..", "fatal" ]:
+		____ record.funcName __ [ "c..", "fatal" ]:
 			nuke.e..(msg)
 			nuke.m..(record.m..)
 
-		else:
+		____
 			___.stdout.write(msg)
 
 ## -----------------------------------------------------------------------------
@@ -301,14 +301,14 @@ c_ MobuHandler(?.Handler):
 		__ record.funcName __ "warning":
 			___.stdout.write(msg+"\n")
 
-		elif record.funcName __ "error":
+		____ record.funcName __ "error":
 			___.stderr.write(msg+"\n")
 
-		elif record.funcName __ [ "c..", "fatal" ]:
+		____ record.funcName __ [ "c..", "fatal" ]:
 			FBMessageBox( record.funcName, msg, "OK" )
 			___.stderr.write(msg+"\n")
 
-		else:
+		____
 			___.stdout.write(msg+"\n")
 
 

@@ -30,7 +30,7 @@ c_ MAKETREEDIR:
 				dirs_dirs[1:]
 
 			### for windows abs path
-			elif  ':' __ dirs[0]:
+			____  ':' __ dirs[0]:
 				dirs[1]_dirs[0]+sep+dirs[1]
 				dirs_dirs[1:]
 

@@ -9,12 +9,12 @@ c_ TestFile(TestCase):
         td _ TempDirectory()
 
         # Test read
-        fh _ File(td.path, 'test_file').open('r')
+        fh _ File(td.path, 'test_file').o..('r')
         assertEqual(fh.read(), "test")
         fh.close()
 
         # Test write
-        fh _ File(td.path, 'test_file_2.txt').open('w')
+        fh _ File(td.path, 'test_file_2.txt').o..('w')
         fh.write("test")
         fh.close()
         assertIn(("test_file_2.txt", 4, "test"), td.contents)

@@ -57,6 +57,6 @@ c_ Directory(FileObject):
             __ child.is_file:
                 __ files is None or files is T..:
                     yield child
-            elif child.is_dir:
+            ____ child.is_dir:
                 __ dirs is None or dirs is T..:
                     yield child

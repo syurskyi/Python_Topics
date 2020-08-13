@@ -23,7 +23,7 @@ ___ unCamel(value, delimiter_'_', lowercase_True, capitals_False):
   s2 _ re.sub('([a-z0-9])([A-Z])', r'\1%s\2'%delimiter, s1)
   __ lowercase is T..:
     s2_s2.lower()
-  elif capitals is T..:
+  ____ capitals is T..:
     s2_string.capwords(s2)
   r_ s2
 
@@ -49,7 +49,7 @@ c_ GizmoPathManager(object):
         this_file _ inspect.getsourcefile(lambda: None)
         __ this_file:
           searchPaths _ [__.path.dirname(__.path.abspath(this_file))]
-        else:
+        ____
           searchPaths _ list(nuke.pluginPath())
     searchPaths _ searchPaths
     reset()
@@ -105,13 +105,13 @@ c_ GizmoPathManager(object):
         __ nuke.GUI:
           crawlData['dirs'][subItem] _ subData
         _recursiveAddGizmoPaths(subPath, subData)
-      elif nuke.GUI and (no. foldersOnly) and __.path.isfile(subPath):
+      ____ nuke.GUI and (no. foldersOnly) and __.path.isfile(subPath):
         name, ext _ __.path.splitext(subItem)
         __ ext __ '.gizmo':
           __ re.match('[0-9]{3}', name[-3:]):
             gizmoName _ name[:-4]
             version _ name[-3:]
-          else:
+          ____
             gizmoName _ name
             version _ '000'
           crawlData['gizmos'][gizmoName]_[]
@@ -134,7 +134,7 @@ c_ GizmoPathManager(object):
       addGizmoPaths()
     __ toolbar is None:
       toolbar _ nuke.menu("Nodes")
-    elif isinstance(toolbar, basestring):
+    ____ isinstance(toolbar, basestring):
       toolbar _ nuke.menu(toolbar)
     #toolbar.addCommand("-", "", "")
     _recursiveAddGizmoMenuItems(toolbar, _crawlData, defaultSubMenu_default_top_menu, topLevel_True)
@@ -159,7 +159,7 @@ c_ GizmoPathManager(object):
         __ defaultSubMenu:
           subMenu _ toolbar.findItem(defaultSubMenu)
           subMenu.addCommand("-", "", "")
-        else:
+        ____
           subMenu _ toolbar.addMenu(folder, "%s.png" % folder)
       subMenu.addCommand("-", "", "")
       _recursiveAddGizmoMenuItems(subMenu, data)

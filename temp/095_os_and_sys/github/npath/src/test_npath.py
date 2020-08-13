@@ -29,17 +29,17 @@ c_ TempDirectory(object):
         __.mkdir(__.path.j..(path, 'Dir 2'))
         __.mkdir(__.path.j..(path, 'Dir 2', 'Dir 3'))
 
-        with open(__.path.j..(path, 'Dir 1', 'File A.exe'), 'w') __ fh:
+        with o..(__.path.j..(path, 'Dir 1', 'File A.exe'), 'w') __ fh:
             p..
-        with open(__.path.j..(path, 'Dir 1', 'File B.txt'), 'w') __ fh:
+        with o..(__.path.j..(path, 'Dir 1', 'File B.txt'), 'w') __ fh:
             fh.write("File B")
-        with open(__.path.j..(path, 'Dir 2', 'File C'), 'w') __ fh:
+        with o..(__.path.j..(path, 'Dir 2', 'File C'), 'w') __ fh:
             p..
-        with open(__.path.j..(path, 'Dir 2', 'File D.txt'), 'w') __ fh:
+        with o..(__.path.j..(path, 'Dir 2', 'File D.txt'), 'w') __ fh:
             fh.write("File B")
-        with open(__.path.j..(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') __ fh:
+        with o..(__.path.j..(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') __ fh:
             p..
-        with open(__.path.j..(path, 'test_file'), 'w') __ fh:
+        with o..(__.path.j..(path, 'test_file'), 'w') __ fh:
             fh.write("test")
 
     @property
@@ -57,7 +57,7 @@ c_ TempDirectory(object):
             ___ filename __ filenames:
                 path _ __.path.j..(dirpath, filename)[le.(__path)+1:]
                 size _ __.path.getsize(__.path.j..(__path, path))
-                with open(__.path.j..(__path, path), 'r') __ fh:
+                with o..(__.path.j..(__path, path), 'r') __ fh:
                     contents _ fh.read()
                 rtn.ap..((path, size, contents))
         r_ rtn

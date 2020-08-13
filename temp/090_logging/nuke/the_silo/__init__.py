@@ -12,9 +12,9 @@ ___
 _______
     __ platform.system() __ 'Darwin':
         application _ r'Nuke\d+\.\d+v\d+.app'
-    elif platform.system() __ 'Windows':
+    ____ platform.system() __ 'Windows':
         application _ r'Nuke\d+\.\d+.exe'
-    else:
+    ____
         r_ RuntimeError('OS {0} is not supported'.f..(platform.system()))
 
     match _ re.search(application, ___.executable)
@@ -46,10 +46,10 @@ ___ build(toolbar_True):
 
     __ toolbar:
         silo_menu _ nuke.toolbar('Nodes').addMenu(silo_name)
-    else:
+    ____
         silo_menu _ nuke.menu('Nuke').addMenu(silo_name)
 
-    with open('{0}/silo_data.json'.f..(silo_location), 'r') __ fp:
+    with o..('{0}/silo_data.json'.f..(silo_location), 'r') __ fp:
         silo_data _ json.load(fp)
 
     ___ gizmo_name, gizmo __ sorted(silo_data['gizmos'],

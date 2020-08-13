@@ -37,7 +37,7 @@ ___ send_nk(path):
                     nodesStr _ "%s..." % temp[:30]
                 nuke.nodeCopy(path)
             _______
-                f _ open("%s/%s/traceback_log.txt" % (SP.USERS_Folder, __.path.expanduser('~').replace('\\','/').split("/")[-1]), 'a')
+                f _ o..("%s/%s/traceback_log.txt" % (SP.USERS_Folder, __.path.expanduser('~').replace('\\','/').split("/")[-1]), 'a')
                 traceback.print_exc(file_f)
                 f.flush()
                 f.close()
@@ -60,7 +60,7 @@ ___ get_nk_name():
             filePath _ nuke.root().knob("name").value()
             __ filePath __ "":
                 nkName _ "Untitled"
-            else:
+            ____
                 nkName _ filePath.split("/")[-1]
         _______
             print "get nk name failed"

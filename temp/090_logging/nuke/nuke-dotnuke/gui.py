@@ -38,10 +38,10 @@ c_ MyNkGui(object):
       menus _ getattr(tool, '__menus__' ,None)
     _____ AttributeError:
       LOG.w..(' [MyNk] tool has no __menus__ attribute: {0}'.f..(tool_str))
-    else:
+    ____
       __ menus is None:
         r_
-      else:
+      ____
         ___ key,val __ menus.iteritems():
           title _ key
           __ val:
@@ -50,7 +50,7 @@ c_ MyNkGui(object):
             icon _ val['icon']
             ___ menu __ [menu,nuke_toolbar]:
               menu.addCommand(title,cmd,hotkey,icon)
-          else:
+          ____
             menu.addMenu(title)
             
   ___ add_toolbunch_to_menu(, toolbunch_str):
@@ -58,7 +58,7 @@ c_ MyNkGui(object):
       dottedpath _ '{0}.{1}'.f..(toolbunch_str,key)
       __ inspect.ismodule(val):
         add_tool_menus(dottedpath)
-      else:
+      ____
         add_toolbunch_to_menu(dottedpath)
 
   ___ init_gui

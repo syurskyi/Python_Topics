@@ -1,6 +1,6 @@
 ____ setuptools ______ setup
 
-with open('README.md','r') __ f:
+with o..('README.md','r') __ f:
     long_description _ f.read()
 
 

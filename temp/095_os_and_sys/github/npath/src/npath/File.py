@@ -22,19 +22,19 @@ c_ File(FileObject):
         r_ __.path.getsize(str(path))
 
 
-    ___ open(, mode):
-        r_ open(str(path), mode)
+    ___ o..(, mode):
+        r_ o..(str(path), mode)
 
 
     ___ touch
-        with open(str(path), 'a') __ fh:
+        with o..(str(path), 'a') __ fh:
             p..
 
 
     @property
     ___ md5
         hasher _ hashlib.md5()
-        with open(str(path), 'rb') __ fh:
+        with o..(str(path), 'rb') __ fh:
             data _ fh.read(4096)
             hasher.update(data)
 

@@ -57,7 +57,7 @@ c_ MyNkTools(object):
     __ path_list:
       ___ path __ path_list:
         add_python_tools_from_path(path)
-    else:
+    ____
       add_default_path()
       add_python_tools_from_path_list()
 
@@ -91,7 +91,7 @@ c_ MyNkTools(object):
             _____ E.., detail:
               LOG.w..(u'Module [{0}] could not be loaded: {1}\n{2}'.f..(module_name, file_path, detail))
           # __ file is directory (org or package)
-          elif __.path.isdir(file_path):
+          ____ __.path.isdir(file_path):
             path_check _ __.path.j..(file_path, "__init__.py" )
             __ __.path.exists(path_check):
               package_name _ __.path.splitext(file_name)[0]
@@ -101,7 +101,7 @@ c_ MyNkTools(object):
                 LOG.d..(debug_msg _ u'Loaded Package [{0}]: {1}'.f..(package_name, file_path))
               _____ E.., detail:
                 LOG.w..(u'Package [{0}] could not be loaded from path: {1}\n{2}'.f..(package_name, file_path, detail))
-            else:
+            ____
               dir_name _ __.path.splitext(file_name)[0]
               setattr(dest, dir_name, Bunch())
               new_path _ __.path.j..(path, dir_name)
@@ -115,6 +115,6 @@ c_ MyNkTools(object):
       __ isinstance( j, types.ModuleType ):
         __ hasattr( j, "version" ):
           LOG.i..( "  ---> Plugin: %s %s %s" % (str(i), str(j), str(j.version) ) )
-        else:
+        ____
           LOG.i..( "  ---> Unversioned Plugin: %s %s " % (str(i), str(j)) )
 

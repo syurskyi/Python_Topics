@@ -19,7 +19,7 @@ c_ Logger(object):
         __ no. cls._logger_obj:
             __ cls.logger_exists():
                 cls._logger_obj _ ?.gL..(cls.LOGGER_NAME)
-            else:
+            ____
                 cls._logger_obj _ ?.gL..(cls.LOGGER_NAME)
 
                 cls._logger_obj.sL..(cls.LEVEL_DEFAULT)
