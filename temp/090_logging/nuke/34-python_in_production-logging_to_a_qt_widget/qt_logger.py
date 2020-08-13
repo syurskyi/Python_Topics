@@ -1,51 +1,51 @@
-______ ?
-
-____ PySide2 ______ QtCore
-
-____ logger ______ Logger
-
-
-c_ QtSignaler(QtCore.QObject):
-    message_logged _ QtCore.Signal(str)
-
-
-c_ QtSignalHandler(?.Handler):
-
-    ___  - (, @ @@:
-        s___(QtSignalHandler, ). - (@ @@
-        emitter _ QtSignaler()
-
-    ___ emit(, record):
-        msg _ f..(record)
-        emitter.message_logged.emit(msg)
-
-
-c_ QtLogger(Logger):
-
-    LOGGER_NAME _ "QtZurbrigg"
-
-    _signal_handler _ N..
-
-    ??
-    ___ logger_obj(___):
-        __ no. ___.l_e..
-            fmt _ ?.F..("[%(l..)s] %(m..)s")
-
-            ___._signal_handler _ QtSignalHandler()
-            ___._signal_handler.sF..(fmt)
-
-            logger_obj _ s___(QtLogger, ___).l..
-            logger_obj.aH..(___._signal_handler)
-
-        r_ s___(QtLogger, ___).l..
-
-    ??
-    ___ signal_handler(___):
-        ___.l..
-        r_ ___._signal_handler
-
-
-
-__  -n __ "__main__":
-
-    QtLogger.e..("error m..")
+# ______ ?
+#
+# ____ ? ______ ?C..
+#
+# ____ l.. ______ L..
+#
+#
+# c_ QtSignaler(?C__.?O..
+#     message_logged _ ?C__.S.. st..
+#
+#
+# c_ QtSignalHandler ?.H..
+#
+#     ___  -  @ @@
+#         s___ ?SH.. . - @ @@
+#         emitter _ ?S..
+#
+#     ___ emit record
+#         msg _ f.. ?
+#         e__.m_l__.e.. ?
+#
+#
+# c_ QtLogger L..
+#
+#     LOGGER_NAME _ "QtZurbrigg"
+#
+#     _signal_handler _ N..
+#
+#     ??
+#     ___ logger_obj ___
+#         __ no. ___.l_e..
+#             fmt _ ?.F.. " _ l.. s _ m.. s"
+#
+#             ___.? _ ?SH..
+#             ___.?.sF.. ?
+#
+#             logger_obj _ s___ ?L.. ___ .l..
+#             ?.aH.. ___.?
+#
+#         r_ s___ ? ___ .l..
+#
+#     ??
+#     ___ signal_handler __
+#         ___.l..
+#         r_ ___.?
+#
+#
+#
+# __  -n __ ______
+#
+#     ?.e.. "error m.."
