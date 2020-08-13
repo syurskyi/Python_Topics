@@ -82,7 +82,7 @@ c_ NukeStubsGenerator(object):
         ___
             name _ builtin. -n
         _______
-            name _ None
+            name _ N..
 
         args _ []
         defaults _ []
@@ -185,7 +185,7 @@ c_ NukeStubsGenerator(object):
         ___ name __ dir(nuke):
             __ name.startswith('__'):
                 continue
-            obj _ getattr(nuke, name, None)
+            obj _ getattr(nuke, name, N..)
             __ no. obj:
                 logger.i..('Failed to resolve %s', name)
             ____ inspect.isclass(obj):

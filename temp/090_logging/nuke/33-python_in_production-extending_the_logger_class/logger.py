@@ -10,10 +10,10 @@ c_ Logger(object):
     LEVEL_DEFAULT _ ?.D..
     PROPAGATE_DEFAULT _ T..
 
-    _logger_obj _ None
+    _logger_obj _ N..
 
 
-    @classmethod
+    ??
     ___ logger_obj(cls):
 
         __ no. cls._logger_obj:
@@ -33,56 +33,56 @@ c_ Logger(object):
 
         r_ cls._logger_obj
 
-    @classmethod
+    ??
     ___ logger_exists(cls):
-        r_ cls.LOGGER_NAME __ ?.Logger.manager.loggerDict.keys()
+        r_ cls.LOGGER_NAME __ ?.Logger.m__.lD__.k..
 
-    @classmethod
+    ??
     ___ set_level(cls, level):
-        lg _ cls.logger_obj()
+        lg _ cls.l..
         lg.sL..(level)
         
-    @classmethod
+    ??
     ___ set_propagate(cls, propagate):
-        lg _ cls.logger_obj()
+        lg _ cls.l..
         lg.propagate _ propagate
 
-    @classmethod
-    ___ d..(cls, msg, *args, **kwargs):
-        lg _ cls.logger_obj()
-        lg.d..(msg, *args, **kwargs)
+    ??
+    ___ d..(cls, msg, @ @@:
+        lg _ cls.l..
+        lg.d..(msg, @ @@
 
-    @classmethod
-    ___ i..(cls, msg, *args, **kwargs):
-        lg _ cls.logger_obj()
-        lg.i..(msg, *args, **kwargs)
+    ??
+    ___ i..(cls, msg, @ @@:
+        lg _ cls.l..
+        lg.i..(msg, @ @@
 
-    @classmethod
-    ___ w..(cls, msg, *args, **kwargs):
-        lg _ cls.logger_obj()
-        lg.w..(msg, *args, **kwargs)
+    ??
+    ___ w..(cls, msg, @ @@:
+        lg _ cls.l..
+        lg.w..(msg, @ @@
 
-    @classmethod
-    ___ e..(cls, msg, *args, **kwargs):
-        lg _ cls.logger_obj()
-        lg.e..(msg, *args, **kwargs)
+    ??
+    ___ e..(cls, msg, @ @@:
+        lg _ cls.l..
+        lg.e..(msg, @ @@
 
-    @classmethod
-    ___ c..(cls, msg, *args, **kwargs):
-        lg _ cls.logger_obj()
-        lg.c..(msg, *args, **kwargs)
+    ??
+    ___ c..(cls, msg, @ @@:
+        lg _ cls.l..
+        lg.c..(msg, @ @@
 
-    @classmethod
-    ___ log(cls, level, msg, *args, **kwargs):
-        lg _ cls.logger_obj()
-        lg.log(level, msg, *args, **kwargs)
+    ??
+    ___ log(cls, level, msg, @ @@:
+        lg _ cls.l..
+        lg.log(level, msg, @ @@
 
-    @classmethod
-    ___ exception(cls, msg, *args, **kwargs):
-        lg _ cls.logger_obj()
-        lg.exception(msg, *args, **kwargs)
+    ??
+    ___ exception(cls, msg, @ @@:
+        lg _ cls.l..
+        lg.exception(msg, @ @@
 
-    @classmethod
+    ??
     ___ write_to_file(cls, path, level_?.WARNING):
         file_handler _ ?.FH..(path)
         file_handler.sL..(level)
@@ -90,7 +90,7 @@ c_ Logger(object):
         fmt _ ?.F..("[%(a_t_)s][%(l..)s] %(m..)s")
         file_handler.sF..(fmt)
 
-        lg _ cls.logger_obj()
+        lg _ cls.l..
         lg.aH..(file_handler)
 
 

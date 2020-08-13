@@ -67,7 +67,7 @@ c_ MyNkTools(object):
     # expand any tilde home directory shortcuts
     path _ __.path.expanduser(path)
     # __ no prefix list defined use the default internal python bunch
-    __ dest is None:
+    __ dest is N..:
       dest _ python
     # we want a filesystem path so check for that first
     __ __.path.isdir(path):

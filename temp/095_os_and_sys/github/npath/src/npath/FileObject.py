@@ -4,7 +4,7 @@ ____ . ______ Path
 
 
 c_ FileObject(Path):
-    FILE_OBJ_FACTORY _ None # set in __init__.py
+    FILE_OBJ_FACTORY _ N.. # set in __init__.py
 
 
     ___ __repr__

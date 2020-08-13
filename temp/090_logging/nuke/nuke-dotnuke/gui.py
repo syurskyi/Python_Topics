@@ -35,11 +35,11 @@ c_ MyNkGui(object):
   ___ add_tool_menus(, tool_str):
     ___
       tool _ eval(tool_str)
-      menus _ getattr(tool, '__menus__' ,None)
+      menus _ getattr(tool, '__menus__' ,N..)
     _____ AttributeError:
       LOG.w..(' [MyNk] tool has no __menus__ attribute: {0}'.f..(tool_str))
     ____
-      __ menus is None:
+      __ menus is N..:
         r_
       ____
         ___ key,val __ menus.iteritems():

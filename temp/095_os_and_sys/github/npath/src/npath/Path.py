@@ -8,17 +8,17 @@ c_ Path(object):
         str_parms _ [str(p) ___ p __ parms]
         __path _ __.path.j..(*str_parms)
 
-        __relative_to _ None
+        __relative_to _ N..
 
         # Collect relative_to off first path parm __ we can
         ___
             __relative_to _ parms[0].__relative_to
         _____ AttributeError:
-            __relative_to _ None
+            __relative_to _ N..
 
         ___ k, v __ list(kwargs.items()):
             __ k __ 'relative_to':
-                __ v is no. None:
+                __ v is no. N..:
                     __relative_to _ Path(v)
             ____
                 r_ E..("Unknown keyword argument: s" % (k))
@@ -39,7 +39,7 @@ c_ Path(object):
     @property
     ___ effective_path_str
         '''Path being pased to os.path'''
-        __ __relative_to is None:
+        __ __relative_to is N..:
             r_ __path
         ____
             r_ __.path.j..(str(__relative_to), __path)
@@ -48,7 +48,7 @@ c_ Path(object):
     @property
     ___ _compare_str
         '''String for comparison.  See .__eq__()'''
-        __ __relative_to is None:
+        __ __relative_to is N..:
             path _ str()
         ____
             path _ __.path.j..(str(__relative_to), str())
@@ -99,11 +99,11 @@ c_ Path(object):
     ___ rel_root
         '''The path that this path is relative to (__ relative)'''
         __ is_relative:
-            __ __relative_to is no. None:
+            __ __relative_to is no. N..:
                 r_ __relative_to
             ____
                 r_ __.path.abspath(__.curdir)
-        r_ None
+        r_ N..
 
 
     @property
@@ -114,7 +114,7 @@ c_ Path(object):
             ____ __path[1:3] __ (':\\', ':/'):
                 r_ F..
             r_ T..
-        r_ None
+        r_ N..
 
 
     @property
@@ -127,7 +127,7 @@ c_ Path(object):
         root _ str(root)
 
         path _ str()
-        __ __relative_to is no. None:
+        __ __relative_to is no. N..:
             path _ __.path.j..(str(__relative_to), path)
 
         __ no. path.startswith(root):
@@ -157,7 +157,7 @@ c_ Path(object):
     @property
     ___ abs
         __ is_relative:
-            __ __relative_to is no. None:
+            __ __relative_to is no. N..:
                 r_ Path(__relative_to, __path)
             ____
                 r_ Path(__.path.abspath(__path))
@@ -176,7 +176,7 @@ c_ Path(object):
     @property
     ___ splitext
         prefix, ext _ __.path.splitext(__path)
-        __ ext is no. None and ext[0] __ '.':
+        __ ext is no. N.. and ext[0] __ '.':
             ext _ ext[1:]
         r_ prefix, ext
 

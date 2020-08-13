@@ -92,7 +92,7 @@ c_ path(_base):
     ___ __radd__(, other):
         r_ __class__(other + _base())
 
-    @classmethod
+    ??
     ___ cwd(cls):
         """ Return the current working directory as a path object. """
         r_ path(__.getcwd())
@@ -142,21 +142,21 @@ c_ path(_base):
         r_ __class__(__.path.dirname())
 
     parent _ property(
-        _get_dirname, None, None,
+        _get_dirname, N.., N..,
         """ This path's parent directory, as a new path object.
 
         For example, path('/usr/local/lib/libpython.so').parent == path('/usr/local/lib')
         """)
 
     name _ property(
-        __.path.basename, None, None,
+        __.path.basename, N.., N..,
         """ The name of this file or directory without the full path.
 
         For example, path('/usr/local/lib/libpython.so').name == 'libpython.so'
         """)
 
     namebase _ property(
-        _get_namebase, None, None,
+        _get_namebase, N.., N..,
         """ The same as path.name, but with one file extension stripped off.
 
         For example, path('/home/guido/python.tar.gz').name     == 'python.tar.gz',
@@ -164,11 +164,11 @@ c_ path(_base):
         """)
 
     ext _ property(
-        _get_ext, None, None,
+        _get_ext, N.., N..,
         """ The file extension, for example '.py'. """)
 
     drive _ property(
-        _get_drive, None, None,
+        _get_drive, N.., N..,
         """ The drive specifier, for example 'C:'.
         This is always empty on systems that don't use drive specifiers.
         """)
@@ -197,7 +197,7 @@ c_ path(_base):
             r_ __class__(unc)
 
         uncshare _ property(
-            _get_uncshare, None, None,
+            _get_uncshare, N.., N..,
             """ The UNC mount point for this path.
             This is empty for paths on local drives. """)
 
@@ -283,7 +283,7 @@ c_ path(_base):
         items whose names match the given pattern.
         """
         names _ __.listdir()
-        __ pattern is no. None:
+        __ pattern is no. N..:
             names _ fnmatch.filter(names, pattern)
         r_ [path(, child) ___ child __ names]
 
@@ -324,7 +324,7 @@ c_ path(_base):
         Each directory is returned just before all its children.
         """
         ___ child __ listdir():
-            __ pattern is None or child.match(pattern):
+            __ pattern is N.. or child.match(pattern):
                 yield child
             __ child.isdir():
                 ___ item __ child.walk(pattern):
@@ -339,7 +339,7 @@ c_ path(_base):
         with names ending in 'test'.
         """
         ___ child __ dirs():
-            __ pattern is None or child.match(pattern):
+            __ pattern is N.. or child.match(pattern):
                 yield child
             ___ subsubdir __ child.walkdirs(pattern):
                 yield subsubdir
@@ -355,7 +355,7 @@ c_ path(_base):
         """
         ___ child __ listdir():
             __ child.isfile():
-                __ pattern is None or child.match(pattern):
+                __ pattern is N.. or child.match(pattern):
                     yield child
             ____ child.isdir():
                 ___ f __ child.walkfiles(pattern):
@@ -492,7 +492,7 @@ c_ path(_base):
         """
         fd _ __.o..(, __.O_WRONLY | __.O_CREAT, 0666)
         __.close(fd)
-        __.utime(, None)
+        __.utime(, N..)
 
     ___ remove
         __.remove()

@@ -42,11 +42,11 @@ c_ GizmoPathManager(object):
     #__ isinstance(exclude, basestring):
     exclude _ re.compile(exclude)
     exclude _ exclude
-    __ searchPaths is None:
+    __ searchPaths is N..:
       searchPaths _ __.environ.get('NUKE_GIZMO_PATH', '').split(__.pathsep)
       __ no. searchPaths:
         ______ inspect
-        this_file _ inspect.getsourcefile(lambda: None)
+        this_file _ inspect.getsourcefile(lambda: N..)
         __ this_file:
           searchPaths _ [__.path.dirname(__.path.abspath(this_file))]
         ____
@@ -54,7 +54,7 @@ c_ GizmoPathManager(object):
     searchPaths _ searchPaths
     reset()
 
-  @classmethod
+  ??
   ___ canonicalPath(cls, path):
     # fixes path names and resolution
     r_ __.path.normcase(__.path.normpath((__.path.abspath(path))))
@@ -132,7 +132,7 @@ c_ GizmoPathManager(object):
     '''
     __ no. _crawlData:
       addGizmoPaths()
-    __ toolbar is None:
+    __ toolbar is N..:
       toolbar _ nuke.menu("Nodes")
     ____ isinstance(toolbar, basestring):
       toolbar _ nuke.menu(toolbar)
@@ -155,7 +155,7 @@ c_ GizmoPathManager(object):
     ___ folder, data __ crawlData.get('dirs', {}).iteritems():
       ______ ___
       subMenu _ toolbar.findItem(folder)
-      __ subMenu is None:
+      __ subMenu is N..:
         __ defaultSubMenu:
           subMenu _ toolbar.findItem(defaultSubMenu)
           subMenu.addCommand("-", "", "")

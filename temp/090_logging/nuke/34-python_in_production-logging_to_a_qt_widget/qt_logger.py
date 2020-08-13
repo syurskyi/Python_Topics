@@ -11,8 +11,8 @@ c_ QtSignaler(QtCore.QObject):
 
 c_ QtSignalHandler(?.Handler):
 
-    ___  - (, *args, **kwargs):
-        s___(QtSignalHandler, ). - (*args, **kwargs)
+    ___  - (, @ @@:
+        s___(QtSignalHandler, ). - (@ @@
         emitter _ QtSignaler()
 
     ___ emit(, record):
@@ -24,9 +24,9 @@ c_ QtLogger(Logger):
 
     LOGGER_NAME _ "QtZurbrigg"
 
-    _signal_handler _ None
+    _signal_handler _ N..
 
-    @classmethod
+    ??
     ___ logger_obj(cls):
         __ no. cls.logger_exists():
             fmt _ ?.F..("[%(l..)s] %(m..)s")
@@ -34,14 +34,14 @@ c_ QtLogger(Logger):
             cls._signal_handler _ QtSignalHandler()
             cls._signal_handler.sF..(fmt)
 
-            logger_obj _ s___(QtLogger, cls).logger_obj()
+            logger_obj _ s___(QtLogger, cls).l..
             logger_obj.aH..(cls._signal_handler)
 
-        r_ s___(QtLogger, cls).logger_obj()
+        r_ s___(QtLogger, cls).l..
 
-    @classmethod
+    ??
     ___ signal_handler(cls):
-        cls.logger_obj()
+        cls.l..
         r_ cls._signal_handler
 
 
