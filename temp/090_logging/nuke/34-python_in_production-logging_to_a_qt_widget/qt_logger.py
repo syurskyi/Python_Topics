@@ -27,22 +27,22 @@ c_ QtLogger(Logger):
     _signal_handler _ N..
 
     ??
-    ___ logger_obj(cls):
-        __ no. cls.logger_exists():
+    ___ logger_obj(___):
+        __ no. ___.l_e..
             fmt _ ?.F..("[%(l..)s] %(m..)s")
 
-            cls._signal_handler _ QtSignalHandler()
-            cls._signal_handler.sF..(fmt)
+            ___._signal_handler _ QtSignalHandler()
+            ___._signal_handler.sF..(fmt)
 
-            logger_obj _ s___(QtLogger, cls).l..
-            logger_obj.aH..(cls._signal_handler)
+            logger_obj _ s___(QtLogger, ___).l..
+            logger_obj.aH..(___._signal_handler)
 
-        r_ s___(QtLogger, cls).l..
+        r_ s___(QtLogger, ___).l..
 
     ??
-    ___ signal_handler(cls):
-        cls.l..
-        r_ cls._signal_handler
+    ___ signal_handler(___):
+        ___.l..
+        r_ ___._signal_handler
 
 
 

@@ -158,17 +158,17 @@ c_ NukeStubsGenerator(object):
         r_ T..
 
 
-    ___ get_class_info(, cls):
+    ___ get_class_info(, ___):
         """Resolves the signature, docstring and members of a class"""
 
-        base _ inspect.getclasstree([cls])[0][0]. -n
+        base _ inspect.getclasstree([___])[0][0]. -n
 
-        signature _ '\nclass %s(%s):' % (cls. -n, base)
+        signature _ '\nclass %s(%s):' % (___. -n, base)
         write(signature)
         indent()
-        doc _ '"""%s"""' % cls.__doc__
+        doc _ '"""%s"""' % ___.__doc__
         write(doc)
-        ___ member_name, member __ cls.__dict__.items():
+        ___ member_name, member __ ___.__dict__.items():
             __ member_name.startswith('__'):
                 continue
             __ no. member:

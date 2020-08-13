@@ -302,11 +302,11 @@ c_ MobuHandler(?.Handler):
 			___.stdout.write(msg+"\n")
 
 		____ record.funcName __ "error":
-			___.stderr.write(msg+"\n")
+			___.s_e...write(msg+"\n")
 
 		____ record.funcName __ [ "c..", "fatal" ]:
 			FBMessageBox( record.funcName, msg, "OK" )
-			___.stderr.write(msg+"\n")
+			___.s_e...write(msg+"\n")
 
 		____
 			___.stdout.write(msg+"\n")

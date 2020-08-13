@@ -55,7 +55,7 @@ c_ GizmoPathManager(object):
     reset()
 
   ??
-  ___ canonicalPath(cls, path):
+  ___ canonicalPath(___, path):
     # fixes path names and resolution
     r_ __.path.normcase(__.path.normpath((__.path.abspath(path))))
     # return os.path.normcase(os.path.normpath(os.path.realpath(os.path.abspath(path))))

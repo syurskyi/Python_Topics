@@ -93,7 +93,7 @@ c_ path(_base):
         r_ __class__(other + _base())
 
     ??
-    ___ cwd(cls):
+    ___ cwd(___):
         """ Return the current working directory as a path object. """
         r_ path(__.getcwd())
 

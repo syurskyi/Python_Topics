@@ -14,83 +14,83 @@ c_ Logger(object):
 
 
     ??
-    ___ logger_obj(cls):
+    ___ logger_obj(___):
 
-        __ no. cls._logger_obj:
-            __ cls.logger_exists():
-                cls._logger_obj _ ?.gL..(cls.LOGGER_NAME)
+        __ no. ___.?:
+            __ ___.l_e..
+                ___.? _ ?.gL..(___._N..)
             ____
-                cls._logger_obj _ ?.gL..(cls.LOGGER_NAME)
+                ___.? _ ?.gL..(___._N..)
 
-                cls._logger_obj.sL..(cls.LEVEL_DEFAULT)
-                cls._logger_obj.propagate _ cls.PROPAGATE_DEFAULT
+                ___.?.sL..(___.L..)
+                ___.?.propagate _ ___.P..
 
-                fmt _ ?.F..(cls.FORMAT_DEFAULT)
+                fmt _ ?.F..(___.F..)
 
-                stream_handler _ ?.StreamHandler(___.stderr)
+                stream_handler _ ?.SH..(___.s_e..)
                 stream_handler.sF..(fmt)
-                cls._logger_obj.aH..(stream_handler)
+                ___.?.aH..(stream_handler)
 
-        r_ cls._logger_obj
-
-    ??
-    ___ logger_exists(cls):
-        r_ cls.LOGGER_NAME __ ?.Logger.m__.lD__.k..
+        r_ ___.?
 
     ??
-    ___ set_level(cls, level):
-        lg _ cls.l..
+    ___ logger_exists(___):
+        r_ ___._N.. __ ?.Logger.m__.lD__.k..
+
+    ??
+    ___ set_level(___, level):
+        lg _ ___.l..
         lg.sL..(level)
         
     ??
-    ___ set_propagate(cls, propagate):
-        lg _ cls.l..
+    ___ set_propagate(___, propagate):
+        lg _ ___.l..
         lg.propagate _ propagate
 
     ??
-    ___ d..(cls, msg, @ @@:
-        lg _ cls.l..
+    ___ d..(___, msg, @ @@:
+        lg _ ___.l..
         lg.d..(msg, @ @@
 
     ??
-    ___ i..(cls, msg, @ @@:
-        lg _ cls.l..
+    ___ i..(___, msg, @ @@:
+        lg _ ___.l..
         lg.i..(msg, @ @@
 
     ??
-    ___ w..(cls, msg, @ @@:
-        lg _ cls.l..
+    ___ w..(___, msg, @ @@:
+        lg _ ___.l..
         lg.w..(msg, @ @@
 
     ??
-    ___ e..(cls, msg, @ @@:
-        lg _ cls.l..
+    ___ e..(___, msg, @ @@:
+        lg _ ___.l..
         lg.e..(msg, @ @@
 
     ??
-    ___ c..(cls, msg, @ @@:
-        lg _ cls.l..
+    ___ c..(___, msg, @ @@:
+        lg _ ___.l..
         lg.c..(msg, @ @@
 
     ??
-    ___ log(cls, level, msg, @ @@:
-        lg _ cls.l..
+    ___ log(___, level, msg, @ @@:
+        lg _ ___.l..
         lg.log(level, msg, @ @@
 
     ??
-    ___ exception(cls, msg, @ @@:
-        lg _ cls.l..
+    ___ exception(___, msg, @ @@:
+        lg _ ___.l..
         lg.exception(msg, @ @@
 
     ??
-    ___ write_to_file(cls, path, level_?.WARNING):
+    ___ write_to_file(___, path, level_?.WARNING):
         file_handler _ ?.FH..(path)
         file_handler.sL..(level)
 
         fmt _ ?.F..("[%(a_t_)s][%(l..)s] %(m..)s")
         file_handler.sF..(fmt)
 
-        lg _ cls.l..
+        lg _ ___.l..
         lg.aH..(file_handler)
 
 
