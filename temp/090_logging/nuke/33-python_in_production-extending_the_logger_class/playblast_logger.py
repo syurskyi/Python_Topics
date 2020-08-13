@@ -1,12 +1,12 @@
-____ maya_logger ______ MayaLogger
-
-
-c_ PlayblastLogger(MayaLogger):
-    
-    LOGGER_NAME _ "Playblast"
-    
-    
-    
-__  -n __ "__main__":
-
-    PlayblastLogger.e..("d.. m..")
+# ____ m.. ______ M..
+#
+#
+# c_ PlayblastLogger M..
+#
+#     LOGGER_NAME _ "Playblast"
+#
+#
+#
+# __  -n __ ____
+#
+#     ?.e.. "d.. m.."
