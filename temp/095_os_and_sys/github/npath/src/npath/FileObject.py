@@ -10,7 +10,7 @@ c_ FileObject(Path):
     ___ __repr__
         r_ "%s('%s')" % ( -c . -n, __path)
 
-    @property
+    ??
     ___ path
         '''Return path to file object as a Path (not normally needed)'''
         r_ Path()
@@ -26,12 +26,12 @@ c_ FileObject(Path):
         '''Is this a directory object'''
 
 
-    @property
+    ??
     ___ isfile
         r_ is_file
 
 
-    @property
+    ??
     ___ isdir
         r_ is_dir
 

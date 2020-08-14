@@ -27,7 +27,7 @@ c_ Path(object):
     ___ __str__
         r_ __path
 
-    @property
+    ??
     ___ s
         '''Alias to __str__()'''
         r_ str()
@@ -36,7 +36,7 @@ c_ Path(object):
         r_ "Path('%s')" % (__path)
 
 
-    @property
+    ??
     ___ effective_path_str
         '''Path being pased to os.path'''
         __ __relative_to __ N..:
@@ -45,7 +45,7 @@ c_ Path(object):
             r_ __.path.j..(str(__relative_to), __path)
 
 
-    @property
+    ??
     ___ _compare_str
         '''String for comparison.  See .__eq__()'''
         __ __relative_to __ N..:
@@ -95,7 +95,7 @@ c_ Path(object):
         r_ no. __eq__(other)
 
 
-    @property
+    ??
     ___ rel_root
         '''The path that this path is relative to (__ relative)'''
         __ is_relative:
@@ -106,7 +106,7 @@ c_ Path(object):
         r_ N..
 
 
-    @property
+    ??
     ___ is_relative
         __ le.(__path) > 0:
             __ __path[0] __ ('/', '\\'):
@@ -117,7 +117,7 @@ c_ Path(object):
         r_ N..
 
 
-    @property
+    ??
     ___ is_absolute
         r_ no. is_relative
 
@@ -137,24 +137,24 @@ c_ Path(object):
         r_ Path(rel_path, relative_to_root)
 
 
-    @property
+    ??
     ___ exists
         r_ __.path.exists(effective_path_str)
 
-    @property
+    ??
     ___ is_file
         r_ __.path.isfile(effective_path_str)
 
-    @property
+    ??
     ___ is_dir
         r_ __.path.isdir(effective_path_str)
 
-    @property
+    ??
     ___ is_link
         r_ __.path.islink(effective_path_str)
 
 
-    @property
+    ??
     ___ abs
         __ is_relative:
             __ __relative_to __ no. N..:
@@ -164,27 +164,27 @@ c_ Path(object):
         ____
             r_ Path(__.path.abspath(__path))
 
-    @property
+    ??
     ___ basename
         r_ __.path.basename(__path)
 
-    @property
+    ??
     ___ parent
         r_ Path(__.path.dirname(__path))
 
 
-    @property
+    ??
     ___ splitext
         prefix, ext _ __.path.splitext(__path)
         __ ext __ no. N.. and ext[0] __ '.':
             ext _ ext[1:]
         r_ prefix, ext
 
-    @property
+    ??
     ___ prefix
         r_ splitext[0]
 
-    @property
+    ??
     ___ ext
         r_ splitext[1]
 
@@ -194,7 +194,7 @@ c_ Path(object):
     ___ has_ext(, *exts):
         r_ ext.lower() __ set([e.lower() ___ e __ exts])
 
-    @property
+    ??
     ___ norm
         r_ Path(__.path.normpath(__path))
 
@@ -204,12 +204,12 @@ c_ Path(object):
         r_ Path(__.path.j..(*paths), relative_to_self.__relative_to)
 
 
-    @property
+    ??
     ___ all
         ___ p __ dirs:
-            yield p
+            y.. p
         ___ p __ files:
-            yield p
+            y.. p
 
 
     ___ list_dir
@@ -225,12 +225,12 @@ c_ Path(object):
             # May let this exception bubble up in the future __ file doesn't exist
             r_ F..
 
-    @property
+    ??
     ___ dirs
         ___ name __ list_dir():
             child _ j..(name)
             __ child.is_dir:
-                yield child
+                y.. child
 
 
     ___ startswith(, path):
@@ -239,12 +239,12 @@ c_ Path(object):
         r_ my_parts[:le.(path_parts)] __ path_parts
 
 
-    @property
+    ??
     ___ files
         ___ name __ list_dir():
             child _ j..(name)
             __ child.is_file:
-                yield child
+                y.. child
 
 
     ___ find
@@ -259,9 +259,9 @@ c_ Path(object):
         '''
         ___ dirpath, dirnames, filenames __ __.walk(str(abs)):
             ___ name __ dirnames:
-                yield Path(dirpath, name).make_relative_to(abs)
+                y.. Path(dirpath, name).make_relative_to(abs)
             ___ name __ filenames:
-                yield Path(dirpath, name).make_relative_to(abs)
+                y.. Path(dirpath, name).make_relative_to(abs)
 
 
 

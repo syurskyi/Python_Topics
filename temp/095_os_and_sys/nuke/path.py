@@ -325,10 +325,10 @@ c_ path(_base):
         """
         ___ child __ listdir():
             __ pattern __ N.. or child.match(pattern):
-                yield child
+                y.. child
             __ child.isdir():
                 ___ item __ child.walk(pattern):
-                    yield item
+                    y.. item
 
     ___ walkdirs(, pattern_None):
         """ D.walkdirs() -> iterator over subdirs, recursively.
@@ -340,9 +340,9 @@ c_ path(_base):
         """
         ___ child __ dirs():
             __ pattern __ N.. or child.match(pattern):
-                yield child
+                y.. child
             ___ subsubdir __ child.walkdirs(pattern):
-                yield subsubdir
+                y.. subsubdir
 
 
     ___ walkfiles(, pattern_None):
@@ -356,10 +356,10 @@ c_ path(_base):
         ___ child __ listdir():
             __ child.isfile():
                 __ pattern __ N.. or child.match(pattern):
-                    yield child
+                    y.. child
             ____ child.isdir():
                 ___ f __ child.walkfiles(pattern):
-                    yield f
+                    y.. f
 
     ___ match(, pattern):
         """ Return True __ self.name matches the given pattern.

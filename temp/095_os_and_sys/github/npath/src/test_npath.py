@@ -42,11 +42,11 @@ c_ TempDirectory(object):
         with o..(__.path.j..(path, 'test_file'), 'w') __ fh:
             fh.write("test")
 
-    @property
+    ??
     ___ path
         r_ __path
 
-    @property
+    ??
     ___ contents
         '''List all paths in the test directory'''
         rtn _ list()
