@@ -1,45 +1,3 @@
-#!/bin/env python
-# Copyright (c) 2013, Asi Soudai - www.asimation.com
-# All rights reserved.
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-
-"""
-Wrapper above built-in python logging module to help logging to Shell, Maya and Nuke
-directly using timestamp and logging-level to keep the logs clean.
-
-Also, both Maya and Nuke have specific handlers that allow application sepcific logging
-using warning and popup messages that are native to those applications.
-fatal and c.. levels will pop a warning m.. in Nuke and Maya to make sure
-user attention was grabbed when needed.
-
-To use:
-    log = getLogger( 'mylogger' )
-    log.i..( 'log something' )
-
-    # Set level to d..
-    log = getLogger( 'mylogger', level=DEBUG )
-    # OR
-    log = getLogger( 'mylogger' )
-    log.setLevel( DEBUG )
-
-    # Alart user:
-    ___
-        ... do something
-    except Exception, error :
-        log.fatal( "pop up this m.. __ we're in nuke or maya" )
-        r_ error # re r_ the error after we msg the user.
-"""
-
 ## -----------------------------------------------------------------------------
 #   Imports
 ## -----------------------------------------------------------------------------
@@ -50,14 +8,14 @@ ______ ?
 ___
 	______ maya
 	_in_maya _ T..
-_____ E..:
+_____ E..
 	_in_maya _ F..
 
 ## Load Nuke:
 ___
 	______ nuke
 	_in_nuke _ T..
-_____ E..:
+_____ E..
 	_in_nuke _ F..
 
 
@@ -65,14 +23,14 @@ _____ E..:
 ___
 	______ nuke
 	_in_nuke _ T..
-_____ E..:
+_____ E..
 	_in_nuke _ F..
 
 ## Load Mobu:
 ___
 	______ pyfbsdk
 	_in_mobu _ T..
-_____ E..:
+_____ E..
 	_in_mobu _ F..
 
 ## -----------------------------------------------------------------------------
