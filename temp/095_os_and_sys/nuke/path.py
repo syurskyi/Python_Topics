@@ -53,7 +53,7 @@ __ hasattr(file, 'newlines'):
     _textmode _ 'U'
 
 # Use unicode strings __ possible
-_base _ str
+_base _ st.
 __ __.path.supports_unicode_filenames:
     _base _ unicode
 
@@ -213,7 +213,7 @@ c_ path(_base):
         """
         parts _ []
         loc _
-        while loc !_ __.curdir and loc !_ __.pardir:
+        w__ loc !_ __.curdir and loc !_ __.pardir:
             prev _ loc
             loc, child _ prev.splitpath()
             loc _  -c (loc)

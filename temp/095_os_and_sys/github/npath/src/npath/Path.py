@@ -5,7 +5,7 @@ c_ Path(object):
     '''Work with os.path as an object'''
 
     ___  - (, *parms, **kwargs):
-        str_parms _ [str(p) ___ p __ parms]
+        str_parms _ [st.(p) ___ p __ parms]
         __path _ __.path.j..(*str_parms)
 
         __relative_to _ N..
@@ -30,7 +30,7 @@ c_ Path(object):
     ??
     ___ s
         '''Alias to __str__()'''
-        r_ str()
+        r_ st.()
 
     ___ __repr__
         r_ "Path('%s')" % (__path)
@@ -42,16 +42,16 @@ c_ Path(object):
         __ __relative_to __ N..:
             r_ __path
         ____
-            r_ __.path.j..(str(__relative_to), __path)
+            r_ __.path.j..(st.(__relative_to), __path)
 
 
     ??
     ___ _compare_str
         '''String for comparison.  See .__eq__()'''
         __ __relative_to __ N..:
-            path _ str()
+            path _ st.()
         ____
-            path _ __.path.j..(str(__relative_to), str())
+            path _ __.path.j..(st.(__relative_to), st.())
 
         # Normalize path seperators
         path _ Path.normalize_path_sep(path)
@@ -83,7 +83,7 @@ c_ Path(object):
         ___
              r_ other._compare_str __ _compare_str
         _____ AttributeError:
-            a _ Path.normalize_path_sep(str(other))
+            a _ Path.normalize_path_sep(st.(other))
             r_ a __ _compare_str
 
 
@@ -124,11 +124,11 @@ c_ Path(object):
 
     ___ make_relative_to(, root):
         '''Create a new path object which is same path relative to this'''
-        root _ str(root)
+        root _ st.(root)
 
-        path _ str()
+        path _ st.()
         __ __relative_to __ no. N..:
-            path _ __.path.j..(str(__relative_to), path)
+            path _ __.path.j..(st.(__relative_to), path)
 
         __ no. path.startswith(root):
             r_ ValueError("%s cannot be represented relative to %s" %(
@@ -189,7 +189,7 @@ c_ Path(object):
         r_ splitext[1]
 
     ___ split
-        r_ str(norm).split(__.sep)
+        r_ st.(norm).split(__.sep)
 
     ___ has_ext(, *exts):
         r_ ext.lower() __ set([e.lower() ___ e __ exts])
@@ -200,7 +200,7 @@ c_ Path(object):
 
 
     ___ j..(, *paths):
-        paths _ [__path, ] + [str(p) ___ p __ paths]
+        paths _ [__path, ] + [st.(p) ___ p __ paths]
         r_ Path(__.path.j..(*paths), relative_to_self.__relative_to)
 
 
@@ -217,7 +217,7 @@ c_ Path(object):
 
     ___ samefile(, other):
         ___
-            r_ __.path.samefile(effective_path_str, str(other))
+            r_ __.path.samefile(effective_path_str, st.(other))
         _____ AttributeError:
             r_ AttributeError("os.path.samefile() only available for Unix")
         _____ FileNotFoundError:
@@ -257,7 +257,7 @@ c_ Path(object):
 
         Returned paths are RelativePath
         '''
-        ___ dirpath, dirnames, filenames __ __.walk(str(abs)):
+        ___ dirpath, dirnames, filenames __ __.walk(st.(abs)):
             ___ name __ dirnames:
                 y.. Path(dirpath, name).make_relative_to(abs)
             ___ name __ filenames:

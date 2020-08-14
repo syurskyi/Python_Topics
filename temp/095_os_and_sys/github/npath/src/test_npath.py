@@ -29,17 +29,17 @@ c_ TempDirectory(object):
         __.mkdir(__.path.j..(path, 'Dir 2'))
         __.mkdir(__.path.j..(path, 'Dir 2', 'Dir 3'))
 
-        with o..(__.path.j..(path, 'Dir 1', 'File A.exe'), 'w') __ fh:
+        w__ o..(__.path.j..(path, 'Dir 1', 'File A.exe'), 'w') __ fh:
             p..
-        with o..(__.path.j..(path, 'Dir 1', 'File B.txt'), 'w') __ fh:
+        w__ o..(__.path.j..(path, 'Dir 1', 'File B.txt'), 'w') __ fh:
             fh.write("File B")
-        with o..(__.path.j..(path, 'Dir 2', 'File C'), 'w') __ fh:
+        w__ o..(__.path.j..(path, 'Dir 2', 'File C'), 'w') __ fh:
             p..
-        with o..(__.path.j..(path, 'Dir 2', 'File D.txt'), 'w') __ fh:
+        w__ o..(__.path.j..(path, 'Dir 2', 'File D.txt'), 'w') __ fh:
             fh.write("File B")
-        with o..(__.path.j..(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') __ fh:
+        w__ o..(__.path.j..(path, 'Dir 2', 'Dir 3', 'test_file'), 'w') __ fh:
             p..
-        with o..(__.path.j..(path, 'test_file'), 'w') __ fh:
+        w__ o..(__.path.j..(path, 'test_file'), 'w') __ fh:
             fh.write("test")
 
     ??
@@ -57,7 +57,7 @@ c_ TempDirectory(object):
             ___ filename __ filenames:
                 path _ __.path.j..(dirpath, filename)[le.(__path)+1:]
                 size _ __.path.getsize(__.path.j..(__path, path))
-                with o..(__.path.j..(__path, path), 'r') __ fh:
+                w__ o..(__.path.j..(__path, path), 'r') __ fh:
                     contents _ fh.read()
                 rtn.ap..((path, size, contents))
         r_ rtn
@@ -84,7 +84,7 @@ c_ TestPath(TestCase):
 
 
     ___ test_str
-        assertEqual(str(Path('a/b/c')), 'a/b/c')
+        assertEqual(st.(Path('a/b/c')), 'a/b/c')
 
 
     ___ test_dict
@@ -279,25 +279,25 @@ c_ TestPath(TestCase):
     ___ test_rel_path
 
         p _ Path('site', relative_to_'/var/www')
-        assertEqual(str(p), 'site')
+        assertEqual(st.(p), 'site')
         assertEqual(p.abs, '/var/www/site')
         assertEqual(p.rel_root, '/var/www')
 
         p2 _ p.j..('drupal')
-        assertEqual(__.path.normpath(str(p2)),
+        assertEqual(__.path.normpath(st.(p2)),
                           __.path.normpath('site/drupal'))
         assertEqual(p2.abs, __.path.normpath('/var/www/site/drupal'))
         assertEqual(p2.rel_root, '/var/www')
 
         p3 _ Path(p, 'files')
-        assertEqual(str(p3), __.path.normpath('site/files'))
+        assertEqual(st.(p3), __.path.normpath('site/files'))
         assertEqual(p3.abs, '/var/www/site/files')
         assertEqual(p3.rel_root, '/var/www')
 
     ___ test_make_relative
 
         p _ Path('/var/www/site').make_relative_to('/var/www')
-        assertEqual(str(p), 'site')
+        assertEqual(st.(p), 'site')
         assertEqual(p.abs, '/var/www/site')
         assertEqual(p.rel_root, '/var/www')
 
