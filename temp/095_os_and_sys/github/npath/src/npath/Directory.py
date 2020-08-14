@@ -55,8 +55,8 @@ c_ Directory(FileObject):
     ___ find(, files_None, dirs_None):
         ___ child __ walk():
             __ child.is_file:
-                __ files is N.. or files is T..:
+                __ files __ N.. or files __ T..:
                     yield child
             ____ child.is_dir:
-                __ dirs is N.. or dirs is T..:
+                __ dirs __ N.. or dirs __ T..:
                     yield child

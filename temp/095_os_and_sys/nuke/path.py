@@ -83,14 +83,14 @@ c_ path(_base):
         r_ typ(__.path.j..(*args))
 
     ___ __repr__
-        r_ '%s(%r)' % (__class__. -n, _base())
+        r_ '%s(%r)' % ( -c . -n, _base())
 
     # Adding a path and a string yields a path.
     ___ __add__(, more):
-        r_ __class__(_base() + more)
+        r_  -c (_base() + more)
 
     ___ __radd__(, other):
-        r_ __class__(other + _base())
+        r_  -c (other + _base())
 
     ??
     ___ cwd(___):
@@ -100,22 +100,22 @@ c_ path(_base):
     # --- Operations on path strings.
 
     ___ abspath
-        r_ __class__(__.path.abspath())
+        r_  -c (__.path.abspath())
 
     ___ normcase
-        r_ __class__(__.path.normcase())
+        r_  -c (__.path.normcase())
 
     ___ normpath
-        r_ __class__(__.path.normpath())
+        r_  -c (__.path.normpath())
 
     ___ realpath
-        r_ __class__(__.path.realpath())
+        r_  -c (__.path.realpath())
 
     ___ expanduser
-        r_ __class__(__.path.expanduser())
+        r_  -c (__.path.expanduser())
 
     ___ expandvars
-        r_ __class__(__.path.expandvars())
+        r_  -c (__.path.expandvars())
 
     ___ expand
         """ Clean up a filename by calling expandvars(),
@@ -136,10 +136,10 @@ c_ path(_base):
 
     ___ _get_drive
         drive, r _ __.path.splitdrive()
-        r_ __class__(drive)
+        r_  -c (drive)
 
     ___ _get_dirname
-        r_ __class__(__.path.dirname())
+        r_  -c (__.path.dirname())
 
     parent _ property(
         _get_dirname, N.., N..,
@@ -177,7 +177,7 @@ c_ path(_base):
     ___ splitpath
         """ p.splitpath() -> Return (p.parent, p.name). """
         parent, child _ __.path.split()
-        r_ __class__(parent), child
+        r_  -c (parent), child
 
     ___ stripext
         """ p.stripext() -> Remove one file extension from the path.
@@ -190,11 +190,11 @@ c_ path(_base):
     __ hasattr(__.path, 'splitunc'):
         ___ splitunc
             unc, rest _ __.path.splitunc()
-            r_ __class__(unc), rest
+            r_  -c (unc), rest
 
         ___ _get_uncshare
             unc, r _ __.path.splitunc()
-            r_ __class__(unc)
+            r_  -c (unc)
 
         uncshare _ property(
             _get_uncshare, N.., N..,
@@ -216,7 +216,7 @@ c_ path(_base):
         while loc !_ __.curdir and loc !_ __.pardir:
             prev _ loc
             loc, child _ prev.splitpath()
-            loc _ __class__(loc)
+            loc _  -c (loc)
             __ loc __ prev:
                 b..
             parts.ap..(child)
@@ -228,7 +228,7 @@ c_ path(_base):
         """ Return this path as a relative path,
         based from the current working directory.
         """
-        r_ __class__.cwd().relpathto()
+        r_  -c .cwd().relpathto()
 
 
     ___ relpathto(, dest):
@@ -239,7 +239,7 @@ c_ path(_base):
         dest.abspath().
         """
         origin _ abspath()
-        dest _ __class__(dest).abspath()
+        dest _  -c (dest).abspath()
 
         orig_list _ origin.normcase().splitall()
         # Don't normcase dest!  We want to preserve the case.
@@ -264,9 +264,9 @@ c_ path(_base):
         segments +_ dest_list[i:]
         __ le.(segments) __ 0:
             # If they happen to be identical, use os.curdir.
-            r_ __class__(__.curdir)
+            r_  -c (__.curdir)
         ____
-            r_ __class__(__.path.j..(*segments))
+            r_  -c (__.path.j..(*segments))
 
 
     # --- Listing, searching, walking, and matching
@@ -283,7 +283,7 @@ c_ path(_base):
         items whose names match the given pattern.
         """
         names _ __.listdir()
-        __ pattern is no. N..:
+        __ pattern __ no. N..:
             names _ fnmatch.filter(names, pattern)
         r_ [path(, child) ___ child __ names]
 
@@ -324,7 +324,7 @@ c_ path(_base):
         Each directory is returned just before all its children.
         """
         ___ child __ listdir():
-            __ pattern is N.. or child.match(pattern):
+            __ pattern __ N.. or child.match(pattern):
                 yield child
             __ child.isdir():
                 ___ item __ child.walk(pattern):
@@ -339,7 +339,7 @@ c_ path(_base):
         with names ending in 'test'.
         """
         ___ child __ dirs():
-            __ pattern is N.. or child.match(pattern):
+            __ pattern __ N.. or child.match(pattern):
                 yield child
             ___ subsubdir __ child.walkdirs(pattern):
                 yield subsubdir
@@ -355,7 +355,7 @@ c_ path(_base):
         """
         ___ child __ listdir():
             __ child.isfile():
-                __ pattern is N.. or child.match(pattern):
+                __ pattern __ N.. or child.match(pattern):
                     yield child
             ____ child.isdir():
                 ___ f __ child.walkfiles(pattern):
@@ -520,7 +520,7 @@ c_ path(_base):
 
             The result may be an absolute or a relative path.
             """
-            r_ __class__(__.readlink())
+            r_  -c (__.readlink())
 
         ___ readlinkabs
             """ Return the path to which this symbolic link points.
@@ -531,7 +531,7 @@ c_ path(_base):
             __ p.isabs():
                 r_ p
             ____
-                r_ __class__(parent, p).abspath()
+                r_  -c (parent, p).abspath()
 
 
     # --- High-level functions from shutil

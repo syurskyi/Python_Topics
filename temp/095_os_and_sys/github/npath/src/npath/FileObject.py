@@ -8,7 +8,7 @@ c_ FileObject(Path):
 
 
     ___ __repr__
-        r_ "%s('%s')" % (__class__. -n, __path)
+        r_ "%s('%s')" % ( -c . -n, __path)
 
     @property
     ___ path

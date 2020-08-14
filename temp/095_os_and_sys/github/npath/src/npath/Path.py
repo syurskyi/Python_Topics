@@ -18,7 +18,7 @@ c_ Path(object):
 
         ___ k, v __ list(kwargs.items()):
             __ k __ 'relative_to':
-                __ v is no. N..:
+                __ v __ no. N..:
                     __relative_to _ Path(v)
             ____
                 r_ E..("Unknown keyword argument: s" % (k))
@@ -39,7 +39,7 @@ c_ Path(object):
     @property
     ___ effective_path_str
         '''Path being pased to os.path'''
-        __ __relative_to is N..:
+        __ __relative_to __ N..:
             r_ __path
         ____
             r_ __.path.j..(str(__relative_to), __path)
@@ -48,7 +48,7 @@ c_ Path(object):
     @property
     ___ _compare_str
         '''String for comparison.  See .__eq__()'''
-        __ __relative_to is N..:
+        __ __relative_to __ N..:
             path _ str()
         ____
             path _ __.path.j..(str(__relative_to), str())
@@ -99,7 +99,7 @@ c_ Path(object):
     ___ rel_root
         '''The path that this path is relative to (__ relative)'''
         __ is_relative:
-            __ __relative_to is no. N..:
+            __ __relative_to __ no. N..:
                 r_ __relative_to
             ____
                 r_ __.path.abspath(__.curdir)
@@ -127,7 +127,7 @@ c_ Path(object):
         root _ str(root)
 
         path _ str()
-        __ __relative_to is no. N..:
+        __ __relative_to __ no. N..:
             path _ __.path.j..(str(__relative_to), path)
 
         __ no. path.startswith(root):
@@ -157,7 +157,7 @@ c_ Path(object):
     @property
     ___ abs
         __ is_relative:
-            __ __relative_to is no. N..:
+            __ __relative_to __ no. N..:
                 r_ Path(__relative_to, __path)
             ____
                 r_ Path(__.path.abspath(__path))
@@ -176,7 +176,7 @@ c_ Path(object):
     @property
     ___ splitext
         prefix, ext _ __.path.splitext(__path)
-        __ ext is no. N.. and ext[0] __ '.':
+        __ ext __ no. N.. and ext[0] __ '.':
             ext _ ext[1:]
         r_ prefix, ext
 
