@@ -17,7 +17,7 @@ c_ Solution:
         count _ 0
         left _ 0
         startIndex _ -1
-        minLen _ float("inf")
+        minLen _ fl..("inf")
 
         ___ right __ ra..(0, len1
 

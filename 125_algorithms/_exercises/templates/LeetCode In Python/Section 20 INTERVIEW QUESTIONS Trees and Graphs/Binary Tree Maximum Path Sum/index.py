@@ -7,7 +7,7 @@
 
 
 c_ Solution:
-    ans _ -float("inf")
+    ans _ -fl..("inf")
     ___ solution(,node
         __(node pa__ N..
             r_ 0
