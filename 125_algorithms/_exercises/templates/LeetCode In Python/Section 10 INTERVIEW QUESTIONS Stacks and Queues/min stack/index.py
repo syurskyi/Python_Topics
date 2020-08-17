@@ -12,7 +12,7 @@ c_ MinStack
         .st.p..
 
     ___ top()  in.:
-        r_ .st[-1][0] __ .st else N..
+        r_ .st[-1][0] __ .st ____  N..
 
     ___ getMin()  in.:
-        r_ .st[-1][1] __ .st else N..
+        r_ .st[-1][1] __ .st ____  N..
