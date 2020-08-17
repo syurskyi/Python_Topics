@@ -1,25 +1,25 @@
-c_ Solution:
-    ___ trap(, height: L.. in.)  in.:
-        n _ le.(height)
-        __(n __ 0
-            r_ 0
-
-        left _ [0]*n
-        right _ [0] * n
-
-        ans _ 0
-
-        left[0] _ height[0]
-
-        ___ i __ ra..(1, n
-            left[i] _ ma.(left[i-1], height[i])
-
-        right[n-1] _ height[n-1]
-
-        ___ i __ ra..(n-2, -1, -1
-            right[i] _ ma.(right[i+1], height[i])
-
-        ___ i __ ra..(0, n
-            ans +_ mi.(left[i], right[i])-height[i]
-
-        r_ ans
+# c_ Solution
+#     ___ trap height L.. in.  in.
+#         n _ le. ?
+#         __ ? __ 0
+#             r_ 0
+#
+#         left _ 0 * ?
+#         right _ 0 * ?
+#
+#         ans _ 0
+#
+#         ? 0 _ ? 0
+#
+#         ___ i __ ra..(1, n
+#             ? ? _ ma. ? ?-1 ? ?
+#
+#         ? ?-1 _ ? ?-1
+#
+#         ___ i __ ra.. ?-2 -1 -1
+#             ? ? _ ma. ? ?+1 ? ?
+#
+#         ___ i __ ra..0 n
+#             ? +_ mi. ? ? ? ?-? ?
+#
+#         r_ ?

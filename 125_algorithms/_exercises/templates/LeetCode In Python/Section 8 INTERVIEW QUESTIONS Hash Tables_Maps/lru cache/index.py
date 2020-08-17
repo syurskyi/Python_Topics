@@ -3,12 +3,12 @@ ____ co.. ______ deque
 
 c_ LRUCache:
 
-    ___  - (, capacity: in.
+    ___  -  capacity: in.
         .c _ capacity
         .m _ dict()
         .deq _ deque()
 
-    ___ get(, key: in.)  in.:
+    ___ get key: in.)  in.:
         __ key __ .m:
             value _ .m[key]
             .deq.remove(key)
@@ -17,7 +17,7 @@ c_ LRUCache:
         ____
             r_ -1
 
-    ___ put(, key: in., value: in.)  N..
+    ___ put key: in., value: in.)  N..
 
         # Your LRUCache object will be instantiated and called as such:
         # obj = LRUCache(capacity)

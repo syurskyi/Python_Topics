@@ -1,6 +1,6 @@
 c_ Node:
 
-    ___  - (, data
+    ___  -  data
         .data _ data
         .next _ N..
 
@@ -18,7 +18,7 @@ c_ LinkedList:
             temp _ temp.next
         print(linked_list)
 
-    ___ deleteNode(, key
+    ___ deleteNode key
         temp _ .head
         __(temp pa__ N..
             r_

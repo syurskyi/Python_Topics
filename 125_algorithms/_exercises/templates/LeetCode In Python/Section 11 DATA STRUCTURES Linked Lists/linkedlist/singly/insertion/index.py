@@ -1,6 +1,6 @@
 c_ Node:
 
-    ___  - (, data
+    ___  -  data
         .data _ data
         .next _ N..
 
@@ -19,7 +19,7 @@ c_ LinkedList:
         print(linked_list)
 
     # list start at 0
-    ___ insertNode(, val, pos
+    ___ insertNode val, pos
         target _ Node(val)
         __(pos __ 0
             target.next _ .head

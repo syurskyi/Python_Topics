@@ -12,5 +12,5 @@ c_ Solution:
         __(t1 pa__ N.. o.. t2 pa__ N..
             r_ F..
         r_ (t1.val__t2.val) a.. .isMirror(t1.right,t2.left) a.. .isMirror(t1.left,t2.right)
-    ___ isSymmetric(, root: TreeNode)  bool:
+    ___ isSymmetric root: TreeNode)  bool:
         r_ .isMirror(root,root)

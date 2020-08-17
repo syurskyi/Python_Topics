@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ solution(, candidates,ans,cur,target,index,su.
+    ___ solution candidates,ans,cur,target,index,su.
         __(sum__target
             ans.ap..(cur[:])
         ____(su.<target
@@ -9,7 +9,7 @@ c_ Solution:
                 .solution(candidates,ans,cur,target,i,su.+candidates[i])
                 cur.p..
         r_
-    ___ combinationSum(, candidates: L.. in., target: in.)  L..[L..[in.]]:
+    ___ combinationSum candidates: L.. in., target: in.)  L..[L..[in.]]:
         ans _   # list
         cur _   # list
         .solution(candidates,ans,cur,target,0,0)

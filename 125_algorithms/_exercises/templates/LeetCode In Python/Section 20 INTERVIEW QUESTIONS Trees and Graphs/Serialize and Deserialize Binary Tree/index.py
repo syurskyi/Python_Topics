@@ -8,7 +8,7 @@
 
 c_ Codec:
 
-    ___ serialize(, root
+    ___ serialize root
         """Encodes a tree to a single string.
 
         :type root: TreeNode
@@ -22,7 +22,7 @@ c_ Codec:
 
         r_ st.(root.val)+"#"+leftSerialized+rightSerialized
 
-    ___ deserialize(, data
+    ___ deserialize data
         """Decodes your encoded data to tree.
         :type data: str
         :rtype: TreeNode

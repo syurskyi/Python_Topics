@@ -2,7 +2,7 @@ c_ MinStack
     ___  -
         .st _   # list
 
-    ___ push(, x: in.)  N..
+    ___ push x: in.)  N..
         curMin _ .getMin()
         __ curMin __ N.. o.. curMin > x:
             curMin _ x

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isPalin(, seg
+    ___ isPalin seg
         i _ 0
         j _ le.(seg)-1
         w___(i < j
@@ -9,7 +9,7 @@ c_ Solution:
             j -_ 1
         r_ T..
 
-    ___ dfs(, s: st.
+    ___ dfs s: st.
         __(le.(s) __ 0 a.. le.(.temp) > 0
             .res.ap..(.temp[:])
             r_
@@ -21,7 +21,7 @@ c_ Solution:
                 .dfs(s[i:])
                 .temp.p..
 
-    ___ partition(, s: st.)  L..[L..[st.]]:
+    ___ partition s: st.)  L..[L..[st.]]:
         .res _   # list
         .temp _   # list
         .dfs(s)

@@ -6,10 +6,10 @@ c_ Graph:
     ___  - (
         .graph _ d_d_(list)
 
-    ___ insertEdge(, v1, v2
+    ___ insertEdge v1, v2
         .graph[v1].ap..(v2)
 
-    ___ DFS(, startNode
+    ___ DFS startNode
         visited _ set()
         st _   # list
         st.ap..(startNode)

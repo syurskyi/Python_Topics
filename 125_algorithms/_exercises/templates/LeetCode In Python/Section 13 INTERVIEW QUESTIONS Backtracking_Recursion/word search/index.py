@@ -2,7 +2,7 @@ c_ Solution:
     dx _ [0, 0, -1, 1]
     dy _ [1, -1, 0, 0]
 
-    ___ solution(, board, word, x, y, cur
+    ___ solution board, word, x, y, cur
         __(x < 0 o.. x >_ le.(board) o.. y < 0 o.. y >_ le.(board[x]) o.. board[x][y] __ ' '
             r_ F..
         cur +_ board[x][y]
@@ -24,7 +24,7 @@ c_ Solution:
         board[x][y] _ temp
         r_ F..
 
-    ___ exist(, board: L..[L..[st.]], word: st.)  bool:
+    ___ exist board: L..[L..[st.]], word: st.)  bool:
         __(le.(word) __ 0
             r_ T..
         n _ le.(board)

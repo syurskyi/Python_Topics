@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution:
-    ___ lowestCommonAncestor(, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode')  'TreeNode':
+    ___ lowestCommonAncestor root: 'TreeNode', p: 'TreeNode', q: 'TreeNode')  'TreeNode':
         __(root pa__ N..
             r_ N..
         __(root.val__p.val o.. root.val__q.val

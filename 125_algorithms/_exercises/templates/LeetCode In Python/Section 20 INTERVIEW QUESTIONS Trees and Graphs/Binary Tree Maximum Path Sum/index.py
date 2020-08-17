@@ -19,6 +19,6 @@ c_ Solution:
         .ans _ ma.(.ans,mxTop)
         r_ mxSide
 
-    ___ maxPathSum(, root: TreeNode)  in.:
+    ___ maxPathSum root: TreeNode)  in.:
         .solution(root)
         r_ .ans

@@ -11,11 +11,11 @@ c_ Graph:
 
         .graph _ d_d_(list)
 
-    ___ setEdge(, u, v
+    ___ setEdge u, v
         .graph[u].ap..(v)
         print(.graph)
 
-    ___ DFS(, u, visited
+    ___ DFS u, visited
         visited.add(u)
         print(u, end_' ')
 

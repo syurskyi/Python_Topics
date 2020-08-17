@@ -1,5 +1,5 @@
 c_ Node:
-    ___  - (, data
+    ___  -  data
         .data _ data
         .prev _ N..
         .next _ N..
@@ -9,7 +9,7 @@ c_ LinkedList:
     ___  - (
         .head _ N..
 
-    ___ createList(, arr
+    ___ createList arr
         start _ .head
         n _ le.(arr)
 
@@ -47,7 +47,7 @@ c_ LinkedList:
         r_ count
 
     # we will consider that the index begin at 1
-    ___ insertAtLocation(, value, index
+    ___ insertAtLocation value, index
         temp _ .head
 
         count _ .countList()

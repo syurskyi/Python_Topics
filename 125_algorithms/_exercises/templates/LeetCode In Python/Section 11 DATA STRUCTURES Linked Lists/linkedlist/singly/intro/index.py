@@ -1,5 +1,5 @@
 c_ Node:
-    ___  - (, data
+    ___  -  data
         .data _ data
         .next _ N..
 

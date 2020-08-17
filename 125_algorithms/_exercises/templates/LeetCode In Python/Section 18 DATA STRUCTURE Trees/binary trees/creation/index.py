@@ -1,6 +1,6 @@
 
 c_ Node:
-    ___  - (, value
+    ___  -  value
         .left _ N..
         .right _ N..
         .data _ value

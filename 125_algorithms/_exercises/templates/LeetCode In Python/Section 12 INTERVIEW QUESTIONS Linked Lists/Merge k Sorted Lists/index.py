@@ -7,7 +7,7 @@
 
 c_ Solution:
 
-    ___ mergeTwoLists(, l1, l2
+    ___ mergeTwoLists l1, l2
         cur _ ListNode(0)
         ans _ cur
 
@@ -31,7 +31,7 @@ c_ Solution:
             cur _ cur.next
         r_ ans.next
 
-    ___ mergeKLists(, lists: L..[ListNode])  ListNode:
+    ___ mergeKLists lists: L..[ListNode])  ListNode:
         __(le.(lists) __ 0
             r_ N..
 

@@ -1,11 +1,11 @@
 c_ Solution:
-    ___ kthSmallest(, root: TreeNode, k: in.)  in.:
+    ___ kthSmallest root: TreeNode, k: in.)  in.:
         .k _ k
         .res _ N..
         .helper(root)
         r_ .res
 
-    ___ helper(, root
+    ___ helper root
         __ no. root:
             r_
         .helper(root.left)

@@ -1,6 +1,6 @@
 # network delay time - leetcode
 c_ Solution:
-    ___ networkDelayTime(, times: L..[L..[in.]], N: in., K: in.)  in.:
+    ___ networkDelayTime times: L..[L..[in.]], N: in., K: in.)  in.:
 
         g _ co...d_d_(list)
         ___ u, v, cost __ times:

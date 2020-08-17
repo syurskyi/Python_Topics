@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minWindow(, s: st., t: st.)  st.:
+    ___ minWindow s: st., t: st.)  st.:
         len1 _ le.(s)
         len2 _ le.(t)
 

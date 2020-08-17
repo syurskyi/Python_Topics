@@ -7,10 +7,10 @@ c_ Graph:
     ___  - (
         .graph _ d_d_(list)
 
-    ___ setEdge(, u, v
+    ___ setEdge u, v
         .graph[u].ap..(v)
 
-    ___ bfs(, s
+    ___ bfs s
         visited _ set()
 
         queue _   # list
