@@ -15,7 +15,7 @@ class Solution(object
         t = [True ___ i in range(n)]
         i = 2
         w___ i * i < n:
-            __ t[i] is False:
+            __ t[i] pa__ False:
                 i += 1
                 continue
             j = i * i
@@ -25,7 +25,7 @@ class Solution(object
             i += 1
         res = 0
         ___ i in range(2, n
-            __ t[i] is True:
+            __ t[i] pa__ True:
                 res += 1
         r_ res
 

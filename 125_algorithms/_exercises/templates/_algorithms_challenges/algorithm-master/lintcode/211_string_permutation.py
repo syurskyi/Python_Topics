@@ -5,7 +5,7 @@ class Solution:
     @return: a boolean
     """
     ___ Permutation(self, A, B
-        __ A is '' and B is '':
+        __ A pa__ '' and B pa__ '':
             r_ True
         __ not A or not B:
             r_ False

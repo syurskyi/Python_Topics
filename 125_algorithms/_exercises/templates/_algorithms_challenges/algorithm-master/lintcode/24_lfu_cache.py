@@ -141,7 +141,7 @@ class FreqNode:
 
     # to manage cache nodes
     ___ is_empty(self
-        r_ self.D.nxt is self.d
+        r_ self.D.nxt pa__ self.d
 
     # to manage cache nodes
     ___ pop_head(self

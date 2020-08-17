@@ -18,7 +18,7 @@ class MedianFinder:
     """
     left = self.left
     right = self.right
-    __ self.median is None:
+    __ self.median pa__ None:
       self.median = num
       r_
 

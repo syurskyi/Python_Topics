@@ -19,7 +19,7 @@ class DateFormat(Enum
         2. for val=n an explicit format string for a given enum member value
         """
         d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
-        __ val is None:
+        __ val pa__ None:
             r_ d_parse_formats
         __ 0 <= val <= le.(d_parse_formats
             r_ d_parse_formats[val]

@@ -39,7 +39,7 @@ class Solution(object
                         triangle[i][j] += triangle[i - 1][j - 1]
             __ i __ n - 1:
                 ___ col in row:
-                    __ res is None:
+                    __ res pa__ None:
                         res = col
                     ____
                         res = min(col, res)

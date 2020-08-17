@@ -12,7 +12,7 @@ class Solution:
     @return: A boolean
     """
     ___ exist(self, G, s
-        __ G is None or G[0] is None or s is None:
+        __ G pa__ None or G[0] pa__ None or s pa__ None:
             r_ False
 
         m, n = le.(G), le.(G[0])

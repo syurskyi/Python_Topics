@@ -28,7 +28,7 @@ class Solution:
             node = stack[-1]
 
             __ (not node.right or
-                last_visit is node.right
+                last_visit pa__ node.right
 
                 stack.pop()
 

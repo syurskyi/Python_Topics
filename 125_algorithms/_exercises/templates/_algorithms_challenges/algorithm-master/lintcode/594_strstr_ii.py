@@ -41,7 +41,7 @@ class Solution:
 
         NOT_FOUND = -1
 
-        __ S is not None and T is '':
+        __ S pa__ not None and T pa__ '':
             r_ 0
 
         __ not S or not T:

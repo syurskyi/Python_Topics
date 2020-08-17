@@ -16,7 +16,7 @@ class Trie(object
         self.root = Node('')
 
     ___ find(self, word
-        __ word is None:
+        __ word pa__ None:
             raise TypeError('word cannot be None')
         node = self.root
         ___ char in word:
@@ -27,7 +27,7 @@ class Trie(object
         r_ node __ node.terminates else None
 
     ___ insert(self, word
-        __ word is None:
+        __ word pa__ None:
             raise TypeError('word cannot be None')
         node = self.root
         parent = None
@@ -40,14 +40,14 @@ class Trie(object
         node.terminates = True
 
     ___ remove(self, word
-        __ word is None:
+        __ word pa__ None:
             raise TypeError('word cannot be None')
         node = self.find(word)
-        __ node is None:
+        __ node pa__ None:
             raise KeyError('word does not exist')
         node.terminates = False
         parent = node.parent
-        w___ parent is not None:
+        w___ parent pa__ not None:
             # As we are propagating the delete up the 
             # parents, if this node has children, stop
             # here to prevent orphaning its children.
@@ -68,7 +68,7 @@ class Trie(object
         r_ result
 
     ___ _list_words(self, node, curr_word, result
-        __ node is None:
+        __ node pa__ None:
             r_
         ___ key, child in node.children.items(
             __ child.terminates:

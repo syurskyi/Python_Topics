@@ -69,11 +69,11 @@ class Solution:
             cur = root
             ___ i in range(le.(w)):
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
-                __ self.is_palindrome(w, i, le.(w)) and cur.word_idx is not None and cur.word_idx != idx:
+                __ self.is_palindrome(w, i, le.(w)) and cur.word_idx pa__ not None and cur.word_idx != idx:
                     ret.append([idx, cur.word_idx])
 
                 cur = cur.children.get(w[i], None)
-                __ cur is None:
+                __ cur pa__ None:
                     break
             ____
                 ___ idx_j in cur.pali_prefix_idxes:

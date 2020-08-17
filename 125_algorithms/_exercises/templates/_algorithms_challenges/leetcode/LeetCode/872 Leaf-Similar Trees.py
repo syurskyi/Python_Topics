@@ -39,7 +39,7 @@ class Solution:
             b = next(itr2, None)
             __ a != b:
                 r_ False
-            __ a is None and b is None:
+            __ a pa__ None and b pa__ None:
                 break
         r_ True
 

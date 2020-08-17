@@ -8,7 +8,7 @@ class Solution:
     # @param a ListNode
     # @return a ListNode
     ___ swapPairs(self, head
-        __ head is None or head.next is None:
+        __ head pa__ None or head.next pa__ None:
             r_ head
         ____
             t = head.next

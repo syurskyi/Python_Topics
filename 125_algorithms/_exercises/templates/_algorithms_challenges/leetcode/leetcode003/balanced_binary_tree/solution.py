@@ -18,7 +18,7 @@ class Solution(object
         :type root: TreeNode
         :rtype: bool
         """
-        __ root is None:
+        __ root pa__ None:
             r_ True
         ____
             __ self.isBalanced(root.left) and self.isBalanced(root.right
@@ -27,7 +27,7 @@ class Solution(object
                 r_ False
 
     ___ depth(self, root
-        __ root is None:
+        __ root pa__ None:
             r_ -1
         ____
             r_ max(self.depth(root.left), self.depth(root.right)) + 1

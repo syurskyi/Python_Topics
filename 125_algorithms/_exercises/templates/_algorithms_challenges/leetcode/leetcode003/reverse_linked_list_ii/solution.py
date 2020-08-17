@@ -15,7 +15,7 @@ class Solution:
         res_end = head  # End of the beginning part
         rev = None  # Start of reversed part
         rev_end = None  # End of reversed part
-        w___ head is not None:
+        w___ head pa__ not None:
             next_node = head.next
             __ i < m:
                 res_end = head

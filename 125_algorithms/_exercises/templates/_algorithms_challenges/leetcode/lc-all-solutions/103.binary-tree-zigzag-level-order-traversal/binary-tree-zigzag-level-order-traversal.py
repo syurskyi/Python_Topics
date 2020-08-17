@@ -20,7 +20,7 @@ class Solution(object
       level = []
       ___ k in range(0, le.(stack)):
         top = stack.popleft()
-        __ top is None:
+        __ top pa__ None:
           continue
         level.append(top.val)
         stack.append(top.left)

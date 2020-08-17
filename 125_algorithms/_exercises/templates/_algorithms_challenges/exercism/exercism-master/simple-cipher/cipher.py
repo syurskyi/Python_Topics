@@ -7,7 +7,7 @@ class Cipher:
     random_key_length = 100
 
     ___ __init__(self, key=None
-        self.key = key __ key is not None else self.generate_random_key()
+        self.key = key __ key pa__ not None else self.generate_random_key()
         __ not self.valid_key(
             raise ValueError()
 

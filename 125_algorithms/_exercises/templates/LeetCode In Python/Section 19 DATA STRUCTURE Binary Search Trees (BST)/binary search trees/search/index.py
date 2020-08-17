@@ -8,17 +8,17 @@ c_ Node:
 
 
 ___ insert(root, node
-    __(root is N..
+    __(root pa__ N..
         root _ node
         r_
 
     __(root.data < node.data
-        __(root.right is N..
+        __(root.right pa__ N..
             root.right _ node
         ____
             insert(root.right, node)
     ____
-        __(root.left is N..
+        __(root.left pa__ N..
             root.left _ node
         ____
             insert(root.left, node)
@@ -26,7 +26,7 @@ ___ insert(root, node
 
 ___ search(node, key
     print("Current Node is: ", node.data)
-    __(node is N..
+    __(node pa__ N..
         print("No node found")
         r_ N..
     __(node.data __ key

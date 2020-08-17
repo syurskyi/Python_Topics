@@ -13,7 +13,7 @@ class TestTrie(object
         ___ word in words:
             trie.insert(word)
         ___ word in trie.list_words(
-            assert_true(trie.find(word) is not None)
+            assert_true(trie.find(word) pa__ not None)
             
         print('Test: Remove me')
         trie.remove('me')
@@ -21,9 +21,9 @@ class TestTrie(object
         words = ['a', 'at', 'has', 'hat', 'he',
                  'men', 'mens', 'met']
         ___ word in words:
-            assert_true(trie.find(word) is not None)
+            assert_true(trie.find(word) pa__ not None)
         ___ word in words_removed:
-            assert_true(trie.find(word) is None)
+            assert_true(trie.find(word) pa__ None)
 
         print('Test: Remove mens')
         trie.remove('mens')
@@ -31,9 +31,9 @@ class TestTrie(object
         words = ['a', 'at', 'has', 'hat', 'he',
                  'men', 'met']
         ___ word in words:
-            assert_true(trie.find(word) is not None)
+            assert_true(trie.find(word) pa__ not None)
         ___ word in words_removed:
-            assert_true(trie.find(word) is None)
+            assert_true(trie.find(word) pa__ None)
 
         print('Test: Remove a')
         trie.remove('a')
@@ -41,9 +41,9 @@ class TestTrie(object
         words = ['at', 'has', 'hat', 'he',
                  'men', 'met']
         ___ word in words:
-            assert_true(trie.find(word) is not None)
+            assert_true(trie.find(word) pa__ not None)
         ___ word in words_removed:
-            assert_true(trie.find(word) is None)
+            assert_true(trie.find(word) pa__ None)
 
         print('Test: Remove has')
         trie.remove('has')
@@ -51,9 +51,9 @@ class TestTrie(object
         words = ['at', 'hat', 'he',
                  'men', 'met']
         ___ word in words:
-            assert_true(trie.find(word) is not None)
+            assert_true(trie.find(word) pa__ not None)
         ___ word in words_removed:
-            assert_true(trie.find(word) is None)
+            assert_true(trie.find(word) pa__ None)
 
         print('Success: test_trie')
 
@@ -61,7 +61,7 @@ class TestTrie(object
     ___ test_trie_remove_invalid(self
         print('Test: Remove from empty trie')
         trie = Trie()
-        assert_true(trie.remove('foo') is None) 
+        assert_true(trie.remove('foo') pa__ None)
 
 
 ___ main(

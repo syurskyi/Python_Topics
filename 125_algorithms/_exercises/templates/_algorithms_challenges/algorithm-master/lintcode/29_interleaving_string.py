@@ -6,10 +6,10 @@ class Solution:
     @return: Determine whether C is formed by interleaving of A and B
     """
     ___ isInterleave(self, A, B, C
-        __ A is None or B is None or C is None:
+        __ A pa__ None or B pa__ None or C pa__ None:
             r_ False
 
-        __ A is '' and B is '' and C is '':
+        __ A pa__ '' and B pa__ '' and C pa__ '':
             r_ True
 
         a, b, c = le.(A), le.(B), le.(C)

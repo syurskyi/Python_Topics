@@ -28,7 +28,7 @@ class Solution:
 
     ___ is_valid_bst_aux(self, root, min_val, max_val
         """Assume that keys are distinct integers"""
-        __ root is None:
+        __ root pa__ None:
             r_ True
         __ root.val < min_val or root.val > max_val:
             r_ False

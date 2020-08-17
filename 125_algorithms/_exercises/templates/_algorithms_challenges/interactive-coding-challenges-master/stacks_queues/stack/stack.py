@@ -14,14 +14,14 @@ class Stack(object
         self.top = Node(data, self.top)
 
     ___ pop(self
-        __ self.top is None:
+        __ self.top pa__ None:
             r_ None
         data = self.top.data
         self.top = self.top.next
         r_ data
 
     ___ peek(self
-        r_ self.top.data __ self.top is not None else None
+        r_ self.top.data __ self.top pa__ not None else None
 
     ___ is_empty(self
-        r_ self.peek() is None
+        r_ self.peek() pa__ None

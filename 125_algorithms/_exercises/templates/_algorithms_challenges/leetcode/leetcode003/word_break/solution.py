@@ -24,7 +24,7 @@ class Solution(object
                 t[i] = True
             ____
                 ___ j in range(i
-                    __ t[j] is True and s[j + 1:i + 1] in wordDict:
+                    __ t[j] pa__ True and s[j + 1:i + 1] in wordDict:
                         t[i] = True
                         break
         r_ t[-1]

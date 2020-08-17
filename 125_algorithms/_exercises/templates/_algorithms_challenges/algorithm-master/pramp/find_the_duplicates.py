@@ -33,7 +33,7 @@ ___ find_duplicates2(arr1, arr2
         vals[num] = False
 
     ___ num in arr2:
-        __ num in vals and vals[num] is False:
+        __ num in vals and vals[num] pa__ False:
             vals[num] = True
             ans.append(num)
 

@@ -56,6 +56,6 @@ class Zipper(object
 
     ___ to_tree(self
         stepUp = self.up()
-        __ stepUp is None:
+        __ stepUp pa__ None:
             r_ self.tree
         r_ stepUp.to_tree()

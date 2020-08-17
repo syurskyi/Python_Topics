@@ -4,7 +4,7 @@ class Solution(object
     :type nums: List[int]
     :rtype: List[int]
     """
-    __ le.(nums) __ 0 or nums is None:
+    __ le.(nums) __ 0 or nums pa__ None:
       r_ []
     c1, c2 = None, None
     n1, n2 = 0, 0

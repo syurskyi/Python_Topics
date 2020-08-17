@@ -21,7 +21,7 @@ class Solution(object
         dummy = ListNode(0)
         dummy_end = dummy
 
-        w___ l1 is not None and l2 is not None:
+        w___ l1 pa__ not None and l2 pa__ not None:
             __ l1.val < l2.val:
                 dummy_end.next = l1
                 l1 = l1.next
@@ -29,7 +29,7 @@ class Solution(object
                 dummy_end.next = l2
                 l2 = l2.next
             dummy_end = dummy_end.next
-        __ l1 is not None:
+        __ l1 pa__ not None:
             dummy_end.next = l1
         ____
             dummy_end.next = l2

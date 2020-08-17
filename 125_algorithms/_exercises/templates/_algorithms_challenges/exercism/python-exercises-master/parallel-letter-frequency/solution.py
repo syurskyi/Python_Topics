@@ -29,12 +29,12 @@ ___ count_letters(queue_of_texts, letter_to_frequency, worker_id
     w___ not queue_of_texts.empty(
         sleep(worker_id + 1)
         line_input = queue_of_texts.get()
-        __ line_input is not None:
+        __ line_input pa__ not None:
             letters_in_line = Counter([x ___ x in line_input.lower() __
                                        x.isalpha()])
             letter_to_frequency.add_counter(letters_in_line)
         queue_of_texts.task_done()
-        __ line_input is None:
+        __ line_input pa__ None:
             break
 
 

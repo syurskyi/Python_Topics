@@ -27,7 +27,7 @@ class Solution:
         :type p: str, regex
         :rtype: bool
         """
-        __ s is None or p is None:
+        __ s pa__ None or p pa__ None:
             r_ False
         __ s __ '' and p __ '':
             r_ True

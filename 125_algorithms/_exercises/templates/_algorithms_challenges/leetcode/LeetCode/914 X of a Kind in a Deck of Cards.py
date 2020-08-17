@@ -51,7 +51,7 @@ class Solution:
         counter = Counter(deck)
         gcd = None
         ___ v in counter.values(
-            __ gcd is None:
+            __ gcd pa__ None:
                 gcd = v
             gcd = self.gcd(gcd, v)
             __ gcd __ 1:

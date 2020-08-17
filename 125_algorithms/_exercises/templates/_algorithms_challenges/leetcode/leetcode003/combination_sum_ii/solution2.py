@@ -15,7 +15,7 @@ class Solution:
         ____
             prev = None
             ___ i, c in enumerate(candidates
-                __ prev is None or prev != c:
+                __ prev pa__ None or prev != c:
                     __ target - c >= 0:
                         cand.append(c)
                         self.combination_sum_aux(candidates[i + 1:],

@@ -17,7 +17,7 @@ class Solution(object
 
         DFS
         """
-        __ node is None:
+        __ node pa__ None:
             r_ None
         self.visited = set()
         cloned_node = UndirectedGraphNode(node.label)

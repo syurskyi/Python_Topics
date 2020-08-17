@@ -11,7 +11,7 @@ class BankAccount(object
 
     ___ is_open(func
         ___ wrapped(self, *args
-            __ self._state is not 'opened':
+            __ self._state pa__ not 'opened':
                 raise ValueError("Account is {}, not open".format(self._state))
             r_ func(self, *args)
         r_ wrapped

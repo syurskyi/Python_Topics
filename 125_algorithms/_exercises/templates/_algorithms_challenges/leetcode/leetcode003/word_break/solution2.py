@@ -26,11 +26,11 @@ class Solution(object
         """
         __ s[:i + 1] in wordDict:
             r_ True
-        ____ t[i] is not None:
+        ____ t[i] pa__ not None:
             r_ t[i]
         ____
             ___ j in range(i
-                __ (self.word_break_aux(s, wordDict, j, t) is True
+                __ (self.word_break_aux(s, wordDict, j, t) pa__ True
                         and s[j + 1:i + 1] in wordDict
                     t[i] = True
                     r_ True

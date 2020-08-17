@@ -49,7 +49,7 @@ class Solution:
         c = board[i][j]
         __ c in cur.children:
             nxt = cur.children[c]
-            __ nxt.word is not None:
+            __ nxt.word pa__ not None:
                 ret.add(nxt.word)
 
             ___ di, dj in dirs:

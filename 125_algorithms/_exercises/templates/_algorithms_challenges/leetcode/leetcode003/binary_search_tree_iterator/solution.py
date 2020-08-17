@@ -24,11 +24,11 @@ class BSTIterator(object
             r_ self._arr[self._cur]
 
     ___ _inorder(self, root
-        __ root is not None:
-            __ root.left is not None:
+        __ root pa__ not None:
+            __ root.left pa__ not None:
                 self._inorder(root.left)
             self._arr.append(root.val)
-            __ root.right is not None:
+            __ root.right pa__ not None:
                 self._inorder(root.right)
 
 # Your BSTIterator will be called like this:

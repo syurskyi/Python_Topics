@@ -198,7 +198,7 @@ class FreqNode:
         self.nxt = freq_node
 
     ___ is_empty(self
-        r_ self.words[0].nxt is self.words[1]
+        r_ self.words[0].nxt pa__ self.words[1]
 
     ___ append_tail(self, word_node
         word_node.freq_node = self
@@ -214,7 +214,7 @@ __ __name__ __ '__main__':
     gotcha = []
 
     ___ i in range(le.(_in)):
-        gotcha.append(s.insert(_in[i]) is None)
+        gotcha.append(s.insert(_in[i]) pa__ None)
         res = s.get_most_popular_word()
         __ res != _out[i]: print(_in, i, _in[i], res)
         gotcha.append(res __ _out[i])

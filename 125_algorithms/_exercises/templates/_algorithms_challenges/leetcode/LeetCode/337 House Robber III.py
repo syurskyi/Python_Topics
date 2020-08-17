@@ -43,7 +43,7 @@ class Solution(object
         :type root: TreeNode
         :rtype: int
         """
-        __ root is None:
+        __ root pa__ None:
             r_ 0
 
         __ root not in self.cache_rob:
@@ -61,7 +61,7 @@ class Solution(object
         :param root: TreeNode
         :return: int
         """
-        __ root is None:
+        __ root pa__ None:
             r_ 0
 
         __ root not in self.cache_notrob:
@@ -81,7 +81,7 @@ class SolutionTLE(object
         :type root: TreeNode
         :rtype: int
         """
-        __ root is None:
+        __ root pa__ None:
             r_ 0
 
         r_ max(
@@ -90,7 +90,7 @@ class SolutionTLE(object
         )
 
     ___ dorob(self, root
-        __ root is None:
+        __ root pa__ None:
             r_ 0
 
         r_ (
@@ -100,7 +100,7 @@ class SolutionTLE(object
         )
 
     ___ notrob(self, root
-        __ root is None:
+        __ root pa__ None:
             r_ 0
 
         r_ (max(self.notrob(root.left), self.rob(root.left)) +

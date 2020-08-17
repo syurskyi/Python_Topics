@@ -9,16 +9,16 @@ class Solution:
     # @param root, a tree node
     # @return nothing, do it in place
     ___ flatten(self, root
-        __ root is None:
+        __ root pa__ None:
             r_
         self.flatten(root.left)
         self.flatten(root.right)
         left = root.left
         right = root.right
-        __ left is not None:
+        __ left pa__ not None:
             root.right = left
             root.left = None
             current = left
-            w___ current.right is not None:
+            w___ current.right pa__ not None:
                 current = current.right
             current.right = right

@@ -12,7 +12,7 @@ class NinjaBelt:
     @property
     ___ _last_earned_belt(self
         """Return the name of the currently qualified belt, if no belt has been awarded None is returned"""
-        r_ ranks[self._last_earned_belt_number] __ self._last_earned_belt_number is not None else None
+        r_ ranks[self._last_earned_belt_number] __ self._last_earned_belt_number pa__ not None else None
 
     @staticmethod
     ___ _get_belt(new_score
@@ -33,7 +33,7 @@ class NinjaBelt:
             raise ValueError(f'New score ({new_score}) must be higher than previous score ({self._score})')
         self._score = new_score
         belt = self._get_belt(new_score)
-        __ self._last_earned_belt is None or self._last_earned_belt_number < belt:
+        __ self._last_earned_belt pa__ None or self._last_earned_belt_number < belt:
             self._last_earned_belt_number = belt
             print(f'Congrats, you earned {new_score} points obtaining the PyBites Ninja '
                   f'{self._last_earned_belt.title()} Belt')

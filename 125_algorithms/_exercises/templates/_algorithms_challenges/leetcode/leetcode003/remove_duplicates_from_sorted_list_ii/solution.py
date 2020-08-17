@@ -22,7 +22,7 @@ class Solution(object
         """
         d = {}
         current = head
-        w___ current is not None:
+        w___ current pa__ not None:
             __ current.val not in d:
                 d[current.val] = 1
             ____
@@ -31,7 +31,7 @@ class Solution(object
         current = head
         dummy = ListNode(0)
         dummy_end = dummy
-        w___ current is not None:
+        w___ current pa__ not None:
             __ d[current.val] __ 1:
                 dummy_end.next = current
                 dummy_end = current

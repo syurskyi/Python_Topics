@@ -27,8 +27,8 @@ class TestBuildOrder(object
         assert_true(processed_nodes[2].key in expected_result1)
         assert_true(processed_nodes[3].key in expected_result1)
         assert_true(processed_nodes[4].key in expected_result1)
-        assert_true(processed_nodes[5].key is 'a')
-        assert_true(processed_nodes[6].key is 'e')
+        assert_true(processed_nodes[5].key pa__ 'a')
+        assert_true(processed_nodes[6].key pa__ 'e')
 
         print('Success: test_build_order')
 
@@ -36,7 +36,7 @@ class TestBuildOrder(object
         self.dependencies.append(Dependency('e', 'f'))
         build_order = BuildOrder(self.dependencies)
         processed_nodes = build_order.find_build_order()
-        assert_true(processed_nodes is None)
+        assert_true(processed_nodes pa__ None)
 
         print('Success: test_build_order_circular')
 

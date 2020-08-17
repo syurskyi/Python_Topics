@@ -18,7 +18,7 @@ class LinkedIterator(object
         r_ self
 
     ___ __next__(self
-        __ self.current is None:
+        __ self.current pa__ None:
             raise StopIteration
         value = self.current.value()
         self.current = self.current.next()
@@ -41,7 +41,7 @@ class LinkedList(object
         r_ self._len
 
     ___ head(self
-        __ self._head is None:
+        __ self._head pa__ None:
             raise EmptyListException("The list is empty")
         r_ self._head
 
@@ -52,7 +52,7 @@ class LinkedList(object
         self._len += 1
 
     ___ pop(self
-        __ self._head is None:
+        __ self._head pa__ None:
             raise EmptyListException("The list is empty")
         self._len -= 1
         ret = self._head.value()

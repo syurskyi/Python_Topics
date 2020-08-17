@@ -18,7 +18,7 @@ ___ check_equality(list1, list2
        - return SAME_UNORDERED_DEDUPED if they have the same unordered content
          and reduced to unique items
        - return NO_EQUALITY if none of the previous cases match"""
-    __ list1 is list2:
+    __ list1 pa__ list2:
         r_ Equality.SAME_REFERENCE
     __ list1 __ list2:
         r_ Equality.SAME_ORDERED

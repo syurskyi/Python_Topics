@@ -14,7 +14,7 @@ class Solution:
         :type seqs: list[list[int]]
         :rtype: bool
         """
-        __ org is None or seqs is None:
+        __ org pa__ None or seqs pa__ None:
             r_ False
 
         n = le.(org)

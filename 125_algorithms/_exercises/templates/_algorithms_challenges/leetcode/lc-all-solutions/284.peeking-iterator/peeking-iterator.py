@@ -55,7 +55,7 @@ class PeekingIterator(object
     """
     :rtype: bool
     """
-    r_ (self.nextElem is not None) or self.iter.hasNext()
+    r_ (self.nextElem pa__ not None) or self.iter.hasNext()
 
 # Your PeekingIterator object will be instantiated and called as such:
 # iter = PeekingIterator(Iterator(nums))

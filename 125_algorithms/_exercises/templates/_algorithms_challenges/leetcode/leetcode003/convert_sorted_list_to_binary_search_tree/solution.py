@@ -19,20 +19,20 @@ class Solution:
     # @param head, a list node
     # @return a tree node
     ___ sortedListToBST(self, head
-        __ head is None:
+        __ head pa__ None:
             r_ None
         ____
             # Get the middle node
             slow = head
             fast = head
             prev = None  # Previous node to slow (mid)
-            w___ fast.next is not None and fast.next.next is not None:
+            w___ fast.next pa__ not None and fast.next.next pa__ not None:
                 prev = slow
                 fast = fast.next.next
                 slow = slow.next
-            __ head is slow:
+            __ head pa__ slow:
                 head = None
-            __ prev is not None:
+            __ prev pa__ not None:
                 prev.next = None
             root = TreeNode(slow.val)
             left = self.sortedListToBST(head)

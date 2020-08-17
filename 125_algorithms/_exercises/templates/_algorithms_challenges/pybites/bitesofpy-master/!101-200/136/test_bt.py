@@ -20,14 +20,14 @@ ___ test_AB_POS_can_donate_to_own_group_only_numeric_input(
     donor = 7
     ___ i in range(7
         recipient = i
-        assert check_bt(donor, recipient) is False
+        assert check_bt(donor, recipient) pa__ False
 
 
 ___ test_ZERO_NEG_can_recieve_from_own_group_only_numeric_input(
     recipient = 0
     ___ i in range(1, 8
         donor = i
-        assert check_bt(donor, recipient) is False
+        assert check_bt(donor, recipient) pa__ False
 
 
 ___ test_red_blood_cell_compatibility(
@@ -37,10 +37,10 @@ ___ test_red_blood_cell_compatibility(
 
 
 ___ test_red_blood_cell_incompatibility(
-    assert check_bt(Bloodtype.B_POS, Bloodtype.B_NEG) is False
-    assert check_bt(Bloodtype.A_NEG, Bloodtype.B_NEG) is False
-    assert check_bt(Bloodtype.AB_NEG, Bloodtype.B_POS) is False
-    assert check_bt(Bloodtype.B_NEG, Bloodtype.A_POS) is False
+    assert check_bt(Bloodtype.B_POS, Bloodtype.B_NEG) pa__ False
+    assert check_bt(Bloodtype.A_NEG, Bloodtype.B_NEG) pa__ False
+    assert check_bt(Bloodtype.AB_NEG, Bloodtype.B_POS) pa__ False
+    assert check_bt(Bloodtype.B_NEG, Bloodtype.A_POS) pa__ False
 
 
 ___ test_red_blood_cell_compatibility_text_input(
@@ -51,10 +51,10 @@ ___ test_red_blood_cell_compatibility_text_input(
 
 
 ___ test_red_blood_cell_incompatibility_text_input(
-    assert check_bt("0+", "A-") is False
-    assert check_bt("0+", "B-") is False
-    assert check_bt("B-", "0-") is False
-    assert check_bt("AB-", "A+") is False
+    assert check_bt("0+", "A-") pa__ False
+    assert check_bt("0+", "B-") pa__ False
+    assert check_bt("B-", "0-") pa__ False
+    assert check_bt("AB-", "A+") pa__ False
 
 
 ___ test_invalid_value_text_input(

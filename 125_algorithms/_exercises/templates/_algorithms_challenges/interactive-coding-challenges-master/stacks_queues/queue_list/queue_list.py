@@ -14,7 +14,7 @@ class Queue(object
     ___ enqueue(self, data
         node = Node(data)
         # Empty list
-        __ self.head is None and self.tail is None:
+        __ self.head pa__ None and self.tail pa__ None:
             self.head = node
             self.tail = node
         ____
@@ -23,7 +23,7 @@ class Queue(object
 
     ___ dequeue(self
         # Empty list
-        __ self.head is None and self.tail is None:
+        __ self.head pa__ None and self.tail pa__ None:
             r_ None
         data = self.head.data
         # Remove only element from a one element list

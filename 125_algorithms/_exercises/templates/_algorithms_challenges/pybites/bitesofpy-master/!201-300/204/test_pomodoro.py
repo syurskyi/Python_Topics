@@ -10,7 +10,7 @@ async ___ test_break_time(capfd
     anno = break_time.__annotations__
     assert anno["delay"] __ Union[int, float]
     assert anno["loop"] __ int
-    assert anno["return"] is None
+    assert anno["return"] pa__ None
     delay = 0.0001
     await break_time(delay, 1)
     output = capfd.readouterr()[0].strip()
@@ -22,7 +22,7 @@ async ___ test_break_time(capfd
 async ___ test_lunch_time(capfd
     anno = lunch_time.__annotations__
     assert anno["delay"] __ Union[int, float]
-    assert anno["return"] is None
+    assert anno["return"] pa__ None
     delay = 0.06
     await lunch_time(delay)
     output = capfd.readouterr()[0].strip()
@@ -33,7 +33,7 @@ async ___ test_lunch_time(capfd
 async ___ test_work_time(capfd
     anno = work_time.__annotations__
     assert anno["delay"] __ Union[int, float]
-    assert anno["return"] is None
+    assert anno["return"] pa__ None
     delay = 0.0025
     await work_time(delay, 3)
     output = capfd.readouterr()[0].strip()
@@ -47,7 +47,7 @@ async ___ test_session(capfd
     assert anno["work_length"] __ Union[int, float]
     assert anno["short_break_length"] __ Union[int, float]
     assert anno["long_break_length"] __ Union[int, float]
-    assert anno["return"] is None
+    assert anno["return"] pa__ None
     await session(0.0025, 0.0005, 0.003)
     output = capfd.readouterr()[0].strip()
     assert "Time to work!" in output
@@ -63,7 +63,7 @@ async ___ test_main(capfd
     assert anno["short_break_length"] __ Union[int, float]
     assert anno["long_break_length"] __ Union[int, float]
     assert anno["lunch_length"] __ Union[int, float]
-    assert anno["return"] is None
+    assert anno["return"] pa__ None
     await main(0.0025, 0.0005, 0.003, 0.01)
     output = capfd.readouterr()[0].strip()
     assert "Pomodor timer started at" in output

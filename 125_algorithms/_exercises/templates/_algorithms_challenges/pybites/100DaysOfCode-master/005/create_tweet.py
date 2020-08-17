@@ -28,7 +28,7 @@ ___ get_day_progress(day=TODAY
 
 
 ___ create_tweet(m=None
-    __ m is None:
+    __ m pa__ None:
         m = get_day_progress()
 
     title = m['title']

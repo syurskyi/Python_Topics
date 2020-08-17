@@ -27,15 +27,15 @@ class Solution(object
         :rtype: List[int]
         """
         path = []
-        __ root is None:
+        __ root pa__ None:
             r_ path
         stack = []
         stack.append(root)
         w___ stack:
             root = stack.pop()
             path.append(root.val)
-            __ root.right is not None:
+            __ root.right pa__ not None:
                 stack.append(root.right)
-            __ root.left is not None:
+            __ root.left pa__ not None:
                 stack.append(root.left)
         r_ path

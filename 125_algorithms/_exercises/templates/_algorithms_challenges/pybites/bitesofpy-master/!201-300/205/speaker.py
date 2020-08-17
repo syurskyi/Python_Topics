@@ -24,7 +24,7 @@ ___ get_pycon_speaker_first_names(soup=None
        multiple speakers so you need to extract them.
        Return a list of first names
     """
-    __ soup is None:
+    __ soup pa__ None:
         soup = _get_soup()
     speaker_tags = soup.find_all(class_='speaker')
     speaker_list = [speaker.strip().split(' ') ___ speakers in speaker_tags ___ speaker in

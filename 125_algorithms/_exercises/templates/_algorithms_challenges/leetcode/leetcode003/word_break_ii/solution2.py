@@ -30,7 +30,7 @@ class Solution(object
         __ s[:i + 1] in wordDict:
             t[i] = [s[:i + 1]]
             r_ t[i]
-        ____ t[i] is not None:
+        ____ t[i] pa__ not None:
             r_ t[i]
         ____
             res = []

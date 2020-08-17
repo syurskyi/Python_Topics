@@ -15,9 +15,9 @@ class Solution:
         r_ self.res
 
     ___ sn(self, root, num
-        __ root is None:
+        __ root pa__ None:
             r_
-        ____ root.left is None and root.right is None:
+        ____ root.left pa__ None and root.right pa__ None:
             num += root.val
             self.res += num
         ____

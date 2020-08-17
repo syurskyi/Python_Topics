@@ -15,7 +15,7 @@ c_ Solution:
         ___ i __ ra..(1,n+2
             first _ first.next
         
-        w___ (first is no. N..
+        w___ (first pa__ no. N..
             first _ first.next
             second _ second.next
 

@@ -33,7 +33,7 @@ class Solution(object
         :type q: TreeNode
         :rtype: TreeNode
         """
-        __ root is None:
+        __ root pa__ None:
             r_ None
         ____
             __ min(p.val, q.val) <= root.val <= max(p.val, q.val

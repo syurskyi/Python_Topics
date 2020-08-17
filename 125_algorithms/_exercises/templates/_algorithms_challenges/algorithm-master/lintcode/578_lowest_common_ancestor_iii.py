@@ -33,10 +33,10 @@ class Solution:
         left, a_in_left, b_in_left = self.divide_conquer(node.left, a, b)
         right, a_in_right, b_in_right = self.divide_conquer(node.right, a, b)
 
-        has_a = a_in_left or a_in_right or node is a
-        has_b = b_in_left or b_in_right or node is b
+        has_a = a_in_left or a_in_right or node pa__ a
+        has_b = b_in_left or b_in_right or node pa__ b
 
-        __ node is a or node is b:
+        __ node pa__ a or node pa__ b:
             r_ node, has_a, has_b
         __ left and right:
             r_ node, has_a, has_b

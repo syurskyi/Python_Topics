@@ -42,6 +42,6 @@ class Trie(object
     
     ___ startsWith(self, prefix
         t = self.searchNode(prefix)
-        r_ bool(t is not None)
+        r_ bool(t pa__ not None)
     
     

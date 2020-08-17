@@ -19,7 +19,7 @@ ___ get_top_books(content=None, limit=5
     """Make a BeautifulSoup object loading in content,
        find all links and filter on AMAZON, extract the book title
        and count them, return the top "limit" books (default 5)"""
-    __ content is None:
+    __ content pa__ None:
         content = load_page()
     soup = BeautifulSoup(content)
     entry_content = soup.find('div', class_='entry-content')

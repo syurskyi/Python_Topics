@@ -23,19 +23,19 @@ class BinarySearchTree(object
 
     ___ insert(self, node_data
         new_node = TreeNode(node_data)
-        __ self.head is None:
+        __ self.head pa__ None:
             self.head = new_node
         ____
             self.insert_node_at(new_node, self.head)
 
     ___ insert_node_at(self, new_node, position
         __ new_node.data <= position.data:
-            __ position.left is None:
+            __ position.left pa__ None:
                 position.left = new_node
             ____
                 self.insert_node_at(new_node, position.left)
         ____ new_node.data > position.data:
-            __ position.right is None:
+            __ position.right pa__ None:
                 position.right = new_node
             ____
                 self.insert_node_at(new_node, position.right)

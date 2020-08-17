@@ -2,7 +2,7 @@ ___ verify(isbn
     counter = 1
     total = 0
     ___ d in reversed(isbn
-        __ d is 'X':
+        __ d pa__ 'X':
             __ counter != 1:
                 r_ False
             d = '10'

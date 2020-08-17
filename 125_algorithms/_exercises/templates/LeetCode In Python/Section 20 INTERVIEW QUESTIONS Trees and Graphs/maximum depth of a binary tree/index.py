@@ -7,9 +7,9 @@
 
 c_ Solution:
     ___ maxDepth(, root: TreeNode)  in.:
-        __(root is N..
+        __(root pa__ N..
             r_ 0
-        __(root.left is N.. a..  root.right is N..
+        __(root.left pa__ N.. a..  root.right pa__ N..
             r_ 1
         
         left _ .maxDepth(root.left)

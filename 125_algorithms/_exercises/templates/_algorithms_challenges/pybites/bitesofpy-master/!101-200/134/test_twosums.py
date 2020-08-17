@@ -47,4 +47,4 @@ ___ test_two_sums_random(
 
 ___ test_two_sums_none(
     result = two_sums(NUMBERS, 7000)
-    assert result is None
+    assert result pa__ None

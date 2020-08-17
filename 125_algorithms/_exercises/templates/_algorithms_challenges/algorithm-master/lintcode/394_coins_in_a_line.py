@@ -38,8 +38,8 @@ class Solution:
 
         ___ i in range(2, n
             __ (
-                dp[i - 1] is False or
-                dp[i - 2] is False
+                dp[i - 1] pa__ False or
+                dp[i - 2] pa__ False
 
                 dp[i] = True
 

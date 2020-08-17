@@ -13,7 +13,7 @@ class Trie:
     @return: nothing
     """
     ___ insert(self, word
-        __ word is None:
+        __ word pa__ None:
             r_
 
         node = self.root
@@ -31,7 +31,7 @@ class Trie:
     @return: if the word is in the trie.
     """
     ___ search(self, word
-        __ word is None:
+        __ word pa__ None:
             r_ False
 
         node = self.root
@@ -49,7 +49,7 @@ class Trie:
     @return: if there is any word in the trie that starts with the given prefix.
     """
     ___ startsWith(self, prefix
-        __ prefix is None:
+        __ prefix pa__ None:
             r_ False
 
         node = self.root

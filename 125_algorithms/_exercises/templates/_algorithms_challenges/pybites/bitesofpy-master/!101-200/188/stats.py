@@ -35,7 +35,7 @@ ___ get_all_line_counts(data: str = STATS) -> list:
 
 
 ___ create_stats_report(data=None
-    __ data is None:
+    __ data pa__ None:
         # converting to a list in case a generator was returned
         data = list(get_all_line_counts())
 

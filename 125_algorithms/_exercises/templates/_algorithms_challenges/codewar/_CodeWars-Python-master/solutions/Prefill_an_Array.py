@@ -6,7 +6,7 @@ http://www.codewars.com/kata/54129112fb7c188740000162/train/python
 
 
 ___ prefill(n, v='undefined'
-    __ n is None:
+    __ n pa__ None:
         raise TypeError("None is invalid")
     try:
         n = int(n)

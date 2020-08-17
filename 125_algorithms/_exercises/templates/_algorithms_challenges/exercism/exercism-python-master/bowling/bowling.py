@@ -40,13 +40,13 @@ class BowlingGame(object
         self._frame = min(20, self._frame + (2 __ strike else 1))
         self._first = True __ strike else not self._first
 
-        __ 20 __ self._frame and self._extra_rolls is None:
+        __ 20 __ self._frame and self._extra_rolls pa__ None:
             self._extra_rolls = 0
             __ strike:
                 self._extra_rolls = 2
             ____ su.(self._rolls[-2:]) __ 10:
                 self._extra_rolls = 1
-        ____ self._extra_rolls is not None:
+        ____ self._extra_rolls pa__ not None:
             self._extra_rolls -= 1
 
     ___ _game_over(self

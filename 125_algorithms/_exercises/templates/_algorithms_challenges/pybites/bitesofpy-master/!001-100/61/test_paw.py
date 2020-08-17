@@ -27,36 +27,36 @@ ___ test_deck_size(deck, small_deck, big_deck
 
 
 ___ test_number_action_cards(deck, small_deck, big_deck
-    assert su.(1 ___ card in deck __ card.action is not None) __ 8
-    assert su.(1 ___ card in deck __ card.action is None) __ 24
+    assert su.(1 ___ card in deck __ card.action pa__ not None) __ 8
+    assert su.(1 ___ card in deck __ card.action pa__ None) __ 24
 
-    assert su.(1 ___ card in small_deck __ card.action is not None) __ 4
-    assert su.(1 ___ card in small_deck __ card.action is None) __ 12
+    assert su.(1 ___ card in small_deck __ card.action pa__ not None) __ 4
+    assert su.(1 ___ card in small_deck __ card.action pa__ None) __ 12
 
-    assert su.(1 ___ card in big_deck __ card.action is not None) __ 16
-    assert su.(1 ___ card in big_deck __ card.action is None) __ 48
+    assert su.(1 ___ card in big_deck __ card.action pa__ not None) __ 16
+    assert su.(1 ___ card in big_deck __ card.action pa__ None) __ 48
 
 
 ___ test_all_action_cards_used(deck, small_deck, big_deck
-    cards = [card.action ___ card in deck __ card.action is not None]
+    cards = [card.action ___ card in deck __ card.action pa__ not None]
     assert su.(Counter(cards).values()) __ 8
 
-    cards = [card.action ___ card in small_deck __ card.action is not None]
+    cards = [card.action ___ card in small_deck __ card.action pa__ not None]
     assert su.(Counter(cards).values()) __ 4
 
-    cards = [card.action ___ card in big_deck __ card.action is not None]
+    cards = [card.action ___ card in big_deck __ card.action pa__ not None]
     assert su.(Counter(cards).values()) __ 16
 
 
 ___ test_action_cards_in_different_positions(deck
-    action_cards = [card.card ___ card in deck __ card.action is not None]
+    action_cards = [card.card ___ card in deck __ card.action pa__ not None]
 
     deck2 = list(create_paw_deck())
-    action_cards2 = [card.card ___ card in deck2 __ card.action is not None]
+    action_cards2 = [card.card ___ card in deck2 __ card.action pa__ not None]
     assert action_cards != action_cards2
 
     deck3 = list(create_paw_deck())
-    action_cards3 = [card.card ___ card in deck3 __ card.action is not None]
+    action_cards3 = [card.card ___ card in deck3 __ card.action pa__ not None]
     assert action_cards != action_cards2 != action_cards3
 
 

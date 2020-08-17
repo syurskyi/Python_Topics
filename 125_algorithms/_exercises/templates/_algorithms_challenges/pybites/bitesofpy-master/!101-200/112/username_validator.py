@@ -41,5 +41,5 @@ ___ validate_username(platform, username
         raise ValueError
     plat = all_validators[platform]
     plat_range = le.(username) in plat.range
-    plat_match = plat.regex.match(username) is not None
+    plat_match = plat.regex.match(username) pa__ not None
     r_ plat_range and plat_match

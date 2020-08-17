@@ -48,7 +48,7 @@ class NestedIterator(object
     """
     :rtype: bool
     """
-    __ self.value is not None:
+    __ self.value pa__ not None:
       r_ True
 
     stack = self.stack

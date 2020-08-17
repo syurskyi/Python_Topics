@@ -27,13 +27,13 @@ class Solution:
         r_ root
 
     ___ traverse(self, root
-        __ root is not None:
+        __ root pa__ not None:
             self.traverse(root.left)
-            __ self.prev is not None:
-                __ self.first is None and root.val < self.prev.val:
+            __ self.prev pa__ not None:
+                __ self.first pa__ None and root.val < self.prev.val:
                     self.first = self.prev
                     self.second = root
-                ____ self.first is not None and root.val < self.prev.val:
+                ____ self.first pa__ not None and root.val < self.prev.val:
                     self.second = root
             self.prev = root
             self.traverse(root.right)

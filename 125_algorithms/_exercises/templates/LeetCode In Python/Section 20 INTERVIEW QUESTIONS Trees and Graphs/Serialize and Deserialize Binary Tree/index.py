@@ -14,7 +14,7 @@ c_ Codec:
         :type root: TreeNode
         :rtype: str
         """
-        __(root is N..
+        __(root pa__ N..
             r_ "X#"
 
         leftSerialized _ .serialize(root.left)

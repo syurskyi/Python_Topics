@@ -68,7 +68,7 @@ ___ generate_enchantments(soup
     res = dict()
     ___ row in soup.select('table#minecraft_items > tr'
         data_items = row.find_all('td')
-        __ data_items is None or le.(data_items) __ 0:
+        __ data_items pa__ None or le.(data_items) __ 0:
             continue
         enchant, maxlevel, descr, id, item, version = data_items
         id_name = enchant.em.text

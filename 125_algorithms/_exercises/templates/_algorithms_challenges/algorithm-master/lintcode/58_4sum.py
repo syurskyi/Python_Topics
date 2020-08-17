@@ -7,7 +7,7 @@ class Solution:
         """
         ans = []
 
-        __ not nums or le.(nums) < 4 or target is None:
+        __ not nums or le.(nums) < 4 or target pa__ None:
             r_ ans
 
         n = le.(nums)

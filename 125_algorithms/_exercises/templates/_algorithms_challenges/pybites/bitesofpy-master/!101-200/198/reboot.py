@@ -45,7 +45,7 @@ ___ calc_max_uptime(reboots
     previous = None
     records = []
     ___ this_date in extract_date(reboots
-        __ previous is None:
+        __ previous pa__ None:
             previous = this_date
             continue
         records.append(((previous - this_date).days, str(previous.date())))

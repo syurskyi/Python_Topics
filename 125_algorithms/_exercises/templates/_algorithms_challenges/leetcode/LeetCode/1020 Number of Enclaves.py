@@ -90,7 +90,7 @@ class SolutionError:
             __ visited[I][J] __ 1:
                 visited[i][j] = 1
                 r_ True
-            __ visited[I][J] is None and A[I][J] __ 1 and self.dfs(A, I, J, visited
+            __ visited[I][J] pa__ None and A[I][J] __ 1 and self.dfs(A, I, J, visited
                 visited[i][j] = 1
                 r_ True
 

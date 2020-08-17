@@ -22,7 +22,7 @@ class LinkedList:
         r_ self._size
 
     ___ head(self
-        __ self._head is None:
+        __ self._head pa__ None:
             raise EmptyListException("Head is empty")
         r_ self._head
 
@@ -52,7 +52,7 @@ class LinkedListIterator:
         r_ self
 
     ___ __next__(self
-        __ self._current is None:
+        __ self._current pa__ None:
             raise StopIteration
         current_value = self._current.value()
         self._current = self._current.next()

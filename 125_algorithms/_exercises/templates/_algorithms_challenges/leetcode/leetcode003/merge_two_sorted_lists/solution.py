@@ -20,9 +20,9 @@ class Solution(object
         """
         res = None
         res_end = None
-        w___ l1 is not None and l2 is not None:
+        w___ l1 pa__ not None and l2 pa__ not None:
             __ l1.val < l2.val:
-                __ res is None:
+                __ res pa__ None:
                     res = l1
                     res_end = res
                 ____
@@ -30,20 +30,20 @@ class Solution(object
                     res_end = res_end.next
                 l1 = l1.next
             ____
-                __ res is None:
+                __ res pa__ None:
                     res = l2
                     res_end = res
                 ____
                     res_end.next = l2
                     res_end = res_end.next
                 l2 = l2.next
-        __ l1 is not None:
-            __ res is not None:
+        __ l1 pa__ not None:
+            __ res pa__ not None:
                 res_end.next = l1
             ____
                 res = l1
-        __ l2 is not None:
-            __ res is not None:
+        __ l2 pa__ not None:
+            __ res pa__ not None:
                 res_end.next = l2
             ____
                 res = l2

@@ -10,11 +10,11 @@ class Solution(object
                 __ num __ A[i-1]:
                     continue
                 __ num > A[i-1]:
-                    __ increase is False:
+                    __ increase pa__ False:
                         r_ False
                     increase = True
                 __ num < A[i-1]:
-                    __ increase is True:
+                    __ increase pa__ True:
                         r_ False
                     increase = False
         r_ True

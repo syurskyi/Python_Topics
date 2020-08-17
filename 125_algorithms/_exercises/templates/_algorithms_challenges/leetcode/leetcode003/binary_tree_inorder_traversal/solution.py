@@ -27,11 +27,11 @@ class Solution(object
         :rtype: List[int]
         """
         path = []
-        __ root is None:
+        __ root pa__ None:
             r_ path
         stack = []
-        w___ stack or root is not None:
-            __ root is not None:
+        w___ stack or root pa__ not None:
+            __ root pa__ not None:
                 stack.append(root)
                 root = root.left
             ____

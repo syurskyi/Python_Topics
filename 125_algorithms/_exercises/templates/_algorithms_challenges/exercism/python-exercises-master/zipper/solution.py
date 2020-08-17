@@ -15,7 +15,7 @@ class Zipper(object
         r_ self
 
     ___ left(self
-        __ self.tree['left'] is None:
+        __ self.tree['left'] pa__ None:
             r_ None
         r_ Zipper(self.tree['left'], self.ancestors + [self.tree])
 
@@ -24,7 +24,7 @@ class Zipper(object
         r_ self
 
     ___ right(self
-        __ self.tree['right'] is None:
+        __ self.tree['right'] pa__ None:
             r_ None
         r_ Zipper(self.tree['right'], self.ancestors + [self.tree])
 

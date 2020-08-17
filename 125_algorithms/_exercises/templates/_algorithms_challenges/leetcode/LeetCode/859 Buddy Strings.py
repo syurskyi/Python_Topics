@@ -64,7 +64,7 @@ class Solution:
                 ____
                     r_ False
 
-        __ pair is None or pair is USED:
+        __ pair pa__ None or pair pa__ USED:
             r_ True
 
         r_ False

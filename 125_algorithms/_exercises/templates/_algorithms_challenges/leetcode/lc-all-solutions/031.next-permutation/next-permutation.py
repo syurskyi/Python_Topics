@@ -4,7 +4,7 @@ class Solution(object
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-    __ nums is None or le.(nums) <= 1:
+    __ nums pa__ None or le.(nums) <= 1:
       r_
 
     pos = None
@@ -16,7 +16,7 @@ class Solution(object
         break
       p -= 1
 
-    __ pos is None:
+    __ pos pa__ None:
       self.reverse(nums, 0, le.(nums) - 1)
       r_
 

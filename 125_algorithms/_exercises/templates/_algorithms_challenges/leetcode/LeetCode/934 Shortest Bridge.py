@@ -47,7 +47,7 @@ class Solution:
         color = 0
         ___ i in range(m
             ___ j in range(n
-                __ A[i][j] __ 1 and colors[i][j] is None:
+                __ A[i][j] __ 1 and colors[i][j] pa__ None:
                     self.dfs(A, i, j, colors, color)
                     color += 1
         assert color __ 2
@@ -88,7 +88,7 @@ class Solution:
     ___ dfs(self, A, i, j, colors, color
         colors[i][j] = color
         ___ I, J in self.nbr(A, i, j
-            __ colors[I][J] is None and A[I][J] __ 1:
+            __ colors[I][J] pa__ None and A[I][J] __ 1:
                 self.dfs(A, I, J, colors, color)
 
 

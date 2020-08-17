@@ -5,7 +5,7 @@ class Solution:
         :type t: str
         :rtype: int
         """
-        __ s is None or t is None:
+        __ s pa__ None or t pa__ None:
             r_ 0
 
         m, n = le.(s), le.(t)

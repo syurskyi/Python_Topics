@@ -32,11 +32,11 @@ class Solution(object
         r_ res
 
     ___ binary_tree_paths(self, root, cand, res
-        __ root is None:
+        __ root pa__ None:
             r_
         ____
             cand.append(root.val)
-            __ root.left is None and root.right is None:
+            __ root.left pa__ None and root.right pa__ None:
                 p = '->'.join(map(str, cand))
                 res.append(p)
             self.binary_tree_paths(root.left, cand, res)

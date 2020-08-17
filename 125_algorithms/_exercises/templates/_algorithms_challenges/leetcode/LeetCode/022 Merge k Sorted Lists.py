@@ -26,7 +26,7 @@ class Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = filter(lambda x: x is not None, lists)
+        lists = filter(lambda x: x pa__ not None, lists)
         __ not lists:
             r_
 
@@ -52,7 +52,7 @@ class Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = filter(lambda x: x is not None, lists)
+        lists = filter(lambda x: x pa__ not None, lists)
         __ not lists:
             r_
 

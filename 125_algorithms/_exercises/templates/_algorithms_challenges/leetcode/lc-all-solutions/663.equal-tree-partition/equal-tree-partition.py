@@ -11,7 +11,7 @@ class Solution(object
       __ not node:
         r_ 0
       s = node.val + su.(node.left) + su.(node.right)
-      __ node is not root:
+      __ node pa__ not root:
         cuts.add(s)
       r_ s
 

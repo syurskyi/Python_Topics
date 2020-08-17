@@ -93,7 +93,7 @@ ___ test_filter_entries_by_tag(arg, ret
                   tags={'pythonic', 'data science',
                         'tips', 'tricks', 'matplotlib',
                         'pandas', 'books', 'collections'})
-    assert filter_entries_by_tag(arg, entry) is ret
+    assert filter_entries_by_tag(arg, entry) pa__ ret
 
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])

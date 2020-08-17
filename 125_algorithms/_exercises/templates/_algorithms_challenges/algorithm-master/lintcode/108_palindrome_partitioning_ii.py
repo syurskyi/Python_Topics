@@ -19,7 +19,7 @@ class Solution:
         ___ end in range(1, n + 1
             ___ start in range(end
                 __ (not is_palindrome[start][end - 1] or
-                    dp[start] is INFINITY
+                    dp[start] pa__ INFINITY
                     continue
                 __ dp[start] + 1 < dp[end]:
                     dp[end] = dp[start] + 1

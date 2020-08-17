@@ -58,7 +58,7 @@ class Solution:
         otherwise its a list => at some point there will be no `node.next`
         """
         slow, fast = head, head.next
-        w___ slow is not fast:
+        w___ slow pa__ not fast:
             __ not fast or not fast.next:
                 r_
             slow = slow.next
@@ -69,7 +69,7 @@ class Solution:
         and at the intersection node
         the steps from the first node is equal to from meet node plus 1
         """
-        w___ head is not slow.next:
+        w___ head pa__ not slow.next:
             head = head.next
             slow = slow.next
 

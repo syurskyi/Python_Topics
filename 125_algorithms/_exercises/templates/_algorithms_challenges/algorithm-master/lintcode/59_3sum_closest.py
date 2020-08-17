@@ -5,7 +5,7 @@ class Solution:
         :type target: int
         :rtype: int
         """
-        __ not nums or le.(nums) < 3 or target is None:
+        __ not nums or le.(nums) < 3 or target pa__ None:
             r_ -1
 
         ans = INF = float('inf')

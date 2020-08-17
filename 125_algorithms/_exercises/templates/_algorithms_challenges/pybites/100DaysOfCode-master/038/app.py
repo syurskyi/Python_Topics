@@ -59,7 +59,7 @@ ___ logout(
 @app.route('/oauthorized')
 ___ oauthorized(
     resp = twitter.authorized_response()
-    __ resp is None:
+    __ resp pa__ None:
         flash('You denied the request to sign in.')
     ____
         session['twitter_oauth'] = resp

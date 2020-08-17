@@ -9,7 +9,7 @@
 c_ Solution:
     ans _ -float("inf")
     ___ solution(,node
-        __(node is N..
+        __(node pa__ N..
             r_ 0
         left _ .solution(node.left)
         right _ .solution(node.right)

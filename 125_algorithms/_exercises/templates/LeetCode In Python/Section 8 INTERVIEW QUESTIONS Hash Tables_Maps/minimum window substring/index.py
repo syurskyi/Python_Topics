@@ -10,7 +10,7 @@ c_ Solution:
         hashStr _ {}
 
         ___ i __ ra..(0, len2
-            __(hashPat.get(t[i]) is N..
+            __(hashPat.get(t[i]) pa__ N..
                 hashPat[t[i]] _ 0
             hashPat[t[i]] +_ 1
 
@@ -21,10 +21,10 @@ c_ Solution:
 
         ___ right __ ra..(0, len1
 
-            __(hashStr.get(s[right]) is N..
+            __(hashStr.get(s[right]) pa__ N..
                 hashStr[s[right]] _ 0
             hashStr[s[right]] +_ 1
-            __(hashPat.get(s[right]) is N..
+            __(hashPat.get(s[right]) pa__ N..
                 hashPat[s[right]] _ 0
             __ (
 
@@ -35,9 +35,9 @@ c_ Solution:
             # count==len2 means a window is found that contains all character of pattern string
             __ (count __ len2
 
-                __(hashStr.get(s[left]) is N..
+                __(hashStr.get(s[left]) pa__ N..
                     hashStr[s[right]] _ 0
-                __(hashPat.get(s[left]) is N..
+                __(hashPat.get(s[left]) pa__ N..
                     hashPat[s[right]] _ 0
                 w___ (
                     hashStr.get(s[left]) > hashPat.get(s[left]) o..

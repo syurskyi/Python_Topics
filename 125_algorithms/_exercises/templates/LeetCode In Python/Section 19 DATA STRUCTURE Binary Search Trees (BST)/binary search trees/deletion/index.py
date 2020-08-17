@@ -8,37 +8,37 @@ c_ Node:
 
 
 ___ insert(root, node
-    __(root is N..
+    __(root pa__ N..
         root _ node
         r_
 
     __(root.data < node.data
-        __(root.right is N..
+        __(root.right pa__ N..
             root.right _ node
         ____
             insert(root.right, node)
     ____
-        __(root.left is N..
+        __(root.left pa__ N..
             root.left _ node
         ____
             insert(root.left, node)
 
 
 ___ preorder(node
-    __(node is no. N..
+    __(node pa__ no. N..
         print(node.data)
         preorder(node.left)
         preorder(node.right)
 
 
 ___ minValueNode(node
-    w___(node.left is no. N..
+    w___(node.left pa__ no. N..
         node _ node.left
     r_ node
 
 
 ___ deleteNode(node, key
-    __(node is N..
+    __(node pa__ N..
         r_ node
     # If the key to be deleted is smaller than the node's
     # key then it lies in  left subtree
@@ -52,11 +52,11 @@ ___ deleteNode(node, key
     # to be deleted
     ____
         # Node with only one child or no child
-        __ node.left is N..
+        __ node.left pa__ N..
             temp _ node.right
             node _ N..
             r_ temp
-        ____ node.right is N..
+        ____ node.right pa__ N..
             temp _ node.left
             node _ N..
             r_ temp

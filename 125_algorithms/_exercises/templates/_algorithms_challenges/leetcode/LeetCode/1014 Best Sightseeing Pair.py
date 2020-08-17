@@ -54,9 +54,9 @@ class Solution:
         # find top 2
         m1, m2 = None, None
         ___ i in range(n
-            __ m1 is None:
+            __ m1 pa__ None:
                 m1 = i
-            ____ m2 is None:
+            ____ m2 pa__ None:
                 m2 = i
             ____ B[i] + (i - m1) > B[m1]:
                 m1 = i

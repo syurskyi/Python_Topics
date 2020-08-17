@@ -11,7 +11,7 @@ class Solution(object
     :type x: int
     :rtype: ListNode
     """
-    __ head is None:
+    __ head pa__ None:
       r_ None
     dummy = ListNode(-1)
     dummy.next = head

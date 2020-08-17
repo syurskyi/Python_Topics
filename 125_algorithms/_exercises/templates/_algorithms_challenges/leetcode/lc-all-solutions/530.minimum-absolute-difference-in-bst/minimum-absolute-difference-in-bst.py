@@ -18,7 +18,7 @@ class Solution(object
       __ not root:
         r_
       inorder(root.left)
-      __ self.val is not None:
+      __ self.val pa__ not None:
         self.ans = min(self.ans, abs(root.val - self.val))
       self.val = root.val
       inorder(root.right)

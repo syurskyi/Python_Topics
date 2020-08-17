@@ -22,7 +22,7 @@ class Solution:
         w___ n:
             cur = n & 1
             # `if last` is error
-            __ last is not None and last ^ cur __ 0:
+            __ last pa__ not None and last ^ cur __ 0:
                 r_ False
             last = cur
             n >>= 1

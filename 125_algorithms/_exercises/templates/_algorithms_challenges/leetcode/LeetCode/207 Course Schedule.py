@@ -62,4 +62,4 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    assert Solution().canFinish(2, [[1, 0], [0, 1]]) is False
+    assert Solution().canFinish(2, [[1, 0], [0, 1]]) pa__ False

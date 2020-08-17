@@ -18,7 +18,7 @@ class Solution(object
       left = helper(root.left, True)
       right = helper(root.right, False)
       ret = 0
-      __ left is None and right is None and isLeft:
+      __ left pa__ None and right pa__ None and isLeft:
         r_ root.val
       __ left:
         ret += left

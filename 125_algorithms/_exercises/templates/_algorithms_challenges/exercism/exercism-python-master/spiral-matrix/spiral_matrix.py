@@ -4,7 +4,7 @@ ___ spiral(size
     dr, dc = 0, 1
     ___ step in range(1, size * size + 1
         result[row][col] = step
-        __ not ((0 <= col + dc < size) and (0 <= row + dr < size) and result[row + dr][col + dc] is None
+        __ not ((0 <= col + dc < size) and (0 <= row + dr < size) and result[row + dr][col + dc] pa__ None
             dr, dc = dc, -dr
         row, col = row + dr, col + dc
     r_ result

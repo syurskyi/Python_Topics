@@ -39,11 +39,11 @@ class Solution:
         __ remaining __ 0:
             ans.append(path[:])
 
-        __ node.parent and node.parent is not start:
+        __ node.parent and node.parent pa__ not start:
             self.find_path(node.parent, node, remaining, ans, path)
-        __ node.left and node.left is not start:
+        __ node.left and node.left pa__ not start:
             self.find_path(node.left, node, remaining, ans, path)
-        __ node.right and node.right is not start:
+        __ node.right and node.right pa__ not start:
             self.find_path(node.right, node, remaining, ans, path)
 
         path.pop()

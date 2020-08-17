@@ -30,7 +30,7 @@ class Solution(object
         r_ max(res, max_res[0])
 
     ___ max_sum(self, root, max_res
-        __ root is None:
+        __ root pa__ None:
             r_ 0
         ____
             left_max = self.max_sum(root.left, max_res)
@@ -38,7 +38,7 @@ class Solution(object
             root_max = max(root.val,
                            root.val + left_max,
                            root.val + right_max)
-            __ max_res[0] is not None:
+            __ max_res[0] pa__ not None:
                 max_res[0] = max(max_res[0],
                                  root_max,
                                  root.val + left_max + right_max)

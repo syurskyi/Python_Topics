@@ -50,7 +50,7 @@ class Solution:
         _a = self.find(nodes, a)
         _b = self.find(nodes, b)
 
-        __ _a is not _b:
+        __ _a pa__ not _b:
             nodes[_a] = _b
 
         r_ _b
@@ -59,7 +59,7 @@ class Solution:
         __ a not in nodes:
             nodes[a] = a
             r_ a
-        __ nodes[a] is a:
+        __ nodes[a] pa__ a:
             r_ a
 
         nodes[a] = self.find(nodes, nodes[a])

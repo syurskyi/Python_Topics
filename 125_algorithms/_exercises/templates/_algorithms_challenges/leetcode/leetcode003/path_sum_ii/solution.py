@@ -10,7 +10,7 @@ class Solution:
     # @param sum, an integer
     # @return a list of lists of integers
     ___ pathSum(self, root, su.
-        __ root is None:
+        __ root pa__ None:
             r_ []
         one = []
         res = []
@@ -18,9 +18,9 @@ class Solution:
         r_ res
 
     ___ ps(self, root, su., one, res
-        __ root is None:
+        __ root pa__ None:
             r_
-        ____ root.left is None and root.right is None:
+        ____ root.left pa__ None and root.right pa__ None:
             __ root.val __ su.:
                 one.append(root.val)
                 res.append(one[:])

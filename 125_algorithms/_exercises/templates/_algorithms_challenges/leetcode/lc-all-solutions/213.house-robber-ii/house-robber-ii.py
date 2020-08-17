@@ -4,7 +4,7 @@ class Solution(object
     :type nums: List[int]
     :rtype: int
     """
-    __ le.(nums) __ 0 or nums is None:
+    __ le.(nums) __ 0 or nums pa__ None:
       r_ 0
     __ le.(nums) <= 2:
       r_ max(nums[:])

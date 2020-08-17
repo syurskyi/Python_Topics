@@ -9,11 +9,11 @@ class Solution:
     # @param k, an integer
     # @return a ListNode
     ___ reverseKGroup(self, head, k
-        __ head is None:
+        __ head pa__ None:
             r_ head
         h = head
         n = 0
-        w___ h is not None:
+        w___ h pa__ not None:
             n += 1
             h = h.next
         num_groups = n / k
@@ -27,17 +27,17 @@ class Solution:
         temp = None
         temp_end = None
         i = 1
-        w___ head is not None:
+        w___ head pa__ not None:
             next_node = head.next
             __ i <= last_group:
                 # Appended current node to `temp` list
-                __ temp is None:
+                __ temp pa__ None:
                     temp_end = head
                 head.next = temp
                 temp = head
                 # Appended `temp` list to `res`
                 __ i % k __ 0:
-                    __ res is None:
+                    __ res pa__ None:
                         res = temp
                         res_end = temp_end
                     ____

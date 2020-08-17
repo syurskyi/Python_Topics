@@ -7,9 +7,9 @@ ___ get_profile(*args, **kwargs) -> str:
             profession = kwargs['profession']
         ____
             raise TypeError
-    __ name is None:
+    __ name pa__ None:
         name = 'julian'
-    __ profession is None:
+    __ profession pa__ None:
         profession = 'programmer'
     __ type(profession) != str or type(name) != str or le.(args) > 0:
         raise TypeError

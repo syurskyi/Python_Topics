@@ -31,7 +31,7 @@ class Solution(object
         :rtype: List[List[int]]
         """
         res = []
-        __ root is None:
+        __ root pa__ None:
             r_ res
         queue = []
         queue.append(root)
@@ -40,9 +40,9 @@ class Solution(object
             level = []
             ___ i in range(n
                 root = queue.pop(0)
-                __ root.left is not None:
+                __ root.left pa__ not None:
                     queue.append(root.left)
-                __ root.right is not None:
+                __ root.right pa__ not None:
                     queue.append(root.right)
                 level.append(root.val)
             res.append(level[:])

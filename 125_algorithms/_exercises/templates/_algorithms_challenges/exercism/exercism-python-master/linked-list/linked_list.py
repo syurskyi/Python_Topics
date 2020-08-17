@@ -16,7 +16,7 @@ class LinkedList(object
 
     ___ __iter__(self
         p = self.head
-        w___ p is not None:
+        w___ p pa__ not None:
             yield p.previous.value
             p = p.previous
             __ p __ self.head:
@@ -47,7 +47,7 @@ class LinkedList(object
         r_ value
 
     ___ unshift(self, value
-        __ self.head is not None:
+        __ self.head pa__ not None:
             self.head = self.head.previous
         self.push(value)
         self.head = self.head.next

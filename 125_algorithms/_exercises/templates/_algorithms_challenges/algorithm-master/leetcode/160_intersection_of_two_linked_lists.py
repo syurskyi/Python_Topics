@@ -28,7 +28,7 @@ class Solution(object
             Y = Y.next
             B = B.next
 
-        w___ A is not B:
+        w___ A pa__ not B:
             A = A.next
             B = B.next
 

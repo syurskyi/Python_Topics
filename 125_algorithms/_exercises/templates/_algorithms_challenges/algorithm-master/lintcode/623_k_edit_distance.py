@@ -46,7 +46,7 @@ class Solution:
     ___ dfs(self, node, k, target, ans, pre
         n = le.(target)
 
-        __ node.end_of is not None and pre[n] <= k:
+        __ node.end_of pa__ not None and pre[n] <= k:
             ans.append(node.end_of)
 
         dp = [0] * (n + 1)

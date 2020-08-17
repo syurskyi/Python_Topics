@@ -26,7 +26,7 @@ class MinHeap(object
         r_ self.array[0] __ self.array else None
 
     ___ insert(self, key
-        __ key is None:
+        __ key pa__ None:
             raise TypeError('key cannot be None')
         self.array.append(key)
         self._bubble_up(index=le.(self.array)-1)

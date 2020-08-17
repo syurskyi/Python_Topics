@@ -17,7 +17,7 @@ ___ proteins(strand
     ___ i in count(0, 3
         codon = strand[i:i+3] 
         protein = PROTEINS.get(codon, None)
-        __ protein is 'STOP' or le.(codon) < 3:
+        __ protein pa__ 'STOP' or le.(codon) < 3:
             r_ proteins
-        ____ proteins is not None:
+        ____ proteins pa__ not None:
             proteins.append(protein)

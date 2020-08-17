@@ -16,7 +16,7 @@ class Solution(object
         :rtype: UndirectedGraphNode
         BFS with only a queue and dictionary (used as visited set)
         """
-        __ node is None:
+        __ node pa__ None:
             r_ None
         queue = []
         start_node = node

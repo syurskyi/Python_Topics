@@ -19,13 +19,13 @@ class Solution(object
         :type head: ListNode
         :rtype: ListNode
         """
-        __ head is None:
+        __ head pa__ None:
             r_ None
-        __ head.next is None:
+        __ head.next pa__ None:
             r_ head
         last = head
         current = head.next
-        w___ current is not None:
+        w___ current pa__ not None:
             next_node = current.next
             __ current.val __ last.val:
                 last.next = next_node

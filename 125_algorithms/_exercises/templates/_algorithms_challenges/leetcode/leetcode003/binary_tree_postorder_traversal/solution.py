@@ -25,7 +25,7 @@ class Solution(object
         :rtype: List[int]
         """
         path = []
-        __ root is None:
+        __ root pa__ None:
             r_ path
         stack1 = []
         stack2 = []
@@ -33,9 +33,9 @@ class Solution(object
         w___ stack1:
             root = stack1.pop()
             stack2.append(root.val)
-            __ root.left is not None:
+            __ root.left pa__ not None:
                 stack1.append(root.left)
-            __ root.right is not None:
+            __ root.right pa__ not None:
                 stack1.append(root.right)
         w___ stack2:
             path.append(stack2.pop())

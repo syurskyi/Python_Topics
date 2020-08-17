@@ -20,15 +20,15 @@ class Solution(object
         :type head: ListNode
         :rtype: ListNode
         """
-        __ head is None:
+        __ head pa__ None:
             r_ None
         current = head
         last = None
         count = 0  # Repeated count of `last`
         dummy = ListNode(0)
         dummy_end = dummy
-        w___ current is not None:
-            __ last is not None:
+        w___ current pa__ not None:
+            __ last pa__ not None:
                 __ current.val __ last.val:
                     count += 1
                 ____

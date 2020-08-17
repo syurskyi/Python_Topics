@@ -8,24 +8,24 @@ c_ Node:
 
 
 ___ insert(root, node
-    __(root is N..
+    __(root pa__ N..
         root _ node
         r_
 
     __(root.data < node.data
-        __(root.right is N..
+        __(root.right pa__ N..
             root.right _ node
         ____
             insert(root.right, node)
     ____
-        __(root.left is N..
+        __(root.left pa__ N..
             root.left _ node
         ____
             insert(root.left, node)
 
 
 ___ preorder(node
-    __(node is no. N..
+    __(node pa__ no. N..
         print(node.data)
         preorder(node.left)
         preorder(node.right)

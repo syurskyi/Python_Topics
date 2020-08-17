@@ -13,7 +13,7 @@ class RestAPI(object
     # Response without payload: `{"users":<List of all User objects>}`
     # Response with payload: `{"users":<List of User objects for <users> (sorted by name)}`
     ___ get(self, url, payload=None
-        __ payload is None:
+        __ payload pa__ None:
             # List of all User objects
             r_ json.dumps(self.database)
 
@@ -23,7 +23,7 @@ class RestAPI(object
         r_ json.dumps({'users': self.get_users(usernames)})
 
     ___ post(self, url, payload=None
-        __ payload is None:
+        __ payload pa__ None:
             raise ValueError("Payload must not be None.")
 
         payload = json.loads(payload)

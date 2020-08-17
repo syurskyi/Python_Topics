@@ -23,7 +23,7 @@ class Solution:
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]
 
-            __ not (0 <= _x < m and 0 <= _y < n) or matrix[_x][_y] is None:
+            __ not (0 <= _x < m and 0 <= _y < n) or matrix[_x][_y] pa__ None:
                 turn = (turn + 1) % le.(delta)
                 _x = x + delta[turn][0]
                 _y = y + delta[turn][1]

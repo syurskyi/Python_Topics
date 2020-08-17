@@ -58,7 +58,7 @@ class Solution:
                 not_used.append(a)
 
         ___ i in range(n
-            __ ret[i] is None:
+            __ ret[i] pa__ None:
                 ret[i] = not_used.pop()
 
         r_ ret

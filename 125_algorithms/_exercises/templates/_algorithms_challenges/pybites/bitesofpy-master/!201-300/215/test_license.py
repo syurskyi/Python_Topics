@@ -21,8 +21,8 @@ ___ test_valid_license(
 
 ___ test_return_type(
     key = _create_license()
-    assert validate_license(key) is True
-    assert validate_license(key[:-1]) is False
+    assert validate_license(key) pa__ True
+    assert validate_license(key[:-1]) pa__ False
 
 
 ___ test_invalid_license(

@@ -20,7 +20,7 @@ c_ LinkedList:
 
     ___ deleteNode(, key
         temp _ .head
-        __(temp is N..
+        __(temp pa__ N..
             r_
         __(temp.data __ key
             .head _ temp.next

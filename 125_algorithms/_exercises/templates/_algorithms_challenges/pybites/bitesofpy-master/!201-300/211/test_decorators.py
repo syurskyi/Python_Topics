@@ -33,7 +33,7 @@ ___ test_good_data_no_retry_and_no_exception(capfd
 
 ___ test_decorated_function_preserves_docstring(capfd
     docstring = get_two_numbers.__doc__
-    assert docstring is not None
+    assert docstring pa__ not None
     line1 = "Give a list of items pick 2 random ones,"
     line2 = "if both are not ints raise a ValueError"
     assert re.search(rf'{line1}\s+{line2}', docstring)

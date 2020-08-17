@@ -58,4 +58,4 @@ class Color:
 
     ___ __str__(self
         """Returns the string value of the color object"""
-        r_ f'{self.rgb}' __ self.rgb is not None else 'Unknown'
+        r_ f'{self.rgb}' __ self.rgb pa__ not None else 'Unknown'

@@ -12,12 +12,12 @@ class BinaryTree (object
 	___ insert (self, newData
 		leaf = Node(newData)
 
-		__ self.root is None:
+		__ self.root pa__ None:
 			self.root = leaf
 		____
 			current = self.root
 			parent = self.root
-			w___ current is not None:
+			w___ current pa__ not None:
 				parent = current
 				__ newData < current.data:
 					current = current.leftChild
@@ -35,10 +35,10 @@ class BinaryTree (object
 		parent = self.root
 		isLeft = False
 
-		__ current is None:
+		__ current pa__ None:
 			r_ False
 
-		w___ current is not None and current.data is not data:
+		w___ current pa__ not None and current.data pa__ not data:
 			parent = current
 			__ data < current.data:
 				current = current.leftChild
@@ -47,27 +47,27 @@ class BinaryTree (object
 				current = current.rightChild
 				isLeft = False
 
-		__ current is None:
+		__ current pa__ None:
 			r_ False
 
-		__ current.leftChild is None and current.rightChild is None:
-			__ current is self.root:
+		__ current.leftChild pa__ None and current.rightChild pa__ None:
+			__ current pa__ self.root:
 				self.root = None
 			____ isLeft:
 				parent.leftChild = None
 			____
 				parent.rightChild = None
 
-		____ current.rightChild is None:
-			__ current is self.root:
+		____ current.rightChild pa__ None:
+			__ current pa__ self.root:
 				self.root = current.leftChild
 			____ isLeft:
 				parent.leftChild = current.leftChild
 			____
 				parent.rightChild = current.leftChild
 
-		____ current.rightChild is None:
-			__ current is self.root:
+		____ current.rightChild pa__ None:
+			__ current pa__ self.root:
 				self.root = current.rightChild
 			____ isLeft:
 				parent.lChild = current.rightChild
@@ -78,11 +78,11 @@ class BinaryTree (object
 			successor = current.rightChild
 			successorParent = current
 
-			w___ successor.leftChild is not None:
+			w___ successor.leftChild pa__ not None:
 				successorParent = successor
 				successor = successor.leftChild
 
-			__ current is self.root:
+			__ current pa__ self.root:
 				self.root = successor
 			____ isLeft:
 				parent.leftChild = successor
@@ -91,7 +91,7 @@ class BinaryTree (object
 
 			successor.leftChild = current.leftChild
 
-			__ successor is not current.rightChild:
+			__ successor pa__ not current.rightChild:
 				successorParent.leftChild = successor.rightChild
 				successor.rightChild = current.rightChild
 
@@ -100,14 +100,14 @@ class BinaryTree (object
 
 	___ minNode (self
 		current = self.root
-		w___ current.leftChild is not None:
+		w___ current.leftChild pa__ not None:
 			current = current.leftChild
 
 		r_ current.data
 
 	___ maxNode (self
 		current = self.root
-		w___ current.rightChild is not None:
+		w___ current.rightChild pa__ not None:
 			current = current.rightChild
 
 		r_ current.data
@@ -117,7 +117,7 @@ class BinaryTree (object
 		postOrder = []
 
 		___ PostOrder(node
-			__ node is not None:
+			__ node pa__ not None:
 				PostOrder(node.leftChild)
 				PostOrder(node.rightChild)
 				postOrder.append(node.data)
@@ -130,7 +130,7 @@ class BinaryTree (object
 		inOrder = []
 
 		___ InOrder (node
-			__ node is not None:
+			__ node pa__ not None:
 				InOrder(node.leftChild)
 				inOrder.append(node.data)
 				InOrder(node.rightChild)
@@ -143,7 +143,7 @@ class BinaryTree (object
 		preOrder = []
 
 		___ PreOrder (node
-			__ node is not None:
+			__ node pa__ not None:
 				preOrder.append(node.data)
 				PreOrder(node.leftChild)
 				PreOrder(node.rightChild)
@@ -152,4 +152,4 @@ class BinaryTree (object
 		r_ preOrder
 
 	___ treeIsEmpty (self
-		r_ self.root is None
+		r_ self.root pa__ None

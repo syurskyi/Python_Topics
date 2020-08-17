@@ -25,12 +25,12 @@ class Solution:
         r_ self.is_valid_bst_aux(root)
 
     ___ is_valid_bst_aux(self, root
-        __ root is None:
+        __ root pa__ None:
             r_ True
         ____
             __ not self.is_valid_bst_aux(root.left
                 r_ False
-            __ self.prev is not None:
+            __ self.prev pa__ not None:
                 __ self.prev.val >= root.val:
                     r_ False
             self.prev = root

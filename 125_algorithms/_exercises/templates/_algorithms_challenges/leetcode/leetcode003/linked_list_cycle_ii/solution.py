@@ -8,17 +8,17 @@ class Solution:
     # @param head, a ListNode
     # @return a list node
     ___ detectCycle(self, head
-        __ head is None or head.next is None:
+        __ head pa__ None or head.next pa__ None:
             r_ None
         slow = head
         fast = head
-        w___ fast is not None and fast.next is not None:
+        w___ fast pa__ not None and fast.next pa__ not None:
             slow = slow.next
             fast = fast.next.next
             __ fast __ slow:
                 break
         # No cycle
-        __ fast is None or fast.next is None:
+        __ fast pa__ None or fast.next pa__ None:
             r_ None
         # Has a cycle, put `slow` back to head
         slow = head

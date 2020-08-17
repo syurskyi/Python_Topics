@@ -45,14 +45,14 @@ class Solution:
                 flag = None
                 cur = 1
             ____ A[i] > A[i+1]:
-                __ flag is None or flag __ 1:
+                __ flag pa__ None or flag __ 1:
                     cur += 1
                     ret = max(ret, cur)
                 ____
                     cur = 2
                 flag = 0
             ____  # <
-                __ flag is None or flag __ 0:
+                __ flag pa__ None or flag __ 0:
                     cur += 1
                     ret = max(ret, cur)
                 ____

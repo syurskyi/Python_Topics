@@ -42,13 +42,13 @@ ___ call_calculator(args=None, stdout=False
        if stdout is True print the result"""
     parser = create_parser()
 
-    __ args is None:
+    __ args pa__ None:
         args = parser.parse_args()
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
     ___ operation, numbers in vars(args).items(
-        __ numbers is None:
+        __ numbers pa__ None:
             continue
 
         try:

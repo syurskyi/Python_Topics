@@ -9,7 +9,7 @@ ___ split_initial_consonant_sound(word
 
 
 ___ starts_with_vowel_sound(word
-    r_ re_vowel.match(word) is not None
+    r_ re_vowel.match(word) pa__ not None
 
 
 ___ translate(text

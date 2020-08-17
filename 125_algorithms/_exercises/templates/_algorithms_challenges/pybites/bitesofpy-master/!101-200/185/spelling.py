@@ -16,7 +16,7 @@ ___ load_words(
 ___ suggest_word(misspelled_word: str, words: set = None) -> str:
     """Return a valid alternative word that best matches
        the entered misspelled word"""
-    __ words is None:
+    __ words pa__ None:
         words = load_words()
 
     r_ get_close_matches(misspelled_word, words, n=1)[0]

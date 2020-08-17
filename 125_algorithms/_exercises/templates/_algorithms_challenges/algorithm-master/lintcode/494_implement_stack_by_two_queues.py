@@ -37,4 +37,4 @@ class Stack:
     @return: True if the stack is empty
     """
     ___ isEmpty(self
-        r_ self.dummy is self.tail
+        r_ self.dummy pa__ self.tail

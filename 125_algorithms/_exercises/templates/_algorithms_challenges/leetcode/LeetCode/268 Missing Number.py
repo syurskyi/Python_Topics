@@ -42,7 +42,7 @@ class Solution(object
                 nums[i] = None
                 i += 1
 
-            ____ nums[i] is not None and nums[i] != i:
+            ____ nums[i] pa__ not None and nums[i] != i:
                 j = nums[i]
                 nums[i], nums[j] = nums[j], nums[i]
 

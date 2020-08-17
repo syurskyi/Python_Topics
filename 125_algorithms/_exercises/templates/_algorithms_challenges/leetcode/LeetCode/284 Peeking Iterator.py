@@ -56,4 +56,4 @@ class PeekingIterator(object
         """
         :rtype: bool
         """
-        r_ self.nxt is not None or self.iterator.hasNext()
+        r_ self.nxt pa__ not None or self.iterator.hasNext()

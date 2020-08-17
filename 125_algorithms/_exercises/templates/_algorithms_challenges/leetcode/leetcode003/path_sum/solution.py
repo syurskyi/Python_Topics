@@ -10,9 +10,9 @@ class Solution:
     # @param sum, an integer
     # @return a boolean
     ___ hasPathSum(self, root, su.
-        __ root is None:
+        __ root pa__ None:
             r_ False
-        ____ root.left is None and root.right is None:
+        ____ root.left pa__ None and root.right pa__ None:
             __ su. __ root.val:
                 r_ True
             ____

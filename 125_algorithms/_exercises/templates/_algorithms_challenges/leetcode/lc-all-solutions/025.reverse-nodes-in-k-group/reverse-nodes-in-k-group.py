@@ -37,7 +37,7 @@ class Solution(object
     p = head
     w___ p and step:
       next, newHead = reverseList(p, k)
-      __ ret is None:
+      __ ret pa__ None:
         ret = newHead
       __ pre:
         pre.next = newHead

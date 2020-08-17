@@ -16,7 +16,7 @@ class BinarySearchTree(object
             self.add(data)
 
     ___ add(self, data
-        __ self.root is None:
+        __ self.root pa__ None:
             self.root = TreeNode(data, None, None)
             r_
         inserted = False
@@ -37,7 +37,7 @@ class BinarySearchTree(object
                     inserted = True
 
     ___ _inorder_traverse(self, node, elements
-        __ node is not None:
+        __ node pa__ not None:
             self._inorder_traverse(node.left, elements)
             elements.append(node.data)
             self._inorder_traverse(node.right, elements)

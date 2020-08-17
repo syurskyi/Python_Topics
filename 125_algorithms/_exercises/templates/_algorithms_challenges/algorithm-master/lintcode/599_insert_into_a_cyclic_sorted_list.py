@@ -34,7 +34,7 @@ class Solution:
                 break
 
             # if `cur` have already traversed the list once
-            __ cur is node:
+            __ cur pa__ node:
                 break
 
         new_node = ListNode(x)

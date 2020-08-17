@@ -13,7 +13,7 @@ class Solution(object
       c = calcDir(x, y, z)
       __ c __ 0:
         continue
-      __ pre is None:
+      __ pre pa__ None:
         pre = c
       __ pre * c < 0:
         r_ False

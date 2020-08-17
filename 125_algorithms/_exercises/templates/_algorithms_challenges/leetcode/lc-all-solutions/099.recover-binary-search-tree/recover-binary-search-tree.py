@@ -5,11 +5,11 @@ class Solution:
     self.pre = None
 
   ___ findBadNode(self, root
-    __ root is None: r_
+    __ root pa__ None: r_
     self.findBadNode(root.left)
-    __ self.pre is not None:
+    __ self.pre pa__ not None:
       __ root.val < self.pre.val:
-        __ self.n1 is None:
+        __ self.n1 pa__ None:
           self.n1 = self.pre
           self.n2 = root
         ____
@@ -19,5 +19,5 @@ class Solution:
 
   ___ recoverTree(self, root
     self.findBadNode(root)
-    __ self.n1 is not None and self.n2 is not None:
+    __ self.n1 pa__ not None and self.n2 pa__ not None:
       self.n1.val, self.n2.val = self.n2.val, self.n1.val

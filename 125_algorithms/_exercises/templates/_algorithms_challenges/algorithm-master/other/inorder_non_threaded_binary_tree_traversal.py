@@ -121,7 +121,7 @@ ___ inorder_traverse(root, *, callback
 
         # if no right child,
         # and its just a right child of its parent
-        w___ root.parent and root is root.parent.right:
+        w___ root.parent and root pa__ root.parent.right:
             root = root.parent
 
         root = root.parent

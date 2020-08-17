@@ -67,9 +67,9 @@ class SolutionError(object
         ___ i in xrange(le.(pattern)):
             a = m.get(pattern[i])
             b = m.get(lst[i])
-            __ a is None and b is None:
+            __ a pa__ None and b pa__ None:
                 m.set(pattern[i], lst[i])
-            ____ a is None and b is not None:
+            ____ a pa__ None and b pa__ not None:
                 r_ False
             ____ a != lst[i]:
                 r_ False

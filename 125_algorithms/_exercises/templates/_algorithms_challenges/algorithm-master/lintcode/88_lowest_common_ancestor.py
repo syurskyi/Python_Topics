@@ -19,7 +19,7 @@ class Solution:
         :type b: TreeNode
         :rtype: TreeNode
         """
-        __ not root or root is a or root is b:
+        __ not root or root pa__ a or root pa__ b:
             r_ root
 
         left = self.lowestCommonAncestor(root.left, a, b)

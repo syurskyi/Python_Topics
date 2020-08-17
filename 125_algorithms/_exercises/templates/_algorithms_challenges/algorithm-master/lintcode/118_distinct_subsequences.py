@@ -5,10 +5,10 @@ class Solution:
     @return: Count the number of distinct subsequences
     """
     ___ numDistinct(self, S, T
-        __ S is None or T is None:
+        __ S pa__ None or T pa__ None:
             r_ 0
 
-        __ S is '' and '':
+        __ S pa__ '' and '':
             r_ 1
 
         m, n = le.(S), le.(T)

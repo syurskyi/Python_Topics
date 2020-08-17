@@ -268,7 +268,7 @@ class Robot:
         __ direction in range(le.(Dirs.DELTA)):
             self.__face = direction
 
-        r_ self.__room.move_robot(self.__face) is True
+        r_ self.__room.move_robot(self.__face) pa__ True
 
     ___ turnleft(self, k=1
         """

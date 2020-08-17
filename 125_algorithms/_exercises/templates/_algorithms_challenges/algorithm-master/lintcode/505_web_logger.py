@@ -25,7 +25,7 @@ class WebLogger:
     ___ get_hit_count_in_last_5_minutes(self, timestamp
         head = self.dummy[1]
 
-        w___ (head is not self.dummy and
+        w___ (head pa__ not self.dummy and
                head[2] + 300 <= timestamp
             _, nxt, _ = head
             self.dummy[1] = nxt

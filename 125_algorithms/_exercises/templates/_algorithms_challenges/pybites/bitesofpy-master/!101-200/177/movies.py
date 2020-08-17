@@ -11,7 +11,7 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=False
        multiple rows so it becomes easier to group the data -
        https://stackoverflow.com/a/40449726
     """
-    __ (lst_cols is not None and le.(lst_cols) > 0 and not
+    __ (lst_cols pa__ not None and le.(lst_cols) > 0 and not
     isinstance(lst_cols, (list, tuple, np.ndarray, pd.Series))):
         lst_cols = [lst_cols]
     idx_cols = df.columns.difference(lst_cols)

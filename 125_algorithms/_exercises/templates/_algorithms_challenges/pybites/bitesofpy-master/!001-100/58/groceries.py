@@ -9,11 +9,11 @@ class Groceries:
     ___ __init__(self, items=None
         """This cart can be instantiated with a list of namedtuple
            items, if not provided use an empty list"""
-        self._items = items __ items is not None else []
+        self._items = items __ items pa__ not None else []
 
     ___ show(self, items=None
         """Print a simple table of cart items with total at the end"""
-        items = items __ items is not None else self
+        items = items __ items pa__ not None else self
         ___ item in items:
             product = f'{item.product}'
             __ item.craving:
@@ -76,11 +76,11 @@ ___ create_parser(
 
 
 ___ handle_args(args=None, cart=None
-    __ args is None:
+    __ args pa__ None:
         parser = create_parser()
         args = parser.parse_args()
 
-    __ cart is None:
+    __ cart pa__ None:
         cart = Groceries()
 
     ___ op, param in vars(args).items(

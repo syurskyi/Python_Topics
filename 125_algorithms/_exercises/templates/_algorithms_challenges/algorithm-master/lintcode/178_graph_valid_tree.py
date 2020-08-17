@@ -14,7 +14,7 @@ class Solution:
             _a = self.find(nodes, a)
             _b = self.find(nodes, b)
 
-            __ _a is _b:
+            __ _a pa__ _b:
                 r_ False
 
             nodes[_a] = _b
@@ -22,7 +22,7 @@ class Solution:
         r_ True
 
     ___ find(self, nodes, a
-        __ nodes[a] is a:
+        __ nodes[a] pa__ a:
             r_ a
 
         nodes[a] = self.find(nodes, nodes[a])

@@ -90,7 +90,7 @@ class Solution:
                     break
 
             ___ email in accounts[i][1:]:
-                __ person is None:
+                __ person pa__ None:
                     person = i
                     email_id[email] = person
                     id_emails[person].append(email)

@@ -30,14 +30,14 @@ class Solution:
         _a = self.find(N, a)
         _b = self.find(N, b)
 
-        __ _a is not _b:
+        __ _a pa__ not _b:
             N[_a] = _b
 
     ___ find(self, N, a
         __ a not in N:
             N[a] = a
             r_ a
-        __ N[a] is a:
+        __ N[a] pa__ a:
             r_ a
 
         N[a] = self.find(N, N[a])

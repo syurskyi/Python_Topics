@@ -15,7 +15,7 @@ CONNECTION_NAME = 'feed'
 @click.option('--connection', default=PYBITES, help='Where to post to (me, group name/id)')  # TODO: post to page
 @click.option('--message', help='The message to post. For now embed any links in here')
 ___ fbpost(connection, message
-    __ message is None:
+    __ message pa__ None:
         raise ValueError('I need to know what message to post please')
 
     graph.put_object(

@@ -36,7 +36,7 @@ ___ calc_word_value(word
 
 ___ max_word_value(words=None
     """given a list of words return the word with the maximum word value"""
-    __ words is None or le.(words) __ 0:
+    __ words pa__ None or le.(words) __ 0:
         raise ValueError()
     lst = {word:calc_word_value(word) ___ word in words}
     result = sorted(lst.items(),key=lambda x:-x[1])[0]

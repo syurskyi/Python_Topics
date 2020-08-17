@@ -13,6 +13,6 @@ ___ flatten(iterable
     ___ item in iterable:
         __ is_iterable(item) and not isinstance(item, (str, bytes)):
             flattened += flatten(item)
-        ____ item is not None:
+        ____ item pa__ not None:
             flattened.append(item)
     r_ flattened

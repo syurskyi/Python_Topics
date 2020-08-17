@@ -28,7 +28,7 @@ class Solution(object
         w___ queue:
             i, j, t, c = queue.popleft()
             ___ i2, j2, t2 in self.parents(graph, i, j, t
-                __ color[i2, j2, t2] is DRAW:
+                __ color[i2, j2, t2] pa__ DRAW:
                     __ t2 __ c:
                         color[i2, j2, t2] = c
                         queue.append((i2, j2, t2, c))

@@ -36,7 +36,7 @@ class CryptoSquare:
     ___ transpose_uneven_matrix(matrix
         transposed_matrix = list(itertools.zip_longest(*matrix))
         # Remove None's
-        r_ [[val ___ val in row __ val is not None]
+        r_ [[val ___ val in row __ val pa__ not None]
                 ___ row in transposed_matrix]
 
 

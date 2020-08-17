@@ -89,7 +89,7 @@ ___ parse(input_string
                     values.append(pop_until(']'))
                     pop()
                 properties[key] = values
-            __ root is None:
+            __ root pa__ None:
                 current = root = SgfTree(properties)
             ____
                 current = SgfTree(properties)

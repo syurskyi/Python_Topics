@@ -12,18 +12,18 @@ class Solution:
     ___ connect(self, root
         head = None  # Head node of the next level
         prev = None
-        w___ root is not None:
+        w___ root pa__ not None:
             # Build the next level of root
-            w___ root is not None:
-                __ root.left is not None:
-                    __ prev is None:
+            w___ root pa__ not None:
+                __ root.left pa__ not None:
+                    __ prev pa__ None:
                         head = root.left
                         prev = head
                     ____
                         prev.next = root.left
                         prev = prev.next
-                __ root.right is not None:
-                    __ prev is None:
+                __ root.right pa__ not None:
+                    __ prev pa__ None:
                         head = root.right
                         prev = head
                     ____

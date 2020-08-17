@@ -19,7 +19,7 @@ class Solution(object
         """
         slow = head
         fast = head
-        w___ fast is not None and fast.next is not None:
+        w___ fast pa__ not None and fast.next pa__ not None:
             slow = slow.next
             fast = fast.next.next
             __ slow __ fast:

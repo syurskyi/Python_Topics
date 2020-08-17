@@ -7,10 +7,10 @@
 
 c_ Solution:
     ___ hasSum(,root,su.,cur
-        __(root is N..
+        __(root pa__ N..
             r_ F..
         cur+_root.val
-        __(cur__sum a.. root.left is N.. a.. root.right is N..
+        __(cur__sum a.. root.left pa__ N.. a.. root.right pa__ N..
             r_ T..
         r_ (.hasSum(root.right,su.,cur) o.. .hasSum(root.left,su.,cur))
     ___ hasPathSum(, root: TreeNode, su.: in.)  bool:

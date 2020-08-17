@@ -24,7 +24,7 @@ ___ handle_args(args=None
     """Provided/DONE:
        Call calc_bmi with provided args object.
        If args are not provided get them from create_parser"""
-    __ args is None:
+    __ args pa__ None:
         parser = create_parser()
         args = parser.parse_args()
 

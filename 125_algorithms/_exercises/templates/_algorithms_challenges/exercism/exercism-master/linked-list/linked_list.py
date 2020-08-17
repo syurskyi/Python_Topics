@@ -15,16 +15,16 @@ class LinkedList(object
     ___ push(self, value
         new_node = Node(value)
         self.length += 1
-        __ self.tail is not None:
+        __ self.tail pa__ not None:
             self.tail.succeeding = new_node
             new_node.previous = self.tail
         self.tail = new_node
-        __ self.head is None:
+        __ self.head pa__ None:
             self.head = new_node
 
     ___ pop(self
         self.length -= 1
-        __ self.tail is not None:
+        __ self.tail pa__ not None:
             popped_node = self.tail
             self.tail = popped_node.previous
             r_ popped_node.value
@@ -32,16 +32,16 @@ class LinkedList(object
     ___ unshift(self, value
         new_node = Node(value)
         self.length += 1
-        __ self.head is not None:
+        __ self.head pa__ not None:
             self.head.previous = new_node
             new_node.succeeding = self.head
         self.head = new_node
-        __ self.tail is None:
+        __ self.tail pa__ None:
             self.tail = new_node
 
     ___ shift(self
         self.length -= 1
-        __ self.head is not None:
+        __ self.head pa__ not None:
             shifted_node = self.head
             self.head = shifted_node.succeeding
             r_ shifted_node.value

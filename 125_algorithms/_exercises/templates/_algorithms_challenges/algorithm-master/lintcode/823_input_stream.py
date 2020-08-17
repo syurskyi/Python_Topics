@@ -60,7 +60,7 @@ class Solution:
 
         __ a __ '' and b __ '':
             r_ RES[1]
-        __ a is None or b is None:
+        __ a pa__ None or b pa__ None:
             r_ RES[0]
 
         RM = '<'

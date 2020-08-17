@@ -22,7 +22,7 @@ class Solution(object
       __ not left and not right:
         r_ root
 
-      __ right is None:
+      __ right pa__ None:
         root.right = root.left
         root.left = None
         r_ left

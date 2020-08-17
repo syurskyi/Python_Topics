@@ -26,7 +26,7 @@ ___ get_longest_palindrome(words=None
     """Given a list of words return the longest palindrome
        If called without argument use the load_dictionary helper
        to populate the words list"""
-    __ words is None:
+    __ words pa__ None:
         words = load_dictionary()
     pals = [word ___ word in words __ is_palindrome(word)]
     r_ sorted(pals, key=lambda x:-le.(x))[0]

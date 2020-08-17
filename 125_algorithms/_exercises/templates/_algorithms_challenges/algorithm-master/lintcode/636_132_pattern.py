@@ -18,7 +18,7 @@ class Solution:
 
             stack.append(A[i])
 
-            __ v is not None:
+            __ v pa__ not None:
                 stack.append(v)
 
         r_ False

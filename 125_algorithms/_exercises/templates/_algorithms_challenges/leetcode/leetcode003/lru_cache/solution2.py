@@ -70,7 +70,7 @@ class List(object
     ___ insert(self, node
         """Insert node to the head"""
         node.next = self.head
-        __ self.head is not None:
+        __ self.head pa__ not None:
             self.head.prev = node
         ____
             self.tail = node
@@ -81,9 +81,9 @@ class List(object
         """Move node to the head"""
         prev_node = node.prev
         next_node = node.next
-        __ prev_node is not None:
+        __ prev_node pa__ not None:
             prev_node.next = next_node
-            __ next_node is not None:
+            __ next_node pa__ not None:
                 next_node.prev = prev_node
             ____
                 self.tail = prev_node
@@ -97,10 +97,10 @@ class List(object
         prev_node = node.prev
         next_node = node.next
         # If node is not the head node
-        __ prev_node is not None:
+        __ prev_node pa__ not None:
             prev_node.next = next_node
             # If node is not the tail node
-            __ next_node is not None:
+            __ next_node pa__ not None:
                 next_node.prev = prev_node
             ____
                 self.tail = prev_node

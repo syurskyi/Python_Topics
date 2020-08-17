@@ -6,7 +6,7 @@ class Solution:
         :rtype: int
         """
         NOT_FOUND = -1
-        __ haystack is None or needle is None:
+        __ haystack pa__ None or needle pa__ None:
             r_ NOT_FOUND
         __ haystack __ needle:
             r_ 0

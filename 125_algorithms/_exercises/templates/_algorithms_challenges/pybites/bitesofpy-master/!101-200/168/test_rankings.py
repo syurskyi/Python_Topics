@@ -23,7 +23,7 @@ SECOND_NINJAS = [Ninja(*ninja) ___ ninja in more_names]
 
 ___ _create_ranks(ninjas=None
     ranking = Rankings()
-    __ ninjas is None:
+    __ ninjas pa__ None:
         r_ ranking
 
     ___ ninja in ninjas:

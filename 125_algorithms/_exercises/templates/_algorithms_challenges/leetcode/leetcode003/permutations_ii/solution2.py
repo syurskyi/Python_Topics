@@ -22,7 +22,7 @@ class Solution(object
             res = []
             prev = None
             ___ i, e in enumerate(nums
-                __ prev is None or prev != e:
+                __ prev pa__ None or prev != e:
                     rest = nums[:i] + nums[i + 1:]
                     rest_perms = self.permute(rest)
                     ___ perm in rest_perms:

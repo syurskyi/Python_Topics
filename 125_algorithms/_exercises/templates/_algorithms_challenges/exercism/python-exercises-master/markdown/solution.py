@@ -66,7 +66,7 @@ ___ parse_line(line, in_list
     __ not re.match('<h|<ul|<li', res
         res = wrap(res, 'p')
 
-    __ list_match is None:
+    __ list_match pa__ None:
         res = re.sub('(.*)(<li>)(.*)(</li>)(.*)', r'\1\2<p>\3</p>\4\5', res)
 
     w___ check_bold(res

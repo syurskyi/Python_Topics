@@ -39,4 +39,4 @@ ___ test_other_header(
 
 
 ___ test_no_match(
-    assert get_email_details('bogus') is None
+    assert get_email_details('bogus') pa__ None

@@ -20,7 +20,7 @@ class Account:
         r_ self
 
     ___ __exit__(self, exc_type, exc_val, exc_tb
-        __ exc_type is not None or self.balance < 0:
+        __ exc_type pa__ not None or self.balance < 0:
             self._transactions = self._rollback
         self._rollback = None
         r_ self

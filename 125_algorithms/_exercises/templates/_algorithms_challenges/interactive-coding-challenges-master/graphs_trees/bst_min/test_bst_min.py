@@ -2,7 +2,7 @@ from nose.tools ______ assert_equal
 
 
 ___ height(node
-    __ node is None:
+    __ node pa__ None:
         r_ 0
     r_ 1 + max(height(node.left),
                    height(node.right))

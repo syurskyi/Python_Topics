@@ -18,7 +18,7 @@ class Solution(object
         :type root: TreeNode
         :rtype: bool
         """
-        __ root is None:
+        __ root pa__ None:
             r_ True
         ____
             __ self.height(root) != -1:
@@ -28,7 +28,7 @@ class Solution(object
 
     ___ height(self, root
         # Return -1 if not balanced
-        __ root is None:
+        __ root pa__ None:
             r_ 0
         ____
             left_height = self.height(root.left)

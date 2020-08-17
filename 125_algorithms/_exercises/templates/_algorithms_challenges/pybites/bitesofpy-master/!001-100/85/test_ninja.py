@@ -16,7 +16,7 @@ ___ ninja(
 
 ___ test_initial_state(ninja
     assert ninja.score __ 0
-    assert ninja._last_earned_belt is None
+    assert ninja._last_earned_belt pa__ None
 
 
 ___ test_add_score_new_belt(ninja, capfd

@@ -23,7 +23,7 @@ class LinkedList(object
 
     ___ pop(self
         node = self.tail
-        __ node is None or node.prev is None:
+        __ node pa__ None or node.prev pa__ None:
             self.head = self.tail = None
         ____
             self.tail = self.tail.prev
@@ -33,7 +33,7 @@ class LinkedList(object
 
     ___ shift(self
         node = self.head
-        __ node is None or node.next is None:
+        __ node pa__ None or node.next pa__ None:
             self.head = self.tail = None
         ____
             self.head = self.head.next

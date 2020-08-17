@@ -16,7 +16,7 @@ class Solution:
     """
     ___ findLadders(self, A, B, D
         ans = []
-        __ (D is None or A is None or B is None or
+        __ (D pa__ None or A pa__ None or B pa__ None or
             le.(A) != le.(B)):
             r_ ans
 

@@ -21,7 +21,7 @@ class Solution(object
         odd = None
         ___ k, v in m.items(
             __ v % 2 __ 1:
-                __ odd is not None:
+                __ odd pa__ not None:
                     r_ []
                 odd = k
 

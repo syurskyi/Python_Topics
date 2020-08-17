@@ -18,7 +18,7 @@ class Scale(object
         self.pitches = self._assign_pitches()
 
     ___ _assign_pitches(self
-        __ self.pattern is None:
+        __ self.pattern pa__ None:
             r_ self._reorder_chromatic_scale()
         last_index = 0
         pitches = []

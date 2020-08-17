@@ -21,15 +21,15 @@ class Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isValidBST(self, root
-        __ root is None:
+        __ root pa__ None:
             r_ True
         ____
             left = True
             right = True
-            __ root.left is not None:
+            __ root.left pa__ not None:
                 left = (self.max_node(root.left).val < root.val
                         and self.isValidBST(root.left))
-            __ root.right is not None:
+            __ root.right pa__ not None:
                 right = (self.min_node(root.right).val > root.val
                          and self.isValidBST(root.right))
             __ left and right:
@@ -37,11 +37,11 @@ class Solution:
             r_ False
 
     ___ min_node(self, root
-        w___ root.left is not None:
+        w___ root.left pa__ not None:
             root = root.left
         r_ root
 
     ___ max_node(self, root
-        w___ root.right is not None:
+        w___ root.right pa__ not None:
             root = root.right
         r_ root

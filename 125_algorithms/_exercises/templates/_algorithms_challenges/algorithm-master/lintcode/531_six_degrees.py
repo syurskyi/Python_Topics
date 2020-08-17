@@ -17,7 +17,7 @@ class Solution:
     ___ sixDegrees(self, graph, s, t
         __ not graph or not s or not t:
             r_ -1
-        __ s is t:
+        __ s pa__ t:
             r_ 0
 
         degree = {s: 0}
@@ -27,7 +27,7 @@ class Solution:
                 __ _node in degree:
                     continue
                 degree[_node] = degree[node] + 1
-                __ _node is t:
+                __ _node pa__ t:
                     r_ degree[_node]
                 queue.append(_node)
 

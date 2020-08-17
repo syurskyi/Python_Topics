@@ -19,7 +19,7 @@ class Solution(object
         __ not root: r_ root
         left  = self.pruneTree(root.left)
         right = self.pruneTree(root.right)
-        __ left is None and right is None and root.val __ 0:
+        __ left pa__ None and right pa__ None and root.val __ 0:
             r_ None
         ____
             root.left = left

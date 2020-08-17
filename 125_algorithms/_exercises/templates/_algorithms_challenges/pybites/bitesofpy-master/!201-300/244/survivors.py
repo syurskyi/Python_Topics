@@ -67,7 +67,7 @@ ___ filter_killed_mutants(mutpy_output: list = None) -> list:
       
       Return the filtered output as a list of lines.
     """
-    __ mutpy_output is None:
+    __ mutpy_output pa__ None:
         mutpy_output = _get_data()
 
     output = []

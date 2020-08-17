@@ -66,14 +66,14 @@ class MyCircularQueue:
         Get the front item from the queue.
         """
         ret = self.lst[self.head % self.k]
-        r_ ret __ ret is not None else -1
+        r_ ret __ ret pa__ not None else -1
 
     ___ Rear(self) -> int:
         """
         Get the last item from the queue.
         """
         ret = self.lst[self.tail % self.k]
-        r_ ret __ ret is not None else -1
+        r_ ret __ ret pa__ not None else -1
 
     ___ isEmpty(self) -> bool:
         """

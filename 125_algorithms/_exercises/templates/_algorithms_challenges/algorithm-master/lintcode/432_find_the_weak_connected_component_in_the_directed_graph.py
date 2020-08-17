@@ -34,14 +34,14 @@ class Solution:
     ___ connect(self, a, b
         root_a = self.find(a)
         root_b = self.find(b)
-        __ root_a is not root_b:
+        __ root_a pa__ not root_b:
             self.nodes[root_a] = root_b
 
     ___ find(self, a
         __ a not in self.nodes:
             self.nodes[a] = a
             r_ a
-        ____ self.nodes[a] is a:
+        ____ self.nodes[a] pa__ a:
             r_ a
         self.nodes[a] = self.find(self.nodes[a])
         r_ self.nodes[a]

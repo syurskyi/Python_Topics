@@ -8,7 +8,7 @@ c_ Node:
 
 
 ___ postorder(node
-    __(node is no. N..
+    __(node pa__ no. N..
         postorder(node.left)
         postorder(node.right)
         print(node.data)

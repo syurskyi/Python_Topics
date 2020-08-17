@@ -17,7 +17,7 @@ class Solution(object
 
         BFS
         """
-        __ node is None:
+        __ node pa__ None:
             r_ None
         queue = []
         start_cloned_node = UndirectedGraphNode(node.label)

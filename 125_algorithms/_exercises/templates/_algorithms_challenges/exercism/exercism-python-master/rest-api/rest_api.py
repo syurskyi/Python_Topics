@@ -42,7 +42,7 @@ class RestAPI(object
     ___ get(self, url, payload=None
         data = json.loads(payload) __ payload else None
         __ url __ '/users':
-            __ payload is None:
+            __ payload pa__ None:
                 result = self.database
             ____
                 result = { 'users' : 

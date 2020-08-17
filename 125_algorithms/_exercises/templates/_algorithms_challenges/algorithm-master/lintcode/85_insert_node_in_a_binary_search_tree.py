@@ -38,13 +38,13 @@ class Solution:
             r_ node
 
         curr = root
-        w___ curr is not node:
+        w___ curr pa__ not node:
             __ node.val < curr.val:
-                __ curr.left is None:
+                __ curr.left pa__ None:
                     curr.left = node
                 curr = curr.left
             ____
-                __ curr.right is None:
+                __ curr.right pa__ None:
                     curr.right = node
                 curr = curr.right
 

@@ -9,11 +9,11 @@ class Solution:
     # @param k, an integer
     # @return a ListNode
     ___ rotateRight(self, head, k
-        __ head is None:
+        __ head pa__ None:
             r_ None
         n = 0
         h = head
-        w___ head is not None:
+        w___ head pa__ not None:
             n += 1
             head = head.next
         k = k % n
@@ -22,14 +22,14 @@ class Solution:
         res = h  # Head of result
         prev = h  # Previous node of result
         i = 0
-        w___ res is not None:
+        w___ res pa__ not None:
             __ i __ n - k:
                 break
             prev = res
             res = res.next
             i += 1
         end = res
-        w___ end.next is not None:
+        w___ end.next pa__ not None:
             end = end.next
         end.next = h
         prev.next = None

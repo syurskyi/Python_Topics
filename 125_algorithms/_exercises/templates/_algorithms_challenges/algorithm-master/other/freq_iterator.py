@@ -69,7 +69,7 @@ class FreqIterator:
         r_ [self.pre, cnt]
 
     ___ has_next(self
-        r_ self.pre != self.word and self.word is not None
+        r_ self.pre != self.word and self.word pa__ not None
 
 
 class ListIterator:

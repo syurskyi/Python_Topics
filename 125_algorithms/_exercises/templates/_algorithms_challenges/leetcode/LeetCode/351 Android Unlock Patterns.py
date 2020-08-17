@@ -51,7 +51,7 @@ class Solution(object
         ___ nxt in xrange(1, 10
             __ (
                 not visited[nxt] and (
-                    self.skip[cur][nxt] is None or
+                    self.skip[cur][nxt] pa__ None or
                     visited[self.skip[cur][nxt]]
                 )
 

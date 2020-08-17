@@ -68,13 +68,13 @@ class MyCalendar:
 
         __ e <= node.s:
             left = self.insert(node.left, s, e)
-            __ left is None:
+            __ left pa__ None:
                 r_ None
             node.left = left
             r_ node
         ____ s >= node.e:
             right = self.insert(node.right, s, e)
-            __ right is None:
+            __ right pa__ None:
                 r_ None
             node.right = right
             r_ node
@@ -83,7 +83,7 @@ class MyCalendar:
 
     ___ book(self, start: int, end: int) -> bool:
         ret = self.insert(self.root, start, end)
-        __ ret is None:
+        __ ret pa__ None:
             r_ False
 
         self.root = ret

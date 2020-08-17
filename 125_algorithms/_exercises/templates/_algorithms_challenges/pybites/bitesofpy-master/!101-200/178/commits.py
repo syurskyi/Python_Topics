@@ -36,7 +36,7 @@ ___ get_min_max_amount_of_commits(commit_log: str = commits,
         ___ x in log_regex.findall(cl.read()):
             c += 1
             dt = parse(x[0])
-            __ year is None or year __ dt.year:
+            __ year pa__ None or year __ dt.year:
                 log += Counter({(YEAR_MONTH.format(y=dt.year, m=dt.month)): int('0' + x[1]) - int('0' + x[2])})
     lst = sorted([(k, v) ___ k, v in log.items()], key=lambda x: x[1])
     r_ lst[0][0], lst[-1][0]

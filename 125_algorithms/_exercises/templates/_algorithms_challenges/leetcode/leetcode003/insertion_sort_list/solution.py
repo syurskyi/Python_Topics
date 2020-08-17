@@ -10,15 +10,15 @@ class Solution:
     ___ insertionSortList(self, head
         h = head  # h is the temporary head node
         # First node of h
-        __ head is not None:
+        __ head pa__ not None:
             head = head.next
             h.next = None
-        w___ head is not None:
+        w___ head pa__ not None:
             next_node = head.next
             # Insertion sort
             current = h
             prev = h
-            w___ current is not None and head.val > current.val:
+            w___ current pa__ not None and head.val > current.val:
                 prev = current
                 current = current.next
             # head is smaller than the head node of h

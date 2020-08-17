@@ -11,7 +11,7 @@ class Solution(object
         :type t: str
         :rtype: bool
         """
-        __ s is None or t is None:
+        __ s pa__ None or t pa__ None:
             r_ False
         m, n = le.(t), le.(s)
         __ abs(m-n) > 1:

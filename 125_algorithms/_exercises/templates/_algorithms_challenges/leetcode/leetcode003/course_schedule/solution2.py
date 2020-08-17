@@ -41,7 +41,7 @@ class Solution(object
 
         ___ u in range(numCourses
             __ u in self.unvisited:
-                __ self.visit(u) is False:
+                __ self.visit(u) pa__ False:
                     r_ False
         r_ True
 
@@ -52,7 +52,7 @@ class Solution(object
             self.unvisited.remove(u)
             self.visiting.add(u)
             ___ v in self.graph[u]:
-                __ self.visit(v) is False:
+                __ self.visit(v) pa__ False:
                     r_ False
             self.visiting.remove(u)
             self.visited.add(u)

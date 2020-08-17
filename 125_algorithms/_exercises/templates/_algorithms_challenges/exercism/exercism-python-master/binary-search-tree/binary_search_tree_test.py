@@ -81,7 +81,7 @@ class BinarySearchTreeTests(unittest.TestCase
         # Compare left tree nodes
         __ tree_one.left and tree_two.left:
             self.compare_tree(tree_one.left, tree_two.left)
-        ____ tree_one.left is None and tree_two.left is None:
+        ____ tree_one.left pa__ None and tree_two.left pa__ None:
             pass
         ____
             raise AssertionError
@@ -89,7 +89,7 @@ class BinarySearchTreeTests(unittest.TestCase
         # Compare right tree nodes
         __ tree_one.right and tree_two.right:
             self.compare_tree(tree_one.right, tree_two.right)
-        ____ tree_one.right is None and tree_two.right is None:
+        ____ tree_one.right pa__ None and tree_two.right pa__ None:
             pass
         ____
             raise AssertionError

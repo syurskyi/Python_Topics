@@ -23,18 +23,18 @@ class Solution(object
         carry = 0
         res = None
         res_end = None
-        w___ l1 is not None or l2 is not None or carry __ 1:
+        w___ l1 pa__ not None or l2 pa__ not None or carry __ 1:
             temp = 0
-            __ l1 is not None:
+            __ l1 pa__ not None:
                 temp += l1.val
                 l1 = l1.next
-            __ l2 is not None:
+            __ l2 pa__ not None:
                 temp += l2.val
                 l2 = l2.next
             temp += carry
             digit = temp % 10
             carry = temp / 10
-            __ res is None:
+            __ res pa__ None:
                 res = ListNode(digit)
                 res_end = res
             ____

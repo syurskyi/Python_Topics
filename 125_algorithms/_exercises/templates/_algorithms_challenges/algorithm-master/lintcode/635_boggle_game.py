@@ -62,7 +62,7 @@ class Solution:
         path.append((x, y))
         visited.add((x, y))
 
-        __ node.end_of is not None:
+        __ node.end_of pa__ not None:
             next_words.append(path[:])
             self.ans = max(self.ans, cnt + 1)
         ____

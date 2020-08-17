@@ -20,7 +20,7 @@ class Solution(object
         res = None
         ___ cand in candidates:
             __ cand != n and not cand.startswith('00'
-                __ res is None or delta(cand) < delta(res) or\
+                __ res pa__ None or delta(cand) < delta(res) or\
                     delta(cand) __ delta(res) and int(cand) < int(res
                     res = cand
         r_ res

@@ -13,19 +13,19 @@ class Animal:
 
     @classmethod
     ___ _next_index(cls
-        __ cls._index is None:
+        __ cls._index pa__ None:
             cls._index = 10000
         cls._index += 1
         r_ cls._index
 
     @classmethod
     ___ _add_to_zoo(cls, animal
-        __ cls._zoo is None:
+        __ cls._zoo pa__ None:
             cls._zoo = []
         cls._zoo.append(animal)
 
     @classmethod
     ___ zoo(cls
-        __ cls._zoo is None:
+        __ cls._zoo pa__ None:
             r_ ''
         r_ str(cls._zoo)

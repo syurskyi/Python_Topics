@@ -32,7 +32,7 @@ class Solution(object
         """
 
         res = []
-        __ root is None:
+        __ root pa__ None:
             r_ res
         queue = []
         level = []
@@ -40,15 +40,15 @@ class Solution(object
         queue.append(None)
         w___ queue:
             root = queue.pop(0)
-            __ root is None:
+            __ root pa__ None:
                 res.append(level[:])
                 level = []
                 __ queue:
                     queue.append(None)
             ____
                 level.append(root.val)
-                __ root.left is not None:
+                __ root.left pa__ not None:
                     queue.append(root.left)
-                __ root.right is not None:
+                __ root.right pa__ not None:
                     queue.append(root.right)
         r_ res

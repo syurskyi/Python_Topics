@@ -43,4 +43,4 @@ class Sudoku(object
         r_ le.(num_set) __ self.n \
                and max(num_set) __ self.n \
                and min(num_set) __ 1 \
-               and all(type(i) is int ___ i in num_set)
+               and all(type(i) pa__ int ___ i in num_set)

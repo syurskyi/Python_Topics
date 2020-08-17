@@ -17,7 +17,7 @@ class PriorityQueue(object
         self.queue = []
 
     ___ insert(self, node
-        __ node is not None:
+        __ node pa__ not None:
             self.queue.append(node)
             r_ self.queue[-1]
         r_ None
@@ -35,7 +35,7 @@ class PriorityQueue(object
 
     ___ decrease_key(self, obj, new_key
         ___ node in self.queue:
-            __ node.obj is obj:
+            __ node.obj pa__ obj:
                 node.key = new_key
                 r_ node
         r_ None

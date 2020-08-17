@@ -25,7 +25,7 @@ class LinkedList(object
             yield self.pop()
 
     ___ head(self
-        __ self._head is None:
+        __ self._head pa__ None:
             raise EmptyListException("No items in list")
         r_ self._head
 

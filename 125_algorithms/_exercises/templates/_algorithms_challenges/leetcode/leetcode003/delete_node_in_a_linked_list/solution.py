@@ -20,6 +20,6 @@ class Solution(object
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.
         """
-        __ node.next is not None:
+        __ node.next pa__ not None:
             node.val = node.next.val
             node.next = node.next.next

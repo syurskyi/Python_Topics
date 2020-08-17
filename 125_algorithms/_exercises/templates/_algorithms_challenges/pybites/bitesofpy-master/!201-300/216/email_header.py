@@ -33,4 +33,4 @@ ___ get_email_details(header: str) -> dict:
                 (?:.*\n)*
                 ^Date:\s*(?P<date>.*?)\s+[-+]"""
     results = re.search(regex, header, re.MULTILINE | re.VERBOSE)
-    r_ results.groupdict() __ results is not None else results
+    r_ results.groupdict() __ results pa__ not None else results

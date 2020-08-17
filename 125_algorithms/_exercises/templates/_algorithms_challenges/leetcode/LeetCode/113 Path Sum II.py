@@ -47,7 +47,7 @@ class Solution:
         su. = su. - root.val
         cur_path.append(root.val)
         # terminal condition
-        __ sum__0 and root.left is None and root.right is None:
+        __ sum__0 and root.left pa__ None and root.right pa__ None:
             result.append(list(cur_path))  # new copy
             r_
 

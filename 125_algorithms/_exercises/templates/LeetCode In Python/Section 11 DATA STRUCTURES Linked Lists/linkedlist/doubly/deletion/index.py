@@ -64,7 +64,7 @@ c_ LinkedList:
         count _ 0
 
         # Iterate the list and increment the count
-        w___ (temp is no. N..
+        w___ (temp pa__ no. N..
             temp _ temp.next
             count _ count + 1
 
@@ -85,7 +85,7 @@ c_ LinkedList:
         r_ .head
 
       __(count __ index
-        w___(temp.next is no. N.. a.. temp.next.next is no. N..
+        w___(temp.next pa__ no. N.. a.. temp.next.next pa__ no. N..
           temp _ temp.next
          # 1 => 2 => 3 => 4
         temp.next _ N..

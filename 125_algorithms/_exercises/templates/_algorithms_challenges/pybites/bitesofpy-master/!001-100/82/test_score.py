@@ -7,8 +7,8 @@ ___ test_enum_content(
 
 
 ___ test_equality_comparison(
-    assert Score.BEGINNER is Score.BEGINNER
-    assert Score.INTERMEDIATE is not Score.ADVANCED
+    assert Score.BEGINNER pa__ Score.BEGINNER
+    assert Score.INTERMEDIATE pa__ not Score.ADVANCED
 
 
 ___ test_str_using_thumbsup(

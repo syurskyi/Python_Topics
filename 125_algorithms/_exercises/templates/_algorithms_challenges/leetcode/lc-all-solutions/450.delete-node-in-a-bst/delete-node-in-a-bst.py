@@ -19,9 +19,9 @@ class Solution(object
         w___ p.left:
           p = p.left
         p.left = root.left
-      __ root is pre.left:
+      __ root pa__ pre.left:
         pre.left = root.right or root.left
-      __ root is pre.right:
+      __ root pa__ pre.right:
         pre.right = root.right or root.left
       root.left = None
 

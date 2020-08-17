@@ -18,7 +18,7 @@ ___ hexa(hexstring
     except KeyError:
         # not a valid hexchar
         hex_of_lastseen = None
-    __ hex_of_lastseen is None:
+    __ hex_of_lastseen pa__ None:
         # hexstring was empty or triggered KeyError
         raise ValueError('Invalid hexadecimal string')
     r_ result

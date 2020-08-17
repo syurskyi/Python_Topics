@@ -23,14 +23,14 @@ class Solution(object
 
         Recursive (Time Limit Exceeded)
         """
-        __ head is None:
+        __ head pa__ None:
             r_ None
         ____
             rev_rest = self.reverseList(head.next)
             current = rev_rest
-            __ current is None:
+            __ current pa__ None:
                 r_ head
-            w___ current and current.next is not None:
+            w___ current and current.next pa__ not None:
                 current = current.next
             current.next = head
             head.next = None

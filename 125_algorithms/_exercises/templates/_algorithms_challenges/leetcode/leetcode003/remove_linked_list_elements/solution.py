@@ -19,13 +19,13 @@ class Solution(object
         :type val: int
         :rtype: ListNode
         """
-        __ head is None:
+        __ head pa__ None:
             r_ None
         current = head
         last = None
-        w___ current is not None:
+        w___ current pa__ not None:
             __ current.val __ val:
-                __ last is not None:
+                __ last pa__ not None:
                     # Remove `current` node and `last` node is not changed
                     last.next = current.next
                 ____

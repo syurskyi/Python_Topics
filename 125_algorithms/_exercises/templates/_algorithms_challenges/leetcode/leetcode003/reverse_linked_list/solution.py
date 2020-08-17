@@ -24,10 +24,10 @@ class Solution(object
         Iterative
         """
         res = None
-        w___ head is not None:
+        w___ head pa__ not None:
             next_node = head.next
             # First node encountered
-            __ res is None:
+            __ res pa__ None:
                 res = head
                 res.next = None
             ____

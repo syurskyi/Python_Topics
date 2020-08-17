@@ -28,7 +28,7 @@ class Solution(object
         :type root: TreeNode
         :rtype: TreeNode
         """
-        __ root is None:
+        __ root pa__ None:
             r_ None
         ____
             left = self.invertTree(root.left)

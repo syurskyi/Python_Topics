@@ -25,7 +25,7 @@ class Solution(object
             ___ c in ln:
                 __ prev __ c:
                     count += 1
-                __ prev is not None and prev != c:
+                __ prev pa__ not None and prev != c:
                     tn.append(str(count))
                     tn.append(str(prev))
                     count = 1

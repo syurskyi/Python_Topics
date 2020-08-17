@@ -8,23 +8,23 @@ class Solution:
     # @param a ListNode
     # @return a ListNode
     ___ swapPairs(self, head
-        __ head is None:
+        __ head pa__ None:
             r_ head
         res = None
         res_end = None
         temp = None
         temp_end = None
         i = 1
-        w___ head is not None:
+        w___ head pa__ not None:
             next_node = head.next
             # Append current node to temp list
-            __ temp is None:
+            __ temp pa__ None:
                 temp_end = head
             head.next = temp
             temp = head
             __ i % 2 __ 0:
                 # Append temp to res
-                __ res is None:
+                __ res pa__ None:
                     res = temp
                     res_end = temp_end
                 ____
@@ -33,8 +33,8 @@ class Solution:
                 temp = None
             i += 1
             head = next_node
-        __ temp is not None:
-            __ res is None:
+        __ temp pa__ not None:
+            __ res pa__ None:
                 res = temp
                 res_end = temp_end
             ____

@@ -54,7 +54,7 @@ class Solution(object
 
         ___ i in xrange(head, le.(lst)):
             ___ rest in self.gen(n-1, i+1, lst, func
-                __ rest is not None:
+                __ rest pa__ not None:
                     ret = lst[i]+rest
                     __ func(ret
                         yield ret

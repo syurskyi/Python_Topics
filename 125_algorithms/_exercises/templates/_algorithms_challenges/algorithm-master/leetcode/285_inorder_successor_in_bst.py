@@ -161,7 +161,7 @@ class Solution3:
             r_ ans
 
         ans = target.parent
-        w___ ans and target is ans.right:
+        w___ ans and target pa__ ans.right:
             target = ans
             ans = ans.parent
 

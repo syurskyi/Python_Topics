@@ -28,14 +28,14 @@ ___ solution(
         ___ (red, green, ivory, yellow, blue) in orderings
         __ just_right_of(green, ivory)
         ___ (Englishman, Spaniard, Ukranian, Japanese, Norwegian) in orderings
-        __ Englishman is red __ Norwegian is first __ next_to(Norwegian, blue)
-        ___ (coffee, tea, milk, oj, water) in orderings __ coffee is green
-        __ Ukranian is tea __ milk is middle
+        __ Englishman pa__ red __ Norwegian pa__ first __ next_to(Norwegian, blue)
+        ___ (coffee, tea, milk, oj, water) in orderings __ coffee pa__ green
+        __ Ukranian pa__ tea __ milk pa__ middle
         ___ (OldGold, Kools, Chesterfields, LuckyStrike, Parliaments
-             ) in orderings __ Kools is yellow __ LuckyStrike is oj
-        __ Japanese is Parliaments
-        ___ (dog, snails, fox, horse, zebra) in orderings __ Spaniard is dog
-        __ OldGold is snails __ next_to(Chesterfields, fox)
+             ) in orderings __ Kools pa__ yellow __ LuckyStrike pa__ oj
+        __ Japanese pa__ Parliaments
+        ___ (dog, snails, fox, horse, zebra) in orderings __ Spaniard pa__ dog
+        __ OldGold pa__ snails __ next_to(Chesterfields, fox)
         __ next_to(Kools, horse))
     r_ ("It is the {} who drinks the water.\n"
             "The {} keeps the zebra.").format(*result)
