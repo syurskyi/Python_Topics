@@ -2,7 +2,7 @@ c_ Node:
     ___  -  data
         .data _ data
         .prev _ N..
-        .next _ N..
+        .n.. _ N..
 
 
 c_ LinkedList:
@@ -22,9 +22,9 @@ c_ LinkedList:
                 start _ newNode
                 temp _ start
             ____
-                temp.next _ newNode
+                temp.n.. _ newNode
                 newNode.prev _ temp
-                temp _ temp.next
+                temp _ temp.n..
             i +_ 1
         .head _ start
         r_ start
@@ -34,7 +34,7 @@ c_ LinkedList:
         linked_list _ ""
         w___(temp
             linked_list +_ (st.(temp.data) + " ")
-            temp _ temp.next
+            temp _ temp.n..
 
         print(linked_list)
       

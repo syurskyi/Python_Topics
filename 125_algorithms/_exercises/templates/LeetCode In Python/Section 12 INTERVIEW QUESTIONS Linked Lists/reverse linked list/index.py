@@ -9,8 +9,8 @@ c_ Solution:
     ___ reverseList head: ListNode)  ListNode:
         node _ N..
         w___(head pa__ no. N..
-            next _ head.next
-            head.next _ node
+            n.. _ head.n..
+            head.n.. _ node
             node _ head
-            head _ next
+            head _ n..
         r_ node

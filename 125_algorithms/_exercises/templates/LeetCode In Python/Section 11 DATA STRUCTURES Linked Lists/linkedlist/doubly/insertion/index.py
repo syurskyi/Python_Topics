@@ -2,7 +2,7 @@ c_ Node:
     ___  -  data
         .data _ data
         .prev _ N..
-        .next _ N..
+        .n.. _ N..
 
 
 c_ LinkedList:
@@ -22,9 +22,9 @@ c_ LinkedList:
                 start _ newNode
                 temp _ start
             ____
-                temp.next _ newNode
+                temp.n.. _ newNode
                 newNode.prev _ temp
-                temp _ temp.next
+                temp _ temp.n..
             i +_ 1
         .head _ start
         r_ start
@@ -34,7 +34,7 @@ c_ LinkedList:
         linked_list _ ""
         w___(temp
             linked_list +_ (st.(temp.data) + " ")
-            temp _ temp.next
+            temp _ temp.n..
 
         print(linked_list)
 
@@ -42,7 +42,7 @@ c_ LinkedList:
         temp _ .head
         count _ 0
         w___(temp pa__ no. N..
-            temp _ temp.next
+            temp _ temp.n..
             count +_ 1
         r_ count
 
@@ -60,30 +60,30 @@ c_ LinkedList:
         newNode _ Node(value)
 
         __(index __ 1
-            newNode.next _ temp
+            newNode.n.. _ temp
             temp.prev _ newNode
             .head _ newNode
             r_ .head
         
         __(index __ count +1
-            w___(temp.next pa__ no. N..
-                temp _ temp.next
+            w___(temp.n.. pa__ no. N..
+                temp _ temp.n..
 
-            temp.next _ newNode
+            temp.n.. _ newNode
             newNode.prev _ temp
             r_ .head
         
         i _ 1
         w___(i < index-1
-            temp _ temp.next
+            temp _ temp.n..
             i+_1
         
-        nodeAtTarget _ temp.next
+        nodeAtTarget _ temp.n..
 
-        newNode.next _ nodeAtTarget
+        newNode.n.. _ nodeAtTarget
         nodeAtTarget.prev _ newNode
 
-        temp.next _ newNode
+        temp.n.. _ newNode
         newNode.prev _ temp
 
         r_ .head

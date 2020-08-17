@@ -2,7 +2,7 @@ c_ Node:
 
     ___  -  data
         .data _ data
-        .next _ N..
+        .n.. _ N..
 
 
 c_ LinkedList:
@@ -15,7 +15,7 @@ c_ LinkedList:
         linked_list _ ""
         w___(temp
             linked_list +_ (st.(temp.data) + " ")
-            temp _ temp.next
+            temp _ temp.n..
         print(linked_list)
 
     ___ deleteNode key
@@ -23,16 +23,16 @@ c_ LinkedList:
         __(temp pa__ N..
             r_
         __(temp.data __ key
-            .head _ temp.next
+            .head _ temp.n..
             temp _ N..
             r_
 
-        w___(temp.next.data !_ key
-            temp _ temp.next
+        w___(temp.n...data !_ key
+            temp _ temp.n..
 
-        target_node _ temp.next
-        temp.next _ target_node.next
-        target_node.next _ N..
+        target_node _ temp.n..
+        temp.n.. _ target_node.n..
+        target_node.n.. _ N..
 
 
 # List Structure : 5 => 1 => 3 => 7
@@ -44,9 +44,9 @@ second_node _ Node(1)
 third_node _ Node(3)
 fourth_node _ Node(7)
 
-linked_list.head.next _ second_node
-second_node.next _ third_node
-third_node.next _ fourth_node
+linked_list.head.n.. _ second_node
+second_node.n.. _ third_node
+third_node.n.. _ fourth_node
 
 linked_list.deleteNode(3)
 linked_list.printList()

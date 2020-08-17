@@ -16,17 +16,17 @@ c_ Solution:
             su. _ carry
             __(l1!_None
                 su.+_l1.val
-                l1 _ l1.next
+                l1 _ l1.n..
             __(l2!_None
                 su.+_l2.val
                 l2 _ l2.val
             
             carry _ in.(su./10)
-            pointer.next  _ ListNode(su.%10)
+            pointer.n..  _ ListNode(su.%10)
 
-            pointer _ pointer.next
+            pointer _ pointer.n..
         
         __(carry>0
-            pointer.next _ ListNode(carry)
+            pointer.n.. _ ListNode(carry)
         
-        r_ ans.next
+        r_ ans.n..

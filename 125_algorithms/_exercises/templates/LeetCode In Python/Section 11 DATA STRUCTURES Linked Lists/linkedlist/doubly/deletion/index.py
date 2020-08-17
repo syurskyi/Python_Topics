@@ -8,7 +8,7 @@ c_ Node:
     ___  -  data
         .data _ data
         .prev _ N..
-        .next _ N..
+        .n.. _ N..
 
 
 # Linked List class
@@ -36,9 +36,9 @@ c_ LinkedList:
                 temp _ start
 
             ____
-                temp.next _ newNode
+                temp.n.. _ newNode
                 newNode.prev _ temp
-                temp _ temp.next
+                temp _ temp.n..
             i _ i + 1
         .head _ start
         r_ start
@@ -48,7 +48,7 @@ c_ LinkedList:
         linked_list _ ""
         w___(temp
             linked_list +_ (st.(temp.data) + " ")
-            temp _ temp.next
+            temp _ temp.n..
         print(linked_list)
 
     # Function to count nunmber of
@@ -65,7 +65,7 @@ c_ LinkedList:
 
         # Iterate the list and increment the count
         w___ (temp pa__ no. N..
-            temp _ temp.next
+            temp _ temp.n..
             count _ count + 1
 
         r_ count
@@ -80,32 +80,32 @@ c_ LinkedList:
         r_ temp
 
       __(index __ 1
-        temp _ temp.next
+        temp _ temp.n..
         .head _ temp
         r_ .head
 
       __(count __ index
-        w___(temp.next pa__ no. N.. a.. temp.next.next pa__ no. N..
-          temp _ temp.next
+        w___(temp.n.. pa__ no. N.. a.. temp.n...n.. pa__ no. N..
+          temp _ temp.n..
          # 1 => 2 => 3 => 4
-        temp.next _ N..
+        temp.n.. _ N..
         r_ .head
       
 
       i _ 1
       w___(i<index-1
-        temp _ temp.next
+        temp _ temp.n..
         i+_1
       
 
       prevNode _ temp
-      nodeAtTarget _ temp.next
-      nextNode _ nodeAtTarget.next
+      nodeAtTarget _ temp.n..
+      nextNode _ nodeAtTarget.n..
 
       # 1 => 2 => 3 => 4
 
       nextNode.prev _ prevNode
-      prevNode.next _ nextNode
+      prevNode.n.. _ nextNode
 
       r_ .head
 

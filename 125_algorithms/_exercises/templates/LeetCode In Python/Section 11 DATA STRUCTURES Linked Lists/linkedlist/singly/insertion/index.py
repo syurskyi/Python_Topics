@@ -2,7 +2,7 @@ c_ Node:
 
     ___  -  data
         .data _ data
-        .next _ N..
+        .n.. _ N..
 
 
 c_ LinkedList:
@@ -15,14 +15,14 @@ c_ LinkedList:
         linked_list _ ""
         w___(temp
             linked_list +_ (st.(temp.data) + " ")
-            temp _ temp.next
+            temp _ temp.n..
         print(linked_list)
 
     # list start at 0
     ___ insertNode val, pos
         target _ Node(val)
         __(pos __ 0
-            target.next _ .head
+            target.n.. _ .head
             .head _ target
             r_
 
@@ -30,15 +30,15 @@ c_ LinkedList:
             temp _ .head
             count _ 1
             w___(count < pos
-                temp _ temp.next
+                temp _ temp.n..
                 count +_ 1
             r_ temp
 
         prev _ getPrev(pos)
-        nextNode _ prev.next
+        nextNode _ prev.n..
 
-        prev.next _ target
-        target.next _ nextNode
+        prev.n.. _ target
+        target.n.. _ nextNode
 
 
 # List Structure : 5 => 1 => 3 => 7
@@ -49,9 +49,9 @@ second_node _ Node(1)
 third_node _ Node(3)
 fourth_node _ Node(7)
 
-linked_list.head.next _ second_node
-second_node.next _ third_node
-third_node.next _ fourth_node
+linked_list.head.n.. _ second_node
+second_node.n.. _ third_node
+third_node.n.. _ fourth_node
 
 linked_list.insertNode(2, 2)
 linked_list.printList()

@@ -11,20 +11,20 @@ c_ Solution:
 		
 		w___(l1 a.. l2
 			__(l1.val>l2.val
-				cur.next _ l2
-				l2 _ l2.next
+				cur.n.. _ l2
+				l2 _ l2.n..
 			____
-				cur.next _ l1
-				l1 _ l1.next
-			cur _ cur.next
+				cur.n.. _ l1
+				l1 _ l1.n..
+			cur _ cur.n..
 			
 		w___(l1
-			cur.next _ l1
-			l1 _ l1.next
-			cur _ cur.next
+			cur.n.. _ l1
+			l1 _ l1.n..
+			cur _ cur.n..
 		
 		w___(l2
-			cur.next _ l2
-			l2 _ l2.next
-			cur _ cur.next
-		r_ ans.next
+			cur.n.. _ l2
+			l2 _ l2.n..
+			cur _ cur.n..
+		r_ ans.n..

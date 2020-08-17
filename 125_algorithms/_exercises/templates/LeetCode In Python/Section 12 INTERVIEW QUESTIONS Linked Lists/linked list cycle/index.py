@@ -3,9 +3,9 @@ c_ Solution:
         hare _ head
         turtle _ head
 
-        w___ turtle a.. hare a.. hare.next:
-            hare _ hare.next.next
-            turtle _ turtle.next
+        w___ turtle a.. hare a.. hare.n..:
+            hare _ hare.n...n..
+            turtle _ turtle.n..
             __(turtle __ hare
                 r_ T..
         r_ F..

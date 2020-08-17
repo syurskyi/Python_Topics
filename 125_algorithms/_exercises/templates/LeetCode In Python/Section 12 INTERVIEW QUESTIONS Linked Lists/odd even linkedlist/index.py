@@ -10,15 +10,15 @@ c_ Solution:
             r_ head
 
         odd _ head
-        even _ odd.next
+        even _ odd.n..
         evenList _ even
 
-        w___(even a.. even.next
-            odd.next _ even.next
-            odd _ odd.next
+        w___(even a.. even.n..
+            odd.n.. _ even.n..
+            odd _ odd.n..
 
-            even.next _ odd.next
-            even _ even.next
+            even.n.. _ odd.n..
+            even _ even.n..
 
-        odd.next _ evenList
+        odd.n.. _ evenList
         r_ head
