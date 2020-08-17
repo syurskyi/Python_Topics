@@ -43,7 +43,7 @@ class Solution(object
         __ distance.get(nbr, -2) + 1 __ distance[beginWord]:
           path.append(nbr)
           dfs(nbr, endWord, wordList, path, res, distance)
-          path.pop()
+          path.p..
 
     res = []
     distance = bfs(endWord, beginWord, wordlist)

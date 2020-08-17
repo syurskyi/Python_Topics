@@ -20,10 +20,10 @@ class MinStack:
         __ not self.stack:
             r_ -1
 
-        x = self.stack.pop()
+        x = self.stack.p..
 
         __ self.mins and x __ self.mins[-1]:
-            self.mins.pop()
+            self.mins.p..
 
         r_ x
 

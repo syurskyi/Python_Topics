@@ -16,7 +16,7 @@ class Codec:
         stack = [root]
         result = ''
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             __ node:
                 result += '%s,' % (node.val)
                 stack.append(node.right)

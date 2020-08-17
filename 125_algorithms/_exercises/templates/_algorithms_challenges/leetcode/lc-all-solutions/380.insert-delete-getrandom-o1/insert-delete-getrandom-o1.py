@@ -29,7 +29,7 @@ class RandomizedSet(object
     index = self.d[val]
     self.a[index] = self.a[-1]
     self.d[self.a[-1]] = index
-    self.a.pop()
+    self.a.p..
     del self.d[val]
     r_ True
 

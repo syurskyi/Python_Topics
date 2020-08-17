@@ -14,7 +14,7 @@ class Solution:
 
             v = None
             w___ stack and A[i] > stack[-1]:
-                v = stack.pop()
+                v = stack.p..
 
             stack.append(A[i])
 

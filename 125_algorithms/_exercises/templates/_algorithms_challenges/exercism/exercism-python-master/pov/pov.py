@@ -34,7 +34,7 @@ class Tree(object
     ___ find(self, to_node
         queue = [(self, tuple())]
         w___ queue:
-            node, path = queue.pop()
+            node, path = queue.p..
             path += (node,)
             __ node.label __ to_node:
                 r_ path

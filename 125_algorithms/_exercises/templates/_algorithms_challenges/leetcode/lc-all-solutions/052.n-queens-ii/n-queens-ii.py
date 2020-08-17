@@ -13,7 +13,7 @@ class Solution(object
         __ i not in path and isValidQueen(path, i
           path.append(i)
           res += dfs(path, n)
-          path.pop()
+          path.p..
       r_ res
 
     ___ isValidQueen(path, k

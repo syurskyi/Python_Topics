@@ -109,7 +109,7 @@ class Solution:
             ans = max(ans, self.largestRectangleArea(H))
 
             # To remove the trick `0`
-            H.pop()
+            H.p..
 
         r_ ans
 
@@ -126,7 +126,7 @@ class Solution:
 
         ___ right in range(le.(H)):
             w___ I and H[I[-1]] >= H[right]:
-                height = H[I.pop()]
+                height = H[I.p..]
                 left = I[-1] __ I else -1
                 area = max(
                     area,

@@ -17,7 +17,7 @@ ___ line in data:
             __ le.(bracketlist) __ 0:
                 flag = False
                 break
-            last_b = bracketlist.pop()
+            last_b = bracketlist.p..
             __ leftB.index(last_b) != rightB.index(char
                 flag = False
                 break

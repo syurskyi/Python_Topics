@@ -10,7 +10,7 @@ class Solution(object
     nums *= 2
     ___ i, num in enumerate(nums
       w___ stack and nums[stack[-1]] < num:
-        top = stack.pop()
+        top = stack.p..
         __ top < n:
           ans[top] = num
       stack.append(i)

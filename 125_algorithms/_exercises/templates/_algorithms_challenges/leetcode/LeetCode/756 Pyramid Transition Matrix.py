@@ -98,7 +98,7 @@ class Solution:
                 # Too deep - check till top
                 __ self.dfs(T, nxt_level, 0, []
                     r_ True
-            nxt_level.pop()
+            nxt_level.p..
 
         r_ False
 

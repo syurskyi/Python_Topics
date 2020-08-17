@@ -12,21 +12,21 @@ class Solution:
                 w = i - last - 1
                 area = w * A[last]
                 w___ stack:
-                    area -= A[stack.pop()]
+                    area -= A[stack.p..]
                 res += area
                 last = i
             ____
                 stack.append(i)
         # Process remaining bars
         __ stack:
-            r = stack.pop()  # Rightmost effective bar
+            r = stack.p..  # Rightmost effective bar
             w___ stack:
                 __ A[stack[-1]] >= A[r]:
-                    r = stack.pop()
+                    r = stack.p..
                 ____
                     break
             w___ stack:
-                i = stack.pop()
+                i = stack.p..
                 __ A[i] < A[r]:
                     res += A[r] - A[i]
                 ____

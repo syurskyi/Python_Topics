@@ -58,7 +58,7 @@ class Solution:
         stk.append(root)
         cur = None
         w___ stk:
-            cur = stk.pop()
+            cur = stk.p..
             post.append(cur)
             __ cur.left:
                 stk.append(cur.left)
@@ -66,7 +66,7 @@ class Solution:
                 stk.append(cur.right)
 
         w___ post:
-            cur = post.pop()
+            cur = post.p..
             cur.left, cur.right = cur.right, cur.left
 
         r_ cur

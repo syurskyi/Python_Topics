@@ -23,7 +23,7 @@ class Solution(object
         carry = 0
         nextNode = None
         w___ stack1 and stack2:
-            v1, v2 = stack1.pop(), stack2.pop()
+            v1, v2 = stack1.p.., stack2.p..
             val = v1 + v2 + carry
             __ val >= 10:
                 val -= 10
@@ -36,7 +36,7 @@ class Solution(object
         __ stack2 and not stack1:
             stack1, stack2 = stack2, stack1
         w___ stack1:
-            val = stack1.pop() + carry
+            val = stack1.p.. + carry
             __ val >= 10:
                 val -= 10
                 carry = 1

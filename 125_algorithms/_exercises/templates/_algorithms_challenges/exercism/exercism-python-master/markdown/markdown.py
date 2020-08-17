@@ -13,7 +13,7 @@ ___ parse_markdown(markdown
                 le.(header_match.group(1)), header_match.group(2)))
         ____ line.startswith('* '
             __ res and res[-1] __ '</ul>':
-                res.pop()
+                res.p..
             ____
                 res.append('<ul>')
             res.append('<li>' + line[2:] + '</li>')

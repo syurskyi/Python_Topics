@@ -43,7 +43,7 @@ class LinkedList(object
 
     ___ shift(self
         self.head = self.head.previous
-        value = self.pop()
+        value = self.p..
         r_ value
 
     ___ unshift(self, value

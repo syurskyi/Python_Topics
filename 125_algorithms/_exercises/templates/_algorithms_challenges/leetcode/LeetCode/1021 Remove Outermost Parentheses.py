@@ -81,7 +81,7 @@ class Solution:
             __ e __ "(":
                 stk.append(e)
             ____
-                prev = stk.pop()
+                prev = stk.p..
                 __ stk:
                     cur_q.appendleft(prev)
                     cur_q.append(e)

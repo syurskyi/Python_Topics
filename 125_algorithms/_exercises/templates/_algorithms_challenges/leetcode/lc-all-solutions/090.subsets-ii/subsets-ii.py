@@ -15,7 +15,7 @@ class Solution(object
           visited[i] = 1
           path.append(nums[i])
           dfs(i + 1, nums, path, res, visited)
-          path.pop()
+          path.p..
           del visited[i]
 
     nums.sort()

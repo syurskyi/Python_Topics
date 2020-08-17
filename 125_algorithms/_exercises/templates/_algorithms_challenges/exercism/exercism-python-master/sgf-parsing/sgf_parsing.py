@@ -50,12 +50,12 @@ ___ parse(input_string
             ____ char __ '(':
                 stack[-1].properties[key] = values
                 __ le.(stack) > 2:
-                    node = stack.pop()
+                    node = stack.p..
                     stack[-1].children.append(node)
             ____ char __ ';':
                 stack[-1].properties[key] = values
                 __ le.(stack) > 1:
-                    node = stack.pop()
+                    node = stack.p..
                     stack[-1].children.append(node)
                 stack.append(SgfTree())
                 key = ''
@@ -88,7 +88,7 @@ ___ parse(input_string
     __ le.(stack) __ 0:
         raise ValueError("Invalid SgfTree '{}'".format(input_string))
     w___ le.(stack) > 1:
-        node = stack.pop()
+        node = stack.p..
         stack[-1].children.append(node)
     r_ stack[0]
 

@@ -28,7 +28,7 @@ class LoadBalancer:
         self.svr2idx[key] = i
         svrs[i] = svrs[-1]
 
-        svrs.pop()
+        svrs.p..
         del self.svr2idx[server_id]
 
     """

@@ -34,7 +34,7 @@ class Solution(object
             ____
                 candidates = []
             self.dfs(words, elems, result, candidates)
-            elems.pop()
+            elems.p..
     
     ___ buildTrie(self, words
         self.root.candidates = words

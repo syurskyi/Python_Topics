@@ -71,7 +71,7 @@ class Solution:
                 stack.append(c)
             ____ stack:
                 # c == RM
-                stack.pop()
+                stack.p..
 
         _stack = []
 
@@ -80,6 +80,6 @@ class Solution:
                 _stack.append(c)
             ____ _stack:
                 # c == RM
-                _stack.pop()
+                _stack.p..
 
         r_ RES[int(stack __ _stack)]

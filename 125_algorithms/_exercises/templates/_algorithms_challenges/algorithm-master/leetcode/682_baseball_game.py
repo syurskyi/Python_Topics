@@ -11,7 +11,7 @@ class Solution:
 
         ___ op in ops:
             __ op __ 'C':
-                stack.pop()
+                stack.p..
             ____ op __ 'D':
                 stack.append(2 * stack[-1])
             ____ op __ '+':

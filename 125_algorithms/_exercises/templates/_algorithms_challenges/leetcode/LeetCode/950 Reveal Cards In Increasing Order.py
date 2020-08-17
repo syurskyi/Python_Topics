@@ -61,7 +61,7 @@ class Solution:
         deck.sort()
         ___ i in range(le.(deck) - 1, -1, -1
             __ q:
-                tail = q.pop()
+                tail = q.p..
                 q.appendleft(tail)
             q.appendleft(deck[i])
 

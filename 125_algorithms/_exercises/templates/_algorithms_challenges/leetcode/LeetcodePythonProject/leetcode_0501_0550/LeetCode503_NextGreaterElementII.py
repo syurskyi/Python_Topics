@@ -15,7 +15,7 @@ class Solution(object
         stack = list(range(n-1, -1, -1))
         ___ i in range(n-1, -1, -1
             w___ stack and nums[stack[-1]] <= nums[i]:
-                stack.pop()
+                stack.p..
             __ stack:
                 res.insert(0, nums[stack[-1]])
             ____

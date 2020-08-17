@@ -37,7 +37,7 @@ class Solution(object
             stack.append(node)
             node = node.left
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             arr.append(node.val)
             node0 = node.right
             w___ node0:

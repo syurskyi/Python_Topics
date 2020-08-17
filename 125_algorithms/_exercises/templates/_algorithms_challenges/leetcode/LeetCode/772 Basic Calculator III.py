@@ -50,10 +50,10 @@ class Solution:
                 ____ prev_op __ "-":
                     stk.append(-operand)
                 ____ prev_op __ "*":
-                    prev_operand = stk.pop()
+                    prev_operand = stk.p..
                     stk.append(prev_operand * operand)
                 ____ prev_op __ "/":
-                    prev_operand = stk.pop()
+                    prev_operand = stk.p..
                     stk.append(int(prev_operand / operand))
 
                 __ c in ("+", "-", "*", "/"

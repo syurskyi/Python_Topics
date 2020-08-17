@@ -26,7 +26,7 @@ class MinStack(object
         """
         :rtype: void
         """
-        self.stack.pop()
+        self.stack.p..
 
     ___ top(self
         """

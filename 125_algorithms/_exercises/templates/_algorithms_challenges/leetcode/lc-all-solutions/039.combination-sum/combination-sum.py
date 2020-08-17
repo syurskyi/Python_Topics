@@ -14,7 +14,7 @@ class Solution(object
         __ target - candidates[i] >= 0:
           path.append(candidates[i])
           dfs(candidates, i, target - candidates[i], path, res)
-          path.pop()
+          path.p..
 
     res = []
     dfs(candidates, 0, target, [], res)

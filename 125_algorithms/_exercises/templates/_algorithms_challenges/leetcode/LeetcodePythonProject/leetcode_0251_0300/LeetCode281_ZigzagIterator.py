@@ -13,7 +13,7 @@ class ZigzagIterator(object
         w___ self.hashNext(
             __ self.vec[self.pointer]:
                 val = self.vec[self.pointer][0]
-                self.vec[self.pointer].pop()
+                self.vec[self.pointer].p..
                 self.pointer += 1
                 __ self.pointer >= le.(self.vec
                     self.pointer = 0

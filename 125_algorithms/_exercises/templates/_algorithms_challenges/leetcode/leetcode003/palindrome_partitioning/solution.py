@@ -15,7 +15,7 @@ class Solution:
                 __ self.is_palindrome(s[:i + 1]
                     cand.append(s[:i + 1])
                     self.partition_aux(s[i + 1:], cand, res)
-                    cand.pop()
+                    cand.p..
 
     ___ is_palindrome(self, s
         left = 0

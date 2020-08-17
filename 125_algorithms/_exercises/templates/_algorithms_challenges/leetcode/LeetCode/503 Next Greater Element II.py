@@ -32,13 +32,13 @@ class Solution:
         stk = []
         ___ n in nums[::-1]:
             w___ stk and stk[-1] <= n:
-                stk.pop()
+                stk.p..
             stk.append(n)
 
         ret = []
         ___ n in nums[::-1]:
             w___ stk and stk[-1] <= n:
-                stk.pop()
+                stk.p..
             ret.append(stk[-1] __ stk else -1)
             stk.append(n)
 

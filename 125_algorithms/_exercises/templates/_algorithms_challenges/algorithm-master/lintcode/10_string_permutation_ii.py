@@ -23,4 +23,4 @@ class Solution:
                 continue
             path.append(S[i])
             self.dfs(S[:i] + S[i + 1:], ans, path)
-            path.pop()
+            path.p..

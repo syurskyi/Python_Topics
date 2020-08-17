@@ -21,7 +21,7 @@ class Solution(object
             w___ d and arr2[i] - arr2[d[0]] >= k:
                 res = min(res, i-d.pop(0))
             w___ d and arr2[i] <= arr2[d[-1]]:
-                d.pop()
+                d.p..
             d.append(i)
         r_ res __ res <= n else -1
     

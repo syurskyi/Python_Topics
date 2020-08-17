@@ -24,9 +24,9 @@ class Solution:
             __ root.val __ su.:
                 one.append(root.val)
                 res.append(one[:])
-                one.pop()
+                one.p..
         ____
             one.append(root.val)
             self.ps(root.left, su. - root.val, one, res)
             self.ps(root.right, su. - root.val, one, res)
-            one.pop()
+            one.p..

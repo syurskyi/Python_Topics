@@ -38,7 +38,7 @@ class Solution(object
       ____
         __ state __ dfa["escapeCMD"]:
           w___ stack and stack[-1][2] >= level:
-            stack.pop()
+            stack.p..
           start = i
           state = dfa["char"]
         ____ state __ dfa["init"]:

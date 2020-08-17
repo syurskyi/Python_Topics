@@ -71,7 +71,7 @@ class Solution:
             max_h = -heap.top() __ not heap.is_empty() else 0
 
             __ tmp and tmp[-1][0] __ x:
-                tmp.pop()
+                tmp.p..
             __ tmp and tmp[-1][1] __ max_h:
                 continue
             tmp.append([x, max_h])

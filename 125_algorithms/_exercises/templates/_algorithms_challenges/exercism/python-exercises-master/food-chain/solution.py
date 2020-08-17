@@ -59,5 +59,5 @@ ___ recite(start_verse, end_verse
             result += generated[i] + [""]
 
         # Pop out the last empty string
-        result.pop()
+        result.p..
         r_ result

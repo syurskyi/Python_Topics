@@ -58,7 +58,7 @@ class Solution:
             __ char __ '<':
                 queue.append(current)
             ____ char __ '>':
-                queue.pop()
+                queue.p..
             ____
                 current = TrieNode()
                 queue[-1].children[char] = current

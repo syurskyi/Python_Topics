@@ -23,7 +23,7 @@ ___ is_balanced(source, caps
                     ____
                         count[caps[i]] = 1
                 ____
-                    __ le.(stack) __ 0 or stack.pop() != caps[i - 1]:
+                    __ le.(stack) __ 0 or stack.p.. != caps[i - 1]:
                         r_ False
     r_ (le.(stack) __ 0) and ((su.([v ___ k, v in count.items()])) % 2 __ 0)
 

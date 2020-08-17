@@ -7,7 +7,7 @@ class Solution(object
     stack = []
     ___ token in tokens:
       __ token in ["+", "-", "*", "/"]:
-        b, a = stack.pop(), stack.pop()
+        b, a = stack.p.., stack.p..
         __ token __ "+":
           res = a + b
         __ token __ "-":
@@ -19,4 +19,4 @@ class Solution(object
         stack.append(res)
       ____
         stack.append(int(token))
-    r_ stack.pop()
+    r_ stack.p..

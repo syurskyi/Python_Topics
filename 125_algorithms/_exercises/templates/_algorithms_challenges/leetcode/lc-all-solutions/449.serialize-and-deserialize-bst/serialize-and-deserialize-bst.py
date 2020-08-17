@@ -15,7 +15,7 @@ class Codec:
     stack = [(1, root)]
     ans = []
     w___ stack:
-      pc, node = stack.pop()
+      pc, node = stack.p..
       __ not node:
         continue
       __ pc __ 0:

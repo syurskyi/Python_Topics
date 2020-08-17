@@ -18,7 +18,7 @@ class Solution(object
       ___ c in d.get(digit, []
         path.append(c)
         dfs(digits, index + 1, path, res, d)
-        path.pop()
+        path.p..
 
     res = []
     dfs(digits, 0, [], res, d)

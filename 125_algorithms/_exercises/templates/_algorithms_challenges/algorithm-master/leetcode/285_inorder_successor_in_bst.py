@@ -125,7 +125,7 @@ class Solution2:
                 stack.append(node)
                 node = node.left
 
-            node = stack.pop()
+            node = stack.p..
 
             __ got_target:
                 r_ node

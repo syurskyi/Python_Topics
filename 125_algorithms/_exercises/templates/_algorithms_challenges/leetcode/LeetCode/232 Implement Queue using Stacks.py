@@ -35,7 +35,7 @@ class Queue:
             w___ self.in_stk:
                 self.out_stk.append(self.in_stk.pop())
 
-        self.out_stk.pop()
+        self.out_stk.p..
 
     ___ peek(self
         """

@@ -21,7 +21,7 @@ class Solution(object
         right = dfs(root.right, s, path, res)
         __ not left and not right and s __ 0:
           res.append(path + [])
-        path.pop()
+        path.p..
         r_ True
 
     res = []

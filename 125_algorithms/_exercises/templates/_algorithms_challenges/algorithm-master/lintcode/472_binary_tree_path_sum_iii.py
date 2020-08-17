@@ -46,4 +46,4 @@ class Solution:
         __ node.right and node.right pa__ not start:
             self.find_path(node.right, node, remaining, ans, path)
 
-        path.pop()
+        path.p..

@@ -56,7 +56,7 @@ class Solution:
             r_
         stk = [root]
         w___ stk:
-            cur = stk.pop()
+            cur = stk.p..
             lst.insert(0, cur.val)  # reversely insert
             __ cur.left:
                 stk.append(cur.left)

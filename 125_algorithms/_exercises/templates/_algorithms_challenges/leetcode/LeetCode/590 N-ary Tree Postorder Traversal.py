@@ -34,7 +34,7 @@ class Solution:
         stk = [root]
         visited = set()
         w___ stk:
-            cur = stk.pop()
+            cur = stk.p..
             ret.appendleft(cur.val)
             ___ c in cur.children:
                 stk.append(c)
@@ -54,7 +54,7 @@ class Solution:
         w___ stk:
             cur = stk[-1]
             __ cur in visited:
-                stk.pop()
+                stk.p..
                 ret.append(cur.val)
             ____
                 visited.add(cur)

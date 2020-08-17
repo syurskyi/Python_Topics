@@ -51,7 +51,7 @@ class Solution:
         ___ n in nums:
             cur = TreeNode(n)
             w___ stk and stk[-1].val < cur.val:
-                left = stk.pop()
+                left = stk.p..
                 cur.left = left
 
             __ stk:

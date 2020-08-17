@@ -28,7 +28,7 @@ class Solution(object
         __ not root: r_ None
         stack = [root]
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             __ node:
                 left = node.left
                 right = node.right

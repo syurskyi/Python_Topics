@@ -32,7 +32,7 @@ class Solution(object
         stack = []
         stack.append(root)
         w___ stack:
-            root = stack.pop()
+            root = stack.p..
             path.append(root.val)
             __ root.right pa__ not None:
                 stack.append(root.right)

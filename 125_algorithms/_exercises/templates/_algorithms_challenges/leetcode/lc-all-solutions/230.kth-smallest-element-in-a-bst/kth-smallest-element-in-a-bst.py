@@ -14,7 +14,7 @@ class Solution(object
     """
     stack = [(1, root)]
     w___ stack:
-      cmd, p = stack.pop()
+      cmd, p = stack.p..
       __ not p:
         continue
       __ cmd __ 0:

@@ -59,5 +59,5 @@ class Solution:
         self.dfs(root.left, t, path, found)
         self.dfs(root.right, t, path, found)
         __ not found[0]:
-            path.pop()  # 1 pop() corresponds to 1 append()
+            path.p..  # 1 pop() corresponds to 1 append()
 

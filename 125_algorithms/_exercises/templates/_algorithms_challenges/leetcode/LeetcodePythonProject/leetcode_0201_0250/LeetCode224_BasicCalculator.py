@@ -28,7 +28,7 @@ class Solution(object
                 sign = 1
             ____ s[i] __ ')':
                 res += sign*preVal
-                res = stack.pop()*res + stack.pop()
+                res = stack.p..*res + stack.p..
                 preVal = 0
             ____ s[i] __ '+':
                 res += preVal*sign

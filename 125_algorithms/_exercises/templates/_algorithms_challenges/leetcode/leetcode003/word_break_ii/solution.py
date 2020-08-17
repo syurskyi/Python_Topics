@@ -38,7 +38,7 @@ class Solution(object
                 __ word in wordDict:
                     cand.append(word)
                     self.word_break_aux(rest, wordDict, cand, res)
-                    cand.pop()
+                    cand.p..
 
 
 s1 = "catsanddog"

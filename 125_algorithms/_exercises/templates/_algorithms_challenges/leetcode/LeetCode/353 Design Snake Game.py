@@ -48,7 +48,7 @@ class SnakeGame(object
             self.food.popleft()
             self.eat += 1
         ____
-            self.body.pop()
+            self.body.p..
             __ (x, y) in self.body or not (0 <= x < self.h and 0 <= y < self.w
                 # possible to use set to accelerate check
                 r_ -1

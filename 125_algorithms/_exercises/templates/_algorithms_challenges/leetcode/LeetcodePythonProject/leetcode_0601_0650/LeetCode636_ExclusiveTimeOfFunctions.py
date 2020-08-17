@@ -21,7 +21,7 @@ class Solution(object
             __ arr[1] __ 'start':
                 stack.append(int(arr[0]))
             ____
-                res[stack.pop()] += 1
+                res[stack.p..] += 1
                 prevTime += 1
         r_ res
     

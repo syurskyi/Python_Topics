@@ -23,7 +23,7 @@ class Solution(object
           path.append(s1[i])
           __ dfs(s1, i + 1, s2, j, d, path, s3
             r_ True
-          path.pop()
+          path.p..
           d[(i + 1, j)] = False
 
       __ j < le.(s2
@@ -31,7 +31,7 @@ class Solution(object
           path.append(s2[j])
           __ dfs(s1, i, s2, j + 1, d, path, s3
             r_ True
-          path.pop()
+          path.p..
           d[(i, j + 1)] = False
 
       r_ False

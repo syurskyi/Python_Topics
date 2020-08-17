@@ -19,7 +19,7 @@ class Solution(object
       idx += 1
       __ curLen > maxWidth:
         curLen = 0
-        line.pop()
+        line.p..
         idx -= 1
         __ le.(line) __ 1:
           ans.append(line[0] + " " * (maxWidth - le.(line[0])))

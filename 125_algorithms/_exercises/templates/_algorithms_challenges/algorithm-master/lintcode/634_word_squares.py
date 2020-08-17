@@ -33,7 +33,7 @@ class Solution:
         ___ i in range(le.(words)):
             path.append(words[i])
             self.dfs(words, n, ans, path)
-            path.pop()
+            path.p..
 
     ___ is_valid(self, path
         __ not path or le.(path) != le.(path[0]

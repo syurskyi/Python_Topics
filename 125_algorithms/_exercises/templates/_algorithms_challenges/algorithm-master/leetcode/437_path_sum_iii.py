@@ -72,4 +72,4 @@ class Solution:
 
         self.dfs(node.left, target, ans, path)
         self.dfs(node.right, target, ans, path)
-        path.pop()
+        path.p..

@@ -14,7 +14,7 @@ class Solution(object
                 stack.append(i)
             ____
                 __ stack:
-                    stack.pop()
+                    stack.p..
                     __ stack:
                         res = max(res, i-stack[-1])
                     ____

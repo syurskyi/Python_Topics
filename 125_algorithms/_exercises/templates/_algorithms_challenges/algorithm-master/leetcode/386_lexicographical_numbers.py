@@ -12,7 +12,7 @@ class Solution:
         stack = [1]
 
         w___ stack:
-            x = stack.pop()
+            x = stack.p..
             ans.append(x)
 
             # considering the case no carry up if x + 1

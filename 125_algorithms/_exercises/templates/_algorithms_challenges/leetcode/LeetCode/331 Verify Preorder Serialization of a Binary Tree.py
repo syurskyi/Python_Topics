@@ -45,14 +45,14 @@ class Solution(object
         child_cnt = 0
         w___ stk:
             __ stk[-1] __ '#':
-                stk.pop()
+                stk.p..
                 child_cnt += 1
             ____
                 child_cnt -= 2
                 __ child_cnt < 0:
                     r_ False
 
-                stk.pop()
+                stk.p..
                 child_cnt += 1
 
         r_ not stk and child_cnt __ 1
@@ -69,9 +69,9 @@ class Solution(object
                 child_stk.append(stk.pop())  # a counter is enough
             ____
                 try:
-                    child_stk.pop()
-                    child_stk.pop()
-                    stk.pop()
+                    child_stk.p..
+                    child_stk.p..
+                    stk.p..
                     child_stk.append('#')
                 except IndexError:
                     r_ False

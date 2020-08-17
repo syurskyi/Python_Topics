@@ -15,7 +15,7 @@ class Solution(object
         _stack.append(le.(stack))
         i += 1
       ____ s[i] __ ")":
-        start = _stack.pop()
+        start = _stack.p..
         j = start
         a = stack[j]
         w___ j + 2 < le.(stack
@@ -29,7 +29,7 @@ class Solution(object
           j += 2
         k = le.(stack) - start
         w___ k > 0:
-          stack.pop()
+          stack.p..
           k -= 1
         stack.append(a)
         i += 1

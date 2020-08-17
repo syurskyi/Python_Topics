@@ -40,7 +40,7 @@ class Solution(object
           path.append(child)
           __ dfs(graph, child, end, visited, path, res
             r_ True
-          path.pop()
+          path.p..
 
     graph = {}
     ___ edge in edges:

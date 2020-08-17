@@ -13,8 +13,8 @@ class Solution(object
         ____ c __ ")":
           stack.append(")")
           __ le.(stack) >= 2 and stack[-2] + stack[-1] __ "()":
-            stack.pop()
-            stack.pop()
+            stack.p..
+            stack.p..
       r_ le.(stack)
 
     ___ dfs(s, res, cache, length

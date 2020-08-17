@@ -41,4 +41,4 @@ class Solution(object
                 res.append(p)
             self.binary_tree_paths(root.left, cand, res)
             self.binary_tree_paths(root.right, cand, res)
-            cand.pop()
+            cand.p..

@@ -23,7 +23,7 @@ class Solution(object
         prev = float('-inf')
         res = float('inf')
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             res = min(res, node.val-prev)
             prev = node.val
             node0 = node.right

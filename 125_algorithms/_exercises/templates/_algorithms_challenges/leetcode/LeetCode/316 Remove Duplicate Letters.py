@@ -30,7 +30,7 @@ class Solution(object
             v = s[i]
             __ v not in stk_set:
                 w___ stk and stk[-1] > v and last_pos[self._idx(stk[-1])] > i:
-                    p = stk.pop()
+                    p = stk.p..
                     stk_set.remove(p)
                 stk.append(v)
                 stk_set.add(v)

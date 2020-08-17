@@ -14,7 +14,7 @@ class Solution(object
         ___ i in range(le.(temperatures)-1, -1, -1
             t = temperatures[i]
             w___ stack and temperatures[stack[-1]] <= t:
-                stack.pop()
+                stack.p..
             __ not stack:
                 res.insert(0, 0)
             ____

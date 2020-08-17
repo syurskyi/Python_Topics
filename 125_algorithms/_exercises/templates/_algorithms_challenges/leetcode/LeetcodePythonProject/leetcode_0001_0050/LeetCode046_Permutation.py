@@ -21,7 +21,7 @@ class Solution(object
         ___ i, num in enumerate(nums
             curr.append(num)
             self.dfs(nums[:i]+nums[i+1:], curr, res)
-            curr.pop()
+            curr.p..
     
     ___ test(self
         testCases = [

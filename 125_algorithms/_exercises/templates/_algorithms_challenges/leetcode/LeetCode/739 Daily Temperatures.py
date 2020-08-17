@@ -29,7 +29,7 @@ class Solution:
         stk = []
         ___ i in range(le.(T) - 1, -1 , -1
             w___ stk and T[stk[-1]] <= T[i]:  # disregard smaller ones
-                stk.pop()
+                stk.p..
 
             __ stk:
                 ret.appendleft(stk[-1] - i)

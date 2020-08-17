@@ -54,7 +54,7 @@ class Solution:
         cur = head
         w___ cur:
             w___ stk and stk[-1][1] < cur.val:
-                idx, _ = stk.pop()
+                idx, _ = stk.p..
                 ret[idx] = cur.val
 
             stk.append([i, cur.val])

@@ -37,7 +37,7 @@ class Queue(object
         """
         __ not self.stack2:
             self._move()
-        self.stack2.pop()
+        self.stack2.p..
 
     ___ peek(self
         """

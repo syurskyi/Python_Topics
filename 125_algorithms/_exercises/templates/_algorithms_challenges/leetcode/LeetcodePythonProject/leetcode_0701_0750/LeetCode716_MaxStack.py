@@ -26,7 +26,7 @@ class MaxStack(object
         """
         :rtype: int
         """
-        val = self.stack.pop()
+        val = self.stack.p..
         self.heap.remove((-val))
         heapq.heapify(self.heap)
         r_ val

@@ -61,7 +61,7 @@ class Solution:
                 stack.append(node)
                 node = node.left
 
-            node = stack.pop()
+            node = stack.p..
 
             __ pre and node.val - pre.val < ans:
                 ans = node.val - pre.val

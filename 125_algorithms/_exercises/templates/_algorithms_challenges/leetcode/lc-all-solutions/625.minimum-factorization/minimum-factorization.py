@@ -39,7 +39,7 @@ class Solution(object
           path.append(str(i))
           __ dfs(num / i, path
             r_ True
-          path.pop()
+          path.p..
       r_ False
 
     self.ans = float("inf")

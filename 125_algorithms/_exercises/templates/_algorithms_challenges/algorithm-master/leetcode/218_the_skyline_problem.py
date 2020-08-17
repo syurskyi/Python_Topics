@@ -69,7 +69,7 @@ class Solution:
             max_h = -heap.top() __ not heap.is_empty() else 0
 
             __ ans and ans[-1][0] __ x:
-                ans.pop()
+                ans.p..
             __ ans and ans[-1][1] __ max_h:
                 continue
             ans.append([x, max_h])

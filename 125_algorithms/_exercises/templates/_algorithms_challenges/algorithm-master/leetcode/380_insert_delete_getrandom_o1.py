@@ -37,7 +37,7 @@ class RandomizedSet:
         self.val2idx[key] = i
         self.nums[i] = self.nums[-1]
 
-        self.nums.pop()
+        self.nums.p..
         del self.val2idx[val]
         r_ True
 

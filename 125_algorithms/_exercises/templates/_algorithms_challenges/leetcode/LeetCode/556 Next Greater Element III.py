@@ -70,7 +70,7 @@ class Solution:
             e = seq[i]
             popped = None
             w___ stk and seq[stk[-1]] > e:
-                popped = stk.pop()
+                popped = stk.p..
 
             __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]

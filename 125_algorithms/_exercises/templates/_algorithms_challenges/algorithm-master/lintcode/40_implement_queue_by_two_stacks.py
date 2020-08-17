@@ -15,7 +15,7 @@ class MyQueue:
     """
     ___ pop(self,
         self.top()
-        r_ self.stack2.pop()
+        r_ self.stack2.p..
 
     """
     @return: An integer

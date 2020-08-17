@@ -26,7 +26,7 @@ class Solution(object
             n = n-le.(leaves)
             newLeaves = []
             ___ leaf in leaves:
-                neighbor = graph[leaf].pop()
+                neighbor = graph[leaf].p..
                 graph[neighbor].remove(leaf)
                 __ le.(graph[neighbor]) __ 1:
                     newLeaves.append(neighbor)

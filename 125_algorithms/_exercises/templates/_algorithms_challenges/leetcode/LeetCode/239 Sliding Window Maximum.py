@@ -50,7 +50,7 @@ class Solution:
             w___ q and q[0] <= i-k:
                 q.pop(0)
             w___ q and nums[q[-1]] < nums[i]:
-                q.pop()
+                q.p..
             q.append(i)
             __ i >= k-1:
                 ret.append(nums[q[0]])

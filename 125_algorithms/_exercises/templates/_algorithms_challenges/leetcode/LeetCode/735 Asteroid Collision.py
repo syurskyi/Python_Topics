@@ -59,10 +59,10 @@ class Solution:
             w___ stk and e < 0 < stk[-1]:
                 __ abs(e) > abs(stk[-1]
                     # -> exploded, <- continues
-                    stk.pop()
+                    stk.p..
                 ____ abs(e) __ abs(stk[-1]
                     # -> <- both exploded
-                    stk.pop()
+                    stk.p..
                     break
                 ____
                     # <- exploded, -> continue
@@ -86,10 +86,10 @@ class Solution:
         ___ i in range(n-1, -1, -1
             cur = asteroids[i]
             w___ stk and asteroids[stk[-1]] < 0 and cur > 0 and abs(asteroids[stk[-1]]) < abs(cur
-                stk.pop()
+                stk.p..
 
             __ stk and cur > 0 and asteroids[stk[-1]] __ -cur:
-                stk.pop()
+                stk.p..
                 continue
 
             __ not stk:

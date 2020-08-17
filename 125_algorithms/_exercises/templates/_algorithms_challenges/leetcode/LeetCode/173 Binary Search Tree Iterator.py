@@ -38,6 +38,6 @@ class BSTIterator:
             self.stk.append(self.cur)
             self.cur = self.cur.left
 
-        nxt = self.stk.pop()
+        nxt = self.stk.p..
         self.cur = nxt.right
         r_ nxt.val

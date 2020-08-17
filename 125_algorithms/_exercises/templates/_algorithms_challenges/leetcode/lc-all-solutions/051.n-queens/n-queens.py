@@ -15,7 +15,7 @@ class Solution(object
         __ i not in path and isValidQueen(path, i
           path.append(i)
           dfs(path, n, ans)
-          path.pop()
+          path.p..
 
     ___ isValidQueen(path, k
       ___ i in range(le.(path)):

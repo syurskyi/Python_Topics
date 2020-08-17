@@ -25,7 +25,7 @@ class Solution(object
             stack.append(node)
             node = node.left
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             __ prev >= node.val:
                 r_ False
             prev = node.val

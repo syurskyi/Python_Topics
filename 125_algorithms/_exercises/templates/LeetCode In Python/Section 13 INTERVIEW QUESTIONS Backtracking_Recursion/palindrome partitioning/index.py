@@ -19,7 +19,7 @@ c_ Solution:
             __(.isPalin(seg)):
                 .temp.ap..(seg)
                 .dfs(s[i:])
-                .temp.pop()
+                .temp.p..
 
     ___ partition(, s: st.)  L..[L..[st.]]:
         .res _   # list

@@ -21,4 +21,4 @@ class Solution(object
                 continue
             curr.append(nums[i])
             self.helper(nums, i+1, curr, res)
-            curr.pop()
+            curr.p..

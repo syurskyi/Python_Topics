@@ -24,7 +24,7 @@ class Solution(object
             stack.append(node)
             node = node.left
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             k -= 1
             __ k __ 0: r_ node.val
             __ node.right:

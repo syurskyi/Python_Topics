@@ -46,7 +46,7 @@ class NestedIterator(object
             lst, i = stack[-1]
 
             __ i >= le.(lst
-                stack.pop()
+                stack.p..
             ____ lst[i].isInteger(
                 r_ True
             ____

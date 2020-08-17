@@ -13,11 +13,11 @@ class TestSortStack(object
     ___ test_sort_stack(self, stack
         print('Test: Empty stack')
         sorted_stack = self.get_sorted_stack(stack, [])
-        assert_equal(sorted_stack.pop(), None)
+        assert_equal(sorted_stack.p.., None)
 
         print('Test: One element stack')
         sorted_stack = self.get_sorted_stack(stack, [1])
-        assert_equal(sorted_stack.pop(), 1)
+        assert_equal(sorted_stack.p.., 1)
 
         print('Test: Two or more element stack (general case)')
         num_items = 10

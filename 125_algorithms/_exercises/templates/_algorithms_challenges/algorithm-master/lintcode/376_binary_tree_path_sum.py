@@ -31,4 +31,4 @@ class Solution:
         self.dfs(node.left, remaining, ans, path)
         self.dfs(node.right, remaining, ans, path)
 
-        path.pop()
+        path.p..

@@ -14,7 +14,7 @@ c_ Solution:
             __(le.(st) !_ 0
                 li _ st[-1]
                 __(.isEqual(li, character)):
-                    st.pop()
+                    st.p..
                     continue
             st.ap..(characrer)
         r_ le.(st) __ 0

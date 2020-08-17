@@ -17,7 +17,7 @@ class Solution(object
                 __  (c __ ')' and stack and stack[-1]__'(') or\
                     (c __ ']' and stack and stack[-1]__'[') or\
                     (c __ '}' and stack and stack[-1]__'{'
-                    stack.pop()
+                    stack.p..
                 ____
                     r_ False
         r_ stack __ []

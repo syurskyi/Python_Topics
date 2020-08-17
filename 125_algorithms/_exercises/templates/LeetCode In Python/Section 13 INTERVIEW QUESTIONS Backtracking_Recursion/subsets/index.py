@@ -7,7 +7,7 @@ c_ Solution:
             __(nums[i] no. __ cur
                 cur.ap..(nums[i])
                 .solution(nums,ans,cur,i)
-                cur.pop()
+                cur.p..
         r_
     ___ subsets(, nums: L.. in.)  L..[L..[in.]]:
         ans _   # list

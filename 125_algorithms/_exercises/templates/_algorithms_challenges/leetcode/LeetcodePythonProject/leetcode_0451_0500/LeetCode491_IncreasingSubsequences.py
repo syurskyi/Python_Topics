@@ -23,7 +23,7 @@ class Solution(object
             __ not curr or curr[-1] <= nums[i]:
                 curr.append(nums[i])
                 self.helper(nums, i+1, curr, res)
-                curr.pop()
+                curr.p..
     
     ___ test(self
         testCases = [

@@ -21,7 +21,7 @@ class Solution(object
         stack = [root]
         prev = TreeNode(-1)
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             prev.right = node
             __ node.right:
                 stack.append(node.right)

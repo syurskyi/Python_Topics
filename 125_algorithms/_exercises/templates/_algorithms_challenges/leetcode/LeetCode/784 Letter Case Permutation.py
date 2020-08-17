@@ -45,14 +45,14 @@ class Solution:
         __ S_lst[i].isdigit(
             lst.append(S_lst[i])
             self.dfs(lst, S_lst, i + 1)
-            lst.pop()
+            lst.p..
         ____
             lst.append(S_lst[i].lower())
             self.dfs(lst, S_lst, i + 1)
-            lst.pop()
+            lst.p..
             lst.append(S_lst[i].upper())
             self.dfs(lst, S_lst, i + 1)
-            lst.pop()
+            lst.p..
 
 
 __ __name__ __ "__main__":

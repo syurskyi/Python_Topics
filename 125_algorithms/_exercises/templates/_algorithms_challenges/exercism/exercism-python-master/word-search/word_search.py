@@ -27,7 +27,7 @@ class WordSearch(object
         yield (char, start) 
         queue = [(char, (start.x, start.y), diff) ___ diff in self.dirs]
         w___ queue:
-            word, pos, diff = queue.pop()
+            word, pos, diff = queue.p..
             x, y = (p+d ___ p, d in zip(pos, diff))
             __ 0<= y < le.(puzzle) and 0 <= x < le.(puzzle[y]
                 word += puzzle[y][x]

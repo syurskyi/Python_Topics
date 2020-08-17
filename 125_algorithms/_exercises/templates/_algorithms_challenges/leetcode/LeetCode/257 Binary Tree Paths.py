@@ -48,11 +48,11 @@ class Solution:
 
         __ cur.left:
             self.dfs(cur.left, path, ret)
-            path.pop()  # pop the shared path
+            path.p..  # pop the shared path
 
         __ cur.right:
             self.dfs(cur.right, path, ret)
-            path.pop()  # pop the shared path
+            path.p..  # pop the shared path
 
     ___ dfs_path(self, cur, path, ret
         __ not cur:
@@ -64,4 +64,4 @@ class Solution:
 
         self.dfs_path(cur.left, path, ret)
         self.dfs_path(cur.right, path, ret)
-        path.pop()
+        path.p..

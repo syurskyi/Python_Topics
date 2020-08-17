@@ -35,7 +35,7 @@ class Solution(object
         ___ i in range(idx, le.(arr)):
             curr.append(arr[i])
             self.dfs(arr, i+1, curr, nums)
-            curr.pop()
+            curr.p..
     
     ___ test(self
         testCases = [

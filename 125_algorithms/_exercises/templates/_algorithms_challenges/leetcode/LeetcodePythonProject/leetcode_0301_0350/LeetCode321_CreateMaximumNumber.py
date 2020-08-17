@@ -23,7 +23,7 @@ class Solution(object
         size = le.(nums)
         ___ x in range(size
             w___ result and le.(result)+size-x>maxLen and result[-1]<nums[x]:
-                result.pop()
+                result.p..
             __ le.(result) < maxLen:
                 result.append(nums[x])
         r_ result

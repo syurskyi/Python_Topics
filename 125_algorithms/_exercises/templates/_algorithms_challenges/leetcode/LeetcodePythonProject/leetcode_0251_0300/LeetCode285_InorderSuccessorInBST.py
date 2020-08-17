@@ -45,7 +45,7 @@ class Solution(object
             ____
                 break
         w___ stack and stack[-1].val < p.val:
-            stack.pop()
+            stack.p..
         __ not stack:
             r_ None
         node = stack[-1]

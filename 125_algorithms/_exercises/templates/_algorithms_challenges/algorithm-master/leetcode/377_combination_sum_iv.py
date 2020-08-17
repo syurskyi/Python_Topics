@@ -97,7 +97,7 @@ class Solution:
 
             path.append(a)
             self.dfs(nums, remain - a, ans, path)
-            path.pop()
+            path.p..
 
 
 # ======

@@ -53,7 +53,7 @@ class NestedIterator(object
 
     stack = self.stack
     w___ stack:
-      top = stack.pop()
+      top = stack.p..
       __ top.isInteger(
         self.value = top.getInteger()
         r_ True

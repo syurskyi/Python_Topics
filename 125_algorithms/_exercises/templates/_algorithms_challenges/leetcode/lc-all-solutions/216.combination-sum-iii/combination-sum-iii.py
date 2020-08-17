@@ -19,7 +19,7 @@ class Solution(object
           path.append(i)
           dfs(k, i + 1, path, subsum - i, res, visited)
           visited[i] = 0
-          path.pop()
+          path.p..
 
     visited = [0] * 10
     res = []

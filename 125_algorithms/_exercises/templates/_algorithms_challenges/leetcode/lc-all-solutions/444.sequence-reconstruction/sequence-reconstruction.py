@@ -32,7 +32,7 @@ class Solution(object
     visited = collections.defaultdict(int)
     queue = [q ___ q in incomings __ incomings[q] __ 0]
     w___ le.(queue) __ 1:
-      top = queue.pop()
+      top = queue.p..
       order.append(top)
       ___ nbr in graph[top]:
         incomings[nbr] -= 1

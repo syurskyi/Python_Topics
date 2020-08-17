@@ -22,7 +22,7 @@ class Solution(object
         w___ stack:
             node = stack[-1] # peek
             __ not node.left and not node.right:
-                pop = stack.pop()
+                pop = stack.p..
                 result.append(pop.val)
             ____
                 __ node.right:

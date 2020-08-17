@@ -43,5 +43,5 @@ class Solution:
                 cur_path.append(nbr)
                 # pre-check
                 self.dfs(G, nbr, d, cur_path, visited, ret)
-                cur_path.pop()
+                cur_path.p..
                 visited[nbr] = False

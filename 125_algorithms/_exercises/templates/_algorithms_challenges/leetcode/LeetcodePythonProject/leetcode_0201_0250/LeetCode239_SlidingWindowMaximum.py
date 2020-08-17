@@ -17,7 +17,7 @@ class Solution(object
             __ deque and deque[0] __ i-k:
                 deque.pop(0)
             w___ deque and nums[deque[-1]] < num:
-                deque.pop()
+                deque.p..
             deque.append(i)
             __ i+1>=k:
                 res.append(nums[deque[0]])

@@ -25,7 +25,7 @@ class Solution(object
     ___ num in nums:
       root = TreeNode(num)
       w___ stack and stack[-1].val < num:
-        root.left = stack.pop()
+        root.left = stack.p..
       __ stack:
         stack[-1].right = root
       stack.append(root)

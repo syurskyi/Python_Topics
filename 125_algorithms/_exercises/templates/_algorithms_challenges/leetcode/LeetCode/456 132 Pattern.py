@@ -37,7 +37,7 @@ class Solution:
         mini = float('Inf')
         ___ v in nums:
             w___ stack and stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
-                stack.pop()
+                stack.p..
             __ stack and stack[-1][0] < v:
                 r_ True
             mini = min(mini, v)

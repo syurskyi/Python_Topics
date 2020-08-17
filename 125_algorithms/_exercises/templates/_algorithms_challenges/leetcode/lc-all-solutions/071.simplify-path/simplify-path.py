@@ -11,7 +11,7 @@ class Solution(object
         continue
       __ p __ "..":
         __ stack:
-          stack.pop()
+          stack.p..
       ____
         stack.append(p)
     r_ "/" + "/".join(stack)

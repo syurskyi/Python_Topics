@@ -36,7 +36,7 @@ class Solution(object
         __ not b:
             r_ 1
         s = 1
-        lsd = b.pop()  # list significant digit
+        lsd = b.p..  # list significant digit
         s *= (a % C) ** lsd
         s %= C
         rest = self.superPow(a, b)

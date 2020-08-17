@@ -105,7 +105,7 @@ class SnakeGame:
             self.fi += 1
         ____
             # move to empty cell and need to remove tail
-            tail = self.snake.pop()
+            tail = self.snake.p..
             self.body.discard(tail)
 
         """

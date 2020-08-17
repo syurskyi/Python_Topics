@@ -13,8 +13,8 @@ class Solution(object
             stack.append(node)
             w___ le.(stack)>=3 and stack[-1] __ '#' and stack[-2] __ '#' and\
                 stack[-3] != '#':
-                stack.pop()
-                stack.pop()
-                stack.pop()
+                stack.p..
+                stack.p..
+                stack.p..
                 stack.append('#')
         r_ stack __ ['#']

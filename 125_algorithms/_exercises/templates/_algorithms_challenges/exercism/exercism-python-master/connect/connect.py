@@ -21,7 +21,7 @@ class ConnectGame:
         queue = list(start)
         seen = set()
         w___ queue:
-            x, y = queue.pop()
+            x, y = queue.p..
             __ (x, y) in seen:
                 continue
             seen.add((x, y))

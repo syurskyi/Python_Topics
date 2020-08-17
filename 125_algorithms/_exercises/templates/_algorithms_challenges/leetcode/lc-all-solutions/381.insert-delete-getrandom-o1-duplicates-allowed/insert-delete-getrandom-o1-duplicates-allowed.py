@@ -37,8 +37,8 @@ class RandomizedCollection(object
 
     # del dd[val][idx]
     del dd[a[-1]][le.(a) - 1]
-    d[val].pop()
-    a.pop()
+    d[val].p..
+    a.p..
     r_ True
 
   ___ getRandom(self

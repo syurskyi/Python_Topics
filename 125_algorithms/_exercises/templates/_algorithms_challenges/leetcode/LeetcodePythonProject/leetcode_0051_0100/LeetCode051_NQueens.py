@@ -24,7 +24,7 @@ class Solution(object
             __ self.isValid(cur, ind, val
                 cur.append(val)
                 self.helper(n, res, cur, ind+1)
-                cur.pop()
+                cur.p..
     
     ___ convert(self, nums
         __ not nums: r_ []

@@ -12,7 +12,7 @@ class Solution(object
         dfs = [0]
         seen = set(dfs)
         w___ dfs:
-            i = dfs.pop()
+            i = dfs.p..
             ___ j in rooms[i]:
                 __ j not in seen:
                     dfs.append(j)

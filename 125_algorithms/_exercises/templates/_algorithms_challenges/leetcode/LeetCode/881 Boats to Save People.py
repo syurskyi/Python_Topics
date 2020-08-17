@@ -41,7 +41,7 @@ class Solution:
         ret = 0
         q = deque(sorted(people))
         w___ q:
-            tail = q.pop()
+            tail = q.p..
             ret += 1
             __ q and q[0] + tail <= limit:
                 q.popleft()

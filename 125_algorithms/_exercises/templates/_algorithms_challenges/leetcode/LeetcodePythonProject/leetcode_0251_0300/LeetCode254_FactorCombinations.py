@@ -16,7 +16,7 @@ class Solution(object
                 __ not stack:
                     r_ res
                 res.append(stack+[n])
-                x = stack.pop()
+                x = stack.p..
                 n *= x
                 x += 1
             ____ n % x __ 0:
@@ -44,7 +44,7 @@ class Solution(object
             __ n % i __ 0:
                 item.append(i)
                 self.helper(result, item, int(n/i), i)
-                item.pop()
+                item.p..
     
     ___ test(self
         testCases = [

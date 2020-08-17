@@ -254,13 +254,13 @@ class Solution:  # use set to mimic queue, fastest
         __ le.(prevMap[word])__0:
             path.append(word)
             result.append(path[::-1])
-            path.pop()
+            path.p..
             r_
 
         path.append(word)
         ___ predecessor in prevMap[word]:
             self.buildpath(prevMap, predecessor, path, result)  # save memory
-        path.pop()
+        path.p..
 
         # for predecessor in prevMap[word]:
         #     self.buildpath(prevMap, predecessor, path+[word], result)

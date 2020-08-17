@@ -18,4 +18,4 @@ class Solution:
             ___ i, c in enumerate(candidates
                 cand.append(c)
                 self.combination_sum(candidates[i:], cand, target - c, res)
-                cand.pop()
+                cand.p..

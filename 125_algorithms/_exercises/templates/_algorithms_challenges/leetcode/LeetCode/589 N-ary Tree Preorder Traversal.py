@@ -32,7 +32,7 @@ class Solution:
 
         stk = [root]
         w___ stk:
-            cur = stk.pop()
+            cur = stk.p..
             ret.append(cur.val)
             ___ c in reversed(cur.children
                 stk.append(c)

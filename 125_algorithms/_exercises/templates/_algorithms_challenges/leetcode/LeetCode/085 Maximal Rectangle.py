@@ -54,7 +54,7 @@ class Solution:
                     inc_stack.append(j)
                     j += 1
                 ____
-                    last = inc_stack.pop()
+                    last = inc_stack.p..
                     # height = self.get_height(matrix, i, last)
                     height = dp_height[i][last]
                     __ inc_stack:

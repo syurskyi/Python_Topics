@@ -11,10 +11,10 @@ class Solution(object
         ___ i in range(le.(expression)-1, -1, -1
             c = expression[i]
             __ stack and stack[-1] __ '?':
-                stack.pop()
-                first = stack.pop()
-                stack.pop()
-                second = stack.pop()
+                stack.p..
+                first = stack.p..
+                stack.p..
+                second = stack.p..
                 __ c __ 'T':
                     stack.append(first)
                 ____

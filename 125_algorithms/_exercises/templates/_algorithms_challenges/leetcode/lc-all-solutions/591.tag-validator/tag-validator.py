@@ -66,7 +66,7 @@ class Solution(object
             __ not stack:
               r_ False
             __ isTagsMatched(stack[-1], token
-              stack.pop()
+              stack.p..
               __ not stack and i + le.(token) < le.(code
                 r_ False
             ____

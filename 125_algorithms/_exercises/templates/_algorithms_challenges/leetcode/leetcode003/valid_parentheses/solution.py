@@ -27,7 +27,7 @@ class Solution(object
             ____
                 __ stack:
                     __ stack[-1] __ pars[c]:
-                        stack.pop()
+                        stack.p..
                     ____
                         r_ False
                 ____

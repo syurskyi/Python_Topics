@@ -42,15 +42,15 @@ class Solution:
                 stk_star.append(i)
             ____
                 __ stk_left:
-                    stk_left.pop()
+                    stk_left.p..
                 ____ stk_star:
-                    stk_star.pop()
+                    stk_star.p..
                 ____
                     r_ False
 
         w___ stk_left and stk_star and stk_star[-1] > stk_left[-1]:
-            stk_star.pop()
-            stk_left.pop()
+            stk_star.p..
+            stk_left.p..
 
         r_ not stk_left
 

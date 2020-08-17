@@ -110,4 +110,4 @@ ___ _dfs(root, target, ans, path
 
         path.append(child.cost)
         _dfs(child, target - child.cost, ans, path)
-        path.pop()
+        path.p..

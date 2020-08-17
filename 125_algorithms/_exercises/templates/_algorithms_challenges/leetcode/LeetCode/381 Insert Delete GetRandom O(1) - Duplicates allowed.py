@@ -66,13 +66,13 @@ class RandomizedCollection(object
         __ not self.pos[val]:
             r_ False
 
-        idx, last = self.pos[val].pop(), le.(self.lst) - 1
+        idx, last = self.pos[val].p.., le.(self.lst) - 1
         __ idx != last:
             self.lst[idx], self.lst[last] = self.lst[last], self.lst[idx]
             self.pos[self.lst[idx]].remove(last)
             self.pos[self.lst[idx]].add(idx)
 
-        self.lst.pop()
+        self.lst.p..
 
         r_ True
 

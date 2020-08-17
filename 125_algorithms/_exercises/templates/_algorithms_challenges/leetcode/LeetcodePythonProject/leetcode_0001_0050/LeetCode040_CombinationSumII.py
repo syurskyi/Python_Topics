@@ -27,7 +27,7 @@ class Solution(object
                 continue
             curr.append(nums[i])
             self.helper2(nums, i+1, curr, res, target-nums[i])
-            curr.pop()
+            curr.p..
     
     ___ combinationSum2_origin(self, candidates, target
         """
@@ -52,4 +52,4 @@ class Solution(object
             __ prev != nums[i]:
                 curr.append(nums[i])
                 self.helper(nums, target-nums[i], i+1, curr, res)
-                prev = curr.pop()
+                prev = curr.p..

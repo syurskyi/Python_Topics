@@ -35,7 +35,7 @@ class Solution:
             """
             path.append(nums[i])
             self.dfs(nums[:i] + nums[i + 1:], ans, path)
-            path.pop()
+            path.p..
 
 
 class Solution:
@@ -81,4 +81,4 @@ class Solution:
             path.append(nums[i])
             self.dfs(nums, visited, ans, path)
             visited[i] = False
-            path.pop()
+            path.p..

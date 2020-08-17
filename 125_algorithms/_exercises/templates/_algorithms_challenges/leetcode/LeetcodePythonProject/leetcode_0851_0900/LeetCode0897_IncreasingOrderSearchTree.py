@@ -19,7 +19,7 @@ class Solution(object
         root = stack[-1]
         prev = None
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             node.left = None
             __ prev:
                 prev.right = node

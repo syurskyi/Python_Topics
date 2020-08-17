@@ -30,7 +30,7 @@ class Solution:
                 le.(res) + n - i > size and
                 res[-1] < a[i]
 
-                res.pop()
+                res.p..
 
             __ le.(res) < size:
                 res.append(a[i])

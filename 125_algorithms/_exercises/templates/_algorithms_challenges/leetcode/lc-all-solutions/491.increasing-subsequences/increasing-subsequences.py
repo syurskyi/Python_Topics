@@ -17,7 +17,7 @@ class Solution(object
           continue
         path.append(nums[i])
         dfs(nums, i + 1, path, ans)
-        path.pop()
+        path.p..
 
     dfs(nums, 0, [], ans)
     r_ list(set(ans))

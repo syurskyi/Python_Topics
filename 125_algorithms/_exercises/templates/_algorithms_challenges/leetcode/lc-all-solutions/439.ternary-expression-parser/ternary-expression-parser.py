@@ -12,10 +12,10 @@ class Solution(object
       ____ expression[i] __ "?":
         i -= 1
         __ expression[i] __ "T":
-          top = stack.pop()
-          stack.pop()
+          top = stack.p..
+          stack.p..
           stack.append(top)
         ____ expression[i] __ "F":
-          stack.pop()
+          stack.p..
       i -= 1
     r_ stack[0]

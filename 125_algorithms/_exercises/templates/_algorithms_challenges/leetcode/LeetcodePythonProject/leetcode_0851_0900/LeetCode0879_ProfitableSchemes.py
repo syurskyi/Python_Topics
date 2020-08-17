@@ -39,7 +39,7 @@ class Solution(object
             curProfit += profit[i]
             curGroup.append(group[i])
             self.dfs(i+1, group, profit, G, P, curGroup, curProfit, res)
-            curGroup.pop()
+            curGroup.p..
             curProfit -= profit[i]
     
     ___ test(self

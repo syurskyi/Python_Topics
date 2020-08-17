@@ -12,7 +12,7 @@ class Solution(object
     stack = []
     ___ num in nums:
       w___ stack and stack[-1] < num:
-        top = stack.pop()
+        top = stack.p..
         __ top in d:
           ans[d[top]] = num
       stack.append(num)

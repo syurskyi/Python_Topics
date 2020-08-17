@@ -23,7 +23,7 @@ class Solution(object
       ____
         i = heap.index(-height)
         heap[i] = heap[-1]
-        heap.pop()
+        heap.p..
         __ i < le.(heap
           heapq._siftup(heap, i)
           heapq._siftdown(heap, 0, i)

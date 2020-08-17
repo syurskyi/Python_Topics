@@ -16,7 +16,7 @@ class Solution(object
                 stack.append(cur)
                 cur = 0
             ____
-                cur += stack.pop() + max(cur, 1)
+                cur += stack.p.. + max(cur, 1)
         r_ cur
     
     ___ test(self

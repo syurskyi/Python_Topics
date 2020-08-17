@@ -25,7 +25,7 @@ class Solution(object
             root0 = root0.left
         preNode = None
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             __ (not preNode and V < node.val)\
                 or (preNode and preNode.val <= V < node.val
                 r_ self.getRes(root, preNode)
@@ -50,7 +50,7 @@ class Solution(object
                 root0 = root0.right
         cand = node
         w___ stack and stack[-1].val < node.val:
-            cand = stack.pop()
+            cand = stack.p..
         __ not stack:
             right = node.right
             node.right = None

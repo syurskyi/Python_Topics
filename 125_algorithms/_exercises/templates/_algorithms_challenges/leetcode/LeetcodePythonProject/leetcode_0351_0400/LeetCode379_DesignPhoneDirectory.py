@@ -11,7 +11,7 @@ class PhoneDirectory(object
     
     ___ get(self
         __ self.availableNums:
-            num = self.availableNums.pop()
+            num = self.availableNums.p..
             self.usedNums.add(num)
             r_ num
         ____

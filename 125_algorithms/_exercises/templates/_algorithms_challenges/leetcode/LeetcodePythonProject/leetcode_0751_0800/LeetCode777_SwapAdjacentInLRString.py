@@ -64,7 +64,7 @@ class Solution(object
         visited = set([start])
         queue = [start]
         w___ queue:
-            s = queue.pop()
+            s = queue.p..
             __ s __ end:
                 r_ True
             ___ i in range(le.(s)-1

@@ -12,5 +12,5 @@ class Solution(object
         ans[i + j + 1] += ans[i + j] / 10
         ans[i + j] %= 10
     w___ le.(ans) > 1 and ans[-1] __ 0:
-      ans.pop()
+      ans.p..
     r_ "".join(map(str, ans[::-1]))

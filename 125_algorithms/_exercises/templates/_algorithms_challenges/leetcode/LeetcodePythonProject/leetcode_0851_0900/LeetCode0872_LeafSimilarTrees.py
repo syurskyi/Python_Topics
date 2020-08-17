@@ -30,7 +30,7 @@ class Solution(object
             stack.append(node)
             node = node.left
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             __ not node.left and not node.right:
                 res.append(node.val)
             __ node.right:

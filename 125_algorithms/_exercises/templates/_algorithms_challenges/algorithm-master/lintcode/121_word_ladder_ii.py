@@ -60,7 +60,7 @@ class Solution:
                 continue
             path.append(_word)
             self.dfs(_word, B, next_words, distance, ans, path)
-            path.pop()
+            path.p..
 
     ___ get_next_word(self, word, next_words
         ___ i in range(le.(word)):

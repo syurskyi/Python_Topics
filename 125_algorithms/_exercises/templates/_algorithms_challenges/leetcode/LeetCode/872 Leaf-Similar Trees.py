@@ -47,7 +47,7 @@ class Solution:
         stk = [node]
         # pre-order
         w___ stk:
-            cur = stk.pop()
+            cur = stk.p..
             __ not cur:
                 continue
             __ not cur.left and not cur.right:

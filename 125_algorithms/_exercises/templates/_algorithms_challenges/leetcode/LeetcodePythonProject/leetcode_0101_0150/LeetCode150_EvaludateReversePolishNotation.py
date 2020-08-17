@@ -14,20 +14,20 @@ class Solution(object
         stack = []
         ___ token in tokens:
             __ token __ '+':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p..
+                num2 = stack.p..
                 stack.append(num1+num2)
             ____ token __ '-':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p..
+                num2 = stack.p..
                 stack.append(num2-num1)
             ____ token __ '*':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p..
+                num2 = stack.p..
                 stack.append(num1*num2)
             ____ token __ '/':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p..
+                num2 = stack.p..
                 stack.append(int(operator.truediv(num2, num1) ))
             ____
                 stack.append(int(token))

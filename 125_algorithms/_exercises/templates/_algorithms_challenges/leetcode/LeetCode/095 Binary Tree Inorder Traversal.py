@@ -91,7 +91,7 @@ class Solution(object
             w___ cur:
                 stk.append(cur)
                 cur = cur.left
-            cur = stk.pop()  # left_most
+            cur = stk.p..  # left_most
             lst.append(cur.val)
             cur = cur.right
             # if cur.right:  # should go to next iteration

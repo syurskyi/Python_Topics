@@ -42,11 +42,11 @@ class Solution(object
             __ token not in ops:
                 stack.append(int(token))
             ____
-                arg2 = stack.pop()
-                arg1 = stack.pop()
+                arg2 = stack.p..
+                arg1 = stack.p..
                 result = arith(arg1, arg2, token)
                 stack.append(result)
-        r_ stack.pop()
+        r_ stack.p..
 
 
 __ __name__ __ "__main__":

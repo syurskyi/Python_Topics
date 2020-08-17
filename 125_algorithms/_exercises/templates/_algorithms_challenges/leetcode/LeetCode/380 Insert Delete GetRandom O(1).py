@@ -77,7 +77,7 @@ class RandomizedSet(object
             self.pos[self.lst[idx]] = idx
 
         del self.pos[val]
-        self.lst.pop()
+        self.lst.p..
 
         r_ True
 

@@ -21,7 +21,7 @@ class Queue(object
     :rtype: nothing
     """
     self.peek()
-    self.stack2.pop()
+    self.stack2.p..
 
   ___ peek(self
     """

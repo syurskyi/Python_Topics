@@ -3,7 +3,7 @@ ___ chain(dominoes
         r_ []
     queue = [((dominoes[0],), tuple(dominoes[1:]))]
     w___ queue:
-        chain, pool = queue.pop()
+        chain, pool = queue.p..
         tail = chain[-1][-1] 
         __ chain[0][0] __ tail and le.(pool) __ 0:
             r_ chain

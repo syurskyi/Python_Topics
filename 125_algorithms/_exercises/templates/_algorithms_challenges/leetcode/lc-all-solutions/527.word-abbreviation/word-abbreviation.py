@@ -23,7 +23,7 @@ class Solution(object
               word2abbr[word] = nabbr
               break
       ____
-        word2abbr[words.pop()] = abbr
+        word2abbr[words.p..] = abbr
     r_ [word2abbr[word] ___ word in dict]
 
   ___ checkUnique(self, prefix, words

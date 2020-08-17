@@ -51,7 +51,7 @@ class Solution:
         ___ s in S:
             __ s __ "#":
                 __ stk:
-                    stk.pop()
+                    stk.p..
             ____
                 stk.append(s)
 

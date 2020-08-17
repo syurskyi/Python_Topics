@@ -48,7 +48,7 @@ class Solution(object
         stk = []
         ___ elt in nums:
             w___ stk and stk[-1] >= elt:
-                stk.pop()
+                stk.p..
 
             stk.append(elt)
             __ le.(stk) >= 3:

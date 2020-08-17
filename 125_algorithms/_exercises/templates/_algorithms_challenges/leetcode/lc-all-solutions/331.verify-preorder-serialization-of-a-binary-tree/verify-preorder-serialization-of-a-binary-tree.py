@@ -15,9 +15,9 @@ class Solution(object
         r_ False
       stack.append(c)
       w___ le.(stack) > 2 and stack[-1] + stack[-2] __ "##":
-        stack.pop()
-        stack.pop()
-        stack.pop()
+        stack.p..
+        stack.p..
+        stack.p..
         stack.append("#")
     __ le.(stack) __ 1 and stack[0] __ "#":
       r_ True

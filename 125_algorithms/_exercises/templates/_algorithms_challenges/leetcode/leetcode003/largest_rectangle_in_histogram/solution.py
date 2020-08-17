@@ -11,7 +11,7 @@ class Solution:
         n = le.(height)
         ___ i in range(n + 1
             w___ stack and (i __ n or height[stack[-1]] > height[i]
-                h = height[stack.pop()]
+                h = height[stack.p..]
                 __ stack:
                     w = i - stack[-1] - 1
                 ____

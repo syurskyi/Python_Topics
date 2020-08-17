@@ -39,7 +39,7 @@ class Solution:
         ___ i in range(n
             stk.append(pushed[i])
             w___ j < n and stk and stk[-1] __ popped[j]:
-                stk.pop()
+                stk.p..
                 j += 1
 
         r_ j __ n
@@ -57,11 +57,11 @@ class Solution:
                 stk.append(pushed[i])
                 i += 1
 
-            stk.pop()
+            stk.p..
             j += 1
 
         w___ j < n and stk and stk[-1] __ popped[j]:
-            stk.pop()
+            stk.p..
             j += 1
 
         r_ not stk

@@ -31,7 +31,7 @@ class Solution:
 
         ___ i in range(n
             w___ stk and stk[-1][0] <= i:
-                stk.pop()
+                stk.p..
             __ stk and stk[-1][1] > nums[i]:
                 j = stk[-1][0]
                 nums[i], nums[j] = nums[j], nums[i]

@@ -30,14 +30,14 @@ class RandomizedCollection:
         __ val not in I or not I[val]:
             r_ False
 
-        i = I[val].pop()
+        i = I[val].p..
         _val = A[-1]
 
         I[_val].add(i)
         I[_val].discard(le.(A) - 1)
 
         A[i] = _val
-        A.pop()
+        A.p..
         r_ True
 
     ___ getRandom(self

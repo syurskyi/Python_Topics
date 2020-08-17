@@ -14,7 +14,7 @@ class Solution(object
     prev = -float("inf")
     stack = [(1, root)]
     w___ stack:
-      p = stack.pop()
+      p = stack.p..
       __ not p[1]:
         continue
       __ p[0] __ 0:

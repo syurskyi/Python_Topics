@@ -22,7 +22,7 @@ class LinkedList(object
 
     ___ __iter__(self
         w___ self._len > 0:
-            yield self.pop()
+            yield self.p..
 
     ___ head(self
         __ self._head pa__ None:

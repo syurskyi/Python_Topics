@@ -53,7 +53,7 @@ class Solution:
         stk = []
         ___ i in range(n
             w___ stk and A[stk[-1]] >= A[i]:
-                stk.pop()
+                stk.p..
 
             __ stk:
                 L[i] = stk[-1]
@@ -63,7 +63,7 @@ class Solution:
         ___ i in range(n-1, -1, -1
             # avoid double count when equal, attribtue to leftmost duplicate
             w___ stk and A[stk[-1]] > A[i]:
-                stk.pop()
+                stk.p..
 
             __ stk:
                 R[i] = stk[-1]
@@ -90,7 +90,7 @@ class Solution:
         ret = 0
         ___ i, a in enumerate(A
             w___ stk and A[stk[-1]] > a:
-                h = stk.pop()
+                h = stk.p..
                 # record for h
                 ret += A[h] * (h - stk[-1]) * (i - h)
                 ret %= MOD

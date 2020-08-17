@@ -72,14 +72,14 @@ class Solution:
                 ____
                     assert stk
                     w___ stk[-1][0] != depth - 1:
-                        stk.pop()
+                        stk.p..
 
                     _, pi = stk[-1]
                     __ not pi.left:
                         pi.left = cur
                     ____ not pi.right:
                         pi.right = cur
-                        stk.pop()
+                        stk.p..
                     ____
                         raise
                     stk.append((depth, cur))
@@ -124,13 +124,13 @@ class Solution:
             ____
                 assert stk
                 w___ depths[stk[-1].val] != v - 1:
-                    stk.pop()
+                    stk.p..
 
                 __ not stk[-1].left:
                     stk[-1].left = cur
                 ____ not stk[-1].right:
                     stk[-1].right = cur
-                    stk.pop()
+                    stk.p..
                 ____
                     raise
                 stk.append(cur)

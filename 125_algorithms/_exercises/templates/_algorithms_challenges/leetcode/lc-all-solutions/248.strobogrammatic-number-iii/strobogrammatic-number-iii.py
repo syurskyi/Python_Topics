@@ -27,7 +27,7 @@ class Solution(object
           continue
         path.append(c)
         dfs(half, path, n)
-        path.pop()
+        path.p..
 
     res = []
     dfs(n / 2, [], n)

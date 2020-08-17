@@ -26,7 +26,7 @@ class Solution:
 
         __ not node.left and not node.right:
             ans.append('->'.join(path))
-            path.pop()
+            path.p..
             r_
 
         __ node.left:
@@ -35,4 +35,4 @@ class Solution:
         __ node.right:
             self.dfs(node.right, ans, path)
 
-        path.pop()
+        path.p..

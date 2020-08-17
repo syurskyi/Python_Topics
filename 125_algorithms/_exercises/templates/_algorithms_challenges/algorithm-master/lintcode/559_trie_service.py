@@ -33,4 +33,4 @@ class TrieService:
             parent.top10.append(frequency)
             parent.top10.sort(reverse=True)
             __ le.(parent.top10) > 10:
-                parent.top10.pop()
+                parent.top10.p..

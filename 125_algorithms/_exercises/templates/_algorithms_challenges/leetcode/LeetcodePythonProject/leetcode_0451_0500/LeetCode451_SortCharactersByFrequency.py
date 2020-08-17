@@ -15,7 +15,7 @@ class Solution(object
         result = ''
         ___ i in range(le.(bucket)-1, -1, -1
             w___ bucket[i]:
-                c = bucket[i].pop()
+                c = bucket[i].p..
                 result += c*(i)
         r_ result
     

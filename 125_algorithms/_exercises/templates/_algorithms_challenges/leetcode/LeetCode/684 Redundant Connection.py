@@ -135,7 +135,7 @@ class Solution_dfs:
                 __ circle:
                     r_ circle
                 path.remove(nbr)
-                path_list.pop()
+                path_list.p..
 
         r_ None
 

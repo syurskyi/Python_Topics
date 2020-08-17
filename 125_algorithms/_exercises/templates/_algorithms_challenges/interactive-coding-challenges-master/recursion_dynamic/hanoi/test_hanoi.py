@@ -15,19 +15,19 @@ class TestHanoi(object
 
         print('Test: 0 disks')
         hanoi.move_disks(num_disks, src, dest, buff)
-        assert_equal(dest.pop(), None)
+        assert_equal(dest.p.., None)
 
         print('Test: 1 disk')
         src.push(5)
         hanoi.move_disks(num_disks, src, dest, buff)
-        assert_equal(dest.pop(), 5)
+        assert_equal(dest.p.., 5)
 
         print('Test: 2 or more disks')
         ___ disk_index in range(num_disks, -1, -1
             src.push(disk_index)
         hanoi.move_disks(num_disks, src, dest, buff)
         ___ disk_index in range(0, num_disks
-            assert_equal(dest.pop(), disk_index)
+            assert_equal(dest.p.., disk_index)
 
         print('Success: test_hanoi')
 

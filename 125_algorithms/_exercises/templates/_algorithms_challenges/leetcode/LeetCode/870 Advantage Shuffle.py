@@ -51,7 +51,7 @@ class Solution:
         j = 0
         ___ a in A:
             __ a > B[j]:
-                i = idxes[B[j]].pop()
+                i = idxes[B[j]].p..
                 ret[i] = a
                 j += 1
             ____
@@ -59,7 +59,7 @@ class Solution:
 
         ___ i in range(n
             __ ret[i] pa__ None:
-                ret[i] = not_used.pop()
+                ret[i] = not_used.p..
 
         r_ ret
 

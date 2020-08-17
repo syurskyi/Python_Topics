@@ -63,7 +63,7 @@ class Solution:
             __ counter[i] > 1:
                 q.extend([i] * (counter[i] - 1))
             ____ q and counter[i] __ 0:
-                ret += i - q.pop()
+                ret += i - q.p..
         r_ ret
 
 class Solution:

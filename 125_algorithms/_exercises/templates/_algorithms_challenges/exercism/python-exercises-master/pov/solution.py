@@ -61,7 +61,7 @@ class Tree(object
         path = [from_node]
         w___ path[-1] != to_node:
             try:
-                tree = stack.pop()
+                tree = stack.p..
             except IndexError:
                 raise ValueError("No path found")
             __ to_node in tree:

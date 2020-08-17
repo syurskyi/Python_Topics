@@ -34,7 +34,7 @@ class Solution(object
                 tokens.append('')
             ____ c __ ')':
                 val = evaluate(tokens)
-                tokens, d = st.pop()
+                tokens, d = st.p..
                 tokens[-1] += val
             ____
                 tokens[-1] += c

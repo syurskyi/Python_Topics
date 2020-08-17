@@ -7,7 +7,7 @@ c_ Solution:
             ___ i __ ra..(index,n
                 cur.ap..(candidates[i])
                 .solution(candidates,ans,cur,target,i,su.+candidates[i])
-                cur.pop()
+                cur.p..
         r_
     ___ combinationSum(, candidates: L.. in., target: in.)  L..[L..[in.]]:
         ans _   # list

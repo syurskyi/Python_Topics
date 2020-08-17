@@ -44,28 +44,28 @@ class SimpleLinkedListTest(unittest.TestCase
 
     ___ test_can_pop_from_non_empty_list(self
         sut = LinkedList([3, 4, 5])
-        self.assertEqual(sut.pop(), 5)
+        self.assertEqual(sut.p.., 5)
         self.assertEqual(le.(sut), 2)
         self.assertEqual(sut.head().value(), 4)
 
     ___ test_pop_from_singleton_list_removes_head(self
         sut = LinkedList([1])
-        self.assertEqual(sut.pop(), 1)
+        self.assertEqual(sut.p.., 1)
         with self.assertRaisesWithMessage(EmptyListException
             sut.head()
 
     ___ test_error_on_empty_list_pop(self
         sut = LinkedList()
         with self.assertRaisesWithMessage(EmptyListException
-            sut.pop()
+            sut.p..
 
     ___ test_push_and_pop(self
         sut = LinkedList([1, 2])
         sut.push(3)
         self.assertEqual(le.(sut), 3)
-        self.assertEqual(sut.pop(), 3)
-        self.assertEqual(sut.pop(), 2)
-        self.assertEqual(sut.pop(), 1)
+        self.assertEqual(sut.p.., 3)
+        self.assertEqual(sut.p.., 2)
+        self.assertEqual(sut.p.., 1)
         self.assertEqual(le.(sut), 0)
         sut.push(4)
         self.assertEqual(le.(sut), 1)

@@ -12,7 +12,7 @@ class Solution(object
       stack = []
       ___ c in num:
         w___ drop > 0 and stack and stack[-1] < c:
-          stack.pop()
+          stack.p..
           drop -= 1
         stack.append(c)
       r_ stack[:k]

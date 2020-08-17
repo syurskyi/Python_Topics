@@ -79,7 +79,7 @@ class Solution:
         clone = UndirectedGraphNode(node.label)
         original2copy[node] = clone
         w___ q:
-            cur = q.pop()
+            cur = q.p..
             ___ neighbor in cur.neighbors:
                 __ neighbor in original2copy:  # already copied
                     original2copy[cur].neighbors.append(original2copy[neighbor])

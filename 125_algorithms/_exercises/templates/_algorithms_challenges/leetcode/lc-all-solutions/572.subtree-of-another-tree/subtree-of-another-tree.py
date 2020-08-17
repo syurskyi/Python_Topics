@@ -17,7 +17,7 @@ class Solution(object
       ans = []
       stack = [(root, 1)]
       w___ stack:
-        node, p = stack.pop()
+        node, p = stack.p..
         __ not node:
           ans.append("#")
           continue

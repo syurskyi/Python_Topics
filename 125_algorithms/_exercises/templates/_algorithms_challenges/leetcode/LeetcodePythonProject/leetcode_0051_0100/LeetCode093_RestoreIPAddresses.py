@@ -27,4 +27,4 @@ class Solution(object
                 break
             curr.append(sub)
             self.helper(res, curr, s, i)
-            curr.pop()
+            curr.p..

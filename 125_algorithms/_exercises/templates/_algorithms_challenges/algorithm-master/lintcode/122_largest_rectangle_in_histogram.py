@@ -81,7 +81,7 @@ class Solution:
 
         ___ right in range(le.(H)):
             w___ stack and H[stack[-1]] >= H[right]:
-                height = H[stack.pop()]
+                height = H[stack.p..]
                 left = stack[-1] __ stack else -1
                 area = height * (right - left - 1)
                 __ area > ans:

@@ -31,7 +31,7 @@ class Solution(object
         stack2 = []
         stack1.append(root)
         w___ stack1:
-            root = stack1.pop()
+            root = stack1.p..
             stack2.append(root.val)
             __ root.left pa__ not None:
                 stack1.append(root.left)

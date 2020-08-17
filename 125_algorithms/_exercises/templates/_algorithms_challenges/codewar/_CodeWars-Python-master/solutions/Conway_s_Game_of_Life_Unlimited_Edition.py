@@ -37,7 +37,7 @@ ___ trim_result(result
     w___ is_row_all_empty(result[0]
         result.pop(0)
     w___ is_row_all_empty(result[-1]
-        result.pop()
+        result.p..
     start_empty, end_empty = True, True
     w___ start_empty or end_empty:
         ___ r in result:
@@ -49,7 +49,7 @@ ___ trim_result(result
             __ start_empty:
                 r.pop(0)
             __ end_empty:
-                r.pop()
+                r.p..
 
 
 ___ is_row_all_empty(row

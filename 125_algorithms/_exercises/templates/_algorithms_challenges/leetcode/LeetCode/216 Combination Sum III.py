@@ -52,7 +52,7 @@ class Solution:
         ___ i in xrange(start, 10
             cur.append(i)
             self.dfs(remain_k - 1, remain_n - i, cur, ret)
-            cur.pop()
+            cur.p..
 
 
 __ __name__ __ "__main__":

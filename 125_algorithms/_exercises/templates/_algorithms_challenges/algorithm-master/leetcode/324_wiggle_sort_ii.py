@@ -16,7 +16,7 @@ class Solution:
         S = sorted(A)
 
         ___ i in range(1, n, 2
-            A[i] = S.pop()
+            A[i] = S.p..
 
         ___ i in range(0, n, 2
-            A[i] = S.pop()
+            A[i] = S.p..

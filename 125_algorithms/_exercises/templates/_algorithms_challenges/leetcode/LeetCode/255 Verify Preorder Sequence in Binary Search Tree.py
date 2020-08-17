@@ -20,7 +20,7 @@ class Solution:
                 r_ False
 
             w___ stk and stk[-1] < num:
-                left_finished = stk.pop()
+                left_finished = stk.p..
 
             stk.append(num)
 

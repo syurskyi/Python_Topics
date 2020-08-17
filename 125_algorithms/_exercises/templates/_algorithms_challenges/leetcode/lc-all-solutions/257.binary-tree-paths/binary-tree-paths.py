@@ -16,7 +16,7 @@ class Solution:
         right = helper(root.right, path, res)
         __ not left and not right:
           res.append("->".join(path))
-        path.pop()
+        path.p..
         r_ True
 
     res = []

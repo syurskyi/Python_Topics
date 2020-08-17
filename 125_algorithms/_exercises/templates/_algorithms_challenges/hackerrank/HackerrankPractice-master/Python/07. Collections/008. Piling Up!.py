@@ -13,7 +13,7 @@ ___ i in range(int(input())):
         __ n[0] >= n[1]:
             n.popleft()
         ____ n[-1] >= n[-2]:
-            n.pop()
+            n.p..
         ____
             ans = False
             break

@@ -19,7 +19,7 @@ class Solution(object
         visited |= {i}
         path.append(s[i])
         helper(s, path, ans, visited)
-        path.pop()
+        path.p..
         visited -= {i}
 
     ans = []

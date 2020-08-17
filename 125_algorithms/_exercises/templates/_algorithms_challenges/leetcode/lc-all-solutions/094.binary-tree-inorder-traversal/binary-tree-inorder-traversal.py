@@ -13,7 +13,7 @@ class Solution(object
     """
     res, stack = [], [(1, root)]
     w___ stack:
-      p = stack.pop()
+      p = stack.p..
       __ not p[1]: continue
       stack.extend([(1, p[1].right), (0, p[1]), (1, p[1].left)]) __ p[0] != 0 else res.append(p[1].val)
     r_ res

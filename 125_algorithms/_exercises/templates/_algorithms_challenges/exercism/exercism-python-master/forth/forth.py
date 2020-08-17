@@ -27,13 +27,13 @@ ___ evaluate(input_data
             env[keyword] = [tokens.pop(0)]
             w___ env[keyword][-1] != ';':
                 env[keyword].append(tokens.pop(0))
-            env[keyword].pop()
+            env[keyword].p..
         ____ token in env:
             tokens.extend(env[token])
         ____ token in keywords:
             try:
                 n_args, func = keywords[token]
-                args = tuple(reversed([stack.pop() ___ _ in range(n_args)]))
+                args = tuple(reversed([stack.p.. ___ _ in range(n_args)]))
                 stack.extend(func(*args))
             except IndexError:
                 raise StackUnderflowError('Cannot apply ' + token)

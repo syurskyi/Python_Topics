@@ -47,7 +47,7 @@ class Solution:
             __ s __ "(":
                 stk.append(0)
             ____
-                cur = stk.pop()
+                cur = stk.p..
                 score = max(2 * cur, 1)
                 __ stk:
                     stk[-1] += score
@@ -67,7 +67,7 @@ class Solution:
                 cur_stk.append(0)
                 stk.append(s)
             ____
-                stk.pop()
+                stk.p..
                 __ cur_stk[-1] __ 0:
                     cur_stk[-1] = 1
                 ____

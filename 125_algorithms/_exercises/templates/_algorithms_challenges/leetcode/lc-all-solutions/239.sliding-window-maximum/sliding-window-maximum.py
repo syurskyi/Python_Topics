@@ -11,7 +11,7 @@ class Solution(object
     stack = collections.deque([])
     ___ i in range(0, k
       w___ stack and nums[stack[-1]] < nums[i]:
-        stack.pop()
+        stack.p..
       stack.append(i)
     ans[0] = nums[stack[0]]
     idx = 0
@@ -20,7 +20,7 @@ class Solution(object
       __ stack and stack[0] __ i - k:
         stack.popleft()
       w___ stack and nums[stack[-1]] < nums[i]:
-        stack.pop()
+        stack.p..
       stack.append(i)
       ans[idx] = nums[stack[0]]
 

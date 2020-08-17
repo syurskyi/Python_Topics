@@ -19,7 +19,7 @@ ___ is_matching(word
             __(open_brackets.index(open_brackets_in_word[-1]) != close_brackets.index(i)):
                 r_ 0
             ____
-                open_brackets_in_word.pop()
+                open_brackets_in_word.p..
     __(le.(open_brackets_in_word) > 0
         r_ 0
     r_ 1

@@ -48,7 +48,7 @@ class Solution:
 
         ___ i in xrange(n
             w___ inc_stack and height[inc_stack[-1]] > height[i]:
-                last = inc_stack.pop()
+                last = inc_stack.p..
                 __ inc_stack:  # calculate area when popping
                     area = height[last]*(i-(inc_stack[-1]+1))
                 ____
@@ -60,7 +60,7 @@ class Solution:
         # after processing all heights, process the remaining stack
         i = n
         w___ inc_stack:
-            last = inc_stack.pop()
+            last = inc_stack.p..
             __ inc_stack:
                 area = height[last]*(i-(inc_stack[-1]+1))
             ____
@@ -141,7 +141,7 @@ class Solution:
                 inc_stack.append(i)
                 i += 1
             ____
-                last = inc_stack.pop()
+                last = inc_stack.p..
                 __ inc_stack:
                     area = height[last] * (i-last)
                 ____
@@ -150,7 +150,7 @@ class Solution:
 
         # remaining stack
         w___ inc_stack:
-            last = inc_stack.pop()
+            last = inc_stack.p..
             __ inc_stack:
                 area = height[last]*(i-last)
             ____

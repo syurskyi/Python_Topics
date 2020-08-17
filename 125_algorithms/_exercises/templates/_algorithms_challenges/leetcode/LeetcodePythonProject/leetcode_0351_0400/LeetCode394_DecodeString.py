@@ -15,7 +15,7 @@ class Solution(object
                 stack.append(['', int(num)])
                 num = ''
             ____ c __ ']':
-                st, k = stack.pop()
+                st, k = stack.p..
                 stack[-1][0] += st*k
             ____
                 stack[-1][0] += c

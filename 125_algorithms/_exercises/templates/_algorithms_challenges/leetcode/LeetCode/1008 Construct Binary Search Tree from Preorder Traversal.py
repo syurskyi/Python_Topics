@@ -52,10 +52,10 @@ class Solution:
                 stk[-1].left = node
             ____
                 w___ le.(stk) >= 2 and stk[-2].val < a:
-                    stk.pop()
+                    stk.p..
 
                 stk[-1].right = node
-                stk.pop()
+                stk.p..
 
             stk.append(node)
 
@@ -74,7 +74,7 @@ class Solution:
                 stk[-1].left = node
             ____
                 w___ stk and stk[-1].val < a:
-                    pi = stk.pop()
+                    pi = stk.p..
                 pi.right = node
             stk.append(node)
             

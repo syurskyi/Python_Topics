@@ -26,7 +26,7 @@ class Solution(object
                 res.append(num)
                 __ self.helper(s, j, res
                     r_ True
-                res.pop()
+                res.p..
         r_ False
     
     ___ test(self

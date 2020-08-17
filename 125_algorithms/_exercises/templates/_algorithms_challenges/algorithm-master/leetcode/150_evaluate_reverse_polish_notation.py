@@ -20,8 +20,8 @@ class Solution:
                 stack.append(int(char))
                 continue
 
-            b = stack.pop()
-            a = stack.pop()
+            b = stack.p..
+            a = stack.p..
 
             stack.append(int(operation[char](a, b)))
 

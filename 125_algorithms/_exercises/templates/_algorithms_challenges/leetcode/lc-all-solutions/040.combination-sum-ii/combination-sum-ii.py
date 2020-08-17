@@ -20,7 +20,7 @@ class Solution(object
           visited.add(i)
           path.append(nums[i])
           dfs(nums, target - nums[i], i + 1, visited, path, res)
-          path.pop()
+          path.p..
           visited.discard(i)
 
     candidates.sort()

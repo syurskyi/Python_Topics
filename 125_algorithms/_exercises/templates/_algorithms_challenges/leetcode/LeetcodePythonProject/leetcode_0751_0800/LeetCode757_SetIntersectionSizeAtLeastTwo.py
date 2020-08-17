@@ -13,13 +13,13 @@ class Solution(object
         stack = []
         ___ interval in intervals:
             w___ stack and stack[-1][1] >= interval[1]:
-                stack.pop()
+                stack.p..
             stack.append(interval)
         n = le.(stack)
         a = [[0, 0] ___ _ in range(n)]
         ___ i in range(n-1, -1, -1
             a[i][0] = stack[-1][0]
-            a[i][1] = stack.pop()[1]
+            a[i][1] = stack.p..[1]
         res = 2
         p1 = a[0][1]-1
         p2 = a[0][1]

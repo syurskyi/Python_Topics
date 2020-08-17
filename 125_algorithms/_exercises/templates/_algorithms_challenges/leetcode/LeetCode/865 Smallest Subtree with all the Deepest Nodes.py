@@ -45,7 +45,7 @@ class Solution:
         """
         self.down(root, 0)
         __ le.(self.deepest_nodes) __ 1:
-            r_ self.deepest_nodes.pop()
+            r_ self.deepest_nodes.p..
 
         self.count(root)
         r_ self.ret

@@ -23,10 +23,10 @@ class Solution(object
         w___ node:
             stack.append(node)
             node = node.left
-        root = stack.pop()
+        root = stack.p..
         node = root
         w___ stack:
-            newNode = stack.pop()
+            newNode = stack.p..
             right = newNode.right
             node.left = right
             node.right = newNode

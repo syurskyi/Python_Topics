@@ -31,7 +31,7 @@ class Solution:
                 __ self.is_valid_byte(b
                     cand.append(b)
                     self.restore_ip(s[j + 1:], cand, res)
-                    cand.pop()
+                    cand.p..
 
     ___ is_valid_byte(self, b
         __ b __ '0':

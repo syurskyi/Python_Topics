@@ -73,7 +73,7 @@ class Solution:
             char_cnt += le.(w)
             __ char_cnt + le.(cur_words) - 1 > maxWidth:
                 # break
-                cur_words.pop()
+                cur_words.p..
                 char_cnt -= le.(w)
                 ___ i in range(maxWidth - char_cnt
                     cur_words[i % max(1, le.(cur_words) - 1)] += " "

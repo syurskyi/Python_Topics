@@ -45,11 +45,11 @@ class Solution:
                 ____ prev_op __ "-":
                     cur = -operand
                 ____ prev_op __ "*":
-                    cur = stk.pop() * operand
+                    cur = stk.p.. * operand
                 ____
                     assert prev_op __ "/"
                     # instead of op1 // op2 due to negative handling, -3 // 2 == -2
-                    cur = int(stk.pop() / operand)
+                    cur = int(stk.p.. / operand)
 
                 stk.append(cur)
                 prev_op = c
@@ -74,8 +74,8 @@ class Solution:
                 cur = {
                     "+": operand,
                     "-": -operand,
-                    "*": stk.pop() * operand,
-                    "/": int(stk.pop() / operand),  # instead of op1 // op2 due to negative handling, -3 // 2 == -2
+                    "*": stk.p.. * operand,
+                    "/": int(stk.p.. / operand),  # instead of op1 // op2 due to negative handling, -3 // 2 == -2
                 }[prev_op]
                 stk.append(cur)
 

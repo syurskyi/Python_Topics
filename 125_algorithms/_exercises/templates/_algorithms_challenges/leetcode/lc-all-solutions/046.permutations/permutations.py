@@ -19,7 +19,7 @@ class Solution(object
           visited.add(i)
           path.append(nums[i])
           dfs(nums, path, res, visited)
-          path.pop()
+          path.p..
           visited.discard(i)
 
     dfs(nums, [], res, visited)

@@ -57,7 +57,7 @@ class Solution:
             ____ elt __ ")":
                 w___ stk[-1] != "(":
                     ret.append(stk.pop())
-                stk.pop()
+                stk.p..
             ____  # generalized to include * and /
                 w___ stk and self.precendece(elt) <= self.precendece(stk[-1]
                     ret.append(stk.pop())

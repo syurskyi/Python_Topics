@@ -41,6 +41,6 @@ class Solution:
                     __ self.judgePoint24(nxts
                         r_ True
 
-                    nxts.pop()
+                    nxts.p..
 
         r_ False

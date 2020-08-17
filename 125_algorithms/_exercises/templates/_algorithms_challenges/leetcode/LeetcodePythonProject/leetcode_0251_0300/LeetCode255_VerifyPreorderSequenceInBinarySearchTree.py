@@ -33,6 +33,6 @@ class Solution(object
             __ p < low:
                 r_ False
             w___ stack and stack[-1] < p:
-                low = stack.pop()
+                low = stack.p..
             stack.append(p)
         r_ True

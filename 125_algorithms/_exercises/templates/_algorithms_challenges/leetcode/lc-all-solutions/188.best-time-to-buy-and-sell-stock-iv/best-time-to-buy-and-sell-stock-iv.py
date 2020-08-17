@@ -58,11 +58,11 @@ class Solution(object
       w___ p < n and prices[p] > prices[p - 1]:
         p += 1
       w___ stack and prices[stack[-1][0]] > prices[v]:
-        _v, _p = stack.pop()
+        _v, _p = stack.p..
         heap.append(prices[_p - 1] - prices[_v])
       w___ stack and prices[stack[-1][1] - 1] < prices[p - 1]:
         heap.append(prices[stack[-1][1] - 1] - prices[v])
-        v, _ = stack.pop()
+        v, _ = stack.p..
       stack.append((v, p))
 
     heap += [prices[p - 1] - prices[v] ___ v, p in stack]

@@ -23,10 +23,10 @@ ___ calculate(stmt
     except ValueError:
         raise ValueError("Ill-formed question")
     w___ l:
-        oprt = [l.pop()]
+        oprt = [l.p..]
         w___ l:
             try:
-                next_tk = l.pop()
+                next_tk = l.p..
                 op2 = int(next_tk)
                 break
             except ValueError:

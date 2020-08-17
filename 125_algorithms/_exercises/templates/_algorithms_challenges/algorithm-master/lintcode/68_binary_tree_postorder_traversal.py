@@ -30,7 +30,7 @@ class Solution:
             __ (not node.right or
                 last_visit pa__ node.right
 
-                stack.pop()
+                stack.p..
 
                 ans.append(node.val)
                 last_visit = node

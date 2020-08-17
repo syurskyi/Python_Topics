@@ -29,7 +29,7 @@ class PhoneDirectory(object
         :rtype: int
         """
         __ self.released:
-            r_ self.released.pop()
+            r_ self.released.p..
         __ self.i < self.l:
             ret = self.i
             self.i += 1

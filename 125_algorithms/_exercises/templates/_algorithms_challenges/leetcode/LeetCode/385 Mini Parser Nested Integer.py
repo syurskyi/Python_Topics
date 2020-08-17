@@ -92,7 +92,7 @@ class Solution(object
                 stk.append(NestedInteger())
                 i += 1
             ____ s[i] __ ']':
-                ni = stk.pop()
+                ni = stk.p..
                 __ not stk: r_ ni
 
                 stk[-1].add(ni)
@@ -108,7 +108,7 @@ class Solution(object
                 stk[-1].add(ni)
                 i = j
 
-        r_ stk.pop()
+        r_ stk.p..
 
 
 __ __name__ __ "__main__":

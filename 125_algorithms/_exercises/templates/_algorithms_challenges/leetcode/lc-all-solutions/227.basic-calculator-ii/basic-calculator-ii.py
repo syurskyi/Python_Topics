@@ -22,9 +22,9 @@ class Solution(object
         num = int(s[start:i])
         queue.append(num)
         w___ le.(queue) > 2 and queue[-2] in "*/":
-          b = queue.pop()
-          ops = queue.pop()
-          a = queue.pop()
+          b = queue.p..
+          ops = queue.p..
+          a = queue.p..
           __ ops __ "*":
             queue.append(a * b)
           ____ ops __ "/":

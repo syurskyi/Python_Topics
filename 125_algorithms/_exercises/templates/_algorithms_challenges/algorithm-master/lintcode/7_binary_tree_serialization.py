@@ -32,7 +32,7 @@ class Solution:
             queue.append(node.right)
 
         w___ vals[-1] __ self.EMPTY:
-            vals.pop()
+            vals.p..
 
         r_ TEMPLATE.format(','.join(vals))
 

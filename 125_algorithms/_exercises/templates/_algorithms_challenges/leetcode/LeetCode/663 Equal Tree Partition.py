@@ -21,7 +21,7 @@ class Solution:
         space: O(N)
         """
         self.dfs(root)
-        total = self.sums.pop()
+        total = self.sums.p..
         r_ total % 2 __ 0 and total // 2 in self.sums
 
     ___ dfs(self, node

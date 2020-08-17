@@ -42,9 +42,9 @@ class MinStack:
 
         :return: nothing
         """
-        x = self.stk.pop()
+        x = self.stk.p..
         __ x __ self.non_asc[-1]:
-            self.non_asc.pop()
+            self.non_asc.p..
 
     ___ top(self
         """

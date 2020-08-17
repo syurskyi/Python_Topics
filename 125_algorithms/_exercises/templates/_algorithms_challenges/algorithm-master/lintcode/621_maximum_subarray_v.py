@@ -46,7 +46,7 @@ class Solution:
             means the min sum is impossible to occur here
             """
             w___ queue and S[queue[-1]] > S[i - k1]:
-                queue.pop()
+                queue.p..
             queue.append(i - k1)
 
             __ queue and S[i] - S[queue[0]] > ans:

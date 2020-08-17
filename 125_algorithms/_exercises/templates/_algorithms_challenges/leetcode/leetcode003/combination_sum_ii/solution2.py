@@ -20,5 +20,5 @@ class Solution:
                         cand.append(c)
                         self.combination_sum_aux(candidates[i + 1:],
                                                  target - c, cand, res)
-                        cand.pop()
+                        cand.p..
                 prev = c

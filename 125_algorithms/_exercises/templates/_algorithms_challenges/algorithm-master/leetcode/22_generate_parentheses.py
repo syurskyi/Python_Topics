@@ -19,9 +19,9 @@ class Solution:
         __ rcnt < lcnt:
             path.append(')')
             self.dfs(n, lcnt, rcnt + 1, ans, path)
-            path.pop()
+            path.p..
 
         __ lcnt < n:
             path.append('(')
             self.dfs(n, lcnt + 1, rcnt, ans, path)
-            path.pop()
+            path.p..

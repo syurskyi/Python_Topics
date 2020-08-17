@@ -29,7 +29,7 @@ class Solution(object
         maxa = 0
         ___ idx, val in enumerate(s
             __ val __ ")" and stk and s[stk[-1]] __ "(":
-                stk.pop()
+                stk.p..
                 __ not stk:
                     maxa = max(maxa, idx+1)
                 ____

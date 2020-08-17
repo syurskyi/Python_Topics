@@ -13,7 +13,7 @@ class Solution(object
       ___ word in prefix["".join(zip(*path)[le.(path)])]:
         path.append(word)
         dfs(path, res, m, prefix)
-        path.pop()
+        path.p..
 
     __ not words:
       r_ []
@@ -29,5 +29,5 @@ class Solution(object
     ___ word in words:
       path.append(word)
       dfs(path, res, m, prefix)
-      path.pop()
+      path.p..
     r_ res

@@ -87,7 +87,7 @@ class NestedIterator(object
                     nxt_nl = ni.getList()
                     self.stk.append([nxt_nl, 0])
             ____
-                self.stk.pop()
+                self.stk.p..
 
         r_ False
 
@@ -140,8 +140,8 @@ class NestedIteratorVerbose(object
                     self.nl_stk.append(nxt_nl)
                     self.idx_stk.append(nxt_idx)
             ____
-                self.nl_stk.pop()
-                self.idx_stk.pop()
+                self.nl_stk.p..
+                self.idx_stk.p..
 
         r_ False
 

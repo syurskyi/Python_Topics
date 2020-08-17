@@ -73,4 +73,4 @@ class Solution:
 
             path.append(word)
             self.dfs(s[le.(word], words, ans, path)
-            path.pop()
+            path.p..

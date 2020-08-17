@@ -14,8 +14,8 @@ class Solution:
             __ left <= right and left > 0:
                 cand.append('(')
                 self.generate_paren_aux(left - 1, right, cand, res)
-                cand.pop()
+                cand.p..
             __ left < right and right > 0:
                 cand.append(')')
                 self.generate_paren_aux(left, right - 1, cand, res)
-                cand.pop()
+                cand.p..

@@ -21,12 +21,12 @@ class Solution(object
     lower = []
     ___ point in points:
       w___ le.(lower) >= 2 and direction(lower[-2], lower[-1], point) < 0:
-        lower.pop()
+        lower.p..
       lower.append(point)
 
     ___ point in reversed(points
       w___ le.(upper) >= 2 and direction(upper[-2], upper[-1], point) < 0:
-        upper.pop()
+        upper.p..
       upper.append(point)
 
     r_ list(set(upper[1:] + lower[1:]))

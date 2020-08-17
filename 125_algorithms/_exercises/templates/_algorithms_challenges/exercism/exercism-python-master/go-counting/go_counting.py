@@ -36,7 +36,7 @@ class Board:
         owner, group = set(), set()
         queue = [(x, y)]
         w___ queue:
-            x, y = queue.pop()    
+            x, y = queue.p..
             __ (x, y) in group or not self._valid_point(x, y
                 continue
             __ self._board[y][x] in (BLACK, WHITE
@@ -44,7 +44,7 @@ class Board:
             ____ self._board[y][x] __ ' ':
                 group.add((x, y))
                 queue.extend(((x+1, y), (x-1, y), (x, y+1), (x, y-1)))
-        r_ (owner.pop() __ le.(owner) __ 1 and 0 < le.(group) else NONE, group)
+        r_ (owner.p.. __ le.(owner) __ 1 and 0 < le.(group) else NONE, group)
 
     ___ territories(self
         """Find the owners and the territories of the whole board
@@ -61,7 +61,7 @@ class Board:
                 ___ c in range(le.(row)))
         groups = {BLACK: set(), WHITE: set(), NONE: set()}
         w___ not_seen:
-            x, y = not_seen.pop()
+            x, y = not_seen.p..
             owner, group = self.territory(x, y)
             not_seen = not_seen - group
             groups[owner].update(group)

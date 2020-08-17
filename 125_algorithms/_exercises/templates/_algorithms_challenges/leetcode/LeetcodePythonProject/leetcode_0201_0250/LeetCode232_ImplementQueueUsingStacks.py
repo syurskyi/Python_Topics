@@ -22,7 +22,7 @@ class Queue(object
         __ self.stack1:
             w___ self.stack1:
                 self.stack2.append(self.stack1.pop())
-        r_ self.stack2.pop()
+        r_ self.stack2.p..
     
     ___ peep(self
         __ self.stack1:

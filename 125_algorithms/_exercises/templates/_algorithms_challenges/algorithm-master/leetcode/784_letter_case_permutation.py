@@ -20,4 +20,4 @@ class Solution:
         ___ c in options:
             path.append(c)
             self.dfs(s, i + 1, ans, path)
-            path.pop()
+            path.p..

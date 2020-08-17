@@ -11,7 +11,7 @@ ___ _ in range(int(input())):
     __ line[0] __ 'append':
         d.append(line[1])
     ____ line[0] __ 'pop':
-        d.pop()
+        d.p..
     ____ line[0] __ 'popleft':
         d.popleft()
     ____ line[0] __ 'appendleft':

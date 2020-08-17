@@ -113,7 +113,7 @@ class AllOne(object
         
     ___ getMax(self
         __ self.tail:
-            val = self.tail.keySet.pop()
+            val = self.tail.keySet.p..
             self.tail.keySet.add(val)
             r_ val
         ____
@@ -121,7 +121,7 @@ class AllOne(object
     
     ___ getMin(self
         __ self.head:
-            val = self.head.keySet.pop()
+            val = self.head.keySet.p..
             self.head.keySet.add(val)
             r_ val
         ____

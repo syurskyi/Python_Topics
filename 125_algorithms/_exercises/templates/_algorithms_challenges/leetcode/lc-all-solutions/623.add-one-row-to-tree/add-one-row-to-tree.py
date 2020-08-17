@@ -18,7 +18,7 @@ class Solution(object
     dummy.left = root
     stack = [(1, dummy, 0)]
     w___ stack:
-      p, node, h = stack.pop()
+      p, node, h = stack.p..
       __ not node:
         continue
       __ p __ 1:

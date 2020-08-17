@@ -28,7 +28,7 @@ class Solution(object
     ___ getPredecessor(stack
       __ not stack:
         r_
-      pre = stack.pop()
+      pre = stack.p..
       p = pre.left
       w___ p:
         stack.append(p)
@@ -38,7 +38,7 @@ class Solution(object
     ___ getSuccessor(stack
       __ not stack:
         r_
-      suc = stack.pop()
+      suc = stack.p..
       p = suc.right
       w___ p:
         stack.append(p)

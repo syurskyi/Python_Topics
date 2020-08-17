@@ -53,5 +53,5 @@ class Solution:
         cur.append(candidates[i])
         cur_sum += candidates[i]
         self.dfs(candidates, i, cur, cur_sum, target, ret)
-        cur.pop()
+        cur.p..
         cur_sum -= candidates[i]

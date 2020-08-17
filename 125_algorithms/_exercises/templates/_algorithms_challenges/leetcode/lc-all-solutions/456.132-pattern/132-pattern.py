@@ -10,6 +10,6 @@ class Solution(object
       __ ak > num:
         r_ True
       w___ stack and stack[-1] < num:
-        ak = stack.pop()
+        ak = stack.p..
       stack += num,
     r_ False

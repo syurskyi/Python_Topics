@@ -33,7 +33,7 @@ class Solution(object
                 stack.append(i)
                 i += 1
             ____
-                h = heights[stack.pop()]
+                h = heights[stack.p..]
                 w = i __ not stack else i-stack[-1]-1
                 area = max(area, h*w)
         r_ area

@@ -26,4 +26,4 @@ class Solution:
                 ___ letter in letters:
                     cand.append(letter)
                     self.letter_combination_aux(i + 1, digits, d, cand, res)
-                    cand.pop()
+                    cand.p..

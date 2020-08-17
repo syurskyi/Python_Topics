@@ -46,7 +46,7 @@ class Solution(object
         __ p.isLeaf:
             elem.append(c)
             result.add(''.join(elem))
-            elem.pop()
+            elem.p..
         m, n = le.(board), le.(board[0])
         
         ___ x, y in ((i, j+1), (i, j-1), (i+1, j), (i-1, j)):
@@ -55,7 +55,7 @@ class Solution(object
                 elem.append(c)
                 self.dfs(board, x, y, p, elem, result)
                 board[i][j] = c
-                elem.pop()
+                elem.p..
         
     ___ test(self
         testCases = [

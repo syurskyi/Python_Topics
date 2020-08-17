@@ -58,4 +58,4 @@ class Solution:
         ____
             self.dfs(node.left)
             self.dfs(node.right)
-        self.lst.pop()
+        self.lst.p..

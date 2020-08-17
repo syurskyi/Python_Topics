@@ -19,7 +19,7 @@ class Solution(object
                 res += valids[-1]*2
                 valids.append(valids[-1]*2)
             ____ c __ 'C':
-                d = valids.pop()
+                d = valids.p..
                 res -= d
             ____
                 res += int(c)

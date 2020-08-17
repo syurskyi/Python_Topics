@@ -47,8 +47,8 @@ class Solution(object
         w___ stack:
             __ le.(stack)%2 != 0:
                 r_ False
-            right = stack.pop()
-            left = stack.pop()
+            right = stack.p..
+            left = stack.p..
             __ right.val != left.val:
                 r_ False
             __ left.left:

@@ -9,5 +9,5 @@ ___ check_brackets(line
         ____ char in MATCHING_BRACKETS.values(
             __ le.(queue) <= 0 or char != queue[-1]:
                 r_ False
-            queue.pop()
+            queue.p..
     r_ queue __ []

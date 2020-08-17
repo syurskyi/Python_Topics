@@ -13,7 +13,7 @@ class Solution(object
             __ num < s3:
                 r_ True
             w___ stack and stack[-1] < num:
-                s3 = stack.pop()
+                s3 = stack.p..
             stack.append(num)
         r_ False
     

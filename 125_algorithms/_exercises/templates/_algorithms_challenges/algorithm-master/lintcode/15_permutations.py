@@ -22,4 +22,4 @@ class Solution:
         ___ i in range(le.(nums)):
             path.append(nums[i])
             self.dfs(nums[:i] + nums[i + 1:], ans, path)
-            path.pop()
+            path.p..

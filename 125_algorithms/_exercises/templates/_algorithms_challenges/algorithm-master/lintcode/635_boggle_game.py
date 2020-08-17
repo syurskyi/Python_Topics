@@ -78,7 +78,7 @@ class Solution:
 
                 self.find_next_words(board, _x, _y, visited, cnt, node, next_words, path)
 
-        path.pop()
+        path.p..
         visited.discard((x, y))
 
     ___ put(self, root, word

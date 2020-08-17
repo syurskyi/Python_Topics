@@ -25,7 +25,7 @@ class Solution(object
         ___ i in range(start, 10
             elem.append(i)
             self.helper(elem, i+1, k, n-i, result)
-            elem.pop()
+            elem.p..
     
     ___ test(self
         testCases = [

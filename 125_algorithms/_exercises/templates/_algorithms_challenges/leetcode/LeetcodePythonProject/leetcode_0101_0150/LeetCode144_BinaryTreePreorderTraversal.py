@@ -20,7 +20,7 @@ class Solution(object
         stack = [root]
         res = []
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             res.append(node.val)
             __ node.right:
                 stack.append(node.right)

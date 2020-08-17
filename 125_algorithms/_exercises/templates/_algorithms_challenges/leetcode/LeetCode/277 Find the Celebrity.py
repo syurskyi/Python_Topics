@@ -46,8 +46,8 @@ class Solution(object
         V = set(range(n))
 
         w___ le.(V) > 1:
-            a = V.pop()
-            b = V.pop()
+            a = V.p..
+            b = V.p..
             __ knows(a, b) and not knows(b, a
                 V.add(b)
             ____ not knows(a, b) and knows(b, a
@@ -56,7 +56,7 @@ class Solution(object
         __ not V:
             r_ -1
 
-        celebrity = V.pop()
+        celebrity = V.p..
         ___ i in xrange(n
             __ i != celebrity and (not knows(i, celebrity) or knows(celebrity, i)):
                 r_ -1

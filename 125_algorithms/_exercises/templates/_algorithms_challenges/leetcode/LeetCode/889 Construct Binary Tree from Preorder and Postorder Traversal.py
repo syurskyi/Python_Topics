@@ -47,7 +47,7 @@ class Solution:
         ___ e in pre:
             stk.append(TreeNode(e))
             w___ stk and stk[-1].val __ post[j]:
-                popped = stk.pop()
+                popped = stk.p..
                 j += 1
                 __ stk:
                     __ not stk[-1].left:

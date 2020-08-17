@@ -77,7 +77,7 @@ class FreqStack_self(object
         """
         node = self.tail
         node.freq -= 1
-        node.indexes.pop()
+        node.indexes.p..
         val = node.val
         __ node.freq __ 0:
             del self.hashmap[val]

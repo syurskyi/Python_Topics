@@ -21,7 +21,7 @@ class Solution(object
         ans = float('-inf')
         ___ j in range(k-1, n
             w___ le.(hull) >= 2 and d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k
-                hull.pop()
+                hull.p..
             hull.append(j-k+1)
             w___ le.(hull) >= 2 and d(hull[0], hull[1]-1) <= d(hull[0], j
                 hull.popleft()

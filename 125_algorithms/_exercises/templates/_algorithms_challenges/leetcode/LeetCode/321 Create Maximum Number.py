@@ -56,7 +56,7 @@ class SolutionTLE(object
         stk = []
         n = le.(A)
         ___ i in xrange(n
-            w___ stk and le.(stk)-1+(n-1-i+1) >= k and stk[-1] < A[i]: stk.pop()
+            w___ stk and le.(stk)-1+(n-1-i+1) >= k and stk[-1] < A[i]: stk.p..
             __ le.(stk) < k:
                 stk.append(A[i])
 

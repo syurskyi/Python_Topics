@@ -40,12 +40,12 @@ class Solution(object
                 stk[-1][1].append(s[i])
                 i += 1
             ____ s[i] __ ']':  # pop
-                cnt, partial = stk.pop()
+                cnt, partial = stk.p..
                 partial = ''.join(partial) * cnt
                 stk[-1][1].append(partial)
                 i += 1
 
-        r_ ''.join(stk.pop()[1])
+        r_ ''.join(stk.p..[1])
 
 
 class SolutionVerbose(object
@@ -72,7 +72,7 @@ class SolutionVerbose(object
                     stk[-1][1].append(s[i])
                 i += 1
             ____ s[i] __ ']':  # pop
-                cnt, partial = stk.pop()
+                cnt, partial = stk.p..
                 partial = ''.join(partial) * cnt
                 __ not stk:
                    ret.append(partial)
@@ -105,7 +105,7 @@ class SolutionError(object
                 ___ _ in xrange(repeat ret.append(s[i])
                 i += 1
             ____ s[i] __ ']':
-                stk.pop()
+                stk.p..
                 i += 1
 
         r_ ''.join(ret)

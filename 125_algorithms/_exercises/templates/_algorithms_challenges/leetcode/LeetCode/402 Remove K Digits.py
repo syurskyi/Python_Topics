@@ -36,11 +36,11 @@ class Solution(object
         stk = []  # result after removal
         ___ char in num:
             w___ k and stk and stk[-1] > char:
-                stk.pop()
+                stk.p..
                 k -= 1
 
             stk.append(char)
 
-        ___ _ in xrange(k stk.pop()
+        ___ _ in xrange(k stk.p..
 
         r_ ''.join(stk).lstrip('0') or '0'

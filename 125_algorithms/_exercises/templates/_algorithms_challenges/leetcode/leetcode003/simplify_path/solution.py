@@ -7,7 +7,7 @@ class Solution:
         ___ d in ps:
             __ d __ '..':
                 __ res:
-                    res.pop()
+                    res.p..
             ____ d __ '.' or d __ '':
                 pass
             ____

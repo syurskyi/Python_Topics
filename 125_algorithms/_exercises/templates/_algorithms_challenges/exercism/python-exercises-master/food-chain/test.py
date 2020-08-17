@@ -103,7 +103,7 @@ class FoodChainTest(unittest.TestCase
         expected = []
         ___ n in range(1, 9
             expected += recite(n, n) + [""]
-        expected.pop()
+        expected.p..
         self.assertEqual(recite(1, 8), expected)
 
 

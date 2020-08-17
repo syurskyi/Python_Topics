@@ -22,7 +22,7 @@ class Solution(object
             __ self.isPalindrome(s[startInd:i+1]
                 elem.append(s[startInd:i+1])
                 self.helper(s, i+1, elem, result)
-                elem.pop()
+                elem.p..
     
     ___ isPalindrome(self, s
         __ not s: r_ False

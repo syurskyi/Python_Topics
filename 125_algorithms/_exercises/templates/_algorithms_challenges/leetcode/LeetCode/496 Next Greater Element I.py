@@ -50,7 +50,7 @@ class Solution:
         ___ e in nums2[::-1]:
             w___ stk and stk[-1] <= e:
                 # until stk[-1] > e
-                stk.pop()
+                stk.p..
 
             h[e] = stk[-1] __ stk else -1
             stk.append(e)

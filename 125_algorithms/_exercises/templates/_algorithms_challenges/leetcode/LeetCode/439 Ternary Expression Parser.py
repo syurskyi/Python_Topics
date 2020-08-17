@@ -12,10 +12,10 @@ class Solution:
         stk = []
         ___ c in reversed(expression
             __ stk and stk[-1] __ "?":
-                stk.pop()  # ?
-                first = stk.pop()
-                stk.pop()  # :
-                second = stk.pop()
+                stk.p..  # ?
+                first = stk.p..
+                stk.p..  # :
+                second = stk.p..
                 __ c __ "T":
                     stk.append(first)
                 ____
@@ -49,12 +49,12 @@ class Solution:
             ____  # "?"
                 i = j - 1
                 __ expression[i] __ "T":
-                    a = stk.pop()
-                    stk.pop()
+                    a = stk.p..
+                    stk.p..
                     stk.append(a)
                     i -= 1
                 ____
-                    stk.pop()
+                    stk.p..
                     i -= 1
 
         r_ stk[0]

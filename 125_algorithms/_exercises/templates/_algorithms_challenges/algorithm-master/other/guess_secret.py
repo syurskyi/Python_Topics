@@ -22,7 +22,7 @@ ___ find_secret(secret, words
 
     w___ le.(words) > 1:
         has_got, correct_cnt = secret.guess(words[-1])
-        guess_word = words.pop()
+        guess_word = words.p..
 
         __ has_got:
             r_ guess_word

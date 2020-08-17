@@ -75,7 +75,7 @@ class Solution:
         # keep s[i]
         path.append(s[i])
         self.find_cands(s, i + 1, cands, path)
-        path.pop()
+        path.p..
 
         # ignore s[i]
         self.find_cands(s, i + 1, cands, path)

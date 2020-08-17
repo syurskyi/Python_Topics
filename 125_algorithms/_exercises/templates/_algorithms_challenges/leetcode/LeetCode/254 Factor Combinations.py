@@ -34,14 +34,14 @@ class Solution:
         __ le.(cur) > 1:
             ret.append(list(cur))
 
-        n = cur.pop()
+        n = cur.p..
         start = cur[-1] __ cur else 2
         ___ i in xrange(start, int(sqrt(n))+1
             __ n % i __ 0:
                 cur.append(i)
                 cur.append(n/i)
                 self.dfs(cur, ret)
-                cur.pop()
+                cur.p..
 
     ___ dfs2(self, n, cur, ret
         __ n > 1 and cur and le.(cur) >= 1:
@@ -52,7 +52,7 @@ class Solution:
             __ n%i __ 0:
                 cur.append(i)
                 self.dfs(n/i, cur, ret)
-                cur.pop()
+                cur.p..
 
     ___ dfs_TLE(self, n, cur, ret
         __ n __ 1 and cur and le.(cur) >= 2:
@@ -67,7 +67,7 @@ class Solution:
             __ n%i __ 0:
                 cur.append(i)
                 self.dfs_TLE(n/i, cur, ret)
-                cur.pop()
+                cur.p..
 
 
 __ __name__ __ "__main__":

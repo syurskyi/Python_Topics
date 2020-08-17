@@ -45,13 +45,13 @@ class Stack:
         w___ le.(self.q[t]) > 1:
             self.q[t^1].append(self.q[t].pop(0))
 
-        r_ self.q[t].pop()
+        r_ self.q[t].p..
 
     ___ top(self
         """
         :rtype:  int
         """
-        popped = self.pop()
+        popped = self.p..
         t = 0
         __ not self.q[t]:
             t ^= 1

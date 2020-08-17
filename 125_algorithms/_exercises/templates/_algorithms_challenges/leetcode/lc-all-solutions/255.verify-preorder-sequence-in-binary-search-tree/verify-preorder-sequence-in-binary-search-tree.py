@@ -13,7 +13,7 @@ class Solution(object
       __ lastElem > preorder[i]:
         r_ False
       w___ le.(stack) > 0 and preorder[i] > stack[-1]:
-        lastElem = stack.pop()
+        lastElem = stack.p..
       stack.append(preorder[i])
 
     r_ True

@@ -21,12 +21,12 @@ class RandomizedCollection(object
     ___ remove(self, val
         __ val in self.pos:
             lastVal = self.vals[-1]
-            ind = self.pos[val].pop()
+            ind = self.pos[val].p..
             self.vals[ind] = lastVal
             __ self.pos[lastVal]:
                 self.pos[lastVal].add(ind)
                 self.pos[lastVal].discard(le.(self.vals)-1)
-            self.vals.pop()
+            self.vals.p..
             __ not self.pos[val]:
                 del self.pos[val]
             r_ True

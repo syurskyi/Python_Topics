@@ -16,7 +16,7 @@ c_ Graph:
 
         w___(le.(st)):
             cur _ st[-1]
-            st.pop()
+            st.p..
 
             __(cur no. __ visited
                 print(cur, end_" ")

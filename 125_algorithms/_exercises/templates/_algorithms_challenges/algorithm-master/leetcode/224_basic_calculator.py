@@ -38,7 +38,7 @@ class Solution:
             ____ char __ ')':
                 w___ stack and stack[-1] != '(':
                     res.append(stack.pop())
-                stack.pop()
+                stack.p..
 
         w___ stack:
             res.append(stack.pop())
@@ -52,8 +52,8 @@ class Solution:
             __ char.isdigit(
                 stack.append(int(char))
             ____ char in self.OP:
-                b = stack.pop()
-                a = stack.pop()
+                b = stack.p..
+                a = stack.p..
                 stack.append(self.OP[char](a, b))
 
         r_ stack[0]
@@ -94,7 +94,7 @@ class Solution:
             ____ char __ ')':
                 w___ stack and stack[-1] != '(':
                     res.append(stack.pop())
-                stack.pop()
+                stack.p..
 
         w___ stack:
             res.append(stack.pop())
@@ -108,8 +108,8 @@ class Solution:
             __ char.isdigit(
                 stack.append(int(char))
             ____ char in '+-':
-                b = stack.pop()
-                a = stack.pop()
+                b = stack.p..
+                a = stack.p..
 
                 __ char __ '+':
                     stack.append(a + b)

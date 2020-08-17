@@ -28,7 +28,7 @@ class Solution(object
                 __ self.dfs(arr, goal, visited, n, k
                     r_ True
                 visited.remove(nextStr)
-                arr.pop()
+                arr.p..
         r_ False
     
     ___ test(self

@@ -27,7 +27,7 @@ class Solution(object
         ret = dfs(path, graph, maxLen, top)
         __ ret:
           r_ ret
-        path.pop()
+        path.p..
         nbr.append(top)
       r_ []
 

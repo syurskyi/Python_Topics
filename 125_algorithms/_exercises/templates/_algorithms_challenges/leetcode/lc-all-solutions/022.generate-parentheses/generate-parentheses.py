@@ -14,11 +14,11 @@ class Solution(object
       __ left < n:
         path.append("(")
         dfs(left + 1, path, res, n)
-        path.pop()
+        path.p..
       __ left > 0:
         path.append(")")
         dfs(left - 1, path, res, n)
-        path.pop()
+        path.p..
 
     res = []
     dfs(0, [], res, n)

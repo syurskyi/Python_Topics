@@ -15,14 +15,14 @@ class TestSetOfStacks(object
         stacks.push('a')
 
         print('Test: Pop on a stack to destroy it')
-        assert_equal(stacks.pop(), 'a')
+        assert_equal(stacks.p.., 'a')
 
         print('Test: Pop general case')
-        assert_equal(stacks.pop(), 5)
-        assert_equal(stacks.pop(), 3)
+        assert_equal(stacks.p.., 5)
+        assert_equal(stacks.p.., 3)
 
         print('Test: Pop on no elements')
-        assert_equal(stacks.pop(), None)
+        assert_equal(stacks.p.., None)
 
         print('Success: test_set_of_stacks')
 

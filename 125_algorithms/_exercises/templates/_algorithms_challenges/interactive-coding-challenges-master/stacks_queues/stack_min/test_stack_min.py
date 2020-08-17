@@ -21,17 +21,17 @@ class TestStackMin(object
         assert_equal(stack.minimum(), 0)
 
         print('Test: Pop on non-empty stack')
-        assert_equal(stack.pop(), 0)
+        assert_equal(stack.p.., 0)
         assert_equal(stack.minimum(), 1)
-        assert_equal(stack.pop(), 3)
+        assert_equal(stack.p.., 3)
         assert_equal(stack.minimum(), 1)
-        assert_equal(stack.pop(), 1)
+        assert_equal(stack.p.., 1)
         assert_equal(stack.minimum(), 5)
-        assert_equal(stack.pop(), 5)
+        assert_equal(stack.p.., 5)
         assert_equal(stack.minimum(), sys.maxsize)
 
         print('Test: Pop empty stack')
-        assert_equal(stack.pop(), None)
+        assert_equal(stack.p.., None)
 
         print('Success: test_stack_min')
 

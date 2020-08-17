@@ -50,7 +50,7 @@ class Solution:
                 stk.append(s)
             ____
                 __ stk:
-                    stk.pop()
+                    stk.p..
                 ____
                     ret += 1
 

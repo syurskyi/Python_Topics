@@ -81,7 +81,7 @@ class Solution(object
             r_
         stk = [root]
         w___ stk:
-            node = stk.pop()
+            node = stk.p..
             lst.append(node.val)
             __ node.right:  # right first
                 stk.append(node.right)

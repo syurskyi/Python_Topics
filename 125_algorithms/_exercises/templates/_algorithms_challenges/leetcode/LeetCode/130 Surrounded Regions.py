@@ -42,7 +42,7 @@ class Solution:
 
 
         w___ q: # dynamically expanding, no deletion of elements
-            cor = q.pop()
+            cor = q.p..
             board[cor[0]][cor[1]]=CONNECTED  # cannot be both "O" and CONNECTED
             ___ direction in directions:
                 row = cor[0]+direction[0]

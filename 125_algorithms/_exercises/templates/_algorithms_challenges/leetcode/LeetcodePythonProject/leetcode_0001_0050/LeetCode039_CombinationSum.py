@@ -23,4 +23,4 @@ class Solution(object
         ___ i in range(ind, le.(nums)):
             curr.append(nums[i])
             self.helper(nums, i, curr, target-nums[i], res)
-            curr.pop()
+            curr.p..

@@ -22,7 +22,7 @@ class Solution(object
         ___ i in range(start, le.(nums)):
             elem.append(nums[i])
             self.helper(nums, elem, i+1, result)
-            elem.pop()
+            elem.p..
     
     ___ test(self
         testCases = [

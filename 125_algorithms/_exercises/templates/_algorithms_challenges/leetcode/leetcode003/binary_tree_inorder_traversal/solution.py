@@ -35,7 +35,7 @@ class Solution(object
                 stack.append(root)
                 root = root.left
             ____
-                root = stack.pop()
+                root = stack.p..
                 path.append(root.val)
                 root = root.right
         r_ path

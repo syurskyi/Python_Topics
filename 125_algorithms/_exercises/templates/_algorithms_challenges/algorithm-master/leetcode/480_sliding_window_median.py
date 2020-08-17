@@ -37,10 +37,10 @@ class HashHeapq:
             r_
 
         __ i __ n - 1:
-            self.__heap.pop()
+            self.__heap.p..
         ____
             self.__heap[i] = self.__heap[-1]
-            self.__heap.pop()
+            self.__heap.p..
             heapq._siftup(self.__heap, i)
             heapq._siftdown(self.__heap, 0, i)
 

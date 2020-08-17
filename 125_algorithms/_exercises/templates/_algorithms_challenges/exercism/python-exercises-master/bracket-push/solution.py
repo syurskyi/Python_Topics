@@ -8,6 +8,6 @@ ___ check_brackets(string
         ____ char in counterparts:
             __ not stack:
                 r_ False
-            __ stack.pop() != counterparts[char]:
+            __ stack.p.. != counterparts[char]:
                 r_ False
     r_ not stack

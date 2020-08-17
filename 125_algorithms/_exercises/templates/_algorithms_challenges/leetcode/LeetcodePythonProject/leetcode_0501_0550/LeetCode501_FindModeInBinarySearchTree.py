@@ -27,7 +27,7 @@ class Solution(object
             stack.append(node)
             node = node.left
         w___ stack:
-            node = stack.pop()
+            node = stack.p..
             __ node.val != prev:
                 count = 1
                 prev = node.val

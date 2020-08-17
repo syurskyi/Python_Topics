@@ -29,4 +29,4 @@ class Solution:
 
             path.append(A[i])
             self.dfs(A, i + 1, remaining - A[i], ans, path)
-            path.pop()
+            path.p..

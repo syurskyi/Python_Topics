@@ -74,20 +74,20 @@ ___ parse(input_string
     ___ pop_until(ch
         v = ''
         w___ peek() != ch:
-            v += pop()
+            v += p..
         r_ v
     w___ stack:
-        assert_that(pop() __ '(' and peek() __ ';')
-        w___ pop() __ ';':
+        assert_that(p.. __ '(' and peek() __ ';')
+        w___ p.. __ ';':
             properties = {}
             w___ is_upper(peek()):
                 key = pop_until('[')
                 assert_that(is_upper(key))
                 values = []
                 w___ peek() __ '[':
-                    pop()
+                    p..
                     values.append(pop_until(']'))
-                    pop()
+                    p..
                 properties[key] = values
             __ root pa__ None:
                 current = root = SgfTree(properties)
@@ -95,6 +95,6 @@ ___ parse(input_string
                 current = SgfTree(properties)
                 root.children.append(current)
             w___ peek() __ '(':
-                child_input = pop() + pop_until(')') + pop()
+                child_input = p.. + pop_until(')') + p..
                 current.children.append(parse(child_input))
     r_ root

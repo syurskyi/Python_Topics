@@ -24,4 +24,4 @@ class Solution:
                     prev = c
                 cand.append(c)
                 self.combination_sum(candidates[i + 1:], target - c, cand, res)
-                cand.pop()
+                cand.p..

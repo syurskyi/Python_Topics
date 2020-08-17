@@ -16,7 +16,7 @@ ___ evaluate(input_data
     defines = {}
     w___ input_data[0][:1] __ ':':
         values = input_data.pop(0).split()
-        values.pop()
+        values.p..
         values.pop(0)
         key = values.pop(0).lower()
         __ is_integer(key
@@ -32,20 +32,20 @@ ___ evaluate(input_data
             ____ word in defines:
                 input_data = defines[word] + input_data
             ____ word __ '+':
-                stack.append(stack.pop() + stack.pop())
+                stack.append(stack.p.. + stack.pop())
             ____ word __ '-':
-                stack.append(-stack.pop() + stack.pop())
+                stack.append(-stack.p.. + stack.pop())
             ____ word __ '*':
-                stack.append(stack.pop() * stack.pop())
+                stack.append(stack.p.. * stack.pop())
             ____ word __ '/':
-                divisor = stack.pop()
+                divisor = stack.p..
                 __ divisor __ 0:
                     raise ZeroDivisionError("Attempted to divide by zero")
-                stack.append(int(stack.pop() / divisor))
+                stack.append(int(stack.p.. / divisor))
             ____ word __ 'dup':
                 stack.append(stack[-1])
             ____ word __ 'drop':
-                stack.pop()
+                stack.p..
             ____ word __ 'swap':
                 stack.append(stack[-2])
                 del stack[-3]

@@ -30,7 +30,7 @@ class Solution:
         stack = []
         ___ i in range(n + 1
             w___ stack and (i __ n or heights[stack[-1]] > heights[i]
-                h = heights[stack.pop()]
+                h = heights[stack.p..]
                 __ stack:
                     w = i - stack[-1] - 1
                 ____

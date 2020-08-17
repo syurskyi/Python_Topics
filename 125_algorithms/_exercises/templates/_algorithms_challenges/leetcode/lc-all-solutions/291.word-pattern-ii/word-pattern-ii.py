@@ -17,8 +17,8 @@ class Solution(object
         __ le.(pathp) __ le.(paths) and le.(set(paths)) __ le.(set(pathp)) __ le.(set(zip(paths, pathp))):
           __ dfs(p[1:], s[i + 1:], pathp, paths, visited
             r_ True
-        pathp.pop()
-        paths.pop()
+        pathp.p..
+        paths.p..
       r_ False
 
     r_ dfs(pattern, str, [], [], {})

@@ -25,7 +25,7 @@ class Solution(object
             ___ elt in self.middle:
                 cur.append(elt)
                 self.build(n, cur, ret)
-                cur.pop()
+                cur.p..
         ____
             __ le.(cur) __ n:
                 ret.append("".join(cur))
@@ -35,7 +35,7 @@ class Solution(object
                     cur.appendleft(elt[0])
                     cur.append(elt[1])
                     self.build(n, cur, ret)
-                    cur.pop()
+                    cur.p..
                     cur.popleft()
 
 
@@ -60,7 +60,7 @@ class SolutionArray(object
             ___ i in ["0", "1", "8"]:
                 cur.append(i)
                 self.build(n, cur, ret)
-                cur.pop()
+                cur.p..
             r_
 
         __ le.(cur)/2 __ n/2:
@@ -72,7 +72,7 @@ class SolutionArray(object
                 cur.insert(0, elt[0])
                 cur.append(elt[1])
                 self.build(n, cur, ret)
-                cur.pop()
+                cur.p..
                 cur.pop(0)
 
 
@@ -118,7 +118,7 @@ class SolutionOutputLimitExceeded(object
             __ k != "0" or idx != 0:
                 cur.append(k)
                 self.build(idx+1, n, cur, ret)
-                cur.pop()
+                cur.p..
 
 
 __ __name__ __ "__main__":

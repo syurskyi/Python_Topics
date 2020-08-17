@@ -39,7 +39,7 @@ class Solution(object
             ___ elt in self.middle:
                 cur.append(elt)
                 self.build(n, cur, ret)
-                cur.pop()
+                cur.p..
         ____
             __ le.(cur) __ n:
                 ret.append("".join(cur))
@@ -49,5 +49,5 @@ class Solution(object
                     cur.appendleft(elt[0])
                     cur.append(elt[1])
                     self.build(n, cur, ret)
-                    cur.pop()
+                    cur.p..
                     cur.popleft()

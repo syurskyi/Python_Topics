@@ -18,10 +18,10 @@ class Solution(object
 
     path.append(n)
     self.dfsHelper(n / n, res, path, n)
-    path.pop()
+    path.p..
 
     ___ i in range(start, int(n ** 0.5) + 1
       __ n % i __ 0:
         path.append(i)
         self.dfsHelper(n / i, res, path, i)
-        path.pop()
+        path.p..

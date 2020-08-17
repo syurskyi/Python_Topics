@@ -8,8 +8,8 @@ c_ MinStack
             curMin _ x
         .st.ap..((x, curMin))
 
-    ___ pop()  N..
-        .st.pop()
+    ___ p..  N..
+        .st.p..
 
     ___ top()  in.:
         r_ .st[-1][0] __ .st else N..
