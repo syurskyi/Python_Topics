@@ -1,24 +1,24 @@
-____ co.. ______ d_d_
-
-
-c_ Graph:
-    ___  - (
-        .graph _ d_d_(list)
-
-    ___ insertEdge v1, v2
-        .graph[v1].ap..(v2)
-        .graph[v2].ap..(v1)
-
-    ___ printGraph(
-        ___ node __ .graph:
-            ___ v __ .graph[node]:
-                print(node, "->", v)
-
-
-g _ Graph()
-
-g.insertEdge(1, 2)
-g.insertEdge(2, 3)
-g.insertEdge(4, 5)
-
-g.printGraph()
+# ____ co.. ______ d_d_
+#
+#
+# c_ Graph
+#     ___  -
+#         .g.. _ d_d_ li..
+#
+#     ___ insertEdge v1 v2
+#         .g.. ? .ap.. ?
+#         .g.. ? .ap.. ?
+#
+#     ___ printGraph
+#         ___ node __ .g..
+#             ___ v __ .g.. ?
+#                 print ? "->" ?
+#
+#
+# g _ ?
+#
+# ?.i.. 1 2
+# ?.i.. 2 3
+# ?.i.. 4 5
+#
+# ?.p..
