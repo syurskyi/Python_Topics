@@ -1,24 +1,24 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     ___ __init__(self, x
-#         self.val = x
-#         self.next = None
-
-c_ Solution:
-    ___ oddEvenList head: ListNode)  ListNode:
-        __(no. head
-            r_ head
-
-        odd _ head
-        even _ odd.n..
-        evenList _ even
-
-        w___(even a.. even.n..
-            odd.n.. _ even.n..
-            odd _ odd.n..
-
-            even.n.. _ odd.n..
-            even _ even.n..
-
-        odd.n.. _ evenList
-        r_ head
+# # Definition for singly-linked list.
+# # class ListNode:
+# #     ___ __init__(self, x
+# #         self.val = x
+# #         self.next = None
+#
+# c_ Solution
+#     ___ oddEvenList head LN..  LN..
+#         __ no. ?
+#             r_ ?
+#
+#         odd _ ?
+#         even _ ?.n..
+#         evenList _ ?
+#
+#         w___ e.. a.. e__.n..
+#             o__.n.. _ e__.n..
+#             o__ _ o__.n..
+#
+#             e__.n.. _ o__.n..
+#             e__ _ e__.n..
+#
+#         odd.n.. _ eL..
+#         r_ ?
