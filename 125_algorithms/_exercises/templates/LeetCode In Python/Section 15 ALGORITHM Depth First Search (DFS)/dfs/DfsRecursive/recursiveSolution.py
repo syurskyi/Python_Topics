@@ -1,37 +1,37 @@
-
-____ co.. ______ d_d_
-
-# This class represents a directed graph using adjacency list representation
-
-
-c_ Graph:
-
-    # Constructor
-    ___  - (
-
-        .graph _ d_d_(list)
-
-    ___ setEdge u, v
-        .graph[u].ap..(v)
-        print(.graph)
-
-    ___ DFS u, visited
-        visited.add(u)
-        print(u, end_' ')
-
-        ___ v __ .graph[u]:
-            __ v no. __ visited:
-                .DFS(v, visited)
-
-
-g _ Graph()
-g.setEdge(2, 1)
-g.setEdge(2, 5)
-g.setEdge(5, 6)
-g.setEdge(5, 8)
-g.setEdge(6, 9)
-
-
-visited _ set()
-
-g.DFS(2, visited)
+#
+# ____ co.. ______ d_d_
+#
+# # This class represents a directed graph using adjacency list representation
+#
+#
+# c_ Graph
+#
+#     # Constructor
+#     ___  -
+#
+#         .g.. _ d_d_ li..
+#
+#     ___ setEdge u v
+#         .g.. ? .ap.. ?
+#         print .g..
+#
+#     ___ DFS u visited
+#         v__.a.. ?
+#         print ? e.._' '
+#
+#         ___ v __ .g.. ?
+#             __ v no. __ v..
+#                 .D.. ? v..
+#
+#
+# g _ ?
+# ?.s.. 2 1
+# ?.s.. 2 5
+# ?.s.. 5 6
+# ?.s.. 5 8
+# ?.s.. 6 9
+#
+#
+# visited _ se.
+#
+# ?.D.. 2 v..
