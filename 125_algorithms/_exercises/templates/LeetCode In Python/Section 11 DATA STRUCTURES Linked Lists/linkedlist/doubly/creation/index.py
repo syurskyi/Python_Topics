@@ -1,48 +1,48 @@
-c_ Node:
-    ___  -  data
-        .data _ data
-        .prev _ N..
-        .n.. _ N..
-
-
-c_ LinkedList:
-    ___  - (
-        .head _ N..
-
-    ___ createList arr
-        start _ .head
-        n _ le.(arr)
-
-        temp _ start
-        i _ 0
-
-        w___(i < n
-            newNode _ Node(arr[i])
-            __(i __ 0
-                start _ newNode
-                temp _ start
-            ____
-                temp.n.. _ newNode
-                newNode.prev _ temp
-                temp _ temp.n..
-            i +_ 1
-        .head _ start
-        r_ start
-
-    ___ printList(
-        temp _ .head
-        linked_list _ ""
-        w___(temp
-            linked_list +_ (st.(temp.data) + " ")
-            temp _ temp.n..
-
-        print(linked_list)
-      
-
-arr _ [1,2,3,4,5]
-
-llist _ LinkedList()
-
-llist.createList(arr)
-
-llist.printList()
+# c_ Node:
+#     ___  -  data
+#         .data _ data
+#         .prev _ N..
+#         .n.. _ N..
+#
+#
+# c_ LinkedList
+#     ___  -
+#         .h.. _ N..
+#
+#     ___ createList arr
+#         start _ .h..
+#         n _ le. ?
+#
+#         temp _ start
+#         i _ 0
+#
+#         w___ i < n
+#             newNode _ N.. a.. ?
+#             __ i __ 0
+#                 start _ ?
+#                 temp _ ?
+#             ____
+#                 t__.n.. _ n..
+#                 n__.p.. _ t..
+#                 temp _ t__.n..
+#             ? +_ 1
+#         .h.. _ s..
+#         r_ ?
+#
+#     ___ printList
+#         temp _ .h..
+#         linked_list _ ""
+#         w___ ?
+#             ? +_  st. t__.d.. + " "
+#             temp _ t__.n..
+#
+#         print ?
+#
+#
+# arr _ [1,2,3,4,5]
+#
+# llist _ ?
+#
+# ?.c.. ?
+#
+# ?.p..
