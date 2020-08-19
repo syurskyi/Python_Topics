@@ -1,16 +1,16 @@
-c_ Solution:
-    ___ solution candidates,ans,cur,target,index,su.
-        __(sum__target
-            ans.ap..(cur[:])
-        ____(su.<target
-            n _ le.(candidates)
-            ___ i __ ra..(index,n
-                cur.ap..(candidates[i])
-                .solution(candidates,ans,cur,target,i,su.+candidates[i])
-                cur.p..
-        r_
-    ___ combinationSum candidates: L.. in., target: in.)  L..[L..[in.]]:
-        ans _   # list
-        cur _   # list
-        .solution(candidates,ans,cur,target,0,0)
-        r_ ans
+# c_ Solution
+#     ___ solution candidates ans cur target index su.
+#         __ sum__t..
+#             a__.ap.. c.. |
+#         ____ su.< t..
+#             n _ le. c..
+#             ___ i __ ra.. i.. ?
+#                 c__.ap.. c.. ?
+#                 .s.. ? ? ? ? i su. + c.. ?
+#                 c__.p..
+#         r_
+#     ___ combinationSum candidates L.. in. target in.  L.. L.. in.
+#         ans _   # list
+#         cur _   # list
+#         .s.. ? ? ? ? 0 0
+#         r_ ?
