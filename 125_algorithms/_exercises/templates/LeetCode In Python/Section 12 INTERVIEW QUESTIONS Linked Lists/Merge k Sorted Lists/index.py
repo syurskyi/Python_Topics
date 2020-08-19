@@ -1,52 +1,52 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     ___ __init__(self, x
-#         self.val = x
-#         self.next = None
-
-
-c_ Solution:
-
-    ___ mergeTwoLists l1, l2
-        cur _ ListNode(0)
-        ans _ cur
-
-        w___(l1 a.. l2
-            __(l1.val > l2.val
-                cur.n.. _ l2
-                l2 _ l2.n..
-
-            ____
-                cur.n.. _ l1
-                l1 _ l1.n..
-            cur _ cur.n..
-
-        w___(l1
-            cur.n.. _ l1
-            l1 _ l1.n..
-            cur _ cur.n..
-        w___(l2
-            cur.n.. _ l2
-            l2 _ l2.n..
-            cur _ cur.n..
-        r_ ans.n..
-
-    ___ mergeKLists lists: L..[ListNode])  ListNode:
-        __(le.(lists) __ 0
-            r_ N..
-
-        i _ 0
-        last _ le.(lists)-1
-        j _ last
-
-        w___(last !_ 0
-            i _ 0
-            j _ last
-
-            w___(j > i
-                lists[i] _ .mergeTwoLists(lists[i], lists[j])
-                i +_ 1
-                j -_ 1
-                last _ j
-
-        r_ lists[0]
+# # Definition for singly-linked list.
+# # class ListNode:
+# #     ___ __init__(self, x
+# #         self.val = x
+# #         self.next = None
+#
+#
+# c_ Solution
+#
+#     ___ mergeTwoLists l1 l2
+#         cur _ LN.. 0
+#         ans _ cur
+#
+#         w___ ? a.. ?
+#             __ ?.v.. > ?.v..
+#                 c__.n.. _ ?
+#                 ? _ ?.n..
+#
+#             ____
+#                 c__.n.. _ ?
+#                 ? _ ?.n..
+#             cur _ c__.n..
+#
+#         w___ ?
+#             c__.n.. _ ?
+#             ? _ ?.n..
+#             cur _ c__.n..
+#         w___ ?
+#             c__.n.. _ ?
+#             ? _ ?.n..
+#             c__ _ c__.n..
+#         r_ a__.n..
+#
+#     ___ mergeKLists lists L.. LN..  LN..
+#         __ le. ? __ 0
+#             r_ N..
+#
+#         i _ 0
+#         last _ le. ? -1
+#         j _ ?
+#
+#         w___ ? !_ 0
+#             i _ 0
+#             j _ l..
+#
+#             w___ ? > ?
+#                 l.. ? _ .m.. l.. ? l.. ?
+#                 ? +_ 1
+#                 ? -_ 1
+#                 l.. _ ?
+#
+#         r_ l.. 0
