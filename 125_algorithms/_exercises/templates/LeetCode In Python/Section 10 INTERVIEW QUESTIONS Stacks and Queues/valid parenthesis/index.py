@@ -1,20 +1,20 @@
-c_ Solution:
-    ___ isEqual c1, c2)  bool:
-        __(c1 __ '(' a.. c2 __ ')'
-            r_ T..
-        __(c1 __ '[' a.. c2 __ ']'
-            r_ T..
-        __(c1 __ '{' a.. c2 __ '}'
-            r_ T..
-        r_ F..
-
-    ___ isValid s: st.)  bool:
-        st _   # list
-        ___ character __ s:
-            __(le.(st) !_ 0
-                li _ st[-1]
-                __(.isEqual(li, character)):
-                    st.p..
-                    continue
-            st.ap..(characrer)
-        r_ le.(st) __ 0
+# c_ Solution
+#     ___ isEqual c1, c2  bo..
+#         __ ? __ '(' a.. ? __ ')'
+#             r_ T..
+#         __ ? __ '[' a.. ? __ ']'
+#             r_ T..
+#         __ ? __ '{' a.. ? __ '}'
+#             r_ T..
+#         r_ F..
+#
+#     ___ isValid s st.  bo..
+#         st _   # list
+#         ___ character __ s
+#             __ le. ? !_ 0
+#                 li _ ? -1
+#                 __ .i.. l. ?
+#                     ?.p..
+#                     c...
+#             ?.ap.. ?
+#         r_ le. ? __ 0
