@@ -1,16 +1,16 @@
-c_ Solution:
-    ___ solution(,nums,ans,cur,index
-        __(index>le.(nums)):
-            r_
-        ans.ap..(cur[:])
-        ___ i __ ra..(index,le.(nums)):
-            __(nums[i] no. __ cur
-                cur.ap..(nums[i])
-                .solution(nums,ans,cur,i)
-                cur.p..
-        r_
-    ___ subsets nums: L.. in.)  L..[L..[in.]]:
-        ans _   # list
-        cur _   # list
-        .solution(nums,ans,cur,0)
-        r_ ans
+# c_ Solution
+#     ___ solution nums ans cur index
+#         __ i.. > le. n..
+#             r_
+#         a__.ap.. c.. :
+#         ___ i __ ra.. i.. le. n..
+#             __ n.. ? no. __ c..
+#                 c__.ap.. n.. ?
+#                 .s.. ? ? ? ?
+#                 c__.p..
+#         r_
+#     ___ subsets nums L.. in.  L.. L.. in.
+#         ans _   # list
+#         cur _   # list
+#         .s.. ? ? ? 0
+#         r_ ?
