@@ -18,7 +18,7 @@ def linear_search(main_list, item):
 ([("Rose", 45, 5.6), [1, 2, 3]], ("a", "b", "c"), "Puppy", [4, 7, 8])
 
 
-<var>[<start>:<end>:<step>]
+# <var>[<start>:<end>:<step>]
 
 
 
@@ -39,5 +39,3 @@ def linear_search(main_list, item):
 		print("This is not the id")
 	print("The object is not in the list")
 	return -1
-
-
