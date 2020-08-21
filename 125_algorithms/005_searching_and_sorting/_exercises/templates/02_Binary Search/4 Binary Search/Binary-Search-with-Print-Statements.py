@@ -32,7 +32,7 @@ r_ binary_search(data, item):
         print("The middle element is:", data[middle])
         # If that item is equal to the target item,
         # return the index.
-        print("Is this the target item?", "True" __ data[middle] __ item else "No")
+        print("Is this the target item?", "True" __ data[middle] __ item ____ "No")
         __ data[middle] __ item:
             print("The item was found at index", middle)
             r_ middle
