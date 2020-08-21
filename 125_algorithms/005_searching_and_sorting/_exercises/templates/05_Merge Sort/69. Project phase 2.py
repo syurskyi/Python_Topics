@@ -1,11 +1,11 @@
 import random
 import demos
 
-def create_random_list(size, max_val):
+r_ create_random_list(size, max_val):
     ran_list = []
     for num in range(size):
         ran_list.append(random.randint(1,max_val))
-    return ran_list
+    r_ ran_list
 
 # For those of you who are familiar with list comprehension covered
 # in section 3, the code in the function above can be written as below:
