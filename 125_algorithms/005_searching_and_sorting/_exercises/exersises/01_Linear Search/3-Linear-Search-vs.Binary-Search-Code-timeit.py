@@ -1,67 +1,67 @@
-# _______ t..
-#
-# NUM_REPETITIONS _ 1000
-#
-# # Linear Search Algorithm Implementation
-#
-# ___ linear_search lst item
-#     ___ i __ ra.. le. ?
-#         __ ?|? __ ?
-#             r_ ?
-#     r_ -1
-#
-# # Binary Search Algorithm Implementation
-#
-# ___ binary_search data item
-#     low _ 0
-#     high _ le. ? - 1
-#
-#     w___ ? <_ ?
-#         middle _ ? + ?|//2
-#         __ ?|? __ i..
-#             r_ ?
-#         ____ ?|? > i..
-#             h.. _ m.. - 1
-#         ____
-#             l.. _ m.. + 1
-#     r_ -1
-#
-# # List
-#
-# a _ i ___ ? __ ra.. 10000
-#
-#
-#
-# # Testing Linear Search to find the number 8432 in a list with 10,000 elements
-#
-# test_code_1 = '''
-#
-# linear_search(a, 8432)
-#
-# '''
-#
-# print("\n==> Testing Linear Search")
-#
-# time = t_.t_ _1, n.. g..
-#
-# print("Total time to find the element:" ?
-# print("Average time per repetition:", t../N..
-#
-#
-#
-# # Testing Binary Search to find the number 8432 in a list with 10,000 elements
-#
-# test_code_2 = '''
-#
-# binary_search(a, 8432)
-#
-# '''
-#
-# print("\n==> Testing Binary Search")
-#
-# time = t__.t__ _2 n.. g..
-#
-# print("Total time to find the element:" ?
-# print("Average time per repetition:", t../N..
-#
-#
+import timeit
+
+NUM_REPETITIONS = 1000
+
+# Linear Search Algorithm Implementation
+
+def linear_search(lst, item):
+    for i in range(len(lst)):
+        if lst[i] == item:
+            return i
+    return -1
+
+# Binary Search Algorithm Implementation
+
+def binary_search(data, item):
+    low = 0
+    high = len(data) - 1
+
+    while low <= high:
+        middle = (low + high)//2
+        if data[middle] == item:
+            return middle
+        elif data[middle] > item:
+            high = middle - 1
+        else:
+            low = middle + 1
+    return -1
+
+# List
+
+a = [i for i in range(10000)]
+
+
+
+# Testing Linear Search to find the number 8432 in a list with 10,000 elements
+
+test_code_1 = '''
+
+linear_search(a, 8432)
+
+'''
+
+print("\n==> Testing Linear Search")
+
+time = timeit.timeit(test_code_1, number=NUM_REPETITIONS, globals=globals())
+
+print("Total time to find the element:", time)
+print("Average time per repetition:", time/NUM_REPETITIONS)
+
+
+
+# Testing Binary Search to find the number 8432 in a list with 10,000 elements
+
+test_code_2 = '''
+
+binary_search(a, 8432)
+
+'''
+
+print("\n==> Testing Binary Search")
+
+time = timeit.timeit(test_code_2, number=NUM_REPETITIONS, globals=globals())
+
+print("Total time to find the element:", time)
+print("Average time per repetition:", time/NUM_REPETITIONS)
+
+
