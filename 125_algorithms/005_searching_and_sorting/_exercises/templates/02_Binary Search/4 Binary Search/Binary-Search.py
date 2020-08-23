@@ -20,7 +20,7 @@
 #         # If the item is not equal to the target item,
 #         # check if it's greater or smaller and reassign
 #         # the bounds appropriately.
-#         r_ ?|? > ?
+#         ____ ?|? > ?
 #             h.. _ ? - 1
 #         ____
 #             l.. _ ? + 1

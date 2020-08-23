@@ -1,7 +1,7 @@
 import random
 import demos
 
-___ create_random_list(size, max_val):
+r_ create_random_list(size, max_val):
     ran_list = []
     for num in range(size):
         ran_list.append(random.randint(1,max_val))
