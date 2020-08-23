@@ -39,7 +39,7 @@
 #         # If the item is not equal to the target item,
 #         # check if it's larger or smaller and reassign
 #         # the bounds appropriately.
-#         r_ ?|? > ?
+#         ____ ?|? > ?
 #                 print("This middle element is greater than the target item:" ?|? ">" ?
 #                 print("We need to discard the upper half of the list")
 #                 print("The lower bound remains at:" ?

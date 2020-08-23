@@ -18,7 +18,7 @@
 #         # are looking for, make a recursive call passing
 #         # the middle index - 1 as upper bound to discard the
 #         # upper half of the list
-#         r_ ?|? > ?
+#         ____ ?|? > ?
 #             r_ ? ? ? m.. - 1 ?
 #         # Else, it it's smaller than the item that you
 #         # are looking for, make a recursive call passing

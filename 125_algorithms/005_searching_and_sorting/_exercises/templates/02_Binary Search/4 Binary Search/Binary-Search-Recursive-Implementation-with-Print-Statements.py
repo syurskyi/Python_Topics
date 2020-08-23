@@ -13,7 +13,7 @@
 #         __ ?|? __ ?
 #             print("The item was found at index:" ?
 #             r_ ?
-#         r_ ?|? > ?
+#         ____ ?|? > ?
 #             print("The current item is greater than the target item:" ?|? ">" ?
 #             print("We need to discard the upper half of the list"
 #             print("The lower bound remains at:" ?
