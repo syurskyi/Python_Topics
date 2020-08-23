@@ -1,7 +1,7 @@
 # # The Binary Search Algorithm takes:
 # # data - A list or tuple
 # # item - the target item that you wish to find in data
-# r_ binary_search data item
+# ___ binary_search data item
 #
 #     print("======> Starting Binary Search")
 #
