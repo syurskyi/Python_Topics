@@ -13,24 +13,24 @@
 #     found _ F..
 #
 #
-#     w__ f.. <_ l.. an. no. f..
+#     w__ ? <_ ? an. no. f..
 #
 #         mid _  ? + ? /2 # or // for Python 3
 #
 #         # Match found
-#         __ a..|m.. __ e..
+#         __ ?|? __ ?
 #             f.. _ T..
 #
 #         # Set new midpoints up or down depending on comparison
-#         e..
+#         ____
 #             # Set down
-#             __ e.. < a..|m..
-#                 l.. _ m.. -1
+#             __ ? < ?|?
+#                 l.. _ ? -1
 #             # Set up
 #             ____
 #                 f.. _ m.. + 1
 #
-#     r_ f..
+#     r_ ?
 #
 # # # list must already be sorted!
 # arr _ [1,2,3,4,5,6,7,8,9,10]
@@ -55,18 +55,18 @@
 #         mid _ le. ?/2
 #
 #         # If match found
-#         __ ?|m..__e..
+#         __ ?|? __ ?
 #             r_ T..
 #
 #         ____
 #
 #             # Call again on second half
-#             __ e.. < ?|m..
-#                 r_ ? ?|;m.. e..
+#             __ ? < ?|?
+#                 r_ ? ?|;? e..
 #
 #             # Or call on first half
 #             ____
-#                 r_ ? ?|m.. + 1; e..
+#                 r_ ? ?|? + 1; ?
 #
 # ?(?,3)
 # # True
