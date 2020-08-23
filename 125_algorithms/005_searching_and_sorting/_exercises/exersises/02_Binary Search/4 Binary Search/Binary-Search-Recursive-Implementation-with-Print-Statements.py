@@ -17,7 +17,7 @@ def binary_search(data, low, high, item):
             print("The current item is greater than the target item:", data[middle], ">", item)
             print("We need to discard the upper half of the list")
             print("The lower bound remains at:", low)
-            print("The upper bound is now:", high - 1)
+            print("The upper bound is now:", middle - 1)
             return binary_search(data, low, middle - 1, item)
         else:
             print("The current item is smaller than the target item:", data[middle], "<", item)
