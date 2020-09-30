@@ -4,16 +4,16 @@ from tkinter ______ *
 
 window _ Tk()
 
-file _ open("user_gui.txt", "a+")
+file _ o..("user_gui.txt", "a+")
 
 ___ add
-    file.write(user_value.get() + "\n")
+    file.w..(user_value.get() + "\n")
     entry.delete(0, END)
 
 ___ save
     global file
-    file.close()
-    file _ open("user_gui.txt", "a+")
+    file.c..
+    file _ o..("user_gui.txt", "a+")
 
 ___ close
     file.close

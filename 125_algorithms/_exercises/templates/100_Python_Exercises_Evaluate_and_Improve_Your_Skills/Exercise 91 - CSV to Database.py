@@ -10,4 +10,4 @@ ___ index, row __ data.iterrows
     print(row["Country"], row["Area"])
     cur.execute("INSERT INTO countries VALUES (NULL,?,?,NULL)",(row["Country"], row["Area"]))
 conn.commit()
-conn.close()
+conn.c..

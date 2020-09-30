@@ -1,5 +1,5 @@
 text _   # list
-___ i __ open("C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt"):
+___ i __ o..("C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt"):
     text.ap..(i)
 print(text)
 

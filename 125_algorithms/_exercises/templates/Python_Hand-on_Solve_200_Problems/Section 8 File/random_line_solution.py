@@ -7,7 +7,7 @@
 ______ random
 
 ___ random_line(fname):
-    lines _ open(fname).read().splitlines()
+    lines _ o..(fname).r__ .splitlines()
     r_ random.choice(lines)
 print(random_line('test.txt'))
 

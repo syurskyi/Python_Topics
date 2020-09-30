@@ -20,7 +20,7 @@ class Solution:
     # @param root, a tree node
     # @return an integer
     ___ maxPathSum(self, root):
-        self.maxValue _ float("-inf")
+        self.maxValue _ fl..("-inf")
         self.maxPathSumRec(root)
         r_ self.maxValue
 

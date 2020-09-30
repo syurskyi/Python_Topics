@@ -4,7 +4,7 @@
 # Write a Python program to find the greatest common divisor (gcd) of two integers.
 
 ___ Recurgcd(a, b):
-	low _ min(a, b)
+	low _ mi.(a, b)
 	high _ ma.(a, b)
 
 	__ low __ 0:

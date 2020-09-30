@@ -1,3 +1,3 @@
-file _ open("lines.txt","r")
-a _ file.read()
+file _ o..("lines.txt","r")
+a _ file.r__
 print(a)

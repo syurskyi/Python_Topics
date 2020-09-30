@@ -11,7 +11,7 @@ c_ LRUCache:
     ___ get key: __.)  __.:
         __ key __ .m:
             value _ .m[key]
-            .deq.remove(key)
+            .deq.r..(key)
             .deq.ap..(key)
             r_ value
         ____
@@ -28,7 +28,7 @@ c_ LRUCache:
                 oldest _ .deq.popleft()
                 del .m[oldest]
         ____
-            .deq.remove(key)
+            .deq.r..(key)
 
         .m[key] _ value
         .deq.ap..(key)

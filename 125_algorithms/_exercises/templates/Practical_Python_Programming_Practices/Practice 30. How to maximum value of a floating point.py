@@ -3,7 +3,7 @@
 #x = round(random()*1000,3)
 #print(x)
 
-x _ float(input("Insert floating point numbers only: "))
+x _ fl..(input("Insert floating point numbers only: "))
 
 y _ st.(x)
 maxi _ -1

@@ -5,7 +5,7 @@
 
 class Solution:
     ___ maxProfit(prices):
-        minValue _ float("inf")
+        minValue _ fl..("inf")
         maxBenefit _ 0
         ___ price __ prices:
             __ minValue > price:

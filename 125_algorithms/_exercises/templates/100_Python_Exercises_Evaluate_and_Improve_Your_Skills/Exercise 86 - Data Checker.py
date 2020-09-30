@@ -3,8 +3,8 @@
 
 checklist _ ["Portugal", "Germany", "Munster", "Spain"]
 
-with open("countries_clean.txt", "r") as file:
-    content _ file.readlines()
+w__ o..("countries_clean.txt", "r") __ file:
+    content _ file.r_l_()
 
 content _ [i.rstrip('\n') ___ i __ content]
 checked _ [i ___ i __ content __ i __ checklist]

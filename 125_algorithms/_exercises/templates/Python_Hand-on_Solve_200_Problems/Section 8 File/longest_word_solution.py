@@ -5,8 +5,8 @@
 # Using text.txt file in same folder
 
 ___ longest_word(filename):
-    with open(filename, 'r') as infile:
-              words _ infile.read().split()
+    w__ o..(filename, 'r') __ infile:
+              words _ infile.r__ .split()
     max_len _ le.(ma.(words, key_len))
     r_ [word ___ word __ words __ le.(word) __ max_len]
 

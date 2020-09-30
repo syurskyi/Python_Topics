@@ -2,6 +2,6 @@
 
 ______ string
 
-with open("letters.txt", "w") as file:
+w__ o..("letters.txt", _) __ file:
     ___ letter1, letter2 __ zip(string.ascii_lowercase[0::2], string.ascii_letters[1::2]):
-        file.write(letter1 + letter2 + "\n")
+        file.w..(letter1 + letter2 + "\n")

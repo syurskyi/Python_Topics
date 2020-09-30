@@ -4,8 +4,8 @@ while T..:
     __ o __ "0":
         break
     __ o __ ('+','-','*','/'):
-        x _ float(input("Enter the value of x = "))
-        y _ float(input("Enter the value of y = "))
+        x _ fl..(input("Enter the value of x = "))
+        y _ fl..(input("Enter the value of y = "))
         __ o __ '+':
             print("%.2f" % (x+y))
         elif o __ '-':

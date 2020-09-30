@@ -12,9 +12,9 @@
 # github                                                                                                        
 # stackoverflow
 
-______ re
+______ __
 i.. _ ["example (.com)", "w3resource", "github (.com)", "stackoverflow (.com)"]
 ___ item __ i..:
-    print(re.sub(r" ?\([^)]+\)", "", item))
+    print(__.sub(r" ?\([^)]+\)", "", item))
 
 

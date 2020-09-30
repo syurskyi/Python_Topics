@@ -7,9 +7,9 @@
 # Output
 # 216.8.94.196
 
-______ re
+______ __
 ip _ "216.08.094.196"
-string _ re.sub('\.[0]*', '.', ip)
+string _ __.sub('\.[0]*', '.', ip)
 print(string)
 
 

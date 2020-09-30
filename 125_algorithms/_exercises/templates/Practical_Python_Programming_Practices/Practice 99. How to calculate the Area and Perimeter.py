@@ -1,7 +1,7 @@
 ______ math
 
-x _ float(input("Insert length of x: "))
-y _ float(input("Insert length of y: "))
+x _ fl..(input("Insert length of x: "))
+y _ fl..(input("Insert length of y: "))
 
 z _ math.sqrt((pow(x,2)+pow(y,2)))
 

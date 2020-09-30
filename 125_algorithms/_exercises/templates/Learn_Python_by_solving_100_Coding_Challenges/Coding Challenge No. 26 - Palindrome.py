@@ -17,7 +17,7 @@ class Solution:
             elif not s[tail].isalnum
                 tail -_ 1
             ____
-                __ s[head].lower() __ s[tail].lower
+                __ s[head].l.. __ s[tail].lower
                     head +_ 1
                     tail -_ 1
                 ____

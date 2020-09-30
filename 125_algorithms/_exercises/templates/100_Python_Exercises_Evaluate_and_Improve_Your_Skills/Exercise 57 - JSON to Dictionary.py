@@ -1,9 +1,9 @@
 #Get the file in the attachment and produce the printed output
-______ json
+______ ____
 from pprint ______ pprint
 
-with open("company1.json","r") as file:
-    d _ json.load(file)
+w__ o..("company1.json","r") __ file:
+    d _ ____.l..(file)
 
 #d = json.load("company1.json")
 

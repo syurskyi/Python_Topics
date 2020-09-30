@@ -1,5 +1,5 @@
-x _ float(input("Insert coordinate of point x: "))
-y _ float(input("Insert coordinate of point y: "))
+x _ fl..(input("Insert coordinate of point x: "))
+y _ fl..(input("Insert coordinate of point y: "))
 
 __ x > 0 an. y > 0:
     print("The first quadrant")

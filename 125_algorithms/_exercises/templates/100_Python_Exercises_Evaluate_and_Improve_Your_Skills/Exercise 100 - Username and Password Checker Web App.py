@@ -25,8 +25,8 @@ ___ sent
     __ request.method __ 'POST':
         while T..:
             usr _ request.form['username']
-            with open("users.txt", "r") as file:
-                users _ file.readlines()
+            w__ o..("users.txt", "r") __ file:
+                users _ file.r_l_()
                 users _ [i.strip("\n") ___ i __ users]
             __ usr __ users:
                 r_ render_template_string(html, message_"Username exists!"+"<br>")

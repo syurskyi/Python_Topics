@@ -1,2 +1,2 @@
-______ os
-os.remove("file2.txt")
+# ______ __
+# __.r.. "file2.txt"

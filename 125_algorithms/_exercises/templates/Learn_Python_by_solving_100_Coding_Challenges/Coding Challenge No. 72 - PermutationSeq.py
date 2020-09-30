@@ -18,7 +18,7 @@ class Solution:
         ___ i __ reversed(ra..(n)):
             curr _ num[in.(k/fac)]
             res +_ st.(curr)
-            num.remove(curr)
+            num.r..(curr)
             __ i !_0:
                 k %_ fac
                 fac /_ i

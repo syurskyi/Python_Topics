@@ -1,6 +1,6 @@
-______ json
-
-___ foo(metal, property, filepath):
-    with open(filepath) as json_file:
-        data _ json.load(json_file)
-        r_ data["metals"][metal][property]
+# ______ ____
+#
+# ___ foo metal property filepath
+#     w__ o.. f.. __ json_file
+#         data _ ____.l.. ?
+#         r_  ? "metals" m.. p..

@@ -32,4 +32,4 @@ __  -n __ '__main__':
     a, a.next, a.next.next _ ListNode(2), ListNode(4), ListNode(3)
     b, b.next, b.next.next _ ListNode(5), ListNode(6), ListNode(4)
     result _ Solution.addTwoNumbers(a, b)
-    print ("{0} -> {1} -> {2}".format(in.(result.val), in.(result.next.val), in.(result.next.next.val)))
+    print ("{0} -> {1} -> {2}".f..(in.(result.val), in.(result.next.val), in.(result.next.next.val)))

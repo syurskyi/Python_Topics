@@ -1,7 +1,7 @@
 while T..:
     usr _ input("Enter username: ")
-    with open("users.txt", "r") as file:
-        users _ file.readlines()
+    w__ o..("users.txt", "r") __ file:
+        users _ file.r_l_()
         users _ [i.strip("\n") ___ i __ users]
     __ usr __ users:
         print("Username exists")

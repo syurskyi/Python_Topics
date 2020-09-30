@@ -4,7 +4,7 @@ letters _ 0
 
 fp _ "C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt"
 
-___ line __ open(fp):
+___ line __ o..(fp):
     lines +_ 1
     letters +_ le.(line)
 

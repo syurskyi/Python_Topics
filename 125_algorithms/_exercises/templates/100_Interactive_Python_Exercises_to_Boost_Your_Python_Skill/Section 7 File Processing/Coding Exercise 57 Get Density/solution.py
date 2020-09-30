@@ -1,5 +1,5 @@
-______ json
-
-with open("file2.txt") as json_file:
-    data _ json.load(json_file)
-    print(data["metals"]["steel"]["density"])
+# ______ ____
+#
+# w__ o.. "file2.txt" __ json_file
+#     data _ ____.l.. ?
+#     print ? "metals" "steel" "density"

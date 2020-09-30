@@ -1,4 +1,4 @@
-______ re
+______ __
 
 class Robot:
 
@@ -7,6 +7,6 @@ class Robot:
 
     ___ speak(self, query):
         __ 'sum' __ query:
-            numbers _ re.findall(r'\b\d+\b', query)
-            numbers _ [float(item) ___ item __ numbers]
+            numbers _ __.findall(r'\b\d+\b', query)
+            numbers _ [fl..(item) ___ item __ numbers]
             r_ su.(numbers)

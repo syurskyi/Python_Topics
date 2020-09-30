@@ -20,8 +20,8 @@ ___ sd_calc(data):
 
     # calculate stan. dev.
     ___ el __ data:
-        sd +_ (float(el) - mean)**2
-    sd _ math.sqrt(sd / float(n-1))
+        sd +_ (fl..(el) - mean)**2
+    sd _ math.sqrt(sd / fl..(n-1))
 
     r_ sd
 
@@ -34,8 +34,8 @@ ___ avg_calc(ls):
 
     # calculate average
     ___ el __ ls:
-        mean _ mean + float(el)
-    mean _ mean / float(n)
+        mean _ mean + fl..(el)
+    mean _ mean / fl..(n)
 
     r_ mean
 

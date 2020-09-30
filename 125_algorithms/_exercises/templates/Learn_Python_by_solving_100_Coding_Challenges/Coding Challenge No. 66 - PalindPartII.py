@@ -19,7 +19,7 @@ class Solution:
             ___ j __ ra..(i, n):
                 __ (s[i] __ s[j] an. (j - i < 2 or p[i + 1][j - 1])):
                     p[i][j] _ T..
-                    f[i] _ min(f[i], f[j + 1] + 1)
+                    f[i] _ mi.(f[i], f[j + 1] + 1)
         r_ f[0]
 
 

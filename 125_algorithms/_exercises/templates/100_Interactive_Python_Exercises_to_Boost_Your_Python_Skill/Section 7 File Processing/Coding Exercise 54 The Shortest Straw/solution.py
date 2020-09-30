@@ -1,7 +1,7 @@
-______ glob
-______ os
-
-text_files _ glob.glob("*.txt")
-
-sizes _ {text_file:os.path.getsize(text_file) ___ text_file __ text_files}
-print(min(sizes, key_sizes.get))
+# ______ g__
+# ______ __
+#
+# text_files _ g__.g__ "*.txt"
+#
+# sizes _ text_file __.pa__ .g_s_ ? ___ ? __ ?
+# print mi. ? key_?.g..

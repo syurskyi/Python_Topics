@@ -6,7 +6,7 @@ conn _ sqlite3.connect("database.db")
 cur _ conn.cursor()
 cur.execute("SELECT country FROM countries WHERE area >= 2000000")
 rows _ cur.fetchall()
-conn.close()
+conn.c..
 print(rows)
 
 ___ i __ rows:

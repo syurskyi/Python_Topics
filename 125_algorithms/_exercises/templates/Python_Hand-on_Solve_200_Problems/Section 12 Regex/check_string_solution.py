@@ -9,10 +9,10 @@
 # True                                                                                                          
 # False
 
-______ re
+______ __
 ___ is_allowed_specific_char(string):
-    charRe _ re.compile(r'[^a-zA-Z0-9.]')
-    string _ charRe.search(string)
+    charRe _ __.c..(r'[^a-zA-Z0-9.]')
+    string _ charRe.s..(string)
     r_ not bool(string)
 
 print(is_allowed_specific_char("ABCDEFabcdef123450")) 

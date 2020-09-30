@@ -7,8 +7,8 @@
 # Output
 # ['quick', 'brown', 'jumps']
 
-______ re
+______ __
 text _ 'The quick brown fox jumps over the lazy dog.'
-print(re.findall(r"\b\w{5}\b", text))
+print(__.findall(r"\b\w{5}\b", text))
 
 

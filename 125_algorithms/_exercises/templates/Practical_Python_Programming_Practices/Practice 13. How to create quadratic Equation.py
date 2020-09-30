@@ -1,8 +1,8 @@
 from math ______ sqrt
 
-x _ float(input("Insert x = "))
-y _ float(input("Insert y = "))
-z _ float(input("Insert z = "))
+x _ fl..(input("Insert x = "))
+y _ fl..(input("Insert y = "))
+z _ fl..(input("Insert z = "))
 
 a _ y*y-4*x*z
 

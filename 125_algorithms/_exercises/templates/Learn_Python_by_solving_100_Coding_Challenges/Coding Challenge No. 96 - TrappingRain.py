@@ -25,7 +25,7 @@ class Solution:
         ___ i __ reversed(ra..(1,le.(height)-1)):
             __ max_right < height[i+1]:
                     max_right _ height[i+1]
-            AddVolume[i] _ min(max_right,AddVolume[i])
+            AddVolume[i] _ mi.(max_right,AddVolume[i])
         ___ i __ ra..(le.(AddVolume)):
             AddVolume[i] _ ma.(AddVolume[i] - height[i],0)
         r_ su.(AddVolume)

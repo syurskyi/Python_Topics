@@ -27,7 +27,7 @@ class Solution:
                 del startToEnd[start]
                 del endToStart[num[i]]
             __ num[i]-1 __ endToStart:
-                start _ min(start, endToStart[num[i]-1])
+                start _ mi.(start, endToStart[num[i]-1])
                 del startToEnd[endToStart[num[i]-1]]
                 del endToStart[num[i]-1]
             __ num[i]+1 __ startToEnd:

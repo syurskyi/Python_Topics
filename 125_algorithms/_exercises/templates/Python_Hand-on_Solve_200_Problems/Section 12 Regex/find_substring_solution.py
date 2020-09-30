@@ -12,12 +12,12 @@
 # Found "exercises" at 22:31                                                                                    
 # Found "exercises" at 36:45
 
-______ re
+______ __
 text _ 'Python exercises, PHP exercises, C# exercises'
 pattern _ 'exercises'
-___ match __ re.finditer(pattern, text):
-    s _ match.start()
-    e _ match.end()
+___ m.. __ __.finditer(pattern, text):
+    s _ m...start()
+    e _ m...end()
     print('Found "%s" at %d:%d' % (text[s:e], s, e))
 	
 

@@ -22,7 +22,7 @@ class Solution:
         __ le.(B) __ 0:
             r_ A[k - 1]
         __ k __ 1:
-            r_ min(A[0], B[0])
+            r_ mi.(A[0], B[0])
         a _ A[in.(k / 2 - 1)] __ le.(A) >_ in.(k / 2) ____ N..
         b _ B[in.(k / 2 - 1)] __ le.(B) >_ in.(k / 2) ____ N..
         __ b is N.. or (a is not N.. an. a < b):

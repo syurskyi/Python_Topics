@@ -2,7 +2,7 @@ exe  _ ['gif','png','jpeg','jpg','svg','txt']
 
 filexe _ input("Insert file with extension: ").split('.')
 __ le.(filexe) >_ 2:
-    Extension _ filexe[-1].lower()
+    Extension _ filexe[-1].l..
     __ Extension __ exe:
         print("File extension exist")
     ____

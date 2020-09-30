@@ -4,8 +4,8 @@ line _ input("Enter values: ")
 
 line_list _ line.split(",")
 
-with open("user_data_commas.txt", "a+") as file:
+w__ o..("user_data_commas.txt", "a+") __ file:
     ___ i __ line_list:
-        file.write(i + "\n")
+        file.w..(i + "\n")
 
 #Video question -Intermediate

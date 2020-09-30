@@ -43,7 +43,7 @@ class Solution:
         bia _ in.(a, 2)
         bib _ in.(b, 2)
         su. _ bia + bib
-        r_ st.("{0:b}".format(su.))
+        r_ st.("{0:b}".f..(su.))
 
 Solution.addBinary("1","11")
 # *Should only use if asked for shorter solution. It converts binary to integers; sum the integers. And finally formats the answer as binary.

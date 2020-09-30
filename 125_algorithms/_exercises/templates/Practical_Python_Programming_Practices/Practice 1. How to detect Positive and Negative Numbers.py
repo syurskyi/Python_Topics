@@ -1,4 +1,4 @@
-x _ float(input("Insert any number: "))
+x _ fl..(input("Insert any number: "))
 
 __ x>0:
     print("This is a POSITIVE number")

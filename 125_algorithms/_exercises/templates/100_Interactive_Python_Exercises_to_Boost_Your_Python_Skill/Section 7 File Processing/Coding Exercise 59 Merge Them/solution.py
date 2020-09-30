@@ -1,9 +1,9 @@
-______ glob
-
-text_files _ glob.glob("file*.txt")
-print(text_files)
-with open('together.txt', 'w') as outfile:
-    ___ text_file __ text_files:
-        with open(text_file) as infile:
-            ___ line __ infile:
-                outfile.write(line + "\n")
+# ______ g__
+#
+# text_files _ g__.g__ "file*.txt"
+# print ?
+# w__ o.. 'together.txt' _ __ outfile
+#     ___ text_file __ ?
+#         w__ o.. ? __ infile
+#             ___ line __ infile:
+#                 ?.w.. ? + "\n"

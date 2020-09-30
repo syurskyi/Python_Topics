@@ -37,7 +37,7 @@ class Solution:
             profit_max _ 0
         ___ price __ prices[l - 1:u]:
             profit_max _ ma.(profit_max, price - valley)
-            valley _ min(valley, price)
+            valley _ mi.(valley, price)
         r_ profit_max
 
 

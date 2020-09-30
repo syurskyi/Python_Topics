@@ -1,8 +1,8 @@
 x _ input("Insert numbers only: ")
 
-while type(x) !_ float:
+while type(x) !_ fl..:
     try:
-        x _ float(x)
+        x _ fl..(x)
     except ValueError:
         print("Error! Please insert only numbers...")
         x _ input("Insert numbers only: ")

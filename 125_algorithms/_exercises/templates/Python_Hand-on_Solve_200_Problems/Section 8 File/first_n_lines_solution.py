@@ -6,7 +6,7 @@
 
 ___ file_read_from_head(fname, nlines):
         from it.. ______ islice
-        with open(fname) as f:
+        w__ o..(fname) __ f:
                 ___ line __ islice(f, nlines):
                         print(line)
                         

@@ -21,7 +21,7 @@ class Solution:
             r_ self.minDepth(root.right) + 1
         __ root.right __ N..:
             r_ self.minDepth(root.left) + 1
-        r_ min(self.minDepth(root.left),self.minDepth(root.right))+1
+        r_ mi.(self.minDepth(root.left),self.minDepth(root.right))+1
 
 
 __  -n __ '__main__':

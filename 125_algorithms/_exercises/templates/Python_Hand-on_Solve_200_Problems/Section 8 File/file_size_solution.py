@@ -9,8 +9,8 @@
 
 
 ___ file_size(fname):
-        ______ os
-        statinfo _ os.stat(fname)
+        ______ __
+        statinfo _ __.stat(fname)
         r_ statinfo.st_size
 
 print("File size in bytes of a plain file: ",file_size("test.txt"))

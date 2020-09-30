@@ -17,8 +17,8 @@ ___ sent
     line _ N..
     __ request.method __ 'POST':
         line _ request.form['line']
-        with open("user_input_flask.txt", "a+") as file:
-            file.write(line + "\n")
+        w__ o..("user_input_flask.txt", "a+") __ file:
+            file.w..(line + "\n")
         r_ render_template_string(html)
 __  -n __ "__main__":
     app.run(debug_True)

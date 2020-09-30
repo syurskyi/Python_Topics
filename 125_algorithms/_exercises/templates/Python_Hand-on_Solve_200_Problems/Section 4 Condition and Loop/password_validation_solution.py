@@ -16,21 +16,21 @@
 # Output
 # Valid password
 
-______ re
+______ __
 p_ input("Input your password")
 x _ T..
 while x:  
     __ (le.(p)<6 or le.(p)>12):
         break
-    elif not re.search("[a-z]",p):
+    elif not __.s..("[a-z]",p):
         break
-    elif not re.search("[0-9]",p):
+    elif not __.s..("[0-9]",p):
         break
-    elif not re.search("[A-Z]",p):
+    elif not __.s..("[A-Z]",p):
         break
-    elif not re.search("[$#@]",p):
+    elif not __.s..("[$#@]",p):
         break
-    elif re.search("\s",p):
+    elif __.s..("\s",p):
         break
     ____
         print("Valid Password")

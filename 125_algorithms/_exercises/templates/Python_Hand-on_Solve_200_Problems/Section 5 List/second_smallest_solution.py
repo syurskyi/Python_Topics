@@ -8,7 +8,7 @@
 # -2
 
 ___ second_smallest(numbers):
-    a1, a2 _ float('inf'), float('inf')
+    a1, a2 _ fl..('inf'), fl..('inf')
     ___ x __ numbers:
         __ x <_ a1:
             a1, a2 _ x, a1

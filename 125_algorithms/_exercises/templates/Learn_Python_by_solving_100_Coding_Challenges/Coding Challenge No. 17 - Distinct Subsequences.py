@@ -16,7 +16,7 @@ class Solution:
         ___ j __ ra..(le.(S)+1):
             dp[j][0] _ 1
         ___ i __ ra..(1, le.(S)+1):
-            ___ j __ ra..(1, min(i+1, le.(T)+1)):
+            ___ j __ ra..(1, mi.(i+1, le.(T)+1)):
                 __ S[i-1] __ T[j-1]:
                     dp[i][j] _ dp[i-1][j] + dp[i-1][j-1]
                 ____

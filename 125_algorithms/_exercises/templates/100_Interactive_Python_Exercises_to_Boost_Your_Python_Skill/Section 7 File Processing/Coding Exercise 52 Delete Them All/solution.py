@@ -1,6 +1,6 @@
-______ glob
-______ os
-
-text_files _ glob.glob("*.txt")
-___ text_file __ text_files:
-    os.remove(text_file)
+# ______ g__
+# ______ __
+#
+# text_files _ g__.g__ "*.txt"
+# ___ text_file __ ?
+#     __.r.. ?

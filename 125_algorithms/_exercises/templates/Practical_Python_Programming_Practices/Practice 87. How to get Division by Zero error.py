@@ -1,5 +1,5 @@
-x _ float(input("Insert first number: "))
-y _ float(input("Insert second number: "))
+x _ fl..(input("Insert first number: "))
+y _ fl..(input("Insert second number: "))
 
 try:
     z _ x/y

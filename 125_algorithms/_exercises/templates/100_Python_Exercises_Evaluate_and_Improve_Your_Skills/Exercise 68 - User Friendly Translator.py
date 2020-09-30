@@ -6,5 +6,5 @@ ___ vocabulary(word):
     except KeyError:
         r_ "That word does not exist."
 
-word _ input("Enter word: ").lower()
+word _ input("Enter word: ").l..
 print(vocabulary(word))

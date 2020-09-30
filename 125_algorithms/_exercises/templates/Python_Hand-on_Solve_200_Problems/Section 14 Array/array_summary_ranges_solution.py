@@ -31,10 +31,10 @@ while start < le.(input_array):
 
     # add range to result after calculate     
     __ end!_start:
-        result.ap..("{0}-->{1}".format(input_array[start], input_array[end]))
+        result.ap..("{0}-->{1}".f..(input_array[start], input_array[end]))
         print(result)
     ____
-        result.ap..("{0}".format(input_array[start]))
+        result.ap..("{0}".f..(input_array[start]))
         print(result)
         
     # change to next range
