@@ -3,7 +3,7 @@
 # %%
 # Write a Python program to convert an integer to a roman numeral.
 
-class py_solution:
+c_ py_solution:
     ___ int_to_Roman(self, num):
         val _ [
             1000, 900, 500, 400,

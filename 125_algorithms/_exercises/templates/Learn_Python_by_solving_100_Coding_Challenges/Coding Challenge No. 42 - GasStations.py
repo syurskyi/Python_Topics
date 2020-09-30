@@ -5,7 +5,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param gas, a list of integers
     # @param cost, a list of integers
     # @return an integer

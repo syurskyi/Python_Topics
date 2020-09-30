@@ -7,7 +7,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return an integer
     # @dp
     # dp[i][j] means how many first j of T is sub of first i of S.

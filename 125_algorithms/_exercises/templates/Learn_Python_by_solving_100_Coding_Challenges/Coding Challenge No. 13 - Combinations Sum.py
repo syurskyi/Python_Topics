@@ -10,11 +10,11 @@
 # [7] ; [2, 2, 3]
 # Solutions:
 
-class Solution:
+c_ Solution:
     ___ combinationSum(self, candidates, target):
         candidates.sort()
         res_  # list
-        self.DFS(candidates,target,0,res,  # list)
+        DFS(candidates,target,0,res,  # list)
         r_ res
 
     ___ DFS(self,candidates,target,start,res,intermedia):
@@ -24,5 +24,5 @@ class Solution:
         ___ i __ ra..(start,le.(candidates)):
             __ target<candidates[i]:
                 r_
-            self.DFS(candidates,target-candidates[i],i,res,intermedia+[candidates[i]])
+            DFS(candidates,target-candidates[i],i,res,intermedia+[candidates[i]])
         print(Solution().combinationSum([2,3,6,7],7) )

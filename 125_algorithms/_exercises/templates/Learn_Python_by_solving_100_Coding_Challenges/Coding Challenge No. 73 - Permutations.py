@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
     ___ permute(self, num):
@@ -16,7 +16,7 @@ class Solution:
             r_ [num]
         res _   # list
         ___ i __ ra..(le.(num)):
-            ___ j __ self.permute(num[:i] + num[i+1:]):
+            ___ j __ permute(num[:i] + num[i+1:]):
                 res.ap..([num[i]] + j)
         r_ res
 

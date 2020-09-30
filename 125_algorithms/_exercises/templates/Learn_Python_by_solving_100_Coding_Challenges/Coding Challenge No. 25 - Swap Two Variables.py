@@ -3,7 +3,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     ___ swap1(self,x,y):
         x,y _ y,x
         r_ x,y

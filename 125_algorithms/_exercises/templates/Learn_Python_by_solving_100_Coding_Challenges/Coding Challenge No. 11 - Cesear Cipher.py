@@ -2,7 +2,7 @@
 # Question: Build a ROT13 encryption algorithm. So for example all A's translate into N's, B's translate into O's and vice-versa.
 # Solutions:
 
-class Solution:
+c_ Solution:
     ___ ROT13(message):
         plaintext _ li..(message.lower
         alphabet _ li..('abcdefghijklmnopqrstuvwxyz')

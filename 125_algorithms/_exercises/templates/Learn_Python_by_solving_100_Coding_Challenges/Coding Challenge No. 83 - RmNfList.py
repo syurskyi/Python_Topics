@@ -7,13 +7,13 @@
 # Solutions:
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
+c_ ListNode:
+    ___  -(self, x):
+        val _ x
+        next _ N..
 
 
-class Solution:
+c_ Solution:
     ___ getlength(self,head):
         res _ 0
         while(head):
@@ -27,11 +27,11 @@ class Solution:
         :type n: int
         :rtype: ListNode
         """
-        __ self.getlength(head)__n:
+        __ getlength(head)__n:
             r_ head.next
 
         node _ head
-        ___ i __ ra..(self.getlength(head)-n-1):
+        ___ i __ ra..(getlength(head)-n-1):
             node _ node.next
         node.next _ node.next.next
         r_ head

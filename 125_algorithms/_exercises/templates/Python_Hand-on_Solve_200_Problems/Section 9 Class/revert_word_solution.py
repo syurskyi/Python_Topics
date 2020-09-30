@@ -5,7 +5,7 @@
 # Input "hello world"
 # Output "world hello"
 
-class py_solution:
+c_ py_solution:
     ___ reverse_words(self, s):
         r_ ' '.join(reversed(s.split()))
 

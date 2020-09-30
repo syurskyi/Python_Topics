@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
     ___ subsets(self, nums):
@@ -14,7 +14,7 @@ class Solution:
             r_   # list
         result _   # list
         nums.sort()
-        self.dfs(nums, 0,   # list, result)
+        dfs(nums, 0,   # list, result)
         r_ result
 
     ___ dfs(self, nums, pos, list_temp, ret):
@@ -22,7 +22,7 @@ class Solution:
         ret.ap..(  # list + list_temp)
         ___ i __ ra..(pos, le.(nums)):
             list_temp.ap..(nums[i])
-            self.dfs(nums, i + 1, list_temp, ret)
+            dfs(nums, i + 1, list_temp, ret)
             list_temp.p..()
 
 

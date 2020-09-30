@@ -5,7 +5,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return an integer
     ___ reverse(self, x):
         __ x<0:

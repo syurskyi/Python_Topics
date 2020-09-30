@@ -3,7 +3,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     """
     :type x: int
     :rtype: bool

@@ -5,12 +5,12 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param s, a string
     # @return a list of strings
     ___ restoreIpAddresses(self, s):
         solution _   # list
-        self.restoreIpAddressesRec(s,0,0,  # list,solution)
+        restoreIpAddressesRec(s,0,0,  # list,solution)
         r_ solution
 
     ___ restoreIpAddressesRec(self, s, index, octets, tempSolution, solution):
@@ -31,7 +31,7 @@ class Solution:
                 break
             tempSolution.ap..(s[index:index+size])
             tempSolution.ap..('.')
-            self.restoreIpAddressesRec(s,index+size,octets+1,tempSolution, solution)
+            restoreIpAddressesRec(s,index+size,octets+1,tempSolution, solution)
             tempSolution.p..()
             tempSolution.p..()
 

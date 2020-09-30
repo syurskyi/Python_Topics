@@ -5,7 +5,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param s, a string
     # @return a boolean
     ___ _isPalindrome(self, s):
@@ -27,14 +27,14 @@ class Solution:
         __ le.(s) __ 1:
             r_ [[s]]
         result _   # list
-        __ self._isPalindrome(s):
+        __ _isPalindrome(s):
             result.ap..([s])
 
         ___ i __ ra..(1, le.(s)):
             head _ s[:i]
-            __ not self._isPalindrome(head):
+            __ not _isPalindrome(head):
                 continue
-            tailPartition _ self.partition(s[i:])
+            tailPartition _ partition(s[i:])
             result.extend([[head] + item ___ item __ tailPartition])
         r_ result
 

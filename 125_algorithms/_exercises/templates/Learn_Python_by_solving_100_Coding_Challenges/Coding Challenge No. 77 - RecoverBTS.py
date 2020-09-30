@@ -5,29 +5,29 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return a tree node
     ___ FindTwoNodes(self, root):
         __ root:
-            self.FindTwoNodes(root.left)
-            __ self.prev an. self.prev.val > root.val:
-                self.n2 _ root
-                __ self.n1 __ N..:
-                    self.n1 _ self.prev
-                self.prev _ root
-                self.FindTwoNodes(root.right)
+            FindTwoNodes(root.left)
+            __ prev an. prev.val > root.val:
+                n2 _ root
+                __ n1 __ N..:
+                    n1 _ prev
+                prev _ root
+                FindTwoNodes(root.right)
 
     ___ recoverTree(self, root):
-        self.n1 _ self.n2 _ N..
-        self.prev _ N..
-        self.FindTwoNodes(root)
-        self.n1.val, self.n2.val _ self.n2.val, self.n1.val
+        n1 _ n2 _ N..
+        prev _ N..
+        FindTwoNodes(root)
+        n1.val, n2.val _ n2.val, n1.val
         r_ root

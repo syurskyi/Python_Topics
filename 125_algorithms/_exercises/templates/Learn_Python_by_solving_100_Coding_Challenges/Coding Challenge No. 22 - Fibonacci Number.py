@@ -3,10 +3,10 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     ___ fibR(self,n):
         __ n__1 or n__2:
             r_ 1
-        r_ self.fibR(n-1)+ self.fibR(n-2)
+        r_ fibR(n-1)+ fibR(n-2)
 
 Solution().fibR(6)

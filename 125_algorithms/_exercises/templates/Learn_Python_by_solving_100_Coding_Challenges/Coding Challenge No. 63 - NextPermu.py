@@ -9,7 +9,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param num, a list of integer
     # @return a list of integer
     ___ nextPermutation(self, num):

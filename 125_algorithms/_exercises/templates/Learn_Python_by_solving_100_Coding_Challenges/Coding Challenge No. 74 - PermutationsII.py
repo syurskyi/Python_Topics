@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
     ___ permuteUnique(self, num):
@@ -22,7 +22,7 @@ class Solution:
             __ num[i] __ previousNum:
                 continue
             previousNum _ num[i]
-        ___ j __ self.permuteUnique(num[:i] + num[i+1:]):
+        ___ j __ permuteUnique(num[:i] + num[i+1:]):
             res.ap..([num[i]] + j)
         r_ res
 

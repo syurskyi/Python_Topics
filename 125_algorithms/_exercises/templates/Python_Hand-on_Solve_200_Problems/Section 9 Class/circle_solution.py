@@ -4,15 +4,15 @@
 # Write a Python class named Circle constructed by a radius and two methods which
 # will compute the area and the perimeter of a circle.
 
-class Circle
-    ___ __init__(self, r):
-        self.radius _ r
+c_ Circle
+    ___  -(self, r):
+        radius _ r
 
-    ___ area(self):
-        r_ self.radius**2*3.14
+    ___ area
+        r_ radius**2*3.14
     
-    ___ perimeter(self):
-        r_ 2*self.radius*3.14
+    ___ perimeter
+        r_ 2*radius*3.14
 
 NewCircle _ Circle(8)
 print(NewCircle.area

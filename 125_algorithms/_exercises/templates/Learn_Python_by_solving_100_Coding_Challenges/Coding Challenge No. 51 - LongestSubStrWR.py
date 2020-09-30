@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return an integer
     ___ lengthOfLongestSubstring(self, s):
         lastRepeating _ -1

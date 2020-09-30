@@ -7,13 +7,13 @@
 # Solutions:
 
 
-class ListNode:
-    ___ __init__(self, x, next_None):
-        self.val _ x
-        self.next _ next
+c_ ListNode:
+    ___  -(self, x, next_None):
+        val _ x
+        next _ next
 
 
-class Solution:
+c_ Solution:
     # @param head, a ListNode
     # @param x, an integer
     # @return a ListNode

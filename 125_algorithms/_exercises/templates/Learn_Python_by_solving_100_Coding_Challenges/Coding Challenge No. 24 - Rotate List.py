@@ -5,15 +5,15 @@
 # return 4->5->1->2->3->NULL
 # Solutions:
 
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
+c_ ListNode(object):
+    ___  -(self, x):
+        val _ x
+        next _ N..
 
-    ___ to_list(self):
-        r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]
+    ___ to_list
+        r_ [val] + next.to_list() __ next ____ [val]
 
-class Solution:
+c_ Solution:
     # @param head, a ListNode
     # @param k, an integer
     # @return a ListNode

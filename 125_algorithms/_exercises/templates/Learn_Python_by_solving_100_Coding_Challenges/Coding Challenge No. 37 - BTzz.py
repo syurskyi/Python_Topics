@@ -11,14 +11,14 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return a list of lists of integers
     ___ zigzagLevelOrder(self, root):

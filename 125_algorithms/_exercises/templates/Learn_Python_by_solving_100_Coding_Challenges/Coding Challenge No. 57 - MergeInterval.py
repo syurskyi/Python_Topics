@@ -6,15 +6,15 @@
 # Solutions:
 
 
-class Interval:
-    ___ __init__(self, s_0, e_0):
-        self.start _ s
-        self.end _ e
+c_ Interval:
+    ___  -(self, s_0, e_0):
+        start _ s
+        end _ e
     ___ printIn(self,i):
         print ("[%d ,%d]"%(i.start,i.end))
 
 
-class Solution:
+c_ Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
     ___ merge(self, intervals):

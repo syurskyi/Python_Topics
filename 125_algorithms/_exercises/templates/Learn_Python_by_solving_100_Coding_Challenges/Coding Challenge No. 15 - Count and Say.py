@@ -9,7 +9,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return a string
     ___ countAndSay(n):
         result _ "1"

@@ -8,7 +8,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param A, a list of integers
     # @return a boolean
     ___ canJump(self, A):

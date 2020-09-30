@@ -4,24 +4,24 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return an integer
     ___ minDepth(self, root):
         __ root __ N..:
             r_ 0
         __ root.left __ N..:
-            r_ self.minDepth(root.right) + 1
+            r_ minDepth(root.right) + 1
         __ root.right __ N..:
-            r_ self.minDepth(root.left) + 1
-        r_ mi.(self.minDepth(root.left),self.minDepth(root.right))+1
+            r_ minDepth(root.left) + 1
+        r_ mi.(minDepth(root.left),minDepth(root.right))+1
 
 
 __  -n __ '__main__':

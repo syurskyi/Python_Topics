@@ -4,7 +4,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param s, a string
     # @return an integer
 

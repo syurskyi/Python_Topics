@@ -8,7 +8,7 @@
 # These brackets must be close in the correct order, 
 # for example "()" and "()[]{}" are valid but "[)", "({[)]" and "{{{" are invalid.
 
-class py_solution:
+c_ py_solution:
    ___ is_valid_parenthese(self, str1):
         stack, pchar _   # list, {"(": ")", "{": "}", "[": "]"}
         ___ parenthese __ str1:

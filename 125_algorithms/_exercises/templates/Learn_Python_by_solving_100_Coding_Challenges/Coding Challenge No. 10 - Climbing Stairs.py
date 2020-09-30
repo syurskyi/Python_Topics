@@ -3,7 +3,7 @@
 # Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 # Solutions:
 
-class Solution:
+c_ Solution:
     ___ climbStairs(n):
         dp _ [0] * (n + 1)
         dp[0] _ dp[1] _ 1

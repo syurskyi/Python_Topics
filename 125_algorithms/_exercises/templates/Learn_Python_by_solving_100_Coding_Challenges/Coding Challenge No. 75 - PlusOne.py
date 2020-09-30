@@ -4,7 +4,7 @@
 # 478 will be represented as [4,7,8]
 # Solutions:
 
-class Solution:
+c_ Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
     ___ plusOne(self, digits):

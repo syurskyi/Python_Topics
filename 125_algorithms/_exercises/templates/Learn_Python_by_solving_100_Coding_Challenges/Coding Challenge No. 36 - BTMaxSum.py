@@ -10,32 +10,32 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return an integer
     ___ maxPathSum(self, root):
-        self.maxValue _ fl..("-inf")
-        self.maxPathSumRec(root)
-        r_ self.maxValue
+        maxValue _ fl..("-inf")
+        maxPathSumRec(root)
+        r_ maxValue
 
     ___ maxPathSumRec(self, root):
         __ root __ N..:
             r_ 0
-        leftSum _ self.maxPathSumRec(root.left)
-        rightSum _ self.maxPathSumRec(root.right)
+        leftSum _ maxPathSumRec(root.left)
+        rightSum _ maxPathSumRec(root.right)
         __ leftSum<0 an. rightSum<0:
-            self.maxValue _ ma.(self.maxValue, root.val)
+            maxValue _ ma.(maxValue, root.val)
             r_ root.val
         __ leftSum>0 an. rightSum>0:
-            self.maxValue _ ma.(self.maxValue, root.val+leftSum+rightSum)
+            maxValue _ ma.(maxValue, root.val+leftSum+rightSum)
         maxValueUp _ ma.(leftSum, rightSum) +root.val
-        self.maxValue _ ma.(self.maxValue, maxValueUp)
+        maxValue _ ma.(maxValue, maxValueUp)
         r_ maxValueUp
 
 

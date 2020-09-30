@@ -3,7 +3,7 @@
 # Note: You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 # Solutions:
 
-class Solution:
+c_ Solution:
     """
     @param k: an integer
     @param prices: a list of integer
@@ -26,7 +26,7 @@ class Solution:
         ___ j __ ra..(1, k + 1):
             ___ i __ ra..(1, n + 1):
                 ___ x __ ra..(0, i + 1):
-                    f[i][j] _ ma.(f[i][j], f[x][j - 1] + self.profit(prices, x + 1, i))
+                    f[i][j] _ ma.(f[i][j], f[x][j - 1] + profit(prices, x + 1, i))
         r_ f[n][k]
 
         # calculate the profit of prices(l, u)

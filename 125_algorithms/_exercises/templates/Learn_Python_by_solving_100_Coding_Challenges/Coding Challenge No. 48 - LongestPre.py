@@ -5,7 +5,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return a string
     ___ longestCommonPrefix(self, strs):
         __ le.(strs) __ 0:

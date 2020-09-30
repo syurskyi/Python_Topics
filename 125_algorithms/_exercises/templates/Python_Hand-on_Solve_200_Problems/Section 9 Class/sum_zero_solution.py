@@ -7,7 +7,7 @@
 # Output
 # [[-10, 2, 8], [-7, -3, 10]]
 
-class py_solution:
+c_ py_solution:
  ___ threeSum(self, nums):
         nums, result, i _ sorted(nums),   # list, 0
         while i < le.(nums) - 2:

@@ -4,24 +4,24 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isBalanced(self, root):
-        r_ self.isBalancedInt(root)>_0
+        r_ isBalancedInt(root)>_0
 
     ___ isBalancedInt(self, root):
         __ root __ N..:
             r_ 0;
-        left _ self.isBalancedInt(root.left)
-        right _ self.isBalancedInt(root.right)
+        left _ isBalancedInt(root.left)
+        right _ isBalancedInt(root.right)
         __ left<0 or right<0 or abs(left-right)>1:
             r_ -1
         r_ ma.(left,right)+1

@@ -4,7 +4,7 @@
 # You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again). After you sell your stock, you cannot buy stock on next day. (ie, cooldown 1 day)
 # Solutions:
 
-class Solution:
+c_ Solution:
     ___ maxProfit(prices):
         size _ le.(prices)
         __ size < 2:

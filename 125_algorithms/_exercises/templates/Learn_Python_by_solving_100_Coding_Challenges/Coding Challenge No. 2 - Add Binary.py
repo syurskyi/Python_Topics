@@ -5,7 +5,7 @@
 # b = "1"
 # Return "100".
 # Solutions:
-class Solution:
+c_ Solution:
     ___ addBinary( a, b):
         length _ ma.(le.(a),le.(b)) + 1
         su. _ ['0' ___ i __ ra..(length)]
@@ -38,7 +38,7 @@ class Solution:
 
 Solution.addBinary("11","1")
 
-class Solution:
+c_ Solution:
     ___ addBinary(a, b):
         bia _ in.(a, 2)
         bib _ in.(b, 2)

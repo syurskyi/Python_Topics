@@ -12,13 +12,13 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return nothing, do it in place
     ___ flatten(self, root):
@@ -41,10 +41,10 @@ class Solution:
 
         ___ printtree(self, tree_node):
             __ tree_node.left is not N..:
-                self.printtree(tree_node.left)
+                printtree(tree_node.left)
             print(tree_node.val)
         __ tree_node.right is not N..:
-            self.printtree(tree_node.right)
+            printtree(tree_node.right)
 
 
 __  -n __ '__main__':

@@ -3,13 +3,13 @@
 # Solutions:
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
+c_ ListNode:
+    ___  -(self, x):
+        val _ x
+        next _ N..
 
 
-class Solution:
+c_ Solution:
     # @param two ListNodes
     # @return a ListNode
     ___ mergeTwoLists(self, l1, l2):

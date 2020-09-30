@@ -4,12 +4,12 @@
 # Output: 7 -> 0 -> 8
 # Solutions:
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
+c_ ListNode:
+    ___  -(self, x):
+        val _ x
+        next _ N..
 
-class Solution:
+c_ Solution:
     ___ addTwoNumbers(l1, l2):
         dummy _ ListNode(0)
         current, carry _ dummy, 0

@@ -3,7 +3,7 @@
 # For numbers which are multiples of both three and five print "FizzBuzz".
 # Solution:
 
-class Solution:
+c_ Solution:
     ___ Fizzbuzz(x,z):
         ___ i __ ra..(x,z):
             __ i % 3 __ 0 an. i % 5 __ 0:

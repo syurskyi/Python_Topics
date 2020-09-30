@@ -5,7 +5,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return a list of integers
     ___ getRow(self, rowIndex):
         __ rowIndex __ 0:

@@ -5,7 +5,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param A a list of integers
     # @param elem an integer, value need to be removed
     # @return an integer

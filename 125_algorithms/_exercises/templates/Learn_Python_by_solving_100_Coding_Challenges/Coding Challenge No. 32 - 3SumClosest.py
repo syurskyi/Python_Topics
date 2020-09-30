@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     ___ threeSumClosest(self, numbers, target):
         numbers.sort()
         ans _ N..

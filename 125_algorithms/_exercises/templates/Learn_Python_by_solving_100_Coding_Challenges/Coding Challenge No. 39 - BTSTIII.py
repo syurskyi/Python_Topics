@@ -3,7 +3,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param prices, a list of integer
     # @return an integer
     ___ maxProfit(self, prices):

@@ -6,14 +6,14 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     ___ combine(self,n, k):
         ___ dfs(start, valuelist):
-            __ self.count __ k: ret.ap..(valuelist); r_
+            __ count __ k: ret.ap..(valuelist); r_
             ___ i __ ra..(start, n + 1):
-                self.count +_ 1
+                count +_ 1
                 dfs(i + 1, valuelist + [i])
-                self.count -_ 1
+                count -_ 1
         ret _   # list; self.count = 0
         dfs(1,   # list)
         r_ ret

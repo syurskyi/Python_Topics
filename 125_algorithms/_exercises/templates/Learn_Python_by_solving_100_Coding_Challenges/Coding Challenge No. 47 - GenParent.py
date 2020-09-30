@@ -4,7 +4,7 @@
 # "((()))", "(()())", "(())()", "()(())", "()()()"
 # Solutions:
 
-class Solution:
+c_ Solution:
     # @param an integer
     # @return a list of string
     ___ helpler(self, l, r, item, res):
@@ -13,15 +13,15 @@ class Solution:
         __ l __ 0 an. r __ 0:
             res.ap..(item)
         __ l > 0:
-            self.helpler(l - 1, r, item + '(', res)
+            helpler(l - 1, r, item + '(', res)
         __ r > 0:
-            self.helpler(l, r - 1, item + ')', res)
+            helpler(l, r - 1, item + ')', res)
 
     ___ generateParenthesis(self, n):
         __ n __ 0:
             r_   # list
         res _   # list
-        self.helpler(n, n, '', res)
+        helpler(n, n, '', res)
         r_ res
 
 

@@ -5,14 +5,14 @@
 # Solutions:
 
 
-class RandomListNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
-        self.random _ N..
+c_ RandomListNode:
+    ___  -(self, x):
+        val _ x
+        next _ N..
+        random _ N..
 
 
-class Solution:
+c_ Solution:
     # @param ll, a RandomListNode
     # @return a RandomListNode
 

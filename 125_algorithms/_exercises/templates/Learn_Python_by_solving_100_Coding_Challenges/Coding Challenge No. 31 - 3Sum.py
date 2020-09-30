@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
     ___ threeSum(self, num):
         length _ le.(num)

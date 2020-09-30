@@ -2,7 +2,7 @@
 # Question: There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 # Solutions:
 
-class Solution:
+c_ Solution:
     """
     @param A, B: integer arrays.
     @return: a double whose format is *.5 or *.0
@@ -10,10 +10,10 @@ class Solution:
     ___ findMedianSortedArrays(self, A, B):
         n _ le.(A) + le.(B)
         __ n % 2 __ 1:
-            r_ self.findKth(A, B, in.(n / 2 + 1))
+            r_ findKth(A, B, in.(n / 2 + 1))
         ____
-            smaller _ self.findKth(A, B, in.(n / 2))
-            bigger _ self.findKth(A, B, in.(n / 2 + 1))
+            smaller _ findKth(A, B, in.(n / 2))
+            bigger _ findKth(A, B, in.(n / 2 + 1))
             r_ (smaller + bigger) / 2.0
 
     ___ findKth(self, A, B, k):
@@ -26,8 +26,8 @@ class Solution:
         a _ A[in.(k / 2 - 1)] __ le.(A) >_ in.(k / 2) ____ N..
         b _ B[in.(k / 2 - 1)] __ le.(B) >_ in.(k / 2) ____ N..
         __ b is N.. or (a is not N.. an. a < b):
-            r_ self.findKth(A[in.(k / 2):], B, k - in.(k / 2))
-        r_ self.findKth(A, B[in.(k / 2):], k - in.(k / 2))
+            r_ findKth(A[in.(k / 2):], B, k - in.(k / 2))
+        r_ findKth(A, B[in.(k / 2):], k - in.(k / 2))
 
 
 Solution().findMedianSortedArrays([1,2,3,4],[7,8,9,10])

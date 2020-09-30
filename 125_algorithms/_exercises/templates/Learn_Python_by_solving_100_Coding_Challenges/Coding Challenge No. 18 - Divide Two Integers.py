@@ -3,7 +3,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return an integer
     ___ divide(dividend, divisor):
         __ (dividend < 0 an. divisor > 0) or (dividend > 0 an. divisor < 0):

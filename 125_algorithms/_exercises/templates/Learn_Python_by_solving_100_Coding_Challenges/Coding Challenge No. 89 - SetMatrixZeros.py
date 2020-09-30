@@ -2,7 +2,7 @@
 # Question: Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place
 # Solutions:
 
-class Solution:
+c_ Solution:
     # @param matrix, a list of lists of integers
     # RETURN NOTHING, MODIFY matrix IN PLACE.
     ___ setZeroes(self, matrix):
@@ -11,7 +11,7 @@ class Solution:
         ___ i __ ra..(m):
             ___ j __ ra..(n):
                 __ not temp[i][j]:
-                    self.setZero(i,j,n,m,matrix)
+                    setZero(i,j,n,m,matrix)
 
     ___ setZero(self,row,col,n,m,matrix):
         ___ i __ ra..(m):

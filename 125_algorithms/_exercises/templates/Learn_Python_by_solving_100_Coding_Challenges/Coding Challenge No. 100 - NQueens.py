@@ -3,7 +3,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return a list of lists of string
     ___ solveNQueens(self, n):
         ___ check(k,j,board):

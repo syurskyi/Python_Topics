@@ -4,7 +4,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param A, a list of integer
     # @return an integer
     ___ singleNumber(self, A):

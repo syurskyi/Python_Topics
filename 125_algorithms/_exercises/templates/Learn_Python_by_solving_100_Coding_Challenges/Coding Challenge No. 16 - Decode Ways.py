@@ -11,7 +11,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param s is a string
     # @return an integer
     ___ numDecodings(s):

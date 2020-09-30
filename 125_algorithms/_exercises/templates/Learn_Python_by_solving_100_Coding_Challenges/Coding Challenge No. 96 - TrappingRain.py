@@ -5,7 +5,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param {integer[]} height
     # @return {integer}
     ___ trap(self, height):

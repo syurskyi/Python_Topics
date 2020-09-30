@@ -3,7 +3,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param n, an integer
     # @return an integer
     ___ largest_prime_of(n):

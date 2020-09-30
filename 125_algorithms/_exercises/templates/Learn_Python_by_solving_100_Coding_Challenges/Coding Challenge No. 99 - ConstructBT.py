@@ -4,30 +4,30 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param inorder, a list of integers
     # @param postorder, a list of integers
     # @return a tree node
     ___ buildTree(self, inorder, postorder):
         __ not inorder:
             r_ N.. # inorder is empty
-        self.inorder, self.postorder _ inorder, postorder
-        r_ self.dfs(0, 0, le.(inorder))
+        inorder, postorder _ inorder, postorder
+        r_ dfs(0, 0, le.(inorder))
 
     ___ dfs(self, inLeft, postLeft, Len):
         __ Len <_ 0:
             r_ N..
-        root _ TreeNode(self.postorder[postLeft + Len - 1])
-        rootPos _ self.inorder.index(self.postorder[postLeft + Len - 1])
-        root.left _ self.dfs(inLeft, postLeft, rootPos - inLeft)
-        root.right _ self.dfs(rootPos + 1, postLeft + rootPos - inLeft, Len - 1 - (rootPos - inLeft))
+        root _ TreeNode(postorder[postLeft + Len - 1])
+        rootPos _ inorder.index(postorder[postLeft + Len - 1])
+        root.left _ dfs(inLeft, postLeft, rootPos - inLeft)
+        root.right _ dfs(rootPos + 1, postLeft + rootPos - inLeft, Len - 1 - (rootPos - inLeft))
         r_ root
 
 

@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param n,k: integers with 1 <= n <= 9
     # @return a string
     ___ getPermutation(self, n, k):

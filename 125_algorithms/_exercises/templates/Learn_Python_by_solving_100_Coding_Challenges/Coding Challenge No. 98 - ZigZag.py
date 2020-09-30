@@ -13,7 +13,7 @@
 ______ functools
 ______ operator
 
-class Solution:
+c_ Solution:
     # @param {string} s
     # @param {integer} numRows
     # @return {string}

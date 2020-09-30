@@ -8,7 +8,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return an integer
     ___ minDistance(word1, word2):
         m_len(word1)+1; n_len(word2)+1

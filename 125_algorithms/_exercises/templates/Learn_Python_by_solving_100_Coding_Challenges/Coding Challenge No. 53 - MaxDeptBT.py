@@ -4,20 +4,20 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return an integer
     ___ maxDepth_recursive(self, root):
         __ root __ N..:
             r_ 0
-        r_ ma.(self.maxDepth(root.left),self.maxDepth(root.right))+1
+        r_ ma.(maxDepth(root.left),maxDepth(root.right))+1
 
     ___ maxDepth_interative(self, root):
         __ root __ N..:

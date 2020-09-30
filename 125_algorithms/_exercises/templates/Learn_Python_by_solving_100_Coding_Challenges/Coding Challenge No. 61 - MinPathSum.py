@@ -3,7 +3,7 @@
 # Note: You can only move either down or right at any point in time.
 # Solutions:
 
-class Solution:
+c_ Solution:
     # @param grid, a list of lists of integers
     # @return an integer
     ___ minPathSum(self, grid):

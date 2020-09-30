@@ -18,7 +18,7 @@ ___ c __ s:
     elif c.isalpha
         l_l+1
     ____
-        pass
+        p_
 print("Letters", l)
 print("Digits", d)
 

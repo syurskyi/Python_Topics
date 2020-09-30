@@ -12,14 +12,14 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
@@ -32,13 +32,13 @@ class Solution:
             r_ root.val __ su.
         elif root.left __ N..:
             # Only has right child.
-            r_ self.hasPathSum(root.right, su.-root.val)
+            r_ hasPathSum(root.right, su.-root.val)
         elif root.right __ N..:
             # Only has left child.
-            r_ self.hasPathSum(root.left, su.-root.val)
+            r_ hasPathSum(root.left, su.-root.val)
         ____
             # Has two children.
-            r_ self.hasPathSum(root.left, su.-root.val) or self.hasPathSum(root.right, su.-root.val)
+            r_ hasPathSum(root.left, su.-root.val) or hasPathSum(root.right, su.-root.val)
 
 
 __  -n __ '__main__':

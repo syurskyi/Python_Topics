@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @return a list of lists of integers
     ___ generate(self, numRows):
         __ numRows __ 0:

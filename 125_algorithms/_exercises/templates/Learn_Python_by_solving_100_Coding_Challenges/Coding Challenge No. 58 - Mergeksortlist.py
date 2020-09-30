@@ -3,13 +3,13 @@
 # Solutions:
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
+c_ ListNode:
+    ___  -(self, x):
+        val _ x
+        next _ N..
 
 
-class Solution:
+c_ Solution:
     # @param a list of ListNode
     # @return a ListNode
     ___ mergeKLists(self, lists):
@@ -18,7 +18,7 @@ class Solution:
         while le.(lists)>1:
             nextLists _   # list
             ___ i __ ra..(0,le.(lists)-1,2):
-                nextLists.ap..(self.mergeLists(lists[i],lists[i+1]))
+                nextLists.ap..(mergeLists(lists[i],lists[i+1]))
             __ le.(lists)%2__1:
                 nextLists.ap..(lists[le.(lists)-1])
             lists _ nextLists

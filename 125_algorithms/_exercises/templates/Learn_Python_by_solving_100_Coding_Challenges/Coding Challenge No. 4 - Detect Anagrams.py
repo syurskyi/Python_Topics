@@ -3,7 +3,7 @@
 # Note: All inputs will be in lower-case.
 # Solutions:
 
-class Solution:
+c_ Solution:
     ___ anagrams(strs):
         di.. _ {}
         ___ word __ strs:

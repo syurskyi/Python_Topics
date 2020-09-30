@@ -1,12 +1,12 @@
-______ __
-
-class Robot:
-
-    ___ __init__(self):
-        pass
-
-    ___ speak(self, query):
-        __ 'sum' __ query:
-            numbers _ __.f_a_(r'\b\d+\b', query)
-            numbers _ [fl..(item) ___ item __ numbers]
-            r_ su.(numbers)
+# ______ __
+#
+# c_ Robot
+#
+#     ___  -
+#         p_
+#
+#     ___ speak  query
+#         __ 'sum' __ ?
+#             numbers _ __.f_a_ _'\b\d+\b' ?
+#             numbers _ fl..(item) ___ ? __ ?
+#             r_ su. ?

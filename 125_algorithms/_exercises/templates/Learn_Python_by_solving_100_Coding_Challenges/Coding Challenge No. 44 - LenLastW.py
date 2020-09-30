@@ -6,7 +6,7 @@
 # return 5.
 # Solutions:
 
-class Solution:
+c_ Solution:
     # @param s, a string
     # @return an integer
 
@@ -38,7 +38,7 @@ class Solution:
                     preLength _ length
                     length _ 0
                 ____ # A following zero in zeros
-                    pass
+                    p_
             ____
                 # Inside one word
                 length +_ 1

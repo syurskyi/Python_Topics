@@ -3,7 +3,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param {string} s
     # @return {string}
 
@@ -16,10 +16,10 @@ class Solution:
                 r_ s
         result _ ''
         ___ i __ ra..(0,l):
-            palindrome _ self.SearchPalindrome(s, i, i)
+            palindrome _ SearchPalindrome(s, i, i)
             __ le.(palindrome) > le.(result):
                 result _ palindrome
-            palindrome _ self.SearchPalindrome(s, i, i+1)
+            palindrome _ SearchPalindrome(s, i, i+1)
             __ le.(palindrome) > le.(result):
                 result _ palindrome
         r_ result

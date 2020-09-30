@@ -10,13 +10,13 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     ___ combinationSum2(self, candidates, target):
         __ not candidates:
             r_   # list
         candidates.sort()
         result _   # list
-        self.combination(candidates, target,   # list, result)
+        combination(candidates, target,   # list, result)
         r_ result
     ___ combination(self, candidates, target, current, result):
         s _ su.(current) __ current ____ 0
@@ -28,7 +28,7 @@ class Solution:
         ____
             i _ 0
             while i < le.(candidates):
-                self.combination(candidates[i + 1:], target, current + [candidates[i]], result)
+                combination(candidates[i + 1:], target, current + [candidates[i]], result)
                 while i + 1 < le.(candidates) an. candidates[i] __ candidates[i + 1]:
                     i +_ 1
             i +_ 1

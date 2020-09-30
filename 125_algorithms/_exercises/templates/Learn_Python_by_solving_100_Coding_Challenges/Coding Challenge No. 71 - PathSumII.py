@@ -14,20 +14,20 @@
 # Solutions:
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.left _ N..
-        self.right _ N..
+c_ TreeNode:
+    ___  -(self, x):
+        val _ x
+        left _ N..
+        right _ N..
 
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a list of lists of integers
     ___ pathSum(self, root, su.):
         solution _   # list
-        self.pathSumRec(root, su., 0,   # list, solution)
+        pathSumRec(root, su., 0,   # list, solution)
         r_ solution
 
     ___ pathSumRec(self, root, su., tempSum, tempList, solution):
@@ -39,8 +39,8 @@ class Solution:
             __ tempSum __ su.:
                 solution.ap..(li..(tempList))
             ____
-                self.pathSumRec(root.left, su., tempSum, tempList, solution)
-                self.pathSumRec(root.right, su., tempSum, tempList, solution)
+                pathSumRec(root.left, su., tempSum, tempList, solution)
+                pathSumRec(root.right, su., tempSum, tempList, solution)
         tempList.p..()
 
 

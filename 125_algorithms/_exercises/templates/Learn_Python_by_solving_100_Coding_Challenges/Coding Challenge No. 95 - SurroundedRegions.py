@@ -15,7 +15,7 @@
 
 
 ______ collections
-class Solution:
+c_ Solution:
     ___ solve(self, board):
         __ board __   # list:
             r_   # list

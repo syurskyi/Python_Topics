@@ -8,16 +8,16 @@
 # Solutions:
 
 
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
+c_ ListNode(object):
+    ___  -(self, x):
+        val _ x
+        next _ N..
 
-    ___ to_list(self):
-        r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]
+    ___ to_list
+        r_ [val] + next.to_list() __ next ____ [val]
 
 
-class Solution(object):
+c_ Solution(object):
     ___ reverseBetween(self, head, m, n):
         """
         :type head: ListNode

@@ -9,7 +9,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     ___ fourSum(self, nums, target):
         answer _   # list
         nums.sort()

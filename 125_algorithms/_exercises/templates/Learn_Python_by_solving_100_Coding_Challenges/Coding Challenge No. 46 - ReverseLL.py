@@ -3,13 +3,13 @@
 # Solutions:
 
 
-class ListNode:
-    ___ __init__(self, val, next_None):
-        self.val _ val
-        self.next _ next
+c_ ListNode:
+    ___  -(self, val, next_None):
+        val _ val
+        next _ next
 
 
-class Solution:
+c_ Solution:
     # @param {ListNode} head
     # @return {ListNode}
 

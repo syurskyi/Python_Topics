@@ -4,7 +4,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param x, a float
     # @param n, a integer
     # @return a float
@@ -12,11 +12,11 @@ class Solution:
         __ n__0:
             r_ 1
         __ n<0:
-            r_ 1.0/self.pow_recursive(x,-n)
+            r_ 1.0/pow_recursive(x,-n)
         __ n%2__1:
-            r_ x*self.pow_recursive(x*x,in.(n/2))
+            r_ x*pow_recursive(x*x,in.(n/2))
         ____
-            r_ self.pow_recursive(x*x,in.(n/2))
+            r_ pow_recursive(x*x,in.(n/2))
 
     # @param x, a float
     # @param n, a integer

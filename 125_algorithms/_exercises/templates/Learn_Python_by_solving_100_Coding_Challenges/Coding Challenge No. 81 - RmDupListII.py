@@ -5,13 +5,13 @@
 # Given 1->1->1->2->3, return 2->3.
 # Solutions:
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val _ x
-        self.next _ N..
+c_ ListNode:
+    ___  -(self, x):
+        val _ x
+        next _ N..
 
 
-class Solution:
+c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ deleteDuplicates(self, head):

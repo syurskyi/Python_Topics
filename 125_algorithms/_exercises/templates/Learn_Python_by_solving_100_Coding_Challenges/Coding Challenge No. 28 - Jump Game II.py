@@ -6,7 +6,7 @@
 # Solutions:
 
 
-class Solution:
+c_ Solution:
     # @param A, a list of integers
     # @return an integer
     ___ jump(self, A):
