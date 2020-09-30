@@ -9,7 +9,7 @@
 #
 # all_lines _ su. lists,   # list)
 #
-# matches _ __.c..("[0-9]+\.*[0-9]*").s.. line ___ ? __ a..
+# matches _ __.c.. " @-@ +\.@ @-@ @" .s.. line ___ ? __ a..
 #
 # numbers _  fl.. m...g.. 0 ___ m.. __ ? __ m..
 # print su. ?/le. ?

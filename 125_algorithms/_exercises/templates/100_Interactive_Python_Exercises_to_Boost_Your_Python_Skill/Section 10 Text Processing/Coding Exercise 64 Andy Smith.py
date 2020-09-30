@@ -1,2 +1,2 @@
-names _ {"firstname" : "Andy", "lastname": "Smith"}
-print("Welcome {firstname} {lastname} to our shop!".f..(**names))
+# names _ "firstname" : "Andy", "lastname": "Smith"
+# print("Welcome @ @ to our shop!".f.. @@?

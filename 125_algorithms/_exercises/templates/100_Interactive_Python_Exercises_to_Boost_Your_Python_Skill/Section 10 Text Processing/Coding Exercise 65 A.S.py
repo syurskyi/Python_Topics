@@ -1,3 +1,3 @@
-firstname _ "Andy"
-lastname _ "Smith"
-print("Welcome {:.1}.{:.1} to our shop!".f..(firstname, lastname))
+# firstname _ "Andy"
+# lastname _ "Smith"
+# print("Welcome @.1. @.1 to our shop!".f.. ? ?
