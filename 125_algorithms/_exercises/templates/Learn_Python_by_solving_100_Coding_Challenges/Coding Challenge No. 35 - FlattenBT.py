@@ -40,10 +40,10 @@ c_ Solution:
         r_ root
 
         ___ printtree(self, tree_node):
-            __ tree_node.left is not N..:
+            __ tree_node.left is no. N..:
                 printtree(tree_node.left)
             print(tree_node.val)
-        __ tree_node.right is not N..:
+        __ tree_node.right is no. N..:
             printtree(tree_node.right)
 
 

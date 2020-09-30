@@ -9,7 +9,7 @@ c_ Solution:
     # @param {integer[]} height
     # @return {integer}
     ___ trap(self, height):
-        __ not height or le.(height)__1:
+        __ no. height or le.(height)__1:
             r_ 0
         max_left _ height[0]
         AddVolume _ [max_left]

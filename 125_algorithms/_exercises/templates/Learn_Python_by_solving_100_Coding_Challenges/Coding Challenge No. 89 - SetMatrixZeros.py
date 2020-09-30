@@ -10,7 +10,7 @@ c_ Solution:
         temp _ [[matrix[i][j] ___ j __ ra..(n)] ___ i __ ra..(m)]
         ___ i __ ra..(m):
             ___ j __ ra..(n):
-                __ not temp[i][j]:
+                __ no. temp[i][j]:
                     setZero(i,j,n,m,matrix)
 
     ___ setZero(self,row,col,n,m,matrix):

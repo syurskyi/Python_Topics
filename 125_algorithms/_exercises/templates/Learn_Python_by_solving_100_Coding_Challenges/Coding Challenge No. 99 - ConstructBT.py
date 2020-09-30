@@ -16,7 +16,7 @@ c_ Solution:
     # @param postorder, a list of integers
     # @return a tree node
     ___ buildTree(self, inorder, postorder):
-        __ not inorder:
+        __ no. inorder:
             r_ N.. # inorder is empty
         inorder, postorder _ inorder, postorder
         r_ dfs(0, 0, le.(inorder))

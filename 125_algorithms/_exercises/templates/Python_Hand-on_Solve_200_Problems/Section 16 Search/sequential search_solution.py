@@ -11,7 +11,7 @@ ___ Sequential_Search(dlist, item):
     pos _ 0
     found _ F..
     
-    while pos < le.(dlist) an. not found:
+    while pos < le.(dlist) an. no. found:
         __ dlist[pos] __ item:
             found _ T..
         ____

@@ -10,7 +10,7 @@ a _ [10,20,30,20,10,50,60,40,80,50,40]
 dup_items _ set()
 uniq_items _   # list
 ___ x __ a:
-    __ x not __ dup_items:
+    __ x no. __ dup_items:
         uniq_items.ap..(x)
         dup_items.add(x)
 

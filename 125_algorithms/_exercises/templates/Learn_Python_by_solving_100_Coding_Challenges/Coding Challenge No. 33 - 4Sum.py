@@ -27,7 +27,7 @@ c_ Solution:
                         ans.sort()
                         low _ low + 1
                         high _ high - 1
-                        __ ans not __ answer:
+                        __ ans no. __ answer:
                             answer.ap..(ans)
                         while low < high an. nums[high+1] __ nums[high]: ##speed up, jump the same value
                             high -_ 1

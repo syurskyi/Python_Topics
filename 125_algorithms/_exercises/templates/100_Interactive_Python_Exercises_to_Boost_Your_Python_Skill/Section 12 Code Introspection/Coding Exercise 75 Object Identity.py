@@ -1,2 +1,2 @@
-___ foo(obj):
-    r_ id(obj)
+# ___ foo obj
+#     r_ i. ?

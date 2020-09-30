@@ -12,9 +12,9 @@ c_ Solution:
             r_ T..
         head, tail _ 0, le.(s)-1
         while head < tail:
-            __ not s[head].isalnum
+            __ no. s[head].isalnum
                 head +_ 1
-            elif not s[tail].isalnum
+            elif no. s[tail].isalnum
                 tail -_ 1
             ____
                 __ s[head].l.. __ s[tail].lower

@@ -2,7 +2,7 @@
 
 ______ string, __
 
-__ not __.pa__ .exists("letters"):
+__ no. __.pa__ .exists("letters"):
     __.m_d_("letters")
 ___ letter __ string.ascii_lowercase:
     w__ o..("letters/" + letter + ".txt", _) __ file:

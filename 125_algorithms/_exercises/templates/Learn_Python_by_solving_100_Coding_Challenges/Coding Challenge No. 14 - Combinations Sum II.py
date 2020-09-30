@@ -12,7 +12,7 @@
 
 c_ Solution:
     ___ combinationSum2(self, candidates, target):
-        __ not candidates:
+        __ no. candidates:
             r_   # list
         candidates.sort()
         result _   # list

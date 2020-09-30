@@ -25,7 +25,7 @@ c_ Solution:
             r_ mi.(A[0], B[0])
         a _ A[in.(k / 2 - 1)] __ le.(A) >_ in.(k / 2) ____ N..
         b _ B[in.(k / 2 - 1)] __ le.(B) >_ in.(k / 2) ____ N..
-        __ b is N.. or (a is not N.. an. a < b):
+        __ b is N.. or (a is no. N.. an. a < b):
             r_ findKth(A[in.(k / 2):], B, k - in.(k / 2))
         r_ findKth(A, B[in.(k / 2):], k - in.(k / 2))
 

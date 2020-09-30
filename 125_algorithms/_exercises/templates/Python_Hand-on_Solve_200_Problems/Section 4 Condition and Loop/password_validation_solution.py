@@ -22,13 +22,13 @@ x _ T..
 while x:  
     __ (le.(p)<6 or le.(p)>12):
         break
-    elif not __.s..("[a-z]",p):
+    elif no. __.s..("[a-z]",p):
         break
-    elif not __.s..("[0-9]",p):
+    elif no. __.s..("[0-9]",p):
         break
-    elif not __.s..("[A-Z]",p):
+    elif no. __.s..("[A-Z]",p):
         break
-    elif not __.s..("[$#@]",p):
+    elif no. __.s..("[$#@]",p):
         break
     elif __.s..("\s",p):
         break

@@ -1,1 +1,1 @@
-print(dir(in.))
+# print di. in.

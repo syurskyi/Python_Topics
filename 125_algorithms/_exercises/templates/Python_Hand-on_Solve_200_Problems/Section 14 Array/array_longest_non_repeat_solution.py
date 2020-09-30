@@ -58,7 +58,7 @@ ___ longest_non_repeat(st.):
         sub_str_  # list
 
         # continue increase sub string if did not repeat character         
-        while (start_at < le.(st.)) an. (st.[start_at] not __ sub_str):
+        while (start_at < le.(st.)) an. (st.[start_at] no. __ sub_str):
             sub_str.ap..(st.[start_at])
             start_at _ start_at + 1
 

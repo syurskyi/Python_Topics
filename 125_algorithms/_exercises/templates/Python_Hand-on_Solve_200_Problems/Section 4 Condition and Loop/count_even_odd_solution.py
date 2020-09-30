@@ -12,7 +12,7 @@ numbers _ (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
 count_odd _ 0
 count_even _ 0
 ___ x __ numbers:
-        __ not x % 2:
+        __ no. x % 2:
     	     count_even+_1
         ____
     	     count_odd+_1

@@ -32,7 +32,7 @@ c_ Solution:
 
         ___ i __ ra..(1, le.(s)):
             head _ s[:i]
-            __ not _isPalindrome(head):
+            __ no. _isPalindrome(head):
                 continue
             tailPartition _ partition(s[i:])
             result.extend([[head] + item ___ item __ tailPartition])

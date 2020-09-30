@@ -23,7 +23,7 @@ c_ Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        __ not head or k <_ 1:
+        __ no. head or k <_ 1:
             r_ head
         dummy _ ListNode(-1)
         dummy.next _ head
@@ -36,7 +36,7 @@ c_ Solution(object):
         # Check if there are k nodes left
         temp _ head
         ___ i __ ra..(k):
-            __ not temp.next:
+            __ no. temp.next:
                 r_ N..
             temp _ temp.next
 

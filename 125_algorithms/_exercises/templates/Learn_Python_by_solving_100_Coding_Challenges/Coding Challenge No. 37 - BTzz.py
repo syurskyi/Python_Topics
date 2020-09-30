@@ -45,7 +45,7 @@ c_ Solution:
                         nextLevel.ap..(node.left)
             thisLevel _ nextLevel
             solution.ap..(levelSolution)
-            leftToRight _ not leftToRight
+            leftToRight _ no. leftToRight
         r_ solution
 
 

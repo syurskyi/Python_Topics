@@ -8,7 +8,7 @@ c_ Solution:
         di.. _ {}
         ___ word __ strs:
             sortedword _ ''.join(sorted(word))
-            di..[sortedword] _ [word] __ sortedword not __ di.. ____ di..[sortedword] + [word]
+            di..[sortedword] _ [word] __ sortedword no. __ di.. ____ di..[sortedword] + [word]
         res _   # list
         ___ item __ di..:
             __ le.(di..[item]) >_ 2:
