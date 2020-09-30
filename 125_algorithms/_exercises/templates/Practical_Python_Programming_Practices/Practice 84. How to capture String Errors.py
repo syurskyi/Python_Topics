@@ -1,9 +1,9 @@
 x _ input("Insert numbers only: ")
 
 while type(x) !_ fl..:
-    try:
+    ___
         x _ fl..(x)
-    except ValueError:
+    ______ ValueError:
         print("Error! Please insert only numbers...")
         x _ input("Insert numbers only: ")
 print(x/2)

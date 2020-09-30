@@ -1,9 +1,9 @@
 x _ fl..(input("Insert first number: "))
 y _ fl..(input("Insert second number: "))
 
-try:
+___
     z _ x/y
-except ZeroDivisionError:
+______ ZeroDivisionError:
     print("Error! Number not divisible by zero...")
 ____
     print(z)
