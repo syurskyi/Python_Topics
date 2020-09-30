@@ -1,0 +1,1 @@
+Hint: If you're lazy to type down all the letters, you can use the ascii_lowercase property of the string module

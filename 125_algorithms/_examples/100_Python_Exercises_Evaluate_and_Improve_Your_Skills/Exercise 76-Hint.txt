@@ -1,0 +1,1 @@
+Hint: Use the datetime module and format codes from here: http://strftime.org/

@@ -1,0 +1,26 @@
+{
+    "metals": {
+        "steel":
+            {
+                "conductivity": 30.1,
+                "density": 0.284,
+                "heat": 0.122,
+                "melting point": 2570,
+                "thermal expansion": 6.7,
+                "yield strength": 255,
+                "tensile strength": 410,
+                "minimum impact energy": 20
+            },
+        "aluminium":
+            {
+                "conductivity": 19,
+                "density": 0.112,
+                "heat": 0.102,
+                "melting point": 1250,
+                "thermal expansion": 9.8,
+                "yield strength": 102,
+                "tensile strength": 109,
+                "minimum impact energy": 15
+            }
+        }
+}
