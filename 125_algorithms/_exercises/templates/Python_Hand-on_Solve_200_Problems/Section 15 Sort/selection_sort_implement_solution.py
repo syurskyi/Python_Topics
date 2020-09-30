@@ -9,17 +9,17 @@
 
 # %%
 ___ selectionSort(nlist):
-   ___ fillslot __ ra..(len(nlist)-1,0,-1):
-       maxpos=0
+   ___ fillslot __ ra..(le.(nlist)-1,0,-1):
+       maxpos_0
        ___ location __ ra..(1,fillslot+1):
-           if nlist[location]>nlist[maxpos]:
-               maxpos = location
+           __ nlist[location]>nlist[maxpos]:
+               maxpos _ location
 
-       temp = nlist[fillslot]
-       nlist[fillslot] = nlist[maxpos]
-       nlist[maxpos] = temp
+       temp _ nlist[fillslot]
+       nlist[fillslot] _ nlist[maxpos]
+       nlist[maxpos] _ temp
 
-nlist = [14,46,43,27,57,41,45,21,70]
+nlist _ [14,46,43,27,57,41,45,21,70]
 selectionSort(nlist)
 print(nlist)
 

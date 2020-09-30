@@ -4,9 +4,9 @@
 # Write a Python program to calculate the length of a string.
 
 ___ string_length(str1):
-    count = 0
+    count _ 0
     ___ char __ str1:
-        count += 1
+        count +_ 1
     r_ count
 print(string_length('hello world'))
 

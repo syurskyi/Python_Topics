@@ -4,10 +4,10 @@
 # Write a Python program to read a random line from a file.
 # Using test.txt
 
-import random
+______ random
 
 ___ random_line(fname):
-    lines = open(fname).read().splitlines()
+    lines _ open(fname).read().splitlines()
     r_ random.choice(lines)
 print(random_line('test.txt'))
 

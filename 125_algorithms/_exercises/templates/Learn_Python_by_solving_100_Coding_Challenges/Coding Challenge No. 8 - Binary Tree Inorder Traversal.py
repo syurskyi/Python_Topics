@@ -12,25 +12,25 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 class Solution:
     ___ inorderTraversal(root):
-        stack =   # list
-        node = root
-        solution =   # list
-        while node!= None or len(stack)>0:
-            if node != None:
-                stack.append(node)
-                node = node.left
-            else:
-                node = stack.pop()
-                solution.append(node.val)
-                node = node.right
+        stack _   # list
+        node _ root
+        solution _   # list
+        while node!_ None or le.(stack)>0:
+            __ node !_ None:
+                stack.ap..(node)
+                node _ node.left
+            ____
+                node _ stack.p..()
+                solution.ap..(node.val)
+                node _ node.right
         r_ solution
 
-if  -n == '__main__':
-    BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
+__  -n __ '__main__':
+    BT, BT.right, BT.right.left _ TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution.inorderTraversal(BT) )

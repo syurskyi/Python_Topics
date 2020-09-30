@@ -9,16 +9,16 @@
 
 class ListNode:
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
 
 class Solution:
     ___ getlength(self,head):
-        res = 0
+        res _ 0
         while(head):
-            res += 1
-            head = head.next
+            res +_ 1
+            head _ head.next
         r_ res
 
     ___ removeNthFromEnd(self, head, n):
@@ -27,21 +27,21 @@ class Solution:
         :type n: int
         :rtype: ListNode
         """
-        if self.getlength(head)==n:
+        __ self.getlength(head)__n:
             r_ head.next
 
-        node = head
+        node _ head
         ___ i __ ra..(self.getlength(head)-n-1):
-            node = node.next
-        node.next = node.next.next
+            node _ node.next
+        node.next _ node.next.next
         r_ head
 
     ___ printll(self, node):
         while node:
             print ( node.val )
-            node = node.next
+            node _ node.next
 
 
-if  -n == '__main__':
-    ll1, ll1.next, ll1.next.next = ListNode(0), ListNode(1), ListNode(5)
+__  -n __ '__main__':
+    ll1, ll1.next, ll1.next.next _ ListNode(0), ListNode(1), ListNode(5)
     Solution().printll( Solution().removeNthFromEnd(ll1,2) )

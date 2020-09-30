@@ -1,7 +1,7 @@
-x = ['a','b','c','d','e']
-y = input("Insert a letter: ")
+x _ ['a','b','c','d','e']
+y _ input("Insert a letter: ")
 
-if y __ x:
+__ y __ x:
     print(1)
-else:
+____
     raise ValueError("Letter does not exist!")

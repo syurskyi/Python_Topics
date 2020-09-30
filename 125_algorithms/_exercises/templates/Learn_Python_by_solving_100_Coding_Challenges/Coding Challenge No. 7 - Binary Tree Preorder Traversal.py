@@ -12,23 +12,23 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 class Solution:
     ___ preorderTraversal(root):
-        result =   # list
-        stack = [root]
+        result _   # list
+        stack _ [root]
 
         while stack:
-            node = stack.pop()
-            if node:
-                result.append(node.val)
-                stack.append(node.right)
-                stack.append(node.left)
+            node _ stack.p..()
+            __ node:
+                result.ap..(node.val)
+                stack.ap..(node.right)
+                stack.ap..(node.left)
         r_ result
 
-if  -n == '__main__':
-    BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
+__  -n __ '__main__':
+    BT, BT.right, BT.right.left _ TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution.preorderTraversal(BT) )

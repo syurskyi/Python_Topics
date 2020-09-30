@@ -11,18 +11,18 @@ class Solution:
     # @param s, a string
     # @param dict, a set of string
     # @return a boolean
-    ___ wordBreak(self, s, dict):
-        if len( s ) == 0 or len(dict) == 0:
-            r_ False
-        dp = [ 0 ]
-        ___ i __ ra..(1, len( s ) + 1):
-            ___ j __ ra..( len( dp ) - 1, -1, -1):
-                substr = s[dp[j] : i]
-                if substr __ dict:
-                    dp.append(i)
+    ___ wordBreak(self, s, di..):
+        __ le.( s ) __ 0 or le.(di..) __ 0:
+            r_ F..
+        dp _ [ 0 ]
+        ___ i __ ra..(1, le.( s ) + 1):
+            ___ j __ ra..( le.( dp ) - 1, -1, -1):
+                substr _ s[dp[j] : i]
+                __ substr __ di..:
+                    dp.ap..(i)
                     break
-        r_ dp[-1] == len( s )
+        r_ dp[-1] __ le.( s )
 
 
-dict = ["hall", "mark"]
-Solution().wordBreak("hallmark",dict)
+di.. _ ["hall", "mark"]
+Solution().wordBreak("hallmark",di..)

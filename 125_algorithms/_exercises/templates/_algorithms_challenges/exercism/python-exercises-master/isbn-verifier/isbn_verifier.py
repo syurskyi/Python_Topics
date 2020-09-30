@@ -1,2 +1,0 @@
-___ verify(isbn
-    pass

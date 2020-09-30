@@ -1,8 +1,8 @@
-x = 20
-y = 30
-z = 40
+x _ 20
+y _ 30
+z _ 40
 
-value = input("Insert variable x,y,z only: ")
+value _ input("Insert variable x,y,z only: ")
 
 try:
     exec("print("+value+")")

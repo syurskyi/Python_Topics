@@ -1,21 +1,21 @@
 print("Zero operation terminates program!")
-while True:
-    o = input("Choose Opearator(+, -, *, /): ")
-    if o == "0":
+while T..:
+    o _ input("Choose Opearator(+, -, *, /): ")
+    __ o __ "0":
         break
-    if o __ ('+','-','*','/'):
-        x = float(input("Enter the value of x = "))
-        y = float(input("Enter the value of y = "))
-        if o == '+':
+    __ o __ ('+','-','*','/'):
+        x _ float(input("Enter the value of x = "))
+        y _ float(input("Enter the value of y = "))
+        __ o __ '+':
             print("%.2f" % (x+y))
-        elif o == '-':
+        elif o __ '-':
             print("%.2f" % (x-y))
-        elif o == '*':
+        elif o __ '*':
             print("%.2f" % (x*y))
-        elif o == '/':
-            if y != 0:
+        elif o __ '/':
+            __ y !_ 0:
                 print("%.2f" % (x / y))
-            else:
+            ____
                 print("Error! Division by zero...")
-        else:
+        ____
             print("Invalid operator")

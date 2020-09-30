@@ -9,38 +9,38 @@
 class Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
     ___ threeSum(self, num):
-        length = len(num)
-        result =   # list
+        length _ le.(num)
+        result _   # list
 
-        if length < 3:
+        __ length < 3:
             r_ result
         num.sort()
 
         ___ i __ ra..(length - 2):
-            if i > 0 and num[i] == num[i - 1]:
+            __ i > 0 an. num[i] __ num[i - 1]:
                 continue
-            low = i + 1
-            high = length - 1
-            target_gap = 0 - num[i]
+            low _ i + 1
+            high _ length - 1
+            target_gap _ 0 - num[i]
 
             while low < high:
-                if num[low] + num[high] < target_gap:
-                    low += 1
-                    while low < high and num[low] == num[i - 1]:
-                        low += 1
+                __ num[low] + num[high] < target_gap:
+                    low +_ 1
+                    while low < high an. num[low] __ num[i - 1]:
+                        low +_ 1
                 elif num[low] + num[high] > target_gap:
-                    high -= 1
-                    while low < high and num[high] == num[high + 1]:
-                        high -= 1
-                else:
-                    result.append([num[i], num[low], num[high]])
-                    low += 1
-                    while low < high and num[low] == num[low - 1]:
-                        low += 1
-                    high -= 1
+                    high -_ 1
+                    while low < high an. num[high] __ num[high + 1]:
+                        high -_ 1
+                ____
+                    result.ap..([num[i], num[low], num[high]])
+                    low +_ 1
+                    while low < high an. num[low] __ num[low - 1]:
+                        low +_ 1
+                    high -_ 1
 
-                while low < high and num[high] == num[high + 1]:
-                    high -= 1
+                while low < high an. num[high] __ num[high + 1]:
+                    high -_ 1
         r_ result
 
 

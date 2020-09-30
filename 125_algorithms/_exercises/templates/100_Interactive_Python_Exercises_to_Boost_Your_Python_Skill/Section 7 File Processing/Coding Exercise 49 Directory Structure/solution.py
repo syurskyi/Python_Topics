@@ -1,4 +1,4 @@
-import os
+______ os
 
 ___ i __ ra..(1, 50+1):
-    os.makedirs(str(i))
+    os.makedirs(st.(i))

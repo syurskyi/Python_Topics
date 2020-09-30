@@ -8,15 +8,15 @@
 # An isosceles triangle is a triangle with (at least) two equal sides.
 
 print("Input lengths of the triangle sides: ")
-x = int(input("x: "))
-y = int(input("y: "))
-z = int(input("z: "))
+x _ in.(input("x: "))
+y _ in.(input("y: "))
+z _ in.(input("z: "))
 
-if x == y == z:
+__ x __ y __ z:
 	print("Equilateral triangle")
-elif x != y != z:
+elif x !_ y !_ z:
 	print("Scalene triangle")
-else:
+____
 	print("isosceles triangle") 
     
 

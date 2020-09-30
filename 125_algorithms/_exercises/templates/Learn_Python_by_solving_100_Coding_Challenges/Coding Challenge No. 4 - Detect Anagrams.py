@@ -5,14 +5,14 @@
 
 class Solution:
     ___ anagrams(strs):
-        dict = {}
+        di.. _ {}
         ___ word __ strs:
-            sortedword = ''.join(sorted(word))
-            dict[sortedword] = [word] if sortedword not __ dict else dict[sortedword] + [word]
-        res =   # list
-        ___ item __ dict:
-            if len(dict[item]) >= 2:
-                res += dict[item]
+            sortedword _ ''.join(sorted(word))
+            di..[sortedword] _ [word] __ sortedword not __ di.. ____ di..[sortedword] + [word]
+        res _   # list
+        ___ item __ di..:
+            __ le.(di..[item]) >_ 2:
+                res +_ di..[item]
         r_ res
 
 

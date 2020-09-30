@@ -1,5 +1,5 @@
-import itertools
-
-___ foo(mylist, x, y):
-    list_of_lists = [mylist[i:i+x] ___ i __ ra..(0, len(mylist),y)]
-    r_ list(itertools.chain.from_iterable(list_of_lists))
+# ______ it..
+# #
+# # ___ foo mylist x y
+# #     list_of_lists _ ? i:?+x ___ ? __ ra.. 0 le. ? y
+# #     r_ li.. it...c__.f_i.. ?

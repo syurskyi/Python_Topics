@@ -8,19 +8,19 @@ class Solution:
     # @param an integer
     # @return a list of string
     ___ helpler(self, l, r, item, res):
-        if r < l:
+        __ r < l:
             r_
-        if l == 0 and r == 0:
-            res.append(item)
-        if l > 0:
+        __ l __ 0 an. r __ 0:
+            res.ap..(item)
+        __ l > 0:
             self.helpler(l - 1, r, item + '(', res)
-        if r > 0:
+        __ r > 0:
             self.helpler(l, r - 1, item + ')', res)
 
     ___ generateParenthesis(self, n):
-        if n == 0:
+        __ n __ 0:
             r_   # list
-        res =   # list
+        res _   # list
         self.helpler(n, n, '', res)
         r_ res
 

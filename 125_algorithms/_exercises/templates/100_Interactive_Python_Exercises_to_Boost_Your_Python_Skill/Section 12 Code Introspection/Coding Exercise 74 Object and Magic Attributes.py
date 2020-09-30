@@ -1,9 +1,9 @@
-import re
+______ re
 
 ___ foo(obj):
-    all_attributes = dir(obj)
-    normal_attributes = [attribute \
+    all_attributes _ dir(obj)
+    normal_attributes _ [attribute \
     ___ attribute __ all_attributes \
-        if not re.compile("__[a-z0-9A-Z_]*__").search(attribute)]
+        __ not re.compile("__[a-z0-9A-Z_]*__").search(attribute)]
     r_ normal_attributes
 

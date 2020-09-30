@@ -4,13 +4,13 @@
 
 class Solution:
     ___ ROT13(message):
-        plaintext = list(message.lower())
-        alphabet = list('abcdefghijklmnopqrstuvwxyz')
-        k = 13
-        cipher = ''
+        plaintext _ li..(message.lower
+        alphabet _ li..('abcdefghijklmnopqrstuvwxyz')
+        k _ 13
+        cipher _ ''
         ___ c __ plaintext:
-            if c __ alphabet:
-                cipher += alphabet[(alphabet.index(c)+k)%(len(alphabet))]
+            __ c __ alphabet:
+                cipher +_ alphabet[(alphabet.index(c)+k)%(le.(alphabet))]
         print ( 'Your encrypted message is: ' + cipher )
 
 Solution.ROT13("Hello There Friends!")

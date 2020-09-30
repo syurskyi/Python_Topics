@@ -1,7 +1,7 @@
-str1 = input("Insert starting letter: ")
-str2 = input("Insert ending letter: ")
+str1 _ input("Insert starting letter: ")
+str2 _ input("Insert ending letter: ")
 
-while str1 <= str2:
-    print(str1, end=" ")
-    str1 = chr(ord(str1) + 1)
+while str1 <_ str2:
+    print(str1, end_" ")
+    str1 _ chr(ord(str1) + 1)
 print()

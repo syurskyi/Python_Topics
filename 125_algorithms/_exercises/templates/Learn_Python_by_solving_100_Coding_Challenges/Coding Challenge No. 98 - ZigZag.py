@@ -10,25 +10,25 @@
 # Solutions:
 
 
-import functools
-import operator
+______ functools
+______ operator
 
 class Solution:
     # @param {string} s
     # @param {integer} numRows
     # @return {string}
     ___ convert(self, s, numRows):
-        if numRows == 1 or numRows >= len(s):
+        __ numRows __ 1 or numRows >_ le.(s):
             r_ s
-        zigzag = [[] ___ x __ ra..(numRows)]
-        row, step = 0, 1
+        zigzag _ [[] ___ x __ ra..(numRows)]
+        row, step _ 0, 1
         ___ c __ s:
-            zigzag[row] += c,
-            if row == 0:
-                step = 1
-            elif row == numRows - 1:
-                step = -1
-            row += step
+            zigzag[row] +_ c,
+            __ row __ 0:
+                step _ 1
+            elif row __ numRows - 1:
+                step _ -1
+            row +_ step
         r_ ''.join(functools.reduce(operator.add, zigzag))
 
 

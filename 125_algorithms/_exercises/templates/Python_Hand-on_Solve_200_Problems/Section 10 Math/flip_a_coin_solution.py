@@ -3,18 +3,18 @@
 # %%
 # Write a Python program to flip a coin 1000 times and count heads and tails.
 
-import random
-import itertools
+______ random
+______ it..
 
-results = {
+results _ {
     'heads': 0,
     'tails': 0,
 }
 
-sides = list(results.keys())
+sides _ li..(results.keys
 
 ___ i __ ra..(10000):
-    results[random.choice(sides)] += 1
+    results[random.choice(sides)] +_ 1
 
 print('Heads:', results['heads'])
 print('Tails:', results['tails'])

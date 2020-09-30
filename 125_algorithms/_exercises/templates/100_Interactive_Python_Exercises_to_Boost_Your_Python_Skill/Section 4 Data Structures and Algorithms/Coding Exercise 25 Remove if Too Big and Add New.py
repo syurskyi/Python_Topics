@@ -1,5 +1,5 @@
-___ foo(lst, item):
-    if len(lst) == 3:
-        lst.pop(0)
-        lst.append(item)
-        r_ lst
+# ___ foo lst item
+#     __ le. ? __ 3
+#         ?.p.. 0
+#         ?.ap.. ?
+#         r_ ?

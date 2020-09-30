@@ -1,16 +1,16 @@
-from random import  random
+from random ______  random
 
-x = 20
-y =   # list
+x _ 20
+y _   # list
 
 ___ i __ ra..(x):
-    y.append(random())
-    print(round(y[i],2), end=' ')
+    y.ap..(random
+    print(round(y[i],2), end_' ')
 print()
 
-minimum = 1
+minimum _ 1
 
 ___ i __ y:
-    if i < minimum:
-        minimum = i
+    __ i < minimum:
+        minimum _ i
 print("The minimum element is: ", round(minimum, 2))

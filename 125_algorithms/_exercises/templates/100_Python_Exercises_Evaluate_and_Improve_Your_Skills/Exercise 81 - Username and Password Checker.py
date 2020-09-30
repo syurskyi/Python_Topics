@@ -1,28 +1,28 @@
-while True:
-    usr = input("Enter username: ")
+while T..:
+    usr _ input("Enter username: ")
     with open("users.txt", "r") as file:
-        users = file.readlines()
-        users = [i.strip("\n") ___ i __ users]
-    if usr __ users:
+        users _ file.readlines()
+        users _ [i.strip("\n") ___ i __ users]
+    __ usr __ users:
         print("Username exists")
         continue
-    else:
+    ____
         print("Username is fine")
         break
 
-while True:
-    notes =   # list
-    psw = input("Enter password: ")
-    if not any(i.isdigit() ___ i __ psw):
-        notes.append("You need at least one number")
-    if not any(i.isupper() ___ i __ psw):
-        notes.append("You need at least one uppercase letter")
-    if len(psw) < 5:
-        notes.append("You need at least 5 characters")
-    if len(notes) == 0:
+while T..:
+    notes _   # list
+    psw _ input("Enter password: ")
+    __ not any(i.isdigit() ___ i __ psw):
+        notes.ap..("You need at least one number")
+    __ not any(i.isupper() ___ i __ psw):
+        notes.ap..("You need at least one uppercase letter")
+    __ le.(psw) < 5:
+        notes.ap..("You need at least 5 characters")
+    __ le.(notes) __ 0:
         print("Password is fine")
         break
-    else:
+    ____
         print("Please check the following: ")
         ___ note __ notes:
             print(note)

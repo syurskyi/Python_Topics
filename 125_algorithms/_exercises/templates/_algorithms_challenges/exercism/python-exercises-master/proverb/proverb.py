@@ -1,2 +1,0 @@
-___ proverb(
-    pass

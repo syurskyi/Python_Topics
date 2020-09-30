@@ -6,9 +6,9 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 
 class Solution:
@@ -16,18 +16,18 @@ class Solution:
     # @param postorder, a list of integers
     # @return a tree node
     ___ buildTree(self, inorder, postorder):
-        if not inorder:
+        __ not inorder:
             r_ None # inorder is empty
-        self.inorder, self.postorder = inorder, postorder
-        r_ self.dfs(0, 0, len(inorder))
+        self.inorder, self.postorder _ inorder, postorder
+        r_ self.dfs(0, 0, le.(inorder))
 
     ___ dfs(self, inLeft, postLeft, Len):
-        if Len <= 0:
+        __ Len <_ 0:
             r_ None
-        root = TreeNode(self.postorder[postLeft + Len - 1])
-        rootPos = self.inorder.index(self.postorder[postLeft + Len - 1])
-        root.left = self.dfs(inLeft, postLeft, rootPos - inLeft)
-        root.right = self.dfs(rootPos + 1, postLeft + rootPos - inLeft, Len - 1 - (rootPos - inLeft))
+        root _ TreeNode(self.postorder[postLeft + Len - 1])
+        rootPos _ self.inorder.index(self.postorder[postLeft + Len - 1])
+        root.left _ self.dfs(inLeft, postLeft, rootPos - inLeft)
+        root.right _ self.dfs(rootPos + 1, postLeft + rootPos - inLeft, Len - 1 - (rootPos - inLeft))
         r_ root
 
 

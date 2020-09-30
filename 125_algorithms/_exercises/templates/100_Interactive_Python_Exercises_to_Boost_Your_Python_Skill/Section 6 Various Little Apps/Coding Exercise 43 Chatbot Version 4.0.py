@@ -1,8 +1,8 @@
-import datetime
-import difflib
+______ datetime
+______ difflib
 
 
-vocabulary = {
+vocabulary _ {
     "hello" : "Hi there!",
     "what's your name" : "My name is Roboto!",
     "what is your name" : "My name is Roboto!",
@@ -11,6 +11,6 @@ vocabulary = {
 }
 
 ___ foo(query, vocabulary):
-    new_vocabulary = {key:[value, difflib.SequenceMatcher(None, query, key).ratio()]
-    ___ (key,value) __ vocabulary.items()}
-    r_ new_vocabulary[ma.(new_vocabulary, key=lambda k: new_vocabulary[k][1])][0]
+    new_vocabulary _ {key:[value, difflib.SequenceMatcher(None, query, key).ratio()]
+    ___ (key,value) __ vocabulary.i..()}
+    r_ new_vocabulary[ma.(new_vocabulary, key_lambda k: new_vocabulary[k][1])][0]

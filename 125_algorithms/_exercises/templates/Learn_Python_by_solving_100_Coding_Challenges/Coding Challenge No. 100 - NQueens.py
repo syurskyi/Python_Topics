@@ -8,21 +8,21 @@ class Solution:
     ___ solveNQueens(self, n):
         ___ check(k,j,board):
             ___ i __ ra..(k):
-                if board[i]==j or abs(k-i)==abs(board[i]-j):
-                    r_ False
-            r_ True
+                __ board[i]__j or abs(k-i)__abs(board[i]-j):
+                    r_ F..
+            r_ T..
 
         ___ dfs(depth,board,valuelist,solution):
             #for i in range(len(board)):
-            if depth==len(board):
-                solution.append(valuelist)
-            ___ row __ ra..(len(board)):
-                if check(depth,row,board):
-                    s='.'*len(board)
-                    board[depth]=row
+            __ depth__len(board):
+                solution.ap..(valuelist)
+            ___ row __ ra..(le.(board)):
+                __ check(depth,row,board):
+                    s_'.'*le.(board)
+                    board[depth]_row
                     dfs(depth+1,board,valuelist+[s[:row]+'Q'+s[row+1:]],solution)
-        board=[-1 ___ i __ ra..(n)]
-        solution=  # list
+        board_[-1 ___ i __ ra..(n)]
+        solution_  # list
         dfs(0,board,  # list,solution)
         r_ solution
 

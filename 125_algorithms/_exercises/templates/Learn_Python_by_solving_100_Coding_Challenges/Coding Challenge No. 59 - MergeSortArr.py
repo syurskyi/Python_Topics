@@ -13,25 +13,25 @@ class Solution(object):
         :type n: int
         :rtype: void Do not return anything, modify A in-place instead.
         """
-        indexA = m-1;
-        indexB = n-1;
-        while indexA >=0 and indexB>=0:
-            if A[indexA] > B[indexB]:
-                A[indexA+indexB+1] = A[indexA]
-                indexA -= 1
-            else:
-                A[indexA+indexB+1] = B[indexB]
-                indexB -= 1
-        while indexB >= 0:
-            A[indexB] = B[indexB]
-            indexB -= 1
+        indexA _ m-1;
+        indexB _ n-1;
+        while indexA >_0 an. indexB>_0:
+            __ A[indexA] > B[indexB]:
+                A[indexA+indexB+1] _ A[indexA]
+                indexA -_ 1
+            ____
+                A[indexA+indexB+1] _ B[indexB]
+                indexB -_ 1
+        while indexB >_ 0:
+            A[indexB] _ B[indexB]
+            indexB -_ 1
 
 Solution().merge([1],1,  # list,0)
 
 # All you need is understanding the algorithm, don't try other cases.
 # In case you're wondering, if the requirements do not include modifying an array in-place. This is how you merge arrays:
 
-arr1 = [1,2,3,10,20]
-arr2 = [2,2,10,60]
-result = sorted(arr1 + arr2)
+arr1 _ [1,2,3,10,20]
+arr2 _ [2,2,10,60]
+result _ sorted(arr1 + arr2)
 print ( result )

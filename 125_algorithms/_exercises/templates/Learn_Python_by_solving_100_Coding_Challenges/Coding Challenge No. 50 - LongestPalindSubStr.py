@@ -8,26 +8,26 @@ class Solution:
     # @return {string}
 
     ___ longestPalindrome(self, s):
-        l = len(s)
-        if l <= 2:
-            if (s[0] != s[l-1]):
+        l _ le.(s)
+        __ l <_ 2:
+            __ (s[0] !_ s[l-1]):
                 r_ ''
-            else:
+            ____
                 r_ s
-        result = ''
+        result _ ''
         ___ i __ ra..(0,l):
-            palindrome = self.SearchPalindrome(s, i, i)
-            if len(palindrome) > len(result):
-                result = palindrome
-            palindrome = self.SearchPalindrome(s, i, i+1)
-            if len(palindrome) > len(result):
-                result = palindrome
+            palindrome _ self.SearchPalindrome(s, i, i)
+            __ le.(palindrome) > le.(result):
+                result _ palindrome
+            palindrome _ self.SearchPalindrome(s, i, i+1)
+            __ le.(palindrome) > le.(result):
+                result _ palindrome
         r_ result
 
     ___ SearchPalindrome(self, string, start, end):
-        while(start>=0 and end < len(string) and string[start]==string[end]):
-            start -= 1
-            end += 1
+        while(start>_0 an. end < le.(string) an. string[start]__string[end]):
+            start -_ 1
+            end +_ 1
         r_ string[start+1:end]
 
 

@@ -1,4 +1,4 @@
-import re
+______ re
 
 class Robot:
 
@@ -6,7 +6,7 @@ class Robot:
         pass
 
     ___ speak(self, query):
-        if 'sum' __ query:
-            numbers = re.findall(r'\b\d+\b', query)
-            numbers = [float(item) ___ item __ numbers]
-            r_ sum(numbers)
+        __ 'sum' __ query:
+            numbers _ re.findall(r'\b\d+\b', query)
+            numbers _ [float(item) ___ item __ numbers]
+            r_ su.(numbers)

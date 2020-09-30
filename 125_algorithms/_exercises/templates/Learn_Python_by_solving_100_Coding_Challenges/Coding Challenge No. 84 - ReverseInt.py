@@ -8,13 +8,13 @@
 class Solution:
     # @return an integer
     ___ reverse(self, x):
-        if x<0:
-            sign = -1
-        else:
-            sign = 1
-        strx=str(abs(x))
-        r = strx[::-1]
-        r_ sign*int(r)
+        __ x<0:
+            sign _ -1
+        ____
+            sign _ 1
+        strx_str(abs(x))
+        r _ strx[::-1]
+        r_ sign*in.(r)
 
 
 Solution().reverse(123)

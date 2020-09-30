@@ -3,13 +3,13 @@
 # %%
 # Write a Python program to check whether an alphabet is a vowel or consonant
 
-l = input("Input a letter of the alphabet: ")
+l _ input("Input a letter of the alphabet: ")
 
-if l __ ('a', 'e', 'i', 'o', 'u'):
+__ l __ ('a', 'e', 'i', 'o', 'u'):
 	print("%s is a vowel." % l)
-elif l == 'y':
+elif l __ 'y':
 	print("Sometimes letter y stand for vowel, sometimes stand for consonant.")
-else:
+____
 	print("%s is a consonant." % l) 
 
 

@@ -11,29 +11,29 @@
 
 # %%
 ___ shellSort(alist):
-    sublistcount = len(alist)//2
+    sublistcount _ le.(alist)//2
     while sublistcount > 0:
       ___ start_position __ ra..(sublistcount):
         gap_InsertionSort(alist, start_position, sublistcount)
 
       print("After increments of size",sublistcount, "The list is",nlist)
 
-      sublistcount = sublistcount // 2
+      sublistcount _ sublistcount // 2
 
 ___ gap_InsertionSort(nlist,start,gap):
-    ___ i __ ra..(start+gap,len(nlist),gap):
+    ___ i __ ra..(start+gap,le.(nlist),gap):
 
-        current_value = nlist[i]
-        position = i
+        current_value _ nlist[i]
+        position _ i
 
-        while position>=gap and nlist[position-gap]>current_value:
-            nlist[position]=nlist[position-gap]
-            position = position-gap
+        while position>_gap an. nlist[position-gap]>current_value:
+            nlist[position]_nlist[position-gap]
+            position _ position-gap
 
-        nlist[position]=current_value
+        nlist[position]_current_value
 
 
-nlist = [14,46,43,27,57,41,45,21,70]
+nlist _ [14,46,43,27,57,41,45,21,70]
 shellSort(nlist)
 print(nlist)
 

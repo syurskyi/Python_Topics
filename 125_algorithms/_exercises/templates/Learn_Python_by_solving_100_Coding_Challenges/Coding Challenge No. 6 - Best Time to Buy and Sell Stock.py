@@ -6,16 +6,16 @@
 
 class Solution:
     ___ maxProfit(prices):
-        size = len(prices)
-        if size < 2:
+        size _ le.(prices)
+        __ size < 2:
             r_ 0
-        buys = [None] * size
-        sells = [None] * size
-        sells[0], sells[1] = 0, ma.(0, prices[1] - prices[0])
-        buys[0], buys[1] = -prices[0], ma.(-prices[0], -prices[1])
+        buys _ [None] * size
+        sells _ [None] * size
+        sells[0], sells[1] _ 0, ma.(0, prices[1] - prices[0])
+        buys[0], buys[1] _ -prices[0], ma.(-prices[0], -prices[1])
         ___ x __ ra..(2, size):
-            sells[x] = ma.(sells[x - 1], buys[x - 1] + prices[x])
-            buys[x] = ma.(buys[x - 1], sells[x - 2] - prices[x])
+            sells[x] _ ma.(sells[x - 1], buys[x - 1] + prices[x])
+            buys[x] _ ma.(buys[x - 1], sells[x - 2] - prices[x])
         r_ sells[-1]
 
 

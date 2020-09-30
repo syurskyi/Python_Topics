@@ -3,15 +3,15 @@
 # %%
 #  Write a Python program to count the occurrences of each word in a given sentence
 
-___ word_count(str):
-    counts = dict()
-    words = str.split()
+___ word_count(st.):
+    counts _ di..()
+    words _ st..split()
 
     ___ word __ words:
-        if word __ counts:
-            counts[word] += 1
-        else:
-            counts[word] = 1
+        __ word __ counts:
+            counts[word] +_ 1
+        ____
+            counts[word] _ 1
 
     r_ counts
 

@@ -9,32 +9,32 @@ class Solution:
     # @param s, a string
     # @return a boolean
     ___ _isPalindrome(self, s):
-        begin, end = 0, len(s)-1
+        begin, end _ 0, le.(s)-1
         while begin < end:
-            if s[begin] != s[end]:
-                r_ False
-            else:
-                begin += 1
-                end -= 1
-        r_ True
+            __ s[begin] !_ s[end]:
+                r_ F..
+            ____
+                begin +_ 1
+                end -_ 1
+        r_ T..
 
     # @param s, a string
     # @return a list of lists of string
 
     ___ partition(self, s):
-        if len(s) == 0:
+        __ le.(s) __ 0:
             r_   # list
-        if len(s) == 1:
+        __ le.(s) __ 1:
             r_ [[s]]
-        result =   # list
-        if self._isPalindrome(s):
-            result.append([s])
+        result _   # list
+        __ self._isPalindrome(s):
+            result.ap..([s])
 
-        ___ i __ ra..(1, len(s)):
-            head = s[:i]
-            if not self._isPalindrome(head):
+        ___ i __ ra..(1, le.(s)):
+            head _ s[:i]
+            __ not self._isPalindrome(head):
                 continue
-            tailPartition = self.partition(s[i:])
+            tailPartition _ self.partition(s[i:])
             result.extend([[head] + item ___ item __ tailPartition])
         r_ result
 

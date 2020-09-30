@@ -7,43 +7,43 @@
 # Solutions:
 class Solution:
     ___ addBinary( a, b):
-        length = ma.(len(a),len(b)) + 1
-        sum = ['0' ___ i __ ra..(length)]
-        if len(a) <= len(b):
-            a = '0' * ( len(b) - len(a) ) + a
-        if len(a) > len(b):
-            b = '0' * ( len(a) - len(b) ) + b
-        Carry = 0
-        i = len(a) - 1
-        while i >= 0:
-            if int(a[i]) + int(b[i]) + Carry == 3:
-                sum[i+1] = '1'
-                Carry = 1
-            elif int(a[i]) + int(b[i]) + Carry == 2:
-                sum[i+1] = '0'
-                Carry = 1
-            elif int(a[i]) + int(b[i]) + Carry == 1:
-                sum[i+1] = '1'
-                Carry = 0
-            else:
-                sum[i+1] = '0'
-                Carry = 0
-            i = i - 1
-        if Carry == 1:
-            sum[0] = '1'
-        if Carry == 0:
-            sum = sum[1:length]
-        sum = ''.join(sum)
-        r_ sum
+        length _ ma.(le.(a),le.(b)) + 1
+        su. _ ['0' ___ i __ ra..(length)]
+        __ le.(a) <_ le.(b):
+            a _ '0' * ( le.(b) - le.(a) ) + a
+        __ le.(a) > le.(b):
+            b _ '0' * ( le.(a) - le.(b) ) + b
+        Carry _ 0
+        i _ le.(a) - 1
+        while i >_ 0:
+            __ in.(a[i]) + in.(b[i]) + Carry __ 3:
+                su.[i+1] _ '1'
+                Carry _ 1
+            elif in.(a[i]) + in.(b[i]) + Carry __ 2:
+                su.[i+1] _ '0'
+                Carry _ 1
+            elif in.(a[i]) + in.(b[i]) + Carry __ 1:
+                su.[i+1] _ '1'
+                Carry _ 0
+            ____
+                su.[i+1] _ '0'
+                Carry _ 0
+            i _ i - 1
+        __ Carry __ 1:
+            su.[0] _ '1'
+        __ Carry __ 0:
+            su. _ su.[1:length]
+        su. _ ''.join(su.)
+        r_ su.
 
 Solution.addBinary("11","1")
 
 class Solution:
     ___ addBinary(a, b):
-        bia = int(a, 2)
-        bib = int(b, 2)
-        sum = bia + bib
-        r_ str("{0:b}".format(sum))
+        bia _ in.(a, 2)
+        bib _ in.(b, 2)
+        su. _ bia + bib
+        r_ st.("{0:b}".format(su.))
 
 Solution.addBinary("1","11")
 # *Should only use if asked for shorter solution. It converts binary to integers; sum the integers. And finally formats the answer as binary.

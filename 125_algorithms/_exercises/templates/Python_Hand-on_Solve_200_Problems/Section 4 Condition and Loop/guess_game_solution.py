@@ -4,27 +4,27 @@
 # Generate a random number between 1 and 9 (including 1 and 9).
 # Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right.
 
-import random
+______ random
 
-number = random.randint(1,9)
-guess = 0
-count = 0
+number _ random.r_i..(1,9)
+guess _ 0
+count _ 0
 
 
-while guess != number and guess != "exit":
-    guess = input("What's your guess?")
+while guess !_ number an. guess !_ "exit":
+    guess _ input("What's your guess?")
     
-    if guess == "exit":
+    __ guess __ "exit":
         break
     
-    guess = int(guess)
-    count += 1
+    guess _ in.(guess)
+    count +_ 1
     
-    if guess < number:
+    __ guess < number:
         print("Too low!")
     elif guess > number:
         print("Too high!")
-    else:
+    ____
         print("You got it!")
         print("And it only took you",count,"tries!")
 

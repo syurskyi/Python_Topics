@@ -1,2 +1,2 @@
-___ foo(mydict):
-    r_ sum(mydict.values())
+# ___ foo mydict
+#     r_ su. ?.v..

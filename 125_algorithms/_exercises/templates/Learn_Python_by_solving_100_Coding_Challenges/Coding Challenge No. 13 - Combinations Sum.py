@@ -13,16 +13,16 @@
 class Solution:
     ___ combinationSum(self, candidates, target):
         candidates.sort()
-        res=  # list
+        res_  # list
         self.DFS(candidates,target,0,res,  # list)
         r_ res
 
     ___ DFS(self,candidates,target,start,res,intermedia):
-        if target==0:
-            res.append(intermedia)
+        __ target__0:
+            res.ap..(intermedia)
             r_
-        ___ i __ ra..(start,len(candidates)):
-            if target<candidates[i]:
+        ___ i __ ra..(start,le.(candidates)):
+            __ target<candidates[i]:
                 r_
             self.DFS(candidates,target-candidates[i],i,res,intermedia+[candidates[i]])
         print(Solution().combinationSum([2,3,6,7],7) )

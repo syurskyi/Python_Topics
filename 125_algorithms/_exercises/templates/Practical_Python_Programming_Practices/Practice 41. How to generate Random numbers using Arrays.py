@@ -1,10 +1,10 @@
-from random import randint
+from random ______ r_i..
 
-x = 20
-array =   # list
+x _ 20
+array _   # list
 
 ___ i __ ra..(x):
-    array.append(randint(1,10))
+    array.ap..(r_i..(1,10))
 ___ i __ array:
-    print(i,end=' ')
+    print(i,end_' ')
 print()

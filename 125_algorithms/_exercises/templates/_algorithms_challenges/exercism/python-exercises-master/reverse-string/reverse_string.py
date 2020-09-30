@@ -1,2 +1,0 @@
-___ reverse(text=''
-    pass

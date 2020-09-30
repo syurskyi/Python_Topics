@@ -12,9 +12,9 @@
 # github                                                                                                        
 # stackoverflow
 
-import re
-items = ["example (.com)", "w3resource", "github (.com)", "stackoverflow (.com)"]
-___ item __ items:
+______ re
+i.. _ ["example (.com)", "w3resource", "github (.com)", "stackoverflow (.com)"]
+___ item __ i..:
     print(re.sub(r" ?\([^)]+\)", "", item))
 
 

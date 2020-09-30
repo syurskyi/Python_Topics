@@ -8,10 +8,10 @@ class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of lists of integers
     ___ rotate(self, matrix):
-        n = len(matrix)
+        n _ le.(matrix)
         ___ i __ ra..(n):
             ___ j __ ra..(i+1, n):
-                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+                matrix[i][j], matrix[j][i] _ matrix[j][i], matrix[i][j]
         ___ i __ ra..(n):
             matrix[i].reverse()
         r_ matrix

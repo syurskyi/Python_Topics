@@ -1,8 +1,8 @@
 #Create a program that prints Hello repeteadly after 1 second first, then after 2, 3, 4 increasing the interval by one
-import time
+______ time
 
-i = 0
-while True:
+i _ 0
+while T..:
     print("Hello")
-    i = i + 1
+    i _ i + 1
     time.sleep(i)

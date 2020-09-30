@@ -13,42 +13,42 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 
 class Solution:
     # @param root, a tree node
     # @return a list of lists of integers
     ___ zigzagLevelOrder(self, root):
-        solution =   # list
-        thisLevel =  # list
-        if root != None:
-            thisLevel.append(root)
-        leftToRight = True
-        while len(thisLevel)>0:
-            levelSolution =   # list
-            nextLevel =   # list
-            while len(thisLevel)>0:
-                node = thisLevel.pop()
-                levelSolution.append(node.val)
-                if leftToRight:
-                    if node.left != None:
-                        nextLevel.append(node.left)
-                    if node.right != None:
-                        nextLevel.append(node.right)
-                else:
-                    if node.right != None:
-                        nextLevel.append(node.right)
-                    if node.left != None:
-                        nextLevel.append(node.left)
-            thisLevel = nextLevel
-            solution.append(levelSolution)
-            leftToRight = not leftToRight
+        solution _   # list
+        thisLevel _  # list
+        __ root !_ None:
+            thisLevel.ap..(root)
+        leftToRight _ T..
+        while le.(thisLevel)>0:
+            levelSolution _   # list
+            nextLevel _   # list
+            while le.(thisLevel)>0:
+                node _ thisLevel.p..()
+                levelSolution.ap..(node.val)
+                __ leftToRight:
+                    __ node.left !_ None:
+                        nextLevel.ap..(node.left)
+                    __ node.right !_ None:
+                        nextLevel.ap..(node.right)
+                ____
+                    __ node.right !_ None:
+                        nextLevel.ap..(node.right)
+                    __ node.left !_ None:
+                        nextLevel.ap..(node.left)
+            thisLevel _ nextLevel
+            solution.ap..(levelSolution)
+            leftToRight _ not leftToRight
         r_ solution
 
 
-if  -n == '__main__':
-    BT, BT.left, BT.right, BT.right.left, BT.right.right = TreeNode(3), TreeNode(9), TreeNode(20), TreeNode(15), TreeNode(7)
+__  -n __ '__main__':
+    BT, BT.left, BT.right, BT.right.left, BT.right.right _ TreeNode(3), TreeNode(9), TreeNode(20), TreeNode(15), TreeNode(7)
     print ( Solution().zigzagLevelOrder(BT) )

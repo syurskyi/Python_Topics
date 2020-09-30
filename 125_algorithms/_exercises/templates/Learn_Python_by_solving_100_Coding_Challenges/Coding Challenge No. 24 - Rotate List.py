@@ -7,44 +7,44 @@
 
 class ListNode(object):
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
     ___ to_list(self):
-        r_ [self.val] + self.next.to_list() if self.next else [self.val]
+        r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]
 
 class Solution:
     # @param head, a ListNode
     # @param k, an integer
     # @return a ListNode
     ___ rotateRight(self, head, k):
-        if head == None:
+        __ head __ None:
             r_ None
-        temp = head
+        temp _ head
         ___ i __ ra..(0,k):
-            if temp.next == None:
-                temp = head
-            else:
-                temp = temp.next
-        newLast = head
-        while temp.next != None:
-            temp = temp.next
-            newLast = newLast.next
-        temp.next = head
-        newHead = newLast.next
-        newLast.next = None
+            __ temp.next __ None:
+                temp _ head
+            ____
+                temp _ temp.next
+        newLast _ head
+        while temp.next !_ None:
+            temp _ temp.next
+            newLast _ newLast.next
+        temp.next _ head
+        newHead _ newLast.next
+        newLast.next _ None
         r_ newHead
 
 
-if  -n == "__main__":
-    n1 = ListNode(1)
-    n2 = ListNode(2)
-    n3 = ListNode(3)
-    n4 = ListNode(4)
-    n5 = ListNode(5)
-    n1.next = n2
-    n2.next = n3
-    n3.next = n4
-    n4.next = n5
-    r = Solution().rotateRight(n1, 2)
+__  -n __ "__main__":
+    n1 _ ListNode(1)
+    n2 _ ListNode(2)
+    n3 _ ListNode(3)
+    n4 _ ListNode(4)
+    n5 _ ListNode(5)
+    n1.next _ n2
+    n2.next _ n3
+    n3.next _ n4
+    n4.next _ n5
+    r _ Solution().rotateRight(n1, 2)
     print ( r.to_list() )

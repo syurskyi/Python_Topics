@@ -15,28 +15,28 @@
 # ciphertext: efgfoe uif fbtu xbmm pg uif dbtumf
 
 ___ caesar_encrypt(realText, step):
-	outText =   # list
-	cryptText =   # list
+	outText _   # list
+	cryptText _   # list
 	
-	uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-	lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+	uppercase _ ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+	lowercase _ ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 	___ eachLetter __ realText:
-		if eachLetter __ uppercase:
-			index = uppercase.index(eachLetter)
-			crypting = (index + step) % 26
-			cryptText.append(crypting)
-			newLetter = uppercase[crypting]
-			outText.append(newLetter)
+		__ eachLetter __ uppercase:
+			index _ uppercase.index(eachLetter)
+			crypting _ (index + step) % 26
+			cryptText.ap..(crypting)
+			newLetter _ uppercase[crypting]
+			outText.ap..(newLetter)
 		elif eachLetter __ lowercase:
-			index = lowercase.index(eachLetter)
-			crypting = (index + step) % 26
-			cryptText.append(crypting)
-			newLetter = lowercase[crypting]
-			outText.append(newLetter)
+			index _ lowercase.index(eachLetter)
+			crypting _ (index + step) % 26
+			cryptText.ap..(crypting)
+			newLetter _ lowercase[crypting]
+			outText.ap..(newLetter)
 	r_ outText
 
-code = caesar_encrypt('defend the east wall of the castle', 1)
+code _ caesar_encrypt('defend the east wall of the castle', 1)
 print()
 print(code)
 print()

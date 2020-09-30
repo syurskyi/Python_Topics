@@ -1,13 +1,13 @@
 #Add the missing items to the file
 
-checklist = ["Portugal", "Germany", "Spain"]
-checklist = [i + "\n" ___ i __ checklist]
+checklist _ ["Portugal", "Germany", "Spain"]
+checklist _ [i + "\n" ___ i __ checklist]
 
 with open("countries_missing.txt", "r") as file:
-    content = file.readlines()
+    content _ file.readlines()
 print(checklist + content)
 
-updated_list = sorted(checklist + content)
+updated_list _ sorted(checklist + content)
 
 with open("countries_missing_fixed.txt", "w") as file:
     ___ i __ updated_list:

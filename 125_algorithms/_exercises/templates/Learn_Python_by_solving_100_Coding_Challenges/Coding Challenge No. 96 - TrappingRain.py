@@ -9,26 +9,26 @@ class Solution:
     # @param {integer[]} height
     # @return {integer}
     ___ trap(self, height):
-        if not height or len(height)==1:
+        __ not height or le.(height)__1:
             r_ 0
-        max_left = height[0]
-        AddVolume = [max_left]
+        max_left _ height[0]
+        AddVolume _ [max_left]
 
-        ___ i __ ra..(1,len(height)-1):
-            if max_left < height[i-1]:
-                max_left = height[i-1]
-            AddVolume.append(max_left)
+        ___ i __ ra..(1,le.(height)-1):
+            __ max_left < height[i-1]:
+                max_left _ height[i-1]
+            AddVolume.ap..(max_left)
 
-        max_right = height[-1]
-        AddVolume.append(max_right)
+        max_right _ height[-1]
+        AddVolume.ap..(max_right)
 
-        ___ i __ reversed(ra..(1,len(height)-1)):
-            if max_right < height[i+1]:
-                    max_right = height[i+1]
-            AddVolume[i] = min(max_right,AddVolume[i])
-        ___ i __ ra..(len(AddVolume)):
-            AddVolume[i] = ma.(AddVolume[i] - height[i],0)
-        r_ sum(AddVolume)
+        ___ i __ reversed(ra..(1,le.(height)-1)):
+            __ max_right < height[i+1]:
+                    max_right _ height[i+1]
+            AddVolume[i] _ min(max_right,AddVolume[i])
+        ___ i __ ra..(le.(AddVolume)):
+            AddVolume[i] _ ma.(AddVolume[i] - height[i],0)
+        r_ su.(AddVolume)
 
 
 Solution().trap([0,1,0,2,1,0,1,3,2,1,2,1])

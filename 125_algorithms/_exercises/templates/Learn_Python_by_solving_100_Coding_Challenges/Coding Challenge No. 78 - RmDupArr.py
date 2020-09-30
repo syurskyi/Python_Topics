@@ -13,15 +13,15 @@ class Solution:
     """
     ___ removeDuplicates(self, A):
         # write your code here
-        if A ==   # list:
+        __ A __   # list:
             r_ 0
-        count = 0
-        ___ i __ ra..(0, len(A)):
-            if A[i] == A[i-1]:
+        count _ 0
+        ___ i __ ra..(0, le.(A)):
+            __ A[i] __ A[i-1]:
                 continue
-            else:
-                A[count] = A[i]
-                count += 1
+            ____
+                A[count] _ A[i]
+                count +_ 1
         r_ count
 
 

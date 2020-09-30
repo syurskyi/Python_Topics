@@ -1,20 +1,20 @@
-from random import randint
+from random ______ r_i..
 
-x = 20
-y =   # list
+x _ 20
+y _   # list
 
 ___ i __ ra..(20):
-    y.append(randint(1,20))
+    y.ap..(r_i..(1,20))
 print(y)
 
-j = x-1
-while j != 0:
-    k = 0
+j _ x-1
+while j !_ 0:
+    k _ 0
     ___ i __ ra..(1, j+1):
-        if y[i] > y[k]:
-            k = i
-    z = y[k]
-    y[k] = y[j]
-    y[j] = z
-    j -= 1
+        __ y[i] > y[k]:
+            k _ i
+    z _ y[k]
+    y[k] _ y[j]
+    y[j] _ z
+    j -_ 1
 print(y)

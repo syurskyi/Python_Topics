@@ -9,15 +9,15 @@
 class Solution:
     # @return an integer
     ___ lengthOfLongestSubstring(self, s):
-        lastRepeating = -1
-        longestSubstring = 0
-        positions = {}
-        ___ i __ ra..(0, len(s)):
-            if s[i] __ positions and lastRepeating<positions[s[i]]:
-                lastRepeating = positions[s[i]]
-            if i-lastRepeating > longestSubstring:
-                longestSubstring = i-lastRepeating
-            positions [s[i]]=i
+        lastRepeating _ -1
+        longestSubstring _ 0
+        positions _ {}
+        ___ i __ ra..(0, le.(s)):
+            __ s[i] __ positions an. lastRepeating<positions[s[i]]:
+                lastRepeating _ positions[s[i]]
+            __ i-lastRepeating > longestSubstring:
+                longestSubstring _ i-lastRepeating
+            positions [s[i]]_i
         r_ longestSubstring
 
 

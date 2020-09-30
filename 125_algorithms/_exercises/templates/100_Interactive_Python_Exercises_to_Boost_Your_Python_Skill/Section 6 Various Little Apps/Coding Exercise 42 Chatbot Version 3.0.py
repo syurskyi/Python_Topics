@@ -1,6 +1,6 @@
-import datetime
+______ datetime
 
-vocabulary = {
+vocabulary _ {
     "hello" : "Hi there!",
     "what's your name" : "My name is Roboto!",
     "what is your name" : "My name is Roboto!",
@@ -9,7 +9,7 @@ vocabulary = {
 }
 
 ___ foo(query, vocabulary):
-    if query __ vocabulary:
+    __ query __ vocabulary:
         r_ vocabulary[query]
-    else:
+    ____
         r_ "I don't understand that!"

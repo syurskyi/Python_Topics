@@ -1,3 +1,3 @@
-___ foo(mylist):
-    middle_index = int(len(mylist)/2)
-    r_ mylist[middle_index]
+# ___ foo mylist
+#     middle_index _ in. le. ? /2
+#     r_ ? ?

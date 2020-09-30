@@ -4,7 +4,7 @@ class Robot:
         pass
 
     ___ speak(self, query):
-        if query == 'hi robot':
+        __ query __ 'hi robot':
             r_ 'hi human'
-        else:
+        ____
             r_ "I don't know"

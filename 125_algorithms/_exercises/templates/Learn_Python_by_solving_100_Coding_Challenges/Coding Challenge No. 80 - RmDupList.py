@@ -8,30 +8,30 @@
 
 class ListNode:
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
 
 class Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ deleteDuplicates(self, head):
-        if head == None or head.next == None:
+        __ head __ None or head.next __ None:
             r_ head
-        p = head
+        p _ head
         while p.next:
-            if p.val == p.next.val:
-                p.next = p.next.next
-            else:
-                p = p.next
+            __ p.val __ p.next.val:
+                p.next _ p.next.next
+            ____
+                p _ p.next
         r_ head
 
     ___ printll(self, node):
         while node:
             print ( node.val )
-            node = node.next
+            node _ node.next
 
 
-if  -n == '__main__':
-    ll1, ll1.next, ll1.next.next = ListNode(2), ListNode(2), ListNode(5)
+__  -n __ '__main__':
+    ll1, ll1.next, ll1.next.next _ ListNode(2), ListNode(2), ListNode(5)
     Solution().printll( Solution().deleteDuplicates(ll1) )

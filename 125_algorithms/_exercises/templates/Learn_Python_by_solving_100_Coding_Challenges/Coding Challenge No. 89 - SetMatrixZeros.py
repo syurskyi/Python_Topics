@@ -6,15 +6,15 @@ class Solution:
     # @param matrix, a list of lists of integers
     # RETURN NOTHING, MODIFY matrix IN PLACE.
     ___ setZeroes(self, matrix):
-        m , n = len(matrix), len(matrix[0])
-        temp = [[matrix[i][j] ___ j __ ra..(n)] ___ i __ ra..(m)]
+        m , n _ le.(matrix), le.(matrix[0])
+        temp _ [[matrix[i][j] ___ j __ ra..(n)] ___ i __ ra..(m)]
         ___ i __ ra..(m):
             ___ j __ ra..(n):
-                if not temp[i][j]:
+                __ not temp[i][j]:
                     self.setZero(i,j,n,m,matrix)
 
     ___ setZero(self,row,col,n,m,matrix):
         ___ i __ ra..(m):
-            matrix[i][col]=0
+            matrix[i][col]_0
         ___ j __ ra..(n):
-            matrix[row][j]=0
+            matrix[row][j]_0

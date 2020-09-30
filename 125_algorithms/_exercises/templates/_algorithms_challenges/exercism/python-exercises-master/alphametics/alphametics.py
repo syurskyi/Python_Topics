@@ -1,2 +1,0 @@
-___ solve(string
-    pass

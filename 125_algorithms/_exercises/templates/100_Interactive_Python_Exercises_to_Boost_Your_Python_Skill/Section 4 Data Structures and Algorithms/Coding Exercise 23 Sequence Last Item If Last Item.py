@@ -1,5 +1,5 @@
-___ foo(mylist):
-    if len(mylist) > 0:
-        r_ mylist[-1]
-    else:
-        r_ "Empty List"
+# ___ foo mylist
+#     __ le. ? > 0
+#         r_ ? ?
+#     ____
+#         r_ "Empty List"

@@ -3,13 +3,13 @@
 # %%
 # Write a Python function to round up a number to specified digits.
 
-import math
+______ math
 
-___ roundup(a, digits=0):
-    n = 10**-digits
+___ roundup(a, digits_0):
+    n _ 10**-digits
     r_ round(math.ceil(a / n) * n, digits)
 
-x = 123.01247
+x _ 123.01247
 print("Original  Number: ",x)
 print(roundup(x, 0))
 print(roundup(x, 1))

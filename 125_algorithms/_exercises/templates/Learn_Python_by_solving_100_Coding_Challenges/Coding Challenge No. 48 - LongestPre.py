@@ -8,16 +8,16 @@
 class Solution:
     # @return a string
     ___ longestCommonPrefix(self, strs):
-        if len(strs) == 0:
+        __ le.(strs) __ 0:
             r_ ""
-        ___ i __ ra..(len(strs[0])-1,-1,-1):
-            prefix = strs[0][:i+1]
-            validPrefix = True
-            ___ j __ ra..(1,len(strs)):
-                if len(strs[j])<=i or strs[j][:i+1]!=prefix:
-                    validPrefix = False
+        ___ i __ ra..(le.(strs[0])-1,-1,-1):
+            prefix _ strs[0][:i+1]
+            validPrefix _ T..
+            ___ j __ ra..(1,le.(strs)):
+                __ le.(strs[j])<_i or strs[j][:i+1]!_prefix:
+                    validPrefix _ F..
                     break
-            if validPrefix:
+            __ validPrefix:
                 r_ prefix
         r_ ""
 

@@ -10,10 +10,10 @@ class Solution:
     # @param A, a list of integers
     # @return an integer
     ___ jump(self, A):
-        p = [0]
-        ___ i __ ra..(len(A) - 1):
-            while(i + A[i] >= len(p) and len(p) < len(A)):
-                p.append(p[i] + 1)
+        p _ [0]
+        ___ i __ ra..(le.(A) - 1):
+            while(i + A[i] >_ le.(p) an. le.(p) < le.(A)):
+                p.ap..(p[i] + 1)
         r_ p[-1]
 
 

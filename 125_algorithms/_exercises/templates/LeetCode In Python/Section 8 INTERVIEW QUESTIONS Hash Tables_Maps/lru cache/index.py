@@ -5,7 +5,7 @@ c_ LRUCache:
 
     ___  -  capacity: __.
         .c _ capacity
-        .m _ dict()
+        .m _ di..()
         .deq _ deque()
 
     ___ get key: __.)  __.:

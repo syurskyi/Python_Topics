@@ -3,7 +3,7 @@
 #C: Worth mentioning that if you remove foo(), variable c will come as undifined because the function has not been run
 ___ foo
     #global c
-    c = 1
+    c _ 1
     r_ c
 foo()
 print(c)

@@ -1,2 +1,2 @@
-___ foo(mylist):
-    r_ mylist[1:-1]
+# ___ foo mylist
+#     r_ ? ?: ?

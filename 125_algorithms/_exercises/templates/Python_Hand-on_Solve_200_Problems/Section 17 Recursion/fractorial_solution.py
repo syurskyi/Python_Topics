@@ -4,9 +4,9 @@
 # Write a Python program to get the factorial of a non-negative integer.
 
 ___ factorial(n):
-  if n <= 1:
+  __ n <_ 1:
     r_ 1
-  else:
+  ____
     r_ n * (factorial(n - 1))
     
 print(factorial(5))

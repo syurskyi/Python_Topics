@@ -9,14 +9,14 @@ class Solution:
     # @param A, a list of integers
     # @return an integer
     ___ maxSubArray(self, A):
-        if len(A)==0:
+        __ le.(A)__0:
             r_ 0
-        temp = 0
-        maxSum = A[0]
-        ___ i __ ra..(0, len(A)):
-            temp = ma.(A[i], A[i]+temp)
-            if temp> maxSum:
-                maxSum = temp
+        temp _ 0
+        maxSum _ A[0]
+        ___ i __ ra..(0, le.(A)):
+            temp _ ma.(A[i], A[i]+temp)
+            __ temp> maxSum:
+                maxSum _ temp
         r_ maxSum
 
 

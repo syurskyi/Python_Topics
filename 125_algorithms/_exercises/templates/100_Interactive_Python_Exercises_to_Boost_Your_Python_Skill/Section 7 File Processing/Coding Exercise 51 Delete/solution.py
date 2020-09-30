@@ -1,2 +1,2 @@
-import os
+______ os
 os.remove("file2.txt")

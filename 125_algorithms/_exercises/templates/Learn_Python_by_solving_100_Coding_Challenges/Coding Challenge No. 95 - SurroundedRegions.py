@@ -14,43 +14,43 @@
 # Solutions:
 
 
-import collections
+______ collections
 class Solution:
     ___ solve(self, board):
-        if board ==   # list:
+        __ board __   # list:
             r_   # list
-        lineNum = len(board)
-        colNum = len(board[0])
-        queue = collections.deque()
-        visited = [[False ___ j __ ra..(colNum)] ___ i __ ra..(lineNum)]
+        lineNum _ le.(board)
+        colNum _ le.(board[0])
+        queue _ collections.deque()
+        visited _ [[F.. ___ j __ ra..(colNum)] ___ i __ ra..(lineNum)]
         ___ i __ ra..(colNum):
-            if board[0][i] == 'O':
-                queue.append((0, i))
-            if board[lineNum-1][i] == 'O':
-                queue.append((lineNum - 1, i))
+            __ board[0][i] __ 'O':
+                queue.ap..((0, i))
+            __ board[lineNum-1][i] __ 'O':
+                queue.ap..((lineNum - 1, i))
         ___ i __ ra..(1, lineNum - 1):
-            if board[i][0] == 'O':
-                queue.append((i, 0))
-            if board[i][colNum-1] == 'O':
-                queue.append((i, colNum - 1))
+            __ board[i][0] __ 'O':
+                queue.ap..((i, 0))
+            __ board[i][colNum-1] __ 'O':
+                queue.ap..((i, colNum - 1))
         while queue:
-            t = queue.popleft()
-            if board[t[0]][t[1]] == 'O': board[t[0]][t[1]] = '$'
-            visited[t[0]][t[1]] = True
-            if t[0] + 1 < lineNum and board[t[0] + 1][t[1]] == 'O' and visited[t[0] + 1][t[1]] == False:
-                queue.append((t[0] + 1, t[1]))
-            if t[0] - 1 >= 0 and board[t[0] - 1][t[1]] == 'O' and visited[t[0] - 1][t[1]] == False:
-                queue.append((t[0] - 1, t[1]))
-            if t[1] + 1 < colNum and board[t[0]][t[1] + 1] == 'O' and visited[t[0]][t[1] + 1] == False:
-                queue.append((t[0], t[1] + 1))
-            if t[1] - 1 >= 0 and board[t[0]][t[1] - 1] == 'O' and visited[t[0]][t[1] - 1] == False:
-                queue.append((t[0], t[1] - 1))
+            t _ queue.popleft()
+            __ board[t[0]][t[1]] __ 'O': board[t[0]][t[1]] _ '$'
+            visited[t[0]][t[1]] _ T..
+            __ t[0] + 1 < lineNum an. board[t[0] + 1][t[1]] __ 'O' an. visited[t[0] + 1][t[1]] __ F..:
+                queue.ap..((t[0] + 1, t[1]))
+            __ t[0] - 1 >_ 0 an. board[t[0] - 1][t[1]] __ 'O' an. visited[t[0] - 1][t[1]] __ F..:
+                queue.ap..((t[0] - 1, t[1]))
+            __ t[1] + 1 < colNum an. board[t[0]][t[1] + 1] __ 'O' an. visited[t[0]][t[1] + 1] __ F..:
+                queue.ap..((t[0], t[1] + 1))
+            __ t[1] - 1 >_ 0 an. board[t[0]][t[1] - 1] __ 'O' an. visited[t[0]][t[1] - 1] __ F..:
+                queue.ap..((t[0], t[1] - 1))
         ___ i __ ra..(lineNum):
             ___ j __ ra..(colNum):
-                if board[i][j] == 'O':
-                    board[i][j] = 'X'
-                if board[i][j] == '$':
-                    board[i][j] = 'O'
+                __ board[i][j] __ 'O':
+                    board[i][j] _ 'X'
+                __ board[i][j] __ '$':
+                    board[i][j] _ 'O'
         r_ board
 
 

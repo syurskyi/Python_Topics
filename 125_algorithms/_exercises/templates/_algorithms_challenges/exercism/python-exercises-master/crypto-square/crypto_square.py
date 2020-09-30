@@ -1,2 +1,0 @@
-___ encode(
-    pass

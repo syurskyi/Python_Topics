@@ -6,14 +6,14 @@
 # Expected Result : {'g': 2, 'o': 2, 'l': 1, 'e': 1}
 
 ___ char_frequency(str1):
-    dict = {}
+    di.. _ {}
     ___ n __ str1:
-        keys = dict.keys()
-        if n __ keys:
-            dict[n] += 1
-        else:
-            dict[n] = 1
-    r_ dict
+        keys _ di...keys()
+        __ n __ keys:
+            di..[n] +_ 1
+        ____
+            di..[n] _ 1
+    r_ di..
 
 print(char_frequency('google'))
 

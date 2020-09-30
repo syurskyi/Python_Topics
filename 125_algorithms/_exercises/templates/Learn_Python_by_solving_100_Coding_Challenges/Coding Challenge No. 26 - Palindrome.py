@@ -8,21 +8,21 @@ class Solution:
     # @param s, a string
     # @return a boolean
     ___ isPalindrome(self, s):
-        if len(s) < 2:
-            r_ True
-        head, tail = 0, len(s)-1
+        __ le.(s) < 2:
+            r_ T..
+        head, tail _ 0, le.(s)-1
         while head < tail:
-            if not s[head].isalnum
-                head += 1
+            __ not s[head].isalnum
+                head +_ 1
             elif not s[tail].isalnum
-                tail -= 1
-            else:
-                if s[head].lower() == s[tail].lower
-                    head += 1
-                    tail -= 1
-                else:
-                    r_ False
-        r_ True
+                tail -_ 1
+            ____
+                __ s[head].lower() __ s[tail].lower
+                    head +_ 1
+                    tail -_ 1
+                ____
+                    r_ F..
+        r_ T..
 
 
 Solution().isPalindrome(["racecar","race car","race, car"])

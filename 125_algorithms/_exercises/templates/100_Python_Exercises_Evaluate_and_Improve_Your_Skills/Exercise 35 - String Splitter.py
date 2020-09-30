@@ -1,6 +1,6 @@
 #Create a function that takes a string and returns the number of words
 ___ count_words(string):
-    string_list = string.split(" ")
-    r_ len(string_list)
+    string_list _ string.split(" ")
+    r_ le.(string_list)
 
 print(count_words("Hey there it's me!"))

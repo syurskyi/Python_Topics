@@ -1,13 +1,13 @@
-from random import randint
+from random ______ r_i..
 
 ___ list_fill(first, qyt, mini, maxi):
     ___ i __ ra..(qyt):
-        first.append(randint(mini,maxi))
+        first.ap..(r_i..(mini,maxi))
 
-minimum = int(input("Insert minimum value: "))
-maximum = int(input("Insert maximum value: "))
-num = int(input("Number of elements: "))
-x =   # list
+minimum _ in.(input("Insert minimum value: "))
+maximum _ in.(input("Insert maximum value: "))
+num _ in.(input("Number of elements: "))
+x _   # list
 
 list_fill(x,num,minimum,maximum)
 print(x)

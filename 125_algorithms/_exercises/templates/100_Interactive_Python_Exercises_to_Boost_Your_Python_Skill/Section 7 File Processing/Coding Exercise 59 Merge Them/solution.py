@@ -1,6 +1,6 @@
-import glob
+______ glob
 
-text_files = glob.glob("file*.txt")
+text_files _ glob.glob("file*.txt")
 print(text_files)
 with open('together.txt', 'w') as outfile:
     ___ text_file __ text_files:

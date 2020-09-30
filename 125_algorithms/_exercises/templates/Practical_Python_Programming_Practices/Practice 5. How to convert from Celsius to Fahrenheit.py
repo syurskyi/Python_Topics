@@ -1,4 +1,4 @@
-x = int(input("Insert a value in Celcius: "))
+x _ in.(input("Insert a value in Celcius: "))
 
-x = round(x*(9/5) + 32 )
-print(str(x) + 'F')
+x _ round(x*(9/5) + 32 )
+print(st.(x) + 'F')

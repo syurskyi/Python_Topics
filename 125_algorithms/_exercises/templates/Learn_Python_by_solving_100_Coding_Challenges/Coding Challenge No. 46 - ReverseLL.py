@@ -4,9 +4,9 @@
 
 
 class ListNode:
-    ___ __init__(self, val, next=None):
-        self.val = val
-        self.next = next
+    ___ __init__(self, val, next_None):
+        self.val _ val
+        self.next _ next
 
 
 class Solution:
@@ -14,26 +14,26 @@ class Solution:
     # @return {ListNode}
 
     ___ reverseList(self, head):
-        result = None
-        node = head
-        while node != None:
-            tmp = node.next
-            node.next = result
-            result = node
-            node = tmp
+        result _ None
+        node _ head
+        while node !_ None:
+            tmp _ node.next
+            node.next _ result
+            result _ node
+            node _ tmp
         r_ result
 
     ___ printll(self, node):
         while node:
             print ( node.val )
-            node = node.next
+            node _ node.next
 
 
-l4 = ListNode(4)
-l3 = ListNode(3,l4)
-l2 = ListNode(2,l3)
-l1 = ListNode(1,l2)
-l0 = ListNode(5,l1)
+l4 _ ListNode(4)
+l3 _ ListNode(3,l4)
+l2 _ ListNode(2,l3)
+l1 _ ListNode(1,l2)
+l0 _ ListNode(5,l1)
 
-result0 = Solution().reverseList(l0)
+result0 _ Solution().reverseList(l0)
 Solution().printll(result0)

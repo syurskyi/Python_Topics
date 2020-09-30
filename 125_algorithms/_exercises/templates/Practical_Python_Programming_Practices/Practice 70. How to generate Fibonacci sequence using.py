@@ -1,13 +1,13 @@
 ___ fibonacci(list_item):
-    f1 = f2 = 1
-    print(f1, f2, end=' ')
+    f1 _ f2 _ 1
+    print(f1, f2, end_' ')
     while list_item > 2:
-        num = f2
-        f2 = f1 + f2
-        f1 = num
-        print(f2, end=' ')
-        list_item -= 1
+        num _ f2
+        f2 _ f1 + f2
+        f1 _ num
+        print(f2, end_' ')
+        list_item -_ 1
     print()
 
-x = int(input("Insert range of Fibonacci sequence: "))
+x _ in.(input("Insert range of Fibonacci sequence: "))
 fibonacci(x)

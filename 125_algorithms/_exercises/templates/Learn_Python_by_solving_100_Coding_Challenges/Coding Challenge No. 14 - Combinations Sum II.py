@@ -12,26 +12,26 @@
 
 class Solution:
     ___ combinationSum2(self, candidates, target):
-        if not candidates:
+        __ not candidates:
             r_   # list
         candidates.sort()
-        result =   # list
+        result _   # list
         self.combination(candidates, target,   # list, result)
         r_ result
     ___ combination(self, candidates, target, current, result):
-        s = sum(current) if current else 0
-        if s > target:
+        s _ su.(current) __ current ____ 0
+        __ s > target:
             r_
-        elif s == target:
-            result.append(current)
+        elif s __ target:
+            result.ap..(current)
             r_
-        else:
-            i = 0
-            while i < len(candidates):
+        ____
+            i _ 0
+            while i < le.(candidates):
                 self.combination(candidates[i + 1:], target, current + [candidates[i]], result)
-                while i + 1 < len(candidates) and candidates[i] == candidates[i + 1]:
-                    i += 1
-            i += 1
+                while i + 1 < le.(candidates) an. candidates[i] __ candidates[i + 1]:
+                    i +_ 1
+            i +_ 1
 
 
 Solution().combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)

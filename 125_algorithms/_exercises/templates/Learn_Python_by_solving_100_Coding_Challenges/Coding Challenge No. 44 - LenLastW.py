@@ -11,40 +11,40 @@ class Solution:
     # @return an integer
 
     ___ lengthOfLastWord1(self, s):
-        r_ len(s.split()[len(s.split())-1]) if s.split() !=   # list else 0
+        r_ le.(s.split()[le.(s.split-1]) __ s.split() !_   # list else 0
 
     # @param s, a string
     # @return an integer
 
     ___ lengthOfLastWord2(self, s):
-        s = s.strip() # Remove the spaces at the beginning and end
-        length = 0
+        s _ s.strip() # Remove the spaces at the beginning and end
+        length _ 0
         ___ letter __ s:
-            if letter == " ":
-                length = 0 # Waiting for the next word
-            else:
-                length += 1 # Inside one word
+            __ letter __ " ":
+                length _ 0 # Waiting for the next word
+            ____
+                length +_ 1 # Inside one word
         r_ length
         # @param s, a string
         # @return an integer
 
     ___ lengthOfLastWord3(self, s):
-        preLength = 0 # Length of previous word
-        length = 0 # Length of current word
+        preLength _ 0 # Length of previous word
+        length _ 0 # Length of current word
         ___ letter __ s:
-            if letter == " ": # Waiting for the next word
-                if length != 0: # This is a single zero or
+            __ letter __ " ": # Waiting for the next word
+                __ length !_ 0: # This is a single zero or
                     # leading one in zeros
-                    preLength = length
-                    length = 0
-                else: # A following zero in zeros
+                    preLength _ length
+                    length _ 0
+                ____ # A following zero in zeros
                     pass
-            else:
+            ____
                 # Inside one word
-                length += 1
-        if length == 0:
+                length +_ 1
+        __ length __ 0:
             r_ preLength # s ends with zero(s)
-        else:
+        ____
             r_ length # s ends with word
         print ( Solution().lengthOfLastWord1("Hello World") )
         print ( Solution().lengthOfLastWord2("Hello Worlds") )

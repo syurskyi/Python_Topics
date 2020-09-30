@@ -8,8 +8,8 @@
 # Input ['a', 'b', 'c', 'd']
 # Output abcd
 
-s = ['a', 'b', 'c', 'd']
-str1 = ''.join(s)
+s _ ['a', 'b', 'c', 'd']
+str1 _ ''.join(s)
 print(str1)
 
 

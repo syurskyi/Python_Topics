@@ -6,24 +6,24 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 
 class Solution:
     # @param root, a tree node
     # @return an integer
     ___ minDepth(self, root):
-        if root == None:
+        __ root __ None:
             r_ 0
-        if root.left == None:
+        __ root.left __ None:
             r_ self.minDepth(root.right) + 1
-        if root.right == None:
+        __ root.right __ None:
             r_ self.minDepth(root.left) + 1
         r_ min(self.minDepth(root.left),self.minDepth(root.right))+1
 
 
-if  -n == '__main__':
-    BT, BT.right, BT.right.left, BT.left = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
+__  -n __ '__main__':
+    BT, BT.right, BT.right.left, BT.left _ TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
     print ( Solution().minDepth(BT) )

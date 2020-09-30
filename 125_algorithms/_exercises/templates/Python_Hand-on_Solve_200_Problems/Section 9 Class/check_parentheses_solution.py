@@ -10,13 +10,13 @@
 
 class py_solution:
    ___ is_valid_parenthese(self, str1):
-        stack, pchar =   # list, {"(": ")", "{": "}", "[": "]"}
+        stack, pchar _   # list, {"(": ")", "{": "}", "[": "]"}
         ___ parenthese __ str1:
-            if parenthese __ pchar:
-                stack.append(parenthese)
-            elif len(stack) == 0 or pchar[stack.pop()] != parenthese:
-                r_ False
-        r_ len(stack) == 0
+            __ parenthese __ pchar:
+                stack.ap..(parenthese)
+            elif le.(stack) __ 0 or pchar[stack.p..()] !_ parenthese:
+                r_ F..
+        r_ le.(stack) __ 0
 
 print(py_solution().is_valid_parenthese("(){}[]"))
 print(py_solution().is_valid_parenthese("()[{)}"))

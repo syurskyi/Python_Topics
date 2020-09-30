@@ -4,13 +4,13 @@
 # Write a Python program to calculate the value of 'a' to the power 'b'.
 
 ___ power(a,b):
-	if b==0:
+	__ b__0:
 		r_ 1
-	elif a==0:
+	elif a__0:
 		r_ 0
-	elif b==1:
+	elif b__1:
 		r_ a
-	else:
+	____
 		r_ a*power(a,b-1)
 
 print(power(3,4))

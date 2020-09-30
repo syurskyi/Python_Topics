@@ -1,17 +1,17 @@
-from random import random
+from random ______ random
 
-x = [int(random()*100)___ i __ ra..(20)]
+x _ [in.(random()*100)___ i __ ra..(20)]
 print(x)
 
-myset = set(x)
+myset _ set(x)
 
-highest = None
-frequent = 0
+highest _ None
+frequent _ 0
 
 ___ item __ myset:
-    freq = x.count(item)
+    freq _ x.count(item)
 
-    if freq > frequent:
-        frequent = freq
-        highest = item
+    __ freq > frequent:
+        frequent _ freq
+        highest _ item
 print(highest)

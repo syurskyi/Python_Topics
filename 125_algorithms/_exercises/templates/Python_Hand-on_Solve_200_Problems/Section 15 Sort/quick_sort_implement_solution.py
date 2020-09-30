@@ -9,47 +9,47 @@
 # amounts of memory to perform the sorting."
 
 ___ quickSort(data_list):
-   quickSortHlp(data_list,0,len(data_list)-1)
+   quickSortHlp(data_list,0,le.(data_list)-1)
 
 ___ quickSortHlp(data_list,first,last):
-   if first < last:
+   __ first < last:
 
-       splitpoint = partition(data_list,first,last)
+       splitpoint _ partition(data_list,first,last)
 
        quickSortHlp(data_list,first,splitpoint-1)
        quickSortHlp(data_list,splitpoint+1,last)
 
 
 ___ partition(data_list,first,last):
-   pivotvalue = data_list[first]
+   pivotvalue _ data_list[first]
 
-   leftmark = first+1
-   rightmark = last
+   leftmark _ first+1
+   rightmark _ last
 
-   done = False
+   done _ F..
    while not done:
 
-       while leftmark <= rightmark and data_list[leftmark] <= pivotvalue:
-           leftmark = leftmark + 1
+       while leftmark <_ rightmark an. data_list[leftmark] <_ pivotvalue:
+           leftmark _ leftmark + 1
 
-       while data_list[rightmark] >= pivotvalue and rightmark >= leftmark:
-           rightmark = rightmark -1
+       while data_list[rightmark] >_ pivotvalue an. rightmark >_ leftmark:
+           rightmark _ rightmark -1
 
-       if rightmark < leftmark:
-           done = True
-       else:
-           temp = data_list[leftmark]
-           data_list[leftmark] = data_list[rightmark]
-           data_list[rightmark] = temp
+       __ rightmark < leftmark:
+           done _ T..
+       ____
+           temp _ data_list[leftmark]
+           data_list[leftmark] _ data_list[rightmark]
+           data_list[rightmark] _ temp
 
-   temp = data_list[first]
-   data_list[first] = data_list[rightmark]
-   data_list[rightmark] = temp
+   temp _ data_list[first]
+   data_list[first] _ data_list[rightmark]
+   data_list[rightmark] _ temp
 
 
    r_ rightmark
 
-data_list = [54,26,93,17,77,31,44,55,20]
+data_list _ [54,26,93,17,77,31,44,55,20]
 quickSort(data_list)
 print(data_list)
 

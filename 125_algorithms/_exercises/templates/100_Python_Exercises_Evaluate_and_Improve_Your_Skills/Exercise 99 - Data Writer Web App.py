@@ -1,7 +1,7 @@
 #Create a program that asks the user to submit text a web app
-from flask import Flask, render_template_string, request
-app = Flask( -n)
-html = """
+from flask ______ Flask, render_template_string, request
+app _ Flask( -n)
+html _ """
   		      <div class="form">
               <form action="{{url_for('sent')}}" method="POST">
   			        <input title="Your email address will be safe with us." placeholder="Enter a line" type="text" name="line" required> <br>
@@ -12,13 +12,13 @@ html = """
 @app.route("/")
 ___ index
     r_ render_template_string(html)
-@app.route("/sent", methods=['GET', 'POST'])
+@app.route("/sent", methods_['GET', 'POST'])
 ___ sent
-    line = None
-    if request.method == 'POST':
-        line = request.form['line']
+    line _ None
+    __ request.method __ 'POST':
+        line _ request.form['line']
         with open("user_input_flask.txt", "a+") as file:
             file.write(line + "\n")
         r_ render_template_string(html)
-if  -n == "__main__":
-    app.run(debug=True)
+__  -n __ "__main__":
+    app.run(debug_True)

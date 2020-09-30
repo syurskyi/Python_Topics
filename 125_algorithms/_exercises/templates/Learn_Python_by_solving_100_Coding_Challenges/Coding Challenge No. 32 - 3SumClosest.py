@@ -9,17 +9,17 @@
 class Solution:
     ___ threeSumClosest(self, numbers, target):
         numbers.sort()
-        ans = None
-        ___ i __ ra..(len(numbers)):
-            l, r = i + 1, len(numbers) - 1
+        ans _ None
+        ___ i __ ra..(le.(numbers)):
+            l, r _ i + 1, le.(numbers) - 1
             while (l < r):
-                sum = numbers[l] + numbers[r] + numbers[i]
-                if ans is None or abs(sum- target) < abs(ans - target):
-                    ans = sum
-                if sum <= target:
-                    l = l + 1
-                else:
-                    r = r - 1
+                su. _ numbers[l] + numbers[r] + numbers[i]
+                __ ans is None or abs(su.- target) < abs(ans - target):
+                    ans _ su.
+                __ su. <_ target:
+                    l _ l + 1
+                ____
+                    r _ r - 1
         r_ ans
 
 

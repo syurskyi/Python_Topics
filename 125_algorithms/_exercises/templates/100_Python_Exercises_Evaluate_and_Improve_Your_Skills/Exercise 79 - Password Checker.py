@@ -4,10 +4,10 @@
 #3. It is at least 5 chars long
 #Print out message "Passowrd is not fine" if the user didn't create a correct password
 
-while True:
-    psw = input("Enter new password: ")
-    if any(i.isdigit() ___ i __ psw) and any(i.isupper() ___ i __ psw) and len(psw) >= 5:
+while T..:
+    psw _ input("Enter new password: ")
+    __ any(i.isdigit() ___ i __ psw) an. any(i.isupper() ___ i __ psw) an. le.(psw) >_ 5:
         print("Password is fine")
         break
-    else:
+    ____
         print("Passowrd is not fine")

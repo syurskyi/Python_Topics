@@ -1,10 +1,10 @@
 #Add a new employee to the json file.
 
-import json
+______ json
 
 with open("company1.json", "r+") as file:
-    d = json.loads(file.read())
-    d["employees"].append(dict(firstName = "Albert", lastName = "Bert"))
+    d _ json.loads(file.read
+    d["employees"].ap..(di..(firstName _ "Albert", lastName _ "Bert"))
     file.seek(0)
-    json.dump(d, file, indent=4, sort_keys=True)
+    json.dump(d, file, indent_4, sort_keys_True)
     file.truncate()

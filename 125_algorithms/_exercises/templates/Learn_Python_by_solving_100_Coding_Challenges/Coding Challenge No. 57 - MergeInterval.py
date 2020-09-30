@@ -7,9 +7,9 @@
 
 
 class Interval:
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+    ___ __init__(self, s_0, e_0):
+        self.start _ s
+        self.end _ e
     ___ printIn(self,i):
         print ("[%d ,%d]"%(i.start,i.end))
 
@@ -18,25 +18,25 @@ class Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
     ___ merge(self, intervals):
-        intervals.sort(key = lambda x:x.start)
-        length=len(intervals)
-        res=  # list
+        intervals.sort(key _ lambda x:x.start)
+        length_len(intervals)
+        res_  # list
         ___ i __ ra..(length):
-            if res==  # list:
-                res.append(intervals[i])
-            else:
-                size=len(res)
-                if res[size-1].start<=intervals[i].start<=res[size-1].end:
-                    res[size-1].end=ma.(intervals[i].end, res[size-1].end)
-                else:
-                    res.append(intervals[i])
+            __ res__  # list:
+                res.ap..(intervals[i])
+            ____
+                size_len(res)
+                __ res[size-1].start<_intervals[i].start<_res[size-1].end:
+                    res[size-1].end_ma.(intervals[i].end, res[size-1].end)
+                ____
+                    res.ap..(intervals[i])
         r_ res
 
 
-i1 = Interval(1,3)
-i2 = Interval(2,6)
-i3 = Interval(8,10)
-i4 = Interval(15,18)
-result = Solution().merge([i1,i2,i3,i4])
+i1 _ Interval(1,3)
+i2 _ Interval(2,6)
+i3 _ Interval(8,10)
+i4 _ Interval(15,18)
+result _ Solution().merge([i1,i2,i3,i4])
 ___ i __ result:
     Interval().printIn(i)

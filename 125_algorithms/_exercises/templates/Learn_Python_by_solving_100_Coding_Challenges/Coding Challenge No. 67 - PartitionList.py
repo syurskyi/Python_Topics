@@ -8,9 +8,9 @@
 
 
 class ListNode:
-    ___ __init__(self, x, next=None):
-        self.val = x
-        self.next = next
+    ___ __init__(self, x, next_None):
+        self.val _ x
+        self.next _ next
 
 
 class Solution:
@@ -18,32 +18,32 @@ class Solution:
     # @param x, an integer
     # @return a ListNode
     ___ partition(self, head, x):
-        smaller = ListNode(-1)
-        others = ListNode(-1)
-        smallerLast, othersLast = smaller, others
-        while head != None:
-            if head.val < x:
-                smallerLast.next = head
-                smallerLast = smallerLast.next
-            else:
-                othersLast.next = head
-                othersLast = othersLast.next
-            head = head.next
-        smallerLast.next = others.next
-        othersLast.next = None
+        smaller _ ListNode(-1)
+        others _ ListNode(-1)
+        smallerLast, othersLast _ smaller, others
+        while head !_ None:
+            __ head.val < x:
+                smallerLast.next _ head
+                smallerLast _ smallerLast.next
+            ____
+                othersLast.next _ head
+                othersLast _ othersLast.next
+            head _ head.next
+        smallerLast.next _ others.next
+        othersLast.next _ None
         r_ smaller.next
 
     ___ printll(self, node):
         while node:
             print ( node.val )
-            node = node.next
+            node _ node.next
 
 
-if  -n == '__main__':
-    node6 = ListNode(2)
-    node5 = ListNode(5, node6)
-    node4 = ListNode(2, node5)
-    node3 = ListNode(3, node4)
-    node2 = ListNode(4, node3)
-    ll1 = ListNode(1, node2)
+__  -n __ '__main__':
+    node6 _ ListNode(2)
+    node5 _ ListNode(5, node6)
+    node4 _ ListNode(2, node5)
+    node3 _ ListNode(3, node4)
+    node2 _ ListNode(4, node3)
+    ll1 _ ListNode(1, node2)
     Solution().printll( Solution().partition(ll1,3) )

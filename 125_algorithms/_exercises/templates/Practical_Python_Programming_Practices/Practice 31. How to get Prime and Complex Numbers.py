@@ -1,21 +1,21 @@
-import math
+______ math
 
-x = int(input("Insert any number to check: "))
+x _ in.(input("Insert any number to check: "))
 
-if x<2:
+__ x<2:
     print("Please, insert number greater than or equal to 2")
     quit()
-elif x == 2:
+elif x __ 2:
     print("This is a prime number!")
     quit()
 
-y = 2
-num = int(math.sqrt(x))
+y _ 2
+num _ in.(math.sqrt(x))
 
-while y <= num:
-    if x%y == 0:
+while y <_ num:
+    __ x%y __ 0:
         print("This is a complex number")
         quit()
-    y += 1
+    y +_ 1
 
 print("This is a prime number")

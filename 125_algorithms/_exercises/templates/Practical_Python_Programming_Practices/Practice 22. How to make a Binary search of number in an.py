@@ -1,25 +1,25 @@
-from random import random
-N = 20
-array =   # list
+from random ______ random
+N _ 20
+array _   # list
 ___ x __ ra..(N):
-    array.append(int(random()*100))
+    array.ap..(in.(random()*100))
 
 array.sort()
 print(array)
 
-number = int(input("Search for any number in the array: "))
+number _ in.(input("Search for any number in the array: "))
 
-mini = 0
-maxi = N-1
+mini _ 0
+maxi _ N-1
 
-while mini <= maxi:
-    mid = (mini + maxi) // 2
-    if number < array[mid]:
-        maxi = mid-1
+while mini <_ maxi:
+    mid _ (mini + maxi) // 2
+    __ number < array[mid]:
+        maxi _ mid-1
     elif number > array[mid]:
-        mini = mid+1
-    else:
+        mini _ mid+1
+    ____
         print("The number is located at index: ", mid)
         break
-else:
+____
     print("There is no number!")

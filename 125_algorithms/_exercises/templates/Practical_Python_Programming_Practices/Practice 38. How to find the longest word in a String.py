@@ -1,9 +1,9 @@
-str = input("Insert some strings: ")
-totalstr = str.split()
+st. _ input("Insert some strings: ")
+totalstr _ st..split()
 
-longest = 0
+longest _ 0
 
-___ i __ ra..(1, len(totalstr)):
-    if len(totalstr[longest]) < len(totalstr[i]):
-        longest = i
+___ i __ ra..(1, le.(totalstr)):
+    __ le.(totalstr[longest]) < le.(totalstr[i]):
+        longest _ i
 print(totalstr[longest])

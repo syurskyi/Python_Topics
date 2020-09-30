@@ -4,4 +4,4 @@
 ___ foo(a, b):
     print(a + b)
 
-x = foo(2, 3) * 10
+x _ foo(2, 3) * 10

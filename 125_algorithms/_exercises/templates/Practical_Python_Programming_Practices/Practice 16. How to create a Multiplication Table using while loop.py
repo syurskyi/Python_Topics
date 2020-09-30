@@ -1,12 +1,12 @@
-x = 1
+x _ 1
 
 while x < 10:
-    y = 1
+    y _ 1
     while y < 10:
-        print("%4d" % (x*y), end="")
-        y += 1
+        print("%4d" % (x*y), end_"")
+        y +_ 1
     print()
-    x += 1
+    x +_ 1
 
 
 

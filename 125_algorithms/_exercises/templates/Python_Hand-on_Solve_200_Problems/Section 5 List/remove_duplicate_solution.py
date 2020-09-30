@@ -5,13 +5,13 @@
 # Input a = [10,20,30,20,10,50,60,40,80,50,40]
 # Output [10, 20, 30, 50, 60, 40, 80]
 
-a = [10,20,30,20,10,50,60,40,80,50,40]
+a _ [10,20,30,20,10,50,60,40,80,50,40]
 
-dup_items = set()
-uniq_items =   # list
+dup_items _ set()
+uniq_items _   # list
 ___ x __ a:
-    if x not __ dup_items:
-        uniq_items.append(x)
+    __ x not __ dup_items:
+        uniq_items.ap..(x)
         dup_items.add(x)
 
 print(uniq_items)

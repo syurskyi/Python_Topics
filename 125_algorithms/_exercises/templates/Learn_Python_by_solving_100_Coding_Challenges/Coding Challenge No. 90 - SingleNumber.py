@@ -9,9 +9,9 @@ class Solution:
     # @param A, a list of integer
     # @return an integer
     ___ singleNumber(self, A):
-        result = 0
+        result _ 0
         ___ i __ A:
-            result ^= i
+            result ^_ i
         r_ result
 
 

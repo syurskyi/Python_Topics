@@ -5,13 +5,13 @@
 
 class Solution:
     ___ maxProfit(prices):
-        minValue = float("inf")
-        maxBenefit = 0
+        minValue _ float("inf")
+        maxBenefit _ 0
         ___ price __ prices:
-            if minValue > price:
-                minValue = price
-            if maxBenefit < price - minValue:
-                maxBenefit = price - minValue
+            __ minValue > price:
+                minValue _ price
+            __ maxBenefit < price - minValue:
+                maxBenefit _ price - minValue
         r_ maxBenefit
 
 print (Solution.maxProfit([7, 1, 5, 3, 6, 4]) )

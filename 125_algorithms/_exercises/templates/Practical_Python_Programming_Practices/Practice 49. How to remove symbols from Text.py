@@ -1,20 +1,20 @@
-str = input("Insert some text with punctuation marks: \n")
-symbols = ['.',',',':',';','!','?','(',')']
+st. _ input("Insert some text with punctuation marks: \n")
+symbols _ ['.',',',':',';','!','?','(',')']
 
-listitem = str.split()
+listitem _ st..split()
 
-x = 0
+x _ 0
 ___ i __ listitem:
-    if i[-1] __ symbols:
-        listitem[x] = i[:-1]
-        i = listitem[x]
-    if i[0] __ symbols:
-        listitem[x] = i[1:]
-    x += 1
+    __ i[-1] __ symbols:
+        listitem[x] _ i[:-1]
+        i _ listitem[x]
+    __ i[0] __ symbols:
+        listitem[x] _ i[1:]
+    x +_ 1
 
-x = 0
-while x < len(listitem):
-    print(listitem[x], end=' ')
-    x += 1
-    if x%5 == 0:
+x _ 0
+while x < le.(listitem):
+    print(listitem[x], end_' ')
+    x +_ 1
+    __ x%5 __ 0:
         print()

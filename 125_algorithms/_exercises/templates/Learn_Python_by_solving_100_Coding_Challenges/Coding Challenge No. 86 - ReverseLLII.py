@@ -10,11 +10,11 @@
 
 class ListNode(object):
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
     ___ to_list(self):
-        r_ [self.val] + self.next.to_list() if self.next else [self.val]
+        r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]
 
 
 class Solution(object):
@@ -25,32 +25,32 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        dummy = ListNode(-1)
-        dummy.next = head
-        node = dummy
+        dummy _ ListNode(-1)
+        dummy.next _ head
+        node _ dummy
         ___ __ __ ra..(m - 1):
-            node = node.next
-        prev = node.next
-        curr = prev.next
+            node _ node.next
+        prev _ node.next
+        curr _ prev.next
         ___ __ __ ra..(n - m):
-            next = curr.next
-            curr.next = prev
-            prev = curr
-            curr = next
-        node.next.next = curr
-        node.next = prev
+            next _ curr.next
+            curr.next _ prev
+            prev _ curr
+            curr _ next
+        node.next.next _ curr
+        node.next _ prev
         r_ dummy.next
 
 
-if  -n == "__main__":
-    n1 = ListNode(1)
-    n2 = ListNode(2)
-    n3 = ListNode(3)
-    n4 = ListNode(4)
-    n5 = ListNode(5)
-    n1.next = n2
-    n2.next = n3
-    n3.next = n4
-    n4.next = n5
-    r = Solution().reverseBetween(n1, 2, 4)
+__  -n __ "__main__":
+    n1 _ ListNode(1)
+    n2 _ ListNode(2)
+    n3 _ ListNode(3)
+    n4 _ ListNode(4)
+    n5 _ ListNode(5)
+    n1.next _ n2
+    n2.next _ n3
+    n3.next _ n4
+    n4.next _ n5
+    r _ Solution().reverseBetween(n1, 2, 4)
     print ( r.to_list() )

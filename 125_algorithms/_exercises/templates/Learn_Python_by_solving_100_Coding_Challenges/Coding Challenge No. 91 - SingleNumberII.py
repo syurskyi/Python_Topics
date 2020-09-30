@@ -8,20 +8,20 @@ class Solution:
     # @param A, a list of integer
     # @return an integer
     ___ singleNumber(self, A):
-        bit = [0 ___ i __ ra..(32)]
+        bit _ [0 ___ i __ ra..(32)]
         ___ number __ A:
             ___ i __ ra..(32):
-                if (1 << i) & number == 1 << i:
-                    bit[i] += 1
-        res = 0
-        if bit[31] % 3 == 0:
+                __ (1 << i) & number __ 1 << i:
+                    bit[i] +_ 1
+        res _ 0
+        __ bit[31] % 3 __ 0:
             ___ i __ ra..(31):
-                if bit[i] % 3 == 1:
-                    res += 1 << i
-        else:
+                __ bit[i] % 3 __ 1:
+                    res +_ 1 << i
+        ____
             ___ i __ ra..(31):
-                if bit[i] % 3 == 0: res += 1 << i
-            res = -(res + 1)
+                __ bit[i] % 3 __ 0: res +_ 1 << i
+            res _ -(res + 1)
         r_ res
 
 

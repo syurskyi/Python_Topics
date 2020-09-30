@@ -5,48 +5,48 @@
 
 class ListNode:
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
 
 class Solution:
     # @param a list of ListNode
     # @return a ListNode
     ___ mergeKLists(self, lists):
-        if len(lists)==0:
+        __ le.(lists)__0:
             r_ None
-        while len(lists)>1:
-            nextLists =   # list
-            ___ i __ ra..(0,len(lists)-1,2):
-                nextLists.append(self.mergeLists(lists[i],lists[i+1]))
-            if len(lists)%2==1:
-                nextLists.append(lists[len(lists)-1])
-            lists = nextLists
+        while le.(lists)>1:
+            nextLists _   # list
+            ___ i __ ra..(0,le.(lists)-1,2):
+                nextLists.ap..(self.mergeLists(lists[i],lists[i+1]))
+            __ le.(lists)%2__1:
+                nextLists.ap..(lists[le.(lists)-1])
+            lists _ nextLists
         r_ lists[0]
 
     ___ mergeLists(self, list1, list2):
-        dummy = ListNode(0)
-        list = dummy
-        while list1 != None and list2 != None:
-            if list1.val < list2.val:
-                list.next = list1
-                list1 = list1.next
-            else:
-                list.next = list2
-                list2 = list2.next
-            list = list.next
-        if list1 == None:
-            list.next = list2
-        else:
-            list.next = list1
+        dummy _ ListNode(0)
+        li.. _ dummy
+        while list1 !_ None an. list2 !_ None:
+            __ list1.val < list2.val:
+                li...next _ list1
+                list1 _ list1.next
+            ____
+                li...next _ list2
+                list2 _ list2.next
+            li.. _ li...next
+        __ list1 __ None:
+            li...next _ list2
+        ____
+            li...next _ list1
         r_ dummy.next
 
     ___ printll(self, node):
         while node:
             print ( node.val )
-            node = node.next
-if  -n == '__main__':
-    ll1, ll1.next, ll1.next.next = ListNode(2), ListNode(3), ListNode(5)
-    ll2, ll2.next, ll2.next.next = ListNode(4), ListNode(7), ListNode(15)
-    ll3, ll3.next, ll3.next.next = ListNode(6), ListNode(9), ListNode(10)
+            node _ node.next
+__  -n __ '__main__':
+    ll1, ll1.next, ll1.next.next _ ListNode(2), ListNode(3), ListNode(5)
+    ll2, ll2.next, ll2.next.next _ ListNode(4), ListNode(7), ListNode(15)
+    ll3, ll3.next, ll3.next.next _ ListNode(6), ListNode(9), ListNode(10)
     Solution().printll( Solution().mergeKLists([ll1,ll2,ll3]) )

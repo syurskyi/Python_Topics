@@ -11,29 +11,29 @@
 # Output
 
 ___ is_Sublist(l, s):
-	sub_set = False
-	if s ==   # list:
-		sub_set = True
-	elif s == l:
-		sub_set = True
-	elif len(s) > len(l):
-		sub_set = False
+	sub_set _ F..
+	__ s __   # list:
+		sub_set _ T..
+	elif s __ l:
+		sub_set _ T..
+	elif le.(s) > le.(l):
+		sub_set _ F..
 
-	else:
-		___ i __ ra..(len(l)):
-			if l[i] == s[0]:
-				n = 1
-				while (n < len(s)) and (l[i+n] == s[n]):
-					n += 1
+	____
+		___ i __ ra..(le.(l)):
+			__ l[i] __ s[0]:
+				n _ 1
+				while (n < le.(s)) an. (l[i+n] __ s[n]):
+					n +_ 1
 				
-				if n == len(s):
-					sub_set = True
+				__ n __ le.(s):
+					sub_set _ T..
 
 	r_ sub_set
 
-a = [2,4,3,5,7]
-b = [4,3]
-c = [3,7]
+a _ [2,4,3,5,7]
+b _ [4,3]
+c _ [3,7]
 print(is_Sublist(a, b))
 print(is_Sublist(a, c))
 

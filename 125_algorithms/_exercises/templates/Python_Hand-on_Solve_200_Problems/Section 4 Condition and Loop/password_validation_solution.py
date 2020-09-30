@@ -16,11 +16,11 @@
 # Output
 # Valid password
 
-import re
-p= input("Input your password")
-x = True
+______ re
+p_ input("Input your password")
+x _ T..
 while x:  
-    if (len(p)<6 or len(p)>12):
+    __ (le.(p)<6 or le.(p)>12):
         break
     elif not re.search("[a-z]",p):
         break
@@ -32,12 +32,12 @@ while x:
         break
     elif re.search("\s",p):
         break
-    else:
+    ____
         print("Valid Password")
-        x=False
+        x_False
         break
 
-if x:
+__ x:
     print("Not a Valid Password")
 
 

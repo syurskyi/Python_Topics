@@ -16,35 +16,35 @@
 # %%
 ___ mergeSort(nlist):
     print("Splitting ",nlist)
-    if len(nlist)>1:
-        mid = len(nlist)//2
-        lefthalf = nlist[:mid]
-        righthalf = nlist[mid:]
+    __ le.(nlist)>1:
+        mid _ le.(nlist)//2
+        lefthalf _ nlist[:mid]
+        righthalf _ nlist[mid:]
 
         mergeSort(lefthalf)
         mergeSort(righthalf)
-        i=j=k=0       
-        while i < len(lefthalf) and j < len(righthalf):
-            if lefthalf[i] < righthalf[j]:
-                nlist[k]=lefthalf[i]
-                i=i+1
-            else:
-                nlist[k]=righthalf[j]
-                j=j+1
-            k=k+1
+        i_j_k_0
+        while i < le.(lefthalf) an. j < le.(righthalf):
+            __ lefthalf[i] < righthalf[j]:
+                nlist[k]_lefthalf[i]
+                i_i+1
+            ____
+                nlist[k]_righthalf[j]
+                j_j+1
+            k_k+1
 
-        while i < len(lefthalf):
-            nlist[k]=lefthalf[i]
-            i=i+1
-            k=k+1
+        while i < le.(lefthalf):
+            nlist[k]_lefthalf[i]
+            i_i+1
+            k_k+1
 
-        while j < len(righthalf):
-            nlist[k]=righthalf[j]
-            j=j+1
-            k=k+1
+        while j < le.(righthalf):
+            nlist[k]_righthalf[j]
+            j_j+1
+            k_k+1
     print("Merging ",nlist)
 
-nlist = [14,46,43,27,57,41,45,21,70]
+nlist _ [14,46,43,27,57,41,45,21,70]
 mergeSort(nlist)
 print(nlist)
 

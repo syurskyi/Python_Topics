@@ -10,20 +10,20 @@ class Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
     ___ subsets(self, nums):
-        if nums is None:
+        __ nums is None:
             r_   # list
-        result =   # list
+        result _   # list
         nums.sort()
         self.dfs(nums, 0,   # list, result)
         r_ result
 
     ___ dfs(self, nums, pos, list_temp, ret):
         # append new object with []
-        ret.append(  # list + list_temp)
-        ___ i __ ra..(pos, len(nums)):
-            list_temp.append(nums[i])
+        ret.ap..(  # list + list_temp)
+        ___ i __ ra..(pos, le.(nums)):
+            list_temp.ap..(nums[i])
             self.dfs(nums, i + 1, list_temp, ret)
-            list_temp.pop()
+            list_temp.p..()
 
 
 Solution().subsets([1,2,3])

@@ -6,14 +6,14 @@ ___ factorial(n
 		r_ 1
         
 	#we make a recursive call
-	subres1 = factorial(n-1)	
+	subres1 _ factorial(n-1)
 	
 	#we do some operations
-	subres2 = n*subres1		
+	subres2 _ n*subres1
 	
 	r_ subres2
 	
-___ factorial_accumulator(n,accumulator=1
+___ factorial_accumulator(n,accumulator_1
 
 	#base case: 1!=1
 	__ n__1:

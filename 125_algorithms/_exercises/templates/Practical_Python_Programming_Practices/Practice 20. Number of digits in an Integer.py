@@ -1,10 +1,10 @@
-x = int(input("Insert multiple integer numbers: "))
-x = abs(x)
+x _ in.(input("Insert multiple integer numbers: "))
+x _ abs(x)
 
-count = 1;
-x //= 10
+count _ 1;
+x //_ 10
 
 while x > 0:
-    x//=10
-    count += 1
+    x//_10
+    count +_ 1
 print("The number of integer is: ",count)

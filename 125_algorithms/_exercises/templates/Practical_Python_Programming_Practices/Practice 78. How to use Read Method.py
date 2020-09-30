@@ -1,8 +1,8 @@
-fp = open("C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt")
-data = fp.read()
+fp _ open("C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt")
+data _ fp.read()
 fp.close()
 
 print(repr(data))
 
-data = data.split('\n')
+data _ data.split('\n')
 print(data)

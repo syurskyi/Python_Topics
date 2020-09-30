@@ -9,14 +9,14 @@ class Solution:
     # @param A a list of integers
     # @return sorted A, sort in place
     ___ sortColors(self, A):
-        color=[0]*3
+        color_[0]*3
         ___ i __ A:
-            color[i] += 1
-        i = 0
+            color[i] +_ 1
+        i _ 0
         ___ x __ ra..(3):
             ___ j __ ra..(color[x]):
-                A[i]=x
-                i+=1
+                A[i]_x
+                i+_1
         r_ A
 
 

@@ -43,33 +43,33 @@
 #             - Repeate until got a character which already exist inside sub string
 # ---------------------------------------------------------------
 
-str = "abcbb"
+st. _ "abcbb"
 
-___ longest_non_repeat(str):
+___ longest_non_repeat(st.):
     
     # init start position and max length     
-    i=0
-    max_length = 1
+    i_0
+    max_length _ 1
 
-    ___ i,c __ enumerate(str):
+    ___ i,c __ enumerate(st.):
 
         # init counter and sub string value         
-        start_at = i
-        sub_str=  # list
+        start_at _ i
+        sub_str_  # list
 
         # continue increase sub string if did not repeat character         
-        while (start_at < len(str)) and (str[start_at] not __ sub_str):
-            sub_str.append(str[start_at])
-            start_at = start_at + 1
+        while (start_at < le.(st.)) an. (st.[start_at] not __ sub_str):
+            sub_str.ap..(st.[start_at])
+            start_at _ start_at + 1
 
         # update the max length   
-        if len(sub_str) > max_length:
-            max_length = len(sub_str)
+        __ le.(sub_str) > max_length:
+            max_length _ le.(sub_str)
 
         print(sub_str)
         
     r_ max_length
 
-longest_non_repeat(str)
+longest_non_repeat(st.)
 
 

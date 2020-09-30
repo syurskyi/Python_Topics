@@ -10,20 +10,20 @@ class Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
     ___ permuteUnique(self, num):
-        length = len(num)
-        if length == 0:
+        length _ le.(num)
+        __ length __ 0:
             r_   # list
-        if length == 1:
+        __ length __ 1:
             r_ [num]
         num.sort()
-        res =   # list
-        previousNum = None
+        res _   # list
+        previousNum _ None
         ___ i __ ra..(length):
-            if num[i] == previousNum:
+            __ num[i] __ previousNum:
                 continue
-            previousNum = num[i]
+            previousNum _ num[i]
         ___ j __ self.permuteUnique(num[:i] + num[i+1:]):
-            res.append([num[i]] + j)
+            res.ap..([num[i]] + j)
         r_ res
 
 

@@ -15,12 +15,12 @@ Example:
 # Solution 1
 # Try all 
 
-input_array = [2, 7, 11, 15]
-target = 26
-result =   # list
+input_array _ [2, 7, 11, 15]
+target _ 26
+result _   # list
 
 ___ i, num __ enumerate(input_array):
-    ___ j __ ra..(i+1, len(input_array)):
+    ___ j __ ra..(i+1, le.(input_array)):
         print(i,j)
 
 

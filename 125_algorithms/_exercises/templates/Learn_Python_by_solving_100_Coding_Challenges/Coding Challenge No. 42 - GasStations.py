@@ -11,16 +11,16 @@ class Solution:
     # @return an integer
 
     ___ canCompleteCircuit(self, gas, cost):
-        if sum(gas) < sum(cost):
+        __ su.(gas) < su.(cost):
             r_ -1
-        n = len(gas)
-        diff = 0
-        stationIndex = 0
+        n _ le.(gas)
+        diff _ 0
+        stationIndex _ 0
         ___ i __ ra..(n):
-            if gas[i]+diff < cost[i]:
-                stationIndex = i+1; diff = 0
-            else:
-                diff += gas[i]-cost[i]
+            __ gas[i]+diff < cost[i]:
+                stationIndex _ i+1; diff _ 0
+            ____
+                diff +_ gas[i]-cost[i]
 
         r_ stationIndex
 

@@ -1,15 +1,15 @@
-mdv = input("Choose one to calculate(m,d,v) : ")
+mdv _ input("Choose one to calculate(m,d,v) : ")
 
-if mdv == 'm':
-    d = float(input("Density: "))
-    v = float(input("Volume: "))
-    result = d*v #This is for mass
-elif mdv == 'd':
-    m = float(input("Mass: "))
-    v = float(input("Volumn: "))
-    result = m/v #This is for density
-elif mdv == 'v':
-    m = float(input("Mass: "))
-    d = float(input("Density: "))
-    result = m/d;
+__ mdv __ 'm':
+    d _ float(input("Density: "))
+    v _ float(input("Volume: "))
+    result _ d*v #This is for mass
+elif mdv __ 'd':
+    m _ float(input("Mass: "))
+    v _ float(input("Volumn: "))
+    result _ m/v #This is for density
+elif mdv __ 'v':
+    m _ float(input("Mass: "))
+    d _ float(input("Density: "))
+    result _ m/d;
 print("%.2f" % result)

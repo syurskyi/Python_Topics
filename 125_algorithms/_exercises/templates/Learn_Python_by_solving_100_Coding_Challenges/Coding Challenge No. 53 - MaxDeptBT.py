@@ -6,38 +6,38 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 
 class Solution:
     # @param root, a tree node
     # @return an integer
     ___ maxDepth_recursive(self, root):
-        if root == None:
+        __ root __ None:
             r_ 0
         r_ ma.(self.maxDepth(root.left),self.maxDepth(root.right))+1
 
     ___ maxDepth_interative(self, root):
-        if root == None:
+        __ root __ None:
             r_ 0
-        nodeStack = [root]
-        depthStack = [1]
-        maxDepth = 0
-        while len(nodeStack)>0:
-            node = nodeStack.pop()
-            depth = depthStack.pop()
-            maxDepth = maxDepth if maxDepth > depth else depth
-            if node.left != None:
-                nodeStack.append(node.left)
-                depthStack.append(depth+1)
-            if node.right != None:
-                nodeStack.append(node.right)
-                depthStack.append(depth+1)
+        nodeStack _ [root]
+        depthStack _ [1]
+        maxDepth _ 0
+        while le.(nodeStack)>0:
+            node _ nodeStack.p..()
+            depth _ depthStack.p..()
+            maxDepth _ maxDepth __ maxDepth > depth ____ depth
+            __ node.left !_ None:
+                nodeStack.ap..(node.left)
+                depthStack.ap..(depth+1)
+            __ node.right !_ None:
+                nodeStack.ap..(node.right)
+                depthStack.ap..(depth+1)
         r_ maxDepth
 
 
-if  -n == '__main__':
-    BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
+__  -n __ '__main__':
+    BT, BT.right, BT.right.left _ TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution().maxDepth_interative(BT) )

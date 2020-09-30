@@ -9,11 +9,11 @@
 
 class ListNode(object):
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
     ___ to_list(self):
-        r_ [self.val] + self.next.to_list() if self.next else [self.val]
+        r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]
 
 
 class Solution(object):
@@ -23,48 +23,48 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        if not head or k <= 1:
+        __ not head or k <_ 1:
             r_ head
-        dummy = ListNode(-1)
-        dummy.next = head
-        temp = dummy
+        dummy _ ListNode(-1)
+        dummy.next _ head
+        temp _ dummy
         while temp:
-            temp = self.reverseNextK(temp, k)
+            temp _ self.reverseNextK(temp, k)
         r_ dummy.next
 
     ___ reverseNextK(self, head, k):
         # Check if there are k nodes left
-        temp = head
+        temp _ head
         ___ i __ ra..(k):
-            if not temp.next:
+            __ not temp.next:
                 r_ None
-            temp = temp.next
+            temp _ temp.next
 
         # The last node when the k nodes reversed
-        node = head.next
-        prev = head
-        curr = head.next
+        node _ head.next
+        prev _ head
+        curr _ head.next
         # Reverse k nodes
         ___ i __ ra..(k):
-            nextNode = curr.next
-            curr.next = prev
-            prev = curr
-            curr = nextNode
+            nextNode _ curr.next
+            curr.next _ prev
+            prev _ curr
+            curr _ nextNode
         # Connect with head and tail
-        node.next = curr
-        head.next = prev
+        node.next _ curr
+        head.next _ prev
         r_ node
 
 
-if  -n == "__main__":
-    n1 = ListNode(1)
-    n2 = ListNode(2)
-    n3 = ListNode(3)
-    n4 = ListNode(4)
-    n5 = ListNode(5)
-    n1.next = n2
-    n2.next = n3
-    n3.next = n4
-    n4.next = n5
-    r = Solution().reverseKGroup(n1, 3)
+__  -n __ "__main__":
+    n1 _ ListNode(1)
+    n2 _ ListNode(2)
+    n3 _ ListNode(3)
+    n4 _ ListNode(4)
+    n5 _ ListNode(5)
+    n1.next _ n2
+    n2.next _ n3
+    n3.next _ n4
+    n4.next _ n5
+    r _ Solution().reverseKGroup(n1, 3)
     print ( r.to_list() )

@@ -1,7 +1,7 @@
 #Count how many a the text file has
-import requests
+______ requests
 
-response = requests.get("http://www.pythonhow.com/data/universe.txt")
-text = response.text
-count_a = text.count("a")
+response _ requests.get("http://www.pythonhow.com/data/universe.txt")
+text _ response.text
+count_a _ text.count("a")
 print(count_a)

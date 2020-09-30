@@ -5,11 +5,11 @@
 # max_num_in_list([1, 2, -8, 0])
 # return 2
 
-___ max_num_in_list( list ):
-    ma. = list[ 0 ]
-    ___ a __ list:
-        if a > ma.:
-            ma. = a
+___ max_num_in_list( li.. ):
+    ma. _ li..[ 0 ]
+    ___ a __ li..:
+        __ a > ma.:
+            ma. _ a
     r_ ma.
 print(max_num_in_list([1, 2, -8, 0]))
 

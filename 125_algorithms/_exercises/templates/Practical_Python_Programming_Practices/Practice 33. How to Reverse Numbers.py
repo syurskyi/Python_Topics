@@ -1,11 +1,11 @@
-x = int(input("Insert some numbers: "))
-y = 0
+x _ in.(input("Insert some numbers: "))
+y _ 0
 
-z = x
+z _ x
 
-while x != 0:
-    digit = x%10
-    x = x//10
-    y = y*10
-    y = y+digit
+while x !_ 0:
+    digit _ x%10
+    x _ x//10
+    y _ y*10
+    y _ y+digit
 print("The reversed of ",z," = ",y)

@@ -1,2 +1,0 @@
-___ tally(data
-    pass

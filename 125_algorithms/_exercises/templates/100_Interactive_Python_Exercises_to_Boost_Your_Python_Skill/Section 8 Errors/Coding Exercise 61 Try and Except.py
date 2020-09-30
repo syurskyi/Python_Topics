@@ -1,6 +1,6 @@
-x = 1
-y = '2'
+x _ 1
+y _ '2'
 try:
     print(x + y)
 except TypeError: # Better to be specific about the error you expect
-    print(int(x) + int(y))
+    print(in.(x) + in.(y))

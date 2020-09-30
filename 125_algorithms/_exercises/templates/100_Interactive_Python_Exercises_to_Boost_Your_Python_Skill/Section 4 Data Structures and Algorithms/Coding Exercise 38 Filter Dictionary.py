@@ -1,2 +1,2 @@
-___ foo(mydict):
-    r_ dict((key, value) ___ key, value __ mydict.items() if value > 4)
+# ___ foo mydict
+#     r_ di.. key value ___ ? ? __ ?.i.. __ v.. > 4

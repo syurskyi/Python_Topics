@@ -9,12 +9,12 @@
 class Solution:
     ___ combine(self,n, k):
         ___ dfs(start, valuelist):
-            if self.count == k: ret.append(valuelist); r_
+            __ self.count __ k: ret.ap..(valuelist); r_
             ___ i __ ra..(start, n + 1):
-                self.count += 1
+                self.count +_ 1
                 dfs(i + 1, valuelist + [i])
-                self.count -= 1
-        ret =   # list; self.count = 0
+                self.count -_ 1
+        ret _   # list; self.count = 0
         dfs(1,   # list)
         r_ ret
 

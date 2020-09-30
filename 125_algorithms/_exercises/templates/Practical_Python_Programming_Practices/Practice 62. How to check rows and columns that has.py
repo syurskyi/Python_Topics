@@ -1,29 +1,29 @@
-from random import random
+from random ______ random
 
-row = 5
-col = 10
-matrix =   # list
+row _ 5
+col _ 10
+matrix _   # list
 ___ i __ ra..(row):
-    myrow =   # list
+    myrow _   # list
     ___ j __ ra..(col):
-        myrow.append(int(random()*50)+10)
-    matrix.append(myrow)
+        myrow.ap..(in.(random()*50)+10)
+    matrix.ap..(myrow)
 
 ___ myrow __ matrix:
     print(myrow)
 
-num = int(input("Range of numbers(10-50): "))
+num _ in.(input("Range of numbers(10-50): "))
 
-print("Rows: ", end=' ')
+print("Rows: ", end_' ')
 ___ i __ ra..(row):
-    if num __ matrix[i]:
-        print(i,end=' ')
+    __ num __ matrix[i]:
+        print(i,end_' ')
 print()
 
-print("Columns: ",end=' ')
+print("Columns: ",end_' ')
 ___ j __ ra..(col):
     ___ i __ ra..(row):
-        if matrix[i][j] == num:
-            print(j, end=' ')
+        __ matrix[i][j] __ num:
+            print(j, end_' ')
             break
 print()

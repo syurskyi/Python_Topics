@@ -1,10 +1,10 @@
-from random import randint
+from random ______ r_i..
 
-mini = int(input("Insert minimum number: "))
-maxi = int(input("Insert maximum number: "))
+mini _ in.(input("Insert minimum number: "))
+maxi _ in.(input("Insert maximum number: "))
 
-y = int(input("Insert range of random numbers: "))
+y _ in.(input("Insert range of random numbers: "))
 
-x = [randint(mini,maxi) ___ i __ ra..(y)]
+x _ [r_i..(mini,maxi) ___ i __ ra..(y)]
 
 print(x)

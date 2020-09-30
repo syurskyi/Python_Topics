@@ -1,5 +1,5 @@
-___ foo(number):
-    r_ dict(sign = "positive" if number > 0 else
-        ("negative" if number < 0 else "zero"),
-        parity = "odd" if number % 2 == 1 else
-        ("even" if number % 2 == 0 else "non integer"))
+# ___ foo number
+#     r_ di.. sign _ "positive" __ ? > 0 ____
+#         ("negative" __ ? < 0 ____ "zero"),
+#         parity _ "odd" __ ? % 2 __ 1 ____
+#         ("even" __ ? % 2 __ 0 ____ "non integer"))

@@ -1,5 +1,5 @@
-___ foo(mystring):
-    if "xxx" __ mystring:
-        r_ True
-    else:
-        r_ False
+# ___ foo mystring
+#     __ "xxx" __ ?
+#         r_ T..
+#     ____
+#         r_ F..

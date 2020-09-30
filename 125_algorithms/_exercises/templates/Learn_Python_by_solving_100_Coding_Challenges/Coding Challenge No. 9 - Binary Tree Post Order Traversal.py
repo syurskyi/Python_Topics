@@ -12,26 +12,26 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 class Solution:
     ___ postorderTraversal(root):
-        if root == None:
+        __ root __ None:
             r_   # list
-        stackPrepare = [root]
-        stackReady =   # list
-        result =   # list
-        while len(stackPrepare) != 0 :
-            current = stackPrepare.pop()
-            stackReady.append(current)
-            if current.left != None: stackPrepare.append(current.left)
-            if current.right != None: stackPrepare.append(current.right)
-        while len(stackReady) != 0:
-            result.append(stackReady.pop().val)
+        stackPrepare _ [root]
+        stackReady _   # list
+        result _   # list
+        while le.(stackPrepare) !_ 0 :
+            current _ stackPrepare.p..()
+            stackReady.ap..(current)
+            __ current.left !_ None: stackPrepare.ap..(current.left)
+            __ current.right !_ None: stackPrepare.ap..(current.right)
+        while le.(stackReady) !_ 0:
+            result.ap..(stackReady.p..().val)
         r_ result
 
-if  -n == '__main__':
-    BT, BT.right, BT.right.left = TreeNode(1), TreeNode(2), TreeNode(3)
+__  -n __ '__main__':
+    BT, BT.right, BT.right.left _ TreeNode(1), TreeNode(2), TreeNode(3)
     print ( Solution. postorderTraversal (BT) )

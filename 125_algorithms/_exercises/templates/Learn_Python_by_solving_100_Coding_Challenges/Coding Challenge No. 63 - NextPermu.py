@@ -13,18 +13,18 @@ class Solution:
     # @param num, a list of integer
     # @return a list of integer
     ___ nextPermutation(self, num):
-        back = len(num) - 2
-        while back >= 0:
-            front = len(num) - 1
+        back _ le.(num) - 2
+        while back >_ 0:
+            front _ le.(num) - 1
             while front > back :
-                if num[back] < num[front]:
+                __ num[back] < num[front]:
                     # Rule breaker found.
-                    num[back], num[front] = num[front], num[back]
-                    num[back+1:] = sorted(num[back+1:])
+                    num[back], num[front] _ num[front], num[back]
+                    num[back+1:] _ sorted(num[back+1:])
                     r_ num
-                else:
-                    front -= 1
-            back -= 1
+                ____
+                    front -_ 1
+            back -_ 1
         num.sort()
         r_ num
 

@@ -11,14 +11,14 @@
 # in position.
 
 ___ bubbleSort(nlist):
-    ___ passnum __ ra..(len(nlist)-1,0,-1):
+    ___ passnum __ ra..(le.(nlist)-1,0,-1):
         ___ i __ ra..(passnum):
-            if nlist[i]>nlist[i+1]:
-                temp = nlist[i]
-                nlist[i] = nlist[i+1]
-                nlist[i+1] = temp
+            __ nlist[i]>nlist[i+1]:
+                temp _ nlist[i]
+                nlist[i] _ nlist[i+1]
+                nlist[i+1] _ temp
 
-nlist = [14,46,43,27,57,41,45,21,70]
+nlist _ [14,46,43,27,57,41,45,21,70]
 bubbleSort(nlist)
 print(nlist)
 

@@ -9,17 +9,17 @@ class Solution:
     # @return an integer
 
     ___ partitionII(self, s):
-        n = len(s)
-        f =   # list
-        p = [[False ___ x __ ra..(n)] ___ x __ ra..(n)]
+        n _ le.(s)
+        f _   # list
+        p _ [[F.. ___ x __ ra..(n)] ___ x __ ra..(n)]
         #the worst case is cutting by each char
         ___ i __ ra..(n+1):
-            f.append(n - 1 - i) # the last one, f[n]=-1
+            f.ap..(n - 1 - i) # the last one, f[n]=-1
         ___ i __ reversed(ra..(n)):
             ___ j __ ra..(i, n):
-                if (s[i] == s[j] and (j - i < 2 or p[i + 1][j - 1])):
-                    p[i][j] = True
-                    f[i] = min(f[i], f[j + 1] + 1)
+                __ (s[i] __ s[j] an. (j - i < 2 or p[i + 1][j - 1])):
+                    p[i][j] _ T..
+                    f[i] _ min(f[i], f[j + 1] + 1)
         r_ f[0]
 
 

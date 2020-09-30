@@ -10,11 +10,11 @@ class Solution:
     # @param elem an integer, value need to be removed
     # @return an integer
     ___ removeElement(self, A, elem):
-        k = 0
+        k _ 0
         ___ i __ A:
-            if i != elem:
-                A[k] = i
-                k += 1
+            __ i !_ elem:
+                A[k] _ i
+                k +_ 1
         r_ k
 
 

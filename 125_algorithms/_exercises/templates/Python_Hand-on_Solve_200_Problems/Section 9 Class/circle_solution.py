@@ -6,7 +6,7 @@
 
 class Circle
     ___ __init__(self, r):
-        self.radius = r
+        self.radius _ r
 
     ___ area(self):
         r_ self.radius**2*3.14
@@ -14,8 +14,8 @@ class Circle
     ___ perimeter(self):
         r_ 2*self.radius*3.14
 
-NewCircle = Circle(8)
-print(NewCircle.area())
-print(NewCircle.perimeter())
+NewCircle _ Circle(8)
+print(NewCircle.area
+print(NewCircle.perimeter
 
 

@@ -10,14 +10,14 @@ class Solution:
     # @param A a list of integers
     # @return an integer
     ___ removeDuplicates(self, A):
-        if len(A) < 2:
-            r_ len(A)
-        index = 2
+        __ le.(A) < 2:
+            r_ le.(A)
+        index _ 2
 
-        ___ i __ ra..(2, len(A)):
-            if A[i] != A[index - 2]:
-                A[index] = A[i]
-                index += 1
+        ___ i __ ra..(2, le.(A)):
+            __ A[i] !_ A[index - 2]:
+                A[index] _ A[i]
+                index +_ 1
         r_ index
 
 

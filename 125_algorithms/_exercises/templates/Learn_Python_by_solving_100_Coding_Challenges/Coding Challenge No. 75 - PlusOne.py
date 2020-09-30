@@ -8,15 +8,15 @@ class Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
     ___ plusOne(self, digits):
-        flag = 1
-        ___ i __ ra..(len(digits)-1, -1, -1):
-            if digits[i] + flag == 10:
-                digits[i] = 0
-                flag = 1
-            else:
-                digits[i] = digits[i] + flag
-                flag = 0
-        if flag == 1:
+        flag _ 1
+        ___ i __ ra..(le.(digits)-1, -1, -1):
+            __ digits[i] + flag __ 10:
+                digits[i] _ 0
+                flag _ 1
+            ____
+                digits[i] _ digits[i] + flag
+                flag _ 0
+        __ flag __ 1:
             digits.insert(0, 1)
         r_ digits
 

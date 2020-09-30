@@ -5,14 +5,14 @@
 
 class Rectangle
     ___ __init__(self, l, w):
-        self.length = l
-        self.width  = w
+        self.length _ l
+        self.width  _ w
 
     ___ rectangle_area(self):
         r_ self.length*self.width
 
-newRectangle = Rectangle(12, 10)
+newRectangle _ Rectangle(12, 10)
 
-print(newRectangle.rectangle_area())
+print(newRectangle.rectangle_area
 
 

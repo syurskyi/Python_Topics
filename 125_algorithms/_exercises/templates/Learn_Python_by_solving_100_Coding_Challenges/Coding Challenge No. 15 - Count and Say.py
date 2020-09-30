@@ -12,24 +12,24 @@
 class Solution:
     # @return a string
     ___ countAndSay(n):
-        result = "1"
-        if n == 0:
+        result _ "1"
+        __ n __ 0:
             r_ None
-        else:
+        ____
             print ( "1" )
             ___ i __ ra..(n-1):
-                temp = ""
-                current = result[0]
-                currentCount = 1
+                temp _ ""
+                current _ result[0]
+                currentCount _ 1
                 ___ item __ result[1:]:
-                    if item == current:
-                        currentCount += 1
-                    else:
-                        temp += str(currentCount) + current
-                        current = item
-                        currentCount = 1
-                temp += str(currentCount) + current
-                result = temp
+                    __ item __ current:
+                        currentCount +_ 1
+                    ____
+                        temp +_ st.(currentCount) + current
+                        current _ item
+                        currentCount _ 1
+                temp +_ st.(currentCount) + current
+                result _ temp
                 print(result)
 
 Solution.countAndSay(8)

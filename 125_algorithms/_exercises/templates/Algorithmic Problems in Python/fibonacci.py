@@ -8,11 +8,11 @@ ___ fibonacci(n
 
 	#head recursion: first we call the function recursively
 	#overlapping subproblems so better approach would be to use dynamic programming
-	fib1 = fibonacci(n-1)
-	fib2 = fibonacci(n-2)
+	fib1 _ fibonacci(n-1)
+	fib2 _ fibonacci(n-2)
 	
 	#do some operation after recursion
-	result = fib1+fib2
+	result _ fib1+fib2
 	
 	r_ result
 

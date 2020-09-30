@@ -1,8 +1,8 @@
 #What will the script output?
 
-c = 1
+c _ 1
 ___ foo
-    c = 2
+    c _ 2
     r_ c
-c = 3
-print(foo())
+c _ 3
+print(foo

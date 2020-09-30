@@ -1,6 +1,6 @@
 #Create a program that prints Hello every 2 seconds
-import time
+______ time
 
-while True:
+while T..:
     print("Hello")
     time.sleep(2)

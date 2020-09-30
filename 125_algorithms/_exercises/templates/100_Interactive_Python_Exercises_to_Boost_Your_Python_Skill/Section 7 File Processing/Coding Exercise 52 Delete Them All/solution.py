@@ -1,6 +1,6 @@
-import glob
-import os
+______ glob
+______ os
 
-text_files = glob.glob("*.txt")
+text_files _ glob.glob("*.txt")
 ___ text_file __ text_files:
     os.remove(text_file)

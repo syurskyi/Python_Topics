@@ -3,12 +3,12 @@
 # %%
 #  Write a Python program to generate a series of unique random numbers
 
-import random
+______ random
 
-choices = list(ra..(100))
+choices _ li..(ra..(100))
 random.shuffle(choices)
-print(choices.pop())
+print(choices.p..
 while choices:
-    print(choices.pop())
+    print(choices.p..
 
 

@@ -5,25 +5,25 @@
 
 class py_solution:
     ___ int_to_Roman(self, num):
-        val = [
+        val _ [
             1000, 900, 500, 400,
             100, 90, 50, 40,
             10, 9, 5, 4,
             1
             ]
-        syb = [
+        syb _ [
             "M", "CM", "D", "CD",
             "C", "XC", "L", "XL",
             "X", "IX", "V", "IV",
             "I"
             ]
-        roman_num = ''
-        i = 0
+        roman_num _ ''
+        i _ 0
         while  num > 0:
             ___ _ __ ra..(num // val[i]):
-                roman_num += syb[i]
-                num -= val[i]
-            i += 1
+                roman_num +_ syb[i]
+                num -_ val[i]
+            i +_ 1
         r_ roman_num
 
 

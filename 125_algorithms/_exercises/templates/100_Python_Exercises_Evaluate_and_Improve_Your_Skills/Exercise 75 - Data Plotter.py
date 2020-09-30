@@ -1,9 +1,9 @@
 #Plot the data in the file provided through the URL http://www.pythonhow.com/data/sampledata.txt
-import pandas
-import pylab as plt
+______ pandas
+______ pylab as plt
 
-data = pandas.read_csv("http://www.pythonhow.com/data/sampledata.txt")
-data.plot(x='x', y='y', kind='scatter')
+data _ pandas.read_csv("http://www.pythonhow.com/data/sampledata.txt")
+data.plot(x_'x', y_'y', kind_'scatter')
 plt.show()
 
 """

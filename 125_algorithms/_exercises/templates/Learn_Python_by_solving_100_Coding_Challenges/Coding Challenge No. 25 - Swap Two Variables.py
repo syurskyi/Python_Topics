@@ -5,25 +5,25 @@
 
 class Solution:
     ___ swap1(self,x,y):
-        x,y = y,x
+        x,y _ y,x
         r_ x,y
 
     ___ swap2(self,x,y):
-        x = x + y
-        y = x - y
-        x = x - y
+        x _ x + y
+        y _ x - y
+        x _ x - y
         r_ x,y
 
     ___ swap3(self,x,y):
-        x = x * y
-        y = int(x / y)
-        x = int(x / y)
+        x _ x * y
+        y _ in.(x / y)
+        x _ in.(x / y)
         r_ x,y
 
     ___ swap4(self,x,y):
-        x = x ^ y
-        y = x ^ y
-        x = x ^ y
+        x _ x ^ y
+        y _ x ^ y
+        x _ x ^ y
         r_ x,y
 
 print ( Solution().swap1(9,6) )

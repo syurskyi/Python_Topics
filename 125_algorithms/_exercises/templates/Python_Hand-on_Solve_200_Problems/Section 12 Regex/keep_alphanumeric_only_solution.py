@@ -7,9 +7,9 @@
 # Output
 # PythonExercises12
 
-import re
-text1 = '**//Python Exercises// - 12. '
-pattern = re.compile('[\W_]+')
+______ re
+text1 _ '**//Python Exercises// - 12. '
+pattern _ re.compile('[\W_]+')
 print(pattern.sub('', text1))
 
 

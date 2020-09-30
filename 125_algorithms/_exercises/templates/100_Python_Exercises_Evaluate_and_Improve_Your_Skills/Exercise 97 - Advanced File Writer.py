@@ -1,14 +1,14 @@
 #Create a program that asks the user to submit text through a GUI
 
-file = open("user_data_save_close.txt", 'a+')
+file _ open("user_data_save_close.txt", 'a+')
 
-while True:
-    line = input("Write a value: ")
-    if line == "SAVE":
+while T..:
+    line _ input("Write a value: ")
+    __ line __ "SAVE":
         file.close()
-        file = open("user_data_save_close.txt", 'a+')
-    elif line == "CLOSE":
+        file _ open("user_data_save_close.txt", 'a+')
+    elif line __ "CLOSE":
         file.close()
         break
-    else:
+    ____
         file.write(line + "\n")

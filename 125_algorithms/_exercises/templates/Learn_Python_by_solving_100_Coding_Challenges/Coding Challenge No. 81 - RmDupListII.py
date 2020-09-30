@@ -7,42 +7,42 @@
 
 class ListNode:
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
 
 class Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ deleteDuplicates(self, head):
-        if head == None:
+        __ head __ None:
             r_ None
-        dummy = ListNode(10**10)
-        dummy.next, head = head, dummy # add a dummy node
-        pprev, prev, curr, dupFlag = head, head.next, head.next.next, False
-        while True:
-            if dupFlag == True:
-                if curr == None:
-                    pprev.next = None
+        dummy _ ListNode(10**10)
+        dummy.next, head _ head, dummy # add a dummy node
+        pprev, prev, curr, dupFlag _ head, head.next, head.next.next, F..
+        while T..:
+            __ dupFlag __ T..:
+                __ curr __ None:
+                    pprev.next _ None
                     break
-                if prev.val != curr.val:
-                    pprev.next, prev, dupFlag = curr, curr, False
-            else:
-                if curr == None:
+                __ prev.val !_ curr.val:
+                    pprev.next, prev, dupFlag _ curr, curr, F..
+            ____
+                __ curr __ None:
                     break
-                if prev.val == curr.val:
-                    dupFlag = True
-                else:
-                    pprev, prev = pprev.next, prev.next
-            curr = curr.next
+                __ prev.val __ curr.val:
+                    dupFlag _ T..
+                ____
+                    pprev, prev _ pprev.next, prev.next
+            curr _ curr.next
         r_ head.next
 
     ___ printll(self, node):
         while node:
             print ( node.val )
-            node = node.next
+            node _ node.next
 
 
-if  -n == '__main__':
-    ll1, ll1.next, ll1.next.next = ListNode(2), ListNode(2), ListNode(5)
+__  -n __ '__main__':
+    ll1, ll1.next, ll1.next.next _ ListNode(2), ListNode(2), ListNode(5)
     Solution().printll( Solution().deleteDuplicates(ll1) )

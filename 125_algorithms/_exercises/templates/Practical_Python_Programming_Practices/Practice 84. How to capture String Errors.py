@@ -1,9 +1,9 @@
-x = input("Insert numbers only: ")
+x _ input("Insert numbers only: ")
 
-while type(x) != float:
+while type(x) !_ float:
     try:
-        x = float(x)
+        x _ float(x)
     except ValueError:
         print("Error! Please insert only numbers...")
-        x = input("Insert numbers only: ")
+        x _ input("Insert numbers only: ")
 print(x/2)

@@ -1,17 +1,17 @@
-import random
+______ random
 
-x =   # list
+x _   # list
 ___ i __ ra..(20):
-    x.append(int(random.random()*20)-10)
+    x.ap..(in.(random.random()*20)-10)
 print(x)
 
-pos =   # list
-neg =   # list
+pos _   # list
+neg _   # list
 
 ___ i __ x:
-    if i<0:
-        neg.append(i)
+    __ i<0:
+        neg.ap..(i)
     elif i>0:
-        pos.append(i)
+        pos.ap..(i)
 print("Negative numbers = ",neg)
 print("Positive numbers = ",pos)

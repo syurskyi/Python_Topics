@@ -1,5 +1,5 @@
-dict = {'one':1, 'two':2, 'three':3}
+di.. _ {'one':1, 'two':2, 'three':3}
 
-x = [[y,z]___ y, z __ dict.items()]
+x _ [[y,z]___ y, z __ di...i..()]
 
 print(x)

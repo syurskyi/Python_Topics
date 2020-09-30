@@ -1,11 +1,11 @@
-x = input("Insert any value of 'C' or 'F' : ")
+x _ input("Insert any value of 'C' or 'F' : ")
 
-unit = x[-1]
-x = int(x[0:-1])
+unit _ x[-1]
+x _ in.(x[0:-1])
 
-if unit == 'C' or unit == 'c':
-    x = round(x*(9/5)+32)
-    print(str(x) + 'F')
-elif unit == 'F' or unit == 'f':
-    x = round((x-32)*(5/9))
-    print(str(x) + 'C')
+__ unit __ 'C' or unit __ 'c':
+    x _ round(x*(9/5)+32)
+    print(st.(x) + 'F')
+elif unit __ 'F' or unit __ 'f':
+    x _ round((x-32)*(5/9))
+    print(st.(x) + 'C')

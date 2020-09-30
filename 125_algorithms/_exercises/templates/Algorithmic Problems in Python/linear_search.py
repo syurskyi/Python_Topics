@@ -14,5 +14,5 @@ ___ linear_search(array,item
         
 __  -n __ "__main__":
 
-	array = [1,4,7,3,6,8,10,11,20,22]
+	array _ [1,4,7,3,6,8,10,11,20,22]
 	print(linear_search(array,111))

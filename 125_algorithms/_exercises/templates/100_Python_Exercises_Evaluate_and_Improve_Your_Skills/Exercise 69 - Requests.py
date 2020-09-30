@@ -1,8 +1,8 @@
 #Name the file datetime.py and fix the error
-import requests
+______ requests
 print( -n)
 
-r = requests.get("http://www.pythonhow.com")
+r _ requests.get("http://www.pythonhow.com")
 print(r.text[:100])
 
 print( -n)

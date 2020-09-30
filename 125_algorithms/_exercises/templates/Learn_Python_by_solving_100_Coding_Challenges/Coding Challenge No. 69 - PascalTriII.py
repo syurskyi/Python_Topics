@@ -8,21 +8,21 @@
 class Solution:
     # @return a list of integers
     ___ getRow(self, rowIndex):
-        if rowIndex == 0:
+        __ rowIndex __ 0:
             r_ [1]
-        if rowIndex == 1:
+        __ rowIndex __ 1:
             r_ [1, 1]
-        result = [1]
-        nextDivisor = 1
-        nextMultiplier = rowIndex
+        result _ [1]
+        nextDivisor _ 1
+        nextMultiplier _ rowIndex
         ___ _ __ ra..(rowIndex // 2):
-            nextVal = int((result[-1] * nextMultiplier) / nextDivisor)
-            result.append(nextVal)
-            nextDivisor += 1
-            nextMultiplier -= 1
-        if rowIndex % 2 == 1:
+            nextVal _ in.((result[-1] * nextMultiplier) / nextDivisor)
+            result.ap..(nextVal)
+            nextDivisor +_ 1
+            nextMultiplier -_ 1
+        __ rowIndex % 2 __ 1:
             result.extend(result[::-1])
-        else:
+        ____
             result.extend(result[-2::-1])
         r_ result
 

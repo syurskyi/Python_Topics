@@ -1,2 +1,2 @@
-___ foo(mylist):
-    r_ list(set(mylist))
+# ___ foo mylist
+#     r_ li.. se. ?

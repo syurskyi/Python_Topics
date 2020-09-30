@@ -1,7 +1,7 @@
-import glob
-import os
+______ glob
+______ os
 
-text_files = glob.glob("*.txt")
+text_files _ glob.glob("*.txt")
 
-sizes = {text_file:os.path.getsize(text_file) ___ text_file __ text_files}
-print(min(sizes, key=sizes.get))
+sizes _ {text_file:os.path.getsize(text_file) ___ text_file __ text_files}
+print(min(sizes, key_sizes.get))

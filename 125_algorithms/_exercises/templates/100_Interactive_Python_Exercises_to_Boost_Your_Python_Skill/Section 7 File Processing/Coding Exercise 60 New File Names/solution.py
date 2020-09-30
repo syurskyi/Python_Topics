@@ -1,6 +1,6 @@
-import glob
-import os
+______ glob
+______ os
 
-text_files = glob.glob("file*.txt")
+text_files _ glob.glob("file*.txt")
 ___ text_file __ text_files:
     os.rename(text_file, text_file[:4] + "-" + text_file[4:])

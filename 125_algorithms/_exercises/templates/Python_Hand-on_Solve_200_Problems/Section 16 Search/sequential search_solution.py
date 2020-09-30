@@ -8,14 +8,14 @@
 
 ___ Sequential_Search(dlist, item):
 
-    pos = 0
-    found = False
+    pos _ 0
+    found _ F..
     
-    while pos < len(dlist) and not found:
-        if dlist[pos] == item:
-            found = True
-        else:
-            pos = pos + 1
+    while pos < le.(dlist) an. not found:
+        __ dlist[pos] __ item:
+            found _ T..
+        ____
+            pos _ pos + 1
     
     r_ found, pos
 

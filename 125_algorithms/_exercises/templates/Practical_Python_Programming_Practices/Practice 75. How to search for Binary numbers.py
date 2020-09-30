@@ -1,25 +1,25 @@
-from random import randint
+from random ______ r_i..
 
 ___ num_search(first,last):
-    mid = len(first) //2
-    mini = 0
-    maxi = len(first) - 1
-    while first[mid] != last and mini <= maxi:
-        if last > first[mid]:
-            mini = mid + 1
-        else:
-            maxi = mid -1
-        mid = (mini + maxi) // 2
-    if mini > maxi:
+    mid _ le.(first) //2
+    mini _ 0
+    maxi _ le.(first) - 1
+    while first[mid] !_ last an. mini <_ maxi:
+        __ last > first[mid]:
+            mini _ mid + 1
+        ____
+            maxi _ mid -1
+        mid _ (mini + maxi) // 2
+    __ mini > maxi:
         r_ None
-    else:
+    ____
         r_ mid
 
-x =   # list
+x _   # list
 ___ i __ ra..(15):
-    x.append(randint(1,20))
+    x.ap..(r_i..(1,20))
 x.sort()
 print(x)
 
-num = int(input("Insert any number to search the list: "))
+num _ in.(input("Insert any number to search the list: "))
 print(num_search(x,num))

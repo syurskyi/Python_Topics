@@ -1,14 +1,14 @@
-x = abs(int(input("Insert integer values only: ")))
+x _ abs(in.(input("Insert integer values only: ")))
 
-sum = 0
-mul = 1
+su. _ 0
+mul _ 1
 
-while x != 0:
-    digit = x%10
-    sum += digit
-    mul *= digit
+while x !_ 0:
+    digit _ x%10
+    su. +_ digit
+    mul *_ digit
 
-    x = x/10
+    x _ x/10
 
-print("Sum of digit = ",sum)
+print("Sum of digit = ",su.)
 print("Product of digit = ",mul)

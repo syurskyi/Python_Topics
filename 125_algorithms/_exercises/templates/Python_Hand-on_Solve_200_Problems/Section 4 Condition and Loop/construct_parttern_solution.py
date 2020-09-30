@@ -15,15 +15,15 @@
 # * * 
 # *
 
-n=5;
+n_5;
 ___ i __ ra..(n):
     ___ j __ ra..(i):
-        print ('* ', end="")
+        print ('* ', end_"")
     print('')
 
 ___ i __ ra..(n,0,-1):
     ___ j __ ra..(i):
-        print('* ', end="")
+        print('* ', end_"")
     print('')
 	
 

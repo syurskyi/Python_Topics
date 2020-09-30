@@ -1,14 +1,14 @@
 #Write a script that extracts letters from files if letters are contained in "python" and puts the letters in a list
-import glob
+______ glob
 
-letters =   # list
-file_list = glob.iglob("letters/*.txt")
-check = "python"
+letters _   # list
+file_list _ glob.iglob("letters/*.txt")
+check _ "python"
 
 ___ filename __ file_list:
     with open(filename,"r") as file:
-        letter = file.read().strip("\n")
-        if letter __ check:
-            letters.append(letter)
+        letter _ file.read().strip("\n")
+        __ letter __ check:
+            letters.ap..(letter)
 
 print(letters)

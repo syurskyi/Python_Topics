@@ -1,17 +1,17 @@
-x = float(input("Insert coordinate of point x: "))
-y = float(input("Insert coordinate of point y: "))
+x _ float(input("Insert coordinate of point x: "))
+y _ float(input("Insert coordinate of point y: "))
 
-if x > 0 and y > 0:
+__ x > 0 an. y > 0:
     print("The first quadrant")
-elif x < 0 and y >0:
+elif x < 0 an. y >0:
     print("The second quadrant")
-elif x < 0 and y  < 0:
+elif x < 0 an. y  < 0:
     print("The third quadrant")
-elif x < 0 and y < 0:
+elif x < 0 an. y < 0:
     print("The forth quadrant")
-elif x == 0 and y == 0:
+elif x __ 0 an. y __ 0:
     print("Point of origin")
-elif x == 0:
+elif x __ 0:
     print("x point")
-elif y == 0:
+elif y __ 0:
     print("y point")

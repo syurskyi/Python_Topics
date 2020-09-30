@@ -9,31 +9,31 @@ class Solution:
     # @param s, a string
     # @return a list of strings
     ___ restoreIpAddresses(self, s):
-        solution =   # list
+        solution _   # list
         self.restoreIpAddressesRec(s,0,0,  # list,solution)
         r_ solution
 
     ___ restoreIpAddressesRec(self, s, index, octets, tempSolution, solution):
-        if len(s)-index<4-octets:
+        __ le.(s)-index<4-octets:
             r_
-        if len(s)-index>3*(4-octets):
+        __ le.(s)-index>3*(4-octets):
             r_
-        if octets==4:
-            if index== len(s):
-                tempSolution.pop()
-                solution.append("".join(tempSolution))
-                tempSolution.append('.')
+        __ octets__4:
+            __ index__ le.(s):
+                tempSolution.p..()
+                solution.ap..("".join(tempSolution))
+                tempSolution.ap..('.')
             r_
         ___ size __ ra..(1,4):
-            if s[index]=='0' and size>1:
+            __ s[index]__'0' an. size>1:
                 break
-            if int(s[index:index+size])>255:
+            __ in.(s[index:index+size])>255:
                 break
-            tempSolution.append(s[index:index+size])
-            tempSolution.append('.')
+            tempSolution.ap..(s[index:index+size])
+            tempSolution.ap..('.')
             self.restoreIpAddressesRec(s,index+size,octets+1,tempSolution, solution)
-            tempSolution.pop()
-            tempSolution.pop()
+            tempSolution.p..()
+            tempSolution.p..()
 
 
 Solution().restoreIpAddresses("25525511135")

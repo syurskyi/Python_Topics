@@ -8,7 +8,7 @@ class Solution:
     # @param num2, a string
     # @return a string
     ___ multiply(self, num1, num2):
-        r_ str(int(num1)*int(num2))
+        r_ st.(in.(num1)*in.(num2))
 
 
 Solution().multiply("122326161616161616","-161651616161616")

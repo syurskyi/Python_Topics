@@ -7,18 +7,18 @@ class Solution:
     # @param grid, a list of lists of integers
     # @return an integer
     ___ minPathSum(self, grid):
-        if len(grid)==0 or len(grid[0])==0:
+        __ le.(grid)__0 or le.(grid[0])__0:
             r_ 0
-        ___ row __ ra..(0, len(grid)):
-            ___ col __ ra..(0, len(grid[0])):
-                if row>0 and col>0:
-                    grid[row][col] += min(grid[row-1][col],grid[row][col-1])
+        ___ row __ ra..(0, le.(grid)):
+            ___ col __ ra..(0, le.(grid[0])):
+                __ row>0 an. col>0:
+                    grid[row][col] +_ min(grid[row-1][col],grid[row][col-1])
                 elif row>0:
-                    grid[row][col] += grid[row-1][col]
+                    grid[row][col] +_ grid[row-1][col]
                 elif col>0:
-                    grid[row][col] += grid[row][col-1]
-        r_ grid[len(grid)-1][len(grid[0])-1]
+                    grid[row][col] +_ grid[row][col-1]
+        r_ grid[le.(grid)-1][le.(grid[0])-1]
 
 
-grid = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+grid _ [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
 Solution().minPathSum(grid)

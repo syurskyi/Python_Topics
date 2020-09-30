@@ -7,18 +7,18 @@
 # executes in logarithmic time.
 
 ___ binary_search(item_listac,item):
-	first = 0
-	last = len(item_list)-1
-	found = False
-	while( first<=last and not found):
-		mid = (first + last)//2
-		if item_list[mid] == item :
-			found = True
-		else:
-			if item < item_list[mid]:
-				last = mid - 1
-			else:
-				first = mid + 1	
+	first _ 0
+	last _ le.(item_list)-1
+	found _ F..
+	while( first<_last an. not found):
+		mid _ (first + last)//2
+		__ item_list[mid] __ item :
+			found _ T..
+		____
+			__ item < item_list[mid]:
+				last _ mid - 1
+			____
+				first _ mid + 1	
 	r_ found
 	
 print(binary_search([1,2,3,5,8], 6))

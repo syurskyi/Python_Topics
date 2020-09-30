@@ -14,33 +14,33 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 
 class Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
-    ___ hasPathSum(self, root, sum):
-        if root == None:
+    ___ hasPathSum(self, root, su.):
+        __ root __ None:
             # Empty tree will always result in False
-            r_ False
-        elif root.left == None and root.right == None:
+            r_ F..
+        elif root.left __ None an. root.right __ None:
             # Reach the leaf.
-            r_ root.val == sum
-        elif root.left == None:
+            r_ root.val __ su.
+        elif root.left __ None:
             # Only has right child.
-            r_ self.hasPathSum(root.right, sum-root.val)
-        elif root.right == None:
+            r_ self.hasPathSum(root.right, su.-root.val)
+        elif root.right __ None:
             # Only has left child.
-            r_ self.hasPathSum(root.left, sum-root.val)
-        else:
+            r_ self.hasPathSum(root.left, su.-root.val)
+        ____
             # Has two children.
-            r_ self.hasPathSum(root.left, sum-root.val) or self.hasPathSum(root.right, sum-root.val)
+            r_ self.hasPathSum(root.left, su.-root.val) or self.hasPathSum(root.right, su.-root.val)
 
 
-if  -n == '__main__':
-    BT, BT.right, BT.right.left, BT.left = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
+__  -n __ '__main__':
+    BT, BT.right, BT.right.left, BT.left _ TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(10)
     print ( Solution().hasPathSum(BT, 6) )

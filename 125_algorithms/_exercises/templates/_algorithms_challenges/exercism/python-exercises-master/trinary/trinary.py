@@ -1,2 +1,0 @@
-___ trinary(
-    pass

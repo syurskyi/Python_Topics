@@ -13,33 +13,33 @@ class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of integers
     ___ spiralOrder(self, matrix):
-        if matrix ==   # list:
+        __ matrix __   # list:
             r_   # list
-        res =   # list
-        maxUp = maxLeft = 0
-        maxDown = len(matrix) - 1
-        maxRight = len(matrix[0]) - 1
-        direct = 0 # 0 go right, 1 go down, 2 go left, 3 go up
-        while True:
-            if direct == 0: # go right
+        res _   # list
+        maxUp _ maxLeft _ 0
+        maxDown _ le.(matrix) - 1
+        maxRight _ le.(matrix[0]) - 1
+        direct _ 0 # 0 go right, 1 go down, 2 go left, 3 go up
+        while T..:
+            __ direct __ 0: # go right
                 ___ i __ ra..(maxLeft, maxRight + 1):
-                    res.append(matrix[maxUp][i])
-                maxUp += 1
-            elif direct == 1: # go down
+                    res.ap..(matrix[maxUp][i])
+                maxUp +_ 1
+            elif direct __ 1: # go down
                 ___ i __ ra..(maxUp, maxDown + 1):
-                    res.append(matrix[i][maxRight])
-                maxRight -= 1
-            elif direct == 2: # go left
+                    res.ap..(matrix[i][maxRight])
+                maxRight -_ 1
+            elif direct __ 2: # go left
                 ___ i __ reversed(ra..(maxLeft, maxRight + 1)):
-                    res.append(matrix[maxDown][i])
-                maxDown -= 1
-            else: # go up
+                    res.ap..(matrix[maxDown][i])
+                maxDown -_ 1
+            ____ # go up
                 ___ i __ reversed(ra..(maxUp, maxDown + 1)):
-                    res.append(matrix[i][maxLeft])
-                maxLeft += 1
-            if maxUp > maxDown or maxLeft > maxRight:
+                    res.ap..(matrix[i][maxLeft])
+                maxLeft +_ 1
+            __ maxUp > maxDown or maxLeft > maxRight:
                 r_ res
-            direct = (direct + 1) % 4
+            direct _ (direct + 1) % 4
 
 
 Solution().spiralOrder([ [ 1, 2, 3 ],[ 4, 5, 6 ],[ 7, 8, 9 ] ])

@@ -1,4 +1,4 @@
-mystring = "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient " \
+mystring _ "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient " \
            "montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. " \
            "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. " \
            "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. " \
@@ -8,4 +8,4 @@ mystring = "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque p
            "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus."
 
 ___ foo(mystring):
-    r_ len(mystring.replace(".", ""))
+    r_ le.(mystring.replace(".", ""))

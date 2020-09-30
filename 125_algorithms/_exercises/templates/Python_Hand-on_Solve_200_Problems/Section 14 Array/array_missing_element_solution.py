@@ -16,13 +16,13 @@
 # ----------------------------------------------------------------
 
 
-first_array = [1,2,3,4,5,6,7]
-second_array = [3,7,2,1,4,6]
+first_array _ [1,2,3,4,5,6,7]
+second_array _ [3,7,2,1,4,6]
 
 ___ finder(first_array, second_array):
-    r_(sum(first_array) - sum(second_array))
+    r_(su.(first_array) - su.(second_array))
 
-missing_number = finder(first_array, second_array)
+missing_number _ finder(first_array, second_array)
 
 print(missing_number)    
 

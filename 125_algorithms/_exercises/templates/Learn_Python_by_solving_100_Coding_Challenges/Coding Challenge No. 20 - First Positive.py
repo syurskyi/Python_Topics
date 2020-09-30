@@ -11,15 +11,15 @@ class Solution:
     # @return an integer
     # @a very subtle solution
     ___ firstMissingPositive(A):
-        n=len(A)
+        n_len(A)
         ___ i __ ra..(n):
-            if A[i]<=0: A[i]=n+2
+            __ A[i]<_0: A[i]_n+2
         ___ i __ ra..(n):
-            if abs(A[i])<=n:
-                curr=abs(A[i])-1
-                A[curr]=-abs(A[curr])
+            __ abs(A[i])<_n:
+                curr_abs(A[i])-1
+                A[curr]_-abs(A[curr])
         ___ i __ ra..(n):
-            if A[i]>0: r_ i+1
+            __ A[i]>0: r_ i+1
         r_ n+1
 
 

@@ -5,25 +5,25 @@
 
 class ListNode:
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
 
 class Solution:
     # @param head, a ListNode
     # @return a boolean
     ___ hasCycle(self, head):
-        if head == None or head.next == None:
-            r_ False
-        slow = fast = head
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-            if slow == fast:
-                r_ True
-        r_ False
+        __ head __ None or head.next __ None:
+            r_ F..
+        slow _ fast _ head
+        while fast an. fast.next:
+            slow _ slow.next
+            fast _ fast.next.next
+            __ slow __ fast:
+                r_ T..
+        r_ F..
 
-if  -n == '__main__':
-    ll, ll.next, ll.next.next = ListNode(2), ListNode(4), ListNode(3),
-    ll.next.next.next = ll.next
+__  -n __ '__main__':
+    ll, ll.next, ll.next.next _ ListNode(2), ListNode(4), ListNode(3),
+    ll.next.next.next _ ll.next
     print( Solution().hasCycle(ll) )

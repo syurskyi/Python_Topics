@@ -12,31 +12,31 @@ class Solution:
     # @return an integer
 
     ___ longestConsecutive(self, num):
-        startToEnd = {}
-        endToStart = {}
-        longest = 0
-        ___ i __ ra..(0, len(num)):
-            start = num[i]
-            end = num[i]
-            if num[i] __ startToEnd:
-                end = startToEnd[num[i]]
+        startToEnd _ {}
+        endToStart _ {}
+        longest _ 0
+        ___ i __ ra..(0, le.(num)):
+            start _ num[i]
+            end _ num[i]
+            __ num[i] __ startToEnd:
+                end _ startToEnd[num[i]]
                 del startToEnd[num[i]]
                 del endToStart[end]
-            if num[i] __ endToStart:
-                start = endToStart[num[i]]
+            __ num[i] __ endToStart:
+                start _ endToStart[num[i]]
                 del startToEnd[start]
                 del endToStart[num[i]]
-            if num[i]-1 __ endToStart:
-                start = min(start, endToStart[num[i]-1])
+            __ num[i]-1 __ endToStart:
+                start _ min(start, endToStart[num[i]-1])
                 del startToEnd[endToStart[num[i]-1]]
                 del endToStart[num[i]-1]
-            if num[i]+1 __ startToEnd:
-                end = ma.(end, startToEnd[num[i]+1])
+            __ num[i]+1 __ startToEnd:
+                end _ ma.(end, startToEnd[num[i]+1])
                 del endToStart[startToEnd[num[i]+1]]
                 del startToEnd[num[i]+1]
-            startToEnd[start] = end
-            endToStart[end] = start
-            longest = ma.(longest, end-start+1)
+            startToEnd[start] _ end
+            endToStart[end] _ start
+            longest _ ma.(longest, end-start+1)
         r_ longest
 
 Solution().longestConsecutive( [100, 4, 200, 1, 3, 2] )

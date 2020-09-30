@@ -1,1 +1,1 @@
-print(dir(int))
+print(dir(in.))

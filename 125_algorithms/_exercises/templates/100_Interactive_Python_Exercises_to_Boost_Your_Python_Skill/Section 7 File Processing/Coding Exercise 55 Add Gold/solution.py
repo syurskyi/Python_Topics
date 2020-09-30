@@ -1,10 +1,10 @@
-import json
+______ json
 
 with open("file2.txt") as json_file1:
-    data = json.load(json_file1)
+    data _ json.load(json_file1)
 print("DATA", data)
 
-data["metals"]["gold"] = {
+data["metals"]["gold"] _ {
     "conductivity": 33.5,
     "density": 0.255,
     "heat": 0.129,

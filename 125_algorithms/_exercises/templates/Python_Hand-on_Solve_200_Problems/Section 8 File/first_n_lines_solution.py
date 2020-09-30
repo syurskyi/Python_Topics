@@ -5,7 +5,7 @@
 # Use test.txt file
 
 ___ file_read_from_head(fname, nlines):
-        from itertools import islice
+        from it.. ______ islice
         with open(fname) as f:
                 ___ line __ islice(f, nlines):
                         print(line)

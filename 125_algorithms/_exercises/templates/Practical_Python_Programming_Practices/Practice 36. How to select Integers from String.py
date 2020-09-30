@@ -1,20 +1,20 @@
-str = input("Insert strings with integer values: ")
-lenstr = len(str)
+st. _ input("Insert strings with integer values: ")
+lenstr _ le.(st.)
 
-mynum =   # list
+mynum _   # list
 
-x = 0
+x _ 0
 while x < lenstr:
-    num = ""
-    symbol = str[x]
-    while '0' <= symbol <= '9':
-        num += symbol
-        x += 1
-        if x<lenstr:
-            symbol = str[x]
-        else:
+    num _ ""
+    symbol _ st.[x]
+    while '0' <_ symbol <_ '9':
+        num +_ symbol
+        x +_ 1
+        __ x<lenstr:
+            symbol _ st.[x]
+        ____
             break
-    x += 1
-    if num != "":
-        mynum.append(int(num))
+    x +_ 1
+    __ num !_ "":
+        mynum.ap..(in.(num))
 print(mynum)

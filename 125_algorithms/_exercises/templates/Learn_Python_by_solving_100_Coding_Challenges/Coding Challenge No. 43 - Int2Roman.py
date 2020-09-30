@@ -8,14 +8,14 @@ class Solution:
     # @return a string
 
     ___ intToRoman(self, num):
-        values = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ]
-        numerals = [ "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" ]
-        list = ''
-        ___ i __ ra..(0, len(values)):
-            while num >= values[i]:
-                num -= values[i]
-                list += numerals[i]
-        r_ list
+        v.. _ [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ]
+        numerals _ [ "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" ]
+        li.. _ ''
+        ___ i __ ra..(0, le.(v..)):
+            while num >_ v..[i]:
+                num -_ v..[i]
+                li.. +_ numerals[i]
+        r_ li..
 
 
 Solution().intToRoman(1001)

@@ -7,11 +7,11 @@ class Solution:
     # @param prices, a list of integer
     # @return an integer
     ___ maxProfit(self, prices):
-        maxProfit = 0
-        ___ index __ ra..(len(prices)-1):
-            if prices[index+1] > prices[index]:
+        maxProfit _ 0
+        ___ index __ ra..(le.(prices)-1):
+            __ prices[index+1] > prices[index]:
             # As long as we can earn money, do the transaction.
-                maxProfit += prices[index+1] - prices[index]
+                maxProfit +_ prices[index+1] - prices[index]
         r_ maxProfit
 
 

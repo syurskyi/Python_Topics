@@ -3,8 +3,8 @@
 # %%
 # Write a Python program to iterate over dictionaries using for loops.
 
-d = {'x': 10, 'y': 20, 'z': 30} 
-___ dict_key, dict_value __ d.items
+d _ {'x': 10, 'y': 20, 'z': 30}
+___ dict_key, dict_value __ d.i..
     print(dict_key,'->',dict_value)
 	
 

@@ -1,17 +1,17 @@
-from math import sqrt
+from math ______ sqrt
 
-x = float(input("Insert x = "))
-y = float(input("Insert y = "))
-z = float(input("Insert z = "))
+x _ float(input("Insert x = "))
+y _ float(input("Insert y = "))
+z _ float(input("Insert z = "))
 
-a = y*y-4*x*z
+a _ y*y-4*x*z
 
-if a>0:
-    x1 = (-y + sqrt(a))/(2*x)
-    x2 = (-y - sqrt(a))/(2*x)
+__ a>0:
+    x1 _ (-y + sqrt(a))/(2*x)
+    x2 _ (-y - sqrt(a))/(2*x)
     print("x1 = %.2f; x2 = %.2f" % (x1,x2))
-elif a==0:
-    x1 = -y/(2*x)
+elif a__0:
+    x1 _ -y/(2*x)
     print("x1 = %.2f" % x1)
-else:
+____
     print("No roots exist")

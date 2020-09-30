@@ -6,15 +6,15 @@
 
 class IOString
     ___ __init__(self):
-        self.str1 = ""
+        self.str1 _ ""
 
     ___ get_String(self):
-        self.str1 = input()
+        self.str1 _ input()
 
     ___ print_String(self):
-        print(self.str1.upper())
+        print(self.str1.upper
 
-str1 = IOString()
+str1 _ IOString()
 str1.get_String()
 str1.print_String()
 

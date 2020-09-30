@@ -7,12 +7,12 @@ class Solution:
     # @param n, an integer
     # @return an integer
     ___ largest_prime_of(n):
-        i = 2
-        while i * i <= n:
-            if n % i:
-                i += 1
-            else:
-                n //= i
+        i _ 2
+        while i * i <_ n:
+            __ n % i:
+                i +_ 1
+            ____
+                n //_ i
         r_ n
 
 

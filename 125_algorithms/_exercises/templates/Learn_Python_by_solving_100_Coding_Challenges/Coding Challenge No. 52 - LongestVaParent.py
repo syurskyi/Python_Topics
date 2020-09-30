@@ -10,19 +10,19 @@ class Solution:
     # @return an integer
 
     ___ longestValidParentheses(self, s):
-        maxlen, stack, last = 0,   # list, -1
-        ___ i __ ra..(len(s)):
-            if s[i]=='(':
-                stack.append(i) # push the INDEX into the stack!!!!
-            else:
-                if stack ==   # list:
-                    last = i
-                else:
-                    stack.pop()
-                    if stack ==   # list:
-                        maxlen = ma.(maxlen, i-last)
-                    else:
-                        maxlen = ma.(maxlen, i-stack[len(stack)-1])
+        maxlen, stack, last _ 0,   # list, -1
+        ___ i __ ra..(le.(s)):
+            __ s[i]__'(':
+                stack.ap..(i) # push the INDEX into the stack!!!!
+            ____
+                __ stack __   # list:
+                    last _ i
+                ____
+                    stack.p..()
+                    __ stack __   # list:
+                        maxlen _ ma.(maxlen, i-last)
+                    ____
+                        maxlen _ ma.(maxlen, i-stack[le.(stack)-1])
         r_ maxlen
 
 

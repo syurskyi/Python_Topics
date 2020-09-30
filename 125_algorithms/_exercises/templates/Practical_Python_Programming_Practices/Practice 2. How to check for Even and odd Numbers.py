@@ -1,6 +1,6 @@
-x = int(input("Insert any number: "))
+x _ in.(input("Insert any number: "))
 
-if x%2 == 0:
+__ x%2 __ 0:
     print("This is an EVEN number!")
-else:
+____
     print("This is an ODD number!")

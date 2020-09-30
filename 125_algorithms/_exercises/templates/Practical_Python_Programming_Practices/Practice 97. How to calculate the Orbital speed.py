@@ -1,13 +1,13 @@
-from random import random
+from random ______ random
 
-x = random()*900+100
-x = int(x)
+x _ random()*900+100
+x _ in.(x)
 print(x)
 
-s = str(x)
+s _ st.(x)
 
-y = int(s[0])#x//100
-z = int(s[1])#(x//10)%10
-w = int(s[2])#x % 10
+y _ in.(s[0])#x//100
+z _ in.(s[1])#(x//10)%10
+w _ in.(s[2])#x % 10
 
 print(y+z+w)

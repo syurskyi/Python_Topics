@@ -4,13 +4,13 @@
 # Write a Python program to convert a binary number to decimal number.
 
 
-b_num = list(input("Input a binary number: "))
-value = 0
+b_num _ li..(input("Input a binary number: "))
+value _ 0
 
-___ i __ ra..(len(b_num)):
-	digit = b_num.pop()
-	if digit == '1':
-		value = value + pow(2, i)
+___ i __ ra..(le.(b_num)):
+	digit _ b_num.p..()
+	__ digit __ '1':
+		value _ value + pow(2, i)
 print("The decimal value of the number is", value)
 
 

@@ -1,11 +1,11 @@
-str = "Hello, World, Table, Chair, Cup, Tea"
-print(str)
+st. _ "Hello, World, Table, Chair, Cup, Tea"
+print(st.)
 
-substr1 = input("Choose an old substring to replace: ")
-substr2 = input("Insert new substring: ")
-lensubstr1 = len(substr1)
+substr1 _ input("Choose an old substring to replace: ")
+substr2 _ input("Insert new substring: ")
+lensubstr1 _ le.(substr1)
 
-while str.find(substr1) > 0:
-    i = str.find(substr1)
-    str = str[:i] + substr2 + str[i+lensubstr1:]
-print(str)
+while st..find(substr1) > 0:
+    i _ st..find(substr1)
+    st. _ st.[:i] + substr2 + st.[i+lensubstr1:]
+print(st.)

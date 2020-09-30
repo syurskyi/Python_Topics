@@ -9,19 +9,19 @@ class Solution:
     :rtype: bool
     """
     ___ isPalindrome(self, x):
-        if x < 0:
-            r_ False
-        div = 1
-        while int(x/div) >= 10:
-            div = div * 10
+        __ x < 0:
+            r_ F..
+        div _ 1
+        while in.(x/div) >_ 10:
+            div _ div * 10
         while x:
-            left = int(x / div)
-            right = x % 10
-            if left != right:
-                r_ False
-            x = int(( x % div ) / 10)
-            div = int(div / 100)
-        r_ True
+            left _ in.(x / div)
+            right _ x % 10
+            __ left !_ right:
+                r_ F..
+            x _ in.(( x % div ) / 10)
+            div _ in.(div / 100)
+        r_ T..
 
 
 Solution().isPalindrome(16461)

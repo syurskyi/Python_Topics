@@ -15,17 +15,17 @@ class Solution:
     # @param s is a string
     # @return an integer
     ___ numDecodings(s):
-        if s=="" or s[0]=='0': r_ 0
-        dp=[1,1]
-        ___ i __ ra..(2,len(s)+1):
-            if 10 <=int(s[i-2:i]) <=26 and s[i-1]!='0':
-                dp.append(dp[i-1]+dp[i-2])
-            elif int(s[i-2:i])==10 or int(s[i-2:i])==20:
-                dp.append(dp[i-2])
-            elif s[i-1]!='0':
-                dp.append(dp[i-1])
-            else:
+        __ s__"" or s[0]__'0': r_ 0
+        dp_[1,1]
+        ___ i __ ra..(2,le.(s)+1):
+            __ 10 <_int(s[i-2:i]) <_26 an. s[i-1]!_'0':
+                dp.ap..(dp[i-1]+dp[i-2])
+            elif in.(s[i-2:i])__10 or in.(s[i-2:i])__20:
+                dp.ap..(dp[i-2])
+            elif s[i-1]!_'0':
+                dp.ap..(dp[i-1])
+            ____
                 r_ 0
-        r_ dp[len(s)]
+        r_ dp[le.(s)]
 
 Solution.numDecodings("12")

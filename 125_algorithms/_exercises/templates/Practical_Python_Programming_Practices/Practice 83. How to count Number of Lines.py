@@ -1,20 +1,20 @@
-lines = 0
-words = 0
-letters = 0
+lines _ 0
+words _ 0
+letters _ 0
 
-fp = "C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt"
+fp _ "C:/Users/USER/Desktop/Python Projects/Python_File/Python.txt"
 
 ___ line __ open(fp):
-    lines += 1
-    letters += len(line)
+    lines +_ 1
+    letters +_ le.(line)
 
-    pos = 'out'
+    pos _ 'out'
     ___ letter __ line:
-        if letter != ' ' and pos == 'out':
-            words += 1
-            pos = 'in'
-        elif letter == ' ':
-            pos = 'out'
+        __ letter !_ ' ' an. pos __ 'out':
+            words +_ 1
+            pos _ 'in'
+        elif letter __ ' ':
+            pos _ 'out'
 print("Lines: ",lines)
 print("Words: ",words)
 print("Letters: ",letters)

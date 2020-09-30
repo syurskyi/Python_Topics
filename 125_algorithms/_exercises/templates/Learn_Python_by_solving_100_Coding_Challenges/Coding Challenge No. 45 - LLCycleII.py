@@ -5,9 +5,9 @@
 
 
 class ListNode:
-    ___ __init__(self, val, next=None):
-        self.val = val
-        self.next = next
+    ___ __init__(self, val, next_None):
+        self.val _ val
+        self.next _ next
 
 
 class Solution:
@@ -17,24 +17,24 @@ class Solution:
     """
 
     ___ detectCycle(self, head):
-        if head == None or head.next == None:
+        __ head __ None or head.next __ None:
             r_ None
-        slow = fast = head
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-            if fast == slow:
+        slow _ fast _ head
+        while fast an. fast.next:
+            slow _ slow.next
+            fast _ fast.next.next
+            __ fast __ slow:
                 break
-        if slow == fast:
-            slow = head
-            while slow != fast:
-                slow = slow.next
-                fast = fast.next
+        __ slow __ fast:
+            slow _ head
+            while slow !_ fast:
+                slow _ slow.next
+                fast _ fast.next
             r_ slow
         r_ None
 
 
-if  -n == '__main__':
-    ll, ll.next, ll.next.next = ListNode(2), ListNode(4), ListNode(3),
-    ll.next.next.next = ll.next
+__  -n __ '__main__':
+    ll, ll.next, ll.next.next _ ListNode(2), ListNode(4), ListNode(3),
+    ll.next.next.next _ ll.next
     print( Solution().detectCycle(ll).val )

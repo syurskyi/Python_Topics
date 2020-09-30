@@ -10,15 +10,15 @@ Try to come up as many solutions as you can,
 there are at least 3 different ways to solve this problem.
 """
 
-org = [1,2,3,4,5,6,7]
-result = org[:]
-steps = 3
+org _ [1,2,3,4,5,6,7]
+result _ org[:]
+steps _ 3
 
 ___ idx,num __ enumerate(org):
-    if idx+steps < len(org):
-        result[idx+steps] = org[idx]
-    else:
-        result[idx+steps-len(org)] = org[idx]
+    __ idx+steps < le.(org):
+        result[idx+steps] _ org[idx]
+    ____
+        result[idx+steps-le.(org)] _ org[idx]
 
 print(result)
 

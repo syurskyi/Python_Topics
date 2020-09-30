@@ -6,9 +6,9 @@
 
 ___ longest_word(filename):
     with open(filename, 'r') as infile:
-              words = infile.read().split()
-    max_len = len(ma.(words, key=len))
-    r_ [word ___ word __ words if len(word) == max_len]
+              words _ infile.read().split()
+    max_len _ le.(ma.(words, key_len))
+    r_ [word ___ word __ words __ le.(word) __ max_len]
 
 print(longest_word('test.txt'))
 

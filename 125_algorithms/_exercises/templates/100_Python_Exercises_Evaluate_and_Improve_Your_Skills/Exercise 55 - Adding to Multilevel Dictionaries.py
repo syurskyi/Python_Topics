@@ -1,13 +1,13 @@
 #Add a new employee to the dictionary and print the dict out
 
-from pprint import pprint
+from pprint ______ pprint
 
-d = {"employees":[{"firstName": "John", "lastName": "Doe"},
+d _ {"employees":[{"firstName": "John", "lastName": "Doe"},
                 {"firstName": "Anna", "lastName": "Smith"},
                 {"firstName": "Peter", "lastName": "Jones"}],
 "owners":[{"firstName": "Jack", "lastName": "Petter"},
           {"firstName": "Jessy", "lastName": "Petter"}]}
 
-d["employees"].append(dict(firstName = "Albert", lastName = "Bert"))
+d["employees"].ap..(di..(firstName _ "Albert", lastName _ "Bert"))
 
 pprint(d)

@@ -14,40 +14,40 @@
 
 class TreeNode:
     ___ __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+        self.val _ x
+        self.left _ None
+        self.right _ None
 
 class Solution:
     # @param root, a tree node
     # @return nothing, do it in place
     ___ flatten(self, root):
-        if root == None:
+        __ root __ None:
             r_
-        stack = [root.right, root.left]
-        current = root
-        while len(stack) != 0:
-            nextNode = stack.pop()
-            if nextNode == None:
+        stack _ [root.right, root.left]
+        current _ root
+        while le.(stack) !_ 0:
+            nextNode _ stack.p..()
+            __ nextNode __ None:
                 continue
-            else:
-                current.left = None
-                current.right = nextNode
-                current = current.right
-                stack.append(current.right)
-                stack.append(current.left)
+            ____
+                current.left _ None
+                current.right _ nextNode
+                current _ current.right
+                stack.ap..(current.right)
+                stack.ap..(current.left)
 
         r_ root
 
         ___ printtree(self, tree_node):
-            if tree_node.left is not None:
+            __ tree_node.left is not None:
                 self.printtree(tree_node.left)
             print(tree_node.val)
-        if tree_node.right is not None:
+        __ tree_node.right is not None:
             self.printtree(tree_node.right)
 
 
-if  -n == '__main__':
-    BT, BT.right, BT.right.right, BT.left, BT.left.right, BT.left.left = TreeNode(1), TreeNode(5), TreeNode(6), TreeNode(2), TreeNode(4), TreeNode(3)
-    LL = Solution().flatten(BT)
+__  -n __ '__main__':
+    BT, BT.right, BT.right.right, BT.left, BT.left.right, BT.left.left _ TreeNode(1), TreeNode(5), TreeNode(6), TreeNode(2), TreeNode(4), TreeNode(3)
+    LL _ Solution().flatten(BT)
     Solution().printtree(LL)

@@ -11,18 +11,18 @@
 
 # %%
 ___ insertionSort(nlist):
-   ___ index __ ra..(1,len(nlist)):
+   ___ index __ ra..(1,le.(nlist)):
 
-     currentvalue = nlist[index]
-     position = index
+     currentvalue _ nlist[index]
+     position _ index
 
-     while position>0 and nlist[position-1]>currentvalue:
-         nlist[position]=nlist[position-1]
-         position = position-1
+     while position>0 an. nlist[position-1]>currentvalue:
+         nlist[position]_nlist[position-1]
+         position _ position-1
 
-     nlist[position]=currentvalue
+     nlist[position]_currentvalue
 
-nlist = [14,46,43,27,57,41,45,21,70]
+nlist _ [14,46,43,27,57,41,45,21,70]
 insertionSort(nlist)
 print(nlist)
 

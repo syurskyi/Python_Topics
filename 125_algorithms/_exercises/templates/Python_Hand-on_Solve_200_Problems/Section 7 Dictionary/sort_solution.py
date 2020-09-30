@@ -6,13 +6,13 @@
 # Dictionary in ascending order by value :  [(0, 0), (1, 2), (2, 1), (3, 4), (4, 3)]                            
 # Dictionary in descending order by value :  [(4, 3), (3, 4), (2, 1), (1, 2), (0, 0)]
 
-import operator
+______ operator
 
-d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+d _ {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 print('Original dictionary : ',d)
-sorted_d = sorted(d.items(), key=operator.itemgetter(0))
+sorted_d _ sorted(d.i..(), key_operator.itemgetter(0))
 print('Dictionary in ascending order by value : ',sorted_d)
-sorted_d = sorted(d.items(), key=operator.itemgetter(0),reverse=True)
+sorted_d _ sorted(d.i..(), key_operator.itemgetter(0),reverse_True)
 print('Dictionary in descending order by value : ',sorted_d)
 
 

@@ -1,6 +1,6 @@
-___ foo(mylist):
-    if len(mylist) > 0 and len(mylist) % 2 != 0:
-        middle_index = int(len(mylist)/2)
-        r_ mylist[middle_index]
-    else:
-        r_ "Bad List"
+# ___ foo mylist
+#     __ le. ? > 0 an. le. ? % 2 !_ 0
+#         middle_index _ in. le. ? /2
+#         r_ ? ?
+#     ____
+#         r_ "Bad List"

@@ -12,9 +12,9 @@
 # g) Day of the month
 # h) Day of week
 
-import time
-import datetime
-print("Current date and time: " , datetime.datetime.now())
+______ time
+______ datetime
+print("Current date and time: " , datetime.datetime.now
 print("Current year: ", datetime.date.today().strftime("%Y"))
 print("Month of year: ", datetime.date.today().strftime("%B"))
 print("Week number of the year: ", datetime.date.today().strftime("%W"))

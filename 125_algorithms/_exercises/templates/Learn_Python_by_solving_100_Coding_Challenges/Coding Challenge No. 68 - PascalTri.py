@@ -9,18 +9,18 @@
 class Solution:
     # @return a list of lists of integers
     ___ generate(self, numRows):
-        if numRows == 0:
+        __ numRows __ 0:
             r_   # list
 
-        result = [[1]]
-        while len(result) < numRows:
-            temp = [1] # Every row starts with 1
+        result _ [[1]]
+        while le.(result) < numRows:
+            temp _ [1] # Every row starts with 1
 
-            ___ index __ ra..(len(result[-1])-1):
-                temp.append(result[-1][index] + result[-1][index+1])
+            ___ index __ ra..(le.(result[-1])-1):
+                temp.ap..(result[-1][index] + result[-1][index+1])
 
-            temp.append(1) # Every row ends with 1
-            result.append(temp)
+            temp.ap..(1) # Every row ends with 1
+            result.ap..(temp)
 
         r_ result
 

@@ -6,21 +6,21 @@
 class Solution:
     # @return an integer
     ___ divide(dividend, divisor):
-        if (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0):
-            if abs(dividend) < abs(divisor):
+        __ (dividend < 0 an. divisor > 0) or (dividend > 0 an. divisor < 0):
+            __ abs(dividend) < abs(divisor):
                 r_ 0
-        sum = 0; count = 0; res = 0
-        a = abs(dividend); b = abs(divisor)
-        while a >= b:
-            sum = b
-            count = 1
-            while sum + sum <= a:
-                sum += sum
-                count += count
-            a -= sum
-            res += count
-        if (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0):
-            res = 0 - res
+        su. _ 0; count _ 0; res _ 0
+        a _ abs(dividend); b _ abs(divisor)
+        while a >_ b:
+            su. _ b
+            count _ 1
+            while su. + su. <_ a:
+                su. +_ su.
+                count +_ count
+            a -_ su.
+            res +_ count
+        __ (dividend < 0 an. divisor > 0) or (dividend > 0 an. divisor < 0):
+            res _ 0 - res
         r_ res
 
 

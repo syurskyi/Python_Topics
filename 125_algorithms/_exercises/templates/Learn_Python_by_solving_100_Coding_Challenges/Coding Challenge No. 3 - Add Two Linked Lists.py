@@ -6,30 +6,30 @@
 
 class ListNode:
     ___ __init__(self, x):
-        self.val = x
-        self.next = None
+        self.val _ x
+        self.next _ None
 
 class Solution:
     ___ addTwoNumbers(l1, l2):
-        dummy = ListNode(0)
-        current, carry = dummy, 0
+        dummy _ ListNode(0)
+        current, carry _ dummy, 0
         while l1 or l2:
-            val = carry
-            if l1:
-                val += l1.val
-                l1 = l1.next
-            if l2:
-                val += l2.val
-                l2 = l2.next
-                carry, val = val / 10, val % 10
-                current.next = ListNode(val)
-                current = current.next
-            if carry == 1:
-                current.next = ListNode(1)
+            val _ carry
+            __ l1:
+                val +_ l1.val
+                l1 _ l1.next
+            __ l2:
+                val +_ l2.val
+                l2 _ l2.next
+                carry, val _ val / 10, val % 10
+                current.next _ ListNode(val)
+                current _ current.next
+            __ carry __ 1:
+                current.next _ ListNode(1)
             r_ dummy.next
 
-if  -n == '__main__':
-    a, a.next, a.next.next = ListNode(2), ListNode(4), ListNode(3)
-    b, b.next, b.next.next = ListNode(5), ListNode(6), ListNode(4)
-    result = Solution.addTwoNumbers(a, b)
-    print ("{0} -> {1} -> {2}".format(int(result.val), int(result.next.val), int(result.next.next.val)))
+__  -n __ '__main__':
+    a, a.next, a.next.next _ ListNode(2), ListNode(4), ListNode(3)
+    b, b.next, b.next.next _ ListNode(5), ListNode(6), ListNode(4)
+    result _ Solution.addTwoNumbers(a, b)
+    print ("{0} -> {1} -> {2}".format(in.(result.val), in.(result.next.val), in.(result.next.next.val)))

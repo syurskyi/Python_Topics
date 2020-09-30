@@ -10,14 +10,14 @@
 # Letters 6 
 # Digits 2
 
-s = input("Input a string")
-d=l=0
+s _ input("Input a string")
+d_l_0
 ___ c __ s:
-    if c.isdigit
-        d=d+1
+    __ c.isdigit
+        d_d+1
     elif c.isalpha
-        l=l+1
-    else:
+        l_l+1
+    ____
         pass
 print("Letters", l)
 print("Digits", d)
