@@ -6,7 +6,7 @@
 class ListNode:
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
 
 class Solution:
@@ -23,7 +23,7 @@ class Solution:
                 pointer.next _ l2
                 l2 _ l2.next
             pointer _ pointer.next
-        __ l1 __ None:
+        __ l1 __ N..:
             pointer.next _ l2
         ____
             pointer.next _ l1

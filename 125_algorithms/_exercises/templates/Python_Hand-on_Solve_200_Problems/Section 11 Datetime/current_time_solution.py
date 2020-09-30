@@ -2,7 +2,7 @@
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
 #  Write a Python program to get the current time in Python.
-______ datetime
-print(datetime.datetime.now().time
+______ d_t_
+print(d_t_.d_t_.n.. .time
 
 

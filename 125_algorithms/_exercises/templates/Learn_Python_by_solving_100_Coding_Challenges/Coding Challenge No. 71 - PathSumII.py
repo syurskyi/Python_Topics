@@ -17,8 +17,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 
 class Solution:
@@ -31,11 +31,11 @@ class Solution:
         r_ solution
 
     ___ pathSumRec(self, root, su., tempSum, tempList, solution):
-        __ root __ None:
+        __ root __ N..:
             r_
         tempList.ap..(root.val)
         tempSum +_ root.val
-        __ root.left __ None an. root.right __ None:
+        __ root.left __ N.. an. root.right __ N..:
             __ tempSum __ su.:
                 solution.ap..(li..(tempList))
             ____

@@ -11,7 +11,7 @@
 class ListNode(object):
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
     ___ to_list(self):
         r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]

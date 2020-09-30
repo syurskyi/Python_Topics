@@ -10,7 +10,7 @@
 class ListNode(object):
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
     ___ to_list(self):
         r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]
@@ -37,7 +37,7 @@ class Solution(object):
         temp _ head
         ___ i __ ra..(k):
             __ not temp.next:
-                r_ None
+                r_ N..
             temp _ temp.next
 
         # The last node when the k nodes reversed

@@ -13,8 +13,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 class Solution:
     ___ preorderTraversal(root):

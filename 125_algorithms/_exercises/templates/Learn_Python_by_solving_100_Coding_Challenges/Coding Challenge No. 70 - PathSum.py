@@ -15,8 +15,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 
 class Solution:
@@ -24,16 +24,16 @@ class Solution:
     # @param sum, an integer
     # @return a boolean
     ___ hasPathSum(self, root, su.):
-        __ root __ None:
+        __ root __ N..:
             # Empty tree will always result in False
             r_ F..
-        elif root.left __ None an. root.right __ None:
+        elif root.left __ N.. an. root.right __ N..:
             # Reach the leaf.
             r_ root.val __ su.
-        elif root.left __ None:
+        elif root.left __ N..:
             # Only has right child.
             r_ self.hasPathSum(root.right, su.-root.val)
-        elif root.right __ None:
+        elif root.right __ N..:
             # Only has left child.
             r_ self.hasPathSum(root.left, su.-root.val)
         ____

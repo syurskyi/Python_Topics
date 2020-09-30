@@ -8,27 +8,27 @@
 class ListNode:
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
 
 class Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ deleteDuplicates(self, head):
-        __ head __ None:
-            r_ None
+        __ head __ N..:
+            r_ N..
         dummy _ ListNode(10**10)
         dummy.next, head _ head, dummy # add a dummy node
         pprev, prev, curr, dupFlag _ head, head.next, head.next.next, F..
         while T..:
             __ dupFlag __ T..:
-                __ curr __ None:
-                    pprev.next _ None
+                __ curr __ N..:
+                    pprev.next _ N..
                     break
                 __ prev.val !_ curr.val:
                     pprev.next, prev, dupFlag _ curr, curr, F..
             ____
-                __ curr __ None:
+                __ curr __ N..:
                     break
                 __ prev.val __ curr.val:
                     dupFlag _ T..

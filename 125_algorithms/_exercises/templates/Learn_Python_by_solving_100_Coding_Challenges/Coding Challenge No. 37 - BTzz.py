@@ -14,8 +14,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 
 class Solution:
@@ -24,7 +24,7 @@ class Solution:
     ___ zigzagLevelOrder(self, root):
         solution _   # list
         thisLevel _  # list
-        __ root !_ None:
+        __ root !_ N..:
             thisLevel.ap..(root)
         leftToRight _ T..
         while le.(thisLevel)>0:
@@ -34,14 +34,14 @@ class Solution:
                 node _ thisLevel.p..()
                 levelSolution.ap..(node.val)
                 __ leftToRight:
-                    __ node.left !_ None:
+                    __ node.left !_ N..:
                         nextLevel.ap..(node.left)
-                    __ node.right !_ None:
+                    __ node.right !_ N..:
                         nextLevel.ap..(node.right)
                 ____
-                    __ node.right !_ None:
+                    __ node.right !_ N..:
                         nextLevel.ap..(node.right)
-                    __ node.left !_ None:
+                    __ node.left !_ N..:
                         nextLevel.ap..(node.left)
             thisLevel _ nextLevel
             solution.ap..(levelSolution)

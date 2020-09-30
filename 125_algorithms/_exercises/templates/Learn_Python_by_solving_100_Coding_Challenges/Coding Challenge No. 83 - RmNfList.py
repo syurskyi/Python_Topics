@@ -10,7 +10,7 @@
 class ListNode:
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
 
 class Solution:

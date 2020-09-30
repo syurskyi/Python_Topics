@@ -14,9 +14,9 @@ class Solution:
     # @return {ListNode}
 
     ___ reverseList(self, head):
-        result _ None
+        result _ N..
         node _ head
-        while node !_ None:
+        while node !_ N..:
             tmp _ node.next
             node.next _ result
             result _ node

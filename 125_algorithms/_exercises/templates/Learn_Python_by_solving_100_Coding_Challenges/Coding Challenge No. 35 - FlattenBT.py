@@ -15,23 +15,23 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 class Solution:
     # @param root, a tree node
     # @return nothing, do it in place
     ___ flatten(self, root):
-        __ root __ None:
+        __ root __ N..:
             r_
         stack _ [root.right, root.left]
         current _ root
         while le.(stack) !_ 0:
             nextNode _ stack.p..()
-            __ nextNode __ None:
+            __ nextNode __ N..:
                 continue
             ____
-                current.left _ None
+                current.left _ N..
                 current.right _ nextNode
                 current _ current.right
                 stack.ap..(current.right)
@@ -40,10 +40,10 @@ class Solution:
         r_ root
 
         ___ printtree(self, tree_node):
-            __ tree_node.left is not None:
+            __ tree_node.left is not N..:
                 self.printtree(tree_node.left)
             print(tree_node.val)
-        __ tree_node.right is not None:
+        __ tree_node.right is not N..:
             self.printtree(tree_node.right)
 
 

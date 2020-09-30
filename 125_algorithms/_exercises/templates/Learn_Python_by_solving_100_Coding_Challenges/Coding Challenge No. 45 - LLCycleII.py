@@ -17,8 +17,8 @@ class Solution:
     """
 
     ___ detectCycle(self, head):
-        __ head __ None or head.next __ None:
-            r_ None
+        __ head __ N.. or head.next __ N..:
+            r_ N..
         slow _ fast _ head
         while fast an. fast.next:
             slow _ slow.next
@@ -31,7 +31,7 @@ class Solution:
                 slow _ slow.next
                 fast _ fast.next
             r_ slow
-        r_ None
+        r_ N..
 
 
 __  -n __ '__main__':

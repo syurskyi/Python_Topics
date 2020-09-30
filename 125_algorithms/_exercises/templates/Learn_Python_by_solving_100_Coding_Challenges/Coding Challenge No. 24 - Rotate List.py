@@ -8,7 +8,7 @@
 class ListNode(object):
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
     ___ to_list(self):
         r_ [self.val] + self.next.to_list() __ self.next ____ [self.val]
@@ -18,21 +18,21 @@ class Solution:
     # @param k, an integer
     # @return a ListNode
     ___ rotateRight(self, head, k):
-        __ head __ None:
-            r_ None
+        __ head __ N..:
+            r_ N..
         temp _ head
         ___ i __ ra..(0,k):
-            __ temp.next __ None:
+            __ temp.next __ N..:
                 temp _ head
             ____
                 temp _ temp.next
         newLast _ head
-        while temp.next !_ None:
+        while temp.next !_ N..:
             temp _ temp.next
             newLast _ newLast.next
         temp.next _ head
         newHead _ newLast.next
-        newLast.next _ None
+        newLast.next _ N..
         r_ newHead
 
 

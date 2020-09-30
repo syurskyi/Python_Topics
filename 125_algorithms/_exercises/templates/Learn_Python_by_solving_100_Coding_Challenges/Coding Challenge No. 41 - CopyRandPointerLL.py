@@ -8,8 +8,8 @@
 class RandomListNode:
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
-        self.random _ None
+        self.next _ N..
+        self.random _ N..
 
 
 class Solution:

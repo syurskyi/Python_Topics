@@ -11,7 +11,7 @@ ___ num_search(first,last):
             maxi _ mid -1
         mid _ (mini + maxi) // 2
     __ mini > maxi:
-        r_ None
+        r_ N..
     ____
         r_ mid
 

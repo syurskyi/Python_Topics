@@ -14,7 +14,7 @@ class Solution:
     ___ countAndSay(n):
         result _ "1"
         __ n __ 0:
-            r_ None
+            r_ N..
         ____
             print ( "1" )
             ___ i __ ra..(n-1):

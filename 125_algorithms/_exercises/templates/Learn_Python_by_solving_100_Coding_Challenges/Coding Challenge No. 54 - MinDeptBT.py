@@ -7,19 +7,19 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 
 class Solution:
     # @param root, a tree node
     # @return an integer
     ___ minDepth(self, root):
-        __ root __ None:
+        __ root __ N..:
             r_ 0
-        __ root.left __ None:
+        __ root.left __ N..:
             r_ self.minDepth(root.right) + 1
-        __ root.right __ None:
+        __ root.right __ N..:
             r_ self.minDepth(root.left) + 1
         r_ min(self.minDepth(root.left),self.minDepth(root.right))+1
 

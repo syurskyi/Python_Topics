@@ -13,16 +13,16 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 class Solution:
     ___ inorderTraversal(root):
         stack _   # list
         node _ root
         solution _   # list
-        while node!_ None or le.(stack)>0:
-            __ node !_ None:
+        while node!_ N.. or le.(stack)>0:
+            __ node !_ N..:
                 stack.ap..(node)
                 node _ node.left
             ____

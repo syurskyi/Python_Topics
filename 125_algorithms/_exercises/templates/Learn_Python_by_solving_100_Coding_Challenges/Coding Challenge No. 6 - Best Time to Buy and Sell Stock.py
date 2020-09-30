@@ -9,8 +9,8 @@ class Solution:
         size _ le.(prices)
         __ size < 2:
             r_ 0
-        buys _ [None] * size
-        sells _ [None] * size
+        buys _ [N..] * size
+        sells _ [N..] * size
         sells[0], sells[1] _ 0, ma.(0, prices[1] - prices[0])
         buys[0], buys[1] _ -prices[0], ma.(-prices[0], -prices[1])
         ___ x __ ra..(2, size):

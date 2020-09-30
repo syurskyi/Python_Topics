@@ -9,12 +9,12 @@
 class Solution:
     ___ threeSumClosest(self, numbers, target):
         numbers.sort()
-        ans _ None
+        ans _ N..
         ___ i __ ra..(le.(numbers)):
             l, r _ i + 1, le.(numbers) - 1
             while (l < r):
                 su. _ numbers[l] + numbers[r] + numbers[i]
-                __ ans is None or abs(su.- target) < abs(ans - target):
+                __ ans is N.. or abs(su.- target) < abs(ans - target):
                     ans _ su.
                 __ su. <_ target:
                     l _ l + 1

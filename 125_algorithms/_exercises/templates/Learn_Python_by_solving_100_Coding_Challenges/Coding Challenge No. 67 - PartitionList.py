@@ -21,7 +21,7 @@ class Solution:
         smaller _ ListNode(-1)
         others _ ListNode(-1)
         smallerLast, othersLast _ smaller, others
-        while head !_ None:
+        while head !_ N..:
             __ head.val < x:
                 smallerLast.next _ head
                 smallerLast _ smallerLast.next
@@ -30,7 +30,7 @@ class Solution:
                 othersLast _ othersLast.next
             head _ head.next
         smallerLast.next _ others.next
-        othersLast.next _ None
+        othersLast.next _ N..
         r_ smaller.next
 
     ___ printll(self, node):

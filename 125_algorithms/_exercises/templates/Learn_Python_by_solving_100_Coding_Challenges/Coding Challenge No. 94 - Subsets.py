@@ -10,7 +10,7 @@ class Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
     ___ subsets(self, nums):
-        __ nums is None:
+        __ nums is N..:
             r_   # list
         result _   # list
         nums.sort()

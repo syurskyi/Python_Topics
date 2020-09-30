@@ -9,14 +9,14 @@
 class ListNode:
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
 
 class Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ deleteDuplicates(self, head):
-        __ head __ None or head.next __ None:
+        __ head __ N.. or head.next __ N..:
             r_ head
         p _ head
         while p.next:

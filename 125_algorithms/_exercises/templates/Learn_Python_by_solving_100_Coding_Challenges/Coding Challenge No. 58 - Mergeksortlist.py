@@ -6,7 +6,7 @@
 class ListNode:
     ___ __init__(self, x):
         self.val _ x
-        self.next _ None
+        self.next _ N..
 
 
 class Solution:
@@ -14,7 +14,7 @@ class Solution:
     # @return a ListNode
     ___ mergeKLists(self, lists):
         __ le.(lists)__0:
-            r_ None
+            r_ N..
         while le.(lists)>1:
             nextLists _   # list
             ___ i __ ra..(0,le.(lists)-1,2):
@@ -27,7 +27,7 @@ class Solution:
     ___ mergeLists(self, list1, list2):
         dummy _ ListNode(0)
         li.. _ dummy
-        while list1 !_ None an. list2 !_ None:
+        while list1 !_ N.. an. list2 !_ N..:
             __ list1.val < list2.val:
                 li...next _ list1
                 list1 _ list1.next
@@ -35,7 +35,7 @@ class Solution:
                 li...next _ list2
                 list2 _ list2.next
             li.. _ li...next
-        __ list1 __ None:
+        __ list1 __ N..:
             li...next _ list2
         ____
             li...next _ list1

@@ -13,14 +13,14 @@
 # h) Day of week
 
 ______ time
-______ datetime
-print("Current date and time: " , datetime.datetime.now
-print("Current year: ", datetime.date.today().strftime("%Y"))
-print("Month of year: ", datetime.date.today().strftime("%B"))
-print("Week number of the year: ", datetime.date.today().strftime("%W"))
-print("Weekday of the week: ", datetime.date.today().strftime("%w"))
-print("Day of year: ", datetime.date.today().strftime("%j"))
-print("Day of the month : ", datetime.date.today().strftime("%d"))
-print("Day of week: ", datetime.date.today().strftime("%A"))
+______ d_t_
+print("Current date and time: " , d_t_.d_t_.now
+print("Current year: ", d_t_.date.today().s_t_("%Y"))
+print("Month of year: ", d_t_.date.today().s_t_("%B"))
+print("Week number of the year: ", d_t_.date.today().s_t_("%W"))
+print("Weekday of the week: ", d_t_.date.today().s_t_("%w"))
+print("Day of year: ", d_t_.date.today().s_t_("%j"))
+print("Day of the month : ", d_t_.date.today().s_t_("%d"))
+print("Day of week: ", d_t_.date.today().s_t_("%A"))
 
 

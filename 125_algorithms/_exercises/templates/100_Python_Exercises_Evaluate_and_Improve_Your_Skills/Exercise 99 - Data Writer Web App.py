@@ -14,7 +14,7 @@ ___ index
     r_ render_template_string(html)
 @app.route("/sent", methods_['GET', 'POST'])
 ___ sent
-    line _ None
+    line _ N..
     __ request.method __ 'POST':
         line _ request.form['line']
         with open("user_input_flask.txt", "a+") as file:

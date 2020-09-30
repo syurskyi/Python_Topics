@@ -8,8 +8,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 
 class Solution:
@@ -20,14 +20,14 @@ class Solution:
             self.FindTwoNodes(root.left)
             __ self.prev an. self.prev.val > root.val:
                 self.n2 _ root
-                __ self.n1 __ None:
+                __ self.n1 __ N..:
                     self.n1 _ self.prev
                 self.prev _ root
                 self.FindTwoNodes(root.right)
 
     ___ recoverTree(self, root):
-        self.n1 _ self.n2 _ None
-        self.prev _ None
+        self.n1 _ self.n2 _ N..
+        self.prev _ N..
         self.FindTwoNodes(root)
         self.n1.val, self.n2.val _ self.n2.val, self.n1.val
         r_ root

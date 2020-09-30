@@ -13,8 +13,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 class Solution:
     # @param root, a tree node
@@ -25,7 +25,7 @@ class Solution:
         r_ self.maxValue
 
     ___ maxPathSumRec(self, root):
-        __ root __ None:
+        __ root __ N..:
             r_ 0
         leftSum _ self.maxPathSumRec(root.left)
         rightSum _ self.maxPathSumRec(root.right)

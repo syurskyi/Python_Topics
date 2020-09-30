@@ -2,9 +2,9 @@
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
 #  Write a Python program to convert Year/Month/Day to Day of Year in Python
-______ datetime
-today _ datetime.datetime.now()
-day_of_year _ (today - datetime.datetime(today.year, 1, 1)).days + 1
+______ d_t_
+today _ d_t_.d_t_.n..
+day_of_year _ (today - d_t_.d_t_(today.year, 1, 1)).days + 1
 print(day_of_year)
 
 

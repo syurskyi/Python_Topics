@@ -13,12 +13,12 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 class Solution:
     ___ postorderTraversal(root):
-        __ root __ None:
+        __ root __ N..:
             r_   # list
         stackPrepare _ [root]
         stackReady _   # list
@@ -26,8 +26,8 @@ class Solution:
         while le.(stackPrepare) !_ 0 :
             current _ stackPrepare.p..()
             stackReady.ap..(current)
-            __ current.left !_ None: stackPrepare.ap..(current.left)
-            __ current.right !_ None: stackPrepare.ap..(current.right)
+            __ current.left !_ N..: stackPrepare.ap..(current.left)
+            __ current.right !_ N..: stackPrepare.ap..(current.right)
         while le.(stackReady) !_ 0:
             result.ap..(stackReady.p..().val)
         r_ result

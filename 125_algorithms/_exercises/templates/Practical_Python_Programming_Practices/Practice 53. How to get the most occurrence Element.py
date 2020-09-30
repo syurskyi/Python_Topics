@@ -5,7 +5,7 @@ print(x)
 
 myset _ set(x)
 
-highest _ None
+highest _ N..
 frequent _ 0
 
 ___ item __ myset:

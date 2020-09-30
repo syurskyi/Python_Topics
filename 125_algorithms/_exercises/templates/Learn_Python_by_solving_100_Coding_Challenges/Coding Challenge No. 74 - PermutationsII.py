@@ -17,7 +17,7 @@ class Solution:
             r_ [num]
         num.sort()
         res _   # list
-        previousNum _ None
+        previousNum _ N..
         ___ i __ ra..(length):
             __ num[i] __ previousNum:
                 continue

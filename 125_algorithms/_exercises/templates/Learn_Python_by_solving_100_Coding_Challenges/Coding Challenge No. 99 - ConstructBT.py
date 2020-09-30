@@ -7,8 +7,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 
 class Solution:
@@ -17,13 +17,13 @@ class Solution:
     # @return a tree node
     ___ buildTree(self, inorder, postorder):
         __ not inorder:
-            r_ None # inorder is empty
+            r_ N.. # inorder is empty
         self.inorder, self.postorder _ inorder, postorder
         r_ self.dfs(0, 0, le.(inorder))
 
     ___ dfs(self, inLeft, postLeft, Len):
         __ Len <_ 0:
-            r_ None
+            r_ N..
         root _ TreeNode(self.postorder[postLeft + Len - 1])
         rootPos _ self.inorder.index(self.postorder[postLeft + Len - 1])
         root.left _ self.dfs(inLeft, postLeft, rootPos - inLeft)

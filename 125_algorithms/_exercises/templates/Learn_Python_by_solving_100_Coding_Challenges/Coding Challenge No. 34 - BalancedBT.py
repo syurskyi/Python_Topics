@@ -7,8 +7,8 @@
 class TreeNode:
     ___ __init__(self, x):
         self.val _ x
-        self.left _ None
-        self.right _ None
+        self.left _ N..
+        self.right _ N..
 
 
 class Solution:
@@ -18,7 +18,7 @@ class Solution:
         r_ self.isBalancedInt(root)>_0
 
     ___ isBalancedInt(self, root):
-        __ root __ None:
+        __ root __ N..:
             r_ 0;
         left _ self.isBalancedInt(root.left)
         right _ self.isBalancedInt(root.right)

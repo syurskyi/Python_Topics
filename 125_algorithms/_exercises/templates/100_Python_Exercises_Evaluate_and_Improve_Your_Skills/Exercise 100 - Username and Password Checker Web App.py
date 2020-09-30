@@ -21,7 +21,7 @@ ___ index
 
 @app.route("/sent", methods_['GET', 'POST'])
 ___ sent
-    line _ None
+    line _ N..
     __ request.method __ 'POST':
         while T..:
             usr _ request.form['username']
