@@ -14,10 +14,10 @@ class Solution:
         answer =   # list
         nums.sort()
         length = len(nums)
-        ___ k __ range(length-3):
+        ___ k __ ra..(length-3):
             if nums[k]+nums[k+1]+nums[k+2]+nums[k+3] > target:
                 break
-            ___ i __ range(k+1,length-2):
+            ___ i __ ra..(k+1,length-2):
                 low = i+1
                 high = length - 1
                 while(low < high):

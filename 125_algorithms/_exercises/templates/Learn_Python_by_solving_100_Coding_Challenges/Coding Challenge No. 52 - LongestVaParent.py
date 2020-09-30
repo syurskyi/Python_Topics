@@ -11,7 +11,7 @@ class Solution:
 
     ___ longestValidParentheses(self, s):
         maxlen, stack, last = 0,   # list, -1
-        ___ i __ range(len(s)):
+        ___ i __ ra..(len(s)):
             if s[i]=='(':
                 stack.append(i) # push the INDEX into the stack!!!!
             else:

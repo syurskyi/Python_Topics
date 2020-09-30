@@ -7,14 +7,14 @@ class Solution:
     # RETURN NOTHING, MODIFY matrix IN PLACE.
     ___ setZeroes(self, matrix):
         m , n = len(matrix), len(matrix[0])
-        temp = [[matrix[i][j] ___ j __ range(n)] ___ i __ range(m)]
-        ___ i __ range(m):
-            ___ j __ range(n):
+        temp = [[matrix[i][j] ___ j __ ra..(n)] ___ i __ ra..(m)]
+        ___ i __ ra..(m):
+            ___ j __ ra..(n):
                 if not temp[i][j]:
                     self.setZero(i,j,n,m,matrix)
 
     ___ setZero(self,row,col,n,m,matrix):
-        ___ i __ range(m):
+        ___ i __ ra..(m):
             matrix[i][col]=0
-        ___ j __ range(n):
+        ___ j __ ra..(n):
             matrix[row][j]=0

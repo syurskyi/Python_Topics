@@ -16,7 +16,7 @@ ___ num_search(first,last):
         r_ mid
 
 x =   # list
-___ i __ range(15):
+___ i __ ra..(15):
     x.append(randint(1,20))
 x.sort()
 print(x)

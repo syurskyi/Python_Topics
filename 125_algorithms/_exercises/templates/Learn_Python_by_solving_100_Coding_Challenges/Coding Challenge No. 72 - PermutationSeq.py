@@ -13,9 +13,9 @@ class Solution:
         res = ''
         k -= 1
         fac = 1
-        ___ i __ range(1, n): fac *= i
+        ___ i __ ra..(1, n): fac *= i
         num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        ___ i __ reversed(range(n)):
+        ___ i __ reversed(ra..(n)):
             curr = num[int(k/fac)]
             res += str(curr)
             num.remove(curr)

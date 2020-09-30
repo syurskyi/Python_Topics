@@ -7,7 +7,7 @@ class company:
         r_ self.firstname + ' ' + self.surname
 
 staff =   # list
-___ i __ range(3):
+___ i __ ra..(3):
     name = input("Insert firstname and surname: ")
     name = name.split()
     staff.append(company(name[0], name[1]))

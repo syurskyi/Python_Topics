@@ -13,7 +13,7 @@ class Solution:
         sells = [None] * size
         sells[0], sells[1] = 0, ma.(0, prices[1] - prices[0])
         buys[0], buys[1] = -prices[0], ma.(-prices[0], -prices[1])
-        ___ x __ range(2, size):
+        ___ x __ ra..(2, size):
             sells[x] = ma.(sells[x - 1], buys[x - 1] + prices[x])
             buys[x] = ma.(buys[x - 1], sells[x - 2] - prices[x])
         r_ sells[-1]

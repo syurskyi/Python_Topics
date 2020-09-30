@@ -20,7 +20,7 @@ class Solution:
     ___ dfs(self, nums, pos, list_temp, ret):
         # append new object with []
         ret.append(  # list + list_temp)
-        ___ i __ range(pos, len(nums)):
+        ___ i __ ra..(pos, len(nums)):
             list_temp.append(nums[i])
             self.dfs(nums, i + 1, list_temp, ret)
             list_temp.pop()

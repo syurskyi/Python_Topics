@@ -1,6 +1,6 @@
 from random import random
 
-x = [int(random()*100)___ i __ range(20)]
+x = [int(random()*100)___ i __ ra..(20)]
 print(x)
 
 myset = set(x)

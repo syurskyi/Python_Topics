@@ -15,7 +15,7 @@ class Solution:
         startToEnd = {}
         endToStart = {}
         longest = 0
-        ___ i __ range(0, len(num)):
+        ___ i __ ra..(0, len(num)):
             start = num[i]
             end = num[i]
             if num[i] __ startToEnd:

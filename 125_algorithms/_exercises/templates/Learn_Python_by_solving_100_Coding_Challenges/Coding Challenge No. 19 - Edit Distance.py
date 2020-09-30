@@ -12,13 +12,13 @@ class Solution:
     # @return an integer
     ___ minDistance(word1, word2):
         m=len(word1)+1; n=len(word2)+1
-        dp = [[0 ___ i __ range(n)] ___ j __ range(m)]
-        ___ i __ range(n):
+        dp = [[0 ___ i __ ra..(n)] ___ j __ ra..(m)]
+        ___ i __ ra..(n):
             dp[0][i]=i
-        ___ i __ range(m):
+        ___ i __ ra..(m):
             dp[i][0]=i
-        ___ i __ range(1,m):
-            ___ j __ range(1,n):
+        ___ i __ ra..(1,m):
+            ___ j __ ra..(1,n):
                 dp[i][j]=min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+(0 if word1[i-1]==word2[j-1] else 1))
         r_ dp[m-1][n-1]
 

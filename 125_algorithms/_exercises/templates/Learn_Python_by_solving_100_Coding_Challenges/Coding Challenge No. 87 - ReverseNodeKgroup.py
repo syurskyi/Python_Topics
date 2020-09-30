@@ -35,7 +35,7 @@ class Solution(object):
     ___ reverseNextK(self, head, k):
         # Check if there are k nodes left
         temp = head
-        ___ i __ range(k):
+        ___ i __ ra..(k):
             if not temp.next:
                 r_ None
             temp = temp.next
@@ -45,7 +45,7 @@ class Solution(object):
         prev = head
         curr = head.next
         # Reverse k nodes
-        ___ i __ range(k):
+        ___ i __ ra..(k):
             nextNode = curr.next
             curr.next = prev
             prev = curr

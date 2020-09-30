@@ -17,7 +17,7 @@ class Solution:
             r_ None
         while len(lists)>1:
             nextLists =   # list
-            ___ i __ range(0,len(lists)-1,2):
+            ___ i __ ra..(0,len(lists)-1,2):
                 nextLists.append(self.mergeLists(lists[i],lists[i+1]))
             if len(lists)%2==1:
                 nextLists.append(lists[len(lists)-1])

@@ -16,13 +16,13 @@
 # *
 
 n=5;
-___ i __ range(n):
-    ___ j __ range(i):
+___ i __ ra..(n):
+    ___ j __ ra..(i):
         print ('* ', end="")
     print('')
 
-___ i __ range(n,0,-1):
-    ___ j __ range(i):
+___ i __ ra..(n,0,-1):
+    ___ j __ ra..(i):
         print('* ', end="")
     print('')
 	

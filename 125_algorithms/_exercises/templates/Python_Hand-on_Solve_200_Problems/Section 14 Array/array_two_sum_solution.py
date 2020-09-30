@@ -20,7 +20,7 @@ target = 26
 result =   # list
 
 ___ i, num __ enumerate(input_array):
-    ___ j __ range(i+1, len(input_array)):
+    ___ j __ ra..(i+1, len(input_array)):
         print(i,j)
 
 

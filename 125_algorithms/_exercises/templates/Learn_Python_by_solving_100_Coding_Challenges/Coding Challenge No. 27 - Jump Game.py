@@ -13,7 +13,7 @@ class Solution:
     # @return a boolean
     ___ canJump(self, A):
         step = A[0]
-        ___ i __ range(1, len(A)):
+        ___ i __ ra..(1, len(A)):
             if step > 0:
                 step -= 1
                 step = ma.(step, A[i])

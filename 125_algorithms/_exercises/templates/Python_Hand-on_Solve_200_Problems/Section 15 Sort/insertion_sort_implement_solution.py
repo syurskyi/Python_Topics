@@ -11,7 +11,7 @@
 
 # %%
 ___ insertionSort(nlist):
-   ___ index __ range(1,len(nlist)):
+   ___ index __ ra..(1,len(nlist)):
 
      currentvalue = nlist[index]
      position = index

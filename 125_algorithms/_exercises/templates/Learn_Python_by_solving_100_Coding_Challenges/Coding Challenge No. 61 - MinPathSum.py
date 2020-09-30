@@ -9,8 +9,8 @@ class Solution:
     ___ minPathSum(self, grid):
         if len(grid)==0 or len(grid[0])==0:
             r_ 0
-        ___ row __ range(0, len(grid)):
-            ___ col __ range(0, len(grid[0])):
+        ___ row __ ra..(0, len(grid)):
+            ___ col __ ra..(0, len(grid[0])):
                 if row>0 and col>0:
                     grid[row][col] += min(grid[row-1][col],grid[row][col-1])
                 elif row>0:

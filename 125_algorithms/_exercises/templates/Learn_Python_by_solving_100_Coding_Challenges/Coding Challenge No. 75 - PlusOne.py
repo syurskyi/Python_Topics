@@ -9,7 +9,7 @@ class Solution:
     # @return a list of integer digits
     ___ plusOne(self, digits):
         flag = 1
-        ___ i __ range(len(digits)-1, -1, -1):
+        ___ i __ ra..(len(digits)-1, -1, -1):
             if digits[i] + flag == 10:
                 digits[i] = 0
                 flag = 1

@@ -30,7 +30,7 @@ class Solution:
         if self._isPalindrome(s):
             result.append([s])
 
-        ___ i __ range(1, len(s)):
+        ___ i __ ra..(1, len(s)):
             head = s[:i]
             if not self._isPalindrome(head):
                 continue

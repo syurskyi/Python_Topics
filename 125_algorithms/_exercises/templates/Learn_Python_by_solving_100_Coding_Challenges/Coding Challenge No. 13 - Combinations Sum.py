@@ -21,7 +21,7 @@ class Solution:
         if target==0:
             res.append(intermedia)
             r_
-        ___ i __ range(start,len(candidates)):
+        ___ i __ ra..(start,len(candidates)):
             if target<candidates[i]:
                 r_
             self.DFS(candidates,target-candidates[i],i,res,intermedia+[candidates[i]])

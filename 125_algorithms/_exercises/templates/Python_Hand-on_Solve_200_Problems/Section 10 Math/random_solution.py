@@ -5,7 +5,7 @@
 
 import random
 
-choices = list(range(100))
+choices = list(ra..(100))
 random.shuffle(choices)
 print(choices.pop())
 while choices:

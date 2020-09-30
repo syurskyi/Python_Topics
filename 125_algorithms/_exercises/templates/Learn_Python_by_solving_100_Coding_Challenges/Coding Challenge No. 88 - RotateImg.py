@@ -9,10 +9,10 @@ class Solution:
     # @return a list of lists of integers
     ___ rotate(self, matrix):
         n = len(matrix)
-        ___ i __ range(n):
-            ___ j __ range(i+1, n):
+        ___ i __ ra..(n):
+            ___ j __ ra..(i+1, n):
                 matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
-        ___ i __ range(n):
+        ___ i __ ra..(n):
             matrix[i].reverse()
         r_ matrix
 

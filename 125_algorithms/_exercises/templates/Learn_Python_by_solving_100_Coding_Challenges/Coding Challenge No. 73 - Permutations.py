@@ -15,7 +15,7 @@ class Solution:
         if len(num) == 1:
             r_ [num]
         res =   # list
-        ___ i __ range(len(num)):
+        ___ i __ ra..(len(num)):
             ___ j __ self.permute(num[:i] + num[i+1:]):
                 res.append([num[i]] + j)
         r_ res

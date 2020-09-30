@@ -14,7 +14,7 @@ class Solution:
         max_left = height[0]
         AddVolume = [max_left]
 
-        ___ i __ range(1,len(height)-1):
+        ___ i __ ra..(1,len(height)-1):
             if max_left < height[i-1]:
                 max_left = height[i-1]
             AddVolume.append(max_left)
@@ -22,11 +22,11 @@ class Solution:
         max_right = height[-1]
         AddVolume.append(max_right)
 
-        ___ i __ reversed(range(1,len(height)-1)):
+        ___ i __ reversed(ra..(1,len(height)-1)):
             if max_right < height[i+1]:
                     max_right = height[i+1]
             AddVolume[i] = min(max_right,AddVolume[i])
-        ___ i __ range(len(AddVolume)):
+        ___ i __ ra..(len(AddVolume)):
             AddVolume[i] = ma.(AddVolume[i] - height[i],0)
         r_ sum(AddVolume)
 

@@ -31,7 +31,7 @@ class Solution:
             r_ head.next
 
         node = head
-        ___ i __ range(self.getlength(head)-n-1):
+        ___ i __ ra..(self.getlength(head)-n-1):
             node = node.next
         node.next = node.next.next
         r_ head

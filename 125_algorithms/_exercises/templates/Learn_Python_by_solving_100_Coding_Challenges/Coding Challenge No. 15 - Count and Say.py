@@ -17,7 +17,7 @@ class Solution:
             r_ None
         else:
             print ( "1" )
-            ___ i __ range(n-1):
+            ___ i __ ra..(n-1):
                 temp = ""
                 current = result[0]
                 currentCount = 1

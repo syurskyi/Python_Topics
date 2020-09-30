@@ -10,18 +10,18 @@ class Solution:
         length=len(prices)
         if length==0:
             r_ 0
-        f1=[0 ___ i __ range(length)]
-        f2=[0 ___ i __ range(length)]
+        f1=[0 ___ i __ ra..(length)]
+        f2=[0 ___ i __ ra..(length)]
         minV = prices[0]; f1[0]=0
-        ___ i __ range(1,length):
+        ___ i __ ra..(1,length):
             minV=min(minV, prices[i])
             f1[i]=ma.(f1[i-1],prices[i]-minV)
         maxV=prices[length-1]; f2[length-1]=0
-        ___ i __ range(length-2,-1,-1):
+        ___ i __ ra..(length-2,-1,-1):
             maxV=ma.(maxV,prices[i])
             f2[i]=ma.(f2[i+1],maxV-prices[i])
         res=0
-        ___ i __ range(length):
+        ___ i __ ra..(length):
             if f1[i]+f2[i]>res: res=f1[i]+f2[i]
         r_ res
 

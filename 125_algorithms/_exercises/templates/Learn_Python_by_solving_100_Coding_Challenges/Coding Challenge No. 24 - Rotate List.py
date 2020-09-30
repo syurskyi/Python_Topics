@@ -21,7 +21,7 @@ class Solution:
         if head == None:
             r_ None
         temp = head
-        ___ i __ range(0,k):
+        ___ i __ ra..(0,k):
             if temp.next == None:
                 temp = head
             else:

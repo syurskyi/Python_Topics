@@ -15,7 +15,7 @@ class Solution:
         result = [1]
         nextDivisor = 1
         nextMultiplier = rowIndex
-        ___ _ __ range(rowIndex // 2):
+        ___ _ __ ra..(rowIndex // 2):
             nextVal = int((result[-1] * nextMultiplier) / nextDivisor)
             result.append(nextVal)
             nextDivisor += 1

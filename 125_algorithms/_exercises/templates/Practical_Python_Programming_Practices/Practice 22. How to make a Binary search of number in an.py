@@ -1,7 +1,7 @@
 from random import random
 N = 20
 array =   # list
-___ x __ range(N):
+___ x __ ra..(N):
     array.append(int(random()*100))
 
 array.sort()

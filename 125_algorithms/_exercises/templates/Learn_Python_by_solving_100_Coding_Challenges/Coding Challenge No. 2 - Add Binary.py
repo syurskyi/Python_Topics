@@ -8,7 +8,7 @@
 class Solution:
     ___ addBinary( a, b):
         length = ma.(len(a),len(b)) + 1
-        sum = ['0' ___ i __ range(length)]
+        sum = ['0' ___ i __ ra..(length)]
         if len(a) <= len(b):
             a = '0' * ( len(b) - len(a) ) + a
         if len(a) > len(b):

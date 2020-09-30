@@ -15,8 +15,8 @@ class Solution:
         if len( s ) == 0 or len(dict) == 0:
             r_ False
         dp = [ 0 ]
-        ___ i __ range(1, len( s ) + 1):
-            ___ j __ range( len( dp ) - 1, -1, -1):
+        ___ i __ ra..(1, len( s ) + 1):
+            ___ j __ ra..( len( dp ) - 1, -1, -1):
                 substr = s[dp[j] : i]
                 if substr __ dict:
                     dp.append(i)

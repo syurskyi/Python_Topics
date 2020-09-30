@@ -12,13 +12,13 @@ class Solution:
     # @a very subtle solution
     ___ firstMissingPositive(A):
         n=len(A)
-        ___ i __ range(n):
+        ___ i __ ra..(n):
             if A[i]<=0: A[i]=n+2
-        ___ i __ range(n):
+        ___ i __ ra..(n):
             if abs(A[i])<=n:
                 curr=abs(A[i])-1
                 A[curr]=-abs(A[curr])
-        ___ i __ range(n):
+        ___ i __ ra..(n):
             if A[i]>0: r_ i+1
         r_ n+1
 

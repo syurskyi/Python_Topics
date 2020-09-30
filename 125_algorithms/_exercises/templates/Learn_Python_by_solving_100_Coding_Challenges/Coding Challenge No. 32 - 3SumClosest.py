@@ -10,7 +10,7 @@ class Solution:
     ___ threeSumClosest(self, numbers, target):
         numbers.sort()
         ans = None
-        ___ i __ range(len(numbers)):
+        ___ i __ ra..(len(numbers)):
             l, r = i + 1, len(numbers) - 1
             while (l < r):
                 sum = numbers[l] + numbers[r] + numbers[i]

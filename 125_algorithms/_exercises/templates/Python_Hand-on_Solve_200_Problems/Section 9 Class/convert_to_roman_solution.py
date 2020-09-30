@@ -20,7 +20,7 @@ class py_solution:
         roman_num = ''
         i = 0
         while  num > 0:
-            ___ _ __ range(num // val[i]):
+            ___ _ __ ra..(num // val[i]):
                 roman_num += syb[i]
                 num -= val[i]
             i += 1

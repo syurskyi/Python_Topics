@@ -12,11 +12,11 @@ class Solution:
     # @dp
     # dp[i][j] means how many first j of T is sub of first i of S.
     ___ numDistinct(S, T):
-        dp = [[0 ___ i __ range(len(T)+1)] ___ j __ range(len(S)+1)]
-        ___ j __ range(len(S)+1):
+        dp = [[0 ___ i __ ra..(len(T)+1)] ___ j __ ra..(len(S)+1)]
+        ___ j __ ra..(len(S)+1):
             dp[j][0] = 1
-        ___ i __ range(1, len(S)+1):
-            ___ j __ range(1, min(i+1, len(T)+1)):
+        ___ i __ ra..(1, len(S)+1):
+            ___ j __ ra..(1, min(i+1, len(T)+1)):
                 if S[i-1] == T[j-1]:
                     dp[i][j] = dp[i-1][j] + dp[i-1][j-1]
                 else:

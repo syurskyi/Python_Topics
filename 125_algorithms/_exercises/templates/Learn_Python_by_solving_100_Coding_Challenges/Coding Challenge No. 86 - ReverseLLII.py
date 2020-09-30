@@ -28,11 +28,11 @@ class Solution(object):
         dummy = ListNode(-1)
         dummy.next = head
         node = dummy
-        ___ __ __ range(m - 1):
+        ___ __ __ ra..(m - 1):
             node = node.next
         prev = node.next
         curr = prev.next
-        ___ __ __ range(n - m):
+        ___ __ __ ra..(n - m):
             next = curr.next
             curr.next = prev
             prev = curr

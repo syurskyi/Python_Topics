@@ -9,9 +9,9 @@
 
 # %%
 ___ selectionSort(nlist):
-   ___ fillslot __ range(len(nlist)-1,0,-1):
+   ___ fillslot __ ra..(len(nlist)-1,0,-1):
        maxpos=0
-       ___ location __ range(1,fillslot+1):
+       ___ location __ ra..(1,fillslot+1):
            if nlist[location]>nlist[maxpos]:
                maxpos = location
 

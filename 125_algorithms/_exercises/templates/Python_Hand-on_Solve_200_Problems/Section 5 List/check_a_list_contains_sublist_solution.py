@@ -20,7 +20,7 @@ ___ is_Sublist(l, s):
 		sub_set = False
 
 	else:
-		___ i __ range(len(l)):
+		___ i __ ra..(len(l)):
 			if l[i] == s[0]:
 				n = 1
 				while (n < len(s)) and (l[i+n] == s[n]):

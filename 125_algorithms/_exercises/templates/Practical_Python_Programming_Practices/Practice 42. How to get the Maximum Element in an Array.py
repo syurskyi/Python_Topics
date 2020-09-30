@@ -3,7 +3,7 @@ from random import  random
 x = 20
 y =   # list
 
-___ i __ range(x):
+___ i __ ra..(x):
     y.append(random())
     print(round(y[i],2), end=' ')
 print()

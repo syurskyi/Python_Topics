@@ -10,7 +10,7 @@ class Solution:
     ___ combine(self,n, k):
         ___ dfs(start, valuelist):
             if self.count == k: ret.append(valuelist); r_
-            ___ i __ range(start, n + 1):
+            ___ i __ ra..(start, n + 1):
                 self.count += 1
                 dfs(i + 1, valuelist + [i])
                 self.count -= 1

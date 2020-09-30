@@ -21,7 +21,7 @@ class Solution:
         intervals.sort(key = lambda x:x.start)
         length=len(intervals)
         res=  # list
-        ___ i __ range(length):
+        ___ i __ ra..(length):
             if res==  # list:
                 res.append(intervals[i])
             else:

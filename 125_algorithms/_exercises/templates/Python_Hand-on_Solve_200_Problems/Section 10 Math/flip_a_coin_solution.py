@@ -13,7 +13,7 @@ results = {
 
 sides = list(results.keys())
 
-___ i __ range(10000):
+___ i __ ra..(10000):
     results[random.choice(sides)] += 1
 
 print('Heads:', results['heads'])

@@ -11,7 +11,7 @@ class Solution:
     # @return an integer
     ___ jump(self, A):
         p = [0]
-        ___ i __ range(len(A) - 1):
+        ___ i __ ra..(len(A) - 1):
             while(i + A[i] >= len(p) and len(p) < len(A)):
                 p.append(p[i] + 1)
         r_ p[-1]

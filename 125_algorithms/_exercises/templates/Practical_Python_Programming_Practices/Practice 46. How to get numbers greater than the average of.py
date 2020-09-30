@@ -4,7 +4,7 @@ x = 10
 y =   # list
 avg = 0
 
-___ i __ range(x):
+___ i __ ra..(x):
     y.append(random())
     print("%5.2f" % y[i], end='')
     avg += y[i]

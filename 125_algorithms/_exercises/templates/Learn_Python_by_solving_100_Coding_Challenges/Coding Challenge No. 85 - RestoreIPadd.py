@@ -24,7 +24,7 @@ class Solution:
                 solution.append("".join(tempSolution))
                 tempSolution.append('.')
             r_
-        ___ size __ range(1,4):
+        ___ size __ ra..(1,4):
             if s[index]=='0' and size>1:
                 break
             if int(s[index:index+size])>255:

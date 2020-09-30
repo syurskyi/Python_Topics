@@ -2,9 +2,9 @@ from random import random
 
 matrix =   # list
 
-___ i __ range(6):
+___ i __ ra..(6):
     row =   # list
-    ___ j __ range(6):
+    ___ j __ ra..(6):
         row.append(int(random()*10))
     matrix.append(row)
 
@@ -24,9 +24,9 @@ print(rid, '=', rmaxi)
 
 cmaxi = 0
 cid = 0
-___ i __ range(6):
+___ i __ ra..(6):
     sumcol = 0
-    ___ j __ range(6):
+    ___ j __ ra..(6):
         sumcol += matrix[j][i]
     if sumcol > cmaxi:
         cmaxi = sumcol

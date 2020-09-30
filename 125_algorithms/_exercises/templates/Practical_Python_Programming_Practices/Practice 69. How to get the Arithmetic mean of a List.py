@@ -7,7 +7,7 @@ ___ avg_list(first):
 
 x = input("Insert some integer values: ")
 x = x.split()
-___ i __ range(len(x)):
+___ i __ ra..(len(x)):
     x[i] = int(x[i])
 
 average = avg_list(x)

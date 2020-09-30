@@ -3,7 +3,7 @@
 ___ linear_search(array,item
 
 	#simple linear search in O(N) running time complexity
-	___ i __ range(le.(array)):
+	___ i __ ra..(le.(array)):
 		
 		#we have found the given item so return with the index
 		__ array[i] __ item:

@@ -7,7 +7,7 @@ class Solution:
     ___ climbStairs(n):
         dp = [0] * (n + 1)
         dp[0] = dp[1] = 1
-        ___ x __ range(2, n + 1):
+        ___ x __ ra..(2, n + 1):
             dp[x] = dp[x - 1] + dp[x - 2]
         r_ dp[n]
 

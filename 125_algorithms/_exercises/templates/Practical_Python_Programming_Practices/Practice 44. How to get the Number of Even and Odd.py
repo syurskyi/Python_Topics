@@ -1,7 +1,7 @@
 import random
 
 x =   # list
-___ i __ range(10):
+___ i __ ra..(10):
     x.append(int(random.random()*1000))
 print(x)
 

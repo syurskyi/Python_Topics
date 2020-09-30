@@ -16,7 +16,7 @@ class Solution:
         while len(result) < numRows:
             temp = [1] # Every row starts with 1
 
-            ___ index __ range(len(result[-1])-1):
+            ___ index __ ra..(len(result[-1])-1):
                 temp.append(result[-1][index] + result[-1][index+1])
 
             temp.append(1) # Every row ends with 1

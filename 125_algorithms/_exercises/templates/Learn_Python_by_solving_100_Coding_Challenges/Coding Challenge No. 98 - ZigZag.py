@@ -20,7 +20,7 @@ class Solution:
     ___ convert(self, s, numRows):
         if numRows == 1 or numRows >= len(s):
             r_ s
-        zigzag = [[] ___ x __ range(numRows)]
+        zigzag = [[] ___ x __ ra..(numRows)]
         row, step = 0, 1
         ___ c __ s:
             zigzag[row] += c,

@@ -13,7 +13,7 @@ class Solution:
             r_ 0
         temp = 0
         maxSum = A[0]
-        ___ i __ range(0, len(A)):
+        ___ i __ ra..(0, len(A)):
             temp = ma.(A[i], A[i]+temp)
             if temp> maxSum:
                 maxSum = temp

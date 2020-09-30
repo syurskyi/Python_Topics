@@ -11,8 +11,8 @@
 # in position.
 
 ___ bubbleSort(nlist):
-    ___ passnum __ range(len(nlist)-1,0,-1):
-        ___ i __ range(passnum):
+    ___ passnum __ ra..(len(nlist)-1,0,-1):
+        ___ i __ ra..(passnum):
             if nlist[i]>nlist[i+1]:
                 temp = nlist[i]
                 nlist[i] = nlist[i+1]

@@ -13,8 +13,8 @@ class Solution:
         ___ i __ A:
             color[i] += 1
         i = 0
-        ___ x __ range(3):
-            ___ j __ range(color[x]):
+        ___ x __ ra..(3):
+            ___ j __ ra..(color[x]):
                 A[i]=x
                 i+=1
         r_ A

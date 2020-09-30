@@ -16,7 +16,7 @@ class Solution:
         n = len(gas)
         diff = 0
         stationIndex = 0
-        ___ i __ range(n):
+        ___ i __ ra..(n):
             if gas[i]+diff < cost[i]:
                 stationIndex = i+1; diff = 0
             else:

@@ -16,7 +16,7 @@ class Solution:
         if A ==   # list:
             r_ 0
         count = 0
-        ___ i __ range(0, len(A)):
+        ___ i __ ra..(0, len(A)):
             if A[i] == A[i-1]:
                 continue
             else:

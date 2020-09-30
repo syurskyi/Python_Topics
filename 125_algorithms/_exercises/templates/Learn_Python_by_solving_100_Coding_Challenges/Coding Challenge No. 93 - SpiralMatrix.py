@@ -22,19 +22,19 @@ class Solution:
         direct = 0 # 0 go right, 1 go down, 2 go left, 3 go up
         while True:
             if direct == 0: # go right
-                ___ i __ range(maxLeft, maxRight + 1):
+                ___ i __ ra..(maxLeft, maxRight + 1):
                     res.append(matrix[maxUp][i])
                 maxUp += 1
             elif direct == 1: # go down
-                ___ i __ range(maxUp, maxDown + 1):
+                ___ i __ ra..(maxUp, maxDown + 1):
                     res.append(matrix[i][maxRight])
                 maxRight -= 1
             elif direct == 2: # go left
-                ___ i __ reversed(range(maxLeft, maxRight + 1)):
+                ___ i __ reversed(ra..(maxLeft, maxRight + 1)):
                     res.append(matrix[maxDown][i])
                 maxDown -= 1
             else: # go up
-                ___ i __ reversed(range(maxUp, maxDown + 1)):
+                ___ i __ reversed(ra..(maxUp, maxDown + 1)):
                     res.append(matrix[i][maxLeft])
                 maxLeft += 1
             if maxUp > maxDown or maxLeft > maxRight:

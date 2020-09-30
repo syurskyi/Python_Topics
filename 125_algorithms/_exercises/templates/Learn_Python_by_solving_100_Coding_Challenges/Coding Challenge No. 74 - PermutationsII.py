@@ -18,7 +18,7 @@ class Solution:
         num.sort()
         res =   # list
         previousNum = None
-        ___ i __ range(length):
+        ___ i __ ra..(length):
             if num[i] == previousNum:
                 continue
             previousNum = num[i]

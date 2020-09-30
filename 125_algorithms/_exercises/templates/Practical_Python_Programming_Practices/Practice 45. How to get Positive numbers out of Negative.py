@@ -1,7 +1,7 @@
 import random
 
 x =   # list
-___ i __ range(20):
+___ i __ ra..(20):
     x.append(int(random.random()*20)-10)
 print(x)
 

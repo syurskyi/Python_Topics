@@ -16,16 +16,16 @@ class Solution:
         # k >= prices.length / 2 ==> multiple transactions Stock II
         if k >= n / 2:
             profit_max = 0
-            ___ i __ range(1, n):
+            ___ i __ ra..(1, n):
                 diff = prices[i] - prices[i - 1]
                 if diff > 0:
                     profit_max += diff
             r_ profit_max
 
-        f = [[0 ___ i __ range(k + 1)] ___ j __ range(n + 1)]
-        ___ j __ range(1, k + 1):
-            ___ i __ range(1, n + 1):
-                ___ x __ range(0, i + 1):
+        f = [[0 ___ i __ ra..(k + 1)] ___ j __ ra..(n + 1)]
+        ___ j __ ra..(1, k + 1):
+            ___ i __ ra..(1, n + 1):
+                ___ x __ ra..(0, i + 1):
                     f[i][j] = ma.(f[i][j], f[x][j - 1] + self.profit(prices, x + 1, i))
         r_ f[n][k]
 

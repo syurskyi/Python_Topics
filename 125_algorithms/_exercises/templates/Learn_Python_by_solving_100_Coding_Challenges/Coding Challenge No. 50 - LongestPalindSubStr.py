@@ -15,7 +15,7 @@ class Solution:
             else:
                 r_ s
         result = ''
-        ___ i __ range(0,l):
+        ___ i __ ra..(0,l):
             palindrome = self.SearchPalindrome(s, i, i)
             if len(palindrome) > len(result):
                 result = palindrome

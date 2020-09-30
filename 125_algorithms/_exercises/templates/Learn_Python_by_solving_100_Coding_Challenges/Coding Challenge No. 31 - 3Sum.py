@@ -16,7 +16,7 @@ class Solution:
             r_ result
         num.sort()
 
-        ___ i __ range(length - 2):
+        ___ i __ ra..(length - 2):
             if i > 0 and num[i] == num[i - 1]:
                 continue
             low = i + 1

@@ -1,7 +1,7 @@
 from random import randint
 
 ___ list_fill(first, qyt, mini, maxi):
-    ___ i __ range(qyt):
+    ___ i __ ra..(qyt):
         first.append(randint(mini,maxi))
 
 minimum = int(input("Insert minimum value: "))

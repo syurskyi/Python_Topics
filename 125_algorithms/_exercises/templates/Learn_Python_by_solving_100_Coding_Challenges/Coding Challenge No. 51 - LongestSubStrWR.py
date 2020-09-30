@@ -12,7 +12,7 @@ class Solution:
         lastRepeating = -1
         longestSubstring = 0
         positions = {}
-        ___ i __ range(0, len(s)):
+        ___ i __ ra..(0, len(s)):
             if s[i] __ positions and lastRepeating<positions[s[i]]:
                 lastRepeating = positions[s[i]]
             if i-lastRepeating > longestSubstring:

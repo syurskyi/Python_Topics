@@ -14,7 +14,7 @@ class Solution:
             r_ len(A)
         index = 2
 
-        ___ i __ range(2, len(A)):
+        ___ i __ ra..(2, len(A)):
             if A[i] != A[index - 2]:
                 A[index] = A[i]
                 index += 1

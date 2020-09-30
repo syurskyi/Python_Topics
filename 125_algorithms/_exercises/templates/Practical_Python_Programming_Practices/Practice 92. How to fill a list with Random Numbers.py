@@ -5,6 +5,6 @@ maxi = int(input("Insert maximum number: "))
 
 y = int(input("Insert range of random numbers: "))
 
-x = [randint(mini,maxi) ___ i __ range(y)]
+x = [randint(mini,maxi) ___ i __ ra..(y)]
 
 print(x)
